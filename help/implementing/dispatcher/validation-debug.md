@@ -3,10 +3,10 @@ title: 使用 Dispatcher 工具進行驗證和偵錯
 description: 使用 Dispatcher 工具進行驗證和偵錯
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 7260649eaab303ba5bab55ccbe02395dc8159949
 workflow-type: tm+mt
-source-wordcount: '2859'
-ht-degree: 1%
+source-wordcount: '2846'
+ht-degree: 2%
 
 ---
 
@@ -19,9 +19,9 @@ ht-degree: 1%
 
 以下各節將說明彈性模式的檔案結構、本機驗證、偵錯以及從舊版模式移轉至彈性模式。
 
-本文假設您的專案的Dispatcher設定包含檔案 `opt-in/USE_SOURCES_DIRECTLY`，可讓SDK和執行階段以比舊版模式更好的方式驗證和部署設定，移除檔案數量和大小的相關限制。
+本文假設您的專案的Dispatcher設定包含檔案 `opt-in/USE_SOURCES_DIRECTLY`. 此檔案可讓SDK和執行階段以比舊版模式更好的方式驗證和部署設定，移除檔案數量和大小的相關限制。
 
-因此，如果您的Dispatcher設定不包括上述檔案，它會 **強烈建議** 從舊版模式移轉至彈性模式，如 [從舊版模式移轉至彈性模式](#migrating) 區段。
+如果您的Dispatcher設定不包含前述檔案，Adobe建議您從舊版模式移轉至彈性模式，如 [從舊版模式移轉至彈性模式](#migrating) 區段。
 
 ## 檔案結構 {#flexible-mode-file-structure}
 
@@ -76,7 +76,7 @@ ht-degree: 1%
 
 **可自訂的檔案**
 
-以下檔案可自訂，將在部署時傳輸到您的雲端執行個體：
+以下檔案可自訂，並在部署時傳輸到您的Cloud執行個體：
 
 * `conf.d/available_vhosts/<CUSTOMER_CHOICE>.vhost`
 
@@ -86,9 +86,9 @@ ht-degree: 1%
 >
 >在彈性模式中，您應該使用相對路徑，而不是絕對路徑。
 
-請確定至少有一個符合ServerAlias的虛擬主機始終可用 `\*.local`， `localhost` 和 `127.0.0.1` dispatcher失效所需的引數。 伺服器別名 `*.adobeaemcloud.net` 和 `*.adobeaemcloud.com` 在至少一個vhost設定中也需要，並且是內部Adobe程式所需。
+請確定至少有一個符合ServerAlias的虛擬主機可供使用 `\*.local`， `localhost`、和 `127.0.0.1` Dispatcher失效所需的引數。 伺服器別名 `*.adobeaemcloud.net` 和 `*.adobeaemcloud.com` 在至少一個vhost設定中也需要，並且是內部Adobe程式所需。
 
-如果您因為有多個vhost檔案而想要比對正確的主機，您可以依照以下範例操作：
+如果您因為有多個vhost檔案而想要比對正確的主機，可以依照下列範例進行：
 
 ```
 <VirtualHost *:80>
@@ -109,15 +109,15 @@ ht-degree: 1%
 
 * `conf.d/rewrites/rewrite.rules`
 
-此檔案包含在您的 `.vhost` 檔案。 它有一組重寫規則 `mod_rewrite`.
+檔案包含在您的 `.vhost` 檔案。 它有一組重寫規則 `mod_rewrite`.
 
 * `conf.d/variables/custom.vars`
 
-此檔案包含在您的 `.vhost` 檔案。 您可以在此位置新增Apache變數的定義。
+檔案包含在您的 `.vhost` 檔案。 您可以在此位置新增Apache變數的定義。
 
 * `conf.d/variables/global.vars`
 
-此檔案包含在 `dispatcher_vhost.conf` 檔案。 您可以變更您的Dispatcher並重新寫入此檔案中的記錄層級。
+檔案包含在 `dispatcher_vhost.conf` 檔案。 您可以變更您的Dispatcher並重新寫入此檔案中的記錄層級。
 
 * `conf.dispatcher.d/available_farms/<CUSTOMER_CHOICE>.farm`
 
@@ -125,38 +125,38 @@ ht-degree: 1%
 
 * `conf.dispatcher.d/cache/rules.any`
 
-此檔案包含在您的 `.farm` 檔案。 它會指定快取偏好設定。
+檔案包含在您的 `.farm` 檔案。 它會指定快取偏好設定。
 
 * `conf.dispatcher.d/clientheaders/clientheaders.any`
 
-此檔案包含在您的 `.farm` 檔案。 它會指定要將哪些請求標頭轉送至後端。
+檔案包含在您的 `.farm` 檔案。 它會指定要將哪些請求標頭轉送至後端。
 
 * `conf.dispatcher.d/filters/filters.any`
 
-此檔案包含在您的 `.farm` 檔案。 它有一組規則，可變更應該篩選掉的流量，而不是使其進入後端。
+檔案包含在您的 `.farm` 檔案。 它有一組規則，可變更應該篩選掉的流量，而不是使其進入後端。
 
 * `conf.dispatcher.d/virtualhosts/virtualhosts.any`
 
-此檔案包含在您的 `.farm` 檔案。 它有一個主機名稱或URI路徑的清單，將通過glob匹配進行匹配。 這會決定使用哪個後端來處理請求。
+檔案包含在您的 `.farm` 檔案。 它有一個主機名稱或URI路徑的清單，將通過glob匹配進行匹配。 此比對會決定使用哪個後端來處理請求。
 
 * `opt-in/USE_SOURCES_DIRECTLY`
 
-此檔案可讓排程程式設定更靈活，並移除先前對檔案數量和大小的限制。 它也會讓SDK和執行階段以改良的方式驗證和部署設定。
+此檔案可讓您使用更靈活的Dispatcher設定，並移除先前對檔案數量和大小的限制。 它也會讓SDK和執行階段以改良的方式驗證和部署設定。
 
 上述檔案會參考下列不可變的組態檔。 雲端環境中的Dispatcher不會處理不可變檔案的變更。
 
 **不可變組態檔**
 
-這些檔案是基本框架的一部分，可強制實施標準和最佳實務。 這些檔案被視為不可變，因為在本機修改或刪除它們將不會對您的部署造成影響，因為它們將不會傳輸到您的雲端執行個體。
+這些檔案是基本框架的一部分，可強制實施標準和最佳實務。 這些檔案被視為不可變，因為在本機修改或刪除它們不會對您的部署造成影響，因為它們不會傳輸到您的雲端執行個體。
 
-建議上述檔案參考下列不可變檔案，然後加上任何其他陳述式或覆寫。 將Dispatcher設定部署到雲端環境時，無論本機開發中使用了哪個版本，都會使用最新版本的不可變檔案。
+建議上述檔案參考下列不可變檔案，然後加上任何其他陳述式或覆寫。 將Dispatcher設定部署到雲端環境時，無論本機開發中使用了什麼版本，都會使用不可變檔案的最新版本。
 
 * `conf.d/available_vhosts/default.vhost`
 
 包含範例虛擬主機。 針對您自己的虛擬主機，建立此檔案的復本、自訂，然後前往 `conf.d/enabled_vhosts` 並建立自訂復本的符號連結。
 請勿將default.vhost檔案直接複製到 `conf.d/enabled_vhosts`.
 
-確保虛擬主機一律可用，且符合ServerAlias `\*.local`， `localhost` 和 `127.0.0.1` dispatcher失效所需的引數。 伺服器別名 `*.adobeaemcloud.net` 和 `*.adobeaemcloud.com` 內部Adobe程式所需。
+確保虛擬主機一律可用，且符合ServerAlias `\*.local`， `localhost`、和 `127.0.0.1` Dispatcher失效所需的引數。 伺服器別名 `*.adobeaemcloud.net` 和 `*.adobeaemcloud.com` 內部Adobe程式所需。
 
 * `conf.d/dispatcher_vhost.conf`
 
@@ -164,7 +164,7 @@ ht-degree: 1%
 
 * `conf.d/rewrites/default_rewrite.rules`
 
-適用於標準專案的預設重寫規則。 如果您需要自訂，請修改 `rewrite.rules`. 在您的自訂中，如果預設規則符合您的需求，您仍然可以先包含這些規則。
+重寫適用於標準專案的預設規則。 如果您需要自訂，請修改 `rewrite.rules`. 在您的自訂中，如果預設規則符合您的需求，您仍然可以先包含這些規則。
 
 * `conf.dispatcher.d/available_farms/default.farm`
 
@@ -206,7 +206,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->以下各節包含使用Mac或Linux版SDK的命令，但Windows SDK也可以透過類似方式使用。
+>以下各節包含使用Mac或Linux®版SDK的命令，但Windows SDK也可以透過類似方式使用。
 
 使用 `validate.sh` 指令碼，如下所示：
 
@@ -249,14 +249,14 @@ Phase 3 finished
 指令碼包含以下三個階段：
 
 1. 它會執行驗證器。 如果設定無效，指令碼會失敗。
-2. 它會執行 `httpd -t` 用來測試語法是否正確以讓apache httpd可以啟動的命令。 如果成功，設定應準備好進行部署。
+2. 它會執行 `httpd -t` 用來測試語法是否正確，以便Apache httpd可以啟動的命令。 如果成功，設定應準備好進行部署。
 3. 檢查Dispatcher SDK設定檔案的子集，這些檔案旨在不可變動，如 [檔案結構區段](##flexible-mode-file-structure)，尚未修改且符合目前的SDK版本。
 
 在Cloud Manager部署期間， `httpd -t` 語法檢查也會執行，所有錯誤都會包含在Cloud Manager中 `Build Images step failure` 記錄。
 
 >[!NOTE]
 >
->請參閱 [自動重新載入和驗證](#automatic-loading) 區段以有效率地取代執行 `validate.sh` 在每次設定修改後。
+請參閱 [自動重新載入和驗證](#automatic-loading) 區段以有效率地取代執行 `validate.sh` 在每次設定修改後。
 
 ### 階段1 {#first-phase}
 
@@ -265,7 +265,7 @@ Phase 3 finished
 * 不存在允許使用的篩選規則 `/glob` (請參閱 [CVE-2016-0957](https://nvd.nist.gov/vuln/detail/CVE-2016-0957))以取得更多詳細資料。
 * 未公開任何管理功能。 例如，存取路徑，例如 `/crx/de or /system/console`.
 
-請注意，驗證工具只會報告未列入允許清單的Apache指示詞被禁止使用的情況。 不會報告您的Apache設定的語法或語義問題，因為此資訊僅適用於執行環境中的Apache模組。
+驗證工具只會報告未列入允許清單的Apache指示詞被禁止使用的情況。 不會報告您的Apache設定的語法或語義問題，因為此資訊僅適用於執行環境中的Apache模組。
 
 以下是針對工具輸出的常見驗證錯誤進行除錯的疑難排解技巧：
 
@@ -287,7 +287,7 @@ Phase 3 finished
 }
 ```
 
-和:
+與:
 
 ```
 /allowedClients {
@@ -297,7 +297,7 @@ Phase 3 finished
 
 **檔案包含在未知位置： ...**
 
-您的伺服器陣列設定中有四個區段可讓您包含自己的檔案： `/clientheaders`， `filters`， `/rules` 在 `/cache` 區段和 `/virtualhosts`. 包含的檔案需要命名如下：
+您的伺服器陣列設定中有四個區段可讓您包含自己的檔案： `/clientheaders`， `filters`， `/rules` 在 `/cache` 區段和 `/virtualhosts`. 包含的檔案必須命名如下：
 
 | 章節 | 包含檔案名稱 |
 |------------------|--------------------------------------|
@@ -308,7 +308,7 @@ Phase 3 finished
 
 或者，您也可以包含 **預設** 這些檔案的版本，其名稱會以字詞為前置詞 `default_`例如， `../filters/default_filters.any`.
 
-**include陳述式位於(...)，在任何已知位置以外： ...**
+**Include陳述式位於(...)，在任何已知位置以外： ...**
 
 除上述六節外，嚴禁您使用 `$include` 陳述式，例如，下列專案會產生此錯誤：
 
@@ -320,7 +320,7 @@ Phase 3 finished
 
 **允許的使用者端/轉譯器不包括： ...**
 
-若您未指定包含，則會產生此錯誤 `/renders` 和 `/allowedClients` 在 `/cache` 區段。 請參閱
+若您未指定的「包含」，則會產生此錯誤。 `/renders` 和 `/allowedClients` 在 `/cache` 區段。 請參閱
 **包含的檔案(...)必須命名為： ...** 區段以取得詳細資訊。
 
 **篩選器不得使用glob模式來允許請求**
@@ -363,9 +363,9 @@ Include conf.d/includes/mynewdirectory/myincludefile.conf
 
 **偵測到過時的配置配置，啟用相容性模式**
 
-此訊息指出您的設定具有已棄用的版本1版面，其中包含完整的Apache設定和檔案，其中 `ams_` 字首。 雖然此版本仍支援回溯相容性，但您應切換至新版面。
+此訊息指出您的設定具有已棄用的版本1版面，其中包含完整的Apache設定和檔案，其中 `ams_` 字首。 雖然此設定仍支援回溯相容性，但您應切換至新版面。
 
-請注意，第一階段也可以是 **單獨執行**，而不是從包裝函式 `validate.sh` 指令碼。
+第一階段也可以是 **單獨執行**，而不是從包裝函式 `validate.sh` 指令碼。
 
 針對您的Maven成品或 `dispatcher/src` 子目錄，它會報告驗證失敗：
 
@@ -395,8 +395,8 @@ Cloud manager validator 2.0.xx
 
 >[!NOTE]
 >
->Windows使用者需要使用支援Docker的Windows 10 Professional或其他發行版本。 這是在本機電腦上執行及偵錯Dispatcher的先決條件。
->對於Windows和macOS，我們建議使用Docker Desktop。
+Windows使用者必須使用支援Docker的Windows 10 Professional或其他發行版本。 此需求是在本機電腦上執行和偵錯Dispatcher的先決條件。
+對於Windows和macOS，Adobe建議使用Docker Desktop。
 
 此階段也可以獨立執行 `bin/docker_run.sh src/dispatcher host.docker.internal:4503 8080`.
 
@@ -404,7 +404,7 @@ Cloud manager validator 2.0.xx
 
 ### 階段3 {#third-phase}
 
-如果此階段失敗，則表示Adobe已變更一個或多個不可變檔案，您必須將對應的不可變檔案替換為 `src` SDK的目錄。 以下記錄範例說明此問題：
+如果在此階段失敗，則表示Adobe已變更一個或多個不可變檔案。 在此情況下，您必須將對應的不可變檔案取代為 `src` SDK的目錄。 以下記錄範例說明此問題：
 
 ```
 Phase 3: Immutability check
@@ -425,13 +425,13 @@ immutable file 'conf.dispatcher.d/clientheaders/default_clientheaders.any' has b
 
 此階段也可以獨立執行 `bin/docker_immutability_check.sh src/dispatcher`.
 
-您可以透過執行 `bin/update_maven.sh src/dispatcher` 您的dispatcher資料夾上的指令碼，其中 `src/dispatcher` 是您的Dispatcher設定目錄。 這也會更新父目錄中的任何pom.xml檔案，以便maven不可變性檢查也會更新。
+您可以透過執行 `bin/update_maven.sh src/dispatcher` Dispatcher資料夾上的指令碼，其中 `src/dispatcher` 是您的Dispatcher設定目錄。 此指令碼也會更新任何 `pom.xml` 檔案，以便maven不可變性檢查也能更新。
 
 ## 偵錯您的Apache和Dispatcher設定 {#debugging-apache-and-dispatcher-configuration}
 
-請注意，您可以使用在本機執行Apache Dispatcher `./bin/docker_run.sh src/dispatcher docker.for.mac.localhost:4503 8080`.
+您可以使用在本機執行Apache Dispatcher `./bin/docker_run.sh src/dispatcher docker.for.mac.localhost:4503 8080`.
 
-如前所述，Docker必須安裝在本機，AEM不需要運行。 Windows使用者需要使用支援Docker的Windows 10 Professional或其他發行版本。 這是在本機電腦上執行及偵錯Dispatcher的先決條件。
+如前所述，Docker必須安裝在本機，AEM不需要運行。 Windows使用者必須使用支援Docker的Windows 10 Professional或其他發行版本。 此需求是在本機電腦上執行和偵錯Dispatcher的先決條件。
 
 以下策略可用於增加Dispatcher模組的記錄輸出並檢視結果 `RewriteRule` 在本機和雲端環境中進行評估。
 
@@ -465,19 +465,19 @@ immutable file 'conf.dispatcher.d/clientheaders/default_clientheaders.any' has b
 
 >[!NOTE]
 >
->對於AEMas a Cloud Service環境，偵錯是最高詳細程度層級。 不支援追蹤記錄層級，因此您在雲端環境中工作時應該避免進行設定。
+針對AEMas a Cloud Service上的環境，除錯是最高詳細程度層級。 不支援追蹤記錄層級，因此您在雲端環境中工作時應該避免進行設定。
 
 ### 自動重新載入和驗證 {#automatic-reloading}
 
 >[!NOTE]
 >
->由於Windows作業系統的限制，此功能僅適用於macOS和Linux使用者。
+由於Windows作業系統的限制，此功能僅適用於macOS和Linux®使用者。
 
-不要執行本機驗證(`validate.sh`)並啟動Docker容器(`docker_run.sh`)每次修改設定時，您也可以執行 `docker_run_hot_reload.sh` 指令碼。  指令碼會監視設定的任何變更，並自動重新載入並重新執行驗證。 使用此選項可節省大量除錯時間。
+不要執行本機驗證(`validate.sh`)並啟動Docker容器(`docker_run.sh`)每次修改設定時，您也可以執行 `docker_run_hot_reload.sh` 指令碼。 指令碼會監視設定的任何變更，並自動重新載入並重新執行驗證。 使用此選項，您可以在偵錯時節省大量時間。
 
 您可以使用以下命令執行指令碼： `./bin/docker_run_hot_reload.sh src/dispatcher host.docker.internal:4503 8080`
 
-請注意，輸出的第一行看起來會類似於執行的專案 `docker_run.sh`例如：
+輸出的第一行看起來類似於將執行的專案 `docker_run.sh`. 例如：
 
 ```
 ~ bin/docker_run_hot_reload.sh src host.docker.internal:8081 8082
@@ -505,7 +505,7 @@ INFO Mon Jul  4 09:53:55 UTC 2022: Apache httpd informationServer version: Apach
 
 ## 每個環境的不同Dispatcher設定 {#different-dispatcher-configurations-per-environment}
 
-目前，相同的Dispatcher設定會套用至所有AEMas a Cloud Service環境。 執行階段會有環境變數 `ENVIRONMENT_TYPE` 包含目前執行模式（dev、stage或prod）以及定義。 定義可以是 `ENVIRONMENT_DEV`， `ENVIRONMENT_STAGE` 或 `ENVIRONMENT_PROD`. 在Apache設定中，變數可直接在運算式中使用。 或者，可使用定義來建置邏輯：
+目前，相同的Dispatcher設定會套用至AEMas a Cloud Service上的所有環境。 執行階段有環境變數 `ENVIRONMENT_TYPE` 包含目前執行模式（開發、階段或生產）和「定義」的執行模式。 「define」可以是 `ENVIRONMENT_DEV`， `ENVIRONMENT_STAGE`，或 `ENVIRONMENT_PROD`. 在Apache設定中，變數可直接在運算式中使用。 或者，「define」也可用來建置邏輯：
 
 ```
 # Simple usage of the environment variable
@@ -543,7 +543,7 @@ $ DISP_RUN_MODE=stage docker_run.sh src docker.for.mac.localhost:4503 8080
 
 ## 檢視Docker容器正在使用的Dispatcher配置 {#viewing-dispatcher-configuration-in-use-by-docker-container}
 
-使用環境特定設定時，可能很難判斷實際Dispatcher設定是什麼樣子。 使用啟動您的Docker容器後 `docker_run.sh` 其傾印方式如下：
+使用環境特定的設定，可能很難判斷實際Dispatcher設定是什麼樣子。 使用啟動您的Docker容器後 `docker_run.sh`，可依下列方式傾印：
 
 * 確定正在使用的Docker容器ID：
 
@@ -566,18 +566,19 @@ $ docker exec d75fbd23b29 httpd-test
 
 ## 從舊版模式移轉至彈性模式 {#migrating}
 
-在Cloud Manager 2021.7.0版本中，新的Cloud Manager程式會產生maven專案結構 [AEM原型28](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hant) 或更高版本，其中包括檔案 **opt-in/USE_SOURCES_DIRECTLY**. 如此一來，即會移除 [舊版模式](/help/implementing/dispatcher/validation-debug-legacy.md) 檔案的數量和大小，也會讓SDK和執行階段以改良的方式驗證和部署設定。 如果您的Dispatcher設定沒有此檔案，強烈建議您進行移轉。 請使用下列步驟來確保安全轉換：
+在Cloud Manager 2021.7.0版本中，新的Cloud Manager程式會產生maven專案結構 [AEM原型28](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hant) 或更高版本，包括檔案 **opt-in/USE_SOURCES_DIRECTLY**. 它會移除 [舊版模式](/help/implementing/dispatcher/validation-debug-legacy.md) 檔案的數量和大小，也會讓SDK和執行階段以改良的方式驗證和部署設定。 如果您的Dispatcher設定沒有此檔案，強烈建議您進行移轉。 請使用下列步驟來確保安全轉換：
 
-1. **本機測試。** 使用最新的Dispatcher工具SDK，新增資料夾和檔案 `opt-in/USE_SOURCES_DIRECTLY`. 依照本文中的「本機驗證」指示，測試Dispatcher是否在本機運作。
+1. **本機測試。** 使用最新的Dispatcher工具SDK，新增資料夾和檔案 `opt-in/USE_SOURCES_DIRECTLY`. 請依照本文中的「本機驗證」指示進行，以便測試Dispatcher是否在本機運作。
 1. **雲端開發測試：**
    * 提交檔案 `opt-in/USE_SOURCES_DIRECTLY` 非生產管道部署到雲端開發環境的Git分支。
    * 使用Cloud Manager來部署至雲端開發環境。
-   * 徹底測試。 在將變更部署到更高層環境之前，請務必驗證Apache和Dispatcher設定的行為是否符合您的預期。 檢查與您的自訂設定相關的所有行為！ 如果您認為部署的Dispatcher設定未反映您的自訂設定，請提交客戶支援票證。
+   * 徹底測試。 在將變更部署到更高層環境之前，請務必驗證Apache和Dispatcher設定的運作方式是否如預期。 檢查與您的自訂設定相關的所有行為。 如果您認為部署的Dispatcher設定未反映您的自訂設定，請提交客戶支援票證。
+
    >[!NOTE]
    >
-   >在彈性模式中，您應該使用相對路徑，而不是絕對路徑。
+   在彈性模式中，您應該使用相對路徑，而不是絕對路徑。
 1. **部署至生產環境：**
    * 提交檔案 `opt-in/USE_SOURCES_DIRECTLY` 至生產管道部署至雲端中繼和生產環境的Git分支。
    * 使用Cloud Manager來部署至中繼環境。
-   * 徹底測試。 在將變更部署到更高層環境之前，請務必驗證Apache和Dispatcher設定的行為是否符合您的預期。 檢查與您的自訂設定相關的所有行為！ 如果您認為部署的Dispatcher設定未反映您的自訂設定，請提交客戶支援票證。
+   * 徹底測試。 在將變更部署到更高層環境之前，請務必驗證Apache和Dispatcher設定的運作方式是否如預期。 檢查與自訂設定相關的所有行為。 如果您認為部署的Dispatcher設定未反映您的自訂設定，請提交客戶支援票證。
    * 使用Cloud Manager繼續部署到生產環境。

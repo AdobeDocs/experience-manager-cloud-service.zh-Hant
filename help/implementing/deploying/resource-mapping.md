@@ -6,10 +6,10 @@ topic-tags: configuring
 content-type: reference
 feature: Configuring
 exl-id: 1a1bb23c-d1d1-4e2b-811b-753e6a90a01b
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 7260649eaab303ba5bab55ccbe02395dc8159949
 workflow-type: tm+mt
-source-wordcount: '547'
-ht-degree: 3%
+source-wordcount: '546'
+ht-degree: 4%
 
 ---
 
@@ -26,11 +26,11 @@ ht-degree: 3%
 
 `localhost:4503/content/we-retail/en/products.html`
 
-以透過以下方式存取：
+使用下列專案存取：
 
 `localhost:4503/we-retail/en/products.html`
 
-因為對應會自動新增前置詞 `/content` 至 `/we-retail/en/products.html`.
+由於對應會自動新增前置詞 `/content` 至 `/we-retail/en/products.html`.
 
 >[!CAUTION]
 >
@@ -38,7 +38,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->請參閱Sling檔案，以及 [資源解析的對應](https://sling.apache.org/site/resources.html) 和 [資源](https://sling.apache.org/site/mappings-for-resource-resolution.html) 以取得進一步資訊。
+>請參閱Sling檔案，以及 [資源解析的對應](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) 和 [資源](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) 以取得進一步資訊。
 
 ## 檢視對應定義 {#viewing-mapping-definitions}
 
@@ -56,7 +56,7 @@ ResourceResolver.resolve方法用來將URL對應至資源的專案清單。
 * **對應對應專案**
 ResourceResolver.map方法用來將資源路徑對應至URL的專案清單。
 
-這兩個清單會顯示各種專案，包括應用程式定義為預設值的專案。 這些功能的目的通常是簡化使用者的URL。
+這兩個清單會顯示各種專案，包括應用程式定義為預設值的專案。 這些專案的目的通常是簡化使用者的URL。
 
 清單會配對 **圖樣**，此規則運算式與請求相符，且具有一個 **替代** 定義要強制的重新導向。
 
@@ -64,7 +64,7 @@ ResourceResolver.map方法用來將資源路徑對應至URL的專案清單。
 
 **圖樣** `^[^/]+/[^/]+/welcome$`
 
-將觸發：
+觸發：
 
 **替代** `/libs/cq/core/content/welcome.html`.
 
@@ -80,7 +80,7 @@ ResourceResolver.map方法用來將資源路徑對應至URL的專案清單。
 
 >[!NOTE]
 >
->有許多資源可協助說明如何定義規則運算式，例如 [https://www.regular-expressions.info/](https://www.regular-expressions.info/).
+>有許多資源可協助說明如何定義規則運算式。 例如， [https://www.regular-expressions.info/](https://www.regular-expressions.info/).
 
 ### 在AEM中建立對應定義 {#creating-mapping-definitions-in-aem}
 
@@ -88,7 +88,7 @@ ResourceResolver.map方法用來將資源路徑對應至URL的專案清單。
 
 `/etc/map/http`
 
-這是定義HTTP通訊協定對應時使用的結構。 其他資料夾( `sling:Folder`)可建立於 `/etc/map` 任何其他要對應的通訊協定。
+此資料夾是定義HTTP通訊協定的對應時使用的結構。 其他資料夾( `sling:Folder`)可建立於 `/etc/map` 任何其他要對應的通訊協定。
 
 #### 設定內部重新導向至/content {#configuring-an-internal-redirect-to-content}
 
@@ -96,7 +96,7 @@ ResourceResolver.map方法用來將資源路徑對應至URL的專案清單。
 
 1. 使用CRXDE導覽至 `/etc/map/http`.
 
-1. 建立新節點：
+1. 建立節點：
 
    * **型別** `sling:Mapping`
 此節點型別適用於此類對應，不過其使用並非強制性。
@@ -111,16 +111,16 @@ ResourceResolver.map方法用來將資源路徑對應至URL的專案清單。
       * **型別** `String`
 
       * **值** `localhost.4503/`
+
    * **名稱** `sling:internalRedirect`
 
       * **型別** `String`
 
       * **值** `/content/`
 
-
 1. 按一下 **全部儲存**.
 
-這將處理如下請求：
+此對應會處理請求，例如：
 `localhost:4503/geometrixx/en/products.html`
 就好像：
 `localhost:4503/content/geometrixx/en/products.html`
@@ -128,9 +128,9 @@ ResourceResolver.map方法用來將資源路徑對應至URL的專案清單。
 
 >[!NOTE]
 >
->另請參閱 [資源](https://sling.apache.org/site/mappings-for-resource-resolution.html) Sling檔案中，以取得有關可用sling屬性及其設定方式的進一步資訊。
->例如， [字串內插](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html#string-interpolation-for-etcmap) 非常有用，因為它允許設定透過環境變數取得每個環境值的對應。
+>另請參閱 [資源](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) Sling檔案中，以取得有關可用sling屬性及其設定方式的進一步資訊。
+>例如， [字串內插](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html#string-interpolation-for-etcmap) 非常有用，因為它可讓您設定透過環境變數取得每個環境值的對應。
 
 >[!NOTE]
 >
->您可以使用 `/etc/map.publish` 以保留發佈環境的設定。 然後必須複製這些專案，並且新位置( `/etc/map.publish`)設定的 **對應位置** 的 [Apache Sling資源解析程式](/help/overview/seo-and-url-management.md#etc-map) 發佈環境的。
+>您可以使用 `/etc/map.publish` 以保留發佈環境的設定。 必須複製這些設定，並且新位置( `/etc/map.publish`)設定的 **對應位置** 的 [Apache Sling資源解析程式](/help/overview/seo-and-url-management.md#etc-map) 發佈環境的。

@@ -2,10 +2,10 @@
 title: 存取和管理記錄檔
 description: 了解如何存取和管理記錄檔以協助進行 AEM as a Cloud Service 中的開發流程。
 exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 7260649eaab303ba5bab55ccbe02395dc8159949
 workflow-type: tm+mt
-source-wordcount: '270'
-ht-degree: 91%
+source-wordcount: '266'
+ht-degree: 69%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 91%
 
 ## 正在下載記錄檔 {#download-logs}
 
-若要下載記錄檔，請依照下列步驟：
+若要下載記錄檔，請執行下列動作。
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織和計畫。
 
@@ -40,7 +40,7 @@ ht-degree: 91%
 
 ## 透過 API 的記錄檔 {#logs-through-api}
 
-除了透過 UI 下載記錄外，還可以透過 API 和命令行介面取得記錄。
+除了透過UI下載記錄外，還可以透過API和命令列介面取得記錄。
 
 若要下載特定環境的記錄文件，該命令會類似於以下內容。
 
@@ -48,7 +48,7 @@ ht-degree: 91%
 $ aio cloudmanager:download-logs --programId 5 1884 author aemerror
 ```
 
-您還可以透過命令行介面追蹤記錄。
+此外，您也可以透過命令列介面追蹤記錄。
 
 ```shell
 $ aio cloudmanager:tail-log --programId 5 1884 author aemerror
@@ -79,7 +79,7 @@ Environment Id Service    Name
 
 ### 其他資源 {#resources}
 
-請參閱以下更多資源，以深入了解如何使用 Cloud Manager API 和 Adobe I/O CLI：
+請參閱下列其他資源，深入瞭解Cloud Manager API和Adobe Developer CLI：
 
-* [Cloud Manager API 文件](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html)
-* [Adobe I/O CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager)
+* [Cloud Manager API 文件](https://developer.adobe.com/experience-cloud/cloud-manager/)
+* [ADOBE DEVELOPER CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager)

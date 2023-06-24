@@ -2,9 +2,9 @@
 title: 為 Screens as a Cloud Service 開發自訂元件
 description: 下列教學課程會逐步引導您完成建立AEM Screens自訂元件的步驟。 AEM Screens會重複使用其他AEM產品的許多現有設計模式與技術。 本教學課程著重說明針對AEM Screens進行開發時的差異和特殊考量事項。
 exl-id: fe8e7bf2-6828-4a5a-b650-fb3d9c172b97
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 7260649eaab303ba5bab55ccbe02395dc8159949
 workflow-type: tm+mt
-source-wordcount: '2106'
+source-wordcount: '2108'
 ht-degree: 3%
 
 ---
@@ -15,12 +15,12 @@ ht-degree: 3%
 
 ## 概觀 {#overview}
 
-本教學課程適用於AEM Screens的新手開發人員。 在本教學課程中，我們會為AEM Screens中的序列頻道建置一個簡單的「Hello World」元件。 對話方塊可讓作者更新顯示的文字。
+本教學課程適用於AEM Screens的新手開發人員。 在本教學課程中，我們會為AEM Screens中的序列頻道建立簡單的「Hello World」元件。 對話方塊可讓作者更新顯示的文字。
 
 
 ## 必備條件 {#prerequisites}
 
-若要完成本教學課程，需具備下列條件：
+若要完成本教學課程，您需要具備下列條件：
 
 1. 最新Screens Feature Pack
 
@@ -28,12 +28,12 @@ ht-degree: 3%
 
 1. 本機開發環境
 
-使用執行教學課程步驟和熒幕擷取畫面 **CRXDE-Lite**. IDE也可用來完成本教學課程。 有關使用IDE來開發的詳細資訊 [若使用AEM，請前往此處。](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop/part1.html#eclipse-ide)
+使用執行教學課程步驟和熒幕擷取畫面 **CRXDE Lite**. IDE也可用來完成本教學課程。 有關使用IDE來開發的詳細資訊 [若使用AEM，請前往此處。](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html?lang=en)
 
 
 ## 專案設定 {#project-setup}
 
-Screens專案的原始程式碼通常作為多模組Maven專案來管理。 為了加速教學課程，已使用預先產生專案 [AEM專案原型13](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype). 更多詳細資料： [您可以在此處找到使用Maven AEM專案原型建立專案](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop/part1.html#maven-multimodule).
+Screens專案的原始程式碼通常作為多模組Maven專案來管理。 為了加速教學課程，已使用預先產生專案 [AEM專案原型13](https://github.com/adobe/aem-project-archetype). 更多詳細資料： [您可以在此處找到使用Maven AEM專案原型建立專案](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html?lang=en).
 
 1. 使用下載並安裝下列套件 [CRX封裝管理員](http://localhost:4502/crx/packmgr/index.jsp)：
 
@@ -48,7 +48,7 @@ Screens專案的原始程式碼通常作為多模組Maven專案來管理。 為�
 
 [取得檔案](/help/screens-cloud/developing/assets/src-screens-weretail-run.zip)
 
-1. 在 [CRX封裝管理員](http://localhost:4502/crx/packmgr/index.jsp) 確認已安裝下列兩個套件：
+1. 在 [CRX封裝管理員](http://localhost:4502/crx/packmgr/index.jsp)，確認已安裝下列兩個套件：
 
    1. **screens-weretail-run.ui.content-0.0.1-SNAPSHOT.zip**
    1. **screens-weretail-run.ui.apps-0.0.1-SNAPSHOT.zip**
@@ -59,17 +59,17 @@ Screens專案的原始程式碼通常作為多模組Maven專案來管理。 為�
 
 1. 此 **screens-weretail-run.ui.apps** 套件會在下方安裝程式碼 `/apps/weretail-run`.
 
-   此套件包含負責呈現專案自訂元件的程式碼。 此套件包含元件程式碼和任何所需的JavaScript或CSS。 此套件也會內嵌 **screens-weretail-run.core-0.0.1-SNAPSHOT.jar** 其中包含專案所需的任何Java程式碼。
+   此套件包含負責呈現專案自訂元件的程式碼。 此套件包含元件程式碼和任何所需的JavaScript或CSS。 此套件也會內嵌 **screens-weretail-run.core-0.0.1-SNAPSHOT.jar** 其中包含專案所需的任何Java™程式碼。
 
    >[!NOTE]
    >
-   >在本教學課程中，不會撰寫任何Java程式碼。 如果需要更複雜的商業邏輯，可以使用核心Java套裝建立及部署後端Java。
+   >在本教學課程中，不會撰寫任何Java™程式碼。 如果需要更複雜的商業邏輯，可以使用核心Java™套件組合來建立及部署後端Java™。
 
    ![以CRXDE Lite表示ui.apps程式碼](/help/screens-cloud/developing/assets/uipps-contents.png)
 
    以CRXDE Lite表示ui.apps程式碼
 
-   此 **地獄世界** 元件目前只是預留位置。 在教學課程中新增功能，讓作者可更新元件顯示的訊息。
+   此 **`helloworld`** 元件只是預留位置。 在教學課程中新增功能，讓作者可更新元件顯示的訊息。
 
 1. 此 **screens-weretail-run.ui.content** 套件會在下方安裝程式碼：
 
@@ -91,11 +91,11 @@ Hello World元件是一個簡單的元件，可讓使用者輸入要在畫面上
 
 AEM Screens有一些有趣的限制，對傳統WCM Sites元件不一定成立。
 
-* 大部分的Screens元件都需要在目標數位看板裝置上以全熒幕執行
-* 大部分的Screens元件需要內嵌在序列頻道中才能產生投影片
+* 大部分的Screens元件都必須在目標數位看板裝置上以全熒幕執行
+* 大部分的Screens元件必須內嵌在序列色版中，才能產生投影片
 * 製作時應允許編輯序列頻道中的個別元件，因此無法在全熒幕上呈現這些元件
 
-1. 在 **CRXDE-Lite** `http://localhost:4502/crx/de/index.jsp` （或選擇的IDE）瀏覽至 `/apps/weretail-run/components/content/helloworld.`
+1. 在 **CRXDE-Lite** `http://localhost:4502/crx/de/index.jsp` （或選擇的IDE），瀏覽至 `/apps/weretail-run/components/content/helloworld.`
 
    將下列屬性新增至 `helloworld` 元件：
 
@@ -109,7 +109,7 @@ AEM Screens有一些有趣的限制，對傳統WCM Sites元件不一定成立。
 
    /apps/weretail-run/components/content/helloworld的屬性
 
-   此 **地獄世界** 元件延伸 **foundation/components/parbase** 元件，以便在序列管道內正確使用。
+   此 **`helloworld`** 元件延伸 **foundation/components/parbase** 元件，以便在序列管道內正確使用。
 
 1. 在下方建立檔案 `/apps/weretail-run/components/content/helloworld` 已命名 `helloworld.html.`
 
@@ -129,12 +129,12 @@ AEM Screens有一些有趣的限制，對傳統WCM Sites元件不一定成立。
    <sly data-sly-test="${!production}" data-sly-include="edit.html" />
    ```
 
-   Screens元件需要兩種不同的轉譯，視何者而定 [製作模式](https://helpx.adobe.com/experience-manager/6-4/sites/authoring/using/author-environment-tools.html#PageModes) 正在使用：
+   Screens元件需要兩種不同的轉譯，視何者而定 [製作模式](https://experienceleague.adobe.com/docs/experience-manager-64/authoring/authoring/author-environment-tools.html?lang=en#page-modes) 正在使用：
 
    1. **生產**：預覽或發佈模式(wcmmode=disabled)
    1. **編輯**：用於所有其他撰寫模式，即編輯、設計、支架、開發人員……
 
-   `helloworld.html`充當切換器，檢查哪個製作模式目前作用中，並重新導向至另一個HTL指令碼。 Screens元件使用的常見慣例是 `edit.html` 編輯模式的指令碼和 `production.html` 生產模式的指令碼。
+   `helloworld.html`充當開關，檢查處於活動狀態的創作模式並重新導向到另一個HTL指令碼。 Screens元件使用的常見慣例是 `edit.html` 編輯模式的指令碼和 `production.html` 生產模式的指令碼。
 
 1. 在下方建立檔案 `/apps/weretail-run/components/content/helloworld` 已命名 `production.html.`
 
@@ -151,11 +151,11 @@ AEM Screens有一些有趣的限制，對傳統WCM Sites元件不一定成立。
    </div>
    ```
 
-   以上是Hello World元件的生產標籤。 A `data-duration` 屬性包含在內，因為元件用於序列管道上。 此 `data-duration` attribute是序列管道用來瞭解序列專案要顯示多久的時間。
+   上述生產標籤適用於Hello World元件。 A `data-duration` 屬性包含在內，因為元件用於序列管道上。 此 `data-duration` attribute是序列管道用來瞭解序列專案要顯示多久的時間。
 
-   元件會呈現 `div` 和 `h1` 標籤與文字。 `${properties.message}` 是HTL指令碼的一部分，將輸出名為的JCR屬性的內容 `message`. 稍後會建立對話方塊，讓使用者輸入 `message` 屬性文字。
+   元件會呈現 `div` 和 `h1` 標籤與文字。 `${properties.message}` 是HTL指令碼的一部分，會輸出名為的JCR屬性內容 `message`. 稍後會建立對話方塊，讓使用者輸入 `message` 屬性文字。
 
-   另請注意，元件會使用BEM （區塊要素修正因子）表示法。 BEM是CSS編碼慣例，可讓您更輕鬆地建立可重複使用的元件。 BEM是以下專案使用的記號： [AEM Core Components](https://github.com/Adobe-Marketing-Cloud/aem-core-wcm-components/wiki/CSS-coding-conventions). <!-- WEBSITE WAS NOT ACCESSIBLE AS OF SEPTEMBER 1, 2022 More info can be found at: [https://getbem.com/](https://getbem.com/) -->
+   另請注意，元件會使用BEM （區塊要素修正因子）表示法。 BEM是CSS編碼慣例，可讓您更輕鬆地建立可重複使用的元件。 BEM是以下專案使用的記號： [AEM Core Components](https://github.com/adobe/aem-core-wcm-components/wiki/CSS-coding-conventions). <!-- WEBSITE WAS NOT ACCESSIBLE AS OF SEPTEMBER 1, 2022 More info can be found at: [https://getbem.com/](https://getbem.com/) -->
 
 1. 在下方建立檔案 `/apps/weretail-run/components/content/helloworld` 已命名 `edit.html.`
 
@@ -182,7 +182,7 @@ AEM Screens有一些有趣的限制，對傳統WCM Sites元件不一定成立。
    </div>
    ```
 
-   以上是Hello World元件的編輯標籤。 如果已填入對話方塊訊息，則第一個區塊會顯示元件的編輯版本。
+   上述編輯標籤適用於Hello World元件。 如果已填入對話方塊訊息，則第一個區塊會顯示元件的編輯版本。
 
    如果沒有輸入對話方塊訊息，則會轉譯第二個區塊。 此 `cq-placeholder` 和 `data-emptytext` 轉譯標籤 ***Hello World*** 在該情況下為預留位置。 可使用i18n將標籤的字串國際化，以支援在多個區域設定中進行撰寫。
 
@@ -255,11 +255,11 @@ AEM Screens有一些有趣的限制，對傳統WCM Sites元件不一定成立。
    </jcr:root>
    ```
 
-   訊息的文字欄位會儲存至名為的屬性 `message` 且Duration的數字欄位會儲存至名為的屬性 `duration`. 這兩個屬性都在 `/apps/weretail-run/components/content/helloworld/production.html` 由HTL做為 `${properties.message}` 和 `${properties.duration}`.
+   此 `textfield` ，則會儲存至名為的屬性 `message` 而且 `numberfield` 「 」的「 」會儲存至名為的屬性 `duration`. 這兩個屬性都在 `/apps/weretail-run/components/content/helloworld/production.html` 由HTL做為 `${properties.message}` 和 `${properties.duration}`.
 
-   ![Hello World — 完成的對話方塊](/help/screens-cloud/developing/assets/2018-04-29_at_5_21pm.png)
+   ![Hello World — 已完成對話方塊](/help/screens-cloud/developing/assets/2018-04-29_at_5_21pm.png)
 
-   Hello World — 完成的對話方塊
+   Hello World — 已完成對話方塊
 
 ## 建立使用者端程式庫 {#clientlibs}
 
@@ -269,11 +269,11 @@ AEM Screens元件在編輯模式和預覽/生產模式的呈現方式不同。 �
 
 1. 為Hello World元件的使用者端資料庫建立資料夾。
 
-   下方 `/apps/weretail-run/components/content/helloworld`建立名為的新資料夾 `clientlibs`.
+   下方 `/apps/weretail-run/components/content/helloworld`，建立名為的資料夾 `clientlibs`.
 
    ![2018-04-30_at_1046am](/help/screens-cloud/developing/assets/2018-04-30_at_1046am.png)
 
-1. 在 `clientlibs` 資料夾建立名為的新節點 `shared` 型別 `cq:ClientLibraryFolder.`
+1. 在 `clientlibs` 資料夾，建立名為的節點 `shared` 型別 `cq:ClientLibraryFolder.`
 
    ![2018-04-30_at_1115am](/help/screens-cloud/developing/assets/2018-04-30_at_1115am.png)
 
@@ -305,7 +305,7 @@ AEM Screens元件在編輯模式和預覽/生產模式的呈現方式不同。 �
 
    ![2018-04-30_at_3_11pm](/help/screens-cloud/developing/assets/2018-04-30_at_3_11pm.png)
 
-   本教學課程不直接撰寫CSS，而是使用LESS。 [更少](https://lesscss.org/) 是支援CSS變數、mixin和函式的常用CSS預先編譯器。 AEM使用者端程式庫原生支援LESS編譯。 可以使用Sass或其他預先編譯程式，但需要在AEM外部編譯。
+   本教學課程不直接撰寫CSS，而是使用LESS。 [更少](https://lesscss.org/) 是支援CSS變數、mixin和函式的常用CSS預先編譯器。 AEM使用者端程式庫原生支援LESS編譯。 可以使用Sass或其他預先編譯程式，但必須在AEM外部編譯。
 
 1. 填入 `/apps/weretail-run/components/content/helloworld/clientlibs/shared/css/styles.less` ，其功能如下：
 
@@ -327,15 +327,15 @@ AEM Screens元件在編輯模式和預覽/生產模式的呈現方式不同。 �
    }
    ```
 
-1. 複製並貼上 `shared` 使用者端資料庫資料夾，以建立名為的新使用者端資料庫 `production`.
+1. 複製並貼上 `shared` 使用者端資料庫資料夾，以建立名為的使用者端資料庫 `production`.
 
    ![複製共用使用者端程式庫以建立新的生產使用者端程式庫](/help/screens-cloud/developing/assets/copy-clientlib.gif)
 
-   複製共用使用者端程式庫以建立新的生產使用者端程式庫
+   複製共用使用者端程式庫以建立生產使用者端程式庫。
 
 1. 更新 `categories` 要成為的生產clientlibrary的屬性 `cq.screens.components.production.`
 
-   這可確保僅在「預覽/生產」模式中載入樣式。
+   這麼做可確保只在「預覽/生產」模式中載入樣式。
 
    ![/apps/weretail-run/components/content/helloworld/clientlibs/production的屬性](/help/screens-cloud/developing/assets/2018-04-30_at_5_04pm.png)
 
@@ -376,12 +376,12 @@ AEM Screens元件在編輯模式和預覽/生產模式的呈現方式不同。 �
 
 ## 建立設計頁面 {#design-page}
 
-AEM Screens使用 [靜態頁面範本](https://helpx.adobe.com/tw/experience-manager/6-5/sites/developing/using/page-templates-static.html) 和 [設計設定](https://helpx.adobe.com/experience-manager/6-4/sites/authoring/using/default-components-designmode.html) 全域變更。 設計設定常用來在通道上設定Parsys的允許元件。 最佳實務是以應用程式專屬的方式儲存這些設定。
+AEM Screens使用 [靜態頁面範本](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/templates/page-templates-static.html?lang=zh-Hant) 和 [設計設定](https://experienceleague.adobe.com/docs/experience-manager-64/authoring/siteandpage/default-components-designmode.html?lang=en) 全域變更。 設計設定常用來在通道上設定Parsys的允許元件。 最佳實務是以應用程式專屬的方式儲存這些設定。
 
-在We.Retail Run設計頁面的下方建立，該頁面將儲存We.Retail Run專案的所有特定設定。
+We.Retail Run設計頁面建立於下方，用於儲存We.Retail Run專案的所有特定設定。
 
-1. 在 **CRXDE-Lite** `http://localhost:4502/crx/de/index.jsp#/apps/settings/wcm/designs` 導覽至 `/apps/settings/wcm/designs`
-1. 在designs資料夾下建立新節點，命名為 `we-retail-run` 具有型別 `cq:Page`.
+1. 在 **CRXDE Lite** `http://localhost:4502/crx/de/index.jsp#/apps/settings/wcm/designs`，導覽至 `/apps/settings/wcm/designs`
+1. 在designs資料夾下建立名為的節點 `we-retail-run` 具有型別 `cq:Page`.
 1. 在 `we-retail-run` 頁面，新增另一個名為的節點 `jcr:content` 型別 `nt:unstructured`. 將下列屬性新增至 `jcr:content` 節點：
 
    | 名稱 | 類型 | 值 |
@@ -396,9 +396,9 @@ AEM Screens使用 [靜態頁面範本](https://helpx.adobe.com/tw/experience-man
 
 ## 建立順序頻道 {#create-sequence-channel}
 
-Hello World元件的用途為序列頻道。 若要測試元件，則會建立新的「序列頻道」。
+Hello World元件適用於序列頻道。 若要測試元件，則會建立新的「序列頻道」。
 
-1. 從AEM「開始」功能表瀏覽至 **Screens** > **We.Retail Ru** n >並選取 **頻道**.
+1. 從AEM「開始」功能表，瀏覽至 **Screens** > **We.Retail Ru** n >並選取 **頻道**.
 
 1. 按一下 **建立** 按鈕
 
@@ -417,17 +417,17 @@ Hello World元件的用途為序列頻道。 若要測試元件，則會建立�
 
    ![idle-channel](/help/screens-cloud/developing/assets/idle-channel.gif)
 
-1. 開啟「閒置頻道」的頁面屬性。 更新設計欄位以指向 `/apps/settings/wcm/designs/we-retail-run,`在上一節中建立的設計頁面。
+1. 開啟「閒置頻道」的頁面屬性。 更新「設計」欄位，使其指向 `/apps/settings/wcm/designs/we-retail-run,`在上一節中建立的設計頁面。
 
    ![設計設定/apps/settings/wcm/designs/we-retail-run](/help/screens-cloud/developing/assets/2018-05-07_at_1240pm.png)
 
    指向/apps/settings/wcm/designs/we-retail-run的設計設定
 
-1. 編輯新建立的閒置頻道以開啟它。
+1. 編輯新建立的「閒置頻道」，以將其開啟。
 
-1. 切換頁面模式至 **設計** 模式
+1. 切換頁面模式至 **設計** 模式。
 
-   1. 按一下 **扳手** Parsys中的圖示可設定允許的元件
+   1. 按一下 **扳手** 圖示，方便您設定允許的元件。
 
    1. 選取 **Screens** 群組和 **We.Retail回合 — 內容** 群組。
 
@@ -437,7 +437,7 @@ Hello World元件的用途為序列頻道。 若要測試元件，則會建立�
 
    ![2018-04-30_at_5_53pm](assets/2018-04-30_at_5_53pm.png)
 
-1. 在 **CRXDE-Lite** `http://localhost:4502/crx/de/index.jsp#/apps/settings/wcm/designs/we-retail-run/jcr%3Acontent/sequencechannel/par` 導覽至 `/apps/settings/wcm/designs/we-retail-run/jcr:content/sequencechannel/par`. 請注意 `components` 屬性現在包含 `group:Screens`， `group:We.Retail Run - Content`.
+1. 在 **CRXDE Lite** `http://localhost:4502/crx/de/index.jsp#/apps/settings/wcm/designs/we-retail-run/jcr%3Acontent/sequencechannel/par`，導覽至 `/apps/settings/wcm/designs/we-retail-run/jcr:content/sequencechannel/par`. 請注意 `components` 屬性現在包含 `group:Screens`， `group:We.Retail Run - Content`.
 
    ![/apps/settings/wcm/designs/we-retail-run下的設計設定](/help/screens-cloud/developing/assets/2018-05-07_at_1_14pm.png)
 
@@ -445,9 +445,9 @@ Hello World元件的用途為序列頻道。 若要測試元件，則會建立�
 
 ## 自訂處理常式的範本 {#custom-handlers}
 
-如果您的自訂元件使用外部資源，例如資產（影像、影片、字型、圖示等）、特定資產轉譯或使用者端資料庫（css、js等），則這些不會自動新增到離線設定，因為預設情況下我們只會捆綁HTML標籤。
+如果您的自訂元件使用外部資源，例如資產（影像、影片、字型和圖示）、特定資產轉譯或使用者端資料庫（css和js），這些資源不會自動新增到離線設定。 原因在於Adobe預設只會整合HTML標籤。
 
-為了讓您自訂和最佳化下載至播放器的確切資產，我們為自訂元件提供擴充機制，以在Screens中向離線快取邏輯公開其相依性。
+為了讓您自訂和最佳化下載至播放器的確切資產，Adobe為自訂元件提供擴充機制，以在Screens中向離線快取邏輯公開其相依性。
 
 以下區段會示範自訂離線資源處理常式的範本，以及 `pom.xml` 特定專案的URL。
 

@@ -2,10 +2,10 @@
 title: 調整 KPI
 description: 調整 KPI
 exl-id: d338a7bd-adfe-486a-badf-348acd6018d0
-source-git-commit: 8bd001f6f70ce1aa9a63623b3ad68793fa355c9a
+source-git-commit: 7260649eaab303ba5bab55ccbe02395dc8159949
 workflow-type: tm+mt
-source-wordcount: '483'
-ht-degree: 100%
+source-wordcount: '487'
+ht-degree: 43%
 
 ---
 
@@ -14,29 +14,29 @@ ht-degree: 100%
 >[!CONTEXTUALHELP]
 >id="aemcloud_alignkpis"
 >title="調整 KPI"
->abstract="在數位世界中，幾乎一切都可以測量。為您的 Adobe Experience Manager 實作選擇正確的 KPI 將幫助您的團隊專注於最重要的事情。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/assessing-kpis.html?lang=zh-Hant" text="評估 KPI"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/choose-right-team.html?lang=zh-Hant" text="選擇合適的團隊"
+>abstract="在數位世界中，幾乎一切都可以測量。為您的Adobe Experience Manager實作選擇正確的KPI可協助您的團隊專注於最重要的事項。"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/assessing-kpis.html?lang=en" text="評估 KPI"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/choose-right-team.html?lang=en" text="選擇合適的團隊"
 
-在數位世界中，幾乎一切都可以測量。為您的 Adobe Experience Manager 實作選擇三個 KPI 將幫助您的團隊專注於最重要的事情。
-
-
-## **按照這 6 個步驟來決定測量什麼以及如何測量**
+在數位世界中，幾乎一切都可以測量。為Adobe Experience Manager實作選擇三個KPI可協助您的團隊專注於最重要的事項。
 
 
-1. **從您的業務目標開始。**&#x200B;例如，您的業務目標可能是增加線上營收、降低營運費用或減少與違反數位版權管理 (DRM) 相關的法律費用。
+## **請依照以下六個步驟操作，以便您決定要測量的內容和測量方式**
 
-1. **根據您的目標，決定您的目的。**&#x200B;您的目的是希望透過採用 Experience Manager 作為內容管理平台實現的具體結果。如果您的目標是增加線上營收，您的目的可能是將所有行銷內容頁面的轉換率提高 2 個百分點。如果您的目標是降低營運費用，您的目的可能是將建立數位內容的團隊的生產力提高 20%。
 
-   理想情況下，每個目的都應該有一個基準數字，例如您特定類別頁面的目前轉換率。與網站造訪或轉換率或線上營收相關的基準數字相對容易找到。對於與生產力或上市時間相關的目的，可能需要一些工作來計算基準線。不過，這是值得的，因為擁有明確的目的將協助您從對 Experience Manager 的投資中獲得更多價值。
+1. **從您的業務目標開始。** 例如，您的業務目標可能是增加線上收入、減少營運支出，或減少與Digital Rights Management(DRM)違規相關的法律支出。
 
-1. **對於每個目的，確定績效指標。**&#x200B;例如，如果您的目的是將與違反 DRM 相關的法律成本降低 100,000 美元，則良好的績效指標可能是：「100% 的過期資產在到期日或之前從數位財產中移除。」嘗試為每個目的提出多個指標。如果您從 2-3 個業務目標和 3-5 個目的開始，您可能會有一個包含 15-20 個績效指標的清單。
+1. **根據您的目標，決定您的目的。** 您的目標是希望透過採用Experience Manager作為內容管理平台而達成的具體成果。 如果您的目標是增加線上營收，您的目的可能是將所有行銷內容頁面的轉換率提高 2 個百分點。如果您的目標是降低營運費用，您的目的可能是將建立數位內容的團隊的生產力提高 20%。
 
-1. **選擇對您的業務最重要的 3 個指標。** 這些就是您的 KPI。它們可能與 3 個業務目標保持一致，每個都由不同的 C 級高階主管強烈支持，或者所有 3 個 KPI 可能支持同一目標，如果每個人都認為這是最重要的目標。
+   理想情況下，每個目的都應該有一個基準數字，例如您特定類別頁面的目前轉換率。與網站造訪或轉換率或線上營收相關的基準數字相對容易找到。對於與生產力或上市時間相關的目標，可能需要一些工作才能計算基準。 不過值得一試，因為擁有明確的目標可協助您從Experience Manager投資中獲得更多價值。
 
-1. **為每個 KPI 建立可測量的方法。**&#x200B;選擇 KPI 後，請下載我們的 KPI 方法範本，它將引導您完成其餘的流程。
+1. **對於每個目的，確定績效指標。** 例如，您的目標可能是將與DRM違規相關的法律成本減少$100,000。 一個良好的績效指標可能是「在到期日當天或之前，已從數位內容中移除100%已到期的資產」。 嘗試為每個目的提出多個指標。如果您從 2-3 個業務目標和 3-5 個目的開始，您可能會有一個包含 15-20 個績效指標的清單。
 
-1. **為每個 KPI 定義對象。**&#x200B;本週的最後一步是確定最在乎每個 KPI 的利益相關者群組。下週，您將與每個群組一起確認 KPI，改進方法，並就報告的格式和時間安排取得一致意見。
+1. **選擇對您的業務最重要的三個指標。** 這些指標是您的KPI。 這些目標可能會與三個業務目標一致（每個目標都由不同的高層主管所倡導），或者如果每個人都同意這是最重要的目標，則所有三個KPI可能會支援相同的目標。
+
+1. **為每個 KPI 建立可測量的方法。** 選擇KPI後，請下載Adobe的KPI方法範本，這會引導您完成流程的其餘部分。
+
+1. **為每個 KPI 定義對象。**&#x200B;本週的最後一步是確定最在乎每個 KPI 的利益相關者群組。下週您將與每個群組合作，確認KPI、調整方法，並同意報告的格式和時間。
 
 >[!TIP]
 >

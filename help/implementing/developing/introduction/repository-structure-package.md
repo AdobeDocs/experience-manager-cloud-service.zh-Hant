@@ -1,19 +1,19 @@
 ---
 title: AEM 專案存放庫結構套件
-description: Adobe Experience Manager as a Cloud Service Maven專案需要存放庫結構子套件定義，其唯一用途是定義專案的程式碼子套件部署到的JCR存放庫根目錄。
+description: Adobe Experience Manager as a Cloud Service上的Maven專案需要存放庫結構子套件定義，其唯一用途是定義專案的程式碼子套件部署到的JCR存放庫根目錄。
 exl-id: dec08410-d109-493d-bf9d-90e5556d18f0
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 7260649eaab303ba5bab55ccbe02395dc8159949
 workflow-type: tm+mt
-source-wordcount: '525'
-ht-degree: 9%
+source-wordcount: '535'
+ht-degree: 2%
 
 ---
 
 # AEM 專案存放庫結構套件
 
-Adobe Experience Manager as a Cloud Service的Maven專案需要存放庫結構子套件定義，其唯一目的是定義專案程式碼子套件部署到的JCR存放庫根目錄。 這可確保JCR資源相依性自動對Experience Manageras a Cloud Service的套件安裝排序。 缺少相依性可能會導致子結構安裝在其父結構之前，並因此意外被移除，中斷部署的情況。
+Adobe Experience Manager as a Cloud Service的Maven專案需要存放庫結構子套件定義，其唯一目的是定義專案程式碼子套件部署到的JCR存放庫根目錄。 此方法可確保JCR資源相依性自動對Experience Manageras a Cloud Service中的套件安裝排序。 缺少相依性可能會導致子結構安裝在其父結構之前，並因此意外被移除，中斷部署的情況。
 
-如果您的代碼包部署到代碼包 **未涵蓋的位置** ，則必須在儲存庫結構包中列舉任何上階資源 (靠近JCR根的JCR資源)，以建立這些依賴項。
+如果您的程式碼套件部署到位置 **未涵蓋** 透過程式碼套件，則必須在存放庫結構套件中列舉任何上階資源（靠近JCR根的JCR資源）。 建立這些相依性需要此程式。
 
 ![存放庫結構套件](./assets/repository-structure-packages.png)
 
@@ -25,15 +25,15 @@ Adobe Experience Manager as a Cloud Service的Maven專案需要存放庫結構�
 + `/apps/cq/...`， `/apps/dam/...`， `/apps/wcm/...`、和 `/apps/sling/...` 提供下列專案的一般覆蓋圖： `/libs`.
 + `/apps/settings` 這是共用的內容感知設定根路徑
 
-請注意，此子封裝 **沒有** 任何內容，且僅由 `pom.xml` 定義篩選根目錄。
+此子封裝 **沒有** 任何內容，且僅由 `pom.xml` 定義篩選根目錄。
 
 ## 建立存放庫結構套件
 
-若要為您的Maven專案建立存放庫結構套件，請建立新的空Maven子專案，包含以下內容 `pom.xml`，更新專案中繼資料以符合您的父Maven專案。
+若要為您的Maven專案建立存放庫結構套件，請建立空的Maven子專案，包含下列專案 `pom.xml`，更新專案中繼資料以符合您的父Maven專案。
 
 更新 `<filters>` 以包含您部署程式碼套件的所有JCR存放庫路徑根。
 
-確保將此新Maven子專案新增到父專案 `<modules>` 清單。
+確定將此新Maven子專案新增到父專案 `<modules>` 清單。
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -162,7 +162,7 @@ Adobe Experience Manager as a Cloud Service的Maven專案需要存放庫結構�
 + 程式碼套件A部署至 `/apps/a`
 + 程式碼套件B部署至 `/apps/a/b`
 
-如果程式碼套件A上的程式碼套件B未建立套件層級的相依性，程式碼套件B可能會先部署到 `/apps/a`，接著是程式碼套件B，部署至 `/apps/a`，因此會移除先前安裝的 `/apps/a/b`.
+如果程式碼套件A上的程式碼套件B未建立套件層級的相依性，程式碼套件B可能會先部署到 `/apps/a`. 接著會是程式碼套件B，這會部署至 `/apps/a`. 如此將會移除先前安裝的 `/apps/a/b`.
 
 在此案例中：
 
@@ -171,14 +171,14 @@ Adobe Experience Manager as a Cloud Service的Maven專案需要存放庫結構�
 
 ## 錯誤與偵錯
 
-如果存放庫結構套件未正確設定，在Maven會報告錯誤：
+如果存放庫結構套件未正確設定，則Maven會報告錯誤：
 
 ```
 1 error(s) detected during dependency analysis.
 Filter root's ancestor '/apps/some/path' is not covered by any of the specified dependencies.
 ```
 
-這表示中斷程式碼套件沒有 `<repositoryStructurePackage>` 該清單 `/apps/some/path` 在其篩選清單中。
+此錯誤表示中斷的程式碼套件沒有 `<repositoryStructurePackage>` 該清單 `/apps/some/path` 在其篩選清單中。
 
 ## 其他資源
 
