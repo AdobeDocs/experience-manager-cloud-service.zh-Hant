@@ -2,10 +2,10 @@
 title: Adobe Experience Manager as a Cloud Service 的 SEO 和 URL 管理最佳作法
 description: Adobe Experience Manager as a Cloud Service 的 SEO 和 URL 管理最佳作法
 exl-id: abe3f088-95ff-4093-95a1-cfc610d4b9e9
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
 source-wordcount: '3709'
-ht-degree: 97%
+ht-degree: 95%
 
 ---
 
@@ -286,7 +286,7 @@ Resource myPage = req.getResource();
 
 至此，您已與元件中的邏輯一併實作完成對應，以便在將 URL 輸出至頁面時使用這些對應。
 
-最後一個步驟，就是在這些縮短的 URL 進入 `mod_rewrite` 會發揮作用的 Dispatcher 時處理這些 URL。使用 `mod_rewrite` 的最大優點，就是 URL 在傳送到 Dispatcher 模組&#x200B;*之前*&#x200B;會先重新對應到原本的較長格式。也就是說，Dispatcher 會從發佈伺服器要求長 URL 並加以進行快取。因此，任何來自發佈伺服器的 Dispatcher 排清都可以成功使該內容無效。
+最後一個步驟，就是在這些縮短的 URL 進入 `mod_rewrite` 會發揮作用的 Dispatcher 時處理這些 URL。使用的最大優點 `mod_rewrite` URL會對應回其長格式 *早於* 它們會傳送至Dispatcher模組。 也就是說，Dispatcher 會從發佈伺服器要求長 URL 並加以進行快取。因此，任何來自發佈伺服器的 Dispatcher 排清都可以成功使該內容無效。
 
 要實作這些規則，您可以在 Apache HTTP 伺服器設定的虛擬主機下新增 `RewriteRule` 元素。如果您想要拉長上個範例中縮短的 URL，則可實作如下規則：
 
@@ -349,7 +349,7 @@ Disallow: /
 
 或者，您可以在即時環境中選擇不允許某些不希望建立索引的路徑。
 
-將 `robots.txt` 檔案置於網站根時應注意，Dispatcher 排清要求可能會清除此檔案，且 URL 對應可能會將網站根置於與 Apache HTTP 伺服器設定中已定義的 `DOCROOT` 不同之處。因此，常見的方式是將此檔案放置在網站根目的作者執行個體上，並複製到發佈執行個體。
+放置 `robots.txt` 網站根目錄的檔案是，Dispatcher排清請求可能會清除此檔案，而URL對應可能會將網站根目錄放置在與 `DOCROOT` 如Apache HTTP Server設定中所定義。 因此，常見的方式是將此檔案放置在網站根目的作者執行個體上，並複製到發佈執行個體。
 
 ### 在 AEM 上建置 XML Sitemap {#building-an-xml-sitemap-on-aem}
 

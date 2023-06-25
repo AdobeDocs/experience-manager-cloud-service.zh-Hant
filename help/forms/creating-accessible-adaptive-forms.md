@@ -9,9 +9,9 @@ topic-tags: author
 discoiquuid: 1e95c66b-d132-4c44-a1dc-31fd09af8113
 docset: aem65
 exl-id: 3b5247fa-decb-40eb-a629-6d834976d33c
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '2025'
+source-wordcount: '2024'
 ht-degree: 0%
 
 ---
@@ -125,7 +125,6 @@ Ultramine-Accessible主題是參考主題。 它有助於示範如何修正最�
 >
 >* 「選項按鈕」和「核取方塊」只能有兩個協助工具選項，即「自訂文字」和「標題」。
 >* 對於以XFA為基礎的最適化Forms，協助工具選項繼承自XDP中設定的協助工具選項。 XDP的工具提示會對應到簡短說明，而註解則會對應到標題。 其他選項則按原樣運作。
-
 
 ### 3.提供影像的對等文字 {#provide-text-equivalents-for-images}
 

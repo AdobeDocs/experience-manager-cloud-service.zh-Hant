@@ -6,9 +6,9 @@ mini-toc-levels: 3
 feature: Asset Management,Publishing,Collaboration,Asset Processing
 role: User,Architect,Admin
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '4377'
+source-wordcount: '4376'
 ht-degree: 12%
 
 ---
@@ -66,7 +66,7 @@ ht-degree: 12%
 
 >[!NOTE]
 >
->如果您已使用設定重複偵測器 `/apps/example/config.author/com.adobe.cq.assetcompute.impl.assetprocessor.AssetDuplicationDetector.cfg.json` 設定檔案（OSGi設定），您可以繼續使用，但Adobe建議使用新方法。
+>如果您已使用設定重複偵測器 `/apps/example/config.author/com.adobe.cq.assetcompute.impl.assetprocessor.AssetDuplicationDetector.cfg.json` 設定檔案（OSGi設定），您可繼續使用，但Adobe建議使用新方法。
 
 
 啟用後，Experience Manager會將重複資產的通知傳送到Experience Manager收件匣。 此為多個重複專案的彙總結果。 使用者可以選擇根據結果移除資產。

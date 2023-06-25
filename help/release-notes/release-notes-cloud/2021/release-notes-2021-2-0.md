@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2021.2.0 版發行說明。'
 description: '"[!DNL Adobe Experience Manager] 2021.2.0版as a Cloud Service發行說明」。'
 exl-id: 88dac54b-cc12-44a0-b429-6e691221f806
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '1234'
-ht-degree: 31%
+source-wordcount: '1232'
+ht-degree: 29%
 
 ---
 
@@ -78,7 +78,7 @@ ht-degree: 31%
 
 * 擴充產品主控台屬性，以顯示連結的資產和體驗片段，包括快速導覽至相關內容的動作。
 
-* 已發行CIF Venia Reference Site - 2021.02.24，其中包含最新CIF Core Components v1.8.0版。請參閱 [CIF Venia參考網站](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.02.24) 以取得更多詳細資料。
+* 已發行CIF Venia Reference Site - 2021.02.24，其中包含最新CIF Core Components v1.8.0版。另請參閱 [CIF Venia參考網站](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.02.24) 以取得更多詳細資料。
 
 * 已發行CIF Core Components v1.8.0。請參閱 [CIF Core Components](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.8.0) 以取得更多詳細資料。
 
@@ -91,7 +91,7 @@ AEM as a Cloud Service 2021.2.0 中 Cloud Manager 的發行日期為 2021 年 2 
 ### 新增功能 {#what-is-new-cloud-manager}
 
 
-* Assets 客戶現在可以透過 Cloud Manager UI 以自助方式選擇何時何地部署其 Brand Portal 執行個體。對於具有 Assets 解決方案的一般 (非沙箱) 計畫，現在可以在生產環境中佈建品牌入口網站。佈建只能在生產環境中進行一次。
+* Assets 客戶現在可以透過 Cloud Manager UI 以自助方式選擇何時何地部署其 Brand Portal 執行個體。對於具有Assets解決方案的一般（非沙箱）計畫，現在可以在生產環境中布建Brand Portal。 佈建只能在生產環境中進行一次。
 
 * 專案和沙箱建立中使用的 AEM Project 原型已更新至版本 25。
 

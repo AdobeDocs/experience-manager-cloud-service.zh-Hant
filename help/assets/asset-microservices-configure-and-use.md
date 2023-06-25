@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Compute Microservices,Workflow,Asset Processing
 role: Architect,Admin
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '2932'
+source-wordcount: '2933'
 ht-degree: 2%
 
 ---
@@ -75,7 +75,7 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 
 1. 管理員存取權 **[!UICONTROL 工具]** > **[!UICONTROL 資產]** > **[!UICONTROL 處理設定檔]**. 按一下&#x200B;**[!UICONTROL 建立]**。
 1. 提供可協助您在套用至資料夾時唯一識別設定檔的名稱。
-1. 若要產生FPO轉譯，請前往 **[!UICONTROL 影像]** 標籤，啟用 **[!UICONTROL 建立FPO轉譯]**. 輸入 **[!UICONTROL 品質]** 值介於1到100之間。
+1. 若要產生FPO轉譯，請前往 **[!UICONTROL 影像]** 標籤，啟用 **[!UICONTROL 建立FPO轉譯]**. 輸入 **[!UICONTROL 品質]** 1-100之間的值。
 1. 若要產生其他轉譯，請按一下 **[!UICONTROL 新增]** 並提供下列資訊：
 
    * 每個轉譯的檔案名稱。
@@ -101,7 +101,7 @@ The following video demonstrates the usefulness and usage of standard profile.
 
 ## 自訂設定檔和使用案例 {#custom-config}
 
-此 [!DNL Asset Compute Service] 支援各種使用案例，例如預設處理、處理Adobe專用格式(如Photoshop檔案)以及實作自訂或組織專用處理。 過去需要的DAM更新資產工作流程自訂可自動處理，或透過處理設定檔設定來處理。 如果這些處理選項無法滿足業務需求，Adobe建議開發並使用 [!DNL Asset Compute Service] 以延伸預設功能。 如需概覽，請參閱 [瞭解擴充功能及使用時機](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html).
+此 [!DNL Asset Compute Service] 支援各種使用案例，例如預設處理、處理Adobe專用格式(如Photoshop檔案)以及實作自訂或組織專用處理。 過去需要的DAM更新資產工作流程自訂可自動處理或通過處理設定檔設定來處理。 如果這些處理選項無法滿足業務需求，Adobe建議開發並使用 [!DNL Asset Compute Service] 以延伸預設功能。 如需概覽，請參閱 [瞭解擴充功能及使用時機](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html).
 
 >[!NOTE]
 >

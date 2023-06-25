@@ -3,9 +3,9 @@ title: 設定RTF編輯器以編寫內容 [!DNL Adobe Experience Manager] as a Cl
 description: 設定RTF編輯器以編寫內容 [!DNL Adobe Experience Manager] as a Cloud Service。
 contentOwner: AG
 exl-id: 1f0ff800-5e95-429a-97f2-221db0668170
-source-git-commit: e6ab7ba91b52d3479a85870e8ffa8e8d2f1e303e
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '1876'
+source-wordcount: '1875'
 ht-degree: 0%
 
 ---
@@ -100,7 +100,7 @@ RTE的基本功能會由的值啟用或停用 `features` 屬性（在適當的�
 | 影像 | `image` | 基本影像支援（從內容或內容尋找器拖曳）。 根據瀏覽器的不同，支援對作者有不同的行為 |
 | 金鑰 | - | 若要定義此值，請參閱 [索引標籤大小](configure-rich-text-editor-plug-ins.md#tabsize). |
 | 左右對齊 | `justifyleft`, `justifycenter`, `justifyright` | 段落對齊方式。 |
-| 連結 | `modifylink`, `unlink`, `anchor` | [超連結和錨點](configure-rich-text-editor-plug-ins.md#linkstyles). |
+| links | `modifylink`, `unlink`, `anchor` | [超連結和錨點](configure-rich-text-editor-plug-ins.md#linkstyles). |
 | 清單 | `ordered`, `unordered`, `indent`, `outdent` | 此外掛程式會同時控制兩者 [縮排和清單](configure-rich-text-editor-plug-ins.md#indentmargin)；包括巢狀清單。 |
 | misctools | `specialchars`、`sourceedit` | 其他工具可讓作者輸入 [特殊字元](configure-rich-text-editor-plug-ins.md#spchar) 或編輯HTML來源。 此外，您也可以新增 [特殊字元範圍](configure-rich-text-editor-plug-ins.md#definerangechar) 如果您想要定義自己的清單。 |
 | 引數格式 | `paraformat` | 預設段落格式為段落、標題1、標題2和標題3 (`<p>`， `<h1>`， `<h2>`、和 `<h3>`)。 您可以 [新增更多段落格式](configure-rich-text-editor-plug-ins.md#paraformats) 或擴充清單。 |
@@ -282,4 +282,3 @@ RTE中可用的選項會從使用者介面設定向下流向內容原則。
 >* [設定RTE外掛程式](configure-rich-text-editor-plug-ins.md)
 >* [使用RTF編輯器進行編寫](/help/sites-cloud/authoring/fundamentals/rich-text-editor.md)
 >* [為可存取的網站設定RTE](rte-accessible-content.md)
-

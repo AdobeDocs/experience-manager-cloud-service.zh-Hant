@@ -2,9 +2,9 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2021.8.0 版發行說明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2021.8.0 版發行說明。'
 exl-id: 8b041934-1c4a-4670-9b03-d38f683b99e5
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '1032'
+source-wordcount: '1028'
 ht-degree: 50%
 
 ---
@@ -36,24 +36,24 @@ ht-degree: 50%
 
 * 以連結形式共用數位資產時，使用者可以立即將URL複製到剪貼簿。 此增強功能可讓您以更快、更方便的方式共用資產。 此功能可讓您更快、更方便地共用資產。
 
-   ![以連結形式共用資產時複製URL選項](/help/assets/assets/link-share-copy-URL-option.png)
-   *圖：以連結形式共用資產時，您現在可以複製URL來分別共用。*
+  ![以連結形式共用資產時複製URL選項](/help/assets/assets/link-share-copy-URL-option.png)
+  *圖：以連結形式共用資產時，您現在可以複製URL來分別共用。*
 
 * 當您上傳TXT檔案時，資產微服務會自動產生縮圖。 PNG縮圖是TXT檔案的轉譯，可幫助使用者在一定程度上識別內容或檔案，而不需要開啟檔案。 依預設，此功能不需要任何設定即可運作。
 
-   ![TXT檔案的轉譯會由自動產生 [!DNL Assets] PNG格式](/help/assets/assets/thumbnail-rendition-txt-file.png)
-   *圖：會自動產生TXT檔案的轉譯，以協助您識別檔案而不需要開啟。*
+  ![TXT檔案的轉譯會由自動產生 [!DNL Assets] PNG格式](/help/assets/assets/thumbnail-rendition-txt-file.png)
+  *圖：會自動產生TXT檔案的轉譯，以協助您識別檔案而不需要開啟。*
 
 ### 中的新功能 [!DNL Assets] 發行前通道 {#assets-prerelease-features}
 
 * 使用者現在可以在「欄」和「卡片」檢視中排序搜尋結果內所顯示的資產。 排序功能適用於「名稱」、「已建立」、「已修改」或「無」欄。
 
-   ![將搜尋結果排序於 [!DNL Assets] 在欄和卡片檢視中](/help/assets/assets/sort-searched-assets.png)
-   *圖：將搜尋結果排序於 [!DNL Assets] 在欄和卡片檢視中。*
+  ![將搜尋結果排序於 [!DNL Assets] 在欄和卡片檢視中](/help/assets/assets/sort-searched-assets.png)
+  *圖：將搜尋結果排序於 [!DNL Assets] 在欄和卡片檢視中。*
 
 ### 修正在[!DNL Assets]中的錯誤 {#assets-bugs-fixed}
 
-* 當投稿人群組成員導覽至 [!DNL Assets] 主控台，額外的 `POST` 會產生要求以嘗試建立集合。 此請求不是必要請求，它會因許可權問題而失敗，並在記錄中建立許多錯誤。 (CQ-4328856)
+* 當投稿人群組成員導覽至 [!DNL Assets] 主控台，額外的 `POST` 會產生要求以建立集合。 此請求不是必要請求；它因許可權問題而失敗，並在記錄中建立許多錯誤。 (CQ-4328856)
 * 使用者檢視資產並選取 [!UICONTROL 時間表] 從左側面板的躍現式選單中會顯示錯誤。 在記錄中，由於查詢錯誤，會記錄許多警告。 (CQ-4328919)
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
@@ -80,7 +80,7 @@ ht-degree: 50%
 
 * 新的類別選擇器UI可改善使用者體驗、提高效率，以及更好地支援複雜的產品目錄
 
-   ![新增類別選取器](/help/assets/CIF/category-picker.png)
+  ![新增類別選取器](/help/assets/CIF/category-picker.png)
 
 * CIF核心元件更好的A11Y支援
 

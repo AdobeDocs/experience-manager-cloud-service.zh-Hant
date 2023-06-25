@@ -2,11 +2,11 @@
 title: 簡介和概觀
 description: Content and Commerce 簡介和概觀。在透過 Experience Cloud 整合和擴充 Adobe Commerce 和其他第三方商務解決方案的商務服務時，Adobe 建議使用 Experience Manager 商務整合框架 (CIF) 作為模式。
 thumbnail: introducing-aem-commerce.jpg
-exl-id: 29410f76-a63f-4b0a-b817-2ed724ad1a3c,74e832f9-f8ff-4901-b4c2-6a2862c51411
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+exl-id: 29410f76-a63f-4b0a-b817-2ed724ad1a3c
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '895'
-ht-degree: 100%
+source-wordcount: '894'
+ht-degree: 92%
 
 ---
 
@@ -42,11 +42,11 @@ ht-degree: 100%
 
 ## 自 2013 年以來 CIF 成功支援客戶 {#support}
 
-CIF 擁有 200 多家客戶，已成為成功內容和商務專案的成功要素。這為當今和未來的 IT 和商業提供了價值。最近的客戶專案將 CIF 描述為「創造極多價值的優異加速器和巨大省時器」。
+CIF 擁有 200 多家客戶，已成為成功內容和商務專案的成功要素。這為當今和未來的 IT 和商業提供了價值。近期的客戶專案將CIF描述為「絕佳的加速器，以及具有大量價值的省時工具」。
 
 ## CIF 的優點 {#cif-benefits}
 
-CIF 提供開箱即用的商務核心元件，可減少對自訂程式碼的需求，從而加快品牌的上市時間。所有核心元件都與 Adobe 的用戶端資料相整合且立即可用，以序列化客戶描述檔，例如統一的描述檔。此描述檔會詳細捕捉訪客行為，可用於即時預測和個人化客戶歷程。
+CIF 提供開箱即用的商務核心元件，可減少對自訂程式碼的需求，從而加快品牌的上市時間。所有核心元件都可與Adobe的使用者端資料層立即整合，以結合客戶設定檔，例如統一設定檔。 此設定檔會詳細擷取訪客的行為，其可用於即時預測和個人化客戶歷程。
 
 CIF 附加元件將產品情境帶入 Experience Manager 並提供編寫工具 (例如產品主控台) 和產品/類別選擇器，使行銷人員不用依賴開發人員，即可在 Experience Manager 中建立和傳遞可購物的體驗。優點包括：
 

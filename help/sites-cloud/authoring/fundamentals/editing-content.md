@@ -2,9 +2,9 @@
 title: 編輯頁面內容
 description: 建立頁面後，您可以編輯內容以進行您所需的更新
 exl-id: 8af0f621-14e8-4605-a51a-a3be21f19092
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '3004'
+source-wordcount: '3002'
 ht-degree: 6%
 
 ---
@@ -443,7 +443,7 @@ ht-degree: 6%
 
 ## 鎖定頁面 {#locking-a-page}
 
-AEM可讓您鎖定頁面，讓其他人無法修改內容。 當您對某個特定頁面進行大量編輯，或需要凍結頁面一段時間時，此功能會很有用。
+AEM可讓您鎖定頁面，讓其他人無法編輯內容。 當您對某個特定頁面進行大量編輯，或需要凍結頁面一段時間時，此鎖定功能會很有用。
 
 可從下列任一位置鎖定頁面：
 

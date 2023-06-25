@@ -3,10 +3,10 @@ title: 將 Dispatcher 設定從 AMS 移轉到 AEM as a Cloud Service
 description: 將 Dispatcher 設定從 AMS 移轉到 AEM as a Cloud Service
 feature: Dispatcher
 exl-id: ff7397dd-b6e1-4d08-8e2d-d613af6b81b3
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '1445'
-ht-degree: 16%
+source-wordcount: '1446'
+ht-degree: 18%
 
 ---
 
@@ -258,6 +258,6 @@ $ docker_run.sh out docker.for.mac.localhost:4503 8080
 
 ### 使用您的新Dispatcher設定
 
-恭喜！如果驗證器不再回報任何問題，且Docker容器啟動時未出現任何失敗情況或警告，即可將您的設定移至 `dispatcher/src` Git存放庫的子目錄。
+恭喜！如果驗證器不再回報任何問題，且 Docker 容器啟動時未出現任何失敗情況或警告，即可將您的設定移至 Git 存放庫的 `dispatcher/src` 子目錄。
 
 **使用AMS Dispatcher設定版本1的客戶應聯絡客戶支援，協助他們從版本1移轉至版本2，以便遵循上述指示。**

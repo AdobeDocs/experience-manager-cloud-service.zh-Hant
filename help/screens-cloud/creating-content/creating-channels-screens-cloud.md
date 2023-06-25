@@ -2,7 +2,7 @@
 title: as a Cloud Service在Screens中建立和管理頻道
 description: 本頁面說明如何在Screens中以as a Cloud Service方式建立和管理頻道。
 exl-id: 3b0bae7a-4a45-485a-ab04-604510ff6578
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
 source-wordcount: '1104'
 ht-degree: 1%
@@ -84,8 +84,8 @@ ht-degree: 1%
 
 | 可用的範本 | 說明 |
 |--- |--- |
-| 頻道資料夾 | 允許建立資料夾以儲存管道集合。 |
-| 順序頻道 | 允許建立依序播放元件的色版（在投影片放映中逐一播放）。 |
+| 頻道資料夾 | 可讓您建立資料夾以儲存管道集合。 |
+| 順序頻道 | 可讓您建立依序播放元件的頻道（在投影片放映中逐一播放）。 |
 | 左或右L列拆分畫面頻道 | 可讓內容作者在適當大小的區域中檢視不同型別的資產。 |
 
 ## 使用管道的預設指派詳細資料 {#default-channels}

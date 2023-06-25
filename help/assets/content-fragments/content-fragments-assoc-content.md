@@ -2,9 +2,9 @@
 title: 關聯內容（資產 — 內容片段）
 description: 瞭解AEM關聯內容功能如何提供連線，以便可以選擇將資產與片段一起使用。
 exl-id: 8c8ad768-a210-4d34-bb47-2347599bcac9
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '231'
+source-wordcount: '230'
 ht-degree: 6%
 
 ---

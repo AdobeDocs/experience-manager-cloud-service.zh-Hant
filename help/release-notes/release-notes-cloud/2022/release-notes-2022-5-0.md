@@ -2,9 +2,9 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2022.5.0 版發行說明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2022.5.0 版發行說明。'
 exl-id: 1b867582-e34c-435b-b8f8-fc71dddcaccb
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '795'
+source-wordcount: '791'
 ht-degree: 17%
 
 ---
@@ -45,7 +45,7 @@ ht-degree: 17%
 
 * [Dynamic Media智慧型影像](https://medium.com/adobetech/one-solution-fits-all-smart-imaging-with-aem-dynamic-media-be690b62df9f) 現在支援AVIF檔案格式 — 進一步改善Google Core Web Vital （最大內容繪製），與WebP相比，AVIF提供20%的額外大小縮減。 與JPEG相比，AVIF的平均大小縮減率高達41% （在某些影像中甚至高達76%）。
 
-* [!UICONTROL Experience Manager Assets Brand Portal] 現在每十二小時執行一次自動工作，以刪除發佈至AEM的所有Brand Portal資產。 因此，您不需要手動刪除「貢獻」資料夾中的資產，以將資料夾大小保持在臨界值限制以下。 另請參閱 [Experience Manager Assets Brand Portal的新功能](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html).
+* [!UICONTROL Experience Manager Assets Brand Portal] 現在每12小時執行一次自動工作，以刪除發佈至AEM的所有Brand Portal資產。 因此，您不需要手動刪除「貢獻」資料夾中的資產，以將資料夾大小保持在臨界值限制以下。 另請參閱 [Experience Manager Assets Brand Portal的新功能](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html).
 
 ### [!DNL Assets] 發行前通道中可用的新功能 {#prerelease-features-assets}
 
@@ -91,7 +91,7 @@ Experience Manager Assets現在使用Adobe Sensei AI功能 [區分影像中的�
 
 ### 不再使用TLS 1.0、1.1
 
-從2022年6月30日開始，Experience Manageras a Cloud Service將需要與使用者系統進行更安全的網路通訊和資料交換。 AEM將僅使用傳輸層安全性(TLS) 1.2通訊協定。 舊版TLS 1.0和1.1現已棄用。
+自2022年6月30日起，Experience Manageras a Cloud Service將需要與使用者系統進行更安全的網路通訊和資料交換。 AEM將僅使用傳輸層安全性(TLS) 1.2通訊協定。 舊版TLS 1.0和1.1現已棄用。
 
 如果您繼續將舊版TLS用作1.0、1.1，則可能無法存取Experience Manageras a Cloud Service。
 

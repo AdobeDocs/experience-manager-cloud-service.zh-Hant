@@ -2,9 +2,9 @@
 title: 用於頁面編輯的鍵盤快速鍵
 description: AEM提供各種鍵盤快速鍵，包括一些用於頁面編輯的鍵盤快速鍵
 exl-id: 6c501897-48f9-478a-b143-d3ad19643b8c
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '238'
+source-wordcount: '237'
 ht-degree: 2%
 
 ---
@@ -25,8 +25,8 @@ AEM提供各種鍵盤快速鍵。 有些適用於編輯頁面，有些則適用�
 | **編輯** 模式 | `Ctrl-z` | [復原上次變更](/help/sites-cloud/authoring/fundamentals/editing-content.md#undoing-and-redoing-page-edits) |
 |  | `Ctrl-y` | [重做最後一次變更](/help/sites-cloud/authoring/fundamentals/editing-content.md#undoing-and-redoing-page-edits) |
 |  | `Ctrl-Click` | 選取多個段落 |
-|  | `Ctrl-c` | 複製所選段落 |
-|  | `Ctrl-x` | 剪下選取的段落，（剪下的段落在貼上之前不會在UI中消失） |
+|  | `Ctrl-c` | 複製選取的段落 |
+|  | `Ctrl-x` | 剪下選取的段落，（剪下段落在貼上之前不會從使用者介面中消失） |
 |  | `Ctrl-v` | 貼上先前剪下或複製的段落 |
 |  | `Ctrl-Backspace` | 刪除選取的段落 |
 | **編輯** 模式 — RTF編輯器 | `Ctrl-b` | 粗體 |

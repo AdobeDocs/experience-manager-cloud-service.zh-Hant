@@ -1,18 +1,18 @@
 ---
 title: Cloud Manager 常見問題集
-description: 在 AEM as a Cloud Service 中尋找 Cloud Manager 常見問題的解答。
+description: 在AEMas a Cloud Service中尋找Cloud Manager常見問題的解答。
 exl-id: eed148a3-4a40-4dce-bc72-c7210e8fd550
-source-git-commit: 698ea704d821d26067e29a89b562388d7517772e
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '989'
-ht-degree: 100%
+source-wordcount: '991'
+ht-degree: 91%
 
 ---
 
 
 # Cloud Manager 常見問題集 {#cloud-manager-faqs}
 
-本文件提供了 AEM as a Cloud Service 中 Cloud Manager 常見問題的解答。
+本檔案提供AEMas a Cloud Service中Cloud Manager常見問題的解答。
 
 ## 是否可能將 Java 11 和 Cloud Manager 組建一起使用？ {#java-11-cloud-manager}
 
@@ -22,9 +22,9 @@ ht-degree: 100%
 
 如需範例，請參閱 [wknd 專案範例專案計劃碼](https://github.com/adobe/aem-guides-wknd/commit/6cb5238cb6b932735dcf91b21b0d835ae3a7fe75)。
 
-## 從 Java 8 切換到 Java 11 後，我的組建失敗並出現有關 maven-scr-plugin 的錯誤。該怎麼辦？ {#build-fails-maven-scr-plugin}
+## 從Java 8切換到Java 11後，我的組建失敗並出現有關maven-scr-plugin的錯誤。 該怎麼辦？ {#build-fails-maven-scr-plugin}
 
-嘗試將組建從 Java 8 切換到 11 時，您的 AEM Cloud Manager 組建可能會失敗。如果您遇到下列錯誤，則需要移除 `maven-scr-plugin` 並將所有 OSGi 註解轉換成 OSGi R6 註解。
+嘗試將組建從Java 8切換到11時，您的AEM Cloud Manager組建可能會失敗。 如果您遇到下列錯誤，則需要移除 `maven-scr-plugin` 並將所有 OSGi 註解轉換成 OSGi R6 註解。
 
 ```text
 [main] [ERROR] Failed to execute goal org.apache.felix:maven-scr-plugin:1.26.4:scr (generate-scr-scrdescriptor) on project helloworld.core: /build_root/build/testsite/src/main/java/com/adobe/HelloWorldServiceImpl.java : Unable to load compiled class: com.adobe.HelloWorldServiceImpl: com/adobe/HelloWorldServiceImpl has been compiled by a more recent version of the Java Runtime (class file version 55.0), this version of the Java Runtime only recognizes class file versions up to 52.0 -> [Help 1]
@@ -32,7 +32,7 @@ ht-degree: 100%
 
 如需有關如何移除此外掛計劃的說明，請參閱[此處。](https://cqdump.wordpress.com/2019/01/03/from-scr-annotations-to-osgi-annotations/)
 
-## 從 Java 8 切換到 Java 11 後，我的組建失敗並出現有關 RequireJavaVersion 的錯誤。該怎麼辦？ {#build-fails-requirejavaversion}
+## 從Java 8切換到Java 11後，我的組建失敗並出現有關RequireJavaVersion的錯誤。 該怎麼辦？ {#build-fails-requirejavaversion}
 
 對於 Cloud Manager 組建，`maven-enforcer-plugin` 可能由於此錯誤而失敗。
 

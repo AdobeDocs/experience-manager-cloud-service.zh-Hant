@@ -11,9 +11,9 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: cdca41ad-a2cd-4f68-aaa4-5eec33c30f0b
-source-git-commit: 9202cf44595070c98ca3d21887dff257bcd88b87
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '2878'
+source-wordcount: '2875'
 ht-degree: 0%
 
 ---
@@ -90,7 +90,7 @@ _「我真的想要這個鏡頭，好讓大手指向四個，小手指向1，好
 ![主要檔案方法](/help/assets/dynamic-media/assets/dm-onefile.png)
 _最佳：一個檔案，其中包含使用影像預設集即時建立的多個轉譯，例如 `Search_Grid` 和 `Thumbnail`._
 
-| **為何使用影像預設集？** |  |
+| **為何使用影像預設集？** | |
 |---|---|
 | 標準 | 影像預設集會強制對任何請求影像執行標準影像處理處理。 |
 | 變更管理 | 如果您必須變更影像處理，只要編輯現有影像預設集的引數即可。 更新的定義會自動傳播到所有請求。 |
@@ -199,7 +199,7 @@ _此 `Running` 套用彈出式檢視器的影像集。_
 
 當您考慮以消費者身分生活，或從事日常工作時，以及前往不同網站時，您會看到類似情況。 想想這是如何做到的，以及您如何在自己的工作和您公司的網站上使用Dynamic Media的強大功能。
 
-您只需要閱讀一些關於影像集和檢視器的資訊。 讓我們來看看其他幾個檢視器，並在單一資產上試用。 若要重設檢視器，請按一下 **[!UICONTROL 重新整理]** 按鈕。
+您剛剛閱讀了影像集和檢視器的相關資訊。 讓我們來看看其他幾個檢視器，並在單一資產上試用。 若要重設檢視器，請按一下 **[!UICONTROL 重新整理]** 按鈕。
 
 <!-- LEAVE THIS HIDDEN PATH IN THE DOCUMENTATION FOR DEMO PURPOSES [Flyout viewer with image set](http://www.partycity.com/girls-little-old-lady-costume-P750948.html) -->
 

@@ -2,10 +2,10 @@
 title: 了解如何在內容片段中使用參考
 description: 了解如何在內容片段中使用內容、其他片段和其他資產 (媒體) 的參考。介紹巢狀片段對 Headless CMS 編寫的必要性和機制。
 exl-id: a65e8a5a-954b-4307-8027-ca8bac5f4261
-source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '729'
-ht-degree: 100%
+source-wordcount: '731'
+ht-degree: 95%
 
 ---
 
@@ -71,7 +71,7 @@ ht-degree: 100%
 
 可以使用片段參考來表示這些相互關係，因為您 (作者) 和無周邊應用程式都可理解。
 
-作為作者，您不負責定義這些關係 (由內容架構師在建立內容片段模型時定義)，但您需要知道如何識別和編輯參考。
+身為作者，您無需負責定義這些關係（由內容架構師在建立內容片段模型時完成），但您需要知道如何辨識及編輯參考。
 
 <!--
 ![Content Modeling with Content Fragments](/help/journey-headless/developer/assets/headless-modeling-01.png "Content Modeling with Content Fragments")
@@ -117,6 +117,7 @@ ht-degree: 100%
       * [套用設定到資產資料夾](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md#apply-the-configuration-to-your-assets-folder)
 
       * [建立內容片段](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#creating-a-content-fragment)
+
    * [變化 - 編寫內容片段](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md)
 
    * [內容片段模型](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
@@ -124,7 +125,6 @@ ht-degree: 100%
       * [內容片段模型 - 資料類型](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#data-types)
 
       * [內容片段模型 - 屬性](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#properties)
-
 
 * 快速入門指南
    * [建立資產資料夾 - Headless 設定](/help/headless/setup/create-assets-folder.md)

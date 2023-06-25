@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management,Translation
 role: Admin,User
 exl-id: 98df1412-a957-48a3-81c2-7dfe1d5e6d31
-source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '2642'
+source-wordcount: '2646'
 ht-degree: 23%
 
 ---
@@ -146,7 +146,6 @@ Also see, [Creating translation projects for content fragments](creating-transla
    >* 如果您刪除標籤或中繼資料的專案，則不會為任何資產翻譯標籤或中繼資料。
    >* 如果您使用機器翻譯，資產二進位檔將不會翻譯。
    >* 如果您新增至翻譯工作的資產包含子資產，請選取子資產並移除它們，翻譯才能順利進行。
-
 
 1. 若要開始資產的翻譯，請按一下/點選 **[!UICONTROL 翻譯工作]** 並選取 **[!UICONTROL 開始]** 從清單中。 訊息會通知翻譯工作已開始。
 1. 若要檢視翻譯工作的狀態，請按一下/點選「 」底部的省略符號 **[!UICONTROL 翻譯工作]** 圖磚。 <!-- For more details, see [Monitoring the Status of a Translation Job](/help/sites-administering/tc-manage.md#monitoring-the-status-of-a-translation-job). -->

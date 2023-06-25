@@ -4,9 +4,9 @@ description: 瞭解AE的基本知識；使用封裝管理器管理封裝。
 feature: Administering
 role: Admin
 exl-id: b5fef273-912d-41f6-a698-0231eedb2b92
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '3782'
+source-wordcount: '3780'
 ht-degree: 4%
 
 ---
@@ -244,7 +244,7 @@ MaxPackageSize (in MB) = ConnectionSpeed (in MB/s) * 60 s
 
    >[!TIP]
    >
-   >如果您的執行個體有許多套件，可能有資料夾結構就位。 在這種情況下，在建立新封裝之前，您可以更輕鬆地導覽至所需的目標資料夾。
+   >如果您的執行個體有許多套件，可能會有資料夾結構。 在這種情況下，在建立新封裝之前，您可以更輕鬆地導覽至所需的目標資料夾。
 
 1. 在 **新封裝** 對話方塊中，輸入下列欄位：
 

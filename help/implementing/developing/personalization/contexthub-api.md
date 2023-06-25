@@ -2,7 +2,7 @@
 title: ContextHub Javascript API參考
 description: 將ContextHub元件新增至頁面後，您的指令碼即可使用ContextHub Javascript API
 exl-id: ec35bef5-610c-4e85-a43a-d4201b5eb03e
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
 source-wordcount: '4620'
 ht-degree: 2%
@@ -347,7 +347,7 @@ A `string` 代表參考索引鍵的值。 如果未解析任何參照，則 `key
 
 將索引鍵/值配對新增至存放區。
 
-觸發 `data` 僅當索引鍵的值不同於目前為索引鍵儲存的值時，才會發生事件。 您可以選擇避免觸發 `data` 事件。
+觸發 `data` 只有在索引鍵的值不同於目前為索引鍵儲存的值時，才會發生事件。 您可以選擇避免觸發 `data` 事件。
 
 事件資料包含商店名稱、金鑰、先前的值、新值和動作型別 `set`.
 

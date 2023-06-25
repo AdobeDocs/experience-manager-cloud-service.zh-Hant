@@ -2,10 +2,10 @@
 title: 如何將 Headless 應用程式上線
 description: 在 AEM Headless 開發人員歷程的這一部分中，了解如何從 Git 取出本機程式碼並移至 Cloud Manager Git 以用於 CI/CD 管道，藉此來部署無周邊應用程式。
 exl-id: 81616e31-764b-44b0-94a6-3ae24ce56bf6
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '1067'
-ht-degree: 96%
+source-wordcount: '1065'
+ht-degree: 94%
 
 ---
 
@@ -42,7 +42,7 @@ ht-degree: 96%
 
 * 避免建立輸出超過 15kb JSON (gzip 格式壓縮) 的查詢。長 JSON 檔案是資源密集型檔案，用戶端應用程式需要解析。
 * 避免片段階層有超過五個巢狀層。增加層數會使內容作者難以考量變更帶來的影響。
-* 使用多物件查詢，而不是在模型中使用相依性階層建立查詢模型。這允許更長期的靈活性來重新建構 JSON 輸出，而無需進行大量內容變更。
+* 使用多物件查詢，而不是在模型中使用相依性階層建立查詢模型。如此一來，您就可以更靈活地重新建構JSON輸出，而不需要變更許多內容。
 
 ## 最大化 CDN 快取命中比例 {#maximize-cdn}
 

@@ -3,9 +3,9 @@ title: 使用 Dispatcher 工具進行驗證和偵錯
 description: 使用 Dispatcher 工具進行驗證和偵錯
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: 7260649eaab303ba5bab55ccbe02395dc8159949
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '2846'
+source-wordcount: '2847'
 ht-degree: 2%
 
 ---
@@ -297,7 +297,7 @@ Phase 3 finished
 
 **檔案包含在未知位置： ...**
 
-您的伺服器陣列設定中有四個區段可讓您包含自己的檔案： `/clientheaders`， `filters`， `/rules` 在 `/cache` 區段和 `/virtualhosts`. 包含的檔案必須命名如下：
+您的陣列設定中有四個區段可讓您包含自己的檔案： `/clientheaders`， `filters`， `/rules` 在 `/cache` 區段和 `/virtualhosts`. 包含的檔案必須命名如下：
 
 | 章節 | 包含檔案名稱 |
 |------------------|--------------------------------------|

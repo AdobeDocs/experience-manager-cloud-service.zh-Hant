@@ -3,9 +3,9 @@ title: 與內容片段搭配使用的 AEM GraphQL API
 description: 了解如何將 Adobe Experience Manager (AEM) as a Cloud Service 中的內容片段與 AEM GraphQL API 搭配使用，以實現無周邊內容傳遞。
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '4925'
+source-wordcount: '4924'
 ht-degree: 95%
 
 ---
@@ -751,7 +751,7 @@ GraphQL 中的解決方案代表您可以：
    * `height`：維度的高度
 * `rotation`：分項清單，包含所有支援的旋轉：R90、R180、R270
 * `flip`：分項清單，包含 HORIZONTAL、VERTICAL、HORIZONTAL_AND_VERTICAL
-* `quality`：1 到 100 之間的整數，表示影像品質的百分比
+* `quality`：表示影像品質百分比的1-100整數
 * `width`：定義輸出影像寬度的整數，但會被影像產生器忽略
 * `preferWebp`：布林值，表示是否偏好 webp (預設值為 false)
 

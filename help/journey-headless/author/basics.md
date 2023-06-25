@@ -2,10 +2,10 @@
 title: 了解編寫基本知識
 description: 了解使用內容片段為 Headless CMS 編寫內容的概念和機制。
 exl-id: 3eca973f-b210-41bb-98da-ecbd2bae9803
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '1708'
-ht-degree: 97%
+source-wordcount: '1709'
+ht-degree: 95%
 
 ---
 
@@ -141,7 +141,7 @@ You can view additional information about items using the Rail Selector. This al
 
 #### 使用路徑和標記限制資料夾中可用的內容片段模型 {#tags-paths-for-models-in-folder}
 
-本章節的技術稍微進階一些。如果您才剛開始嘗試，您並不需要它，但是當您有很多片段時，它就&#x200B;*非常*&#x200B;實用。所以了解它是件好事 - 即使您還沒有使用它。
+本章節的技術稍微進階一些。如果您只是要開始嘗試一些事情，其實並不需要它，但它 *非常* 當您有許多片段時很有用。 因此，即使您尚未使用，也應瞭解相關資訊。
 
 您的內容架構師將建立您目前專案所需的所有內容片段模型，一些其他專案可能也需要。為了協助您和其他作者簡化作業，您可以對特定資料夾的可用模型清單加以限制。
 

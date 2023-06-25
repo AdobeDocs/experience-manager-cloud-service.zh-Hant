@@ -5,9 +5,9 @@ feature: Form Data Model
 role: User
 level: Beginner, Intermediate
 exl-id: c17c0443-d4dc-41f8-9315-6cc49e6c471f
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '4121'
+source-wordcount: '4120'
 ht-degree: 0%
 
 ---
@@ -195,10 +195,9 @@ ht-degree: 0%
    >[!NOTE]
    >
    > * 如果您使用靜態範本，請將head.jsp覆蓋在：
-      >   `/libs/fd/af/components/page2/afStaticTemplatePage/head.jsp`
+   >   `/libs/fd/af/components/page2/afStaticTemplatePage/head.jsp`
    > * 如果您使用可編輯的範本，請覆蓋aftemplatedpage.jsp：
-      >   `/libs/fd/af/components/page2/aftemplatedpage/aftemplatedpage.jsp`
-
+   >   `/libs/fd/af/components/page2/aftemplatedpage/aftemplatedpage.jsp`
 
 1. 設定 [!DNL paramMap] 請求屬性的。 例如，將下列程式碼加入apps資料夾的.jsp檔案中：
 
@@ -292,7 +291,8 @@ ht-degree: 0%
    * **[!UICONTROL 屬性]**：指定屬性的型別、子型別和格式。 您也可以指定選取的屬性是否為資料模型物件的主索引鍵。
    * **[!UICONTROL 服務]**：指定服務的輸入模型物件、輸出型別和引數。 對於Get服務，您可以指定是否預期它會傳回陣列。
 
-      ![edit-properties-service](assets/edit-properties-service.png)
+     ![edit-properties-service](assets/edit-properties-service.png)
+
    取得服務的「編輯內容」對話方塊
 
 1. 點選 **[!UICONTROL 完成]** 以儲存屬性，然後 **[!UICONTROL 儲存]** 以儲存表單資料模型。
@@ -518,7 +518,7 @@ operationOptions.setValidationOptions(ValidationOptions.FULL);
  </tbody> 
 </table>
 
-在此範例中，輸入資料會根據Swagger檔案中定義的最大值、最小值和必要限制進行驗證。 只有在存在訂單ID且其值介於1到10之間時，輸入資料才會符合驗證准則。
+在此範例中，輸入資料會根據Swagger檔案中定義的最大值、最小值和必要限制進行驗證。 只有在存在訂單ID且其值介於1到10之間時，輸入資料才符合驗證准則。
 
 ```json
    parameters: [

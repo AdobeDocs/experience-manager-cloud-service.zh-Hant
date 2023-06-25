@@ -2,7 +2,7 @@
 title: 查詢產生器 API
 description: Asset Share Query Builder的功能會透過Java API和REST API公開。
 exl-id: d5f22422-c9da-4c9d-b81c-ffa5ea7cdc87
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
 source-wordcount: '2033'
 ht-degree: 0%
@@ -254,7 +254,7 @@ type=cq:Page
 
 ### 搜尋多個屬性值 {#search-for-multiple-property-values}
 
-若要在搜尋屬性的多個值時避免大型群組(`"A" or "B" or "C"`)，則可以將多個值提供給 `property` 述詞：
+如果您想要搜尋屬性的多個值，可避免大型群組(`"A" or "B" or "C"`)，則可以將多個值提供給 `property` 述詞：
 
 `http://<host>:<port>/bin/querybuilder.json?property=jcr%3atitle&property.1_value=Cycling%20Tuscany&property.2_value=Ski%20Touring&property.3_value=Whistler%20Mountain%20Biking`
 

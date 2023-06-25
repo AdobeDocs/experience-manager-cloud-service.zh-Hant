@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2022.6.0 版發行說明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2022.6.0 版發行說明。'
 exl-id: cf2133dc-56cd-4a07-ab11-72e16f015ff5
-source-git-commit: 599f924465552b2ef43827da8e139c239e47baed
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '639'
-ht-degree: 19%
+source-wordcount: '638'
+ht-degree: 20%
 
 ---
 
@@ -39,7 +39,7 @@ ht-degree: 19%
 
 * 新 [使用者介面](/help/sites-cloud/administering/content-fragments/content-fragments-console.md) 內容管理員和內容作者現在可以有效地管理（執行發佈、取消發佈、複製、移動等動作）、搜尋/篩選，以及為Headless使用案例建立內容片段。
 
-   ![內容片段主控台](/help/release-notes/assets/cf-ui.png)
+  ![內容片段主控台](/help/release-notes/assets/cf-ui.png)
 
 * 新 [目錄元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/tableofcontents.html) 不僅適用於核心元件，也適用於所有元件，可自動在內容頁面上呈現ToC。 而且，由於它是在伺服器端轉譯並由Dispatcher完全快取，因此載入也相當有效率。
 
@@ -57,7 +57,7 @@ Experience Manager Assets現在使用Adobe Sensei AI功能 [區分影像中的�
 
 * **建立最適化表單的精靈**：您可以使用業務使用者友善的精靈來快速撰寫最適化Forms。 精靈提供快速索引標籤導覽，以輕鬆選取預先設定的範本、樣式、欄位和提交選項來建立調適型表單。
 
-   ![建立最適化表單的精靈](/help/release-notes/assets/wizard.png)
+  ![建立最適化表單的精靈](/help/release-notes/assets/wizard.png)
 
 ## CIF 附加元件 {#cloud-services-cif}
 

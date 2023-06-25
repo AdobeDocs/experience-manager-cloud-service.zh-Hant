@@ -2,9 +2,9 @@
 title: 啟用漸進式網頁應用程式功能
 description: AEM Sites可讓內容作者透過簡易設定（而非編碼）為任何網站啟用漸進式網頁應用程式功能。
 exl-id: 1552a4ce-137a-4208-b7f6-2fc06db8dc39
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '2000'
+source-wordcount: '1998'
 ht-degree: 1%
 
 ---
@@ -217,7 +217,7 @@ Adobe建議您限制要預先快取的頁數。
 
 AEM核心元件的影像元件會決定要擷取的前端最佳轉譯。 此機制也包含與該資源上次修改時間對應的時間戳記。 此機制會使PWA預先快取的設定複雜化。
 
-設定預先快取時，使用者需要列出所有可擷取的路徑變數。 這些變化是由品質和寬度等引數所組成。 強烈建議將這些變數的數量減少到最多三個 — 小、中、大。 您可以透過以下對話方塊的內容原則來執行此操作： [影像元件。](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html)
+設定預先快取時，使用者需要列出所有可擷取的路徑變數。 這些變化是由品質和寬度等引數所組成。 建議將這些變數的數量減少到最多三個 — 小、中、大。 您可以透過以下對話方塊的內容原則來執行此操作： [影像元件。](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html)
 
 若未謹慎設定，記憶體與網路耗用量可能會嚴重影響PWA效能。 此外，如果您打算預先快取50個影像，且每個影像有3個寬度，維護網站的使用者必須在頁面屬性的PWA預先快取區段中維護最多150個專案的清單。
 
