@@ -10,9 +10,9 @@ topic-tags: adaptive_forms, author
 discoiquuid: 4c53dfc0-25ca-419d-abfe-cf31fc6ebf61
 docset: aem65
 exl-id: 3fdbe5a3-5c3c-474d-b701-e0182da4191a
-source-git-commit: 0c303439c879605f1ab0927cf79b132dbb448af5
+source-git-commit: 1633e02fc6b79a45582b919863662bc1d1b49b42
 workflow-type: tm+mt
-source-wordcount: '1415'
+source-wordcount: '1433'
 ht-degree: 3%
 
 ---
@@ -29,12 +29,11 @@ CAPTCHA （完全自動化的公用圖靈測試，用於區分電腦和人類）
 >* 上離線模式不支援最適化Forms中的驗證碼 [!DNL AEM Forms] 應用程式。
 >
 
-
-## 透過Google設定ReCAPTCHA服務 {#google-recaptcha}
+## 透過Google設定reCAPTCHA服務 {#google-reCAPTCHA}
 
 表單作者可使用Google的reCAPTCHA服務，在最適化Forms中實作CAPTCHA。 它提供進階的驗證碼功能，以保護您的網站。 如需reCAPTCHA運作方式的詳細資訊，請參閱 [Google reCAPTCHA](https://developers.google.com/recaptcha/).
 
-![Recaptcha](assets/recaptcha_new.png)
+![reCAPTCHA](assets/recaptcha_new.png)
 
 若要在中實作reCAPTCHA服務 [!DNL AEM Forms]：
 
@@ -49,10 +48,10 @@ CAPTCHA （完全自動化的公用圖靈測試，用於區分電腦和人類）
 
       1. 在「組態屬性」對話方塊中，啟用 **[!UICONTROL 雲端設定]**.
       1. 點選 **[!UICONTROL 儲存並關閉]** 以儲存設定並結束對話方塊。
+
    1. 在設定瀏覽器中，點選 **[!UICONTROL 建立]**.
    1. 在建立設定對話方塊中，指定資料夾的標題並啟用 **[!UICONTROL 雲端設定]**.
    1. 點選 **[!UICONTROL 建立]** 以建立為雲端服務設定啟用的資料夾。
-
 
 1. 設定reCAPTCHA的雲端服務。
 
@@ -85,14 +84,14 @@ CAPTCHA （完全自動化的公用圖靈測試，用於區分電腦和人類）
 
 1. 選取您新增的Captcha元件並點選 ![cmppr](assets/configure-icon.svg) 以編輯其屬性。
 1. 指定驗證碼介面工具集的標題。 預設值為 **[!UICONTROL 驗證碼]**. 選取 **[!UICONTROL 隱藏標題]** 如果您不想顯示標題。
-1. 從 **[!UICONTROL 驗證碼服務]** 下拉式清單，選取 **[!UICONTROL recaptcha]** 啟用reCAPTCHA服務（若您已依照中的說明進行設定） [Google的ReCAPTCHA服務](#google-recaptcha). 從「設定」下拉式清單中選取設定。
+1. 從 **[!UICONTROL 驗證碼服務]** 下拉式清單，選取 **[!UICONTROL reCAPTCHA]** 啟用reCAPTCHA服務（若您已依照中的說明進行設定） [Google的reCAPTCHA服務](#google-reCAPTCHA). 從「設定」下拉式清單中選取設定。
 1. 選取型別為 **[!UICONTROL 一般]** 或 **[!UICONTROL 壓縮]** 用於reCAPTCHA小工具。 您也可以選取 **[!UICONTROL 隱藏]** 選項，僅在可疑活動的情況下顯示CAPTCHA質詢。 受保護的reCAPTCHA徽章（如下所示）會顯示在受保護的表單上。
 
    ![受reCAPTCHA徽章保護的Google](assets/google-recaptcha-v2.png)
 
    >[!NOTE]
    >
-   >不要選取 **[!UICONTROL 預設]** 已棄用Captcha服務下拉式清單中的預設Experience ManagerCAPTCHA服務。
+   >* 不要選取 **[!UICONTROL 預設]** 已棄用Captcha服務下拉式清單中的預設Experience ManagerCAPTCHA服務。
 
 1. 儲存屬性。
 
@@ -107,6 +106,10 @@ CAPTCHA （完全自動化的公用圖靈測試，用於區分電腦和人類）
 點選 **[!UICONTROL 貨幣值]** 欄位並建立以下規則：
 
 ![顯示或隱藏規則](assets/rules-show-hide-captcha.png)
+
+>[!NOTE]
+>
+>* 如果您選取reCAPTCHA v2設定，大小為 [!UICONTROL 隱藏] 則顯示/隱藏選項不適用。
 
 ### 進行驗證碼驗證 {#validate-captcha}
 
@@ -206,7 +209,7 @@ public interface GuideCaptchaValidator {
 
 `userResponseToken` 是指 `g_recaptcha_response` 在表單中解決驗證碼後產生的驗證碼。
 
-### 編輯reCAPTCHA服務領域 {#recaptcha-service-domain}
+### 編輯reCAPTCHA服務領域 {#reCAPTCHA-service-domain}
 
 reCAPTCHA服務使用 `https://www.recaptcha.net/` 作為預設網域。 您可以修改設定以進行設定 `https://www.google.com/` 或任何自訂網域名稱，用於載入、呈現和驗證reCAPTCHA服務。
 
