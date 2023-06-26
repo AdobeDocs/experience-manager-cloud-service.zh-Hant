@@ -10,7 +10,7 @@ topic-tags: adaptive_forms, author
 discoiquuid: 4c53dfc0-25ca-419d-abfe-cf31fc6ebf61
 docset: aem65
 exl-id: 3fdbe5a3-5c3c-474d-b701-e0182da4191a
-source-git-commit: 1633e02fc6b79a45582b919863662bc1d1b49b42
+source-git-commit: a16da1b11cfe18910b2e57c0b6b668543dba46e3
 workflow-type: tm+mt
 source-wordcount: '1433'
 ht-degree: 3%
@@ -70,17 +70,14 @@ CAPTCHA （完全自動化的公用圖靈測試，用於區分電腦和人類）
 
    >[!NOTE]
    >
-   >確定建立最適化表單時選取的設定容器包含reCAPTCHA雲端服務。 您也可以編輯最適化表單屬性，以變更與表單相關聯的設定容器。
+   > 確定建立最適化表單時選取的設定容器包含reCAPTCHA雲端服務。 您也可以編輯最適化表單屬性，以變更與表單相關聯的設定容器。
 
 1. 在元件瀏覽器中，拖放 **[!UICONTROL 驗證碼]** 元件至最適化表單。
 
    >[!NOTE]
    >
-   >不支援在最適化表單中使用多個Captcha元件。 此外，不建議在標示為延遲載入的面板或片段中使用驗證碼。
-
-   >[!NOTE]
-   >
-   >驗證碼會區分大小寫，且約一分鐘後過期。 因此，建議將驗證碼元件放在最適化表單中提交按鈕之前。
+   > * 不支援在最適化表單中使用多個Captcha元件。 此外，不建議在標示為延遲載入的面板或片段中使用驗證碼。
+   > * 驗證碼會區分大小寫，且約一分鐘後過期。 因此，建議將驗證碼元件放在最適化表單中提交按鈕之前。
 
 1. 選取您新增的Captcha元件並點選 ![cmppr](assets/configure-icon.svg) 以編輯其屬性。
 1. 指定驗證碼介面工具集的標題。 預設值為 **[!UICONTROL 驗證碼]**. 選取 **[!UICONTROL 隱藏標題]** 如果您不想顯示標題。
@@ -91,7 +88,7 @@ CAPTCHA （完全自動化的公用圖靈測試，用於區分電腦和人類）
 
    >[!NOTE]
    >
-   >* 不要選取 **[!UICONTROL 預設]** 已棄用Captcha服務下拉式清單中的預設Experience ManagerCAPTCHA服務。
+   > 不要選取 **[!UICONTROL 預設]** 已棄用Captcha服務下拉式清單中的預設Experience ManagerCAPTCHA服務。
 
 1. 儲存屬性。
 
@@ -109,7 +106,7 @@ CAPTCHA （完全自動化的公用圖靈測試，用於區分電腦和人類）
 
 >[!NOTE]
 >
->* 如果您選取reCAPTCHA v2設定，大小為 [!UICONTROL 隱藏] 則顯示/隱藏選項不適用。
+> 如果您選取reCAPTCHA v2設定，大小為 [!UICONTROL 隱藏] 則顯示/隱藏選項不適用。
 
 ### 進行驗證碼驗證 {#validate-captcha}
 
