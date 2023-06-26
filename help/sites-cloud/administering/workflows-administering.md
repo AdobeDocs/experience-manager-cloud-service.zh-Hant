@@ -3,10 +3,10 @@ title: 管理工作流程例項
 description: 瞭解如何管理工作流程例項
 feature: Administering
 role: Admin
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 31cda6f7eb7ef1c32ba9d0ec7d198a5f2f38b1e6
 workflow-type: tm+mt
-source-wordcount: '1279'
-ht-degree: 0%
+source-wordcount: '1284'
+ht-degree: 1%
 
 ---
 
@@ -28,12 +28,21 @@ ht-degree: 0%
 1. 使用導覽選取 **工具**，則 **工作流程**.
 1. 選取 **執行個體** 以顯示目前進行中的執行中工作流程例項清單。
 1. 在頂端欄的右角，工作流程例項顯示 **執行中的工作流程**， **狀態**、和 **詳細資料**.
-1. **執行中的工作流程** 顯示執行中的工作流程數目及其狀態。 例如，在指定的影像中，顯示的數字為 **執行中的工作流程** 和 **狀態** AEM執行個體的。
-   ![status-health](/help/sites-cloud/administering/assets/status-healthy.png)
-   ![status-unhealth](/help/sites-cloud/administering/assets/status-unhealthy.png)
-1. 對象 **狀態詳細資料** 在工作流程例項中，按一下 **詳細資料**，以顯示 **執行中的工作流程例項數目**， **已完成的工作流程例項**， **中止的工作流程例項**， **失敗的工作流程執行個體**、等等。 例如，底下是指定的影像，顯示 **狀態詳細資料** 替換為 **狀態：狀況良好** 和 **狀態：不正常**.
-   ![status-details-healthy](/help/sites-cloud/administering/assets/status-details-healthy.png)
-   ![status-details-unhealthy](/help/sites-cloud/administering/assets/status-details-unhealthy.png)
+1. **執行中的工作流程** 顯示執行中的工作流程數目及其狀態。 例如，在指定的影像中，顯示的數字為 **執行中的工作流程** 和 **狀態** AEM執行個體的：
+
+   * **狀態：良好**
+     ![status-health](/help/sites-cloud/administering/assets/status-healthy.png)
+
+   * **狀態：不良**
+     ![status-unhealth](/help/sites-cloud/administering/assets/status-unhealthy.png)
+
+1. 對象 **狀態詳細資料** 在工作流程例項中，按一下 **詳細資料**，以顯示 **執行中的工作流程例項數目**， **已完成的工作流程例項**， **中止的工作流程例項**， **失敗的工作流程執行個體**、等等。 例如，底下是指定的影像，顯示 **狀態詳細資料** 替換為：
+
+   * **狀態詳細資料：狀況良好**
+     ![status-details-healthy](/help/sites-cloud/administering/assets/status-details-healthy.png)
+
+   * **狀態詳細資料：狀況不良**
+     ![status-details-unhealthy](/help/sites-cloud/administering/assets/status-details-unhealthy.png)
 
    >[!NOTE]
    >
@@ -191,7 +200,7 @@ ht-degree: 0%
 
 屬性 *userMetadataPersistenceEnabled* 儲存在 *jcr：content節點* 工作流程模型的URL。 此旗標會持續保留在工作流程中繼資料中為 *cq：userMetaDataCustomPersistenceEnabled*.
 
-下圖顯示必須在工作流程上設定標幟。
+下圖顯示如何在工作流程上設定標幟。
 
 ![workflow-externalize-config](/help/sites-cloud/administering/assets/workflow-externalize-config.png)
 
