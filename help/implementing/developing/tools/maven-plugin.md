@@ -2,9 +2,9 @@
 title: Adobe內容套件Maven外掛程式
 description: 使用Content Package Maven外掛程式來部署AEM應用程式
 exl-id: d631d6df-7507-4752-862b-9094af9759a0
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: a5eef46835e234bb47451693cf5fdcda66c5b26f
 workflow-type: tm+mt
-source-wordcount: '1849'
+source-wordcount: '1842'
 ht-degree: 6%
 
 ---
@@ -212,7 +212,7 @@ RM目標的所有引數都說明於 [常見引數](#common-parameters) 區段。
 
 * **合併：** 已新增封裝中尚未在存放庫中的內容。 套件和存放庫中的內容皆未變更。 不會從存放庫移除任何內容。
 * **取代：** 套件中不在存放庫中的內容會新增到存放庫。 存放庫中的內容會由套件中的相符內容取代。 當套件中不存在內容時，該內容會從存放庫移除。
-* **更新：** 套件中不在存放庫中的內容會新增到存放庫。 存放庫中的內容會由套件中的相符內容取代。 現有內容會從存放庫中移除。
+* **更新：** 套件中不在存放庫中的內容會新增到存放庫。 存放庫中的內容會由套件中的相符內容取代。
 
 當篩選器包含否時 `mode` 元素，的預設值 `replace` 已使用。
 
