@@ -2,9 +2,9 @@
 title: 內容複製工具
 description: 內容複製工具可讓使用者根據需求，從AEMas a Cloud Service上的生產環境複製可變內容，以便用於測試目的的較低環境。
 exl-id: f060821d-d559-45d2-b3b1-1b2277694ec4
-source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
+source-git-commit: f08048b2378b150210a3fd1168206f4efb0c4f8e
 workflow-type: tm+mt
-source-wordcount: '1199'
+source-wordcount: '1203'
 ht-degree: 41%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 41%
 
 ## 簡介 {#introduction}
 
-目前的真實資料對於測試、驗證和用戶接受度很有價值。內容複製工具可讓您將內容從生產AEM環境複製到測試環境、開發環境或 [快速開發環境(RDE)](/help/implementing/developing/introduction/rapid-development-environments.md) 進行這類測試的環境。
+目前的真實資料對於測試、驗證和用戶接受度很有價值。內容複製工具可讓您將內容從生產AEMas a Cloud Service環境複製到測試環境、開發環境或 [快速開發環境(RDE)](/help/implementing/developing/introduction/rapid-development-environments.md) 進行這類測試的環境。
 
 要複製的內容由內容集定義。內容集包含JCR路徑清單，這些路徑包含要從來源製作服務環境複製到同一Cloud Manager程式中目標製作服務環境的可變內容。 內容集中允許使用以下路徑。
 
