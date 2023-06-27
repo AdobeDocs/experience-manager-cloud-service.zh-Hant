@@ -4,7 +4,7 @@ description: 了解如何使用 AEM 的內容片段模型來建立內容結構�
 hidefromtoc: true
 index: false
 exl-id: ace9b9f3-8bc6-4a36-a51c-ff60cdd339ce
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: e507b409e4d2382b1eac54b11a9ad68fd965db4b
 workflow-type: tm+mt
 source-wordcount: '993'
 ht-degree: 34%
@@ -43,7 +43,7 @@ ht-degree: 34%
    * **模型標題**  — 模型的簡短標籤，通常會指出模型的用途。 您可以呼叫新模型 `Adventure`.
    * **啟用模式** - 此選項依預設為勾選，必須勾選才能根據此模式建立內容片段。
 
-1. 填入必填欄位後，按一下 **建立** 左上角以建立模型。
+1. 填入必填欄位後，按一下 **建立** 以建立模式。
 
 1. 此 **成功** 對話方塊確認模型已建立。 按一下 **開啟** ，讓您在新索引標籤內的編輯器中開啟新的內容片段模式。 然後繼續下一步驟，將資料欄位新增至模型。
 
