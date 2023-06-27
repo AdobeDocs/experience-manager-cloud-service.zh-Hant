@@ -2,9 +2,9 @@
 title: 瀏覽至 Screens 服務提供者
 description: 此頁面說明如何導覽至Screens Services Provider。
 exl-id: 9eff6fe8-41d4-4cf3-b412-847850c4e09c
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
 workflow-type: tm+mt
-source-wordcount: '266'
+source-wordcount: '263'
 ht-degree: 6%
 
 ---
@@ -29,7 +29,7 @@ ht-degree: 6%
 1. 從瀏覽至Screens服務提供者 [此處](https://experience.adobe.com/screens).
 
    >[!CAUTION]
-   >如果您可存取多個組織，請確定您已登入正確的組織。 若要變更您的組織，請按一下畫面右上角的「組織」名稱，然後選擇您需要存取的所需組織。
+   >如果您擁有多個組織的存取權，請確定您已登入正確的組織。 若要變更您的組織，請按一下畫面右上角的「組織」名稱，然後選擇您需要存取的所需組織。
 
 2. 按一下「專案」（左上角）旁的齒輪圖示
 
@@ -53,4 +53,4 @@ ht-degree: 6%
 
 ## 下一步 {#whats-next}
 
-瞭解如何設定Screens Services Provider後，您可以導覽至 [使用Screens內容提供者](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html?lang=end) 以取得更多詳細資料。
+瞭解如何設定Screens服務提供者後，請導覽至 [使用Screens內容提供者](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html?lang=end#screens-content-provider) 以取得更多詳細資料。

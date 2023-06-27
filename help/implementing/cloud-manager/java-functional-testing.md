@@ -1,17 +1,17 @@
 ---
-title: Java 功能測試
-description: 了解如何針對 AEM as a Cloud Service 編寫 Java 功能測試。
+title: Java&trade；功能測試
+description: 瞭解如何編寫AEMas a Cloud Service的Java&trade；功能測試
 exl-id: e449a62a-c8ad-4d39-a170-abacdda3f1b1
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
 workflow-type: tm+mt
-source-wordcount: '847'
-ht-degree: 93%
+source-wordcount: '844'
+ht-degree: 69%
 
 ---
 
-# Java 功能測試
+# Java™功能測試
 
-了解如何針對 AEM as a Cloud Service 編寫 Java 功能測試。
+瞭解如何為AEMas a Cloud Service撰寫Java™功能測試
 
 ## 功能測試快速入門 {#getting-started-functional-tests}
 
@@ -31,13 +31,13 @@ ht-degree: 93%
 
 Adobe 用於編寫產品功能測試的工具也可用於編寫您的自訂功能測試。使用 GitHub 中的[產品功能測試](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke)作為寫入測試的範例。
 
-自訂功能測試的程式碼是位於專案 `it.tests` 檔案夾中的 Java 程式碼。它應該產生一個包含所有功能測試的 JAR。如果建置產生多個測試 JAR，則無法確定要選擇哪個 JAR。如果產生零個測試 JAR，則測試步驟預設透過。如需測試範例，[請參閱 AEM 專案原型](https://github.com/adobe/aem-project-archetype/tree/develop/src/main/archetype/it.tests)。
+自訂功能測試的程式碼為Java™程式碼於 `it.tests` 資料夾。 它應該產生一個包含所有功能測試的 JAR。如果建置產生多個測試 JAR，則無法確定要選擇哪個 JAR。如果產生零個測試 JAR，則測試步驟預設透過。如需測試範例，[請參閱 AEM 專案原型](https://github.com/adobe/aem-project-archetype/tree/develop/src/main/archetype/it.tests)。
 
-這些測試會在 Adobe 維護的測試基礎結構上執行，包括至少兩個編寫執行個體、兩個發佈執行個體和一個 Dispatcher 設定。這代表您的自訂功能測試針對整個 AEM 堆疊執行。
+測試會在Adobe維護的測試基礎結構上執行，包括至少兩個作者執行個體、兩個發佈執行個體和一個Dispatcher設定。 此設定表示您的自訂功能測試會針對整個AEM棧疊執行。
 
 ### 功能測試結構 {#functional-tests-structure}
 
-自訂功能測試必須封裝為單獨的 JAR 檔案，該檔案由與要部署到 AEM 的成品相同的 Maven 組建產生。通常這將是一個單獨的 Maven 模組。產生的 JAR 檔案必須包含所有必要的相依性，通常使用 `maven-assembly-plugin` 和 `jar-with-dependencies` 描述項建立。
+自訂功能測試必須封裝為單獨的 JAR 檔案，該檔案由與要部署到 AEM 的成品相同的 Maven 組建產生。一般來說，此組建會是一個單獨的Maven模組。 產生的 JAR 檔案必須包含所有必要的相依性，通常使用 `maven-assembly-plugin` 和 `jar-with-dependencies` 描述項建立。
 
 此外，JAR 必須將 `Cloud-Manager-TestType` 資訊清單標頭設為 `integration-test`。
 
@@ -81,9 +81,9 @@ Adobe 用於編寫產品功能測試的工具也可用於編寫您的自訂功�
 
 此外，要從程式碼掃描的覆蓋檢查中排除測試程式碼，測試程式碼必須位於名為`it` 的套件之下 (覆蓋排除篩選是`**/it/**/*.java`)。
 
-測試類別必須是一般的 JUnit 測試。測試基礎結構的設計和設定與 `aem-testing-clients` 測試庫使用的慣例相容。強烈鼓勵開發人員使用此計劃庫並遵循其最佳實務。
+測試類別必須是正常的JUnit測試。 測試基礎結構的設計和設定與 `aem-testing-clients` 測試庫使用的慣例相容。建議開發人員使用此程式庫並遵循其最佳實務。
 
-如需更多詳細資訊，請參閱 [`aem-testing-clients`GitHub 存放庫](https://github.com/adobe/aem-testing-clients)。
+另請參閱 [`aem-testing-clients` GitHub存放庫](https://github.com/adobe/aem-testing-clients) 以取得更多詳細資料。
 
 >[!TIP]
 >
@@ -103,13 +103,13 @@ Adobe 用於編寫產品功能測試的工具也可用於編寫您的自訂功�
 | 類型 | 值 | 說明 |
 |----------------------|-------|--------------------------------------------------------------------|
 | CPU | 0.5 | 每次測試執行保留的 CPU 時間量 |
-| 記憶體 | 0.5Gi | 分配給測試的記憶體量，值以 gibibyte 為單位 |
+| 記憶體 | 0.5Gi | 配置測試的記憶體數量，以GB為單位的值 |
 | 逾時 | 30m | 測試終止的持續時間。 |
 | 建議的持續時間 | 15m | Adobe 建議所編寫的測試不應花費超過這個時間。 |
 
 >[!NOTE]
 >
-> 如果您需要更多資源，請建立客戶服務案例並描述您的使用案例；我們的團隊將檢閱您的要求並提供適當的幫助。
+> 如果您需要更多資源，請建立客戶服務案例，並描述您的使用案例。 Adobe的團隊會稽核您的請求，並提供適當的協助。
 
 
 ### 本機測試執行 {#local-test-execution}
@@ -118,9 +118,9 @@ Adobe 用於編寫產品功能測試的工具也可用於編寫您的自訂功�
 
 #### 在 IDE 中執行 {#running-in-an-ide}
 
-由於測試類別是 JUnit 測試，所以它們可以從主流的 Java IDE (如 Eclipse、IntelliJ 和 NetBeans) 執行。因為產品功能測試和自訂功能測試都基於相同的技術，所以兩者都可以透過將產品測試複製到自訂測試中，以在本機執行。
+由於測試類別是JUnit測試，因此它們可以從主流的Java™ IDE （如Eclipse、IntelliJ和NetBeans）執行。 因為產品功能測試和自訂功能測試都基於相同的技術，所以兩者都可以透過將產品測試複製到自訂測試中，以在本機執行。
 
-但是，在執行這些測試時，必須設定以下專案所需的各種系統屬性： `aem-testing-clients` （和底層Sling測試使用者端）程式庫。
+但是，在執行這些測試時，必須設定以下專案所預期的各種系統屬性： `aem-testing-clients` （和底層Sling測試使用者端）程式庫。
 
 系統屬性如下。
 
@@ -142,7 +142,7 @@ Adobe 用於編寫產品功能測試的工具也可用於編寫您的自訂功�
 
 1. 打開 shell 並瀏覽至存放庫中的 `it.tests` 資料夾。
 
-1. 執行以下命令，提供必要的參數以使用 Maven 啟動測試。
+1. 執行以下命令，提供使用Maven啟動測試所需的引數。
 
 ```shell
 mvn verify -Plocal \
