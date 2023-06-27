@@ -8,9 +8,9 @@ user-guide-description: 了解 Experience Manager as a Cloud Service 的運作�
 breadcrumb-title: 使用手冊
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 663dae5785c13d74524054287869310d1fce5bd6
+source-git-commit: 171aca87ff725a2f142f0336dca3491e213f55ab
 workflow-type: tm+mt
-source-wordcount: '4079'
+source-wordcount: '4081'
 ht-degree: 99%
 
 ---
@@ -530,7 +530,6 @@ ht-degree: 99%
          + [將 AEM Forms as a Cloud Service 與 Adobe Analytics 整合](/help/forms/integrate-aem-forms-with-adobe-analytics.md)
          + [將最適化表單與 Microsoft Power Automate 整合](/help/forms/forms-microsoft-power-automate-integration.md)
          + [在 AEM Sites 頁面中內嵌最適化表單](/help/forms/embed-adaptive-form-aem-sites.md)
-         + [建立或新增最適化表單至 AEM Sites 頁面](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
       + 表單資料模式 {#use-form-data-model}
          + [將資料來源連線到 Cloud Service](/help/forms/data-integration.md)
          + [設定資料來源](/help/forms/configure-data-sources.md)
@@ -541,6 +540,7 @@ ht-degree: 99%
          + [處理表單資料模型](/help/forms/work-with-form-data-model.md)
          + [使用表單資料模型](/help/forms/using-form-data-model.md)
    + 最適化表單 {#adaptive-forms-authoring}
+      + [新增最適化表單至AEM Sites頁面或體驗片段](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
       + 編寫最適化表單 - 核心元件{#authoring-adaptive-forms-core-components}
          + 建立最適化表單{#create-an-adaptive-form-on-forms-cs}
             + [建立最適化表單](/help/forms/creating-adaptive-form-core-components.md)

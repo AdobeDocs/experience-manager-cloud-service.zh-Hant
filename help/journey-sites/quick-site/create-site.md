@@ -2,9 +2,9 @@
 title: 從範本建立網站
 description: 瞭解如何使用網站範本快速建立新的AEM網站。
 exl-id: 31bb04c2-b3cc-44ca-b517-5b0d66d9b1fa
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 171aca87ff725a2f142f0336dca3491e213f55ab
 workflow-type: tm+mt
-source-wordcount: '1485'
+source-wordcount: '1513'
 ht-degree: 2%
 
 ---
@@ -184,3 +184,4 @@ ht-degree: 2%
 * [建立及組織頁面](/help/sites-cloud/authoring/fundamentals/organizing-pages.md)  — 如果您想要在從範本建立AEM網站後進一步自訂，本指南會詳細說明如何管理您的網站頁面。
 * [如何使用套件](/help/implementing/developing/tools/package-manager.md)  — 套件可匯入和匯出存放庫內容。 本檔案說明如何在AEM 6.5中使用套件（同樣適用於AEMaaCS）。
 * [網站管理文件](/help/sites-cloud/administering/site-creation/create-site.md) - 查看關於建立網站的技術文件，了解快速網站建立工具功能的更多詳細資訊。
+* [建立表單或新增表單至AEM Sites頁面](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)  — 瞭解將表單整合至網站的分步技巧和最佳實務，將數位體驗最佳化以發揮最大影響力。

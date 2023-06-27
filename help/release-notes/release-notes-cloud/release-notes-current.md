@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 目前發行說明�
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 目前發行說明。'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 060956eee5136924263e4df5bd756670384e8365
+source-git-commit: 171aca87ff725a2f142f0336dca3491e213f55ab
 workflow-type: tm+mt
 source-wordcount: '1172'
-ht-degree: 57%
+ht-degree: 87%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 57%
 
 >[!NOTE]
 >
->從這裡，您可以瀏覽至舊版（例如2021或2022）的發行說明。
+>從這裡，您可以導覽至先前版本的發行說明，例如 2021 或 2022。
 >
 >查看 [Experience Manager 發行藍圖](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html)，了解關於 [!DNL Experience Manager] as a Cloud Service 未來功能的啟用。
 
@@ -63,40 +63,40 @@ ht-degree: 57%
 
 * 顏色搜尋面向的可用性改進 - 顏色值的輸入欄位現在為可編輯，搜尋結果只在您退出檢色器時才會更新。
 
-* 推出新的通訊協定支援(DASH - Dynamic Adaptive Streaming over HTTP)，適用於Dynamic Media影片傳送中的最適化資料流（已啟用CMAF）：
+* 為 Dynamic Media 影片傳遞 (啟用 CMAF) 中的自適應串流推出新的通訊協定支援 (DASH - 基於 HTTP 的動態自適應串流)：
    * 自適應串流 (DASH/HLS) 可確保更好的一般使用者觀看影片體驗
    * DASH 是自適應影片串流的國際標準通訊協定，在業界被廣泛採用
    * 「在所有區域提供」將透過支援票證啟用
 
-* Dynamic Media _快照_  — 實驗測試影像或Dynamic Media URL，以檢視不同影像修飾元的輸出，並評估檔案大小（使用WebP和AVIF傳送）、網路頻寬和裝置畫素比的智慧型影像最佳化。 請參閱 [Dynamic Media 快照](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot.html)。
+* Dynamic Media _快照_ - 對測試影像或 Dynamic Media URL 進行實驗，以查看不同影像修飾元的輸出，並針對檔案大小 (使用 WebP 和 AVIF 傳遞)、網路頻寬和裝置像素比來評估智慧型影像最佳化。請參閱 [Dynamic Media 快照](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot.html)。
 
-### 中的功能 [!DNL Assets] 發行前 {#prerelease-feature-assets}
+### [!DNL Assets] 發行前版本的功能 {#prerelease-feature-assets}
 
-* Dynamic Media — 影像設定檔中某些智慧型裁切相關欄位的使用者介面現已更新，以反映定義智慧型裁切的目前准則。 另請參閱 [裁切選項](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles.html?lang=en#crop-options).
+* Dynamic Media - 影像設定檔中一些與智慧型裁切相關之欄位的使用者介面現已更新，以反映定義智慧型裁切的最新指引。請參閱[裁切選項](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles.html?lang=en#crop-options)。
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 ### [!DNL Forms] 中可用的新功能 {#new-features-available-in-channel}
 
-* **[將最適化Forms提交至Microsoft®SharePoint和Microsoft® OneDrive](/help/forms/configuring-submit-actions.md)**：提高企業使用者的靈敏度，以便您快速啟動新表單，並將提交的資料儲存在日常使用的工具中，例如Microsoft®SharePoint網站或OneDrive資料夾。
+* **[將最適化表單提交至 Microsoft® SharePoint 和 Microsoft® OneDrive](/help/forms/configuring-submit-actions.md)**：改善商業用戶的敏捷性，以便快速啟動新表單並將提交的資料儲存在日常使用的工具中，例如 Microsoft® SharePoint 網站或 OneDrive 資料夾。
 
 ### [!DNL Forms] 發行前版本的功能 {#prerelease-features-forms}
 
 * [AEM 頁面編輯器中的最適化表單](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)：您現在可以使用 AEM 頁面編輯器快速建立多個表單，並將這些表單新增至您的 Sites 頁面。 此功能讓內容作者可使用最適化表單元件 (包括動態行為、驗證、資料整合、產生記錄文件和業務流程自動化) 的強大功能，在 Sites 頁面內建立順暢的資料擷取體驗。 您可以：
 
    * 將表單元件拖放到 AEM Sites 編輯器或體驗片段中的最適化表單容器元件，即可建立最適化表單。
-   * 在AEM Sites編輯器中使用最適化Forms精靈，以便您可以建立獨立於任何Sites頁面的表單，讓您自由地在多個頁面中重複使用此類表單。
-   * 將多個表單新增到 Sites 頁面，簡化使用者體驗並提供更大的靈活性。
+   * 使用 AEM Sites 編輯器中的最適化表單精靈，以便建立不屬於任何 Sites 頁面的表單，讓您能夠在多個頁面之間自由地重複使用這些表單。
+   * 將多個表單新增到 Sites 頁面，簡化用戶體驗並提供更大的彈性。
 
      >[!VIDEO](https://video.tv.adobe.com/v/3419284?quality=12&learn=on)
 
-* [增強的Adobe Acrobat Sign整合與合規性](/help/forms/adobe-sign-integration-adaptive-forms.md)：AEM Forms現在與適用於政府的Adobe Acrobat Sign整合。 此整合針對政府相關帳戶（政府部門及機構）提交的最適化表單電子簽章，提供進階層級的法規遵循與安全性。
+* [適用於政府的Adobe Acrobat Sign Solutions](/help/forms/adobe-sign-integration-adaptive-forms.md)：AEM Forms現在與適用於政府的Adobe Acrobat Sign Solutions整合。 這種整合能夠讓政府相關帳戶 (政府部門和機構) 在提交最適化表單時，享有等級更高的電子簽名合規性和安全性。
 
-  與適用於政府的Adobe Acrobat Sign整合可讓Adobe的合作夥伴和政府客戶在Adaptive Forms中使用電子簽章，處理某些最關鍵和敏感的業務線。 此額外的安全層可確保所有電子簽章完全符合FedRAMP Moderate合規性，讓Adobe的政府客戶高枕無憂。
+  藉由與政府適用之 Adobe Acrobat Sign 整合，在一些最重要的關鍵任務和敏感業務線，Adobe 的合作夥伴和政府客戶便可以在最適化表單使用電子簽名。這額外一層的安全性可確保所有電子簽名完全符合 FedRAMP 中等合規性，讓 Adobe 的政府客戶安心使用。
 
-* 增強規則編輯器中自訂錯誤處理常式的錯誤處理功能。 您現在可以叫用自訂函式（使用使用者端資料庫）來回應外部服務傳回的錯誤，並為一般使用者提供量身打造的回應。 或者，您也可以針對服務傳回的錯誤採取特定動作。 例如，您可以在後端叫用自訂工作流程來取得特定錯誤代碼，或通知客戶服務已關閉。
+* 增強規則編輯器中自訂錯誤處理常式的錯誤處理功能：您現在可以叫用自訂函式（使用使用者端程式庫）來回應外部服務傳回的錯誤，並為一般使用者提供量身打造的回應。 或者，您可以針對服務傳回的錯誤採取特定動作。例如，您可以針對特定錯誤程式碼在後端叫用自訂的工作流程，或通知客戶服務已關閉。
 
-  此功能引進了標準式錯誤回應，可回溯相容於OOTB錯誤處理常式，並擁有更大的彈性和控制能力，有助於改善您的整體錯誤處理能力。
+  此功能有助於引進標準型錯誤回應來提高整體的錯誤處理能力；這些回應向後相容於 OOTB 錯誤處理常式，且具有更大的彈性和控制性。
 
 ### Headless 最適化表單早期採用者計劃 {#forms-early-adopter}
 
@@ -105,7 +105,7 @@ ht-degree: 57%
 * 使用您選擇的程式語言建置高品質的多管道表單
 * 以原生方式將表單整合到您的桌面和行動應用程式、網站和聊天應用程式
 * 在表單應用程式中重複使用您的專屬 UI 元件
-* 運用Adobe Experience Manager Forms的強大功能
+* 使用 Adobe Experience Manager Forms 的強大功能
 
 使用您的官方電子郵件 ID 寄送電子郵件至 `aem-forms-headless@adobe.com`，即可加入早期採用者計劃。
 
@@ -113,7 +113,7 @@ ht-degree: 57%
 
 ### 新增功能 {#what-is-new-foundation}
 
-* 額外發佈區域：除了主要區域外，Sites 客戶最多可授權三個發佈區域。流量會路由至其他發佈陣列，以降低特定請求的延遲，並增強抵禦區域中斷的能力。 如需授權您的計畫[額外發佈區域](/help/operations/additional-publish-regions.md)的資訊，請和您的 Adob&#x200B;&#x200B;e 客戶經理聯絡。
+* 額外發佈區域：除了主要區域外，Sites 客戶最多可授權三個發佈區域。流量會路由到其他發佈伺服器陣列，因此可降低某些要求的延遲，並增進發生區域性中斷時的復原能力。如需授權您的計畫[額外發佈區域](/help/operations/additional-publish-regions.md)的資訊，請和您的 Adob&#x200B;&#x200B;e 客戶經理聯絡。
 
 ## 維護版本發行說明 {#maintenance}
 
