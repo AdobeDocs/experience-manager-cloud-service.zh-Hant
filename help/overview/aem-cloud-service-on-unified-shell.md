@@ -2,10 +2,10 @@
 title: Unified Shell 上的 AEM as a Cloud Service
 description: Unified Shell 上的 AEM as a Cloud Service
 exl-id: ea739307-dc99-4621-a239-dbe60ab6b52e
-source-git-commit: 24ae6187813de801813236f0bbcb2ea51e8fe5e1
+source-git-commit: a9aa82c8258e6a5f43680069c65518093c0baf8d
 workflow-type: tm+mt
-source-wordcount: '399'
-ht-degree: 100%
+source-wordcount: '395'
+ht-degree: 81%
 
 ---
 
@@ -19,7 +19,7 @@ AEM as a Cloud Service (作者服務) 與 Unified Shell 整合，以改進使用
 
 此優點包括：
 
-* 跨所有 Experience Cloud 應用程式的單一登入
+* 跨所有Experience Cloud應用程式的單一登入
 * 更輕鬆地在組織之間切換，或切換至不同的應用程式
 * 改進產品說明
 * 簡單的產品內意見反應按鈕，用於向 Adobe 提報問題或分享想法
@@ -32,19 +32,19 @@ AEM as a Cloud Service (作者服務) 與 Unified Shell 整合，以改進使用
 >[!NOTE]
 >Unified Shell 只能由具有管理員權限的帳戶停用。
 
-1. 前往&#x200B;**工具 - 雲端服務**。
+1. 按一下 **「工具」>「Cloud Services」**.
 
-   管理員使用者將看到 Unified Shell 設定卡，如下所示：
+   管理員使用者會看到Unified Shell設定卡，如下所示：
 
    ![影像](/help/overview/assets/unifiedshell2.png)
 
-1. 按一下 **Unified Shell 設定**。然後，取消選取下方顯示的核取方塊以停用 Unified Shell：
+1. 按一下 **Unified Shell設定**. 然後，取消選取下方顯示的核取方塊以停用 Unified Shell：
 
    ![影像](/help/overview/assets/unifiedshell3.png)
 
 ## 變更為深色主題 {#changing-to-dark-theme}
 
-若要變更為深色主題，請按一下您的個人資料圖示。快顯視窗隨即出現，如下所示。您可以使用切換按鈕切換到 Unified Shell 的深色主題。
+若要變更為深色主題，請按一下您的設定檔圖示。 此動作會顯示彈出視窗，如下所示。 您可以使用切換按鈕切換到 Unified Shell 的深色主題。
 
 >[!INFO]
 >
@@ -60,7 +60,7 @@ AEM as a Cloud Service 提供三種類型環境：生產、預備和開發。如
 
 ## 存取 AEM 收件匣 {#accessing-the-aem-inbox}
 
-AEM 收件匣可以透過按一下 Unified Shell 中的鈴鐺圖示來存取。
+按一下Unified Shell中的鈴鐺圖示，即可存取AEM收件匣。
 
 >[!INFO]
 >
@@ -68,6 +68,6 @@ AEM 收件匣可以透過按一下 Unified Shell 中的鈴鐺圖示來存取。
 
 ![影像](/help/overview/assets/unifiedshell5.png)
 
-按一下快顯視窗中的收件匣按鈕以前往 AEM 收件匣：
+按一下彈出視窗中的「收件匣」按鈕，即可前往「AEM收件匣」：
 
 ![影像](/help/overview/assets/unifiedshell6.png)

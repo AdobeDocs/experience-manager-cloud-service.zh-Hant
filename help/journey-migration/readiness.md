@@ -1,11 +1,11 @@
 ---
 title: 整備階段
-description: 瞭解您需要採取的步驟，以便確保AEM安裝已準備好移至雲端
+description: 瞭解您必須執行的步驟，才能確保AEM安裝已準備好移至雲端。
 exl-id: 3bc8c037-d82a-4455-bce6-3c80c359a4ae
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: a9aa82c8258e6a5f43680069c65518093c0baf8d
 workflow-type: tm+mt
-source-wordcount: '2074'
-ht-degree: 8%
+source-wordcount: '2066'
+ht-degree: 4%
 
 ---
 
@@ -14,14 +14,14 @@ ht-degree: 8%
 >[!CONTEXTUALHELP]
 >id="aemcloud_cam_planning"
 >title="規劃您的轉換"
->abstract="在展開轉換至 Cloud Service 的過程前，您應該先熟悉 AEM as a Cloud Service、檢視針對其採取的重大變更，並檢視已遭取代或淘汰的功能。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html?lang=zh-Hant" text="最佳做法分析工具"
+>abstract="在開始Cloud Service的轉變歷程之前，請先熟悉AEMas a Cloud Service。 檢閱對其所做的重大變更，以及已取代或已棄用的功能。"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html" text="最佳做法分析工具"
 
-在AEMas a Cloud Service移轉歷程的這個階段，您將熟悉AEMas a Cloud Service、檢閱它引進的重大變更，並瞭解成功移轉至雲端所需的規劃。
+在AEMas a Cloud Service移轉歷程的這個階段，您可以熟悉AEMas a Cloud Service。 您可以檢閱引進的重大變更，並瞭解規劃成功移轉至雲端需要哪些條件。
 
 ## 到目前為止 {#story-so-far}
 
-上一份檔案， [開始使用AEMas a Cloud Service](/help/journey-migration/getting-started.md)，概述您可以移轉至AEMas a Cloud Service所需的階段清單，以及移轉的好處。
+上一份檔案， [開始使用AEMas a Cloud Service](/help/journey-migration/getting-started.md)，概述您必須經歷的階段清單，以便移轉至AEMas a Cloud Service。 此外，也概述移轉的好處。
 
 ## 目標 {#objective}
 
@@ -32,7 +32,7 @@ ht-degree: 8%
 
 ## 檢閱AEMas a Cloud Service架構的重大變更 {#notable-changes-in-aem-cloud-service-architecture}
 
-AEM as a Cloud Service 提供許多管理 AEM 專案的新功能，並帶來許多可能性。
+AEMas a Cloud Service提供許多管理AEM專案的新功能，並帶來許多可能性。
 
 除了這些改善專案，內部部署安裝的AEM和Adobe Managed Services與AEMas a Cloud Service之間也有所差異。
 
@@ -49,7 +49,7 @@ AEM as a Cloud Service 提供許多管理 AEM 專案的新功能，並帶來許�
 <tbody>
   <tr>
     <td>將可變和不可變篩選器分隔成對應的套件</td>
-    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/aem-cloud-changes.html?lang=en">AEMas a Cloud Service重大變更</a><br><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html#mutable-vs-immutable">AEMas a Cloud Service的AEM專案結構</a></td>
+    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/aem-cloud-changes.html?lang=zh-Hant">AEMas a Cloud Service重大變更</a><br><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure.html#mutable-vs-immutable">AEMas a Cloud Service的AEM專案結構</a></td>
     <td>可部署到AEMas a Cloud Service的單一套件可以具有子套件，主要用於包含分隔到其自身套件中的可變和不可變內容。</td>
   </tr>
   <tr>
@@ -70,7 +70,7 @@ AEM as a Cloud Service 提供許多管理 AEM 專案的新功能，並帶來許�
   <tr>
     <td>復寫代理程式已由Sling Content Distribution取代</td>
     <td></td>
-    <td>Sing Content Distribution已取代復寫代理程式的概念。 如果有利用復寫代理的自訂專案，則必須重新設計。<br>不支援反向復寫</td>
+    <td>Sing Content Distribution已取代復寫代理程式的概念。 如果有使用復寫代理程式的自訂，則必須重新設計。<br>不支援反向復寫</td>
   </tr>
   <tr>
     <td>CRX/DE和封裝管理員</td>
@@ -80,27 +80,27 @@ AEM as a Cloud Service 提供許多管理 AEM 專案的新功能，並帶來許�
   <tr>
     <td>內建CDN並取得您自己的CDN</td>
     <td></td>
-    <td>AEMas a Cloud Service包含適用於所有環境的CDN，此環境已針對大多數使用案例最佳化。<br>如果您想要設定自己的CDN，您必須向Adobe支援提交請求才能獲得核准。<br>如果獲得核准，CDN將指向Fastly，而不是任何環境中的AEM執行個體。</td>
+    <td>AEMas a Cloud Service包含適用於所有環境的CDN，此環境已針對大多數使用案例最佳化。<br>如果您想要設定自己的CDN，您必須向Adobe支援提交請求才能獲得核准。<br>如果獲得核准，CDN會指向Fastly，而不是任何環境中的AEM執行個體。</td>
   </tr>
   <tr>
     <td>長時間執行的工作</td>
     <td></td>
-    <td>避免執行長時間執行的工作，例如Sling排程器或Cron工作，因為在容器中執行的AEM執行個體隨時可能來來去去。<br>重新思考這些功能，將其解除安裝至Adobe I/O。</td>
+    <td>避免長時間執行工作，例如Sling排程器或Cron工作，因為容器中執行的AEM執行個體隨時可以來回移動。<br>重新思考這些功能，以便將其解除安裝至Adobe Developer。</td>
   </tr>
   <tr>
     <td>切換至非同步作業</td>
-    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/asynchronous-jobs.html?lang=en#configuring-asynchronous-msm-operations">設定非同步操作</a></td>
+    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/asynchronous-jobs.html?lang=en#configuring-asynchronous-msm-operations">設定非同步操作</a></td>
     <td>為了改善環境的整體效能，某些作業會以非同步模式執行。 當系統資源可用時，非同步工作會排入佇列並執行。</td>
   </tr>
   <tr>
     <td>權杖型驗證和整合策略</td>
-    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=en#the-server-to-server-flow">為伺服器端API產生存取權杖</a><br><a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=en#authentication">權杖型驗證教學課程</a></td>
+    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=en#the-server-to-server-flow">為伺服器端API產生存取權杖</a><br><a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=en#authentication">權杖型驗證教學課程</a></td>
     <td>AEM外部的系統通常會嘗試在AEM內執行HTTP作業。<br>建議的方法是實施這裡概述的策略，而不是依賴在AEM中使用密碼建立本機使用者名稱。</td>
   </tr>
   <tr>
     <td>檔案IO/磁碟使用量</td>
     <td></td>
-    <td>由於無法保證分配了多少磁碟空間，而且容器中的執行個體會來來去去，因此不建議使用檔案I/O操作從附加至AEM執行個體的磁碟中寫入或讀取。</td>
+    <td>無法保證分配了多少磁碟空間，而且容器中的執行個體會來來去去。 因此，不建議使用檔案I/O操作來寫入或讀取附加至AEM執行個體的磁碟。</td>
   </tr>
   <tr>
     <td>DAM更新資產工作流程</td>
@@ -109,48 +109,48 @@ AEM as a Cloud Service 提供許多管理 AEM 專案的新功能，並帶來許�
   </tr>
   <tr>
     <td>AEMas a Cloud Service的資產上傳方法和支援的工作流程步驟</td>
-    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/developer-reference-material-apis.html?lang=en#post-processing-workflows-steps">上傳API比較和支援的WF程式步驟</a></td>
-    <td>在AEMas a Cloud Service中，在上傳或下載資產期間，資產會直接流入或流出二進位儲存體。</br>AEMaaCS並不支援所有工作流程處理步驟。</td>
+    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/developer-reference-material-apis.html?lang=en#post-processing-workflows-steps">上傳API比較和支援的WF程式步驟</a></td>
+    <td>在AEMas a Cloud Service中，在上傳或下載資產期間，資產會直接流入或流出二進位儲存體。 <br>AEMaaCS並不支援所有工作流程處理步驟。</td>
   </tr>
   <tr>
     <td>工作流程啟動器</td>
     <td></td>
-    <td>從您的程式碼中移除任何觸發OOTB或自訂DAM更新資產工作流程的工作流程啟動器。</br>所有上傳至AEMas a Cloud Service的資產都將由資產處理服務處理。 如需自訂步驟，請參閱 <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use.html?lang=en#post-processing-workflows"> 後處理工作流程</a> 如何設定和設定後處理工作流程。</td>
+    <td>從您的程式碼中移除觸發現成可用或自訂DAM更新資產工作流程的任何工作流程啟動器。 <br>所有上傳至AEMas a Cloud Service的資產都將由資產處理服務處理。 如需自訂步驟，請參閱 <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use.html?lang=en#post-processing-workflows"> 後處理工作流程</a> 如何設定和設定後處理工作流程。</td>
   </tr>
   <tr>
     <td>自訂轉譯步驟</td>
-    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/asset-microservices-configure-and-use.html?lang=en#manage">處理設定檔</a></td>
+    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use.html?lang=en">處理設定檔</a></td>
     <td>任何自訂轉譯產生、影像轉換或視訊編碼都必須建立對應的處理設定檔，將之解除安裝至資產處理服務。</td>
   </tr>
   <tr>
     <td>內容搜尋與索引</td>
-    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en">內容搜尋和索引變更</a></td>
-    <td>索引的基礎處理及其開始運作時，會有相當多的變更。<br>在您將部署的程式碼中管理Oak索引之前，請完全瞭解並重新調整Oak索引。</td>
+    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html?lang=en">內容搜尋和索引變更</a></td>
+    <td>索引的基礎處理及其開始運作時，會有相當多的變更。<br>在您部署的程式碼中管理Oak索引之前，請完全瞭解並重新調整Oak索引。</td>
   </tr>
   <tr>
     <td>並非所有維護任務都是可設定的</td>
-    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/maintenance.html?lang=en">AEMas a Cloud Service維護任務</a></td>
+    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/maintenance.html?lang=en">AEMas a Cloud Service維護任務</a></td>
     <td>您只能使用AEMas a Cloud Service設定某些維護任務。</td>
   </tr>
   <tr>
     <td>發佈存放庫的變更</td>
     <td></td>
-    <td>不允許直接變更發佈用儲存庫，但/home底下的儲存庫除外。 一律建議對作者進行變更並加以發佈。 所有程式碼和設定變更都必須透過對應的Cloud Manager管道部署。</td>
+    <td>不允許直接變更發佈用儲存庫，但/home底下的變更除外。 一律建議散佈對作者所做的任何變更。 所有程式碼和設定變更都必須透過對應的Cloud Manager管道部署。</td>
   </tr>
   <tr>
     <td>Dispatcher設定和快取</td>
-    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/content-delivery/disp-overview.html?lang=en#content-delivery">雲端中的Dispatcher</a><br><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/content-delivery/caching.html?lang=en#other-content">快取管理<br></td>
+    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/disp-overview.html?lang=en">雲端中的Dispatcher</a><br><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html?lang=en#other-content">快取管理<br></td>
     <td>Dispatcher設定必須遵循特定結構。<br>這些設定必須作為計畫碼的一部分進行管理，並透過Cloud Manager管道進行部署。</td>
   </tr>
   <tr>
     <td>備份和還原</td>
-    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/backup.html?lang=en">AEMas a Cloud Service備份與還原</a></td>
+    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/backup.html?lang=en">AEMas a Cloud Service備份與還原</a></td>
     <td></td>
   </tr>
   <tr>
     <td>驗證變更</td>
     <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html?lang=zh-Hant">AEM as a Cloud Service 的 IMS 支援</td>
-    <td>如果您先前在移至Cloud Service之前在作者和發佈上使用SAML 2.0整合，主要變更為AEMas a Cloud Service作者僅與Adobe IMS整合。 不過，AEMas a Cloud Service發佈層級仍可使用SAML或其他驗證整合。 AEM as a Cloud Service 僅針對「作者」、「管理員」和「開發」使用者提供 IMS 驗證支援。IMS驗證不支援客戶網站的外部一般使用者，例如網站訪客。</td>
+    <td>如果您先前在移至Cloud Service之前在作者和發佈上使用SAML 2.0整合，主要變更為AEMas a Cloud Service作者僅與Adobe IMS整合。 不過，AEMas a Cloud Service發佈層級仍可使用SAML或其他驗證整合。 AEMas a Cloud Service僅對作者、管理員和開發使用者提供IMS驗證支援。 IMS驗證不支援客戶網站的外部一般使用者，例如網站訪客。</td>
   </tr>
 </tbody>
 </table>
@@ -159,7 +159,7 @@ AEM as a Cloud Service 提供許多管理 AEM 專案的新功能，並帶來許�
 
 Adobe 持續評估產品功能，以更新或替代的方式來改善或取代舊功能，以提升客戶享有的整體價值，且隨時謹慎考慮是否回溯相容。
 
-建議您參閱 [已棄用的功能](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/deprecated-removed-features.html#deprecated-features) 熟悉Experience Manageras a Cloud Service中標示為過時的功能，並瞭解對您的AEM部署有何影響。
+Adobe建議您參閱 [已棄用的功能](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/deprecated-removed-features.html#deprecated-features) 熟悉Experience Manageras a Cloud Service中標示為過時的功能。 瞭解對您的AEM部署有何影響。
 
 ## 規劃檢閱AEM安裝 {#review-planning}
 
@@ -169,15 +169,15 @@ Adobe 持續評估產品功能，以更新或替代的方式來改善或取代�
 
 ![影像](/help/journey-migration/assets/planning-phaseimg1.png)
 
-接下來，我們將詳細探索這些步驟的意義。
+接下來，您會詳細探索這些步驟的意義。
 
 ### 評定雲端服務整備 {#assess-cloud-readiness}
 
 第一步是評估您是否已整備完畢，可從現有的AEM版本移至Cloud Service，並判斷需要重構才能與AEMas a Cloud Service相容的區域。
 
-您必須根據重大變更和過時的功能，對目前的AEM原始程式碼進行全面的評估，以判斷轉換歷程中預期的投入程度。
+根據重大變更和已棄用的功能，對您目前的AEM原始程式碼進行全面評估，以確定轉換歷程中預期的投入程度。
 
-發現專案的數量將直接影響時間表及整體專案的成功。 因此，建議您儘可能發掘內容，以規劃傳遞作業，或開始重新設計任何符合AEMas a Cloud Service最佳實務要求的自訂作業所需的對話。
+發現專案的數量會直接影響時間表與整體專案的成功。 因此，Adobe建議您儘可能多地揭開內容，以便規劃傳送。 或者，啟動對話，以便您可以重新設計符合AEMas a Cloud Service最佳實務所需的任何自訂。
 
 **Best Practice Analyzer**
 
@@ -187,7 +187,7 @@ Adobe 持續評估產品功能，以更新或替代的方式來改善或取代�
 
 **建立雲端整備評估報告**
 
-下一個步驟是根據目前取得的所有知識建立報告。 您可以從「階段」和「生產」執行個體產生Best Practices Analyzer報告來完成此操作。 [然後將其上傳到Cloud Acceleration Manager](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-readiness-phase.md#readiness-phase-cam) 以取得可操作專案的可消化報告。
+下一個步驟是根據目前取得的所有知識建立報告。 您可以從「暫存」和「生產」執行個體產生Best Practices Analyzer報告，藉此建立報告。 [然後將其上傳到Cloud Acceleration Manager](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-readiness-phase.md#readiness-phase-cam) 以取得可操作專案的可消化報告。
 
 一般報表應包含下列輸入：
 
@@ -208,7 +208,7 @@ Best Practices Analyzer報表完成之後，請與相關團隊共用這些報表
 
 如果您先前尚未建立關鍵績效指標(KPI)，建議您為AEM實作建立KPI，以協助您的團隊專注於最重要的事項。
 
-另請參閱 [開發KPI](https://guided.adobe.com/welcome/aem/part6.html) 以瞭解如何為您的業務目標選擇正確的KPI。
+另請參閱 [開發KPI](https://experienceleague.adobe.com/welcome/aem/part6.html) 以便瞭解如何為您的業務目標選擇正確的KPI。
 
 ## 下一步 {#what-is-next}
 
@@ -216,8 +216,8 @@ Best Practices Analyzer報表完成之後，請與相關團隊共用這些報表
 
 ## 其他資源 {#additional-resources}
 
-* [Cloud Acceleration Manager快速入門](/help/journey-migration/cloud-acceleration-manager/using-cam/getting-started-cam.md)  — 有關如何使用Cloud Acceleration Manager以加速您向雲端移動的完整指南
+* [Cloud Acceleration Manager快速入門](/help/journey-migration/cloud-acceleration-manager/using-cam/getting-started-cam.md)  — 有關如何使用Cloud Acceleration Manager加速您移至Cloud的完整指南。
 * [AEMas a Cloud Service：簡介、架構和思維方式不同](https://experienceleague.adobe.com/?launch=ExperienceManager-D-1-2021.1.migration&amp;recommended=ExperienceManager-D-1-2021.1.migration&amp;lang=en#dashboard/learning)
 * [AEM aCloud Service首頁](/help/overview/home.md)  — 如需Experience Manageras a Cloud Service檔案的概覽，請從這裡開始。
 * [AEMas a Cloud Service概述](/help/overview/home.md)  — 本指南提供Experience Manageras a Cloud Service概觀，包括簡介、術語和架構。
-* [入門歷程](/help/journey-onboarding/overview.md) — 本指南提供如何開始使用Experience Manageras a Cloud Service的摘要，包括如何取得存取權和設定團隊
+* [入門歷程](/help/journey-onboarding/overview.md) — 本指南提供如何開始使用Experience Manageras a Cloud Service的摘要，包括如何取得存取權和設定團隊。
