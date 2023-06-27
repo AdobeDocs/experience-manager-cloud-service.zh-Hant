@@ -15,8 +15,8 @@ ht-degree: 16%
 >id="aemcloud_ctt_prereqs"
 >title="內容轉移工具的重要使用注意事項"
 >abstract="查看容轉移工具的重要使用注意事項，包括 Java™ 和 AEM 版本、支援的資料存放區類型、使用者群組注意事項等。"
-additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html?lang=zh-Hant" text="使用內容轉移工具的重要考量"
-additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html?lang=zh-Hant#best-practices" text="最佳做法和準則"
+additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html?lang=zh-Hant?lang=en" text="使用內容轉移工具的重要考量"
+additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html?lang=zh-Hant?lang=en#best-practices" text="最佳做法和準則"
 
 下表總結使用「內容轉移工具」的先決條件。
 
@@ -34,4 +34,4 @@ additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud
 
 ## 下一步 {#whats-next}
 
-在檢閱了先決條件並確定您能否在移轉專案中使用內容轉移工具後，請參閱 [使用內容轉移工具的准則和最佳實務](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html).
+在檢閱了先決條件並確定您能否在移轉專案中使用內容轉移工具後，請參閱 [使用內容轉移工具的准則和最佳實務](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html?lang=zh-Hant).

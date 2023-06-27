@@ -17,7 +17,7 @@ ht-degree: 12%
 >id="aemcloud_ctt_ingestion"
 >title="內容攝入"
 >abstract="攝入是指將移轉集中的內容攝入到 Cloud Service 執行個體中。「內容轉移工具」具備支援追加差異內容的功能，可以只轉移在上一次內容轉移活動後所進行的變更。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html#top-up-ingestion-process" text="追加擷取"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=zh-Hant#top-up-ingestion-process" text="追加擷取"
 
 請依照下列步驟，從「內容轉移工具」中擷取您的移轉集：
 
@@ -93,7 +93,7 @@ ht-degree: 12%
 >id="aemcloud_ctt_ingestion_topup"
 >title="追加擷取"
 >abstract="使用填滿功能來移動自上次內容轉移活動以來修改的內容。攝入完成後，檢查記錄檔中是否有任何錯誤/警告。如有任何錯誤應立即處理，方法是處理回報的問題或聯絡 Adobe 客戶服務。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/viewing-logs.html" text="檢視記錄檔"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/viewing-logs.html?lang=zh-Hant" text="檢視記錄檔"
 
 「內容轉移工具」具備支援&#x200B;*追加*&#x200B;差異內容的功能，可以只轉移在上一次內容轉移活動後所進行的變更。
 

@@ -15,7 +15,7 @@ ht-degree: 8%
 >id="aemcloud_cam_planning"
 >title="規劃您的轉換"
 >abstract="在展開轉換至 Cloud Service 的過程前，您應該先熟悉 AEM as a Cloud Service、檢視針對其採取的重大變更，並檢視已遭取代或淘汰的功能。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html" text="最佳做法分析工具"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html?lang=zh-Hant" text="最佳做法分析工具"
 
 在AEMas a Cloud Service移轉歷程的這個階段，您將熟悉AEMas a Cloud Service、檢閱它引進的重大變更，並瞭解成功移轉至雲端所需的規劃。
 

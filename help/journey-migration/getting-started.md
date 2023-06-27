@@ -49,8 +49,8 @@ AEMas a Cloud Service為Experience Manager Assets、Forms和Screens提供可擴�
 >id="aemcloud_cam_overview"
 >title="關於 Cloud Acceleration Manager "
 >abstract="Cloud Acceleration Manager 是雲端型應用程式，旨在引導您的 IT 團隊進行從規劃到在 Cloud Service 上線的轉換歷程。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/home.html#aem-moving-to-aem-guide" text="轉移至 AEM as a Cloud Service "
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/sites-cloud-changes.html" text="AEM Sites as a Cloud Service 重大變更"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/home.html?lang=zh-Hant#aem-moving-to-aem-guide" text="轉移至 AEM as a Cloud Service "
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/sites-cloud-changes.html?lang=zh-Hant" text="AEM Sites as a Cloud Service 重大變更"
 
 除了此歷程中概述的步驟外，Adobe還提供Cloud Acceleration Manager，這是一個雲端型應用程式，旨在引導您的IT團隊完成從規劃到Cloud Service上線的轉換歷程。 透過Adobe建議的最佳實務、秘訣、檔案和工具，協助進行AEM asCloud Service歷程的每個階段，讓您的團隊成功完成移轉。
 
