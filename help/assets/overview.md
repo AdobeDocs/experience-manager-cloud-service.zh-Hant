@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Management
 role: User,Leader,Architect
 exl-id: 4437f214-d058-4975-8b8f-869a12c8103b
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: f075c6032edb23f9cf52ad53ae2a628915e76ec2
 workflow-type: tm+mt
-source-wordcount: '487'
-ht-degree: 100%
+source-wordcount: '738'
+ht-degree: 68%
 
 ---
 
@@ -36,6 +36,22 @@ Adobe Experience Manager Assets as a [!DNL Cloud Service] 為企業提供一種�
 * **始終提供服務**：零停機時間 (0dt)，這要歸功於部署在具有備份和備援之叢集中的執行個體。升級也是 0dt。
 * **持續監控**：系統監控是自動化的，內建的檢查和觸發機制有助於維護效能、可用性和整體穩健性。
 * **輕鬆部署**：Experience Manager 在雲端中的操作完全自動化，無需人工介入。對於自動化部署，Cloud Manager (CM) 元件會自動建置包含您自訂程式碼的可部署 Docker 影像。
+
+## 可用的角色型體驗
+
+Adobe 為您提供健全的數位資產管理 (DAM) 解決方案，可供您善加利用您的數位資產。Adobe Experience Manager Assets有兩個使用相同Cloud Services存放庫的不同體驗：
+
+* **管理員檢視**：現有的Assetsas a Cloud Service使用者介面。 使用「管理員檢視」即可執行所有進階資產管理功能，包括整合、工作流程、內容自動化、發佈等。
+
+* **資產檢視**：Adobe的輕量型資產管理體驗，可儲存、管理、探索及使用數位資產。 包含基本資產管理功能的簡化使用者介面。 專為輕量型DAM使用者設計，著重於上傳、中繼資料管理、搜尋、下載和共用。
+
+有權存取「管理員」檢視的使用者也可以存取「資產」檢視。 Assets View提供簡化的使用者介面，讓您輕鬆管理、探索和分發數位資產。 來自不同職能部門（包括創意人員、行銷團隊和業務線團隊）的廣泛使用者可以針對資產進行共同作業，並在需要時隨時隨地存取正確的已核准資產。 許多隨意DAM使用者偏好「資產」檢視，因為它只包含功能的子集。 體驗的目標是創意人員、唯讀資產消費者和重量較輕的DAM使用者。
+
+DAM程式庫、開發人員和超級使用者可視需要繼續使用「管理員」檢視，或在使用者介面之間切換。 您可以選取最適合您角色的體驗。
+
+![add-tag](assets/newui-overview.svg)
+
+如需如何存取「資產」檢視的詳細資訊，及其透過「管理員」檢視提供的一些簡化，請參閱「資產」檢視。
 
 ## 新資產功能 {#whats-new-assets}
 
