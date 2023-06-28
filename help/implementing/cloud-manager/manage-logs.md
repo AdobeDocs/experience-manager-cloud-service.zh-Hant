@@ -2,10 +2,10 @@
 title: 存取和管理記錄檔
 description: 了解如何存取和管理記錄檔以協助進行 AEM as a Cloud Service 中的開發流程。
 exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
-source-git-commit: 7260649eaab303ba5bab55ccbe02395dc8159949
+source-git-commit: 92c123817a654d0103d0f7b8e457489d9e82c2ce
 workflow-type: tm+mt
-source-wordcount: '266'
-ht-degree: 69%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -79,7 +79,7 @@ Environment Id Service    Name
 
 ### 其他資源 {#resources}
 
-請參閱下列其他資源，深入瞭解Cloud Manager API和Adobe Developer CLI：
+請參閱以下更多資源，以深入了解如何使用 Cloud Manager API 和 Adobe I/O CLI：
 
 * [Cloud Manager API 文件](https://developer.adobe.com/experience-cloud/cloud-manager/)
-* [ADOBE DEVELOPER CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager)
+* [Adobe I/O CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager)

@@ -8,10 +8,10 @@ doc-type: tutorial
 kt: 4947
 thumbnail: 37843.jpg
 exl-id: 73ba707e-5e2d-459a-8cc8-846d1a5f2fd7
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 92c123817a654d0103d0f7b8e457489d9e82c2ce
 workflow-type: tm+mt
-source-wordcount: '1113'
-ht-degree: 3%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -63,15 +63,15 @@ CIF附加元件可選擇性支援AEM作者使用分階段目錄資料，且僅�
 
 ![CM環境資訊](/help/commerce-cloud/assets/commerce-cmui-done.png)
 
-### 透過Adobe Developer CLI  {#adobe-cli}
+### 透過Adobe I/OCLI  {#adobe-cli}
 
-若要透過Adobe Developer CLI連線AEM與商務解決方案，請遵循下列步驟：
+若要透過Adobe I/OCLI連線AEM與商務解決方案，請遵循下列步驟：
 
-1. 使用Cloud Manager外掛程式取得Adobe Developer CLI
+1. 使用Cloud Manager外掛程式取得Adobe I/OCLI
 
-   檢查 [AdobeCloud Manager檔案](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html) 下載、設定及使用 [ADOBE DEVELOPER CLI](https://github.com/adobe/aio-cli) 使用 [Cloud Manager CLI外掛程式](https://github.com/adobe/aio-cli-plugin-cloudmanager).
+   檢查 [AdobeCloud Manager檔案](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html) 下載、設定及使用 [ADOBE I/OCLI](https://github.com/adobe/aio-cli) 使用 [Cloud Manager CLI外掛程式](https://github.com/adobe/aio-cli-plugin-cloudmanager).
 
-2. 使用AEMas a Cloud Service程式驗證Adobe Developer CLI
+2. 使用AEMas a Cloud Service程式驗證Adobe I/OCLI
 
 3. 設定 `COMMERCE_ENDPOINT` Cloud Manager中的變數
 

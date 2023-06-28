@@ -2,16 +2,16 @@
 title: AEM 技術基礎
 description: AEM技術基礎的概觀，包括AEM的結構和基本技術，如JCR、Sling和OSGi。
 exl-id: ab6e7fe9-a25d-4351-a005-f4466cc0f40e
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 92c123817a654d0103d0f7b8e457489d9e82c2ce
 workflow-type: tm+mt
-source-wordcount: '2180'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
 # AEM 技術基礎 {#aem-technical-foundations}
 
-AEM是建構在經驗證、可擴充且彈性技術上的強大平台。 本檔案提供構成AEM的各種部分的詳細概述，旨在作為完整棧疊AEM開發人員的技術附錄。 本指南並非旨在作為快速入門手冊。 如果您不熟悉AEM開發，請參閱 [開發AEM Sites快速入門 — WKND教學課程](develop-wknd-tutorial.md) 作為第一步。
+AEM是建構在經驗證、可擴充且彈性技術上的強大平台。 本檔案提供組成AEM的各種部分的詳細概觀，旨在作為完整棧疊AEM開發人員的技術附錄。 本指南並非旨在作為快速入門手冊。 如果您是AEM開發的新手，請參閱 [開發AEM Sites快速入門 — WKND教學課程](develop-wknd-tutorial.md) 作為第一步。
 
 >[!TIP]
 >
@@ -26,43 +26,43 @@ AEM是建構在經驗證、可擴充且彈性技術上的強大平台。 本檔�
 * CSS
 * JavaScript
 
-基礎內容存放庫和業務邏輯層是圍繞Java技術建立的：
+基礎內容存放庫和業務邏輯層是圍繞Java™技術建立的：
 
 * JCR
 * Sling
 * osgi
 
-## Java內容存放庫 {#java-content-repository}
+## Java™內容存放庫 {#java-content-repository}
 
-Java Content Repository (JCR)標準、 [JSR 283](https://www.adobe.io/experience-manager/reference-materials/spec/jcr/2.0/index.html)，會指定獨立於廠商和實作的方式，在內容存放庫內的精細層級上雙向存取內容。 規格領先者為Adobe Research （瑞士） AG。
+Java™內容存放庫(JCR)標準、 [JSR 283](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/index.html)，會指定獨立於廠商和實作的方式，在內容存放庫內的精細層級上雙向存取內容。 規格領先者為Adobe Research （瑞士） AG。
 
-此 [JCR API 2.0](https://www.adobe.io/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/index.html) 封裝， `javax.jcr.*` 用於直接存取及操控存放庫內容。
+此 [JCR API 2.0](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/index.html) 封裝， `javax.jcr.*` 用於直接存取及操控存放庫內容。
 
 AEM是以JCR為基礎。
 
 ## Apache Jackrabbit Oak {#jackrabbit-oak}
 
-[Apache Jackrabbit Oak](https://jackrabbit.apache.org/oak/) 是可擴充且高效能的階層式內容存放庫實作，以作為現代世界級網站和其他要求嚴格的內容應用程式的基礎，並符合JCR標準。
+[Apache Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/) 是可擴充且高效能的階層式內容存放庫實作，以作為現代世界級網站和其他要求嚴格的內容應用程式的基礎，並符合JCR標準。
 
 Jackrabbit Oak （也簡稱為Oak）是實施JCR標準，AEM就是依據此標準建置的。
 
 ## Sling請求處理 {#sling-request-processing}
 
-AEM建置方式 [Sling](https://sling.apache.org/site/index.html)，此網頁應用程式架構以REST原則為基礎，可輕鬆開發內容導向的應用程式。 Sling使用JCR存放庫（例如Apache Jackrabbit Oak）作為其資料存放區。 Sling已對Apache Software Foundation有所貢獻 — 如需進一步資訊，請參閱Apache 。
+AEM建置方式 [Sling](https://sling.apache.org/index.html)，此網頁應用程式架構以REST原則為基礎，可輕鬆開發內容導向的應用程式。 Sling使用JCR存放庫（例如Apache Jackrabbit Oak）作為其資料存放區。 Sling已對Apache Software Foundation有所貢獻 — 如需進一步資訊，請參閱Apache 。
 
 ### Sling簡介 {#introduction-to-sling}
 
-使用Sling時，要呈現的內容型別不是第一個處理考量。 主要考量是URL是否解析為內容物件，然後可以找到指令碼以執行轉譯。 這為網頁內容作者提供絕佳支援，協助他們建立可輕鬆根據需求自訂的頁面。
+使用Sling時，要呈現的內容型別不是第一個處理考量。 相反，主要考量是URL是否解析為內容物件，然後可以找到指令碼以執行轉譯。 此程式為網頁內容作者提供絕佳支援，協助他們建立可輕鬆根據需求自訂的頁面。
 
 在包含各種不同內容元素的應用程式中，或是在您需要可輕鬆自訂的頁面時，此彈性優勢顯而易見。 特別是實作AEM之類的網頁內容管理系統時。
 
 另請參閱 [在15分鐘內探索Sling](https://sling.apache.org/documentation/getting-started/discover-sling-in-15-minutes.html) 開始使用Sling進行開發的步驟。
 
-下圖說明Sling指令碼解析：它說明如何從HTTP請求取得內容節點、從內容節點取得資源型別、從資源型別取得指令碼，以及有哪些指令碼變數可用。
+下圖說明Sling指令碼解析。 它說明如何從HTTP請求取得內容節點、從內容節點取得資源型別、從資源型別取得指令碼，以及有哪些指令碼變數可用。
 
 ![瞭解Apache Sling指令碼解析](assets/sling-cheatsheet-01.png)
 
-下圖說明所有隱藏但功能強大的要求引數，以供您用於處理 `SlingPostServlet`，此元件為所有POST要求的預設處理常式，提供您建立、修改、刪除、複製和移動存放庫中節點的無限選項。
+下圖說明您可以搭配使用的隱藏但功能強大的要求引數 `SlingPostServlet`，所有POST請求的預設處理常式。 此處理常式為您提供在存放庫中建立、修改、刪除、複製和移動節點的無數選項。
 
 ![使用SlingPostServlet](assets/sling-cheatsheet-02.png)
 
@@ -71,37 +71,37 @@ AEM建置方式 [Sling](https://sling.apache.org/site/index.html)，此網頁應
 Sling是 *以內容為中心*. 這表示處理著重於內容，因為每個(HTTP)請求都會對應到JCR資源（存放庫節點）形式的內容：
 
 * 第一個目標是儲存內容的資源（JCR節點）
-* 其次，表示或指令碼會與請求的某些部分（例如，選取器和/或擴充功能）結合，從資源屬性中找到
+* 其次，表示或指令碼會位於資源屬性中，且包含請求的某些部分（例如，選取器和/或擴充功能）
 
 ### RESTful Sling {#restful-sling}
 
 由於其以內容為中心的理念，Sling實作了REST導向的伺服器，因此在Web應用程式架構中有了新概念。 優點包括：
 
-* 非常RESTful，而不只是在曲面上；資源和表示在伺服器內正確建模
+* RESTful，而不只是在曲面上；資源和表示會在伺服器內正確建模
 * 移除一或多個資料模型
    * 其他內容管理架構可能需要URL結構、業務物件、DB結構描述才能存取資源。
-   * 使用Sling時，這會縮減為： URL =資源= JCR結構
+   * 使用Sling將其縮小為： URL =資源= JCR結構
 
 ### URL分解 {#url-decomposition}
 
-在Sling中，處理是由使用者請求的URL驅動。 這會定義適當的指令碼要顯示的內容。 為此，會從URL擷取資訊。
+在Sling中，處理是由使用者請求的URL驅動。 它會定義適當的指令碼要顯示的內容，並會從URL擷取資訊。
 
-如果我們分析下列URL：
+正在分析下列URL：
 
 ```text
 https://myhost/tools/spy.printable.a4.html/a/b?x=12
 ```
 
-我們可以將其細分為複合零件：
+您可以將其細分為複合零件：
 
-| 通訊協定 | 主機 |  | 內容路徑 | 選擇器 | 擴充功能 |  | 字尾 |  | 引數 |
+| 通訊協定 | 主機 |  | 內容路徑 | 選取器 | 擴充功能 |  | 字尾 |  | 引數 |
 |---|---|---|---|---|---|---|---|---|---|
 | `https://` | `myhost` | `/` | `tools/spy` | `.printable.a4.` | `html` | `/` | `a/b` | `?` | `x=12` |
 
 * **通訊協定** - HTTPS
 * **主機**  — 網站的網域
-* **內容路徑**  — 指定要轉譯的內容並與副檔名結合使用的路徑；在此範例中，它們會轉譯為 `tools/spy.html`
-* **選擇器**  — 用於轉譯內容的替代方法；在此範例中為A4格式的印表機易記版本
+* **內容路徑**  — 指定要轉譯的內容並搭配副檔名使用的路徑。 在此範例中，它會轉譯為 `tools/spy.html`
+* **選取器**  — 用於轉譯內容的替代方法；在此範例中為A4格式的印表機易記版本
 * **擴充功能**  — 內容格式；也會指定要用於轉譯的指令碼
 * **字尾**  — 可用於指定其他資訊
 * **引數**  — 動態內容所需的任何引數
@@ -125,13 +125,13 @@ https://myhost/tools/spy.printable.a4.html/a/b?x=12
 
 * 第一個Sling會檢查請求中指定的位置是否存在節點；例如， `../content/corporate/jobs/developer.html`
 * 如果找不到任何節點，則會捨棄擴充功能並重複搜尋；例如， `../content/corporate/jobs/developer`
-* 如果找不到任何節點，則Sling將傳回http代碼404 （找不到）。
+* 如果找不到任何節點，則Sling會傳回http代碼404 （找不到）。
 
-Sling也可讓JCR節點以外的專案成為資源，但這是進階功能。
+Sling也可讓JCR節點以外的專案成為資源，但此功能為進階功能。
 
 ### 找到指令碼 {#locating-the-script}
 
-找到適當的資源（內容節點）時， **sling資源型別** 「 」已擷取。 這是路徑，可找出要用於轉譯內容的指令碼。
+找到適當的資源（內容節點）時， **sling資源型別** 「 」已擷取。 此路徑會找出要用於呈現內容的指令碼。
 
 指定的路徑 `sling:resourceType` 可以是：
 
@@ -162,16 +162,16 @@ Felix管理主控台會列出指定AEM執行個體支援的指令碼引擎清單
    * 例如 `../content/corporate/jobs/developer.pdf`
    * 指令碼為 `/apps/hr/jobs/jobs.pdf.esp`；字尾會新增至指令碼名稱。
 * 具有選取器的URL
-   * 選取器可用來以替代格式顯示相同的內容。 例如，適合印表機的版本、RSS摘要或摘要。
-   * 如果檢視印表機易記版本，選擇器可能是 `print`；如在 `../content/corporate/jobs/developer.print.html`
+   * 選取器可用來以替代格式顯示相同的內容。 例如，適合印表機的版本、rss摘要或摘要。
+   * 如果您檢視適合印表機的版本，選擇器可能是 `print`；如在 `../content/corporate/jobs/developer.print.html`
    * 指令碼為 `/apps/hr/jobs/jobs.print.esp`；選取器會新增至指令碼名稱。
-* 若否 `sling:resourceType` 已定義，則：
-   * 內容路徑可用來搜尋適當的指令碼(如果路徑以 `ResourceTypeProvider` （非作用中）。
+* 如果否， `sling:resourceType` 定義之後：
+   * 內容路徑可用來搜尋適當的指令碼（如果以路徑為基礎） `ResourceTypeProvider` （非作用中）。
    * 例如，的指令碼 `../content/corporate/jobs/developer.html` 會在下列位置產生搜尋： `/apps/content/corporate/jobs/`.
    * 使用主要節點型別。
 * 如果完全找不到指令碼，則會使用預設指令碼。
-   * 目前支援以純文字格式呈現預設轉譯(`.txt`)，HTML(`.html`)和JSON (`.json`)，所有引數都會列出節點的屬性（格式適當）。 擴充功能的預設轉譯 `.res`（或沒有請求擴充功能的請求）會多工緩衝資源（可能的話）。
-* 若為http錯誤處理（程式碼403或404），Sling會在以下其中一個位置尋找指令碼：
+   * 預設轉譯支援為純文字(`.txt`)，HTML(`.html`)和JSON (`.json`)，全都列出節點屬性（格式適當）。 擴充功能的預設轉譯 `.res`（或沒有請求擴充功能的請求）會多工緩衝資源（可能的話）。
+* 針對http錯誤處理（程式碼403或404），Sling會尋找指令碼：
    * 位置 `/apps/sling/servlet/errorhandler` 用於自訂指令碼
    * 或標準指令碼的位置 `/libs/sling/servlet/errorhandler/404.jsp`
 
@@ -185,7 +185,7 @@ Felix管理主控台會列出指定AEM執行個體支援的指令碼引擎清單
 
 * `sling:resourceType="hr/jobs"`
 
-假設我們在正確位置有下列指令碼清單：
+假設您在正確位置有下列指令碼清單：
 
 1. `GET.esp`
 1. `jobs.esp`
@@ -198,7 +198,7 @@ Felix管理主控台會列出指定AEM執行個體支援的指令碼引擎清單
 
 偏好設定順序為(8) - (7) - (6) - (5) - (4) - (3) - (2) - (1)。
 
-除了資源型別(主要由 `sling:resourceType` 屬性)還有資源超級型別。 這通常表示為 `sling:resourceSuperType` 屬性。 嘗試尋找指令碼時，也會考慮這些超級型別。 資源超級型別的優點在於，它們可以在預設資源型別處形成資源的階層 `sling/servlet/default` （用於預設servlet）實際上是根。
+除了資源型別(主要由 `sling:resourceType` 屬性)，還有資源超級型別。 此型別由 `sling:resourceSuperType` 屬性。 嘗試尋找指令碼時，也會考慮這些超級型別。 資源超級型別的優點在於，它們可以在預設資源型別處形成資源的階層 `sling/servlet/default` （用於預設servlet）實際上是根。
 
 資源的資源超級型別可透過兩種方式定義：
 
@@ -226,11 +226,11 @@ Felix管理主控台會列出指定AEM執行個體支援的指令碼引擎清單
 * 當用於 `/y`
    * 階層為 `[ c, a, <default>]`
 
-這是因為 `/y` 具有 `sling:resourceSuperType` 屬性，而 `/x` 不會，因此其超型別會取自其資源型別。
+原因在於 `/y` 具有 `sling:resourceSuperType` 屬性，而 `/x` 不會，因此其超型別會取自其資源型別。
 
 #### 無法直接呼叫Sling指令碼 {#sling-scripts-cannot-be-called-directly}
 
-在Sling中，無法直接呼叫指令碼，因為這會破壞REST伺服器的嚴格概念；您可以混合資源和表示法。
+在Sling中，無法直接呼叫指令碼，因為它會破壞REST伺服器的嚴格概念；您可以混合資源和表示法。
 
 如果您直接呼叫表示法（指令碼），會在指令碼內隱藏資源，讓框架(Sling)不知道該資源。 因此，您會遺失某些功能：
 
@@ -241,19 +241,19 @@ Felix管理主控台會列出指定AEM執行個體支援的指令碼引擎清單
 
 ### Sling API {#sling-api}
 
-這會使用Sling API套件， `org.apache.sling.*`和標籤程式庫。
+使用Sling API套件， `org.apache.sling.*`和標籤程式庫。
 
 ### 使用sling：include參照現有元素 {#referencing-existing-elements-using-sling-include}
 
 最後考量是需要參考指令碼中的現有元素。
 
-更複雜的指令碼（彙總指令碼）可能需要存取多個資源（例如導覽、側欄、頁尾、清單元素），並加入 *資源*.
+更複雜的指令碼（彙總指令碼）可存取多個資源（例如導覽、側欄、頁尾、清單元素），方法是加入 *資源*.
 
-若要這麼做，您可以使用 `sling:include("/<path>/<resource>")` 命令。 這會有效地包含參考資源的定義。
+在此情況下，您可以使用 `sling:include("/<path>/<resource>")` 命令。 它有效地包含參考資源的定義。
 
 ## osgi {#osgi}
 
-OSGi (Open Services Gateway Initiative)定義了用於開發和部署模組化應用程式和程式庫（也稱為Java動態模組系統）的架構。 OSGi容器可讓您將應用程式分成個別模組（是含有其他中繼資訊的jar檔案，在OSGi術語中稱為套裝），並透過以下方式管理它們之間的交叉相依性：
+OSGi (Open Services Gateway Initiative)定義了用於開發和部署模組化應用程式和程式庫(也稱為Java™動態模組系統)的架構。 OSGi容器可讓您將應用程式分成個別模組（是含有其他中繼資訊的jar檔案，在OSGi術語中稱為套裝），並透過以下方式管理它們之間的交叉相依性：
 
 * 在容器中實作的服務
 * 容器與應用程式之間的合約
@@ -268,17 +268,17 @@ OSGi (Open Services Gateway Initiative)定義了用於開發和部署模組化�
 >
 >特別值得一提的是，他們的「基礎教育」頁面包含一系列簡報和教學課程。
 
-此架構可讓您使用應用程式特定模組來擴充Sling。 Sling和AEM使用 [Apache Felix](https://felix.apache.org/) OSGi實作。 兩者都是在OSGi架構中執行的OSGi套件組合集合。
+此架構可讓您使用應用程式特定模組來擴充Sling。 Sling和AEM使用 [Apache Felix](https://felix.apache.org/documentation/index.html) OSGi實作。 兩者都是在OSGi架構中執行的OSGi套件組合集合。
 
-這可讓您對安裝內的任何套件執行下列動作：
+此功能可讓您對安裝內的任何套件執行下列動作：
 
 * 安裝
 * 啟動
 * 停止
 * 更新
 * 解除安裝
-* 檢視目前狀態
-* 存取有關特定套裝的更詳細資訊（例如，符號名稱、版本、位置等）
+* 檢視最新狀態
+* 存取有關特定套件的詳細資訊，例如符號名稱、版本和位置
 
 另請參閱 [為AEMas a Cloud Service設定OSGi](/help/implementing/deploying/configuring-osgi.md) 以取得詳細資訊。
 
@@ -298,4 +298,4 @@ OSGi (Open Services Gateway Initiative)定義了用於開發和部署模組化�
 >
 >變更此結構或其中的檔案時，應謹慎進行。 請確定您完全瞭解所做任何變更的影響。
 >
->您不得變更 `/libs` 路徑。 針對設定和其他變更，複製專案來源 `/libs` 至 `/apps` 並在中進行任何變更 `/apps`.
+>請勿變更 `/libs` 路徑。 若要進行設定及其他變更，請從下列位置複製專案： `/libs` 至 `/apps` 並在中進行任何變更 `/apps`.
