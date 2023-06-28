@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的目前維護版本發行說明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的目前維護版本發行說明。'
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: 39696141a50bf8204d37341a85a4f4a8acae69db
+source-git-commit: fd0b8ca281f35a92876f3c31baa4e17884f23948
 workflow-type: tm+mt
-source-wordcount: '377'
-ht-degree: 32%
+source-wordcount: '297'
+ht-degree: 47%
 
 ---
 
@@ -13,44 +13,36 @@ ht-degree: 32%
 
 下節是 Experience Manager as a Cloud Service 目前維護版本的技術版本發行說明。
 
-## 12255 版 {#release-12255}
+## 12441 版 {#release-12441}
 
-以下摘要說明2023年6月13日公開發佈的維護版本資12255的持續改善。 此維護版是先前 12142 維護版的更新。
+下面是 12441 維護版本的持續改善內容，該版本於 2023 年 6 月 27 日公開發布。此維護版本是先前 12255 維護版的更新。
 
-2023.6.0 Feature Activation將提供此維護版本的完整功能集。 請參閱 [Experience Manager發行藍圖](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html) 以取得詳細資訊。
+2023.7.0 Feature Activation將提供此維護版本的完整功能集。 請參閱 [Experience Manager發行藍圖](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html) 以取得詳細資訊。
 
-### 增強功能 {#enhancements-12255}
+### 增強功能 {#enhancements-12441}
+
+- SITES-8769：改善ResponsiveGrid中的StyleImpl呼叫
+
+### 已修正的問題 {#fixed-issues-12441}
+
+- 各種與協助工具相關的更新
+- SITES-12688：頁面編輯器：邏輯運運算元或無法在資產尋找器搜尋中正常運作
+- SITES-4951：頁面編輯器：頁面編輯器中的標籤搜尋找不到子標籤
+- SITES-12465：體驗片段：體驗片段元件對話方塊中的箭頭鍵無法運作
+- SITES-12893：體驗片段：套用體驗片段的循環參考驗證
+- SITES-12715：體驗片段：套用至體驗片段資料夾的雲端服務設定未持續存在
+- SITES-13097：體驗片段：無法新增體驗片段至翻譯專案
+- SITES-13165： GraphQL：還原篩選null值的預設行為
+- SITES-12577：連結檢查器：轉換器不會間歇性地重寫連結
+- SITES-13559： MSM：轉出元件時擲回「不可修改」例外狀況
+- SITES-11757： MSM：從父項繼承轉出設定不會為子頁面回覆
+- SITES-14073：網站管理員：選取沒有要匯出的屬性時，CSV報表因500失敗
+
+### 已知問題 {#known-issues-12441}
 
 無。
 
-### 已修正的問題 {#fixed-issues-12255}
-
-- 各種協助工具相關更新
-- ASSETS-15116 — 資產搜尋檢視中提供的「前往位置」選項
-- ASSETS-17453 - (Dynamic Media)無法選取視訊的自訂縮圖
-- ASSETS-19279 — 大型檔案的資產下載封存
-- ASSETS-19544 — 使用者上次修改以更新資產
-- ASSETS-20146 - （觸控式UI）資產下載報表因驗證錯誤而失敗報表一律會顯示在報表清單頁面的頂端
-- ASSETS-21056 — 最佳化資產參考效能以將寫入作業最小化
-- ASSETS-21909 — 當vtt無法下載時無法看到智慧型裁切視訊
-- ASSETS-22261 — 連結共用下載資料夾結構與資產UI下載內容不一致
-- ASSETS-22550 — 搜尋篩選面板現在預設為開啟
-- ASSETS-22920 — 從Brand Portal取消發佈資料夾並不會將中的資產標籤為已取消發佈
-- ASSETS-22922 — 停用的檢視器預設集會顯示在Dynamic Media元件中
-- ASSETS-23461 — 從「資產」搜尋檢視快速發佈Brand Portal
-- ASSETS-23466 -InDesign Server無法存取的連結處理無法解析包含空格的AAL連結
-- ASSETS-23469 — 預設資產篩選器與自訂篩選器衝突
-- ASSETS-23981 — 標題排序功能在集合連結中無法運作
-- ASSETS-24723 — 已發佈的資產再次重新處理，使用者無需干預
-- GRANITE-45385 — 移轉樹狀結構啟動以使用Sling工作而非工作流程
-
-### 已知問題 {#known-issues-12255}
-
-- ASSETS-25729 — 檢視切換器功能表被切斷
-- ASSETS-25728 — 重新處理資產選項在搜尋檢視中無法使用
-- ASSETS-22603 — 某些下載型別的資產報表欄在UI中顯示「null」值。 可下載的CSV不受影響。
-
-### 內嵌技術 {#embedded-tech-12255}
+### 內嵌技術 {#embedded-tech-12441}
 
 | 技術 | 版本 | 連結 |
 |---|---|---|
