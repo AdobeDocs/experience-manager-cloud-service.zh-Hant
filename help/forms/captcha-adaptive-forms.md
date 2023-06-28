@@ -10,9 +10,9 @@ topic-tags: adaptive_forms, author
 discoiquuid: 4c53dfc0-25ca-419d-abfe-cf31fc6ebf61
 docset: aem65
 exl-id: 3fdbe5a3-5c3c-474d-b701-e0182da4191a
-source-git-commit: a16da1b11cfe18910b2e57c0b6b668543dba46e3
+source-git-commit: 63f6e7c6df7404062aa0d209496506bdabcf564c
 workflow-type: tm+mt
-source-wordcount: '1433'
+source-wordcount: '1436'
 ht-degree: 3%
 
 ---
@@ -106,7 +106,7 @@ CAPTCHA （完全自動化的公用圖靈測試，用於區分電腦和人類）
 
 >[!NOTE]
 >
-> 如果您選取reCAPTCHA v2設定，大小為 [!UICONTROL 隱藏] 則顯示/隱藏選項不適用。
+> 當您選取reCAPTCHA v2設定，且大小設定為 [!UICONTROL 隱藏]，顯示/隱藏選項仍維持停用狀態。
 
 ### 進行驗證碼驗證 {#validate-captcha}
 

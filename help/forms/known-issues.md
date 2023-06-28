@@ -6,10 +6,10 @@ role: User, Developer
 level: Intermediate
 topic: Administration
 exl-id: 871f294d-f251-4966-a021-39df65b613f0
-source-git-commit: 94825e3b60d970fec5bf696d932ca66bb83fd2f3
+source-git-commit: 63f6e7c6df7404062aa0d209496506bdabcf564c
 workflow-type: tm+mt
-source-wordcount: '324'
-ht-degree: 11%
+source-wordcount: '358'
+ht-degree: 10%
 
 ---
 
@@ -31,8 +31,9 @@ ht-degree: 11%
 
 * AEM Formsas a Cloud Service不會為XDP和JSON結構描述檔案產生縮圖。 此服務會顯示預設圖示來取代縮圖。
 
-   ![Forms縮圖已知問題](/help/forms/assets/forms-tumbnail-known-issue.png)
+  ![Forms縮圖已知問題](/help/forms/assets/forms-tumbnail-known-issue.png)
 
+* 使用具有可重複元素的結構描述來建立以核心元件為基礎的最適化表單時，從最適化Forms編輯器中的資料模型樹拖放可重複元素的選項無法運作。
 
 ## 限制 {#limitations}
 
