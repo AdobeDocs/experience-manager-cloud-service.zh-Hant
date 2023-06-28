@@ -4,10 +4,10 @@ description: 了解如何將內容片段和 GraphQL API 用作 Headless 內容�
 hidefromtoc: true
 index: false
 exl-id: f5e379c8-e63e-41b3-a9fe-1e89d373dc6b
-source-git-commit: a2064dcbec1c171b0a6de57b4197f4921d234428
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1114'
-ht-degree: 100%
+source-wordcount: '1116'
+ht-degree: 92%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 100%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_graphql_guide_footer"
->title="幹得好！您已經瞭解關於兩種基本類型的查詢，以及如何查詢您自己的內容。 您現在瞭解如何使用 AEM GraphQL API 建立有效率的查詢，以您應用程式預期的格式提供內容。"
+>title="幹得好！您已瞭解關於兩種基本型別的查詢以及如何查詢您自己的內容。 您現在瞭解如何使用 AEM GraphQL API 建立有效率的查詢，以您應用程式預期的格式提供內容。"
 >abstract=""
 
 ## 查詢範例內容清單 {#list-query}
@@ -70,7 +70,7 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->如果您無法從下拉式選單選取「**AEM 示範資產**」端點，請聯絡 Adobe 客戶服務或在 [AEM 試用版 Slack 管道](https://adobe-dx-support.slack.com/)尋求協助。
+>如果您無法選取 **AEM示範資產** 端點從下拉式清單，聯絡Adobe客戶服務或聯絡 [AEM試用版Slack頻道。](https://adobe-dx-support.slack.com/)
 
 ## 查詢範例內容指定片段 {#bypath-query}
 
@@ -109,7 +109,7 @@ ht-degree: 100%
 
    ![byPath 查詢結果](assets/do-not-localize/bypath-query-2-3-4.png)
 
-您剛剛驗證了 byPath 查詢，以擷取由該片段的路徑標識的特定內容片段。
+您剛剛驗證了byPath查詢，以擷取由該片段的路徑標識的特定內容片段。
 
 ## 查詢自己的內容 {#own-queries}
 
