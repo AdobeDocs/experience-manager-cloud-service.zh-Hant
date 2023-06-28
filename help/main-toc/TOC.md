@@ -8,9 +8,9 @@ user-guide-description: 了解 Experience Manager as a Cloud Service 的運作�
 breadcrumb-title: 使用手冊
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 69c6ca6104e5360e2db4c3ba9f34b3cddb2269ab
+source-git-commit: 66c7b30b8b66bc86d7b83e57e02ed61d426553a2
 workflow-type: tm+mt
-source-wordcount: '4085'
+source-wordcount: '4094'
 ht-degree: 99%
 
 ---
@@ -576,6 +576,7 @@ ht-degree: 99%
             + [將 CSS 內嵌樣式套用至個別的最適化表單元件](/help/forms/inline-style-adaptive-forms.md)
          + 在最適化表單中新增規則和使用運算式{#add-rules-and-use-expressions-in-an-adaptive-form}
             + [將規則新增至最適化表單](/help/forms/rule-editor.md)
+            + [使用規則編輯器的Invoke服務新增自訂錯誤處理常式](/help/forms/add-custom-error-handler-adaptive-forms.md)
          + 使用 [!DNL Adobe Sign] {#use-adobe-sign}
             + [使用 Adobe Sign 在最適化表單上進行電子簽名](/help/forms/working-with-adobe-sign.md)
          + 設定提交動作和中繼資料提交{#configure-submit-actions-and-metadata-submission}
