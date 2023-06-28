@@ -127,20 +127,20 @@ AEM Forms為表單提交提供現成可用的成功和錯誤處理常式。 此�
 * **`Header:`** `content-type:application/problem+json`
 * **`Response:`**
 
-      &quot;&#39;javascript
-      {
-      &quot;type&quot;： &quot;VALIDATION_ERROR&quot;，
-      &quot;validationErrors&quot;： [
-      {
-      &quot;fieldName&quot;： &quot;guide[0].guide1[0].guideRootPanel[0].textbox1686647736683[0]&quot;，
-      &quot;dataRef&quot;： &quot;&quot;，
-      &quot;details&quot;： [
-      「提供的ID無效。 提供的值不正確！」
-      ]
-      }
-      ]}
-      ```
-  
+        ```javascript
+        {
+            "type": "VALIDATION_ERROR",
+            "validationErrors": [
+            {
+            "fieldName": "guide[0].guide1[0].guideRootPanel[0].textbox1686647736683[0]",
+            "dataRef": "",
+            "details": [
+            "Invalid ID supplied. Provided value is not correct!"
+        ]
+        }
+            ]}
+        ```
+
   您可以點選任何欄位並選取「 」，以檢視最適化表單中任何欄位的SOM運算式 **[!UICONTROL 檢視SOM運算式]**.
 
   ![在自訂錯誤處理常式中顯示錯誤回應的最適化表單欄位的SOM運算式](/help/forms/assets/custom-error-handler-somexpression.png)
