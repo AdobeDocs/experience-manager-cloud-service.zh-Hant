@@ -7,9 +7,9 @@ keywords: 新增自訂錯誤處理常式、新增預設錯誤處理常式、在�
 contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms
-source-git-commit: 66c7b30b8b66bc86d7b83e57e02ed61d426553a2
+source-git-commit: 09ed1ae61e7748da2cc182b005a9dd26853cb3f7
 workflow-type: tm+mt
-source-wordcount: '1979'
+source-wordcount: '1981'
 ht-degree: 2%
 
 ---
@@ -119,28 +119,26 @@ AEM Forms為表單提交提供現成可用的成功和錯誤處理常式。 此�
 
 顯示錯誤回應的部分選項包括：
 
-+++
-
-+++  根據最適化表單fieldName
++++  根據最適化表單fieldName屬性
 
 
 * **`Header:`** `content-type:application/problem+json`
 * **`Response:`**
 
-        ```javascript
-        {
-            "type": "VALIDATION_ERROR",
-            "validationErrors": [
-            {
-            "fieldName": "guide[0].guide1[0].guideRootPanel[0].textbox1686647736683[0]",
-            "dataRef": "",
-            "details": [
-            "Invalid ID supplied. Provided value is not correct!"
-        ]
-        }
-            ]}
-        ```
-
+      &quot;&#39;javascript
+      {
+      &quot;type&quot;： &quot;VALIDATION_ERROR&quot;，
+      &quot;validationErrors&quot;： [
+      {
+      &quot;fieldName&quot;： &quot;guide[0].guide1[0].guideRootPanel[0].textbox1686647736683[0]&quot;，
+      &quot;dataRef&quot;： &quot;&quot;，
+      &quot;details&quot;： [
+      「提供的ID無效。 提供的值不正確！」
+      ]
+      }
+      ]}
+      ```
+  
   您可以點選任何欄位並選取「 」，以檢視最適化表單中任何欄位的SOM運算式 **[!UICONTROL 檢視SOM運算式]**.
 
   ![在自訂錯誤處理常式中顯示錯誤回應的最適化表單欄位的SOM運算式](/help/forms/assets/custom-error-handler-somexpression.png)
@@ -148,7 +146,7 @@ AEM Forms為表單提交提供現成可用的成功和錯誤處理常式。 此�
 +++
 
 
-+++ 根據最適化表單dataRef
++++ 根據最適化表單dataRef屬性
 
 * **`Header:`** `content-type:application/problem+json`
 * **`Response:`**
@@ -171,8 +169,8 @@ AEM Forms為表單提交提供現成可用的成功和錯誤處理常式。 此�
 
 您可以檢視dataRef的值，位於 **[!UICONTROL 屬性]** 表單元件的視窗。
 
-
 +++
+
 
 ## 使用規則編輯器新增錯誤處理常式 {#add-error-handler-using-rule-editor}
 

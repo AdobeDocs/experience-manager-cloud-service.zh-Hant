@@ -4,9 +4,9 @@ description: 瞭解如何設定的Adobe Acrobat Sign [!DNL AEM Forms] as a Cloud
 feature: Adaptive Forms
 role: User
 level: Intermediate
-source-git-commit: d9c5934c03b9c5aa91bafa09569d441fc7868937
+source-git-commit: 09ed1ae61e7748da2cc182b005a9dd26853cb3f7
 workflow-type: tm+mt
-source-wordcount: '1931'
+source-wordcount: '1918'
 ht-degree: 31%
 
 ---
@@ -110,9 +110,6 @@ ht-degree: 31%
 現在，您可以 [使用將Adobe Acrobat Sign欄位新增至最適化表單](working-with-adobe-sign.md). 請確保您將用於 Cloud Service 的設定容器新增至 [!DNL Adobe Acrobat Sign] 啟用的所有最適化表單。您可從最適化表單的屬性指定設定容器。
 
 ## 連線適用於政府的AEM Forms與Adobe Acrobat Sign Solutions {#adobe-acrobat-sign-for-government}
-
-[!BADGE 搶鮮版檔案]{type=Caution tooltip="黃色狀態"}
-<span class="preview"> 本節包含搶鮮版說明檔案，且可能隨時變動。</span>
 
 將AEM Forms與適用於政府的Adobe Acrobat Sign Solutions連線是多步驟流程。 其中涉及：
 
