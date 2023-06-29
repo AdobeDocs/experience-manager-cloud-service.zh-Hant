@@ -5,9 +5,9 @@ contentOwner: Vishabh Gupta
 feature: Brand Portal,Asset Distribution,Configuration
 role: Admin
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5096cd6141e70f40b5145389ca4db3cc65ea1e66
 workflow-type: tm+mt
-source-wordcount: '2527'
+source-wordcount: '2558'
 ht-degree: 9%
 
 ---
@@ -101,11 +101,11 @@ Cloud Manager使用者為Experience Manager Assets as a啟用Brand Portal [!DNL 
 
 1. 從 **工具** 面板，導覽至 **[!UICONTROL 部署]** > **[!UICONTROL 分佈]**.
 
-   ![](assets/test-bpconfig1.png)
+   ![使用Brand Portal設定AEM Assetsas a Cloud Service](assets/test-bpconfig1.png)
 
    Brand Portal發佈代理程式(**[!UICONTROL bpdistributionagent0]**)建立於 **[!UICONTROL 發佈至Brand Portal]**.
 
-   ![](assets/test-bpconfig2.png)
+   ![建立發佈代理程式](assets/test-bpconfig2.png)
 
 
 1. 按一下 **[!UICONTROL 發佈至Brand Portal]** 以開啟發佈代理程式。
@@ -121,11 +121,11 @@ Cloud Manager使用者為Experience Manager Assets as a啟用Brand Portal [!DNL 
    >
    >建議檢閱失敗並清除 **error-queue** 定期進行。
 
-   ![](assets/test-bpconfig3.png)
+   ![資產散佈的處理佇列](assets/test-bpconfig3.png)
 
 1. 驗證Experience Manager Assets as a之間的連線 [!DNL Cloud Service] 和Brand Portal，按一下 **[!UICONTROL 測試連線]** 圖示。
 
-   ![](assets/test-bpconfig4.png)
+   ![驗證AEM與Brand Portal之間的連線](assets/test-bpconfig4.png)
 
    系統會顯示訊息，指出 *測試封裝已成功傳遞*.
 
@@ -156,7 +156,7 @@ Cloud Manager使用者為Experience Manager Assets as a啟用Brand Portal [!DNL 
 1. 請依照下列步驟（從1到4）操作： **測試連線** 區段，並導覽至「發佈代理程式」頁面。
 1. 按一下 **[!UICONTROL 記錄檔]** 以檢視處理和錯誤記錄檔。
 
-   ![](assets/test-bpconfig5.png)
+   ![處理和錯誤記錄](assets/test-bpconfig5.png)
 
 發佈代理程式已產生下列記錄：
 
