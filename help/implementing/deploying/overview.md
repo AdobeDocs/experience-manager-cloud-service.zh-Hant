@@ -6,7 +6,7 @@ exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '3462'
-ht-degree: 44%
+ht-degree: 45%
 
 ---
 
@@ -150,7 +150,7 @@ ht-degree: 44%
 建立 `repoinit` 語句，請遵循以下步驟：
 
 1. 在專案的設定資料夾中為工廠 PID `org.apache.sling.jcr.repoinit.RepositoryInitializer` 新增 OSGi 設定。為設定使用描述性名稱，例如 **org.apache.sling.jcr.repoinit.RepositoryInitializer~initstructure**。
-1. 新增 `repoinit` 陳述式至config的script屬性。 [Sling 文件](https://sling.apache.org/documentation/bundles/repository-initialization.html) 中記錄了語法和選項。在子資料夾之前，應該先明確建立父資料夾。 例如，在 `/content/myfolder` 之前明確建立 `/content`，再建立 `/content/myfolder/mysubfolder`。若是在低階結構上設定的ACL，建議將其設定在較高階層，並搭配使用 `rep:glob` 限制。 例如， `(allow jcr:read on /apps restriction(rep:glob,/msm/wcm/rolloutconfigs))`.
+1. 新增 `repoinit` 陳述式至config的script屬性。 [Sling 文件](https://sling.apache.org/documentation/bundles/repository-initialization.html) 中記錄了語法和選項。在子資料夾之前，應該明確建立父資料夾。 例如，在 `/content/myfolder` 之前明確建立 `/content`，再建立 `/content/myfolder/mysubfolder`。若是在低階結構上設定的ACL，建議將其設定在較高階層，並搭配使用 `rep:glob` 限制。 例如， `(allow jcr:read on /apps restriction(rep:glob,/msm/wcm/rolloutconfigs))`.
 1. 在執行階段時於本機開發環境上進行驗證。
 
 <!-- last statement in step 2 to be clarified with Brian -->
@@ -174,7 +174,7 @@ above appears to be internal, to confirm with Brian -->
 >[!CONTEXTUALHELP]
 >id="aemcloud_packagemanager"
 >title="套件管理員 - 移轉可變內容套件"
->abstract="探索套件管理程式的使用情形，瞭解內容套件應安裝為「一次性」的使用案例。 安裝包括將特定內容從生產環境匯入到中繼環境，以偵錯生產問題、將小型內容套件從內部部署環境傳輸到AEM雲端環境等。"
+>abstract="探索封裝管理員在使用案例中的使用情況，在這些案例中，內容套件的安裝應為「一次性」。此安裝包括將特定內容從生產環境匯入至預備環境以偵錯生產問題，將小型內容套件從內部部署環境轉移至 AEM 雲端環境等。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=en" text="內容轉移工具"
 
 在某些使用案例中，內容套件應做為「一次性」安裝。例如，將特定內容從生產環境匯入到中繼環境，以偵錯生產問題。 對於這些情況， [封裝管理員](/help/implementing/developing/tools/package-manager.md) 可用於AEMas a Cloud Service上的環境。

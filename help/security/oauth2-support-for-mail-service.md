@@ -4,8 +4,8 @@ description: Adobe Experience Manager as a Cloud Service 對郵件服務的 Oaut
 exl-id: 93e7db8b-a8bf-4cc7-b7f0-cda481916ae9
 source-git-commit: 92c123817a654d0103d0f7b8e457489d9e82c2ce
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '680'
+ht-degree: 41%
 
 ---
 
@@ -100,7 +100,7 @@ AEMas a Cloud Service為其整合的郵件服務提供OAuth2支援，以允許�
 >
 > 您可以從[此位置](https://learn.microsoft.com/en-us/azure/active-directory/develop/v2-oauth2-auth-code-flow)取得 Postman API 集合。
 >
-> 請參閱MSFT OAuth檔案 [此處](https://learn.microsoft.com/en-us/exchange/client-developer/legacy-protocols/how-to-authenticate-an-imap-pop-smtp-application-by-using-oauth) 以取得更多詳細資料。
+> 請參閱MSFT OAuth檔案 [此處](https://learn.microsoft.com/zh-tw/exchange/client-developer/legacy-protocols/how-to-authenticate-an-imap-pop-smtp-application-by-using-oauth) 以取得更多詳細資料。
 
 ### 與 AEM as a Cloud Service 整合 {#integration-with-aem-as-a-cloud-service}
 
@@ -133,7 +133,7 @@ AEMas a Cloud Service為其整合的郵件服務提供OAuth2支援，以允許�
    * `email`
    * `profile`
 1. 建立 OSGI 屬性檔案 `called com.day.cq.mailer.DefaultMailService.cfg.json`
-(在 `/apps/<my-project>/osgiconfig/config` 下方)，並使用以下語法：此 `smtp.host` 和 `smtp.port` 值會反映進階網路設定，如 [電子郵件服務教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/email-service.html?lang=en).
+(在 `/apps/<my-project>/osgiconfig/config` 下方)，並使用以下語法：此 `smtp.host` 和 `smtp.port` 值會反映進階網路設定，如 [電子郵件服務教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/email-service.html?lang=zh-Hant).
 
    ```
    {

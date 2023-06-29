@@ -4,10 +4,10 @@ description: 設定雲端資源後，您需要使用 AEM 產品設定檔授與�
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: c00f5d28-85af-4bd3-a50c-913d1342241c
-source-git-commit: e5142052423abee7a2e2ed64affb2b04a93bf0d1
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '899'
-ht-degree: 94%
+source-wordcount: '898'
+ht-degree: 99%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 94%
 >[!CONTEXTUALHELP]
 >id="assets_user_entitlements"
 >title="指派 AEM 產品設定檔"
->abstract="您無權使用 Experience Manager Assets。 請連絡您的管理員。"
+>abstract="您無權使用 Experience Manager Assets。 請聯絡您的管理員。"
 
 在[上線歷程](overview.md)的這一部分，您將了解如何使用 AEM 產品設定檔向您的團隊授與對 AEM 的存取權。
 
@@ -39,10 +39,10 @@ ht-degree: 94%
 
 >[!NOTE]
 >
->指派給 AEM as a Cloud Service 產品設定檔的每個使用者透過&#x200B;**雲端管理員使用者**&#x200B;角色具有對 Cloud Manager 的唯讀存取權。
+>指派給 AEM as a Cloud Service 產品設定檔的每個使用者，透過 **Cloud Manager 使用者**&#x200B;角色，對 Cloud Manager 擁有唯讀存取權。
 >
->使用者具有 **Cloud Manager** 使用者角色只能使用「程式」選單選項登入Cloud Manager並瀏覽至AEM作者環境（如果存在）。 **雲端管理員使用者**角色不足以存取程序詳細資料。 如果需要此類存取權，系統管理員必須授予使用者其他角色。
->請參閱 [下方的「其他資源」區段](#additional-resources) 以取得Cloud Manager使用者角色的詳細資訊。
+>只有擁有 **Cloud Manager** 使用者角色的使用者，才可以使用「程序」選單選項登入 Cloud Manager，並導覽至 AEM 作者環境 (如果存在)。**雲端管理員使用者**角色不足以存取程序詳細資料。 如果需要此類存取權，系統管理員必須授予使用者其他角色。
+>如需更多有關 Cloud Manager 使用者角色的資訊，請參閱[下方的「其他資源」一節](#additional-resources)。
 
 >[!CAUTION]
 >
@@ -113,7 +113,7 @@ ht-degree: 94%
 
 如果您想要此上線歷程以外的內容，以下是您可選擇的其他資源。
 
-* [AEM as a Cloud Service 團隊和產品設定檔](/help/onboarding/aem-cs-team-product-profiles.md) - 了解 AEM as a Cloud Service 團隊和產品設定檔如何能夠授與和限制您的授權 Adobe 解決方案的存取權。
+* [AEM as a Cloud Service 團隊和產品設定檔](/help/onboarding/aem-cs-team-product-profiles.md) - 了解 AEM as a Cloud Service 團隊和產品設定檔如何授予和限制已授權 Adobe 解決方案的存取權。
 * [在 Admin Console 中管理產品和使用者存取權](/help/security/ims-support.md#managing-products-and-user-access-in-admin-console) - 了解如何使用 Admin Console 來管理使用存取權。
 * [設定 AEM 存取權逐步說明](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/walk-through.html) - 查看這個簡短的逐步說明，了解如何在 Admin Console 中設定 Adobe IMS 使用者、使用者群組和產品設定檔。
 

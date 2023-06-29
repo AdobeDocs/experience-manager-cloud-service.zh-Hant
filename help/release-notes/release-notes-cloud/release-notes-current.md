@@ -72,7 +72,7 @@ ht-degree: 87%
 
 ### [!DNL Assets] 發行前版本的功能 {#prerelease-feature-assets}
 
-* Dynamic Media - 影像設定檔中一些與智慧型裁切相關之欄位的使用者介面現已更新，以反映定義智慧型裁切的最新指引。請參閱[裁切選項](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles.html?lang=en#crop-options)。
+* Dynamic Media - 影像設定檔中一些與智慧型裁切相關之欄位的使用者介面現已更新，以反映定義智慧型裁切的最新指引。請參閱[裁切選項](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles.html?lang=zh-Hant#crop-options)。
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -86,7 +86,7 @@ ht-degree: 87%
 
    * 將表單元件拖放到 AEM Sites 編輯器或體驗片段中的最適化表單容器元件，即可建立最適化表單。
    * 使用 AEM Sites 編輯器中的最適化表單精靈，以便建立不屬於任何 Sites 頁面的表單，讓您能夠在多個頁面之間自由地重複使用這些表單。
-   * 將多個表單新增到 Sites 頁面，簡化用戶體驗並提供更大的彈性。
+   * 將多個表單新增到 Sites 頁面，簡化使用者體驗並提供更大的彈性。
 
      >[!VIDEO](https://video.tv.adobe.com/v/3419284?quality=12&learn=on)
 
