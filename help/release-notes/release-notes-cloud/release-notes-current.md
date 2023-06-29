@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 目前發行說明�
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 目前發行說明。'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 32fb0942b8007aeee8afa6378a9293eecd7d7700
+source-git-commit: 25689621ab24b6e14e7e865451ae53947a67d8d1
 workflow-type: tm+mt
-source-wordcount: '1385'
-ht-degree: 40%
+source-wordcount: '1427'
+ht-degree: 42%
 
 ---
 
@@ -131,11 +131,13 @@ Assets檢視現在會產生常見3D檔案格式的縮圖預覽，包括gLB、USD
 
 * [表單資料模型的增強驗證方法](/help/forms/configure-data-sources.md)：透過引入使用者端憑證式驗證來連線AEM Forms與相容的資料來源，體驗增強的安全性。 此增強功能免除模擬或使用者登入的需要，進而加強資料的保護。
 
-* 使最適化Forms區段可重複：您現在可以將 [收合式選單](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html)， [精靈](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html)， [面板](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html)、和 [水準標籤](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html) 可重複的最適化表單元件。
+* [具有可重複區段的最適化Forms](/help/forms/create-forms-repeatable-sections.md)：您現在可以製作 [收合式選單](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html)， [精靈](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html)， [面板](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html)、和 [水準標籤](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html) 元件在核心元件型最適化表單中建立可重複區段。
 
   >[!VIDEO](https://video.tv.adobe.com/v/3421052/adaptive-forms-repeatable-sections-repeat-sections/?quality=12&learn=on)
 
   這些可重複區段可讓您提供不限數量的專案，而不含固定欄位計數。 當所需的資料例項事先未知時，這個變數很有用。 Forms使用者可輕鬆新增或移除區段，讓表單能適應不同的資料輸入情境，並簡化相同資料多次出現次數的收集工作。
+
+* **[將最適化表單提交至 Microsoft® SharePoint 和 Microsoft® OneDrive](/help/forms/configuring-submit-actions.md)**：改善商業用戶的敏捷性，以便快速啟動新表單並將提交的資料儲存在日常使用的工具中，例如 Microsoft® SharePoint 網站或 OneDrive 資料夾。
 
 ### Headless 最適化表單早期採用者計劃 {#forms-early-adopter}
 
