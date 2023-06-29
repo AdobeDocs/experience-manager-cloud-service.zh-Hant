@@ -4,7 +4,7 @@ description: 整合 Adobe Target
 feature: Administering
 role: Admin
 exl-id: cf243fb6-5563-427f-a715-8b14fa0b0fc2
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
 workflow-type: tm+mt
 source-wordcount: '1018'
 ht-degree: 1%
@@ -50,7 +50,7 @@ ht-degree: 1%
 在這兩種情況下：
 
 * 依預設，使用者端代碼（如果先新增）也會自動複製到「租使用者ID」欄位中。
-* 您可以選擇變更預設租使用者ID集。
+* 如有需要，您可以變更預設的租使用者ID集。
 * 對Target的後端呼叫是根據租使用者ID，而對Target的使用者端呼叫是根據使用者端代碼。
 
 如前所述，第一種情況最常用於AEMas a Cloud Service。 無論是哪一種方式，請確定 **兩者** 欄位包含正確的資訊，具體取決於您的需求。
@@ -156,4 +156,4 @@ AEM提供與Experience Platform Launch的現成整合。 將Adobe Target擴充�
 
 >[!NOTE]
 >
->現有客戶仍支援舊版設定（無法編輯或建立這些設定）。 舊版設定是客戶使用VSTS上傳的內容套件的一部分。
+>現有客戶仍支援舊版設定（沒有編輯或建立的選項）。 舊版設定是客戶使用VSTS上傳的內容套件的一部分。

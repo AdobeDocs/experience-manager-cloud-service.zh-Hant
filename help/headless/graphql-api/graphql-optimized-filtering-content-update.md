@@ -2,9 +2,9 @@
 title: 更新您的內容片段，以達到最佳化 GraphQL 篩選
 description: 了解如何更新您的內容片段，以便在 Adobe Experience Manager as a Cloud Service 中達到最佳化 GraphQL 篩選，並實現無周邊內容傳遞。
 exl-id: 211f079e-d129-4905-a56a-4fddc11551cc
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
 workflow-type: tm+mt
-source-wordcount: '908'
+source-wordcount: '909'
 ht-degree: 91%
 
 ---
@@ -99,7 +99,7 @@ ht-degree: 91%
       <td>全部 </td>
       <td> </td>
       <td>變數 </td>
-      <td>處理剩餘內容片段直到下一個限制的間隔（秒）<br>此間隔也視為啟動作業前的等待時間，以及處理每個後續CF_MIGRATION_LIMIT數目CF之間的延遲。<br>(*)</td>
+      <td>處理剩餘內容片段直到下一個限制的間隔（秒）<br>此間隔也會被視為啟動作業前的等待時間，以及處理每個後續CF_MIGRATION_LIMIT數目CF之間的延遲。<br>(*)</td>
      </tr>
     </tbody>
    </table>

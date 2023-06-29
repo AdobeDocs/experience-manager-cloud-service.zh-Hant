@@ -2,9 +2,9 @@
 title: 了解編寫基本知識
 description: 了解使用內容片段為 Headless CMS 編寫內容的概念和機制。
 exl-id: 3eca973f-b210-41bb-98da-ecbd2bae9803
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
 workflow-type: tm+mt
-source-wordcount: '1712'
+source-wordcount: '1715'
 ht-degree: 89%
 
 ---
@@ -213,7 +213,7 @@ Confirm with **Create** and you can then **Open** your fragment in the editor.
 
 例如：
 
-* 只需要多個資訊的片段，其中一些具有特定類型。針對Headless內容，參考是關鍵，您稍後會在歷程中瞭解這些內容。
+* 只需要多個資訊的片段，其中一些具有特定類型。對於Headless內容，參考是關鍵（您稍後將在歷程中瞭解這些內容）。
 
   ![內容片段編輯器 - 我的片段](/help/journey-headless/author/assets/headless-journey-author-content-fragment-04.png)
 
@@ -235,7 +235,7 @@ Confirm with **Create** and you can then **Open** your fragment in the editor.
 
 #### 您（可能）不需要擔心的事 {#what-you-probably-do-not-need-to-worry-about}
 
-好，這可能看起來有點奇怪，但在您開啟內容片段編輯器並開始探索後，您可以看到各種選項（可能）不適用於您作為內容作者的Headless歷程。 所以這只是在快速提示無周邊情境中你可忽略的東西：
+好，這可能看起來有點奇怪，但當您開啟內容片段編輯器並開始探索時，您就可以看到各種選項（可能）不會套用於作為內容作者的Headless歷程。 所以這只是在快速提示無周邊情境中你可忽略的東西：
 
 * **內容片段模型**
 

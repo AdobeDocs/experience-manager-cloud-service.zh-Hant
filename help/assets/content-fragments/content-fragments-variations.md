@@ -2,9 +2,9 @@
 title: 變化 — 編寫片段內容（資產 — 內容片段）
 description: 瞭解變數如何讓您為片段撰寫內容，然後根據用途建立該內容的變數，從而使您在AEM中的Headless內容更加靈活。
 exl-id: af05aae6-d535-4007-ba81-7f41213ff152
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
 workflow-type: tm+mt
-source-wordcount: '2440'
+source-wordcount: '2438'
 ht-degree: 11%
 
 ---
@@ -195,8 +195,12 @@ RTF編輯可讓您設定格式：
 1. 指定屬性；例如 **標題**.
 1. 選取 **建立**.
 1. 最後：
-   1. **完成** 會傳回（至原始片段）並參考新片段。
-   1. **開啟** 會參照新片段，並在新的瀏覽器索引標籤中開啟新片段進行編輯。
+   1. **完成**:
+      * 傳回（至原始片段）
+      * 參考新片段
+   1. **開啟**:
+      * 參考新片段
+      * 開啟新片段以在新的瀏覽器標籤中編輯
 
 ### 檢視關鍵統計資料 {#viewing-key-statistics}
 

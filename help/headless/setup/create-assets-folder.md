@@ -2,9 +2,9 @@
 title: 建立資產資料夾 - Headless 設定
 description: 使用 AEM 內容片段模型定義內容片段的結構，這是無周邊內容的基礎。
 exl-id: 9a156a17-8403-40fc-9bd0-dd82fb7b2235
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
 workflow-type: tm+mt
-source-wordcount: '381'
+source-wordcount: '383'
 ht-degree: 86%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 86%
 
 但是，您首先需要建立可以儲存片段的資產資料夾。
 
-資產資料夾用於 [組織傳統內容資產](/help/assets/manage-digital-assets.md) 影像、影片和內容片段等。
+資產資料夾用於 [組織傳統內容資產](/help/assets/manage-digital-assets.md) 例如影像和影片，以及內容片段。
 
 ## 如何建立資產資料夾 {#how-to-create-an-assets-folder}
 

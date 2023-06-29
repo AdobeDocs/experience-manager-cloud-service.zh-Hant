@@ -3,7 +3,7 @@ title: 與內容片段搭配使用的 AEM GraphQL API
 description: 了解如何將 Adobe Experience Manager (AEM) as a Cloud Service 中的內容片段與 AEM GraphQL API 搭配使用，以實現無周邊內容傳遞。
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
 workflow-type: tm+mt
 source-wordcount: '4918'
 ht-degree: 93%
@@ -407,7 +407,7 @@ query($variation: String!) {
 
 此查詢將傳回完整的作者清單。沒有 `another` 變化的作者將回復到原始資料 (在此情況下，`_variation` 將回報 `master`)。
 
-如果您想要將清單限製為提供指定變數的作者（並略過會回覆至原始資料的作者），請套用 [篩選](#filtering)：
+套用 [篩選](#filtering)，如果您想要將清單限製為提供指定變數的作者（並略過會回覆為原始資料的作者）：
 
 ```graphql
 query($variation: String!) {

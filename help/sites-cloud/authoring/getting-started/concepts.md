@@ -2,9 +2,9 @@
 title: 編寫概念
 description: AEM中的製作概念
 exl-id: ee9e4952-e075-4398-b31f-d7886153efff
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
 workflow-type: tm+mt
-source-wordcount: '386'
+source-wordcount: '385'
 ht-degree: 4%
 
 ---
@@ -20,7 +20,7 @@ AEM 安裝通常至少包含兩個環境：
 
 作者環境提供機制，可在實際發佈此內容之前建立、更新和檢閱此內容：
 
-* 作者建立和檢閱內容。 內容可以是許多不同型別，例如頁面、資產和出版物。
+* 作者建立和檢閱內容。 內容可以是許多不同型別，包括頁面、資產和出版物。
 * 此內容會在某個時間點發佈至您的網站。
 
 ![作者、發佈者和Dispatcher圖表](/help/sites-cloud/authoring/assets/author-publish.png)
