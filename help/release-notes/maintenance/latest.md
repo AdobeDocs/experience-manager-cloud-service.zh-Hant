@@ -2,9 +2,9 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的目前維護版本發行說明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的目前維護版本發行說明。'
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: f0dc0e0ccd196ab748e2bfcdb4ce404c1c91c213
+source-git-commit: e8ea040ba3f8c73d7ed64c9669ac1d0a22d3a3c8
 workflow-type: tm+mt
-source-wordcount: '604'
+source-wordcount: '600'
 ht-degree: 23%
 
 ---
@@ -38,8 +38,8 @@ ht-degree: 23%
 - SITES-13559： MSM：轉出元件時擲回「不可修改」例外狀況
 - SITES-11757： MSM：從父項繼承轉出設定不會為子頁面回覆
 - SITES-14073：網站管理員：選取沒有要匯出的屬性時，CSV報表因500失敗
-- Forms-7648：數值方塊元件的「位數上限」欄位驗證無法運作。
-- Forms-8177：當Forms服務作用中時，發生「com.adobe.aem.formsndocuments.publish.AssetReferenceProvider無法擷取資產相依性」錯誤。
+- Forms-7648：無法驗證數值方塊元件中的最大位數。 驗證指令碼無法運作。
+- Forms-8177： Forms服務作用中時， `com.adobe.aem.formsndocuments.publish.AssetReferenceProvider Failed to retrieve asset dependencies` 發生錯誤。
 - Forms-8300：當使用者嘗試在開啟任務後委派任務時，委派回應會重新載入任務，而不是開啟使用者的AEM收件匣UI。
 - Forms-8500：在啟用IE模式選項的Microsoft® Edge瀏覽器上，HTML5 Forms無法開啟。
 - Forms-8541：轉譯最適化Forms時，會發生Null指標例外狀況。
@@ -52,7 +52,6 @@ ht-degree: 23%
 - Forms-8846： Bind參考屬性不適用於最適化Forms附件元件。
 - Forms-9072：當您在建立表單片段時搜尋配置時，搜尋結果不會傳回任何供選取的結構描述。
 - Forms：修正多項與協助工具相關的錯誤，以改善AEM Forms功能的協助工具。
-
 
 ### 已知問題 {#known-issues-12441}
 
