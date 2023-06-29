@@ -2,10 +2,10 @@
 title: 內容轉移工具疑難排解
 description: 內容轉移工具疑難排解
 exl-id: 01bc9be7-a576-45eb-90a0-386ea951040d
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '180'
-ht-degree: 100%
+source-wordcount: '179'
+ht-degree: 96%
 
 ---
 
@@ -35,7 +35,7 @@ java -jar oak-run.jar datastorecheck --consistency --store [<SEGMENT_STORE_PATH>
 java -jar oak-run.jar datastore --check-consistency [<SEGMENT_STORE_PATH>|<MONGO_URI>] --[s3ds|fds|azureds] <DATASTORE_CFG> --out-dir <OUT_DIR> --work-dir <TEMP_DIR> --verbose
 ```
 
-如需詳細資訊，請參考 [Oak Runnable Jar](https://github.com/apache/jackrabbit-oak/tree/trunk/oak-run)。
+另請參閱 [Oak Runnable Jar](https://github.com/apache/jackrabbit-oak/tree/trunk/oak-run) 以取得更多詳細資料。
 
 接著，即可針對上述在 *OUT_DIR* 中建立、有一致性問題的檔案，檢查是否有路徑遺失二進位檔案，以及是否有採取適當操作如透過備份還原、刪除路徑、重新索引等等。
 

@@ -3,7 +3,7 @@ title: 使用 Dispatcher 工具進行驗證和偵錯
 description: 使用 Dispatcher 工具進行驗證和偵錯
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '2847'
 ht-degree: 2%
@@ -15,7 +15,7 @@ ht-degree: 2%
 ## 簡介 {#apache-and-dispatcher-configuration-and-testing}
 
 >[!NOTE]
->如需雲端中的Dispatcher以及如何下載Dispatcher工具的詳細資訊，請參閱 [雲端中的Dispatcher](/help/implementing/dispatcher/disp-overview.md) 頁面。 如果您的Dispatcher設定處於舊版模式，請參閱 [舊版模式檔案](/help/implementing/dispatcher/validation-debug-legacy.md).
+>如需雲端中的Dispatcher以及如何下載Dispatcher工具的詳細資訊，請參閱 [雲端中的Dispatcher](/help/implementing/dispatcher/disp-overview.md) 頁面。 如果您的Dispatcher設定是舊版模式，請參閱 [舊版模式檔案](/help/implementing/dispatcher/validation-debug-legacy.md).
 
 以下各節將說明彈性模式的檔案結構、本機驗證、偵錯以及從舊版模式移轉至彈性模式。
 

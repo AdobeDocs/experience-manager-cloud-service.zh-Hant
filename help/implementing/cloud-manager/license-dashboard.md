@@ -2,10 +2,10 @@
 title: 授權儀表板
 description: Cloud Manager 提供了一個儀表板，用於輕鬆查看您的組織或租使用者可用的 AEMaaCS 產品權利。
 exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '875'
-ht-degree: 97%
+source-wordcount: '873'
+ht-degree: 92%
 
 ---
 
@@ -49,7 +49,7 @@ Cloud Manager 授權儀表板提供對以下資訊的輕鬆存取：
 
 >[!TIP]
 >
->參考[Admin Console 總覽](https://helpx.adobe.com/tw/enterprise/using/admin-console.html)了解如何透過 Admin Console 在整個組織中管理您的 Adobe 權利。
+>另請參閱 [Admin Console概觀](https://helpx.adobe.com/tw/enterprise/using/admin-console.html) 以瞭解如何透過Admin Console管理整個組織的Adobe權益。
 
 ## 常見問答 {#faq}
 
@@ -85,7 +85,7 @@ AEM 還制定了排除知名機器人的規則，包括定期存取該網站以�
 
 ### 如果我想了解更多有關我的內容請求量的資訊呢? {#current-request-volumes}
 
-如果您想進一步了解授權儀表板中顯示的內容請求量，您的 Adobe 團隊可以提供一份報告，顯示內容請求的主要數量驅動因素。請聯繫您的 Adobe 團隊或 Adobe 客戶服務，申請最高使用率報告。
+如果您想進一步了解授權儀表板中顯示的內容請求量，您的 Adobe 團隊可以提供一份報告，顯示內容請求的主要數量驅動因素。請聯絡您的Adobe團隊或Adobe客戶服務，以請求最高使用率報告。
 
 ### 如果我使用自己的 CDN 怎麼辦？ {#using-own-cdn}
 

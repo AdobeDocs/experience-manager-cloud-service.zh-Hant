@@ -3,10 +3,10 @@ title: 與內容片段搭配使用的 AEM GraphQL API
 description: 了解如何將 Adobe Experience Manager (AEM) as a Cloud Service 中的內容片段與 AEM GraphQL API 搭配使用，以實現無周邊內容傳遞。
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '4924'
-ht-degree: 95%
+source-wordcount: '4918'
+ht-degree: 93%
 
 ---
 
@@ -50,7 +50,7 @@ GraphQL 是：
 "*Explore GraphQL is maintained by the Apollo team. Our goal is to give developers and technical leaders around the world all of the tools they need to understand and adopt GraphQL.*". 
 -->
 
-有關 GraphQL API 的更多資訊，請參閱以下章節 (以及許多其他資源)：
+如需GraphQL API的相關資訊，請參閱下列章節（以及許多其他資源）：
 
 * 位於 [graphql.org](https://graphql.org)：
 
@@ -377,7 +377,7 @@ GraphQL for AEM 支援類型清單。表示所有支援的內容片段模型資�
 
 ## GraphQL 變數 {#graphql-variables}
 
-GraphQL 允許在查詢中放置變數。有關詳細資訊，您可以參閱[用於變數的 GraphQL 文件](https://graphql.org/learn/queries/#variables)。
+GraphQL 允許在查詢中放置變數。如需詳細資訊，請參閱 [變數的GraphQL檔案](https://graphql.org/learn/queries/#variables).
 
 例如，若要取得特定變化 (若有) 中類型為 `Author` 的所有內容片段，您可以在 GraphiQL 中指定引數 `variation`。
 
@@ -407,7 +407,7 @@ query($variation: String!) {
 
 此查詢將傳回完整的作者清單。沒有 `another` 變化的作者將回復到原始資料 (在此情況下，`_variation` 將回報 `master`)。
 
-如果您想將清單限制為提供特定變化的作者 (並略過會回復到原始資料的作者)，您需要套用[篩選器](#filtering)：
+如果您想要將清單限製為提供指定變數的作者（並略過會回覆至原始資料的作者），請套用 [篩選](#filtering)：
 
 ```graphql
 query($variation: String!) {
@@ -431,7 +431,7 @@ query($variation: String!) {
 
 在 GraphQL 中，可以根據變數變更查詢，稱為 GraphQL 指示詞。
 
-例如，您可以根據變數 `includePrice`，在對所有 `AdventureModels` 的查詢中加入 `adventurePrice` 欄位。
+例如，您可以在此處包含 `adventurePrice` 查詢中的欄位 `AdventureModels`，根據變數 `includePrice`.
 
 ![GraphQL 指示詞](assets/cfm-graphqlapi-04.png "GraphQL 指示詞")
 
@@ -570,7 +570,7 @@ query GetAdventureByType($includePrice: Boolean!) {
 
 * 以逗號分隔的值清單，這些值代表欄位路徑
    * 清單中的第一個欄位將定義主要排序順序，如果主要排序標準的兩個值相等，則使用第二個欄位，如果前兩個標準相等，則使用第三個欄位，以此類推。
-   * 點符號，即 field1.subfield.subfield 等...
+   * 點狀記號，即field1.subfield.subfield等……
 * 具有順序方向 (選擇性)
    * ASC (遞增) 或 DESC (遞減)；預設是套用 ASC
    * 可以為每個欄位指定方向，這表示您可以對一個欄位遞增排序，對另一個欄位遞減排序 (姓名，名字 DESC)

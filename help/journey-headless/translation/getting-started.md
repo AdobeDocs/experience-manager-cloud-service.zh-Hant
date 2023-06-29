@@ -2,10 +2,10 @@
 title: AEM Headless 翻譯快速入門
 description: 了解如何組織無周邊內容以及 AEM 翻譯工具的運作原理。
 exl-id: 04ae2cd6-aba3-4785-9099-2f6ef24e1daf
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '1407'
-ht-degree: 95%
+ht-degree: 94%
 
 ---
 
@@ -44,7 +44,7 @@ ht-degree: 95%
 
 >[!TIP]
 >
->如果您不熟悉使用 AEM 等大型 CMS，請考慮查閱[基本處理](/help/sites-cloud/authoring/getting-started/basic-handling.md)文件再繼續進行。「基本處理」文件不是歷程的一部分，因此請在完成後返回此頁面。
+>如果您不熟悉使用 AEM 等大型 CMS，請考慮查閱[基本處理](/help/sites-cloud/authoring/getting-started/basic-handling.md)文件再繼續進行。基本處理檔案不是歷程的一部分。 因此，完成後請返回此頁面。
 
 ### 工具 {#tools}
 

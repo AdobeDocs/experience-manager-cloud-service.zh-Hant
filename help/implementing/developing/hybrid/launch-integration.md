@@ -2,9 +2,9 @@
 title: SPA與Adobe Experience Platform Launch整合
 description: Adobe Experience Platform Launch是在SPA中實作Analytics、Target和Audience Manager的建議方式。
 exl-id: 95008563-c1e5-4685-9c6d-5226d4a66c53
-source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '166'
+source-wordcount: '167'
 ht-degree: 0%
 
 ---

@@ -2,10 +2,10 @@
 title: 計畫和計畫類型
 description: 了解 Cloud Manager 的階層以及不同類型的計畫如何適應其結構以及它們之間的差異。
 exl-id: 507df619-a5b5-419a-9e38-db77541425a2
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '531'
-ht-degree: 100%
+source-wordcount: '521'
+ht-degree: 90%
 
 ---
 
@@ -35,7 +35,7 @@ Cloud Manager 計畫將自動佈建自己的 Git 存放庫。
 
 要存取 Cloud Manager Git 存放庫，使用者需要使用具有命令行工具的 Git 用戶端、獨立的是絕畫 Git 用戶端或使用者選擇的 IDE，例如 Eclipse、IntelliJ 或 NetBeans。
 
-設定 Git 用戶端後，您可以從 Cloud Manager UI 管理您的 Git 存放庫。若要了解如何使用 Cloud Manager UI 管理 Git，請參閱文件：[存取 Git。](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
+設定Git使用者端後，您可以從Cloud Manager使用者介面管理您的Git存放庫。 若要瞭解如何使用Cloud Manager使用者介面管理Git，請參閱 [存取Git](/help/implementing/cloud-manager/managing-code/accessing-repos.md).
 
 要開始開發 AEM Cloud 應用計劃，必須從Cloud Manager存放庫簽出應用計劃計劃碼的本機副本，並存放至本機電腦上的某個位置。
 
@@ -56,8 +56,8 @@ $ git clone {URL}
 使用者可以建立&#x200B;**生產**&#x200B;計畫或&#x200B;**沙箱**&#x200B;計畫。
 
 * **生產計畫**&#x200B;是為啟用網站的即時流量而建立的。
-   * 如需了解詳細資訊，請參閱文件：[生產計畫簡介](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md)。
+   * 另請參閱 [生產計畫簡介](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md) 以取得更多詳細資料。
 * **沙箱計畫**&#x200B;通常建立的目的是提供培訓、執行示範、培訓、POC 或文件。
    * 沙箱環境並不代表能承載即時流量，並且會有生產計畫沒有的限制。
    * 其中包含 Sites 和 Assets，且會透過 Git 分支自動填入，分支中包含範例計劃碼、開發環境及非生產管道。
-   * 如需了解詳細資訊，請參閱文件：[沙箱計畫簡介](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)。
+   * 另請參閱 [沙箱計畫簡介](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md) 以取得更多詳細資料。

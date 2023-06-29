@@ -2,9 +2,9 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2021.4.0 版發行說明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2021.4.0 版發行說明。'
 exl-id: 775332b5-24ce-430e-97a2-6eeb80877c64
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1533'
+source-wordcount: '1532'
 ht-degree: 40%
 
 ---
@@ -128,7 +128,7 @@ ht-degree: 40%
 
 ### 新增功能 {#what-is-new-commerce}
 
-* 類別UID的支援 — 針對使用字串作為類別ID的系統，這可解除鎖定第三方商業整合
+* 類別UID的支援 — 針對使用字串作為類別ID的系統，此功能可解鎖第三方商業整合
 
 * PWA Studio的AEM擴充功能，包括 整合範例
 

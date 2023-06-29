@@ -5,10 +5,10 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: 081167dd-da4c-48d2-a6d3-f95e873be3e9
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1361'
-ht-degree: 84%
+source-wordcount: '1358'
+ht-degree: 82%
 
 ---
 
@@ -83,7 +83,7 @@ ht-degree: 84%
 >
 >在發佈以一次發佈多個翻譯時，您可以選取多個專案（即多個語言資料夾）。
 
-發佈內容時還有其他選項可用，例如排程發佈時間，這不在本歷程的討論範圍內。如需更多資訊息，請參閱文件結尾處的[其他資源](#additional-resources)章節。
+發佈內容時還有其他選項可用，例如排程發佈時間，這不在本歷程的討論範圍內。請參閱 [其他資源](#additional-resources) 區段以取得詳細資訊。
 
 ## 更新您的翻譯內容 {#updating-translations}
 
@@ -117,7 +117,7 @@ ht-degree: 84%
 
 ![新增其他翻譯工作](assets/additional-translation-job.png)
 
-您可能會注意到新卡片上列出的統計資料不同。 這是因為 AEM 會識別自上次翻譯以來發生的變更，並且僅包括需要翻譯的內容。這包括更新內容的重新翻譯以及新內容的首次翻譯。
+您可能會注意到新卡片上列出的統計資料不同。 這是因為 AEM 會識別自上次翻譯以來發生的變更，並且僅包括需要翻譯的內容。這包括更新內容的重新翻譯和新內容的首次翻譯。
 
 從這時開始，您[開始和管理您的翻譯工作，就像您最初的做法一樣。](translate-content.md#using-translation-project)
 

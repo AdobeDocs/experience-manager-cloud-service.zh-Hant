@@ -3,9 +3,9 @@ title: 如何將最適化表單新增至AEM Sites頁面？
 description: 瞭解如何輕鬆地建立最適化表單或將其新增到您的AEM Sites頁面。 瞭解將表單整合至網站的分步技巧和最佳實務，將您的數位體驗最佳化以發揮最大影響力。
 feature: Adaptive Forms, Page Editor, Authoring
 Keywords: Forms AEM Sites, Add Form to a Sites page, Adaptive Forms AEM Sites, Add Adaptive Forms to AEM Page, Create Forms in an AEM Sites page
-source-git-commit: 171aca87ff725a2f142f0336dca3491e213f55ab
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '3244'
+source-wordcount: '3245'
 ht-degree: 21%
 
 ---

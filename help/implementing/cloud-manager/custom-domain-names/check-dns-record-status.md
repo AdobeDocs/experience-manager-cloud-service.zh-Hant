@@ -2,10 +2,10 @@
 title: 檢查 DNS 記錄狀態
 description: 了解如何使用 Cloud Manager 確定您的 DNS 設定是否正確解析。
 exl-id: 76ca1584-e21d-4e3a-a08a-82b2779167cf
-source-git-commit: 2278abcf0c34fd34a7730242ee27814d37b7d4d0
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '253'
-ht-degree: 100%
+source-wordcount: '250'
+ht-degree: 97%
 
 ---
 
@@ -29,7 +29,7 @@ Cloud Manager 對您的網域名稱執行 DNS 查找並顯示以下狀態消息�
 
 * **DNS 解析不正確**- 這表明 DNS 記錄設定尚未解析或錯誤。
 
-   * 如需了解詳細資訊，請參閱文件：[設定 DNS 設定](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md)。
+   * 另請參閱 [正在設定DNS設定](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md) 以深入瞭解。
    * 準備就緒後，必須選擇狀態旁邊的&#x200B;**再次解析**&#x200B;圖示。
 
 * **DNS 解析正在進行中**- 決議正在進行中。

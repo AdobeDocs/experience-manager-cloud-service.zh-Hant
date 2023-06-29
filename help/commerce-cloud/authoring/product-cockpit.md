@@ -2,10 +2,10 @@
 title: 產品駕駛艙
 description: 使用產品駕駛艙
 exl-id: 6dbf039c-e040-48f1-88f3-ebbd70cdf94d
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '439'
-ht-degree: 3%
+source-wordcount: '432'
+ht-degree: 1%
 
 ---
 
@@ -23,13 +23,13 @@ ht-degree: 3%
 
 ## 設定 {#configuration}
 
-產品目錄需在AEM中設定。 另請參閱 [設定存放區和目錄](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/storefront/getting-started.html?#catalog) 以取得詳細資訊。
+產品目錄必須在AEM中設定。 另請參閱 [設定存放區和目錄](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/getting-started.html#catalog) 以取得詳細資訊。
 
-啟用分階段目錄功能需要驗證。 另請參閱 [快速入門](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/storefront/getting-started.html) 以取得詳細資訊。
+啟用分階段目錄功能需要驗證。 另請參閱 [快速入門](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/getting-started.html) 以取得詳細資訊。
 
 >[!NOTE]
 >
->只有支援權杖式驗證的Adobe Commerce和第三方聯結器才提供分階段目錄功能。
+>只有支援權杖式驗證的Adobe Commerce和協力廠商聯結器才提供分階段目錄功能。
 
 ## 開啟產品駕駛艙 {#opening-product-cockpit}
 
@@ -43,11 +43,11 @@ ht-degree: 3%
 
 ![已設定的目錄](../assets/catalog-overview.png)
 
-按一下類別時，會載入所點選類別的子系。
+按一下類別會載入所按類別的子系。
 
 ![類別子項](../assets/catalog-category-children.png)
 
-如果可用，按一下產品將會載入產品變數。
+按一下產品會載入產品變數（若有）。
 
 ![產品變數](../assets/catalog-product-variation.png)
 
@@ -63,7 +63,7 @@ ht-degree: 3%
 
 ## 瀏覽分階段產品目錄 {#staged-product-catalogs}
 
-依預設，產品駕駛艙會顯示即時產品目錄資料。 使用左側篩選索引標籤中的「階段目錄」將會載入任何所選日期的產品目錄。
+依預設，產品駕駛艙會顯示即時產品目錄資料。 使用左側篩選標籤中的「階段目錄」，會載入任何所選日期的產品目錄。
 
 ![暫存目錄](../assets/staged-cockpit.png)
 

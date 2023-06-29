@@ -2,16 +2,16 @@
 title: Commerce Integration Framework (CIF)附加元件的重大變更
 description: Commerce Integration Framework (CIF)與舊CIF版本相比有重大變更。
 exl-id: 5a526960-96a1-421e-9fb0-0825e7df8f32
-source-git-commit: 6c9a44940ea9e52bd27a233c7aa24e320a24076c
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '454'
+source-wordcount: '452'
 ht-degree: 3%
 
 ---
 
 # Commerce Integration Framework (CIF)附加元件的重大變更{#notable-changes}
 
-Adobe Experience Manager as a Cloud Service提供許多管理AEM專案的新功能，並帶來許多可能性。 若要進一步瞭解這些功能，請瀏覽以下連結瞭解 [Experience Manageras a Cloud Service的變更](/help/release-notes/aem-cloud-changes.md).
+Adobe Experience Manager as a Cloud Service提供許多管理AEM專案的新功能，並帶來許多可能性。 若要進一步瞭解這些功能，請前往下列連結： [Experience Manageras a Cloud Service的變更](/help/release-notes/aem-cloud-changes.md).
 
 本檔案著重說明Commerce Integration Framework (CIF)附加元件和舊版CIF之間的重要差異，後者稱為CIF Classic (Quickstart)和CIF Open-source。
 

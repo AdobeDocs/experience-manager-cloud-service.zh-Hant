@@ -2,10 +2,10 @@
 title: 自訂程式碼品質規則
 description: 本頁說明了 Cloud Manager 在程式碼品質測試過程中執行的自訂程式碼品質規則。它們是根據 Adobe Experience Manager Engineering 的最佳實務。
 exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '3504'
-ht-degree: 98%
+source-wordcount: '3502'
+ht-degree: 91%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 98%
 
 >[!NOTE]
 >
->由於 Adobe 專屬資訊，完整的 SonarQube 規則無法下載。若要下載完整的規則清單，可[使用此連結。](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx)繼續閱讀本文件以取得規則的說明和範例。
+>由於 Adobe 專屬資訊，完整的 SonarQube 規則無法下載。您可以下載完整的規則清單 [使用此連結](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx). 繼續閱讀本文件以取得規則的說明和範例。
 
 >[!NOTE]
 >
@@ -504,7 +504,7 @@ public void doThis(Resource resource) {
 
 請勿將 Sling 排程器用於要求保證執行的任務。Sling 已排程的作業可保證執行並更適合叢集和非叢集環境。
 
-若要了解如何在叢集環境中處理 Sling 作業的詳細資訊，請參閱 [Apache Sling 事件和作業處理](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html)。
+另請參閱 [Apache Sling事件和作業處理](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html) 以進一步瞭解如何在叢集環境中處理Sling作業。
 
 ### 請勿使用 Experience Manager 已過時的 API {#sonarqube-aem-deprecated}
 
@@ -560,7 +560,7 @@ public class DontDoThis implements Page {
 
 多個現成的 Experience Manager Oak 索引包括 Tika 設定，且這些索引的自訂必須包括 Tika 設定。此規則會檢查 `damAssetLucene`、`lucene` 和 `graphqlConfig` 索引的自訂，並在 `tika` 節點缺少或 `tika` 節點缺少名為 `config.xml` 的子節點時引發問題。
 
-有關自訂索引定義的詳細資訊，請參閱[索引文件](/help/operations/indexing.md#preparing-the-new-index-definition)。
+另請參閱 [索引檔案](/help/operations/indexing.md#preparing-the-new-index-definition) 以取得自訂索引定義的詳細資訊。
 
 #### 不符合規範的程式碼 {#non-compliant-code-indextikanode}
 
@@ -773,10 +773,10 @@ OSGi 設定 `com.day.cq.wcm.core.impl.AuthoringUIModeServiceImpl` 會定義 Expe
 有 Classic UI 對話框的 Experience Manager 元件應該隨時有相對應的 Touch UI 對話框。既能提供最佳撰寫體驗，又與不支援 Classic UI 的雲端服務部署模式相容。本規則可證實以下情境：
 
 * 具有 Classic UI 對話框 (即 `dialog` 子節點) 的元件必須具有相對應的 Touch UI 對話框 (即 `cq:dialog` 子節點)。
-* 具有 Classic UI 設計對話框 (即 `design_dialog` 節點) 的元件必須具有相對應的 Touch UI 對話框 (即 `cq:design_dialog` 子節點)。
+* 具有Classic UI設計對話方塊的元件(即 `design_dialog` 節點)必須具有相對應的Touch UI設計對話方塊(即 `cq:design_dialog` 子節點)。
 * 同時具有 Classic UI 對話框以及 Classic UI 設計對話框的元件必須同時有相對應的 Touch UI 對話框以及相對應的 Touch UI 設計對話框。
 
-Experience Manager 現代化工具文件提供了有關如何將元件從 Classic UI 轉換為 Touch UI 的文件和工具。如需更多詳細資訊，請參閱 [Experience Manager 現代化工具文件](https://opensource.adobe.com/aem-modernize-tools/)。
+Experience Manager 現代化工具文件提供了有關如何將元件從 Classic UI 轉換為 Touch UI 的文件和工具。另請參閱 [Experience Manager現代化工具檔案](https://opensource.adobe.com/aem-modernize-tools/) 以取得更多詳細資料。
 
 ### 套件不應該混合可變和不可變的內容 {#oakpal-packages-immutable}
 
@@ -791,7 +791,7 @@ Experience Manager 現代化工具文件提供了有關如何將元件從 Classi
 >
 >此[客戶套件不應在 /libs 下建立或修改節點](#oakpal-customer-package)規則永遠適用。
 
-如需更多詳細資訊，請參閱[Experience Manager 專案結構](/help/implementing/developing/introduction/aem-project-content-package-structure.md)。
+另請參閱 [Experience Manager專案結構](/help/implementing/developing/introduction/aem-project-content-package-structure.md) 以取得更多詳細資料。
 
 ### 不應使用反向複寫代理 {#oakpal-reverse-replication}
 
@@ -800,7 +800,7 @@ Experience Manager 現代化工具文件提供了有關如何將元件從 Classi
 * **嚴重度**：輕微
 * **始自**：2020.5.0 版本
 
-Cloud Service 部署中不支援反向複寫，如 Experience Manager as a Cloud Service 的[發行說明](/help/release-notes/aem-cloud-changes.md#replication-agents)中所述。
+Cloud Service部署中不支援反向復寫，如Experience Manageras a Cloud Service的一部份所述 [發行說明](/help/release-notes/aem-cloud-changes.md#replication-agents).
 
 使用反向複寫的客戶應和 Adobe 聯絡，以取得替代解決方案。
 
@@ -853,7 +853,7 @@ Experience Manager 用戶端資料庫可能包含影像和字體之類的靜態�
 * **嚴重度**：輕微
 * **始自**：2021.2.0 版本
 
-雖然靜態範本的使用歷來在 Experience Manager 專案中極為普遍，Adobe 建議使用可編輯範本，因為它們可提供最大的靈活度並支援靜態範本中不存在的附加功能。在[頁面範本](/help/implementing/developing/components/templates.md)文件中可找到更多資訊。
+雖然靜態範本的使用歷來在 Experience Manager 專案中極為普遍，Adobe 建議使用可編輯範本，因為它們可提供最大的靈活度並支援靜態範本中不存在的附加功能。如需詳細資訊，請參閱檔案 [頁面範本](/help/implementing/developing/components/templates.md).
 
 使用 [Experience Manager 現代化工具](https://opensource.adobe.com/aem-modernize-tools/)可將從靜態範本到可編輯範本的遷移大幅自動化。
 
@@ -864,7 +864,7 @@ Experience Manager 用戶端資料庫可能包含影像和字體之類的靜態�
 * **嚴重度**：輕微
 * **始自**：2021.2.0 版本
 
-舊版基礎元件 (即 `/libs/foundation` 下的元件) 已在多個 Experience Manager 版本中被取代，以支援核心元件。不建議使用基礎元件作為自訂元件的基礎 (無論是透過覆蓋還是繼承)，並應轉換為相對應的核心元件。
+舊版基礎元件(亦即 `/libs/foundation`)已在多個Experience Manager版本中被取代，以支援核心元件。 不建議使用基礎元件作為自訂元件的基礎 (無論是透過覆蓋還是繼承)，並應轉換為相對應的核心元件。
 
 [Experience Manager 現代化工具](https://opensource.adobe.com/aem-modernize-tools/)可有助於這種轉換。
 
@@ -884,7 +884,7 @@ Experience Manager as a Cloud Service 對執行模式名稱實施嚴格的命名
 * **嚴重度**：輕微
 * **始自**：2021.2.0 版本
 
-Experience Manager as a Cloud Service 要求自訂搜尋索引定義 (即類型 `oak:QueryIndexDefinition` 的節點) 是 `/oak:index` 的直接子節點。必須移動其他位置中的索引才能和 Experience Manager as a Cloud Service 相容。有關搜尋索引的更多資訊可在[內容搜尋和索引](/help/operations/indexing.md)文件中找到。
+Experience Manageras a Cloud Service需要自訂搜尋索引定義（即型別的節點） `oak:QueryIndexDefinition`)為的直接子節點 `/oak:index`. 必須移動其他位置中的索引才能和 Experience Manager as a Cloud Service 相容。有關搜尋索引的更多資訊可在檔案中找到 [內容搜尋與索引](/help/operations/indexing.md).
 
 ### 自訂搜尋索引定義節點的 compatVersion 必須為 2 {#oakpal-custom-search-compatVersion}
 
@@ -893,7 +893,7 @@ Experience Manager as a Cloud Service 要求自訂搜尋索引定義 (即類型 
 * **嚴重度**：輕微
 * **始自**：2021.2.0 版本
 
-Experience Manager as a Cloud Service 要求自訂搜尋索引定義 (例如類型 `oak:QueryIndexDefinition` 的節點) 必須將 `compatVersion` 屬性設定為 `2`。Experience Manager as a Cloud Service 並不支援任何其他值。有關搜尋索引的更多資訊可在以下連結中找到：[內容搜尋和索引。](/help/operations/indexing.md)
+Experience Manager as a Cloud Service 要求自訂搜尋索引定義 (例如類型 `oak:QueryIndexDefinition` 的節點) 必須將 `compatVersion` 屬性設定為 `2`。Experience Manager as a Cloud Service 並不支援任何其他值。有關搜尋索引的詳細資訊，請參閱 [內容搜尋與索引](/help/operations/indexing.md).
 
 ### 自訂搜尋索引定義節點的下階節點必須屬於 nt:unstructured 類型 {#oakpal-descendent-nodes}
 
@@ -920,7 +920,7 @@ Experience Manager as a Cloud Service 要求自訂搜尋索引定義 (例如類�
 * **嚴重度**：輕微
 * **始自**：2021.2.0 版本
 
-Experience Manager as a Cloud Service 要求自訂搜尋索引定義 (即 `oak:QueryIndexDefinition` 類型的節點) 必須按照以下文件中說明的特定模式命名：[內容搜尋和索引。](/help/operations/indexing.md)
+Experience Manageras a Cloud Service需要自訂搜尋索引定義（即型別的節點） `oak:QueryIndexDefinition`)必須按照檔案中說明的特定模式命名 [內容搜尋與索引](/help/operations/indexing.md).
 
 ### 自訂搜尋索引定義節點必須使用索引類型 Lucene  {#oakpal-index-type-lucene}
 
@@ -929,7 +929,7 @@ Experience Manager as a Cloud Service 要求自訂搜尋索引定義 (即 `oak:Q
 * **嚴重度**：阻斷因素
 * **始自**：2021.2.0 版本 (在 2021.8.0 變更類型和嚴重性)
 
-Experience Manager as a Cloud Service 要求自訂搜尋索引定義 (即類型 `oak:QueryIndexDefinition` 的節點) 必須具備 `type` 屬性，且值設定為 `lucene`。在移轉到 Experience Manager as a Cloud Service 之前，必須更新使用舊式索引類型的索引。如需詳細資訊，請參閱[內容搜尋和索引](/help/operations/indexing.md#how-to-use)。
+Experience Manageras a Cloud Service需要自訂搜尋索引定義（即型別的節點） `oak:QueryIndexDefinition`)有 `type` 值設定為的屬性 `lucene`. 在移轉到 Experience Manager as a Cloud Service 之前，必須更新使用舊式索引類型的索引。如需詳細資訊，請參閱[內容搜尋和索引](/help/operations/indexing.md#how-to-use)。
 
 ### 自訂搜尋索引定義節點不得包含名為 seed 的屬性 {#oakpal-property-name-seed}
 

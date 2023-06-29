@@ -2,9 +2,9 @@
 title: 發佈頁面
 description: 如何使用AEM發佈和取消發佈頁面
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1804'
+source-wordcount: '1802'
 ht-degree: 6%
 
 ---
@@ -81,7 +81,7 @@ ht-degree: 6%
 
 >[!NOTE]
 >
->從編輯器發佈是淺層發佈，即只會發佈選取的頁面，而不會發佈任何子頁面。
+>從編輯器發佈是淺層發佈，也就是說，只會發佈所選頁面，而不會發佈任何子頁面。
 
 >[!NOTE]
 >
@@ -112,7 +112,7 @@ ht-degree: 6%
 
 >[!NOTE]
 >
->「快速發佈」是淺層發佈，即只會發佈選取的頁面/頁面，而不會發佈任何子頁面。
+>「快速發佈」是淺層發佈，也就是說，只會發佈所選頁面/頁面，而不會發佈任何子頁面。
 
 #### 管理發佈 {#manage-publication}
 
@@ -203,7 +203,7 @@ ht-degree: 6%
 
    >[!NOTE]
    >
-   >此 **工作流程** 步驟是根據使用者可能擁有也可能沒有的許可權顯示。 請參閱本頁先前關於發佈許可權及管理工作流程存取許可權的附註。 [將工作流程套用至頁面](/help/sites-cloud/authoring/workflows/applying.md) 以取得詳細資訊。
+   >此 **工作流程** 步驟是根據使用者可能擁有也可能沒有的許可權顯示。 請參閱本頁先前關於發佈許可權和管理工作流程存取權的附註，以及 [將工作流程套用至頁面](/help/sites-cloud/authoring/workflows/applying.md) 以取得詳細資訊。
 
    資源會依觸發的工作流程及每個指定選項分組，以便：
 

@@ -2,9 +2,9 @@
 title: 管理專案
 description: 專案可讓您將資源分組到一個實體中，以便在「專案」主控台中存取和管理該實體，藉此組織您的專案
 exl-id: be4616e7-18bc-4b2d-89f6-d04178ac7f3a
-source-git-commit: 54a098d8986c8bbd740bed50f8625c1025d2f6f4
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '894'
+source-wordcount: '893'
 ht-degree: 13%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 13%
 
 ![專案主控台](/help/sites-cloud/authoring/assets/projects-console.png)
 
-在「專案」中，您可以建立專案、將資源與專案相關聯，也可以刪除專案或資源連結。 您可以開啟圖磚來檢視其內容以及將專案新增至圖磚。 本主題說明這些程式。
+在「專案」中，您可以建立專案、將資源與專案相關聯，也可以刪除專案或資源連結。 您可能想要開啟圖磚，以檢視其內容並將專案新增至圖磚。 本主題說明這些程式。
 
 ## 建立專案 {#creating-a-project}
 
@@ -57,7 +57,7 @@ AEM提供下列立即可用的範本，供您在建立專案時選擇：
 
    >[!NOTE]
    >
-   >可和專案相關聯的專案拼貼的詳細說明，請參閱 [專案動態磚。](/help/sites-cloud/authoring/projects/overview.md#project-tiles)
+   >可和專案相關聯的專案拼貼的詳細說明，請參閱 [專案動態磚](/help/sites-cloud/authoring/projects/overview.md#project-tiles).
 
 1. 點選/按一下 **建立**. 您的資源已連結至專案，從現在起，您就可以從專案存取該資源。
 
@@ -127,13 +127,14 @@ AEM提供下列立即可用的範本，供您在建立專案時選擇：
 
 ## 讓專案為非使用中或使用中 {#making-projects-inactive-or-active}
 
-如果您已完成專案，但仍想保留專案上的資訊，您可以讓專案非作用中。
+如果您已完成專案，但仍想保留專案上的資訊，您可能會想要讓專案非作用中。
 
 若要使專案非作用中（或作用中），請執行下列動作：
 
 1. 在 **專案** 主控台，開啟您的專案，然後找到 **專案資訊** 圖磚。
 
    >[!NOTE]
+   >
    如果您的專案中尚未出現此動態磚，您可能需要加以新增。 另請參閱 [新增圖磚](#adding-items-to-a-tile).
 
 1. 點選/按一下 **編輯**.

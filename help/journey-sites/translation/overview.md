@@ -5,10 +5,10 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: 3db2ff19-dc24-47b6-aa56-2ee2305fe045
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '931'
-ht-degree: 92%
+ht-degree: 91%
 
 ---
 
@@ -47,7 +47,7 @@ AEM 提供同樣強大的工具來翻譯您的內容，使您能夠盡快將內�
 | 管理員 | 管理 AEM 的基本設定和配置 | 翻譯專家與管理員一起進行翻譯作業所需的設定變更，例如安裝翻譯連接器。 |
 | 內容架構師 | 分析必須作為網站傳遞之資料的要求並定義此資料的結構 | 翻譯專家與內容架構師一起定義內容的組織，以便輕鬆翻譯。 |
 
-此歷程的資訊當然對所有角色都有用，但有些資訊對於某些角色可能是多餘的。請密切注意[即將到來、涵蓋其他角色的歷程。](/help/journey-documentation/documentation-journeys.md#journeys)
+此歷程的資訊當然對所有角色都有用，但有些資訊對於某些角色可能是多餘的。敬請期待 [即將推出的涵蓋其他角色的歷程](/help/journey-documentation/documentation-journeys.md#journeys).
 
 ## Sites 翻譯歷程 {#the-journey}
 

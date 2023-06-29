@@ -2,10 +2,10 @@
 title: 上線後
 description: 瞭解如何監控問題並改善效能
 exl-id: 487f0b51-501b-48fc-a796-3cb8a6d64462
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '485'
-ht-degree: 39%
+source-wordcount: '482'
+ht-degree: 28%
 
 ---
 
@@ -36,7 +36,7 @@ ht-degree: 39%
 
 開發人員控制檯中提供AEMas a Cloud Service開發人員環境的偵錯功能，可用於開發、測試和生產環境。
 
-請參考[實作 AEM as a Cloud Service](/help/implementing/developing/introduction/development-guidelines.md#aem-as-a-cloud-service-development-tools)，深入了解開發工具。
+另請參閱 [實作AEMas a Cloud Service](/help/implementing/developing/introduction/development-guidelines.md#aem-as-a-cloud-service-development-tools) 以進一步瞭解開發工具。
 
 ## CRXDE Lite {#crxde-lite}
 
@@ -45,13 +45,13 @@ ht-degree: 39%
 >[!IMPORTANT]
 >寫入不可變的存放庫，例如 `/libs` 和 `/apps` 在執行階段導致錯誤。 此外，您無權存取測試和生產環境的開發人員工具。
 
-請參考[使用 CRXDE Lite 開發](/help/implementing/developing/tools/crxde.md)，了解如何使用 CRXDE Lite 開發您的 AEM 應用程式。
+另請參閱 [使用CRXDE Lite開發](/help/implementing/developing/tools/crxde.md) 以瞭解如何使用CRXDE Lite開發您的AEM應用程式。
 
 ## 管理記錄 {#managing-logs}
 
 使用者可以存取所選環境的可用記錄檔清單。
 
-請參考[存取和管理記錄](/help/implementing/cloud-manager/manage-logs.md)，了解如何透過 UI 或 Cloud Manager 的 API 存取和管理記錄。
+另請參閱 [存取和管理記錄檔](/help/implementing/cloud-manager/manage-logs.md) 瞭解如何透過UI或透過Cloud Manager的API存取和管理記錄。
 
 ## 連絡支援 {#contacting-support}
 

@@ -4,10 +4,10 @@ description: 瞭解如何準備內容以進行翻譯。
 feature: Language Copy
 role: Admin
 exl-id: afc577a2-2791-481a-ac77-468011e4302e
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '768'
-ht-degree: 5%
+source-wordcount: '765'
+ht-degree: 1%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 5%
 
 >[!TIP]
 >
->如果您不熟悉翻譯內容，請參閱我們的 [Sites 翻譯歷程](/help/journey-sites/translation/overview.md)，此路徑會逐步引導您了解如何使用 AEM 強大的翻譯工具翻譯 AEM Sites 內容，非常適合那些沒有 AEM 或翻譯經驗的使用者。
+>如果您不熟悉翻譯內容，請參閱 [網站翻譯歷程，](/help/journey-sites/translation/overview.md) 將引導您使用AEM強大的翻譯工具來翻譯AEM Sites內容，非常適合沒有AEM或翻譯經驗的人士。
 
 此 [WKND教學課程網站](/help/implementing/developing/introduction/develop-wknd-tutorial.md) 包含數個語言分支，並使用下列結構：
 
@@ -92,7 +92,7 @@ AEM提供 **引用** 顯示已建立之語言根目錄的邊欄。
 
 ![語言根](../assets/language-roots.png)
 
-請使用下列程式檢視頁面的語言副本 [邊欄選擇器。](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector)
+請使用下列程式檢視頁面的語言副本 [邊欄選擇器](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector).
 
 1. 在網站主控台上，選取網站的頁面，然後按一下或點選 **引用**.
 

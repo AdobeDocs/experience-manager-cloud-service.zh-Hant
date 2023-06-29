@@ -2,9 +2,9 @@
 title: 快速開發環境
 description: 瞭解如何使用快速開發環境在雲端環境中進行快速開發反複專案。
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '3318'
+source-wordcount: '3313'
 ht-degree: 5%
 
 ---
@@ -20,7 +20,7 @@ RDE可讓開發人員快速部署和檢閱變更，將測試經證實可在本�
 >[!VIDEO](https://video.tv.adobe.com/v/3415582/?quality=12&learn=on)
 
 
-您可以參考其他示範影片 [如何設定](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup.html)， [使用方式](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use.html)，以及 [開發生命週期](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/development-life-cycle.html) 使用RDE。
+您可以觀看其他示範影片 [如何設定](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup.html)， [使用方式](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use.html)，以及 [開發生命週期](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/development-life-cycle.html) 使用RDE。
 
 ## 簡介 {#introduction}
 
@@ -42,7 +42,7 @@ RDE可用於程式碼、內容，以及Apache或Dispatcher設定。 與一般雲
 
 1. 按一下要新增RDE的計畫以顯示其詳細資訊。
 
-   * RDE可新增至兩者 [沙箱計畫](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md) 和 [生產計畫。](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md)
+   * RDE可新增至兩者 [沙箱計畫](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md) 和 [生產計畫](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md).
 
 1. 在&#x200B;**計畫總覽**&#x200B;頁面，按一下&#x200B;**環境**&#x200B;卡上的&#x200B;**新增環境**&#x200B;以新增環境。
 
@@ -70,7 +70,7 @@ RDE可用於程式碼、內容，以及Apache或Dispatcher設定。 與一般雲
 
 建立後，RDE會設定為最新可用的AEM版本。 RDE重設（也可以使用Cloud Manager執行）將循環RDE並將其設定為最新可用的AEM版本。
 
-如需有關使用Cloud Manager建立環境、管理誰有權存取環境以及指派自訂網域的詳細資訊，請參閱 [Cloud Manager檔案。](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
+如需有關使用Cloud Manager建立環境、管理誰有權存取環境以及指派自訂網域的詳細資訊，請參閱 [Cloud Manager檔案](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md).
 
 ## 安裝RDE命令列工具 {#installing-the-rde-command-line-tools}
 
@@ -147,7 +147,7 @@ Adobe建議使用下列工作流程來開發新功能：
 
 * 當達到中繼里程碑並透過AEMas a Cloud ServiceSDK在本機成功驗證時，程式碼應提交到尚未成為主行一部分的Git功能分支，儘管提交到是Git的選擇性。 構成「中繼里程碑」的要素因團隊習慣而異。 範例包括幾行程式碼、半天的工作或完成子功能。
 
-* 如果RDE已由其他功能使用，且您想重設RDE [將其重設為預設狀態](#reset-rde). <!-- Alexandru: hiding for now, please don't delete This can be done via [Cloud Manager](#reset-the-rde-cloud-manager) or via the [command line](#reset-the-rde-command-line). -->重設需要幾分鐘的時間，而所有現有內容和程式碼都會被刪除。 您可以使用RDE狀態指令來確認RDE已就緒。 RDE將隨最新的AEM發行版本一起更新。
+* 如果RDE已由其他功能使用，且您想重設RDE [將其重設為預設狀態](#reset-rde). <!-- Alexandru: hiding for now, do not delete This can be done via [Cloud Manager](#reset-the-rde-cloud-manager) or via the [command line](#reset-the-rde-command-line). -->重設需要幾分鐘的時間，而所有現有內容和程式碼都會被刪除。 您可以使用RDE狀態指令來確認RDE已就緒。 RDE將隨最新的AEM發行版本一起更新。
 
   >[!IMPORTANT]
   >
@@ -369,7 +369,7 @@ aio aem:rde:delete com.adobe.granite.csrf.impl.CSRFFilter
 
 重設會將RDE設定為最新可用的AEM版本。
 
-<!-- Alexandru: hiding for now, please don't delete
+<!-- Alexandru: hiding for now, do not delete
 
 Resetting can be done via [Cloud Manager](#reset-the-rde-cloud-manager) or via the [command line](#reset-the-rde-command-line). Resetting takes a few minutes and all existing content and code is deleted from the RDE.
 
@@ -417,7 +417,7 @@ This usually takes a few minutes. Use the [status command](#checking-rde-status)
 
    ![重設橫幅通知](/help/implementing/cloud-manager/assets/rde-reset-banner.png)
 
-RDE重設程式啟動後，通常需要幾分鐘才能完成，並讓環境恢復到其預設狀態。 您可以隨時在中檢視重設程式的狀態 **狀態** 的欄 **環境** 卡片或 **環境** 視窗。
+RDE重設程式啟動後，通常需要幾分鐘才能完成並將環境恢復到其預設狀態。 您可以隨時在中檢視重設程式的狀態 **狀態** 的欄 **環境** 卡片或 **環境** 視窗。
 
 ![RDE重設狀態](/help/implementing/cloud-manager/assets/rde-reset-status-environments-card.png)
 
@@ -425,7 +425,7 @@ RDE重設程式啟動後，通常需要幾分鐘才能完成，並讓環境恢�
 
 ![從環境卡重設RDE](/help/implementing/cloud-manager/assets/rde-reset-environments-card.png)
 
-有關如何使用Cloud Manager管理環境的詳細資訊，請參閱 [Cloud Manager檔案。](/help/implementing/cloud-manager/manage-environments.md)
+有關如何使用Cloud Manager管理環境的詳細資訊，請參閱 [Cloud Manager檔案](/help/implementing/cloud-manager/manage-environments.md).
 
 ## 執行模式 {#runmodes}
 

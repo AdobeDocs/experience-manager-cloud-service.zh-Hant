@@ -3,9 +3,9 @@ title: AEMas a Cloud Service2021.10.0版中移轉工具的發行說明
 description: AEMas a Cloud Service2021.11.0版中移轉工具的發行說明
 feature: Release Information
 exl-id: 6b1caa63-dcb0-4c48-ab2c-fd72617abf13
-source-git-commit: 3c8035e4db5729f58bae29136a32a0b9944d6a2f
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '411'
+source-wordcount: '408'
 ht-degree: 12%
 
 ---
@@ -25,7 +25,7 @@ Cloud Acceleration Manager的發行日期為2021年10月25日。
 
 ### 新增功能 {#what-is-new-cam}
 
-Cloud Acceleration Manager現在可讓使用者在趨勢線報告中檢視歷史BPA報告。 透過此報告，使用者能夠以易於使用的圖形表示來檢視他們正在取得的進度。 請參閱 [使用檢視趨勢線](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=en#trendline-view-cam) 以取得更多詳細資料。
+Cloud Acceleration Manager現在可讓使用者在趨勢線報告中檢視歷史BPA報告。 透過此報告，使用者能夠以易於使用的圖形表示來檢視他們正在取得的進度。 另請參閱 [使用檢視趨勢線](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=en#trendline-view-cam) 以取得更多詳細資料。
 
 ### 發行日期 {#release-date-october-cam}
 

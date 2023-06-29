@@ -2,10 +2,10 @@
 title: 如何透過 AEM Delivery API 存取您的內容
 description: 在 AEM Headless 開發人員歷程的這一部分中，了解如何使用 GraphQL 查詢來存取您的內容片段內容。
 exl-id: 1adecc69-5f92-4007-8a2a-65bf1e960645
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1358'
-ht-degree: 99%
+source-wordcount: '1360'
+ht-degree: 97%
 
 ---
 
@@ -30,9 +30,9 @@ ht-degree: 99%
    * 深入了解 AEM GraphQL API 的詳細資訊。
    * 查看一些範例查詢以了解實務運作。
 
-## 所以您想存取您的內容嗎？ {#so-youd-like-to-access-your-content}
+## 所以您想要存取您的內容？ {#so-youd-like-to-access-your-content}
 
-所以...您已經取得所有這些內容，結構整齊 (在內容片段中)，正等待提供給您的新應用程式。問題是 - 如何到達那裡？
+因此，您擁有所有這類內容、整齊的結構（在內容片段中），並且正等待為您的新應用程式提供內容。 問題是 - 如何到達那裡？
 
 您需要的是可以找出特定內容為目標的方法，選擇您需要的內容並將其傳回到您的應用程式以進一步處理。
 

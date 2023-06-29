@@ -2,10 +2,10 @@
 title: 建立設定 - Headless 設定
 description: 建立設定是在 AEM as a Cloud Service 中開始使用無周邊的第一步。
 exl-id: 48801599-f279-4e55-8033-9c418d2af5bb
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '327'
-ht-degree: 92%
+ht-degree: 88%
 
 ---
 
@@ -29,7 +29,7 @@ ht-degree: 92%
 1. 提供設定的&#x200B;**標題**&#x200B;和&#x200B;**名稱**。
    * **標題** 應該是描述性的。
    * 此 **名稱** 會成為存放庫中的節點名稱。
-      * 系統會根據標題自動產生，並根據 [AEM命名慣例。](/help/implementing/developing/introduction/naming-conventions.md)
+      * 系統會根據標題自動產生，並根據 [AEM命名慣例](/help/implementing/developing/introduction/naming-conventions.md).
       * 如有需要，可加以調整。
 1. 檢查以下選項：
    * **內容片段模型**
@@ -51,4 +51,4 @@ ht-degree: 92%
 
 >[!TIP]
 >
->如需設定瀏覽器的完整詳細資訊，[請參閱設定瀏覽器文件。](/help/implementing/developing/introduction/configurations.md)
+>如需有關設定瀏覽器的完整詳細資訊， [請參閱設定瀏覽器檔案](/help/implementing/developing/introduction/configurations.md).

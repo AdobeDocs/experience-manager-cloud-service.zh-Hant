@@ -2,9 +2,9 @@
 title: 程式碼重構工具的統一體驗
 description: 程式碼重構工具的統一體驗
 exl-id: daee0e2d-1e2b-41a3-acab-fc59142d0e05
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '264'
+source-wordcount: '263'
 ht-degree: 1%
 
 ---
@@ -34,7 +34,7 @@ ht-degree: 1%
 
 * **基礎程式碼重構工具套裝**
 
-   程式碼重構工具透過以下方式執行其功能：
+  程式碼重構工具透過以下方式執行其功能：
 
    * 掃描客戶程式碼的個別區段並操控程式碼（根據程式碼實作以獲得最佳實務）以產生輸出，然後可加以驗證和部署。
 
@@ -42,7 +42,7 @@ ht-degree: 1%
 
 ## 可用性 {#availability}
 
-請參閱 [Git資源： aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) 瞭解此使用方式，以及如何為GitHub中開放來源的外掛程式程式碼貢獻內容。
+另請參閱 [Git資源： aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) 瞭解此使用方式，以及如何為GitHub中開放來源的外掛程式程式碼貢獻內容。
 
 >[!NOTE]
 >目前，外掛程式已與AEM Dispatcher Converter和Repository Modernizer整合。

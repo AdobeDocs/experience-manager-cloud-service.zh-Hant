@@ -2,9 +2,9 @@
 title: AEMas a Cloud Service記錄
 description: 瞭解如何使用AEM的記錄as a Cloud Service來設定中央記錄服務的全域引數、個別服務的特定設定，或如何請求資料記錄。
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2376'
+source-wordcount: '2375'
 ht-degree: 3%
 
 ---
@@ -52,7 +52,7 @@ AEMas a Cloud Service提供對Java記錄陳述式的存取。 AEM應用程式的
 偵錯</td>
 <td>
 說明應用程式中發生的事情。<br>
-當DEBUG記錄作用中時，會記錄提供已發生活動以及影響處理的任何關鍵引數之清晰圖表的陳述式。</td>
+當DEBUG記錄作用中時，會記錄提供已發生活動之明確資訊以及影響處理的任何關鍵引數的陳述式。</td>
 <td>
 <ul>
 <li> 本機開發</li>

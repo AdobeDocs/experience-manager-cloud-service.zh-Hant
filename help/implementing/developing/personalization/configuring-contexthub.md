@@ -2,9 +2,9 @@
 title: 設定 ContextHub
 description: 瞭解如何設定Context中心。
 exl-id: 1fd7d41e-31ad-4838-8749-a5791edcfd63
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1683'
+source-wordcount: '1680'
 ht-degree: 1%
 
 ---
@@ -149,7 +149,7 @@ contexthub.generic-jsonp存放區已設定為儲存服務呼叫的資料 `https:
 
 contexthub.generic-jsonp範例存放區候選可讓您從JSONP服務或傳回JSON資料的Web服務擷取資料。 對於此存放區候選者，請使用存放區設定來提供要使用的JSONP服務的詳細資訊。
 
-此 [init](contexthub-api.md#init-name-config) 的功能 `ContextHub.Store.JSONPStore` Javascript類別會定義 `config` 初始化此存放區候選的物件。 此 `config` 物件包含 `service` 物件，其中包含有關JSONP服務的詳細資訊。 若要設定商店，請提供 `service` JSON格式的物件，作為Detail Configuration屬性值。
+此 [init](contexthub-api.md#init-name-config) 的功能 `ContextHub.Store.JSONPStore` JavaScript類別定義 `config` 初始化此存放區候選的物件。 此 `config` 物件包含 `service` 物件，其中包含有關JSONP服務的詳細資訊。 若要設定商店，請提供 `service` JSON格式的物件，作為Detail Configuration屬性值。
 
 若要儲存jsontest.com網站MD5服務的資料，請遵循下列程式： [建立ContextHub存放區](#creating-a-contexthub-store) 使用下列屬性：
 
@@ -159,21 +159,21 @@ contexthub.generic-jsonp範例存放區候選可讓您從JSONP服務或傳回JSO
 * **已啟用：** 選取
 * **詳細資料組態 (JSON):**
 
-   ```javascript
-   {
-    "service": {
-    "jsonp": false,
-    "timeout": 1000,
-    "ttl": 1800000,
-    "secure": false,
-    "host": "md5.jsontest.com",
-    "port": 80,
-    "params":{
-    "text":"text to md5"
-        }
-      }
-    }
-   ```
+  ```javascript
+  {
+   "service": {
+   "jsonp": false,
+   "timeout": 1000,
+   "ttl": 1800000,
+   "secure": false,
+   "host": "md5.jsontest.com",
+   "port": 80,
+   "params":{
+   "text":"text to md5"
+       }
+     }
+   }
+  ```
 
 ### 新增md5資料的UI模組 {#adding-a-ui-module-for-the-md-data}
 
@@ -187,15 +187,15 @@ contexthub.generic-jsonp範例存放區候選可讓您從JSONP服務或傳回JSO
 * **模組型別：** contexthub.base
 * **詳細資料組態 (JSON):**
 
-   ```javascript
-   {
-    "icon": "coral-Icon--data",
-    "title": "MD5 Conversion",
-    "storeMapping": { "md5": "md5" },
-    "template": "<p> {{md5.original}}</p>;
-                 <p>{{md5.md5}}</p>"
-   }
-   ```
+  ```javascript
+  {
+   "icon": "coral-Icon--data",
+   "title": "MD5 Conversion",
+   "storeMapping": { "md5": "md5" },
+   "template": "<p> {{md5.original}}</p>;
+                <p>{{md5.md5}}</p>"
+  }
+  ```
 
 ## 偵錯ContextHub {#debugging-contexthub}
 

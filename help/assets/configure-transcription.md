@@ -2,7 +2,7 @@
 title: 設定轉錄服務
 seo-title: Configure transcription service
 description: Adobe Experience Manager資產已設定為 [!DNL Azure Media Services] 會以WebVTT (vtt)格式自動產生支援音訊或視訊檔案中的口語文字記錄。
-seo-description: When an audio or video asset is processed in Experience Manager Assets, the AI-based transcription service automatically generates the text transcript rendition of the audio or video asset and stores it at the same location within your Assets repository where the original asset resides. The Experience Manager Assets transcription service allows marketers to effectively manage their audio and video content with added discoverability of the text content as well as increase the ROI of these assets by supporting accessibility and localization.
+seo-description: When an audio or video asset is processed in Experience Manager Assets, the AI-based transcription service automatically generates the text transcript rendition of the audio or video asset and stores it at the same location within your Assets repository where the original asset resides. The Experience Manager Assets transcription service allows marketers to effectively manage their audio and video content with added discoverability of the text content and increase the ROI of these assets by supporting accessibility and localization.
 products: SG_EXPERIENCEMANAGER/ASSETS and Experience Manager as a Cloud Service
 sub-product: assets
 content-type: reference
@@ -11,9 +11,9 @@ topic-tags: Configuration
 feature: Asset Management, Configuration
 role: Admin
 exl-id: e96c8d68-74a6-4d61-82dc-20e619338d4b
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1696'
+source-wordcount: '1694'
 ht-degree: 1%
 
 ---
@@ -88,7 +88,7 @@ ht-degree: 1%
 * 在中選取處理設定檔定義 **[!UICONTROL 工具]** > **[!UICONTROL 資產]** > **[!UICONTROL 處理設定檔]**，並使用 **[!UICONTROL 將設定檔套用至資料夾]** 動作。 內容瀏覽器可讓您導覽至特定資料夾、選取資料夾並確認設定檔的應用。
 * 在Assets使用者介面中選取資料夾，然後按一下 **[!UICONTROL 屬性]** 開啟資料夾屬性的動作。 按一下 **[!UICONTROL 資產處理]** 標籤，然後為資料夾選取適當的處理設定檔 **[!UICONTROL 處理設定檔]** 清單。 若要儲存變更，請按一下 **[!UICONTROL 儲存並關閉]**.
 
-   ![configure-transcription-service](assets/video-processing-profile3.png)
+  ![configure-transcription-service](assets/video-processing-profile3.png)
 
 * 使用者可以在Assets使用者介面中選取資料夾或特定資產，以套用處理設定檔，然後選取 **[!UICONTROL 重新處理資產]** 從上方可用的選項中選取。
 

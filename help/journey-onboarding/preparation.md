@@ -2,10 +2,10 @@
 title: 入門準備
 description: 在開始入門流程之前，系統管理員在登入系統前必須了解一些準備步驟。
 exl-id: 86139b1a-c22a-4716-a0f9-cf142cbc6c53
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '766'
-ht-degree: 95%
+source-wordcount: '763'
+ht-degree: 91%
 
 ---
 
@@ -42,7 +42,7 @@ AEM as a Cloud Service 入門由您的組織與 Adobe 之間簽署合約開始�
 * 您的 Premier Support 等級 (如果適用)。
 * 您的入門聯絡人。
 
-如果您不了解這些詳細資訊，請聯絡您組織內簽訂合約的團隊。
+如果您不瞭解這些詳細資訊，請聯絡組織內的合約團隊。
 
 簽訂合約後，Adobe 會佈建您環境、傳送一封歡迎電子郵件給合約中定義的入門聯絡人，並由 Adobe 組織入門諮詢電話。這通常發生在合約結束後的幾天，除非另有安排未來的服務開始日期。
 
@@ -88,4 +88,4 @@ Adobe由以下專案表示：
 * 該合約如何影響入門流程。
 * 如何準備您的入門諮詢電話服務。
 
-現在您已經熟悉了這些準備步驟，可以準備登入系統了。但首先，您需要從系統管理員的角度簡要總覽 AEM as a Cloud Service 的結構，並了解一些重要的術語。請繼續下一段歷程，[ AEM as a Cloud Service 術語。](terminology.md)
+現在您已經熟悉了這些準備步驟，可以準備登入系統了。但首先，您需要從系統管理員的角度簡要總覽 AEM as a Cloud Service 的結構，並了解一些重要的術語。繼續下一段歷程， [AEMas a Cloud Service術語](terminology.md).

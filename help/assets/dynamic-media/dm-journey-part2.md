@@ -11,9 +11,9 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: cdca41ad-a2cd-4f68-aaa4-5eec33c30f0b
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2875'
+source-wordcount: '2872'
 ht-degree: 0%
 
 ---
@@ -141,7 +141,7 @@ _套用影像預設集「媒體」以產生影像的轉譯。_
 ![靜態和動態影像預設集](/help/assets/dynamic-media/assets/dm-image-presets.png)
 _靜態和動態影像預設集。 觀看影像是使用 `PDP-page` 影像預設集。_
 
-但如果您必須變更網站上的影像，該怎麼辦？ 例如，假設您已進行一些測試，發現影像120 x 120 (例如， `Cart` 影像預設集)，並未如您預期般收到。 您必須將寬度增加至175畫素，並將高度增加至175畫素，才能讓影像變大。 傳統上，您必須進入Adobe Photoshop並重新建立所有這些購物車影像。 但若使用Dynamic Media，您只需將「寬度」和「高度」值更新為175並儲存預設集即可編輯影像預設集，如下列範例所示。
+但如果您必須變更網站上的影像，該怎麼辦？ 例如，假設您已進行一些測試，發現影像120 x 120 (例如， `Cart` 影像預設集)，並未如您預期收到。 您必須將寬度增加至175畫素，並將高度增加至175畫素，才能讓影像變大。 傳統上，您必須進入Adobe Photoshop並重新建立所有這些購物車影像。 但若使用Dynamic Media，您只需將「寬度」和「高度」值更新為175並儲存預設集即可編輯影像預設集，如下列範例所示。
 
 ![編輯影像預設集](/help/assets/dynamic-media/assets/dm-edit-image-preset.png)
 _編輯的寬度和高度 `Cart` 影像預設集。_

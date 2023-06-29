@@ -2,10 +2,10 @@
 title: SPA 簡介和逐步解說
 description: 本文章介紹 SPA 的概念，並逐步解說如何使用基本 SPA 應用程式進行編寫，說明它與基礎 AEM SPA 編輯器的關係。
 exl-id: 8dad48d5-fa90-467c-8bec-e4b76e057f80
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2074'
-ht-degree: 94%
+source-wordcount: '2068'
+ht-degree: 87%
 
 ---
 
@@ -46,7 +46,7 @@ SPA 編輯器提供了一個全面的解決方案來支援在 AEM 中使用 SPA�
 
 ### 什麼是 SPA？ {#what-is-a-spa}
 
-單頁應用程式 (SPA) 與傳統頁面的不同之處在於它是在用戶端呈現並且主要由 Javascript 驅動，依賴 Ajax 呼叫來載入資料和動態更新頁面。在單頁載入時一次擷取大部分或所有內容，並根據使用者與頁面的互動，視需要非同步載入其他資源。
+單頁應用程式(SPA)與傳統頁面不同，在於它是於使用者端轉譯，主要是JavaScript導向，依賴Ajax呼叫載入資料並動態更新頁面。 在單頁載入時一次擷取大部分或所有內容，並根據使用者與頁面的互動，視需要非同步載入其他資源。
 
 這減少了頁面重新整理的需要，讓使用者擁有順暢、快速且像是使用原生應用程式的體驗。
 
@@ -71,7 +71,7 @@ AEM SPA 編輯器允許前端開發人員建立可整合到 AEM 網站的 SPA，
 #### 開發人員 {#developers}
 
 * 開發人員希望清楚分開內容和展示之間的考量點。
-* 清楚分開使系統更具可擴展性，並允許獨立的前端開發。
+* 簡潔的分隔讓系統更可擴充，並允許獨立的前端開發。
 
 ### SPA 如何運作？ {#how-does-a-spa-work}
 
@@ -177,7 +177,7 @@ SPA的主要構想是減少伺服器呼叫次數和對伺服器的相依性，�
 
 1. 切換到檢查器中的「網路」索引標籤並重新載入頁面。
 
-   忽略影像要求，注意為頁面載入的主要資源是頁面本身、CSS、React Javascript、其相依性，以及頁面的 JSON 資料。
+   忽略影像要求，請注意，為頁面載入的主要資源為頁面本身、CSS、React JavaScript、其相依性及頁面的JSON資料。
 
    ![WKND SPA 專案網路活動](assets/wknd-network.png)
 
@@ -189,7 +189,7 @@ SPA的主要構想是減少伺服器呼叫次數和對伺服器的相依性，�
 
    AEM SPA編輯器使用 [AEM內容服務](/help/sites-cloud/administering/content-fragments/content-fragments.md) 以JSON模型形式傳遞頁面的整個內容。
 
-   透過實作特定的介面，Sling 模型為 SPA 提供必要的資訊。JSON 資料的傳遞工作向下委派給每個元件 (從頁面到段落到元件等)。
+   透過實作特定的介面，Sling 模型為 SPA 提供必要的資訊。JSON資料的傳送會向下委派給每個元件（從頁面、段落到元件等）。
 
    每個元件選擇它公開的內容以及呈現方式 (伺服器端使用 HTL 或用戶端使用 React 或 Angular)。本文章重點介紹使用 React 進行用戶端呈現。
 
@@ -207,7 +207,7 @@ SPA的主要構想是減少伺服器呼叫次數和對伺服器的相依性，�
 
 ### 與 SPA 編輯器的互動 {#interaction-with-the-spa-editor}
 
-使用範例 WKND SPA 專案應用程式，可以清楚地了解應用程式在發佈時的行為和載入方式，利用內容服務進行 JSON 內容傳遞，以及非同步載入資源。
+使用範例WKND SPA Project應用程式，可清楚瞭解應用程式在發佈時的行為和載入，並利用內容服務進行JSON內容傳送和非同步載入資源。
 
 此外，內容作者可在 AEM 中使用 SPA 編輯器順暢地建立內容。
 
@@ -254,4 +254,4 @@ SPA的主要構想是減少伺服器呼叫次數和對伺服器的相依性，�
 * [開始在 AEM 中使用 React 建立 SPA](getting-started-react.md)展示如何在 AEM 中使用 React 建立基本 SPA 以與 SPA 編輯器搭配運作
 * [開始在 AEM 中使用 Angular 建立 SPA](getting-started-angular.md)展示如何在 AEM 中使用 Angular 建立基本 SPA 以與 SPA 編輯器搭配運作
 * [SPA 編輯器概述](editor-overview.md)更深入地介紹 AEM 和 SPA 之間的通訊模型。
-* [為 AEM 開發 SPA](developing.md) 介紹如何讓前端開發人員為 AEM 開發 SPA，以及 SPA 如何與 AEM 架構互動。
+* [針對AEM開發SPA](developing.md) 說明如何與前端開發人員互動以開發適用於AEM的SPA，以及SPA如何與AEM架構互動。

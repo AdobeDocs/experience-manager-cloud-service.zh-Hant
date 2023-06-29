@@ -4,9 +4,9 @@ description: 瞭解如何啟用現有網站的前端管道，以使用網站主�
 feature: Administering
 role: Admin
 exl-id: 55d54d72-f87b-47c9-955f-67ec5244dd6e
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '564'
+source-wordcount: '562'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 >[!TIP]
 >
->如果您不熟悉前端管道以及如何使用前端管道和網站範本快速部署網站，請檢視 [快速網站建立歷程](/help/journey-sites/quick-site/overview.md) 以取得簡介。
+>如果您不熟悉前端管道以及如何使用前端管道和網站範本快速部署網站，請參閱 [快速網站建立歷程](/help/journey-sites/quick-site/overview.md) 以取得簡介。
 
 如果您尚未根據網站範本和主題建立現有網站，AEM可以設定您的網站以載入使用前端管道部署在現有使用者端資料庫之上的主題。
 

@@ -2,9 +2,9 @@
 title: 樣式系統
 description: 樣式系統可讓範本作者在元件的內容原則中定義樣式類別，讓內容作者在編輯頁面上的元件時能夠選取這些類別。 這些樣式可作為元件的替代視覺變體，使其更靈活。
 exl-id: 224928dd-e365-4f3e-91af-4d8d9f47efdd
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1319'
+source-wordcount: '1320'
 ht-degree: 2%
 
 ---
@@ -46,7 +46,7 @@ ht-degree: 2%
 
 1. AEM頁面作者隨後可以透過元件工具列的樣式選單，在頁面編輯器中選擇設計的樣式。
 
-請注意，在AEM中實際執行的只有最後三個步驟。 這表示所有必要的CSS和Javascript開發都可以在不使用AEM的情況下完成。
+請注意，在AEM中實際執行的只有最後三個步驟。 這表示所有必要的CSS和JavaScript開發都可以在不使用AEM的情況下完成。
 
 實際實作樣式只需要在AEM上部署，並在所需範本的元件中選取。
 
@@ -104,7 +104,7 @@ ht-degree: 2%
 
 >[!CAUTION]
 >
->CSS類別（以及任何必要的Javascript）若設定為元件原則的樣式屬性，則必須部署為 [使用者端資料庫](/help/implementing/developing/introduction/clientlibs.md) 才能運作。
+>CSS類別（以及任何必要的JavaScript）若設定為元件原則的樣式屬性，則必須部署為 [使用者端資料庫](/help/implementing/developing/introduction/clientlibs.md) 才能運作。
 
 ## 設定 {#setup}
 

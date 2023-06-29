@@ -2,10 +2,10 @@
 title: AEM 中 Universal Editor 快速入門
 description: 了解如何存取 Universal Editor，以及如何開始檢測您的第一個 AEM 應用程式以使用它。
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '810'
-ht-degree: 95%
+source-wordcount: '805'
+ht-degree: 88%
 
 ---
 
@@ -32,7 +32,7 @@ ht-degree: 95%
 
 ## 要求存取 Universal Editor {#request-access}
 
-您需要先要求存取 Universal Editor。請移至 [https://experience.adobe.com/#/aem/editor](https://experience.adobe.com/#/aem/editor) 登入，然後驗證您是否有權存取 Universal Editor。
+您需要先要求存取 Universal Editor。另請參閱 [https://experience.adobe.com/#/aem/editor](https://experience.adobe.com/#/aem/editor)，登入並驗證您是否擁有通用編輯器的存取權。
 
 如果您沒有存取權，可以透過同一頁面上連結的表格提出要求。
 
@@ -66,7 +66,7 @@ import "@adobe/universal-editor-cors";
 
 為了能夠使用 Universal Editor 透過您的應用程式編輯 AEM 內容，必須在 AEM 中完成 CORS 和 Cookie 設定。
 
-[必須在 AEM 編寫執行個體上設定以下 OSGi 設定。](/help/implementing/deploying/configuring-osgi.md)
+下列專案 [必須在AEM編寫執行個體上設定OSGi設定](/help/implementing/deploying/configuring-osgi.md).
 
 * `com.day.crx.security.token.impl.impl.TokenAuthenticationHandler` 中的 `SameSite Cookies = None`
 * 移除 X-FRAME-OPTIONS：`org.apache.sling.engine.impl.SlingMainServlet` 中的 SAMEORIGIN 標頭
@@ -161,11 +161,11 @@ itemid="urn:<referenceName>:<resource>"
 </html>
 ```
 
-## 您已準備好使用 Universal Editor {#youre-ready}
+## 您已準備好使用通用編輯器 {#youre-ready}
 
 您的應用程式現在可以使用 Universal Editor 了！
 
-請參閱文件[使用 Universal Editor 編寫內容](authoring.md)，了解內容作者使用 Universal Editor 建立內容有多簡單和直觀。
+另請參閱 [使用通用編輯器編寫內容](authoring.md) 瞭解內容作者使用通用編輯器建立內容是多麼簡單和直觀。
 
 ## 其他資源 {#additional-resources}
 

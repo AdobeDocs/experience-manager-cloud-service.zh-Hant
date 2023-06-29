@@ -2,10 +2,10 @@
 title: 為 AEM as a Cloud Service 設定進階網路
 description: 了解如何為 AEM as a Cloud Service 設定進階網路功能，例如 VPN 或彈性或專用輸出 IP 地址等
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '3579'
-ht-degree: 94%
+source-wordcount: '3571'
+ht-degree: 89%
 
 ---
 
@@ -25,7 +25,7 @@ AEM as a Cloud Service 提供多種類型的進階網路功能，客戶可以使
 * [專用輸出 IP 地址](#dedicated-egress-IP-address) - 將 AEM as a Cloud Service 的對外流量設定為源自唯一的 IP
 * [虛擬私人網路 (VPN)](#vpn) - 為擁有 VPN 技術的客戶在客戶的基礎結構和 AEM as a Cloud Service 之間提供安全流量
 
-本文詳述了當中各個選項，包括如何設定它們。 作為一般設定策略，`/networkInfrastructures` API 端點會在程式層級叫用以宣告所要的進階網路類型，然後叫用每個環境的 `/advancedNetworking` 端點以啟用基礎結構並設定特定於環境的參數。請參考 Cloud Manager API 文件中的適當端點，了解各種正式語法以及範例請求和回應。
+本文詳述了當中各個選項，包括如何設定它們。 作為一般設定策略，`/networkInfrastructures` API 端點會在程式層級叫用以宣告所要的進階網路類型，然後叫用每個環境的 `/advancedNetworking` 端點以啟用基礎結構並設定特定於環境的參數。參考Cloud Manager API檔案中的適當端點，瞭解每個正式語法以及請求和回應範例。
 
 一個程式可以提供單一進階網路變體。 在決定使用彈性連接埠輸出或專用輸出 IP 位址時，如果不需要特定的 IP 位址，建議您選擇彈性連接埠輸出，因為 Adobe 可以最佳化彈性連接埠輸出流量的效能。
 
@@ -36,7 +36,7 @@ AEM as a Cloud Service 提供多種類型的進階網路功能，客戶可以使
 
 >[!NOTE]
 >
->已經佈建舊版專用輸出技術而需要設定這些選項之一的客戶不應這麼做，否則網站連線能力可能會受波及。請聯絡 Adobe 支援以取得協助。
+>已經佈建舊版專用輸出技術而需要設定這些選項之一的客戶不應這麼做，否則網站連線能力可能會受波及。請聯絡Adobe支援以尋求協助。
 
 ## 彈性連接埠輸出 {#flexible-port-egress}
 
@@ -44,11 +44,11 @@ AEM as a Cloud Service 提供多種類型的進階網路功能，客戶可以使
 
 ### 考量事項 {#flexible-port-egress-considerations}
 
-如果您不需要 VPN 並且不需要專用輸出 IP 位址，則建議選擇彈性連接埠輸出，因為不依賴專用出口的流量可以達到更高的輸出量。
+如果您不需要VPN並且不需要專用輸出IP位址，則建議選擇彈性連線埠輸出，因為不依賴專用出口的流量可以達到更高的輸送量。
 
 ### 設定 {#configuring-flexible-port-egress-provision}
 
-對每個程式會叫用一次 POST`/program/<programId>/networkInfrastructures` 端點，直接傳遞 `flexiblePortEgress` 的值 (`kind` 參數和區域)。 端點會以 `network_id` 及其他資訊回應，包括狀態。 完整的參數集和確切的語法，以及如哪些參數之後不能變更等重要資訊，[可以在 API 文件中參考。](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure)
+對每個程式會叫用一次 POST`/program/<programId>/networkInfrastructures` 端點，直接傳遞 `flexiblePortEgress` 的值 (`kind` 參數和區域)。 端點會以回應 `network_id`以及包括狀態在內的其他資訊。 完整的引數集和確切的語法，以及如哪些引數之後不能變更等重要資訊， [可在API檔案中參照。](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure)
 
 呼叫後，通常需要大約 15 分鐘的時間來佈建網路基礎結構。對 Cloud Manager 的[網路基礎結構 GET 端點](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getNetworkInfrastructure)的呼叫會顯示「就緒」狀態。
 
@@ -179,7 +179,7 @@ ProxyPassReverse "/somepath" "https://example.com:8443"
 
 >[!NOTE]
 >
->如果在 2021 年 9 月版本 (10/6/21) 之前已為您佈建專用輸出 IP，請參考[舊版專用輸出位址客戶](#legacy-dedicated-egress-address-customers)。
+>如果在2021年9月版本(10/6/21)之前已為您布建專用輸出IP，請參閱 [舊版專用輸出位址客戶](#legacy-dedicated-egress-address-customers).
 
 ### 優點 {#benefits}
 
@@ -353,7 +353,7 @@ VPN 允許從著作、發佈或預覽連線到內部部署基礎結構或資料�
 
 ### 建立 {#vpn-creation}
 
-對每個程式會叫用一次 POST `/program/<programId>/networkInfrastructures` 端點，傳遞設定資訊的承載，包括：`kind` 參數的值「vpn」、區域、位址空間 (CIDR 清單 - 請注意，這之後不能修改)、DNS 解析器 (用於解析客戶網路中的名稱) 和 VPN 連線資訊，例如閘道設定、共用 VPN 金鑰和 IP 安全性原則。端點會以 `network_id` 及其他資訊回應，包括狀態。 應參考 [API 文件](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure)中完整的參數集和確切的語法。
+對每個程式會叫用一次 POST `/program/<programId>/networkInfrastructures` 端點，傳遞設定資訊的承載，包括：`kind` 參數的值「vpn」、區域、位址空間 (CIDR 清單 - 請注意，這之後不能修改)、DNS 解析器 (用於解析客戶網路中的名稱) 和 VPN 連線資訊，例如閘道設定、共用 VPN 金鑰和 IP 安全性原則。端點會以回應 `network_id`以及包括狀態在內的其他資訊。 應參考 [API 文件](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure)中完整的參數集和確切的語法。
 
 呼叫後，通常需要 45 到 60 分鐘的時間來佈建網路基礎結構。可以呼叫 API 的 GET 方法傳回目前狀態，這最終會從 `creating` 轉成 `ready`。請參閱 API 文件以了解各種狀態。
 
@@ -424,7 +424,7 @@ API 應該在幾秒鐘內做出回應，表明 `updating` 的狀態，大約 10 
   </tr>
   <tr>
     <td></td>
-    <td>如果 IP 不在 <i>VPN 閘道位址</i>空間範圍內，並透過 http proxy 設定 (預設針對使用標準 Java HTTP 用戶端資料庫的 http/s 流量所設定)</td>
+    <td>如果IP不在 <i>vpn閘道位址空間</i> 範圍以及透過http proxy設定（預設針對使用標準Java HTTP使用者端程式庫的http/s流量所設定）</td>
     <td>任何</td>
     <td>流經專用輸出 IP</td>
     <td></td>
@@ -453,7 +453,7 @@ API 應該在幾秒鐘內做出回應，表明 `updating` 的狀態，大約 10 
   </tr>
   <tr>
     <td></td>
-    <td>如果 IP 不在 <i>VPN 閘道位址空間</i>範圍內，並且用戶端連線到 <code>AEM_PROXY_HOST</code> 環境變數 (使用 <code>portOrig</code> 在 <code>portForwards</code>API 參數中宣告)</td>
+    <td>如果IP不在 <i>vpn閘道位址空間</i> 範圍和連線到的使用者端 <code>AEM_PROXY_HOST</code> 使用環境變數 <code>portOrig</code> 在中宣告 <code>portForwards</code> API引數</td>
     <td>任何</td>
     <td>流經專用輸出 IP</td>
     <td></td>
@@ -564,7 +564,7 @@ Header always set Cache-Control private
 此程序和先前的說明大部分類似。但是，如果尚未啟用進階網路的生產環境，則有機會先在中繼環境中啟用以測試該設定：
 
 1. 透過對 [Cloud Manager Create Network Infrastructure API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Network-infrastructure/operation/createNetworkInfrastructure) 的 POST 呼叫建立所有區域的網路基礎結構。 有效負載的JSON設定相對於主要區域的唯一差異是region屬性。
-1. 若是中繼環境，可透過執行 `PUT api/program/{programId}/environment/{environmentId}/advancedNetworking` 以啟用和設定環境範圍的進階網路。如需詳細資訊，請參考[這裡](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Environment-Advanced-Networking-Configuration/operation/enableEnvironmentAdvancedNetworkingConfiguration)的 API 文件。
+1. 若是中繼環境，可透過執行 `PUT api/program/{programId}/environment/{environmentId}/advancedNetworking` 以啟用和設定環境範圍的進階網路。如需詳細資訊，請參閱API檔案 [此處](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Environment-Advanced-Networking-Configuration/operation/enableEnvironmentAdvancedNetworkingConfiguration)
 1. 如有必要，可鎖定外部基礎結構，最好透過 FQDN (例如`p1234.external.adobeaemcloud.com`)。不然可透過 IP 位址進行
 1. 如果中繼環境按預期運作，請啟用並設定環境範圍的進階網路設定以進行生產。
 

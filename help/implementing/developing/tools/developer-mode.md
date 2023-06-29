@@ -4,7 +4,7 @@ seo-title: Developer Mode
 description: 開發人員模式會開啟一個側面板，其中包含數個標籤，為開發人員提供有關目前頁面的資訊
 seo-description: Developer mode opens a side panel with several tabs that provide a developer with information about the current page
 exl-id: fbf11c0f-dc6e-43f3-bcf2-080eacc6ba99
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '528'
 ht-degree: 1%
@@ -76,7 +76,7 @@ ht-degree: 1%
 
 * **編輯指令碼：** 以CRXDE Lite開啟元件指令碼的連結。
 
-* **檢視元件詳細資訊：** 在中開啟元件的詳細資訊 [元件主控台。](/help/sites-cloud/authoring/features/components-console.md)
+* **檢視元件詳細資訊：** 在中開啟元件的詳細資訊 [元件主控台](/help/sites-cloud/authoring/features/components-console.md).
 
 點選或按一下>形箭號來展開元件專案也可顯示：
 

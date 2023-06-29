@@ -2,9 +2,9 @@
 title: 建立示範網站
 description: 根據預先設定的範本庫在 AEM 中建立示範網站。
 exl-id: e76fd283-12b2-4139-9e71-2e145b9620b1
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '842'
+source-wordcount: '841'
 ht-degree: 11%
 
 ---
@@ -110,5 +110,5 @@ ht-degree: 11%
 
 * [Cloud Manager 文件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html) - 如果您想要 Cloud Manager 功能的更多詳細資訊，您可能想要直接查閱深入的技術文件。
 * [建立網站](/help/sites-cloud/administering/site-creation/create-site.md)  — 瞭解如何使用AEM建立網站，使用網站範本定義網站的樣式和結構。
-* [AEM頁面命名慣例。](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#page-name-restrictions-and-best-practices)  — 請參閱本頁面以瞭解組織AEM頁面的慣例。
+* [AEM頁面命名慣例](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#page-name-restrictions-and-best-practices).  — 請參閱本頁面以瞭解組織AEM頁面的慣例。
 * [AEM基本處理](/help/sites-cloud/authoring/getting-started/basic-handling.md)  — 如果您不熟悉AEM，請參閱本檔案，瞭解導覽和控制檯組織等基本概念。

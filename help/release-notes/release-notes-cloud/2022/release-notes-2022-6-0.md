@@ -2,9 +2,9 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2022.6.0 版發行說明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2022.6.0 版發行說明。'
 exl-id: cf2133dc-56cd-4a07-ab11-72e16f015ff5
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '638'
+source-wordcount: '639'
 ht-degree: 20%
 
 ---
@@ -67,7 +67,7 @@ Experience Manager Assets現在使用Adobe Sensei AI功能 [區分影像中的�
 
 ![產品駕駛艙屬性概觀](/help/assets/CIF/product_cockpit_properties_overview.png)
 
-* 改善協力廠商聯結器在I/O執行階段的相容性和健全性
+* 改善協力廠商聯結器在I/O Runtime上的相容性和健全性
 
 * 改善對GQL使用者端設定覆寫的支援（例如，設定自訂快取行為）
 
@@ -98,7 +98,7 @@ Experience Manager Assets現在使用Adobe Sensei AI功能 [區分影像中的�
 
 ## Cloud Manager {#cloud-manager}
 
-您可以在[此處](/help/implementing/cloud-manager/release-notes/current.md)找到 Cloud Manager 每月發行的完整清單。
+您可以在[這裡](/help/implementing/cloud-manager/release-notes/current.md)找到 Cloud Manager 每月發行的完整清單。
 
 ## 移轉工具 {#migration-tools}
 

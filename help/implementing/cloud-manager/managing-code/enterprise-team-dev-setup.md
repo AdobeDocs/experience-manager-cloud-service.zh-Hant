@@ -2,10 +2,10 @@
 title: 企業開發團隊設定
 description: 了解如何設定和擴展您的企業開發團隊，並了解 AEM as a Cloud Service 如何支援您的開發流程。
 exl-id: 85f8779b-12cb-441b-a34d-04641184497a
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1444'
-ht-degree: 85%
+source-wordcount: '1437'
+ht-degree: 82%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 85%
 
 ## 簡介 {#introduction}
 
-為了支援具有企業開發設定的客戶，AEM as a Cloud Service 與 Cloud Manager 及其專門建置的[教條式 CI/CD 管道完全整合。](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)這些管道和服務根據最佳實務建置，以確保整體的[ 測試和最高的計劃碼品質。](/help/implementing/cloud-manager/code-quality-testing.md)
+為了支援具有企業開發設定的客戶，AEMas a Cloud Service與Cloud Manager及其專門建置的完全整合 [教條式CI/CD管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md). 這些管道和服務根據最佳實務建置，確保徹底的 [測試和最高的程式碼品質](/help/implementing/cloud-manager/code-quality-testing.md).
 
 ## 在企業團隊開發設定中 Cloud Manager 的支援 {#cloud-manager}
 
@@ -70,7 +70,7 @@ Cloud Manager 的 Git 存放庫中的設定有兩個分支。
 * 穩定發行分支包含自所有團隊的生產計劃碼。
 * 開發分支包含來自所有團隊的開發計劃碼。
 
-在開發或穩定分支中，每次推送到團隊的Git存放庫都會觸發 [GitHub動作。](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md#managing-code)
+在開發或穩定分支中，每次推送到團隊的Git存放庫都會觸發 [GitHub動作](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md#managing-code).
 
 所有專案都遵循相同的穩定分支設定。推送到專案的穩定分支會自動推送到 Cloud Manager Git 存放庫中的穩定分支。Cloud Manager 中的生產管道設定為透過推送到穩定分支來觸發。因此，生產管道由任何團隊每次推送到穩定分支來執行，如果所有品質門檻都透過，生產部署就會更新。
 
@@ -82,7 +82,7 @@ Cloud Manager 的 Git 存放庫中的設定有兩個分支。
 
 對於本機開發，使用[適用於 AEM as a Cloud Service的 SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md#developing)。SDK 可設定本機作者、發佈和 Dispatcher。這讓離線開發和快速返回時間有可能實現。有時只使用作者環境進行開發，但快速設定 Dispatcher 和發佈環境允許在推送至 Git 存放庫之前在本機測試所有內容。
 
-每個團隊的成員通常會從共用的 Git 中簽出計劃碼以及他們自己的專案計劃碼。由於專案是獨立的，因此無需簽出其他專案。
+每個團隊的成員通常會從共用的Git中籤出程式碼，以供他們自己的專案程式碼使用。 由於專案是獨立的，因此無需簽出其他專案。
 
 ![本機簽出和 SDK](/help/implementing/cloud-manager/assets/team-setup3.png)
 
@@ -90,7 +90,7 @@ Cloud Manager 的 Git 存放庫中的設定有兩個分支。
 
 >[!TIP]
 >
->若想了解此設定的更多資訊，請參閱文件：[使用多來源 Git 存放庫](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/working-with-multiple-source-git-repos.html?lang=zh-Hant#managing-code)。
+>另請參閱 [使用多個來源Git存放庫](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/working-with-multiple-source-git-repos.html?lang=zh-Hant#managing-code) 以進一步瞭解此設定。
 
 ### 多團隊設定的注意事項 {#considerations}
 
@@ -98,7 +98,7 @@ Cloud Manager 的 Git 存放庫中的設定有兩個分支。
 
 相反，如果沒有這樣的系統，因為每個團隊都可以單獨部署，所以單個團隊的更新可能會導致生產穩定性問題。此外，它需要協調和規劃停機時間來推出更新。隨著團隊數量增加，協調工作會變得更加複雜且很快就無法管理。
 
-如果在品質門檻中偵測到問題則不會影響生產，且無需 Adobe 人員介入即可偵測和修復問題。如果沒有Cloud Service且沒有總是測試整個部署，部分部署可能會導致中斷，需要請求復原甚至從備份中完全還原。 部分測試還可能導致其他問題，而這些問題需要在事後由 Adobe 人員協調和支援來解決。
+如果在品質門檻中偵測到問題則不會影響生產，且無需 Adobe 人員介入即可偵測和修復問題。如果沒有 Cloud Service 且並未一直測試整個部署，部分部署可能會造成中斷而必須要求復原或甚至從備份中完全還原。部分測試還可能導致其他問題，而這些問題需要在事後由 Adobe 人員協調和支援來解決。
 
 >[!TIP]
 >

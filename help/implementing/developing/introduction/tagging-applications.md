@@ -2,7 +2,7 @@
 title: 將標記內建至 AEM 應用程式中
 description: 以程式設計方式使用自訂AEM應用程式中的標籤或擴展標籤
 exl-id: a106dce1-5d51-406a-a563-4dea83987343
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '762'
 ht-degree: 1%
@@ -22,7 +22,7 @@ ht-degree: 1%
 有關標籤的相關資訊：
 
 * 另請參閱 [使用標籤](/help/sites-cloud/authoring/features/tags.md) 有關將內容標籤為內容作者的資訊。
-* 請參閱管理標籤，以取得管理員對於建立和管理標籤以及已對哪些內容套用的觀點。
+* 如需管理員對於建立和管理標籤以及已對哪些內容標籤套用的觀點，請參閱管理標籤。
 
 ## 標籤API概觀 {#overview-of-the-tagging-api}
 
@@ -121,7 +121,7 @@ replicator.replicate(session, replicationActionType, tagPath);
 
 ## 標籤記憶體回收器 {#the-tag-garbage-collector}
 
-標籤垃圾回收程式是一項背景服務，可清除隱藏和未使用的標籤。 隱藏和未使用的標籤是底下的標籤 `/content/cq:tags` 具有 `cq:movedTo` 屬性和，而不是在內容節點上使用。 它們的計數為零。 藉由使用此延遲刪除程式，內容節點(即 `cq:tags` 屬性)，不必隨著移動或合併作業進行更新。 中的參照 `cq:tags` 屬性會在以下情況時自動更新： `cq:tags` 屬性會更新，例如，透過頁面屬性對話方塊。
+標籤垃圾回收程式是一項背景服務，可清除隱藏和未使用的標籤。 隱藏和未使用的標籤是底下的標籤 `/content/cq:tags` 具有 `cq:movedTo` 屬性和，而不是在內容節點上使用。 它們的計數為零。 透過使用這種延遲刪除程式，內容節點(即 `cq:tags` 屬性)，不必隨著移動或合併作業進行更新。 中的參照 `cq:tags` 屬性會在以下情況時自動更新： `cq:tags` 屬性會更新，例如，透過頁面屬性對話方塊。
 
 標籤記憶體回收行程預設為每天執行一次。 這可以在以下位置設定：
 

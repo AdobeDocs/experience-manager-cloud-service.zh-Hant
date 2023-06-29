@@ -2,10 +2,10 @@
 title: 管理環境
 description: 瞭解您可以建立的環境型別，以及如何為您的Cloud Manager專案建立環境型別。
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: cf1e2717342ca4e00780428d6ccf264bd8eca371
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2276'
-ht-degree: 48%
+source-wordcount: '2274'
+ht-degree: 47%
 
 ---
 
@@ -86,7 +86,7 @@ ht-degree: 48%
 1. 在 **其他發佈區域** 從下拉式清單中選取額外的區域。
 1. 選取區域會新增到下拉式清單下方以顯示其選取範圍。
    * 點選或按一下 `X` ，以便取消選取。
-1. 從「**額外發佈區域**」下拉式清單中選取另一個區域，以新增另一個區域。
+1. 從「 」中選取其他區域 **其他發佈區域** 下拉式清單，以新增其他區域。
 1. 準備要建立環境時，點選或按一下「**儲存**」。
 
 ![選取多個區域](assets/select-multiple-regions.png)
@@ -163,7 +163,7 @@ Cloud Manager為每個AEMas a Cloud Service環境提供預覽服務（作為額�
 
    * 另請參閱 [套用和取消套用IP允許清單](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) 以取得更多詳細資料。
 
-1. 使用更新 **IP 允許清單**&#x200B;工作流程移除預設 IP，並依需要新增 IP。如需了解更多，請參閱[管理 IP 允許清單](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md)。
+1. 使用更新 **IP 允許清單**&#x200B;工作流程移除預設 IP，並依需要新增 IP。另請參閱 [管理IP允許清單](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md) 以深入瞭解。
 
 解鎖預覽服務的存取權後，預覽服務名稱前面的鎖定圖示不再顯示。
 

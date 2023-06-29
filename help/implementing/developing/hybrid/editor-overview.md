@@ -2,10 +2,10 @@
 title: SPA 編輯器概觀
 description: 本文全面概述了 SPA 編輯器及其運作原理，包括 SPA 編輯器在 AEM 中互動的詳細工作流程。
 exl-id: 9814d86e-8d87-4f7f-84ba-6943fe6da22f
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '1630'
-ht-degree: 95%
+ht-degree: 90%
 
 ---
 
@@ -31,7 +31,7 @@ AEM 中的 SPA 支援帶入一個薄 JS 層，在頁面編輯器中載入內容�
 
 ## 設計 {#design}
 
-SPA 的頁面元件不會透過 JSP 或 HTL 檔案提供其子元件的 HTML 元素。此操作委託給 SPA 框架。子元件或模型的表示是以 JSON 資料結構形式從 JCR 中提取。然後根據該結構將 SPA 元件新增到頁面。此行為將頁面元件的初始內文組合與非 SPA 對應部分區分開來。
+SPA的頁面元件不會透過JSP或HTL檔案提供其子元件的HTML元素。 此操作委託給 SPA 框架。子元件或模型的表示是以 JSON 資料結構形式從 JCR 中提取。然後根據該結構將 SPA 元件新增到頁面。此行為將頁面元件的初始內文組合與非 SPA 對應部分區分開來。
 
 ### 頁面模型管理 {#page-model-management}
 
@@ -64,7 +64,7 @@ SPA 的頁面元件不會透過 JSP 或 HTL 檔案提供其子元件的 HTML 元
 * 頁面編輯器和 SPA 之間的通訊是使用 JSON 而不是 HTML 進行的。
 * 頁面編輯器透過 iframe 和傳訊 API 向 SPA 提供最新版本的頁面模型。
 * 頁面模型管理器會通知編輯器它已準備好進行編輯，並將頁面模型作為 JSON 結構傳遞。
-* 編輯器不會更改或甚至存取正在編寫之頁面的 DOM 結構，而是提供最新的頁面模型。
+* 編輯器不會更改或甚至不會存取正在編寫的頁面的DOM結構，而是提供最新的頁面模型。
 
 ![SPA 工作流程](assets/workflow.png)
 
@@ -147,7 +147,7 @@ SPA 的頁面元件不會透過 JSP 或 HTL 檔案提供其子元件的 HTML 元
 
 ## 要求和限制 {#requirements-limitations}
 
-若要使作者能夠使用頁面編輯器編輯 SPA 的內容，必須實作 SPA 應用程式以與 AEM SPA Editor SDK 互動。請參閱[開始在 AEM 中使用 React 建立 SPA](getting-started-react.md)文件，了解基本的運作知識。
+若要使作者能夠使用頁面編輯器編輯 SPA 的內容，必須實作 SPA 應用程式以與 AEM SPA Editor SDK 互動。請參閱 [使用React在AEM中開始使用SPA](getting-started-react.md) 最少的檔案，讓您知道如何執行自己的工作。
 
 ### 支援的框架 {#supported-frameworks}
 
@@ -173,7 +173,7 @@ SPA Editor SDK 支援以下最低版本：
 1. 在包含文本 HTML 的容器包裝函式元素上設定一個屬性 (可以是任何屬性)。對於 WKND SPA 專案，它是一個 `<div>` 元素，使用的選擇器是 `data-rte-editelement`。
 1. 在指向該選擇器的對應 AEM 文字元件的 `cq:InplaceEditingConfig` 上建立設定 `editElementQuery`，例如 `data-rte-editelement`。這讓編輯器知道哪個 HTML 元素包裝 HTML 文字。
 
-如需關於 `editElementQuery` 屬性和 RTF 文字編輯器設定的其他資訊，請參閱[設定 RTF 文字編輯器](/help/implementing/developing/extending/rich-text-editor.md)
+如需更多關於 `editElementQuery` 屬性和RTF編輯器的設定，請參閱 [設定RTF編輯器](/help/implementing/developing/extending/rich-text-editor.md).
 
 ### 限制 {#limitations}
 

@@ -2,10 +2,10 @@
 title: Cloud Manager 環境變數
 description: 標準環境變數可以透過 Cloud Manager 進行設定和管理，並提供給執行階段環境，用於 OSGi 設定。
 exl-id: 5cdd5532-11fe-47a3-beb2-21967b0e43c6
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1017'
-ht-degree: 93%
+source-wordcount: '1018'
+ht-degree: 90%
 
 ---
 
@@ -88,7 +88,7 @@ ht-degree: 93%
 
    ![編輯變數](assets/edit-variable.png)
 
-1. 完成所有必需的設定變更後，選擇&#x200B;**儲存**。
+1. 完成所有必要的設定變更後，選取 **儲存**.
 
 [新增變數時](#add-variables)，具有&#x200B;**更新**&#x200B;狀態的指示器會顯示在表格頂端和更新的變數旁邊，表示正在使用設定更新環境。完成後，更新的環境變數會顯示在表格中。
 
@@ -128,8 +128,8 @@ ht-degree: 93%
 
 ### OSGi 設定 {#osgi}
 
-一般環境變數和祕密都可以在 [OSGi 設定](/help/implementing/deploying/configuring-osgi.md)中使用。
+一般環境變數和秘密都可用於 [OSGi設定](/help/implementing/deploying/configuring-osgi.md).
 
 ### 管道變數 {#pipeline}
 
-除了環境變數，還有管道變數會在建置階段顯示。[在此處了解更多管道變數。](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#pipeline-variables)
+除了環境變數，還有管道變數會在建置階段顯示。[在此處進一步瞭解管道變數](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#pipeline-variables).

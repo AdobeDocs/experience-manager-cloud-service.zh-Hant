@@ -3,10 +3,10 @@ title: Adobe Experience Manager as a Cloud Service 中 Cloud Manager 2023.6.0 �
 description: 以下是 AEM as a Cloud Service 中 Cloud Manager 2023.6.0 的發行說明。
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: deef27dd90be22669b2328f6e394b8d3df99b4b9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '238'
-ht-degree: 100%
+source-wordcount: '237'
+ht-degree: 93%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->有關 Adobe Experience Manager as a Cloud Service 的目前發行說明，請參閱[本頁面](/help/release-notes/release-notes-cloud/release-notes-current.md)。
+>另請參閱 [此頁面](/help/release-notes/release-notes-cloud/release-notes-current.md) 以瞭解Adobe Experience Manager as a Cloud Service目前的發行說明。
 
 ## 發行日期 {#release-date}
 

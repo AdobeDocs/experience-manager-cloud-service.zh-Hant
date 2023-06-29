@@ -2,10 +2,10 @@
 title: 存取 Admin Console
 description: 一旦您了解了上線所需的準備工作和 AEMaaCS 結構的基礎知識，您就可以首次登入 Admin Console 了。
 exl-id: 0ccce328-a356-4ba9-b7fe-f67abc25b924
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1109'
-ht-degree: 97%
+source-wordcount: '1107'
+ht-degree: 94%
 
 ---
 
@@ -58,7 +58,7 @@ Adobe Admin Console 是管理您的 Adobe 產品授權和使用者的中心位�
 
    ![Admin Console](/help/journey-onboarding/assets/get-started1.png)
 
-1. 如果您可以存取多個組織，請確保您已登入正確的組織。要更改您的組織，請單擊右上角的組織名稱，然後選擇您需要存取的所需組織。
+1. 如果您擁有多個組織的存取權，請確定您已登入正確的組織。 若要變更您的組織，請按一下右上角的組織名稱，然後選擇您需要存取的所需組織。
 
    ![變更組織](/help/journey-onboarding/assets/admin-console-orgswitch.png)
 

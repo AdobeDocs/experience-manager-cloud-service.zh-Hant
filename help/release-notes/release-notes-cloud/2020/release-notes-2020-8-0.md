@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2020.8.0 版發行說明。'
 description: '"[!DNL Adobe Experience Manager] 2020.8.0版as a Cloud Service發行說明」。'
 exl-id: 83413130-ae90-4419-bcf7-42fdc740452b
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1041'
-ht-degree: 33%
+source-wordcount: '1039'
+ht-degree: 32%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 33%
 
 * 能夠 [將頁面和子頁面（頁面樹狀結構）還原為舊版](/help/sites-cloud/authoring/features/page-versions.md#reinstating-versions).
 
-* 能夠 [建立啟動](/help/sites-cloud/authoring/launches/overview.md) 在AEM中 [SPA編輯器。](/help/implementing/developing/hybrid/introduction.md)
+* 能夠 [建立啟動](/help/sites-cloud/authoring/launches/overview.md) 在AEM中 [SPA編輯器](/help/implementing/developing/hybrid/introduction.md).
 
 
 ## [!DNL Adobe Experience Manager Assets] as a Cloud Service {#assets}
@@ -82,7 +82,7 @@ ht-degree: 33%
   >[!NOTE]
   >此後，內容稽核已重命名為體驗稽核。
 
-  如需更多詳細資訊，請參考[體驗稽核結果](/help/implementing/cloud-manager/experience-audit-testing.md)。
+  另請參閱 [體驗稽核測試](/help/implementing/cloud-manager/experience-audit-testing.md) 以取得更多詳細資料。
 
 * Assets 程序中新建立的環境現在將自動配置智慧內容服務。
 
@@ -138,8 +138,8 @@ ht-degree: 33%
 
 ### 新增功能 {#what-is-new-refactoring}
 
-* 推出AIO-CLI增效模組，整合了程式碼重構工具，讓開發人員得以從單一位置叫用及執行程式碼重構工具。 請參閱 [Git資源： aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) 以取得更多詳細資料。
+* 推出AIO-CLI增效模組，整合了程式碼重構工具，讓開發人員得以從單一位置叫用及執行程式碼重構工具。 另請參閱 [Git資源： aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) 以取得更多詳細資料。
 
-* 已擴充的AEM Dispatcher Converter可支援將內部部署和Adobe Managed Services Dispatcher設定轉換為與AEMas a Cloud Service相容的Dispatcher設定。 請參閱 [Git資源： AEM Cloud Service Dispatcher Converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter) 以取得更多詳細資料。
+* 已擴充的AEM Dispatcher Converter可支援將內部部署和Adobe Managed Services Dispatcher設定轉換為與AEMas a Cloud Service相容的Dispatcher設定。 另請參閱 [Git資源： AEM Cloud Service Dispatcher Converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter) 以取得更多詳細資料。
 
 * AEM Dispatcher Converter重新寫入 ` node.js ` 並與AIO-CLI外掛程式整合。

@@ -2,9 +2,9 @@
 title: 快取與效能
 description: 瞭解可啟用GraphQL和內容快取的各種設定，以最佳化商務實作的效能。
 exl-id: 21ccdab8-4a2d-49ce-8700-2cbe129debc6
-source-git-commit: afbcd1e50a12a9b0642c586d7d81bb90ea91a58d
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '838'
+source-wordcount: '840'
 ht-degree: 2%
 
 ---

@@ -2,10 +2,10 @@
 title: 計劃碼品質測試
 description: 了解管道計劃碼品質測試如何運作及如何提高部署品質。
 exl-id: e2981be9-fb14-451c-ad1e-97c487e6dc46
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1175'
-ht-degree: 97%
+source-wordcount: '1161'
+ht-degree: 85%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 97%
 
 計劃碼品質測試根據一組品質規則評估您的應用計劃計劃碼。這是計劃碼品質管道的主要目的，並在所有生產和非生產管道中的建構步驟之後立即執行。
 
-參考文件[設定 CI-CD 管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)了解有關不同類型管道的更多資訊。
+另請參閱 [設定CI-CD管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) 以進一步瞭解不同型別的管道。
 
 ## 計劃碼品質規則 {#understanding-code-quality-rules}
 
@@ -30,7 +30,7 @@ ht-degree: 97%
 
 >[!NOTE]
 >
->若要下載完整的規則清單，可[使用此連結。](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx)
+>您可以下載完整的規則清單 [透過此連結](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx).
 
 ### 三層級評等 {#three-tiered-gate}
 
@@ -60,16 +60,16 @@ ht-degree: 97%
 | 適用範圍 | 使用以下公式將單位測試行適用範圍和條件適用範圍混合後定義：<br/>`Coverage = (CT + CF + LC)/(2*B + EL)`  <ul><li>`CT` = 在執行單位測試時已經至少一次評估為 `true` 的條件</li><li>`CF` = 在執行單位測試時已經至少一次評估為 `false` 的條件</li><li>`LC` = 適用行數 = lines_to_cover - uncovered_lines</li><li>`B` = 條件總數</li><li>`EL` = 可執行行的總數 (lines_to_cover)</li></ul> | 重要 | &lt; 50% |
 | 略過的單位測試 | 略過的單位測試總數 | 資訊 | > 1 |
 | 未解決的問題 | 整體問題類型 - 漏洞、錯誤和計劃碼異味 | 資訊 | > 0 |
-| 重複的行 | 定義為重複區塊中包含的行數。在以下條件下，會將計劃碼區塊視為重複。<br>非 Java 專案：<ul><li>應該至少有 100 個連續和重複的權杖。</li><li>這些權杖應至少分佈在： </li><li>COBOL 的 30 行計劃碼 </li><li>ABAP 的 20 行計劃碼 </li><li>其他語言的 10 行計劃碼</li></ul>Java 專案：<ul></li><li> 無論權杖和行的數量如何，應至少有 10 個連續和重複的陳述式。</li></ul>偵測重複時會忽略縮排和字串常值中的差異。 | 資訊 | > 1% |
+| 重複的行 | 定義為重複區塊中包含的行數。在以下條件下，會將計劃碼區塊視為重複。<br>非 Java 專案：<ul><li>應該至少有 100 個連續和重複的權杖。</li><li>這些權杖應至少分佈在： </li><li>COBOL 的 30 行計劃碼 </li><li>ABAP 的 20 行計劃碼 </li><li>其他語言的 10 行計劃碼</li></ul>Java 專案：<ul></li><li> 無論權杖和行的數量如何，應至少有 10 個連續和重複的陳述式。</li></ul>偵測重複專案時，會忽略縮排和字串常值中的差異。 | 資訊 | > 1% |
 | 雲端服務相容性 | 識別出的雲端服務相容性問題的數量 | 資訊 | > 0 |
 
 >[!NOTE]
 >
->如需更多詳細資訊，請參閱 [SonarQube 的量度定義](https://docs.sonarqube.org/latest/user-guide/metric-definitions/)。
+>另請參閱 [SonarQube的量度定義](https://docs.sonarqube.org/latest/user-guide/metric-definitions/) 以取得更詳細的定義。
 
 >[!NOTE]
 >
->若要了解由[!UICONTROL 雲端管理員]執行的自訂計劃碼品質規則的詳細資訊，請參閱文件：[自訂計劃碼品質規則](/help/implementing/cloud-manager/custom-code-quality-rules.md)。
+>若要深入瞭解由執行的自訂程式碼品質規則 [!UICONTROL Cloud Manager]，請參閱 [自訂程式碼品質規則](/help/implementing/cloud-manager/custom-code-quality-rules.md).
 
 ## 處理誤判 {#dealing-with-false-positives}
 
@@ -103,10 +103,10 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 
 >[!NOTE]
 >
->雖然最佳做法是使 `@SuppressWarnings` 註解盡可能具體 (即僅標註導致問題的特定陳述式或區塊)，但可以在分類層級進行註解。
+>雖然最佳做法是讓 `@SuppressWarnings` 儘可能具體的註釋，也就是說，僅註釋導致問題的特定陳述式或區塊，可以在類別層級進行註釋。
 
 >[!NOTE]
->雖然沒有明確的安全測試步驟，但在計劃碼品質步驟中評估了與安全相關的計劃碼品質規則。參考文件[AEM as a Cloud Service的安全總覽](/help/security/cloud-service-security-overview.md)了解有關雲端服務安全性的更多資訊。
+>雖然沒有明確的安全測試步驟，但在計劃碼品質步驟中評估了與安全相關的計劃碼品質規則。另請參閱 [AEMas a Cloud Service安全性總覽](/help/security/cloud-service-security-overview.md) 以進一步瞭解Cloud Service的安全性。
 
 ## 掃描最佳化的內容套件 {#content-package-scanning-optimization}
 
@@ -120,7 +120,7 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 
 對於產生數十個嵌入套件的專案，已證明這種最佳化將在每次管道執行節省 10 分鐘以上的時間。
 
-當「全」內容套件包含已略過的內容套件和 OSGi 套裝的組合時，可能會出現一種特殊情況。例如，如果 `myco-all-1.0.0-SNAPSHOT.zip` 包含前面提到的兩個嵌入套件以及一個或多個 OSGi 套裝，則會建構出一個全新、最小的內容套件，且僅包含 OSGI 套裝。此套件一律名為 `cloudmanager-synthetic-jar-package`，而且會將所包含的套裝放在 `/apps/cloudmanager-synthetic-installer/install` 中。
+當「全」內容套件包含已略過的內容套件和 OSGi 套裝的組合時，可能會出現一種特殊情況。例如，如果 `myco-all-1.0.0-SNAPSHOT.zip` 包含前面提到的兩個內巢狀件和一個或多個OSGi套裝，則會建構出一個全新、最小的內容套件，且僅包含OSGi套裝。 此套件一律名為 `cloudmanager-synthetic-jar-package`，而且會將所包含的套裝放在 `/apps/cloudmanager-synthetic-installer/install` 中。
 
 >[!NOTE]
 >

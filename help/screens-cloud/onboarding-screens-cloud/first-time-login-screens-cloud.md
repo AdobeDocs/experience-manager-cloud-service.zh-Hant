@@ -2,9 +2,9 @@
 title: as a Cloud Service首次登入Screens
 description: 本頁面說明Screensas a Cloud Service快速入門中的第一個步驟。
 exl-id: d3a6aa5d-226b-484d-97ea-0b8312c7a0fd
-source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '204'
+source-wordcount: '203'
 ht-degree: 1%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 1%
 
 ## 新增使用者至Adobe Admin Console {#admin-console}
 
-布建AdobeIdentity Management System (IMS)組織ID後，您現在可以存取 [Adobe Admin Console](https://adminconsole.adobe.com/). 請參閱 [Adobe Admin Console使用者](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/users.ug.html) 以進一步瞭解如何將使用者新增至Admin Console。
+布建AdobeIdentity Management System (IMS)組織ID後，您現在可以存取 [Adobe Admin Console](https://adminconsole.adobe.com/). 另請參閱 [Adobe Admin Console使用者](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/users.ug.html) 以進一步瞭解如何將使用者新增至Admin Console。
 
 >[!NOTE]
 >使用者可以存取AEM Cloud Service產品設定檔，以便使用Adobe ID或Federated ID登入AEM。

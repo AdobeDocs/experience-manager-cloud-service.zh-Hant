@@ -2,10 +2,10 @@
 title: 內容轉移工具綜覽
 description: 內容轉移工具綜覽
 exl-id: cfc0366a-2139-4d9d-b5bc-0b65bef4013c
-source-git-commit: 8197b4f4e5cda21532c3660c2f0ec4855ba53a6a
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '648'
-ht-degree: 46%
+source-wordcount: '645'
+ht-degree: 42%
 
 ---
 
@@ -34,7 +34,7 @@ ht-degree: 46%
 
 1. **提取**：提取指的是從來源 AEM 例項提取內容，並存放至名為&#x200B;*移轉集*&#x200B;的暫存區域。*移轉集*&#x200B;是 Adobe 提供的雲端儲存空間，可供暫時儲存在來源 AEM 例項與雲端服務 AEM 例項間轉移的內容。
 
-   如需詳細資訊，請參考[內容轉移中的提取程序](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md)。
+   另請參閱 [內容轉移中的擷取程式](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md) 以取得更多詳細資料。
 
    >[!NOTE]
    >使用者對應現在會在提取階段中自動在作者上執行（但可選擇在作者上停用或在發佈上啟用）。 另請參閱 [使用者對應和主體移轉](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md) 以取得更多詳細資料。
@@ -55,9 +55,9 @@ ht-degree: 46%
 >[!NOTE]
 >初始轉移內容後，建議您先頻繁地執行追加差異內容，以縮短最終差異化內容轉移的內容凍結時間，然後再於雲端服務上線。
 
-如果要在提取階段中&#x200B;***追加***&#x200B;現有的移轉集，則必須停用&#x200B;*覆蓋*&#x200B;選項。如需詳細資訊，請參考[追加提取](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process)。
+如果要在提取階段中&#x200B;***追加***&#x200B;現有的移轉集，則必須停用&#x200B;*覆蓋*&#x200B;選項。另請參閱 [追加提取](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process) 以取得更多詳細資料。
 
-如果要在擷取階段中，將差異內容套用至目前內容的頂端，則必須停用&#x200B;*「擦去」*&#x200B;選項。如需詳細資訊，請參考[追加擷取](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process)。
+如果要在擷取階段中，將差異內容套用至目前內容的頂端，則必須停用&#x200B;*「擦去」*&#x200B;選項。另請參閱 [追加擷取](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) 以取得更多詳細資料。
 
 ## 移轉集到期 {#migration-set-expiry}
 

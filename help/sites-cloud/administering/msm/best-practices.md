@@ -4,9 +4,9 @@ description: 瞭解Adobe工程和諮詢團隊編譯的最佳實務，協助您�
 feature: Multi Site Manager
 role: Admin
 exl-id: 61b8ded8-3b9e-423f-85a9-7280e1a721cc
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1429'
+source-wordcount: '1425'
 ht-degree: 3%
 
 ---
@@ -39,7 +39,7 @@ MSM是可設定的架構，用於自動化內容部署。 實作通常涉及網�
 
 >[!NOTE]
 >
-> 請注意，許可權標籤中的CUG無法從Blueprint轉出至即時副本。 請在設定即時副本時對此進行規劃。
+>「許可權」標籤中的CUG無法從Blueprint轉出至即時副本。 設定即時副本時，請針對此規則進行規劃。
 
 ## 元件和容器同步 {#components-and-container-synchronization}
 
@@ -81,13 +81,13 @@ MSM可透過兩種方式協助建立多語言網站：
 
 建立語言主版時，請記住以下事項：
 
-* 而MSM本身 **不提供內容翻譯**，可與第三方翻譯聯結器整合。 請注意：
+* 而MSM本身 **不提供內容翻譯**，可與第三方翻譯聯結器整合。 請注意下列事項：
    * MSM可讓您取消頁面和/或元件層級的繼承。 這有助於防止在下一次轉出時覆寫已翻譯內容（來自即時副本，以及來自Blueprint的尚未翻譯內容）。
       * 某些協力廠商翻譯聯結器會自動管理MSM繼承。
       * 如需詳細資訊，請洽詢您的翻譯服務供應商。
       * 建立及翻譯語言母版的另一種方法是將語言副本與AEM現成的翻譯整合架構搭配使用。
 
-如需詳細資訊，請參閱 [翻譯多語言網站的內容](/help/sites-cloud/administering/translation/overview.md) 和 [翻譯最佳實務。](/help/sites-cloud/administering/translation/best-practices.md)
+如需詳細資訊，請參閱 [翻譯多語言網站的內容](/help/sites-cloud/administering/translation/overview.md) 和 [翻譯最佳實務](/help/sites-cloud/administering/translation/best-practices.md).
 
 ## 結構變更和轉出 {#structure-changes-and-rollouts}
 
@@ -144,7 +144,7 @@ MSM轉出設定可高度自訂。 您應注意，自動化轉出可能會產生�
 
 ## 更多資訊 {#further-information}
 
-請參閱下列文章，瞭解有關MSM和Live Copy的詳細資訊。
+請參閱下列文章以取得有關MSM和即時副本的詳細資訊。
 
 * [建立和同步 Live Copy](creating-live-copies.md)
 * [Live Copy 概觀主控台](live-copy-overview.md)

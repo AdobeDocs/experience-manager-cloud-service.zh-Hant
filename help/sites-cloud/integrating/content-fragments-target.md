@@ -2,9 +2,9 @@
 title: 將內容片段匯出到 Adobe Target
 description: 將內容片段匯出到 Adobe Target
 exl-id: 760e0a39-0805-498e-a2c9-038fd1e1058d
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2227'
+source-wordcount: '2222'
 ht-degree: 1%
 
 ---
@@ -52,7 +52,7 @@ ht-degree: 1%
 
 1. 您必須 [將AEM與Adobe Target整合](/help/sites-cloud/integrating/integrating-adobe-target.md).
 
-<!-- link rewriter - targets in content-fragments-customizing don't exist yet
+<!-- link rewriter - targets in content-fragments-customizing do not exist yet
 
 1. Content Fragments are exported from the AEM author instance, so you need to [Configure the AEM Link Externalizer](/help/implementing/developing/extending/content-fragments-customizing.md#configuring-the-aem-link-externalizer) on the author instance to ensure that any references within the Content Fragment are externalized for web delivery.
 
@@ -324,7 +324,7 @@ When you associate a page with the framework, the child pages inherit the associ
 
    ![匯出至 Adobe Target](assets/cfm-export-target-01.png)
 
-   <!-- this note doesn't seem to be accurate for CFs -->
+   <!-- this note does not seem to be accurate for CFs -->
 
    <!--
    
@@ -364,7 +364,7 @@ When you associate a page with the framework, the child pages inherit the associ
 
 ## 在Adobe Target中使用您的內容片段 {#using-your-content-fragments-in-adobe-target}
 
-執行先前的工作後，內容片段會顯示在Target的「選件」頁面上。 請檢視 [特定Target檔案](https://experienceleague.adobe.com/docs/target/using/integrate/aem/fragments/content-fragments-aem.html) 以瞭解您可以達到的目的。
+執行先前的工作後，內容片段會顯示在Target的「選件」頁面上。 另請參閱 [特定Target檔案](https://experienceleague.adobe.com/docs/target/using/integrate/aem/fragments/content-fragments-aem.html) 以瞭解您可以達到的目的。
 
 >[!NOTE]
 >
@@ -396,7 +396,7 @@ When you associate a page with the framework, the child pages inherit the associ
 
 ## 其他資源 {#further-resources}
 
-如需詳細資訊，另請參閱：
+如需詳細資訊，請參閱下列內容：
 
 <!--
 * [Creating a Target Cloud Configuration](/help/sites-cloud/integrating/integrating-adobe-target.md#create-configuration)

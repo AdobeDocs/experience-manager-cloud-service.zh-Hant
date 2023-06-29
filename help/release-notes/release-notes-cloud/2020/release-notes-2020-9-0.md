@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2020.9.0 版發行說明。'
 description: '"[!DNL Adobe Experience Manager] 2020.9.0版as a Cloud Service發行說明」。'
 exl-id: 2332512f-8c52-4569-a006-faa36a7670a1
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '723'
-ht-degree: 17%
+source-wordcount: '720'
+ht-degree: 15%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 17%
 
 ### [!DNL Sites]的新增功能 {#what-is-new-sites}
 
-* 單次頁面應用程式 (SPA) 編輯器 JavaScript SDK [現在是開放原始碼。](/help/implementing/developing/hybrid/reference-materials.md)
+* 單頁應用程式(SPA)編輯器JavaScript SDK [現在是開放原始碼](/help/implementing/developing/hybrid/reference-materials.md).
 
 ## [!DNL Adobe Experience Manager Assets] as a Cloud Service {#assets}
 
@@ -50,7 +50,7 @@ TBD: list of Assets aaCS bugs that are fixed.
 
 ### 新增功能 {#what-is-new-commerce}
 
-* 已發行CIF Core Components v1.3.0。請參閱 [CIF Core Components](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.3.0) 以取得更多詳細資料。
+* 已發行CIF Core Components v1.3.0。另請參閱 [CIF Core Components](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.3.0) 以取得更多詳細資料。
 
 * 產品和類別範本的產品/類別預覽功能現已可用。 這可讓AEM的業務使用者/行銷人員檢視具有真實資料的產品/類別範本。
 
@@ -118,8 +118,8 @@ TBD: list of Assets aaCS bugs that are fixed.
 
 * AIO-CLI外掛程式支援Repository Modernizer，可讓使用者使用外掛程式執行工具。
 
-  請參閱 [Git資源： aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) 以取得更多詳細資料。
+  另請參閱 [Git資源： aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) 以取得更多詳細資料。
 
 * Repository Modernizer公用程式可用來將現有的專案套件重新建構為與針對AEMas a Cloud Service定義的專案結構相容的套件。
 
-  請參閱 [Git資源： Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) 以取得更多詳細資料。
+  另請參閱 [Git資源： Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) 以取得更多詳細資料。

@@ -1,10 +1,10 @@
 ---
 title: 將 AMS 轉換為 Adobe Experience Manager as a Cloud Service Dispatcher 設定
 description: 將 AMS 轉換為 Adobe Experience Manager as a Cloud Service Dispatcher 設定
-source-git-commit: 1fc57dacbf811070664d5f5aaa591dd705516fa8
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1275'
-ht-degree: 44%
+source-wordcount: '1278'
+ht-degree: 39%
 
 ---
 
@@ -49,7 +49,7 @@ ht-degree: 44%
 
    * 請移除任何名為「base_rewrite.rules」和「xforwarded_forcessl_rewrite.rules」的檔案，也要記得在虛擬主機中移除引用了上述檔案的 Include 陳述式。
 
-   * 如果「conf.d/rewrites」目前包含單一檔案，則應將其重新命名為「rewrite.rules」，同時別忘了調整在虛擬主機檔案中引用考該檔案的 Include 陳述式。
+   * 如果「conf.d/rewrites」目前包含單一檔案，則應將其重新命名為「rewrite.rules」，同時別忘了調整在虛擬主機檔案中引用該檔案的Include陳述式。
 
    * 然而，如果資料夾包含多個虛擬主機專屬檔案，則應將其內容複製到在虛擬主機檔案中引用這些檔案的Include陳述式中。
 
@@ -59,7 +59,7 @@ ht-degree: 44%
 
    1. 請移除任何命名為「ams_default.vars」的檔案，也要記得在虛擬主機中移除引用了上述檔案的 Include 陳述式。
 
-   1. 如果「conf.d/variables」目前包含單一檔案，則應將其重新命名為「custom.vars」，同時別忘了調整在虛擬主機檔案中引用該檔案的 Include 陳述式。
+   1. 如果「conf.d/variables」目前包含單一檔案，則應將其重新命名為「custom.vars」，同時別忘了調整在虛擬主機檔案中引用該檔案的Include陳述式。
 
    1. 然而，如果資料夾包含多個虛擬主機專屬檔案，則應將其內容複製到在虛擬主機檔案中引用這些檔案的Include陳述式中。
 

@@ -3,10 +3,10 @@ title: CI/CD 管道
 description: 了解 Cloud Manager 的 CI/CD 管道以及如何使用它們來有效地部署您的程式碼。
 index: true
 exl-id: 40d6778f-65e0-4612-bbe3-ece02905709b
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1358'
-ht-degree: 87%
+source-wordcount: '1339'
+ht-degree: 76%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 87%
 
 ## 簡介 {#introduction}
 
-Cloud Manager 中的 CI/CD 管道是一種從源存放庫構建程式碼並將其部署到環境的機制。管道可以由事件觸發，例如來自源程式碼存放庫的拉取請求 (即程式碼更改)，也可以定期觸發以匹配發布節奏。
+Cloud Manager 中的 CI/CD 管道是一種從源存放庫構建程式碼並將其部署到環境的機制。管道可以由事件觸發，例如來自原始計畫碼存放庫的拉取請求（即計畫碼變更），也可以定期觸發以匹配發行節奏。
 
 若要配置管道，您必須：
 
@@ -44,7 +44,7 @@ Cloud Manager 提供兩種類型的管道：
 
 >[!TIP]
 >
->如需了解詳細資訊，請參閱文件：[設定非生產管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)。
+>另請參閱 [設定生產管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) 以取得更多詳細資料。
 
 ## 非生產管道 {#non-prod-pipeline}
 
@@ -52,7 +52,7 @@ Cloud Manager 提供兩種類型的管道：
 
 >[!TIP]
 >
->如需了解詳細資訊，請參閱文件：[設定非生產管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)。
+>另請參閱 [設定非生產管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) 以取得更多詳細資料。
 
 ## 程式碼來源 {#code-sources}
 
@@ -85,13 +85,13 @@ Cloud Manager 提供兩種類型的管道：
 
 完整堆疊管道同時將後端程式碼、前端程式碼和 Web 層配置部署到 AEM 執行時。
 
-* 後端程式碼 - 不可變內容，例如 Java 程式碼、OSGi 配置、repoinit 以及可變內容
+* 後端計畫碼 — 不可變內容，例如Java計畫碼、OSGi設定、repoinit和可變內容
 * 前端程式碼 - 應用程序 UI 資源，例如 JavaScript、CSS、字體
 * Web 層設定管道 - 部署 HTTPD/ Dispatcher 設定。
 
 完整堆疊管道代表“超級”管道，一次完成所有工作，同時為使用者提供分別透過前端管道和 Web 層配置管道專門部署其前端程式碼或 Dispatcher 配置的選項。
 
-完整堆疊管道將前端程式碼（JavaScript/CSS）封裝為 [AEM 客戶端庫。](/help/implementing/developing/introduction/clientlibs.md)
+完整棧疊管道將前端計畫碼(JavaScript/CSS)封裝為 [AEM使用者端資料庫](/help/implementing/developing/introduction/clientlibs.md).
 
 完整堆疊管道可以部署 Web 層配置，如果 [Web 層配置管道](#web-tier-config-pipelines)未配置。
 
@@ -127,11 +127,11 @@ Cloud Manager 提供兩種類型的管道：
 
 ### 配置前端管道之前 {#before-start}
 
-在設定前端管道之前，請參閱 [AEM Quick Site 建立歷程](/help/journey-sites/quick-site/overview.md)，以透過易於使用的 AEM Quick Site 建立工具取得端到端指南。此歷程可幫助您簡化 AEM 網站的前端開發，讓您無需 AEM 後端知識即可快速自訂網站。
+在設定前端管道之前，請先檢閱 [AEM快速網站建立歷程](/help/journey-sites/quick-site/overview.md) 取得易於使用的AEM Quick Site Creation Tool的端對端指南。 此歷程可幫助您簡化 AEM 網站的前端開發，讓您無需 AEM 後端知識即可快速自訂網站。
 
 ### 配置前端管道 {#configure-front-end}
 
-要了解如何配置前端管道，請參閱以下文件。
+要瞭解如何配置前端管道，請參閱以下內容：
 
 * [新增生產管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#adding-production-pipeline)
 * [新增非生產管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#adding-non-production-pipeline)
@@ -140,11 +140,11 @@ Cloud Manager 提供兩種類型的管道：
 
 有了前端流水線，給前端開發者更多的獨立性，可以加快開發進程。
 
-請參考檔案 [使用前端管道開發網站](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) 瞭解此程式的運作方式，以及一些需要注意的事項，以充分發揮此程式的潛力。
+另請參閱 [使用前端管道開發網站](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) 瞭解此程式的運作方式，以及一些需要注意的事項，以充分發揮此程式的潛力。
 
 ### 正在設定完整堆疊管道 {#configure-full-stack}
 
-要了解如何配置完整堆疊管道，請參閱以下文件。
+若要瞭解如何設定完整棧疊管道，請參閱以下檔案：
 
 * [新增生產管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#adding-production-pipeline)
 * [新增非生產管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#adding-non-production-pipeline)
@@ -165,7 +165,7 @@ Web 層配置管道透過將 HTTPD/Dispatcher 配置與其他程式碼更改分�
 * 使用者必須使用 **部署管理員** 設定或執行管道的角色。
 * 在任何時候，每個環境只能有一個完整堆疊設定管道。
 * 當相應的完整堆疊管道正在執行時，使用者無法配置 Web 層配置管道。
-* Web 層結構必須遵循文件中定義的靈活模式結構[雲端中的 Dispatcher。](/help/implementing/dispatcher/disp-overview.md#validation-debug)
+* Web層結構必須遵循檔案中定義的彈性模式結構 [雲端中的Dispatcher](/help/implementing/dispatcher/disp-overview.md#validation-debug).
 
 此外，請瞭解 [完整棧疊管道](#full-stack-pipeline) 在引入網頁層級管道時採取行動。
 
@@ -177,7 +177,7 @@ Web 層配置管道可以是程式碼品質或部署類型。
 
 ### 正在設定網頁層級設定管道 {#configure-web-tier-config-pipelines}
 
-要了解如何配置網頁層級設定檔完整堆疊管道，請參閱以下文件。
+若要瞭解如何設定Web層設定管道，請參閱以下檔案：
 
 * [新增生產管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#adding-production-pipeline)
 * [新增非生產管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#adding-non-production-pipeline)

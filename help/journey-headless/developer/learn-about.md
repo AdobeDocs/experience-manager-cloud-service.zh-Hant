@@ -2,10 +2,10 @@
 title: 了解 CMS Headless 開發
 description: 在 AEM Headless 開發人員歷程的這一部分中，了解無周邊技術和使用原因。
 exl-id: 8c1fcaf7-1551-4133-b363-6f50af681661
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1623'
-ht-degree: 95%
+source-wordcount: '1621'
+ht-degree: 93%
 
 ---
 
@@ -96,7 +96,7 @@ Headless 為傳遞數位體驗帶來了靈活性。但這種靈活性本身也�
 
 擁有許多不同的管道代表們每個管道都有自己的展示系統。儘管它們都透過相同的 API 取用相同的內容，但由於展示方式不同，體驗可能會有所不同。必須加以考量和關注以確保客戶體驗的一致性。
 
-透過實作精心設計的系統、共用模式庫、利用可重複使用的設計元件以及已建立的開放式用戶端框架，可以確保一致的體驗，但這必須進行計劃。
+透過實作仔細的設計系統、共用模式程式庫，以及運用可重複使用的設計元件和已建立且開放的使用者端架構，可確保一致的體驗，但這是必須規劃好的。
 
 ## 未來是 Headless，未來就是現在 {#future}
 

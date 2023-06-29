@@ -2,7 +2,7 @@
 title: 頁面範本
 description: 建立作為新頁面基礎的頁面時，會使用頁面範本
 exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '3294'
 ht-degree: 1%
@@ -197,7 +197,7 @@ ht-degree: 1%
 
 ### 使用設定瀏覽器 {#using-the-configuration-browser}
 
-1. 前往 **全域導覽** -> **工具** > [**設定瀏覽器**.](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)
+1. 前往 **全域導覽** -> **工具** > [**設定瀏覽器**](/help/implementing/developing/introduction/configurations.md#using-configuration-browser).
 
    現有資料夾會列在左側，包括 `global` 資料夾。
 
@@ -304,7 +304,7 @@ ht-degree: 1%
 
 * AEM提供少量現成可用的範本型別，例如「HTML5頁面」和「最適化表單頁面」。
 
-   * 提供其他範例作為的一部分 [wknd教學課程。](/help/implementing/developing/introduction/develop-wknd-tutorial.md)
+   * 提供其他範例作為的一部分 [wknd教學課程](/help/implementing/developing/introduction/develop-wknd-tutorial.md).
 
 * 範本型別通常由開發人員定義。
 
@@ -538,9 +538,9 @@ GITHUB上的程式碼
 * **元件**:
 
    * 頁面元件會合併 `structure/jcr:content` 範本的樹狀結構，具有 `jcr:content` 頁面的樹狀結構。
-      * 頁面元件僅可讓作者編輯已標籤為可編輯的範本結構節點（以及任何子系）。
+      * 頁面元件僅可讓作者編輯已標示為可編輯的範本結構節點（以及任何子系）。
       * 在頁面上呈現元件時，該元件的相對路徑會取自 `jcr:content` 節點；下方的相同路徑 `policies/jcr:content` 接著會搜尋範本的節點。
-         * 此 `cq:policy` 此節點的屬性指向實際內容原則（即它儲存該元件的設計設定）。
+         * 此 `cq:policy` 此節點的屬性指向實際內容原則（也就是說，它儲存該元件的設計設定）。
             * 這可讓您擁有重複使用相同內容原則設定的多個範本。
 
 ### 範本可用性 {#template-availability}

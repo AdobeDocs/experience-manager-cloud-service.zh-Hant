@@ -2,10 +2,10 @@
 title: 新增自訂網域名稱
 description: 了解如何使用 Cloud Manager 新增自訂網域名稱。
 exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '574'
-ht-degree: 94%
+source-wordcount: '560'
+ht-degree: 80%
 
 ---
 
@@ -54,17 +54,17 @@ ht-degree: 94%
 
 CDN 部署需要有效的 SSL 憑證和成功的 TXT 驗證。這由狀態指示&#x200B;**驗證和部署**。
 
-參考文件[檢查自訂網域名稱狀態](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)了解更多關於各種狀態以及如何解決潛在問題的資訊。
+另請參閱 [檢查自訂網域名稱狀態](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) 以進一步瞭解各種狀態以及如何解決潛在問題。
 
 >[!NOTE]
 >
 >由於 DNS 傳播延遲，DNS 驗證可能需要幾個小時才能完成。
 >
->Cloud Manager 將驗證所有權並更新可在域設定表中看到的狀態。如需了解詳細資訊，請參閱文件：[確認自訂網域名稱狀態](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)。
+>Cloud Manager 將驗證所有權並更新可在域設定表中看到的狀態。另請參閱 [檢查自訂網域名稱狀態](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) 以取得更多詳細資料。
 
 >[!TIP]
 >
->參考[新增 TXT 記錄](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md)了解有關 TXT 記錄的更多資訊。
+>另請參閱 [新增TXT記錄](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md) 以進一步瞭解TXT記錄。
 
 ## 從環境頁面新增自訂網域名稱 {#adding-cdn-environments}
 
@@ -98,14 +98,14 @@ CDN 部署需要有效的 SSL 憑證和成功的 TXT 驗證。這由狀態指示
 
 CDN 部署需要有效的 SSL 憑證和成功的 TXT 驗證。這由狀態指示&#x200B;**驗證和部署**。
 
-參考文件[檢查自訂網域名稱狀態](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)了解更多關於各種狀態以及如何解決潛在問題的資訊。
+另請參閱 [檢查自訂網域名稱狀態](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) 以進一步瞭解各種狀態以及如何解決潛在問題。
 
 >[!NOTE]
 >
 >由於 DNS 傳播延遲，DNS 驗證可能需要幾個小時才能完成。
 >
->Cloud Manager 將驗證所有權並更新可在域設定表中看到的狀態。如需了解詳細資訊，請參閱文件：[確認自訂網域名稱狀態](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)。
+>Cloud Manager 將驗證所有權並更新可在域設定表中看到的狀態。另請參閱 [檢查自訂網域名稱狀態](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) 以取得更多詳細資料。
 
 >[!TIP]
 >
->參考[新增 TXT 記錄](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md)了解有關 TXT 記錄的更多資訊。
+>另請參閱 [新增TXT記錄](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md) 以進一步瞭解TXT記錄。

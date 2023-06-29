@@ -2,10 +2,10 @@
 title: AEM 現代化工具
 description: AEM 現代化工具
 exl-id: d541fae0-6386-403f-99c9-373dc978ad13
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '131'
-ht-degree: 77%
+source-wordcount: '129'
+ht-degree: 51%
 
 ---
 
@@ -26,8 +26,8 @@ AEM現代化工具提供了一套公用程式，可用來將舊版AEM功能轉�
 >[!NOTE]
 >「AEM 現代化工具」是社群的心血結晶，Adobe 並不提供支援或保固。
 
-請參考 **[AEM 現代化工具簡介](https://opensource.adobe.com/aem-modernize-tools/)**，深入了解 「AEM 現代化套裝工具」的規劃、設定和開發。
+另請參閱 **[AEM現代化工具簡介](https://opensource.adobe.com/aem-modernize-tools/)** 以進一步瞭解AEM現代化工具套裝的規劃、設定和開發。
 
 ## 安裝與實作 AEM 現代化工具套裝 {#installing-implementing}
 
-請參考 **[Git 資源：AEM 現代化工具套裝](https://github.com/adobe/aem-modernize-tools)**，了解如何安裝與實作。
+另請參閱 **[Git資源： AEM Modernize Tools Suite](https://github.com/adobe/aem-modernize-tools)** 以瞭解安裝與實作。

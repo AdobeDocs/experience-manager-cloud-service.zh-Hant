@@ -2,10 +2,10 @@
 title: 了解如何在 AEM 中建立內容片段模型
 description: 了解使用內容片段模型建立 Headless CMS 內容模型的概念和機制。
 exl-id: fdfa79d3-fbed-4467-a898-c1b2678fc0cb
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '686'
-ht-degree: 89%
+source-wordcount: '687'
+ht-degree: 84%
 
 ---
 
@@ -63,7 +63,7 @@ At the very start you need to enable Content Fragment Models for your site, this
 
 ![定義欄位](/help/sites-cloud/administering/content-fragments/assets/cfm-models-04.png)
 
-新增資料類型後，您需要為該欄位定義&#x200B;**屬性**。這些取決於所使用的類型。例如：
+新增資料型別後，您需要定義 **屬性** 用於該欄位。 這些取決於所使用的類型。例如：
 
 ![資料屬性](/help/sites-cloud/administering/content-fragments/assets/cfm-models-05.png)
 
@@ -73,7 +73,7 @@ At the very start you need to enable Content Fragment Models for your site, this
 
 ### 您的內容作者 {#your-content-authors}
 
-您的內容作者看不到您用於建立模型的實際資料類型和屬性。這表示您可能必須提供相關協助和資訊讓他們完成特定欄位。對於基本資訊，您可以使用欄位標籤和預設值，但可能需要考慮更複雜案例的專案特定文件。
+您的內容作者看不到您用來建立模型的實際資料型別和屬性。 這表示您可能必須提供相關協助和資訊讓他們完成特定欄位。對於基本資訊，您可以使用欄位標籤和預設值，但可能需要考慮更複雜案例的專案特定文件。
 
 >[!NOTE]
 >

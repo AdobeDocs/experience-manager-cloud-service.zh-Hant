@@ -3,10 +3,10 @@ title: 簡介和概觀
 description: Content and Commerce 簡介和概觀。在透過 Experience Cloud 整合和擴充 Adobe Commerce 和其他第三方商務解決方案的商務服務時，Adobe 建議使用 Experience Manager 商務整合框架 (CIF) 作為模式。
 thumbnail: introducing-aem-commerce.jpg
 exl-id: 29410f76-a63f-4b0a-b817-2ed724ad1a3c
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '894'
-ht-degree: 92%
+source-wordcount: '891'
+ht-degree: 89%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 92%
 
 隨著客戶對在線商務體驗的期望不斷提高，品牌被迫更快地提供差異化體驗和更多內容。然而，實作內容管理平台通常需要大量時間和預算投資來開發基礎元素，例如自訂元件和編寫工具，並且會增加維護和更新成本。Experience Manager Sites 提供 Content and Commerce 作為 Experience Manager as a Cloud Service 的附加模組，提供立即可用的商務核心元件、編寫工具和參考店面，以加速上線，實現團隊間的無縫協作，並推動轉換率。
 
-品牌可以將 Experience Manager 與 Adobe Commerce (Adobe Experience Cloud 的一部分) 以及任何所選的商務引擎相整合。有了 Experience Manager Content and Commerce，品牌可以：
+品牌可將Experience Manager與Adobe Commerce (Adobe Experience Cloud的一部分)以及任何選擇的商務引擎整合。 有了 Experience Manager Content and Commerce，品牌可以：
 
 * 更快地擴充和創新
 * 個人化體驗以推動轉換率
@@ -79,6 +79,6 @@ CIF 透過基於最佳做法的標準化整合模式支援客戶。這有助於�
 
 ## 歷程 {#journey}
 
-如果您正在依循 Commerce 歷程，請移至下一步：
+如果您正在跟進Commerce歷程，請前往下一個步驟：
 
 * [AEM 內容作者歷程](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/getting-started.md)

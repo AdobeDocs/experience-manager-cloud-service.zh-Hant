@@ -2,9 +2,9 @@
 title: 使用任務
 description: 任務表示要在內容上完成的工作專案，並用於專案中確定目前任務的完整程度
 exl-id: 66f95a1f-34d0-4e2e-aa8c-addc2029a1d9
-source-git-commit: fef0aef0d440eaedbf1a88cba0640e1f98e85e3e
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '578'
+source-wordcount: '576'
 ht-degree: 12%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 12%
 
 * **** 任務清單：按一下「任務」表徵圖時，將顯示任務清單。此清單包含與項目相關的所有任務的詳細資訊。
 
-兩者都會列出工作流程任務以及您直接在中建立的任務 **任務** 圖磚。
+兩者都會列出工作流程任務和您直接在中建立的任務 **任務** 圖磚。
 
 ### 任務拼貼 {#task-tile}
 

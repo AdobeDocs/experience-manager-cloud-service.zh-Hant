@@ -4,10 +4,10 @@ description: 瞭解如何設定翻譯整合架構，以與協力廠商翻譯服�
 feature: Language Copy
 role: Admin
 exl-id: 6e74cdee-7965-4087-a733-e9d81c4aa7c2
-source-git-commit: 803a7788cde37fb0026f7cc3582efb33c10e1358
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1523'
-ht-degree: 12%
+source-wordcount: '1518'
+ht-degree: 8%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 12%
 
 >[!TIP]
 >
->如果您不熟悉翻譯內容，請參閱我們的 [Sites 翻譯歷程](/help/journey-sites/translation/overview.md)，此路徑會逐步引導您了解如何使用 AEM 強大的翻譯工具翻譯 AEM Sites 內容，非常適合那些沒有 AEM 或翻譯經驗的使用者。
+>如果您不熟悉翻譯內容，請參閱 [網站翻譯歷程，](/help/journey-sites/translation/overview.md) 將引導您使用AEM強大的翻譯工具來翻譯AEM Sites內容，非常適合沒有AEM或翻譯經驗的人士。
 
 ## 連接到翻譯服務提供者 {#connecting-to-a-translation-service-provider}
 
@@ -73,7 +73,7 @@ ht-degree: 12%
 1. 在內容結構中導覽到想要建立設定的位置。這通常是根據特定網站或是全域。
 1. 在欄位中提供下列資訊，然後按一下或點選 **建立**.：
    1. 在下拉選單中選取&#x200B;**設定類型**。
-   1. 輸入設定的&#x200B;**標題**。**標題**&#x200B;會識別&#x200B;**雲端服務**&#x200B;主控台和頁面屬性下拉清單中的設定。
+   1. 輸入設定的&#x200B;**標題**。此 **標題** 會識別 **Cloud Services** 控制檯和in page property下拉式清單。
    1. 或者，輸入&#x200B;**名稱**&#x200B;以用於儲存設定的存放庫節點。
 1. 在 **編輯設定** 視窗中，設定屬性 **網站** 和 **資產** 標籤，然後按一下或點選 **儲存並關閉**.
 

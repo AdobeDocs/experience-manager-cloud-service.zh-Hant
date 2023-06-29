@@ -2,10 +2,10 @@
 title: 如何將 Headless 應用程式上線
 description: 在 AEM Headless 開發人員歷程的這一部分中，了解如何從 Git 取出本機程式碼並移至 Cloud Manager Git 以用於 CI/CD 管道，藉此來部署無周邊應用程式。
 exl-id: 81616e31-764b-44b0-94a6-3ae24ce56bf6
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1065'
-ht-degree: 94%
+source-wordcount: '1066'
+ht-degree: 93%
 
 ---
 
@@ -124,7 +124,7 @@ ht-degree: 94%
 
 ### 探索單頁應用程式 {#explore-spa}
 
-不過，AEM 無周邊商店不需要就此停止。您可能還記得，在[歷程的快速入門部分](getting-started.md#integration-levels)中，我們簡短討論到 AEM 如何不僅支援無周邊傳遞和傳統的全堆疊模型，而且還可支援結合兩者優點的混合模型。
+不過，AEM中的Headless商店不需要就此止步。 您可能還記得，在[歷程的快速入門部分](getting-started.md#integration-levels)中，我們簡短討論到 AEM 如何不僅支援無周邊傳遞和傳統的全堆疊模型，而且還可支援結合兩者優點的混合模型。
 
 如果您的專案需要這種靈活性，請繼續學習此歷程的額外部分 (選用)：[如何使用 AEM 建立單頁應用程式 (SPA)。](create-spa.md)
 

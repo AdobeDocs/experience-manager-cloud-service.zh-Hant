@@ -4,10 +4,10 @@ description: 探索使用 CodePen 範例應用程式和適用於 JavaScript 的 
 hidefromtoc: true
 index: false
 exl-id: b7dc70f2-74a2-49f7-ae7e-776eab9845ae
-source-git-commit: 7260649eaab303ba5bab55ccbe02395dc8159949
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '980'
-ht-degree: 57%
+source-wordcount: '981'
+ht-degree: 55%
 
 ---
 
@@ -120,4 +120,4 @@ JSON會依原樣轉譯為 `pre` 標籤中，沒有太多創意。 您可以切�
 
 ![adventures-all 查詢的結果和 resultToDom 轉譯函數](assets/do-not-localize/adventures-all-query-result.png)
 
-現在您已經完成了建置模型和查詢的工作，您的內容團隊可以輕鬆接手。在下一個模組中，您會顯示內容作者流程。
+現在您已完成建立模型和查詢的工作，您的內容團隊可以輕鬆接管。 在下一個模組中，您會顯示內容作者流程。

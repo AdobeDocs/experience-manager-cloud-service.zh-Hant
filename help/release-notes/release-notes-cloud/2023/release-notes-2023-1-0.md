@@ -2,7 +2,7 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2023.1.0 版發行說明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2023.1.0 版發行說明。'
 exl-id: f134fdbc-224b-404c-b20f-44cae8bad681
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '976'
 ht-degree: 97%
@@ -102,7 +102,7 @@ ht-degree: 97%
 
 ## Cloud Manager {#cloud-manager}
 
-您可以在[此處](/help/implementing/cloud-manager/release-notes/current.md)找到 Cloud Manager 每月發行的完整清單。
+您可以在[這裡](/help/implementing/cloud-manager/release-notes/current.md)找到 Cloud Manager 每月發行的完整清單。
 
 ## 移轉工具 {#migration-tools}
 

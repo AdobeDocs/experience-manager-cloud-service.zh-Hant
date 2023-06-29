@@ -2,7 +2,7 @@
 title: SPA 中的複合元件
 description: 瞭解如何建立自己的複合元件，也就是由AEM單頁應用程式(SPA)編輯器運作的其他元件所組成的元件。
 exl-id: fa1ab1dd-9e8e-4e2c-aa9a-5b46ed8a02cb
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '782'
 ht-degree: 1%
@@ -19,7 +19,7 @@ ht-degree: 1%
 
 ## 使用案例 {#use-case}
 
-本文將以典型卡片元件作為範例使用案例。 卡片是許多數位體驗的通用UI元素，通常由影像和相關文字或註解組成。 作者想要能夠拖放整個卡片，但可以個別編輯卡片的影像以及自訂關聯的文字。
+本文將以典型卡片元件作為範例使用案例。 卡片是許多數位體驗的通用UI元素，通常由影像和相關文字或註解組成。 作者想要能夠拖放整個卡片，但可以個別編輯卡片的影像和自訂相關文字。
 
 ## 必備條件 {#prerequisites}
 
@@ -41,7 +41,7 @@ ht-degree: 1%
 
 ### 您的AEM專案中不存在該元件。 {#component-does-not-exist}
 
-首先，建立構成複合元件的元件，即影像及其文字的元件。
+首先，建立構成複合元件的元件，也就是影像及其文字的元件。
 
 1. 在您的AEM專案中建立文字元件。
 1. 新增對應的 `resourceType` 從元件中的專案 `editConfig` 節點。
@@ -118,7 +118,7 @@ function Home() {
 }
 ```
 
-這會在編輯器中顯示文字和影像的空白預留位置。 使用編輯器輸入這些專案的值時，會儲存在指定的頁面路徑，即 `/content/wknd-spa/home`  在根層級，名稱指定於 `itemPath`.
+這會在編輯器中顯示文字和影像的空白預留位置。 使用編輯器輸入這些專案的值時，會儲存在指定的頁面路徑中， `/content/wknd-spa/home`  在根層級，名稱指定於 `itemPath`.
 
 ![編輯器中的複合卡元件](assets/composite-card.png)
 
@@ -156,7 +156,7 @@ function Home() {
     itemPath='root/responsivegrid' />
    ```
 
-1. 新增已建立的 `wknd-spa/components/imagecard` 元件至容器元件允許的元件 [在頁面範本中。](/help/sites-cloud/authoring/features/templates.md)
+1. 新增已建立的 `wknd-spa/components/imagecard` 元件至容器元件允許的元件 [在頁面範本中](/help/sites-cloud/authoring/features/templates.md).
 
 現在 `imagecard` 元件可直接新增至AEM編輯器中的容器。
 

@@ -2,9 +2,9 @@
 title: 在AEMas a Cloud Service上使用使用者端資料庫
 description: AEM提供使用者端程式庫資料夾，可讓您將使用者端程式碼(clientlibs)儲存在存放庫中、將其組織成類別，以及定義每個類別程式碼何時及如何提供給使用者端
 exl-id: 370db625-09bf-43fb-919d-4699edaac7c8
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2562'
+source-wordcount: '2556'
 ht-degree: 1%
 
 ---
@@ -21,17 +21,17 @@ ht-degree: 1%
 * 透過可存取的路徑公開clientlibs [dispatcher](/help/implementing/dispatcher/disp-overview.md)
 * 允許重寫參照檔案或影像的路徑
 
-Clientlibs是內建的解決方案，可從AEM傳遞CSS和Javascript。
+Clientlibs是內建的解決方案，可從AEM傳遞CSS和JavaScript。
 
 >[!TIP]
 >
->為AEM專案建立CSS和Javascript的前端開發人員也應熟悉 [AEM專案原型及其自動化前端建置流程。](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html)
+>為AEM專案建立CSS和JavaScript的前端開發人員也應熟悉 [AEM專案原型及其自動化前端建置流程。](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html)
 
 ## 什麼是使用者端資料庫 {#what-are-clientlibs}
 
-網站需要在使用者端處理JavaScript和CSS以及靜態資源（例如圖示和網頁字型）。 clientlib是用來參照（視需要依類別）及提供這類資源的AEM機制。
+網站需要在使用者端處理JavaScript和CSS以及靜態資源，例如圖示和網頁字型。 clientlib是用來參照（視需要依類別）及提供這類資源的AEM機制。
 
-AEM會將網站的CSS和Javascript收集到一個位於中央位置的檔案中，以確保在HTML輸出中只會包含任何資源的一個副本。 這樣可最大化傳送效率，並透過Proxy將這類資源集中維護在存放庫中，確儲存取安全。
+AEM會將網站的CSS和JavaScript收集到一個位於中央位置的檔案中，以確保在HTML輸出中只會包含任何資源的一個副本。 這樣可最大化傳送效率，並透過Proxy將這類資源集中維護在存放庫中，確儲存取安全。
 
 ## AEMas a Cloud Service的前端開發 {#fed-for-aemaacs}
 
@@ -189,7 +189,7 @@ AEM中的使用者端程式庫資料夾支援許多其他功能。 不過，在A
 
 ### 連結至相依性 {#linking-to-dependencies}
 
-當使用者端程式庫資料夾中的程式碼參考其他程式庫時，請將其他程式庫識別為相依性。 此 `ui:includeClientLib` 參照使用者端程式庫資料夾的標籤會讓HTML程式碼包含所產生程式庫檔案的連結以及相依性。
+當使用者端程式庫資料夾中的程式碼參考其他程式庫時，請將其他程式庫識別為相依性。 此 `ui:includeClientLib` 參照使用者端程式庫資料夾的標籤會讓HTML程式碼包含產生之程式庫檔案和相依性的連結。
 
 相依性必須是另一個 `cq:ClientLibraryFolder`. 若要識別相依性，請將屬性新增至 `cq:ClientLibraryFolder` 具有下列屬性的節點：
 

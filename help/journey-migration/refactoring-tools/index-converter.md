@@ -2,10 +2,10 @@
 title: 索引轉換器
 description: 索引轉換器
 exl-id: ac02ca41-eb35-4f24-bf17-d00ce318423d
-source-git-commit: 92c123817a654d0103d0f7b8e457489d9e82c2ce
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '274'
+ht-degree: 2%
 
 ---
 
@@ -36,8 +36,8 @@ Index Converter是開發的公用程式，用來移轉客戶的索引定義，�
 
 * 透過Adobe I/OCLI ：建議透過以下方式使用索引轉換器： `aio-cli-plugin-aem-cloud-service-migration` (Adobe I/OCLI的AEMas a Cloud Service程式碼重構外掛程式)。
 
-  請參閱 **[Git資源： aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#introduction)** 瞭解如何安裝及使用外掛程式。
+  另請參閱 **[Git資源： aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#introduction)** 瞭解如何安裝及使用外掛程式。
 
 * 作為獨立公用程式： Index Converter也可以作為獨立公用程式執行。
 
-  請參閱 **[Git資源：aem-cs-source-migration-index-converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/index-converter)** 以瞭解如何使用此工具。
+  另請參閱 **[Git資源：aem-cs-source-migration-index-converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/index-converter)** 以瞭解如何使用此工具。

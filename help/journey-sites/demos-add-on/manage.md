@@ -2,9 +2,9 @@
 title: 管理您的示範網站
 description: 了解可協助您管理示範網站的工具以及如何移除它們。
 exl-id: 988c6e09-c43e-415f-8d61-998c294c5a11
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '947'
+source-wordcount: '946'
 ht-degree: 17%
 
 ---
@@ -105,7 +105,7 @@ ht-degree: 17%
 
 * [Cloud Manager 文件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html) - 如果您想要 Cloud Manager 功能的更多詳細資訊，您可能想要直接查閱深入的技術文件。
 * [建立網站](/help/sites-cloud/administering/site-creation/create-site.md)  — 瞭解如何使用AEM建立網站，使用網站範本定義網站的樣式和結構。
-* [AEM頁面命名慣例。](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#page-name-restrictions-and-best-practices)  — 請參閱本頁面以瞭解組織AEM頁面的慣例。
+* [AEM頁面命名慣例](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#page-name-restrictions-and-best-practices).  — 請參閱本頁面以瞭解組織AEM頁面的慣例。
 * [AEM基本處理](/help/sites-cloud/authoring/getting-started/basic-handling.md)  — 如果您不熟悉AEM，請參閱本檔案，瞭解導覽和控制檯組織等基本概念。
 * [AEM as a Cloud Service 技術文件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html) - 如果您已經對 AEM 有深入的了解，您可能想要直接查閱深入的技術文件。
 * [網站範本](/help/sites-cloud/administering/site-creation/site-templates.md)  — 如果您想進一步瞭解網站範本的結構，以及如何使用它們來建立網站，請參閱本檔案。

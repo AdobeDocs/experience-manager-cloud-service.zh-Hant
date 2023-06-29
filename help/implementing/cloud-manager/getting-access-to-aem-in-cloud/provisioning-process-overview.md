@@ -1,10 +1,10 @@
 ---
 title: 佈建程序 - 總覽
 description: 佈建程序 - 總覽
-source-git-commit: ffeda76f9c661117ddba50588ebea01d151ee8c3
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '331'
-ht-degree: 100%
+source-wordcount: '330'
+ht-degree: 95%
 
 ---
 
@@ -34,7 +34,7 @@ ht-degree: 100%
 ![processoverview.jpg](assets/processOverview.jpg)
 
 
-若要了解更多資訊，請造訪[Experience League 上的 Experience Manager as a Cloud Service 入門](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/home.html?lang=zh-Hant)
+如需詳細資訊，請參閱 [在Experience League上開始使用Experience Manageras a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/home.html?lang=zh-Hant).
 
 ### 資源和連結
 

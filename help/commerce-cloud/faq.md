@@ -2,9 +2,9 @@
 title: AEM — 使用Commerce Integration Framework進行Commerce整合常見問題集
 description: AEM — 使用Commerce Integration Framework進行Commerce整合常見問題集
 exl-id: 0a946d98-22c7-445d-984a-9e09c306ce45
-source-git-commit: d925310603961f1f3721c283fc247105459e9c0f
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '969'
+source-wordcount: '967'
 ht-degree: 0%
 
 ---
@@ -67,7 +67,7 @@ CIF提供搜尋列和搜尋結果元件。 搜尋列元件會將包含搜尋字�
 
 ## 14.在整個展示層使用AEM時，我們如何確保PCI相容性？
 
-我們建議您使用抽象的付款方法。 這能讓瀏覽器使用者端與支付閘道提供者直接通訊，因此Adobe或商業解決方案都不會保留或傳遞持卡人資料。 此方法只需要第3級PCI相容性。 不過，還需要考慮其他完全符合PCI規範的事項，例如員工如何與系統和資料互動。 如需Adobe Commerce PCI法規遵循的詳細資訊，請參閱 [PCI法規遵循需求](https://business.adobe.com/products/magento/pci-compliance.html).
+我們建議您使用抽象的付款方法。 這能讓瀏覽器使用者端與支付閘道提供者直接通訊，因此Adobe或商業解決方案都不會保留或傳遞持卡人資料。 此方法只需要第3級PCI相容性。 不過，還需要考慮其他完全符合PCI規範的事項，例如員工如何與系統和資料互動。 如需Adobe Commerce PCI相容性的詳細資訊，請參閱 [PCI法規遵循需求](https://business.adobe.com/products/magento/pci-compliance.html).
 
 ## 15.如果我使用AEM和Adobe Commerce雲端版本，此聯合解決方案是否符合PCI規範？
 

@@ -2,9 +2,9 @@
 title: 啟用漸進式網頁應用程式功能
 description: AEM Sites可讓內容作者透過簡易設定（而非編碼）為任何網站啟用漸進式網頁應用程式功能。
 exl-id: 1552a4ce-137a-4208-b7f6-2fc06db8dc39
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1998'
+source-wordcount: '1997'
 ht-degree: 1%
 
 ---
@@ -160,20 +160,20 @@ RewriteCond %{REQUEST_URI} (.html|.jpe?g|.png|.svg|.webmanifest)$
    * **最小UI**  — 瀏覽器大多隱藏，就像原生應用程式，但會顯示基本導覽控制項。
    * **全熒幕**  — 瀏覽器會完全隱藏（像原生應用程式），但在全熒幕模式下呈現。
       * 透過此選項，應用程式導覽必須能夠完全透過您的內容進行，使用網站頁面上的連結和元件，而不使用瀏覽器的導覽控制項。
-* **熒幕方向**  — 作為本機應用程式，PWA需要瞭解如何處理 [裝置方向。](https://developer.mozilla.org/en-US/docs/Web/Manifest/orientation)
+* **熒幕方向**  — 作為本機應用程式，PWA需要瞭解如何處理 [裝置方向](https://developer.mozilla.org/en-US/docs/Web/Manifest/orientation).
    * **任何**  — 應用程式會根據使用者裝置的方向進行調整。 這是預設值。
    * **縱向**  — 這強制應用程式以縱向配置開啟，無論使用者裝置的方向為何。
    * **橫向**  — 這強制應用程式以橫向配置開啟，無論使用者裝置的方向為何。
 * **佈景主題顏色**  — 這會定義 [應用程式的色彩](https://developer.mozilla.org/en-US/docs/Web/Manifest/theme_color) 這會影響本機使用者的作業系統顯示原生UI工具列和導覽控制項的方式。 視瀏覽器而定，它可能會影響其他應用程式簡報元素。
    * 使用顏色井彈出式視窗來選取顏色。
    * 顏色也可以由十六進位或RGB值定義。
-* **背景顏色**  — 這會定義 [應用程式的背景顏色，](https://developer.mozilla.org/en-US/docs/Web/Manifest/background_color) 會在應用程式載入時顯示。
+* **背景顏色**  — 這會定義 [應用程式的背景顏色](https://developer.mozilla.org/en-US/docs/Web/Manifest/background_color)，會在應用程式載入時顯示。
    * 使用顏色井彈出式視窗來選取顏色。
    * 顏色也可以由十六進位或RGB值定義。
    * 特定瀏覽器 [自動建立啟動畫面](https://developer.mozilla.org/en-US/docs/Web/Manifest#Splash_screens) 從應用程式名稱、背景顏色和圖示。
 * **圖示**  — 這定義 [圖示](https://developer.mozilla.org/en-US/docs/Web/Manifest/icons) 代表使用者裝置上的應用程式。
    * 圖示必須是大小為512x512畫素的png檔案。
-   * 圖示必須是 [儲存在DAM中。](/help/assets/overview.md)
+   * 圖示必須是 [儲存在DAM中](/help/assets/overview.md).
 
 ### 快取管理（進階） {#offline-configuration}
 

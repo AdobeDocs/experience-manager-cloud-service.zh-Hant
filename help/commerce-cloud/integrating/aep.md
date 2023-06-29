@@ -11,9 +11,9 @@ level: Beginner
 kt: 10834
 thumbnail: 346811.jpeg
 exl-id: 30bb9b2c-5f00-488e-ad5c-9af7cd2c4735
-source-git-commit: 73fe6ce5bbdf0ad437ae4b47b892ad05e016ab68
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2080'
+source-wordcount: '2079'
 ht-degree: 1%
 
 ---
@@ -382,7 +382,7 @@ npm i --save @adobe/aem-core-cif-experience-platform-connector --force
 
 - 在新頁面上， __搜尋並選取__ 您在上一步建立的綱要，然後按一下 __下一個__ 按鈕。
 
-   ![AEP建立資料集選取結構描述](../assets/aep-integration/AEP-Datasets-Select-Schema.png)
+  ![AEP建立資料集選取結構描述](../assets/aep-integration/AEP-Datasets-Select-Schema.png)
 
 1. 使用為您的資料集命名 __設定資料集>名稱__ 欄位並按一下 __完成__ 按鈕。
 

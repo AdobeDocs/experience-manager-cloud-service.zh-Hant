@@ -2,10 +2,10 @@
 title: 設定 Headless 內容的翻譯規則
 description: 了解如何定義翻譯規則以識別要翻譯的內容。
 exl-id: 878ffd5d-0f10-4990-9779-bdf55cd95fac
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '942'
-ht-degree: 98%
+ht-degree: 96%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 98%
 >只有當您未在內容片段上使用&#x200B;**可翻譯**&#x200B;標幟時，才需要執行本文件歷程的此步驟。
 >
 >* **可翻譯**&#x200B;標幟會自動為您建立翻譯規則，不需任何介入。
->* 只有當翻譯整合框架設定設為&#x200B;**[為翻譯啟用內容模型欄位](/help/sites-cloud/administering/translation/integration-framework.md)**&#x200B;時，才能使用&#x200B;**可翻譯**&#x200B;標幟。
+>* 此 **可翻譯** 只有在翻譯整合框架設定設為時，才會使用旗標 **[啟用內容模型欄位以進行翻譯](/help/sites-cloud/administering/translation/integration-framework.md)**.
 >* 在 TIF 設定中啟用此選項將取代任何手動建立的翻譯規則。|
 
 ## 目標 {#objective}

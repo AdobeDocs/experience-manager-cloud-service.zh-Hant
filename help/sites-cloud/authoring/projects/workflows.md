@@ -2,7 +2,7 @@
 title: 使用專案工作流程
 description: 各種專案工作流程都可立即使用。
 exl-id: a5c9a6df-7def-43f3-b41b-524a4f4211e9
-source-git-commit: 89972691dadb9573160ba16a220c5b7cb3ae9742
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '452'
 ht-degree: 8%
@@ -21,18 +21,18 @@ ht-degree: 8%
 
 根據您選取的專案範本，您有特定的工作流程可用：
 
-|  | **簡單專案** | **翻譯專案** |
+|   | **簡單專案** | **翻譯專案** |
 |---|:-:|:-:|
 | 專案核准工作流程 | x |  |
 | 請求啟動 | x |  |
 | 請求登陸頁面 | x |  |
-| 要求電子郵件 | x |  |
+| 要求電子郵件 | x | |
 | DAM建立語言副本&amp;ast； |  | x |
-| DAM建立和翻譯語言副本&amp;ast； |  | x |
+| DAM建立和翻譯語言副本&amp;ast； |   | x |
 
 >[!NOTE]
 >
->&amp;ast；這些工作流程不會從 **工作流程** 圖磚（在專案中）。 另請參閱 [建立資產的語言副本。](/help/sites-cloud/administering/translation/managing-projects.md)
+>&amp;ast；這些工作流程不會從 **工作流程** 圖磚（在專案中）。 另請參閱 [建立資產的語言副本](/help/sites-cloud/administering/translation/managing-projects.md).
 
 無論您選擇哪個工作流程，開始和完成工作流程的步驟都相同。 只有步驟會變更。
 
@@ -70,4 +70,4 @@ ht-degree: 8%
 
 ## 建立（及翻譯）資產的語言副本工作流程 {#create-and-translate-language-copy-workflow-for-assets}
 
-此 **建立語言副本** 和 **建立和翻譯語言副本** 中詳細介紹了工作流程 [建立資產的語言副本。](/help/assets/translate-assets.md)
+此 **建立語言副本** 和 **建立和翻譯語言副本** 中詳細介紹了工作流程 [建立資產的語言副本](/help/assets/translate-assets.md).

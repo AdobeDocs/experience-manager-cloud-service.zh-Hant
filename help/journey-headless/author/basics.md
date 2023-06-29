@@ -2,10 +2,10 @@
 title: 了解編寫基本知識
 description: 了解使用內容片段為 Headless CMS 編寫內容的概念和機制。
 exl-id: 3eca973f-b210-41bb-98da-ecbd2bae9803
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1709'
-ht-degree: 95%
+source-wordcount: '1712'
+ht-degree: 89%
 
 ---
 
@@ -121,7 +121,7 @@ You can view additional information about items using the Rail Selector. This al
 
 ## 編寫內容片段 {#authoring-content-fragments}
 
-所以，這是對 AEM 使用者介面 (UI) 的非常快速介紹，但希望您有機會嘗試一下。現在我們開始討論您真正感興趣的部分 - Headless 內容片段。
+所以，這是AEM使用者介面(UI)的非常快速介紹，但希望您有機會嘗試一下。 現在我們開始討論您真正感興趣的部分 - Headless 內容片段。
 
 我們必須從頭到尾說明所有事情，但是您的執行個體可能已經建立了資料夾和/或片段，並且它們可能位於不同的位置。原理是一樣的。
 
@@ -213,7 +213,7 @@ Confirm with **Create** and you can then **Open** your fragment in the editor.
 
 例如：
 
-* 只需要多個資訊的片段，其中一些具有特定類型。對於無周邊內容，參考是關鍵，歷程的後續部分將會說明。
+* 只需要多個資訊的片段，其中一些具有特定類型。針對Headless內容，參考是關鍵，您稍後會在歷程中瞭解這些內容。
 
   ![內容片段編輯器 - 我的片段](/help/journey-headless/author/assets/headless-journey-author-content-fragment-04.png)
 
@@ -233,9 +233,9 @@ Confirm with **Create** and you can then **Open** your fragment in the editor.
 >
 >如需更多詳細資訊，您可以閱讀「變化 - 編寫內容片段」。
 
-#### 你 (可能) 不需要擔心的事情 {#what-you-probably-do-not-need-to-worry-about}
+#### 您（可能）不需要擔心的事 {#what-you-probably-do-not-need-to-worry-about}
 
-好的，這部分可能看起來有點奇怪，但是一旦您開啟內容片段編輯器並開始探索，您就會看到各種選項 (可能) 不適用於您作為內容作者的無周邊歷程。所以這只是在快速提示無周邊情境中你可忽略的東西：
+好，這可能看起來有點奇怪，但在您開啟內容片段編輯器並開始探索後，您可以看到各種選項（可能）不適用於您作為內容作者的Headless歷程。 所以這只是在快速提示無周邊情境中你可忽略的東西：
 
 * **內容片段模型**
 
@@ -258,7 +258,7 @@ Confirm with **Create** and you can then **Open** your fragment in the editor.
 
 * **更新頁面參考**
 
-  **...** (省略符號) 下拉式清單可提供此動作。對於無周邊作者來說這並不有趣，因為它與頁面編寫有關。
+  此動作可從以下網址取得： **...** （點）下拉式清單。 對於無周邊作者來說這並不有趣，因為它與頁面編寫有關。
 
 ### 發佈 {#publishing}
 

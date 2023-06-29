@@ -2,10 +2,10 @@
 title: Adobe Experience Manager as a Cloud Service 的 SEO 和 URL 管理最佳作法
 description: Adobe Experience Manager as a Cloud Service 的 SEO 和 URL 管理最佳作法
 exl-id: abe3f088-95ff-4093-95a1-cfc610d4b9e9
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '3709'
-ht-degree: 95%
+source-wordcount: '3706'
+ht-degree: 94%
 
 ---
 
@@ -459,7 +459,7 @@ public class SitemapGeneratorImpl extends ResourceTreeSitemapGenerator {
 }
 ```
 
-此外，為 XML Sitemap 實作的功能也可以用於不同的使用案例，例如將標準連結或語言替代項新增到頁面的頁首。如需詳細資訊，請參考[SEO 標記](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/SeoTags.html)介面。
+此外，為 XML Sitemap 實作的功能也可以用於不同的使用案例，例如將標準連結或語言替代項新增到頁面的頁首。請參閱 [SeoTags](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/SeoTags.html) 介面以取得詳細資訊。
 
 ### 為舊版 URL 建立 301 重新導向 {#creating-redirects-for-legacy-urls}
 
@@ -472,7 +472,7 @@ public class SitemapGeneratorImpl extends ResourceTreeSitemapGenerator {
 
 ## 其他資源 {#additional-resources}
 
-如需詳細資訊，請參考下列其他資源：
+如需詳細資訊，請參閱下列其他資源：
 
 <!--
 * [Resource Mapping](/help/sites-deploying/resource-mapping.md)

@@ -2,9 +2,9 @@
 title: 註冊、登入和使用者個人資料
 description: 瞭解AEMas a Cloud Service的註冊、登入、使用者資料和群組同步
 exl-id: a991e710-a974-419f-8709-ad86c333dbf8
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1168'
+source-wordcount: '1167'
 ht-degree: 1%
 
 ---
@@ -100,7 +100,7 @@ AEMas a Cloud Service已啟用Cookie型粘性工作階段，可確保將一般�
 
 一般使用者資料可以傳送給第三方廠商（例如CRM），並在使用者登入AEM時透過API擷取，並在AEM使用者的設定檔節點上保留（或更新），並視需要供AEM使用。
 
-可以即時存取第三方服務以擷取設定檔屬性，但請務必確保這不會對AEM中的請求處理造成重大影響。
+可以即時存取協力廠商服務以擷取設定檔屬性，但請務必確保這不會對AEM中的請求處理造成重大影響。
 
 ## 許可權（已關閉的使用者群組） {#permissions-closed-user-groups}
 

@@ -2,9 +2,9 @@
 title: 針對 AEM 開發 SPA
 description: 本文介紹當與前端開發人員合作開發適用於AEM的SPA時，應考量的一些重要問題。 此外也提供有關SPA的AEM架構概觀，以供在AEM上部署已開發的SPA時牢記。
 exl-id: f6c6f31a-69ad-48f6-b995-e6d0930074df
-source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2034'
+source-wordcount: '2035'
 ht-degree: 11%
 
 ---

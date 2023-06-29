@@ -2,16 +2,16 @@
 title: 編輯計畫
 description: 了解如何編輯您的生產和沙箱計畫，以在建立計畫後調整其選項。
 exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '524'
-ht-degree: 94%
+source-wordcount: '520'
+ht-degree: 88%
 
 ---
 
 # 編輯計畫 {#editing-programs}
 
-具有必要權限的使用者可以編輯[在您組織中建立的生產計畫](creating-production-programs.md)和[在您組織中建立的沙箱計畫。](creating-sandbox-programs.md)透過編輯計畫，您可以：
+具有必要許可權的使用者可以編輯 [在您的組織中建立的生產計畫](creating-production-programs.md) 和 [在您的組織中建立的沙箱計畫。](creating-sandbox-programs.md)透過編輯計畫，您可以：
 
 * 使用 Assets 將 Sites 解決方案新增現有計畫中，反之亦然。
 * 從包含 Sites 和 Assets 的現有計畫中移除 Sites 和 Assets。
@@ -63,7 +63,7 @@ ht-degree: 94%
 
 ![已對計畫啟用增強式安全性](assets/edit-program-enhanced.png)
 
-在建立計畫後，就無法修改此設定。如需有關增強式安全性選項的詳細資訊，請參閱[建立生產計畫](creating-production-programs.md)文件。
+在建立計畫後，就無法修改此設定。如需有關增強式安全性選項的詳細資訊，請參閱 [建立生產計畫](creating-production-programs.md) 檔案。
 
 ## 刪除沙箱計畫 {#delete-sandbox-program}
 

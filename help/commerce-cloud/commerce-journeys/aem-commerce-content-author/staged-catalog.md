@@ -2,9 +2,9 @@
 title: 管理預備產品目錄體驗
 description: 瞭解如何管理分階段產品目錄體驗。
 exl-id: 1db18818-b8e0-4127-8a65-dc3dea1f2927
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '494'
+source-wordcount: '493'
 ht-degree: 10%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 10%
 
     >[！NOTE]
     >
-    >此功能僅適用於Adobe Commerce或Cloud Edition，以及支援權杖式驗證的第三方聯結器。 如需詳細資訊，請參閱[快速入門](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/storefront/getting-started.html)。
+    >此功能僅適用於Adobe Commerce或Cloud Edition，以及支援權杖式驗證的協力廠商聯結器。 如需詳細資訊，請參閱[快速入門](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/storefront/getting-started.html)。
 
 首先，讓我們看看作者如何使用CIF存取分階段產品資料。
 

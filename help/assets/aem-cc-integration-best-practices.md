@@ -6,10 +6,10 @@ mini-toc-levels: 1
 feature: Collaboration,Adobe Asset Link,Desktop App
 role: Architect,User,Admin
 exl-id: cbed0d62-5148-45eb-b6a0-9fd164060fdc
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '3496'
-ht-degree: 16%
+source-wordcount: '3491'
+ht-degree: 15%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 16%
 
 Adobe Experience Manager Assets是數位資產管理(DAM)解決方案，可與Adobe Creative Cloud整合，以協助DAM使用者與創意團隊合作，精簡內容建立過程中的共同作業。
 
-Adobe Creative Cloud為創意團隊提供解決方案和服務的生態系統，以協助他們建立數位資產。 其中包括案頭和行動應用程式、雲端服務（例如具備案頭同步處理或網頁體驗的儲存空間），以及Adobe Stock等行銷場所。
+Adobe Creative Cloud為創意團隊提供解決方案和服務的生態系統，以協助他們建立數位資產。 其中包括案頭和行動應用程式、雲端服務（例如具備案頭同步或Web體驗的儲存空間），以及Adobe Stock等行銷場所。
 
 請閱讀下文，瞭解根據您的使用案例，在案頭版和企業級DAM之間選擇哪些整合，以及哪些是連線工作流程的相關最佳實務。
 
@@ -119,7 +119,7 @@ Adobe Creative Cloud為創意團隊提供解決方案和服務的生態系統，
 * **** 瞭解在DAM中儲存資產的原因及時機：更新將提供給組織中更廣大的團隊
 * **** 請留意共用資產的數量：如果您的使用案例是資產分發，則治理和安全性可能是最重要的方面。請考慮使用大型工具 (例如品牌入口網站) 進行此作業。
 * **** 瞭解資產生命週期：瞭解不同團隊在組織中如何處理資產
-* **** 謹慎處理資產的頻繁儲存：Adobe Asset Link會透過PS、AI、ID為您處理。對於其他應用程式，請勿在映射/共用資料夾中執行進行中的工作，除非您需要DAM中的所有變更
+* **** 謹慎處理資產的頻繁儲存：Adobe Asset Link會透過PS、AI、ID為您處理。對於其他應用程式，除非您需要DAM中的所有變更，否則請勿在對映/共用資料夾中執行進行中的工作
 
 ### 從Experience Manager Assets存取Adobe Stock資產 {#access-to-adobe-stock-assets-from-aem-assets}
 

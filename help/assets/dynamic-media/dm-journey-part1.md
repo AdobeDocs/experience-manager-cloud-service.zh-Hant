@@ -11,9 +11,9 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: f3472006-d5ae-4f70-af3e-44e73aee85cc
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '3709'
+source-wordcount: '3708'
 ht-degree: 1%
 
 ---
@@ -79,7 +79,7 @@ Dynamic Media的其中一個要點是以下概念 _單一主要資產檔案，�
 
 <!-- As part of building and publishing assets with Dynamic Media, you visually configure the effects that you want to apply to assets. In so doing, you are literally building the URL that correctly tells the publish server how to deliver your primary asset to the screen.  -->
 
-![Adobe Dynamic Media會將相同的主要影像提供給不同大小和格式的不同媒體。](/help/assets/dynamic-media/assets/dm-oneasset-multioutput.png)
+![Adobe Dynamic Media可將相同的主要影像提供給不同大小和格式的不同媒體](/help/assets/dynamic-media/assets/dm-oneasset-multioutput.png)
 _AdobeDynamic Media可確保為任何熒幕提供一致、高品質的體驗，無論熒幕大小或頻寬為何。_
 
 隨著您深入瞭解，「單一主要資產檔案，無限可能性」的概念為何如此重要。
@@ -150,7 +150,7 @@ _典型網頁的內容頁面權數。_
 ![主要檔案方法](/help/assets/dynamic-media/assets/dm-onefile.png)
 _手錶是一個主要資產檔案，但會即時建立多個轉譯（而非復本）。_
 
-讓我們進一步瞭解Dynamic Media透過單一檔案解決的問題，以及這種方法的一些解決方案。
+讓我們更詳細地瞭解Dynamic Media透過單一檔案解決的問題，以及這種方法的一些解決方案。
 
 | **問題** | **Dynamic Media解決方案** |
 |---|---|
@@ -182,7 +182,7 @@ Dynamic Media為解決的另一個使用案例是影片。 視訊很複雜。 �
 
 客戶來到Dynamic Media時，有以下是他們希望能解決的問題：
 
-&quot;_我們有了影片，而且花了很多錢製作它。 但我們一直迴避將影片放在頁面上，或是進行傳送，因為從測試來看，我們真的無法保證影片品質，或是影片是否真的要播放。 最終，這會影響我們的品牌，甚至影響我們的角色轉換。_&quot;
+&quot;_我們有影片，而且我們花了很多錢製作它。 但我們避免將它放在頁面上或傳送，因為從我們的測試來看，我們無法保證視訊品質，或它是否真的要播放。 最終，這會影響我們的品牌，甚至影響我們的角色轉換。_&quot;
 
 Dynamic Media的解決方案是取用那個主要視訊檔案，讓Dynamic Media透過轉碼程式完成所有大小。 然後，再與Dynamic Media的智慧型視訊播放器配對。 此工作流程可保證您在主要登陸頁面、類別或產品詳細資料頁面上使用該影片，全程保持一致，並提供高品質。
 
@@ -291,7 +291,7 @@ _Dynamic Media檢視器_
 
 ## 此Dynamic Media歷程的下一步發展 {#whats-next}
 
-在此歷程的第二部分中，您會更進一步檢查Dynamic Media URL，以更清楚瞭解傳送資產時發生的情況。 您也會深入瞭解建立影像預設集以轉譯資產的基礎知識，並瞭解影像集、迴轉集和混合媒體集及其建立方式。
+在此歷程的第二部分中，您會更進一步檢查Dynamic Media URL，以更清楚瞭解傳送資產時發生的情況。 您也會進一步瞭解建立影像預設集以轉譯資產的基礎知識，並瞭解影像集、迴轉集和混合媒體集及其建立方式。
 
 帶我前往 [Dynamic Media歷程：基礎知識，第二部分](/help/assets/dynamic-media/dm-journey-part2.md#dm-journey-d).
 

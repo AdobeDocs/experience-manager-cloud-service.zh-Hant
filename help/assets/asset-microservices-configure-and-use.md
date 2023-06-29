@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Compute Microservices,Workflow,Asset Processing
 role: Architect,Admin
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2933'
+source-wordcount: '2931'
 ht-degree: 2%
 
 ---
@@ -204,7 +204,7 @@ asset compute服務整合可讓Experience Manager使用這些引數傳遞給自�
 
 後處理工作流程模型為一般模型 [!DNL Experience Manager] 工作流程模型。 如果您需要對不同的存放庫位置或資產型別進行不同的處理，請建立不同的模型。
 
-處理步驟會視需要新增。 您可以使用這兩者、可用的支援步驟，以及任何自訂實作的工作流程步驟。
+處理步驟會視需要新增。 您可使用兩者、可用的支援步驟以及任何自訂實作的工作流程步驟。
 
 確定每個後處理工作流程的最後一步為 `DAM Update Asset Workflow Completed Process`. 最後一步有助於確保Experience Manager知道資產處理何時完成。
 

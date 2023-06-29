@@ -2,10 +2,10 @@
 title: 不同之處與新增功能 - Adobe Experience Manager as a Cloud Service
 description: 不同之處與新增功能 - Adobe Experience Manager (AEM) as a Cloud Service。
 exl-id: d1ce126e-960c-4367-b741-af709dd81010
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1899'
-ht-degree: 97%
+source-wordcount: '1896'
+ht-degree: 94%
 
 ---
 
@@ -113,11 +113,11 @@ Cloud Manager 是：
 
 Cloud Manager 已經發展成自助式入口網站，可以在其中建立和設定 AEM as a Cloud Service 的主要元件：
 
-* 建立及管理新方案。如需詳細資訊，請參閱[了解方案和方案類型](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)。
+* 建立及管理新方案。另請參閱 [瞭解方案和方案型別](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) 以取得更多詳細資料。
 
-* 在這些方案中建立和管理 AEM 環境。如需詳細資訊，請參閱[管理環境](/help/implementing/cloud-manager/manage-environments.md)。
+* 在這些方案中建立和管理 AEM 環境。另請參閱 [管理環境](/help/implementing/cloud-manager/manage-environments.md) 以取得更多詳細資料。
 
-* 建立和管理用於將客戶程式碼和相關設定部署到特定環境的管道。如需詳細資訊，請參閱[設定您的 CI-CD 管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)。
+* 建立和管理用於將客戶程式碼和相關設定部署到特定環境的管道。另請參閱 [設定CI-CD管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) 以取得更多詳細資料。
 
 * 收到有關這些元件的重要生命週期事件的通知 (例如，產品更新)。
 
@@ -150,7 +150,7 @@ Cloud Manager 在跨多個地理區域的資料中心建立環境，使用範圍
 
 >[!TIP]
 >
->如需上線流程的完整概觀，請參閱[上線流程。](/help/journey-onboarding/overview.md)
+>如需入門流程的完整總覽，請參閱 [入門歷程](/help/journey-onboarding/overview.md).
 
 ## 開發 {#developing}
 
@@ -262,7 +262,7 @@ Adobe Experience Manager Assets as a Cloud Service 為企業提供一種雲端�
 
 ## 了解 Adobe Experience Manager as a Cloud Service {#getting-to-know-aem-as-cloud-service}
 
-如需進一步詳細資訊，請參閱：
+如需詳細資訊，請參閱：
 
 * [Adobe Experience Manager as a Cloud Service 簡介](/help/overview/introduction.md)
 * Adobe Experience Manager as a Cloud Service [架構](/help/overview/architecture.md)
@@ -274,6 +274,6 @@ Adobe Experience Manager Assets as a Cloud Service 為企業提供一種雲端�
 
 >[!TIP]
 >
->大致了解 AEM as a Cloud Service 後，您可以透過查看[入門歷程](/help/journey-onboarding/overview.md)來快速入門。
+>取得AEMas a Cloud Service的概覽後，您可以檢閱 [入門歷程](/help/journey-onboarding/overview.md).
 >
 >已經入門或準備好深入測試 AEM 功能？安裝 [AEM 參考示範附加元件](/help/journey-sites/demos-add-on/overview.md)以使用豐富的範例探索 AEM 的強大功能。

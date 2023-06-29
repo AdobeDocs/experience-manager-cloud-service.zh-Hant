@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2021.6.0 版發行說明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2021.6.0 版發行說明。'
 exl-id: 2c72973b-5a51-4744-bf88-50da0013ba31
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1441'
-ht-degree: 47%
+source-wordcount: '1437'
+ht-degree: 44%
 
 ---
 
@@ -47,7 +47,7 @@ AEM as a Cloud Service 2021.6.0 中的 Cloud Manager 發行日期是 2021 年 6 
 
 ### 新增功能 {#what-is-new-junecm}
 
-* 預覽服務將會以滾動方式部署到所有計劃。 當客戶的計畫有啟用預覽服務時，他們會在產品內收到通知。 參考[存取預覽服務](/help/implementing/cloud-manager/manage-environments.md#access-preview-service)更多細節。
+* 預覽服務將會以滾動方式部署到所有計劃。 當客戶的計畫有啟用預覽服務時，他們會在產品內收到通知。 另請參閱 [存取預覽服務](/help/implementing/cloud-manager/manage-environments.md#access-preview-service) 以取得更多詳細資料。
 
 * 現在，在建置步驟中所下載的 Maven Dependencies 會在管道執行之間快取。在未來幾週內將會為客戶啟用此功能。
 
@@ -59,15 +59,15 @@ AEM as a Cloud Service 2021.6.0 中的 Cloud Manager 發行日期是 2021 年 6 
 
 * 已更新品質規則 `ImmutableMutableMixCheck`，可將 `/oak:index` 節點分類為不可變動。
 
-* 品質規則 `CQBP-84` 和 `CQBP-84--dependencies` 已合併為單一規則。在此合併過程中，更準確地掃描相依性會識別部署到 AEM 執行階段的第三方相依性的問題。
+* 品質規則 `CQBP-84` 和 `CQBP-84--dependencies` 已合併為單一規則。在此合併過程中，更準確地掃描相依性會識別部署到AEM執行階段的第三方相依性的問題。
 
 * 為避免混淆，「環境詳細資料」頁面上的「發佈 AEM」和「發佈 Dispatcher」區段列已合併。
 
   ![Dispatcher環境](/help/implementing/cloud-manager/release-notes/assets/aem-dispatcher.png)
 
-* 已新增計劃碼品質規則來驗證 `damAssetLucene` 索引的結構。 參考[自訂 DAM 資產 Lucene Oak 索引](/help/implementing/cloud-manager/custom-code-quality-rules.md#oakpal-damAssetLucene-sanity-check)更多細節。
+* 已新增計劃碼品質規則來驗證 `damAssetLucene` 索引的結構。 另請參閱 [自訂DAM資產Lucene Oak索引](/help/implementing/cloud-manager/custom-code-quality-rules.md#oakpal-damAssetLucene-sanity-check) 以取得更多詳細資料。
 
-* 「環境詳細資料」頁面現在會適當地顯示發佈和預覽服務的多個網域名稱 (如適用)。如需詳細資訊，請參閱[環境細節](/help/implementing/cloud-manager/manage-environments.md#viewing-environment)。
+* 「環境詳細資料」頁面現在會適當地顯示發佈和預覽服務的多個網域名稱 (如適用)。另請參閱 [環境詳細資訊](/help/implementing/cloud-manager/manage-environments.md#viewing-environment) 以取得更多詳細資料。
 
 ### 錯誤修正 {#bug-fixes-junecm}
 

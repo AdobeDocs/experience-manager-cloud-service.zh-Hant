@@ -2,9 +2,9 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2021.1.0 版發行說明。'
 description: '"[!DNL Adobe Experience Manager] 2021.1.0版as a Cloud Service發行說明」。'
 exl-id: cd639736-6e3d-4b69-b8ae-11e4e6490535
-source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '863'
+source-wordcount: '854'
 ht-degree: 15%
 
 ---
@@ -52,9 +52,9 @@ ht-degree: 15%
 
 * 產品體驗管理：資產和體驗片段的新「商務」屬性。 此索引標籤可讓您將產品/類別連結到資產和體驗片段。 此索引標籤也會顯示連結的產品/類別的即時資料，以及在產品主控台中顯示詳細資訊的連結。
 
-* 已發行CIF Venia Reference Site - 2021.02.02，其中包含最新CIF Core Components v1.7.0版。請參閱 [CIF Venia參考網站](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.02.02) 以取得更多詳細資料。
+* 已發行CIF Venia Reference Site - 2021.02.02，其中包含最新CIF Core Components v1.7.0版。另請參閱 [CIF Venia參考網站](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.02.02) 以取得更多詳細資料。
 
-* 已發行CIF Core Components v1.7.0。請參閱 [CIF Core Components](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.7.0) 以取得更多詳細資料。
+* 已發行CIF Core Components v1.7.0。另請參閱 [CIF Core Components](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.7.0) 以取得更多詳細資料。
 
 ## Cloud Manager {#cloud-manager}
 
@@ -74,15 +74,15 @@ AEM as a Cloud Service 2021.1.0 中的 Cloud Manager 發行日期是 2021 年 1 
 
 ### [!DNL Code Refactoring Tools]的新增功能 {#what-is-new-crt}
 
-* 新版AIO-CLI外掛程式已發行。 此外掛程式的最新版本包含AEM Dispatcher Converter和Repository Modernizer的錯誤修正，並支援新的公用程式Index Converter。 請參閱 [整合式體驗](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html?lang=en#benefits) 以進一步瞭解此外掛程式。
+* 新版AIO-CLI外掛程式已發行。 此外掛程式的最新版本包含AEM Dispatcher Converter和Repository Modernizer的錯誤修正，並支援新的公用程式Index Converter。 另請參閱 [整合式體驗](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html?lang=en#benefits) 以進一步瞭解此外掛程式。
 
-* Index Converter公用程式可將客戶的自訂OAK索引定義轉換為與AEMas a Cloud Service相容的OAK索引定義。 請參閱 [索引轉換器](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/index-converter) 以取得更多詳細資料。
+* Index Converter公用程式可將客戶的自訂OAK索引定義轉換為與AEMas a Cloud Service相容的OAK索引定義。 另請參閱 [索引轉換器](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/index-converter) 以取得更多詳細資料。
 
 * 新增功能至 [Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) 會建立個別的封裝 `ui.config` 以包含所有OSGi設定。
 
 ### 錯誤修正 {#crt-bug-fixes}
 
-* 對AEM Dispatcher Converter和Repository Modernizer工具進行的多項錯誤修正。 請參閱 [AEM Dispatcher轉換工具](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter) 和 [Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer).
+* 對AEM Dispatcher Converter和Repository Modernizer工具進行的多項錯誤修正。 另請參閱 [AEM Dispatcher轉換工具](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter) 和 [Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer).
 
 ## AEMas a Cloud Service基礎 {#aem-as-a-cloud-service-foundation}
 
@@ -109,6 +109,6 @@ AEMas a Cloud ServiceSDK Build Analyzer Maven外掛程式會偵測Maven專案中
 
 ### [!DNL Content Transfer Tool]的新增功能 {#what-is-new-ctt}
 
-* 內容轉移工具新增功能和UI — 使用者對應工具。 此功能會在內容移轉活動中，自動將現有的使用者和群組對應至其AdobeIdentity Management系統ID。 請參閱 [使用使用者對應工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html) 以取得更多詳細資料。
+* 內容轉移工具新增功能和UI — 使用者對應工具。 此功能會在內容移轉活動中，自動將現有的使用者和群組對應至其AdobeIdentity Management系統ID。 另請參閱 [使用使用者對應工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html) 以取得更多詳細資料。
 * 內容轉移工具現在會移轉在移轉集內參考的所有群組和使用者（包括子項）。
 * 允許使用者選取底下的特定路徑 `/etc` 建立移轉集時。

@@ -2,10 +2,10 @@
 title: 使用多個存放庫
 description: 了解如何在使用 Cloud Manager 時管理多個 Git 存放庫。
 exl-id: 1b9cca36-c2d7-4f9e-9733-3f1f4f8b2c7a
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '756'
-ht-degree: 98%
+source-wordcount: '752'
+ht-degree: 91%
 
 ---
 
@@ -122,7 +122,7 @@ jobs:
           git -C ${MAIN_BRANCH} push
 ```
 
-使用 GitHub 操作非常靈活。Git 存放庫的分支之間可執行的任何對應，以及單獨的 Git 專案到主要專案的目錄版面中的任何對應。
+使用 GitHub 操作非常靈活。Git存放庫的分支之間可執行的任何對應，以及單獨的Git專案到主專案的目錄版面中的任何對應。
 
 >[!NOTE]
 >
@@ -191,7 +191,7 @@ git commit -F ../commit.txt
 git push
 ```
 
-使用 Jenkins 作業非常靈活。Git 存放庫的分支之間可執行的任何對應，以及單獨的 Git 專案到主要專案的目錄版面中的任何對應。
+使用 Jenkins 作業非常靈活。Git存放庫的分支之間可執行的任何對應，以及單獨的Git專案到主專案的目錄版面中的任何對應。
 
 >[!NOTE]
 >

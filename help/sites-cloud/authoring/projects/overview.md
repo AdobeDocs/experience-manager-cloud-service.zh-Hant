@@ -2,10 +2,10 @@
 title: 專案
 description: 專案可讓您將資源群組到一個實體中，其共同的共用環境使您的專案容易管理
 exl-id: c5f3331e-637f-4816-be83-faf2df59bd5f
-source-git-commit: 8ea043b4b6424d6922c41c143ca74fd25ac60cf8
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1259'
-ht-degree: 100%
+source-wordcount: '1255'
+ht-degree: 95%
 
 ---
 
@@ -95,7 +95,7 @@ ht-degree: 100%
 
 ![連結](/help/sites-cloud/authoring/assets/project-links.png)
 
-您可以使用易於識別的名稱為連結命名，也可以變更縮圖。
+您可以使用易於辨識的名稱來命名連結，然後變更縮圖。
 
 ![新增連結](/help/sites-cloud/authoring/assets/projects-add-link.png)
 
@@ -105,7 +105,7 @@ ht-degree: 100%
 
 ![專案資訊](/help/sites-cloud/authoring/assets/project-info.png)
 
-可以在此圖磚及團隊圖磚中指派和刪除團隊成員 (或變更他們的角色)。
+團隊成員可以指派及刪除此動態磚（或變更其角色）和「團隊」動態磚。
 
 ![將團隊成員新增至專案](/help/sites-cloud/authoring/assets/projects-add-team.png)
 
@@ -137,11 +137,11 @@ ht-degree: 100%
 
 您可以指派專案以遵循特定工作流程。視您選擇的專案而定，您可以使用不同的工作流程。
 
-相關說明請參閱[使用專案工作流程](/help/sites-cloud/authoring/projects/workflows.md)。
+這些內容的說明請參閱 [使用專案工作流程](/help/sites-cloud/authoring/projects/workflows.md).
 
 ### Launch {#launches}
 
-Launch 圖磚顯示透過[要求 Launch 工作流程](/help/sites-cloud/authoring/projects/workflows.md)要求的任何 Launch。
+「啟動」圖磚會顯示任何以請求方式進行的啟動 [請求啟動工作流程](/help/sites-cloud/authoring/projects/workflows.md).
 
 ![Launch](/help/sites-cloud/authoring/assets/project-launches.png)
 

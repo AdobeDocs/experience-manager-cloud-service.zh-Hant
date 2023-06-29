@@ -2,9 +2,9 @@
 title: Experience Manager as a Cloud Service 合作夥伴移轉指南
 description: Experience Manager as a Cloud Service 合作夥伴移轉指南
 exl-id: 9d5a72b8-06af-4b82-ab20-e65aea7903b3
-source-git-commit: d925310603961f1f3721c283fc247105459e9c0f
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2122'
+source-wordcount: '2120'
 ht-degree: 21%
 
 ---
@@ -126,7 +126,7 @@ Adobe Experience Manager as a Cloud Service中的程式碼開發基礎與Adobe E
 <table>
 <tr>
 <td>專案探索與評估</td>
-<td><ul><li>請參閱 <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/aem-cloud-changes.html?lang=zh-Hant">Experience Manageras a Cloud Service重大變更</a> 來瞭解Adobe Experience Manager as a Cloud Service和Experience Manager6.x之間的重要差異。</li><li>請參閱 <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/deprecated-removed-features.html?lang=en">已棄用的功能</a> 以進一步瞭解已標示為過時的功能。</li><li>[僅適用於Cloud Service移轉]評估Cloud Service整備：執行 <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html?lang=en">Best Practices Analyzer (BPA)</a> 在來源環境中 </li><li>針對Experience ManagerCS中的重大變更和已棄用功能完成評估</li></ul></td>
+<td><ul><li>另請參閱 <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/aem-cloud-changes.html?lang=zh-Hant">Experience Manageras a Cloud Service重大變更</a> 來瞭解Adobe Experience Manager as a Cloud Service和Experience Manager6.x之間的重要差異。</li><li>另請參閱 <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/deprecated-removed-features.html?lang=en">已棄用的功能</a> 以進一步瞭解已標示為過時的功能。</li><li>[僅適用於Cloud Service移轉]評估Cloud Service整備：執行 <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html?lang=en">Best Practices Analyzer (BPA)</a> 在來源環境中 </li><li>針對Experience ManagerCS中的重大變更和已棄用功能完成評估</li></ul></td>
 </tr>
 <tr>
 <td>評論</td>

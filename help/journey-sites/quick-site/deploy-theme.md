@@ -2,9 +2,9 @@
 title: 部署您的自訂主題
 description: 瞭解如何使用管道部署網站主題。
 exl-id: fe065972-39db-4074-a802-85895c701efd
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1027'
+source-wordcount: '1023'
 ht-degree: 14%
 
 ---
@@ -91,7 +91,7 @@ ht-degree: 14%
 * 如何使用代理的AEM內容自訂和測試主題，並將這些變更提交到AEM Git。
 * 如何使用管道部署前端自訂。
 
-您現在已準備好自訂您自己的AEM網站的主題。 但在您開始使用多個前端管道建立不同的工作流程之前，請檢視檔案 [使用前端管道開發Sites。](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) 它可協助您透過以下方式充分利用前端開發：
+您現在已準備好自訂您自己的AEM網站的主題。 但在您開始使用多個前端管道建立不同的工作串流之前，請先檢閱檔案 [使用前端管道開發網站](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md). 它可協助您透過以下方式充分利用前端開發：
 
 * 維護單一信任來源。
 * 維護關注點分離。
@@ -105,7 +105,7 @@ AEM是一個功能強大的工具，並且有許多其他可用選項。 查看[
 * [使用網站邊欄管理網站主題](/help/sites-cloud/administering/site-creation/site-rail.md)  — 瞭解網站邊欄的強大功能，協助您輕鬆自訂和管理網站主題，包括下載主題來源和管理主題版本。
 * [AEM as a Cloud Service 技術文件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html) - 如果您已經對 AEM 有深入的了解，您可能想要直接查閱深入的技術文件。
 * [Cloud Manager 文件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html) - 如果您想要 Cloud Manager 功能的更多詳細資訊，您可能想要直接查閱深入的技術文件。
-* [角色型許可權](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/role-based-permissions.html) - Cloud Manager已預先設定角色，賦予適當許可權。 請參閱本檔案以瞭解這些角色的詳細資訊及管理方法。
+* [角色型許可權](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/role-based-permissions.html) - Cloud Manager已預先設定角色，賦予適當許可權。 如需這些角色及管理這些角色的方法的詳細資訊，請參閱本檔案。
 * [Cloud Manager存放庫](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md)  — 如果您需要有關如何為您的AEMaaCS專案設定和管理Git存放庫的更多資訊，請參閱本檔案。
 * [設定CI/CD管道 — Cloud Services](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)  — 在本檔案中瞭解有關設定完整棧疊和前端管道的更多詳細資訊。
 * [AEM標準網站範本](https://github.com/adobe/aem-site-template-standard)  — 這是AEM標準網站範本的GitHub存放庫。

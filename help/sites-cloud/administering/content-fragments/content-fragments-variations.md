@@ -4,9 +4,9 @@ description: 瞭解變數如何讓您為片段撰寫內容，然後根據用途�
 feature: Content Fragments
 role: User
 exl-id: f2f28207-3e14-4cf4-acce-c6cf32231e05
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2469'
+source-wordcount: '2463'
 ht-degree: 10%
 
 ---
@@ -197,8 +197,8 @@ RTF編輯可讓您設定格式：
 1. 指定屬性；例如 **標題**.
 1. 選取 **建立**.
 1. 最後：
-   1. **完成** 將返回（至原始片段）並參考新片段。
-   1. **開啟** 將參照新片段，並在新瀏覽器標籤中開啟新片段進行編輯。
+   1. **完成** 會傳回（至原始片段）並參考新片段。
+   1. **開啟** 會參照新片段，並在新的瀏覽器索引標籤中開啟新片段進行編輯。
 
 ### 檢視關鍵統計資料 {#viewing-key-statistics}
 

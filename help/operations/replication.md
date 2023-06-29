@@ -2,9 +2,9 @@
 title: 複製
 description: 散佈和疑難排解復寫。
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 9ec45753f56d0576e75f148ca0165c0ccd621f23
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1341'
+source-wordcount: '1339'
 ht-degree: 1%
 
 ---
@@ -182,7 +182,7 @@ ReplicationStatus previewStatus = afterStatus.getStatusForAgent(PREVIEW_AGENT); 
 
 ### 讓內容失效的方法 {#invalidating-content}
 
-您可以使用作者的Sling內容失效(SCD) （偏好方法）或使用復寫API叫用發佈Dispatcher Flush復寫代理程式，直接讓內容失效。 請參閱 [快取](/help/implementing/dispatcher/caching.md) 頁面，以取得更多詳細資料。
+您可以使用作者的Sling內容失效(SCD) （偏好方法）或使用復寫API叫用發佈Dispatcher Flush復寫代理程式，直接讓內容失效。 另請參閱 [快取](/help/implementing/dispatcher/caching.md) 頁面，以取得更多詳細資料。
 
 **復寫API容量限制**
 

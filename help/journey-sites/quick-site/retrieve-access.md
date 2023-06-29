@@ -2,9 +2,9 @@
 title: 擷取Git存放庫存取資訊
 description: 瞭解前端開發人員如何使用Cloud Manager存取Git存放庫資訊。
 exl-id: 3ef1cf86-6da4-4c09-9cfc-acafc8f6dd5c
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '897'
+source-wordcount: '891'
 ht-degree: 6%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 6%
 
 如果您是隻負責自訂網站主題的前端開發人員，則不需要瞭解AEM的設定方式，可以直接跳至 [目標](#objective) 區段。
 
-如果您還擔任Cloud Manager或AEM管理員以及前端開發人員的角色，您已在AEM快速網站建立歷程的上一個檔案中瞭解， [授予前端開發人員存取權，](grant-access.md) 如何入門前端開發人員，讓他們能存取Git存放庫，您現在應該知道：
+如果您還擔任Cloud Manager或AEM管理員和前端開發人員的角色，您已在AEM快速網站建立歷程的上一個檔案中瞭解， [授予前端開發人員存取權，](grant-access.md) 如何入門前端開發人員，讓他們能存取Git存放庫，您現在應該知道：
 
 * 如何將前端開發人員新增為使用者。
 * 如何將所需的角色授與給前端開發人員。
@@ -52,7 +52,7 @@ ht-degree: 6%
 
 如果您缺少這些專案中的任何一項，請聯絡AEM管理員或Cloud Manager管理員。
 
-我們假設前端開發人員在前端開發工作流程以及安裝的常見工具方面具有豐富的經驗，包括：
+我們假設前端開發人員在前端開發工作流程以及安裝的常用工具方面具有豐富的經驗，包括：
 
 * git
 * npm

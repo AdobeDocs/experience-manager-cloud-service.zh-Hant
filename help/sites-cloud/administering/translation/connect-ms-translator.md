@@ -4,10 +4,10 @@ description: 瞭解如何將AEM連線至現成的Microsoft Translator，以自�
 feature: Language Copy
 role: Admin
 exl-id: ca3c50f9-005e-4871-8606-0cfd3ed21936
-source-git-commit: d925310603961f1f3721c283fc247105459e9c0f
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '517'
-ht-degree: 11%
+source-wordcount: '512'
+ht-degree: 4%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 11%
 
 >[!TIP]
 >
->如果您不熟悉翻譯內容，請參閱我們的 [Sites 翻譯歷程](/help/journey-sites/translation/overview.md)，此路徑會逐步引導您了解如何使用 AEM 強大的翻譯工具翻譯 AEM Sites 內容，非常適合那些沒有 AEM 或翻譯經驗的使用者。
+>如果您不熟悉翻譯內容，請參閱 [網站翻譯歷程，](/help/journey-sites/translation/overview.md) 將引導您使用AEM強大的翻譯工具來翻譯AEM Sites內容，非常適合沒有AEM或翻譯經驗的人士。
 
 >[!NOTE]
 >
@@ -39,7 +39,7 @@ ht-degree: 11%
 1. 點選或按一下 **建立** 按鈕。
 1. 定義您的設定。
    1. 選取 **Microsoft Translator** 下拉式清單中的。
-   1. 輸入設定的標題。 標題會識別Cloud Services控制檯以及頁面屬性下拉式清單中的設定。
+   1. 輸入設定的標題。 標題會識別Cloud Services控制檯和頁面屬性下拉式清單中的設定。
    1. 或者，輸入儲存組態的存放庫節點的名稱。
 
    ![建立翻譯設定](../assets/create-translation-config.png)

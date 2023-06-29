@@ -2,9 +2,9 @@
 title: as a Cloud Service在Screens中安裝和設定播放器
 description: 本頁面說明如何在Screensas a Cloud Service安裝及設定播放器。
 exl-id: a022738a-c543-4629-a244-f70fa294fe7f
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '584'
+source-wordcount: '582'
 ht-degree: 1%
 
 ---
@@ -88,4 +88,4 @@ AEM Screens播放器中的基本播放監視可讓我們：
 
 ## 下一步 {#whats-next}
 
-現在您已安裝播放器並設定為雲端模式，請繼續您的Screensas a Cloud Service歷程。 檢閱檔案 [以as a Cloud Service方式在Screens中註冊播放器](/help/screens-cloud/managing-players-registration/registering-players-screens-cloud.md) 從Screens Services Provider取得。
+現在您已安裝播放器並設定為雲端模式，請繼續您的Screensas a Cloud Service歷程。 另請參閱 [以as a Cloud Service方式在Screens中註冊播放器](/help/screens-cloud/managing-players-registration/registering-players-screens-cloud.md) 從Screens Services Provider取得。

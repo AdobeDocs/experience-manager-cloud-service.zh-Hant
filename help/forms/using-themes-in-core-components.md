@@ -2,7 +2,7 @@
 title: 建立和使用主題
 description: 您可以使用主題來風格化最適化表單，並使用核心元件提供視覺身分。 您可以在任何數量的Adaptive Forms中共用主題。
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '1664'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->最適化表單主題不應與 [最適化表單範本。](/help/forms/template-editor.md) 最適化表單主題僅包含最適化表單的樣式資訊。 最適化表單範本定義表單結構和初始內容，並包含允許建立新表單的主題 [最適化表單。](/help/forms/creating-adaptive-form.md)
+>最適化表單主題不應與 [最適化表單範本](/help/forms/template-editor.md). 最適化表單主題僅包含最適化表單的樣式資訊。 最適化表單範本定義表單結構和初始內容，並包含允許建立新表單的主題 [最適化表單](/help/forms/creating-adaptive-form.md).
 
 ## 使用核心元件在Adaptive Forms中使用畫布主題 {#using-theme-in-adaptive-form}
 

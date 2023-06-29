@@ -2,9 +2,9 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2021.3.0 版發行說明。'
 description: '"[!DNL Adobe Experience Manager] 2021.3.0版as a Cloud Service發行說明」。'
 exl-id: 0c07364c-ba25-4081-8e35-3c1c84ed556f
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1295'
+source-wordcount: '1290'
 ht-degree: 34%
 
 ---
@@ -74,9 +74,9 @@ AEM Forms在多年來已幫助許多組織提供絕佳的上線和註冊體驗�
 
 * 現在可以在任何內容頁面上使用和設定產品詳細資料元件
 
-* 已發行CIF Venia Reference Site - 2021.03.25，其中包含最新CIF Core Components v1.9.0版。請參閱 [CIF Venia參考網站](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.03.25) 以取得更多詳細資料。
+* 已發行CIF Venia Reference Site - 2021.03.25，其中包含最新CIF Core Components v1.9.0版。另請參閱 [CIF Venia參考網站](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.03.25) 以取得更多詳細資料。
 
-* 已發行CIF Core Components v1.9.0。請參閱 [CIF Core Components](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.9.0) 以取得更多詳細資料。
+* 已發行CIF Core Components v1.9.0。另請參閱 [CIF Core Components](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.9.0) 以取得更多詳細資料。
 
 
 ## Cloud Manager {#cloud-manager}
@@ -146,7 +146,7 @@ AEM as a Cloud Service 2021.3.0 中的 Cloud Manager 發行日期是 2021 年 3 
 ### 內容轉移工具的新增功能 {#what-is-new-ctt-march}
 
 * CTT現在安裝至 `/apps` 而非 `/libs` 特定頁面的瀏覽器書籤可能不再有效。
-* 安裝CTT時，使用者必須瀏覽其他層級，才能進入「內容轉移」頁面。 另請參閱 [使用內容轉移工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html) 以取得更多詳細資料。
+* 安裝CTT時，使用者必須瀏覽其他層級，才能進入「內容轉移」頁面。 另請參閱 [使用內容轉移工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=zh-Hant) 以取得更多詳細資料。
 
 ### 錯誤修正 {#bug-fixes-ctt-march}
 
@@ -160,19 +160,19 @@ Best Practices Analyzer v2.1.8的發行日期為2021年3月22日。
 
 ### Best Practices Analyzer新增功能 {#what-is-new-bpa}
 
-* 能夠從UI中的BPA報告以及匯出為CSV檔案的報告篩選掉ACS Commons發現。
+* 能夠篩選出使用者介面中BPA報告以及匯出為CSV檔案的報告中的ACS Commons發現。
 
 ## 程式碼重構工具 {#code-refactoring-tools}
 
 ### 程式碼重構工具的新增功能 {#what-is-new-crt}
 
-* Repository Modernizer的新功能和增強功能。 請參閱 [GitHub資源： Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) 以取得最新版本。
+* Repository Modernizer的新功能和增強功能。 另請參閱 [GitHub資源： Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) 以取得最新版本。
    * 將OSGi設定（RepoInit設定除外）標準化為慣用的.cfg.json格式。
    * 將OSGi設定資料夾重新命名為指定的格式。
    * 產生ui.apps.structure專案。
    * 建立分析模組。
 
-* Dispatcher轉換工具的新功能和增強功能。 請參閱 [GitHub資源： Dispatcher轉換工具](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter)
+* Dispatcher轉換工具的新功能和增強功能。 另請參閱 [GitHub資源： Dispatcher轉換工具](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter)
    * 為不同的包含專案建立個別檔案，而非將內容排成一行。
    * 能夠處理vhosts的資料夾路徑和vhost檔案的路徑。
    * 產生具有範圍在600個或更多大型客戶設定的伺服器陣列檔案。

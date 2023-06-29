@@ -2,10 +2,10 @@
 title: Universal Visual Editor 簡介
 description: 了解透過 Universal Visual Editor (即 Universal Editor) 如何實現所見即所得 (WYSIWYG) 編輯任何無周邊和有周邊體驗。了解它如何幫助內容作者提供卓越的體驗、提高其內容速度，以及如何提供最先進的開發人員體驗。
 exl-id: d4fc2384-a0f5-4a6f-9572-62749786be4c
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '933'
-ht-degree: 89%
+ht-degree: 88%
 
 ---
 
@@ -81,7 +81,7 @@ Universal Editor 可以用於任何實施、任何內容和任何方面的內容
 
 請務必注意，Universal Editor 還在開發中，本文件中列出的部分功能是最終編輯器的設想，不一定是目前擁有的功能。
 
-請聯絡您的 Adobe 聯絡人，了解 Universal Editor 規劃即將推出功能的詳細資訊。
+請洽詢您的Adobe聯絡人，以取得有關為Universal Editor規劃的未來功能的詳細資訊。
 
 ## 其他資源 {#additional-resources}
 

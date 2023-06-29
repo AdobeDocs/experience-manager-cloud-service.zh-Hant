@@ -2,9 +2,9 @@
 title: 瞭解Cloud Manager和快速網站建立工作流程
 description: 瞭解Cloud Manager以及它如何將新的快速網站建立流程聯絡起來。
 exl-id: 5d264078-e552-48ca-8d82-294a646e6b1f
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1130'
+source-wordcount: '1128'
 ht-degree: 17%
 
 ---
@@ -124,6 +124,6 @@ Cloud Manager是AEMas a Cloud Service的必要元件，可作為平台的單一�
 我們建議您檢閱檔案，繼續快速網站建立歷程的下一部分 [從範本建立網站，](create-site.md) 以下是一些其他可選資源，這些資源對本文檔中提到的一些概念進行了更深入的探究，但並非繼續此歷程所必需的。
 
 * [Cloud Manager 文件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html) - 如果您想要 Cloud Manager 功能的更多詳細資訊，您可能想要直接查閱深入的技術文件。
-* [角色型許可權](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/role-based-permissions.html) - Cloud Manager已預先設定角色，賦予適當許可權。 請參閱本檔案以瞭解這些角色的詳細資訊及管理方法。
+* [角色型許可權](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/role-based-permissions.html) - Cloud Manager已預先設定角色，賦予適當許可權。 如需這些角色及管理這些角色的方法的詳細資訊，請參閱本檔案。
 * [npm](https://www.npmjs.com)  — 用來快速建立網站的AEM主題是以npm為基礎。
 * [webpack](https://webpack.js.org)  — 用於快速建立網站的AEM主題依賴webpack。

@@ -4,9 +4,9 @@ description: 瞭解由Adobe工程和諮詢團隊編譯的最佳實務，協助�
 feature: Language Copy
 role: Admin
 exl-id: 51b98c24-5566-4088-9010-bd39841a1633
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '875'
+source-wordcount: '872'
 ht-degree: 1%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 >[!TIP]
 >
->如果您不熟悉翻譯內容，請參閱我們的 [網站翻譯歷程，](/help/journey-sites/translation/overview.md) 將引導您使用AEM強大的翻譯工具來翻譯AEM Sites內容，非常適合沒有AEM或翻譯經驗的人士。
+>如果您不熟悉翻譯內容，請參閱 [網站翻譯歷程，](/help/journey-sites/translation/overview.md) 將引導您使用AEM強大的翻譯工具來翻譯AEM Sites內容，非常適合沒有AEM或翻譯經驗的人士。
 
 ## 一般 {#general}
 
@@ -32,7 +32,7 @@ ht-degree: 1%
 
 * 在設計網站結構時，請先檢查您的內容，然後判斷編寫內容的位置和語言。 此位置應該是您網站的最上層。
 * 最佳實務是 **語言型結構** 頂層撰寫網站與國家/地區網站之間的層級不得超過3個。
-* 使用以下語言/國家/地區網站命名慣例 **[W3C標準。](/help/sites-cloud/authoring/fundamentals/accessible-content.md)**
+* 使用以下語言/國家/地區網站命名慣例 **[W3C標準](/help/sites-cloud/authoring/fundamentals/accessible-content.md)**.
 * 決定依地區和國家/地區散佈內容的方式。 考慮哪些國家/地區共用語言。 建議建立語言主版，這是未啟用的頁面圖層，可以檢閱和修改翻譯的內容，然後推送或拉取到共用該語言的國家/地區網站。
 * 建立語言主版的方法有兩種：使用語言副本和使用MSM/即時副本。
    * 語言複製方法是AEM現成可用的翻譯整合架構所用的方法，因此是最簡單的入門方法。 此架構提供使用者介面，可讓您一開始輕鬆將內容變更從主要語言（例如英文）主版傳播到和翻譯為語言主版。 然而，隨著專案的發展，工作流程自動化對於管理不斷增加的頁面和/或語言的翻譯變得越來越必要。

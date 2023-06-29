@@ -2,9 +2,9 @@
 title: 建立分支
 description: 本頁面說明如何在Cloud Manager for Screensas a Cloud Service中建立分支。
 exl-id: bcfdcb45-8547-4160-ba47-4f47916ca48a
-source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '226'
+source-wordcount: '225'
 ht-degree: 4%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 4%
 本節說明如何在Cloud Manager中為您的方案建立分支。
 
 >[!NOTE]
->請參閱 [在Cloud Manager中使用精靈](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/create-application-project/using-the-wizard.html?lang=en) 以瞭解如何使用精靈在Cloud Manager中建立AEM應用程式專案。
+>另請參閱 [在Cloud Manager中使用精靈](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/create-application-project/using-the-wizard.html?lang=en) 以瞭解如何使用精靈在Cloud Manager中建立AEM應用程式專案。
 
 ## 目標 {#objective}
 

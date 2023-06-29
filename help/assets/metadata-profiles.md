@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: eef90c6a-b354-4342-8b97-21d067ae2979
-source-git-commit: 948b671965cf438e2c93dea0371331cb3a02b6ca
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1408'
+source-wordcount: '1409'
 ht-degree: 20%
 
 ---
@@ -34,13 +34,13 @@ ht-degree: 20%
    * **[!UICONTROL 欄位標籤]**  — 中繼資料屬性的顯示名稱。 它僅供使用者參考。
    * **[!UICONTROL 對應至屬性]**  — 此屬性的值會提供資產節點的相對路徑/名稱，資產節點會儲存在存放庫中。 此值應一律開頭為 `./` 因為它表示路徑在資產的節點下。
 
-      您為指定的值 **[!UICONTROL 對應至屬性]** 會儲存為資產中繼資料節點下的屬性。 例如，如果您指定。`/jcr:content/metadata/dc:desc` 作為的名稱 **[!UICONTROL 對應至屬性]**， [!DNL Adobe Experience Manager Assets] 儲存值 `dc:desc` 位於資產的中繼資料節點。
+     您為指定的值 **[!UICONTROL 對應至屬性]** 會儲存為資產中繼資料節點下的屬性。 例如，如果您指定。`/jcr:content/metadata/dc:desc` 作為的名稱 **[!UICONTROL 對應至屬性]**， [!DNL Adobe Experience Manager Assets] 儲存值 `dc:desc` 位於資產的中繼資料節點。
 
    * **[!UICONTROL 預設值]**  — 使用此屬性為中繼資料元件新增預設值。 例如，如果您指定「我的說明」，則會將此值指派給屬性 `dc:desc` 位於資產的中繼資料節點。
 
-      >[!NOTE]
-      >
-      >新增預設值至新的中繼資料屬性(不存在於 `/jcr:content/metadata` 節點)預設不會在資產的屬性頁面上顯示屬性及其值。 若要檢視上的新屬性 [!UICONTROL 屬性] 頁面，修改對應的結構描述表單。
+     >[!NOTE]
+     >
+     >新增預設值至新的中繼資料屬性(不存在於 `/jcr:content/metadata` 節點)預設不會在資產的屬性頁面上顯示屬性及其值。 若要檢視上的新屬性 [!UICONTROL 屬性] 頁面，修改對應的結構描述表單。
 
 1. (可選) 從「建置表單」標籤新增更多元件至「 **[!UICONTROL 編輯表單]** 」，並在「設定」標籤中設定 **[!UICONTROL 其屬性]** 。「生成表單」頁籤提供 **[!UICONTROL 以下屬性]** :
 
@@ -53,7 +53,7 @@ ht-degree: 20%
 | 日期 | 欄位標籤，對應至屬性，預設值 |
 | 標準標記 | 欄位標籤、對應至屬性、預設值、說明 |
 
-1. 按一下 **[!UICONTROL 完成]**. 中繼資料設定檔會新增至 **[!UICONTROL 中繼資料設定檔]** 頁面。
+1. 按一下&#x200B;**[!UICONTROL 「完成」]**。中繼資料設定檔會新增至 **[!UICONTROL 中繼資料設定檔]** 頁面。
 
 ## 複製中繼資料設定檔 {#copying-a-metadata-profile}
 

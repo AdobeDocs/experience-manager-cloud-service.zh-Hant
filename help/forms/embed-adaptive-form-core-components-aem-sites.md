@@ -6,10 +6,10 @@ feature: Adaptive Forms
 hide: true
 hidefromtoc: true
 exl-id: 1046231f-787c-4e49-9ba0-e7dd59e41bce
-source-git-commit: 1d5641dd07cc68dade247fe30bb57663872e5560
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '2135'
-ht-degree: 2%
+ht-degree: 5%
 
 ---
 
@@ -37,11 +37,11 @@ ht-degree: 2%
 
 +++ 啟用 **[!UICONTROL 最適化Forms容器]** 元件。
 
-若要啟用 [!UICONTROL 最適化Forms容器] 元件執行範本原則中的下列步驟：
+若要啟用範本原則中的[!UICONTROL 調適型表單容器]元件，需執行以下步驟：
 
 1. 前往 [!UICONTROL 頁面資訊] > [!UICONTROL 編輯範本]
 1. 按一下 [!UICONTROL 原則] 並選取 **[!UICONTROL 最適化Forms容器]**  核取方塊於 **[AEM原型專案名稱]  — 最適化表單**.
-1. 按一下 **[!UICONTROL 完成]**.
+1. 按一下&#x200B;**[!UICONTROL 「完成」]**。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419370?quality=12&learn=on)
 
@@ -51,11 +51,11 @@ ht-degree: 2%
 
 若要在AEM Sites頁面中使用最適化Forms元件，請使用AEM Archetype/Git存放庫和部署管道，將Customheaderlibs和Customfooterlibs使用者端程式庫加入AEM Sites頁面。
 
-1. 開啟您的 [AEM Forms原型或複製的Git存放庫](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hant) 在文字編輯器中專案。 例如，Visual Studio Code。
+1. 開啟您的 [AEM Forms原型或複製的Git存放庫](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) 在文字編輯器中專案。 例如，Visual Studio Code。
 1. 導覽至 `ui.apps/src/main/content/jcr_root/apps/corecomponents/components/page/.content.xml`。
 1. 複製值 `sling:resourceSuperType`. 例如，值為 `core/wcm/components/page/v3/page`.
 
-   ![sling資源](/help/forms/assets/slingresource.png)
+   ![Sling 資源](/help/forms/assets/slingresource.png)
 
 1. 在位置建立類似的結構 `ui.apps/src/main/content/jcr_root/apps` 與 `core/wcm/components/page/v3/page`.
 
@@ -86,7 +86,7 @@ ht-degree: 2%
 
 若要使用建立最適化表單 [!UICONTROL 最適化Forms容器] 元件：
 
-1. 在編輯模式下開啟AEM Sites頁面。
+1. 在編輯模式中開啟 AEM Sites 頁面。
 1. 在元件瀏覽器面板中，拖放 **[!UICONTROL 最適化Forms容器]** 元件時。
 1. 使用最適化Forms元件建立最適化表單。
 1. 儲存設定。
@@ -112,12 +112,12 @@ ht-degree: 2%
    * **預填服務**：您可以使用預填服務，使用現有資料自動填入最適化表單的欄位。 當使用者開啟表單時，這些欄位的值會預先填充。 如需預填服務的詳細資訊，請參閱 [預填自適應表單欄位](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/prepopulate-adaptive-form-fields.html#configuring-prefill-service-using-configuration-manager)
    * **使用者端資料庫類別**：指定 [JavaScript函式](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-rules-and-use-expressions-in-an-adaptive-form/rule-editor.html?lang=en#custom-functions) 運算式中使用且受到Adaptive Forms支援的欄位。
 * **資料模型**：資料模型可讓您將實體和服務從不同的資料來源整合到最適化表單中。 選擇 **[!UICONTROL 表單資料模型]** 如果您要建立的最適化表單涉及從多個資料來源擷取及寫入資料，請改為從多個資料來源擷取及寫入資料。
-   * **表單資料模型**：表單資料模型可讓最適化表單與不同的資料來源通訊。 如需設定資料來源的詳細資訊，請參閱 [設定資料來源。](/help/forms/configure-data-sources.md)
+   * **表單資料模型**：表單資料模型可讓最適化表單與不同的資料來源通訊。 如需設定資料來源的詳細資訊，請參閱 [設定資料來源](/help/forms/configure-data-sources.md).
    * **結構描述**：結構描述代表組織中後端系統產生或使用資料的結構。 您可以 [將結構描述關聯至最適化表單](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/adaptive-form-json-schema-form-model.html) 並使用其元素將動態內容新增至最適化表單。
 
-      >[!NOTE]
-      >
-      > 設定表單資料模型後，您無法變更關聯的表單模型。 不過，您可以修改與表單資料模型相關聯的結構描述。
+     >[!NOTE]
+     >
+     > 設定表單資料模型後，您無法變更關聯的表單模型。 不過，您可以修改與表單資料模型相關聯的結構描述。
 
 * **提交索引標籤**
 
@@ -133,7 +133,7 @@ ht-degree: 2%
          * 提交至 OneDrive
          * 提交到 Azure Blob 儲存體
 
-   您也可以 [擴充預設提交動作](custom-submit-action-form.md) 以建立您自己的自訂提交動作。
+  您也可以 [擴充預設提交動作](custom-submit-action-form.md) 以建立您自己的自訂提交動作。
 
 * **顯示訊息**
    * **訊息內容**：使用RTF編輯器撰寫訊息，以在表單提交時顯示。 只有當您選擇顯示感謝訊息時，才可使用此選項。
@@ -155,7 +155,7 @@ ht-degree: 2%
 1. 前往 [!UICONTROL 頁面資訊] > [!UICONTROL 編輯範本]
 
 1. 按一下 [!UICONTROL 原則] 並選取 **[!UICONTROL 最適化表單 — 內嵌(v2)]** 核取方塊於 **[!UICONTROL [AEM原型專案名稱] - FORMS]** 群組。
-1. 按一下 **[!UICONTROL 完成]**.
+1. 按一下&#x200B;**[!UICONTROL 「完成」]**。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419369?quality=12&learn=on)
 
@@ -169,11 +169,11 @@ ht-degree: 2%
 
 若要在AEM Sites頁面中使用最適化Forms元件，請包含 `Customheaderlibs` 和 `Customfooterlibs` 使用AEM Archetype/Git存放庫和部署管道將使用者端程式庫移至AEM Sites頁面。
 
-1. 開啟您的 [AEM Forms原型或複製的Git存放庫](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hant) 在文字編輯器中專案。 例如，Visual Studio Code。
+1. 開啟您的 [AEM Forms原型或複製的Git存放庫](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) 在文字編輯器中專案。 例如，Visual Studio Code。
 1. 導覽至 `ui.apps/src/main/content/jcr_root/apps/corecomponents/components/page/.content.xml`。
 1. 複製值 `sling:resourceSuperType`. 例如，值為 `core/wcm/components/page/v3/page`.
 
-   ![sling資源](/help/forms/assets/slingresource.png)
+   ![Sling 資源](/help/forms/assets/slingresource.png)
 
 1. 在位置建立類似的結構 `ui.apps/src/main/content/jcr_root/apps` 與 `core/wcm/components/page/v3/page`.
 
@@ -203,7 +203,7 @@ ht-degree: 2%
 
 ### 新增現有的最適化表單至AEM Sites頁面 {#embed-existing-af}
 
-1. 在編輯模式下開啟AEM Sites頁面。
+1. 在編輯模式中開啟 AEM Sites 頁面。
 1. 在元件瀏覽器面板中，拖放 [!UICONTROL 最適化Forms — 內嵌] 元件時。
 1. 點選 [!UICONTROL 最適化Forms — 內嵌] 元件於「網站」頁面並點選 ![settings_icon](/help/forms/assets/Smock_Wrench_18_N.svg) 在動作列上。 此 **[!UICONTROL 編輯最適化Forms — 內嵌]** 對話方塊開啟。
 1. 瀏覽並選取最適化表單，以內嵌於 [!UICONTROL 資產路徑].
@@ -215,7 +215,7 @@ ht-degree: 2%
 
 ### 建立最適化表單並新增至AEM Sites頁面 {#embed-new-af}
 
-1. 在編輯模式下開啟AEM Sites頁面。
+1. 在編輯模式中開啟 AEM Sites 頁面。
 1. 在元件瀏覽器面板中，拖放 [!UICONTROL 最適化Forms — 內嵌(v2)] 元件時。
 1. 按一下 **加號** 圖示後，您就會被重新導向至表單建立精靈。
 

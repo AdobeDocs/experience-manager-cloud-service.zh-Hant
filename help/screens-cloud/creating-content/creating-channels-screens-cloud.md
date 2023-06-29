@@ -2,9 +2,9 @@
 title: as a Cloud Service在Screens中建立和管理頻道
 description: 本頁面說明如何在Screens中以as a Cloud Service方式建立和管理頻道。
 exl-id: 3b0bae7a-4a45-485a-ab04-604510ff6578
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1104'
+source-wordcount: '1087'
 ht-degree: 1%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >**必備條件**
->在開始本指南的本節之前，請檢閱 [在Screens中建立和管理專案as a Cloud Service](/help/screens-cloud/creating-content/creating-projects-screens-cloud.md).
+>開始本指南的本節之前，請先檢閱 [在Screens中建立和管理專案as a Cloud Service](/help/screens-cloud/creating-content/creating-projects-screens-cloud.md).
 
 請依照下列步驟，在Screensas a Cloud Service中建立新的序列頻道：
 
@@ -42,7 +42,7 @@ ht-degree: 1%
 
    ![](/help/screens-cloud/assets/create-content/channel-create2.png)
    >[!NOTE]
-   > 此 **建立** 精靈會在建立管道時提供不同型別的範本。 請參閱區段 [可用的範本](#available-templates) 在建立精靈中取得詳細資訊。
+   > 此 **建立** 精靈會在建立管道時提供不同型別的範本。 另請參閱 [可用的範本](#available-templates) 在建立精靈中取得詳細資訊。
 
 1. 輸入序列管道的名稱，例如 **LoopingChannelOne** 並按一下 **建立**.
 
@@ -50,7 +50,7 @@ ht-degree: 1%
 
    您現在會看到 **LoopingChannelOne** (位於您的AEM Screens專案的「頻道」資料夾中)。
 
-   建立管道後，您現在可以將內容新增到管道中。 請參閱 [新增內容至頻道](#add-content) 以瞭解如何將資產（影像/影片）新增至您的頻道。
+   建立管道後，您現在可以將內容新增到管道中。 另請參閱 [新增內容至頻道](#add-content) 以瞭解如何將資產（影像/影片）新增至您的頻道。
 
 ## 管理管道 {#managing-channels}
 
@@ -111,7 +111,7 @@ ht-degree: 1%
 此圖磚會顯示下列資訊：
 * 頻道在顯示中的預設優先順序。
 * 頻道排程播放時的啟用開始和結束日期。
-* 週期的綜合檢視（每小時/每日/每週/每月/每年，以及該週期的名稱）。
+* 週期的綜合檢視（每小時/每日/每週/每月/每年，以及該週期指定的名稱）。
 
 ### 指派給顯示區時，使用預設指派詳細資料 {#default-display}
 
@@ -143,8 +143,8 @@ ht-degree: 1%
 
 **注意：** 使用預設指派詳細資訊的頻道指派在顯示的內容中將不可編輯。
 
-* 如果您需要將其變更為自訂指派，您必須先將其移除，然後使用 **設定自訂指派詳細資料** 選項。
-* 如果您需要變更預設指派詳細資訊的屬性，您必須直接從管道詳細資訊頁面執行此操作。
+* 如果您必須將其變更為自訂指派，請先將其移除，然後使用 **設定自訂指派詳細資料** 選項。
+* 如果您必須變更預設指派專案詳細資訊的屬性，請直接從管道詳細資訊頁面進行變更。
 
 ### 從頻道移除預設指派詳細資料 {#remove-display}
 
@@ -174,4 +174,4 @@ ht-degree: 1%
 
 ## 下一步 {#whats-next}
 
-現在，您已在專案中設定AEM Screens頻道，您需要發佈頻道。 請參閱 [以as a Cloud Service方式在Screens中發佈頻道](manage-publish.md) 從Screens服務提供者管理您的播放器之前。
+現在，您已在專案中設定AEM Screens頻道，您需要發佈頻道。 另請參閱 [以as a Cloud Service方式在Screens中發佈頻道](manage-publish.md) 從Screens服務提供者管理您的播放器之前。

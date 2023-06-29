@@ -2,9 +2,9 @@
 title: 您的收件匣
 description: 使用收件匣管理您的工作
 exl-id: 37d0cf43-192f-4a50-b174-42d7dced3b63
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '905'
+source-wordcount: '906'
 ht-degree: 18%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 18%
 
 >[!NOTE]
 >
->如需有關料號型態的進一步資訊，另請參閱：
+>如需有關專案型別的詳細資訊，請參閱下列內容：
 >
 >* [專案](/help/sites-cloud/authoring/projects/overview.md)
 >* [專案 — 使用任務](/help/sites-cloud/authoring/projects/tasks.md)
@@ -102,7 +102,7 @@ ht-degree: 18%
 
   ![收件匣清單檢視設定](/help/sites-cloud/authoring/assets/inbox-list-settings.png)
 
-  您也可以將行事曆委派給其他使用者，以及請求其他使用者的委派和管理您的委派。
+  您也可以將行事曆委派給其他使用者，並向其他使用者要求委派以及管理您的委派。
 
   ![收件匣清單檢視委派設定](/help/sites-cloud/authoring/assets/inbox-delegation.png)
 
@@ -132,7 +132,7 @@ ht-degree: 18%
 
    >[!NOTE]
    >
-   >如需進一步詳細資訊，請參閱：
+   >如需詳細資訊，請參閱下列內容：
    >
    >* 工作流程專案 —  [參與工作流程](/help/sites-cloud/authoring/workflows/participating.md)
 

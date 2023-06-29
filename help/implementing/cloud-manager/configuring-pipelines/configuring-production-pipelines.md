@@ -3,10 +3,10 @@ title: 設定生產管道
 description: 了解如何設定生產管道以建置計劃碼並將其部署到生產環境。
 index: true
 exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1513'
-ht-degree: 91%
+source-wordcount: '1509'
+ht-degree: 90%
 
 ---
 
@@ -137,9 +137,9 @@ ht-degree: 91%
 
 1. 按一下&#x200B;**儲存**，即可儲存您的管道。
 
-為體驗稽核設定的路徑會提交至服務，並在管道執行時根據效能、協助工具、SEO （搜尋引擎最佳化）、最佳實務和PWA（漸進式Web應用程式）測試進行評估。 如需更多詳細資訊，請參閱[了解體驗稽核結果](/help/implementing/cloud-manager/experience-audit-testing.md)。
+為體驗稽核設定的路徑會提交至服務，並在管道執行時根據效能、協助工具、SEO （搜尋引擎最佳化）、最佳實務和PWA（漸進式Web應用程式）測試進行評估。 另請參閱 [瞭解體驗稽核結果](/help/implementing/cloud-manager/experience-audit-testing.md) 以取得更多詳細資料。
 
-管道已儲存，您現在可以在&#x200B;**計畫總覽**&#x200B;頁面的&#x200B;**管道**&#x200B;卡上[管理您的管道](managing-pipelines.md)。
+管道已儲存，您現在可以在&#x200B;**計劃總覽**&#x200B;頁面的&#x200B;**管道**&#x200B;卡上[管理您的管道](managing-pipelines.md)。
 
 ### Web 層設定 {#web-tier-config}
 
@@ -177,7 +177,7 @@ Web 層設定管道部署 HTTPD/ Dispatcher 設定。有關此類管道的更多
 
 有了前端流水線，給前端開發者更多的獨立性，可以加快開發進程。
 
-請參考檔案 [使用前端管道開發網站](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) 瞭解此程式的運作方式，以及一些需要注意的事項，以充分發揮此程式的潛力。
+另請參閱 [使用前端管道開發網站](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) 瞭解此程式的運作方式，以及一些需要注意的事項，以充分發揮此程式的潛力。
 
 ## 跳過發送器套件 {#skip-dispatcher-packages}
 

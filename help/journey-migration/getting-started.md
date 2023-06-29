@@ -2,9 +2,9 @@
 title: AEMas a Cloud Service移轉歷程快速入門
 description: 熟悉 AEM as a Cloud Service 移轉的基本知識，開始您的移轉歷程
 exl-id: e1a79630-56c1-4648-aa11-3348c3b37541
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '585'
+source-wordcount: '583'
 ht-degree: 19%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 19%
 
 ## 目標 {#objective}
 
-本檔案可協助您瞭解為何應使用雲端原生AEM版本，以及移轉至AEMas a Cloud Service的不同階段。 閱讀本檔案後，您應該：
+本檔案可協助您瞭解為何應使用AEM的雲端原生版本，以及移轉至AEMas a Cloud Service的不同階段。 閱讀本檔案後，您應該：
 
 * 瞭解as a Cloud Service移動AEM的好處
 * 熟悉您必須採取的主要步驟，以便能夠轉換至雲端

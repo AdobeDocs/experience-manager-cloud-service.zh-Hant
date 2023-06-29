@@ -2,9 +2,9 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2020.11.0 版發行說明。'
 description: '"[!DNL Adobe Experience Manager] 2020.11.0版as a Cloud Service發行說明」。'
 exl-id: 8066c0fb-c2f5-4625-9448-b0c74ff4e192
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1264'
+source-wordcount: '1261'
 ht-degree: 13%
 
 ---
@@ -73,9 +73,9 @@ ht-degree: 13%
 
 ### 新增功能 {#what-is-new-commerce}
 
-* 已發行CIF Venia Reference Site - 2020.11.05，其中包含最新CIF Core Components v1.5.0版。請參閱 [CIF Venia參考網站](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.10.27) 以取得更多詳細資料。
+* 已發行CIF Venia Reference Site - 2020.11.05，其中包含最新CIF Core Components v1.5.0版。另請參閱 [CIF Venia參考網站](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.10.27) 以取得更多詳細資料。
 
-* 已發行CIF Core Components v1.5.0。請參閱 [CIF Core Components](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.5.0) 以取得更多詳細資料。
+* 已發行CIF Core Components v1.5.0。另請參閱 [CIF Core Components](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.5.0) 以取得更多詳細資料。
 
 ### 錯誤修正 {#bug-fixes-commerce}
 
@@ -90,7 +90,7 @@ AEM as a Cloud Service 2020.11.0 中的 Cloud Manager 發行日期是 2020 年 1
 ### [!DNL Cloud Manager]的新增功能 {#what-is-new-cm}
 
 * 新功能表選項 **本機登入** 現在可供使用者從 **環境** 卡片和 **環境** 摘要頁面。
-如需詳細資訊，請參閱[管理環境](/help/implementing/cloud-manager/manage-environments.md#login-locally)。
+另請參閱 [管理環境](/help/implementing/cloud-manager/manage-environments.md#login-locally) 以取得更多詳細資料。
 
 * **學習** Cloud Manager 中的索引標籤已在 UI 中使用新圖像進行了刷新。
 

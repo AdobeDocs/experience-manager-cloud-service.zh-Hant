@@ -2,10 +2,10 @@
 title: Adobe Experience Manager as a Cloud Service 的 IMS 支援
 description: Adobe Experience Manager as a Cloud Service的影像管理系統支援
 exl-id: fb563dbd-a761-4d83-9da1-58f8e462b383
-source-git-commit: 7260649eaab303ba5bab55ccbe02395dc8159949
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1997'
-ht-degree: 40%
+source-wordcount: '1993'
+ht-degree: 39%
 
 ---
 
@@ -106,7 +106,7 @@ AEM客戶應先布建組織，而在IMS布建過程中，客戶執行個體可�
 
 **使用者同步文件**
 
-如需詳細資訊，請參閱 [UST 文件](https://adobe-apiplatform.github.io/user-sync.py/en/)。
+另請參閱 [UST檔案](https://adobe-apiplatform.github.io/user-sync.py/en/) 以取得更多詳細資料。
 
 使用者同步工具必須透過程式註冊為Adobe Developer使用者端UMAPI [此處](https://adobe-apiplatform.github.io/umapi-documentation/en/UM_Authentication.html).
 
@@ -214,7 +214,7 @@ AEM會繼續管理ACL和許可權。 您可將從 IMS 同步的使用者群組�
 
 若要能夠存取Cloud Manager或AEMas a Cloud Service上的環境，您必須指派給Cloud Manager產品的設定檔。
 
-請參閱角色定義深入了解使用者的角色，這些角色能控制使用者能否使用 Cloud Manager 的特定功能。
+請參閱角色定義深入瞭解使用者的角色，這些角色能控制使用者能否使用Cloud Manager的特定功能。
 
 >[!NOTE]
 >Cloud Manager 已預先設定角色，賦予適當權限。 若要瞭解每個具有特定許可權的角色、預先設定的任務或每個角色的相關許可權，請參閱 [角色型許可權](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/role-based-permissions.html?lang=en).

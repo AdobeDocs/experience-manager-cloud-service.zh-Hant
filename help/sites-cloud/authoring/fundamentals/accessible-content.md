@@ -2,9 +2,9 @@
 title: 為Adobe Experience Manager as a Cloud Service建立無障礙內容（符合WCAG 2.1）
 description: 使用AEMas a Cloud Service協助讓身心障礙人士存取及使用網路內容
 exl-id: 294fd1ed-9b4a-42cb-8f9e-e7a5d7e6930e
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '13864'
+source-wordcount: '13862'
 ht-degree: 3%
 
 ---
@@ -415,7 +415,7 @@ AEM可讓您使用適當的HTML元素，輕鬆建構語義上有意義的網頁�
 
 #### 如何達到標準 — 有意義的順序(1.3.2) {#how-to-meet-meaningful-sequence}
 
-請遵循以下准則： [如何達到成功標準1.3.2](https://www.w3.org/WAI/WCAG21/quickref/#meaningful-sequence).
+遵循以下准則： [如何達到成功標準1.3.2](https://www.w3.org/WAI/WCAG21/quickref/#meaningful-sequence).
 
 #### 更多資訊 — 有意義的順序(1.3.2) {#more-information-meaningful-sequence}
 
@@ -436,7 +436,7 @@ AEM可讓您使用適當的HTML元素，輕鬆建構語義上有意義的網頁�
 
 >[!NOTE]
 >
-有關替代顏色的需求，請參閱 [使用顏色](#use-of-color).
+有關替代色彩的需求，請參閱 [使用顏色](#use-of-color).
 
 #### 如何達到標準 — 感官特性(1.3.3) {#how-to-meet-sensory-characteristics}
 
@@ -509,7 +509,7 @@ AEM可讓您使用適當的HTML元素，輕鬆建構語義上有意義的網頁�
 
 #### 如何達到標準 — 音訊控制(1.4.2) {#how-to-meet-audio-control}
 
-請遵循以下准則： [如何達到成功標準1.4.2](https://www.w3.org/WAI/WCAG21/quickref/#audio-control).
+遵循以下准則： [如何達到成功標準1.4.2](https://www.w3.org/WAI/WCAG21/quickref/#audio-control).
 
 #### 更多資訊 — 音訊控制(1.4.2) {#more-information-audio-control}
 
@@ -660,7 +660,7 @@ AEM可讓您使用適當的HTML元素，輕鬆建構語義上有意義的網頁�
 
 #### 如何達到標準 — 無鍵盤陷阱(2.1.2) {#how-to-meet-no-keyboard-trap}
 
-遵循以下准則： [如何達到成功標準2.1.2](https://www.w3.org/WAI/WCAG21/quickref/#no-keyboard-trap).
+請遵循以下准則： [如何達到成功標準2.1.2](https://www.w3.org/WAI/WCAG21/quickref/#no-keyboard-trap).
 
 #### 更多資訊 — 無鍵盤陷阱(2.1.2) {#more-information-no-keyboard-trap}
 
@@ -685,7 +685,7 @@ AEM可讓您使用適當的HTML元素，輕鬆建構語義上有意義的網頁�
 
 #### 如何達到標準 — 計時可調(2.2.1) {#how-to-meet-timing-adjustable}
 
-請遵循以下准則： [如何達到成功標準2.2.1](https://www.w3.org/WAI/WCAG21/quickref/#timing-adjustable).
+遵循以下准則： [如何達到成功標準2.2.1](https://www.w3.org/WAI/WCAG21/quickref/#timing-adjustable).
 
 #### 更多資訊 — 計時可調(2.2.1) {#more-information-timing-adjustable}
 
@@ -774,7 +774,7 @@ AEM可讓您使用適當的HTML元素，輕鬆建構語義上有意義的網頁�
 
 #### 如何達到標準 — 略過區塊(2.4.1) {#how-to-meet-bypass-blocks}
 
-請遵循以下准則： [如何達到成功標準2.4.1](https://www.w3.org/WAI/WCAG21/quickref/#bypass-blocks).
+遵循以下准則： [如何達到成功標準2.4.1](https://www.w3.org/WAI/WCAG21/quickref/#bypass-blocks).
 
 #### 更多資訊 — 略過區塊(2.4.1) {#more-information-bypass-blocks}
 
@@ -944,7 +944,7 @@ John Smith's publications
 
 #### 如何達到標準 — 焦點可見(2.4.7) {#how-to-meet-focus-visible}
 
-遵循以下准則： [如何達到成功標準2.4.7](https://www.w3.org/WAI/WCAG21/quickref/#focus-visible).
+請遵循以下准則： [如何達到成功標準2.4.7](https://www.w3.org/WAI/WCAG21/quickref/#focus-visible).
 
 #### 更多資訊 — 焦點可見(2.4.7) {#more-information-focus-visible}
 
@@ -1081,7 +1081,7 @@ AEM針對根語言的變體提供進一步微調；例如，美式英文 — en-
 
 #### 如何達到標準 — 輸入(3.2.2) {#how-to-meet-on-input}
 
-請遵循以下准則： [如何達到成功標準3.2.2](https://www.w3.org/WAI/WCAG21/quickref/#on-input).
+遵循以下准則： [如何達到成功標準3.2.2](https://www.w3.org/WAI/WCAG21/quickref/#on-input).
 
 #### 更多資訊 — 輸入(3.2.2) {#more-information-on-input}
 
@@ -1258,7 +1258,7 @@ AEM針對根語言的變體提供進一步微調；例如，美式英文 — en-
 
 #### 如何達到標準 — 錯誤預防（法律、金融、資料） (3.3.4) {#how-to-meet-error-prevention-legal-financial-data}
 
-請遵循以下准則： [如何達到成功標準3.3.4](https://www.w3.org/WAI/WCAG21/quickref/#error-prevention-legal-financial-data).
+遵循以下准則： [如何達到成功標準3.3.4](https://www.w3.org/WAI/WCAG21/quickref/#error-prevention-legal-financial-data).
 
 #### 更多資訊 — 錯誤預防（法律、金融、資料） (3.3.4) {#more-information-error-prevention-legal-financial-data}
 
@@ -1289,7 +1289,7 @@ AEM針對根語言的變體提供進一步微調；例如，美式英文 — en-
 
 #### 如何達到標準 — 剖析(4.1.1) {#how-to-meet-parsing}
 
-請遵循以下准則： [如何達到成功標準4.1.1](https://www.w3.org/WAI/WCAG21/quickref/#parsing).
+遵循以下准則： [如何達到成功標準4.1.1](https://www.w3.org/WAI/WCAG21/quickref/#parsing).
 
 #### 更多資訊 — 剖析(4.1.1) {#more-information-parsing}
 

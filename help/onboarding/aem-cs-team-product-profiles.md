@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service 團隊和產品設定檔
 description: 了解 AEM as a Cloud Service 團隊和產品設定檔如何能夠授與和限制您的授權 Adobe 解決方案的存取權。
 exl-id: 7b1474c9-aca0-4354-8798-1abdcda2f6dd
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '776'
-ht-degree: 94%
+source-wordcount: '759'
+ht-degree: 82%
 
 ---
 
@@ -15,11 +15,11 @@ ht-degree: 94%
 
 ## 產品設定檔 {#profiles}
 
-在授與使用者特定 Adobe 解決方案的存取權時，您不一定要授與他們完整的存取權。產品設定檔使每個解決方案都可以擁有自己的一組使用者權限。這些可透過 [Admin Console](/help/journey-onboarding/admin-console.md) 取得和存取。
+在授與使用者特定 Adobe 解決方案的存取權時，您不一定要授與他們完整的存取權。產品設定檔使每個解決方案都可以擁有自己的一組使用者權限。這些可透過 [Admin Console](/help/journey-onboarding/admin-console.md).
 
 ## AEM as a Cloud Service 產品設定檔 {#aem-product-profiles}
 
-AEM as a Cloud Service 是完全的雲端原生產品，可提供 AEM 即服務。它以雲端原生方式提供 AEM，具有永遠可用、永遠最新、永遠安全和永遠可擴展等新屬性。同時，它保留了 AEM 作為可自訂平台提供給客戶的主要價值主張，並允許企業級團隊整合到他們的開發和交付計畫中。若要深入了解 AEM as a Cloud Service，請參閱 [Adobe Experience Manager as a Cloud Service](/help/overview/introduction.md) 簡介。
+AEM as a Cloud Service 是完全的雲端原生產品，可提供 AEM 即服務。它以雲端原生方式提供 AEM，具有永遠可用、永遠最新、永遠安全和永遠可擴展等新屬性。同時，它保留了 AEM 作為可自訂平台提供給客戶的主要價值主張，並允許企業級團隊整合到他們的開發和交付計畫中。另請參閱 [Adobe Experience Manager as a Cloud Service簡介](/help/overview/introduction.md) 以進一步瞭解AEMas a Cloud Service。
 
 您的AEMas a Cloud Service團隊成員在入門期間會透過Admin Console新增並指派到以下一個或多個產品設定檔。
 
@@ -41,8 +41,8 @@ AEM as a Cloud Service 是完全的雲端原生產品，可提供 AEM 即服務�
 
 >[!TIP]
 >
->* 若要深入了解 AEM 產品設定檔，請參閱文件：[指派 AEM 產品設定檔。](/help/journey-onboarding/assign-profiles-aem.md)
->* 如需上線流程的詳細資訊，請參閱[上線歷程](/help/journey-onboarding/overview.md)
+>* 若要深入瞭解AEM產品設定檔，請參閱 [指派AEM產品設定檔](/help/journey-onboarding/assign-profiles-aem.md).
+>* 如需入門流程的詳細資訊，請參閱 [入門歷程](/help/journey-onboarding/overview.md).
 
 ## Cloud Manager 產品設定檔 {#cloud-manager-product-profiles}
 
@@ -50,7 +50,7 @@ Cloud Manager 具有預先設定的產品設定檔，可以將其視為角色型
 
 >[!TIP]
 >
->如需了解詳細資訊，請參閱文件：[Cloud Manager 中的角色型權限](/help/onboarding/cloud-manager-introduction.md#role-based-permissions)。
+>另請參閱 [Cloud Manager中基於角色的許可權](/help/onboarding/cloud-manager-introduction.md#role-based-permissions) 以取得更多詳細資料。
 
 每個產品設定檔都有與之關聯的特定權限。
 
@@ -73,5 +73,5 @@ Cloud Manager 具有預先設定的產品設定檔，可以將其視為角色型
 
 >[!TIP]
 >
->* 若要深入了解 Cloud Manager 產品設定檔，請參閱文件：[將團隊成員指派到 Cloud Manager 產品設定檔。](/help/journey-onboarding/assign-profiles-cloud-manager.md)
->* 如需上線流程的詳細資訊，請參閱[上線歷程](/help/journey-onboarding/overview.md)
+>* 若要深入瞭解Cloud Manager產品設定檔，請參閱 [將團隊成員指派給Cloud Manager產品設定檔](/help/journey-onboarding/assign-profiles-cloud-manager.md).
+>* 如需入門流程的詳細資訊，請參閱 [入門歷程](/help/journey-onboarding/overview.md).

@@ -4,10 +4,10 @@ description: 利用行動中心可輕鬆對事件和其他重要資訊採取行�
 hidefromtoc: true
 hide: true
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '703'
-ht-degree: 94%
+source-wordcount: '701'
+ht-degree: 91%
 
 ---
 
@@ -16,11 +16,11 @@ ht-degree: 94%
 >[!NOTE]
 >此功能尚未推出。
 
-AEM as Cloud Service 在發生需要立即採取行動的嚴重事件時會傳送行動中心電子郵件，並提出主動建議以進行最佳化。 例如，佇列阻塞或一組過期的憑證；您可在[下表](#supported-notification-types)檢視整套行動中心通知類型，通知類型會隨時間增加。
+AEM as Cloud Service會在發生需要立即採取行動的重大事件時，傳送行動中心電子郵件通知，並主動提供最佳化建議。 例如，佇列阻塞或一組過期的憑證；您可在[下表](#supported-notification-types)檢視整套行動中心通知類型，通知類型會隨時間增加。
 
 收到行動中心電子郵件通知後，可以點選並打開 AEM as a Cloud Service 的通知中心，這會彈出顯示附加內容的快顯視窗，說明建議客戶採取的動作。
 
-除了顯示有關剛剛點擊的電子郵件通知資訊外，行動中心還可充當中樞，讓您在其中查看和管理目前和較舊的通知組。<!-- It can be accessed directly at the url TBD (Alexandru: I'm intentionally keeping it TBD for now so customers don't find it) -->
+除了顯示有關剛剛點擊的電子郵件通知資訊外，行動中心還可充當中樞，讓您在其中查看和管理目前和較舊的通知組。<!-- It can be accessed directly at the url TBD (Alexandru: I'm intentionally keeping it TBD for now so customers do not find it) -->
 
 有兩種基本通知類別會出現在行動中心：
 

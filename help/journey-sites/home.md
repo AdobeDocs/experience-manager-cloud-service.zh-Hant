@@ -2,10 +2,10 @@
 title: AEM Sites 歷程
 description: 從這裡開始，概要描述可用於了解 AEM 強大網站功能的引導式歷程。
 exl-id: d18bc8b8-8d94-4296-a218-b21b59e6563d
-source-git-commit: fd663a98cc4b2924edb274baa452264a37641e0c
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '420'
-ht-degree: 100%
+source-wordcount: '418'
+ht-degree: 87%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 100%
 
 ## 簡介 {#introduction}
 
-[AEM Sites](https://business.adobe.com/products/experience-manager/sites/aem-sites.html) 是一套統一的強大工具，可讓您跨管道輕鬆建立、管理和發佈數位體驗。從設定初始內容結構，到輕鬆建立可重複使用的內容，再到部署到多個市場和語言，以及建立提供個人化體驗的自訂應用程式，AEM Sites 是一個全面的中央解決方案，可以為您的對象建立出色的體驗，無論他們身在何處。
+[AEM Sites](https://business.adobe.com/products/experience-manager/sites/aem-sites.html) 是一套統一的強大工具，可讓您跨管道輕鬆建立、管理和發佈數位體驗。從設定您的初始內容結構，到輕鬆建立可重複使用的內容，再到部署到多個市場和語言，以及建立提供個人化體驗的自訂應用程式，AEM Sites是一套全方位的中央解決方案，可為您的受眾打造絕佳體驗，無論他們身在何處。
 
 ## AEM 文件歷程 {#documentation-journeys}
 
@@ -43,4 +43,4 @@ Sites 歷程是為不同角色而設計，從不同的角度列出了實作網�
 | [參考示範附加元件歷程](/help/journey-sites/demos-add-on/overview.md) | 從這裡開始，此歷程會逐步引導您了解如何以最少的 AEM 設定，輕鬆將 AEM 參考示範附加元件新增到沙箱環境，並能夠使用根據最佳做法的豐富範例來測試 AEM 的強大功能。 | 系統管理員 |
 | [Sites 翻譯歷程](/help/journey-sites/translation/overview.md) | 徹底了解 AEM Sites 技術、如何在您的專案中使用這些技術，以及在 AEM 中建立和更新翻譯專案的整個過程。 | 翻譯專家 |
 
-請密切注意[即將到來、涵蓋其他角色的歷程。](/help/journey-documentation/documentation-journeys.md#journeys)
+敬請期待 [即將推出的涵蓋其他角色的歷程](/help/journey-documentation/documentation-journeys.md#journeys).

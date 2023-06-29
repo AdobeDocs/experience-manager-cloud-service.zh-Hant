@@ -2,10 +2,10 @@
 title: 建立沙箱計畫
 description: 了解如何使用 Cloud Manager 建立您自己的沙箱計劃，用於訓練、展示、POC 或其他非生產目的。
 exl-id: 10011392-3059-4bb0-88db-0af1d390742e
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '463'
-ht-degree: 92%
+source-wordcount: '445'
+ht-degree: 48%
 
 ---
 
@@ -17,15 +17,13 @@ ht-degree: 92%
 
 ## 建立沙箱計畫 {#create}
 
-請依照以下步驟建立沙箱計畫。
-
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織。
 
-1. 從 Cloud Manager 的登陸頁面，按一下畫面的右上角的&#x200B;**新增計畫**。
+1. 從Cloud Manager的登陸頁面，在畫面的右上角附近，按一下 **新增計畫**.
 
    ![Cloud Manager 登陸頁面](assets/cloud-manager-my-programs.png)
 
-1. 從建立程序精靈中，選取&#x200B;**設定沙箱**，並提供程序名稱。
+1. 從建立計畫精靈中，選擇 **設定沙箱**，並提供計畫名稱。
 
    ![程序類型建立](assets/create-sandbox.png)
 
@@ -33,23 +31,23 @@ ht-degree: 92%
 
    * 該影像僅做為程序概觀視窗的圖磚，有助於識別程序。
 
-1. 在&#x200B;**設定沙箱**&#x200B;對話框中，按一下&#x200B;**解決方案和附加元件**&#x200B;表格中的選項，選擇要在沙箱程序中啟用的解決方案。
+1. 在 **設定您的沙箱** 對話方塊中，勾選「 」選項中的「 」，選擇您希望在沙箱程式中啟用的解決方案。 **解決方案和附加元件** 表格。
 
-   * 使用解決方案名稱旁邊的 > 形符號來顯示解決方案的其他選用的附加元件。
+   * 請使用解決方案名稱旁的>形箭號，以便檢視解決方案的其他選用附加元件。
 
-   * 沙箱程序中一律包含 **Sites** 和 **Assets** 解決方案，無法取消選取。
+   * 此 **網站** 和 **資產** 解決方案一律包含在沙箱程式中，且無法取消選取。
 
    ![為沙箱選取解決方案和附加元件](assets/sandbox-solutions-add-ons.png)
 
-1. 為沙箱選取解決方案和附加元件後，點選/按一下&#x200B;**建立**。
+1. 為您的沙箱計畫選取解決方案和附加元件後，按一下 **建立**.
 
-隨著設定過程的進行，您將在登陸頁面上看到一個帶有狀態指示器的新沙箱程序卡。
+隨著設定過程的進行，您在登陸頁面上看到一個帶有狀態指示器的新沙箱計畫卡。
 
 ![從概覽頁面建立沙箱](assets/sandbox-setup.png)
 
 ## 沙箱存取 {#access}
 
-您可以透過查看計劃概覽頁面查看沙箱設定的詳細資訊以及存取環境 (一旦可用)。
+您可以檢視沙箱設定的詳細資訊，並透過檢視計畫概觀頁面來存取環境（一旦可用）。
 
 1. 從Cloud Manager登陸頁面，按一下新建立程式上的省略符號按鈕。
 
@@ -61,7 +59,7 @@ ht-degree: 92%
 
    >[!TIP]
    >
-   >要了解有關存取和管理 git 存放庫的更多資訊，請參閱文件[存取 Git](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
+   >若要進一步瞭解存取和管理Git存放庫，請參閱 [存取Git](/help/implementing/cloud-manager/managing-code/accessing-repos.md).
 
 1. 建立開發環境後，您可以使用&#x200B;**存取 AEM**&#x200B;連結來登入 AEM。
 
@@ -71,6 +69,6 @@ ht-degree: 92%
 
    ![部署沙箱](assets/create-program-setup-deploy.png)
 
-如果您在任何時候需要切換到另一個計劃或返回概覽頁面來建立另一個計劃，請點擊畫面左上角的計劃名稱以顯示&#x200B;**瀏覽**&#x200B;選項。
+如果您必須切換到另一個計畫，或返回概覽頁面來建立另一個計畫，請按一下畫面左上角的計畫名稱以顯示 **導覽至** 選項。
 
 ![瀏覽到](assets/create-program-a1.png)

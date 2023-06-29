@@ -2,7 +2,7 @@
 title: 使用隱藏條件
 description: 隱藏條件可用於判斷元件資源是否已轉譯。
 exl-id: 2a96f246-fb0f-4298-899e-ebbf9fc1c96f
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '615'
 ht-degree: 2%
@@ -15,7 +15,7 @@ ht-degree: 2%
 
 ## 概觀 {#overview}
 
-對話方塊可能會變得非常複雜，使用者可以使用許多選項，而他們只能使用他們所能使用的選項的一小部分。 這可能會導致使用者無法承受的使用者介面體驗。
+對話方塊可能會變得非常複雜，使用者可以使用許多選項，而他們只能使用自己所擁有選項的一小部分。 這可能會導致使用者無法承受的使用者介面體驗。
 
 透過使用隱藏條件，管理員、開發人員和超級使用者便能根據一組規則來隱藏資源。 此功能可讓他們決定在作者編輯內容時應該顯示哪些資源。
 
@@ -49,7 +49,7 @@ ${cqDesign.property1 == 'someText' && cqDesign.property2 || cqDesign.property3 !
 
 ## 範例 {#example}
 
-在整個AEM和 [核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 尤其是。 例如，請考慮 [列出核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/list.html) 在中實作 [wknd教學課程。](/help/implementing/developing/introduction/develop-wknd-tutorial.md)
+在整個AEM和 [核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 尤其是。 例如，請考慮 [列出核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/list.html) 在中實作 [wknd教學課程](/help/implementing/developing/introduction/develop-wknd-tutorial.md).
 
 [使用範本編輯器](/help/sites-cloud/authoring/features/templates.md)，範本作者可在「設計」對話方塊中定義清單元件的哪些選項可供頁面作者使用。 例如是否允許清單為靜態清單、子頁面清單、標籤頁面清單等選項。 可啟用或停用。
 

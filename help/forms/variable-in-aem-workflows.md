@@ -2,9 +2,9 @@
 title: 如何在AEM Workflow步驟中新增變數？
 description: 瞭解如何建立變數、設定變數的值，以及將其用於 [!DNL AEM Forms] 工作流程步驟。
 exl-id: d9139ea9-2f86-476c-8767-b36766790f2c
-source-git-commit: cf1e2717342ca4e00780428d6ccf264bd8eca371
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2061'
+source-wordcount: '2060'
 ht-degree: 0%
 
 ---

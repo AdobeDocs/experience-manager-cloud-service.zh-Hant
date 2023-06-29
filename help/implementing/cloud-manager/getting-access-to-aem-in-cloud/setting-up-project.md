@@ -2,10 +2,10 @@
 title: 專案設定
 description: 了解如何使用 Maven 構建 AEM 項目，以及在建立自己的項目時必須遵守的標準。
 exl-id: 76af0171-8ed5-4fc7-b5d5-7da5a1a06fa8
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '1404'
-ht-degree: 85%
+ht-degree: 80%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 85%
 為了使用Cloud Manager成功建置和部署，AEM專案需要遵循以下准則：
 
 * 必須使用 [Apache Maven](https://maven.apache.org) 建置專案。
-* 在 Git 存放庫的根目錄中必須有一個 `pom.xml` 檔案。如有必要，此 `pom.xml` 檔案可參照的子模組 (這些子模組又可能有其他子模組) 數量並無限制。視需求。
+* 在 Git 存放庫的根目錄中必須有一個 `pom.xml` 檔案。此 `pom.xml` 檔案可以根據需要參照儘可能多的子模組（這些子模組又可能有其他子模組）。
 * 您可在您的 `pom.xml` 檔案中新增對其他 Maven 成品存放庫的參照。
    * 設定後，可支援對[受密碼保護的成品存放庫](#password-protected-maven-repositories)的存取權。但是，不支援對受網路保護的成品存放庫的存取權。
 * 透過掃描在名為 `target` 的目錄中所包含的內容套件 `.zip` 檔案來探索可部署的內容套件。
@@ -32,7 +32,7 @@ ht-degree: 85%
 
 在某些有限的情況下，當您在 Cloud Manager 中執行而不是在開發人員工作站上執行時，可能需要稍微改變建置流程。對於這些情況，[Maven 設定檔](https://maven.apache.org/guides/introduction/introduction-to-profiles.html)可用於定義組建在不同環境中應如何不同，包括 Cloud Manager。
 
-在 Cloud Manager 組件環境內啟動 Maven 設定檔應透過尋求`CM_BUILD`[環境變數來完成。](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)同樣地，僅供在 Cloud Manager 組建環境之外使用的設定檔應透過尋求不存在此變數來完成。
+在Cloud Manager組建環境內啟動Maven設定檔應透過尋找 `CM_BUILD` [環境變數](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md). 同樣地，僅供在 Cloud Manager 組建環境之外使用的設定檔應透過尋求不存在此變數來完成。
 
 例如，如果您只想在 Cloud Manager 內部執行組建時輸出一則簡單的訊息，您可以採取以下步驟。
 
@@ -110,11 +110,11 @@ ht-degree: 85%
 
 >[!NOTE]
 >
->對於來自受密碼保護的 Maven 存放庫的成品，應極為謹慎地使用，因為透過此機制部署的計劃碼不會透過 Cloud Manager 品質閘道中實作的所有[計劃碼品質規則](/help/implementing/cloud-manager/custom-code-quality-rules.md)。因此，它只應在極少數情況下用於不與 AEM 綁定的計劃碼。建議同時部署 Java 原始計劃碼以及整個專案的原始計劃碼還有二進位。
+>對於來自受密碼保護的 Maven 存放庫的成品，應極為謹慎地使用，因為透過此機制部署的計劃碼不會透過 Cloud Manager 品質閘道中實作的所有[計劃碼品質規則](/help/implementing/cloud-manager/custom-code-quality-rules.md)。因此，它只應在極少數情況下用於不與 AEM 綁定的計劃碼。建議同時部署Java原始程式碼和整個專案的原始程式碼以及二進位。
 
 若要在Cloud Manager中使用受密碼保護的Maven存放庫：
 
-1. 將密碼 (以及可選的使用者名) 指定為機密[管道變數。](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)
+1. 將密碼（以及可選的使用者名稱）指定為密碼 [管道變數](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md).
 1. 然後在一個名為`.cloudmanager/maven/settings.xml`在 git 存放庫中，它遵循[Maven 設定檔案](https://maven.apache.org/settings.html)架構。
 
 當 Cloud Manager 建置過程開始時：

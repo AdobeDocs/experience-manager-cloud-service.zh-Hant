@@ -2,9 +2,9 @@
 title: 使用最佳做法分析工具
 description: 使用最佳做法分析工具
 exl-id: e8498e17-f55a-4600-87d7-60584d947897
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2479'
+source-wordcount: '2474'
 ht-degree: 46%
 
 ---
@@ -28,7 +28,7 @@ ht-degree: 46%
 * 6.1版及更新版本的AEM執行個體支援BPA。
 
   >[!NOTE]
-  >請參閱 [在AEM 6.1上安裝](#installing-on-aem61) 針對AEM 6.1上安裝BPA的特殊需求。
+  >另請參閱 [在AEM 6.1上安裝](#installing-on-aem61) 針對AEM 6.1上安裝BPA的特殊需求。
 
 * BPA可以在任何環境中執行，但最好執行於 *階段* 環境。
 
@@ -107,7 +107,7 @@ ht-degree: 46%
    ![影像](/help/journey-migration/best-practices-analyzer/assets/report_filter_2.png)
 
    >[!NOTE]
-   >不應忽略ACS Commons的發現。 請參閱 [檔案](https://adobe-consulting-services.github.io/acs-aem-commons/pages/compatibility.html#aem-as-a-cloud-service-feature-incompatibility) 以判斷與AEMas a Cloud Service的相容性。
+   >不應忽略ACS Commons的發現。 另請參閱 [檔案](https://adobe-consulting-services.github.io/acs-aem-commons/pages/compatibility.html#aem-as-a-cloud-service-feature-incompatibility) 以判斷與AEMas a Cloud Service的相容性。
 
 <!--
 ### Adobe Experience Manager 6.2 and 6.1 {#aem-specific-versions}
@@ -192,7 +192,7 @@ HTTP 介面可用於多種方法中。
 
 其中一個簡單的方式，是在您已用管理員身分登入 AEM 的相同瀏覽器中開啟瀏覽器索引標籤。您可以在瀏覽器索引標籤中輸入 URL，並且讓瀏覽器顯示或下載結果。
 
-您也可以使用命令列工具 (例如 `curl` 或 `wget`) 以及任何 HTTP 用戶端應用程式。未在已驗證的工作階段中使用瀏覽器索引標籤時，您必須在註解中提供管理使用者名稱和密碼。
+您也可以使用命令列工具，例如 `curl` 或 `wget` 和任何HTTP使用者端應用程式。 未在已驗證的工作階段中使用瀏覽器索引標籤時，您必須在註解中提供管理使用者名稱和密碼。
 
 以下是其操作方式的範例：
 `curl -u admin:admin 'http://localhost:4502/apps/best-practices-analyzer/analysis/report.csv' > report.csv`。

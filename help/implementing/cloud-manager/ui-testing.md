@@ -2,10 +2,10 @@
 title: UI 測試
 description: 自訂 UI 測試是一項選擇性功能，可讓您為自訂應用程式建立和自動執行 UI 測試。
 exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2401'
-ht-degree: 95%
+source-wordcount: '2389'
+ht-degree: 90%
 
 ---
 
@@ -35,7 +35,7 @@ UI 測試是每個 Cloud Manager 管道特定品質把關程序的一環，在[�
 >
 >Adobe 建議使用 Cypress 進行 UI 測試，按照 [AEM 測試範例存放庫](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-cypress)所提供的代碼。
 > 
->Adobe 也提供以 JavaScript 搭配 WebdriverIO 為基礎 (參考 [AEM 專案原型](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/ui.tests)) 和以 Java 搭配 WebDriver 為基礎 (參考 [AEM 測試範例存放庫](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver)) 的 UI 測試模組。
+>Adobe也提供以JavaScript搭配WebdriverIO為基礎的UI測試模組範例(請參閱 [AEM專案原型](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/ui.tests))和具有WebDriver的Java (請參閱 [AEM測試範例存放庫](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver))。
 
 ## 開始使用 UI 測試 {#get-started-ui-tests}
 
@@ -53,7 +53,7 @@ UI 測試是每個 Cloud Manager 管道特定品質把關程序的一環，在[�
 
    * 若是 Java 和 WebDriver，請使用 [AEM 測試範例存放庫](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver)中的範例程式碼。
 
-   * 若為其他程式語言，請參考本文件內「[建立 UI 測試](#building-ui-tests)」部分來設定測試專案。
+   * 如需其他程式語言，請參閱區段 [建立UI測試](#building-ui-tests) 以設定測試專案。
 
 1. 確保根據本文件內「[客戶選擇加入](#customer-opt-in)」部分來啟動 UI 測試。
 
@@ -69,7 +69,7 @@ UI 測試是每個 Cloud Manager 管道特定品質把關程序的一環，在[�
 
 >[!TIP]
 >
->這 [AEM Project 原型](https://github.com/adobe/aem-project-archetype)可以為您產生 UI 測試專案 (遵照以下說明來測試)，但前提是您對編程語言沒有特殊要求。
+>此 [AEM專案原型](https://github.com/adobe/aem-project-archetype) 如果您對程式語言沒有特殊要求，可以為您生成符合以下說明的UI測試專案。
 
 ### 產生 Docker 建置內容 {#generate-docker-build-context}
 
@@ -236,7 +236,7 @@ Docker 鏡像必須產生 JUnit XML 格式的測試報告，並保存在環境�
 
 >[!NOTE]
 >
->UI 測試步驟的結果僅根據測試報告進行評估。 請確保為您的測試執行產生相應的報告。
+>UI 測試步驟的結果僅根據測試報告進行評估。 確保針對測試執行相應地產生報表。
 >
 >使用斷言而不是僅僅將錯誤記錄到 STDERR 或返回非零退出程式碼，否則您的部署管道可能會正常進行。
 
@@ -259,7 +259,7 @@ Docker 鏡像必須產生 JUnit XML 格式的測試報告，並保存在環境�
 
 >[!NOTE]
 >
-> 如果您需要更多資源，請建立客戶服務案例並描述您的使用案例；Adobe 的團隊將檢閱您的要求並提供適當的幫助。
+> 若您需要更多資源，請建立客戶服務案例並描述您的使用案例；Adobe將會稽核您的請求並提供適當的協助。
 
 ## Selenium 特定的詳細資訊
 
@@ -345,7 +345,7 @@ Adobe 提供的測試範例依預設為任何失敗的測試建立螢幕擷圖�
 >
 >記錄檔案會儲存在您的存放庫的 `target/` 資料夾中.
 >
->如需詳細資訊，請參閱 [AEM 測試範例存放庫](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-cypress/test-module/README.md)。
+>如需詳細資訊，請參閱 [AEM測試範例存放庫](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-cypress/test-module/README.md).
 
 ### JavaScript WebdriverIO 測試範例 {#javascript-sample}
 
@@ -369,7 +369,7 @@ Adobe 提供的測試範例依預設為任何失敗的測試建立螢幕擷圖�
 >* 記錄檔案會儲存在您的存放庫的 `target/reports` 資料夾中
 >* 請務必確定您的電腦執行最新版本的 Chrome，因為測試會自動下載最新版的 ChromeDriver 以進行測試。
 >
->如需更多詳細資訊，請參閱 [AEM 專案原型存放庫](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests/README.md)。
+>如需詳細資訊，請參閱 [AEM專案原型存放庫](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests/README.md).
 
 ### Java Selenium WebDriver 測試範例 {#java-sample}
 
@@ -392,4 +392,4 @@ Adobe 提供的測試範例依預設為任何失敗的測試建立螢幕擷圖�
 >
 >記錄檔案會儲存在您的存放庫的 `target/reports` 資料夾中.
 >
->如需詳細資訊，請參閱 [AEM 測試範例存放庫](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/README.md)。
+>如需詳細資訊，請參閱 [AEM測試範例存放庫](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/README.md).

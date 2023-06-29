@@ -2,9 +2,9 @@
 title: 入門
 description: 瞭解在程式碼和內容準備就緒後，如何執行移轉
 exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1720'
+source-wordcount: '1710'
 ht-degree: 4%
 
 ---
@@ -28,11 +28,11 @@ ht-degree: 4%
 
 ## 目標 {#objective}
 
-熟悉歷程的先前步驟後，本檔案將幫助您瞭解如何執行移轉至AEMas a Cloud Service。 您將瞭解如何執行初始生產移轉，以及在移轉至AEMas a Cloud Service時遵循的最佳實務。
+本檔案可協助您瞭解在熟悉歷程的先前步驟後，如何執行移轉至AEMas a Cloud Service。 您將瞭解如何執行初始生產移轉，以及移轉至AEMas a Cloud Service時遵循的最佳實務。
 
 ## 初始生產移轉 {#initial-migration}
 
-在執行生產移轉之前，請遵循中概述的移轉步驟說明和證明 [內容移轉策略和時間表](/help/journey-migration/implementation.md##strategy-timeline) 部分 [實作階段](/help/journey-migration/implementation.md).
+在執行生產移轉之前，請遵循中概述的移轉步驟說明和證明。 [內容移轉策略和時間表](/help/journey-migration/implementation.md##strategy-timeline) 部分 [實作階段](/help/journey-migration/implementation.md).
 
 * 根據您在翻制上執行AEMas a Cloud Service階段移轉期間獲得的體驗，從生產環境啟動移轉：
    * Author-Author
@@ -95,7 +95,7 @@ ht-degree: 4%
 
 ## 已知限制 {#known-limitations}
 
-請考量，如果在擷取的移轉集中找到以下任何限制，則整個擷取會失敗：
+請考量在擷取的移轉集中找到下列任何限制時，整個擷取會失敗：
 
 * 名稱超過150個字元的JCR節點
 * 大於16 MB的JCR節點
@@ -120,7 +120,7 @@ ht-degree: 4%
    * [自訂功能測試](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing)
    * [UI 測試](/help/implementing/cloud-manager/ui-testing.md)
 * 將內容移轉至生產環境，並確保在測試時可使用相關的子集進行測試。
-   * 請注意，AEM適用的DevOps最佳實務代表程式碼會從開發環境移至生產環境，而內容則會從生產環境下移。
+   * AEM適用的DevOps最佳實務代表程式碼會從開發環境移至生產環境，而內容則會從生產環境下移。
 * 排程程式碼和內容凍結期間。
    * 另請參閱區段 [移轉的程式碼和內容凍結時間表](#code-content-freeze)
 * 執行最終追加內容。

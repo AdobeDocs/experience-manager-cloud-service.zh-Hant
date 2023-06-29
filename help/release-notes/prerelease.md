@@ -2,10 +2,10 @@
 title: Adobe Experience Manager as a Cloud Service 發行前通道
 description: 了解如何使用發行前通道來取得即將推出的 AEM as a Cloud Service 功能預覽。
 exl-id: cfc91699-0087-40fa-a76c-0e5e1e03a5bd
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1305'
-ht-degree: 91%
+source-wordcount: '1304'
+ht-degree: 83%
 
 ---
 
@@ -18,9 +18,9 @@ ht-degree: 91%
 
 Adobe Experience Manager as a Cloud Service 會根據 [Experience Manager 發行藍圖](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html#aem-as-cloud-service)定期提供新功能。
 
-若要熟悉排定在下個功能版本中上線的功能，您可以訂閱發行前通道，您可藉由設定您的開發環境或任何沙箱環境來存取該通道。 客戶可以預覽可透過 AEM UI 存取的變更，也可以針對任何新的發行前 API 建置程式碼。
+若要熟悉排定在下個功能版本中上線的功能，您可以訂閱發行前通道，您可藉由設定您的開發環境或任何沙箱環境來存取該通道。 您可以預覽可透過AEM使用者介面存取的變更，並針對任何新的發行前API建置程式碼。
 
-特定功能發行的發行前功能清單會在[發行說明](/help/release-notes/release-notes-cloud/release-notes-current.md)中發佈。
+特定功能版本的發行前功能清單發佈在 [發行說明](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
 ## AEM as a Cloud Service 發行 {#releases}
 
@@ -33,11 +33,11 @@ AEM as a Cloud Service 有兩種發行。
 
 發行前管道可讓您預覽為即將推出的功能發行排程的功能，以便您可以評估即將推出的功能，並針對其可能在您自己的專案中實作的可能性進行規劃。 它可讓您提前規劃下一個功能的發行。
 
-例如，假設現在是五月，而且您訂閱了發行前通道，您可以評估即將推出的六月發行中的功能。
+例如，假設現在是五月，而且您已訂閱發行前通道，您可以評估即將推出的六月版本中的功能。
 
 ![發行前步調圖形](assets/prerelease-cadence.png)
 
-發行前版本為您提供為期一個月的滾動時段，讓您了解即將推出的 AEMaaCS 功能，讓您有時間評估任何新功能對您專案和自訂內容的影響，並且規劃推出此類功能、測試和使用者培訓。
+發行前版本為您提供為期一個月的滾動時段，讓您瞭解即將推出的AEMaaCS功能，讓您有時間評估任何新功能對您專案和自訂的影響，並計畫推出此類功能、測試和使用者培訓。
 
 有效利用發行前通道需要採取四個步驟。
 
@@ -122,7 +122,7 @@ AEM as a Cloud Service 有兩種發行。
 
 #### 在發行前模式下啟動快速入門 SDK {#prerelease-mode}
 
-1. 從軟體散發入口網站下載 SDK，並依照[存取 AEM as a Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) 中所述的步驟進行安裝。
+1. 從軟體散發入口網站下載 SDK 並按照[存取 AEM as a Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) 中所述進行安裝。
 1. 啟動 SDK 快速入門時，請包含引數 `-r prerelease`。
 
 值為 sticky，因此只能在第一次啟動時選取它。重新安裝 SDK 以變更命令列選項。

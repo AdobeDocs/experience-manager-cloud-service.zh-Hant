@@ -2,10 +2,10 @@
 title: New Relic One
 description: 了解適用於 AEM as a Cloud Service的 New Relic One 應用程式效能監控 (APM) 服務以及如何存取它。
 exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1595'
-ht-degree: 92%
+source-wordcount: '1589'
+ht-degree: 82%
 
 ---
 
@@ -30,7 +30,7 @@ Adobe 非常重視應用程式的監控、可用性和效能。AEM as a Cloud Se
 
 * 檢測的 New Relic One 一個 APM 代理，顯示帶有行號的準確方法調用，包括外部依賴項和數據庫
 
-* 透過結合來自基礎設施級監控和應用程式 (Adobe Experience Manager) 監控的關鍵指標來優化整體性能
+* 透過結合來自基礎設施級監控和應用(Adobe Experience Manager)監控的關鍵指標來最佳化整體效能
 
 * 直接在 New Relic Insights 指標中公開 AEM as a Cloud Service JMX Mbean 和執行狀況檢查，從而可以深入檢查應用程式堆疊效能和執行狀況指標。
 
@@ -82,9 +82,9 @@ Adobe 非常重視應用程式的監控、可用性和效能。AEM as a Cloud Se
 
    ![輸入電子郵件地址](/help/implementing/cloud-manager/assets/new-relic/newrelic-2.png)
 
-1. New Relic 將向您發送一封電子郵件，其中包含確認帳戶的鏈接。
+1. New Relic 將向您傳送一封電子郵件，其中包含確認帳戶的連結。
 
-如果您沒有收到來自 New Relic 的確認電子郵件，請參閱[故障排除部分。](#troubshooting)
+如果您沒有收到來自New Relic的確認電子郵件，請參閱 [疑難排解一節。](#troubshooting)
 
 ## 正在存取 New Relic One {#accessing-new-relic}
 
@@ -114,9 +114,9 @@ Adobe 非常重視應用程式的監控、可用性和效能。AEM as a Cloud Se
 
 如果您在登入 New Relic One 時被要求驗證您的電子郵件，這意味著您的電子郵件與多個帳戶相關聯。這使您可以選擇要存取的帳戶。
 
-如果您不驗證您的電子郵件地址，New Relic 將嘗試使用與您的電子郵件地址關聯的最近建立的使用者記錄來登入。為避免在每次登入時驗證您的電子郵件，請單擊&#x200B;**記得我**&#x200B;登入畫面中的複選框。
+如果您未驗證您的電子郵件地址，New Relic會嘗試使用與您的電子郵件地址關聯的最近建立的使用者記錄來登入。 為避免在每次登入時驗證您的電子郵件，請單擊&#x200B;**記得我**&#x200B;登入畫面中的複選框。
 
-如需更多幫助，請透過以下方式打開支援票證 [AEM 支援門戶](https://helpx.adobe.com/tw/enterprise/using/support-for-experience-cloud.html)。
+如需更多協助，請透過以下方式開啟支援服務單： [AEM支援入口網站](https://helpx.adobe.com/tw/enterprise/using/support-for-experience-cloud.html).
 
 ## 偵錯 New Relic One Access {#troubleshooting}
 
@@ -134,13 +134,13 @@ Adobe 非常重視應用程式的監控、可用性和效能。AEM as a Cloud Se
 
 1. New Relic 將向您傳送一封電子郵件，其中包含確認帳戶的連結。
 
-如果您完成註冊過程但由於電子郵件或密碼錯誤消息而無法登入您的帳戶，請透過 [Admin Console](https://adminconsole.adobe.com/) 登入支援票證。
+如果您完成註冊程式，但由於電子郵件或密碼錯誤訊息而無法登入您的帳戶，請透過以下方式登入支援票證： [Admin Console。](https://adminconsole.adobe.com/)
 
-如果您沒有收到來自 New Relic 的電子郵件：
+如果您沒有收到來自New Relic的電子郵件：
 
 * 檢查你的[垃圾郵件過濾器](https://docs.newrelic.com/docs/accounts/accounts-billing/account-setup/create-your-new-relic-account/)。
 * 如果適用，[將 New Relic 新增到您的電子郵件允許清單](https://docs.newrelic.com/docs/accounts/accounts/account-maintenance/account-email-settings/#email-whitelist)。
-* 如果這些建議都沒有幫助，請提供有關支援票證的反饋，Adobe 支援團隊將進一步幫助您。
+* 如果兩個建議都沒有幫助，請提供有關支援票證的反饋，Adobe支援團隊可以協助您。
 
 ## 限制 {#limitations}
 
@@ -150,7 +150,7 @@ Adobe 非常重視應用程式的監控、可用性和效能。AEM as a Cloud Se
 * 新增至New Relic的使用者型別為 **受限制**，請參閱 [New Relic檔案以取得詳細資訊。](https://docs.newrelic.com/docs/accounts/original-accounts-billing/original-users-roles/users-roles-original-user-model/#:~:text=在%20general%2C%20Admins%20take%20responsibility, Restricted%20Users%20can%20use%20them.&amp;text=One%20or%20more%20individuals%20who,change)
 * AEM as a Cloud Service僅提供 New Relic One APM 解決方案，不支援警報、記錄或 API 整合。
 
-有關 AEM as a Cloud Service計劃的 New Relic One 產品的更多幫助或其他指導，請透過以下方式打開支援票證[AEM 支援門戶](https://helpx.adobe.com/tw/enterprise/using/support-for-experience-cloud.html)。
+如需更多有關AEMas a Cloud Service計畫New Relic One產品的說明或其他指引，請透過以下方式開啟支援票證： [AEM支援入口網站](https://helpx.adobe.com/tw/enterprise/using/support-for-experience-cloud.html).
 
 ## 與 New Relic One 有關的常見問答 {#faqs}
 
@@ -164,7 +164,7 @@ Adobe 透過 New Relic One 的 Java 外掛程式監視 AEM as a Cloud Service �
 * 每個環境一個發布服務應用程式（包括 Golden Publish）
 * 每個環境一個預覽服務應用程式
 
-請注意:
+注意:
 
 * 每個應用程式使用一個授權密鑰。
 * AEM as a Cloud Service環境僅向一個 New Relic One 帳戶報告。

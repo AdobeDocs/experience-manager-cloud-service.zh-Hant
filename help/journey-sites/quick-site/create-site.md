@@ -2,9 +2,9 @@
 title: 從範本建立網站
 description: 瞭解如何使用網站範本快速建立新的AEM網站。
 exl-id: 31bb04c2-b3cc-44ca-b517-5b0d66d9b1fa
-source-git-commit: 171aca87ff725a2f142f0336dca3491e213f55ab
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1513'
+source-wordcount: '1506'
 ht-degree: 2%
 
 ---
@@ -36,7 +36,7 @@ ht-degree: 2%
 
 ## 網站範本 {#site-templates}
 
-網站範本是將基本網站內容結合成方便且可重複使用的套件的方法。 網站範本通常包含基本網站內容和結構以及網站樣式資訊，以便快速啟動新網站。 實際結構如下：
+網站範本是將基本網站內容結合成方便且可重複使用的套件的方法。 網站範本通常包含基本網站內容與結構和網站樣式資訊，以便快速啟動新網站。 實際結構如下：
 
 * `files`：包含UI套件、XD檔案和可能的其他檔案的資料夾
 * `previews`：包含網站範本熒幕擷圖的資料夾

@@ -1,10 +1,10 @@
 ---
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2023.2.0 版發行說明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2023.2.0 版發行說明。'
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '732'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -86,7 +86,7 @@ ht-degree: 98%
 * 使用您選擇的程式語言建置高品質的多管道表單
 * 以原生方式將表單整合到您的桌面和行動應用程式、網站和聊天應用程式
 * 在表單應用程式中重複使用您的專屬 UI 元件
-* 運用Adobe Experience Manager Forms的強大功能
+* 使用 Adobe Experience Manager Forms 的強大功能
 
 使用您的官方電子郵件 ID 寄送電子郵件至 aem-forms-headless@adobe.com，即可加入早期採用者計劃。
 
@@ -96,7 +96,7 @@ ht-degree: 98%
 
 ## Cloud Manager {#cloud-manager}
 
-您可以在[此處](/help/implementing/cloud-manager/release-notes/current.md)找到 Cloud Manager 每月發行的完整清單。
+您可以在[這裡](/help/implementing/cloud-manager/release-notes/current.md)找到 Cloud Manager 每月發行的完整清單。
 
 ## 移轉工具 {#migration-tools}
 

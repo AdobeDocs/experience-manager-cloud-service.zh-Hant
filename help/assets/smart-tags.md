@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Smart Tags,Tagging
 role: Admin,User
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2463'
+source-wordcount: '2464'
 ht-degree: 6%
 
 ---
@@ -131,7 +131,7 @@ AEM預設會將智慧標籤自動新增至文字型資產和影片。 若要自�
    >您可以根據 **[!UICONTROL 名稱]** （依字母順序）， **[!UICONTROL 已建立]** 日期，或 **[!UICONTROL 修改時間]** 日期。
 
 
-1. 在 **[!UICONTROL 選取資產]** 對話方塊，按一下 **[!UICONTROL 新增資產]** 標籤時。 在DAM存放庫中搜尋或瀏覽存放庫以選取至少10個和最多50個影像。 選取資產，而非資料夾。 選取影像後，請按一下 **[!UICONTROL 選取]**.
+1. 在 **[!UICONTROL 選取資產]** 對話方塊，按一下 **[!UICONTROL 新增資產]** 標籤時。 在DAM存放庫中搜尋或瀏覽存放庫以選取至少10個和最多50個影像。 選取資產，而非資料夾。 選取影像後，按一下 **[!UICONTROL 選取]**.
 
    ![檢視訓練狀態](assets/smart-tags-training-status.png)
 

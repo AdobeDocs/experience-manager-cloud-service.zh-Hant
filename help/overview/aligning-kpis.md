@@ -2,7 +2,7 @@
 title: 調整 KPI
 description: 調整 KPI
 exl-id: d338a7bd-adfe-486a-badf-348acd6018d0
-source-git-commit: 7260649eaab303ba5bab55ccbe02395dc8159949
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '487'
 ht-degree: 43%
@@ -36,7 +36,7 @@ ht-degree: 43%
 
 1. **為每個 KPI 建立可測量的方法。** 選擇KPI後，請下載Adobe的KPI方法範本，這會引導您完成流程的其餘部分。
 
-1. **為每個 KPI 定義對象。**&#x200B;本週的最後一步是確定最在乎每個 KPI 的利益相關者群組。下週您將與每個群組合作，確認KPI、調整方法，並同意報告的格式和時間。
+1. **為每個 KPI 定義對象。**&#x200B;本週的最後一步是確定最在乎每個 KPI 的利益相關者群組。下週，您會與每個群組合作，確認KPI、調整方法，並同意報告的格式和時間。
 
 >[!TIP]
 >

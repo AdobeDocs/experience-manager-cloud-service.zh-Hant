@@ -1,35 +1,35 @@
 ---
-title: 了解參考示範附加元件安裝
+title: 瞭解參考示範附加元件安裝
 description: 了解 Cloud Manager 以及如何使用它來安裝附加元件。
 exl-id: 9418aac6-a8c4-43f7-b329-b02149fe2d53
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '976'
-ht-degree: 8%
+source-wordcount: '956'
+ht-degree: 6%
 
 ---
 
-# 了解參考示範附加元件安裝 {#understand-installation}
+# 瞭解參考示範附加元件安裝 {#understand-installation}
 
 了解 Cloud Manager 以及如何使用它來安裝附加元件。
 
 >[!TIP]
 >
->如果您已體驗Cloud Manager或希望直接瞭解附加元件的設定和使用，您可以跳至 [建立計畫和管道](create-program.md)
+>如果您有使用Cloud Manager的經驗，或想直接跳至附加元件的設定和使用，請跳至 [建立計畫和管道](create-program.md)
 >
->如果您想瞭解Cloud Manager和AEM如何共同合作建立您的示範環境，以及如何設定和使用您自己的環境，請繼續閱讀目前的檔案。
+>如果您想瞭解Cloud Manager和AEM如何合作來建立您的示範環境，以及如何設定和使用您自己的環境，請繼續閱讀目前的檔案。
 
 ## 目標 {#objective}
 
-本檔案可協助您瞭解「參考示範」附加元件的安裝程式如何運作，說明不同部分如何共同運作。 閱讀本文件後，您應該：
+本檔案可協助您瞭解「參考示範」附加元件的安裝程式如何運作，說明不同部分如何共同運作。 閱讀本檔案後，您應該：
 
 * 基本瞭解Cloud Manager。
 * 瞭解管道如何將內容和設定傳送至AEM。
-* 瞭解範本如何按幾下即可建立已預先填入示範內容的新網站。
+* 瞭解範本如何按幾下即可建立已預先填入示範內容的網站。
 
 在繼續此歷程的下一步來開始安裝之前，本檔案著重於瞭解AEM參考示範附加元件的這些基本片段。
 
-雖然我們建議您逐步完成此歷程，但如果您已體驗Cloud Manager或想要直接跳至設定和附加元件的使用，您可以跳至 [建立計畫和管道](create-program.md)
+雖然我們建議您繼續此歷程，但如果您已體驗Cloud Manager，或想直接跳至設定和附加元件的使用，請跳至 [建立計畫和管道](create-program.md).
 
 ## 負責角色 {#responsible-role}
 
@@ -51,7 +51,7 @@ ht-degree: 8%
 
 Cloud Manager是AEMas a Cloud Service的必要元件，可作為平台的單一入口點。
 
-Cloud Manager用於管理支援您的AEM專案的雲端資源，包括所需的環境和工具。 在此歷程中，不需要完全瞭解Cloud Manager。 不過，您需要熟悉一些基本概念。
+Cloud Manager用於管理支援您的AEM專案的雲端資源，包括所需的環境和工具。 在此歷程中，不需要完全瞭解Cloud Manager。 不過，您必須熟悉一些基本概念。
 
 >[!TIP]
 >
@@ -68,7 +68,7 @@ Cloud Manager用於管理支援您的AEM專案的雲端資源，包括所需的�
 程式可以是生產程式或沙箱程式。
 
 * **生產計畫** 建立以便在您的方案準備好上線時最終允許上線流量。
-* **沙箱計畫** 是為培訓、執行示範、培訓、POC等而建立。 而不適用於即時流量。
+* **沙箱計畫** 專為訓練、執行示範、訓練、POC等而建立，不適用於即時流量。
 
 若要安裝AEM參考示範附加元件，請建立沙箱計畫。
 
@@ -81,7 +81,7 @@ Cloud Manager用於管理支援您的AEM專案的雲端資源，包括所需的�
 現在您已瞭解Cloud Manager的一些基本概念，從概念上來說，AEM參考示範附加元件的安裝很簡單。
 
 1. 登入Cloud Manager。
-1. 建立新的沙箱AEM計畫，啟動AEM參考示範附加元件作為計畫的選項。
+1. 建立沙箱AEM計畫，啟動AEM參考示範附加元件作為計畫的選項。
 1. 示範內容和設定已部署至程式。 示範內容包含：
    * 用來使用AEM功能建立各種AEM網站的網站範本，預先填入最佳實務範例。
    * 管理示範內容的設定工具。
@@ -90,7 +90,7 @@ Cloud Manager用於管理支援您的AEM專案的雲端資源，包括所需的�
 
 ## AEM網站範本 {#site-templates}
 
-AEM網站範本是包含網站預先定義之內容和結構的套件。 可以自訂網站範本以滿足特定專案的需求，這樣當AEM管理員建立新網站時，可以從適用於其業務案例的範本中進行選擇。
+AEM網站範本是包含網站預先定義之內容和結構的套件。 可自訂網站範本以符合特定專案的需求，以便當AEM管理員建立網站時，可以從適用於其業務案例的範本中進行選擇。
 
 AEM參考示範附加元件包含多個範本，可滿足各種測試和示範需求。 建立方案並部署管道以安裝附加元件後，您可以登入AEM並根據許多示範範本建立網站
 
@@ -100,14 +100,14 @@ AEM參考示範附加元件包含多個範本，可滿足各種測試和示範�
 
 * 基本瞭解Cloud Manager。
 * 瞭解管道如何將內容和設定傳送至AEM。
-* 瞭解範本如何按幾下即可建立已預先填入示範內容的新網站。
+* 瞭解範本如何按幾下即可建立已預先填入示範內容的網站。
 
-在此知識的基礎上繼續您的AEM快速網站建立歷程，接下來檢視檔案 [建立計畫和管道，](create-program.md) 您將在其中學習如何設定新計畫和管道以部署附加元件。
+在此知識的基礎上繼續您的AEM快速網站建立歷程，方法是檢閱 [建立計畫和管道，](create-program.md) 在這裡，您可以瞭解如何設定新計畫和管道以部署附加元件。
 
 ## 其他資源 {#additional-resources}
 
-我們建議您檢閱檔案，繼續快速網站建立歷程的下一部分 [建立計畫和管道，](create-program.md) 以下是一些其他可選資源，這些資源對本文檔中提到的一些概念進行了更深入的探究，但並非繼續此歷程所必需的。
+我們建議您檢閱以下資訊，以前往快速網站建立歷程的下一部分 [建立計畫和管道](create-program.md)下，以下是一些其他選用的資源。 這些資源會更深入地探討本檔案中提及的概念。 但是，他們不需要繼續歷程。
 
-* [瞭解方案和方案型別](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/understand-program-types.html)  — 從這裡開始瞭解即時和沙箱計畫之間的差異。
+* [瞭解方案和方案型別](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/program-types.html)  — 從這裡開始瞭解即時和沙箱計畫之間的差異。
 * [網站範本](/help/sites-cloud/administering/site-creation/site-templates.md)  — 如果您想進一步瞭解網站範本的結構，以及如何使用它們來建立網站，請參閱本檔案。
-* [Cloud Manager 文件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html) - 如果您想要 Cloud Manager 功能的更多詳細資訊，您可能想要直接查閱深入的技術文件。
+* [Cloud Manager 文件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/onboarding-concepts/cloud-manager-introduction.html) - 如果您想要 Cloud Manager 功能的更多詳細資訊，您可能想要直接查閱深入的技術文件。

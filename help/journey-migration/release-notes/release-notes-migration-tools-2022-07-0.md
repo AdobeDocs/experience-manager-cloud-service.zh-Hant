@@ -3,9 +3,9 @@ title: AEMas a Cloud Service2022.7.0版中移轉工具的發行說明
 description: AEMas a Cloud Service2022.7.0版中移轉工具的發行說明
 feature: Release Information
 exl-id: bc8f1a80-867e-423a-9c03-4a53b1ebc57c
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '429'
+source-wordcount: '428'
 ht-degree: 5%
 
 ---
@@ -59,5 +59,5 @@ Cloud Acceleration Manager的發行日期為2022年7月15日。
 
 ### 新增功能 {#what-is-new-cam}
 
-* Cloud Acceleration Manager現在可讓使用者手動擷取移轉權杖，以便在自動擷取失敗時開始內嵌。 如果客戶已設定封鎖CAM的IP允許清單，或如果非管理員使用者嘗試開始內嵌，則自動擷取可能會失敗。 請參閱 [疑難排除](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#troubleshooting) 以取得詳細資訊。
+* Cloud Acceleration Manager現在可讓使用者手動擷取移轉權杖，以便在自動擷取失敗時開始內嵌。 如果客戶已設定封鎖CAM的IP允許清單，或如果非管理員使用者嘗試開始內嵌，則自動擷取可能會失敗。 另請參閱 [疑難排除](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#troubleshooting) 以取得詳細資訊。
 * 「移轉複雜性」頁面上的長表格現在可以摺疊，以方便使用。

@@ -2,7 +2,7 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2022.8.0 版發行說明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2022.8.0 版發行說明。'
 exl-id: 0eff8100-5990-4553-8373-445fb7e6fb27
-source-git-commit: 599f924465552b2ef43827da8e139c239e47baed
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '625'
 ht-degree: 58%
@@ -55,7 +55,7 @@ ht-degree: 58%
 
 * 您現在可以將Adobe Experience Manager資產設定為 [根據MIME型別限制使用者可以上傳的資產型別](/help/assets/configure-asset-upload-restrictions.md).
 
-   ![資產上傳限制](/help/assets/assets/asset-upload-restrictions.png)
+  ![資產上傳限制](/help/assets/assets/asset-upload-restrictions.png)
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -74,11 +74,11 @@ ht-degree: 58%
 ### 新增功能 {#what-is-new-cif}
 
 * 透過AEM頁面屬性以及產品主控室中的概觀，將AEM頁面與產品和類別相關聯
-   ![產品駕駛艙頁面關聯](/help/assets/CIF/product_cockpit_page_association.png)
+  ![產品駕駛艙頁面關聯](/help/assets/CIF/product_cockpit_page_association.png)
 
 ## Cloud Manager {#cloud-manager}
 
-您可以在[此處](/help/implementing/cloud-manager/release-notes/current.md)找到 Cloud Manager 每月發行的完整清單。
+您可以在[這裡](/help/implementing/cloud-manager/release-notes/current.md)找到 Cloud Manager 每月發行的完整清單。
 
 ## 移轉工具 {#migration-tools}
 

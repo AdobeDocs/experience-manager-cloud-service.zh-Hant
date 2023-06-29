@@ -4,9 +4,9 @@ description: 將您的數位資產新增至 [!DNL Adobe Experience Manager] as a
 feature: Asset Management,Upload
 role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: 2b597707a26726eec26541c04914ac36e8909fc5
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '3157'
+source-wordcount: '3156'
 ht-degree: 2%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 2%
 
 除了最常用的瀏覽器上傳外，將資產新增至的其他方法也會 [!DNL Experience Manager] 存放庫存在。 這些其他方法包括案頭使用者端，例如Adobe Asset Link或 [!DNL Experience Manager] 案頭應用程式、上傳和客戶建立的內嵌指令碼，以及新增為的自動化內嵌整合 [!DNL Experience Manager] 擴充功能。
 
-雖然您可以上傳和管理任何二進位檔案，但 [!DNL Experience Manager]，最常用的檔案格式支援其他服務，例如中繼資料擷取或預覽/轉譯產生。 請參閱 [支援的檔案格式](file-format-support.md) 以取得詳細資訊。
+雖然您可以上傳和管理任何二進位檔案，但 [!DNL Experience Manager]，最常用的檔案格式支援其他服務，例如中繼資料擷取或預覽/轉譯產生。 另請參閱 [支援的檔案格式](file-format-support.md) 以取得詳細資訊。
 
 您也可以選擇對上傳的資產完成其他處理。 您可以在上傳資產的資料夾上設定數個資產處理設定檔，以新增特定中繼資料、轉譯或影像處理服務。 另請參閱 [上傳時處理資產](#process-when-uploaded).
 

@@ -2,9 +2,9 @@
 title: 合適的人，合適的角色
 description: 合適的人，合適的角色
 exl-id: 9106ccf5-dc90-4ccb-95bd-7dd5392cd174
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '829'
+source-wordcount: '831'
 ht-degree: 80%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 80%
 
 數位控管首先要弄清楚誰負責哪些工作，以及誰在做哪些以數位為主的工作。 您可能需要進行一些策略性雇用以增加所需技能。更大的挑戰是推動文化轉變 — 建立對新技術的廣泛支援，並幫助人們習慣新的工作方式。 這項工作的一個關鍵部分是建立數位社群，讓人們互相學習和支援。
 
-目前，我們專注於將合適的人員放在合適的職位上，以協助推動您的Adobe Experience Manager部署。 對於每個核心產品(Experience Manager Sites和Experience Manager Assets)，我們提供了一份您需要填充的角色清單，以及讓各個角色中的人們發揮成效的技能、專業知識水準和屬性。
+目前，重點在於將合適的人員放在合適的職位上，以協助推動您的Adobe Experience Manager部署。 對於每個核心產品(Experience Manager Sites和Experience Manager Assets)，Adobe都提供了一份您必須擔任的角色清單，以及讓使用者在各種角色中變得有效的技能、專業知識水準和屬性。
 
 您本週的任務是與您的實作團隊一起審查這兩個清單，並確保每個角色中都有相關資格的人員擔任。
 
@@ -55,7 +55,7 @@ ht-degree: 80%
 
 從架構師到 ScrumMaster，這個團隊中的每個角色都是不可或缺的，包括 DAM 圖書管理員。
 
-您可能已經擁有成功實作 Adobe Experience Manager Assets 所需的大部分人員。此清單類似於Adobe Experience Manager Sites的清單，但有一個重要補充：您將需要資料庫管理員，以確保您的數位資產以方便尋找的方式整理和標示。
+您可能已經擁有成功實作 Adobe Experience Manager Assets 所需的大部分人員。此清單類似於Adobe Experience Manager Sites的清單，但有一個重要補充：您需要管理員來確保您的數位資產以方便尋找的方式整理和標示。
 
 | 角色 | 技能 | 能力水準 | 資格 |
 |--- |--- |--- |--- |

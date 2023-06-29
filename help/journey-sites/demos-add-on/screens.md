@@ -2,9 +2,9 @@
 title: 為您的示範網站啟用AEM Screens
 description: 瞭解在您的示範網站上啟用完整AEM Screensas a Cloud Service體驗的步驟。
 exl-id: 369eea9f-2e81-4b87-841c-188b67657bab
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2694'
+source-wordcount: '2666'
 ht-degree: 2%
 
 ---
@@ -19,17 +19,17 @@ ht-degree: 2%
 
 ## 到目前為止 {#story-so-far}
 
-在AEM參考示範附加元件歷程的上一個檔案中， [建立示範網站，](create-site.md) 您已根據參考示範附加元件的範本建立新的示範網站。 您現在應該：
+在AEM參考示範附加元件歷程的上一個檔案中， [建立示範網站，](create-site.md) 您已根據參考示範附加元件的範本建立示範網站。 您現在應該：
 
 * 瞭解如何存取AEM製作環境。
 * 瞭解如何根據範本建立網站。
 * 瞭解導覽網站結構和編輯頁面的基本知識。
 
-現在您已擁有自己的示範網站，可探索和瞭解可用來協助您管理示範網站的工具，您現在可以為示範網站啟用完整的AEM Screensas a Cloud Service體驗。
+現在您已擁有自己的示範網站，可探索並瞭解有助於您管理示範網站的工具，請為您的示範網站啟用完整的AEM Screensas a Cloud Service體驗。
 
 ## 目標 {#objective}
 
-AEM參考示範附加元件包含咖啡店垂直業務We.Cafe的AEM Screens內容。 本檔案可協助您瞭解如何在AEM Screens內容中執行We.Cafe示範設定。 閱讀本文件後，您應該：
+AEM參考示範附加元件包含咖啡店垂直業務We.Cafe的AEM Screens內容。 本檔案可協助您瞭解如何在AEM Screens內容中執行We.Cafe示範設定。 閱讀本檔案後，您應該：
 
 * 瞭解AEM Screens的基本概念。
 * 瞭解We.Cafe示範內容。
@@ -47,11 +47,11 @@ AEM Screens as a Cloud Service 是數位招牌解決方案，可讓行銷人員�
 >
 >如需AEM Screensas a Cloud Service的完整詳細資訊，請參閱 [其他資源](#additional-resources) 區段。
 
-安裝AEM參考示範附加元件後，示範撰寫環境中便會自動提供適用於AEM Screens的We.Cafe內容。 中所述的步驟 [部署示範Screens專案](#deploy-project) 可讓您發佈該內容並部署至媒體播放器等，進而啟用完整的AEM Screens體驗。
+安裝AEM參考示範附加元件後，示範撰寫環境中便會自動提供適用於AEM Screens的We.Cafe內容。 中所述的步驟 [部署示範Screens專案](#deploy-project) 可協助您發佈內容並部署至媒體播放器等，以啟用完整的AEM Screens體驗。
 
 ## 瞭解示範內容 {#demo-content}
 
-We.Cafe咖啡店在美國有三家店，分佈在三個位置。 這三間商店都有三種相似的體驗：
+We.Café咖啡店在美國有三家店，分佈在三個位置。 這三間商店都有三種相似的體驗：
 
 * 計數器上方的功能表板，有兩個或三個垂直面板
 * 面對街道的入口顯示，有一個水平或垂直面板邀請客戶進入商店
@@ -70,7 +70,7 @@ We.Cafe咖啡店在美國有三家店，分佈在三個位置。 這三間商店
 
 >[!NOTE]
 >
->如果您決定連線至畫面的Cloud Service位於 [as a Cloud Service連線Screens](#connect-screens) 區段，請在顯示下方將位置建立為資料夾。 請參閱 [其他資源](#additional-resources) 區段，以取得有關顯示的詳細資訊。
+>如果您決定連線至畫面的Cloud Service位於 [as a Cloud Service連線Screens](#connect-screens) 區段，將位置建立為顯示下的資料夾。 請參閱 [其他資源](#additional-resources) 區段，以取得有關顯示的詳細資訊。
 
 ### 咖啡館版面配置 {#care-layouts}
 
@@ -84,9 +84,9 @@ We.Cafe位置有下列配置。
 
 ### 入口 {#entrance}
 
-入口顯示已分日，只會將第一個影像從早上變更為下午。 在每次播放序列時，它也會宣傳不同的特別咖啡製品，每次都會使用計量的內嵌序列播放不同的專案。
+入口顯示已分日，只會將第一個影像從早上變更為下午。 每次播放序列時，它也會宣傳不同的特別咖啡製品，每次都會使用計量的內嵌序列播放不同的專案。
 
-入口色版上的最後一個影像也是根據外部溫度來鎖定目標（即動態變更），可以模擬外部溫度，如 [建立模擬資料來源](#data-source) 區段。
+入口色版上的最後一個影像也是根據外部溫度來鎖定目標（亦即動態變更），可以模擬外部溫度，如 [建立模擬資料來源](#data-source) 區段。
 
 ## 部署示範Screens專案 {#deploy-project}
 
@@ -107,19 +107,19 @@ We.Cafe位置有下列配置。
 
 ## 動態變更Screens內容 {#dynamically-change}
 
-和AEM Sites一樣，AEM Screens也可以根據內容動態變更內容。 We.Cafe示範已將頻道設定為根據目前溫度顯示不同內容。 為了模擬這一點，我們需要建立自己的簡單天氣服務。
+和AEM Sites一樣，AEM Screens也可以根據內容動態變更內容。 We.Cafe示範已將頻道設定為根據目前溫度顯示不同內容。 若要模擬此體驗，您必須建立自己的簡單天氣服務。
 
 ### 建立模擬資料來源 {#data-source}
 
-由於在示範期間或測試時很難變更天氣，因此必須模擬溫度變化。 我們會將溫度值儲存在AEM ContextHub呼叫用來擷取溫度的Google工作表試算表中，以模擬天氣服務。
+由於在示範期間或測試時很難變更天氣，因此必須模擬溫度變化。 天氣服務是透過將溫度值儲存在AEM ContextHub呼叫用來擷取溫度的Google工作表試算表中來模擬。
 
 #### 建立Google API金鑰 {#create-api-key}
 
-首先，我們需要建立Google API金鑰來促進資料交換。
+首先，您必須建立Google API金鑰來促進資料交換。
 
 1. 登入Google帳戶。
 1. 使用此連結開啟Cloud Console `https://console.cloud.google.com`.
-1. 按一下「 」後方工具列左上角的目前專案名稱，以建立新專案 **Google Cloud Platform** 標籤。
+1. 按一下位於工具列左上角的目前專案名稱，然後按一下 **Google Cloud Platform** 標籤。
 
    ![Google Cloud Console](assets/google-cloud-console.png)
 
@@ -139,7 +139,7 @@ We.Cafe位置有下列配置。
 
    ![認證](assets/credentials.png)
 
-1. 在對話方塊中，複製新的API金鑰並儲存以供稍後使用。 按一下 **關閉** 以關閉對話方塊。
+1. 在對話方塊中，複製新的API金鑰並儲存以供稍後使用。 按一下 **關閉** 以便您能結束對話方塊。
 
 #### 啟用Google Sheets API {#enable-sheets}
 
@@ -149,11 +149,11 @@ We.Cafe位置有下列配置。
 
    ![API程式庫](assets/api-library.png)
 
-1. 在「API程式庫」畫面中，捲動以尋找我們的搜尋 **Google Sheets API**. 按一下它。
+1. 在「API程式庫」畫面中，捲動以尋找您的搜尋 **Google Sheets API**，然後按一下。
 
    ![API程式庫搜尋](assets/api-library-search.png)
 
-1. 在 **Google Sheets API** 視窗點按 **啟用**.
+1. 在 **Google Sheets API** 視窗，按一下 **啟用**.
 
    ![Google工作表API](assets/sheets-api.png)
 
@@ -161,9 +161,9 @@ We.Cafe位置有下列配置。
 
 現在您可以建立Google Sheets試算表來儲存您的天氣資料。
 
-1. 前往 `https://docs.google.com` 並建立新的Google工作表試算表。
+1. 前往 `https://docs.google.com` 和建立Google工作表試算表。
 1. 輸入以定義溫度 `32` 在儲存格A2中。
-1. 按一下以共用檔案 **共用** 位於視窗右上角及下方 **取得連結** 按一下 **變更**.
+1. 按一下以共用檔案 **共用** 位於視窗右上角及下方 **取得連結**，按一下 **變更**.
 
    ![共用工作表](assets/share-sheet.png)
 
@@ -173,7 +173,7 @@ We.Cafe位置有下列配置。
 
 1. 找到工作表ID。
 
-   * 工作表ID是您在複製工作表連結之後所出現的隨機字元字串 `d/` 及早於 `/edit`.
+   * 工作表ID是您在工作表連結中複製之後的隨機字元字串 `d/` 及早於 `/edit`.
    * 例如：
       * 如果您的URL是 `https://docs.google.com/spreadsheets/d/1cNM7j1B52HgMdsjf8frCQrXpnypIb8NkJ98YcxqaEP30/edit#gid=0`
       * 工作表ID為 `1cNM7j1B52HgMdsjf8frCQrXpnypIb8NkJ98YcxqaEP30`.
@@ -211,25 +211,25 @@ AEM Screens可使用此相同服務來存取在下個步驟中設定的模擬天
 
 ### 設定ContextHub {#configure-contexthub}
 
-AEM Screens可以根據內容動態變更內容。 We.Cafe示範已設定頻道，以運用AEM ContextHub根據目前溫度顯示不同內容。
+AEM Screens可以根據內容動態變更內容。 We.Cafe示範已設定頻道，以使用AEM ContextHub根據目前溫度顯示不同內容。
 
 >[!TIP]
 >
 >如需ContextHub的完整詳細資訊，請參閱 [其他資源](#additional-resources) 區段。
 
-當熒幕內容顯示時，ContextHub會呼叫您的天氣服務來尋找目前的溫度，以決定要顯示的內容。
+當熒幕內容顯示時，ContextHub會呼叫您的天氣服務來尋找目前溫度，以決定要顯示的內容。
 
-為了進行示範，您可以變更工作表中的值。 ContextHub將會識別此項，而內容將根據更新後的溫度在頻道中調整。
+為了進行示範，您可以變更工作表中的值。 ContextHub可辨識此事實，內容會根據更新後的溫度在色版中調整。
 
 1. 在AEMaaCS作者執行個體上，前往 **全域導覽 — >工具 — >網站 — > ContextHub**.
 1. 選取與您從建立畫面專案時給予專案之名稱相同的設定容器 **We.Cafe網站範本**.
 1. 選取 **設定 — > ContextHub設定 — > Google工作表** 然後按一下 **下一個** 右上角。
-1. 設定應已預先設定JSON資料。 有兩個值需要變更：
-   1. Replace `[your Google Sheets id]` 包含工作表ID [您先前已儲存。](#create-spreadsheet)
-   1. Replace `[your Google API Key]` 使用API金鑰 [您先前已儲存。](#create-api-key)
+1. 設定應已預先設定JSON資料。 有兩個值必須變更：
+   1. Replace `[your Google Sheets id]` 包含工作表ID [您先前已儲存](#create-spreadsheet).
+   1. Replace `[your Google API Key]` 使用API金鑰， [您先前已儲存](#create-api-key).
 1. 按一下「**儲存**」。
 
-現在您可以變更Google工作表試算表中的溫度值，ContextHub會在「看到天氣變化」時動態更新Screens。
+現在您可以變更Google Sheet試算表中的溫度值，而ContextHub會在「看到天氣變化」時動態更新Screens。
 
 ### 測試動態資料 {#test-dynamic}
 
@@ -240,9 +240,9 @@ AEM Screens可以根據內容動態變更內容。 We.Cafe示範已設定頻道�
 
    ![選取示範專案內容](assets/project-content.png)
 
-1. 按一下工具列中的「編輯」或鍵入快速鍵 `e` 以編輯頁面。
+1. 按一下 **編輯** 在工具列中或輸入快速鍵 `e` 以便編輯頁面。
 
-1. 在編輯器中，您可以看到內容。 請注意，一個影像以藍色突出顯示，角落處有一個鎖定目標圖示。
+1. 在編輯器中，您可以看到內容。 其中一個影像會以藍色反白顯示，角落處會出現目標定點陣圖示。
 
    ![編輯器中的Screens內容](assets/screens-content-editor.png)
 
@@ -268,7 +268,7 @@ AEM Screens可以根據內容動態變更內容。 We.Cafe示範已設定頻道�
 
 ### 設定AEM Screensas a Cloud Service {#configure-screens}
 
-首先，您需要將Screens示範內容發佈至AEM Screensas a Cloud Service並設定服務。
+首先，您必須將Screens示範內容發佈至AEM Screensas a Cloud Service並設定服務。
 
 1. 發佈示範Screens專案的內容。
 1. 瀏覽至as a Cloud Service熒幕於 `https://experience.adobe.com/screens` 並登入。
@@ -276,7 +276,7 @@ AEM Screens可以根據內容動態變更內容。 We.Cafe示範已設定頻道�
 
    ![檢查您的Screens組織](assets/screens-org.png)
 
-1. 在左上方，按一下 **編輯設定** 圖示，形狀像齒輪。
+1. 在左上角附近，按一下 **編輯設定** 圖示，形狀像齒輪。
 
    ![編輯設定](assets/screens-edit-settings.png)
 
@@ -284,11 +284,11 @@ AEM Screens可以根據內容動態變更內容。 We.Cafe示範已設定頻道�
 
    ![畫面設定](assets/screens-settings.png)
 
-1. 連線至您的示範執行個體後，Screens會提取您的頻道內容。 按一下 **頻道** ，以檢視您發佈的頻道。 填入資訊可能需要一點時間。 您可以按一下藍色 **同步** 按鈕來更新資訊。
+1. 連線至您的示範執行個體後，Screens會提取您的頻道內容。 按一下 **頻道** ，以便檢視已發佈的管道。 填入資訊可能需要一點時間。 您可以按一下藍色 **同步** 按鈕來更新資訊。
 
    ![示範頻道資訊](assets/screens-channels.png)
 
-1. 按一下 **顯示區** 在左側面板中。 您尚未為您的示範建立任何專案。 我們將為每個專案建立資料夾，以模擬We.Cafe的位置。 按一下 **建立** 在熒幕右上方，然後選取 **資料夾**.
+1. 按一下 **顯示區** 在左側面板中。 您尚未為您的示範建立任何專案。 您可以為每個專案建立資料夾，以模擬We.Cafe的位置。 按一下 **建立** 在熒幕右上方，然後選取 **資料夾**.
 
    ![建立顯示區](assets/screens-displays.png)
 
@@ -308,17 +308,17 @@ AEM Screens可以根據內容動態變更內容。 We.Cafe示範已設定頻道�
 
    ![指派管道](assets/assign-channel.png)
 
-您可以對其他位置和顯示重複這些步驟。 完成之後，您就會將示範網站與AEM Screens連結，並完成必要的設定。
+您可以對其他位置和顯示重複這些步驟。 完成之後，您已將示範網站連結至AEM Screens，並完成必要的設定。
 
 您可以在AEMaaCS上的管道編輯器中預覽示範。
 
 ### 使用Screens播放器 {#screens-player}
 
-若要以實際熒幕檢視內容，您可以下載播放器並在本機進行設定。 AEM Screensas a Cloud Service會將內容傳送至您的播放器
+若要以實際熒幕檢視內容，您可以下載播放器並在本機進行設定。 AEM Screensas a Cloud Service會將內容傳送給您的播放器
 
 #### 產生註冊代碼 {#registration-code}
 
-首先，您需要建立註冊碼，以安全地將播放器連線至AEM Screensas a Cloud Service。
+首先，您必須建立註冊碼，以安全地將播放器連線至AEM Screensas a Cloud Service。
 
 1. 瀏覽至as a Cloud Service熒幕於 `https://experience.adobe.com/screens` 並登入。
 1. 在畫面的右上方，確定您隸屬於正確的組織。
@@ -340,7 +340,8 @@ AEM Screens可以根據內容動態變更內容。 We.Cafe示範已設定頻道�
 #### 安裝及設定播放器 {#install-player}
 
 1. 從下載您平台的播放器 `https://download.macromedia.com/screens/` 並安裝。
-1. 執行播放器並切換至 **設定** 標籤，捲動至底部以按一下並確認兩者 **重設為原廠** 然後 **變更為雲端模式**.
+1. 執行播放器，然後切換至 **設定** 標籤。
+1. 捲動至底部，然後按一下並確認兩者 **重設為原廠** 和 **變更為雲端模式** 選項。
 
    ![播放器設定](assets/player-configuration.png)
 
@@ -363,7 +364,7 @@ AEM Screens可以根據內容動態變更內容。 We.Cafe示範已設定頻道�
 
    ![播放器](assets/players.png)
 
-1. 按一下播放器名稱以開啟其詳細資料，然後按一下 **指派給顯示區** 在畫面的右上方。
+1. 按一下播放器名稱，即可開啟其詳細資料。 按一下 **指派給顯示區** 在畫面的右上方。
 
    ![指派播放器以顯示](assets/assign-to-display.png)
 

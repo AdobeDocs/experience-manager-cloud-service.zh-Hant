@@ -2,9 +2,9 @@
 title: 頁面差異
 description: 頁面差異功能可方便並排比較兩個頁面，並反白顯示其差異。
 exl-id: 6e5c7f14-c980-48e3-8bdd-a7ec10a9e680
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '616'
+source-wordcount: '612'
 ht-degree: 1%
 
 ---
@@ -98,4 +98,4 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->如需有關頁面差異機制的操作以及可能影響頁面差異的限制的詳細資訊，請參閱 [開發人員檔案](/help/implementing/developing/introduction/page-diff.md) 此功能的功能。
+>如需有關頁面差異機制的運作以及可能影響頁面差異的限制的詳細資訊，請參閱 [開發人員檔案](/help/implementing/developing/introduction/page-diff.md) 此功能的功能。

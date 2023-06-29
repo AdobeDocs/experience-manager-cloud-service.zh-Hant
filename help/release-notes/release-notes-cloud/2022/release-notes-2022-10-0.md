@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2022.10.0 版發行說明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2022.10.0 版發行說明。'
 exl-id: 8fce7c50-f322-4bcf-bd76-390faedfd5b7
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '842'
-ht-degree: 92%
+source-wordcount: '838'
+ht-degree: 85%
 
 ---
 
@@ -36,7 +36,7 @@ ht-degree: 92%
 
 ### [!DNL Sites] 中的新功能 {#sites-features}
 
-* [體驗片段的個人化標籤](/help/sites-cloud/authoring/fundamentals/experience-fragments.md#personalization-experience-fragment)允許體驗片段編輯器的分段規格功能以及建立巢狀體驗片段的靈活性，從而可以為多個片段建立各種不同的頁首和頁尾。在此功能推出之前，AEM 提供的個人化僅適用於網站頁面，不適用於體驗片段
+* 此 [體驗片段的個人化標籤](/help/sites-cloud/authoring/fundamentals/experience-fragments.md#personalization-experience-fragment) 允許體驗片段編輯器的分段規格功能和建立巢狀體驗片段的靈活性，從而可以為多個片段建立各種不同的頁首和頁尾。 在此功能推出之前，AEM 提供的個人化僅適用於網站頁面，不適用於體驗片段
 
 * [內容片段主控台](/help/sites-cloud/administering/content-fragments/content-fragments-console.md)現在可讓使用者有效地管理翻譯的內容片段。另外提供一鍵式存取，以便檢視所有語言版本。 使用者也可以依照他們感興趣的地區設定來篩選表格檢視。
 
@@ -85,15 +85,15 @@ ht-degree: 92%
 
 ### 新增功能 {#what-is-new-foundation}
 
-* AEM as a Cloud Service (作者服務) 現在與 Unified Shell 整合，以改進使用者體驗，並將其與所有其他 Experience Cloud 應用程式統一。 請參考 Unified Shell 上的 AEM as a [as a Cloud Service](/help/overview/aem-cloud-service-on-unified-shell.md)以取得詳細資料。
+* AEM as a Cloud Service (作者服務) 現在與 Unified Shell 整合，以改進使用者體驗，並將其與所有其他 Experience Cloud 應用程式統一。 請參閱AEM as a [Unified Shell上的Cloud Service](/help/overview/aem-cloud-service-on-unified-shell.md) 以取得更多詳細資料。
 
 * 如先前在發行說明中所述，使用復寫代理程式管理畫面或復寫API來分發大於10 MB的內容套件（具有屬性的節點，不包括二進位檔案）現在已被棄用和強制執行。 另請參閱 [管理發布](/help/operations/replication.md#manage-publication) 或 [發佈內容樹狀工作流程](/help/operations/replication.md#publish-content-tree-workflow) 瞭解復寫這些大型內容套件的建議方法。
 
-* Dispatcher 設定現在會參照一個列出常見行銷活動查詢參數的檔案。客戶可以選擇取消註釋與其相關的參數，從而促進快取。請參考[行銷活動參數](/help/implementing/dispatcher/caching.md#marketing-parameters)以取得更多詳細資料。
+* Dispatcher 設定現在會參照一個列出常見行銷活動查詢參數的檔案。客戶可以選擇取消註釋與其相關的參數，從而促進快取。另請參閱 [行銷活動引數](/help/implementing/dispatcher/caching.md#marketing-parameters) 以取得更多詳細資料。
 
 ## Cloud Manager {#cloud-manager}
 
-您可以在[此處](/help/implementing/cloud-manager/release-notes/current.md)找到 Cloud Manager 每月發行的完整清單。
+您可以在[這裡](/help/implementing/cloud-manager/release-notes/current.md)找到 Cloud Manager 每月發行的完整清單。
 
 ## 移轉工具 {#migration-tools}
 

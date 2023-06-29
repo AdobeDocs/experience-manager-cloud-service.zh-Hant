@@ -4,9 +4,9 @@ description: 整合 Adobe Analytics
 feature: Administering
 role: Admin
 exl-id: e353a1fa-3e99-4d79-a0d1-40851bc55506
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '562'
+source-wordcount: '558'
 ht-degree: 3%
 
 ---
@@ -42,12 +42,12 @@ ht-degree: 3%
 |---|---|
 | 標題 | 設定名稱 |
 | IMS 設定 | 選取IMS設定（請參閱下章） |
-| 區段 | 使用目前報表套裝中定義的Analytics區段的選項。 系統會根據區段篩選Analytics報表。 請參閱 [此頁面](https://experienceleague.adobe.com/docs/analytics/components/segmentation/seg-overview.html) 以取得其他詳細資訊。 |
+| 區段 | 使用目前報表套裝中定義的Analytics區段的選項。 系統會根據區段篩選Analytics報表。 另請參閱 [此頁面](https://experienceleague.adobe.com/docs/analytics/components/segmentation/seg-overview.html) 以取得其他詳細資訊。 |
 | 報表套裝 | 您傳送資料和提取報告的存放庫。 報表套裝主要定義選定網站、一組網站或網頁子集如何全面且獨立地呈現報告內容。 您可以檢視從單一報告套裝擷取的報告，並可隨時根據您的需求在設定中編輯此欄位。 |
 
 ### 具有IMS驗證的Adobe Analytics {#configuration-parameters-ims}
 
-需要IMS設定，才能將Adobe Analytics與AEMas a Cloud Service正確整合。 必須建立此設定，因此請參考此 [頁面](/help/sites-cloud/integrating/integration-adobe-analytics-ims.md) 以瞭解如何建立Analytics IMS設定。
+需要IMS設定，才能將Adobe Analytics與AEMas a Cloud Service正確整合。 必須建立此設定，請參閱 [頁面](/help/sites-cloud/integrating/integration-adobe-analytics-ims.md) 以瞭解如何建立Analytics IMS設定。
 
 ### 將設定新增至網站 {#add-configuration}
 

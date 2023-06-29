@@ -2,10 +2,10 @@
 title: 屬性和類型
 description: 了解 Universal Editor 需要的資料屬性和類型。
 exl-id: 02795a31-244a-42b4-8297-2649125d7777
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '659'
-ht-degree: 84%
+source-wordcount: '662'
+ht-degree: 82%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 84%
 |---|---|
 | `itemid` | 資源的 URN，請參閱 [AEM 中 Universal Editor 快速入門文件的檢測頁面](getting-started.md#instrument-thepage)章節 |
 | `itemprop` | 資源的屬性，請參閱 [AEM 中 Universal Editor 快速入門文件的檢測頁面](getting-started.md#instrument-thepage)章節 |
-| `itemtype` | 可編輯項目的類型 (例如文字、影像、參考等) |
+| `itemtype` | 可編輯專案的型別（例如，文字、影像和參照） |
 | `data-editor-itemfilter` | 定義可以使用哪些參考 |
 | `data-editor-itemlabel` | 為編輯器中顯示的可選取專案定義自訂標籤 <br>以防萬一 `itemmodel` 設定，則標籤會透過模型擷取 |
 | `data-editor-itemmodel` | 定義在屬性邊欄中用於表單式編輯的模型 |

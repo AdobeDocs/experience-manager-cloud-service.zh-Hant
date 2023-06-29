@@ -2,9 +2,9 @@
 title: 與 Adobe Target 整合時使用的 IMS 設定
 description: 瞭解與Adobe Target整合時使用的IMS設定
 exl-id: b5474b70-bedc-4cc9-ad47-89dcb2415e3a
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '856'
+source-wordcount: '855'
 ht-degree: 5%
 
 ---
@@ -43,7 +43,7 @@ ht-degree: 5%
 1. 在AEM中開啟 **工具** 功能表。
 1. 在 **安全性** 區段選取 **Adobe IMS設定**.
 1. 選取 **建立** 以開啟 **Adobe IMS技術帳戶設定**.
-1. 使用下方的下拉式清單 **雲端設定**，選取 **Adobe Target**.
+1. 使用下的下拉式清單 **雲端設定**，選取 **Adobe Target**.
 1. 啟動 **建立新憑證** 並輸入新別名。
 1. 確認方式 **建立憑證**.
 
@@ -271,7 +271,7 @@ The configuration can now be referenced for a Cloud Service to use the Target St
 
 With [Adobe Experience Manager as a Cloud Service](/help/release-notes/release-notes-cloud/release-notes-current.md), the Client Code field had been added to the Target configuration window.
 
-When configuring the Tenant ID and Client Code fields, please be aware of that for most customers, the **Tenant ID** and the **Client Code** are the same. This means that both fields contain the same information and are identical. Make sure you enter the Tenant ID in both fields.
+When configuring the Tenant ID and Client Code fields, be aware of that for most customers, the **Tenant ID** and the **Client Code** are the same. This means that both fields contain the same information and are identical. Make sure you enter the Tenant ID in both fields.
 
 >[!NOTE]
 >

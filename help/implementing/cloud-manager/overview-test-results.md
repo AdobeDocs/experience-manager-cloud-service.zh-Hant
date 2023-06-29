@@ -2,10 +2,10 @@
 title: Cloud Manager 測試總覽
 description: 大致了解 Cloud Manager 自動執行的三種類型的測試，以確保您的自訂程式碼的品質。
 exl-id: 5f5c97b1-4180-4f49-af8b-257d4744766e
-source-git-commit: 94f818b7622e0f878d15ba30e2f07a169bd114c3
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '164'
-ht-degree: 100%
+ht-degree: 85%
 
 ---
 
@@ -22,7 +22,7 @@ Cloud Manager for Cloud Services 管道支援三類測試。
 
 1. [功能測試](/help/implementing/cloud-manager/functional-testing.md)
 
-   * 功能測試是[生產管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)階段測試階段的一部分，也是[非生產管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)測試階段的選擇性部分。
+   * 功能測試是的階段測試階段的一部分 [生產管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) 並可選擇屬於測試階段的一部分 [非生產管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md).
 
 1. [體驗稽核測試](/help/implementing/cloud-manager/experience-audit-testing.md)
 

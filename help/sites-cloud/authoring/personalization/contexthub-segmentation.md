@@ -2,9 +2,9 @@
 title: 使用 ContextHub 設定分段
 description: 瞭解如何使用ContextHub設定分段。
 exl-id: fbc38611-dbee-426e-b823-df64b6730c45
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1695'
+source-wordcount: '1691'
 ht-degree: 3%
 
 ---
@@ -21,7 +21,7 @@ AEM可讓您輕鬆個人化使用者的體驗。 它也可讓您驗證區段定�
 
 ## 存取區段 {#accessing-segments}
 
-此 [受眾](audiences.md) console可用來管理ContextHub的區段以及Adobe Target帳戶的受眾。 本檔案說明如何管理ContextHub的區段。
+此 [受眾](audiences.md) console可用來管理ContextHub的區段和Adobe Target帳戶的受眾。 本檔案說明如何管理ContextHub的區段。
 
 若要存取區段，請在全域導覽中選取「 」 **導覽>個人化>對象**. 選取您的設定（例如WKND網站）以檢視您的區段：
 
@@ -65,7 +65,7 @@ AEM可讓您輕鬆個人化使用者的體驗。 它也可讓您驗證區段定�
 
 >[!NOTE]
 >
->在比較值時，如果未設定比較的資料型別（亦即設為自動偵測），ContextHub的區段引擎會像javascript一樣直接比較值。 它不會將值轉換為預期型別，這可能會導致誤導性的結果。 例如：
+>在比較值時，如果未設定比較的資料型別（亦即設為自動偵測），ContextHub的區段引擎會依照javascript的設定來比較值。 它不會將值轉換為預期型別，這可能會導致誤導性的結果。 例如：
 >
 >`null < 30 // will return true`
 >
@@ -92,7 +92,7 @@ AEM可讓您輕鬆個人化使用者的體驗。 它也可讓您驗證區段定�
 
    ![新增區段](../assets/contexthub-create-segment.png)
 
-1. 在 **新增ContextHub區段**，輸入區段的標題以及boost值（如有需要），然後點選或按一下 **建立**.
+1. 在 **新增ContextHub區段**，輸入區段的標題和boost值（如有需要），然後點選或按一下 **建立**.
 
    ![新區段](../assets/contexthub-new-segment.png)
 
@@ -200,7 +200,7 @@ this.dependOn(ContextHub.SegmentEngine.Property('profile/age'));
 1. 為您的資料夾提供 **標題**&#x200B;和&#x200B;**名稱**。
    * **標題** 應該是描述性的。
    * 此 **名稱** 會成為存放庫中的節點名稱。
-      * 系統會根據標題自動產生，並根據 [AEM命名慣例。](/help/implementing/developing/introduction/naming-conventions.md)
+      * 系統會根據標題自動產生，並根據 [AEM命名慣例](/help/implementing/developing/introduction/naming-conventions.md).
       * 如有需要，可加以調整。
 
    ![建立資料夾](../assets/contexthub-create-folder.png)
@@ -279,7 +279,7 @@ this.dependOn(ContextHub.SegmentEngine.Property('profile/age'));
 
 此類測試也可在內容頁面上執行，並與目標內容和相關內容相結合 **活動** 和 **體驗**.
 
-如果您已設定活動和體驗，可以使用活動輕鬆測試區段。 如需有關設定活動的詳細資訊，請參閱相關 [有關編寫目標內容的檔案](targeted-content.md).
+如果您已設定活動和體驗，可以使用活動輕鬆測試區段。 如需有關設定活動的詳細資訊，請參閱 [有關編寫目標內容的檔案](targeted-content.md).
 
 1. 在您設定目標內容的頁面編輯模式中，您可以看到透過內容上的箭頭圖示目標內容。
 1. 切換到預覽模式並使用內容中樞，切換到不符合為體驗設定的區段的角色。

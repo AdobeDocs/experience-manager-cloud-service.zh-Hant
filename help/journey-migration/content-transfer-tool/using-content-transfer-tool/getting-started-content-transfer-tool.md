@@ -2,9 +2,9 @@
 title: 內容轉移工具快速入門
 description: 內容轉移工具快速入門
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
-source-git-commit: ea5d86e1a43bb7ae0c7608fc0625983cf2bf273f
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1439'
+source-wordcount: '1436'
 ht-degree: 21%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 21%
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html" text="發行說明"
 >additional-url="https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html" text="Software Distribution 入口網站"
 
-內容轉移工具可以從 Software Distribution 入口網站下載其 zip 檔。您可以透過以下方式安裝套件 [封裝管理員](/help/implementing/developing/tools/package-manager.md) 在您的來源Adobe Experience Manager (AEM)例項上。 確保下載最新版本。有關最新版本的詳細資訊，請參閱 [發行說明](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html).
+內容轉移工具可以從 Software Distribution 入口網站下載其 zip 檔。您可以透過以下方式安裝套件 [封裝管理員](/help/implementing/developing/tools/package-manager.md) 在您的來源Adobe Experience Manager (AEM)例項上。 確保下載最新版本。如需最新版本的詳細資訊，請參閱 [發行說明](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html).
 
 僅支援2.0.0版及更高版本，建議使用最新版本。
 
@@ -102,7 +102,7 @@ ht-degree: 21%
 
    >[!NOTE]
    >
-   >擷取金鑰可讓您的來源AEM環境安全地連線至移轉集。 請謹慎處理此金鑰，就像對待密碼一樣，切勿透過不安全的媒體（例如電子郵件）共用此金鑰。
+   >擷取金鑰可讓您的來源AEM環境安全地連線至移轉集。 請謹慎處理此金鑰，就像對待密碼一樣，切勿透過不安全的媒體（例如電子郵件）共用密碼。
 
    ![影像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam4.png)
 
@@ -126,7 +126,7 @@ ht-degree: 21%
 
    >[!NOTE]
    >
-   >請確定擷取金鑰有效，且未接近其到期日。 您可在以下連結中取得此資訊： **建立移轉集** 對話方塊。 如果出現連線錯誤，請參閱 [來源環境連線能力](#source-environment-connectivity) 以取得詳細資訊。
+   >請確定擷取金鑰有效，且未接近其到期日。 您可在以下連結中取得此資訊： **建立移轉集** 對話方塊。 如果您收到連線錯誤，請參閱 [來源環境連線能力](#source-environment-connectivity) 以取得詳細資訊。
 
    ![影像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam6.png)
 

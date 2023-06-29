@@ -6,7 +6,7 @@ seo-description: With Adaptive Forms, you users can prefill basic information in
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 exl-id: e2a87233-a0d5-48f0-b883-915fe56f105f
-source-git-commit: 99a86fa88b0b98d732487b9e4b0b6de9fa3773ad
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '1948'
 ht-degree: 1%
@@ -21,7 +21,7 @@ ht-degree: 1%
 
 ## 預填資料的結構 {#the-prefill-structure}
 
-調適型表單可以混合有已繫結和未繫結的欄位。 繫結欄位是從「內容尋找器」索引標籤拖曳的欄位，且包含非空白 `bindRef` 「欄位編輯」對話方塊中的屬性值。 未繫結欄位是從Sidekick的元件瀏覽器直接拖曳，並且有空白 `bindRef` 值。
+調適型表單可以混合有已繫結和未繫結的欄位。 繫結欄位是從「內容尋找器」索引標籤拖曳的欄位，且包含非空白 `bindRef` 「欄位編輯」對話方塊中的屬性值。 未繫結欄位是直接從Sidekick的元件瀏覽器拖曳而來，而且是空的 `bindRef` 值。
 
 您可以預先填寫最適化表單的繫結和未繫結欄位。 預填資料包含afBoundData和afUnBoundData區段，以預填最適化表單的繫結和未繫結欄位。 此 `afBoundData` 區段包含繫結欄位和面板的預填資料。 此資料必須符合關聯的表單模型結構描述：
 
@@ -200,6 +200,7 @@ Prefill-Submit-Data-ContentPackage.zip
 >[!NOTE]
 >
 > 在繫結面板中使用未繫結欄位（具有非空白bindRef的面板，這些面板是透過從Sidekick或「資料來源」標籤拖動元件而建立的）是 **not** 建議使用，因為它可能會導致未繫結欄位的資料遺失。 建議在表單中設定唯一的欄位名稱，尤其是未繫結的欄位。
+>
 
 ### 無表單模型的最適化表單 {#adaptive-form-with-no-form-model}
 
@@ -247,7 +248,6 @@ Prefill-Submit-Data-ContentPackage.zip
 > - 依預設，所有型別的Adaptive Forms （XSD、XDP、JSON、FDM和無表單模型型）都允許透過crx檔案進行預填。 只有JSON和XML檔案才允許預填。
 > - crx通訊協定會負責預先填入的資料安全性，因此預設為允許。 透過其他通訊協定使用通用regex預先填寫可能會導致漏洞。 在設定中，指定用於保護您的資料的安全URL設定。
 
-
 ## 可重複面板的奇特案例 {#the-curious-case-of-repeatable-panels}
 
 通常，繫結（表單結構描述）和未繫結的欄位會以相同的最適化表單編寫，但如果繫結是可重複的，則會出現以下一些例外情況：
@@ -292,7 +292,7 @@ https://`servername`/content/forms/af/xml.html?wcmmode=disabled&dataRef=https://
 https://`servername`/content/forms/af/abc.html?wcmmode=disabled&dataRef=service://[SERVICE_NAME]/[IDENTIFIER]
 ```
 
-- SERVICE_NAME是指OSGI預填服務的名稱。 參考 [建立並執行預填服務](prepopulate-adaptive-form-fields.md#create-and-run-a-prefill-service).
+- SERVICE_NAME是指OSGI預填服務的名稱。 另請參閱 [建立並執行預填服務](prepopulate-adaptive-form-fields.md#create-and-run-a-prefill-service).
 - IDENTIFIER是指OSGI預填服務擷取預填資料所需的任何中繼資料。 登入使用者的識別碼是可使用的中繼資料範例。
 
 >[!NOTE]

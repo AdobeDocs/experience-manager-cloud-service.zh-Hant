@@ -2,7 +2,7 @@
 title: 使用頁面版本
 description: 建立、比較和還原頁面的版本
 exl-id: 33d8e43c-594d-4bba-9631-b2c42a1e910f
-source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '1502'
 ht-degree: 3%
@@ -194,7 +194,7 @@ ht-degree: 3%
 
 >[!TIP]
 >
->[時間扭曲也可以與啟動項搭配使用，以預覽未來情況。](/help/sites-cloud/authoring/launches/preview.md)
+>[時間扭曲也可以與啟動項搭配使用，以預覽未來情況](/help/sites-cloud/authoring/launches/preview.md).
 
 由於內容建立是一項持續且協同合作的程式，因此時間扭曲的用途是讓作者追蹤已發佈網站在一段時間內的變化，以便瞭解內容的變更。 此功能使用頁面版本來判斷發佈環境的狀態。
 

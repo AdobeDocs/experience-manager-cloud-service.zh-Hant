@@ -2,10 +2,10 @@
 title: 休眠和去休眠沙箱環境
 description: 了解沙箱程序的環境如何自動進入休眠模式以及如何解除休眠。
 exl-id: c0771078-ea68-4d0d-8d41-2d9be86408a4
-source-git-commit: 2ad5bdc886f3c47b6ee600e69c6e40f1df071cbc
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '691'
-ht-degree: 100%
+source-wordcount: '685'
+ht-degree: 96%
 
 ---
 
@@ -35,7 +35,7 @@ ht-degree: 100%
 
 1. 在&#x200B;**環境**&#x200B;卡，點擊省略符號按鈕並選擇&#x200B;**開發者控制台**。
 
-   * 參考文件[存取開發者控制台](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console)有關開發者控制台的更多詳細資訊。
+   * 另請參閱 [存取開發人員主控台](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console) 以取得關於開發人員控制檯的其他詳細資訊。
 
    ![開發者控制台選單選項](assets/developer-console-menu-option.png)
 
@@ -69,7 +69,7 @@ ht-degree: 100%
 
 1. 在&#x200B;**環境**&#x200B;卡，點擊省略符號按鈕並選擇&#x200B;**開發者控制台**。
 
-   * 參考文件[存取開發者控制台](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console)有關開發者控制台的更多詳細資訊。
+   * 另請參閱 [存取開發人員主控台](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console) 以取得關於開發人員控制檯的其他詳細資訊。
 
 1. 點擊&#x200B;**取消休眠**。
 

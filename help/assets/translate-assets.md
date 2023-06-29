@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Asset Management,Translation
 role: Admin,User
 exl-id: 98df1412-a957-48a3-81c2-7dfe1d5e6d31
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '2646'
 ht-degree: 23%
@@ -191,7 +191,7 @@ Also see, [Creating translation projects for content fragments](creating-transla
 
 1. 導覽至「資產」主控台，然後開啟每個已翻譯資產的「屬性」頁面，以檢視已翻譯的中繼資料。
 
-<!-- TBD: Possibly this blog wasn't migrated. Still try to find from the author. Old one is archived at https://web.archive.org/web/20180423042713/https://blogs.adobe.com/experiencedelivers/experience-management/translate_aemassets_metadata/
+<!-- TBD: Possibly this blog was not migrated. Still try to find from the author. Old one is archived at https://web.archive.org/web/20180423042713/https://blogs.adobe.com/experiencedelivers/experience-management/translate_aemassets_metadata/
 
 For tips on translating metadata for assets efficiently, see [5 Steps to efficiently translate metadata](https://blogs.adobe.com/experiencedelivers/experience-management/translate_aemassets_metadata/). 
 -->
@@ -264,9 +264,9 @@ Adobe Experience Manager可讓您使用所選翻譯提供者提供的雲端型�
 
 ### 套用自訂翻譯聯結器 {#applying-custom-translation-connector}
 
-如果要為要用於翻譯工作流的翻譯服務應用自定義連接器。若要套用自訂聯結器，請先從以下位置安裝聯結器 [封裝管理員。](/help/implementing/developing/tools/package-manager.md)然後，從雲端服務主控台設定連接器。在您設定連接器後，「套用轉譯服務」中所述的「雲端服務」標籤中的連接器清 [單中會顯示此連接器](#applying-the-translation-services)。在您應用自定義連接器並運行翻譯工作流後，翻譯項目的「 **[!UICONTROL Translation Summary]** 」 (翻譯摘要) 表徵圖會在heads **[!UICONTROL Provider]** and **[!UICONTROL Method下顯示連接器詳細資訊]**。
+如果要為要用於翻譯工作流的翻譯服務應用自定義連接器。若要套用自訂聯結器，請先從以下位置安裝聯結器 [封裝管理員](/help/implementing/developing/tools/package-manager.md). 然後，從雲端服務主控台設定連接器。在您設定連接器後，「套用轉譯服務」中所述的「雲端服務」標籤中的連接器清 [單中會顯示此連接器](#applying-the-translation-services)。在您應用自定義連接器並運行翻譯工作流後，翻譯項目的「 **[!UICONTROL Translation Summary]** 」 (翻譯摘要) 表徵圖會在heads **[!UICONTROL Provider]** and **[!UICONTROL Method下顯示連接器詳細資訊]**。
 
-1. 從安裝聯結器 [封裝管理員。](/help/implementing/developing/tools/package-manager.md)
+1. 從安裝聯結器 [封裝管理員](/help/implementing/developing/tools/package-manager.md).
 1. 按一下/點選Experience Manager標誌，然後導覽至 **[!UICONTROL 「工具>部署>Cloud Services」]**.
 1. 在「雲端服務」頁面的「 **[!UICONTROL 協力廠商服務]** 」下，找 **[!UICONTROL 出您安裝的連接器]** 。
 

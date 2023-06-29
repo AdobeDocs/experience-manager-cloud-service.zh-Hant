@@ -2,9 +2,9 @@
 title: 執行管道
 description: 本頁說明如何在Cloud Manager中以Cloud Service專案形式執行Screens管道。
 exl-id: 3203cff7-5668-4f50-a2c5-80ae474b439d
-source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '312'
+source-wordcount: '309'
 ht-degree: 3%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 3%
 本節說明如何在Cloud Manager中執行管道並部署您的程式碼。
 
 >[!NOTE]
->請參閱 [設定CI-CD管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/configuring-production-pipelines.html?lang=en) 和 [部署程式碼](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html?lang=en) 以瞭解如何在Cloud Manager中執行計畫的管道。
+>另請參閱 [設定CI-CD管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/configuring-production-pipelines.html?lang=en) 和 [部署程式碼](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html?lang=en) 以瞭解如何在Cloud Manager中執行計畫的管道。
 
 ## 目標 {#objective}
 

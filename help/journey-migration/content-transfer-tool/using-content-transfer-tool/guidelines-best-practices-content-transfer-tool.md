@@ -2,9 +2,9 @@
 title: 使用內容轉移工具的准則和最佳實務
 description: 使用內容轉移工具的准則和最佳實務
 exl-id: d1975c34-85d4-42e0-bb1a-968bdb3bf85d
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1547'
+source-wordcount: '1544'
 ht-degree: 15%
 
 ---
@@ -75,23 +75,23 @@ ht-degree: 15%
 
 * 在提取階段中，「內容轉移工具」會在作用中的 AEM 來源例項上執行。
 
-* 完成 *摘取* 內容轉移程式階段及開始 *擷取階段* 將內容內嵌至您的AEMas a Cloud Service *階段* 或 *生產* 執行個體，您需要記錄支援票證以通知Adobe您打算執行 *內嵌* 以便Adobe可確保在 *內嵌* 程式。 您需要於計畫的1週前記錄支援票證 *內嵌* 日期。 在您提交支援票證後，支援團隊將提供後續步驟的指引。 您可以記錄支援票證，其詳細資料如下：
+* 完成 *摘取* 內容轉移程式階段及開始 *擷取階段* 將內容內嵌至您的AEMas a Cloud Service *階段* 或 *生產* 執行個體，您需要記錄支援票證以通知Adobe您打算執行 *內嵌* 以便Adobe可確保在 *內嵌* 程式。 您需要於計畫的1週前記錄支援票證 *內嵌* 日期。 在您提交支援票證後，支援團隊會提供後續步驟的指引。 您可以記錄支援票證，其詳細資料如下：
 
    * 計劃開始的確切日期和估計時間（以您的時區表示） *內嵌* 階段。
    * 您打算將資料內嵌到的環境型別（中繼或生產）。
    * 方案ID。
 
-* 此 *擷取階段* 對於作者，會縮小整個作者部署。 這表示在整段擷取程式中，無法使用製作AEM。 也請確保在您執行 *內嵌* 階段。
+* 此 *擷取階段* 對於作者，會縮小整個作者部署。 這表示在整段擷取程式中，無法使用製作AEM。 也請確定當您執行 *內嵌* 階段。
 
 * 使用時 `Amazon S3` 或 `Azure` 做為來源AEM系統上的資料存放區，資料存放區應進行設定，以便無法刪除已儲存的blob （垃圾收集）。 這樣可確保索引資料的完整性，如果無法以這種方式設定，可能會導致擷取失敗，因為此索引資料缺乏完整性。
 
-* 如果您使用自訂索引，則必須確保設定自訂索引時具有 `tika` 節點（在執行內容轉移工具之前）。 請參閱 [準備新的索引定義](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html#preparing-the-new-index-definition) 以取得更多詳細資料。
+* 如果您使用自訂索引，您必須確保設定自訂索引時具有 `tika` 節點（在執行內容轉移工具之前）。 另請參閱 [準備新的索引定義](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html#preparing-the-new-index-definition) 以取得更多詳細資料。
 
 * 如果您打算執行追加提取，則必須確保現有內容的內容結構不會從初次提取時間變更為執行追加提取時間。 追加無法針對自初始擷取以來結構已變更的內容執行。 請務必在移轉程式期間限制此專案。
 
 * 如果您打算將版本納入移轉集，並使用執行追加功能 `wipe=false`，則由於「內容轉移工具」的目前限制，您必須停用版本清除。 如果您偏好啟用版本整個清除，並且要在移轉集中執行追加作業，則必須依照以下方式執行內嵌 `wipe=true`.
 
-* 移轉集將在長時間不活動後過期，之後其資料將不再可用。 請檢閱 [移轉集到期](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html#migration-set-expiry) 以取得更多詳細資料。
+* 移轉集將在長時間不活動後過期，之後其資料將不再可用。 檢閱 [移轉集到期](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html#migration-set-expiry) 以取得更多詳細資料。
 
 ## 下一步 {#whats-next}
 

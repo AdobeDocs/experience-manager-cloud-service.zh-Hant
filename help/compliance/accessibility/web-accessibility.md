@@ -2,10 +2,10 @@
 title: Adobe Experience Manager as a Cloud Service 與網路無障礙指引
 description: Adobe Experience Manager as a Cloud Service 與網路無障礙指引簡介
 exl-id: ad7627cd-3c97-47b7-8a13-0aae39aa8169
-source-git-commit: e9c1ec6807f86ab00f89ef292a89a0c8efdf802b
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '385'
-ht-degree: 100%
+source-wordcount: '383'
+ht-degree: 97%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 100%
 
 * 作者可使用這些功能建立無障礙網站。
 
-   建立無障礙內容是一個過程。AEM 提供所需功能，但內容作者必須按照所需技術來建立無障礙內容。
+  建立無障礙內容是一個過程。AEM 提供所需功能，但內容作者必須按照所需技術來建立無障礙內容。
 
 * 範本開發人員在實作網站設計時，也應注意這類問題。
 
@@ -64,4 +64,4 @@ WCAG 2.1 提供的[指引 (及相關成功標準) 說明了無障礙環境等級
 
 ## Adobe 的無障礙措施 {#accessibility-at-adobe}
 
-如需詳細資訊，請造訪 [Adobe 無障礙資源中心](https://www.adobe.com/accessibility/)。
+如需詳細資訊，請參閱 [Adobe協助工具資源中心](https://www.adobe.com/accessibility/).

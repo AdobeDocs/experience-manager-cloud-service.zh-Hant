@@ -2,9 +2,9 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2022.7.0 版發行說明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2022.7.0 版發行說明。'
 exl-id: b339ab48-e836-4589-a573-9c50917b9280
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '953'
+source-wordcount: '949'
 ht-degree: 16%
 
 ---
@@ -102,8 +102,8 @@ ht-degree: 16%
 ### 新增功能 {#what-is-new-foundation}
 
 * 此 [存放庫瀏覽器](/help/implementing/developing/tools/repository-browser.md) 現在有路徑輸入欄位，因此可以直接跳至存放庫階層中的特定資料夾
-* Sling內容發佈(SCD)現在支援明確的「失效」動作，以使內容失效，而不發佈該內容。 請參閱 [AEMas a Cloud Service中的快取](/help/implementing/dispatcher/caching.md#explicit-invalidation) 頁面，以取得更多詳細資料。
-* AEMas a Cloud Service現在提供mod_macro。 請參閱 [此表格](/help/implementing/dispatcher/disp-overview.md) 以取得支援的Apache模組清單。
+* Sling內容發佈(SCD)現在支援明確的「失效」動作，以使內容失效，而不發佈該內容。 另請參閱 [AEMas a Cloud Service中的快取](/help/implementing/dispatcher/caching.md#explicit-invalidation) 頁面，以取得更多詳細資料。
+* AEMas a Cloud Service現在提供mod_macro。 另請參閱 [此表格](/help/implementing/dispatcher/disp-overview.md) 以取得支援的Apache模組清單。
 
 ### AEMas a Cloud ServiceSDK Dispatcher工具增強功能 {#dispatcher-tools-enhancements}
 
@@ -112,7 +112,7 @@ ht-degree: 16%
 
 ### [!DNL Experience Manager] 發行前通道中可用的新功能 {#prerelease-features-foundation}
 
-* AEMas a Cloud Service現在與Unified Shell整合，以改進使用者體驗，並將其與所有其他Experience Cloud應用程式統一。 請參閱 [統一命令介面上的AEMas a Cloud Service](/help/overview/aem-cloud-service-on-unified-shell.md) 以取得更多詳細資料。
+* AEMas a Cloud Service現在與Unified Shell整合，以改進使用者體驗，並將其與所有其他Experience Cloud應用程式統一。 另請參閱 [統一命令介面上的AEMas a Cloud Service](/help/overview/aem-cloud-service-on-unified-shell.md) 以取得更多詳細資料。
 
 ## AdobeLearning Manager聯結器 {#learn-manage}
 
@@ -120,7 +120,7 @@ ht-degree: 16%
 
 ## Cloud Manager {#cloud-manager}
 
-您可以在[此處](/help/implementing/cloud-manager/release-notes/current.md)找到 Cloud Manager 每月發行的完整清單。
+您可以在[這裡](/help/implementing/cloud-manager/release-notes/current.md)找到 Cloud Manager 每月發行的完整清單。
 
 ## 移轉工具 {#migration-tools}
 

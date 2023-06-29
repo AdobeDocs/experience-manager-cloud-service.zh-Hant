@@ -2,10 +2,10 @@
 title: Cloud Manager 存放庫
 description: 了解如何在 Cloud Manager 中建立、檢視和刪除 Git 存放庫。
 exl-id: 6e1cf636-78f5-4270-9a21-38b4d5e5a0b0
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '580'
-ht-degree: 96%
+source-wordcount: '575'
+ht-degree: 88%
 
 ---
 
@@ -38,7 +38,7 @@ ht-degree: 96%
 
 ![存放庫選項](/help/implementing/cloud-manager/assets/repos/create-repo3.png)
 
-在新增或編輯管道時，您也可以選擇在 Cloud Manager 中建立的存放庫。如需了解詳細資訊，請參閱文件：[CI-CD 管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)。
+在新增或編輯管道時，您也可以選擇在 Cloud Manager 中建立的存放庫。另請參閱 [CI-CD管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) 以深入瞭解。
 
 任何指定管道都有一個主要存放庫或一個分支。透過[Git 子模組支援](#git-submodule-support)，可以在建置階段包含許多次要分支。
 
@@ -76,7 +76,7 @@ $ git submodule update --init
 
 對於習慣使用 Git 子模組並且不想管理外部合併流程的組織來說，此技術是文件[使用多來源 Git 存放庫](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md)中所述解決方案的潛在替代計畫。
 
-例如，我們假設有三個存放庫，每個都包含名為 `main` 的單一分支。在主要存放庫中 (即在管道中設定的那個)，`main` 分支有一個 `pom.xml` 檔案，宣告包含在其他兩個存放庫中的專案。
+例如，我們假設有三個存放庫，每個都包含名為 `main` 的單一分支。在主要存放庫中，即在管道中設定的那個， `main` 分支具有 `pom.xml` 宣告包含在其他兩個存放庫中的專案的檔案。
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -121,7 +121,7 @@ $ git submodule add -b main https://git.cloudmanager.adobe.com/ProgramName/proje
 
 ### 限制和建議 {#limitations-recommendations}
 
-使用 Git 子模組時，請留意以下限制：
+使用Git子模組時，請注意下列限制。
 
 * Git URL 必須完全符合上節所述語法。
 * 僅支援分支根部的子模組。

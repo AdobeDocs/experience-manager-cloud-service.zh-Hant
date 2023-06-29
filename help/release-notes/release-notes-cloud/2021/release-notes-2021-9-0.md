@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2021.9.0 版發行說明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2021.9.0 版發行說明。'
 exl-id: 8c12ff09-fbc8-42dd-87c0-46e509604f36
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1570'
-ht-degree: 38%
+source-wordcount: '1569'
+ht-degree: 37%
 
 ---
 
@@ -75,7 +75,7 @@ CQ-4328183 was not reported on CS so not documented here.
 ### [!DNL Forms]的 Beta 版功能 {#sep-what-is-new-forms-prerelease}
 
 * **統一的儲存連接器：**&#x200B;使用統一的儲存連接器可將客戶管理的存放庫中的程序內資料外部化。 例如，您可以
-   * 啟用 Forms Portal 的儲存並繼續功能，並將最適化表單草稿儲存在客戶管理的資料存放庫中。
+   * 啟用Forms入口網站的儲存並繼續功能，並將最適化表單草稿儲存在客戶管理的資料存放庫中。
    * 將包含敏感個人資料 (SPD) 的程序內 AEM 工作流程資料 (AEM 工作流程變數資料) 儲存在客戶管理的存放庫中。
 
 * **[!DNL AEM Forms as a Cloud Service - Communications]**：[通訊 API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications.html) 可幫助您合併 XDP 範本和 XML 資料，以產生多種格式的列印文件。 此服務可讓您以同步模式產生文件。 這些 API 可讓您建立以下用途的應用程式：
@@ -145,7 +145,7 @@ CQ-4328183 was not reported on CS so not documented here.
 
 **索引最佳化**
 
-為了改善搜尋查詢和索引的效能，全文檢索lucene-2不再用於 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 此版本中的。 為了根據AEM客戶在AEM環境中移除此全文索引，Adobe工程團隊會與客戶個別並主動合作，以溫和、可持續的方式移除Lucene全文索引。 請造訪 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] [檔案](/help/operations/indexing.md#index-optimizations) 若您有任何問題，請直接連絡我們的支援以取得詳細資訊。
+為了改善搜尋查詢和索引的效能，全文檢索lucene-2不再用於 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 此版本中的。 為了根據AEM客戶在AEM環境中移除此全文索引，Adobe工程團隊會與客戶個別並主動合作，以溫和、可持續的方式移除Lucene全文索引。 造訪 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] [檔案](/help/operations/indexing.md#index-optimizations) 若您有任何問題，請直接連絡我們的支援以取得詳細資訊。
 
 ## Cloud Manager {#cloud-manager}
 

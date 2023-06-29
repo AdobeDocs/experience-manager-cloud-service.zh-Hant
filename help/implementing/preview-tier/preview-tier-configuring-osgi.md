@@ -2,10 +2,10 @@
 title: 設定預覽階層的 OSGi 設定
 description: 了解如何設定 AEM 預覽服務，以在上線前預覽內容。
 exl-id: 1200bb17-8a3c-4e41-85f4-ed2334b61f69
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '222'
-ht-degree: 93%
+source-wordcount: '219'
+ht-degree: 89%
 
 ---
 
@@ -19,7 +19,7 @@ AEM 提供 Sites 預覽服務，可讓開發人員和內容作者在網站到達
 
 >[!NOTE]
 >
->有關預覽環境的更多詳細資料，請參閱文件[管理環境](/help/implementing/cloud-manager/manage-environments.md#access-preview-service)。
+>如需預覽環境的詳細資訊，請參閱 [管理環境](/help/implementing/cloud-manager/manage-environments.md#access-preview-service).
 
 ## 設定預覽階層的 OSGi 設定 {#configuring-osgi-settings-for-the-preview-tier}
 

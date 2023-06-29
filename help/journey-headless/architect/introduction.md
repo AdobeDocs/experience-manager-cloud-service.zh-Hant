@@ -2,10 +2,10 @@
 title: AEM as a Headless CMS 內容模型 - 簡介
 description: 介紹使用 Adobe Experience Manager as a Cloud Service as a Headless CMS 的功能為您的專案建立內容模型。
 exl-id: 62061d73-6fdb-440b-a7dd-b0d530d49186
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '721'
-ht-degree: 96%
+source-wordcount: '722'
+ht-degree: 92%
 
 ---
 
@@ -66,7 +66,7 @@ ht-degree: 96%
 
 這更像是一個開發細節 - 但它可能會讓您感興趣，只是為了完成這個故事。
 
-一旦您建立了內容片段模型，並且您的作者已使用它們產生內容，無周邊應用程式將需要存取此內容。
+在您建立內容片段模式，且您的作者已使用它們產生內容後，Headless應用程式將需要存取此內容。
 
 Adobe Experience Manager (AEM) as a Cloud Service 可以使用 AEM GraphQL API 選擇性地存取內容片段，以僅傳回所需的內容。使用 API，開發人員可以制定選取特定內容的查詢。此選取流程是根據&#x200B;*您的*&#x200B;內容片段模型進行的。
 

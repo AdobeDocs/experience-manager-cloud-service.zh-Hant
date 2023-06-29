@@ -4,9 +4,9 @@ description: 瞭解AE的基本知識；使用封裝管理器管理封裝。
 feature: Administering
 role: Admin
 exl-id: b5fef273-912d-41f6-a698-0231eedb2b92
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '3780'
+source-wordcount: '3775'
 ht-degree: 4%
 
 ---
@@ -33,7 +33,7 @@ ht-degree: 4%
 
 >[!NOTE]
 >
->套件只能包含內容。 任何功能(例如，儲存於 `/apps`)必須是 [使用您在Cloud Manager中的CI/CD管道部署。](/help/implementing/cloud-manager/deploy-code.md)
+>套件只能包含內容。 任何功能(例如，儲存於 `/apps`)必須是 [使用您在Cloud Manager中的CI/CD管道部署](/help/implementing/cloud-manager/deploy-code.md).
 
 >[!IMPORTANT]
 >
@@ -43,7 +43,7 @@ ht-degree: 4%
 >
 >如果您看到此類錯誤，請不要重試安裝。安裝作業正在背景正確進行。如果您真的重新啟動安裝，則多個並行匯入流程可能會造成一些衝突。
 
-如需有關如何管理AEMaaCS套件的詳細資訊，請檢視此檔案 [部署至AEMas a Cloud Service](/help/implementing/deploying/overview.md) （位於部署使用手冊中）。
+如需如何管理AEMaaCS套件的詳細資訊，請參閱 [部署至AEMas a Cloud Service](/help/implementing/deploying/overview.md) （位於部署使用手冊中）。
 
 ## 封裝大小 {#package-size}
 
@@ -57,7 +57,7 @@ MaxPackageSize (in MB) = ConnectionSpeed (in MB/s) * 60 s
 
 由於網路流量是可變的，且一律小於宣告的理論最大值，請嘗試使用線上網際網路連線速度測試工具。
 
-網際網路速度在上傳和下載時幾乎總是不同的。 假設您將需要上傳和下載套件，則計算時應使用較低的值（通常是上傳速度）。
+網際網路速度在上傳和下載時幾乎總是不同的。 假設您必須同時上傳和下載套件，計算時應使用較低的值（通常是上傳速度）。
 
 ### 範例 {#example}
 

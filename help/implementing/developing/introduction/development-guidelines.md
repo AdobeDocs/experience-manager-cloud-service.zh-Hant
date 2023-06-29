@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service 開發指導方針
 description: 了解在 AEM as a Cloud Service 上進行開發的準則，以及它和內部部署的 AEM 以及 AMS 中的 AEM 的重要區別。
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2591'
+source-wordcount: '2586'
 ht-degree: 4%
 
 ---
@@ -65,7 +65,7 @@ Adobe建議使用提供的 [Apache HttpComponents Client 4.x程式庫](https://h
 * [Apache Commons HttpClient 3.x](https://hc.apache.org/httpclient-3.x/) （不建議使用，因為它已過時並由4.x版取代）
 * [確定Http](https://square.github.io/okhttp/) (AEM未提供)
 
-除了提供逾時功能外，也應該實作適當處理這類逾時以及非預期的HTTP狀態代碼。
+除了提供逾時功能外，也應對這類逾時功能進行適當處理，以及非預期的HTTP狀態代碼。
 
 ## 無傳統UI自訂 {#no-classic-ui-customizations}
 
@@ -152,7 +152,7 @@ DEBUG 3 WebApp Panel: WebApp successfully deployed
 
 ### 執行緒傾印 {#thread-dumps}
 
-雲端環境上的對話串傾印會持續收集，但目前無法自助下載。 同時，如果偵錯問題需要執行緒傾印，請聯絡AEM支援，並指定確切的時間範圍。
+雲端環境上的對話串傾印會持續收集，但目前無法自助下載。 同時，如果偵錯問題需要執行緒傾印，請聯絡AEM支援，指定確切的時間範圍。
 
 ## CRX/DE Lite和開發人員主控台 {#crxde-lite-and-developer-console}
 
@@ -286,4 +286,4 @@ Caused by: com.mongodb.MongoWriteException: Resulting document after update is l
 
 ## [!DNL Assets] 開發指導方針和使用案例 {#use-cases-assets}
 
-若要瞭解Assetsas a Cloud Service的開發使用案例、建議和參考資料，請參閱 [Assets的開發人員參考資料。](/help/assets/developer-reference-material-apis.md#assets-cloud-service-apis)
+若要瞭解Assetsas a Cloud Service的開發使用案例、建議和參考資料，請參閱 [Assets開發人員參考資料](/help/assets/developer-reference-material-apis.md#assets-cloud-service-apis).

@@ -2,7 +2,7 @@
 title: AEM as a Cloud Service 中的維護任務
 description: AEM as a Cloud Service 中的維護任務
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '1107'
 ht-degree: 13%
@@ -44,7 +44,7 @@ ht-degree: 13%
   <tr>
     <td>版本清除</td>
     <td>Adobe</td>
-    <td>對於現有環境（在2023年6月1日之前建立的環境），清除功能會停用，且日後不會啟用，除非客戶明確啟用，且客戶當時可能也會使用自訂值設定該功能。<br><br> <!--Alexandru: please leave the two line breaks in place, otherwise spacing won't render properly-->新環境（自2023年6月1日起建立的環境）預設會啟用永久刪除，使用下列值，客戶可設定自訂值。
+    <td>對於現有環境（在2023年6月1日之前建立的環境），清除功能會停用，且日後不會啟用，除非客戶明確啟用，且客戶當時可能也會使用自訂值設定該功能。<br><br> <!--Alexandru: leave the two line breaks in place, otherwise spacing won't render properly-->新環境（自2023年6月1日起建立的環境）預設會啟用永久刪除，使用下列值，客戶可設定自訂值。
      <ol>
        <li>超過30天的版本會被移除</li>
        <li>會保留過去30天內最新的5個版本</li>

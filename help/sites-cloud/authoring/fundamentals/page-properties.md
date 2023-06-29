@@ -2,16 +2,16 @@
 title: 編輯頁面屬性
 description: 定義頁面的必要屬性
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2340'
+source-wordcount: '2341'
 ht-degree: 6%
 
 ---
 
 # 編輯頁面屬性 {#editing-page-properties}
 
-您可以定義頁面的必要屬性。 這些值會因頁面性質而異。 例如，有些頁面可能已連線至即時副本，有些頁面卻未連線，因此即時副本資訊會視情況提供。
+您可以定義頁面的必要屬性。 這些值會因頁面性質而異。 例如，某些頁面可能已連線至即時副本，而其他頁面並未連線，因此即時副本資訊可供適當使用。
 
 ## 頁面內容 {#page-properties}
 
@@ -196,7 +196,7 @@ ht-degree: 6%
 
 ### 藍圖 {#blueprint}
 
-此索引標籤僅對作為Blueprint的頁面可見。 藍圖是即時副本的基礎，並且是的一部分 [多網站管理。](/help/sites-cloud/administering/msm/overview.md)
+此索引標籤僅對作為Blueprint的頁面可見。 藍圖是即時副本的基礎，並且是的一部分 [多網站管理](/help/sites-cloud/administering/msm/overview.md).
 
 * **目前的即時副本**  — 列出以此Blueprint頁面為基礎（即為即時副本）的頁面
 
@@ -204,7 +204,7 @@ ht-degree: 6%
 
 ### Live Copy {#live-copy}
 
-此標籤僅對設定為即時副本的頁面可見。 和藍圖一樣，即時副本屬於 [多網站管理。](/help/sites-cloud/administering/msm/overview.md).
+此標籤僅對設定為即時副本的頁面可見。 和藍圖一樣，即時副本屬於 [多網站管理](/help/sites-cloud/administering/msm/overview.md).
 
 * **同步**  — 將即時副本與Blueprint同步，並保留本機修改
 * **重設**  — 將即時副本重設為Blueprint的狀態，並移除本機修改

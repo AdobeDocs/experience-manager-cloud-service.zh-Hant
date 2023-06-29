@@ -3,9 +3,9 @@ title: 使用Commerce Integration Framework進行AEM和協力廠商商務整合
 description: 企業可能需要額外的協力廠商商業解決方案來強化店面。 Commerce Integration Framework (CIF)可用於這類整合案例，以使用I/O Runtime將協力廠商商務解決方案連結至Adobe Experience Manager。
 thumbnail: cif-third-party-architecture.jpg
 exl-id: 3ebdb8eb-65ba-46be-aca3-6c06c8d1600c
-source-git-commit: 5311ba7f001201fc94c73fa52bc7033716c1ba78
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '510'
+source-wordcount: '509'
 ht-degree: 1%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 1%
 
 整體架構如下：
 
-![AEM非Magento/第三方架構概覽](../assets//AEM_nonMagento_Architecture.png)
+![AEM非Magento/協力廠商架構概述](../assets//AEM_nonMagento_Architecture.png)
 
 此整合層的用途是將第三方API和結構描述對應至Experience Manager外部支援的Adobe Commerce GraphQL API和結構描述。 有了此封裝，整合邏輯和系統可以更新，而不需要變更Experience Manager內的程式碼。
 

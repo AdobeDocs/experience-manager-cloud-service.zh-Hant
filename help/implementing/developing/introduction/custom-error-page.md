@@ -2,9 +2,9 @@
 title: 自訂錯誤頁面
 description: AEM隨附處理HTTP錯誤的標準錯誤處理常式，且可自訂。
 exl-id: b74c65d1-8ef5-4ad4-8255-8187f3b1d84c
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '572'
+source-wordcount: '573'
 ht-degree: 2%
 
 ---
@@ -62,7 +62,7 @@ HTTP [500內部伺服器錯誤](https://www.w3.org/Protocols/rfc2616/rfc2616-sec
    * HTTP回應代碼500
    * 例外狀況棧疊追蹤
 
-作者： [自訂錯誤處理常式顯示的頁面](#how-to-customize-pages-shown-by-the-error-handler) a `500.jsp` 可建立指令碼。 但是，它僅用於 `HttpServletResponse.sendError(500)` 明確地執行，即從例外狀況收集器。
+作者： [自訂錯誤處理常式顯示的頁面](#how-to-customize-pages-shown-by-the-error-handler) a `500.jsp` 可建立指令碼。 但是，它僅用於 `HttpServletResponse.sendError(500)` 會明確執行；也就是從例外狀況收集器。
 
 否則，回應代碼會設為500，但 `500.jsp` 指令碼未執行。
 
@@ -77,6 +77,6 @@ HTTP [500內部伺服器錯誤](https://www.w3.org/Protocols/rfc2616/rfc2616-sec
 >
 >在作者執行個體上， [CQ WCM偵錯篩選器](/help/implementing/deploying/configuring-osgi.md) 預設為啟用。 這會一律產生回應代碼200。 預設錯誤處理常式會透過將完整棧疊追蹤寫入回應來回應。
 >
->對於自訂錯誤處理常式，需要程式碼為500的回應，因此 [需要停用CQ WCM偵錯篩選器。](/help/implementing/deploying/configuring-osgi.md) 如此可確保傳回回應代碼500，而這會觸發正確的Sling錯誤處理常式。
+>對於自訂錯誤處理常式，需要程式碼為500的回應，因此 [需要停用CQ WCM偵錯篩選器](/help/implementing/deploying/configuring-osgi.md). 如此可確保傳回回應代碼500，而這會觸發正確的Sling錯誤處理常式。
 >
 >在發佈執行個體上，CQ WCM偵錯篩選器為 **一律** 停用（即使設定為已啟用）。

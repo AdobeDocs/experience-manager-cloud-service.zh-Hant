@@ -4,7 +4,7 @@ description: 瞭解如何建立並同步即時副本，以便在您的網站上�
 feature: Multi Site Manager
 role: Admin
 exl-id: 53ed574d-e20d-4e73-aaa2-27168b9d05fe
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 151ef672e847f793b37d220920081ac9fce94edf
 workflow-type: tm+mt
 source-wordcount: '4308'
 ht-degree: 2%
@@ -45,7 +45,7 @@ Blueprint設定會識別您想要用作一或多個Live Copy頁面來源的現�
 
 Blueprint設定被視為不可變資料，因此在執行階段不可編輯。 因此，必須使用CI/CD管道透過Git部署任何設定變更。
 
-如需詳細資訊，請參閱文章 [Adobe Experience Manager (AEM) as a Cloud Service重大變更。](/help/release-notes/aem-cloud-changes.md)
+如需詳細資訊，請參閱文章 [Adobe Experience Manager (AEM) as a Cloud Service重大變更](/help/release-notes/aem-cloud-changes.md).
 
 下列步驟僅供管理員在本機開發執行個體上用於測試和開發目的。 這些選項在任何AEMaaCS雲端例項中都不可用。
 
@@ -245,7 +245,7 @@ Blueprint頁面（在Blueprint設定中參照）會為您提供使用目前(Blue
 
    ![定義轉出時間](../assets/rollout-now-later.png)
 
-轉出會以非同步工作方式處理，並可在 [***非同步工作狀態** 頁面。](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations)
+轉出會以非同步工作方式處理，並可在 [***非同步工作狀態** 頁面](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations).
 
 #### 從參考邊欄轉出Blueprint {#roll-out-a-blueprint-from-the-reference-rail}
 
@@ -270,7 +270,7 @@ Blueprint頁面（在Blueprint設定中參照）會為您提供使用目前(Blue
 
 1. 確認這些詳細資料後，請選取 **轉出** 以執行動作。
 
-轉出會以非同步工作方式處理，並可在 [**非同步工作狀態** 頁面。](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations)
+轉出會以非同步工作方式處理，並可在 [**非同步工作狀態** 頁面](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations).
 
 #### 從即時副本概觀轉出Blueprint {#roll-out-a-blueprint-from-the-live-copy-overview}
 
@@ -289,7 +289,7 @@ Blueprint頁面（在Blueprint設定中參照）會為您提供使用目前(Blue
 
    ![定義轉出排程](../assets/rollout-now-later.png)
 
-轉出會以非同步工作方式處理，並可在 [**非同步工作狀態** 頁面。](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations)
+轉出會以非同步工作方式處理，並可在 [**非同步工作狀態** 頁面](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations).
 
 ### 同步即時副本 {#synchronizing-a-live-copy}
 
@@ -429,7 +429,7 @@ Blueprint頁面（在Blueprint設定中參照）會為您提供使用目前(Blue
 
 ### 變更繼承深度（淺/深） {#changing-inheritance-depth-shallow-deep}
 
-您可以在現有的即時副本上變更頁面的深度，即是否包含子頁面。
+您可以在現有的即時副本上變更頁面的深度，也就是是否包含子頁面。
 
 * 切換到淺層即時副本：
 
@@ -575,7 +575,7 @@ Blueprint頁面（在Blueprint設定中參照）會為您提供使用目前(Blue
 
 若要追蹤您所做的變更，您可以在中檢視Blueprint頁面 **引用** 並與其即時副本頁面比較：
 
-1. 在 **網站** 主控台， [導覽至Blueprint或即時副本頁面並加以選取。](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)
+1. 在 **網站** 主控台， [導覽至Blueprint或即時副本頁面並加以選取](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
 1. 開啟 **[引用](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)** 面板，並根據內容選取：
 
    * **藍圖**

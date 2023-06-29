@@ -2,9 +2,9 @@
 title: 快速網站建立和前端自訂
 description: 瞭解快速網站建立工具如何使用網站範本、主題和前端管道，以快速部署新網站和分離前端開發。
 exl-id: 9ec5126b-bee4-445a-a4bb-0c27c1a93d3f
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '328'
+source-wordcount: '325'
 ht-degree: 5%
 
 ---
@@ -19,13 +19,13 @@ ht-degree: 5%
 
 為此，「快速網站建立」工具會使用幾個強大的AEMas a Cloud Service功能：
 
-1. **AEM網站範本** 用於定義基本網站內容和結構以及網站樣式，並由管理員在建立新網站時選取。
+1. **AEM網站範本** 用於定義基本網站內容和結構，以及網站樣式，並由管理員在建立新網站時選取。
 1. 一個 **AEM網站主題** 包含在範本中，並包含定義網站樣式的CSS、JavaScript和靜態資源。
 1. 此 **前端管道** 可用來將自訂專案部署至網站主題，而不受後端開發的影響。
 
 ## 快速網站建立歷程 {#quick-site-creation-journey}
 
-如需「快速網站建立」工具運作方式的完整概觀，以及使用這些強大工具立即開始部署和自訂您自己的網站，請檢視 [快速網站建立歷程。](/help/journey-sites/quick-site/overview.md)
+如需「快速網站建立」工具運作方式的完整概觀，以及使用這些強大工具立即開始部署和自訂您自己的網站，請檢閱 [快速網站建立歷程](/help/journey-sites/quick-site/overview.md).
 
 ## 其他資源 {#additional-resources}
 

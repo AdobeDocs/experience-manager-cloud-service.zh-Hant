@@ -2,9 +2,9 @@
 title: 預覽內容
 description: 瞭解如何使用AEM預覽服務在內容上線前進行預覽。
 exl-id: 6b4b57f6-2e66-4c83-94d9-bc1e0daab0f3
-source-git-commit: 7b56bb05e31d7a61d7a8fb13e2bd0ff6e4fb301d
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '277'
+source-wordcount: '274'
 ht-degree: 7%
 
 ---
@@ -16,7 +16,7 @@ AEM提供Sites預覽服務，可讓開發人員和內容作者在網站到達發
 
 它有助於預覽從製作環境看不到的頁面體驗，例如頁面轉變和其他僅發佈端內容。
 
-如需預覽環境的詳細資訊，請參閱檔案 [管理環境](/help/implementing/cloud-manager/manage-environments.md#access-preview-service).
+如需預覽環境的詳細資訊，請參閱 [管理環境](/help/implementing/cloud-manager/manage-environments.md#access-preview-service).
 
 ## 發佈內容以預覽 {#publishing-content-to-preview}
 

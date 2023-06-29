@@ -2,10 +2,10 @@
 title: 移轉至AEM Commerce Integration Framework (CIF)附加元件
 description: 如何從舊版本移轉至AEM Commerce Integration Framework (CIF)附加元件
 exl-id: 0db03a05-f527-4853-b52f-f113bce929cf
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '491'
-ht-degree: 28%
+source-wordcount: '490'
+ht-degree: 23%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 28%
 
 ## CIF附加元件
 
-CIF 附加元件是 Experience Manager as a Cloud Service 唯一支援用於 Adobe Commerce 和第三方商務解決方案的商務整合解決方案。Experience Manager as a Cloud Service 上會自動部署 CIF 附加元件，客戶不需手動部署。請參閱 [AEM Commerce as a Cloud Service 快速入門](getting-started.md)。
+針對Experience Manageras a Cloud Service，CIF附加元件是Adobe Commerce和協力廠商商務解決方案唯一支援的商務整合解決方案。 Experience Manager as a Cloud Service 上會自動部署 CIF 附加元件，客戶不需手動部署。請參閱 [AEM Commerce as a Cloud Service 快速入門](getting-started.md)。
 
 若要支援部署CIFAdobe的專案，請提供 [AEM CIF Core Components](https://github.com/adobe/aem-core-cif-components).
 

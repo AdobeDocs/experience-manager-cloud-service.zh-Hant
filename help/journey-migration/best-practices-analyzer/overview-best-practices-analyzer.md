@@ -2,9 +2,9 @@
 title: Best Practices Analyzer概述
 description: Best Practices Analyzer概述
 exl-id: 46c567f8-91e2-4d85-98bd-61d183b887d5
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '351'
+source-wordcount: '350'
 ht-degree: 68%
 
 ---
@@ -37,4 +37,4 @@ Best Practices Analyzer報表包含下列類別：
 >[!NOTE]
 >最佳實務分析報告會提供原本必須手動收集和評估的資訊，以加速評估轉換為AEMas a Cloud Service所需的時間和成本。
 
-您也可以從AEM執行個體下載Best Practices Analyzer報表。 請參閱 [檢視Best Practices Analyzer報表](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md#viewing-report) 以取得更多詳細資料。
+您也可以從AEM執行個體下載Best Practices Analyzer報表。 另請參閱 [檢視Best Practices Analyzer報表](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md#viewing-report) 以取得更多詳細資料。

@@ -2,7 +2,7 @@
 title: 為行動裝置編寫頁面
 description: 為行動裝置製作時，您可以在數個模擬器之間切換，以檢視一般使用者看到的內容
 exl-id: fabd4468-3304-402f-9522-342da3bbae94
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '267'
 ht-degree: 0%
@@ -19,7 +19,7 @@ Adobe Experience Manager頁面是以回應式版面為基礎。 [回應式佈局
 
 >[!NOTE]
 >
->若要根據現有的標準網站建立行動網站，請建立標準網站的即時副本。 另請參閱 [建立即時副本。](/help/sites-cloud/administering/msm/creating-live-copies.md)
+>若要根據現有的標準網站建立行動網站，請建立標準網站的即時副本。 另請參閱 [建立即時副本](/help/sites-cloud/administering/msm/creating-live-copies.md).
 >
 >AEM開發人員可以建立新的裝置群組。 請參閱建立裝置群組篩選器。
 

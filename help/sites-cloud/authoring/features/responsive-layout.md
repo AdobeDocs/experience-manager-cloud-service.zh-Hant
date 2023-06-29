@@ -2,9 +2,9 @@
 title: 回應式版面
 description: AEM可讓您為頁面實現回應式佈局
 exl-id: 87202742-5bed-4e87-a427-456a1a0e72cc
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1745'
+source-wordcount: '1748'
 ht-degree: 7%
 
 ---
@@ -18,7 +18,7 @@ AEM可讓您透過使用 **配置容器** 元件。
 配置容器：
 
 * 提供水準對齊格點的功能，以及將元件並排放置到格點中並定義它們何時應摺疊/重排的功能。
-* 使用預先定義的中斷點（例如，手機、平板電腦等） 可讓您定義相關裝置/方向的必要內容行為。
+* 使用預先定義的中斷點（例如，手機、平板電腦等），讓您為相關裝置/方向定義內容的必要行為。
    * 例如，您可以自訂元件大小，或是否在特定裝置上可看見元件。
 * 可巢狀化以允許欄控制項。
 
@@ -68,7 +68,7 @@ AEM可讓您根據裝置的寬度來定義版面：
    * 中斷點的範圍會向左延伸，直到下一個中斷點為止。
    * 您無法明確地選取中斷點，選取裝置和方向會自動選取適當的中斷點。
 
-裝置 **案頭**&#x200B;沒有特定寬度的中斷點會與預設中斷點相關（亦即高於上次設定中斷點的所有內容）。
+裝置 **案頭**（沒有特定寬度）會與預設中斷點（亦即高於上次設定中斷點的所有內容）相關。
 
 >[!NOTE]
 >
@@ -181,7 +181,7 @@ A **配置容器** 是段落系統，具備以下功能：
 * 使用工具列 [中的模式選單](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) ，然後選擇「 **版面模式」**
    * 選取「 **版面** 」模式，就像切換至「編輯 **」模式或「** 定位 **** 」模式。
    * **配置模式** (Layout **mode)會維持持續性，而且您必須先透過模式選取器** 選取其他模式，才能離開「配置」模式。
-* 時間 [編輯個別元件。](/help/sites-cloud/authoring/fundamentals/editing-content.md#edit-component-layout)
+* 時間 [編輯個別元件](/help/sites-cloud/authoring/fundamentals/editing-content.md#edit-component-layout).
    * 藉由使用 **版面** 元件快速動作選單中的選項，您可以切換至 **版面** 模式。
    * **版面** 編輯元件時模式會持續存在並恢復為 **編輯** 模式，此時焦點會變更為另一個元件。
 

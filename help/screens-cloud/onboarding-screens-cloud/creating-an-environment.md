@@ -2,9 +2,9 @@
 title: 建立環境
 description: 本頁面說明如何在Cloud Manager for Screensas a Cloud Service中建立環境。
 exl-id: 744a473c-edad-4bf2-ae87-0175f6451e32
-source-git-commit: 4b76fbbb1b58324065b39d6928027759b0897246
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '206'
+source-wordcount: '205'
 ht-degree: 8%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 8%
 本節說明如何在Cloud Manager中為您的方案建立環境。
 
 >[!NOTE]
->請參閱 [在Cloud Manager中管理環境](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=zh-Hant) 以瞭解使用者如何建立環境。
+>另請參閱 [在Cloud Manager中管理環境](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=zh-Hant) 以瞭解使用者如何建立環境。
 
 ## 目標 {#objective}
 

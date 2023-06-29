@@ -4,9 +4,9 @@ seo-title: Learn to add support for new locales to your adaptive forms
 description: AEM Forms可讓您新增語言環境，以將最適化表單當地語系化。 英文(en)、西班牙文(es)、法文(fr)、義大利文(it)、德文(de)、日文(ja)、葡萄牙文 — 巴西文(pt-BR)、中文(zh-CN)、中文 — 台灣(zh-TW)和韓文(ko-KR)語言環境。
 seo-description: AEM Forms allows you to add new locales for localizing adaptive forms. We support 10 locales out of the box curently, as  "en","fr","de","ja","pt-br","zh-cn","zh-tw","ko-kr","it","es".
 exl-id: 4c7d6caa-1adb-4663-933f-b09129b9baef
-source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1188'
+source-wordcount: '1190'
 ht-degree: 0%
 
 ---
@@ -68,7 +68,7 @@ AEM FormsForms目前支援英文(en)、西班牙文(es)、法文(fr)、義大利
 
 * **I18N.js** 定義 `xfalib.locale.Strings` 的 `<locale>` 如中的定義 `/etc/clientlibs/fd/xfaforms/I18N/ja/I18N`.
 * **js.txt** 包含下列專案：
-   */libs/fd/xfaforms/clientlibs/I18N/Namespace.js I18N.js /etc/clientlibs/fd/xfaforms/I18N/LogMessages.js*
+  */libs/fd/xfaforms/clientlibs/I18N/Namespace.js I18N.js /etc/clientlibs/fd/xfaforms/I18N/LogMessages.js*
 
 ##### 3.2.為地區設定locale-name資料夾新增最適化表單使用者端資料庫
 
@@ -129,9 +129,8 @@ AEM FormsForms目前支援英文(en)、西班牙文(es)、法文(fr)、義大利
 * 正在以列出的順序擷取下列引數：
 
    * 請求引數 `afAcceptLang`
-若要覆寫使用者的瀏覽器地區設定，您可以傳遞 
-`afAcceptLang` 要求引數以強制地區設定。 例如，下列URL會強制以加拿大 — 法語地區設定來轉譯表單：
-      `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ca-fr`
+若要覆寫使用者的瀏覽器地區設定，您可以傳遞 `afAcceptLang` 要求引數以強制地區設定。 例如，下列URL會強制以加拿大 — 法語地區設定來轉譯表單：
+     `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ca-fr`
 
    * 為使用者設定的瀏覽器地區設定，這在使用請求的指定 `Accept-Language` 標頭。
 

@@ -2,9 +2,9 @@
 title: 設定和設定瀏覽器
 description: 瞭解AEM設定，以及這些設定如何管理AEM中的工作區設定。
 exl-id: 0ade04df-03a9-4976-a4b7-c01b4748474d
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1492'
+source-wordcount: '1485'
 ht-degree: 4%
 
 ---
@@ -29,7 +29,7 @@ AEM設定可管理AEM中的設定，並作為工作區。
 
 ## 管理員設定 {#configurations-administrator}
 
-AEM管理員和作者可以將設定視為工作區。 藉由實作這些功能的存取許可權，這些工作區可用來將設定群組及其關聯內容收集在一起，以供組織使用。
+AEM管理員和作者可以將設定視為工作區。 藉由實作這些功能的存取許可權，這些工作區可用於將設定群組及其關聯內容收集在一起，以供組織使用。
 
 可為AEM中的許多不同功能建立設定。
 
@@ -155,7 +155,7 @@ String bgkcolor = imageServerSettings.get("bgkcolor", "FFFFFF");
 
 在此範例中，我們假設這裡有WKND特定的DAM資料夾以及對應的設定。 從該資料夾開始 `/content/dam/wknd`，我們會看到有一個名為的字串屬性 `cq:conf` 會參照應該套用至子樹狀結構的設定。 屬性通常設定在 `jcr:content` 資產資料夾或頁面的URL。 這些 `conf` 連結是明確的，因此只要檢視CRXDE中的內容，就能輕鬆追蹤連結。
 
-跳入 `/conf`，我們會依循參考資料檢視 `/conf/wknd` 節點。 此為設定。 請注意，其查詢對應用程式程式碼是完全透明的。 範常式式碼從未有專屬參照，而是隱藏在 `Conf` 物件。 要套用哪個設定，需透過JCR內容完全控制。
+跳入 `/conf`，我們會依循參考資料檢視 `/conf/wknd` 節點。 此為設定。 其查詢對應用程式程式碼是完全透明的。 範常式式碼從未有專屬參照，而是隱藏在 `Conf` 物件。 要套用哪個設定，需透過JCR內容完全控制。
 
 我們看到設定包含固定名稱 `settings` 包含實際專案的節點，包括 `dam/imageserver` 在我們的案例中需要。 此類專案可視為「設定檔案」，通常以 `cq:Page` 包含 `jcr:content` 儲存實際內容。
 

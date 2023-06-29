@@ -2,9 +2,9 @@
 title: 編輯頁面內容
 description: 建立頁面後，您可以編輯內容以進行您所需的更新
 exl-id: 8af0f621-14e8-4605-a51a-a3be21f19092
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '3002'
+source-wordcount: '2990'
 ht-degree: 6%
 
 ---
@@ -60,7 +60,7 @@ ht-degree: 6%
 
 * **ContextHub**
 
-  開啟 [ContextHub](/help/sites-cloud/authoring/personalization/contexthub.md). 僅適用於預覽模式。
+  開啟 [ContextHub](/help/sites-cloud/authoring/personalization/contexthub.md). 僅適用於「預覽」模式。
 
   ![Context Hub按鈕](/help/sites-cloud/authoring/assets/context-hub.png)
 
@@ -291,7 +291,7 @@ ht-degree: 6%
 
 * 影像元件 — 全熒幕
 
-  [進入影像元件的全螢幕模式](#edit-content-full-screen-mode) ，可讓您有更多空間編輯影像，並顯示額外的編輯選項，例如「啟動地圖」和「重設縮放」 ********。此外，全螢幕還允許選取裁切預設集。
+  [進入全熒幕模式](#edit-content-full-screen-mode) 影像元件的，可讓您有更多空間編輯影像並顯示額外的編輯選項，例如 **啟動地圖** 和 **重設縮放**. 此外，全螢幕還允許選取裁切預設集。
 
   ![影像元件的全熒幕模式](/help/sites-cloud/authoring/assets/editing-image-component-full-screen.png)
 
@@ -358,7 +358,7 @@ ht-degree: 6%
 
 >[!TIP]
 >
->Layout動作僅限於選取的元件。 例如，如果您正在編輯一個元件的版面，然後按一下另一個元件，則會為新選取的元件顯示標準編輯工具列（而非版面工具列），而調整大小操作框以及模擬器工具列則會消失。
+>Layout動作僅限於選取的元件。 例如，如果您正在編輯一個元件的版面，然後按一下另一個元件，則會為新選取的元件顯示標準編輯工具列（而非版面工具列），而調整大小操作框和模擬器工具列會消失。
 >
 >如果您需要編輯頁面的整體版面，並影響多個元件，請切換至 [版面模式](/help/sites-cloud/authoring/features/responsive-layout.md).
 
@@ -469,7 +469,7 @@ AEM可讓您鎖定頁面，讓其他人無法編輯內容。 當您對某個特�
 >
 >無法透過模擬鎖定頁面的使用者來解除鎖定頁面。
 >
->如果鎖定頁面的使用者無法解鎖頁面，請聯絡客戶支援評估移除鎖定的選項。
+>如果鎖定頁面的使用者無法解鎖頁面，請聯絡客戶支援以評估移除鎖定的選項。
 
 ## 解鎖頁面 {#unlocking-a-page}
 
@@ -485,7 +485,7 @@ AEM可讓您鎖定頁面，讓其他人無法編輯內容。 當您對某個特�
 >
 >無法透過模擬鎖定頁面的使用者來解除鎖定頁面。
 >
->如果鎖定頁面的使用者無法解鎖頁面，請聯絡客戶支援評估移除鎖定的選項。
+>如果鎖定頁面的使用者無法解鎖頁面，請聯絡客戶支援以評估移除鎖定的選項。
 
 <!--
 >[!CAUTION]
@@ -516,7 +516,7 @@ AEM可讓您鎖定頁面，讓其他人無法編輯內容。 當您對某個特�
 
 ## 還原和重做頁面編輯 — 理論 {#undoing-and-redoing-page-edits-the-theory}
 
-AEM會儲存您執行動作的歷史記錄，以及執行動作的順序，如此您就可以依照執行動作的順序復原多個動作，並視需要重做這些動作，以重新套用一或多個動作。
+AEM會儲存您執行動作的歷史記錄，以及執行動作的順序，如此一來，您就可以依照執行動作的順序復原多個動作，並視需要重做這些動作，以重新套用一或多個動作。
 
 如果選取了內容頁面上的元素（例如文字元件），則復原和重做命令會套用至選取的專案。
 

@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: ed50fa70-a8dd-4cc6-82a9-d59de0fa417d
 docset: aem65
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2308'
+source-wordcount: '2310'
 ht-degree: 3%
 
 ---
@@ -202,7 +202,7 @@ HTML元素 **標籤** 用於欄位，包括類別 **left** 或 **top** 標籤位
   </tr>
   <tr>
    <td><p><code>widgets-bg-color</code></p> </td>
-   <td>Widget的背景顏色（核取方塊和選項按鈕無法運作）</td>
+   <td>Widget的背景顏色（不適用於核取方塊和選項按鈕）</td>
   </tr>
   <tr>
    <td><p><code>widgets-border-color</code></p> </td>
@@ -941,7 +941,7 @@ guideNavIcon類別會提供定位點導覽器（左側和頂部）和精靈導�
  </tbody>
 </table>
 
-面板節點分為導覽器和內容。 那裡 `` `` 內容沒有獨立的樣式元件。 所描述的變數會套用至導覽器及內容。
+面板節點分為導覽器和內容。 那裡 `` `` 內容沒有獨立的樣式元件。 說明的變數會套用至瀏覽器和內容。
 
 最上方的面板(RootPanel)沒有此類別。
 

@@ -2,10 +2,10 @@
 title: AEM Headless as a Cloud Service 快速入門
 description: 在 AEM Headless 開發人員歷程的這一部分，了解 AEM Headless 先決條件。
 exl-id: 9661e17b-fa9f-4689-900c-412b068e942c
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '3087'
-ht-degree: 95%
+source-wordcount: '3084'
+ht-degree: 94%
 
 ---
 
@@ -85,7 +85,7 @@ AEM 的無周邊功能以幾個關鍵功能為基礎。這些將在歷程的後�
 * GraphQL API 允許您建立存取和傳遞內容片段的要求。
 * 資產 REST API 允許您建立和修改內容片段 (和其他資產)。
 
-您將在 AEM 無周邊歷程的後續部分，了解這些 API 以及如何使用它們。或者參閱下面的[其他資源](#additional-resources)章節，以取得其他文件。
+您將在 AEM 無周邊歷程的後續部分，了解這些 API 以及如何使用它們。或參閱 [其他資源](#additional-resources) 區段以取得其他檔案。
 
 ## Headless 整合層級 {#integration-levels}
 
@@ -190,7 +190,7 @@ AEM 支援 CMS 的全無周邊模型和傳統的全堆疊或有周邊模型。�
 資料夾階層可以解決與內容管理有關的兩個主要問題：
 
 * [翻譯](#translation) - AEM 透過在地區設定資料夾中維護內容副本，來管理內容翻譯。
-* 組織 - 資料夾用於定義支援翻譯需求以及邏輯管理內容片段所需的內容階層。
+* 組織 — 資料夾用於定義支援翻譯需求及邏輯管理內容片段所需的內容階層。
 
 AEM 允許靈活的內容結構，階層可以任意擴大。但是，重要的是要認識到，資料夾結構的任何變更都可能對 [依賴於內容路徑的現有查詢造成未預期的後果。](#developer)因此，事先明確設定的定義完善的階層可能對您的內容作者有所幫助。
 

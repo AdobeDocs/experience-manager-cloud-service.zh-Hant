@@ -2,7 +2,7 @@
 title: 內容片段 — 設定瀏覽器（資產 — 內容片段）
 description: 瞭解如何在設定瀏覽器中啟用內容片段功能。
 exl-id: 9fc911de-1d33-4811-8f58-ea21ce94bedb
-source-git-commit: 1fc57dacbf811070664d5f5aaa591dd705516fa8
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '358'
 ht-degree: 10%
@@ -60,7 +60,7 @@ ht-degree: 10%
 
    1. 指定 **標題**.
    1. 此 **名稱** 會成為存放庫中的節點名稱。
-      * 系統會根據標題自動產生，並根據 [AEM命名慣例。](/help/implementing/developing/introduction/naming-conventions.md)
+      * 系統會根據標題自動產生，並根據 [AEM命名慣例](/help/implementing/developing/introduction/naming-conventions.md).
       * 您可以視需要加以調整。
    1. 若要啟用其使用，請選取
       * **內容片段模型**

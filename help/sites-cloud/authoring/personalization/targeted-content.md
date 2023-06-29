@@ -2,9 +2,9 @@
 title: 使用定位模式編寫目標內容
 description: 目標定位模式和Target元件提供建立體驗內容的工具
 exl-id: 8d80d867-2d0f-4ddb-8a06-f9441e6d85ce
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '5412'
+source-wordcount: '5410'
 ht-degree: 6%
 
 ---
@@ -549,7 +549,7 @@ ht-degree: 6%
 1. 如果您想要進一步控制成功量度的計數方式，請按一下或點選 **進階設定** 以存取這些。
 1. 按一下「**儲存**」。
 
-設定後，您可以 [檢視活動績效](/help/sites-cloud/authoring/personalization/activities.md#viewing-performance-and-converting-winning-experiences-a-b-test) 使用Adobe Target （體驗或A/B測試鎖定目標）的客戶。 此外，透過A/B測試鎖定目標，您可以 [轉換獲勝者。](/help/sites-cloud/authoring/personalization/activities.md#viewing-performance-and-converting-winning-experiences-a-b-test)
+設定後，您可以 [檢視活動績效](/help/sites-cloud/authoring/personalization/activities.md#viewing-performance-and-converting-winning-experiences-a-b-test) 使用Adobe Target （體驗或A/B測試鎖定目標）的客戶。 此外，透過A/B測試鎖定目標，您可以 [轉換獲勝者](/help/sites-cloud/authoring/personalization/activities.md#viewing-performance-and-converting-winning-experiences-a-b-test).
 
 ## 模擬體驗 {#simulating-an-experience}
 
@@ -634,4 +634,4 @@ ht-degree: 6%
 >
 >選取 **ContextHub** 作為引擎。 如需詳細資訊，請參閱設定ContextHub 。
 <!--You select **Adobe Campaign** as the engine if you are integrating AEM with Adobe Campaign. See [Integrating AEM with Adobe Campaign](/help/sites-administering/campaign.md) for more information.-->
-<!--Select **ContextHub** as the engine if you are using ContextHub for targeting. See [Configuring ContextHub.](/help/sites-administering/contexthub-config.md)-->
+<!--Select **ContextHub** as the engine if you are using ContextHub for targeting. See [Configuring ContextHub](/help/sites-administering/contexthub-config.md).-->

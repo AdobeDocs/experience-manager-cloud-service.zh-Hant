@@ -2,10 +2,10 @@
 title: 使用 Universal Editor 編寫內容
 description: 了解內容作者使用 Universal Editor 建立內容有多簡單和直觀。
 exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1147'
-ht-degree: 84%
+source-wordcount: '1142'
+ht-degree: 80%
 
 ---
 
@@ -33,7 +33,7 @@ ht-degree: 84%
 
 >[!TIP]
 >
->請參閱文件 [AEM 中 Universal Editor 快速入門](getting-started.md)，了解設定 AEM 應用程式以使用 Universal Editor 的範例。
+>另請參閱 [AEM中的通用編輯器快速入門](getting-started.md) 有關如何設定AEM應用程式以使用通用編輯器的範例。
 
 ## 登入 {#sign-in}
 
@@ -84,7 +84,7 @@ Experience Cloud 標頭會始終顯示在畫面頂端。這是一個錨點，說
 
 #### 通知 {#notifications}
 
-此圖示會加上目前指派的未完成專案之數目 [通知。](/help/implementing/cloud-manager/notifications.md)
+此圖示會加上目前指派的未完成專案之數目 [通知](/help/implementing/cloud-manager/notifications.md).
 
 ![通知](assets/notifications.png)
 
@@ -96,7 +96,7 @@ Experience Cloud 標頭會始終顯示在畫面頂端。這是一個錨點，說
 
 ### Universal Editor 標頭 {#universal-editor-header}
 
-Universal Editor 標頭始終顯示在畫面頂端，就在 [Experience Cloud 標頭下方。](#experience-cloud-header)它可讓您快速存取，以導覽到另一個頁面進行編輯和發佈目前的頁面。
+Universal Editor 標頭始終顯示在畫面頂端，就在 [Experience Cloud 標頭下方。](#experience-cloud-header) 它可讓您快速導覽至其他頁面進行編輯，並發佈目前頁面。
 
 ![Universal Editor 標頭](assets/universal-editor-header.png)
 

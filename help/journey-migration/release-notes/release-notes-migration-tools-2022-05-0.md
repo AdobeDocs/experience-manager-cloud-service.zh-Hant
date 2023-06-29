@@ -3,9 +3,9 @@ title: AEMas a Cloud Service2022.5.0版中移轉工具的發行說明
 description: AEMas a Cloud Service2022.5.0版中移轉工具的發行說明
 feature: Release Information
 exl-id: 1aa49e85-1914-44d9-bcf7-0a1b03926df0
-source-git-commit: 01c4a21b980918ba99ac174419d80b577bc96dda
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '399'
+source-wordcount: '398'
 ht-degree: 5%
 
 ---
@@ -53,4 +53,4 @@ Cloud Acceleration Manager的發行日期為2022年6月2日。
 
 ### 新增功能 {#what-is-new-cam}
 
-* Cloud Acceleration Manager現在可讓使用者開始和管理內容轉移，以將內容從客戶的AEM例項（內部部署或Adobe Managed Services）移至AEMas a Cloud Service，作為移轉專案的一部分。 請參閱 [使用內容轉移卡](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-implementation-phase.html#content-transfer) 以取得更多詳細資料。
+* Cloud Acceleration Manager現在可讓使用者開始和管理內容轉移，以將內容從客戶的AEM例項（內部部署或Adobe Managed Services）移至AEMas a Cloud Service，作為移轉專案的一部分。 另請參閱 [使用內容轉移卡](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-implementation-phase.html#content-transfer) 以取得更多詳細資料。

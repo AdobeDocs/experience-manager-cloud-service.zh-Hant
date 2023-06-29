@@ -2,10 +2,10 @@
 title: Adobe Experience Manager (AEM) as a Cloud Service 重大變更
 description: Adobe Experience Manager (AEM) as a Cloud Service 重大變更
 exl-id: fe11d779-66cd-45aa-aa6b-c819b88d2405
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '845'
-ht-degree: 96%
+source-wordcount: '846'
+ht-degree: 95%
 
 ---
 
@@ -21,7 +21,7 @@ AEM Cloud Service 提供許多管理 AEM 專案的新功能，並帶來許多可
 
 
 >[!NOTE]
->本文件著重說明 AEM 整體的重大變更。如需詳細資訊和解決方案的特定變更，請參閱：
+>本文件著重說明 AEM 整體的重大變更。如需詳細資訊和解決方案特定變更，請參閱：
 >
 >* [Adobe Experience Manager as a Cloud Service 簡介](/help/overview/introduction.md)
 >* Adobe Experience Manager as a Cloud Service 與舊版的[新增功能與不同之處](/help/overview/what-is-new-and-different.md)

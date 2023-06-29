@@ -4,7 +4,7 @@ description: 瞭解如何使用AEM網站主題來自訂網站的樣式和設計�
 feature: Administering
 role: Admin
 exl-id: 53d4afb3-d091-47a1-ba12-5bcec99f46b9
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '353'
 ht-degree: 1%
@@ -23,7 +23,7 @@ AEM站台主題是包含CSS、JavaScript和靜態資源的套件，這些資源�
 
 >[!NOTE]
 >
->不應混淆AEM網站主題 [AEM網站範本。](site-templates.md) AEM網站主題僅包含AEM網站的樣式資訊。 AEM網站範本定義網站結構和初始內容，並包含要允許的AEM網站主題 [快速建立網站。](create-site.md)
+>不應混淆AEM網站主題 [AEM網站範本](site-templates.md). AEM網站主題僅包含AEM網站的樣式資訊。 AEM網站範本定義網站結構和初始內容，並包含要允許的AEM網站主題 [快速網站建立](create-site.md).
 
 ## 使用網站主題 {#using-themes}
 
@@ -34,7 +34,7 @@ AEM站台主題是包含CSS、JavaScript和靜態資源的套件，這些資源�
 
 >[!TIP]
 >
->從範本建立網站並自訂其主題的程式的端對端說明可在以下網址找到： [快速網站建立歷程。](/help/journey-sites/quick-site/overview.md)
+>從範本建立網站並自訂其主題的程式的端對端說明可在以下網址找到： [快速網站建立歷程](/help/journey-sites/quick-site/overview.md).
 
 ## 網站主題結構 {#structure}
 
@@ -53,4 +53,4 @@ Adobe提供最佳做法參考主題，您可以依據此主題建立自己的主
 
 Adobe提供AEM網站主題產生器，作為建立新網站主題的一組指令碼。
 
-[GitHub上提供AEM網站主題產生器與使用檔案。](https://github.com/adobe/aem-site-theme-builder) 自訂主題需要前端開發經驗。
+[GitHub上提供AEM網站主題產生器與使用檔案](https://github.com/adobe/aem-site-theme-builder). 自訂主題需要前端開發經驗。

@@ -2,10 +2,10 @@
 title: Cloud Manager 常見問題集
 description: 在AEMas a Cloud Service中尋找Cloud Manager常見問題的解答。
 exl-id: eed148a3-4a40-4dce-bc72-c7210e8fd550
-source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '987'
-ht-degree: 64%
+ht-degree: 62%
 
 ---
 
@@ -58,11 +58,11 @@ ht-degree: 64%
 
 您還可以將版本設定為 `-SNAPSHOT`，以用於測試和生產組建或部署。Cloud Manager 會自動設定適當的版本編號並在 Git 中為您建立標記。如有需要，可稍後參考此標籤。
 
-有關版本處理的進一步詳細資訊[在此處記錄。](/help/implementing/cloud-manager/managing-code/project-version-handling.md)
+有關版本處理的進一步詳情如下 [在此處記錄](/help/implementing/cloud-manager/managing-code/project-version-handling.md).
 
 ## 套件和套裝的版本設定如何用於測試和生產部署？ {#snapshot-version}
 
-在測試和生產部署中，會產生自動化版本，[如此處的紀錄。](/help/implementing/cloud-manager/managing-code/project-version-handling.md)
+在測試和生產部署中，會自動產生版本為 [在此處記錄](/help/implementing/cloud-manager/managing-code/project-version-handling.md).
 
 對於測試和生產部署中的自訂版本設定，請設定適當的三部分 Maven 版本，例如 `1.0.0`。 每次部署到生產時，都需增加版本。
 

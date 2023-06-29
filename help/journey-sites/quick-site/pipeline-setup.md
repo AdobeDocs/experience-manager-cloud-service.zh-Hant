@@ -2,9 +2,9 @@
 title: 設定您的管道
 description: 建立前端管道來管理網站主題的自訂。
 exl-id: 0d77d1a6-98f3-4961-9283-f52c1b5b2a7b
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '975'
+source-wordcount: '967'
 ht-degree: 7%
 
 ---
@@ -39,7 +39,7 @@ ht-degree: 7%
 * 您需要擁有Cloud Manager的存取權。
 * 您必須是 **部署管理員** Cloud Manager中的角色。
 * 必須在Cloud Manager中設定AEM環境的Git存放庫。
-   * 任何使用中專案通常都會發生這種情況。 但如果不是這種情況，請參閱下提供的Cloud Manager存放庫檔案 [其他資源](#additional-resources) 區段。
+   * 任何使用中專案通常都會發生這種情況。 但如果不是這種情況，請參閱「 」下可用的Cloud Manager存放庫檔案 [其他資源](#additional-resources) 區段。
 
 ## 什麼是前端管道 {#front-end-pipeline}
 
@@ -102,7 +102,7 @@ ht-degree: 7%
 
 >[!TIP]
 >
->如果您已熟悉AEMaaCS中的管道並希望詳細瞭解不同型別管道之間的差異，包括有關前端管道的更多詳細資訊，請參閱設定CI/CD管道 — Cloud Services中連結的 [其他資源](#additional-resources) 區段底下。
+>如果您已熟悉AEMaaCS中的管道並希望深入瞭解不同型別管道之間的差異，包括有關前端管道的更多詳細資訊，請參閱設定CI/CD管道 — 中連結的Cloud Services [其他資源](#additional-resources) 區段底下。
 
 ## 下一步 {#what-is-next}
 

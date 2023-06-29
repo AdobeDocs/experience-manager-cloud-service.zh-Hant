@@ -2,10 +2,10 @@
 title: 存取 KPI
 description: 存取 KPI
 exl-id: 8556e0e3-a557-4fd6-9b82-09cb1decff0a
-source-git-commit: 8bd001f6f70ce1aa9a63623b3ad68793fa355c9a
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '539'
-ht-degree: 100%
+source-wordcount: '536'
+ht-degree: 67%
 
 ---
 
@@ -34,21 +34,21 @@ ht-degree: 100%
 1. KPI 特別與解決方案 (Experience Manager) 相關。
 1. KPI 與高階主管團隊認為至關重要的目標密切相關。
 1. 該目標直接支援由至少一位 C 級高階主管倡導的業務目標。
-1. 您擁有相關基準資料，用於將目前情況與 Experience Manager 啟動後所產生的結果進行比較。
+1. 您有基線資料，可以將目前的情況與您啟動Experience Manager後看到的結果進行比較。
 1. KPI 將追蹤可以定期測量的結果。
 
-確認您擁有正確的 KPI 後，您需要弄清楚如何以及何時向利益相關者報告每個 KPI。
+在您確認擁有正確的KPI後，必須弄清楚如何及何時向相關利害關係人報告每個KPI。
 
 在定義報告流程時，請考慮以下問題：
 
-1. 此 KPI 報告的對象是誰？對於每個 KPI，請確保您已經確定了一位會要求您和團隊其他成員對該指標負責的高階主管，以及更多應該定期收到報告的人員名單。
+1. 此 KPI 報告的對象是誰？對於每個KPI，請確定您已確定高階主管支援人（能讓您和團隊其他成員負責該量度的人），以及應接收定期報告的更廣泛人員清單。
 1. 多久要報告一次此 KPI？
 1. 如何追蹤此 KPI？誰會提取資料？該人員或團隊將使用哪些資料來源？您現在可以做些什麼來簡化此流程？
 1. 報告將採用什麼格式？
 1. 要如何傳遞報告？
 
-啟動 Experience Manager 後，一組強大的 KPI 將讓您迅速了解自己的方向是否正確。如果您沒有達到其中一項 KPI，則需要調整您團隊使用 Experience Manager 的方式。如果您很快超過其中一項 KPI，那是值得慶祝的事情，但隨後您將需要重新校準您的目標以嘗試獲得更好的結果。
+Experience Manager啟動後，一組強大的KPI可讓您快速判斷自己是否走上正軌。 如果您未達到其中一個KPI，則必須調整團隊使用Experience Manager的方式。 如果您快速超過其中一個KPI目標，這值得慶祝，不過之後您必須重新校準目標以嘗試獲得更好的結果。
 
 >[!TIP]
 >
-> 如果您需要有關 KPI 的更多協助，請聯絡 [Adobe 諮詢服務](https://www.adobe.com/tw/experience-cloud/consulting-services.html)或您的實作合作夥伴。
+> 如需有關KPI的其他協助，請聯絡 [Adobe諮詢服務](https://www.adobe.com/tw/experience-cloud/consulting-services.html) 或您的實作合作夥伴。

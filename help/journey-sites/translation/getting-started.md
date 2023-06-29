@@ -5,10 +5,10 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: 9bfc3995-ac8e-488e-b68f-9e1b5b4a3176
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1406'
-ht-degree: 40%
+source-wordcount: '1400'
+ht-degree: 38%
 
 ---
 
@@ -47,7 +47,7 @@ ht-degree: 40%
 
 >[!TIP]
 >
->如果您不熟悉使用 AEM 等大型 CMS，請考慮查閱[基本處理](/help/sites-cloud/authoring/getting-started/basic-handling.md)文件再繼續進行。「基本處理」文件不是歷程的一部分，因此請在完成後返回此頁面。
+>如果您不熟悉使用 AEM 等大型 CMS，請考慮查閱[基本處理](/help/sites-cloud/authoring/getting-started/basic-handling.md)文件再繼續進行。基本處理檔案不是歷程的一部分。 因此，完成後請返回此頁面。
 
 ### 工具 {#tools}
 
@@ -75,7 +75,7 @@ ht-degree: 40%
 
    ![內容階層](assets/sites-console-hierarchy.png)
 
-1. 點選或按一下欄中某個專案的核取方塊，即會選取該專案並在右側的欄中顯示所選專案的詳細資訊，以及在上方工具列中針對所選專案顯示許多可用的動作。
+1. 點選或按一下欄中某個專案的核取方塊，即會選取該專案，並在右側的欄中顯示所選專案的詳細資訊，並在上方工具列中顯示所選專案可用的許多動作。
 
    ![內容選擇](assets/sites-console-selection.png)
 

@@ -3,9 +3,9 @@ title: 查詢和編製索引最佳實務
 description: 瞭解如何根據Adobe的最佳實務准則最佳化您的索引和查詢。
 topic-tags: best-practices
 exl-id: 37eae99d-542d-4580-b93f-f454008880b1
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1558'
+source-wordcount: '1556'
 ht-degree: 0%
 
 ---
@@ -111,7 +111,7 @@ AEMas a Cloud Service提供查詢效能工具，其設計可支援實作有效�
 
 為了支援建立有效的JCR查詢和索引定義， [JCR查詢速查表](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/practices/best-practices-for-queries-and-indexing.html#jcrquerycheatsheet) 可供下載，並可在開發期間作為參考使用。
 
-它包含QueryBuilder、XPath和SQL-2的範例查詢，涵蓋了在查詢效能方面表現不同的多個情境。 此外，也提供如何建立或自訂Oak索引的建議。 本速查表內容適用於AEMas a Cloud Service及AEM 6.5。
+它包含QueryBuilder、XPath和SQL-2的範例查詢，涵蓋了在查詢效能方面表現不同的多個情境。 此外，也提供如何建立或自訂Oak索引的建議。 本速查表內容適用於AEM as a Cloud Service和AEM 6.5。
 
 ## 具有大型結果集的查詢 {#queries-with-large-result-sets}
 

@@ -2,9 +2,9 @@
 title: 使用Up Screens內容提供者
 description: 本頁面說明如何使用Screens內容提供者來建立內容。
 exl-id: ed7de2c0-13cf-4ce0-8794-aef918cf8e71
-source-git-commit: a9aa82c8258e6a5f43680069c65518093c0baf8d
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '354'
+source-wordcount: '353'
 ht-degree: 16%
 
 ---

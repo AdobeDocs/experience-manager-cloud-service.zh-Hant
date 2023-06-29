@@ -2,9 +2,9 @@
 title: Eclipse 適用的 AEM 開發人員工具
 description: Eclipse 適用的 AEM 開發人員工具
 exl-id: 7f9c0f99-e230-440a-8bc9-a0ab7465e3bf
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1184'
+source-wordcount: '1183'
 ht-degree: 3%
 
 ---
@@ -116,7 +116,7 @@ _Eclipse的Experience Manager開發工具_ 提供AEM Perspective ，讓您能夠
 
    >[!NOTE]
    >
-   >在新安裝中（更具體地說，當從未下載maven相依性時），您可能會收到建立有錯誤的專案。 在此情況下，請遵循中所述的程式 [解析無效的專案定義](#resolving-invalid-project-definition).
+   >在新安裝中（更具體地說，當從未下載maven相依性時），您可能會收到建立有錯誤的專案。 在這種情況下，請遵循中所述的程式 [解析無效的專案定義](#resolving-invalid-project-definition).
 
 ## 如何匯入現有專案 {#how-to-import-existing-projects}
 

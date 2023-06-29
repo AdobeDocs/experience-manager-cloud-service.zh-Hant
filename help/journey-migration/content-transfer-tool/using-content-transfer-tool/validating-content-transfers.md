@@ -2,9 +2,9 @@
 title: 驗證內容轉移
 description: 使用內容轉移工具來驗證內容轉移
 exl-id: a12059c3-c15a-4b6d-b2f4-df128ed0eea5
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1062'
+source-wordcount: '1055'
 ht-degree: 2%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 2%
 >
 >此功能將在內容轉移工具(CTT) 1.8.x版發行後提供。 AEM Cloud Service目標環境必須至少執行6158版或更高版本。 還需要設定來源環境才能執行 [預先複製](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#setting-up-pre-copy-step). 驗證功能會尋找來源上的azcopy.config檔案。 如果找不到此檔案，則不會執行驗證。 若要進一步瞭解如何設定azcopy.config檔案，請參閱 [此頁面](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#configure-azcopy-config-file).
 
-驗證內容轉移是一項選擇性功能。 啟用此功能會增加執行擷取和擷取所需的時間。 若要使用此功能，請在來源AEM環境的「系統主控台」中啟用它，請執行以下步驟：
+驗證內容轉移是一項選擇性功能。 啟用此功能會增加執行擷取和內嵌所需的時間。 若要使用此功能，請在來源AEM環境的「系統主控台」中啟用它，請執行以下步驟：
 
 1. 導覽至來源執行個體上的Adobe Experience Manager Web Console，方法是前往 **工具 — 作業 — Web主控台** 或直接前往URL，網址為 *https://serveraddress:serverport/system/console/configMgr*
 1. 搜尋 **內容轉移工具提取服務設定**
@@ -38,7 +38,7 @@ ht-degree: 2%
 
 若 **在擷取期間覆寫暫存容器** 會啟用，與擷取相關的所有節點都會記錄到擷取路徑摘要中。 使用此設定時，請務必啟用 **在內嵌之前擦除雲端例項上的現有內容** 在內嵌期間進行設定，否則在內嵌摘要中可能會遺漏節點。 這些是先前擷取中已經存在於目標上的節點。
 
-如需圖解說明，請參考以下範例：
+如需圖解說明，請參閱下列範例：
 
 ### 範例 1 {#example-1}
 
@@ -115,7 +115,7 @@ EXTRACTION: Number of nodes extracted: 4635
 INGESTION: Number of nodes ingested: 0
 ----------------------------------------------------------
 Validation failed. However, the following nodes may already be present in the target environment.
-Please refer to our Migration Validation FAQ (https://www.adobe.com/go/aem_cloud_ctt_validation_en) or open a ticket with Customer Care.
+See our Migration Validation FAQ (https://www.adobe.com/go/aem_cloud_ctt_validation_en) or open a ticket with Customer Care.
 There are 4635 entries present in the extraction digest that are missing from the ingestion digest.
 /content/dam/bruce
 /content/dam/bruce-assets
@@ -138,7 +138,7 @@ Migration validation took 0 minutes
 
 成功完成擷取和內嵌後，即可使用主體移轉的摘要和報表。 此資訊可用於驗證哪些使用者和群組已成功移轉，或許也可用於判斷部分使用者及群組未成功移轉的原因。
 
-若要檢視此資訊，請前往Cloud Acceleration Manager。 按一下您的專案卡，然後按一下「內容轉移」卡。 導覽至 **內嵌工作** 並找到您要驗證的內嵌。 按一下三個點(**...**)，然後按一下 **檢視主體摘要** （在下拉式清單中）。
+若要檢視此資訊，請前往Cloud Acceleration Manager。 按一下您的專案卡，然後按一下「內容轉移」卡。 導覽至 **內嵌工作** 並找到您要驗證的內嵌。 按一下三個點(**...**)，然後按一下 **檢視主體摘要** 下拉式清單中的。
 
 ![影像](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-principal-action.png)
 

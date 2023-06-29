@@ -3,10 +3,10 @@ title: 部署至 AEM as a Cloud Service
 description: 部署至 AEM as a Cloud Service
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
-source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '3462'
-ht-degree: 43%
+ht-degree: 44%
 
 ---
 
@@ -113,9 +113,9 @@ ht-degree: 43%
 透過在 `/apps`下的 install.author 或 install.publish 資料夾中嵌入套件，可以將可變內容安裝限制在作者或發佈。在 AEM 6.5 中進行了重組以反映這種分離，有關建議的專案重組的詳細資料位在 [AEM 6.5 文件。](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html)
 
 >[!NOTE]
->內容套件部署到所有環境類型 (開發、預備、生產)。不可能將部署限制在特定環境中。此限制的目的是在確保可以選擇對自動執行進行測試執行。環境特定的內容需要透過以下方式手動安裝： [封裝管理員。](/help/implementing/developing/tools/package-manager.md)
+>內容套件部署到所有環境類型 (開發、預備、生產)。不可能將部署限制在特定環境中。此限制的目的是在確保可以選擇對自動執行進行測試執行。環境特定的內容需要透過以下方式手動安裝： [封裝管理員](/help/implementing/developing/tools/package-manager.md).
 
-此外，在套用可變內容套件變更後，沒有機制可復原這些變更。 如果客戶偵測到問題，他們可以選擇在下一個程代碼版本中進行修復，或者採取最後手段，將整個系統還原到部署前的某個時間點。
+此外，在套用可變內容套件變更後，沒有任何機制可以回復這些變更。如果客戶偵測到問題，他們可以選擇在下一個程代碼版本中進行修復，或者採取最後手段，將整個系統還原到部署前的某個時間點。
 
 任何包含的協力廠商套件都必須驗證為AEMas a Cloud Service相容，否則包含協力廠商套件會導致部署失敗。
 

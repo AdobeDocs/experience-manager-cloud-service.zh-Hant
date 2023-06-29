@@ -2,9 +2,9 @@
 title: Adobe內容套件Maven外掛程式
 description: 使用Content Package Maven外掛程式來部署AEM應用程式
 exl-id: d631d6df-7507-4752-862b-9094af9759a0
-source-git-commit: a5eef46835e234bb47451693cf5fdcda66c5b26f
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1842'
+source-wordcount: '1838'
 ht-degree: 6%
 
 ---
@@ -35,7 +35,7 @@ AEMas a Cloud Service會遵循由最新AEM專案原型實作的套件管理和�
 
 >[!TIP]
 >
->如需詳細資訊，請參閱 [AEM專案結構](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) AEMas a Cloud Service檔案中的文章以及 [AEM專案原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) 說明檔案。 AEM 6.5完全支援這兩項功能。
+>如需詳細資訊，請參閱 [AEM專案結構](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) AEMas a Cloud Service檔案中的文章及 [AEM專案原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) 說明檔案。 AEM 6.5完全支援這兩項功能。
 
 ## 取得內容套件Maven外掛程式 {#obtaining-the-content-package-maven-plugin}
 
@@ -135,7 +135,7 @@ mvn content-package:install -Dvault.targetURL="https://192.168.1.100:4502/crx/pa
 
 ### ls {#ls}
 
-列出部署至的套件 [封裝管理員。](/help/implementing/developing/tools/package-manager.md)
+列出部署至的套件 [封裝管理員](/help/implementing/developing/tools/package-manager.md).
 
 #### 參數 {#parameters-2}
 
@@ -143,7 +143,7 @@ ls目標的所有引數都說明於 [常見引數](#common-parameters) 區段。
 
 ### rm {#rm}
 
-從以下位置移除套件 [封裝管理員。](/help/implementing/developing/tools/package-manager.md)
+從以下位置移除套件 [封裝管理員](/help/implementing/developing/tools/package-manager.md).
 
 #### 參數 {#parameters-3}
 
@@ -229,7 +229,7 @@ RM目標的所有引數都說明於 [常見引數](#common-parameters) 區段。
 
 ## 在套件中包含縮圖影像或屬性檔案 {#including-a-thumbnail-image-or-properties-file-in-the-package}
 
-取代預設封裝組態檔以自訂封裝屬性。 例如，加入縮圖影像來區分中的套件 [封裝管理員。](/help/implementing/developing/tools/package-manager.md)
+取代預設封裝組態檔以自訂封裝屬性。 例如，加入縮圖影像來區分中的套件 [封裝管理員](/help/implementing/developing/tools/package-manager.md).
 
 來源檔案可以位於檔案系統中的任何位置。 在POM檔案中，定義建置資源以將來源檔案複製到 `target/vault-work/META-INF` 以包含在套件中。
 
@@ -238,7 +238,7 @@ RM目標的所有引數都說明於 [常見引數](#common-parameters) 區段。
 ```xml
 <build>
     <resources>
-        <!-- vault META-INF resources (thumbnail etc.) -->
+        <!-- vault META-INF resources (thumbnail and so on) -->
         <resource>
             <directory>${basedir}/src/main/content/META-INF</directory>
             <targetPath>../vault-work/META-INF</targetPath>
@@ -267,4 +267,4 @@ RM目標的所有引數都說明於 [常見引數](#common-parameters) 區段。
 
 >[!TIP]
 >
->如需詳細資訊，請參閱 [AEM專案結構](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) AEMas a Cloud Service檔案中的文章以及 [AEM專案原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) 說明檔案。 AEM 6.5完全支援這兩項功能。
+>如需詳細資訊，請參閱 [AEM專案結構](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) AEMas a Cloud Service檔案中的文章及 [AEM專案原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) 說明檔案。 AEM 6.5完全支援這兩項功能。

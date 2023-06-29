@@ -2,10 +2,10 @@
 title: 正在新增 SSL 憑證
 description: 了解如何使用 Cloud Manager 的自助服務工具新增您自己的 SSL 憑證。
 exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '574'
-ht-degree: 86%
+source-wordcount: '571'
+ht-degree: 82%
 
 ---
 
@@ -63,7 +63,7 @@ SSL 憑證文件必須是 PEM 格式才能與 Cloud Manager 一起安裝。PEM �
 
    * 系統會顯示偵測到的任何錯誤。
       * 您必須先解決所有錯誤，然後才能保存您的憑證。
-      * 請參閱[憑證錯誤](#certificate-errors)部分以了解有關解決常見錯誤的更多資訊。
+      * 另請參閱 [憑證錯誤](#certificate-errors) 一節，以進一步瞭解如何解決常見錯誤。
 
 1. 點擊&#x200B;**儲存**&#x200B;來儲存您的憑證。
 
@@ -81,7 +81,7 @@ SSL 憑證文件必須是 PEM 格式才能與 Cloud Manager 一起安裝。PEM �
 
 ### 憑證政策 {#certificate-policy}
 
-如果您看到以下錯誤，請檢查您的憑證的政策。
+如果您看到以下錯誤，請檢查憑證的原則。
 
 ```text
 Certificate policy must conform with EV or OV, and not DV policy.

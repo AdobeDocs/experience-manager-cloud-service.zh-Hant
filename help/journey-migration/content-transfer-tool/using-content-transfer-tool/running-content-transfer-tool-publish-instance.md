@@ -2,9 +2,9 @@
 title: 在發佈執行個體上執行內容轉移工具
 description: 在發佈執行個體上執行內容轉移工具
 exl-id: 01faab94-a939-4004-b094-e9eb8f67b96e
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '252'
+source-wordcount: '251'
 ht-degree: 11%
 
 ---
@@ -29,6 +29,6 @@ ht-degree: 11%
 * 在擷取至發佈期間，發佈層級將不會縮小（不像作者）。
 
   >[!IMPORTANT]
-  >為了防患於未然，請避免任何使用者啟動的寫入操作，例如：
+  >為防患於未然，請避免任何使用者啟動的寫入操作，例如：
   > * 從AEMas a Cloud Service作者發佈內容至該環境中的發佈
   > * 使用者在發佈執行個體之間同步

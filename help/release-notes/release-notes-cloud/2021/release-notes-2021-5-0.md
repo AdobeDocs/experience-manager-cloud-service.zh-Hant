@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2021.5.0 版發行說明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2021.5.0 版發行說明。'
 exl-id: 3f9d7339-7e37-4702-821e-f2b03cd7e224
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1352'
-ht-degree: 46%
+source-wordcount: '1353'
+ht-degree: 44%
 
 ---
 
@@ -105,7 +105,7 @@ AEM as a Cloud Service 2021.5.0 中的 Cloud Manager 發行日期是 2021 年 5 
 
 ### 新增功能 {#what-is-new-may}
 
-* PackageOverlaps 品質規則現在會偵測多次部署了相同套件的情況；也就是在同一個部署的套件組中的多個嵌入式位置。
+* PackageOverlaps品質規則現在會偵測多次部署了相同套件的情況，也就是在同一個部署的套件組中的多個嵌入式位置。
 
 * 公用 API 中的存放庫端點現在包含 Git URL。
 

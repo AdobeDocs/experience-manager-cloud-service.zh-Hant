@@ -4,9 +4,9 @@ description: 瞭解如何疑難排解最常見的MSM相關問題，並獲得最�
 feature: Multi Site Manager
 role: Admin
 exl-id: 50f02f4f-a347-4619-ac90-b3136a7b1782
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '763'
+source-wordcount: '761'
 ht-degree: 0%
 
 ---
@@ -67,7 +67,7 @@ MSM會在資源URL上向選取器註冊數個可請求的servlet。 這些供UI�
 
 MSM同步動作是高度可設定的。 轉出時修改的屬性或元件會直接取決於這些設定的屬性。
 
-請參閱 [本文](best-practices.md) 以取得有關本主題的詳細資訊。
+另請參閱 [本文](best-practices.md) 以取得有關本主題的詳細資訊。
 
 ### 如何移除一組作者的轉出許可權？ {#remove-rollout-permissions}
 
@@ -80,7 +80,7 @@ MSM同步動作是高度可設定的。 轉出時修改的屬性或元件會直�
 
 ### 為什麼我會看到尾碼為「_msm_moved」的即時副本頁面？ {#moved-pages}
 
-如果轉出Blueprint頁面，它將更新其即時副本頁面或建立新的即時副本頁面（如果它不存在）（例如，首次轉出或手動刪除即時副本頁面時）。
+如果轉出Blueprint頁面，它會更新其即時副本頁面或建立即時副本頁面（如果該頁面不存在） （例如，首次轉出或手動刪除即時副本頁面時）。
 
 但在後一種情況下，如果頁面沒有 `cq:LiveRelationship` 屬性以相同名稱存在，因此在建立即時副本頁面之前，會相應地重新命名此頁面。
 
