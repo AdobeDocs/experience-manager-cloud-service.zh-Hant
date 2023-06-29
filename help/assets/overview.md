@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Asset Management
 role: User,Leader,Architect
 exl-id: 4437f214-d058-4975-8b8f-869a12c8103b
-source-git-commit: d0deca8acbf6049d5be6c27275eedf9b52b27658
+source-git-commit: 5a7938d5e52388516f8b66bbcf8ffdee332a51a3
 workflow-type: tm+mt
 source-wordcount: '740'
 ht-degree: 68%
@@ -51,7 +51,7 @@ DAM程式庫、開發人員和超級使用者可視需要繼續使用「管理�
 
 ![add-tag](assets/newui-overview.svg)
 
-如需如何存取「資產」檢視及其透過「管理員」檢視提供的一些簡化操作的資訊，請參閱 [「資產」檢視簡介](/help/assets/assets-view-introduction.md).
+如需如何存取「資產」檢視及其透過「管理員」檢視提供的一些簡化資訊，請參閱 [「資產」檢視簡介](/help/assets/assets-view-introduction.md).
 
 ## 新資產功能 {#whats-new-assets}
 

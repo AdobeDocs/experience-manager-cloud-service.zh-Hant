@@ -3,14 +3,14 @@ title: 開始使用  [!DNL Assets View]
 description: 如何存取， [!DNL Assets View] 的登入體驗、支援的使用案例和已知問題
 role: User, Leader
 exl-id: 7917b2a0-8340-4d94-aa6f-30ce986fa752
-source-git-commit: 5af7f9160b0028d0eff5358c3c1a43729b86883b
+source-git-commit: 5a7938d5e52388516f8b66bbcf8ffdee332a51a3
 workflow-type: tm+mt
-source-wordcount: '389'
-ht-degree: 94%
+source-wordcount: '345'
+ht-degree: 86%
 
 ---
 
-# 開始使用 [!DNL Adobe Experience Manager Assets View] {#assets-view-get-started}
+# 開始使用資產檢視 {#assets-view-get-started}
 
 <!-- TBD: Make links for these steps. -->
 
@@ -25,11 +25,9 @@ ht-degree: 94%
 <!--In addition, more reference information that can be helpful is [understanding of the user interface](/help/assets/navigate-assets-view.md), [list of use cases](#use-cases), [supported file types](/help/assets/supported-file-formats-assets-view.md), and [known issues](/help/assets/release-notes.md#known-issues).
 -->
 
-## 獲得 [!DNL Assets View] 的存取權 {#get-access}
+## 存取資產檢視 {#access-assets-view}
 
-Adobe 提供解決方案並將您組織的指定人員新增為管理員。管理員可以使用 [[!DNL Admin Console]](https://helpx.adobe.com/enterprise/using/admin-console.html) 提供存取權給組織的各種使用者。若是存取權的相關請求，請聯絡您組織的管理員。
-
-登入時，在提供認證後，[!DNL Assets View] 會提示您選取一個帳戶。在此情況下，請選取「`Company or School Account`」以繼續進行。
+另請參閱 [如何存取資產檢視](/help/assets/assets-view-introduction.md#how-to-access-assets-view) 以取得有關如何存取「資產」檢視的詳細說明。
 
 ## 設定 [!DNL Assets View] {#configuration}
 
