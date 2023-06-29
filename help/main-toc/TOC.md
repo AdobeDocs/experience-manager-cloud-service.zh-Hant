@@ -8,9 +8,9 @@ user-guide-description: 了解 Experience Manager as a Cloud Service 的運作�
 breadcrumb-title: 使用手冊
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 40393340131a72a86503c00a0a2e9e78a28b7e69
+source-git-commit: 9424bef8a9a2c7ab4afb06e2a08e15336f858b7b
 workflow-type: tm+mt
-source-wordcount: '4138'
+source-wordcount: '4139'
 ht-degree: 99%
 
 ---
@@ -501,23 +501,22 @@ ht-degree: 99%
       + [HTTP2 傳送內容常見問答集](/help/assets/dynamic-media/http2faq.md)
       + [Flash 檢視器產品壽命終止](/help/assets/dynamic-media/flash-viewers-eol.md)
       + [DHTML 檢視器產品壽命終止](/help/assets/dynamic-media/dhtml-viewer-endoflifefaqs.md)
-
-+ 使用資產檢視 {#assets-view}
-   + [快速入門](/help/assets/get-started-assets-view.md)
-   + [我的工作區](/help/assets/my-workspace-assets-view.md)
-   + [支援的檔案類型和使用案例](/help/assets/supported-file-formats-assets-view.md)
-   + [檢視資產](/help/assets/navigate-assets-view.md)
-   + [上傳和新增資產](/help/assets/add-delete-assets-view.md)
-   + [搜尋和探索資產](/help/assets/search-assets-view.md)
-   + [資產管理任務](/help/assets/manage-organize-assets-view.md)
-   + [編輯影像](/help/assets/edit-images-assets-view.md)
-   + [管理資產中繼資料](/help/assets/metadata-assets-view.md)
-   + [共用資產](/help/assets/share-links-for-assets-view.md)
-   + [管理收藏集](/help/assets/manage-collections-assets-view.md)
-   + [監視資產、資料夾和集合](/help/assets/manage-notifications-assets-view.md)
-   + [管理報告](/help/assets/manage-reports-assets-view.md)
-   + [管理標籤](/help/assets/tagging-management-assets-view.md)
-
+   + 使用資產檢視 {#assets-view}
+      + [介紹](/help/assets/assets-view-introduction.md)
+      + [快速入門](/help/assets/get-started-assets-view.md)
+      + [我的工作區](/help/assets/my-workspace-assets-view.md)
+      + [支援的檔案類型和使用案例](/help/assets/supported-file-formats-assets-view.md)
+      + [檢視資產](/help/assets/navigate-assets-view.md)
+      + [上傳和新增資產](/help/assets/add-delete-assets-view.md)
+      + [搜尋和探索資產](/help/assets/search-assets-view.md)
+      + [資產管理任務](/help/assets/manage-organize-assets-view.md)
+      + [編輯影像](/help/assets/edit-images-assets-view.md)
+      + [管理資產中繼資料](/help/assets/metadata-assets-view.md)
+      + [共用資產](/help/assets/share-links-for-assets-view.md)
+      + [管理收藏集](/help/assets/manage-collections-assets-view.md)
+      + [監視資產、資料夾和集合](/help/assets/manage-notifications-assets-view.md)
+      + [管理報告](/help/assets/manage-reports-assets-view.md)
+      + [管理標籤](/help/assets/tagging-management-assets-view.md)
    + 與 Adobe Workfront 整合 {#integrations}
       + [與  [!DNL Adobe Workfront] 整合](/help/assets/workfront-integrations.md)
       + [設定資產中繼資料對應](/help/assets/configure-asset-metadata-mapping.md)
@@ -525,6 +524,7 @@ ht-degree: 99%
       + [移除現有安裝的外部相依性](/help/assets/remove-external-dependencies.md)
       + [設定 [!DNL enhanced connector] for [!DNL Workfront]](/help/assets/workfront-connector-configure.md)
       + [更新 [!DNL Workfront for Experience Manager enhanced connector]](/help/assets/update-workfront-enhanced-connector.md)
+
 + Forms {#forms}
    + 概觀 {#forms-overview}
       + [簡介](/help/forms/home.md)
