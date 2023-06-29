@@ -2,9 +2,9 @@
 title: 版發行說明 [!DNL Workfront for Experience Manager enhanced connector]
 description: 版發行說明 [!DNL Workfront for Experience Manager enhanced connector]
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
-source-git-commit: 0cc57a144b69799cfabc8baae2051e9ac8701d49
+source-git-commit: 87aeebad2576e91472530a2617b23bece4cd453f
 workflow-type: tm+mt
-source-wordcount: '1167'
+source-wordcount: '1158'
 ht-degree: 1%
 
 ---
@@ -30,13 +30,13 @@ ht-degree: 1%
 
 >[!IMPORTANT]
 >
->Adobe建議您 [升級至最新的1.9.11版本](../assets/update-workfront-enhanced-connector.md) 的 [!DNL Workfront for Experience Manager enhanced connector].
+>Adobe建議您 [升級至最新的1.9.11版本](/help/assets/workfront-connector-install.md) 的 [!DNL Workfront for Experience Manager enhanced connector].
 
 ## 已知問題 {#known-issues}
 
 * 使用AEM 6.4設定專案連結資料夾時，Experience Manager不會儲存值 **[!UICONTROL 子資料夾]** 和 **[!UICONTROL 在具有投資組合的專案中建立連結資料夾]** 欄位。 的值 **[!UICONTROL 子資料夾]** 欄位更新至 **[!UICONTROL 未定義]** 和的值 **[!UICONTROL 在具有投資組合的專案中建立連結資料夾]** 欄位更新至 **[!UICONTROL 預設Portfolio]** 在儲存設定後自動執行。
 
-* 當您使用傳統Workfront體驗時， **[!UICONTROL 傳送至]** 中可用的選項 **[!UICONTROL 更多]** 下拉式清單不允許您在Experience Manager中選取目標目的地。 此 **[!UICONTROL 傳送至]** 選項可透過以下方式正常運作： **[!UICONTROL 檔案動作]** 下拉式清單。 此 **[!UICONTROL 傳送至]** 選項正確運作於 **[!UICONTROL 更多]** 下拉式清單及 **[!UICONTROL 檔案動作]** 新Workfront Experience中可用的下拉式清單。
+* 當您使用傳統Workfront體驗時， **[!UICONTROL 傳送至]** 中可用的選項 **[!UICONTROL 更多]** 下拉式清單不允許您在Experience Manager中選取目標目的地。 此 **[!UICONTROL 傳送至]** 選項可透過以下方式正常運作： **[!UICONTROL 檔案動作]** 下拉式清單。 此 **[!UICONTROL 傳送至]** 選項正確運作於 **[!UICONTROL 更多]** 下拉式清單與 **[!UICONTROL 檔案動作]** 新Workfront體驗中可用的下拉式清單。
 
 ## 舊版 {#previous-releases}
 
@@ -139,7 +139,7 @@ ht-degree: 1%
 
 [!DNL Workfront for Experience Manager enhanced connector] 1.9.4版（於2007年10月發行）包含下列更新：
 
-* 由於大量事件，無法在增強型聯結器設定頁面上檢視「事件訂閱」索引標籤。
+* 由於許多事件，無法在增強型聯結器設定頁面上檢視「事件訂閱」索引標籤。
 
 * Workfront無法擷取專案中現有資料夾的清單，因此會建立重複的資料夾。
 
@@ -147,7 +147,7 @@ ht-degree: 1%
 
 [!DNL Workfront for Experience Manager enhanced connector] 版本1.9.3於9月16日發行，包含下列更新：
 
-* 無法上傳大小超過8 GB的檔案。
+* 無法上傳大於8 GB的檔案。
 * 自動發佈從Workfront傳送至AEM的資產時發生問題。
 * 編輯預設中繼資料結構表單時，根路徑欄位不可用於標籤欄位。
 * 使用AEM工作流程在Workfront中新增新版本時發生問題。
