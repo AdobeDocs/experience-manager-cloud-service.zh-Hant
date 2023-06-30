@@ -2,10 +2,10 @@
 title: 資產檢視如何造福您？
 description: 進一步瞭解Assets檢視的主要優點
 mini-toc-levels: 3
-source-git-commit: 5a7938d5e52388516f8b66bbcf8ffdee332a51a3
+source-git-commit: 97b6f66f2d19b85ec0a71eda756aaa334ea5da57
 workflow-type: tm+mt
-source-wordcount: '1118'
-ht-degree: 11%
+source-wordcount: '1064'
+ht-degree: 12%
 
 ---
 
@@ -121,14 +121,15 @@ Assets檢視可讓您監視對存放庫中可用的資產、資料夾或集合�
 
 * 重新命名存放庫中可用的資產和資料夾。
 
+新的Adobe Experience Manager資產檢視經過量身打造，可簡化工作流程、促進共同作業並加速資產交付。 透過採用內容速度，行銷人員可以釋放其數位資產的全部潛力，並釋放出前所未有的創造力。
+
+
 使用這些連結來快速開始使用資產檢視：
 
 * [我的工作區](/help/assets/my-workspace-assets-view.md)
 * [開始使用資產檢視](/help/assets/get-started-assets-view.md)
 
-## 結論 {#conclusion}
 
-數位優先的時代已經到來，是時候改造我們的行銷工具，以支援不斷變化的業務環境。 新的Adobe Experience Manager資產檢視經過量身打造，可簡化工作流程、促進共同作業並加速資產交付。 透過採用內容速度，行銷人員可以釋放其數位資產的全部潛力，並釋放出前所未有的創造力。 準備好利用Adobe新的資產檢視體驗的強大功能，並在您的行銷活動中推動卓越的成效。 是時候擁抱DAM的未來，並推動您的企業向前邁進了。
 
 
 
