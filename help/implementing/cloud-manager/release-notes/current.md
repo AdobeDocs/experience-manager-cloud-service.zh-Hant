@@ -1,19 +1,19 @@
 ---
-title: Adobe Experience Manager as a Cloud Service 中 Cloud Manager 2023.6.0 的發行說明
-description: 以下是 AEM as a Cloud Service 中 Cloud Manager 2023.6.0 的發行說明。
+title: Adobe Experience Manager as a Cloud Service 中 Cloud Manager 2023.7.0 的發行說明
+description: 以下是 AEM as a Cloud Service 中 Cloud Manager 2023.7.0 的發行說明。
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 1b46f763903a1b103837ed7e8cc498ad08ce64f1
 workflow-type: tm+mt
 source-wordcount: '237'
-ht-degree: 93%
+ht-degree: 29%
 
 ---
 
 
-# Adobe Experience Manager as a Cloud Service 中 Cloud Manager 2023.6.0 的發行說明 {#release-notes}
+# Adobe Experience Manager as a Cloud Service 中 Cloud Manager 2023.7.0 的發行說明 {#release-notes}
 
-本頁面記錄了 AEM as a Cloud Service 中 Cloud Manager 2023.6.0 版的發行說明。
+本頁面記錄了 AEM as a Cloud Service 中 Cloud Manager 2023.7.0 版的發行說明。
 
 >[!NOTE]
 >
@@ -21,17 +21,18 @@ ht-degree: 93%
 
 ## 發行日期 {#release-date}
 
-AEM as a Cloud Service 中的 Cloud Manager 2022.11.0 版發行日期為 2023 年 6 月 8 日。下一版本預計於 2023 年 7 月 6 日發行。
+AEMas a Cloud Service中的Cloud Manager版本2023.7.0發行日期是2023年6月29日。 下一版本計畫於 2023 年 8 月 10 日發行。
 
 ## 新增功能 {#what-is-new}
 
-* 除了主要區域之外，客戶還可以購買額外的次要發佈區域，如此即可獲得和減少延遲及提高可用性相關的優勢。注意：可能適用特定限制。
-* 建立新的[計畫或環境時，](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)該名稱現在受到限制，僅接受英數字元和有限的特殊字元組。
-* 恢復[生產管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)時，核准步驟現在會顯示確認對話框。
-* 對於&#x200B;**[客戶功能測試](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing)**&#x200B;和&#x200B;**[自訂 UI 測試](/help/implementing/cloud-manager/ui-testing.md)**&#x200B;管道步驟，現在可能有新的 `INCOMPLETE` 狀態，這表示這類測試不存在，因此未執行。
-   * 這種情況下，管道不會失敗並會繼續進行下一步。
+* Cloud Manager登陸頁面上的卡片現在會指示是否 [增強式安全性](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) 已為其程式啟用。
+* 如果開發 [管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) 不包含測試步驟，使用者現在可以選擇在以下情況下包含測試步驟： [啟動管道。](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#running-pipelines)
+   * 這將分階段推出。
+* 時間 [取消執行，](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#view-details) 管道執行核准步驟現在會要求使用者提供取消的原因。
+   * 這將分階段推出。
 
 ## 錯誤修正 {#bug-fixes}
 
-* 此 [Web 層設定管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipelines)不會再錯誤地為僅限資產計畫啟用。
-* 已新增更強大的驗證以防止在環境佈建期間出現特定類型的失敗。
+* 登入後，從Cloud Manager導覽至編寫UI再也無法重新導向至Unified Shell。
+* 透過上線工具集編輯上線日期現在會導覽至 **上線** 標籤而非 **增強式安全性** 標籤。
+* 開始複製操作時，使用者將無法再選取已叫用複製操作的環境。
