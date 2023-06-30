@@ -235,21 +235,21 @@ As a result of this rule, the values you enter for **Pet ID** checks validation 
 1. 新增JavaScript檔案，例如 `function.js`. 此檔案包含自訂錯誤處理常式的程式碼。
 讓我們將下列程式碼新增至JavaScript檔案，以在瀏覽器主控台中顯示從REST服務端點收到的回應和標頭。
 
-       &quot;&#39;javascript
-       /**
-       *自訂錯誤處理常式
-       * @name customErrorHandler自訂錯誤處理常式函式
-       * @errorHandler
-       */
-       函式customErrorHandler(response， headers)
-       {
-       console.log（「自訂錯誤處理常式處理開始……」）；
-       console.log(&quot;response：&quot;+JSON.stringify(response))；
-       console.log(&quot;headers：&quot;+JSON.stringify(headers))；
-       console.log（「自訂錯誤處理常式處理結束……」）；
-       }
-       ```
-   
+        ```javascript
+        /**
+        * Custom Error handler
+        * @name customErrorHandler Custom Error Handler Function
+        * @errorHandler
+        */
+        function customErrorHandler(response, headers)
+        {
+            console.log("Custom Error Handler processing start...");
+            console.log("response:"+JSON.stringify(response));
+            console.log("headers:"+JSON.stringify(headers));
+            console.log("Custom Error Handler processing end...");
+        }
+        ```
+
    <!--  To call the default error handler after the custom error handler, the following line of the sample code is used:
         `guidelib.dataIntegrationUtils.defaultErrorHandler(response, headers) `-->
 1. 儲存 `function.js` 檔案。
