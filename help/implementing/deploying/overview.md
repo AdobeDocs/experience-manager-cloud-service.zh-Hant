@@ -150,7 +150,7 @@ ht-degree: 45%
 建立 `repoinit` 語句，請遵循以下步驟：
 
 1. 在專案的設定資料夾中為工廠 PID `org.apache.sling.jcr.repoinit.RepositoryInitializer` 新增 OSGi 設定。為設定使用描述性名稱，例如 **org.apache.sling.jcr.repoinit.RepositoryInitializer~initstructure**。
-1. 新增 `repoinit` 陳述式至config的script屬性。 [Sling 文件](https://sling.apache.org/documentation/bundles/repository-initialization.html) 中記錄了語法和選項。在子資料夾之前，應該明確建立父資料夾。 例如，在 `/content/myfolder` 之前明確建立 `/content`，再建立 `/content/myfolder/mysubfolder`。若是在低階結構上設定的ACL，建議將其設定在較高階層，並搭配使用 `rep:glob` 限制。 例如， `(allow jcr:read on /apps restriction(rep:glob,/msm/wcm/rolloutconfigs))`.
+1. 新增 `repoinit` 陳述式至config的script屬性。 [Sling 文件](https://sling.apache.org/documentation/bundles/repository-initialization.html) 中記錄了語法和選項。在子資料夾之前，應該先明確建立父資料夾。 例如，在 `/content/myfolder` 之前明確建立 `/content`，再建立 `/content/myfolder/mysubfolder`。若是在低階結構上設定的ACL，建議將其設定在較高階層，並搭配使用 `rep:glob` 限制。 例如， `(allow jcr:read on /apps restriction(rep:glob,/msm/wcm/rolloutconfigs))`.
 1. 在執行階段時於本機開發環境上進行驗證。
 
 <!-- last statement in step 2 to be clarified with Brian -->

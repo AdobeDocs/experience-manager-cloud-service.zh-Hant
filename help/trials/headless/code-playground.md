@@ -7,7 +7,7 @@ exl-id: b7dc70f2-74a2-49f7-ae7e-776eab9845ae
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '981'
-ht-degree: 55%
+ht-degree: 58%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 55%
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_fetch_json_with_javascript_guide"
 >title="啟動範例 CodePen 應用程式"
->abstract="本指南將逐步解說如何查詢試用環境的 JSON 資料並放入基本的 JavaScript 網頁應用程式中。您會使用在先前的學習模組中建立模型的內容片段。 如有必要，請先瀏覽這些指南，然後再跳至本指南。"
+>abstract="本指南將逐步解說如何查詢試用環境的 JSON 資料並放入基本的 JavaScript 網頁應用程式中。您可以使用在早期學習單元中按模式製作並建立的內容片段。如有必要，請先詳閱這些指南，然後再進入本指南。"
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_fetch_json_with_javascript_guide_footer"

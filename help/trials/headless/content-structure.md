@@ -7,7 +7,7 @@ exl-id: ace9b9f3-8bc6-4a36-a51c-ff60cdd339ce
 source-git-commit: e507b409e4d2382b1eac54b11a9ad68fd965db4b
 workflow-type: tm+mt
 source-wordcount: '993'
-ht-degree: 34%
+ht-degree: 41%
 
 ---
 
@@ -17,12 +17,12 @@ ht-degree: 34%
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_overview"
 >title="為您的應用程式建立內容結構"
->abstract="跟著此互動式指南系列，您將瞭解如何建立當作無頭內容基礎結構的結構（稱為內容片段模式）。"
+>abstract="當您依照此互動式指南系列進行時，您會了解如何建立當作您 Headless 內容的基礎結構的結構 (也稱為內容片段模式)。"
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_overview_guide"
 >title="啟動模式主控台"
->abstract="讓我們探討如何在 Adobe Experience Manager as a Cloud Service 中，為您的內容建立一個可重複使用的結構描述，稱為內容片段模式。請觀看影片，以瞭解為什麼此步驟很重要。 <br><br>在此學習單元中，您以旅行網站為例，逐步建立代表旅程的模型。<br><br>點選下方按鈕，在新標籤中啟動此單元，然後按照本指南進行操作。"
+>abstract="讓我們探討如何在 Adobe Experience Manager as a Cloud Service 中，為您的內容建立一個可重複使用的結構描述，稱為內容片段模式。觀看影片，以便了解為什麼這個步驟很重要。<br><br>在本學習單元中，您會使用旅遊網站作為範例，並逐步建立一個代表旅行的模式。<br><br>點選下方按鈕，在新標籤中啟動此單元，然後按照本指南進行操作。"
 >additional-url="https://video.tv.adobe.com/v/3413261" text="內容結構介紹影片"
 
 >[!CONTEXTUALHELP]
