@@ -2,10 +2,10 @@
 title: 內容搜尋與索引
 description: 內容搜尋與索引
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: c19783ed4899772835a05856fc3a5601ef6a6df8
 workflow-type: tm+mt
-source-wordcount: '2427'
-ht-degree: 1%
+source-wordcount: '2309'
+ht-degree: 2%
 
 ---
 
@@ -35,37 +35,37 @@ ht-degree: 1%
 
 ## 使用方式 {#how-to-use}
 
-定義索引可以包含下列三個使用案例：
+索引定義可以分為三個主要使用案例，如下所示：
 
-1. 新增客戶索引定義。
-1. 更新現有的索引定義。 此更新實際上意味著新增了現有索引定義的新版本。
-1. 移除多餘或過時的現有索引。
+1. **新增** 新的自訂索引定義。
+2. **更新** 藉由新增新版本來建立現有的索引定義。
+3. **移除** 不再需要的索引定義。
 
-對於上面的第1點和第2點，您必須在各自的Cloud Manager發行排程中建立索引定義，作為自訂程式碼庫的一部分。 如需詳細資訊，請參閱 [部署至AEMas a Cloud Service檔案](/help/implementing/deploying/overview.md).
+對於上面的第1點和第2點，您需要在各自的Cloud Manager發行排程中建立新的索引定義，作為自訂程式碼庫的一部分。 如需詳細資訊，請參閱 [部署至AEMas a Cloud Service](/help/implementing/deploying/overview.md) 說明檔案。
 
 ## 索引名稱 {#index-names}
 
-索引定義可以是：
+索引定義可以屬於以下類別之一：
 
-1. 現成可用的索引。 一個範例是 `/oak:index/cqPageLucene-2`.
-1. 現成可用索引的自訂。 客戶會定義此類自訂。 一個範例是 `/oak:index/cqPageLucene-2-custom-1`.
-1. 完全自訂的索引。 一個範例是 `/oak:index/acme.product-1-custom-2`. 為了避免命名衝突，Adobe要求完全自訂的索引必須有首碼，例如， `acme.`
+1. 開箱即用(OOTB)索引。 例如： `/oak:index/cqPageLucene-2` 或 `/oak:index/damAssetLucene-8`.
 
-請注意，現成可用的自訂索引和完全自訂的索引都必須包含 `-custom-`. 只有完全自訂的索引必須以前置詞開頭。
+2. 自訂OOTB索引。 這些由附加表示 `-custom-` 後跟原始索引名稱的數值識別碼。 例如：`/oak:index/damAssetLucene-8-custom-1`。
+
+3. 完全自訂索引：您可以從頭開始建立全新的索引。 它們的名稱必須有首碼，以避免命名衝突。 例如： `/oak:index/acme.product-1-custom-2`，首碼為 `acme.`
 
 ## 準備新的索引定義 {#preparing-the-new-index-definition}
 
 >[!NOTE]
 >
->如果自訂現成可用的索引，例如 `damAssetLucene-6`，從以下位置複製最新的現成可用索引定義： *Cloud Service環境* 使用CRX DE封裝管理員(`/crx/packmgr/`) 。 然後將設定重新命名為，例如 `damAssetLucene-6-custom-1`，並在上方新增自訂內容。 此程式可確保不會無意中移除所需的設定。 例如， `tika` 節點在 `/oak:index/damAssetLucene-6/tika` 在cloud service的自訂索引中是必要的。 它不存在於Cloud SDK上。
+>如果自訂現成可用的索引，例如 `damAssetLucene-8`，請從以下位置複製最新的現成可用索引定義 *Cloud Service環境* 使用CRX DE封裝管理員(`/crx/packmgr/`) 。 將其重新命名為 `damAssetLucene-8-custom-1` ，並在XML檔案中新增自訂內容。 這樣可確保不會無意中移除所需的設定。 例如， `tika` 節點在 `/oak:index/damAssetLucene-8/tika` 在cloud service的自訂索引中是必要的。 它不存在於Cloud SDK上。
 
-依照此命名模式，準備包含實際索引定義的索引定義套件：
+針對OOTB索引的自訂，請準備包含遵循此命名模式之實際索引定義的新套件：
 
-`<indexName>[-<productVersion>]-custom-<customVersion>`
+`<indexName>-<productVersion>-custom-<customVersion>`
 
-然後必須放在 `ui.apps/src/main/content/jcr_root`. 所有自訂和自訂索引定義都必須儲存在 `/oak:index`.
+對於完全自訂的索引，請準備新的索引定義套件，其中包含遵循此命名模式的索引定義：
 
-套件的篩選器必須設定成保留現有（現成可用的索引）。 在檔案中 `ui.apps/src/main/content/META-INF/vault/filter.xml`，每個自訂（或自訂）索引都應列出，例如 `<filter root="/oak:index/damAssetLucene-6-custom-1"/>`. 如果稍後變更索引版本，則必須調整篩選器。
+`<prefix>.<indexName>-<productVersion>-custom-<customVersion>`
 
 <!-- Alexandru: temporarily drafting this statement due to CQDOC-17701
 
@@ -73,136 +73,160 @@ The package from the above sample is built as `com.adobe.granite:new-index-conte
 
 >[!NOTE]
 >
->任何包含索引定義的內容套件都應在內容套件的屬性檔案中設定以下屬性，網址為 `/META-INF/vault/properties.xml`：
+>任何包含索引定義的內容套件都應該在（位於）內容套件的屬性檔案中設定以下屬性 `<package_name>/META-INF/vault/properties.xml`：
 >
->`noIntermediateSaves=true`
+> * `noIntermediateSaves=true`
+>
+> * `allowIndexDefinitions=true`
 
-## 部署索引定義 {#deploying-index-definitions}
+## 部署自訂索引定義 {#deploying-custom-index-definitions}
 
-索引定義會標示為自訂並設定版本：
+說明如何部署自訂版本的現成可用索引 `damAssetLucene-8`，我們會提供逐步指南。 在此範例中，我們將它重新命名為 `damAssetLucene-8-custom-1`. 然後程式如下：
 
-* 索引定義本身(例如 `/oak:index/ntBaseLucene-custom-1`)
+1. 在中建立具有更新索引名稱的新資料夾 `ui.apps` 目錄：
+   * 範例: `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-8-custom-1/`
 
-若要部署自訂或自訂索引，索引定義(`/oak:index/definitionname`)必須透過以下方式傳遞： `ui.apps` 透過Git和Cloud Manager部署程式。 例如，在FileVault篩選器中， `ui.apps/src/main/content/META-INF/vault/filter.xml`，分別列出每個自訂和自訂索引，例如 `<filter root="/oak:index/damAssetLucene-7-custom-1"/>`. 自訂/自訂索引定義本身隨後會儲存在檔案中 `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-7-custom-1/.content.xml`，如下所示：
+2. 新增設定檔 `.content.xml` ，並在新建立的資料夾內使用自訂設定。 以下是自訂的範例：檔案名稱： `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-8-custom-1/.content.xml`
 
-```xml
-<?xml version="1.0" encoding="UTF-8"?>
-<jcr:root xmlns:oak="https://jackrabbit.apache.org/oak/ns/1.0" xmlns:dam="http://www.day.com/dam/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:rep="internal"
-        jcr:primaryType="oak:QueryIndexDefinition"
-        async="[async,nrt]"
-        compatVersion="{Long}2"
-        ...
-        </indexRules>
-        <tika jcr:primaryType="nt:unstructured">
-            <config.xml jcr:primaryType="nt:file"/>
-        </tika>
-</jcr:root>
-```
+   ```xml
+   <?xml version="1.0" encoding="UTF-8"?>
+   <jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:dam="http://www.day.com/dam/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:oak="http://jackrabbit.apache.org/oak/ns/1.0" xmlns:rep="internal"
+       jcr:mixinTypes="[rep:AccessControllable]"
+       jcr:primaryType="oak:QueryIndexDefinition"
+       async="[async,nrt]"
+       compatVersion="{Long}2"
+       evaluatePathRestrictions="{Boolean}true"
+       includedPaths="[/content/dam]"
+       maxFieldLength="{Long}100000"
+       type="lucene">
+       <facets
+           jcr:primaryType="nt:unstructured"
+           secure="statistical"
+           topChildren="100"/>
+       <indexRules jcr:primaryType="nt:unstructured">
+           <dam:Asset jcr:primaryType="nt:unstructured">
+               <properties jcr:primaryType="nt:unstructured">
+                   <cqTags
+                       jcr:primaryType="nt:unstructured"
+                       name="jcr:content/metadata/cq:tags"
+                       nodeScopeIndex="{Boolean}true"
+                       propertyIndex="{Boolean}true"
+                       useInSpellcheck="{Boolean}true"
+                       useInSuggest="{Boolean}true"/>
+               </properties>
+           </dam:Asset>
+       </indexRules>
+       <tika jcr:primaryType="nt:folder">
+           <config.xml jcr:primaryType="nt:file"/>
+       </tika>
+   </jcr:root>
+   ```
 
-上述範例包含Apache Tika的設定。 Tika設定檔案會儲存在 `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-7-custom-1/tika/config.xml`.
+3. 新增專案至中的FileVault篩選器 `ui.apps/src/main/content/META-INF/vault/filter.xml`：
 
-### 專案設定
+   ```xml
+   <?xml version="1.0" encoding="UTF-8"?>
+   <workspaceFilter version="1.0">
+       ...
+       <filter root="/oak:index/damAssetLucene-8-custom-1"/> 
+   </workspaceFilter>
+   ```
 
-視使用的Jackrabbit Filevault Maven Package外掛程式版本而定，需要在專案中進行更多設定。 使用Jackrabbit Filevault Maven套件外掛程式版本時 **1.1.6** 或更新版本，然後檔案 `pom.xml` 「 」的外掛程式設定中必須包含下列區段 `filevault-package-maven-plugin`，在 `configuration/validatorsSettings` (之前 `jackrabbit-nodetypes`)：
+4. 在下列位置新增Apache Tika的設定檔： `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-8-custom-1/tika/config.xml`：
 
-```xml
-<jackrabbit-packagetype>
-    <options>
-        <immutableRootNodeNames>apps,libs,oak:index</immutableRootNodeNames>
-    </options>
-</jackrabbit-packagetype>
-```
+   ```xml
+   <properties>
+       <detectors>
+           <detector class="org.apache.tika.detect.TypeDetector"/>
+       </detectors>
+       <parsers>
+           <parser class="org.apache.tika.parser.DefaultParser">
+           <mime>text/plain</mime>
+           </parser>
+       </parsers>
+       <service-loader initializableProblemHandler="ignore" dynamic="true"/>
+   </properties>
+   ```
 
-此外，在此案例中， `vault-validation` 版本必須升級至較新版本：
+5. 確保您的設定符合 [專案設定](#project-configuration) 區段。 進行必要的相應調整。
 
-```xml
-<dependency>
-    <groupId>org.apache.jackrabbit.vault</groupId>
-    <artifactId>vault-validation</artifactId>
-    <version>3.5.6</version>
-</dependency>
-```
+## 專案設定
 
-然後，在 `ui.apps.structure/pom.xml` 和 `ui.apps/pom.xml`，的設定 `filevault-package-maven-plugin` 必須具有 `allowIndexDefinitions` 和 `noIntermediateSaves` 已啟用。 選項 `noIntermediateSaves` 確保自動新增索引設定。
+我們強烈建議使用>=版 `1.3.2` Jackrabbit的 `filevault-package-maven-plugin`. 將其併入專案的步驟如下：
 
-```xml
-<groupId>org.apache.jackrabbit</groupId>
-    <artifactId>filevault-package-maven-plugin</artifactId>
-    <configuration>
-        <allowIndexDefinitions>true</allowIndexDefinitions>
-        <properties>
-            <cloudManagerTarget>none</cloudManagerTarget>
-            <noIntermediateSaves>true</noIntermediateSaves>
-        </properties>
-    ...
-```
+1. 更新頂層版本 `pom.xml`：
 
-在 `ui.apps.structure/pom.xml`，則 `filters` 此外掛程式的區段必須包含篩選根，如下所示：
+   ```xml
+   <plugin>
+       <groupId>org.apache.jackrabbit</groupId>
+           <artifactId>filevault-package-maven-plugin</artifactId>
+           ...
+           <version>1.3.2</version>
+       ...
+   </plugin>
+   ```
 
-```xml
-<filter><root>/oak:index</root></filter>
-```
+2. 新增下列專案至最上層 `pom.xml`：
 
-新增索引定義後，新應用程式會透過Cloud Manager部署。 部署時會啟動兩個工作，負責將索引定義分別新增（及視需要合併）至MongoDB和Azure區段存放區，以供編寫和發佈。 在切換開始之前，基礎存放庫會使用新的索引定義重新編制索引。
+   ```xml
+   <jackrabbit-packagetype>
+       <options>   
+           <immutableRootNodeNames>apps,libs,oak:index</immutableRootNodeNames>
+       </options>
+   </jackrabbit-packagetype>
+   ```
 
-### 注意
+   以下是專案最上層的範例 `pom.xml` 包含上述設定的檔案：
 
-如果您在Filevault驗證中觀察到以下錯誤 <br>
-`[ERROR] ValidationViolation: "jackrabbit-nodetypes: Mandatory child node missing: jcr:content [nt:base] inside node with types [nt:file]"` <br>
-然後，可以執行以下任一步驟來修正問題 —  <br>
+   檔案名稱: `pom.xml`
 
-1. 將filevault降級為1.0.4版，並將以下內容新增至頂層pom：
+   ```xml
+   <plugin>
+       <groupId>org.apache.jackrabbit</groupId>
+           <artifactId>filevault-package-maven-plugin</artifactId>
+           ...
+           <version>1.3.2</version>
+           <configuration>
+               ...
+               <validatorsSettings>
+                   <jackrabbit-packagetype>
+                       <options>
+                           <immutableRootNodeNames>apps,libs,oak:index</immutableRootNodeNames>
+                       </options>
+                   </jackrabbit-packagetype>
+                   ...
+               ...
+   </plugin>
+   ```
 
-```xml
-<allowIndexDefinitions>true</allowIndexDefinitions>
-```
+3. 在 `ui.apps/pom.xml` 和 `ui.apps.structure/pom.xml` 必須啟用 `allowIndexDefinitions` 和 `noIntermediateSaves` 中的選項 `filevault-package-maven-plugin`. 正在啟用 `allowIndexDefinitions` 允許自訂索引定義，而 `noIntermediateSaves` 確保自動新增設定。
 
-以下範例說明將上述設定放入pom中的位置。
+   檔案名稱： `ui.apps/pom.xml` 和 `ui.apps.structure/pom.xml`
 
-```xml
-<plugin>
-    <groupId>org.apache.jackrabbit</groupId>
-    <artifactId>filevault-package-maven-plugin</artifactId>
-    <configuration>
-        <properties>
-        ...
-        </properties>
-        ...
-        <allowIndexDefinitions>true</allowIndexDefinitions>
-        <repositoryStructurePackages>
-        ...
-        </repositoryStructurePackages>
-        <dependencies>
-        ...
-        </dependencies>
-    </configuration>
-</plugin>
-```
+   ```xml
+   <plugin>
+       <groupId>org.apache.jackrabbit</groupId>
+           <artifactId>filevault-package-maven-plugin</artifactId>
+           <configuration>
+               <allowIndexDefinitions>true</allowIndexDefinitions>
+               <properties>
+                   <cloudManagerTarget>none</cloudManagerTarget>
+                   <noIntermediateSaves>true</noIntermediateSaves>
+               </properties>
+       ...
+   </plugin>
+   ```
 
-1. 停用節點型別驗證。 在filevault外掛程式設定的jackrabbit-nodetypes區段中設定以下屬性：
+4. 新增篩選器 `/oak:index` 在 `ui.apps.structure/pom.xml`：
 
-```xml
-<isDisabled>true</isDisabled>
-```
+   ```xml
+   <filters>
+       ...
+       <filter><root>/oak:index</root></filter>
+   </filters>
+   ```
 
-以下範例說明將上述設定放入pom中的位置。
-
-```xml
-<plugin>
-    <groupId>org.apache.jackrabbit</groupId>
-    <artifactId>filevault-package-maven-plugin</artifactId>
-    ...
-    <configuration>
-    ...
-        <validatorsSettings>
-        ...
-            <jackrabbit-nodetypes>
-                <isDisabled>true</isDisabled>
-            </jackrabbit-nodetypes>
-        </validatorsSettings>
-    </configuration>
-</plugin>
-```
+新增索引定義後，請使用Cloud Manager部署新的應用程式。 此部署會起始兩個工作，負責將索引定義分別新增（並在必要時合併）至MongoDB和Azure區段存放區，以供編寫和發佈。 在切換之前，基礎存放庫會使用更新的索引定義重新索引。
 
 >[!TIP]
 >
@@ -307,7 +331,7 @@ Adobe變更開箱即用的索引（例如「damAssetLucene」或「cqPageLucene�
 
 ### 還原變更 {#undoing-a-change}
 
-有時候，必須還原索引定義中的變更。 原因可能是錯誤地進行了變更，或不再需要變更。 例如，索引定義 `damAssetLucene-8-custom-3` 錯誤建立且已部署。 因此，您可能想要還原成先前的索引定義 `damAssetLucene-8-custom-2`. 若要這麼做，請新增一個名為的索引 `damAssetLucene-8-custom-4` 包含上一個索引的定義， `damAssetLucene-8-custom-2`.
+有時候，必須復原索引定義中的修改。 這可能是由於意外錯誤或不再需要修改所造成。 以索引定義為例 `damAssetLucene-8-custom-3,` 錯誤建立且已部署的專案。 因此，您想要恢復為先前的索引定義， `damAssetLucene-8-custom-2.` 若要完成此操作，您必須引入名為的新索引 `damAssetLucene-8-custom-4` 合併先前索引的定義， `damAssetLucene-8-custom-2.`
 
 ### 移除索引 {#removing-an-index}
 
