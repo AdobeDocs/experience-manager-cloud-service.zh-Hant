@@ -2,9 +2,9 @@
 title: 使用內容片段（資產 — 內容片段）
 description: 瞭解Adobe Experience Manager (AEM)as a Cloud Service中的內容片段如何讓您設計、建立、組織和使用獨立於頁面的內容，非常適合頁面製作和headless傳送。
 exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '2132'
+source-wordcount: '2134'
 ht-degree: 4%
 
 ---
@@ -289,7 +289,7 @@ AEM內容片段可用於說明和管理結構化內容。 結構化內容在可�
 
    * 有助於以HTML和/或JSON格式傳送片段。
    * 必填 [在頁面上參考片段](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
-   * 負責片段的佈局和傳遞；即頻道。
+   * 負責片段的佈局和傳送；即管道。
    * 片段需要一或多個專用元件來定義版面並傳遞部分或全部元素/變數和相關內容。
    * 在製作中將片段拖曳到頁面上會自動建立所需元件的關聯。
 

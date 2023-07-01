@@ -2,10 +2,10 @@
 title: 資料保護和資料隱私權法規 - Adobe Experience Manager as a Cloud Service Sites 整備
 description: 了解對各種資料保護和資料隱私權法規的 Adobe Experience Manager as a Cloud Service Sites 支援；包括歐盟一般資料保護規範 (GDPR)、加州消費者隱私法，以及在實施新的 AEM as a Cloud Service 專案時如何遵守。
 exl-id: fdcad111-0cdd-46cc-964c-3f8669ca2030
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '1028'
-ht-degree: 93%
+source-wordcount: '1025'
+ht-degree: 86%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 93%
 >
 >本文件的內容並不構成法律建議，其宗旨並非取代專業的法律建議。
 >
->有關資料保護和數據隱私權法規的建議，請諮詢貴公司的法律部門。
+>如需資料保護與資料隱私權法規的相關建議，請洽詢貴公司的法律部門。
 
 >[!NOTE]
 >
@@ -23,7 +23,7 @@ ht-degree: 93%
 
 Adobe Experience Manager as a Cloud Service Sites 已準備好幫助客戶履行其資料隱私權和保護的合規義務。此頁面將指導客戶完成在 AEM Sites 中處理此類請求的過程。它描述了儲存私人資料的位置，以及如何以手動方式或使用程式碼移除它們。
 
-如需更進一步的資訊，請參閱 [Adobe 隱私權中心](https://www.adobe.com/tw/privacy.html)。
+如需詳細資訊，請參閱 [Adobe隱私權中心](https://www.adobe.com/tw/privacy.html).
 
 >[!NOTE]
 >
@@ -37,7 +37,7 @@ Adobe Experience Manager as a Cloud Service Sites 已準備好幫助客戶履行
 
 用於驗證網站訪客身分的使用者帳戶以及發佈伺服器上的 UGC 內容都包含在 [AEM Foundation 文件](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md)中。
 
-預設情況下，AEM Sites 元件不會將訪客輸入的表單資料存放在發佈伺服器上。 建議將資料轉發給第三方系統或 Adobe Campaign 進行進一步處理。
+預設情況下，AEM Sites 元件不會將訪客輸入的表單資料存放在發佈伺服器上。 建議將資料轉送至協力廠商系統或Adobe Campaign進行進一步處理。
 
 ## 選擇退出/選擇加入 {#opt-in-opt-out}
 
@@ -76,13 +76,13 @@ Adobe Experience Manager 受用於管理使用者選擇加入/選擇退出的 co
 
 AEM Sites 包括與 Analytics Foundation 的選擇性整合，後者使用 Adobe Analytics 隨選服務中的功能。
 
-有關管理與 Adobe Analytics 相關的資料主體請求的進一步資訊，請參閱 [Adobe Analytics 和資料隱私權](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-view-settings.html)。
+如需管理與Adobe Analytics相關的資料主體請求的詳細資訊，請參閱 [Adobe Analytics與資料隱私權](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-view-settings.html).
 
 ## Personalization Foundation by Target {#personalization-foundation-by-target}
 
 AEM Sites 包括與 Personalization Foundation by Target 的選擇性整合，後者使用 Adobe Target 隨選服務中的功能。
 
-有關管理與 Adobe Target 相關的資料主體請求的進一步資訊，請參閱 [Adobe Target - 隱私權和一般資料保護規範](https://experienceleague.adobe.com/docs/target-dev/developer/implementation/privacy/cmp-privacy-and-general-data-protection-regulation.html)。
+有關管理與Adobe Target相關的資料主體請求的資訊，請參閱 [Adobe Target — 隱私權與一般資料保護規範](https://experienceleague.adobe.com/docs/target-dev/developer/implementation/privacy/cmp-privacy-and-general-data-protection-regulation.html).
 
 ## ContextHub {#contexthub}
 

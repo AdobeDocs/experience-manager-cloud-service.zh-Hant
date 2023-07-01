@@ -2,9 +2,9 @@
 title: ContextHub 診斷
 description: ContextHub提供診斷頁面，您可在其中檢視ContextHub架構的概觀
 exl-id: c8d4e160-ea02-49f3-9e31-119445ef5a68
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '439'
+source-wordcount: '438'
 ht-degree: 1%
 
 ---
@@ -19,7 +19,7 @@ ContextHub提供診斷頁面，您可在其中檢視ContextHub架構的概觀。
 
 >[!NOTE]
 >
->為了傳回診斷資訊，必須啟用偵錯模式，否則診斷頁面為空白。 請參閱 [本檔案](configuring-contexthub.md#debugging-contexthub) 以取得如何啟用偵錯模式的詳細資訊。
+>為了傳回診斷資訊，必須啟用偵錯模式，否則診斷頁面為空白。 另請參閱 [本檔案](configuring-contexthub.md#debugging-contexthub) 以取得如何啟用偵錯模式的詳細資訊。
 
 ## 商店 {#stores}
 
@@ -52,8 +52,8 @@ Clientlibs區段會列出所有的 [使用者端資料庫資料夾](/help/implem
 URL區段包含ContextHub功能的連結：
 
 * **設定編輯器：** 開啟 [ContextHub設定頁面](configuring-contexthub.md) 您可以在此處設定存放區、UI模式和UI模組。
-* **ContextHub模組的設定：** 開啟 `/etc/cloudsettings/default/contexthub.config.kernel.js` 檔案，其中包含ContextHub存放區設定的Javascript物件表示。
-* **ContextHub UI的設定：** 開啟 `/etc/cloudsettings/default/contexthub.config.ui.js` 檔案，其中包含ContextHub UI模式設定的Javascript物件表示。
+* **ContextHub模組的設定：** 開啟 `/etc/cloudsettings/default/contexthub.config.kernel.js` 檔案，其中包含ContextHub存放區設定的JavaScript物件表示。
+* **ContextHub UI的設定：** 開啟 `/etc/cloudsettings/default/contexthub.config.ui.js` 檔案，其中包含ContextHub UI模式設定的JavaScript物件表示。
 * **kernel.js：** 開啟 `/etc/cloudsettings/default/contexthub.kernel.js` 檔案，其中包含實作ContextHub架構、區段引擎和存放區型別的使用者端程式庫原始碼。
 * **ui.js：** 開啟 `/etc/cloudsettings/default/contexthub.ui.js` 檔案，其中包含實作ContextHub UI和UI模組型別的使用者端程式庫原始碼。
 * **style.css：** 開啟 `/etc/cloudsettings/default/contexthub.styles.css` 檔案，其中包含ContextHub UI和UI模組的CSS樣式。

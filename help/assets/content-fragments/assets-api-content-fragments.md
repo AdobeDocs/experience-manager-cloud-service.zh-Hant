@@ -3,9 +3,9 @@ title: Assets HTTP API中的Adobe Experience Manager as a Cloud Service內容片
 description: 瞭解資產HTTP API支援內容片段，這是AEM Headless傳送功能的重要部分。
 feature: Content Fragments,Assets HTTP API
 exl-id: d72cc0c0-0641-4fd6-9f87-745af5f2c232
-source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '1783'
+source-wordcount: '1785'
 ht-degree: 18%
 
 ---
@@ -74,7 +74,6 @@ Assets REST API提供 [REST](https://en.wikipedia.org/wiki/Representational_stat
 >
 >* `/api/assets`**不需要**&#x200B;使用 `.model` 選擇器。
 >* `/content/path/to/page` **需要**&#x200B;使用 `.model` 選擇器。
-
 
 HTTP 方法決定要執行的操作：
 
@@ -148,12 +147,11 @@ HTTP 方法決定要執行的操作：
 
 >[!NOTE]
 >
->如需進一步詳細資訊，請參閱：
+>如需詳細資訊，請參閱：
 >
 >* [CORS/AEM 說明](https://helpx.adobe.com/tw/experience-manager/kt/platform-repository/using/cors-security-article-understand.html)
 >* [影片 - 使用 AEM 開發 CORS](https://helpx.adobe.com/tw/experience-manager/kt/platform-repository/using/cors-security-technical-video-develop.html)
 >
-
 
 在有特定驗證需求的環境中，建議使用OAuth。
 
@@ -161,10 +159,10 @@ HTTP 方法決定要執行的操作：
 
 內容片段是特定型別的資產，請參閱 [使用內容片段](/help/assets/content-fragments/content-fragments.md).
 
-如需透過API可用功能的進一步資訊，請參閱：
+如需透過API可用功能的詳細資訊，請參閱：
 
 * 此 [Assets REST API](/help/assets/mac-api-assets.md)
-* [實體型別](/help/assets/content-fragments/assets-api-content-fragments.md#entity-types)，其中說明每種受支援型別（與內容片段相關）的特定功能
+* [實體型別](/help/assets/content-fragments/assets-api-content-fragments.md#entity-types)，其中說明每種支援型別（與內容片段相關）的特定功能
 
 ### 分頁 {#paging}
 
@@ -230,7 +228,7 @@ A [內容片段](/help/assets/content-fragments/content-fragments.md) 是一種�
 * 不要公開任何二進位資料。
 * 完全包含在JSON輸出中(在 `properties` 屬性)。
 
-* 也視為原子元素，即元素和變數會作為片段屬性的一部分公開，而會作為連結或子實體公開。 這允許對片段的有效裝載存取。
+* 也視為原子元素，也就是說，元素和變數會作為片段屬性的一部分公開，而不是作為連結或子實體公開。 這允許對片段的有效裝載存取。
 
 #### 內容模型和內容片段 {#content-models-and-content-fragments}
 
@@ -275,68 +273,71 @@ A [內容片段](/help/assets/content-fragments/content-fragments.md) 是一種�
 
 * **200** （確定）
 
-   傳回時間：
+  傳回時間：
 
    * 透過請求內容片段 `GET`
    * 透過成功更新內容片段 `PUT`
 
 * **201** （已建立）
 
-   傳回時間：
+  傳回時間：
 
    * 透過成功建立內容片段 `POST`
 
 * **404** （找不到）
 
-   傳回時間：
+  傳回時間：
 
    * 請求的內容片段不存在
 
 * **500** （內部伺服器錯誤）
 
-   >[!NOTE]
-   >
-   >傳回此錯誤：
-   >
-   >* 當發生無法使用特定程式碼識別的錯誤時
-   >* 當指定的裝載無效時
+  >[!NOTE]
+  >
+  >傳回此錯誤：
+  >
+  >* 當發生無法使用特定程式碼識別的錯誤時
+  >* 當指定的裝載無效時
 
-
-   以下列出傳回此錯誤狀態的常見案例，以及產生的錯誤訊息（等寬）：
+  以下列出傳回此錯誤狀態的常見案例，以及產生的錯誤訊息（等寬）：
 
    * 父資料夾不存在（透過建立內容片段時） `POST`)
    * 未提供任何內容片段模型（缺少cq：model）、無法讀取（由於無效路徑或許可權問題）或沒有有效的片段模型：
 
       * `No content fragment model specified`
       * `Cannot create a resource of given model '/foo/bar/qux'`
+
    * 無法建立內容片段（可能是許可權問題）：
 
       * `Could not create content fragment`
+
    * 無法更新標題和/或說明：
 
       * `Could not set value on content fragment`
+
    * 無法設定中繼資料：
 
       * `Could not set metadata on content fragment`
+
    * 找不到內容元素或無法更新
 
       * `Could not update content element`
       * `Could not update fragment data of element`
 
-   詳細錯誤訊息通常會以下列方式傳回：
+  詳細錯誤訊息通常會以下列方式傳回：
 
-   ```xml
-   {
-     "class": "core/response",
-     "properties": {
-       "path": "/api/assets/foo/bar/qux",
-       "location": "/api/assets/foo/bar/qux.json",
-       "parentLocation": "/api/assets/foo/bar.json",
-       "status.code": 500,
-       "status.message": "...{error message}.."
-     }
-   }
-   ```
+  ```xml
+  {
+    "class": "core/response",
+    "properties": {
+      "path": "/api/assets/foo/bar/qux",
+      "location": "/api/assets/foo/bar/qux.json",
+      "parentLocation": "/api/assets/foo/bar.json",
+      "status.code": 500,
+      "status.message": "...{error message}.."
+    }
+  }
+  ```
 
 ## API 參考 {#api-reference}
 
@@ -350,7 +351,7 @@ A [內容片段](/help/assets/content-fragments/content-fragments.md) 是一種�
 
 ## 其他資源 {#additional-resources}
 
-如需進一步詳細資訊，請參閱：
+如需詳細資訊，請參閱：
 
 * [Assets HTTP API檔案](/help/assets/mac-api-assets.md)
 * [AEM Gem工作階段： OAuth](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-oauth-server-functionality-in-aem.html)

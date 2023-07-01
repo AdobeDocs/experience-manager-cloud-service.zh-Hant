@@ -4,9 +4,9 @@ description: 了解如何使用 AEM 強大的 Live Copy 和多網站管理員功
 feature: Multi Site Manager
 role: Admin
 exl-id: 22b4041f-1df9-4189-8a09-cbc0c89fbf2e
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '2705'
+source-wordcount: '2706'
 ht-degree: 96%
 
 ---
@@ -155,7 +155,7 @@ MSM 可以使用相關主控台的各種選項直接在 UI 中存取 MSM。
 | 來源 | 作為 Live Copy 基礎的原始頁面 | 與藍圖和/或藍圖頁是同義字 |
 | Live Copy | (來源的) 副本，由推出設定定義的同步動作進行維護 |  |
 | Live Copy 設定 | 定義 Live Copy 的設定詳細資料 |  |
-| 即時關係 | 有效定義給定資源 (即來源和 Live Copy 之間的連接) 的繼承 | 確保對來源的變更可以與 Live Copy 同步 |
+| 即時關係 | 指定資源之繼承的有效定義，亦即來源與即時副本之間的連線 | 確保對來源的變更可以與 Live Copy 同步 |
 | 藍圖 | 與來源是同義字 | 可以由藍圖設定來定義 |
 | 藍圖設定 | 指定源路徑的預先定義設定 | 在藍圖設定中有參考藍圖頁面時，推出命令即可使用 |
 | 章節 | 要包含在 Live Copy 中的藍圖部分 | 這些通常是根的子頁面 |

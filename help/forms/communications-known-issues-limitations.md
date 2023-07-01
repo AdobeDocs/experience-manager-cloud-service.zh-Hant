@@ -2,9 +2,9 @@
 title: 考量已知問題和最佳實務
 description: 通訊最佳實務、已知問題和限制
 exl-id: e95615dd-e494-40cd-9cdf-6e9761ca3b3e
-source-git-commit: 4b76fbbb1b58324065b39d6928027759b0897246
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '1707'
+source-wordcount: '1709'
 ht-degree: 0%
 
 ---
@@ -161,7 +161,7 @@ Type-1和OpenType®字型未內嵌在PCL輸出中。 使用Type-1和OpenType®�
 
 * 您只能在列印選項清單中使用一次特定的轉譯型別(PDF、列印)。 例如，不能有兩個PRINT選項，每個選項都指定PCL演算型別。
 
-* 對於批次設定，只有OutputType (PDF、列印)和RenderType （PostScript、PCL、IPL、ZPL等）值組合的一個例項 允許。
+* 對於批次設定，只允許一個OutputType (PDF、列印)和RenderType （PostScript、PCL、IPL、ZPL等）值的組合例項。
 
 * 若為非同步API （批次處理），則預設記錄層級設為2。 您可以使用自訂XCI將記錄層級變更為1。
 

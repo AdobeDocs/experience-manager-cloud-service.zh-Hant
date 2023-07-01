@@ -2,10 +2,10 @@
 title: 專案建立精靈
 description: 了解專案建立精靈，以幫助您在建立生產計畫後快速設定專案。
 exl-id: 03736ca7-1345-4faf-a61a-f9213ab5c89a
-source-git-commit: 93cb0ffa87f2338518c2a23de4e0a692031e1a71
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '316'
-ht-degree: 100%
+source-wordcount: '312'
+ht-degree: 96%
 
 ---
 
@@ -42,7 +42,7 @@ ht-degree: 100%
 
 現在，您已將根據 AEM 原型的 AEM 專案新增到您的 Git 存放庫中，作為您專案開發的基礎。接下來，您可以建立能部署專案計劃碼的環境。
 
-若要了解如何新增或管理環境的詳細資訊，請參閱文件：[管理您的環境](/help/implementing/cloud-manager/manage-environments.md)。
+另請參閱 [管理環境](/help/implementing/cloud-manager/manage-environments.md) 以瞭解如何新增或管理環境。
 
 >[!NOTE]
 >

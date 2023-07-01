@@ -2,9 +2,9 @@
 title: 將體驗片段匯出到 Adobe Target
 description: 將體驗片段匯出到 Adobe Target
 exl-id: 752d91f9-13a6-40c2-9425-7d18dafe9205
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '2250'
+source-wordcount: '2245'
 ht-degree: 1%
 
 ---
@@ -48,7 +48,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->如需詳細資訊，另請參閱：
+>如需詳細資訊，請參閱下列內容：
 >
 >* [Adobe Target開發](https://developers.adobetarget.com/)
 >* [核心元件 — 體驗片段](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
@@ -356,7 +356,7 @@ When you associate a page with the framework, the child pages inherit the associ
 
 ## 在Adobe Target中使用您的體驗片段 {#using-your-experience-fragments-in-adobe-target}
 
-執行上述工作後，體驗片段會顯示在Target的「選件」頁面中。 請檢視 [特定Target檔案](https://experiencecloud.adobe.com/resources/help/en_US/target/target/aem-experience-fragments.html) 以瞭解您可以達到的目的。
+執行上述工作後，體驗片段會顯示在Target的「選件」頁面中。 另請參閱 [特定Target檔案](https://experiencecloud.adobe.com/resources/help/en_US/target/target/aem-experience-fragments.html) 以瞭解您可以達到的目的。
 
 >[!NOTE]
 >

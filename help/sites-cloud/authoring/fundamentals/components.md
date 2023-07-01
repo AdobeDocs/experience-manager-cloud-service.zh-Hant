@@ -2,9 +2,9 @@
 title: 元件
 description: 元件是AEM中內容頁面的基本撰寫建置區塊
 exl-id: a8118329-1330-49b0-a3f8-a27774f1c5df
-source-git-commit: 171aca87ff725a2f142f0336dca3491e213f55ab
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '349'
+source-wordcount: '347'
 ht-degree: 2%
 
 ---
@@ -31,7 +31,7 @@ AEM隨附多種現成的元件，為網站作者提供全方位功能。 它們�
 * [編輯內容](/help/sites-cloud/authoring/fundamentals/editing-content.md)
 * [編輯內容 — 全熒幕模式](/help/sites-cloud/authoring/fundamentals/editing-content.md#edit-content-full-screen-mode)
 
-如需有關將元件新增至頁面的進一步資訊，請參閱文章 [編輯頁面內容](/help/sites-cloud/authoring/fundamentals/editing-content.md).
+如需將元件新增至頁面的詳細資訊，請參閱 [編輯頁面內容](/help/sites-cloud/authoring/fundamentals/editing-content.md).
 
 ## 所有元件概觀 {#overview-of-all-components}
 

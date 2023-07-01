@@ -2,10 +2,10 @@
 title: 自訂網域名稱簡介
 description: Cloud Manager 的 UI 可讓您新增自訂網域，以自助方式使用唯一的品牌名稱來識別您的網站。
 exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '768'
-ht-degree: 94%
+source-wordcount: '766'
+ht-degree: 93%
 
 ---
 
@@ -74,4 +74,4 @@ AEM as a Cloud Service 提供內建的內容傳遞網路 (CDN) 服務，但也�
 * 同一個網域名稱不能在多個環境中使用。
 * 一次只能新增一個網域名稱。
 * AEM as a Cloud Service 不支援萬用字元網域，例如 `*.example.com`。
-* 在新增自訂網域名稱之前，必須為您的程序安裝包含自訂網域名稱的有效 SSL 憑證 (萬用字元憑證有效)。如需了解更多資訊，請參閱[新增 SSL 憑證](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)。
+* 在新增自訂網域名稱之前，必須為您的程序安裝包含自訂網域名稱的有效 SSL 憑證 (萬用字元憑證有效)。另請參閱 [新增SSL憑證](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) 以深入瞭解。

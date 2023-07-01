@@ -2,7 +2,7 @@
 title: 使用 Sling 介面卡
 description: Sling提供Adapter模式，方便翻譯實作Adaptable介面的物件
 exl-id: 8ffe3bbd-01fe-44c2-bf60-7a4d25a6ba2b
-source-git-commit: 5311ba7f001201fc94c73fa52bc7033716c1ba78
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '2214'
 ht-degree: 1%
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 [Sling](https://sling.apache.org) 提供 [介面卡模式](https://sling.apache.org/documentation/the-sling-engine/adapters.html) 方便翻譯實作 [可調整](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/adapter/Adaptable.html#adaptTo%28java.lang.Class%29) 介面。 此介面提供了一般 [adaptTo()](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/adapter/Adaptable.html#adaptTo%28java.lang.Class%29) 將物件轉譯為作為引數傳遞的類別型別的方法。
 
-例如，若要將Resource物件轉譯為對應的Node物件，您只需執行下列操作即可：
+例如，若要將Resource物件轉譯為對應的Node物件，您只需執行下列動作：
 
 ```java
 Node node = resource.adaptTo(Node.class);

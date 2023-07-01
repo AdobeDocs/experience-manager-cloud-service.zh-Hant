@@ -2,10 +2,10 @@
 title: Launch
 description: Launches 可讓您有效率地開發未來版本的內容。可讓您完成變更以供未來發佈，同時維護目前的頁面
 exl-id: 3e410120-d08f-4d05-932f-07bc4440af2b
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '903'
-ht-degree: 94%
+ht-degree: 90%
 
 ---
 
@@ -67,7 +67,7 @@ Launches 可讓您：
       * 如果 **生產就緒** 旗標已設定，啟動會自動升級至指定上的生產頁面 **Launch**(**即時**) **日期**. 提升後，生產頁面會自動發佈。\
         如果未設定日期，則該標幟將無效。
 * 並行更新來源頁面和 Launch 頁面：
-   * 對來源頁面的變更會自動實作在 Launch 副本 (如果設定為繼承，即為 Live Copy)。
+   * 對來源頁面所做的變更會自動在啟動副本中實作（若已透過繼承設定；即作為即時副本）。
    * 可以在不中斷這些自動更新或來源頁面的情況下，對 Launch 副本進行變更。
 
   ![並行動作](/help/sites-cloud/authoring/assets/launches-parallel.png)

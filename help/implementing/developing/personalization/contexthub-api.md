@@ -1,21 +1,21 @@
 ---
-title: ContextHub Javascript API參考
-description: 將ContextHub元件新增至頁面後，您的指令碼即可使用ContextHub Javascript API
+title: ContextHub JavaScript API參考
+description: 將ContextHub元件新增至頁面後，您的指令碼即可使用ContextHub JavaScript API
 exl-id: ec35bef5-610c-4e85-a43a-d4201b5eb03e
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '4620'
 ht-degree: 2%
 
 ---
 
-# ContextHub Javascript API參考 {#contexthub-javascript-api-reference}
+# ContextHub JavaScript API參考 {#contexthub-javascript-api-reference}
 
-ContextHub Javascript API適用於您的指令碼，當 [ContextHub元件已新增至頁面](adding-contexthub.md).
+ContextHub JavaScript API適用於您的指令碼，當 [ContextHub元件已新增至頁面](adding-contexthub.md).
 
 ## ContextHub常數 {#contexthub-constants}
 
-ContextHub Javascript API定義的常數值。
+ContextHub JavaScript API定義的常數值。
 
 ### 事件常數 {#event-constants}
 
@@ -62,7 +62,7 @@ ContextHub Javascript API定義的常數值。
 | `ContextHub.Constants.EVENT_UI_INITIALIZED` | UI容器初始化時引發 | `ui-initialized` |
 | `ContextHub.Constants.ACTIVE_UI_MODE` | 指示作用中的UI模式 | `/_/active-ui-mode` |
 
-## ContextHub Javascript API參考 {#contexthub-javascript-api-reference-2}
+## ContextHub JavaScript API參考 {#contexthub-javascript-api-reference-2}
 
 ContextHub物件可讓您存取所有存放區。
 
@@ -89,7 +89,7 @@ var geoloc = allStores.geolocation
 
 #### getStore(name) {#getstore-name}
 
-將存放區擷取為Javascript物件。
+擷取作為JavaScript物件的存放區。
 
 ##### 參數 {#parameters-}
 
@@ -369,7 +369,7 @@ A `boolean` 值：
 
 包含JSON資料的存放區。 資料會從外部JSONP服務擷取，或選擇性地從傳回JSON資料的服務擷取。 使用指定服務詳細資料 [`init`](#init-name-config) 建立此類別的執行個體時執行函式。
 
-存放區使用記憶體內持續性（Javascript變數）。 存放區資料僅在頁面存留期內可用。
+存放區使用記憶體內持續性（JavaScript變數）。 存放區資料僅在頁面存留期內可用。
 
 ContextHub.Store.JSONPStore延伸 [ContextHub.Store.Core](#contexthub-store-core) 並繼承該類別的函式。
 
@@ -441,7 +441,7 @@ A `string` 代表服務URL的值。
 * **`config`：** （物件）包含服務屬性的物件。 JSONPStore物件會使用 `service` 物件來建構JSONP服務的URL：
    * `eventDeferring`: 32.
    * `eventing`：此存放區的ContextHub.Utils.Eventing物件。 預設值為 `ContextHub.eventing` 物件。
-   * `persistence`：此存放區的ContextHub.Utils.Persistence物件。 預設會使用記憶體持續性（Javascript物件）。
+   * `persistence`：此存放區的ContextHub.Utils.Persistence物件。 預設會使用記憶體持續性（JavaScript物件）。
    * `service`: (物件)
       * `host`：（字串）伺服器名稱或IP位址。
       * `jsonp`：（布林值）如果值為true，表示服務是JSONP服務；否則為false。 為真時， `{callback: "ContextHub.Callbacks.*Object.name*}`物件已新增至 `service.params`.
@@ -489,7 +489,7 @@ A `string` 代表服務URL的值。
 
 ## ContextHub.Store.SessionStore {#contexthub-store-sessionstore}
 
-`ContextHub.Store.SessionStore` 延伸 [ContextHub.Store.Core](#contexthub-store-core) 所以它會繼承該類別的所有函式。 此存放區中的資料會使用記憶體內持續性（Javascript物件）持續存在。
+`ContextHub.Store.SessionStore` 延伸 [ContextHub.Store.Core](#contexthub-store-core) 所以它會繼承該類別的所有函式。 此存放區中的資料是使用記憶體內持續性（JavaScript物件）來持續儲存。
 
 ## ContextHub.UI {#contexthub-ui}
 
@@ -773,7 +773,7 @@ ContextHub.Utils.Cookie.setItem("name", "mycookie", {
 
 ##### 傳回 {#returns-parse}
 
-Javascript物件。
+javascript物件。
 
 ##### 範例 {#example-parse}
 
@@ -795,7 +795,7 @@ Object {
 
 #### stringify(data) {#stringify-data}
 
-將Javascript值和物件序列化為JSON格式的字串值。
+將JavaScript值和物件序列化為JSON格式的字串值。
 
 ##### 參數 {#parameters-stringify}
 
@@ -869,7 +869,7 @@ ContextHub.Utils.JSON.stringify({
 
 ##### 範例 {#example-getitem-2}
 
-請考量下列Javascript物件：
+請考量下列JavaScript物件：
 
 ```javascript
 myObject {
@@ -1045,7 +1045,7 @@ ContextHub.Utils.JSON.tree.sanitizeKey(key)
 
 ##### 範例 {#example-setitem-2}
 
-考量下列Javascript程式碼：
+考量下列JavaScript程式碼：
 
 ```javascript
 var myObject = {

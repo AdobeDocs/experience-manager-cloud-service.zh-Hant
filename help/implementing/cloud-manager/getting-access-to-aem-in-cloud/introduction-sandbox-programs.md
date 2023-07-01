@@ -2,10 +2,10 @@
 title: 沙箱程序簡介
 description: 了解沙箱程序與生產程序有何不同。
 exl-id: 4606590c-6826-4794-9d2e-5548a00aa2fa
-source-git-commit: 2ad5bdc886f3c47b6ee600e69c6e40f1df071cbc
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '487'
-ht-degree: 100%
+source-wordcount: '475'
+ht-degree: 85%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 
 建立沙箱程序的目的通常是提供培訓、執行示範、培訓、或概念證明 (POC) ，而不是承載即實流量。
 
-沙箱程序是 AEM Cloud Service 中可用的兩種程序之一，另一種是[生產程序。](introduction-production-programs.md)請參考[了解程序和程序類型](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)了解有關程序類型的更多資訊。
+沙箱程序是 AEM Cloud Service 中可用的兩種程序之一，另一種是[生產程序。](introduction-production-programs.md) 另請參閱 [瞭解方案和方案型別](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) 以進一步瞭解程式型別。
 
 ## 自動建立 {#auto-creation}
 
@@ -49,7 +49,7 @@ ht-degree: 100%
 
 ### 非進階網路 {#advanced-networking}
 
-[進階網路功能](/help/security/configuring-advanced-networking.md) (例如自助式佈建 VPN、非標準連接埠、專用輸出 IP 位址等)在沙箱程序中不可用。
+[進階網路功能](/help/security/configuring-advanced-networking.md) 沙箱程式中無法使用（例如VPN、非標準連線埠、專用出口IP地址的自助配置）。
 
 ### 手動 AEM 更新 {#updates}
 
@@ -58,15 +58,15 @@ AEM 更新不會自動推送到沙箱程序，但可以手動應用於沙箱程�
 * 僅當目標環境具有正確配置的管道時，才能執行手動更新。
 * 對生產或登台環境的手動更新將自動更新另一個。Production+Stage 環境集必須位於同一 AEM 版本上。
 
-如需更多詳細資訊，請參閱文件：[AEM 版本更新](/help/implementing/deploying/aem-version-updates.md)。
+另請參閱 [AEM版本更新](/help/implementing/deploying/aem-version-updates.md) 以取得更多詳細資料。
 
-請參考文件[更新環境](/help/implementing/cloud-manager/manage-environments.md#updating-dev-environment)學習如何更新環境。
+另請參閱 [更新環境](/help/implementing/cloud-manager/manage-environments.md#updating-dev-environment) 以瞭解如何更新環境。
 
 ### 休眠和刪除 {#hibernation}
 
 沙箱計劃內的環境在八小時不活動後自動休眠。沙箱環境會在連續休眠六個月後刪除。
 
-如需如何去休眠環境和自動刪除沙箱的詳細資訊，請參閱[休眠和去休眠沙箱環境](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md)。
+另請參閱 [使沙箱環境休眠和解除沙箱環境休眠](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md) 瞭解更多有關如何解除環境休眠和自動沙箱刪除的詳細資訊。
 
 ### 無技術支援 {#no-support}
 

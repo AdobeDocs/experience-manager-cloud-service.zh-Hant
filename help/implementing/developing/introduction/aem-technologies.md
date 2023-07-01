@@ -2,10 +2,10 @@
 title: AEM 技術基礎
 description: AEM技術基礎的概觀，包括AEM的結構和基本技術，如JCR、Sling和OSGi。
 exl-id: ab6e7fe9-a25d-4351-a005-f4466cc0f40e
-source-git-commit: 92c123817a654d0103d0f7b8e457489d9e82c2ce
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '2144'
+ht-degree: 1%
 
 ---
 
@@ -162,7 +162,7 @@ Felix管理主控台會列出指定AEM執行個體支援的指令碼引擎清單
    * 例如 `../content/corporate/jobs/developer.pdf`
    * 指令碼為 `/apps/hr/jobs/jobs.pdf.esp`；字尾會新增至指令碼名稱。
 * 具有選取器的URL
-   * 選取器可用來以替代格式顯示相同的內容。 例如，適合印表機的版本、rss摘要或摘要。
+   * 選取器可用來以替代格式顯示相同的內容。 例如，適合印表機的版本、RSS摘要或摘要。
    * 如果您檢視適合印表機的版本，選擇器可能是 `print`；如在 `../content/corporate/jobs/developer.print.html`
    * 指令碼為 `/apps/hr/jobs/jobs.print.esp`；選取器會新增至指令碼名稱。
 * 如果否， `sling:resourceType` 定義之後：

@@ -2,9 +2,9 @@
 title: 與 Adobe Analytics 整合時使用的 IMS 設定
 description: 瞭解與Adobe Analytics整合時使用的IMS設定
 exl-id: 12bd1573-373a-4001-be71-c8f155ef6896
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '887'
+source-wordcount: '886'
 ht-degree: 5%
 
 ---
@@ -45,7 +45,7 @@ ht-degree: 5%
 1. 在AEM中開啟 **工具** 功能表。
 1. 在 **安全性** 區段選取 **Adobe IMS設定**.
 1. 選取 **建立** 以開啟 **Adobe IMS技術帳戶設定**.
-1. 使用下方的下拉式清單 **雲端設定**，選取 **Adobe Analytics**.
+1. 使用下的下拉式清單 **雲端設定**，選取 **Adobe Analytics**.
 1. 啟動 **建立新憑證** 並輸入新別名。
 1. 確認方式 **建立憑證**.
 

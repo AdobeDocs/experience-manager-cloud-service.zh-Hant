@@ -4,9 +4,9 @@ description: 瞭解Adobe Experience Manager (AEM)as a Cloud Service中的內容�
 feature: Content Fragments
 role: User
 exl-id: d12b1dda-85ce-4665-b8b1-915b74231bb8
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '2121'
+source-wordcount: '2122'
 ht-degree: 4%
 
 ---
@@ -87,7 +87,7 @@ ht-degree: 4%
 >
 >體驗片段可以包含內容片段形式的內容，反之則不行。
 >
->如需詳細資訊，另請參閱 [瞭解AEM中的內容片段和體驗片段](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html#content-fragments).
+>如需詳細資訊，請參閱 [瞭解AEM中的內容片段和體驗片段](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html#content-fragments).
 
 ## 內容片段與內容服務 {#content-fragments-and-content-services}
 
@@ -294,7 +294,7 @@ AEM內容片段可用於說明和管理結構化內容。 結構化內容在可�
 
    * 有助於以HTML和/或JSON格式傳送片段。
    * 必填 [在頁面上參考片段](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
-   * 負責片段的佈局和傳遞；即頻道。
+   * 負責片段的佈局和傳送；即管道。
    * 片段需要一或多個專用元件來定義版面並傳遞部分或全部元素/變數和相關內容。
    * 在製作中將片段拖曳到頁面上會自動建立所需元件的關聯。
 

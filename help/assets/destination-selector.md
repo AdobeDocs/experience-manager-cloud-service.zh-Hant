@@ -3,10 +3,10 @@ title: AEM as a Cloud Service 的目標選擇器
 description: 使用 AEM 目標選擇器顯示和選取可用為原始資產副本的資產。
 contentOwner: Adobe
 role: Admin,User
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '1909'
-ht-degree: 95%
+source-wordcount: '1911'
+ht-degree: 93%
 
 ---
 
@@ -130,7 +130,7 @@ interface SelectedDestination {
 | *repo:size* | 數字 | 資產的大小，以位元組計。 |
 | *repo:path* | 字串 | 資產在存放庫中的位置。 |
 | *repo:ancestors* | `Array<string>` | 存放庫中資產的上階項目陣列。 |
-| *repo:state* | 字串 | 存放庫中資產的目前狀態 (例如使用中、已刪除等)。 |
+| *repo:state* | 字串 | 存放庫中資產的目前狀態（例如，作用中、已刪除等）。 |
 | *repo:createdBy* | 字串 | 建立資產的使用者或系統。 |
 | *repo:createDate* | 字串 | 建立資產的日期與時間。 |
 | *repo:modifiedBy* | 字串 | 上次修改資產的使用者或系統。 |
@@ -188,7 +188,7 @@ interface SelectedDestination {
 | *imsOrg* | 字串 | 是 | | Adobe Identity Management System (IMS) ID 是在為您的組織佈建 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 時所指派的。此 `imsOrg` 需要金鑰才能驗證您要存取的組織是否在Adobe IMS之下。 |
 | *imsToken* | 字串 | 否 | | 用於身份驗證的 IMS 持有人語彙基元。`imsToken` 如果您使用SUSI流程，則不需要使用。 不過，如果您使用非SUSI流程，則需要使用。 |
 | *apiKey* | 字串 | 否 | | 用於存取 AEM Discovery 服務的 API 金鑰。`apiKey` 如果您使用SUSI流程，則不需要使用。 但是，在非 SUSI 流程中即需要。 |
-| *rootPath* | 字串 | 否 | /content/dam/ | 目標選擇器會顯示資產的資料夾路徑。`rootPath` 也可以使用封裝形式。例如，若指定以下路徑，`/content/dam/marketing/subfolder/`，目標選擇器即不允許您穿越任何父系資料夾，而只能顯示子系資料夾。 |
+| *rootPath* | 字串 | 否 | /content/dam/ | 目標選擇器會顯示資產的資料夾路徑。`rootPath` 也可以使用封裝形式。例如，假定路徑如下， `/content/dam/marketing/subfolder/`，目的地選擇器不允許您周遊任何父資料夾，但只會顯示子資料夾。 |
 | *hasMore* | 布林值 | 否 | | 當應用程式有更多內容要顯示時，您可以使用此屬性新增載入器，以載入內容並使其顯示在應用程式中。這是一種指示器，表示內容載入正在進行中。 |
 | *orgName* | 布林值 | 否 | | 這指和 AEM 相關的組織名稱 (可能是 orgID) |
 | *initRepoID* | 字串 | 否 | | 這是您要在預設初始檢視中使用的資產存放庫的路徑 |

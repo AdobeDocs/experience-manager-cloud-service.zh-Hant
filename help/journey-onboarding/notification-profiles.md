@@ -4,10 +4,10 @@ description: 了解如何在 Admin Console 中建立使用者設定檔來管理�
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: 4edecfcd-6301-4a46-98c7-eb5665f48995
-source-git-commit: f7b3dec6380266a35f1bf7d90e0195277dd37335
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '934'
-ht-degree: 100%
+source-wordcount: '933'
+ht-degree: 98%
 
 ---
 
@@ -72,7 +72,7 @@ Adobe 有時需要就 AEM as a Cloud Service 環境聯絡使用者。除了產�
 
 >[!NOTE]
 >
->Cloud Manager **產品設定檔名稱**&#x200B;必須與提供的完全一樣，這點很重要。請複製並貼上提供的產品設定檔名稱以避免錯誤。任何偏差或拼寫錯誤都將導致通知無法按要求傳送。
+>Cloud Manager **產品設定檔名稱**&#x200B;必須與提供的完全一樣，這點很重要。複製並貼上提供的產品設定檔名稱以避免錯誤。 任何偏差或拼寫錯誤都將導致通知無法按要求傳送。
 >
 >如果出現錯誤或未定義設定檔，Adobe 預設將通知指派到 **Cloud Manager 開發人員**&#x200B;或&#x200B;**部署管理員**&#x200B;設定檔的現有使用者。
 

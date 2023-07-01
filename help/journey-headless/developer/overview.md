@@ -3,10 +3,10 @@ title: AEM Headless CMS 開發人員歷程
 description: 了解如何使用 Adobe Experience Manager (AEM) as a Headless CMS 進行無周邊開發。了解如何使用內容模型、內容片段和 GraphQL API 等功能來增強無周邊內容傳遞。
 landing-page-description: 了解無周邊內容傳遞和實作。了解更多如何在制定您的業務策略。
 exl-id: d14a1e30-dd04-49a8-8cda-27c80a4bb0f5
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '1083'
-ht-degree: 98%
+source-wordcount: '1082'
+ht-degree: 94%
 
 ---
 
@@ -89,7 +89,7 @@ AEM Headless 實作使用內容片段模型和內容片段來專注於建位結�
 
 查看這些額外的歷程，進一步了解 AEM 的強大功能如何協同工作。
 
-* [AEM Headless 教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html) - 如果您偏好做中學並具備 AEM 現有知識，請參閱我們的實作教學課程，其由 API 和框架所組織，其在探索如何建立並使用在 AEM Headless 建立的應用程式。
+* [AEM Headless教學](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)  — 如果您偏好透過實踐學習並具備AEM的現有知識，請參加按API和框架編排的實作教學課程，探索建立和使用以AEM Headless為基礎的應用程式。
 * [AEM Headless 翻譯歷程](/help/journey-headless/translation/overview.md) - 此文件歷程讓您對無周邊技術、AEM 如何提供無周邊內容以及如何翻譯它，有廣泛的了解。
 * [Headless 編寫歷程](/help/journey-headless/author/overview.md) - 從這裡開始，此歷程會逐步引導您了解 AEM 強大且靈活的無周邊特性、其功能，以及如何在您的第一個無周邊專案中建立內容模型。
 * [Headless 架構師歷程](/help/journey-headless/architect/overview.md) - 從這裡開始介紹 Adobe Experience Manager as a Cloud Service 的強大、靈活、無周邊功能，以及如何為您的專案建立內容模型。

@@ -2,10 +2,10 @@
 title: 設定Adobe Experience Manager Formsas a Cloud Service的本機開發環境
 description: 設定Adobe Experience Manager Formsas a Cloud Service的本機開發環境
 exl-id: 12877a77-094f-492a-af58-cffafecf79ae
-source-git-commit: 7dc36220c1f12177037aaa79d864c1ec2209a301
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '2818'
-ht-degree: 2%
+ht-degree: 4%
 
 ---
 
@@ -191,25 +191,25 @@ AEM Forms as a Cloud Services提供以Docker為基礎的SDK環境，以便更輕
    * (Apple macOS)安裝 [適用於Mac的Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-mac). 它包括Docker引擎、Docker CLI客戶端、Docker撰寫、Docker內容信任、Kubernetes和Credential Helper。
 
    * (適用於Linux®)安裝 [Docker引擎](https://docs.docker.com/engine/install/#server) 和 [Docker撰寫](https://docs.docker.com/compose/install/) 在您的電腦上。
+
    >[!NOTE]
    >
    > * 對於Apple macOS，允許列出包含本機AEM作者執行個體的資料夾。
    >
    > * Docker Desktop for Windows支援兩個後端，Hyper-V
-      > （舊版）和WSL2 （新版）。 檔案共用已自動完成
-      > 使用WSL2 （現代化）時由Docker管理。 您必須
-      > 使用Hyper-V （舊版）時明確設定檔案共用。
+   > （舊版）和WSL2 （新版）。 檔案共用已自動完成
+   > 使用WSL2 （現代化）時由Docker管理。 您必須
+   > 使用Hyper-V （舊版）時明確設定檔案共用。
 
-
-1. 建立與作者和發佈執行個體平行的資料夾（例如aem-sdk）。 例如C:\aem-sdk。
+1. 建立與作者和發佈執行個體平行的資料夾（例如aem-sdk）。 例如，C:\aem-sdk。
 
 1. 擷取 `aem-forms-addon-<version>.zip\aem-forms-addon-native-<version>.zip` 檔案。
 
    ![擷取的aem forms附加於原生](assets/microservice-docker.png)
 
-1. 建立環境變數AEM_HOME，並指向本機AEM Author安裝。 例如C:\aem\author\。
+1. 建立環境變數AEM_HOME，並指向本機AEM Author安裝。 例如，C:\aem\author\。
 
-1. 開啟sdk.bat或sdk.sh進行編輯。 將AEM_HOME設定為指向本機AEM Author安裝。 例如C:\aem\author\。
+1. 開啟sdk.bat或sdk.sh進行編輯。 將AEM_HOME設定為指向本機AEM Author安裝。 例如，C:\aem\author\。
 
 1. 開啟命令提示字元並導覽至 `aem-forms-addon-native-<version>` 資料夾。
 
@@ -234,7 +234,7 @@ AEM Forms as a Cloud Services提供以Docker為基礎的SDK環境，以便更輕
 ---------|----------|---------
 | Canvas 3.0 | 基本 | Microsoft® Dynamics 365 |
 | 寧靜 | 空白 | Salesforce |
-| 城市 |  |  |
+| 城市 |   |  |
 | Ultraminary |  |  |
 | Beryl |  |  |
 
@@ -329,9 +329,9 @@ Dispatcher上的快取允許 [!DNL AEM Forms] 以在使用者端預先填入Adap
 
 您的本機開發環境已準備就緒。
 
-## 在AEM Formsas a Cloud Service和本機開發環境中啟用最適化Forms核心元件
+## 在 AEM Forms as a Cloud Service 和本地開發環境中啟用調適型表單核心元件
 
-在AEM Formsas a Cloud Service上啟用最適化Forms核心元件，可讓您使用AEM FormsCloud Service例項在多個管道中開始建立、發佈和提供核心元件型最適化Forms和Headless Forms。 您需要啟用最適化Forms核心元件的環境才能使用Headless最適化Forms。
+在 AEM Forms as a Cloud Service 上啟用調適型表單心元件，可讓您使用 AEM Forms as a Cloud Service 實例開始建立、發佈和提供以核心元件為主的調適型表單和 Headless 表單至多個管道。 您需要啟用調適型表單核心元件的環境才能使用 Headless 調適型表單。
 
 如需指示，請參閱 [在AEM Formsas a Cloud Service和本機開發環境中啟用最適化Forms核心元件](/help/forms/enable-adaptive-forms-core-components.md)
 

@@ -4,7 +4,7 @@ description: 瞭解可用的強大Live Copy同步選項，以及如何根據專�
 feature: Multi Site Manager
 role: Admin
 exl-id: 0c97652c-edac-436e-9b5b-58000bccf534
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '2335'
 ht-degree: 2%
@@ -123,7 +123,7 @@ The new rollout configuration is then available to you when configuring rollout 
 
 預設會排除數個屬性和節點型別，這些屬性和節點型別會在的OSGi設定中定義 **CQ MSM內容更新動作**，下 **排除的頁面屬性**.
 
-依預設，轉出時排除符合下列規則運算式的屬性（即未更新）：
+依預設，轉出時會排除符合下列規則運算式的屬性（亦即，不會更新）：
 
 ![即時副本排除規則運算式](../assets/live-copy-exclude.png)
 

@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Asset Reports
 role: Admin,User
 exl-id: a71fef45-c9a4-4091-8af1-c3c173324b7a
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '6666'
+source-wordcount: '6665'
 ht-degree: 7%
 
 ---
@@ -22,7 +22,7 @@ name used to be Experience Platform Launch. Changed to Experience Platform Data 
 
 *Dynamic Media檢視器* Experience Platform標籤和Dynamic Media檢視器5.13的擴充功能可讓Adobe Analytics和Experience Platform標籤客戶在其Experience Platform標籤設定中，使用Dynamic Media檢視器的特定事件和資料。
 
-此整合表示您可以使用Adobe Analytics追蹤網站上Dynamic Media Viewers的使用情況。 同時，您也可以將檢視器公開的事件和資料，與任何來自Adobe或協力廠商的其他Experience Platform標籤擴充功能搭配使用。
+此整合表示您可以使用Adobe Analytics追蹤網站上Dynamic Media Viewers的使用情況。 同時，您可以將檢視器公開的事件和資料與任何來自Adobe或協力廠商的其他Experience Platform標籤擴充功能搭配使用。
 
 若要深入瞭解Adobe擴充功能或協力廠商擴充功能，請參閱 [Adobe擴充功能](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/overview.html) 在Experience Platform標籤使用手冊中。
 
@@ -591,7 +591,7 @@ Experience Platform標籤中的屬性是具名設定，可讓您的所有設定�
 
 Experience Platform標籤可能具有多個開發環境、一個中繼環境及一個生產環境。 根據預設，Experience Manager中的Experience Platform標籤雲端設定會將Experience Manager作者節點指向Platform標籤的舞台環境。 Experience Manager發佈節點指向Experience Platform標籤的生產環境。 此安排表示使用預設Experience Manager設定時，必須將Experience Platform標籤程式庫發佈至測試環境。 如此可讓您在Experience Manager作者中使用它。 然後，您可以將其發佈到生產環境，以便用於Experience Manager發佈。
 
-另請參閱 [環境](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html) 以取得有關Experience Platform標籤環境的詳細資訊。
+另請參閱 [環境](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html?lang=zh-Hant) 以取得有關Experience Platform標籤環境的詳細資訊。
 
 發佈程式庫需執行下列兩個步驟：
 

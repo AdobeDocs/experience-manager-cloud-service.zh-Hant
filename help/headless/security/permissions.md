@@ -3,10 +3,10 @@ title: 無周邊內容的權限考量事項
 description: 了解使用 Adobe Experience Manager 進行無周邊實作時涉及的不同權限和 ACL 考量事項。了解作者和發佈環境所需的不同角色和可能權限層級。
 feature: Content Fragments,GraphQL API
 exl-id: 3fbee755-2fa4-471b-83fc-3f4bf056267a
-source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '840'
-ht-degree: 100%
+source-wordcount: '841'
+ht-degree: 97%
 
 ---
 
@@ -52,7 +52,7 @@ ht-degree: 100%
 
 最好不要直接修改可立即使用群組的權限。相反地，您也可以根據 **DAM 使用者**&#x200B;群組權限建立您自己的群組，並進一步限制 AEM Assets 內不同&#x200B;**資料夾**&#x200B;的存取權。
 
-如需更精細的權限，請使用 AEM 中的&#x200B;**權限**&#x200B;主控台，並將路徑從 `/content/dam`更新為更具體的路徑，即 `/content/dam/mycontentfragments`。
+如需更精細的許可權，請使用 **許可權** AEM中的主控台並更新以下專案的路徑： `/content/dam` 至更具體的路徑，即， `/content/dam/mycontentfragments`.
 
 可能需要授予此群組使用者建立和編輯而非刪除內容片段的權限。若要查看和指派編輯權限而非刪除權限，請參閱[內容片段 - 刪除考量事項](/help/sites-cloud/administering/content-fragments/content-fragments-delete.md)。
 

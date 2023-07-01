@@ -2,7 +2,7 @@
 title: 為 Screens as a Cloud Service 開發自訂元件
 description: 下列教學課程會逐步引導您完成建立AEM Screens自訂元件的步驟。 AEM Screens會重複使用其他AEM產品的許多現有設計模式與技術。 本教學課程著重說明針對AEM Screens進行開發時的差異和特殊考量事項。
 exl-id: fe8e7bf2-6828-4a5a-b650-fb3d9c172b97
-source-git-commit: 7260649eaab303ba5bab55ccbe02395dc8159949
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '2108'
 ht-degree: 3%
@@ -122,10 +122,10 @@ AEM Screens有一些有趣的限制，對傳統WCM Sites元件不一定成立。
    
    */-->
    
-   <!--/* production: preview authoring mode + unspecified mode (i.e. on publish) */-->
+   <!--/* production: preview authoring mode + unspecified mode (that is, on publish) */-->
    <sly data-sly-test.production="${wcmmode.preview || wcmmode.disabled}" data-sly-include="production.html" />
    
-   <!--/* edit: any other authoring mode, i.e. edit, design, scaffolding, etc. */-->
+   <!--/* edit: any other authoring mode, that is, edit, design, scaffolding, etc. */-->
    <sly data-sly-test="${!production}" data-sly-include="edit.html" />
    ```
 
@@ -153,7 +153,7 @@ AEM Screens有一些有趣的限制，對傳統WCM Sites元件不一定成立。
 
    上述生產標籤適用於Hello World元件。 A `data-duration` 屬性包含在內，因為元件用於序列管道上。 此 `data-duration` attribute是序列管道用來瞭解序列專案要顯示多久的時間。
 
-   元件會呈現 `div` 和 `h1` 標籤與文字。 `${properties.message}` 是HTL指令碼的一部分，會輸出名為的JCR屬性內容 `message`. 稍後會建立對話方塊，讓使用者輸入 `message` 屬性文字。
+   元件會呈現 `div` 和 `h1` 標籤與文字。 `${properties.message}` 是HTL指令碼的一部分，會輸出名為的JCR屬性的內容 `message`. 稍後會建立對話方塊，讓使用者輸入 `message` 屬性文字。
 
    另請注意，元件會使用BEM （區塊要素修正因子）表示法。 BEM是CSS編碼慣例，可讓您更輕鬆地建立可重複使用的元件。 BEM是以下專案使用的記號： [AEM Core Components](https://github.com/adobe/aem-core-wcm-components/wiki/CSS-coding-conventions). <!-- WEBSITE WAS NOT ACCESSIBLE AS OF SEPTEMBER 1, 2022 More info can be found at: [https://getbem.com/](https://getbem.com/) -->
 

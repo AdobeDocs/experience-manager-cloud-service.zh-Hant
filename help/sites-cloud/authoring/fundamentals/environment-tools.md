@@ -2,7 +2,7 @@
 title: 製作環境和工具
 description: AEM的製作環境提供各種機制來組織和編輯您的內容
 exl-id: cc3bd4cf-93bd-429d-9a2a-4a02a7b42f7c
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '2153'
 ht-degree: 12%
@@ -152,7 +152,7 @@ Sites **** Console可讓您使用標題列、工具列、動作圖示 (適用於
 
 >[!NOTE]
 >
->當寬度小於1024畫素時（亦即在小案頭視窗上）會偵測到行動裝置。
+>當寬度小於1024畫素時會偵測到行動裝置；也就是在小型案頭視窗上。
 
 如果您需要快速變更資產，可以開始 [資產編輯器](/help/assets/manage-digital-assets.md) 直接從資產瀏覽器按一下資產名稱旁邊顯示的編輯圖示。
 

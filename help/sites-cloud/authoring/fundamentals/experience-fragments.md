@@ -2,9 +2,9 @@
 title: 體驗片段
 description: 使用Adobe Experience Manager as a Cloud Service體驗片段，讓您的體驗可重複使用且具有彈性。
 exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '2052'
+source-wordcount: '2046'
 ht-degree: 5%
 
 ---
@@ -37,7 +37,7 @@ ht-degree: 5%
 如果沒有體驗片段，作者需要複製並貼上該片段。 建立和維護這些複製/貼上體驗非常耗時，而且容易發生使用者錯誤。
 體驗片段不需要複製/貼上。
 * 支援Headless CMS使用案例。
-作者只想將AEM用於製作，而不是用於提供給客戶。 協力廠商系統/接觸點會使用該體驗，然後提供給一般使用者。
+作者只想將AEM用於製作，而不是用於提供給客戶。 協力廠商系統/接觸點將會使用該體驗，然後提供給一般使用者。
 
 >[!NOTE]
 >
@@ -47,7 +47,7 @@ ht-degree: 5%
 >
 >體驗片段可以包含內容片段形式的內容，反之則不行。
 >
->如需詳細資訊，另請參閱 [瞭解AEM中的內容片段和體驗片段](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html#content-fragments).
+>如需詳細資訊，請參閱 [瞭解AEM中的內容片段和體驗片段](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html#content-fragments).
 
 >[!NOTE]
 >
@@ -145,7 +145,7 @@ WKND專案會根據以下原則建構一些體驗片段 `Contributors`. 使用�
 >
 >不建議變更 **允許的範本** 此方法可在升級時覆寫指定的範本。
 >
->請使用此對話方塊僅供參考。
+>使用此對話方塊僅供參考。
 
 1. 導覽至必要的 **體驗片段** 主控台。
 

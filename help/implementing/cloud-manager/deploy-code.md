@@ -2,10 +2,10 @@
 title: 部署您的程式碼
 description: 了解如何在 AEM as a Cloud Service 中使用 Cloud Manager 管道來將程式碼部署。
 exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '1215'
-ht-degree: 94%
+source-wordcount: '1189'
+ht-degree: 89%
 
 ---
 
@@ -57,9 +57,9 @@ _只有 Full Stack Code 流水線類型支援程式碼掃描、功能測試、UI
 
 * **驗證**- 此步驟確保管道配置為使用當前可用的資源。例如，測試設定的分支是否存在並且環境是否可用。
 * **建置及單位測試** - 此步驟會執行容器化的建置流程。 
-   * 請看文件[構建環境詳細資訊](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)有關構建環境的詳細資訊。
+   * 另請參閱 [建置環境詳細資訊](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) 以取得有關組建環境的詳細資訊。
 * **程式碼掃描** - 此步驟會評估應用計劃程式碼的品質。
-   * 如需有關測試流程的詳細資訊，請參閱文件[程式碼品質測試](/help/implementing/cloud-manager/code-quality-testing.md)。
+   * 另請參閱 [程式碼品質測試](/help/implementing/cloud-manager/code-quality-testing.md) 以取得測試流程的詳細資訊。
 * **構建映像**- 此過程負責將構建步驟生成的內容和調度程序包轉換為 Docker 映像和 Kubernetes 配置。
 * **部署到階段**- 將映像部署到登台環境以準備[階段測試階段。](#stage-testing)
 
@@ -70,20 +70,20 @@ _只有 Full Stack Code 流水線類型支援程式碼掃描、功能測試、UI
 這&#x200B;**階段測試**&#x200B;階段涉及這些步驟。
 
 * **產品功能測試**- Cloud Manager 管道執行針對舞台環境執行的測試。
-   * 如需更多詳細資訊，請參閱文件：[產品功能測試](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing)。
+   * 另請參閱 [產品功能測試](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing) 以取得更多詳細資料。
 
 * **自訂功能測試** - 步驟一律存在且不能跳過。如果構建沒有生成測試 JAR，則測試預設透過。
-   * 如需更多詳細資訊，請參閱文件：[自訂功能測試](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing)。
+   * 另請參閱 [自訂功能測試](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing) 以取得更多詳細資料。
 
 * **自訂 UI 測試**&#x200B;是一項選擇性功能，可讓您為自訂應用程式建立和自動執行 UI 測試。
    * UI 測試是封裝在 Docker 影像中的 Selenium 型測試，以便在語言和架構 (例如 Java 和 Maven、Node 和 WebDriver.io 或任何其他根據 Selenium 建置的架構和技術) 中提供廣泛的選擇。
-   * 如需更多詳細資訊，請參閱文件：[自訂 UI 測試](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing)。
+   * 另請參閱 [自訂UI測試](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing) 以取得更多詳細資料。
 
 * **體驗稽核** - 步驟一律存在且不能跳過。在執行生產管道時，在執行檢查的自訂功能測試之後會包含一個體驗稽核步驟。
    * 配置的頁面將提交給服務並進行評估。
    * 結果是資訊性的，並顯示分數以及當前和以前分數之間的變化。
    * 此深入分析對於判斷目前部署是否引入回歸非常有用。
-   * 如需更多詳細資訊，請參閱[了解體驗稽核結果](/help/implementing/cloud-manager/experience-audit-testing.md)。
+   * 另請參閱 [瞭解體驗稽核結果](/help/implementing/cloud-manager/experience-audit-testing.md) 以取得更多詳細資料。
 
 ![階段測試](assets/stage-testing.png)
 
@@ -120,7 +120,7 @@ _只有 Full Stack Code 流水線類型支援程式碼掃描、功能測試、UI
 
 ## 部署流程 {#deployment-process}
 
-所有云服務部署都遵循滾動過程，以確保零停機時間。如需了解詳細資訊，請參閱文件：[滾動部署的工作原理](/help/implementing/deploying/overview.md#how-rolling-deployments-work)。
+所有云服務部署都遵循滾動過程，以確保零停機時間。另請參閱 [滾動式部署如何運作](/help/implementing/deploying/overview.md#how-rolling-deployments-work) 以深入瞭解。
 
 >[!NOTE]
 >
@@ -155,7 +155,7 @@ _只有 Full Stack Code 流水線類型支援程式碼掃描、功能測試、UI
 
 若要觸發重新執行，需要向生產部署步驟狀態的 HAL 連結 <https://ns.adobe.com/adobecloud/rel/pipeline/reExecute> 發出 PUT 要求。如果此連結存在，則可以從該步驟重新開始執行。如果不存在，則無法從該步驟重新開始執行。在初始版本中，此鏈接只會出現在生產部署步驟中，但未來版本可能支援從其他步驟啟動管道。範例:
 
-```Javascript
+```JavaScript
  {
   "_links": {
     "https://ns.adobe.com/adobecloud/rel/pipeline/logs": {

@@ -2,7 +2,7 @@
 title: AEM 標記框架
 description: 標籤內容，並使用AEM標籤基礎結構來分類及組織內容。
 exl-id: 25418d44-aace-4e73-be1a-4b1902f40403
-source-git-commit: 7260649eaab303ba5bab55ccbe02395dc8159949
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '1569'
 ht-degree: 0%
@@ -54,7 +54,7 @@ A `TagID` 會識別解析成存放庫中的標籤節點的路徑。
 
 標籤內容時，如果內容尚不存在， [`cq:tags`](#cq-tags-property) 屬性會新增至內容節點，且 `TagID` 新增至屬性的 `String` 陣列值。
 
-此 `TagID` 由以下專案組成： [名稱空間](#tag-namespace) 後面跟著本機 `TagID`. [容器標籤](#container-tags) 具有代表分類法中階層順序的子標籤。 子標籤可用於參照與任何本機標籤相同的標籤 `TagID`. 例如，使用標籤內容 `fruit` 允許存在，即使它是包含子標籤的容器標籤，例如 `fruit/apple` 和 `fruit/banana`.
+此 `TagID` 由以下專案組成： [名稱空間](#tag-namespace) 後面跟著本機 `TagID`. [容器標籤](#container-tags) 具有代表分類法中階層順序的子標籤。 子標籤可用於參照與任何本機標籤相同的標籤 `TagID`. 例如，使用下列專案標籤內容： `fruit` 允許存在，即使它是包含子標籤的容器標籤，例如 `fruit/apple` 和 `fruit/banana`.
 
 ### 分類根節點 {#taxonomy-root-node}
 

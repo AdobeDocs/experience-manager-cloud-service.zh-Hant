@@ -1,18 +1,18 @@
 ---
 title: AEM Headless 查閱者篩選器設定
-description: Adobe Experience Manager 的查閱者篩選器允許第三方主機存取。需要查閱者篩選器的 OSGi 設定，無周邊應用程式才能存取 GraphQL 端點。
+description: Adobe Experience Manager的反向連結篩選可讓您從協力廠商主機存取。 需要查閱者篩選器的 OSGi 設定，無周邊應用程式才能存取 GraphQL 端點。
 feature: GraphQL API
 exl-id: e2e3d2dc-b839-4811-b5d1-38ed8ec2cc87
-source-git-commit: 076cafe3d096fd7f4c808f1b2553a9ba6b6c1833
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '277'
-ht-degree: 100%
+source-wordcount: '275'
+ht-degree: 92%
 
 ---
 
 # 查閱者篩選器 {#referrer-filter}
 
-Adobe Experience Manager 的查閱者篩選器允許第三方主機存取。
+Adobe Experience Manager的反向連結篩選可讓您從協力廠商主機存取。
 
 需要查閱者篩選器的 OSGi 設定，無周邊應用程式才能透過 HTTP POST 存取 GraphQL 端點。使用透過 HTTP GET 存取 AEM 的 AEM Headless 持續性查詢時，不需要查閱者篩選器設定。
 
@@ -57,7 +57,6 @@ Adobe Experience Manager 的查閱者篩選器允許第三方主機存取。
 >* 僅將存取權授予受信任網域
 >* 確保敏感資訊沒有公開
 >* 不要使用萬用字元 [*] 語法；這將停用對 GraphQL 端點的已驗證存取，並將其公開給整個世界。
-
 
 >[!CAUTION]
 >

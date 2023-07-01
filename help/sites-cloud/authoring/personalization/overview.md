@@ -2,10 +2,10 @@
 title: 個人化和內容目標鎖定
 description: 了解如何使用 AEM 建立個人化、鎖定目標的內容
 exl-id: b9b5dbf6-d491-48a6-99b1-19bc1b651b8c
-source-git-commit: 566cd449c536de4179e32c94df90b46d61e0103a
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '1056'
-ht-degree: 100%
+source-wordcount: '1055'
+ht-degree: 98%
 
 ---
 
@@ -88,7 +88,7 @@ AEM 提供一個工具框架，用於：
 
 組成體驗的一組元件。
 
-[體驗片段](/help/sites-cloud/authoring/fundamentals/experience-fragments.md#personalization-experience-fragment)由內容和資訊 (樣式等) 組成用於建立體驗；它們可以在編寫頁面時直接使用。它們可以被視為 AEM 頁面的子集。可讓內容作者重複使用跨管道的內容，包括 Sites 頁面和協力廠商系統。
+[體驗片段](/help/sites-cloud/authoring/fundamentals/experience-fragments.md#personalization-experience-fragment)由內容和資訊 (樣式等) 組成用於建立體驗；它們可以在編寫頁面時直接使用。它們可以被視為 AEM 頁面的子集。它們可讓內容作者跨管道重複使用內容，包括Sites頁面和協力廠商系統。
 
 對於個人化範例，可以將標題、影像、描述和行動號召按鈕合併以形成預告片體驗。使用體驗片段是使用 Adobe Target 個人化的關鍵部分。
 

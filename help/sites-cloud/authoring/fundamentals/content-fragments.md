@@ -2,9 +2,9 @@
 title: 內容片段
 description: Adobe Experience Manager as a Cloud Service內容片段可讓您設計、建立、組織和使用獨立於頁面的內容
 exl-id: 7a44fc4e-3793-4aa3-8c21-db0567c93244
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '1222'
+source-wordcount: '1223'
 ht-degree: 4%
 
 ---
@@ -25,7 +25,7 @@ Adobe Experience Manager (AEM)as a Cloud Service中的內容片段包括 [已建
 >
 >體驗片段可以包含內容片段形式的內容，反之則不行。
 >
->如需詳細資訊，另請參閱 [瞭解AEM中的內容片段和體驗片段](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html#content-fragments).
+>如需詳細資訊，請參閱 [瞭解AEM中的內容片段和體驗片段](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html#content-fragments).
 
 >[!CAUTION]
 >
@@ -115,7 +115,7 @@ Adobe Experience Manager (AEM)as a Cloud Service中的內容片段包括 [已建
 
 將特定內容片段新增至頁面時， **將元件拖曳到這裡** 片段中每個HTML段落（和頂端/底部）之間的預留位置。
 
-這可讓您新增額外內容 [中間內容（即中間內容）](/help/sites-cloud/administering/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments) 片段內容（在任何可用點），不必變更根片段。
+這可讓您新增額外內容 [中間（亦即中間的內容）](/help/sites-cloud/administering/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments) 片段內容（在任何可用點），不必變更根片段。
 
 對於中間內容，您可以：
 
@@ -137,7 +137,7 @@ Adobe Experience Manager (AEM)as a Cloud Service中的內容片段包括 [已建
 
 >[!CAUTION]
 >
->將中間內容新增至頁面上的內容片段後，變更基礎內容片段的結構（例如在內容片段編輯器中）可能會導致錯誤/未預期的結果。
+>將中間內容新增至頁面上的內容片段後，變更基礎內容片段的結構（即在內容片段編輯器中）可能會導致錯誤/未預期的結果。
 >
 >發生此情況時，中間內容會維持不變：
 >

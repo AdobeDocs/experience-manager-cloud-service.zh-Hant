@@ -2,7 +2,7 @@
 title: ContextHub UI模組型別範例
 description: ContextHub提供幾個範例UI模組，您可以在解決方案中使用
 exl-id: 31ff4444-8d96-4817-9676-ea5ad36dcda5
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '1126'
 ht-degree: 0%
@@ -35,7 +35,7 @@ contexthub.base UI模組型別是所有其他UI模組型別的基底型別。 �
 
 ### 設定 {#configuration}
 
-使用JSON格式的Javascript物件設定contexthub.base UI模組。 納入以下任何屬性以設定UI模組功能：
+使用JSON格式的JavaScript物件設定contexthub.base UI模組。 納入以下任何屬性以設定UI模組功能：
 
 * **影像：** 要顯示為圖示之影像的URL。
 * **圖示：** 的名稱 [Coral UI圖示](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html) 類別。 如果您同時指定圖示和影像屬性的值，則會使用影像。

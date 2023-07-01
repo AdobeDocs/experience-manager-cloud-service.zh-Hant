@@ -2,9 +2,9 @@
 title: 參與工作流程
 description: 工作流程通常包括需要人員在頁面或資產上執行活動的步驟。
 exl-id: 62192da9-0b5b-4997-9c2b-d1aee04b01f9
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '1542'
+source-wordcount: '1537'
 ht-degree: 1%
 
 ---

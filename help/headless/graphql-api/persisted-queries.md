@@ -1,12 +1,12 @@
 ---
 title: 持續性 GraphQL 查詢
-description: 了解如何在 Adobe Experience Manager as a Cloud Service 中保留 GraphQL 查詢，以期將效能最佳化。用戶端應用程式可以使用 HTTP GET 方法要求持續性查詢，回應可以在 Dispatcher 和 CDN 層快取，最終提高用戶端應用程式的效能。
+description: 瞭解如何在Adobe Experience Manager as a Cloud Service中保留GraphQL查詢，以最佳化效能。 用戶端應用程式可以使用 HTTP GET 方法要求持續性查詢，回應可以在 Dispatcher 和 CDN 層快取，最終提高用戶端應用程式的效能。
 feature: Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '1681'
-ht-degree: 96%
+ht-degree: 92%
 
 ---
 
@@ -196,7 +196,7 @@ GET <AEM_HOST>/graphql/execute.json/<PERSISTENT_PATH>
 
 其中 `PERSISTENT_PATH` 是持續性查詢儲存所在的縮短路徑。
 
-1. 例如 `wknd` 是設定名稱，`plain-article-query` 是持續性查詢的名稱。若要執行查詢：
+1. 例如， `wknd` 是設定名稱和 `plain-article-query` 是持久查詢的名稱。 若要執行查詢：
 
    ```shell
    $ curl -X GET \
@@ -228,7 +228,7 @@ GET <AEM_HOST>/graphql/execute.json/<PERSISTENT_PATH>
 <AEM_HOST>/graphql/execute.json/<PERSISTENT_QUERY_PATH>;variable1=value1;variable2=value2
 ```
 
-例如，以下查詢包含一個變數 `activity` 以根據活動值篩選清單：
+例如，下列查詢包含變數 `activity` 若要根據活動值篩選清單：
 
 ```graphql
 query getAdventuresByActivity($activity: String!) {
@@ -398,7 +398,7 @@ curl -u admin:admin -X POST \
 
 ## 編碼查詢 URL 以供應用程式使用 {#encoding-query-url}
 
-為供應用程式使用，建構查詢變數時使用的任何特殊字元 (即分號 (`;`)、等號 (`=`)、斜線 `/`) 必須是轉換為使用相應的 UTF-8 編碼。
+供應用程式使用，建構查詢變數時使用的任何特殊字元(即分號(`;`)，等號(`=`)，斜線 `/`)必須轉換才能使用對應的UTF-8編碼。
 
 例如：
 

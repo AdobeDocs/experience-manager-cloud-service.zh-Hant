@@ -2,10 +2,10 @@
 title: 管理 SSL 憑證的簡介
 description: 了解 Cloud Manager 如何提供自助服務工具以安裝 SSL 憑證。
 exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '632'
-ht-degree: 83%
+source-wordcount: '630'
+ht-degree: 81%
 
 ---
 
@@ -69,7 +69,7 @@ OV 和 EV 憑證為使用者提供額外的 CA 驗證資訊，可用於確定網
 
 ## 了解更多 {#learn-more}
 
-具有必要權限的使用者可以使用 Cloud Manager 來管理計畫的 SSL 憑證。有關使用這些功能的更多詳細資訊，請參閱以下文件。
+具有必要權限的使用者可以使用 Cloud Manager 來管理計畫的 SSL 憑證。如需使用這些功能的詳細資訊，請參閱下列檔案。
 
 * [新增 SSL 憑證](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)
 * [檢視、更新或取代 SSL 憑證](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)

@@ -2,9 +2,9 @@
 title: 匯出為 CSV
 description: 將頁面的相關資訊匯出至本機系統上的CSV檔案
 exl-id: 818e927e-40b2-4ccb-bfb3-88284ad49829
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '199'
+source-wordcount: '198'
 ht-degree: 42%
 
 ---
@@ -50,7 +50,7 @@ ht-degree: 42%
    * 瀏覽Sites **控制台時**  (在「清單」檢視中)，可使用「建立 **CSV報表** 」選項
    * 它是 **建立** 下拉式功能表：
 
-      ![建立CSV選項](/help/sites-cloud/authoring/assets/csv-create.png)
+     ![建立CSV選項](/help/sites-cloud/authoring/assets/csv-create.png)
 
 1. 從工具列中，依序選 **取「建立****CSV報表** 」以開啟精靈：
 

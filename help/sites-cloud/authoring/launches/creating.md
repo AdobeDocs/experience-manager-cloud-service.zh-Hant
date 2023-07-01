@@ -2,9 +2,9 @@
 title: 建立 Launch
 description: 您可以建立啟動，以更新現有網頁的新版本，以供日後啟用。
 exl-id: 216ccb7a-1409-4f55-8be2-2b088f91a430
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '1042'
+source-wordcount: '1043'
 ht-degree: 13%
 
 ---
@@ -62,7 +62,7 @@ ht-degree: 13%
 
    >[!NOTE]
    >
-   >若要將頁面和/或分支新增至啟動項，這些頁面和/或分支必須位於網站內，即位於通用頂層根目錄下。
+   >若要將頁面和/或分支新增至啟動項，這些頁面和/或分支必須位於網站內；亦即，位於通用頂層根目錄之下。
    >
    >如果網站在頂層之下包含語言根，則啟動項的頁面和分支必須在共同語言根之下。
 

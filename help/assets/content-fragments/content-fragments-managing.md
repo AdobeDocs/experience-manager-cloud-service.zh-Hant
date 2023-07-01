@@ -2,9 +2,9 @@
 title: 管理內容片段（資產 — 內容片段）
 description: 瞭解如何使用Assets控制檯來管理您的AEM內容片段，這是Headless內容的基礎。
 exl-id: 333ad877-db2f-454a-a3e5-59a936455932
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '1754'
+source-wordcount: '1755'
 ht-degree: 8%
 
 ---
@@ -227,11 +227,11 @@ This updates any page references and ensures that the Dispatcher is flushed as r
   >
   >除了只是儲存您的變更，這些動作也會更新任何參考，並確保Dispatcher會依需求排清。 這些變更可能需要一些時間才能處理。 因此，大型/複雜/過載系統可能會受到效能影響。
   >
-  >使用時，請記住這一點 **儲存並關閉** 然後快速重新進入片段編輯器以進行並儲存進一步的變更。
+  >使用時，請牢記此程式 **儲存並關閉** 然後快速重新進入片段編輯器，以進行並儲存更多變更。
 
 * **關閉**
 
-  將退出編輯器而不儲存最新變更（即自上次更新以來所做的變更） **儲存**)。
+  將退出編輯器，而不儲存最新變更（即自上次以來進行的變更） **儲存**)。
 
 編輯您的內容片段時，AEM會自動建立版本，以確保如果您取消變更(使用 **關閉** 而不儲存)：
 

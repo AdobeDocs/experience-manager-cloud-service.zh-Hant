@@ -2,9 +2,9 @@
 title: 編輯 Launch
 description: 為您的頁面（或一組頁面）建立啟動後，您可以編輯頁面啟動副本中的內容。
 exl-id: d3cd3383-e0a0-4019-9f97-8baa3be99e6e
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '552'
+source-wordcount: '553'
 ht-degree: 18%
 
 ---
@@ -72,7 +72,7 @@ livecopy可用來將來源 *分支的內容*** 同步到啟動分支 (以便讓�
 
 >[!NOTE]
 >
->若要將頁面新增至啟動項，這些頁面必須位於共同語言根之下；即在單一網站內。
+>若要將頁面新增至啟動項，這些頁面必須位於共同語言根之下；也就是說，位於單一網站內。
 
 ## 編輯Launch設定 {#editing-a-launch-configuration}
 
