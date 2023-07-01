@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 目前發行說明�
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 目前發行說明。'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 25689621ab24b6e14e7e865451ae53947a67d8d1
+source-git-commit: 5a37f237d04d19f3c4113c2ea3e37ab447bf3b0c
 workflow-type: tm+mt
-source-wordcount: '1427'
-ht-degree: 42%
+source-wordcount: '1372'
+ht-degree: 31%
 
 ---
 
@@ -113,15 +113,11 @@ Assets檢視現在會產生常見3D檔案格式的縮圖預覽，包括gLB、USD
 
 ### [!DNL Forms] 中可用的新功能 {#new-features-available-in-channel}
 
-* [AEM 頁面編輯器中的最適化表單](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)：您現在可以使用 AEM 頁面編輯器快速建立多個表單，並將這些表單新增至您的 Sites 頁面。 此功能讓內容作者可使用最適化表單元件 (包括動態行為、驗證、資料整合、產生記錄文件和業務流程自動化) 的強大功能，在 Sites 頁面內建立順暢的資料擷取體驗。 您可以：
+* [AEM頁面編輯器和體驗片段中的最適化Forms](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)：您現在可以使用AEM頁面編輯器和體驗片段來快速建立多個表單並新增到您的AEM Sites頁面。 此功能可讓內容作者運用Adaptive Forms元件的強大功能（包括動態行為、驗證、資料整合、產生記錄檔案和業務流程自動化），在Sites頁面中建立順暢的資料擷取體驗。
 
-   * 將表單元件拖放到 AEM Sites 編輯器或體驗片段中的最適化表單容器元件，即可建立最適化表單。
-   * 使用 AEM Sites 編輯器中的最適化表單精靈，以便建立不屬於任何 Sites 頁面的表單，讓您能夠在多個頁面之間自由地重複使用這些表單。
-   * 將多個表單新增到 Sites 頁面，簡化使用者體驗並提供更大的彈性。
-
-     >[!VIDEO](https://video.tv.adobe.com/v/3419284?quality=12&learn=on)
-
-* [適用於政府的Adobe Acrobat Sign Solutions](/help/forms/adobe-sign-integration-adaptive-forms.md)：AEM Forms現在與適用於政府的Adobe Acrobat Sign Solutions整合。 這種整合能夠讓政府相關帳戶 (政府部門和機構) 在提交最適化表單時，享有等級更高的電子簽名合規性和安全性。
+      >[！VIDEO](https://video.tv.adobe.com/v/3419284?quality=12&amp;learn=on)
+  
+* [透過AEM Forms使用政府用Adobe Acrobat Sign Solutions （HIPPA投訴）](/help/forms/adobe-sign-integration-adaptive-forms.md)：AEM Forms現在與適用於政府的Adobe Acrobat Sign Solutions整合。 這種整合能夠讓政府相關帳戶 (政府部門和機構) 在提交最適化表單時，享有等級更高的電子簽名合規性和安全性。
 
   與適用於政府的Adobe Acrobat Sign Solutions整合可讓Adobe的合作夥伴和政府客戶在Adaptive Forms中使用電子簽章，處理某些最關鍵和敏感的業務線。 這額外一層的安全性可確保所有電子簽名完全符合 FedRAMP 中等合規性，讓 Adobe 的政府客戶安心使用。
 
@@ -129,15 +125,15 @@ Assets檢視現在會產生常見3D檔案格式的縮圖預覽，包括gLB、USD
 
   此功能有助於引進標準型錯誤回應來提高整體的錯誤處理能力；這些回應向後相容於 OOTB 錯誤處理常式，且具有更大的彈性和控制性。
 
-* [表單資料模型的增強驗證方法](/help/forms/configure-data-sources.md)：透過引入使用者端憑證式驗證來連線AEM Forms與相容的資料來源，體驗增強的安全性。 此增強功能免除模擬或使用者登入的需要，進而加強資料的保護。
+* [表單資料模型的增強驗證方法](/help/forms/configure-data-sources.md)：使用者端憑證式驗證能將AEM Forms （表單資料模型）與相容的資料來源連線，讓您體驗更強的安全性。 此增強功能免除模擬或使用者登入的需要，進而加強資料的保護。
 
-* [具有可重複區段的最適化Forms](/help/forms/create-forms-repeatable-sections.md)：您現在可以製作 [收合式選單](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html)， [精靈](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html)， [面板](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html)、和 [水準標籤](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html) 元件在核心元件型最適化表單中建立可重複區段。
+* [使用可重複區段建立最適化Forms](/help/forms/create-forms-repeatable-sections.md)：您現在可以製作 [收合式選單](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html)， [精靈](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html)， [面板](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html)、和 [水準標籤](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html) 元件在核心元件型最適化表單中建立可重複區段。
 
   >[!VIDEO](https://video.tv.adobe.com/v/3421052/adaptive-forms-repeatable-sections-repeat-sections/?quality=12&learn=on)
 
   這些可重複區段可讓您提供不限數量的專案，而不含固定欄位計數。 當所需的資料例項事先未知時，這個變數很有用。 Forms使用者可輕鬆新增或移除區段，讓表單能適應不同的資料輸入情境，並簡化相同資料多次出現次數的收集工作。
 
-* **[將最適化表單提交至 Microsoft® SharePoint 和 Microsoft® OneDrive](/help/forms/configuring-submit-actions.md)**：改善商業用戶的敏捷性，以便快速啟動新表單並將提交的資料儲存在日常使用的工具中，例如 Microsoft® SharePoint 網站或 OneDrive 資料夾。
+* **[將最適化Forms提交至Microsoft®SharePoint和Microsoft® OneDrive](/help/forms/configuring-submit-actions.md)**：您現在可以將最適化Forms資料提交至Microsoft®SharePoint Site或Microsoft® OneDrive等日常工具。
 
 ### Headless 最適化表單早期採用者計劃 {#forms-early-adopter}
 
