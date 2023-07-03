@@ -6,10 +6,10 @@ mini-toc-levels: 1
 feature: Search,Metadata,Asset Distribution
 role: User,Admin
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 589ed1e1befa84c0caec0eed986c3e1a717ae602
 workflow-type: tm+mt
-source-wordcount: '5096'
-ht-degree: 7%
+source-wordcount: '5162'
+ht-degree: 6%
 
 ---
 
@@ -37,7 +37,7 @@ AEM中的資產搜尋支援下列使用案例，本文介紹這些使用案例�
 | [限制](#limitations) 和 [提示](#tips) | | |
 | [插圖範例](#samples) | | |
 
-使用Omnisearch欄位（在資產上方）搜尋資產 [!DNL Experience Manager] 網頁介面。 前往 **[!UICONTROL 資產]** > **[!UICONTROL 檔案]** 在 [!DNL Experience Manager]，按一下 ![search_icon](assets/do-not-localize/search_icon.png) 在頂端列中，輸入搜尋關鍵字，然後選取 `Return`. 或者，使用關鍵字捷徑 `/` （正斜線）以開啟「全能搜尋」欄位。 `Location:Assets` 已預先選取，以將搜尋限制在DAM資產。 [!DNL Experience Manager] 會在您開始輸入搜尋關鍵字時提供建議。
+使用Omnisearch欄位（在資產上方）搜尋資產 [!DNL Experience Manager] 網頁介面。 前往 **[!UICONTROL 資產]** > **[!UICONTROL 檔案]** 在 [!DNL Experience Manager]，按一下 ![search_icon](assets/do-not-localize/search_icon.png) 在頂端列中，輸入搜尋關鍵字，然後選取 `Return`. 或者，使用關鍵字捷徑 `/` （正斜線）以開啟「全能搜尋」欄位。 `Location:Assets` 已預先選取，以將搜尋限制在DAM資產。 `Path:/content/dam` 當您在「 」中的根層級執行搜尋時，也會顯示 **[!UICONTROL 檔案]** 資料夾。 如果您導覽至任何其他資料夾， `Path:/content/dam/<folder name>` 會顯示在Omnisearch欄位中，以將搜尋範圍限制在目前的資料夾。 [!DNL Experience Manager] 會在您開始輸入搜尋關鍵字時提供建議。
 
 使用 **[!UICONTROL 篩選器]** 面板以搜尋資產、資料夾、標籤和中繼資料。 您可以根據各種選項（述詞）來篩選搜尋結果，例如檔案型別、檔案大小、上次修改日期、資產狀態、見解資料和Adobe Stock授權。 您可以自訂「篩選器」面板，並使用新增或移除搜尋述詞 [搜尋Facet](/help/assets/search-facets.md). 此 [!UICONTROL 檔案型別] 在中篩選 [!UICONTROL 篩選器] 面板中有混合狀態核取方塊。 因此，除非您選取所有巢狀述詞（或格式），否則會部分勾選第一層核取方塊。
 
@@ -415,6 +415,7 @@ You can configure [!DNL Experience Manager] to extract the text from the assets 
 * 啟動工作流程
 * 建立資產關聯或取消關聯
 * 使用執行搜尋後自動顯示的「篩選器」面板，套用篩選器以縮小搜尋結果的範圍。
+* 導覽至資產位置
 
 ### 排序搜尋結果 {#sort}
 
@@ -466,6 +467,10 @@ You can configure [!DNL Experience Manager] to extract the text from the assets 
 ### 建立資產關聯和取消關聯 {#relate-unrelate-assets}
 
 關聯和取消關聯搜尋結果中顯示的資產。 選取資產並按一下 **[!UICONTROL 相關]** 或 **[!UICONTROL 取消關聯]**.
+
+### 導覽至資產資料夾位置 {#navigate-asset-folder-location}
+
+導覽至搜尋結果中所顯示資產的資料夾位置。 選取資產並按一下 **[!UICONTROL 顯示檔案位置]**.
 
 ## 未預期的搜尋結果和問題 {#unexpected-results}
 

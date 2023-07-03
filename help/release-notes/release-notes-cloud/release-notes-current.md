@@ -3,7 +3,7 @@ title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 目前發行說明�
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 目前發行說明。'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: da5634dfa812268b81b2db783da772b6ecc1d7ce
+source-git-commit: 45004db44af48301f0a9cbd9f574ac34c360275e
 workflow-type: tm+mt
 source-wordcount: '1365'
 ht-degree: 32%
@@ -56,9 +56,9 @@ ht-degree: 32%
 
 Experience Manager Assets現在可讓您從搜尋結果使用者介面執行更多作業：您現在可以：
 
-* 依預設會在目前的存放庫位置中執行搜尋，而不是在整個存放庫中搜尋關鍵字。
+* [在目前的存放庫位置中執行搜尋](/help/assets/search-assets.md) 依預設，不會在整個存放庫中搜尋關鍵字。
 
-* 導覽至搜尋結果中所顯示資產的資料夾位置。
+* [導覽至資料夾位置](/help/assets/search-assets.md#aftersearch) 適用於顯示在搜尋結果中的資產。
 
 **3D資產的縮圖預覽**
 
