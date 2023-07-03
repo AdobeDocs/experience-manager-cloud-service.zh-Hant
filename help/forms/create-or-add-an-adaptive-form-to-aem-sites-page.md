@@ -3,32 +3,32 @@ title: 如何將最適化表單新增至AEM Sites頁面？
 description: 瞭解如何輕鬆地建立最適化表單或將其新增到您的AEM Sites頁面。 瞭解將表單整合至網站的分步技巧和最佳實務，將您的數位體驗最佳化以發揮最大影響力。
 feature: Adaptive Forms, Page Editor, Authoring
 Keywords: Forms AEM Sites, Add Form to a Sites page, Adaptive Forms AEM Sites, Add Adaptive Forms to AEM Page, Create Forms in an AEM Sites page
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: bbb01d049083d0aef09bc2365235a7930fb53070
 workflow-type: tm+mt
-source-wordcount: '3245'
-ht-degree: 21%
+source-wordcount: '3264'
+ht-degree: 20%
 
 ---
 
 
-# 在AEM Sites頁面或AEM體驗片段中建立最適化表單 {#create-or-add-an-adaptive-form-to-aem-sites-page}
+# 在AEM Sites頁面或體驗片段中建立最適化表單 {#create-or-add-an-adaptive-form-to-aem-sites-page}
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/create-or-add-an-adaptive-form-to-aem-sites-page.html?lang=en) |
+| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/create-or-add-an-adaptive-form-to-aem-sites-page.html) |
 | AEM as a Cloud Service  | 本文 |
 
-透過AEM Forms，您可以順暢地將最適化表單新增至AEM Sites頁面。 這可讓您的訪客方便填寫和提交表單，而無需離開他們所在的頁面。 這麼，他們便可毫不費力地使用網站的其他元素，同時積極與表單進行互動。
+透過AEM Forms，您可以順暢地將表單新增至AEM Sites頁面。 這可讓您的訪客方便填寫和提交表單，而無需離開他們所在的頁面。 這麼，他們便可毫不費力地使用網站的其他元素，同時積極與表單進行互動。
 
 您可以使用AEM頁面編輯器快速建立多個表單並新增到您的AEM Sites頁面。 使用AEM頁面編輯器，內容作者就能利用調適型表單元件的功能（包括動態行為、驗證、資料整合、產生記錄檔案和業務流程自動化），在Sites頁面內建立順暢的資料擷取體驗。 這還允許您使用 AEM Sites 頁面的各種功能，例如版本設定、目標定位、翻譯和多個網站管理員。
 
-AEM Forms 會提供調適型表單內容和調適型表單 – 內嵌元件。 您可以使用調適型表單容器在體驗片段或AEM Sites頁面中建立新表單，而調適型Forms — 內嵌元件可讓您新增現有調適型表單或使用調適型Forms編輯器建立新表單。
+AEM FormsCloud Service提供最適化表單容器和Adaptive Forms — 內嵌元件。 您可以使用調適型表單容器在AEM Sites頁面或體驗片段中建立新表單，而調適型Forms — 內嵌元件可讓您新增現有調適型表單或使用調適型Forms編輯器建立新表單。
 
 ![AEM Sites頁面中的最適化表單範例](/help/forms/assets/adaptive-form-in-sites-page.png)
 
-## 為何要在AEM Sites頁面或AEM體驗片段中建立最適化表單？
+## 為何要使用Adaptive Forms核心元件在AEM Sites頁面或體驗片段中建立最適化表單？
 
-在AEM頁面編輯器中使用調適型表單容器，可讓您使用調適型Forms元件的功能（包括動態行為、驗證、資料整合、產生記錄檔案和業務流程自動化），在Sites頁面中建立順暢的資料擷取體驗。 它也可讓您使用AEM Sites頁面的各種功能，如版本設定、目標定位、翻譯和多網站管理員，以增強整體表單建立和管理體驗。 讓我們來探索以下部分功能：
+如果您過去曾為您的網站建立最適化Forms基礎元件或純HTML型表單，Adobe建議使用最適化Forms核心元件在AEM Sites頁面或體驗片段中建立最適化表單。 它可讓您使用AEM Sites頁面的各種功能，例如版本設定、目標定位、翻譯和多網站管理員，增強最適化Forms的整體表單建立和管理體驗。 讓我們來探索以下部分功能：
 
 * **版本設定：** AEM Sites頁面選件 [強大的版本設定功能](/help/sites-cloud/authoring/features/page-versions.md)，可讓您追蹤及管理不同版本的表單。 這可讓您對表單進行變更和增強，同時維持視需要復原至先前版本的能力。 版本設定可確保採用受控且有條理的方式來形成開發和演化。
 * **目標定位(與Adobe Target整合)：** 透過AEM Sites頁面鎖定目標功能，您也可以 [為不同對象個人化表單體驗](/help/sites-cloud/integrating/integration-adobe-target-ims.md). 運用使用者區段和目標定位條件，您可以針對特定使用者群組量身打造表單的內容、設計或行為。 這可讓您提供個人化且相關的表單體驗，提高參與度和轉換率。
@@ -38,7 +38,7 @@ AEM Forms 會提供調適型表單內容和調適型表單 – 內嵌元件。 �
 * **標籤：** AEM Sites頁面可讓您 [將標籤或標籤指派給頁面、資產或其他內容](/help/implementing/developing/introduction/tagging-framework.md). 標籤是關鍵字或中繼資料標籤，可讓您根據特定條件分類及組織內容。 您可以將一個或多個標籤指派給AEM內的頁面、資產或任何其他內容專案，以改善搜尋並分類資產。
 * **鎖定和解鎖內容：** AEM Sites允許使用者 [控制對頁面的存取與修改](/help/sites-cloud/authoring/fundamentals/editing-content.md) 在AEM Sites環境中。 頁面鎖定時，即代表頁面不會受到其他使用者未經授權的變更或編輯作業。 只有已鎖定內容的使用者或指定的管理員可以解鎖該內容以允許修改。
 
-此外，AEM頁面編輯器中的最適化Forms會使用 [最適化Forms核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en#features). 這些核心元件提供標準且更簡單的方法來樣式化和自訂元件，完全等同於 [AEM Sites WCM元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hant).
+此外，AEM頁面編輯器中的最適化Forms會使用 [最適化Forms核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html#features). 這些核心元件提供標準且更簡單的方法來樣式化和自訂元件，完全等同於 [AEM Sites WCM元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html).
 
 
 ## 如何在AEM Sites頁面或AEM體驗片段中建立或新增最適化表單？ {#various-options-to-creat-or-add-an-adaptive-form-in-aem-sites-page-or-aem-experience-fragment}
@@ -262,4 +262,9 @@ AEM Forms 會提供調適型表單內容和調適型表單 – 內嵌元件。 �
 * [為您的表單建立樣式或主題](using-themes-in-core-components.md)
 * [使用規則編輯器將動態行為新增至表單](rule-editor.md)
 * [設定不同熒幕大小和裝置型別的表單版面](/help/sites-cloud/authoring/features/responsive-layout.md)
+
+
+## 相關文章 {#related-article}
+
+* [建立獨立核心元件型最適化表單](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html)
 
