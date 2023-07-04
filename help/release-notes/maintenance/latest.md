@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的目前維護版本發行說明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的目前維護版本發行說明。'
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: e8ea040ba3f8c73d7ed64c9669ac1d0a22d3a3c8
+source-git-commit: c7143ce939ca8c06fc678fc30f90c71981e4f8d7
 workflow-type: tm+mt
-source-wordcount: '600'
-ht-degree: 23%
+source-wordcount: '607'
+ht-degree: 20%
 
 ---
 
@@ -13,18 +13,18 @@ ht-degree: 23%
 
 下節是 Experience Manager as a Cloud Service 目前維護版本的技術版本發行說明。
 
-## 12441 版 {#release-12441}
+## 12549 版 {#release-12549}
 
-下面是 12441 維護版本的持續改善內容，該版本於 2023 年 6 月 27 日公開發布。此維護版本是先前 12255 維護版的更新。
+以下摘要說明2023年7月4日公開發佈的維護版本資12549的持續改善。 此維護版本是先前 12255 維護版的更新。維護發行說12549會取代12441以修正兩個問題。
 
 2023.7.0 Feature Activation將提供此維護版本的完整功能集。 請參閱 [Experience Manager發行藍圖](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html) 以取得詳細資訊。
 
-### 增強功能 {#enhancements-12441}
+### 增強功能 {#enhancements-12549}
 
 - SITES-8769：改善ResponsiveGrid中的StyleImpl呼叫
 - Forms-5054：新增對所有 [雕像](https://opensource.adobe.com/acrobat-sign/acrobat_sign_events/webhookeventsagreements.html) Adobe Sign支援。
 
-### 已修正的問題 {#fixed-issues-12441}
+### 已修正的問題 {#fixed-issues-12549}
 
 - 各種與協助工具相關的更新
 - SITES-12688：頁面編輯器：邏輯運運算元或無法在資產尋找器搜尋中正常運作
@@ -53,11 +53,11 @@ ht-degree: 23%
 - Forms-9072：當您在建立表單片段時搜尋配置時，搜尋結果不會傳回任何供選取的結構描述。
 - Forms：修正多項與協助工具相關的錯誤，以改善AEM Forms功能的協助工具。
 
-### 已知問題 {#known-issues-12441}
+### 已知問題 {#known-issues-12549}
 
 無。
 
-### 內嵌技術 {#embedded-tech-12441}
+### 內嵌技術 {#embedded-tech-12549}
 
 | 技術 | 版本 | 連結 |
 |---|---|---|
