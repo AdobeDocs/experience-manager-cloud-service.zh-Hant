@@ -7,9 +7,9 @@ keywords: 新增自訂錯誤處理常式、新增預設錯誤處理常式、在�
 contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms
-source-git-commit: 09ed1ae61e7748da2cc182b005a9dd26853cb3f7
+source-git-commit: 11ab8d41b911afc73fe5339d43ca3a0fc80a5f8d
 workflow-type: tm+mt
-source-wordcount: '1981'
+source-wordcount: '1926'
 ht-degree: 2%
 
 ---
@@ -59,7 +59,7 @@ AEM Forms為表單提交提供現成可用的成功和錯誤處理常式。 此�
     ]
     originCode : <target error Code>
     originMessage : <unstructured error message returned by service>
-}
+    }
 ```
 
 
@@ -125,19 +125,19 @@ AEM Forms為表單提交提供現成可用的成功和錯誤處理常式。 此�
 * **`Header:`** `content-type:application/problem+json`
 * **`Response:`**
 
-        ```javascript
-        {
-            "type": "VALIDATION_ERROR",
-            "validationErrors": [
-            {
-            "fieldName": "guide[0].guide1[0].guideRootPanel[0].textbox1686647736683[0]",
-            "dataRef": "",
-            "details": [
-            "Invalid ID supplied. Provided value is not correct!"
-        ]
-        }
-            ]}
-        ```
+  ```javascript
+          {
+              "type": "VALIDATION_ERROR",
+              "validationErrors": [
+              {
+              "fieldName": "guide[0].guide1[0].guideRootPanel[0].textbox1686647736683[0]",
+              "dataRef": "",
+              "details": [
+              "Invalid ID supplied. Provided value is not correct!"
+          ]
+          }
+          ]}
+  ```
 
   您可以點選任何欄位並選取「 」，以檢視最適化表單中任何欄位的SOM運算式 **[!UICONTROL 檢視SOM運算式]**.
 
@@ -152,17 +152,17 @@ AEM Forms為表單提交提供現成可用的成功和錯誤處理常式。 此�
 * **`Response:`**
 
   ```javascript
-  {
-      "type": "VALIDATION_ERROR",
-      "validationErrors": [
       {
-          "fieldName": "",
-          "dataRef": "/Pet/id",
-          "details": [
-          "Invalid ID supplied. Provided value is not correct!"
-          ]
-          }
-  ]}
+          "type": "VALIDATION_ERROR",
+          "validationErrors": [
+          {
+              "fieldName": "",
+              "dataRef": "/Pet/id",
+              "details": [
+              "Invalid ID supplied. Provided value is not correct!"
+              ]
+              }
+      ]}
   ```
 
   ![在自訂錯誤處理常式中顯示錯誤回應的最適化表單欄位的資料參考](/help/forms/assets/custom-errorhandler-dataref.png)
@@ -235,20 +235,20 @@ As a result of this rule, the values you enter for **Pet ID** checks validation 
 1. 新增JavaScript檔案，例如 `function.js`. 此檔案包含自訂錯誤處理常式的程式碼。
 讓我們將下列程式碼新增至JavaScript檔案，以在瀏覽器主控台中顯示從REST服務端點收到的回應和標頭。
 
-        ```javascript
-        /**
-        * Custom Error handler
-        * @name customErrorHandler Custom Error Handler Function
-        * @errorHandler
-        */
-        function customErrorHandler(response, headers)
-        {
-            console.log("Custom Error Handler processing start...");
-            console.log("response:"+JSON.stringify(response));
-            console.log("headers:"+JSON.stringify(headers));
-            console.log("Custom Error Handler processing end...");
-        }
-        ```
+   ```javascript
+       /**
+       * Custom Error handler
+       * @name customErrorHandler Custom Error Handler Function
+       * @errorHandler
+       */
+       function customErrorHandler(response, headers)
+       {
+           console.log("Custom Error Handler processing start...");
+           console.log("response:"+JSON.stringify(response));
+           console.log("headers:"+JSON.stringify(headers));
+           console.log("Custom Error Handler processing end...");
+       }
+   ```
 
    <!--  To call the default error handler after the custom error handler, the following line of the sample code is used:
         `guidelib.dataIntegrationUtils.defaultErrorHandler(response, headers) `-->
