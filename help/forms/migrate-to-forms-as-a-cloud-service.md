@@ -1,16 +1,16 @@
 ---
 title: 如何從AEM 6.5 Forms移轉至 [!DNL AEM Forms] as a Cloud Service環境？
 description: 從移轉 [!DNL AEM Forms] （內部部署和AMS環境）至 [!DNL AEM Forms] as a Cloud Service環境。
-keywords: 6.5 forms至cloud service、6.5 forms至cs、將6.5 forms移轉至CS、將6.5 forms移轉至cloud service、將6.5 forms升級至CS、將6.5 forms移轉至CS、將AEM 6.5升級至CS
+keywords: 6.5 forms至cloud service、6.5 forms至cs、將6.5 forms移轉至CS、將6.5 forms移轉至cloud service、將6.5 forms升級至CS、將6.5 forms移轉至CS、將AEM 6.5升級至CS、將AEM Forms 6.5升級至Cloud Service、將AEM forms移轉至cloud service
 contentOwner: khsingh
 feature: Adaptive Forms
 role: User, Developer
 level: Intermediate
 topic: Migration
 exl-id: 090e77ff-62ec-40cb-8263-58720f3b7558
-source-git-commit: f6b8ef52ad551be70e665a14ce00c197d1470e84
+source-git-commit: 850b1cccb03ca05ea53b646c55fcb0d0c100494c
 workflow-type: tm+mt
-source-wordcount: '1566'
+source-wordcount: '1590'
 ht-degree: 3%
 
 ---
@@ -120,7 +120,7 @@ ht-degree: 3%
 
    Cloud Service不支援規則編輯器指令碼。 此 **[!UICONTROL 程式碼編輯器指令碼移轉]** tool會將您環境上的所有規則指令碼轉換為可重複使用的函式，並將可重複使用的函式套用至適當位置的視覺化編輯器。 這些可重複使用的功能會以使用者端程式庫形式儲存，並協助您保持現有功能不變。 此工具會自動將產生的可重複使用函式套用至對應的Adaptive Forms。
 
-   使用 [封裝管理員](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=en#contentmanagement) 將可重複使用的函式（使用者端程式庫）匯出至套件。
+   AEM表單移轉至Cloud Service，請使用 [封裝管理員](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=en#contentmanagement) 將可重複使用的函式（使用者端程式庫）匯出至套件。
 
 1. [部署](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=en#deploying-content-packages-via-cloud-manager-and-package-manager) 可重複使用的函式（使用者端程式庫）套件， [自訂程式碼、元件、設定](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/devops/deploy-code.html#cloud-manager)，自訂地區設定專屬程式庫 [!DNL AEM] as a Cloud Service環境。
 
@@ -152,7 +152,7 @@ ht-degree: 3%
 * `/content/forms/af`
 * `/etc/clientlibs/fd/theme`
 
-若要移轉AEM Workflow模型，請指定下列路徑：
+將AEM Workflow模型從AEM Forms 6.5移轉至Cloud Service時，請指定下列路徑：
 
 * `/conf/global/settings/workflow/models/`
 * `/conf/global/settings/workflow/launcher`
