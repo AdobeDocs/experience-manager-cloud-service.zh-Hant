@@ -7,9 +7,9 @@ role: User, Developer
 level: Beginner
 hide: true
 hidefromtoc: true
-source-git-commit: 0efdb9353ef908cf5a655c989ae7be1107c8f3de
+source-git-commit: e302d24261f24697aeb5f97b99ffee1fc2135959
 workflow-type: tm+mt
-source-wordcount: '2849'
+source-wordcount: '2783'
 ht-degree: 1%
 
 ---
@@ -24,20 +24,17 @@ ht-degree: 1%
 
 最適化Forms可讓您建立吸引人、回應式、動態且最適化的表單。 AEM Forms為商業使用者提供好用的精靈，以便快速建立最適化Forms。 精靈具有快速索引標籤導覽，可輕鬆選取預先設定的範本、樣式、欄位和提交選項以建立調適型表單。
 
+![建立最適化表單的精靈](/help/release-notes/assets/wizard.png){width="100%" align="center"}
+
 開始之前，請先瞭解您可用的Forms元件型別：
 
-* [最適化Forms核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=zh-Hant)：這些是標準化的資料擷取元件。 這些元件提供自訂功能、縮短開發時間，並降低數位註冊體驗的維護成本。 開發人員可以輕鬆自訂這些元件並設定其樣式。 **Adobe建議使用這些現代化且可擴充的元件來開發最適化Forms**.
+* [最適化Forms核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=zh-Hant)：這些是標準化的資料擷取元件。 這些元件提供自訂功能、縮短開發時間，並降低數位註冊體驗的維護成本。 開發人員可以輕鬆自訂這些元件並設定其樣式。 您可以造訪 [https://aemcomponents.dev/](https://aemcomponents.dev/) 以檢視可用的核心元件運作中 **Adobe建議使用這些現代化且可擴充的元件來開發最適化Forms**.
 
 * [Adaptive Forms Foundation元件](creating-adaptive-form.md)：這些是傳統（舊）資料擷取元件。 您可以繼續使用這些專案來編輯現有的基礎元件型最適化表單。 如果您要建立新表單，Adobe建議使用  [最適化Forms核心元件以建立最適化Forms](#create-an-adaptive-form-core-components).
 
-![建立最適化表單的精靈](/help/release-notes/assets/wizard.png){width="100%" align="center"}
-
-
 >[!BEGINTABS]
 
->[!TAB 使用核心元件建立最適化Forms]
-
-## 先決條件 {#pre-requisites-to-create-a-core-components-based-adaptive-form}
+>[!TAB 使用核心元件建立最適化Forms （建議）]
 
 您需要下列專案才能建立最適化表單：
 
@@ -101,25 +98,20 @@ ht-degree: 1%
    * **[!UICONTROL 名稱：]** 指定表單的名稱。 在存放庫中會建立具有指定名稱的節點。 當您開始輸入標題時，會自動產生名稱欄位的值。 您可以變更建議值。 名稱欄位只能包含英數字元、連字型大小和底線。 所有無效輸入都會以連字型大小取代。
    * **[!UICONTROL 路徑：]** 指定最適化表單的儲存位置。 您可以直接將最適化表單儲存在 `/content/dam/formsanddocuments` 或建立資料夾，例如 `/content/dam/formsanddocuments/adaptiveforms` 以儲存最適化表單。 在路徑中使用資料夾之前，請務必先建立資料夾。 此 **[!UICONTROL 路徑]** 欄位不會自動建立資料夾。
 
-1. 點選 **[!UICONTROL 建立]**. 最適化表單會在最適化Forms編輯器中建立並開啟。 編輯器會顯示範本中可用的內容。  根據最適化表單的型別，出現在相關聯中的表單元素 <!--XFA form template, XML schema or --> JSON結構描述或表單資料模型會顯示在 **[!UICONTROL 資料模型物件]** 的標籤 **[!UICONTROL 內容瀏覽器]** 在側欄中。 您也可以拖放這些元素來建置最適化表單。
+1. 點選 **[!UICONTROL 建立]**. 最適化表單會在最適化Forms編輯器中建立並開啟。 編輯器會顯示範本中可用的內容。  根據最適化表單的型別，出現在相關聯中的表單元素 <!--XFA form template, XML schema or --> JSON結構描述或表單資料模型會顯示在 **[!UICONTROL 資料模型物件]** 的標籤 **[!UICONTROL 內容瀏覽器]** 在側欄中。
 
-現在，您可以拖放最適化Forms核心元件至最適化Forms容器，以設計和建立表單。
+現在，您可以拖放 [最適化Forms核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en#components) 或結構描述元素來建置您的調適型表單。
 
-## 可用的最適化Forms核心元件 {#available-core-components}
-
-最適化Forms核心元件是標準化的資料擷取元件。 這些元件提供自訂功能，有助於縮短開發時間，並降低數位註冊體驗的維護成本。 [Adaptive Forms核心元件檔案](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=zh-Hant) 具有可用元件的詳細清單，以及有關每個元件功能的詳細資訊。 您也可以造訪 [https://aemcomponents.dev/](https://aemcomponents.dev/) 以檢視作用中的可用核心元件。
 
 ## 編輯最適化表單的表單模型屬性 {#edit-form-model-core-components-based-adaptive-forms}
 
-1. 選取最適化表單並點選 ![頁面資訊](/help/forms/assets/Smock_Properties_18_N.svg){width="100%" align="center"} > **[!UICONTROL 開啟屬性]**. 「表單屬性」頁面隨即開啟。
+1. 選取最適化表單並點選 ![頁面資訊](/help/forms/assets/Smock_Properties_18_N.svg) > **[!UICONTROL 開啟屬性]**. 「表單屬性」頁面隨即開啟。
 
 1. 前往 **[!UICONTROL 表單模型]** 標籤並選擇表單模型。 如果最適化表單沒有表單模型，您可以自由選擇JSON結構描述或表單資料模型。 另一方面，如果最適化表單已基於表單模型，您可以選擇切換到相同型別的另一個表單模型。 例如，如果表單使用JSON結構描述，您可以輕鬆切換到另一個JSON結構描述，同樣如果表單使用表單資料模型，您可以切換到另一個表單資料模型。
 
 1. 點選 **[!UICONTROL 儲存]** 以儲存屬性。
 
 >[!TAB 使用Foundation元件建立最適化Forms]
-
-## 先決條件 {#pre-requisites-to-create-a-foundation-components-based-adaptive-form}
 
 您需要下列專案才能建立最適化表單：
 
@@ -254,7 +246,7 @@ Do the following to use XML or JSON schema as form model for an Adaptive Form:
 您也可以從最適化表單編輯器或最適化表單範本編輯器修改表單模型屬性。
 
 1. 選取 **[!UICONTROL 最適化表單容器（根）]** 元件。
-1. 按一下 ![設定圖示](/help/forms/assets/configure-icon.svg){width="100%" align="center"} 圖示以開啟 **[!UICONTROL 屬性]** 最適化表單容器的預設值。
+1. 按一下 ![設定圖示](/help/forms/assets/configure-icon.svg) 圖示以開啟 **[!UICONTROL 屬性]** 最適化表單容器的預設值。
 1. 選取 **[!UICONTROL 資料模型]** 標籤並執行下列任一項作業：
 
    * 如果最適化表單沒有表單模型，您可以選擇表單模型，並相應地選擇 <!-- a form template, --> XML或JSON結構描述，或表單資料模型。
