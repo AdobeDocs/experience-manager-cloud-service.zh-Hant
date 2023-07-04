@@ -8,9 +8,9 @@ user-guide-description: 了解 Experience Manager as a Cloud Service 的運作�
 breadcrumb-title: 使用手冊
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: e60a734d7e0887a23978efac8d896ac3745dbb5d
+source-git-commit: 823d9875f1cd293df834cc6e2fc16fc8f7e0d37b
 workflow-type: tm+mt
-source-wordcount: '4150'
+source-wordcount: '4160'
 ht-degree: 98%
 
 ---
@@ -518,7 +518,7 @@ ht-degree: 98%
       + [管理收藏集](/help/assets/manage-collections-assets-view.md)
       + [監視資產、資料夾和集合](/help/assets/manage-notifications-assets-view.md)
       + [管理報告](/help/assets/manage-reports-assets-view.md)
-      + [管理標籤](/help/assets/tagging-management-assets-view.md)
+      + [管理標記](/help/assets/tagging-management-assets-view.md)
    + 與 Adobe Workfront 整合 {#integrations}
       + [與  [!DNL Adobe Workfront] 整合](/help/assets/workfront-integrations.md)
       + [設定資產中繼資料對應](/help/assets/configure-asset-metadata-mapping.md)
@@ -526,7 +526,6 @@ ht-degree: 98%
       + [移除現有安裝的外部相依性](/help/assets/remove-external-dependencies.md)
       + [設定 [!DNL enhanced connector] for [!DNL Workfront]](/help/assets/workfront-connector-configure.md)
       + [更新 [!DNL Workfront for Experience Manager enhanced connector]](/help/assets/update-workfront-enhanced-connector.md)
-
 + Forms {#forms}
    + 概觀 {#forms-overview}
       + [簡介](/help/forms/home.md)
@@ -627,9 +626,10 @@ ht-degree: 98%
       + [在 PDF 文件中使用自訂字型](/help/forms/use-custom-fonts.md)
       + [已知問題、最佳實務和常見問題集](/help/forms/communications-known-issues-limitations.md)
    + 開發人員 API 參考 {#aem-forms-developer-api-reference}
+      + [Adaptive Forms API參考](https://developer-stage.adobe.com/experience-cloud/experience-manager-apis/api/stable/forms/)
       + [AEM Forms as a Cloud Service 通訊 API 參考](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)
       + [AEM Forms as a Cloud Service JavaScript API 參考](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/jsdoc/aem-forms-cloud-service-jsdoc/index.html)
-      + [AEM Forms as a Cloud Service Java API 參考](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/aem-forms-cloud-service-javadoc/index.html)
+      + [AEM Forms as a Cloud Service Java API 參考](https://javadoc.io/doc/com.adobe.aem/aem-forms-sdk-api/latest/index.html)
    + 疑難排解 {#troubleshooting-aem-forms-cloud-service}
       + [安裝和設定](/help/forms/troubleshooting-installation-and-configuration.md)
       + [Dispatcher 和 CDN 快取](/help/forms/troubleshooting-caching-performance.md)
