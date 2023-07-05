@@ -105,7 +105,7 @@ long count = tag.getCount();
 >
 >`com.day.cq.commons.RangeIterator`
 
-### 刪除標籤 {#deleting-tags}
+### 刪除標記 {#deleting-tags}
 
 ```java
 tagManager.deleteTag(tag);

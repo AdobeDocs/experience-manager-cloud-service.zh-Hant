@@ -162,7 +162,7 @@ HTTP 方法決定要執行的操作：
 如需透過API可用功能的詳細資訊，請參閱：
 
 * 此 [Assets REST API](/help/assets/mac-api-assets.md)
-* [實體型別](/help/assets/content-fragments/assets-api-content-fragments.md#entity-types)，其中說明每種支援型別（與內容片段相關）的特定功能
+* [實體型別](/help/assets/content-fragments/assets-api-content-fragments.md#entity-types)，其中說明每種受支援型別（與內容片段相關）的特定功能
 
 ### 分頁 {#paging}
 

@@ -415,7 +415,7 @@ AEM可讓您使用適當的HTML元素，輕鬆建構語義上有意義的網頁�
 
 #### 如何達到標準 — 有意義的順序(1.3.2) {#how-to-meet-meaningful-sequence}
 
-遵循以下准則： [如何達到成功標準1.3.2](https://www.w3.org/WAI/WCAG21/quickref/#meaningful-sequence).
+請遵循以下准則： [如何達到成功標準1.3.2](https://www.w3.org/WAI/WCAG21/quickref/#meaningful-sequence).
 
 #### 更多資訊 — 有意義的順序(1.3.2) {#more-information-meaningful-sequence}
 
@@ -509,7 +509,7 @@ AEM可讓您使用適當的HTML元素，輕鬆建構語義上有意義的網頁�
 
 #### 如何達到標準 — 音訊控制(1.4.2) {#how-to-meet-audio-control}
 
-遵循以下准則： [如何達到成功標準1.4.2](https://www.w3.org/WAI/WCAG21/quickref/#audio-control).
+請遵循以下准則： [如何達到成功標準1.4.2](https://www.w3.org/WAI/WCAG21/quickref/#audio-control).
 
 #### 更多資訊 — 音訊控制(1.4.2) {#more-information-audio-control}
 
@@ -639,7 +639,7 @@ AEM可讓您使用適當的HTML元素，輕鬆建構語義上有意義的網頁�
 
 #### 如何達到標準 — 鍵盤(2.1.1) {#how-to-meet-keyboard}
 
-請遵循以下准則： [如何達到成功標準2.1.1](https://www.w3.org/WAI/WCAG21/quickref/#keyboard).
+遵循以下准則： [如何達到成功標準2.1.1](https://www.w3.org/WAI/WCAG21/quickref/#keyboard).
 
 #### 更多資訊 — 鍵盤(2.1.1) {#more-information-keyboard}
 
@@ -921,7 +921,7 @@ John Smith's publications
 
 #### 如何達到標準 — 標題和標籤(2.4.6) {#how-to-meet-headings-and-labels}
 
-請遵循以下准則： [如何達到成功標準2.4.6](https://www.w3.org/WAI/WCAG21/quickref/#headings-and-labels).
+遵循以下准則： [如何達到成功標準2.4.6](https://www.w3.org/WAI/WCAG21/quickref/#headings-and-labels).
 
 #### 更多資訊 — 標題和標籤(2.4.6) {#more-information-headings-and-labels}
 
@@ -1081,7 +1081,7 @@ AEM針對根語言的變體提供進一步微調；例如，美式英文 — en-
 
 #### 如何達到標準 — 輸入(3.2.2) {#how-to-meet-on-input}
 
-遵循以下准則： [如何達到成功標準3.2.2](https://www.w3.org/WAI/WCAG21/quickref/#on-input).
+請遵循以下准則： [如何達到成功標準3.2.2](https://www.w3.org/WAI/WCAG21/quickref/#on-input).
 
 #### 更多資訊 — 輸入(3.2.2) {#more-information-on-input}
 
@@ -1104,7 +1104,7 @@ AEM針對根語言的變體提供進一步微調；例如，美式英文 — en-
 
 #### 如何達到標準 — 一致的導覽(3.2.3) {#how-to-meet-consistent-navigation}
 
-請遵循以下准則： [如何達到成功標準3.2.3](https://www.w3.org/WAI/WCAG21/quickref/#consistent-navigation).
+遵循以下准則： [如何達到成功標準3.2.3](https://www.w3.org/WAI/WCAG21/quickref/#consistent-navigation).
 
 #### 更多資訊 — 一致的導覽(3.2.3) {#more-information-consistent-navigation}
 
@@ -1258,7 +1258,7 @@ AEM針對根語言的變體提供進一步微調；例如，美式英文 — en-
 
 #### 如何達到標準 — 錯誤預防（法律、金融、資料） (3.3.4) {#how-to-meet-error-prevention-legal-financial-data}
 
-遵循以下准則： [如何達到成功標準3.3.4](https://www.w3.org/WAI/WCAG21/quickref/#error-prevention-legal-financial-data).
+請遵循以下准則： [如何達到成功標準3.3.4](https://www.w3.org/WAI/WCAG21/quickref/#error-prevention-legal-financial-data).
 
 #### 更多資訊 — 錯誤預防（法律、金融、資料） (3.3.4) {#more-information-error-prevention-legal-financial-data}
 
@@ -1314,7 +1314,7 @@ AEM針對根語言的變體提供進一步微調；例如，美式英文 — en-
 
 #### 如何達到標準 — 名稱、角色、值(4.1.2) {#how-to-meet-ame-role-value}
 
-請遵循以下准則： [如何達到成功標準4.1.2](https://www.w3.org/WAI/WCAG21/quickref/#name-role-value).
+遵循以下准則： [如何達到成功標準4.1.2](https://www.w3.org/WAI/WCAG21/quickref/#name-role-value).
 
 #### 更多資訊 — 名稱、角色、值(4.1.2 {#more-information-ame-role-value}
 

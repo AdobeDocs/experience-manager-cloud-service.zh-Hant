@@ -542,7 +542,7 @@ Adobe Experience Manager as a Cloud Service隨附強大的功能 [搜尋](/help/
 * **發佈和即時副本屬性名稱**
 網站特定述詞的發佈和即時副本核取方塊的標籤。
 
-* &amp;ast；在中的欄位標籤上 **設定** tab表示欄位是必填欄位，如果留空，將顯示錯誤訊息。
+* &amp;ast；位於中的欄位標籤上 **設定** tab表示欄位是必填欄位，如果留空，將顯示錯誤訊息。
 
 ## 設定搜尋Forms {#configuring-your-search-forms}
 

@@ -85,7 +85,7 @@ ht-degree: 15%
 
 * 使用時 `Amazon S3` 或 `Azure` 做為來源AEM系統上的資料存放區，資料存放區應進行設定，以便無法刪除已儲存的blob （垃圾收集）。 這樣可確保索引資料的完整性，如果無法以這種方式設定，可能會導致擷取失敗，因為此索引資料缺乏完整性。
 
-* 如果您使用自訂索引，您必須確保設定自訂索引時具有 `tika` 節點（在執行內容轉移工具之前）。 另請參閱 [準備新的索引定義](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html#preparing-the-new-index-definition) 以取得更多詳細資料。
+* 如果您使用自訂索引，則必須確保設定自訂索引時具有 `tika` 節點（在執行內容轉移工具之前）。 另請參閱 [準備新的索引定義](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html#preparing-the-new-index-definition) 以取得更多詳細資料。
 
 * 如果您打算執行追加提取，則必須確保現有內容的內容結構不會從初次提取時間變更為執行追加提取時間。 追加無法針對自初始擷取以來結構已變更的內容執行。 請務必在移轉程式期間限制此專案。
 
