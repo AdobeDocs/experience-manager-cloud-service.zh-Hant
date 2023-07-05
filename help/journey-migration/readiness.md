@@ -5,7 +5,7 @@ exl-id: 3bc8c037-d82a-4455-bce6-3c80c359a4ae
 source-git-commit: a9aa82c8258e6a5f43680069c65518093c0baf8d
 workflow-type: tm+mt
 source-wordcount: '2066'
-ht-degree: 4%
+ht-degree: 6%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 4%
 >[!CONTEXTUALHELP]
 >id="aemcloud_cam_planning"
 >title="規劃您的轉換"
->abstract="在開始Cloud Service的轉變歷程之前，請先熟悉AEMas a Cloud Service。 檢閱對其所做的重大變更，以及已取代或已棄用的功能。"
+>abstract="在開始轉換至 Cloud Service 的旅程之前，請先熟悉 AEM as a Cloud Service。查看其重大變更以及被取代或棄用的功能。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html" text="最佳做法分析工具"
 
 在AEMas a Cloud Service移轉歷程的這個階段，您可以熟悉AEMas a Cloud Service。 您可以檢閱引進的重大變更，並瞭解規劃成功移轉至雲端需要哪些條件。

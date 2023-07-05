@@ -5,7 +5,7 @@ exl-id: c7155459-05d9-4a95-a91f-a1fa6ae9d9a4
 source-git-commit: df82681338f8ca1a34df6118cbddc6642aa8d4b5
 workflow-type: tm+mt
 source-wordcount: '814'
-ht-degree: 71%
+ht-degree: 75%
 
 ---
 
@@ -14,9 +14,9 @@ ht-degree: 71%
 >[!CONTEXTUALHELP]
 >id="assets_reports"
 >title="報告"
->abstract="資產報告可讓管理員檢視Adobe Experience Manager Assets檢視環境的活動。 此資料提供有關使用者如何與內容和產品互動的有用資訊。指派至管理員產品設定檔的所有使用者可以存取 Insights 儀表板或建立使用者定義的報告。"
+>abstract="資產報告使管理員能夠查看 Adobe Experience Manager Assets 檢視環境的活動。此資料提供有關使用者如何與內容和產品互動的有用資訊。指派至管理員產品設定檔的所有使用者可以存取 Insights 儀表板或建立使用者定義的報告。"
 
-資產報告可讓管理員檢視Adobe Experience Manager Assets檢視環境的活動。 此資料提供有關使用者如何與內容和產品互動的有用資訊。
+資產報告使管理員能夠查看 Adobe Experience Manager Assets 檢視環境的活動。此資料提供有關使用者如何與內容和產品互動的有用資訊。
 
 ## 訪問報告 {#access-reports}
 

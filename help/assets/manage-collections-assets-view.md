@@ -5,7 +5,7 @@ exl-id: 33c889f5-c989-4772-9591-db62f50e5c80
 source-git-commit: d198b3f0c7d8469a376ba7a3e95e57c84f835dbb
 workflow-type: tm+mt
 source-wordcount: '793'
-ht-degree: 86%
+ht-degree: 87%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 86%
 >[!CONTEXTUALHELP]
 >id="assets_collections"
 >title="管理收藏集"
->abstract="集合是Assets檢視中的一組資產、資料夾或其他集合。 使用收藏集在使用者之間共用資產。和檔案夾不同，收藏集可包含來自不同位置的資產。您可以和使用者共用多個收藏集。每個收藏集都包含資產的參考資料。資產的參考完整性會跨越收藏集來維護。"
+>abstract="收藏集是 Assets 檢視中的一組資產、檔案夾或其他集合。使用收藏集在使用者之間共用資產。和檔案夾不同，收藏集可包含來自不同位置的資產。您可以和使用者共用多個收藏集。每個收藏集都包含資產的參考資料。資產的參考完整性會跨越收藏集來維護。"
 
 集合是Adobe Experience Manager Assets檢視中的一組資產、資料夾或其他集合。 使用收藏集在使用者之間共用資產。
 

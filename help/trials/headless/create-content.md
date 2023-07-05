@@ -7,7 +7,7 @@ exl-id: d74cf5fb-4c4a-4363-a500-6e2ef6811e60
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '657'
-ht-degree: 83%
+ht-degree: 87%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 83%
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_create_content"
 >title="建立新內容"
->abstract="使用您在上一個單元中建立的模式，您可以瞭解如何建立可用於編寫頁面或作為Headless內容基礎的內容。"
+>abstract="使用您在上一個單元中建立的模式，您將了解如何建立可用於編寫頁面或作為 Headless 內容基礎的內容。"
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_create_content_guide"
