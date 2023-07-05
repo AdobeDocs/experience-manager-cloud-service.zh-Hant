@@ -2,9 +2,9 @@
 title: 如何下載和安裝Forms Designer以建立記錄檔案範本？
 description: 您可以使用Forms Designer來建立作為記錄檔案範本的XDP和PDF表單範本。 Designer可用於 [!DNL AEM Forms] 授權。
 exl-id: d6f1cb21-c48b-406d-8d47-482d7a1b4cc3
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: e71dd8a4eb92acbed53fb9384bc40efc3e743761
 workflow-type: tm+mt
-source-wordcount: '254'
+source-wordcount: '262'
 ht-degree: 2%
 
 ---
@@ -26,6 +26,7 @@ Designer是一種點按式圖形表單設計工具，可簡化XDP和PDF表單範
 * 視訊硬體加速（選購）
 * Acrobat Pro DC、Acrobat Standard DC或Adobe Acrobat Reader DC。
 * 安裝Designer的管理許可權。
+* Microsoft Visual C++ 2019 （VC 14.28或更新版本） 32位元執行階段
 
 ## 安裝設計工具 {#install-designer}
 
