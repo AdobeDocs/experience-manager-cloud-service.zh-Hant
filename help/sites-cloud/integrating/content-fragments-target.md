@@ -2,7 +2,7 @@
 title: 將內容片段匯出到 Adobe Target
 description: 將內容片段匯出到 Adobe Target
 exl-id: 760e0a39-0805-498e-a2c9-038fd1e1058d
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 7905f21e70f373150775fe90d5faf02db4a59c32
 workflow-type: tm+mt
 source-wordcount: '2222'
 ht-degree: 1%
@@ -236,11 +236,11 @@ ht-degree: 1%
 
 1. 在「建立架構」對話方塊中，指定 **標題**，選取 **Adobe Target框架**，然後按一下 **建立**.
 
-   <!-- ![config-target-framework-dialog](assets/config-target-framework-dialog.png) -->
+   <!-- ![Configure Target Framework Dialog](assets/config-target-framework-dialog.png) -->
 
    框架頁面隨即開啟。 Sidekick提供的元件代表來自 [ContextHub](/help/implementing/developing/personalization/configuring-contexthub.md) 您可以對應哪些物件。
 
-   <!-- ![chlimage_1-162](assets/chlimage_1-162.png) -->
+   <!-- ![Configuring ContextHub](assets/chlimage_1-162.png) -->
 
 1. 將代表您要用來對應之資料的「使用者端內容」元件拖曳至放置目標。 或者，拖曳 **ContextHub存放區** 元件至框架。
 
@@ -250,11 +250,11 @@ ht-degree: 1%
 
    例如，若要使用 **設定檔資料** 關於您的網站訪客以控制Target促銷活動，請拖曳 **設定檔資料** 元件至頁面。 可用於對應至Target引數的設定檔資料變數隨即顯示。
 
-   <!-- ![chlimage_1-163](assets/chlimage_1-163.png) -->
+   <!-- ![Profile Data](assets/chlimage_1-163.png) -->
 
 1. 選取您想要對Adobe Target系統可見的變數，方法是選取 **共用** 核取方塊。
 
-   <!-- ![chlimage_1-164](assets/chlimage_1-164.png) -->
+   <!-- ![Share](assets/chlimage_1-164.png) -->
 
    >[!NOTE]
    >
@@ -291,7 +291,7 @@ When you associate a page with the framework, the child pages inherit the associ
 1. Tap/click **Edit**.
 1. Tap/click **Add Configuration** under **Cloud Service Configurations** and select **Adobe Target**.
 
-  ![chlimage_1-165](assets/chlimage_1-165.png)
+  ![Cloud Service Configurations](assets/chlimage_1-165.png)
 
 1. Select the framework you want under **Configuration Reference**.
 
