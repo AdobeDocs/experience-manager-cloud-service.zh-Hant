@@ -1,16 +1,17 @@
 ---
 title: 如何從AEM 6.5 Forms移轉至 [!DNL AEM Forms] as a Cloud Service環境？
-description: 從移轉 [!DNL AEM Forms] （內部部署和AMS環境）至 [!DNL AEM Forms] as a Cloud Service環境。
-keywords: 6.5 forms至cloud service、6.5 forms至cs、將6.5 forms移轉至CS、將6.5 forms移轉至cloud service、將6.5 forms升級至CS、將6.5 forms移轉至CS、將AEM 6.5升級至CS、將AEM Forms 6.5升級至Cloud Service、將AEM forms移轉至cloud service
+description: AEMas a Cloud Service移轉歷程快速入門 |Adobe Experience Manager。 從移轉 [!DNL AEM Forms] （內部部署和AMS環境）至 [!DNL AEM Forms] as a Cloud Service環境。
+keywords: 6.5 forms至cloud service， 6.5 forms至cs，將6.5 forms移轉至CS，將6.5 forms移轉至cloud service，將6.5 forms升級至CS，將6.5 forms移轉至CS，將AEM 6.5升級至CS，將AEM Forms 6.5升級至Cloud Service，將AEM forms移轉至cloud service，將Journey移轉至AEM as a Cloud Service |Adobe Experience Manager
 contentOwner: khsingh
 feature: Adaptive Forms
+feature-set: Experience Manager Assets,Experience Manager Sites,Experience Manager, Experience Manager Forms, Experience Manager Cloud Manager
 role: User, Developer
 level: Intermediate
 topic: Migration
 exl-id: 090e77ff-62ec-40cb-8263-58720f3b7558
-source-git-commit: 850b1cccb03ca05ea53b646c55fcb0d0c100494c
+source-git-commit: 8dc89bf4b20d12bdb380797b6e56db1a2ce6ce0a
 workflow-type: tm+mt
-source-wordcount: '1590'
+source-wordcount: '1632'
 ht-degree: 3%
 
 ---
@@ -22,7 +23,8 @@ ht-degree: 3%
 | AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/upgrade-aem-forms/upgrade.html) |
 | AEM as a Cloud Service  | 本文 |
 
-您可以移轉或升級最適化Forms、主題、範本和雲端設定，從 <!-- AEM 6.3 Forms AEM 6.4 Forms on OSGi and --> AEM 6.5 Forms on OSGi to [!DNL AEM] as a Cloud Service。 在移轉這些資產之前，請使用移轉公用程式，將舊版使用的格式轉換為中使用的格式 [!DNL AEM] as a Cloud Service。 當您執行Migration Utility時，會更新下列資產：
+您可以移轉或升級最適化Forms、主題、範本和雲端設定，從 <!-- AEM 6.3 Forms AEM 6.4 Forms on OSGi and --> AEM 6.5 Forms on OSGi to [!DNL AEM] as a Cloud Service。 在移轉這些資產之前，請使用移轉公用程式，將舊版使用的格式轉換為中使用的格式 [!DNL AEM] as a Cloud Service。
+讓我們開始移轉至AEMas a Cloud Service的歷程 |Adobe Experience Manager。 當您執行Migration Utility時，會更新下列資產：
 
 * 最適化Forms的自訂元件
 * 最適化Forms範本和主題
