@@ -2,12 +2,13 @@
 title: Universal Editor 架構
 description: 了解 Universal Editor 的架構，以及資料如何在其服務和階層之間流動。
 exl-id: e6f40743-0f21-4fb6-bf23-76426ee174be
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 0f62245d31074ab7a64d86b97ef3b1a8d7533001
 workflow-type: tm+mt
-source-wordcount: '649'
-ht-degree: 79%
+source-wordcount: '652'
+ht-degree: 78%
 
 ---
+
 
 # Universal Editor 架構 {#architecture}
 
@@ -28,7 +29,7 @@ Universal Editor由四個基本建置區塊組成，這些區塊可相互影響�
 
 >[!TIP]
 >
->若要檢視通用編輯器及其架構的實際運作情況，請參閱 [AEM中的通用編輯器快速入門](getting-started.md) 瞭解如何存取通用編輯器，以及如何開始檢測您的第一個AEM應用程式以使用它。
+>若要檢視通用編輯器及其架構的實際運作情況，請參閱本檔案 [AEM中的通用編輯器快速入門](getting-started.md) 瞭解如何存取通用編輯器，以及如何開始檢測您的第一個AEM應用程式以使用它。
 
 ### 編輯 {#editors}
 

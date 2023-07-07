@@ -2,12 +2,13 @@
 title: Universal Visual Editor 簡介
 description: 了解透過 Universal Visual Editor (即 Universal Editor) 如何實現所見即所得 (WYSIWYG) 編輯任何無周邊和有周邊體驗。了解它如何幫助內容作者提供卓越的體驗、提高其內容速度，以及如何提供最先進的開發人員體驗。
 exl-id: d4fc2384-a0f5-4a6f-9572-62749786be4c
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 0f62245d31074ab7a64d86b97ef3b1a8d7533001
 workflow-type: tm+mt
 source-wordcount: '933'
 ht-degree: 88%
 
 ---
+
 
 # Universal Visual Editor 簡介 {#introduction}
 
@@ -29,7 +30,7 @@ Universal Editor 可以用於任何實施、任何內容和任何方面的內容
 
 由於體驗可以透過許多不同方式建置，因此任何實作都可以使用通用編輯器，以便作者執行內容內編輯。
 
-使用者經常認為Headless實作會將作者限制在表單式UI中編輯所有內容，但通用編輯器並非如此
+使用者通常認為，Headless實作會將作者限制在表單式UI中編輯所有內容，但通用編輯器並非如此
 
 實作使用通用編輯器的需求很簡單，並支援下列專案：
 

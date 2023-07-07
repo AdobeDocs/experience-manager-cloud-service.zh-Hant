@@ -2,12 +2,13 @@
 title: 使用 Universal Visual Editor 發佈內容
 description: 了解 Universal Visual Editor 如何發佈內容，和您的應用程式如何處理發佈的內容。
 exl-id: aee34469-37c2-4571-806b-06c439a7524a
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 0f62245d31074ab7a64d86b97ef3b1a8d7533001
 workflow-type: tm+mt
-source-wordcount: '368'
-ht-degree: 78%
+source-wordcount: '367'
+ht-degree: 88%
 
 ---
+
 
 # 使用 Universal Visual Editor 發佈內容 {#publishing}
 
@@ -31,6 +32,6 @@ ht-degree: 78%
 
 ## 摘要 {#summary}
 
-Universal Editor的目標是不要強制任何特定模式，讓實施能夠以完全分離的方式最好地達成其目標，同時仍讓實施保持一切簡單明瞭。
+Universal Editor 的目標是不強加任何特定模式，以完全低耦合的方式達成實施的目標，同時仍保持實施簡單和直接的特性。
 
 同樣地，Universal Editor 不會要求特定專案用哪種方法決定要從哪一層傳遞內容。相反，它支援多種可能性，可讓專案自行決定最符合其需求的解決方案。
