@@ -2,10 +2,10 @@
 title: as a Cloud Service在Screens中建立和管理頻道
 description: 本頁面說明如何在Screens中以as a Cloud Service方式建立和管理頻道。
 exl-id: 3b0bae7a-4a45-485a-ab04-604510ff6578
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 900cdc53475446b9d93cb071f281da5dbe043888
 workflow-type: tm+mt
-source-wordcount: '1087'
-ht-degree: 1%
+source-wordcount: '1094'
+ht-degree: 2%
 
 ---
 
@@ -36,17 +36,18 @@ ht-degree: 1%
 
 1. 選取 **頻道** 來自您專案的資料夾，例如 **第一數位體驗** —> **頻道** 並按一下 **建立** 動作列中的。
 
-   ![](/help/screens-cloud/assets/create-content/channel-create1.png)
+   ![channel-create1](/help/screens-cloud/assets/create-content/channel-create1.png)
 
 1. 選取範本，例如 **序列頻道** 從 **建立** 精靈並按一下 **下一個**.
 
-   ![](/help/screens-cloud/assets/create-content/channel-create2.png)
+   ![channel-create2](/help/screens-cloud/assets/create-content/channel-create2.png)
+
    >[!NOTE]
    > 此 **建立** 精靈會在建立管道時提供不同型別的範本。 另請參閱 [可用的範本](#available-templates) 在建立精靈中取得詳細資訊。
 
 1. 輸入序列管道的名稱，例如 **LoopingChannelOne** 並按一下 **建立**.
 
-   ![](/help/screens-cloud/assets/create-content/channel-create3.png)
+   ![channel-create3](/help/screens-cloud/assets/create-content/channel-create3.png)
 
    您現在會看到 **LoopingChannelOne** (位於您的AEM Screens專案的「頻道」資料夾中)。
 
@@ -58,7 +59,7 @@ ht-degree: 1%
 
 從您的專案導覽至頻道，然後選取頻道，如下圖所示。 您現在可以選取選項，例如編輯頻道、檢視屬性、預覽內容、管理出版物，或從動作列刪除頻道。
 
-![](/help/screens-cloud/assets/create-content/channelprop1.png)
+![channelprop1](/help/screens-cloud/assets/create-content/channelprop1.png)
 
 ### 新增內容至頻道 {#add-content}
 
@@ -66,17 +67,17 @@ ht-degree: 1%
 
 1. 選取您要編輯的頻道，如下圖所示。 按一下 **編輯** 從動作列的左上角開啟編輯器。
 
-   ![](/help/screens-cloud/assets/create-content/edit-channel1.png)
+   ![edit-channel1](/help/screens-cloud/assets/create-content/edit-channel1.png)
 
 1. 編輯器可讓您將資產/元件新增至您要發佈的管道。
 
 1. 從左側窗格拖放資產，並將其新增至編輯器。
 
-   ![](/help/screens-cloud/assets/create-content/edit-channel2.png)
+   ![edit-channel2](/help/screens-cloud/assets/create-content/edit-channel2.png)
 
    >[!NOTE]
    >按一下 **預覽** 以預覽您的頻道內容。
-   >![](/help/screens-cloud/assets/create-content/edit-channelpreview.png)
+   >![edit-channelpreview](/help/screens-cloud/assets/create-content/edit-channelpreview.png)
 
 ## 建立精靈中的可用範本 {#available-templates}
 

@@ -2,9 +2,9 @@
 title: 在Screens中建立視訊轉譯as a Cloud Service
 description: 本頁面說明如何在Screensas a Cloud Service中建立視訊轉譯。
 exl-id: a9c46036-cd29-47fa-81d9-c865cf22c98a
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 900cdc53475446b9d93cb071f281da5dbe043888
 workflow-type: tm+mt
-source-wordcount: '342'
+source-wordcount: '367'
 ht-degree: 0%
 
 ---
@@ -37,15 +37,15 @@ ht-degree: 0%
 
 1. 輸入 **名稱**，例如 **ScreensProcessingProfile**.
 
-   ![](/help/screens-cloud/assets/configure/screens-video-3.png)
+   ![「處理設定檔」對話方塊中的「名稱」欄位會反白顯示。](/help/screens-cloud/assets/configure/screens-video-3.png)
 
 1. 導覽至 **視訊** 索引標籤讓您可以新增視訊編碼，然後按一下 **新增**.
 
-   ![](/help/screens-cloud/assets/configure/screens-video-4a.png)
+   ![「處理設定檔」對話方塊中會反白顯示「新增」按鈕。](/help/screens-cloud/assets/configure/screens-video-4a.png)
 
 1. 輸入 **編碼名稱** 例如、 **screens-fullhd** 和 **位元速率** 作為 **2500**.
 
-   ![](/help/screens-cloud/assets/configure/screens-video-4.png)
+   ![「處理設定檔」對話方塊中的「儲存」按鈕會反白顯示。](/help/screens-cloud/assets/configure/screens-video-4.png)
 
    >[!IMPORTANT]
    >使用以「screens — 」開頭的編碼名稱。 只有這些視訊轉譯會被視為在Screensas a Cloud Service中播放視訊體驗。 輸入適用於視訊的位元速率（720-px視訊為2500 kbps，1080 px為5000 kbps）。

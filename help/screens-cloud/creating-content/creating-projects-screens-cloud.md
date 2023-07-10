@@ -2,10 +2,10 @@
 title: 在Screens中建立專案as a Cloud Service
 description: 瞭解如何在Screensas a Cloud Service中建立專案。
 exl-id: 89e3ac28-7537-413d-b63b-abd2bbae6cb7
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 900cdc53475446b9d93cb071f281da5dbe043888
 workflow-type: tm+mt
-source-wordcount: '331'
-ht-degree: 1%
+source-wordcount: '335'
+ht-degree: 2%
 
 ---
 
@@ -28,18 +28,18 @@ ht-degree: 1%
 
 1. 在動作列的右上角附近，按一下 **建立畫面專案**.
 
-   ![](/help/screens-cloud/assets/create-content/create-screens-project1.png)
+   ![create-screens-project1](/help/screens-cloud/assets/create-content/create-screens-project1.png)
 
 1. 輸入 **標題** 中的專案 **建立畫面專案** 對話方塊。 例如， *第一數位體驗*.
 
-   ![](/help/screens-cloud/assets/create-content/create-screens-project2.png)
+   ![create-screens-project2](/help/screens-cloud/assets/create-content/create-screens-project2.png)
 
    >[!NOTE]
    >此 **名稱** 欄位會自動填入 **建立畫面專案** 對話方塊的標題而定。
 
 1. 按一下「**儲存**」。您會看到畫面專案，標題為 *第一數位體驗* 在畫面內容提供者中。 您也會在Screens內容提供者中看到專案，其中有兩個資料夾標題為 **位置** 和 **頻道**.
 
-   ![](/help/screens-cloud/assets/create-content/create-screens-project3.png)
+   ![create-screens-project3](/help/screens-cloud/assets/create-content/create-screens-project3.png)
 
    現在您已設定AEM Screens專案，可以開始將管道和位置新增至專案。
 
@@ -51,7 +51,7 @@ ht-degree: 1%
 1. 選取您要刪除的專案。
 1. 在動作列上，按一下 **刪除**.
 
-   ![](/help/screens-cloud/assets/create-content/create-project5.png)
+   ![create-project5](/help/screens-cloud/assets/create-content/create-project5.png)
 
 1. 按一下 **刪除** 以確認刪除專案。
 

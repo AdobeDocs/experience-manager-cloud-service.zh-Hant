@@ -2,10 +2,10 @@
 title: 使用Up Screens內容提供者
 description: 本頁面說明如何使用Screens內容提供者來建立內容。
 exl-id: ed7de2c0-13cf-4ce0-8794-aef918cf8e71
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 900cdc53475446b9d93cb071f281da5dbe043888
 workflow-type: tm+mt
-source-wordcount: '353'
-ht-degree: 16%
+source-wordcount: '414'
+ht-degree: 14%
 
 ---
 
@@ -30,21 +30,21 @@ ht-degree: 16%
 1. 導覽至 [Adobe Experience Cloud](https://experience.adobe.com) 首頁。
 
 1. 選擇&#x200B;**Experience Manager**。
-   ![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/landing-page1.png)
+   ![快速存取Experience Manager區域的登陸頁面。](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/landing-page1.png)
 
 1. 按一下 **Launch** 從Cloud Manager卡片。 當您成功登入之後 [!UICONTROL Cloud Manager]，您已準備好使用使用者介面(UI)。
-   ![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/landing-page2.png)
+   ![Cloud Manager的四個區域 — Brand Portal、Cloud Manager、Cloud Acceleration Manager和Software Distribution — 每個區域都顯示自己的Launch按鈕。](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/landing-page2.png)
 
 1. 選擇Screensas a Cloud Service的程式，然後按一下圖示，如下所示，以開啟Cloud Manager **概觀** 頁面。
 
-   ![](/help/screens-cloud/assets/configure/screens-cp-1.png)
+   ![Cloud Manager概觀頁面的圖示顯示在工具列的最左側。](/help/screens-cloud/assets/configure/screens-cp-1.png)
 
    >[!NOTE]
    >如果您尚未建立任何程式，請參閱 [as a Cloud Service首次登入Screens](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/onboarding-screens-cloud/first-time-login-screens-cloud.html?lang=en). 本主題將引導您在Cloud Manager中新增用於Screensas a Cloud Service的程式。
 
 1. 從中選擇連結 **環境** 卡片，方便您存取Screens內容提供者。
 
-   ![](/help/screens-cloud/assets/configure/screens-cp-2.png)
+   ![從「環境」卡中醒目提示的連結，可讓您存取Screens內容提供者。](/help/screens-cloud/assets/configure/screens-cp-2.png)
 
    登入Screens Content Provider後，您現在已準備好在內容播放中建立內容。
 

@@ -2,10 +2,10 @@
 title: 合適的人，合適的角色
 description: 合適的人，合適的角色
 exl-id: 9106ccf5-dc90-4ccb-95bd-7dd5392cd174
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 900cdc53475446b9d93cb071f281da5dbe043888
 workflow-type: tm+mt
-source-wordcount: '831'
-ht-degree: 80%
+source-wordcount: '847'
+ht-degree: 78%
 
 ---
 
@@ -74,7 +74,7 @@ ht-degree: 80%
 
 <br>
 
-![](/help/overview/assets/team_involvement2.png)
+![水準長條圖顯示虛擬角色及其在AEM Assets團隊中的參與程度。](/help/overview/assets/team_involvement2.png)
 
 >[!TIP]
 >
