@@ -10,9 +10,9 @@ discoiquuid: 76d178d1-8e40-41b3-80d4-66b2f8d04211
 docset: aem65
 google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
 exl-id: dc89ecb1-2d9e-4d1d-b85b-af90c550e7d8
-source-git-commit: 76f13cb4236b8c7eb515d647a1cede6fa2cf4799
+source-git-commit: fce6a3dff4136aa9ea94f5fdd03dd7a6341b8a9d
 workflow-type: tm+mt
-source-wordcount: '639'
+source-wordcount: '641'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ ht-degree: 0%
 
 點選「完成」後 ![aem_forms_save](assets/aem_forms_save.png) 圖示時，您無法編輯簽名。 如果想要編輯簽名，則必須忽略目前的簽名，並使用上述「油漆筆刷/鍵盤」選項重新簽名。
 
-您可以點選 **設定** ![](assets/configure.png) 圖示來設定手寫簽名畫布的外觀比例。
+您可以點選 **設定** ![設定圖示](assets/configure.png) 圖示來設定手寫簽名畫布的外觀比例。
 * 當Scribble Signature畫布的外觀比例小於1時，會在Scribble Signature畫布底部新增地理位置資訊。
 
 
@@ -46,6 +46,7 @@ ht-degree: 0%
 >[!NOTE]
 >
 >簽名一律以PNG格式儲存。
+>
 
 ## 設定最適化表單以使用手寫簽名 {#configure-an-adaptive-form-to-use-scribble-signature}
 

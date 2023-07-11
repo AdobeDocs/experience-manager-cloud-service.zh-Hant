@@ -3,9 +3,9 @@ title: AEM 6.5 Forms與AEM Cloud Services之間的差異
 description: 您是Experience Manager Forms使用者，且想要升級至Adobe Experience Manager Formsas a Cloud Service嗎？ 比較AEM 6.5 Forms和AEM Cloud Services，並在升級或移轉至Cloud Service之前瞭解最顯著的變更。
 exl-id: 46fcc1b4-8fd5-40e1-b0fc-d2bc9df3802e
 contentOwner: khsingh
-source-git-commit: 1d16797f741fc9032356564061f2b6743d4c7936
+source-git-commit: fce6a3dff4136aa9ea94f5fdd03dd7a6341b8a9d
 workflow-type: tm+mt
-source-wordcount: '1405'
+source-wordcount: '1417'
 ht-degree: 1%
 
 ---
@@ -29,7 +29,7 @@ ht-degree: 1%
 
 * 開發人員會維護共同的Cloud Service和本機開發環境程式碼 [Git存放庫](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/cloud-manager-repositories.html). 建立AEMas a Cloud Service程式時，會自動建立以AEM原型為基礎的Git存放庫。
 
-  ![](/help/forms/assets/git-repo-local-and-forms-cs.png)
+  ![在AEM as a Cloud Service程式上自動建立Git存放庫](/help/forms/assets/git-repo-local-and-forms-cs.png)
 
 * Formsas a Cloud Service的開發流程會與AEM Cloud Service的AEM Archetype一致。 不過，Adobe Experience Manager Maven專案必須進行一些變更，才能與AEM Cloud Service相容。 在高層面上，AEM需要將內容和程式碼分離為離散的子套件，以遵循可變和不可變內容之間的分割。 使用 [Repository Modernizer工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/repo-modernizer.html) 將內容和程式碼分割為獨立套件，以與Adobe Experience Manager as a Cloud Service定義的專案結構相容，藉此重組現有的專案套件。
 
