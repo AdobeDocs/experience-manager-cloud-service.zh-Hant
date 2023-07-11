@@ -3,12 +3,13 @@ title: ' [!DNL AEM Forms] as a Cloud Service 簡介'
 description: 探索 AEM Forms 並了解此表單如何幫助您編寫業務適用的表單和文件。 了解關於 Platform-as-a-Service (PaaS)，以及如何管理企業級數位表單和業務流程，以及將 Forms 連接至 Adobe Sign 和現有的資料來源。
 landing-page-description: 了解如何在 AEM as a Cloud Service 中使用表單。
 exl-id: aa5ef10c-ba78-4a9d-8b2b-a72a7a306888
-source-git-commit: 87aeebad2576e91472530a2617b23bece4cd453f
+source-git-commit: 6f07493714c68cb7c6e96a252c4ef1ff9d6ba9ac
 workflow-type: tm+mt
-source-wordcount: '1117'
-ht-degree: 91%
+source-wordcount: '1137'
+ht-degree: 89%
 
 ---
+
 
 # AEM Forms as a Cloud Service 簡介 {#introduction}
 
@@ -58,5 +59,12 @@ Adobe [!DNL Experience Manager Forms as a Cloud Service] 是一個以客戶為�
 | 電子簽名 | 與Adobe Sign和適用於政府的Adobe Sign解決方案整合，以便輕鬆將Forms和檔案傳送給使用者進行電子簽章： <ul><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/use-adobe-sign/working-with-adobe-sign.html">使用 Adobe Sign 在最適化表單上進行電子簽名</a></li><li></a> <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference.html?lang=en#sign-document-step">使用Adobe Sign和AEM Workflow對檔案進行電子簽章</a></li></ul> |
 | Forms Analytics | 使用Adobe Analytics取得對使用者行為和偏好設定的寶貴見解： <ul><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/services/integrate-aem-forms-with-adobe-analytics.html?lang=en">使用 Adobe Analytics 連結最適化表單</a></li></ul> |
 | 資料來源 | 輕鬆將表單和檔案與外部資料來源連線，以擷取和傳送資料： <ul><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-data-sources.html?lang=en">連接到 RDBMS 或 Rest 端點</a></li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-msdynamics-salesforce.html?lang=en">連線至Microsoft® Dynamics 365或Salesforce雲端服務</a></li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-azure-storage.html?lang=en">連線到Microsoft® Azure Blob儲存體</a></li></ul> |
+
+
+## 相關文章
+
+* [加入Cloud Service環境](/help/forms/setup-forms-cloud-service.md)
+* [設定本機開發環境](/help/forms/setup-local-development-environment.md)
+* [從AEM 6.5 Forms移轉至Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
 
 
