@@ -8,9 +8,9 @@ user-guide-description: 了解 Experience Manager as a Cloud Service 的運作�
 breadcrumb-title: 使用手冊
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 0efdb9353ef908cf5a655c989ae7be1107c8f3de
+source-git-commit: d9b98cc0e7e6de2d2819eb488786710c87a37163
 workflow-type: tm+mt
-source-wordcount: '4164'
+source-wordcount: '4170'
 ht-degree: 98%
 
 ---
@@ -189,6 +189,7 @@ ht-degree: 98%
       + [建立 Headless 內容](/help/trials/headless/create-content.md)
       + [通過 GraphQL API 擷取內容](/help/trials/headless/extract-content.md)
       + [使用 JavaScript 擷取 JSON 內容](/help/trials/headless/code-playground.md)
+      + [使用通用編輯器編輯內嵌](/help/trials/headless/universal-editor.md)
 + AEM as a Cloud Service 移轉歷程 {#migration-journey}
    + [移動 AEM as a Cloud Service 快速入門](/help/journey-migration/getting-started.md)
    + [整備階段](/help/journey-migration/readiness.md)
