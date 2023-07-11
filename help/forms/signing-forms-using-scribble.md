@@ -10,9 +10,9 @@ discoiquuid: 76d178d1-8e40-41b3-80d4-66b2f8d04211
 docset: aem65
 google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
 exl-id: dc89ecb1-2d9e-4d1d-b85b-af90c550e7d8
-source-git-commit: fce6a3dff4136aa9ea94f5fdd03dd7a6341b8a9d
+source-git-commit: 50f5b34fa9453fd6d8e85290f69194622afeb42c
 workflow-type: tm+mt
-source-wordcount: '641'
+source-wordcount: '643'
 ht-degree: 0%
 
 ---
@@ -59,7 +59,7 @@ ht-degree: 0%
    >
    >簽章步驟元件會佔據可用於表單的完整寬度。 建議在包含簽名步驟元件的區段上不要有任何其他元件。
 
-1. 在「內容」瀏覽器中，點選 **表單容器**，然後點選 **設定** ![](assets/configure.png) 圖示。 它會開啟屬性瀏覽器並顯示最適化表單容器屬性。 導覽至 **最適化表單容器** > **電子簽章** 並取消選取 **啟用Adobe Sign** 選項。 點選「完成」 ![aem_forms_save](assets/aem_forms_save.png) 圖示以儲存變更。
+1. 在「內容」瀏覽器中，點選 **表單容器**，然後點選 **設定** ![設定圖示](assets/configure.png) 圖示。 它會開啟屬性瀏覽器並顯示最適化表單容器屬性。 導覽至 **最適化表單容器** > **電子簽章** 並取消選取 **啟用Adobe Sign** 選項。 點選「完成」 ![aem_forms_save](assets/aem_forms_save.png) 圖示以儲存變更。
 
    >[!NOTE]
    >
