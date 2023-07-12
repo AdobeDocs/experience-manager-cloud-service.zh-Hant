@@ -2,10 +2,10 @@
 title: 使用 Universal Editor 編寫內容
 description: 了解內容作者使用 Universal Editor 建立內容有多簡單和直觀。
 exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
-source-git-commit: c6ab2d9b01a3f1abedb06d1d413e7eceb8b1c031
+source-git-commit: 05554f397a843ede5a723b206b6e0748e2d6ba96
 workflow-type: tm+mt
-source-wordcount: '1557'
-ht-degree: 49%
+source-wordcount: '1682'
+ht-degree: 44%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 49%
 
 通用編輯器可讓您編輯任何實作中任何內容的任何方面，因此您可以提供卓越的體驗、提高內容速度，並提供一流的開發人員體驗。
 
-為此，Universal Editor為內容作者提供直覺式UI，只需最少的培訓，就能快速加入並開始編輯內容。
+為此，Universal Editor為內容作者提供直覺式UI，只需最少的培訓，就能快速加入並開始編輯內容。 本檔案說明Universal Editor的製作體驗。
 
 >[!TIP]
 >
@@ -25,7 +25,7 @@ ht-degree: 49%
 
 >[!NOTE]
 >
->Universal Editor 仍在開發中，目前無法編輯所有內容類型。
+>Universal Editor仍在開發中。 目前無法編輯所有內容型別。
 
 ## 準備應用程式 {#prepare-app}
 
@@ -201,13 +201,23 @@ Universal Editor 標頭始終顯示在畫面頂端，就在 [Experience Cloud �
 
 ![元件模式](assets/component-mode.png)
 
+當您選取內容片段時，其詳細資訊會顯示在 [元件欄。](#component-rail)
+
 >[!TIP]
 >
 >使用快速鍵 `C` 以切換至元件模式。
 
->[!NOTE]
+#### 編輯 {#edit}
+
+當在 [元件模式，](#component-mode) 如果您選取內容片段，模式邊欄上會出現編輯選項。
+
+![編輯圖示](assets/edit.png)
+
+點選或按一下「編輯」按鈕會在新索引標籤中開啟內容片段編輯器，允許您在通用編輯器中編輯參考內容以及文字和媒體內容。
+
+>[!TIP]
 >
->元件模式仍在開發中，目前僅限於選取元件。
+>使用快速鍵 `E` 以編輯選取的元件。
 
 ### 編輯器 {#editor}
 
@@ -230,9 +240,11 @@ Universal Editor 標頭始終顯示在畫面頂端，就在 [Experience Cloud �
 
 ![屬性模式](assets/properties-mode.png)
 
-所選元件的詳細資訊會顯示在邊欄中。 請注意，並非所有元件都有要顯示的詳細資訊。
+所選元件的詳細資訊會顯示在邊欄中。 如果您已使用選取內容片段 [元件模式，](#component-mode) 您可以在元件邊欄中修改其設定。 變更會由通用編輯器自動儲存。
 
 ![元件詳細資料](assets/component-details.png)
+
+請注意，並非所有元件都有可顯示的詳細資料。
 
 >[!TIP]
 >
@@ -259,13 +271,17 @@ Universal Editor 標頭始終顯示在畫面頂端，就在 [Experience Cloud �
 
 ![可編輯的內容會用藍色框醒目顯示](assets/editable-content.png)
 
-只需點選或點擊藍色框中的內容即可啟動就地編輯器來進行變更。按 Enter 或返回以儲存變更。
+只需點選或點擊藍色框中的內容即可啟動就地編輯器來進行變更。您的變更會自動儲存。
 
 ![編輯內容](assets/editing-content.png)
 
 請注意，在編輯模式下，點選或點擊內容會選擇它進行編輯。如果您希望透過以下連結瀏覽您的內容，請切換到[預覽模式。](#preview-mode)
 
-根據您所在的模式和您選取的內容，您可能有不同的就地編輯選項。 此外，您或許可以使用檢閱內容的其他屬性。 [元件欄。](#component-rail)
+根據 [模式](#mode-rail) 您所在的和您選取的內容，可能會有不同的就地編輯選項。
+
+此外，您或許可以使用檢閱內容的其他屬性。 [元件欄。](#component-rail) 例如，如果您選取RTF文字元件，則可以在元件邊欄中編輯格式選項。
+
+![編輯RTF元件](assets/rich-text-editing.png)
 
 ## 預覽內容 {#previewing-content}
 
