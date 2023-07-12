@@ -5,9 +5,9 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
 exl-id: 1e812d93-4ba5-4589-b59b-2f564d754b0f
-source-git-commit: 7dc36220c1f12177037aaa79d864c1ec2209a301
+source-git-commit: 53997540cc469f4cc2ad747ca4e52b531a7b193e
 workflow-type: tm+mt
-source-wordcount: '1495'
+source-wordcount: '2246'
 ht-degree: 1%
 
 ---
@@ -38,11 +38,10 @@ ht-degree: 1%
    * 您也可以 [建立新的Adaptive Forms範本（核心元件）](template-editor.md) 從頭開始。
 
 * **最適化表單主題**：主題包含元件和面板的樣式詳細資訊。 樣式包含背景顏色、狀態顏色、透明度、對齊方式及大小等屬性。 套用主題時，指定的樣式會反映在相應的元件上。  此 `Canvas` 範本隨附於每個新的AEM Formsas a Cloud Service程式中。
-
-   <!-- * You can install the reference package, via package manager, to add the `Canvas` template to your AEM Forms as a Cloud Service program.
+  <!-- * You can install the reference package, via package manager, to add the `Canvas` template to your AEM Forms as a Cloud Service program.
     * You can also [create a new Adaptive Forms theme (Core Components)](template-editor.md) and deploy it to your AEM Forms as a Cloud Service program. -->
 
-* **許可權**：將使用者新增至 [!DNL forms-users] 群組。 的成員 [!DNL forms-users] 群組有權建立最適化表單。 如需特定使用者群組的表單詳細清單，請參閱 [群組與許可權](forms-groups-privileges-tasks.md).
+* **許可權**：將使用者新增至 [!DNL forms-users] 群組。 的成員 [!DNL forms-users] 群組有權建立最適化表單。 如需表單特定使用者群組的詳細清單，請參閱 [群組與許可權](forms-groups-privileges-tasks.md).
 
 
 ## 建立最適化表單（核心元件） {#create-an-adaptive-form-core-components}
@@ -92,11 +91,82 @@ ht-degree: 1%
 
 1. 點選 **[!UICONTROL 建立]**. 最適化表單會在最適化Forms編輯器中建立並開啟。 編輯器會顯示範本中可用的內容。  根據最適化表單的型別，出現在相關聯中的表單元素 <!--XFA form template, XML schema or --> JSON結構描述或表單資料模型會顯示在 **[!UICONTROL 資料模型物件]** 的標籤 **[!UICONTROL 內容瀏覽器]** 在側欄中。 您也可以拖放這些元素來建置最適化表單。
 
-現在，您可以拖放最適化Forms核心元件至最適化Forms容器，以設計和建立表單。
+現在，您可以拖放 [最適化Forms核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) 調適型Forms容器以設計和建立表單。 您也可以造訪 [https://aemcomponents.dev/](https://aemcomponents.dev/) 以檢視作用中的可用核心元件。
 
-## 可用的最適化Forms核心元件
+## 設定最適化表單的提交動作 {#configure-submit-action-for-form}
 
-最適化Forms核心元件是標準化的資料擷取元件。 這些元件提供自訂功能，有助於縮短開發時間，並降低數位註冊體驗的維護成本。 [Adaptive Forms核心元件檔案](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=zh-Hant) 具有可用元件的詳細清單，以及有關每個元件功能的詳細資訊。 您也可以造訪 [https://aemcomponents.dev/](https://aemcomponents.dev/) 以檢視作用中的可用核心元件。
+提交動作可讓您選擇透過最適化表單擷取的資料目的地。 當使用者按一下最適化表單上的提交按鈕時觸發。 調適型表單包含一些立即可用的提交動作。 您也可以擴充預設提交動作，以建立自己的自訂提交動作。 若要設定表單的提交動作：
+
+1. 開啟「內容」瀏覽器，然後選取 **[!UICONTROL 參考線容器]** 最適化表單的元件。
+1. 按一下指南容器屬性 ![指南屬性](/help/forms/assets/configure-icon.svg) 圖示。 「最適化表單容器」對話方塊開啟。
+
+1. 按一下  **[!UICONTROL 提交]** 標籤。
+
+   ![按一下扳手圖示以開啟最適化表單容器對話方塊，以設定提交動作](/help/forms/assets/adaptive-forms-submit-message.png)
+
+1. 選取並設定 **[!UICONTROL 提交動作]**，根據您的需求。 如需提交動作的詳細資訊，請參閱 [最適化表單提交動作](/help/forms/configuring-submit-actions.md)
+
+<!--
+    
+    ![Click the Wrench icon to open Adaptive Form Container dialog box to configure Data Models for the Adaptive Form Container component](/help/forms/assets/adaptive-forms-container.png)
+
+-->
+
+## 將使用者重新導向至頁面或在提交表單時顯示感謝訊息
+
+在提交表單時，您可以將使用者重新導向至其他網頁或訊息。 若要重新導向使用者或設定感謝訊息：
+
+1. 開啟「內容」瀏覽器，然後選取 **[!UICONTROL 參考線容器]** 最適化表單的元件。
+1. 按一下指南容器屬性 ![指南屬性](/help/forms/assets/configure-icon.svg) 圖示。 「最適化表單容器」對話方塊開啟。
+1. 開啟 **[!UICONTROL 提交]** 標籤。
+
+   ![按一下扳手圖示以開啟最適化表單容器對話方塊，以設定重新導向頁面或感謝訊息](/help/forms/assets/adaptive-forms-redirect-message.png)
+
+   * 若要設定重新導向URL，請針對提交選項，選取 **[!UICONTROL 重新導向至URL]** 選項，然後瀏覽並選取AEM Sites頁面，或提供外部頁面的URL。
+
+   * 若要設定自訂或感謝訊息，請在[提交]選項中選取 **[!UICONTROL 顯示訊息]** 選項，並在 **[!UICONTROL 訊息內容]** 方塊。 它是RTF文字方塊，您可以使用全熒幕選項來檢視所有可用的RTF專案。
+
+## 設定結構描述或表單資料模型 {#configure-schema-or-data-model-for-form}
+
+您可以使用表單資料模型將表單連線至資料來源，以根據使用者動作傳送及接收資料。 您也可以將表單連線至JSON結構描述，以預先定義的格式接收提交的資料。 根據需求，將您的表單連結至JSON結構描述或表單資料模型：
+
+* [建立JSON結構描述並上傳至您的環境](/help/forms/adaptive-form-json-schema-form-model.md)
+* [建立表單資料模型](/help/forms/create-form-data-models.md)
+
+### 為您的表單設定JSON結構描述或表單資料模型
+
+若要為表單設定JSON結構描述或表單資料模型：
+
+1. 開啟「內容」瀏覽器，然後選取 **[!UICONTROL 參考線容器]** 最適化表單的元件。
+1. 按一下指南容器屬性 ![指南屬性](/help/forms/assets/configure-icon.svg) 圖示。 「最適化表單容器」對話方塊開啟。
+1. 開啟 **[!UICONTROL 資料模型]** 標籤。
+
+   ![按一下扳手圖示以開啟最適化表單容器對話方塊，以設定JSON結構描述或表單資料模型](/help/forms/assets/adaptive-forms-select-form-data-model-or-json-schema.png)
+
+1. 根據您的要求，選取並設定JSON結構描述或表單資料模型：
+
+   * 當您選取 **[!UICONTROL 表單模型]** 選項，使用 **[!UICONTROL 選取表單資料模型]** 選項以選取預先設定的表單資料模型。
+   * 當您選取 **[!UICONTROL 結構描述]** 選項，使用 **[!UICONTROL 結構描述]** 選項來為您的表單選取JSON結構描述。
+
+1. 按一下&#x200B;**[!UICONTROL 「完成」]**。
+
+## 設定預填服務  {#configure-prefill-service-for-form}
+
+您可以使用預填服務，以使用現有資料自動填入最適化表單的欄位。 當使用者開啟表單時，這些欄位的值會預先填充。 您可以：
+
+* [建立自訂預填服務](/help/forms/prepopulate-adaptive-form-fields.md)
+* [使用表單資料模型預填服務](#fdm-prefill-service)
+
+### 使用表單資料模型預填服務預先填入最適化表單的欄位 {#fdm-prefill-service}
+
+您可以使用表單資料模型預填服務，透過表單資料模型或自訂預填服務預先填入最適化表單的欄位。 表單資料模型預填服務使用 [取得已設定表單資料模型的服務](work-with-form-data-model.md#add-data-model-objects-and-services-add-data-model-objects-and-services) 以擷取資料。 若要使用最適化表單的表單資料模型預填服務：
+
+1. 開啟「內容」瀏覽器，然後選取 **[!UICONTROL 參考線容器]** 最適化表單的元件。
+1. 按一下指南容器屬性 ![指南屬性](/help/forms/assets/configure-icon.svg) 圖示。 「最適化表單容器」對話方塊開啟。
+1. 按一下最適化表單容器屬性 ![最適化表單容器屬性](/help/forms/assets/configure-icon.svg) 圖示。 設定資料模型的「最適化表單容器」對話方塊開啟。
+   ![按一下扳手圖示以開啟最適化表單容器對話方塊，以設定重新導向頁面或感謝訊息](/help/forms/assets/adaptive-forms-container-prefill-service.png)
+1. 選擇表單資料模型. 開啟 **[!UICONTROL 基本]** 標籤。 在預填服務中，選取 **[!UICONTROL 表單資料模型預填服務]**.
+1. 按一下&#x200B;**[!UICONTROL 「完成」]**。您的最適化表單現在已設定為使用表單資料模型預填。 您現在可以使用 [規則編輯器](rule-editor.md) 建立規則以預先填入表單的欄位。
 
 ## 編輯最適化表單的表單模型屬性 {#edit-form-model}
 
@@ -105,3 +175,15 @@ ht-degree: 1%
 1. 前往 **[!UICONTROL 表單模型]** 標籤並選擇表單模型。 如果最適化表單沒有表單模型，您可以自由選擇JSON結構描述或表單資料模型。 另一方面，如果最適化表單已基於表單模型，您可以選擇切換到相同型別的另一個表單模型。 例如，如果表單使用JSON結構描述，您可以輕鬆切換到另一個JSON結構描述，同樣如果表單使用表單資料模型，您可以切換到另一個表單資料模型。
 
 1. 點選 **[!UICONTROL 儲存]** 以儲存屬性。
+
+
+## 檢視下一個
+
+* [為您的表單建立樣式或主題](using-themes-in-core-components.md)
+* [使用規則編輯器將動態行為新增至表單](rule-editor.md)
+* [設定不同熒幕大小和裝置型別的表單版面](/help/sites-cloud/authoring/features/responsive-layout.md)
+
+
+## 相關文章 {#related-article}
+
+* [建立獨立核心元件型最適化表單](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html)
