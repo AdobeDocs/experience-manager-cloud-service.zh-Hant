@@ -5,9 +5,9 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
 exl-id: 1e812d93-4ba5-4589-b59b-2f564d754b0f
-source-git-commit: 53997540cc469f4cc2ad747ca4e52b531a7b193e
+source-git-commit: 8d40f259e70ef73285aafcb736e1f9d720380f7d
 workflow-type: tm+mt
-source-wordcount: '2246'
+source-wordcount: '2250'
 ht-degree: 1%
 
 ---
@@ -126,7 +126,7 @@ ht-degree: 1%
 
    * 若要設定自訂或感謝訊息，請在[提交]選項中選取 **[!UICONTROL 顯示訊息]** 選項，並在 **[!UICONTROL 訊息內容]** 方塊。 它是RTF文字方塊，您可以使用全熒幕選項來檢視所有可用的RTF專案。
 
-## 設定結構描述或表單資料模型 {#configure-schema-or-data-model-for-form}
+## 為最適化表單設定結構描述或表單資料模型{#configure-schema-or-data-model-for-form}
 
 您可以使用表單資料模型將表單連線至資料來源，以根據使用者動作傳送及接收資料。 您也可以將表單連線至JSON結構描述，以預先定義的格式接收提交的資料。 根據需求，將您的表單連結至JSON結構描述或表單資料模型：
 
