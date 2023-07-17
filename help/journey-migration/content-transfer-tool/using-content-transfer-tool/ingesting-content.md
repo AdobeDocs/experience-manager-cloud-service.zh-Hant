@@ -2,10 +2,10 @@
 title: 將內容內嵌至目標
 description: 將內容內嵌至目標
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 3f526b8096125fbcf13b73fe82b2da0f611fa6ca
 workflow-type: tm+mt
-source-wordcount: '1707'
-ht-degree: 13%
+source-wordcount: '1925'
+ht-degree: 11%
 
 ---
 
@@ -155,7 +155,7 @@ Release Orchestrator會自動套用更新，讓環境保持最新狀態。 如�
 
 ![影像](/help/journey-migration/content-transfer-tool/assets-ctt/error_releaseorchestrator_ingestion.png)
 
-### 追加擷取失敗
+### 由於違反唯一性限制，追加擷取失敗
 
 造成問題的常見原因 [追加擷取](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) 失敗是節點id中的衝突。 若要識別此錯誤，請使用Cloud Acceleration Manager UI下載擷取記錄，並尋找類似以下的專案：
 
@@ -166,6 +166,18 @@ AEM中的每個節點都必須有唯一的uuid。 此錯誤表示正在擷取的
 如果目標上的節點在擷取和後續追加擷取之間移動，也可能發生這種情況。
 
 此衝突必須手動解決。 熟悉內容的人必須決定必須刪除兩個節點中的哪一個，並牢記參考該內容的其他內容。 解決方案可能要求再次完成追加提取，而不需要違反規定的節點。
+
+### 由於無法刪除參照的節點，追加擷取失敗
+
+另一個常見原因 [追加擷取](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) 失敗是目標執行個體上特定節點的版本衝突。 若要識別此錯誤，請使用Cloud Acceleration Manager UI下載擷取記錄，並尋找類似以下的專案：
+>java.lang.RuntimeException： org.apache.jackrabbit.oak.api.CommitFailedException： OakIntegrity0001：無法刪除參照的節點： 8a2289f4-b904-4bd0-8410-15e41e0976a8
+
+如果目標上的節點在擷取與後續追加擷取之間經過修改，以致已建立新版本，就可能發生這種情況。 如果內嵌已啟用「包含版本」，則可能發生衝突，因為目標現在有版本歷史記錄和其他內容所參考的較新版本。 由於違規版本節點已被引用，擷取程式無法刪除該節點。
+
+解決方案可能要求再次完成追加提取，而不需要違反規定的節點。 或者，建立違規節點的小型移轉集，但停用「包含版本」。
+
+最佳實務指出如果內嵌必須以wipe=false和&quot;include version&quot;=true執行，請務必儘可能少修改目標上的內容，直到移轉歷程完成。 否則，這些衝突可能會發生。
+
 
 ## 下一步 {#whats-next}
 
