@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的目前維護版本發行說明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的目前維護版本發行說明。'
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: 241dcc75e9f2c840be85c34800d8145457baa58d
+source-git-commit: eca0903050bb178f13d37073f8d65354f4bf36d3
 workflow-type: tm+mt
-source-wordcount: '272'
-ht-degree: 43%
+source-wordcount: '283'
+ht-degree: 49%
 
 ---
 
@@ -15,9 +15,9 @@ ht-degree: 43%
 
 ## 12697 版 {#release-12697}
 
-以下摘要說明2023年7月14日公開發佈的維護版本資12697的持續改善。 此維護版本是先前 12549 維護版的更新。維護發行說12697會取代12585以修正一個問題。
+以下摘要說明2023年7月14日公開發佈的維護版本資12697的持續改善。 此維護版本是先前 12549 維護版本的更新。維護發行說12697會取代12585以修正一個問題。
 
-2023.7.0 Feature Activation將提供此維護版本的完整功能集。 請參閱 [Experience Manager發行藍圖](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html) 以取得詳細資訊。
+2023.7.0 功能啟用將提供此維護版本的完整功能集。如需詳細資訊，請參閱 [Experience Manager 發行藍圖](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html)。
 
 ### 增強功能 {#enhancements-12697}
 
@@ -34,6 +34,7 @@ ht-degree: 43%
 - AEM Guides：各種原生PDF增強功能和穩定性修正
 - SKYOPS-53130：改善RDE中的AC工具支援
 - SKYOPS-57146：修正AEM啟動時的Sling死結
+- SKYOPS-61646：升級至發行版本後，上次復寫日期未更新12585
 
 ### 已知問題 {#known-issues-12697}
 
