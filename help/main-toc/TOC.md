@@ -8,10 +8,10 @@ user-guide-description: 了解 Experience Manager as a Cloud Service 的運作�
 breadcrumb-title: 使用手冊
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: af26c42ddd1594e5622e9b32334ce5508d097582
+source-git-commit: 88227693b7dfc3cbd30751718dc85e55ee67bb96
 workflow-type: tm+mt
-source-wordcount: '4174'
-ht-degree: 98%
+source-wordcount: '4177'
+ht-degree: 99%
 
 ---
 
@@ -129,7 +129,8 @@ ht-degree: 98%
    + 移轉工具發行說明 {#migration-tools}
       + [最新發行說明](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)
       + 2023 {#2023}
-         + [2023.3.0 版本注意事項](/help/journey-migration/release-notes/release-notes-migration-tools-2023-03-0.md)
+         + [2023.6.0 版發行說明](/help/journey-migration/release-notes/release-notes-migration-tools-2023-06-0.md)
+         + [2023.3.0 發行說明](/help/journey-migration/release-notes/release-notes-migration-tools-2023-03-0.md)
       + 2022 {#2022}
          + [2022.12.0 版發行說明](/help/journey-migration/release-notes/release-notes-migration-tools-2022-12-0.md)
          + [2022.9.0 版發行說明](/help/journey-migration/release-notes/release-notes-migration-tools-2022-09-0.md)
@@ -160,8 +161,8 @@ ht-degree: 98%
    + [AEM as a Cloud Service 安全性注意事項](/help/security/security-considerations.md)
 + 入門 {#onboarding}
    + [從這裡開始](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html)
-   + 入門歷程 {#journey}
-      + [入門歷程概觀](/help/journey-onboarding/overview.md)
+   + 上線歷程 {#journey}
+      + [上線歷程概觀](/help/journey-onboarding/overview.md)
       + [入門準備](/help/journey-onboarding/preparation.md)
       + [AEM as a Cloud Service 技術](/help/journey-onboarding/terminology.md)
       + [Admin Console](/help/journey-onboarding/admin-console.md)
@@ -505,7 +506,7 @@ ht-degree: 98%
       + [HTTP2 傳送內容常見問答集](/help/assets/dynamic-media/http2faq.md)
       + [Flash 檢視器產品壽命終止](/help/assets/dynamic-media/flash-viewers-eol.md)
       + [DHTML 檢視器產品壽命終止](/help/assets/dynamic-media/dhtml-viewer-endoflifefaqs.md)
-   + 使用資產檢視 {#assets-view}
+   + 使用資產檢視{#assets-view}
       + [簡介](/help/assets/assets-view-introduction.md)
       + [快速入門](/help/assets/get-started-assets-view.md)
       + [我的工作區](/help/assets/my-workspace-assets-view.md)
@@ -518,7 +519,7 @@ ht-degree: 98%
       + [管理資產中繼資料](/help/assets/metadata-assets-view.md)
       + [共用資產](/help/assets/share-links-for-assets-view.md)
       + [管理收藏集](/help/assets/manage-collections-assets-view.md)
-      + [監視資產、資料夾和集合](/help/assets/manage-notifications-assets-view.md)
+      + [查看資產、資料夾和集合](/help/assets/manage-notifications-assets-view.md)
       + [管理報告](/help/assets/manage-reports-assets-view.md)
       + [管理標記](/help/assets/tagging-management-assets-view.md)
    + 與 Adobe Workfront 整合 {#integrations}
@@ -562,7 +563,7 @@ ht-degree: 98%
          + [使用表單資料模型](/help/forms/using-form-data-model.md)
    + 最適化表單 {#adaptive-forms-authoring}
       + [建立最適化表單](/help/forms/create-an-adaptive-form.md)
-      + [新增最適化表單至AEM Sites頁面或體驗片段](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+      + [新增最適化表單至 AEM Sites 頁面或體驗片段](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
       + 編寫最適化表單 - 核心元件{#authoring-adaptive-forms-core-components}
          + 建立最適化表單{#create-an-adaptive-form-on-forms-cs}
             + [建立最適化表單](/help/forms/creating-adaptive-form-core-components.md)
@@ -598,7 +599,7 @@ ht-degree: 98%
             + [將 CSS 內嵌樣式套用至個別的最適化表單元件](/help/forms/inline-style-adaptive-forms.md)
          + 在最適化表單中新增規則和使用運算式{#add-rules-and-use-expressions-in-an-adaptive-form}
             + [將規則新增至最適化表單](/help/forms/rule-editor.md)
-            + [使用規則編輯器的Invoke服務新增自訂錯誤處理常式](/help/forms/add-custom-error-handler-adaptive-forms.md)
+            + [使用規則編輯器的叫用服務新增自訂錯誤處理常式](/help/forms/add-custom-error-handler-adaptive-forms.md)
          + 使用 [!DNL Adobe Sign] {#use-adobe-sign}
             + [使用 Adobe Sign 在最適化表單上進行電子簽名](/help/forms/working-with-adobe-sign.md)
          + 設定提交動作和中繼資料提交{#configure-submit-actions-and-metadata-submission}
@@ -684,7 +685,7 @@ ht-degree: 98%
          + [建立產品體驗](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/product-experience-management.md)
    + 整合 {#integrations}
       + [Adobe Commerce](/help/commerce-cloud/integrating/magento.md)
-      + [協力廠商商務解決方案](/help/commerce-cloud/integrating/third-party.md)
+      + [第三方 Commerce 解決方案](/help/commerce-cloud/integrating/third-party.md)
       + [Experience Platform](/help/commerce-cloud/integrating/aep.md)
    + AEM 店面{#storefront}
       + [快速入門](/help/commerce-cloud/getting-started.md)
@@ -856,9 +857,9 @@ ht-degree: 98%
       + [為伺服器端 API 產生存取權杖](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md)
       + [為伺服器端 API 產生存取權杖 (舊版)](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis-legacy.md)
       + [快速網站建立和前端自訂](/help/implementing/developing/introduction/quick-site-creation.md)
-      + [使用前端管道開發 Sites](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md)
+      + [使用前端管道開發網站](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md)
       + [自訂網站範本和主題](/help/implementing/developing/introduction/customizing-site-templates-themes.md)
-      + [AEM 中的 Headful 和 Headless](/help/implementing/developing/headful-headless.md)
+      + [AEM Headful 和 Headless 技術](/help/implementing/developing/headful-headless.md)
       + 全堆疊 AEM 開發 {#full-stack}
          + [開發 AEM Sites 快速入門 - WKND 教學課程](/help/implementing/developing/introduction/develop-wknd-tutorial.md)
          + [AEM UI 的結構](/help/implementing/developing/introduction/ui-structure.md)
@@ -909,7 +910,7 @@ ht-degree: 98%
          + [SPA 中的複合元件](/help/implementing/developing/hybrid/composite-components.md)
          + [伺服器端轉譯](/help/implementing/developing/hybrid/ssr.md)
          + [為元件啟用 JSON 匯出](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html)
-         + [Launch 整合](/help/implementing/developing/hybrid/launch-integration.md)
+         + [啟動整合](/help/implementing/developing/hybrid/launch-integration.md)
          + [SPA 參考文件](/help/implementing/developing/hybrid/reference-materials.md)
    + 開發人員工具 {#developer-tools}
       + [開發人員模式](/help/implementing/developing/tools/developer-mode.md)
