@@ -5,14 +5,14 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
 exl-id: 1e812d93-4ba5-4589-b59b-2f564d754b0f
-source-git-commit: 8d40f259e70ef73285aafcb736e1f9d720380f7d
+source-git-commit: 8ac35abd1335b4e31a6dc0d8812cc9df333e69a4
 workflow-type: tm+mt
-source-wordcount: '2250'
+source-wordcount: '2246'
 ht-degree: 1%
 
 ---
 
-# 建立最適化表單（核心元件） {#creating-an-adaptive-form-core-components}
+# 建立最適化表單 {#creating-an-adaptive-form-core-components}
 
 最適化Forms可讓您建立吸引人、回應式、動態且最適化的表單。 AEM Forms為商業使用者提供好用的精靈，以便快速建立最適化Forms。 精靈具有快速索引標籤導覽，可輕鬆選取預先設定的範本、樣式、欄位和提交選項以建立調適型表單。
 
@@ -44,7 +44,7 @@ ht-degree: 1%
 * **許可權**：將使用者新增至 [!DNL forms-users] 群組。 的成員 [!DNL forms-users] 群組有權建立最適化表單。 如需表單特定使用者群組的詳細清單，請參閱 [群組與許可權](forms-groups-privileges-tasks.md).
 
 
-## 建立最適化表單（核心元件） {#create-an-adaptive-form-core-components}
+## 建立最適化表單  {#create-an-adaptive-form-core-components}
 
 1. 登入您的 [!DNL Experience Manager Forms] 作者執行個體。 可以是雲端例項或本機開發例項。
 

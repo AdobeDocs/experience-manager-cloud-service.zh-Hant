@@ -3,9 +3,9 @@ title: 如何將最適化表單新增至AEM Sites頁面？
 description: 瞭解如何建立最適化表單或將其新增到您的AEM Sites頁面。 也瞭解將表單整合至您網站的好處和各種方式。
 feature: Adaptive Forms, Page Editor, Authoring
 Keywords: af in aem sites, aem sites af, add af to a sites page, af aem sites, af sites, create af in a sites page, adaptive form in aem sites, forms aem sites, add form to a sites page, adaptive forms aem sites, add adaptive forms to aem page, create forms in an aem sites page
-source-git-commit: 05401630484fa881da1304b6d0301670248b9889
+source-git-commit: 8ac35abd1335b4e31a6dc0d8812cc9df333e69a4
 workflow-type: tm+mt
-source-wordcount: '3224'
+source-wordcount: '3214'
 ht-degree: 21%
 
 ---
@@ -265,5 +265,4 @@ AEM FormsCloud Service提供最適化表單容器和Adaptive Forms — 內嵌元
 
 ## 相關文章 {#related-article}
 
-* [建立獨立核心元件型最適化表單](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html)
-
+* [建立獨立核心元件型最適化表單](/help/forms/creating-adaptive-form-core-components.md)
