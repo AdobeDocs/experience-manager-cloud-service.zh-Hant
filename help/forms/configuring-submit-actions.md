@@ -2,14 +2,19 @@
 title: 如何設定最適化表單的提交動作
 description: 最適化表單提供多個提交動作。 提交動作會定義在提交後如何處理最適化表單。 您可以使用內建的提交動作或建立自己的提交動作。
 exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
-source-git-commit: 921dc0f109b1faaa6d53086c4ca29627cb30bef8
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '3133'
-ht-degree: 2%
+source-wordcount: '3153'
+ht-degree: 3%
 
 ---
 
 # 最適化表單提交動作 {#configuring-the-submit-action}
+
+| 版本 | 文章連結 |
+| -------- | ---------------------------- |
+| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html) |
+| AEM as a Cloud Service  | 本文 |
 
 當使用者按一下 **[!UICONTROL 提交]** 最適化表單上的按鈕。 最適化Forms提供一些立即可用的提交動作。 可立即使用的「提交動作」包括：
 
@@ -81,7 +86,7 @@ ht-degree: 2%
 
 ![設定Rest端點提交動作](assets/action-config.png)
 
-您也可以 **[!UICONTROL 啟用POST請求]** 並提供一個URL以張貼請求。 若要將資料提交至託管表單的AEM伺服器，請使用與AEM伺服器根路徑對應的相對路徑。 例如， `/content/forms/af/SampleForm.html`. 若要將資料提交至任何其他伺服器，請使用絕對路徑。
+您也可以 **[!UICONTROL 啟用POST請求]** 並提供一個URL以張貼請求。 若要將資料提交至託管表單的AEM伺服器，請使用與AEM伺服器根路徑對應的相對路徑。 例如，`/content/forms/af/SampleForm.html`。若要將資料提交至任何其他伺服器，請使用絕對路徑。
 
 >[!NOTE]
 >
@@ -93,7 +98,7 @@ ht-degree: 2%
 
     ```
     
-    ${customer_Name}，您好！
+    $，您好{customer_Name}，
     
     下列專案設定為您的預設送貨地址：
     ${customer_Name}，
@@ -110,7 +115,6 @@ ht-degree: 2%
 >
 > * 所有表單欄位都必須有不同的元素名稱，即使這些欄位放在最適化表單的不同面板上亦然。
 > * AEMas a Cloud Service需要對外郵件進行加密。 預設會停用傳出電子郵件。 若要啟用支援服務單，請將支援服務單提交至 [請求存取權](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=en#sending-email).
-
 
 您也可以將附件和記錄檔案(DoR)加入電子郵件中。 若要啟用 **[!UICONTROL 附加記錄檔案]** 選項，設定最適化表單以產生記錄檔案(DoR)。 您可以啟用從最適化表單屬性產生記錄檔案的選項。
 
@@ -198,7 +202,6 @@ For more information about the Forms Portal and Submit Action, see [Drafts and s
    >* 依預設， `forms-ootb-storage-adaptive-forms-submission` 出現在選取的SharePoint網站。
    >* 建立資料夾為 `forms-ootb-storage-adaptive-forms-submission`，如果尚未出現在 `Documents` 所選SharePoint網站的程式庫，方法是按一下 **建立資料夾**.
 
-
 現在，您可以使用此SharePoint Sites設定，在最適化表單中執行提交動作。
 
 ### 在最適化表單中使用SharePoint設定 {#use-sharepoint-configuartion-in-af}
@@ -210,7 +213,6 @@ For more information about the Forms Portal and Submit Action, see [Drafts and s
    >
    > * 選取相同的 [!UICONTROL 設定容器] 最適化表單的開頭，您已在其中建立SharePoint儲存空間。
    > * 若否 [!UICONTROL 設定容器] 選取「 」，然後全域 [!UICONTROL 儲存設定] 資料夾會出現在「提交動作」屬性視窗中。
-
 
 1. 選取 **提交動作** 作為 **[!UICONTROL 提交至SharePoint]**.
    ![SharepointGIF](/help/forms/assets/sharedrive-video.gif)
@@ -257,7 +259,6 @@ For more information about the Forms Portal and Submit Action, see [Drafts and s
    >* 依預設， `forms-ootb-storage-adaptive-forms-submission` 存在於OneDrive容器中。
    > * 建立資料夾為 `forms-ootb-storage-adaptive-forms-submission`，如果尚未出現，請按一下 **建立資料夾**.
 
-
 現在，您可以使用此OneDrive儲存體設定在最適化表單中執行提交動作。
 
 ### 在最適化表單中使用OneDrive設定 {#use-onedrive-configuartion-in-af}
@@ -269,7 +270,6 @@ For more information about the Forms Portal and Submit Action, see [Drafts and s
    >
    > * 選取相同的 [!UICONTROL 設定容器] 最適化表單，您已在該表單中建立OneDrive儲存空間。
    > * 若否 [!UICONTROL 設定容器] 選取「 」，然後全域 [!UICONTROL 儲存設定] 資料夾會出現在「提交動作」屬性視窗中。
-
 
 1. 選取 **提交動作** 作為 **[!UICONTROL 提交至OneDrive]**.
    ![OneDriveGIF](/help/forms/assets/onedrive-video.gif)
@@ -284,7 +284,7 @@ For more information about the Forms Portal and Submit Action, see [Drafts and s
 此 **[!UICONTROL 提交至Azure Blob儲存體]**  提交動作會將最適化表單與Microsoft® Azure入口網站連線。 您可以將表單資料、檔案、附件或記錄檔案提交至已連線的Azure儲存體容器。 若要對Azure Blob儲存體使用提交動作：
 
 1. [建立Azure Blob儲存體容器](#create-a-azure-blob-storage-container-create-azure-configuration)：它會將AEM Forms連線至Azure儲存體容器。
-2. [在最適化表單中使用Azure儲存體設定 ](#use-azure-storage-configuration-in-an-adaptive-form-use-azure-storage-configuartion-in-af)：它將您的最適化表單連線到已設定的Azure儲存體容器。
+2. [在最適化表單中使用Azure儲存體設定](#use-azure-storage-configuration-in-an-adaptive-form-use-azure-storage-configuartion-in-af)：它將您的最適化表單連線到已設定的Azure儲存體容器。
 
 ### 建立Azure Blob儲存體容器 {#create-azure-configuration}
 
@@ -313,7 +313,6 @@ For more information about the Forms Portal and Submit Action, see [Drafts and s
    >
    > * 選取相同的 [!UICONTROL 設定容器] 最適化表單，您已在該表單中建立OneDrive儲存空間。
    > * 若否 [!UICONTROL 設定容器] 選取「 」，然後全域 [!UICONTROL 儲存設定] 資料夾會出現在「提交動作」屬性視窗中。
-
 
 1. 選取 **提交動作** 作為 **[!UICONTROL 提交至Azure Blob儲存體]**.
    ![Azure Blob儲存GIF](/help/forms/assets/azure-submit-video.gif)

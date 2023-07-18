@@ -3,14 +3,19 @@ title: 如何將工作流程指派給其他使用者、傳送電子郵件、在�
 description: 以Forms為中心的工作流程可讓您快速建立最適化Forms工作流程。 您可以使用Adobe Sign以電子方式簽署檔案、建立表單式業務流程、擷取資料並傳送至多個資料來源，以及傳送電子郵件通知
 exl-id: e1403ba6-8158-4961-98a4-2954b2e32e0d
 google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '7189'
+source-wordcount: '7209'
 ht-degree: 1%
 
 ---
 
 # 以Forms為中心的AEM工作流程 — 步驟參考 {#forms-centric-workflow-on-osgi-step-reference}
+
+| 版本 | 文章連結 |
+| -------- | ---------------------------- |
+| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/aem-forms-workflow-step-reference.html) |
+| AEM as a Cloud Service  | 本文 |
 
 您可以使用工作流程模型將商業邏輯轉換為自動化重複式處理。 模型可協助您定義並執行一系列步驟。 您也可以定義模型屬性，例如工作流程是暫時的或使用多個資源。 您可以 [在模型中加入各種AEM Workflow步驟以實現商業邏輯](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=en#extending-aem).
 
@@ -356,7 +361,7 @@ PDF/A是一種封存格式，用於透過嵌入字型和解壓縮檔案來長期
 
      例如，如果CRX存放庫中的「相對於裝載」資料夾在 `attachment\attachment-folder` 位置，指定 `attachment\attachment-folder` 在文字方塊中選取 **[!UICONTROL 相對於裝載]** 選項。
 
-   * **[!UICONTROL JSON點標籤法]**：使用的值位於JSON檔案中時，請使用選項。 例如，insurance.customerDetails.emailAddress。 JSON點標籤法選項僅在選取了從輸入JSON對應輸入欄位選項時可用。
+   * **[!UICONTROL JSON點標籤法]**：當要使用的值位於JSON檔案中時，請使用選項。 例如，insurance.customerDetails.emailAddress。 JSON點標籤法選項僅在選取了從輸入JSON對應輸入欄位選項時可用。
    * **[!UICONTROL 從輸入JSON對應輸入欄位]**：指定JSON檔案的路徑，以從JSON檔案取得某些服務引數的輸入值。 JSON檔案的路徑可以是相對於裝載、絕對路徑，或者您可以使用JSON或表單資料模型型別的變數來選取輸入JSON檔案。
 
 * **[!UICONTROL 服務輸入]** > **[!UICONTROL 使用變數或JSON檔案提供輸入資料]**：選取選項，以從儲存在絕對路徑、相對於承載的路徑或變數中之JSON檔案取得所有引數的值。
@@ -544,7 +549,7 @@ Send a document directly to a printer. It supports the following printing access
 
 ## 產生非互動式PDF輸出步驟   {#generatePDFdocuments}
 
-1. 將「產生非互動式PDF輸出」工作流程拖曳至Sidekick中「Forms Workflow」標籤下方。
+1. 將「產生非互動式PDF輸出」工作流程拖曳至「Sidekick」中「Forms Workflow」標籤下。
 1. 連按兩下新增的工作流程步驟以編輯元件。
 1. 在「編輯元件」對話方塊中，設定輸入檔案、輸出檔案和其他引數，然後按一下 **[!UICONTROL 確定]**.
 

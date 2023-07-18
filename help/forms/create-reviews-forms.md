@@ -4,14 +4,20 @@ seo-title: Creating and managing reviews in forms
 description: 「稽核」是一種機制，可讓一個或多個稽核者在表單上進行評論。
 seo-description: A Review is a mechanism that allows one or more reviewers to comment on a form.
 topic-tags: forms-manager
-source-git-commit: 3efd7d81424369ce6430802373129ab91b7356ab
+exl-id: 378049f8-bf21-4595-819d-ba5fba7023c0
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '652'
-ht-degree: 0%
+source-wordcount: '672'
+ht-degree: 1%
 
 ---
 
 # 建立和管理表單的稽核{#creating-and-managing-reviews-to-forms}
+
+| 版本 | 文章連結 |
+| -------- | ---------------------------- |
+| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/create-reviews-forms.html) |
+| AEM as a Cloud Service  | 本文 |
 
 ## 評論 {#review}
 
@@ -35,7 +41,6 @@ ht-degree: 0%
    >* 管理員可以存取與表單使用者相關聯的任何群組。
    >* 服務使用者群組無法供選取檢閱。
 
-
 ### 設定稽核時發生的動作 {#actions-that-occur-when-a-review-is-set-up}
 
 本節說明建立或設定稽核時會發生什麼情況。
@@ -55,7 +60,6 @@ ht-degree: 0%
 >
 >* 只能修改正在進行的稽核。
 >* 無法修改已完成的稽核。
-
 
 1. 導覽至表單索引標籤並選取表單。
 
@@ -107,4 +111,5 @@ ht-degree: 0%
    1. **檢閱者**：對於每個稽核者，與稽核相關的未完成任務會終止。 任務在檢閱者的「通知」區段中不再顯示為「待定」。
    1. **發起人**：指派給檢閱發起人的任務已標籤為完成。 任務會從稽核發起人的Notification區段中移除。
    1. **全部**：評論會顯示在「先前的評論」區段中。 無法新增更多註解。
+
    ![檢閱完成](assets/review-complete-imgg.png)

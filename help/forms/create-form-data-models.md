@@ -5,14 +5,20 @@ feature: Form Data Model
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: b17b7441-912c-44c7-a835-809f014a8c86
-source-git-commit: 1f3104d4a986018675f751afa04fe0ed3b7f5c26
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '1531'
-ht-degree: 0%
+source-wordcount: '1551'
+ht-degree: 1%
 
 ---
 
 # 建立表單資料模型 {#create-form-data-model}
+
+| 版本 | 文章連結 |
+| -------- | ---------------------------- |
+| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html) |
+| AEM as a Cloud Service  | 本文 |
+
 
 ![資料整合](do-not-localize/data-integeration.png)
 
@@ -77,7 +83,7 @@ ht-degree: 0%
    * 若要以相同型別的另一個資料來源取代現有資料來源，請點選 **[!UICONTROL 編輯]** 圖示並選取可用資料來源清單中的「 」。
    * 若要刪除現有的資料來源，請點選 **[!UICONTROL 刪除]** 資料來源的圖示。 如果將資料來源中的資料模型物件新增至表單資料模型，則會停用「刪除」圖示。
 
-      ![fdm-properties](assets/fdm-properties.png)
+     ![fdm-properties](assets/fdm-properties.png)
 
 1. 點選 **[!UICONTROL 儲存並關閉]** 以儲存更新。
 
@@ -108,22 +114,19 @@ ht-degree: 0%
 
 1. 建立Apache Sling內容感知設定。 若要建立OSGi設定：
    1. **在中設定OSGi設定檔 [!DNL Experience Manager] 原型專案。**
-使用PID建立OSGi Factory設定檔 
-`org.apache.sling.caconfig.impl.override.OsgiConfigurationOverrideProvider`。在每個執行模式資料夾下建立名稱相同的檔案，其中值需在每個執行模式中變更。 如需詳細資訊，請參閱 [設定OSGi用於 [!DNL Adobe Experience Manager]](/help/implementing/deploying/configuring-osgi.md#creating-sogi-configurations).
+使用PID建立OSGi Factory設定檔 `org.apache.sling.caconfig.impl.override.OsgiConfigurationOverrideProvider`. 在每個執行模式資料夾下建立名稱相同的檔案，其中值需在每個執行模式中變更。 如需詳細資訊，請參閱 [設定OSGi用於 [!DNL Adobe Experience Manager]](/help/implementing/deploying/configuring-osgi.md#creating-sogi-configurations).
 
    1. **設定OSGI設定json。** 若要使用Apache Sling內容感知設定覆寫提供者：
       1. 在本機開發執行個體上 `/system/console/configMgr`，選取名稱為的工廠OSGi設定 **[!UICONTROL Apache Sling內容感知設定覆寫提供者： OSGi設定]**.
       1. 提供說明。
       1. 選取 **[!UICONTROL 已啟用]**.
-      1. 在覆寫下，根據sling覆寫語法中的環境，提供需要變更的欄位。 如需詳細資訊，請參閱 [Apache Sling內容感知設定 — 覆寫](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration-override.html#override-syntax). 例如， `cloudconfigs/fdm/{configName}/url="newURL"`.
-選取「 」，可新增多個覆寫 **[!UICONTROL +]**.
+      1. 在覆寫下，根據sling覆寫語法中的環境，提供需要變更的欄位。 如需詳細資訊，請參閱 [Apache Sling內容感知設定 — 覆寫](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration-override.html#override-syntax). 例如，`cloudconfigs/fdm/{configName}/url="newURL"`。選取「 」，可新增多個覆寫 **[!UICONTROL +]**.
       1. 選取&#x200B;**[!UICONTROL 儲存]**。
       1. 若要取得OSGi Configuration JSON，請遵循中的步驟 [使用AEM SDK快速入門產生OSGi設定](/help/implementing/deploying/configuring-osgi.md#generating-osgi-configurations-using-the-aem-sdk-quickstart).
       1. 將JSON放在上一步建立的OSGi Factory設定檔案中。
       1. 變更值 `newURL` 根據環境（或runmode）。
       1. 若要根據runmode變更密碼值，可以使用以下專案建立密碼變數 [cloud manager API](/help/implementing/deploying/configuring-osgi.md#cloud-manager-api-format-for-setting-properties) 和更新版本可在以下連結中參照： [OSGi設定](/help/implementing/deploying/configuring-osgi.md#secret-configuration-values).
 透過CM管道部署此原型專案時，覆寫將在不同的環境（或執行模式）上提供不同的值。
-
       >[!NOTE]
       >
       >[!DNL Adobe Managed Service] 使用者可使用加密支援來加密加密加密值(如需詳細資訊，請參閱 [設定屬性的加密支援](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/encryption-support-for-configuration-properties.html#enabling-encryption-support) 並將加密的文字放在之後的值中 [上下文感知設定在service pack 6.5.13.0中提供](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html#runmode-specific-context-aware-config).

@@ -5,14 +5,19 @@ feature: Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '2192'
+source-wordcount: '2212'
 ht-degree: 2%
 
 ---
 
 # 設定資料來源 {#configure-data-sources}
+
+| 版本 | 文章連結 |
+| -------- | ---------------------------- |
+| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/configure-data-sources.html) |
+| AEM as a Cloud Service  | 本文 |
 
 ![資料整合](do-not-localize/data-integeration.png)
 
@@ -131,7 +136,7 @@ RESTful Web服務可使用以下方式描述： [Swagger規格](https://swagger.
    * 選取URL或檔案，從 [!UICONTROL Swagger來源] 下拉式清單，並據此指定 [!DNL Swagger URL] 至[!DNL  Swagger] 定義檔案或上傳 [!DNL Swagger] 從您的本機檔案系統取得的檔案。
    * 根據[!DNL  Swagger] 來源輸入。下列欄位已預先填入值：
 
-      * 配置： REST API使用的傳輸通訊協定。 下拉式清單中所顯示的配置型別數目，取決於中定義的配置 [!DNL Swagger] 來源。
+      * 配置： REST API使用的傳輸通訊協定。 下拉式清單中所顯示的配置型別數目，取決於 [!DNL Swagger] 來源。
       * 主機：提供REST API之主機的網域名稱或IP位址。 它是必填欄位。
       * 基本路徑：所有API路徑的URL首碼。 此為選用欄位。\
         如有需要，請編輯這些欄位的預先填入值。

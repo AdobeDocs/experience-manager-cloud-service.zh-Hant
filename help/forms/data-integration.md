@@ -3,14 +3,20 @@ title: 如何將資料庫連線至 [!DNL AEM Forms] as a Cloud Service？
 seo-title: AEM Forms Data Integration
 description: 您可以從以下位置擷取資料並儲存至RESTful Web服務、以SOAP為基礎的Web服務和OData服務 [!DNL AEM Forms] as a Cloud Service。 此服務提供專用的工具，可擷取、測試、驗證資料並將其傳送至各種型別的資料來源。
 exl-id: 9d146275-de0a-4861-b060-d205ed6305f3
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '557'
-ht-degree: 1%
+source-wordcount: '577'
+ht-degree: 3%
 
 ---
 
 # 將資料來源連線到 Cloud Service {#aem-forms-data-integration}
+
+| 版本 | 文章連結 |
+| -------- | ---------------------------- |
+| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/data-integration.html) |
+| AEM as a Cloud Service  | 本文 |
+
 
 ![資料整合](do-not-localize/data-integeration.png)
 

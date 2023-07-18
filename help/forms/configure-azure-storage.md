@@ -2,14 +2,17 @@
 title: 如何設定Azure儲存體？
 description: 瞭解如何將表單與Azure儲存伺服器整合。
 exl-id: 606383b3-293c-43d2-9ba0-5843c4e0caa8
-source-git-commit: 10284b1ac6fbad2e7f6231603c3dd60b6e404299
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '581'
+source-wordcount: '582'
 ht-degree: 1%
 
 ---
 
 # 設定[!DNL Azure]儲存空間 {#configure-azure-storage}
+
+
+![資料整合](assets/data-integeration.png)
 
 [[!DNL Experience Manager Forms] 資料整合](data-integration.md) 提供 [!DNL Azure] 整合表單的儲存設定 [!DNL Azure] 儲存服務。 表單資料模型可用來建立最適化Forms，並與互動 [!DNL Azure] 伺服器以啟用業務工作流程。 例如：
 

@@ -2,14 +2,19 @@
 title: 如何在AEM Workflow步驟中新增變數？
 description: 瞭解如何建立變數、設定變數的值，以及將其用於 [!DNL AEM Forms] 工作流程步驟。
 exl-id: d9139ea9-2f86-476c-8767-b36766790f2c
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '2060'
-ht-degree: 0%
+source-wordcount: '2080'
+ht-degree: 1%
 
 ---
 
 # 以Forms為中心的AEM工作流程中的變數 {#variables-in-aem-forms-workflows}
+
+| 版本 | 文章連結 |
+| -------- | ---------------------------- |
+| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/variable-in-aem-workflows.html) |
+| AEM as a Cloud Service  | 本文 |
 
 工作流程模型中的變數是根據其資料型別儲存值的方法。 您可以在任何工作流程步驟中使用變數的名稱，以擷取儲存在變數中的值。 您也可以使用變數名稱來定義用於進行路由決定的運算式。
 

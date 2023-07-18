@@ -5,14 +5,20 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 0cd38edb-2201-4ca6-8b84-6b5b7f76bd90
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '997'
+source-wordcount: '1017'
 ht-degree: 1%
 
 ---
 
 # 透過延遲載入改善大型表單的效能{#improve-performance-of-large-forms-with-lazy-loading}
+
+| 版本 | 文章連結 |
+| -------- | ---------------------------- |
+| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/lazy-loading-adaptive-forms.html) |
+| AEM as a Cloud Service  | 本文 |
+
 
 ## 延遲載入簡介 {#introduction-to-lazy-loading}
 
@@ -27,17 +33,17 @@ ht-degree: 1%
 * **識別及建立片段**
 您只能設定用於延遲載入的最適化表單片段。 片段是位在適用性表單之外的獨立區段，可以跨表單重複使用。 因此，實施延遲載入的第一步是識別表單中的邏輯區段，並將其轉換為片段。 您可以從頭開始建立片段，或將現有的表單面板儲存為片段。
 
-   <!--For more information about creating fragments, see [Adaptive Form Fragments](adaptive-form-fragments.md).-->
+  <!--For more information about creating fragments, see [Adaptive Form Fragments](adaptive-form-fragments.md).-->
 
 * **識別並標籤全域值**
 Forms型交易涉及動態元素，可從使用者擷取相關資料並加以處理以簡化表單填寫體驗。 例如，您的表單在片段X中有欄位A，其值決定另一個片段中欄位B的有效性。 在此情況下，如果片段X標籤為延遲載入，則欄位A的值必須可用於驗證欄位B，即使未載入片段X。 為此，您可以將欄位A標示為全域，以確保其值可在未載入片段X時用於驗證欄位B。
 
-   有關如何將欄位值設為全域值的資訊，請參閱 [設定延遲載入](lazy-loading-adaptive-forms.md#p-configuring-lazy-loading-p).
+  有關如何將欄位值設為全域值的資訊，請參閱 [設定延遲載入](lazy-loading-adaptive-forms.md#p-configuring-lazy-loading-p).
 
 * **撰寫規則以控制欄位的可見度**
 Forms包含某些欄位和區段，不適用於所有使用者和所有條件。 Forms作者和開發人員可使用可見度或顯示隱藏規則，根據使用者輸入來控制其可見度。 例如，「辦公室地址」欄位不會顯示給在表單的「就業狀態」欄位中選擇「失業」的使用者。 如需撰寫規則的詳細資訊，請參閱 [使用規則編輯器](rule-editor.md).
 
-   您可以在延遲載入的片段中使用可見性規則，以便只有在需要條件欄位時才會顯示。 此外，將條件欄位標示為全域，以在延遲載入片段的可見度運算式中參照它。
+  您可以在延遲載入的片段中使用可見性規則，以便只有在需要條件欄位時才會顯示。 此外，將條件欄位標示為全域，以在延遲載入片段的可見度運算式中參照它。
 
 ## 設定延遲載入 {#configuring-lazy-loading}
 
@@ -81,4 +87,4 @@ Forms包含某些欄位和區段，不適用於所有使用者和所有條件。
 * 使用欄位全域可用的屬性，讓位於延遲載入面板中的欄位值可供表單的所有其他面板使用。
 * 無論欄位是否跨片段標示為全域，請勿轉寄延遲面板內欄位的參考值。
 * 使用面板重設功能，使用下列點按運算式重設面板上所有可見專案。\
-   guideBridge.resolveNode(guideBridge.getFocus({&quot;focusOption&quot;： &quot;navigablePanel&quot;}))。resetData()
+  guideBridge.resolveNode(guideBridge.getFocus({&quot;focusOption&quot;： &quot;navigablePanel&quot;}))。resetData()

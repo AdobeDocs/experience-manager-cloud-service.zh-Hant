@@ -2,14 +2,19 @@
 title: 如何建立最適化表單範本？
 description: 使用範本編輯器建立最適化表單範本，以定義基本結構和初始內容。
 exl-id: a882cba2-c621-4ff7-a972-c504641b5639
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '2018'
+source-wordcount: '2038'
 ht-degree: 1%
 
 ---
 
 # 建立最適化表單範本 {#adaptive-form-templates}
+
+| 版本 | 文章連結 |
+| -------- | ---------------------------- |
+| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/template-editor.html) |
+| AEM as a Cloud Service  | 本文 |
 
 當您編寫表單時，可在編輯器中新增欄位和元件以定義表單結構、內容和動作。 您可以在「 」中新增欄位和元件 `guideRootPanel` 表單容器的。 使用範本編輯器，您可以建立包含作者可用來建立表單的基本結構和初始內容的範本。
 

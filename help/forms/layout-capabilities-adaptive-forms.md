@@ -3,14 +3,19 @@ title: Adaptive Forms的版面配置功能
 seo-title: Layout capabilities of Adaptive Forms
 description: Adaptive Forms在各種裝置上的版面配置與外觀是由版面配置設定所控管。 瞭解各種版面以及如何套用它們。
 exl-id: e30c6ff9-692b-4415-8f14-b4ef616b2d12
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '779'
-ht-degree: 0%
+source-wordcount: '799'
+ht-degree: 1%
 
 ---
 
 # Adaptive Forms的版面配置功能 {#layout-capabilities-of-adaptive-forms}
+
+| 版本 | 文章連結 |
+| -------- | ---------------------------- |
+| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/layout-capabilities-adaptive-forms.html) |
+| AEM as a Cloud Service  | 本文 |
 
 [!DNL Adobe Experience Manager] 可讓您建立簡單易用的最適化Forms，為使用者提供動態體驗。 表單版面配置會控制專案或元件在最適化表單中的顯示方式。
 
@@ -68,7 +73,7 @@ window.guideBridge.validate([], this.panel.navigationContext.currentItem.somExpr
 
 ![在Adaptive Forms中使用摺疊式面板版面的可重複面板](assets/accordion-layout.png)
 
-### [!UICONTROL 索引標籤版面配置 — 索引標籤顯示在左側 ]{#tabbed-layout-tabs-appear-on-the-left}
+### [!UICONTROL 索引標籤版面配置 — 索引標籤顯示在左側]{#tabbed-layout-tabs-appear-on-the-left}
 
 使用此版面，您可以放置 **[!UICONTROL 面板最適化表單]** 具有索引標籤導覽的面板中的元件。 標籤會放置在面板內容的左側。
 
@@ -102,7 +107,7 @@ window.guideBridge.validate([], this.panel.navigationContext.currentItem.somExpr
 
 ![行動版面配置在表單標題中具有面板標題](assets/mobile-layout1.png)
 
-### [!UICONTROL 版面配置中表單標題沒有面板標題 ]{#layout-without-panel-titles-in-the-form-header}
+### [!UICONTROL 版面配置中表單標題沒有面板標題]{#layout-without-panel-titles-in-the-form-header}
 
 如名稱所建議，此版面只會顯示導覽功能表和導覽列，而不會顯示面板標題。 此版面配置也提供用於導覽的「下一個」和「上一個」圖示。
 

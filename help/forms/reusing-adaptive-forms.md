@@ -4,14 +4,19 @@ seo-title: Reuse metadata properties of an Adaptive Form
 description: 您可以重複使用現有的最適化表單來建立新的最適化Forms。
 seo-description: You can reuse an existing Adaptive Form to create new Adaptive Forms.
 exl-id: fb8cf3a9-fd19-46bf-b40e-2af76ca68b9f
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: f7f30545b76afa6abd4f49316d0fb2245f5470c2
 workflow-type: tm+mt
-source-wordcount: '534'
-ht-degree: 2%
+source-wordcount: '554'
+ht-degree: 4%
 
 ---
 
 # 重複使用最適化表單的中繼資料屬性 {#reusing-adaptive-forms}
+
+| 版本 | 文章連結 |
+| -------- | ---------------------------- |
+| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/reusing-adaptive-forms.html) |
+| AEM as a Cloud Service  | 本文 |
 
 如果您想要使用現有最適化表單的某些屬性來產生新表單，您只需使用複製 — 貼上功能即可。 此外，您還可以在所需的資料夾路徑貼上新的調適型表單。 會複製所有中繼資料屬性，並複製XFA和XSD型最適化Forms的XFA和XSD。
 

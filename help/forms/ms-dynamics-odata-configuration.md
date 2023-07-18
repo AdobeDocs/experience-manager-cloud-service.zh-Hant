@@ -5,14 +5,19 @@ feature: Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb7b41f0-fd4f-4ba6-9f45-792a66ba6368
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '982'
+source-wordcount: '1002'
 ht-degree: 2%
 
 ---
 
 # [!DNL Microsoft Dynamics] OData設定 {#microsoft-dynamics-odata-configuration}
+
+| 版本 | 文章連結 |
+| -------- | ---------------------------- |
+| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/ms-dynamics-odata-configuration.html) |
+| AEM as a Cloud Service  | 本文 |
 
 ![資料整合](assets/data-integeration.png)
 
@@ -95,7 +100,7 @@ ht-degree: 2%
 
    * `Client-ID` 是您可以使用任何GUID產生器產生的使用者端ID。
    * `redirect-uri` 為的URL [!DNL Microsoft Dynamics] 上的OData雲端服務 [!DNL Experience Manager Forms]. 預設雲端服務已安裝 [!DNL Experience Manager Forms] 部署於下列URL：
-      `https://'[server]:[port]'/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html`
+     `https://'[server]:[port]'/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html`
 
 1. 執行以下命令以授與AD FS電腦上的存取權：
 

@@ -5,15 +5,21 @@ topic-tags: develop
 feature: Adaptive Forms
 role: User
 level: Intermediate
-source-git-commit: 6b38601e9bd29c71e5f70b46d2fa55a928851adc
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '3097'
+source-wordcount: '3117'
 ht-degree: 1%
 
 ---
 
 
 # 使用 [!DNL Adobe Sign] 在最適化表單中 {#using-adobe-sign-in-an-adaptive-form}
+
+| 版本 | 文章連結 |
+| -------- | ---------------------------- |
+| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/working-with-adobe-sign.html) |
+| AEM as a Cloud Service  | 本文 |
+
 
 [!DNL Adobe Sign] 可啟用最適化表單的電子簽名工作流程。 電子簽章可改善處理法律、銷售、薪資、人力資源管理等領域檔案的工作流程。
 
@@ -73,6 +79,7 @@ ht-degree: 1%
    1. 指定 **[!UICONTROL 名稱]** 和 **[!UICONTROL 標題]** 最適化表單的預設值。
 
    1. 選取 [設定容器](adobe-sign-integration-adaptive-forms.md#configure-adobe-sign-with-aem-forms) 建立時間 [整合 [!DNL Adobe Sign] 替換為 [!DNL AEM Forms]](adobe-sign-integration-adaptive-forms.md).
+
    設定容器包含 [!DNL Adobe Sign] 為您的環境設定的Cloud Services。 這些服務可在最適化表單編輯器中選取。
 
 1. 在 **[!UICONTROL 表單模型]** 索引標籤中，選取下列其中一個選項：
@@ -114,7 +121,6 @@ ht-degree: 1%
    >
    >  * 使用 [!DNL Adobe Sign] 區塊並非強制使用 [!DNL Adobe Sign] 在最適化表單中。 如果您不使用 [!DNL Adobe Sign] 封鎖並新增收件者的欄位，則預設簽名欄位會顯示在簽署檔案的底部。
    >  * 使用 [!DNL Adobe Sign] 僅封鎖那些自動產生記錄檔案的最適化Forms。 如果您使用自訂XDP來產生記錄檔案或表單範本式的最適化表單， [!DNL Adobe Sign] 不支援此區塊。
-
 
 
 1. 選取 **[!UICONTROL Adobe Sign區塊]** 元件並點選 **[!UICONTROL 編輯]** ![編輯](assets/Smock_Edit_18_N.svg) 圖示。 它會顯示新增欄位和格式化欄位外觀的選項。
@@ -190,15 +196,16 @@ Adobe Sign協定可以有一或多個收件者。 新增收件者時，您也可
 
    * **[!UICONTROL 收件者電子郵件地址]：** 指定收件者的電子郵件地址。 收件者在指定的電子郵件地址上收到Adobe Sign合約。 您可以選擇使用表單欄位、登入使用者的Experience Manager使用者設定檔中提供的電子郵件地址，或手動輸入電子郵件地址。 此為必要步驟。
 
-      >[!NOTE]
-      >
-      >確保第一個收件者或唯一收件者（如果有單一收件者）的電子郵件地址與 [!DNL Adobe Sign] 用來設定AEM Cloud Services的帳戶。
+     >[!NOTE]
+     >
+     >確保第一個收件者或唯一收件者（如果有單一收件者）的電子郵件地址與 [!DNL Adobe Sign] 用來設定AEM Cloud Services的帳戶。
 
    * **[!UICONTROL 收件者驗證方法]：** 指定在開啟Adobe Sign合約之前驗證收件者的方法。 您可以在電話、知識庫、以社交身分為基礎的驗證和以下之間選擇： [政府ID](https://helpx.adobe.com/sign/using/adobesign-authentication-government-id.html) 的 [!DNL Adobe Acrobat Sign]. 對象 [!DNL Adobe Acrobat Sign for Government] 您可以在電話和知識型驗證之間選擇。
+
    >[!NOTE]
    >
    >    * 依預設，社交身分型驗證會提供使用Facebook、Google和LinkedIn驗證的選項。 您可以聯絡 [!DNL Adobe Sign] 支援啟用其他社交驗證服務提供者。
-
+   >
 
    * **[!DNL Adobe Sign]要填寫或簽署的欄位：** 選取 [!DNL Adobe Sign] 收件者的欄位。 一個最適化表單可以有多個 [!DNL Adobe Sign] 欄位。 您可以選擇為收件者啟用特定欄位。 欄位會顯示所有可用的 [!DNL Adobe Sign] 個區塊。 當您選取區塊時，會選取區塊的所有欄位。 您可以使用X圖示來取消選取欄位。
 
@@ -310,16 +317,16 @@ Adobe Sign合約ID (agreementId)包含在最適化表單的提交資料中。 �
    * 雲端簽名：使用 [數位ID](https://helpx.adobe.com/sign/kb/digital-certificate-providers.html) 由信任服務提供者代管。
    * Adobe Acrobat或Reader：使用Adobe Acrobat或Reader下載並開啟檔案，以使用智慧卡、USB權杖或檔案式數位ID簽名。
 
-      >[!NOTE]
-      >
-      > 數位簽名也適用於 [!DNL Adobe Acrobat Sign for Government] 但您無法使用雲端簽名來套用它。
+     >[!NOTE]
+     >
+     > 數位簽名也適用於 [!DNL Adobe Acrobat Sign for Government] 但您無法使用雲端簽名來套用它。
+
    將雲端簽名欄位新增至最適化表單後，執行以下步驟以完成設定程式：
 
    * [為最適化表單啟用Adobe Sign](#enableadobsignforanadaptiveform)
    * [為最適化表單選取Adobe Sign Cloud Service](#selectadobesigncloudserviceforanadaptiveform)
    * [將收件者新增至最適化表單](#addsignerstoanadaptiveform)
    * [為最適化表單選取提交動作](#selectsubmitactionforanadaptiveform)
-
 
 ### 設定感謝頁面或摘要步驟元件 {#configure-the-thank-you-page-or-summary-step-component}
 

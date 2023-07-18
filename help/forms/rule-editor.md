@@ -5,14 +5,19 @@ feature: Adaptive Forms
 role: User
 level: Beginner, Intermediate
 exl-id: 6fd38e9e-435e-415f-83f6-3be177738c00
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '6324'
+source-wordcount: '6344'
 ht-degree: 0%
 
 ---
 
 # 將規則新增至最適化表單 {#adaptive-forms-rule-editor}
+
+| 版本 | 文章連結 |
+| -------- | ---------------------------- |
+| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html) |
+| AEM as a Cloud Service  | 本文 |
 
 ## 概觀 {#overview}
 
@@ -756,7 +761,7 @@ var c = {
 
 規則編輯器可讓您使用日期比較來建立條件。
 
-以下是一個範例條件，會在房屋抵押貸款已到期時顯示靜態文字物件，使用者需填入日期欄位來表示該條件。
+以下是一個範例條件，會在房屋已抵押時顯示靜態文字物件，使用者需填入日期欄位來表示該條件。
 
 當使用者填寫的屬性按揭日期為過去時，最適化表單會顯示有關收入計算的附註。 下列規則會比較使用者填寫的日期與目前日期，如果使用者填寫的日期早於目前日期，則表單會顯示文字訊息（名為Income）。
 

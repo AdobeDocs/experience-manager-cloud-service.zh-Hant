@@ -5,14 +5,19 @@ feature: Adaptive Forms
 role: User, Developer
 level: Beginner
 exl-id: 38ca5eea-793b-420b-ae60-3a0bd83caf00
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: f7f30545b76afa6abd4f49316d0fb2245f5470c2
 workflow-type: tm+mt
-source-wordcount: '1498'
-ht-degree: 1%
+source-wordcount: '1519'
+ht-degree: 3%
 
 ---
 
 # 建立最適化表單（Foundation元件） {#creating-an-adaptive-form}
+
+| 版本 | 文章連結 |
+| -------- | ---------------------------- |
+| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/getting-started/create-first-adaptive-form/create-your-first-adaptive-form.html) |
+| AEM as a Cloud Service  | 本文 |
 
 
 最適化Forms可讓您建立吸引人、回應式、動態且最適化的表單。 AEM Forms為商業使用者提供好用的精靈，以便快速撰寫最適化Forms。 精靈具有快速索引標籤導覽，可輕鬆選取預先設定的範本、樣式、欄位和提交選項以建立調適型表單。
@@ -93,7 +98,7 @@ Adaptive Forms allow you to create forms that are engaging, responsive, dynamic,
 
    * **表單資料模型**：A [表單資料模型](data-integration.md) 可讓您將實體和服務從不同的資料來源整合至最適化表單。 如果您要建立的最適化表單涉及從多個資料來源擷取及寫入資料，請選擇「表單資料模型」。
 
-   * **JSON結構描述**： [JSON結構](adaptive-form-json-schema-form-model.md) 代表組織中的後端系統產生或使用資料的結構。 您可以將結構描述關聯至最適化表單，並使用其元素將動態內容新增至最適化表單。 編寫Adaptive Forms時，可在內容瀏覽器的「資料模型物件」索引標籤中使用結構描述元素，所有欄位也會新增到新建立的Adaptive Form。
+   * **JSON結構描述**： [JSON結構](adaptive-form-json-schema-form-model.md) 代表組織中的後端系統產生或使用資料的結構。 您可以將結構描述與最適化表單相關聯，並使用其元素將動態內容新增到最適化表單。編寫Adaptive Forms時，可在內容瀏覽器的「資料模型物件」索引標籤中使用結構描述元素，所有欄位也會新增到新建立的Adaptive Form。
 
    預設會選取資料模型的所有欄位。 建立最適化表單時，所有選取的資料模型欄位都會轉換為對應的最適化表單元件。 精靈會提供核取方塊，讓您僅選取應包含在調適型表單中的欄位。
 

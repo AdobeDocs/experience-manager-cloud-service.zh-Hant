@@ -5,14 +5,20 @@ feature: Adaptive Forms
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 8eeb9c5e-6866-4bfe-b922-1f028728ef0d
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '1228'
-ht-degree: 3%
+source-wordcount: '1248'
+ht-degree: 5%
 
 ---
 
 # 為最適化表單設計 JSON 綱要 {#creating-adaptive-forms-using-json-schema}
+
+| 版本 | 文章連結 |
+| -------- | ---------------------------- |
+| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/adaptive-form-json-schema-form-model.html) |
+| AEM as a Cloud Service  | 本文 |
+
 
 ## 必備條件 {#prerequisites}
 
@@ -635,7 +641,7 @@ Here is the sample JSON code for previously mentioned examples.
    <td><p><strong> 結構描述屬性</strong></p> </td>
    <td><p><strong>資料類型</strong></p> </td>
    <td><p><strong>說明</strong></p> </td>
-   <td><p><strong>Component</strong></p> </td>
+   <td><p><strong>元件</strong></p> </td>
   </tr>
   <tr>
    <td><p><code>maximum</code></p> </td>

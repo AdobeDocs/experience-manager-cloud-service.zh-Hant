@@ -4,14 +4,19 @@ seo-title: Configure Out of Office settings
 description: RConfigure外出設定
 seo-description: Configure Out of Office settings
 exl-id: c7e436f1-8e1c-4334-b3dc-ab9800695301
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '799'
-ht-degree: 0%
+source-wordcount: '819'
+ht-degree: 1%
 
 ---
 
 # 設定「外出」設定 {#configure-out-of-office-settings}
+
+| 版本 | 文章連結 |
+| -------- | ---------------------------- |
+| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/configure-out-of-office-settings.html) |
+| AEM as a Cloud Service  | 本文 |
 
 如果您計畫不在辦公室，則可以指定在該期間指定給您的料號有何變更。
 
@@ -28,7 +33,6 @@ ht-degree: 0%
 >* 當您關閉「外出」設定時，委派的專案不會自動指派回您。 您可以使用索賠功能來指定料號給您。
 >* 當使用者A將專案委派給使用者B，而使用者B進一步委派給使用者C，則專案僅被指派給使用者C，而不是使用者B。
 >* 當指派中有回圈時，任務會保留為原始使用者。 例如，當使用者A將專案委派給使用者B當使用者B將專案委派給使用者C、使用者C將專案委派給使用者D，而使用者D將專案委派給使用者B時，系統會建立一個回圈。 在此情況下，專案仍會保留為原始使用者。 在上述範例中，使用者A為原始使用者。
-
 
 ## 為您的帳戶啟用「外出」設定 {#enable-out-of-office}
 

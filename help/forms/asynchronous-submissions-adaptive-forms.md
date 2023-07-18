@@ -5,14 +5,21 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 026f4920-f8f9-4b08-b1b0-af50229633d7
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '728'
-ht-degree: 0%
+source-wordcount: '748'
+ht-degree: 1%
 
 ---
 
 # 非同步提交最適化Forms {#asynchronous-submission-of-adaptive-forms}
+
+
+| 版本 | 文章連結 |
+| -------- | ---------------------------- |
+| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/asynchronous-submissions-adaptive-forms.html) |
+| AEM as a Cloud Service  | 本文 |
+
 
 傳統上，網路表單會設定為同步提交。 在同步提交中，當使用者提交表單時，系統會將他們重新導向至認可頁面、感謝頁面，或在提交失敗的情況下重新導向至錯誤頁面。 不過，單頁應用程式等現代網頁體驗越來越熱門，這是因為網頁在背景執行使用者端與伺服器互動時，網頁會維持靜態。 您可以設定非同步提交，透過Adaptive Forms提供此體驗。
 

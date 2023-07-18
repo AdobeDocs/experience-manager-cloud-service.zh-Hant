@@ -3,14 +3,20 @@ title: AEM 6.5 Forms與AEM Cloud Services之間的差異
 description: 您是Experience Manager Forms使用者，且想要升級至Adobe Experience Manager Formsas a Cloud Service嗎？ 比較AEM 6.5 Forms和AEM Cloud Services，並在升級或移轉至Cloud Service之前瞭解最顯著的變更。
 exl-id: 46fcc1b4-8fd5-40e1-b0fc-d2bc9df3802e
 contentOwner: khsingh
-source-git-commit: fce6a3dff4136aa9ea94f5fdd03dd7a6341b8a9d
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '1417'
-ht-degree: 1%
+source-wordcount: '1436'
+ht-degree: 2%
 
 ---
 
 # 現有Adobe Experience Manager 6.5 Forms使用者的重大變更  {#notable-changes-for-existing-AEM-Forms-users}
+
+| 版本 | 文章連結 |
+| -------- | ---------------------------- |
+| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/home.html) |
+| AEM as a Cloud Service  | 本文 |
+
 
 與Adobe Experience Manager Forms On-Premise和Adobe Experience Manager Forms相比，as a Cloud Service對現有功能進行了一些重大變更。 [!DNL Adobe-Managed Service] 環境。 主要差異列示如下：
 

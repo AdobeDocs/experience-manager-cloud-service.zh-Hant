@@ -2,10 +2,10 @@
 title: 最適化表單中的重複性（核心元件）
 description: 使用面板元件的重複特性以最適化表單重複類似的區段。
 role: Architect, Developer, Admin, User
-source-git-commit: bf45e7b935c3e57c2ecf77d9391abda80ee4a761
+source-git-commit: f7f30545b76afa6abd4f49316d0fb2245f5470c2
 workflow-type: tm+mt
 source-wordcount: '1410'
-ht-degree: 1%
+ht-degree: 5%
 
 ---
 
@@ -97,6 +97,7 @@ ht-degree: 1%
    * 若要建立刪除面板按鈕，請指定 `this.panel.instanceManager.removeInstance(this.panel.instanceIndex)`
 
    按一下&#x200B;**「完成」**。
+>[!VIDEO](https://video.tv.adobe.com/v/3421620/adaptive-forms-repeatable-sections)
 
 >[!NOTE]
 >

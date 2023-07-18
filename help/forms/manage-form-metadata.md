@@ -4,14 +4,19 @@ seo-title: Manage [!DNL AEM Forms] metadata
 description: 中繼資料可讓您更輕鬆地分類及組織資產，並協助尋找特定資產的使用者。
 seo-description: Metadata allows for easier categorization and organization of assets and helps users who are looking for a specific asset.
 exl-id: 8527246a-37f0-4d43-a49e-1c76c265514e
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '1658'
-ht-degree: 2%
+source-wordcount: '1678'
+ht-degree: 3%
 
 ---
 
 # 新增、移除或編輯最適化表單的中繼資料 {#manage-form-metadata}
+
+| 版本 | 文章連結 |
+| -------- | ---------------------------- |
+| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/manage-administer-aem-forms/manage-form-metadata.html) |
+| AEM as a Cloud Service  | 本文 |
 
 中繼資料可讓您更輕鬆地分類及組織資產，並協助尋找特定資產的使用者。
 

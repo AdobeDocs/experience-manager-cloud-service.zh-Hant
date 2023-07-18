@@ -2,14 +2,19 @@
 title: 建立並使用主題來風格化最適化表單
 description: 您可以使用主題來風格化最適化表單並提供視覺身分。 您可以在任何數量的Adaptive Forms中共用主題。
 exl-id: 99c3d1f7-5756-49d2-98ee-72dd62063110
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '5499'
+source-wordcount: '5519'
 ht-degree: 1%
 
 ---
 
 # 建立和使用主題 {#creating-and-using-themes}
+
+| 版本 | 文章連結 |
+| -------- | ---------------------------- |
+| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/themes.html) |
+| AEM as a Cloud Service  | 本文 |
 
 您可以建立並套用主題，使最適化表單風格化<!-- or an interactive communication-->. 主題包含元件和面板的樣式詳細資訊。 樣式包含背景顏色、狀態顏色、透明度、對齊方式及大小等屬性。 套用主題時，指定的樣式會反映在相應的元件上。 主題可獨立管理，不需參考最適化表單<!-- or interactive communication -->.
 
