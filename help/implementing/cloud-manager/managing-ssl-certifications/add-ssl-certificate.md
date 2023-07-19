@@ -3,9 +3,9 @@ title: 正在新增 SSL 憑證
 description: 了解如何使用 Cloud Manager 的自助服務工具新增您自己的 SSL 憑證。
 exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '571'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
@@ -45,15 +45,15 @@ SSL 憑證文件必須是 PEM 格式才能與 Cloud Manager 一起安裝。PEM �
 
 依照以下步驟使用 Cloud Manager 新增憑證。
 
-1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選擇適當的組織和計劃。
+1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選擇適當的組織和計畫。
 
 1. 從&#x200B;**概覽**&#x200B;頁面瀏覽&#x200B;**環境**&#x200B;畫面。
 
-1. 從瀏覽面板點擊 **SSL 憑證**。包含任何現有SSL憑證詳細資訊的表格會顯示在主畫面上。
+1. 從瀏覽面板按一下 **SSL 憑證**。包含任何現有 SSL 憑證詳細資訊的表格會顯示在主畫面上。
 
    ![新增 SSL 憑證](/help/implementing/cloud-manager/assets/ssl/ssl-cert-1.png)
 
-1. 點擊新增 **SSL 憑證**&#x200B;開啟&#x200B;**新增 SSL 憑證**&#x200B;對話方塊。
+1. 按一下新增 **SSL 憑證**&#x200B;開啟&#x200B;**新增 SSL 憑證**&#x200B;對話方塊。
 
    * 在&#x200B;**憑證名稱**&#x200B;中輸入憑證名稱。
       * 這僅供參考，可以是任何有助於您輕鬆引用憑證的名稱。
@@ -61,11 +61,11 @@ SSL 憑證文件必須是 PEM 格式才能與 Cloud Manager 一起安裝。PEM �
 
    ![新增憑證對話方塊](/help/implementing/cloud-manager/assets/ssl/ssl-cert-02.png)
 
-   * 系統會顯示偵測到的任何錯誤。
+   * 會顯示偵測到的任何錯誤。
       * 您必須先解決所有錯誤，然後才能保存您的憑證。
-      * 另請參閱 [憑證錯誤](#certificate-errors) 一節，以進一步瞭解如何解決常見錯誤。
+      * 請參閱[憑證錯誤](#certificate-errors)章節以了解有關解決常見錯誤的更多資訊。
 
-1. 點擊&#x200B;**儲存**&#x200B;來儲存您的憑證。
+1. 按一下&#x200B;**儲存**&#x200B;來儲存您的憑證。
 
 儲存後，您將看到您的憑證在資料表中顯示為新的資料列。
 
@@ -73,7 +73,7 @@ SSL 憑證文件必須是 PEM 格式才能與 Cloud Manager 一起安裝。PEM �
 
 >[!NOTE]
 >
->使用者必須是 **業務負責人** 或 **部署管理員** 在Cloud Manager中安裝SSL憑證的角色。
+>使用者必須具有&#x200B;**業務負責人**&#x200B;或&#x200B;**部署管理員**&#x200B;角色，才能在 Cloud Manager 中安裝 SSL 憑證。
 
 ## 憑證錯誤 {#certificate-errors}
 
@@ -81,7 +81,7 @@ SSL 憑證文件必須是 PEM 格式才能與 Cloud Manager 一起安裝。PEM �
 
 ### 憑證政策 {#certificate-policy}
 
-如果您看到以下錯誤，請檢查憑證的原則。
+如果您看到以下錯誤，請檢查您的憑證政策。
 
 ```text
 Certificate policy must conform with EV or OV, and not DV policy.
@@ -153,7 +153,7 @@ openssl rsa -noout -modulus -in ssl.key | openssl md5
 
 >[!NOTE]
 >
->這兩個命令的輸出必須完全相同。如果您找不到符合的私密金鑰， `main/server` 憑證，您需要透過產生新的CSR和/或向SSL供應商請求更新的憑證來重新加密憑證。
+>這兩個命令的輸出必須完全相同。如果您找不到匹配的私鑰`main/server`憑證，您需要透過產生新的 CSR 和/或向您的 SSL 供應商請求更新的憑證來重新加密憑證。
 
 ### 憑證有效期 {#certificate-validity-dates}
 
