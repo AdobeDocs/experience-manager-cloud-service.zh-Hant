@@ -1,10 +1,10 @@
 ---
-title: 佈建程序 - 總覽
-description: 佈建程序 - 總覽
+title: 佈建程序 - 概觀
+description: 佈建程序 - 概觀
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '330'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -34,7 +34,7 @@ ht-degree: 95%
 ![processoverview.jpg](assets/processOverview.jpg)
 
 
-如需詳細資訊，請參閱 [在Experience League上開始使用Experience Manageras a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/home.html?lang=zh-Hant).
+若要了解更多資訊，請參閱 [Experience League 上的 Experience Manager as a Cloud Service 入門](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/home.html?lang=zh-Hant)。
 
 ### 資源和連結
 
@@ -52,7 +52,7 @@ ht-degree: 95%
 ![processoverview2.jpg](assets/processOverview2.jpg)
 
 * 系統管理員：
-   * 配置 AEM 程序和環境。
+   * 配置 AEM 計畫和環境。
    * 瀏覽到 Admin Console 以執行管理任務。
    * 聲明一個網域以確認相應網域的所有權
    * 設定使用者目錄。
