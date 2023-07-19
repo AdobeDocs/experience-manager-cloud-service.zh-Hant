@@ -2,16 +2,16 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2023.4.0 版發行說明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2023.4.0 版發行說明。'
 source-git-commit: 104065f208adf9bcc8e6a090b224517a7904f5f9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1171'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
 
 # [!DNL Adobe Experience Manager] as a Cloud Service 2023.4.0 版發行說明 {#release-notes}
 
-以下章節會概述 [!DNL Experience Manager] as a Cloud Service 2023.4.0 版的功能發行說明。
+以下章節概述 [!DNL Experience Manager] as a Cloud Service 2023.4.0 版的功能發行說明。
 
 >[!NOTE]
 >
@@ -37,14 +37,14 @@ ht-degree: 87%
 
 ### [!DNL Experience Manager Sites] 中的新功能 {#sites-features}
 
-* 以JSON格式將內容片段從AEMas a Cloud Service匯出至Adobe Target，並在Target中建立對應的JSON選件。
+* 將 AEM as a Cloud Service 中的內容片段以 JSON 格式匯出到 Adobe Target，並在 Target 中建立對應的 JSON 選件。
 * 支援 GraphQL 分頁和排序，以及內部快取增強功能，現在可協助提升分離的用戶端應用程式在使用複雜 GraphQL 查詢和篩選器從 AEM 擷取大型內容集時的工作效能。
 
 ### [!DNL Experience Manager Sites] 發行前版本的新功能 {#prerelease-sites}
 
 * 內容片段及其參考資料現在可以發佈到 [AEM 預覽服務](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=zh-Hant#access-preview-service) (使用[內容片段主控台](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=zh-Hant))，讓使用者在上線前可在分離的預覽應用程式上先預覽最終體驗。
-* 現在可以使用AEM GraphQL在Headless案例中針對Web傳送動態最佳化影像。 [查詢變數](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/images.html?lang=en#query-variables) 可在GraphQL查詢中定義，以允許分離的使用者端應用程式從AEM請求對應的最佳化影像。
-* 上的標籤 [內容片段變數](https://experienceleague.adobe.com/docs/experience-manager-65/assets/content-fragments/content-fragments-variations.html?lang=en) 現在可以使用AEM GraphQL內容傳送API輸出到JSON。
+* 現在可以使用 AEM GraphQL 在 Headless 情境下，動態最佳化影像以進行 Web 傳遞。[查詢變數](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/images.html?lang=en#query-variables)可以在 GraphQL 查詢中定義，以允許分離的用戶端應用程式相應地要求 AEM 中的最佳化影像。
+* 現在可以使用 AEM GraphQL 內容傳遞 API 將[內容片段變化](https://experienceleague.adobe.com/docs/experience-manager-65/assets/content-fragments/content-fragments-variations.html?lang=en)上的標記輸出至 JSON。
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -77,11 +77,11 @@ ht-degree: 87%
 
 ### [!DNL Forms] 中可用的新功能 {#new-features-available-in-channel}
 
-* **[將最適化表單提交至 Microsoft® SharePoint 和 Microsoft® OneDrive](/help/forms/configuring-submit-actions.md)**：改善商業用戶的敏捷性，以便快速啟動新表單並將提交的資料儲存在日常使用的工具中，例如 Microsoft® SharePoint 網站或 OneDrive 資料夾。
+* **[將最適化表單提交至 Microsoft® SharePoint 和 Microsoft® OneDrive](/help/forms/configuring-submit-actions.md)**：改善商業使用者的敏捷性，以便快速啟動新表單並將提交的資料儲存在日常使用的工具中，例如 Microsoft® SharePoint 網站或 OneDrive 資料夾。
 
 ### [!DNL Forms] 發行前版本的功能 {#prerelease-features-forms}
 
-* [AEM 頁面編輯器中的最適化表單](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)：您現在可以使用 AEM 頁面編輯器快速建立多個表單，並將這些表單新增至您的 Sites 頁面。 此功能讓內容作者可使用最適化表單元件 (包括動態行為、驗證、資料整合、產生記錄文件和業務流程自動化) 的強大功能，在 Sites 頁面內建立順暢的資料擷取體驗。 您可以：
+* [AEM 頁面編輯器中的最適化表單](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)：您現在可以使用 AEM 頁面編輯器快速建立多個表單，並將這些表單新增至您的 Sites 頁面。此功能讓內容作者可使用最適化表單元件 (包括動態行為、驗證、資料整合、產生記錄文件和業務流程自動化) 的強大功能，在 Sites 頁面內建立順暢的資料擷取體驗。您可以：
 
    * 將表單元件拖放到 AEM Sites 編輯器或體驗片段中的最適化表單容器元件，即可建立最適化表單。
    * 使用 AEM Sites 編輯器中的最適化表單精靈，以便建立不屬於任何 Sites 頁面的表單，讓您能夠在多個頁面之間自由地重複使用這些表單。
@@ -89,15 +89,15 @@ ht-degree: 87%
 
      >[!VIDEO](https://video.tv.adobe.com/v/3419284?quality=12&learn=on)
 
-* [適用於政府的Adobe Acrobat Sign Solutions](/help/forms/adobe-sign-integration-adaptive-forms.md)：AEM Forms現在與適用於政府的Adobe Acrobat Sign Solutions整合。 這種整合能夠讓政府相關帳戶 (政府部門和機構) 在提交最適化表單時，享有等級更高的電子簽名合規性和安全性。
+* [適用於政府機關的 Adobe Acrobat Sign Solutions](/help/forms/adobe-sign-integration-adaptive-forms.md)：AEM Forms 現在與適用於政府機關的 Adobe Acrobat Sign Solutions 整合。這種整合能夠讓政府相關帳戶 (政府部門和機構) 在提交最適化表單時，享有等級更高的電子簽名合規性和安全性。
 
   藉由與政府適用之 Adobe Acrobat Sign 整合，在一些最重要的關鍵任務和敏感業務線，Adobe 的合作夥伴和政府客戶便可以在最適化表單使用電子簽名。這額外一層的安全性可確保所有電子簽名完全符合 FedRAMP 中等合規性，讓 Adobe 的政府客戶安心使用。
 
-* 增強規則編輯器中自訂錯誤處理常式的錯誤處理功能：您現在可以叫用自訂函式（使用使用者端程式庫）來回應外部服務傳回的錯誤，並為一般使用者提供量身打造的回應。 或者，您可以針對服務傳回的錯誤採取特定動作。例如，您可以針對特定錯誤程式碼在後端叫用自訂的工作流程，或通知客戶服務已關閉。
+* 使用規則編輯器中的自訂錯誤處理常式增強錯誤處理：您現在可以呼叫自訂函數 (使用用戶端資料庫) 來回應外部服務傳回的錯誤，並為一般使用者提供量身打造的回應。或者，您可以針對服務傳回的錯誤採取特定動作。例如，您可以針對特定錯誤程式碼在後端叫用自訂的工作流程，或通知客戶服務已關閉。
 
   此功能有助於引進標準型錯誤回應來提高整體的錯誤處理能力；這些回應向後相容於 OOTB 錯誤處理常式，且具有更大的彈性和控制性。
 
-### Headless 最適化表單早期採用者計劃 {#forms-early-adopter}
+### Headless 最適化表單早期採用者計畫 {#forms-early-adopter}
 
 使用 Headless 最適化表單讓您的開發人員能夠建立、發佈和管理可透過 API 存取和互動的互動式表單，而不是透過傳統的圖形使用者介面。Headless 最適化表單可協助您：
 
@@ -106,7 +106,7 @@ ht-degree: 87%
 * 在表單應用程式中重複使用您的專屬 UI 元件
 * 使用 Adobe Experience Manager Forms 的強大功能
 
-使用您的官方電子郵件 ID 寄送電子郵件至 `aem-forms-headless@adobe.com`，即可加入早期採用者計劃。
+使用您的官方電子郵件 ID 寄送電子郵件至 `aem-forms-headless@adobe.com`，即可加入早期採用者計畫。
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
