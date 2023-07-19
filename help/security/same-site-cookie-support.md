@@ -3,19 +3,19 @@ title: Adobe Experience Manager as a Cloud Service 的同網站 Cookie 支援
 description: Adobe Experience Manager as a Cloud Service 的同網站 Cookie 支援
 exl-id: 2cec7202-4450-456f-8e62-b7ed3791505c
 source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '283'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
 # Adobe Experience Manager as a Cloud Service 的同網站 Cookie 支援 {#same-site-cookie-support-for-adobe-experience-manager-as-a-cloud-service}
 
-從 80 版本開始，Chrome 和之後的 Safari 引入了一種新的 cookie 安全性模型。 此模式旨在透過稱為 `SameSite` 的設定在第三方網站的 Cookie 可用性方面引入安全性控制項。如需詳細資訊，請參閱本[文章](https://web.dev/samesite-cookies-explained/)。
+從 80 版本開始，Chrome 和之後的 Safari 引入了一種新的 cookie 安全性模型。此模式旨在透過稱為 `SameSite` 的設定在第三方網站的 Cookie 可用性方面引入安全性控制項。如需詳細資訊，請參閱本[文章](https://web.dev/samesite-cookies-explained/)。
 
 此設定的預設值 (`SameSite=Lax`) 可能會導致 AEM 執行個體或服務之間的驗證無法運作。這是因為這些服務的網域或 URL 結構可能不受此 cookie 原則的約束。
 
-若要解決此問題，您需要將SameSite Cookie屬性設定為 `None` 以取得登入權杖。
+為了解決這個問題，您需要針對登入權杖將 SameSite cookie 屬性設為 `None`。
 
 >[!CAUTION]
 >
@@ -36,4 +36,4 @@ ht-degree: 85%
 1. 按照[使用 AEM SDK 快速入門產生 OSGi 設定](/help/implementing/deploying/configuring-osgi.md#generating-osgi-configurations-using-the-aem-sdk-quickstart)中概述的步驟為此特定設定產生 JSON 格式設定
 1. 按照[用於設定屬性的 Cloud Manager API 格式](/help/implementing/deploying/configuring-osgi.md#cloud-manager-api-format-for-setting-properties) OSGi 文件中步驟來套用設定。
 
-更新此設定且使用者登出並再次登入後， `login-token` Cookie具有 `None` 屬性集，並包含在跨網站請求中。
+此設定一更新且使用者登出並再次登入後，`login-token` cookie 就會有 `None` 屬性集，並將包含在跨網站請求中。
