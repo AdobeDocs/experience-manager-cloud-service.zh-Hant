@@ -6,15 +6,15 @@ feature: Asset Compute Microservices,Workflow,Release Information,Asset Processi
 role: Architect,Admin
 exl-id: 1e069b95-a018-40ec-be01-9a74ed883b77
 source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '850'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
 # 使用資產微服務進行資產擷取和處理的概述 {#asset-microservices-overview}
 
-Adobe Experience Manager as a [!DNL Cloud Service] 提供雲端原生方法，以使用Experience Manager應用程式和功能。 這種新架構的關鍵要素之一是由資產微服務提供支援的資產擷取和處理。資產微服務使用雲端服務來提供可擴展和具恢復力的資產處理操作。Adobe 管理雲端服務以對不同的資產類型和處理選項進行最佳處理。雲端原生資產微服務的主要優勢是：
+Adobe Experience Manager as a [!DNL Cloud Service] 提供一種雲端原生方法可使用 Experience Manager 應用程式和功能。這種新架構的關鍵要素之一是由資產微服務提供支援的資產擷取和處理。資產微服務使用雲端服務來提供可擴展和具恢復力的資產處理操作。Adobe 管理雲端服務以對不同的資產類型和處理選項進行最佳處理。雲端原生資產微服務的主要優勢是：
 
 * 可擴展的架構，可無縫處理資源密集型操作。
 * 有效率地建立索引和擷取文字，不會影響 Experience Manager 環境的效能。
@@ -42,7 +42,7 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 
 * 用戶端 (例如網頁瀏覽器或 Adobe Asset Link) 向 [!DNL Experience Manager] 傳送上傳要求，並開始將二進位檔直接上傳到二進位檔雲端儲存空間。
 * 當直接二進位檔上傳完成時，用戶端會通知 [!DNL Experience Manager]。
-* [!DNL Experience Manager] 向資產微服務傳送處理要求。要求內容取決於 [!DNL Experience Manager] 中的處理描述檔設定，其指定要產生什麼轉譯。
+* [!DNL Experience Manager] 向資產微服務傳送處理要求。要求內容取決於 [!DNL Experience Manager] 中的處理設定檔設定，其指定要產生什麼轉譯。
 * 資產微服務後端接收要求，然後根據要求將其分派給一個或多個微服務。每個微服務直接從二進位檔雲端儲存空間存取原始二進位檔。
 * 處理結果 (例如轉譯) 儲存在二進位檔雲端儲存空間中。
 * Experience Manager 會收到處理已完成的通知，以及指向產生的二進位檔 (轉譯) 的直接指標。為上傳的資產所產生的轉譯可在 [!DNL Experience Manager] 中取得。
