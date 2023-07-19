@@ -3,9 +3,9 @@ title: Maven 專案版本處理
 description: 為了進行 AEM as a Cloud Service 的測試和生產部署，Cloud Manager 會產生一個唯一且遞增的版本。
 exl-id: 658bcbed-0733-45da-a3e3-9a5f817099c5
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '264'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 85%
 
 為了進行 AEM as a Cloud Service 的測試和生產部署，Cloud Manager 會產生一個唯一且遞增的版本
 
-此版本可見於 [管道執行詳細資訊頁面](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#view-details) 和活動頁面。 執行組建時，會更新 Maven 專案以使用此版本，並在 Git 存放庫中建立一個標記，且以該版本命名。
+在[管道執行詳細資訊頁面](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#view-details)和活動頁面上可看見此版本。執行組建時，會更新 Maven 專案以使用此版本，並在 Git 存放庫中建立一個標記，且以該版本命名。
 
 如果原始專案版本滿足特定條件，則更新後的 Maven 專案版本會將原始專案版本和 Cloud Manager 產生的版本合併。但上述標記則會一直使用產生的版本。為了讓這種合併發生，原始專案版本必須由三個版本區段組成，例如，`1.0.0` 或 `1.2.3`，而非 `1.0` 或 `1`，且原始版本的末尾不得為 `-SNAPSHOT`。
 
@@ -22,7 +22,7 @@ ht-degree: 85%
 >
 >必須在 Git 存放庫分支中的`<version>`頂層元素`pom.xml`檔案中以靜態方式設定此原始專案版本值。
 
-如果原始版本符合這些條件，則產生的版本會作為新版本區段附加到原始版本。 產生的版本也將受到微幅修改，以包括正確的排序和版本處理。例如，假設產生的版本 `2019.926.121356.0000020490` 會有以下結果。
+如果原始版本符合這些標準，則產生的版本會以新版本區段附加到原始版本。產生的版本也將受到微幅修改，以包括正確的排序和版本處理。例如，假設產生的版本 `2019.926.121356.0000020490` 會有以下結果。
 
 | 版本 | 在 `pom.xml` 中的版本 | 評論 |
 |---|---|---|
