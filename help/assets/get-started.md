@@ -4,9 +4,9 @@ description: 如何存取， [!DNL Assets view] 的登入體驗、支援的使�
 role: User, Leader
 exl-id: 7917b2a0-8340-4d94-aa6f-30ce986fa752
 source-git-commit: 88cbaae2ad8b610b8cd14b3ba0a92e7238ae8e9f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '390'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -59,7 +59,7 @@ Adobe 提供解決方案並將您組織的指定人員新增為管理員。管�
 
 * [觀看開始使用資產檢視的相關影片](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/getting-started.html)
 
-* 使用提供產品意見回饋 [!UICONTROL 意見反應] 「資產」檢視使用者介面中可用的選項
+* 使用資產檢視使用者介面所提供的[!UICONTROL 意見回饋]選項提供產品意見回饋
 
 * 若要提供文件意見回饋，請使用右側邊欄提供的[!UICONTROL 編輯此頁面]![來編輯頁面](assets/do-not-localize/edit-page.png)或[!UICONTROL 記錄問題]![來建立 GitHub 問題](assets/do-not-localize/github-issue.png)
 
