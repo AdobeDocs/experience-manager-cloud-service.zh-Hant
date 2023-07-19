@@ -3,9 +3,9 @@ title: AEM as a Headless CMS 內容模型 - 簡介
 description: 介紹使用 Adobe Experience Manager as a Cloud Service as a Headless CMS 的功能為您的專案建立內容模型。
 exl-id: 62061d73-6fdb-440b-a7dd-b0d530d49186
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '722'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -13,10 +13,10 @@ ht-degree: 92%
 
 在 [AEM Headless 內容架構師歷程](overview.md) 的這一部分中，您可以學習必要的 (基本) 概念和術語，以了解如何使用 Adobe Experience Manager (AEM) as a Cloud Service as a Headless CMS 建立內容模型。
 
-此文件可協助您了解無周邊內容傳遞、AEM 如何支援無周邊以及如何建立無周邊內容模型。閱讀本文件後，您應該：
+此文件可協助您了解 Headless 內容傳遞、AEM 如何支援 Headless 以及如何建立 Headless 內容模型。閱讀本文件後，您應該：
 
-* 了解無周邊內容傳遞的基本概念。
-* 熟悉 AEM 如何支援無周邊和內容模型。
+* 了解 Headless 內容傳遞的基本概念。
+* 熟悉 AEM 如何支援 Headless 和內容模型。
 
 ## 目標 {#objective}
 
@@ -25,7 +25,7 @@ ht-degree: 92%
 
 ## 全堆疊內容傳遞 {#full-stack}
 
-自易於使用的大型內容管理系統(CMS)興起以來，組織便將其用作管理傳訊、品牌和通訊的中心位置。 使用 CMS 做為管理體驗的中心點可以提升效率，因為就不需要在各個不同系統重複任務。
+自從易於使用的大型內容管理系統 (CMS) 興起以來，組織就將其作為管理訊息、品牌和通訊的中心位置。使用 CMS 做為管理體驗的中心點可以提升效率，因為就不需要在各個不同系統重複任務。
 
 ![傳統的全堆疊 CMS](/help/journey-headless/developer/assets/full-stack.png)
 
@@ -56,9 +56,9 @@ ht-degree: 92%
 
 ## 內容模型 {#content-modeling}
 
-內容模型 (也稱為資料模型) 是您的專長，那麼在建立無周邊模型時需要考慮什麼？
+內容模型 (也稱為資料模型) 是您的專長，那麼在建立 Headless 模型時需要考慮什麼？
 
-要讓無周邊應用程式能夠存取內容並對內容進行一些處理，內容確實需要具有預先定義的結構。您的內容可以採用自由格式，但會使應用程式&#x200B;*十分*&#x200B;不便。
+要讓 Headless 應用程式能夠存取內容並對內容進行一些處理，內容確實需要具有預先定義的結構。您的內容可以採用自由格式，但會使應用程式&#x200B;*十分*&#x200B;不便。
 
 對於 AEM，作為內容架構師，您將執行內容模型以設計一系列&#x200B;**內容片段模型**。這些定義了內容作者建立保留內容的&#x200B;**內容片段**&#x200B;時使用的結構。
 
@@ -66,11 +66,11 @@ ht-degree: 92%
 
 這更像是一個開發細節 - 但它可能會讓您感興趣，只是為了完成這個故事。
 
-在您建立內容片段模式，且您的作者已使用它們產生內容後，Headless應用程式將需要存取此內容。
+您建立內容片段模型後，並且您的作者已使用它們產生內容，Headless 應用程式將需要存取此內容。
 
 Adobe Experience Manager (AEM) as a Cloud Service 可以使用 AEM GraphQL API 選擇性地存取內容片段，以僅傳回所需的內容。使用 API，開發人員可以制定選取特定內容的查詢。此選取流程是根據&#x200B;*您的*&#x200B;內容片段模型進行的。
 
-這表示您的專案可以實現結構化內容的無周邊傳遞，以便用於您的應用程式中。
+這表示您的專案可以實現結構化內容的 Headless 傳遞，以便用於您的應用程式中。
 
 ## 下一步 {#whats-next}
 
