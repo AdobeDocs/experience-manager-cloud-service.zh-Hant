@@ -3,7 +3,7 @@ title: Adobe Experience Manager (AEM) as a Cloud Service 的發行說明。
 description: Adobe Experience Manager (AEM) as a Cloud Service 的發行說明。
 exl-id: 05b9e51f-467e-4c8e-baea-b1cf832597cd
 source-git-commit: 12dc95da58690284ade3963bf7e9336196062d3f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '643'
 ht-degree: 100%
 
@@ -24,7 +24,7 @@ ht-degree: 100%
 * [功能發行以可預測的每月頻率進行，並專注於新功能和產品創新。](/help/release-notes/release-notes-cloud/release-notes-current.md)
 * [維護發行會時常進行，並專注於安全性更新、錯誤修正和效能增強。](/help/release-notes/maintenance/latest.md)這可確保 [!DNL Adobe Experience Manager] as a Cloud Service 始終保持最新狀態並包含任何關鍵修正。
 
-除了創新的速度，[!DNL Adobe Experience Manager] as a Cloud Service 還提供了靈活性，可以在功能發行到生產環境之前提前整整一個月預覽即將推出的功能。這能讓您透過在您自己的自訂環境中測試功能來評估即將發行的版本對其組織的影響，並提前培訓/準備內部使用者。如果您有 AEM 附加元件，您可以通過在[程序設定](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)中選取解決方案來確保此附加元件也得到更新。
+除了創新的速度，[!DNL Adobe Experience Manager] as a Cloud Service 還提供了靈活性，可以在功能發行到生產環境之前提前整整一個月預覽即將推出的功能。這能讓您透過在您自己的自訂環境中測試功能來評估即將發行的版本對其組織的影響，並提前培訓/準備內部使用者。如果您有 AEM 附加元件，您可以通過在[計畫設定](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)中選取解決方案來確保此附加元件也得到更新。
 
 >[!NOTE]
 >
@@ -40,7 +40,7 @@ ht-degree: 100%
 ## 重要發行資訊 {#key-articles}
 
 * [功能發行說明](/help/release-notes/release-notes-cloud/release-notes-current.md)
-* [維護發行說明](/help/release-notes/maintenance/latest.md)
+* [維護版本發行說明](/help/release-notes/maintenance/latest.md)
 * [新增功能](what-is-new.md)
 * [重大變更](aem-cloud-changes.md)
 * [過時和移除的功能](deprecated-removed-features.md)
@@ -51,12 +51,12 @@ ht-degree: 100%
 |---|---|
 | [概觀](/help/overview/home.md) | 本指南提供 Experience Manager as a Cloud Service 概述，包括簡介、術語等等。 |
 | [安全性使用手冊](/help/security/home.md) | 了解 Experience Manager as a Cloud Service 與安全性相關的重要主題。 |
-| [入門歷程](/help/journey-onboarding/overview.md) | 本指南簡單扼要地說明如何開始使用 Experience Manager as a Cloud Service，包括如何取得存取權限和重要的資料保護資訊。 |
+| [上線歷程](/help/journey-onboarding/overview.md) | 本指南簡單扼要地說明如何開始使用 Experience Manager as a Cloud Service，包括如何取得存取權限和重要的資料保護資訊。 |
 | [Sites 使用手冊](/help/sites-cloud/home.md) | 了解如何使用及管理 Experience Manager Sites as a Cloud Service。 |
 | [Assets 使用手冊](/help/assets/home.md) | 了解如何使用及管理 Experience Manager Assets as a Cloud Service。 |
 | [轉移至 AEM as a Cloud Service ](/help/journey-migration/getting-started.md) | 了解轉換至雲端服務的過程。 |
 | [實作使用手冊](/help/implementing/home.md) | 透過探索這些開發和部署主題，了解如何使用 AEM 的強大功能建置和自訂體驗。 |
-| [Headless 開發人員歷程](/help/journey-headless/developer/overview.md) | 探索這趟引導式歷程，了解 AEM 強大且靈活的無周邊功能，為您的第一個無周邊專案做好準備。 |
+| [Headless 開發人員歷程](/help/journey-headless/developer/overview.md) | 探索這趟引導式歷程，了解 AEM 強大且靈活的 Headless 功能，為您的第一個 Headless 專案做好準備。 |
 | [連接器使用手冊](/help/connectors/home.md) | 了解如何將連接器與 Experience Manager as a Cloud Service 整合。 |
 | [操作使用手冊](/help/operations/home.md) | 了解 Experience Manager as a Cloud Service 後端的操作方式，例如製作索引和執行維護任務。 |
 | [Commerce 使用手冊](/help/commerce-cloud/home.md) | 了解 AEM as a Cloud Service 的商務整合框架。 |
