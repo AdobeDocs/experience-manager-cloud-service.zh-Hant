@@ -3,9 +3,9 @@ title: 存取 Admin Console
 description: 一旦您了解了上線所需的準備工作和 AEMaaCS 結構的基礎知識，您就可以首次登入 Admin Console 了。
 exl-id: 0ccce328-a356-4ba9-b7fe-f67abc25b924
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1107'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -30,9 +30,9 @@ Adobe Admin Console 是管理您的 Adobe 產品授權和使用者的中心位�
 
 ## Adobe ID {#adobe-id}
 
-若要登入 Admin Console，您需要一個 Adobe ID。Adobe ID 是與特定電子郵件地址綁定的帳戶，需要登入和存取 AEM as a Cloud Service 或您的任何 Adobe 解決方案。透過使用您的 Adobe ID，您可以將所有 Adobe 計劃和產品與一個帳戶相關聯。
+若要登入 Admin Console，您需要一個 Adobe ID。Adobe ID 是與特定電子郵件地址綁定的帳戶，需要登入和存取 AEM as a Cloud Service 或您的任何 Adobe 解決方案。透過使用您的 Adobe ID，您可以將所有 Adobe 計畫和產品與一個帳戶相關聯。
 
-當您作為系統管理員在Admin Console中設定您的團隊時，您會指定用作Adobe ID的電子郵件地址。
+當您作為系統管理員在 Admin Console 中設定您的團隊時，您指定作為 Adobe ID 的電子郵件地址。
 
 有三種不同類型的 Adobe ID：
 
@@ -50,15 +50,15 @@ Adobe Admin Console 是管理您的 Adobe 產品授權和使用者的中心位�
 
 1. 作為系統管理員，您將在上線流程中收到來自 Adobe 的多封電子郵件。查找提供有關您已被授予存取權限的組織名稱資訊的歡迎電子郵件。
 
-1. 點擊&#x200B;**開始使用**&#x200B;歡迎電子郵件中的鏈接以瀏覽到 Admin Console。如果找不到電子郵件，請直接打開瀏覽器存取 Admin Console，網址為 [`https://adminconsole.adobe.com`](https://adminconsole.adobe.com)。
+1. 按一下&#x200B;**開始使用**&#x200B;歡迎電子郵件中的鏈接以瀏覽到 Admin Console。如果找不到電子郵件，請直接打開瀏覽器存取 Admin Console，網址為 [`https://adminconsole.adobe.com`](https://adminconsole.adobe.com)。
 
    ![歡迎電子郵件](/help/journey-onboarding/assets/get-started-email.png)
 
-1. 使用 Adobe ID 登入。登入成功後會看到&#x200B;**總覽** Adobe Admin Console 頁面。
+1. 使用 Adobe ID 登入。登入成功後會看到&#x200B;**概觀** Adobe Admin Console 頁面。
 
    ![Admin Console](/help/journey-onboarding/assets/get-started1.png)
 
-1. 如果您擁有多個組織的存取權，請確定您已登入正確的組織。 若要變更您的組織，請按一下右上角的組織名稱，然後選擇您需要存取的所需組織。
+1. 如果您可以存取多個組織，確保您已登入正確的組織。要更改您的組織，請按一下右上角的組織名稱，然後選擇您需要存取的所需組織。
 
    ![變更組織](/help/journey-onboarding/assets/admin-console-orgswitch.png)
 
@@ -66,7 +66,7 @@ Adobe Admin Console 是管理您的 Adobe 產品授權和使用者的中心位�
 
    ![審視管理員](/help/journey-onboarding/assets/get-started2.png)
 
-1. 一旦你點擊&#x200B;**管理員**&#x200B;來自&#x200B;**使用者**&#x200B;卡，您可以透過輸入您的 Adobe ID 電子郵件、使用者名、名字或姓氏進行搜索。
+1. 一旦你按一下&#x200B;**管理員**&#x200B;來自&#x200B;**使用者**&#x200B;卡，您可以透過輸入您的 Adobe ID 電子郵件、使用者名、名字或姓氏進行搜索。
 
    ![搜尋使用者](/help/journey-onboarding/assets/get-started3.png)
 
@@ -107,7 +107,7 @@ AEM as a Cloud Service預配置了 Adobe Identity Management 系統 (也稱為 I
 
 如果您想要此上線歷程以外的內容，以下是您可選擇的其他資源。
 
-* [Admin Console 總覽](https://helpx.adobe.com/tw/enterprise/using/admin-console.html)- Admin Console 的全面總覽
+* [Admin Console 概觀](https://helpx.adobe.com/tw/enterprise/using/admin-console.html)- Admin Console 的全面概觀
 * [建立或更新您的 Adobe ID](https://helpx.adobe.com/tw/manage-account/using/create-update-adobe-id.html#HowtocreateorupdateyourAdobeID) - 了解如何建立、更改和管理多個 Adobe ID。
 * [SAML 2.0 身份驗證處理程序](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/saml-2-0-authenticationhandler.html?lang=zh-Hant)- AEM 附帶 SAML 身份驗證處理程序。此處理程序使用 HTTP POST 綁定提供對 SAML 2.0 身份驗證請求協議（Web-SSO 設定檔）的支援。
 * [管理職務](https://helpx.adobe.com/tw/enterprise/using/admin-roles.ug.html) - 使用 Adobe Admin Console，組織可以定義靈活的管理層次結構，以實現對 Adobe 產品存取和使用的精細管理。
