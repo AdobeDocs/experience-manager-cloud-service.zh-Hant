@@ -3,15 +3,15 @@ title: 編輯計畫
 description: 了解如何編輯您的生產和沙箱計畫，以在建立計畫後調整其選項。
 exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '520'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
 # 編輯計畫 {#editing-programs}
 
-具有必要許可權的使用者可以編輯 [在您的組織中建立的生產計畫](creating-production-programs.md) 和 [在您的組織中建立的沙箱計畫。](creating-sandbox-programs.md)透過編輯計畫，您可以：
+具有必要權限的使用者可以編輯[在您組織中建立的生產計畫](creating-production-programs.md)和[在您組織中建立的沙箱計畫。](creating-sandbox-programs.md)透過編輯計畫，您可以：
 
 * 使用 Assets 將 Sites 解決方案新增現有計畫中，反之亦然。
 * 從包含 Sites 和 Assets 的現有計畫中移除 Sites 和 Assets。
@@ -20,7 +20,7 @@ ht-degree: 88%
 
 ## 權限 {#permissions}
 
-您必須擁有&#x200B;**業務所有者**&#x200B;角色才能編輯計畫或刪除沙箱計畫。
+您必須擁有&#x200B;**業務負責人**&#x200B;角色才能編輯計畫或刪除沙箱計畫。
 
 ## 編輯方案 {#editing}
 
@@ -52,18 +52,18 @@ ht-degree: 88%
 
    ![編輯上線設定](assets/edit-program-go-live.png)
 
-   * 此日期僅供參考，並會觸發計畫總覽頁面上的上線小工具，即時提供產品內連結至 AEM as a Cloud Service 最佳實務文件，以符合您的歷程，最終達成成功且順暢的上線體驗。
-   * 沙箱程序沒有此索引標籤。
+   * 此日期僅供參考，並會觸發計畫概觀頁面上的上線小工具，即時提供產品內連結至 AEM as a Cloud Service 最佳實務文件，以符合您的歷程，最終達成成功且順暢的上線體驗。
+   * 沙箱計畫沒有此索引標籤。
 
 1. 按一下&#x200B;**更新**&#x200B;以儲存對計畫的變更。
 
 只要編輯計畫 (包括新增或移除解決方案或附加元件)，這些變更就會在下次部署後生效。
 
-如果您的生產計畫啟用了增強式安全性，則額外的 **增強式安全性** 標籤位於 **編輯計畫** 視窗，確認該功能對方案而言為使用中。
+如果您的生產計畫啟用了增強式安全性，則&#x200B;**編輯計畫**&#x200B;視窗中會提供額外的&#x200B;**增強式安全性**&#x200B;索引標籤，用來確認是否已對計畫啟用該功能。
 
 ![已對計畫啟用增強式安全性](assets/edit-program-enhanced.png)
 
-在建立計畫後，就無法修改此設定。如需有關增強式安全性選項的詳細資訊，請參閱 [建立生產計畫](creating-production-programs.md) 檔案。
+在建立計畫後，就無法修改此設定。如需有關增強式安全性選項的詳細資訊，請參閱[建立生產計畫](creating-production-programs.md)文件。
 
 ## 刪除沙箱計畫 {#delete-sandbox-program}
 
@@ -71,7 +71,7 @@ ht-degree: 88%
 
 >[!TIP]
 >
->具有&#x200B;**業務所有者**&#x200B;或&#x200B;**部署管理員**&#x200B;角色也可以刪除其生產和測試環境，而非整個沙箱計畫。
+>具有&#x200B;**業務負責人**&#x200B;或&#x200B;**部署管理員**&#x200B;角色也可以刪除其生產和中繼環境，而非整個沙箱計畫。
 
 請依照以下步驟刪除沙箱計畫。
 
@@ -83,7 +83,7 @@ ht-degree: 88%
 
    ![刪除計畫選項](assets/delete-sandbox1.png)
 
-您也可以在 Cloud Manager 總覽頁面按一下計畫卡上的省略符號按鈕，然後選擇&#x200B;**刪除計畫**。
+您也可以在 Cloud Manager 概觀頁面按一下計畫卡上的省略符號按鈕，然後選擇&#x200B;**刪除計畫**。
 
 ![從計畫卡中刪除沙箱](assets/delete-sandbox2.png)
 
