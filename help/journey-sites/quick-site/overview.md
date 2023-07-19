@@ -3,9 +3,9 @@ title: AEM 快速網站建立歷程
 description: 從這裡開始，此歷程會逐步引導您了解簡單易用的 AEM 快速網站建立工具，以簡化 AEM 網站的前端開發，並在沒有 AEM 後端知識的情況下快速自訂您的網站。
 exl-id: b8218232-0298-4b16-9dab-fa59be592a24
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1034'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 78%
 
 ## 簡介 {#introduction}
 
-AEM Sites 是用於建立和管理數位體驗的強大工具集。內容作者可以使用網站編輯器輕鬆建立數位體驗，並使用網站主控台組織內容，同時能夠即時檢視AEM跨頻道傳送給您的對象內容。
+AEM Sites 是用於建立和管理數位體驗的強大工具集。內容作者可以使用網站編輯器輕鬆建立數位體驗，並使用網站主控台組織內容，同時能夠查看 AEM 跨管道傳遞給您對象的即時內容。
 
 AEM 快速網站建立歷程工具可讓非開發人員使用網站範本從頭開始快速建立新網站。建立後，快速網站建立工具還可讓您快速為 AEM 網站自訂主題並建立風格 (JavaScript、CSS 和靜態資源)。這使得前端開發人員即使不懂 AEM 也能與內容建立者分開且並行工作。AEM 管理員只需下載網站主題並將其提供給前端開發人員，前端開發人員使用他們偏好的工具自訂主題，然後將變更提交到 AEM 程式碼存放庫，然後進行部署。
 
@@ -37,7 +37,7 @@ AEM 快速網站建立歷程工具可讓非開發人員使用網站範本從頭�
 
 ## 對象 {#audience}
 
-此歷程闡述自訂 AEM Sites 主題的要求、步驟和方法。主要對象是不需具備 AEM 知識的前端開發人員。但是，為了說明整個過程，歷程涉及管理員，他們假定具有基本AEM Sites和Cloud Manager知識。 在實務上，多個人可以擔任多個角色，此歷程以管理員和前端開發人員的角度出發。
+此歷程闡述自訂 AEM Sites 主題的要求、步驟和方法。主要對象是不需具備 AEM 知識的前端開發人員。但是，為了說明整個過程，該歷程涉及管理員，並假設他們具有基本的 AEM Sites 和 Cloud Manager 知識。在實務上，多個人可以擔任多個角色，此歷程以管理員和前端開發人員的角度出發。
 
 | 角色 | 說明 | 歷程中的角色 |
 |---|---|---|
@@ -52,20 +52,20 @@ AEM 快速網站建立歷程工具可讓非開發人員使用網站範本從頭�
 
 | # | 文章 | 說明 | 負責角色 |
 |---|---|---|--|
-| 0 | AEM 快速網站建立歷程  | 本文件 | AEM與Cloud Manager管理員 |
-| 1 | [瞭解Cloud Manager和快速網站建立工作流程](cloud-manager.md) | 瞭解Cloud Manager以及它如何將新的快速網站建立流程聯絡起來。 | AEM 管理員 |
-| 2 | [從範例建立網站](create-site.md) | 瞭解如何使用網站範本快速建立新的AEM網站。 | AEM 管理員 |
-| 3 | [設定您的管道](pipeline-setup.md) | 建立前端管道來管理網站主題的自訂。 | Cloud Manager 管理員 |
-| 4 | [授予前端開發人員存取權](grant-access.md) | 將前端開發人員載入Cloud Manager，以便他們能夠存取您的AEM網站Git存放庫和管道。 | Cloud Manager 管理員 |
-| 5 | [擷取 git 存放庫存取資訊](retrieve-access.md) | 瞭解前端開發人員如何使用Cloud Manager存取Git存放庫資訊。 | 前端開發人員 |
-| 6 | [自訂網站主題](customize-theme.md) | 瞭解如何建立網站主題、如何自訂，以及如何使用即時AEM內容進行測試。 | 前端開發人員 |
-| 7 | [部署您的自訂主題](deploy-theme.md) | 瞭解如何使用管道部署網站主題。 | 前端開發人員 |
+| 0 | AEM 快速網站建立歷程  | 本文件 | AEM &amp; Cloud Manager 管理員 |
+| 1 | [了解 Cloud Manager 和快速網站建立工作流程](cloud-manager.md) | 了解 Cloud Manager 以及它如何與新的快速網站建立流程繫結在一起。 | AEM 管理員 |
+| 2 | [從範例建立網站](create-site.md) | 解如何使用網站範本快速建立新的 AEM 網站。 | AEM 管理員 |
+| 3 | [設定您的管道](pipeline-setup.md) | 建立前端管道以管理網站主題的自訂。 | Cloud Manager 管理員 |
+| 4 | [授予前端開發人員存取權](grant-access.md) | 讓前端開發人員加入 Cloud Manager，以便能存取您的 AEM 網站 Git 存放庫和管道。 | Cloud Manager 管理員 |
+| 5 | [擷取 git 存放庫存取資訊](retrieve-access.md) | 了解前端開發人員如何使用 Cloud Manager 來存取 Git 存放庫資訊。 | 前端開發人員 |
+| 6 | [自訂網站主題](customize-theme.md) | 了解如何建立網站主題、如何自訂網站主題，以及如何使用即時 AEM 內容測試網站主題。 | 前端開發人員 |
+| 7 | [部署您的自訂主題](deploy-theme.md) | 了解如何使用管道部署網站主題。 | 前端開發人員 |
 
 ## 下一步 {#what-is-next}
 
 您現在已準備好開始您的 Adobe 快速網站建立歷程。
 
-* 如果您是AEM或Cloud Manager管理員、同時擔任前端開發人員和管理員角色，或者您只想瞭解AEM中的端對端流程，請從歷程的開頭開始 [瞭解Cloud Manager](cloud-manager.md) 如下所示。
+* 如果您是 AEM 或 Cloud Manager 管理員，或者如果您同時擔任前端開發人員和管理員角色，或者如果您只是想了解 AEM 中的端到端流程，請從歷程的開頭：[了解 Cloud Manager](cloud-manager.md) 開始進行。
 * 如果您只負責前端開發，會與 AEM 和 Cloud Manager 管理員互動，可以直接跳到[擷取 Git 存放庫存取權資訊](retrieve-access.md)，以取得 AEM Git 存放庫存取權並開始自訂。
 * 如果您已經了解 AEM Sites 和 Cloud Manager 如何協同運作，想直接開始設定，您可以[直接跳到從範本建立新網站。](create-site.md)
 
