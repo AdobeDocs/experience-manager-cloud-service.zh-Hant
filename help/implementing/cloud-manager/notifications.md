@@ -3,9 +3,9 @@ title: 通知
 description: 了解如何使用 Adobe Experience Cloud 通知系統接收有關管道部署的資訊。
 exl-id: c1c740b0-c873-45a8-9518-a856db2be75b
 source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '558'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -18,9 +18,9 @@ ht-degree: 96%
 
 [!UICONTROL Cloud Manager] 會在生產部署開始時在生產管道啟動和完成 (成功或不成功) 時傳送通知給您。
 
-這些通知會透過 [!UICONTROL Experience Cloud] 通知系統傳送給具有&#x200B;**企業所有者**、**計畫管理員**&#x200B;和&#x200B;**部署管理員**&#x200B;角色的使用者。
+這些通知會透過 [!UICONTROL Experience Cloud] 通知系統傳送給具有&#x200B;**業務負責人**、**計畫管理員**&#x200B;和&#x200B;**部署管理員**&#x200B;角色的使用者。
 
-通知會顯示在 [!UICONTROL Cloud Manager] 內的側邊欄中並遍及整個 Adobe [!UICONTROL Experience Cloud]。 當您有新通知時，標題中的鈴鐺圖示會出現標記。
+通知會顯示在 [!UICONTROL Cloud Manager] 內的側邊欄中並遍及整個 Adobe [!UICONTROL Experience Cloud]。當您有新通知時，標題中的鈴鐺圖示會出現標記。
 
 ![通知圖示](assets/notifications-bell-badged.png)
 
@@ -60,7 +60,7 @@ ht-degree: 96%
 
 ### 優先順序 {#priority}
 
-優先警示標有 **高** 標籤進行標籤，並可設定為僅以警報形式接收。 在&#x200B;**優先順序**&#x200B;區段中，您可以定義哪些類別符合優先通知的條件。
+優先警示會以&#x200B;**高**&#x200B;標記標註，並可設定為僅接收警示。在&#x200B;**優先順序**&#x200B;區段中，您可以定義哪些類別符合優先通知的條件。
 
 ![通知優先順序](assets/notifications-priority.png)
 
@@ -68,7 +68,7 @@ ht-degree: 96%
 
 ### 警示 {#alerts}
 
-警示會出現在視窗右上角幾秒鐘。 使用&#x200B;**警示**&#x200B;區段來定義您接收警示的通知。
+警示會出現在視窗右上角幾秒鐘。使用&#x200B;**警示**&#x200B;區段來定義您接收警示的通知。
 
 ![通知警示](assets/notifications-alerts.png)
 
