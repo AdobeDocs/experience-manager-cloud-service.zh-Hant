@@ -3,9 +3,9 @@ title: 了解如何在 AEM 中建立內容片段模型
 description: 了解使用內容片段模型建立 Headless CMS 內容模型的概念和機制。
 exl-id: fdfa79d3-fbed-4467-a898-c1b2678fc0cb
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '687'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -13,9 +13,9 @@ ht-degree: 84%
 
 ## 到目前為止 {#story-so-far}
 
-在[AEM Headless 內容作者歷程](overview.md)的一開始，[AEM Headless 內容模型基本知識](basics.md)介紹了和無周邊內容編寫相關的基本概念和術語。
+在[AEM Headless 內容作者歷程](overview.md)的一開始，[AEM Headless 內容模型基本知識](basics.md)介紹了和 Headless 內容編寫相關的基本概念和術語。
 
-本文以這些內容為基礎，以便您了解如何為 AEM 無周邊專案建立您自己的內容片段模型。
+本文以這些內容為基礎，以便您了解如何為 AEM Headless 專案建立您自己的內容片段模型。
 
 ## 目標 {#objective}
 
@@ -45,7 +45,7 @@ At the very start you need to enable Content Fragment Models for your site, this
 
 選取此選項後，導覽到模型的位置並選取&#x200B;**建立**。您可以在此處輸入各種關鍵詳細資料。
 
-依預設，**啟用模型**&#x200B;會啟動。這表示儲存模型後，您就可以立即使用（在建立內容片段中）。 如果需要可以停用 - 之後有機會可啟用 (或停用) 現有模型。
+依預設，**啟用模型**&#x200B;會啟動。這表示模型儲存後立即可供使用 (用於建立內容片段)。如果需要可以停用 - 之後有機會可啟用 (或停用) 現有模型。
 
 ![建立內容片段模型](/help/sites-cloud/administering/content-fragments/assets/cfm-models-02.png)
 
@@ -59,11 +59,11 @@ At the very start you need to enable Content Fragment Models for your site, this
 
 那麼 -該怎麼做？
 
-您可以拖曳的實體 **資料型別** 左側 — 您已定義您的模型！
+您可以將&#x200B;**資料類型**&#x200B;的執行個體拖曳到左側空間 - 您已經定義了模型！
 
 ![定義欄位](/help/sites-cloud/administering/content-fragments/assets/cfm-models-04.png)
 
-新增資料型別後，您需要定義 **屬性** 用於該欄位。 這些取決於所使用的類型。例如：
+新增資料類型後，您需要為該欄位定義&#x200B;**屬性**。這些取決於所使用的類型。例如：
 
 ![資料屬性](/help/sites-cloud/administering/content-fragments/assets/cfm-models-05.png)
 
@@ -73,7 +73,7 @@ At the very start you need to enable Content Fragment Models for your site, this
 
 ### 您的內容作者 {#your-content-authors}
 
-您的內容作者看不到您用來建立模型的實際資料型別和屬性。 這表示您可能必須提供相關協助和資訊讓他們完成特定欄位。對於基本資訊，您可以使用欄位標籤和預設值，但可能需要考慮更複雜案例的專案特定文件。
+您的內容作者看不到您用於建立模型的實際資料類型和屬性。這表示您可能必須提供相關協助和資訊讓他們完成特定欄位。對於基本資訊，您可以使用欄位標籤和預設值，但可能需要考慮更複雜案例的專案特定文件。
 
 >[!NOTE]
 >
@@ -96,7 +96,7 @@ At the very start you need to enable Content Fragment Models for your site, this
 
 >[!NOTE]
 >
->如果作者嘗試發佈模型尚未發佈的內容片段，選擇清單會指出這一點，模型會與片段一起發佈。
+>如果作者嘗試發佈模型尚未發佈的內容片段，選取清單會指出此情況，並且模型將與片段一起發佈。
 
 一旦模型發佈，就會被&#x200B;*鎖定*&#x200B;成作者的唯讀模式。這旨在防止可能導致現有 GraphQL 模式和查詢錯誤的變更，尤其是在發佈環境。它在主控台中顯示為&#x200B;**鎖定**。
 
