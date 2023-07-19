@@ -3,7 +3,7 @@ title: 如何設定最適化表單的提交動作
 description: 最適化表單提供多個提交動作。 提交動作會定義在提交後如何處理最適化表單。 您可以使用內建的提交動作或建立自己的提交動作。
 hide: true
 hidefromtoc: true
-source-git-commit: 8ac35abd1335b4e31a6dc0d8812cc9df333e69a4
+source-git-commit: ac9689a911be119ae53d5e1134595c567370b7c4
 workflow-type: tm+mt
 source-wordcount: '3366'
 ht-degree: 2%
@@ -12,17 +12,17 @@ ht-degree: 2%
 
 # 最適化表單提交動作 {#configuring-the-submit-action}
 
+<span class="preview"> Adobe建議使用核心元件 [將最適化Forms新增至AEM Sites頁面](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md) 或 [建立獨立的最適化Forms](/help/forms/creating-adaptive-form-core-components.md). </span>
+
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
 | AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html) |
 | AEM as a Cloud Service  | 本文 |
+| 套用至 | ✅最適化表單核心元件，❎ [最適化表單基礎元件](/help/forms/configuring-submit-actions.md) |
 
-**套用至**：✔️用最適化表單核心元件❌ [最適化表單基礎元件](/help/forms/configuring-submit-actions.md). Adobe建議使用核心元件 [將最適化Forms新增至AEM Sites頁面](create-or-add-an-adaptive-form-to-aem-sites-page.md) 或 [建立獨立的最適化Forms](creating-adaptive-form-core-components.md).
 
-提交動作可讓您選擇透過最適化表單擷取的資料目的地。 當使用者按一下 **[!UICONTROL 提交]** 最適化表單上的按鈕。
-
-Formsas a Cloud Service適用於建置在核心元件上的最適化Forms，提供一系列預先建置的提交動作。 這些現成的提交動作可讓您：
+提交動作可讓您選擇透過最適化表單擷取的資料目的地。 當使用者按一下 **[!UICONTROL 提交]** 最適化表單上的按鈕。 Formsas a Cloud Service適用於以核心元件為基礎的最適化Forms，提供一系列預先建立的提交動作。 這些現成的提交動作可讓您：
 
 * 透過電子郵件輕鬆傳送表單資料。
 * 在傳輸資料時啟動Microsoft Power Automate流程或AEM Workflow。
