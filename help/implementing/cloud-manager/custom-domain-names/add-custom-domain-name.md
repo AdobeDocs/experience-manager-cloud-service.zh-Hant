@@ -3,9 +3,9 @@ title: 新增自訂網域名稱
 description: 了解如何使用 Cloud Manager 新增自訂網域名稱。
 exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '560'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
@@ -18,13 +18,13 @@ ht-degree: 80%
 
 >[!NOTE]
 >
->使用者必須具備 **業務負責人** 或 **部署管理員** 在Cloud Manager中新增自訂網域名稱的角色
+>使用者必須具有&#x200B;**業務負責人**&#x200B;或&#x200B;**部署管理員**&#x200B;角色，才能在 Cloud Manager 新增自訂網域名稱。
 
 ## 從域設定頁面新增自訂網域名稱 {#adding-cdn-settings}
 
 按照以下步驟從&#x200B;**域設定**&#x200B;頁。
 
-1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織和方案。
+1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織和計畫。
 
 1. 從「**概觀**」頁面瀏覽到「**環境**」畫面。
 
@@ -32,7 +32,7 @@ ht-degree: 80%
 
    ![域設定窗口](/help/implementing/cloud-manager/assets/cdn/cdn-create.png)
 
-1. 點擊&#x200B;**新增域**&#x200B;右上角的按鈕打開&#x200B;**新增網域名稱**&#x200B;對話。
+1. 按一下&#x200B;**新增域**&#x200B;右上角的按鈕打開&#x200B;**新增網域名稱**&#x200B;對話。
 
    ![新增域對話框](/help/implementing/cloud-manager/assets/cdn/add-cdn1.png)
 
@@ -42,7 +42,7 @@ ht-degree: 80%
    >
    >不包括`http://`,`https://`, 或輸入您的域時的空格。
 
-1. 選取 **環境** 其服務與網域名稱相關聯。
+1. 選擇&#x200B;**環境**&#x200B;其服務與網域名稱相關聯。
 
 1. 選擇任一&#x200B;**發布**&#x200B;或者&#x200B;**預習**&#x200B;服務。
 
@@ -54,23 +54,23 @@ ht-degree: 80%
 
 CDN 部署需要有效的 SSL 憑證和成功的 TXT 驗證。這由狀態指示&#x200B;**驗證和部署**。
 
-另請參閱 [檢查自訂網域名稱狀態](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) 以進一步瞭解各種狀態以及如何解決潛在問題。
+請參閱[檢查自訂網域名稱狀態](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)，深入了解各種狀態以及如何解決潛在問題。
 
 >[!NOTE]
 >
 >由於 DNS 傳播延遲，DNS 驗證可能需要幾個小時才能完成。
 >
->Cloud Manager 將驗證所有權並更新可在域設定表中看到的狀態。另請參閱 [檢查自訂網域名稱狀態](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) 以取得更多詳細資料。
+>Cloud Manager 將驗證所有權並更新可在域設定表中看到的狀態。如需更多詳細資訊，請參閱[檢查自訂網域名稱狀態](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)。
 
 >[!TIP]
 >
->另請參閱 [新增TXT記錄](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md) 以進一步瞭解TXT記錄。
+>請參閱[新增 TXT 記錄](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md)，深入了解 TXT 記錄。
 
 ## 從環境頁面新增自訂網域名稱 {#adding-cdn-environments}
 
 按照以下步驟從&#x200B;**環境**&#x200B;頁面。
 
-1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織和方案。
+1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織和計畫。
 
 1. 從&#x200B;**環境**&#x200B;頁面，瀏覽到感興趣環境的詳細資訊畫面。
 
@@ -98,14 +98,14 @@ CDN 部署需要有效的 SSL 憑證和成功的 TXT 驗證。這由狀態指示
 
 CDN 部署需要有效的 SSL 憑證和成功的 TXT 驗證。這由狀態指示&#x200B;**驗證和部署**。
 
-另請參閱 [檢查自訂網域名稱狀態](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) 以進一步瞭解各種狀態以及如何解決潛在問題。
+請參閱[檢查自訂網域名稱狀態](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)，深入了解各種狀態以及如何解決潛在問題。
 
 >[!NOTE]
 >
 >由於 DNS 傳播延遲，DNS 驗證可能需要幾個小時才能完成。
 >
->Cloud Manager 將驗證所有權並更新可在域設定表中看到的狀態。另請參閱 [檢查自訂網域名稱狀態](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) 以取得更多詳細資料。
+>Cloud Manager 將驗證所有權並更新可在域設定表中看到的狀態。如需更多詳細資訊，請參閱[檢查自訂網域名稱狀態](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)。
 
 >[!TIP]
 >
->另請參閱 [新增TXT記錄](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md) 以進一步瞭解TXT記錄。
+>請參閱[新增 TXT 記錄](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md)，深入了解 TXT 記錄。
