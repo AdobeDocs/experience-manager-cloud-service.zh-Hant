@@ -5,9 +5,9 @@ feature: Onboarding
 role: Admin, User, Developer
 exl-id: 86700cce-139f-451e-9c21-b38b6332f773
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '579'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -50,9 +50,9 @@ ht-degree: 96%
 
 1. 瀏覽至 [`https://my.cloudmanager.adobe.com` Cloud Manager 登陸頁面的概覽頁面。](https://my.cloudmanager.adobe.com/)
 
-1. 從 Cloud Manager 中選擇程序&#x200B;**程序和產品**&#x200B;頁面啟動&#x200B;**總覽**&#x200B;頁。如果您不確定要存取哪個程序，請諮詢您的系統管理員。
+1. 從 Cloud Manager **計畫和產品**&#x200B;頁面選擇合適的計畫，以啟動&#x200B;**概觀**&#x200B;頁。如果您不確定要存取哪個計畫，請諮詢您的系統管理員。
 
-1. 來自&#x200B;**總覽** Cloud Manager 中的頁面，單擊來自&#x200B;**環境**&#x200B;卡片。
+1. 來自&#x200B;**概觀** Cloud Manager 中的頁面，按一下來自&#x200B;**環境**&#x200B;卡片。
 
    ![環境卡](/help/journey-onboarding/assets/author-environ.png)
 
@@ -71,7 +71,7 @@ ht-degree: 96%
 * 存取 Cloud Manager。
 * 登入 AEM as a Cloud Service 執行個體。
 
-恭喜！您現在已準備好創作和發布 AEM 內容。另請參閱 [其他資源](#additional-resources) 區段，瞭解更多有關如何在AEM中創作內容以及如何管理內容的詳細資訊。
+恭喜！您現在已準備好創作和發布 AEM 內容。請參閱[其他資源](#additional-resources)章節，深入了解如何在 AEM 中編寫內容以及如何管理內容。
 
 如果您對開發人員和部署管理員如何為 AEM as a Cloud Service建立和管理自訂應用程序感興趣，請繼續進入上線歷程的第二個可選部分，[ AEM 開發人員任務。](developers.md)
 
@@ -84,4 +84,4 @@ ht-degree: 96%
 如果您想要此上線歷程以外的內容，以下是您可選擇的其他資源。
 
 [創作頁面的快速入門指南](/help/sites-cloud/authoring/getting-started/quick-start.md) - 從此處開始，快速了解 AEM 中的創作基礎知識。
-[無頭創作之旅](/help/journey-headless/author/overview.md)- 如果您想創作無頭內容，請遵循此引導式介紹。
+[Headless 創作之旅](/help/journey-headless/author/overview.md)- 如果您想創作 Headless 內容，請遵循此引導式介紹。
