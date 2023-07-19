@@ -3,15 +3,15 @@ title: 為 AEM as a Headless CMS 編寫內容 - 簡介
 description: 介紹使用 Adobe Experience Manager as a Cloud Service as a Headless CMS 的功能為您的專案編寫內容。
 exl-id: 065b00cb-a82d-4bcb-b2c9-44542cee6303
 source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '664'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
 # 為 AEM as a Headless CMS 編寫內容 - 簡介 {#author-headless-introduction}
 
-在 [AEM Headless 內容作者歷程](overview.md)的這一部分中，您可以學習必要的 (基本) 概念和術語，以了解如何使用 Adobe Experience Manager (AEM) as a Cloud Service as a Headless CMS 編寫內容。這涉及架構和建立內容以進行無周邊內容傳遞。
+在 [AEM Headless 內容作者歷程](overview.md)的這一部分中，您可以學習必要的 (基本) 概念和術語，以了解如何使用 Adobe Experience Manager (AEM) as a Cloud Service as a Headless CMS 編寫內容。這涉及架構和建立內容以進行 Headless 內容傳遞。
 
 {{headless-trials-promotion}}
 
@@ -32,7 +32,7 @@ Headless 是一個術語，用於描述能夠有效地將內容與內容在 Web 
 
 傳統上，您會在 CMS 中管理內容，該 CMS 會負責將內容呈現在您的網頁上。
 
-現在，無周邊表示您的內容集可以在 CMS 中進行管理，然後由一個或多個 (獨立) 應用程式存取。
+現在， Headless 表示您的內容集可以在 CMS 中進行管理，然後由一個或多個 (獨立) 應用程式存取。
 
 這表示您的內容能以多種格式傳遞到任何裝置。這使整個流程更加靈活，也表示您無需擔心版面和格式。
 
@@ -49,19 +49,19 @@ Headless 是一個術語，用於描述能夠有效地將內容與內容在 Web 
 這表示它可以做為：
 
 * Headless CMS
-   * 若為無周邊，可將內容編寫為&#x200B;**內容片段**。
+   * 若為 Headless ，可將內容編寫為&#x200B;**內容片段**。
 這些是內容的獨立項目，可直接由各種應用程式存取，因為它們具有預先定義結構，以**內容片段模型**為基礎。
 這表示您的內容能以多種格式及內含多種功能呈現在多種裝置上。
 (作為一個雙重打擊，如果你想要的話，可以在建構 AEM 網頁時使用這些片段。)
 
 * 「傳統」CMS
-   * 系統會使用定義內容在網站上呈現方式的一系列元件，為網頁撰寫內容。 即使在這裡，AEM 也非常靈活，因為您的專案團隊可以開發自訂元件。
+   * 內容是為網頁編寫的，使用一系列元件來定義內容如何在您的網站上呈現。即使在這裡，AEM 也非常靈活，因為您的專案團隊可以開發自訂元件。
 
 ## 內容模型 {#content-modeling}
 
 所以內容模型 (也稱為資料模型) 是另一個技術性術語，您身為作者為什麼對它感興趣？
 
-為了讓無周邊應用程式可以存取您的內容並進行一些操作，您的內容確實需要有預先定義的結構。您的內容可以採用自由格式，但會使應用程式&#x200B;*十分*&#x200B;不便。
+為了讓 Headless 應用程式可以存取您的內容並進行一些操作，您的內容確實需要有預先定義的結構。您的內容可以採用自由格式，但會使應用程式&#x200B;*十分*&#x200B;不便。
 
 基本上，定義要遵循之內容結構的流程包含設計模型，這稱為資料模型。
 
