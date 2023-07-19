@@ -6,9 +6,9 @@ hide: false
 hidefromtoc: false
 exl-id: 3db2ff19-dc24-47b6-aa56-2ee2305fe045
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '931'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 91%
 
 ## 簡介 {#introduction}
 
-AEM Sites 是用於建立和管理數位體驗的強大工具集。內容作者可以使用網站編輯器輕鬆建立數位體驗，並使用網站主控台組織內容，同時能夠即時檢視AEM跨頻道傳送給您的對象內容。
+AEM Sites 是用於建立和管理數位體驗的強大工具集。內容作者可以使用網站編輯器輕鬆建立數位體驗，並使用網站主控台組織內容，同時能夠查看 AEM 跨管道傳遞給您對象的即時內容。
 
 AEM 提供同樣強大的工具來翻譯您的內容，使您能夠盡快將內容傳遞給其他區域或地區設定的對象。此文件歷程介紹了編寫工具，讓您了解如何在 AEM 中建立和管理內容，然後深入探討管理您自己的翻譯專案所需的知識。
 
@@ -47,7 +47,7 @@ AEM 提供同樣強大的工具來翻譯您的內容，使您能夠盡快將內�
 | 管理員 | 管理 AEM 的基本設定和配置 | 翻譯專家與管理員一起進行翻譯作業所需的設定變更，例如安裝翻譯連接器。 |
 | 內容架構師 | 分析必須作為網站傳遞之資料的要求並定義此資料的結構 | 翻譯專家與內容架構師一起定義內容的組織，以便輕鬆翻譯。 |
 
-此歷程的資訊當然對所有角色都有用，但有些資訊對於某些角色可能是多餘的。敬請期待 [即將推出的涵蓋其他角色的歷程](/help/journey-documentation/documentation-journeys.md#journeys).
+此歷程的資訊當然對所有角色都有用，但有些資訊對於某些角色可能是多餘的。請密切注意[即將到來、涵蓋其他角色的歷程](/help/journey-documentation/documentation-journeys.md#journeys)。
 
 ## Sites 翻譯歷程 {#the-journey}
 
@@ -73,8 +73,8 @@ AEM 提供同樣強大的工具來翻譯您的內容，使您能夠盡快將內�
 
 查看這些其他資源，進一步了解 AEM 的強大功能如何協同運作。
 
-* [Headless 編寫歷程](/help/journey-headless/author/overview.md) - 從這裡開始，此歷程會逐步引導您了解 AEM 強大且靈活的無周邊特性、其功能，以及如何在您的第一個無周邊專案中建立內容模型。
-* [Headless 架構師歷程](/help/journey-headless/architect/overview.md) - 從這裡開始介紹 Adobe Experience Manager as a Cloud Service 的強大、靈活、無周邊功能，以及如何為您的專案建立內容模型。
-* [AEM Headless開發人員歷程](/help/journey-headless/developer/overview.md)  — 從這裡開始，逐步引導您瞭解AEM強大且有彈性的無周邊功能、其功能，以及如何在您的第一個開發專案中使用這些功能。
-* [AEM as a Cloud Service 技術文件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html) - 如果您已經對 AEM 和無周邊技術有深入的了解，您可能想要直接查閱我們深入的技術文件。
+* [Headless 編寫歷程](/help/journey-headless/author/overview.md) - 從這裡開始，此歷程會逐步引導您了解 AEM 強大且靈活的 Headless 特性、其功能，以及如何在您的第一個 Headless 專案中建立內容模型。
+* [Headless 架構師歷程](/help/journey-headless/architect/overview.md) - 從這裡開始介紹 Adobe Experience Manager as a Cloud Service 的強大、靈活、 Headless 功能，以及如何為您的專案建立內容模型。
+* [AEM Headless 開發人員歷程](/help/journey-headless/developer/overview.md) - 從這裡開始，此歷程會逐步引導您了解 AEM 強大且靈活的 Headless 特性、其功能，以及如何在您的第一個開發專案中運用這些功能。
+* [AEM as a Cloud Service 技術文件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html) - 如果您已經對 AEM 和 Headless 技術有深入的了解，您可能想要直接查閱我們深入的技術文件。
 * [AEM Headless 教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html) - 如果您偏好做中學並為傾向技術，請加入我們的由 API 和框架組織的實作教學課程，其在探究如何建立和使用 AEM Headless 應用程式。
