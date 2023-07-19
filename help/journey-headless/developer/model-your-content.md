@@ -3,9 +3,9 @@ title: 如何建立內容模型
 description: 在 AEM Headless 開發人員歷程的這一部分中，了解如何使用內容模型和內容片段模型及內容片段，建立您的內容模型用於 AEM Headless 傳遞。
 exl-id: f052183d-18fd-4615-a81e-e45db5928fc1
 source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1830'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -15,16 +15,16 @@ ht-degree: 97%
 
 ## 到目前為止 {#story-so-far}
 
-一開始，[了解 CMS Headless 開發](learn-about.md)介紹無周邊內容傳遞以及使用它的原因。然後[AEM Headless as a Cloud Service 快速入門](getting-started.md)以您自己的專案而言描述 AEM Headless 如何運作。
+一開始，[了解 CMS Headless 開發](learn-about.md)介紹 Headless 內容傳遞以及使用它的原因。然後[AEM Headless as a Cloud Service 快速入門](getting-started.md)以您自己的專案而言描述 AEM Headless 如何運作。
 
-在 AEM 無周邊歷程的上一個文件「[踏上首次使用 AEM Headless 之路](path-to-first-experience.md)」中，您接著了解實作第一個專案所需的步驟。閱讀本文件後，您應該：
+在 AEM Headless 歷程的上一個文件「[踏上首次使用 AEM Headless 之路](path-to-first-experience.md)」中，您接著了解實作第一個專案所需的步驟。閱讀本文件後，您應該：
 
 * 了解設計內容的重要規劃考量事項
-* 了解根據您的整合層級要求實作無周邊的步驟。
+* 了解根據您的整合層級要求實作 Headless 的步驟。
 * 設定必要的工具和 AEM 設定。
-* 了解使您的無周邊歷程順暢、持續高效產生內容以及確保內容快速傳遞的最佳做法。
+* 了解使您的 Headless 歷程順暢、持續高效產生內容以及確保內容快速傳遞的最佳做法。
 
-本文章以這些基本知識為基礎，以便您了解如何準備您自己的 AEM 無周邊專案。
+本文章以這些基本知識為基礎，以便您了解如何準備您自己的 AEM Headless 專案。
 
 ## 目標 {#objective}
 
@@ -45,7 +45,7 @@ ht-degree: 97%
 
 *外面的世界很大很糟糕*。
 
-可能會，但也可能不會。 它當然是 ***複雜*** 「外部世界」和「資料模型」可用來定義非常（非常）小的子區段的簡化表示，使用特定目的所需的特定資訊。
+也許是，但也許不是。這肯定是一個&#x200B;***複雜***&#x200B;世界，資料模型用於定義一個非常 (極為) 小的子部分的簡化表示，使用特定目的所需的特定資訊。
 
 >[!NOTE]
 >
@@ -276,5 +276,5 @@ tbc...
    * [管理內容片段](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md) - 建立和編寫內容片段，此頁面將引領您到其他詳細章節
 * [AEM GraphQL 結構描述](access-your-content.md) - GraphQL 如何實現模型
 * [範例內容片段結構](/help/headless/graphql-api/sample-queries.md#content-fragment-structure-graphql)
-* [AEM Headless 快速入門](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) - 此為簡短的教學影片系列，概述如何使用 AEM 的無周邊功能，包括內容模型和 GraphQL
+* [AEM Headless 快速入門](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) - 此為簡短的教學影片系列，概述如何使用 AEM 的 Headless 功能，包括內容模型和 GraphQL
    * [GraphQL 模型基本概念](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/video-series/modeling-basics.html) - 了解如何在 Adobe Experience Manager (AEM) 中定義及使用內容片段以搭配 GraphQL 使用。
