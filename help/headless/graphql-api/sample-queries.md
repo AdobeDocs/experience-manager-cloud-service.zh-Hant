@@ -1,28 +1,28 @@
 ---
 title: 了解搭配使用 GraphQL 與 AEM - 範例內容和查詢
-description: 瞭解如何將GraphQL與AEM搭配使用，讓您透過探索範例內容和查詢來無頭提供內容。
+description: 透過探索範例內容和查詢，了解如何搭配使用 GraphQL 與 AEM 以提供 Headless 內容。
 feature: Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
 source-git-commit: 92c123817a654d0103d0f7b8e457489d9e82c2ce
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '1752'
+ht-degree: 100%
 
 ---
 
 # 了解搭配使用 GraphQL 與 AEM - 範例內容和查詢 {#learn-graphql-with-aem-sample-content-queries}
 
-瞭解如何將GraphQL與AEM搭配使用，讓您透過探索範例內容和查詢來無頭提供內容。
+透過探索範例內容和查詢，了解如何搭配使用 GraphQL 與 AEM 以提供 Headless 內容。
 
 >[!NOTE]
 >
->請閱讀本頁以及下列內容：
+>閱讀本頁以及以下內容：
 >
 >* [內容片段](/help/sites-cloud/administering/content-fragments/content-fragments.md)
 >* [內容片段模型](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
 >* [與內容片段搭配使用的 AEM GraphQL API](/help/headless/graphql-api/content-fragments.md)
 
-若要開始使用GraphQL查詢以及它們如何與AEM內容片段搭配使用，檢視一些實用的範例會有所幫助。
+若要開始使用 GraphQL 查詢，及了解它們如何與 AEM 內容片段搭配使用，查看一些實際範例會有所幫助。
 
 如需相關幫助，請參閱：
 
@@ -33,7 +33,7 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="aemcloud_headless_graphql_sample"
 >title="了解搭配使用 GraphQL 與 AEM - 範例內容和查詢"
->abstract="透過探索範例內容和查詢，了解如何搭配使用 GraphQL 與 AEM 以提供無周邊內容。"
+>abstract="透過探索範例內容和查詢，了解如何搭配使用 GraphQL 與 AEM 以提供 Headless 內容。"
 
 ## GraphQL - 使用範例內容片段結構的範例查詢 {#graphql-sample-queries-sample-content-fragment-structure}
 
@@ -41,7 +41,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->根據您的執行個體，您可以直接存取 [AEM GraphQL API隨附的GraphiQL介面](/help/headless/graphql-api/graphiql-ide.md) 用於提交和測試查詢。
+>視您的執行個體而定，您可以直接存取 [AEM GraphQL API 包含的 GraphiQL 介面](/help/headless/graphql-api/graphiql-ide.md)以提交和測試查詢。
 >
 >您可以從以下任一方式存取查詢編輯器：
 >
@@ -54,7 +54,7 @@ ht-degree: 0%
 
 ### 範例查詢 - 所有可用的綱要和資料類型 {#sample-all-schemes-datatypes}
 
-傳回全部 `types` 用於所有可用的結構描述。
+傳回所有可用結構描述的所有 `types`。
 
 **範例查詢**
 
@@ -147,7 +147,7 @@ ht-degree: 0%
 
 ### 範例查詢 - 關於所有城市的所有資訊 {#sample-all-information-all-cities}
 
-若要擷取有關所有城市的所有資訊，您可以使用以下基本查詢：
+若要擷取關於所有城市的所有資訊，您可以使用以下基本查詢：
 **範例查詢**
 
 ```graphql
@@ -158,7 +158,7 @@ ht-degree: 0%
 }
 ```
 
-執行時，系統會自動展開查詢以包含所有欄位：
+執行時，系統會自動擴展查詢以包括所有欄位：
 
 ```graphql
 {
@@ -230,7 +230,7 @@ ht-degree: 0%
 
 ### 範例查詢 - 所有城市的名稱 {#sample-names-all-cities}
 
-直接查詢可傳回 `name`中所有專案的 `city`結構描述。
+此簡單查詢可傳回 `city` 結構描述中所有項目的 `name`。
 
 **範例查詢**
 
@@ -280,7 +280,7 @@ query {
 
 ### 範例查詢 - 單一特定城市片段 {#sample-single-specific-city-fragment}
 
-用於傳回存放庫中特定位置單一片段專案詳細資料的查詢。
+此查詢可傳回存放庫中特定位置之單一片段項目的詳細資訊。
 
 **範例查詢**
 
@@ -321,7 +321,7 @@ query {
 
 ### 範例查詢 - 所有具有名稱變化的城市 {#sample-cities-named-variation}
 
-如果您建立名為「柏林中心」(`berlin_centre`)，適用於 `city` 柏林，則您可以使用查詢來傳回變數的詳細資訊。
+如果您為 `city` 柏林建立名為「柏林中心」(`berlin_centre`) 的變化，那麼您可以使用查詢傳回該變化的詳細資訊。
 
 **範例查詢**
 
@@ -366,8 +366,8 @@ query {
 
 如果您：
 
-* 建立各種標籤，已命名 `Tourism` ： `Business`， `City Break`， `Holiday`
-* 並將它們指派給各種變數的主變數 `City` 執行個體
+* 建立各種標記，名稱為 `Tourism`：`Business`、`City Break`、`Holiday`
+* 並將這些標記指派給各種 `City` 執行個體的主版變化
 
 接著您可以使用查詢傳回在 `city` 綱要中標記為「City Breaks」之所有項目的 `name` 和 `tags` 的詳細資料。
 
@@ -544,7 +544,7 @@ query {
 
 ### 範例查詢 - 所有名稱為「Jobs」或「Smith」的所有人員 {#sample-all-persons-jobs-smith}
 
-篩選所有專案的查詢 `persons` ，適用於任何擁有名稱的 `Jobs`或 `Smith`.
+此查詢會篩選所有名稱含 `Jobs` 或 `Smith` 的 `persons`。
 
 **範例查詢**
 
@@ -598,7 +598,7 @@ query {
 
 ### 範例查詢 - 所有名稱不為「Jobs」的人員 {#sample-all-persons-not-jobs}
 
-篩選所有專案的查詢 `persons` ，適用於任何擁有名稱的 `Jobs`或 `Smith`.
+此查詢會篩選所有名稱含 `Jobs` 或 `Smith` 的 `persons`。
 
 **範例查詢**
 
@@ -708,9 +708,9 @@ query {
 }
 ```
 
-### 範例查詢 — 德國或瑞士人口介於400000到999999之間的所有城市 {#sample-all-cities-d-ch-population}
+### 範例查詢 - 位於德國或瑞士且人口在 400000 到 999999 之間的所有城市 {#sample-all-cities-d-ch-population}
 
-在這裡篩選出一組欄位。 `AND` (隱含) 用於選擇 `population` 範圍，而 `OR` (明確) 用於選擇所需城市。
+這裡篩選了欄位組合。`AND` (隱含) 用於選擇 `population` 範圍，而 `OR` (明確) 用於選擇所需城市。
 
 **範例查詢**
 
@@ -1152,7 +1152,7 @@ query {
 
 ## 使用 WKND 專案的範例查詢 {#sample-queries-using-wknd-project}
 
-這些是根據 WKND 專案的範例查詢。它具有下列功能：
+這些是根據 WKND 專案的範例查詢。其具有以下：
 
 * 內容片段模型可在以下位置取用：
   `http://<hostname>:<port>/libs/dam/cfm/models/console/content/models.html/conf/wknd`
@@ -1163,7 +1163,7 @@ query {
 
 >[!NOTE]
 >
->由於結果可能會很龐大，此處不會重現。
+>因為結果可能很龐大，因此不在此處重現。
 
 ### 具有指定的屬性之特定模型的所有內容片段的範例查詢 {#sample-wknd-all-model-properties}
 
@@ -1251,12 +1251,12 @@ query {
 }
 ```
 
-### 給定模型之單一內容片段的範例查詢 {#sample-wknd-single-content-fragment-of-given-model}
+### 特定模型之單一內容片段的範例查詢 {#sample-wknd-single-content-fragment-of-given-model}
 
 此範例查詢會質詢：
 
 * 在特定路徑中類型為 `article` 的單一內容片段
-   * 該片段中的所有內容格式：
+   * 在該片段中，所有內容格式：
       * HTML
       * Markdown
       * 純文字
@@ -1315,7 +1315,7 @@ query {
 此查詢會質詢：
 
 * 在特定路徑中類型為 `article` 的單一內容片段
-   * 在該片段中，參照（巢狀）片段的路徑和作者
+   * 在該片段中，被參考 (巢狀) 片段的路徑和作者
 
 >[!NOTE]
 >
@@ -1446,7 +1446,7 @@ query {
 
 #### 具有附件之多個內容片段的範例查詢 {#sample-wknd-multiple-fragments-attachments}
 
-下列查詢會傳回全部 `attachments`  — 型別的特定欄位（子群組） `content-reference`：
+以下查詢傳回所有 `attachments` - 類型為 `content-reference` 的特定欄位 (子群組)：
 
 >[!NOTE]
 >
@@ -1533,12 +1533,12 @@ query {
 }
 ```
 
-### 給定模型的單一內容片段變化的範例查詢 {#sample-wknd-single-fragment-given-model}
+### 特定模型的單一內容片段變化的範例查詢 {#sample-wknd-single-fragment-given-model}
 
 此查詢會質詢：
 
 * 在特定路徑中類型為 `author` 的單一內容片段
-   * 在該片段中，與變數相關的資料： `another`
+   * 在該片段中，與變化相關的資料：`another`
 
 **範例查詢**
 
@@ -1556,7 +1556,7 @@ query {
 }
 ```
 
-### 給定模型之多個內容片段的名稱變化的範例查詢 {#sample-wknd-variation-multiple-fragment-given-model}
+### 特定模型之多個內容片段的名稱變化的範例查詢 {#sample-wknd-variation-multiple-fragment-given-model}
 
 此查詢會質詢：
 
@@ -1564,7 +1564,7 @@ query {
 
 >[!NOTE]
 >
->此查詢示範沒有 [變數](/help/headless/graphql-api/content-fragments.md#variations) 指定的名稱。
+>此查詢將針對沒有所指定名稱之[變化](/help/headless/graphql-api/content-fragments.md#variations)的內容片段，示範如何備援。
 
 **範例查詢**
 
@@ -1638,7 +1638,7 @@ query {
 }
 ```
 
-### 給定地區設定的多個內容片段的範例查詢 {#sample-wknd-multiple-fragments-given-locale}
+### 特定地區設定的多個內容片段的範例查詢 {#sample-wknd-multiple-fragments-given-locale}
 
 此查詢會質詢：
 
@@ -1696,7 +1696,7 @@ query {
 
 此查詢會質詢：
 
-* 最多包含五篇文章的結果頁面，從&#x200B;*完整*&#x200B;結果清單中的給定游標項目開始：
+* 最多包含五篇文章的結果頁面，從&#x200B;*完整*&#x200B;結果清單中的特定游標項目開始：
 
 **範例查詢**
 
@@ -1717,7 +1717,7 @@ query {
 }
 ```
 
-### 依_tags ID篩選並排除變數的範例查詢 {#sample-filtering-tag-not-variations}
+### 依 _tags ID 進行篩選並排除變化的範例查詢 {#sample-filtering-tag-not-variations}
 
 此查詢會質詢：
 
@@ -1752,7 +1752,7 @@ query {
 } 
 ```
 
-### 依_tags ID篩選並包含變數的範例查詢 {#sample-filtering-tag-with-variations}
+### 依 _tags ID 進行篩選並包含變化的範例查詢 {#sample-filtering-tag-with-variations}
 
 此查詢會質詢：
 
@@ -1805,7 +1805,7 @@ query {
 
 ### 範例內容片段結構 (綱要) {#sample-content-fragment-models-schemas}
 
-對於範例查詢，您可以使用以下內容模型及其相互關係（參照 — >）：
+對於範例查詢，您使用以下內容模型及其相互關係 (參考 ->)：
 
 * [公司](#model-company)
 -> [人員](#model-person)
