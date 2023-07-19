@@ -1,28 +1,28 @@
 ---
 title: 管理環境
-description: 瞭解您可以建立的環境型別，以及如何為您的Cloud Manager專案建立環境型別。
+description: 了解您可以建立的環境類型，以及如何為您的 Cloud Manager 專案建立環境類型。
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: e636a765cdc1be7cb0d385089e8ccc75b798844a
 workflow-type: tm+mt
-source-wordcount: '2274'
-ht-degree: 47%
+source-wordcount: '2558'
+ht-degree: 88%
 
 ---
 
 
 # 管理環境 {#managing-environments}
 
-瞭解您可以建立的環境型別，以及如何為您的Cloud Manager專案建立環境型別。
+了解您可以建立的環境類型，以及如何為您的 Cloud Manager 專案建立環境類型。
 
 ## 環境類型 {#environment-types}
 
 具有必要權限的使用者可以建立以下環境類型 (在特定租使用者可用的範圍內)。
 
-* **生產 + 測試** - 生產環境和測試環境組成一組使用，分別用於生產和測試目的。
+* **生產 + 測試** - 生產環境和中繼環境組成一組使用，分別用於生產和測試目的。
 
 * **開發** - 可以為開發和測試目的建立開發環境，也可以只與非生產管道相關聯。
 
-* **快速開發**  — 快速開發環境(RDE)可讓開發人員快速部署和檢閱變更，將測試經證實可在本機開發環境中運作的功能所需的時間減至最少。 另請參閱 [快速開發環境檔案](/help/implementing/developing/introduction/rapid-development-environments.md) 瞭解如何使用RDE的詳細資訊。
+* **快速開發** - 快速開發環境 (或簡稱 RDE) 可讓開發人員快速部署和查看變動情形，可大幅減少測試已證明可在本機開發環境中執行功能所需的時間。若要深入了解 RDE 的使用方法，請參閱[快速開發環境文件](/help/implementing/developing/introduction/rapid-development-environments.md)。
 
 各個環境的功能取決於環境[計畫](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)中啟用的解決方案。
 
@@ -33,7 +33,7 @@ ht-degree: 47%
 
 >[!NOTE]
 >
->生產和測試環境都是以一組建立。您不能只建立測試環境或只建立生產環境。
+>生產和測試環境都是以一組建立。您不能只建立一個測試環境或只建立一個生產環境。
 
 ## 新增一個環境 {#adding-environments}
 
@@ -41,7 +41,7 @@ ht-degree: 47%
 
 1. 按一下要新增環境的計畫。
 
-1. 從 **計畫總覽** 頁面，按一下 **新增環境** 於 **環境** 卡片以新增環境。
+1. 在「**計畫總覽**」頁面，按一下「**環境**」卡上的「**新增環境**」以新增環境。
 
    ![環境卡](assets/no-environments.png)
 
@@ -57,10 +57,10 @@ ht-degree: 47%
       * 可用/已使用環境的數量會顯示在環境類型名稱後面的括號中。
    * 提供環境&#x200B;**名稱**。
    * 提供環境&#x200B;**說明**。
-   * 如果您要新增 **生產+中繼** 環境，您必須提供生產和中繼環境的環境名稱和說明。
+   * 如果要新增 **生產 + 中繼** 環境，則必須為生產環境和中繼環境提供環境名稱和說明。
    * 從下拉清單中選取一個&#x200B;**主要區域**。
-      * 建立後無法變更主要區域。
-      * 根據您可用的權益，您或許可以設定 [多個區域](#multiple-regions).
+      * 主要區域建立後即無法變更。
+      * 依您的可用權益而定，您可以設定[多個區域](#multiple-regions)。
 
    ![新增環境對話框](assets/add-environment2.png)
 
@@ -70,7 +70,7 @@ ht-degree: 47%
 
 ## 多個發佈區域 {#multiple-regions}
 
-使用者具有 **業務負責人** 角色可以設定生產和測試環境，以便在主要區域之外包括最多三個額外的發佈區域。 額外的發佈區域可提高可用性。如需詳細資訊，請參閱[「額外發佈區域」文件](/help/operations/additional-publish-regions.md)。
+具有&#x200B;**業務負責人**&#x200B;角色的使用者可設定生產和中繼環境，除了主要區域外，最多可包含三個額外的發佈區域。額外的發佈區域可提高可用性。如需詳細資訊，請參閱[「額外發佈區域」文件](/help/operations/additional-publish-regions.md)。
 
 >[!TIP]
 >
@@ -78,30 +78,30 @@ ht-degree: 47%
 
 ### 將多個發佈區域新增至新環境 {#add-regions}
 
-新增環境時，您可以選擇設定主要區域以外的其他區域。
+新增環境時，除了主要區域外，您可以選擇設定額外區域。
 
 1. 選取&#x200B;**主要區域**。
-   * 建立環境後無法變更主要區域。
-1. 選取選項 **新增其他發佈區域** 和新的 **其他發佈區域** 選項下拉式清單隨即顯示。
-1. 在 **其他發佈區域** 從下拉式清單中選取額外的區域。
+   * 主要區域在環境建立後即無法變更。
+1. 選取「**新增額外發佈區域**」選項，一個新的「**額外發佈區域**」選項下拉式清單隨即出現。
+1. 在「**額外發佈區域**」下拉式清單中，選取一個額外區域。
 1. 選取區域會新增到下拉式清單下方以顯示其選取範圍。
-   * 點選或按一下 `X` ，以便取消選取。
-1. 從「 」中選取其他區域 **其他發佈區域** 下拉式清單，以新增其他區域。
+   * 點選或按一下所選區域旁邊的 `X`，即可將其取消選取。
+1. 從「**額外發佈區域**」下拉式清單中選取另一個區域，以新增另一個區域。
 1. 準備要建立環境時，點選或按一下「**儲存**」。
 
 ![選取多個區域](assets/select-multiple-regions.png)
 
-所選區域同時適用於生產和中繼環境。
+選取區域會同時套用至生產環境和中繼環境。
 
 如果您未指定任何額外區域，[您可以稍後在建立環境後再執行此步驟。](#edit-regions)
 
-如果您想要布建 [進階網路](/help/security/configuring-advanced-networking.md) 對於方案，建議先完成此布建，再使用Cloud Manager API將其他發佈區域新增到環境。 否則，其他發佈區域的流量會流經主要區域的Proxy。
+如果您想要針對計畫佈建[進階網路](/help/security/configuring-advanced-networking.md)，建議在使用 Cloud Manager API 將額外發佈區域新增至該環境之前完成佈建。否則，額外發佈區域的流量會通過主要區域的代理程式。
 
 ### 編輯多個發佈區域 {#edit-regions}
 
 如果您最初沒有指定任何額外區域，並且您擁有必要的權益，則可以在建立環境後再執行此步驟。
 
-您也可以移除額外發佈區域。但是，在一次異動中，您只能新增或移除區域。如果您必須新增一個區域並移除一個區域，請先新增、儲存變更，然後移除（反之亦然）。
+您也可以移除額外發佈區域。但是，在一次異動中，您只能新增或移除區域。如果您必須新增一個區域並移除一個區域，請先新增、儲存您的變更，然後再進行移除 (反之亦然)。
 
 1. 從計畫的「計畫概觀」主控台中，按一下生產環境的省略號按鈕並從選單中選取「**編輯**」。
 
@@ -115,19 +115,19 @@ ht-degree: 47%
 
 1. 點選或按一下「**儲存**」，以儲存變更。
 
-對生產環境所做的變更會同時套用至生產和中繼環境。 只能在生產環境中編輯對多個發佈區域的變更。
+對生產環境所做的變更會同時套用至生產和中繼環境。只能在生產環境中編輯對多個發佈區域的變更。
 
-如果您想要布建 [進階網路](/help/security/configuring-advanced-networking.md) 對於方案，建議先完成此布建，然後再將其他發佈區域新增到環境。 否則，其他發佈區域的流量會流經主要區域的Proxy。
+如果您想要針對計畫佈建[進階網路](/help/security/configuring-advanced-networking.md)，建議在將額外發佈區域新增至該環境之前完成佈建。否則，額外發佈區域的流量會通過主要區域的代理程式。
 
 ## 環境詳細資訊 {#viewing-environment}
 
-您可以使用 **環境** 卡片（在概覽頁面上）可透過兩種方式存取環境的詳細資訊。
+您可以使用總覽頁面上的&#x200B;**環境**&#x200B;卡以兩種方式存取環境詳細資訊。
 
-1. 從 **概觀** 頁面，按一下 **環境** tab鍵來切換畫面。
+1. 在「**總覽**」頁面，按一下畫面頂端的「**環境**」索引標籤。
 
    ![「環境」索引標籤](assets/environments-tab2.png)
 
-   * 或者，按一下 **全部顯示** 上的按鈕 **環境** 卡片直接跳至 **環境** 標籤。
+   * 或者，按一下「**環境**」卡上的「**全部顯示**」按鈕直接跳到「**環境**」索引標籤。
 
      ![顯示全部選項](assets/environment-showall.png)
 
@@ -135,7 +135,7 @@ ht-degree: 47%
 
    ![環境索引標籤](assets/environment-view-2.png)
 
-1. 按一下清單中的環境，即可顯示其詳細資訊。
+1. 按一下清單中的環境可以顯示其詳細資訊。
 
    ![環境詳細資訊](assets/environ-preview1.png)
 
@@ -145,47 +145,79 @@ ht-degree: 47%
 
 >[!NOTE]
 >
->新環境列在&#x200B;**環境**&#x200B;卡只會列出三個環境。按一下 **全部顯示** 如前所述，檢視計畫的所有環境。
+>新環境列在&#x200B;**環境**&#x200B;卡只會列出三個環境。如前所述，按一下「**顯示全部**」按鈕以查看計畫的所有環境。
 
 ### 存取預覽服務 {#access-preview-service}
 
-Cloud Manager為每個AEMas a Cloud Service環境提供預覽服務（作為額外發佈服務提供）。
+Cloud Manager 為每個 AEM as a Cloud Service 環境提供預覽服務 (作為額外發佈服務提供)。
 
 使用該服務，您可以在網站到達實際發佈環境並公開使用之前預覽網站的最終體驗。
 
-建立時，預覽服務套用預設的IP允許清單，標籤為 `Preview Default [<envId>]`，會封鎖所有流向預覽服務的流量。 從預覽服務中取消套用預設的IP允許清單，以便您可以啟用存取。
+建立後，預覽服務將套用預設的 IP 允許清單，標記為 `Preview Default [<envId>]`，其會封鎖所有流向預覽服務的流量。將預覽服務取消套用預設的 IP 允許清單才能啟用存取。
 
 ![預覽服務和其允許清單](assets/preview-ip-allow.png)
 
-具有必要許可權的使用者必須在共用預覽服務URL之前完成以下步驟，以確儲存取它。
+擁有必要權限的使用者必須在共用預覽服務 URL 之前完成以下步驟，以確保可以存取該 URL。
 
-1. 建立適當的IP允許清單，將其套用至預覽服務，然後立即取消套用 `Preview Default [<envId>]` 允許清單。
+1. 建立適當的 IP 允許清單，將其套用於預覽服務，然後立即取消套用 `Preview Default [<envId>]` 允許清單。
 
-   * 另請參閱 [套用和取消套用IP允許清單](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) 以取得更多詳細資料。
+   * 如需更多詳細資訊，請參閱[套用和取消套用 IP 允許清單](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)。
 
-1. 使用更新 **IP 允許清單**&#x200B;工作流程移除預設 IP，並依需要新增 IP。另請參閱 [管理IP允許清單](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md) 以深入瞭解。
+1. 使用更新 **IP 允許清單**&#x200B;工作流程移除預設 IP，並依需要新增 IP。如需詳細資訊，請參閱[管理 IP 允許清單](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md)。
 
 解鎖預覽服務的存取權後，預覽服務名稱前面的鎖定圖示不再顯示。
 
-啟動後，您可以使用 AEM 中的管理發佈 UI 將內容發佈到預覽服務。另請參閱 [預覽內容](/help/sites-cloud/authoring/fundamentals/previewing-content.md) 以取得更多詳細資料。
+啟動後，您可以使用 AEM 中的管理發佈 UI 將內容發佈到預覽服務。如需更多詳細資訊，請參閱[預覽內容](/help/sites-cloud/authoring/fundamentals/previewing-content.md)。
 
 >[!NOTE]
 >
->您的環境必須在 AEM 版本 `2021.05.5368.20210529T101701Z` 或更高版本才能使用預覽服務。請確定更新管道已在您的環境中成功執行，以便您可以使用預覽服務。
+>您的環境必須在 AEM 版本 `2021.05.5368.20210529T101701Z` 或更高版本才能使用預覽服務。確保更新管道已在您的環境中成功執行，如此即可使用預覽服務。
+
+### 其他發佈區域的狀態 {#additional-region-status}
+
+如果您已啟動其他發佈區域，則可以從 **環境** 卡片。
+
+1. 於 **概觀** 頁面，找到 **環境** 卡片。
+
+1. 於 **環境** 卡片， **狀態** 欄將反映設定的其他發佈區域是否有任何問題。 按一下 **資訊** 圖示以取得地區的詳細資訊。
+
+   ![環境卡上的其他發佈區域狀態資訊](assets/additional-publish-region-status-environments-card.png)
+
+或者，您也可以從以下位置存取相同的資訊： **環境** 標籤。
+
+1. 於 **概觀** 頁面，選取 **環境** 標籤。
+
+1. 於 **環境** 索引標籤中，在左側導覽面板中選取您要查詢的環境。
+
+1. 選取環境後：
+
+   * 此 **環境資訊** 此表格會顯示為所選環境設定的區域。
+   * 此 **狀態** 的欄 **環境區段** 此表格將反映設定的其他發佈區域是否存在任何問題。 將滑鼠指標暫留在狀態上即可檢視任何問題的詳細資訊。
+
+   ![環境標籤上的其他發佈區域狀態資訊](assets/additional-publish-region-status-environments-tab.png)
+
+如果針對其他發佈區域報告任何問題：
+
+1. 請耐心等候。 Cloud Manager將不斷嘗試復原區域，並且隨時可能可用。
+1. 如果數小時後問題仍然存在，您可以移除其他發佈區域，然後重新新增該區域（相同區域或其他區域），以觸發完整部署。
+
+您等待系統自行復原多久之後才採取其他動作，取決於該區域的失敗對系統造成的影響。
+
+請注意，無論如何， [流量一律會路由至另一個最接近的線上區域。](/help/operations/additional-publish-regions.md) 如果您持續遇到問題，請聯絡Adobe客戶服務。
 
 ## 更新環境 {#updating-dev-environment}
 
 作為雲端原生服務，Adobe 會自動管理生產計畫中的測試和生產環境的更新。
 
-但是，對開發環境和沙箱計畫中環境的更新是在計畫中管理的。 當這類環境未執行最新的公開AEM版本時， **環境** 卡在上 **概觀** 計畫的畫面顯示 **有可用的更新**.
+但開發環境更新和沙箱計畫中的環境更新是在計畫中管理的。當這類環境未執行最新的公開 AEM 版本時，計畫的&#x200B;**總覽**&#x200B;中&#x200B;**環境**&#x200B;卡上的狀態會顯示&#x200B;**可用更新**。
 
 ![環境更新狀態](assets/environ-update.png)
 
 ### 更新和管道 {#updates-pipelines}
 
-管道是將 [ 計劃碼部署到 AEM as a Cloud Service 環境的唯一途徑。](deploy-code.md)因此，每個管道都與特定的 AEM 版本相關聯。
+管道是將 [ 程式碼部署到 AEM as a Cloud Service 環境的唯一途徑。](deploy-code.md)因此，每個管道都與特定的 AEM 版本相關聯。
 
-如果Cloud Manager偵測到可用的AEM版本比上次使用管道部署時更新，則會顯示 **有可用的更新** 環境的狀態。
+如果 Cloud Manager 偵測到可用的 AEM 版本比上次使用的管道部署版本還新，它會顯示環境的&#x200B;**可用更新**&#x200B;狀態。
 
 因此，更新流程分為兩個步驟：
 
@@ -194,11 +226,11 @@ Cloud Manager為每個AEMas a Cloud Service環境提供預覽服務（作為額�
 
 ### 更新您的環境 {#updating-your-environments}
 
-此 **更新** 選項可從以下網址取得： **環境** 按一下環境的省略符號按鈕，在沙箱程式中用於開發環境和環境的卡片。
+按一下環境的省略符號按鈕，可以從「**環境**」卡中取得用於開發環境和沙箱計畫中環境的「**更新**」選項。
 
 ![更新環境卡的選項](assets/environ-update2.png)
 
-您也可以按一下 **環境** 索引標籤，然後選取環境的省略符號按鈕。
+也可以按一下計畫的「**環境**」索引標籤，然後選擇環境的省略符號按鈕來使用此選項。
 
 ![更新環境索引標籤的選項](assets/environ-update3.png)
 
@@ -216,50 +248,50 @@ Cloud Manager為每個AEMas a Cloud Service環境提供預覽服務（作為額�
 
 ## 刪除開發環境 {#deleting-environment}
 
-具有必要許可權的使用者可以刪除開發環境。
+具有必要權限的使用者可以刪除開發環境。
 
-從 **概觀** 上的程式畫面 **環境** 卡片上，按一下您要刪除之開發環境的省略符號按鈕。
+在「**環境**」卡上計畫的「**總覽**」畫面中，按一下要刪除的開發環境的省略符號按鈕。
 
 ![刪除選項](assets/environ-delete.png)
 
-刪除選項也可在計畫&#x200B;**總覽**&#x200B;視窗的&#x200B;**環境**&#x200B;索引標籤中找到。按一下環境的省略符號按鈕並選取 **刪除**.
+刪除選項也可在計畫&#x200B;**總覽**&#x200B;視窗的&#x200B;**環境**&#x200B;索引標籤中找到。按一下環境的省略符號按鈕，然後選擇「**刪除**」。
 
 ![環境索引標籤的刪除選項](assets/environ-delete2.png)
 
 >[!NOTE]
 >
->* 無法刪除在生產計畫中建立的生產和中繼環境。
+>* 不能刪除在生產計畫中建立的生產環境和中繼環境。
 >* 不能刪除在沙箱計畫中的生產和測試環境。
 
 ## 管理存取權 {#managing-access}
 
-從&#x200B;**環境**&#x200B;卡上環境的省略符號選單中選擇&#x200B;**管理存取權**。您可以直接瀏覽到作者執行個體，管理您環境的存取權。
+從&#x200B;**環境**&#x200B;卡上環境的省略符號選單中選擇&#x200B;**管理存取權**。您可以直接瀏覽到編寫執行個體，管理您環境的存取權。
 
 ![管理存取權選項](assets/environ-access.png)
 
 >[!TIP]
 >
->另請參閱 [AEMas a Cloud Service團隊和產品設定檔](/help/onboarding/aem-cs-team-product-profiles.md) 如果您想瞭解AEMas a Cloud Service團隊和產品設定檔如何能夠授與和限制您的授權Adobe解決方案的存取權。
+>如果您想要了解 AEM as a Cloud Service 團隊和產品設定檔如何授予和限制已授權 Adobe 解決方案的存取權，請參閱 [AEM as a Cloud Service 團隊和產品設定檔](/help/onboarding/aem-cs-team-product-profiles.md)。
 
-## 存取開發人員主控台 {#accessing-developer-console}
+## 存取 Developer Console  {#accessing-developer-console}
 
-從&#x200B;**環境**&#x200B;卡上環境的省略符號選單中選擇&#x200B;**開發人員主控台**。您的瀏覽器中會開啟一個新索引標籤，其中的「登入」頁面為 **開發人員主控台**.
+從&#x200B;**環境**&#x200B;卡上環境的省略符號選單中選擇&#x200B;**Developer Console**。瀏覽器中會開啟一個新索引標籤，其中包含&#x200B;**Developer Console**&#x200B;的登入頁面。
 
-![登入開發人員主控台](assets/environ-devconsole.png)
+![登入 Developer Console ](assets/environ-devconsole.png)
 
-僅限具有下列條件的使用者： **開發人員** 角色可以存取 **開發人員主控台**. 但是，對於沙箱計畫，任何有權存取沙箱計畫的使用者都可以存取 **開發人員主控台**.
+只有具有&#x200B;**開發人員**&#x200B;角色的使用者才能存取&#x200B;**Developer Console**。但是對於沙箱計畫，任何有權存取沙箱計畫的使用者都可以存取&#x200B;**Developer Console**。
 
-另請參閱 [使沙箱環境休眠和解除沙箱環境休眠](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-sandbox-programs.html#hibernation) 以取得更多詳細資料。
+如需更多詳細資訊，請參閱[休眠和去休眠沙箱環境](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-sandbox-programs.html#hibernation)。
 
 按一下個別環境的省略符號選單時，此選項也可從&#x200B;**總覽**&#x200B;視窗的&#x200B;**環境**&#x200B;索引標籤中使用。
 
 ## 本機登入 {#login-locally}
 
-選取 **本機登入** 從環境的省略符號選單 **環境** 卡片，方便您在本機登入Adobe Experience Manager。
+從&#x200B;**環境**&#x200B;卡中環境的省略符號選單中選擇&#x200B;**本機登入**，即可以本機登入到 Adobe Experience Manager。
 
 ![本機登入](assets/environ-login-locally.png)
 
-此外，您也可以從以下位置本機登入： **環境** 的標籤 **概觀** 頁面。
+此外，您可以從&#x200B;**總覽**&#x200B;頁面的&#x200B;**環境**&#x200B;索引標籤本機登入。
 
 ![從環境索引標籤本機登入](assets/environ-login-locally-2.png)
 
@@ -267,7 +299,7 @@ Cloud Manager為每個AEMas a Cloud Service環境提供預覽服務（作為額�
 
 Cloud Manager 支援 Sites 計畫的發佈和預覽服務的自訂網域名稱。每個 Cloud Manager 環境最多可以託管 250 個自訂網域。
 
-若要設定自訂網域名稱，請導覽至 **環境** 標籤並按一下環境以檢視環境詳細資訊。
+要設定自訂網域名稱，請瀏覽到「**環境**」索引標籤，然後按一下環境以查看環境詳細資訊。
 
 ![環境詳細資訊](assets/domain-names.png)
 
@@ -284,29 +316,29 @@ Cloud Manager 支援 Sites 計畫的發佈和預覽服務的自訂網域名稱�
 
 ## 管理 IP 允許清單 {#manage-ip-allow-lists}
 
-Cloud Manager支援IP允許清單，用於Sites計畫的作者、發佈和預覽服務。
+Cloud Manager 支援 IP 允許清單，用於 Sites 計畫的編寫、發佈和預覽服務。
 
-若要管理IP允許清單，請瀏覽至 **環境** 的標籤 **概觀** 程式頁面。 按一下個別環境，即可管理其詳細資訊。
+要管理 IP 允許清單，請瀏覽到計畫&#x200B;**總覽**&#x200B;頁面的&#x200B;**環境**&#x200B;索引標籤。按一下單個環境，以便您可以管理其詳細資訊。
 
 ### 套用 IP 允許清單 {#apply-ip-allow-list}
 
-套用IP允許清單會將允許清單定義中包含的所有IP範圍與環境中的作者或發佈服務相關聯。 中的使用者 **業務負責人** 或 **部署管理員** 角色必須登入才能套用IP允許清單。
+套用 IP 允許清單會將允許清單定義中包含的所有 IP 範圍與環境中的編寫或發佈服務相關聯。擁有&#x200B;**業務負責人**&#x200B;或&#x200B;**部署管理員**&#x200B;角色的使用者必須登入才能套用 IP 允許清單。
 
-IP允許清單必須存在於Cloud Manager中才能將其套用至環境。 若要深入瞭解Cloud Manager中的IP允許清單，請參閱 [Cloud Manager中的IP允許清單簡介](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
+IP 允許清單必須存在於 Cloud Manager 中才能將其套用於環境。若要深入了解 Cloud Manager 中的 IP 允許清單，請參閱[Cloud Manager 中的 IP 允許清單簡介](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)。
 
-**若要套用IP允許清單：**
+**若要套用 IP 允許清單：**
 
-1. 從計劃&#x200B;**總覽**&#x200B;畫面的&#x200B;**環境**&#x200B;索引標籤瀏覽到特定環境，然後瀏覽到 **IP 允許清單**。
-1. 使用IP允許清單表頂端的輸入欄位，以便您可以選取IP允許清單以及要將其套用到的作者或發佈服務。
-1. 按一下&#x200B;**套用**，然後確認您的訂閱。
+1. 從計畫&#x200B;**總覽**&#x200B;畫面的&#x200B;**環境**&#x200B;索引標籤瀏覽到特定環境，然後瀏覽到 **IP 允許清單**。
+1. 使用 IP 允許清單表頂端的輸入欄位，以便您可以選取 IP 允許清單，和您希望將其套用到的編寫或發佈服務。
+1. 按一下「**套用**」，然後確認您的訂閱。
 
-### 取消套用IP允許清單 {#unapply-ip-allow-list}
+### 取消套用 IP 允許清單 {#unapply-ip-allow-list}
 
-取消套用IP允許清單會取消包含在允許清單定義中的所有IP範圍與環境中的作者或發佈者服務的關聯。 中的使用者 **業務負責人** 或 **部署管理員** 角色必須登入才能取消套用IP允許清單。
+取消套用 IP 允許清單將取消包含在允許清單定義中的所有 IP 範圍與環境中的編寫或發佈者服務的關聯。擁有&#x200B;**業務負責人**&#x200B;或&#x200B;**部署管理員**&#x200B;角色的使用者必須登入才能取消套用 IP 允許清單。
 
-**若要取消套用IP允許清單：**
+**若要取消套用 IP 允許清單：**
 
-1. 從計劃&#x200B;**總覽**&#x200B;畫面的&#x200B;**環境**&#x200B;索引標籤瀏覽到特定環境，然後瀏覽到 **IP 允許清單**。
-1. 識別列出要取消套用IP允許清單規則的列。
+1. 從計畫&#x200B;**總覽**&#x200B;畫面的&#x200B;**環境**&#x200B;索引標籤瀏覽到特定環境，然後瀏覽到 **IP 允許清單**。
+1. 確定已列出要取消套用之 IP 允許清單規則的列。
 1. 從列尾選擇省略符號按鈕。
 1. 選取&#x200B;**取消套用**，然後確認您的訂閱。
