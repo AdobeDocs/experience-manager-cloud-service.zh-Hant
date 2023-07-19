@@ -3,26 +3,26 @@ title: 如何透過 AEM Delivery API 存取您的內容
 description: 在 AEM Headless 開發人員歷程的這一部分中，了解如何使用 GraphQL 查詢來存取您的內容片段內容。
 exl-id: 1adecc69-5f92-4007-8a2a-65bf1e960645
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1360'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
 # 如何透過 AEM Delivery API 存取您的內容 {#access-your-content}
 
-在 [AEM Headless 開發人員歷程](overview.md)的這一部分中，您可以了解如何使用 GraphQL 查詢來存取您的內容片段內容並提供給您的應用程式 (無周邊傳遞)。
+在 [AEM Headless 開發人員歷程](overview.md)的這一部分中，您可以了解如何使用 GraphQL 查詢來存取您的內容片段內容並提供給您的應用程式 ( Headless 傳遞)。
 
 ## 到目前為止 {#story-so-far}
 
-在 AEM 無周邊歷程的上一個文件「[如何建立內容模型](model-your-content.md)」中，您已了解在 AEM 中建立內容模型的基本知識，所以現在您應該了解如何建立內容結構模型，然後使用 AEM 內容片段模型和內容片段實現該結構。
+在 AEM Headless 歷程的上一個文件「[如何建立內容模型](model-your-content.md)」中，您已了解在 AEM 中建立內容模型的基本知識，所以現在您應該了解如何建立內容結構模型，然後使用 AEM 內容片段模型和內容片段實現該結構。
 
 * 認識內容模型相關的概念和術語。
 * 了解為什麼 Headless 內容傳遞需要內容模型。
 * 了解如何使用 AEM 內容片段模型實現此結構 (和使用內容片段編寫內容)。
 * 了解如何建立內容模型；基本範例的原則。
 
-本文章以這些基本知識為基礎，以便您了解如何使用 AEM GraphQL API 在 AEM 存取您現有的無周邊內容。
+本文章以這些基本知識為基礎，以便您了解如何使用 AEM GraphQL API 在 AEM 存取您現有的 Headless 內容。
 
 * **對象**：初學者
 * **目標**：了解如何使用 GraphQL 查詢來存取內容片段的內容。
@@ -30,13 +30,13 @@ ht-degree: 97%
    * 深入了解 AEM GraphQL API 的詳細資訊。
    * 查看一些範例查詢以了解實務運作。
 
-## 所以您想要存取您的內容？ {#so-youd-like-to-access-your-content}
+## 所以您想存取您的內容嗎？ {#so-youd-like-to-access-your-content}
 
-因此，您擁有所有這類內容、整齊的結構（在內容片段中），並且正等待為您的新應用程式提供內容。 問題是 - 如何到達那裡？
+所以...您已經取得所有這些內容，結構整齊 (在內容片段中)，正等待提供給您的新應用程式。問題是 - 如何到達那裡？
 
 您需要的是可以找出特定內容為目標的方法，選擇您需要的內容並將其傳回到您的應用程式以進一步處理。
 
-有了 Adobe Experience Manager (AEM) as a Cloud Service，您可以使用 AEM GraphQL API 有選擇地存取內容片段，以僅傳回需要的內容。這表示您可以實現無周邊傳遞結構化的內容，以便在您的應用程式中使用。
+有了 Adobe Experience Manager (AEM) as a Cloud Service，您可以使用 AEM GraphQL API 有選擇地存取內容片段，以僅傳回需要的內容。這表示您可以實現 Headless 傳遞結構化的內容，以便在您的應用程式中使用。
 
 >[!NOTE]
 >
@@ -115,7 +115,7 @@ The use cases for the AEM GraphQL API can depend on the type of AEM as a Cloud S
 
 內容片段可作為 AEM 結構描述和查詢之 GraphQL 的基礎，如下所示：
 
-* 它們使您能夠設計、建立、策劃和發佈可以無周邊方式傳遞之獨立於頁面的內容。
+* 它們使您能夠設計、建立、策劃和發佈可以 Headless 方式傳遞之獨立於頁面的內容。
 * 它們根據內容片段模型，該模型使用選擇的資料類型為產生的片段預先定義結構。
 * 可以使用片段參考資料類型完成額外的結構層，在定義模型時可用。
 
@@ -260,7 +260,7 @@ It provides features such as syntax-highlighting, auto-complete, auto-suggest, t
 
 如您所見，CEO 和員工欄位參考了人員片段。
 
-使用的片段模型：
+以下情況會使用片段模型：
 
 * 在內容片段編輯器建立內容時
 * 產生您將查詢的 GraphQL 結構描述
@@ -352,7 +352,7 @@ query {
 
 ## 下一步 {#whats-next}
 
-現在您已經了解如何使用 AEM GraphQL API 存取和查詢無周邊內容，您現在可以[了解如何使用 REST API 存取和更新內容片段的內容](update-your-content.md)。
+現在您已經了解如何使用 AEM GraphQL API 存取和查詢 Headless 內容，您現在可以[了解如何使用 REST API 存取和更新內容片段的內容](update-your-content.md)。
 
 ## 其他資源 {#additional-resources}
 
@@ -375,4 +375,4 @@ query {
    * [JSON 輸出](/help/sites-cloud/administering/content-fragments/content-fragments-json-preview.md)
 * [了解跨原始資源共用 (CORS)](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=zh-Hant#understand-cross-origin-resource-sharing-(cors))
 * [為伺服器端 API 產生存取權杖](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md)
-* [AEM Headless 快速入門](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) - 此為簡短的教學影片系列，概述如何使用 AEM 的無周邊功能，包括內容模型和 GraphQL。
+* [AEM Headless 快速入門](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) - 此為簡短的教學影片系列，概述如何使用 AEM 的 Headless 功能，包括內容模型和 GraphQL。
