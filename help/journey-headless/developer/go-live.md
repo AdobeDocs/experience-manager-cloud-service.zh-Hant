@@ -1,27 +1,27 @@
 ---
 title: 如何將 Headless 應用程式上線
-description: 在 AEM Headless 開發人員歷程的這一部分中，了解如何從 Git 取出本機程式碼並移至 Cloud Manager Git 以用於 CI/CD 管道，藉此來部署無周邊應用程式。
+description: 在 AEM Headless 開發人員歷程的這一部分中，了解如何從 Git 取出本機程式碼並移至 Cloud Manager Git 以用於 CI/CD 管道，藉此來部署 Headless 應用程式。
 exl-id: 81616e31-764b-44b0-94a6-3ae24ce56bf6
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1066'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
 # 如何將 Headless 應用程式上線 {#go-live}
 
-在 [AEM Headless 開發人員歷程](overview.md)的這一部分中，了解如何從 Git 取出本機程式碼並移至 Cloud Manager Git 以用於 CI/CD 管道，藉此來部署無周邊應用程式。
+在 [AEM Headless 開發人員歷程](overview.md)的這一部分中，了解如何從 Git 取出本機程式碼並移至 Cloud Manager Git 以用於 CI/CD 管道，藉此來部署 Headless 應用程式。
 
 ## 到目前為止 {#story-so-far}
 
-在 AEM 無周邊歷程的上一個文件「[如何在 AEM Headless 中將您的應用程式和內容組合在一起](put-it-all-together.md)」中，您已了解如何使用 AEM 開發工具將您專案的所有面向組合在一起。
+在 AEM Headless 歷程的上一個文件「[如何在 AEM Headless 中將您的應用程式和內容組合在一起](put-it-all-together.md)」中，您已了解如何使用 AEM 開發工具將您專案的所有面向組合在一起。
 
-本文章以這些基本知識為基礎，以便您了解如何準備您自己的 AEM 無周邊專案並計畫上線。
+本文章以這些基本知識為基礎，以便您了解如何準備您自己的 AEM Headless 專案並計畫上線。
 
 ## 目標 {#objective}
 
-本文件可協助在將您的應用程式上線之前，應該注意的 AEM 無周邊發佈管道和效能考量事項。
+本文件可協助在將您的應用程式上線之前，應該注意的 AEM Headless 發佈管道和效能考量事項。
 
 * 在應用程式推出前加以保護和擴展
 * 監控效能和偵錯問題
@@ -31,7 +31,7 @@ ht-degree: 93%
 ## Prepare your AEM Headless Application for Go-Live {#prepare-your-aem-headless-application-for-golive}
 
 -->
-若要讓 AEM 無周邊應用程式準備好推出，請遵循下面概述的最佳做法。
+若要讓 AEM Headless 應用程式準備好推出，請遵循下面概述的最佳做法。
 
 ## 在 Headless 應用程式推出前加以保護和擴展 {#secure-and-scale-before-launch}
 
@@ -42,7 +42,7 @@ ht-degree: 93%
 
 * 避免建立輸出超過 15kb JSON (gzip 格式壓縮) 的查詢。長 JSON 檔案是資源密集型檔案，用戶端應用程式需要解析。
 * 避免片段階層有超過五個巢狀層。增加層數會使內容作者難以考量變更帶來的影響。
-* 使用多物件查詢，而不是在模型中使用相依性階層建立查詢模型。如此一來，您就可以更靈活地重新建構JSON輸出，而不需要變更許多內容。
+* 使用多物件查詢，而不是在模型中使用相依性階層建立查詢模型。這允許更長期的靈活性來重新建構 JSON 輸出，而無需進行許多內容變更。
 
 ## 最大化 CDN 快取命中比例 {#maximize-cdn}
 
@@ -50,7 +50,7 @@ ht-degree: 93%
    * 盡可能使用持續性查詢。
    * 提供 600 秒以上的 CDN TTL，以便 CDN 可以快取。
    * AEM 可以計算模型變更對現有查詢的影響。
-* 在低和高內容變更率之間分割JSON檔案/GraphQL查詢，因此您可以減少到CDN的使用者端流量並指派更高的TTL。 這將 CDN 使用原始伺服器重新驗證 JSON 的需要降至最低。
+* 在低內容更改率和高內容變更改率之間分割 JSON 檔案/GraphQL 查詢，以減少流到 CDN 的用戶端流量並指派更高的 TTL。這將 CDN 使用原始伺服器重新驗證 JSON 的需要降至最低。
 * 要主動使來自 CDN 的內容無效，請使用軟清除 (Soft Purge)。這允許 CDN 重新下載內容而不會導致快取遺漏。
 
 ## 縮短下載 Headless 內容的時間 {#improve-download-time}
@@ -71,7 +71,7 @@ ht-degree: 93%
 
 ## 效能監控 {#performance-monitoring}
 
-為了讓使用者有最佳的 AEM 無周邊應用程式使用體驗，請務必監控關鍵效能量度，如下詳述：
+為了讓使用者有最佳的 AEM Headless 應用程式使用體驗，請務必監控關鍵效能量度，如下詳述：
 
 * 驗證應用程式的預覽版本和生產版本
 * 確認 AEM 狀態頁面是否有目前的服務可用性狀態
@@ -101,7 +101,7 @@ ht-degree: 93%
 
 ### 向支援團隊記錄錯誤 {#logging-a-bug-with-support}
 
-若要在您需要進一步協助時，以有效率的方式向支援服務記錄錯誤，請執行下列動作：
+為了在需要進一步協助時，可以有效率地向支援團隊記錄錯誤，請執行以下操作：
 
 * 如有必要，將問題進行螢幕截圖
 * 記錄重現問題的方法
@@ -112,11 +112,11 @@ ht-degree: 93%
 
 恭喜！您已經完成 AEM Headless 開發人員歷程！您現在應該已經了解：
 
-* 無周邊和有周邊內容傳遞之間的差異。
-* AEM 的無周邊功能。
+*  Headless 和 Headful 內容傳遞之間的差異。
+* AEM 的 Headless 功能。
 * 如何組織 AEM Headless 專案。
-* 如何在 AEM 建立無周邊內容。
-* 如何在 AEM 擷取和更新無周邊內容。
+* 如何在 AEM 建立 Headless 內容。
+* 如何在 AEM 擷取和更新 Headless 內容。
 * 如何使 AEM Headless 專案上線。
 * 上線後要做什麼。
 
@@ -124,7 +124,7 @@ ht-degree: 93%
 
 ### 探索單頁應用程式 {#explore-spa}
 
-不過，AEM中的Headless商店不需要就此止步。 您可能還記得，在[歷程的快速入門部分](getting-started.md#integration-levels)中，我們簡短討論到 AEM 如何不僅支援無周邊傳遞和傳統的全堆疊模型，而且還可支援結合兩者優點的混合模型。
+不過，AEM Headless 存放區不需要就此停止。您可能還記得，在[歷程的快速入門部分](getting-started.md#integration-levels)中，我們簡短討論到 AEM 如何不僅支援 Headless 傳遞和傳統的全堆疊模型，而且還可支援結合兩者優點的混合模型。
 
 如果您的專案需要這種靈活性，請繼續學習此歷程的額外部分 (選用)：[如何使用 AEM 建立單頁應用程式 (SPA)。](create-spa.md)
 
