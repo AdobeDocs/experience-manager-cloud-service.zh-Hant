@@ -5,7 +5,7 @@ exl-id: abe3f088-95ff-4093-95a1-cfc610d4b9e9
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '3706'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ URL 中有一些公認的最佳做法。
 
 在評估 AEM 專案的 URL 時，請先自問以下問題：
 
-*「如果使用者看到此URL但頁面上沒有任何內容，他們能否說明此頁面的內容？」*
+*「使用者能在尚未過目任何網頁內容之下，光是看到此 URL 就能描述頁面內容嗎？」*
 
 如果答案是可以，則此 URL 在搜尋引擎中很可能成效良好。
 
@@ -77,9 +77,9 @@ URL 中有一些公認的最佳做法。
 
 * 每個網頁都必須只經由一個通訊協定來提供。
 
-   * 有時候，網站會透過 `http` 直到使用者到達包含結帳或登入表單的頁面為止，此時會切換為 `https`. 從這個頁面連結時，如果使用者可返回 `http` 頁面並透過 `https` 存取，搜尋引擎會將這些頁面當成兩個獨立頁面來追蹤。
+   * 有時，網站會透過 `http` 提供，直到使用者以結帳或登入形式抵達網頁後，才會切換為透過 `https` 提供。從這個頁面連結時，如果使用者可返回 `http` 頁面並透過 `https` 存取，搜尋引擎會將這些頁面當成兩個獨立頁面來追蹤。
 
-   * 目前 Google 偏好使用 `https` 頁面，而非 `http` 頁面。因此，透過提供整個網站，往往會給每個人的生活帶來便利 `https`.
+   * 目前 Google 偏好使用 `https` 頁面，而非 `http` 頁面。因為這個原因，透過 `https` 提供整個網站通常才能讓每個人的生活更便利。
 
 ### 伺服器設定 {#server-configuration}
 
@@ -190,7 +190,7 @@ Resource myPage = req.getResource();
 * 建議讓 URL 顯示為：
   `www.mydomain.com/es/casa.html`。
 
-本地化頁面名稱的挑戰在於AEM平台上許多可用的本地化工具，都仰賴讓不同地區設定的頁面名稱相符，以保持內容同步。
+本地化網頁名稱時會面對的困難是，許多 AEM 平台上可用的本地化工具都需要不同位置的網頁有相符的名稱，才能讓內容保持同步。
 
 `sling:alias` 屬性不僅讓您看得到好處，也享用得到好處。您可以在任何資源中將 `sling:alias` 新增為屬性，允許資源使用別名。在上一個範例中：
 
@@ -286,7 +286,7 @@ Resource myPage = req.getResource();
 
 至此，您已與元件中的邏輯一併實作完成對應，以便在將 URL 輸出至頁面時使用這些對應。
 
-最後一個步驟，就是在這些縮短的 URL 進入 `mod_rewrite` 會發揮作用的 Dispatcher 時處理這些 URL。使用的最大優點 `mod_rewrite` URL會對應回其長格式 *早於* 它們會傳送至Dispatcher模組。 也就是說，Dispatcher 會從發佈伺服器要求長 URL 並加以進行快取。因此，任何來自發佈伺服器的 Dispatcher 排清都可以成功使該內容無效。
+最後一個步驟，就是在這些縮短的 URL 進入 `mod_rewrite` 會發揮作用的 Dispatcher 時處理這些 URL。使用 `mod_rewrite` 的最大優點，就是 URL 在傳送到 Dispatcher 模組&#x200B;*之前*&#x200B;會先重新對應到原本的較長格式。也就是說，Dispatcher 會從發佈伺服器要求長 URL 並加以進行快取。因此，任何來自發佈伺服器的 Dispatcher 排清都可以成功使該內容無效。
 
 要實作這些規則，您可以在 Apache HTTP 伺服器設定的虛擬主機下新增 `RewriteRule` 元素。如果您想要拉長上個範例中縮短的 URL，則可實作如下規則：
 
@@ -349,7 +349,7 @@ Disallow: /
 
 或者，您可以在即時環境中選擇不允許某些不希望建立索引的路徑。
 
-放置 `robots.txt` 網站根目錄的檔案是，Dispatcher排清請求可能會清除此檔案，而URL對應可能會將網站根目錄放置在與 `DOCROOT` 如Apache HTTP Server設定中所定義。 因此，常見的方式是將此檔案放置在網站根目的作者執行個體上，並複製到發佈執行個體。
+將 `robots.txt` 檔案置於網站根時應注意，Dispatcher 排清要求可能會清除此檔案，且 URL 對應可能會將網站根置於與 Apache HTTP 伺服器設定中已定義的 `DOCROOT` 不同之處。因此，常見的方式是將此檔案放置在網站根目的編寫執行個體上，並複製到發佈執行個體。
 
 ### 在 AEM 上建置 XML Sitemap {#building-an-xml-sitemap-on-aem}
 
@@ -371,11 +371,11 @@ Apache Sling Sitemap 模組會區分頂層 Sitemap 和巢狀 Sitemap，這兩者
 
 在預設設定中，頁面屬性對話框提供了一個選項來將頁面標記為 Sitemap 根，因此，如上所述，產生它本身 Sitemap 和其子系。此行為由 `SitemapGenerator` 的實作來實作，並且可以透過新增替代實作來擴展。但是，由於重新產生 XML Sitemap 的頻率高度依賴內容編寫工作流程和工作負載，因此該產品不提供任何 `SitemapScheduler` 設定。這使得該功能有效率地選擇加入。
 
-啟用產生XML Sitemap的背景工作 `SitemapScheduler` 必須設定。 若要這麼做，請為 PID `org.apache.sling.sitemap.impl.SitemapScheduler` 建立 OSGI 設定。排程器運算式 `0 0 0 * * ?` 可作為每天午夜一次重新產生所有 XML Sitemap 的起點。
+為了啟用產生 XML Sitemap 的背景作業，必須設定 `SitemapScheduler`。若要這麼做，請為 PID `org.apache.sling.sitemap.impl.SitemapScheduler` 建立 OSGI 設定。排程器運算式 `0 0 0 * * ?` 可作為每天午夜一次重新產生所有 XML Sitemap 的起點。
 
 ![Apache Sling Sitemap - 排程器](assets/sling-sitemap-scheduler.png)
 
-Sitemap 產生工作可以在作者層和發佈層執行個體上執行。在大多數情況下，建議在發佈層執行個體上執行產生工作，因為只能在那裡產成標準 URL (由於 Sling 資源對應規則通常僅存在於發佈層執行個體上)。但是，可以透過實作 [SitemapLinkExternalizer](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/sitemap/externalizer/SitemapLinkExternalizer.html) 執行個體來插入用於產生標準 URL 的具體化機制的自訂實作。如果自訂實作可以在作者層執行個體上產生 Sitemap 標準 URL，可以針對作者執行模式設定 `SitemapScheduler`，XML Sitemap 產生工作負載可以分配給作者服務叢集的多個執行個體。在這種情況下，必須特別注意處理尚未發佈、已修改或只有一組受限的使用者可見的內容。
+Sitemap 產生工作可以在編寫層和發佈層執行個體上執行。在大多數情況下，建議在發佈層執行個體上執行產生工作，因為只能在那裡產成標準 URL (由於 Sling 資源對應規則通常僅存在於發佈層執行個體上)。但是，可以透過實作 [SitemapLinkExternalizer](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/sitemap/externalizer/SitemapLinkExternalizer.html) 執行個體來插入用於產生標準 URL 的具體化機制的自訂實作。如果自訂實作可以在編寫層執行個體上產生 Sitemap 標準 URL，可以針對作者執行模式設定 `SitemapScheduler`，XML Sitemap 產生工作負載可以分配給編寫服務叢集的多個執行個體。在這種情況下，必須特別注意處理尚未發佈、已修改或只有一組受限的使用者可見的內容。
 
 AEM Sites 包含 `SitemapGenerator` 的預設實作，它周遊頁面樹以產生 Sitemap。它被預先設定為僅輸出網站的標準 URL 和任何可用的語言替代選項。如果需要，也可設定為包含頁面的上次修改日期。為此，啟用&#x200B;*Adobe AEM SEO - 頁面樹 Sitemap 產生器*&#x200B;設定的&#x200B;*新增上次修改日期*，並選取&#x200B;*上次修改的來源*。在發佈層產生 Sitemap 時，建議使用 `cq:lastModified` 日期。
 
@@ -459,7 +459,7 @@ public class SitemapGeneratorImpl extends ResourceTreeSitemapGenerator {
 }
 ```
 
-此外，為 XML Sitemap 實作的功能也可以用於不同的使用案例，例如將標準連結或語言替代項新增到頁面的頁首。請參閱 [SeoTags](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/SeoTags.html) 介面以取得詳細資訊。
+此外，為 XML Sitemap 實作的功能也可以用於不同的使用案例，例如將標準連結或語言替代項新增到頁面的頁首。如需詳細資訊，請參閱 [SEO 標記](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/SeoTags.html)介面。
 
 ### 為舊版 URL 建立 301 重新導向 {#creating-redirects-for-legacy-urls}
 

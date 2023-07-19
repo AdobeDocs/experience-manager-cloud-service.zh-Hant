@@ -5,7 +5,7 @@ exl-id: cfc91699-0087-40fa-a76c-0e5e1e03a5bd
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '1304'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -18,9 +18,9 @@ ht-degree: 83%
 
 Adobe Experience Manager as a Cloud Service 會根據 [Experience Manager 發行藍圖](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html#aem-as-cloud-service)定期提供新功能。
 
-若要熟悉排定在下個功能版本中上線的功能，您可以訂閱發行前通道，您可藉由設定您的開發環境或任何沙箱環境來存取該通道。 您可以預覽可透過AEM使用者介面存取的變更，並針對任何新的發行前API建置程式碼。
+若要熟悉排定在下個功能發行上線的功能，您可以訂閱發行前通道，您可藉由設定您的開發環境或任何沙箱環境來存取該通道。您可以預覽可透過 AEM 使用者介面存取的變更，也可以針對任何新的發行前 API 建置程式碼。
 
-特定功能版本的發行前功能清單發佈在 [發行說明](/help/release-notes/release-notes-cloud/release-notes-current.md).
+特定功能發行的發行前功能清單會在[發行說明](/help/release-notes/release-notes-cloud/release-notes-current.md)中發佈。
 
 ## AEM as a Cloud Service 發行 {#releases}
 
@@ -31,13 +31,13 @@ AEM as a Cloud Service 有兩種發行。
 
 此模式可確保持續發行而不會中斷服務。
 
-發行前管道可讓您預覽為即將推出的功能發行排程的功能，以便您可以評估即將推出的功能，並針對其可能在您自己的專案中實作的可能性進行規劃。 它可讓您提前規劃下一個功能的發行。
+發行前通道可讓您預覽即將到來的功能發行中預定推出的功能，以便您可以評估即將推出的功能，並針對其可能在您自己專案中的實作方式進行規劃。它可讓您提前規劃下個功能發行。
 
-例如，假設現在是五月，而且您已訂閱發行前通道，您可以評估即將推出的六月版本中的功能。
+例如，假設現在是五月，而且您訂閱了發行前通道，您可以評估即將推出的六月發行中的功能。
 
 ![發行前步調圖形](assets/prerelease-cadence.png)
 
-發行前版本為您提供為期一個月的滾動時段，讓您瞭解即將推出的AEMaaCS功能，讓您有時間評估任何新功能對您專案和自訂的影響，並計畫推出此類功能、測試和使用者培訓。
+發行前版本為您提供為期一個月的滾動時段，讓您了解即將推出的 AEMaaCS 功能，讓您有時間評估任何新功能對您專案和自訂內容的影響，並且規劃推出此類功能、測試和使用者培訓。
 
 有效利用發行前通道需要採取四個步驟。
 
@@ -127,7 +127,7 @@ AEM as a Cloud Service 有兩種發行。
 
 值為 sticky，因此只能在第一次啟動時選取它。重新安裝 SDK 以變更命令列選項。
 
-由於每月功能發行之間可能會有多個 AEM 維護版本，因此您可以下載這些新的 SDK 並在 maven 專案中參照新的 SDK API Jar 版本。 維護版本不會新增其他發行前功能，但可能包括其他較小幅的變更，例如錯誤修正、安全性修正和效能增強。
+由於每月功能發行之間可能會有多個 AEM 維護版本，因此您可以下載這些新的 SDK 並在 maven 專案中參照新的 SDK API Jar 版本。維護版本不會新增其他發行前功能，但可能包括其他較小幅的變更，例如錯誤修正、安全性修正和效能增強。
 Javadoc 會發佈到 Maven Central。
 
 #### 針對發行前 SDK 進行建置 {#build-sdk}
@@ -157,7 +157,7 @@ Javadoc 會發佈到 Maven Central。
      </dependency>
    ```
 
-   若要變更為發行前SDK，只需將相依性從 `com.adobe.aem:aem-sdk-api` 至 `com.adobe.aem:aem-prerelease-sdk-api` 如下所述：
+   若要變更為發行前 SDK，只需將相依性從 `com.adobe.aem:aem-sdk-api` 變更為 `com.adobe.aem:aem-prerelease-sdk-api`，如下所述：
 
    ```
    <dependencyManagement>
@@ -189,7 +189,7 @@ Javadoc 會發佈到 Maven Central。
 
 ## 訓練您的使用者 {#train-users}
 
-一旦您在發行前通道中測試了新功能，並決定在您的專案中使用它們，您就需要訓練您的使用者。
+一旦您在發行前通道中測試了新功能，並已決定在您的專案中使用這些功能後，您就需要訓練您的使用者。
 
 Adobe Experience League 提供了用來學習 AEMaaCS 的大量資源。
 

@@ -5,7 +5,7 @@ exl-id: 02795a31-244a-42b4-8297-2649125d7777
 source-git-commit: 0f62245d31074ab7a64d86b97ef3b1a8d7533001
 workflow-type: tm+mt
 source-wordcount: '663'
-ht-degree: 82%
+ht-degree: 96%
 
 ---
 
@@ -27,10 +27,10 @@ ht-degree: 82%
 |---|---|
 | `itemid` | 資源的 URN，請參閱 [AEM 中 Universal Editor 快速入門文件的檢測頁面](getting-started.md#instrument-thepage)章節 |
 | `itemprop` | 資源的屬性，請參閱 [AEM 中 Universal Editor 快速入門文件的檢測頁面](getting-started.md#instrument-thepage)章節 |
-| `itemtype` | 可編輯專案的型別（例如，文字、影像和參照） |
+| `itemtype` | 可編輯項目的類型 (例如文字、影像和參考) |
 | `data-editor-itemfilter` | 定義可以使用哪些參考 |
-| `data-editor-itemlabel` | 為編輯器中顯示的可選取專案定義自訂標籤 <br>以防萬一 `itemmodel` 設定，則標籤會透過模型擷取 |
-| `data-editor-itemmodel` | 定義在屬性邊欄中用於表單式編輯的模型 |
+| `data-editor-itemlabel` | 為編輯器中顯示的可選項目定義自訂標籤，<br>如果`itemmodel`已經設定了，會透過模型擷取標籤 |
+| `data-editor-itemmodel` | 定義模型，該模型用於屬性邊欄中的表單型編輯 |
 | `data-editor-behavior` | 定義檢測行為，例如獨立的文字或影像也可以像元件一樣可移動或刪除 |
 
 ## 項目類型 {#item-types}
@@ -38,7 +38,7 @@ ht-degree: 82%
 | `itemtype` | 說明 | `itemid` | `itemprop` | `data-editor-itemfilter` | `data-editor-itemlabel` | `data-editor-itemmodel` | `data-editor-behvior` |
 |---|---|---|---|---|---|---|---|
 | `text` | 文字在 HTML 標籤內是可編輯的，但只能是簡單的文字格式，RTF 格式無法編輯，這通常用於標題元件，例如 | 選用 | 必要 | N/A | 選用 | N/A | 選用 |
-| `richtext` | 文字是可編輯的，具有完整的 RTF 功能。RTE會顯示在右側面板中 | 選用 | 必要 | N/A | 選用 | N/A | 選用 |
+| `richtext` | 文字是可編輯的，具有完整的 RTF 功能。RTE 會顯示在右側面板中 | 選用 | 必要 | N/A | 選用 | N/A | 選用 |
 | `media` | 可編輯的是資產，例如影像或影片 | 選用 | 必要 | 傳遞給資產選擇器的選擇性<br>影像或影片篩選條件清單 | 選用 | N/A | 選用 |
 | `container` | 可編輯的行為就像元件的容器，也就是段落系統。 | 視情況而定 <br> (請參閱下文)。 | 視情況而定 <br> (請參閱下文)。 | 選擇性 <br> 允許元件清單 | 選用 | N/A | N/A |
 | `component` | 可編輯的是元件。它不會新增其他功能。 必須指出DOM的可移動/可刪除部分，以及開啟屬性邊欄及其欄位時 | 必要 | N/A | N/A | 選用 | 選用 | N/A |
@@ -59,8 +59,8 @@ ht-degree: 82%
 
 若要了解有關 Universal Editor 的詳細資訊，請參閱以下文件。
 
-* [通用編輯器簡介](introduction.md)  — 瞭解通用編輯器如何讓您編輯任何實作中任何內容的任何方面，以便提供卓越的體驗、提高內容速度並提供一流的開發人員體驗。
-* [使用 Universal Editor 編寫內容](authoring.md) - 了解內容作者使用 Universal Editor 建立內容有多簡單和直觀。
+* [Universal Editor 簡介](introduction.md) - 了解 Universal Editor 如何在任意實作中編輯任何方面的內容，以便提供卓越的體驗、提高內容速度並提供最先進的開發人員體驗。
+* [使用 Universal Editor 編寫內容](authoring.md) - 了解內容作者使用 Universal Editor 建立內容有多簡單和直覺。
 * [使用 Universal Editor 發佈內容](publishing.md) - 了解 Universal Visual Editor 如何發佈內容，和您的應用程式如何處理發佈的內容。
 * [AEM 中 Universal Editor 快速入門](getting-started.md) - 了解如何存取 Universal Editor，以及如何開始檢測您的第一個 AEM 應用程式以使用它。
 * [Universal Editor 架構](architecture.md) - 了解 Universal Editor 的架構，以及資料如何在其服務和階層之間流動。

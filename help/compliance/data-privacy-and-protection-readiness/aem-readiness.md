@@ -1,11 +1,11 @@
 ---
 title: 資料保護和資料隱私權法規 - Adobe Experience Manager as a Cloud Service 整備
-description: 瞭解Adobe Experience Manager as a Cloud Service對各種資料保護和資料隱私權法規的支援，以及如何在實作新的AEMas a Cloud Service專案時遵守。 這些法規包括歐盟一般資料保護規範(GDPR)、加州消費者隱私保護法。
+description: 了解 Adobe Experience Manager as a Cloud Service 對各種資料保護和資料隱私權法規的支援，以及在實作新的 AEM as a Cloud Service 專案時如何遵守。這些法規包括歐盟一般資料保護規範 (GDPR)、加州消費者隱私法。
 exl-id: 5dfa353b-84c5-4b07-bfcd-b03c2d361553
 source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
 workflow-type: tm+mt
 source-wordcount: '734'
-ht-degree: 44%
+ht-degree: 100%
 
 ---
 
@@ -15,28 +15,28 @@ ht-degree: 44%
 >
 >本文件的內容並不構成法律建議，其宗旨並非取代專業的法律建議。
 >
->如需資料保護與資料隱私權法規的相關建議，請洽詢貴公司的法律部門。
+>如需有關資料保護和資料隱私權法規的建議，請諮詢貴公司的法律部門。
 
 >[!NOTE]
 >
->如需有關Adobe對隱私權問題的回應，以及這些回應對身為Adobe客戶的您有何意義的詳細資訊，請參閱 [Adobe隱私權中心](https://www.adobe.com/tw/privacy.html).
+>如需深入了解 Adobe 對隱私權問題的回應，以及這些回應對身為 Adobe 客戶的您所代表的意義，請參閱 [Adobe 隱私權中心](https://www.adobe.com/tw/privacy.html)。
 
-為協助Adobe客戶遵守這些法規，Adobe正為客戶隱私權管理員和AEM管理員提供檔案和程式（可用時透過API）：
+為協助 Adobe 客戶遵守這些法規，Adobe 正提供文件和程序 (可用時透過 API) 給客戶隱私權管理員或 AEM 管理員。
 
-* 本檔案可協助管理員處理資料保護和資料隱私權請求。
-* 記錄的程式可讓客戶手動執行監管請求，或從外部入口網站或服務（如果可用）進行API呼叫。
+* 該文檔可幫助管理員處理資料保護和資料隱私請求。
+* 記錄的程序可讓客戶手動執行監管請求，或從外部入口網站或服務呼叫 API (可用時)。
 
 >[!CAUTION]
 >
 >此處記錄的詳細資料僅限於 Adobe Experience Manager as a Cloud Service。
 >
->來自其他Adobe隨選服務的資料以及任何相關的隱私權請求需要對該服務採取動作。
+>來自其他 Adobe 隨選服務的資料以及任何相關的隱私權請求，會要求對該服務採取動作。
 >
->如需詳細資訊，請參閱 [Adobe隱私權中心](https://www.adobe.com/tw/privacy.html).
+>如需詳細資訊，請參閱 [Adobe 的隱私權中心](https://www.adobe.com/tw/privacy.html)。
 
 ## 簡介 {#introduction}
 
-Adobe Experience Manager as a Cloud Service執行個體以及在其上執行的應用程式是由Adobe客戶所擁有和營運。
+Adobe Experience Manager as a Cloud Service 執行個體以及在其上執行的應用程式由 Adobe 客戶所擁有和營運。
 
 因此，GDPR、CCPA 等資料保護法規主要是客戶的責任。
 
@@ -60,9 +60,9 @@ Adobe Experience Manager as a Cloud Service執行個體以及在其上執行的�
 
 * 執行個體，以及在其上執行的應用程式由客戶所擁有和營運。
 
-   * 擁有權實際上是指客戶管理監管角色，包括商業實體和服務提供者、資料控制者和資料處理者等。
+   * 所有權實際上意味著客戶管理監管角色，包括商業實體和服務提供者、資料控制者和資料處理者等。
 
-   * Adobe Experience Platform Privacy Service不是AEM工作流程的一部分，如下圖所示。
+   * Adobe Experience Platform Privacy Service 不是 AEM 工作流程的一部分，如下圖所示。
 
 * AEM 包含相關文件和程序，供客戶隱私權管理員和/或 AEM 管理員執行隱私權法規請求；無論是以手動方式或透過 API (可用時)。
 
@@ -70,11 +70,11 @@ Adobe Experience Manager as a Cloud Service執行個體以及在其上執行的�
 
    * 反而是記錄各個程序和 API，以供處理隱私權監管請求的客戶 UI/入口網站使用。
 
-* AEM不包含任何現成工具來支援隱私權請求工作流程。
+* AEM 不包括任何現成工具來支援隱私權請求工作流程。
 
-   * Adobe為客戶的隱私權管理員、AEM管理員或兩者提供檔案和程式，讓他們以手動方式執行與隱私權法規相關的請求。
+   * Adobe 提供文件和程序給客戶的隱私權管理員和/或 AEM 管理員；讓他們以手動方式執行與隱私權法規相關的請求。
 
-Adobe提供處理隱私權請求的程式，這些請求與Adobe Experience Manager as a Cloud Service的存取、刪除和選擇退出相關。 在某些情況下，可以從客戶開發的入口網站呼叫可用的API，或是有助於自動化的指令碼。
+Adobe 正提供各項程序，用於處理與存取、刪除和選擇退出 Adobe Experience Manager as a Cloud Service 相關的隱私權請求。在某些情況下，可以從客戶開發的入口網站或指令碼中呼叫可用的 API，以幫助實現自動化。
 
 下圖說明了隱私權請求工作流程的模樣 (使用 Adobe Experience Manager 6.5 進行說明)：
 
@@ -82,7 +82,7 @@ Adobe提供處理隱私權請求的程式，這些請求與Adobe Experience Mana
 
 ## Adobe Experience Manager as a Cloud Service 和法規整備 {#aem-as-a-cloud-service-and-regulatory-readiness}
 
-如需有關AEMas a Cloud Service產品領域的監管檔案，請參閱以下各節。
+請參閱以下各節，了解 AEM as a Cloud Service 產品領域的監管文件。
 
 ## Adobe Experience Manager as a Cloud Service 基礎 {#aem-foundation}
 
@@ -90,11 +90,11 @@ Adobe提供處理隱私權請求的程式，這些請求與Adobe Experience Mana
 
 ## Adobe Experience Manager as a Cloud Service Sites {#aem-sites}
 
-另請參閱 [AEM Sites的資料保護與資料隱私權法規整備](/help/compliance/data-privacy-and-protection-readiness/sites-readiness.md)
+請參閱 [AEM Sites 的資料保護與資料隱私權法規整備](/help/compliance/data-privacy-and-protection-readiness/sites-readiness.md)
 
 ## Adobe Experience Manager as a Cloud Service 與 Adobe Target 和 Adobe Analytics 整合 {#aem-integration-with-adobe-target-adobe-analytics}
 
-Adobe Experience Manager as a Cloud Service與Adobe Target和Adobe Analytics的整合是以資料保護和隱私權（例如GDPR）整備服務來實作。 來自 Adobe Target 或 Adobe Analytics 與整合相關的個人資料不會儲存在 AEM 中。
+Adobe Experience Manager as a Cloud Service 與 Adobe Target 和 Adobe Analytics 的整合是透過資料保護和隱私權 (例如 GDPR) 整備服務實作。來自 Adobe Target 或 Adobe Analytics 與整合相關的個人資料不會儲存在 AEM 中。
 如需詳細資訊，請參閱：
 
 * [Adobe Target - 隱私權概觀](https://experienceleague.adobe.com/docs/target-dev/developer/implementation/privacy/cmp-privacy-and-general-data-protection-regulation.html)

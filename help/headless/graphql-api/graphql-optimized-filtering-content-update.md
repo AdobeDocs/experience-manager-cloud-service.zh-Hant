@@ -1,11 +1,11 @@
 ---
 title: 更新您的內容片段，以達到最佳化 GraphQL 篩選
-description: 了解如何更新您的內容片段，以便在 Adobe Experience Manager as a Cloud Service 中達到最佳化 GraphQL 篩選，並實現無周邊內容傳遞。
+description: 了解如何更新您的內容片段，以便在 Adobe Experience Manager as a Cloud Service 中達到最佳化 GraphQL 篩選，並實現 Headless 內容傳遞。
 exl-id: 211f079e-d129-4905-a56a-4fddc11551cc
 source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
 workflow-type: tm+mt
 source-wordcount: '909'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -79,7 +79,7 @@ ht-degree: 91%
       <td>全部 </td>
       <td> </td>
       <td>變數 </td>
-      <td>遷移後用來儲存內容片段數量的批次大小。<br>這與一次批次中儲存至儲存庫的CF數量有關，並可用於最佳化寫入儲存庫的次數。 </td>
+      <td>遷移後用來儲存內容片段數量的批次大小。<br>這與單批中多少個 CF 儲存到存放庫中有關，並且可以用來最佳化寫入存放庫的數量。 </td>
      </tr>
      <tr>
       <td>4</td>
@@ -99,7 +99,7 @@ ht-degree: 91%
       <td>全部 </td>
       <td> </td>
       <td>變數 </td>
-      <td>處理剩餘內容片段直到下一個限制的間隔（秒）<br>此間隔也會被視為啟動作業前的等待時間，以及處理每個後續CF_MIGRATION_LIMIT數目CF之間的延遲。<br>(*)</td>
+      <td>處理剩餘內容片段直到下一個限制的時間間隔 (秒)<br>此時間間隔也被視為開始作業之前的等待時間，以及處理每個後續 CF_MIGRATION_LIMIT 數量的 CF 之間的延遲。<br>(*)</td>
      </tr>
     </tbody>
    </table>
@@ -146,7 +146,7 @@ ht-degree: 91%
         23.01.2023 12:40:45.180 *INFO* [sling-threadpool-8abcc1bb-cdcb-46d4-8565-942ad8a73209-(apache-sling-job-thread-pool)-1-Content Fragment Upgrade Job Queue Config(cfm/upgrader)] com.adobe.cq.dam.cfm.impl.upgrade.UpgradeJob Finished content fragments upgrade in 5m, slingJobId: 2023/1/23/12/34/ad1b399e-77be-408e-bc3f-57097498fddb_0, status: MaintenanceJobStatus{jobState=SUCCEEDED, statusMessage='Upgrade to version '1' succeeded.', errors=[], successCount=3781, failedCount=0, skippedCount=0}
         ```
 
-   使用 Splunk 啟用環境記錄存取權的客戶可以使用下面的範例查詢來監控升級程序。如需有關啟用Splunk記錄的詳細資訊，請參閱 [偵錯生產和中繼](/help/implementing/developing/introduction/logging.md#debugging-production-and-stage) 頁面。
+   使用 Splunk 啟用環境記錄存取權的客戶可以使用下面的範例查詢來監控升級程序。如需有關啟用 Splunk 記錄的詳細資訊，請參閱[偵錯生產和中繼](/help/implementing/developing/introduction/logging.md#debugging-production-and-stage)頁面。
 
    ```splunk
    index=<indexName> sourcetype=aemerror aem_envId=<environmentId> msg="*com.adobe.cq.dam.cfm.impl.upgrade.UpgradeJob Finished*" 
@@ -236,13 +236,13 @@ ht-degree: 91%
 
      >[!NOTE]
      >
-     >該程序將更新作者和發佈執行個體上的內容片段。
+     >該程序將更新編寫和發佈執行個體上的內容片段。
      >
      >因此，建議透過存放庫瀏覽器對&#x200B;*至少*&#x200B;一位作者&#x200B;*和*&#x200B;一個發佈執個體進行驗證。
 
 ## 限制 {#limitations}
 
-請注意下列限制：
+留意以下限制：
 
 * GraphQL 篩選器的效能最佳化只有在完全更新所有內容片段後才有可能 (由 JCR 節點 `/content/dam` 的 `cfGlobalVersion` 屬性存在來表示)
 

@@ -5,7 +5,7 @@ exl-id: 6e1cf636-78f5-4270-9a21-38b4d5e5a0b0
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '575'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 88%
 
 依照下列步驟在 Cloud Manager 中檢視和管理存放庫。
 
-1. 從&#x200B;**計畫總覽**&#x200B;頁面，按一下&#x200B;**存放庫**&#x200B;索引標籤，並瀏覽至&#x200B;**存放庫**&#x200B;頁面。
+1. 從&#x200B;**計畫概觀**&#x200B;頁面，按一下&#x200B;**存放庫**&#x200B;索引標籤，並瀏覽至&#x200B;**存放庫**&#x200B;頁面。
 
 1. 按一下&#x200B;**新增存放庫**&#x200B;以開啟精靈。
 
@@ -38,25 +38,25 @@ ht-degree: 88%
 
 ![存放庫選項](/help/implementing/cloud-manager/assets/repos/create-repo3.png)
 
-在新增或編輯管道時，您也可以選擇在 Cloud Manager 中建立的存放庫。另請參閱 [CI-CD管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) 以深入瞭解。
+在新增或編輯管道時，您也可以選擇在 Cloud Manager 中建立的存放庫。如需更多資訊，請參閱 [CI-CD 管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)。
 
 任何指定管道都有一個主要存放庫或一個分支。透過[Git 子模組支援](#git-submodule-support)，可以在建置階段包含許多次要分支。
 
 >[!NOTE]
 >
->使用者必須具備&#x200B;**部署管理員**&#x200B;或&#x200B;**企業所有者**&#x200B;角色才能新增存放庫。
+>使用者必須具備&#x200B;**部署管理員**&#x200B;或&#x200B;**業務負責人**&#x200B;角色才能新增存放庫。
 
 ## 刪除存放庫 {#delete-repo}
 
 刪除存放庫將：
 
 * 使已刪除的存放庫名稱無法用於將來可能建立的新存放庫。
-   * 錯誤訊息 `Repository name should be unique within organization.` 便會顯示在此類情況下。
+   * 在這種情況下會顯示錯誤訊息 `Repository name should be unique within organization.`。
 * 讓已刪除的存放庫在 Cloud Manager 中無法使用，並且無法連結到管道。
 
 按照這些步驟即可刪除 Cloud Manager 中的存放庫。
 
-1. 從&#x200B;**計畫總覽**&#x200B;頁面，按一下&#x200B;**存放庫**&#x200B;索引標籤，並瀏覽至&#x200B;**存放庫**&#x200B;頁面。
+1. 從&#x200B;**計畫概觀**&#x200B;頁面，按一下&#x200B;**存放庫**&#x200B;索引標籤，並瀏覽至&#x200B;**存放庫**&#x200B;頁面。
 
 1. 選擇存放庫，按一下省略符號按鈕，然後選擇&#x200B;**刪除**&#x200B;以刪除存放庫。
 
@@ -76,7 +76,7 @@ $ git submodule update --init
 
 對於習慣使用 Git 子模組並且不想管理外部合併流程的組織來說，此技術是文件[使用多來源 Git 存放庫](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md)中所述解決方案的潛在替代計畫。
 
-例如，我們假設有三個存放庫，每個都包含名為 `main` 的單一分支。在主要存放庫中，即在管道中設定的那個， `main` 分支具有 `pom.xml` 宣告包含在其他兩個存放庫中的專案的檔案。
+例如，我們假設有三個存放庫，每個都包含名為 `main` 的單一分支。在主要存放庫中 (即在管道中設定的那個)，`main` 分支有一個 `pom.xml` 檔案，宣告包含在其他兩個存放庫中的專案。
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -117,11 +117,11 @@ $ git submodule add -b main https://git.cloudmanager.adobe.com/ProgramName/proje
     branch = main
 ```
 
-有關 Git 子模組的更多資訊可以在 [Git 參考手冊](https://git-scm.com/book/en/v2/Git-Tools-Submodules)中找到。
+如需有關 Git 子模組的更多資訊可以在 [Git 參考手冊](https://git-scm.com/book/en/v2/Git-Tools-Submodules)中找到。
 
 ### 限制和建議 {#limitations-recommendations}
 
-使用Git子模組時，請注意下列限制。
+使用 Git 子模組時，請留意以下限制：
 
 * Git URL 必須完全符合上節所述語法。
 * 僅支援分支根部的子模組。

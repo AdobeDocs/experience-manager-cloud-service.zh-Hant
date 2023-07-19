@@ -5,7 +5,7 @@ exl-id: 8dad48d5-fa90-467c-8bec-e4b76e057f80
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '2068'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -33,7 +33,7 @@ SPA 編輯器提供了一個全面的解決方案來支援在 AEM 中使用 SPA�
 * [GitHub 提供的範例 WKND SPA 專案應用程式](https://github.com/adobe/aem-guides-wknd-spa)
    * 下載[最新版本的 React 應用程式](https://github.com/adobe/aem-guides-wknd-spa/releases)，名稱類似於 `wknd-spa-react.all-X.Y.Z-SNAPSHOT.zip`。
    * 下載[應用程式的最新範例影像](https://github.com/adobe/aem-guides-wknd-spa/releases)，名稱類似於 `wknd-spa-sample-images-X.Y.Z.zip`。
-   * [使用套件管理員](/help/implementing/developing/tools/package-manager.md)安裝這兩個套件，就像在 AEM 中安裝任何其他套件一樣。
+   * [使用封裝管理員](/help/implementing/developing/tools/package-manager.md)安裝這兩個套件，就像在 AEM 中安裝任何其他套件一樣。
    * 出於本逐步解說的目的，應用程式不需要使用 Maven 安裝。
 
 >[!CAUTION]
@@ -42,11 +42,11 @@ SPA 編輯器提供了一個全面的解決方案來支援在 AEM 中使用 SPA�
 
 >[!TIP]
 >
->任何AEM專案都應該使用 [AEM專案原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hant)，支援使用React或Angular的SPA專案，並使用SPA SDK。
+>任何 AEM 專案都應使用 [AEM 專案原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hant)，它支援使用 React 或 Angular 的 SPA 專案並使用 SPA SDK。
 
 ### 什麼是 SPA？ {#what-is-a-spa}
 
-單頁應用程式(SPA)與傳統頁面不同，在於它是於使用者端轉譯，主要是JavaScript導向，依賴Ajax呼叫載入資料並動態更新頁面。 在單頁載入時一次擷取大部分或所有內容，並根據使用者與頁面的互動，視需要非同步載入其他資源。
+單頁應用程式 (SPA) 與傳統頁面的不同之處在於它是在用戶端呈現並且主要由 JavaScript 驅動，依賴 Ajax 呼叫來載入資料和動態更新頁面。在單頁載入時一次擷取大部分或所有內容，並根據使用者與頁面的互動，視需要非同步載入其他資源。
 
 這減少了頁面重新整理的需要，讓使用者擁有順暢、快速且像是使用原生應用程式的體驗。
 
@@ -71,11 +71,11 @@ AEM SPA 編輯器允許前端開發人員建立可整合到 AEM 網站的 SPA，
 #### 開發人員 {#developers}
 
 * 開發人員希望清楚分開內容和展示之間的考量點。
-* 簡潔的分隔讓系統更可擴充，並允許獨立的前端開發。
+* 清楚分開使系統更具可擴展性，並允許獨立的前端開發。
 
 ### SPA 如何運作？ {#how-does-a-spa-work}
 
-SPA的主要構想是減少伺服器呼叫次數和對伺服器的相依性，以儘可能減少伺服器延遲所造成的延遲，讓SPA接近原生應用程式的回應能力。
+SPA 背後的主要概念是減少對伺服器呼叫和依賴，以儘量減少伺服器延遲造成的作業耽擱，從而使 SPA 接近原生應用程式的回應能力。
 
 在傳統的循序網頁中，僅載入即時頁面所需的資料。這表示當訪客移至另一個頁面時，將呼叫伺服器以取得額外資源。當訪客與頁面上的元素互動時，可能需要額外的呼叫。由於頁面必須趕上訪客的要求，因此這些多次呼叫可能會讓人產生延滯或延遲的感覺。
 
@@ -96,7 +96,7 @@ SPA的主要構想是減少伺服器呼叫次數和對伺服器的相依性，�
 
 ## SPA 的內容編輯體驗 {#content-editing-experience-with-spa}
 
-當使用SPA SPA編輯器建置AEM時，內容作者在編輯和建立內容時不會注意到差異。 可以使用常用的 AEM 功能，作者的工作流程無需變更。
+當建置 SPA 以使用 AEM SPA 編輯器時，內容作者在編輯和建立內容時不會注意到任何差異。可以使用常用的 AEM 功能，作者的工作流程無需變更。
 
 1. 在 AEM 編輯 WKND SPA 專案應用程式。
 
@@ -177,7 +177,7 @@ SPA的主要構想是減少伺服器呼叫次數和對伺服器的相依性，�
 
 1. 切換到檢查器中的「網路」索引標籤並重新載入頁面。
 
-   忽略影像要求，請注意，為頁面載入的主要資源為頁面本身、CSS、React JavaScript、其相依性及頁面的JSON資料。
+   忽略影像要求，注意為頁面載入的主要資源是頁面本身、CSS、React JavaScript、其相依性，以及頁面的 JSON 資料。
 
    ![WKND SPA 專案網路活動](assets/wknd-network.png)
 
@@ -187,9 +187,9 @@ SPA的主要構想是減少伺服器呼叫次數和對伺服器的相依性，�
 
    ![WKND SPA 專案首頁的 JSON](assets/wknd-json.png)
 
-   AEM SPA編輯器使用 [AEM內容服務](/help/sites-cloud/administering/content-fragments/content-fragments.md) 以JSON模型形式傳遞頁面的整個內容。
+   AEM SPA 編輯器使用 [AEM 內容服務](/help/sites-cloud/administering/content-fragments/content-fragments.md)將頁面的全部內容以 JSON 模型傳遞。
 
-   透過實作特定的介面，Sling 模型為 SPA 提供必要的資訊。JSON資料的傳送會向下委派給每個元件（從頁面、段落到元件等）。
+   透過實作特定的介面，Sling 模型為 SPA 提供必要的資訊。JSON 資料的傳遞工作向下委派給每個元件 (從頁面到段落到元件等)。
 
    每個元件選擇它公開的內容以及呈現方式 (伺服器端使用 HTL 或用戶端使用 React 或 Angular)。本文章重點介紹使用 React 進行用戶端呈現。
 
@@ -207,7 +207,7 @@ SPA的主要構想是減少伺服器呼叫次數和對伺服器的相依性，�
 
 ### 與 SPA 編輯器的互動 {#interaction-with-the-spa-editor}
 
-使用範例WKND SPA Project應用程式，可清楚瞭解應用程式在發佈時的行為和載入，並利用內容服務進行JSON內容傳送和非同步載入資源。
+使用範例 WKND SPA 專案應用程式，可以清楚地了解應用程式在發佈時的行為和載入方式，利用內容服務進行 JSON 內容傳遞，以及非同步載入資源。
 
 此外，內容作者可在 AEM 中使用 SPA 編輯器順暢地建立內容。
 
@@ -241,7 +241,7 @@ SPA的主要構想是減少伺服器呼叫次數和對伺服器的相依性，�
 
 ## AEM Headful 和 Headless 技術 {#headful-headless}
 
-可以透過 AEM 內靈活的整合層級啟用 SPA，包括在 AEM 外部開發和維護的 SPA。此外，SPA可以在AEM中使用，同時使用AEM無頭傳送內容給其他端點。
+可以透過 AEM 內靈活的整合層級啟用 SPA，包括在 AEM 外部開發和維護的 SPA。此外，可以在 AEM 中使用 SPA，同時也可以使用 AEM 將內容以 Headless 方式傳遞到其他端點。
 
 >[!TIP]
 >
@@ -254,4 +254,4 @@ SPA的主要構想是減少伺服器呼叫次數和對伺服器的相依性，�
 * [開始在 AEM 中使用 React 建立 SPA](getting-started-react.md)展示如何在 AEM 中使用 React 建立基本 SPA 以與 SPA 編輯器搭配運作
 * [開始在 AEM 中使用 Angular 建立 SPA](getting-started-angular.md)展示如何在 AEM 中使用 Angular 建立基本 SPA 以與 SPA 編輯器搭配運作
 * [SPA 編輯器概述](editor-overview.md)更深入地介紹 AEM 和 SPA 之間的通訊模型。
-* [針對AEM開發SPA](developing.md) 說明如何與前端開發人員互動以開發適用於AEM的SPA，以及SPA如何與AEM架構互動。
+* [為 AEM 開發 SPA](developing.md) 介紹如何讓前端開發人員為 AEM 開發 SPA，以及 SPA 如何與 AEM 架構互動。

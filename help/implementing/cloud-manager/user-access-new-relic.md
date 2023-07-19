@@ -5,7 +5,7 @@ exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '1589'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
@@ -28,9 +28,9 @@ Adobe 非常重視應用程式的監控、可用性和效能。AEM as a Cloud Se
 
 * 直接存取專用的 New Relic One 帳戶
 
-* 檢測的 New Relic One 一個 APM 代理，顯示帶有行號的準確方法調用，包括外部依賴項和數據庫
+* 檢測的 New Relic One 一個 APM 代理，顯示帶有行號的準確方法調用，包括外部依賴項和資料庫
 
-* 透過結合來自基礎設施級監控和應用(Adobe Experience Manager)監控的關鍵指標來最佳化整體效能
+* 透過結合來自基礎設施級監控和應用程式 (Adobe Experience Manager) 監控的關鍵指標來優化整體性能
 
 * 直接在 New Relic Insights 指標中公開 AEM as a Cloud Service JMX Mbean 和執行狀況檢查，從而可以深入檢查應用程式堆疊效能和執行狀況指標。
 
@@ -40,23 +40,23 @@ Adobe 非常重視應用程式的監控、可用性和效能。AEM as a Cloud Se
 
 >[!NOTE]
 >
->擁有&#x200B;**企業所有者**&#x200B;或&#x200B;**部署管理員**&#x200B;角色的使用者必須登入才能管理 New Relic One 使用者。
+>擁有&#x200B;**業務負責人**&#x200B;或&#x200B;**部署管理員**&#x200B;角色的使用者必須登入才能管理 New Relic One 使用者。
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織。
 
-1. 單擊您要為其管理 New Relic One 使用者的計畫。
+1. 按一下您要為其管理 New Relic One 使用者的計畫。
 
-1. 在底部&#x200B;**環境**&#x200B;計畫概覽頁面上的卡片，單擊省略符號按鈕並選擇&#x200B;**管理使用者**。
+1. 在底部&#x200B;**環境**&#x200B;計畫概覽頁面上的卡片，按一下省略符號按鈕並選擇&#x200B;**管理使用者**。
 
    ![管理使用者](assets/newrelic-manage-users.png)
 
    * 您還可以存取&#x200B;**管理使用者**&#x200B;透過頂部的省略符號按鈕選擇&#x200B;**環境**&#x200B;計畫的畫面。
 
-1. 在裡面&#x200B;**管理 New Relic 使用者**&#x200B;對話框中，輸入您要新增的使用者的名字和姓氏，然後單擊&#x200B;**新增**&#x200B;按鈕。對您要新增的所有使用者重複此步驟。
+1. 在裡面&#x200B;**管理 New Relic 使用者**&#x200B;對話框中，輸入您要新增的使用者的名字和姓氏，然後按一下&#x200B;**新增**&#x200B;按鈕。對您要新增的所有使用者重複此步驟。
 
    ![新增使用者](assets/newrelic-add-users.png)
 
-1. 要刪除 New Relic One 使用者，請單擊代表該使用者的行右端的刪除按鈕。
+1. 要刪除 New Relic One 使用者，請按一下代表該使用者的行右端的刪除按鈕。
 
 1. 按一下&#x200B;**儲存**&#x200B;以建立收藏集。
 
@@ -64,7 +64,7 @@ Adobe 非常重視應用程式的監控、可用性和效能。AEM as a Cloud Se
 
 >[!NOTE]
 >
->如果您正在管理New Relic One使用者，您也必須將自己新增為使用者，才能存取該使用者。 作為&#x200B;**業主**&#x200B;或者&#x200B;**部署管理器**&#x200B;不足以存取 New Relic One。您還必須將自己建立為使用者。
+>如果您正在管理 New Relic One 使用者，您還必須將自己新增為使用者才能獲得存取權限。作為&#x200B;**業務負責人**&#x200B;或者&#x200B;**部署管理員**&#x200B;不足以存取 New Relic One。您還必須將自己建立為使用者。
 
 ## 激活您 New Relic One 使用者帳戶 {#activate-account}
 
@@ -72,7 +72,7 @@ Adobe 非常重視應用程式的監控、可用性和效能。AEM as a Cloud Se
 
 按照以下步驟將您的帳戶激活為 New Relic 使用者。
 
-1. 單擊 New Relic 的電子郵件中提供的鏈接。這會將您的瀏覽器打開到 New Relic 登入頁面。
+1. 按一下 New Relic 的電子郵件中提供的鏈接。這會將您的瀏覽器打開到 New Relic 登入頁面。
 
 1. 在 New Relic 登入頁面上，選擇&#x200B;**忘記密碼了嗎？**。
 
@@ -84,7 +84,7 @@ Adobe 非常重視應用程式的監控、可用性和效能。AEM as a Cloud Se
 
 1. New Relic 將向您傳送一封電子郵件，其中包含確認帳戶的連結。
 
-如果您沒有收到來自New Relic的確認電子郵件，請參閱 [疑難排解一節。](#troubshooting)
+如果您沒有收到來自 New Relic 的確認電子郵件，請參閱[故障排除部分](#troubshooting)。
 
 ## 正在存取 New Relic One {#accessing-new-relic}
 
@@ -96,7 +96,7 @@ Adobe 非常重視應用程式的監控、可用性和效能。AEM as a Cloud Se
 
 1. 存取您要為其管理 New Relic One 使用者的計畫。
 
-1. 在底部&#x200B;**環境**&#x200B;計畫概覽頁面上的卡片，單擊省略符號按鈕並選擇&#x200B;**打開 New Relic**。
+1. 在底部&#x200B;**環境**&#x200B;計畫概覽頁面上的卡片，按一下省略符號按鈕並選擇&#x200B;**打開 New Relic**。
 
    ![管理使用者](assets/newrelic-access.png)
 
@@ -114,9 +114,9 @@ Adobe 非常重視應用程式的監控、可用性和效能。AEM as a Cloud Se
 
 如果您在登入 New Relic One 時被要求驗證您的電子郵件，這意味著您的電子郵件與多個帳戶相關聯。這使您可以選擇要存取的帳戶。
 
-如果您未驗證您的電子郵件地址，New Relic會嘗試使用與您的電子郵件地址關聯的最近建立的使用者記錄來登入。 為避免在每次登入時驗證您的電子郵件，請單擊&#x200B;**記得我**&#x200B;登入畫面中的複選框。
+如果您不驗證您的電子郵件地址，New Relic 會嘗試使用與您的電子郵件地址關聯的最近建立的使用者記錄來登入。為避免在每次登入時驗證您的電子郵件，請按一下&#x200B;**記得我**&#x200B;登入畫面中的複選框。
 
-如需更多協助，請透過以下方式開啟支援服務單： [AEM支援入口網站](https://helpx.adobe.com/tw/enterprise/using/support-for-experience-cloud.html).
+如需更多幫助，請透過 [AEM 支援入口網站](https://helpx.adobe.com/tw/enterprise/using/support-for-experience-cloud.html)開啟支援票證。
 
 ## 偵錯 New Relic One Access {#troubleshooting}
 
@@ -134,23 +134,23 @@ Adobe 非常重視應用程式的監控、可用性和效能。AEM as a Cloud Se
 
 1. New Relic 將向您傳送一封電子郵件，其中包含確認帳戶的連結。
 
-如果您完成註冊程式，但由於電子郵件或密碼錯誤訊息而無法登入您的帳戶，請透過以下方式登入支援票證： [Admin Console。](https://adminconsole.adobe.com/)
+如果您完成註冊過程但由於電子郵件或密碼錯誤消息而無法登入您的帳戶，請透過 [Admin Console](https://adminconsole.adobe.com/) 登入支援票證。
 
-如果您沒有收到來自New Relic的電子郵件：
+如果您沒有收到來自 New Relic 的電子郵件：
 
 * 檢查你的[垃圾郵件過濾器](https://docs.newrelic.com/docs/accounts/accounts-billing/account-setup/create-your-new-relic-account/)。
 * 如果適用，[將 New Relic 新增到您的電子郵件允許清單](https://docs.newrelic.com/docs/accounts/accounts/account-maintenance/account-email-settings/#email-whitelist)。
-* 如果兩個建議都沒有幫助，請提供有關支援票證的反饋，Adobe支援團隊可以協助您。
+* 如果這些建議都沒有幫助，請提供有關支援票證的反饋，Adobe 支援團隊可協助您。
 
 ## 限制 {#limitations}
 
 以下限制適用於將使用者新增到 New Relic One：
 
-* 最多可以新增 30 個使用者。如果已達到最大使用者數，請移除使用者以便能夠新增使用者。
-* 新增至New Relic的使用者型別為 **受限制**，請參閱 [New Relic檔案以取得詳細資訊。](https://docs.newrelic.com/docs/accounts/original-accounts-billing/original-users-roles/users-roles-original-user-model/#:~:text=在%20general%2C%20Admins%20take%20responsibility, Restricted%20Users%20can%20use%20them.&amp;text=One%20or%20more%20individuals%20who,change)
-* AEM as a Cloud Service僅提供 New Relic One APM 解決方案，不支援警報、記錄或 API 整合。
+* 最多可以新增 30 個使用者。如果已達到最大使用者數，請刪除使用者以便能夠新增新使用者。
+* 新增到 New Relic 的使用者屬於&#x200B;**受限制的**&#x200B;類型，有關詳細資訊，請參閱 [New Relic 文件](https://docs.newrelic.com/docs/accounts/original-accounts-billing/original-users-roles/users-roles-original-user-model/#:~:text=在%20general%2C%20Admins%20take%20responsibility, Restricted%20Users%20can%20use%20them.&amp;text=One%20or%20more%20individuals%20who,change)。
+* AEM as a Cloud Service 僅提供 New Relic One APM 解決方案，不支援警報、記錄或 API 整合。
 
-如需更多有關AEMas a Cloud Service計畫New Relic One產品的說明或其他指引，請透過以下方式開啟支援票證： [AEM支援入口網站](https://helpx.adobe.com/tw/enterprise/using/support-for-experience-cloud.html).
+如需有關 AEM as a Cloud Service 計畫的 New Relic One 產品的更多說明或其他指導，請透過[AEM 支援入口網站](https://helpx.adobe.com/tw/enterprise/using/support-for-experience-cloud.html)開啟支援票證
 
 ## 與 New Relic One 有關的常見問答 {#faqs}
 
@@ -160,19 +160,19 @@ Adobe 透過 New Relic One 的 Java 外掛程式監視 AEM as a Cloud Service �
 
 您的 New Relic One 帳戶附加到 Adobe 維護的主帳戶，並有多個應用程式向其中報告：每個 AEM as a Cloud Service環境三個。
 
-* 每個環境一個作者服務應用程式
+* 每個環境一個編寫服務應用程式
 * 每個環境一個發布服務應用程式（包括 Golden Publish）
 * 每個環境一個預覽服務應用程式
 
-注意:
+注意：
 
 * 每個應用程式使用一個授權密鑰。
 * AEM as a Cloud Service環境僅向一個 New Relic One 帳戶報告。
 * New Relic One 的完整監控指標和事件將保留 7 天。
 
-### 誰可以存取 New Relic One cloud 服務數據？ {#access-new-relic-cloud}
+### 誰可以存取 New Relic One cloud 服務資料？ {#access-new-relic-cloud}
 
-您的團隊最多可授予30名成員的完全讀取許可權。 讀取權限將包括 New Relic One 代理收集的所有 APM 指標。
+會授予您團隊中最多 30 名成員的完全讀取權限。讀取權限將包括 New Relic One 代理收集的所有 APM 指標。
 
 ### 是否支援自訂 SSO 配置？ {#custom-sso}
 
@@ -182,10 +182,10 @@ Adobe 提供的 New Relic One 帳戶不支援自訂 SSO 配置。
 
 New Relic One 是 New Relic 的新可觀察性平台，它使 Adobe 支援人員和您的團隊能夠在一個地方觀察、監控和查看指標和事件。
 
-New Relic One 使使用者能夠搜索他們有權存取的所有帳戶，並在一個視圖中可視化來自所有服務和主機的數據。
+New Relic One 使使用者能夠搜索他們有權存取的所有帳戶，並在一個視圖中可視化來自所有服務和主機的資料。
 
-雖然Adobe支援將使用New Relic One和其他內部工具作為您服務的一部分，監控AEMas a Cloud Service應用程式，但您的團隊可以繼續使用New Relic進行內部部署託管服務和基礎架構。 他們可以視覺化AdobeNew Relic One帳戶和客戶管理的New Relic帳戶中的資料。
+雖然 Adobe 支援將使用 New Relic One 和其他內部工具作為您服務的一部分來監控 AEM as a Cloud Service 應用程式，但您的團隊可以繼續將 New Relic 用於本機託管服務和基礎架構。他們能夠可視化來自 Adobe New Relic One 帳戶和客戶管理的 New Relic 帳戶的資料。
 
 >[!NOTE]
 >
->要在 New Relic One 中查看這兩個數據集，使用者必須擁有正確的權限並為兩個帳戶（Adobe New Relic One 和客戶管理的 New Relic 帳戶）使用相同的登入方法。
+>要在 New Relic One 中查看這兩個資料集，使用者必須擁有正確的權限並為兩個帳戶 (Adobe New Relic One 和客戶管理的 New Relic 帳戶) 使用相同的登入方法。

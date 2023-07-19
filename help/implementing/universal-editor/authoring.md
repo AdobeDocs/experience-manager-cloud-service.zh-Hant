@@ -1,21 +1,21 @@
 ---
 title: 使用 Universal Editor 編寫內容
-description: 了解內容作者使用 Universal Editor 建立內容有多簡單和直觀。
+description: 了解內容作者使用 Universal Editor 建立內容有多簡單和直覺。
 exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 source-git-commit: 05554f397a843ede5a723b206b6e0748e2d6ba96
 workflow-type: tm+mt
 source-wordcount: '1682'
-ht-degree: 44%
+ht-degree: 54%
 
 ---
 
 # 使用 Universal Editor 編寫內容 {#authoring}
 
-了解內容作者使用 Universal Editor 建立內容有多簡單和直觀。
+了解內容作者使用 Universal Editor 建立內容有多簡單和直覺。
 
 ## 簡介 {#introduction}
 
-通用編輯器可讓您編輯任何實作中任何內容的任何方面，因此您可以提供卓越的體驗、提高內容速度，並提供一流的開發人員體驗。
+Universal Editor 支援在任意實作中編輯任何方面的內容，以便提供卓越的體驗、提高內容速度並提供最先進的開發人員體驗。
 
 為此，Universal Editor為內容作者提供直覺式UI，只需最少的培訓，就能快速加入並開始編輯內容。 本檔案說明Universal Editor的製作體驗。
 
@@ -29,11 +29,11 @@ ht-degree: 44%
 
 ## 準備應用程式 {#prepare-app}
 
-若要使用通用編輯器為應用程式編寫內容，應用程式必須由開發人員檢測以支援編輯器。
+為了使用 Universal Editor 編寫應用程式的內容，應用程式必須由開發人員進行檢測以支援編輯器。
 
 >[!TIP]
 >
->另請參閱 [AEM中的通用編輯器快速入門](getting-started.md) 有關如何設定AEM應用程式以使用通用編輯器的範例。
+>請參閱 [AEM 中 Universal Editor 快速入門](getting-started.md)，了解設定 AEM 應用程式以使用 Universal Editor 的範例。
 
 ## 登入 {#sign-in}
 
@@ -67,13 +67,13 @@ Experience Cloud 標頭會始終顯示在畫面頂端。這是一個錨點，說
 
 #### 組織 {#organization}
 
-這將顯示您目前登入的組織。如果您的 Adobe ID 與多個組織關聯，可點選或點擊以切換到另一個組織。
+這將顯示您目前登入的組織。如果您的 Adobe ID 與多個組織關聯，可點選或按一下以切換到另一個組織。
 
 ![組織指示器](assets/organization.png)
 
 #### 解決方案 {#solutions}
 
-點選或點擊解決方案切換器可讓您快速跳轉到其他 Experience Cloud 解決方案。
+點選或按一下解決方案切換器可讓您快速跳轉到其他 Experience Cloud 解決方案。
 
 ![解決方案切換器](assets/solutions.png)
 
@@ -91,25 +91,25 @@ Experience Cloud 標頭會始終顯示在畫面頂端。這是一個錨點，說
 
 #### 使用者屬性 {#user-properties}
 
-點選或點擊代表您使用者的圖示以存取您的使用者設定。如果您未設定使用者圖片，則會隨機指派圖示。
+點選或按一下代表您使用者的圖示以存取您的使用者設定。如果您沒有設定使用者圖片，則會隨機分配圖示。
 
 ![使用者屬性](assets/user-properties.png)
 
 ### Universal Editor 標頭 {#universal-editor-header}
 
-Universal Editor 標頭始終顯示在畫面頂端，就在 [Experience Cloud 標頭下方。](#experience-cloud-header) 它可讓您快速導覽至其他頁面進行編輯，並發佈目前頁面。
+Universal Editor 標頭始終顯示在畫面頂端，就在 [Experience Cloud 標頭下方。](#experience-cloud-header)它可讓您快速存取，以導覽到另一個頁面進行編輯和發佈目前的頁面。
 
 ![Universal Editor 標頭](assets/universal-editor-header.png)
 
 #### 漢堡選單 {#hamburger-menu}
 
-漢堡選單尚未實施。
+漢堡選單尚未實作。
 
 ![漢堡選單](assets/hamburger-menu.png)
 
 #### 位置列 {#location-bar}
 
-位置列會顯示您正在編輯頁面的網址。點選或點擊以輸入要編輯的其他頁面的網址。
+位置列會顯示您正在編輯頁面的網址。點選或按一下以輸入要編輯的其他頁面的網址。
 
 ![位置列](assets/location-bar.png)
 
@@ -141,7 +141,7 @@ Universal Editor 標頭始終顯示在畫面頂端，就在 [Experience Cloud �
 
 #### 開啟應用程式預覽 {#open-app-preview}
 
-點選或點擊開啟應用程式預覽圖示，以在其瀏覽器中打開您正在編輯的頁面，無需編輯器即可預覽變更。
+點選或按一下開啟應用程式預覽圖示，以在其瀏覽器中打開您正在編輯的頁面，無需編輯器即可預覽變更。
 
 ![開啟應用程式預覽](assets/open-app-preview.png)
 
@@ -151,7 +151,7 @@ Universal Editor 標頭始終顯示在畫面頂端，就在 [Experience Cloud �
 
 #### 發佈 {#publish}
 
-點選或按一下「發佈」按鈕，這樣您就可以將變更發佈到即時內容，以供讀者使用。
+點選或按一下發佈按鈕，以便即時發佈內容變更以供讀者使用。
 
 ![發佈按鈕](assets/publish.png)
 
@@ -167,7 +167,7 @@ Universal Editor 標頭始終顯示在畫面頂端，就在 [Experience Cloud �
 
 #### 預覽模式 {#preview-mode}
 
-在預覽模式下，在編輯器中呈現的頁面就是發佈服務所顯示的樣子。這可讓內容作者透過點擊連結等來導覽內容。
+在預覽模式下，在編輯器中呈現的頁面就是發佈服務所顯示的樣子。這可讓內容作者透過按一下連結等來導覽內容。
 
 ![預覽模式](assets/preview-mode.png)
 
@@ -267,15 +267,15 @@ Universal Editor 標頭始終顯示在畫面頂端，就在 [Experience Cloud �
 
 ## 編輯內容 {#editing-content}
 
-編輯內容很簡單又直觀。在編輯模式中([文字模式](#text-mode)， [媒體模式](#media-mode)、和 [元件模式](#component-mode))，將游標移至編輯器中的內容時，可編輯內容會以藍色方塊醒目提示。
+編輯內容很簡單又直覺。在編輯模式中([文字模式](#text-mode)， [媒體模式](#media-mode)、和 [元件模式](#component-mode))，將游標移至編輯器中的內容時，可編輯內容會以藍色方塊醒目提示。
 
 ![可編輯的內容會用藍色框醒目顯示](assets/editable-content.png)
 
-只需點選或點擊藍色框中的內容即可啟動就地編輯器來進行變更。您的變更會自動儲存。
+只需點選或按一下藍色框中的內容即可啟動就地編輯器來進行變更。您的變更會自動儲存。
 
 ![編輯內容](assets/editing-content.png)
 
-請注意，在編輯模式下，點選或點擊內容會選擇它進行編輯。如果您希望透過以下連結瀏覽您的內容，請切換到[預覽模式。](#preview-mode)
+請注意，在編輯模式下，點選或按一下內容會選擇它進行編輯。如果您希望透過以下連結瀏覽您的內容，請切換到[預覽模式。](#preview-mode)
 
 根據 [模式](#mode-rail) 您所在的和您選取的內容，可能會有不同的就地編輯選項。
 
@@ -287,13 +287,13 @@ Universal Editor 標頭始終顯示在畫面頂端，就在 [Experience Cloud �
 
 內容編輯完成後，您通常會希望瀏覽其內容，以查看它在其他頁面內容中的樣子。在[預覽模式](#preview-mode)中，您可以點選連結，像讀者一樣瀏覽您的內容。內容在編輯器中呈現的樣子就是將會發佈的樣子。
 
-請注意，在預覽模式下，點選或點擊內容的回應與內容讀者的回應一樣。如果要選取要編輯的內容，請切換到編輯模式，例如 [文字模式](#text-mode) 或 [媒體模式。](#media-mode)
+請注意，在預覽模式下，點選或按一下內容的回應與內容讀者的回應一樣。如果要選取要編輯的內容，請切換到編輯模式，例如 [文字模式](#text-mode) 或 [媒體模式。](#media-mode)
 
 ## 其他資源 {#additional-resources}
 
 若要了解有關 Universal Editor 的詳細資訊，請參閱以下文件。
 
-* [通用編輯器簡介](introduction.md)  — 瞭解通用編輯器如何讓您編輯任何實作中任何內容的任何方面，以便提供卓越的體驗、提高內容速度並提供一流的開發人員體驗。
+* [Universal Editor 簡介](introduction.md) - 了解 Universal Editor 如何在任意實作中編輯任何方面的內容，以便提供卓越的體驗、提高內容速度並提供最先進的開發人員體驗。
 * [使用 Universal Editor 發佈內容](publishing.md) - 了解 Universal Visual Editor 如何發佈內容，和您的應用程式如何處理發佈的內容。
 * [AEM 中 Universal Editor 快速入門](getting-started.md) - 了解如何存取 Universal Editor，以及如何開始檢測您的第一個 AEM 應用程式以使用它。
 * [Universal Editor 架構](architecture.md) - 了解 Universal Editor 的架構，以及資料如何在其服務和階層之間流動。

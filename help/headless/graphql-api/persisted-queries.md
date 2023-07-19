@@ -1,12 +1,12 @@
 ---
 title: 持續性 GraphQL 查詢
-description: 瞭解如何在Adobe Experience Manager as a Cloud Service中保留GraphQL查詢，以最佳化效能。 用戶端應用程式可以使用 HTTP GET 方法要求持續性查詢，回應可以在 Dispatcher 和 CDN 層快取，最終提高用戶端應用程式的效能。
+description: 了解如何在 Adobe Experience Manager as a Cloud Service 中保留 GraphQL 查詢，以將效能最佳化。用戶端應用程式可以使用 HTTP GET 方法要求持續性查詢，回應可以在 Dispatcher 和 CDN 層快取，最終提高用戶端應用程式的效能。
 feature: Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
 source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '1681'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -38,9 +38,9 @@ AEM 有提供 [GraphiQL IDE](/help/headless/graphql-api/graphiql-ide.md)，可�
 
 例如，如果有一個名為 `my-query` 的特定查詢，它使用 Sites 設定 `my-conf` 中的模型 `my-model`：
 
-* 您可以使用建立查詢 `my-conf` 特定的端點，然後查詢會儲存如下：
+* 您可以使用 `my-conf` 專屬端點建立查詢，然後查詢會儲存為：
   `/conf/my-conf/settings/graphql/persistentQueries/my-query`
-* 您可以使用以下專案建立相同的查詢 `global` 端點，但接著查詢會儲存如下：
+* 您可以使用 `global` 端點建立相同查詢，然後查詢會儲存為：
   `/conf/global/settings/graphql/persistentQueries/my-query`
 
 >[!NOTE]
@@ -51,7 +51,7 @@ AEM 有提供 [GraphiQL IDE](/help/headless/graphql-api/graphiql-ide.md)，可�
 
 ## 如何保留 GraphQL 查詢 {#how-to-persist-query}
 
-建議最初在 AEM 作者環境中保留查詢，然後[將查詢傳輸到](#transfer-persisted-query-production)生產 AEM 發佈環境，以供應用程式使用。
+建議最初在 AEM 編寫環境中保留查詢，然後[將查詢傳輸到](#transfer-persisted-query-production)生產 AEM 發佈環境，以供應用程式使用。
 
 有多種保留查詢的方法，包括：
 
@@ -59,7 +59,7 @@ AEM 有提供 [GraphiQL IDE](/help/headless/graphql-api/graphiql-ide.md)，可�
 * cURL - 請參閱以下範例
 * 其他工具，包括 [Postman](https://www.postman.com/)
 
-GraphiQL IDE 是保留查詢的&#x200B;**首選**&#x200B;方法。若要使用 **cURL** 命令列工具保留給定查詢：
+GraphiQL IDE 是保留查詢的&#x200B;**首選**&#x200B;方法。若要使用 **cURL** 命令列工具保留特定查詢：
 
 1. 透過將查詢放入新端點 URL `/graphql/persist.json/<config>/<persisted-label>` 來準備查詢。
 
@@ -196,7 +196,7 @@ GET <AEM_HOST>/graphql/execute.json/<PERSISTENT_PATH>
 
 其中 `PERSISTENT_PATH` 是持續性查詢儲存所在的縮短路徑。
 
-1. 例如， `wknd` 是設定名稱和 `plain-article-query` 是持久查詢的名稱。 若要執行查詢：
+1. 例如 `wknd` 是設定名稱，`plain-article-query` 是持續性查詢的名稱。若要執行查詢：
 
    ```shell
    $ curl -X GET \
@@ -228,7 +228,7 @@ GET <AEM_HOST>/graphql/execute.json/<PERSISTENT_PATH>
 <AEM_HOST>/graphql/execute.json/<PERSISTENT_QUERY_PATH>;variable1=value1;variable2=value2
 ```
 
-例如，下列查詢包含變數 `activity` 若要根據活動值篩選清單：
+例如，以下查詢包含一個變數 `activity` 以根據活動值篩選清單：
 
 ```graphql
 query getAdventuresByActivity($activity: String!) {
@@ -274,11 +274,11 @@ query getAdventuresByActivity($activity: String!) {
 
 {style="table-layout:auto"}
 
-### 作者執行個體 {#author-instances}
+### 編寫執行個體 {#author-instances}
 
-對於作者執行個體，預設值為：
+對於編寫執行個體，預設值為：
 
-* `max-age`  : 60
+* `max-age`：60
 * `s-maxage` : 60
 * `stale-while-revalidate` : 86400
 * `stale-if-error` : 86400
@@ -295,7 +295,7 @@ query getAdventuresByActivity($activity: String!) {
 
 對於發佈執行個體，預設值為：
 
-* `max-age`  : 60
+* `max-age`：60
 * `s-maxage` : 7200
 * `stale-while-revalidate` : 86400
 * `stale-if-error` : 86400
@@ -355,7 +355,7 @@ curl -u admin:admin -X POST \
 
 >[!NOTE]
 >
->對於快取控制，OSGi 設定僅適用於發佈執行個體。設定存在於作者執行個體，但受到忽略。
+>對於快取控制，OSGi 設定僅適用於發佈執行個體。設定存在於編寫執行個體，但受到忽略。
 
 >[!NOTE]
 >
@@ -388,9 +388,10 @@ curl -u admin:admin -X POST \
 
 欄位 `Respond with application/graphql-response+json`(`responseContentTypeGraphQLResponseJson`) 可依要求定義：
 
-* `false` (預設值)：持續性查詢成功與否並不重要。此 `/execute.json/persisted-query` 傳回狀態代碼 `200` 和 `Content-Type` 傳回的標頭是 `application/json`.
+* `false` (預設值)：持續性查詢成功與否並不重要。此 `/execute.json/persisted-query` 會傳回狀態代碼 `200`，而傳回的 `Content-Type` 標頭會是 `application/json`。
 
-* `true`：在執行持續性查詢時若出現任何形式的錯誤，此端點會傳回 `400` 或 `500` (視情況而定)。此外，傳回的 `Content-Type` 是 `application/graphql-response+json`.
+* `true`：
+在執行持續性查詢時若出現任何形式的錯誤，此端點會傳回 `400` 或 `500` (視情況而定)。同時，傳回的 `Content-Type` 為 `application/graphql-response+json`。
 
   >[!NOTE]
   >
@@ -398,7 +399,7 @@ curl -u admin:admin -X POST \
 
 ## 編碼查詢 URL 以供應用程式使用 {#encoding-query-url}
 
-供應用程式使用，建構查詢變數時使用的任何特殊字元(即分號(`;`)，等號(`=`)，斜線 `/`)必須轉換才能使用對應的UTF-8編碼。
+為供應用程式使用，建構查詢變數時使用的任何特殊字元 (即分號 (`;`)、等號 (`=`)、斜線 `/`) 必須是轉換為使用相應的 UTF-8 編碼。
 
 例如：
 
@@ -424,7 +425,7 @@ URL 可以分解成以下幾個部分：
 /graphql/execute.json/wknd/adventure-by-path;adventurePath=/content/dam/wknd/en/adventures/bali-surf-camp/bali-surf-camp
 ```
 
-若要在用戶端應用程式中使用持續性查詢，AEM 無周邊用戶端 SDK 應該用於 [JavaScript](https://github.com/adobe/aem-headless-client-js)、[Java](https://github.com/adobe/aem-headless-client-java) 或 [NodeJS](https://github.com/adobe/aem-headless-client-nodejs)。Headless 用戶端 SDK 會自動將要求中的任何查詢變數適當地編碼。
+若要在用戶端應用程式中使用持續性查詢，AEM Headless 用戶端 SDK 應該用於 [JavaScript](https://github.com/adobe/aem-headless-client-js)、[Java](https://github.com/adobe/aem-headless-client-java) 或 [NodeJS](https://github.com/adobe/aem-headless-client-nodejs)。Headless 用戶端 SDK 會自動將要求中的任何查詢變數適當地編碼。
 
 ## 將持續性查詢轉移到您的生產環境  {#transfer-persisted-query-production}
 
@@ -432,7 +433,7 @@ URL 可以分解成以下幾個部分：
 
 ### 封裝持續性查詢
 
-持續性查詢可以內建在 [AEM 套件](/help/implementing/developing/tools/package-manager.md) 中。然後，AEM 套件可以下載和安裝在不同的環境中。AEM 套件也可以從 AEM 作者環境複製到 AEM 發佈環境。
+持續性查詢可以內建在 [AEM 套件](/help/implementing/developing/tools/package-manager.md) 中。然後，AEM 套件可以下載和安裝在不同的環境中。AEM 套件也可以從 AEM 編寫環境複製到 AEM 發佈環境。
 
 若要建立套件：
 
@@ -440,7 +441,7 @@ URL 可以分解成以下幾個部分：
 1. 點選&#x200B;**建立套件**&#x200B;來建立新套件。這將開啟一個對話框來定義套件。
 1. 在套件定義對話框中，在 **一般**&#x200B;下輸入&#x200B;**名稱**，例如「wknd-persistent-queries」。
 1. 輸入版本號碼，例如「1.0」。
-1. 在&#x200B;**篩選器**&#x200B;下加入新&#x200B;**篩選器**。使用路徑尋找工具選取設定下方的 `persistentQueries` 資料夾。例如，對於 `wknd` 設定，完整路徑為 `/conf/wknd/settings/graphql/persistentQueries`.
+1. 在&#x200B;**篩選器**&#x200B;下加入新&#x200B;**篩選器**。使用路徑尋找工具選取設定下方的 `persistentQueries` 資料夾。例如，對於 `wknd` 設定，完整路徑將為 `/conf/wknd/settings/graphql/persistentQueries`。
 1. 點選&#x200B;**儲存**&#x200B;以儲存新的套件定義並關閉對話框。
 1. 點選新建立之套件定義中的&#x200B;**建置**&#x200B;按鈕。
 

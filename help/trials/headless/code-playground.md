@@ -7,7 +7,7 @@ exl-id: b7dc70f2-74a2-49f7-ae7e-776eab9845ae
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '981'
-ht-degree: 58%
+ht-degree: 100%
 
 ---
 
@@ -31,9 +31,9 @@ ht-degree: 58%
 
 ## CodePen {#codepen}
 
-CodePen 是用於前端 Web 開發的線上程式碼編輯器和遊樂場。它可讓您在瀏覽器中撰寫HTML、CSS和JavaScript程式碼，並幾乎立即看到您的工作結果。 您也可以儲存您的工作並與他人分享。Adobe已在CodePen中建立應用程式，您可使用它從試用環境中擷取JSON資料 [適用於JavaScript的AEM Headless使用者端](https://github.com/adobe/aem-headless-client-js). 您可以按原樣使用此應用程式，或者建立您自己的 CodePen 帳戶以進一步自訂。
+CodePen 是用於前端 Web 開發的線上程式碼編輯器和遊樂場。可讓您在瀏覽器中編寫 HTML、CSS 和 JavaScript 程式碼，並且幾乎可以立即看到您的工作結果。您也可以儲存您的工作並與他人分享。Adobe 已經在 CodePen 中建立應用程式，您可用來透過[適用於 JavaScript 的 AEM Headless 用戶端](https://github.com/adobe/aem-headless-client-js)從您的試用環境擷取 JSON 資料。您可以按原樣使用此應用程式，或者建立您自己的 CodePen 帳戶以進一步自訂。
 
-按一下 **啟動範常式式碼筆應用程式** 試用版中的按鈕會帶您前往CodePen中的應用程式。 該應用程式是使用 JavaScript 擷取 JSON 資料的最精簡範例。此範例應用程式旨在轉譯傳回的任何 JSON 內容，不論基礎內容片段模型的結構為何。開箱即用的應用程式會從 `aem-demo-assets` 包含在試用環境中的持續查詢。 您應該會看到類似於以下內容的 JSON 回應：
+按一下試用版中的「**啟動範例 CodePen 應用程式**」按鈕，您會被帶到 CodePen 中的應用程式。該應用程式是使用 JavaScript 擷取 JSON 資料的最精簡範例。此範例應用程式旨在轉譯傳回的任何 JSON 內容，不論基礎內容片段模型的結構為何。立即可用，該應用程式會從您試用環境中的 `aem-demo-assets` 持續性查詢擷取資料。您應該會看到類似於以下內容的 JSON 回應：
 
 ```json
 {
@@ -53,15 +53,15 @@ CodePen 是用於前端 Web 開發的線上程式碼編輯器和遊樂場。它�
 
 ## JavaScript 程式碼逐步解說 {#code-walkthrough}
 
-此 **JS** CodePen右側的窗格包含範例應用程式的JavaScript。 從第2行開始，您會從Skypack CDN匯入適用於JavaScript的AEM Headless使用者端。 Skypack 用於在沒有建置步驟的情況下方便開發，但您也可以在自己的專案中將 AEM Headless 用戶端搭配 NPM 或 Yarn 使用。如需更多詳細資訊，請參閱 [README](https://github.com/adobe/aem-headless-client-js#aem-headless-client-for-javascript) 中的使用說明。
+CodePen 中的右側 **JS** 窗格包含範例應用程式的 JavaScript。從第 2 行開始，您從 Skypack CDN 匯入適用於 JavaScript 的 AEM Headless 用戶端。Skypack 用於在沒有建置步驟的情況下方便開發，但您也可以在自己的專案中將 AEM Headless 用戶端搭配 NPM 或 Yarn 使用。如需更多詳細資訊，請參閱 [README](https://github.com/adobe/aem-headless-client-js#aem-headless-client-for-javascript) 中的使用說明。
 
 ```javascript
 import AdobeAemHeadlessClientJs from 'https://cdn.skypack.dev/@adobe/aem-headless-client-js@v3.2.0';
 ```
 
-在第6行，您的發佈主機詳細資訊已從以下網址讀取： `publishHost` 查詢引數。 此引數是AEM Headless使用者端擷取資料的主機。 此功能通常會編碼至您的應用程式中，但您使用查詢引數，讓CodePen應用程式更容易搭配不同環境使用。
+在第 6 行，從 `publishHost` 查詢參數讀取您的發佈主機詳細資料。此參數是 AEM Headless 用戶端將從中擷取資料的主機。此功能通常會編碼到您的應用程式中，但您使用查詢參數來使 CodePen 應用程式輕鬆搭配不同環境運作。
 
-您可在第12行設定AEM Headless使用者端：
+您在第 12 行設定 AEM Headless 用戶端：
 
 ```javascript
 const aemHeadlessClient = new AdobeAemHeadlessClientJs({
@@ -75,15 +75,15 @@ const aemHeadlessClient = new AdobeAemHeadlessClientJs({
 
 >[!NOTE]
 >
->此 **serviceURL** 設為使用Proxy Adobe I/O Runtime函式，以避免CORS問題。 您自己的專案不需要此Proxy，但CodePen應用程式需要此Proxy才能與您的試用環境搭配使用。 Proxy 函數設定為使用查詢參數中提供的 **publishHost** 值。
+>**serviceURL**&#x200B;設定為使用 Proxy Adobe I/O Runtime 函數來避免 CORS 問題。您自己的專案不需要此 Proxy，但 CodePen 應用程式需要才能搭配您的試用環境運作。Proxy 函數設定為使用查詢參數中提供的 **publishHost** 值。
 
-最後，函數 `fetchJsonFromGraphQL()` 用於使用 AEM Headless 用戶端執行擷取要求。每次變更程式碼時都會呼叫它，或者可以透過按一下「**重新擷取**」連結來觸發。實際的 `aemHeadlessClient.runPersistedQuery(..)` 呼叫在第 34 行發生。稍後，您會變更此JSON資料的呈現方式，但現在可將其列印至 `#output` div使用 `resultToPreTag(queryResult)` 函式。
+最後，函數 `fetchJsonFromGraphQL()` 用於使用 AEM Headless 用戶端執行擷取要求。每次變更程式碼時都會呼叫它，或者可以透過按一下「**重新擷取**」連結來觸發。實際的 `aemHeadlessClient.runPersistedQuery(..)` 呼叫在第 34 行發生。稍後您會變更此 JSON 資料的轉譯方式，但現在我們只需使用 `resultToPreTag(queryResult)` 函數將其列印到 `#output` div。
 
 ## 從持續性查詢擷取資料 {#use-persisted-query}
 
-在第25行中，您可以指出應用程式應從哪個GraphQL持續查詢擷取資料。 持久查詢名稱是端點名稱的組合(即， `your-project` 或 `aem-demo-assets`)，後面接著正斜線，然後是查詢名稱。 如果您完全按照之前的模組指示進行，則您建立的持久查詢位在 `your-project` 端點。
+在第 25 行，您指示應用程式應從哪個 GraphQL 持續性查詢中擷取資料。持續性查詢名稱是端點名稱 (即 `your-project` 或 `aem-demo-assets`) 的組合，後面接著正斜線，然後是查詢名稱。如果您完全按照前面單元的指示操作，您建立的持續性查詢會位於 `your-project` 端點。
 
-1. 更新 `persistedQueryName` 變數，以使用您在上一個模組中建立的持續查詢。 如果您按照命名建議，您將在 `adventure-list` 端點中建立名稱為 `your-project` 的持續性查詢，並且將 `persistedQueryName` 變數設定為 `your-project/adventure-list`：
+1. 更新 `persistedQueryName` 變數以便它使用您在前一個單元建立的持續性查詢。如果您按照命名建議，您將在 `adventure-list` 端點中建立名稱為 `your-project` 的持續性查詢，並且將 `persistedQueryName` 變數設定為 `your-project/adventure-list`：
 
    ```javascript
    //
@@ -98,7 +98,7 @@ const aemHeadlessClient = new AdobeAemHeadlessClientJs({
 
 ## 變更 JSON 轉譯 {#change-rendering}
 
-JSON會依原樣轉譯為 `pre` 標籤中，沒有太多創意。 您可以切換CodePen來使用 `resultToDom()` 函式取代，以說明如何迭代JSON回應以建立更有趣的結果。
+JSON 按原樣轉譯為 `pre` 標記，這不是很有創意。您可以改變 CodePen 來改用 `resultToDom()` 函數，以說明如何疊代 JSON 回應以產生更有趣的結果。
 
 1. 若要進行此改變，請註解掉第 37 行並刪除第 40 行的註解：
 
@@ -110,14 +110,14 @@ JSON會依原樣轉譯為 `pre` 標籤中，沒有太多創意。 您可以切�
    resultToDom(queryResult);
    ```
 
-1. 此函式將JSON回應中包含的任何影像轉譯為 `img` 標籤之間。 如果您建立的「**冒險**」內容片段不包含任何影像，您可以嘗試透過修改第 25 行來改用 `aem-demo-assets/adventures-all` 持續性查詢：
+1. 此函數會轉譯包含在 JSON 回應中的任何影像作為 `img` 標籤。如果您建立的「**冒險**」內容片段不包含任何影像，您可以嘗試透過修改第 25 行來改用 `aem-demo-assets/adventures-all` 持續性查詢：
 
    ```javascript
    persistedQueryName = 'aem-demo-assets/adventures-all';
    ```
 
-此查詢會產生JSON回應，其中包含影像，以及 `resultToDom()` 函式會將其內嵌轉譯。
+此查詢會產生一個包含影像的 JSON 回應，`resultToDom()` 函數會使它們內嵌轉譯。
 
 ![adventures-all 查詢的結果和 resultToDom 轉譯函數](assets/do-not-localize/adventures-all-query-result.png)
 
-現在您已完成建立模型和查詢的工作，您的內容團隊可以輕鬆接管。 在下一個模組中，您會顯示內容作者流程。
+現在您已經完成了建置模型和查詢的工作，您的內容團隊可以輕鬆接手。在下一個單元，您會展示內容編寫流程。

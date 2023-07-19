@@ -5,7 +5,7 @@ exl-id: d1ce126e-960c-4367-b741-af709dd81010
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '1896'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -67,11 +67,11 @@ AEM as a Cloud Service 現已具備：
 
 ## AEM 更新 {#aem-updates}
 
-AEM as a Cloud Service 現在使用持續整合與持續傳送 (CI/CD) 來確保您的專案使用最新的 AEM 版本。這表示生產和預備執行個體會更新到最新的 AEM 版本，而不會對使用者中斷服務。
+AEM as a Cloud Service 現在使用持續整合與持續傳送 (CI/CD) 來確保您的專案使用最新的 AEM 版本。這表示生產和中繼執行個體會更新到最新的 AEM 版本，而不會對使用者中斷服務。
 
 >[!NOTE]
 >
->如果生產環境更新失敗，Cloud Manager 會自動復原預備環境。這是自動完成的，以確保在更新完成後，預備環境和生產環境使用相同的 AEM 版本。
+>如果生產環境更新失敗，Cloud Manager 會自動復原中繼環境。這是自動完成的，以確保在更新完成後，中繼環境和生產環境使用相同的 AEM 版本。
 
 AEM 版本更新有兩種類型：
 
@@ -97,13 +97,13 @@ Adobe Cloud Manager 是 AEM as a Cloud Service 的持續升級方法不可或缺
 
 Cloud Manager 是：
 
-* 用於管理 AEM 方案和環境，
+* 用於管理 AEM 計畫和環境，
 
 * AEM as a Cloud Service 的重要元件；首先為每個新租用戶提供 Cloud Manager 存取權，
 
 * 您的營運和開發人員的單一進入點。
 
-具體而，可以從 Cloud Manager 建立之 AEM 方案的數量和類型來自：
+具體而，可以從 Cloud Manager 建立之 AEM 計畫的數量和類型來自：
 
 * 客戶授權協議，
 
@@ -113,11 +113,11 @@ Cloud Manager 是：
 
 Cloud Manager 已經發展成自助式入口網站，可以在其中建立和設定 AEM as a Cloud Service 的主要元件：
 
-* 建立及管理新方案。另請參閱 [瞭解方案和方案型別](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) 以取得更多詳細資料。
+* 建立及管理新計畫。如需更多詳細資訊，請參閱[了解計畫和計畫類型](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)。
 
-* 在這些方案中建立和管理 AEM 環境。另請參閱 [管理環境](/help/implementing/cloud-manager/manage-environments.md) 以取得更多詳細資料。
+* 在這些方案中建立和管理 AEM 環境。如需更多詳細資訊，請參閱[管理環境](/help/implementing/cloud-manager/manage-environments.md)。
 
-* 建立和管理用於將客戶程式碼和相關設定部署到特定環境的管道。另請參閱 [設定CI-CD管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) 以取得更多詳細資料。
+* 建立和管理用於將客戶程式碼和相關設定部署到特定環境的管道。如需更多詳細資訊，請參閱[設定您的 CI-CD 管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)。
 
 * 收到有關這些元件的重要生命週期事件的通知 (例如，產品更新)。
 
@@ -150,7 +150,7 @@ Cloud Manager 在跨多個地理區域的資料中心建立環境，使用範圍
 
 >[!TIP]
 >
->如需入門流程的完整總覽，請參閱 [入門歷程](/help/journey-onboarding/overview.md).
+>如需上線流程的完整概觀，請參閱[上線歷程](/help/journey-onboarding/overview.md)。
 
 ## 開發 {#developing}
 
@@ -164,7 +164,7 @@ Cloud Manager 在跨多個地理區域的資料中心建立環境，使用範圍
 
 對於要在 AEM as a Cloud Service 上執行的現有 AEM 應用程式，需要執行以下步驟：
 
-* 應用程式的程式碼和設定必須儲存在關聯的 Cloud Manager 方案的 Git 程式碼存放庫中。
+* 應用程式的程式碼和設定必須儲存在關聯的 Cloud Manager 計畫的 Git 程式碼存放庫中。
 * 應用程式的程式碼和設定必須與最新版本的基準 AEM 影像 (可能每天都在變化) 相容。
    * 必須使用與 Cloud Manager 環境關聯的 Cloud Manager 管道建置和部署客戶應用程式。
 * 客戶應用程式必須通過管道中強制執行的所有程式碼品質、安全性和效能閘道。
@@ -172,13 +172,13 @@ Cloud Manager 在跨多個地理區域的資料中心建立環境，使用範圍
 
 此過程通常稱為雲端優先開發。由於端到端的持續時間預計需要幾分鐘 (從 20 到 50 不等，取決於應用程式的複雜性)，因此有必要採用快速開發方法，以避免在雲端嘗試變更擱置的程式碼和設定。
 
-Web 主控台，這個管理 OSGI 套件及其關聯設定的地方，先前也是 AEM QuickStart 的一部分，現在 AEM as a Cloud Service 已不再提供。新的開發人員主控台提供了大部分執行階段資訊的唯讀介面。有了這個主控台，開發人員可以選擇並直接登入作者或發佈服務的任何特定節點，並檢視相關資訊。
+Web 主控台，這個管理 OSGI 套件及其關聯設定的地方，先前也是 AEM QuickStart 的一部分，現在 AEM as a Cloud Service 已不再提供。新的 Developer Console 提供了大部分執行階段資訊的唯讀介面。有了這個主控台，開發人員可以選擇並直接登入編寫或發佈服務的任何特定節點，並檢視相關資訊。
 
 >[!NOTE]
 >
 >另請參閱 [OSGi 設定](/help/implementing/deploying/overview.md#osgi-configuration)
 
-開發人員的另一個常見需求是快速存取各種環境的記錄檔。有了 AEM as a Cloud Service，作者或發佈節點中的不同節點的記錄檔可經由 Cloud Manager 取得，採用可下載的檔案形式或透過 API。
+開發人員的另一個常見需求是快速存取各種環境的記錄檔。有了 AEM as a Cloud Service，編寫或發佈節點中的不同節點的記錄檔可經由 Cloud Manager 取得，採用可下載的檔案形式或透過 API。
 
 由於程式碼和內容的明確分離，開發人員可以使用特定過程來更新內容作為部署的一部分。可變內容的典型使用案例：
 
@@ -192,7 +192,7 @@ Web 主控台，這個管理 OSGI 套件及其關聯設定的地方，先前也�
 
 ### 本機開發 {#aem-as-a-cloud-service-developing-local-development}
 
-為了支援快速反複和開發，您也可以在AEMas a Cloud Service環境之外開發AEM應用程式。 為此，開發人員可以使用以下成品：
+為了支援快速疊代和開發，也可以在 AEM as a Cloud Service 外部開發 AEM 應用程式。為此，開發人員可以使用以下成品：
 
 * AEM as a Cloud Service QuickStart：最新 AEM 程式碼庫的以 `.jar` 為基礎、獨立的安裝程式，具有相同的功能和 API 介面。
 
@@ -200,13 +200,13 @@ Web 主控台，這個管理 OSGI 套件及其關聯設定的地方，先前也�
 
 >[!NOTE]
 >
->應注意，Cloud QuickStart 不允許使用所有 AEM Sites 和 AEM Assets 功能。它包含一個簡單的作者環境，可以在其中開發和測試大部分的擴充功能。
+>應注意，Cloud QuickStart 不允許使用所有 AEM Sites 和 AEM Assets 功能。它包含一個簡單的編寫環境，可以在其中開發和測試大部分的擴充功能。
 
 ## 運作和效能 {#operations-and-performance}
 
 >[!NOTE]
 >
->有關詳細資訊，請從[備份](/help/operations/backup.md)、[索引](/help/operations/indexing.md)和[其他維護任務開始](/help/operations/maintenance.md)。
+>如需詳細資訊，請從[備份](/help/operations/backup.md)、[索引](/help/operations/indexing.md)和[其他維護任務開始](/help/operations/maintenance.md)。
 
 使用 AEM as a Cloud Service，此類操作是自動進行，因此不再需要中斷任何服務。
 
@@ -226,7 +226,7 @@ AEM as a Cloud Service 的操作也受到新的監控、報告和警報基礎結
 >
 >如需更多詳細資訊，請參閱[安全性 - IMS 支援](/help/security/ims-support.md)。
 
-AEM as a Cloud Service 最重大的變更是完全整合使用 Adobe ID 以存取作者層。
+AEM as a Cloud Service 最重大的變更是完全整合使用 Adobe ID 以存取編寫層。
 
 這需要使用 [Adobe Admin Console](https://helpx.adobe.com/tw/enterprise/using/admin-console.html) 來管理使用者和使用者群組。使用者帳戶可讓您的使用者存取 Adobe 產品和服務，因為使用者個人資料集中在 Adobe Identity Management System (IMS)，可跨所有雲端服務共用。獲得 AEM 存取權後，可以在 AEM as a Cloud Service 中參考使用者帳戶 (如同以往)；例如，用於定義 AEM 安全性使用者介面的角色和權限。
 
@@ -242,7 +242,7 @@ AEM as a Cloud Service 最重大的變更是完全整合使用 Adobe ID 以存�
 >
 >如需更多詳細資訊，[基本處理](/help/sites-cloud/authoring/getting-started/basic-handling.md)是很好的起點。
 
-對於Sites和Assets而言，過去使用AEM的任何人都會非常熟悉編寫使用者介面(UI)的基本原則。
+使用過 AEM 的任何人都會非常熟悉 Sites 和 Assets 的編寫使用者介面 (UI) 的基本原理。
 
 主要區別在於 UI 是純觸控的；不再提供傳統 UI。除此以外，基本原理保持不變，只有很小的變化明顯。
 
@@ -274,6 +274,6 @@ Adobe Experience Manager Assets as a Cloud Service 為企業提供一種雲端�
 
 >[!TIP]
 >
->取得AEMas a Cloud Service的概覽後，您可以檢閱 [入門歷程](/help/journey-onboarding/overview.md).
+>大致了解 AEM as a Cloud Service 後，您可以透過查看[上線歷程](/help/journey-onboarding/overview.md)來快速上線。
 >
 >已經入門或準備好深入測試 AEM 功能？安裝 [AEM 參考示範附加元件](/help/journey-sites/demos-add-on/overview.md)以使用豐富的範例探索 AEM 的強大功能。

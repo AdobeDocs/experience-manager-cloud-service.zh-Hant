@@ -145,7 +145,7 @@ ht-degree: 99%
          + [2021.11.0 版發行說明](/help/journey-migration/release-notes/release-notes-migration-tools-2021-11-0.md)
          + [2021.10.0 版發行說明](/help/journey-migration/release-notes/release-notes-migration-tools-2021-10-0.md)
    + Workfront for Experience Manager 加強連接器發行說明{#workfront}
-      + [Workfront for Experience Manager 加強連接器目前發行說明](/help/assets/release-notes-enhanced-connector-workfront.md)
+      + [Workfront for Experience Manager 加強連接器最新發行說明](/help/assets/release-notes-enhanced-connector-workfront.md)
    + [新增功能 ](/help/release-notes/what-is-new.md)
    + [AEM Cloud Service 的重大變更](/help/release-notes/aem-cloud-changes.md)
    + [過時和移除的功能](/help/release-notes/deprecated-removed-features.md)
@@ -195,7 +195,7 @@ ht-degree: 99%
 + AEM as a Cloud Service 移轉歷程 {#migration-journey}
    + [移動 AEM as a Cloud Service 快速入門](/help/journey-migration/getting-started.md)
    + [整備階段](/help/journey-migration/readiness.md)
-   + [實施階段](/help/journey-migration/implementation.md)
+   + [實作階段](/help/journey-migration/implementation.md)
    + [上線](/help/journey-migration/go-live.md)
    + [上線後](/help/journey-migration/post-go-live.md)
    + [Experience Manager as a Cloud Service 合作夥伴移轉指南](/help/journey-migration/getting-started-partners.md)
@@ -206,7 +206,7 @@ ht-degree: 99%
       + 使用 Cloud Acceleration Manager {#using-cam}
          + [Cloud Acceleration Manager 快速入門](/help/journey-migration/cloud-acceleration-manager/using-cam/getting-started-cam.md)
          + [整備階段](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-readiness-phase.md)
-         + [實施階段](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-implementation-phase.md)
+         + [實作階段](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-implementation-phase.md)
          + [上線階段](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-golive-phase.md)
    + 雲端轉換工具 {#cloud-migration}
       + 最佳做法分析工具 {#best-practices-analyzer}
@@ -783,8 +783,8 @@ ht-degree: 99%
          + [使用 AEM 編寫 Headless 的基礎知識](/help/journey-headless/author/basics.md)
          + [了解如何在內容片段中使用參照](/help/journey-headless/author/references.md)
          + [了解如何為內容片段定義中繼資料和標記](/help/journey-headless/author/metadata-tagging.md)
-+ 實施 {#implementing}
-   + [為 AEM as a Cloud Service 實施應用程式](/help/implementing/home.md)
++ 實作 {#implementing}
+   + [為 AEM as a Cloud Service 實作應用程式](/help/implementing/home.md)
    + 使用 Cloud Manager {#using-cloud-manager}
       + 計畫 {#programs}
          + [計畫和計畫類型](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
@@ -888,7 +888,7 @@ ht-degree: 99%
          + 搜尋 {#search}
             + [查詢產生器 API](/help/implementing/developing/introduction/query-builder-api.md)
             + [查詢產生器述詞參考](/help/implementing/developing/introduction/query-builder-predicates.md)
-            + [實施自訂述詞求值器](/help/implementing/developing/introduction/query-builder-custom-predicate.md)
+            + [實作自訂述詞求值器](/help/implementing/developing/introduction/query-builder-custom-predicate.md)
          + [自訂錯誤頁面](/help/implementing/developing/introduction/custom-error-page.md)
          + [AEM 節點類型](/help/implementing/developing/introduction/node-types.md)
       + [Headless 體驗管理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/introduction.html)

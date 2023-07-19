@@ -5,7 +5,7 @@ exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
 source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '1189'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -21,19 +21,19 @@ ht-degree: 89%
 1. 部署到 Stage 環境
    * 程式碼構建並部署到 Stage 環境，用於自動化功能測試、UI 測試、體驗稽核和使用者驗收測試 (UAT)。
 1. 部署至生產環境
-   * 一旦構建在 Stage 上得到驗證，並批准升級到生產，相同的構建工件將部署到生產環境。
+   * 一旦構建在 Stage 上得到驗證，並批准升級到生產，相同的組建成品將部署到生產環境。
 
 _只有 Full Stack Code 流水線類型支援程式碼掃描、功能測試、UI 測試和體驗稽核。_
 
 ## 在 AEM as a Cloud Service 中使用 Cloud Manager 部署程式碼 {#deploying-code-with-cloud-manager}
 
-[在配置了 Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)  (儲存庫、環境和測試環境) 後，您就可以部署程式碼。
+[在配置了 Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) (儲存庫、環境和測試環境) 後，您就可以部署程式碼。
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織。
 
-1. 按一下要部署程式碼的程序。
+1. 按一下要部署程式碼的計畫。
 
-1. 點擊&#x200B;**部署**&#x200B;從號召性用語&#x200B;**總覽**&#x200B;畫面開始部署過程。
+1. 按一下&#x200B;**部署**&#x200B;從號召性用語&#x200B;**概觀**&#x200B;畫面開始部署過程。
 
    ![號召性用語](assets/deploy-code1.png)
 
@@ -56,12 +56,12 @@ _只有 Full Stack Code 流水線類型支援程式碼掃描、功能測試、UI
 **階段部署**&#x200B;階段。涉及這些步驟。
 
 * **驗證**- 此步驟確保管道配置為使用當前可用的資源。例如，測試設定的分支是否存在並且環境是否可用。
-* **建置及單位測試** - 此步驟會執行容器化的建置流程。 
-   * 另請參閱 [建置環境詳細資訊](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) 以取得有關組建環境的詳細資訊。
-* **程式碼掃描** - 此步驟會評估應用計劃程式碼的品質。
-   * 另請參閱 [程式碼品質測試](/help/implementing/cloud-manager/code-quality-testing.md) 以取得測試流程的詳細資訊。
+* **建置及單位測試** - 此步驟會執行容器化的建置流程。
+   * 如需有關建置環境的詳細資料，請參閱[建置環境詳細資訊](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)。
+* **程式碼掃描** - 此步驟會評估應用程式的程式碼品質。
+   * 如需有關測試流程的詳細資訊，請參閱[程式碼品質測試](/help/implementing/cloud-manager/code-quality-testing.md)。
 * **構建映像**- 此過程負責將構建步驟生成的內容和調度程序包轉換為 Docker 映像和 Kubernetes 配置。
-* **部署到階段**- 將映像部署到登台環境以準備[階段測試階段。](#stage-testing)
+* **部署到階段**- 將映像部署到中繼環境以準備[階段測試階段。](#stage-testing)
 
 ![中繼部署](assets/stage-deployment.png)
 
@@ -70,26 +70,26 @@ _只有 Full Stack Code 流水線類型支援程式碼掃描、功能測試、UI
 這&#x200B;**階段測試**&#x200B;階段涉及這些步驟。
 
 * **產品功能測試**- Cloud Manager 管道執行針對舞台環境執行的測試。
-   * 另請參閱 [產品功能測試](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing) 以取得更多詳細資料。
+   * 如需更多詳細資訊，請參閱[產品功能測試](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing)。
 
-* **自訂功能測試** - 步驟一律存在且不能跳過。如果構建沒有生成測試 JAR，則測試預設透過。
-   * 另請參閱 [自訂功能測試](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing) 以取得更多詳細資料。
+* **自訂功能測試** - 管道中的此步驟一律存在且不能跳過。如果構建沒有生成測試 JAR，則測試預設透過。
+   * 如需更多詳細資訊，請參閱[自訂功能測試](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing)。
 
 * **自訂 UI 測試**&#x200B;是一項選擇性功能，可讓您為自訂應用程式建立和自動執行 UI 測試。
    * UI 測試是封裝在 Docker 影像中的 Selenium 型測試，以便在語言和架構 (例如 Java 和 Maven、Node 和 WebDriver.io 或任何其他根據 Selenium 建置的架構和技術) 中提供廣泛的選擇。
-   * 另請參閱 [自訂UI測試](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing) 以取得更多詳細資料。
+   * 如需更多詳細資訊，請參閱[自訂 UI 測試](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing)。
 
 * **體驗稽核** - 步驟一律存在且不能跳過。在執行生產管道時，在執行檢查的自訂功能測試之後會包含一個體驗稽核步驟。
    * 配置的頁面將提交給服務並進行評估。
    * 結果是資訊性的，並顯示分數以及當前和以前分數之間的變化。
-   * 此深入分析對於判斷目前部署是否引入回歸非常有用。
-   * 另請參閱 [瞭解體驗稽核結果](/help/implementing/cloud-manager/experience-audit-testing.md) 以取得更多詳細資料。
+   * 此深入分析對於判斷是否有會於目前部署引入的迴歸十分有用。
+   * 如需更多詳細資訊，請參閱[了解體驗稽核結果](/help/implementing/cloud-manager/experience-audit-testing.md)。
 
 ![階段測試](assets/stage-testing.png)
 
 ## 生產部署階段 {#deployment-production}
 
-部署到生產拓撲的流程略有不同，以將對訪客AEM網站的影響降至最低。
+為了對 AEM 網站訪客的影響降至最低，部署到生產拓撲的流程會略有不同。
 
 生產部署通常會遵循和前述相同的步驟，但採用滾動方式。
 
@@ -120,7 +120,7 @@ _只有 Full Stack Code 流水線類型支援程式碼掃描、功能測試、UI
 
 ## 部署流程 {#deployment-process}
 
-所有云服務部署都遵循滾動過程，以確保零停機時間。另請參閱 [滾動式部署如何運作](/help/implementing/deploying/overview.md#how-rolling-deployments-work) 以深入瞭解。
+所有云服務部署都遵循滾動過程，以確保零停機時間。如需更多資訊，請參閱[滾動部署的工作原理](/help/implementing/deploying/overview.md#how-rolling-deployments-work)。
 
 >[!NOTE]
 >
@@ -149,7 +149,7 @@ _只有 Full Stack Code 流水線類型支援程式碼掃描、功能測試、UI
 
 ### 識別重新執行的執行
 
-若要識別是否為重新執行的執行，可檢查觸發程序欄位。其值為 *RE_EXECUTE*.
+若要識別是否為重新執行的執行，可檢查觸發程序欄位。其值為 *RE_EXECUTE*。
 
 ### 觸發新執行
 
@@ -193,4 +193,4 @@ _只有 Full Stack Code 流水線類型支援程式碼掃描、功能測試、UI
 
 _href_ 值的語法並非打算用作參考點。應總是從 HAL 連結讀取實際值，而不是將其產生。
 
-提交 *PUT* 對此端點的請求會導致 *201* 如果成功，則會回應，而回應主體是新執行的表示方式。 這類似於透過 API 啟動常規執行。
+如果成功，則向此端點提交 *PUT* 請求會導致 *201* 回應，而且該回應主體是新執行的表示方式。這類似於透過 API 啟動常規執行。

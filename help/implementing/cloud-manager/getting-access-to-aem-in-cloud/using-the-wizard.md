@@ -5,7 +5,7 @@ exl-id: 03736ca7-1345-4faf-a61a-f9213ab5c89a
 source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '312'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -13,11 +13,11 @@ ht-degree: 96%
 
 建立生產計畫後，Cloud Manger 會提供一個精靈根據 [AEM 專案原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hant)來建立最小的 AEM 專案，以便您快速開始。
 
-請按照下列步驟，使用精靈在 Cloud Manager 中建立 AEM 應用計劃專案。
+請按照下列步驟，使用精靈在 Cloud Manager 中建立 AEM 應用程式專案。
 
 1. 按照[建立生產計畫](creating-production-programs.md)文件中的步驟建立生產計畫
 
-1. 計畫設定完成後，存取計畫的&#x200B;**總覽**&#x200B;畫面，然後在頂端查看&#x200B;**建立分支和專案**&#x200B;召喚行動卡。
+1. 計畫設定完成後，存取計畫的&#x200B;**概觀**&#x200B;畫面，然後在頂端查看&#x200B;**建立分支和專案**&#x200B;召喚行動卡。
 
    ![精靈的召喚行動卡](assets/create-wizard1.png)
 
@@ -32,17 +32,17 @@ ht-degree: 96%
 1. 按一下&#x200B;**「建立」**，以開始專案建立計畫。
 
 
-**正在建立專案**&#x200B;卡會取代&#x200B;**建立分支和專案**&#x200B;召喚行動卡，成為&#x200B;**計畫總覽**&#x200B;畫面的頂端。
+**正在建立專案**&#x200B;卡會取代&#x200B;**建立分支和專案**&#x200B;召喚行動卡，成為&#x200B;**計畫概觀**&#x200B;畫面的頂端。
 
 ![正在建立專案](assets/create-wizard3.png)
 
-計畫建立完後，**新增環境**&#x200B;卡會取代&#x200B;**計畫總覽**&#x200B;畫面頂端的&#x200B;**正在建立專案**&#x200B;卡。
+計畫建立完後，**新增環境**&#x200B;卡會取代&#x200B;**計畫概觀**&#x200B;畫面頂端的&#x200B;**正在建立專案**&#x200B;卡。
 
 ![新增環境](assets/create-wizard4.png)
 
-現在，您已將根據 AEM 原型的 AEM 專案新增到您的 Git 存放庫中，作為您專案開發的基礎。接下來，您可以建立能部署專案計劃碼的環境。
+現在，您已將根據 AEM 原型的 AEM 專案新增到您的 Git 存放庫中，作為您專案開發的基礎。接下來，您可以建立能部署專案程式碼的環境。
 
-另請參閱 [管理環境](/help/implementing/cloud-manager/manage-environments.md) 以瞭解如何新增或管理環境。
+若要了解如何新增或管理環境，請參閱[管理您的環境](/help/implementing/cloud-manager/manage-environments.md)。
 
 >[!NOTE]
 >

@@ -1,118 +1,118 @@
 ---
-title: Launch
-description: Launches 可讓您有效率地開發未來版本的內容。可讓您完成變更以供未來發佈，同時維護目前的頁面
+title: 啟動
+description: 啟動可讓您有效率地開發未來版本的內容。可讓您完成變更以供未來發佈，同時維護目前的頁面
 exl-id: 3e410120-d08f-4d05-932f-07bc4440af2b
 source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '903'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
-# Launch {#launches}
+# 啟動 {#launches}
 
-Launches 可讓您有效率地開發未來版本的內容。
+啟動可讓您有效率地開發未來版本的內容。
 
-建立 Launch 可讓您完成變更以供未來發佈 (同時維護目前的頁面)。在編輯和更新您的 Launch 頁面後，您將它們提升回來源，然後啟動來源頁面 (頂層)。提升功能會將 Launch 內容複製回來源頁面，可以手動或自動完成 (視建立和編輯 Launch 時設定的欄位)。
+建立啟動可讓您完成變更以供未來發佈 (同時維護目前的頁面)。在編輯和更新您的啟動頁面後，您將它們提升回來源，然後啟動來源頁面 (頂層)。提升功能會將啟動內容複製回來源頁面，可以手動或自動完成 (視建立和編輯啟動時設定的欄位)。
 
-例如，您的線上商店的季節性產品頁面每季更新一次，以便特色產品符合目前季節。為準備下一季的更新，您可以建立一個相應網頁的 Launch。在整個季度中，以下變更會累積在 Launch 副本中：
+例如，您的線上商店的季節性產品頁面每季更新一次，以便特色產品符合目前季節。為準備下一季的更新，您可以建立一個相應網頁的啟動。在整個季度中，以下變更會累積在啟動副本中：
 
-* 因正常維護工作而產生的來源頁面變更。這些變更會自動複製到 Launch 頁面中。
-* 直接在 Launch 頁面上執行的編輯，為下一季做準備。
+* 因正常維護工作而產生的來源頁面變更。這些變更會自動複製到啟動頁面中。
+* 直接在啟動頁面上執行的編輯，為下一季做準備。
 
 您也可以：
 
-* 導覽 Launch 分支中的內容，視需要新增或移除頁面。
+* 導覽啟動分支中的內容，視需要新增或移除頁面。
 * 預覽發佈內容在未來特定日期/時間的外觀。
 
-下一季到來時，您提升 Launch 頁面，以便您可以發佈來源頁面 (包含更新的內容)。您可以提升所有頁面，也可僅提升您修改過的頁面。
+下一季到來時，您提升啟動頁面，以便您可以發佈來源頁面 (包含更新的內容)。您可以提升所有頁面，也可僅提升您修改過的頁面。
 
-Launches 也可以：
+啟動也可以：
 
-* 為多個根分支建立。雖然您可以為整個網站建立 Launch (並在其中進行變更)，但這可能是不切實際的，因為需要複製整個網站。當涉及數百甚至數千頁時，複製動作和之後提升工作所需的比較作業，會影響系統要求和效能。
-* 巢狀 (Launch 中有 Launch) 可讓您在現有 Launch 中建立 Launch，如此作者可以利用已完成的變更，而不用對每個 Launch 重複進行相同的變更。
+* 為多個根分支建立。雖然您可以為整個網站建立啟動 (並在其中進行變更)，但這可能是不切實際的，因為需要複製整個網站。當涉及數百甚至數千頁時，複製動作和之後提升工作所需的比較作業，會影響系統要求和效能。
+* 巢狀 (啟動中有啟動) 可讓您在現有啟動中建立啟動，如此作者可以利用已完成的變更，而不用對每個啟動重複進行相同的變更。
 
-此章節描述如何從 Sites 主控台或 [Launches](#the-launches-console) 主控台，建立、編輯和提升 (如有需要可[刪除](/help/sites-cloud/authoring/launches/creating.md#deleting-a-launch)) Launch 頁面。
+此章節描述如何從 Sites 主控台或 [啟動](#the-launches-console) 主控台，建立、編輯和提升 (如有需要可[刪除](/help/sites-cloud/authoring/launches/creating.md#deleting-a-launch)) 啟動頁面。
 
-* [建立 Launch](/help/sites-cloud/authoring/launches/creating.md)
-* [編輯 Launch](/help/sites-cloud/authoring/launches/editing.md)
-* [管理 Launch 中的頁面](/help/sites-cloud/authoring/launches/managing-pages.md)
-* [使用 Timewarp 根據 Launch 預覽您的內容](/help/sites-cloud/authoring/launches/preview.md)
-* [提升 Launch](/help/sites-cloud/authoring/launches/promoting.md)
+* [建立啟動](/help/sites-cloud/authoring/launches/creating.md)
+* [編輯啟動](/help/sites-cloud/authoring/launches/editing.md)
+* [管理啟動中的頁面](/help/sites-cloud/authoring/launches/managing-pages.md)
+* [使用 Timewarp 根據啟動預覽您的內容](/help/sites-cloud/authoring/launches/preview.md)
+* [提升啟動](/help/sites-cloud/authoring/launches/promoting.md)
 
-## Launch - 事件順序 {#launches-the-order-of-events}
+## 啟動 - 事件順序 {#launches-the-order-of-events}
 
-Launches 可讓您有效率地為一或多個已啟動網頁的未來版本開發內容。
+啟動可讓您有效率地為一或多個已啟動網頁的未來版本開發內容。
 
-Launches 可讓您：
+啟動可讓您：
 
 * 建立來源頁面的副本：
-   * 副本是您的 Launch。
+   * 副本是您的啟動。
    * 頂層來源頁面稱為&#x200B;**生產**。
       * 來源頁面可以取自多個 (獨立的) 分支。
 
-  ![Launch 操作順序](/help/sites-cloud/authoring/assets/launches-order.png)
+  ![啟動操作順序](/help/sites-cloud/authoring/assets/launches-order.png)
 
-* 編輯 Launch 設定：
-   * 在 Launch 中新增或移除頁面和/或分支。
-   * 編輯 Launch 屬性；例如&#x200B;**標題**、**Launch 日期**、**生產就緒**&#x200B;標幟。
+* 編輯啟動設定：
+   * 在啟動中新增或移除頁面和/或分支。
+   * 編輯啟動屬性；例如&#x200B;**標題**、**啟動日期**、**生產就緒**&#x200B;標幟。
 * 您可以手動或自動提升和發佈內容：
    * 手動：
-      * 當準備好發佈時，將 Launch 內容推回 **Target** (來源頁面)。
+      * 當準備好發佈時，將啟動內容推回 **Target** (來源頁面)。
       * 從來源頁面 (推回後) 發佈內容。
       * 提升所有頁面，或僅提升修改後的頁面。
    * 自動 - 這涉及以下項目：
-      * **Launch** (**上線**) **日期**&#x200B;欄位：這可在建立或編輯 Launch 時設定。
-      * **生產就緒**&#x200B;標幟：這只能在編輯 Launch 時設定。
-      * 如果 **生產就緒** 旗標已設定，啟動會自動升級至指定上的生產頁面 **Launch**(**即時**) **日期**. 提升後，生產頁面會自動發佈。\
+      * **啟動** (**上線**) **日期**&#x200B;欄位：這可在建立或編輯啟動時設定。
+      * **生產就緒**&#x200B;標幟：這只能在編輯啟動時設定。
+      * 如果&#x200B;**生產就緒**&#x200B;標幟已設定，啟動會於 **啟動** (**上線**) **日期**&#x200B;自動提升至生產頁面。提升後，生產頁面會自動發佈。\
         如果未設定日期，則該標幟將無效。
-* 並行更新來源頁面和 Launch 頁面：
-   * 對來源頁面所做的變更會自動在啟動副本中實作（若已透過繼承設定；即作為即時副本）。
-   * 可以在不中斷這些自動更新或來源頁面的情況下，對 Launch 副本進行變更。
+* 並行更新來源頁面和啟動頁面：
+   * 對來源頁面的變更會自動實作在啟動副本 (如果設定為繼承，即為 Live Copy)。
+   * 可以在不中斷這些自動更新或來源頁面的情況下，對啟動副本進行變更。
 
   ![並行動作](/help/sites-cloud/authoring/assets/launches-parallel.png)
 
-* [建立巢狀 Launch](/help/sites-cloud/authoring/launches/creating.md#creating-a-nested-launch) - Launch 中的 Launch：
-   * 來源是現有的 Launch。
-   * 您可以[將巢狀 Launch](/help/sites-cloud/authoring/launches/promoting.md#promoting-a-nested-launch) 提升到任何目標，這可以是父 Launch 或頂層來源頁面 (生產)。
+* [建立巢狀啟動](/help/sites-cloud/authoring/launches/creating.md#creating-a-nested-launch) - 啟動中的啟動：
+   * 來源是現有的啟動。
+   * 您可以[將巢狀啟動](/help/sites-cloud/authoring/launches/promoting.md#promoting-a-nested-launch) 提升到任何目標，這可以是父啟動或頂層來源頁面 (生產)。
 
-  ![巢狀 Launch](/help/sites-cloud/authoring/assets/launches-nested.png)
+  ![巢狀啟動](/help/sites-cloud/authoring/assets/launches-nested.png)
 
   >[!CAUTION]
   >
-  >刪除 Launch 將移除 Launch 本身和所有子系巢狀 Launch。
+  >刪除啟動將移除啟動本身和所有子系巢狀啟動。
 
 >[!NOTE]
 >
->建立和編輯 Launch 需要 `/content/launches` 的存取權 - 與預設群組 `content-authors` 相同。
+>建立和編輯啟動需要 `/content/launches` 的存取權 - 與預設群組 `content-authors` 相同。
 >
 >如果您遇到任何問題，請聯絡您的系統管理員。
 
-## Launches 在參考內 (Sites 主控台) {#launches-in-references-sites-console}
+## 啟動在在參考內 (Sites 主控台) {#launches-in-references-sites-console}
 
-1. 在 **Sites** 主控台中，導覽至 Launch 來源。
+1. 在 **Sites** 主控台中，導覽至啟動來源。
 1. 開啟&#x200B;**參考**&#x200B;邊欄並選取來源頁面。
-1. 選取 **啟動**，則會列出現有啟動項，以及對 **啟動主控台**：
+1. 選取 **啟動**，會列出現有的啟動，以及 **啟動主控台**&#x200B;的存取權：
 
-   ![網站主控台中的 Launch 參考](/help/sites-cloud/authoring/assets/launches-references.png)
+   ![網站主控台中的啟動參考](/help/sites-cloud/authoring/assets/launches-references.png)
 
-1. 點選/按一下適當的啟動，會顯示可能的動作清單：
+1. 點選/按一下適當的啟動，會顯示可用動作清單：
 
-   ![網站主控台中對 Launch 執行的動作](/help/sites-cloud/authoring/assets/launches-references-actions.png)
+   ![網站主控台中對啟動執行的動作](/help/sites-cloud/authoring/assets/launches-references-actions.png)
 
-## Launches 主控台 {#the-launches-console}
+## 啟動主控台 {#the-launches-console}
 
-Launches 主控台可提供您 Launch 的概觀，並允許您對列出的 Launch 執行動作。主控台可透過以下方式存取：
+啟動主控台可提供您啟動的概觀，並允許您對列出的啟動執行動作。主控台可透過以下方式存取：
 
-* **工具**&#x200B;主控台：**工具**、**Sites**、**Launches**。
+* **工具**&#x200B;主控台：**工具**、**Sites**、**啟動**。
 
-* 在 Sites 主控台瀏覽來源內容時，**Launches 主控台**&#x200B;位於&#x200B;**參考**&#x200B;邊欄 **Launch** 區段的底部。
+* 在 Sites 主控台瀏覽來源內容時，**啟動主控台**&#x200B;位於&#x200B;**參考**&#x200B;邊欄 **啟動** 區段的底部。
 
-  ![Launches 主控台位於 Sites 主控台的 Launch 參考中](/help/sites-cloud/authoring/assets/launches-references.png)
+  ![啟動主控台位於 Sites 主控台的啟動參考中](/help/sites-cloud/authoring/assets/launches-references.png)
 
-* 在 Sites 主控台導覽 Launch 內容時，**Launch** 按鈕位於右上角：
+* 在 Sites 主控台導覽啟動內容時，**啟動** 按鈕位於右上角：
 
-  ![Sites 主控台中的 Launch 選項](/help/sites-cloud/authoring/assets/launches-console-navigate-launch-content.png)
+  ![Sites 主控台中的啟動選項](/help/sites-cloud/authoring/assets/launches-console-navigate-launch-content.png)
 
 * 或直接，例如使用：
   `https://<host>:<port>/libs/launches/content/launches.html`

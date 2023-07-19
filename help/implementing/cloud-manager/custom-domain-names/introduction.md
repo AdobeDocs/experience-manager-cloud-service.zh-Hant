@@ -5,7 +5,7 @@ exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
 source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '766'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -40,13 +40,13 @@ AEM as a Cloud Service 提供內建的內容傳遞網路 (CDN) 服務，但也�
 * 安裝在 AEM 管理的 CDN 中的自訂網域名稱 (和憑證) 是透過 Cloud Manager 進行管理。
 * 安裝在您自己 CDN 中的自訂網域名稱 (和憑證) 是在特定 CDN 中進行管理。
 
-在您自己的CDN中管理的網域不需要透過Cloud Manager安裝。 AEM可透過X-Forwarded-Host取得這些變數，並比對Dispatcher中定義的vhost。 請參閱 [CDN檔案](/help/implementing/dispatcher/cdn.md).
+在您自己 CDN 中管理的網域不需要透過 Cloud Manager 安裝。它們透過 X-Forwarded-Host 提供給 AEM，並與 Dispatcher 中定義的虛擬主機相符。請參閱 [CDN 文件](/help/implementing/dispatcher/cdn.md)。
 
 在一個環境中，您可以將兩個網域安裝在 AEM 管理的 CDN 中，和安裝在您自己的 CDN 中。
 
 ## 工作流程 {#workflow}
 
-新增自訂網域名稱需要 DNS 服務和 Cloud Manager 互動。因此，安裝、設定和驗證自訂網域名稱需要執行許多步驟。下表總覽了所需的步驟，包括發生常見錯誤時應採取的措施。
+新增自訂網域名稱需要 DNS 服務和 Cloud Manager 互動。因此，安裝、設定和驗證自訂網域名稱需要執行許多步驟。下表概觀了所需的步驟，包括發生常見錯誤時應採取的措施。
 
 | 步驟 | 說明 | 責任 | 了解更多 |
 |--- |--- |--- |---|
@@ -68,10 +68,10 @@ AEM as a Cloud Service 提供內建的內容傳遞網路 (CDN) 服務，但也�
 
 搭配 AEMaaCS 使用自訂網域名稱有幾項限制。
 
-* Cloud Manager 支援自訂網域名稱用於 Sites 計畫的發佈和預覽服務。不支援作者服務的自訂網域。
+* Cloud Manager 支援自訂網域名稱用於 Sites 計畫的發佈和預覽服務。不支援編寫服務的自訂網域。
 * 每個 Cloud Manager 環境最多可以託管 500 個自訂網域。
 * 當有目前正在執行的管道連線到這些環境時，無法將網域名稱新增到環境中。
 * 同一個網域名稱不能在多個環境中使用。
 * 一次只能新增一個網域名稱。
 * AEM as a Cloud Service 不支援萬用字元網域，例如 `*.example.com`。
-* 在新增自訂網域名稱之前，必須為您的程序安裝包含自訂網域名稱的有效 SSL 憑證 (萬用字元憑證有效)。另請參閱 [新增SSL憑證](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) 以深入瞭解。
+* 在新增自訂網域名稱之前，必須為您的計畫安裝包含自訂網域名稱的有效 SSL 憑證 (萬用字元憑證有效)。請參閱[新增 SSL 憑證](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)以了解更多資訊。

@@ -1,27 +1,27 @@
 ---
 title: 設定生產管道
-description: 了解如何設定生產管道以建置計劃碼並將其部署到生產環境。
+description: 了解如何設定生產管道以建置程式碼並將其部署到生產環境。
 index: true
 exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '1509'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
 
 # 設定生產管道 {#configure-production-pipeline}
 
-了解如何設定生產管道以建置計劃碼並將其部署到生產環境。生產管道會先將計劃碼部署到測試環境，並在獲得核准後將相同的計劃碼部署到生產環境。
+了解如何設定生產管道以建置程式碼並將其部署到生產環境。生產管道會先將程式碼部署到中繼環境，並在獲得核准後將相同的程式碼部署到生產環境。
 
 使用者必須擁有&#x200B;**[部署管理員](/help/onboarding/cloud-manager-introduction.md#role-based-permissions)**&#x200B;角色才能設定生產管道。
 
 >[!NOTE]
 >
->直到計畫建立完成，Git 存放庫至少有一個分支，並建立生產和測試環境集後，才能設定生產管道。
+>直到計畫建立完成，Git 存放庫至少有一個分支，並建立生產和中繼環境組後，才能設定生產管道。
 
-在開始部署計劃碼之前，您必須從 [!UICONTROL Cloud Manager] 設定管道設定。
+在開始部署程式碼之前，您必須從 [!UICONTROL Cloud Manager] 設定管道設定。
 
 >[!NOTE]
 >
@@ -37,9 +37,9 @@ ht-degree: 90%
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織和計畫。
 
-1. 瀏覽至&#x200B;**管道**&#x200B;卡 (從&#x200B;**計畫總覽**&#x200B;頁面) 並按一下&#x200B;**新增**，以選取&#x200B;**新增生產管道**。
+1. 瀏覽至&#x200B;**管道**&#x200B;卡 (從&#x200B;**計畫概觀**&#x200B;頁面) 並按一下&#x200B;**新增**，以選取&#x200B;**新增生產管道**。
 
-   ![專案管理員總覽中的管道卡](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-1.png)
+   ![計畫管理員概觀中的管道卡](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-1.png)
 
 1. **新增生產管道**&#x200B;對話框隨即顯示。提供&#x200B;**管道名稱**&#x200B;以識別您的管道以及以下選項。按一下&#x200B;**「繼續」**。
 
@@ -51,28 +51,28 @@ ht-degree: 90%
    **重要量度失敗行為** - 在管道設定或編輯期間，**部署管理員**&#x200B;可選擇對任何品質閘道中遭遇重要失敗時的管道行為進行定義。可使用的選項包括：
 
    * **每次都詢問** - 這是預設設定，要求對任何重要失敗進行手動介入。
-   * **立即失敗**  — 如果選取，則只要發生重要失敗，就會取消管道。 這基本上是模擬使用者手動拒絕每次失敗。
+   * **立即失敗** - 如果選取，則每當重要失敗發生時，會取消管道。這基本上是模擬使用者手動拒絕每次失敗。
    * **立即持續** - 如果選取，則每當重要失敗發生時，管道將自動繼續。這基本上是模擬使用者手動核准每次失敗。
 
    ![生產管道設定](/help/implementing/cloud-manager/assets/configure-pipeline/production-pipeline-configuration.png)
 
-1. 在&#x200B;**原始計劃碼**&#x200B;索引標籤上，您必須定義管道應在何處擷取其計劃碼以及它是什麼類型的計劃碼。
+1. 在&#x200B;**原始程式碼**&#x200B;索引標籤上，您必須定義管道應在何處擷取其程式碼以及它是什麼類型的程式碼。
 
-   * **[前端計劃碼](#front-end-code)**
+   * **[前端程式碼](#front-end-code)**
    * **[完整堆疊程式碼](#full-stack-code)**
    * **[Web 層設定](#web-tier-config)**
 
-完成建立生產流水線的步驟因所選&#x200B;**原始計劃碼**&#x200B;選項而異。按照上面的連結跳到本文件的下一部分以完成管道的設定。
+完成建立生產流水線的步驟因所選&#x200B;**原始程式碼**&#x200B;選項而異。按照上面的連結跳到本文件的下一部分以完成管道的設定。
 
 ### 前端程式碼 {#front-end-code}
 
-前端程式碼管道部署包含一個或多個用戶端 UI 應用計劃的前端程式碼建置。有關此類管道的更多資訊，請參閱文件 [CI/CD 管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end)。
+前端程式碼管道部署包含一個或多個用戶端 UI 應用程式的前端程式碼建置。如需有關此類管道的更多資訊，請參閱文件 [CI/CD 管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end)。
 
-若要完成前端計劃碼生產管道的設定，請按照以下步驟操作。
+若要完成前端程式碼生產管道的設定，請按照以下步驟操作。
 
-1. 在&#x200B;**原始計劃碼**&#x200B;索引標籤上，您必須定義以下選項。
+1. 在&#x200B;**原始程式碼**&#x200B;索引標籤上，您必須定義以下選項。
 
-   * **存放庫** - 此選項會定義管道應該從哪個 Git 存放庫擷取計劃碼。
+   * **存放庫** - 此選項會定義管道應該從哪個 Git 存放庫擷取程式碼。
 
    >[!TIP]
    > 
@@ -80,28 +80,28 @@ ht-degree: 90%
 
    * **Git 分支** - 此選項會定義管道應該選取哪個分支來擷取程式碼。
       * 輸入分支名稱的前幾個字元，該欄位的自動完成功能將會尋找相符的分支以幫助您進行選擇。
-   * **計劃碼位置** - 此選項會定義管道應從所選存放庫的分支中擷取計劃碼的路徑。
+   * **程式碼位置** - 此選項會定義管道應從所選存放庫的分支中擷取程式碼的路徑。
    * **在部署到生產之前暫停** - 此選項會在部署到生產之前暫停管道。
 
-   ![前端計劃碼](/help/implementing/cloud-manager/assets/configure-pipeline/production-pipeline-frontend.png)
+   ![前端程式碼](/help/implementing/cloud-manager/assets/configure-pipeline/production-pipeline-frontend.png)
 
 1. 按一下&#x200B;**儲存**，即可儲存您的管道。
 
-管道已儲存，您現在可以在&#x200B;**計畫總覽**&#x200B;頁面的&#x200B;**管道**&#x200B;卡上[管理您的管道](managing-pipelines.md)。
+管道已儲存，您現在可以在&#x200B;**計畫概觀**&#x200B;頁面的&#x200B;**管道**&#x200B;卡上[管理您的管道](managing-pipelines.md)。
 
 ### 完整堆疊程式碼 {#full-stack-code}
 
-完整堆疊程式碼管道同時部署包含一個或多個 AEM 伺服器應用程序以及 HTTPD/Dispatcher 配置的後端和前端程式碼構建。有關此類管道的更多資訊，請參閱文件 [CI/CD 管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#full-stack-pipeline)。
+完整堆疊程式碼管道同時部署包含一個或多個 AEM 伺服器應用程序以及 HTTPD/Dispatcher 配置的後端和前端程式碼構建。如需有關此類管道的更多資訊，請參閱文件 [CI/CD 管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#full-stack-pipeline)。
 
 >[!NOTE]
 >
->如果所選環境已存在完整棧疊計畫碼管道，則會停用此選擇。
+>如果所選環境已存在完整堆疊程式碼管道，則此選項會停用。
 
-若要完成完整堆疊計劃碼生產管道的設定，請按照以下步驟操作。
+若要完成完整堆疊程式碼生產管道的設定，請按照以下步驟操作。
 
-1. 在&#x200B;**原始計劃碼**&#x200B;索引標籤上，您必須定義以下選項。
+1. 在&#x200B;**原始程式碼**&#x200B;索引標籤上，您必須定義以下選項。
 
-   * **存放庫** - 此選項會定義管道應該從哪個 Git 存放庫擷取計劃碼。
+   * **存放庫** - 此選項會定義管道應該從哪個 Git 存放庫擷取程式碼。
 
    >[!TIP]
    > 
@@ -109,11 +109,11 @@ ht-degree: 90%
 
    * **Git 分支** - 此選項會定義管道應該選取哪個分支來擷取程式碼。
       * 輸入分支名稱的前幾個字元，該欄位的自動完成功能將會尋找相符的分支以幫助您進行選擇。
-   * **計劃碼位置** - 此選項會定義管道應從所選存放庫的分支中擷取計劃碼的路徑。
+   * **程式碼位置** - 此選項會定義管道應從所選存放庫的分支中擷取程式碼的路徑。
    * **在部署到生產之前暫停** - 此選項會在部署到生產之前暫停管道。
    * **已排程** - 此選項可讓使用者啟用已排程的產生部署。
 
-   ![完整堆疊計劃碼](/help/implementing/cloud-manager/assets/configure-pipeline/production-pipeline-fullstack.png)
+   ![完整堆疊程式碼](/help/implementing/cloud-manager/assets/configure-pipeline/production-pipeline-fullstack.png)
 
 1. 按一下&#x200B;**繼續**&#x200B;進入&#x200B;**體驗稽核**&#x200B;索引標籤，您可以在其中定義應一律包含在體驗稽核中的路徑。
 
@@ -126,30 +126,30 @@ ht-degree: 90%
 
    ![定義體驗稽核的路徑](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-audit3.png)
 
-1. 按一下 **新增頁面** 而且路徑會使用您環境的地址自動完成，並新增至路徑表中。
+1. 按一下「**新增頁面**」，路徑會使用您的環境地址自動完成並新增到路徑表中。
 
    ![儲存表格的路徑](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-audit4.png)
 
 1. 重複前兩個步驟根據需要繼續新增路徑。
 
    * 您最多可以新增 25 個路徑。
-   * 如果您未定義任何路徑，則預設情況下網站首頁會包含在體驗稽核中。
+   * 如果您未定義任何路徑，則預設情況下該網站的首頁會包含在體驗稽核中。
 
-1. 按一下&#x200B;**儲存**，即可儲存您的管道。
+1. 按一下「**儲存**」，即可儲存您的管道。
 
-為體驗稽核設定的路徑會提交至服務，並在管道執行時根據效能、協助工具、SEO （搜尋引擎最佳化）、最佳實務和PWA（漸進式Web應用程式）測試進行評估。 另請參閱 [瞭解體驗稽核結果](/help/implementing/cloud-manager/experience-audit-testing.md) 以取得更多詳細資料。
+為體驗稽核設定的路徑會提交給服務，並在管道執行時根據效能、協助工具、SEO (搜尋引擎最佳化)、最佳實務和 PWA (漸進式 Web 應用程式) 測試進行評估。如需更多詳細資訊，請參閱[了解體驗稽核結果](/help/implementing/cloud-manager/experience-audit-testing.md)。
 
-管道已儲存，您現在可以在&#x200B;**計劃總覽**&#x200B;頁面的&#x200B;**管道**&#x200B;卡上[管理您的管道](managing-pipelines.md)。
+管道已儲存，您現在可以在&#x200B;**計畫概觀**&#x200B;頁面的&#x200B;**管道**&#x200B;卡上[管理您的管道](managing-pipelines.md)。
 
 ### Web 層設定 {#web-tier-config}
 
-Web 層設定管道部署 HTTPD/ Dispatcher 設定。有關此類管道的更多資訊，請參閱文件 [CI/CD 管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipeline)。
+Web 層設定管道部署 HTTPD/ Dispatcher 設定。如需有關此類管道的更多資訊，請參閱文件 [CI/CD 管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipeline)。
 
-若要完成完整堆疊計劃碼生產管道的設定，請按照以下步驟操作。
+若要完成完整堆疊程式碼生產管道的設定，請按照以下步驟操作。
 
-1. 在&#x200B;**原始計劃碼**&#x200B;索引標籤上，您必須定義以下選項。
+1. 在&#x200B;**原始程式碼**&#x200B;索引標籤上，您必須定義以下選項。
 
-   * **存放庫** - 此選項會定義管道應該從哪個 Git 存放庫擷取計劃碼。
+   * **存放庫** - 此選項會定義管道應該從哪個 Git 存放庫擷取程式碼。
 
    >[!TIP]
    > 
@@ -157,13 +157,13 @@ Web 層設定管道部署 HTTPD/ Dispatcher 設定。有關此類管道的更多
 
    * **Git 分支** - 此選項會定義管道應該選取哪個分支來擷取程式碼。
       * 輸入分支名稱的前幾個字元，該欄位的自動完成功能將會尋找相符的分支以幫助您進行選擇。
-   * **計劃碼位置** - 此選項會定義管道應從所選存放庫的分支中擷取計劃碼的路徑。
+   * **程式碼位置** - 此選項會定義管道應從所選存放庫的分支中擷取程式碼的路徑。
       * 如果是 Web 層設定管道，這通常是包含 `conf.d`、`conf.dispatcher.d` 和 `opt-in`目錄的路徑。
       * 例如，如果專案結構是從 [AEM 專案原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hant)產生的，則路徑將為 `/dispatcher/src`。
    * **在部署到生產之前暫停**- 此選項會在部署到生產之前暫停管道。
    * **已排程** - 此選項可讓使用者啟用已排程的產生部署。
 
-   ![Web 層計劃碼](/help/implementing/cloud-manager/assets/configure-pipeline/production-pipeline-webtier.png)
+   ![Web 層程式碼](/help/implementing/cloud-manager/assets/configure-pipeline/production-pipeline-webtier.png)
 
 1. 按一下&#x200B;**儲存**，即可儲存您的管道。
 
@@ -171,19 +171,19 @@ Web 層設定管道部署 HTTPD/ Dispatcher 設定。有關此類管道的更多
 >
 >如果您將現有的完整堆疊管道部署到環境，則為同一環境建立 Web 層設定管道將忽略完整堆疊管道中的現有 Web 層設定。
 
-管道已儲存，您現在可以在&#x200B;**計劃總覽**&#x200B;頁面的&#x200B;**管道**&#x200B;卡上[管理您的管道](managing-pipelines.md)。
+管道已儲存，您現在可以在&#x200B;**計畫概觀**&#x200B;頁面的&#x200B;**管道**&#x200B;卡上[管理您的管道](managing-pipelines.md)。
 
-## 使用前端管道開發 Sites {#developing-with-front-end-pipeline}
+## 使用前端管道開發網站 {#developing-with-front-end-pipeline}
 
 有了前端流水線，給前端開發者更多的獨立性，可以加快開發進程。
 
-另請參閱 [使用前端管道開發網站](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) 瞭解此程式的運作方式，以及一些需要注意的事項，以充分發揮此程式的潛力。
+請參閱[使用前端管道開發網站](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md)，了解此程序的工作原理以及需要注意的一些注意事項，以充分發揮此程序的潛力。
 
-## 跳過發送器套件 {#skip-dispatcher-packages}
+## 跳過 Dispatcher 套件 {#skip-dispatcher-packages}
 
-如果您希望將發送器套件建置為管道的一部分，但又不希望將它們發佈到建置儲存，您可以停用發佈它們，這可能會減少管道的執行時間。
+如果您希望將 Dispatcher 套件建置為管道的一部分，但又不希望將它們發佈到建置儲存，您可以停用發佈它們，這可能會減少管道的執行時間。
 
-必須透過您的專案 `pom.xml` 檔案新增以下停用發佈發送器套件的設定。這會根據環境變數 (作為一個標幟)，您可以在 Cloud Manager 建置容器中設定以定義何時應忽略發送器套件。
+必須透過您的專案 `pom.xml` 檔案新增以下停用發佈 Dispatcher 套件的設定。這會根據環境變數 (作為一個標幟)，您可以在 Cloud Manager 建置容器中設定以定義何時應忽略 Dispatcher 套件。
 
 ```xml
 <profile>

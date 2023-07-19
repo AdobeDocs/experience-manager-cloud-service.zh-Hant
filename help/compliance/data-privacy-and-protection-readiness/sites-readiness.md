@@ -1,11 +1,11 @@
 ---
 title: 資料保護和資料隱私權法規 - Adobe Experience Manager as a Cloud Service Sites 整備
-description: 了解對各種資料保護和資料隱私權法規的 Adobe Experience Manager as a Cloud Service Sites 支援；包括歐盟一般資料保護規範 (GDPR)、加州消費者隱私法，以及在實施新的 AEM as a Cloud Service 專案時如何遵守。
+description: 了解對各種資料保護和資料隱私權法規的 Adobe Experience Manager as a Cloud Service Sites 支援；包括歐盟一般資料保護規範 (GDPR)、加州消費者隱私法，以及在實作新的 AEM as a Cloud Service 專案時如何遵守。
 exl-id: fdcad111-0cdd-46cc-964c-3f8669ca2030
 source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '1025'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 86%
 >
 >本文件的內容並不構成法律建議，其宗旨並非取代專業的法律建議。
 >
->如需資料保護與資料隱私權法規的相關建議，請洽詢貴公司的法律部門。
+>如需有關資料保護和資料隱私權法規的建議，請諮詢貴公司的法律部門。
 
 >[!NOTE]
 >
@@ -23,7 +23,7 @@ ht-degree: 86%
 
 Adobe Experience Manager as a Cloud Service Sites 已準備好幫助客戶履行其資料隱私權和保護的合規義務。此頁面將指導客戶完成在 AEM Sites 中處理此類請求的過程。它描述了儲存私人資料的位置，以及如何以手動方式或使用程式碼移除它們。
 
-如需詳細資訊，請參閱 [Adobe隱私權中心](https://www.adobe.com/tw/privacy.html).
+如需更多資訊，請參閱 [Adobe 隱私權中心](https://www.adobe.com/tw/privacy.html)。
 
 >[!NOTE]
 >
@@ -37,7 +37,7 @@ Adobe Experience Manager as a Cloud Service Sites 已準備好幫助客戶履行
 
 用於驗證網站訪客身分的使用者帳戶以及發佈伺服器上的 UGC 內容都包含在 [AEM Foundation 文件](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md)中。
 
-預設情況下，AEM Sites 元件不會將訪客輸入的表單資料存放在發佈伺服器上。 建議將資料轉送至協力廠商系統或Adobe Campaign進行進一步處理。
+預設情況下，AEM Sites 元件不會將訪客輸入的表單資料存放在發佈伺服器上。建議將資料轉發給第三方系統或 Adobe Campaign 進行進一步處理。
 
 ## 選擇退出/選擇加入 {#opt-in-opt-out}
 
@@ -56,7 +56,7 @@ Adobe Experience Manager 受用於管理使用者選擇加入/選擇退出的 co
 
 1. 選擇參照的連結；目前標題在&#x200B;**這裡**。
 
-1. 畫面會顯示下列詳細資料，以及選擇退出或加入的選項：
+1. 您會看到以下詳細資料，以及選擇退出或加入的選項：
 
    * 要選擇退出有關您造訪本網站的資料的彙總和分析，必須在您的瀏覽器上安裝 cookie。此 cookie 表明您已選擇退出。
 
@@ -76,13 +76,13 @@ Adobe Experience Manager 受用於管理使用者選擇加入/選擇退出的 co
 
 AEM Sites 包括與 Analytics Foundation 的選擇性整合，後者使用 Adobe Analytics 隨選服務中的功能。
 
-如需管理與Adobe Analytics相關的資料主體請求的詳細資訊，請參閱 [Adobe Analytics與資料隱私權](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-view-settings.html).
+如需深入了解如何管理 Adobe Analytics 相關的資料主體要求，請參閱 [Adobe Analytics 和資料隱私權](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-view-settings.html)。
 
 ## Personalization Foundation by Target {#personalization-foundation-by-target}
 
 AEM Sites 包括與 Personalization Foundation by Target 的選擇性整合，後者使用 Adobe Target 隨選服務中的功能。
 
-有關管理與Adobe Target相關的資料主體請求的資訊，請參閱 [Adobe Target — 隱私權與一般資料保護規範](https://experienceleague.adobe.com/docs/target-dev/developer/implementation/privacy/cmp-privacy-and-general-data-protection-regulation.html).
+如需深入了解如何管理 Adobe Target 相關的資料主體要求，請參閱[Adobe Target - 隱私權和一般資料保護規範](https://experienceleague.adobe.com/docs/target-dev/developer/implementation/privacy/cmp-privacy-and-general-data-protection-regulation.html)。
 
 ## ContextHub {#contexthub}
 
@@ -94,11 +94,11 @@ AEM 透過 ContextHub 提供一個選用資料層。這會將訪客特定的資�
 
 預設情況下，此訪客資料不儲存在 AEM 中；AEM 將規則傳送到資料層以在瀏覽器中做出個人化決策。
 
-### 實施選擇加入/選擇退出 {#implementing-opt-in-opt-out}
+### 實作選擇加入/選擇退出 {#implementing-opt-in-opt-out}
 
-網站擁有者需要根據以下準則實施選擇退出元件。
+網站擁有者需要根據以下準則實作選擇退出元件。
 
-這些準則會將選擇加入實施為預設值。因此，網站訪客必須先明確同意，才會將任何個人資料儲存在瀏覽器 (用戶端) 的持續性中。
+這些準則會將選擇加入實作為預設值。因此，網站訪客必須先明確同意，才會將任何個人資料儲存在瀏覽器 (用戶端) 的持續性中。
 
 * 每次包含 ContextHub 元件時都應包含選擇退出元件。
 * 與網站資料保護和隱私權相關的條款與條件必須展示給網站訪客，允許他們：
@@ -174,7 +174,7 @@ AEM 透過 ContextHub 提供一個選用資料層。這會將訪客特定的資�
       * `ContextHub.Utils.Persistence.Modes.COOKIE`
       * `ContextHub.Utils.Persistence.Modes.WINDOW`
 
-     ContextHub存放區會定義使用哪個持續層，因此若要檢視持續性的目前狀態，應檢查所有層。
+     ContextHub 存放區會定義要使用哪個持續層，因此要檢視持續性的目前狀態，應檢查所有層。
 
 例如，檢視儲存在 localStorage 中的資料：
 
@@ -203,7 +203,7 @@ AEM 透過 ContextHub 提供一個選用資料層。這會將訪客特定的資�
       * `ContextHub.Utils.Persistence.Modes.COOKIE`
       * `ContextHub.Utils.Persistence.Modes.WINDOW`
 
-     ContextHub存放區會定義使用哪個持續層，因此若要檢視持續性的目前狀態，應檢查所有層。
+     ContextHub 存放區會定義要使用哪個持續層，因此要檢視持續性的目前狀態，應檢查所有層。
 
 例如，檢視儲存在 localStorage 中的資料：
 

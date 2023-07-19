@@ -16,7 +16,7 @@ ht-degree: 100%
 >[!CONTEXTUALHELP]
 >id="assets_user_entitlements"
 >title="指派 AEM 產品設定檔"
->abstract="您無權使用 Experience Manager Assets。 請聯絡您的管理員。"
+>abstract="您無權使用 Experience Manager Assets。請聯絡您的管理員。"
 
 在[上線歷程](overview.md)的這一部分，您將了解如何使用 AEM 產品設定檔向您的團隊授與對 AEM 的存取權。
 
@@ -41,7 +41,7 @@ ht-degree: 100%
 >
 >指派給 AEM as a Cloud Service 產品設定檔的每個使用者，透過 **Cloud Manager 使用者**&#x200B;角色，對 Cloud Manager 擁有唯讀存取權。
 >
->只有擁有 **Cloud Manager** 使用者角色的使用者，才可以使用「程序」選單選項登入 Cloud Manager，並導覽至 AEM 作者環境 (如果存在)。**雲端管理員使用者**角色不足以存取程序詳細資料。 如果需要此類存取權，系統管理員必須授予使用者其他角色。
+>只有擁有 **Cloud Manager** 使用者角色的使用者，才可以使用「計畫」選單選項登入 Cloud Manager，並導覽至 AEM 編寫環境 (如果存在)。**雲端管理員使用者**角色不足以存取計畫詳細資料。如果需要此類存取權，系統管理員必須授予使用者其他角色。
 >如需更多有關 Cloud Manager 使用者角色的資訊，請參閱[下方的「其他資源」一節](#additional-resources)。
 
 >[!CAUTION]
@@ -66,7 +66,7 @@ ht-degree: 100%
 
 1. 請上 [`https://adminconsole.adobe.com` 登入 Admin Console。](https://adminconsole.adobe.com)
 
-1. 在&#x200B;**總覽**&#x200B;頁面，從&#x200B;**產品和服務**&#x200B;卡選取 **Adobe Experience Manager as a Cloud Service**。
+1. 在&#x200B;**概觀**&#x200B;頁面，從&#x200B;**產品和服務**&#x200B;卡選取 **Adobe Experience Manager as a Cloud Service**。
 
    ![產品和服務卡](/help/journey-onboarding/assets/assign-team1.png)
 
@@ -82,13 +82,13 @@ ht-degree: 100%
 
 現在您已經熟悉了可用的設定檔，您可以根據需要將它們指派給您的團隊成員。
 
-這些工作要求您是擁有&#x200B;**業務所有者** Cloud Manager 產品設定檔的系統管理員。
+這些工作要求您是擁有&#x200B;**業務負責人** Cloud Manager 產品設定檔的系統管理員。
 
-1. 從 Cloud Manager 瀏覽到您的計劃，然後從感興趣的環境內容中選取&#x200B;**管理存取權**&#x200B;按鈕。
+1. 從 Cloud Manager 瀏覽到您的計畫，然後從感興趣的環境內容中選取&#x200B;**管理存取權**&#x200B;按鈕。
 
    ![管理存取權](/help/journey-onboarding/assets/add-team1.png)
 
-1. 會有新索引標籤將您引導至 Admin Console，您可以在其中存取環境的作者執行個體。根據需要授與此人的權限選擇 **AEM 管理員**&#x200B;或 **AEM 使用者**。
+1. 會有新索引標籤將您引導至 Admin Console，您可以在其中存取環境的編寫執行個體。根據需要授與此人的權限選擇 **AEM 管理員**&#x200B;或 **AEM 使用者**。
 
    ![指派存取權](/help/journey-onboarding/assets/add-team2.png)
 
@@ -98,15 +98,15 @@ ht-degree: 100%
 
 1. 如果您擁有需要存取權之團隊成員的資訊，請對包括開發、測試和生產在內的所有環境重複這些步驟。
 
-您新增的使用者現在可以存取 AEM as a Cloud Service 作者服務！
+您新增的使用者現在可以存取 AEM as a Cloud Service 編寫服務！
 
 ## 歷程結尾？ {#the-end}
 
-恭喜！您指派給 AEM as a Cloud Service 產品設定檔的使用者現在可以存取 AEM 編寫環境，並開始使用 AEM as a Cloud Service 建立內容。同樣，開發人員現在可以存取 Cloud Manager 以使用 Git 儲存自訂應用計劃計劃碼並進行部署。從這個角度來看，您的上線歷程已經完成，您的使用者現在可以使用 AEMaaCS。
+恭喜！您指派給 AEM as a Cloud Service 產品設定檔的使用者現在可以存取 AEM 編寫環境，並開始使用 AEM as a Cloud Service 建立內容。同樣，開發人員現在可以存取 Cloud Manager 以使用 Git 儲存自訂應用程式程式碼並進行部署。從這個角度來看，您的上線歷程已經完成，您的使用者現在可以使用 AEMaaCS。
 
 但是，如果您想更了解作者和開發人員如何使用該系統，您可以選擇繼續此上線歷程的兩個部分：
 
-* [開發人員和部署管理員任務](developers.md) - 您將了解開發人員如何存取 Git 以儲存他們的自訂計劃碼，並使用 Cloud Manager 管道進行部署。
+* [開發人員和部署管理員任務](developers.md) - 您將了解開發人員如何存取 Git 以儲存他們的自訂程式碼，並使用 Cloud Manager 管道進行部署。
 * [AEM 使用者任務](aem-users.md) - 您將在其中學習如何存取可以開始建立內容的 AEM 環境。
 
 ## 其他資源 {#additional-resources}

@@ -1,12 +1,12 @@
 ---
 title: 在 AEM 中管理 GraphQL 端點
-description: 了解如何在 Adobe Experience Manager as a Cloud Service 中管理 GraphQL 端點，以進行無周邊內容傳遞。
+description: 了解如何在 Adobe Experience Manager as a Cloud Service 中管理 GraphQL 端點，以進行 Headless 內容傳遞。
 feature: Content Fragments,GraphQL API
 exl-id: f7164ae3-4074-4db7-8c43-a79cc2ef00b1
 source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '514'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -33,7 +33,7 @@ ht-degree: 92%
 >
 >內容片段編輯器可以允許一個 Sites 設定的內容片段參考另一個 Sites 設定的內容片段 (透過原則)。
 >
->在這種情況下，並非所有內容都可使用Sites設定特定的端點擷取。
+>在這種情況下，並非所有內容都可以使用 Sites 設定專屬端點進行擷取。
 >
 >內容作者應該控制這種情況；例如，考慮將共用的內容片段模型放在全域 Sites 設定下可能會有用。
 
@@ -70,7 +70,7 @@ AEM 全域端點的 GraphQL 存放庫路徑：
    >
    >對話框會顯示以下警告：
    >
-   >* *若未妥善管理，GraphQL端點可能會導致資料安全性和效能問題。 在建立端點後，請確定已設定適當的許可權。*
+   >* *如果未妥善管理，GraphQL 端點可能會導致資料安全性和效能問題。在建立端點後，請務必設定適當的權限。*
 
 1. 使用&#x200B;**建立**&#x200B;確認。
 1. **後續步驟** 對話框將提供安全性主控台的直接連結，以便您可以確保新建立的端點具有合適的權限。

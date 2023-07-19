@@ -5,7 +5,7 @@ exl-id: 3eca973f-b210-41bb-98da-ecbd2bae9803
 source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
 workflow-type: tm+mt
 source-wordcount: '1715'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -13,9 +13,9 @@ ht-degree: 89%
 
 ## 到目前為止 {#story-so-far}
 
-在[AEM Headless 內容作者歷程](overview.md)的一開始，[簡介](introduction.md)部分介紹了和無周邊內容編寫相關的基本概念和術語。
+在[AEM Headless 內容作者歷程](overview.md)的一開始，[簡介](introduction.md)部分介紹了和 Headless 內容編寫相關的基本概念和術語。
 
-本文以這些內容為基礎，以便您了解如何為 AEM 無周邊專案編寫您自己的內容。
+本文以這些內容為基礎，以便您了解如何為 AEM Headless 專案編寫您自己的內容。
 
 ## 目標 {#objective}
 
@@ -36,7 +36,7 @@ AEM 安裝通常至少包含三個環境：
 * 發佈
 * 預覽
 
-登入並使用作者環境來產生您的內容。準備好內容後，就可以發佈，使其普遍可用。對於無周邊，這將針對其他應用程式，對於網頁，這將針對網路讀者。
+登入並使用編寫環境來產生您的內容。準備好內容後，就可以發佈，使其普遍可用。對於 Headless ，這將針對其他應用程式，對於網頁，這將針對網路讀者。
 
 如需詳細資訊，請參閱編寫概念。
 
@@ -44,7 +44,7 @@ AEM 安裝通常至少包含三個環境：
 
 ### 登入 {#signing-in}
 
-和大多數系統一樣，您需要登入。 身為作者，您會獲得：
+如同大部分系統，需要登入。作為作者，您將取得：
 
 * 使用者 (帳戶) 名稱
 * 密碼
@@ -56,7 +56,7 @@ AEM 安裝通常至少包含三個環境：
 
 首次登入小型線上教學課程，將會重點介紹使用者介面的一些主要功能。
 
-然後，您可以使用導覽面板存取 AEM 的關鍵區域。對於內容片段，請使用 **內容片段** 主控台(針對某些動作，您也會使用 **資產** 主控台)。
+然後，您可以使用導覽面板存取 AEM 的關鍵區域。對於內容片段，您使用&#x200B;**內容片段**&#x200B;主控台 (對於某些動作，您也將使用&#x200B;**資產**&#x200B;主控台)。
 
 可以透過選擇左上角的 Adobe 圖示，然後選擇小羅盤圖示來開啟導覽面板。
 
@@ -121,7 +121,7 @@ You can view additional information about items using the Rail Selector. This al
 
 ## 編寫內容片段 {#authoring-content-fragments}
 
-所以，這是AEM使用者介面(UI)的非常快速介紹，但希望您有機會嘗試一下。 現在我們開始討論您真正感興趣的部分 - Headless 內容片段。
+所以，這是對 AEM 使用者介面 (UI) 的非常快速介紹，但希望您有機會嘗試一下。現在我們開始討論您真正感興趣的部分 - Headless 內容片段。
 
 我們必須從頭到尾說明所有事情，但是您的執行個體可能已經建立了資料夾和/或片段，並且它們可能位於不同的位置。原理是一樣的。
 
@@ -141,7 +141,7 @@ You can view additional information about items using the Rail Selector. This al
 
 #### 使用路徑和標記限制資料夾中可用的內容片段模型 {#tags-paths-for-models-in-folder}
 
-本章節的技術稍微進階一些。如果您只是要開始嘗試一些事情，其實並不需要它，但它 *非常* 當您有許多片段時很有用。 因此，即使您尚未使用，也應瞭解相關資訊。
+本章節的技術稍微進階一些。如果您才剛開始嘗試，您並不需要它，但是當您有很多片段時，它就&#x200B;*非常*&#x200B;實用。所以了解它是件好事 - 即使您還沒有使用它。
 
 您的內容架構師將建立您目前專案所需的所有內容片段模型，一些其他專案可能也需要。為了協助您和其他作者簡化作業，您可以對特定資料夾的可用模型清單加以限制。
 
@@ -213,7 +213,7 @@ Confirm with **Create** and you can then **Open** your fragment in the editor.
 
 例如：
 
-* 只需要多個資訊的片段，其中一些具有特定類型。對於Headless內容，參考是關鍵（您稍後將在歷程中瞭解這些內容）。
+* 只需要多個資訊的片段，其中一些具有特定類型。對於 Headless 內容，參考是關鍵 (歷程的後續部分將會說明)。
 
   ![內容片段編輯器 - 我的片段](/help/journey-headless/author/assets/headless-journey-author-content-fragment-04.png)
 
@@ -233,9 +233,9 @@ Confirm with **Create** and you can then **Open** your fragment in the editor.
 >
 >如需更多詳細資訊，您可以閱讀「變化 - 編寫內容片段」。
 
-#### 您（可能）不需要擔心的事 {#what-you-probably-do-not-need-to-worry-about}
+#### 你 (可能) 不需要擔心的事情 {#what-you-probably-do-not-need-to-worry-about}
 
-好，這可能看起來有點奇怪，但當您開啟內容片段編輯器並開始探索時，您就可以看到各種選項（可能）不會套用於作為內容作者的Headless歷程。 所以這只是在快速提示無周邊情境中你可忽略的東西：
+好的，這部分可能看起來有點奇怪，但是一旦您開啟內容片段編輯器並開始探索，您可以看到各種選項 (可能) 不適用於您作為內容作者的 Headless 歷程。所以這只是在快速提示 Headless 情境中你可忽略的東西：
 
 * **內容片段模型**
 
@@ -258,13 +258,13 @@ Confirm with **Create** and you can then **Open** your fragment in the editor.
 
 * **更新頁面參考**
 
-  此動作可從以下網址取得： **...** （點）下拉式清單。 對於無周邊作者來說這並不有趣，因為它與頁面編寫有關。
+  **...** (省略符號) 下拉式清單可提供此動作。對於 Headless 作者來說這並不有趣，因為它與頁面編寫有關。
 
 ### 發佈 {#publishing}
 
 <!-- needs more details -->
 
-完成片段後，您可以&#x200B;**發佈**&#x200B;以供無周邊應用程式使用。
+完成片段後，您可以&#x200B;**發佈**&#x200B;以供 Headless 應用程式使用。
 
 可在編輯器中使用發佈動作：
 
@@ -276,7 +276,7 @@ Confirm with **Create** and you can then **Open** your fragment in the editor.
 
 ## 下一步 {#whats-next}
 
-現在您已經了解基本知識，下一步是[了解參考](references.md)。這將介紹和討論可用的各種參考，以及如何建立片段參考的結構階層，這是無周邊內容編寫的關鍵部分。
+現在您已經了解基本知識，下一步是[了解參考](references.md)。這將介紹和討論可用的各種參考，以及如何建立片段參考的結構階層，這是 Headless 內容編寫的關鍵部分。
 
 ## 其他資源 {#additional-resources}
 

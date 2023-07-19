@@ -163,7 +163,7 @@ ht-degree: 100%
 >
 >對於 ACL，建立深層結構可能很麻煩。因此，在更高層級定義 ACL 並透過 `rep:glob`限制來約束其作用位置會更為合理。
 
-有關 `repoinit` 的詳細資訊，請參閱 [Sling 文件](https://sling.apache.org/documentation/bundles/repository-initialization.html)
+如需有關 `repoinit` 的詳細資訊，請參閱 [Sling 文件](https://sling.apache.org/documentation/bundles/repository-initialization.html)
 
 <!-- ### Packaging of Immutable and Mutable Packages {#packaging-of-immutable-and-mutable-packages}
 
@@ -251,7 +251,7 @@ above appears to be internal, to confirm with Brian -->
 
 ## 索引 {#indexes}
 
-在新版本可以處理流量之前，新的或修改的索引會導致額外的建立索引或重新索引步驟。有關 AEM as a Cloud Service 中索引管理的詳細資訊，請參閱[這篇文章](/help/operations/indexing.md)。您可以在 Cloud Manager 檢查建置頁面的建立索引狀態，並在新版本準備就緒可接收流量時收到通知。
+在新版本可以處理流量之前，新的或修改的索引會導致額外的建立索引或重新索引步驟。如需有關 AEM as a Cloud Service 中索引管理的詳細資訊，請參閱[這篇文章](/help/operations/indexing.md)。您可以在 Cloud Manager 檢查建置頁面的建立索引狀態，並在新版本準備就緒可接收流量時收到通知。
 
 >[!NOTE]
 >

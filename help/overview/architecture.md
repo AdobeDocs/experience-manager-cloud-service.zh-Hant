@@ -5,7 +5,7 @@ exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '1826'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -65,7 +65,7 @@ AEM as a Cloud Service 以協調引擎為運作基礎，該引擎的功能包括
 ## 環境 {#environments}
 
 >[!NOTE]
->如需詳細資訊，請參閱 [部署 — 執行模式](/help/implementing/deploying/overview.md#runmodes)
+>如需詳細資訊，請參閱[部署 - 執行模式](/help/implementing/deploying/overview.md#runmodes)
 
 AEM as a Cloud Service 可作為個別執行個體使用，每個執行個體皆代表完整的 AEM 環境。
 
@@ -73,25 +73,25 @@ AEM as a Cloud Service 提供三種類型的環境：
 
 * **生產環境**：為商務從業人員代管應用程式。
 
-* **預備環境**：始終與單一生產環境維持 1:1 關係。將應用程式的變更推送至生產環境之前，可先使用預備環境測試效能和品質。
+* **中繼環境**：始終與單一生產環境維持 1:1 關係。將應用程式的變更推送至生產環境之前，可先使用中繼環境測試效能和品質。
 
-* **開發環境**：開發人員可在與預備和生產環境相同的執行階段條件下，實作 AEM 應用程式。
+* **開發環境**：開發人員可在與中繼和生產環境相同的執行階段條件下，實作 AEM 應用程式。
 
-  另請參閱 [管理環境](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=zh-Hant#using-cloud-manager) 以取得更多詳細資料。
+  如需更多詳細資訊，請參閱[管理環境](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=zh-Hant#using-cloud-manager)。
 
 * **快速開發環境**：允許快速開發疊代進行全新或現有程式碼的除錯。
 
-## 方案 {#programs}
+## 計畫 {#programs}
 
-所有新的 AEM 專案都會與單一特定程式碼基底建立繫結，專案的設定和自訂程式碼都會儲存於基底之中。這些資訊會儲存在程式碼存放庫中，供您在建立新方案時使用，透過一般的 Git 用戶端即可存取。
+所有新的 AEM 專案都會與單一特定程式碼基底建立繫結，專案的設定和自訂程式碼都會儲存於基底之中。這些資訊會儲存在程式碼存放庫中，供您在建立新計畫時使用，透過一般的 Git 用戶端即可存取。
 
-AEM 方案是包含下列項目的容器：
+AEM 計畫是包含下列項目的容器：
 
 |  方案元素 |  數字 |
 |--- |--- |
 | 程式碼存放庫 (Git) |  1 |
 | 基準影像 (Sites 或 Assets) |  1 |
-| 預備和生產環境集 (1:1) | 0 或 1 |
+| 中繼和生產環境集 (1:1) | 0 或 1 |
 | 非生產環境 (快速開發環境、開發或展示) | 0 到 N |
 | 各環境相關管道 | 0 或 1 |
 
@@ -101,7 +101,7 @@ AEM as a Cloud Service 最初提供兩種類型的方案：
 
 * AEM Cloud Assets Service
 
-兩者皆可存取幾項功能。作者層級會包含所有方案的完整 Sites 和 Assets 功能，但 Assets 方案預設不含發佈層級和預覽層級。
+兩者皆可存取幾項功能。編寫層級會包含所有方案的完整 Sites 和 Assets 功能，但 Assets 方案預設不含發佈層級和預覽層級。
 
 ## 執行階段架構 {#runtime-architecture}
 
@@ -141,15 +141,15 @@ AEM as a Cloud Service 最初提供兩種類型的方案：
 
    * 此架構僅包含編寫環境。
 
-* 作者層級、預覽層級及發佈層級都會從內容存放庫服務讀取及保留內容，或是將內容讀入/保留至內容存放庫服務。
+* 編寫層級、預覽層級及發佈層級都會從內容存放庫服務讀取及保留內容，或是將內容讀入/保留至內容存放庫服務。
 
    * 發佈層級和預覽層級只從持續層讀取內容。
 
-   * 作者層級會從持續層讀取內容，也會將內容寫入持續層。
+   * 編寫層級會從持續層讀取內容，也會將內容寫入持續層。
 
-   * Blob 儲存空間會在發佈、預覽及作者層級之間共用；檔案不會&#x200B;*移動*。
+   * Blob 儲存空間會在發佈、預覽及編寫層級之間共用；檔案不會&#x200B;*移動*。
 
-   * 內容從作者層級核准後，即表示可啟動內容，因此內容會推送至發佈層級的持續層，或選擇推送至預覽層級。此過程會透過複製服務 (一種中介管道) 來實現。此管道會接收新內容，而個別發佈服務 (或預覽服務) 節點會訂閱推送至管道的內容。
+   * 內容從編寫層級核准後，即表示可啟動內容，因此內容會推送至發佈層級的持續層，或選擇推送至預覽層級。此過程會透過複製服務 (一種中介管道) 來實現。此管道會接收新內容，而個別發佈服務 (或預覽服務) 節點會訂閱推送至管道的內容。
 
      >[!NOTE]
      >
@@ -157,11 +157,11 @@ AEM as a Cloud Service 最初提供兩種類型的方案：
 
    * 開發人員和管理員能使用 Continuous Integration/Continuous Delivery (CI/CD) 服務 (可透過 [Cloud Manager](/help/overview/what-is-new-and-different.md#cloud-manager) 取得) 管理 AEM as a Cloud Service，包括使用 Cloud Manager 的 CI/CD 管道來部署程式碼和設定。任何與監控、維護和疑難排解相關的項目 (例如記錄檔)，都會向 Cloud Manager 中的客戶公開。
 
-   * 使用者需一概透過負載平衡器存取作者和發佈層級。負載平衡器會與各層級作用中的節點連動，反映其最新狀態。
+   * 使用者需一概透過負載平衡器存取編寫和發佈層級。負載平衡器會與各層級作用中的節點連動，反映其最新狀態。
 
    * 至於發佈層級和預覽層級，持續傳遞網路 (CDN) 服務也能作為第一個進入點使用。
 
-* 對於 AEM as a Cloud Service 的展示執行個體，架構會簡化為單一作者節點，因此不會呈現標準開發、預備或生產環境的所有特點。換言之，架構偶爾會發生停機現象，且不支援備份/還原操作。
+* 對於 AEM as a Cloud Service 的展示執行個體，架構會簡化為單一作者節點，因此不會呈現標準開發、中繼或生產環境的所有特點。換言之，架構偶爾會發生停機現象，且不支援備份/還原操作。
 
 ## 部署架構 {#deployment-architecture}
 
@@ -175,7 +175,7 @@ Cloud Manager 會管理 AEM as a Cloud Service 執行個體的所有更新。這
 
 ## 內容發佈 {#content-distribution}
 
-Adobe Experience Manager as a Cloud Service 修改了發佈內容的方式。有了 AEM as a Cloud Service，舊版 AEM 的複製框架將不再用於發佈頁面 (將變更從作者執行個體移至發佈執行個體)。
+Adobe Experience Manager as a Cloud Service 修改了發佈內容的方式。有了 AEM as a Cloud Service，舊版 AEM 的複製框架將不再用於發佈頁面 (將變更從編寫執行個體移至發佈執行個體)。
 
 AEM as a Cloud Service 現在主要使用 [Sling 內容分送](https://sling.apache.org/documentation/bundles/content-distribution.html)功能來移動適當內容。這會使用 Adobe I/O 上執行的管道服務，該服務獨立於 AEM 執行階段之外。
 
@@ -191,7 +191,7 @@ AEM as a Cloud Service 現在主要使用 [Sling 內容分送](https://sling.apa
 
 比起前幾代產品，AEM as a Cloud Service 的新架構提出了幾項根本變革與創新：
 
-* 所有檔案 (Blob) 一律從雲端資料存放區直接上傳及提供。相關聯的位元串流一律不經 AEM 作者和發佈服務的 JVM 處理。因此，AEM 製作和發佈服務的節點可以更少，更符合快速自動調整規模的期望。商務從業人員可因此享有更快速的影像、影片上傳與下載體驗。
+* 所有檔案 (Blob) 一律從雲端資料存放區直接上傳及提供。相關聯的位元串流一律不經 AEM 編寫和發佈服務的 JVM 處理。因此，AEM 製作和發佈服務的節點可以更少，更符合快速自動調整規模的期望。商務從業人員可因此享有更快速的影像、影片上傳與下載體驗。
 
 * 所有構成發佈內容的作業現在皆需遵循訂閱模式，納入管道。發佈內容會推送至管道中的各個佇列，而發佈服務的所有節點都會訂閱這些佇列。因此，製作層級不需知悉發佈服務中的節點數量，這可讓發佈層級快速自動調整規模。
 
