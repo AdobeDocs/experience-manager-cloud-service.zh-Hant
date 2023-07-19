@@ -3,9 +3,9 @@ title: 使用多個存放庫
 description: 了解如何在使用 Cloud Manager 時管理多個 Git 存放庫。
 exl-id: 1b9cca36-c2d7-4f9e-9733-3f1f4f8b2c7a
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '752'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 91%
 
 以下是兩個客戶自有 Git 存放庫的範例 `pom.xml` 檔案。
 
-* 第一個專案會放入名為的目錄中 `project-a`.
+* 第一個專案會放入名為 `project-a` 的目錄中。
 * 第二個專案會放入名為 `project-b` 的目錄中。
 
 ```xml
@@ -60,7 +60,7 @@ ht-degree: 91%
 請依照下列步驟，新增第三個來源或存放庫。
 
 1. 將新的 GitHub 操作新增到新存放庫，會因此從該存放庫將變更推送到 Cloud Manager 的 Git 存放庫。
-1. 至少執行一次該操作，以確保專案計劃碼在 Cloud Manager 的 Git 存放庫中。
+1. 至少執行一次該操作，以確保專案程式碼在 Cloud Manager 的 Git 存放庫中。
 1. 在 Cloud Manager Git 存放庫的根 Maven `pom.xml` 中新增對新目錄的參考資料。
 
 ## GitHub 操作範例 {#sample-github-action}
@@ -122,7 +122,7 @@ jobs:
           git -C ${MAIN_BRANCH} push
 ```
 
-使用 GitHub 操作非常靈活。Git存放庫的分支之間可執行的任何對應，以及單獨的Git專案到主專案的目錄版面中的任何對應。
+使用 GitHub 操作非常靈活。可執行 Git 存放庫分支之間的任何對應，以及單獨 Git 專案至主要專案目錄版面的任何對應。
 
 >[!NOTE]
 >
@@ -135,7 +135,7 @@ jobs:
 1. 會由 Git 存放庫中的變更觸發。
 1. Jenkins 作業會檢查該專案或分支的最新狀態。
 1. 該作業會觸發此指令碼。
-1. 該指令碼會依次檢查 Cloud Manager 的 Git 存放庫並將專案計劃碼認可到子目錄。
+1. 該指令碼會依次檢查 Cloud Manager 的 Git 存放庫並將專案程式碼認可到子目錄。
 
 需要對該 Jenkins 作業提供兩個秘密：`MAIN_USER` 以及 `MAIN_PASSWORD`，才能連線並推送至 Cloud Manager 的 Git 存放庫。
 
@@ -191,7 +191,7 @@ git commit -F ../commit.txt
 git push
 ```
 
-使用 Jenkins 作業非常靈活。Git存放庫的分支之間可執行的任何對應，以及單獨的Git專案到主專案的目錄版面中的任何對應。
+使用 Jenkins 作業非常靈活。可執行 Git 存放庫分支之間的任何對應，以及單獨 Git 專案至主要專案目錄版面的任何對應。
 
 >[!NOTE]
 >
