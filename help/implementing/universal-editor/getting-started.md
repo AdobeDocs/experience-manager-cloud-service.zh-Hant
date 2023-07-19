@@ -3,9 +3,9 @@ title: AEM 中 Universal Editor 快速入門
 description: 了解如何存取 Universal Editor，以及如何開始檢測您的第一個 AEM 應用程式以使用它。
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
 source-git-commit: 0f62245d31074ab7a64d86b97ef3b1a8d7533001
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '804'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -32,7 +32,7 @@ ht-degree: 90%
 
 ## 要求存取 Universal Editor {#request-access}
 
-您需要先要求存取 Universal Editor。另請參閱 [https://experience.adobe.com/#/aem/editor](https://experience.adobe.com/#/aem/editor)，登入並驗證您是否擁有通用編輯器的存取權。
+您需要先要求存取 Universal Editor。請參閱 [https://experience.adobe.com/#/aem/editor](https://experience.adobe.com/#/aem/editor)、登入，然後驗證您是否有權存取 Universal Editor。
 
 如果您沒有存取權，可以透過同一頁面上連結的表格提出要求。
 
@@ -56,7 +56,7 @@ import "@adobe/universal-editor-cors";
 
 ### Non-React 應用程式的替代方案 {#alternative}
 
-如果您沒有實施 React 應用程式和/或要求伺服器端呈現，則替代方案是將以下內容納入文件正文中。
+如果您沒有實作 React 應用程式和/或要求伺服器端呈現，則替代方案是將以下內容納入文件正文中。
 
 ```html
 <script src="https://cdn.jsdelivr.net/gh/adobe/universal-editor-cors/dist/universal-editor-embedded.js" async></script>
@@ -165,14 +165,14 @@ itemid="urn:<referenceName>:<resource>"
 
 您的應用程式現在可以使用 Universal Editor 了！
 
-另請參閱 [使用通用編輯器編寫內容](authoring.md) 瞭解內容作者使用通用編輯器建立內容是多麼簡單和直觀。
+請參閱[使用 Universal Editor 編寫內容](authoring.md)以了解內容作者使用 Universal Editor 建立內容有多簡單和直覺。
 
 ## 其他資源 {#additional-resources}
 
 若要了解有關 Universal Editor 的詳細資訊，請參閱以下文件。
 
-* [通用編輯器簡介](introduction.md)  — 瞭解通用編輯器如何讓您編輯任何實作中任何內容的任何方面，以便提供卓越的體驗、提高內容速度並提供一流的開發人員體驗。
-* [使用 Universal Editor 編寫內容](authoring.md) - 了解內容作者使用 Universal Editor 建立內容有多簡單和直觀。
+* [Universal Editor 簡介](introduction.md) - 了解 Universal Editor 如何在任意實作中編輯任何方面的內容，以便提供卓越的體驗、提高內容速度並提供最先進的開發人員體驗。
+* [使用 Universal Editor 編寫內容](authoring.md) - 了解內容作者使用 Universal Editor 建立內容有多簡單和直覺。
 * [使用 Universal Editor 發佈內容](publishing.md) - 了解 Universal Visual Editor 如何發佈內容，和您的應用程式如何處理發佈的內容。
 * [Universal Editor 架構](architecture.md) - 了解 Universal Editor 的架構，以及資料如何在其服務和階層之間流動。
 * [屬性和類型](attributes-types.md) - 了解 Universal Editor 需要的資料屬性和類型。
