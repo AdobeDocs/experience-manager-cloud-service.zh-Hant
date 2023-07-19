@@ -4,9 +4,9 @@ description: 了解如何在 Adobe Experience Manager 中使用 GraphiQL IDE。
 feature: Content Fragments,GraphQL API
 exl-id: be2ebd1b-e492-4d77-b6ef-ffdea9a9c775
 source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1144'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -74,13 +74,13 @@ ht-degree: 96%
 
 從&#x200B;**持續性查詢**&#x200B;面板 (最左側) 的清單中選取要更新的查詢。
 
-查詢會顯示在編輯器面板中。 視需要進行變更，然後使用&#x200B;**儲存**&#x200B;將更新提交到持續性查詢。
+查詢會顯示在編輯器面板中。視需要進行變更，然後使用&#x200B;**儲存**&#x200B;將更新提交到持續性查詢。
 
 ## 執行查詢 {#running-queries}
 
-您可以立即執行新查詢，也可以載入並執行持續性查詢。若要載入持久查詢，請從清單中選取它 — 查詢會顯示在編輯器面板中。
+您可以立即執行新查詢，也可以載入並執行持續性查詢。若要載入持續性查詢，請從清單中選取 - 查詢會顯示在編輯器面板中。
 
-在任一情況下，編輯器面板中顯示的查詢是您在以下任一情況下執行的查詢：
+在任何一種情況下，編輯器面板顯示的查詢，都是在您執行以下操作時會執行的查詢：
 
 * 按一下/點選&#x200B;**執行查詢**&#x200B;圖示
 * 使用鍵盤組合 `Control-Enter`
