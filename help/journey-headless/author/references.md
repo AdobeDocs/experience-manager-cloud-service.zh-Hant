@@ -3,9 +3,9 @@ title: 了解如何在內容片段中使用參考
 description: 了解如何在內容片段中使用內容、其他片段和其他資產 (媒體) 的參考。介紹巢狀片段對 Headless CMS 編寫的必要性和機制。
 exl-id: a65e8a5a-954b-4307-8027-ca8bac5f4261
 source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '731'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -13,11 +13,11 @@ ht-degree: 95%
 
 ## 到目前為止 {#story-so-far}
 
-在[AEM Headless 內容作者歷程](overview.md)的一開始，[簡介](introduction.md)部分介紹了和無周邊內容編寫相關的基本概念和術語。
+在[AEM Headless 內容作者歷程](overview.md)的一開始，[簡介](introduction.md)部分介紹了和 Headless 內容編寫相關的基本概念和術語。
 
 您已經了解 Headless CMS 編寫的基本知識，包含如何使用 AEMaaCS 編寫內容，尤其是編寫內容片段。
 
-本文以這些概念為基礎，以便您了解如何使用參考為您的 AEM 無周邊專案編寫您自己的內容。
+本文以這些概念為基礎，以便您了解如何使用參考為您的 AEM Headless 專案編寫您自己的內容。
 
 ## 目標 {#objective}
 
@@ -69,9 +69,9 @@ ht-degree: 95%
 
 這只是供初學者了解。根據複雜程度，獎項可以是特定於公司的，或者公司可以在特定城市設有主要辦公室。
 
-可以使用片段參考來表示這些相互關係，因為您 (作者) 和無周邊應用程式都可理解。
+可以使用片段參考來表示這些相互關係，因為您 (作者) 和 Headless 應用程式都可理解。
 
-身為作者，您無需負責定義這些關係（由內容架構師在建立內容片段模型時完成），但您需要知道如何辨識及編輯參考。
+作為作者，您不負責定義這些關係 (由內容架構師在建立內容片段模型時定義)，但您需要知道如何識別和編輯參考。
 
 <!--
 ![Content Modeling with Content Fragments](/help/journey-headless/developer/assets/headless-modeling-01.png "Content Modeling with Content Fragments")
