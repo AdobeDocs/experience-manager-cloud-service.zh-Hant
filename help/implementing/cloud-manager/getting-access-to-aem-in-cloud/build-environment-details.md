@@ -3,9 +3,9 @@ title: 組建環境
 description: 了解 Cloud Manager 的構建環境以及它如何構建和測試您的程式碼。
 exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '991'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -94,7 +94,7 @@ Cloud Manager 使用專門的構建環境構建和測試您的程式碼。
 
 >[!NOTE]
 >
->從2022年4月開始，OracleJDK成為AEM應用程式開發和操作的預設JDK。 Cloud Manager的建置流程會自動切換為使用OracleJDK，即使在Maven工具鏈中明確選取了替代選項。 請參閱2022年4月發行說明。
+>從 2022 年 4 月開始，Oracle JDK 成為 AEM 應用程式開發和運作的預設 JDK。Cloud Manager 的建置流程自動切換成使用 Oracle JDK，即使在 Maven 工具鏈中明確選取了替代選項。請參閱 2022 年 4 月的發行說明。
 
 #### 備用 Maven 執行 JDK 版本 {#alternate-maven-jdk-version}
 
@@ -106,7 +106,7 @@ Cloud Manager 使用專門的構建環境構建和測試您的程式碼。
 
 ### 標準環境變數 {#standard-environ-variables}
 
-您可能會發現有必要根據有關程序或管道的資訊來改變建置流程。
+您可能會發現有必要根據有關計畫或管道的資訊來改變建置流程。
 
 例如，如果透過 gulp 之類的工具完成建置時間 JavaScript 縮製，則在為開發環境建置而不是為中繼和生產環境建置時，可能希望使用不同的縮製等級。
 
@@ -118,8 +118,8 @@ Cloud Manager 使用專門的構建環境構建和測試您的程式碼。
 | `BRANCH` | 為執行設定的分支 |
 | `CM_PIPELINE_ID` | 數值的管道識別碼 |
 | `CM_PIPELINE_NAME` | 管道名稱 |
-| `CM_PROGRAM_ID` | 數值的程序識別碼 |
-| `CM_PROGRAM_NAME` | 程序名稱 |
+| `CM_PROGRAM_ID` | 數值的計畫識別碼 |
+| `CM_PROGRAM_NAME` | 計畫名稱 |
 | `ARTIFACTS_VERSION` | 對於中繼或生產管道，由 Cloud Manager 產生的綜合版本 |
 | `CM_AEM_PRODUCT_VERSION` | 發行版本 |
 
@@ -229,4 +229,4 @@ $ aio cloudmanager:list-pipeline-variables PIPELINEID
 
 >[!TIP]
 >
->如需有關前端建置環境的詳細資訊，請參閱 [使用前端管道開發網站](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md).
+>如需有關前端建置環境的詳細資料，請參閱[使用前端管道開發網站](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md)。
