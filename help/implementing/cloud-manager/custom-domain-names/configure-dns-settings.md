@@ -3,9 +3,9 @@ title: 正在設定 DNS 設定
 description: 正在設定 DNS 設定
 exl-id: 6e294f0b-52cb-40dd-bc42-ddbcffdf5600
 source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '330'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -15,9 +15,9 @@ ht-degree: 87%
 
 ## 什麼是 DNS 設定？ {#dns-settings}
 
-一個 `CNAME` 或一則記錄，部署後將把網域的所有網際網路流量路由到它指向的任何地方。如果該位置未布建為流量服務，則會發生中斷。 如果未經測試，內容可能會存在錯誤。這就是為什麼這個步驟總是在完成測試且準備好上線之後才完成。
+一個 `CNAME` 或一則記錄，部署後將把網域的所有網際網路流量路由到它指向的任何地方。如果未佈建該位置來處理流量，則會發生中斷。如果未經測試，內容可能會存在錯誤。這就是為什麼這個步驟總是在完成測試且準備好上線之後才完成。
 
-若要設定這些設定，您必須確定 `CNAME` 或Apex記錄必須設定為將您的自訂網域名稱指向Cloud Manager網域名稱。 以下區段將幫助您確定適合您的 DNS 設定的記錄類型。
+若要設定這些設定，您需要確定是否必須設定 `CNAME` 或 Apex 記錄以將您的自訂網域名稱指向 Cloud Manager 網域名稱。以下區段將幫助您確定適合您的 DNS 設定的記錄類型。
 
 >[!NOTE]
 >
