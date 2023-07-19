@@ -5,16 +5,16 @@ feature: Onboarding
 role: Admin, User, Developer
 exl-id: 555688e5-f937-462c-9fcc-b90685f1882b
 source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1532'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
 
 # 將團隊成員指派給 Cloud Manager 產品設定檔 {#assign-team-members}
 
-在[入門歷程](overview.md)的這一部分，您將了解如何將團隊成員指派給 Cloud Manager 產品設定檔
+在[上線歷程](overview.md)的這一部分，您將了解如何將團隊成員指派給 Cloud Manager 產品設定檔
 
 ## 目標 {#objective}
 
@@ -22,7 +22,7 @@ ht-degree: 95%
 
 在授與使用者 Adobe 解決方案的存取權時，您不一定要授與他們完整的存取權。產品設定檔使每個解決方案都可以擁有自己的一組使用者權限。您可以使用 Admin Console 指派產品設定檔。
 
-您的第一步是授與使用者存取 Cloud Manager 的權限。雲端管理員可透過企業開發設定及其專門建置的 CI/CD 管道為您提供支援，這些管道可確保全面測試和最高的計劃碼品質，從而提供卓越的體驗。
+您的第一步是授與使用者存取 Cloud Manager 的權限。雲端管理員可透過企業開發設定及其專門建置的 CI/CD 管道為您提供支援，這些管道可確保全面測試和最高的程式碼品質，從而提供卓越的體驗。
 
 閱讀本文件後，您應該：
 
@@ -55,9 +55,9 @@ ht-degree: 95%
 
 ## Cloud Manager {#cloud-manager}
 
-作為系統管理員，您知道成功的 AEM as a Cloud Service 專案不僅取決於使用 AEM 建立令人驚嘆的內容，還取決於開發和部署您自己的自訂計劃碼和應用計劃以傳達您的 AEM 內容。
+作為系統管理員，您知道成功的 AEM as a Cloud Service 專案不僅取決於使用 AEM 建立令人驚嘆的內容，還取決於開發和部署您自己的自訂程式碼和應用程式以傳達您的 AEM 內容。
 
-Cloud Manager 是 AEM as a Cloud Service 不可或缺的一部分，用於管理 CI/CD 管道以進行計劃碼部署、管理計劃碼存放庫和管理環境。
+Cloud Manager 是 AEM as a Cloud Service 不可或缺的一部分，用於管理 CI/CD 管道以進行程式碼部署、管理程式碼存放庫和管理環境。
 
 您必須授與您的團隊成員必要的產品設定檔來讓他們加入 Cloud Manager，然後他們才可以進行下一步。接下來的步驟將說明如何使用 Admin Console 找到 Cloud Manager 產品設定檔，以及如何將設定檔指派給您的團隊成員。
 
@@ -65,7 +65,7 @@ Cloud Manager 是 AEM as a Cloud Service 不可或缺的一部分，用於管理
 
 使用 Admin Console，您可以查看 Cloud Manager 設定檔清單。
 
-1. 在 [adminconsole.adobe.com](https://adminconsole.adobe.com/) 登入 Adobe Admin Console，然後在&#x200B;**總覽**&#x200B;頁面上，從&#x200B;**產品和服務**&#x200B;卡中選擇 **Adobe Experience Manager as a Cloud Service**。
+1. 在 [adminconsole.adobe.com](https://adminconsole.adobe.com/) 登入 Adobe Admin Console，然後在&#x200B;**概觀**&#x200B;頁面上，從&#x200B;**產品和服務**&#x200B;卡中選擇 **Adobe Experience Manager as a Cloud Service**。
 
    ![AEM 作為產品](/help/journey-onboarding/assets/assign-team1.png)
 
@@ -80,8 +80,8 @@ Cloud Manager 是 AEM as a Cloud Service 不可或缺的一部分，用於管理
 在初始入門流程中要指派的最重要設定檔是：
 
 * **業務負責人** - 這些使用者管理不同的計畫。
-* **部署管理員** - 這些使用者要將計劃碼從您的存放庫部署到正在執行的 AEM 環境。
-* **開發人員** - 這些使用者要開發您的自訂 AEM 應用計劃並將計劃碼認可到您的存放庫。
+* **部署管理員** - 這些使用者要將程式碼從您的存放庫部署到正在執行的 AEM 環境。
+* **開發人員** - 這些使用者要開發您的自訂 AEM 應用程式並將程式碼認可到您的存放庫。
 
 了解這些角色的本質及其功用，查看您的團隊成員清單以確定誰需要哪個設定檔。請記住，使用者可以在您的團隊中擁有多個角色，因此也需要多個設定檔。
 
@@ -89,9 +89,9 @@ Cloud Manager 是 AEM as a Cloud Service 不可或缺的一部分，用於管理
 
 您現在可以新增使用者並將其指派給&#x200B;**業務負責人**&#x200B;產品設定檔。
 
-1. 確定需要管理Cloud Manager計畫的使用者。 這些是您的 **業務負責人**.
+1. 確定需要管理 Cloud Manager 計畫的使用者。這些是您的&#x200B;**業務負責人**。
 
-1. 登入Admin Console於 `[adminconsole.adobe.com](https://adminconsole.adobe.com/enterprise/overview)` 並在 **概觀** 頁面，選取 **Adobe Experience Manager as a Cloud Service** 產品來源 **產品和服務** 卡片。
+1. 在 `[adminconsole.adobe.com](https://adminconsole.adobe.com/enterprise/overview)` 登入 Admin Console，然後在&#x200B;**概觀**&#x200B;頁面上，從&#x200B;**產品和服務**&#x200B;卡中選擇 **Adobe Experience Manager as a Cloud Service** 產品。
 
    ![產品和服務](/help/journey-onboarding/assets/assign-team1.png)
 
@@ -120,9 +120,9 @@ Cloud Manager 是 AEM as a Cloud Service 不可或缺的一部分，用於管理
 
 ## 指派部屬管理員產品設定檔 {#assign-deployment-manager}
 
-1. 確定需要部署計劃碼的使用者。
+1. 確定需要部署程式碼的使用者。
 
-1. 在 `[adminconsole.adobe.com](https://adminconsole.adobe.com/enterprise/overview)` 登入 Admin Console，然後在&#x200B;**總覽**&#x200B;頁面上，從&#x200B;**產品和服務**&#x200B;卡中選擇 **Adobe Experience Manager as a Cloud Service** 產品。
+1. 在 `[adminconsole.adobe.com](https://adminconsole.adobe.com/enterprise/overview)` 登入 Admin Console，然後在&#x200B;**概觀**&#x200B;頁面上，從&#x200B;**產品和服務**&#x200B;卡中選擇 **Adobe Experience Manager as a Cloud Service** 產品。
 
    ![產品和服務](/help/journey-onboarding/assets/assign-team1.png)
 
@@ -144,9 +144,9 @@ Cloud Manager 是 AEM as a Cloud Service 不可或缺的一部分，用於管理
 
 ## 指派開發人員產品設定檔 {#assign-developer}
 
-1. 確定需要開發 AEM 應用計劃和管理計劃碼的使用者。
+1. 確定需要開發 AEM 應用程式和管理程式碼的使用者。
 
-1. 在 `[adminconsole.adobe.com](https://adminconsole.adobe.com/enterprise/overview)` 登入 Admin Console，然後在&#x200B;**總覽**&#x200B;頁面上，從&#x200B;**產品和服務**&#x200B;卡中選擇 **Adobe Experience Manager as a Cloud Service** 產品。
+1. 在 `[adminconsole.adobe.com](https://adminconsole.adobe.com/enterprise/overview)` 登入 Admin Console，然後在&#x200B;**概觀**&#x200B;頁面上，從&#x200B;**產品和服務**&#x200B;卡中選擇 **Adobe Experience Manager as a Cloud Service** 產品。
 
    ![產品和服務](/help/journey-onboarding/assets/assign-team1.png)
 
@@ -170,20 +170,20 @@ Cloud Manager 是 AEM as a Cloud Service 不可或缺的一部分，用於管理
 
 恭喜！您新組建的 Cloud Manager 團隊 (包括您自己指派到&#x200B;**業務負責人**&#x200B;設定檔) 已完成設定。在&#x200B;**業務負責人**&#x200B;角色中，您現在距離登入 Cloud Manager 並啟用建立雲端資源只差一步。
 
-在入門歷程的這一部分中，您已了解如何在 Admin Console 中將您的團隊成員指派至設定檔。您現在應該：
+在上線歷程的這一部分中，您已了解如何在 Admin Console 中將您的團隊成員指派至設定檔。您現在應該：
 
 * 了解什麼是產品設定檔。
 * 了解什麼是 Cloud Manager。
 * 了解三個重要的 Cloud Manager 產品設定檔：**業務負責人**、**部署管理員**&#x200B;和&#x200B;**開發人員**。
 * 能夠將團隊成員指派給 Cloud Manager 產品設定檔。
 
-您現在已準備好繼續您的入門歷程，接下來查看文件[存取 Cloud Manager](cloud-manager.md)，您將在該文件中了解如何存取 Cloud Manager 和建立專案資源。
+您現在已準備好繼續您的上線歷程，接下來查看文件[存取 Cloud Manager](cloud-manager.md)，您將在該文件中了解如何存取 Cloud Manager 和建立專案資源。
 
 ## 其他資源 {#additional-resources}
 
-建議繼續如前所述的入門歷程。如果您想深入了解此歷程中的特定主題，請參閱以下其他資源。
+建議繼續如前所述的上線歷程。如果您想深入了解此歷程中的特定主題，請參閱以下其他資源。
 
 * [Cloud Manager 簡介](/help/onboarding/cloud-manager-introduction.md) - 了解 Cloud Manager、Cloud Manager 計畫和環境。
 * [Cloud Manager 產品設定檔](/help/onboarding/aem-cs-team-product-profiles.md) - 了解 AEM as a Cloud Service 團隊和產品設定檔。
-* [Adobe Admin Console上的身分型別](https://helpx.adobe.com/tw/enterprise/admin-guide.html/enterprise/using/identity.ug.html) -Adobe的identity management system可協助管理員建立和管理使用者對應用程式和服務的存取權。 Adobe 提供這些身份類型或帳戶來對使用者進行驗證和授權。
+* [Adobe Admin Console 上的身分類型](https://helpx.adobe.com/tw/enterprise/admin-guide.html/enterprise/using/identity.ug.html) - Adobe 的 Identity Management 系統可協助管理員建立和管理使用者對應用程式和服務的存取權。Adobe 提供這些身份類型或帳戶來對使用者進行驗證和授權。
 
