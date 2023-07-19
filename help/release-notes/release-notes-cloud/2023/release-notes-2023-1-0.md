@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2023.1.0 版發行�
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2023.1.0 版發行說明。'
 exl-id: f134fdbc-224b-404c-b20f-44cae8bad681
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '976'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 97%
 
 ## 發行日期 {#release-date}
 
-[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 2023.1.0 功能版本的發行日期是 2023 年 2 月 9 日。下一個功能版本 (2023.2.0) 已計劃於 2023 年 4 月 12 日發行。
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 2023.1.0 功能版本的發行日期是 2023 年 2 月 9 日。下一個功能版本 (2023.2.0) 已計畫於 2023 年 4 月 12 日發行。
 
 ## 發行影片 {#release-video}
 
@@ -43,7 +43,7 @@ ht-degree: 97%
 
 ### [!DNL Assets] 中的新功能 {#assets-features}
 
-* 資產報告現在可讓管理員從 Experience Manager Assets as a Cloud Service 部署[產生資產下載報告](/help/assets/asset-reports.md)。此資料可進一步讓管理員從關鍵成功量度取得見解，以衡量企業內和客戶對資產的採用程度。
+* 資產報告現在可讓管理員從 Experience Manager Assets as a Cloud Service 部署[產生資產下載報告](/help/assets/asset-reports.md)。此資料可進一步讓管理員從關鍵成功量度取得深入見解，以衡量企業內和客戶對資產的採用程度。
 
   ![其他格式的 PDF 轉譯](/help/release-notes/assets/choose_report.png)
 
@@ -96,7 +96,7 @@ ht-degree: 97%
 
 * [擴展對伺服器端 API 存取代號的支援](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md) – 您現在可以產生多個憑證，這有助於 API 具有不同特性的使用案例。現在也能以自助式方式撤銷憑證。
 
-## 維護發行說明 {#maintenance}
+## 維護版本發行說明 {#maintenance}
 
 您可以在[此處](/help/release-notes/maintenance/latest.md)找到最新的維護版本發行說明。
 
