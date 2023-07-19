@@ -1,17 +1,17 @@
 ---
 title: 新增 TXT 記錄
-description: 了解如何新增 TXT 記錄以在雲管理器中新增自訂網域名稱。
+description: 了解如何新增 TXT 記錄以在 Cloud Manager 中新增自訂網域名稱。
 exl-id: d441de29-af41-4d3e-9155-531af9702841
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '329'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
 # 新增 TXT 記錄 {#adding-txt}
 
-DNS TXT 記錄授權將域託管在 CDN 服務中。您必須在授權雲管理器使用自訂域部署 CDN 服務並將其與後端服務關聯的區域中建立 DNS TXT 記錄。此關聯完全在您的控制之下，並授權 Cloud Manager 將內容從服務提供給網域。此授權可授予並撤銷。 TXT 記錄特定於域和 Cloud Manager 環境。
+DNS TXT 記錄授權將域託管在 CDN 服務中。您必須在授權 Cloud Manager 使用自訂域部署 CDN 服務並將其與後端服務關聯的區域中建立 DNS TXT 記錄。此關聯完全在您的控制之下，並授權 Cloud Manager 將內容從服務提供給網域。這種授權可以被授予也可以被撤銷。TXT 記錄特定於域和 Cloud Manager 環境。
 
 在新增 TXT 記錄之前，您必須滿足這些要求。
 
@@ -23,7 +23,7 @@ DNS TXT 記錄授權將域託管在 CDN 服務中。您必須在授權雲管理�
 1. 登入您的網域主持機構並找到 DNS 記錄區段。
 1. 新增`_aemverification.[yourdomainname]`作為&#x200B;**姓名**&#x200B;值，並新增 TXT 值，就像它顯示的一樣。
 
-請參閱此表格中的範例。
+請參閱此表的範例。
 
 | 網域 | 名稱 | TXT 數值 |
 |--- |--- |---|
