@@ -3,9 +3,9 @@ title: 體驗稽核測試
 description: 了解體驗稽核如何驗證您的部署過程，並幫助確保部署的變更符合效能、協助工具、最佳實務和 SEO 的基準標準。
 exl-id: 8d31bc9c-d38d-4d5b-b2ae-b758e02b7073
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '549'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -19,27 +19,27 @@ ht-degree: 85%
 
 了解體驗稽核如何驗證您的部署過程，並幫助確保部署的變更符合效能、協助工具、最佳實務和 SEO 的基準標準。
 
-## 總覽 {#overview}
+## 概觀 {#overview}
 
 體驗稽核是 Cloud Manager Sites 生產管道中提供的功能，可驗證部署過程並幫助確保已部署變更：
 
-1. 符合效能、協助工具、最佳實務、SEO (搜尋引擎最佳化) 和 PWA (漸進式 Web 應用計劃) 的基準標準。
+1. 符合效能、協助工具、最佳實務、SEO (搜尋引擎最佳化) 和 PWA (漸進式 Web 應用程式) 的基準標準。
 
 1. 不要引入迴歸。
 
 Cloud Manager 中的體驗稽核可確保一般使用者的網站體驗達到最高標準。
 
-稽核結果會提供資訊，可讓部署管理員查看目前和先前分數之間的分數和變更。此深入分析對於判斷是否有現行部署所引入的回歸非常有用。
+稽核結果會提供資訊，可讓部署管理員查看目前和先前分數之間的分數和變更。此深入分析對於判斷是否有會於目前部署引入的迴歸十分有用。
 
 Experience Audit 由 Google Lighthouse 提供技術支援，Lighthouse 是 Google 的開放原始碼工具，可在所有 Cloud Manager 生產管道中啟用。
 
 >[!TIP]
 >
->您可以設定當您在下列情況下，哪些頁面會包含在體驗稽核中 [設定您的管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#full-stack-code).
+>當您[設定您的管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#full-stack-code)時，您可以設定要將哪些頁面包含在體驗稽核中。
 
 ## 了解體驗稽核結果 {#understanding-experience-audit-results}
 
-體驗稽核透過提供彙總和詳細的頁面層級測試結果 [生產管道執行頁面](/help/implementing/cloud-manager/deploy-code.md).
+體驗稽核透過[生產管道執行頁面](/help/implementing/cloud-manager/deploy-code.md)。
 
 * 彙總量度會測量經過稽核、效能、協助工具、最佳實務、SEO (搜尋引擎最佳化) 之頁面的平均分數。
 * 個別頁面層級分數也可透過深入研究取得。
@@ -68,6 +68,6 @@ Experience Audit 由 Google Lighthouse 提供技術支援，Lighthouse 是 Googl
 
 透過深入研究任何測試，可以獲得更詳細的頁面層級分數。您可以查看各個頁面在特定測試中的得分情況以及與上一次測試執行相比的變化。
 
-按一下任何個別頁面的詳細資訊，可提供已評估頁面元素的相關資訊，以及在偵測到改善機會時修正問題的指引。
+按一下任何單個頁面的詳細資訊，可獲得已評估頁面元素的相關資訊，以及在偵測到改善機會時修正問題的指引。
 
 ![頁面層級分數](/help/implementing/cloud-manager/assets/exp-audit-2.png)
