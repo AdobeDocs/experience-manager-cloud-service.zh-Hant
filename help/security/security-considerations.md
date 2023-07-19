@@ -5,9 +5,9 @@ hidefromtoc: true
 hide: true
 exl-id: d2dfde05-ce02-478e-8697-b939fb8740c3
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '229'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 93%
 
 ## AEM Trust Store {#aem-trust-store}
 
-為了支援非對稱的密碼編譯操作，AEM會將憑證儲存在全域信任存放區的內容存放庫中。 其內容是公開的，根據預設，發佈者執行個體上的所有人都可以匿名存取。
+為了支援非對稱式加密作業，AEM 將憑證儲存在內容存放庫的全域 trust-store 中。其內容是公開的，根據預設，發佈者執行個體上的所有人都可以匿名存取。
 
 ### Trust Store 的特色 {#truststore-characteristics}
 
