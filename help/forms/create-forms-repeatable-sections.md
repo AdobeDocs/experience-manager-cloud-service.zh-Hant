@@ -2,9 +2,9 @@
 title: 最適化表單中的重複性（核心元件）
 description: 使用面板元件的重複特性以最適化表單重複類似的區段。
 role: Architect, Developer, Admin, User
-source-git-commit: f7f30545b76afa6abd4f49316d0fb2245f5470c2
+source-git-commit: fcdb96a6bbe8ff8761293eedc0d38efaecb56037
 workflow-type: tm+mt
-source-wordcount: '1410'
+source-wordcount: '1391'
 ht-degree: 5%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 5%
 
 閱讀本文後，您將瞭解：
 
-* 在最適化表單中建立可重複區段
+* 在最適化表單中建立可重複的區段
 * 設定最適化表單元件的最小重複次數或最大重複次數
 * 使用規則編輯器為可重複區段設定新增或刪除動作
 
@@ -131,7 +131,11 @@ ht-degree: 5%
 >`Panel1.instanceManager.instances[1].textbox.value`
 >
 >
->如需詳細資訊，請參閱：Class： InstanceManager#instances in [AEM Forms Java API參考](https://adobe.com/go/learn_aemforms_documentation_63).
+>
+
+<!-- 
+>For more information, see: Class: InstanceManager#instances in [AEM Forms Java API reference](https://adobe.com/go/learn_aemforms_documentation_63).      
+-->
 
 >[!NOTE]
 >
