@@ -4,9 +4,9 @@ description: 了解如何將內容片段和 GraphQL API 用作 Headless 內容�
 hidefromtoc: true
 index: false
 exl-id: f5e379c8-e63e-41b3-a9fe-1e89d373dc6b
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: b9b9cf79173a0ae486bd5d8fcbc1fec48c0b2bc8
 workflow-type: tm+mt
-source-wordcount: '1116'
+source-wordcount: '1086'
 ht-degree: 100%
 
 ---
@@ -67,10 +67,6 @@ ht-degree: 100%
    ![清單查詢](assets/do-not-localize/list-query-1-3-4-5.png)
 
 您剛剛驗證了所有內容片段完整清單的清單查詢。此過程有助於確保查詢的回應符合您應用程式的預期，且結果會說明您的應用程式和網站將如何擷取在 AEM 建立的內容。
-
->[!NOTE]
->
->如果您無法從下拉式選單選取「**AEM 示範資產**」端點，請聯絡 Adobe 客戶服務或在 [AEM 試用版 Slack 管道](https://adobe-dx-support.slack.com/)尋求協助。
 
 ## 查詢範例內容指定片段 {#bypath-query}
 

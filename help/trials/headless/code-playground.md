@@ -4,10 +4,10 @@ description: 探索使用 CodePen 範例應用程式和適用於 JavaScript 的 
 hidefromtoc: true
 index: false
 exl-id: b7dc70f2-74a2-49f7-ae7e-776eab9845ae
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: b9b9cf79173a0ae486bd5d8fcbc1fec48c0b2bc8
 workflow-type: tm+mt
-source-wordcount: '981'
-ht-degree: 100%
+source-wordcount: '977'
+ht-degree: 96%
 
 ---
 
@@ -47,7 +47,7 @@ CodePen 是用於前端 Web 開發的線上程式碼編輯器和遊樂場。可�
           ...
 ```
 
-如果您看到錯誤，請查看瀏覽器主控台以取得更多詳細資料，或[在 Slack](https://adobe-dx-support.slack.com) 尋求協助。
+如果您看到錯誤，請改為檢視瀏覽器主控台以取得詳細資訊或聯絡 [透過電子郵件](mailto:aem-headless-trials-support@adobe.com?subject=AEM%20Trials%20support%20request).
 
 現在您對 CodePen 有了一些了解，接下來您將設定應用程式以從您在前面單元建立的持續性查詢擷取資料。
 
@@ -92,7 +92,7 @@ const aemHeadlessClient = new AdobeAemHeadlessClientJs({
    persistedQueryName = 'your-project/adventure-list';
    ```
 
-1. 完成此變更後，此應用程式將自動重新整理，並將來自持續性查詢的原始 JSON 回應列印到 `#output` div。如果出現錯誤訊息，請查看主控台以取得更多詳細資訊。如果您在此步驟中仍有問題，請[在 Slack](https://adobe-dx-support.slack.com) 尋求協助。
+1. 完成此變更後，此應用程式將自動重新整理，並將來自持續性查詢的原始 JSON 回應列印到 `#output` div。如果出現錯誤訊息，請查看主控台以取得更多詳細資訊。聯絡 [透過電子郵件](mailto:aem-headless-trials-support@adobe.com?subject=AEM%20Trials%20support%20request) 如果您在此步驟中仍然遇到問題。
 
 1. 此 JSON 是否包含應用程式所需的確切屬性？如果沒有，請回到[使用 GraphQL API 擷取內容](https://experience.adobe.com/experiencemanager/learn/extract_content_using_graphql)學習指南進行變更。完成後不要忘記儲存並發佈您的查詢。
 
