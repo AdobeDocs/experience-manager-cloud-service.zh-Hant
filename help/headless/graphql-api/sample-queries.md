@@ -4,7 +4,7 @@ description: 透過探索範例內容和查詢，了解如何搭配使用 GraphQ
 feature: Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
 source-git-commit: 92c123817a654d0103d0f7b8e457489d9e82c2ce
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1752'
 ht-degree: 100%
 
