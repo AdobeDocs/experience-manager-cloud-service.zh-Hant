@@ -8,9 +8,9 @@ topic-tags: publish, document_services
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 73e63493-e821-443f-b50d-10797360f5d1
 docset: aem65
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 8c125d834ebfff5601f56646d59ce00a80fcc0ba
 workflow-type: tm+mt
-source-wordcount: '2360'
+source-wordcount: '2362'
 ht-degree: 1%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 1%
 
 # OSGi上以Forms為中心的工作流程{#forms-centric-workflow-on-osgi}
 
-![](do-not-localize/header.png)
+![英雄影像](do-not-localize/header.png)
 
 企業會從數以百計與數以千計的表單、各種後端系統，以及線上或離線資料來源收集資料。 他們還擁有一組動態的使用者，可就資料做出決策，其中涉及反複的稽核和核准流程。
 
@@ -273,4 +273,4 @@ You can use the Assign Task and Send Email steps of AEM Workflows to send an ema
 
 ### 清除工作流程例項 {#purge-workflow-instances}
 
-將工作流程例項的數目降至最低會提升工作流程引擎的效能，因此您可以定期從儲存庫中清除已完成或執行中的工作流程例項。 如需詳細資訊，請參閱 [定期清除工作流程例項](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/maintenance.html) 清除工作流程例項
+將工作流程例項的數目降至最低會提升工作流程引擎的效能，因此您可以定期從儲存庫中清除已完成或執行中的工作流程例項。 如需詳細資訊，請參閱 [定期清除工作流程例項](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/maintenance.html?lang=zh-Hant) 清除工作流程例項

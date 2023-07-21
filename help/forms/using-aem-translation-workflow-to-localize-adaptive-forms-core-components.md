@@ -2,9 +2,9 @@
 title: 翻譯以核心元件為基礎的最適化表單
 description: 使用機器翻譯或人工翻譯來翻譯以核心元件為基礎的最適化表單
 feature: Adaptive Forms
-source-git-commit: a33b380570210a32f4a4a1f26c9a2fe37c885bb1
+source-git-commit: 8c125d834ebfff5601f56646d59ce00a80fcc0ba
 workflow-type: tm+mt
-source-wordcount: '876'
+source-wordcount: '882'
 ht-degree: 4%
 
 ---
@@ -71,7 +71,7 @@ ht-degree: 4%
 1. 在底部 **摘要** 圖磚，按一下 **橢圓**. 翻譯專案屬性畫面隨即開啟。
 1. 開啟 **[!UICONTROL 進階]** 索引標籤在頂端 **翻譯專案屬性** 畫面。 對於 **[!UICONTROL 翻譯欄位]**，選取 **[!UICONTROL 人工翻譯]**. 按一下 **儲存並關閉** 在熒幕上方。
 1. 於 **翻譯工作** 圖磚，按一下 ![aem62forms_downarrow](assets/aem62forms_downarrow.png) 圖示，然後按一下 **匯出**. 在「匯出」對話方塊中，按一下「下載匯出的檔案」選項。 它會下載.zip檔案。
-   ![](/help/forms/assets/adaptive-forms-core-components-start-translation-export.png)
+   ![匯出翻譯檔案](/help/forms/assets/adaptive-forms-core-components-start-translation-export.png)
 1. 解壓縮下載的.zip檔案。 解壓縮的資料夾有兩個檔案：
    * translation_export_summary.xml
    * [form-fields-file].xml.
@@ -79,6 +79,6 @@ ht-degree: 4%
 1. 將translation_export_summary.xml和 [form-fields-file].xml.
 1. 於 **翻譯工作** 圖磚，按一下 ![aem62forms_downarrow](assets/aem62forms_downarrow.png) 圖示，然後按一下 **匯入**. 選取包含 [form-fields-file].xml. 表單欄位的本地化字串和訊息。
 
-   ![](/help/forms/assets/adaptive-forms-core-components-start-translation-import.png)
+   ![匯入翻譯檔案](/help/forms/assets/adaptive-forms-core-components-start-translation-import.png)
 
 1. 若要預覽當地語系化表單，請在AEM Forms UI上選取當地語系化表單。 按一下 **[!UICONTROL 預覽]** >**[!UICONTROL 以HTML預覽]**. 新增後重新開啟表單 `afAcceptLang=<locale code>` 至表單的URL。 例如，新增 `afAcceptLang=de`以開啟德文版的表單。
