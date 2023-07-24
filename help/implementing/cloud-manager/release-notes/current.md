@@ -3,10 +3,10 @@ title: Adobe Experience Manager as a Cloud Service 中 Cloud Manager 2023.7.0 �
 description: 以下是 AEM as a Cloud Service 中 Cloud Manager 2023.7.0 的發行說明。
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: 1b46f763903a1b103837ed7e8cc498ad08ce64f1
+source-git-commit: 2721cb20083eeda7546513817f1ddfe12e9cb43a
 workflow-type: tm+mt
-source-wordcount: '237'
-ht-degree: 43%
+source-wordcount: '265'
+ht-degree: 38%
 
 ---
 
@@ -30,6 +30,8 @@ AEMas a Cloud Service中的Cloud Manager版本2023.7.0發行日期是2023年6月
    * 這將分階段推出。
 * 時間 [取消執行，](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#view-details) 管道執行核准步驟現在會要求使用者提供取消的原因。
    * 這將分階段推出。
+* 使用者現在可以存取 [複製內容程式的記錄檔。](/help/implementing/developing/tools/content-copy.md#accessing-logs)
+   * 只有在來源和目的地環境皆為AEM版本時，才能使用此選項 `2023.7.12549` 或更高。
 
 ## 錯誤修正 {#bug-fixes}
 

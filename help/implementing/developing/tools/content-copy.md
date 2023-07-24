@@ -2,12 +2,13 @@
 title: 內容複製工具
 description: 內容複製工具可讓使用者根據需求，從AEMas a Cloud Service上的生產環境複製可變內容，以便用於測試目的的較低環境。
 exl-id: f060821d-d559-45d2-b3b1-1b2277694ec4
-source-git-commit: f08048b2378b150210a3fd1168206f4efb0c4f8e
+source-git-commit: f579539d582e2059fca20f9f7e5e82f4ae24c833
 workflow-type: tm+mt
-source-wordcount: '1203'
-ht-degree: 41%
+source-wordcount: '1308'
+ht-degree: 38%
 
 ---
+
 
 # 內容複製工具 {#content-copy}
 
@@ -41,13 +42,15 @@ ht-degree: 41%
 | 建立和修改[內容集](#create-content-set) | 必要 | 不需要 |
 | 開始獲取消[內容副本程序](#copy-content) | 必要 | 必要 |
 
+如需許可權及許可權設定方式的詳細資訊，請參閱檔案 [AEMas a Cloud Service團隊和產品設定檔。](/help/onboarding/aem-cs-team-product-profiles.md)
+
 ## 建立內容集 {#create-content-set}
 
 在複製任何內容之前，必須定義一個內容集。定義內容集後，即可重複使用內容集來複製內容。 請依照下列步驟操作，以便建立內容集。
 
-1. 登入雲端管理員，網址為 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 並選取適當的組織和方案。
+1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織和計畫。
 
-1. 從「**概觀**」頁面瀏覽到「**環境**」畫面。
+1. 從&#x200B;**概觀**&#x200B;頁面瀏覽到&#x200B;**環境**&#x200B;畫面。
 
 1. 從&#x200B;**環境**&#x200B;畫面瀏覽&#x200B;**內容集**&#x200B;頁面。
 
@@ -105,9 +108,9 @@ ht-degree: 41%
 >[!NOTE]
 > 請勿在環境上使用內容副本，當 [內容轉移](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md) 作業正在該環境中執行。
 
-1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織和程序。
+1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織和計畫。
 
-1. 從「**概觀**」頁面瀏覽到「**環境**」畫面。
+1. 從&#x200B;**概觀**&#x200B;頁面瀏覽到&#x200B;**環境**&#x200B;畫面。
 
 1. 從&#x200B;**環境**&#x200B;畫面瀏覽&#x200B;**內容集**&#x200B;頁面。
 
@@ -129,7 +132,7 @@ ht-degree: 41%
 
    * 內容只能從較高的環境複製到較低的環境，或在開發/RDE環境之間複製，其中環境的階層如下所示（從最高到最低）：
       * 生產
-      * 預備
+      * 中繼
       * 開發/ RDE
 
 1. 如有需要，您也可以選取 **包含存取控制清單** 在復製程式中。
@@ -142,9 +145,9 @@ ht-degree: 41%
 
 您可以在&#x200B;**複製內容活動**&#x200B;中監控複製過程的狀態頁面。
 
-1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織和程序。
+1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織和計畫。
 
-1. 從「**概觀**」頁面瀏覽到「**環境**」畫面。
+1. 從&#x200B;**概觀**&#x200B;頁面瀏覽到&#x200B;**環境**&#x200B;畫面。
 
 1. 從&#x200B;**環境**&#x200B;畫面瀏覽&#x200B;**複製內容活動**&#x200B;頁面。
 
@@ -174,6 +177,16 @@ ht-degree: 41%
 >取消內容複製操作時，可能會導致目標環境中的內容出現部分副本。 此情況可能會使目的地環境處於無法使用的狀態。
 >
 >如果您的環境因取消而處於這種狀態，請聯絡Adobe客戶服務以尋求協助。
+
+### 存取記錄檔 {#accessing-logs}
+
+您可以檢視來源和目的地環境的記錄，以瞭解任何已完成的內容復製程式。
+
+若要這麼做，請在 **複製內容活動** 頁面，選取 **記錄檔** 動作（從復製程式的省略符號選單中），您要檢閱其記錄並選擇哪個環境。
+
+![存取複製內容程式的記錄](assets/copy-content-logs.png)
+
+記錄檔會下載至您的本機電腦。 如果下載尚未開始，請檢查您的快顯封鎖程式設定。
 
 ## 限制 {#limitations}
 
