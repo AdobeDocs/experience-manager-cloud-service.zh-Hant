@@ -2,14 +2,16 @@
 title: 建立並使用主題來風格化最適化表單
 description: 您可以使用主題來風格化最適化表單並提供視覺身分。 您可以在任何數量的Adaptive Forms中共用主題。
 exl-id: 99c3d1f7-5756-49d2-98ee-72dd62063110
-source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
+source-git-commit: ca0c9f102488c38dbe8c969b54be7404748cbc00
 workflow-type: tm+mt
-source-wordcount: '5519'
+source-wordcount: '5576'
 ht-degree: 1%
 
 ---
 
 # 建立和使用主題 {#creating-and-using-themes}
+
+<span class="preview"> Adobe建議使用現代化且可擴充的資料擷取 [核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) 的 [建立新的Adaptive Forms](/help/forms/creating-adaptive-form-core-components.md) 或 [將最適化Forms新增至AEM Sites頁面](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). 這些元件代表最適化Forms建立工作取得重大進展，可確保提供令人驚歎的使用者體驗。 本文說明使用基礎元件製作最適化Forms的舊方法。 </span>
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |

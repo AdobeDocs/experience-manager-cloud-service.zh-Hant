@@ -4,14 +4,16 @@ seo-title: Reference Themes, Templates, and Form Data models
 description: AEM Forms提供可從Software Distribution取得的最適化表單主題、範本和表單資料模型
 seo-description: AEM Forms provides adaptive forms themes, templates, and form data models that you can get from Software Distribution
 exl-id: 81588759-22da-4123-92fe-5ca97e97f1e4
-source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
+source-git-commit: ca0c9f102488c38dbe8c969b54be7404748cbc00
 workflow-type: tm+mt
-source-wordcount: '779'
+source-wordcount: '836'
 ht-degree: 2%
 
 ---
 
 # 參考主題、範本和表單資料模型 {#reference-themes-templates-and-data-models}
+
+<span class="preview"> Adobe建議使用現代化且可擴充的資料擷取 [核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) 的 [建立新的Adaptive Forms](/help/forms/creating-adaptive-form-core-components.md) 或 [將最適化Forms新增至AEM Sites頁面](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). 這些元件代表最適化Forms建立工作取得重大進展，可確保提供令人驚歎的使用者體驗。 本文說明使用基礎元件製作最適化Forms的舊方法。 </span>
 
 AEM Formsas a Cloud Service提供多種參考主題、範本和表單資料模型，可幫助您快速開始建立最適化Forms。 您可以下載 [來自軟體發佈入口網站的參考內容套件](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip) 並使用 [封裝管理員](/help/implementing/developing/tools/package-manager.md) 安裝 [參考內容封裝](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip) 在您的生產、開發或本機開發環境中，將這些參考資產帶至您的環境。
 
@@ -22,11 +24,11 @@ AEM Formsas a Cloud Service提供多種參考主題、範本和表單資料模�
 ---------|----------|---------
 | Canvas 3.0 | 基本 | Microsoft Dynamics 365 |
 | 寧靜 | 空白 | Salesforce |
-| 城市 |  |  |
+| 城市 |   |  |
 | Ultraminary |  |  |
 | Beryl |  |  |
-| 保健 |  |  |
-| FSI |  |  |
+| 保健 |  |   |
+| FSI |   |   |
 
 ## 參考主題 {#reference-themes}
 

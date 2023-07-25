@@ -5,14 +5,16 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 6b3f9131-db6b-451b-a932-b57d809222eb
-source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
+source-git-commit: ca0c9f102488c38dbe8c969b54be7404748cbc00
 workflow-type: tm+mt
-source-wordcount: '506'
-ht-degree: 2%
+source-wordcount: '563'
+ht-degree: 3%
 
 ---
 
 # 多步驟表單序列簡介 {#introduction-to-multi-step-form-sequence}
+
+<span class="preview"> Adobe建議使用現代化且可擴充的資料擷取 [核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) 的 [建立新的Adaptive Forms](/help/forms/creating-adaptive-form-core-components.md) 或 [將最適化Forms新增至AEM Sites頁面](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). 這些元件代表最適化Forms建立工作取得重大進展，可確保提供令人驚歎的使用者體驗。 本文說明使用基礎元件製作最適化Forms的舊方法。 </span>
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
@@ -29,7 +31,7 @@ ht-degree: 2%
 
 請讓我們舉一個使用案例，您必須在表單中建立填寫、驗證、簽署和確認步驟的順序。 建立此類序列的步驟如下：
 
-1. 定義表單範本並在其中新增必要面板。 序列中的每個步驟都應該有一個面板。 不過，您可以在面板中包含子面板。
+1. 定義表單範本並新增必要面板。 序列中的每個步驟都應該有一個面板。 不過，您可以在面板中包含子面板。
 
    在此範例中，我們可以新增下列面板：
 

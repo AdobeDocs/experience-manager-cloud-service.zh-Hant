@@ -4,14 +4,17 @@ seo-title: Manage [!DNL AEM Forms] metadata
 description: 中繼資料可讓您更輕鬆地分類及組織資產，並協助尋找特定資產的使用者。
 seo-description: Metadata allows for easier categorization and organization of assets and helps users who are looking for a specific asset.
 exl-id: 8527246a-37f0-4d43-a49e-1c76c265514e
-source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
+source-git-commit: ca0c9f102488c38dbe8c969b54be7404748cbc00
 workflow-type: tm+mt
-source-wordcount: '1678'
+source-wordcount: '1735'
 ht-degree: 3%
 
 ---
 
 # 新增、移除或編輯最適化表單的中繼資料 {#manage-form-metadata}
+
+<span class="preview"> Adobe建議使用現代化且可擴充的資料擷取 [核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) 的 [建立新的Adaptive Forms](/help/forms/creating-adaptive-form-core-components.md) 或 [將最適化Forms新增至AEM Sites頁面](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). 這些元件代表最適化Forms建立工作取得重大進展，可確保提供令人驚歎的使用者體驗。 本文說明使用基礎元件製作最適化Forms的舊方法。 </span>
+
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
