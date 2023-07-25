@@ -8,9 +8,9 @@ user-guide-description: 了解 Experience Manager as a Cloud Service 的運作�
 breadcrumb-title: 使用手冊
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 8ac35abd1335b4e31a6dc0d8812cc9df333e69a4
+source-git-commit: 579f2842a72c7da1c9d24772bdae354a943de40c
 workflow-type: tm+mt
-source-wordcount: '4184'
+source-wordcount: '4192'
 ht-degree: 99%
 
 ---
@@ -158,6 +158,7 @@ ht-degree: 99%
    + [AEM as a Cloud Service 的 IMS 支援](/help/security/ims-support.md)
    + [AEM as a Cloud Service 的相同網站 Cookie 支援](/help/security/same-site-cookie-support.md)
    + [郵件服務的 OAuth2 支援](/help/security/oauth2-support-for-mail-service.md)
+   + [設定CDN和WAF規則以篩選流量](/help/security/cdn-and-waf-rules.md)
    + [AEM as a Cloud Service 安全性注意事項](/help/security/security-considerations.md)
 + 入門 {#onboarding}
    + [從這裡開始](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html)
