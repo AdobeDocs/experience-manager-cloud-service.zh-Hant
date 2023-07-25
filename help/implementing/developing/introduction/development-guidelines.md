@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service 開發指導方針
 description: 了解在 AEM as a Cloud Service 上進行開發的準則，以及它和內部部署的 AEM 以及 AMS 中的 AEM 的重要區別。
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: f69b348b7de6c6537a9945793e3397bf4fe30f98
 workflow-type: tm+mt
-source-wordcount: '2586'
+source-wordcount: '2655'
 ht-degree: 4%
 
 ---
@@ -66,6 +66,13 @@ Adobe建議使用提供的 [Apache HttpComponents Client 4.x程式庫](https://h
 * [確定Http](https://square.github.io/okhttp/) (AEM未提供)
 
 除了提供逾時功能外，也應對這類逾時功能進行適當處理，以及非預期的HTTP狀態代碼。
+
+## 處理要求速率限制 {#rate-limit-handling}
+
+>[!NOTE]
+>HTTP錯誤回應將在2023年8月7日當週從503變更為429。
+>
+當AEM的傳入要求速率超過正常程度時，AEM會以HTTP錯誤碼429回應新要求。 對AEM進行程式化呼叫的應用程式可以考慮防禦性地編碼，在幾秒鐘後使用指數回退策略重試。 在2023年8月中旬之前，AEM以HTTP錯誤碼503回應相同的條件。
 
 ## 無傳統UI自訂 {#no-classic-ui-customizations}
 
