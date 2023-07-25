@@ -10,17 +10,19 @@ topic-tags: adaptive_forms, author
 discoiquuid: 4c53dfc0-25ca-419d-abfe-cf31fc6ebf61
 docset: aem65
 exl-id: 3fdbe5a3-5c3c-474d-b701-e0182da4191a
-source-git-commit: 115f8dfc8d3ba025f1e815bb8ae87cfb8a513e65
+source-git-commit: 07e0e7c14ac6bac04542a34d50e67b3b846281b8
 workflow-type: tm+mt
 source-wordcount: '1513'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
 # 在最適化Forms中使用驗證碼{#using-captcha-in-adaptive-forms}
 
-|版本 |文章連結 | |-------- |---------------------------- | | AEM 6.5 |    [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/captcha-adaptive-forms.html)                  | | AEMAS A CLOUD SERVICE |本文 |
-=======
+| 版本 | 文章連結 |
+| -------- | ---------------------------- |
+| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/captcha-adaptive-forms.html) |
+| AEM as a Cloud Service  | 本文 |
 
 <span class="preview"> Adobe建議使用現代化且可擴充的資料擷取 [核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) 的 [建立新的Adaptive Forms](/help/forms/creating-adaptive-form-core-components.md) 或 [將最適化Forms新增至AEM Sites頁面](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). 這些元件代表最適化Forms建立工作取得重大進展，可確保提供令人驚歎的使用者體驗。 本文說明使用基礎元件製作最適化Forms的舊方法。 </span>
 
