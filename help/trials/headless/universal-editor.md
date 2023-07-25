@@ -1,22 +1,22 @@
 ---
-title: 編輯內文中專案
-description: 探索如何使用通用編輯器來編輯內容的任何方面，無論內容是在任何實作中的原地還是內文中皆然。
+title: 在內容中編輯
+description: 探索如何使用通用編輯器來編輯內容的任何方面，並在任何實作中的位置及內容中進行。
 hidefromtoc: true
 index: false
-source-git-commit: 4dd0998862baf3e1d0c8ed2d42006acfcf5d0873
+source-git-commit: 9826041962a3a0065feb676b07304ba30d23d2e9
 workflow-type: tm+mt
-source-wordcount: '797'
-ht-degree: 6%
+source-wordcount: '961'
+ht-degree: 4%
 
 ---
 
 
-# 編輯內文中專案 {#editing-in-context}
+# 在內容中編輯 {#editing-in-context}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_edit_inline_universal_editor"
->title="編輯內文中內容"
->abstract="瞭解您的Headless應用程式如何善用Universal Editor，讓作者輕鬆進行低摩擦力的內容內編輯。"
+>title="在內容中編輯"
+>abstract="瞭解您的Headless應用程式如何善用通用編輯器，在內容編輯中降低摩擦力，觸手可及。"
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_edit_inline_universal_editor_guide"
@@ -25,14 +25,18 @@ ht-degree: 6%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_edit_inline_universal_editor_guide_footer"
->title="在本單元中，您已瞭解如何使用通用編輯器在內容中和就地自訂內容。"
+>title="在本單元中，您已瞭解如何使用Universal Editor在內容中就地自訂內容。"
 >abstract=""
 
-## 編輯內容文字 {#edit-text}
+## 編輯內容中的文字 {#edit-text}
 
-就地和上下文中編輯通常比在內容片段編輯器中的結構化Headless內容編輯更有利，正如您在以前的模組中看到的。
+就地和上下文中編輯通常比在內容片段編輯器中編輯結構化Headless內容有好處，如同您在之前的模組中看到的。
 
-使用通用編輯器，您可以靈活地編輯上下文和就地文字，從而實現簡單直觀的內容創作。
+>[!NOTE]
+>
+>若要在此試用版中使用通用編輯器，您必須使用Chrome作為瀏覽器，而非無痕模式。 這是試用體驗的限制，不是Universal Editor的限制。
+
+使用通用編輯器，您可以靈活地在上下文中就地編輯文字，進行簡單直覺式內容創作。
 
 1. 依預設，編輯器應載入於 **文字** 模式。 如果沒有，請點選或按一下 **文字** 圖示來定義編輯器。
 
@@ -47,6 +51,26 @@ ht-degree: 6%
 1. 按下Enter/Return鍵，或點選或按一下文字元件外部，您的變更就會自動儲存。
 
 Universal Editor會自動在製作環境中儲存您的變更。 您仍需發佈這些檔案以供讀者檢視，我們將在稍後的步驟中執行此操作。
+
+## 在內容中編輯媒體 {#edit-media}
+
+您也可以使用通用編輯器，在仍保留在內容內容內容中的情況下置換影像。
+
+1. 將編輯器變更為 **媒體** 模式(點選或按一下 **媒體** 模式邊欄上的按鈕。
+
+1. 點選或按一下瀏覽者的影像以選取它。
+
+1. 在元件邊欄中，您可以看到資產的詳細資訊。 點選或按一下 **Replace**.
+
+   ![選取影像以進行編輯](assets/do-not-localize/ue-edit-media.png)
+
+1. 在 **選取資產** 視窗，向下捲動並點選或按一下 `surfer-wave-02.JPG` 影像以選取它。
+
+1. 點選或按一下 **選取** 在 **選取資產** 視窗。
+
+   ![使用「選取資產」視窗來選取影像](assets/do-not-localize/ue-select-asset.png)
+
+影像會取代為您選取的影像。
 
 ## 像Reader一樣體驗您的內容 {#emulators}
 
@@ -102,6 +126,5 @@ Universal Editor會自動在製作環境中儲存您的變更。 您仍需發佈
 1. 新 **編輯** 圖示會出現在「模式」邊欄上。 點選或按一下 **編輯** 圖示在新標籤上開啟內容片段編輯器。
 
 ![在通用編輯器中選取內容片段](assets/do-not-localize/ue-content-fragments.png)
-
 
 在新標籤上，您現在可以編輯您在通用編輯器中選取的內容片段。
