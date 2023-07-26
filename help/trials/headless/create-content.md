@@ -7,7 +7,7 @@ exl-id: d74cf5fb-4c4a-4363-a500-6e2ef6811e60
 source-git-commit: 91e9711e10a7aa8e3c7fa0b4cc25a098741e53b1
 workflow-type: tm+mt
 source-wordcount: '702'
-ht-degree: 88%
+ht-degree: 93%
 
 ---
 
@@ -16,17 +16,17 @@ ht-degree: 88%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_create_content"
->title="建立Headless內容"
+>title="建立 Headless 內容"
 >abstract="使用您在上一個單元中建立的模型，您將了解如何建立可用於編寫頁面或作為 Headless 內容基礎的內容。"
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_create_content_guide"
 >title="啟動內容片段主控台"
->abstract="建立可在您的應用程式和網站上無縫執行的高品質一致內容，能帶來出色的客戶體驗。本單元將引導您使用內容片段主控台建立您的第一個Headless內容。<br><br>點選下方按鈕，在新標籤中啟動此單元，然後按照本指南進行操作。"
+>abstract="建立可在您的應用程式和網站上無縫執行的高品質一致內容，能帶來出色的客戶體驗。本單元將引導您如何使用內容片段主控台建立您的第一個 Headless 內容。<br><br>點選下方按鈕，在新標籤中啟動此單元，然後按照本指南進行操作。"
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_create_content_guide_footer"
->title="做得好！在本單元中，您已瞭解如何根據先前建立的模式將Headless內容作為內容片段進行創作。 您現在瞭解內容團隊能如何建立和管理應用程式和網站的內容，不受開發週期的限制。"
+>title="做得好！在本單元中，您已了解如何根據先前建立的模型將 Headless 內容編寫成內容片段。您現在瞭解內容團隊能如何建立和管理應用程式和網站的內容，不受開發週期的限制。"
 >abstract=""
 
 ## 建立內容片段 {#create-fragment}
@@ -35,7 +35,7 @@ ht-degree: 88%
 
 在本單元中，您會使用內容片段主控台根據該模型建立新的內容片段。將內容片段主控台視為您的 Headless 內容資料庫。使用該控制台來建立新的內容片段並管理現有片段。
 
-內容片段主控台用於跨傳遞管道及獨立於內容的Headless內容建立和編輯，這可能是許多編寫案例中最有效的方法。 在稍後的單元中，我們將探索在內容中和就地編輯Headless內容。
+內容片段主控台是用來跨傳遞管道及獨立於內容來建立和編輯Headless內容，在許多撰寫案例中，這是最有效的方法。 在稍後的單元中，我們將探索在內容中和就地編輯Headless內容。
 
 1. 在主控台右上方，點選或按一下&#x200B;**建立**&#x200B;按鈕。
 
