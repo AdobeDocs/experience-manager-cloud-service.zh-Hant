@@ -4,10 +4,10 @@ description: 使用範例 React 應用程式，了解如何使用 AEM as a Cloud
 hidefromtoc: true
 index: false
 exl-id: 32290ad4-d915-41b7-a073-2637eb38e978
-source-git-commit: 3645918f6ce592b6c70cb4339ab6f0e5e9d71519
-workflow-type: ht
-source-wordcount: '1036'
-ht-degree: 100%
+source-git-commit: 3177832b32c98bf463c763dafe2d9e284dc2ac28
+workflow-type: tm+mt
+source-wordcount: '1044'
+ht-degree: 98%
 
 ---
 
@@ -79,7 +79,7 @@ ht-degree: 100%
 
    ![從片段移除影像](assets/do-not-localize/swap-image-4.png)
 
-1. 點選或按一下「**新增資產**」。
+1. 點選或按一下 **新增資產** 然後 **瀏覽資產** 在躍現式選單中。
 
 1. 「**選取資產**」對話框隨即開啟，路徑 **sample-wknd-app** > **en** > **image-files** 會自動選取。
 
