@@ -8,9 +8,9 @@ user-guide-description: 了解 Experience Manager as a Cloud Service 的運作�
 breadcrumb-title: 使用手冊
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 579f2842a72c7da1c9d24772bdae354a943de40c
+source-git-commit: 651fd49950c9b168a097e4b7d2812b22bd8de03f
 workflow-type: tm+mt
-source-wordcount: '4192'
+source-wordcount: '4194'
 ht-degree: 99%
 
 ---
@@ -192,7 +192,7 @@ ht-degree: 99%
       + [建立 Headless 內容](/help/trials/headless/create-content.md)
       + [通過 GraphQL API 擷取內容](/help/trials/headless/extract-content.md)
       + [使用 JavaScript 擷取 JSON 內容](/help/trials/headless/code-playground.md)
-      + [使用通用編輯器編輯內嵌](/help/trials/headless/universal-editor.md)
+      + [使用通用編輯器內嵌編輯](/help/trials/headless/universal-editor.md)
 + AEM as a Cloud Service 移轉歷程 {#migration-journey}
    + [移動 AEM as a Cloud Service 快速入門](/help/journey-migration/getting-started.md)
    + [整備階段](/help/journey-migration/readiness.md)
@@ -340,7 +340,6 @@ ht-degree: 99%
             + [擷取 git 存放庫存取資訊](/help/journey-sites/quick-site/retrieve-access.md)
             + [自訂網站主題](/help/journey-sites/quick-site/customize-theme.md)
             + [部署您的自訂主題](/help/journey-sites/quick-site/deploy-theme.md)
-      + [管理工作流程](/help/sites-cloud/administering/workflows-administering.md)
       + 重複使用內容 {#reusing-content}
          + [MSM 和翻譯](/help/sites-cloud/administering/msm-and-translation.md)
          + 多站點管理員 {#msm}
@@ -369,6 +368,8 @@ ht-degree: 99%
             + [設定翻譯整合框架](/help/sites-cloud/administering/translation/integration-framework.md)
             + [連線到 Microsoft Translator](/help/sites-cloud/administering/translation/connect-ms-translator.md)
             + [翻譯最佳實務](/help/sites-cloud/administering/translation/best-practices.md)
+      + [管理標籤](/help/sites-cloud/administering/tags.md)
+      + [管理工作流程](/help/sites-cloud/administering/workflows-administering.md)
    + 整合 AEM as a Cloud Service {#integrations}
       + [整合 Adobe Analytics](/help/sites-cloud/integrating/integrating-adobe-analytics.md)
       + [整合 Adobe Analytics 自動化設定](/help/sites-cloud/integrating/adobe-analytics-exc-setup-automation.md)
@@ -632,7 +633,7 @@ ht-degree: 99%
       + [在 PDF 文件中使用自訂字型](/help/forms/use-custom-fonts.md)
       + [已知問題、最佳實務和常見問題集](/help/forms/communications-known-issues-limitations.md)
    + 開發人員 API 參考 {#aem-forms-developer-api-reference}
-      + [Adaptive Forms API參考](https://developer-stage.adobe.com/experience-cloud/experience-manager-apis/api/stable/forms/)
+      + [最適化Forms API參考](https://developer-stage.adobe.com/experience-cloud/experience-manager-apis/api/stable/forms/)
       + [AEM Forms as a Cloud Service 通訊 API 參考](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)
       + [AEM Forms as a Cloud Service JavaScript API 參考](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/jsdoc/aem-forms-cloud-service-jsdoc/index.html)
       + [AEM Forms as a Cloud Service Java API 參考](https://javadoc.io/doc/com.adobe.aem/aem-forms-sdk-api/latest/index.html)
