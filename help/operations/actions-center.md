@@ -4,10 +4,10 @@ description: 利用行動中心可輕鬆對事件和其他重要資訊採取行�
 hidefromtoc: true
 hide: true
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '701'
-ht-degree: 100%
+source-git-commit: 083aa4b893b58102b3a0bf68c4dd3b4c003b48f6
+workflow-type: tm+mt
+source-wordcount: '708'
+ht-degree: 99%
 
 ---
 
@@ -72,7 +72,7 @@ AEM as a Cloud Service 有多種類型的通知，但只有一部分出現在行
 
 ## 支援的通知類型 {#supported-notification-types}
 
-下表列有行動中心目前支援的通知類型。
+下表列有行動中心目前支援的通知類型。通知目前僅限於生產環境。
 
 | 通知類型 | 相關產品簡介 | 糾正措施 |
 |---|---|---|
