@@ -2,10 +2,10 @@
 title: 組建環境
 description: 了解 Cloud Manager 的構建環境以及它如何構建和測試您的程式碼。
 exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '991'
-ht-degree: 100%
+source-git-commit: d3bc5dbb5a88aff7765beffc8282d99063dde99f
+workflow-type: tm+mt
+source-wordcount: '1005'
+ht-degree: 98%
 
 ---
 
@@ -54,27 +54,41 @@ Cloud Manager 使用專門的構建環境構建和測試您的程式碼。
 
 此 [Maven 工具鏈外掛程式](https://maven.apache.org/plugins/maven-toolchains-plugin/)讓專案可選取特定 JDK (或工具鏈)，以用於工具鏈感知的 Maven 外掛程式內容中。這可透過指定廠商和版本值，在專案的 `pom.xml` 檔案中完成。
 
+此工具鏈外掛程式可以新增為設定檔的一部分，如下所示。
+
 ```xml
-<plugin>
-    <groupId>org.apache.maven.plugins</groupId>
-    <artifactId>maven-toolchains-plugin</artifactId>
-    <version>1.1</version>
-    <executions>
-        <execution>
-            <goals>
-                <goal>toolchain</goal>
-            </goals>
-        </execution>
-    </executions>
-    <configuration>
-        <toolchains>
-            <jdk>
-                <version>11</version>
-                <vendor>oracle</vendor>
-            </jdk>
-        </toolchains>
-    </configuration>
-</plugin>
+<profile>
+    <id>cm-java-11</id>
+    <activation>
+        <property>
+            <name>env.CM_BUILD</name>
+        </property>
+    </activation>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-toolchains-plugin</artifactId>
+                <version>1.1</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>toolchain</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <toolchains>
+                        <jdk>
+                            <version>11</version>
+                            <vendor>oracle</vendor>
+                        </jdk>
+                    </toolchains>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</profile>
 ```
 
 這將導致所有工具鏈感知的 Maven 外掛程式使用 Oracle JDK 版本 11。
