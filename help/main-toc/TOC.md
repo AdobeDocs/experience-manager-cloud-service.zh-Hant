@@ -8,9 +8,9 @@ user-guide-description: 了解 Experience Manager as a Cloud Service 的運作�
 breadcrumb-title: 使用手冊
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 651fd49950c9b168a097e4b7d2812b22bd8de03f
+source-git-commit: 0b79cc8ee956226e10cffdfec05c7c38caccaee0
 workflow-type: tm+mt
-source-wordcount: '4194'
+source-wordcount: '4197'
 ht-degree: 99%
 
 ---
@@ -35,6 +35,7 @@ ht-degree: 99%
    + AEMaaCS 功能發行說明{#release-notes}
       + [最新發行說明](/help/release-notes/release-notes-cloud/release-notes-current.md)
       + 2023 {#2023}
+         + [2023.6.0 版發行說明](/help/release-notes/release-notes-cloud/2023/release-notes-2023-6-0.md)
          + [2023.4.0 版發行說明](/help/release-notes/release-notes-cloud/2023/release-notes-2023-4-0.md)
          + [2023.2.0 版發行說明](/help/release-notes/release-notes-cloud/2023/release-notes-2023-2-0.md)
          + [2023.1.0 版發行說明](/help/release-notes/release-notes-cloud/2023/release-notes-2023-1-0.md)
@@ -192,7 +193,7 @@ ht-degree: 99%
       + [建立 Headless 內容](/help/trials/headless/create-content.md)
       + [通過 GraphQL API 擷取內容](/help/trials/headless/extract-content.md)
       + [使用 JavaScript 擷取 JSON 內容](/help/trials/headless/code-playground.md)
-      + [使用通用編輯器內嵌編輯](/help/trials/headless/universal-editor.md)
+      + [使用 Universal Editor 進行內嵌編輯](/help/trials/headless/universal-editor.md)
 + AEM as a Cloud Service 移轉歷程 {#migration-journey}
    + [移動 AEM as a Cloud Service 快速入門](/help/journey-migration/getting-started.md)
    + [整備階段](/help/journey-migration/readiness.md)
@@ -575,7 +576,7 @@ ht-degree: 99%
             + [使用機器翻譯或人工翻譯來翻譯最適化表單](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
             + [設定重新導向頁面或感謝訊息](/help/forms/configure-redirect-page-or-thank-you-message.md)
             + [建立具有可重複區段的表單](/help/forms/create-forms-repeatable-sections.md)
-            + [設定最適化表單的提交動作](/help/forms/configure-submit-actions-core-components.md)
+            + [為最適化表單設定提交動作](/help/forms/configure-submit-actions-core-components.md)
       + 編寫最適化表單 - 基礎元件{#authoring-adaptive-forms-foundation-components}
          + 將您的 PDF forms 轉換為最適化表單 {#afcs}
             + [自動表單轉換服務簡介](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html)
@@ -633,7 +634,7 @@ ht-degree: 99%
       + [在 PDF 文件中使用自訂字型](/help/forms/use-custom-fonts.md)
       + [已知問題、最佳實務和常見問題集](/help/forms/communications-known-issues-limitations.md)
    + 開發人員 API 參考 {#aem-forms-developer-api-reference}
-      + [最適化Forms API參考](https://developer-stage.adobe.com/experience-cloud/experience-manager-apis/api/stable/forms/)
+      + [最適化表單 API 參考](https://developer-stage.adobe.com/experience-cloud/experience-manager-apis/api/stable/forms/)
       + [AEM Forms as a Cloud Service 通訊 API 參考](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)
       + [AEM Forms as a Cloud Service JavaScript API 參考](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/jsdoc/aem-forms-cloud-service-jsdoc/index.html)
       + [AEM Forms as a Cloud Service Java API 參考](https://javadoc.io/doc/com.adobe.aem/aem-forms-sdk-api/latest/index.html)

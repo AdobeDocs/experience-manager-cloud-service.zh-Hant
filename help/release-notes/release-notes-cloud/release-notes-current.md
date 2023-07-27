@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 最新發行說明�
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 最新發行說明。'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: b738d351a8ec607bef6c82880616061a88968e7f
+source-git-commit: 8efe5d66929d1e2ccd7af71a2de8ae02f2bbc290
 workflow-type: tm+mt
-source-wordcount: '1365'
-ht-degree: 87%
+source-wordcount: '1032'
+ht-degree: 42%
 
 ---
 
@@ -26,114 +26,70 @@ ht-degree: 87%
 
 ## 發行日期 {#release-date}
 
-[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 最新功能版本 (2023.6.0) 的發行日期為 2023 年 6 月 29 日。下一個功能版本 (2023.7.0) 預計於 2023 年 7 月 27 日發行。
+的發行日期 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 目前功能版本(2023.7.0)為2023年7月27日。 下一個功能版本(2023.8.0)計畫於2023年8月31日發行。
 
 ## 發行影片 {#release-video}
 
-請觀看 2023 年 6 月發行概觀影片，了解 2023.6.0 版本新增功能摘要：
+請觀看2023年7月版本概觀影片，瞭解2023.6.0版本新增功能摘要：
 
->[!VIDEO](https://video.tv.adobe.com/v/3420971/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3422016/?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
 ### [!DNL Experience Manager Sites] 中的新功能 {#sites-features}
 
-* 內容片段及其參考資料現在可以發佈到 [AEM 預覽服務](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=zh-Hant#access-preview-service) (使用[內容片段主控台](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=zh-Hant))，讓使用者在上線前可在分離的預覽應用程式上先預覽最終體驗。
-* 現在可以使用 AEM GraphQL 在 Headless 情境下，動態最佳化影像以進行 Web 傳遞。[查詢變數](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/images.html?lang=en#query-variables)可以在 GraphQL 查詢中定義，以允許分離的用戶端應用程式相應地要求 AEM 中的最佳化影像。
-* 現在可以使用 AEM GraphQL 內容傳遞 API 將[內容片段變化](https://experienceleague.adobe.com/docs/experience-manager-65/assets/content-fragments/content-fragments-variations.html?lang=en)上的標記輸出至 JSON。
+* 內容片段的MSM。 AEM Multisite Manager現在可用於內容片段，允許建立內容片段即時副本以進行大量內容發佈。 精細繼承控制項可向下提供至內容片段元素和變數層級。
+
+### [!DNL Experience Manager Sites] 發行前版本的新功能 {#prerelease-sites}
+
+* 此 [內容片段主控台](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=zh-Hant) 現在可讓使用者檢視標籤，並按套用為內容片段中繼資料的標籤進行搜尋。 使用者無需再切換至Assets UI即可使用此功能，減少內容切換並提高效率。
+
+![在內容片段控制檯中標籤](/help/assets/content-fragments-console-tags.png)
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### [!DNL Assets] 中的新功能 {#assets-features}
-
-**新資產檢視的可用性**
-
-Experience Manager Assets 現在提供[新的資產檢視](/help/assets/assets-view-introduction.md)。資產檢視提供簡化的使用者介面，使您可輕鬆管理、探索和分發數位資產。該體驗的目標對象是唯讀創意資產的取用者以及輕量型 DAM 使用者。
-
-![標記管理](/help/assets/assets/my-workspace.png)
-
-**搜尋體驗增強功能**
-
-Experience Manager Assets 現在使您能夠透過搜尋結果使用者介面執行更多操作：您現在可以：
-
-* [在預設的目前存放庫位置執行搜尋，而不是在整個存放庫中搜尋關鍵字。](/help/assets/search-assets.md)
-
-* [瀏覽到搜尋結果顯示的資產所在資料夾。](/help/assets/search-assets.md#aftersearch)
-
-**3D 資產的縮圖預覽**
-
-[!DNL Experience Manager Assets] 現在可以產生[常見 3D 檔案格式的縮圖預覽](/help/assets/file-format-support.md)，包括 gLB、USDz、FBX、3DS、OBJ 和 SBSAR。當這些檔案上傳時，縮圖會依預設自動產生。
-
-**連結共用設定**
-
-新改進的[建立連結共用](/help/assets/share-assets.md)使用者體驗，加上一組全新設定，使管理員可以為使用者自訂此功能的預設行為。
-
-![標記管理](/help/assets/assets/config-email-service.png)
-
-**Dynamic Media：更新了影像設定檔中與智慧型裁切相關欄位**
-
-影像設定檔中一些與智慧型裁切相關之欄位的使用者介面現已更新，以反映定義智慧型裁切的最新指引。請參閱[裁切選項](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles.html?lang=zh-Hant#crop-options)。
-
 ### 資產檢視中的新功能 {#assets-view-features}
 
-**資產的階層式標記可提供更快速的搜尋體驗**
+**將中繼資料表單指派至資料夾**
 
-受控詞彙的平面清單會隨著時間推移而變得難以管理。資產檢視現在支援[標記階層結構](/help/assets/tagging-management-assets-view.md)，這有助於套用相關的中繼資料、將資產分類、支援搜尋、重複使用標記、提高易尋性等。
+您現在可以將中繼資料表單指派至Assets Essentials部署內的特定資料夾。 資料夾中的所有資產（包括子資料夾中的資產）接著會顯示指派的中繼資料表單中定義的屬性。
 
-![標記管理](/help/assets/assets/tags-hierarchy.png)
+![將中繼資料表單指派至資料夾](/help/release-notes/assets/assign-to-folder.png)
 
-**釘選檔案、資料夾和集合以便快速存取**
+**改善影像智慧標籤的人工智慧架構**
 
-現在可以[釘選檔案、資料夾和集合以便快速存取](/help/assets/my-workspace-assets-view.md) (之後需要時)。釘選的項目都顯示在「我的工作區」的&#x200B;**快速存取**&#x200B;部分。您可以使用「我的工作區」進行存取，而不是瀏覽到存放庫中儲存的位置。
+Experience Manager Assets 現在為影像智慧標記使用改良的人工智慧框架。 此內容智慧可提高智慧標記的相關性和準確性，在擷取時可用於所有影像資產。
 
-![Workspace 中的任務](/help/assets/assets/quick-access.png)
+**設定「資產清單」檢視的欄顯示**
 
-**篩選「垃圾桶」資料夾的資產**
+Assets Essentials現在提供選取「資產清單」檢視中顯示的欄的功能，例如狀態、格式、Dimension、大小等。
 
-資產檢視現在可讓您[篩選「垃圾桶」資料夾中的資產](/help/assets/navigate-assets-view.md)。您也可以套用標準或自訂篩選條件搜尋「垃圾桶」資料夾中的適當資產，以恢復或永久刪除。
+![設定欄](/help/release-notes/assets/configure-columns.png)
 
-**3D 資產的縮圖預覽**
+**根據相關性排序搜尋結果**
 
-資產檢視現在可以產生常見 3D 檔案格式的縮圖預覽，包括 gLB、USDz、FBX、3DS、OBJ 和 SBSAR。當這些檔案上傳到資產檢視時，系統會依預設情況自動生成縮圖。
-
-![Workspace 中的任務](/help/assets/assets/3d-preview.png)
-
-**檢視熱門搜尋詞彙**
-
-資產檢視現在支援使用「我的工作區」的 **Insights** 部分，[檢視在部署中的熱門搜尋詞彙](/help/assets/my-workspace-assets-view.md)。您也可以瀏覽到詳細的 Insights 以檢視過去 30 天或 12 個月內的熱門搜尋。
-
-![Workspace 中的任務](/help/assets/assets/insights-top-searches.png)
-
-**中繼資料表單增強功能**
-
-資產檢視現在可讓您在中繼資料表單中[新增多值文字和下拉式清單屬性元件](/help/assets/metadata-assets-view.md#property-components)。
+依預設，Assets Essentials現在會根據關聯性來排序搜尋結果。 您可以依照 `Name`、`Relevance`、`Size`、`Modified` 和 `Created` 的遞增或遞減順序排序搜尋的資產。
 
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-### [!DNL Forms] 中可用的新功能 {#new-features-available-in-channel}
+### [!DNL Forms] 中可用的新功能 {#new-features-available-in-forms-channel}
 
-* [AEM頁面編輯器和體驗片段中的最適化Forms](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)：您現在可以使用AEM頁面編輯器和體驗片段來快速建立多個表單並新增到您的AEM Sites頁面。 此功能可讓內容作者運用Adaptive Forms元件的強大功能（包括動態行為、驗證、資料整合、產生記錄檔案和業務流程自動化），在Sites頁面中建立順暢的資料擷取體驗。
+* [**現成主題**](/help/forms/using-themes-in-core-components.md) **和範本**：透過我們現成可用的OOTB主題和範本，啟動您的表單建立流程，量身打造以增強經驗豐富的專業人員和新表單作者的能力。 使用最適化Forms核心元件建立後，透過這些精心策劃的主題和範本，您可以快速建立適用於常見使用案例的表單。
 
-  >[!VIDEO](https://video.tv.adobe.com/v/3419284?quality=12&learn=on)
 
-* [透過AEM Forms使用政府用Adobe Acrobat Sign Solutions （HIPPA投訴）](/help/forms/adobe-sign-integration-adaptive-forms.md)：AEM Forms現在與適用於政府的Adobe Acrobat Sign Solutions整合。 這種整合能夠讓政府相關帳戶 (政府部門和機構) 在提交最適化表單時，享有等級更高的電子簽名合規性和安全性。
+* **Headless Forms的React元件**：您現在可以使用現成可用的React元件預覽和自訂Headless最適化表單轉譯。 這些元件利用最適化Forms核心元件的BEM類別進行樣式設定，讓您輕鬆根據特定需求自訂其外觀。
 
   藉由與適用於政府機關的 Adobe Acrobat Sign Solutions 整合，在一些最重要的關鍵任務和敏感業務線，Adobe 的合作夥伴和政府客戶便可以在最適化表單使用電子簽名。這額外一層的安全性可確保所有電子簽名完全符合 FedRAMP 中等合規性，讓 Adobe 的政府客戶安心使用。
 
-* [使用規則編輯器中的自訂錯誤處理常式增強錯誤處理](/help/forms/add-custom-error-handler-adaptive-forms.md)：您現在可以呼叫自訂函數 (使用用戶端資料庫) 來回應外部服務傳回的錯誤，並為一般使用者提供量身打造的回應。或者，您可以針對服務傳回的錯誤採取特定動作。例如，您可以針對特定錯誤程式碼在後端叫用自訂的工作流程，或通知客戶服務已關閉。
+* [**使用可重複區段建立最適化Forms**](/help/forms/create-forms-repeatable-sections.md)：您現在可以製作 [摺疊面板](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html)， [精靈](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html)， [面板](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html)、和 [水準索引標籤](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html) 適用於多筆資料記錄擷取的元件式最適化表單。  這些可重複的區段可讓您輕鬆提供多個資料專案。 當無法事先知道需要多少份的資料時，這就非常有用。表單填寫器可輕鬆新增或移除區段，使表單能適應不同的資料輸入情境，並簡化相同資料記錄多次出現次數的收集。
 
-  此功能有助於引進標準型錯誤回應來提高整體的錯誤處理能力；這些回應向後相容於 OOTB 錯誤處理常式，且具有更大的彈性和控制性。
 
-* [表單資料模型的增強驗證方法](/help/forms/configure-data-sources.md)：使用者端憑證式驗證能將AEM Forms （表單資料模型）與相容的資料來源連線，讓您體驗更強的安全性。 使用此增強功能就不需要模擬或使用者登入，從而強化對資料的保護。
+### 中可用的搶鮮版功能 [!DNL Forms] {#pre-release-features-available-in-forms-channel}
 
-* [使用可重複區段建立最適化Forms](/help/forms/create-forms-repeatable-sections.md)：您現在可以製作 [收合式選單](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html)， [精靈](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html)， [面板](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html)、和 [水準標籤](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html) 元件在核心元件型最適化表單中建立可重複區段。
+* [**Google reCAPTCHA企業支援**](/help/forms/captcha-adaptive-forms.md)：在最適化表單中使用Google reCAPTCHA Enterprise，針對詐騙活動和垃圾郵件提供增強型保護，提供更安全的使用者體驗。 透過進階風險分析及緊密整合，正版使用者可輕鬆提交表單，同時有效封鎖機器人。
 
-  >[!VIDEO](https://video.tv.adobe.com/v/3421052/adaptive-forms-repeatable-sections-repeat-sections/?quality=12&learn=on)
-
-  這些可重複的區段可讓您提供無限數量的項目，欄位數不用固定。當無法事先知道需要多少份的資料時，這就非常有用。Forms 使用者可以輕鬆新增或移除區段，使表單可依不同資料輸入情境進行調整，並簡化同一資料多次出現的收集作業。
-
-* **[將最適化Forms提交至Microsoft®SharePoint和Microsoft® OneDrive](/help/forms/configuring-submit-actions.md)**：您現在可以將最適化Forms資料提交至Microsoft®SharePoint Site或Microsoft® OneDrive等日常工具。
+  >[!VIDEO](https://video.tv.adobe.com/v/3422097/adaptive-forms-recaptcha-core-components-captcha/?quality=12&learn=on)
 
 ### Headless 最適化表單早期採用者計畫 {#forms-early-adopter}
 
@@ -146,6 +102,27 @@ Experience Manager Assets 現在使您能夠透過搜尋結果使用者介面執
 
 使用您的官方電子郵件 ID 寄送電子郵件至 `aem-forms-headless@adobe.com`，即可加入早期採用者計畫。
 
+## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
+
+### 行動中心 {#actions-center}
+
+訂閱電子郵件通知，在發生需要立即採取行動的嚴重事件時提醒您，並提供個人化建議以最佳化您的網站。 [動作中心](/help/operations/actions-center.md) 可做為中心，讓您檢閱這些警示（例如封鎖的復寫佇列或即將到期的認證），並將它們標示為已解決。
+
+![動作中心熒幕擷圖](/help/assets/assets/actions-center.png)
+
+### CDN和WAF規則早期採用者計畫 {#waf-early-adopter}
+
+根據以下條件篩選CDN的流量：
+* 請求標頭和屬性（例如IP位址）
+* 已知與惡意流量相關聯的流量模式
+
+有興趣試用此功能並分享意見回饋嗎？ 傳送電子郵件至 **aemcs-waf-adopter@adobe.com** 從您的官方電子郵件ID瞭解有關早期採用者計畫的更多資訊。 空間有限。
+
+進一步瞭解文章中的功能 [此處](/help/security/cdn-and-waf-rules.md).
+
+### 其他基礎變更 {#other-foundation-changes}
+
+* 在8月7日當週，當AEM執行個體的請求超過正常程度時，AEM會傳回錯誤代碼429，而非錯誤代碼503。 [深入了解](/help/implementing/developing/introduction/development-guidelines.md).
 
 ## 維護版本發行說明 {#maintenance}
 

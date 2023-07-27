@@ -1,20 +1,15 @@
 ---
 title: 行動中心
 description: 利用行動中心可輕鬆對事件和其他重要資訊採取行動
-hidefromtoc: true
-hide: true
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
-source-git-commit: 083aa4b893b58102b3a0bf68c4dd3b4c003b48f6
+source-git-commit: 4adae6ffe45dcd2b80d7d199fc29a806ce5e78c4
 workflow-type: tm+mt
-source-wordcount: '708'
-ht-degree: 99%
+source-wordcount: '727'
+ht-degree: 95%
 
 ---
 
 # 行動中心 {#actions-center}
-
->[!NOTE]
->此功能尚未推出。
 
 AEM as Cloud Service 在發生需要立即採取行動的嚴重事件時會傳送行動中心電子郵件，並提出主動建議以進行最佳化。例如，佇列阻塞或一組過期的憑證；您可在[下表](#supported-notification-types)檢視整套行動中心通知類型，通知類型會隨時間增加。
 
@@ -40,7 +35,7 @@ AEM as Cloud Service 在發生需要立即採取行動的嚴重事件時會傳�
 
 ## 詳細的使用者流程 {#detailed-user-flow}
 
-按一下電子郵件會將您帶往行動中心，顯示您按一下的通知內容的快顯視窗會隨即出現，在某些情況下，還會顯示說明如何採取糾正措施的其他資訊連結。
+按一下電子郵件會將您帶往行動中心，顯示您按一下的通知內容的快顯視窗會隨即出現，在某些情況下，還會顯示說明如何採取糾正措施的其他資訊連結。您也可以直接在下列位置存取「動作中心」： [https://experience.adobe.com/aem/actions-center](https://experience.adobe.com/aem/actions-center/)，您可在此選取相關的方案和環境。
 
 ![事件詳細資料](/help/operations/assets/incident-details.png)
 
