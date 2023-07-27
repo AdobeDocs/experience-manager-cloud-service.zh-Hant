@@ -1,10 +1,10 @@
 ---
 title: 在最適化Forms中使用reCAPTCHA
-description: 瞭解如何在最適化Forms中設定AEM CAPTCHA或Google reCAPTCHA服務。
+description: 瞭解如何在最適化Forms中設定Google reCAPTCHA服務。
 topic-tags: adaptive_forms, author
-source-git-commit: bc1c9736c36014b9a2e0df561e6808f28b1dd7b5
+source-git-commit: 4b6c22667bb79bb6cac22675fa22f741b0262210
 workflow-type: tm+mt
-source-wordcount: '1913'
+source-wordcount: '1911'
 ht-degree: 3%
 
 ---
@@ -106,104 +106,108 @@ reCAPTCHA Enterprise服務啟用後，就可在調適型表單中使用。 另�
    >[!NOTE]
    >
    >* 不支援在最適化表單中使用多個驗證碼元件。 此外，不建議在標示為延遲載入的面板或片段中使用驗證碼。
-   >* 驗證碼會區分大小寫，且約一分鐘後過期。 因此，建議將驗證碼元件放在最適化表單中的提交按鈕之前。
+   >* reCaptcha有時效性，約一分鐘後過期。 因此，建議將驗證碼元件放在最適化表單中的提交按鈕之前。
 
 1. 選取您新增的驗證碼元件，然後點選 ![cmppr](assets/cmppr.png) 以編輯其屬性。
 1. 指定驗證碼介面工具集的標題。 預設值為 **驗證碼**. 選取 **隱藏標題** 如果您不想顯示標題。
 1. 從 **驗證碼服務** 下拉式清單，選取 **reCAPTCHA** 以啟用reCAPTCHA服務（若您已依照中的說明進行設定） [Google的reCAPTCHA服務](#google-reCAPTCHA).
 1. 從「設定」下拉式清單中選取設定 **reCAPTCHA Enterprise** 或 **reCAPTCHA v2**
-1. 如果選取的組態具有reCAPTCHA Enterprise版本，則金鑰型別可以是 **核取方塊** 或 **以分數為基礎** 根據您在設定reCAPTCHA enterprise時的選擇：
-   1. 在雲端設定中，金鑰型別為 **核取方塊**，如果驗證碼驗證失敗，自訂的錯誤訊息會顯示為內嵌訊息。 您可以選取大小為 **[!UICONTROL 一般]** 和 **[!UICONTROL 精簡]**.
-   1. 在雲端設定中，具有 **金鑰型別** 作為 **以分數為基礎**，則當驗證碼驗證失敗時，自訂的錯誤訊息會顯示為快顯訊息。
-   1. 您可以選取 **[!UICONTROL 繫結參考]** 在 [!DNL AEM Forms]，在 **[!UICONTROL 繫結參考]** 提交的資料為已繫結資料，否則為未繫結資料。 以下是提交表單時，未繫結資料和已繫結資料（以SSN為繫結參考）的XML範例。
+   1. 如果您選取 **reCAPTCHA Enterprise** 版本，金鑰型別可以是 **核取方塊** 或 **以分數為基礎**，此量度會根據您設定時的選擇 [網站的網站金鑰](https://cloud.google.com/recaptcha-enterprise/docs/create-key#create-key)：
 
-      ```xml
-          <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-          <afData>
-          <afUnboundData>
-              <data>
-                  <captcha16820607953761>
-                      <captchaType>reCaptchaEnterprise</captchaType>
-                      <captchaScore>0.9</captchaScore>
-                  </captcha16820607953761>
-              </data>
-          </afUnboundData>
-          <afBoundData>
-              <Root
-                  xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"
-                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-                  <PersonalDetails>
-                      <SSN>371237912</SSN>
-                      <FirstName>Sarah </FirstName>
-                      <LastName>Smith</LastName>
-                  </PersonalDetails>
-                  <OtherInfo>
-                      <City>California</City>
-                      <Address>54 Residency</Address>
-                      <State>USA</State>
-                      <Zip>123112</Zip>
-                  </OtherInfo>
-              </Root>
-          </afBoundData>
-          <afSubmissionInfo>
-              <stateOverrides/>
-              <signers/>
-              <afPath>/content/dam/formsanddocuments/captcha-form</afPath>
-              <afSubmissionTime>20230608034928</afSubmissionTime>
-          </afSubmissionInfo>
-          </afData>
-      ```
+   >[!NOTE]
+   >
+   >* 在雲端設定中，具有 **金鑰型別** 作為 **核取方塊**，如果驗證碼驗證失敗，自訂的錯誤訊息會顯示為內嵌訊息。
+   >* 在雲端設定中，具有 **金鑰型別** 作為 **以分數為基礎**，則當驗證碼驗證失敗時，自訂的錯誤訊息會顯示為快顯訊息。
 
+   1. 您可以選取大小為 **[!UICONTROL 一般]** 和 **[!UICONTROL 精簡]**.
+   1. 您可以選取 **[!UICONTROL 繫結參考]**，在 **[!UICONTROL 繫結參考]** 提交的資料為已繫結資料，否則為未繫結資料。 以下是提交表單時，未繫結資料和已繫結資料（以SSN為繫結參考）的XML範例。
 
-      ```xml
-          <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-          <afData>
-          <afUnboundData>
-              <data/>
-          </afUnboundData>
-          <afBoundData>
-              <Root
-                  xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"
-                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-                  <PersonalDetails>
-                      <SSN>
-                          <captchaType>reCaptchaEnterprise</captchaType>
-                          <captchaScore>0.9</captchaScore>
-                      </SSN>
-                      <FirstName>Sarah</FirstName>
-                      <LastName>Smith</LastName>
-                  </PersonalDetails>
-                  <OtherInfo>
-                      <City>California</City>
-                      <Address>54 Residency</Address>
-                      <State>USA</State>
-                      <Zip>123112</Zip>
-                  </OtherInfo>
-              </Root>
-          </afBoundData>
-          <afSubmissionInfo>
-              <stateOverrides/>
-              <signers/>
-              <afPath>/content/dam/formsanddocuments/captcha-form</afPath>
-              <afSubmissionTime>20230608035111</afSubmissionTime>
-          </afSubmissionInfo>
-          </afData>
-      ```
+   ```xml
+           <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+           <afData>
+           <afUnboundData>
+               <data>
+                   <captcha16820607953761>
+                       <captchaType>reCaptchaEnterprise</captchaType>
+                       <captchaScore>0.9</captchaScore>
+                   </captcha16820607953761>
+               </data>
+           </afUnboundData>
+           <afBoundData>
+               <Root
+                   xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                   <PersonalDetails>
+                       <SSN>371237912</SSN>
+                       <FirstName>Sarah </FirstName>
+                       <LastName>Smith</LastName>
+                   </PersonalDetails>
+                   <OtherInfo>
+                       <City>California</City>
+                       <Address>54 Residency</Address>
+                       <State>USA</State>
+                       <Zip>123112</Zip>
+                   </OtherInfo>
+               </Root>
+           </afBoundData>
+           <afSubmissionInfo>
+               <stateOverrides/>
+               <signers/>
+               <afPath>/content/dam/formsanddocuments/captcha-form</afPath>
+               <afSubmissionTime>20230608034928</afSubmissionTime>
+           </afSubmissionInfo>
+           </afData>
+   ```
 
+   ```xml
+           <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+           <afData>
+           <afUnboundData>
+               <data/>
+           </afUnboundData>
+           <afBoundData>
+               <Root
+                   xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                   <PersonalDetails>
+                       <SSN>
+                           <captchaType>reCaptchaEnterprise</captchaType>
+                           <captchaScore>0.9</captchaScore>
+                       </SSN>
+                       <FirstName>Sarah</FirstName>
+                       <LastName>Smith</LastName>
+                   </PersonalDetails>
+                   <OtherInfo>
+                       <City>California</City>
+                       <Address>54 Residency</Address>
+                       <State>USA</State>
+                       <Zip>123112</Zip>
+                   </OtherInfo>
+               </Root>
+           </afBoundData>
+           <afSubmissionInfo>
+               <stateOverrides/>
+               <signers/>
+               <afPath>/content/dam/formsanddocuments/captcha-form</afPath>
+               <afSubmissionTime>20230608035111</afSubmissionTime>
+           </afSubmissionInfo>
+           </afData>
+   ```
 
-   **如果選取的組態具有版本reCAPTCHA v2**：
-   1. 您可以選取大小為 **[!UICONTROL 一般]** 或 **[!UICONTROL 精簡]** 若為reCAPTCHA Widget，當您設定reCAPTCHA時，您也可以選取 **[!UICONTROL 隱形]** 僅在可疑活動的情況下顯示驗證碼質詢的選項。 此 **受reCAPTCHA保護** 徽章（如下所示）會顯示在受保護的表單上。
+   如果您選取 **reCAPTCHA v2** 版本：
+   1. 您可以選取大小為 **[!UICONTROL 一般]** 或 **[!UICONTROL 精簡]** 用於reCAPTCHA Widget。
+   1. 您可以選取 **[!UICONTROL 隱形]** 僅在可疑活動的情況下顯示驗證碼質詢的選項。
 
-      ![Google受reCAPTCHA徽章保護](/help/forms/assets/google-recaptcha-v2.png)
-
-
-   已針對最適化表單啟用reCAPTCHA服務。 您可以預覽表單，並檢視驗證碼是否正常運作。
+   已針對最適化表單啟用reCAPTCHA服務。 您可以預覽表單，並檢視驗證碼是否正常運作。 此 **受reCAPTCHA保護** 徽章（如下所示）會顯示在受保護的表單上。
+   ![Google受reCAPTCHA徽章保護](/help/forms/assets/google-recaptcha-v2.png)
 
 1. 儲存屬性。
 
 >[!NOTE]
 > 
 > 不要選取 **[!UICONTROL 預設]** 驗證碼服務下拉式清單中，預設的AEM驗證碼服務已過時。
+
+>[!VIDEO](https://video.tv.adobe.com/v/3422097/adaptive-forms-recaptcha-core-components-captcha/?quality=12&learn=on)
 
 ### 根據規則顯示或隱藏驗證碼元件 {#show-hide-captcha}
 
