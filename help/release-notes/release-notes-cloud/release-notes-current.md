@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 最新發行說明�
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 最新發行說明。'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 8efe5d66929d1e2ccd7af71a2de8ae02f2bbc290
+source-git-commit: 758960006bd1e58530fdf7b20cdd761853170366
 workflow-type: tm+mt
-source-wordcount: '1032'
-ht-degree: 42%
+source-wordcount: '981'
+ht-degree: 39%
 
 ---
 
@@ -77,10 +77,9 @@ Assets Essentials現在提供選取「資產清單」檢視中顯示的欄的功
 
 * [**現成主題**](/help/forms/using-themes-in-core-components.md) **和範本**：透過我們現成可用的OOTB主題和範本，啟動您的表單建立流程，量身打造以增強經驗豐富的專業人員和新表單作者的能力。 使用最適化Forms核心元件建立後，透過這些精心策劃的主題和範本，您可以快速建立適用於常見使用案例的表單。
 
+!![現成可用的範本](/help/forms/assets/form-templates-ootb.png)
 
 * **Headless Forms的React元件**：您現在可以使用現成可用的React元件預覽和自訂Headless最適化表單轉譯。 這些元件利用最適化Forms核心元件的BEM類別進行樣式設定，讓您輕鬆根據特定需求自訂其外觀。
-
-  藉由與適用於政府機關的 Adobe Acrobat Sign Solutions 整合，在一些最重要的關鍵任務和敏感業務線，Adobe 的合作夥伴和政府客戶便可以在最適化表單使用電子簽名。這額外一層的安全性可確保所有電子簽名完全符合 FedRAMP 中等合規性，讓 Adobe 的政府客戶安心使用。
 
 * [**使用可重複區段建立最適化Forms**](/help/forms/create-forms-repeatable-sections.md)：您現在可以製作 [摺疊面板](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html)， [精靈](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html)， [面板](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html)、和 [水準索引標籤](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html) 適用於多筆資料記錄擷取的元件式最適化表單。  這些可重複的區段可讓您輕鬆提供多個資料專案。 當無法事先知道需要多少份的資料時，這就非常有用。表單填寫器可輕鬆新增或移除區段，使表單能適應不同的資料輸入情境，並簡化相同資料記錄多次出現次數的收集。
 
