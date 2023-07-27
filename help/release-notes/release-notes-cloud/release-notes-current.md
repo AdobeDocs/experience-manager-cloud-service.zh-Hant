@@ -3,7 +3,7 @@ title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 最新發行說明�
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 最新發行說明。'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 758960006bd1e58530fdf7b20cdd761853170366
+source-git-commit: 71af59cae28332793471568069204e9c88acd6a5
 workflow-type: tm+mt
 source-wordcount: '981'
 ht-degree: 39%
@@ -77,7 +77,7 @@ Assets Essentials現在提供選取「資產清單」檢視中顯示的欄的功
 
 * [**現成主題**](/help/forms/using-themes-in-core-components.md) **和範本**：透過我們現成可用的OOTB主題和範本，啟動您的表單建立流程，量身打造以增強經驗豐富的專業人員和新表單作者的能力。 使用最適化Forms核心元件建立後，透過這些精心策劃的主題和範本，您可以快速建立適用於常見使用案例的表單。
 
-!![現成可用的範本](/help/forms/assets/form-templates-ootb.png)
+  ![現成可用的範本](/help/forms/assets/form-templates-ootb.png)
 
 * **Headless Forms的React元件**：您現在可以使用現成可用的React元件預覽和自訂Headless最適化表單轉譯。 這些元件利用最適化Forms核心元件的BEM類別進行樣式設定，讓您輕鬆根據特定需求自訂其外觀。
 
