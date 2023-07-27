@@ -3,9 +3,9 @@ title: 如何將最適化表單新增至AEM Sites頁面？
 description: 瞭解如何建立最適化表單或將其新增到您的AEM Sites頁面。 也瞭解將表單整合至您網站的好處和各種方式。
 feature: Adaptive Forms, Page Editor, Authoring
 Keywords: AF in Sites editor, af in aem sites, aem sites af, add af to a sites page, af aem sites, af sites, create af in a sites page, adaptive form in aem sites, forms aem sites, add form to a sites page, adaptive forms aem sites, add adaptive forms to aem page, create forms in an aem sites page
-source-git-commit: c5a3b5a22283e0e14b8d0a8464b9bba460a80c71
+source-git-commit: 6a462b7a437f74e659a43f7f5d4a95663b92c2cf
 workflow-type: tm+mt
-source-wordcount: '3214'
+source-wordcount: '3308'
 ht-degree: 22%
 
 ---
@@ -17,6 +17,8 @@ ht-degree: 22%
 | -------- | ---------------------------- |
 | AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/create-or-add-an-adaptive-form-to-aem-sites-page.html) |
 | AEM as a Cloud Service  | 本文章 |
+
+## 概觀 {#overview}
 
 透過AEM Forms，您可以順暢地新增表單至AEM Sites頁面。 這可讓您的訪客方便填寫和提交表單，而無需離開他們所在的頁面。 這麼，他們便可毫不費力地使用網站的其他元素，同時積極與表單進行互動。
 
@@ -51,11 +53,12 @@ AEM FormsCloud Service提供最適化表單容器和Adaptive Forms — 內嵌元
 
 * **[將最適化表單轉換為體驗片段](#convert-an-adaptive-form-in-sites-page-to-an-experience-fragment)：** 將新增至AEM Sites頁面的最適化表單轉換為體驗片段，以便在多個AEM Sites頁面中重複使用表單。
 
-* **將多個表單新增至AEM Sites頁面或體驗片段：**  您可以在AEM Sites頁面上建立或新增多個最適化Forms，以根據使用者的偏好和需求為其提供多個選擇。 這些可以是從頭開始的全新形式和現有形式的組合。
+* **[根據核准的範本建立並新增表單至AEM Sites頁面：](/help/forms/embed-adaptive-form-aem-sites.md#embed-form-using-adaptive-form-wizzard-aem-sites)** 您可以善用預先核准的範本，快速建立符合您組織品牌方針和設計標準的最適化Forms。 此選項僅適用於以最適化Forms編輯器或Adaptive Forms — 內嵌元件建立的最適化Forms 。
 
-* **根據核准的範本建立並新增表單至AEM Sites頁面：** 您可以善用預先核准的範本，快速建立符合您組織品牌方針和設計標準的最適化Forms。 此選項僅適用於以最適化Forms編輯器或Adaptive Forms — 內嵌元件建立的最適化Forms 。
+* **[將現有表單新增至AEM Sites頁面：](/help/forms/embed-adaptive-form-aem-sites.md#embed-an-adaptive-form-in-sites-editor)** 您可以輕鬆將已建立的表單整合至網站，讓訪客直接與表單互動。 此選項僅適用於以最適化Forms編輯器或Adaptive Forms — 內嵌元件建立的最適化Forms 。
 
-* **將現有表單新增至AEM Sites頁面：** 您可以輕鬆將已建立的表單整合至網站，讓訪客直接與表單互動。 此選項僅適用於以最適化Forms編輯器或Adaptive Forms — 內嵌元件建立的最適化Forms 。
+
+* **將多個表單新增至AEM Sites頁面或體驗片段：**  您可以在AEM Sites頁面上建立或新增多個最適化Forms，以根據使用者的偏好和需求為其提供多個選擇。 這些可以是從頭開始的全新形式和現有形式的組合。您可以使用 **[!UICONTROL 最適化表單容器]** 多次元件，以在AEM Sites頁面中新增最適化Forms。 您可以使用 **[!UICONTROL 最適化Forms — 內嵌]** 在AEM Sites頁面中多次使用元件，只有在 **[!UICONTROL 表單覆蓋影格的整個寬度]** 已選取選項。 萬一 **[!UICONTROL 表單覆蓋影格的整個寬度]** 選項未勾選，AEM Sites頁面僅支援一個不含iframe的最適化表單存在。 若要使用，新增更多最適化Forms **[!UICONTROL 最適化Forms — 內嵌]** 元件，選取 **[!UICONTROL 表單覆蓋影格的整個寬度]** 選項。
 
 ## 在AEM Sites頁面或AEM體驗片段中建立最適化表單的考量事項 {#consideration}
 
