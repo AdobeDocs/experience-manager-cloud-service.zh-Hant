@@ -3,7 +3,7 @@ title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 最新發行說明�
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 最新發行說明。'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 3ac4fcd1f3ef1ef78dcee3c10bfbc99f9d7ba3ad
+source-git-commit: 5995c416328e6f340285004ec2e723cc9279dabd
 workflow-type: tm+mt
 source-wordcount: '935'
 ht-degree: 41%
@@ -30,7 +30,7 @@ ht-degree: 41%
 
 ## 發行影片 {#release-video}
 
-請觀看2023年7月版本概觀影片，瞭解2023.6.0版本新增功能摘要：
+請觀看2023年7月版本概觀影片，瞭解2023.7.0版本新增功能摘要：
 
 >[!VIDEO](https://video.tv.adobe.com/v/3422016/?quality=12)
 
