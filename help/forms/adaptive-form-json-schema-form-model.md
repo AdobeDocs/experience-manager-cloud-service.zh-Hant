@@ -5,7 +5,7 @@ feature: Adaptive Forms
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 8eeb9c5e-6866-4bfe-b922-1f028728ef0d
-source-git-commit: 558662fb646abcf298a46fd0c1b1c709d53bce45
+source-git-commit: c00080859cc10da2da887cf1a711e1aef9dc5fb8
 workflow-type: tm+mt
 source-wordcount: '1368'
 ht-degree: 5%
@@ -734,7 +734,7 @@ Here is the sample JSON code for previously mentioned examples.
 
 ## 啟用符合結構描述的資料 {#enablig-schema-compliant-data}
 
-若要讓最適化表單在表單提交時產生符合結構的資料，請執行下列步驟：
+若要讓所有JSON結構描述型最適化Forms在表單提交時產生結構描述相容的資料，請遵循下列步驟：
 
 1. 前往Experience Manager網頁主控台，位於 `https://server:host/system/console/configMgr`.
 1. 尋找 **[!UICONTROL 最適化表單和互動式通訊Web通道設定]**.
