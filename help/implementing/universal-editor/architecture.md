@@ -5,7 +5,7 @@ exl-id: e6f40743-0f21-4fb6-bf23-76426ee174be
 source-git-commit: 0f62245d31074ab7a64d86b97ef3b1a8d7533001
 workflow-type: tm+mt
 source-wordcount: '652'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ Universal Editor 由四個基本建置區塊組成，這些建置區塊可進行
 
 >[!TIP]
 >
->若要檢視通用編輯器及其架構的實際運作情況，請參閱本檔案 [AEM中的通用編輯器快速入門](getting-started.md) 瞭解如何存取通用編輯器，以及如何開始檢測您的第一個AEM應用程式以使用它。
+>若要查看 Universal Editor 及其架構的實際運作，請參閱 [AEM 中 Universal Editor 快速入門](getting-started.md)文件，了解如何存取 Universal Editor，以及如何開始檢測您的第一個 AEM 應用程式以便加以使用。
 
 ### 編輯 {#editors}
 

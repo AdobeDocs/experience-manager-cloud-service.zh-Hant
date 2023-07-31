@@ -161,11 +161,11 @@ ht-degree: 99%
    + [郵件服務的 OAuth2 支援](/help/security/oauth2-support-for-mail-service.md)
    + [設定CDN和WAF規則以篩選流量](/help/security/cdn-and-waf-rules.md)
    + [AEM as a Cloud Service 安全性注意事項](/help/security/security-considerations.md)
-+ 入門 {#onboarding}
++ 上線 {#onboarding}
    + [從這裡開始](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html)
    + 上線歷程 {#journey}
       + [上線歷程概觀](/help/journey-onboarding/overview.md)
-      + [入門準備](/help/journey-onboarding/preparation.md)
+      + [上線準備](/help/journey-onboarding/preparation.md)
       + [AEM as a Cloud Service 技術](/help/journey-onboarding/terminology.md)
       + [Admin Console](/help/journey-onboarding/admin-console.md)
       + [指派 Cloud Manager 產品設定檔](/help/journey-onboarding/assign-profiles-cloud-manager.md)
@@ -182,7 +182,7 @@ ht-degree: 99%
       + [建立示範網站](/help/journey-sites/demos-add-on/create-site.md)
       + [啟用 Screens](/help/journey-sites/demos-add-on/screens.md)
       + [管理您的示範網站](/help/journey-sites/demos-add-on/manage.md)
-   + 其他入門概念{#concepts}
+   + 其他上線概念{#concepts}
       + [Cloud Manager 簡介](/help/onboarding/cloud-manager-introduction.md)
       + [AEM as a Cloud Service 團隊和產品設定檔](/help/onboarding/aem-cs-team-product-profiles.md)
       + [通知設定檔](/help/journey-onboarding/notification-profiles.md)
@@ -329,7 +329,7 @@ ht-degree: 99%
       + 建立網站 {#site-creation}
          + [建立新網站](/help/sites-cloud/administering/site-creation/create-site.md)
          + [啟用前端管道](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md)
-         + [使用網站滑軌](/help/sites-cloud/administering/site-creation/site-rail.md)
+         + [使用網站邊欄](/help/sites-cloud/administering/site-creation/site-rail.md)
          + [網站範本](/help/sites-cloud/administering/site-creation/site-templates.md)
          + [網站主題](/help/sites-cloud/administering/site-creation/site-themes.md)
          + AEM 快速網站建立歷程 {#quick-site}
@@ -541,7 +541,7 @@ ht-degree: 99%
       + [常見問題](/help/forms/faq.md)
       + [已知問題](/help/forms/known-issues.md)
    + 設定和移轉{#setup-configure-migrate}
-      + [Cloud Service 環境入門](/help/forms/setup-forms-cloud-service.md)
+      + [Cloud Service 環境上線](/help/forms/setup-forms-cloud-service.md)
       + [設定本機開發環境](/help/forms/setup-local-development-environment.md)
       + [在 AEM Forms as a Cloud Service 和本地開發環境中啟用最適化表單核心元件](/help/forms/enable-adaptive-forms-core-components.md)
       + [設定統一的儲存連接器](/help/forms/configure-unified-storage-connector.md)
@@ -642,7 +642,7 @@ ht-degree: 99%
    + 疑難排解 {#troubleshooting-aem-forms-cloud-service}
       + [安裝和設定](/help/forms/troubleshooting-installation-and-configuration.md)
       + [Dispatcher 和 CDN 快取](/help/forms/troubleshooting-caching-performance.md)
-+ 畫面 {#screens-as-cloud-service}
++ Screens {#screens-as-cloud-service}
    + [AEM Screens as a Cloud Service](/help/screens-cloud/home.md)
    + Screens as a Cloud Service 概觀 {#overview}
       + [簡介](/help/screens-cloud/introduction/introduction.md)
@@ -678,7 +678,7 @@ ht-degree: 99%
       + [為 Screens as a Cloud Service 開發自訂元件](/help/screens-cloud/developing/developing-custom-components-tutorial.md)
    + [Screens as a Cloud Service 常見問題集](/help/screens-cloud/screens-cloud-faqs.md)
 + Content and Commerce {#content-and-commerce}
-   + [AEM 內容與商務](/help/commerce-cloud/home.md)
+   + [AEM Content and Commerce](/help/commerce-cloud/home.md)
    + [AEM Content and Commerce as a Cloud Service 重大變更](/help/commerce-cloud/changes.md)
    + [簡介和概觀](/help/commerce-cloud/introduction.md)
    + Commerce 歷程{#journeys}

@@ -5,7 +5,7 @@ exl-id: d4fc2384-a0f5-4a6f-9572-62749786be4c
 source-git-commit: 0f62245d31074ab7a64d86b97ef3b1a8d7533001
 workflow-type: tm+mt
 source-wordcount: '933'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -30,7 +30,7 @@ Universal Editor 可以用於任何實作、任何內容和任何方面的內容
 
 由於體驗可透過多種不同方式建置，因此任何實作都可以使用 Universal Editor，讓作者可以執行內容中編輯。
 
-使用者通常認為，Headless實作會將作者限制在表單式UI中編輯所有內容，但通用編輯器並非如此
+使用者通常會認為 Headless 實作會限制作者在表單型 UI 中編輯所有的內容，但 Universal Editor 的情況並非如此
 
 實作使用 Universal Editor 的要求簡單且支援：
 
@@ -54,7 +54,7 @@ Universal Editor 可以用於任何實作、任何內容和任何方面的內容
 
 ## 值 {#value}
 
-透過將內容編輯體驗與任何特定的內容交付系統分離，編輯器變得更通用和靈活，並可讓內容作者提供卓越的體驗，提高內容速度，並提供最先進的開發人員體驗。
+透過將內容編輯體驗與任何特定的內容傳遞系統分離，編輯器變得更通用和靈活，並可讓內容作者提供卓越的體驗，提高內容速度，並提供最先進的開發人員體驗。
 
 ![Universal Editor 的值](assets/value.png)
 
@@ -78,7 +78,7 @@ Universal Editor 可以用於任何實作、任何內容和任何方面的內容
 
 * 要達成的基本工作是與讀者建立可靠的聯繫。
 
-## 路線圖 {#road-map}
+## 藍圖 {#road-map}
 
 請務必注意，Universal Editor 還在開發中，本文件中列出的部分功能是最終編輯器的設想，不一定是目前擁有的功能。
 

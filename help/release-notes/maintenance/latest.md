@@ -5,7 +5,7 @@ exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 source-git-commit: 704f4e250975d8c0cbcfdc5e49b9c03d3a3e2939
 workflow-type: tm+mt
 source-wordcount: '190'
-ht-degree: 73%
+ht-degree: 82%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 73%
 
 ## 12790 版 {#release-12790}
 
-以下摘要說明2023年7月21日公開發佈的維護版本資12790的持續改善。 此維護版本是先前 12697 維護版本的更新。
+下方是 12790 維護版本的持續改善內容摘要，該版本於 2023 年 7 月 21 日公開發佈。此維護版本是先前 12697 維護版本的更新。
 
 2023.7.0 功能啟用將提供此維護版本的完整功能集。如需詳細資訊，請參閱 [Experience Manager 發行藍圖](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html)。
 
@@ -25,11 +25,11 @@ ht-degree: 73%
 
 ### 已修正的問題 {#fixed-issues-112790}
 
-- SLING-11974 — 修正SlingHttpServletRequest#getUserPrincipal中未經驗證要求的回歸。 此修正可確保針對未驗證的請求傳回主體。
+- SLING-11974 — 修正SlingHttpServletRequest#getUserPrincipal中未經驗證要求的回歸。 此修正可確保針對未驗證的請求也能傳回主體。
 
 ### 已知問題 {#known-issues-12790}
 
-- GRANITE-46601 — 快速入門SDK無法在jdk 11.0.20上啟動，若沒有 `-Djdk.util.zip.disableZip64ExtraFieldValidation=true` java選項
+- GRANITE-46601 — 快速入門SDK無法在jdk 11.0.20上啟動，否 `-Djdk.util.zip.disableZip64ExtraFieldValidation=true` java選項
 
 ### 內嵌技術 {#embedded-tech-12790}
 

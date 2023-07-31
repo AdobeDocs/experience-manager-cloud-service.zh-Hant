@@ -5,7 +5,7 @@ exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
 source-git-commit: e636a765cdc1be7cb0d385089e8ccc75b798844a
 workflow-type: tm+mt
 source-wordcount: '2558'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ ht-degree: 88%
 * [Sites](/help/sites-cloud/home.md)
 * [Assets](/help/assets/home.md)
 * [Forms](/help/forms/home.md)
-* [畫面](/help/screens-cloud/home.md)
+* [Screens](/help/screens-cloud/home.md)
 
 >[!NOTE]
 >
@@ -175,35 +175,35 @@ Cloud Manager 為每個 AEM as a Cloud Service 環境提供預覽服務 (作為�
 
 ### 其他發佈區域的狀態 {#additional-region-status}
 
-如果您已啟動其他發佈區域，則可以從 **環境** 卡片。
+如果您啟用了其他發佈區域，就可以從「**環境**」卡片檢查這些區域的狀態。
 
-1. 於 **概觀** 頁面，找到 **環境** 卡片。
+1. 在「**概觀**」頁面上，找到「**環境**」卡片。
 
-1. 於 **環境** 卡片， **狀態** 欄將反映設定的其他發佈區域是否有任何問題。 按一下 **資訊** 圖示以取得地區的詳細資訊。
+1. 在「**環境**」卡片上，「**狀態**」欄將反映已設定的其他發佈區域是否有任何問題。按一下「**資訊**」圖示可了解各地區的詳細資訊。
 
-   ![環境卡上的其他發佈區域狀態資訊](assets/additional-publish-region-status-environments-card.png)
+   ![「環境」卡片上的其他發佈區域狀態資訊](assets/additional-publish-region-status-environments-card.png)
 
-或者，您也可以從以下位置存取相同的資訊： **環境** 標籤。
+您也可以從「**環境**」標籤存取相同的資訊。
 
-1. 於 **概觀** 頁面，選取 **環境** 標籤。
+1. 在「**概觀**」頁面上，選取「**環境**」標籤。
 
-1. 於 **環境** 索引標籤中，在左側導覽面板中選取您要查詢的環境。
+1. 在「**環境**」標籤上，選取您想要在左側導覽面板中查詢的環境。
 
 1. 選取環境後：
 
-   * 此 **環境資訊** 此表格會顯示為所選環境設定的區域。
-   * 此 **狀態** 的欄 **環境區段** 此表格將反映設定的其他發佈區域是否存在任何問題。 將滑鼠指標暫留在狀態上即可檢視任何問題的詳細資訊。
+   * 此「**環境資訊**」表格將顯示所選取環境設定了哪些區域。
+   * 「**環境區段**」表格的「**狀態**」欄將反映已設定的其他發佈區域是否有任何問題。將滑鼠指標停留在狀態上可了解任何問題的詳細資訊。
 
-   ![環境標籤上的其他發佈區域狀態資訊](assets/additional-publish-region-status-environments-tab.png)
+   ![「環境」標籤上的其他發佈區域狀態資訊](assets/additional-publish-region-status-environments-tab.png)
 
-如果針對其他發佈區域報告任何問題：
+如果其他發佈區域回報了任何問題：
 
-1. 請耐心等候。 Cloud Manager將不斷嘗試復原區域，並且隨時可能可用。
-1. 如果數小時後問題仍然存在，您可以移除其他發佈區域，然後重新新增該區域（相同區域或其他區域），以觸發完整部署。
+1. 請耐心等待。Cloud Manager 將持續嘗試恢復該區域，且該區域可能隨時恢復可用。
+1. 如果幾個小時後問題仍然存在，您可以移除其他發佈區域，然後重新新增 (同一區域或另一個區域) 以觸發完整部署。
 
-您等待系統自行復原多久之後才採取其他動作，取決於該區域的失敗對系統造成的影響。
+在採取其他動作之前等待系統自行恢復的時間，取決於該區域的故障對您系統的影響。
 
-請注意，無論如何， [流量一律會路由至另一個最接近的線上區域。](/help/operations/additional-publish-regions.md) 如果您持續遇到問題，請聯絡Adobe客戶服務。
+請注意，在任何情況下，[流量將一律導向至其他最近的上線區域。](/help/operations/additional-publish-regions.md)如果您仍然持續遇到問題，請聯絡 Adobe 客戶服務部門。
 
 ## 更新環境 {#updating-dev-environment}
 
@@ -275,11 +275,11 @@ Cloud Manager 為每個 AEM as a Cloud Service 環境提供預覽服務 (作為�
 
 ## 存取 Developer Console  {#accessing-developer-console}
 
-從&#x200B;**環境**&#x200B;卡上環境的省略符號選單中選擇&#x200B;**Developer Console**。瀏覽器中會開啟一個新索引標籤，其中包含&#x200B;**Developer Console**&#x200B;的登入頁面。
+從&#x200B;**環境**&#x200B;卡上環境的省略符號選單中選擇 **Developer Console**。瀏覽器中會開啟一個新索引標籤，其中包含 **Developer Console** 的登入頁面。
 
 ![登入 Developer Console ](assets/environ-devconsole.png)
 
-只有具有&#x200B;**開發人員**&#x200B;角色的使用者才能存取&#x200B;**Developer Console**。但是對於沙箱計畫，任何有權存取沙箱計畫的使用者都可以存取&#x200B;**Developer Console**。
+只有具有&#x200B;**開發人員**&#x200B;角色的使用者才能存取 **Developer Console**。但是對於沙箱計畫，任何有權存取沙箱計畫的使用者都可以存取 **Developer Console**。
 
 如需更多詳細資訊，請參閱[休眠和去休眠沙箱環境](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-sandbox-programs.html#hibernation)。
 

@@ -6,7 +6,7 @@ exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 source-git-commit: 5995c416328e6f340285004ec2e723cc9279dabd
 workflow-type: tm+mt
 source-wordcount: '935'
-ht-degree: 41%
+ht-degree: 47%
 
 ---
 
@@ -60,19 +60,19 @@ You can now assign metadata form to a specific folder within your Assets Essenti
 
 -->
 
-**改善影像智慧標籤的人工智慧架構**
+ **影像智慧標記已改良的人工智慧框架**
 
 Experience Manager Assets 現在為影像智慧標記使用改良的人工智慧框架。 此內容智慧可提高智慧標記的相關性和準確性，在擷取時可用於所有影像資產。
 
-**設定「資產清單」檢視的欄顯示**
+**設定「資產清單」視圖的資料欄顯示**
 
-Assets Essentials現在提供選取「資產清單」檢視中顯示的欄的功能，例如狀態、格式、Dimension、大小等。
+Assets Essentials 現在提供可選取顯示在「資產清單」視圖中的資料欄功能，例如「狀態」、「格式」、「維度」、「大小」等。
 
-![設定欄](/help/release-notes/assets/configure-columns.png)
+![設定資料欄](/help/release-notes/assets/configure-columns.png)
 
-**根據相關性排序搜尋結果**
+**根據相關性對為搜尋結果進行排序**
 
-依預設，Assets Essentials現在會根據關聯性來排序搜尋結果。 您可以依照 `Name`、`Relevance`、`Size`、`Modified` 和 `Created` 的遞增或遞減順序排序搜尋的資產。
+Assets Essentials 現在會根據相關性 (依預設) 為搜尋結果進行排序。您可以依照 `Name`、`Relevance`、`Size`、`Modified` 和 `Created` 的遞增或遞減順序排序搜尋的資產。
 
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
@@ -129,7 +129,7 @@ Assets Essentials現在提供選取「資產清單」檢視中顯示的欄的功
 
 ## 維護版本發行說明 {#maintenance}
 
-您可以在[此處](/help/release-notes/maintenance/latest.md)找到最新的維護版本發行說明。
+您可以在[這裡](/help/release-notes/maintenance/latest.md)找到最新的維護版本發行說明。
 
 ## Cloud Manager {#cloud-manager}
 
@@ -137,4 +137,4 @@ Assets Essentials現在提供選取「資產清單」檢視中顯示的欄的功
 
 ## 移轉工具 {#migration-tools}
 
-您可以在[此處](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)找到移轉工具版本的完整清單。
+您可以在[這裡](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)找到移轉工具版本的完整清單。

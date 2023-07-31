@@ -5,7 +5,7 @@ exl-id: 9106ccf5-dc90-4ccb-95bd-7dd5392cd174
 source-git-commit: 900cdc53475446b9d93cb071f281da5dbe043888
 workflow-type: tm+mt
 source-wordcount: '847'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -74,8 +74,8 @@ ht-degree: 98%
 
 <br>
 
-![水準長條圖顯示虛擬角色及其在AEM Assets團隊中的參與程度。](/help/overview/assets/team_involvement2.png)
+![顯示虛構角色及其在 AEM Assets 團隊之參與等級的橫條圖。](/help/overview/assets/team_involvement2.png)
 
 >[!TIP]
 >
-> 進一步了解 Adobe Experience Cloud 並使用 [Experience League](https://experienceleague.adobe.com/#recommended/solutions/experience-manager) 上的資源，並透過 [Adobe 數位學習](https://learning.adobe.com/certification.html)獲得認證。
+> 請深入了解 Adobe Experience Cloud 和運用 [Experience League](https://experienceleague.adobe.com/#recommended/solutions/experience-manager) 上的資源，並透過 [Adobe 數位學習](https://learning.adobe.com/certification.html)獲得認證。
