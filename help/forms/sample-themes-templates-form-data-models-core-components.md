@@ -7,9 +7,9 @@ role: Admin, User
 hide: true
 hidefromtoc: true
 level: Intermediate
-source-git-commit: 6abd681fbf0258029dd594d214a2480d73b21f57
+source-git-commit: 6cc7153c9754b6786a08c5fd378d72a8ab7c478d
 workflow-type: tm+mt
-source-wordcount: '1207'
+source-wordcount: '1200'
 ht-degree: 2%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 2%
 
 # 核心元件中的範例主題、範本和表單資料模型 {#sample-themes-templates-and-data-models}
 
-AEM Formsas a Cloud Service提供範例參考主題、範本和表單資料模型，可幫助您使用核心元件快速建立最適化Forms。 您可以 [啟用最適化Forms核心元件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/enable-adaptive-forms-core-components.html) 在AEM Formsas a Cloud Service和本機開發環境中取得，以取得參考OOTB範本和 [使用和自訂主題](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components.html) 在 [!DNL AEM Forms].
+AEM Formsas a Cloud Service提供範例參考主題、範本和表單資料模型，可幫助您使用核心元件快速建立最適化Forms。 您可以 [啟用最適化Forms核心元件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/enable-adaptive-forms-core-components.html) 在AEM Formsas a Cloud Service和本機開發環境中，取得範例OOTB範本並 [使用和自訂範例主題](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components.html) 在 [!DNL AEM Forms].
 
 參考內容套件中包含的範例主題、範本和表單資料模型包括：
 
@@ -26,14 +26,13 @@ AEM Formsas a Cloud Service提供範例參考主題、範本和表單資料模�
 | 基本 | 畫布 | Microsoft® Dynamics 365 |
 | 空白 | WKND | Salesforce |
 | 聯絡我們 | 畫架 |  |
+| 聯絡詳細資料更新 |   |   |
 | 同意表單 | |  |
-| 提出投訴 | | |
 | 記錄服務要求 |  |  |
 | 提供意見回饋 |  |  |
 | 福利註冊 |  |   |
 | 員工福利彙總 |   |   |
 | 要求帳戶對帳單 |   |   |
-| 聯絡詳細資料更新 |   |   |
 | 安全檢查表 |   |   |
 | 品質控制檢查 |   |   |
 | 購買要求 |  |  |
@@ -77,15 +76,15 @@ WKND主題包含生動、富有想象力且吸引人的設計，以展現您表�
 
 >[!TAB 桌面]
 
-    ![基本範本案頭](assets/Basic-template-desktop-view.png)
+![基本範本案頭](assets/Basic-template-desktop-view.png)
 
 >[!TAB 電話]
 
-    ![基本範本電話](assets/Basic-template-phone-view.png)
+![基本範本電話](assets/Basic-temp-phone-view.png)
 
 >[!TAB 平板電腦]
 
-    ![基本範本平板電腦](assets/Basic-template-tablet-view.png)
+![基本範本平板電腦](assets/Basic-temp-tablet-view.png)
 
 >[!ENDTABS]
 
@@ -96,11 +95,9 @@ WKND主題包含生動、富有想象力且吸引人的設計，以展現您表�
 
 ![空白範本](assets/Blank-template.png)
 
-### 要求帳戶對帳單 {#Request-for-Account-Statement}
+### 聯絡我們 {#Contact-Us}
 
-Request for account statement template可協助建立表單，以啟動取得準確且最新之客戶對帳單的程式。 對帳單提供財務交易、活動的詳細記錄，或使用此表單之客戶的其他相關資訊。
-
-![帳戶請求宣告](assets/Request-for-account-statment.png)
+聯絡我們表單範本是用來建立表單，以促進網站訪客與管理員之間的通訊。 使用者可以透過表單提交查詢、意見回饋或支援請求。
 
 ### 連絡人詳細資料更新 {#Contact-Details-Update}
 
@@ -108,38 +105,9 @@ Request for account statement template可協助建立表單，以啟動取得準
 
 ![Contact-details-update](assets/Contact-details-update.png)
 
-### 安全檢查 {#Safety-Inspection}
-
-安全檢查表單範本可協助建立表單，以輸入安全工作環境的詳細資訊。 使用此表格進行定期檢查，即可識別潛在危險。 此表格涵蓋各種層面，例如緊急出口、防火安全、電氣安全、危險材料、個人防護裝置、工作站人體工學，以保障員工、訪客和客戶的安全與福祉。
-
-### 購買要求 {#Purchase-Request}
-
-採購請求表單範本可協助建立表單，以啟動採購程式，並允許員工正式要求購買其工作所需的商品或服務。 此表單會擷取必要的明細，例如料號摘要、數量、偏好的供應商（如果適用）、預算配置、採購理由、交貨資訊以及必要的核准。
-
-![purchase-request](assets/purchase-request.gif)
-
-### 員工福利彙總 {#Employee-Benefits-Summary}
-
-員工福利摘要表單範本可用來建立表單，以收集有關個人福利的基本詳細資訊。 它有助於快速準確地評估涵蓋範圍，提供有效協助和支援的完整概觀。
-
-### 福利註冊 {#Benefits-Enrollment}
-
-福利登錄檔單範本可用來建立表單，以收集員工有關其偏好福利與保險選項的基本資訊。 它通常伴隨年度福利註冊期間。
-
-
-### 品質控制檢查 {#Quality-Control-Inspection}
-
-品質控制檢查表單範本可用來建立表單，以評估和記錄產品或專案的視覺外觀、尺寸、功能、檔案、測試結果以及整體品質。 它有助於識別缺陷、不符合項以及確保符合品質標準所需的更正動作。
-
-
 ### 同意表單 {#Consent-Form}
 
 同意表單範本可用來建立表單，以從參與特定活動、研究研究、醫療程式或可能涉及其個人資訊或權利的任何情況的參與者取得法律檔案。 表單可確保透明度、保護參與者的權利，並清楚瞭解個人同意的內容。
-
-
-### 聯絡我們 {#Contact-Us}
-
-聯絡我們表單範本是用來建立表單，以促進網站訪客與管理員之間的通訊。 使用者可以透過表單提交查詢、意見回饋或支援請求。
 
 ### 記錄服務要求 {#Log-Service-Request}
 
@@ -148,6 +116,34 @@ Request for account statement template可協助建立表單，以啟動取得準
 ### 提供意見回饋 {#Give-Feedback}
 
 提供意見回饋表單範本有助於建立表格，向其他人員或團隊提供具建設性的意見回饋。 此表單有助於確保意見反應清晰、明確且可行，可促進開放式溝通和改進。
+
+### 福利註冊 {#Benefits-Enrollment}
+
+福利登錄檔單範本可用來建立表單，以收集員工有關其偏好福利與保險選項的基本資訊。 它通常伴隨年度福利註冊期間。
+
+### 員工福利彙總 {#Employee-Benefits-Summary}
+
+員工福利摘要表單範本可用來建立表單，以收集有關個人福利的基本詳細資訊。 它有助於快速準確地評估涵蓋範圍，提供有效協助和支援的完整概觀。
+
+### 要求帳戶對帳單 {#Request-for-Account-Statement}
+
+Request for account statement template可協助建立表單，以啟動取得準確且最新之客戶對帳單的程式。 對帳單提供財務交易、活動的詳細記錄，或使用此表單之客戶的其他相關資訊。
+
+![帳戶請求宣告](assets/Request-for-account-statment.png)
+
+### 安全檢查 {#Safety-Inspection}
+
+安全檢查表單範本可協助建立表單，以輸入安全工作環境的詳細資訊。 使用此表格進行定期檢查，即可識別潛在危險。 此表格涵蓋各種層面，例如緊急出口、防火安全、電氣安全、危險材料、個人防護裝置、工作站人體工學，以保障員工、訪客和客戶的安全與福祉。
+
+### 品質控制檢查 {#Quality-Control-Inspection}
+
+品質控制檢查表單範本可用來建立表單，以評估和記錄產品或專案的視覺外觀、尺寸、功能、檔案、測試結果以及整體品質。 它有助於識別缺陷、不符合項以及確保符合品質標準所需的更正動作。
+
+### 購買要求 {#Purchase-Request}
+
+採購請求表單範本可協助建立表單，以啟動採購程式，並允許員工正式要求購買其工作所需的商品或服務。 此表單會擷取必要的明細，例如料號摘要、數量、偏好的供應商（如果適用）、預算配置、採購理由、交貨資訊以及必要的核准。
+
+![purchase-request](assets/purchase-request.gif)
 
 ## 參考表單資料模型 {#reference-models}
 
