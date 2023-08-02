@@ -1,28 +1,28 @@
 ---
 title: 使用內容片段（資產 — 內容片段）
-description: 瞭解Adobe Experience Manager (AEM)as a Cloud Service中的內容片段如何讓您設計、建立、組織和使用獨立於頁面的內容，非常適合頁面製作和headless傳送。
+description: 瞭解Adobe Experience Manager (AEM)as a Cloud Service中的內容片段如何讓您設計、建立、策劃和使用不受頁面影響的內容，適用於頁面製作和headless傳送。 以及它們如何與MSM搭配使用。
 exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 0706c4a466db1d360b27868e3ab5c320a3ba24f8
 workflow-type: tm+mt
-source-wordcount: '2134'
+source-wordcount: '2159'
 ht-degree: 4%
 
 ---
 
 # 使用內容片段 {#working-with-content-fragments}
 
-透過Adobe Experience Manager (AEM)as a Cloud Service，內容片段可讓您設計、建立、組織和 [發佈獨立於頁面的內容](/help/sites-cloud/authoring/fundamentals/content-fragments.md) 它們可讓您準備內容以用於多個位置/多個管道，非常適合Headless傳送。
+透過Adobe Experience Manager (AEM)as a Cloud Service，內容片段允許您設計、建立、組織和 [發佈獨立於頁面的內容](/help/sites-cloud/authoring/fundamentals/content-fragments.md). 它們可讓您準備內容以用於多個位置/多個管道，非常適合Headless傳送。 它們也可以搭配 [多網站管理可讓您重複使用內容](#reusing-content-fragments-with-msm-assets).
 
 內容片段包含結構化內容：
 
 * 它們是根據 [內容片段模型](/help/assets/content-fragments/content-fragments-models.md)，會預先定義產生片段的結構。
-* 結構範圍介於：
+* 此結構的範圍介於：
    * 基本
-      * 例如，單一、多行文字欄位。
-      * 可用於準備直接的內容以用於頁面編寫。
+      * 例如，單一多行文字欄位。
+      * 可用來準備直接的內容以用於頁面製作。
    * 複雜
       * 多種資料型別欄位的組合，包括文字、數字、布林值、資料和時間等。
-      * 可用於為頁面製作準備更多結構化內容，或用於傳送至您的應用程式。
+      * 可用來準備更多結構化內容以進行頁面製作，或傳送給您的應用程式。
    * 巢狀
       * 可用的參考資料型別可讓您巢狀內嵌內容。
       * 通常用於傳遞至您的應用程式。
@@ -34,18 +34,18 @@ ht-degree: 4%
 
 >[!NOTE]
 >
->內容片段儲存為 **資產**. 他們現在主要透過以下方式管理 **[內容片段](/help/sites-cloud/administering/content-fragments/content-fragments-console.md)** 主控台，但仍可從 **資產** 主控台。 本節涵蓋以下專案的管理： **資產** 主控台。
+>內容片段儲存為 **資產**. 他們現在主要透過 **[內容片段](/help/sites-cloud/administering/content-fragments/content-fragments-console.md)** 主控台，但仍可從 **資產** 主控台。 本節涵蓋以下專案的管理： **資產** 主控台。
 
-本頁和下列頁面涵蓋建立、設定、維護和使用內容片段的任務：
+此和下列頁面涵蓋建立、設定、維護及使用內容片段的任務：
 
 * [為您的執行個體啟用內容片段功能](/help/assets/content-fragments/content-fragments-configuration-browser.md)
 * [內容片段模型](/help/assets/content-fragments/content-fragments-models.md)  — 啟用、建立和定義您的模型
 * [管理內容片段](/help/assets/content-fragments/content-fragments-managing.md)  — 建立您的內容片段；然後編輯、發佈和參考
-* [變化 — 編寫片段內容](/help/assets/content-fragments/content-fragments-variations.md)  — 編寫片段內容並建立主版的變體
-* [Markdown](/help/assets/content-fragments/content-fragments-markdown.md)  — 使用片段的markdown語法
+* [變化 — 編寫片段內容](/help/assets/content-fragments/content-fragments-variations.md)  — 編寫片段內容並建立主控
+* [Markdown](/help/assets/content-fragments/content-fragments-markdown.md)  — 使用片段的Markdown語法
 * [使用關聯內容](/help/assets/content-fragments/content-fragments-assoc-content.md)  — 新增關聯內容
 * [中繼資料 — 片段屬性](/help/assets/content-fragments/content-fragments-metadata.md)  — 檢視和編輯片段屬性
-* 使用 [內容片段，搭配GraphQL一起提供內容](/help/assets/content-fragments/content-fragments-graphql.md) 供您的應用程式使用。 若要協助處理此專案，您可以預覽 [JSON輸出](/help/assets/content-fragments/content-fragments-json-preview.md).
+* 使用 [內容片段，搭配GraphQL一起提供內容](/help/assets/content-fragments/content-fragments-graphql.md) 以便在您的應用程式中使用。 若要協助處理此專案，您可以預覽 [JSON輸出](/help/assets/content-fragments/content-fragments-json-preview.md).
 * [使用MSM對資產重複使用內容片段](#reusing-content-fragments-with-msm-assets)
 
 >[!NOTE]
@@ -61,25 +61,25 @@ ht-degree: 4%
 通訊管道的數量每年都在增加。 通常，管道是指傳遞機制，例如：
 
 * 實體管道；例如，桌上型電腦、行動裝置。
-* 實體管道中的傳遞形式；例如，「產品詳細資料頁面」、「產品類別頁面」（適用於案頭）或「行動網頁」（適用於行動裝置的行動應用程式）。
+* 實體管道中的傳遞形式；例如，「產品詳細資料頁面」、「產品類別頁面」（適用於案頭）或「行動網頁」（適用於行動應用程式）。
 
-不過，您（可能）不想對所有頻道使用完全相同的內容，您需要根據特定頻道最佳化內容。
+不過，您（可能）不希望在所有管道中使用完全相同的內容，而必須根據特定管道將內容最佳化。
 
 內容片段允許您：
 
 * 考慮如何跨頻道有效率地觸及目標對象。
-* 建立和管理頻道中性編輯內容。
+* 建立並管理頻道中性的編輯內容。
 * 為一系列管道建立內容集區。
-* 為特定管道設計內容變化。
+* 為特定管道設計內容變體。
 * 透過插入資產（混合媒體片段）將影像新增至文字。
 * 建立巢狀內容以反映資料的複雜性。
 
-接著，您就可以組裝這些內容片段，透過各種管道提供體驗。
+接著，您就可以組合這些內容片段，透過各種管道提供體驗。
 
 >[!NOTE]
 >
 >**內容片段** 和 **[體驗片段](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)** 是AEM中的不同功能：
->* **內容片段** 為編輯內容，具有定義和結構，但不含其他視覺設計和/或版面。 它們可用來存取結構化資料，包括文字、數字和日期等。
+>* **內容片段** 是可編輯內容，具備定義與結構，但無其他視覺化設計及/或版面配置。 它們可用於存取結構化資料，包括文字、數字和日期等。
 >* **體驗片段** 是完全佈局的內容；網頁的片段。
 >
 >體驗片段可以包含內容片段形式的內容，反之則不行。
@@ -88,9 +88,9 @@ ht-degree: 4%
 
 ## 內容片段與內容服務 {#content-fragments-and-content-services}
 
-AEM Content Services旨在概括AEM內/外內容的說明和傳遞，而不只是關注網頁。
+AEM Content Services的設計目的，是要概括AEM內/外部內容的說明和傳遞，而不只是關注網頁。
 
-它們使用可供任何使用者端使用的標準化方法，將內容傳送至非傳統AEM網頁的管道。 這些管道可包括：
+它們使用可供任何使用者端使用的標準化方法，將內容傳送至非傳統AEM網頁的管道。 這些管道可能包括：
 
 * 單頁應用程式
 * 原生行動應用程式
@@ -110,15 +110,15 @@ AEM內容片段可用於說明和管理結構化內容。 結構化內容在可�
 >
 >AEM也支援翻譯片段內容。 另請參閱 [翻譯資產](/help/assets/translate-assets.md) 以取得進一步資訊。
 
-## 透過資產的MSM重複使用內容片段 {#reusing-content-fragments-with-msm-assets}
+## 透過MSM為資產重複使用內容片段 {#reusing-content-fragments-with-msm-assets}
 
-當透過 **資產** 主控台，您可以使用MSM和建立片段的即時副本。
+當透過存取時 **資產** 主控台，您可以使用MSM和建立片段的即時副本。
 
 如需詳細資訊，請參閱 [使用MSM對資產重複使用內容片段](/help/assets/reuse-assets-using-msm.md).
 
 >[!CAUTION]
 >
->如果您想使用MSM （這會建立內容片段的復本），則任何 **獨特** 限制應從個別資料型別中使用的任何資料型別中移除 [內容片段模型](/help/assets/content-fragments/content-fragments-models.md).
+>如果您想使用MSM （這會建立內容片段的復本），則任何 **獨特** 應從個別專案中使用的任何資料型別中移除限制 [內容片段模型](/help/assets/content-fragments/content-fragments-models.md).
 
 ## 內容類型 {#content-type}
 
@@ -127,15 +127,15 @@ AEM內容片段可用於說明和管理結構化內容。 結構化內容在可�
 * 儲存為 **資產**：
 
    * 內容片段（及其變數）可以透過以下網址建立及維護： **資產** 主控台。
-   * 在內容片段編輯器中製作和編輯。
+   * 在內容片段編輯器中撰寫和編輯。
 
-* 用於 [透過內容片段元件的頁面編輯器](/help/sites-cloud/authoring/fundamentals/content-fragments.md) （參照元件）：
+* 用於 [透過內容片段元件使用的頁面編輯器](/help/sites-cloud/authoring/fundamentals/content-fragments.md) （參照元件）：
 
    * 此 **內容片段** 元件可供頁面作者使用。 它可讓他們以HTML或JSON格式參考及傳送所需的內容片段。
 
-* 可使用以下工具存取： [AEM GRAPHQL API](/help/headless/graphql-api/content-fragments.md).
+* 可使用以下專案存取： [AEM GRAPHQL API](/help/headless/graphql-api/content-fragments.md).
 
-內容片段是一種內容結構，其中：
+內容片段是內容結構，具備以下功能：
 
 * 沒有版面配置或設計（RTF模式中可能會使用某些文字格式）。
 * 包含一或多個， [組成部分](#constituent-parts-of-a-content-fragment).
@@ -146,37 +146,37 @@ AEM內容片段可用於說明和管理結構化內容。 結構化內容在可�
 
 ### 具有視覺資產的片段 {#fragments-with-visual-assets}
 
-為了讓作者更能掌控其內容，可將影像新增至內容片段及/或與內容片段整合。
+為了讓作者更能掌控其內容，可以將影像新增至內容片段及/或與內容片段整合。
 
-資產可以透過數種方式與內容片段一起使用；各有其優點：
+資產可以透過數個方式與內容片段一起使用；各有其優點：
 
 * **插入資產** 放入片段（混合媒體片段）
 
-   * 是片段的必要部分(請參閱 [內容片段的組成部分](#constituent-parts-of-a-content-fragment))。
+   * 是片段的組成部分(請參閱 [內容片段的組成部分](#constituent-parts-of-a-content-fragment))。
    * 定義資產位置。
-   * 另請參閱 [將資產插入片段](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment) 在片段編輯器以瞭解更多資訊。
+   * 另請參閱 [將資產插入片段](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment) 在片段編輯器中以取得詳細資訊。
 
   >[!NOTE]
   >
-  >插入內容片段本身的視覺資產會附加至前段落。 將片段新增到頁面時，在新增中間內容時，這些資產會相對於該段落移動。
+  >插入內容片段本身的視覺資產附加於前面的段落。 將片段新增到頁面時，在新增中間內容時，這些資產會相對於該段落移動。
 
 * **相關聯的內容**
 
    * 連線到片段；但不是片段的固定部分(請參閱 [內容片段的組成部分](#constituent-parts-of-a-content-fragment))。
    * 提供一些定位彈性。
-   * 在頁面上使用片段時，可輕鬆使用（作為中間內容）。
+   * 在頁面上使用片段時，可輕鬆使用（當作中間內容）。
    * 另請參閱 [關聯內容](/help/assets/content-fragments/content-fragments-assoc-content.md) 以取得詳細資訊。
 
 * 頁面編輯器的「 **資產** 」瀏覽器可用的資產
 
-   * 允許選擇資產有完全的靈活性。
+   * 允許選擇資產的完整靈活性。
    * 提供一些定位彈性。
    * 不提供為特定片段核准的概念。
    * 另請參閱 [資產瀏覽器](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser) 以取得詳細資訊。
 
 ### 內容片段的組成部分 {#constituent-parts-of-a-content-fragment}
 
-內容片段資產由下列部分組成（直接或間接）：
+內容片段資產由下列部分（直接或間接）組成：
 
 * **片段元素**
 
@@ -191,11 +191,11 @@ AEM內容片段可用於說明和管理結構化內容。 結構化內容在可�
 
    * 在頁面製作期間啟用內容控制。
 
-* **插入片段中的資產（混合媒體片段）**
+* **插入到片段中的資產（混合媒體片段）**
 
    * 插入到實際片段中並用作片段內部內容的資產（影像）。
-   * 內嵌在片段的段落系統中。
-   * 可以在以下情況下進行格式化： [在頁面上使用/參考片段](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
+   * 嵌入在片段的段落系統中。
+   * 可以在下列情況下格式化： [在頁面上使用/參考片段](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
    * 只能使用片段編輯器在片段中新增、刪除或移動。 無法在頁面編輯器中執行這些動作。
    * 只能使用以下專案在片段中新增、刪除或移動 [片段編輯器中的RTF格式](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment).
    * 只能新增到多行文字元素（任何片段型別）。
@@ -212,12 +212,12 @@ AEM內容片段可用於說明和管理結構化內容。 結構化內容在可�
 * **相關聯的內容**
 
    * 這是片段外部的內容，但與編輯相關。 通常是影像、影片或其他片段。
-   * 將集合中的個別資產新增至頁面時，即可在頁面編輯器中與片段搭配使用。 這表示它們是選用的，取決於特定管道的需求。
-   * 資產為 [透過集合關聯至片段](/help/assets/content-fragments/content-fragments-assoc-content.md)；關聯的集合可讓作者決定在製作頁面時要使用的資產。
+   * 將集合中的個別資產新增至頁面時，即可在頁面編輯器中與片段搭配使用。 這表示它們是選用專案，視特定通道的需求而定。
+   * 資產為 [透過集合關聯至片段](/help/assets/content-fragments/content-fragments-assoc-content.md)；關聯的集合可讓作者決定在編寫頁面時要使用的資產。
 
-      * 集合可作為預設內容關聯至片段，或由作者在片段製作期間關聯。
+      * 收藏集可以作為預設內容與片段相關聯，也可以由作者在片段製作期間相關聯。
       * [資產(DAM)集合](/help/assets/manage-collections.md) 是片段關聯內容的基礎。
-   * 或者，您也可以將片段本身新增至集合，以協助追蹤。
+   * 或者，您也可以將片段本身新增至集合，以輔助追蹤。
 
 * **片段中繼資料**
 
@@ -236,7 +236,7 @@ AEM內容片段可用於說明和管理結構化內容。 結構化內容在可�
 
 * **主版**
 
-   * 片段不可或缺的一部分
+   * 片段的一個組成部分
 
       * 每個內容片段都有一個Master例項。
       * 無法刪除主版。
@@ -246,13 +246,13 @@ AEM內容片段可用於說明和管理結構化內容。 結構化內容在可�
 
 * **變數**
 
-   * 特定編輯目的的片段文字轉譯；可能與頻道相關，但並非強制性，也可用於臨時本機修改。
-   * 建立為的復本 **主版**，但接著可視需要加以編輯；變數本身之間通常會有內容重疊。
+   * 片段文字的轉譯是編輯目的所特有的；可能與頻道相關，但不是強制性的，也可以用於臨機本機修改。
+   * 建立為的復本 **主版**，但接著可視需要編輯；變數本身之間通常會有內容重疊。
    * 可以在片段製作期間定義。
    * 儲存在片段中，有助於避免內容副本的散佈。
-   * 變數可以是 [已同步](/help/assets/content-fragments/content-fragments-variations.md#synchronizing-with-master) 如果主版內容已更新，則使用Master。
-   * 可以是 [摘要](/help/assets/content-fragments/content-fragments-variations.md#summarizing-text) 以將文字快速截斷為預先定義的長度。
-   * 可在 [變數](/help/assets/content-fragments/content-fragments-variations.md) 片段編輯器的索引標籤。
+   * 變數可以是 [已同步](/help/assets/content-fragments/content-fragments-variations.md#synchronizing-with-master) 如果主要內容已更新，則使用Master。
+   * 可以是 [摘要](/help/assets/content-fragments/content-fragments-variations.md#summarizing-text) 以快速將文字截斷成預先定義的長度。
+   * 可在下取得 [變數](/help/assets/content-fragments/content-fragments-variations.md) 標籤進行標籤。
 
 ### 使用內容片段編寫頁面時的中間內容 {#in-between-content-when-page-authoring-with-content-fragments}
 
@@ -260,7 +260,7 @@ AEM內容片段可用於說明和管理結構化內容。 結構化內容在可�
 
 * 可在使用內容片段時用於頁面編輯器。
 * 是 [在片段流程中新增的其他內容](/help/sites-cloud/authoring/fundamentals/content-fragments.md#adding-in-between-content) 在頁面上使用/參考它之後。
-* 可用於以下專案： [使用內容片段時的頁面編輯器](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
+* 可用於 [使用內容片段時的頁面編輯器](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
 * 中間內容可以新增到任何片段中，其中只有一個元素可見。
 * 關聯內容以及適當瀏覽器的資產和/或元件皆可使用。
 
@@ -283,23 +283,23 @@ AEM內容片段可用於說明和管理結構化內容。 結構化內容在可�
    * 作者在製作片段內容時無法變更已定義的結構。
    * 建立相依內容片段後對模型所做的變更可能會影響這些內容片段。
 
-若要使用您的內容片段進行頁面編寫，您還需要：
+若要使用您的內容片段進行頁面製作，您還需要：
 
 * **內容片段元件**
 
    * 有助於以HTML和/或JSON格式傳送片段。
    * 必填 [在頁面上參考片段](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
    * 負責片段的佈局和傳送；即管道。
-   * 片段需要一或多個專用元件來定義版面並傳遞部分或全部元素/變數和相關內容。
-   * 在製作中將片段拖曳到頁面上會自動建立所需元件的關聯。
+   * 片段需要一或多個專用元件來定義版面並傳遞部分或全部元素/變數和關聯內容。
+   * 在製作中將片段拖曳到頁面上會自動關聯所需的元件。
 
 ## 使用範例 {#example-usage}
 
-片段及其元素和變體可用於為多個管道建立一致的內容。 在設計片段時，請考慮使用內容和位置。
+片段及其元素和變數可用於為多個管道建立一致的內容。 在設計片段時，請考慮使用什麼以及在何處。
 
 ### WKND範例 {#wknd-sample}
 
-此 [WKND網站](/help/implementing/developing/introduction/develop-wknd-tutorial.md) 提供的範例可協助您瞭解AEMas a Cloud Service。
+此 [WKND網站](/help/implementing/developing/introduction/develop-wknd-tutorial.md) 提供範例來協助您瞭解AEMas a Cloud Service。
 
 WKND專案包括：
 
