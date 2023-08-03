@@ -5,9 +5,9 @@ topic-tags: Adaptive Forms, author
 hide: true
 hidefromtoc: true
 Keywords: Google reCAPTCHA service, Adaptive Forms, CAPTCHA challenge, Bot prevention, Core Components, Form submission security, Form spam prevention
-source-git-commit: b56c90edacbe891afe3fe0add670f75ba46b0064
+source-git-commit: a1689c61715f01cb4eb62882dbcd6e202b74ffc9
 workflow-type: tm+mt
-source-wordcount: '876'
+source-wordcount: '878'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,9 @@ CAPTCHA （完全自動化公用圖靈測試來區分電腦和人之間的差異
    1. 選取在前一節中建立或更新的「設定容器」。 點選「**[!UICONTROL 建立]**」。
    1. 指定 **[!UICONTROL 標題]**， **[!UICONTROL 名稱]**， **[!UICONTROL 網站金鑰]**、和 **[!UICONTROL 秘密金鑰]** reCAPTCHA服務（在步驟1取得）。 點選「**[!UICONTROL 建立]**」。
 
-   ![設定Cloud Service以透過Google使用reCAPTCHA服務連線您的AEM Forms環境](/help/forms/assets/captcha-configuration.gif){width="50%"}
+
+   ![設定Cloud Service以透過Google使用reCAPTCHA服務連線您的AEM Forms環境](/help/forms/assets/captcha-configuration.gif)
+
 
 
    在設定reCAPTCHA服務後，就可在調適型表單中使用。 如需詳細資訊，請參閱 [在最適化表單中使用Google reCAPTCHA](#using-reCAPTCHA).
@@ -62,12 +64,13 @@ CAPTCHA （完全自動化公用圖靈測試來區分電腦和人之間的差異
 1. 選取最適化Forms並點選 **[!UICONTROL 屬性]**. 對於 **[!UICONTROL 設定容器]** 選項，選取包含雲端設定的設定容器，此雲端設定會透過Google將AEM Forms與reCAPTCHA服務連線，然後點選 **[!UICONTROL 儲存並關閉]**.
 
    如果您沒有這類設定容器，請參閱區段 [透過Google的reCAPTCHA服務連線您的AEM Forms環境](#connect-your-forms-environment-with-recaptcha-service-by-google) 以瞭解如何建立這類設定容器。
-   ![選取設定容器](/help/forms/assets/captcha-properties.png){width="50%"}
+
+   ![選取設定容器](/help/forms/assets/captcha-properties.png)
 
 1. 選取最適化Forms並點選 **[!UICONTROL 編輯]**. 最適化表單會在最適化Forms編輯器中開啟。
 1. 在元件瀏覽器中，拖放 **[!UICONTROL 最適化表單reCAPTCHA]** 元件至最適化表單。
 
-   Google reCAPTCHA驗證常有時效性，約一分鐘後過期。 因此，Adobe建議將 **[!UICONTROL 最適化表單reCAPTCHA]** 元件位於 **[!UICONTROL 提交]** 按鈕。
+   Google reCAPTCHA驗證常有時效性，約幾分鐘後就會過期。 因此，Adobe建議將 **[!UICONTROL 最適化表單reCAPTCHA]** 元件位於 **[!UICONTROL 提交]** 按鈕。
 
 1. 選取 **[!UICONTROL 最適化表單reCAPTCHA]** 元件並點選屬性 ![屬性圖示](assets/configure-icon.svg) 圖示。 它會開啟屬性對話方塊。 指定下列強制屬性：
    * **[!UICONTROL 名稱]：** 在表單和規則編輯器中，您可以使用表單元件的唯一名稱輕鬆識別表單元件，但名稱不得包含空格或特殊字元。

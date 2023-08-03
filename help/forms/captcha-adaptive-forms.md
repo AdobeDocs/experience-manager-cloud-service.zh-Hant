@@ -2,9 +2,9 @@
 title: 在最適化Forms中使用reCAPTCHA
 description: 瞭解如何在最適化Forms中設定Google reCAPTCHA服務。
 topic-tags: adaptive_forms, author
-source-git-commit: 4b6c22667bb79bb6cac22675fa22f741b0262210
+source-git-commit: a1689c61715f01cb4eb62882dbcd6e202b74ffc9
 workflow-type: tm+mt
-source-wordcount: '1911'
+source-wordcount: '1913'
 ht-degree: 3%
 
 ---
@@ -106,7 +106,7 @@ reCAPTCHA Enterprise服務啟用後，就可在調適型表單中使用。 另�
    >[!NOTE]
    >
    >* 不支援在最適化表單中使用多個驗證碼元件。 此外，不建議在標示為延遲載入的面板或片段中使用驗證碼。
-   >* reCaptcha有時效性，約一分鐘後過期。 因此，建議將驗證碼元件放在最適化表單中的提交按鈕之前。
+   >* reCaptcha有時效性，大約會在幾分鐘後過期。 因此，建議將驗證碼元件放在最適化表單中的提交按鈕之前。
 
 1. 選取您新增的驗證碼元件，然後點選 ![cmppr](assets/cmppr.png) 以編輯其屬性。
 1. 指定驗證碼介面工具集的標題。 預設值為 **驗證碼**. 選取 **隱藏標題** 如果您不想顯示標題。
