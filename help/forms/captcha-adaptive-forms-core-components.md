@@ -5,7 +5,7 @@ topic-tags: Adaptive Forms, author
 hide: true
 hidefromtoc: true
 Keywords: Google reCAPTCHA service, Adaptive Forms, CAPTCHA challenge, Bot prevention, Core Components, Form submission security, Form spam prevention
-source-git-commit: a1689c61715f01cb4eb62882dbcd6e202b74ffc9
+source-git-commit: b81acc99b1d90b05b7c341253e7cbb46c6ea12ae
 workflow-type: tm+mt
 source-wordcount: '878'
 ht-degree: 0%
@@ -27,7 +27,7 @@ CAPTCHA （完全自動化公用圖靈測試來區分電腦和人之間的差異
 
 1. 取得 [reCAPTCHA API金鑰組](https://www.google.com/recaptcha/admin) 來自Google。 它包含 **網站金鑰** 和 **秘密金鑰**.
 
-   ![建立Google網站的Google reCAPTCHA組態以取得reCAPTCHA金鑰](/help/forms/assets/google-captcha.gif){width="50%"}
+   ![建立Google網站的Google reCAPTCHA組態以取得reCAPTCHA金鑰](/help/forms/assets/google-captcha.gif)
 1. 在您的AEM Formsas a Cloud Service環境中建立設定容器。 設定容器內含用來將AEM連線至外部服務的雲端設定。 若要建立並設定設定設定容器，以透過Google將您的AEM Forms環境與reCAPTCHA服務連線：
    1. 開啟您的AEM Formsas a Cloud Service執行個體。
    1. 前往 **[!UICONTROL 「工具」>「一般」>「設定瀏覽器」]**. 在設定瀏覽器中，您可以：
