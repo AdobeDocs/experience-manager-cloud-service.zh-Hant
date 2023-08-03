@@ -1,10 +1,10 @@
 ---
 title: 維護 AEM 連接器
-description: 瞭解如何在初次提交後更新AEM聯結器。
+description: 瞭解如何在初次提交後維護和更新AEM聯結器。
 exl-id: 8122a8c8-6577-4907-8f6e-52711eed3970
-source-git-commit: f7ffe727ecc7f1331c1c72229a5d7f940070c011
+source-git-commit: 5482e94bc1a2e7524eb699f2ae766ba40c138e91
 workflow-type: tm+mt
-source-wordcount: '169'
+source-wordcount: '171'
 ht-degree: 17%
 
 ---

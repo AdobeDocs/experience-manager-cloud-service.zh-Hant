@@ -1,10 +1,10 @@
 ---
 title: 實作 AEM 連接器
-description: 瞭解如何建置和實作AEM聯結器。
+description: 瞭解如何建立、測試及實作AEM聯結器。 此外，您也會瞭解常見的整合模式。
 exl-id: 70024424-8c52-493e-bbc9-03d238b8a5f5
-source-git-commit: f7ffe727ecc7f1331c1c72229a5d7f940070c011
+source-git-commit: 5482e94bc1a2e7524eb699f2ae766ba40c138e91
 workflow-type: tm+mt
-source-wordcount: '971'
+source-wordcount: '980'
 ht-degree: 7%
 
 ---
