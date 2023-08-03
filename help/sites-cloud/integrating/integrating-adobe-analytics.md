@@ -1,10 +1,10 @@
 ---
 title: 整合 Adobe Analytics
-description: 瞭解如何使用觸控式Ui和Adobe Launch將Adobe Analytics與AEMas a Cloud Service整合。
+description: 瞭解如何使用觸控式UI和Adobe Launch將Adobe Analytics與AEMas a Cloud Service整合。
 feature: Administering
 role: Admin
 exl-id: e353a1fa-3e99-4d79-a0d1-40851bc55506
-source-git-commit: 5482e94bc1a2e7524eb699f2ae766ba40c138e91
+source-git-commit: 957758a8d3c16328e7638356e7ee6df3e561386d
 workflow-type: tm+mt
 source-wordcount: '574'
 ht-degree: 2%
