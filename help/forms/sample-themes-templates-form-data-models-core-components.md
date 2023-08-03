@@ -7,9 +7,9 @@ role: Admin, User
 hide: true
 hidefromtoc: true
 level: Intermediate
-source-git-commit: 6cc7153c9754b6786a08c5fd378d72a8ab7c478d
+source-git-commit: b527e7499bfd995362b792ca1c57a2c92901739c
 workflow-type: tm+mt
-source-wordcount: '1200'
+source-wordcount: '1210'
 ht-degree: 2%
 
 ---
@@ -80,7 +80,7 @@ WKND主題包含生動、富有想象力且吸引人的設計，以展現您表�
 
 >[!TAB 電話]
 
-![基本範本電話](assets/Basic-temp-phone-view.png)
+![基本範本電話](assets/Basic-temp-phone-view.png){width：&quot;25%&quot;}
 
 >[!TAB 平板電腦]
 
@@ -93,7 +93,21 @@ WKND主題包含生動、富有想象力且吸引人的設計，以展現您表�
 
 空白畫布範本可用來從頭開始建立最適化表單結構、內容和規則。 空白範本中未預先納入任何表單元件。
 
-![空白範本](assets/Blank-template.png)
+>[!BEGINTABS]
+
+>[!TAB 桌面]
+
+![空白範本案頭](assets/Blank-temp-desktop-view.png)
+
+>[!TAB 電話]
+
+![基本範本電話](assets/Blank-temp-phone-view.png){width：&quot;25%&quot;}
+
+>[!TAB 平板電腦]
+
+![基本範本平板電腦](assets/Blank-temp-tablet-view.png)
+
+>[!ENDTABS]
 
 ### 聯絡我們 {#Contact-Us}
 
@@ -147,7 +161,7 @@ Request for account statement template可協助建立表單，以啟動取得準
 
 ## 參考表單資料模型 {#reference-models}
 
-在您建立 [最適化表單](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en#adaptive-forms-core-components) 根據 [核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en#adaptive-forms-core-components)，您可以將表單後端與資料庫Microsoft®Dynamics 365和Salesforce伺服器連線，以啟用業務工作流程。 例如：
+在您建立 [最適化表單](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en#adaptive-forms-core-components) 根據 [核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en#adaptive-forms-core-components)，您可以將表單與資料庫Microsoft®Dynamics 365和Salesforce伺服器連線，以啟用業務工作流程。 例如：
 
 * 在Microsoft® Dynamics 365和Salesforce中寫入資料於最適化表單提交時。
 * 透過「表單資料模型」中定義的自訂實體在Microsoft®Dynamics 365和Salesforce中寫入資料，反之亦然。
