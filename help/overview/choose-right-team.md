@@ -1,11 +1,11 @@
 ---
 title: 合適的人，合適的角色
-description: 合適的人，合適的角色
+description: 瞭解如何為您的專案選擇合適的人員，並將其指派給合適的角色。
 exl-id: 9106ccf5-dc90-4ccb-95bd-7dd5392cd174
-source-git-commit: 900cdc53475446b9d93cb071f281da5dbe043888
+source-git-commit: 31e6ec8e9977c8787e14481ee3a94df767262aec
 workflow-type: tm+mt
-source-wordcount: '847'
-ht-degree: 100%
+source-wordcount: '860'
+ht-degree: 98%
 
 ---
 
