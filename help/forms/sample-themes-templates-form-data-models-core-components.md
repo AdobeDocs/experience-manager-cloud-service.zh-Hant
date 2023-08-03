@@ -7,7 +7,7 @@ role: Admin, User
 hide: true
 hidefromtoc: true
 level: Intermediate
-source-git-commit: b527e7499bfd995362b792ca1c57a2c92901739c
+source-git-commit: 2739b89da945cb96b35bfd33e683b5b5e98490d0
 workflow-type: tm+mt
 source-wordcount: '1210'
 ht-degree: 2%
@@ -17,7 +17,7 @@ ht-degree: 2%
 
 # 核心元件中的範例主題、範本和表單資料模型 {#sample-themes-templates-and-data-models}
 
-AEM Formsas a Cloud Service提供範例參考主題、範本和表單資料模型，可幫助您使用核心元件快速建立最適化Forms。 您可以 [啟用最適化Forms核心元件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/enable-adaptive-forms-core-components.html) 在AEM Formsas a Cloud Service和本機開發環境中，取得範例OOTB範本並 [使用和自訂範例主題](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components.html) 在 [!DNL AEM Forms].
+AEM Forms核心元件提供範例參考主題、範本和表單資料模型，可幫助您使用核心元件快速開始建立最適化Forms。 您可以 [啟用最適化Forms核心元件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/enable-adaptive-forms-core-components.html) 在AEM Formsas a Cloud Service和本機開發環境中，取得範例OOTB範本並 [使用和自訂範例主題](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components.html) 在 [!DNL AEM Forms].
 
 參考內容套件中包含的範例主題、範本和表單資料模型包括：
 
@@ -47,20 +47,20 @@ AEM Formsas a Cloud Service提供範例參考主題、範本和表單資料模�
 
 畫布布主題是表單的預設主題，並強調使用基本顏色、透明度與平面圖示。 在下方熒幕擷圖中，您可以看到畫布布佈景主題的外觀。
 
-![畫布主題](assets/canvas-theme.png)
+![畫布主題](assets/Safety-Inspection-Theme-Canvas.png)
 
 ### WKND {#WKND}
 
 WKND主題包含生動、富有想象力且吸引人的設計，以展現您表單的時尚外觀。 主題是根據 [WKND網站](https://wknd.site/us/en.html) 這是一個旅遊和冒險網站，建立在 [Adobe Experience Manager核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction).
 
-![WKND主題](assets/WKND-theme.png)
+![WKND主題](assets/Safety-Inspection-Form-Theme.png)
 
 
 ### 畫架 {#Easel}
 
 畫框主題有助於建立吸引人且易於設定的表單外觀，而且會經過客製化，以簡化操作且方便使用。 畫架主題是以一個可攜式支架的概念為基礎，藝術家在創作畫作時可使用此支架來支援畫布。
 
-![畫框主題](assets/Easel-theme.png)
+![畫框主題](assets/Safety-Inspection-Theme-Easel.png)
 
 ## 範例範本 {#Sample-templates}
 
@@ -72,46 +72,19 @@ WKND主題包含生動、富有想象力且吸引人的設計，以展現您表�
 
 基本範本可幫助您快速建立註冊體驗表單。 您也可以用它來預覽功能 [最適化Forms核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction). 它提供精靈版面配置，用於逐節呈現資料。
 
->[!BEGINTABS]
-
->[!TAB 桌面]
-
-![基本範本案頭](assets/Basic-template-desktop-view.png)
-
->[!TAB 電話]
-
-![基本範本電話](assets/Basic-temp-phone-view.png){width：&quot;25%&quot;}
-
->[!TAB 平板電腦]
-
-![基本範本平板電腦](assets/Basic-temp-tablet-view.png)
-
->[!ENDTABS]
-
+![基本範本](assets/Basic-template-desktop-view.png)
 
 ### 空白 {#Blank}
 
 空白畫布範本可用來從頭開始建立最適化表單結構、內容和規則。 空白範本中未預先納入任何表單元件。
 
->[!BEGINTABS]
-
->[!TAB 桌面]
-
-![空白範本案頭](assets/Blank-temp-desktop-view.png)
-
->[!TAB 電話]
-
-![基本範本電話](assets/Blank-temp-phone-view.png){width：&quot;25%&quot;}
-
->[!TAB 平板電腦]
-
-![基本範本平板電腦](assets/Blank-temp-tablet-view.png)
-
->[!ENDTABS]
+![空白範本](assets/Blank-temp-desktop-view.png)
 
 ### 聯絡我們 {#Contact-Us}
 
 聯絡我們表單範本是用來建立表單，以促進網站訪客與管理員之間的通訊。 使用者可以透過表單提交查詢、意見回饋或支援請求。
+
+![聯絡我們範本](assets/Contact-us-desktop-view.png)
 
 ### 連絡人詳細資料更新 {#Contact-Details-Update}
 
@@ -123,21 +96,34 @@ WKND主題包含生動、富有想象力且吸引人的設計，以展現您表�
 
 同意表單範本可用來建立表單，以從參與特定活動、研究研究、醫療程式或可能涉及其個人資訊或權利的任何情況的參與者取得法律檔案。 表單可確保透明度、保護參與者的權利，並清楚瞭解個人同意的內容。
 
+![同意表單](assets/Consent-form-desktop-view.png)
+
 ### 記錄服務要求 {#Log-Service-Request}
 
 記錄服務請求範本可協助建立向服務提供者要求特定記錄服務的表單。 此表單可作為正式請求，用於建立記錄特定事件、活動或資料以供監控或追蹤狀態的票證。
+
+![記錄服務請求範本](assets/Log-service-request-desktop-view.png)
+
 
 ### 提供意見回饋 {#Give-Feedback}
 
 提供意見回饋表單範本有助於建立表格，向其他人員或團隊提供具建設性的意見回饋。 此表單有助於確保意見反應清晰、明確且可行，可促進開放式溝通和改進。
 
+![提供意見反應範本](assets/Give-feedback-desktop-view.png)
+
+
 ### 福利註冊 {#Benefits-Enrollment}
 
 福利登錄檔單範本可用來建立表單，以收集員工有關其偏好福利與保險選項的基本資訊。 它通常伴隨年度福利註冊期間。
 
+![福利註冊範本](assets/Benefits-enrollment-form-template.png)
+
+
 ### 員工福利彙總 {#Employee-Benefits-Summary}
 
 員工福利摘要表單範本可用來建立表單，以收集有關個人福利的基本詳細資訊。 它有助於快速準確地評估涵蓋範圍，提供有效協助和支援的完整概觀。
+![員工福利彙總](assets/Employee-benefits-summary.png)
+
 
 ### 要求帳戶對帳單 {#Request-for-Account-Statement}
 
@@ -149,15 +135,20 @@ Request for account statement template可協助建立表單，以啟動取得準
 
 安全檢查表單範本可協助建立表單，以輸入安全工作環境的詳細資訊。 使用此表格進行定期檢查，即可識別潛在危險。 此表格涵蓋各種層面，例如緊急出口、防火安全、電氣安全、危險材料、個人防護裝置、工作站人體工學，以保障員工、訪客和客戶的安全與福祉。
 
+![安全檢查表單](assets/Safety-inspection-form.png)
+
 ### 品質控制檢查 {#Quality-Control-Inspection}
 
 品質控制檢查表單範本可用來建立表單，以評估和記錄產品或專案的視覺外觀、尺寸、功能、檔案、測試結果以及整體品質。 它有助於識別缺陷、不符合項以及確保符合品質標準所需的更正動作。
+
+![品質控制檢查](assets/Quality-Control-Inspection.png)
+
 
 ### 購買要求 {#Purchase-Request}
 
 採購請求表單範本可協助建立表單，以啟動採購程式，並允許員工正式要求購買其工作所需的商品或服務。 此表單會擷取必要的明細，例如料號摘要、數量、偏好的供應商（如果適用）、預算配置、採購理由、交貨資訊以及必要的核准。
 
-![purchase-request](assets/purchase-request.gif)
+![purchase-request-form](assets/Purchase-request-form.png)
 
 ## 參考表單資料模型 {#reference-models}
 
