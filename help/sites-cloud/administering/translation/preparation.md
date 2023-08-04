@@ -1,19 +1,19 @@
 ---
 title: 準備翻譯內容
-description: 瞭解如何準備內容以進行翻譯。
+description: 瞭解在開發多語言網站時如何準備翻譯內容。
 feature: Language Copy
 role: Admin
 exl-id: afc577a2-2791-481a-ac77-468011e4302e
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: a1a92f8767186ba9e93b6b30870ecfa9f3b3bc28
 workflow-type: tm+mt
-source-wordcount: '765'
+source-wordcount: '769'
 ht-degree: 1%
 
 ---
 
 # 準備翻譯內容 {#preparing-content-for-translation}
 
-多語言網站通常提供多種語言的部分內容。 網站是以一種語言撰寫，然後翻譯成其他語言。 通常，多語言網站是由頁面分支所組成，每個分支都包含不同語言的網站頁面。
+多語言網站通常以多種語言提供一定數量的內容。 網站是以一種語言撰寫，然後翻譯成其他語言。 通常，多語言網站是由頁面分支組成，每個分支都包含不同語言的網站頁面。
 
 >[!TIP]
 >
@@ -50,28 +50,28 @@ ht-degree: 1%
             |- it
 ```
 
-您最初為其創作網站內容的語言副本是語言母版。 語言母版是翻譯成其他語言的來源。
+您最初為其創作網站內容的語言副本是語言主要版本。 語言母版是翻譯成其他語言的來源。
 
 網站的每個語言分支都稱為語言副本。 語言副本的根頁面（稱為語言根）可識別語言副本中的內容語言。 例如， `/content/wknd/fr` 是法語副本的語言根。 語言副本必須使用 [已正確設定的語言根目錄](preparation.md#creating-a-language-root) 以便在翻譯來源網站時鎖定正確的語言。
 
-使用以下步驟來準備您的網站以進行翻譯：
+使用下列步驟來準備您的網站以進行翻譯：
 
 1. 建立語言主版的語言根。 例如，英文WKND示範網站的語言根為 `/content/wknd/language-masters/en`. 請確定已根據中的資訊正確設定語言根 [建立語言根目錄](preparation.md#creating-a-language-root).
-1. 編寫您的語言母版的內容。
-1. 為您的網站建立每個語言副本的語言根。 例如，WKND範例網站的法文副本為 `/content/wknd/language-masters/fr`.
+1. 編寫語言主版的內容。
+1. 建立網站每個語言副本的語言根。 例如，WKND範例網站的法文副本為 `/content/wknd/language-masters/fr`.
 
-準備翻譯內容後，您可以在語言副本和相關翻譯專案中自動建立遺失的頁面。 (請參閱 [建立翻譯專案](managing-projects.md).) 如需AEM內容翻譯流程的概觀，請參閱 [翻譯多語言網站的內容](overview.md).
+準備要翻譯的內容後，您可以在語言副本和相關翻譯專案中自動建立遺失的頁面。 (請參閱 [建立翻譯專案](managing-projects.md).) 如需AEM內容翻譯流程的概觀，請參閱 [翻譯多語言網站的內容](overview.md).
 
 ## 建立語言根目錄 {#creating-a-language-root}
 
-建立語言根目錄作為識別內容語言的語言副本的根目錄頁面。 建立語言根後，您可以建立包含語言副本的翻譯專案。
+建立語言根作為識別內容語言的語言副本的根頁面。 建立語言根之後，您可以建立包含語言副本的翻譯專案。
 
-若要建立語言根，請建立頁面並使用ISO語言代碼作為 **名稱** 屬性。 語言程式碼必須是下列格式之一：
+若要建立語言根，請建立頁面並使用ISO語言代碼作為 **名稱** 屬性。 語言程式碼必須是下列其中一種格式：
 
 * `<language-code>`  — 支援的語言代碼是由ISO-639-1定義的兩字母代碼，例如 `en`.
-* `<language-code>_<country-code>` 或 `<language-code>-<country-code>`  — 支援的國家代碼是如ISO 3166定義的小寫或大寫兩字母代碼，例如 `en_US`， `en_us`， `en_GB`， `en-gb`.
+* `<language-code>_<country-code>` 或 `<language-code>-<country-code>`  — 支援的國家代碼是小寫或大寫的兩字母代碼，如ISO 3166所定義，例如 `en_US`， `en_us`， `en_GB`， `en-gb`.
 
-您可以根據您為全域網站選擇的結構，使用任一格式。 例如，WKND網站法文副本的根頁面具有 `fr` 作為 **名稱** 屬性。 請注意 **名稱** 屬性會用作存放庫中頁面節點的名稱，因此會決定頁面的路徑(`http://<host>:<4502>/content/wknd/language-masters/fr.html`)。
+根據您為全域網站選擇的結構，您可以使用任一格式。 例如，WKND網站法文副本的根頁面具有 `fr` 作為 **名稱** 屬性。 請注意 **名稱** 屬性會用作存放庫中頁面節點的名稱，從而決定頁面的路徑(`http://<host>:<4502>/content/wknd/language-masters/fr.html`)。
 
 1. 導覽至網站。
 1. 按一下或點選您要建立語言副本的網站。
@@ -134,13 +134,13 @@ AEM提供 **引用** 顯示已建立之語言根目錄的邊欄。
 
 >[!NOTE]
 >
->只允許一個層級。 例如，下列專案將不允許 `es` 要解析為語言副本的頁面：
+>只允許一個層級。 例如，下列專案不允許 `es` 要解析為語言副本的頁面：
 >
 >* `/content/wknd/language-masters/en`
 >* `/content/wknd/language-masters/americas/central-america/es`
 >
-> 此 `es` 無法偵測到語言副本，因為有2個層級(`americas/central-america`)離開 `en` 節點。
+> 這個 `es` 無法偵測到語言副本，因為有2個層級(`americas/central-america`)離開 `en` 節點。
 
 >[!TIP]
 >
->在此設定中，語言根可以有任何頁面名稱，而不僅僅是語言的ISO程式碼。 AEM一律會先檢查路徑和名稱，但如果頁面名稱未識別語言，AEM則會檢查 `cq:language` 語言識別頁面的屬性。
+>在此類設定中，語言根可以有任何頁面名稱，而不僅僅是語言的ISO程式碼。 AEM一律會先檢查路徑和名稱，但如果頁面名稱未識別語言，AEM則會檢查 `cq:language` 語言識別頁面的屬性。
