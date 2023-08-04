@@ -1,10 +1,10 @@
 ---
 title: 使用最佳做法分析工具
-description: 使用最佳做法分析工具
+description: 瞭解如何使用Best Practices Analyzer，以瞭解升級整備。
 exl-id: e8498e17-f55a-4600-87d7-60584d947897
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
 workflow-type: tm+mt
-source-wordcount: '2474'
+source-wordcount: '2484'
 ht-degree: 46%
 
 ---
@@ -19,21 +19,21 @@ ht-degree: 46%
 
 ## 使用Best Practices Analyzer的重要考量 {#imp-considerations}
 
-請依照以下章節瞭解執行Best Practices Analyzer (BPA)的重要考量：
+請參考以下章節，瞭解執行Best Practices Analyzer (BPA)時的重要考量：
 
-* BPA報告是使用Adobe Experience Manager (AEM)的輸出所建置 [模式偵測器](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/upgrading/pattern-detector.html). BPA使用的模式偵測器版本包含在BPA安裝套件中。
+* BPA報告是使用Adobe Experience Manager (AEM)的輸出所建置 [圖樣偵測器](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/upgrading/pattern-detector.html). BPA使用的模式偵測器版本包含在BPA安裝封裝中。
 
-* BPA只能由 **管理員** 使用者或使用者 **管理員** 群組。
+* BPA只能由 **管理員** 使用者或中的使用者 **管理員** 群組。
 
-* 6.1版及更新版本的AEM執行個體支援BPA。
+* 6.1版及更高版本的AEM執行個體支援BPA。
 
   >[!NOTE]
-  >另請參閱 [在AEM 6.1上安裝](#installing-on-aem61) 針對AEM 6.1上安裝BPA的特殊需求。
+  >另請參閱 [在AEM 6.1上安裝](#installing-on-aem61) 針對在AEM 6.1上安裝BPA的特殊需求。
 
 * BPA可以在任何環境中執行，但最好執行於 *階段* 環境。
 
   >[!NOTE]
-  >為避免對業務關鍵執行個體造成影響，建議您對 *作者* 儘可能靠近 *生產* 自訂、設定、內容和使用者應用程式領域的環境。 或者，您可以在複製的生產&#x200B;*製作*&#x200B;環境中執行 CRA。
+  >為避免對業務關鍵執行個體造成影響，建議您對 *作者* 儘可能靠近的環境 *生產* 自訂、設定、內容和使用者應用程式領域的環境。 或者，您可以在複製的生產&#x200B;*製作*&#x200B;環境中執行 CRA。
 
 * 產生BPA報告內容可能需要相當長的時間，從幾分鐘到幾小時不等。 所需的時間主要取決於 AEM 存放庫內容的大小和性質、AEM 版本和其他因素。
 
@@ -69,7 +69,7 @@ ht-degree: 46%
 
    ![影像](/help/journey-migration/best-practices-analyzer/assets/BPA_pic3.png)
 
-1. 產生BPA報告後，它會以表格格式顯示結果的摘要和數目，並依結果型別和重要性層級加以整理。 若要取得特定發現專案的詳細資訊，您可以按一下與表格中的發現專案型別相對應的數字。
+1. 產生BPA報告後，會以表格格式顯示結果的摘要和數目，並依據結果型別和重要性層級加以整理。 若要取得特定發現專案的詳細資訊，您可以按一下與表格中的發現專案型別相對應的數字。
 
    ![影像](/help/journey-migration/best-practices-analyzer/assets/BPA_pic4.png)
 
@@ -93,16 +93,16 @@ ht-degree: 46%
 
 #### 在Best Practices Analyzer報告中使用篩選器 {#bpa-filters}
 
-若要篩選掉與下列專案相關的發現 [ACS Commons](https://adobe-consulting-services.github.io/acs-aem-commons/)，請遵循下列步驟：
+若要篩選掉與相關的發現 [ACS Commons](https://adobe-consulting-services.github.io/acs-aem-commons/)，請遵循下列步驟：
 
-1. 按一下頁面左側的左側邊欄圖示。 這會顯示 **ACS Commons篩選器**. 按一下 **ACS Commons篩選器** 以顯示「互動式」核取方塊，如下圖所示。
+1. 按一下頁面左側的左側欄圖示。 這將會顯示 **ACS Commons篩選器**. 按一下 **ACS Commons篩選器** 以顯示「互動式」核取方塊，如下圖所示。
 
    ![影像](/help/journey-migration/best-practices-analyzer/assets/report_filter_1.png)
 
    >[!NOTE]
    >只有在BPA偵測到ACS Commons的使用時，左側邊欄圖示才會出現。
 
-1. 取消選取此方塊，以篩選掉與ACS Commons相關的所有發現。 您應會看到 **篩選結果計數** 在報表上，如下圖所示。 當篩選器匯出為逗號分隔值(CSV)格式時，也會套用至報表。
+1. 取消選取此方塊，以篩選掉與ACS Commons相關的所有發現。 您應該會看到 **已篩選的發現專案計數** 在報表上，如下圖所示。 當篩選器匯出為逗號分隔值(CSV)格式時，也會套用至報表。
 
    ![影像](/help/journey-migration/best-practices-analyzer/assets/report_filter_2.png)
 
@@ -138,7 +138,7 @@ For Adobe Experience Manager 6.1, the tool is not functional and only the HTTP i
    * **到期時間**：報表內容快取的到期時間。
    * **產生時段**：報表內容產生程序所花費的時間。
    * **結果計數**：報表中包含的結果總數。
-* **系統概觀**：有關執行BPA的AEM系統的資訊。
+* **系統概覽**：有關執行BPA的AEM系統的資訊。
 * **結果類別**：分別處理一或多個同類結果的多個區段。每個區段各包含下列項目：類別名稱、子類型、結果計數和重要性、摘要、類別文件的連結，以及個別結果資訊。
 
 系統會為每個結果指派一個重要性層級，以指出動作的概略優先順序。
@@ -157,7 +157,7 @@ For Adobe Experience Manager 6.1, the tool is not functional and only the HTTP i
 
 ## 解譯Best Practices Analyzer CSV報表 {#cra-csv-report}
 
-當您按一下 **CSV** 選項從AEM執行個體中，從內容快取建置CSV格式的Best Practices Analyzer報告並傳回至您的瀏覽器。 根據您的瀏覽器設定，此報表會自動下載為檔案，預設名稱為 `results.csv`.
+當您按一下 **CSV** AEM選項，從內容快取建置CSV格式的Best Practices Analyzer報告並傳回至您的瀏覽器。 根據您的瀏覽器設定，此報表會自動下載為檔案，且具有預設名稱 `results.csv`.
 
 如果快取已過期，則會在CSV檔案建置和下載之前重新產生報表。
 
@@ -179,9 +179,9 @@ CSV 格式報表的欄包括：
 
 ## HTTP 介面 {#http-interface}
 
-BPA提供HTTP介面，可作為AEM使用者介面的替代介面。 該介面同時支援 HEAD 和 GET 命令。它可用來產生BPA報表，並以三種格式之一傳回：JSON、CSV和定位字元分隔值(TSV)。
+BPA提供HTTP介面，可作為AEM使用者介面的替代介面。 該介面同時支援 HEAD 和 GET 命令。它可用來產生BPA報表，並以三種格式之一傳回：JSON、CSV和定位鍵分隔值(TSV)。
 
-以下URL可用於HTTP存取，其中 `<host>` 是安裝BPA之伺服器的主機名稱及連線埠（如有需要）：
+下列URL可用於HTTP存取，其中 `<host>` 是安裝BPA之伺服器的主機名稱和連線埠（如有需要）：
 * `http://<host>/apps/best-practices-analyzer/analysis/report.json` (JSON 格式)
 * `http://<host>/apps/best-practices-analyzer/analysis/report.csv` (CSV 格式)
 * `http://<host>/apps/best-practices-analyzer/analysis/report.tsv` (TSV 格式)
@@ -201,30 +201,30 @@ HTTP 介面可用於多種方法中。
 
 此介面使用下列 HTTP 標題：
 
-* `Cache-Control: max-age=<seconds>`：指定快取時效性存留期（以秒為單位）。 (請參閱 [RFC 7234](https://tools.ietf.org/html/rfc7234#section-5.2.2.8)。)
+* `Cache-Control: max-age=<seconds>`：指定快取時效性存留期（秒）。 (請參閱 [RFC 7234](https://tools.ietf.org/html/rfc7234#section-5.2.2.8)。)
 * `Prefer: respond-async`：指定伺服器應以非同步方式回應。 (請參閱 [RFC 7240](https://tools.ietf.org/html/rfc7240#section-4.1)。)
-* `Prefer: return=minimal`：指定伺服器應傳回最小回應。 (請參閱 [RFC 7240](https://tools.ietf.org/html/rfc7240#section-4.2)。)
+* `Prefer: return=minimal`：指定伺服器應傳回最低的回應。 (請參閱 [RFC 7240](https://tools.ietf.org/html/rfc7240#section-4.2)。)
 
 在不方便使用 HTTP 標題時，可權衡使用下列 HTTP 查詢參數：
 
-* `max-age` （數字，選用）：指定快取時效性存留期（以秒為單位）。 此數字必須大於或等於 0。預設的時效性存留期為86400秒。 如果沒有此引數或對應的標頭，新的快取將會在24小時內用來處理請求，屆時必須重新產生快取。 使用 `max-age=0` 會強制清除快取，並使用新產生之快取的先前非零時效性存留期，開始重新產生報表。
-* `respond-async` （布林值，選用）：指定應以非同步方式提供回應。 使用 `respond-async=true` 當快取過期時，將導致伺服器傳回 `202 Accepted` 而不等待快取重新整理及報表產生。 如果快取為最新狀態，此參數就沒有效用。預設值為 `false`.若沒有此引數或對應的標頭，伺服器將會同步回應，而這可能需要相當長的時間，且需要調整HTTP使用者端的最大回應時間。
-* `may-refresh-cache` （布林值，選用）：指定如果目前快取是空的、過時或即將過時，伺服器可能會重新整理快取以回應要求。 若 `may-refresh-cache=true`，或未指定時，伺服器可能會起始背景工作，並叫用模式偵測器並重新整理快取。 若 `may-refresh-cache=false` 若快取為空白或過時（報表為空白），則伺服器不會起始任何原本應完成的重新整理工作。 任何已在處理的重新整理任務都不會受到此引數的影響。
-* `return-minimal` （布林值，選用）：指定伺服器的回應應僅包含包含進度指示的狀態，以及JSON格式的快取狀態。 若 `return-minimal=true`，則回應內文會限製為狀態物件。 若 `return-minimal=false`，或未指定時，則會提供完整回應。
-* `log-findings` （布林值，選用）：指定第一次建立或重新整理快取時，伺服器應該記錄快取的內容。 快取中的每個發現都會記錄為JSON字串。 此記錄只會在 `log-findings=true` 而且請求會產生新快取。
+* `max-age` （數字，選用）：指定快取時效性存留期（以秒為單位）。 此數字必須大於或等於 0。預設的時效性存留期為86400秒。 如果沒有此引數或對應的標頭，新的快取將會在24小時內用來處理請求，屆時必須重新產生快取。 使用 `max-age=0` 會強制清除快取，並使用新產生快取的先前非零時效性存留期來開始重新產生報表。
+* `respond-async` （布林值，選用）：指定應以非同步方式提供回應。 使用 `respond-async=true` 快取過期時，伺服器會傳回的回應 `202 Accepted` 而不等待快取重新整理及報告產生。 如果快取為最新狀態，此參數就沒有效用。預設值為 `false`.若沒有此引數或對應標頭，伺服器將會同步回應，而這可能需要相當長的時間，且需要調整HTTP使用者端的最大回應時間。
+* `may-refresh-cache` （布林值，選用）：指定如果目前快取空白、過時或即將過時，伺服器可以重新整理快取以回應要求。 如果 `may-refresh-cache=true`，或未指定時，伺服器可能會起始背景工作，並叫用模式偵測器並重新整理快取。 如果 `may-refresh-cache=false` 若快取為空白或過時（報表為空白），則伺服器不會起始任何原本應完成的重新整理工作。 任何已在處理的重新整理任務都不會受此引數影響。
+* `return-minimal` （布林值，選用）：指定伺服器的回應應僅包含進度指示的狀態，以及JSON格式的快取狀態。 如果 `return-minimal=true`，則回應內文會限製為狀態物件。 如果 `return-minimal=false`，或未指定時，則會提供完整的回應。
+* `log-findings` （布林值，選用）：指定第一次建立或重新整理快取時，伺服器應記錄快取的內容。 快取中的每個結果都會記錄為JSON字串。 只有在 `log-findings=true` 而且請求會產生新快取。
 
 當 HTTP 標頭和對應的查詢參數均存在時，將會以查詢參數優先。
 
 要透過 HTTP 介面開始產生報表，有個簡單的方式是使用下列命令：
 `curl -u admin:admin 'http://localhost:4502/apps/best-practices-analyzer/analysis/report.json?max-age=0&respond-async=true'`。
 
-在提出要求後，用戶端無須維持作用中狀態，即可產生報表。報表產生作業可以由一個使用者端使用HTTPGET要求來起始，且報表產生後，可由另一個使用者端從快取中檢視，或由AEM使用者介面中的BPA工具檢視。
+在提出要求後，用戶端無須維持作用中狀態，即可產生報表。報表產生作業可以由一個使用者端使用HTTPGET要求來起始，且報表產生後，可由另一個使用者端從快取加以檢視，或透過AEM使用者介面中的BPA工具檢視。
 
 ### 回應 {#http-responses}
 
 可能的回應值如下：
 
-* `200 OK`：指出此回應包含「模式偵測器」在快取的時效性存留期內產生的結果。
+* `200 OK`：指出回應包含「模式偵測器」在快取的時效性存留期內產生的結果。
 * `202 Accepted`：用於表示快取已過時。 時間 `respond-async=true` 和 `may-refresh-cache=true` 此回應表示重新整理任務正在進行中。 時間 `may-refresh-cache=false` 此回應僅表示快取已過時。
 * `400 Bad Request`：表示要求發生錯誤。「問題詳細資料」格式的訊息(請參閱 [RFC 7807](https://tools.ietf.org/html/rfc7807))提供詳細資訊。
 * `401 Unauthorized`：指出要求未獲授權。
@@ -235,7 +235,7 @@ HTTP 介面可用於多種方法中。
 
 ### 快取存留期調整 {#cache-adjustment}
 
-預設的BPA快取存留期為24小時。 在AEM執行個體和HTTP介面中，都有重新整理報表和重新產生快取的選項，此預設值可能適合大部分的BPA使用。 如果AEM例項的報表產生時間特別長，您可以調整快取存留期，將報表的重新產生減至最少。
+預設的BPA快取存留期為24小時。 在AEM執行個體和HTTP介面中使用重新整理報告及重新產生快取的選項時，此預設值可能適用於BPA的大部分使用。 如果AEM例項中的報表產生時間特別長，您可以調整快取存留期以最小化報表的重新產生。
 
 快取存留期值會儲存為下列存放庫節點上的 `maxCacheAge` 屬性：
 `/apps/best-practices-analyzer/content/BestPracticesReport/jcr:content`
@@ -250,4 +250,4 @@ BPA會使用名為的系統服務使用者帳戶 `repository-reader-service` 執
 
 2. 依照[管理使用者和群組](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html#managing-users-and-groups)中的指示 (尤其是「將使用者新增至群組」的指示)，將 `repository-reader-service` 使用者新增至 `administrators` 群組。
 
-3. 透過封裝管理程式，在您的來源AEM執行個體上安裝BPA封裝。 (這將會在 `repository-reader-service` 系統服務使用者的 ServiceUserMapper 設定中新增必要的設定修正。)
+3. 透過封裝管理程式，在您的來源AEM執行個體上安裝BPA套件。 (這將會在 `repository-reader-service` 系統服務使用者的 ServiceUserMapper 設定中新增必要的設定修正。)

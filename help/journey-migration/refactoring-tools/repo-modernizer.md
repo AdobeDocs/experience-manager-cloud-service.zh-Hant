@@ -1,21 +1,21 @@
 ---
 title: 存放庫現代化工具
-description: 存放庫現代化工具
+description: 瞭解如何重新建構現有的專案套件，使其與針對Adobe Experience Manager as a Cloud Service定義的專案結構相容。
 exl-id: cd9d212e-e720-4209-8b5a-659883cc1d95
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
 workflow-type: tm+mt
-source-wordcount: '302'
-ht-degree: 6%
+source-wordcount: '324'
+ht-degree: 5%
 
 ---
 
 # 存放庫現代化工具 {#repo-modernizer}
 
-Repository Modernizer是一個公用程式，開發目的是將內容和程式碼分割為獨立套件，以與Adobe Experience Manager as a Cloud Service定義的專案結構相容，藉此重組現有的專案套件。
+Repository Modernizer是專為重組現有專案套件而開發的公用程式，其將內容和程式碼分割為獨立套件，以與Adobe Experience Manager as a Cloud Service定義的專案結構相容。
 
 ## 簡介 {#introduction}
 
-Adobe Experience Manager as a Cloud Service為您的AEM專案提供許多新功能和可能性。 不過，Adobe Experience Manager Maven專案必須進行一些變更，才能與AEM Cloud Service相容。 概略來說，AEM需要分隔 **內容** 和 **程式碼** 分成離散的子套件，以遵循可變和不可變內容之間的分割。 另請參閱 [AEM專案結構](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure.html) 以進一步瞭解Cloud Service的新AEM專案結構。
+Adobe Experience Manager as a Cloud Service為AEM專案提供許多新功能和可能性。 不過，Adobe Experience Manager Maven專案必須進行一些變更，才能與AEM Cloud Service相容。 概略來說，AEM需要分隔 **內容** 和 **程式碼** 分成離散的子套件，以遵循可變和不可變內容之間的分割。 另請參閱 [AEM專案結構](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure.html) 以進一步瞭解Cloud Service的全新AEM專案結構。
 
 Repository Modernizer會建立下列部署結構，以建立相容的AEM Cloud Service專案結構：
 
@@ -32,9 +32,9 @@ Repository Modernizer會建立下列部署結構，以建立相容的AEM Cloud S
 
 >[!VIDEO](https://video.tv.adobe.com/v/333057/?quality=12&learn=on)
 
-* 透過Adobe I/OCLI ：建議透過 `aio-cli-plugin-aem-cloud-service-migration` (Adobe I/OCLI的AEMas a Cloud Service程式碼重構外掛程式)。
+* 透過Adobe I/OCLI ：建議透過使用Repository Modernizer `aio-cli-plugin-aem-cloud-service-migration` (適用於Adobe I/OCLI的AEMas a Cloud Service程式碼重構外掛程式)。
 
-  另請參閱 **[Git資源： aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#introduction)** 以便您瞭解如何安裝及使用外掛程式。
+  另請參閱 **[Git資源： aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#introduction)** 以便您瞭解如何安裝和使用外掛程式。
 
 * 作為獨立公用程式： Repository Modernizer也可以作為獨立公用程式執行。
 

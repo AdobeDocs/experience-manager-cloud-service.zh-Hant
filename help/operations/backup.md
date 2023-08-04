@@ -1,24 +1,24 @@
 ---
-title: AEMas a Cloud Service的備份與還原
-description: AEMas a Cloud Service的備份與還原
+title: AEMas a Cloud Service的備份和還原
+description: 瞭解AEMas a Cloud Service的備份和還原
 exl-id: 469fb1a1-7426-4379-9fe3-f5b0ebf64d74
-source-git-commit: 7260649eaab303ba5bab55ccbe02395dc8159949
+source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
 workflow-type: tm+mt
-source-wordcount: '512'
+source-wordcount: '514'
 ht-degree: 21%
 
 ---
 
 
-# AEMas a Cloud Service的備份與還原 {#backup-aemaacs}
+# AEMas a Cloud Service的備份和還原 {#backup-aemaacs}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_backuprestore"
 >title="備份與還原"
 >abstract="AEM as a Cloud Service 可以將客戶的完整應用程式 (程式碼和內容) 還原至過去 7 天內特定的預定時間，以替換生產中的應用程式。只有在程式碼或內容發生嚴重問題時才應使用此功能。還原備份時間和目前時間之間的最新資料會遺失。暫存資料也會還原為舊版本。"
 
-如果發生內容或資料損毀，AEMas a Cloud Service可以還原客戶的完整應用程式（程式碼和內容）。 它會恢復到過去七天中預先決定的特定時間，取代生產環境中的內容。
-如果客戶的部署（表示部署的應用程式程式碼已損壞或發生錯誤），建議修正程式碼並前進到新版本，而非從備份還原。 備份的執行方式不會影響應用程式的執行階段效能。
+如果發生內容或資料損毀，AEMas a Cloud Service可還原客戶的完整應用程式（程式碼和內容）。 它會恢復到過去七天中預先決定的特定時間，取代生產中的內容。
+如果客戶的部署（表示部署的應用程式程式碼損壞或錯誤），最好將其修正並前進到新版本，而不是從備份中還原。 執行備份的方式不會影響應用程式的執行階段效能。
 
 >[!CAUTION]
 >
@@ -30,9 +30,9 @@ ht-degree: 21%
 
 AEMas a Cloud Service支援：
 
-* 適用於中繼、生產和開發環境的備份和還原。
-* 24小時時間點復原，表示系統可復原至過去24小時內的任何時間點。
-* 從過去7天中每天執行兩次的特定Adobe定義時間戳記還原。 任何復寫訊息（刪除、更新、建立）都會保留。
+* 中繼、生產和開發環境的備份和還原。
+* 24小時時間點復原，表示系統可以在過去24小時內還原到任何時間點。
+* 從過去七天每天花兩次Adobe定義的特定時間戳記還原。 任何復寫訊息（刪除、更新、建立）都會保留。
 
 在所有情況下，自訂程式碼版本都是從還原點之前的上次成功部署中取得。
 
@@ -46,6 +46,6 @@ AEMas a Cloud Service支援：
 
 ## 異地備份 {#offsite-backup}
 
-雖然定期備份涵蓋AEM雲端服務中意外刪除或技術失敗的風險，但同時也涵蓋了區域失敗可能帶來的風險。 除了可用性以外，這類資料區域中斷的最大風險主要是資料遺失。
-AEMas a Cloud Service涵蓋此風險，作為所有AEM生產環境的標準。 它持續將整個AEM內容複製到遠端區域，並可供復原三個月。 Adobe會呼叫此功能異地備份。
-如果資料區域中斷，中繼和生產環境的AEM雲端服務復原會由AEM服務可靠性工程執行。
+雖然定期備份涵蓋AEM Cloud Service中意外刪除或技術失敗的風險，但同時也必須涵蓋區域失敗可能帶來的風險。 除了可用性以外，這類資料區域中斷的最大風險主要是資料遺失。
+AEMas a Cloud Service涵蓋此風險，作為所有AEM生產環境的標準。 它會持續將整個AEM內容複製到遠端區域，並在三個月內提供回覆功能。 Adobe會將此功能呼叫異地備份。
+如果資料區域中斷，中繼和生產環境的AEM雲端服務復原會由「AEM服務可靠性工程」執行。

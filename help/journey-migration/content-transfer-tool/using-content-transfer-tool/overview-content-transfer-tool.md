@@ -1,11 +1,11 @@
 ---
 title: 內容轉移工具綜覽
-description: 內容轉移工具綜覽
+description: 瞭解如何使用內容轉移工具將內容從內部部署AEM例項轉移到AEMas a Cloud Service
 exl-id: cfc0366a-2139-4d9d-b5bc-0b65bef4013c
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
 workflow-type: tm+mt
-source-wordcount: '645'
-ht-degree: 42%
+source-wordcount: '664'
+ht-degree: 40%
 
 ---
 
@@ -21,11 +21,11 @@ ht-degree: 42%
 
 此工具也會自動轉移主體 (使用者或群組)。另請參閱 [使用者對應和主體移轉](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md) 以取得詳細資訊。
 
-內容轉移工具整合了內容轉移流程和Cloud Acceleration Manager。 這可讓使用者享有其提供的所有優點：
+「內容轉移工具」整合了內容轉移程式與Cloud Acceleration Manager。 這可讓使用者享有其提供的所有優點：
 
 * 自助式方式擷取一次移轉集，並同時將其擷取至多個環境中
 * 透過更好的載入狀態、護欄和錯誤處理，改善使用者體驗
-* 內嵌記錄會持續存在，且隨時可用於疑難排解
+* 內嵌記錄檔會持續存在，且隨時可用於疑難排解
 * 驗證和主要移轉報告可用於驗證
 
 ## 內容轉移工具中的階段 {#phases-content-transfer-tool}
@@ -34,10 +34,10 @@ ht-degree: 42%
 
 1. **提取**：提取指的是從來源 AEM 例項提取內容，並存放至名為&#x200B;*移轉集*&#x200B;的暫存區域。*移轉集*&#x200B;是 Adobe 提供的雲端儲存空間，可供暫時儲存在來源 AEM 例項與雲端服務 AEM 例項間轉移的內容。
 
-   另請參閱 [內容轉移中的擷取程式](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md) 以取得更多詳細資料。
+   另請參閱 [內容轉移中的提取程式](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md) 以取得更多詳細資料。
 
    >[!NOTE]
-   >使用者對應現在會在提取階段中自動在作者上執行（但可選擇在作者上停用或在發佈上啟用）。 另請參閱 [使用者對應和主體移轉](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md) 以取得更多詳細資料。
+   >現在，使用者對應會在作者上的擷取階段中自動執行（但可選擇在作者上停用或在發佈上啟用）。 另請參閱 [使用者對應和主體移轉](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md) 以取得更多詳細資料。
 
 1. **擷取**：擷取指的是從&#x200B;*移轉集*&#x200B;擷取內容，並存放至目標雲端服務例項。
 
@@ -47,7 +47,7 @@ ht-degree: 42%
 
 移轉集有下列屬性：
 
-* 有了新版本，您可以在Cloud Acceleration Manager中建立的專案中建立最多五個移轉集。
+* 有了新版本，您可以在使用Cloud Acceleration Manager建立的專案中建立最多五個移轉集。
 * 每個移轉集的名稱必須是唯一的。
 
 「內容轉移工具」具備支援追加差異內容的功能，可以只轉移在上一次內容轉移活動後所進行的變更。
@@ -66,18 +66,18 @@ ht-degree: 42%
 >title="移轉集到期"
 >abstract="了解移轉集到期。"
 
-所有移轉集都將在約90天長時間不活動後最終過期。 指標在專案卡片和移轉工作表格列上顯示一段時間後，移轉集將過期，其資料將不再可用。 透過以下方式根據移轉集採取行動，可輕鬆延長到期時間：
+所有移轉集都將在約90天長時間不活動後最終到期。 指標在專案卡片和移轉工作表格列中顯示一段時間後，移轉集將到期，其資料將不再可用。 透過以下方式根據移轉集採取行動，可輕鬆延長到期時間：
 
 * 編輯其說明
 * 取得其擷取金鑰
 * 對其執行擷取
 * 從中執行內嵌
 
-可以在「移轉集」列上監視移轉集的到期日。 移轉集即將到期的實用視覺指示器也新增了專案的卡片。
+您可以在移轉集列上監視移轉集的到期日。 移轉集即將到期的一個實用視覺指示器也新增了專案的卡片。
 
 ![影像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam29.png)
 
 
 ## 下一步 {#whats-next}
 
-瞭解內容轉移工具及其概述後，您必須檢閱「內容轉移工具」，其中說明此工具可用來將現有內容從來源AEM例項（內部部署或AMS）移動到目標AEM Cloud Service例項 [內容轉移工具的先決條件](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md).
+瞭解內容轉移工具及其概述後(說明此工具可用於將現有內容從來源AEM例項（內部部署或AMS）移至目標AEM Cloud Service例項)，您必須檢閱 [內容轉移工具的先決條件](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md).
