@@ -1,11 +1,11 @@
 ---
 title: Adobe Experience Manager as a Cloud Service 2020.4.0 版發行說明
-description: Experience Manager 2020.4.0 版發行說明
+description: '"[!DNL Adobe Experience Manager] 2020.4.0版as a Cloud Service發行說明。」'
 exl-id: d98a3862-76fa-4b5b-b81a-333f5f532b67
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+source-git-commit: 9ceec0401b91bba2408bda89d4f2c486e2d51eec
 workflow-type: tm+mt
-source-wordcount: '646'
-ht-degree: 94%
+source-wordcount: '648'
+ht-degree: 93%
 
 ---
 
@@ -32,11 +32,11 @@ ht-degree: 94%
 * 使用者可以設定[處理後工作流程](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows)，以便針對特定資料夾階層在資料夾[!UICONTROL 屬性]使用者介面中自動啟動。
    * 資料夾[!UICONTROL 屬性]使用者介面經過簡化，當中的全新[!UICONTROL 資產處理]標籤包含中繼資料設定檔、處理設定檔和新的自動啟動工作流程設定。
 
-      ![處理設定檔可輕鬆套用至資料夾，所有上傳至資料夾的資產都可使用這些設定檔來處理](/help/assets/assets/asset-processing-folder-properties.png)
+     ![處理設定檔可輕鬆套用至資料夾，所有上傳至資料夾的資產都可使用這些設定檔來處理](/help/assets/assets/asset-processing-folder-properties.png)
 
    * 資產重新處理選項可讓您選取特定的處理設定檔，以重新處理子資料夾中使用者所選取的資產。
 
-      ![使用特定處理設定檔重新處理選取的資產](/help/assets/assets/fpo-existing-asset-reprocess.gif)
+     ![使用特定處理設定檔重新處理選取的資產](/help/assets/assets/fpo-existing-asset-reprocess.gif)
 
    * [!DNL Dynamic Media]：新增選擇性發佈設定，方便資產僅供安全預覽而自動發佈。此外，資產可明確發佈至 Experience Manager，無需發佈至 DMS7 再於公共網域中遞送。
 
@@ -51,7 +51,6 @@ ht-degree: 94%
 >* [設定 Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/configure-aem-assets-with-brand-portal.html)
 >* [設定 Experience Manager 以搭配 Asset Link 運作](https://helpx.adobe.com/tw/enterprise/using/configure-aem-assets-for-asset-link.html)
 >* [使用資產微服務在Experience Manager中建立工作流程](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/asset-microservices-configure-and-use.html#post-processing-workflows)
-
 
 ## Cloud Manager 新增功能 {#whats-new-cloud-manager}
 
