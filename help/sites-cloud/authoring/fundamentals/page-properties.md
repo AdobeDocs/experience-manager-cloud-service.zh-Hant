@@ -2,9 +2,9 @@
 title: 編輯頁面屬性
 description: 瞭解如何定義在AEM中管理頁面所需的屬性。
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: 31e6ec8e9977c8787e14481ee3a94df767262aec
+source-git-commit: 0183e14ad1653e98c06b19ea36c7e97dedccdb84
 workflow-type: tm+mt
-source-wordcount: '2347'
+source-wordcount: '2281'
 ht-degree: 6%
 
 ---
@@ -294,18 +294,6 @@ ht-degree: 6%
 ### 從Sites Console — 多個頁面 {#from-the-sites-console-multiple-pages}
 
 從Sites **** Console中，您可以選取數個頁面，然後使用 **View Properties**  (檢視屬性) 來檢視和/或編輯頁面屬性。這稱為頁面屬性的大量編輯。
-
->[!NOTE]
->
->您也可以為資產大量編輯屬性。 兩者非常類似，但僅有少數幾個差異點。 如需詳細資訊，請參閱編輯多個資產的屬性。
->
->此外還有大量編輯器，可讓您使用GQL (Google查詢語言)從多個頁面搜尋內容，然後直接在大量編輯器中編輯內容，再將變更儲存到原始頁面。
-
-<!--
->Bulk editing of properties is also available for Assets. It is very similar, but differs in a few points. See [Editing Properties of Multiple Assets](/help/assets/managing-multiple-assets.md) for details.
->
->There is also the [Bulk Editor](/help/sites-administering/bulk-editor.md), which allows you to search for content from multiple pages using GQL (Google Query Language) and then edit the content directly in the bulk editor before saving your changes to the originating pages.
--->
 
 您可以選取多個頁面以透過各種方法進行大量編輯，包括：
 

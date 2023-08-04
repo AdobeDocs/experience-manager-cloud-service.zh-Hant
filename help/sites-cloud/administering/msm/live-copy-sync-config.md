@@ -4,19 +4,20 @@ description: 瞭解可用的強大Live Copy同步選項，以及如何根據專�
 feature: Multi Site Manager
 role: Admin
 exl-id: 0c97652c-edac-436e-9b5b-58000bccf534
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 1d5460c87aef10ae1adee7401cd462242e106f8c
 workflow-type: tm+mt
-source-wordcount: '2335'
+source-wordcount: '2426'
 ht-degree: 2%
 
 ---
 
+
 # 設定 Live Copy 同步 {#configuring-live-copy-synchronization}
 
-Adobe Experience Manager提供許多現成的同步設定。 在使用即時副本之前，您應該考慮以下事項，以定義即時副本與其來源內容同步化的方式與時間。
+Adobe Experience Manager提供許多現成的同步設定。 在使用即時副本之前，您應該考慮以下事項，以定義即時副本與其來源內容同步化的方式和時間。
 
-1. 決定現有轉出設定是否符合您的需求
-1. 如果現有轉出設定未支援此功能，請決定是否需要建立您自己的轉出設定。
+1. 決定現有的轉出設定是否符合您的需求
+1. 如果現有轉出設定無法達成，請決定是否需要建立您自己的轉出設定。
 1. 指定用於即時副本的轉出設定。
 
 ## 已安裝及自訂轉出設定 {#installed-and-custom-rollout-configurations}
@@ -25,78 +26,74 @@ Adobe Experience Manager提供許多現成的同步設定。 在使用即時副�
 
 >[!CAUTION]
 >
->更新或變更現成可用的轉出設定是 **not** 建議使用。 如果需要自訂即時動作，則應將其新增到自訂轉出設定中。
+>更新或變更立即可用的轉出設定為 **非** 建議。 如果需要自訂即時動作，則應將其新增到自訂轉出設定中。
 
 ### 轉出觸發器 {#rollout-triggers}
 
-每個轉出設定都會使用轉出觸發器，導致轉出發生。 轉出設定可以使用下列其中一個觸發程式：
+每個轉出設定都會使用轉出觸發程式，導致轉出發生。 轉出設定可以使用以下其中一個觸發器：
 
 * **轉出時**：此 **轉出** 命令用於blue print頁面，或 **同步** 命令用於「即時副本」頁面。
 * **修改**：來源頁面已修改。
-* **啟動時**：來源頁面已啟動。
+* **啟動時**：來源頁面已啟用。
 * **停用**：來源頁面已停用。
 
 >[!NOTE]
 >
->使用 **修改** 觸發器可能會影響效能。 另請參閱 [MSM最佳作法](best-practices.md#onmodify) 以取得詳細資訊。
+>使用 **修改** 觸發程式可能會影響效能。 另請參閱 [MSM最佳實務](best-practices.md#onmodify) 以取得詳細資訊。
 
 ### 推出設定 {#rollout-configurations}
 
-下表列出隨AEM一起提供的現成轉出設定。 此表格包含每個轉出設定的觸發器和同步化動作。
+下表列出隨AEM一起提供的現成轉出設定。 此表格包含每個轉出設定的觸發器和同步動作。
 
-<!--
-If the installed rollout configuration actions do not meet your requirements, you can [create a new rollout configuration](#creating-a-rollout-configuration).
--->
+如果安裝的轉出組態動作不符合您的需求，您可以 [建立新的轉出設定。](#creating-a-rollout-configuration)
 
 | 名稱 | 說明 | 觸發器 | [同步化動作](#synchronization-actions) |
 |---|---|---|---|
-| 標準轉出設定 | 標準轉出設定，允許在轉出觸發時開始轉出程式，並執行動作：建立、更新、刪除內容和排序子節點 | 於轉出 | `contentUpdate`<br>`contentCopy`<br>`contentDelete`<br>`referencesUpdate`<br>`productUpdate`<br>`orderChildren` |
-| 在 Blueprint 啟動時啟動 | 發佈來源時發佈即時副本 | 啟動時 | `targetActivate` |
+| 標準轉出設定 | 標準轉出設定，允許在轉出觸發時開始轉出程式，並執行下列動作：建立、更新、刪除內容以及排序子節點 | 於轉出 | `contentUpdate`<br>`contentCopy`<br>`contentDelete`<br>`referencesUpdate`<br>`productUpdate`<br>`orderChildren` |
+| 在 Blueprint 啟動時啟動 | 在發佈來源時發佈即時副本 | 啟動時 | `targetActivate` |
 | 在 Blueprint 停用時停用 | 停用來源時停用即時副本 | 停用 | `targetDeactivate` |
-| 在發生修改時推送 | 修改來源時將內容推送至即時副本<br>謹慎使用此轉出設定，因為它使用「修改」觸發器。 | 於修改 | `contentUpdate`<br>`contentCopy`<br>`contentDelete`<br>`referencesUpdate`<br>`orderChildren` |
-| 在發生修改時推送 (淺層) | 修改Blueprint頁面時將內容推送至即時副本，而不更新引用（例如，淺層副本的引用）<br>謹慎使用此轉出設定，因為它使用「修改」觸發器。 | 於修改 | `contentUpdate`<br>`contentCopy`<br>`contentDelete`<br>`orderChildren` |
+| 在發生修改時推送 | 在修改來源時將內容推送至即時副本<br>謹慎使用此轉出設定，因為它使用「修改」觸發器。 | 於修改 | `contentUpdate`<br>`contentCopy`<br>`contentDelete`<br>`referencesUpdate`<br>`orderChildren` |
+| 在發生修改時推送 (淺層) | 修改Blueprint頁面時將內容推送至即時副本，而不更新引用（例如淺層副本）<br>謹慎使用此轉出設定，因為它使用「修改」觸發器。 | 於修改 | `contentUpdate`<br>`contentCopy`<br>`contentDelete`<br>`orderChildren` |
 | 提升啟動 | 提升啟動頁面的標準轉出設定。 | 於轉出 | `contentUpdate`<br>`contentCopy`<br>`contentDelete`<br>`referencesUpdate`<br>`orderChildren`<br>`markLiveRelationship` |
 
 ### 同步化動作 {#synchronization-actions}
 
-下表列出隨AEM提供的現成同步動作。
+下表列出隨AEM一起提供的現成同步動作。
 
-<!--If the installed actions do not meet your requirements, you can [Create a New Synchronization Action](/help/sites-developing/extending-msm.md#creating-a-new-synchronization-action).-->
+如果安裝的動作不符合您的需求，您可以 [建立新的同步化動作。](/help/implementing/developing/extending/msm.md#creating-a-new-synchronization-action)
 
 | 動作名稱 | 說明 | 屬性 |
 |---|---|---|
-| `contentCopy` | 當即時副本上不存在來源的節點時，此動作會將節點複製到即時副本。 [設定 **CQ MSM內容複製動作** 服務](#excluding-properties-and-node-types-from-synchronization) 以指定要排除的節點型別、段落專案和頁面屬性。 |  |
-| `contentDelete` | 此動作會刪除來源上不存在之即時副本的節點。 [設定 **CQ MSM內容刪除動作** 服務](#excluding-properties-and-node-types-from-synchronization) 以指定要排除的節點型別、段落專案和頁面屬性。 |  |
-| `contentUpdate` | 此動作會使用來源的變更來更新即時副本內容。 [設定 **CQ MSM內容更新動作** 服務](#excluding-properties-and-node-types-from-synchronization) 以指定要排除的節點型別、段落專案和頁面屬性。 |  |
-| `editProperties` | 此動作會編輯即時副本的屬性。 此 `editMap` 屬性會決定要編輯哪些屬性及其值。 的值 `editMap` 屬性必須使用以下格式：<br>`[property_name_n]#[current_value]#[new_value]`<br>`current_value` 和 `new_value` 是規則運算式和 `n` 是遞增整數。<br>例如，請考慮以下值 `editMap`：<br>`sling:resourceType#/(contentpage`‖`homepage)#/mobilecontentpage,cq:template#/contentpage#/mobilecontentpage`<br>此值會編輯即時副本節點的屬性，如下所示：<br>此 `sling:resourceType` 屬性已設定為 `contentpage` 或 `homepage` 設為 `mobilecontentpage`.<br>此 `cq:template` 屬性已設定為 `contentpage` 設為 `mobilecontentpage`. | `editMap: (String)` 會識別屬性、目前值和新值。 如需詳細資訊，請參閱說明。 |
+| `contentCopy` | 當即時副本上不存在來源的節點時，此動作會將節點複製到即時副本。 [設定 **CQ MSM內容複製動作** 服務](#excluding-properties-and-node-types-from-synchronization) 指定要排除的節點型別、段落專案和頁面屬性。 |  |
+| `contentDelete` | 此動作會刪除不在來源上的即時副本節點。 [設定 **CQ MSM內容刪除動作** 服務](#excluding-properties-and-node-types-from-synchronization) 指定要排除的節點型別、段落專案和頁面屬性。 |  |
+| `contentUpdate` | 此動作會使用來源中的變更來更新即時副本內容。 [設定 **CQ MSM內容更新動作** 服務](#excluding-properties-and-node-types-from-synchronization) 指定要排除的節點型別、段落專案和頁面屬性。 |  |
+| `editProperties` | 此動作會編輯即時副本的屬性。 此 `editMap` 屬性會決定要編輯哪些屬性及其值。 的值 `editMap` 屬性必須使用下列格式：<br>`[property_name_n]#[current_value]#[new_value]`<br>`current_value` 和 `new_value` 是規則運算式和 `n` 是遞增整數。<br>例如，考慮以下值 `editMap`：<br>`sling:resourceType#/(contentpage`‖`homepage)#/mobilecontentpage,cq:template#/contentpage#/mobilecontentpage`<br>此值會編輯即時副本節點的屬性，如下所示：<br>此 `sling:resourceType` 屬性已設定為 `contentpage` 或至 `homepage` 設為 `mobilecontentpage`.<br>此 `cq:template` 屬性已設定為 `contentpage` 設為 `mobilecontentpage`. | `editMap: (String)` 會識別屬性、目前值和新值。 如需詳細資訊，請參閱說明。 |
 | `notify` | 此動作會傳送頁面已轉出的頁面事件。 若要接收通知，必須先訂閱轉出事件。 |  |
 | `orderChildren` | 此動作會根據Blueprint上的順序來排序子節點。 |  |
-| `referencesUpdate` | 此同步動作會更新即時副本上的參考。<br>它會搜尋即時副本頁面中指向Blueprint內資源的路徑。 找到後，它會更新路徑以指向即時副本內的相關資源。 具有Blueprint外部目標的參考不會變更。 <br>[設定 **CQ MSM參考更新動作** 服務](#excluding-properties-and-node-types-from-synchronization) 以指定要排除的節點型別、段落專案和頁面屬性。 |  |
-| `targetVersion` | 此動作會建立即時副本的版本。<br>此動作必須是轉出設定中包含的唯一同步化動作。 |  |
-| `targetActivate` | 此動作會啟動即時副本。<br>此動作必須是轉出設定中包含的唯一同步化動作。 |  |
-| `targetDeactivate` | 此動作會停用即時副本。<br>此動作必須是轉出設定中包含的唯一同步化動作。 |  |
+| `referencesUpdate` | 此同步動作會更新即時副本上的參考。<br>它會搜尋即時副本頁面中指向Blueprint內資源的路徑。 找到後，它會更新路徑以指向即時副本內的相關資源。 具有Blueprint外部目標的參考不會變更。 <br>[設定 **CQ MSM參考更新動作** 服務](#excluding-properties-and-node-types-from-synchronization) 指定要排除的節點型別、段落專案和頁面屬性。 |  |
+| `targetVersion` | 此動作會建立即時副本的版本。<br>此動作必須是轉出設定中唯一包含的同步化動作。 |  |
+| `targetActivate` | 此動作會啟動即時副本。<br>此動作必須是轉出設定中唯一包含的同步化動作。 |  |
+| `targetDeactivate` | 此動作會停用即時副本。<br>此動作必須是轉出設定中唯一包含的同步化動作。 |  |
 | `workflow` | 此動作會啟動目標屬性定義的工作流程（僅適用於頁面），並將即時副本視為裝載。<br>目標路徑是模型節點的路徑。 | `target: (String)` 是工作流程模型的路徑。 |
 | `mandatory` | 此動作會將Live Copy頁面上多個ACL的許可權，設定為特定使用者群組的唯讀。 已設定下列ACL：<br>`ActionSet.ACTION_NAME_REMOVE`<br>`ActionSet.ACTION_NAME_SET_PROPERTY`<br>`ActionSet.ACTION_NAME_ACL_MODIFY`<br>僅對頁面使用此動作。 | `target: (String)` 是要為其設定許可權的群組的ID。 |
 | `mandatoryContent` | 此動作會將Live Copy頁面上多個ACL的許可權，設定為特定使用者群組的唯讀。 已設定下列ACL：<br>`ActionSet.ACTION_NAME_SET_PROPERTY`<br>`ActionSet.ACTION_NAME_ACL_MODIFY`<br>僅對頁面使用此動作。 | `target: (String)` 是要為其設定許可權的群組的ID。 |
-| `mandatoryStructure` | 此動作會設定 `ActionSet.ACTION_NAME_REMOVE` 即時副本頁面上的ACL對於特定使用者群組為唯讀。<br>僅對頁面使用此動作。 | `target: (String)` 是要為其設定許可權的群組的ID。 |
+| `mandatoryStructure` | 此動作會將 `ActionSet.ACTION_NAME_REMOVE` 即時副本頁面上的ACL對於特定使用者群組為唯讀。<br>僅對頁面使用此動作。 | `target: (String)` 是要為其設定許可權的群組的ID。 |
 | `VersionCopyAction` | 如果Blueprint/來源頁面已發佈至少一次，此動作會使用已發佈的版本建立即時副本頁面。 注意：此動作僅適用於根據已發佈的來源頁面建立即時副本頁面，不適用於更新現有的即時副本頁面。 |  |
-| `PageMoveAction` | 此 `PageMoveAction` 在Blueprint中移動頁面時套用。<br>該動作會將（相關的）即時副本頁面從移動前的位置複製到移動後的位置，而不是移動頁面。<br>此 `PageMoveAction` 不會變更位於移動前位置的即時副本頁面。 因此，對於連續轉出設定，它具有不含Blueprint的即時關係狀態。<br>[設定 **CQ MSM頁面移動動作** 服務](#excluding-properties-and-node-types-from-synchronization) 以指定要排除的節點型別、段落專案和頁面屬性。<br>此動作必須是轉出設定中包含的唯一同步化動作。 | 設定 `prop_referenceUpdate: (Boolean)` 設為true （預設）以更新參照。 |
+| `PageMoveAction` | 此 `PageMoveAction` 在Blueprint中移動頁面時套用。<br>動作會將（相關的）即時副本頁面從移動前的位置複製到移動後的位置，而非移動。<br>此 `PageMoveAction` 不會變更位於移動前位置的即時副本頁面。 因此，對於連續轉出設定，它具有不含Blueprint的即時關係狀態。<br>[設定 **CQ MSM頁面移動動作** 服務](#excluding-properties-and-node-types-from-synchronization) 指定要排除的節點型別、段落專案和頁面屬性。<br>此動作必須是轉出設定中唯一包含的同步化動作。 | 設定 `prop_referenceUpdate: (Boolean)` 設為true （預設）以更新參照。 |
 | `markLiveRelationship` | 此動作表示啟動項建立的內容存在即時關係。 |  |
 
-<!--
-### Creating a Rollout Configuration {#creating-a-rollout-configuration}
+### 建立轉出設定 {#creating-a-rollout-configuration}
 
-You can [create a rollout configuration](/help/sites-developing/extending-msm.md#creating-a-new-rollout-configuration) when the installed rollout configurations do not meet your application requirements by performing the following steps.
+您可以 [建立轉出設定](/help/implementing/developing/extending/msm.md#creating-a-new-rollout-configuration) 當安裝的轉出設定不符合您的應用程式需求時，請執行下列步驟。
 
-1. [Create the rollout configuration](/help/sites-developing/extending-msm.md#create-the-rollout-configuration).
-1. [Add synchronization actions to the rollout configuration](/help/sites-developing/extending-msm.md#add-synchronization-actions-to-the-rollout-configuration).
+1. [建立轉出設定 — ](/help/implementing/developing/extending/msm.md#create-the-rollout-configuration)
+1. [將同步化動作新增到轉出設定。](/help/implementing/developing/extending/msm.md#add-synchronization-actions-to-the-rollout-configuration)
 
-The new rollout configuration is then available to you when configuring rollout configurations on a blueprint or Live Copy page.
--->
+然後，當您在Blueprint或即時副本頁面上設定轉出設定時，便可使用新的轉出設定。
 
-### 從同步中排除屬性和節點型別 {#excluding-properties-and-node-types-from-synchronization}
+### 從同步化中排除屬性和節點型別 {#excluding-properties-and-node-types-from-synchronization}
 
-您可以設定支援對應同步化動作的數個OSGi服務，使其不會影響特定節點型別和屬性。 例如，許多與AEM內部功能相關的屬性和子節點不應包含在即時副本中。 僅應複製與頁面使用者相關的內容。
+您可以設定數個支援相應同步化動作的OSGi服務，使其不會影響特定節點型別和屬性。 例如，許多與AEM內部功能相關的屬性和子節點不應包含在即時副本中。 只應複製與頁面使用者相關的內容。
 
 使用AEM時，有數種方法可管理此類服務的組態設定。 另請參閱 [設定OSGi](/help/implementing/deploying/configuring-osgi.md) 以取得詳細資訊和建議作法。
 
@@ -116,26 +113,26 @@ The new rollout configuration is then available to you when configuring rollout 
 |---|---|---|
 | 排除的節點型別 | `cq.wcm.msm.action.excludednodetypes` | 符合要從同步化動作中排除的節點型別的規則運算式 |
 | 排除的段落專案 | `cq.wcm.msm.action.excludedparagraphitems` | 符合要從同步化動作中排除的段落專案的規則運算式 |
-| 排除的頁面屬性 | `cq.wcm.msm.action.excludedprops` | 符合要從同步化動作中排除之頁面屬性的規則運算式 |
-| 忽略的Mixin節點型別 | `cq.wcm.msm.action.ignoredMixin` | 符合要從同步化動作中排除的mixin節點型別名稱的規則運算式(僅適用於 `contentUpdate` 動作) |
+| 排除的頁面屬性 | `cq.wcm.msm.action.excludedprops` | 符合要從同步動作中排除之頁面屬性的規則運算式 |
+| 忽略的Mixin節點型別 | `cq.wcm.msm.action.ignoredMixin` | 符合要從同步化動作中排除之mixin節點型別名稱的規則運算式(僅適用於 `contentUpdate` 動作) |
 
-#### CQ MSM內容更新動作 — 排除 {#cq-msm-content-update-action-exclusions}
+#### CQ MSM內容更新動作 — 排除專案 {#cq-msm-content-update-action-exclusions}
 
 預設會排除數個屬性和節點型別，這些屬性和節點型別會在的OSGi設定中定義 **CQ MSM內容更新動作**，下 **排除的頁面屬性**.
 
-依預設，轉出時會排除符合下列規則運算式的屬性（亦即，不會更新）：
+依預設，轉出時會排除符合下列規則運算式的屬性（也就是說，不會更新）：
 
 ![即時副本排除規則運算式](../assets/live-copy-exclude.png)
 
 您可以視需要變更定義排除清單的運算式。
 
-例如，如果您想要頁面 **標題** 若要包含在要轉出的變更中，請移除 `jcr:title` 從排除專案。 例如，使用規則運算式：
+例如，如果您想要頁面 **標題** 要包含在要轉出的變更中，請移除 `jcr:title` 從排除專案。 例如，使用規則運算式：
 
 `jcr:(?!(title)$).*`
 
-### 設定同步以更新參照 {#configuring-synchronization-for-updating-references}
+### 配置同步以更新參照 {#configuring-synchronization-for-updating-references}
 
-您可以設定多個OSGi服務，以支援與更新參考相關的對應同步化動作。
+您可以設定數個OSGi服務，以支援與更新參考相關的對應同步化動作。
 
 使用AEM時，有數種方法可管理此類服務的組態設定。 另請參閱 [設定OSGi](/help/implementing/deploying/configuring-osgi.md) 以取得詳細資訊和建議作法。
 
@@ -143,34 +140,34 @@ The new rollout configuration is then available to you when configuring rollout 
 
 | Web主控台屬性 | OSGi屬性 | 說明 |
 |---|---|---|
-| 更新巢狀即時副本間的引用 | `cq.wcm.msm.impl.action.referencesupdate.prop_updateNested` | 在Web主控台中選取此選項，或將此布林值屬性設為 `true` 使用存放庫設定來取代以位於最上層即時副本分支內的任何資源為目標的參考。 僅適用於 `referencesUpdate` 動作。 |
+| 更新巢狀即時副本間的參考 | `cq.wcm.msm.impl.action.referencesupdate.prop_updateNested` | 在Web主控台中選取此選項，或將此布林值屬性設為 `true` 使用存放庫設定來取代將目標設定為位於最上層即時副本分支內任何資源的參考。 僅適用於 `referencesUpdate` 動作。 |
 | 更新引用頁面 | `cq.wcm.msm.impl.actions.pagemove.prop_referenceUpdate` | 在Web主控台中選取此選項，或將此布林值屬性設為 `true` 使用存放庫設定更新任何參照，以使用原始頁面來參照即時副本頁面。 僅適用於 `PageMoveAction`. |
 
 ## 指定要使用的轉出設定 {#specifying-the-rollout-configurations-to-use}
 
-MSM可讓您指定一般使用的轉出設定集，並視需要針對特定即時副本覆寫這些設定。 MSM提供數個位置來指定要使用的轉出設定。 位置會決定設定是否套用至特定的即時副本。
+MSM可讓您指定一般使用的轉出設定集，並視需要覆寫特定即時副本的轉出設定。 MSM提供數個位置來指定要使用的轉出設定。 位置會決定是否將設定套用至特定的即時副本。
 
-下列您可指定要使用的轉出設定的位置清單，說明MSM如何決定要用於Live Copy的轉出設定：
+以下列出您可指定要使用的轉出設定的位置，說明MSM如何決定要用於Live Copy的轉出設定：
 
 * **[即時副本頁面屬性](live-copy-sync-config.md#setting-the-rollout-configurations-for-a-live-copy-page)：** 當即時副本頁面設定為使用一個或多個轉出設定時，MSM會使用這些轉出設定。
 * **[Blueprint頁面屬性](live-copy-sync-config.md#setting-the-rollout-configuration-for-a-blueprint-page)：** 當即時副本以Blueprint為基礎，且即時副本頁面未設定轉出設定時，將使用與Blueprint來源頁面關聯的轉出設定。
-* **即時副本父頁面屬性：** 當即時副本頁面和Blueprint來源頁面均未設定轉出設定時，將使用套用至即時副本頁面父頁面的轉出設定。
-* **[系統預設值](live-copy-sync-config.md#setting-the-system-default-rollout-configuration)：** 當無法判斷即時副本上層頁面的轉出設定時，會使用系統預設轉出設定。
+* **即時副本父頁面屬性：** 當即時副本頁面和Blueprint來源頁面均未設定轉出設定時，將會使用套用至即時副本頁面父頁面的轉出設定。
+* **[系統預設值](live-copy-sync-config.md#setting-the-system-default-rollout-configuration)：** 當無法判斷即時副本上層頁面的轉出設定時，將會使用系統預設轉出設定。
 
-例如，藍圖使用 [wknd教學課程](/help/implementing/developing/introduction/develop-wknd-tutorial.md) 網站作為來源內容。 從Blueprint建立網站。 下列清單中的每個專案都說明關於轉出設定的使用不同情境：
+例如，藍圖使用 [wknd教學課程](/help/implementing/developing/introduction/develop-wknd-tutorial.md) 網站作為來源內容。 從Blueprint建立網站。 下列清單中的每個專案都說明有關轉出設定的使用不同情境：
 
-* 所有Blueprint頁面或即時副本頁面均未設定為使用轉出設定。 MSM會對所有即時副本頁面使用系統預設轉出設定。
-* WKND網站的根頁面已設定好數個轉出設定。 MSM會對所有即時副本頁面使用這些轉出設定。
-* WKND網站的根頁面設定了數個轉出設定，而即時副本網站的根頁面設定了不同的轉出設定。 MSM會使用在即時副本網站的根頁面上設定的轉出設定。
+* 所有Blueprint頁面或即時副本頁面都未設定為使用轉出設定。 MSM會針對所有即時副本頁面使用系統預設轉出設定。
+* WKND網站的根頁面已設定數個轉出設定。 MSM會對所有即時副本頁面使用這些轉出設定。
+* WKND網站的根頁面設定了數個轉出設定，而即時副本網站的根頁面則設定了不同的轉出設定。 MSM會使用在即時副本網站的根頁面上設定的轉出設定。
 
 ### 設定即時副本頁面的轉出設定 {#setting-the-rollout-configurations-for-a-live-copy-page}
 
-使用轉出設定來設定即時副本頁面，以便在來源頁面轉出時使用。 子頁面預設會繼承設定。 當您設定要使用的轉出設定時，將會覆寫即時副本頁面從其父頁面繼承的設定。
+使用要在來源頁面轉出時使用的轉出設定來設定即時副本頁面。 子頁面預設會繼承設定。 當您設定要使用的轉出設定時，將會覆寫即時副本頁面從其父項繼承的設定。
 
-您也可以在下列情況下，為即時副本頁面設定轉出設定 [建立即時副本](creating-live-copies.md#creating-a-live-copy-of-a-page).
+您也可以在以下情況下為即時副本頁面設定轉出設定 [建立即時副本](creating-live-copies.md#creating-a-live-copy-of-a-page).
 
 1. 使用 **網站** 控制檯以選取即時副本頁面。
-1. 選取 **屬性** （從工具列）。
+1. 選取 **屬性** 工具列中的。
 1. 開啟 **即時副本** 標籤。
 
    此 **設定** 區段會顯示頁面繼承的轉出設定。
@@ -194,20 +191,20 @@ MSM可讓您指定一般使用的轉出設定集，並視需要針對特定即�
 請注意，Blueprint頁面的子頁面會繼承設定。 當您設定要使用的轉出設定時，可能會覆寫頁面從其父項繼承的設定。
 
 1. 使用 **網站** 控制檯以選取Blueprint的根頁面。
-1. 選取 **屬性** （從工具列）。
+1. 選取 **屬性** 工具列中的。
 1. 開啟 **Blueprint** 標籤。
-1. 選取一或多個 **轉出設定** 使用下拉式選擇器。
+1. 選取一或多個 **轉出設定** 使用下拉式選取器。
 1. 儲存您的更新，透過 **儲存**.
 
 ### 設定系統預設轉出設定 {#setting-the-system-default-rollout-configuration}
 
-若要指定轉出設定作為系統預設值，請設定下列OSGi服務。
+若要指定轉出設定做為系統預設值，請設定下列OSGi服務。
 
-* **Day CQ WCM即時關係管理員** 使用服務PID `com.day.cq.wcm.msm.impl.LiveRelationshipManagerImpl`
+* **Day CQ WCM Live Relationship Manager** 使用服務PID `com.day.cq.wcm.msm.impl.LiveRelationshipManagerImpl`
 
 使用下列任一專案設定服務： [網頁主控台](/help/implementing/deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) 或 [存放庫節點](/help/implementing/deploying/configuring-osgi.md#osgi-configuration-in-the-repository).
 
 * 在Web主控台中，要設定的屬性名稱為 **預設轉出設定**.
 * 使用存放庫節點，要設定的屬性名稱是 `liverelationshipmgr.relationsconfig.default`.
 
-將此屬性值設定為轉出設定的路徑，以作為系統預設值。 預設值為 `/libs/msm/wcm/rolloutconfigs/default`，也就是 **標準轉出設定**.
+將此屬性值設為轉出設定的路徑，以作為系統預設值。 預設值為 `/libs/msm/wcm/rolloutconfigs/default`，也就是 **標準轉出設定**.

@@ -8,10 +8,10 @@ user-guide-description: 了解 Experience Manager as a Cloud Service 的運作�
 breadcrumb-title: 使用手冊
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 4f2a51502202fba3792cde370180d127f8e17418
+source-git-commit: 0183e14ad1653e98c06b19ea36c7e97dedccdb84
 workflow-type: tm+mt
-source-wordcount: '4222'
-ht-degree: 99%
+source-wordcount: '4236'
+ht-degree: 98%
 
 ---
 
@@ -963,6 +963,11 @@ ht-degree: 99%
       + [設定 RTF 編輯器](/help/implementing/developing/extending/rich-text-editor.md)
       + [設定 RTE 外掛程式](/help/implementing/developing/extending/configure-rich-text-editor-plug-ins.md)
       + [設定 RTE 以建立可存取的網站](/help/implementing/developing/extending/rte-accessible-content.md)
+      + [擴充頁面製作](/help/implementing/developing/extending/page-authoring.md)
+      + [擴充主控台](/help/implementing/developing/extending/consoles.md)
+      + [擴充頁面屬性](/help/implementing/developing/extending/page-properties.md)
+      + [擴充大量編輯器](/help/implementing/developing/extending/bulk-editor.md)
+      + [擴充MSM](/help/implementing/developing/extending/msm.md)
    + 部署至 AEM as a Cloud Service {#deploying}
       + [部署至 AEM as a Cloud Service ](/help/implementing/deploying/overview.md)
       + [AEM 版本更新](/help/implementing/deploying/aem-version-updates.md)
