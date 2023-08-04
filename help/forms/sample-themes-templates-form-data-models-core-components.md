@@ -7,17 +7,17 @@ role: Admin, User
 hide: true
 hidefromtoc: true
 level: Intermediate
-source-git-commit: 2739b89da945cb96b35bfd33e683b5b5e98490d0
+source-git-commit: 2b290be134be05bc15891082e8b54efef62076d0
 workflow-type: tm+mt
-source-wordcount: '1210'
-ht-degree: 2%
+source-wordcount: '1277'
+ht-degree: 3%
 
 ---
 
 
 # 核心元件中的範例主題、範本和表單資料模型 {#sample-themes-templates-and-data-models}
 
-AEM Forms核心元件提供範例參考主題、範本和表單資料模型，可幫助您使用核心元件快速開始建立最適化Forms。 您可以 [啟用最適化Forms核心元件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/enable-adaptive-forms-core-components.html) 在AEM Formsas a Cloud Service和本機開發環境中，取得範例OOTB範本並 [使用和自訂範例主題](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components.html) 在 [!DNL AEM Forms].
+[!DNL AEM Forms] 核心元件提供立即可用的範例主題、範本和表單資料模型，以便快速建立多樣化的調適型表單。 這也有助於讓作者瞭解的擴充性、適應性和回應能力 [AEM Forms核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) 能夠快速建立簡易的表單，並輕鬆建立複雜的表單，同時與資料庫緊密連線。
 
 參考內容套件中包含的範例主題、範本和表單資料模型包括：
 
@@ -39,7 +39,13 @@ AEM Forms核心元件提供範例參考主題、範本和表單資料模型，�
 
 ## 範例主題 {#Sample-Themes}
 
-參考範例主題可協助作者定義及自訂表單的樣式，即使具備CSS基本知識的作者也可以視需要自訂主題。 表單作者 [啟用最適化Forms核心元件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/enable-adaptive-forms-core-components.html) 在AEM Formsas a Cloud Service和本機開發環境中，以取得這些主題的說明，如下所示：
+參考範例主題可協助作者定義及自訂表單的樣式，即使具備CSS基本知識的作者也可以視需要自訂主題。
+
+**如何取得這些主題？**
+* 若要開啟這些主題 **Formsas a Cloud Service** 環境， [啟用最適化Forms核心元件](https://experienceleague.corp.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/enable-adaptive-forms-core-components.html) 並使用 [前端管道](https://experienceleague.corp.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components.html) 以部署這些主題。
+* 若要將這些主題放在 **AEM 6.5 Forms** 環境， [啟用最適化Forms核心元件](https://experienceleague.corp.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components.html) 並使用 [封裝管理員](https://experienceleague.corp.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/create-or-customize-themes-for-adaptive-forms-core-components) 以部署這些主題。
+
+此 **立即可用** [最適化表單核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) 主題說明如下：
 
 ![OOTB主題](assets/OOTB-themes.png)
 
@@ -51,7 +57,7 @@ AEM Forms核心元件提供範例參考主題、範本和表單資料模型，�
 
 ### WKND {#WKND}
 
-WKND主題包含生動、富有想象力且吸引人的設計，以展現您表單的時尚外觀。 主題是根據 [WKND網站](https://wknd.site/us/en.html) 這是一個旅遊和冒險網站，建立在 [Adobe Experience Manager核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction).
+WKND主題包含生動、富有想象力且吸引人的設計，以展現您表單的時尚外觀。 主題是根據 [WKND網站](https://wknd.site/us/en.html) 這是一個旅遊和冒險網站，建立在 [Adobe Experience Manager核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html).
 
 ![WKND主題](assets/Safety-Inspection-Form-Theme.png)
 
@@ -64,7 +70,12 @@ WKND主題包含生動、富有想象力且吸引人的設計，以展現您表�
 
 ## 範例範本 {#Sample-templates}
 
-範本會定義要在您的表單中復寫的初始表單結構、內容和動作，或是使用與您的表單類似的範本結構，例如，同意表單、權益登錄檔單等等。 您可以透過以下方式取得下列範本 [啟用最適化Forms核心元件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/enable-adaptive-forms-core-components.html) 在AEM Formsas a Cloud Service或本機開發環境中。 最適化Forms核心元件中的範本包括：
+範本會定義要在您的表單中復寫的初始表單結構、內容和動作，或是使用與您的表單類似的範本結構，例如，同意表單、權益登錄檔單等等。
+
+**如何取得這些範本？**
+您可以部署 [以AEM Archetype 43或更新版本為基礎的專案](https://github.com/adobe/aem-project-archetype) 至您的 **AEM Formsas a Cloud Service** 或 **AEM 6.5** Forms環境。
+
+此 **立即可用** [最適化表單核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) 範本的說明如下：
 
 ![參考範本](assets/reference-templates-core-components.png)
 
@@ -82,7 +93,7 @@ WKND主題包含生動、富有想象力且吸引人的設計，以展現您表�
 
 ### 聯絡我們 {#Contact-Us}
 
-聯絡我們表單範本是用來建立表單，以促進網站訪客與管理員之間的通訊。 使用者可以透過表單提交查詢、意見回饋或支援請求。
+聯絡我們表單範本是用來建立表單，以促進網站訪客與表單管理員之間的通訊。 使用者可以透過表單提交查詢、意見回饋或支援請求。
 
 ![聯絡我們範本](assets/Contact-us-desktop-view.png)
 
@@ -100,7 +111,7 @@ WKND主題包含生動、富有想象力且吸引人的設計，以展現您表�
 
 ### 記錄服務要求 {#Log-Service-Request}
 
-記錄服務請求範本可協助建立向服務提供者要求特定記錄服務的表單。 此表單可作為正式請求，用於建立記錄特定事件、活動或資料以供監控或追蹤狀態的票證。
+記錄服務要求範本可協助建立向服務提供者要求記錄特定記錄服務的表單。 表單可作為正式請求，針對記錄以監控或追蹤狀態的事件、活動或資料建立票證。
 
 ![記錄服務請求範本](assets/Log-service-request-desktop-view.png)
 
@@ -152,7 +163,7 @@ Request for account statement template可協助建立表單，以啟動取得準
 
 ## 參考表單資料模型 {#reference-models}
 
-在您建立 [最適化表單](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en#adaptive-forms-core-components) 根據 [核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en#adaptive-forms-core-components)，您可以將表單與資料庫Microsoft®Dynamics 365和Salesforce伺服器連線，以啟用業務工作流程。 例如：
+在您建立 [最適化表單](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html#adaptive-forms-core-components) 根據 [核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction#adaptive-forms-core-components)，您可以將表單與資料庫Microsoft®Dynamics 365和Salesforce伺服器連線，以啟用業務工作流程。 例如：
 
 * 在Microsoft® Dynamics 365和Salesforce中寫入資料於最適化表單提交時。
 * 透過「表單資料模型」中定義的自訂實體在Microsoft®Dynamics 365和Salesforce中寫入資料，反之亦然。
@@ -164,4 +175,4 @@ Request for account statement template可協助建立表單，以啟動取得準
 * Microsoft® Dynamics 365
 * Salesforce
 
-如需使用這些模型的詳細資訊，請參閱 [設定Microsoft® Dynamics 365和Salesforce雲端服務](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-msdynamics-salesforce.html?lang=en#configure-dynamics-cloud-service)
+如需使用這些模型的詳細資訊，請參閱 [設定Microsoft® Dynamics 365和Salesforce雲端服務](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-msdynamics-salesforce.html#configure-dynamics-cloud-service)
