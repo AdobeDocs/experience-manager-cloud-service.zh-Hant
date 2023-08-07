@@ -1,15 +1,20 @@
 ---
 title: 內建 [!DNL AEM Forms] as a Cloud Service群組
-description: 現成可用的使用者群組清單，以及指派給每個群組的許可權
+description: 現成可用的使用者群組清單以及指派給每個群組的許可權
 exl-id: bd66ce92-14d9-47fe-b5d3-022e3e468d25
-source-git-commit: 8ac35abd1335b4e31a6dc0d8812cc9df333e69a4
+source-git-commit: 57acac078805bc195cb10c1e94462d5aa077b1af
 workflow-type: tm+mt
-source-wordcount: '155'
-ht-degree: 9%
+source-wordcount: '175'
+ht-degree: 22%
 
 ---
 
 # 群組與權限 {#aem-forms-on-osgi-groups-and-privileges}
+
+| 版本 | 文章連結 |
+| -------- | ---------------------------- |
+| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/manage-administer-aem-forms/forms-groups-privileges-tasks.html) |
+| AEM as a Cloud Service  | 本文章 |
 
 您可以 [建立群組](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html#accessing) 並指派原則和 [使用者](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html#accessing) 至群組。 這些原則可控制屬於群組之使用者的許可權。
 
@@ -25,7 +30,7 @@ ht-degree: 9%
    <td>[!DNL forms-users] <sup>[1]</sup></td> 
    <td>
     <ul> 
-     <li>建立、預覽、發佈和提交最適化Forms</li> 
+     <li>建立、預覽、發佈及提交最適化Forms</li> 
     <!-- <li>Create, preview, and publish interactive communications and document fragments</li> -->
      <li>將資產上傳至AEM執行個體</li> 
      <li>建立主題</li> 
@@ -103,11 +108,11 @@ ht-degree: 9%
 
 ## 另請參閱
 
-* [加入Cloud Service環境](/help/forms/setup-forms-cloud-service.md)
+* [Cloud Service 環境上線](/help/forms/setup-forms-cloud-service.md)
 * [設定本機開發環境](/help/forms/setup-local-development-environment.md)
-* [從AEM 6.5 Forms移轉至Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
+* [從 AEM 6.5 Forms 移轉到 Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
 * [建立獨立的最適化表單](/help/forms/creating-adaptive-form-core-components.md)
-* [新增最適化表單至AEM Sites頁面](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+* [將最適化表單新增至AEM Sites頁面](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
 
 
 
