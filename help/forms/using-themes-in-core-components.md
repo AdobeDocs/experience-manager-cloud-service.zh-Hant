@@ -4,9 +4,9 @@ description: 您可以使用主題來風格化最適化表單，並使用核心�
 seo-description: You can create a new theme by customizing the available theme. The themes are customized and deployed using frontend pipeline.
 keywords: 建立新主題、自訂主題、上傳新主題、在表單中使用主題、使用前端管道自訂主題
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: 1cec6e01e72cb286949f64749e2386a2b652920e
+source-git-commit: fc0ff8cff8c616bc5576d834883aa0fe38ef593e
 workflow-type: tm+mt
-source-wordcount: '2697'
+source-wordcount: '2711'
 ht-degree: 4%
 
 ---
@@ -58,7 +58,7 @@ Forms如Cloud Service所提供，以下是核心元件型最適化Forms的主題
 
 自訂主題是指修改及個人化主題外觀的程式。 自訂主題時，您可以變更其設計元素、版面、顏色、印刷樣式，有時也會變更基礎程式碼。 它可讓您為網站或應用程式建立獨一無二的量身打造外觀，同時維持主題提供的基本結構和功能。
 
-### 必備條件 {#prerequisites-to-customize}
+### 先決條件 {#prerequisites-to-customize}
 
 * 熟悉 [在Cloud Manager中設定管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#setup-pipeline) 並且擁有有關如何設定管道的基本知識，可幫助您有效地管理和部署您的主題自訂。
 * 瞭解如何 [設定具有貢獻者角色的使用者](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem.html). 瞭解如何使用貢獻者角色設定使用者，可讓您授與佈景主題自訂的必要許可權。
@@ -417,6 +417,7 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 * [設定不同熒幕大小和裝置型別的表單版面](/help/sites-cloud/authoring/features/responsive-layout.md)
 * [產生最適化Forms的記錄檔案（核心元件）](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
 * [建立具有可重複區段的最適化Forms](/help/forms/create-forms-repeatable-sections.md)
+* [範例主題範本和表單資料模型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)
 
 
 ## 相關文章 {#related-article}
