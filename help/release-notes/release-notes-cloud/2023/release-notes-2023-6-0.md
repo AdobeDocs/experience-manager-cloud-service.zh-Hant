@@ -2,9 +2,9 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2023.6.0 版發行說明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2023.6.0 版發行說明。'
 source-git-commit: 2d10d03e478bff5a162c620c41ceac38a6d7911a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1409'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -39,7 +39,7 @@ ht-degree: 97%
 
 * 內容片段及其參考資料現在可以發佈到 [AEM 預覽服務](/help/implementing/cloud-manager/manage-environments.md#access-preview-service) (使用[內容片段主控台](/help/sites-cloud/administering/content-fragments/content-fragments-console.md))，讓使用者在上線前可在分離的預覽應用程式上先預覽最終體驗。
 
-![在內容片段控制檯中預覽](/help/assets/content-fragments-console-preview.png)
+![在內容片段主控台中的預覽](/help/assets/content-fragments-console-preview.png)
 
 * 現在可以使用 AEM GraphQL 在 Headless 情境下，動態最佳化影像以進行 Web 傳遞。[查詢變數](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/images.html?lang=zh-Hant#query-variables)可以在 GraphQL 查詢中定義，以允許分離的用戶端應用程式相應地要求 AEM 中的最佳化影像。
 * 現在可以使用 AEM GraphQL 內容傳遞 API 將[內容片段變化](https://experienceleague.adobe.com/docs/experience-manager-65/assets/content-fragments/content-fragments-variations.html?lang=zh-Hant)上的標記輸出至 JSON。
@@ -132,7 +132,7 @@ Experience Manager Assets 現在使您能夠透過搜尋結果使用者介面執
 
 * [表單資料模型的增強型驗證方法](/help/forms/configure-data-sources.md)：導入以用戶端憑證為基礎的驗證機制將 AEM Forms 與相容的資料來源相連接，體驗更高的安全性。使用此增強功能就不需要模擬或使用者登入，從而強化對資料的保護。
 
-* [具有可重複區段的調適Forms](/help/forms/create-forms-repeatable-sections.md)：您現在可以製作 [摺疊面板](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html)， [精靈](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html)， [面板](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html)、和 [水準索引標籤](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html) 根據核心元件的最適化表單中的元件，以建立可重複的區段。
+* [具有可重複區段的最適化表單](/help/forms/create-forms-repeatable-sections.md)：您現在可在以核心元件為主的最適化表單中製作[折疊式](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html)、[精靈](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html)、[面板](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html)和[水平索引標籤](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html)，藉此建立可重複區段。
 
   >[!VIDEO](https://video.tv.adobe.com/v/3421052/adaptive-forms-repeatable-sections-repeat-sections/?quality=12&learn=on)
 
@@ -153,7 +153,7 @@ Experience Manager Assets 現在使您能夠透過搜尋結果使用者介面執
 
 ## 維護版本發行說明 {#maintenance}
 
-您可以在[此處](/help/release-notes/maintenance/latest.md)找到最新的維護版本發行說明。
+您可以在[這裡](/help/release-notes/maintenance/latest.md)找到最新的維護版本發行說明。
 
 ## Cloud Manager {#cloud-manager}
 
@@ -161,4 +161,4 @@ Experience Manager Assets 現在使您能夠透過搜尋結果使用者介面執
 
 ## 移轉工具 {#migration-tools}
 
-您可以在[此處](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)找到移轉工具版本的完整清單。
+您可以在[這裡](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)找到移轉工具版本的完整清單。
