@@ -3,9 +3,9 @@ title: AEM 版本更新
 description: 瞭解AEMas a Cloud Service如何使用持續整合和傳遞(CI/CD)，將您的專案保持在最新版本。
 feature: Deploying
 exl-id: 36989913-69db-4f4d-8302-57c60f387d3d
-source-git-commit: 635b4adeab8d93b7c7335453b04d8b78ef3a0496
+source-git-commit: ca91e969014415e872ecf8e42fe86ffc9ca41e10
 workflow-type: tm+mt
-source-wordcount: '800'
+source-wordcount: '801'
 ht-degree: 9%
 
 ---
@@ -19,9 +19,7 @@ ht-degree: 9%
 
 AEMas a Cloud Service使用持續整合和持續傳遞(CI/CD)，以確保您的專案使用最新的AEM版本。 此程式可順暢地更新您的生產、測試和開發執行個體，而不會對使用者造成任何中斷。
 
-在執行個體自動更新之前，新的AEM維護版本會提前3-5天發佈。 在此期間，您可以選擇透過
-[觸發開發執行個體的手動更新](/help/implementing/cloud-manager/manage-environments.md#updating-dev-environment).
-這次過後，版本更新會先自動套用至您的開發環境。 如果更新成功，則更新流程會繼續進行您的中繼和生產執行個體。 開發和測試執行個體可作為自動化品質閘道，在生產環境套用更新之前，您可在其中執行自訂編寫的測試。
+在執行個體自動更新之前，新的AEM維護版本會提前3-5天發佈。 在此期間，您可以選擇透過 [觸發開發執行個體的手動更新](/help/implementing/cloud-manager/manage-environments.md#updating-dev-environment)在這段時間過後，版本更新會先自動套用至您的開發環境。 如果更新成功，則更新流程會繼續進行您的中繼和生產執行個體。 開發和測試執行個體可作為自動化品質閘道，在生產環境套用更新之前，您可在其中執行自訂編寫的測試。
 
 >[!NOTE]
 >
@@ -44,13 +42,9 @@ AEM 版本更新有兩種類型：
 
 ## 更新失敗 {#update-failure}
 
-AEM更新會通過密集且完全自動化的產品驗證管道，涉及多個步驟，確保生產中的任何系統不會中斷服務。
-健康狀態檢查是用來監視應用程式的健康狀態。
-如果這些檢查在AEMas a Cloud Service更新期間失敗，則發行將不會繼續，並且Adobe將會調查更新導致這種意外行為的原因。
+AEM更新會通過密集且完全自動化的產品驗證管道，涉及多個步驟，確保生產中的任何系統不會中斷服務。 健康狀態檢查是用來監視應用程式的健康狀態。 如果這些檢查在AEMas a Cloud Service更新期間失敗，則發行將不會繼續，並且Adobe將會調查更新導致這種意外行為的原因。
 
-當您在環境中部署新版本的自訂程式碼時，
-[產品和自訂功能測試](/help/implementing/cloud-manager/overview-test-results.md#functional-testing)
-在確保生產系統在套用變更後仍保持穩定且運作上扮演關鍵角色。 這些測試也會在AEM版本更新程式中運用。
+當您在環境中部署新版本的自訂程式碼時， [產品和自訂功能測試](/help/implementing/cloud-manager/overview-test-results.md#functional-testing) 在確保生產系統在套用變更後仍保持穩定且運作上扮演關鍵角色。 這些測試也會在AEM版本更新程式中運用。
 
 如果生產環境更新失敗，Cloud Manager 會自動復原中繼環境。這會自動完成，以確保在更新完成後，測試環境和生產環境都會使用相同的AEM版本。
 同樣地，如果開發環境的自動更新失敗，則不會更新中繼和生產環境。
