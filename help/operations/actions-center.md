@@ -3,9 +3,9 @@ title: 行動中心
 description: 利用行動中心可輕鬆對事件和其他重要資訊採取行動
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
 source-git-commit: 4adae6ffe45dcd2b80d7d199fc29a806ce5e78c4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '727'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -35,7 +35,7 @@ AEM as Cloud Service 在發生需要立即採取行動的嚴重事件時會傳�
 
 ## 詳細的使用者流程 {#detailed-user-flow}
 
-按一下電子郵件會將您帶往行動中心，顯示您按一下的通知內容的快顯視窗會隨即出現，在某些情況下，還會顯示說明如何採取糾正措施的其他資訊連結。您也可以直接在下列位置存取「動作中心」： [https://experience.adobe.com/aem/actions-center](https://experience.adobe.com/aem/actions-center/)，您可在此選取相關的方案和環境。
+按一下電子郵件會將您帶往行動中心，顯示您按一下的通知內容的快顯視窗會隨即出現，在某些情況下，還會顯示說明如何採取糾正措施的其他資訊連結。您還可以直接存取行動中心：[https://experience.adobe.com/aem/actions-center](https://experience.adobe.com/aem/actions-center/)；您可以在行動中心選取相關的計畫和環境。
 
 ![事件詳細資料](/help/operations/assets/incident-details.png)
 
@@ -67,7 +67,7 @@ AEM as a Cloud Service 有多種類型的通知，但只有一部分出現在行
 
 ## 支援的通知類型 {#supported-notification-types}
 
-下表列有行動中心目前支援的通知類型。通知目前僅限於生產環境。
+下表列有行動中心目前支援的通知類型。目前僅限於生產環境可使用通知。
 
 | 通知類型 | 相關產品簡介 | 糾正措施 |
 |---|---|---|
