@@ -6,7 +6,7 @@ exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
 source-git-commit: 2721cb20083eeda7546513817f1ddfe12e9cb43a
 workflow-type: tm+mt
 source-wordcount: '265'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -30,8 +30,8 @@ AEM as a Cloud Service 中的 Cloud Manager 2023.7.0 版發行日期為 2023 年
    * 這部分將分階段推出。
 * [取消執行時，](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#view-details)管道執行核准步驟現在會要求使用者提供取消原因。
    * 這部分將分階段推出。
-* 使用者現在可以存取 [複製內容程式的記錄檔。](/help/implementing/developing/tools/content-copy.md#accessing-logs)
-   * 只有在來源和目的地環境皆為AEM版本時，才能使用此選項 `2023.7.12549` 或更高。
+* 使用者現在即可存取[複製內容流程中的紀錄。](/help/implementing/developing/tools/content-copy.md#accessing-logs)
+   * 只有在來源環境和目的地環境都採用 AEM `2023.7.12549` 或更高版本時，才可使用此選項。
 
 ## 錯誤修正 {#bug-fixes}
 

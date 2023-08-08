@@ -6,7 +6,7 @@ exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 source-git-commit: 5995c416328e6f340285004ec2e723cc9279dabd
 workflow-type: tm+mt
 source-wordcount: '935'
-ht-degree: 47%
+ht-degree: 100%
 
 ---
 
@@ -26,11 +26,11 @@ ht-degree: 47%
 
 ## 發行日期 {#release-date}
 
-的發行日期 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 目前功能版本(2023.7.0)為2023年7月27日。 下一個功能版本(2023.8.0)計畫於2023年8月31日發行。
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 最新功能版本 (2023.7.0) 的發行日期為 2023 年 7 月 27 日。下一個功能版本 (2023.8.0) 計畫於 2023 年 8 月 31 日發行。
 
 ## 發行影片 {#release-video}
 
-請觀看2023年7月版本概觀影片，瞭解2023.7.0版本新增功能摘要：
+請觀看 2023 年 7 月版本概觀影片，了解 2023.7.0 版本新增功能的摘要：
 
 >[!VIDEO](https://video.tv.adobe.com/v/3422016/?quality=12)
 
@@ -38,13 +38,13 @@ ht-degree: 47%
 
 ### [!DNL Experience Manager Sites] 中的新功能 {#sites-features}
 
-* 內容片段的MSM。 AEM Multisite Manager現在可用於內容片段，允許建立內容片段即時副本以進行大量內容發佈。 精細繼承控制項可向下提供至內容片段元素和變數層級。
+* 內容片段的 MSM。AEM Multisite Manager 現在可用於內容片段，以便建立用於批次內容發佈的內容片段 Live Copies。精細的傳承控制可細化至內容片段元素和變體層級。
 
 ### [!DNL Experience Manager Sites] 發行前版本的新功能 {#prerelease-sites}
 
-* 此 [內容片段主控台](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=zh-Hant) 現在可讓使用者檢視標籤，並按套用為內容片段中繼資料的標籤進行搜尋。 使用者無需再切換至Assets UI即可使用此功能，減少內容切換並提高效率。
+* [內容片段主控台](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=zh-Hant)現在可讓使用者檢視標記，並依據作為中繼資料套用於內容片段的標記進行搜尋。使用者即不必再為了此功能而切換到資產 UI，減少了內容切換並提高了效率。
 
-![在內容片段控制檯中標籤](/help/assets/content-fragments-console-tags.png)
+![在內容片段主控台中進行標記](/help/assets/content-fragments-console-tags.png)
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -79,18 +79,18 @@ Assets Essentials 現在會根據相關性 (依預設) 為搜尋結果進行排�
 
 ### [!DNL Forms] 中可用的新功能 {#new-features-available-in-forms-channel}
 
-* [**現成主題**](/help/forms/using-themes-in-core-components.md) **和範本**：透過我們現成可用的OOTB主題和範本，啟動您的表單建立流程，量身打造以增強經驗豐富的專業人員和新表單作者的能力。 使用最適化Forms核心元件建立後，透過這些精心策劃的主題和範本，您可以快速建立適用於常見使用案例的表單。
+* [**現成可用的主題**](/help/forms/using-themes-in-core-components.md)**和範本**：使用我們現成的 OOTB 主題和範本啟動您的表單建立流程，這些主題和範本都是專為支援經驗豐富的專業人士和新表單作者量身打造。使用最適化表單元核心元件無縫建置的這些精心策劃的主題和範本，可讓您迅速地開始針對常見使用案例建立表單。
 
   ![現成可用的範本](/help/forms/assets/form-templates-ootb.png)
 
-* **Headless Forms的React元件**：您現在可以使用現成可用的React元件預覽和自訂Headless最適化表單轉譯。 這些元件利用最適化Forms核心元件的BEM類別進行樣式設定，讓您輕鬆根據特定需求自訂其外觀。
+* **Headless 表單的 React 元件**：您現在可以使用現成的 React 元件預覽和自訂 Headless 最適化表單轉譯。這些元件會利用最適化表單核心元件中的 BEM 類別進行樣式設定，使您可輕鬆地根據特定需求自訂其外觀。
 
-* [**使用可重複區段建立最適化Forms**](/help/forms/create-forms-repeatable-sections.md)：您現在可以製作 [摺疊面板](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html)， [精靈](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html)， [面板](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html)、和 [水準索引標籤](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html) 適用於多筆資料記錄擷取的元件式最適化表單。  這些可重複的區段可讓您輕鬆提供多個資料專案。 當無法事先知道需要多少份的資料時，這就非常有用。表單填寫器可輕鬆新增或移除區段，使表單能適應不同的資料輸入情境，並簡化相同資料記錄多次出現次數的收集。
+* [**建立具有可重複區段的最適化表單**](/help/forms/create-forms-repeatable-sections.md)：您現在可製作可重複進行多筆資料紀錄擷取並以[折疊式](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html)、[精靈](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html)、[面板](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html)和[水平索引標籤](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html)元件為主的最適化表單。這些可重複的區段可讓您輕鬆提供多個資料條目。當無法事先知道需要多少份的資料時，這就非常有用。填表人可輕鬆新增或移除區段，使表單可依不同資料輸入情境進行調整，並簡化相同資料紀錄多次出現的收集作業。
 
 
-### 中可用的搶鮮版功能 [!DNL Forms] {#pre-release-features-available-in-forms-channel}
+### [!DNL Forms] 中可用的搶鮮版功能 {#pre-release-features-available-in-forms-channel}
 
-* [**Google reCAPTCHA企業支援**](/help/forms/captcha-adaptive-forms.md)：在最適化表單中使用Google reCAPTCHA Enterprise，針對詐騙活動和垃圾郵件提供增強型保護，提供更安全的使用者體驗。 透過進階風險分析及緊密整合，正版使用者可輕鬆提交表單，同時有效封鎖機器人。
+* [**Google reCAPTCHA 企業支援**](/help/forms/captcha-adaptive-forms.md)：以最適化表單使用 Google reCAPTCHA 企業版，以針對詐欺活動和垃圾郵件提供增強的保護，進而提供更安全的使用者體驗。透過進階的風險分析和緊密整合，真實的使用者可輕鬆地提交表單，同時有效地封鎖機器人。
 
   >[!VIDEO](https://video.tv.adobe.com/v/3422097/adaptive-forms-recaptcha-core-components-captcha/?quality=12&learn=on)
 
@@ -109,23 +109,23 @@ Assets Essentials 現在會根據相關性 (依預設) 為搜尋結果進行排�
 
 ### 行動中心 {#actions-center}
 
-訂閱電子郵件通知，在發生需要立即採取行動的嚴重事件時提醒您，並提供個人化建議以最佳化您的網站。 [動作中心](/help/operations/actions-center.md) 可做為中心，讓您檢閱這些警示（例如封鎖的復寫佇列或即將到期的認證），並將它們標示為已解決。
+訂閱電子郵件通知，可在發生需要立即採取行動的重大事件時提醒您，還能提供個人化的建議，讓您的網站發揮最大效益。[行動中心](/help/operations/actions-center.md)可作為提供服務的中心；您可以在此中心檢閱這些提醒內容，例如被封鎖的複寫佇列或即將到期的認證，並將它們標記為已解決。
 
-![動作中心熒幕擷圖](/help/assets/assets/actions-center.png)
+![行動中心螢幕擷圖](/help/assets/assets/actions-center.png)
 
-### CDN和WAF規則早期採用者計畫 {#waf-early-adopter}
+### CDN 和 WAF 規則早期採用者計劃 {#waf-early-adopter}
 
-根據以下條件篩選CDN的流量：
-* 請求標頭和屬性（例如IP位址）
-* 已知與惡意流量相關聯的流量模式
+在 CDN 篩選流量的根據：
+* 要求的標頭和屬性 (例如，IP 位址)
+* 已知和惡意流量相關的流量模式
 
-有興趣試用此功能並分享意見回饋嗎？ 傳送電子郵件至 **aemcs-waf-adopter@adobe.com** 從您的官方電子郵件ID瞭解有關早期採用者計畫的更多資訊。 空間有限。
+有興趣嘗試該功能並分享回饋意見嗎？從您的官方電子郵件 ID 傳送電子郵件到 **aemcs-waf-adopter@adobe.com**，深入了解有關早期採用者計劃的資訊。名額有限。
 
-進一步瞭解文章中的功能 [此處](/help/security/cdn-and-waf-rules.md).
+若要深入了解該功能，請點選[這裡](/help/security/cdn-and-waf-rules.md)參閱文章。
 
 ### 其他基礎變更 {#other-foundation-changes}
 
-* 在8月7日當週，當AEM執行個體的請求超過正常程度時，AEM會傳回錯誤代碼429，而非錯誤代碼503。 [深入了解](/help/implementing/developing/introduction/development-guidelines.md).
+* 在 8 月 7 日這一週，對 AEM 執行個體的要求超出健全值時，AEM 會傳回錯誤代碼 429，而不是錯誤代碼 503。[深入了解](/help/implementing/developing/introduction/development-guidelines.md)。
 
 ## 維護版本發行說明 {#maintenance}
 

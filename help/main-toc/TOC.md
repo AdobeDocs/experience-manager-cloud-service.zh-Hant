@@ -159,7 +159,7 @@ ht-degree: 99%
    + [AEM as a Cloud Service 的 IMS 支援](/help/security/ims-support.md)
    + [AEM as a Cloud Service 的相同網站 Cookie 支援](/help/security/same-site-cookie-support.md)
    + [郵件服務的 OAuth2 支援](/help/security/oauth2-support-for-mail-service.md)
-   + [設定CDN和WAF規則以篩選流量](/help/security/cdn-and-waf-rules.md)
+   + [設定 CDN 和 WAF 規則以篩選流量](/help/security/cdn-and-waf-rules.md)
    + [AEM as a Cloud Service 安全性注意事項](/help/security/security-considerations.md)
 + 上線 {#onboarding}
    + [從這裡開始](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html)
@@ -346,7 +346,7 @@ ht-degree: 99%
          + 多站點管理員 {#msm}
             + [MSM 和 Live Copy 概觀](/help/sites-cloud/administering/msm/overview.md)
             + [設定 Live Copy 同步](/help/sites-cloud/administering/msm/live-copy-sync-config.md)
-            + [建立和同步 Live Copy](/help/sites-cloud/administering/msm/creating-live-copies.md)
+            + [建立和同步 Live Copies](/help/sites-cloud/administering/msm/creating-live-copies.md)
             + [Live Copy 概觀主控台](/help/sites-cloud/administering/msm/live-copy-overview.md)
             + [轉出衝突](/help/sites-cloud/administering/msm/rollout-conflicts.md)
             + [MSM 最佳實務](/help/sites-cloud/administering/msm/best-practices.md)
@@ -369,7 +369,7 @@ ht-degree: 99%
             + [設定翻譯整合框架](/help/sites-cloud/administering/translation/integration-framework.md)
             + [連線到 Microsoft Translator](/help/sites-cloud/administering/translation/connect-ms-translator.md)
             + [翻譯最佳實務](/help/sites-cloud/administering/translation/best-practices.md)
-      + [管理標籤](/help/sites-cloud/administering/tags.md)
+      + [管理標記](/help/sites-cloud/administering/tags.md)
       + [管理工作流程](/help/sites-cloud/administering/workflows-administering.md)
    + 整合 AEM as a Cloud Service {#integrations}
       + [整合 Adobe Analytics](/help/sites-cloud/integrating/integrating-adobe-analytics.md)
@@ -559,7 +559,7 @@ ht-degree: 99%
          + [將資料來源連線到 Cloud Service](/help/forms/data-integration.md)
          + [設定資料來源](/help/forms/configure-data-sources.md)
          + [設定 [!DNL Microsoft Dynamics] OData](/help/forms/ms-dynamics-odata-configuration.md)
-         + [使用OAuth 2.0使用者端認證流程的Salesforce應用程式整合](/help/forms/oauth2-client-credentials-flow-for-server-to-server-integration.md)
+         + [使用 OAuth 2.0 用戶端認證流程的 Salesforce 應用程式整合](/help/forms/oauth2-client-credentials-flow-for-server-to-server-integration.md)
          + [設定 [!DNL Azure] 儲存空間](/help/forms/configure-azure-storage.md)
          + [設定 [!DNL Microsoft Dynamics 365] 和 [!DNL Salesforce] 雲端服務](/help/forms/configure-msdynamics-salesforce.md)
          + [建立表單資料模型](/help/forms/create-form-data-models.md)
