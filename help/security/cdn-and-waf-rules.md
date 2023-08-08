@@ -1,35 +1,35 @@
 ---
-title: 設定CDN和WAF規則以篩選流量
-description: 使用CDN和Web應用程式防火牆規則來篩選惡意流量
+title: 設定 CDN 和 WAF 規則以篩選流量
+description: 使用 CDN 和 Web 應用程式防火牆規則篩選惡意流量
 source-git-commit: a9b8b4d6029d0975428b9cff04dbbec993d56172
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2371'
-ht-degree: 2%
+ht-degree: 100%
 
 ---
 
 
-# 設定CDN和WAF規則以篩選流量 {#configuring-cdn-and-waf-rules-to-filter-traffic}
+# 設定 CDN 和 WAF 規則以篩選流量 {#configuring-cdn-and-waf-rules-to-filter-traffic}
 
 >[!NOTE]
 >
->此功能尚未正式推出。若要加入進行中的早期採用者計畫，請傳送電子郵件至 **aemcs-waf-adopter@adobe.com**，包括貴組織的名稱以及有關您對該功能感興趣的內容。
+>此功能尚未正式推出。若要加入正在進行的早期採用者計劃，請寄送電子郵件至 **aemcs-waf-adopter@adobe.com**，郵件內容包括貴組織的名稱以及您對該功能感興趣的原因。
 
-Adobe會嘗試減少客戶網站受到的攻擊，但主動篩選符合特定模式的請求以讓惡意流量不會到達您的應用程式可能會很有用。 可能的方法包括：
+Adobe 試圖減輕針對客戶網站發動的攻擊，但主動篩選和特定模式相符的要求可能有助於阻擋惡意流量，使其無法接觸您的應用程式。可能的方法包括：
 
-* Apache層模組，例如 `mod_security`
-* 設定透過Cloud Manager的設定管道部署到CDN的規則。
+* Apache 層模組，例如 `mod_security`
+* 透過 Cloud Manager 的設定管道設定部署到 CDN 的規則。
 
-本文會介紹後一種方法，其提供兩種規則類別：
+本文會說明後面一種方法，這會提供兩種類別的規則：
 
-1. **CDN規則**：根據請求屬性和請求標頭（包括IP、路徑和使用者代理）封鎖或允許請求。 這些規則可由所有AEMas a Cloud Service客戶設定
-1. **WAF** （Web應用程式防火牆）規則：封鎖符合已知與惡意流量相關聯的各種模式的請求。 這些規則可由授權WAF附加元件的客戶設定；請聯絡您的Adobe客戶團隊以取得詳細資料。 請注意，在早期採用者計畫期間不需要額外的授權。
+1. **CDN 規則**：會根據要求屬性和要求標頭封鎖或允許要求，包括 IP、路徑和使用者代理程式。所有 AEM as a Cloud Service 客戶都可以設定這類規則
+1. **WAF** (Web 應用程式防火牆) 規則：會封鎖和惡意流量相關的各種已知模式相符的要求。這些規則可由取得 WAF 外掛程式授權的客戶進行設定；如需詳細資料，請和您的 Adob&#x200B;&#x200B;e 帳戶團隊聯絡。請注意，早期採用者計劃期間不需要另外取得授權。
 
-這些規則可部署至開發、測試和生產雲端環境型別，以用於生產（非沙箱）計畫。 未來將提供RDE環境支援。
+可將這些規則部署到開發、中繼和生產的雲端環境類型，適用於生產 (非沙箱) 計畫。未來將提供對 RDE 環境的支援。
 
 ## 設定 {#setup}
 
-1. 首先，在Git中建立以下資料夾和檔案結構頂層資料夾：
+1. 首先，請在 git 中建立以下檔案夾和檔案結構的最高層級檔案夾：
 
    ```
    config/
@@ -38,7 +38,7 @@ Adobe會嘗試減少客戶網站受到的攻擊，但主動篩選符合特定模
            _config.yaml
    ```
 
-1. `_config.yaml` 說明有關設定的部分中繼資料。 「kind」引數應設為「CDN」，而版本應設為「1」的結構描述版本。 請參閱下列程式碼片段：
+1. `_config.yaml` 會說明一些有關設定的中繼資料。「kind」參數應設定為「CDN」，版本則應設定為綱要版本，目前是「1」。請參閱以下片段：
 
    ```
    kind: "CDN"
@@ -47,63 +47,63 @@ Adobe會嘗試減少客戶網站受到的攻擊，但主動篩選符合特定模
 
    <!-- Two properties -- `envType` and `envId` -- may be included to limit the scope of the rules. The envType property may have values "dev", "stage", or "prod", while the envId property is the environment (e.g., "53245"). This approach is useful if it is desired to have a single configuration pipeline, even if some environments have different rules. However, a different approach could be to have multiple configuration pipelines, each pointing to different repositories or git branches. -->
 
-1. `cdn.yaml` 應該包含CDN規則和WAF規則的清單，如下節所述
-1. 為了符合WAF規則，必須在Cloud Manager中啟用WAF，如以下針對新方案和現有方案方案方案情景中所述。 請注意，必須為WAF購買單獨的授權。
+1. `cdn.yaml` 應包括 CDN 規則和 WAF 規則的清單，如以下章節所述
+1. 若要和 WAF 規則相符，必須在 Cloud Manager 中啟用 WAF (如下所述)，對於新的和現有的計劃案例都適用。請注意，必須為 WAF 購買單獨的授權。
 
-   1. 若要在新程式上設定WAF，請核取 **WAF-DDOS保護** 核取方塊 **安全性** 標籤，如下所示。 請依照中所述的步驟繼續操作 [新增生產計畫](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) 以建立您的程式
+   1. 若要對新計畫設定 WAF，請勾選「**WAF-DDOS 防護**」核取方塊 (在&#x200B;**安全性**&#x200B;索引標籤中)，如下所示。繼續依照「[新增生產計劃](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)」中說明的步驟進行，以建立您的計畫
 
-   1. 若要在現有程式上設定WAF，請選取 **編輯計畫** 選項，請依照以下所述步驟操作： [編輯程式](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md) 檔案。 然後，在 **安全性** 標籤中，您可以隨時取消核取或核取WAF-DDOS選項
+   1. 若要對現有計畫設定 WAF，請選取「**編輯計畫**」選項 (依照「[編輯計畫](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)」文件中說明的步驟進行)。接著，在精靈的「**安全性**」索引標籤中，您隨時都可以取消勾選或勾選 WAF-DDOS 選項
 
-1. 對於RDE以外的環境型別，請執行Cloud Manager設定管道，其可如下所述進行設定。
+1. 若為 RDE 以外的環境類型，則請執行 Cloud Manager 設定管道，可以依如下所述進行設定。
 
-   1. 從Cloud Manager首頁的管道卡中，選擇 **新增生產管道** 或 **新增非生產管道** 啟動新增管道精靈
-   1. 選取 **部署管道** 在設定索引標籤中
+   1. 在 Cloud Manager 首頁的管道卡中，選取「**新增生產管道**」或者「**新增非生產管道**」，即可啟動新增管道精靈
+   1. 在設定索引標籤中選取「**部署管道**」
 
       ![選取部署管道選項](/help/security/assets/deployment.png)
 
-   1. 為管道命名，並選取部署觸發程式，然後選取「 」 **繼續**
-   1. 在 **原始碼** 索引標籤，選取 **目標部署**，然後選取 **設定**
+   1. 為您的管道命名並選取部署觸發器，然後選取「**繼續**」
+   1. 在「**原始程式碼**」索引標籤中，選取「**目標性部署**」，然後選取「**設定**」
 
-      ![選取目標部署](/help/security/assets/target-deployment.png)
+      ![選取目標性部署](/help/security/assets/target-deployment.png)
 
-   1. 視需要選取存放庫和分支。 如果所選環境存在設定管道，則此選項會停用。
+   1. 根據需要選取存放庫和分支。如果選取環境中存在設定管道，則此選項會停用。
 
       ![設定管道概觀](/help/security/assets/config-pipeline.png)
 
       >[!NOTE]
       >
-      >每個環境只能設定並執行一個設定管道。
+      >您對每個環境只能設定並執行一個設定管道。
 
-   1. 選取&#x200B;**儲存**。您的新管道將顯示在管道卡中，並可在您準備就緒時執行。
-   1. 對於RDE，將使用命令列，但目前不支援RDE。
+   1. 選取&#x200B;**儲存**。您的新管道即會顯示在管道卡中，並可在您就緒後執行。
+   1. 若為 RDE，會使用命令列，但目前不支援 RDE。
 
 ## 規則語法 {#rules-syntax}
 
-規則的格式如下所述，後面一節中會有一些範例。
+下面會說明規則的格式，後續章節中則會提供一些範例。
 
-| **屬性** | **CDN規則** | **WAF規則** | **類型** | **預設值** | **說明** |
+| **屬性** | **CDN 規則** | **WAF 規則** | **類型** | **預設值** | **說明** |
 |---|---|---|---|---|---|
-| 名稱 | X | X | `string` | - | 規則名稱（64個字元長，只能包含英數字元和 — ） |
-| 當 | X | X | `Condition` | - | 基本結構為：<br><br>`{ <getter>: <value>, <predicate>: <value> }`<br><br>請參閱下方的條件結構語法，其中說明了getter、述詞以及如何組合多個條件。 |
-| 動作 | X | X | `Enum` | 記錄（CDN規則） | 對於CDN規則：允許、封鎖、記錄。 預設為log。<br><br>針對WAF規則： `enableWafRules`， `disableWafRules`，記錄。 無預設值。 |
-| rateLimit | X |   | `RateLimit` | 未定義 | 速率限制設定。 如果未定義，則會停用速率限制。<br><br>下面有更詳細的個別章節說明rateLimit語法以及範例。 |
-| wafRules |   | X | `array[Enum]` | - | 應啟用或停用的WAF規則清單。<br><br>範例包括SQLI和XSS。 如需完整清單，請參閱下方的waf規則清單。 |
+| 名稱 | X | X | `string` | - | 規則名稱 (64 個字元的長度，只能包含英數字元和 -) |
+| 時間 | X | X | `Condition` | - | 基本結構是：<br><br>`{ <getter>: <value>, <predicate>: <value> }`<br><br>請參閱下面的條件結構語法，其中會說明 getter、述詞以及結合多個條件的方式。 |
+| 動作 | X | X | `Enum` | 紀錄 (CDN 規則) | 若為 CDN 規則：允許、封鎖、記錄。預設為記錄。<br><br>若為 WAF 規則：`enableWafRules`、`disableWafRules`、紀錄。無預設值。 |
+| rateLimit | X |   | `RateLimit` | 未定義 | 速率限制設定。若未定義，則停用速率限制。<br><br>以下會有一個單獨的章節說明 rateLimit 語法以及範例。 |
+| wafRules |   | X | `array[Enum]` | - | 應啟用或停用的 WAF 規則清單。<br><br>範例包括 SQLI 和 XSS。 請參閱下面的 waf 規則清單以取得完整清單。 |
 
 ### 條件結構 {#condition-structure}
 
-條件可以是簡單條件或條件群組。
+條件可以是一個簡單的條件，也可以是一個條件群組。
 
 **簡單條件**
 
-簡單條件由getter和述片語成。
+簡單條件由 getter 和述詞組成。
 
 ```
 { <getter>: <value>, <predicate>: <value> }
 ```
 
-**群組狀況**
+**群組條件**
 
-條件群組是由多個簡單和/或群組條件所組成。
+條件群組由多個簡單和/或群組條件組成。
 
 ```
 <allOf|anyOf>:
@@ -115,79 +115,79 @@ Adobe會嘗試減少客戶網站受到的攻擊，但主動篩選符合特定模
 
 | **屬性** | **類型** | **說明** |
 |---|---|---|
-| **allOf** | `array[Condition]` | **和** 作業。 如果所有列出的條件都傳回true，則為true |
-| **anyOf** | `array[Condition]` | **或** 作業。 如果任何列出的條件傳回true，則為true |
+| **allOf** | `array[Condition]` | **和** 作業。如果所有列出的條件都傳回 true，則為 true |
+| **anyOf** | `array[Condition]` | **或** 作業。如果任何列出的條件都傳回 true，則為 true |
 
 **Getter**
 
 | **屬性** | **類型** | **說明** |
 |---|---|---|
-| reqProperty | `string` | 要求屬性。<br><br>其中之一： `path` ， `queryString`， `method`， `tier`， `domain`， `clientIp`， `clientCountry`<br><br>domain屬性是請求主機標頭的小寫轉換。 此變數對於字串比較很有用，因此相符專案不會因為區分大小寫而遺失。<br><br>此 `clientCountry` 使用以下位置顯示的兩個字母代碼： [https://en.wikipedia.org/wiki/Regional_indicator_symbol](https://en.wikipedia.org/wiki/Regional_indicator_symbol) |
-| reqHeader | `string` | 傳回指定名稱的請求標頭 |
-| queryParam | `string` | 傳回指定名稱的查詢引數 |
-| Cookie | `string` | 傳回指定名稱的Cookie |
+| reqProperty | `string` | 要求屬性。<br><br>以下其中之一：`path`、`queryString`、`method`、`tier`、`domain`、`clientIp`、`clientCountry`<br><br>網域屬性是要求的主機標頭的小寫變換。對於字串比較很有用，因此不會因區分大小寫而錯過相符的情況。<br><br>`clientCountry` 會使用顯示在 [https://en.wikipedia.org/wiki/Regional_indicator_symbol](https://en.wikipedia.org/wiki/Regional_indicator_symbol) 的字母代碼 |
+| reqHeader | `string` | 傳回具有指定名稱的要求標頭 |
+| queryParam | `string` | 傳回具有指定名稱的查詢參數 |
+| cookie | `string` | 傳回具有指定名稱的 Cookie |
 
 **述詞**
 
 | **屬性** | **類型** | **說明** |
 |---|---|---|
-| **等於** | `string` | 如果getter結果等於提供的值則為true |
-| **doesNotEqual** | `string` | 如果getter結果不等於提供的值則為true |
-| **讚** | `string` | 如果getter結果符合提供的模式，則為true |
-| **notLike** | `string` | 如果getter結果不符合提供的模式，則為true |
-| **matches** | `string` | 如果getter結果符合提供的regex，則為true |
-| **doesNotMatch** | `string` | 如果getter結果不符合提供的regex，則為true |
-| **中的** | `array[string]` | 如果提供的清單包含getter結果，則為true |
-| **notIn** | `array[string]` | 如果提供的清單不包含getter結果，則為true |
+| **等於** | `string` | 如果 getter 結果等於所提供的值，則為 true |
+| **doesNotEqual** | `string` | 如果 getter 結果不等於所提供的值，則為 true |
+| **like** | `string` | 如果 getter 結果和所提供的模式相符，則為 true |
+| **notLike** | `string` | 如果 getter 結果和所提供的模式不相符，則為 true |
+| **matches** | `string` | 如果 getter 結果和所提供的 regex 相符，則為 true |
+| **doesNotMatch** | `string` | 如果 getter 結果和所提供的 regex 不相符，則為 true |
+| **in** | `array[string]` | 如果所提供的清單包含 getter 結果，則為 true |
+| **notIn** | `array[string]` | 如果所提供的清單不包含 getter 結果，則為 true |
 
-**wafRules清單**
+**wafRules List**
 
-此 `wafRules` 屬性可能包含下列規則：
+`wafRules` 屬性可能包括下列規則：
 
-| **規則ID** | **規則名稱** | **說明** |
+| **規則 ID** | **規則名稱** | **說明** |
 |---|---|---|
-| SQLI | SQL插入 | SQL插入是嘗試透過執行任意資料庫查詢來存取應用程式或取得授權資訊。 |
-| 後門 | 後門 | 後門訊號是嘗試判斷系統上是否存在通用後門檔案的要求。 |
-| CMDEXE | 命令執行 | 命令執行是指透過使用者輸入來嘗試透過任意系統命令取得控制或破壞目標系統。 |
-| XSS | 跨網站指令碼 | 跨網站指令碼是指嘗試透過惡意JavaScript程式碼劫持使用者帳戶或網頁瀏覽工作階段。 |
-| 周遊 | 目錄周遊 | Directory Traversal （目錄周遊）是嘗試在整個系統中瀏覽特殊許可權資料夾，以取得敏感資訊。 |
-| USERAGENT | 攻擊工具 | 「攻擊工具」是指使用自動化軟體來識別安全性弱點，或嘗試利用發現的弱點。 |
-| LOG4J-JNDI | Log4J JNDI | Log4J JNDI攻擊試圖利用 [Log4Shell漏洞](https://en.wikipedia.org/wiki/Log4Shell) 存在於2.16.0之前的Log4J版本中 |
-| AWS SSRF | AWS-SSRF | 伺服器端請求偽造(SSRF)是嘗試將網頁應用程式提出的請求傳送至目標內部系統的請求。 AWS SSRF攻擊會使用SSRF來取得Amazon Web Services (AWS)金鑰，以及存取S3貯體及其資料。 |
-| BHH | 錯誤的躍點標頭 | 錯誤的Hop標頭表示透過格式錯誤的Transfer-Encoding (TE)或Content-Length (CL)標頭，或是格式正確的TE和CL標頭進行HTTP走私企圖 |
-| 異常路徑 | 異常路徑 | 「異常路徑」表示原始路徑與正規化路徑不同(例如， `/foo/./bar` 已標準化為 `/foo/bar`) |
-| 已壓縮 | 偵測到壓縮 | POST要求內文已壓縮，無法檢查。 例如，如果指定「Content-Encoding： gzip」請求標頭，且POST內文不是純文字。 |
-| DOUBLEENCODING | 雙重編碼 | 雙重編碼檢查雙重編碼html字元的規避技術 |
-| FORCEFULBROWSING | 強制瀏覽 | 強制瀏覽是指存取管理頁面的嘗試失敗 |
-| NOTUTF8 | 無效的編碼 | 無效的編碼會導致伺服器將來自要求的惡意字元轉譯成回應，造成拒絕服務或XSS |
-| JSON-ERROR | JSON編碼錯誤 | 指定為在「Content-Type」要求標頭中包含JSON，但包含JSON剖析錯誤的POST、PUT或PATCH要求內文。 這通常與程式設計錯誤、自動化或惡意要求有關。 |
-| 格式錯誤的資料 | 請求內文中的資料格式錯誤 | 根據「Content-Type」請求標頭格式錯誤的POST、PUT或PATCH請求內文。 例如，若指定「Content-Type： application/x-www-form-urlencoded」請求標頭且包含jsonPOST內文。 這通常是程式設計錯誤，或是自動化或惡意要求。 需要代理程式3.2或更新版本。 |
-| SANS | 惡意IP流量 | [SANS網際網路風暴中心](https://isc.sans.edu/) 已回報參與惡意活動的IP位址清單 |
-| SIGSCI-IP | 網路效果 | 由SignalSciences標幟的IP：每當決策引擎因惡意訊號而標幟該IP時，該IP會傳播給所有客戶。 接著會記錄這些IP位址的後續請求，這些位址包含標籤持續時間的任何其他訊號 |
-| no-CONTENT-TYPE | 缺少「Content-Type」請求標頭 | 沒有「Content-Type」請求標頭的POST、PUT或PATCH請求。 在此情況下，應用程式伺服器預設應該假設「Content-Type： text/plain； charset=us-ascii」。 許多自動化和惡意請求可能遺失「內容型別」。 |
-| 努阿 | 無使用者代理程式 | 許多自動化和惡意請求會使用假的或遺失的使用者代理，使得識別發出請求的裝置型別變得困難。 |
-| TORNODE | Tor流量 | Tor是隱藏使用者身分的軟體。 Tor流量尖峰可能表示攻擊者試圖遮罩其位置。 |
-| 資料中心 | 資料中心流量 | 資料中心流量是指源自已識別託管提供者的非自然流量。 這類流量通常不會與真正的一般使用者建立關聯。 |
-| NULLBYTE | 空位元組 | Null位元組通常不會出現在請求中，並指示請求格式錯誤且可能是惡意的。 |
-| 冒充者 | SearchBot冒充者 | 搜尋機器人冒名者是假扮成Google或Bing搜尋機器人但不合法的人。 請注意，本身並不依賴回應，但必須先在雲端中解析，因此不應在預先規則中使用。 |
-| PRIVATEFILE | 私人檔案 | 私人檔案通常屬於機密性質，例如Apache `.htaccess` 或可能洩漏敏感資訊的設定檔 |
-| 掃描器 | 掃描器 | 識別熱門的掃描服務和工具 |
-| RESPONSESPLIT | HTTP回應分割 | 識別何時將CRLF字元提交為應用程式的輸入，以將標題插入HTTP回應 |
-| XML錯誤 | XML編碼錯誤 | 指定為「Content-Type」要求標頭內包含XML，但包含XML剖析錯誤的POST、PUT或PATCH要求內文。 這通常與程式設計錯誤、自動化或惡意要求有關。 |
+| SQLI | SQL 注入 | SQL 注入指試圖透過執行任意資料庫查詢以取得對應用程式的存取權或獲取特權資訊。 |
+| BACKDOOR | 後門 | 後門訊號指試圖決定系統是否存在常見後門檔案的要求。 |
+| CMDEXE | 命令執行 | 命令執行指試圖透過由使用者輸入的任意系統命令獲取控制或毀損目標系統。 |
+| XSS | 跨網站指令碼 | 跨網站指令碼指試圖透過惡意 JavaScript 程式碼劫持使用者的帳戶或 Web 瀏覽工作階段。 |
+| 周遊 | 目錄周遊 | 目錄周遊指試圖瀏覽整個系統中的特權檔案，期望能獲取敏感資訊。 |
+| USERAGENT | 攻擊工具 | 攻擊工具指使用自動化軟體識別安全漏洞或試圖惡意探索發現的漏洞。 |
+| LOG4J-JNDI | Log4J JNDI | Log4J JNDI 攻擊會試圖惡意探索出現在 2.16.0 之前的 Log4J 版本中的 [Log4Shell 漏洞](https://en.wikipedia.org/wiki/Log4Shell) |
+| AWS SSRF | AWS-SSRF | 伺服器端請求偽造 (SSRF) 是一種要求，會試圖傳送由 Web 應用程式發出的要求到目標內部系統。AWS SSRF 攻擊會利用 SSRF 獲取 Amazon Web Services (AWS) 金鑰並獲取對 S3 貯體及其資料的存取權。 |
+| BHH | 錯誤跳躍標頭 | 錯誤跳躍標頭指透過格式錯誤的傳輸編碼 (TE) 或內容長度 (CL) 標頭或格式正確的 TE 和 CL 標頭進行的 HTTP 走私嘗試 |
+| ABNORMALPATH | 異常路徑 | 異常路徑指原始路徑和標準化路徑不同 (例如：`/foo/./bar` 會標準化為 `/foo/bar`) |
+| 已壓縮 | 偵測到壓縮 | POST 要求內文被壓縮，並且無法檢查。例如，若指定「Content-Encoding: gzip」要求標頭，並且 POST 內文並非純文字。 |
+| DOUBLEENCODING | 雙重編碼 | 雙重編碼會檢查雙重編碼 html 字元的規避技術 |
+| FORCEFULBROWSING | 強制瀏覽 | 強制瀏覽指試圖存取管理頁面時失敗 |
+| NOTUTF8 | 無效的編碼 | 無效的編碼可能會導致伺服器將要求中的惡意字元翻譯為回應，進而導致拒絕服務或 XSS |
+| JSON-ERROR | JSON 編碼錯誤 | 指定為在「Content-Type」要求標頭中包含 JSON 但包含 JSON 剖析錯誤的 POST、PUT 或 PATCH 要求內文。這經常和程式設計錯誤或自動化亦或惡意要求有關。 |
+| MALFORMED-DATA | 要求內文中格式錯誤的資料 | 根據「Content-Type」要求標頭，格式錯誤的 POST、PUT 或 PATCH 要求內文。例如，如果指定了「Content-Type: application/x-www-form-urlencoded」要求標頭並包含 json 的 POST 內文。這經常是程式設計錯誤、自動化或惡意要求。需要代理程式 3.2 或更高版本。 |
+| SANS | 惡意的 IP 流量 | 已被報告為參與了惡意活動的 [SANS 網際網路風暴中心](https://isc.sans.edu/) IP 位址清單 |
+| SIGSCI-IP | 網路效應 | 由 SignalSciences 標記的 IP：每當決策引擎因惡意訊號而標記 IP 時，即會將 IP 傳播給所有客戶。接著會記錄來自這些 IP 位址的後續要求 (其中會包含標幟持續時間中的任何其他訊號)。 |
+| NO-CONTENT-TYPE | 缺少「Content-Type」要求標頭 | 沒有「Content-Type」要求標頭的 POST、PUT 或 PATCH 要求。在此案例中，預設情況下應用程式伺服器應假設「Content-Type: text/plain; charset=us-ascii」。許多自動化和惡意要求可能會缺少「內容類型」。 |
+| NOUA | 沒有使用者代理程式 | 許多自動化和惡意要求會使用偽造的使用者代理程式或缺少使用者代理程式，這使得難以識別發出要求的裝置類型。 |
+| TORNODE | Tor 流量 | Tor 是可隱藏使用者身份的軟體。Tor 流量激增可能表示有攻擊者試圖掩飾其位置。 |
+| DATACENTER | 資料中心流量 | 資料中心流量指源自於已識別主機提供者的非自然流量。這種類型的流量通常和真正的一般使用者無關。 |
+| NULLBYTE | 空位元 | 空位元通常不會出現在要求中，因為這表示該要求的格式錯誤且可能是惡意的。 |
+| IMPOSTOR | SearchBot 冒充者 | 搜尋機器人冒充者指冒充 Google 或 Bing 搜尋機器人的人，但並不合法。請注意，這本身不仰賴回應，但必須先在雲端中解析，因此不應用於預規則中。 |
+| PRIVATEFILE | 私人檔案 | 私人檔案通常在本質上屬於機密性，例如 Apache `.htaccess` 檔案或可能洩漏敏感資訊的設定檔案 |
+| SCANNER | 掃描程式 | 可識別熱門的掃描服務和工具 |
+| RESPONSESPLIT | HTTP 回應拆分 | 會識別何時將 CRLF 字元作為輸入提交給應用程式，以將標頭注入 HTTP 回應 |
+| XML-ERROR | XML 編碼錯誤 | 指定為在「Content-Type」要求標頭中包含 XML 但包含 XML 剖析錯誤的 POST、PUT 或 PATCH 要求內文。這經常和程式設計錯誤或自動化亦或惡意要求有關。 |
 
 ## 考量事項 {#considerations}
 
-* 建立兩個衝突的規則時，允許規則會一律優先於區塊規則。 例如，如果您建立規則來封鎖特定路徑，並建立規則來允許某個特定IP位址，則將會允許來自封鎖路徑上該IP位址的請求。
+* 建立兩個衝突規則時，允許規則總是優先於封鎖規則。例如，如果您建立一條封鎖特定路徑的規則，又建立一條允許特定 IP 位址的規則，則來自遭封鎖路徑上的該 IP 位址的要求會受到允許。
 
-* 如果規則符合併遭到封鎖，CDN會以回應 `406` 傳回碼。
+* 如果規則相符並遭封鎖，CDN 會以 `406` 傳回代碼回應。
 
 ## 範例 {#examples}
 
-以下是一些規則範例。 請參閱 [速率限制區段](#rules-with-rate-limits) 進一步縮小以取得速率限制的範例。
+下面是一些規則範例。如需進一步探討速率限制的範例，請參閱[「速率限制」一節](#rules-with-rate-limits)。
 
 **範例 1**
 
-此規則會封鎖來自IP 192.168.1.1的請求：
+此規則會封鎖來自 IP 192.168.1.1 的要求：
 
 ```
 data:
@@ -199,7 +199,7 @@ data:
 
 **範例 2**
 
-此規則會封鎖路徑上的請求 `/helloworld` 以包含Chrome的使用者代理程式發佈時：
+此規則會使用包含 Chrome 的使用者代理程式封鎖發佈的路徑 `/helloworld` 上的要求：
 
 ```
 data:
@@ -213,9 +213,9 @@ data:
       action: block
 ```
 
-**範例3**
+**範例 3**
 
-此規則會封鎖包含查詢引數的請求 `foo`，但允許來自IP 192.168.1.1的每個請求：
+此規則會封鎖包含查詢參數 `foo` 的要求，但會允許來自 IP 192.168.1.1 的每個要求：
 
 ```
 data:
@@ -228,9 +228,9 @@ data:
       action: allow
 ```
 
-**範例4**
+**範例 4**
 
-此規則會封鎖對/block-me路徑的要求，並封鎖符合SQLI或XSS模式的每個要求：
+此規則會封鎖對路徑 /block-me 的要求，並封鎖和 SQLI 或 XSS 模式相符的每個要求：
 
 ```
 data:
@@ -249,19 +249,19 @@ data:
 
 ## 具有速率限制的規則 {#rules-with-rate-limits}
 
-有時候，只有當符合的流量在一段時間內超過特定速率時，才希望封鎖符合規則的流量。 設定值 `rateLimit` 屬性會限制符合規則條件的要求速率。
+若相符程度經過一段時間後超過特定速率，則有時也需要只封鎖和某種規則相符的流量。設定 `rateLimit` 屬性的值會限制那些和規則條件相符的要求的速率。
 
-### rateLimit結構 {#ratelimit-structure}
+### rateLimit 結構 {#ratelimit-structure}
 
 | **屬性** | **類型** | **預設值** | **說明** |
 |---|---|---|---|
-| limit | 10到10000的整數 | 必填 | 每秒觸發規則之要求的速率 |
-| 視窗 | 整數列舉： 1、10或60 | 10 | 計算請求速率的取樣視窗（以秒為單位） |
-| 懲罰 | 60到3600的整數 | 300 （5分鐘） | 已封鎖相符要求的期間（以秒為單位）（舍入至最接近的分鐘） |
+| 限制 | 10 到 10000 之間的整數 | 必要 | 觸發規則的要求速率 (以每秒要求數為單位) |
+| 視窗 | 整數列舉：1、10 或 60 | 10 | 計算要求速率的取樣期間 (秒數) |
+| 懲罰 | 60 到 3600 之間的整數 | 300 (5 分鐘) | 封鎖相符要求時間的秒數 (四捨五入到最接近的分鐘) |
 
 ### 範例 {#ratelimiting-examples}
 
-範例 1：當在過去60秒內，要求速率超過每秒100個要求時，封鎖 `/critical/resource` 60秒
+範例 1：當最近 60 秒內要求速率超過每秒 100 個要求時，即封鎖 `/critical/resource` 60 秒
 
 ```
 - name: rate-limit-example
@@ -270,7 +270,7 @@ data:
   rateLimit: { limit: 100, window: 60, penalty: 60 }
 ```
 
-範例2：當要求速率在10秒內超過每秒10個要求時，請將資源封鎖300秒：
+範例 2：當 10 秒內要求速率超過每秒 10 個要求時，即封鎖資源 300 秒：
 
 ```
 - name: rate-limit-using-defaults
@@ -280,15 +280,15 @@ data:
     limit: 10
 ```
 
-## CDN記錄 {#cdn-logs}
+## CDN 紀錄 {#cdn-logs}
 
-AEMas a Cloud Service提供對CDN記錄的存取權，這些記錄可用於快取命中率最佳化以及設定CDN和WAF規則等使用案例。 CDN記錄會顯示在Cloud Manager中 **下載記錄檔** 對話方塊，在選取作者或發佈服務時。
+AEM as a Cloud Service 會提供對 CDN 紀錄的存取權，這對於包括快取命中率最佳化以及設定 CDN 和 WAF 規則等使用案例都非常有幫助。選取作者或發佈服務時，CDN 紀錄會顯示在 Cloud Manager **下載紀錄**&#x200B;對話框中。
 
-如果請求符合規則，則規則的名稱會顯示在rules屬性中，即使動作為「allow」亦然，因此不會封鎖流量。
+如果要求和規則相符，則規則的名稱會顯示在規則屬性中，即使動作為「允許」，而因此不會封鎖流量。
 
-CDN的所有要求都會在記錄專案中顯示相符的CDN規則，無論是否為CDN點選、通過或錯過。 不過，只有在對CDN的請求被視為CDN遺漏或傳遞時，WAF規則才會出現在記錄專案中，但CDN點選則不會。
+相符的 CDN 規則會顯示在對 CDN 發出的所有要求的紀錄條目中，無論是 CDN 命中、通過還是未命中。但是，會顯示 WAF 規則的紀錄條目僅限於發送給被視為 CDN 未命中或通過但不被視為 CDN 命中的 CDN 要求。
 
-以下範例顯示一個範例 `cdn.yaml` 和兩個CDN記錄專案，且由於分別符合CDN規則和WAF規則的封鎖請求，規則屬性中有非空白值。
+以下範例會說明 `cdn.yaml` 範例以及兩個 CDN 紀錄條目，由於要求分別和 CDN 規則以及 WAF 規則相符而遭到封鎖，因此規則屬性中有非空白值。
 
 
 ```
@@ -344,23 +344,23 @@ data:
 }
 ```
 
-### 記錄格式 {#cdn-log-format}
+### 紀錄格式 {#cdn-log-format}
 
-以下是CDN記錄中使用的欄位名稱清單，以及簡短說明。
+以下是 CDN 紀錄中使用的欄位名稱清單以及簡要說明。
 
 | **欄位名稱** | **說明** |
 |---|---|
-| *timestamp* | TLS終止後要求開始的時間 |
-| *ttfb* | 縮寫 *到第一個位元組的時間*. 要求開始的時間間隔，一直到回應主體開始串流處理之前的點。 |
-| *cip* | 使用者端IP位址。 |
-| *rid* | 用來唯一識別請求的請求標頭的值。 |
-| *ua* | 負責提出特定HTTP請求的使用者代理程式。 |
-| *主機* | 預期用於請求的許可權。 |
-| *url* | 完整路徑，包括查詢引數。 |
-| *req_mthd* | 使用者端傳送的HTTP方法，例如&quot;GET&quot;或&quot;POST&quot;。 |
-| *res_type* | 用於表示資源的原始媒體型別的Content-Type |
-| *cache* | 快取的狀態。 可能的值包括「點選」、「遺漏」或「通過」 |
-| *res_status* | 整數值形式的HTTP狀態代碼。 |
-| *res_bsize* | 在回應中傳送給使用者端的內文位元組。 |
-| *伺服器* | cdn快取伺服器的資料中心。 |
-| *多項規則* | CDN規則和waf規則的任何相符規則的名稱。<br><br>CDN的所有要求都會在記錄專案中顯示相符的CDN規則，無論是否為CDN點選、通過或錯過。<br><br>也會指出符合專案是否導致區塊。 <br><br>例如，「`cdn=;waf=SQLI;action=blocked`&quot;<br><br>若沒有相符的規則，則為空白。 |
+| *timestamp* | TLS 終止後要求開始的時間 |
+| *ttfb* | *首位元組時間 (Time To First Byte)* 的縮寫。 發出要求開始到回應內文開始串流的時間之間的時間間隔。 |
+| *cip* | 用戶端 IP 位址。 |
+| *rid* | 用於唯一識別要求的要求標頭的值。 |
+| *ua* | 負責發出特定 HTTP 要求的使用者代理程式。 |
+| *主機* | 發送要求的目標機構。 |
+| *url* | 包括查詢參數的完整路徑。 |
+| *req_mthd* | 用戶端傳送的 HTTP 方法，例如「GET」或「POST」。 |
+| *res_type* | 此內容類型會用於表示資源的原始媒體類型 |
+| *cache* | 快取的狀態。可能的值包括 HIT、MISS 或 PASS |
+| *res_status* | 作為整數值的 HTTP 狀態代碼。 |
+| *res_bsize* | 在回應中傳送到用戶端的內文位元組。 |
+| *server* | CDN 快取伺服器的資料中心。 |
+| *rules* | 任何相符規則的名稱，適用於 CDN 規則和 WAF 規則。<br><br>相符的 CDN 規則會顯示在對 CDN 發出的所有要求的紀錄條目中，無論是 CDN 命中、通過還是未命中。<br><br>還會指出該相符程度是否導致封鎖。<br><br>例如，「`cdn=;waf=SQLI;action=blocked`」<br><br>如果沒有相符的規則，則為空白。 |
