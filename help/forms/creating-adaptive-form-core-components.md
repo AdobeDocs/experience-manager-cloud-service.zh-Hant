@@ -5,10 +5,10 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
 exl-id: 1e812d93-4ba5-4589-b59b-2f564d754b0f
-source-git-commit: e6358044af395ee0fc785db3531465a3a6fbd5d5
+source-git-commit: 910c0dd53fa1890ac61b2f14fc4380a0dfbca76c
 workflow-type: tm+mt
-source-wordcount: '2280'
-ht-degree: 67%
+source-wordcount: '2342'
+ht-degree: 65%
 
 ---
 
@@ -42,13 +42,21 @@ ht-degree: 67%
    * 該 `blank` 範本會包含在每個新的 AEM Forms as a Cloud Service 程式中。
    * 您可以透過套件管理員安裝參考套件，將該 `blank` 範本新增到您的 AEM Forms as a Cloud Service 程式。
    * 您也可以從頭開始[建立新的最適化表單範本 (核心元件)](template-editor.md)。
+   * 您也可以部署範例 [範本](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components) 至您的環境。 這些功能可協助您快速建立表格。
 
-* **最適化表單主題**：主題包含元件和面板的樣式詳細資料。樣式包括背景顏色、狀態顏色、透明度、對齊方式和大小等屬性。套用主題時，指定的樣式會反映在對應的元件上。`Canvas` 會包含在每個新的 AEM Forms as a Cloud Service 程式中。
+* **最適化表單主題**：主題包含元件和面板的樣式詳細資料。樣式包括背景顏色、狀態顏色、透明度、對齊方式和大小等屬性。套用主題時，指定的樣式會反映在對應的元件上。該 `Canvas` 範本會包含在每個新的 AEM Forms as a Cloud Service 程式中。您也可以部署範例 [主題](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components) 至您的環境。 這些可幫助您開始設計表單的樣式，並提供基礎結構，以根據您的業務需求建立或自訂主題。
+
   <!-- * You can install the reference package, via package manager, to add the `Canvas` template to your AEM Forms as a Cloud Service program.
     * You can also [create a new Adaptive Forms theme (Core Components)](template-editor.md) and deploy it to your AEM Forms as a Cloud Service program. -->
 
 * **權限**：將您的使用者新增到 [!DNL forms-users] 群組。[!DNL forms-users] 群組的成員擁有建立最適化表單的權限。如需表單特定之使用者群組的詳細清單，請參閱[群組和權限](forms-groups-privileges-tasks.md)。
 
+<!--
+>[!NOTE]
+>
+>
+> In addition to the given themes and templates when you enable Core Components, you can also deploy the latest out-of-the box [sample themes and templates](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html) to your AEM environment for use in Core Components based Adaptive Forms.
+-->
 
 ## 建立最適化表單  {#create-an-adaptive-form-core-components}
 
