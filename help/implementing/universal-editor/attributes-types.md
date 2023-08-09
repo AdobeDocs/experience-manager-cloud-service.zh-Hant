@@ -2,10 +2,10 @@
 title: 屬性和類型
 description: 了解 Universal Editor 需要的資料屬性和類型。
 exl-id: 02795a31-244a-42b4-8297-2649125d7777
-source-git-commit: 0f62245d31074ab7a64d86b97ef3b1a8d7533001
+source-git-commit: 9df57ce958bb8f7f9406b9fe342c9d2a4ccb0ae0
 workflow-type: tm+mt
-source-wordcount: '663'
-ht-degree: 100%
+source-wordcount: '681'
+ht-degree: 94%
 
 ---
 
@@ -53,7 +53,8 @@ ht-degree: 100%
 
 | `data-editor-behavior` | 說明 |
 |---|---|
-| `component` | 可用於讓獨立的文字、RTF 和媒體模仿元件，讓它們也可以在頁面上移動和刪除 |
+| `component` | 用於允許獨立文字、RTF和媒體模擬元件，以便它們也可在頁面上移動和刪除 |
+| `container` | 用來允許將容器視為自己的元件，以便在頁面上移動和刪除 |
 
 ## 其他資源 {#additional-resources}
 
