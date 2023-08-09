@@ -2,9 +2,9 @@
 title: 使用者對應和主體移轉
 description: AEMas a Cloud Service中的使用者對應和主體移轉概觀。
 exl-id: 4a35fc46-f641-46a4-b3ff-080d090c593b
-source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
+source-git-commit: 83c6c3c8c069059e49b632f332e24946e1712cb7
 workflow-type: tm+mt
-source-wordcount: '837'
+source-wordcount: '855'
 ht-degree: 10%
 
 ---
@@ -57,6 +57,7 @@ AEM使用者可以對應至具有相同電子郵件地址的對應Adobe IMS使�
 * 如果設定 **在內嵌之前擦除雲端例項上的現有內容** 設定，則會刪除Cloud Service執行個體上已轉移的使用者以及整個現有存放庫。 而且，會建立一個新存放庫，其中已擷取內容。 此程式也會重設所有設定，包括目標Cloud Service執行個體的許可權，適用於新增至的管理員使用者。 **管理員** 群組。 管理員使用者必須閱讀至 **管理員** 群組以擷取CTT的存取權杖。
 * 執行內容追加時，如果內容由於在上次轉移後未變更而未轉移，則與該內容關聯的使用者和群組也不會轉移。 即使使用者與群組在此期間已變更，此規則仍為真。 原因是使用者和群組會隨著相關聯的內容一起移轉。
 * 如果目標AEM Cloud Service執行個體中的使用者與來源AEM執行個體上的使用者具有不同使用者名稱，但電子郵件地址相同，並且已啟用使用者對應，則記錄會記錄一則錯誤訊息。 此外，不會傳輸來源AEM使用者，因為目標系統上只允許一位具有指定電子郵件地址的使用者。
+* 另請參閱 [移轉封閉式使用者群組](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/closed-user-groups-migration.md) 封閉使用者群組(CUG)原則中所使用群組的額外考量事項。
 
 ## 最終摘要與報告 {#final-report}
 
