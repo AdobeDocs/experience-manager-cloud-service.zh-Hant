@@ -8,9 +8,9 @@ user-guide-description: 了解 Experience Manager as a Cloud Service 的運作�
 breadcrumb-title: 使用手冊
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: ca3c4bae2e652d75190d68c76b1dd4e09239f16c
+source-git-commit: ec4445a63eee834c45ff95b7978497a615a1ed46
 workflow-type: tm+mt
-source-wordcount: '4230'
+source-wordcount: '4235'
 ht-degree: 99%
 
 ---
@@ -83,6 +83,7 @@ ht-degree: 99%
    + Cloud Manager 發行說明 {#cloud-manager}
       + [最新發行說明](/help/implementing/cloud-manager/release-notes/current.md)
       + 2023 {#2023}
+         + [2023.7.0 版發行說明](/help/implementing/cloud-manager/release-notes/2023/2023-7-0.md)
          + [2023.6.0 版發行說明](/help/implementing/cloud-manager/release-notes/2023/2023-6-0.md)
          + [2023.5.0 版發行說明](/help/implementing/cloud-manager/release-notes/2023/2023-5-0.md)
          + [2023.4.0 版發行說明](/help/implementing/cloud-manager/release-notes/2023/2023-4-0.md)
@@ -1001,6 +1002,7 @@ ht-degree: 99%
    + [AEM as a Cloud Service 中的基礎結構和服務監視](/help/operations/monitoring.md)
    + [維護任務](/help/operations/maintenance.md)
    + [備份和還原](/help/operations/backup.md)
+   + [自助還原](/help/operations/restore.md)
    + [非同步作業](/help/operations/asynchronous-jobs.md)
    + [移除一般 lucene 索引](/help/operations/removal-generic-lucene-index.md)
    + [查詢和編製索引最佳實務](/help/operations/query-and-indexing-best-practices.md)
