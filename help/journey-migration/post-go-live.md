@@ -2,10 +2,10 @@
 title: 上線後
 description: 瞭解如何監控問題並改善效能
 exl-id: 487f0b51-501b-48fc-a796-3cb8a6d64462
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 3784569086a786c6c25c0e3d6d0bb0ddbdd37e4b
 workflow-type: tm+mt
-source-wordcount: '482'
-ht-degree: 28%
+source-wordcount: '477'
+ht-degree: 22%
 
 ---
 
@@ -15,14 +15,14 @@ ht-degree: 28%
 >id="aemcloud_golive_troubleshooting"
 >title="AEM 的移難排解"
 >abstract="檢閱持續開發和管理記錄檔的最佳做法以及開發人員主控台和 CRXDE Lite 之類的工具，以協助對 AEM 的問題進行移難排解"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-logs.html?lang=zh-Hant" text="存取和管理記錄檔"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=zh-Hant#aem-as-a-cloud-service-development-tools" text="AEM as a Cloud Service 開發工具"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-logs.html" text="存取和管理記錄檔"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html#aem-as-a-cloud-service-development-tools" text="AEM as a Cloud Service 開發工具"
 
-這是歷程的最後一部分，因此您將瞭解如何監視問題，並在移轉完成後改善效能。 您應該確保清理暫存檔，審查持續開發的最佳實務並管理記錄。
+此歷程是最後一部分，因此您將瞭解如何監視問題，並在移轉完成後改善效能。 您應該確保清理暫存檔，並檢閱持續開發的最佳實務和管理記錄。
 
 ## 到目前為止 {#story-so-far}
 
-在歷程的上一步中，您已瞭解如何執行移轉並 [上線](/help/journey-migration/go-live.md) 在程式碼和內容準備好移至AEMas a Cloud Service中後。
+在此歷程的上一步中，您已瞭解如何執行移轉並 [上線](/help/journey-migration/go-live.md) 在程式碼和內容準備好移至AEMas a Cloud Service後。
 
 ## 目標 {#objective}
 
@@ -34,44 +34,44 @@ ht-degree: 28%
 
 ## 開發人員控制台 {#developer-console}
 
-開發人員控制檯中提供AEMas a Cloud Service開發人員環境的偵錯功能，可用於開發、測試和生產環境。
+在開發、預備和生產環境的開發人員控制檯中，提供對AEMas a Cloud Service開發人員環境進行偵錯的功能。
 
-另請參閱 [實作AEMas a Cloud Service](/help/implementing/developing/introduction/development-guidelines.md#aem-as-a-cloud-service-development-tools) 以進一步瞭解開發工具。
+另請參閱 [AEMas a Cloud Service實作](/help/implementing/developing/introduction/development-guidelines.md#aem-as-a-cloud-service-development-tools) 以進一步瞭解開發工具。
 
 ## CRXDE Lite {#crxde-lite}
 
 身為使用者，您可以在開發環境中存取 CRXDE Lite，但不能在預備或生產環境中存取。
 
 >[!IMPORTANT]
->寫入不可變的存放庫，例如 `/libs` 和 `/apps` 在執行階段導致錯誤。 此外，您無權存取測試和生產環境的開發人員工具。
+>寫入不可變的存放庫，例如 `/libs` 和 `/apps` 在執行階段導致錯誤。 此外，您也無法存取預備和生產環境的開發人員工具。
 
-另請參閱 [使用CRXDE Lite開發](/help/implementing/developing/tools/crxde.md) 以瞭解如何使用CRXDE Lite開發您的AEM應用程式。
+另請參閱 [使用CRXDE Lite開發](/help/implementing/developing/tools/crxde.md) 有關如何使用CRXDE Lite開發您的AEM應用程式的詳細資訊。
 
 ## 管理記錄 {#managing-logs}
 
 使用者可以存取所選環境的可用記錄檔清單。
 
-另請參閱 [存取和管理記錄檔](/help/implementing/cloud-manager/manage-logs.md) 瞭解如何透過UI或透過Cloud Manager的API存取和管理記錄。
+另請參閱 [存取和管理記錄檔](/help/implementing/cloud-manager/manage-logs.md) 瞭解如何透過UI或Cloud Manager的API存取和管理記錄。
 
-## 連絡支援 {#contacting-support}
+## 正在連絡支援 {#contacting-support}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_support"
 >title="說明與支援"
->abstract="如需澄清或解決任何疑慮，請和我們的 AEM 支援團隊聯絡。"
+>abstract="聯絡Adobe的AEM支援團隊以澄清或解決任何問題。"
 >additional-url="https://helpx.adobe.com/tw/enterprise/using/support-for-experience-cloud.html" text="Experience Cloud 的支援"
 
 如果您對存取Cloud Service有任何疑問，請聯絡您的Adobe代表或 [支援Experience Cloud](https://helpx.adobe.com/tw/enterprise/using/support-for-experience-cloud.html) 以取得更多詳細資料。
 
 ## 檔案學習 {#document-learnings}
 
-移轉一旦完成，您應該記錄在此過程中獲得的知識。 可能有助於說明檔案流程的一些問題包括：
+移轉一旦完成，即記錄在此過程中取得的知識。 可能有助於說明檔案流程的一些問題包括：
 
-* 哪些程式效果良好，哪些程式效果缺佳？
+* 哪些專案運作良好，哪些專案沒有運作？
 * 主要煩惱為何？
-* Recommendations，以備日後移轉時使用。
+* 如果未來有移轉專案，則使用Recommendations。
 
-然後，您應該與組織內的利害關係人和團隊分享這些移轉後學習。
+與組織中的利害關係人和團隊分享這些移轉後學習。
 
 ## 歷程結束 - 還是結束了？ {#journey-ends}
 
@@ -79,6 +79,6 @@ ht-degree: 28%
 
 * 開始使用AEMas a Cloud Service
 * 判斷您的部署是否已準備好移至AEMas a Cloud Service
-* 讓您的程式碼和內容雲端準備就緒
+* 讓您的程式碼和內容雲端就緒
 * 執行移轉
 * 監控問題並改善效能
