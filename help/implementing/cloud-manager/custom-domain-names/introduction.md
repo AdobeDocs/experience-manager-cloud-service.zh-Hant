@@ -1,11 +1,11 @@
 ---
 title: 自訂網域名稱簡介
-description: Cloud Manager 的 UI 可讓您新增自訂網域，以自助方式使用唯一的品牌名稱來識別您的網站。
+description: Cloud Manager的UI可讓您新增自訂網域，以自助方式使用唯一的品牌名稱來識別您的網站。
 exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '766'
-ht-degree: 100%
+source-wordcount: '757'
+ht-degree: 81%
 
 ---
 
@@ -15,15 +15,15 @@ ht-degree: 100%
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_domains"
 >title="管理自訂網域名稱"
->abstract="Cloud Manager 的 UI 可讓您新增自訂網域，以自助方式使用唯一的品牌名稱來識別您的網站。"
+>abstract="Cloud Manager的UI可讓您新增自訂網域，以自助方式使用唯一的品牌名稱來識別您的網站。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/add-custom-domain-name.html?lang=zh-Hant" text="新增自訂網域名稱"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.html?lang=zh-Hant" text="檢視和更新自訂網域名稱"
 
-Cloud Manager 的 UI 可讓您新增自訂網域，以自助方式使用唯一的品牌名稱來識別您的網站。Adobe Experience Manager as a Cloud Service已佈建預設網域名稱，結尾為 `*.adobeaemcloud.com`。即使您將自訂網域名稱與您的網站相關聯，此預設網域名稱仍會保留。
+Cloud Manager的UI可讓您新增自訂網域，以自助方式使用唯一的品牌名稱來識別您的網站。 Adobe Experience Manager as a Cloud Service已佈建預設網域名稱，結尾為 `*.adobeaemcloud.com`。即使您將自訂網域名稱與您的網站相關聯，此預設網域名稱仍會保留。
 
 ## 什麼是自訂網域名稱？ {#what-are-custom-domain-names}
 
-每個網站都有一個與之關聯的電腦可讀取的唯一數字位址，例如 `184.33.123.64`。網域名稱系統 (DNS) 可讓您將數字位址轉換為令人難忘的位址，例如，將自訂、品牌化的網域附加至網站 `wknd.com`。
+每個網站都有一個與之關聯的電腦可讀取的唯一數字位址，例如 `184.33.123.64`。網域名稱系統(DNS)可讓您將數字位址轉換為令人難忘的位址，例如 `wknd.com`.
 
 為您的網站命名網域名稱是很好的作法，這會讓客戶難忘並反映您的品牌。
 
@@ -35,7 +35,7 @@ Cloud Manager 的 UI 可讓您新增自訂網域，以自助方式使用唯一�
 
 ## 自訂網域名稱和 BYO CDN {#byo-cdn}
 
-AEM as a Cloud Service 提供內建的內容傳遞網路 (CDN) 服務，但也允許您自攜 (BYO) CDN 以搭配 AEM 使用。自訂網域可以安裝在 AEM 管理的 CDN 或您管理的 CDN 中。
+AEMas a Cloud Service提供內建的內容傳遞網路(CDN)服務，但也可讓您自攜(BYO) CDN以搭配AEM使用。 自訂網域可以安裝在 AEM 管理的 CDN 或您管理的 CDN 中。
 
 * 安裝在 AEM 管理的 CDN 中的自訂網域名稱 (和憑證) 是透過 Cloud Manager 進行管理。
 * 安裝在您自己 CDN 中的自訂網域名稱 (和憑證) 是在特定 CDN 中進行管理。
@@ -70,7 +70,7 @@ AEM as a Cloud Service 提供內建的內容傳遞網路 (CDN) 服務，但也�
 
 * Cloud Manager 支援自訂網域名稱用於 Sites 計畫的發佈和預覽服務。不支援編寫服務的自訂網域。
 * 每個 Cloud Manager 環境最多可以託管 500 個自訂網域。
-* 當有目前正在執行的管道連線到這些環境時，無法將網域名稱新增到環境中。
+* 當有一個目前正在執行的管道連線到這些環境時，無法將網域名稱新增到環境中。
 * 同一個網域名稱不能在多個環境中使用。
 * 一次只能新增一個網域名稱。
 * AEM as a Cloud Service 不支援萬用字元網域，例如 `*.example.com`。
