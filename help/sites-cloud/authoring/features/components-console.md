@@ -2,9 +2,9 @@
 title: 元件主控台
 description: 元件主控台可讓您瀏覽針對執行個體定義的所有元件
 exl-id: f4949331-5302-46d3-a004-b813bb95ec2f
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '275'
+source-wordcount: '273'
 ht-degree: 18%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 18%
 
 >[!NOTE]
 >
->「元件主控台」會顯示系統中的所有元件。 此 [元件瀏覽器](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser) 顯示作者可用的元件，並隱藏任何以句點( `.`)。
+>「元件主控台」會顯示系統中的所有元件。 此 [元件瀏覽器](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser) 顯示可供作者使用的元件，並隱藏任何以句點( `.`)。
 
 ## 搜尋 {#search-field}
 
@@ -29,13 +29,13 @@ ht-degree: 18%
 
 ### 元件詳細資料 {#component-details}
 
-若要檢視特定元件的詳細資訊，請點選/按一下所需的資源。 三個索引標籤提供：
+若要檢視特定元件的詳細資訊，請點選/按一下所需資源。 三個索引標籤提供：
 
 * **屬性**
 
-   ![元件主控台屬性](/help/sites-cloud/authoring/assets/components-console-properties.png)
+  ![元件主控台屬性](/help/sites-cloud/authoring/assets/components-console-properties.png)
 
-   在「屬性」標籤上，您可以：
+  在「屬性」標籤上，您可以：
 
    * 檢視元件的一般屬性。
       * 檢視元件圖示或縮寫的定義方式。 <!-- View how the [icon or abbreviation has been defined](/help/sites-developing/components-basics.md#component-icon-in-touch-ui) for the component.-->
@@ -43,24 +43,24 @@ ht-degree: 18%
    * 檢視 **資源型別** 和 **資源超級型別** （如果已定義）。
       * 按一下「資源超級型別」即可前往該元件。
 
-   >[!NOTE]
-   >
-   >因為 `/apps` 在執行階段不可編輯，元件主控台為唯讀。
+  >[!NOTE]
+  >
+  >因為 `/apps` 無法在執行階段編輯，元件主控台為唯讀。
 
 * **原則**
 
-   ![元件主控台原則](/help/sites-cloud/authoring/assets/components-console-policies.png)
+  ![元件主控台原則](/help/sites-cloud/authoring/assets/components-console-policies.png)
 
 * **即時使用情況**
 
-   ![元件的即時使用情況](/help/sites-cloud/authoring/assets/components-console-live-usage.png)
+  ![元件的即時使用情況](/help/sites-cloud/authoring/assets/components-console-live-usage.png)
 
-   >[!CAUTION]
-   >
-   >由於為此檢視收集之資訊的性質，它可能需要一段時間才能整理/顯示。
+  >[!CAUTION]
+  >
+  >由於為此檢視收集之資訊的性質，它可能需要一段時間才能整理/顯示。
 
 * **文件**
 
-   如果開發人員已提供元件的檔案，檔案會顯示在 **檔案** 標籤。 如果沒有可用的檔案， **檔案** 索引標籤不會顯示。 <!-- If the developer has provided [documentation for the component](/help/sites-developing/developing-components.md#documenting-your-component), it will appear on the **Documentation** tab. If there is no documentation available, the **Documentation** tab will not be shown.-->
+  如果開發人員已提供元件的檔案，則會顯示在 **檔案** 標籤。 如果沒有可用的檔案， **檔案** 索引標籤不會顯示。 <!-- If the developer has provided [documentation for the component](/help/sites-developing/developing-components.md#documenting-your-component), it will appear on the **Documentation** tab. If there is no documentation available, the **Documentation** tab will not be shown.-->
 
-   ![元件檔案](/help/sites-cloud/authoring/assets/components-console-documentation.png)
+  ![元件檔案](/help/sites-cloud/authoring/assets/components-console-documentation.png)

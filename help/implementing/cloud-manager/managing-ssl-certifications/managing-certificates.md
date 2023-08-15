@@ -2,10 +2,10 @@
 title: 管理 SSL 憑證
 description: 了解如何使用 Cloud Manager 檢查 SSL 憑證的狀態以及如何編輯、取代、更新和刪除它們。
 exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
-source-git-commit: aeb407f8971dabb4e86203b3cee82318330638b0
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '646'
-ht-degree: 100%
+source-wordcount: '644'
+ht-degree: 98%
 
 ---
 
@@ -47,7 +47,7 @@ ht-degree: 100%
 
 ## 刪除 SSL 憑證 {#deleting-an-ssl-certificate}
 
-從 Cloud Manager 中移除憑證是一項無法復原的永久性動作。作為最佳實務，Adobe 建議先在本機儲存 SSL 檔案，然後才從 Cloud Manager 中刪除它們。
+從Cloud Manager中移除憑證是無法復原的永久性動作。 作為最佳實務，Adobe 建議先在本機儲存 SSL 檔案，然後才從 Cloud Manager 中刪除它們。
 
 Cloud Manager 不允許您刪除與一個或多個網域相關聯的 SSL 憑證。在刪除 SSL 憑證之前，必須刪除所有關聯的網域。如需更多資訊，請參閱[管理自訂網域名稱](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md)。
 

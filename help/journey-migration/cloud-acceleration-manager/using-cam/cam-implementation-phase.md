@@ -1,11 +1,11 @@
 ---
 title: Cloud Acceleration Manager中的實作階段
-description: 本頁提供Cloud Acceleration Manager中實作階段的概觀。
+description: 本頁提供Cloud Acceleration Manager實作階段的概觀。
 exl-id: e6ac88f0-4b3f-43a1-98bc-8c6608713784
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '662'
-ht-degree: 6%
+source-wordcount: '661'
+ht-degree: 7%
 
 ---
 
@@ -19,19 +19,19 @@ ht-degree: 6%
 * [內容轉移](#content-transfer)
 
 
-按一下您的專案卡片，以便開啟專案登入頁面並導覽至 **實作** 部分，如下圖所示。
+按一下您的專案卡片，以便開啟專案登入頁面並導覽至 **實施** 部分，如下圖所示。
 
 ![影像](/help/journey-migration/cloud-acceleration-manager/assets/implementation-1.png)
 
 >[!NOTE]
->另請參閱 [在Cloud Acceleration Manager中建立和管理專案](getting-started-cam.md#create-project) 以深入瞭解。
+>另請參閱 [在Cloud Acceleration Manager中建立和管理專案](getting-started-cam.md#create-project) 以進一步瞭解。
 
 
 ## 使用本機開發卡 {#local-development}
 
-本機開發卡提供所有相關內容，可協助您在開始移轉歷程的實施階段時設定本機AEM開發環境。
+本機開發卡片提供所有相關內容，可協助您在開始移轉歷程的實施階段時設定本機AEM開發環境。
 
-請詳閱本節，以探索「本機開發」活動卡：
+請依照本區段操作，以便探索本機開發活動卡：
 
 1. 按一下 **檢視** 從 **本機開發** 卡片。
 
@@ -48,7 +48,7 @@ ht-degree: 6%
 
 請詳閱本節，以探索「程式碼重構」活動卡：
 
-1. 按一下 **檢閱** 從 **程式碼重構** 活動卡。
+1. 按一下 **檢閱** 從 **程式碼重構** 活動卡片。
 
    ![影像](/help/journey-migration/cloud-acceleration-manager/assets/implementation-4.png)
 
@@ -63,7 +63,7 @@ ht-degree: 6%
 >[!NOTE]
 >檢閱這些標籤中的內容，瞭解Best Practices Analyzer未涵蓋的一些其他區域。
 
-此 **Dispatcher** 索引標籤提供有關如何構建AEMas a Cloud Service的Apache和Dispatcher設定，以及如何在部署到雲端環境之前在本地驗證和執行它的資訊。 此外也說明如何在雲端環境中進行除錯。
+此 **Dispatcher** 索引標籤提供有關如何構建AEMas a Cloud Service的Apache和Dispatcher設定，以及如何在部署到雲端環境之前在本地驗證和執行它的資訊。 同時也說明如何在雲端環境中進行除錯。
 
 ![影像](/help/journey-migration/cloud-acceleration-manager/assets/coderefactoring-2.png)
 
@@ -76,9 +76,9 @@ ht-degree: 6%
 
 AEMas a Cloud Service部署卡會提供所有相關內容，協助您將程式碼部署至AEMas a Cloud Service。
 
-請詳閱本節，以探索AEMas a Cloud Service部署卡活動卡：
+請依照本章節所述，以探索AEMas a Cloud Service部署卡活動卡：
 
-1. 按一下 **檢視** 從 **AEMas a Cloud Service部署** 活動卡。
+1. 按一下 **檢視** 從 **AEMas a Cloud Service部署** 活動卡片。
 
    ![影像](/help/journey-migration/cloud-acceleration-manager/assets/implementation-6.png)
 
@@ -91,13 +91,13 @@ AEMas a Cloud Service部署卡會提供所有相關內容，協助您將程式�
 
 「內容轉移」卡片可讓您開始並管理從目前AEM執行個體到AEMas a Cloud Service的內容轉移。
 
-請詳閱本節，以便探索「內容轉移」活動卡：
+請依照本節，以便探索「內容轉移」活動卡：
 
-1. 按一下 **檢閱** 從 **內容轉移** 活動卡。
+1. 按一下 **檢閱** 從 **內容轉移** 活動卡片。
 
    ![影像](/help/journey-migration/cloud-acceleration-manager/assets/contenttransfer-1.png)
 
-1. 若要開始內容轉移，您必須建立移轉集。 按一下 **建立移轉集**. 移轉集允許將內容傳輸至AEMas a Cloud Service。
+1. 若要開始內容轉移，您必須建立移轉集。 按一下 **建立移轉集**. 移轉集可讓內容傳輸至AEMas a Cloud Service。
 
    ![影像](/help/journey-migration/cloud-acceleration-manager/assets/contenttransfer-2.png)
 
@@ -105,11 +105,11 @@ AEMas a Cloud Service部署卡會提供所有相關內容，協助您將程式�
    >移轉集會在長時間不活動後過期。 另請參閱 [移轉集到期](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry) 以取得詳細資訊。
 
    >[!NOTE]
-   >另請參閱 [必備條件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html?lang=zh-Hant) 和 [最佳實務和准則](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html) 使用「內容轉移工具」之前。
+   >另請參閱 [必備條件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html?lang=zh-Hant) 和 [最佳作法和准則](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html) 開始使用「內容轉移工具」。
 
-1. 下載並安裝內容轉移工具以填入移轉集，並完成內容轉移的提取階段。 檢閱 [內容轉移工具快速入門](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=zh-Hant) 以瞭解如何使用內容轉移工具。
+1. 下載並安裝內容轉移工具以填入移轉集並完成內容轉移的提取階段。 檢閱 [內容轉移工具快速入門](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=zh-Hant) 以瞭解如何使用內容轉移工具。
 
-1. 若要將內容從移轉集內嵌至AEMas a Cloud Service的環境，您必須開始內嵌。 導覽至 **內嵌工作** 並按一下 **新內嵌**. 檢閱 [將內容擷取至Target](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html) 以便您瞭解如何完成內容轉移的擷取階段。
+1. 若要將內容從移轉集擷取至AEMas a Cloud Service上的環境，您必須開始擷取。 瀏覽至 **內嵌工作** 並按一下 **新內嵌**. 檢閱 [將內容內嵌至目標](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html) 以便您瞭解如何完成內容轉移的擷取階段。
 
    ![影像](/help/journey-migration/cloud-acceleration-manager/assets/contenttransfer-3.png)
 

@@ -4,16 +4,16 @@ description: 瞭解如何使用觸控式UI和Adobe Launch將Adobe Analytics與AE
 feature: Administering
 role: Admin
 exl-id: e353a1fa-3e99-4d79-a0d1-40851bc55506
-source-git-commit: 957758a8d3c16328e7638356e7ee6df3e561386d
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '574'
+source-wordcount: '573'
 ht-degree: 2%
 
 ---
 
 # 整合 Adobe Analytics{#integrating-with-adobe-analytics}
 
-整合Adobe Analytics與AEMas a Cloud Service可讓您追蹤網頁活動。 此整合需要：
+整合Adobe Analytics與AEMas a Cloud Service可讓您追蹤您的網頁活動。 此整合需要：
 
 * 使用Touch UI在AEMas a Cloud Service中建立Analytics設定。 將Adobe Analytics與AEMas a Cloud Service整合需要IMS驗證。
 * 在中將Adobe Analytics新增及設定為擴充功能 [Adobe啟動](#analytics-launch). 如需Adobe啟動的詳細資訊，請參閱 [此頁面](https://experienceleague.adobe.com/docs/experience-platform/tags/get-started/quick-start.html).
@@ -26,7 +26,7 @@ ht-degree: 2%
 
 ## 建立Adobe Analytics設定 {#analytics-configuration}
 
-1. 瀏覽至 **工具** → **Cloud Services**.
+1. 瀏覽至 **工具** → **Cloud Service**.
 2. 選取 **Adobe Analytics**.
    ![Adobe Analytics視窗](assets/analytics_screen2.png "Adobe Analytics視窗")
 3. 選取 **建立** 按鈕。

@@ -1,11 +1,11 @@
 ---
 title: WCAG 2.1 快速指南
-description: 網頁內容可及性指引(WCAG) 2.1版快速指南。
+description: 網站無障礙規範 (WCAG) 2.1 版快速指南。
 exl-id: 56aa834b-cd07-41c5-88f2-915bc0596e48
-source-git-commit: 31e6ec8e9977c8787e14481ee3a94df767262aec
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1780'
-ht-degree: 99%
+source-wordcount: '1782'
+ht-degree: 98%
 
 ---
 
@@ -66,7 +66,7 @@ WCAG 2.1 包含四大無障礙設計原則，有時簡稱為 **POUR**。說明�
 * 指引從 1.1 編號至 4.1，第一個數字與父項指引相對應。
 * 每則指引都包含一或多個&#x200B;**成功標準**。
 * 成功標準以陳述形式撰寫，針對任何特定網頁為 `True` 或 `False`。
-* 成功標準可能包含兩者擇一的選擇，也可能包含例外，意即不符合成功條件的情況。
+* 成功標準可能包含其中一項/或多項選擇，也可能包含例外，即不符合成功標準的情況。
 * 成功標準根據父項指引和原則，從 1.1.1 編號至 4.1.1。這些標準還各有一個簡短的名稱，用於摘要簡述該標準的目的，以便易於參考。舉例來說，成功標準 [1.1.1 是「非文字內容」](https://www.w3.org/TR/WCAG/#non-text-content)。
 * 成功標準包含一份相關&#x200B;**技術**&#x200B;清單 (詳細說明於下方)。
 

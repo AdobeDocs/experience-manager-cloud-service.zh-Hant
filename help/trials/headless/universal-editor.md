@@ -3,10 +3,10 @@ title: 在內容中編輯
 description: 探索如何使用 Universal Editor 在任何實作中對內容的任何層面進行原處和內容中編輯。
 hidefromtoc: true
 index: false
-source-git-commit: 9826041962a3a0065feb676b07304ba30d23d2e9
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '961'
-ht-degree: 100%
+source-wordcount: '959'
+ht-degree: 96%
 
 ---
 
@@ -74,7 +74,7 @@ Universal Editor 在編寫環境中會自動儲存您的變更。您仍然需要
 
 ## 像讀者一樣體驗您的內容 {#emulators}
 
-Universal Editor 可讓您在其中與內容互動、查看傳遞到使用者的裝置上的內容。
+通用編輯器可讓您在其內容內與內容互動，檢視內容傳送至使用者裝置時的情形。
 
 1. 根據預設，編輯器會呈現內容的桌面版本。點選或按一下編輯器右上角的模擬器按鈕，即可變更目標裝置。
 

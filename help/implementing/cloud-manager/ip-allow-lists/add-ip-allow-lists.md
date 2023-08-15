@@ -2,10 +2,10 @@
 title: 新增 IP 允許清單
 description: 了解如何使用 Cloud Manager 新增您自己的 IP 允許清單。
 exl-id: 769be71f-5c11-4f98-8906-7a5667a25aee
-source-git-commit: 7260649eaab303ba5bab55ccbe02395dc8159949
-workflow-type: ht
-source-wordcount: '197'
-ht-degree: 100%
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+workflow-type: tm+mt
+source-wordcount: '196'
+ht-degree: 90%
 
 ---
 
@@ -38,4 +38,4 @@ ht-degree: 100%
 
 1. 按一下&#x200B;**「儲存」**，確認您的提交內容。
 
-儲存後，新建立的 IP 允許清單會以表格中的列出現在 **IP 允許清單**&#x200B;頁。
+儲存後，新建立的IP允許清單會在的表格中顯示為一列 **IP允許清單** 頁面。

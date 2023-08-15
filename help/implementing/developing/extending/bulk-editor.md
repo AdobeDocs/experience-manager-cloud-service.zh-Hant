@@ -1,28 +1,28 @@
 ---
-title: 設定大量編輯頁面屬性
-description: 瞭解如何設定大量編輯，以便一次編輯多個頁面的屬性。
-source-git-commit: 9563c24c2794f8209494891da1a4a5a3360781db
+title: 設定頁面屬性的批次編輯
+description: 了解如何設定批次編輯，以便您可以同時編輯多個頁面的屬性。
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '249'
-ht-degree: 1%
+source-wordcount: '248'
+ht-degree: 93%
 
 ---
 
 
-# 設定大量編輯頁面屬性 {#configuring-bulk-editing-of-page-properties}
+# 設定頁面屬性的批次編輯 {#configuring-bulk-editing-of-page-properties}
 
 [大量編輯頁面屬性](/help/sites-cloud/authoring/fundamentals/page-properties.md#from-the-sites-console-multiple-pages) 可讓您一次編輯多個頁面的屬性。
 
 ## 考量事項 {#considerations}
 
-預設不會啟用頁面屬性以進行大量編輯。 它們必須明確啟用。 在定義可供大量編輯的頁面屬性時，您必須考量某些含意，例如：
+預設情況下，頁面屬性未啟用批次編輯。必須明確地將它們啟用。定義可進行批次編輯的頁面屬性時，您需要考慮特定意涵，例如：
 
-* 某些欄位通常是不重複的。 您必須決定啟用此類欄位進行大量編輯是否有意義，何時將套用一個值。
-   * 例如，頁面標題幾乎永遠都是唯一的。
-* 某些欄位可能有多個值，在轉譯時需要有意義的表示。
-   * 例如，狀態下拉式清單，其標籤為 **準備發佈**. 在大量編輯之前，這可能有數個值，例如 **就緒**， **稽核中**， **進行中**&#x200B;等
+* 某些欄位通常是唯一的。套用一個值時，您必須決定啟用這類欄位進行批次編輯是否有意義。
+   * 例如，頁面標題幾乎永遠是唯一的。
+* 某些欄位可能具有多個值，在轉譯時需要有意義的表示。
+   * 例如，標示為「**準備好發佈**」的狀態下拉選單。在批次編輯之前，這可能會有幾個值，例如&#x200B;**就緒**、**檢閱中**、**進行中**&#x200B;等。
 
-由於可能存在多個值，建議僅啟用以下欄位型別以進行大量編輯。
+由於可能存在多個值，建議僅啟用下列欄位類型供批次編輯。
 
 * `/libs/granite/ui/components/foundation/form/textfield`
 * `/libs/granite/ui/components/foundation/form/textarea`
@@ -33,21 +33,21 @@ ht-degree: 1%
 
 ## 啟用欄位 {#enabling-a-field}
 
-這些步驟使用 `/apps/core/wcm/components/page/v1/page` 從 [WKND範例內容](/help/implementing/developing/introduction/develop-wknd-tutorial.md) 例如，可在開發環境中的欄位上啟用大量編輯。
+這些步驟會使用 `/apps/core/wcm/components/page/v1/page` (來自 [WKND 範本內容](/help/implementing/developing/introduction/develop-wknd-tutorial.md)) 作為在開發環境中啟用欄位批次編輯的範例。
 
-1. 使用CRXDE開啟您的頁面元件。
-1. 導覽至 `cq:dialog` 定義。
-1. 在欄位節點上定義下列屬性：
+1. 使用 CRXDE 開啟您的頁面元件。
+1. 瀏覽至 `cq:dialog` 定義內的所需欄位。
+1. 在欄位節點上定義以下屬性：
 
-   * **名稱**: `allowBulkEdit`
-   * **型別**： `Boolean`
-   * **值**: `true`
+   * **名稱**：`allowBulkEdit`
+   * **類型**：`Boolean`
+   * **值**：`true`
 
-1. 選取 **全部儲存** 以持續儲存您的更新。
+1. 選取「**儲存全部**」即可保留您的更新。
 
 ## 限制 {#limitations}
 
-大量編輯頁面屬性為：
+頁面屬性的批次編輯有以下特性：
 
-* 不適用於即時副本中的頁面。
-* 僅適用於具有相同資源型別的頁面。
+* 不適用於 Live Copy 內的頁面。
+* 僅適用於具有相同資源類型的頁面。

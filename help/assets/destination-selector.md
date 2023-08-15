@@ -3,10 +3,10 @@ title: AEM as a Cloud Service 的目標選擇器
 description: 使用 AEM 目標選擇器顯示和選取可用為原始資產副本的資產。
 contentOwner: Adobe
 role: Admin,User
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1911'
-ht-degree: 93%
+source-wordcount: '1902'
+ht-degree: 86%
 
 ---
 
@@ -144,7 +144,7 @@ interface SelectedDestination {
 
 本範例會示範在 Unified Shell 之下執行 [!DNL Adobe] 應用程式時，或者已經有為進行身份驗證而產生的 `imsToken` 時，應如何搭配非 SUSI 流程使用目標選擇器。
 
-使用以下專案在您的程式碼中加入Destination Selector套件 `script` 標籤，如所示 _第6-15行_ 範例中的。 載入指令碼後， `PureJSSelectors` 全域變數可供使用。 定義目的地選擇器 [屬性](#destination-selector-properties) 如所示 _第16到23行_. 在非 SUSI 流程執行身份驗證需要 `imsOrg` 和 `imsToken` 屬性。`handleSelection` 屬性用於處理選取的資產。若要轉譯目標選擇器，請呼叫 `renderDestinationSelector` 函數，如&#x200B;_第 17 行_&#x200B;所述。目標選擇器會顯示於 `<div>` 容器元素，如&#x200B;_第 21 和 22 行_&#x200B;所示。
+使用以下專案在您的程式碼中加入Destination Selector套件： `script` 標籤，如所示 _第6-15行_ 範例的一部分。 載入指令碼後， `PureJSSelectors` 全域變數可供使用。 定義目的地選擇器 [屬性](#destination-selector-properties) 如所示 _第16-23行_. 在非 SUSI 流程執行身份驗證需要 `imsOrg` 和 `imsToken` 屬性。`handleSelection` 屬性用於處理選取的資產。若要轉譯目標選擇器，請呼叫 `renderDestinationSelector` 函數，如&#x200B;_第 17 行_&#x200B;所述。目標選擇器會顯示於 `<div>` 容器元素，如&#x200B;_第 21 和 22 行_&#x200B;所示。
 
 執行這些步驟後，您即可在您的 [!DNL Adobe] 應用程式中，以非 SUSI 流程使用目標選擇器。
 
@@ -185,19 +185,19 @@ interface SelectedDestination {
 
 | 屬性 | 類型 | 必要 | 預設 | 說明 |
 |---|---|---|---|---|
-| *imsOrg* | 字串 | 是 | | Adobe Identity Management System (IMS) ID 是在為您的組織佈建 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 時所指派的。此 `imsOrg` 需要金鑰才能驗證您要存取的組織是否在Adobe IMS之下。 |
-| *imsToken* | 字串 | 否 | | 用於身份驗證的 IMS 持有人語彙基元。`imsToken` 如果您使用SUSI流程，則不需要使用。 不過，如果您使用非SUSI流程，則需要使用。 |
+| *imsOrg* | 字串 | 是 | | Adobe Identity Management System (IMS) ID 是在為您的組織佈建 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 時所指派的。此 `imsOrg` 需要金鑰才能驗證您要存取的組織是否位於Adobe IMS之下。 |
+| *imsToken* | 字串 | 否 | | 用於身份驗證的 IMS 持有人語彙基元。`imsToken` 如果您使用SUSI流程，則不需要使用。 不過，如果您使用非SUSI流程，則需使用此功能。 |
 | *apiKey* | 字串 | 否 | | 用於存取 AEM Discovery 服務的 API 金鑰。`apiKey` 如果您使用SUSI流程，則不需要使用。 但是，在非 SUSI 流程中即需要。 |
-| *rootPath* | 字串 | 否 | /content/dam/ | 目標選擇器會顯示資產的資料夾路徑。`rootPath` 也可以使用封裝形式。例如，假定路徑如下， `/content/dam/marketing/subfolder/`，目的地選擇器不允許您周遊任何父資料夾，但只會顯示子資料夾。 |
+| *rootPath* | 字串 | 否 | /content/dam/ | 目標選擇器會顯示資產的資料夾路徑。`rootPath` 也可以使用封裝形式。例如，假定路徑如下， `/content/dam/marketing/subfolder/`，目的地選擇器不允許您周遊任何上層資料夾，但只會顯示下層資料夾。 |
 | *hasMore* | 布林值 | 否 | | 當應用程式有更多內容要顯示時，您可以使用此屬性新增載入器，以載入內容並使其顯示在應用程式中。這是一種指示器，表示內容載入正在進行中。 |
 | *orgName* | 布林值 | 否 | | 這指和 AEM 相關的組織名稱 (可能是 orgID) |
 | *initRepoID* | 字串 | 否 | | 這是您要在預設初始檢視中使用的資產存放庫的路徑 |
-| *onCreateFolder* | 字串 | 否 | | 此 `onCreateFolder` 屬性讓您可新增用於在應用程式中新增資料夾的圖示。 |
+| *onCreateFolder* | 字串 | 否 | | 此 `onCreateFolder` 屬性可讓您新增圖示，在應用程式中新增資料夾。 |
 | *onConfirm* | 字串 | 否 | | 這是當您點擊「確認」按鈕時的一種回呼。 |
 | *confirmDisabled* | 字串 | 否 | | 此屬性可控制「確認」按鈕的切換。 |
 | *viewType* | 字串 | 否 | | 此 `viewType` 屬性會用於指定檢視，讓您用於顯示資產。 |
 | *viewTypeOptions* | 字串 | 否 | | 此屬性是否和 `viewType` 屬性相關。您可以指定一個或多個用於顯示資產的檢視。可用的 viewTypeOptions 包含：清單檢視、格線檢視、圖庫檢視、瀑布檢視和樹系檢視。 |
-| *itemNameFormatter* | 字串 | 否 | | 此屬性讓您可將項目名稱格式化 |
+| *itemNameFormatter* | 字串 | 否 | | 此屬性可讓您格式化專案名稱 |
 | *i18nSymbols* | `Object<{ id?: string, defaultMessage?: string, description?: string}>` | 否 |  | 如果 OOTB 翻譯不足以滿足應用程式的需求，您可以公開一個介面，並透過 `i18nSymbols`prop 傳遞您自訂的本地化數值。透過此介面傳遞的值會覆寫已提供的預設翻譯，並改為使用您自己的翻譯。若要執行覆寫，您必須傳遞一個有效的 [Message Descriptor](https://formatjs.io/docs/react-intl/api/#message-descriptor) 物件至您想要覆寫的 `i18nSymbols` 金鑰。 |
 | *inlineAlertSetup* | 字串 | 否 | | 這會新增您要在應用程式中傳遞的警示訊息。例如，新增一則警示訊息，提示您沒有存取此資料夾的權限。 |
 | *intl* | 物件 | 否 | | 目標選擇器可提供預設的 OOTB 翻譯。您可以透過 `intl.locale`prop 提供有效的語言環境字串，以選擇翻譯語言。例如：`intl={{ locale: "es-es" }}`</br></br>支援的語言環境字串遵循 [ISO 639 - 代碼](https://www.iso.org/iso-639-language-codes.html)來選擇代表語言標準名稱的代碼。</br></br>支援的語言環境清單：英文 - &#39;en-us&#39; (預設) 西班牙文 - &#39;es-es&#39; 德文 - &#39;de-de&#39; 法文 - &#39;fr-fr&#39; 義大利文 - &#39;it-it&#39; 日文 - &#39;ja-jp&#39;韓文 - &#39;ko-kr&#39; 葡萄牙文 - &#39;pt-br&#39; 中文 (繁體)- &#39;zh-cn&#39; 中文 (台灣) - &#39;zh-tw&#39; |
@@ -208,7 +208,7 @@ interface SelectedDestination {
 
 ### 範例 1：在目標選擇器中建立資料夾
 
-目標選擇器讓您可建立新的資料夾，以在特定位置上傳、移動或複製資產。
+目的地選擇器可讓您建立新資料夾，以上傳、移動或複製特定位置的資產。
 
 ![create-folder-destination-selector](assets/create-folder-destination-selector.png)
 
@@ -241,7 +241,7 @@ interface SelectedDestination {
 
 ### 搜尋列 {#search-bar}
 
-目標選擇器讓您可以在選取的存放庫中執行資產的全文檢索搜尋。例如，如果您在搜尋列中鍵入關鍵字 `wave`，就會顯示中繼資料屬性中提及 `wave` 關鍵字的所有資產。
+目的地選擇器可讓您在選取的存放庫中執行資產的全文搜尋。 例如，如果您在搜尋列中鍵入關鍵字 `wave`，就會顯示中繼資料屬性中提及 `wave` 關鍵字的所有資產。
 
 ### 排序 {#sorting}
 
@@ -249,7 +249,7 @@ interface SelectedDestination {
 
 ### 資產存放庫 {#assets-repo}
 
-目標選擇器還能讓您檢視 AEM 應用程式中可選存放庫的資料。您可以使用 `repositoryID` 屬性初始化要在目標選擇器的第一個執行個體檢視之目標資料夾的路徑。
+目的地選擇器也可讓您檢視AEM應用程式中您所選存放庫的資料。 您可以使用 `repositoryID` 屬性初始化要在目標選擇器的第一個執行個體檢視之目標資料夾的路徑。
 
 ### 新增尾碼或首碼 {#add-suffix-or-prefix}
 
@@ -257,11 +257,11 @@ interface SelectedDestination {
 
 ### 建立新資料夾 {#create-new-folder}
 
-這讓您可在 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 的目標資料夾中建立新資料夾。
+它可讓您在的目標資料夾中建立新資料夾 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service].
 
 ### 檢視的類型 {#types-of-view}
 
-目標選擇器可讓您以四種不同的檢視方式檢視資產：
+目的地選擇器可讓您以四種不同的檢視檢視檢視資產：
 
 * **![清單檢視](assets/do-not-localize/list-view.png)[!UICONTROL 清單檢視]**：清單檢視在單一欄中顯示可捲動的檔案和資料夾。
 * **![格線檢視](assets/do-not-localize/grid-view.png)[!UICONTROL 格線檢視]**：格線檢視在列與欄的格線中顯示可捲動的檔案和資料夾。
@@ -270,8 +270,8 @@ interface SelectedDestination {
 
 ### 資訊 {#info}
 
-資訊或資訊圖示讓您可檢視選取資產的中繼資料。這會包括各種詳細資訊，例如維度、大小、說明、路徑、修改日期和建立日期。此中繼資訊會在上傳或複製或建立新資產時提供。
+資訊或資訊圖示可讓您檢視所選資產的中繼資料。 這會包括各種詳細資訊，例如維度、大小、說明、路徑、修改日期和建立日期。此中繼資訊會在上傳或複製或建立新資產時提供。
 
 ### 選取資料夾 {#select-folder}
 
-選取資料夾按鈕讓您可選取資產以便在目標選擇器上執行和[屬性](#destination-selector-properties)相關的各種作業。
+「選取資料夾」按鈕可讓您選取要執行各種相關操作的資產 [屬性](#destination-selector-properties) 在目的地選擇器上。

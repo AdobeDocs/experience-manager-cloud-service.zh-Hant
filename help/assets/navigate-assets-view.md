@@ -3,10 +3,10 @@ title: 「[!DNL Assets view]使用者介面」
 description: 了解  [!DNL Assets view] 中的使用者介面和導覽
 role: User
 exl-id: 534a8084-88f7-410e-b872-719e47e62b10
-source-git-commit: 6cb30ffda6c0de04e5cb3d01341b59c9ee75b335
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '896'
-ht-degree: 88%
+source-wordcount: '895'
+ht-degree: 92%
 
 ---
 
@@ -44,11 +44,11 @@ ht-degree: 88%
 * [任務](/help/assets/my-workspace-assets-view.md)：您可以在&#x200B;**我的任務**&#x200B;標籤下檢視指派給您的任務。而您建立的任務則顯示在&#x200B;**指派的任務**&#x200B;標籤下。 此外，您完成的任務位於&#x200B;**已完成的任務**&#x200B;標籤下。
 * [資產](/help/assets/manage-organize-assets-view.md)：在樹狀目錄檢視中您可以存取的所有資料夾清單。
 * **最近檢視的項目**：您最近預覽的資產清單。[!DNL Assets view] 只會顯示您預覽的資產。在瀏覽存放庫檔案或資料夾時，不會顯示捲動過去的資產。
-* [集合](/help/assets/manage-collections-assets-view.md)：集合是Adobe Experience Manager Assets檢視中的一組資產、資料夾或其他集合。 使用收藏集在使用者之間共用資產。和檔案夾不同，收藏集可包含來自不同位置的資產。您可以和使用者共用多個收藏集。每個收藏集都包含資產的參考資料。資產的參考完整性會跨越收藏集來維護。
+* [集合](/help/assets/manage-collections-assets-view.md)：收藏集是Adobe Experience Manager資產檢視中的一組資產、資料夾或其他收藏集。 使用收藏集在使用者之間共用資產。和檔案夾不同，收藏集可包含來自不同位置的資產。您可以和使用者共用多個收藏集。每個收藏集都包含資產的參考資料。資產的參考完整性會跨越收藏集來維護。
 
-* [Insights](/help/assets/manage-reports-assets-view.md#view-live-statistics)：在[!DNL Assets view]，您可以在儀表板上檢視即時深入分析。「資產」檢視可讓您使用「見解」儀表板檢視「資產」檢視環境的即時資料。 您可以查看過去 30 天或過去 12 個月的即時事件度量。
-* **垃圾桶**：列出從 **[!UICONTROL Assets]** 根資料夾刪除的資產。 您可以在「垃圾桶」資料夾中選取資產，將其還原到原始位置或永久刪除。您也可以指定關鍵字或套用標準或自訂篩選器，以搜尋垃圾桶資料夾中的適當資產。 如需使用標準和自訂篩選器的詳細資訊，請參閱 [在「資產」檢視中搜尋資產](/help/assets/search-assets-view.md).
-* **設定**：您可以使用以下專案設定各種資產檢視選項： **設定**，例如中繼資料表單、報表和分類管理。
+* [Insights](/help/assets/manage-reports-assets-view.md#view-live-statistics)：在[!DNL Assets view]，您可以在儀表板上檢視即時深入分析。資產檢視使您能夠使用 Insights 儀表板查看資產檢視環境的即時資料。您可以查看過去 30 天或過去 12 個月的即時事件度量。
+* **垃圾桶**：列出從 **[!UICONTROL Assets]** 根資料夾刪除的資產。 您可以在「垃圾桶」資料夾中選取資產，將其還原到原始位置或永久刪除。您也可以指定關鍵字或套用標準或自訂篩選條件，以搜尋「垃圾桶」資料夾中的適當資產。如需使用標準和自訂篩選器的詳細資訊，請參閱 [在「資產」檢視中搜尋資產](/help/assets/search-assets-view.md).
+* **設定**：您可以使用設定「資產」檢視的各種選項， **設定**，例如中繼資料表單、報表和分類管理。
 
 <!-- TBD: Not sure if we want to publish these right now. CC Libs are beta as per Greg.
 * **Libraries**: Access to [!DNL Adobe Creative Cloud Team] (CCT) Libraries view. This view is visible only if the user is entitled to CCT Libraries.
@@ -78,7 +78,7 @@ ht-degree: 88%
 
 使用、分享或下載資產前，您可以更密切地檢視資產。預覽功能不僅可讓您檢視影像，也可以檢視一些其他支援的資產類型。
 
-若要預覽資產，請選取該資產，然後從頂部的工具列按一下「[!UICONTROL 詳細資訊]」![詳細資訊圖示](assets/do-not-localize/edit-in-icon.png)。您不僅可以檢視資產，也可以檢視其詳細的中繼資料並採取其他動作。
+若要預覽資產，請選取該資產，然後從頂部的工具列按一下「[!UICONTROL 詳細資訊]」![詳細資訊圖示](assets/do-not-localize/edit-in-icon.png)。您不僅可檢視資產，也可檢視其詳細的中繼資料並採取其他動作。
 
 ![預覽資產](assets/preview-asset-2.png)
 
@@ -88,7 +88,7 @@ ht-degree: 88%
 *D：下載資產*
 *E：預覽資產並查看中繼資料資訊*
 *D：進階中繼資料*
-*E：關鍵字和智慧型標記*
+*E：關鍵字和智慧標記*
 *F：註解和註釋*
 *G：檢視與所選資產相關的任務*
 *H：檢視和管理版本*
@@ -114,7 +114,7 @@ Other use cases after previewing.
 
 ## 後續步驟 {#next-steps}
 
-* 使用提供產品意見回饋 [!UICONTROL 意見反應] 「資產」檢視使用者介面中可用的選項
+* 使用資產檢視使用者介面所提供的[!UICONTROL 意見回饋]選項提供產品意見回饋
 
 * 若要提供文件意見回饋，請使用右側邊欄提供的[!UICONTROL 編輯此頁面]![來編輯頁面](assets/do-not-localize/edit-page.png)或[!UICONTROL 記錄問題]![來建立 GitHub 問題](assets/do-not-localize/github-issue.png)
 

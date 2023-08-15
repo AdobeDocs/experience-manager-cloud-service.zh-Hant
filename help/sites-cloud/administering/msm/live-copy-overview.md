@@ -1,13 +1,13 @@
 ---
 title: Live Copy 概觀主控台
-description: 瞭解Live Copy概述控制檯的基本概念，以快速瞭解要同步內容的即時副本的狀態。
+description: 瞭解Live Copy概述主控台的基本知識，以便快速瞭解即時副本的狀態，進而同步內容。
 feature: Multi Site Manager
 role: Admin
 exl-id: 3ef7fbce-10a1-4b21-8486-d3c3706e537c
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '731'
-ht-degree: 90%
+source-wordcount: '729'
+ht-degree: 88%
 
 ---
 
@@ -94,7 +94,7 @@ ht-degree: 90%
 * **[同步](overview.md#rollout-and-synchronize)** - 同步 Live Copy 以將變更從來源推送到 Live Copy。
 * **[重設](creating-live-copies.md#resetting-a-live-copy-page)** - 重設 Live Copy 頁面以刪除所有繼承取消，並將頁面返回到與來源頁面相同的狀態。
 * **[暫停](overview.md#suspending-and-cancelling-inheritance-and-synchronization)** - 暫時停用 Live Copy 與其藍圖頁面之間的即時關係。
-* **[恢復](creating-live-copies.md#resuming-inheritance-for-a-page)** - 恢復允許您回復暫停的關係。
+* **[繼續](creating-live-copies.md#resuming-inheritance-for-a-page)**  — 恢復可讓您恢復暫停的關係。
 * **[分離](overview.md#detaching-a-live-copy)** - 永久移除 Live Copy 與其藍圖頁面之間的即時關係。
 
 ## 關係狀態 {#relationship-status}
@@ -112,6 +112,6 @@ ht-degree: 90%
 
 ### Live Copy {#live-copy-tab}
 
-此索引標籤允許您檢視和編輯 Live Copy 設定。
+此索引標籤可讓您檢視及編輯即時副本設定。
 
 ![Live Copy 索引標籤](../assets/live-copy-relationship-status-live-copy.png)

@@ -2,10 +2,10 @@
 title: 啟動
 description: 啟動可讓您有效率地開發未來版本的內容。可讓您完成變更以供未來發佈，同時維護目前的頁面
 exl-id: 3e410120-d08f-4d05-932f-07bc4440af2b
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '903'
-ht-degree: 100%
+source-wordcount: '902'
+ht-degree: 98%
 
 ---
 
@@ -102,7 +102,7 @@ ht-degree: 100%
 
 ## 啟動主控台 {#the-launches-console}
 
-啟動主控台可提供您啟動的概觀，並允許您對列出的啟動執行動作。主控台可透過以下方式存取：
+「啟動」主控台提供啟動的總覽，並可讓您對列出的啟動執行動作。 主控台可透過以下方式存取：
 
 * **工具**&#x200B;主控台：**工具**、**Sites**、**啟動**。
 

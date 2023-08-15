@@ -4,10 +4,10 @@ description: 在  [!DNL Assets view] 中移動、刪除、複製、重新命名�
 role: User,Leader
 contentOwner: AG
 exl-id: b01e98b9-0cc2-47c5-9f5b-79b8e6bef39f
-source-git-commit: d198b3f0c7d8469a376ba7a3e95e57c84f835dbb
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1036'
-ht-degree: 92%
+source-wordcount: '1034'
+ht-degree: 93%
 
 ---
 
@@ -88,7 +88,7 @@ TBD: query for engineering: How many versions are maintained. What happens when 
 
 **需要的權限：**`Can Edit`、`Owner` 或資產的管理員權限。
 
-資產檢視可讓您對存放庫中可用的資產設定狀態。 設定資產狀態以將數位資產的下游消費控管和管理得更好。
+「資產」檢視可讓您對存放庫中可用的資產設定狀態。 設定資產狀態以將數位資產的下游消費控管和管理得更好。
 
 您可以在資產上設定下列狀態：
 
@@ -111,7 +111,7 @@ TBD: query for engineering: How many versions are maintained. What happens when 
 
 ### 設定資產到期日 {#set-asset-expiration-date}
 
-「資產」檢視也可讓您設定存放庫中可用資產的到期日。 您可以[](search-assets-view.md#refine-search-results) 根據`Expired`資產狀態來篩選搜尋結果。此外，您可以指定資產的有效日期範圍以進一步篩選搜尋結果。
+「資產」檢視也可讓您設定存放庫中可用資產的有效日期。 您可以[](search-assets-view.md#refine-search-results) 根據`Expired`資產狀態來篩選搜尋結果。此外，您可以指定資產的有效日期範圍以進一步篩選搜尋結果。
 
 若要設定資產到期日：
 
@@ -143,7 +143,7 @@ TBD: query for engineering: How many versions are maintained. What happens when 
 
 * [觀看在「資產」檢視中管理資產的相關影片](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/managing.html)
 
-* 使用提供產品意見回饋 [!UICONTROL 意見反應] 「資產」檢視使用者介面中可用的選項
+* 使用資產檢視使用者介面所提供的[!UICONTROL 意見回饋]選項提供產品意見回饋
 
 * 若要提供文件意見回饋，請使用右側邊欄提供的[!UICONTROL 編輯此頁面]![來編輯頁面](assets/do-not-localize/edit-page.png)或[!UICONTROL 記錄問題]![來建立 GitHub 問題](assets/do-not-localize/github-issue.png)
 

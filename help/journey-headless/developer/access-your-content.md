@@ -2,10 +2,10 @@
 title: 如何透過 AEM Delivery API 存取您的內容
 description: 在 AEM Headless 開發人員歷程的這一部分中，了解如何使用 GraphQL 查詢來存取您的內容片段內容。
 exl-id: 1adecc69-5f92-4007-8a2a-65bf1e960645
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '1360'
-ht-degree: 100%
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+workflow-type: tm+mt
+source-wordcount: '1358'
+ht-degree: 99%
 
 ---
 
@@ -49,7 +49,7 @@ GraphQL 是一種開放原始碼的規格，它提供：
 * 查詢語言，使您能夠從結構化物件中選擇特定內容。
 * 執行階段，使用您的結構化內容來完成這些查詢。
 
-GraphQL 是&#x200B;*強*&#x200B;類型 API。這表示&#x200B;*所有*&#x200B;內容必須按類型清楚結構和組織，以便 GraphQL *了解*&#x200B;要存取什麼以及如何存取。資料欄位在 GraphQL 結構描述中定義，其定義內容物件的結構。
+GraphQL是強型別API。 這表示&#x200B;*所有*&#x200B;內容必須按類型清楚結構和組織，以便 GraphQL *了解*&#x200B;要存取什麼以及如何存取。資料欄位在 GraphQL 結構描述中定義，其定義內容物件的結構。
 
 然後，GraphQL 端點提供回應 GraphQL 查詢的路徑。
 
@@ -133,7 +133,7 @@ The use cases for the AEM GraphQL API can depend on the type of AEM as a Cloud S
 
 * 是在定義內容片段模型時可用的特定資料類型。
 * 可參考另一個片段，取決於特定的內容片段模型。
-* 可讓您建立然後擷取結構化資料。
+* 可讓您建立並擷取結構化資料。
 
    * 當定義為 **multifeed** 時，主片段可以參考 (擷取) 多個子片段。
 
@@ -146,7 +146,7 @@ The use cases for the AEM GraphQL API can depend on the type of AEM as a Cloud S
 <!--
 ## GraphQL Schema Generation from Content Fragments {#graphql-schema-generation-content-fragments}
 
-GraphQL is a strongly typed API, which means that content must be clearly structured and organized by type. The GraphQL specification provides a series of guidelines on how to create a robust API for interrogating content on a certain instance. To do this, a client needs to fetch the Schema, which contains all the types necessary for a query. 
+GraphQL is a strongly-typed API, which means that content must be clearly structured and organized by type. The GraphQL specification provides a series of guidelines on how to create a robust API for interrogating content on a certain instance. To do this, a client needs to fetch the Schema, which contains all the types necessary for a query. 
 
 For Content Fragments, the GraphQL schemas (structure and types) are based on **Enabled** Content Fragment Models and their data types.
 

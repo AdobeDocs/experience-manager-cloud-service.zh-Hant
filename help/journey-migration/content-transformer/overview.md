@@ -1,9 +1,9 @@
 ---
 title: 內容轉換器概觀
 description: 瞭解如何使用內容轉換器來偵測並修正BPA回報的內容相關問題。
-source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '393'
+source-wordcount: '392'
 ht-degree: 2%
 
 ---

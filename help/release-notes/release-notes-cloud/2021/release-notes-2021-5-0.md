@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2021.5.0 版發行說明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2021.5.0 版發行說明。'
 exl-id: 3f9d7339-7e37-4702-821e-f2b03cd7e224
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1353'
-ht-degree: 44%
+source-wordcount: '1352'
+ht-degree: 45%
 
 ---
 
@@ -22,30 +22,30 @@ ht-degree: 44%
 
 ## 發行日期 {#release-date}
 
-的發行日期 [!DNL Adobe Experience Manager] as a Cloud Service2021.5.0是2021年5月27日。
+的發行日期 [!DNL Adobe Experience Manager] as a Cloud Service2021.5.0為2021年5月27日。
 下列版本(2021.6.0)將於2021年6月28日發行。
 
 ## AEMas a Cloud Service基礎 {#foundation}
 
 ### AEMas a Cloud Service基礎的新增功能 {#what-is-new-foundation}
 
-* [發行前通道](/help/release-notes/prerelease.md)：在即將上線的功能投入生產之前，先預覽整個月！
+* [發行前通道](/help/release-notes/prerelease.md)：在即將上線的功能投入生產之前，先預覽整整一個月！
 
 * [API淘汰](/help/release-notes/deprecated-apis.md)：提供適用於AEMas a Cloud Service的最新已棄用API清單。
 
-* [AEMas a Cloud ServiceSDK建置分析器Maven外掛程式](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html)：將您的Maven專案更新至最新版本，其中包括已棄用的Java API檢查和其他改進。
+* [AEMas a Cloud ServiceSDK建置分析器Maven外掛程式](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html)：將您的Maven專案更新至最新版本，其中包括已淘汰的Java API檢查和其他改善。
 
 ## [!DNL Adobe Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
 ### [!DNL Sites]的新增功能 {#what-is-new-sites}
 
-* 您很快就會能夠驗證新版本的內容 [預覽階層](/help/sites-cloud/authoring/fundamentals/previewing-content.md) 以模擬最終的體驗外觀，如同您在發佈層級上一樣。 這可由AEM Sites Managed Publication精靈啟用，現在可讓您在發佈或預覽之間選擇發佈目的地。 接著，您就可以透過專用的URL存取預覽體驗。 在「預覽」上進行驗證後，內容可以照常從「作者」發佈到「發佈」。 在AEMas a Cloud Service環境中啟用預覽服務將在未來幾週逐步推出。
+* 您很快就會能夠驗證新版本的內容 [預覽層](/help/sites-cloud/authoring/fundamentals/previewing-content.md) 以模擬最終的體驗外觀，如同您在發佈層級上一樣。 這可透過AEM Sites Managed Publication精靈啟用，現在可讓您在發佈或預覽之間選擇發佈目的地。 接著，您就可以透過專用URL存取「預覽」上的體驗。 在「預覽」上進行驗證後，內容可以如常從「作者」發佈至「發佈」。 在AEMas a Cloud Service環境中啟用預覽服務將在未來幾週逐步推出。
 
 ## [!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ### [!DNL Assets]的新增功能 {#what-is-new-assets}
 
-* 您可以使用「連結共用」功能下載共用的資產。 此下載現在使用非同步服務，提供更快速且無中斷的下載，即使對於非常大型的下載亦然。 另請參閱 [下載資產](/help/assets/download-assets-from-aem.md#link-share-download).
+* 您可以使用「連結共用」功能下載共用的資產。 此下載專案現在使用非同步服務，提供更快速且無中斷的下載專案，即使是大型下載專案亦然。 另請參閱 [下載資產](/help/assets/download-assets-from-aem.md#link-share-download).
 
   ![下載收件匣](/help/assets/assets/download-inbox.png)
 
@@ -57,16 +57,16 @@ ht-degree: 44%
 
 * 資產大量擷取工具可讓您在大量擷取期間新增中繼資料。
 
-* 使用者體驗增強功能會顯示資料夾中存在的資產數量。 若資料夾中有超過1000個資產， [!DNL Assets] 顯示1000+。
+* 使用者體驗增強功能會顯示存在於資料夾中的資產數量。 若資料夾中有超過1000個資產， [!DNL Assets] 顯示1000+。
 
-  ![介面中顯示的資料夾資產數量](/help/assets/assets/browse-folder-number-of-assets.png)
+  ![介面上會顯示資料夾中的資產數量](/help/assets/assets/browse-folder-number-of-assets.png)
 
 ### 修正在[!DNL Assets]中的錯誤 {#assets-bugs-fixed}
 
 * 上傳超大型檔案會當機 [!DNL Experience Manager desktop app]. (CQ-4320942)
-* 當從資料夾中選取相同的集合時，以及當從搜尋結果中選取集合時，工具列選項會不同。 (CQ-4321406)
+* 當從資料夾中選取相同的集合，以及從搜尋結果中選取集合時，工具列選項會不同。 (CQ-4321406)
 
-#### Dynamic Media的新功能 {#what-is-new-dm}
+#### Dynamic Media的新增功能 {#what-is-new-dm}
 
 * 智慧型影像DPR （裝置畫素比）和網路頻寬最佳化可讓您在具有高解析度顯示器且網路頻寬受限的裝置上，有效率地提供最佳品質影像。 如需詳細資訊，請參閱 [智慧型影像常見問題集](/help/assets/dynamic-media/imaging-faq.md) 和 [使用新一代影像格式WebP和AVIF進行影像最佳化。](https://medium.com/adobetech/image-optimisation-with-next-gen-image-formats-webp-and-avif-248c75afacc4)
 * 在Dynamic Media傳送中推出對新一代影像格式AVIF的支援（fmt URL修飾元）。
@@ -80,7 +80,7 @@ ht-degree: 44%
 
 ### [!DNL Forms]即將推出的 Beta 版功能 {#what-is-new-forms-prerelease}
 
-Output as a Cloud service：Output 服務可幫助您合併 XDP 範本和 XML 資料，以產生多種格式的列印文件。 此服務可讓您以同步和非同步批次模式產生文件。 Output 服務可讓您建立以下用途的應用程式：
+Output as a Cloud service：Output 服務可幫助您合併 XDP 範本和 XML 資料，以產生多種格式的列印文件。 此服務可讓您以同步和非同步批次模式產生檔案。 Output 服務可讓您建立以下用途的應用程式：
 
 * 使用 XML 資料填寫範本檔案來產生最終表單文件。
 * 產生多種格式的輸出表單，包括非互動式 PDF 列印資料流。
@@ -101,25 +101,25 @@ Output as a Cloud service：Output 服務可幫助您合併 XDP 範本和 XML �
 
 ### 發行日期 {#release-date-cm-may}
 
-AEM as a Cloud Service 2021.5.0 中的 Cloud Manager 發行日期是 2021 年 5 月 06 日。下一版本計劃於 2021 年 6 月 03 日發行。
+AEM as a Cloud Service 2021.5.0 中的 Cloud Manager 發行日期是 2021 年 5 月 06 日。下一版本計畫於 2021 年 6 月 03 日發行。
 
 ### 新增功能 {#what-is-new-may}
 
-* PackageOverlaps品質規則現在會偵測多次部署了相同套件的情況，也就是在同一個部署的套件組中的多個嵌入式位置。
+* PackageOverlaps 品質規則現在會偵測多次部署了相同套件的情況，也就是在同一個部署的套件組中的多個嵌入式位置。
 
 * 公用 API 中的存放庫端點現在包含 Git URL。
 
-* Cloud Manager使用者下載的部署記錄有更深刻的見解，並包括失敗和成功情境的細節。
+* Cloud Manager使用者下載的部署記錄有更深刻的見解，並包含有關失敗和成功情境的細節。
 
-* 將計劃碼推送到 Adobe Git 時所發生的間歇性失敗狀況現在已經解決了。
+* 將程式碼推送到 Adobe Git 時所發生的間歇性失敗狀況現在已經解決了。
 
-* Commerce 附加元件現在可以在編輯計劃工作流程中套用到沙箱計劃。
+* Commerce 附加元件現在可以在編輯計畫工作流程中套用到沙箱計畫。
 
-* 編輯計劃體驗已更新。
+* 編輯計畫體驗已更新。
 
 * 「環境詳細資訊」頁面中的「網域名稱」表格可透過分頁顯示多達 250 個網域名稱。
 
-* 「新增計畫」和「編輯計畫」工作流程中的「解決方案」索引標籤將顯示解決方案，即使該計畫只有一個解決方案可用。
+* 「新增計畫」和「編輯計畫」工作流程中的「解決方案」索引標籤會顯示解決方案，即便該計畫只有一個解決方案可用。
 
 * 當建置未產生任何已部署的內容套件時，建置步驟記錄中的錯誤訊息不清楚。
 
@@ -129,13 +129,13 @@ AEM as a Cloud Service 2021.5.0 中的 Cloud Manager 發行日期是 2021 年 5 
 
 * 管道變數 API 不會移除「已刪除」的變數，而是只會用狀態將其標記為&#x200B;**已刪除**。
 
-* 部分計劃碼異味類型的品質問題錯誤地影響了可靠性評等。
+* 部分程式碼異味類型的品質問題錯誤地影響了可靠性評等。
 
 * 由於不支援萬用字元網域，UI 將不允許使用者提交萬用字元網域。
 
 * 在 UTC 午夜和凌晨 1 點之間開始執行管道時，不能保證 Cloud Manager 產生的成品版本大於前一天建立的版本。
 
-* 在沙箱計畫設定過程中，成功建立包含範例計劃碼的專案後，管理 Git 將顯示為總覽頁面中英雄卡的連結。
+* 在沙箱計畫設定過程中，成功建立包含範例程式碼的專案後，管理 Git 將顯示為概觀頁面中英雄卡的連結。
 
 ## 內容轉移工具 {#content-transfer-tool}
 
@@ -151,9 +151,9 @@ AEM as a Cloud Service 2021.5.0 中的 Cloud Manager 發行日期是 2021 年 5 
 
 ### 錯誤修正 {#bug-fixes-ctt-latest}
 
-* 刪除移轉集時，CTT UI中偶爾會顯示無用的錯誤訊息。 此問題已修正。
+* 刪除移轉集時，CTT UI中偶爾會顯示一則無用的錯誤訊息。 此問題已修正。
 
-* 執行使用者對應時，如果使用者在目標與主機上擁有相同的電子郵件地址，但使用者名稱不同，則整個擷取作業將會失敗。 此問題已修正。 在此衝突情況下，使用者/群組會被略過，並在記錄檔中記錄為衝突。
+* 執行使用者對應時，如果使用者在目標與主機上擁有相同的電子郵件地址，但使用者名稱不同，則整個內嵌都會失敗。 此問題已修正。 在此衝突情況下，使用者/群組會被略過，並記錄為記錄檔案中的衝突。
 
 ### 發行日期 {#release-date-ctt}
 
@@ -161,12 +161,12 @@ AEM as a Cloud Service 2021.5.0 中的 Cloud Manager 發行日期是 2021 年 5 
 
 ### 新增功能 {#what-is-new-ctt-may}
 
-* 此版本的「內容轉移工具」會為移轉至Cloud Service的資產建立文字轉譯。 需要文字轉譯才能支援對所擷取的資產進行全文搜尋。
+* 此版本的「內容轉移工具」會針對正移轉至Cloud Service的資產建立文字轉譯。 需要文字轉譯才能支援對所擷取的資產進行全文搜尋。
 * 使用者可建立的內容轉移工具移轉集數量上限已從4個增加到10個。
 
 ### 錯誤修正 {#bug-fixes-ctt-may}
 
-* 與「內容轉移工具」UI中的自動重新整理功能相關的多項錯誤修正。
+* 和內容轉移工具UI中的自動重新整理功能相關的多項錯誤修正。
 * 內容轉移工具，搭配 `wipe=true` 導致目標上的計數器索引不正確。 此問題已修正。
 
 ## Commerce附加元件 {#cloud-services-commerce}
@@ -179,4 +179,4 @@ AEM as a Cloud Service 2021.5.0 中的 Cloud Manager 發行日期是 2021 年 5 
 
 * 資產縮圖未顯示在產品屬性的「資產」標籤中
 
-* 階層連結會在產品主控台中重設預覽資料
+* 階層連結在產品主控台中重設預覽資料

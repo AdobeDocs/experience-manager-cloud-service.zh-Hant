@@ -2,7 +2,7 @@
 title: 將內容片段匯出到 Adobe Target
 description: 瞭解如何將您的內容片段匯出至Adobe Target，以測試並個人化體驗。
 exl-id: 760e0a39-0805-498e-a2c9-038fd1e1058d
-source-git-commit: 964599b919a7299da33a5f0ac72ad5ea644097d8
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '2231'
 ht-degree: 1%
@@ -46,7 +46,7 @@ ht-degree: 1%
 >
 >Adobe Target工作區可用來允許組織（群組）的成員僅針對此組織建立和管理優惠方案及活動，不將存取權授予其他使用者。 例如，全球關注的國家/地區特定組織。
 
-## 必備條件 {#prerequisites}
+## 先決條件 {#prerequisites}
 
 需要下列動作：
 
@@ -81,7 +81,7 @@ ht-degree: 1%
    >
    >如果您將雲端設定新增至內容片段本身，該設定會由所有變數繼承。
 
-1. 選取 **Cloud Services** 標籤。
+1. 選取 **Cloud Service** 標籤。
 
 1. 在 **Cloud Service設定**，選取 **Adobe Target** 下拉式清單中的。
 
@@ -112,7 +112,7 @@ ht-degree: 1%
 
    <!-- need a new screenshot -->
 
-   ![資料夾 — Cloud Services](assets/cf-target-integration-01.png "資料夾 — Cloud Services")
+   ![資料夾 — Cloud Service](assets/cf-target-integration-01.png "資料夾 — Cloud Service")
 
 1. **儲存並關閉**.
 
@@ -136,7 +136,7 @@ ht-degree: 1%
 
 使用以下程式，在AEM中建立Target雲端設定：
 
-1. 瀏覽至 **舊版Cloud Services** 透過 **AEM標誌** > **工具** > **Cloud Services** > **舊版Cloud Services**.
+1. 瀏覽至 **舊版Cloud Service** 透過 **AEM標誌** > **工具** > **Cloud Service** > **舊版Cloud Service**.
 例如：([http://localhost:4502/libs/cq/core/content/tools/cloudservices.html](http://localhost:4502/libs/cq/core/content/tools/cloudservices.html))
 
    此 **Adobe Experience Cloud** 概觀頁面隨即開啟。
@@ -304,7 +304,7 @@ When you associate a page with the framework, the child pages inherit the associ
 
    >[!NOTE]
    >
-   >If the framework you attached to the page was not activated yet, a wizard opens which allows you to publish it as well.
+   >If the framework you attached to the page was not activated yet, a wizard opens which lets you publish it as well.
 -->
 
 ## 將內容片段匯出至Adobe Target {#exporting-a-content-fragment-to-adobe-target}

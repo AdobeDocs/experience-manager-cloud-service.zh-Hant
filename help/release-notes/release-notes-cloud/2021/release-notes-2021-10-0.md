@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2021.10.0 版發行說明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2021.10.0 版發行說明。'
 exl-id: ab584923-5f06-4b54-941b-e00bc1158b81
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1438'
-ht-degree: 67%
+source-wordcount: '1437'
+ht-degree: 69%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 67%
 ## 發行日期 {#release-date}
 
 的發行日期 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 目前版本(2021.10.0)為2021年11月4日。
-以下版本(2021.11.0)將於2021年12月2日發行。
+下列版本(2021.11.0)將於2021年12月2日發行。
 
 ## 發行影片 {#release-video}
 
@@ -34,17 +34,17 @@ ht-degree: 67%
 
 ### 中的新功能 [!DNL Sites] {#sites-features}
 
-* 內容片段模型現在會在發佈後自動設定為唯讀狀態，以避免重新發佈已編輯的模型後意外中斷即時API查詢。 嘗試編輯已發佈的模型時，系統會提示使用者警告。 接受警告後即可進行編輯。
+* 內容片段模型現在會在發佈後自動設為唯讀狀態，以避免重新發佈已編輯的模型後，無意中中斷即時API查詢。 嘗試編輯已發佈的模型時，系統會提示使用者警告。 接受警告後即可進行編輯。
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ### [!DNL Assets] 中的新功能 {#assets-features}
 
-* [!DNL Experience Manager] 現在支援使用內建聯結器從支援的音訊和視訊資產自動產生文字記錄，用於 [!DNL Azure Media Services]. 此 [支援的檔案型別](/help/assets/file-format-support.md#audio-video-transcription-formats) 會自動轉譯，且文字會以WebVTT格式儲存。 WebVTT註解可用於更有效的搜尋、註解或翻譯。 此外，功能可改善資產的協助工具、可發現性和本地化。
+* [!DNL Experience Manager] 現在支援使用內建聯結器從支援的音訊和視訊資產自動產生文字記錄，以 [!DNL Azure Media Services]. 此 [支援的檔案型別](/help/assets/file-format-support.md#audio-video-transcription-formats) 會自動轉譯，且文字會以WebVTT格式儲存。 WebVTT註解可用於更有效的搜尋、註解或翻譯。 此外，功能可改善資產的協助工具、可發現性和本地化。
 
 ### 中的新功能 [!DNL Assets] 發行前通道 {#assets-prerelease-features}
 
-* [!DNL Dynamic Media] 「影像智慧型裁切和色票」現在由最新的Sensei服務提供支援，可產生改良的裁切和色票。 此外，已啟動增強功能，針對相同縱橫比但跨不同解析度產生不同的裁切內容。 此外，如果「影像設定檔」中的寬度和高度沒有變化，則在重新處理時會保留任何手動編輯。
+* [!DNL Dynamic Media] 影像智慧型裁切和色票現在由Sensei最新服務提供支援，可製作出更佳裁切和色票成果。 此外，已啟動增強功能以產生相同縱橫比但跨不同解析度的不同裁切內容。 此外，如果「影像設定檔」中的寬度和高度沒有變化，則在重新處理時會保留任何手動編輯。
 
 * 智慧標籤會自動套用至使用資產微服務的資產，而非智慧內容服務。 基礎模型已更新，以改善標籤結果並減少偏差。 <!-- As it uses asset microservices, it is now possible to develop custom workers using Stock10-based Smart Tags. -->
 
@@ -66,7 +66,7 @@ No customer-reported bugs fixed in Oct release. Details in CQDOC-18404.
 
 ### [!DNL Forms]的 Beta 版功能 {#what-is-new-forms-oct2021-beta}
 
-* **[!DNL AEM Forms as a Cloud Service - Communications]**：[通訊 API](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/using-communications/aem-forms-cloud-service-communications.html) 可幫助您合併範本和 XML 資料，以產生多種格式的列印文件。 此服務可讓您以同步和批次模式產生文件。 這些 API 可讓您建立以下用途的應用程式：
+* **[!DNL AEM Forms as a Cloud Service - Communications]**：[通訊 API](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/using-communications/aem-forms-cloud-service-communications.html) 可幫助您合併範本和 XML 資料，以產生多種格式的列印文件。 此服務可讓您以同步和批次模式產生檔案。 這些 API 可讓您建立以下用途的應用程式：
 
    * 使用 XML 資料填寫範本檔案 (PDF 和 XDP) 來產生文件。
    * 產生多種格式的輸出表單，包括非互動式 PDF 列印資料流。
@@ -83,7 +83,7 @@ No customer-reported bugs fixed in Oct release. Details in CQDOC-18404.
 
 * 現有的彈出式購物車和結帳頁面已替換為專用的AEM購物車和結帳頁面。 這些頁面上的元件是使用Adobe Commerce的可擴充Peregrine元件所建置
 
-* 商家可以使用Commerce後端在導覽中隱藏某些產品目錄類別。 CIF導覽核心元件遵循商務後端設定「包含在功能表中」以在導覽中顯示/隱藏類別
+* 商家可以使用Commerce後端隱藏導覽中的特定產品目錄類別。 CIF導覽核心元件依照商務後端設定「包含在功能表中」以在導覽中顯示/隱藏類別
 
 * 如果找不到類別或產品頁面，AEM Storefront Venia會傳回HTTP 404錯誤
 
@@ -97,16 +97,16 @@ AEM as a Cloud Service 2021.11.0 中的 Cloud Manager 發行日期是 2021 年 1
 
 ### 新增功能 {#what-is-new-cm-nov}
 
-* 使用者現在可以使用新的前端管道以加速的方式專門部署前端計畫碼。 請參閱 [Cloud Manager 前端管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end)來了解更多資訊。
+* 使用者現在可以使用新的前端管道以加速的方式專門部署前端代碼。請參閱 [Cloud Manager 前端管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end)來了解更多資訊。
 
   >[!IMPORTANT]
-  >您必須使用AEM版本 `2021.10.5933.20211012T154732Z` 使用新的前端管道。
+  >您必須使用 AEM 版本 `2021.10.5933.20211012T154732Z` 才可使用最新的前端管道。
 
-* 透過以更有效的方式執行計劃碼分析來顯著減少計劃碼品質管道期限，而不需要建置整個 AEM 影像。此變更會在發佈後的未來幾週內逐步展開。
+* 透過以更有效的方式執行程式碼分析來顯著減少程式碼品質管道期限，而不需要建置整個 AEM 影像。此變更會在發佈後的未來幾週內逐步展開。
 
-* Git 認可識別碼現在會顯示在管道執行詳細資訊中，如此將更易追蹤產生的計劃碼。
+* Git 認可識別碼現在會顯示在管道執行詳細資訊中，如此將更易追蹤產生的程式碼。
 
-* 計劃建立現在可以透過公開顯示的 API 獲得。
+* 計畫建立現在可以透過公開顯示的 API 獲得。
 
 * 環境建立現在可以透過公開顯示的 API 獲得。
 
@@ -114,7 +114,7 @@ AEM as a Cloud Service 2021.11.0 中的 Cloud Manager 發行日期是 2021 年 1
 
 * 身為使用者，零管道的管道卡為我提供了適當的指引。
 
-* 新活動頁面現已可用，其中可以查看管道和計劃碼執行等活動及其關聯的詳細資訊。長期下來，此頁面所列活動範圍會擴展，並提供詳細資訊。
+* 新活動頁面現已可用，其中可以查看管道和程式碼執行等活動及其關聯的詳細資訊。長期下來，此頁面所列活動範圍會擴展，並提供詳細資訊。
 
 * 新管道現在可以使用懸浮「狀態跨距」(status popover) 來輕鬆查看詳細資訊摘要。可以查看管道執行及其相關詳細資訊。
 
@@ -134,7 +134,7 @@ AEM as a Cloud Service 2021.11.0 中的 Cloud Manager 發行日期是 2021 年 1
 
 * 達到最大存放庫數時的錯誤訊息未指定錯誤原因。
 
-* 在極少數情況下，由於對某些回應計劃碼的重試處理不當，管道會失敗。
+* 在極少數情況下，由於對某些回應程式碼的重試處理不當，管道會失敗。
 
 
 ## 發行日期 {#release-date-cm-oct}
@@ -155,9 +155,9 @@ AEM as a Cloud Service 2021.10.0 中的 Cloud Manager 發行日期是 2021 年 1
 
 * 現在可以從 Cloud Manager 的使用者界面下載年度 SLA 圖表。
 
-* 計劃碼品質和非生產管道執行現在將在構建步驟中使用更有效的淺層克隆過程，從而為擁有特別大的 git 存放庫的客戶帶來更快的構建時間。
+* 程式碼品質和非生產管道執行現在將在構建步驟中使用更有效的淺層克隆過程，從而為擁有特別大的 git 存放庫的客戶帶來更快的構建時間。
 
-* 新增 IP 允許清單嚮導現在將通知使用者是否已達到 IP 允許清單的最大允許數量。
+* 新增 IP 允許清單精靈現在將通知使用者是否已達到 IP 允許清單的最大允許數量。
 
 * Cloud Manager API 文件現在包括一個交互式遊樂場，允許登入使用者從他們的瀏覽器中試驗 API。查看 [Cloud Manager API Playground](https://www.adobe.io/experience-cloud/cloud-manager/reference/playground/) 的更多細節。
 

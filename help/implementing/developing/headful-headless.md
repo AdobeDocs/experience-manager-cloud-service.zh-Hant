@@ -2,10 +2,10 @@
 title: AEM Headful 和 Headless 技術
 description: AEM 專案可以在 Headful 和 Headless 模型中實作，但這不必是二選一。AEM 提供了在一個專案中利用兩種模型優勢的靈活性。
 exl-id: 709850ca-7757-47ab-9625-f411121cde2c
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '1010'
-ht-degree: 100%
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+workflow-type: tm+mt
+source-wordcount: '1013'
+ht-degree: 96%
 
 ---
 
@@ -19,7 +19,7 @@ AEM 提供了強大的工具來在單一平台管理內容的建立和傳遞。�
 
 AEM 還可用於簡單地管理內容，允許由另一個平台管理內容的呈現和傳遞作業。這是內容管理的「 Headless 」模型，內容作者和開發人員在不同平台上工作，將體驗傳遞給內容取用者。
 
-但這不必是二選一。AEM 提供了前所未有的靈活性，使您能夠在專案中利用這兩種模型的優勢。
+但這不需要是二進位選擇。 AEM 提供了前所未有的靈活性，使您能夠在專案中利用這兩種模型的優勢。
 
 ![AEM 實作模型](/help/headless/assets/aem-implementation-models.png)
 
@@ -27,7 +27,7 @@ AEM 還可用於簡單地管理內容，允許由另一個平台管理內容的�
 
 在 Headless 模型中，內容在 AEM 存放庫中管理，但透過 REST 和 GraphQL 等 API 傳遞到另一個系統以呈現內容以提供使用者體驗。在此模型中，內容是在 AEM 中建立，但樣式設定、內容的呈現和傳遞都在另一個平台進行。
 
-單頁應用程式 (SPA) 通常是 AEM Headless 傳遞內容的目的地。但是，這些 SPA 不必完全在 AEM 外部。AEM 允許您決定您的 SPA 整合到 AEM 中的程度。讓我們舉個例子。
+單頁應用程式 (SPA) 通常是 AEM Headless 傳遞內容的目的地。不過，這些SPA不需要完全位於AEM外部。 AEM可讓您決定SPA與AEM整合的程度。 讓我們舉個例子。
 
 ## 網路商店範例 {#web-shop-example}
 

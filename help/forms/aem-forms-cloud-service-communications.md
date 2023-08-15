@@ -2,9 +2,9 @@
 title: AEM Formsas a Cloud Service — 通訊
 description: 自動將資料與 XDP 和 PDF 範本合併，或產生 PCL、ZPL 和 PostScript 格式的輸出
 exl-id: 9fa9959e-b4f2-43ac-9015-07f57485699f
-source-git-commit: 33e59ce272223e081710294a2e2508edb92eba52
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '684'
+source-wordcount: '683'
 ht-degree: 7%
 
 ---
@@ -12,15 +12,15 @@ ht-degree: 7%
 
 # 使用同步處理 {#sync-processing-introduction}
 
-Formsas a Cloud Service- Communications API可讓您建立、彙編及提供品牌導向和個人化的通訊，例如商業往來函、檔案、報表、索賠處理信函、利益通知、索賠處理信函、每月帳單和歡迎套件。 您可以使用Communications API將範本(XFA或PDF)與客戶資料結合，以產生PDF、PS、PCL、DPL、IPL和ZPL格式的檔案。
+Formsas a Cloud Service- Communications API可讓您建立、彙總及提供品牌導向和個人化通訊，例如業務往來函、檔案、報表、索賠處理信函、利益通知、索賠處理信函、每月帳單和歡迎套件。 您可以使用Communications API將範本(XFA或PDF)與客戶資料結合，以產生PDF、PS、PCL、DPL、IPL和ZPL格式的檔案。
 
 假設您有一或多個範本，且每個範本有多個XML資料記錄。 您可以使用Communications API為每筆記錄產生列印檔案。 <!-- You can also combine the records into a single document. --> 結果會產生非互動式PDF檔案。 非互動式PDF檔案不允許使用者在其欄位中輸入資料。
 
-Formsas a Cloud Service — 通訊功能提供隨選和批次API （非同步API），用於產生排程檔案：
+Formsas a Cloud Service — 通訊提供隨選和批次API （非同步API），用於產生排程檔案：
 
 * 同步API適用於隨選、低延遲和單一記錄檔案產生使用案例。 這些 API 更適合根據使用者動作的使用案例。例如，在使用者填寫表單後產生檔案。
 
-* 批次API （非同步API）適用於排程的高輸送量多檔案產生使用案例。 這些 API 批次產生文件。例如，每月產生的電話帳單、信用卡報表和福利報表。
+* 批次API （非同步API）適合用於排程的高輸送量多檔案產生使用案例。 這些 API 批次產生文件。例如，每月產生的電話帳單、信用卡報表和福利報表。
 
 ## 使用同步作業 {#batch-operations}
 
@@ -41,19 +41,19 @@ Formsas a Cloud Service — 通訊功能提供隨選和批次API （非同步API
 
 單一租使用者API操作支援兩種型別的驗證：
 
-* **基本驗證**：基本驗證是內建在HTTP通訊協定中的簡單驗證配置。 使用者端傳送的HTTP要求具有Authorization標頭，其中包含字詞Basic，後跟空格和base64編碼的字串username：password。 例如，若要以管理員/管理員身分授權，使用者端會傳送「基本」 [base64編碼字串使用者名稱]： [base64編碼字串密碼].
+* **基本驗證**：基本驗證是內建在HTTP通訊協定中的簡單驗證配置。 使用者端傳送的HTTP要求具有Authorization標頭，其中包含Basic這個字，後面接著space和base64編碼的字串username：password。 例如，若要授權為管理員/管理員，使用者端會傳送「基本」 [base64編碼字串使用者名稱]： [base64編碼的字串密碼].
 
-* **權杖型驗證：** 權杖型驗證使用存取權杖（持有者驗證權杖）來向as a Cloud ServiceExperience Manager發出請求。 AEM Formsas a Cloud Service提供API來安全地擷取存取Token。 若要擷取並使用權杖來驗證請求：
+* **權杖型驗證：** 權杖型驗證使用存取權杖（持有者驗證權杖）向Experience Manager發出as a Cloud Service請求。 AEM Formsas a Cloud Service提供API以安全地擷取存取Token。 若要擷取並使用權杖來驗證請求：
 
    1. [從開發人員控制檯擷取Experience Manageras a Cloud Service認證](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html).
    1. [在您的環境中安裝Experience Manageras a Cloud Service認證](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html). (應用程式伺服器、Web伺服器或其他非AEM伺服器)設定為傳送要求給（進行呼叫）雲端服務。
    1. [產生JWT權杖並與Adobe IMS API交換存取權杖](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html).
-   1. 以存取權杖作為持有者驗證權杖執行Experience ManagerAPI。
+   1. 以存取權杖作為持有者驗證權杖來執行Experience ManagerAPI。
    1. [在Experience Manager環境中為技術帳戶使用者設定適當的許可權](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=en#configure-access-in-aem).
 
-   >[!NOTE]
-   >
-   >Adobe建議在生產環境中使用權杖型驗證。
+  >[!NOTE]
+  >
+  >Adobe建議在生產環境中使用權杖型驗證。
 
 <!-- 
 
@@ -122,11 +122,11 @@ While it is possible to do the entire JWT generation and exchange process in cus
 若要使用同步API，需具備下列條件：
 
 * 具有Experience Manager管理員許可權的使用者
-* 將範本和其他資產上傳至您的Experience Manager FormsCloud Service執行個體
+* 將範本和其他資產上傳到您的Experience Manager FormsCloud Service執行個體
 
-### （僅適用於Document Generation API）上傳範本和其他資產至您的Experience Manager執行個體
+### （僅適用於Document Generation API）將範本和其他資產上傳至您的Experience Manager執行個體
 
-組織通常有多個範本。 例如，信用卡對帳單、福利對帳單及索賠申請各一個範本。 將所有此類XDP和PDF範本上傳到您的Experience Manager執行個體。 若要上傳範本：
+組織通常有多個範本。 例如，信用卡對帳單、福利對帳單，以及索賠申請各有一個範本。 將所有這類XDP和PDF範本上傳到您的Experience Manager執行個體。 若要上傳範本：
 
 1. 開啟您的Experience Manager執行個體。
 1. 前往「Forms > Forms和檔案」
@@ -135,7 +135,7 @@ While it is possible to do the entire JWT generation and exchange process in cus
 
 ### 叫用API
 
-此 [API參考檔案](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/) 提供API所提供的所有引數、驗證方法及其他各種服務的詳細資訊。 API參考檔案也提供.yaml格式的API定義檔案。 您可以下載.yaml檔案並將其上傳到 [Postman](https://www.postman.com/) 檢查API的功能。
+此 [API參考檔案](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/) 提供API提供的所有引數、驗證方法和各種服務的詳細資訊。 API參考檔案也提供.yaml格式的API定義檔案。 您可以下載.yaml檔案並將其上傳到 [Postman](https://www.postman.com/) 以檢查API的功能。
 
 >[!VIDEO](https://video.tv.adobe.com/v/335771)
 

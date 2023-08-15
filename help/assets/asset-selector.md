@@ -4,10 +4,10 @@ description: 在應用程式內使用資產選擇器搜尋、查找和檢索資�
 contentOwner: Adobe
 role: Admin,User
 exl-id: b968f63d-99df-4ec6-a9c9-ddb77610e258
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2379'
-ht-degree: 94%
+source-wordcount: '2373'
+ht-degree: 91%
 
 ---
 
@@ -223,7 +223,7 @@ The `ImsAuthProps` properties define the authentication information and flow tha
 
 本範例示範在 Unified Shell 之下執行 [!DNL Adobe] 應用程式時，或者在已經產生用於身份驗證的 `imsToken` 時，如何搭配非 SUSI 流程使用資產選擇器。
 
-使用以下專案在您的程式碼中加入Asset Selector套件 `script` 標籤，如所示 _第6-15行_ 範例中的。 在載入指令碼後，即可使用 `PureJSSelectors` 全域變數。定義資產選擇器 [屬性](#asset-selector-properties) 如所示 _第16到23行_. 在非 SUSI 流程執行身份驗證需要 `imsOrg` 和 `imsToken` 屬性。`handleSelection` 屬性用於處理選取的資產。要轉譯資產選擇器，請呼叫 `renderAssetSelector` 函數，如&#x200B;_第 17 行_&#x200B;所述。資產選擇器顯示於 `<div>` 容器元素，如&#x200B;_第 21 和 22 行_&#x200B;所示。
+使用以下專案在您的程式碼中加入Asset Selector套件： `script` 標籤，如所示 _第6-15行_ 範例的一部分。 在載入指令碼後，即可使用 `PureJSSelectors` 全域變數。定義資產選擇器 [屬性](#asset-selector-properties) 如所示 _第16-23行_. 在非 SUSI 流程執行身份驗證需要 `imsOrg` 和 `imsToken` 屬性。`handleSelection` 屬性用於處理選取的資產。要轉譯資產選擇器，請呼叫 `renderAssetSelector` 函數，如&#x200B;_第 17 行_&#x200B;所述。資產選擇器顯示於 `<div>` 容器元素，如&#x200B;_第 21 和 22 行_&#x200B;所示。
 
 透過執行這些步驟，您可以在您的 [!DNL Adobe] 應用程式中，以非 SUSI 流程使用資產選擇器。
 
@@ -360,11 +360,11 @@ Asset Selector is rendered on the `<div>` container element, as mentioned in *li
 
 | 屬性 | 類型 | 必要 | 預設 | 說明 |
 |---|---|---|---|---|
-| *rail* | 布林值 | 否 | false | 若已標籤 `true`，資產選擇器會呈現在左側欄檢視中。 如果已標示 `false`，資產選擇器會在強制回應檢視中呈現。 |
-| *imsOrg* | 字串 | 是 | | Adobe Identity Management System (IMS) ID 是在為您的組織佈建 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 時所指派的。此 `imsOrg` 需要金鑰才能驗證您要存取的組織是否在Adobe IMS之下。 |
+| *rail* | 布林值 | 否 | false | 若已標籤 `true`，資產選擇器會在左側邊欄檢視中轉譯。 若已標籤 `false`，資產選擇器會在模組檢視中呈現。 |
+| *imsOrg* | 字串 | 是 | | Adobe Identity Management System (IMS) ID 是在為您的組織佈建 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 時所指派的。此 `imsOrg` 需要金鑰才能驗證您要存取的組織是否位於Adobe IMS之下。 |
 | *imsToken* | 字串 | 否 | | 用於身份驗證的 IMS 持有人語彙基元。如果您使用的是非 SUSI 流程，則需要 `imsToken`。 |
 | *apiKey* | 字串 | 否 | | 用於存取 AEM Discovery 服務的 API 金鑰。如果您使用的是非 SUSI 流程，則需要 `apiKey`。 |
-| *rootPath* | 字串 | 否 | /content/dam/ | 資產選擇器顯示資產的資料夾路徑。`rootPath` 也可以使用封裝形式。例如，假定路徑如下， `/content/dam/marketing/subfolder/`，Asset Selector不允許您周遊任何上層資料夾，但只會顯示下層資料夾。 |
+| *rootPath* | 字串 | 否 | /content/dam/ | 資產選擇器顯示資產的資料夾路徑。`rootPath` 也可以使用封裝形式。例如，假定路徑如下， `/content/dam/marketing/subfolder/`，Asset Selector不允許您周遊任何上層資料夾，只會顯示下層資料夾。 |
 | *path* | 字串 | 否 | | 在呈現資產選擇器時，用於導覽到特定資產目錄的路徑。 |
 | *filterSchema* | 陣列 | 否 | | 用於設定篩選器屬性的模式。這可用於想要限制資產選擇器中的特定篩選器選項時。 |
 | *filterFormProps* | 物件 | 否 | | 指定用於調整搜尋所需的篩選器屬性。例如，MIME 類型 JPG、PNG、GIF。 |
@@ -373,7 +373,7 @@ Asset Selector is rendered on the `<div>` container element, as mentioned in *li
 | *i18nSymbols* | `Object<{ id?: string, defaultMessage?: string, description?: string}>` | 否 |                 | 如果 OOTB 翻譯不足以滿足應用程式的需求，您可以公開一個介面，並透過 `i18nSymbols`prop 傳遞您自訂的本地化數值。透過此介面傳遞的值會覆寫已提供的預設翻譯，並改為使用您自己的翻譯。若要執行覆寫，您必須傳遞一個有效的 [Message Descriptor](https://formatjs.io/docs/react-intl/api/#message-descriptor) 物件至您想要覆寫的 `i18nSymbols` 金鑰。 |
 | *intl* | 物件 | 否 | | 資產選擇器提供預設的 OOTB 翻譯。您可以透過 `intl.locale`prop 提供有效的語言環境字串，以選擇翻譯語言。例如：`intl={{ locale: "es-es" }}`</br></br>支援的語言環境字串遵循 [ISO 639 - 代碼](https://www.iso.org/iso-639-language-codes.html)來選擇代表語言標準名稱的代碼。</br></br>支援的語言環境清單：英文 - &#39;en-us&#39; (預設) 西班牙文 - &#39;es-es&#39; 德文 - &#39;de-de&#39; 法文 - &#39;fr-fr&#39; 義大利文 - &#39;it-it&#39; 日文 - &#39;ja-jp&#39;韓文 - &#39;ko-kr&#39; 葡萄牙文 - &#39;pt-br&#39; 中文 (繁體)- &#39;zh-cn&#39; 中文 (台灣) - &#39;zh-tw&#39; |
 | *repositoryId* | 字串 | 否 | &#39;&#39; | 資產選擇器從中載入內容的存放庫。 |
-| *additionalAemSolutions* | `Array<string>` | 否 | [ ] | 允許您新增其他的 AEM 存放庫清單。如果此屬性未提供任何資訊，則僅考慮媒體資料庫或 AEM Assets 存放庫。 |
+| *additionalAemSolutions* | `Array<string>` | 否 | [ ] | 它可讓您新增其他AEM存放庫的清單。 如果此屬性未提供任何資訊，則僅考慮媒體資料庫或 AEM Assets 存放庫。 |
 | *hideTreeNav* | 布林值 | 否 |  | 指定顯示或隱藏資產樹導覽側邊欄。那僅用於模組視圖，因此，此屬性在邊欄視圖中沒有影響。 |
 | *onDrop* | 函數 | 否 | | 該屬性允許資產的放置功能。 |
 | *dropOptions* | `{allowList?: Object}` | 否 | | 使用 &#39;allowList&#39; 設定放置選項。 |
@@ -411,7 +411,7 @@ Use the `path` property to define the folder name that displays automatically wh
 
 ### 範例 3：邊欄視圖中的自訂篩選器屬性
 
-除了多面搜尋，資產選擇器讓您自訂各種屬性，讓您在 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 應用程式的搜尋更精準。您必須新增以下代碼，以便在應用程式中新增自訂搜尋篩選器。在下面的範例中，`Type Filter`在影像、文件或影片中篩選資產類型，或為搜尋新增篩選器類型的搜尋。
+除了多面向搜尋之外，Assets選擇器可讓您自訂各種屬性，以縮小您的搜尋範圍 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 應用程式。 您必須新增以下代碼，以便在應用程式中新增自訂搜尋篩選器。在下面的範例中，`Type Filter`在影像、文件或影片中篩選資產類型，或為搜尋新增篩選器類型的搜尋。
 
 ![custom-filter-example-vanilla](assets/custom-filter-example-vanilla.png)
 
@@ -509,7 +509,7 @@ For the detailed example of Object Schema, click
 
 ### 存放庫切換器 {#repository-switcher}
 
-資產選擇器讓您可以切換存放庫，以進行資產選擇。您可以從左側面板中的下拉清單中選擇您要的存放庫。下拉清單中可用的存放庫選項是根據`repositoryId``index.html`檔案中定義的屬性。那是根據於登入的使用者從選取的 IMS org 所存取的環境。消費者可以傳遞一個偏好的`repositoryID`，而且在該情況下，資產選擇器將停止呈現 repo 切換器，並僅從指定的存放庫呈現資產。
+Asset Selector也可讓您切換資產選取的存放庫。 您可以從左側面板中的下拉清單中選擇您要的存放庫。下拉清單中可用的存放庫選項是根據`repositoryId``index.html`檔案中定義的屬性。那是根據於登入的使用者從選取的 IMS org 所存取的環境。消費者可以傳遞一個偏好的`repositoryID`，而且在該情況下，資產選擇器將停止呈現 repo 切換器，並僅從指定的存放庫呈現資產。
 <!--
 It is based on the `imsOrg` that is provided in the application. If you want to see the list of repositories, then `repositoryId` is required to view those specific repositories in your application.
 -->
@@ -530,7 +530,7 @@ It is based on the `imsOrg` that is provided in the application. If you want to 
 
 ### 自訂搜尋
 
-除了全文搜尋外，資產選擇器也讓您使用自訂搜尋以搜尋檔案中的資產。您可以在模組視圖和邊欄視圖模式下，使用自訂搜尋篩選器。
+除了全文檢索搜尋之外，「資產選擇器」可讓您使用自訂搜尋功能來搜尋檔案中的資產。 您可以在模組視圖和邊欄視圖模式下，使用自訂搜尋篩選器。
 
 ![custom-search](assets/custom-search.png)
 
@@ -538,7 +538,7 @@ It is based on the `imsOrg` that is provided in the application. If you want to 
 
 ### 搜尋列 {#search-bar}
 
-資產選擇器讓您可以在選取的存放庫中執行資產的全文搜尋。例如，如果您在搜尋列中鍵入關鍵字 `wave`，就會顯示中繼資料屬性中提及 `wave` 關鍵字的所有資產。
+「資產選擇器」可讓您在選取的存放庫中執行資產的全文搜尋。 例如，如果您在搜尋列中鍵入關鍵字 `wave`，就會顯示中繼資料屬性中提及 `wave` 關鍵字的所有資產。
 
 ### 排序 {#sorting}
 
@@ -546,7 +546,7 @@ It is based on the `imsOrg` that is provided in the application. If you want to 
 
 ### 視圖的類型 {#types-of-view}
 
-資產選擇器讓您在四種不同的視圖中檢視資產：
+「資產選取器」可讓您以四種不同的檢視檢視檢視資產：
 
 * **![清單檢視](assets/do-not-localize/list-view.png)[!UICONTROL 清單檢視]**：清單檢視在單一欄中顯示可捲動的檔案和資料夾。
 * **![格線檢視](assets/do-not-localize/grid-view.png)[!UICONTROL 格線檢視]**：格線檢視在列與欄的格線中顯示可捲動的檔案和資料夾。
@@ -571,7 +571,7 @@ Asset Selector supports two types of out of the box views:
 ### Application Integration
 
 Asset Selector is flexible and can be integrated within your existing [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] application. It is accessible and localized to add, search, and select assets in your application. With Asset Selector you can:
-*   **Configure** You can configure the files/folders that you want to show at the upfront. The assets that are chosen to view can be of any supported formats, for example, JPEG. It allows you to control the display of various text or symbols as per your choice.
+*   **Configure** You can configure the files/folders that you want to show at the upfront. The assets that are chosen to view can be of any supported formats, for example, JPEG. It lets you control the display of various text or symbols as per your choice.
 *   **Perfect fit** Asset selector easily fits in your existing [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] application and choose the way you want to view. The mode of view can be inline, rail, or modal view.
 *   **Accessible** With Asset Selector, you can reach the desired asset in an easy manner.
 *   **Localize** Assets can be availed for the various locales available as per Adobe's localization standards.
@@ -596,15 +596,15 @@ You can make default multi-selection of assets by specifying the assets to the c
 ### Action buttons
 
 When you customize your application with Asset Selector based on ReactJS, you are provided with the following action buttons to perform various actions:
-*   **Open in media library** Allows you to open the asset in media library.
-*   **Upload** Allows you to upload an asset directly.
+*   **Open in media library** Lets you open the asset in media library.
+*   **Upload** Lets you upload an asset directly.
 *   **Download** Downloads the asset in [!DNL Adobe Experience Manager] as a [!DNL Cloud Service].
 -->
 <!--
 
 ### Status of an asset
 
-Asset Selector allows you to know the status of your uploaded assets. The status can be `Approved`, `Rejected`, or `Expired` of the asset. 
+Asset Selector lets you know the status of your uploaded assets. The status can be `Approved`, `Rejected`, or `Expired` of the asset. 
 -->
 <!--
 

@@ -1,17 +1,17 @@
 ---
 title: Cloud Acceleration Manager 快速入門
-description: 本頁面概述如何使用及開始使用Cloud Acceleration Manager。
+description: 本頁提供如何使用及開始使用Cloud Acceleration Manager的概觀。
 exl-id: e2fad21c-3de6-4186-97c6-ebc84780b2e8
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '536'
-ht-degree: 16%
+source-wordcount: '535'
+ht-degree: 17%
 
 ---
 
 # Cloud Acceleration Manager 快速入門 {#get-started-cam}
 
-Cloud Acceleration Manager 是雲端型應用程式，旨在引導您的 IT 團隊進行從規劃到在 Cloud Service 上線的轉換歷程。透過Adobe建議的最佳實務、秘訣、檔案和工具，協助進行AEM asCloud Service歷程的每個階段，讓您的團隊成功完成移轉。
+Cloud Acceleration Manager 是雲端型應用程式，旨在引導您的 IT 團隊進行從規劃到在 Cloud Service 上線的轉換歷程。透過Adobe建議的最佳實務、秘訣、檔案和工具，協助進行AEM as aCloud Service歷程的每個階段，讓您的團隊成功進行移轉。
 
 ## 目標 {#objective}
 
@@ -22,7 +22,7 @@ Cloud Acceleration Manager 是雲端型應用程式，旨在引導您的 IT 團�
 
 ## 使用 Cloud Acceleration Manager {#using-cam}
 
-Cloud Acceleration Manager (CAM)提供一站式移轉體驗。 它以引導式歷程的形式提供，提供初始評估，引導他們使用正確的工具、檔案和最佳實務，以確保成功上線AEMas a Cloud Service。
+Cloud Acceleration Manager (CAM)提供遷移的一站式體驗。 它以引導式歷程的形式提供，提供初始評估，引導他們使用正確的工具、檔案和最佳實務，以確保在AEMas a Cloud Service上線成功。
 
 ### 瀏覽至Cloud Acceleration Manager {#navigating}
 
@@ -63,7 +63,7 @@ Cloud Acceleration Manager (CAM)的登陸頁面可讓您建立和編輯多個專
 
    ![影像](/help/journey-migration/cloud-acceleration-manager/assets/cam-landing.png)
 
-1. 按一下專案卡片，以便您可以輸入專案。 系統會將您帶往專案登陸頁面。
+1. 按一下專案卡片，以便輸入專案。 系統會將您帶往專案登陸頁面。
 
    ![影像](/help/journey-migration/cloud-acceleration-manager/assets/cam-5.png)
 
@@ -97,4 +97,4 @@ Cloud Acceleration Manager (CAM)的登陸頁面可讓您建立和編輯多個專
 
 ## 下一步 {#whats-next}
 
-瞭解如何登入Cloud Acceleration Manager以及如何建立專案後，您就可以開始檢閱中的下一個步驟了。 [整備階段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=en).
+瞭解如何登入Cloud Acceleration Manager以及如何建立專案後，您就可以開始檢閱中的下一個步驟了 [整備階段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=en).

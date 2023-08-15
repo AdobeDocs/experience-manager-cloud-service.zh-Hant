@@ -3,10 +3,10 @@ title: 如何將最適化表單新增至AEM Sites頁面？
 description: 瞭解如何建立最適化表單或將其新增到您的AEM Sites頁面。 也瞭解將表單整合至您網站的好處和各種方式。
 feature: Adaptive Forms, Page Editor, Authoring
 Keywords: AF in Sites editor, af in aem sites, aem sites af, add af to a sites page, af aem sites, af sites, create af in a sites page, adaptive form in aem sites, forms aem sites, add form to a sites page, adaptive forms aem sites, add adaptive forms to aem page, create forms in an aem sites page
-source-git-commit: 6a462b7a437f74e659a43f7f5d4a95663b92c2cf
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '3308'
-ht-degree: 22%
+source-wordcount: '3301'
+ht-degree: 19%
 
 ---
 
@@ -22,15 +22,15 @@ ht-degree: 22%
 
 透過AEM Forms，您可以順暢地新增表單至AEM Sites頁面。 這可讓您的訪客方便填寫和提交表單，而無需離開他們所在的頁面。 這麼，他們便可毫不費力地使用網站的其他元素，同時積極與表單進行互動。
 
-您可以使用AEM頁面編輯器快速建立多個表單並新增到您的AEM Sites頁面。 使用AEM頁面編輯器，內容作者就能利用調適型表單元件的功能（包括動態行為、驗證、資料整合、產生記錄檔案和業務流程自動化），在Sites頁面內建立順暢的資料擷取體驗。 這還允許您使用 AEM Sites 頁面的各種功能，例如版本設定、目標定位、翻譯和多個網站管理員。
+您可以使用AEM頁面編輯器快速建立多個表單並新增到您的AEM Sites頁面。 使用AEM頁面編輯器，內容作者就能利用調適型表單元件的功能（包括動態行為、驗證、資料整合、產生記錄檔案和業務流程自動化），在Sites頁面內建立順暢的資料擷取體驗。 它也可讓您使用AEM Sites頁面的各種功能，例如，版本設定、目標定位、翻譯和多網站管理員。
 
-AEM FormsCloud Service提供最適化表單容器和Adaptive Forms — 內嵌元件。 您可以使用最適化表單容器在AEM Sites頁面或體驗片段中建立新表單，而最適化Forms — 內嵌元件可讓您新增現有的最適化表單或使用最適化Forms編輯器建立新表單。
+AEM FormsCloud Service提供最適化表單容器和Adaptive Forms — 內嵌元件。 您可以使用調適型表單容器在AEM Sites頁面或體驗片段中建立新表單，而調適型Forms — 內嵌元件可讓您新增現有調適型表單或使用調適型Forms編輯器建立新表單。
 
 ![AEM Sites頁面中的最適化表單範例](/help/forms/assets/adaptive-form-in-sites-page.png)
 
 ## 為何要使用最適化Forms核心元件在AEM Sites頁面或體驗片段中建立最適化表單？
 
-如果您過去曾為網站建立最適化Forms基礎元件或純HTML型表單，Adobe建議使用最適化Forms核心元件在AEM Sites頁面或體驗片段中建立最適化表單。 它可讓您使用AEM Sites頁面的各種功能，例如，版本設定、目標定位、翻譯和多網站管理員，增強最適化Forms的整體表單建立和管理體驗。 讓我們來探索其中的部分功能：
+如果您過去曾為網站建立最適化Forms基礎元件或純HTML型表單，Adobe建議您使用最適化Forms核心元件在AEM Sites頁面或體驗片段中建立最適化表單。 它可讓您使用AEM Sites頁面的各種功能，例如、版本設定、目標定位、翻譯和多網站管理員，增強最適化Forms的整體表單建立和管理體驗。 讓我們來探索其中的部分功能：
 
 * **版本設定：** AEM Sites頁面選件 [強大的版本設定功能](/help/sites-cloud/authoring/features/page-versions.md)，可讓您追蹤及管理不同版本的表單。 這可讓您變更和增強表單，同時維持必要時回覆至先前版本的能力。 版本設定可確保採用受控且有條理的方式來形成開發和演化。
 * **鎖定目標(與Adobe Target整合)：** 透過AEM Sites頁面鎖定目標功能，您也可以 [為不同受眾個人化表單體驗](/help/sites-cloud/integrating/integration-adobe-target-ims.md). 運用使用者區段和目標定位條件，您可以針對特定使用者群組量身打造表單的內容、設計或行為。 這可讓您提供個人化和相關的表單體驗，提高參與度和轉換率。
@@ -58,11 +58,11 @@ AEM FormsCloud Service提供最適化表單容器和Adaptive Forms — 內嵌元
 * **[將現有表單新增至AEM Sites頁面：](/help/forms/embed-adaptive-form-aem-sites.md#embed-an-adaptive-form-in-sites-editor)** 您可以輕鬆將已建立的表單整合至網站，讓訪客直接與表單互動。 此選項僅適用於以最適化Forms編輯器或Adaptive Forms — 內嵌元件建立的最適化Forms 。
 
 
-* **將多個表單新增至AEM Sites頁面或體驗片段：**  您可以在AEM Sites頁面上建立或新增多個最適化Forms，以根據使用者的偏好和需求為其提供多個選擇。 這些可以是從頭開始的全新形式和現有形式的組合。您可以使用 **[!UICONTROL 最適化表單容器]** 多次元件，以在AEM Sites頁面中新增最適化Forms。 您可以使用 **[!UICONTROL 最適化Forms — 內嵌]** 在AEM Sites頁面中多次使用元件，只有在 **[!UICONTROL 表單覆蓋影格的整個寬度]** 已選取選項。 萬一 **[!UICONTROL 表單覆蓋影格的整個寬度]** 選項未勾選，AEM Sites頁面僅支援一個不含iframe的最適化表單存在。 若要使用，新增更多最適化Forms **[!UICONTROL 最適化Forms — 內嵌]** 元件，選取 **[!UICONTROL 表單覆蓋影格的整個寬度]** 選項。
+* **新增多個表單至AEM Sites頁面或體驗片段：**  您可以在AEM Sites頁面上建立或新增多個最適化Forms，以根據使用者的偏好和需求為其提供多個選擇。 這些可以是從頭開始的全新形式和現有形式的組合。您可以使用 **[!UICONTROL 最適化表單容器]** 多次元件，以在AEM Sites頁面中新增最適化Forms。 您可以使用 **[!UICONTROL 最適化Forms — 內嵌]** 在AEM Sites頁面中多次使用元件，只有在 **[!UICONTROL 表單覆蓋影格的整個寬度]** 已選取選項。 萬一 **[!UICONTROL 表單覆蓋影格的整個寬度]** 選項未勾選，AEM Sites頁面僅支援一個不含iframe的最適化表單存在。 若要使用，新增更多最適化Forms **[!UICONTROL 最適化Forms — 內嵌]** 元件，選取 **[!UICONTROL 表單覆蓋影格的整個寬度]** 選項。
 
 ## 在AEM Sites頁面或AEM體驗片段中建立最適化表單的考量事項 {#consideration}
 
-* 當您使用調適型表單容器建立或新增表單時，表單會透過 AEM Sites 翻譯流程進行翻譯和本地化。 對於每種語言，系統會產生網站頁面和相應表單的個別副本 (語言副本)，當內容作者在父頁面表單中修訂規則時，表單的所有語言副本必須進行相同的變更。 調適型表單容器還允許您使用 AEM Sites 頁面的各種功能，例如版本設定、目標定位、翻譯和多個網站管理員。
+* 當您使用調適型表單容器建立或新增表單時，表單會透過 AEM Sites 翻譯流程進行翻譯和本地化。 對於每種語言，系統會產生網站頁面和相應表單的個別副本 (語言副本)，當內容作者在父頁面表單中修訂規則時，表單的所有語言副本必須進行相同的變更。 最適化表單容器也可讓您使用AEM Sites頁面的各種功能，例如，版本設定、目標定位、翻譯和多網站管理員。
 
 * 當您使用調適型表單 - 內嵌元件建立或新增表單時，表單會使用 AEM Forms 翻譯流程進行翻譯和本地化。 在這種情況下，Sites 頁面的所有語言副本中會維持和引用單一表單。 調適型表單-內嵌元件不會讓您存取 AEM Sites 頁面的各種功能，例如版本設定、目標定位、翻譯和多個網站管理員。
 
@@ -151,7 +151,7 @@ AEM FormsCloud Service提供最適化表單容器和Adaptive Forms — 內嵌元
 
 ### 在 AEM Sites 頁面建立表單 {#create-an-adaptive-form-in-sites-editor}
 
-您可以使用AEM頁面編輯器中的調適型表單容器元件來建立自訂表單。 該元件允許您以拖放表單元件的方式來建立表單。 表單元件是以核心元件為主。 您可以根據組織的要求輕鬆自訂這一些。
+您可以使用AEM頁面編輯器中的調適型表單容器元件來建立自訂表單。 元件可讓您拖放表單元件來建立表單。 表單元件是以核心元件為主。 您可以根據組織的要求輕鬆自訂這一些。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419284?quality=12&learn=on)
 
@@ -166,7 +166,7 @@ AEM FormsCloud Service提供最適化表單容器和Adaptive Forms — 內嵌元
 
 ### 在體驗片段中建立表單 {#create-an-adaptive-form-in-experience-fragment}
 
-您可以新增表單至 AEM 體驗片段來擴展表單的範圍，如此可跨多個頁面或多個網站進行無縫的重複使用。 例如，您可以在體驗片段中包含時事通訊註冊表單。這可讓您方便地在網站多個頁面上重複使用該片段，而無需重複建立表單。 在體驗片段內對電子報登錄檔單所做的任何更新或修改都會自動傳播到所有使用它的頁面。 這簡化了流程並確保無縫的用戶體驗，同時簡化了網站表單的管理。
+您可以新增表單至 AEM 體驗片段來擴展表單的範圍，如此可跨多個頁面或多個網站進行無縫的重複使用。 例如，您可以在體驗片段中包含時事通訊註冊表單。這可讓您方便地在網站的多個頁面中重複使用片段，而無需重複重新建立表單。 在體驗片段內對電子報登錄檔單所做的任何更新或修改都會自動傳播到所有使用它的頁面。 這簡化了流程並確保無縫的用戶體驗，同時簡化了網站表單的管理。
 
 若要在體驗片段中建立調適型表單：
 
@@ -199,7 +199,7 @@ AEM FormsCloud Service提供最適化表單容器和Adaptive Forms — 內嵌元
 
 ## 在AEM Sites頁面或體驗片段中設定表單的提交動作 {#configure-submit-action-for-form}
 
-提交動作可讓您選擇透過最適化表單擷取的資料目標。用戶按一下最適化表單上的「提交」按鈕時，就會加以觸發。調適型表單包含一些立即可用的提交動作。 您也可以擴充預設提交動作，以建立自己的自訂提交動作。 若要設定表單的提交動作：
+提交動作可讓您選擇透過最適化表單擷取的資料目的地。 使用者按一下最適化表單上的「提交」按鈕時，就會加以觸發。調適型表單包含一些立即可用的提交動作。 您也可以擴充預設提交動作，以建立自己的自訂提交動作。 若要設定表單的提交動作：
 
 1. 開啟包含最適化表單的AEM頁面編輯器或體驗片段。
 1. 開啟「內容樹」，然後選取 **[!UICONTROL 最適化Forms容器]** 託管您的最適化表單。 一個AEM Sites頁面可以託管多個最適化Forms。 因此，請仔細選取正確的最適化Forms容器。

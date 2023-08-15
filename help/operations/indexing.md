@@ -2,9 +2,9 @@
 title: 內容搜尋與索引
 description: 瞭解AEMas a Cloud Service中的內容搜尋和索引。
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2325'
+source-wordcount: '2324'
 ht-degree: 1%
 
 ---
@@ -87,7 +87,7 @@ The package from the above sample is built as `com.adobe.granite:new-index-conte
 1. 在中建立具有更新索引名稱的新資料夾 `ui.apps` 目錄：
    * 範例: `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-8-custom-1/`
 
-2. 新增設定檔 `.content.xml` ，並將自訂組態置於新建立的資料夾中。 以下是自訂的範例：檔案名稱： `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-8-custom-1/.content.xml`
+2. 新增設定檔 `.content.xml` ，並將自訂設定放在新建立的資料夾中。 以下是自訂的範例：檔案名稱： `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-8-custom-1/.content.xml`
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>

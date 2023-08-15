@@ -10,10 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: ba70921e-db7e-43f6-902c-1065d3b13aef
 docset: aem65
 exl-id: 16f86dae-86fb-481b-8978-b8898705ed7e
-source-git-commit: 86da8e784e3e5ff034efdb9186cf134d4b1c6e9c
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2486'
-ht-degree: 100%
+source-wordcount: '2482'
+ht-degree: 98%
 
 ---
 
@@ -69,7 +69,7 @@ XML 和 JSON 結構描述表示組織的後端系統產生或使用資料的結�
 
 ### 側邊欄 {#sidebar}
 
-側邊欄可讓您進行以下作業：
+側邊欄可讓您
 
 * 搜尋、檢視和使用 AEM 數位資產管理 (DAM) 存放庫中的資產。
 * 查看表單內容，例如面板、元件、欄位和版面。
@@ -94,7 +94,7 @@ XML 和 JSON 結構描述表示組織的後端系統產生或使用資料的結�
 
    * **資料模型物件**
 讓您查看表單模型階層。
-它可讓您將表單模型元素拖放到最適化表單上。新增的元素會自動轉換為表單元件，同時保留其原始屬性。當表單使用 XML 結構描述、JSON 結構描述或 XDP 範本時，您可以看到資料模型物件。
+它可讓您在最適化表單上拖放表單模型元素。 新增的元素會自動轉換為表單元件，同時保留其原始屬性。當表單使用 XML 結構描述、JSON 結構描述或 XDP 範本時，您可以看到資料模型物件。
 
 * **屬性瀏覽器**
 
@@ -178,7 +178,7 @@ XML 和 JSON 結構描述表示組織的後端系統產生或使用資料的結�
   </tr>
   <tr>
    <td>影像</td>
-   <td>讓您插入影像。</td>
+   <td>可讓您插入影像。</td>
   </tr>
   <tr>
    <td>影像選擇</td>

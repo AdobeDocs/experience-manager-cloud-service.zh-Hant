@@ -1,10 +1,10 @@
 ---
 title: 體驗片段
-description: 使用Adobe Experience Manager as a Cloud Service體驗片段，讓您的體驗可重複使用且具有彈性。
+description: 使用Adobe Experience Manager as a Cloud Service體驗片段，讓您的體驗可重複使用且更靈活。
 exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2046'
+source-wordcount: '2044'
 ht-degree: 5%
 
 ---
@@ -34,15 +34,15 @@ ht-degree: 5%
 您可以使用體驗片段：
 
 * 如果作者想要重複使用頁面的部分（體驗的片段）。
-如果沒有體驗片段，作者需要複製並貼上該片段。 建立和維護這些複製/貼上體驗非常耗時，而且容易發生使用者錯誤。
+如果沒有體驗片段，作者需要複製並貼上該片段。 建立及維護這些複製/貼上體驗非常耗時，而且容易發生使用者錯誤。
 體驗片段不需要複製/貼上。
 * 支援Headless CMS使用案例。
-作者只想將AEM用於製作，而不是用於提供給客戶。 協力廠商系統/接觸點將會使用該體驗，然後提供給一般使用者。
+作者只想將AEM用於製作，而不是用於提供給客戶。 協力廠商系統/接觸點會取用該體驗，然後傳送給一般使用者。
 
 >[!NOTE]
 >
 >**[內容片段](/help/sites-cloud/authoring/fundamentals/content-fragments.md)** 和 **體驗片段** 是AEM中的不同功能：
->* **內容片段** 為編輯內容，具有定義和結構，但不含其他視覺設計和/或版面。 它們可用來存取結構化資料，包括文字、數字和日期等。
+>* **內容片段** 是可編輯內容，具備定義與結構，但無其他視覺化設計及/或版面配置。 它們可用於存取結構化資料，包括文字、數字和日期等。
 >* **體驗片段** 是完全佈局的內容；網頁的片段。
 >
 >體驗片段可以包含內容片段形式的內容，反之則不行。
@@ -63,14 +63,14 @@ ht-degree: 5%
 
 * 每當您想要重複使用體驗時。
    * 與相同或類似內容重複使用的體驗。
-* 當您使用AEM作為協力廠商的內容傳遞平台時。
+* 當您使用AEM做為協力廠商的內容傳遞平台時。
    * 任何想要使用AEM作為內容傳遞平台的解決方案。
    * 將內容內嵌於第三方接觸點。
 * 如果您有具有不同變數或轉譯的體驗。
    * 管道或內容特定變數。
    * 對群組有意義的體驗，例如跨頻道具有不同體驗的行銷活動。
 * 當您使用全通路商務時。
-   * 使接觸點具有交易性。
+   * 讓接觸點成為異動。
 
 ## 組織您的體驗片段 {#organizing-your-experience-fragments}
 
@@ -85,15 +85,15 @@ ht-degree: 5%
 
   >[!NOTE]
   >
-  >不必將體驗片段的結構與網站的頁面結構對齊。
+  >您不需要將體驗片段的結構與網站的頁面結構對齊。
 
-* [在資料夾層級配置允許的範本](#configure-allowed-templates-folder)
+* [在檔案夾層級配置允許的範本](#configure-allowed-templates-folder)
 
   >[!NOTE]
   >
   >您可以使用 [範本編輯器](/help/sites-cloud/authoring/features/templates.md) 以建立您自己的範本。
 
-WKND專案會根據以下原則建構一些體驗片段 `Contributors`. 使用的結構也說明如何使用其他功能，例如「多網站管理」（包括語言副本）。
+WKND專案會根據以下規則建構一些體驗片段 `Contributors`. 使用的結構也說明了如何使用其他功能，例如「多網站管理」（包括語言副本）。
 
 請參閱：
 
@@ -111,7 +111,7 @@ WKND專案會根據以下原則建構一些體驗片段 `Contributors`. 使用�
 
 >[!NOTE]
 >
->您也可以設定 [您的執行個體允許的範本](#configure-allowed-templates-instance)，但此方法為 **not** 建議使用，因為升級時可覆寫這些值。
+>您也可以設定 [執行個體允許的範本](#configure-allowed-templates-instance)，但此方法為 **非** 建議使用，因為升級時可覆寫這些值。
 
 ### 設定資料夾的允許範本 {#configure-allowed-templates-folder}
 
@@ -119,11 +119,11 @@ WKND專案會根據以下原則建構一些體驗片段 `Contributors`. 使用�
 >
 >建議使用此方式指定 **允許的範本**，因為值在升級時不會被覆寫。
 
-1. 導覽至必要的 **體驗片段** 資料夾。
+1. 導覽至所需的 **體驗片段** 資料夾。
 
 1. 選取資料夾，然後 **屬性**.
 
-1. 指定用於擷取中所需範本的規則運算式 **允許的範本** 欄位。
+1. 指定規則運算式，以擷取 **允許的範本** 欄位。
 
    例如：
    `/conf/(.*)/settings/wcm/templates/experience-fragment(.*)?`
@@ -147,13 +147,13 @@ WKND專案會根據以下原則建構一些體驗片段 `Contributors`. 使用�
 >
 >使用此對話方塊僅供參考。
 
-1. 導覽至必要的 **體驗片段** 主控台。
+1. 導覽至所需的 **體驗片段** 主控台。
 
 1. 選取 **設定選項**：
 
    ![設定按鈕](/help/sites-cloud/authoring/assets/xf-18.png)
 
-1. 在「 」中指定所需的範本 **設定體驗片段** 對話方塊：
+1. 在中指定所需的範本 **設定體驗片段** 對話方塊：
 
    ![設定體驗片段](/help/sites-cloud/authoring/assets/xf-19.png)
 
@@ -167,11 +167,11 @@ WKND專案會根據以下原則建構一些體驗片段 `Contributors`. 使用�
 
 若要建立體驗片段：
 
-1. 選取 **體驗片段** 從全域導覽。
+1. 選取 **體驗片段** 從「全域導覽」。
 
    ![導覽面板中的體驗片段](/help/sites-cloud/authoring/assets/xf-01.png)
 
-1. 導覽至所需的資料夾，然後選取 **建立**：
+1. 導覽至所需的資料夾，然後選取「 」 **建立**：
 
    ![建立體驗片段的資料夾](/help/sites-cloud/authoring/assets/xf-02.png)
 
@@ -192,11 +192,11 @@ WKND專案會根據以下原則建構一些體驗片段 `Contributors`. 使用�
    >
    >體驗片段範本中的標籤不會與此體驗片段根頁面上的標籤合併。
    >
-   >它們是完全分開的。
+   >它們是完全獨立的。
 
 1. 按一下&#x200B;**建立**。
 
-   隨即顯示訊息。 選取:
+   此時會顯示訊息。 選取:
 
    * **完成** 以返回主控台
    * **開啟** 以開啟片段編輯器
@@ -209,11 +209,11 @@ WKND專案會根據以下原則建構一些體驗片段 `Contributors`. 使用�
 >
 >另請參閱 [編輯頁面內容](/help/sites-cloud/authoring/fundamentals/editing-content.md) 以取得有關如何使用頁面編輯器的詳細資訊。
 
-下列範例程式說明如何為產品建立Teaser：
+下列範例程式說明如何建立產品的Teaser：
 
-1. 從以下位置拖放所需元件： [元件瀏覽器](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser).
+1. 將必要的元件從 [元件瀏覽器](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser).
 
-1. 視元件而定：
+1. 依元件而定：
    * 視需要新增任何內容和/或資產。
    * 視需要設定屬性。
 
@@ -225,9 +225,9 @@ WKND專案會根據以下原則建構一些體驗片段 `Contributors`. 使用�
 
 ## 建立體驗片段變數 {#creating-an-experience-fragment-variation}
 
-您可以根據需求建立體驗片段的變體：
+您可以根據自己的需求，建立體驗片段的變數：
 
-1. 開啟您的片段，用於 [編輯](#editing-your-experience-fragment).
+1. 開啟您的片段用於 [編輯](#editing-your-experience-fragment).
 1. 開啟 **變數** 標籤。
 
    ![建立體驗片段變數](/help/sites-cloud/authoring/assets/xf-06.png)
@@ -241,7 +241,7 @@ WKND專案會根據以下原則建構一些體驗片段 `Contributors`. 使用�
 
    * **範本**
    * **標題**
-   * **名稱**  — 如果留空，則從「標題」派生
+   * **名稱**  — 如果留空，其衍生自標題
    * **說明**
    * **變數標記**
 
@@ -250,7 +250,7 @@ WKND專案會根據以下原則建構一些體驗片段 `Contributors`. 使用�
    ![變數屬性](/help/sites-cloud/authoring/assets/xf-07.png)
 
 
-1. 確認方式 **完成**，新的變數會顯示在面板中。
+1. 確認 **完成**，新的變數會顯示在面板中。
 
 ## 使用您的體驗片段 {#using-your-experience-fragment}
 
@@ -260,9 +260,9 @@ WKND專案會根據以下原則建構一些體驗片段 `Contributors`. 使用�
 
 1. 在頁面段落系統中建立體驗片段元件的例項：
 
-1. 將實際的體驗片段新增至元件例項；可以執行下列任一項操作：
+1. 將實際的體驗片段新增到元件例項；可以：
 
-   * 從「資產瀏覽器」拖放所需的片段至元件。
+   * 從資產瀏覽器拖曳所需的片段，並放置到元件上。
    * 選取 **設定** 從元件工具列並指定要使用的片段，確認使用 **完成**.
 
    >[!NOTE]
@@ -293,7 +293,7 @@ WKND專案會根據以下原則建構一些體驗片段 `Contributors`. 使用�
 
    ![為建置區塊命名](/help/sites-cloud/authoring/assets/xf-11.png)
 
-1. 此 **建置區塊** 顯示在左側索引標籤中(**本機**)，並可選取以執行進一步動作：
+1. 此 **建置區塊** 顯示在左側標籤(**本機**)，並可選取以執行進一步動作：
 
    ![邊欄中的建置區塊](/help/sites-cloud/authoring/assets/xf-12.png)
 
@@ -301,7 +301,7 @@ WKND專案會根據以下原則建構一些體驗片段 `Contributors`. 使用�
 
 您的建置區塊會顯示在 **建置區塊** 標籤。 對於每個區塊，都可使用下列動作：
 
-* **前往主版**：在新索引標籤中開啟根頁面變數
+* **移至主版**：在新索引標籤中開啟根頁面變數
 * **重新命名**
 * **刪除**
 
@@ -311,21 +311,21 @@ WKND專案會根據以下原則建構一些體驗片段 `Contributors`. 使用�
 
 您可以將建置區塊拖曳至任何片段的段落系統，就像對任何元件一樣。
 
-編輯體驗片段時，可用的建置區塊會顯示在左側索引標籤中。 您可以根據以下條件篩選：
+編輯體驗片段時，可用的建置區塊會顯示在左側標籤中。 您可以根據以下條件進行篩選：
 
 * **本機**  — 目前體驗片段的建置區塊
-* **全部**  — 所有片段中的建置區塊
+* **全部**  — 所有片段的建置區塊
 
 ![選取建置區塊](/help/sites-cloud/authoring/assets/xf-14.png)
 
 ## 您的體驗片段上的個人化 {#personalization-experience-fragment}
 
-您的體驗片段上的個人化可讓您作為行銷人員，為體驗片段定義一次目標對象，然後在任何頁面中重複使用該片段。 此特性：
+您的體驗片段個人化可讓您作為行銷人員，為體驗片段定義一次目標對象，然後在任何頁面中重複使用片段。 此特性：
 
-* 無需在每次使用片段時為每個對象指定所需的變化
-* 維護整個優惠方案的樣式
+* 無需在每次使用片段時為每個對象指定所需的變數
+* 維持各優惠方案的樣式
 
-您可以建立體驗片段，並將多個元件分組在此單一片段中。 您也可以為每個特定受眾區段建立片段的變數，然後跨所需的管道重複使用這些體驗片段。
+您可以建立體驗片段，並將多個元件分組在此單一片段中。 您也可以為每個特定的受眾區段建立片段的變數，然後在所需的管道中重複使用這些體驗片段。
 
 個人化是透過定義 **個人化** 體驗片段或變數或包含片段的資料夾上的屬性；這表示繼承可以覆寫個人化屬性。
 
@@ -337,7 +337,7 @@ WKND專案會根據以下原則建構一些體驗片段 `Contributors`. 使用�
 
 1. 導覽至中的所需位置 **體驗片段** 主控台。
 
-1. 選取資料夾或您的片段，然後 **屬性** （從工具列）。
+1. 選取資料夾或您的片段，然後 **屬性** 工具列中的。
 
    >[!NOTE]
    >
@@ -349,25 +349,25 @@ WKND專案會根據以下原則建構一些體驗片段 `Contributors`. 使用�
 
    >[!CAUTION]
    >
-   >將片段內嵌在Sites頁面中時，以及 **個人化** 已設定，則在頁面呈現時只會使用頁面的個人化版本。
+   >片段內嵌於Sites頁面中時，以及 **個人化** 設定，則在頁面轉譯時只會使用頁面的個人化版本。
    >
-   >為了在頁面轉譯時對片段中的元件執行目標定位，必須滿足以下條件：
+   >為了在頁面轉譯時對片段中的元件執行目標定位，以下條件必須符合：
    >
    >此 **ContextHub路徑** 已選取於 **個人化** 索引標籤必須是：
    >
    >* 與為呈現片段的頁面設定的路徑相同
    >或:
-   >* 包含為頁面設定的ContextHub中定義之存放區子集的路徑
+   >* 包含為頁面設定的ContextHub中所定義之存放區子集的路徑
    >
    > 
 此 **區段路徑** 已選取於 **個人化** 索引標籤必須是：
    >
-   * 與為呈現片段的頁面設定的路徑相同的路徑，或者
+   * 與為呈現片段的頁面設定的路徑相同或者
    * 包含為頁面設定的區段子集的路徑
 
-### 為您的體驗片段定義目標定位 {#defining-targeting-experience-fragment}
+### 為您的體驗片段定義定位 {#defining-targeting-experience-fragment}
 
-設定個人化屬性後，當開啟片段進行編輯時，可使用目標模式。
+設定個人化屬性後，當開啟片段進行編輯時，可以使用目標模式。
 
 ![體驗片段編輯器 — 目標定位模式](/help/sites-cloud/authoring/assets/xf-targeting-mode.png)
 
@@ -377,14 +377,14 @@ WKND專案會根據以下原則建構一些體驗片段 `Contributors`. 使用�
 
 您可以檢視片段的詳細資訊：
 
-1. 導覽至您的體驗片段位置（請勿進一步導覽至片段內的變數）。
-詳細資訊會顯示在 **體驗片段** 主控台，使用 **清單檢視** 包括 [匯出至Target](/help/sites-cloud/integrating/integrating-adobe-target.md)：
+1. 導覽至體驗片段的位置（請勿進一步導覽至片段內的變數）。
+詳細資訊會顯示在 **體驗片段** 主控台，使用 **清單檢視** 包含詳細資訊 [匯出至Target](/help/sites-cloud/integrating/integrating-adobe-target.md)：
 
    ![體驗片段詳細資料](/help/sites-cloud/authoring/assets/xf-15.png)
 
 1. 當您開啟 **屬性** 體驗片段的：
 
-   ![屬性按鈕](/help/sites-cloud/authoring/assets/xf-16.png)
+   ![「屬性」按鈕](/help/sites-cloud/authoring/assets/xf-16.png)
 
    屬性位於各種標籤中：
 
@@ -409,8 +409,8 @@ WKND專案會根據以下原則建構一些體驗片段 `Contributors`. 使用�
       * **雲端服務設定**
       * **Facebook 頁面 ID**
       * **Pinterest Board**
-   * **引用**
-      * 參考資料清單
+   * **參考**
+      * 引用清單
    * **個人化**
       * **ContextHub 路徑**
       * **區段路徑**
@@ -418,11 +418,11 @@ WKND專案會根據以下原則建構一些體驗片段 `Contributors`. 使用�
 
 ## 純HTML轉譯 {#the-plain-html-rendition}
 
-使用 `.plain.` 在URL的選擇器中，您可以從瀏覽器存取純HTML轉譯。
+使用 `.plain.` 選取「 」後，您便可從瀏覽器存取純HTML轉譯。
 
 >[!NOTE]
 >
-雖然這可以直接從瀏覽器取得， [主要目的是讓其他應用程式（例如協力廠商網頁應用程式、自訂行動實作）只使用URL直接存取體驗片段的內容](/help/implementing/developing/extending/experience-fragments.md#the-plain-html-rendition).
+雖然這可以直接從瀏覽器取得， [主要用途是允許其他應用程式（例如協力廠商網頁應用程式、自訂行動實施）僅使用URL直接存取體驗片段的內容](/help/implementing/developing/extending/experience-fragments.md#the-plain-html-rendition).
 
 ## 發佈體驗片段 {#publishing-experience-fragments}
 
@@ -432,7 +432,7 @@ WKND專案會根據以下原則建構一些體驗片段 `Contributors`. 使用�
 
 ## 匯出體驗片段 {#exporting-experience-fragments}
 
-依預設，體驗片段會以HTML格式傳送。 AEM和協力廠商管道均可使用此功能。
+依預設，體驗片段會以HTML格式傳送。 AEM和協力廠商管道均可使用此函式。
 
 若要匯出至Adobe Target，也可以使用JSON。 請參閱：
 

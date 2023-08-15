@@ -1,16 +1,12 @@
 ---
 title: 為表單欄位編寫內容內說明
-seo-title: Authoring in-context help for form fields
-description: AEM Forms可讓您將內容說明新增至最適化表單欄位和面板，以文字或多媒體形式呈現，包括影片。
-seo-description: AEM Forms allows you to add in-context help to Adaptive Form fields and panels, as text or rich media, including videos.
-uuid: 1865bf7b-66fc-4f89-bd98-904daa409320
+description: AEM Forms可讓您將內容說明新增至最適化表單欄位和面板，做為文字或豐富媒體（包括影片）。
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
-discoiquuid: 78000342-a6a7-4c2e-acab-a88851b82c2a
 docset: aem65
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '366'
+source-wordcount: '365'
 ht-degree: 0%
 
 ---
@@ -20,13 +16,13 @@ ht-degree: 0%
 
 ## 簡介 {#introduction}
 
-有時候，填寫表單的使用者不確定如何在特定表單欄位中填寫詳細資訊。 為了解決這類問題，Adaptive Forms支援在表單欄位中新增文字或RTF內容說明。 它有助於改善表單填寫體驗並避免一般使用者的任何模糊性。
+有時候，填寫表單的使用者不確定如何在特定表單欄位中填寫詳細資訊。 為了解決這類問題，最適化Forms提供支援，以便在表單欄位中新增文字或RTF內容說明。 它有助於改善表單填寫體驗並避免一般使用者的任何歧義。
 
-本文探討表單作者如何在編寫Adaptive Forms時新增內容感知說明。
+本文探討表單作者如何在編寫Adaptive Forms時新增內容相關說明。
 
 ## 新增內文中說明 {#add-in-context-help}
 
-您可以使用側邊欄中「屬性」標籤的「說明內容」區段中的以下選項來指定內容內說明。
+您可以使用側邊欄中「屬性」標籤的「說明內容」區段中的下列選項來指定內容內說明。
 
 * [簡短說明](authoring-in-field-help.md#p-short-description-p)
 * [詳細說明](authoring-in-field-help.md#p-long-description-p)
@@ -35,11 +31,11 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->完整說明會覆寫簡短說明。 如果您同時指定兩者，則只會顯示詳細說明。
+>完整說明會覆寫簡短說明。 如果您同時指定兩者，則只會顯示完整說明。
 
 ### 簡短說明 {#short-description}
 
-「簡短說明」欄位可提供有關填寫表單欄位的快速簡短提示。 將滑鼠游標停留在欄位上時，簡短說明欄位中指定的文字會顯示為工具提示。
+「簡短說明」欄位可提供有關填寫表單欄位的快速簡短提示。 將滑鼠懸停在簡短說明欄位中時，該欄位中指定的文字會顯示為工具提示。
 
 ![為表單欄位新增內容內說明的簡短說明](assets/tooltip.png)
 
@@ -51,7 +47,7 @@ ht-degree: 0%
 
 ### 詳細說明 {#long-description}
 
-您可以使用「詳細說明」欄位來指定長文字或內嵌RTF內容（包括視訊），以做為內容說明。 例如，下圖說明如何將視訊內嵌為內容說明。
+您可以使用「完整說明」欄位來指定完整文字或內嵌RTF內容（包括視訊），以做為內容說明。 例如，下圖說明如何將視訊內嵌為內容說明，
 
 ![新增多媒體作為表單欄位的內容內說明](assets/long-descriptions.png)
 
@@ -61,11 +57,11 @@ ht-degree: 0%
 
 ### 面板層級說明 {#panel-level-help}
 
-除了表單欄位的內容中說明外，您還可以在面板編輯對話方塊的「說明內容」標籤中指定面板層級的說明。
+除了表單欄位的內容中說明之外，您還可以在面板編輯對話方塊的「說明內容」標籤中，指定面板層級的說明。
 
 ![新增表單面板的內容內說明](assets/panel-level-help.png)
 
-新增面板的說明顯示 **？** 圖示加以存取。 按一下圖示會顯示新增在面板編輯對話方塊的「說明內容」區段中的內容。
+新增面板的說明顯示 **？** 圖示加以存取（位於面板說明旁）。 按一下圖示會顯示新增在面板編輯對話方塊的「說明內容」區段中的內容。
 
 ![表單面板層級的內容中說明範例](assets/photoshop-1.png)
 

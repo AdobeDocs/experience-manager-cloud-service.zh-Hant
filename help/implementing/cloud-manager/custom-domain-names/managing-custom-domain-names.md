@@ -2,16 +2,16 @@
 title: 管理客戶網域名稱
 description: 了解如何使用 Cloud Manager 查看、更新、取代和刪除自訂網域名稱。
 exl-id: 6cab8cf2-22c0-4f4b-9c54-a1425e74ddd0
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '337'
-ht-degree: 100%
+source-wordcount: '336'
+ht-degree: 96%
 
 ---
 
 # 管理客戶網域名稱 {#managing-custom-domain-names}
 
-Cloud Manager 可讓您查看、更新、取代和刪除自訂網域名稱。
+Cloud Manager可讓您檢視、更新、取代和刪除自訂網域名稱。
 
 ## 檢視和更新 {#view-and-update}
 

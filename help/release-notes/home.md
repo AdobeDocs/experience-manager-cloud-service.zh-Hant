@@ -2,10 +2,10 @@
 title: Adobe Experience Manager (AEM) as a Cloud Service 的發行說明。
 description: Adobe Experience Manager (AEM) as a Cloud Service 的發行說明。
 exl-id: 05b9e51f-467e-4c8e-baea-b1cf832597cd
-source-git-commit: 3f62a7db9038dabdcca3dd59612e8e26c48b8482
-workflow-type: ht
-source-wordcount: '643'
-ht-degree: 100%
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+workflow-type: tm+mt
+source-wordcount: '642'
+ht-degree: 95%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 100%
 * [功能發行以可預測的每月頻率進行，並專注於新功能和產品創新。](/help/release-notes/release-notes-cloud/release-notes-current.md)
 * [維護發行會時常進行，並專注於安全性更新、錯誤修正和效能增強。](/help/release-notes/maintenance/latest.md)這可確保 [!DNL Adobe Experience Manager] as a Cloud Service 始終保持最新狀態並包含任何關鍵修正。
 
-除了創新的速度，[!DNL Adobe Experience Manager] as a Cloud Service 還提供了靈活性，可以在功能發行到生產環境之前提前整整一個月預覽即將推出的功能。這能讓您透過在您自己的自訂環境中測試功能來評估即將發行的版本對其組織的影響，並提前培訓/準備內部使用者。如果您有 AEM 附加元件，您可以通過在[計畫設定](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)中選取解決方案來確保此附加元件也得到更新。
+除了創新的速度，[!DNL Adobe Experience Manager] as a Cloud Service 還提供了靈活性，可以在功能發行到生產環境之前提前整整一個月預覽即將推出的功能。這可讓您在自己的自訂環境中測試功能，並提前培訓/準備內部使用者，以評估即將發行的版本對其組織的影響。 如果您有 AEM 附加元件，您可以通過在[計畫設定](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)中選取解決方案來確保此附加元件也得到更新。
 
 >[!NOTE]
 >

@@ -2,10 +2,10 @@
 title: "[!DNL AEM Forms] as a Cloud Service 發行說明"
 description: "[!DNL AEM Forms] as a Cloud Service 發行說明"
 exl-id: 35950b81-6e45-4a75-bd27-8c28fd68e42e
-source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2024'
-ht-degree: 100%
+source-wordcount: '2015'
+ht-degree: 94%
 
 ---
 
@@ -39,7 +39,7 @@ Adobe Experience Manager [!DNL AEM Forms] as a Cloud Service 會持續進行改�
 
 ### [!DNL Forms]的 Beta 版功能 {#sep-what-is-new-forms-oct-prerelease}
 
-- **[!DNL AEM Forms as a Cloud Service - Communications]**：[通訊 API](aem-forms-cloud-service-communications.md) 可幫助您合併範本和 XML 資料，以產生多種格式的列印文件。 此服務可讓您以同步和批次模式產生文件。 這些 API 可讓您建立以下用途的應用程式：
+- **[!DNL AEM Forms as a Cloud Service - Communications]**：[通訊 API](aem-forms-cloud-service-communications.md) 可幫助您合併範本和 XML 資料，以產生多種格式的列印文件。 此服務可讓您以同步和批次模式產生檔案。 這些 API 可讓您建立以下用途的應用程式：
 
    - 使用 XML 資料填寫範本檔案 (PDF 和 XDP) 來產生文件。
    - 產生多種格式的輸出表單，包括非互動式 PDF 列印資料流。
@@ -61,9 +61,9 @@ Adobe Experience Manager [!DNL AEM Forms] as a Cloud Service 會持續進行改�
 ### [!DNL Forms]的 Beta 版功能 {#sep-what-is-new-forms-prerelease}
 
 - **統一的儲存連接器：**使用統一的儲存連接器可將客戶管理的存放庫中的程序內資料外部化。 例如，您可以將包含敏感個人資料 (SPD) 的程序內 AEM 工作流程資料 (AEM 工作流程變數資料) 儲存在客戶管理的存放庫中。
-   <!--* Enable Forms Portal’s save and resume functionality and store adaptive forms drafts in a customer-managed data repository.-->
+  <!--* Enable Forms Portal’s save and resume functionality and store adaptive forms drafts in a customer-managed data repository.-->
 
-- **[!DNL AEM Forms as a Cloud Service - Communications]**：[通訊 API](aem-forms-cloud-service-communications.md) 可幫助您合併 XDP 範本和 XML 資料，以產生多種格式的列印文件。 此服務可讓您以同步模式產生文件。 這些 API 可讓您建立以下用途的應用程式：
+- **[!DNL AEM Forms as a Cloud Service - Communications]**：[通訊 API](aem-forms-cloud-service-communications.md) 可幫助您合併 XDP 範本和 XML 資料，以產生多種格式的列印文件。 此服務可讓您以同步模式產生檔案。 這些 API 可讓您建立以下用途的應用程式：
    - 使用 XML 資料填寫範本檔案來產生文件。
    - 產生多種格式的輸出表單，包括非互動式 PDF 列印資料流。
    - 從 XFA 表格 PDF 和 Adobe Acrobat Form 產生列印 PDF 檔案。
@@ -104,7 +104,7 @@ Adobe Experience Manager [!DNL AEM Forms] as a Cloud Service 會持續進行改�
 
 - **根據 Acroform 的記錄文件**：除了根據 PDF 的表單範本以外，AEM Forms as a Cloud Service 也支援使用 [Adobe Acrobat Form PDF (Acroform PDF)](generate-document-of-record-for-non-xfa-based-adaptive-forms.md) 作為 XFA 式表格範本以外的記錄文件範本。
 
-- **Microsoft Azure 資料存放區連接器**：您現在可以[將表單資料模型連接至 Microsoft Azure Storage](configure-azure-storage.md)。它可讓您擷取最適化表單資料，並將該資料作為 BLOB 儲存於 Microsoft Azure Storage。
+- **Microsoft Azure 資料存放區連接器**：您現在可以[將表單資料模型連接至 Microsoft Azure Storage](configure-azure-storage.md)。它可讓您擷取最適化表單資料，並將該資料作為BLOB儲存於Microsoft Azure儲存體。
 
 ### [!DNL Forms]的 Beta 版功能 {#aug-what-is-new-forms-prerelease}
 
@@ -113,7 +113,7 @@ Adobe Experience Manager [!DNL AEM Forms] as a Cloud Service 會持續進行改�
    - 啟用 Forms Portal 的儲存並繼續功能，並將最適化表單草稿儲存在客戶管理的資料存放庫中。
    - 將包含敏感個人資料 (SPD) 的程序內 AEM 工作流程資料 (AEM 工作流程變數資料) 儲存在客戶管理的存放庫中。
 
-- **[!DNL AEM Forms as a Cloud Service - Communications]**：[通訊 API](aem-forms-cloud-service-communications.md) 可幫助您合併 XDP 範本和 XML 資料，以產生多種格式的列印文件。 此服務可讓您以同步模式產生文件。 這些 API 可讓您建立以下用途的應用程式：
+- **[!DNL AEM Forms as a Cloud Service - Communications]**：[通訊 API](aem-forms-cloud-service-communications.md) 可幫助您合併 XDP 範本和 XML 資料，以產生多種格式的列印文件。 此服務可讓您以同步模式產生檔案。 這些 API 可讓您建立以下用途的應用程式：
    - 使用 XML 資料填寫範本檔案來產生文件。
    - 產生多種格式的輸出表單，包括非互動式 PDF 列印資料流。
    - 從 XFA 表格 PDF 和 Adobe Acrobat Form 產生列印 PDF 檔案。
@@ -139,13 +139,13 @@ Adobe Experience Manager [!DNL AEM Forms] as a Cloud Service 會持續進行改�
 
 - **Acroform-based Document of Record**：您也可以[使用 Adobe Acrobat Form PDF (Acroform PDF)](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/create-an-adaptive-form/generate-document-of-record-for-non-xfa-based-adaptive-forms.html) 作為 XFA 式表格範本以外的記錄文件範本。
 
-- **Microsoft Azure 資料存放區連接器**：您現在可以[將表單資料模型連接至 Microsoft Azure Storage](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/use-form-data-model/configure-azure-storage.html)。它可讓您擷取最適化表單資料，並將該資料作為 BLOB 儲存於 Microsoft Azure Storage。
+- **Microsoft Azure 資料存放區連接器**：您現在可以[將表單資料模型連接至 Microsoft Azure Storage](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/use-form-data-model/configure-azure-storage.html)。它可讓您擷取最適化表單資料，並將該資料作為BLOB儲存於Microsoft Azure儲存體。
 
 - **Variable Data Externalizer**：您可以將 AEM 工作流程變數的資料儲存於您的組織管理的外部儲存系統。
 
 ### [!DNL Forms]的 Beta 版功能 {#july-what-is-new-forms-prerelease}
 
-- **[!DNL AEM Forms as a Cloud Service - Communications]**：[通訊 API](aem-forms-cloud-service-communications.md) 可幫助您合併 XDP 範本和 XML 資料，以產生多種格式的列印文件。 此服務可讓您以同步模式產生文件。 這些 API 可讓您建立以下用途的應用程式：
+- **[!DNL AEM Forms as a Cloud Service - Communications]**：[通訊 API](aem-forms-cloud-service-communications.md) 可幫助您合併 XDP 範本和 XML 資料，以產生多種格式的列印文件。 此服務可讓您以同步模式產生檔案。 這些 API 可讓您建立以下用途的應用程式：
    - 使用 XML 資料填寫範本檔案來產生文件。
    - 產生多種格式的輸出表單，包括非互動式 PDF 列印資料流。
    - 從 XFA 表格 PDF 和 Adobe Acrobat Form 產生列印 PDF 檔案。
@@ -161,7 +161,7 @@ Adobe Experience Manager [!DNL AEM Forms] as a Cloud Service 會持續進行改�
 
 ### [!DNL Forms]的 Beta 版功能 {#june-what-is-new-forms-prerelease}
 
-- **[!DNL AEM Forms as a Cloud Service - Communications]**：通訊 API 可幫助您合併 XDP 範本和 XML 資料，以產生多種格式的列印文件。此服務可讓您以同步模式產生文件。 這些 API 可讓您建立以下用途的應用程式：
+- **[!DNL AEM Forms as a Cloud Service - Communications]**：通訊 API 可幫助您合併 XDP 範本和 XML 資料，以產生多種格式的列印文件。此服務可讓您以同步模式產生檔案。 這些 API 可讓您建立以下用途的應用程式：
 
    - 使用 XML 資料填寫範本檔案來產生最終表單文件。
    - 產生多種格式的輸出表單，包括非互動式 PDF 列印資料流。
@@ -187,7 +187,7 @@ Adobe Experience Manager [!DNL AEM Forms] as a Cloud Service 會持續進行改�
 
 ### [!DNL Forms]即將推出的 Beta 版功能 {#may-what-is-new-forms-prerelease}
 
-Output as a Cloud service：Output 服務可幫助您合併 XDP 範本和 XML 資料，以產生多種格式的列印文件。 此服務可讓您以同步和非同步批次模式產生文件。 Output 服務可讓您建立以下用途的應用程式：
+Output as a Cloud service：Output 服務可幫助您合併 XDP 範本和 XML 資料，以產生多種格式的列印文件。 此服務可讓您以同步和非同步批次模式產生檔案。 Output 服務可讓您建立以下用途的應用程式：
 
 - 使用 XML 資料填寫範本檔案來產生最終表單文件。
 - 產生多種格式的輸出表單，包括非互動式 PDF 列印資料流。
@@ -207,25 +207,25 @@ Output as a Cloud service：Output 服務可幫助您合併 XDP 範本和 XML �
 
 - **在啟用 Adobe Sign 的最適化表格中使用政府機關身分證件驗證方法**
 
-   在先進的機器學習演算法的支援下，Adobe Sign 的政府機關身分證件流程讓全球的公司能夠確保對其接收者身分進行高品質的驗證。 現在，您可以在啟用 Adobe Sign 的最適化表格中使用政府機關身分證件驗證方法。
+  在先進的機器學習演算法的支援下，Adobe Sign 的政府機關身分證件流程讓全球的公司能夠確保對其接收者身分進行高品質的驗證。 現在，您可以在啟用 Adobe Sign 的最適化表格中使用政府機關身分證件驗證方法。
 
-   政府機關身分證件是優質的身分驗證方法，會指示接收者[上傳政府機構簽發的身分證件 (駕照、國民身分證、護照) 的影像](https://helpx.adobe.com/in/sign/using/adobesign-authentication-government-id.html)，然後評估該證件以確保其真實性。
+  政府機關身分證件是優質的身分驗證方法，會指示接收者[上傳政府機構簽發的身分證件 (駕照、國民身分證、護照) 的影像](https://helpx.adobe.com/in/sign/using/adobesign-authentication-government-id.html)，然後評估該證件以確保其真實性。
 
 - **支援使用表格中的簽名體驗來提交非同步的最適化表格**
 
-   您現在可以使用表格中的簽名體驗來提交非同步的最適化表格。 您也可以將最適化表格內嵌到 [!DNL Experience Manager Sites] 頁面上，並使用表格中的簽名體驗來提交最適化表格。
+  您現在可以使用表格中的簽名體驗來提交非同步的最適化表格。 您也可以將最適化表格內嵌到 [!DNL Experience Manager Sites] 頁面上，並使用表格中的簽名體驗來提交最適化表格。
 
 - **為指派工作步驟預先填寫最適化表格時，支援使用變數來指定附件**
 
-   為指派工作步驟預先填寫最適化表格時，您現在可以使用文件類型變數為最適化表格選取輸入附件。
+  為指派工作步驟預先填寫最適化表格時，您現在可以使用文件類型變數為最適化表格選取輸入附件。
 
 - **支援使用常值選項來設定 JSON 類型變數的值**
 
-   您可以在 AEM 工作流程的設定變數步驟中，使用常值選項來設定 JSON 類型變數的值。 此常值選項可讓您使用字串形式來指定 JSON。
+  您可以在 AEM 工作流程的設定變數步驟中，使用常值選項來設定 JSON 類型變數的值。 常值選項可讓您以字串形式指定JSON。
 
 - **使用本機開發環境來建立記錄文件 (DoR)**
 
-   您可以在雲端服務實例及 AEM Forms as a Cloud Service SDK (本機開發環境) 中使用 XDP 當做記錄文件範本。 在過去，支援僅限於雲端服務實例。
+  您可以在雲端服務實例及 AEM Forms as a Cloud Service SDK (本機開發環境) 中使用 XDP 當做記錄文件範本。 在過去，支援僅限於雲端服務實例。
 
 ### [!DNL Forms]中的錯誤修正 {#april-bug-fixes-forms}
 

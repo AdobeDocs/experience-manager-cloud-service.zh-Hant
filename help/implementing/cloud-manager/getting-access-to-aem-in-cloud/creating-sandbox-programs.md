@@ -2,9 +2,9 @@
 title: 建立沙箱計畫
 description: 了解如何使用 Cloud Manager 建立您自己的沙箱計畫，用於訓練、展示、POC 或其他非生產目的。
 exl-id: 10011392-3059-4bb0-88db-0af1d390742e
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '445'
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+workflow-type: tm+mt
+source-wordcount: '444'
 ht-degree: 100%
 
 ---
@@ -49,7 +49,7 @@ ht-degree: 100%
 
 您可以透過查看計畫概覽頁面查看沙箱設定的詳細資訊以及存取環境 (一旦可用)。
 
-1. 在 Cloud Manager 登陸頁面中，按一下新建立計畫上的省略符號按鈕。
+1. 在 Cloud Manager 登陸頁面中，單擊新建立程序上的省略符號按鈕。
 
    ![存取計畫概觀](assets/program-overview-sandbox.png)
 

@@ -2,7 +2,7 @@
 title: 將體驗片段匯出到 Adobe Target
 description: 瞭解如何將您的體驗片段匯出至Adobe Target，以測試並個人化體驗。
 exl-id: 752d91f9-13a6-40c2-9425-7d18dafe9205
-source-git-commit: 31e6ec8e9977c8787e14481ee3a94df767262aec
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '2254'
 ht-degree: 1%
@@ -55,7 +55,7 @@ ht-degree: 1%
 >* [Adobe Target — 如何使用Adobe Experience Manager (AEM)體驗片段？](https://experienceleague.adobe.com/docs/target/using/experiences/offers/aem-experience-fragments.html?lang=en)
 >* [AEM 6.5 — 手動設定與Adobe Target的整合 — 建立Target雲端設定](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/target-configuring.html#creating-a-target-cloud-configuration)
 
-## 必備條件 {#prerequisites}
+## 先決條件 {#prerequisites}
 
 需要執行各種動作：
 
@@ -87,7 +87,7 @@ ht-degree: 1%
    >
    >如果您將雲端設定新增至體驗片段本身，該設定會由所有變體繼承。
 
-1. 選取 **Cloud Services** 標籤。
+1. 選取 **Cloud Service** 標籤。
 
 1. 在 **Cloud Service設定**，選取 **Adobe Target** 下拉式清單中的。
 
@@ -114,7 +114,7 @@ ht-degree: 1%
 
    例如，針對資料夾：
 
-   ![資料夾 — Cloud Services](assets/xf-target-integration-01.png "資料夾 — Cloud Services")
+   ![資料夾 — Cloud Service](assets/xf-target-integration-01.png "資料夾 — Cloud Service")
 
 1. **儲存並關閉**.
 
@@ -138,7 +138,7 @@ ht-degree: 1%
 
 使用以下程式，在AEM中建立Target雲端設定：
 
-1. 瀏覽至 **舊版Cloud Services** 透過 **AEM標誌** > **工具** > **Cloud Services** > **舊版Cloud Services**.
+1. 瀏覽至 **舊版Cloud Service** 透過 **AEM標誌** > **工具** > **Cloud Service** > **舊版Cloud Service**.
 例如：([http://localhost:4502/libs/cq/core/content/tools/cloudservices.html](http://localhost:4502/libs/cq/core/content/tools/cloudservices.html))
 
    此 **Adobe Experience Cloud** 概觀頁面隨即開啟。
@@ -306,7 +306,7 @@ When you associate a page with the framework, the child pages inherit the associ
 
    >[!NOTE]
    >
-   >If the framework you attached to the page was not activated yet, a wizard opens which allows you to publish it as well.
+   >If the framework you attached to the page was not activated yet, a wizard opens which lets you publish it as well.
 -->
 
 ## 將體驗片段匯出至Adobe Target {#exporting-an-experience-fragment-to-adobe-target}

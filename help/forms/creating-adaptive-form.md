@@ -5,30 +5,30 @@ feature: Adaptive Forms
 role: User, Developer
 level: Beginner
 exl-id: 38ca5eea-793b-420b-ae60-3a0bd83caf00
-source-git-commit: 59e27998820e3c877c5594b9284b43ce108394fa
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1575'
-ht-degree: 4%
+source-wordcount: '1572'
+ht-degree: 89%
 
 ---
 
-# 建立最適化表單（Foundation元件） {#creating-an-adaptive-form}
+# 建立最適化表單（基礎元件） {#creating-an-adaptive-form}
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
 | AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/creating-adaptive-form.html) |
-| AEM as a Cloud Service  | 本文 |
+| AEM as a Cloud Service  | 本文章 |
 
 
-<span class="preview"> Adobe建議使用現代化且可擴充的資料擷取 [核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) 的 [建立新的Adaptive Forms](/help/forms/creating-adaptive-form-core-components.md) 或 [將最適化Forms新增至AEM Sites頁面](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). 這些元件代表最適化Forms建立工作取得重大進展，可確保提供令人驚歎的使用者體驗。 本文說明使用基礎元件製作最適化Forms的舊方法。 </span>
+<span class="preview">Adobe 建議使用新式且可擴充的資料擷取[核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)，用來[建立新的最適化表單](/help/forms/creating-adaptive-form-core-components.md)或[將最適化表單新增到 AEM Sites 頁面](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)。這些元件代表最適化表單建立方面的重大進步，可確保令人印象深刻的使用者體驗。本文會介紹使用基礎元件編寫最適化表單的舊方法。</span>
 
-最適化Forms可讓您建立吸引人、回應式、動態且最適化的表單。 AEM Forms為商業使用者提供好用的精靈，以便快速撰寫最適化Forms。 精靈具有快速索引標籤導覽，可輕鬆選取預先設定的範本、樣式、欄位和提交選項以建立調適型表單。
+最適化表單可讓您建立吸引人、回應式、動態且最適化的表單。AEM Forms為商業使用者提供好用的精靈，以便快速撰寫最適化Forms。 此精靈具有快速的標籤導覽，可輕鬆選取預先設定的範本、樣式、欄位和提交選項，以建立最適化表單。
 
-開始之前，請先瞭解您可用的Forms元件型別：
+開始之前，請先了解您可以使用的表單元件類型：
 
-* [最適化Forms核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=zh-Hant) 是標準化的資料擷取元件。 這些元件為您的數位註冊體驗提供自訂功能、縮短的開發時間並降低維護成本。開發人員可以輕鬆自訂這些元件並設定其樣式。 Adobe建議運用這些現代且可擴充的元件來開發最適化Forms。
+* [最適化Forms核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=zh-Hant) 是標準化的資料擷取元件。 這些元件為您的數位註冊體驗提供自訂功能、縮短的開發時間並降低維護成本。開發人員可以輕鬆地自訂這些元件和設計其樣式。Adobe建議運用這些現代且可擴充的元件來開發最適化Forms。
 
-* [Adaptive Forms Foundation元件](creating-adaptive-form.md) 是傳統（舊）資料擷取元件。 您可以繼續使用這些專案來編輯現有的基礎元件型最適化表單。 如果您要建立新表單，Adobe建議使用  [最適化Forms核心元件](creating-adaptive-form-core-components.md) 以建立最適化Forms。
+* [最適化Forms Foundation元件](creating-adaptive-form.md) 是傳統（舊）資料擷取元件。 您可以繼續使用這些元件來編輯以現有基礎元件為主的最適化表單。如果您要建立新表單，Adobe 建議使用[](creating-adaptive-form-core-components.md)最適化表單核心元件以建立最適化表單。
 
 
 
@@ -58,51 +58,51 @@ Adaptive Forms allow you to create forms that are engaging, responsive, dynamic,
 
 ## 先決條件
 
-您需要下列專案才能建立最適化表單：
+您必須符合以下條件才能建立最適化表單：
 
-* **許可權**：將使用者新增至 [!DNL forms-users] 為使用者提供建立最適化表單的許可權。 如需特定使用者群組的表單詳細清單，請參閱 [群組與許可權](forms-groups-privileges-tasks.md).
+* **權限**：將您的使用者新增到 [!DNL forms-users]，以便為他們提供建立最適化表單的權限。如需特定使用者群組的表單詳細清單，請參閱 [群組與許可權](forms-groups-privileges-tasks.md).
 
-* **最適化表單主題**：主題包含元件和面板的樣式詳細資訊。 樣式包含背景顏色、狀態顏色、透明度、對齊方式及大小等屬性。 套用主題時，指定的樣式會反映在相應的元件上。 您可以 [建立新主題](themes.md) 或 [匯入現有主題](import-export-forms-templates.md#uploading-a-theme). 您也可以部署 [最新原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html#create-project) 一些範例主題。
+* **最適化表單主題**：主題包含元件和面板的樣式詳細資料。樣式包括背景顏色、狀態顏色、透明度、對齊方式和大小等屬性。套用主題時，指定的樣式會反映在對應的元件上。您可以[建立新主題](themes.md)或[匯入現有的主題](import-export-forms-templates.md#uploading-a-theme)。您也可以針對一些範例主題部署[最新的原型版本](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html#create-project)。
 
-* **自適應表單範本**：範本提供基本結構，並定義調適型表單的外觀（版面配置和樣式）。 它有預先格式化的元件，包含特定屬性和內容結構。 它還提供定義主題和提交動作的選項。 主題定義外觀，提交動作定義提交最適化表單時要採取的動作。 例如，將收集的資料傳送至資料來源。 Cloud Service支援兩種範本：
+* **最適化表單範本**：此範本會提供基本結構並定義最適化表單的外觀 (版面和樣式)。其中具有包含特定屬性和內容結構的預先格式化元件。它也會提供定義主題和提交動作的選項。主題會定義外觀，而提交動作會定義提交最適化表單時要採取的動作。例如，將所收集的資料傳送到資料來源。雲端服務支援兩種類型的範本：
 
-   * **可編輯的範本**：您可以 [建立新的](template-editor.md) 或 [匯入現有的可編輯範本](migrate-to-forms-as-a-cloud-service.md). 您也可以部署 [最新原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=en#:~:text=The%20AEM%20Archetype%20is%20made%20up%20of%20modules%3A,and%20request%20filters.%20it.tests%3A%20are%20Java型%20integration%20tests。) 以取得一些可編輯範本的範例。
+   * **可編輯範本**：您可以[建立新的](template-editor.md)或[匯入現有可編輯的範本](migrate-to-forms-as-a-cloud-service.md)。您也可以部署[最新的原型版本](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=zh-Hant#:~:text=The%20AEM%20Archetype%20is%20made%20up%20of%20modules%3A,and%20request%20filters.%20it.tests%3A%20are%20Java-based%20integration%20tests.)以取得一些可編輯範本範例。
 
-   * **靜態範本**：這些是舊版範本，僅建議從Adobe Managed Services (AMS)和內部部署AEM Forms安裝(AEM 6.5 Forms或更舊版本)的客戶使用。 這可讓您繼續使用靜態範本中的現有投資。 建立新的最適化表單時，建議使用可編輯的範本。
+   * **靜態範本**：這些是舊範本，建議僅用於從 Adobe Managed Services (AMS) 和內部部署 AEM Forms 安裝 (AEM 6.5 Forms 或更早版本) 移轉的客戶。這些範本可讓您繼續使用對靜態範本的現有投資。建立新的最適化表單時，建議使用可編輯範本。
 
 
 
-## 建立最適化表單（Foundation元件） {#create-an-adaptive-form-foundation-components}
+## 建立最適化表單 （基礎元件） {#create-an-adaptive-form-foundation-components}
 
-1. 存取 [!DNL Experience Manager Forms] 作者執行個體。 可以是雲端例項或本機開發例項。
+1. 存取 [!DNL Experience Manager Forms] 作者執行個體；可以是 Cloud 執行個體或本機開發執行個體。
 
-1. 在Experience Manager登入頁面中輸入您的認證。
+1. 在 Experience Manager 登入頁面上輸入您的認證。
 
-   登入後，在左上角，點選 **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms與檔案]**.
+   登入之後，在左上角點選「**[!UICONTROL Adobe Experience Manager]**」>「**[!UICONTROL 表單]**」>「**[!UICONTROL 表單與文件]**」。
 
-1. 點選 **[!UICONTROL 建立]**  > **[!UICONTROL 最適化Forms]**. 精靈隨即開啟。
-1. 在「來源」標籤中，選取範本：
+1. 點選「**[!UICONTROL 建立]**」>「**[!UICONTROL 最適化表單]**」。此時會開啟精靈。
+1. 在「來源」標籤中，選取一個範本：
 
-   * 當您選取可編輯的範本時，範本中指定的主題和提交動作會自動選取，而且 **[!UICONTROL 建立]** 按鈕已啟用。 您可以前往 **[!UICONTROL 樣式]** 或 **[!UICONTROL 提交]** 標籤以選取不同的主題或提交動作。 如果選取的可編輯範本未指定主題，建立按鈕仍會停用。 您可以前往 **[!UICONTROL 樣式]** 標籤以手動選取主題。
+   * 選取可編輯範本時，系統會自動選取範本中指定的主題和提交動作，且「**[!UICONTROL 建立]**」按鈕已啟用。您可以前往「**[!UICONTROL 樣式]**」或「**[!UICONTROL 提交]**」標籤，選取不同的主題或提交動作。如果選取的可編輯範本並未指定主題，則「建立」按鈕將維持停用狀態。您可以前往「**[!UICONTROL 樣式]**」標籤以手動選取主題。
 
      >[!NOTE]
      >
-     > 您也可以建立 [!UICONTROL 記錄檔案] 使用最適化Forms編輯器的範本。 如需詳細資訊，請參閱 [最適化表單編輯器中的記錄檔案支援](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform).
+     > 您也可以使用最適化表單編輯器建立「[!UICONTROL 記錄文件]」範本。如需更多資訊，請參閱[最適化表單編輯器中的記錄文件支援](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform)。
 
-   * 當您選取靜態範本時，無法使用資料、樣式、提交、傳送和預覽選項。 建立新的最適化表單時，建議使用可編輯的範本。
+   * 選取靜態範本時，無法使用資料、樣式、提交、傳遞和預覽選項。建立新的最適化表單時，建議使用可編輯範本。
 
-1. 在 **[!UICONTROL 樣式]** 索引標籤中，選取主題：
+1. 在「**[!UICONTROL 樣式]**」標籤中，選取一個主題：
 
-   * 當選取的範本指定主題時，會在精靈中自動選取主題。 您也可以從「樣式」標籤中選擇不同的主題。
-   * 如果選取的範本未指定主題，您可以使用「樣式」標籤來選擇主題。 此 **[!UICONTROL 建立]** 只有在選取主題後，才會啟用按鈕。
+   * 所選取的範本指定主題時，就會在精靈中自動選取該主題。您也可以從「樣式」標籤中選擇不同的主題。
+   * 如果選取的範本未指定主題，您可以使用「樣式」標籤選擇主題。只有在選取主題之後，「**[!UICONTROL 建立]**」按鈕才會啟用。
 
-1. （選用）在 **[!UICONTROL 資料]** 索引標籤中，選取資料模型：
+1. (選用) 在「**[!UICONTROL 資料]**」標籤中，選取一個資料模型：
 
-   * **表單資料模型**：A [表單資料模型](data-integration.md) 可讓您將實體和服務從不同的資料來源整合至最適化表單。 如果您要建立的最適化表單涉及從多個資料來源擷取及寫入資料，請選擇「表單資料模型」。
+   * **表單資料模型**：[表單資料模型](data-integration.md)可讓您將來自分散資料來源的實體和服務整合到最適化表單。如果您建立的最適化表單是對多個資料來源擷取和寫入資料，請選擇「表單資料模型」。
 
-   * **JSON結構描述**： [JSON結構](adaptive-form-json-schema-form-model.md) 代表組織中的後端系統產生或使用資料的結構。 您可以將結構描述與最適化表單相關聯，並使用其元素將動態內容新增到最適化表單。編寫Adaptive Forms時，可在內容瀏覽器的「資料模型物件」索引標籤中使用結構描述元素，所有欄位也會新增到新建立的Adaptive Form。
+   * **JSON 結構描述**：[JSON 結構描述](adaptive-form-json-schema-form-model.md)代表組織內後端系統產生或使用之資料的結構。您可以將結構描述與最適化表單建立關聯，並使用其元素將動態內容新增到最適化表單。編寫Adaptive Forms時，可在內容瀏覽器的「資料模型物件」索引標籤中使用結構描述的元素，所有欄位也會新增到新建立的Adaptive Form。
 
-   預設會選取資料模型的所有欄位。 建立最適化表單時，所有選取的資料模型欄位都會轉換為對應的最適化表單元件。 精靈會提供核取方塊，讓您僅選取應包含在調適型表單中的欄位。
+   系統預設會選取資料模型的所有欄位。建立最適化表單時，所有選取的資料模型欄位都會轉換成對應的最適化表單元件。精靈會為您提供核取方塊，以便您只選取要在最適化表單中包含哪些欄位。
 
    <!-- 
    
@@ -110,23 +110,23 @@ Adaptive Forms allow you to create forms that are engaging, responsive, dynamic,
    
    -->
 
-1. 在 **[!UICONTROL 提交]** 索引標籤中，選取提交動作：
+1. 在「**[!UICONTROL 提交]**」標籤中，選取提交動作：
 
-   * 當您選取範本時，範本中指定的提交動作會自動選取。 您可以從「提交」標籤中選取不同的提交動作。 此 **[!UICONTROL 提交]** 索引標籤會顯示所有可用的提交動作。
+   * 您選取範本後，系統會自動選取範本中指定的提交動作。您可以從「提交」標籤選取不同的提交動作。「**[!UICONTROL 提交]**」標籤會顯示所有可用的提交動作。
 
-   * 當選取的範本未指定提交動作時，您可以使用 **[!UICONTROL 提交]** 標籤以選取提交動作
+   * 所選取的範本未指定提交動作時，您可以使用「**[!UICONTROL 提交]**」標籤選取提交動作
 
-1. （選用）在「傳送」標籤中，您可以指定最適化表單的發佈或取消發佈日期。
+1. (選用) 在「傳遞」標籤中，您可以為最適化表單指定發佈或取消發佈日期。
 
-1. 點選 **[!UICONTROL 建立]**. 會出現一個對話方塊，指定儲存最適化表單的標題、名稱和位置：
+1. 點選「**[!UICONTROL 建立]**」。此時會顯示一個對話框，以指定標題、名稱和儲存最適化表單的位置：
 
-   * **[!UICONTROL 標題]** 指定表單的顯示名稱。 標題可協助您識別 [!DNL Experience Manager Forms] 使用者介面。
-   * **[!UICONTROL 名稱：]** 指定表單的名稱。 在存放庫中會建立具有指定名稱的節點。 當您開始輸入標題時，會自動產生名稱欄位的值。 您可以變更建議值。 名稱欄位只能包含英數字元、連字型大小和底線。 所有無效輸入都會以連字型大小取代。
-   * **[!UICONTROL 路徑：]** 指定最適化表單的儲存位置。 您可以直接將最適化表單儲存在 `/content/dam/formsanddocuments` 或建立資料夾，例如 `/content/dam/formsanddocuments/adaptiveforms` 以儲存最適化表單。 在路徑中使用資料夾之前，請務必先建立資料夾。 此 **[!UICONTROL 路徑：]** 欄位不會自動建立資料夾。
+   * **[!UICONTROL 標題：]**&#x200B;指定表單的顯示名稱。標題有助於在 [!DNL Experience Manager Forms] 使用者介面中識別表單。
+   * **[!UICONTROL 名稱：]**&#x200B;指定表單的名稱。存放庫中會建立具有指定名稱的節點。您開始輸入標題時，就會自動產生名稱欄位的值。您可以變更建議的值。名稱欄位只能包含字母數字字元、連字號和底線。所有無效的輸入都會以連字號取代。
+   * **[!UICONTROL 路徑：]**&#x200B;指定最適化表單的儲存位置。您可以將最適化表單直接儲存在 `/content/dam/formsanddocuments`，或建立一個資料夾 (例如 `/content/dam/formsanddocuments/adaptiveforms`) 以儲存最適化表單。要使用路徑中的資料夾之前，請務必先建立該資料夾。「**[!UICONTROL 路徑：]**」欄位不會自動建立資料夾。
 
-1. 點選 **[!UICONTROL 建立]**. 最適化表單會在最適化Forms編輯器中建立並開啟。 編輯器會顯示範本中可用的內容。 它也會顯示側邊欄，以根據需求自訂新建立的表單。
+1. 點選「**[!UICONTROL 建立]**」。此時已建立最適化表單，並在最適化表單編輯器中開啟。編輯器會顯示範本中可用的內容，它也會顯示側邊欄，以根據需求自訂新建立的表單。
 
-   根據最適化表單的型別，出現在相關聯中的表單元素 <!--XFA form template, XML schema or --> JSON結構描述或表單資料模型會顯示在 **[!UICONTROL 資料模型物件]** 的標籤 **[!UICONTROL 內容瀏覽器]** 在側欄中。 您也可以拖放這些元素來建置最適化表單。
+   視最適化表單的類型而定，出現在相關聯 <!--XFA form template, XML schema or -->JSON 結構描述或表單資料模型中的表單元素，會顯示在側邊欄「**[!UICONTROL 內容瀏覽器]**」的「**[!UICONTROL 資料模型物件]**」標籤中。您也可以拖放這些元素以建置自己的最適化表單。
 
 <!-- ## Create an Adaptive Form based on a Form Data Model {#fdm}
 
@@ -179,28 +179,28 @@ Do the following to use XML or JSON schema as form model for an Adaptive Form:
 
 ## 編輯最適化表單的表單模型屬性 {#edit-form-model}
 
-您可以變更最適化表單的表單模型（JSON式或表單資料模型）。 您無法從一個表單模型變更為另一個表單模型。
+您可以變更最適化表單 (JSON 型或表單資料模型) 的表單模型。您無法從一種表單模型變更為另一種表單模型。
 
-1. 選取最適化表單，然後點選 **屬性** 圖示。
-1. 開啟 **[!UICONTROL 表單模型]** 按tab鍵，然後執行下列任一項作業。
+1. 選取最適化表單，並點選「**屬性**」圖示。
+1. 開啟「**[!UICONTROL 表單模型]**」標籤，並執行以下其中一項操作。
 
-   * 如果最適化表單沒有表單模型，您可以選擇另一個表單模型，並相應地選擇 <!-- a form template, --> XML或JSON結構描述，或表單資料模型。
-   * 如果最適化表單是以表單模型為基礎，您可以選擇其他模型 <!-- form template, --> XML或JSON結構描述，或相同表單模型的表單資料模型。
+   * 如果最適化表單沒有表單模型，您可以選擇另一個表單模型，並依此選取 <!-- a form template, -->XML 或 JSON 結構描述，或表單資料模型。
+   * 如果最適化表單是以表單模型為基礎，您可以選擇另一個 <!-- form template, -->XML 或 JSON 結構描述，或相同表單模型的表單資料模型。
 
-1. 點選 **[!UICONTROL 儲存]** 以儲存屬性。
+1. 點選「**[!UICONTROL 儲存]**」以儲存屬性。
 
 您也可以從最適化表單編輯器或最適化表單範本編輯器修改表單模型屬性。
 
-1. 選取 **[!UICONTROL 最適化表單容器（根）]** 元件。
-1. 按一下 ![設定圖示](/help/forms/assets/configure-icon.svg) 圖示以開啟 **[!UICONTROL 屬性]** 最適化表單容器的預設值。
-1. 選取 **[!UICONTROL 資料模型]** 標籤並執行下列任一項作業：
+1. 選取「**[!UICONTROL 最適化表單容器 (根)]**」元件。
+1. 按一下 ![設定圖示](/help/forms/assets/configure-icon.svg) 圖示以開啟最適化表單容器的「**[!UICONTROL 屬性]**」。
+1. 選取「**[!UICONTROL 資料模型]**」標籤，並執行以下其中一項操作：
 
-   * 如果最適化表單沒有表單模型，您可以選擇表單模型，並相應地選擇 <!-- a form template, --> XML或JSON結構描述，或表單資料模型。
-   * 如果最適化表單是以表單模型為基礎，則無法變更表單模型。 您可以選擇其他 <!-- form template, --> 適用時，為相同表單模型的XML或JSON結構描述或表單資料模型。
-1. 點選 ![儲存](/help/forms/assets/check-button.png) 以儲存屬性。
+   * 如果最適化表單沒有表單模型，您可以選擇一個表單模型，並依此選取 <!-- a form template, -->XML 或 JSON 結構描述，或表單資料模型。
+   * 如果最適化表單是以表單模型為主，則無法變更表單模型。您可以選擇另一個 <!-- form template, -->XML 或 JSON 結構描述，或依適用情況選擇相同表單模型的表單資料模型。
+1. 點選![儲存](/help/forms/assets/check-button.png)以儲存屬性。
 
 ![FDM-Schema-Support](/help/forms/assets/fdmsupport.png)
 
 >[!NOTE]
 >
-> 您也可以將自適應表單另存為範本。 如需詳細資訊，請參閱 [使用最適化表單建立範本](/help/forms/template-editor.md#saving-an-adaptive-form-as-template-saving-adaptive-form-as-template).
+> 您也可以將自適應表單另存為範本。 如需更多資訊，請參閱[使用最適化表單建立範本](/help/forms/template-editor.md#saving-an-adaptive-form-as-template-saving-adaptive-form-as-template)。

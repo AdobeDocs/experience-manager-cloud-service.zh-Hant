@@ -2,16 +2,16 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2022.10.0 版發行說明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2022.10.0 版發行說明。'
 exl-id: 8fce7c50-f322-4bcf-bd76-390faedfd5b7
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '838'
-ht-degree: 85%
+source-wordcount: '836'
+ht-degree: 80%
 
 ---
 
 # [!DNL Adobe Experience Manager] as a Cloud Service 2022.10.0 版發行說明 {#release-notes}
 
-以下章節概述2022.10.0版的 [!DNL Experience Manager] as a Cloud Service。
+以下區段會概述2022.10.0版的 [!DNL Experience Manager] as a Cloud Service。
 
 >[!NOTE]
 >
@@ -48,7 +48,7 @@ ht-degree: 85%
 
 ### [!DNL Assets] 中的新功能 {#assets-features}
 
-* Experience Manager Assets 現在允許您上傳其他受支援格式類型的文件並[使用隨附的 Document Cloud 檢視器預覽它們](/help/assets/manage-pdf-documents.md)。支援的格式類型包括 TXT、RTF、DOC、DOCX、PPT、PPTX、XLS 和 XLSX。
+* Experience Manager Assets現在可讓您上傳其他受支援格式型別和[使用隨附的Document Cloud檢視器預覽](/help/assets/manage-pdf-documents.md). 支援的格式類型包括 TXT、RTF、DOC、DOCX、PPT、PPTX、XLS 和 XLSX。
 
   ![其他格式的 PDF 轉譯](/help/release-notes/assets/multi-page-other-formats.png)
 
@@ -63,9 +63,9 @@ ht-degree: 85%
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-### [!DNL Forms] 發行前通道中可用的新功能 {#prerelease-features-forms}
+### [!DNL Forms] 中可用的新功能 發行前通道 {#prerelease-features-forms}
 
-* **調適型表單範本編輯器**：範本編輯器允許您為組織預先定義調適型表單的基本結構和外觀。此版本引進了下列對範本編輯器的改良：
+* **最適化Forms範本編輯器**：範本編輯器讓您為組織預先定義最適化Forms的基本結構和外觀。 此版本引進了下列對範本編輯器的改良：
    * **[範本編輯器中的表單資料模型](/help/forms/creating-adaptive-form.md#edit-form-model-properties-of-an-adaptive-form-edit-form-model)**：您可以在範本編輯器中將表單資料模型結構描述關聯到調適型表單範本。它有助於縮短建立調適型表單所需的時間。該選項也以新增至調適型表單編輯器中，讓使用者能夠選取或變更現有表單的表單資料模型。
    * **[範本編輯器中的文件記錄](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform)**：您現在可以將為使用範本建立的所有表單產生文件記錄的過程標準化。這有助於提高組織要求的合規性和標準化。
 
@@ -85,9 +85,9 @@ ht-degree: 85%
 
 ### 新增功能 {#what-is-new-foundation}
 
-* AEM as a Cloud Service (作者服務) 現在與 Unified Shell 整合，以改進使用者體驗，並將其與所有其他 Experience Cloud 應用程式統一。 請參閱AEM as a [Unified Shell上的Cloud Service](/help/overview/aem-cloud-service-on-unified-shell.md) 以取得更多詳細資料。
+* AEM as a Cloud Service (作者服務) 現在與 Unified Shell 整合，以改進使用者體驗，並將其與所有其他 Experience Cloud 應用程式統一。 請參閱AEM as a [在Unified Shell上Cloud Service](/help/overview/aem-cloud-service-on-unified-shell.md) 以取得更多詳細資料。
 
-* 如先前在發行說明中所述，使用復寫代理程式管理畫面或復寫API來分發大於10 MB的內容套件（具有屬性的節點，不包括二進位檔案）現在已被棄用和強制執行。 另請參閱 [管理發布](/help/operations/replication.md#manage-publication) 或 [發佈內容樹狀工作流程](/help/operations/replication.md#publish-content-tree-workflow) 瞭解復寫這些大型內容套件的建議方法。
+* 如先前在發行說明中所述，使用復寫代理程式管理畫面或復寫API來分發大於10 MB的內容套件（具有屬性的節點，不包括二進位檔案）現在已棄用和強制執行。 另請參閱 [管理發布](/help/operations/replication.md#manage-publication) 或 [發佈內容樹狀工作流程](/help/operations/replication.md#publish-content-tree-workflow) 瞭解復寫這些大型內容套件的建議方法。
 
 * Dispatcher 設定現在會參照一個列出常見行銷活動查詢參數的檔案。客戶可以選擇取消註釋與其相關的參數，從而促進快取。另請參閱 [行銷活動引數](/help/implementing/dispatcher/caching.md#marketing-parameters) 以取得更多詳細資料。
 
@@ -97,4 +97,4 @@ ht-degree: 85%
 
 ## 移轉工具 {#migration-tools}
 
-您可以在[此處](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)找到移轉工具版本的完整清單。
+您可以在[這裡](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)找到移轉工具版本的完整清單。

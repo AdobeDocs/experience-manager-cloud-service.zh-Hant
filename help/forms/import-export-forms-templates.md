@@ -5,18 +5,18 @@ description: 是否要將最適化Forms和資產移轉至AEM執行個體？ 在�
 seo-description: Looking to migrate Adaptive Forms and assets to and from an AEM instances? Learn here how to import and export Adaptive Forms, PDF forms, themes, and other supporting assets from an [!DNL AEM Forms] instance.
 topic-tags: forms-manager
 exl-id: f5105fb7-b8c0-4656-8095-b21d392746c0
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1211'
+source-wordcount: '1210'
 ht-degree: 1%
 
 ---
 
 # 匯入、匯出及組織最適化表單、PDF 表單和其他資產{#importing-and-exporting-assets-to-aem-forms}
 
-您可以移動最適化Forms和相關資產，例如最適化表單主題、表單資料模型、最適化表單範本、檔案片段和PDF forms，在 [!DNL AEM Forms] 執行個體。 您可以匯入和匯出CRX套件或二進位檔案格式的資產。
+您可以移動最適化Forms和相關資產，例如最適化表單主題、表單資料模型、最適化表單範本、檔案片段和PDF forms，在 [!DNL AEM Forms] 執行個體。 您可以匯入和匯出CRX封裝或二進位檔案格式的資產。
 
-匯出最適化表單時，不會匯出內容原則和範本。 使用 [封裝管理員](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=en#how-rolling-deployments-work) 以匯出此類資產。
+匯出最適化表單時，不會匯出內容原則和範本。 使用 [封裝管理員](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=en#how-rolling-deployments-work) 以匯出這類資產。
 
 ## 下載最適化Forms、PDF forms或相關資產 {#download-forms-amp-documents-assets}
 
@@ -27,21 +27,21 @@ ht-degree: 1%
 1. 選取資產並點選 **[!UICONTROL 下載]** 圖示。
 1. 在「下載資產」中，選擇下列其中一個選項，然後點選 **[!UICONTROL 下載]**.
 
-   * **下載為CRX套件：** 使用選項從以下專案下載及移動所有選取的資產及相關相依性： [!DNL AEM Forms] 執行個體到另一個。 它會下載所有資產和資料夾作為CRX套件，包括在AEM (Adaptive Forms和Adaptive Form Fragments)中編寫的表單、表單集、表單資料模型、表單範本、PDF檔案和參考的資源（XSD和影像）。
-以套件形式下載資產的優點在於，它也可以下載所選資產參考的下載。 例如，如果您有使用表單範本、XSD和影像的最適化表單。 當您選取此最適化表單並將其下載為套件時，下載的套件也包含表單範本、XSD和影像。 也會下載與資產相關聯的所有中繼資料屬性（包括自訂屬性）。
+   * **下載為CRX套件：** 使用選項從下載並移動所有選取的資產和相關相依性 [!DNL AEM Forms] 執行個體到另一個。 它會下載所有資產和資料夾作為CRX套件，包括在AEM (最適化Forms和最適化表單片段)中編寫的表單、表單集、表單資料模型、表單範本、PDF檔案和參考資源（XSD和影像）。
+以套件形式下載資產的好處是也可下載所選資產所參考的資產。 例如，如果您有使用表單範本、XSD和影像的最適化表單。 當您選取此最適化表單並將其下載為套件時，下載的套件也包含表單範本、XSD和影像。 也會下載與資產相關聯的所有中繼資料屬性（包括自訂屬性）。
 
-   * **將資產下載為二進位檔案：** 使用選項僅下載表單範本(XDP)、PDF forms(PDF)、檔案(PDF)和資源（影像、結構描述、樣式表）。 您可以使用外部應用程式編輯這些資產。 它會將具有二進位檔(例如影像、PDF和其他支援的格式)的資產下載為.zip檔案。
-您無法下載Adaptive Forms、Adaptive Form片段、主題和表單集， **[!UICONTROL 將資產下載為二進位檔案]** 選項。 若要下載這些資產，您應使用 **[!UICONTROL 下載為CRX套件]** 選項。
+   * **將資產下載為二進位檔案：** 使用選項僅下載表單範本(XDP)、PDF forms(PDF)、檔案(PDF)和資源（影像、結構描述、樣式表）。 您可以使用外部應用程式編輯這些資產。 它會下載具有二進位檔的資產(例如影像、PDF和其他支援的格式)為.zip檔案。
+您無法下載最適化Forms、最適化表單片段、主題和表單集， **[!UICONTROL 將資產下載為二進位檔案]** 選項。 若要下載這些資產，您應使用 **[!UICONTROL 下載為CRX套件]** 選項。
 
    選取的資產會下載為封存（.zip檔案）。
 
    >[!NOTE]
    >
-   >AEM套件和二進位檔案都會下載為封存（.zip檔案）。 資產的範本不會隨資產一起下載。 您需要個別匯出資產範本。
+   >AEM套件和二進位檔案都會下載為封存（.zip檔案）。 資產的範本不會與資產一起下載。 您需要個別匯出資產範本。
 
 ## 上傳最適化Forms、PDF forms或相關資產 {#upload-forms-amp-documents-assets}
 
-您可以個別上傳支援的資產型別，或當作ZIP封存檔上傳。 對於ZIP檔案，會顯示所有支援資產的相對路徑。 ZIP內不支援的資產會遭忽略，不會列出。 不過，如果ZIP封存僅包含不支援的資產，則會顯示錯誤訊息，而非快顯對話方塊。
+您可以個別上傳支援的資產型別，或以ZIP封存檔的形式上傳。 對於ZIP檔案，會顯示所有支援資產的相對路徑。 ZIP內不支援的資產會遭忽略，不會列出。 不過，如果ZIP封存僅包含不支援的資產，則會顯示錯誤訊息，而非快顯對話方塊。
 若要上傳表單或相關資產：
 
 1. 登入您的 [!DNL AEM Forms] 執行個體。
@@ -51,18 +51,17 @@ ht-degree: 1%
 
    在對話方塊中，確認上傳資產的詳細資訊，然後點選 **[!UICONTROL 上傳]**.
 
-   如果您上傳現有表單資產，資產會隨之更新。
+   如果上傳現有的表單資產，資產會隨之更新。
 
    >[!NOTE]
    >
-   > * 當名稱與不同的資源型別衝突時，上傳套件不會取代現有的資料夾階層。 例如，如果您在單一伺服器上的/content/dam/formsanddocuments位置有一個名為「Training」的最適化表單。 您下載最適化表單並將表單上傳到其他伺服器。 第二部伺服器也有一個名為&#39;Training&#39;的資料夾，位於相同位置/content/dam/formsanddocuments。 上傳失敗。
-   > * 只有以下成員之一： `form-power-user` 群組可以上傳XDP檔案。
-
+   > * 當名稱與不同的資源型別衝突時，上傳套件不會取代現有的資料夾階層。 例如，如果您在單一伺服器上的/content/dam/formsanddocuments位置有一個名為「Training」的最適化表單。 您下載最適化表單並將表單上傳到其他伺服器。 第二部伺服器也在相同位置/content/dam/formsanddocuments有一個名為「Training」的資料夾。 上傳失敗。
+   > * 僅成員屬於 `form-power-user` 群組可以上傳XDP檔案。
 
 
 ## 下載主題 {#downloading-a-theme}
 
-您可以匯出主題於 [!DNL AEM Forms] 您可在其他專案或執行個體中使用的資訊。 AEM可讓您將主題下載為zip檔案，以便在執行個體上上傳。
+您可以匯出主題於 [!DNL AEM Forms] 可用於其他專案或執行個體的資訊。 AEM可讓您將主題下載為zip檔案，以便在執行個體上傳。
 
 若要下載佈景主題：
 
@@ -72,11 +71,11 @@ ht-degree: 1%
 
 ## 上傳主題 {#uploading-a-theme}
 
-您可以上傳和使用其他人在您的表單中建立的主題。 上傳佈景主題：
+您可以上傳並使用其他人在您的表單中建立的主題。 上傳佈景主題：
 
 1. 在Experience Manager中，導覽至 **[!UICONTROL Forms]** > **[!UICONTROL 主題]**.
 1. 在「佈景主題」頁面上，按一下 **[!UICONTROL 建立]** > **[!UICONTROL 檔案上傳]**.
-1. 在「檔案上傳」提示中，瀏覽並選取電腦上的主題套件，然後按一下 **[!UICONTROL 上傳]**. 上傳的主題可在主題頁面上取得。
+1. 在「檔案上傳」提示中，瀏覽並選取電腦上的佈景主題套件，然後按一下 **[!UICONTROL 上傳]**. 上傳的主題可在主題頁面上取得。
 
 <!-- ## Import and export assets in Correspondence Management {#import-and-export-assets-in-correspondence-management}
 
@@ -150,17 +149,17 @@ You can import assets that are exported into a .cmp file. A .cmp file can have o
 
 ## 匯出工作流程應用程式 {#export-a-workflow-application}
 
-您可以使用封裝管理程式來匯出工作流程應用程式。 程式如下：
+您可以使用封裝管理員來匯出工作流程應用程式。 程式如下所示：
 
-1. 開啟 [!DNL AEM Forms] 封裝管理員。 封裝管理程式的URL是 `https://[server]:[port]/crx/packmgr`.
+1. 開啟 [!DNL AEM Forms] 封裝管理員。 封裝管理員URL為 `https://[server]:[port]/crx/packmgr`.
 1. 按一下 **[!UICONTROL 建立封裝]**. 此 **[!UICONTROL 新封裝]** 對話方塊隨即顯示。
 1. 指定套件的名稱、版本和群組。 按一下&#x200B;**[!UICONTROL 「確定」]**。
 1. 按一下 **[!UICONTROL 編輯]** 並開啟 **[!UICONTROL 篩選器]** 標籤。 按一下 **[!UICONTROL 新增篩選器]**. 指定工作流程應用程式的路徑。 例如，/etc/fd/dashboard/startpoints/homemortgage。 按一下 **[!UICONTROL 新增規則]**.
 
-1. 開啟 **[!UICONTROL 進階]** 標籤。 選取 **[!UICONTROL 合併]** 或 **[!UICONTROL 覆寫]** 在ACL處理欄位中。 按一下「**[!UICONTROL 儲存]**」。
+1. 開啟 **[!UICONTROL 進階]** 標籤。 選取 **[!UICONTROL 合併]** 或 **[!UICONTROL 覆寫]** ACL處理欄位中。 按一下「**[!UICONTROL 儲存]**」。
 1. 按一下 **[!UICONTROL 建置]** 以建立封裝。
 
-   建置套件後，您可以下載套件並將其匯入至其他伺服器。 工作流程應用程式會出現在上傳套件的伺服器上。
+   建置套件後，您可以下載套件並將其匯入至其他伺服器。 工作流程應用程式會出現在上傳封裝的伺服器上。
 
    >[!NOTE]
    >
@@ -168,25 +167,25 @@ You can import assets that are exported into a .cmp file. A .cmp file can have o
 
 ## 使用資料夾整理Adaptive Forms、PDF forms和相關資產  {#folders-and-organizing-assets}
 
-您可以使用資料夾來排列和組織資產。 在資料夾中組織檔案和資產可讓您將檔案分組，以便輕鬆管理。 您可以選取資料夾並選擇下載或刪除。 若要建立資料夾，請完成下列步驟：
+您可以使用資料夾來排列及組織資產。 在資料夾中組織檔案和資產可讓您將檔案分組，以方便管理。 您可以選取資料夾，然後選擇下載或刪除資料夾。 若要建立資料夾，請完成下列步驟：
 
 ### 建立資料夾 {#create-a-folder}
 
 1. 登入您的 [!DNL AEM Forms] 執行個體。
 1. 點選Experience Manager ![adobeexperiencemanager](assets/adobeexperiencemanager.png) 圖示>導覽 ![指南針](assets/Smock_Compass_18_N.svg) 圖示> **[!UICONTROL Forms]** > **[!UICONTROL Forms與檔案]**.
 1. 點選 **[!UICONTROL 建立]** > **[!UICONTROL 資料夾]**.
-1. 輸入下列詳細資料：
+1. 輸入下列明細：
 
    * **[!UICONTROL 標題]**：資料夾的顯示名稱
    * **[!UICONTROL 名稱]**： *（必要）* 要在存放庫中儲存資料夾的節點名稱
 
    >[!NOTE]
    >
-   >依預設，名稱欄位的值會自動從標題中填入。 名稱只能包含英數字元，或連字型大小(-)和底線(_)特殊字元。 在標題中輸入的任何其他特殊字元都會自動取代為連字型大小，並提示您確認新名稱。 您可以選擇繼續使用建議的名稱或進一步編輯。
+   >依預設，名稱欄位的值會自動從標題填入。 名稱只能包含英數字元，或連字型大小(-)和底線(_)特殊字元。 在標題中輸入的任何其他特殊字元都會自動取代為連字型大小，並提示您確認新名稱。 您可以選擇繼續使用建議的名稱或進一步編輯。
 
 1. 具有您定義標題的新資料夾會顯示在資產清單中的目前位置。
 
-   如果存在具有指定名稱的資料夾，提交會失敗並出現錯誤。 您可以將滑鼠懸停在錯誤上，檢視錯誤訊息 ![aem6forms_error_alert](assets/Smock_Alert_18_N.svg) 圖示顯示在名稱欄位旁。
+   如果具有指定名稱的資料夾存在，則提交會失敗並出現錯誤。 您可以將游標移至錯誤上方，檢視錯誤訊息 ![aem6forms_error_alert](assets/Smock_Alert_18_N.svg) 圖示出現在名稱欄位旁。
 
    您可以點選新建立的資料夾以進入資料夾並在資料夾中建立資產或資料夾。 此外，您可以選取資料夾，並選擇將資料夾排入下載佇列、刪除資料夾或編輯資料夾名稱。
 
@@ -208,7 +207,7 @@ Complete the following steps to create copies of assets and letters:
 
 ## Search {#search-forms}
 
-You ca use the top bar **[A]** to search your content. When you search for assets, a side panel is displayed. You can also tap ![assets-browser-content-only](assets/assets-browser-content-only.png) &gt; Filter **[B]** to invoke the side panel. Using the various filters in the side panel, you can narrow down your search. The side panel also allows you to save your searches.
+You ca use the top bar **[A]** to search your content. When you search for assets, a side panel is displayed. You can also tap ![assets-browser-content-only](assets/assets-browser-content-only.png) &gt; Filter **[B]** to invoke the side panel. Using the various filters in the side panel, you can narrow down your search. The side panel also lets you save your searches.
 
 ![search_topbar](assets/search_topbar.png)
 
@@ -224,6 +223,6 @@ On the side panel, you can use the following to narrow down your search results:
 * Tags
 * Search Criteria; for example, Modified Dates, Publish Status, LiveCopy Status.
 
-The side panel also allows you to save your search settings with names of your choice.
+The side panel also lets you save your search settings with names of your choice.
 
 For more information and instructions on using search, filters, saved search, and side panel, see [Search](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html). -->

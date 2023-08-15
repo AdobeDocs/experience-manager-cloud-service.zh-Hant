@@ -2,9 +2,9 @@
 title: 編輯頁面屬性
 description: 瞭解如何定義在AEM中管理頁面所需的屬性。
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: 0183e14ad1653e98c06b19ea36c7e97dedccdb84
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2281'
+source-wordcount: '2279'
 ht-degree: 6%
 
 ---
@@ -76,7 +76,7 @@ ht-degree: 6%
 
 * **虛名 URL**
 
-   * 可讓您輸入此頁面的虛名URL，如此可讓您使用較短和/或較具表現力的URL。
+   * 可讓您輸入此頁面的虛名URL，此URL可讓您擁有較短和/或較具表現力的URL。
    * 例如，如果虛名URL設為 `welcome` 至路徑所識別的頁面 `/v1.0/startpage` 適用於網站 `http://example.com`，然後 `http://example.com/welcome` 會是虛名URL `http://example.com/content/v1.0/startpage`
 
   >[!CAUTION]

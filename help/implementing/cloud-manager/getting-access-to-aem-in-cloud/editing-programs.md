@@ -2,10 +2,10 @@
 title: 編輯計畫
 description: 了解如何編輯您的生產和沙箱計畫，以在建立計畫後調整其選項。
 exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '520'
-ht-degree: 100%
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+workflow-type: tm+mt
+source-wordcount: '516'
+ht-degree: 97%
 
 ---
 
@@ -63,7 +63,7 @@ ht-degree: 100%
 
 ![已對計畫啟用增強式安全性](assets/edit-program-enhanced.png)
 
-在建立計畫後，就無法修改此設定。如需有關增強式安全性選項的詳細資訊，請參閱[建立生產計畫](creating-production-programs.md)文件。
+一旦建立程式，便無法修改此設定。 如需有關增強式安全性選項的詳細資訊，請參閱[建立生產計畫](creating-production-programs.md)文件。
 
 ## 刪除沙箱計畫 {#delete-sandbox-program}
 
@@ -89,4 +89,4 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->只能刪除沙箱計畫。不能刪除生產計畫。
+>只能刪除沙箱計畫。無法刪除生產程式。

@@ -3,10 +3,10 @@ title: 如何為最適化表單設定提交動作
 description: 最適化表單提供多個提交動作。提交動作會定義提交之後處理最適化表單的方式。您可以使用內建的提交動作或建立自己的動作。
 hide: true
 hidefromtoc: true
-source-git-commit: ac9689a911be119ae53d5e1134595c567370b7c4
-workflow-type: ht
-source-wordcount: '3366'
-ht-degree: 100%
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+workflow-type: tm+mt
+source-wordcount: '3365'
+ht-degree: 99%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 100%
 | 套用至 | ✅ 最適化表單核心元件，❎[最適化表單基礎元件](/help/forms/configuring-submit-actions.md) |
 
 
-提交動作可讓您選擇透過最適化表單擷取的資料目標。使用者按一下最適化表單上的「**[!UICONTROL 提交]**」按鈕時，就會加以觸發。針對以核心元件為基礎的最適化表單，Forms as a Cloud Service 提供了一系列預先建立的提交動作。這些現成可用的提交動作可讓您：
+提交動作可讓您選擇透過最適化表單擷取的資料目的地。 使用者按一下最適化表單上的「**[!UICONTROL 提交]**」按鈕時，就會加以觸發。針對以核心元件為基礎的最適化表單，Forms as a Cloud Service 提供了一系列預先建立的提交動作。這些現成可用的提交動作可讓您：
 
 * 透過電子郵件輕鬆傳送表單資料。
 * 在傳輸資料時啟動 Microsoft Power Automate 流程或 AEM 工作流程。

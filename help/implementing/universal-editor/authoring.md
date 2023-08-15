@@ -2,10 +2,10 @@
 title: 使用 Universal Editor 編寫內容
 description: 了解內容作者使用 Universal Editor 建立內容有多簡單和直覺。
 exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
-source-git-commit: e03bf6437b72a4fe7e959a23f12f0baa892fa567
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2271'
-ht-degree: 83%
+source-wordcount: '2266'
+ht-degree: 80%
 
 ---
 
@@ -26,7 +26,7 @@ Universal Editor 支援在任意實作中編輯任何方面的內容，以便提
 
 >[!NOTE]
 >
->Universal Editor 仍處於開發階段。目前尚無法編輯所有內容類型。
+>Universal Editor 仍處於開發階段。目前無法編輯所有內容型別。
 
 ## 準備應用程式 {#prepare-app}
 
@@ -74,7 +74,7 @@ Experience Cloud 標頭會始終顯示在畫面頂端。這是一個錨點，說
 
 #### 解決方案 {#solutions}
 
-點選或按一下解決方案切換器可讓您快速跳轉到其他 Experience Cloud 解決方案。
+點選或按一下解決方案切換器可讓您快速跳至其他Experience Cloud解決方案。
 
 ![解決方案切換器](assets/solutions.png)
 
@@ -217,8 +217,8 @@ Universal Editor 標頭始終顯示在畫面頂端，就在 [Experience Cloud �
 
 編輯器會佔據大部分視窗，而且是[位置列](#location-bar)中指定之頁面的呈現位置。
 
-* 如果編輯器處於編輯模式，例如[文字模式](#text-mode)或[媒體模式](#media-mode)，內容就會是可編輯狀態，且您無法進入連結。
-* 如果編輯器在[預覽模式，](#preview-mode)內容就會是可導覽，且您可以進入連結，但無法編輯內容。
+* 如果編輯器處於編輯模式，例如 [文字模式](#text-mode) 或 [媒體模式，](#media-mode) 內容將可供編輯，但您無法關注連結。
+* 如果編輯器在 [預覽模式，](#preview-mode) 內容將可供瀏覽，您可以關注連結，但您無法編輯內容。
 
 ![編輯器](assets/editor.png)
 

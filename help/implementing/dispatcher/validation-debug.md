@@ -3,9 +3,9 @@ title: 使用 Dispatcher 工具進行驗證和偵錯
 description: 瞭解本機驗證、偵錯、彈性模式檔案結構，以及如何從舊版模式移轉至彈性模式。
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: 127b79d766a4dfc33a2ed6016e191e771206d791
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2861'
+source-wordcount: '2860'
 ht-degree: 1%
 
 ---
@@ -180,7 +180,7 @@ ht-degree: 1%
 
 * `conf.dispatcher.d/clientheaders/default_clientheaders.any`
 
-轉送至後端的預設請求標頭，適用於標準專案。 如果您需要自訂，請修改 `clientheaders.any`. 在您的自訂中，您仍然可以先包含預設請求標頭（如果它們符合您的需求）。
+轉送至後端的預設請求標頭，適用於標準專案。 如果您需要自訂，請修改 `clientheaders.any`. 自訂後，您仍可先納入預設的要求標題（若符合您的需求）。
 
 * `conf.dispatcher.d/dispatcher.any`
 
@@ -566,7 +566,7 @@ $ docker exec d75fbd23b29 httpd-test
 
 ## 從舊版模式移轉至彈性模式 {#migrating}
 
-在Cloud Manager 2021.7.0版本中，新的Cloud Manager計畫會使用以下專案產生maven專案結構 [AEM原型28](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hant) 或更高版本，包括檔案 **opt-in/USE_SOURCES_DIRECTLY**. 它會移除 [舊版模式](/help/implementing/dispatcher/validation-debug-legacy.md) 檔案的數量和大小，也會導致SDK和執行階段以改良的方式驗證和部署設定。 如果您的Dispatcher設定沒有此檔案，強烈建議您進行移轉。 請使用下列步驟來確保安全轉換：
+在Cloud Manager 2021.7.0版本中，新的Cloud Manager計畫會使用以下專案產生maven專案結構 [AEM原型28](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hant) 或更高版本，其中包含檔案 **opt-in/USE_SOURCES_DIRECTLY**. 它會移除 [舊版模式](/help/implementing/dispatcher/validation-debug-legacy.md) 檔案的數量和大小，也會導致SDK和執行階段以改良的方式驗證和部署設定。 如果您的Dispatcher設定沒有此檔案，強烈建議您進行移轉。 請使用下列步驟來確保安全轉換：
 
 1. **本機測試。** 使用最新的Dispatcher工具SDK，新增資料夾和檔案 `opt-in/USE_SOURCES_DIRECTLY`. 請依照本文中的「本機驗證」指示進行，以便您可以測試Dispatcher是否在本機運作。
 1. **雲端開發測試：**

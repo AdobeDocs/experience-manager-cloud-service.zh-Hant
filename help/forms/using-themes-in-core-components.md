@@ -4,9 +4,9 @@ description: 您可以使用主題來風格化最適化表單，並使用核心�
 seo-description: You can create a new theme by customizing the available theme. The themes are customized and deployed using frontend pipeline.
 keywords: 建立新主題、自訂主題、上傳新主題、在表單中使用主題、使用前端管道自訂主題
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: fc0ff8cff8c616bc5576d834883aa0fe38ef593e
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2711'
+source-wordcount: '2709'
 ht-degree: 4%
 
 ---
@@ -56,12 +56,12 @@ Forms如Cloud Service所提供，以下是核心元件型最適化Forms的主題
 
 ## 自訂主題 {#customize-a-theme-core-components}
 
-自訂主題是指修改及個人化主題外觀的程式。 自訂主題時，您可以變更其設計元素、版面、顏色、印刷樣式，有時也會變更基礎程式碼。 它可讓您為網站或應用程式建立獨一無二的量身打造外觀，同時維持主題提供的基本結構和功能。
+自訂主題是指修改及個人化主題外觀的程式。 自訂主題時，您可以變更其設計元素、版面、顏色、印刷樣式，有時也會變更基礎程式碼。 它可讓您為網站或應用程式建立獨一無二且量身打造的外觀，同時維持主題提供的基本結構和功能。
 
 ### 先決條件 {#prerequisites-to-customize}
 
 * 熟悉 [在Cloud Manager中設定管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#setup-pipeline) 並且擁有有關如何設定管道的基本知識，可幫助您有效地管理和部署您的主題自訂。
-* 瞭解如何 [設定具有貢獻者角色的使用者](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem.html). 瞭解如何使用貢獻者角色設定使用者，可讓您授與佈景主題自訂的必要許可權。
+* 瞭解如何 [設定具有貢獻者角色的使用者](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem.html). 瞭解如何使用投稿人角色設定使用者，可讓您授與佈景主題自訂的必要許可權。
 * 安裝最新版本的 [Apache Maven。](https://maven.apache.org/download.cgi) Apache Maven是常用於Java™專案的組建自動化工具。 安裝最新版本可確保您擁有佈景主題自訂的必要相依性。
 * 安裝純文字編輯器。 例如，Microsoft® Visual Studio Code。 使用純文字編輯器(例如Microsoft® Visual Studio Code)可提供方便使用的環境，用於編輯和修改佈景主題檔案。
 

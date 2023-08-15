@@ -6,10 +6,10 @@ topic-tags: configuring
 content-type: reference
 feature: Configuring
 exl-id: 1a1bb23c-d1d1-4e2b-811b-753e6a90a01b
-source-git-commit: 7260649eaab303ba5bab55ccbe02395dc8159949
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '546'
-ht-degree: 4%
+source-wordcount: '545'
+ht-degree: 6%
 
 ---
 
@@ -20,13 +20,13 @@ ht-degree: 4%
 例如，您可以使用這些對應來：
 
 * 所有請求的前置詞為 `/content` 以便對網站的訪客隱藏內部結構。
-* 定義重新導向，讓所有要求到 `/content/en/gateway` 您的網站頁面會重新導向至 `https://gbiv.com/`.
+* 定義重新導向，讓所有要求至 `/content/en/gateway` 您的網站頁面會重新導向至 `https://gbiv.com/`.
 
-一個可能的HTTP對應會將所有請求加上前置詞 `localhost:4503` 替換為 `/content`. 像這樣的對應可用於在允許的情況下對網站的訪客隱藏內部結構：
+一個可能的HTTP對應會將所有請求加上前置詞 `localhost:4503` 替換為 `/content`. 類似這樣的對應可用於對網站的訪客隱藏內部結構，因為它允許：
 
 `localhost:4503/content/we-retail/en/products.html`
 
-使用下列專案存取：
+存取方式：
 
 `localhost:4503/we-retail/en/products.html`
 
@@ -42,13 +42,13 @@ ht-degree: 4%
 
 ## 檢視對應定義 {#viewing-mapping-definitions}
 
-JCR資源解析器評估（由上而下）以尋找相符專案的對應表單有兩個清單。
+「JCR資源解析器」會評估（由上到下）以尋找相符專案的對應表單兩個清單。
 
-這些清單可在「 」下方檢視（連同設定資訊） **JCR ResourceResolver** Felix主控台的選項；例如， `https://<*host*>:<*port*>/system/console/jcrresolver`：
+您可以在「 」下方檢視這些清單（連同設定資訊） **JCR ResourceResolver** Felix主控台的選項，例如， `https://<*host*>:<*port*>/system/console/jcrresolver`：
 
-* 組態顯示目前的組態（為下列專案所定義）： [Apache Sling資源解析程式](/help/overview/seo-and-url-management.md#etc-map))。
+* 組態顯示目前的組態(為所定義的 [Apache Sling Resource Resolver](/help/overview/seo-and-url-management.md#etc-map))。
 
-* 設定測試這可讓您輸入URL或資源路徑。 按一下 **解決** 或 **地圖** 以確認系統如何轉換專案。
+* 設定測試這可讓您輸入URL或資源路徑。 按一下 **解析** 或 **地圖** 以確認系統如何轉換專案。
 
 * **解析器對應專案**
 ResourceResolver.resolve方法用來將URL對應至資源的專案清單。
@@ -58,7 +58,7 @@ ResourceResolver.map方法用來將資源路徑對應至URL的專案清單。
 
 這兩個清單會顯示各種專案，包括應用程式定義為預設值的專案。 這些專案的目的通常是簡化使用者的URL。
 
-清單會配對 **圖樣**，此規則運算式與請求相符，且具有一個 **替代** 定義要強制的重新導向。
+清單會配對 **圖樣**，和要求相符的規則運算式，具有 **替代方案** 定義要強制的重新導向。
 
 例如：
 
@@ -66,11 +66,11 @@ ResourceResolver.map方法用來將資源路徑對應至URL的專案清單。
 
 觸發：
 
-**替代** `/libs/cq/core/content/welcome.html`.
+**替代方案** `/libs/cq/core/content/welcome.html`.
 
 若要重新導向請求：
 
-`https://localhost:4503/welcome` ``
+`https://localhost:4503/welcome` &quot;
 
 至:
 
@@ -88,23 +88,23 @@ ResourceResolver.map方法用來將資源路徑對應至URL的專案清單。
 
 `/etc/map/http`
 
-此資料夾是定義HTTP通訊協定的對應時使用的結構。 其他資料夾( `sling:Folder`)可建立於 `/etc/map` 任何其他要對應的通訊協定。
+此資料夾是定義HTTP通訊協定的對應時使用的結構。 其他資料夾( `sling:Folder`)建立於 `/etc/map` 任何其他要對應的通訊協定。
 
 #### 設定內部重新導向至/content {#configuring-an-internal-redirect-to-content}
 
-建立為https://localhost:4503/的任何請求加上前置詞的對映 `/content`：
+建立將任何請求前置詞設為https://localhost:4503/的對應： `/content`：
 
 1. 使用CRXDE導覽至 `/etc/map/http`.
 
 1. 建立節點：
 
    * **型別** `sling:Mapping`
-此節點型別適用於此類對應，不過其使用並非強制性。
+此節點型別適用於此類對應，但並不強制使用。
 
    * **名稱** `localhost_any`
 
-1. 按一下 **全部儲存**.
-1. **新增** 此節點的下列屬性：
+1. 按一下&#x200B;**「儲存全部」**。
+1. **將以下屬性新增至此節點：**
 
    * **名稱** `sling:match`
 
@@ -118,9 +118,9 @@ ResourceResolver.map方法用來將資源路徑對應至URL的專案清單。
 
       * **值** `/content/`
 
-1. 按一下 **全部儲存**.
+1. 按一下&#x200B;**「儲存全部」**。
 
-此對應會處理請求，例如：
+此對應會處理如下請求：
 `localhost:4503/geometrixx/en/products.html`
 就好像：
 `localhost:4503/content/geometrixx/en/products.html`
@@ -133,4 +133,4 @@ ResourceResolver.map方法用來將資源路徑對應至URL的專案清單。
 
 >[!NOTE]
 >
->您可以使用 `/etc/map.publish` 以保留發佈環境的設定。 必須複製這些設定，並且新位置( `/etc/map.publish`)設定的 **對應位置** 的 [Apache Sling資源解析程式](/help/overview/seo-and-url-management.md#etc-map) 發佈環境的。
+>您可以使用 `/etc/map.publish` 以保留發佈環境的設定。 必須複製這些設定，而且新位置( `/etc/map.publish`)設定的 **對應位置** 的 [Apache Sling Resource Resolver](/help/overview/seo-and-url-management.md#etc-map) 發佈環境的。

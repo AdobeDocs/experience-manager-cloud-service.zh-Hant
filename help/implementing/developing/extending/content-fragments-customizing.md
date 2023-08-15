@@ -2,9 +2,9 @@
 title: 自訂和擴充內容片段
 description: 內容片段可擴充標準資產。 瞭解如何自訂。
 exl-id: 58152d6e-21b6-4f45-a45c-0f46ee58825e
-source-git-commit: 964599b919a7299da33a5f0ac72ad5ea644097d8
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1817'
+source-wordcount: '1812'
 ht-degree: 2%
 
 ---
@@ -106,7 +106,7 @@ ht-degree: 2%
 
 * 元件允許中間內容：
 
-   * 元件可讓您在參照片段的段落之間放置其他資產（影像等）。
+   * 在這裡，元件可讓您在參照片段的段落之間放置其他資產（影像等）。
 
    * 對於中間內容，您需要：
 
@@ -328,7 +328,7 @@ ContentFragment newFragment = tpl.createFragment(parentRsc, "A fragment name", "
 
 * 節點： `<conf-root>/settings/dam/cfm/jcr:content`
 * 屬性名稱: `autoSaveInterval`
-* 類型: `Long`
+* 類型：`Long`
 
 * 預設： `600` （10分鐘）；此定義的日期為 `/libs/settings/dam/cfm/jcr:content`
 
@@ -337,7 +337,7 @@ ContentFragment newFragment = tpl.createFragment(parentRsc, "A fragment name", "
 * 節點： `/conf/global/settings/dam/cfm/jcr:content`
 * 屬性名稱: `autoSaveInterval`
 
-* 類型: `Long`
+* 類型：`Long`
 
 * 值： `300` （5分鐘等於300秒）
 

@@ -4,10 +4,10 @@ description: 瞭解如何在AEM中使用語言複製精靈。
 feature: Language Copy
 role: Admin
 exl-id: bf8bdc53-0248-47de-bb9d-c884a7179ab0
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '282'
-ht-degree: 3%
+source-wordcount: '280'
+ht-degree: 16%
 
 ---
 
@@ -17,19 +17,19 @@ ht-degree: 3%
 
 >[!TIP]
 >
->如果您不熟悉翻譯內容，請參閱 [網站翻譯歷程，](/help/journey-sites/translation/overview.md) 將引導您使用AEM強大的翻譯工具來翻譯AEM Sites內容，非常適合沒有AEM或翻譯經驗的人士。
+>如果您不熟悉翻譯內容，請參閱 [Sites 翻譯歷程](/help/journey-sites/translation/overview.md)，此路徑會逐步引導您了解如何使用 AEM 強大的翻譯工具翻譯 AEM Sites 內容，非常適合那些沒有 AEM 或翻譯經驗的使用者。
 
 >[!NOTE]
 >
->使用者必須是 `project-administrators` 群組，以建立網站的語言副本。
+>使用者必須成為以下群組成員： `project-administrators` 群組以建立網站的語言副本。
 
 若要存取精靈：
 
-1. 在網站主控台中，選取頁面並點選或按一下 **建立** 並選取 **語言副本**.
+1. 在網站主控台中，選取頁面，然後點選或按一下 **建立** 並選取 **語言副本**.
 
    ![從精靈建立語言副本](../assets/language-copy-wizard.png)
 
-1. 精靈會開啟並顯示 **選取來源** 可讓您新增/移除頁面的步驟。 您也可以選擇包含或排除子頁面。 選取您要包含的頁面，然後點選或按一下 **下一個**.
+1. 精靈會開啟並顯示 **選取來源** 步驟可讓您新增/移除頁面。 您也可以選擇包含或排除子頁面。 選取您要包含的頁面，然後點選或按一下 **下一個**.
 
    ![使用精靈新增頁面](../assets/language-copy-wizard-add-pages.png)
 
@@ -39,13 +39,13 @@ ht-degree: 3%
 
    >[!NOTE]
    >
-   >依預設，只有一個翻譯設定。 若要能夠選取其他設定，您必須先設定雲端設定。 另請參閱 [設定翻譯整合架構](integration-framework.md).
+   >依預設，只有一個翻譯設定。 若要能夠選取其他設定，您必須先設定雲端設定。 另請參閱 [設定翻譯整合框架](integration-framework.md).
 
-1. 在 **轉換** 精靈的步驟您可以選擇僅建立結構、建立新翻譯專案或新增到現有翻譯專案。
+1. 在 **Translate** 精靈的步驟您可以選擇僅建立結構、建立新翻譯專案或新增至現有翻譯專案。
 
    >[!NOTE]
    >
-   >如果您在上一個步驟中選取了多種語言，則會建立多個翻譯專案。
+   >如果您在上一步中選取了多種語言，則會建立多個翻譯專案。
 
    ![精靈的翻譯步驟](../assets/language-copy-wizard-translate.png)
 

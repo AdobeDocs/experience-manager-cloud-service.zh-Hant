@@ -5,20 +5,20 @@ mini-toc-levels: 1
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 role: User, Architect, Admin
 exl-id: 691a0925-0061-4c62-85ac-8257b96dddf2
-source-git-commit: 8466595f988d3a10806d4654885c14a622d14057
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1630'
+source-wordcount: '1627'
 ht-degree: 6%
 
 ---
 
 # 在Experience Manager Assets中管理發布 {#manage-publication-in-aem}
 
-作為 [!DNL Adobe Experience Manager Assets] 管理員，您可以將包含資產的資產和資料夾從作者執行個體發佈到 [!DNL Experience Manager Assets]， [!DNL Dynamic Media]、和 [!DNL Brand Portal]. 您也可以排程在稍後的日期或時間發佈資產或資料夾。 發佈後，使用者可以存取資產，並進一步將資產發佈給其他使用者。 依預設，您可以將資產和資料夾發佈到 [!DNL Experience Manager Assets]. 不過，您可以設定 [!DNL Experience Manager Assets] 啟用發佈至 [[!DNL Dynamic Media]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/config-dm.html) 和 [[!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/brand-portal/configure-aem-assets-with-brand-portal.html).
+作為 [!DNL Adobe Experience Manager Assets] 管理員，您可以將包含資產的資產和資料夾從您的製作例項發佈至 [!DNL Experience Manager Assets]， [!DNL Dynamic Media]、和 [!DNL Brand Portal]. 此外，您也可以排程在稍後的日期或時間發佈資產或資料夾。 發佈後，使用者可以存取資產，並進一步將資產發佈給其他使用者。 依預設，您可以將資產和資料夾發佈到 [!DNL Experience Manager Assets]. 不過，您可以設定 [!DNL Experience Manager Assets] 啟用發佈至 [[!DNL Dynamic Media]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/config-dm.html) 和 [[!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/brand-portal/configure-aem-assets-with-brand-portal.html).
 
-您可以使用以下其中一種方式，在資產或資料夾層級發佈或取消發佈資產 **[!UICONTROL 快速發佈]** 或 **[!UICONTROL 管理發布]** 中可用的選項 [!DNL Experience Manager Assets] 介面。 如果您對中的原始資產或資料夾進行後續修改 [!DNL Experience Manager Assets]，在您從重新發佈前，變更不會反映在發佈執行個體中 [!DNL Experience Manager Assets]. 它可確保進行中的變更不會出現在發佈執行個體中。 發佈執行個體中只能使用管理員發佈的已核准變更。
+您可以使用以下其中一種方式，在資產或檔案夾層級發佈或取消發佈資產： **[!UICONTROL 快速發佈]** 或 **[!UICONTROL 管理發布]** 中可用的選項 [!DNL Experience Manager Assets] 介面。 如果您對中的原始資產或資料夾進行後續修改 [!DNL Experience Manager Assets]，您必須從重新發佈，變更才會反映在發佈執行個體中 [!DNL Experience Manager Assets]. 它可確保發佈執行個體中不會出現進行中變更。 發佈執行個體中只能使用管理員發佈的已核准變更。
 
-* [使用快速發佈功能發佈資產](#quick-publish)
+* [使用快速發佈來發佈資產](#quick-publish)
 * [使用管理發布功能發佈資產](#manage-publication)
 * [稍後發佈資產](#publish-assets-later)
 * [將資產發佈至Dynamic Media](#publish-assets-to-dynamic-media)
@@ -26,15 +26,15 @@ ht-degree: 6%
 * [要求發佈](#request-publication)
 * [限制與秘訣](#limitations-and-tips)
 
-## 使用快速發佈功能發佈資產 {#quick-publish}
+## 使用快速發佈來發佈資產 {#quick-publish}
 
-快速發佈可讓您將內容立即發佈至選取的目的地。 從 [!DNL Experience Manager Assets] 主控台，導覽至上層資料夾，並選取您要發佈的所有資產或資料夾。 按一下 **[!UICONTROL 快速發佈]** 工具列中的選項，然後從您要發佈資產的下拉式清單中選取目標。
+快速發佈可讓您立即發佈內容至所選目的地。 從 [!DNL Experience Manager Assets] 主控台，導覽至上層資料夾，並選取您要發佈的所有資產或資料夾。 按一下 **[!UICONTROL 快速發佈]** 工具列中的選項，然後從您要發佈資產的下拉式清單中選取目標。
 
 ![快速發佈](assets/quick-publish-to-aem.png)
 
 ## 使用管理發布功能發佈資產 {#manage-publication}
 
-管理出版物可讓您向所選目的地發佈內容或從中取消發佈內容。 [新增內容](#add-content) 至整個DAM存放庫的發佈清單， [包含資料夾設定](#include-folder-settings) 以發佈所選資料夾的內容並套用篩選器，以及 [排程發佈](#publish-assets-later) 到更晚的日期或時間。
+管理出版物可讓您向選定目的地發佈內容或從中取消發佈內容。 [新增內容](#add-content) 從整個DAM存放庫發佈清單， [包含資料夾設定](#include-folder-settings) 若要發佈所選資料夾的內容並套用篩選器，以及 [排程發佈](#publish-assets-later) 至之後的日期或時間。
 
 從 [!DNL Experience Manager Assets] 主控台，導覽至上層資料夾，並選取您要發佈的所有資產或資料夾。 按一下 **[!UICONTROL 管理發布]** 工具列中的選項。 如果您沒有 [!DNL Dynamic Media] 和 [!DNL Brand Portal] 設定於 [!DNL Experience Manager Assets] 例項，您只能將資產和資料夾發佈到 [!DNL Experience Manager Assets].
 
@@ -44,7 +44,7 @@ ht-degree: 6%
 
 * [!UICONTROL 動作]
    * `Publish`：將資產和資料夾發佈到所選目的地
-   * `Unpublish`：從目的地取消發佈資產和資料夾
+   * `Unpublish`：從目的地取消發佈資產和檔案夾
 
 * [!UICONTROL 目的地]
    * `Publish`：將資產和資料夾發佈至 [!DNL Experience Manager Assets] (`AEM`)
@@ -55,7 +55,7 @@ ht-degree: 6%
    * `Now`：立即發佈資產
    * `Later`：根據以下基準發佈資產： `Activation` 日期或
 
-若要繼續，請按一下 **[!UICONTROL 下一個]**. 根據選取範圍， **[!UICONTROL 範圍]** 標籤會反映不同的選項。 的選項 **[!UICONTROL 新增內容]** 和 **[!UICONTROL 包含資料夾設定]** 僅適用於將資產和資料夾發佈到 [!DNL Experience Manager Assets] (`Destination: Publish`)。
+若要繼續，請按一下 **[!UICONTROL 下一個]**. 根據選取專案， **[!UICONTROL 範圍]** 標籤會反映不同的選項。 的選項 **[!UICONTROL 新增內容]** 和 **[!UICONTROL 包含資料夾設定]** 僅可用於發佈資產和資料夾到 [!DNL Experience Manager Assets] (`Destination: Publish`)。
 
 ![管理發布範圍](assets/manage-publication-aem-scope.png)
 
@@ -76,11 +76,11 @@ ht-degree: 6%
 * `Include folder contents`
 
    * 啟用：會發佈所選資料夾的所有資產、子資料夾（包括子資料夾的所有資產）和參考。
-   * 停用：只會發佈選取的資料夾（空白）和參考。 所選資料夾的資產未發佈。
+   * 已停用：僅發佈選取的資料夾（空白）和參考。 所選資料夾的資產未發佈。
 
 * `Include folder contents` 和 `Include only immediate folder contents`
 
-   如果同時選取這兩個選項，則會發佈所選資料夾、子資料夾（空白）和參照的所有資產。 子資料夾的資產未發佈。
+  如果同時選取兩個選項，則會發佈所選資料夾、子資料夾（空白）和參照的所有資產。 子資料夾的資產未發佈。
 
 <!--
 * [!UICONTROL Include only immediate folder contents]: Only the subfolders content and references are published. 
@@ -90,13 +90,13 @@ Only the selected folder content and references are published.
 
 ![包含資料夾設定](assets/manage-publication-include-folder-settings.png)
 
-套用篩選器後，按一下 **[!UICONTROL 確定]**，然後按一下 **[!UICONTROL 發佈]**. 按一下發佈按鈕時，會顯示確認訊息 `Resource(s) have been scheduled for publication` 出現。 而且選取的資產和（或）資料夾會根據排程器(`Now` 或 `Later`)。 登入您的發佈執行個體，驗證資產和（或）資料夾是否已成功發佈。
+套用篩選器後，按一下 **[!UICONTROL 確定]**，然後按一下 **[!UICONTROL 發佈]**. 按一下發佈按鈕時，會顯示確認訊息 `Resource(s) have been scheduled for publication` 隨即顯示。 而且選取的資產和（或）資料夾會根據排程器(`Now` 或 `Later`)。 登入您的發佈執行個體，驗證資產和（或）資料夾是否已成功發佈。
 
 ![發佈至 AEM](assets/manage-publication-publish-aem.png)
 
-在上圖中，您可以看到 **[!UICONTROL 發佈目標]** 屬性。 讓我們回顧您選擇發佈到的事實 [!DNL Experience Manager Assets] (`Destination: Publish`)。 那麼，它為何只顯示資料夾和資產發佈至 `AEM`，而其他兩個資產會發佈至兩者 `AEM` 和 `Dynamic Media`？
+在上圖中，您可以看到 **[!UICONTROL 發佈目標]** 屬性。 讓我們回顧您已選擇發佈至 [!DNL Experience Manager Assets] (`Destination: Publish`)。 那麼，它為何只顯示資料夾和資產發佈到的目標 `AEM`，而其他兩個資產會發佈至兩者 `AEM` 和 `Dynamic Media`？
 
-在這裡，您必須瞭解資料夾屬性的角色。 資料夾的 **[!UICONTROL Dynamic Media發佈模式]** 屬性在發佈中會扮演重要角色。 若要檢視資料夾的屬性，請選取資料夾並按一下 **[!UICONTROL 屬性]** （從工具列）。 如需資產，請參閱其上層資料夾的屬性。
+在這裡，您必須瞭解資料夾屬性的角色。 資料夾的 **[!UICONTROL Dynamic Media發佈模式]** 屬性在發佈中會扮演重要角色。 若要檢視資料夾的屬性，請選取資料夾並按一下 **[!UICONTROL 屬性]** 工具列中的。 如需瞭解資產，請參閱其上層資料夾的屬性。
 
 下表說明發佈作業如何根據所定義的 **[!UICONTROL 目的地]** 和 **[!UICONTROL Dynamic Media發佈模式]**：
 
@@ -111,20 +111,20 @@ Only the selected folder content and references are published.
 
 >[!NOTE]
 >
->僅資產發佈至 [!DNL Dynamic Media].
+>只有資產會發佈至 [!DNL Dynamic Media].
 >
 >發佈資料夾至 [!DNL Dynamic Media] 不受支援。
 >
 >如果您選取資料夾(`Selective Publish`)並選擇 [!DNL Dynamic Media] 目的地， [!UICONTROL 發佈目標] 屬性反映 `None`.
 
 
-現在讓我們變更 **[!UICONTROL 目的地]** 在上述使用案例中 **[!UICONTROL Dynamic Media]** 並驗證結果。 如此一來，只有 `Selective Publish` 資料夾已發佈至 [!DNL Dynamic Media]. 的資產 `Immediate` 和 `Upon Activation` 資料夾不會發佈，且會反映 `None`.
+現在讓我們變更 **[!UICONTROL 目的地]** 在上述使用案例中 **[!UICONTROL Dynamic Media]** 並驗證結果。 如此一來，只有 `Selective Publish` 資料夾已發佈至 [!DNL Dynamic Media]. 「 」的資產 `Immediate` 和 `Upon Activation` 資料夾不會發佈，且會反映 `None`.
 
 ![發佈至 Dynamic Media](assets/manage-publication-dynamic-media.png)
 
 >[!NOTE]
 >
->若 [!DNL Dynamic Media] 未在您的電腦上設定 [!DNL Experience Manager Assets] 執行個體和 **[!UICONTROL 目的地]** 是 **[!UICONTROL 發佈]**，則資產與資料夾一律會發佈至 `AEM`.
+>如果 [!DNL Dynamic Media] 未在您的電腦上設定 [!DNL Experience Manager Assets] 執行個體和 **[!UICONTROL 目的地]** 是 **[!UICONTROL 發佈]**，則資產與資料夾一律會發佈至 `AEM`.
 >
 >發佈至 [!DNL Brand Portal] 與資料夾屬性無關。 所有資產、資料夾和集合皆可發佈至Brand Portal。 另請參閱 [將資產發佈至Brand Portal](#publish-assets-to-brand-portal).
 
@@ -137,36 +137,36 @@ Only the selected folder content and references are published.
 
 ## 稍後發佈資產 {#publish-assets-later}
 
-若要將資產發佈工作流程排程至之後的日期或時間：
+若要將資產發佈工作流程安排在之後的日期或時間：
 
 1. 從 [!UICONTROL Experience Manager Assets] 主控台，導覽至上層資料夾，並選取您要排程發佈的所有資產或資料夾。
 1. 按一下 **[!UICONTROL 管理發布]** 工具列中的選項。
 1. 按一下 **[!UICONTROL 發佈]** 從 **[!UICONTROL 動作]**，然後選取 **[!UICONTROL 目的地]** 您要發佈內容的位置。
 1. 在&#x200B;**[!UICONTROL 排程]**&#x200B;中選取&#x200B;**[!UICONTROL 稍後]**。
-1. 選取 **[!UICONTROL 啟用日期]** 並指定日期和時間。 按一下&#x200B;**[!UICONTROL 下一步]**。
+1. 選取 **[!UICONTROL 啟用日期]** 並指定日期和時間。 按一下「**[!UICONTROL 下一步]**」。
 
    ![管理發布工作流程](assets/manage-publication-workflow.png)
 
-1. 在 **[!UICONTROL 範圍]** 標籤， **[!UICONTROL 新增內容]** （如有需要）。 按一下&#x200B;**[!UICONTROL 下一步]**。
-1. 在 **[!UICONTROL 工作流程]** 索引標籤中，指定工作流程標題。 按一下&#x200B;**[!UICONTROL 稍後發佈]**。
+1. 在 **[!UICONTROL 範圍]** 標籤， **[!UICONTROL 新增內容]** （如有需要）。 按一下「**[!UICONTROL 下一步]**」。
+1. 在 **[!UICONTROL 工作流程]** 標籤，指定工作流程標題。 按一下&#x200B;**[!UICONTROL 稍後發佈]**。
 
    ![工作流程標題](assets/manage-publication-workflow-title.png)
 
-   登入目的地執行個體以驗證已發佈的資產（取決於排程的日期或時間）。
+   登入目的地執行個體以驗證已發佈的資產（取決於排定的日期或時間）。
 
 ## 將資產發佈至Dynamic Media {#publish-assets-to-dynamic-media}
 
-僅資產發佈至 [!DNL Dynamic Media]. 不過，發佈行為會因資料夾屬性而異。 資料夾可以具有 **[!UICONTROL Dynamic Media發佈模式]** 設定為選擇性發佈，可以是下列任一專案：
+只有資產會發佈至 [!DNL Dynamic Media]. 不過，發佈行為會因資料夾屬性而異。 資料夾可以有 **[!UICONTROL Dynamic Media發佈模式]** 設定為選擇性發佈，可為下列任一項：
 
 * `Selective Publish`
 * `Immediate`
 * `Upon Activation`
 
-的發佈程式 **[!UICONTROL 立即]** 和 **[!UICONTROL 啟動時]** 模式是一致的，但不同 **[!UICONTROL 選擇性發佈]**. 另請參閱 [在Dynamic Media中設定檔案夾層級的選擇性發佈](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/selective-publishing.html). 在資料夾中設定選擇性發佈後，您可以執行下列任一項作業：
+的發佈程式 **[!UICONTROL 立即]** 和 **[!UICONTROL 啟動時]** 模式是一致的，但不同 **[!UICONTROL 選擇性發佈]**. 另請參閱 [在Dynamic Media中設定資料夾層級的選擇性發佈](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/selective-publishing.html). 在資料夾中設定選擇性發佈後，您可以執行下列任一項作業：
 
-* [使用管理發布選擇性將資產發佈到Dynamic Media或Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/selective-publishing.html?lang=en#selective-publish-manage-publication)
-* [使用管理發布選擇性從Dynamic Media或Experience Manager取消發佈資產](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/selective-publishing.html?lang=en#selective-unpublish-manage-publication)
-* [使用快速發佈將資產發佈到Dynamic Media或Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/selective-publishing.html?lang=en#quick-publish-aem-dm)
+* [選擇性地使用管理發布將資產發佈到Dynamic Media或Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/selective-publishing.html?lang=en#selective-publish-manage-publication)
+* [選擇性地從Dynamic Media取消發佈資產，或使用「管理發布」Experience Manager取消發佈資產](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/selective-publishing.html?lang=en#selective-unpublish-manage-publication)
+* [將資產發佈到Dynamic Media或使用快速發佈進行Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/selective-publishing.html?lang=en#quick-publish-aem-dm)
 * [透過搜尋結果選擇性地發佈或取消發佈資產](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/selective-publishing.html?lang=en#selective-publish-unpublish-search-results)
 
 ## 將資產發佈至 Brand Portal {#publish-assets-to-brand-portal}
@@ -179,25 +179,26 @@ Only the selected folder content and references are published.
 
 ## 要求發佈 {#request-publication}
 
-此 `Request Publication` 選項有助於在發佈資產之前驗證資產的工作流程 [!DNL AEM] 資產環境。 [!DNL AEM] 為不同使用者提供不同等級的許可權。 您可以是 *投稿人* 正在上傳資產，但在驗證上傳後才能發佈這些資產。 此外，身為 *管理員* 您可以管理資產的讀取和寫入工作流程。
+此 `Request Publication` 選項有助於在發佈資產之前驗證資產的工作流程 [!DNL AEM] 資產環境。 [!DNL AEM] 為各種使用者提供不同等級的許可權。 您可以是 *投稿人* 正在上傳資產，但在驗證上傳後才能發佈這些資產的訪客。 此外，身為 *管理員* 您可以管理資產的讀取和寫入工作流程。
 
-請求發佈選項可供下列使用者使用：
-* **投稿人：** 如果您是可協助撰寫的使用者 [!DNL AEM] Assets，則您對的存取權有限 [!DNL AEM] 資產工作流程。 `Manage publication` 按鈕已為您隱藏。 身為投稿人，您只能透過新增資產來投稿，但無法發佈資產或擁有工作流程的讀取存取權。
+請求發佈選項適用於下列使用者：
+* **貢獻者：** 如果您是可協助撰寫的使用者 [!DNL AEM] Assets，則您對的存取權有限 [!DNL AEM] 資產工作流程。 `Manage publication` 按鈕已為您隱藏。 身為貢獻者，您只能透過新增資產來貢獻，但無法發佈資產或擁有工作流程的讀取存取權。
 
 * **工作流程使用者：** 此使用者無法發佈資產，但擁有工作流程的讀取存取權。 身為工作流程使用者，您可以：
    * 要求發佈
    * 檢視 `Manage publication` 按鈕
    * 排程工作流程並檢視選項 `schedule now` 和 `schedule later`
 
-* **管理員：** 身為使用者的管理員型別，您可以管理資產的整體工作流程步驟。 `Manage publication` 您看得見按鈕。 如果目的地 `publish` ，則您可稍後為工作流程步驟排程資產。
+* **管理員：** 身為使用者型別的管理員，您可以管理資產的整體工作流程步驟。 `Manage publication` 按鈕可供您看到。 如果目的地 `publish` 選取，則您可稍後針對工作流程步驟排程資產。
 
 >[!NOTE]
 >
->若 [!DNL Dynamic Media] ，則會針對以下專案停用工作流程步驟： **工作流程使用者** 和 **管理員** 使用者。
+>如果 [!DNL Dynamic Media] 已選取作為目的地，然後為停用工作流程步驟 **工作流程使用者** 和 **管理員** 使用者。
+>
 
 ## 限制與秘訣 {#limitations-and-tips}
 
 * `Manage publication` 至少擁有工作流程讀取許可權的使用者可以使用。
 * 未發佈空白資料夾。
-* 如果您發佈正在處理的資產，只會發佈原始內容。 缺少轉譯。 請等候處理完成，然後在處理完成時發佈或重新發佈資產。
+* 如果您發佈正在處理的資產，只會發佈原始內容。 缺少轉譯。 請等待處理完成，然後在處理完成時發佈或重新發佈資產。
 * 取消發佈複雜資產時，請僅取消發佈資產。 請避免取消發佈引用，因為它們可能會被其他已發佈的資產引用。

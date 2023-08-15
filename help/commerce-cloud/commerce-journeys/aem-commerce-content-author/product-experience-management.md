@@ -2,9 +2,9 @@
 title: 建立產品體驗
 description: 瞭解如何建立隨後可用於各種管道的產品內容，以打造沈浸式購物體驗。
 exl-id: 4ae70e40-fdf1-4a37-b4dd-0c4882d77908
-source-git-commit: 412e206a66de470e2798aafc58bcac93dc7e3cad
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1168'
+source-wordcount: '1165'
 ht-degree: 4%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 4%
 
 ## 產品體驗管理 {#management}
 
-產品體驗管理是一門學科，用於在AEM中將產品資料（由PIM或商務解決方案擁有）與行銷內容裝飾。 然後，這些包含內容的豐富產品資料可用於各種頻道，以建立沈浸式購物體驗。
+產品體驗管理是一門學科，用於在AEM中將產品資料（由PIM或商業解決方案擁有）與行銷內容一起裝飾。 然後，這些包含內容的豐富產品資料可用於各種頻道，以建立沈浸式購物體驗。
 
 在AEM中，您可以建立各種型別的內容，並將其連結至產品目錄。 可以輕鬆探索及使用相關內容，進而提高生產力。
 
@@ -69,7 +69,7 @@ ht-degree: 4%
 
 ![pem預留位置](assets/pem-placeholder.png)
 
-開啟元件的對話方塊，並輸入此預留位置的名稱。 預留位置名稱為必要項，可讓您視需要儘量新增預留位置。
+開啟元件的對話方塊，並輸入此預留位置的名稱。 需要預留位置名稱，可讓您視需要新增任意數量的預留位置。
 
 ![pem XF對話方塊](assets/pem-dialog-xf.png)
 

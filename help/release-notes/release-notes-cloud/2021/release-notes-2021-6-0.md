@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2021.6.0 版發行說明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2021.6.0 版發行說明。'
 exl-id: 2c72973b-5a51-4744-bf88-50da0013ba31
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1437'
-ht-degree: 44%
+source-wordcount: '1436'
+ht-degree: 48%
 
 ---
 
@@ -30,7 +30,7 @@ ht-degree: 44%
 
 請檢視 [2021年6月版本總覽](https://video.tv.adobe.com/v/334296) 影片以瞭解新增功能的摘要。
 
-## AEM as a Cloud Service的XML Documentation {#xml-documentation}
+## 適用於AEM as a Cloud Service的XML Documentation {#xml-documentation}
 
 ### 新增功能 {#what-is-new-xml-documentation}
 
@@ -47,27 +47,27 @@ AEM as a Cloud Service 2021.6.0 中的 Cloud Manager 發行日期是 2021 年 6 
 
 ### 新增功能 {#what-is-new-junecm}
 
-* 預覽服務將會以滾動方式部署到所有計劃。 當客戶的計畫有啟用預覽服務時，他們會在產品內收到通知。 另請參閱 [存取預覽服務](/help/implementing/cloud-manager/manage-environments.md#access-preview-service) 以取得更多詳細資料。
+* 預覽服務將會以滾動方式部署到所有計劃。 當客戶的計畫有啟用預覽服務時，他們會在產品內收到通知。如需更多詳細資訊，請參閱[存取預覽服務](/help/implementing/cloud-manager/manage-environments.md#access-preview-service)。
 
 * 現在，在建置步驟中所下載的 Maven Dependencies 會在管道執行之間快取。在未來幾週內將會為客戶啟用此功能。
 
-* 現在可以透過編輯程序對話框編輯程序名稱。
+* 現在可以透過編輯計畫對話框編輯計畫名稱。
 
 * 在專案建立期間以及透過管理 Git 工作流程在預設推送命令中所使用的預設分支名稱已變更為 `main`。
 
-* UI 中的編輯計劃體驗已更新。
+* UI 中的編輯計畫體驗已更新。
 
 * 已更新品質規則 `ImmutableMutableMixCheck`，可將 `/oak:index` 節點分類為不可變動。
 
-* 品質規則 `CQBP-84` 和 `CQBP-84--dependencies` 已合併為單一規則。在此合併過程中，更準確地掃描相依性會識別部署到AEM執行階段的第三方相依性的問題。
+* 品質規則 `CQBP-84` 和 `CQBP-84--dependencies` 已合併為單一規則。在此合併過程中，更準確地掃描相依性會識別部署到 AEM 執行階段的第三方相依性的問題。
 
 * 為避免混淆，「環境詳細資料」頁面上的「發佈 AEM」和「發佈 Dispatcher」區段列已合併。
 
   ![Dispatcher環境](/help/implementing/cloud-manager/release-notes/assets/aem-dispatcher.png)
 
-* 已新增計劃碼品質規則來驗證 `damAssetLucene` 索引的結構。 另請參閱 [自訂DAM資產Lucene Oak索引](/help/implementing/cloud-manager/custom-code-quality-rules.md#oakpal-damAssetLucene-sanity-check) 以取得更多詳細資料。
+* 已新增程式碼品質規則來驗證 `damAssetLucene` 索引的結構。如需更多詳細資訊，請參閱[自訂 DAM 資產 Lucene Oak 索引](/help/implementing/cloud-manager/custom-code-quality-rules.md#oakpal-damAssetLucene-sanity-check)。
 
-* 「環境詳細資料」頁面現在會適當地顯示發佈和預覽服務的多個網域名稱 (如適用)。另請參閱 [環境詳細資訊](/help/implementing/cloud-manager/manage-environments.md#viewing-environment) 以取得更多詳細資料。
+* 「環境詳細資料」頁面現在會適當地顯示發佈和預覽服務的多個網域名稱 (如適用)。如需詳細資訊，請參閱[環境詳細資訊](/help/implementing/cloud-manager/manage-environments.md#viewing-environment)。
 
 ### 錯誤修正 {#bug-fixes-junecm}
 
@@ -75,19 +75,19 @@ AEM as a Cloud Service 2021.6.0 中的 Cloud Manager 發行日期是 2021 年 6 
 
 * 列出存放庫 API 不會過濾已刪除的存放庫。
 
-* 當為計劃步驟提供無效值時，會顯示不正確的錯誤消息。
+* 當為計畫步驟提供無效值時，會顯示不正確的錯誤消息。
 
 * 有時，即使未部署該設定，使用者也可能會在 IP 允許清單旁邊看到綠色的&#x200B;*活動*&#x200B;狀態。
 
-* 某些程序編輯序列可能會導致無法建立或編輯生產管道。
+* 某些計畫編輯序列可能會導致無法建立或編輯生產管道。
 
-* 某些程序編輯序列可能會導致&#x200B;**總覽**&#x200B;頁面顯示誤導性消息以重新執行程序設定。
+* 某些計畫編輯序列可能會導致&#x200B;**概觀**&#x200B;頁面顯示誤導性消息以重新執行計畫設定。
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ### [!DNL Assets] 中的新功能 {#ga-features-assets}
 
-* 內容自動化功能可讓 [!DNL Experience Manager Assets] 使用 [!DNL Adobe Creative Cloud] API可大規模自動化資產的製作。 它大幅減少建立相同資產變體所需的時間和反複工作，進而加快內容速度。 此功能不需要任何程式碼，並且可在DAM內運作。
+* 內容自動化功能可讓 [!DNL Experience Manager Assets] 使用 [!DNL Adobe Creative Cloud] API可大規模自動化資產的製作。 它大幅減少了建立相同資產的變體所需的時間和反複工作，進而加快提供內容的速度。 此功能不需要任何程式碼，並且可在DAM內運作。
 * [!DNL Adobe Asset Link] v3.0用於 [!DNL Adobe Photoshop]， [!DNL Adobe Illustrator]、和 [!DNL Adobe InDesign] 和 [!DNL Adobe Asset Link] v2.0用於 [!DNL Adobe XD] 已發行。 它提供：
 
    * 支援 [!DNL Assets Essentials].
@@ -99,22 +99,22 @@ AEM as a Cloud Service 2021.6.0 中的 Cloud Manager 發行日期是 2021 年 6 
 ### 中可用的新功能 [!DNL Assets] 發行前通道 {#beta-features-assets}
 
 * 已增強檢視設定，讓使用者可選擇預設檢視和預設排序引數。
-* Linkshare下載功能會使用可提高下載速度的非同步下載。
-* 使用者可以根據屬性述詞搜尋和篩選資料夾。
-* [!DNL Experience Manager Assets] 內嵌由提供支援的PDF檢視器 [!DNL Adobe Document Cloud] 以預覽支援的檔案。 此功能可讓使用者預覽PDF和其他多頁檔案，而不需要任何複雜的處理。 這可改善以下專案的功能對等性： [!DNL Experience Manager] 6.5.
+* Linkshare下載功能使用可提高下載速度的非同步下載。
+* 使用者可以根據屬性述詞搜尋及篩選檔案夾。
+* [!DNL Experience Manager Assets] 嵌入的PDF檢視器提供者： [!DNL Adobe Document Cloud] 以預覽支援的檔案。 此功能可讓使用者預覽PDF和其他多頁檔案，而不需要任何複雜的處理。 如此可改善與的同等功能 [!DNL Experience Manager] 6.5.
 
 ### 修正在[!DNL Assets]中的錯誤 {#bugs-fixed-assets}
 
 * 將擁有者新增至子資料夾時， [!DNL Assets] 也會將相同的使用者新增為父資料夾的擁有者。 (CQ-4323737)
-* 將資產新增至集合時，如果使用者對集合搜尋套用篩選器，則使用者無法在清單檢視中檢視集合。 (CQ-4323181)
+* 將資產新增至收藏集時，如果使用者對收藏集搜尋套用篩選器，則使用者無法在清單檢視中檢視收藏集。 (CQ-4323181)
 * 搜尋檔案和資料夾時，如果使用者套用篩選器並選取 [!UICONTROL 檔案與資料夾]，只會顯示檔案，不會顯示資料夾。 (CQ-4319543)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
 ### [!DNL Sites] 中的新功能 {#ga-features-sites}
 
-* 發佈到預覽層級現在會在網站管理UI中顯示為頁面狀態
-* 「發佈至預覽層」現在會在動作結束時顯示預覽URL，並將該URL儲存在頁面屬性中以供稍後參考
+* 發佈到預覽層現在會在網站管理UI中顯示為頁面狀態
+* 「發佈到預覽層」現在會在動作結束時顯示預覽URL，並將該URL儲存在頁面屬性中以供日後參考
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -127,7 +127,7 @@ AEM as a Cloud Service 2021.6.0 中的 Cloud Manager 發行日期是 2021 年 6 
 
 ### [!DNL Forms]的 Beta 版功能 {#what-is-new-forms-prerelease}
 
-* **[!DNL AEM Forms as a Cloud Service - Communications]**：通訊 API 可幫助您合併 XDP 範本和 XML 資料，以產生多種格式的列印文件。此服務可讓您以同步模式產生文件。 這些 API 可讓您建立以下用途的應用程式：
+* **[!DNL AEM Forms as a Cloud Service - Communications]**：通訊 API 可幫助您合併 XDP 範本和 XML 資料，以產生多種格式的列印文件。此服務可讓您以同步模式產生檔案。 這些 API 可讓您建立以下用途的應用程式：
    * 使用 XML 資料填寫範本檔案來產生最終表單文件。
    * 產生多種格式的輸出表單，包括非互動式 PDF 列印資料流。
    * 從 XFA 表單 PDF 和 Adobe Acrobat 表單 (AcroForm) 產生列印 PDF。
@@ -139,7 +139,7 @@ AEM as a Cloud Service 2021.6.0 中的 Cloud Manager 發行日期是 2021 年 6 
 ### 修正在[!DNL Forms]中的錯誤 {#forms-bugs-fixed}
 
 * 當欄位在透過表單資料模型 (FDM) 提交資料到後端服務前驗證時，雖然會成功驗證，但表單資料模型無法叫用發佈驗證。
-* 從 Apple iOS 裝置提交包含標準 HTML 上傳欄位的表單時，有時不會傳送檔案內容並在另一端收到 0 位元組檔案。這是Apple iOS中的已知問題。 [FB9117687](https://feedbackassistant.apple.com/feedback/9117687)
+* 從 Apple iOS 裝置提交包含標準 HTML 上傳欄位的表單時，有時不會傳送檔案內容並在另一端收到 0 位元組檔案。這是 Apple iOS 的已知問題。[FB9117687](https://feedbackassistant.apple.com/feedback/9117687)
 
 ## [!DNL Experience Manager Screens] as a [!DNL Cloud Service] {#screens}
 
@@ -154,20 +154,20 @@ AEM Screensas a Cloud Service的發行日期為2021年6月24日。
 >[!NOTE]
 >另請參閱 [AEM Screensas a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/home.html?lang=en) 成功安裝、設定和執行Screensas a Cloud Service所需的基礎知識指南，以及指向詳細概念技術檔案的連結。
 
-* 大量裝置註冊管理表示布建大量播放器裝置更快且更有效率。
+* 大量裝置註冊管理意味著布建大量播放器裝置變得更快且更有效率。
 
-* 改善每個裝置、顯示和管道詳細目錄檢視的搜尋和篩選選項。
+* 改良每個裝置、顯示和通路庫存檢視的搜尋和篩選選項。
 
-* 裝置運作狀況快照藉由提供一目瞭然的關鍵狀態來節省時間。
+* 裝置運作狀況快照藉由提供一目瞭然的重要狀態來節省時間。
 
-* 「物件詳細資訊」頁面提供專案中每個物件最相關資訊的摘要。
+* 「物件詳細資料」頁面提供專案中每個物件的最相關資訊摘要。
 
 ## CIF 附加元件 {#cloud-services-cif}
 
 ### 新增功能 {#what-is-new-cif}
 
 * 內容片段的新CIF產品和類別參考資料型別(包括 產品/類別選擇器UI支援)
-* 新的Commerce內容片段核心元件
+* 新Commerce內容片段核心元件
 * AEM後端支援全文檢索商務搜尋
 * Commerce核心元件支援Adobe Commerce Sensei Recs資料收集
 * 改善類別頁面的SEO易記URL
@@ -181,11 +181,11 @@ AEM Screensas a Cloud Service的發行日期為2021年6月24日。
 
 ### 新增功能 {#what-is-new-ctt-latest}
 
-* 支援選購的 [預先複製](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en) 新增以搭配CTT使用的步驟。 當來源AEM例項設定為使用Amazon S3或Azure Blob儲存體資料存放區時，預先複製步驟可用來大幅加快內容轉移活動的擷取和擷取階段。
+* 支援選購的 [預先複製](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en) 新增步驟以與CTT搭配使用。 當來源AEM例項設定為使用Amazon S3或Azure Blob儲存體資料存放區時，預先複製步驟可用於大幅加快內容轉移活動的擷取和擷取階段。
 
-* CTT新增了護欄，以防止使用者停止擷取，並在資料在擷取階段達到關鍵點後可能損毀資料。
+* CTT新增了護欄，以防止使用者在擷取階段期間達到關鍵點時停止擷取並可能損壞資料。
 
-* 擷取記錄檔的描述性更高，以協助疑難排解。
+* 擷取記錄檔提供更多說明性，以協助疑難排解。
 
 * 在UI中新增更多描述性擷取狀態訊息。
 
@@ -201,9 +201,9 @@ Best Practices Analyzer v2.1.16的發行日期為2021年6月30日。
 
 ### 新增功能 {#what-is-new-bpa-latest}
 
-* 能夠偵測及報告下資料夾中缺少的子節點 `/content/dam`.
+* 能夠偵測和報告下資料夾中缺少的子節點 `/content/dam`.
 
-* 可偵測和報告所使用Best Practices Analyzer版本。
+* 能夠偵測和報告所使用Best Practices Analyzer的版本。
 
 ### 錯誤修正 {#bug-fixes-bpa-latest}
 

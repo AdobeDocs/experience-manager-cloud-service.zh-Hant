@@ -2,10 +2,10 @@
 title: AEM Headless 翻譯歷程
 description: 從這裡開始，此歷程會逐步引導您了解如何使用 AEM 強大的翻譯工具來翻譯您的 Headless 內容。
 exl-id: b677f691-5257-43c3-a4b9-c34932577b31
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+workflow-type: tm+mt
 source-wordcount: '1029'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -59,7 +59,7 @@ Headless 實作放棄了全堆疊解決方案中的傳統頁面和元件管理�
 
 您將在此歷程中探索許多主題。以下文章為您提供了在 AEM 中翻譯 Headless 內容的基本知識，以及詳細技術文件的連結。
 
-儘管您可以直接進入歷程的特定部分，但許多概念都是以先前文章中的概念為基礎。因此，如果您剛接觸 AEM Headless 翻譯，我們建議您從頭開始，然後按順序進行。
+儘管您可以直接進入歷程的特定部分，但許多概念都是以先前文章中的概念為基礎。因此，如果您不熟悉AEM中的Headless翻譯，Adobe建議您從頭開始，然後循序漸進。
 
 | # | 文章 | 說明 |
 |---|---|---|

@@ -2,10 +2,10 @@
 title: 郵件服務的 OAuth2 支援
 description: Adobe Experience Manager as a Cloud Service 對郵件服務的 Oauth2 支援
 exl-id: 93e7db8b-a8bf-4cc7-b7f0-cda481916ae9
-source-git-commit: 92c123817a654d0103d0f7b8e457489d9e82c2ce
-workflow-type: ht
-source-wordcount: '680'
-ht-degree: 100%
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+workflow-type: tm+mt
+source-wordcount: '679'
+ht-degree: 98%
 
 ---
 
@@ -26,7 +26,7 @@ AEM as a Cloud Service 為其整合的郵件服務提供 OAuth2 支援，以允�
    ![開始應用程式註冊流程](assets/oauth-outlook1.png)
 
 1. 根據您的要求填寫資訊，然後按一下「**註冊**」。
-1. 前往新建的應用程式，然後選取「**API 權限**」。
+1. 前往新建立的應用程式，然後選取「 」 **API許可權**.
 1. 按一下「**新增權限** > **Graph 權限** > **委派的權限**」。
 1. 為您的應用程式選取以下權限，然後按一下「**新增權限**」：
    * `https://outlook.office.com/SMTP.Send`

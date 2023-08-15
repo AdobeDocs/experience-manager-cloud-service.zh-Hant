@@ -2,9 +2,9 @@
 title: 建立內容片段模型 - Headless 設定
 description: 針對您將建立並使用 AEM Headless 功能提供的內容，使用內容片段模型來定義該內容的結構。
 exl-id: 8e3e4d00-34d3-4d4f-bc3a-43b8a322b986
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
-workflow-type: ht
-source-wordcount: '490'
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+workflow-type: tm+mt
+source-wordcount: '489'
 ht-degree: 100%
 
 ---

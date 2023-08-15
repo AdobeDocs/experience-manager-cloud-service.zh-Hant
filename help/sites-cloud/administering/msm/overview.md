@@ -4,10 +4,10 @@ description: 了解如何使用 AEM 強大的 Live Copy 和多網站管理員功
 feature: Multi Site Manager
 role: Admin
 exl-id: 22b4041f-1df9-4189-8a09-cbc0c89fbf2e
-source-git-commit: 4049d226ecedb917c2a72cb76bc2fcaa946163f2
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2719'
-ht-degree: 99%
+source-wordcount: '2714'
+ht-degree: 97%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 99%
 
 此頁面概述如何吏用 MSM 重複使用內容。以下頁面詳細介紹相關問題。
 
-* [建立和同步 Live Copy](creating-live-copies.md)
+* [建立和同步 Live Copies](creating-live-copies.md)
 * [Live Copy 概觀主控台](live-copy-overview.md)
 * [設定 Live Copy 同步](live-copy-sync-config.md)
 * [MSM 推出衝突](rollout-conflicts.md)
@@ -114,14 +114,14 @@ MSM 可以使用相關主控台的各種選項直接在 UI 中存取 MSM。
 
 * **建立網站**(**Sites**)
 
-   * MSM 協助您管理共用共同內容的多個網站。例如，網站通常讓國際對象造訪的，因此大部分內容在所有國家/地區都是共同的，其中一部分內容特定於個別國家/地區。MSM 允許您[建立 Live Copy，其可根據來源網站自動更新一個或多個網站](creating-live-copies.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration)。這也有助於您強制施行共同的基本結構，在多個網站中使用共同內容，保持共同外觀，並集中心力管理實際在網站之間不同的內容。以此方式建立網站：
+   * MSM 協助您管理共用共同內容的多個網站。例如，網站通常讓國際對象造訪的，因此大部分內容在所有國家/地區都是共同的，其中一部分內容特定於個別國家/地區。MSM可讓您 [建立可根據您的來源網站自動更新一或多個網站的即時副本](creating-live-copies.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration). 這也有助於您強制施行共同的基本結構，在多個網站中使用共同內容，保持共同外觀，並集中心力管理實際在網站之間不同的內容。以此方式建立網站：
       * 需要預先定義的藍圖設定以指定來源。
       * 建立 (預先定義的) 來源的 Live Copy。
       * 為使用者提供&#x200B;**推出**&#x200B;按鈕。
 
 * **建立 Live Copy** (**Sites**)
 
-   * MSM 允許您[為網站的單一頁面或子分支建立臨時 (一次性) Live Copy。](creating-live-copies.md#creating-a-live-copy-of-a-page)例如，複製子分支以提供有關產品的新/更新版本的資訊。以此方式建立 Live Copy：
+   * MSM可讓您 [建立個別頁面或網站子分支的臨機（一次性）即時副本。](creating-live-copies.md#creating-a-live-copy-of-a-page)例如，複製子分支以提供有關產品的新/更新版本的資訊。以此方式建立 Live Copy：
       * 建立臨時 Live Copy (不需要藍圖設定)。
       * 可用於 (立即) 建立任一頁面/分支的 Live Copy。
       * 需要&#x200B;**同步** (不提供&#x200B;**推出**&#x200B;按鈕)。
@@ -136,11 +136,11 @@ MSM 可以使用相關主控台的各種選項直接在 UI 中存取 MSM。
 
 * **Live Copy 概觀** (**Sites**)
 
-   * 此主控台允許您[檢視和管理您的藍圖及其 Live Copy。](live-copy-overview.md)
+   * 此主控台可讓您 [檢視和管理您的Blueprint及其即時副本。](live-copy-overview.md)
 
 * **藍圖**(**工具** - **Sites**)
 
-   * 此主控台允許您[建立和管理您的藍圖設定。](creating-live-copies.md#creating-a-blueprint-configuration)
+   * 此主控台可讓您 [建立和管理您的Blueprint設定。](creating-live-copies.md#creating-a-blueprint-configuration)
 
 >[!NOTE]
 >
@@ -172,7 +172,7 @@ MSM 可以使用相關主控台的各種選項直接在 UI 中存取 MSM。
 
 >[!TIP]
 >
->請參閱檔案 [擴充多站點管理員](/help/implementing/developing/extending/msm.md#overview-of-the-java-api) 物件名稱。
+>如需物件名稱，請參閱文件「[擴充多網站管理員](/help/implementing/developing/extending/msm.md#overview-of-the-java-api)」。
 
 ## Live Copy {#live-copies}
 
@@ -245,7 +245,7 @@ Live Copy 的基本形式有：
 
 ### 來源、藍圖和藍圖設定 {#source-blueprints-and-blueprint-configurations}
 
-任何頁面或頁面分支都可以作為 Live Copy 的來源。然而，MSM 也可讓您定義會指定來源路徑的藍圖設定。使用藍圖設定的好處是它們：
+任何頁面或頁面分支都可以作為 Live Copy 的來源。不過，MSM也可讓您定義指定來源路徑的藍圖設定。 使用藍圖設定的好處是它們：
 
 * 允許作者在藍圖上使用&#x200B;**推出**&#x200B;選項。也就是，明確地將修改推送到繼承自該藍圖的 Live Copy。
 * 允許作者使用&#x200B;**建立網站**。這可讓使用者輕鬆選擇語言和設定 Live Copy 的結構。

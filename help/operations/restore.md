@@ -1,9 +1,9 @@
 ---
 title: AEMas a Cloud Service中的內容還原
 description: 瞭解如何使用Cloud Manager從備份中還原AEMas a Cloud Service內容。
-source-git-commit: 6813b5b9570a4d115cd0600bcccd4d787dc42154
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1169'
+source-wordcount: '1166'
 ht-degree: 2%
 
 ---
@@ -114,11 +114,11 @@ Cloud Manager的自助式還原程式只會將內容還原到AEM。 因此，您
 
 ## 異地備份 {#offsite-backup}
 
-定期備份涵蓋AEM雲端服務中意外刪除或技術失敗的風險，但區域失敗可能會帶來其他風險。 除了可用性外，這類地區中斷的最大風險是資料遺失。
+定期備份涵蓋AEMCloud Service中意外刪除或技術故障的風險，但區域故障可能會帶來其他風險。 除了可用性外，這類地區中斷的最大風險是資料遺失。
 
 AEMas a Cloud Service會持續將所有AEM內容複製到遠端區域，並讓該內容在三個月的時間內可供復原，藉此緩解所有AEM生產環境的這項風險。 此功能稱為異地備份。
 
-在資料區域中斷的情況下，AEM服務可靠性工程部門會針對中繼和生產環境從異地備份還原AEM雲端服務。
+在資料區域發生中斷時，AEM服務可靠性工程部門會從異地備份復原用於中繼和生產環境的AEMCloud Service。
 
 ## 限制 {#limitations}
 

@@ -1,10 +1,10 @@
 ---
 title: 瀏覽至 Screens 服務提供者
-description: 此頁面說明如何導覽至Screens Services Provider。
+description: 本頁面說明如何導覽至Screens服務提供者。
 exl-id: 9eff6fe8-41d4-4cf3-b412-847850c4e09c
-source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '263'
+source-wordcount: '262'
 ht-degree: 6%
 
 ---
@@ -13,14 +13,14 @@ ht-degree: 6%
 
 ## 簡介 {#introduction}
 
-**Screens服務提供者**，可讓內容作者、開發人員和管理員在將內容新增至頻道後，管理內容播放的顯示器和播放器。 一旦授予使用者存取AEM Cloud Service的許可權，他們應該就能登入Screens服務提供者。
+**Screens服務提供者**，可讓內容作者、開發人員和管理員在內容新增至管道後，管理內容播放的顯示和播放器。 使用者獲得AEM Cloud Service的存取權後，應該就能登入Screens服務提供者。
 
 本節說明如何設定Screens服務提供者。
 
 
 ## 目標 {#objective}
 
-下節將介紹如何設定和設定Screens Services Provider。
+下一節將介紹如何設定和設定Screens服務提供者。
 
 ## 設定Screens服務提供者的步驟 {#screens-services-provider}
 
@@ -29,9 +29,9 @@ ht-degree: 6%
 1. 從瀏覽至Screens服務提供者 [此處](https://experience.adobe.com/screens).
 
    >[!CAUTION]
-   >如果您擁有多個組織的存取權，請確定您已登入正確的組織。 若要變更您的組織，請按一下畫面右上角的「組織」名稱，然後選擇您需要存取的所需組織。
+   >如果您可以存取多個組織，請確保您已登入正確的組織。 若要變更您的組織，請按一下畫面右上角的「組織」名稱，然後選擇您需要存取的所需組織。
 
-2. 按一下「專案」（左上角）旁的齒輪圖示
+2. 按一下「專案」 （左上角）旁的齒輪圖示
 
    ![影像](/help/screens-cloud/assets/configure/configure-screens0.png)
 
@@ -41,7 +41,7 @@ ht-degree: 6%
 
    ![影像](/help/screens-cloud/assets/configure/configure-screens4.png)
 
-4. 按一下 **儲存** 以連線至Screens內容提供者
+4. 按一下 **儲存** 若要連線至Screens內容提供者
 
 5. 選取 **頻道** ，然後按一下 **在內容提供者中開啟**.
 

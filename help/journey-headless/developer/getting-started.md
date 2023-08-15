@@ -2,10 +2,10 @@
 title: AEM Headless as a Cloud Service 快速入門
 description: 在 AEM Headless 開發人員歷程的這一部分，了解 AEM Headless 先決條件。
 exl-id: 9661e17b-fa9f-4689-900c-412b068e942c
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '3084'
-ht-degree: 100%
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+workflow-type: tm+mt
+source-wordcount: '3080'
+ht-degree: 98%
 
 ---
 
@@ -82,8 +82,8 @@ AEM 的 Headless 功能以幾個關鍵功能為基礎。這些將在歷程的後
 
 為了以 Headless 方式修改您的內容，AEM 提供了兩個強大的 API。
 
-* GraphQL API 允許您建立存取和傳遞內容片段的要求。
-* 資產 REST API 允許您建立和修改內容片段 (和其他資產)。
+* GraphQL API 可讓您建立存取和傳遞內容片段的要求。
+* Assets REST API可讓您建立和修改內容片段（和其他資產）。
 
 您將在 AEM Headless 歷程的後續部分，了解這些 API 以及如何使用它們。或者參閱下面的[其他資源](#additional-resources)章節，以取得其他文件。
 
@@ -143,7 +143,7 @@ AEM 支援 CMS 的全 Headless 模型和傳統的全堆疊或 Headful 模型。�
 
 ### 範圍 {#scope}
 
-明確定義專案的範圍很重要。範圍告知接收標準，並允許您設立完成的定義。
+明確定義專案的範圍很重要。範圍會通知接受條件，並讓您建立「完成」的定義。
 
 您必須問的第一個問題是「我想透過 AEM Headless 實現什麼目標？」一般來說，答案應該是您擁有或將來將擁有您使用自己的開發工具而非 AEM 建置的體驗應用程式。此體驗應用程式可以是行動應用程式、網站或任何其他面向取用內容之使用者的體驗應用程式。使用 AEM Headless 的目標是使用最先進的 API 為您的體驗應用程式提供在 AEM 中建立、儲存和管理的內容，這些 API 會直接從您的體驗應用程式呼叫 AEM Headless 以擷取內容或甚至是全 CRUD 內容。如果這不是您想要的，您可能想要[返回 AEM 文件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html)尋找符合您目標的內容。
 
@@ -259,7 +259,7 @@ GraphQL 可作為 AEM 和 Headless 內容取用者之間的「黏著劑」。Gra
 
 #### 更新頻率 {#update-frequency}
 
-通常不同的體驗部分具有不同的內容更新頻率。了解這一點對於能夠微調 CDN 和快取設定很重要。這也是給[內容架構師](#content-architects)的重要輸入，因為他們設計模型來表示您的內容。考慮：
+通常不同的體驗部分具有不同的內容更新頻率。瞭解這一點對於能夠微調CDN和快取設定非常重要。 這也是給[內容架構師](#content-architects)的重要輸入，因為他們設計模型來表示您的內容。考慮：
 
 * 某些類型的內容必須在一段時間後到期嗎？
 * 是否存在因使用者特定而無法快取的元素？

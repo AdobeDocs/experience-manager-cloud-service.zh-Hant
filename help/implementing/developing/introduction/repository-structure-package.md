@@ -1,8 +1,8 @@
 ---
 title: AEM 專案存放庫結構套件
-description: Adobe Experience Manager as a Cloud Service上的Maven專案需要存放庫結構子套件定義，其唯一用途是定義專案的程式碼子套件部署到的JCR存放庫根目錄。
+description: Adobe Experience Manager as a Cloud Service上的Maven專案需要存放庫結構子套件定義，其唯一用途是定義專案的程式碼子套件部署到的JCR存放庫根。
 exl-id: dec08410-d109-493d-bf9d-90e5556d18f0
-source-git-commit: 7260649eaab303ba5bab55ccbe02395dc8159949
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '535'
 ht-degree: 2%
@@ -11,29 +11,29 @@ ht-degree: 2%
 
 # AEM 專案存放庫結構套件
 
-Adobe Experience Manager as a Cloud Service的Maven專案需要存放庫結構子套件定義，其唯一目的是定義專案程式碼子套件部署到的JCR存放庫根目錄。 此方法可確保JCR資源相依性自動對Experience Manageras a Cloud Service中的套件安裝排序。 缺少相依性可能會導致子結構安裝在其父結構之前，並因此意外被移除，中斷部署的情況。
+Adobe Experience Manager as a Cloud Service的Maven專案需要存放庫結構子套件定義，其唯一用途是定義專案的程式碼子套件部署到的JCR存放庫根。 此方法可確保依照JCR資源相依性自動對Experience Manageras a Cloud Service中的套件安裝排序。 缺少相依性可能會導致子結構安裝在其父結構之前，因此意外地被移除，中斷部署的情況。
 
 如果您的程式碼套件部署到位置 **未涵蓋** 透過程式碼套件，則必須在存放庫結構套件中列舉任何上階資源（靠近JCR根的JCR資源）。 建立這些相依性需要此程式。
 
 ![存放庫結構套件](./assets/repository-structure-packages.png)
 
-存放庫結構套件定義了的預期、常見狀態 `/apps` 套件驗證器使用哪個區域來判斷「不會發生潛在衝突」，因為這些區域是標準根。
+存放庫結構套件定義了的預期、常見狀態 `/apps` 套件驗證器用來判斷區域「不會潛在衝突」的地方，因為這些區域是標準根。
 
 要包含在存放庫結構封裝中的最典型路徑是：
 
 + `/apps` 是系統提供的節點
-+ `/apps/cq/...`， `/apps/dam/...`， `/apps/wcm/...`、和 `/apps/sling/...` 提供下列專案的一般覆蓋圖： `/libs`.
-+ `/apps/settings` 這是共用的內容感知設定根路徑
++ `/apps/cq/...`， `/apps/dam/...`， `/apps/wcm/...`、和 `/apps/sling/...` 這些標籤會為下列專案提供公用覆蓋圖： `/libs`.
++ `/apps/settings` 共用內容感知設定根路徑
 
 此子封裝 **沒有** 任何內容，且僅由 `pom.xml` 定義篩選根目錄。
 
 ## 建立存放庫結構套件
 
-若要為您的Maven專案建立存放庫結構套件，請建立空的Maven子專案，包含下列專案 `pom.xml`，更新專案中繼資料以符合您的父Maven專案。
+若要為您的Maven專案建立存放庫結構套件，請建立空的Maven子專案，包含以下專案 `pom.xml`，更新專案中繼資料以符合您的上層Maven專案。
 
-更新 `<filters>` 以包含您部署程式碼套件的所有JCR存放庫路徑根。
+更新 `<filters>` 若要包含所有JCR存放庫路徑，請以您的程式碼套件部署到的為根。
 
-確定將此新Maven子專案新增到父專案 `<modules>` 清單。
+請確定將此新的Maven子專案新增到父專案 `<modules>` 清單。
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -86,7 +86,7 @@ Adobe Experience Manager as a Cloud Service的Maven專案需要存放庫結構�
                         Examples of complex roots
 
 
-                        Overlays of /libs typically require defining the overlayed structure, at each level here.
+                        Overlays of /libs typically require defining the overlay structure, at each level here.
 
                         For example, adding a new section to the main AEM Tools navigation, necessitates the following rules:
 
@@ -118,7 +118,7 @@ Adobe Experience Manager as a Cloud Service的Maven專案需要存放庫結構�
 
 若要使用存放庫結構套件，請透過所有程式碼套件（部署到的子套件）參照它 `/apps`) Maven專案（透過FileVault content package Maven外掛程式） `<repositoryStructurePackage>` 設定。
 
-在 `ui.apps/pom.xml`，以及任何其他程式碼套件 `pom.xml`s，將專案的存放庫結構套件(#repository-structure-package)設定的參考新增到FileVault package Maven外掛程式。
+在 `ui.apps/pom.xml`，以及任何其他程式碼套件 `pom.xml`然後，將專案的存放庫結構套件(#repository-structure-package)設定的參考新增到FileVault package Maven外掛程式。
 
 ```xml
 ...
@@ -155,7 +155,7 @@ Adobe Experience Manager as a Cloud Service的Maven專案需要存放庫結構�
 
 ## 多程式碼套件使用案例
 
-較不常見且較複雜的使用案例是支援部署安裝在JCR存放庫相同區域中的多個程式碼套件。
+較不常見且較複雜的使用案例是支援部署多個程式碼套件，這些套件安裝在JCR存放庫的相同區域中。
 
 例如：
 
@@ -166,19 +166,19 @@ Adobe Experience Manager as a Cloud Service的Maven專案需要存放庫結構�
 
 在此案例中：
 
-+ 程式碼套件A應該定義 `<repositoryStructurePackage>` 在專案的存放庫結構套件(其中應具有篩選器 `/apps`)。
-+ 程式碼套件B應該定義 `<repositoryStructurePackage>` 位於程式碼套件A上，因為程式碼套件B會部署至程式碼套件A共用的空間。
++ 程式碼套件A應該定義 `<repositoryStructurePackage>` 在專案的存放庫結構套件上（該套件應具有篩選器） `/apps`)。
++ 程式碼套件B應該定義 `<repositoryStructurePackage>` 位於程式碼套件A上，因為程式碼套件B會部署到程式碼套件A共用的空間。
 
 ## 錯誤與偵錯
 
-如果存放庫結構套件未正確設定，則Maven會報告錯誤：
+如果存放庫結構套件未正確設定，在Maven構建會報告錯誤：
 
 ```
 1 error(s) detected during dependency analysis.
 Filter root's ancestor '/apps/some/path' is not covered by any of the specified dependencies.
 ```
 
-此錯誤表示中斷的程式碼套件沒有 `<repositoryStructurePackage>` 該清單 `/apps/some/path` 在其篩選清單中。
+此錯誤表示中斷程式碼套件沒有 `<repositoryStructurePackage>` 該清單 `/apps/some/path` 在其篩選清單中。
 
 ## 其他資源
 

@@ -2,10 +2,10 @@
 title: New Relic One
 description: 了解適用於 AEM as a Cloud Service的 New Relic One 應用程式效能監控 (APM) 服務以及如何存取它。
 exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1589'
-ht-degree: 100%
+source-wordcount: '1586'
+ht-degree: 97%
 
 ---
 
@@ -112,7 +112,7 @@ Adobe 非常重視應用程式的監控、可用性和效能。AEM as a Cloud Se
 
 ### 驗證您的電子郵件 {#verify-email}
 
-如果您在登入 New Relic One 時被要求驗證您的電子郵件，這意味著您的電子郵件與多個帳戶相關聯。這使您可以選擇要存取的帳戶。
+如果您在登入 New Relic One 時被要求驗證您的電子郵件，這意味著您的電子郵件與多個帳戶相關聯。這可讓您選擇要存取的帳戶。
 
 如果您不驗證您的電子郵件地址，New Relic 會嘗試使用與您的電子郵件地址關聯的最近建立的使用者記錄來登入。為避免在每次登入時驗證您的電子郵件，請按一下&#x200B;**記得我**&#x200B;登入畫面中的複選框。
 
@@ -120,7 +120,7 @@ Adobe 非常重視應用程式的監控、可用性和效能。AEM as a Cloud Se
 
 ## 偵錯 New Relic One Access {#troubleshooting}
 
-如果您被新增為 New Relic One 使用者，如章節中所述[管理 New Relic One 使用者](#manage-users)並且找不到原始帳戶確認電子郵件，請按照以下步驟操作。
+如果您被新增為New Relic One使用者，如一節所述 [管理New Relic One使用者](#manage-users) 而且無法依照下列步驟找到原始帳戶確認電子郵件。
 
 1. 瀏覽 New Relic 至 [`login.newrelic.com/login`](https://login.newrelic.com/login) 登入頁面的概覽頁面。
 
