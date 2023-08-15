@@ -2,9 +2,9 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的目前維護版本發行說明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的目前維護版本發行說明。'
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: b2c67687e2f3577b44929777a31b6ce85a5f1877
+source-git-commit: cb963a233b5afd4497704233db7f51c37563d0f9
 workflow-type: tm+mt
-source-wordcount: '619'
+source-wordcount: '620'
 ht-degree: 22%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 22%
 ### 增強功能 {#enhancements-13099}
 
 - SITES-13906： GraphQL — 升級至graphql-java 20.1。
-- SITES-8972： GraphQL — 新增選項```label``` JSON中用於列舉資料型別。
+- SITES-8972： GraphQL — 在JSON中新增分項清單資料型別的選項標籤。
 - SITES-9689： GraphQL — 在JSON中新增內容參考資料型別的標題和說明。
 - SITES-13052：內容片段 — 將內容片段匯出至Adobe Target
 
