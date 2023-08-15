@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的目前維護版本發行說明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的目前維護版本發行說明。'
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: acaed9eed20e8134574fd326e23ac68130ac019b
+source-git-commit: 4c38285f9e75618ad181a85034212c7c24030e99
 workflow-type: tm+mt
-source-wordcount: '981'
-ht-degree: 14%
+source-wordcount: '619'
+ht-degree: 25%
 
 ---
 
@@ -13,78 +13,54 @@ ht-degree: 14%
 
 下節是 Experience Manager as a Cloud Service 目前維護版本的技術版本發行說明。
 
-## 12874 版 {#release-12874}
+## 13099 版 {#release-13099}
 
-以下摘要說明維護版本12874數的持續改善，該版本於2023年8月2日公開發佈。 此維護版本是先前 12790 維護版本的更新。
+下面是 13099 維護版本的持續改善內容，該版本於 2023 年 8 月 16 日公開發佈。此維護版本是先前 12874 維護版本的更新。
 
 2023.8.0 功能啟用將提供此維護版本的完整功能集。如需詳細資訊，請參閱 [Experience Manager 發行藍圖](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html)。
 
-### 增強功能 {#enhancements-12874}
+### 增強功能 {#enhancements-13099}
 
-- 新版本的索引定義： `/oak:index/damAssetLucene-9`
-- ASSETS-18351：切換至不安全的Facet — 提升搜尋效能
-- ASSETS-17896：從索引中移除特徵向量 — 根據智慧標籤的相似性搜尋
-- ASSETS-8715：為屬性&quot;jcr：content/metadata/dam：status&quot;新增null檢查/非null檢查
-- GRANITE-45138：從預測的標籤動態提升屬性中移除屬性索引
-- ASSETS-17614：新增Scene7 ID作為索引屬性（啟用Null檢查而非Null檢查）
-- ASSETS-14516：將「新UI」垃圾桶功能的屬性新增到索引
-- ASSETS-16270：將聯合標題屬性新增到索引（用於排序）
-- ASSETS-24478：從索引中移除5個潛在的大型屬性（根據客戶索引資料的分析）
-- ASSETS-3383：新增額外標籤「assetsOmnisearch」
+- SITES-13906： GraphQL — 升級至graphql-java 20.1。
+- SITES-8972： GraphQL — 新增選項```label``` JSON中用於列舉資料型別。
+- SITES-9689： GraphQL — 在JSON中新增內容參考資料型別的標題和說明。
+- SITES-13052：內容片段 — 將內容片段匯出至Adobe Target
 
-AEM版本12874和更新版本包含新版本的damAssetLucene索引(damAssetLucene-9)。 為了提供回應最迅速的搜尋體驗，damAssetLucene-9變更了Oak查詢結果Facet的行為，不再評估基礎搜尋索引傳回之Facet計數的存取控制（稱為「不安全」模式）。
+### 已修正的問題 {#fixed-issues-13099}
 
-因此，使用者可能會看到面向計數值，其中包含目前使用者無權存取的資產。 這不允許使用者存取、下載或讀取這些資產，也不允許使用者取得有關資產存在的任何進一步資訊。
+- SITES-14937： MSM — 從父項繼承轉出設定值在點選即時副本的儲存並關閉時切換。
+- SITES-14847：內容片段 — 內容片段連結未醒目提示。
+- SITES-11620：內容片段 — 參考路徑在UI中稍微剪下。
+- SITES-14171： GraphQL — 在某些情況下，快取資料的循環參考不會失效。
+- SITES-14577：體驗片段 — 大量發佈不適用於即時副本。
+- SITES-14341：管理員UI — 移除刪除許可權時，「屬性」按鈕的行為不一致。
+- SITES-11000：管理員UI — 參考：某些頁面中缺少傳入連結。
+- SITES-11559：管理員UI — 參考：傳入連結顯示錯誤的頁面。
+- SITES-14337：管理員UI — 開啟編輯器頁面會在特定情況下產生錯誤。
+- SITES-13425：按一下ContextHub按鈕時，ContextHub — 功能表列未顯示。
+- Forms-9971：以其他語言環境轉譯調適型表單時，會解譯和錯誤套用元件的可見度。
+- Forms-9888：當最適化表單設定為在表單提交時重新導向至外部URL （感謝頁面）時，它無法重新導向至外部URL。
+- Forms-9845：使用規則編輯器清除下拉式清單後，儘管假設有間隙，先前提供的值仍會持續存在。
+- Forms-9263：當核取方塊的標籤包含特殊字元，且使用者按一下核取方塊時，個別核取方塊未選取。
+- Forms-9254：當使用者捲動條款與條件元件的文字時，元件內的核取方塊甚至在使用者捲動整個文字之前都會自動啟用。
+- Forms-9045：指令碼標籤無法解析基礎XDP中的外部片段參考。
+- Forms-9026：嘗試使用JSON結構描述建立最適化表單時，該結構描述具有包含空字串的列舉且驗證沒有錯誤，流程會導致失敗。 接下來，在重新整理頁面時，表單無法正確載入，顯示空白表單並在日誌中顯示錯誤。
+- Forms-8964：在Android™ Chrome/Firefox中，如果達到字元數上限，文字方塊元件中的文字會變成無法編輯。
+- Forms-8668：儘管呈現了功能表單，但錯誤記錄中仍存在過多的Java™棧疊傾印，導致記錄檔案膨脹。
+- Forms-8554：啟用延遲載入的最適化Forms無法在作者執行個體的預覽模式中運作。
+- Forms-8177：當表單服務作用中時，例外狀況「com.adobe.aem.formsndocuments.publish.AssetReferenceProvider無法擷取資產相依性」。 發生。 停用表單服務時，錯誤會消失。
+- Forms-3691：某些物件遺失IIFE （立即叫用函式運算式）範圍。 使用IIFE的主要目的，是為了在函式內建立變數的範圍，防止這些變數汙染全域範圍。
 
-如果需要先前的行為，客戶應遵循中所述的步驟 [內容搜尋與索引](/help/operations/indexing.md) 使用先前的「統計」Facet模式建立damAssetLucene-9索引的自訂版本。
 
-### 已修正的問題 {#fixed-issues-12874}
+### 已知問題 {#known-issues-13099}
 
-- ASSETS-24379：改善ReplicateOnModifyListener。
-- ASSETS-25794：解決S7ConfigResolverImpl導致其在啟動時執行昂貴查詢的問題。
-- ASSETS-25473：修正沒有復寫許可權的使用者看見「快速發佈選項」的錯誤。
-- ASSETS-24803：解決Viewers功能中的XSS弱點。
-- ASSETS-25489：修正下載含有錯誤尾碼的智慧型裁切的問題。
-- ASSETS-25435：修正動態轉譯的下載中缺少WidthxHeight欄位的錯誤
-- ASSETS-25741：修正缺少視覺星號(`*`)符號，代表「基本」索引標籤區段中的必要「寬度」編輯欄位。
-- ASSETS-25759：改善高對比黑白模式中下拉式清單元素的可見度。
-- ASSETS-25749：修正使用鍵盤標籤導覽時，焦點未移至視訊下方的多個控制項，導致無法存取的問題。
-- ASSETS-26074：恢復非視訊資產名稱127個字元的限制。
-- ASSETS-21428：修正中繼資料結構編輯器中的多行欄位與下列欄位重疊的問題
-- ASSETS-21989：修正302和401回應時可能覆寫CORS標題，導致遠端DAM無法登入的問題
-- ASSETS-22603：修正檢視「資產下載報表」時，影響欄名稱和值的問題
-- ASSETS-23120：修正AssetSetLastModifiedProcess中有關洩漏資源解析器的問題
-- ASSETS-24938：修正導致「資產資料夾屬性」對話方塊的「儲存」按鈕行為類似於「儲存+關閉」的問題
-- ASSETS-25456：修正長名稱的資產無法在Asset Properties編輯器中點選動作的問題
-- ASSETS-25832：修正將完整存取資料夾中的資產關聯至唯讀存取資料夾的問題。
-- ASSETS-25397：修正搜尋結果無法反映在新UI中重新命名之資產新名稱的問題
-- ASSETS-26102：修正無法從CI中樞聯結器上傳的問題
-- ASSETS-26172：減少永久性Sling作業節點中儲存的「大量匯入」進度記錄檔內容大小
-- ASSETS-26292：在Java API中棄用的AssetManager createOrUpdateAsset()和createOrReplaceAsset()方法
-- ASSETS-26399：修正無法將集合發佈至Brand Portal的問題
-- ASSETS-26533：修正Indesign伺服器整合中，可能導致長時間處理請求逾時的問題
-- ASSETS-26549：修正「資產清單」檢視中，造成「外部使用者」顯示為所有已上傳資產的最後修改使用者的問題
-- ASSETS-26551：解決在作者中刪除的資產未取消發佈的問題
-- ASSETS-26571：修正「Assets報表」頁面在清單中出現多個失敗報表作業時無法載入頁面的問題
-- ASSETS-26147：修正設定window.top.opener但未設定window.opener時，Unified Shell會嘗試將iframe重新導向至/ui的問題
-- ASSETS-26576：修正「Dropbox匯入」中建立錯誤資料夾階層的問題
-- ASSETS-26671：修正大量匯入無法包含位於DCIM資料夾中檔案的問題
-- ASSETS-26700：修正儲存公用資料夾的屬性頁面而不做變更時，會建立3個不必要群組的問題
-- CQ-4353449：修正具有唯讀標籤許可權的使用者可使用標籤UI建立標籤的問題
-- GRANITE-46601：修正快速入門SDK無法在JDK 11.0.20上啟動的問題
-- SKYOPS-33168：修正CM開發人員控制檯中，無法載入無副檔名之資產名稱的/content/dam的問題
-- SKYOPS-61484：修正RDEProvider服務允許未取代的${sling.home} Token保留在合併OSGi設定中的問題
-- 各種安全性、協助工具和本地化修正
+- SITES-15359：變數名稱模式無法正確比對具有 ```'_'``` 資源名稱中的。
 
-### 已知問題 {#known-issues-12874}
-
-- GRANITE-46851：內容發佈中的測試連線無法運作
-
-### 內嵌技術 {#embedded-tech-12874}
+### 內嵌技術 {#embedded-tech-13099}
 
 | 技術 | 版本 | 連結 |
 |---|---|---|
 | AEM OAK | 1.52-T20230629133256-25c01b8 | [Oak API 1.52.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.52.0/index.html) |
 | AEM SLING API | 2.27.2 版 | [Apache Sling API 2.27.2 API](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html) |
 | AEM HTL | 1.4.20-1.4.0 版本 | [HTML 範本語言規格](https://github.com/adobe/htl-spec) |
-| AEM 核心元件 | 2.23.0 版 | [AEM WCM 核心元件](https://github.com/adobe/aem-core-wcm-components) |
+| AEM 核心元件 | 2.23.2 版 | [AEM WCM 核心元件](https://github.com/adobe/aem-core-wcm-components) |
