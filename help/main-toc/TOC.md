@@ -8,9 +8,9 @@ user-guide-description: 了解 Experience Manager as a Cloud Service 的運作�
 breadcrumb-title: 使用手冊
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 2f187eaec2f8418b63e54dc4f377d5798f8ed07a
+source-git-commit: d092e68b4f6dbc4f2bcfc45d2e522cfbfa831c0d
 workflow-type: tm+mt
-source-wordcount: '4238'
+source-wordcount: '4242'
 ht-degree: 99%
 
 ---
@@ -75,6 +75,7 @@ ht-degree: 99%
    + AEMaaCS 維護版本發行說明{#maintenance}
       + [目前維護版本發行說明](/help/release-notes/maintenance/latest.md)
       + 2023 {#2023}
+         + [2023.8.0 維護版本發行說明](/help/release-notes/maintenance/2023/2023.8.0.md)
          + [2023.7.0 維護版本發行說明](/help/release-notes/maintenance/2023/2023.7.0.md)
          + [2023.6.0 維護版本發行說明](/help/release-notes/maintenance/2023/2023.6.0.md)
          + [2023.4.0 維護版本發行說明](/help/release-notes/maintenance/2023/2023.4.0.md)
@@ -345,7 +346,7 @@ ht-degree: 99%
             + [部署您的自訂主題](/help/journey-sites/quick-site/deploy-theme.md)
       + 重複使用內容 {#reusing-content}
          + [MSM 和翻譯](/help/sites-cloud/administering/msm-and-translation.md)
-         + 多站點管理員 {#msm}
+         + 多網站管理員 {#msm}
             + [MSM 和 Live Copy 概觀](/help/sites-cloud/administering/msm/overview.md)
             + [設定 Live Copy 同步](/help/sites-cloud/administering/msm/live-copy-sync-config.md)
             + [建立和同步 Live Copies](/help/sites-cloud/administering/msm/creating-live-copies.md)
@@ -580,7 +581,7 @@ ht-degree: 99%
             + [設定重新導向頁面或感謝訊息](/help/forms/configure-redirect-page-or-thank-you-message.md)
             + [建立具有可重複區段的表單](/help/forms/create-forms-repeatable-sections.md)
             + [為最適化表單設定提交動作](/help/forms/configure-submit-actions-core-components.md)
-            + [在最適化表單中使用Google reCAPTCHA](/help/forms/captcha-adaptive-forms-core-components.md)
+            + [在最適化表單中使用 Google reCAPTCHA](/help/forms/captcha-adaptive-forms-core-components.md)
       + 編寫最適化表單 - 基礎元件{#authoring-adaptive-forms-foundation-components}
          + 將您的 PDF forms 轉換為最適化表單 {#afcs}
             + [自動表單轉換服務簡介](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html)
@@ -965,11 +966,11 @@ ht-degree: 99%
       + [設定 RTF 編輯器](/help/implementing/developing/extending/rich-text-editor.md)
       + [設定 RTE 外掛程式](/help/implementing/developing/extending/configure-rich-text-editor-plug-ins.md)
       + [設定 RTE 以建立可存取的網站](/help/implementing/developing/extending/rte-accessible-content.md)
-      + [擴充頁面製作](/help/implementing/developing/extending/page-authoring.md)
+      + [擴充頁面編寫](/help/implementing/developing/extending/page-authoring.md)
       + [擴充主控台](/help/implementing/developing/extending/consoles.md)
       + [擴充頁面屬性](/help/implementing/developing/extending/page-properties.md)
-      + [擴充大量編輯器](/help/implementing/developing/extending/bulk-editor.md)
-      + [擴充MSM](/help/implementing/developing/extending/msm.md)
+      + [擴充批次編輯器](/help/implementing/developing/extending/bulk-editor.md)
+      + [擴充 MSM](/help/implementing/developing/extending/msm.md)
    + 部署至 AEM as a Cloud Service {#deploying}
       + [部署至 AEM as a Cloud Service ](/help/implementing/deploying/overview.md)
       + [AEM 版本更新](/help/implementing/deploying/aem-version-updates.md)
