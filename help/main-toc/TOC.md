@@ -480,7 +480,7 @@ ht-degree: 99%
       + [套用 Dynamic Media 影像預設集](/help/assets/dynamic-media/image-presets.md)
       + [管理 Dynamic Media 檢視器預設集](/help/assets/dynamic-media/managing-viewer-presets.md)
       + [套用 Dynamic Media 檢視器預設集](/help/assets/dynamic-media/viewer-presets.md)
-      + [批次集預設集](/help/assets/dynamic-media/batch-set-presets-dm.md)
+      + [大量集預設集](/help/assets/dynamic-media/batch-set-presets-dm.md)
       + [透過 Dynamic Media 使 CDN 快取失效](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)
       + [透過 Dynamic Media Classic 使 CDN 快取失效](/help/assets/dynamic-media/invalidate-cdn-cache-dm-classic.md)
       + [智慧型影像](/help/assets/dynamic-media/imaging-faq.md)
@@ -633,7 +633,7 @@ ht-degree: 99%
    + 通訊 API {#using-communications}
       + [通訊 API 簡介](/help/forms/aem-forms-cloud-service-communications-introduction.md)
       + [通訊 API - 同步處理](/help/forms/aem-forms-cloud-service-communications.md)
-      + [通訊 API - 批次處理](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
+      + [通訊 API - 大量處理](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
       + [安裝及設定 Forms Designer](/help/forms/installing-configuring-designer.md)
       + [使用 Forms Designer 建立範本](/help/forms/use-forms-designer.md)
       + [在 PDF 文件中使用自訂字型](/help/forms/use-custom-fonts.md)
@@ -969,7 +969,7 @@ ht-degree: 99%
       + [擴充頁面編寫](/help/implementing/developing/extending/page-authoring.md)
       + [擴充主控台](/help/implementing/developing/extending/consoles.md)
       + [擴充頁面屬性](/help/implementing/developing/extending/page-properties.md)
-      + [擴充批次編輯器](/help/implementing/developing/extending/bulk-editor.md)
+      + [擴充大量編輯器](/help/implementing/developing/extending/bulk-editor.md)
       + [擴充 MSM](/help/implementing/developing/extending/msm.md)
    + 部署至 AEM as a Cloud Service {#deploying}
       + [部署至 AEM as a Cloud Service ](/help/implementing/deploying/overview.md)
