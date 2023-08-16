@@ -1,11 +1,11 @@
 ---
 title: Universal Editor 驗證
-description: 瞭解Universal Editor如何使用Adobe的Identity Management系統(IMS)進行驗證。
+description: 了解 Universal Editor 如何使用 Adobe 的 Identity Management System (IMS) 進行驗證。
 exl-id: fb86c510-3c41-4511-81b7-1bdf2f5e7dd3
 source-git-commit: 9fd7c17fce8c11809eabcc6387cbace0ebdc64a2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '333'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
