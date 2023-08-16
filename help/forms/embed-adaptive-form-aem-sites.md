@@ -5,9 +5,9 @@ description: 您可以使用最適化Forms — 內嵌元件將最適化Forms內�
 feature: Adaptive Forms
 Keywords: Forms AEM Sites, Embed Form to a Sites page, Adaptive Forms AEM Sites, Embed Adaptive Forms to AEM Page, Embed Forms in an AEM Sites page
 exl-id: 359b05e8-d8c1-4a77-9e70-6f6b6e668560
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bb2ee07f8750c15959ecdaa65f0932b05edfcd39
 workflow-type: tm+mt
-source-wordcount: '3230'
+source-wordcount: '3158'
 ht-degree: 6%
 
 ---
@@ -94,44 +94,40 @@ In addition, Adaptive Forms in AEM Page Editor use [Adaptive Forms Core Componen
 1. 在純文字編輯器中開啟 AEM Cloud Service Git 存放庫資料夾。 例如，Microsoft® Visual Code。
 1. 開啟 `ui.apps\src\main\content\jcr_root\apps\[your-project]\components\page\customheaderlibs.html` 將下列程式碼新增至檔案中：
 
-       ```
+   ```
        //Customheaderlibs.html
-       &lt;sly data-sly-use.clientlib=&quot;core/wcm/components/commons/v1/templates/clientlib.html&quot;>
-       &lt;sly data-sly-call=&quot;${clientlib.css @ categories=&amp;#39;core.forms.components.runtime.all&amp;#39;}&quot; />
-       &lt;/sly>
-       
-       ```
-   
+       <sly data-sly-use.clientlib="core/wcm/components/commons/v1/templates/clientlib.html">
+       <sly data-sly-call="${clientlib.css @ categories='core.forms.components.runtime.all'}"/>
+       </sly> 
+   ```
+
 1. 開啟 `ui.apps\src\main\content\jcr_root\apps\[your-project]\components\page\customfooterlibs.html` 將下列程式碼新增至檔案中：
 
-       ```
-       
+   ```
        //customfooterlibs.html
-       &lt;sly data-sly-use.clientlib=&quot;core/wcm/components/commons/v1/templates/clientlib.html&quot;>
-       &lt;sly data-sly-test=&quot;${!wcmmode.edit}&quot; data-sly-call=&quot;${clientlib.js @ categories=&amp;#39;core.forms.components.runtime.all&amp;#39;, async=true}&quot; />
-       &lt;/sly>
-       ```
-   
+       <sly data-sly-use.clientlib="core/wcm/components/commons/v1/templates/clientlib.html">
+       <sly data-sly-test="${!wcmmode.edit}" data-sly-call="${clientlib.js @ categories='core.forms.components.runtime.all', async=true}"/>
+       </sly> 
+   ```
+
 1. 開啟 `ui.apps\src\main\content\jcr_root\apps\[your-project]\components\xfpage\customheaderlibs.html` 將下列程式碼新增至檔案中：
 
-       ```
+   ```
        //Customheaderlibs.html
-       &lt;sly data-sly-use.clientlib=&quot;core/wcm/components/commons/v1/templates/clientlib.html&quot;>
-       &lt;sly data-sly-call=&quot;${clientlib.css @ categories=&amp;#39;core.forms.components.runtime.all&amp;#39;}&quot; />
-       &lt;/sly>
-       
-       ```
-   
+       <sly data-sly-use.clientlib="core/wcm/components/commons/v1/templates/clientlib.html">
+       <sly data-sly-call="${clientlib.css @ categories='core.forms.components.runtime.all'}"/>
+       </sly> 
+   ```
+
 1. 開啟 `ui.apps\src\main\content\jcr_root\apps\[your-project]\components\xfpage\customfooterlibs.html` 將下列程式碼新增至檔案中：
 
-       ```
-       
+   ```
        //customfooterlibs.html
-       &lt;sly data-sly-use.clientlib=&quot;core/wcm/components/commons/v1/templates/clientlib.html&quot;>
-       &lt;sly data-sly-test=&quot;${!wcmmode.edit}&quot; data-sly-call=&quot;${clientlib.js @ categories=&amp;#39;core.forms.components.runtime.all&amp;#39;, async=true}&quot; />
-       &lt;/sly>
-       ```
-   
+       <sly data-sly-use.clientlib="core/wcm/components/commons/v1/templates/clientlib.html">
+       <sly data-sly-test="${!wcmmode.edit}" data-sly-call="${clientlib.js @ categories='core.forms.components.runtime.all', async=true}"/>
+       </sly> 
+   ```
+
 1. [執行部署管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/enable-front-end-pipeline.html)，將客戶端資料庫部署到您的 AEM as a Cloud Service 環境。
 
 +++
@@ -235,9 +231,11 @@ In addition, Adaptive Forms in AEM Page Editor use [Adaptive Forms Core Componen
 1. 在編輯模式中開啟包含調適型表單的AEM Sites頁面(在調適型Forms容器元件中)。
 1. 開啟「內容樹」，然後選取 **[!UICONTROL 最適化Forms容器]** 託管您的最適化表單。 一個AEM Sites頁面可以託管多個最適化Forms。 因此，請仔細選取正確的最適化Forms容器。
 1. 在功能表列上，選取 ![「轉換為體驗片段變數」圖示](/help/forms/assets/Smock_FilingCabinet_18_N.svg) 「轉換為體驗片段變數」圖示。
+
    ![按一下檔案櫃標誌，將AEM Sites頁面中的最適化表單轉換為體驗片段](/help/forms/assets/convert-form-in-sites-page-to-an-experience-fragment.png)
 
-   系統會顯示對話方塊，將最適化表單容器轉換為新的體驗片段或新增至現有的體驗片段。
+   會出現對話方塊，將最適化表單容器轉換為新的體驗片段或新增到現有的體驗片段。
+
 1. 在 **[!UICONTROL 轉換為體驗片段]** 變數對話方塊中，設定下列選項的值：
 
    * **動作：** 選取以建立體驗片段或新增到現有的體驗片段。

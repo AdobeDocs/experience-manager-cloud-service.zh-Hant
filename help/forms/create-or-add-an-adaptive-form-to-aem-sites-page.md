@@ -3,9 +3,9 @@ title: 如何將最適化表單新增至AEM Sites頁面？
 description: 瞭解如何建立最適化表單或將其新增到您的AEM Sites頁面。 也瞭解將表單整合至您網站的好處和各種方式。
 feature: Adaptive Forms, Page Editor, Authoring
 Keywords: AF in Sites editor, af in aem sites, aem sites af, add af to a sites page, af aem sites, af sites, create af in a sites page, adaptive form in aem sites, forms aem sites, add form to a sites page, adaptive forms aem sites, add adaptive forms to aem page, create forms in an aem sites page
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bb2ee07f8750c15959ecdaa65f0932b05edfcd39
 workflow-type: tm+mt
-source-wordcount: '3301'
+source-wordcount: '3229'
 ht-degree: 19%
 
 ---
@@ -85,45 +85,41 @@ AEM FormsCloud Service提供最適化表單容器和Adaptive Forms — 內嵌元
 1. 在純文字編輯器中開啟 AEM Cloud Service Git 存放庫資料夾。 例如，Microsoft 視覺效果程式碼。
 1. 開啟 `ui.apps\src\main\content\jcr_root\apps\[your-project]\components\page\customheaderlibs.html` 將下列程式碼新增至檔案中：
 
-       ```
+   ```
        //Customheaderlibs.html
-       
-       &lt;sly data-sly-use.clientlib=&quot;core/wcm/components/commons/v1/templates/clientlib.html&quot;>
-       &lt;sly data-sly-call=&quot;${clientlib.css @ categories=&amp;#39;core.forms.components.runtime.all&amp;#39;}&quot; />
-       &lt;/sly>
-       
-       ```
    
+       <sly data-sly-use.clientlib="core/wcm/components/commons/v1/templates/clientlib.html">
+       <sly data-sly-call="${clientlib.css @ categories='core.forms.components.runtime.all'}"/>
+       </sly> 
+   ```
+
 1. 開啟 `ui.apps\src\main\content\jcr_root\apps\[your-project]\components\page\customfooterlibs.html` 將下列程式碼新增至檔案中：
 
-       ```
-       
+   ```
        //customfooterlibs.html
-       &lt;sly data-sly-use.clientlib=&quot;core/wcm/components/commons/v1/templates/clientlib.html&quot;>
-       &lt;sly data-sly-test=&quot;${!wcmmode.edit}&quot; data-sly-call=&quot;${clientlib.js @ categories=&amp;#39;core.forms.components.runtime.all&amp;#39;, async=true}&quot; />
-       &lt;/sly>
-       ```
-   
+       <sly data-sly-use.clientlib="core/wcm/components/commons/v1/templates/clientlib.html">
+       <sly data-sly-test="${!wcmmode.edit}" data-sly-call="${clientlib.js @ categories='core.forms.components.runtime.all', async=true}"/>
+       </sly> 
+   ```
+
 1. 開啟 `ui.apps\src\main\content\jcr_root\apps\[your-project]\components\xfpage\customheaderlibs.html` 將下列程式碼新增至檔案中：
 
-       ```
+   ```
        //Customheaderlibs.html
-       &lt;sly data-sly-use.clientlib=&quot;core/wcm/components/commons/v1/templates/clientlib.html&quot;>
-       &lt;sly data-sly-call=&quot;${clientlib.css @ categories=&amp;#39;core.forms.components.runtime.all&amp;#39;}&quot; />
-       &lt;/sly>
-       
-       ```
-   
+       <sly data-sly-use.clientlib="core/wcm/components/commons/v1/templates/clientlib.html">
+       <sly data-sly-call="${clientlib.css @ categories='core.forms.components.runtime.all'}"/>
+       </sly> 
+   ```
+
 1. 開啟 `ui.apps\src\main\content\jcr_root\apps\[your-project]\components\xfpage\customfooterlibs.html` 將下列程式碼新增至檔案中：
 
-       ```
-       
+   ```
        //customfooterlibs.html
-       &lt;sly data-sly-use.clientlib=&quot;core/wcm/components/commons/v1/templates/clientlib.html&quot;>
-       &lt;sly data-sly-test=&quot;${!wcmmode.edit}&quot; data-sly-call=&quot;${clientlib.js @ categories=&amp;#39;core.forms.components.runtime.all&amp;#39;, async=true}&quot; />
-       &lt;/sly>
-       ```
-   
+       <sly data-sly-use.clientlib="core/wcm/components/commons/v1/templates/clientlib.html">
+       <sly data-sly-test="${!wcmmode.edit}" data-sly-call="${clientlib.js @ categories='core.forms.components.runtime.all', async=true}"/>
+       </sly> 
+   ```
+
 1. [執行部署管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/enable-front-end-pipeline.html)，將客戶端資料庫部署到您的 AEM as a Cloud Service 環境。
 
 +++
@@ -257,7 +253,6 @@ AEM FormsCloud Service提供最適化表單容器和Adaptive Forms — 內嵌元
 1. 開啟 **[!UICONTROL 提交]** 標籤。
 
    * 若要設定重新導向URL，請針對「提交」選項選取 **[!UICONTROL 重新導向至URL]** 選項，然後瀏覽並選取AEM Sites頁面，或提供外部頁面的URL。
-
    * 若要設定自訂或感謝訊息，請在[提交]選項中選取 **[!UICONTROL 顯示訊息]** 選項，並在 **[!UICONTROL 訊息內容]** 方塊。 它是RTF文字方塊，您可以使用全熒幕選項來檢視所有可用的RTF專案。
 
 ## 檢視下一個
