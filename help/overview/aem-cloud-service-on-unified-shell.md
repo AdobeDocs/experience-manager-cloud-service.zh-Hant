@@ -1,11 +1,11 @@
 ---
 title: Unified Shell 上的 AEM as a Cloud Service
-description: 瞭解Unified Shell上AEMas a Cloud Service的優勢
+description: 了解有關 Unified Shell 上的 AEM as a Cloud Service 的權益
 exl-id: ea739307-dc99-4621-a239-dbe60ab6b52e
 source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '399'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
