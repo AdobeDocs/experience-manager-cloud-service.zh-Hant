@@ -1,60 +1,60 @@
 ---
-title: 自訂頁面屬性檢視
-description: 瞭解如何由作者檢視及編輯頁面屬性。
+title: 自訂頁面屬性的檢視
+description: 了解作者如何檢視和編輯頁面屬性。
 source-git-commit: f159f0ef86c2b82da4e7308a0892b4947b6e43fb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '364'
-ht-degree: 2%
+ht-degree: 100%
 
 ---
 
 
-# 自訂頁面屬性檢視{#customizing-views-of-page-properties}
+# 自訂頁面屬性的檢視{#customizing-views-of-page-properties}
 
-每個頁面都有一組 [屬性](/help/sites-cloud/authoring/fundamentals/page-properties.md) 使用者可檢視和編輯的專案。 建立頁面（建立檢視）時需要某些專案，稍候可以檢視和編輯其他專案（編輯檢視）。 這些頁面屬性會透過對話方塊(`cq:dialog`)。
+每個頁面都有一組使用者可以檢視和編輯的[屬性](/help/sites-cloud/authoring/fundamentals/page-properties.md)。有些是建立頁面 (建立檢視) 時的要求，其他的則可在稍後階段再檢視和編輯 (編輯檢視)。這些頁面屬性由適當頁面元件的對話框 (`cq:dialog`) 定義和提供。
 
 每個頁面屬性的預設狀態為：
 
-* 在建立檢視中隱藏(例如， **建立頁面** 精靈)
+* 隱藏在建立檢視中 (例如，**建立頁面**&#x200B;精靈)
 
-* 可在編輯檢視中使用(例如， **檢視屬性**)
+* 在編輯檢視 (例如，**檢視屬性**) 中提供
 
-如果需要進行任何變更，則必須明確設定欄位。 這是使用適當的節點屬性來完成：
+如果需要任何變更，則必須特別設定欄位。這會使用適當的節點屬性完成：
 
-* 建立檢視中可用的頁面屬性(例如， **建立頁面** 精靈)：
+* 頁面屬性會在建立檢視 (例如，**建立頁面**&#x200B;精靈) 中提供：
 
-   * 名稱: `cq:showOnCreate`
-   * 類型: `Boolean`
+   * 名稱：`cq:showOnCreate`
+   * 類型：`Boolean`
 
-* 編輯檢視中可用的頁面屬性，例如 **檢視**/**編輯**  **屬性** 選項：
+* 頁面屬性會在編輯檢視 (例如&#x200B;**檢視**/**編輯****屬性**&#x200B;選項) 中提供：
 
-   * 名稱: `cq:hideOnEdit`
-   * 類型: `Boolean`
+   * 名稱：`cq:hideOnEdit`
+   * 類型：`Boolean`
 
 >[!TIP]
 >
->請參閱 [擴充頁面屬性教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/page-properties-technical-video-develop.html) 以取得自訂頁面屬性的指南。
+>如需自訂頁面屬性的指南，請參閱「[擴充頁面屬性教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/page-properties-technical-video-develop.html?lang=zh-Hant)」。
 
-## 設定頁面屬性 {#configuring-your-page-properties}
+## 設定您的頁面屬性 {#configuring-your-page-properties}
 
-您也可以設定頁面元件的對話方塊並套用適當的節點屬性，以設定可用的欄位。
+設定頁面元件的對話框並套用適當的節點屬性，還可以設定可用的欄位。
 
-例如，預設情況下 [**建立頁面** 精靈](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page) 顯示分組在下列位置的欄位： **更多標題和說明**. 若要隱藏這些設定，請執行下列動作：
+例如，預設情況下，[**建立頁面**&#x200B;精靈](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page)會顯示在&#x200B;**更多標題和說明**&#x200B;下面分組的欄位。若要隱藏這些，您可以設定：
 
-1. 在下建立您的頁面元件 `/apps`.
-1. 建立覆寫(使用 *對話方塊差異* 提供者： [Sling資源合併](/help/implementing/developing/introduction/sling-resource-merger.md))用於 `basic` 區段；例如：
+1. 在 `/apps` 下面建立您的頁面元件。
+1. 針對頁面元件的 `basic` 區段建立覆寫 (使用由 [Sling 資源合併](/help/implementing/developing/introduction/sling-resource-merger.md)所提供的&#x200B;*對話框差異*)；例如：
 
    ```xml
    <your-page-component>/cq:dialog/content/items/tabs/items/basic
    ```
 
-1. 設定 `path` 屬性： `basic` 指向基本標籤的覆寫（也請參閱下一個步驟）。 例如：
+1. 在 `basic` 上設定 `path` 屬性，以指向基本索引標籤的覆寫 (另請參閱下一個步驟)。例如：
 
    ```xml
    /apps/demos/components/page/tabs/basic
    ```
 
-1. 建立覆寫 `basic` - `moretitles` 區段中的路徑，例如：
+1. 在相對應的路徑建立 `basic` - `moretitles` 區段的覆寫；例如：
 
    ```xml
    /apps/demos/components/page/tabs/basic/items/column/items/moretitles
@@ -62,18 +62,18 @@ ht-degree: 2%
 
 1. 套用適當的節點屬性：
 
-   * **名稱**: `cq:showOnCreate`
-   * **型別**： `Boolean`
-   * **值**: `false`
+   * **名稱**：`cq:showOnCreate`
+   * **類型**：`Boolean`
+   * **值**：`false`
 
-   此 **更多標題和說明** 區段不會再顯示於 **建立頁面** 精靈。
+   「**更多標題和說明**」區段即不會再顯示在「**建立頁面**」精靈中。
 
 >[!NOTE]
 >
->設定要與即時副本一起使用的頁面屬性時，請參閱檔案 [擴充多站點管理員](/help/implementing/developing/extending/msm.md#configuring-msm-locks-on-page-properties) 以取得更多詳細資料。
+>設定和 Live Copy 搭配使用的頁面屬性時，如需更多詳細資料，請參閱文件「[擴充多網站管理員](/help/implementing/developing/extending/msm.md#configuring-msm-locks-on-page-properties)」。
 
 ## 頁面屬性的設定範例 {#sample-configuration-of-page-properties}
 
-這個範例示範對話方塊的diff技巧。 [Sling資源合併](/help/implementing/developing/introduction/sling-resource-merger.md) 包含使用 [`sling:orderBefore`](/help/implementing/developing/introduction/sling-resource-merger.md#properties). 它也會說明兩者搭配使用 `cq:showOnCreate` 和 `cq:hideOnEdit`.
+本範例會示範 [Sling 資源合併](/help/implementing/developing/introduction/sling-resource-merger.md)的對話框差異技術，包括 [`sling:orderBefore`](/help/implementing/developing/introduction/sling-resource-merger.md#properties) 的使用。還會說明 `cq:showOnCreate` 和 `cq:hideOnEdit` 兩者的使用。
 
-您可以在此頁面找到程式碼： [GitHub。](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-page-dialog)
+您可以在以下位置找到此頁面的程式碼：[GitHub。](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-page-dialog)
