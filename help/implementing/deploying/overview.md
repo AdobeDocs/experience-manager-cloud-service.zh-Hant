@@ -1,12 +1,12 @@
 ---
 title: 部署至 AEM as a Cloud Service
-description: 瞭解部署至AEMas a Cloud Service的基礎和最佳實務
+description: 了解部署至 AEM as a Cloud Service 的基礎知識和最佳做法
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
 source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3470'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
