@@ -3,9 +3,9 @@ title: 計畫和計畫類型
 description: 了解 Cloud Manager 的階層以及不同類型的計畫如何適應其結構以及它們之間的差異。
 exl-id: 507df619-a5b5-419a-9e38-db77541425a2
 source-git-commit: fc14675e47e7a61bf36acb9a16756a593189b702
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '520'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -53,9 +53,9 @@ $ git clone {URL}
 
 ## 計畫類型 {#program-types}
 
-使用者可以建立 **生產** 方案或 **沙箱** 程式。
+使用者可以建立&#x200B;**生產**&#x200B;計畫或&#x200B;**沙箱**&#x200B;計畫。
 
-* **生產計畫**&#x200B;是為啟用網站的即時流量而建立的。
+* **生產計畫**&#x200B;是為網站啟動即時流量而建立。
    * 如需更多詳細資訊，請參閱[生產計畫簡介](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md)。
 * **沙箱計畫**&#x200B;通常建立的目的是提供培訓、執行示範、培訓、POC 或文件。
    * 沙箱環境並不代表能承載即時流量，並且會有生產計畫沒有的限制。
