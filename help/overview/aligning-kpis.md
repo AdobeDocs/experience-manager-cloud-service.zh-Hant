@@ -1,11 +1,11 @@
 ---
 title: 調整 KPI
-description: 調整 KPI
+description: 瞭解如何為您的AEM實作選擇正確的KPI
 exl-id: d338a7bd-adfe-486a-badf-348acd6018d0
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: d1da8559da856e028a5dcad1d0c0b2c00176af0c
 workflow-type: tm+mt
-source-wordcount: '487'
-ht-degree: 100%
+source-wordcount: '496'
+ht-degree: 97%
 
 ---
 

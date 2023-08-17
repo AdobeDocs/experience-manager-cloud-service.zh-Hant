@@ -1,11 +1,11 @@
 ---
 title: 內容傳遞流程概觀
-description: 內容傳遞流程概觀
+description: 進一步瞭解內容傳遞資料流程以及如何發佈您的內容
 exl-id: fe42fb9e-cdf4-43e1-b688-7cecf4124fa5
-source-git-commit: f0edd0e3deeba89dcbd2dc1a07859138b24e2220
-workflow-type: ht
-source-wordcount: '207'
-ht-degree: 100%
+source-git-commit: d1da8559da856e028a5dcad1d0c0b2c00176af0c
+workflow-type: tm+mt
+source-wordcount: '217'
+ht-degree: 93%
 
 ---
 
