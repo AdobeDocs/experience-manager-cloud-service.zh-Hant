@@ -6,7 +6,7 @@ hidefromtoc: true
 source-git-commit: ca3c4bae2e652d75190d68c76b1dd4e09239f16c
 workflow-type: tm+mt
 source-wordcount: '465'
-ht-degree: 0%
+ht-degree: 7%
 
 ---
 
@@ -14,9 +14,9 @@ ht-degree: 0%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_cug_migration"
->title="移轉封閉使用者群組"
->abstract="封閉使用者群組(CUG)的移轉目前需要一些檢查與步驟，才能在移轉後正常運作。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/closed-user-groups.html" text="AEM中的封閉使用者群組"
+>title="封閉使用者群組移轉"
+>abstract="封閉使用者群組 (CUG) 的移轉目前需要執行一些檢查和步驟，以便在移轉後正常運作。"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/closed-user-groups.html" text="AEM 中的封閉使用者群組"
 
 目前，封閉使用者群組(CUG)需要一些額外的步驟，才能在移轉的目標環境中正常運作。  本檔案將說明相關情境，以及要求他們以預期方式保護節點所需的步驟。
 
