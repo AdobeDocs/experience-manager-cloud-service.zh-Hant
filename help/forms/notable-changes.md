@@ -1,11 +1,11 @@
 ---
-title: AEM 6.5 Forms與AEM雲端服務之間的差異
-description: 您是Experience Manager Forms使用者，且想要升級至Adobe Experience Manager Formsas a Cloud Service嗎？ 比較AEM 6.5 Forms和AEM Cloud Service，並在升級或移轉至Cloud Service之前瞭解最顯著的變更。
+title: AEM 6.5 Forms與AEMCloud Service之間的差異
+description: 您是Experience Manager Forms使用者，且想要升級至Adobe Experience Manager Formsas a Cloud Service嗎？ 比較AEM 6.5 Forms和AEMCloud Services，並在升級或移轉至Cloud Service之前瞭解最顯著的變更。
 exl-id: 46fcc1b4-8fd5-40e1-b0fc-d2bc9df3802e
 contentOwner: khsingh
-source-git-commit: 57acac078805bc195cb10c1e94462d5aa077b1af
+source-git-commit: fa71eb6317314dc8c3540cd0ebb8afaa75d55a59
 workflow-type: tm+mt
-source-wordcount: '1417'
+source-wordcount: '1343'
 ht-degree: 1%
 
 ---
@@ -39,7 +39,7 @@ ht-degree: 1%
 
 * 電子郵件預設僅支援HTTP和HTTP通訊協定。 [聯絡支援團隊](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html#sending-email) 啟用傳送電子郵件的連線埠，並為您的環境啟用SMTP通訊協定。
 
-## 本土化
+## 本地化
 
 * 本地化的最適化Forms的URL慣例現在支援在URL中指定地區設定。 新的URL慣例可在Dispatcher或CDN上快取當地語系化的表單。 在Cloud Service環境中，使用URL格式 `http://host:port/content/forms/af/<afName>.<locale>.html` 請求最適化表單的本地化版本，而非 `http://host:port/content/forms/af/afName.html?afAcceptLang=<locale>`.
 
@@ -60,11 +60,11 @@ ht-degree: 1%
 
 * **XSD式最適化Forms：** 您可以使用XDP範本來設計記錄檔案的範本。 此服務不支援XFA型最適化Forms
 
-* **元件**：您可以使用 [最適化Forms核心元件](/help/forms/creating-adaptive-form-core-components.md) 以設計您的表單。 這些元件以WCM核心元件為基礎，遵循BEM標準，並可輕鬆自訂。 此服務不支援表單內簽名體驗，也不包含最適化表單的「摘要」和「驗證」元件
+* **元件**：此服務不支援表單內簽名體驗，也不包含最適化表單的「摘要」和「驗證」元件。
+
+* **精靈介面：** 您可以使用 [精靈介面](/help/forms/creating-adaptive-form-core-components.md) 快速設定常用選項並輕鬆建立最適化表單。
 
 ## 表單入口網站
-
-* 您可以使用Forms Portal的「搜尋與清單製作程式」、「草稿與提交」和「連結」元件，為登入使用者列出表單。 未提供開箱即用(OOTB)的匿名使用Forms Portal支援。 您可以自訂Forms入口網站，以啟用向未登入使用者顯示表單的功能。
 
 * 此服務沒有保留草稿和已提交的最適化Forms的中繼資料。
 
@@ -85,7 +85,7 @@ Formsas a Cloud Service提供Document Generation和Document Manipulation RESTful
 
 ## 資料整合（表單資料模型）
 
-* 此服務也支援JDBC聯結器、Microsoft Dynamics、SalesForce、以SOAP為基礎的Web服務，以及支援OData的服務。
+* 此服務也支援Microsoft Dynamics、SalesForce、以SOAP為基礎的Web服務，以及支援OData的服務。
 
 * 您也可以連線AEM使用者設定檔，以擷取和更新使用者資訊。
 
@@ -96,8 +96,6 @@ Formsas a Cloud Service提供Document Generation和Document Manipulation RESTful
 
 ## 電子簽章
 
-* 此服務提供與Adobe Sign的OOTB整合，並支援電子簽章的DocuSign。
-
 * 此服務也支援Adobe Sign角色。 您可以在最適化Forms編輯器中設定角色，讓業務使用者輕鬆設定簽署工作流程。
 
 
@@ -105,7 +103,7 @@ Formsas a Cloud Service提供Document Generation和Document Manipulation RESTful
 
 * 您可以使用AEM 6.5 Forms環境：
 
-   * 將您的XDP型表單轉譯為HTML5 Forms。 此服務不支援HTML5 Forms (Mobile Forms)。
+   * 將您的XDP型表單轉譯為HTML5 Forms。 此服務不支援HTML5 Forms。
 
    * 離線擷取資料，並在下次您回到線上時使用 [AEM Forms工作區](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-aem-forms-workspace/introduction-html-workspace.html) 應用程式。
 
