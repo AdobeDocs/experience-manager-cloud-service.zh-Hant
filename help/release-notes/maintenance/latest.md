@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的目前維護版本發行說明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的目前維護版本發行說明。'
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: cb963a233b5afd4497704233db7f51c37563d0f9
+source-git-commit: 25af1b0d99f7c5971245f99a95c74d04ca943936
 workflow-type: tm+mt
-source-wordcount: '620'
-ht-degree: 22%
+source-wordcount: '661'
+ht-degree: 21%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 22%
 - SITES-13906： GraphQL — 升級至graphql-java 20.1。
 - SITES-8972： GraphQL — 在JSON中新增分項清單資料型別的選項標籤。
 - SITES-9689： GraphQL — 在JSON中新增內容參考資料型別的標題和說明。
-- SITES-13052：內容片段 — 將內容片段匯出至Adobe Target
+- sites-13052：內容片段 — 將內容片段匯出至Adobe Target。
 
 ### 已修正的問題 {#fixed-issues-13099}
 
@@ -54,7 +54,9 @@ ht-degree: 22%
 
 ### 已知問題 {#known-issues-13099}
 
-- SITES-15359：變數名稱模式無法正確比對具有 ```'_'``` 資源名稱中的。
+- SITES-15359：內容片段 — 變數名稱模式無法正確比對具有 ```'_'``` 資源名稱中的。
+- SITES-15463：網站範本 — 無法發佈範本（暫時替代措施：使用發佈主控台）。
+- CQ-4354191：工作流程 — 由於nt：unstructured節點上存在復寫中繼資料，自訂啟動器可能會觸發許多次（因應措施：更新啟動器以排除復寫中繼資料屬性以避免重疊）。
 
 ### 內嵌技術 {#embedded-tech-13099}
 
