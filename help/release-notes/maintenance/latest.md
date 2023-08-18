@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的目前維護版本發行說明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的目前維護版本發行說明。'
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: 25af1b0d99f7c5971245f99a95c74d04ca943936
+source-git-commit: 6e491a68dedc55609349db75ac13691aeda2f0dc
 workflow-type: tm+mt
-source-wordcount: '661'
-ht-degree: 21%
+source-wordcount: '673'
+ht-degree: 20%
 
 ---
 
@@ -56,6 +56,7 @@ ht-degree: 21%
 
 - SITES-15359：內容片段 — 變數名稱模式無法正確比對具有 ```'_'``` 資源名稱中的。
 - SITES-15463：網站範本 — 無法發佈範本（暫時替代措施：使用發佈主控台）。
+- Forms-10444：最適化Forms範本 — 無法發佈範本（因應措施：使用發佈主控台）。
 - CQ-4354191：工作流程 — 由於nt：unstructured節點上存在復寫中繼資料，自訂啟動器可能會觸發許多次（因應措施：更新啟動器以排除復寫中繼資料屬性以避免重疊）。
 
 ### 內嵌技術 {#embedded-tech-13099}
