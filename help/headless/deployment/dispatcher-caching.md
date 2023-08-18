@@ -2,10 +2,10 @@
 title: GraphQL持續查詢 — 啟用Dispatcher中的快取
 description: Dispatcher 是 Adobe Experience Manager 發佈環境前面的快取和安全層。您可以在AEM Headless中啟用持續查詢的快取。
 feature: Dispatcher, GraphQL API
-source-git-commit: 6f07089812e587834784aeda7e62d3e4614f45a1
+source-git-commit: 0066bfba3a403791c6a35b1280ae04b576315566
 workflow-type: tm+mt
-source-wordcount: '301'
-ht-degree: 5%
+source-wordcount: '317'
+ht-degree: 10%
 
 ---
 
@@ -23,6 +23,10 @@ Dispatcher中預設不會啟用持續查詢的快取。 無法啟用預設值，
 >Dispatcher不會快取 `Vary` 標頭。
 >
 >可以在Dispatcher中啟用其他CORS相關標頭的快取，但是當有多個CORS來源時，該功能可能還不夠。
+
+>[!NOTE]
+>
+>如需 Dispatcher 的詳細文件，請參閱 [Dispatcher 指南](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=zh-Hant)。
 
 ## 啟用持續查詢的快取 {#enable-caching-persisted-queries}
 
