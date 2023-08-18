@@ -1,14 +1,14 @@
 ---
 title: Assets as a [!DNL Cloud Service] 簡介
-description: Assets as a [!DNL Cloud Service] 的新功能。
-contentOwner: AG
+description: 瞭解Experience Manager Assets as a的新增功能和優點 [!DNL Cloud Service]. 適用於企業的PaaS雲端原生解決方案。
+contentOwner: AK
 feature: Asset Management
 role: User,Leader,Architect
 exl-id: 4437f214-d058-4975-8b8f-869a12c8103b
-source-git-commit: 5a7938d5e52388516f8b66bbcf8ffdee332a51a3
-workflow-type: ht
-source-wordcount: '740'
-ht-degree: 100%
+source-git-commit: d663c258a83473ec8d3c68bc5683955003d889c7
+workflow-type: tm+mt
+source-wordcount: '752'
+ht-degree: 97%
 
 ---
 

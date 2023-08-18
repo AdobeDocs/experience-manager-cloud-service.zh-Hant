@@ -1,14 +1,14 @@
 ---
-title: 為資產加上浮水印
-description: 為您的數位資產新增浮水印。
+title: 如何在AEM中為資產加上浮水印？
+description: 瞭解如何在AEM中為資產新增數位浮水印。 浮水印可協助使用者驗證資產的真實性和版權所有權。
 contentOwner: AG
 feature: Asset Management,Publishing
 role: User,Admin
 exl-id: 210f8925-bd15-4b4a-8714-5a1486eeb49e
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: d663c258a83473ec8d3c68bc5683955003d889c7
 workflow-type: tm+mt
-source-wordcount: '295'
-ht-degree: 14%
+source-wordcount: '318'
+ht-degree: 15%
 
 ---
 
@@ -17,21 +17,21 @@ ht-degree: 14%
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
 | AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/watermarking.html) |
-| AEM as a Cloud Service  | 本文 |
+| AEM as a Cloud Service  | 本文章 |
 
-[!DNL Adobe Experience Manager Assets] 可讓您新增數位浮水印至影像。 [!DNL Assets] 支援將影像套用為其他影像檔案的浮水印。 浮水印可協助使用者驗證資產的真實性和版權所有權。 此外，浮水印可用於表示檔案的狀態，如機密性、草稿、有效性等。
+[!DNL Adobe Experience Manager Assets] 可讓您新增數位浮水印至影像。 [!DNL Assets] 支援將影像作為浮水印套用至其他影像檔案。 浮水印可協助使用者驗證資產的真實性和版權所有權。 此外，浮水印可用於表示檔案的狀態，如機密、草稿、有效性等。
 
 進行設定 [!DNL Experience Manager] 若要為資產加上浮水印：
 
-1. PNG檔案會套用為浮水印。 將此檔案上傳至您的DAM存放庫。
+1. PNG檔案會套用為浮水印。 將此檔案上傳到您的DAM存放庫。
 
-1. 導覽至 **[!UICONTROL 「工具>資產>資產設定」]**.
+1. 瀏覽至 **[!UICONTROL 「工具>資產>資產設定」]**.
 
 1. 按一下 **[!UICONTROL 系統浮水印設定檔]**.
 
-1. 於 [!UICONTROL 系統浮水印設定檔頁面]，請指定在步驟1上傳至DAM存放庫的影像路徑。
+1. 在 [!UICONTROL 系統浮水印設定檔頁面]，請指定在步驟1上傳至DAM存放庫的影像路徑。
 
-1. 在中，指定相對於轉譯寬度的浮水印比例，範圍從0.0到1.0 **[!UICONTROL 縮放]** 欄位。
+1. 在「 」中指定相對於轉譯寬度的浮水印比例，範圍從0.0到1.0 **[!UICONTROL 縮放]** 欄位。
 
 1. 按一下「**[!UICONTROL 儲存]**」。
 
@@ -39,22 +39,22 @@ ht-degree: 14%
 
    >[!NOTE]
    >
-   >如果您已設定系統浮水印設定檔，使用 `com.adobe.cq.assetcompute.impl.profile.WatermarkingProfileServiceImpl.cfg.json` 設定檔案（OSGi設定），您可繼續使用，但Adobe建議使用新方法。
+   >如果您已使用設定系統浮水印設定檔 `com.adobe.cq.assetcompute.impl.profile.WatermarkingProfileServiceImpl.cfg.json` 設定檔案（OSGi設定），您可繼續使用，但Adobe建議使用新方法。
 
 
 1. [建立處理設定檔](/help/assets/asset-microservices-configure-and-use.md#create-custom-profile) 以使用資產微服務來套用浮水印。
 
    ![用於建立浮水印的資產處理設定檔](assets/watermark-processing-profile.png)
 
-   確保您啟用 **[!UICONTROL 浮水印]** 在建立處理設定檔時切換。
+   請確定您已啟用 **[!UICONTROL 浮水印]** 在建立處理設定檔時切換。
 
-1. [將處理設定檔套用至資料夾](/help/assets/asset-microservices-configure-and-use.md#use-profiles) 以建立含水印的資產。
+1. [將處理設定檔套用至資料夾](/help/assets/asset-microservices-configure-and-use.md#use-profiles) 以建立含浮水印的資產。
 
 ## 提示和限制 {#tips-limitations-bestpractices}
 
-* 您可以使用單一設定來浮水印顯示所有資產。 只有一個影像用於浮水印，而且其寬度是固定的。
-* 您可將浮水印放在中央而不需平鋪。
-* 不支援文字型浮水印。
+* 您可以使用單一設定來浮水印顯示所有資產。 只有一個影像用於浮水印，其寬度是固定的。
+* 您可以將浮水印放在中央而不需要拼貼。
+* 不支援文字式浮水印。
 
 **另請參閱**
 

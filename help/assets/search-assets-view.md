@@ -1,12 +1,12 @@
 ---
-title: 搜尋和探索  [!DNL Assets view] 中的資產
-description: 搜尋和探索  [!DNL Assets view] 中的資產。
+title: 瞭解如何搜尋和探索中的資產 [!DNL Assets view]？
+description: 瞭解如何在AEM Assets檢視中搜尋和探索資產。 強大的搜尋功能可讓您快速探索合適的資產，協助您改善內容速度。
 role: User
 exl-id: be9597a3-056c-436c-a09e-15a03567c85a
-source-git-commit: ed7ce8be17ad1445132b9aa38a0efa84ffa70fdf
+source-git-commit: d663c258a83473ec8d3c68bc5683955003d889c7
 workflow-type: tm+mt
-source-wordcount: '897'
-ht-degree: 94%
+source-wordcount: '924'
+ht-degree: 93%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 94%
 >abstract="透過指定搜尋列中的關鍵字或根據資產的狀態、檔案類型、MIME 類型、大小、建立、修改和到期日期篩選資產，來搜尋資產。您除了標準篩選器之外，還可以套用自訂篩選器。您可以將篩選的結果另存為「已儲存搜尋」或「智慧型集合」。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/manage-collections.html?lang=zh-Hant#manage-smart-collection" text="建立智慧型集合"
 
-[!DNL Assets view] 的預設功能即提供有效的搜尋。由於是全文檢索搜尋，因此十分全面。強大的搜尋功能可讓您快速探索合適的資產，協助您改善內容速度。[!DNL Assets view] 提供全文檢索搜尋，甚至還透過如智慧型標記、標題、建立的日期和版本等中繼資料進行搜尋。
+[!DNL Assets view] 的預設功能即提供有效的搜尋。由於是全文檢索搜尋，因此十分全面。強大的搜尋功能可讓您快速探索合適的資產，協助您改善內容速度。[!DNL Assets view] 提供全文檢索搜尋，甚至還透過如智慧標記、標題、建立的日期和版本等中繼資料進行搜尋。
 
 若要搜尋資產，
 
@@ -48,7 +48,7 @@ ht-degree: 94%
 
 * 有效日期：根據`Expired`資產狀態來篩選搜尋結果。此外，您可以指定資產的有效日期範圍以進一步篩選搜尋結果。
 
-* 自訂篩選器： [新增自訂篩選器](#custom-filters) 至「資產」檢視使用者介面。 除了標準篩選器之外，您還可以套用這些自訂篩選器來縮小您的搜尋結果。
+* 自訂篩選器： [新增自訂篩選器](#custom-filters) 至資產檢視使用者介面。 除了標準篩選器之外，您還可以套用這些自訂篩選器來縮小您的搜尋結果。
 
 您可以依照 `Name`、`Relevancy`、`Size`、`Modified` 和 `Created` 的遞增或遞減順序排序搜尋的資產。
 
@@ -144,9 +144,9 @@ When userA is searching and userB add an asset that matches search results, will
 
 ## 後續步驟 {#next-steps}
 
-* [觀看在「資產」檢視中搜尋資產的相關影片](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/using.html)
+* [觀看在「資產」檢視中搜尋資產的相關影片](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/using.html?lang=zh-Hant)
 
-* 使用提供產品意見回饋 [!UICONTROL 意見反應] 「資產」檢視使用者介面中可用的選項
+* 使用資產檢視使用者介面所提供的[!UICONTROL 意見回饋]選項提供產品意見回饋
 
 * 若要提供文件意見回饋，請使用右側邊欄提供的[!UICONTROL 編輯此頁面]![來編輯頁面](assets/do-not-localize/edit-page.png)或[!UICONTROL 記錄問題]![來建立 GitHub 問題](assets/do-not-localize/github-issue.png)
 

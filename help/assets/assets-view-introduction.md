@@ -1,10 +1,10 @@
 ---
 title: 新的AEM Assets UI或AEM中的「資產」檢視對您有何好處？
-description: 深入瞭解新的AEM Assets UI或AEM中的新資產檢視的主要優點
+description: 深入瞭解新的AEM Assets UI或AEM中的新資產檢視的主要優點。 Adobe 利用其在強化行銷和創意專業人士能力的專業知識，推出了改變遊戲規則的全新使用者體驗。
 mini-toc-levels: 3
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 2c8bac8627ed660d2780f93f4018c8fa980e569a
 workflow-type: tm+mt
-source-wordcount: '1116'
+source-wordcount: '1132'
 ht-degree: 66%
 
 ---
