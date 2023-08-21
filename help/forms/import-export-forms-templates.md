@@ -1,18 +1,16 @@
 ---
-title: 匯入、匯出及組織最適化Forms、PDF forms和其他資產
-seo-title: Learn to import, export, and organize Adaptive Forms, PDF forms, and other assets on an[!DNL AEM Forms] instance
+title: 匯入或匯出最適化Forms和AEM Forms資產
 description: 是否要將最適化Forms和資產移轉至AEM執行個體？ 在此處瞭解如何從匯入和匯出最適化Forms、PDF forms、主題和其他支援資產 [!DNL AEM Forms] 執行個體。
 seo-description: Looking to migrate Adaptive Forms and assets to and from an AEM instances? Learn here how to import and export Adaptive Forms, PDF forms, themes, and other supporting assets from an [!DNL AEM Forms] instance.
 topic-tags: forms-manager
-exl-id: f5105fb7-b8c0-4656-8095-b21d392746c0
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
 workflow-type: tm+mt
-source-wordcount: '1210'
-ht-degree: 1%
+source-wordcount: '1206'
+ht-degree: 0%
 
 ---
 
-# 匯入、匯出及組織最適化表單、PDF 表單和其他資產{#importing-and-exporting-assets-to-aem-forms}
+# 匯入或匯出最適化Forms和AEM Forms資產 {#importing-and-exporting-assets-to-aem-forms}
 
 您可以移動最適化Forms和相關資產，例如最適化表單主題、表單資料模型、最適化表單範本、檔案片段和PDF forms，在 [!DNL AEM Forms] 執行個體。 您可以匯入和匯出CRX封裝或二進位檔案格式的資產。
 

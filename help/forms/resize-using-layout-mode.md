@@ -1,18 +1,18 @@
 ---
-title: 如何使用版面模式調整最適化Forms元件的大小？
+title: 使用版面模式調整最適化Forms的元件大小
 description: 使用版面配置模式中可用的回應式格線來定義元件位置。 瞭解如何存取版面模式、調整元件大小、調整面板大小、定義面板的多欄版面、為舊回應式版面啟用新回應式格線，以及為具有舊回應式版面的表單停用版面模式。
 feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 53896a8e-4568-460b-bca7-994baea0c8eb
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
 workflow-type: tm+mt
-source-wordcount: '1156'
-ht-degree: 7%
+source-wordcount: '1157'
+ht-degree: 6%
 
 ---
 
-# 使用版面模式調整元件大小 {#use-layout-mode-to-resize-components}
+# 使用版面模式調整最適化Forms的元件大小 {#use-layout-mode-to-resize-components}
 
 <span class="preview">Adobe 建議使用新式且可擴充的資料擷取[核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)，用來[建立新的最適化表單](/help/forms/creating-adaptive-form-core-components.md)或[將最適化表單新增到 AEM Sites 頁面](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)。這些元件代表最適化表單建立方面的重大進步，可確保令人印象深刻的使用者體驗。本文會介紹使用基礎元件編寫最適化表單的舊方法。</span>
 

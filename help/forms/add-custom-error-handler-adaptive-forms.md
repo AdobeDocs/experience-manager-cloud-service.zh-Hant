@@ -1,20 +1,19 @@
 ---
-title: 在適用於AEM的最適化Forms的最適化Forms中新增自訂錯誤處理常式
-seo-title: Error Handlers in Adaptive Forms for AEM Adaptive Forms
+title: 在AEM Adaptive Forms中新增自訂錯誤處理常式
 description: AEM Forms使用設定為叫用外部服務的REST端點，為表單提供現成的成功和錯誤處理常式。 您可以在AEM最適化表單中新增預設錯誤處理常式以及自訂錯誤處理常式。
 seo-description: Error handler function and Rule Editor in Adaptive Forms helps you to effectively manage and customize error handling. You can add a default error handler as well as custom error handler in an AEM Adaptive Form.
 keywords: 新增自訂錯誤處理程式、新增預設錯誤處理程式、在表單中新增錯誤處理程式、使用規則編輯器的叫用服務來新增自訂錯誤處理程式、設定規則編輯器來新增自訂錯誤處理程式、使用規則編輯器新增自訂錯誤處理程式
 contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms
-source-git-commit: bb2ee07f8750c15959ecdaa65f0932b05edfcd39
+source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
 workflow-type: tm+mt
-source-wordcount: '1983'
+source-wordcount: '1982'
 ht-degree: 5%
 
 ---
 
-# Adaptive Forms中的錯誤處理常式 {#error-handlers-in-adaptive-form}
+# 在AEM Adaptive Forms中新增自訂錯誤處理常式 {#error-handlers-in-adaptive-form}
 
 <span class="preview">Adobe 建議使用新式且可擴充的資料擷取[核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)，用來[建立新的最適化表單](/help/forms/creating-adaptive-form-core-components.md)或[將最適化表單新增到 AEM Sites 頁面](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)。這些元件代表最適化表單建立方面的重大進步，可確保令人印象深刻的使用者體驗。本文會介紹使用基礎元件編寫最適化表單的舊方法。</span>
 

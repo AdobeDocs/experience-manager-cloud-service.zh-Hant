@@ -1,15 +1,14 @@
 ---
-title: 設定Adobe Experience Manager Formsas a Cloud Service的本機開發環境
+title: 設定AEM Forms的本機開發環境
 description: 設定Adobe Experience Manager Formsas a Cloud Service的本機開發環境
-exl-id: 12877a77-094f-492a-af58-cffafecf79ae
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
 workflow-type: tm+mt
-source-wordcount: '2816'
+source-wordcount: '2807'
 ht-degree: 3%
 
 ---
 
-# 設定本機開發環境和初始開發專案 {#overview}
+# 設定AEM Forms的本機開發環境 {#overview}
 
 當您設定 [!DNL  Adobe Experience Manager Forms] as a [!DNL  Cloud Service] 環境，您可在雲端上設定開發、測試和生產環境。 此外，您也可以設定本機開發環境。
 

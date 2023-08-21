@@ -1,23 +1,23 @@
 ---
-title: 如何將工作流程指派給其他使用者、傳送電子郵件、在工作流程中使用Adobe Sign？
+title: 使用以表單為中心的AEM工作流程自動化業務流程
 description: 以Forms為中心的工作流程可讓您快速建立最適化Forms型工作流程。 您可以使用Adobe Sign對檔案進行電子簽章、建立表單式業務流程、擷取資料並將其傳送到多個資料來源，以及傳送電子郵件通知
 exl-id: e1403ba6-8158-4961-98a4-2954b2e32e0d
 google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
 workflow-type: tm+mt
-source-wordcount: '7204'
+source-wordcount: '7192'
 ht-degree: 1%
 
 ---
 
-# 以Forms為中心的AEM工作流程 — 步驟參考 {#forms-centric-workflow-on-osgi-step-reference}
+# 使用以Forms為中心的AEM Workflows — 步驟參考來自動化業務流程{#forms-centric-workflow-on-osgi-step-reference}
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
 | AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/aem-forms-workflow-step-reference.html) |
 | AEM as a Cloud Service  | 本文章 |
 
-您可以使用工作流程模型，將商業邏輯轉換為自動化重複式處理。 模型可協助您定義並執行一系列步驟。 您也可以定義模型屬性，例如工作流程是暫時的或使用多個資源。 您可以 [在模型中加入各種AEM Workflow步驟以實現商業邏輯](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=zh-Hant#extending-aem).
+您使用工作流程模型。 模型可協助您定義並執行一系列步驟。 您也可以定義模型屬性，例如工作流程是暫時的或使用多個資源。 您可以 [在模型中加入各種AEM Workflow步驟以實現商業邏輯](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=zh-Hant#extending-aem).
 
 ## 以Forms為中心的步驟 {#forms-workflow-steps}
 

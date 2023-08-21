@@ -1,15 +1,14 @@
 ---
-title: 在 AEM Forms as a Cloud Service 和本地開發環境中啟用調適型表單核心元件
-seo-title: Step-by-Step Guide for enabling Adaptive Forms Core Components on AEM Forms as a Cloud Service and local development environment
+title: 啟用最適化Forms核心元件
 description: 透過我們的步驟指南，了解如何在 AEM Forms as a Cloud Service 中啟用調適型表單核心元件。 我們的教學課程將引導您完成整個程序，讓您可以輕鬆地為您的 AEM Forms 環境啟用這項強大功能。
 seo-description: Learn how to enable Adaptive Forms Core Components on AEM Forms as a Cloud Service with our step-by-step guide. Our tutorial walks you through the process, making it easy to enable this powerful feature for your AEM Forms environment.
 contentOwner: Khushwant Singh
 docset: CloudService
 role: Admin
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
 workflow-type: tm+mt
-source-wordcount: '1042'
-ht-degree: 89%
+source-wordcount: '1031'
+ht-degree: 88%
 
 ---
 

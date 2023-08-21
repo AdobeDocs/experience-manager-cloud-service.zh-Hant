@@ -1,18 +1,18 @@
 ---
-title: 根據核心元件在最適化表單中使用Google reCAPTCHA
+title: 在AEM最適化表單中使用Google reCAPTCHA
 description: 使用Google reCAPTCHA服務輕鬆增強表單安全性。 內的逐步指南！
 topic-tags: Adaptive Forms, author
 hide: true
 hidefromtoc: true
 Keywords: Google reCAPTCHA service, Adaptive Forms, CAPTCHA challenge, Bot prevention, Core Components, Form submission security, Form spam prevention
-source-git-commit: b81acc99b1d90b05b7c341253e7cbb46c6ea12ae
+source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
 workflow-type: tm+mt
-source-wordcount: '878'
-ht-degree: 0%
+source-wordcount: '874'
+ht-degree: 1%
 
 ---
 
-# 根據核心元件在最適化Forms中使用reCAPTCHA {#using-reCAPTCHA-in-adaptive-forms}
+# 在AEM最適化表單中使用Google reCAPTCHA {#using-reCAPTCHA-in-adaptive-forms}
 
 CAPTCHA （完全自動化公用圖靈測試來區分電腦和人之間的差異）是一種常用於線上交易的程式，以區分人和自動化程式或機器人。 這會帶來挑戰，並評估使用者的回應，以判斷其是否為人類或機器人與網站互動。 它可防止使用者在測試失敗時繼續進行，並透過防止機器人張貼垃圾郵件或惡意目的來確保線上交易的安全。
 
@@ -43,7 +43,7 @@ CAPTCHA （完全自動化公用圖靈測試來區分電腦和人之間的差異
          1. 點選 **[!UICONTROL 儲存並關閉]** 以儲存組態並結束對話方塊。
 
 1. 設定Cloud Service：
-   1. 在您的AEM編寫執行個體上，前往 ![tools-1](assets/tools-1.png) > **[!UICONTROL Cloud Services]** 然後點選 **[!UICONTROL reCAPTCHA]**.
+   1. 在您的AEM編寫執行個體上，前往 ![tools-1](assets/tools-1.png) > **[!UICONTROL Cloud Service]** 然後點選 **[!UICONTROL reCAPTCHA]**.
    1. 選取在前一節中建立或更新的「設定容器」。 點選「**[!UICONTROL 建立]**」。
    1. 指定 **[!UICONTROL 標題]**， **[!UICONTROL 名稱]**， **[!UICONTROL 網站金鑰]**、和 **[!UICONTROL 秘密金鑰]** reCAPTCHA服務（在步驟1取得）。 點選「**[!UICONTROL 建立]**」。
 
@@ -55,7 +55,7 @@ CAPTCHA （完全自動化公用圖靈測試來區分電腦和人之間的差異
    在設定reCAPTCHA服務後，就可在調適型表單中使用。 如需詳細資訊，請參閱 [在最適化表單中使用Google reCAPTCHA](#using-reCAPTCHA).
 
 
-## 在最適化表單中使用Google reCAPTCHA {#using-reCAPTCHA}
+## 在最適化表單中使用 Google reCAPTCHA {#using-reCAPTCHA}
 
 若要在最適化Forms中使用reCAPTCHA：
 

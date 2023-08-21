@@ -1,15 +1,14 @@
 ---
-title: 如何在Experience Manager Sites頁面上建立Forms入口網站
+title: 將Forms入口網站新增至AEM Sites頁面
 description: 瞭解如何在AEM Sites頁面上建立Forms入口網站，並使用現成可用的核心元件。
-exl-id: 13cfe3ba-2e85-46bf-a029-2673de69c626
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
 workflow-type: tm+mt
-source-wordcount: '1837'
+source-wordcount: '1835'
 ht-degree: 4%
 
 ---
 
-# 在入口網站上列出最適化Forms {#publish-forms-on-portal}
+# 將Forms入口網站新增至AEM Sites頁面 {#publish-forms-on-portal}
 
 <span class="preview">Adobe 建議使用新式且可擴充的資料擷取[核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)，用來[建立新的最適化表單](/help/forms/creating-adaptive-form-core-components.md)或[將最適化表單新增到 AEM Sites 頁面](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)。這些元件代表最適化表單建立方面的重大進步，可確保令人印象深刻的使用者體驗。本文會介紹使用基礎元件編寫最適化表單的舊方法。</span>
 

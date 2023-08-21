@@ -1,15 +1,15 @@
 ---
-title: Forms as a Cloud Service 通訊簡介
+title: Formsas a Cloud Service通訊簡介
 description: 自動將資料與 XDP 和 PDF 範本合併，或產生 PCL、ZPL 和 PostScript 格式的輸出
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
 workflow-type: tm+mt
 source-wordcount: '1156'
-ht-degree: 98%
+ht-degree: 96%
 
 ---
 
-# 使用 AEM Forms as a Cloud Service 通訊 {#frequently-asked-questions}
+# AEM Formsas a Cloud Service通訊簡介 {#frequently-asked-questions}
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
