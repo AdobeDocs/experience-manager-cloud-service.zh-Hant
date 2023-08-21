@@ -5,7 +5,7 @@ exl-id: 487f0b51-501b-48fc-a796-3cb8a6d64462
 source-git-commit: 3784569086a786c6c25c0e3d6d0bb0ddbdd37e4b
 workflow-type: tm+mt
 source-wordcount: '477'
-ht-degree: 22%
+ht-degree: 28%
 
 ---
 
@@ -58,7 +58,7 @@ ht-degree: 22%
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_support"
 >title="說明與支援"
->abstract="聯絡Adobe的AEM支援團隊以澄清或解決任何問題。"
+>abstract="如需澄清或解決任何疑慮，請和 Adobe 的 AEM 支援團隊聯絡。"
 >additional-url="https://helpx.adobe.com/tw/enterprise/using/support-for-experience-cloud.html" text="Experience Cloud 的支援"
 
 如果您對存取Cloud Service有任何疑問，請聯絡您的Adobe代表或 [支援Experience Cloud](https://helpx.adobe.com/tw/enterprise/using/support-for-experience-cloud.html) 以取得更多詳細資料。

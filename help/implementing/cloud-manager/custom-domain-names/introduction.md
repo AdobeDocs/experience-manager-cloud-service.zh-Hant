@@ -1,11 +1,11 @@
 ---
 title: 自訂網域名稱簡介
-description: Cloud Manager的UI可讓您新增自訂網域，以自助方式使用唯一的品牌名稱來識別您的網站。
+description: Cloud Manager 的 UI 可讓您新增自訂網域，以自助方式使用唯一的品牌名稱來識別您的網站。
 exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '757'
-ht-degree: 81%
+ht-degree: 89%
 
 ---
 
@@ -15,11 +15,11 @@ ht-degree: 81%
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_domains"
 >title="管理自訂網域名稱"
->abstract="Cloud Manager的UI可讓您新增自訂網域，以自助方式使用唯一的品牌名稱來識別您的網站。"
+>abstract="Cloud Manager 的 UI 可讓您新增自訂網域，以自助方式使用唯一的品牌名稱來識別您的網站。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/add-custom-domain-name.html?lang=zh-Hant" text="新增自訂網域名稱"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.html?lang=zh-Hant" text="檢視和更新自訂網域名稱"
 
-Cloud Manager的UI可讓您新增自訂網域，以自助方式使用唯一的品牌名稱來識別您的網站。 Adobe Experience Manager as a Cloud Service已佈建預設網域名稱，結尾為 `*.adobeaemcloud.com`。即使您將自訂網域名稱與您的網站相關聯，此預設網域名稱仍會保留。
+Cloud Manager 的 UI 可讓您新增自訂網域，以自助方式使用唯一的品牌名稱來識別您的網站。Adobe Experience Manager as a Cloud Service已佈建預設網域名稱，結尾為 `*.adobeaemcloud.com`。即使您將自訂網域名稱與您的網站相關聯，此預設網域名稱仍會保留。
 
 ## 什麼是自訂網域名稱？ {#what-are-custom-domain-names}
 
