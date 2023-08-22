@@ -2,14 +2,17 @@
 title: 在最適化Forms中使用reCAPTCHA
 description: 瞭解如何在最適化Forms中設定Google reCAPTCHA服務。
 topic-tags: adaptive_forms, author
-source-git-commit: b4665d0291ee1223e46c8ecf13ca13ea336107d3
+source-git-commit: ad63083016f0f8c51ea336e37461562e61c02a8f
 workflow-type: tm+mt
-source-wordcount: '1913'
+source-wordcount: '1932'
 ht-degree: 6%
 
 ---
 
 # 在最適化Forms中使用reCAPTCHA{#using-reCAPTCHA-in-adaptive-forms}
+
+<span class="preview"> 這是搶鮮版功能，可透過我們的以下網站存取： [發行前通道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
+
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
@@ -52,7 +55,7 @@ CAPTCHA （完全自動化公用圖靈測試來區分電腦和人之間的差異
 
 1. 設定雲端服務 [!DNL reCAPTCHA Enterprise].
 
-   1. 在您的Experience Manager編寫執行個體上，前往 ![tools-1](assets/tools-1.png) > **[!UICONTROL Cloud Services]**.
+   1. 在您的Experience Manager編寫執行個體上，前往 ![tools-1](assets/tools-1.png) > **[!UICONTROL Cloud Service]**.
    1. 點選 **[!UICONTROL reCAPTCHA]**. 「組態」頁面隨即開啟。 選取您建立的設定容器並點選 **[!UICONTROL 建立]**.
    1. 選擇版本為 [!DNL reCAPTCHA Enterprise] 並指定reCAPTCHA Enterprise服務的名稱、專案ID、網站金鑰和API金鑰（在步驟2中取得）。
    1. 選取金鑰型別，金鑰型別應與您在下列位置設定的網站金鑰相同： [Google雲端專案](https://cloud.google.com/recaptcha-enterprise/docs/set-up-non-google-cloud-environments-api-keys#before-you-begin)例如， **核取方塊網站索引鍵** 或 **以分數為基礎的網站金鑰**.
@@ -81,7 +84,7 @@ reCAPTCHA Enterprise服務啟用後，就可在調適型表單中使用。 另�
 
 1. 設定reCAPTCHA v2的雲端服務。
 
-   1. 在您的AEM編寫執行個體上，前往 ![tools-1](assets/tools-1.png) > **Cloud Services**.
+   1. 在您的AEM編寫執行個體上，前往 ![tools-1](assets/tools-1.png) > **Cloud Service**.
    1. 點選 **[!UICONTROL reCAPTCHA]**. 「組態」頁面隨即開啟。 選取您建立的設定容器並點選 **[!UICONTROL 建立]**.
    1. 選擇版本為 [!DNL reCAPTCHA v2] ，指定reCAPTCHA服務的名稱、網站金鑰和秘密金鑰（在步驟1中取得）並點選 **[!UICONTROL 建立]** 以建立雲端服務設定。
    1. 在「編輯元件」對話方塊中，指定在步驟1中取得的網站和秘密金鑰。 點選 **[!UICONTROL 儲存設定]** 然後點選 **確定** 以完成設定。
@@ -229,7 +232,7 @@ reCAPTCHA Enterprise服務啟用後，就可在調適型表單中使用。 另�
 
 #### 在表單提交時進行驗證碼驗證 {#validation-form-submission}
 
-若要在提交最適化表單時自動驗證碼驗證：
+若要在提交最適化表單時自動驗證碼：
 
 1. 點選驗證碼元件並選取 ![cmppr](assets/configure-icon.svg) 以檢視元件屬性。
 1. 在 **[!UICONTROL 驗證碼驗證]** 區段，選取 **[!UICONTROL 在表單提交時進行驗證碼驗證]**.
