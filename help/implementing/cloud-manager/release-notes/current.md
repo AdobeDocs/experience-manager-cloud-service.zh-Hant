@@ -4,9 +4,9 @@ description: 以下是 AEM as a Cloud Service 中 Cloud Manager 2023.8.0 的發�
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
 source-git-commit: 99772a1a3faa454a9b07dd92c9e7622ddb37ce2d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '540'
-ht-degree: 24%
+ht-degree: 100%
 
 ---
 
@@ -25,42 +25,42 @@ AEM as a Cloud Service 中的 Cloud Manager 版本 2023.8.0 發行日期是 2023
 
 ## 新增功能 {#what-is-new}
 
-* 設定內容集至 [複製內容，](/help/implementing/developing/tools/content-copy.md) [內容感知設定](/help/implementing/developing/introduction/configurations.md) 現在允許在UI的內容集中使用。
-* 已進行增強功能，以改善Cloud Manager UI中錯誤訊息的可理解性和顯示性。
+* 將內容設定為[複製內容，現在 UI 中的內容集中可允許](/help/implementing/developing/tools/content-copy.md)[內容感知設定](/help/implementing/developing/introduction/configurations.md)。
+* 已進行增強以提升 Cloud Manager UI 中錯誤訊息的可理解性和顯示效果。
 
-## 早期採用計畫 {#early-adoption}
+## 早期採用計劃 {#early-adoption}
 
-成為我們早期採用計畫的一部分，並有機會測試一些即將推出的功能。
+參加我們的早期採用計劃，即有機會測試一些即將推出的功能。
 
-### 自助內容還原 {#content-restore}
+### 自助服務內容還原 {#content-restore}
 
-[新的自助內容還原功能](/help/operations/restore.md) 現在提供長達七天的備份還原功能，以供早期採用者評估，其功能包括：
+[新的自助服務內容還原功能](/help/operations/restore.md)現在會提供最長達 7 天的備份還原，並可供早期採用者用於評估目的，其中包括：
 
-* 前24小時的時間點備份還原
-* 固定時間還原最多七天
+* 前 24 小時的時間點備份還原
+* 固定時間還原最長可達 7 天
 
-如果您有興趣測試這項新功能並分享您的回饋意見，請傳送電子郵件至 `aemcs-restorefrombackup-adopter@adobe.com` 從與您的Adobe ID相關聯的電子郵件中。 請注意:
+如果您有興趣測試此新功能並分享您的意見反應，請使用和您的 Adob&#x200B;&#x200B;e ID 相關聯的電子郵件傳送電子郵件至 `aemcs-restorefrombackup-adopter@adobe.com`。請注意：
 
-* 早期採用者計畫僅限於開發環境。
-* 這項功能的早期採用者計畫可用性有限。
-* 此功能用於復原意外刪除的內容，並非用於災難復原。
+* 早期採用者計劃僅適用於開發環境。
+* 此功能可使用的早期採用者計劃很有限。
+* 此功能用於恢復意外刪除的內容，不適用於災難復原。
 
-### 體驗稽核控制面板 {#experience-audit-dashboard}
+### 體驗稽核儀表板 {#experience-audit-dashboard}
 
-[Cloud Manager體驗稽核控制面板](/help/implementing/cloud-manager/experience-audit-dashboard.md) 包含您頁面效能分數的趨勢檢視，以及可幫助您改善這些分數的見解和推薦。 體驗稽核會作為步驟包含在Cloud Manager生產管道。
+[Cloud Manager 體驗稽核儀表板](/help/implementing/cloud-manager/experience-audit-dashboard.md)包括頁面效能分數的趨勢檢視以及可協助您提高效能分數的深入解析和建議。體驗稽核會隨附為 Cloud Manager 生產管道中的一個步驟。
 
-控制面板運用Google Lighthouse，開放原始碼的自動工具，提升網頁應用程式的品質。 您可以對任何網頁、公開或需要驗證的網頁執行此檔案。 它針對效能、協助工具、漸進式網頁應用程式、SEO等內容進行稽核。
+該儀表板會利用 Google Lighthouse，這是一種開放原始碼自動化工具，用於提高網頁應用程式的品質。您可以用於在任何網頁 (公用網頁或需要身份驗證的網頁) 上執行。可用於對效能、協助工具、漸進式網頁應用程式、SEO 等進行稽核。
 
-有興趣試用新儀表板嗎？ 請傳送電子郵件至 `aem-lighthouse-pilot@adobe.com` 從與Adobe ID相關聯的電子郵件中，我們可以協助您開始使用。
+有興趣測試新儀表板嗎？請使用和您的 Adob&#x200B;&#x200B;e ID 相關聯的電子郵件傳送電子郵件至 `aem-lighthouse-pilot@adobe.com`，我們就會協助您開始使用。
 
 ## 錯誤修正 {#bug-fixes}
 
-* 此 **環境** 功能表現在會在觸發 **[複製內容](/help/implementing/developing/tools/content-copy.md)** 強制回應視窗。
-* [管道重新執行](/help/implementing/cloud-manager/deploy-code.md#reexecute-deployment) 如果先前執行沒有 `commitId` 在建置階段狀態上設定。
-* 現在，當使用者按一下中的管道時，對於罕見錯誤，會顯示更易於理解的訊息 **活動** 或 **管道** 畫面。
-* 此 `contentSetName` 值不再遺失在記錄中，現在在啟動時提供在輸入中 [內容複製](/help/implementing/developing/tools/content-copy.md) 作業。
-* 在某些罕見情況下，不再可以從同一管道開始兩個執行，導致「卡住」狀態。
-* 憑證過期時，與憑證關聯的網域名稱和IP允許清單將不再從CDN中移除。
+* 現在，在觸發&#x200B;**[複製內容](/help/implementing/developing/tools/content-copy.md)**&#x200B;模型後，「**環境**」選單會關閉。
+* 如果前一個執行未在建置階段狀態設定 `commitId`，不再允許[管道重新執行](/help/implementing/cloud-manager/deploy-code.md#reexecute-deployment)。
+* 當使用者在「**活動**」或「**管道**」畫面按一下管道時，如果出現不常見的錯誤，現在會顯示更容易理解的訊息。
+* 紀錄中不再缺少 `contentSetName` 值，現在在啟動[內容複製](/help/implementing/developing/tools/content-copy.md)作業時即會在輸入中提供。
+* 在特定的少數情況下，從同一個管道啟動兩次執行，以致於造成「停滯」狀態的情況不再可能發生。
+* 當憑證到期時，與該憑證相關聯的網域名稱和 IP 允許清單不會再從 CDN 移除。
    * 在這種情況下，網站將繼續接受訪客造訪。
    * [](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)Cloud Manager UI 將提供更明顯的事先警告：SSL 憑證即將到期。
-* AEM無法存取發佈端點的問題已修正，其情況為將Sites新增為僅限Assets計畫的解決方案。
+* 修正了將 Sites 作為解決方案新增到僅限資產的計畫時，AEM 無法存取發佈端點的問題。
