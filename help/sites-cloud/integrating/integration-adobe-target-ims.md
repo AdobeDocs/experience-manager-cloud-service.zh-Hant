@@ -2,9 +2,9 @@
 title: 與 Adobe Target 整合時使用的 IMS 設定
 description: 瞭解與Adobe Target整合時使用的IMS設定
 exl-id: b5474b70-bedc-4cc9-ad47-89dcb2415e3a
-source-git-commit: 900cdc53475446b9d93cb071f281da5dbe043888
+source-git-commit: 155b24c4b46e8baebd6215c0717d9f2adde95017
 workflow-type: tm+mt
-source-wordcount: '855'
+source-wordcount: '883'
 ht-degree: 5%
 
 ---
@@ -17,20 +17,20 @@ ht-degree: 5%
 >
 >AEMaaCS新增了對Adobe Target Standard API的支援。 Target Standard API使用IMS驗證。
 >
->API選擇由用於AEM/Target整合的驗證方法驅動。
+>API選取是由用於AEM/Target整合的驗證方法驅動。
 
-## 必備條件 {#prerequisites}
+## 先決條件 {#prerequisites}
 
 開始此程式之前：
 
-* [Adobe支援](https://helpx.adobe.com/tw/contact/enterprise-support.ec.html) 必須為下列專案布建您的帳戶：
+* [Adobe支援](https://helpx.adobe.com/tw/contact/enterprise-support.ec.html) 必須為以下專案布建您的帳戶：
 
    * Adobe主控台
    * Adobe Developer Console
    * Adobe Target和
-   * Adobe IMS (Identity Management System)
+   * Adobe IMS (Identity Management系統)
 
-* 您組織的系統管理員應使用Admin Console，將您組織中所需的開發人員新增到相關產品設定檔。
+* 您組織的系統管理員應使用Admin Console，將您組織中所需的開發人員新增到相關的產品設定檔。
 
    * 這可讓特定開發人員透過使用Adobe Developer Console來啟用整合。
    * 如需詳細資訊，請參閱 [管理開發人員](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-developers.ug.html).
@@ -43,9 +43,9 @@ ht-degree: 5%
 1. 在AEM中開啟 **工具** 功能表。
 1. 在 **安全性** 區段選取 **Adobe IMS設定**.
 1. 選取 **建立** 以開啟 **Adobe IMS技術帳戶設定**.
-1. 使用下的下拉式清單 **雲端設定**，選取 **Adobe Target**.
+1. 使用下方的下拉式清單 **雲端設定**，選取 **Adobe Target**.
 1. 啟動 **建立新憑證** 並輸入新別名。
-1. 確認方式 **建立憑證**.
+1. 確認 **建立憑證**.
 
    ![建立憑證](assets/integrate-target-ims-01.png)
 
@@ -53,19 +53,25 @@ ht-degree: 5%
 
    >[!CAUTION]
    >
-   >將此設定保持開啟，以下情況需要再次使用： [完成AEM中的IMS設定](#completing-the-ims-configuration-in-aem).
+   >將此設定保持開啟狀態，若有下列情況，則再次需要： [在AEM中完成IMS設定](#completing-the-ims-configuration-in-aem).
 
    ![下載憑證](assets/integrate-target-ims-02.png)
 
 ## 為Adobe Target與AEM的整合設定IMS {#configuring-ims-adobe-target-integration-with-aem}
 
-Adobe Developer Console專案（整合）與AEM將使用的Adobe Target，然後指派所需的許可權。
+Adobe Developer Console專案（整合），與AEM將使用的Adobe Target搭配使用，然後指派所需的許可權。
 
 ### 建立專案 {#creating-the-project}
 
-開啟Adobe Developer Console以使用AEM將使用的Adobe Target建立專案：
+開啟Adobe Developer Console，透過AEM將使用的Adobe Target建立專案：
 
-1. 開啟專案的Adobe Developer主控台：
+>[!CAUTION]
+>
+>目前，我們僅支援Adobe Developer主控台的 **服務帳戶(JWT)** 認證型別。
+>
+>請勿使用 **OAuth伺服器對伺服器** 未來將支援的認證型別。
+
+1. 開啟專案的Adobe Developer Console：
 
    [https://developer.adobe.com/console/projects](https://developer.adobe.com/console/projects)
 
@@ -73,7 +79,7 @@ Adobe Developer Console專案（整合）與AEM將使用的Adobe Target，然後
 
    * 如果您還沒有任何專案， **建立新專案** 是中下。
      ![建立新專案 — 第一個專案](assets/integration-target-ims-02.png)
-   * 如果您已有現有的專案，則會列出這些專案和 **建立新專案** 右上方。
+   * 如果您已有現有的專案，則會列出和 **建立新專案** 位於右上方。
      ![建立新專案 — 多個專案](assets/integration-target-ims-03.png)
 
 
@@ -81,11 +87,11 @@ Adobe Developer Console專案（整合）與AEM將使用的Adobe Target，然後
 
    ![新增至專案](assets/integration-target-ims-10.png)
 
-1. 選取 **Adobe Target**，則 **下一個**：
+1. 選取 **Adobe Target**，然後 **下一個**：
 
    >[!NOTE]
    >
-   >如果您已訂閱Adobe Target，但未看到它列出，則應檢視 [必要條件](#prerequisites).
+   >如果您已訂閱Adobe Target，但它並未列出，您應檢視 [必要條件](#prerequisites).
 
    ![選取Adobe Target](assets/integration-target-ims-12.png)
 
@@ -93,7 +99,7 @@ Adobe Developer Console專案（整合）與AEM將使用的Adobe Target，然後
 
    ![上傳您的公開金鑰](assets/integration-target-ims-13.png)
 
-1. 檢閱認證，並繼續 **下一個**：
+1. 檢閱認證，然後繼續進行 **下一個**：
 
    ![檢閱認證](assets/integration-target-ims-15.png)
 
@@ -101,12 +107,12 @@ Adobe Developer Console專案（整合）與AEM將使用的Adobe Target，然後
 
    >[!NOTE]
    >
-   >顯示的產品設定檔取決於您是否具備：
+   >顯示的產品設定檔取決於您是否擁有：
    >
    >* Adobe Target Standard — 僅限 **預設工作區** 可用
    >* Adobe Target Premium — 列出所有可用的工作區，如下所示
 
-   ![選取產品設定檔並儲存設定的API](assets/integration-target-ims-16.png)
+   ![選取產品設定檔並儲存已設定的API](assets/integration-target-ims-16.png)
 
 1. 已確認建立。
 
@@ -120,14 +126,14 @@ Adobe Developer Console專案（整合）與AEM將使用的Adobe Target，然後
 
 ### 指派許可權給整合 {#assigning-privileges-to-the-integration}
 
-您現在必須將必要的許可權指派給整合：
+您現在必須將所需許可權指派給整合：
 
 1. 開啟Adobe **Admin Console**：
 
    * [https://adminconsole.adobe.com](https://adminconsole.adobe.com/)
 
-1. 導覽至 **產品** （頂端工具列），然後選取 **ADOBE TARGET - &lt;*your-tenant-id*>** （從左側面板）。
-1. 選取 **產品設定檔**，然後從顯示的清單中找出您所需的工作區。 例如，預設工作區。
+1. 瀏覽至 **產品** （頂端工具列），然後選取 **ADOBE TARGET - &lt;*your-tenant-id*>** （從左側面板）。
+1. 選取 **產品設定檔**，然後從呈現的清單中選取您所需的工作區。 例如，預設工作區。
 1. 選取 **API認證**，則為所需的整合設定。
 1. 選取 **編輯者** 作為 **產品角色**；而非 **觀察者**.
 
@@ -137,7 +143,7 @@ Adobe Developer Console專案（整合）與AEM將使用的Adobe Target，然後
 
 * [https://developer.adobe.com/console/projects](https://developer.adobe.com/console/projects)
 
-選取 **檢視** （特定專案專案右側）以顯示有關設定的更多詳細資料。 這些類別包括：
+選取 **檢視** （在特定專案專案的右側）以顯示有關設定的更多詳細資訊。 這些類別包括：
 
 * 專案概述
 * Insights
@@ -148,21 +154,21 @@ Adobe Developer Console專案（整合）與AEM將使用的Adobe Target，然後
 * API
    * 例如，Adobe Target
 
-您需要其中的一些專案，才能在AEM的IMS架構中完成Adobe Target的整合。
+您需要其中的一些功能，才能在AEM中根據IMS完成Adobe Target的整合。
 
-## 完成AEM中的IMS設定 {#completing-the-ims-configuration-in-aem}
+## 在AEM中完成IMS設定 {#completing-the-ims-configuration-in-aem}
 
-返回AEM後，您可以新增目標的IMS整合中所需的值來完成IMS設定：
+返回至AEM後，您可以從Target的IMS整合新增必要值來完成IMS設定：
 
 1. 返回 [在AEM中開啟的IMS設定](#configuring-an-ims-configuration-generating-a-public-key).
 1. 選取 **下一個**.
 
-1. 您可以在此處使用 [Adobe Developer Console中專案設定的詳細資料](#details-stored-for-the-ims-integration-project)：
+1. 在這裡，您可以使用 [Adobe Developer Console中專案設定的詳細資料](#details-stored-for-the-ims-integration-project)：
 
    * **標題**：您的文字。
-   * **授權伺服器**：從以下位置複製/貼上此 `aud` 行 **裝載** 下方的區段，例如， `https://ims-na1.adobelogin.com` 在以下範例中
+   * **授權伺服器**：從複製/貼上此 `aud` 行 **裝載** 下方區段，例如， `https://ims-na1.adobelogin.com` 在以下範例中
    * **API金鑰**：從專案複製此專案 [概觀](#details-stored-for-the-ims-integration-project) 區段
-   * **使用者端密碼**：在專案中產生此專案 [概觀](#details-stored-for-the-ims-integration-project) 區段和副本
+   * **使用者端密碼**：在專案中產生此專案 [概觀](#details-stored-for-the-ims-integration-project) 部分，並複製
    * **裝載**：從以下位置複製此專案： [產生JWT](#details-stored-for-the-ims-integration-project) 區段
 
    ![Adobe IMS 技術帳戶設定](assets/integrate-target-ims-10.png)
@@ -175,7 +181,7 @@ Adobe Developer Console專案（整合）與AEM將使用的Adobe Target，然後
 
 ## 確認IMS設定 {#confirming-the-ims-configuration}
 
-若要確認設定是否如預期般運作，請執行下列動作：
+若要確認組態是否如預期般運作：
 
 1. 開啟:
 
@@ -186,11 +192,11 @@ Adobe Developer Console專案（整合）與AEM將使用的Adobe Target，然後
    * `https://localhost:4502/libs/cq/adobeims-configuration/content/configurations.html`
 
 1. 選取您的設定。
-1. 選取 **檢查健康狀態** （從工具列），後面接著 **Check**.
+1. 選取 **檢查健康狀態** ，接著再按 **檢查**.
 
    ![檢查健康狀態](assets/integrate-target-ims-12.png)
 
-1. 如果成功，您將看到確認訊息。
+1. 如果成功，您將看到一則確認訊息。
 
 ## 完成與Adobe Target的整合 {#complete-the-integration-with-adobe-target}
 
