@@ -3,9 +3,9 @@ title: 啟動
 description: 啟動可讓您有效率地開發未來版本的內容。可讓您完成變更以供未來發佈，同時維護目前的頁面
 exl-id: 3e410120-d08f-4d05-932f-07bc4440af2b
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '902'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -32,7 +32,7 @@ ht-degree: 98%
 * 為多個根分支建立。雖然您可以為整個網站建立啟動 (並在其中進行變更)，但這可能是不切實際的，因為需要複製整個網站。當涉及數百甚至數千頁時，複製動作和之後提升工作所需的比較作業，會影響系統要求和效能。
 * 巢狀 (啟動中有啟動) 可讓您在現有啟動中建立啟動，如此作者可以利用已完成的變更，而不用對每個啟動重複進行相同的變更。
 
-此章節描述如何從 Sites 主控台或 [啟動](#the-launches-console) 主控台，建立、編輯和提升 (如有需要可[刪除](/help/sites-cloud/authoring/launches/creating.md#deleting-a-launch)) 啟動頁面。
+此章節描述如何從 Sites 主控台或[啟動](#the-launches-console)主控台，建立、編輯和提升 (如有需要可[刪除](/help/sites-cloud/authoring/launches/creating.md#deleting-a-launch)) 啟動頁面。
 
 * [建立啟動](/help/sites-cloud/authoring/launches/creating.md)
 * [編輯啟動](/help/sites-cloud/authoring/launches/editing.md)
@@ -74,7 +74,7 @@ ht-degree: 98%
 
 * [建立巢狀啟動](/help/sites-cloud/authoring/launches/creating.md#creating-a-nested-launch) - 啟動中的啟動：
    * 來源是現有的啟動。
-   * 您可以[將巢狀啟動](/help/sites-cloud/authoring/launches/promoting.md#promoting-a-nested-launch) 提升到任何目標，這可以是父啟動或頂層來源頁面 (生產)。
+   * 您可以[將巢狀啟動](/help/sites-cloud/authoring/launches/promoting.md#promoting-a-nested-launch)提升到任何目標，這可以是父啟動或頂層來源頁面 (生產)。
 
   ![巢狀啟動](/help/sites-cloud/authoring/assets/launches-nested.png)
 
@@ -92,7 +92,7 @@ ht-degree: 98%
 
 1. 在 **Sites** 主控台中，導覽至啟動來源。
 1. 開啟&#x200B;**參考**&#x200B;邊欄並選取來源頁面。
-1. 選取 **啟動**，會列出現有的啟動，以及 **啟動主控台**&#x200B;的存取權：
+1. 選取&#x200B;**啟動**，會列出現有的啟動，以及&#x200B;**啟動主控台**&#x200B;的存取權：
 
    ![網站主控台中的啟動參考](/help/sites-cloud/authoring/assets/launches-references.png)
 
@@ -102,11 +102,11 @@ ht-degree: 98%
 
 ## 啟動主控台 {#the-launches-console}
 
-「啟動」主控台提供啟動的總覽，並可讓您對列出的啟動執行動作。 主控台可透過以下方式存取：
+啟動主控台可提供對您的啟動的概觀，並讓您對清單上的執行動作。主控台可透過以下方式存取：
 
 * **工具**&#x200B;主控台：**工具**、**Sites**、**啟動**。
 
-* 在 Sites 主控台瀏覽來源內容時，**啟動主控台**&#x200B;位於&#x200B;**參考**&#x200B;邊欄 **啟動** 區段的底部。
+* 在 Sites 主控台瀏覽來源內容時，**啟動主控台**&#x200B;位於&#x200B;**參考**&#x200B;邊欄&#x200B;**啟動**&#x200B;區段的底部。
 
   ![啟動主控台位於 Sites 主控台的啟動參考中](/help/sites-cloud/authoring/assets/launches-references.png)
 
