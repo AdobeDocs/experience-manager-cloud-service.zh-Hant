@@ -1,10 +1,10 @@
 ---
 title: 下載並安裝Forms Designer
 description: 您可以使用Forms Designer來建立XDP和PDF表單範本，這些範本可作為記錄檔案的範本。 設計工具可用於 [!DNL AEM Forms] 授權。
-source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
+source-git-commit: 115612a11f43000894c76758b1d2bcb3506f3bcb
 workflow-type: tm+mt
-source-wordcount: '256'
-ht-degree: 2%
+source-wordcount: '307'
+ht-degree: 1%
 
 ---
 
@@ -14,18 +14,38 @@ Designer是一種點選式圖形化表單設計工具，可簡化XDP和PDF表單
 
 ## 先決條件 {#pre-requisites}
 
-安裝及設定Designer時，需要下列軟體與最低硬體：
+若要安裝最新版的AEM Forms Designer 64位元或32位元，您需要下列軟體與最低硬體才能安裝和設定Designer：
 
-* [!DNL Microsoft® Windows® 2016 Server], [!DNL Microsoft® Windows® 2019 Server], 或 [!DNL Microsoft® Windows® 10]
-* 32位元的1 GB RAM或64位元作業系統的2 GB RAM
-* 16 GB磁碟空間，適用於32位元或20 GB磁碟空間，適用於64位元作業系統
+>[!BEGINTABS]
+
+>[!TAB 64位元作業系統（建議使用）]
+
+* [!DNL Microsoft® Windows® 2016 Server] 或 [!DNL Microsoft® Windows® 2019 Server]、和 [!DNL Microsoft® Windows® 10]
+* 最低2 GB的RAM
+* 20 GB的磁碟空間
+* 顯示卡記憶體：128 MB的GPU （建議使用256 MB）
+* 2.35 GB的可用硬碟空間
+* 1024 X 768畫素或更高的熒幕解析度
+* 視訊硬體加速（選購）
+* Acrobat Pro DC、Acrobat Standard DC或Adobe Acrobat Reader DC
+* 安裝設計工具的管理許可權
+* [!DNL Microsoft® Visual C++ 2019] （VC 14.28或更新版本）
+
+>[!TAB 32位元作業系統]
+
+* [!DNL Microsoft® Windows® 2016 Server] 或 [!DNL Microsoft® Windows® 2019 Server]、和 [!DNL Microsoft® Windows® 10]
+* 最少1 GB的RAM
+* 16 GB的磁碟空間
 * 顯示卡記憶體 — 128 MB的GPU （建議使用256 MB）
 * 2.35 GB的可用硬碟空間
 * 1024 X 768畫素或更高的熒幕解析度
 * 視訊硬體加速（選購）
-* Acrobat Pro DC、Acrobat Standard DC或Adobe Acrobat Reader DC。
-* 安裝Designer的管理許可權。
-* Microsoft Visual C++ 2019 （VC 14.28或更新版本） 32位元執行階段
+* Acrobat Pro DC、Acrobat Standard DC或Adobe Acrobat Reader DC
+* 安裝設計工具的管理許可權
+* Microsoft® Visual C++ 2019 （VC 14.28或更新版本）
+
+>[!ENDTABS]
+
 
 ## 安裝設計工具 {#install-designer}
 
