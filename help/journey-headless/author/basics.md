@@ -3,9 +3,9 @@ title: 了解編寫基本知識
 description: 了解使用內容片段為 Headless CMS 編寫內容的概念和機制。
 exl-id: 3eca973f-b210-41bb-98da-ecbd2bae9803
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1714'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 98%
 
 ## 到目前為止 {#story-so-far}
 
-在[AEM Headless 內容作者歷程](overview.md)的一開始，[簡介](introduction.md)部分介紹了和 Headless 內容編寫相關的基本概念和術語。
+在 [AEM Headless 內容作者歷程](overview.md)的一開始，[簡介](introduction.md)部分介紹了和 Headless 內容編寫相關的基本概念和術語。
 
 本文以這些內容為基礎，以便您了解如何為 AEM Headless 專案編寫您自己的內容。
 
@@ -50,7 +50,7 @@ AEM 安裝通常至少包含三個環境：
 * 密碼
 * 存取登入畫面的連結
 
-您的帳戶將設定成具有任何您需要的權限。如果您有任何問題，Adobe建議您聯絡內部專案支援團隊。
+您的帳戶將設定成具有任何您需要的權限。如果您有任何問題，Adobe 建議應聯絡您的內部支援團隊。
 
 ### 導覽 {#navigation}
 
@@ -217,7 +217,7 @@ Confirm with **Create** and you can then **Open** your fragment in the editor.
 
   ![內容片段編輯器 - 我的片段](/help/journey-headless/author/assets/headless-journey-author-content-fragment-04.png)
 
-* 可讓您編寫長文字區段的片段。 這裡有用於管理和格式化文字的其他選項。您甚至可以在全螢幕編輯器中開啟各個文字欄位 (使用右側外觀像螢幕的小圖示)
+* 讓您編寫一長段文字的片段。這裡有用於管理和格式化文字的其他選項。您甚至可以在全螢幕編輯器中開啟各個文字欄位 (使用右側外觀像螢幕的小圖示)
 
   ![內容片段編輯器 - Alaska Spirits](/help/journey-headless/author/assets/headless-journey-author-content-fragment-05.png)
 
