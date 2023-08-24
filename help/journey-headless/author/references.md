@@ -3,9 +3,9 @@ title: 了解如何在內容片段中使用參考
 description: 了解如何在內容片段中使用內容、其他片段和其他資產 (媒體) 的參考。介紹巢狀片段對 Headless CMS 編寫的必要性和機制。
 exl-id: a65e8a5a-954b-4307-8027-ca8bac5f4261
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '728'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -39,11 +39,11 @@ ht-degree: 92%
 
 ## 內容參考 {#content-references}
 
-內容參考的作用就是可讓您參考任何其他內容。這將會開啟一個瀏覽器，讓您選取內容專案。
+內容參考的作用就是可讓您參考任何其他內容。這會開啟瀏覽器，讓您選取內容項目。
 
 ## 資產/媒體參考 {#assets-media-references}
 
-可以使用&#x200B;**插入資產**&#x200B;選項，讓資產 (例如影像或媒體) 可在文字區塊內被參考。這將會開啟瀏覽器讓您選取資產。
+可以使用&#x200B;**插入資產**&#x200B;選項，讓資產 (例如影像或媒體) 可在文字區塊內被參考。這會開啟瀏覽器，讓您選取資產。
 
 ![內容片段 - 插入資產](/help/journey-headless/author/assets/headless-journey-author-references-02.png)
 
@@ -79,7 +79,7 @@ ht-degree: 92%
 
 ### 如何編寫巢狀片段 {#author-nested-fragment}
 
-編寫片段參考非常簡單 (儘管欄位通常不會被標記為&#x200B;**片段參考**)。您可以直接在參考中輸入，或（更有可能的）選取資料夾圖示以開啟瀏覽器，讓您導覽並選取所需的片段。
+編寫片段參考非常簡單 (儘管欄位通常不會被標記為&#x200B;**片段參考**)。您可以直接輸入參考，或者 (更有可能) 選取資料夾圖示以開啟瀏覽器，讓您可瀏覽和選取所需片段。
 
 ![內容片段 - 參考](/help/journey-headless/author/assets/headless-journey-author-references-03.png)
 
