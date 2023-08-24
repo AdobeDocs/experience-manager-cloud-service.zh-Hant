@@ -5,9 +5,9 @@ feature: Onboarding
 role: Admin, User, Developer
 exl-id: c00f5d28-85af-4bd3-a50c-913d1342241c
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '898'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -58,7 +58,7 @@ ht-degree: 97%
 
 >[!TIP]
 >
->出於入門目的，Adobe建議您先新增將參與即時任務的使用者，例如管理員、開發人員和內容作者。 您可以在不新增所有使用者的情況下繼續其他的上線流程。完成上線後，稍後您可以擴展到更多使用者。
+>為了上線目的，Adobe 建議您先新增將參與即時任務的使用者，例如管理員、開發人員和內容作者。您可以在不新增所有使用者的情況下繼續其他的上線流程。完成上線後，稍後您可以擴展到更多使用者。
 
 ## 檢視 AEM 產品設定檔 {#view-profiles}
 
