@@ -4,7 +4,7 @@ description: 在應用程式內使用資產選擇器搜尋、查找和檢索資�
 contentOwner: Adobe
 role: Admin,User
 exl-id: b968f63d-99df-4ec6-a9c9-ddb77610e258
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: dd923ae9d63f1ca1379d8e177ff7b00648da052a
 workflow-type: tm+mt
 source-wordcount: '2373'
 ht-degree: 91%
@@ -44,6 +44,7 @@ ht-degree: 91%
 您可以整合任何 [!DNL Adobe] 或非 Adobe 應用程式與 [!DNL Experience Manager Assets] as a [!DNL Cloud Service] 存放庫，並從應用程式之中選擇資產。
 
 匯入資產選擇器套件，並使用 Vanilla JavaScript 程式庫連接到 Assets as a Cloud Service，便完成了整合作業。您必須在應用程式內編輯一個 `index.html` 或任何適當的文件，以利 -
+
 * 定義身份驗證詳細資訊
 * 存取 Assets as a Cloud Service 存放庫
 * 設定資產選擇器顯示屬性
@@ -73,6 +74,7 @@ You can use properties such as `imsScope` or `imsClientID` to retrieve `imsToken
 -->
 
 在應用程式實作之內定義 `index.html` 檔案或類似檔案的必備條件，以定義存取 [!DNL Experience Manager Assets] as a [!DNL Cloud Service] 存放庫的身分驗證資料。必備條件包括：
+
 * imsOrg
 * imsToken
 * apikey
@@ -105,7 +107,7 @@ ESM CDN (例如，[esm.sh](https://esm.sh/) /[skypack](https://www.skypack.dev/)
 在使用 **UMD 版** 的瀏覽器中 (建議)：
 
 ```
-<script src="https://experience.adobe.com/solutions/CQ-assets-selectors/assets/resources/assets-selectors.js"></script>
+<script src="https://experience.adobe.com/solutions/CQ-assets-selectors/static-assets/resources/assets-selectors.js"></script>
 
 <script>
   const { renderAssetSelector } = PureJSSelectors;
@@ -116,14 +118,14 @@ ESM CDN (例如，[esm.sh](https://esm.sh/) /[skypack](https://www.skypack.dev/)
 
 ```
 <script type="module">
-  import { AssetSelector } from 'https://experience.adobe.com/solutions/CQ-assets-selectors/assets/resources/@assets/selectors/index.js'
+  import { AssetSelector } from 'https://experience.adobe.com/solutions/CQ-assets-selectors/static-assets/resources/@assets/selectors/index.js'
 </script>
 ```
 
 在使用 **ESM CDN 版**&#x200B;的 Deno/Webpack Module Federation 中：
 
 ```
-import { AssetSelector } from 'https://experience.adobe.com/solutions/CQ-assets-selectors/assets/resources/@assets/selectors/index.js'
+import { AssetSelector } from 'https://experience.adobe.com/solutions/CQ-assets-selectors/static-assets/resources/@assets/selectors/index.js'
 ```
 
 ### 選取的資產類型 {#selected-asset-type}
@@ -526,7 +528,7 @@ It is based on the `imsOrg` that is provided in the application. If you want to 
 * `MIME type`：包括 JPG、GIF、PPTX、PNG、MP4、DOCX、TIFF、PDF、XLSX
 * `Image Size`：包括影像的最小/最大寬度，最小/最大高度
 
-![rail-view-example](assets/filters-asset-selector.png)
+  ![rail-view-example](assets/filters-asset-selector.png)
 
 ### 自訂搜尋
 
