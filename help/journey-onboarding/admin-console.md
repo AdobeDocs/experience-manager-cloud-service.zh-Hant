@@ -3,9 +3,9 @@ title: 存取 Admin Console
 description: 一旦您了解了上線所需的準備工作和 AEMaaCS 結構的基礎知識，您就可以首次登入 Admin Console 了。
 exl-id: 0ccce328-a356-4ba9-b7fe-f67abc25b924
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1104'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 95%
 
 ## 目標 {#objective}
 
-既然你已經閱讀了這篇文章[AEM as a Cloud Service術語](terminology.md)並了解 AEMaaCS 結構的基礎知識，您就可以第一次登入 Admin Console 了！
+既然您已經閱讀了 [AEM as a Cloud Service 術語](terminology.md)一文，並了解 AEMaaCS 結構的基礎知識，您就可以第一次登入 Admin Console 了！
 
 作為系統管理員，您負責管理組織內的使用者。您可以使用 Admin Console 來執行此操作。閱讀本區段後，您應該：
 
@@ -26,7 +26,7 @@ ht-degree: 95%
 
 ## Admin Console {#admin-console}
 
-Adobe Admin Console 是管理您的 Adobe 產品授權和使用者的中心位置。Admin Console可讓您在單一位置而非在各種個別解決方案中建立和管理使用者。
+Adobe Admin Console 是管理您的 Adobe 產品授權和使用者的中心位置。Admin Console 可讓您在單一位置而不是在各種單獨的解決方案中建立和管理使用者。
 
 ## Adobe ID {#adobe-id}
 
@@ -50,7 +50,7 @@ Adobe Admin Console 是管理您的 Adobe 產品授權和使用者的中心位�
 
 1. 作為系統管理員，您將在上線流程中收到來自 Adobe 的多封電子郵件。查找提供有關您已被授予存取權限的組織名稱資訊的歡迎電子郵件。
 
-1. 按一下&#x200B;**開始使用**&#x200B;歡迎電子郵件中的鏈接以瀏覽到 Admin Console。如果找不到電子郵件，請直接開啟瀏覽器以Admin Console於 [`https://adminconsole.adobe.com`](https://adminconsole.adobe.com).
+1. 按一下&#x200B;**開始使用**&#x200B;歡迎電子郵件中的鏈接以瀏覽到 Admin Console。如果找不到電子郵件，請直接開啟瀏覽器存取 Admin Console，網址為 [`https://adminconsole.adobe.com`](https://adminconsole.adobe.com)。
 
    ![歡迎電子郵件](/help/journey-onboarding/assets/get-started-email.png)
 
@@ -90,7 +90,7 @@ AEM as a Cloud Service預配置了 Adobe Identity Management 系統 (也稱為 I
 
 ![支援索引標籤](/help/journey-onboarding/assets/support-menu.png)
 
-索引標籤可讓您建立和管理案例、直接與Adobe客戶支援代表聊天，以及安排與專家的會議。 系統管理員和支援管理員必須登入才能存取支援案例和專家會話選項。
+索引標籤可讓您建立和管理案例、直接與 Adobe 客戶支援代表聊天以及安排與專家的會議。系統管理員和支援管理員必須登入才能存取支援案例和專家會話選項。
 
 ## 下一步 {#whats-next}
 
