@@ -5,9 +5,9 @@ feature: Onboarding
 role: Admin, User, Developer
 exl-id: 4edecfcd-6301-4a46-98c7-eb5665f48995
 source-git-commit: 6764fe48068325dfb7ed84cf7834c7eb5f25fb48
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '970'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -144,4 +144,4 @@ Adobe 有時需要就 AEM as a Cloud Service 環境聯絡使用者。除了產�
 
 如果您想要此上線歷程以外的內容，以下是您可選擇的其他資源。
 
-* [動作中心](/help/operations/actions-center.md)  — 善用行動中心，方便您對事件和其他重要資訊採取行動。
+* [行動中心](/help/operations/actions-center.md)- 利用行動中心可便於對事故和其他重要資訊採取行動.
