@@ -3,9 +3,9 @@ title: 為 AEM as a Cloud Service 設定進階網路
 description: 了解如何為 AEM as a Cloud Service 設定進階網路功能，例如 VPN 或彈性或專用輸出 IP 地址等
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3571'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -40,7 +40,7 @@ AEM as a Cloud Service 提供多種類型的進階網路功能，客戶可以使
 
 ## 彈性連接埠輸出 {#flexible-port-egress}
 
-此進階網路功能可讓您設定AEMas a Cloud Service透過預設開啟的HTTP （連線埠80）和HTTPS （連線埠443）以外的連線埠輸出流量。
+此進階網路功能可讓您設定 AEM as a Cloud Service 以透過預設開啟的 HTTP (連接埠 80) 和 HTTPS (連接埠 443) 以外的連接埠輸出流量。
 
 ### 考量事項 {#flexible-port-egress-considerations}
 
@@ -197,7 +197,7 @@ ProxyPassReverse "/somepath" "https://example.com:8443"
 
 主要區別在於流量一律從專用的、唯一的 IP 輸出。要尋找該 IP，請使用 DNS 解析器識別與 `p{PROGRAM_ID}.external.adobeaemcloud.com` 相關聯的 IP 位址。該 IP 位址預期不會變更，但如果將來需要變更，會事先通知。
 
-除了 `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` 端點中的彈性連接埠輸出支援的路由規則之外，專用輸出 IP 位址還支援 `nonProxyHosts` 參數。這可讓您宣告一組應該路由經過共用IP位址範圍而不是專用IP的主機，這可能很有用，因為經過共用IP輸出的流量可能會進一步最佳化。 `nonProxyHost` URL 可能遵循 `example.com` 或`*.example.com` 的模式，其中僅在網域開頭支援萬用字元。
+除了 `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` 端點中的彈性連接埠輸出支援的路由規則之外，專用輸出 IP 位址還支援 `nonProxyHosts` 參數。這可讓您宣告一組應該路由經過共用 IP 位址範圍而不是專用 IP 的主機，這可能很有用，因為經過共用 IPS 輸出的流量可能得到進一步最佳化。`nonProxyHost` URL 可能遵循 `example.com` 或`*.example.com` 的模式，其中僅在網域開頭支援萬用字元。
 
 在決定使用彈性連接埠輸出或專用輸出 IP 位址時，如果不需要特定的 IP 位址，客戶應該選擇彈性連接埠輸出，因為 Adobe 可以最佳化彈性連接埠輸出流量的效能。
 
@@ -555,7 +555,7 @@ Header always set Cache-Control private
 
 如果已在主要區域中啟用進階網路設定，請依照下列步驟進行：
 
-1. 如果您已鎖定基礎結構，以便將專用的 AEM IP 位址加入允許清單，則建議暫時停用該基礎結構中的任何否決規則。如果不這樣做，有一小段時間您自己的基礎結構會拒絕來自新區域的 IP 位址的請求。請注意，如果您已透過FullyQualified Domain Name (FQDN)鎖定基礎架構，則不需要這樣做，(`p1234.external.adobeaemcloud.com`，例如)，因為所有AEM區域都會從相同的FQDN輸出進階網路流量
+1. 如果您已鎖定基礎結構，以便將專用的 AEM IP 位址加入允許清單，則建議暫時停用該基礎結構中的任何否決規則。如果不這樣做，有一小段時間您自己的基礎結構會拒絕來自新區域的 IP 位址的請求。請注意，如果您已經由完整網域名稱 (FQDN) 鎖定基礎結構，(例如，`p1234.external.adobeaemcloud.com`)，則沒有必要這麼做，因為所有 AEM 區域都會從相同的 FQDN 輸出進階網路流量
 1. 根據進階網路文件中的說明，可透過對 Cloud Manager Create Network Infrastructure API 的 POST 呼叫為次要區域建立計畫範圍的網路基礎結構。承載的 JSON 設定相對於主要區域的唯一差異是區域屬性
 1. 如果您的基礎結構需要由 IP 鎖定以允許 AEM 流量，請新增和 `p1234.external.adobeaemcloud.com` 相符的 IPS。每個區域都應該有一個。
 
