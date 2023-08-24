@@ -3,9 +3,9 @@ title: 如何連線最適化表單資料並將其傳送到Microsoft&reg； Power
 description: 連線最適化表單資料並將其傳送到Microsoft&reg； Power Automate的逐步指南。
 keywords: 最適化Forms Microsoft Power Automate，將最適化Forms資料提交至Microsoft Power Automate
 exl-id: a059627b-df12-454d-9e2c-cc56986b7de6
-source-git-commit: be57fe6c54f2ee07378e16bae601500f71e7ce6b
+source-git-commit: 74fed5b2bcffac9d267b66aaa3d69b27cadd3417
 workflow-type: tm+mt
-source-wordcount: '1205'
+source-wordcount: '1198'
 ht-degree: 2%
 
 ---
@@ -119,7 +119,7 @@ ht-degree: 2%
 1. 登入您的Author例項，選取您的Adaptive Form並按一下 **[!UICONTROL 屬性]**.
 1. 在設定容器中，瀏覽並選取在區段中建立的容器 [建立Microsoft® Power Automate Dataverse雲端設定](#microsoft-power-automate-dataverse-cloud-configuration)，然後點選 **[!UICONTROL 儲存並關閉]**.
 1. 開啟最適化表單進行編輯並導覽至 **[!UICONTROL 提交]** 最適化表單容器屬性的區段。
-1. 在屬性容器中，針對 **[!UICONTROL 提交動作]** 選取 **[!UICONTROL 叫用Power Automate流程]** 選項。 可用的電源自動化流程清單隨即顯示 **[!UICONTROL Power Automate流程]** 選項。 選取所需的流程，並在提交時提交最適化Forms資料。
+1. 在屬性容器中，針對 **[!UICONTROL 提交動作]** 選取 **[!UICONTROL 叫用Power Automate流程]** 選項並選取 **[!UICONTROL Power Automate流程]**. 選取所需的流程，並在提交時提交最適化Forms資料。
 
    ![設定提交動作](assets/submission.png)
 

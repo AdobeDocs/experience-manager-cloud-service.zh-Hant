@@ -3,9 +3,9 @@ title: 如何為最適化表單設定提交動作
 description: 最適化表單提供多個提交動作。提交動作會定義提交之後處理最適化表單的方式。您可以使用內建的提交動作或建立自己的動作。
 hide: true
 hidefromtoc: true
-source-git-commit: be57fe6c54f2ee07378e16bae601500f71e7ce6b
+source-git-commit: 74fed5b2bcffac9d267b66aaa3d69b27cadd3417
 workflow-type: tm+mt
-source-wordcount: '3575'
+source-wordcount: '3573'
 ht-degree: 94%
 
 ---
@@ -358,7 +358,7 @@ For more information about the Forms Portal and Submit Action, see [Drafts and s
 * 對擷取的資料執行複雜的計算
 * 以預先定義的排程將最適化Forms資料儲存至儲存系統
 
-最適化Forms編輯器提供 **叫用Microsoft®Power Automate流程** 傳送最適化表單資料、附件和記錄檔案的提交動作會傳送到Power Automate雲端流程。 若要使用提交動作將擷取的資料傳送至Microsoft®Power Automate， [使用Microsoft® Power Automate連線您的Formsas a Cloud Service執行個體](forms-microsoft-power-automate-integration.md)
+最適化Forms編輯器提供 **叫用Microsoft®Power Automate流程** 提交動作以將最適化表單資料、附件和記錄檔案傳送到Power Automate雲端流程。 若要使用提交動作將擷取的資料傳送至Microsoft®Power Automate， [使用Microsoft® Power Automate連線您的Formsas a Cloud Service執行個體](forms-microsoft-power-automate-integration.md)
 
 成功設定後，請使用 [叫用Microsoft®Power Automate流程](forms-microsoft-power-automate-integration.md#use-the-invoke-a-microsoft&reg;-power-automate-flow-submit-action-to-send-data-to-a-power-automate-flow-use-the-invoke-microsoft-power-automate-flow-submit-action) 提交動作以將資料傳送至Power Automate流程。
 
