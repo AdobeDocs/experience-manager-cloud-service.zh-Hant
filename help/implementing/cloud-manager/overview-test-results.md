@@ -3,9 +3,9 @@ title: Cloud Manager 測試概觀
 description: 大致了解 Cloud Manager 自動執行的三種類型的測試，以確保您的自訂程式碼的品質。
 exl-id: 5f5c97b1-4180-4f49-af8b-257d4744766e
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '162'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ Cloud Manager for Cloud Services 管道支援三類測試。
 
 1. [體驗稽核測試](/help/implementing/cloud-manager/experience-audit-testing.md)
 
-   * 體驗稽核測試已在所有Cloud Manager生產管道中啟用並且不能跳過。
+   * 體驗稽核測試在所有 Cloud Manager 生產管道中都是啟用的，並且不能略過。
 
 這些測試可以是：
 
