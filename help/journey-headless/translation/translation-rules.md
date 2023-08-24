@@ -3,9 +3,9 @@ title: 設定 Headless 內容的翻譯規則
 description: 了解如何定義翻譯規則以識別要翻譯的內容。
 exl-id: 878ffd5d-0f10-4990-9779-bdf55cd95fac
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '941'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -69,7 +69,7 @@ ht-degree: 98%
 
 在&#x200B;**翻譯設定** UI 中，有許多選項可用於您的翻譯規則。在這裡，我們強調基本 Headless 本地化設定所需的最必要和典型的步驟。
 
-1. 點選或按一下 **新增內容**，可讓您新增路徑。 這是受規則影響的內容的路徑。
+1. 點選或按一下&#x200B;**新增內容**，您即可新增路徑。這是受規則影響的內容的路徑。
    ![新增內容](assets/add-translation-context.png)
 1. 使用路徑瀏覽器選擇所需路徑，並點選或按一下&#x200B;**確認**&#x200B;按鈕以儲存。請記住，內容片段 (其包含 Headless 內容) 通常位於 `/content/dam/<your-project>` 下。
    ![選取路徑](assets/select-context.png)
