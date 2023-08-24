@@ -3,10 +3,10 @@ title: 如何為最適化表單設定提交動作
 description: 最適化表單提供多個提交動作。提交動作會定義提交之後處理最適化表單的方式。您可以使用內建的提交動作或建立自己的動作。
 hide: true
 hidefromtoc: true
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: be57fe6c54f2ee07378e16bae601500f71e7ce6b
 workflow-type: tm+mt
-source-wordcount: '3365'
-ht-degree: 99%
+source-wordcount: '3575'
+ht-degree: 94%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 99%
 | 套用至 | ✅ 最適化表單核心元件，❎[最適化表單基礎元件](/help/forms/configuring-submit-actions.md) |
 
 
-提交動作可讓您選擇透過最適化表單擷取的資料目的地。 使用者按一下最適化表單上的「**[!UICONTROL 提交]**」按鈕時，就會加以觸發。針對以核心元件為基礎的最適化表單，Forms as a Cloud Service 提供了一系列預先建立的提交動作。這些現成可用的提交動作可讓您：
+提交動作讓您可選擇透過最適化表單擷取的資料目標。使用者按一下最適化表單上的「**[!UICONTROL 提交]**」按鈕時，就會加以觸發。針對以核心元件為基礎的最適化表單，Forms as a Cloud Service 提供了一系列預先建立的提交動作。這些現成可用的提交動作可讓您：
 
 * 透過電子郵件輕鬆傳送表單資料。
 * 在傳輸資料時啟動 Microsoft Power Automate 流程或 AEM 工作流程。
@@ -52,6 +52,7 @@ ht-degree: 99%
    * [提交到 REST 端點](#submit-to-rest-endpoint)
    * [提交到 OneDrive](#submit-to-onedrive)
    * [叫用 AEM 工作流程](#invoke-an-aem-workflow)
+   * [提交至Power Automate](#microsoft-power-automate)
 
 ## 寄送電子郵件 {#send-email}
 
@@ -159,7 +160,7 @@ ht-degree: 99%
 
 「**[!UICONTROL 使用表單資料模型提交]**」提交動作，會將表單資料模型中指定資料模型物件的已提交最適化表單資料寫入其資料來源。設定提交動作時，您可以選擇要將其提交資料寫回其資料來源的資料模型物件。
 
-此外，您可以使用表單資料模型和記錄文件 (DoR) 將表單附件提交到資料來源。如需有關表單資料模型的資訊，請參閱[[!DNL AEM Forms] 資料整合](data-integration.md)。
+此外，您可以使用表單資料模型和記錄文件 (DoR) 將表單附件提交到資料來源。如需有關表單資料模型的資訊，請參閱 [[!DNL AEM Forms] 資料整合](data-integration.md)。
 
 ## 提交到 REST 端點 {#submit-to-rest-endpoint}
 
@@ -346,6 +347,20 @@ For more information about the Forms Portal and Submit Action, see [Drafts and s
 儲存資料的資料夾結構是 `/configuration_container/form_name/year/month/date/submission_id/data`。
 
 若要設定值，請[使用 AEM SDK 產生 OSGi 設定](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=zh-Hant#generating-osgi-configurations-using-the-aem-sdk-quickstart)，並[將設定部署至](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=zh-Hant#deployment-process)您的 Cloud Service 執行個體。
+
+
+## 提交至Power Automate {#microsoft-power-automate}
+
+您可以設定最適化表單，在提交時執行Microsoft® Power Automate Cloud Flow。 設定的最適化表單會將擷取的資料、附件和記錄檔案傳送到Power Automate雲端流程進行處理。 它可幫助您建立自訂資料擷取體驗，同時利用Microsoft® Power Automate的強大功能，圍繞擷取的資料建立商業邏輯，並自動化客戶工作流程。 以下是整合最適化表單與Microsoft® Power Automate後可以執行的一些範例：
+
+* 在Power Automate業務流程中使用自適應Forms資料
+* 使用Power Automate將擷取的資料傳送至500多個資料來源或任何公開可用的API
+* 對擷取的資料執行複雜的計算
+* 以預先定義的排程將最適化Forms資料儲存至儲存系統
+
+最適化Forms編輯器提供 **叫用Microsoft®Power Automate流程** 傳送最適化表單資料、附件和記錄檔案的提交動作會傳送到Power Automate雲端流程。 若要使用提交動作將擷取的資料傳送至Microsoft®Power Automate， [使用Microsoft® Power Automate連線您的Formsas a Cloud Service執行個體](forms-microsoft-power-automate-integration.md)
+
+成功設定後，請使用 [叫用Microsoft®Power Automate流程](forms-microsoft-power-automate-integration.md#use-the-invoke-a-microsoft&reg;-power-automate-flow-submit-action-to-send-data-to-a-power-automate-flow-use-the-invoke-microsoft-power-automate-flow-submit-action) 提交動作以將資料傳送至Power Automate流程。
 
 ## 使用同步或異步提交 {#use-synchronous-or-asynchronous-submission}
 
