@@ -3,9 +3,9 @@ title: 使用 Universal Editor 編寫內容
 description: 了解內容作者使用 Universal Editor 建立內容有多簡單和直覺。
 exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2266'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ Universal Editor 支援在任意實作中編輯任何方面的內容，以便提
 
 >[!NOTE]
 >
->Universal Editor 仍處於開發階段。目前無法編輯所有內容型別。
+>Universal Editor 仍處於開發階段。目前無法編輯所有內容類型。
 
 ## 準備應用程式 {#prepare-app}
 
@@ -74,7 +74,7 @@ Experience Cloud 標頭會始終顯示在畫面頂端。這是一個錨點，說
 
 #### 解決方案 {#solutions}
 
-點選或按一下解決方案切換器可讓您快速跳至其他Experience Cloud解決方案。
+點選或按一下解決方案切換器可讓您快速跳轉到其他 Experience Cloud 解決方案。
 
 ![解決方案切換器](assets/solutions.png)
 
@@ -217,8 +217,8 @@ Universal Editor 標頭始終顯示在畫面頂端，就在 [Experience Cloud �
 
 編輯器會佔據大部分視窗，而且是[位置列](#location-bar)中指定之頁面的呈現位置。
 
-* 如果編輯器處於編輯模式，例如 [文字模式](#text-mode) 或 [媒體模式，](#media-mode) 內容將可供編輯，但您無法關注連結。
-* 如果編輯器在 [預覽模式，](#preview-mode) 內容將可供瀏覽，您可以關注連結，但您無法編輯內容。
+* 如果編輯器處於編輯模式，例如[文字模式](#text-mode)或[媒體模式](#media-mode)，內容即是可編輯狀態，但您無法點選連結。
+* 如果編輯器在[預覽模式，](#preview-mode)內容即為可瀏覽，而且您可以點選連結，但無法編輯內容。
 
 ![編輯器](assets/editor.png)
 
@@ -260,13 +260,13 @@ Universal Editor 標頭始終顯示在畫面頂端，就在 [Experience Cloud �
 
 #### 編輯 {#edit}
 
-當在 [元件模式，](#component-mode) 如果您選取 [內容片段，](/help/assets/content-fragments/content-fragments.md) 編輯選項會顯示在「元件」邊欄上。
+在[元件模式](#component-mode)時，如果您選取[內容片段](/help/assets/content-fragments/content-fragments.md)，則編輯選項會顯示在元件邊欄上。
 
 ![「編輯」圖示](assets/edit.png)
 
 若點選或按一下編輯按鈕，[內容片段編輯器](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor)會在新索引標籤中開啟，讓您可以存取內容片段編輯器的全部功能。
 
-您也可以根據工作流程的需求，在元件邊欄中編輯內容片段的詳細資訊。
+依您的工作流程的需求而定，您還可以在元件邊欄內編輯內容片段的詳細資料。
 
 >[!TIP]
 >
@@ -274,27 +274,27 @@ Universal Editor 標頭始終顯示在畫面頂端，就在 [Experience Cloud �
 
 #### 新增 {#add}
 
-如果您在內容樹狀結構或編輯器中選取容器元件，「新增」選項會出現在元件邊欄中。
+如果您在內容樹或編輯器中選取容器元件，新增選項會顯示在元件邊欄上。
 
 ![「新增」圖示](assets/ue-add-component-icon.png)
 
-點選或按一下新增按鈕會開啟元件下拉式選單，這些元件可用於 [新增至選取的容器。](#adding-components)
+點選或按一下「新增」按鈕即會開啟元件的下拉選單，可用於[新增到選取的容器。](#adding-components)
 
 >[!TIP]
 >
->使用快速鍵 `A` 將元件新增至所選取的容器元件。
+>使用快速鍵`A`將元件新增到選取的容器元件中。
 
 #### 刪除 {#delete}
 
-如果在內容樹狀結構或編輯器中選取容器元件內的元件，元件邊欄上會顯示刪除選項。
+如果您在內容樹或編輯器中選取容器元件內的元件，刪除選項會顯示在元件邊欄上。
 
 ![「刪除」圖示](assets/ue-delete-component-icon.png)
 
-點選或按一下刪除按鈕 [刪除元件。](#deleting-components)
+點選或按一下刪除按鈕[刪除該元件。](#deleting-components)
 
 >[!TIP]
 >
->使用快速鍵 `Shift+Backspace` 以從容器中刪除選取的元件。
+>使用快速鍵`Shift+Backspace`從容器中刪除選取的元件。
 
 ## 編輯內容 {#editing-content}
 
@@ -356,37 +356,37 @@ Universal Editor 標頭始終顯示在畫面頂端，就在 [Experience Cloud �
 
 但如果您希望以[內容片段編輯器](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor)來編輯內容片段，則請按一下模式邊欄中的[「編輯」按鈕](#edit)。
 
-### 將元件新增至容器 {#adding-components}
+### 新增元件到容器中 {#adding-components}
 
 1. 在內容樹或編輯器中選取容器元件。
-1. 然後，點選或按一下元件邊欄中的新增圖示。
+1. 然後點選或按一下元件邊欄中的「新增」圖示。
 
-   ![選取要新增至容器的元件](assets/ue-add-component.png)
+   ![選取要新增到容器的元件](assets/ue-add-component.png)
 
-元件會插入容器中，並可在編輯器中編輯。
+該元件會被插入到容器中並可在編輯器中對其進行編輯。
 
 ### 從容器中刪除元件 {#deleting-components}
 
 1. 在內容樹或編輯器中選取容器元件。
-1. 點選或按一下容器的>形箭號圖示，即可展開其內容樹狀結構中的內容。
-1. 然後，在內容樹狀結構中，選取容器內的元件。
-1. 在元件邊欄中，點選或按一下刪除圖示。
+1. 點選或按一下容器的 ＞形箭號圖示以在內容樹中展開其內容。
+1. 然後，在內容樹中，選取容器內的元件。
+1. 點選或按一下元件邊欄中的刪除圖示。
 
    ![刪除元件](assets/ue-delete-component.png)
 
-所選的元件已刪除。
+選取的元件已刪除。
 
-### 在容器中重新排序元件 {#reordering-components}
+### 將容器中的元件重新排序 {#reordering-components}
 
 1. 在內容樹或編輯器中選取容器元件。
-1. 如果尚未在 [內容樹模式，](#content-tree-mode) 切換至該位置。
-1. 點選或按一下容器的>形箭號圖示，即可展開其內容樹狀結構中的內容。
-1. 在容器內的元件旁拖曳控點圖示，即可重新排列它們。 拖曳元件以在容器中將其重新排序。
+1. 如果尚未變成[內容樹模式，](#content-tree-mode)切換至該模式。
+1. 點選或按一下容器的 ＞形箭號圖示以在內容樹中展開其內容。
+1. 拖曳容器內的元件旁的手柄圖示證明您可以將它們重新排序。拖曳元件，在容器內將它們重新排序。
 
    ![重新排序元件](assets/ue-reordering-components.png)
-1. 在元件樹中，拖曳的元件會變成灰色，而您的插入點會以藍線表示。 釋放元件，將其放置在其新位置。
+1. 被拖曳的元件在元件樹中會變成灰色，而您的插入點則會以藍線表示。將元件鬆開並放在新位置中。
 
-元件會在內容樹和編輯器中重新排序
+元件在內容樹和編輯器中都會重新排序
 
 ## 預覽內容 {#previewing-content}
 
