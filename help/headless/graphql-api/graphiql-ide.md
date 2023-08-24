@@ -4,9 +4,9 @@ description: 了解如何在 Adobe Experience Manager 中使用 GraphiQL IDE。
 feature: Content Fragments,GraphQL API
 exl-id: be2ebd1b-e492-4d77-b6ef-ffdea9a9c775
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1141'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 95%
 >[!NOTE]
 >您必須在[設定瀏覽器](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md)中[設定您的端點](/help/headless/graphql-api/graphql-endpoint.md)，才能使用 GraphiQL IDE。
 
-此 **GraphiQL** 工具可讓您透過以下方式測試並偵錯GraphQL查詢：
+**GraphiQL** 工具可讓您透過以下方式對 GraphQL 查詢進行測試和偵錯：
 * 選擇適合您要用於查詢之 Sites 設定的&#x200B;**端點**
 * 直接輸入新查詢
 * 建立和存取&#x200B;**[持續性查詢](/help/headless/graphql-api/persisted-queries.md)**
@@ -87,7 +87,7 @@ ht-degree: 95%
 
 ## 查詢變數 {#query-variables}
 
-GraphiQL IDE也可讓您管理 [查詢變數](/help/headless/graphql-api/content-fragments.md#graphql-variables).
+GraphiQL IDE 也讓您管理[查詢變數](/help/headless/graphql-api/content-fragments.md#graphql-variables)。
 
 例如：
 
@@ -154,7 +154,7 @@ GraphiQL IDE也可讓您管理 [查詢變數](/help/headless/graphql-api/content
 
 ## 複製 URL 以直接存取查詢 {#copy-url}
 
-此 **複製URL** 選項可讓您複製用來直接存取持久查詢並檢視結果的URL，以模擬查詢。 然後可以將其用於測試；例如，在瀏覽器中存取：
+**複製 URL** 選項可讓您複製用於直接存取持續性查詢的 URL，以模擬查詢並查看結果。然後可以將其用於測試；例如，在瀏覽器中存取：
 
 <!--
   >[!NOTE]
