@@ -1,21 +1,21 @@
 ---
-title: 移轉封閉式使用者群組
+title: 移轉關閉的使用者群組
 description: 本頁提供將內容移轉至Adobe Experience Manager as a Cloud Service後啟用封閉使用者群組的必要特殊考量事項。
 hide: true
 hidefromtoc: true
 source-git-commit: 9da813d39d154e81da5b9814aa86b8318dc0bb3a
 workflow-type: tm+mt
 source-wordcount: '475'
-ht-degree: 3%
+ht-degree: 9%
 
 ---
 
-# 移轉封閉式使用者群組 {#migrating-closed-user-groups}
+# 移轉關閉的使用者群組 {#migrating-closed-user-groups}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_cug_migration"
 >title="封閉使用者群組移轉"
->abstract="封閉使用者群組(CUG)的移轉目前需要一些檢查和步驟，才能在移轉後正常運作。"
+>abstract="封閉使用者群組 (CUG) 的移轉目前需要執行一些檢查和步驟，以便在移轉後正常運作。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/closed-user-groups.html" text="AEM 中的封閉使用者群組"
 
 目前，封閉使用者群組(CUG)需要一些額外的步驟，才能在移轉的目標環境中正常運作。  本檔案將說明相關情境，以及要求他們以預期方式保護節點所需的步驟。
