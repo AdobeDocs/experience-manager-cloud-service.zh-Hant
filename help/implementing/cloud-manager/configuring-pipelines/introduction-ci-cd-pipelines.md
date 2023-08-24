@@ -4,9 +4,9 @@ description: 了解 Cloud Manager 的 CI/CD 管道以及如何使用它們來有
 index: true
 exl-id: 40d6778f-65e0-4612-bbe3-ece02905709b
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1337'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -140,7 +140,7 @@ Cloud Manager 提供兩種類型的管道：
 
 有了前端流水線，給前端開發者更多的獨立性，可以加快開發進程。
 
-請參閱[使用前端管道開發網站](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) 了解此程序的工作原理以及需要注意的一些注意事項，以充分發揮此程序的潛力。
+請參閱[使用前端管道開發網站](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md)，了解此程序的工作原理以及需要注意的一些注意事項，以充分發揮此程序的潛力。
 
 ### 正在設定完整堆疊管道 {#configure-full-stack}
 
@@ -164,8 +164,8 @@ Web 層配置管道透過將 HTTPD/Dispatcher 配置與其他程式碼更改分�
 * 你必須[選擇使用 Dispatcher 的靈活模式](/help/implementing/dispatcher/disp-overview.md#validation-debug)使用 Web 層配置管道。
 * 使用者必須使用&#x200B;**部署管理員**&#x200B;角色以配置或執行管道。
 * 在任何時候，每個環境只能有一個 Web 層配置管道。
-* 當相應的完整棧疊管道正在執行時，使用者無法配置Web層配置管道。
-* Web 層結構必須遵循靈活模式結構，如[雲端中的 Dispatcher](/help/implementing/dispatcher/disp-overview.md#validation-debug)文件所定義。
+* 當相對應的完整堆疊管道正在執行時，使用者無法設定 Web 層設定管道。
+* Web 層結構必須遵循靈活模式結構，如[雲端中的 Dispatcher](/help/implementing/dispatcher/disp-overview.md#validation-debug) 文件所定義。
 
 此外，如果您選擇引入一個 [Web 層設定管道](#full-stack-pipeline)，請注意完整堆疊管道的運作方式。
 
