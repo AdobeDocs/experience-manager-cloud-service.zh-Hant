@@ -2,9 +2,9 @@
 title: 角色和責任
 description: 角色和責任
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '500'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -59,6 +59,6 @@ ht-degree: 91%
 
 >[!NOTE]
 >
-> 以上假設包括 Premier Support。該表格可能會根據客戶和自訂者之間的協議進行修改。如果您需要上述任何內容的說明，Adobe建議您與Adobe銷售和自訂團隊合作。
-> 不想自己處理自訂的客戶應取得Adobe的Professional Services團隊或Experience Manager合作夥伴的服務。
->為了保持高品質水準，Adobe 要求參與 Experience Manager as a Cloud Service 開發專案的合作夥伴至少有一名已獲得 Experience Manager 軟體資深開發人員認證的人員。
+> 以上假設包括 Premier Support。該表格可能會根據客戶和自訂者之間的協議進行修改。如果您需要上述任何內容的說明，Adobe 建議您和您的 Adobe Sales 以及自訂團隊合作。
+> 不想自己處理自訂的客戶應取得 Adobe 的 Professional Services 團隊或 Experience Manager 合作夥伴的服務。
+>為了保持高品質水準，Adobe 要求參與 Experience Manager as a Cloud Service 開發專案的合作夥伴至少需有一名已獲得 Experience Manager 軟體進階開發人員認證的人員。
