@@ -3,9 +3,9 @@ title: 新增 IP 允許清單
 description: 了解如何使用 Cloud Manager 新增您自己的 IP 允許清單。
 exl-id: 769be71f-5c11-4f98-8906-7a5667a25aee
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '196'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 90%
 
 1. 從&#x200B;**概觀**&#x200B;頁面瀏覽到&#x200B;**環境**&#x200B;畫面。
 
-1. 從&#x200B;**環境**&#x200B;畫面瀏覽到&#x200B;**IP 允許清單**&#x200B;頁面。
+1. 從&#x200B;**環境**&#x200B;畫面瀏覽到 **IP 允許清單**&#x200B;頁面。
 
    ![IP 側面板中的允許清單選項](/help/implementing/cloud-manager/assets/ip-allow-list/ip-allow-list-create.png)
 
@@ -32,10 +32,10 @@ ht-degree: 90%
 
    * 此名稱僅供參考，應該是描述性的，以幫助您識別清單。
 
-1. 在&#x200B;**IP 地址/CIDR**&#x200B;場地。
+1. 在 **IP 地址/CIDR** 場地。
 
    * 多個區塊可以用逗號或製表符分隔。
 
 1. 按一下&#x200B;**「儲存」**，確認您的提交內容。
 
-儲存後，新建立的IP允許清單會在的表格中顯示為一列 **IP允許清單** 頁面。
+儲存後，新建立的 IP 允許清單會以表格中的列顯示在 **IP 允許清單**&#x200B;頁面中。
