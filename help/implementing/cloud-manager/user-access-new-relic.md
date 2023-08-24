@@ -1,11 +1,11 @@
 ---
 title: New Relic One
-description: 了解適用於 AEM as a Cloud Service的 New Relic One 應用程式效能監控 (APM) 服務以及如何存取它。
+description: 了解適用於 AEM as a Cloud Service 的 New Relic One 應用程式效能監控 (APM) 服務以及如何存取它。
 exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1586'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -16,25 +16,25 @@ ht-degree: 97%
 
 ## 簡介 {#introduction}
 
-Adobe 非常重視應用程式的監控、可用性和效能。AEM as a Cloud Service提供對作為標準產品的一部分的自訂 New Relic One 監控套件的存取，以確保您的團隊最大程度地了解您的 AEM as a Cloud Service 系統和環境性能指標。
+Adobe 非常重視應用程式的監控、可用性和效能。AEM as a Cloud Service提供對作為標準產品的一部分的自訂 New Relic One 監控套件的存取，以確保您的團隊最大程度地了解您的 AEM as a Cloud Service 系統和環境效能指標。
 
-本文件介紹瞭如何管理對在 AEM as a Cloud Service環境中啟用的 New Relic One 應用程式效能監控 (APM) 功能的存取，以幫助支援性能並讓您充分利用 AEM as a Cloud Service。
+本文件介紹瞭如何管理對在 AEM as a Cloud Service環境中啟用的 New Relic One 應用程式效能監控 (APM) 功能的存取，以幫助支援效能並讓您充分利用 AEM as a Cloud Service。
 
 建立新的生產計畫時，會自動建立與您的 AEM as a Cloud Service Program 關聯的 New Relic One 子帳戶。
 
 ## 功能 {#transaction-monitoring}
 
-用於 AEM as a Cloud Service的 New Relic One APM 具有許多功能。
+用於 AEM as a Cloud Service 的 New Relic One APM 具有許多功能。
 
 * 直接存取專用的 New Relic One 帳戶
 
 * 檢測的 New Relic One 一個 APM 代理，顯示帶有行號的準確方法調用，包括外部依賴項和資料庫
 
-* 透過結合來自基礎設施級監控和應用程式 (Adobe Experience Manager) 監控的關鍵指標來優化整體性能
+* 透過結合來自基礎設施級監控和應用程式 (Adobe Experience Manager) 監控的關鍵指標來優化整體效能
 
 * 直接在 New Relic Insights 指標中公開 AEM as a Cloud Service JMX Mbean 和執行狀況檢查，從而可以深入檢查應用程式堆疊效能和執行狀況指標。
 
-## 管理 New Relic One使用者 {#manage-users}
+## 管理 New Relic One 使用者 {#manage-users}
 
 按照以下步驟定義與您的 AEM as a Cloud Service 計畫關聯的 New Relic One 子帳戶的使用者。
 
@@ -112,7 +112,7 @@ Adobe 非常重視應用程式的監控、可用性和效能。AEM as a Cloud Se
 
 ### 驗證您的電子郵件 {#verify-email}
 
-如果您在登入 New Relic One 時被要求驗證您的電子郵件，這意味著您的電子郵件與多個帳戶相關聯。這可讓您選擇要存取的帳戶。
+如果您在登入 New Relic One 時被要求驗證您的電子郵件，這意味著您的電子郵件與多個帳戶相關聯。這讓您可以選擇要存取哪個帳戶。
 
 如果您不驗證您的電子郵件地址，New Relic 會嘗試使用與您的電子郵件地址關聯的最近建立的使用者記錄來登入。為避免在每次登入時驗證您的電子郵件，請按一下&#x200B;**記得我**&#x200B;登入畫面中的複選框。
 
@@ -120,7 +120,7 @@ Adobe 非常重視應用程式的監控、可用性和效能。AEM as a Cloud Se
 
 ## 偵錯 New Relic One Access {#troubleshooting}
 
-如果您被新增為New Relic One使用者，如一節所述 [管理New Relic One使用者](#manage-users) 而且無法依照下列步驟找到原始帳戶確認電子郵件。
+如果您被新增為 New Relic One 使用者 (如「[管理 New Relic One 使用者](#manage-users)」章節中所述)，並且找不到原始帳戶確認電子郵件，請依照以下步驟進行。
 
 1. 瀏覽 New Relic 至 [`login.newrelic.com/login`](https://login.newrelic.com/login) 登入頁面的概覽頁面。
 
@@ -138,7 +138,7 @@ Adobe 非常重視應用程式的監控、可用性和效能。AEM as a Cloud Se
 
 如果您沒有收到來自 New Relic 的電子郵件：
 
-* 檢查你的[垃圾郵件過濾器](https://docs.newrelic.com/docs/accounts/accounts-billing/account-setup/create-your-new-relic-account/)。
+* 檢查您的[垃圾郵件過濾器](https://docs.newrelic.com/docs/accounts/accounts-billing/account-setup/create-your-new-relic-account/)。
 * 如果適用，[將 New Relic 新增到您的電子郵件允許清單](https://docs.newrelic.com/docs/accounts/accounts/account-maintenance/account-email-settings/#email-whitelist)。
 * 如果這些建議都沒有幫助，請提供有關支援票證的反饋，Adobe 支援團隊可協助您。
 
@@ -150,7 +150,7 @@ Adobe 非常重視應用程式的監控、可用性和效能。AEM as a Cloud Se
 * 新增到 New Relic 的使用者屬於&#x200B;**受限制的**&#x200B;類型，有關詳細資訊，請參閱 [New Relic 文件](https://docs.newrelic.com/docs/accounts/original-accounts-billing/original-users-roles/users-roles-original-user-model/#:~:text=在%20general%2C%20Admins%20take%20responsibility, Restricted%20Users%20can%20use%20them.&amp;text=One%20or%20more%20individuals%20who,change)。
 * AEM as a Cloud Service 僅提供 New Relic One APM 解決方案，不支援警報、記錄或 API 整合。
 
-如需有關 AEM as a Cloud Service 計畫的 New Relic One 產品的更多說明或其他指導，請透過[AEM 支援入口網站](https://helpx.adobe.com/tw/enterprise/using/support-for-experience-cloud.html)開啟支援票證
+如需有關 AEM as a Cloud Service 計畫的 New Relic One 產品的更多說明或其他指導，請透過 [AEM 支援入口網站](https://helpx.adobe.com/tw/enterprise/using/support-for-experience-cloud.html)開啟支援票證
 
 ## 與 New Relic One 有關的常見問答 {#faqs}
 
