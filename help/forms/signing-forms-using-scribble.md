@@ -1,11 +1,10 @@
 ---
 title: 使用手寫簽名對表單進行電子簽章
-description: 使用草寫簽署表單
-seo-description: Signing forms using scribble
+description: 使用手寫簽名和簽名步驟，輕鬆在最適化Forms上進行電子簽章。 簡化數位簽章，提升效率。
 topic-tags: author
-source-git-commit: 755bab29e7b6c49540dee47d6bec13e9421bfc43
+source-git-commit: 6dd34937a8aeb6c7ddfc0fb1180a112de534dd4b
 workflow-type: tm+mt
-source-wordcount: '714'
+source-wordcount: '725'
 ht-degree: 9%
 
 ---
@@ -76,7 +75,7 @@ ht-degree: 9%
 
    * **CSS類別**：指定使用者端程式庫的CSS類別（如有）。 建議使用 [主題](themes.md) 和 [內嵌樣式](inline-style-adaptive-forms.md) 而非CSS類別。
 
-   點選「完成」 ![aem_forms_save](assets/aem_forms_save.png) 圖示以儲存變更。 簽章設定成功。
+   點選「完成」 ![aem_forms_save](assets/aem_forms_save.png) 圖示以儲存變更。 已成功設定簽章。
 
    現在，當您填寫表單時，會顯示最適化表單的PDF版本，並提供簽署PDF檔案的選項。 如需詳細資訊，請參閱 [使用草寫簽名簽署調適型表單](signing-forms-using-scribble.md#sign-an-adaptive-form-using-scribble-signature).
 
