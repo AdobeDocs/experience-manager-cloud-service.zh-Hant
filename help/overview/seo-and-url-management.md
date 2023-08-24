@@ -3,9 +3,9 @@ title: Adobe Experience Manager as a Cloud Service 的 SEO 和 URL 管理最佳�
 description: Adobe Experience Manager as a Cloud Service 的 SEO 和 URL 管理最佳作法
 exl-id: abe3f088-95ff-4093-95a1-cfc610d4b9e9
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3705'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -192,7 +192,7 @@ Resource myPage = req.getResource();
 
 本地化網頁名稱時會面對的困難是，許多 AEM 平台上可用的本地化工具都需要不同位置的網頁有相符的名稱，才能讓內容保持同步。
 
-此 `sling:alias` 屬性讓您一舉兩得。 您可以在任何資源中將 `sling:alias` 新增為屬性，允許資源使用別名。在上一個範例中：
+`sling:alias` 屬性讓您不僅看得到好處，也享用得到。您可以在任何資源中將 `sling:alias` 新增為屬性，允許資源使用別名。在上一個範例中：
 
 * 原本在 JCR 的網頁是：
   `…/es/home`
