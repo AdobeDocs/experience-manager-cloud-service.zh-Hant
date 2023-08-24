@@ -3,15 +3,15 @@ title: 使用工作流程
 description: AEM 工作流程可使要在頁面或資產上執行的一系列步驟自動化。
 exl-id: ed157646-abb3-45c6-bafd-7889bd93fdf3
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '177'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
 # 使用工作流程 {#working-with-workflows}
 
-AEM Workflows可讓您自動化在（一或多個）頁面和/或資產上執行的一系列步驟。
+AEM 工作流程可讓您將在 (一個或多個) 頁面和/或資產上執行的一系列步驟自動化。
 
 例如，在發佈時，編輯人員必須檢閱內容，網站管理員才能啟動頁面。自動進行此範例的工作流程會在各項工作必須執行時通知執行該工作的參與者：
 
