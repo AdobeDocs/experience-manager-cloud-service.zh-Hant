@@ -3,9 +3,9 @@ title: 部署您的程式碼
 description: 了解如何在 AEM as a Cloud Service 中使用 Cloud Manager 管道來將程式碼部署。
 exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
 source-git-commit: 2d1d3ac98f8fe40ba5f9ab1ccec946c8448ddc43
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1193'
-ht-degree: 77%
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ _只有 Full Stack Code 流水線類型支援程式碼掃描、功能測試、UI
 
 ## 在 AEM as a Cloud Service 中使用 Cloud Manager 部署程式碼 {#deploying-code-with-cloud-manager}
 
-[在配置了 Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) (儲存庫、環境和測試環境) 後，您就可以部署程式碼。
+[在配置了 Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) (存放庫、環境和測試環境) 後，您就可以部署程式碼。
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織。
 
@@ -128,19 +128,19 @@ _只有 Full Stack Code 流水線類型支援程式碼掃描、功能測試、UI
 
 ## 重新執行生產部署 {#reexecute-deployment}
 
-在極少數情況下，生產部署步驟可能會因暫時原因而失敗。 在這種情況下，只要生產部署步驟已完成，即支援重新執行生產部署步驟，無論完成的型別為何（例如已取消或不成功）。 重新執行會使用包含三個步驟的相同管道來建立新的執行。
+在極少數情況下，生產部署步驟可能會因暫時原因而失敗。在這種情況下，只要生產部署步驟已經完成，則無論完成類型為何 (例如，取消或失敗)，系統都會支援生產部署步驟的重新執行。重新執行會使用相同管道 (由三個步驟組成) 來建立新的執行。
 
-1. 驗證步驟 — 這基本上和正常管道執行期間發生的驗證相同。
-1. 建置步驟 — 在重新執行的內容中，建置步驟會復製成品，而且實際上並非執行全新的建置流程。
-1. 生產部署步驟 — 這會使用和正常管道執行中的生產部署步驟相同的設定和選項。
+1. 驗證步驟 - 基本上，這和正常管道執行期間發生的驗證相同。
+1. 建置步驟 - 在重新執行的內容中，建置步驟會複製成品，而且實際上並非執行新的建置程序。
+1. 生產部署步驟 - 這會使用和正常管道執行中的生產部署步驟相同的設定和選項。
 
-在可以重新執行的情況下，生產管道狀態頁面會提供 **重新執行** 選項並列於平常專案旁 **下載建置記錄** 選項。
+在可以重新執行的情況下，生產管道狀態頁會提供「**重新執行**」選項 (在一般「**下載建置記錄**」選項旁)。
 
-![管線概觀視窗中的重新執行選項](assets/re-execute.png)
+![管道概觀視窗中的重新執行選項](assets/re-execute.png)
 
 >[!NOTE]
 >
->在重新執行中，建置步驟會在UI中加上標籤，以反映這是在復製成品，而不是重新建置。
+>在重新執行中，UI 會標示建置步驟，以反映這是在複製成品，而不是重新建置。
 
 ### 限制 {#limitations}
 
@@ -151,11 +151,11 @@ _只有 Full Stack Code 流水線類型支援程式碼掃描、功能測試、UI
 
 ### 重新執行 API {#reexecute-API}
 
-除了可在UI中使用外，您還可以使用 [Cloud Manager API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Pipeline-Execution) 以觸發重新執行並識別觸發為重新執行的執行。
+除了可在 UI 中使用之外，您還可以使用 [Cloud Manager API](https://developer.adobe.com/experience-cloud/cloud-manager/參考/API/#標記/管道執行) 觸發重新執行，並且識別被觸發為重新執行的執行。
 
 #### 觸發重新執行 {#reexecute-deployment-api}
 
-若要觸發重新執行，請向HAL連結發出PUT請求 `https://ns.adobe.com/adobecloud/rel/pipeline/reExecute` 在生產部署步驟狀態上。
+若要觸發重新執行，請向生產部署步驟狀態的 HAL 連結 `https://ns.adobe.com/adobecloud/rel/pipeline/reExecute` 發出 PUT 要求。
 
 * 如果此連結存在，則可以從該步驟重新開始執行。
 * 如果不存在，則無法從該步驟重新開始執行。
@@ -197,10 +197,10 @@ _只有 Full Stack Code 流水線類型支援程式碼掃描、功能測試、UI
   "status": "FINISHED"
 ```
 
-HAL連結的href值語法只是範例。 應總是從 HAL 連結讀取實際值，而不是將其產生。
+HAL 連結的 href 值的語法僅為參考範例。應總是從 HAL 連結讀取實際值，而不是將其產生。
 
 如果成功，則向此端點提交 PUT 請求會導致 201 回應，而且該回應主體是新執行的表示方式。這類似於透過 API 啟動常規執行。
 
-#### 識別重新執行的執行 {#identify-reexecution}
+#### 識別已重新執行的執行 {#identify-reexecution}
 
-此值可識別重新執行的執行 `RE_EXECUTE` 在 `trigger` 欄位。
+已重新執行的執行可以透過 `trigger` 欄位中的值 `RE_EXECUTE` 來識別。
