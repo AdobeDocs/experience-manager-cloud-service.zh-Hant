@@ -3,9 +3,9 @@ title: AEM as a Cloud Service 的目標選擇器
 description: 使用 AEM 目標選擇器顯示和選取可用為原始資產副本的資產。
 contentOwner: Adobe
 role: Admin,User
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: cf783a91d33bc7a42e177ace3ca49844f14a6a79
 workflow-type: tm+mt
-source-wordcount: '1902'
+source-wordcount: '1908'
 ht-degree: 86%
 
 ---
@@ -40,6 +40,7 @@ ht-degree: 86%
 您可以將任何 [!DNL Adobe] 或非 Adobe 應用程式與 [!DNL Experience Manager Assets] as a [!DNL Cloud Service] 存放庫整合，並從應用程式之中選取資產。
 
 匯入目標選擇器套件，並使用 Vanilla JavaScript 資料庫連線至 Assets as a Cloud Service，即可完成整合作業。您必須編輯應用程式內的 `index.html` 或任何適當檔案，才能 -
+
 * 定義身份驗證詳細資訊
 * 存取 Assets as a Cloud Service 存放庫
 * 設定目標選擇器顯示屬性
@@ -52,6 +53,7 @@ ht-degree: 86%
 ## 必備條件 {#prerequisites}
 
 在應用程式實作之內定義 `index.html` 檔案或類似檔案的必備條件，以定義存取 [!DNL Experience Manager Assets] as a [!DNL Cloud Service] 存放庫的身分驗證資料。必備條件包括：
+
 * imsOrg
 * imsToken
 * apikey
@@ -62,11 +64,13 @@ ESM CDN (例如，[esm.sh](https://esm.sh/) /[skypack](https://www.skypack.dev/)
 
 在使用 **UMD 版** 的瀏覽器中 (建議)：
 
+在使用 **UMD 版** 的瀏覽器中 (建議)：
+
 ```
-<script src="https://experience.adobe.com/solutions/CQ-assets-selectors/assets/resources/assets-selectors.js"></script>
+<script src="https://experience.adobe.com/solutions/CQ-assets-selectors/static-assets/resources/assets-selectors.js"></script>
 
 <script>
-  const { renderDestinationSelector } = PureJSSelectors;
+  const { renderAssetSelector } = PureJSSelectors;
 </script>
 ```
 
@@ -74,14 +78,14 @@ ESM CDN (例如，[esm.sh](https://esm.sh/) /[skypack](https://www.skypack.dev/)
 
 ```
 <script type="module">
-  import { DestinationSelector } from 'https://experience.adobe.com/solutions/CQ-assets-selectors/assets/resources/@assets/selectors/index.js'
+  import { AssetSelector } from 'https://experience.adobe.com/solutions/CQ-assets-selectors/static-assets/resources/@assets/selectors/index.js'
 </script>
 ```
 
 在使用 **ESM CDN 版**&#x200B;的 Deno/Webpack Module Federation 中：
 
 ```
-import { DestinationSelector } from 'https://experience.adobe.com/solutions/CQ-assets-selectors/assets/resources/@assets/selectors/index.js'
+import { AssetSelector } from 'https://experience.adobe.com/solutions/CQ-assets-selectors/static-assets/resources/@assets/selectors/index.js'
 ```
 
 ### 選取的目標 {#selected-destination}
