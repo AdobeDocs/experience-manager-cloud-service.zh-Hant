@@ -1,10 +1,10 @@
 ---
 title: 設定 CDN 和 WAF 規則以篩選流量
 description: 使用 CDN 和 Web 應用程式防火牆規則篩選惡意流量
-source-git-commit: a9b8b4d6029d0975428b9cff04dbbec993d56172
-workflow-type: ht
-source-wordcount: '2371'
-ht-degree: 100%
+source-git-commit: 0f1ee0ec5fc2d084a6dfdc65d15a8497c23f11a2
+workflow-type: tm+mt
+source-wordcount: '2391'
+ht-degree: 97%
 
 ---
 
@@ -261,7 +261,7 @@ data:
 
 ### 範例 {#ratelimiting-examples}
 
-範例 1：當最近 60 秒內要求速率超過每秒 100 個要求時，即封鎖 `/critical/resource` 60 秒
+範例1：當請求速率在最近60秒內超過每秒100個請求時，封鎖 `/critical/resource` 60秒
 
 ```
 - name: rate-limit-example
@@ -310,17 +310,18 @@ data:
 {
 "timestamp": "2023-05-26T09:20:01+0000",
 "ttfb": 19,
-"cip": "147.160.230.112",
+"cli_ip": "147.160.230.112",
+"cli_country": "CH",
 "rid": "974e67f6",
-"ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Safari/605.1.15",
+"req_ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Safari/605.1.15",
 "host": "example.com",
 "url": "/block-me",
-"req_mthd": "GET",
-"res_type": "",
+"method": "GET",
+"res_ctype": "",
 "cache": "PASS",
-"res_status": 406,
-"res_bsize": 3362,
-"server": "PAR",
+"status": 406,
+"res_age": 0,
+"pop": "PAR",
 "rules": "cdn=path-rule;waf=;action=blocked"
 }
 ```
@@ -329,17 +330,18 @@ data:
 {
 "timestamp": "2023-05-26T09:20:01+0000",
 "ttfb": 19,
-"cip": "147.160.230.112",
-"ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Safari/605.1.15",
+"cli_ip": "147.160.230.112",
+"cli_country": "CH",
+"req_ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Safari/605.1.15",
 "rid": "974e67f6",
 "host": "example.com",
 "url": "/?sqli=%27%29%20UNION%20ALL%20SELECT%20NULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL--%20fAPK",
-"req_mthd": "GET",
-"res_type": "image/png",
+"method": "GET",
+"res_ctype": "image/png",
 "cache": "PASS",
-"res_status": 406,
-"res_bsize": 3362,
-"server": "PAR",
+"status": 406,
+"res_age": 0,
+"pop": "PAR",
 "rules": "cdn=;waf=SQLI;action=blocked"
 }
 ```
@@ -352,15 +354,16 @@ data:
 |---|---|
 | *timestamp* | TLS 終止後要求開始的時間 |
 | *ttfb* | *首位元組時間 (Time To First Byte)* 的縮寫。 發出要求開始到回應內文開始串流的時間之間的時間間隔。 |
-| *cip* | 用戶端 IP 位址。 |
+| *cli_ip* | 用戶端 IP 位址。 |
+| *cli_country* | 雙字母 [ISO 3166-1](https://en.wikipedia.org/wiki/ISO_3166-1) 使用者端國家/地區的alpha-2國家/地區代碼。 |
 | *rid* | 用於唯一識別要求的要求標頭的值。 |
-| *ua* | 負責發出特定 HTTP 要求的使用者代理程式。 |
+| *req_ua* | 負責發出特定 HTTP 要求的使用者代理程式。 |
 | *主機* | 發送要求的目標機構。 |
 | *url* | 包括查詢參數的完整路徑。 |
-| *req_mthd* | 用戶端傳送的 HTTP 方法，例如「GET」或「POST」。 |
-| *res_type* | 此內容類型會用於表示資源的原始媒體類型 |
+| *方法* | 用戶端傳送的 HTTP 方法，例如「GET」或「POST」。 |
+| *res_ctype* | 此內容類型會用於表示資源的原始媒體類型. |
 | *cache* | 快取的狀態。可能的值包括 HIT、MISS 或 PASS |
-| *res_status* | 作為整數值的 HTTP 狀態代碼。 |
-| *res_bsize* | 在回應中傳送到用戶端的內文位元組。 |
-| *server* | CDN 快取伺服器的資料中心。 |
+| *狀態* | 作為整數值的 HTTP 狀態代碼。 |
+| *res_age* | 回應已快取的時間（秒） （在所有節點中）。 |
+| *pop* | CDN 快取伺服器的資料中心。 |
 | *rules* | 任何相符規則的名稱，適用於 CDN 規則和 WAF 規則。<br><br>相符的 CDN 規則會顯示在對 CDN 發出的所有要求的紀錄條目中，無論是 CDN 命中、通過還是未命中。<br><br>還會指出該相符程度是否導致封鎖。<br><br>例如，「`cdn=;waf=SQLI;action=blocked`」<br><br>如果沒有相符的規則，則為空白。 |
