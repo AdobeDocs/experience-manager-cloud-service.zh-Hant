@@ -2,10 +2,10 @@
 title: New Relic One
 description: 了解適用於 AEM as a Cloud Service 的 New Relic One 應用程式效能監控 (APM) 服務以及如何存取它。
 exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: ht
-source-wordcount: '1586'
-ht-degree: 100%
+source-git-commit: f695bc891b60d2494b936a43f5c0a729c64628d7
+workflow-type: tm+mt
+source-wordcount: '1691'
+ht-degree: 94%
 
 ---
 
@@ -120,7 +120,7 @@ Adobe 非常重視應用程式的監控、可用性和效能。AEM as a Cloud Se
 
 ## 偵錯 New Relic One Access {#troubleshooting}
 
-如果您被新增為 New Relic One 使用者 (如「[管理 New Relic One 使用者](#manage-users)」章節中所述)，並且找不到原始帳戶確認電子郵件，請依照以下步驟進行。
+如果您被新增為 New Relic One 使用者，如章節中所述[管理 New Relic One 使用者](#manage-users)並且找不到原始帳戶確認電子郵件，請按照以下步驟操作。
 
 1. 瀏覽 New Relic 至 [`login.newrelic.com/login`](https://login.newrelic.com/login) 登入頁面的概覽頁面。
 
@@ -149,6 +149,12 @@ Adobe 非常重視應用程式的監控、可用性和效能。AEM as a Cloud Se
 * 最多可以新增 30 個使用者。如果已達到最大使用者數，請刪除使用者以便能夠新增新使用者。
 * 新增到 New Relic 的使用者屬於&#x200B;**受限制的**&#x200B;類型，有關詳細資訊，請參閱 [New Relic 文件](https://docs.newrelic.com/docs/accounts/original-accounts-billing/original-users-roles/users-roles-original-user-model/#:~:text=在%20general%2C%20Admins%20take%20responsibility, Restricted%20Users%20can%20use%20them.&amp;text=One%20or%20more%20individuals%20who,change)。
 * AEM as a Cloud Service 僅提供 New Relic One APM 解決方案，不支援警報、記錄或 API 整合。
+
+>[!NOTE]
+>
+>如果在您的New Relic One帳戶中90天或更長時間未偵測到任何活動，則APM代理程式將停止。
+>
+>請透過以下方式開啟支援票證： [AEM支援入口網站](https://helpx.adobe.com/tw/enterprise/using/support-for-experience-cloud.html) 如果您希望為AEMaaCS環境重新啟用APM代理程式。
 
 如需有關 AEM as a Cloud Service 計畫的 New Relic One 產品的更多說明或其他指導，請透過 [AEM 支援入口網站](https://helpx.adobe.com/tw/enterprise/using/support-for-experience-cloud.html)開啟支援票證
 
@@ -189,3 +195,7 @@ New Relic One 使使用者能夠搜索他們有權存取的所有帳戶，並在
 >[!NOTE]
 >
 >要在 New Relic One 中查看這兩個資料集，使用者必須擁有正確的權限並為兩個帳戶 (Adobe New Relic One 和客戶管理的 New Relic 帳戶) 使用相同的登入方法。
+
+### 我的New Relic One帳戶的APM代理程式已停止。 發生了什麼事？ {#deactivated}
+
+[APM代理程式已停止](#limitations) 若在90天或更長時間內未偵測到任何活動。 請透過以下方式開啟支援票證： [AEM支援入口網站](https://helpx.adobe.com/tw/enterprise/using/support-for-experience-cloud.html) 如果您希望為AEMaaCS環境重新啟用APM代理程式。
