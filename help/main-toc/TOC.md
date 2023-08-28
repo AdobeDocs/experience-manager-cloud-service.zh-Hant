@@ -8,9 +8,9 @@ user-guide-description: 了解 Experience Manager as a Cloud Service 的運作�
 breadcrumb-title: 使用手冊
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 316680823fe4bc85e1f4359305047c0d1f517dc7
+source-git-commit: 49d1e002f22427d8ffc6c5bdecd054c10eac47b9
 workflow-type: tm+mt
-source-wordcount: '4249'
+source-wordcount: '4252'
 ht-degree: 99%
 
 ---
@@ -225,7 +225,7 @@ ht-degree: 99%
          + [使用內容轉移工具的準則和最佳實務](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/guidelines-best-practices-content-transfer-tool.md)
          + [內容轉移工具快速入門](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md)
          + [驗證內容轉移](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/validating-content-transfers.md)
-         + [移轉封閉式使用者群組](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/closed-user-groups-migration.md)
+         + [移轉關閉的使用者群組](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/closed-user-groups-migration.md)
          + [處理大型內容存放庫](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md)
          + [使用者對應和主體移轉](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md)
          + [自來源擷取內容](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md)
@@ -519,6 +519,7 @@ ht-degree: 99%
       + [支援的檔案類型和使用案例](/help/assets/supported-file-formats-assets-view.md)
       + [檢視資產](/help/assets/navigate-assets-view.md)
       + [上傳和新增資產](/help/assets/add-delete-assets-view.md)
+      + [大量匯入資產](/help/assets/bulk-import-assets-view.md)
       + [搜尋和探索資產](/help/assets/search-assets-view.md)
       + [資產管理任務](/help/assets/manage-organize-assets-view.md)
       + [編輯影像](/help/assets/edit-images-assets-view.md)
@@ -831,7 +832,7 @@ ht-degree: 99%
             + [Java 功能測試](/help/implementing/cloud-manager/java-functional-testing.md)
             + [UI 測試](/help/implementing/cloud-manager/ui-testing.md)
          + [體驗稽核測試](/help/implementing/cloud-manager/experience-audit-testing.md)
-         + [體驗稽核控制面板](/help/implementing/cloud-manager/experience-audit-dashboard.md)
+         + [體驗稽核儀表板](/help/implementing/cloud-manager/experience-audit-dashboard.md)
       + [存取和管理記錄檔](/help/implementing/cloud-manager/manage-logs.md)
       + [SLA 報告](/help/implementing/cloud-manager/sla-reporting.md)
       + [New Relic One](/help/implementing/cloud-manager/user-access-new-relic.md)
@@ -1005,7 +1006,7 @@ ht-degree: 99%
    + [AEM as a Cloud Service 中的基礎結構和服務監視](/help/operations/monitoring.md)
    + [維護任務](/help/operations/maintenance.md)
    + [備份和還原](/help/operations/backup.md)
-   + [自助還原](/help/operations/restore.md)
+   + [自助服務還原](/help/operations/restore.md)
    + [非同步作業](/help/operations/asynchronous-jobs.md)
    + [移除一般 lucene 索引](/help/operations/removal-generic-lucene-index.md)
    + [查詢和編製索引最佳實務](/help/operations/query-and-indexing-best-practices.md)
