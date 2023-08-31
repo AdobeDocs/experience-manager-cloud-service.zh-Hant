@@ -4,14 +4,14 @@ description: 了解如何設定大量編輯，以便您可以同時編輯多個�
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '248'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
 
 # 設定頁面屬性的大量編輯 {#configuring-bulk-editing-of-page-properties}
 
-[大量編輯頁面屬性](/help/sites-cloud/authoring/fundamentals/page-properties.md#from-the-sites-console-multiple-pages) 可讓您一次編輯多個頁面的屬性。
+[頁面屬性的批次編輯](/help/sites-cloud/authoring/fundamentals/page-properties.md#from-the-sites-console-multiple-pages)可讓您同時編輯多個頁面的屬性。
 
 ## 考量事項 {#considerations}
 

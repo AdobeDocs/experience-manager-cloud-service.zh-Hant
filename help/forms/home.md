@@ -6,7 +6,7 @@ exl-id: aa5ef10c-ba78-4a9d-8b2b-a72a7a306888
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '1155'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -51,7 +51,7 @@ Adobe [!DNL Experience Manager Forms as a Cloud Service] 是一個以客戶為�
 
 ## 最佳化表單效能
 
-此服務與Adobe Analytics整合，可讓您擷取及追蹤已發佈表單的績效量度。 分析這些指標背後的目標是根據有關使表單或文件更有用所需的變更資料做出明智的決策。您可以使用 Adobe Analytics 來發掘使用者在使用最適化表單時遇到的交互模式和問題。
+該服務會和 Adobe Analytics 整合，讓您可擷取和追蹤已發佈表單的效能量度。分析這些指標背後的目標是根據有關使表單或文件更有用所需的變更資料做出明智的決策。您可以使用 Adobe Analytics 來發掘使用者在使用最適化表單時遇到的交互模式和問題。
 
 
 ## 開始 {#key-features}

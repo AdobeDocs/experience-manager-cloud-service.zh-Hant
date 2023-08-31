@@ -6,7 +6,7 @@ exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 source-git-commit: 072f76672198a68a9b6ede51d4a93d3ab27f3c84
 workflow-type: tm+mt
 source-wordcount: '4922'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -160,7 +160,7 @@ GraphQL 查詢是在基礎要求之 AEM 使用者的許可下執行的。如果�
 
 ## 綱要產生 {#schema-generation}
 
-GraphQL是強型別API，這表示資料必須清楚建構並按型別組織。
+GraphQL 是強式類型 API，這表示資料必須結構明確並依類型編排。
 
 GraphQL 規格提供了一系列指南，說明如何建立健全的 API 來查詢特定執行個體上的資料。為此，用戶端需要擷取[綱要](#schema-generation)，其中包含查詢所需的所有類型。
 
@@ -566,7 +566,7 @@ query GetAdventureByType($includePrice: Boolean!) {
 >
 >為獲得最佳效能，請考慮[更新內容片段以便在 GraphQL 篩選中進行分頁和排序](/help/headless/graphql-api/graphql-optimized-filtering-content-update.md)。
 
-此功能可讓您根據指定欄位來排序查詢結果。
+此功能可讓您根據指定的欄位將查詢結果進行排序。
 
 排序標準：
 
@@ -633,7 +633,7 @@ query {
 >
 >為獲得最佳效能，請考慮[更新內容片段以便在 GraphQL 篩選中進行分頁和排序](/help/headless/graphql-api/graphql-optimized-filtering-content-update.md)。
 
-此功能可讓您對傳回清單的查詢型別執行分頁。 提供兩種方法：
+此功能可讓您針對傳回清單的查詢類型執行分頁。提供兩種方法：
 
 * 在 `List` 查詢中，`offset` 和 `limit`
 * 在 `Paginated` 查詢中，`first` 和 `after`
@@ -672,7 +672,7 @@ query {
 
 ### 已分頁查詢 - first 和 after {#paginated-first-after}
 
-`...Paginated` 查詢類型重複使用大部分的 `...List` 查詢類型功能 (篩選、排序)，但沒有使用 `offset`/`limit` 引數，而是使用 `first`/`after`，如 [GraphQL 游標連接規格](https://relay.dev/graphql/connections.htm) 所定義。您可以在 [GraphQL 簡介](https://graphql.org/learn/pagination/#pagination-and-edges)中找到不太正式的簡介。
+`...Paginated` 查詢類型重複使用大部分的 `...List` 查詢類型功能 (篩選、排序)，但沒有使用 `offset`/`limit` 引數，而是使用 `first`/`after`，如 [GraphQL 游標連接規格](https://relay.dev/graphql/connections.htm)所定義。您可以在 [GraphQL 簡介](https://graphql.org/learn/pagination/#pagination-and-edges)中找到不太正式的簡介。
 
 * `first`：要傳回的前 `n` 個項目。
 預設為 `50`。
@@ -709,7 +709,7 @@ query {
 
 ## GraphQL 查詢中的網頁最佳化影像傳遞 {#web-optimized-image-delivery-in-graphql-queries}
 
-網頁最佳化的影像傳送可讓您使用Graphql查詢：
+網頁最佳化影像傳遞可讓您使用 Graphql 查詢進行下列作業：
 
 * 要求 AEM Assets 影像的 URL
 
@@ -727,7 +727,7 @@ query {
 
 這表示在查詢執行期間會套用命令，其方式與這些影像的 GET 要求中的 URL 參數相同。
 
-這可讓您動態建立JSON傳送的影像轉譯，而無須手動建立並將這些轉譯儲存於存放庫。
+這可讓您為 JSON 傳遞動態地建立影像轉譯，即不必手動建立這些轉譯並將其儲存在存放庫中。
 
 GraphQL 中的解決方案代表您可以：
 
@@ -1048,4 +1048,4 @@ query ($seoName: String!, $format: AssetTransformFormat!) {
 
 ## 教學課程 - AEM Headless 和 GraphQL 快速入門 {#tutorial}
 
-正在尋找實作教學課程？查看[AEM Headless 和 GraphQL 快速入門](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html)端對端教學課程，說明如何在 Headless CMS 情境下使用 AEM GraphQL API 建立和公開內容並供外部應用程式取用。
+正在尋找實作教學課程？查看 [AEM Headless 和 GraphQL 快速入門](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html)端對端教學課程，說明如何在 Headless CMS 情境下使用 AEM GraphQL API 建立和公開內容並供外部應用程式取用。

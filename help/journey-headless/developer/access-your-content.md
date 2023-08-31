@@ -5,7 +5,7 @@ exl-id: 1adecc69-5f92-4007-8a2a-65bf1e960645
 source-git-commit: 072f76672198a68a9b6ede51d4a93d3ab27f3c84
 workflow-type: tm+mt
 source-wordcount: '1366'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -49,7 +49,7 @@ GraphQL 是一種開放原始碼的規格，它提供：
 * 查詢語言，使您能夠從結構化物件中選擇特定內容。
 * 執行階段，使用您的結構化內容來完成這些查詢。
 
-GraphQL是強型別API。 這表示&#x200B;*所有*&#x200B;內容必須按類型清楚結構和組織，以便 GraphQL *了解*&#x200B;要存取什麼以及如何存取。資料欄位在 GraphQL 結構描述中定義，其定義內容物件的結構。
+GraphQL 是強式類型 API。這表示&#x200B;*所有*&#x200B;內容必須按類型清楚結構和組織，以便 GraphQL *了解*&#x200B;要存取什麼以及如何存取。資料欄位在 GraphQL 結構描述中定義，其定義內容物件的結構。
 
 然後，GraphQL 端點提供回應 GraphQL 查詢的路徑。
 
@@ -133,7 +133,7 @@ The use cases for the AEM GraphQL API can depend on the type of AEM as a Cloud S
 
 * 是在定義內容片段模型時可用的特定資料類型。
 * 可參考另一個片段，取決於特定的內容片段模型。
-* 可讓您建立並擷取結構化資料。
+* 可讓您建立並接著擷取結構化資料。
 
    * 當定義為 **multifeed** 時，主片段可以參考 (擷取) 多個子片段。
 
@@ -265,7 +265,7 @@ It provides features such as syntax-highlighting, auto-complete, auto-suggest, t
 * 在內容片段編輯器建立內容時
 * 產生您將查詢的 GraphQL 結構描述
 
-### 在哪裡測試你的查詢 {#where-to-test-your-queries}
+### 在哪裡測試您的查詢 {#where-to-test-your-queries}
 
 可以在 GraphiQL 介面輸入查詢。您可以從以下任一方式存取查詢編輯器：
 
