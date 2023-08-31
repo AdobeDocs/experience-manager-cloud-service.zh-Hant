@@ -3,9 +3,9 @@ title: 使用 Dispatcher 工具進行驗證和偵錯
 description: 瞭解本機驗證、偵錯、彈性模式檔案結構，以及如何從舊版模式移轉至彈性模式。
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: fccce4fed057b9cf20825bce043b3ec95c3a5ab8
 workflow-type: tm+mt
-source-wordcount: '2860'
+source-wordcount: '2988'
 ht-degree: 1%
 
 ---
@@ -107,6 +107,28 @@ ht-degree: 1%
 </VirtualHost>
 ```
 
+* `conf.d/enabled_vhosts/<CUSTOMER_CHOICE>.vhost`
+
+此資料夾包含指向「conf.dispatcher.d/available_vhosts」下檔案的相對符號連結。
+
+建立這些符號連結所需的命令範例：
+
+Apple®macOS、Linux和WSL
+
+```
+ln -s ../available_vhosts/wknd.vhost wknd.vhost
+```
+
+Microsoft® Windows
+
+```
+mklink wknd.vhost ..\available_vhosts\wknd.vhost
+```
+
+>[!NOTE]
+>
+> 在Windows下使用符號連結時，您應在提升許可權的命令提示字元中執行（在Linux的Windows子系統中），或具有 [建立符號連結](https://learn.microsoft.com/en-us/windows/security/threat-protection/security-policy-settings/create-symbolic-links) 已指派許可權。
+
 * `conf.d/rewrites/rewrite.rules`
 
 檔案包含在您的 `.vhost` 檔案。 它有一組重寫規則 `mod_rewrite`.
@@ -122,6 +144,28 @@ ht-degree: 1%
 * `conf.dispatcher.d/available_farms/<CUSTOMER_CHOICE>.farm`
 
 您可以有一或多個這樣的檔案，而且這些檔案包含陣列以符合主機名稱，並允許Dispatcher模組使用不同規則處理每個陣列。 檔案建立於 `available_farms` 目錄，並透過中的符號連結啟用 `enabled_farms` 目錄。 從 `.farm` 檔案、其他檔案（例如篩選器、快取規則等）也會包括在內。
+
+* `conf.dispatcher.d/enabled_farms/<CUSTOMER_CHOICE>.farm`
+
+此資料夾包含指向「conf.dispatcher.d/available_farms」下檔案的相對符號連結。
+
+建立這些符號連結所需的命令範例：
+
+Apple®macOS、Linux和WSL
+
+```
+ln -s ../available_farms/wknd.farm wknd.farm
+```
+
+Microsoft® Windows
+
+```
+mklink wknd.farm ..\available_farms\wknd.farm
+```
+
+>[!NOTE]
+>
+> 在Windows下使用符號連結時，您應在提升許可權的命令提示字元中執行（在Linux的Windows子系統中），或具有 [建立符號連結](https://learn.microsoft.com/en-us/windows/security/threat-protection/security-policy-settings/create-symbolic-links) 已指派許可權。
 
 * `conf.dispatcher.d/cache/rules.any`
 
