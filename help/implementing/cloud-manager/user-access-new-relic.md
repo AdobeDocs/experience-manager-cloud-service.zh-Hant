@@ -2,10 +2,10 @@
 title: New Relic One
 description: 了解適用於 AEM as a Cloud Service 的 New Relic One 應用程式效能監控 (APM) 服務以及如何存取它。
 exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
-source-git-commit: 1608a44b8c9b5ae6bd75307ecb29dcd8f0ff367f
+source-git-commit: 8ce7c26c6552c77bc845f76a805768a931b9d532
 workflow-type: tm+mt
-source-wordcount: '1586'
-ht-degree: 100%
+source-wordcount: '1627'
+ht-degree: 97%
 
 ---
 
@@ -169,6 +169,10 @@ Adobe 透過 New Relic One 的 Java 外掛程式監視 AEM as a Cloud Service �
 * 每個應用程式使用一個授權密鑰。
 * AEM as a Cloud Service環境僅向一個 New Relic One 帳戶報告。
 * New Relic One 的完整監控指標和事件將保留 7 天。
+
+### Adobe是否會從New Relic One傳送警報通知？ {#alerting-new-relic}
+
+Adobe僅為了可觀察性目的提供New Relic One存取，不會將其用於客戶警報或內部營運警報。 任何事故的通知都會使用 [使用者通知設定檔。](/help/journey-onboarding/notification-profiles.md)
 
 ### 誰可以存取 New Relic One cloud 服務資料？ {#access-new-relic-cloud}
 
