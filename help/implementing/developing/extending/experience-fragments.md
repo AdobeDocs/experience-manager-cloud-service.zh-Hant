@@ -2,9 +2,9 @@
 title: 體驗片段概觀
 description: 擴充Adobe Experience Manager as a Cloud Service體驗片段。
 exl-id: bd4ea763-d17c-40a6-9a86-a24d7600229e
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 29d8d08899bb60b2bf3027ed32dbcdca3a73e671
 workflow-type: tm+mt
-source-wordcount: '1640'
+source-wordcount: '1646'
 ht-degree: 0%
 
 ---
@@ -42,6 +42,8 @@ ht-degree: 0%
 >[!NOTE]
 >
 >連結一律會參考發佈執行個體。 這些連結旨在供第三方使用，因此一律會從發佈例項（而非製作例項）呼叫連結。
+>
+>如需詳細資訊，請參閱 [外部化URL](/help/implementing/developing/tools/externalizer.md).
 
 ![純HTML轉譯](assets/xf-14.png)
 
