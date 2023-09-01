@@ -2,10 +2,10 @@
 title: AEM Headless 內容架構師歷程
 description: 從這裡開始，此歷程會逐步引導您了解 AEM 強大且靈活的 Headless 特性、其功能，以及如何在您的第一個 Headless 專案中建立內容模型。
 exl-id: ccfec100-8005-4f47-b5b6-ca188b35315c
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: ht
-source-wordcount: '786'
-ht-degree: 100%
+source-git-commit: 94e5d0e84d5c55d0ff61a705e079b4dc8e32a777
+workflow-type: tm+mt
+source-wordcount: '802'
+ht-degree: 98%
 
 ---
 
@@ -70,4 +70,6 @@ Headless 實作放棄了全堆疊解決方案中的傳統頁面和元件管理�
 * [Headless 編寫歷程](/help/journey-headless/author/overview.md) - 從這裡開始，此歷程會逐步引導您了解 AEM 強大且靈活的 Headless 特性、其功能，以及如何在您的第一個 Headless 專案中建立內容模型。
 * [AEM Headless 開發人員歷程](/help/journey-headless/developer/overview.md) - 從這裡開始，此歷程會逐步引導您了解 AEM 強大且靈活的 Headless 特性、其功能，以及如何在您的第一個開發專案中運用這些功能。
 * [AEM as a Cloud Service 技術文件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html) - 如果您已經對 AEM 和 Headless 技術有深入的了解，您可能想要直接查閱我們深入的技術文件。
+   * [AEM as a Headless CMS簡介](/help/headless/introduction.md)
+* [AEM開發人員入口網站](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
 * [AEM Headless 教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html) - 如果您偏好做中學並為傾向技術，請加入我們的由 API 和框架組織的實作教學課程，其在探究如何建立和使用 AEM Headless 應用程式。

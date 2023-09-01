@@ -2,10 +2,10 @@
 title: 了解 CMS Headless 開發
 description: 在 AEM Headless 開發人員歷程的這一部分中，了解 Headless 技術和使用原因。
 exl-id: 8c1fcaf7-1551-4133-b363-6f50af681661
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: ht
-source-wordcount: '1620'
-ht-degree: 100%
+source-git-commit: 94e5d0e84d5c55d0ff61a705e079b4dc8e32a777
+workflow-type: tm+mt
+source-wordcount: '1638'
+ht-degree: 99%
 
 ---
 
@@ -127,4 +127,6 @@ Headless 為傳遞數位體驗帶來了靈活性。但這種靈活性本身也�
 雖然建議您查閱文件 [AEM Headless as a Cloud Service 快速入門](getting-started.md)來繼續 Headless 開發歷程的下個部分，以下也有一些其他選擇性資源，在深入探究本文件提到的一些概念，但不是繼續 Headless 歷程的必要條件。
 
 * [Adobe Experience Manager as a Cloud Service 架構簡介](/help/overview/architecture.md) - 了解 AEM as a Cloud Service 的架構
+* 一個 [AEM as a Headless CMS簡介](/help/headless/introduction.md)
+* 此 [AEM開發人員入口網站](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
 * [AEM Headless 教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html) - 利用這些實作教學課程來探索如何運用各種不同方式使用 AEM 將內容傳遞到 Headless 端點，並選擇適合您的方式。

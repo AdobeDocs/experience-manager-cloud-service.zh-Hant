@@ -2,10 +2,10 @@
 title: 了解 Headless 內容以及如何在 AEM 中翻譯
 description: 了解 Headless 概念、它們如何對應到 AEM 以及 AEM 翻譯理論。
 exl-id: 72bb6646-e573-4576-8d17-49787d8c8c7f
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
-workflow-type: ht
-source-wordcount: '725'
-ht-degree: 100%
+source-git-commit: 94e5d0e84d5c55d0ff61a705e079b4dc8e32a777
+workflow-type: tm+mt
+source-wordcount: '743'
+ht-degree: 98%
 
 ---
 
@@ -78,3 +78,5 @@ AEM 的強大功能使其能夠以 Headless 方式、全堆疊方式或同時以
 雖然建議您查閱文件[AEM Headless 翻譯快速入門](getting-started.md)來繼續 Headless 翻譯歷程的下個部分，以下也有一些其他選擇性資源，在深入探究本文件提到的一些概念，但不是繼續 Headless 歷程的必要條件。
 
 * [MSM 和翻譯](/help/sites-cloud/administering/msm-and-translation.md) - 詳細說明 AEM 多網站管理員以及它如何與其翻譯工具一起工作
+* [AEM as a Headless CMS簡介](/help/headless/introduction.md)
+* [AEM中Headless的Tutorials](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)
