@@ -2,9 +2,9 @@
 title: AEMas a Cloud Service記錄
 description: 瞭解如何使用AEM的記錄as a Cloud Service來設定中央記錄服務的全域引數、個別服務的特定設定，或如何請求資料記錄。
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: 2fcc33cfb8b0be89b4b9f91d687dc21ba456000c
+source-git-commit: 7d4e1acee54ebcb1398bcc6ab83491e3fa6a8801
 workflow-type: tm+mt
-source-wordcount: '2683'
+source-wordcount: '2669'
 ht-degree: 8%
 
 ---
@@ -17,7 +17,7 @@ AEMas a Cloud Service記錄設定和記錄層級在設定檔案中進行管理�
 
 * AEM記錄，可在AEM應用程式層級執行記錄
 * Apache HTTPD Web伺服器/Dispatcher記錄，會在發佈層上執行網頁伺服器和Dispatcher的記錄。
-* CDN記錄（如其名稱所示）會在CDN上執行記錄。 此功能目前可供早期採用者使用；若要加入早期採用者計畫，請傳送電子郵件至 **aemcs-cdnlogs-adopter@adobe.com**，包括貴組織的名稱以及有關您對該功能感興趣的內容。
+* CDN記錄（如其名稱所示）會在CDN上執行記錄。 此功能將於9月初逐步向客戶推出。
 
 ## AEM記錄 {#aem-logging}
 
@@ -504,10 +504,12 @@ Define DISP_LOG_LEVEL debug
 
 >[!NOTE]
 >
->此功能尚未正式推出。若要加入進行中的早期採用者計畫，請傳送電子郵件至 **aemcs-cdnlogs-adopter@adobe.com**，包括貴組織的名稱以及有關您對該功能感興趣的內容。
+>此功能將於9月初逐步向客戶推出。
 >
 
 AEMas a Cloud Service提供對CDN記錄的存取權，這對使用案例（包括快取命中比率最佳化）很有用。 無法自訂CDN記錄格式，且沒有將其設定為不同模式（例如info、warn或error）的概念。
+
+請注意，Splunk轉送功能尚不支援CDN記錄。
 
 **範例**
 
@@ -600,6 +602,8 @@ Apache層記錄（包括Dispatcher）位於容納Dispatcher的Docker容器中。
 擁有Splunk帳戶的客戶可透過客戶支援票證，要求將其AEM Cloud Service記錄轉送至適當的索引。 記錄資料等同於透過Cloud Manager記錄下載提供的資料，但客戶可能會發現使用Splunk產品中提供的查詢功能很方便。
 
 與傳送至Splunk的記錄檔相關聯的網路頻寬會視為客戶網路I/O使用量的一部分。
+
+請注意，Splunk轉送尚不支援CDN記錄。
 
 ### 啟用Splunk轉送 {#enabling-splunk-forwarding}
 

@@ -2,10 +2,10 @@
 title: 踏上首次使用 AEM Headless 之路
 description: 在 AEM Headless 開發人員歷程的這一部分中，您將了解在 AEM 中實作您的第一個 Headless 體驗的步驟 (包括規劃考量事項)，並學習最佳做法以使您的操作過程盡可能順利。
 exl-id: 172ad8d8-5067-4452-bf91-1eea9a39a7bc
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '2012'
-ht-degree: 100%
+source-git-commit: 7d09cafc4f8518fee185d3f9efc76c33ec20f9a3
+workflow-type: tm+mt
+source-wordcount: '1991'
+ht-degree: 98%
 
 ---
 
@@ -110,8 +110,8 @@ Headless 專案的中繼環境用於在新的 AEM 產品版本推送到生產環
 
 ### 編寫內容 {#authoring}
 
-* 對於內容的管道特定版本，請考慮使用內容片段變化。變化與內容主版同步，以簡化內容變更管理。
-* 邀請其他內容製作者審查內容並提供意見回饋 (內含註解和評論)，這些可在內容片段編輯器中取得，也可在內容片段 Admin Console 中跨片段全域取得。
+* 對於內容的管道特定版本，請考慮使用內容片段變化。變數會與主要內容同步，以簡化內容變更管理。
+* 邀請其他內容製作者檢閱內容並提供意見回饋。
 * 使用盡可能少使用必要元素讓事情繼續進行。必要元素會讓工作流程無法進行。
 
 ### 編寫全域內容 {#localization}
@@ -149,6 +149,6 @@ Headless 專案的中繼環境用於在新的 AEM 產品版本推送到生產環
 * [AEM Guides WKND - GraphQL](https://github.com/adobe/aem-guides-wknd-graphql) - 此 GitHub 專案包含以 AEM GraphQL API 為重點的範例應用程式。
 * [Adobe Experience Manager as a Cloud Service 架構簡介](/help/overview/architecture.md) - AEM 架構的完整概述
 * [Headless 設定](/help/headless/introduction.md#getting-started) - 向熟悉 AEM 的使用者快速介紹 AEM 的 Headless 功能。
-* [建立內容片段模型](/help/sites-cloud/administering/content-fragments/content-fragments-models.md) - 內容片段模型的技術文件
-* [建立內容片段](/help/sites-cloud/administering/content-fragments/content-fragments.md) - 內容片段的技術文件
+* [建立內容片段模型](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) - 內容片段模型的技術文件
+* [建立內容片段](/help/sites-cloud/administering/content-fragments/managing.md#creating-content-fragments) - 內容片段的技術文件
 * [使用 GraphQL 查詢內容](/help/headless/graphql-api/content-fragments.md) - GraphQL API 的技術文件

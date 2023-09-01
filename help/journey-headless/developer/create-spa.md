@@ -2,7 +2,7 @@
 title: 選擇性 - 如何使用 Adobe Experience Manager (AEM) 建立單頁應用程式 (SPA)
 description: 在 AEM Headless 開發人員歷程的此延續部分 (選擇性)，您將了解 AEM 如何將 Headless 傳遞與傳統的全堆疊 CMS 功能相結合，以及如何使用 AEM 的 SPA 編輯器框架建立可編輯的 SPA。
 exl-id: d74848f2-683e-49e1-9374-32596ca5d7d7
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 7d09cafc4f8518fee185d3f9efc76c33ec20f9a3
 workflow-type: tm+mt
 source-wordcount: '1266'
 ht-degree: 100%
@@ -126,5 +126,5 @@ RemotePage 元件允許在 AEM 中呈現外部 SPA。
 * [SPA 編輯器概述](/help/implementing/developing/hybrid/editor-overview.md) - 詳細說明 SPA 編輯器的運作原理
 * [伺服器端呈現作業](/help/implementing/developing/hybrid/ssr.md) - 如何為 AEM SPA 設定 SSR
 * [SPA 參考文件](/help/implementing/developing/hybrid/reference-materials.md) - 開放原始碼 AEM SPA GitHub 專案的 JavaScript API 參考和連結
-* [內容片段](/help/sites-cloud/administering/content-fragments/content-fragments.md) - 如何建立內容片段
+* [內容片段](/help/sites-cloud/administering/content-fragments/managing.md#creating-content-fragments) - 如何建立內容片段
 * [AEM 專案原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) - 一種 Maven 範本，其依照最佳做法建立簡化的 Adobe Experience Manager (AEM) 專案，作為您網站的起點。

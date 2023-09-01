@@ -2,16 +2,22 @@
 title: 變化 — 編寫片段內容（資產 — 內容片段）
 description: 瞭解變數如何可讓您為片段編寫內容，然後根據用途建立該內容的變數，從而使您在AEM中的Headless內容更靈活。
 exl-id: af05aae6-d535-4007-ba81-7f41213ff152
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: fa133319077388a3598ca13b2574b8b62bf9b2b4
 workflow-type: tm+mt
-source-wordcount: '2435'
-ht-degree: 11%
+source-wordcount: '2567'
+ht-degree: 10%
 
 ---
 
 # 變化 - 編寫片段內容{#variations-authoring-fragment-content}
 
 [變數](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) 是AEM內容片段的一項重要功能，因為它們可讓您建立和編輯主要內容的復本，以用於特定頻道和/或情境，使headless內容傳送更靈活。
+
+>[!NOTE]
+>
+>內容片段是Sites功能，但儲存為 **資產**.
+>
+>編寫內容片段有兩個編輯器。 本節介紹原始編輯器，主要透過以下網址存取： **資產** 主控台。 請參閱網站檔案， [內容片段 — 製作](/help/sites-cloud/administering/content-fragments/authoring.md)，以取得新編輯器的詳細資訊(主要透過以下網址存取： **內容片段** 主控台)。
 
 從 **變數** 標籤您可以：
 
@@ -391,8 +397,33 @@ Software Distribution提供其他語言作為語言模型套件：
    >[!CAUTION]
    >
    如果在新增對其他片段的參考後，您將格式變更為：
+   >
    * **純文字**：參考從片段中完全遺失。
    * **Markdown**：參考仍會保留。
+
+## 繼承 {#inheritance}
+
+繼承是可自動將內容從一個片段推送到另一個片段的機制。 繼承的欄位和變數可能是以下專案的產物： [多網站管理](/help/assets/content-fragments/content-fragments.md#reusing-content-fragments-with-msm-assets).
+
+您可以取消（然後重新啟用）繼承。 根據內容，這可用於變數，或單個欄位，如果片段是即時副本的一部分。
+
+![顯示繼承關係的內容片段](/help/assets/content-fragments/assets/cfm-variations-inheritance.png)
+
+例如：
+
+* 取消繼承
+
+  ![取消繼承按鈕](/help/assets/content-fragments/assets/editing-cancel-inheritance.png)
+
+* 重新啟用繼承（如果繼承已取消）
+
+  ![「重新啟用繼承」按鈕](/help/assets/content-fragments/assets/editing-reenable-inheritance.png)
+
+<!--
+* Rollout action is also available in Live Copy source
+
+  ![Rollout button](/help/assets/content-fragments/assets/editing-rollout.png)
+-->
 
 ## 管理變數 {#managing-variations}
 

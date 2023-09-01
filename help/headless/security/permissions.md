@@ -3,14 +3,14 @@ title: Headless 內容的權限考量事項
 description: 了解使用 Adobe Experience Manager 進行 Headless 實作時涉及的不同權限和 ACL 考量事項。了解編寫和發佈環境所需的不同角色和可能權限層級。
 feature: Content Fragments,GraphQL API
 exl-id: 3fbee755-2fa4-471b-83fc-3f4bf056267a
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 526520a8d9d217d0861a7283b10f7b89dffaf9d5
 workflow-type: tm+mt
 source-wordcount: '841'
 ht-degree: 100%
 
 ---
 
-# Headless 內容的權限考量事項
+#  Headless 內容的權限考量事項
 
 進行 Headless 實作時，應該處理幾個安全和權限方面的問題。權限和角色可以根據 AEM 環境：**作者**&#x200B;或&#x200B;**發佈**&#x200B;進行廣泛的考量。每個環境都包含不同的角色和不同的需求。
 
@@ -54,7 +54,7 @@ ht-degree: 100%
 
 如需更精細的權限，請使用 AEM 中的&#x200B;**權限**&#x200B;主控台，並將路徑從 `/content/dam`更新為更具體的路徑，即 `/content/dam/mycontentfragments`。
 
-可能需要授予此群組使用者建立和編輯而非刪除內容片段的權限。若要查看和指派編輯權限而非刪除權限，請參閱[內容片段 - 刪除考量事項](/help/sites-cloud/administering/content-fragments/content-fragments-delete.md)。
+可能需要授予此群組使用者建立和編輯而非刪除內容片段的權限。若要查看和指派編輯權限而非刪除權限，請參閱[內容片段 - 刪除考量事項](/help/sites-cloud/administering/content-fragments/delete-considerations.md)。
 
 ### 模型編輯器
 

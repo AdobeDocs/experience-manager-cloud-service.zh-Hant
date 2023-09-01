@@ -6,10 +6,10 @@ keywords: 新增自訂錯誤處理程式、新增預設錯誤處理程式、在�
 contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms
-source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
+source-git-commit: a635a727e431a73086a860249e4f42d297882298
 workflow-type: tm+mt
-source-wordcount: '1982'
-ht-degree: 5%
+source-wordcount: '2428'
+ht-degree: 4%
 
 ---
 
@@ -28,7 +28,7 @@ AEM Forms為表單提交提供現成可用的成功和錯誤處理常式。 此�
 
 調適型表單會根據預先設定的驗證條件，驗證您在欄位中提供的輸入，並檢查由設定為叫用外部服務的REST端點傳回的各種錯誤。 您可以根據搭配最適化表單使用的資料來源來設定驗證條件。 例如，如果您使用RESTful Web服務做為資料來源，您可以在Swagger定義檔案中定義驗證條件。
 
-如果輸入值符合驗證准則，則會將值提交至資料來源，否則「最適化表單」會使用錯誤處理常式顯示錯誤訊息。 與此方法類似，最適化Forms會整合自訂錯誤處理常式，以執行資料驗證。 如果輸入值不符合驗證准則，則錯誤訊息會在最適化表單中的欄位層級顯示。 當伺服器傳回的驗證錯誤訊息為標準訊息格式時，就會發生這種情況。
+如果輸入值符合驗證准則，則會將值提交至資料來源，否則「最適化表單」會使用錯誤處理常式顯示錯誤訊息。 與此方法類似，最適化Forms整合自訂錯誤處理常式，以執行資料驗證。 如果輸入值不符合驗證准則，則錯誤訊息會在最適化表單中的欄位層級顯示。 當伺服器傳回的驗證錯誤訊息為標準訊息格式時，就會發生這種情況。
 
 
 ## 使用錯誤處理常式 {#uses-of-error-handler}
@@ -175,49 +175,47 @@ AEM Forms為表單提交提供現成可用的成功和錯誤處理常式。 此�
 
 ## 使用規則編輯器新增錯誤處理常式 {#add-error-handler-using-rule-editor}
 
-使用 [規則編輯器的叫用服務](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=en#invoke) 動作，您會根據您用於最適化表單的資料來源來定義驗證條件。 如果您使用RESTful Web服務做為資料來源，則可以在Swagger定義檔案中定義驗證條件。 利用調適型Forms中的錯誤處理常式函式和規則編輯器，您可以有效地管理和自訂錯誤處理。 您可以使用規則編輯器定義條件，並設定要在規則觸發時執行的所需動作。 「最適化表單」會根據預先設定的驗證條件，驗證您在欄位中輸入的輸入。 如果輸入值不符合驗證標準，錯誤訊息會在最適化表單的欄位層級顯示。
+使用 [規則編輯器的叫用服務](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=en#invoke) 動作，您會根據您用於最適化表單的資料來源來定義驗證條件。 如果您使用RESTful Web服務做為資料來源，則可以在Swagger定義檔案中定義驗證條件。 使用調適型Forms中的錯誤處理常式函式和規則編輯器，您便可有效地管理和自訂錯誤處理。 您可以使用規則編輯器定義條件，並設定要在規則觸發時執行的所需動作。 「最適化表單」會根據預先設定的驗證條件，驗證您在欄位中輸入的輸入。 如果輸入值不符合驗證標準，錯誤訊息會在最適化表單的欄位層級顯示。
 
 >[!NOTE]
 >
 > * 若要使用錯誤處理常式搭配規則編輯器的「叫用」服務動作，請使用表單資料模型設定Adaptive Forms 。
-> * 如果錯誤回應在標準結構描述中，預設會提供預設錯誤處理常式，以在欄位上顯示錯誤訊息。 如果錯誤回應不符合標準結構描述，預設錯誤處理常式也可以呼叫自訂錯誤處理常式。
+> * 如果錯誤回應位於標準結構描述中，則會提供預設錯誤處理常式，以在欄位上顯示錯誤訊息。 您也可以從自訂錯誤處理常式函式呼叫預設錯誤處理常式。
 
-<!-- 
-Using Rule Editor, you can:
-* [Add default error handler function](#add-default-errror-handler)
-* [Add custom error handler function](#add-custom-errror-handler)
+使用規則編輯器，您可以：
+* [新增預設錯誤處理常式函式](#add-default-errror-handler)
+* [新增自訂錯誤處理常式函式](#add-custom-errror-handler)
 
 
-### Add default error handler function {#add-default-errror-handler}
+### 新增預設錯誤處理常式函式 {#add-default-errror-handler}
 
-A default error handler is supported by default to display error messages on fields if the error response is in standard schema or in server-side validation failure. 
-To understand how to use a default error handler using the [Rule Editor's Invoke Service](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=en#invoke) action, take an example of a simple Adaptive Form with two fields, **Pet ID** and **Pet Name** and use a default error handler at the **Pet ID** field to check for various errors returned by the REST endpoint configured to invoke an external service, for example, `200 - OK`,`404 - Not Found`, `400 - Bad Request`. To add a default error handler using the Rule Editor's Invoke Service action, execute the following steps:
+如果錯誤回應位於標準結構描述或伺服器端驗證失敗，則支援預設錯誤處理常式，以在欄位上顯示錯誤訊息。
+若要瞭解如何使用預設錯誤處理常式，請 [規則編輯器的叫用服務](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=en#invoke) 動作，以具有兩個欄位的簡單調適型表單為例， **寵物ID** 和 **寵物名稱** 並在以下位置使用預設錯誤處理常式： **寵物ID** 用於檢查由配置為呼叫外部服務的REST端點傳回的各種錯誤的欄位，例如 `200 - OK`，`404 - Not Found`， `400 - Bad Request`. 若要使用規則編輯器的叫用服務動作新增預設錯誤處理常式，請執行下列步驟：
 
-1. Open an Adaptive Form in authoring mode, select a form component and tap **[!UICONTROL Rule Editor]** to open the rule editor.
-1. Tap **[!UICONTROL Create]**.
-1. Create a condition in the **When** section of the rule. For example, **When[Name of Pet ID field]** is changed. Select is changed from the **Select State** drop-down list.
-1. In the **Then** section, select **[!UICONTROL Invoke Service]** from the **Select Action** drop-down list.
-1. Select a **Post service** and its corresponding data bindings from the **Input** section. For example, to validate **Pet ID**, select a **Post service** as **GET /pet/{petId}** and select **Pet ID** in the **Input** section.
-1. Select the data bindings from the **Output** section. Select **Pet Name** in the **Output** section.
-1. Select **[!UICONTROL Default Error Handler]** from the **Error Handler** section. 
-1. Click **[!UICONTROL Done]**.
+1. 在撰寫模式中開啟最適化表單，選取表單元件並點選 **[!UICONTROL 規則編輯器]** 以開啟規則編輯器。
+1. 點選「**[!UICONTROL 建立]**」。
+1. 在中建立條件 **時間** 區段。 例如， **時間[Pet ID欄位名稱]** 已變更。 選取已變更，從 **選取狀態** 下拉式清單。
+1. 在 **則** 區段，選取 **[!UICONTROL 啟動服務]** 從 **選取動作** 下拉式清單。
+1. 選取 **貼文服務** 以及與其對應的資料繫結 **輸入** 區段。 例如，驗證 **寵物ID**，選取 **貼文服務** 作為 **GET/pet/{petId}** 並選取 **寵物ID** 在 **輸入** 區段。
+1. 選取資料繫結 **輸出** 區段。 選取 **寵物名稱** 在 **輸出** 區段。
+1. 選取 **[!UICONTROL 預設錯誤處理常式]** 從 **錯誤處理常式** 區段。
+1. 按一下&#x200B;**[!UICONTROL 「完成」]**。
 
- ![add a default error handler for a field validation checks in a form](/help/forms/assets/default-error-handler.png)
+![在表單中新增欄位驗證檢查的預設錯誤處理常式](/help/forms/assets/default-error-handler.png)
 
-As a result of this rule, the values you enter for **Pet ID** checks validation for **Pet Name** using external service invoked by REST endpoint. If the validation criteria based on the data source fail, the error messages are displayed at the field level.
+根據此規則，您為下列專案輸入的值 **寵物ID** 檢查驗證 **寵物名稱** 使用REST端點叫用的外部服務。 如果以資料來源為基礎的驗證條件失敗，則錯誤訊息會顯示在欄位層級。
 
- ![display the default error message when you add a default error handler in a form to handle error responses](/help/forms/assets/default-error-message.png)
-
--->
+![在表單中新增預設錯誤處理常式以處理錯誤回應時，顯示預設錯誤訊息](/help/forms/assets/default-error-message.png)
 
 ### 新增自訂錯誤處理常式函式 {#add-custom-errror-handler}
 
 您可以新增自訂錯誤處理常式函式，以執行某些動作，例如：
+
 * 處理使用非標準或標準錯誤回應的錯誤回應。 請務必注意，這些非標準錯誤回應不符合 [錯誤回應的標準結構描述](#failure-response-format).
 * 將analytics事件傳送至任何analytics平台。 例如，Adobe Analytics。
 * 顯示包含錯誤訊息的模型對話方塊。
 
-除了上述動作，還可使用自訂錯誤處理常式來執行符合特定使用者需求的自訂函式。
+除了上述動作之外，自訂錯誤處理常式也可用來執行符合特定使用者需求的自訂函式。
 
 自訂錯誤處理常式是函式（使用者端程式庫），設計用於回應外部服務傳回的錯誤，並為一般使用者提供自訂回應。 任何具有註解的使用者端資料庫 `@errorHandler` 視為自訂錯誤處理常式函式。 此註解有助於識別 `.js` 檔案。
 若要瞭解如何使用建立和使用自訂錯誤處理常式， [規則編輯器的Invoke服務](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=en#invoke) 動作，以含有兩個欄位的最適化表單為例， **寵物ID** 和 **寵物名稱** 並在以下位置使用自訂錯誤處理常式： **寵物ID** 用於檢查由配置為呼叫外部服務的REST端點傳回的各種錯誤的欄位，例如 `200 - OK`，`404 - Not Found`， `400 - Bad Request`.
@@ -229,8 +227,10 @@ As a result of this rule, the values you enter for **Pet ID** checks validation 
 #### 1.建立自訂錯誤處理常式 {#create-custom-error-message}
 
 若要建立自訂錯誤函式，請執行下列步驟：
-1. [原地複製您的 AEM Forms as a Cloud Service 存放庫.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#accessing-git).
-1. 導覽至 `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/clientlibs/`。
+
+1. [原地複製您的 AEM Forms as a Cloud Service 存放庫](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#accessing-git).
+1. 在下建立資料夾 `[AEM Forms as a Cloud Service repository folder]/apps/` 資料夾。 例如，建立名為的資料夾 `experience-league`
+1. 瀏覽至 `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/experience-league/` 並建立 `ClientLibraryFolder` 作為 `clientlibs`.
 1. 建立名為的資料夾 `js`.
 1. 導覽至 `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/clientlibs/js` 資料夾。
 1. 新增JavaScript檔案，例如 `function.js`. 此檔案包含自訂錯誤處理常式的程式碼。
@@ -247,12 +247,22 @@ As a result of this rule, the values you enter for **Pet ID** checks validation 
            console.log("Custom Error Handler processing start...");
            console.log("response:"+JSON.stringify(response));
            console.log("headers:"+JSON.stringify(headers));
+           guidelib.dataIntegrationUtils.defaultErrorHandler(response, headers);
            console.log("Custom Error Handler processing end...");
        }
    ```
 
-   <!--  To call the default error handler after the custom error handler, the following line of the sample code is used:
-        `guidelib.dataIntegrationUtils.defaultErrorHandler(response, headers) `-->
+   若要從自訂錯誤處理常式呼叫預設錯誤處理常式，會使用下列程式碼範例行：
+   `guidelib.dataIntegrationUtils.defaultErrorHandler(response, headers) `
+
+   >[!NOTE]
+   >
+   > 在 `.content.xml` 檔案，新增 `allowProxy` 和 `categories` 屬性。
+   >
+   > * `allowProxy = [Boolean]true`
+   > * `categories= customfunctionsdemo`
+   >例如，在此案例中， [custom-errorhandler-name] 提供為 `customfunctionsdemo`.
+
 1. 儲存 `function.js` 檔案。
 1. 導覽至 `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/clientlibs/js` 資料夾。
 1. 新增文字檔為 `js.txt`. 檔案包含：
@@ -262,7 +272,10 @@ As a result of this rule, the values you enter for **Pet ID** checks validation 
        functions.js
    ```
 
-1. 儲存 `js.txt` 檔案。
+1. 儲存 `js.txt` 檔案。\
+   建立的資料夾結構如下所示：
+
+   ![已建立的使用者端資料庫資料夾結構](/help/forms/assets/customclientlibrary_folderstructure.png)
 
    >[!NOTE]
    >
@@ -276,11 +289,17 @@ As a result of this rule, the values you enter for **Pet ID** checks validation 
        git push
    ```
 
-1. [執行管道.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline)
+1. [執行管道.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#setup-pipeline)
 
 管道執行成功後，自訂錯誤處理常式便可在最適化表單規則編輯器中使用。 現在，讓我們瞭解如何在AEM Forms中使用規則編輯器的叫用服務來設定和使用自訂錯誤處理常式。
 
 #### 2.使用規則編輯器來設定自訂錯誤處理常式 {#use-custom-error-handler}
+
+在實作最適化表單中的自訂錯誤處理常式之前，請確定使用者端程式庫名稱位於 **[!UICONTROL 使用者端資料庫類別]** 會與的類別選項中指定的名稱對齊 `.content.xml` 檔案。
+
+![在調適型表單容器設定中新增使用者端資料庫的名稱](/help/forms/assets/client-library-category-name.png)
+
+在此情況下，使用者端程式庫名稱提供為 `customfunctionsdemo` 在 `.content.xml` 檔案。
 
 若要使用自訂錯誤處理常式，請使用 **[!UICONTROL 規則編輯器的叫用服務]** 動作：
 
@@ -295,9 +314,7 @@ As a result of this rule, the values you enter for **Pet ID** checks validation 
 
 ![在表單中新增自訂錯誤處理常式，以處理錯誤回應](/help/forms/assets/custom-error-handler.png)
 
-
 根據此規則，您為下列專案輸入的值 **寵物ID** 檢查驗證 **寵物名稱** 使用REST端點叫用的外部服務。 如果以資料來源為基礎的驗證條件失敗，則錯誤訊息會顯示在欄位層級。
-
 
 ![在表單中新增自訂錯誤處理常式，以處理錯誤回應](/help/forms/assets/custom-error-handler-message.png)
 

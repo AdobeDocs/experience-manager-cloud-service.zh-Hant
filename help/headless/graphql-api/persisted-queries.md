@@ -3,8 +3,8 @@ title: 持續性 GraphQL 查詢
 description: 了解如何在 Adobe Experience Manager as a Cloud Service 中保留 GraphQL 查詢，以將效能最佳化。用戶端應用程式可以使用 HTTP GET 方法要求持續性查詢，回應可以在 Dispatcher 和 CDN 層快取，最終提高用戶端應用程式的效能。
 feature: Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: ht
+source-git-commit: d6b98559e7cbe5fc5bd05d9cf37225e960e668e7
+workflow-type: tm+mt
 source-wordcount: '1680'
 ht-degree: 100%
 
@@ -32,7 +32,7 @@ AEM 有提供 [GraphiQL IDE](/help/headless/graphql-api/graphiql-ide.md)，可�
 
 >[!NOTE]
 >
->如需詳細資料，請參閱[在設定瀏覽器中啟用內容片段功能](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser)。
+>如需詳細資料，請參閱[在設定瀏覽器中啟用內容片段功能](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser)。
 >
 >必須為適當的 Sites 設定啟用 **GraphQL 持續性查詢**。
 

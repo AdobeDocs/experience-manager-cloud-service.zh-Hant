@@ -2,8 +2,8 @@
 title: 了解如何在 AEM 中建立內容片段模型
 description: 了解使用內容片段模型建立 Headless CMS 內容模型的概念和機制。
 exl-id: fdfa79d3-fbed-4467-a898-c1b2678fc0cb
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
+source-git-commit: 7d09cafc4f8518fee185d3f9efc76c33ec20f9a3
+workflow-type: tm+mt
 source-wordcount: '687'
 ht-degree: 100%
 
@@ -112,23 +112,23 @@ At the very start you need to enable Content Fragment Models for your site, this
 
 * [基本處理](/help/sites-cloud/authoring/getting-started/basic-handling.md) - 此頁面主要基於 **Sites** 主控台，但許多/大多數功能也與導覽至&#x200B;**一般**&#x200B;主控台下&#x200B;**內容片段模型**&#x200B;及對其採取行動相關。
 
-* [使用內容片段](/help/sites-cloud/administering/content-fragments/content-fragments.md)
+* [使用內容片段](/help/sites-cloud/administering/content-fragments/overview.md)
 
-   * [內容片段模型](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
+   * [內容片段模型](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
 
-      * [定義內容片段模型](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#defining-your-content-fragment-model)
+      * [定義內容片段模型](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#defining-your-content-fragment-model)
 
-      * [啟用或停用內容片段模型](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#enabling-disabling-a-content-fragment-model)
+      * [啟用或停用內容片段模型](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#enabling-disabling-a-content-fragment-model)
 
-      * [允許資產資料夾中的內容片段模型](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)
+      * [允許資產資料夾中的內容片段模型](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#allowing-content-fragment-models-assets-folder)
 
-      * [刪除內容片段模型](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#deleting-a-content-fragment-model)
+      * [刪除內容片段模型](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#deleting-a-content-fragment-model)
 
-      * [發佈內容片段模型](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model)
+      * [發佈內容片段模型](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#publishing-a-content-fragment-model)
 
-      * [取消發佈內容片段模型](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#unpublishing-a-content-fragment-model)
+      * [取消發佈內容片段模型](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#unpublishing-a-content-fragment-model)
 
-      * [鎖定的 (已發佈的) 內容片段模型](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#locked-published-content-fragment-models)
+      * [鎖定的 (已發佈的) 內容片段模型](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#locked-published-content-fragment-models)
 
 * 快速入門指南
 

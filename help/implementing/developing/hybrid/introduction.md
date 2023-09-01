@@ -2,7 +2,7 @@
 title: SPA 簡介和逐步解說
 description: 本文章介紹 SPA 的概念，並逐步解說如何使用基本 SPA 應用程式進行編寫，說明它與基礎 AEM SPA 編輯器的關係。
 exl-id: 8dad48d5-fa90-467c-8bec-e4b76e057f80
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 7d09cafc4f8518fee185d3f9efc76c33ec20f9a3
 workflow-type: tm+mt
 source-wordcount: '2068'
 ht-degree: 100%
@@ -187,7 +187,7 @@ SPA 背後的主要概念是減少對伺服器呼叫和依賴，以儘量減少�
 
    ![WKND SPA 專案首頁的 JSON](assets/wknd-json.png)
 
-   AEM SPA 編輯器使用 [AEM 內容服務](/help/sites-cloud/administering/content-fragments/content-fragments.md)將頁面的全部內容以 JSON 模型傳遞。
+   AEM SPA 編輯器使用 [AEM 內容服務](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-and-content-services)將頁面的全部內容以 JSON 模型傳遞。
 
    透過實作特定的介面，Sling 模型為 SPA 提供必要的資訊。JSON 資料的傳遞工作向下委派給每個元件 (從頁面到段落到元件等)。
 

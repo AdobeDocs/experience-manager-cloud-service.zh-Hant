@@ -3,8 +3,8 @@ title: 在 AEM 中管理 GraphQL 端點
 description: 了解如何在 Adobe Experience Manager as a Cloud Service 中管理 GraphQL 端點，以進行 Headless 內容傳遞。
 feature: Content Fragments,GraphQL API
 exl-id: f7164ae3-4074-4db7-8c43-a79cc2ef00b1
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: ht
+source-git-commit: d6b98559e7cbe5fc5bd05d9cf37225e960e668e7
+workflow-type: tm+mt
 source-wordcount: '513'
 ht-degree: 100%
 
@@ -22,10 +22,10 @@ ht-degree: 100%
 
 * 全域
    * 可供所有網站使用。
-   * 此端點可以使用來自所有 Sites 設定的所有內容片段模型 (在[設定瀏覽器](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser)中定義)。
+   * 此端點可以使用來自所有 Sites 設定的所有內容片段模型 (在[設定瀏覽器](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser)中定義)。
    * 如果內容片段模型應該在 Sites 設定之間共用，則應在全域 Sites 設定下建立該模型。
 * Sites 設定：
-   * 對應至[設定瀏覽器](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser)中定義的 Sites 設定。
+   * 對應至[設定瀏覽器](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser)中定義的 Sites 設定。
    * 專屬於指定的網站/專案。
    * Sites 設定專屬端點將使用來自該特定 Sites 設定的內容片段模型以及來自全域 Sites 設定的內容片段模型。
 
@@ -52,11 +52,11 @@ AEM 全域端點的 GraphQL 存放庫路徑：
 
 ## 啟用 GraphQL 端點 {#enabling-graphql-endpoint}
 
-若要啟用 GraphQL 端點，您首先需要有適當的設定。請參閱[內容片段 - 設定瀏覽器](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md)。
+若要啟用 GraphQL 端點，您首先需要有適當的設定。請參閱[內容片段 - 設定瀏覽器](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser)。
 
 >[!CAUTION]
 >
->如果[尚未啟用使用內容片段模型](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md)，則&#x200B;**建立**&#x200B;選項將無法使用。
+>如果[尚未啟用使用內容片段模型](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser)，則&#x200B;**建立**&#x200B;選項將無法使用。
 
 若要啟用對應的端點：
 

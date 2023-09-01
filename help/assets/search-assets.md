@@ -6,9 +6,9 @@ mini-toc-levels: 1
 feature: Search,Metadata,Asset Distribution
 role: User,Admin
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: 069103e7a82123bff28b4aa6e9d718c12e8496e3
+source-git-commit: fb70abb2aa698303c462e38ad3bec10d028f804e
 workflow-type: tm+mt
-source-wordcount: '5372'
+source-wordcount: '5532'
 ht-degree: 7%
 
 ---
@@ -137,6 +137,20 @@ Using Smart Tags adds an extra `OR` clause to find any of the search terms as th
 >[!VIDEO](https://video.tv.adobe.com/v/16766/?quality=6)
 
 *影片：瞭解搜尋結果的排名方式，以及如何影響排名。*
+
+## 設定資產批次大小以顯示搜尋結果 {#configure-asset-batch-size}
+
+管理員現在可以設定在執行搜尋時顯示的資產批次大小。 當您進一步向下捲動以載入結果時，資產搜尋結果會以設定批次大小數字的倍數顯示。 您可以從可用的批次大小中選取200、500和1000個資產。 設定較小的批次大小數字會加快搜尋回應時間。
+
+例如，如果您將結果計數限制設為200個資產的批次大小，當您開始執行搜尋時，Experience Manager Assets會在搜尋結果中顯示200個資產的批次大小。 當您向下捲動以導覽搜尋結果時，將顯示下一批的200個資產。 此程式會持續進行，直到顯示符合搜尋查詢的所有資產為止。
+
+若要設定資產批次大小：
+
+1. 瀏覽至 **[!UICONTROL 工具]** > **[!UICONTROL 資產]** > **[!UICONTROL 資產設定]** > **[!UICONTROL Assets Omnisearch設定]**.
+
+1. 選取結果計數限制並按一下 **[!UICONTROL 儲存]**.
+
+   ![資產批次大小設定](/help/release-notes/assets/assets-batch-size-configuration.png)
 
 ## 進階搜尋 {#scope}
 

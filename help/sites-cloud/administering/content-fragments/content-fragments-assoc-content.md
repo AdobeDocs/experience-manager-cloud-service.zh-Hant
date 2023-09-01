@@ -1,25 +1,35 @@
 ---
 title: 相關聯的內容
-description: 瞭解內容片段的關聯內容功能如何提供連線，以便可以選擇搭配片段使用資產，為頁面製作和headless內容傳送新增更多彈性。
+description: 瞭解內容片段的關聯內容功能如何提供連線，讓資產能夠（選擇性）與片段搭配使用，為頁面製作和headless內容傳送新增更多彈性。
 feature: Content Fragments
 role: User
+hide: true
+index: false
+hidefromtoc: true
 exl-id: eb524872-1403-42d1-b735-eaab382cf313
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 5ce5746026c5683e79cdc1c9dc96804756321cdb
 workflow-type: tm+mt
 source-wordcount: '239'
 ht-degree: 7%
 
 ---
 
+
 # 相關聯的內容{#associated-content}
 
-AEM關聯內容功能提供連線，以便在將資產新增到內容頁面時，可以選擇將資產與片段搭配使用，方法是 [提供在頁面上使用內容片段時可存取的一系列資產，](/help/sites-cloud/authoring/fundamentals/content-fragments.md#using-associated-content) 同時有助於縮短搜尋適當資產所需的時間。 這也為您的Headless內容傳送提供靈活性。
+<!--
+hide: yes
+index: no
+hidefromtoc: yes
+-->
+
+AEM關聯內容功能提供連線，以便在將資產新增到內容頁面時，可以選擇將資產與片段搭配使用，方法是 [提供在頁面上使用內容片段時可存取的資產範圍，](/help/sites-cloud/authoring/fundamentals/content-fragments.md#using-associated-content) 同時有助於縮短搜尋適當資產所需的時間。 這也為Headless內容傳送提供了彈性。
 
 ## 新增關聯內容 {#adding-associated-content}
 
 >[!NOTE]
 >
->有多種新增方法 [視覺資產（例如影像）](/help/sites-cloud/administering/content-fragments/content-fragments.md#fragments-with-visual-assets) 至片段和/或頁面。
+>有多種方法可新增 [視覺資產（例如影像）](/help/sites-cloud/administering/content-fragments/content-fragments.md#fragments-with-visual-assets) 至片段和/或頁面。
 
 若要建立關聯，您首先需要 [將您的媒體資產新增至集合](/help/assets/manage-collections.md). 完成該操作後，您可以：
 
@@ -30,11 +40,11 @@ AEM關聯內容功能提供連線，以便在將資產新增到內容頁面時�
 1. 根據是否已關聯任何集合，選取：
 
    * **關聯內容**  — 第一個關聯的集合
-   * **關聯集合**  — 已設定關聯的集合
+   * **關聯集合**  — 關聯的集合已設定
 
 1. 選取所需的集合。
 
-   您可以選擇將片段本身新增到所選的集合；這有助於追蹤。
+   您可以選擇將片段本身新增到所選的集合中；這有助於追蹤。
 
    ![選取集合](assets/cfm-assoc-content-02.png)
 
@@ -44,7 +54,7 @@ AEM關聯內容功能提供連線，以便在將資產新增到內容頁面時�
 
 ## 編輯關聯內容 {#editing-associated-content}
 
-一旦您將集合建立關聯後，您可以：
+當您關聯集合後，您可以：
 
 * **移除** 關聯。
 * **新增資產** 至集合。

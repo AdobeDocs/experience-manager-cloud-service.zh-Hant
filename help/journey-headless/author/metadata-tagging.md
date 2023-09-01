@@ -2,10 +2,10 @@
 title: 了解如何為內容片段定義中繼資料和標記
 description: 了解如何為內容片段定義中繼資料和標記
 exl-id: daa5b284-8264-48c3-826c-7909cff4d1a0
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: ht
-source-wordcount: '261'
-ht-degree: 100%
+source-git-commit: d6b98559e7cbe5fc5bd05d9cf37225e960e668e7
+workflow-type: tm+mt
+source-wordcount: '191'
+ht-degree: 92%
 
 ---
 
@@ -26,21 +26,9 @@ ht-degree: 100%
 
 ## 新增中繼資料和標記 {#adding-metadata-and-tags}
 
-您可以使用三種方法來新增中繼資料和標記：
+您可以從內容片段編輯器的右側面板新增中繼資料和標籤：
 
-* 首次建立片段時 (從&#x200B;**資產**&#x200B;主控台)：
-
-  ![建立內容片段 - 提供名稱](/help/journey-headless/author/assets/headless-journey-author-content-fragment-03.png)
-
-* 內容片段編輯器的&#x200B;**變化**&#x200B;索引標籤可讓您新增專案中預先定義的&#x200B;**標記**：
-
-  ![內容片段編輯器 - Alaska Spirits](/help/journey-headless/author/assets/headless-journey-author-content-fragment-05.png)
-
-* 內容片段編輯器的&#x200B;**中繼資料**&#x200B;索引標籤可讓您同時新增專案的各種中繼資料欄位和預先定義的&#x200B;**標記**：
-
-  ![內容片段編輯器 - 中繼資料](/help/journey-headless/author/assets/headless-journey-author-metadata-01.png)
-
-   * 這也可以使用資產主控台工具列中的&#x200B;**屬性**&#x200B;選項直接存取。
+![內容片段編輯器 - Alaska Spirits](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-overview.png)
 
 ## 下一步 {#whats-next}
 
@@ -48,8 +36,8 @@ ht-degree: 100%
 
 ## 其他資源 {#additional-resources}
 
-* [中繼資料 - 片段屬性](/help/sites-cloud/administering/content-fragments/content-fragments-metadata.md)
+* [中繼資料 - 片段屬性](/help/sites-cloud/administering/content-fragments/authoring.md#view-properties-tags)
 
 * [使用標記](/help/sites-cloud/authoring/features/tags.md)
 
-* [內容片段模型 - 允許內容片段模型在資產資料夾上](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)
+* [內容片段模型 - 允許內容片段模型在資產資料夾上](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#allowing-content-fragment-models-assets-folder)

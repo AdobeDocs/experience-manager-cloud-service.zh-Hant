@@ -3,8 +3,11 @@ title: 內容片段模型
 description: 瞭解內容片段模型如何作為您在AEM中內容片段的基礎。 這些功能可讓您建立結構化內容，以用於Headless傳送或頁面製作。
 feature: Content Fragments
 role: User
+hide: true
+index: false
+hidefromtoc: true
 exl-id: 24b1806f-2e8c-49ec-8cb7-a66a3cbe91cd
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 5ce5746026c5683e79cdc1c9dc96804756321cdb
 workflow-type: tm+mt
 source-wordcount: '2916'
 ht-degree: 8%
@@ -12,6 +15,12 @@ ht-degree: 8%
 ---
 
 # 內容片段模型 {#content-fragment-models}
+
+<!--
+hide: yes
+index: no
+hidefromtoc: yes
+-->
 
 AEM中的內容片段模型會定義 [內容片段](/help/sites-cloud/administering/content-fragments/content-fragments.md). 這些可用於頁面製作，或用作Headless內容的基礎。
 

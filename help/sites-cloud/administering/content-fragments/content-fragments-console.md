@@ -4,8 +4,11 @@ description: 瞭解如何從內容片段主控台管理內容片段。
 landing-page-description: 瞭解如何從內容片段主控台管理內容片段，該主控台專注於大量使用內容片段的Headless使用案例，但也用於頁面編寫。
 feature: Content Fragments
 role: User
+hide: true
+index: false
+hidefromtoc: true
 exl-id: 0e6e3b61-a0ca-44b8-914d-336e29761579
-source-git-commit: afe676b0972462ef2c9b52150d96560c71f7a0f6
+source-git-commit: 5ce5746026c5683e79cdc1c9dc96804756321cdb
 workflow-type: tm+mt
 source-wordcount: '1178'
 ht-degree: 5%
@@ -13,6 +16,12 @@ ht-degree: 5%
 ---
 
 # 內容片段主控台  {#content-fragments-console}
+
+<!--
+hide: yes
+index: no
+hidefromtoc: yes
+-->
 
 瞭解內容片段主控台如何透過執行發佈、取消發佈、複製等管理動作，將內容片段的存取最佳化，協助您建立、搜尋和管理內容片段。
 

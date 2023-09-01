@@ -3,10 +3,10 @@ title: 使用以表單為中心的AEM工作流程自動化業務流程
 description: 以Forms為中心的工作流程可讓您快速建立最適化Forms型工作流程。 您可以使用Adobe Sign對檔案進行電子簽章、建立表單式業務流程、擷取資料並將其傳送到多個資料來源，以及傳送電子郵件通知
 exl-id: e1403ba6-8158-4961-98a4-2954b2e32e0d
 google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
-source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
+source-git-commit: a635a727e431a73086a860249e4f42d297882298
 workflow-type: tm+mt
-source-wordcount: '7192'
-ht-degree: 1%
+source-wordcount: '7452'
+ht-degree: 0%
 
 ---
 
@@ -16,6 +16,8 @@ ht-degree: 1%
 | -------- | ---------------------------- |
 | AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/aem-forms-workflow-step-reference.html) |
 | AEM as a Cloud Service  | 本文章 |
+
+<span class="preview"> 中的歌手角色、稽核軌跡，以及政府ID型驗證選項 [簽署檔案步驟](#sign-document-step) 都是發行前功能，並且可透過 [發行前通道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
 
 您使用工作流程模型。 模型可協助您定義並執行一系列步驟。 您也可以定義模型屬性，例如工作流程是暫時的或使用多個資源。 您可以 [在模型中加入各種AEM Workflow步驟以實現商業邏輯](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=zh-Hant#extending-aem).
 
@@ -37,7 +39,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->如果為外部儲存體標示了工作流程模型，則對於所有Forms工作流程步驟，您只能選取變數選項來儲存或擷取資料檔案和附件。
+>如果為外部儲存體標示了工作流程模型，則對於所有Forms Workflow步驟，您只能選取變數選項來儲存或擷取資料檔案和附件。
 
 
 ## 指派任務步驟 {#assign-task-step}
@@ -49,7 +51,7 @@ ht-degree: 1%
 * **[!UICONTROL 標題]**：任務的標題。 標題會顯示在AEM收件匣中。
 * **[!UICONTROL 說明]**：說明在任務中執行的操作。 當您在共用開發環境中工作時，此資訊對於其他流程開發人員很有用。
 
-* **[!UICONTROL 縮圖路徑]**：任務縮圖的路徑。 若未指定路徑，則會針對最適化表單顯示預設縮圖，而針對記錄檔案，則會顯示預設圖示。
+* **[!UICONTROL 縮圖路徑]**：任務縮圖的路徑。 若未指定路徑，最適化表單會顯示預設縮圖，記錄檔案則會顯示預設圖示。
 * **[!UICONTROL 工作流程階段]**：工作流程可以有多個階段。 這些階段會顯示在「AEM收件匣」中。 您可以在模型的屬性(「Sidekick>頁面>頁面屬性>階段」)中定義這些階段。
 * **[!UICONTROL 優先順序]**：選取的優先順序會顯示在AEM收件匣中。 可用的選項包括「高」、「中」和「低」。 預設值為「中」。
 * **[!UICONTROL 到期日期]**：指定在多少天或多少小時之後任務會標籤為過期。 如果您選取 **[!UICONTROL 關閉]**，則不會將任務標示為逾期。 您也可以指定逾時處理常式，以便在工作逾期後執行特定工作。
@@ -131,24 +133,24 @@ ht-degree: 1%
 
 * **[!UICONTROL 傳送通知電子郵件]**：選取此選項以傳送電子郵件通知給受託人。 這些通知會在任務指派給使用者或群組時傳送。 您可以使用 **[!UICONTROL 收件者電子郵件地址]** 用於指定擷取電子郵件地址的機制的選項。
 
-* **[!UICONTROL 收件者電子郵件地址]**：您可以將電子郵件地址儲存在變數中、使用常值來指定永久電子郵件地址，或使用受指派人設定檔中指定之受指派人的預設電子郵件地址。 您可以使用常值或變數來指定群組的電子郵件地址。 變數選項有助於動態擷取和使用電子郵件地址。 此 **[!UICONTROL 使用受指派人的預設電子郵件地址]** 選項僅適用於單一受指派人。 在此情況下，會使用儲存在受指派人使用者設定檔中的電子郵件地址。
+* **[!UICONTROL 收件者電子郵件地址]**：您可以將電子郵件地址儲存在變數中、使用常值來指定永久電子郵件地址，或使用受指派人設定檔中指定之受指派人的預設電子郵件地址。 您可以使用常值或變數來指定群組的電子郵件地址。 變數選項有助於動態擷取和使用電子郵件地址。 此 **[!UICONTROL 使用受指派人的預設電子郵件地址]** 選項僅適用於單一受指派人。 在這種情況下，將使用儲存在受指派人使用者設定檔中的電子郵件地址。
 
 * **[!UICONTROL HTML電子郵件範本]**：選取通知電子郵件的電子郵件範本。 若要編輯範本，請在crx-repository中修改位於/libs/fd/dashboard/templates/email/htmlEmailTemplate.txt的檔案。
 * **[!UICONTROL 允許委派至]**：AEM收件匣為登入使用者提供一個選項，將指派的工作流程委派給其他使用者。 您可以委派給相同群組內的工作流程使用者，或委派給其他群組的工作流程使用者。 如果任務指派給單一使用者並且 **[!UICONTROL 允許委派給被指定者群組的成員]** 選項已選取，則無法將任務委派給其他使用者或群組。
-* **[!UICONTROL 共用設定]**： AEM收件匣提供選項，讓您與其他使用者共用收件匣中的單一或所有工作：
+* **[!UICONTROL 共用設定]**： AEM收件匣提供選項，讓您將收件匣中的單一或所有工作與其他使用者共用：
    * 當 **[!UICONTROL 允許受理人在收件匣中明確共用]** 若已選取選項，則使用者可以在AEM收件匣中選取任務，並與其他AEM使用者共用。
    * 當 **[!UICONTROL 允許受理人透過共用收件匣進行共用]** 選項已選取，且使用者共用其收件匣專案或允許其他使用者存取其收件匣專案，只有先前提及的選項已啟用的任務才會與其他使用者共用。
    * 當 **[!UICONTROL 允許受分派者使用「休假中」設定進行委派]** 已選取。 受指派人可以啟用將任務委派給其他使用者的選項，以及其他休假選項。 任何指派給休假使用者的新任務都會自動委派（指派）給休假設定中提到的使用者。
 
-  它可讓其他使用者在休假時挑選受指派人任務，且無法在受指派任務上工作。
+  它可讓其他使用者在外出時選擇受指派人工作，而無法處理受指派任務。
 
 * **[!UICONTROL 動作]** > **[!UICONTROL 預設動作]**：現成可用的提交、儲存和重設動作。 預設會啟用所有預設動作。
 * **[!UICONTROL 路由變數]**：路由變數的名稱。 路由變數會擷取使用者在AEM收件匣中選取的自訂動作。
-* **[!UICONTROL 路由]**：任務可以分支至不同的路由。 在AEM收件匣中選取時，路由會傳回值，且工作流程會根據選取的路由進行分支。 您可以將路由儲存在String資料型別陣列的變數中，或選取 **[!UICONTROL 常值]** 以手動新增路由。
+* **[!UICONTROL 路由]**：任務可以分支至不同的路由。 在AEM收件匣中選取時，路由會傳回值，且工作流程會根據選取的路由進行分支。 您可以將路由儲存在字串資料型別陣列的變數中，或選取 **[!UICONTROL 常值]** 以手動新增路由。
 
 * **[!UICONTROL 路由標題]**：指定路由的標題。 它會顯示在AEM收件匣中。
 * **[!UICONTROL 珊瑚紅圖示]**：指定coral圖示的HTML屬性。 AdobeCorelUI資料庫提供了一組數量龐大的「觸控優先」圖示。 您可以選擇並使用路由的圖示。 它會與標題一起顯示在AEM收件匣中。 如果您將路由儲存在變數中，路由會使用預設的「標籤」珊瑚圖示。
-* **[!UICONTROL 允許受分派者新增註解]**：選取此選項可啟用任務的註解。 受指派人可以於任務提交時，從AEM收件匣新增註解。
+* **[!UICONTROL 允許受分派者新增註解]**：選取此選項可啟用任務的註解。 受指派人可以於任務提交時，從「AEM收件匣」新增註解。
 * **[!UICONTROL 在變數中儲存註解]**：將註解儲存在String資料型別的變數中。 只有在選取 **[!UICONTROL 允許受分派者新增註解]** 核取方塊。
 
 * **[!UICONTROL 允許受分派者將附件新增至工作]**：選取此選項以啟用工作的附件。 受指派人可以於任務提交時，從AEM收件匣新增附件。 您也可以限制大小上限 **[!UICONTROL （檔案大小上限）]** 附件的URL。 預設大小為2 MB。
@@ -169,7 +171,7 @@ ht-degree: 1%
 
 PDF/A是一種用於長期儲存檔案內容的封存格式，透過嵌入字型並解壓縮檔案。 因此，PDF/A 文件通常比標準 PDF 文件大。您可以使用 ***轉換為PDF/A*** 在AEM工作流程中步驟，將PDF檔案轉換為PDF/A格式。
 
-轉換成PDF/A步驟有下列屬性：
+轉換成PDF/A步驟具有以下屬性：
 
 **[!UICONTROL 輸入檔案]**：輸入檔案可相對於裝載、具有絕對路徑、可作為裝載提供或儲存在Document資料型別的變數中。
 
@@ -179,14 +181,14 @@ PDF/A是一種用於長期儲存檔案內容的封存格式，透過嵌入字型
 * **[!UICONTROL 色域]**：將預先定義的色域指定為S_COATED、COATED_FOGRA27、JAPAN_COLOR_COATED或SWOP，以用於輸出PDF/A檔案RGB。
 * **[!UICONTROL 選擇性內容]**：只有在符合指定的准則集時，才允許在輸出PDF/檔案中顯示特定圖形物件和/或註釋。
 
-**[!UICONTROL 輸出檔案]**：指定儲存輸出檔案的位置。 輸出檔案可儲存在相對於承載的位置、覆寫承載（如果承載是檔案）或是Document資料型別的變數。
+**[!UICONTROL 輸出檔案]**：指定儲存輸出檔案的位置。 輸出檔案可儲存在相對於承載的位置、覆寫承載（如果承載是檔案或是Document資料型別的變數）。
 
 
 ## 傳送電子郵件步驟 {#send-email-step}
 
 使用電子郵件步驟來傳送電子郵件，例如包含記錄檔案、最適化表單連結的電子郵件 <!-- , link of an interactive communication-->，或附加了PDF檔案。 傳送電子郵件步驟支援 [HTML電子郵件](https://en.wikipedia.org/wiki/HTML_email). HTML電子郵件會迅速回應，並因應收件者的電子郵件使用者端和熒幕大小。 您可以使用HTML電子郵件範本來定義電子郵件的外觀、色彩配置和行為。
 
-電子郵件步驟使用Day CQ Mail Service傳送電子郵件。 在使用電子郵件步驟之前，請確定已設定電子郵件服務。 預設僅支援HTTP和HTTP通訊協定。 [聯絡支援團隊](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html?lang=en#sending-email) 啟用傳送電子郵件的連線埠，並為您的環境啟用SMTP通訊協定。 此限制有助於改善平台的安全性。
+電子郵件步驟使用Day CQ Mail Service傳送電子郵件。 在使用電子郵件步驟之前，請確定已設定電子郵件服務。 預設僅支援HTTP和HTTP通訊協定。 [聯絡支援團隊](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html?lang=en#sending-email) 啟用連線埠以傳送電子郵件，並為您的環境啟用SMTP通訊協定。 此限制有助於改善平台的安全性。
 
 電子郵件步驟有下列屬性：
 
@@ -241,13 +243,13 @@ PDF/A是一種用於長期儲存檔案內容的封存格式，透過嵌入字型
 
 如果您指定資料夾的路徑（例如附件），資料夾中直接可用的所有檔案都會附加至記錄檔案。 如果在指定附件路徑中直接可用的資料夾中有任何檔案可用，則這些檔案會作為附件包含在記錄檔案中。 如果在直接可用的資料夾中有任何資料夾，則會略過這些資料夾。
 
-**[!UICONTROL 使用以下選項儲存產生的記錄檔案]**：指定保留記錄檔案檔案的位置。 您可以選擇覆寫裝載資料夾、將記錄檔案放在裝載目錄內的某個位置，或將記錄檔案儲存在檔案資料型別的變數中。
+**[!UICONTROL 使用以下選項儲存產生的記錄檔案]**：指定保留記錄檔案檔案的位置。 您可以選擇覆寫裝載資料夾、將記錄檔案放在裝載目錄內的某個位置，或將記錄檔案儲存在「檔案」資料型別的變數中。
 
 **[!UICONTROL 地區設定]**：指定記錄檔案的語言。 選取 **[!UICONTROL 常值]** 從下拉式清單中選取地區設定或選取 **[!UICONTROL 變數]** 以從儲存在字串資料型別變數中的值擷取地區設定。 在變數中儲存地區設定的值時，定義地區設定代碼。 例如，指定 **en_US** 英文版和 **fr_FR** 法文版。
 
 ## 叫用DDX步驟 {#invokeddx}
 
-檔案描述XML (DDX)是一種宣告式標籤語言，其元素代表檔案的建置組塊。 這些建置區塊包括PDF和XDP檔案以及其他元素，例如註解、書籤和樣式化文字。 DDX定義了一組作業，可套用在一或多個輸入檔案上，以產生一或多個輸出檔案。 單一DDX可用於一系列來原始檔。 您可以使用 ***叫用DDX步驟*** 在AEM工作流程中執行各種操作，例如組譯和解譯檔案、建立和修改Acrobat和XFA Forms，以及中描述的其他操作。 [DDX參考檔案](https://helpx.adobe.com/content/dam/help/en/experience-manager/forms-cloud-service/ddxRef.pdf).
+檔案描述XML (DDX)是一種宣告式標籤語言，其元素代表檔案的建置組塊。 這些建置區塊包括PDF和XDP檔案以及其他元素，例如註解、書籤和樣式化文字。 DDX定義了一組作業，可套用在一或多個輸入檔案上，以產生一或多個輸出檔案。 單一DDX可用於一系列來原始檔。 您可以使用 ***叫用DDX步驟*** 在AEM工作流程中執行各種作業，例如組譯和解譯檔案、建立和修改Acrobat和XFA Forms，以及 [DDX參考檔案](https://helpx.adobe.com/content/dam/help/en/experience-manager/forms-cloud-service/ddxRef.pdf).
 
 叫用DDX步驟具有以下特性：
 
@@ -334,7 +336,7 @@ PDF/A是一種用於長期儲存檔案內容的封存格式，透過嵌入字型
 
 * **[!UICONTROL 表單資料模型路徑]**：瀏覽並選取伺服器上顯示的表單資料模型。
 
-* **[!UICONTROL 錯誤與驗證]**：選項可讓您擷取錯誤訊息，並針對擷取及傳送至資料來源的資料指定驗證選項。 透過這些變更，您可以確保傳遞至啟動表單資料模型服務步驟的資料會遵守資料來源定義的資料限制。 如需詳細資訊，請參閱 [自動驗證輸入資料](work-with-form-data-model.md#automated-validation-of-input-data)
+* **[!UICONTROL 錯誤與驗證]**：選項可讓您擷取錯誤訊息，並針對擷取及傳送至資料來源的資料指定驗證選項。 透過這些變更，您可以確保傳遞至「啟動表單資料模型服務」步驟的資料會遵守資料來源定義的資料限制。 如需詳細資訊，請參閱 [自動驗證輸入資料](work-with-form-data-model.md#automated-validation-of-input-data)
 
 * **[!UICONTROL 驗證層級]**：驗證分為三類：基本、完整和關閉：
 
@@ -361,23 +363,27 @@ PDF/A是一種用於長期儲存檔案內容的封存格式，透過嵌入字型
 
      例如，如果CRX存放庫中的「相對於裝載」資料夾在 `attachment\attachment-folder` 位置，指定 `attachment\attachment-folder` 在文字方塊中選取 **[!UICONTROL 相對於承載]** 選項。
 
-   * **[!UICONTROL JSON點標籤法]**：使用的值位於JSON檔案中時，請使用選項。 例如，insurance.customerDetails.emailAddress。 JSON Dot Notation選項僅在選取「從輸入JSON對應輸入欄位」選項時可用。
+   * **[!UICONTROL JSON點標籤法]**：使用的值位於JSON檔案中時，請使用選項。 例如，insurance.customerDetails.emailAddress。 JSON Dot Notation選項僅在選取「從輸入JSON選項對應輸入欄位」時可用。
    * **[!UICONTROL 從輸入JSON對應輸入欄位]**：指定JSON檔案的路徑，以從JSON檔案取得某些服務引數的輸入值。 JSON檔案的路徑可以是相對於裝載、絕對路徑，或者您可以使用JSON或表單資料模型型別的變數來選取輸入JSON檔案。
 
 * **[!UICONTROL 服務輸入]** > **[!UICONTROL 提供使用變數或JSON檔案的輸入資料]**：選取選項，以從儲存在絕對路徑、相對於承載的路徑或變數中的JSON檔案取得所有引數的值。
 * **[!UICONTROL 選擇輸入JSON檔案，使用]**：包含所有服務引數值的JSON檔案。 JSON檔案的路徑可以是 **[!UICONTROL 相對於裝載]** 或 **[!UICONTROL 絕對路徑]**. 您也可以使用JSON或表單資料模型資料型別的變數來擷取輸入JSON檔案。
 
 * **[!UICONTROL JSON點標籤法]**：將欄位保留空白可使用指定JSON檔案的所有物件作為服務引數的輸入。 若要從指定的JSON檔案讀取特定JSON物件作為服務引數的輸入，請為JSON物件指定點標籤法。例如，如果您有和區段開頭所列出的JSON類似的JSON，請指定insurance.customerDetails以提供客戶的所有詳細資料作為服務的輸入。
-* **[!UICONTROL 服務的輸出]** > **[!UICONTROL 對映並寫入輸出值至變數或中繼資料]**：選取選項以將輸出值儲存為crx-repository中工作流程執行個體中繼資料節點的屬性。 指定中繼資料屬性的名稱，並選取對應的服務輸出屬性以與中繼資料屬性對應，例如，將輸出服務傳回的phone_number與工作流程中繼資料的phone_number屬性對應。 同樣地，您可以將輸出儲存在Long資料型別的變數中。 當您為選取屬性時 **[!UICONTROL 要對應的服務輸出屬性]** 選項，只會填入能夠儲存所選屬性資料的變數 **[!UICONTROL 將輸出儲存至]** 選項。
+* **[!UICONTROL 服務的輸出]** > **[!UICONTROL 對映並寫入輸出值至變數或中繼資料]**：選取選項以將輸出值儲存為crx-repository中工作流程執行個體中繼資料節點的屬性。 指定中繼資料屬性的名稱，並選取對應的服務輸出屬性，以與中繼資料屬性對應，例如，將輸出服務傳回的phone_number與工作流程中繼資料的phone_number屬性對應。 同樣地，您可以將輸出儲存在Long資料型別的變數中。 當您為選取屬性時 **[!UICONTROL 要對應的服務輸出屬性]** 選項，只會填入能夠儲存所選屬性資料的變數 **[!UICONTROL 將輸出儲存至]** 選項。
 
-* **[!UICONTROL 服務的輸出]** > **[!UICONTROL 將輸出儲存至變數或JSON檔案]**：選取選項以將輸出值儲存在JSON檔案中的絕對路徑、相對承載的路徑或變數中。
+* **[!UICONTROL 服務的輸出]** > **[!UICONTROL 將輸出儲存至變數或JSON檔案]**：選取選項，將輸出值儲存在JSON檔案中的絕對路徑、相對承載的路徑或變數中。
 * **[!UICONTROL 使用以下選項儲存輸出JSON檔案]**：儲存輸出JSON檔案。 輸出JSON檔案的路徑可以是相對於承載或絕對路徑。 您也可以使用JSON或表單資料模型資料型別的變數儲存輸出JSON檔案。
+
+
 
 ## 簽署檔案步驟 {#sign-document-step}
 
-「簽署檔案」步驟可讓您使用 [!DNL Adobe Sign] 以簽署檔案。 當您使用 [!DNL Adobe Sign] 工作流程步驟在最適化表單上簽名時，視工作流程設定步驟而定，此表單可以在簽名者之間逐一傳遞，或同時傳送給所有簽名者。啟用 [!DNL Adobe Sign] 的最適化表單只會在所有簽名者完成簽名程序後提交給 Experience Manager Forms 伺服器。
+<span class="preview"> Adobe Sign步驟中的歌手角色、稽核軌跡，以及政府ID型驗證選項，都是發行前功能，並可透過 [發行前通道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
 
-[!DNL Adobe Sign] 排程器服務預設為每 24 小時檢查 (輪詢) 簽名者回應。您可以 [變更環境的預設間隔](adobe-sign-integration-adaptive-forms.md##configure-adobe-sign-scheduler-to-sync-the-signing-status).
+「簽署檔案」步驟可讓您使用 [!DNL Adobe Sign] 以簽署檔案。 當您使用 [!DNL Adobe Sign] 在最適化表單上簽名的工作流程步驟，視工作流程步驟的設定而定，此表單可以在收件者之間逐一傳遞，或同時傳送給所有收件者。 [!DNL Adobe Sign] 啟用的Adaptive Forms只會在所有收件者完成簽名程式後，才提交至Experience Manager Forms伺服器。
+
+根據預設， [!DNL Adobe Sign] 排程器服務每24小時檢查（輪詢）收件者回應。 您可以 [變更環境的預設間隔](adobe-sign-integration-adaptive-forms.md#for-aem-workflows-only-configure-dnl-adobe-acrobat-sign-scheduler-to-sync-the-signing-status-configure-adobe-sign-scheduler-to-sync-the-signing-status).
 
 「簽署檔案」步驟具有以下屬性：
 
@@ -388,14 +394,26 @@ PDF/A是一種用於長期儲存檔案內容的封存格式，透過嵌入字型
 * **[!UICONTROL Adobe Sign雲端設定]**：選擇一個 [!DNL Adobe Sign] 雲端設定。 如果您尚未設定 [!DNL Adobe Sign] 的 [!DNL AEM Forms]，請參閱 [將Adobe Sign與整合 [!DNL AEM Forms]](adobe-sign-integration-adaptive-forms.md).
 
 * **[!UICONTROL 選擇待簽署的檔案，使用]**：您可以從相對於承載的位置選擇檔案、使用承載作為檔案、指定檔案的絕對路徑，或擷取儲存在Document資料型別變數中的檔案。
-* **[!UICONTROL 距截止日期前的天數]**：當工作在「 」中指定的天數內沒有活動時，檔案會標籤為到期（已超過期限）。 **[!UICONTROL 距截止日期前的天數]** 欄位。 將檔案指派給使用者簽署後，會計入的天數。
-* **[!UICONTROL 提醒電子郵件頻率]**：您可以每日或每週傳送提醒電子郵件。 從將紀錄指派給使用者以供簽署的當日起計算該周。
+* **[!UICONTROL 距截止日期前的天數]**：當工作在「 」中指定的天數內沒有活動時，檔案會標籤為到期（已超過期限）。 **[!UICONTROL 距截止日期前的天數]** 欄位。 檔案指派給使用者簽署後，會計入的天數。
+* **[!UICONTROL 提醒電子郵件頻率]**：您可以每日或每週傳送提醒電子郵件。 一週是從檔案指派給使用者供簽署之日開始計算。
 * **[!UICONTROL 簽章程式]**：您可以選擇以循序或平行順序簽署檔案。 依序由一位簽署者一次收到檔案以供簽署。 第一個簽署者完成檔案的簽署後，檔案會傳送給第二個簽署者，依此類推。 多個簽署者可同時以平行順序簽署檔案。
 * **[!UICONTROL 重新導向URL]**：指定重新導向URL。 檔案簽署後，您可以將受指派人重新導向至URL。 此URL通常包含感謝訊息或進一步說明。
 * **[!UICONTROL 工作流程階段]**：工作流程可以有多個階段。 這些階段會顯示在「AEM收件匣」中。 您可以在模型的屬性中定義這些階段( **[!UICONTROL Sidekick]** > **[!UICONTROL 頁面]** > **[!UICONTROL 頁面屬性]** > **[!UICONTROL 階段]**)。
-* **[!UICONTROL 選取簽署者]**：指定選擇檔案簽署者的方法。 您可以動態地將工作流程指派給使用者或群組，或手動新增簽署者的詳細資訊。
-* **[!UICONTROL 選擇簽署者的指令碼或服務]**：只有在「選取簽署者」欄位中選取了「動態」選項時，才能使用此選項。 您可以指定ECMAScript或服務，以選擇檔案的簽署者和驗證選項。
-* **[!UICONTROL 簽署者詳細資訊]**：只有在「選取簽署者」欄位中選取了「手動」選項時，才能使用此選項。 指定電子郵件地址並選擇選用的驗證機制。 在選取兩步驟驗證機制之前，請確定已為設定的啟用對應的驗證選項 [!DNL Adobe Sign] 帳戶。 您可以使用String資料型別的變數來定義電子郵件、國家/地區代碼和電話號碼欄位的值。 只有當您從兩步驟驗證下拉式清單中選取「電話驗證」時，才會顯示「國家代碼」和「電話號碼」欄位。
+* **[!UICONTROL 選取收件者]**：指定選擇檔案收件者的方法。 您可以動態地將工作流程指派給使用者或群組，或手動新增收件者的詳細資訊。 在下拉式清單中選取手動時，您會新增收件者詳細資訊，例如電子郵件、角色和驗證方法。
+
+  >[!NOTE]
+  >
+  >* 在「角色」區段中，您可以將收件者角色指定為「簽署者」、「核准者」、「接受者」、「已驗證的收件者」、「表單填寫者」及「委派者」。
+  >* 如果您在「角色」選項中選取「委派者」，委派者可以將簽署任務指派給其他收件者。
+  >* 如果您已設定的驗證方法 [!DNL Adobe Sign]，根據您的設定，您會選取驗證方法，例如以電話為基礎的驗證、以社交身分為基礎的驗證、以知識為基礎的驗證、以政府身分為基礎的驗證。
+
+* **[!UICONTROL 用於選取收件者的指令碼或服務]**：只有當您在選取收件者欄位中選取動態選項時，才可使用選項。 您可以指定ECMAScript或服務，以選擇檔案的簽署者和驗證選項。
+* **[!UICONTROL 收件者詳細資料]**：只有在選取收件者欄位中選取手動選項時，才能使用選項。 指定電子郵件地址，並選擇選用的驗證機制。 在選取兩步驟驗證機制之前，請確定已為設定的啟用對應的驗證選項 [!DNL Adobe Sign] 帳戶。 您可以使用String資料型別的變數來定義電子郵件、國家/地區代碼和電話號碼欄位的值。 只有當您從兩步驟驗證下拉式清單中選取「電話驗證」時，才會顯示「國家代碼」和「電話號碼」欄位。
+* **[!UICONTROL 已簽署的檔案]**：您可以將已簽署檔案的狀態儲存至變數。 若要新增電子簽章稽核軌跡，以提高「已簽署檔案」的安全性與合法性，您可以包含「稽核報表」。 您可以使用變數或承載資料夾來儲存已簽署的檔案。
+
+  >[!NOTE]
+  >
+  > 「稽核報表」會附加至已簽署檔案的最後一頁。
 
 <!--
 ## Document Services steps {#document-services-steps}
@@ -536,7 +554,7 @@ Send a document directly to a printer. It supports the following printing access
 * **[!UICONTROL 選擇XCI檔案，使用]**：XCI檔案用於說明用於表單設計元素的字型和其他屬性。 您可以相對於承載將XCI檔案保留在絕對路徑上，或使用Document資料型別的變數。
 
 * **[!UICONTROL 地區設定]**：指定用於產生PDF檔案的語言。 如果您提供常值，請從清單中選取語言或選取下列其中一個值：
-   * **[!UICONTROL 使用伺服器預設值]**：（預設）使用 [!DNL AEM Forms] 伺服器。 地區設定設定是使用Administration Console來設定。 (請參閱 [Designer說明](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/using-designer.pdf).)
+   * **[!UICONTROL 使用伺服器預設值]**：（預設）使用 [!DNL AEM Forms] 伺服器。 地區設定是使用Administration Console來設定。 (請參閱 [Designer說明](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/using-designer.pdf).)
 
    * **[!UICONTROL 使用自訂值]**：在常值方塊中輸入地區設定代碼，或選取包含地區設定代碼的字串變數。 如需支援地區設定代碼的完整清單，請參閱https://docs.oracle.com/javase/1.5.0/docs/guide/intl/locale.doc.html。
 

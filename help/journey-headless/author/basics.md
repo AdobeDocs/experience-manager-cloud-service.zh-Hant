@@ -2,10 +2,10 @@
 title: 了解編寫基本知識
 description: 了解使用內容片段為 Headless CMS 編寫內容的概念和機制。
 exl-id: 3eca973f-b210-41bb-98da-ecbd2bae9803
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: ht
-source-wordcount: '1714'
-ht-degree: 100%
+source-git-commit: d6b98559e7cbe5fc5bd05d9cf37225e960e668e7
+workflow-type: tm+mt
+source-wordcount: '1729'
+ht-degree: 85%
 
 ---
 
@@ -71,7 +71,7 @@ The Navigation Panel can be opened by selecting Adobe icon at the top left, foll
 
 在主控台中，您可以在左側面板中選擇資料夾以導覽至您的內容片段。您還可以篩選和/或搜尋。
 
-![內容片段主控台](/help/sites-cloud/administering/content-fragments/assets/cfc-console-filter.png)
+![內容片段主控台](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-filter.png)
 
 ### 動作、選擇、檢視 {#actions-selecting-viewing}
 
@@ -183,43 +183,44 @@ You can view additional information about items using the Rail Selector. This al
 
 然後使用&#x200B;**建立**&#x200B;或&#x200B;**建立並開啟**&#x200B;加以確認。
 
-<!--
-Creating a Content Fragment is very similar - you just use the **Content Fragment** option instead:
-
-![Create Content Fragment option](/help/journey-headless/author/assets/headless-journey-author-content-fragment-01.png)
-
-This time a wizard opens. The first step is to select the Content Fragment Model that your fragment is based on:
-
-![Create Content Fragment - select Model](/help/journey-headless/author/assets/headless-journey-author-content-fragment-02.png)
-
-After continuing with **Next** you can supply the details (**Basic** and **Advanced**) for your fragment:
-
-![Create Content Fragment - provide Name](/help/journey-headless/author/assets/headless-journey-author-content-fragment-03.png)
-
-Confirm with **Create** and you can then **Open** your fragment in the editor.
--->
-
 ### 編輯片段 {#editing-fragment}
 
 您可以在建立片段後立即開啟它，或者從內容片段主控台 (也可以從資產主控台) 中選擇它以開啟。
 
+>[!NOTE]
+>
+>內容片段是Sites功能，但儲存為 **資產**.
+>
+>編寫內容片段有兩個編輯器。
+>
+>* 新編輯器（主要透過以下網址存取）： **內容片段** 主控台。
+>* 原始編輯器，主要透過以下位置存取： **資產** 主控台。
+
 編輯器首次開啟時，您會看到：
 
-* 左側有一列圖示 - 可讓您存取各個功能區域。編輯器會在&#x200B;**變化**&#x200B;索引標籤中開啟，這是大部分編輯進行的地方。您可能也對&#x200B;**附註**&#x200B;和&#x200B;**中繼資料**&#x200B;索引標籤感興趣。
+* 頂端工具列：主要資訊和動作
+   * 內容片段控制檯的連結（首頁圖示）
+   * 有關模型和資料夾的資訊
+   * 指向預覽的連結；如果為模型配置了「預設預覽URL模式」
+   * 發佈和取消發佈動作
+   * 顯示全部的選項 **父引用** （連結圖示）
+   * 片段 **狀態**&#x200B;和上次儲存的資訊
+   * 切換至原始（資產型）編輯器的切換按鈕
+* 左側面板：顯示 **變數** 用於內容片段及其 **欄位**：
+   * 這些連結可用於導覽內容片段結構
+* 右側面板：顯示屬性（中繼資料）和標籤、版本歷史記錄相關資訊，以及與任何語言副本相關的資訊的標籤
+   * 在 **屬性** 標籤您可以更新 **標題** 和 **說明** 針對片段，或 **變數**
+* 中央面板：顯示所選變數的實際欄位和內容
+   * 可讓您編輯內容
+   * 如果 **索引標籤預留位置** 欄位會在模型內定義，並會顯示在這裡，且可用於導覽
 
-* 包含片段資訊的標頭，以及對各種動作的存取。
+例如，片段可以：
 
-* 主編輯區域 - 這取決於用於建立片段的模型。
+* 需要多個資訊片段，部分具有特定型別。 對於 Headless 內容，參考是關鍵 (歷程的後續部分將會說明)。
 
-例如：
+* 允許您寫入長文字區段。 這裡有用於管理和格式化文字的其他選項。您甚至可以在全螢幕編輯器中開啟各個文字欄位 (使用右側外觀像螢幕的小圖示)
 
-* 只需要多個資訊的片段，其中一些具有特定類型。對於 Headless 內容，參考是關鍵 (歷程的後續部分將會說明)。
-
-  ![內容片段編輯器 - 我的片段](/help/journey-headless/author/assets/headless-journey-author-content-fragment-04.png)
-
-* 讓您編寫一長段文字的片段。這裡有用於管理和格式化文字的其他選項。您甚至可以在全螢幕編輯器中開啟各個文字欄位 (使用右側外觀像螢幕的小圖示)
-
-  ![內容片段編輯器 - Alaska Spirits](/help/journey-headless/author/assets/headless-journey-author-content-fragment-05.png)
+![內容片段編輯器 - Alaska Spirits](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-overview.png)
 
 >[!NOTE]
 >
@@ -239,26 +240,12 @@ Confirm with **Create** and you can then **Open** your fragment in the editor.
 
 * **內容片段模型**
 
-  您將在編輯器頂端看到內容片段模型的名稱 - 就在片段名稱下方。這也是一個將您帶到模型編輯器的連結。
+  您會在編輯器的右側面板中看到內容片段模型的名稱。 這也是一個將您帶到模型編輯器的連結。
 內容片段模型實際上對您的內容片段至關重要，因為它們定義了您使用的結構。然而，建立和編輯模型 (通常) 是另一個角色的責任，即內容架構師。
 
   >[!NOTE]
   >
   >如果想進一步了解，請參閱「AEM Headless 內容架構師歷程」。
-
-* **相關聯的內容**
-
-  這個非常明顯，因為它是編輯器中的索引標籤。
-
-  內容片段已在多個版本的 AEM 中使用。最初，它們在編寫頁面時可用於「傳統」用途……並且它們仍用於此種情況。這可能涉及關聯資產 (影像)，這些資產雖然未嵌入片段中，但作者在編寫頁面時仍需要使用。
-
-* **預覽**
-
-  這是編輯器中的另一個索引標籤，提供技術檢視，主要供開發人員使用。
-
-* **更新頁面參考**
-
-  **...** (省略符號) 下拉式清單可提供此動作。對於 Headless 作者來說這並不有趣，因為它與頁面編寫有關。
 
 ### 發佈 {#publishing}
 
@@ -296,15 +283,15 @@ Confirm with **Create** and you can then **Open** your fragment in the editor.
 
    * [邊欄選擇器](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector)
 
-* [使用內容片段](/help/sites-cloud/administering/content-fragments/content-fragments.md)
+* [使用內容片段](/help/sites-cloud/administering/content-fragments/overview.md)
 
-   * [管理內容片段](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md)
+   * [管理內容片段](/help/sites-cloud/administering/content-fragments/managing.md)
 
-   * [套用設定到資產資料夾](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md#apply-the-configuration-to-your-assets-folder)
+   * [套用設定到資產資料夾](/help/sites-cloud/administering/content-fragments/setup.md#apply-the-configuration-to-your-folder)
 
-   * [建立內容片段](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#creating-a-content-fragment)
+   * [建立內容片段](/help/sites-cloud/administering/content-fragments/managing.md#creating-a-content-fragment)
 
-   * [變化 - 編寫內容片段](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md)
+   * [編寫內容片段](/help/sites-cloud/administering/content-fragments/authoring.md)
 
    * 發佈
 
@@ -316,15 +303,17 @@ Confirm with **Create** and you can then **Open** your fragment in the editor.
 
       * 從&#x200B;**內容片段**&#x200B;主控台
 
-         * [發佈和預覽內容片段](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#publishing-and-previewing-a-fragment)
+         * [發佈和預覽內容片段](/help/sites-cloud/administering/content-fragments/managing.md#publishing-and-previewing-a-fragment)
 
-   * [內容片段模型](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
+   * [內容片段模型](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
 
-      * [內容片段模型 - 資料類型](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#data-types)
+      * [內容片段模型 - 資料類型](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)
 
-      * [內容片段模型 - 屬性](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#properties)
+      * [內容片段模型 - 屬性](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#properties)
 
-      * [內容片段模型 - 允許內容片段模型在資產資料夾上](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)
+      * [內容片段模型 - 允許內容片段模型在資產資料夾上](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#allowing-content-fragment-models-assets-folder)
+
+* [內容片段 — 原始編輯器，從「資產」主控台](/help/assets/content-fragments/content-fragments-variations.md)
 
 * 快速入門指南
    * [建立資產資料夾 - Headless 設定](/help/headless/setup/create-assets-folder.md)

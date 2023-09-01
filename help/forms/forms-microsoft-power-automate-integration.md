@@ -1,17 +1,17 @@
 ---
-title: 如何連線最適化表單資料並將其傳送到Microsoft&reg； Power Automate？
-description: 連線最適化表單資料並將其傳送到Microsoft&reg； Power Automate的逐步指南。
-keywords: 最適化Forms Microsoft Power Automate，將最適化Forms資料提交至Microsoft Power Automate
+title: 整合最適化表單與Microsoft&reg； Power Automate
+description: 整合最適化表單與Microsoft&reg； Power Automate。
+hide: true
+hidefromtoc: true
 exl-id: a059627b-df12-454d-9e2c-cc56986b7de6
-source-git-commit: 74fed5b2bcffac9d267b66aaa3d69b27cadd3417
+source-git-commit: a635a727e431a73086a860249e4f42d297882298
 workflow-type: tm+mt
-source-wordcount: '1198'
+source-wordcount: '1173'
 ht-degree: 2%
 
 ---
 
-
-# 連線最適化表單資料並將其提交到Microsoft® Power Automate {#connect-adaptive-form-with-power-automate}
+# 連線最適化表單與Microsoft® Power Automate {#connect-adaptive-form-with-power-automate}
 
 您可以設定最適化表單，在提交時執行Microsoft® Power Automate Cloud Flow。 設定的最適化表單會將擷取的資料、附件和記錄檔案傳送到Power Automate雲端流程進行處理。 它可幫助您建立自訂資料擷取體驗，同時利用Microsoft® Power Automate的強大功能，圍繞擷取的資料建立商業邏輯，並自動化客戶工作流程。 以下是整合最適化表單與Microsoft® Power Automate後可以執行的一些範例：
 
@@ -26,8 +26,8 @@ ht-degree: 2%
 
 以下為連線最適化表單與Microsoft® Power Automate的必要條件：
 
-* Microsoft® Power Automate Premium授權
-* Microsoft® [Power Automate流程](https://docs.microsoft.com/en-us/power-automate/create-flow-solution) 使用 `When an HTTP request is received` 觸發以接受最適化表單提交資料
+* Microsoft® Power Automate Premium授權。
+* Microsoft® [Power Automate流程](https://docs.microsoft.com/en-us/power-automate/create-flow-solution) 使用 `When an HTTP request is received` 觸發以接受最適化表單提交資料。
 * 具有的Experience Manager使用者 [Forms Author](/help/forms/forms-groups-privileges-tasks.md) 和 [Forms管理員](/help/forms/forms-groups-privileges-tasks.md) 許可權
 * 用來連線至Microsoft的帳戶®Power Automate是已設定為可從調適型表單接收資料的Power Automate流程的所有者
 
@@ -80,7 +80,8 @@ ht-degree: 2%
 1. 在AEM Forms作者例項上，導覽至 **[!UICONTROL 工具]** ![錘子](assets/hammer.png) > **[!UICONTROL 一般]** > **[!UICONTROL 設定瀏覽器]**.
 1. 在 **[!UICONTROL 設定瀏覽器]** 頁面，點選 **[!UICONTROL 建立]**.
 1. 在 **[!UICONTROL 建立設定]** 對話方塊，指定 **[!UICONTROL 標題]** 對於設定，啟用 **[!UICONTROL 雲端設定]**，然後點選 **[!UICONTROL 建立]**. 這樣便會建立儲存 Cloud Services 的設定容器。請確保資料夾名稱未含任何空格。
-1. 瀏覽至 **[!UICONTROL 工具]** ![錘子](assets/hammer.png) > **[!UICONTROL Cloud Service]** > **[!UICONTROL Microsoft®® Power Automate Dataverse]** 然後開啟您在上一步中建立的設定容器。
+1. 瀏覽至 **[!UICONTROL 工具]** ![錘子](assets/hammer.png) > **[!UICONTROL Cloud Service]** > **[!UICONTROL Microsoft® Power Automate Dataverse]** 然後開啟您在上一步中建立的設定容器。
+
 
    >[!NOTE]
    >
@@ -97,9 +98,11 @@ ht-degree: 2%
 
 1. 瀏覽至 **[!UICONTROL 工具]** ![錘子](assets/hammer.png) > **[!UICONTROL Cloud Service]** > **[!UICONTROL Microsoft®® Power Automate流程服務]** 並開啟您在上一節中建立的設定容器。
 
+
    >[!NOTE]
    >
    建立最適化表單時，請在 **[!UICONTROL 設定容器]** 欄位。
+
 1. 在設定頁面上，點選 **[!UICONTROL 建立]** 以建立 [!DNL Microsoft®® Power Automate Flow Service] AEM Forms中的設定。
 1. 在 **[!UICONTROL 設定Microsoft®® Power Automate的Dataverse]** 頁面，指定 **[!UICONTROL 使用者端ID]** （也稱為應用程式ID）、 **[!UICONTROL 使用者端密碼]**， **[!UICONTROL OAuth URL]** 和 **[!UICONTROL 動態環境URL]**. 使用使用者端ID、使用者端密碼、OAuth URL和Dynamics環境ID。 在Microsoft® Azure Active Directory應用程式UI中使用端點選項來尋找OAuth URL。 開啟 [我的流程](https://us.flow.microsoft.com) 連結並點選「我的流程」，使用URL中列出的ID作為「動態環境ID」。
 1. 點選 **[!UICONTROL 連線]**. 如有要求，請登入您的Microsoft® Azure帳戶。 點選 **[!UICONTROL 儲存]**.

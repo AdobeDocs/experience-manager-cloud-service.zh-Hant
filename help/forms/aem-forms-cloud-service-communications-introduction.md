@@ -2,14 +2,16 @@
 title: Formsas a Cloud Service通訊簡介
 description: 自動將資料與 XDP 和 PDF 範本合併，或產生 PCL、ZPL 和 PostScript 格式的輸出
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
+source-git-commit: a635a727e431a73086a860249e4f42d297882298
 workflow-type: tm+mt
-source-wordcount: '1156'
-ht-degree: 96%
+source-wordcount: '1475'
+ht-degree: 75%
 
 ---
 
 # AEM Formsas a Cloud Service通訊簡介 {#frequently-asked-questions}
+
+<span class="preview"> [DocAssurance服務](#doc-assurance) 是搶鮮版功能，並可透過 [發行前通道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). 功能的檔案內容可能會有所變更。</span>
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
@@ -157,7 +159,35 @@ You can [query a PDF document](https://developer.adobe.com/experience-manager-fo
 
 The [PDF to XDP API](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/references/pdf-utility-sync/#tag/Document-Conversion) converts a PDF document to an XDP file. For a PDF document to be successfully converted to an XDP file, the PDF document must contain an XFA stream in the dictionary. -->
 
-## 通訊 API 類型
+
+<span class="preview"> 檔案保證服務是發行前功能，可透過我們的以下網站存取： [發行前通道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). 功能的檔案內容可能會有所變更。</span>
+
+## 檔案保證 {#doc-assurance}
+
+DocAssurance服務包含簽名和加密API：
+
+### 簽名API
+
+簽名API可讓您的組織保護其發佈和接收Adobe PDF檔案的安全性和隱私權。 此服務使用數位簽名和憑證，以確保只有預期的收件者才能變更檔案。 因為安全功能會套用至檔案本身，所以檔案在其整個生命週期中都會保持安全及受控。 當檔案離線下載以及將它送回您的組織時，防火牆外仍會保持安全。 您可以使用簽名API完成以下任務：
+
+* 新增簽名欄位至PDF檔案。
+* 在PDF檔案中簽署指定的簽名欄位。
+* 認證PDF檔案
+
+### 加密API
+
+加密API可讓您加密和解密檔案。 檔案加密後，其內容會變得無法讀取。 授權的使用者可以解密檔案以取得內容的存取權。 如果PDF檔案已使用密碼加密，使用者必須先指定開啟的密碼，才能在Adobe Reader或Adobe Acrobat中檢視檔案。 同樣地，如果PDF檔案已使用憑證加密，使用者必須使用與用於加密PDF檔案的憑證（私密金鑰）相對應的公開金鑰來解密PDF檔案。
+
+您可以使用加密API完成這些工作：
+
+* 使用密碼加密PDF檔案。
+* 從PDF檔案中移除密碼式加密。
+* 擷取套用至PDF檔案的安全性型別。
+
+簽名API和加密API都是 [同步API](#types-of-communications-apis-types).
+
+
+## 通訊 API 類型 {#types}
 
 通訊提供用於隨需和批次產生文件的 HTTP API：
 

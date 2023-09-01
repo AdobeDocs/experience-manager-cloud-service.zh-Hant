@@ -2,8 +2,8 @@
 title: Adobe Experience Manager (AEM) as a Cloud Service 的發行說明。
 description: Adobe Experience Manager (AEM) as a Cloud Service 的發行說明。
 exl-id: 05b9e51f-467e-4c8e-baea-b1cf832597cd
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: ht
+source-git-commit: ca5c3b980f6a34003164f0db4e622f100fdc930b
+workflow-type: tm+mt
 source-wordcount: '642'
 ht-degree: 100%
 
@@ -13,7 +13,7 @@ ht-degree: 100%
 
 | 產品 | Adobe Experience Manager as a Cloud Service  |
 |---|---|
-| 版本 | 2023.7.0 |
+| 版本 | 2023.8.0 |
 | 類型 | 持續更新 |
 | 推出日期 | 持續更新 |
 

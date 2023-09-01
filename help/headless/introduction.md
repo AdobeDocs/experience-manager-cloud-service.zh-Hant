@@ -3,8 +3,8 @@ title: AEM Headless 簡介
 description: 了解關於 Adobe Experience Manager (AEM) 內的 Headless，以及了解詳細文件和 Headless 歷程。 了解如何使用內容片段模式、內容片段和 GraphQL API 等功能來增強無周邊體驗。
 landing-page-description: 了解如何使用及管理 Adobe Experience Manager as a Cloud Service 內的 Headless。
 exl-id: 24300499-ae9c-49d0-aa25-f51e14d9cf79
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: ht
+source-git-commit: 87630d9530194fd0c6d88e05a17db108b765ccb6
+workflow-type: tm+mt
 source-wordcount: '701'
 ht-degree: 100%
 
@@ -42,7 +42,7 @@ AEM as a Cloud Service 是一種適用於無周邊實作模型的靈活工具，
 1. **內容片段**
    * 內容片段是根據內容片段模型建立的。
    * 內容片段由內容作者使用 AEM 內容片段編輯器建立。
-   * 內容片段會儲存為 AEM Assets，但可以透過資產主控台或[內容片段控制台](/help/sites-cloud/administering/content-fragments/content-fragments-console.md)進行管理。
+   * 內容片段會儲存為 AEM Assets，但可以透過資產主控台或[內容片段控制台](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console)進行管理。
 1. **用於傳遞的內容 API**
    * AEM GraphQL API 支援內容片段傳遞。
    * AEM Assets REST API 支援內容片段 CRUD 作業。

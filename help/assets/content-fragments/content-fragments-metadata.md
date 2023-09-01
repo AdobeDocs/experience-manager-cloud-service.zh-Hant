@@ -2,10 +2,10 @@
 title: 中繼資料 — 片段屬性（資產 — 內容片段）
 description: 瞭解如何檢視和編輯內容片段的中繼資料屬性。
 exl-id: bc67480d-a1e4-4ef9-b811-8bd110f70369
-source-git-commit: 5c59189abf809293a319d6bce4ef7389c2451f92
+source-git-commit: ceab75d3592a461478da3250a41ce00b6d4f31ef
 workflow-type: tm+mt
-source-wordcount: '223'
-ht-degree: 3%
+source-wordcount: '274'
+ht-degree: 2%
 
 ---
 
@@ -13,14 +13,20 @@ ht-degree: 3%
 
 瞭解如何在AEM中檢視和編輯內容片段的中繼資料屬性，以調整您的Headless內容。
 
+>[!NOTE]
+>
+>內容片段是Sites功能，但儲存為 **資產**.
+>
+>編寫內容片段有兩個編輯器。 本節介紹原始編輯器，主要透過以下網址存取： **資產** 主控台。 請參閱網站檔案， [內容片段 — 製作](/help/sites-cloud/administering/content-fragments/authoring.md)，以取得新編輯器的詳細資訊(主要透過以下網址存取： **內容片段** 主控台)。
+
 ## 編輯屬性/中繼資料 {#editing-properties-meta-data}
 
 您可以檢視和編輯內容片段的中繼資料（屬性）：
 
-1. 在 **資產** 控制檯導覽至內容片段的位置。
+1. 在 **資產** 主控台導覽至內容片段的位置。
 2. 可以：
 
-   * 選取 [**檢視屬性** 開啟對話方塊](/help/assets/manage-digital-assets.md#editing-properties). 開啟檢視後，您也可以進行編輯。
+   * 選取 [**檢視屬性** 開啟對話方塊](/help/assets/manage-digital-assets.md#editing-properties). 開啟檢視後，您也可以編輯。
    * 開啟內容片段進行編輯，然後選取「 」 **中繼資料** 從側面板。
 
    ![側面板中的中繼資料](assets/cfm-metadata-01.png)
@@ -32,12 +38,12 @@ ht-degree: 3%
    * **標題**
    * **說明**
    * **標記**
-      * [標籤](/help/sites-cloud/authoring/features/tags.md) 在組織片段時特別強大，因為它們可用於內容分類和分類法。 標籤可用於尋找內容（依標籤）及套用大量作業。
-例如，您可以將相關片段標籤為「聖誕節啟動」，以僅允許作為子集瀏覽這些片段，或複製它們以供日後在新資料夾中再次啟動時使用。
+      * [標籤](/help/sites-cloud/authoring/features/tags.md) 在組織片段時可發揮強大功能，因為其可用於內容分類和分類法。 標籤可用於尋找內容（依標籤）及套用大量作業。
+例如，您可以將相關片段標籤為「聖誕節啟動」，以僅允許作為子集瀏覽這些片段，或複製這些片段以供日後在新資料夾中再次啟動時使用。
 
         >[!NOTE]
         >
-        >**標籤** 在以下情況下也可以新增： [編寫您的變數內容](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content) 及時間 [建立變數](/help/assets/content-fragments/content-fragments-variations.md#creating-a-variation).
+        >**標籤** 也可以在以下情況下新增： [編寫您的變數內容](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content) 及時間 [建立變數](/help/assets/content-fragments/content-fragments-variations.md#creating-a-variation).
 
    * **已建立** （僅顯示）
 

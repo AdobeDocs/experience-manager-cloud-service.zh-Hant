@@ -5,9 +5,9 @@ feature: Adaptive Forms
 role: User
 level: Beginner, Intermediate
 exl-id: 6fd38e9e-435e-415f-83f6-3be177738c00
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a635a727e431a73086a860249e4f42d297882298
 workflow-type: tm+mt
-source-wordcount: '6389'
+source-wordcount: '6436'
 ht-degree: 1%
 
 ---
@@ -23,16 +23,16 @@ ht-degree: 1%
 
 ## 概觀 {#overview}
 
-規則編輯者功能可讓表單企業使用者和開發人員在最適化表單物件上編寫規則。 這些規則定義根據表單上的預設條件、用戶輸入和用戶動作來觸發表單物件的動作。 它有助於進一步簡化表單填入體驗，確保準確性和速度。
+規則編輯器功能可讓表單業務使用者和開發人員在調適型表單物件上編寫規則。 這些規則會根據預設條件、使用者輸入及使用者對表單的動作，定義要在表單物件上觸發的動作。 它有助於進一步簡化表單填寫體驗，確保準確性和速度。
 
-規則編輯者提供直觀且簡化的用戶介面以寫入規則。 規則編輯者提供所有使用者的視覺編輯者。<!-- In addition, only for forms power users, rule editor provides a code editor to write rules and scripts. --> 您可使用規則對最適化表單物件執行的部分關鍵動作為：
+規則編輯器提供直覺式且簡化的使用者介面來撰寫規則。 規則編輯器為所有使用者提供一個視覺化編輯器。<!-- In addition, only for forms power users, rule editor provides a code editor to write rules and scripts. --> 您可使用規則對最適化表單物件執行的部分關鍵動作如下：
 
 * 顯示或隱藏物件
-* 啟用或停用物件
-* 設定物件的值
+* 啟用或禁用物件
+* 設置物件的值
 * 驗證物件的值
-* 執行函式以計算物件的值
-* 啟動表單資料模型服務並執行作業
+* 執行函數以計算物件的值
+* 啟動表單資料模型服務並執行操作
 * 設定物件的屬性
 
 <!-- Rule editor replaces the scripting capabilities in [!DNL Experience Manager 6.1 Forms] and earlier releases. However, your existing scripts are preserved in the new rule editor. For more information about working with existing scripts in the rule editor, see [Impact of rule editor on existing scripts](rule-editor.md#p-impact-of-rule-editor-on-existing-scripts-p). -->
@@ -49,11 +49,11 @@ ht-degree: 1%
 
 **Condition-Action** 在此建構中，規則會先定義條件，接著定義要觸發的動作。 此建構與程式設計語言中的if-then陳述式類似。
 
-在規則編輯器中， **時間** 規則型別會強制執行condition-action結構。
+在規則 編輯者中， **When** 規則 類型強制實施條件操作構造。
 
-**Action-Condition** 在此建構中，規則會先定義要觸發的動作，接著定義評估條件。 此建構的另一個變數為action-condition-alternate action，這也會定義在條件傳回False時要觸發的替代動作。
+**操作條件** 在此構造中，規則首先定義要觸發的操作，然後是評估條件。 此構造的另一個變體是操作-條件-備用操作，它還定義了在條件返回 False 時要觸發的備用操作。
 
-規則編輯器中的「顯示」、「隱藏」、「啟用」、「停用」、「設定值」和「驗證」規則型別會強制實施動作條件規則結構。 依預設，「顯示」的替代動作是「隱藏」，而「啟用」的替代動作是「停用」，反之亦然。 您無法變更預設的替代動作。
+顯示、隱藏、啟用、禁用、設置值和驗證規則類型規則 編輯者強制實施操作條件規則構造。 預設情況下，顯示的替代操作為「隱藏」，「啟用」的替代操作為「禁用」，反之亦然。 您無法更改預設的替代操作。
 
 >[!NOTE]
 >
@@ -92,23 +92,23 @@ ht-degree: 1%
 * **不為空**
 * **已選取：** 當使用者為核取方塊、下拉式清單單選按鈕選取特定選項時，傳回true。
 * **已初始化（事件）：** 當表單物件在瀏覽器中呈現時傳回true。
-* **已變更（事件）：** 當用戶變更表單物件的輸入值或選取的選項時，傳回 true。
-* **導覽（事件）：** 當用戶按一下導覽物件時，傳回 true。 導覽物件用於在面板之間移動。
+* **已變更（事件）：** 當使用者變更表單物件的輸入值或選取的選項時，傳回true。
+* **導覽（事件）：** 當使用者按一下導覽物件時傳回true。 導覽物件用於在面板之間移動。
 * **步驟完成（事件）：** 規則的步驟完成時傳回true。
 * **提交成功（事件）：** 成功將資料提交至表單資料模型時會傳回true。
 * **提交時發生錯誤（事件）：**  資料提交至表單資料模型失敗時傳回true。
 
 ## 規則編輯器中的可用規則型別 {#available-rule-types-in-rule-editor}
 
-規則編輯者提供一組預先定義的可用來編寫規則的規則類型。 讓我們來詳細瞭解每個規則類型。 有關在規則編輯者中編寫規則的詳細資訊，請參閱 [ 寫入規則 ](rule-editor.md#p-write-rules-p) 。
+規則編輯器提供了一組預先定義的規則型別，您可以使用這些型別來撰寫規則。 讓我們來詳細瞭解一下每種規則型別。 如需有關在規則編輯器中寫入規則的詳細資訊，請參閱 [寫入規則](rule-editor.md#p-write-rules-p).
 
 ### [!UICONTROL 時間] {#whenruletype}
 
-**** 「規則類型」遵循 **條件-動作-替代動作** 規則構造，或有時，只是 **條件-動作** 構造。在此規則類型中，您首先指定求值的條件，其後加上要觸發的動作（ `True` ）。 使用When規則型別時，您可以使用多個AND和OR運運算元來建立 [巢狀運算式](#nestedexpressions).
+此 **[!UICONTROL 時間]** 規則型別會遵循 **condition-action-alternate action** 規則建構，或有時僅 **condition-action** 建構。 在此規則型別中，您必須先指定評估條件，接著在條件符合時觸發動作( `True`)。 使用 When 規則 類型時，可以使用多個 AND 和 OR 運算子來創建 [ 嵌套運算式 ](#nestedexpressions) 。
 
-使用When規則型別，您可以評估表單物件的條件，並對一或多個物件執行動作。
+使用 When 規則 類型，您可以評估表單物件的條件並對一個或多個物件執行操作。
 
-簡單地說，典型的When規則結構如下：
+簡而言之，典型的 When 規則 結構如下：
 
 `When on Object A:`
 
@@ -116,11 +116,13 @@ ht-degree: 1%
 
 `Then, do the following:`
 
-物件B上的動作2；以及物件C上的動作3；
+關於物件B的行動2;
+和
+關於物件C的行動3;
 
 _
 
-當您有多值元件（如單選按鈕或清單）時，為該元件建立規則時，會自動擷取選項，並讓規則建立者可以使用這些選項。 您不需要再次輸入選項值。
+當您具有多值元件（如選項按鈕或清單）時，在為該元件創建規則時，將自動檢索選項並提供給規則建立者。 您不需要再次輸入選項值。
 
 例如，清單有四個選項：紅色、藍色、綠色和黃色。 建立規則時，會自動擷取選項（選項按鈕），以供規則建立者使用，如下所示：
 
@@ -138,7 +140,7 @@ _
 
 **[!UICONTROL 停用]** 停用指定的物件。
 
-**[!UICONTROL 啟動服務]** 叫用表單資料模型中設定的服務。 選擇「啟動服務」作業時，會出現一個欄位。 點選欄位時，它會顯示您在上所有表單資料模型中設定的所有服務 [!DNL Experience Manager] 執行個體。 選擇表單資料模型服務時，會出現更多欄位，您可在其中對應具有指定服務的輸入和輸出引數的表單物件。 請參閱呼叫表單資料模型服務的規則範例。
+**[!UICONTROL 啟動服務]** 叫用表單資料模型中設定的服務。 選擇「調用服務」操作時，將顯示一個欄位。 點擊欄位時，它會顯示執行個體 [!DNL Experience Manager] 上所有表單資料模型中配置的所有服務。 選擇表單資料模型服務時，會出現更多欄位，您可在其中對應具有指定服務的輸入和輸出引數的表單物件。 請參閱呼叫表單資料模型服務的規則範例。
 
 除了表單資料模型服務之外，您還可以指定直接的WSDL URL來叫用Web服務。 不過，表單資料模型服務有許多優點，且建議叫用服務的方法。
 
@@ -148,9 +150,21 @@ _
 
 如需在表單資料模型中設定服務的詳細資訊，請參閱 [[!DNL Experience Manager Forms] 資料整合](data-integration.md).
 
-此 **[!UICONTROL 設定屬性]** 規則型別可讓您根據條件動作來設定指定物件的屬性值。
+此 **[!UICONTROL 設定屬性]** 規則型別可讓您根據條件動作來設定指定物件的屬性值。 您可以將屬性設定為下列其中一項：
+* 可見（布林值）
+* dorExclusion （布林值）
+* chartType （字串）
+* 標題（字串）
+* 已啟用（布林值）
+* 強制（布林值）
+* validationsDisabled （布林值）
+* validateExpMessage （字串）
+* 值（數字、字串、日期）
+* 專案（清單）
+* 有效（布林值）
+* errorMessage （字串）
 
-它可讓您定義規則，以動態地將核取方塊新增至最適化表單。 您可以使用自訂函式、表單物件或物件屬性來定義規則。
+例如，它可讓您定義規則，以動態地將核取方塊新增至最適化表單。 您可以使用自訂函式、表單物件或物件屬性來定義規則。
 
 ![設定屬性](assets/set_property_rule_new.png)
 
@@ -188,15 +202,19 @@ _
 
 此 **設定值** 規則型別不適用於所有表單物件，例如面板和工具列按鈕。 標準的「設定值」規則具有以下結構：
 
-將物件A的值設為：
+將物件 A 的值設置為：
 
-（字串ABC） OR （物件C的物件屬性X） OR （函式的值） OR （數學運算式的值） OR （資料模型服務或Web服務的輸出值）；
+（字串 ABC）或
+（物件 屬性 物件 C 的 X）或
+（來自函數的值）或
+（值來自數學運算式）或
+（資料模型服務或Web服務的輸出值）;
 
 時間（可選）：
 
-（條件1和條件2和條件3）為 TRUE;
+（條件 1 和條件 2 和條件 3） 為 TRUE;
 
-以下範例接受值 `dependentid` 欄位作為輸入，並設定 `Relation` 欄位至的輸出 `Relation` 的引數 `getDependent` 表單資料模型服務。
+以下示例將欄位中的值作為輸入，並將欄位的值 `dependentid` `Relation` 設置為表單資料模型服務的參數 `getDependent` 的 `Relation` 輸出。
 
 ![Set-value-web-service](assets/set-value-web-service.png)
 
@@ -204,13 +222,13 @@ _
 
 >[!NOTE]
 >
->此外，您可以使用「設定值規則從表單資料模型服務或網站服務的輸出中填入下拉式清單元件中的所有值。 不過，請確定您選擇的輸出引數屬於陣列型別。 陣列中傳回的所有值都可用於指定的下拉式清單。
+>此外，您可以使用規則的「設定值」，從表單資料模型服務或Web服務的輸出，填入下拉式清單元件中的所有值。 不過，請確定您選擇的輸出引數屬於陣列型別。 陣列中傳回的所有值都可在指定的下拉式清單中使用。
 
 ### [!UICONTROL 顯示] {#show}
 
-**[!UICONTROL 使用顯示]** 規則類型，您可以根據是否符合條件，編寫規則來顯示或隱藏表單物件。當條件未得到滿足或 `False` 傳回時，顯示規則類型也會觸發隱藏動作。
+使用 **[!UICONTROL 顯示]** 規則型別，您可以撰寫規則來根據是否滿足條件來顯示或隱藏表單物件。 若條件未滿足或傳回，Show rule型別也會觸發Hide動作 `False`.
 
-典型的顯示規則結構如下：
+典型的Show規則結構如下：
 
 `Show Object A;`
 
@@ -338,7 +356,7 @@ _
 
 已套用一或多個有效規則的表單物件會以綠色圓點標示。 如果套用至表單物件的任何規則無效，則表單物件會標示為黃點。
 
-函數標籤包含一組內建函數，例如，「總計」、「最大值」、「表單數目」、「校驗和驗證」。 您可以使用這些函數來計算可重複的面板和表格列中的值，並在編寫規則時在動作和條件陳述式中使用。 不過，您也可以建立 [ 自訂功能 ](#custom-functions) 。
+函式索引標籤包含一組內建函式，例如Sum Of、Min Of、Max Of、Average Of、Number Of和Validate表單。 您可以使用這些函式計算可重複面板和表格列中的值，並在撰寫規則時在動作和條件陳述式中使用它們。 不過，您可以建立 [自訂函式](#custom-functions) 也是。
 
 ![函式標籤](assets/functions.png)
 
@@ -348,9 +366,9 @@ _
 
 在表單物件的左側樹狀結構中，您可以點選表單物件以顯示套用至每個物件的規則。 您不僅可以瀏覽各種表單物件的規則，也可以在表單物件之間複製 — 貼上規則。 如需詳細資訊，請參閱 [複製貼上規則](rule-editor.md#p-copy-paste-rules-p).
 
-### C. 表單物件和功能切換 {#c-form-objects-and-functions-toggle-br}
+### C.表單物件與功能切換 {#c-form-objects-and-functions-toggle-br}
 
-切換按鈕，點擊時切換表單物件和函數窗格。
+點選切換按鈕時，會切換表單物件和函式窗格。
 
 ### D.視覺規則編輯器 {#visual-rule-editor}
 
@@ -801,7 +819,9 @@ Any scripts or expressions that you must have written in the Scripts tab are ava
 
 ![Example-invoke-services](assets/example-invoke-services.png)
 
-使用最適化表單規則叫用表單資料模型服務
+>[!NOTE]
+>
+>如果輸入為陣列型別，則支援陣列的欄位會顯示在「輸出」下拉式區段下。
 
 ### 使用When規則觸發多個動作 {#triggering-multiple-actions-using-the-when-rule}
 

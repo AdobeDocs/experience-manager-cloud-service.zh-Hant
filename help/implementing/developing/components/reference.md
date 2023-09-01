@@ -2,7 +2,7 @@
 title: 元件參考指南
 description: 開發人員參考指南，瞭解元件及其結構的詳細資訊
 exl-id: 45e5265b-39d6-4a5c-be1a-e66bb7ea387d
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 87630d9530194fd0c6d88e05a17db108b765ccb6
 workflow-type: tm+mt
 source-wordcount: '3648'
 ht-degree: 1%
@@ -473,4 +473,4 @@ Granite UI和Granite UI Widget中的欄位驗證已透過使用 `foundation-vali
 
 ![元件主控台中的README.md可見專案](assets/components-documentation-console.png)
 
-支援的Markdown與相同 [內容片段](/help/sites-cloud/administering/content-fragments/content-fragments.md).
+支援的Markdown與相同 [內容片段](/help/sites-cloud/administering/content-fragments/overview.md).

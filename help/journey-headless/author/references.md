@@ -2,9 +2,9 @@
 title: 了解如何在內容片段中使用參考
 description: 了解如何在內容片段中使用內容、其他片段和其他資產 (媒體) 的參考。介紹巢狀片段對 Headless CMS 編寫的必要性和機制。
 exl-id: a65e8a5a-954b-4307-8027-ca8bac5f4261
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: ht
-source-wordcount: '728'
+source-git-commit: d6b98559e7cbe5fc5bd05d9cf37225e960e668e7
+workflow-type: tm+mt
+source-wordcount: '712'
 ht-degree: 100%
 
 ---
@@ -35,7 +35,7 @@ ht-degree: 100%
 
 一些參考有專用資料類型 (例如，內容參考和片段參考)，而其他參考只是新增至文字區塊內的參考 (資產參考和臨時參考)。
 
-![內容片段 - 參考](/help/journey-headless/author/assets/headless-journey-author-references-01.png)
+![內容片段 - 參考](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-overview.png)
 
 ## 內容參考 {#content-references}
 
@@ -92,11 +92,7 @@ ht-degree: 100%
 
 使用內容片段編輯器的&#x200B;**樹狀結構**&#x200B;索引標籤，您可以瀏覽片段參考的片段，然後瀏覽該片段包含的任何參考。選取一個參考會開啟該片段供您編輯。
 
->[!NOTE]
->
->使用主面板中的階層連結，您可以瀏覽回起點。
-
-![內容片段樹狀結構](/help/sites-cloud/administering/content-fragments/assets/cfm-structuretree-02.png)
+![內容片段樹狀結構](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-structure-tree.png)
 
 ## 臨時參考 {#adhoc-references}
 
@@ -110,21 +106,21 @@ ht-degree: 100%
 
 ## 其他資源 {#additional-resources}
 
-* [使用內容片段](/help/sites-cloud/administering/content-fragments/content-fragments.md)
+* [使用內容片段](/help/sites-cloud/administering/content-fragments/overview.md)
 
-   * [管理內容片段](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md)
+   * [管理內容片段](/help/sites-cloud/administering/content-fragments/managing.md)
 
-      * [套用設定到資產資料夾](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md#apply-the-configuration-to-your-assets-folder)
+      * [套用設定到資產資料夾](/help/sites-cloud/administering/content-fragments/setup.md#apply-the-configuration-to-your-folder)
 
-      * [建立內容片段](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#creating-a-content-fragment)
+      * [建立內容片段](/help/sites-cloud/administering/content-fragments/managing.md#creating-a-content-fragment)
 
-   * [變化 - 編寫內容片段](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md)
+   * [編寫內容片段](/help/sites-cloud/administering/content-fragments/authoring.md)
 
-   * [內容片段模型](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
+   * [內容片段模型](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
 
-      * [內容片段模型 - 資料類型](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#data-types)
+      * [內容片段模型 - 資料類型](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)
 
-      * [內容片段模型 - 屬性](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#properties)
+      * [內容片段模型 - 屬性](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#properties)
 
 * 快速入門指南
    * [建立資產資料夾 - Headless 設定](/help/headless/setup/create-assets-folder.md)

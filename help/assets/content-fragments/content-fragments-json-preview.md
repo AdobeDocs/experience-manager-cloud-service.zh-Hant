@@ -2,16 +2,22 @@
 title: 預覽 — JSON呈現（資產 — 內容片段）
 description: 瞭解如何在實作AEM Headless解決方案時輕鬆預覽內容片段的JSON表示法。
 exl-id: e5f3f3ee-c191-4b7b-8a29-67524bb68a8e
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 87630d9530194fd0c6d88e05a17db108b765ccb6
 workflow-type: tm+mt
-source-wordcount: '117'
-ht-degree: 4%
+source-wordcount: '168'
+ht-degree: 2%
 
 ---
 
 # 預覽 - JSON 代表 {#preview-json-representation}
 
 將內容片段的模型開發為AEM Headless實作的一部分時，您可能想要根據模型檢視內容片段的範例JSON輸出。 例如，瞭解最終輸出的外觀。 在驗證模型JSON結構時，這可能有所幫助，針對每種資料型別可能有預設範例內容。
+
+>[!NOTE]
+>
+>內容片段是Sites功能，但儲存為 **資產**.
+>
+>編寫內容片段有兩個編輯器。 本節介紹原始編輯器，主要透過以下網址存取： **資產** 主控台。 請參閱網站檔案， [內容片段 — 製作](/help/sites-cloud/administering/content-fragments/authoring.md)，以取得新編輯器的詳細資訊(主要透過以下網址存取： **內容片段** 主控台)。
 
 使用 **預覽** 圖示：
 

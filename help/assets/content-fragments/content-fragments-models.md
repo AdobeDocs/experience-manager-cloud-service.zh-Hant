@@ -2,9 +2,9 @@
 title: 內容片段模型（資產 — 內容片段）
 description: 瞭解內容片段模型如何作為AEM中Headless內容的基礎，以及如何使用結構化內容建立內容片段。
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: f499edbc05b71495c072564bb065a07c34a9e236
 workflow-type: tm+mt
-source-wordcount: '2898'
+source-wordcount: '2937'
 ht-degree: 8%
 
 ---
@@ -30,7 +30,11 @@ AEM中的內容片段模型為您的定義了內容結構 [內容片段，](/hel
    >
    >如果[尚未啟用使用內容片段模型](/help/assets/content-fragments/content-fragments-configuration-browser.md)，則&#x200B;**建立**&#x200B;選項將無法使用。
 
-1. 指定「模 **型標題」**。您也可以新增 **標籤**， a **說明**，並選取 **啟用模型** 至 [啟用模型](#enabling-disabling-a-content-fragment-model) 若有需要。
+1. 指定「模 **型標題」**。您也可以定義各種屬性；例如，新增 **標籤**， a **說明**，並選取 **啟用模型** 至 [啟用模型](#enabling-disabling-a-content-fragment-model) 若有需要。
+
+   >[!NOTE]
+   >
+   >有關詳細資訊 **預設預覽URL模式** 另請參閱 [內容片段模型 — 屬性](#content-fragment-model-properties).
 
    ![標題和說明](assets/cfm-models-02.png)
 
@@ -313,6 +317,12 @@ type CompanyModel {
    * **標記**
    * **說明**
    * **上傳影像**
+   * **預設預覽 URL 模式**
+
+     >[!NOTE]
+     >
+     >這僅由 *新* 內容片段編輯器。 另請參閱 [內容片段模型](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#content-fragment-model-properties) 以取得進一步資訊。
+
 
 ## 啟用或停用內容片段模型 {#enabling-disabling-a-content-fragment-model}
 

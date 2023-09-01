@@ -2,7 +2,7 @@
 title: 自訂和擴充內容片段
 description: 內容片段可擴充標準資產。 瞭解如何自訂。
 exl-id: 58152d6e-21b6-4f45-a45c-0f46ee58825e
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 87630d9530194fd0c6d88e05a17db108b765ccb6
 workflow-type: tm+mt
 source-wordcount: '1812'
 ht-degree: 2%
@@ -13,13 +13,13 @@ ht-degree: 2%
 
 在Adobe Experience Manager as a Cloud Service中，內容片段會擴充標準資產；請參閱：
 
-* [建立和管理內容片段](/help/sites-cloud/administering/content-fragments/content-fragments.md) 和 [使用內容片段編寫頁面](/help/sites-cloud/authoring/fundamentals/content-fragments.md) 以取得有關內容片段的進一步資訊。
+* [建立和管理內容片段](/help/sites-cloud/administering/content-fragments/overview.md) 和 [使用內容片段編寫頁面](/help/sites-cloud/authoring/fundamentals/content-fragments.md) 以取得有關內容片段的進一步資訊。
 
 * [管理資產](/help/assets/manage-digital-assets.md) 以取得標準資產的詳細資訊。
 
 ## 架構 {#architecture}
 
-基本 [組成部分](/help/sites-cloud/administering/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) 的內容片段包括：
+基本 [組成部分](/help/sites-cloud/administering/content-fragments/overview.md#constituent-parts-of-a-content-fragment) 的內容片段包括：
 
 * A *內容片段*，
 * 由一或多個 *內容元素*，
@@ -78,7 +78,7 @@ ht-degree: 2%
 
 #### 資產許可權 {#asset-permissions}
 
-如需詳細資訊，請參閱 [內容片段 — 刪除注意事項](/help/sites-cloud/administering/content-fragments/content-fragments-delete.md).
+如需詳細資訊，請參閱 [內容片段 — 刪除注意事項](/help/sites-cloud/administering/content-fragments/delete-considerations.md).
 
 #### 功能整合 {#feature-integration}
 
@@ -324,7 +324,7 @@ ContentFragment newFragment = tpl.createFragment(parentRsc, "A fragment name", "
 
 ### 範例：指定自動儲存間隔 {#example-specifying-the-auto-save-interval}
 
-此 [自動儲存間隔](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#save-close-and-versions) （以秒為單位測量）可使用組態管理員(ConfMgr)定義：
+此 [自動儲存間隔](/help/sites-cloud/administering/content-fragments/managing.md#save-close-and-versions) （以秒為單位測量）可使用組態管理員(ConfMgr)定義：
 
 * 節點： `<conf-root>/settings/dam/cfm/jcr:content`
 * 屬性名稱: `autoSaveInterval`

@@ -3,8 +3,11 @@ title: 搭配GraphQL使用內容片段的Headless內容傳送
 description: 瞭解透過GraphQL使用內容片段實現AEM Headless CMS以進行headless內容傳送的基本概念。
 feature: Content Fragments, GraphQL API
 role: User
+hide: true
+index: false
+hidefromtoc: true
 exl-id: ef48f737-a5b3-4913-9f37-6b9f681bc048
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 5ce5746026c5683e79cdc1c9dc96804756321cdb
 workflow-type: tm+mt
 source-wordcount: '727'
 ht-degree: 29%
@@ -12,6 +15,12 @@ ht-degree: 29%
 ---
 
 # 搭配GraphQL使用內容片段的Headless內容傳送 {#headless-content-delivery-using-content-fragments-with-graphQL}
+
+<!--
+hide: yes
+index: no
+hidefromtoc: yes
+-->
 
 透過內容片段和GraphQL API，您可以使用Adobe Experience Manager (AEM) as a Cloud Service當作Headless內容管理系統(CMS)。
 
@@ -110,4 +119,4 @@ AEM GraphQL API實作是根據 [GraphQL Java程式庫](https://graphql.org/code/
 
 ## 教學課程 - AEM Headless 和 GraphQL 快速入門
 
-正在尋找實作教學課程？查看[AEM Headless 和 GraphQL 快速入門](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html)端對端教學課程，說明如何在 Headless CMS 情境下使用 AEM GraphQL API 建立和公開內容並供外部應用程式取用。
+正在尋找實作教學課程？查看 [AEM Headless 和 GraphQL 快速入門](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html)端對端教學課程，說明如何在 Headless CMS 情境下使用 AEM GraphQL API 建立和公開內容並供外部應用程式取用。

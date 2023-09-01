@@ -3,8 +3,11 @@ title: 變化 - 編寫片段內容
 description: 瞭解變數如何讓您為片段製作內容，然後根據用途建立該內容的變數。 這為Headless傳送和頁面製作增加了靈活性。
 feature: Content Fragments
 role: User
+hide: true
+index: false
+hidefromtoc: true
 exl-id: f2f28207-3e14-4cf4-acce-c6cf32231e05
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 5ce5746026c5683e79cdc1c9dc96804756321cdb
 workflow-type: tm+mt
 source-wordcount: '2458'
 ht-degree: 10%
@@ -12,6 +15,12 @@ ht-degree: 10%
 ---
 
 # 變化 - 編寫片段內容{#variations-authoring-fragment-content}
+
+<!--
+hide: yes
+index: no
+hidefromtoc: yes
+-->
 
 [變數](/help/sites-cloud/administering/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) 是AEM內容片段的一項重要功能，因為它們可讓您建立和編輯主要內容的復本，以用於特定頻道和/或案例，讓頁面製作和headless內容傳送更靈活。
 
