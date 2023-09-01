@@ -6,9 +6,9 @@ mini-toc-levels: 3
 feature: Asset Management,Publishing,Collaboration,Asset Processing
 role: User,Architect,Admin
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: 5b61b60a94b944a747232b238c3ce48195a5a212
+source-git-commit: c63f621f2526f05c8555acdac77a4c05a473c95d
 workflow-type: tm+mt
-source-wordcount: '4508'
+source-wordcount: '4481'
 ht-degree: 11%
 
 ---
@@ -121,19 +121,18 @@ ht-degree: 11%
 
 1. 若要排程啟動資產的特定日期/時間，請使用「準時」欄位旁的日 **[!UICONTROL 期選擇器]** 。
 
-   ![chlimage_1-217](assets/chlimage_1-217.png)
+   ![日期挑選器](assets/date-picker.png)
 
 1. 若要在特定期間後停用資產，請從日期選擇器旁的停用日期/時間 **[!UICONTROL 關閉時間]** 欄位。 停用日期應晚於資產的啟用日期。 在 [!UICONTROL 關閉時間]，無法透過Assets網頁介面或HTTP API使用資產及其轉譯。
 
-   ![chlimage_1-218](assets/chlimage_1-218.png)
-
+   <!--![chlimage_1-218](assets/chlimage_1-218.png)
 1. 在 **[!UICONTROL 標籤]** 欄位中，選取一或多個標籤。 若要新增自訂標籤，請在方塊中輸入標簽名稱，然後選取 `Enter` 機碼。 新標籤會儲存在 [!DNL Experience Manager].
 
    YouTube需要標籤才能發佈，而且必須具備YouTube連結（如果可以找到合適的連結）。
 
    >[!NOTE]
    >
-   >若要建立標籤，您必須具備寫入許可權： `/content/cq:tags/default` CRX存放庫中的路徑。
+   > 若要建立標籤，您必須具備寫入許可權： `/content/cq:tags/default` CRX存放庫中的路徑。
 
 1. 點選/按一下 **[!UICONTROL 儲存並關閉]**.
 
@@ -181,7 +180,7 @@ To view usage statistics for an asset, in the [!UICONTROL Properties] page, clic
 
 1. 按一下 **[!UICONTROL 貼上]** 工具列中的資產圖示。 資產會複製到此位置。
 
-   ![chlimage_1-219](assets/chlimage_1-219.png)
+   <!--![chlimage_1-219](assets/chlimage_1-219.png)-->
 
    >[!NOTE]
    >
@@ -229,7 +228,7 @@ To view usage statistics for an asset, in the [!UICONTROL Properties] page, clic
 
 1. 點選/按一下資產，以開啟其資產頁面。
 
-   ![chlimage_1-220](assets/chlimage_1-220.png)
+   <!--![chlimage_1-220](assets/chlimage_1-220.png)-->
 
 1. 點選/按一下「全域導覽」圖示，然後選取 **[!UICONTROL 轉譯]** 從清單中。
 
@@ -255,7 +254,7 @@ To view usage statistics for an asset, in the [!UICONTROL Properties] page, clic
 
    導覽至資產的資產詳細資訊頁面，然後點選/按一下工具列中的「新增轉譯 **** 」圖示，以上傳資產的新轉譯。
 
-   ![chlimage_1-221](assets/chlimage_1-221.png)
+   <!--![chlimage_1-221](assets/chlimage_1-221.png)-->
 
    >[!NOTE]
    >
@@ -267,7 +266,7 @@ To view usage statistics for an asset, in the [!UICONTROL Properties] page, clic
 
    同樣地，您可以透過覆蓋來自訂註釋頁面影像 `libs/dam/gui/content/assets/annotate/jcr:content/body/content/content/items/content/renditionpicker`.
 
-   ![chlimage_1-222](assets/chlimage_1-222.png)
+   <!--![chlimage_1-222](assets/chlimage_1-222.png)-->
 
    若要設定視訊資產的轉譯維度，請導覽至 `videopicker` CRX存放庫中的節點位置 `/libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/videopicker`，覆蓋節點，然後編輯適當的屬性。
 
@@ -451,11 +450,11 @@ The editing tools in the [!DNL Experience Manager Assets] interface let you perf
    * [快速動作](#quick-actions)
    * 在選取資產或導覽至資產頁面後，從工具列重新選取
 
-   ![chlimage_1-233](assets/chlimage_1-233.png)
+   <!--![chlimage_1-233](assets/chlimage_1-233.png)-->
 
 1. 在時間軸底部的 **[!UICONTROL 「注釋]** 」方塊中新增注釋。或者，在影像上標籤一個區域，並在「添加註釋」( **[!UICONTROL Add Annotation]** )對話框中添加註釋。
 
-   ![chlimage_1-234](assets/chlimage_1-234.png)
+<!-- ![chlimage_1-234](assets/chlimage_1-234.png)-->
 
 <!--
 1. To notify a user about an annotation, specify the email address of the user and add the comment. For example, to notify Aaron MacDonald about an annotation, enter @aa. Hints for all matching users is displayed in a list. Select Aaron's email address from the list to tag her with the comment. Similarly, you can tag more users anywhere within the annotation or before or after it.
@@ -465,11 +464,11 @@ The editing tools in the [!DNL Experience Manager Assets] interface let you perf
 >
 >對於非管理員使用者，只有在使用者擁有下列專案的讀取許可權時，才會顯示建議 `/home` 在CRXDE中。
 
-![chlimage_1-235](assets/chlimage_1-235.png)
+<!--![chlimage_1-235](assets/chlimage_1-235.png)-->
 
 1. 新增註釋後，按一下 **[!UICONTROL 新增]** 以儲存。 註解的通知會傳送給Aaron。
 
-   ![chlimage_1-236](assets/chlimage_1-236.png)
+   <!--![chlimage_1-236](assets/chlimage_1-236.png)-->
 
    >[!NOTE]
    >
@@ -484,11 +483,11 @@ The editing tools in the [!DNL Experience Manager Assets] interface let you perf
 
 1. 若要選擇不同顏色以便區分使用者，請按一下/點選「設定檔」圖示，然後按一下/點選 **[!UICONTROL 我的偏好設定]**.
 
-   ![chlimage_1-237](assets/chlimage_1-237.png)
+   <!--![chlimage_1-237](assets/chlimage_1-237.png)-->
 
    在「注釋顏色」( **[!UICONTROL Annotation Color)框中指定所要的顏色]** ，然後按一下/點選「 **[!UICONTROL 接受」(Accept]**)。
 
-   ![chlimage_1-238](assets/chlimage_1-238.png)
+<!-- ![chlimage_1-238](assets/chlimage_1-238.png)-->
 
 >[!NOTE]
 >
@@ -508,15 +507,15 @@ The editing tools in the [!DNL Experience Manager Assets] interface let you perf
 
 1. 點選/按一下「全域導覽」圖示，然後選擇 **[!UICONTROL 時間表]** 從清單中。
 
-   ![chlimage_1-239](assets/chlimage_1-239.png)
+   <!--![chlimage_1-239](assets/chlimage_1-239.png)-->
 
 1. 從時間軸 **[!UICONTROL 的「顯示全部]** 」清單中，選取「注 **[!UICONTROL 釋]** 」以根據註解來篩選結果。
 
-   ![chlimage_1-240](assets/chlimage_1-240.png)
+   <!--![chlimage_1-240](assets/chlimage_1-240.png)-->
 
    點選/按一下中的註解 **[!UICONTROL 時間表]** 面板來檢視影像上對應的註解。
 
-   ![chlimage_1-241](assets/chlimage_1-241.png)
+   <!--![chlimage_1-241](assets/chlimage_1-241.png)-->
 
    點選/按一下 **[!UICONTROL 刪除]**，以刪除特定註解。
 
@@ -540,29 +539,29 @@ The editing tools in the [!DNL Experience Manager Assets] interface let you perf
 
 1. 若要列印特定註釋，請從時間軸選取註釋。
 
-   ![chlimage_1-242](assets/chlimage_1-242.png)
+   <!--![chlimage_1-242](assets/chlimage_1-242.png)-->
 
    若只要列印稽核狀態，請從時間表選取它。
 
-   ![chlimage_1-243](assets/chlimage_1-243.png)
+   <!--![chlimage_1-243](assets/chlimage_1-243.png)-->
 
 1. 點選/按一下 **[!UICONTROL 列印]** 圖示。
 
-   ![chlimage_1-244](assets/chlimage_1-244.png)
+   <!--![chlimage_1-244](assets/chlimage_1-244.png)-->
 
 1. 從「列印」對話方塊中，選擇您要在PDF上顯示註釋/審閱狀態的位置。 例如，如果您希望註解/狀態列印在包含列印影像的頁面的右上角，請使用 **左上方** 設定。 預設會選取此選項。
 
-   ![chlimage_1-245](assets/chlimage_1-245.png)
+   <!--![chlimage_1-245](assets/chlimage_1-245.png)-->
 
    您可以根據要在打印的PDF中顯示注釋/狀態的位置選擇其他設定。如果您希望註解/狀態顯示在與印刷資產不同的頁面中，請選擇「下 **[!UICONTROL 一頁」]**。
 
 1. 按一下 **[!UICONTROL 列印]**. 根據您在步驟2中選擇的選項，產生的PDF會在指定位置顯示註解/狀態。例如，如果您選擇使用左上角設定打印注釋和審閱狀態 **** ，則生成的輸出類似於此處所示的PDF檔案。
 
-   ![chlimage_1-246](assets/chlimage_1-246.png)
+   <!--![chlimage_1-246](assets/chlimage_1-246.png)-->
 
 1. 使用右上角的選項下載或列印PDF。
 
-   ![chlimage_1-247](assets/chlimage_1-247.png)
+   <!--![chlimage_1-247](assets/chlimage_1-247.png)-->
 
    若要修改彩現PDF檔案的外觀，例如註釋和狀態的字型顏色、大小和樣式、背景顏色，請開啟 **[!UICONTROL 註解PDF設定]** 從Configuration Manager中，修改所需的選項。 例如，若要變更已核准狀態的顯示顏色，請修改對應欄位中的顏色代碼。 如需有關變更註解字型顏色的資訊，請參閱 [註解](/help/assets/manage-digital-assets.md#annotating).
 
@@ -594,15 +593,15 @@ The editing tools in the [!DNL Experience Manager Assets] interface let you perf
 
 1. 點選/按一下 **[!UICONTROL 動作]** （箭頭）圖示來檢視您可以對資產執行的可用動作。
 
-   ![chlimage_1-249](assets/chlimage_1-249.png)
+   <!--![chlimage_1-249](assets/chlimage_1-249.png)-->
 
 1. 點選/按一下 **[!UICONTROL 另存為版本]** 以建立資產的版本。
 
-   ![chlimage_1-250](assets/chlimage_1-250.png)
+<!--![chlimage_1-250](assets/chlimage_1-250.png)-->
 
 1. 新增標籤和註解，然後按一下 **[!UICONTROL 建立]** 以建立版本。 或者，點選/按一下 **取消** 以結束作業。
 
-   ![chlimage_1-251](assets/chlimage_1-251.png)
+   <!--![chlimage_1-251](assets/chlimage_1-251.png)-->
 
 1. 若要檢視新版本，請從資產詳細資 **[!UICONTROL 訊頁面或資產UI開啟時間軸中的「顯示全部]** 」清單，然後選擇「版 **[!UICONTROL 本」]**。為資產建立的所有版本都會列在時間軸標籤下。您可以按一下下拉箭頭並從清單中選取「版本」，篩選清單以顯 **[!UICONTROL 示「版本]** 」。
 
@@ -635,23 +634,23 @@ The editing tools in the [!DNL Experience Manager Assets] interface let you perf
 
 1. 點選/按一下 **[!UICONTROL 動作]** （箭頭）圖示以開啟資產可用的動作清單。
 
-   ![chlimage_1-252](assets/chlimage_1-252.png)
+   <!--![chlimage_1-252](assets/chlimage_1-252.png)-->
 
 1. 點選/按一下 **[!UICONTROL 開始工作流程]** 從清單中。
 
-   ![chlimage_1-253](assets/chlimage_1-253.png)
+   <!--![chlimage_1-253](assets/chlimage_1-253.png)-->
 
 1. 在 **[!UICONTROL 開始工作流程]** 對話方塊中，從清單中選取工作流程模型。
 
-   ![chlimage_1-254](assets/chlimage_1-254.png)
+   <!--![chlimage_1-254](assets/chlimage_1-254.png)-->
 
 1. （選用）指定工作流程的標題，可用來參考工作流程例項。
 
-   ![chlimage_1-255](assets/chlimage_1-255.png)
+   <!--![chlimage_1-255](assets/chlimage_1-255.png)-->
 
 1. 點選/按一 **[!UICONTROL 下「開始]** 」，然後點選/按一下對話 **[!UICONTROL 方塊中的「繼續]** 」以進行確認。工作流程的每個步驟都會以事件的形式顯示在時間軸中。
 
-   ![chlimage_1-256](assets/chlimage_1-256.png)
+   <!--![chlimage_1-256](assets/chlimage_1-256.png)-->
 
 ## 集合 {#collections}
 
