@@ -1,9 +1,9 @@
 ---
 title: 下載並安裝Forms Designer
 description: 您可以使用Forms Designer來建立XDP和PDF表單範本，這些範本可作為記錄檔案的範本。 設計工具可用於 [!DNL AEM Forms] 授權。
-source-git-commit: a635a727e431a73086a860249e4f42d297882298
+source-git-commit: 34d966f6550cb9e507c751b580b16a3043137255
 workflow-type: tm+mt
-source-wordcount: '352'
+source-wordcount: '343'
 ht-degree: 1%
 
 ---
@@ -17,17 +17,9 @@ Designer是一種點選式圖形化表單設計工具，可簡化XDP和PDF表單
 
 若要安裝最新版的AEM Forms Designer 64位元或32位元，您需要下列軟體與最低硬體才能安裝和設定Designer：
 
->[!NOTE]
->
-> 如果您使用32位元Designer，則在安裝64位元Designer之前，必須解除安裝32位元Designer，以避免安裝64位元Designer時發生問題。
-
-<!--
->[!BEGINTABS]
-
->[!TAB 64-bit OS (Recommended)] -->
-
 +++ 64位元設計工具（建議使用）
 
+* 在安裝64位元版本的Forms Designer之前，請先解除安裝32位元版本的Designer。
 * [!DNL Microsoft® Windows® 2016 Server] 或 [!DNL Microsoft® Windows® 2019 Server]、和 [!DNL Microsoft® Windows® 10]
 * 最低2 GB的RAM
 * 20 GB的磁碟空間
