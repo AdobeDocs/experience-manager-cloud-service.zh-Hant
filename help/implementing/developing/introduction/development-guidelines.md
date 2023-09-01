@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service 開發指導方針
 description: 了解在 AEM as a Cloud Service 上進行開發的準則，以及它和內部部署的 AEM 以及 AMS 中的 AEM 的重要區別。
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 5a60c491db4a182529a2c4b6490b18b356c14fa7
 workflow-type: tm+mt
-source-wordcount: '2653'
+source-wordcount: '2746'
 ht-degree: 4%
 
 ---
@@ -99,6 +99,14 @@ AEMas a Cloud Service不支援從發佈到作者的反向復寫。 如果需要�
 透過pub-sub機制，將內容從Author復寫到Publish。 不支援自訂復寫代理。
 
 ## 監視和偵錯 {#monitoring-and-debugging}
+
+## 沒有多載開發環境 {#overloading-dev-envs}
+
+生產環境的大小較高，可確保穩定操作，而中繼環境的大小類似生產環境，可確保生產條件下的實際測試。
+
+開發環境和快速開發環境應僅限於開發、錯誤分析和功能測試，且不應設計為處理高工作負載或大量內容。
+
+例如，在開發環境中變更大型內容存放庫上的索引定義可能會導致重新索引導致太多處理。 需要大量內容的測試應在中繼環境中執行。
 
 ### 記錄檔 {#logs}
 
