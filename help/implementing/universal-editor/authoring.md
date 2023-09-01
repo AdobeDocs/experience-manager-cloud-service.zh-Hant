@@ -2,7 +2,7 @@
 title: 使用 Universal Editor 編寫內容
 description: 了解內容作者使用 Universal Editor 建立內容有多簡單和直覺。
 exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
-source-git-commit: f28b8a85de76a1658ef45c509cbf5600baa1bb3a
+source-git-commit: 4cf7d3692b53e5cb5baecd7d0ee93824d9186380
 workflow-type: tm+mt
 source-wordcount: '2267'
 ht-degree: 99%
@@ -346,7 +346,7 @@ Universal Editor 標頭始終顯示在畫面頂端，就在 [Experience Cloud �
 
 ### 編輯內容片段 {#edit-content-fragment}
 
-如果您使用[元件模式](#component-mode)並選取[內容片段，](/help/assets/content-fragments/content-fragments.md)即可在元件邊欄中編輯其詳細資料。
+如果您使用[元件模式](#component-mode)並選取[內容片段，](/help/sites-cloud/administering/content-fragments/overview.md)即可在元件邊欄中編輯其詳細資料。
 
 ![編輯內容片段](assets/ue-edit-cf.png)
 
@@ -354,7 +354,7 @@ Universal Editor 標頭始終顯示在畫面頂端，就在 [Experience Cloud �
 
 變更會自動儲存到您的內容中。
 
-但如果您希望以[內容片段編輯器](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor)來編輯內容片段，則請按一下模式邊欄中的[「編輯」按鈕](#edit)。
+但如果您希望以[內容片段編輯器](/help/sites-cloud/administering/content-fragments/authoring.md)來編輯內容片段，則請按一下模式邊欄中的[「編輯」按鈕](#edit)。
 
 ### 新增元件到容器中 {#adding-components}
 
