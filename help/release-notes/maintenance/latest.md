@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的目前維護版本發行說明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的目前維護版本發行說明。'
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: a1686d7796bb1e310b776195bd19df98f6f10650
+source-git-commit: 370d5742065d659f32ec1ff4d4b0fc0a153f71c2
 workflow-type: tm+mt
-source-wordcount: '305'
-ht-degree: 41%
+source-wordcount: '315'
+ht-degree: 40%
 
 ---
 
@@ -21,25 +21,26 @@ ht-degree: 41%
 
 ### 增強功能 {#enhancements-13323}
 
-- GRANITE-46784：新增選項以停用BearerAuthenticationHandler
-- GRANITE-36205：將內部Oak發行版本更新至最新版本
-- ASSETS-26713：觸控式UI新版Experience UI儀表板的外部連結 — 統一介面整合和UI觸控最佳化升級
-- SKYOPS-63302：將com.adobe.granite：com.adobe.granite.auth.saml升級至v1.0.54
-- GRANITE-46634：升級至事件使用者端1.4.0
-- GRANITE-46788：將程式庫更新為Apache Commons IO 2.13.0、Commons Lang 3.13.0、Commons Code 1.16.0和Commons Compress 1.23.0
-- GRANITE-46705：Apache Felix Http Jetty 4.1.14的更新
-- GRANITE-46631：將Jackrabbit版本更新至2.20.11
-- SKYOPS-61895：Jackrabbit Filevault 3.7.0更新
+- GRANITE-46784：新增選項以停用BearerAuthenticationHandler。
+- GRANITE-36205：將內部Oak發行版本更新至最新版本。
+- ASSETS-26713：觸控式UI新版Experience UI儀表板的外部連結 — 統一介面整合和UI觸控最佳化升級。
+- SKYOPS-63302：將com.adobe.granite：com.adobe.granite.auth.saml升級至v1.0.54。
+- GRANITE-46634：升級至事件使用者端1.4.0。
+- GRANITE-46788：將程式庫更新為Apache Commons IO 2.13.0、Commons Lang 3.13.0、Commons Code 1.16.0和Commons Compress 1.23.0。
+- GRANITE-46705：更新至Apache Felix Http Jetty 4.1.14。
+- GRANITE-46631：將Jackrabbit版本更新至2.20.11。
+- SKYOPS-61895：Jackrabbit Filevault 3.7.0的更新。
 
 ### 已修正的問題 {#fixed-issues-13323}
 
-- SKYOPS-63290：修正貯體的不正確演化
-- SKYOPS-54607：速率限制器serverload計算對失敗的請求而言不正確
-- ASSETS-27648： ContentModelIT無法從其他套件組合讀取排除檔案
-- GRANITE-43744：如果驗證需求和虛名路徑配置錯誤，Sling Authenticator就無法正常運作
-- GRANITE-46419：AEM與Auth0 Idp的整合問題
-- GRANITE-46292： AEM Cloud更新後Okta SAML設定無法運作
-- GRANITE-47059：移除Granite Jetty SSL套件
+- ASSETS-28461：Doc cloud檢視器不適用於PDF，已從13239修正。
+- SKYOPS-63290：修正貯體的不正確演化。
+- SKYOPS-54607：速率限制器serverload計算對失敗的請求而言不正確。
+- ASSETS-27648： ContentModelIT無法從其他套件組合讀取排除檔案。
+- GRANITE-43744：如果驗證需求和虛名路徑配置錯誤，Sling Authenticator就無法正常運作。
+- GRANITE-46419：AEM與Auth0 Idp的整合問題。
+- GRANITE-46292： AEM Cloud更新後Okta SAML設定無法運作。
+- GRANITE-47059：移除Granite Jetty SSL套件組合。
 
 ### 已知問題 {#known-issues-13323}
 
