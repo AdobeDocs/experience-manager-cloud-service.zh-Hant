@@ -1,16 +1,20 @@
 ---
 title: 使用「資產」檢視大量匯入資產
 description: 瞭解如何使用新的資產UI （資產檢視）大量匯入資產。 它讓管理員能夠將資料來源的大量資產匯入AEM Assets。
-source-git-commit: 49d1e002f22427d8ffc6c5bdecd054c10eac47b9
+source-git-commit: 5cc522db4bd86514c1093a0d6fee481f6604fc26
 workflow-type: tm+mt
-source-wordcount: '992'
-ht-degree: 3%
+source-wordcount: '1177'
+ht-degree: 2%
 
 ---
 
 # 使用「資產」檢視大量匯入資產  {#bulk-import-assets-view}
 
 在AEM Assets檢視中大量匯入可讓管理員從資料來源將大量資產匯入至AEM Assets。 管理員不再需要將個別資產或資料夾上傳到AEM Assets。
+
+>[!NOTE]
+>
+>資產檢視大量匯入工具使用與管理員檢視大量匯入工具相同的後端。 不過，它可提供更多可匯入的資料來源，以及更簡化的使用者體驗。
 
 您可以從下列資料來源匯入資產：
 
@@ -58,6 +62,14 @@ ht-degree: 3%
    ![執行大量匯入](assets/bulk-import-run.png)
 
 1. 按一下 **[!UICONTROL 儲存]** 執行選取的選項。
+
+### 在大量匯入期間處理檔案名稱 {#filename-handling-bulkimport-assets-view}
+
+當您大量匯入資產或資料夾時， [!DNL Experience Manager Assets] 匯入存在於匯入來源中的完整結構。 [!DNL Experience Manager] 會遵循資產和檔案夾名稱中特殊字元的內建規則，因此這些檔案名稱需要清除。 對於資料夾名稱和資產名稱，使用者定義的標題會保持不變，並會儲存在 `jcr:title`.
+
+大量匯入期間， [!DNL Experience Manager] 尋找現有資料夾以避免重新匯入資產和資料夾，同時也驗證匯入發生所在的父資料夾中套用的清理規則。 如果在父資料夾中套用清理規則，則相同的規則會套用到匯入來源。 針對新的匯入，會套用以下清理規則來管理資產和資料夾的檔案名稱。
+
+如需有關大量匯入期間不允許的名稱、處理資產名稱及處理資料夾名稱的詳細資訊，請參閱 [在管理員檢視中大量匯入時處理檔案名稱](add-assets.md##filename-handling-bulkimport).
 
 ## 檢視現有的大量匯入設定 {#view-import-configuration}
 
