@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 3203e79d1dd083d13d9357b21040dfa88194c4db
+source-git-commit: 1df4f371fe4a98b910634b4742d9ff1a9448674f
 workflow-type: tm+mt
-source-wordcount: '9445'
+source-wordcount: '9442'
 ht-degree: 2%
 
 ---
@@ -576,7 +576,6 @@ DASH (Digital Adaptive Streaming over HTTP)是視訊串流的國際標準，被�
 | **字幕** | 多語言支援 |
 |  | 協助工具的描述性文字 |
 | **音訊曲目** | 多語言支援 |
-|  | 立體聲與多聲道（環繞音效） |
 |  | 註解追蹤 |
 |  | 描述性音訊 |
 
@@ -669,7 +668,7 @@ WebVTT和Adobe VTT格式支援新增的字幕和註解。 此外，新增的音�
 
 >[!CAUTION]
 >
->將字幕檔案或音訊檔案上傳至已發佈的視訊時，如果您選擇上傳或上傳字幕檔案， [*重新處理*](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets) 影片。 只有視訊的原始音訊會維持不變。 在這種情況下，您必須再次將字幕檔案和音訊曲目檔案重新上傳到視訊。
+>當您將字幕檔案或音訊檔案上傳到已發佈或已取消發佈的視訊時，如果您 [*重新處理*](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets) 影片。 只有視訊的原始音訊會維持不變。 在這種情況下，您必須再次將字幕檔案和音訊曲目檔案重新上傳到視訊。
 
 #### 在具有現有URL和註解修飾元的視訊中新增多個註解
 
