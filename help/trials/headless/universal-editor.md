@@ -4,7 +4,7 @@ description: 探索如何使用 Universal Editor 在任何實作中對內容的�
 hidefromtoc: true
 index: false
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '959'
 ht-degree: 100%
 
@@ -21,7 +21,7 @@ ht-degree: 100%
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_edit_inline_universal_editor_guide"
 >title="啟動 Universal Editor"
->abstract="在本指南中，我們將探討 Universal Editor，以及它如何讓所有人都能在任何實施中編輯各種內容，從而提高內容速度。<br><br>點選下方，在新標籤中啟動此單元，然後按照本指南進行操作。"
+>abstract="在本指南中，我們將探討 Universal Editor，以及它如何讓所有人都能在任何實施中編輯各種內容，從而提高內容流通速度。<br><br>點選下方，在新標籤中啟動此單元，然後按照本指南進行操作。"
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_edit_inline_universal_editor_guide_footer"
