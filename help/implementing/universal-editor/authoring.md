@@ -3,9 +3,9 @@ title: 使用 Universal Editor 編寫內容
 description: 了解內容作者使用 Universal Editor 建立內容有多簡單和直覺。
 exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 source-git-commit: 4cf7d3692b53e5cb5baecd7d0ee93824d9186380
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2267'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ Universal Editor 支援在任意實作中編輯任何方面的內容，以便提
 
 >[!NOTE]
 >
->Universal Editor 仍處於開發階段。目前無法編輯所有內容型別。
+>Universal Editor 仍處於開發階段。目前無法編輯所有的內容類型。
 
 ## 準備應用程式 {#prepare-app}
 
@@ -224,7 +224,7 @@ Universal Editor 標頭始終顯示在畫面頂端，就在 [Experience Cloud �
 
 ### 元件邊欄 {#component-rail}
 
-元件邊欄永遠會沿著編輯器的右側顯示。 視其模式而定，可能會顯示在內容或頁面內容之階層中選取的元件詳細資訊。
+元件邊欄一律位於編輯器的右側。視其模式而定，可能會顯示在內容或頁面內容之階層中選取的元件詳細資訊。
 
 ![元件邊欄](assets/component-rail.png)
 
