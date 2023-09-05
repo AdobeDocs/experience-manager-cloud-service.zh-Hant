@@ -2,9 +2,9 @@
 title: 設定 CDN 和 WAF 規則以篩選流量
 description: 使用 CDN 和 Web 應用程式防火牆規則篩選惡意流量
 source-git-commit: 27165ce7d6259f5b5fc9915349d87f551076389e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2391'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -261,7 +261,7 @@ data:
 
 ### 範例 {#ratelimiting-examples}
 
-範例1：當請求速率在最近60秒內超過每秒100個請求時，封鎖 `/critical/resource` 60秒
+範例 1：當最後 60 秒內要求速率超過每秒 100 個要求時，即封鎖 `/critical/resource` 60 秒
 
 ```
 - name: rate-limit-example
@@ -355,15 +355,15 @@ data:
 | *timestamp* | TLS 終止後要求開始的時間 |
 | *ttfb* | *首位元組時間 (Time To First Byte)* 的縮寫。 發出要求開始到回應內文開始串流的時間之間的時間間隔。 |
 | *cli_ip* | 用戶端 IP 位址。 |
-| *cli_country* | 雙字母 [ISO 3166-1](https://en.wikipedia.org/wiki/ISO_3166-1) 使用者端國家/地區的alpha-2國家/地區代碼。 |
+| *cli_country* | 雙字母 [ISO 3166-1](https://en.wikipedia.org/wiki/ISO_3166-1) 用戶端國家/地區的 alpha-2 國家/地區代碼。 |
 | *rid* | 用於唯一識別要求的要求標頭的值。 |
 | *req_ua* | 負責發出特定 HTTP 要求的使用者代理程式。 |
 | *主機* | 發送要求的目標機構。 |
 | *url* | 包括查詢參數的完整路徑。 |
 | *方法* | 用戶端傳送的 HTTP 方法，例如「GET」或「POST」。 |
-| *res_ctype* | 此內容類型會用於表示資源的原始媒體類型. |
+| *res_ctype* | 此內容類型用於指明資源的原始媒體類型。 |
 | *cache* | 快取的狀態。可能的值包括 HIT、MISS 或 PASS |
 | *狀態* | 作為整數值的 HTTP 狀態代碼。 |
-| *res_age* | 回應已快取的時間（秒） （在所有節點中）。 |
+| *res_age* | 回應已經 (在所有的節點) 快取的時間量 (以秒為單位)。 |
 | *pop* | CDN 快取伺服器的資料中心。 |
 | *rules* | 任何相符規則的名稱，適用於 CDN 規則和 WAF 規則。<br><br>相符的 CDN 規則會顯示在對 CDN 發出的所有要求的紀錄條目中，無論是 CDN 命中、通過還是未命中。<br><br>還會指出該相符程度是否導致封鎖。<br><br>例如，「`cdn=;waf=SQLI;action=blocked`」<br><br>如果沒有相符的規則，則為空白。 |
