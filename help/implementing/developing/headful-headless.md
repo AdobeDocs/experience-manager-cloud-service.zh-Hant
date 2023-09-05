@@ -3,7 +3,7 @@ title: AEM Headful 和 Headless 技術
 description: AEM 專案可以在 Headful 和 Headless 模型中實作，但這不必是二選一。AEM 提供了在一個專案中利用兩種模型優勢的靈活性。
 exl-id: 709850ca-7757-47ab-9625-f411121cde2c
 source-git-commit: 87630d9530194fd0c6d88e05a17db108b765ccb6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1013'
 ht-degree: 100%
 
