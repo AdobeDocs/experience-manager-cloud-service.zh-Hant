@@ -3,7 +3,7 @@ title: 使用 Universal Editor 編寫內容
 description: 了解內容作者使用 Universal Editor 建立內容有多簡單和直覺。
 exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 source-git-commit: 4cf7d3692b53e5cb5baecd7d0ee93824d9186380
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2267'
 ht-degree: 100%
 
