@@ -8,9 +8,9 @@ user-guide-description: 了解 Experience Manager as a Cloud Service 的運作�
 breadcrumb-title: 使用手冊
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: bb15e840071279dbdf8bd2bfe89d59c067898aca
+source-git-commit: 71e9325997dcb32e27758d23177670cc70381537
 workflow-type: tm+mt
-source-wordcount: '4258'
+source-wordcount: '4260'
 ht-degree: 97%
 
 ---
@@ -516,6 +516,7 @@ ht-degree: 97%
       + [將 Dynamic Media 資產新增至頁面](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
       + [將 Dynamic Video 或影像檢視器內嵌在網頁上](/help/assets/dynamic-media/embed-code.md)
       + [將 URL 連結至您的網頁應用程式](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)
+      + [失敗傳遞URL的請求錯誤報告](/help/assets/dynamic-media/reporting-dm.md)
       + [使用規則集轉換 URL](/help/assets/dynamic-media/using-rulesets-to-transform-urls.md)
       + [發佈 Dynamic Media 資產](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)
       + [在 Dynamic Media 中使用選擇性發佈](/help/assets/dynamic-media/selective-publishing.md)
@@ -570,6 +571,7 @@ ht-degree: 97%
          + [將 AEM Forms as a Cloud Service 與 Adobe Analytics 整合](/help/forms/integrate-aem-forms-with-adobe-analytics.md)
          + [將最適化表單與 Microsoft Power Automate 整合](/help/forms/forms-microsoft-power-automate-integration.md)
          + [在 AEM Sites 頁面中內嵌最適化表單](/help/forms/embed-adaptive-form-aem-sites.md)
+         + [根據核心元件將最適化表單內嵌到外部網頁](/help/forms/embed-adaptive-form-core-components-external-web-page.md)
       + 表單資料模式 {#use-form-data-model}
          + [將資料來源連線到 Cloud Service](/help/forms/data-integration.md)
          + [設定資料來源](/help/forms/configure-data-sources.md)
@@ -583,20 +585,19 @@ ht-degree: 97%
    + 最適化表單 {#adaptive-forms-authoring}
       + [建立最適化表單](/help/forms/create-an-adaptive-form.md)
       + [新增最適化表單至 AEM Sites 頁面或體驗片段](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
-      + 編寫最適化表單 - 核心元件{#authoring-adaptive-forms-core-components}
+      + 核心元件 {#authoring-adaptive-forms-core-components}
          + 建立最適化表單{#create-an-adaptive-form-on-forms-cs}
             + [建立最適化表單](/help/forms/creating-adaptive-form-core-components.md)
             + [建立自適應表單片段](/help/forms/adaptive-form-fragments-core-components.md)
             + [為最適化表單建立主題 - 核心元件](/help/forms/using-themes-in-core-components.md)
             + [為最適化表單產生記錄文件](/help/forms/generate-document-of-record-core-components.md)
-            + [建立最適化表單 - AEM Sites 頁面的核心元件](/help/forms/embed-adaptive-form-core-components-aem-sites.md)
             + [使用機器翻譯或人工翻譯來翻譯最適化表單](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
             + [設定重新導向頁面或感謝訊息](/help/forms/configure-redirect-page-or-thank-you-message.md)
             + [建立具有可重複區段的表單](/help/forms/create-forms-repeatable-sections.md)
             + [為最適化表單設定提交動作](/help/forms/configure-submit-actions-core-components.md)
             + [在最適化表單中使用 Google reCAPTCHA](/help/forms/captcha-adaptive-forms-core-components.md)
             + [在最適化表單中新增自訂錯誤處理常式](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
-      + 編寫最適化表單 - 基礎元件{#authoring-adaptive-forms-foundation-components}
+      + 基礎元件 {#authoring-adaptive-forms-foundation-components}
          + 將您的 PDF forms 轉換為最適化表單 {#afcs}
             + [自動表單轉換服務簡介](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html)
             + [將現有 PDF 表單轉換為最適化表單](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html)
@@ -766,8 +767,8 @@ ht-degree: 97%
       + [驗證](/help/headless/security/authentication.md)
    + 部署 {#deployment}
       + [架構](/help/headless/deployment/architecture.md)
-      + [Dispatcher  — 端點](/help/headless/deployment/dispatcher.md)
-      + [Dispatcher — 啟用持續性查詢的快取](/help/headless/deployment/dispatcher-caching.md)
+      + [Dispatcher - 端點](/help/headless/deployment/dispatcher.md)
+      + [Dispatcher - 啟用持續性查詢的快取](/help/headless/deployment/dispatcher-caching.md)
       + [CORS 組態](/help/headless/deployment/cross-origin-resource-sharing.md)
       + [推薦者篩選器](/help/headless/deployment/referrer-filter.md)
    + Headless 歷程 {#journeys}

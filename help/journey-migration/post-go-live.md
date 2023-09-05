@@ -2,9 +2,9 @@
 title: 上線後
 description: 瞭解如何監控問題並改善效能
 exl-id: 487f0b51-501b-48fc-a796-3cb8a6d64462
-source-git-commit: 3784569086a786c6c25c0e3d6d0bb0ddbdd37e4b
+source-git-commit: 1b9d49ce1ef8ad4b0a11400b41d8c9b880cbf884
 workflow-type: tm+mt
-source-wordcount: '477'
+source-wordcount: '483'
 ht-degree: 28%
 
 ---
@@ -51,7 +51,7 @@ ht-degree: 28%
 
 使用者可以存取所選環境的可用記錄檔清單。
 
-另請參閱 [存取和管理記錄檔](/help/implementing/cloud-manager/manage-logs.md) 瞭解如何透過UI或Cloud Manager的API存取和管理記錄。
+另請參閱 [存取和管理記錄檔](/help/implementing/cloud-manager/manage-logs.md) 瞭解如何透過使用者介面或透過Cloud Manager從API存取和管理記錄。
 
 ## 正在連絡支援 {#contacting-support}
 
