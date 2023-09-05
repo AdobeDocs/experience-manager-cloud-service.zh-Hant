@@ -3,7 +3,7 @@ title: 了解內容模型的基本知識
 description: 了解使用內容片段進行 Headless CMS 內容模型的基本知識。
 exl-id: dc460490-dfc8-4a46-a468-3d03e593447d
 source-git-commit: 87630d9530194fd0c6d88e05a17db108b765ccb6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '903'
 ht-degree: 100%
 
