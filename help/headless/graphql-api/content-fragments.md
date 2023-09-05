@@ -4,9 +4,9 @@ description: 了解如何將 Adobe Experience Manager (AEM) as a Cloud Service �
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 source-git-commit: f58581f6f81e60edafd79dd1d305bd479b65eed5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4922'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -117,7 +117,7 @@ AEM 提供將查詢 (兩種類型) 轉換為[持續性查詢的功能，可由 D
 
 雖然 GraphQL 也支援 GET 要求，但這些要求可能會達到限制 (例如 URL 的長度)，而使用持續性查詢可以避免此狀況。
 
-另請參閱 [啟用持續查詢的快取](/help/headless/deployment/dispatcher-caching.md) 以取得更多詳細資料。
+如需更多的詳細資訊，請參閱[啟用持續性查詢的快取](/help/headless/deployment/dispatcher-caching.md)。
 
 >[!NOTE]
 >
