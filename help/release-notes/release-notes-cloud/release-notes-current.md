@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 最新發行說明�
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 最新發行說明。'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: a635a727e431a73086a860249e4f42d297882298
+source-git-commit: 325769d4a3b93502b0c6857e20911b05df34a24a
 workflow-type: tm+mt
-source-wordcount: '1750'
-ht-degree: 27%
+source-wordcount: '1861'
+ht-degree: 26%
 
 ---
 
@@ -77,17 +77,17 @@ You can now assign metadata form to a specific folder within your Assets Essenti
 
 -->
 
-* **從資料來源大量匯入資產**：管理員現在擁有 [匯入大量資產的能力](/help/assets/bulk-import-assets-view.md) 從資料來源移至AEM Assets。 管理員不再需要將個別資產或資料夾上傳到AEM Assets。 大量匯入支援的資料來源包括Azure、AWS、Google Cloud和Dropbox。
+* **從資料來源大量匯入資產**：管理員現在擁有 [匯入大量資產的能力](/help/assets/bulk-import-assets-view.md) 從資料來源移至AEM Assets。 管理員不再需要將個別資產或資料夾上傳到 AEM Assets。 支援大量匯入的資料來源包括 Azure、AWS、Google 雲端和 Dropbox。
 
   ![從資料來源大量匯入資產](/help/release-notes/assets/bulk-import.png)
 
-* **Adobe Express支援的影像編輯工具**：簡單又直觀 [Adobe Express支援的影像編輯工具](/help/assets/edit-images-assets-view.md) 可直接在AEM Assets中使用，以提高內容重複使用率並加快內容速度。
+* **由 Adobe Express 提供支援的影像編輯工具**：簡單又直觀 [Adobe Express支援的影像編輯工具](/help/assets/edit-images-assets-view.md) 可直接在AEM Assets中使用，以提高內容重複使用率並加快內容速度。
 
-  ![使用Adobe Express編輯影像](/help/release-notes/assets/edit-adobe-express.png)
+  ![使用 Adobe Express 進行影像編輯](/help/release-notes/assets/edit-adobe-express.png)
 
-* **為「我的工作區快速存取」釘選專案時的靈活性**：可選取並釘選您、整個組織或群組清單的專案，以便這些專案顯示在 [我的工作區的快速存取區段](/help/assets/my-workspace-assets-view.md) 根據您的選取。
+* **為「我的工作區快速存取」釘選項目時具備靈活性**：可選取並釘選您、整個組織或群組清單的專案，以便這些專案顯示在 [我的工作區的快速存取區段](/help/assets/my-workspace-assets-view.md) 根據您的選取。
 
-  ![釘選群組的專案](/help/release-notes/assets/pin-items-for-groups.png)
+  ![為群組釘選項目](/help/release-notes/assets/pin-items-for-groups.png)
 
 ### Admin檢視中的新功能 {#admin-view-features}
 
@@ -107,17 +107,14 @@ You can now assign metadata form to a specific folder within your Assets Essenti
 
 * **資產**：可選取在Experience Manager中管理的ZIP封存，並 [將檔案直接解壓縮到Experience Manager中](/help/assets/manage-digital-assets.md#extract-zip-archives) 而不下載。
 
-  ![釘選群組的專案](/help/release-notes/assets/extract-archive.png)
+  ![為群組釘選項目](/help/release-notes/assets/extract-archive.png)
 
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-### [!DNL Forms] 中可用的新功能 {#new-features-available-in-forms-channel}
-
-* [**Google reCAPTCHA 企業支援**](/help/forms/captcha-adaptive-forms.md)：以最適化表單使用 Google reCAPTCHA 企業版，以針對詐欺活動和垃圾郵件提供增強的保護，進而提供更安全的使用者體驗。透過進階的風險分析和緊密整合，真實的使用者可輕鬆地提交表單，同時有效地封鎖機器人。
-
-
 ### [!DNL Forms] 中可用的搶鮮版功能 {#pre-release-features-available-in-forms-channel}
+
+* [**Google reCAPTCHA 企業支援**](/help/forms/captcha-adaptive-forms-core-components.md)：以最適化表單使用 Google reCAPTCHA 企業版，以針對詐欺活動和垃圾郵件提供增強的保護，進而提供更安全的使用者體驗。透過進階的風險分析和緊密整合，真實的使用者可輕鬆地提交表單，同時有效地封鎖機器人。
 
 * **Adobe Analytics與Forms的Experience Cloud設定自動化**：您現在可以啟用具有Experience Cloud設定自動化的Adobe Analytics ，只需扳動幾個按鈕。 它可讓您連結AEM Formsas a Cloud Service與Experience Platform標籤和Adobe Analytics，以擷取及追蹤您已發佈表單的效能度量。
 
@@ -141,9 +138,13 @@ You can now assign metadata form to a specific folder within your Assets Essenti
 * **[在規則編輯器中使用自訂錯誤處理常式來處理錯誤](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)**：您現在可以叫用自訂函式來回應外部服務傳回的錯誤，並為一般使用者提供量身打造的回應。 例如，您可以針對特定錯誤程式碼在後端叫用自訂的工作流程，或通知客戶服務已關閉。
 
 
-### Headless 最適化表單早期採用者計畫 {#forms-early-adopter}
+### 早期採用者計畫 {#forms-early-adopter}
 
-使用 [Headless 最適化表單](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html)讓您的開發人員能夠建立、發佈和管理可透過 API 存取和互動的互動式表單，而不是透過傳統的圖形使用者介面。Headless 最適化表單可協助您：
+* **[使用DocAssurance API （通訊API的一部分）Protect您的檔案](/help/forms/aem-forms-cloud-service-communications-introduction.md#document-assurance-doc-assurance)**：DocAssurance API可讓您簽署及加密檔案，以保護敏感資訊。 透過加密，檔案的內容會轉換為無法讀取的格式，確保只有授權的使用者才能取得存取權。 這種強化的保護層不僅能夠保護寶貴的資料，避免未經授權的眼睛，而且讓您完全安心。 簽名API可讓您的組織保護其發佈和接收Adobe PDF檔案的安全性和隱私權。 此服務使用數位簽名和憑證，以確保只有預期的收件者才能變更檔案。
+
+您可以連線Adobe支援以加入DocAssurance API的早期採用者計畫。
+
+**Headless最適化Forms**：使用 [Headless最適化Forms](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html) 可讓您的開發人員建立、發佈及管理互動式表單，且這些表單可透過API （而非透過傳統的圖形使用者介面）存取及互動。 Headless 最適化表單可協助您：
 
 * 使用您選擇的程式語言建置高品質的多管道表單
 * 以原生方式將表單整合到您的桌面和行動應用程式、網站和聊天應用程式

@@ -1,7 +1,7 @@
 ---
 title: 下載並安裝Forms Designer
 description: 您可以使用Forms Designer來建立XDP和PDF表單範本，這些範本可作為記錄檔案的範本。 設計工具可用於 [!DNL AEM Forms] 授權。
-source-git-commit: a22c21ba05e72c1bf18c56df72b7e3c7c62edc0c
+source-git-commit: 325769d4a3b93502b0c6857e20911b05df34a24a
 workflow-type: tm+mt
 source-wordcount: '344'
 ht-degree: 1%
@@ -53,7 +53,6 @@ Designer是一種點選式圖形化表單設計工具，可簡化XDP和PDF表單
 若要安裝Designer，請執行以下步驟：
 
 1. 下載設計工具，從 [Software Distribution](https://experience.adobe.com/downloads).
-
 1. 連按兩下setup.exe以執行安裝程式。
 1. 繼續並在「個人化」畫面上提供您的詳細資料。
 1. 如果您接受授權合約，請按一下 **[!UICONTROL 下一個]** 以繼續進行。
