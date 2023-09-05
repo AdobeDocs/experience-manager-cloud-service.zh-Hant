@@ -5,14 +5,21 @@ topic-tags: Adaptive Forms, author
 hide: true
 hidefromtoc: true
 Keywords: Google reCAPTCHA service, Adaptive Forms, CAPTCHA challenge, Bot prevention, Core Components, Form submission security, Form spam prevention
-source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
+source-git-commit: 496705937a01d99f988ba83f6d8984fc86dc8bfa
 workflow-type: tm+mt
-source-wordcount: '874'
-ht-degree: 1%
+source-wordcount: '947'
+ht-degree: 4%
 
 ---
 
-# 在AEM最適化表單中使用Google reCAPTCHA {#using-reCAPTCHA-in-adaptive-forms}
+# 根據核心元件在AEM最適化表單中使用Google reCAPTCHA {#using-reCAPTCHA-in-adaptive-forms}
+
+<span class="preview"> 這是搶鮮版功能，可透過我們的以下網站存取： [發行前通道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
+
+| 套用至 | 文章連結 |
+| -------- | ---------------------------- |
+| 根據核心元件的最適化表單 | 本文章 |
+| 根據Foundation元件的最適化表單 | [按一下這裡](/help/forms/captcha-adaptive-forms.md) |
 
 CAPTCHA （完全自動化公用圖靈測試來區分電腦和人之間的差異）是一種常用於線上交易的程式，以區分人和自動化程式或機器人。 這會帶來挑戰，並評估使用者的回應，以判斷其是否為人類或機器人與網站互動。 它可防止使用者在測試失敗時繼續進行，並透過防止機器人張貼垃圾郵件或惡意目的來確保線上交易的安全。
 
@@ -106,3 +113,9 @@ Tap the **[!UICONTROL Currency Value]** field in the form and create the followi
 **問：我可以在最適化表單中使用多個驗證碼元件嗎？**
 **Ans：** 不支援在最適化表單中使用多個驗證碼元件。 此外，不建議在標籤為延遲載入的片段或面板中使用驗證碼元件。
 
+## 另請參閱
+
+* [建立最適化表單](/help/forms/creating-adaptive-form-core-components.md)
+* [建立自適應表單片段](/help/forms/adaptive-form-fragments-core-components.md)
+* [新增最適化表單至 AEM Sites 頁面或體驗片段](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+* [在最適化表單中使用 Google reCAPTCHA](/help/forms/captcha-adaptive-forms-core-components.md)
