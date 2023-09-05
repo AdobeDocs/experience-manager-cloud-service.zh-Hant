@@ -4,7 +4,7 @@ description: 了解關於 Adobe Experience Manager (AEM) 內的 Headless，以�
 landing-page-description: 了解如何使用及管理 Adobe Experience Manager as a Cloud Service 內的 Headless。
 exl-id: 24300499-ae9c-49d0-aa25-f51e14d9cf79
 source-git-commit: 87630d9530194fd0c6d88e05a17db108b765ccb6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '701'
 ht-degree: 100%
 
