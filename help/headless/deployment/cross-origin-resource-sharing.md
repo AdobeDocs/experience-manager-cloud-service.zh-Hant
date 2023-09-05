@@ -4,9 +4,9 @@ description: Adobe Experience Manager 跨原始資源共用 (CORS) 允許無周�
 feature: GraphQL API
 exl-id: 426be9f9-f44a-4744-ac08-e64bb97308a0
 source-git-commit: 316680823fe4bc85e1f4359305047c0d1f517dc7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '230'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 90%
 
 >[!CAUTION]
 >
->如果 [Dispatcher中的快取已啟用](/help/headless/deployment/dispatcher-caching.md) 則不需要CORS篩選器，因此可忽略此區段。
+>如果已經啟用 Dispatcher 的[快取，](/help/headless/deployment/dispatcher-caching.md)就不需要 CORS 篩選器，因此可以忽略該部分。
 
 >[!NOTE]
 >
