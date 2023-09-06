@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 最新發行說明�
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 最新發行說明。'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 6d0e3ee08862030e9eb7d068b251d13bc3e8e08f
+source-git-commit: 9da87302369331fb55c1c8036c5b22fa686b1be8
 workflow-type: tm+mt
-source-wordcount: '1926'
-ht-degree: 26%
+source-wordcount: '1938'
+ht-degree: 25%
 
 ---
 
@@ -144,7 +144,9 @@ You can now assign metadata form to a specific folder within your Assets Essenti
 
 * **[使用DocAssurance API （通訊API的一部分）Protect您的檔案](/help/forms/aem-forms-cloud-service-communications-introduction.md#document-assurance-doc-assurance)**：DocAssurance API可讓您簽署及加密檔案，以保護敏感資訊。 透過加密，檔案的內容會轉換為無法讀取的格式，確保只有授權的使用者才能取得存取權。 這種強化的保護層不僅能夠保護寶貴的資料，避免未經授權的眼睛，而且讓您完全安心。 簽名API可讓您的組織保護其發佈和接收Adobe PDF檔案的安全性和隱私權。 此服務使用數位簽名和憑證，以確保只有預期的收件者才能變更檔案。
 
-  您可以連線Adobe支援以加入DocAssurance API的早期採用者計畫。
+
+  <br> 您可以傳送電子郵件至 `aem-forms-early-adopter-program@adobe.com` 使用您的正式電子郵件ID加入率先採用者計畫，並要求存取您環境的功能。  <br>  <br>
+
 
 * **[Headless最適化Forms](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html)**：使用Headless最適化Forms，讓開發人員建立、發佈和管理可透過API （而非透過傳統圖形使用者介面）存取和互動的互動式表單。 Headless 最適化表單可協助您：
 
