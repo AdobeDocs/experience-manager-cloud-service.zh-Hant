@@ -3,7 +3,7 @@ title: AEM 版本更新
 description: 瞭解AEMas a Cloud Service如何使用持續整合和傳遞(CI/CD)，將您的專案保持在最新版本。
 feature: Deploying
 exl-id: 36989913-69db-4f4d-8302-57c60f387d3d
-source-git-commit: ca91e969014415e872ecf8e42fe86ffc9ca41e10
+source-git-commit: 7cdbda468221c42325a957131c6817c9f85a574a
 workflow-type: tm+mt
 source-wordcount: '801'
 ht-degree: 9%
@@ -55,28 +55,22 @@ AEM更新會通過密集且完全自動化的產品驗證管道，涉及多個�
 
 ## 最佳做法 {#best-practices}
 
-* 
-   * **中繼環境使用**
-   * 使用不同的環境（而不是Stage）進行長的QA/UAT週期。
-   * 在Stage上完成健全度測試後，移至Production上驗證。
+* **中繼環境使用**
+* 使用不同的環境（而不是Stage）進行長的QA/UAT週期。
+* 在Stage上完成健全度測試後，移至Production上驗證。
 
-* 
-   * **生產管道**
-   * 在部署到生產之前暫停。
-   * 在中繼部署後取消管道表示程式碼是「一次性」且不是有效的生產候選專案，請參閱 [設定生產管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md).
+* **生產管道**
+* 在部署到生產之前暫停。
+* 在中繼部署後取消管道表示程式碼是「一次性」且不是有效的生產候選專案，請參閱 [設定生產管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md).
 
-* 
-   * **非生產管道**
+* **非生產管道**
 * 設定 [非生產管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#full-stack-code).
-* 
-   * 加速生產管道故障的傳送速度/頻率。  透過啟用產品功能測試、自訂功能測試和自訂UI測試來識別非生產管道中的問題。
+* 加速生產管道故障的傳送速度/頻率。  透過啟用產品功能測試、自訂功能測試和自訂UI測試來識別非生產管道中的問題。
 
-* 
-   * **內容複製**
-   * 使用 [內容副本](/help/implementing/developing/tools/content-copy.md) 將類似的內容集移動到非生產環境。
+* **內容複製**
+* 使用 [內容副本](/help/implementing/developing/tools/content-copy.md) 將類似的內容集移動到非生產環境。
 
-* 
-   * **自動化功能測試**
+* **自動化功能測試**
 * 在您的管道中包含自動化測試，以測試關鍵功能。
 * [客戶功能測試](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing) 和 [自訂UI測試](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing) 正在封鎖，如果這些訊息失敗，AEM版本將不會推出。
 
@@ -86,7 +80,7 @@ AEM更新會通過密集且完全自動化的產品驗證管道，涉及多個�
 
 ## 複合節點存放區 {#composite-node-store}
 
-在大多數情況下，更新會產生零停機時間，包括製作執行個體（節點叢集）的停機時間。 滾動更新可能是因為 [Oak中的複合節點存放區功能。](https://jackrabbit.apache.org/oak/docs/nodestore/compositens.html)
+在大多數情況下，更新會產生零停機時間，包括製作執行個體（節點叢集）。 滾動更新可能是因為 [Oak中的複合節點存放區功能。](https://jackrabbit.apache.org/oak/docs/nodestore/compositens.html)
 
 此功能可讓AEM同時參照多個存放庫。 在 [滾動式部署，](/help/implementing/deploying/overview.md#how-rolling-deployments-work) 新的AEM版本包含其本身 `/libs` （以TarMK為基礎的不可變存放庫），與舊版AEM不同，不過兩者都參考共用的DocumentMK型可變存放庫，其中包含如區域 `/content` ， `/conf` ， `/etc` 和其他。
 
