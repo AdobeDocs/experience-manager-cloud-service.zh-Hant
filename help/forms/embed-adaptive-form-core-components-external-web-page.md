@@ -4,9 +4,9 @@ description: 瞭解如何將最適化表單內嵌在外部網頁中
 contentOwner: Khushwant Singh
 docset: CloudService
 role: Developer
-source-git-commit: 496705937a01d99f988ba83f6d8984fc86dc8bfa
+source-git-commit: 6d0e3ee08862030e9eb7d068b251d13bc3e8e08f
 workflow-type: tm+mt
-source-wordcount: '994'
+source-wordcount: '979'
 ht-degree: 2%
 
 ---
@@ -99,14 +99,12 @@ ht-degree: 2%
 
 最適化表單已內嵌在網頁中。 在內嵌的最適化表單中觀察下列事項：
 
-* 內嵌表單中不包含原始最適化表單的頁首和頁尾。
 * 您可在Forms入口網站的「草稿與提交」索引標籤中取得草稿與已提交的表單。
 * 在原始最適化表單上設定的提交動作會保留在內嵌表單中。
 * 最適化表單規則會保留，並完整發揮內嵌表單的功能。
 * 在原始最適化表單中設定的體驗鎖定目標和A/B測試在內嵌表單中無法運作。
 * 如果在原始表單上設定Adobe Analytics，則會在Adobe Analytics伺服器中擷取分析資料。 但是，Forms分析報表中並未提供此函式。
-
-在基於核心元件的調適型Forms中，使用者端資料庫(ClientLibs)會與表單的頁首和頁尾元件一起包含和載入。 因此，當您根據核心元件嵌入最適化Forms至網頁時，其中一律包含表單的頁首和頁尾。
+* 在基於核心元件的調適型Forms中，使用者端資料庫(ClientLibs)會與表單的頁首和頁尾元件一起包含和載入。 因此，當您根據核心元件嵌入最適化Forms至網頁時，其中一律包含表單的頁首和頁尾。
 
 ## 範例拓撲 {#sample-topology}
 

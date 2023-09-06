@@ -2,9 +2,9 @@
 title: 在最適化Forms中使用reCAPTCHA
 description: 瞭解如何在最適化Forms中設定Google reCAPTCHA服務。
 topic-tags: adaptive_forms, author
-source-git-commit: 58451648b120991a5e204044f8dd6aeeaf655d81
+source-git-commit: 6d0e3ee08862030e9eb7d068b251d13bc3e8e08f
 workflow-type: tm+mt
-source-wordcount: '1933'
+source-wordcount: '1930'
 ht-degree: 6%
 
 ---
@@ -13,15 +13,13 @@ ht-degree: 6%
 
 <span class="preview">Adobe 建議使用新式且可擴充的資料擷取[核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)，用來[建立新的最適化表單](/help/forms/creating-adaptive-form-core-components.md)或[將最適化表單新增到 AEM Sites 頁面](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)。這些元件代表最適化表單建立方面的重大進步，可確保令人印象深刻的使用者體驗。本文會介紹使用基礎元件編寫最適化表單的舊方法。</span>
 
-| 套用至 | 文章連結 |
-| -------- | ---------------------------- |
-| 根據Foundation元件的最適化表單 | 本文章 |
-| 根據核心元件的最適化表單 | [按一下這裡](/help/forms/captcha-adaptive-forms-core-components.md) |
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
 | AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/captcha-adaptive-forms.html) |
 | AEM as a Cloud Service  | 本文章 |
+| 套用至 | 根據Foundation元件的最適化表單。 <br> 針對以核心元件為基礎的最適化表單， [按一下這裡](/help/forms/captcha-adaptive-forms-core-components.md). |
+
 
 CAPTCHA （完全自動化公用圖靈測試來區分電腦和人之間的差異）是一種常用於線上交易的程式，以區分人和自動化程式或機器人。 這會帶來挑戰，並評估使用者的回應，以判斷其是否為人類或機器人與網站互動。 它可防止使用者在測試失敗時繼續進行，並透過防止機器人張貼垃圾郵件或惡意目的來確保線上交易的安全。
 

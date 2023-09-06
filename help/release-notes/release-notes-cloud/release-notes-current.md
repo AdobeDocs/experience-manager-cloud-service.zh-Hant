@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 最新發行說明�
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 最新發行說明。'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 325769d4a3b93502b0c6857e20911b05df34a24a
+source-git-commit: 6d0e3ee08862030e9eb7d068b251d13bc3e8e08f
 workflow-type: tm+mt
-source-wordcount: '1861'
+source-wordcount: '1926'
 ht-degree: 26%
 
 ---
@@ -137,21 +137,23 @@ You can now assign metadata form to a specific folder within your Assets Essenti
 
 * **[在規則編輯器中使用自訂錯誤處理常式來處理錯誤](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)**：您現在可以叫用自訂函式來回應外部服務傳回的錯誤，並為一般使用者提供量身打造的回應。 例如，您可以針對特定錯誤程式碼在後端叫用自訂的工作流程，或通知客戶服務已關閉。
 
+* **[64位元版AEM Forms Designer](/help/forms/installing-configuring-designer.md)**： 64位元版本的AEM Forms Designer提供更優異的效能、擴充能力及記憶體管理，讓您更輕鬆地建立表單。 有了64位元架構，您可以輕鬆處理更大型且更複雜的專案，確保順暢的設計工作流程及最佳化效率。 透過此尖端的發行版本，提升您的外型設計功能，並擁抱AEM Forms Designer的未來。
+
 
 ### 早期採用者計畫 {#forms-early-adopter}
 
 * **[使用DocAssurance API （通訊API的一部分）Protect您的檔案](/help/forms/aem-forms-cloud-service-communications-introduction.md#document-assurance-doc-assurance)**：DocAssurance API可讓您簽署及加密檔案，以保護敏感資訊。 透過加密，檔案的內容會轉換為無法讀取的格式，確保只有授權的使用者才能取得存取權。 這種強化的保護層不僅能夠保護寶貴的資料，避免未經授權的眼睛，而且讓您完全安心。 簽名API可讓您的組織保護其發佈和接收Adobe PDF檔案的安全性和隱私權。 此服務使用數位簽名和憑證，以確保只有預期的收件者才能變更檔案。
 
-您可以連線Adobe支援以加入DocAssurance API的早期採用者計畫。
+  您可以連線Adobe支援以加入DocAssurance API的早期採用者計畫。
 
-**Headless最適化Forms**：使用 [Headless最適化Forms](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html) 可讓您的開發人員建立、發佈及管理互動式表單，且這些表單可透過API （而非透過傳統的圖形使用者介面）存取及互動。 Headless 最適化表單可協助您：
+* **[Headless最適化Forms](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html)**：使用Headless最適化Forms，讓開發人員建立、發佈和管理可透過API （而非透過傳統圖形使用者介面）存取和互動的互動式表單。 Headless 最適化表單可協助您：
 
-* 使用您選擇的程式語言建置高品質的多管道表單
-* 以原生方式將表單整合到您的桌面和行動應用程式、網站和聊天應用程式
-* 在表單應用程式中重複使用您的專屬 UI 元件
-* 使用 Adobe Experience Manager Forms 的強大功能
+   * 使用您選擇的程式語言建置高品質的多管道表單
+   * 以原生方式將表單整合到您的桌面和行動應用程式、網站和聊天應用程式
+   * 在表單應用程式中重複使用您的專屬 UI 元件
+   * 使用 Adobe Experience Manager Forms 的強大功能
 
-使用您的官方電子郵件 ID 寄送電子郵件至 `aem-forms-headless@adobe.com`，即可加入早期採用者計畫。
+  使用您的官方電子郵件 ID 寄送電子郵件至 `aem-forms-headless@adobe.com`，即可加入早期採用者計畫。
 
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
