@@ -1,18 +1,19 @@
 ---
-title: Adobe Experience Manager as a Cloud Service 中 Cloud Manager 2023.9.0 的發行說明
-description: 以下是 AEM as a Cloud Service 中 Cloud Manager 2023.9.0 的發行說明。
+title: Adobe Experience Manager as a Cloud Service 中 Cloud Manager 2023.8.0 的發行說明
+description: 以下是 AEM as a Cloud Service 中 Cloud Manager 2023.8.0 的發行說明。
 feature: Release Information
-source-git-commit: dd52aef2f88cf64e8d9a32b1c8cafe4fcfbcb812
+exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
+source-git-commit: 3eee8a88b9945bb16be992d7157f9f7f3e816246
 workflow-type: tm+mt
-source-wordcount: '409'
-ht-degree: 81%
+source-wordcount: '540'
+ht-degree: 100%
 
 ---
 
 
-# Adobe Experience Manager as a Cloud Service 中 Cloud Manager 2023.9.0 的發行說明 {#release-notes}
+# Adobe Experience Manager as a Cloud Service 中 Cloud Manager 2023.8.0 的發行說明 {#release-notes}
 
-本頁面記錄了 AEM as a Cloud Service 中 Cloud Manager 版本 2023.9.0 的發行說明。
+本頁面記錄了 AEM as a Cloud Service 中 Cloud Manager 版本 2023.8.0 的發行說明。
 
 >[!NOTE]
 >
@@ -20,11 +21,12 @@ ht-degree: 81%
 
 ## 發行日期 {#release-date}
 
-AEM as a Cloud Service 中的 Cloud Manager 版本 2023.9.0 發行日期是 2023 年 9 月 7 日。下一版本計畫於 2023 年 10 月 5 日發行。
+AEM as a Cloud Service 中的 Cloud Manager 版本 2023.8.0 發行日期是 2023 年 8 月 10 日。下一個版本計畫於 2023 年 14 月 9 日發行。
 
 ## 新增功能 {#what-is-new}
 
-此版本著重於錯誤修正。
+* 將內容設定為[複製內容，現在 UI 中的內容集中可允許](/help/implementing/developing/tools/content-copy.md)[內容感知設定](/help/implementing/developing/introduction/configurations.md)。
+* 已進行增強以提升 Cloud Manager UI 中錯誤訊息的可理解性和顯示效果。
 
 ## 早期採用計劃 {#early-adoption}
 
@@ -53,6 +55,12 @@ AEM as a Cloud Service 中的 Cloud Manager 版本 2023.9.0 發行日期是 2023
 
 ## 錯誤修正 {#bug-fixes}
 
-* 刪除程式時，也會刪除任何相關聯且正在執行的管道，以確保管道不會錯誤指定為失敗狀態。
-* 有時，當管道執行的所有步驟都是「已完成」時，管道的狀態會視為「執行中」，使其看起來像是處於卡住狀態。 它現在會視為「完成」。
-* 對於使用計畫碼產生器原型產生的存放庫分支，CI/CD管道會失敗。
+* 現在，在觸發&#x200B;**[複製內容](/help/implementing/developing/tools/content-copy.md)**&#x200B;模型後，「**環境**」選單會關閉。
+* 如果前一個執行未在建置階段狀態設定 `commitId`，不再允許[管道重新執行](/help/implementing/cloud-manager/deploy-code.md#reexecute-deployment)。
+* 當使用者在「**活動**」或「**管道**」畫面按一下管道時，如果出現不常見的錯誤，現在會顯示更容易理解的訊息。
+* 紀錄中不再缺少 `contentSetName` 值，現在在啟動[內容複製](/help/implementing/developing/tools/content-copy.md)作業時即會在輸入中提供。
+* 在特定的少數情況下，從同一個管道啟動兩次執行，以致於造成「停滯」狀態的情況不再可能發生。
+* 當憑證到期時，與該憑證相關聯的網域名稱和 IP 允許清單不會再從 CDN 移除。
+   * 在這種情況下，網站將繼續接受訪客造訪。
+   * [](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)Cloud Manager UI 將提供更明顯的事先警告：SSL 憑證即將到期。
+* 修正了將 Sites 作為解決方案新增到僅限資產的計畫時，AEM 無法存取發佈端點的問題。
