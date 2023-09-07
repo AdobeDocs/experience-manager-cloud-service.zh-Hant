@@ -1,25 +1,25 @@
 ---
-title: 將內容內嵌至目標
-description: 瞭解如何使用「內容轉移工具」，將移轉集中的內容擷取到Cloud Service例項。
+title: 將內容擷取至Cloud Service
+description: 瞭解如何使用Cloud Acceleration Manager將移轉集中的內容擷取到目標Cloud Service例項。
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: f7ffe727ecc7f1331c1c72229a5d7f940070c011
+source-git-commit: 382d1ed93e9545127ebb54641657db365886503d
 workflow-type: tm+mt
-source-wordcount: '1941'
-ht-degree: 11%
+source-wordcount: '1954'
+ht-degree: 8%
 
 ---
 
-# 將內容內嵌至目標 {#ingesting-content}
+# 將內容擷取至Cloud Service {#ingesting-content}
 
 ## 內容轉移工具中的擷取程式 {#ingestion-process}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_ingestion"
 >title="內容攝入"
->abstract="攝入是指將移轉集中的內容攝入到 Cloud Service 執行個體中。「內容轉移工具」具備支援追加差異內容的功能，可以只轉移在上一次內容轉移活動後所進行的變更。"
+>abstract="擷取指的是從移轉集擷取內容，並存放至目的地Cloud Service例項。 「內容轉移工具」具備支援追加差異內容的功能，可以只轉移在上一次內容轉移活動後所進行的變更。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=zh-Hant" text="追加擷取"
 
-請依照下列步驟，從「內容轉移工具」中擷取您的移轉集：
+請依照下列步驟，使用Cloud Acceleration Manager擷取您的移轉集：
 
 >[!NOTE]
 >您記得為此擷取記錄支援票證嗎？ 另請參閱 [使用內容轉移工具前的重要考量](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html#important-considerations) 以及有助於成功擷取的其他考量事項。
@@ -80,7 +80,7 @@ ht-degree: 11%
    Additionally, click on **Customer Care** to log a ticket, as shown in the figure below. 
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-04.png)
-   
+
    Also, see [Important Considerations for Using Content Transfer Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html#important-considerations) to learn more.
 
 1. Once the ingestion is complete, the status under **Author ingestion** updates to **FINISHED**.
@@ -181,4 +181,7 @@ AEM中的每個節點都必須有唯一的uuid。 此錯誤指出正在內嵌的
 
 ## 下一步 {#whats-next}
 
-完成將內容擷取至Target後，您可以檢視每個步驟的記錄（擷取和擷取）並尋找錯誤。 另請參閱 [檢視移轉集記錄](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/viewing-logs.html?lang=zh-Hant) 以進一步瞭解。
+擷取成功後，AEM索引會自動開始。 另請參閱 [移轉內容後建立索引](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/indexing-content.md) 以取得詳細資訊。
+
+完成將內容擷取到Cloud Service中後，您可以檢視每個步驟的記錄（擷取和擷取）並尋找錯誤。 另請參閱 [檢視移轉集記錄](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/viewing-logs.md) 以進一步瞭解。
+
