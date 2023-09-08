@@ -5,9 +5,9 @@ feature: Form Data Model
 role: User
 level: Beginner, Intermediate
 exl-id: 827ce457-6585-46fb-8e28-1d970a40d949
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a6e76d2b3650d57adafe543b2b694360e4bb4169
 workflow-type: tm+mt
-source-wordcount: '1028'
+source-wordcount: '1244'
 ht-degree: 1%
 
 ---
@@ -146,3 +146,26 @@ Edit Properties dialog for an interactive communication-->
 ![invoke-service](assets/invoke-service.png)
 
 此外，您可以使用 `guidelib.dataIntegrationUtils.executeOperation` API可在規則編輯器的程式碼編輯器中寫入JavaScript。 <!-- For API details, see [API to invoke Form Data Model service](invoke-form-data-model-services.md).-->
+
+### 使用自訂函式叫用表單資料模型 {#invoke-form-data-model-using-custom-functions}
+
+您可以 [使用自訂函式從規則編輯器叫用表單資料模型](/help/forms/rule-editor.md#custom-functions-in-rule-editor-custom-functions). 若要叫用表單資料模型，請將表單資料模型新增至允許清單。 若要將表單資料模型新增至允許清單：
+
+1. 前往Experience Manager網頁主控台，位於 `https://server:host/system/console/configMgr`.
+1. 尋找 **[!UICONTROL 針對服務叫用的表單資料模型最適化表單層級白名單 — 設定工廠]**.
+1. 按一下 ![加號圖示](/help/forms/assets/Smock_Add_18_N.svg) 圖示以新增設定……
+1. 新增 **[!UICONTROL 內容路徑模式]** 以指定最適化Forms的位置。  預設值為 `/content/forms/af/(.*)` 包含所有最適化Forms。 您也可以指定特定最適化表單的路徑。
+1. 新增 **[!UICONTROL 表單資料模型路徑模式]** 以指定表單資料模型的位置。 預設值為 `/content/dams/formsanddocuments-fdm/(.*)` 其中包含所有表單資料模型。 您也可以指定特定表單資料模型的路徑。
+1. 儲存設定。
+
+新增的設定會儲存在 **[!UICONTROL 針對服務叫用的表單資料模型最適化表單層級白名單 — 設定工廠]** 選項。
+
+>[!VIDEO](https://video.tv.adobe.com/v/3423977/adaptive-forms-custom-function-rule-editor)
+
+>[!NOTE]
+>
+> 若要透過AEM原型專案使用自訂函式，從規則編輯器叫用表單資料模型：
+>
+>1. [建立組態檔](https://github.com/adobe/aem-core-forms-components/blob/master/it/config/src/main/content/jcr_root/apps/system/config/com.adobe.aemds.guide.factory.impl.AdaptiveFormFDMConfigurationFactoryImpl~core-components-it.cfg.json).
+>1. 設定getContentPathPattern和getFormDataModelPathPattern的屬性。
+>1. 部署專案。

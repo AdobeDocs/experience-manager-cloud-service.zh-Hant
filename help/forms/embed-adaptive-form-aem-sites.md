@@ -5,9 +5,9 @@ description: 您可以使用最適化Forms — 內嵌元件將最適化Forms內�
 feature: Adaptive Forms
 Keywords: Forms AEM Sites, Embed Form to a Sites page, Adaptive Forms AEM Sites, Embed Adaptive Forms to AEM Page, Embed Forms in an AEM Sites page
 exl-id: 359b05e8-d8c1-4a77-9e70-6f6b6e668560
-source-git-commit: bb2ee07f8750c15959ecdaa65f0932b05edfcd39
+source-git-commit: d9dee0b5a070da6a19004c749f69c724fff9d967
 workflow-type: tm+mt
-source-wordcount: '3158'
+source-wordcount: '3177'
 ht-degree: 6%
 
 ---
@@ -259,6 +259,11 @@ In addition, Adaptive Forms in AEM Page Editor use [Adaptive Forms Core Componen
 * **使用頁面語言**：使用AEM Sites頁面的本機，而非最適化表單的地區設定。 此選項僅適用於最適化表單(Foundation)。
 * **設定表單焦點**：選取以將焦點設定在最適化表單的第一個欄位上。 此選項僅適用於最適化表單(Foundation)。
 * **主題**：選取定義最適化表單元件樣式的主題。 樣式包含外觀屬性，例如字型樣式、背景顏色、尺寸和對齊。 此選項僅適用於最適化表單(Foundation)。
+
+  >[!NOTE]
+  >
+  > 您可以使用 **使用頁面語言**， **設定表單焦點** 和 **主題** 僅適用性表單(Foundation)的選項。
+
 * **表單覆蓋影格的整個寬度**：內嵌框架(iframe)是HTML元素，可將最適化表單載入至AEM Sites頁面。
 
    * 如果 **[!UICONTROL 表單覆蓋影格的整個寬度]** 核取方塊時，最適化表單會佔據其所在容器的完整寬度。 在此情況下，不會使用iframe來呈現表單。 最適化表單的版面配置和設計可適應容器的整個寬度，使其回應速度更快，並能夠調整到不同的熒幕大小。 此選項可讓您將多個最適化Forms內嵌在AEM Sites頁面中。

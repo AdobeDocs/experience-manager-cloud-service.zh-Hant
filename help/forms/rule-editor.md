@@ -5,9 +5,9 @@ feature: Adaptive Forms
 role: User
 level: Beginner, Intermediate
 exl-id: 6fd38e9e-435e-415f-83f6-3be177738c00
-source-git-commit: a635a727e431a73086a860249e4f42d297882298
+source-git-commit: 21db924a8d925f9964cc7af6743764c119208159
 workflow-type: tm+mt
-source-wordcount: '6436'
+source-wordcount: '6446'
 ht-degree: 1%
 
 ---
@@ -634,7 +634,7 @@ While writing JavaScript code in the rule editor, the following visual cues help
 
 若要建立使用者端程式庫並將其新增到CRX存放庫中，請執行以下步驟：
 
-1. 建立使用者端對資料庫執行下列步驟。 如需詳細資訊，請參閱 [使用使用者端資料庫](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html#developing).
+1. 建立使用者端資源庫。 如需詳細資訊，請參閱 [使用使用者端資料庫](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html#developing).
 1. 在CRXDE中新增屬性 `categories`字串型別值為 `customfunction` 至 `clientlib` 資料夾。
 
    >[!NOTE]
@@ -656,6 +656,10 @@ While writing JavaScript code in the rule editor, the following visual cues help
    [![使用自訂函式建立規則](assets/add_custom_rule_new.png)](assets/add-custom-rule.png)
 
 1. 點選 **[!UICONTROL 完成]**. 您的自訂函式已新增。
+
+   >[!NOTE]
+   >
+   > 若要使用自訂函式從規則編輯器叫用表單資料模型， [請參閱此處](/help/forms/using-form-data-model.md#invoke-services-in-adaptive-forms-using-rules-invoke-services).
 
 #### 函式宣告支援的型別 {#function-declaration-supported-types}
 
