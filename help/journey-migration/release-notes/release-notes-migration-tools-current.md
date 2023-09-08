@@ -1,37 +1,30 @@
 ---
-title: AEMas a Cloud Service2023.07.0版中移轉工具的發行說明
-description: AEMas a Cloud Service2022.07.0版中移轉工具的發行說明
+title: AEMas a Cloud Service版本2023.09.0中移轉工具的發行說明
+description: AEMas a Cloud Service版本2022.09.0中移轉工具的發行說明
 feature: Release Information
-exl-id: 2f787321-f156-480d-bbe8-1a6d04f110c5
-source-git-commit: 88227693b7dfc3cbd30751718dc85e55ee67bb96
+source-git-commit: 9abce12c396ee74d36019218dd8b4fa72f762256
 workflow-type: tm+mt
-source-wordcount: '156'
-ht-degree: 7%
+source-wordcount: '150'
+ht-degree: 4%
 
 ---
 
-# AEMas a Cloud Service2023.07.0版中移轉工具的發行說明 {#release-notes}
+# AEMas a Cloud Service版本2023.09.0中移轉工具的發行說明 {#release-notes}
 
-本頁面總覽AEMas a Cloud Service2022.07.0中移轉工具發行說明。
+本頁面總覽AEMas a Cloud Service2022.09.0中移轉工具發行說明。
 
-## 最佳做法分析工具 {#bpa-release}
+## 內容轉移工具 {#ctt-release}
 
-### 發行日期 {#release-date-bpa}
+### 發行日期 {#release-date-ctt}
 
-Best Practices Analyzer v2.1.42的發行日期為2023年7月6日。
+內容轉移工具3.0.0版的發行日期為2023年9月7日。
 
-### 新增功能 {#what-is-new-bpa}
+### 新增功能 {#what-is-new-ctt}
 
-* 此版本的Best Practices Analyzer已新增多個最佳實務模式。 這些類別包括：
-   * 識別最低維護任務設定
-   * 偵測長時間執行/大量查詢
-   * 偵測大量處於執行中或過時狀態的作者工作流程
-   * 偵測OSGI Apache sling作業設定
-   * 偵測自訂Guava快取
+「內容轉移工具」已大幅改善，可提供下列優點：
+* 運用AzCopy僅複製所需的blob id而非複製所有blob id，減少移轉內容存放庫子集時的傳輸時間
+* 使用Oak-upgrade更快地追加差異內容
+* 將索引程式與內容擷取程式分開，提高了健全性。 如果索引失敗，則不必再次擷取內容。 只有索引會自動重新啟動，以節省大量時間和精力
 
-### 錯誤修正 {#bug-fixes-bpa}
-
-* BPA已經過改良，以防止產生含有大量結果之報告的記憶體不足報告失敗。
-* BPA已經過改良，可偵測路徑中的逸出字元，以防止將內容移轉至AEMas a Cloud Service時發生內容擷取失敗。
 
 
