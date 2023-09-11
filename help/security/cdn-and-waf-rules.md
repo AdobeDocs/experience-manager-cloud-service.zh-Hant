@@ -1,31 +1,30 @@
 ---
-title: 設定 CDN 和 WAF 規則以篩選流量
-description: 使用 CDN 和 Web 應用程式防火牆規則篩選惡意流量
-source-git-commit: 27165ce7d6259f5b5fc9915349d87f551076389e
-workflow-type: ht
-source-wordcount: '2391'
-ht-degree: 100%
+title: 設定流量篩選規則（使用WAF規則）
+description: 使用流量篩選規則（搭配WAF規則）來篩選流量
+source-git-commit: dc0c7e77bb4bc5423040364202ecac3c59adced0
+workflow-type: tm+mt
+source-wordcount: '2690'
+ht-degree: 70%
 
 ---
 
 
-# 設定 CDN 和 WAF 規則以篩選流量 {#configuring-cdn-and-waf-rules-to-filter-traffic}
+# 設定流量篩選規則（使用WAF規則）以篩選流量 {#configuring-cdn-and-waf-rules-to-filter-traffic}
 
 >[!NOTE]
 >
 >此功能尚未正式推出。若要加入正在進行的早期採用者計劃，請寄送電子郵件至 **aemcs-waf-adopter@adobe.com**，郵件內容包括貴組織的名稱以及您對該功能感興趣的原因。
 
-Adobe 試圖減輕針對客戶網站發動的攻擊，但主動篩選和特定模式相符的要求可能有助於阻擋惡意流量，使其無法接觸您的應用程式。可能的方法包括：
+Adobe會嘗試減輕對客戶網站的攻擊，但主動篩選符合特定模式的流量以便讓惡意流量不會到達您的應用程式中，可能會很有用。 可能的方法包括：
 
 * Apache 層模組，例如 `mod_security`
-* 透過 Cloud Manager 的設定管道設定部署到 CDN 的規則。
+* 設定透過Cloud Manager的設定管道部署到CDN的流量篩選規則
 
-本文會說明後面一種方法，這會提供兩種類別的規則：
+本文會說明流量篩選規則方法。 這些規則大多會根據請求屬性和請求標頭（包括IP、路徑和使用者代理）來封鎖或允許請求。 這些規則可由所有AEMas a Cloud ServiceSites和Forms客戶設定。
 
-1. **CDN 規則**：會根據要求屬性和要求標頭封鎖或允許要求，包括 IP、路徑和使用者代理程式。所有 AEM as a Cloud Service 客戶都可以設定這類規則
-1. **WAF** (Web 應用程式防火牆) 規則：會封鎖和惡意流量相關的各種已知模式相符的要求。這些規則可由取得 WAF 外掛程式授權的客戶進行設定；如需詳細資料，請和您的 Adob&#x200B;&#x200B;e 帳戶團隊聯絡。請注意，早期採用者計劃期間不需要另外取得授權。
+授權WAF （Web應用程式防火牆）附加元件的客戶也可以設定稱為「WAF流量篩選規則」（簡稱WAF規則）的其他規則類別。 這些WAF規則會封鎖符合已知與惡意流量相關聯的各種模式的請求。 請聯絡您的Adobe客戶團隊，以取得授權這項即將推出的功能的詳細資訊。 請注意，早期採用者計劃期間不需要另外取得授權。
 
-可將這些規則部署到開發、中繼和生產的雲端環境類型，適用於生產 (非沙箱) 計畫。未來將提供對 RDE 環境的支援。
+流量篩選器規則可以部署到生產（非沙箱）計畫中的所有雲端環境型別(RDE、dev、stage、prod)。
 
 ## 設定 {#setup}
 
@@ -35,20 +34,26 @@ Adobe 試圖減輕針對客戶網站發動的攻擊，但主動篩選和特定�
    config/
         cdn/
            cdn.yaml
-           _config.yaml
    ```
 
-1. `_config.yaml` 會說明一些有關設定的中繼資料。「kind」參數應設定為「CDN」，版本則應設定為綱要版本，目前是「1」。請參閱以下片段：
+1. `cdn.yaml` 應該包含中繼資料，以及流量篩選器規則和WAF規則的清單。
 
    ```
    kind: "CDN"
    version: "1"
+   envType: "dev"
+   data:
+     trafficFilters:
+       rules:
+         ...
    ```
 
-   <!-- Two properties -- `envType` and `envId` -- may be included to limit the scope of the rules. The envType property may have values "dev", "stage", or "prod", while the envId property is the environment (e.g., "53245"). This approach is useful if it is desired to have a single configuration pipeline, even if some environments have different rules. However, a different approach could be to have multiple configuration pipelines, each pointing to different repositories or git branches. -->
+「kind」參數應設定為「CDN」，版本則應設定為綱要版本，目前是「1」。請參閱下面的範例。
 
-1. `cdn.yaml` 應包括 CDN 規則和 WAF 規則的清單，如以下章節所述
-1. 若要和 WAF 規則相符，必須在 Cloud Manager 中啟用 WAF (如下所述)，對於新的和現有的計劃案例都適用。請注意，必須為 WAF 購買單獨的授權。
+
+<!-- Two properties -- `envType` and `envId` -- may be included to limit the scope of the rules. The envType property may have values "dev", "stage", or "prod", while the envId property is the environment (e.g., "53245"). This approach is useful if it is desired to have a single configuration pipeline, even if some environments have different rules. However, a different approach could be to have multiple configuration pipelines, each pointing to different repositories or git branches. -->
+
+1. 若要設定WAF規則，則必須在Cloud Manager中啟用WAF，如以下針對新方案和現有方案方案方案方案所述。 請注意，必須為 WAF 購買單獨的授權。
 
    1. 若要對新計畫設定 WAF，請勾選「**WAF-DDOS 防護**」核取方塊 (在&#x200B;**安全性**&#x200B;索引標籤中)，如下所示。繼續依照「[新增生產計劃](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)」中說明的步驟進行，以建立您的計畫
 
@@ -64,7 +69,7 @@ Adobe 試圖減輕針對客戶網站發動的攻擊，但主動篩選和特定�
    1. 為您的管道命名並選取部署觸發器，然後選取「**繼續**」
    1. 在「**原始程式碼**」索引標籤中，選取「**目標性部署**」，然後選取「**設定**」
 
-      ![選取目標性部署](/help/security/assets/target-deployment.png)
+      ![選取目標部署](/help/security/assets/target-deployment.png)
 
    1. 根據需要選取存放庫和分支。如果選取環境中存在設定管道，則此選項會停用。
 
@@ -72,22 +77,47 @@ Adobe 試圖減輕針對客戶網站發動的攻擊，但主動篩選和特定�
 
       >[!NOTE]
       >
-      >您對每個環境只能設定並執行一個設定管道。
+      > 使用者必須以部署管理員身分登入，才能設定或執行這些管道。
+      > 此外，每個環境只能設定和執行一個設定管道。
 
    1. 選取&#x200B;**儲存**。您的新管道即會顯示在管道卡中，並可在您就緒後執行。
-   1. 若為 RDE，會使用命令列，但目前不支援 RDE。
+   1. 對於RDE，將使用命令列，但目前不支援RDE。
 
-## 規則語法 {#rules-syntax}
+## 流量篩選器規則語法 {#rules-syntax}
 
-下面會說明規則的格式，後續章節中則會提供一些範例。
+您可以設定 `traffic filter rules` 以比對IP、使用者代理、請求標題、主機名稱、地理和url等模式。
 
-| **屬性** | **CDN 規則** | **WAF 規則** | **類型** | **預設值** | **說明** |
+授權WAF產品的客戶也可設定流量篩選規則的特殊類別，稱為 `WAF traffic filter rules` 參照一或多個WAF旗標的（簡稱WAF規則），這些旗標會列在它自己的以下區段中。
+
+以下是流量篩選規則集的範例，其中也包含WAF規則。
+
+```
+kind: "CDN"
+version: "1"
+envType: "dev"
+data:
+  trafficFilters:
+    rules:
+      - name: "path-rule"
+        when: { reqProperty: path, equals: /block-me }
+        action: 
+          type: block
+      - name: "Enable-SQL-Injection-and-XSS-waf-rules-globally"
+        when: { reqProperty: path, like: "*" }
+        action:
+          type: block
+          wafFlags: [ SQLI, XSS]
+```
+
+cdn.yaml檔案中流量篩選規則的格式如下所述。 請參閱稍後章節中的一些範例。
+
+
+| **屬性** | **大多數流量篩選規則** | **WAF流量篩選規則** | **類型** | **預設值** | **說明** |
 |---|---|---|---|---|---|
 | 名稱 | X | X | `string` | - | 規則名稱 (64 個字元的長度，只能包含英數字元和 -) |
 | 時間 | X | X | `Condition` | - | 基本結構是：<br><br>`{ <getter>: <value>, <predicate>: <value> }`<br><br>請參閱下面的條件結構語法，其中會說明 getter、述詞以及結合多個條件的方式。 |
-| 動作 | X | X | `Enum` | 紀錄 (CDN 規則) | 若為 CDN 規則：允許、封鎖、記錄。預設為記錄。<br><br>若為 WAF 規則：`enableWafRules`、`disableWafRules`、紀錄。無預設值。 |
+| 動作 | X | X | `Action` | 記錄 | log、allow、block、log或action物件預設為log |
 | rateLimit | X |   | `RateLimit` | 未定義 | 速率限制設定。若未定義，則停用速率限制。<br><br>以下會有一個單獨的章節說明 rateLimit 語法以及範例。 |
-| wafRules |   | X | `array[Enum]` | - | 應啟用或停用的 WAF 規則清單。<br><br>範例包括 SQLI 和 XSS。 請參閱下面的 waf 規則清單以取得完整清單。 |
 
 ### 條件結構 {#condition-structure}
 
@@ -113,7 +143,7 @@ Adobe 試圖減輕針對客戶網站發動的攻擊，但主動篩選和特定�
     - { <getter>: <value>, <predicate>: <value> }
 ```
 
-| **屬性** | **類型** | **說明** |
+| **屬性** | **類型** | **含義** |
 |---|---|---|
 | **allOf** | `array[Condition]` | **和** 作業。如果所有列出的條件都傳回 true，則為 true |
 | **anyOf** | `array[Condition]` | **或** 作業。如果任何列出的條件都傳回 true，則為 true |
@@ -129,7 +159,7 @@ Adobe 試圖減輕針對客戶網站發動的攻擊，但主動篩選和特定�
 
 **述詞**
 
-| **屬性** | **類型** | **說明** |
+| **屬性** | **類型** | **含義** |
 |---|---|---|
 | **等於** | `string` | 如果 getter 結果等於所提供的值，則為 true |
 | **doesNotEqual** | `string` | 如果 getter 結果不等於所提供的值，則為 true |
@@ -140,11 +170,25 @@ Adobe 試圖減輕針對客戶網站發動的攻擊，但主動篩選和特定�
 | **in** | `array[string]` | 如果所提供的清單包含 getter 結果，則為 true |
 | **notIn** | `array[string]` | 如果所提供的清單不包含 getter 結果，則為 true |
 
-**wafRules List**
+### 動作結構 {#action-structure}
 
-`wafRules` 屬性可能包括下列規則：
+指定者 `action` 欄位，可以是指定動作型別（允許、區塊、記錄）的字串，並假設所有其他選項的預設值，或是定義規則型別的物件，透過 `type` 必填欄位，以及適用於該型別的其他選項。
 
-| **規則 ID** | **規則名稱** | **說明** |
+**動作型別**
+
+動作會根據其在下表中的型別來排定優先順序，此排序方式反映動作的執行順序：
+
+| **名稱** | **允許的屬性** | **含義** |
+|---|---|---|
+| **允許** | `wafFlags` (可選) | 如果wafFlags不存在，將停止進一步的規則處理並繼續提供回應。 如果wafFlags存在，它會停用指定的WAF保護並繼續進一步的規則處理。 |
+| **區塊** | `status, wafFlags` （選擇性且互斥） | 如果wafFlags不存在，會傳回HTTP錯誤，略過所有其他屬性，錯誤碼會由status屬性定義或預設為406。 如果wafFlags存在，它會啟用指定的WAF保護並繼續進一步的規則處理。 |
+| **記錄** | `wafFlags` (可選) | 會記錄規則已觸發的事實，否則不會影響處理。 wafFlags無效 |
+
+### WAF旗標清單 {#waf-flags-list}
+
+此 `wafFlag` 屬性可能包含下列專案：
+
+| **旗標ID** | **標幟名稱** | **說明** |
 |---|---|---|
 | SQLI | SQL 注入 | SQL 注入指試圖透過執行任意資料庫查詢以取得對應用程式的存取權或獲取特權資訊。 |
 | BACKDOOR | 後門 | 後門訊號指試圖決定系統是否存在常見後門檔案的要求。 |
@@ -181,7 +225,9 @@ Adobe 試圖減輕針對客戶網站發動的攻擊，但主動篩選和特定�
 
 * 如果規則相符並遭封鎖，CDN 會以 `406` 傳回代碼回應。
 
-## 範例 {#examples}
+* 設定檔案不應包含秘密，因為任何有權存取Git存放庫的人都可以讀取
+
+## 規則範例 {#examples}
 
 下面是一些規則範例。如需進一步探討速率限制的範例，請參閱[「速率限制」一節](#rules-with-rate-limits)。
 
@@ -190,11 +236,16 @@ Adobe 試圖減輕針對客戶網站發動的攻擊，但主動篩選和特定�
 此規則會封鎖來自 IP 192.168.1.1 的要求：
 
 ```
+kind: "CDN"
+version: "1"
+envType: "dev"
 data:
-  rules:
-    - name: "block-request-from-ip"
-      when: { reqProperty: clientIp, equals: "192.168.1.1" }
-      action: block
+  trafficFilters:
+     rules:
+       - name: "block-request-from-ip"
+         when: { reqProperty: clientIp, equals: "192.168.1.1" }
+         action: 
+           type: block
 ```
 
 **範例 2**
@@ -202,15 +253,20 @@ data:
 此規則會使用包含 Chrome 的使用者代理程式封鎖發佈的路徑 `/helloworld` 上的要求：
 
 ```
+kind: "CDN"
+version: "1"
+envType: "dev"
 data:
-  rules:
-    - name: "block-request-from-chrome-on-path-helloworld-for-publish-tier"
-      when:
-        allOf:
-          - { reqProperty: path, equals: /helloworld }
-          - { reqProperty: tier, equals: publish }
-          - { reqHeader: user-agent, matches: '.*Chrome.*'  }
-      action: block
+  trafficFilters:
+     rules:
+       - name: "block-request-from-chrome-on-path-helloworld-for-publish-tier"
+         when: { reqProperty: clientIp, equals: "192.168.1.1" }
+           allOf:
+            - { reqProperty: path, equals: /helloworld }
+            - { reqProperty: tier, equals: publish }
+            - { reqHeader: user-agent, matches: '.*Chrome.*'  }
+           action: 
+             type: block
 ```
 
 **範例 3**
@@ -218,14 +274,20 @@ data:
 此規則會封鎖包含查詢參數 `foo` 的要求，但會允許來自 IP 192.168.1.1 的每個要求：
 
 ```
+kind: "CDN"
+version: "1"
+envType: "dev"
 data:
-  rules:
-    - name: "block-request-that-contains-query-parameter-foo"
-      when: { queryParam: url-param, equals: foo }
-      action: block
-    - name: "allow-all-requests-from-ip"
-      when: { reqProperty: clientIp, equals: 192.168.1.1 }
-      action: allow
+  trafficFilters:
+    rules:
+      - name: "block-request-that-contains-query-parameter-foo"
+        when: { queryParam: url-param, equals: foo }
+        action: 
+          type: block
+      - name: "allow-all-requests-from-ip"
+        when: { reqProperty: clientIp, equals: 192.168.1.1 }
+        action: 
+          type: allow
 ```
 
 **範例 4**
@@ -233,18 +295,53 @@ data:
 此規則會封鎖對路徑 /block-me 的要求，並封鎖和 SQLI 或 XSS 模式相符的每個要求：
 
 ```
+kind: "CDN"
+version: "1"
+envType: "dev"
 data:
-  rules:
-    - name: "path-rule"
-      when: { reqProperty: path, equals: /block-me }
-      action: block
+  trafficFilters:
+    rules:
+      - name: "path-rule"
+        when: { reqProperty: path, equals: /block-me }
+        action: 
+          type: block
+      - name: "Enable-SQL-Injection-and-XSS-waf-rules-globally"
+        when: { reqProperty: path, like: "*" }
+        action:
+          type: block
+          wafFlags: [ SQLI, XSS]
+```
 
-    - name: "Enable-SQL-Injection-and-XSS-waf-rules-globally"
-      when: { reqProperty: path, like: "*" }
-      action: enableWafRules
-      wafRules:
-        - SQLI
-        - XSS
+**範例 4**
+
+此規則會封鎖對OFAC國家/地區的存取權：
+
+```
+kind: "CDN"
+version: "1"
+envType: "dev"
+data:
+  trafficFilters:
+    rules:
+      - name: block-ofac-countries
+        when:
+          allOf:
+            - { reqProperty: tier, equals: publish }
+            - reqProperty: clientCountry
+              in:
+                - SY
+                - BY
+                - MM
+                - KP
+                - IQ
+                - CD
+                - SD
+                - IR
+                - LR
+                - ZW
+                - CU
+                - CI
+        action: block
 ```
 
 ## 具有速率限制的規則 {#rules-with-rate-limits}
@@ -253,7 +350,7 @@ data:
 
 ### rateLimit 結構 {#ratelimit-structure}
 
-| **屬性** | **類型** | **預設值** | **說明** |
+| **屬性** | **類型** | **預設** | **含義** |
 |---|---|---|---|
 | 限制 | 10 到 10000 之間的整數 | 必要 | 觸發規則的要求速率 (以每秒要求數為單位) |
 | 視窗 | 整數列舉：1、10 或 60 | 10 | 計算要求速率的取樣期間 (秒數) |
@@ -261,49 +358,90 @@ data:
 
 ### 範例 {#ratelimiting-examples}
 
-範例 1：當最後 60 秒內要求速率超過每秒 100 個要求時，即封鎖 `/critical/resource` 60 秒
+**範例 1**
+
+過去60秒內超過100個要求/秒時，此規則會封鎖5米的使用者端
 
 ```
-- name: rate-limit-example
-  when: { reqProperty: path, equals: /critical/resource }
-  action: block
-  rateLimit: { limit: 100, window: 60, penalty: 60 }
+kind: "CDN"
+version: "1"
+envType: "dev"
+data:
+  trafficFilters:
+    - name: limit-requests-client-ip
+      when:
+        reqProperty: path
+        like: '*'
+      rateLimit:
+        limit: 60
+        window: 10
+        penalty: 300
+        groupBy:
+          - reqProperty: clientIp
+      action: block
 ```
 
-範例 2：當 10 秒內要求速率超過每秒 10 個要求時，即封鎖資源 300 秒：
+**範例 2**
+
+封鎖路徑/critical/resource上60s的請求（在過去60秒內超過100個請求/秒）
 
 ```
-- name: rate-limit-using-defaults
-  when: { reqProperty: path, equals: /critical/resource }
-  action: block
-  rateLimit:
-    limit: 10
+kind: "CDN"
+version: "1"
+envType: "dev"
+data:
+  trafficFilters:
+    rules:
+      - name: rate-limit-example
+        when: { reqProperty: path, equals: /critical/resource }
+        action: 
+          type: block
+        rateLimit: { limit: 100, window: 60, penalty: 60 }
 ```
 
 ## CDN 紀錄 {#cdn-logs}
 
 AEM as a Cloud Service 會提供對 CDN 紀錄的存取權，這對於包括快取命中率最佳化以及設定 CDN 和 WAF 規則等使用案例都非常有幫助。選取作者或發佈服務時，CDN 紀錄會顯示在 Cloud Manager **下載紀錄**&#x200B;對話框中。
 
-如果要求和規則相符，則規則的名稱會顯示在規則屬性中，即使動作為「允許」，而因此不會封鎖流量。
+「規則」屬性說明哪些流量篩選器規則相符，其模式如下：
 
-相符的 CDN 規則會顯示在對 CDN 發出的所有要求的紀錄條目中，無論是 CDN 命中、通過還是未命中。但是，會顯示 WAF 規則的紀錄條目僅限於發送給被視為 CDN 未命中或通過但不被視為 CDN 命中的 CDN 要求。
+```
+"rules": "match=<matching-customer-named-rules-that-are-matched>,waf=<matching-WAF-rules>,action=<action_type>"
+```
 
-以下範例會說明 `cdn.yaml` 範例以及兩個 CDN 紀錄條目，由於要求分別和 CDN 規則以及 WAF 規則相符而遭到封鎖，因此規則屬性中有非空白值。
+例如：
+
+```
+"rules": "match=Block-Traffic-under-private-folder,Enable-SQL-injection-everywhere,waf="SQLI,SANS",action=block"
+```
+
+規則的行為方式如下：
+
+* 任何相符規則的客戶宣告規則名稱都會列在matches屬性中。
+* action屬性詳細說明規則是否具有封鎖、允許或記錄的效果
+* 如果WAF已授權並啟用，則waf屬性會列出偵測到的任何waf規則（例如SQLI；請注意，這與客戶宣告的名稱無關），無論組態中是否列出了waf規則。
+* 如果沒有相符的客戶宣告規則以及沒有相符的waf規則，則rules屬性屬性將為空白。
+
+一般而言，無論是否為CDN點選、通過或錯過，對CDN的所有請求都會在記錄專案中顯示相符的規則。 但是，會顯示 WAF 規則的紀錄條目僅限於發送給被視為 CDN 未命中或通過但不被視為 CDN 命中的 CDN 要求。
+
+以下範例顯示一個cdn.yaml範例和兩個CDN記錄專案：
 
 
 ```
+kind: "CDN"
+version: "1"
+envType: "dev"
 data:
-  rules:
-    - name: "path-rule"
-      when: { reqProperty: path, equals: /block-me }
-      action: block
-
-    - name: "Enable-SQL-Injection-and-XSS-waf-rules-globally"
-      when: { reqProperty: path, like: "*" }
-      action: enableWafRules
-      wafRules:
-        - SQLI
-        - XSS
+  trafficFilters:
+    rules:
+      - name: "path-rule"
+        when: { reqProperty: path, equals: /block-me }
+        action: block
+      - name: "Enable-SQL-Injection-and-XSS-waf-rules-globally"
+        when: { reqProperty: path, like: "*" }
+        action:
+          type: block
+          wafFlags: [ SQLI, XSS ]
 ```
 
 ```
@@ -322,7 +460,7 @@ data:
 "status": 406,
 "res_age": 0,
 "pop": "PAR",
-"rules": "cdn=path-rule;waf=;action=blocked"
+"rules": "match=path-rule,action=blocked"
 }
 ```
 
@@ -342,7 +480,7 @@ data:
 "status": 406,
 "res_age": 0,
 "pop": "PAR",
-"rules": "cdn=;waf=SQLI;action=blocked"
+"rules": "match=Enable-SQL-Injection-and-XSS-waf-rules-globally,waf=SQLI,action=blocked"
 }
 ```
 
@@ -366,4 +504,4 @@ data:
 | *狀態* | 作為整數值的 HTTP 狀態代碼。 |
 | *res_age* | 回應已經 (在所有的節點) 快取的時間量 (以秒為單位)。 |
 | *pop* | CDN 快取伺服器的資料中心。 |
-| *rules* | 任何相符規則的名稱，適用於 CDN 規則和 WAF 規則。<br><br>相符的 CDN 規則會顯示在對 CDN 發出的所有要求的紀錄條目中，無論是 CDN 命中、通過還是未命中。<br><br>還會指出該相符程度是否導致封鎖。<br><br>例如，「`cdn=;waf=SQLI;action=blocked`」<br><br>如果沒有相符的規則，則為空白。 |
+| *rules* | 任何相符規則的名稱。<br><br>還會指出該相符程度是否導致封鎖。<br><br>例如，「`match=Enable-SQL-Injection-and-XSS-waf-rules-globally,waf=SQLI,action=blocked`」<br><br>如果沒有相符的規則，則為空白。 |
