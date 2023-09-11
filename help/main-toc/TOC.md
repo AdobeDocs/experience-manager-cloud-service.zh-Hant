@@ -8,9 +8,9 @@ user-guide-description: 了解 Experience Manager as a Cloud Service 的運作�
 breadcrumb-title: 使用手冊
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 9abce12c396ee74d36019218dd8b4fa72f762256
+source-git-commit: 96b3986f73ab71bad02b00ddc699aeecd498aebd
 workflow-type: tm+mt
-source-wordcount: '4271'
+source-wordcount: '4284'
 ht-degree: 96%
 
 ---
@@ -572,6 +572,8 @@ ht-degree: 96%
          + [將 AEM Forms as a Cloud Service 與 Adobe Sign 整合](/help/forms/adobe-sign-integration-adaptive-forms.md)
          + [將 AEM Forms as a Cloud Service 與 DocuSign 整合](/help/forms/integrate-docusign-adaptive-forms.md)
          + [將 AEM Forms as a Cloud Service 與 Adobe Analytics 整合](/help/forms/integrate-aem-forms-with-adobe-analytics.md)
+         + [將最適化Forms整合至Adobe Analytics](/help/forms/forms-experience-cloud-setup-automation.md)
+         + [檢視和瞭解最適化Forms Analytics報告](/help/forms/view-understand-aem-forms-analytics-reports.md)
          + [將最適化表單與 Microsoft Power Automate 整合](/help/forms/forms-microsoft-power-automate-integration.md)
          + [在 AEM Sites 頁面中內嵌最適化表單](/help/forms/embed-adaptive-form-aem-sites.md)
          + [根據核心元件將最適化表單內嵌到外部網頁](/help/forms/embed-adaptive-form-core-components-external-web-page.md)
