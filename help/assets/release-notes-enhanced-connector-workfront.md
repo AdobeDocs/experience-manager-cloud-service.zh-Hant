@@ -2,10 +2,10 @@
 title: 版發行說明 [!DNL Workfront for Experience Manager enhanced connector]
 description: 版發行說明 [!DNL Workfront for Experience Manager enhanced connector]
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 9981fb1ac5ddf5d918cf76476fa185c524749c70
 workflow-type: tm+mt
-source-wordcount: '1190'
-ht-degree: 1%
+source-wordcount: '1252'
+ht-degree: 2%
 
 ---
 
@@ -15,16 +15,17 @@ ht-degree: 1%
 
 ## 發行日期 {#release-date}
 
-最新版本1.9.12的發行日期 [!DNL Workfront for Experience Manager enhanced connector] 為2023年8月9日。
+最新版本1.9.13的發行日期 [!DNL Workfront for Experience Manager enhanced connector] 為2023年9月11日。
 
 ## 發行重點說明 {#release-highlights}
 
 最新版本的 [!DNL Workfront for Experience Manager enhanced connector] 包含下列更新：
 
-* 無法在Experience Manager中建立連結資料夾，因為沒有與連結資料夾相關聯的使用者帳戶。
+* Experience Manager增強型聯結器在刪除專案的事件訂閱時，會從Workfront擷取所有事件訂閱，進而影響應用程式的效能。
 
-* 在Experience Manager中資產的中繼資料更新期間發生競爭條件。
+* 將資產從Workfront傳送至Experience Manager時，資產MIME型別未設為 `dc:format` Experience Manager中的屬性。
 
+* 儲存在Experience Manager增強型聯結器上的Workfront專案ID包含重複專案。
 
 >[!NOTE]
 >
@@ -33,7 +34,7 @@ ht-degree: 1%
 
 >[!IMPORTANT]
 >
->Adobe建議您 [升級至最新的1.9.12版本](/help/assets/workfront-connector-install.md) 的 [!DNL Workfront for Experience Manager enhanced connector].
+>Adobe建議您 [升級至最新的1.9.13版本](/help/assets/workfront-connector-install.md) 的 [!DNL Workfront for Experience Manager enhanced connector].
 
 ## 已知問題 {#known-issues}
 
@@ -43,7 +44,13 @@ ht-degree: 1%
 
 ## 舊版 {#previous-releases}
 
-### 2023年6月發行版本 {#june-2023-release}
+### 2023年8月發行版本 {#august-2023-release}
+
+* 無法在Experience Manager中建立連結資料夾，因為沒有與連結資料夾相關聯的使用者帳戶。
+
+* 在Experience Manager中資產的中繼資料更新期間發生競爭條件。
+
+### 2023 年 6 月版 {#june-2023-release}
 
 * 當您設定進階網路時，從Adobe Workfront傳送內容到AEMas a Cloud Service時出現問題。
 
@@ -170,7 +177,7 @@ ht-degree: 1%
 
 * 此 **[!UICONTROL 上傳檔案]** 工作流程步驟無法將檔案附加至Workfront中的任務和問題。 工作流程步驟已成功將檔案附加到專案。
 
-### 2022年7月發行版本 {#july-2022-release}
+### 2022 年 7 月版 {#july-2022-release}
 
 [!DNL Workfront for Experience Manager enhanced connector] 1.9.1版包含下列更新：
 
@@ -182,7 +189,7 @@ ht-degree: 1%
 
 * 當您啟用 `Replace Spaces with DASH` 在Experience Manager的「進階設定」底下的組態選項，會在Workfront中建立重複的資料夾。
 
-### 2022年6月發行版本 {#june-2022-release}
+### 2022 年 6 月版 {#june-2022-release}
 
 [!DNL Workfront for Experience Manager enhanced connector] 現在包含下列更新：
 
