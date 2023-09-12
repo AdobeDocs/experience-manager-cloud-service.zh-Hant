@@ -1,7 +1,7 @@
 ---
 title: 使用Experience Cloud設定自動化啟用最適化表單的Adobe Analytics
 description: Experience Cloud設定自動化有助於將Adobe Analytics連線至最適化表單。 它有助於追蹤和分析使用者與最適化表單的互動，提供訪客互動和參與情況的深入分析。
-source-git-commit: c88f8f61cf54059b1d141d08b77983dd45edfaa6
+source-git-commit: 3ff64646b7d7c03374bc6deadbdeb7bc27dbbacf
 workflow-type: tm+mt
 source-wordcount: '1011'
 ht-degree: 0%
@@ -117,5 +117,4 @@ Adobe Experience Manager Forms中的Experience Cloud設定自動化需要 **Adob
 
 1. 按一下 **Adobe Analytics** 以檢視您的報表和分析效能資料。
 
-
-若要使用舊版方法連線最適化表單與Adobe Analytics，請造訪 [將AEM Forms與Adobe Analytics整合](/help/forms/integrate-aem-forms-with-adobe-analytics.md).
+若要使用手動方法連線最適化表單與Adobe Analytics，請造訪 [將AEM Forms與Adobe Analytics整合](/help/forms/integrate-aem-forms-with-adobe-analytics.md).

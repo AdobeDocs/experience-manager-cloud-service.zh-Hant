@@ -3,9 +3,9 @@ title: 如何將AEM Forms與Adobe Analytics整合？
 seo-title: Learn how to integrate AEM Forms with Adobe Analytics.
 exl-id: 0730432e-75b8-4b35-a377-ae4a2bee6c9f
 hidefromtoc: true
-source-git-commit: d97b17981e82323317e34185e47ee3f4224795b3
+source-git-commit: 3ff64646b7d7c03374bc6deadbdeb7bc27dbbacf
 workflow-type: tm+mt
-source-wordcount: '1743'
+source-wordcount: '1750'
 ht-degree: 1%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 1%
 | AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/integrate-aem-forms-with-experience-cloud-solutions/configure-analytics-forms-documents.html) |
 | AEM as a Cloud Service  | 本文章 |
 
-<span class="preview"> 如需最適化表單與Adobe Analytics的緊密整合，請造訪 [使用Experience Cloud設定自動化啟用最適化表單的Adobe Analytics](/help/forms/forms-experience-cloud-setup-automation.md). </span>
+<span class="preview"> 本檔案概述在最適化表單上啟用Adobe Analytics的手動程式。 不過，Adobe建議使用 [使用Experience Cloud設定自動化啟用最適化表單的Adobe Analytics](/help/forms/forms-experience-cloud-setup-automation.md). </span>
 
 AEM Forms整合 [Adobe Analytics](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/overview.html?lang=en) 可讓您擷取及追蹤已發佈表單的績效量度。 分析這些量度是為了讓業務使用者深入瞭解一般使用者行為，並最佳化資料擷取體驗。 您可以透過Adobe Analytics for Adaptive Forms擷取及追蹤已登入和未登入（匿名）使用者的行為。
 
