@@ -1,15 +1,17 @@
 ---
 title: 使用Experience Cloud設定自動化啟用最適化表單的Adobe Analytics
 description: Experience Cloud設定自動化有助於將Adobe Analytics連線至最適化表單。 它有助於追蹤和分析使用者與最適化表單的互動，提供訪客互動和參與情況的深入分析。
-source-git-commit: 3ff64646b7d7c03374bc6deadbdeb7bc27dbbacf
+source-git-commit: b44b54a88b87dc391dfeb51fb8b83095c274bd38
 workflow-type: tm+mt
-source-wordcount: '1011'
+source-wordcount: '1030'
 ht-degree: 0%
 
 ---
 
 
 # 使用Experience Cloud設定自動化啟用最適化表單的Adobe Analytics {#integrate-adobe-analytics-to-aem-forms-with-experience-cloud-setup-automation}
+
+<span class="preview"> 這是搶鮮版功能，可透過我們的以下網站存取： [發行前通道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
 
 Experience Cloud設定自動化有助於將Adobe Analytics連結到Adaptive Forms，這有助於追蹤和分析使用者與您的表單的互動，並提供訪客互動和參與情況的深入分析。 Experience Cloud設定自動化還有助於監控涉及評估量度（例如完成時間和下降點）的表單效能。 此分析有助於最佳化表單，以獲得更佳的使用者體驗，同時根據登入狀態區分使用者行為（例如匿名使用者），以識別一般趨勢和模式。
 

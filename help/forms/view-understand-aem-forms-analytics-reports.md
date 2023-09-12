@@ -5,15 +5,17 @@ topic-tags: develop
 feature: Adaptive Forms
 role: User
 level: Intermediate
-source-git-commit: 96b3986f73ab71bad02b00ddc699aeecd498aebd
+source-git-commit: b44b54a88b87dc391dfeb51fb8b83095c274bd38
 workflow-type: tm+mt
-source-wordcount: '916'
+source-wordcount: '935'
 ht-degree: 0%
 
 ---
 
 
 # 檢視和瞭解Adaptive Forms analytics報表 {#viewing-and-understanding-aem-forms-analytics-reports}
+
+<span class="preview"> 這是搶鮮版功能，可透過我們的以下網站存取： [發行前通道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
 
 在快速發展的數位分析中，為了做出明智的決策並最佳化數位體驗，必須跟上全球趨勢。 為解決此問題，最適化Forms與Adobe Analytics緊密整合，以擷取及追蹤您已發佈表單和檔案的績效量度。 分析這些量度是為了使用量度和分析來增強表單的可用性和有效性，進而做出資料導向式決策。
 
