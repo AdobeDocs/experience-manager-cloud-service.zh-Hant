@@ -3,7 +3,7 @@ title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 最新發行說明�
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 最新發行說明。'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 555873b15e3a748c95893a371925d3ab6e87ae67
+source-git-commit: 407afc27911c507d3662fa4897b29e8187bbec7a
 workflow-type: tm+mt
 source-wordcount: '1934'
 ht-degree: 25%
@@ -116,9 +116,9 @@ You can now assign metadata form to a specific folder within your Assets Essenti
 
 * [**Google reCAPTCHA 企業支援**](/help/forms/captcha-adaptive-forms-core-components.md)：以最適化表單使用 Google reCAPTCHA 企業版，以針對詐欺活動和垃圾郵件提供增強的保護，進而提供更安全的使用者體驗。透過進階的風險分析和緊密整合，真實的使用者可輕鬆地提交表單，同時有效地封鎖機器人。
 
-* **Adobe Analytics與Forms的Experience Cloud設定自動化**：您現在可以啟用具有Experience Cloud設定自動化的Adobe Analytics ，只需扳動幾個按鈕。 它可讓您連結AEM Formsas a Cloud Service與Experience Platform標籤和Adobe Analytics，以擷取及追蹤您已發佈表單的效能度量。
+* [**Adobe Analytics與Forms的Experience Cloud設定自動化**](/help/forms/forms-experience-cloud-setup-automation.md)：您現在可以啟用具有Experience Cloud設定自動化的Adobe Analytics ，只需扳動幾個按鈕。 它可讓您連結AEM Formsas a Cloud Service與Experience Platform標籤和Adobe Analytics，以擷取及追蹤您已發佈表單的效能度量。
 
-* **最適化Forms的Adobe Analytics報表範本**：Formsas a Cloud Service現在提供Adobe Analytics報表OOTB。 它可協助您輕鬆瞭解表單的效能。 表單層級量度可讓您深入瞭解表單在多重關鍵績效指標(KPI) （例如，轉譯、訪客、提交、平均填滿時間）上的執行情形。 透過追蹤使用者行為和意見回饋，您可以識別表單中造成混淆的區域，並指引表單的設計和功能改善。
+* [**最適化Forms的Adobe Analytics報表範本**](/help/forms/view-understand-aem-forms-analytics-reports.md)：Formsas a Cloud Service現在提供Adobe Analytics報表OOTB。 它可協助您輕鬆瞭解表單的效能。 表單層級量度可讓您深入瞭解表單在多重關鍵績效指標(KPI) （例如，轉譯、訪客、提交、平均填滿時間）上的執行情形。 透過追蹤使用者行為和意見回饋，您可以識別表單中造成混淆的區域，並指引表單的設計和功能改善。
 
   ![最適化表單使用者參與adobe analytics報告](/help/forms/assets/forms-analytics-report.png)
 
