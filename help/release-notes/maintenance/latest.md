@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的目前維護版本發行說明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的目前維護版本發行說明。'
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: 288f871b75e68fdbca1244099e490408ea66ff40
+source-git-commit: 57d818e3e89f17f829a6b51689f02e5f59614563
 workflow-type: tm+mt
-source-wordcount: '316'
-ht-degree: 86%
+source-wordcount: '296'
+ht-degree: 47%
 
 ---
 
@@ -13,41 +13,38 @@ ht-degree: 86%
 
 下節是 Experience Manager as a Cloud Service 目前維護版本的技術版本發行說明。
 
-## 13323 版 {#release-13323}
+## 13420 版 {#release-13420}
 
-以下摘要說明維護版本13323數的持續改善，該版本於2023年9月1日公開發佈。 此維護版本取代 13239 版。
+以下摘要說明維護版本13420數的持續改善，該版本於2023年9月11日公開發佈。 此維護版本取代 13323 版。
 
 2023.9.0 功能啟用將提供此維護版本的完整功能集。如需詳細資訊，請參閱 [Experience Manager 發行藍圖](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html)。
 
-### 增強功能 {#enhancements-13323}
+### 增強功能 {#enhancements-13420}
 
-- GRANITE-46784：新增停用 BearerAuthenticationHandler 的選項.
-- GRANITE-36205：將內部 Oak 發行版本更新到最新版.
-- ASSETS-26713：觸控 UI 外部連結到全新體驗 UI 儀表板 - unified-shell-integration 和 ui-touch-optimized 已升級.
-- SKYOPS-63302：將 com.adobe.granite:com.adobe.granite.auth.saml 升級到 v1.0.54.
-- GRANITE-46634：升級到發生事件的用戶端 1.4.0.
-- GRANITE-46788：將資料庫更新到 Apache Commons IO 2.13.0、Commons Lang 3.13.0、Commons Code 1.16.0 和 Commons Compress 1.23.0.
-- GRANITE-46705：更新到 Apache Felix Http Jetty 4.1.14.
-- GRANITE-46631：將 Jackrabbit 版本更新至 2.20.11.
-- SKYOPS-61895：更新至 Jackrabbit Filevault 3.7.0.
+- ASSETS-19544：屬性上次修改的資產現在已設定為請求處理的使用者。
 
-### 已修正的問題 {#fixed-issues-13323}
+### 已修正的問題 {#fixed-issues-13420}
 
-- ASSETS-28461：Doc cloud檢視器不適用於PDF，已從13239修正。
-- SKYOPS-63290：修復了貯體的不正確發展進程.
-- SKYOPS-54607：對於失敗的要求，速率限制器伺服器負載計算不正確.
-- ASSETS-27648：ContentModelIT 無法從其他套件組合中讀取排除檔案.
-- GRANITE-43744：如果驗證需求和虛名路徑配置錯誤，Sling Authenticator就無法正常運作。
-- GRANITE-46419：AEM 與 Auth0 Idp 整合問題.
-- GRANITE-46292：Okta SAML 設定無法在 AEM Cloud 更新之後發揮作用.
-- GRANITE-47059：移除 Granite Jetty SSL 套件組合.
+- ASSETS-27628：自訂Assets搜尋面板時建立了錯誤的「管道」節點
+- ASSETS-27539：上傳限制規則運算式比對。
+- ASSETS-26530： Unified Shell不會將使用者帶回原始頁面。
+- ASSETS-22719：智慧型裁切中斷點命名中的方括弧會中斷智慧型裁切編輯功能。
+- ASSETS-27726： linkshare.html不應由Google編制索引。
+- ASSETS-27791：中繼資料結構驗證只會針對第一個欄位進行。
+- ASSETS-25544：修正停用的CDN快取失效按鈕。
+- ASSETS-26575：建立影像集時修正名稱截斷。
+- ASSETS-26705：修正非DM資料夾資產和內容片段不必要的處理。
+- ASSETS-25740：修正熒幕助讀程式無法使用向下方向鍵，針對「編輯智慧型裁切」頁面上的編輯/裁切控制項，提供名稱和角色的旁白。
+- CQ-4354266：無法打開收件匣項目。
+- CQ-4354347：更新AEM翻譯。
+- DISP-1009：User-Agent做為非第一個標頭會裁切X-Forwarded-Host。
+- 各種協助工具和安全相關修正。
 
-### 已知問題 {#known-issues-13323}
+### 已知問題 {#known-issues-13420}
 
-- SITES-15622：GraphQL - 以數字和布林參數進行持續性查詢的問題。
-- SITES-15654：GraphQL - 聯合和相同名稱屬性的問題。
+無。
 
-### 內嵌技術 {#embedded-tech-13323}
+### 內嵌技術 {#embedded-tech-13420}
 
 | 技術 | 版本 | 連結 |
 |---|---|---|
