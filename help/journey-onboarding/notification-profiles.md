@@ -4,10 +4,10 @@ description: 了解如何在 Admin Console 中建立使用者設定檔來管理�
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: 4edecfcd-6301-4a46-98c7-eb5665f48995
-source-git-commit: 6764fe48068325dfb7ed84cf7834c7eb5f25fb48
-workflow-type: ht
-source-wordcount: '970'
-ht-degree: 100%
+source-git-commit: afb20efe8ed078a508f828c5df4e079f99dfab21
+workflow-type: tm+mt
+source-wordcount: '989'
+ht-degree: 98%
 
 ---
 
@@ -22,6 +22,10 @@ Adobe 有時需要就 AEM as a Cloud Service 環境聯絡使用者。除了產�
 
 * **事件通知** - 這些通知是在事件期間或 Adobe 發現您的 AEM as a Cloud Service 環境存在潛在可用性問題時傳送的。
 * **主動通知** - 當 Adobe 支援團隊成員想要提供有關可使您的 AEM as a Cloud Service 環境受益的潛在最佳化或建議的指引時，將傳送這些通知。
+
+>[!NOTE]
+>
+>不支援將群組指派給主動通知。 您需要將使用者直接指派給產品設定檔。
 
 為了讓正確的使用者收到這些通知，您需要按照本文件中所述來設定和指派使用者設定檔。
 
