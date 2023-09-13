@@ -7,7 +7,7 @@ keywords: 新增自訂錯誤處理程式、新增預設錯誤處理程式、在�
 contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms
-source-git-commit: 1f6fd90b2a5772951c78275b395653bbd14bbd7b
+source-git-commit: 963fcbe1e333dd6e0540e29ea150881826a1323c
 workflow-type: tm+mt
 source-wordcount: '2425'
 ht-degree: 2%
