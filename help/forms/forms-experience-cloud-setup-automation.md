@@ -1,9 +1,9 @@
 ---
-title: 使用Experience Cloud設定自動化啟用最適化表單的Adobe Analytics
-description: Experience Cloud設定自動化有助於將Adobe Analytics連線至最適化表單。 它有助於追蹤和分析使用者與最適化表單的互動，提供訪客互動和參與情況的深入分析。
-source-git-commit: b44b54a88b87dc391dfeb51fb8b83095c274bd38
+title: 為最適化表單啟用Adobe Analytics
+description: 「Experience Cloud設定自動化」可協助將Adobe Analytics連結至Adaptive Form，以追蹤訪客互動和參與的相關深入分析。
+source-git-commit: 39ea959cb0a0568fd94ca455be935228479c0415
 workflow-type: tm+mt
-source-wordcount: '1030'
+source-wordcount: '1013'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ Adobe Analytics提供全方位的Adaptive Forms效能量度，旨在提供表單
 
 * **需要訪客協助的區域** 量度包括說明檢視、驗證錯誤例項和欄位造訪頻率，以強調使用者在填寫表單時可能需要協助的位置。
 
-![Analytics報表](assets/analytics-report.png)
+![Analytics報表](assets/analytics-report.png){width="100%"}
 
 
 如需每個量度的詳細資訊，請造訪 [檢視和瞭解AEM Forms Analytics報表](/help/forms/view-understand-aem-forms-analytics-reports.md)
@@ -58,7 +58,7 @@ Adobe Experience Manager Forms中的Experience Cloud設定自動化需要 **Adob
 
 若要確認上述功能是否適用於您的Formsas a Cloud Service環境，請造訪 [開發人員主控台](https://developer.adobe.com/console/projects)，瀏覽至專案並使用方案ID搜尋您的專案，例如，搜尋有URL的環境 `https://author-p45913-e175111-cmstg.adobeaemcloud.com/index.html`，方案id為 `p45913-e175111`. 請確定已列出Experience Cloud設定自動化、Adobe Analytics和Experience Platform Launch API。 如果列出了這些選項，您可以為最適化Forms啟用Adobe Analytics 。
 
-![Forms整合的必要條件](assets/analytics-aem.png)
+![Forms整合的必要條件](assets/analytics-aem.png){width="100%"}
 
 <!-- 
 >[!NOTE]
@@ -94,7 +94,7 @@ Adobe Experience Manager Forms中的Experience Cloud設定自動化需要 **Adob
 1. 在您的AEM執行個體上，前往 **[!UICONTROL Forms]** >> **[Forms和檔案]** 並選取 **[!UICONTROL 表單]**，您會看到Adobe Analytics已整合至您的表單，如下圖所示。
 1. 現在您可以檢視 [最適化表單Adobe Analytics報表](#view-adobe-analytics-report).
 
-![整合的AEM Analytics](assets/analytics-aem-integrated.png)
+![整合的AEM Analytics](assets/analytics-aem-integrated.png){width="100%"}
 
 ### 啟用具有核心元件適用性Forms的Adobe Analytics {#integrate-adobe-analytics-with-aem-forms-for-core-components}
 
@@ -115,7 +115,7 @@ Adobe Experience Manager Forms中的Experience Cloud設定自動化需要 **Adob
 1. 在您的AEM執行個體上，前往 **[!UICONTROL Forms]** >> **[!UICONTROL Forms和檔案]**.
 1. 選取您的表單，您會看到Adobe Analytics已整合（如左側所示）至為Adobe Analytics啟動的Forms。
 
-   ![檢視報告](assets/activ-aa.png)
+   ![檢視報告](assets/activ-aa.png){width="100%"}
 
 1. 按一下 **Adobe Analytics** 以檢視您的報表和分析效能資料。
 
