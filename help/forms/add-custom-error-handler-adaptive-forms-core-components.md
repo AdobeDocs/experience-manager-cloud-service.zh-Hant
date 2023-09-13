@@ -7,10 +7,10 @@ keywords: 新增自訂錯誤處理程式、新增預設錯誤處理程式、在�
 contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms
-source-git-commit: a635a727e431a73086a860249e4f42d297882298
+source-git-commit: 1f6fd90b2a5772951c78275b395653bbd14bbd7b
 workflow-type: tm+mt
-source-wordcount: '2378'
-ht-degree: 1%
+source-wordcount: '2425'
+ht-degree: 2%
 
 ---
 
@@ -18,6 +18,11 @@ ht-degree: 1%
 # 最適化Forms中的錯誤處理常式（核心元件） {#error-handlers-in-adaptive-form}
 
 <span class="preview"> 這是搶鮮版功能，可透過我們的以下網站存取： [發行前通道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
+
+| 版本 | 文章連結 |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service  | 本文章 |
+| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/add-custom-error-handler-adaptive-forms-core-components.html) |
 
 AEM Forms為表單提交提供現成可用的成功和錯誤處理常式。 此外，還提供自訂錯誤處理常式函式的功能。 例如，您可以針對特定錯誤程式碼在後端叫用自訂的工作流程，或通知客戶服務已關閉。處理常式是根據伺服器回應執行的使用者端功能。 使用API叫用外部服務時，資料會傳輸到伺服器進行驗證，伺服器會傳回回應給使用者端，其中包含提交成功或錯誤事件的相關資訊。 此資訊會以引數形式傳遞至相關處理常式，以執行函式。 錯誤處理常式有助於管理和顯示所遇到的錯誤或驗證問題。
 
@@ -400,3 +405,9 @@ The `var som_map` lists the SOM expression of the Adaptive Form fields that you 
 Using this custom error handler, the adaptive form converts the fields listed in `var som_map` to standard error message format. As a result, the validation error messages display at field-level in the adaptive form.
 
  -->
+
+## 其他資訊 {#additional-information}
+
+* [建立獨立核心元件式最適化表單](/help/forms/creating-adaptive-form-core-components.md)
+* [為您的表單建立樣式或主題](/help/forms/using-themes-in-core-components.md)
+* [建立或新增最適化表單至 AEM Sites 頁面](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
