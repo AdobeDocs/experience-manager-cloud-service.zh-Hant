@@ -1,9 +1,9 @@
 ---
 title: 設定流量篩選規則（使用WAF規則）
 description: 使用流量篩選規則（搭配WAF規則）來篩選流量
-source-git-commit: dc0c7e77bb4bc5423040364202ecac3c59adced0
+source-git-commit: b1b184b63ab6cdeb8a4e0019c31a34db59438a3d
 workflow-type: tm+mt
-source-wordcount: '2690'
+source-wordcount: '2709'
 ht-degree: 70%
 
 ---
@@ -41,7 +41,8 @@ Adobe會嘗試減輕對客戶網站的攻擊，但主動篩選符合特定模式
    ```
    kind: "CDN"
    version: "1"
-   envType: "dev"
+   metadata:
+     envTypes: ["dev"]
    data:
      trafficFilters:
        rules:
@@ -94,13 +95,14 @@ Adobe會嘗試減輕對客戶網站的攻擊，但主動篩選符合特定模式
 ```
 kind: "CDN"
 version: "1"
-envType: "dev"
+metadata:
+  envTypes: ["dev"]
 data:
   trafficFilters:
     rules:
       - name: "path-rule"
         when: { reqProperty: path, equals: /block-me }
-        action: 
+        action:
           type: block
       - name: "Enable-SQL-Injection-and-XSS-waf-rules-globally"
         when: { reqProperty: path, like: "*" }
@@ -225,7 +227,7 @@ cdn.yaml檔案中流量篩選規則的格式如下所述。 請參閱稍後章�
 
 * 如果規則相符並遭封鎖，CDN 會以 `406` 傳回代碼回應。
 
-* 設定檔案不應包含秘密，因為任何有權存取Git存放庫的人都可以讀取
+* 組態檔不應包含秘密，因為任何有權存取Git存放庫的人都能讀取。
 
 ## 規則範例 {#examples}
 
@@ -238,13 +240,14 @@ cdn.yaml檔案中流量篩選規則的格式如下所述。 請參閱稍後章�
 ```
 kind: "CDN"
 version: "1"
-envType: "dev"
+metadata:
+  envTypes: ["dev"]
 data:
   trafficFilters:
      rules:
        - name: "block-request-from-ip"
          when: { reqProperty: clientIp, equals: "192.168.1.1" }
-         action: 
+         action:
            type: block
 ```
 
@@ -255,7 +258,8 @@ data:
 ```
 kind: "CDN"
 version: "1"
-envType: "dev"
+metadata:
+  envTypes: ["dev"]
 data:
   trafficFilters:
      rules:
@@ -265,7 +269,7 @@ data:
             - { reqProperty: path, equals: /helloworld }
             - { reqProperty: tier, equals: publish }
             - { reqHeader: user-agent, matches: '.*Chrome.*'  }
-           action: 
+           action:
              type: block
 ```
 
@@ -276,17 +280,18 @@ data:
 ```
 kind: "CDN"
 version: "1"
-envType: "dev"
+metadata:
+  envTypes: ["dev"]
 data:
   trafficFilters:
     rules:
       - name: "block-request-that-contains-query-parameter-foo"
         when: { queryParam: url-param, equals: foo }
-        action: 
+        action:
           type: block
       - name: "allow-all-requests-from-ip"
         when: { reqProperty: clientIp, equals: 192.168.1.1 }
-        action: 
+        action:
           type: allow
 ```
 
@@ -297,13 +302,14 @@ data:
 ```
 kind: "CDN"
 version: "1"
-envType: "dev"
+metadata:
+  envTypes: ["dev"]
 data:
   trafficFilters:
     rules:
       - name: "path-rule"
         when: { reqProperty: path, equals: /block-me }
-        action: 
+        action:
           type: block
       - name: "Enable-SQL-Injection-and-XSS-waf-rules-globally"
         when: { reqProperty: path, like: "*" }
@@ -319,7 +325,8 @@ data:
 ```
 kind: "CDN"
 version: "1"
-envType: "dev"
+metadata:
+  envTypes: ["dev"]
 data:
   trafficFilters:
     rules:
@@ -352,20 +359,22 @@ data:
 
 | **屬性** | **類型** | **預設** | **含義** |
 |---|---|---|---|
-| 限制 | 10 到 10000 之間的整數 | 必要 | 觸發規則的要求速率 (以每秒要求數為單位) |
-| 視窗 | 整數列舉：1、10 或 60 | 10 | 計算要求速率的取樣期間 (秒數) |
-| 懲罰 | 60 到 3600 之間的整數 | 300 (5 分鐘) | 封鎖相符要求時間的秒數 (四捨五入到最接近的分鐘) |
+| 限制 | 10 到 10000 之間的整數 | 必要 | 觸發規則的要求速率 (以每秒要求數為單位). |
+| 視窗 | 整數列舉：1、10 或 60 | 10 | 計算要求速率的取樣期間 (秒數). |
+| 懲罰 | 60 到 3600 之間的整數 | 300 (5 分鐘) | 封鎖相符要求時間的秒數 (四捨五入到最接近的分鐘). |
+| groupBy | 陣列[Getter] | 無 | 速率限制器計數器將依一組請求屬性（例如clientIp）彙總。 |
 
 ### 範例 {#ratelimiting-examples}
 
 **範例 1**
 
-過去60秒內超過100個要求/秒時，此規則會封鎖5米的使用者端
+在過去60秒內，當使用者端超過每秒100個請求時，此規則會封鎖5m的使用者端：
 
 ```
 kind: "CDN"
 version: "1"
-envType: "dev"
+metadata:
+  envTypes: ["dev"]
 data:
   trafficFilters:
     - name: limit-requests-client-ip
@@ -383,18 +392,19 @@ data:
 
 **範例 2**
 
-封鎖路徑/critical/resource上60s的請求（在過去60秒內超過100個請求/秒）
+封鎖路徑/critical/resource上在過去60秒內超過100個要求/秒時的60個要求：
 
 ```
 kind: "CDN"
 version: "1"
-envType: "dev"
+metadata:
+  envTypes: ["dev"]
 data:
   trafficFilters:
     rules:
       - name: rate-limit-example
         when: { reqProperty: path, equals: /critical/resource }
-        action: 
+        action:
           type: block
         rateLimit: { limit: 100, window: 60, penalty: 60 }
 ```
@@ -418,7 +428,7 @@ AEM as a Cloud Service 會提供對 CDN 紀錄的存取權，這對於包括快�
 規則的行為方式如下：
 
 * 任何相符規則的客戶宣告規則名稱都會列在matches屬性中。
-* action屬性詳細說明規則是否具有封鎖、允許或記錄的效果
+* action屬性詳細說明規則是否具有封鎖、允許或記錄的效果。
 * 如果WAF已授權並啟用，則waf屬性會列出偵測到的任何waf規則（例如SQLI；請注意，這與客戶宣告的名稱無關），無論組態中是否列出了waf規則。
 * 如果沒有相符的客戶宣告規則以及沒有相符的waf規則，則rules屬性屬性將為空白。
 
@@ -430,7 +440,8 @@ AEM as a Cloud Service 會提供對 CDN 紀錄的存取權，這對於包括快�
 ```
 kind: "CDN"
 version: "1"
-envType: "dev"
+metadata:
+  envTypes: ["dev"]
 data:
   trafficFilters:
     rules:
@@ -490,7 +501,7 @@ data:
 
 | **欄位名稱** | **說明** |
 |---|---|
-| *timestamp* | TLS 終止後要求開始的時間 |
+| *timestamp* | TLS 終止後要求開始的時間. |
 | *ttfb* | *首位元組時間 (Time To First Byte)* 的縮寫。 發出要求開始到回應內文開始串流的時間之間的時間間隔。 |
 | *cli_ip* | 用戶端 IP 位址。 |
 | *cli_country* | 雙字母 [ISO 3166-1](https://en.wikipedia.org/wiki/ISO_3166-1) 用戶端國家/地區的 alpha-2 國家/地區代碼。 |
