@@ -5,10 +5,10 @@ contentOwner: Vishabh Gupta
 feature: Asset Management, Collaboration, Asset Distribution
 role: User, Admin
 exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 49abc947db97de5ceb248383b556e77d4fc68060
 workflow-type: tm+mt
-source-wordcount: '1630'
-ht-degree: 4%
+source-wordcount: '1344'
+ht-degree: 5%
 
 ---
 
@@ -27,34 +27,6 @@ ht-degree: 4%
 * 共用，使用 [[!DNL Adobe Asset Link]](https://www.adobe.com/tw/creativecloud/business/enterprise/adobe-asset-link.html).
 * 共用，使用 [[!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html).
 
-## 先決條件 {#prerequisites}
-
-您需要管理員許可權才能 [設定以連結形式共用資產的設定](#config-link-share-settings).
-
-## 設定連結共用設定 {#config-link-share-settings}
-
-[!DNL Experience Manager Assets] 可讓您設定預設的連結共用設定。
-
-1. 按一下 [!DNL Experience Manager] 標誌，然後導覽至 **[!UICONTROL 工具]** > **[!UICONTROL 資產]** > **[!UICONTROL 資產設定]** > **[!UICONTROL 連結共用]**.
-1. 初始設定：
-
-   * **包含原始項目:**
-
-      * 選取 `Select Include Originals` 以選取 `Include Originals` 選項中預設的連結共用對話方塊。
-      * 選擇適當的選項以指定行為，讓 `Include Originals` 選項可編輯、唯讀或隱藏。
-   * **包含轉譯版本:**
-      * 選取 `Select Include Renditions` 選項以選取 `Include Renditions` 選項中預設的連結共用對話方塊。
-      * 選擇適當的選項來選取行為，讓 `Include Renditions` 選項可編輯、唯讀或隱藏。
-
-1. 在中指定連結的預設有效期 `Validity Period` 中的欄位 `Expiration date` 區段。
-
-1. **[!UICONTROL 連結共用]** 動作列中的按鈕：
-   * 所有使用者具有 `jcr:modifyAccessControl` 許可權可檢視 [!UICONTROL 連結共用] 選項。 依預設，所有管理員都可看見它。 此 [!UICONTROL 連結共用] 依預設，所有人都可看見按鈕。 您可以設定只對已定義的群組顯示此選項，也可以拒絕特定群組的此選項。 選取 `Allow only for groups` 如果要允許特定群組檢視 `Share Link` 選項。 選取 `Deny from groups` 拒絕 `Share Link` 選項。 選取任何這些選項後，使用以下專案指定群組名稱： `Select Groups` 欄位以新增您需要允許或拒絕的群組名稱。
-
-如需電子郵件組態的相關設定，請造訪 [電子郵件服務檔案](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/email-service.html)
-
-![設定電子郵件服務](config-email-service.png)
-
 ## 以連結方式共用資產 {#sharelink}
 
 透過連結共用資產是讓資源供外部對象、行銷人員和其他人使用的便利方式 [!DNL Experience Manager] 使用者。 功能可讓匿名使用者存取及下載與其共用的資產。 從共用連結下載資產時， [!DNL Experience Manager Assets] 使用非同步服務，提供更快速且無中斷的下載。 要下載的資產會在背景排入可管理檔案大小的ZIP封存檔中。 對於大型下載，下載會整合到多個檔案中，每個檔案大小為100 GB。
@@ -70,12 +42,11 @@ Users with administrator privileges or with read permissions at `/var/dam/share`
 
 使用連結共用功能時，有兩種方式可共用資產：
 
-1. 產生共用連結， [複製並共用資產連結](#copy-and-share-assets-link) 與其他使用者整合。
-1. 產生共用連結並 [透過電子郵件共用資產連結](#share-assets-link-through-email). 您可以修改預設值（例如到期日和時間），並允許下載原始資產及其轉譯。 您可以新增多個使用者的電子郵件地址，以傳送電子郵件給他們。
+1. 產生共用連結， [複製並共用資產連結](#copy-and-share-assets-link) 與其他使用者整合。 連結的預設到期時間為一天。 當您將複製的連結與其他使用者共用時，無法變更到期時間。
 
-![連結共用對話方塊](assets/share-link.png)
+1. 產生共用連結並 [透過電子郵件共用資產連結](#share-assets-link-through-email). 在此情況下，您可以修改預設值（例如到期日和時間），並允許下載原始資產及其轉譯。 您可以新增多個使用者的電子郵件地址，以傳送電子郵件給他們。
 
-在這兩種情況下，您都可以修改預設值（例如到期日和時間），並允許下載原始資產及其轉譯。
+   ![連結共用對話方塊](assets/link-sharing-dialog.png)
 
 ### 複製並共用資產連結{#copy-and-share-asset-link}
 
@@ -84,9 +55,6 @@ Users with administrator privileges or with read permissions at `/var/dam/share`
 1. 登入 [!DNL Experience Manager Assets] 並導覽至 **[!UICONTROL 檔案]**.
 1. 選取資產或包含資產的檔案夾。 在工具列中按一下 **[!UICONTROL 共用連結]**.
 1. 此 **[!UICONTROL 連結共用]** 對話方塊隨即出現，其中包含在自動產生的 **[!UICONTROL 共用連結]** 欄位。
-1. 視需要設定共用連結的到期日。
-1. 在 **[!UICONTROL 連結設定]**，勾選或取消勾選 `Include Originals` 或 `Include Renditions` 以包含或排除其中一個。 至少必須選擇選項。
-1. 所選資產的名稱會顯示在 [!DNL Share Link] 對話方塊。
 1. 複製資產連結並與使用者共用。
 
 ### 透過電子郵件通知共用資產連結 {#share-assets-link-through-email}
@@ -96,7 +64,7 @@ Users with administrator privileges or with read permissions at `/var/dam/share`
 1. 選取資產或包含資產的檔案夾。 在工具列中按一下 **[!UICONTROL 共用連結]**.
 1. 此 **[!UICONTROL 連結共用]** 對話方塊隨即出現，其中包含在自動產生的 **[!UICONTROL 共用連結]** 欄位。
 
-   * 在電子郵件地址方塊中，輸入您要共用連結之使用者的電子郵件地址。 您可以與多位使用者共用連結。 如果使用者是您組織的成員，請從下拉式清單中顯示的建議中選取其電子郵件地址。 在電子郵件地址文字欄位中，輸入您要共用連結之使用者的電子郵件地址，然後按一下 [!UICONTROL 輸入]. 您可以與多位使用者共用連結。
+   * 在電子郵件地址方塊中，輸入您要共用連結之使用者的電子郵件ID。 您可以與多位使用者共用連結。 如果使用者是您組織的成員，請從下拉式清單中顯示的建議中選取其電子郵件ID。 如果使用者是外部使用者，請輸入完整的電子郵件ID並按 **[!UICONTROL 輸入]**；電子郵件ID會新增至使用者清單。
 
    * 在 **[!UICONTROL 主旨]** 方塊中，輸入主旨以指定共用資產的用途。
    * 在 **[!UICONTROL 訊息]** 方塊，視需要輸入訊息。
@@ -105,7 +73,7 @@ Users with administrator privileges or with read permissions at `/var/dam/share`
 
 1. 按一下 **[!UICONTROL 共用]**. 訊息會確認此連結已與使用者共用。 使用者會收到包含共用連結的電子郵件。
 
-![連結共用電子郵件](assets/link-sharing-email-notification.png)
+   ![連結共用電子郵件](assets/link-sharing-email-notification.png)
 
 ### 使用資產連結下載資產
 
@@ -121,7 +89,7 @@ Users with administrator privileges or with read permissions at `/var/dam/share`
 
   ![將下載排入佇列](assets/queue-download.png)
 
-* 在準備下載檔案時，按一下 **[!UICONTROL 下載收件匣]** 檢視下載狀態的選項。 如果下載次數較多，請按一下 **[!UICONTROL 重新整理]** 按鈕以更新狀態。
+* 在準備下載檔案時，按一下 **[!UICONTROL 下載收件匣]** 檢視下載狀態的選項。 如需大量下載，請按一下 **[!UICONTROL 重新整理]** 按鈕以更新狀態。
 
   ![下載收件匣](assets/link-sharing-download-inbox.png)
 
@@ -234,13 +202,20 @@ A message confirms that you unshared the asset. In addition, the entry for the a
 >* `[aem_server]:[port]/linkexpired.html`
 
 <!--
+## Configure Day CQ mail service {#configmailservice}
+
+Before you can share assets as links, configure the email service.
+
+1. Click or tap the Experience Manager logo, and then navigate to **[!UICONTROL Tools]** &gt; **[!UICONTROL Operations]** &gt; **[!UICONTROL Web Console]**.
 1. From the list of services, locate **[!UICONTROL Day CQ Mail Service]**.
-1. Click the **[!UICONTROL Edit]** icon beside the service, and configure the following parameters for **Day CQ Mail Service** with the details mentioned against their names:
+1. Click the **[!UICONTROL Edit]** icon beside the service, and configure the following parameters for **Day CQ Mail Service]** with the details mentioned against their names:
 
     * SMTP server host name: email server host name
     * SMTP server port: email server port
     * SMTP user: email server user name
     * SMTP password: email server password
+
+1. Click/tap **[!UICONTROL Save]**.
 -->
 
 <!-- TBD: Commenting as Web Console is not available. Document the appropriate OSGi config method if available in CS.
