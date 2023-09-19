@@ -4,7 +4,7 @@ description: 瞭解移轉程式如何在目的地Cloud Service例項上為擷取
 source-git-commit: 22c5cbf300bb0b3b0db04fcfa669dde44197c326
 workflow-type: tm+mt
 source-wordcount: '514'
-ht-degree: 2%
+ht-degree: 8%
 
 ---
 
@@ -14,8 +14,8 @@ ht-degree: 2%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_indexing"
->title="內容索引"
->abstract="AEM索引是指將內容移轉至內容例項後，在Cloud Service例項上編制內容的索引。 需要編制索引以支援在該執行個體上搜尋內容。"
+>title="內容編製索引"
+>abstract="AEM 編製索引是指將內容移轉到 Cloud Service 例項後編製該內容索引。 必須編製索引才能支援在該例項上搜尋內容。"
 
 一旦Cloud Acceleration Manager完成將內容擷取至您的Cloud Service例項中，即可使用。 一開始不會將內容編列索引，這可能會導致環境不穩定，發生無法搜尋的內容和效能降低等問題。
 為獲得執行個體上的最佳效能，移轉程式將自動開始編制內容索引。 除了監視索引進度外，沒有其他要做的事。

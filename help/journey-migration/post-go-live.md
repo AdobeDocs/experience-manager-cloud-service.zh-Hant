@@ -15,8 +15,8 @@ ht-degree: 28%
 >id="aemcloud_golive_troubleshooting"
 >title="AEM 的移難排解"
 >abstract="檢閱持續開發和管理記錄檔的最佳做法以及開發人員主控台和 CRXDE Lite 之類的工具，以協助對 AEM 的問題進行移難排解"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-logs.html" text="存取和管理記錄檔"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html#aem-as-a-cloud-service-development-tools" text="AEM as a Cloud Service 開發工具"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-logs.html?lang=zh-Hant" text="存取和管理記錄檔"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html?lang=zh-Hant#aem-as-a-cloud-service-development-tools" text="AEM as a Cloud Service 開發工具"
 
 此歷程是最後一部分，因此您將瞭解如何監視問題，並在移轉完成後改善效能。 您應該確保清理暫存檔，並檢閱持續開發的最佳實務和管理記錄。
 
