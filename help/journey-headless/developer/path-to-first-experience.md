@@ -3,9 +3,9 @@ title: 踏上首次使用 AEM Headless 之路
 description: 在 AEM Headless 開發人員歷程的這一部分中，您將了解在 AEM 中實作您的第一個 Headless 體驗的步驟 (包括規劃考量事項)，並學習最佳做法以使您的操作過程盡可能順利。
 exl-id: 172ad8d8-5067-4452-bf91-1eea9a39a7bc
 source-git-commit: b302aa1140fc14044e85fd61ed2d361b71e6be34
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2000'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -110,8 +110,8 @@ Headless 專案的中繼環境用於在新的 AEM 產品版本推送到生產環
 
 ### 編寫內容 {#authoring}
 
-* 對於內容的管道特定版本，請考慮使用內容片段變化。變數會與主要內容同步，以簡化內容變更管理。
-* 邀請其他內容製作者檢閱內容並提供意見回饋。
+* 對於內容的管道特定版本，請考慮使用內容片段變化。變化與主要內容同步，以簡化內容變更管理。
+* 邀請其他內容製作者檢視內容並提供意見回饋。
 * 使用盡可能少使用必要元素讓事情繼續進行。必要元素會讓工作流程無法進行。
 
 ### 編寫全域內容 {#localization}
@@ -144,7 +144,7 @@ Headless 專案的中繼環境用於在新的 AEM 產品版本推送到生產環
 
 * [AEM Headless 翻譯歷程](/help/journey-headless/translation/overview.md) - 此文件歷程讓您對 Headless 技術、AEM 如何提供 Headless 內容以及如何翻譯它，有廣泛的了解。
 * [AEM Sites as a Cloud Service 的 Headless 開發](/help/headless/introduction.md) - 快速介紹讓 AEM Headless 開發人員熟悉必要的功能
-* [AEM開發人員入口網站](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
+* [AEM 開發人員入口網站](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
 * [AEM Headless 教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html) - 利用這些實作教學課程來探索如何運用各種不同方式使用 AEM 將內容傳遞到 Headless 端點，並選擇適合您的方式。
 * [使用 GraphQL API 進行 Headless 內容管理](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens&amp;Launch=ExperienceManager-D-1-2020.1.headless#courses) - 按照本課程說明對 AEM 中實作的 GraphQL API 有概略的了解。必須透過 AdobeID 進行驗證。
 * [AEM Guides WKND - GraphQL](https://github.com/adobe/aem-guides-wknd-graphql) - 此 GitHub 專案包含以 AEM GraphQL API 為重點的範例應用程式。
