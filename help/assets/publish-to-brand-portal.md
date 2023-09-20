@@ -5,10 +5,10 @@ contentOwner: Vishabh Gupta
 feature: Brand Portal,Asset Distribution,Configuration
 role: User
 exl-id: 1cc438bc-8cad-4421-af03-c1f6d750e0a8
-source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
+source-git-commit: 56a4b03e78e835108aa57fdb241803e75b867260
 workflow-type: tm+mt
-source-wordcount: '1205'
-ht-degree: 97%
+source-wordcount: '1263'
+ht-degree: 93%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 97%
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
 | AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/assets/brandportal/brand-portal-publish-folder.html?lang=en) |
-| AEM as a Cloud Service  | 本文 |
+| AEM as a Cloud Service  | 本文章 |
 
 如果您是 Adobe Experience Manager (AEM) Assets 管理員，您可以將資產、資料夾和集合發佈至 AEM Assets Brand Portal 例項。此外，您也可以將資產或資料夾的發佈工作流程安排在之後的日期或時間。發佈後，Brand Portal 的使用者可以存取資產、資料夾和集合，並進一步將它們發佈給其他使用者。
 
@@ -87,6 +87,16 @@ ht-degree: 97%
 
 ![bp_landingpage](assets/bp_landingpage.png)
 
+>[!NOTE]
+>
+> * DAM-Users群組的現有使用者擁有路徑&quot;/conf/global/settings/cloudconfigs/mediaportal&quot;的讀取存取權
+>* 新使用者（或非管理員使用者）需要下列許可權，才能在Brand Portal上發佈。
+> 路徑:
+> &quot;/conf/global/settings/cloudconfigs/mediaportal&quot; ： jcr：read
+>/libs ： jcr：read
+>/conf ： jcr：read
+>/content ： jcr：read ， crx：replicate
+>/content/dam/ ： jcr：read ，修改， crx：replicate
 
 ## 將資料夾發佈至 Brand Portal {#publish-folders-to-brand-portal}
 
@@ -104,7 +114,7 @@ ht-degree: 97%
 
    * 在工具列中選取&#x200B;**[!UICONTROL 快速發佈]**。
 
-      在功能表中選取&#x200B;**[!UICONTROL 發佈至 Brand Portal]**。
+     在功能表中選取&#x200B;**[!UICONTROL 發佈至 Brand Portal]**。
 
    * 在工具列中選取&#x200B;**[!UICONTROL 管理出版物]**。
 
