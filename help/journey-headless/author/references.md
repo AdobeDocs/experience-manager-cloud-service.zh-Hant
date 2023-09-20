@@ -3,7 +3,7 @@ title: 了解如何在內容片段中使用參考
 description: 了解如何在內容片段中使用內容、其他片段和其他資產 (媒體) 的參考。介紹巢狀片段對 Headless CMS 編寫的必要性和機制。
 exl-id: a65e8a5a-954b-4307-8027-ca8bac5f4261
 source-git-commit: d6b98559e7cbe5fc5bd05d9cf37225e960e668e7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '712'
 ht-degree: 100%
 
