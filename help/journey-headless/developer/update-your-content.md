@@ -3,9 +3,9 @@ title: 如何透過 AEM Assets API 更新您的內容
 description: 在 AEM Headless 開發人員歷程的這一部分中，了解如何使用 REST API 存取和更新內容片段的內容。
 exl-id: 84120856-fd1d-40f7-8df4-73d4cdfcc43b
 source-git-commit: b302aa1140fc14044e85fd61ed2d361b71e6be34
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1096'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -329,6 +329,6 @@ API 參考文件中定義了受支援要求的確切格式。
 * [AEM 核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
 * [CORS/AEM 說明](https://helpx.adobe.com/tw/experience-manager/kt/platform-repository/using/cors-security-article-understand.html)
 * [影片 - 使用 AEM 開發 CORS](https://helpx.adobe.com/tw/experience-manager/kt/platform-repository/using/cors-security-technical-video-develop.html)
-* [AEM as a Headless CMS簡介](/help/headless/introduction.md)
-* [AEM開發人員入口網站](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
-* [AEM中Headless的Tutorials](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)
+* [AEM as a Headless CMS 簡介](/help/headless/introduction.md)
+* [AEM 開發人員入口網站](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
+* [AEM 中的 Headless 教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)
