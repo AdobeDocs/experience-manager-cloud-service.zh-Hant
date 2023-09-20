@@ -3,9 +3,9 @@ title: 了解編寫基本知識
 description: 了解使用內容片段為 Headless CMS 編寫內容的概念和機制。
 exl-id: 3eca973f-b210-41bb-98da-ecbd2bae9803
 source-git-commit: d6b98559e7cbe5fc5bd05d9cf37225e960e668e7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1729'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -189,36 +189,36 @@ You can view additional information about items using the Rail Selector. This al
 
 >[!NOTE]
 >
->內容片段是Sites功能，但儲存為 **資產**.
+>內容片段是 Sites 的一項功能，但儲存為&#x200B;**資產**。
 >
->編寫內容片段有兩個編輯器。
+>有兩個編輯器用於編寫內容片段。
 >
->* 新編輯器（主要透過以下網址存取）： **內容片段** 主控台。
->* 原始編輯器，主要透過以下位置存取： **資產** 主控台。
+>* 新編輯器主要可從「**內容片段**」主控台存取。
+>* 原始編輯器主要可從「**資產**」主控台存取。
 
 編輯器首次開啟時，您會看到：
 
-* 頂端工具列：主要資訊和動作
-   * 內容片段控制檯的連結（首頁圖示）
-   * 有關模型和資料夾的資訊
-   * 指向預覽的連結；如果為模型配置了「預設預覽URL模式」
+* 頂端工具列：用於關鍵資訊和動作
+   * 內容片段主控台的連結 (首頁圖示)
+   * 有關模型和檔案夾的資訊
+   * 預覽連結；如果設預覽 URL 模式是為模型所設定
    * 發佈和取消發佈動作
-   * 顯示全部的選項 **父引用** （連結圖示）
-   * 片段 **狀態**&#x200B;和上次儲存的資訊
-   * 切換至原始（資產型）編輯器的切換按鈕
-* 左側面板：顯示 **變數** 用於內容片段及其 **欄位**：
-   * 這些連結可用於導覽內容片段結構
-* 右側面板：顯示屬性（中繼資料）和標籤、版本歷史記錄相關資訊，以及與任何語言副本相關的資訊的標籤
-   * 在 **屬性** 標籤您可以更新 **標題** 和 **說明** 針對片段，或 **變數**
+   * 顯示全部&#x200B;**父參考內容**&#x200B;的選項 (連結圖示)
+   * **狀態**&#x200B;片段，以及最後儲存的資訊
+   * 用來切換至原始 (以資產為主) 編輯器的切換開關
+* 左面板：顯示內容片段的&#x200B;**變數**&#x200B;及其&#x200B;**欄位**：
+   * 這些連結可用來導覽至內容片段結構
+* 右側面板：展示一些會顯示屬性 (中繼資料) 和標記的標籤、有關版本歷史記錄的資訊，以及與任何語言版本相關的資訊
+   * 在「**屬性**」標籤中，您可以更新片段的「**標題**」和「**說明**」，或者更新「**變數**」
 * 中央面板：顯示所選變數的實際欄位和內容
-   * 可讓您編輯內容
-   * 如果 **索引標籤預留位置** 欄位會在模型內定義，並會顯示在這裡，且可用於導覽
+   * 允許您編輯內容
+   * 如果「**標籤預留位置**」欄位是在此處所示模型中定義，那麼這些欄位可用於導覽
 
 例如，片段可以：
 
-* 需要多個資訊片段，部分具有特定型別。 對於 Headless 內容，參考是關鍵 (歷程的後續部分將會說明)。
+* 需要多段資訊，其中有些是具有特定類型。對於 Headless 內容，參考是關鍵 (歷程的後續部分將會說明)。
 
-* 允許您寫入長文字區段。 這裡有用於管理和格式化文字的其他選項。您甚至可以在全螢幕編輯器中開啟各個文字欄位 (使用右側外觀像螢幕的小圖示)
+* 允許您撰寫一長段文字。這裡有用於管理和格式化文字的其他選項。您甚至可以在全螢幕編輯器中開啟各個文字欄位 (使用右側外觀像螢幕的小圖示)
 
 ![內容片段編輯器 - Alaska Spirits](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-overview.png)
 
@@ -240,7 +240,7 @@ You can view additional information about items using the Rail Selector. This al
 
 * **內容片段模型**
 
-  您會在編輯器的右側面板中看到內容片段模型的名稱。 這也是一個將您帶到模型編輯器的連結。
+  您將在編輯器右側面板中看到內容片段模型的名稱。這也是一個將您帶到模型編輯器的連結。
 內容片段模型實際上對您的內容片段至關重要，因為它們定義了您使用的結構。然而，建立和編輯模型 (通常) 是另一個角色的責任，即內容架構師。
 
   >[!NOTE]
@@ -313,7 +313,7 @@ You can view additional information about items using the Rail Selector. This al
 
       * [內容片段模型 - 允許內容片段模型在資產資料夾上](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#allowing-content-fragment-models-assets-folder)
 
-* [內容片段 — 原始編輯器，從「資產」主控台](/help/assets/content-fragments/content-fragments-variations.md)
+* [內容片段 - 來自資產主控台的原始編輯器](/help/assets/content-fragments/content-fragments-variations.md)
 
 * 快速入門指南
    * [建立資產資料夾 - Headless 設定](/help/headless/setup/create-assets-folder.md)
