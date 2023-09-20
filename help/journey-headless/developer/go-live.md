@@ -3,9 +3,9 @@ title: 如何將 Headless 應用程式上線
 description: 在 AEM Headless 開發人員歷程的這一部分中，了解如何從 Git 取出本機程式碼並移至 Cloud Manager Git 以用於 CI/CD 管道，藉此來部署 Headless 應用程式。
 exl-id: 81616e31-764b-44b0-94a6-3ae24ce56bf6
 source-git-commit: 94e5d0e84d5c55d0ff61a705e079b4dc8e32a777
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1093'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -130,9 +130,9 @@ ht-degree: 98%
 
 ## 其他資源 {#additional-resources}
 
-* [AEM as a Headless CMS簡介](/help/headless/introduction.md)
-* [AEM開發人員入口網站](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
-* [AEM中Headless的Tutorials](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)
+* [AEM as a Headless CMS 簡介](/help/headless/introduction.md)
+* [AEM 開發人員入口網站](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
+* [AEM 中的 Headless 教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)
 * [部署至 AEM as a Cloud Service 概觀](/help/implementing/deploying/overview.md)
 * [使用 Cloud Manager 部署您的程式碼](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html)
 * [將 Cloud Manager Git 存放庫與外部 Git 存放庫整合，並將專案部署到 AEM as a Cloud Service。](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/devops/deploy-code.html)
