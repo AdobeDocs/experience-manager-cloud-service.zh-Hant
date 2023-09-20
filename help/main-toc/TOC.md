@@ -8,10 +8,10 @@ user-guide-description: 了解 Experience Manager as a Cloud Service 的運作�
 breadcrumb-title: 使用手冊
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 1a40ed62c57bfa704abe0aad669d1c628416d35a
+source-git-commit: ce7b6922f92208c06f85afe85818574bf2bc8f6d
 workflow-type: tm+mt
-source-wordcount: '4291'
-ht-degree: 96%
+source-wordcount: '4293'
+ht-degree: 99%
 
 ---
 
@@ -166,7 +166,7 @@ ht-degree: 96%
    + [AEM as a Cloud Service 的 IMS 支援](/help/security/ims-support.md)
    + [AEM as a Cloud Service 的相同網站 Cookie 支援](/help/security/same-site-cookie-support.md)
    + [郵件服務的 OAuth2 支援](/help/security/oauth2-support-for-mail-service.md)
-   + [設定 CDN 和 WAF 規則以篩選流量](/help/security/cdn-and-waf-rules.md)
+   + [使用WAF規則設定流量篩選規則以篩選流量](/help/security/cdn-and-waf-rules.md)
    + [AEM as a Cloud Service 安全性注意事項](/help/security/security-considerations.md)
 + 上線 {#onboarding}
    + [從這裡開始](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html)
@@ -227,7 +227,7 @@ ht-degree: 96%
       + 內容轉移工具 {#content-transfer-tool}
          + [概觀](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md)
          + [內容轉移工具的先決條件](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md)
-         + [使用內容轉移工具的準則和最佳實務](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/guidelines-best-practices-content-transfer-tool.md)
+         + [使用內容轉移工具的準則和最佳做法](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/guidelines-best-practices-content-transfer-tool.md)
          + [內容轉移工具快速入門](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md)
          + [驗證內容轉移](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/validating-content-transfers.md)
          + [移轉關閉的使用者群組](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/closed-user-groups-migration.md)
@@ -321,12 +321,12 @@ ht-degree: 96%
          + [註冊、登入和使用者個人資料](/help/sites-cloud/authoring/personalization/user-and-group-sync-for-publish-tier.md)
    + 管理 {#administering}
       + 內容片段 {#content-fragments}
-         + [概覽和概念](/help/sites-cloud/administering/content-fragments/overview.md)
-         + [使用GraphQL進行Headless傳送](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md)
+         + [概觀和概念](/help/sites-cloud/administering/content-fragments/overview.md)
+         + [使用 GraphQL 的 Headless 傳遞](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md)
          + [內容片段設定](/help/sites-cloud/administering/content-fragments/setup.md)
          + [內容片段模型](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
          + [管理內容片段](/help/sites-cloud/administering/content-fragments/managing.md)
-         + [製作片段內容](/help/sites-cloud/administering/content-fragments/authoring.md)
+         + [編寫片段內容](/help/sites-cloud/administering/content-fragments/authoring.md)
          + [Markdown](/help/sites-cloud/administering/content-fragments/markdown.md)
          + [刪除考量事項](/help/sites-cloud/administering/content-fragments/delete-considerations.md)
          + [分析結構](/help/sites-cloud/administering/content-fragments/analysis.md)
@@ -368,7 +368,7 @@ ht-degree: 96%
             + [建立和同步 Live Copies](/help/sites-cloud/administering/msm/creating-live-copies.md)
             + [Live Copy 概觀主控台](/help/sites-cloud/administering/msm/live-copy-overview.md)
             + [轉出衝突](/help/sites-cloud/administering/msm/rollout-conflicts.md)
-            + [MSM 最佳實務](/help/sites-cloud/administering/msm/best-practices.md)
+            + [MSM 最佳做法](/help/sites-cloud/administering/msm/best-practices.md)
             + [疑難排解和常見問題 ](/help/sites-cloud/administering/msm/troubleshooting.md)
          + 轉換 {#translation}
             + Sites 翻譯歷程 {#sites}
@@ -387,7 +387,7 @@ ht-degree: 96%
             + [識別要翻譯的內容](/help/sites-cloud/administering/translation/rules.md)
             + [設定翻譯整合框架](/help/sites-cloud/administering/translation/integration-framework.md)
             + [連線到 Microsoft Translator](/help/sites-cloud/administering/translation/connect-ms-translator.md)
-            + [翻譯最佳實務](/help/sites-cloud/administering/translation/best-practices.md)
+            + [翻譯最佳做法](/help/sites-cloud/administering/translation/best-practices.md)
       + [管理標記](/help/sites-cloud/administering/tags.md)
       + [管理工作流程](/help/sites-cloud/administering/workflows-administering.md)
    + 整合 AEM as a Cloud Service {#integrations}
@@ -564,11 +564,11 @@ ht-degree: 96%
    + 設定和移轉{#setup-configure-migrate}
       + [Cloud Service 環境上線](/help/forms/setup-forms-cloud-service.md)
       + [設定本機開發環境](/help/forms/setup-local-development-environment.md)
-      + [在 AEM Forms as a Cloud Service 和本地開發環境中啟用最適化表單核心元件](/help/forms/enable-adaptive-forms-core-components.md)
+      + [在 AEM Forms as a Cloud Service 和本地開發環境中啟用調適型表單核心元件](/help/forms/enable-adaptive-forms-core-components.md)
       + [設定統一的儲存連接器](/help/forms/configure-unified-storage-connector.md)
       + [從  [!DNL AEM 6.5 Forms]  或更早版本移轉至  [!DNL AEM Forms] as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
       + [群組與權限](/help/forms/forms-groups-privileges-tasks.md)
-      + [匯入、匯出及組織最適化表單、PDF 表單和其他資產](/help/forms/import-export-forms-templates.md)
+      + [匯入、匯出及組織調適型表單、PDF 表單和其他資產](/help/forms/import-export-forms-templates.md)
    + 整合 {#integrate}
       + 服務 {#services}
          + [將 AEM Forms as a Cloud Service 與 Adobe Sign 整合](/help/forms/adobe-sign-integration-adaptive-forms.md)
@@ -576,9 +576,9 @@ ht-degree: 96%
          + [將 AEM Forms as a Cloud Service 與 Adobe Analytics 整合](/help/forms/integrate-aem-forms-with-adobe-analytics.md)
          + [將最適化Forms整合至Adobe Analytics](/help/forms/forms-experience-cloud-setup-automation.md)
          + [檢視和瞭解最適化Forms Analytics報告](/help/forms/view-understand-aem-forms-analytics-reports.md)
-         + [將最適化表單與 Microsoft Power Automate 整合](/help/forms/forms-microsoft-power-automate-integration.md)
-         + [在 AEM Sites 頁面中內嵌最適化表單](/help/forms/embed-adaptive-form-aem-sites.md)
-         + [根據核心元件將最適化表單內嵌到外部網頁](/help/forms/embed-adaptive-form-core-components-external-web-page.md)
+         + [將調適型表單與 Microsoft Power Automate 整合](/help/forms/forms-microsoft-power-automate-integration.md)
+         + [在 AEM Sites 頁面中內嵌調適型表單](/help/forms/embed-adaptive-form-aem-sites.md)
+         + [根據核心元件將調適性表單內嵌至外部網頁](/help/forms/embed-adaptive-form-core-components-external-web-page.md)
       + 表單資料模式 {#use-form-data-model}
          + [將資料來源連線到 Cloud Service](/help/forms/data-integration.md)
          + [設定資料來源](/help/forms/configure-data-sources.md)
@@ -589,63 +589,63 @@ ht-degree: 96%
          + [建立表單資料模型](/help/forms/create-form-data-models.md)
          + [處理表單資料模型](/help/forms/work-with-form-data-model.md)
          + [使用表單資料模型](/help/forms/using-form-data-model.md)
-   + 最適化表單 {#adaptive-forms-authoring}
-      + [建立最適化表單](/help/forms/create-an-adaptive-form.md)
-      + [新增最適化表單至 AEM Sites 頁面或體驗片段](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+   + 調適型表單 {#adaptive-forms-authoring}
+      + [建立調適型表單](/help/forms/create-an-adaptive-form.md)
+      + [新增調適型表單至 AEM Sites 頁面或體驗片段](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
       + 核心元件 {#authoring-adaptive-forms-core-components}
-         + 建立最適化表單{#create-an-adaptive-form-on-forms-cs}
-            + [建立最適化表單](/help/forms/creating-adaptive-form-core-components.md)
-            + [建立自適應表單片段](/help/forms/adaptive-form-fragments-core-components.md)
-            + [為最適化表單建立主題 - 核心元件](/help/forms/using-themes-in-core-components.md)
-            + [為最適化表單產生記錄文件](/help/forms/generate-document-of-record-core-components.md)
-            + [使用機器翻譯或人工翻譯來翻譯最適化表單](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
+         + 建立調適型表單{#create-an-adaptive-form-on-forms-cs}
+            + [建立調適型表單](/help/forms/creating-adaptive-form-core-components.md)
+            + [建立調適性表單片段](/help/forms/adaptive-form-fragments-core-components.md)
+            + [為調適型表單建立主題 - 核心元件](/help/forms/using-themes-in-core-components.md)
+            + [為調適型表單產生記錄文件](/help/forms/generate-document-of-record-core-components.md)
+            + [使用機器翻譯或人工翻譯來翻譯調適型表單](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
             + [設定重新導向頁面或感謝訊息](/help/forms/configure-redirect-page-or-thank-you-message.md)
             + [建立具有可重複區段的表單](/help/forms/create-forms-repeatable-sections.md)
-            + [為最適化表單設定提交動作](/help/forms/configure-submit-actions-core-components.md)
-            + [在最適化表單中使用 Google reCAPTCHA](/help/forms/captcha-adaptive-forms-core-components.md)
-            + [在最適化表單中新增自訂錯誤處理常式](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
-      + 基礎元件 {#authoring-adaptive-forms-foundation-components}
-         + 將您的 PDF forms 轉換為最適化表單 {#afcs}
+            + [為調適型表單設定提交動作](/help/forms/configure-submit-actions-core-components.md)
+            + [在調適型表單中使用 Google reCAPTCHA](/help/forms/captcha-adaptive-forms-core-components.md)
+            + [在調適性表單中新增自訂的錯誤處理常式](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
+      + Foundation 元件 {#authoring-adaptive-forms-foundation-components}
+         + 將您的 PDF forms 轉換為調適型表單 {#afcs}
             + [自動表單轉換服務簡介](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html)
-            + [將現有 PDF 表單轉換為最適化表單](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html)
+            + [將現有 PDF 表單轉換為調適型表單](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html)
             + [檢閱並修正轉換後的表單](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/review-correct-ui-edited.html#welcome-to-review-and-correct-editor)
-         + 建立最適化表單{#create-an-adaptive-form-on-forms-cs}
-            + [編寫最適化表單簡介](/help/forms/introduction-forms-authoring.md)
-            + [建立最適化表單](/help/forms/creating-adaptive-form.md)
+         + 建立調適型表單{#create-an-adaptive-form-on-forms-cs}
+            + [編寫調適型表單簡介](/help/forms/introduction-forms-authoring.md)
+            + [建立調適型表單](/help/forms/creating-adaptive-form.md)
             + [參考主題、範本和資料模型](/help/forms/reference-themes-templates-data-models.md)
             + [建立範例](/help/forms/template-editor.md)
             + [建立主題](/help/forms/themes.md)
-            + [為最適化表單設計 JSON 綱要](/help/forms/adaptive-form-json-schema-form-model.md)
+            + [為調適型表單設計 JSON 綱要](/help/forms/adaptive-form-json-schema-form-model.md)
             + [透過延遲載入改善大型表單的效能](/help/forms/lazy-loading-adaptive-forms.md)
-         + 將元件新增至最適化表單{#add-components-to-an-adaptive-form}
-            + [在最適化表單中使用驗證碼](/help/forms/captcha-adaptive-forms.md)
+         + 將元件新增至調適型表單{#add-components-to-an-adaptive-form}
+            + [在調適型表單中使用驗證碼](/help/forms/captcha-adaptive-forms.md)
             + [使用核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
             + [套用手寫簽名](/help/forms/signing-forms-using-scribble.md)
-            + [將表格新增至最適化表單](/help/forms/adaptive-forms-tables.md)
-            + [將註解支援新增至最適化表單](/help/forms/footnotes-richtextsupport.md)
-         + 設定版面並將樣式套用至最適化表單{#configure-layout-of-an-adaptive-form}
-            + [設定最適化表單的版面](/help/forms/layout-capabilities-adaptive-forms.md)
+            + [將表格新增至調適型表單](/help/forms/adaptive-forms-tables.md)
+            + [將註解支援新增至調適型表單](/help/forms/footnotes-richtextsupport.md)
+         + 設定版面並將樣式套用至調適型表單{#configure-layout-of-an-adaptive-form}
+            + [設定調適型表單的版面](/help/forms/layout-capabilities-adaptive-forms.md)
             + [使用版面模式調整元件大小](/help/forms/resize-using-layout-mode.md)
             + [建立多步驟資料擷取體驗](/help/forms/introduction-form-sequence.md)
-            + [將 CSS 內嵌樣式套用至個別的最適化表單元件](/help/forms/inline-style-adaptive-forms.md)
-         + 在最適化表單中新增規則和使用運算式{#add-rules-and-use-expressions-in-an-adaptive-form}
-            + [將規則新增至最適化表單](/help/forms/rule-editor.md)
+            + [將 CSS 內嵌樣式套用至個別的調適型表單元件](/help/forms/inline-style-adaptive-forms.md)
+         + 在調適型表單中新增規則和使用運算式{#add-rules-and-use-expressions-in-an-adaptive-form}
+            + [將規則新增至調適型表單](/help/forms/rule-editor.md)
             + [使用規則編輯器的叫用服務新增自訂錯誤處理常式](/help/forms/add-custom-error-handler-adaptive-forms.md)
          + 使用 [!DNL Adobe Sign] {#use-adobe-sign}
-            + [使用 Adobe Sign 在最適化表單上進行電子簽名](/help/forms/working-with-adobe-sign.md)
+            + [使用 Adobe Sign 在調適型表單上進行電子簽名](/help/forms/working-with-adobe-sign.md)
          + 設定提交動作和中繼資料提交{#configure-submit-actions-and-metadata-submission}
-            + [為最適化表單設定提交動作](/help/forms/configuring-submit-actions.md)
+            + [為調適型表單設定提交動作](/help/forms/configuring-submit-actions.md)
             + [設定重新導向頁面](/help/forms/configuring-redirect-page.md)
-            + [為最適化表單設定非同步提交](/help/forms/asynchronous-submissions-adaptive-forms.md)
+            + [為調適型表單設定非同步提交](/help/forms/asynchronous-submissions-adaptive-forms.md)
             + [建立自訂提交動作](/help/forms/custom-submit-action-form.md)
-         + [預填最適化表單欄位](/help/forms/prepopulate-adaptive-form-fields.md)
+         + [預填調適型表單欄位](/help/forms/prepopulate-adaptive-form-fields.md)
          + [產生記錄文件](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
-         + [將對新語言環境的支援新增至最適化表單](/help/forms/supporting-new-language-localization.md)
+         + [將對新語言環境的支援新增至調適型表單](/help/forms/supporting-new-language-localization.md)
          + 新增或改進中繼資料{#manage-metadata}
-            + [新增、移除或編輯最適化表單的中繼資料](/help/forms/manage-form-metadata.md)
-            + [重複使用最適化表單的中繼資料屬性](/help/forms/reusing-adaptive-forms.md)
-         + 改進最適化表單的協助工具功能{#accessible-adaptive-forms}
-            + [建立無障礙的最適化表單](/help/forms/creating-accessible-adaptive-forms.md)
+            + [新增、移除或編輯調適型表單的中繼資料](/help/forms/manage-form-metadata.md)
+            + [重複使用調適型表單的中繼資料屬性](/help/forms/reusing-adaptive-forms.md)
+         + 改進調適型表單的協助工具功能{#accessible-adaptive-forms}
+            + [建立無障礙的調適型表單](/help/forms/creating-accessible-adaptive-forms.md)
          + [設定表單入口網站](/help/forms/configure-forms-portal.md)
          + [建立和管理評論](/help/forms/create-reviews-forms.md)
    + 以 Forms 為中心的工作流程 {#create-form-centric-workflows}
@@ -659,9 +659,9 @@ ht-degree: 96%
       + [安裝及設定 Forms Designer](/help/forms/installing-configuring-designer.md)
       + [使用 Forms Designer 建立範本](/help/forms/use-forms-designer.md)
       + [在 PDF 文件中使用自訂字型](/help/forms/use-custom-fonts.md)
-      + [已知問題、最佳實務和常見問題集](/help/forms/communications-known-issues-limitations.md)
+      + [已知問題、最佳做法和常見問題集](/help/forms/communications-known-issues-limitations.md)
    + 開發人員 API 參考 {#aem-forms-developer-api-reference}
-      + [最適化表單 API 參考](https://developer-stage.adobe.com/experience-cloud/experience-manager-apis/api/stable/forms/)
+      + [調適型表單 API 參考](https://developer-stage.adobe.com/experience-cloud/experience-manager-apis/api/stable/forms/)
       + [AEM Forms as a Cloud Service 通訊 API 參考](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)
       + [AEM Forms as a Cloud Service JavaScript API 參考](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/jsdoc/aem-forms-cloud-service-jsdoc/index.html)
       + [AEM Forms as a Cloud Service Java API 參考](https://javadoc.io/doc/com.adobe.aem/aem-forms-sdk-api/latest/index.html)
@@ -757,7 +757,7 @@ ht-degree: 96%
       + [管理內容片段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/managing.html)
       + 編寫 {#authoring}
          + [編寫](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring.html)
-         + [Markdown編輯器](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html)
+         + [Markdown 編輯器](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html)
       + [樹狀結構](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html)
       + [JSON 預覽](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-json-preview.html)
    + GraphQL API{#graphql-api}
@@ -979,7 +979,7 @@ ht-degree: 96%
       + [自訂和擴充內容片段](/help/implementing/developing/extending/content-fragments-customizing.md)
       + [轉譯專用內容片段設定元件](/help/implementing/developing/extending/content-fragments-configuring-components-rendering.md)
       + [自訂內容片段主控台](/help/implementing/developing/extending/content-fragment-console-customizing.md)
-      + [自訂內容片段控制檯和編輯器](/help/implementing/developing/extending/content-fragments-console-and-editor.md)
+      + [自訂內容片段主控台和編輯器](/help/implementing/developing/extending/content-fragments-console-and-editor.md)
       + 管理搜尋表單 {#manage-search-forms}
          + [設定搜尋表單](/help/implementing/developing/extending/search-forms.md)
          + [設定收件匣搜尋篩選器](/help/implementing/developing/extending/configure-inbox-search-rail.md)
@@ -1027,7 +1027,7 @@ ht-degree: 96%
    + [自助服務還原](/help/operations/restore.md)
    + [非同步作業](/help/operations/asynchronous-jobs.md)
    + [移除一般 lucene 索引](/help/operations/removal-generic-lucene-index.md)
-   + [查詢和編製索引最佳實務](/help/operations/query-and-indexing-best-practices.md)
+   + [查詢和編製索引最佳做法](/help/operations/query-and-indexing-best-practices.md)
 + 合規性 {#compliance}
    + [AEM as a Cloud Service 合規性](/help/compliance/home.md)
    + 資料隱私權和保護整備 {#data-privacy}
