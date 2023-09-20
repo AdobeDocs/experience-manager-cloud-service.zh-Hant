@@ -3,15 +3,15 @@ title: AEM as a Headless CMS 內容模型 - 簡介
 description: 介紹使用 Adobe Experience Manager as a Cloud Service as a Headless CMS 的功能為您的專案建立內容模型。
 exl-id: 62061d73-6fdb-440b-a7dd-b0d530d49186
 source-git-commit: 03cf688168106f71f2df2511782be7c1f3cc0dae
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '749'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
 # AEM as a Headless CMS 內容模型 - 簡介 {#architect-headless-introduction}
 
-在 [AEM Headless 內容架構師歷程](overview.md) 的這一部分中，您可以學習必要的 (基本) 概念和術語，以了解如何使用 Adobe Experience Manager (AEM) as a Cloud Service as a Headless CMS 建立內容模型。
+在 [AEM Headless 內容架構師歷程](overview.md)的這一部分中，您可以學習必要的 (基本) 概念和術語，以了解如何使用 Adobe Experience Manager (AEM) as a Cloud Service as a Headless CMS 建立內容模型。
 
 此文件可協助您了解 Headless 內容傳遞、AEM 如何支援 Headless 以及如何建立 Headless 內容模型。閱讀本文件後，您應該：
 
@@ -82,8 +82,8 @@ Adobe Experience Manager (AEM) as a Cloud Service 可以使用 AEM GraphQL API �
    * [了解 CMS Headless 開發](/help/journey-headless/developer/learn-about.md)
    * [了解如何建立內容模型](/help/journey-headless/developer/model-your-content.md)
 
-* [AEM as a Headless CMS簡介](/help/headless/introduction.md)
+* [AEM as a Headless CMS 簡介](/help/headless/introduction.md)
 
-* [AEM開發人員入口網站](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
+* [AEM 開發人員入口網站](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
 
-* [AEM中Headless的Tutorials](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)
+* [AEM 中的 Headless 教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)
