@@ -3,9 +3,9 @@ title: 為 AEM as a Headless CMS 編寫內容 - 簡介
 description: 介紹使用 Adobe Experience Manager as a Cloud Service as a Headless CMS 的功能為您的專案編寫內容。
 exl-id: 065b00cb-a82d-4bcb-b2c9-44542cee6303
 source-git-commit: 94e5d0e84d5c55d0ff61a705e079b4dc8e32a777
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '691'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -77,15 +77,15 @@ Headless 是一個術語，用於描述能夠有效地將內容與內容在 Web 
 
 ## 其他資源 {#additional-resources}
 
-* [AEM as a Headless CMS簡介](/help/headless/introduction.md)
+* [AEM as a Headless CMS 簡介](/help/headless/introduction.md)
 
-* [AEM中Headless的Tutorials](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)
+* [AEM 中的 Headless 教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)
 
 * AEM Headless 開發人員歷程
    * [了解 CMS Headless 開發](/help/journey-headless/developer/learn-about.md)
    * [了解如何建立內容模型](/help/journey-headless/developer/model-your-content.md)
 
-* [AEM開發人員入口網站](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
+* [AEM 開發人員入口網站](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
 
 * [AEM Headless 內容架構師歷程](/help/journey-headless/architect/overview.md)
 
