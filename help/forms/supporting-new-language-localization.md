@@ -2,10 +2,10 @@
 title: 將對新語言環境的支援新增至調適型表單
 description: AEM Forms可讓您新增本地化最適化表單的地區設定。 英文(en)、西班牙文(es)、法文(fr)、義大利文(it)、德文(de)、日文(ja)、葡萄牙文 — 巴西(pt-BR)、中文(zh-CN)、中文 — 台灣(zh-TW)和韓文(ko-KR)地區。
 exl-id: 4c7d6caa-1adb-4663-933f-b09129b9baef
-source-git-commit: 9a1bb716256b5e820723911f4e78a6a4c69d940c
+source-git-commit: 23f915f0e2e33b9cf1313d15cb98a0a4f8243746
 workflow-type: tm+mt
-source-wordcount: '1251'
-ht-degree: 7%
+source-wordcount: '1259'
+ht-degree: 8%
 
 ---
 
@@ -17,6 +17,8 @@ ht-degree: 7%
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
 | AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/manage-administer-aem-forms/supporting-new-language-localization.html) |
+| 核心元件 | [按一下這裡](supporting-new-language-localization-core-components.md) |
+| Foundation 元件 | 本文章 |
 
 AEM Forms提供英文(en)、西班牙文(es)、法文(fr)、義大利文(it)、德文(de)、日文(ja)、葡萄牙文 — 巴西(pt-BR)、中文(zh-CN)、中文 — 台灣(zh-TW)和韓文(ko-KR)地區設定的立即可用支援。 您也可以新增對更多地區設定的支援，例如印地語(hi_IN)。
 

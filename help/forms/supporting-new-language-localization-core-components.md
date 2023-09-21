@@ -1,11 +1,10 @@
 ---
-title: 將對新語言環境的支援新增至調適型表單
-description: AEM Forms可讓您新增本地化最適化表單的地區設定。 英文(en)、西班牙文(es)、法文(fr)、義大利文(it)、德文(de)、日文(ja)、葡萄牙文 — 巴西(pt-BR)、中文(zh-CN)、中文 — 台灣(zh-TW)和韓文(ko-KR)地區。
-exl-id: 4c7d6caa-1adb-4663-933f-b09129b9baef
-source-git-commit: 9a1bb716256b5e820723911f4e78a6a4c69d940c
+title: 如何根據核心元件將新語言環境的支援新增至最適化表單？
+description: AEM Forms可讓您新增本地化最適化表單的地區設定。
+source-git-commit: 23f915f0e2e33b9cf1313d15cb98a0a4f8243746
 workflow-type: tm+mt
-source-wordcount: '1352'
-ht-degree: 4%
+source-wordcount: '1336'
+ht-degree: 3%
 
 ---
 
