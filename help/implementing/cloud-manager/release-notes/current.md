@@ -3,10 +3,10 @@ title: Adobe Experience Manager as a Cloud Service 中 Cloud Manager 2023.9.0 �
 description: 以下是 AEM as a Cloud Service 中 Cloud Manager 2023.9.0 的發行說明。
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: 8bf2ffe8b1d3780f4ad3f6972fea4f8281945abb
+source-git-commit: a5e8c11340ab5eacdefb22da302f9e35d9429bc7
 workflow-type: tm+mt
-source-wordcount: '438'
-ht-degree: 76%
+source-wordcount: '443'
+ht-degree: 75%
 
 ---
 
@@ -55,6 +55,6 @@ AEM as a Cloud Service 中的 Cloud Manager 版本 2023.9.0 發行日期是 2023
 
 ## 錯誤修正 {#bug-fixes}
 
-* 刪除程式時，也會刪除任何相關聯且正在執行的管道，以確保管道不會錯誤指定為失敗狀態。
-* 上線完成按鈕已停用，並通知使用者管道正在進行的原因。
-* 有時，當管道執行的所有步驟都是「已完成」時，管道的狀態會視為「執行中」，使其看起來像是處於卡住狀態。 它現在會視為「完成」。
+* 刪除程式時，現在也會刪除任何相關聯的執行中管道。
+* 如果管道正在進行中， **傳送** 的按鈕 **上線完成** 對話方塊現在已停用，並通知使用者由於執行中的管道而無法設定上線日期。
+* 已修正偶爾發生的錯誤，其中管道執行的所有步驟都標示為已完成，但管道的狀態仍在執行，看起來像是停滯狀態。
