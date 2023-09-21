@@ -1,7 +1,7 @@
 ---
 title: 如何根據核心元件將新語言環境的支援新增至最適化表單？
 description: AEM Forms可讓您新增本地化最適化表單的地區設定。
-source-git-commit: 23f915f0e2e33b9cf1313d15cb98a0a4f8243746
+source-git-commit: b643cdc9ebf57e164088e0dc3598e4e0d3ded267
 workflow-type: tm+mt
 source-wordcount: '1336'
 ht-degree: 3%
@@ -48,7 +48,7 @@ AEM FormsForms目前支援英文(en)、西班牙文(es)、法文(fr)、義大利
 
 ![新增地區設定至存放庫](add-a-locale-adaptive-form-core-components.png)
 
-### 1.複製您的AEMas a Cloud ServiceGit存放庫 {#clone-the-repository}
+### 複製您的AEMas a Cloud ServiceGit存放庫 {#clone-the-repository}
 
 1. 開啟命令列，然後選擇要儲存存放庫的目錄，例如 `/cloud-service-repository/`.
 
@@ -63,7 +63,7 @@ AEM FormsForms目前支援英文(en)、西班牙文(es)、法文(fr)、義大利
    成功完成命令後，資料夾 `<my-program>` 「 」已建立。 其中包含從Git存放庫複製的內容。 在文章的其餘部分，資料夾將改稱為 `[AEM Forms as a Cloud Service Git repostory]`.
 
 
-### 2.新增語言環境至「本地化指南」服務 {#add-a-locale-to-the-guide-localization-service}
+### 新增語言環境至指南本地化服務 {#add-a-locale-to-the-guide-localization-service}
 
 1. 以純文字編輯器開啟上一節複製的存放庫資料夾。
 1. 導覽至 `[AEM Forms as a Cloud Service Git repostory]/ui.config/src/main/content/jcr_root/apps/<appid>/osgiconfig/config` 檔案夾。您可找到 `<appid>` 在 `archetype.properties` 專案的檔案。
@@ -74,7 +74,7 @@ AEM FormsForms目前支援英文(en)、西班牙文(es)、法文(fr)、義大利
 1. 新增 [語言的區域設定代碼](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) 例如，您想要新增北印度語的「hi」。
 1. 儲存並關閉檔案。
 
-### 3.建立使用者端資料庫以新增地區設定
+### 建立使用者端資料庫以新增地區設定
 
 AEM Forms提供範例使用者端資料庫，協助您輕鬆新增地區設定。 您可以下載並新增 `clientlib-it-custom-locale` 使用者端資料庫從GitHub上的最適化Forms核心元件存放庫移至您的Formsas a Cloud Service存放庫。 若要新增使用者端程式庫，請執行下列步驟：
 
@@ -84,7 +84,7 @@ AEM Forms提供範例使用者端資料庫，協助您輕鬆新增地區設定�
 1. 瀏覽至 `[AEM Forms as a Cloud Service Git repostory]/ui.apps/src/main/content/jcr_root/apps/moonlightprodprogram/clientlibs` 並貼上 `clientlib-it-custom-locale` 目錄。
 
 
-### 4.建立特定地區設定的檔案 {#locale-specific-file}
+### 建立特定地區設定的檔案 {#locale-specific-file}
 
 1. 瀏覽到 `[AEM Forms as a Cloud Service Git repostory]/ui.apps/src/main/content/jcr_root/apps/<program-id>/clientlibs/clientlib-it-custom-locale/resources/i18n/`
 1. 找到 [GitHub上的英文地區設定.json檔案](https://github.com/adobe/aem-core-forms-components/blob/master/ui.af.apps/src/main/content/jcr_root/apps/core/fd/af-clientlibs/core-forms-components-runtime-all/resources/i18n/en.json)，其中包含產品所包含的最新預設字串集。
@@ -94,7 +94,7 @@ AEM Forms提供範例使用者端資料庫，協助您輕鬆新增地區設定�
 1. 儲存並關閉檔案。
 
 
-### 4.新增地區設定支援至字典 {#add-locale-support-for-the-dictionary}
+### 新增地區設定支援至字典 {#add-locale-support-for-the-dictionary}
 
 只有在 `<locale>` 您新增的內容不屬於 `en`， `de`， `es`， `fr`， `it`， `pt-br`， `zh-cn`， `zh-tw`， `ja`， `ko-kr`.
 
@@ -133,7 +133,7 @@ AEM Forms提供範例使用者端資料庫，協助您輕鬆新增地區設定�
 
    ![將新建立的資料夾新增至 `filter.xml` 在 `/ui.content/src/main/content/meta-inf/vault/filter.xml`](langauge-filter.png)
 
-### 5.提交變更並部署管道 {#commit-changes-in-repo-deploy-pipeline}
+### 提交變更並部署管道 {#commit-changes-in-repo-deploy-pipeline}
 
 在新增地區設定支援後，將變更提交到GIT存放庫。 使用完整棧疊管道部署您的計畫碼。 瞭解 [如何設定管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline) 以新增地區設定支援。
 管道完成後，新新增的地區設定會顯示在AEM環境中。
