@@ -1,11 +1,11 @@
 ---
-title: 將對新語言環境的支援新增至最適化表單
+title: 將對新語言環境的支援新增至調適型表單
 description: AEM Forms可讓您新增本地化最適化表單的地區設定。 英文(en)、西班牙文(es)、法文(fr)、義大利文(it)、德文(de)、日文(ja)、葡萄牙文 — 巴西(pt-BR)、中文(zh-CN)、中文 — 台灣(zh-TW)和韓文(ko-KR)地區。
 exl-id: 4c7d6caa-1adb-4663-933f-b09129b9baef
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 9a1bb716256b5e820723911f4e78a6a4c69d940c
 workflow-type: tm+mt
-source-wordcount: '1266'
-ht-degree: 6%
+source-wordcount: '1251'
+ht-degree: 7%
 
 ---
 
@@ -17,7 +17,6 @@ ht-degree: 6%
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
 | AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/manage-administer-aem-forms/supporting-new-language-localization.html) |
-| AEM as a Cloud Service  | 本文章 |
 
 AEM Forms提供英文(en)、西班牙文(es)、法文(fr)、義大利文(it)、德文(de)、日文(ja)、葡萄牙文 — 巴西(pt-BR)、中文(zh-CN)、中文 — 台灣(zh-TW)和韓文(ko-KR)地區設定的立即可用支援。 您也可以新增對更多地區設定的支援，例如印地語(hi_IN)。
 
@@ -31,7 +30,7 @@ AEM Forms提供英文(en)、西班牙文(es)、法文(fr)、義大利文(it)、�
 
 ## 新增新地區設定的支援 {#add-support-for-new-locales}
 
-執行以下步驟來新增新地區設定的支援：
+執行以下步驟來新增對地區設定的支援：
 
 1. [新增不支援地區設定的本地化支援](#add-localization-support-for-non-supported-locales)
 1. [在最適化Forms中使用新增的地區設定](#use-added-locale-in-af)
@@ -40,7 +39,7 @@ AEM Forms提供英文(en)、西班牙文(es)、法文(fr)、義大利文(it)、�
 
 AEM FormsForms目前支援英文(en)、西班牙文(es)、法文(fr)、義大利文(it)、德文(de)、日文(ja)、巴西葡萄牙文(pt-BR)、中文(zh-CN)、中文 — 台灣(zh-TW)和韓文(ko-KR)本地化內容。
 
-若要在Adaptive Forms執行階段新增對新地區設定的支援：
+若要新增對地區設定的支援：
 
 1. [複製您的存放庫](#clone-the-repository)
 1. [新增語言環境至GuideLocalizationService服務](#add-a-locale-to-the-guide-localization-service)
@@ -112,7 +111,7 @@ AEM FormsForms目前支援英文(en)、西班牙文(es)、法文(fr)、義大利
 
 #### 5.認可存放庫中的變更並部署管道 {#commit-changes-in-repo-deploy-pipeline}
 
-在新增地區設定支援後，將變更提交到GIT存放庫。 使用完整棧疊管道部署您的計畫碼。 瞭解 [如何設定管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline) 以新增地區設定支援。
+新增地區設定支援後，將變更提交到GIT存放庫。 使用完整棧疊管道部署您的計畫碼。 瞭解 [如何設定管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline) 以新增地區設定支援。
 管道完成後，新新增的地區設定會顯示在AEM環境中。
 
 ### 在最適化Forms中使用新增的地區設定 {#use-added-locale-in-af}
