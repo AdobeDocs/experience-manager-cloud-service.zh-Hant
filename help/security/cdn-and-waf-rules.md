@@ -1,7 +1,7 @@
 ---
-title: 設定流量篩選規則（使用WAF規則）
-description: 使用流量篩選規則（搭配WAF規則）來篩選流量
-source-git-commit: b1b184b63ab6cdeb8a4e0019c31a34db59438a3d
+title: 使用WAF規則設定流量篩選規則
+description: 使用流量篩選規則搭配WAF規則來篩選流量
+source-git-commit: ce7b6922f92208c06f85afe85818574bf2bc8f6d
 workflow-type: tm+mt
 source-wordcount: '2709'
 ht-degree: 70%
@@ -9,7 +9,7 @@ ht-degree: 70%
 ---
 
 
-# 設定流量篩選規則（使用WAF規則）以篩選流量 {#configuring-cdn-and-waf-rules-to-filter-traffic}
+# 使用WAF規則設定流量篩選規則以篩選流量 {#configuring-cdn-and-waf-rules-to-filter-traffic}
 
 >[!NOTE]
 >
