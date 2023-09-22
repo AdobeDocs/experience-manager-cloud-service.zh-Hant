@@ -1,10 +1,10 @@
 ---
 title: 如何根據核心元件將新語言環境的支援新增至最適化表單？
 description: AEM Forms可讓您新增本地化最適化表單的地區設定。
-source-git-commit: b643cdc9ebf57e164088e0dc3598e4e0d3ded267
+source-git-commit: 0a1310290c25a94ffe6f95ea6403105475ef5dda
 workflow-type: tm+mt
-source-wordcount: '1336'
-ht-degree: 3%
+source-wordcount: '1079'
+ht-degree: 4%
 
 ---
 
@@ -16,15 +16,20 @@ ht-degree: 3%
 | Foundation 元件 | [按一下這裡](supporting-new-language-localization.md) |
 | 核心元件 | 本文章 |
 
-AEM Forms提供英文(en)、西班牙文(es)、法文(fr)、義大利文(it)、德文(de)、日文(ja)、葡萄牙文 — 巴西(pt-BR)、中文(zh-CN)、中文 — 台灣(zh-TW)和韓文(ko-KR)地區設定的立即可用支援。 您也可以新增對更多地區設定的支援，例如印地語(hi_IN)。
+AEM Forms提供英文(en)、西班牙文(es)、法文(fr)、義大利文(it)、德文(de)、日文(ja)、葡萄牙文 — 巴西(pt-BR)、中文(zh-CN)、中文 — 台灣(zh-TW)和韓文(ko-KR)地區設定的立即可用支援。
 
-## 瞭解地區設定字典 {#about-locale-dictionaries}
+您也可以新增對更多地區設定的支援，例如印地語(hi_IN)。
 
-最適化表單本地化依賴兩種型別的地區詞典：
+<!-- 
+## Understanding locale dictionaries {#about-locale-dictionaries}
 
-* **表單特定字典** 包含最適化表單中使用的字串。 例如，標籤、欄位名稱、錯誤訊息、說明說明。 它作為每個地區設定的一組XLIFF檔案進行管理，您可以在以下位置存取它： `[author-instance]/libs/cq/i18n/gui/translator.html`.
+The localization of adaptive forms relies on two types of locale dictionaries:
 
-* **全域字典** AEM使用者端資料庫中有兩個全域字典，以JSON物件形式管理。 這些字典包含預設錯誤訊息、月份名稱、貨幣符號、日期和時間模式等。 這些字典位於 `[author-instance]/libs/fd/xfaforms/clientlibs/I18N`. 這些位置包含每個地區設定的個別資料夾。 由於全域字典不經常更新，因此針對每個地區設定保留個別的JavaScript檔案，可讓瀏覽器在存取相同伺服器上的不同最適化表單時，快取檔案並降低網路頻寬使用量。
+*   **Form-specific dictionary** Contains strings used in adaptive forms. For example, labels, field names, error messages, help descriptions. It is managed as a set of XLIFF files for each locale and you can access it at `[AEM Forms as a Cloud Service Author instance]/libs/cq/i18n/gui/translator.html`.
+
+*   **Global dictionaries** There are two global dictionaries, managed as JSON objects, in AEM client library. These dictionaries contain default error messages, month names, currency symbols, date and time patterns, and so on.  These locations contain separate folders for each locale. Because global dictionaries are not updated frequently, keeping separate JavaScript files for each locale enables browsers to cache them and reduce network bandwidth usage when accessing different adaptive forms on same server.
+
+-->
 
 ## 先決條件 {#prerequistes}
 
@@ -44,7 +49,7 @@ AEM Forms提供英文(en)、西班牙文(es)、法文(fr)、義大利文(it)、�
 
 ## 新增地區 {#add-localization-support-for-non-supported-locales}
 
-AEM FormsForms目前支援英文(en)、西班牙文(es)、法文(fr)、義大利文(it)、德文(de)、日文(ja)、巴西葡萄牙文(pt-BR)、中文(zh-CN)、中文 — 台灣(zh-TW)和韓文(ko-KR)本地化內容。 若要在Adaptive Forms執行階段新增對新地區設定的支援，請遵循下列步驟：
+若要新增新地區設定的支援，請遵循下列步驟：
 
 ![新增地區設定至存放庫](add-a-locale-adaptive-form-core-components.png)
 
@@ -136,13 +141,14 @@ AEM Forms提供範例使用者端資料庫，協助您輕鬆新增地區設定�
 ### 提交變更並部署管道 {#commit-changes-in-repo-deploy-pipeline}
 
 在新增地區設定支援後，將變更提交到GIT存放庫。 使用完整棧疊管道部署您的計畫碼。 瞭解 [如何設定管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline) 以新增地區設定支援。
-管道完成後，新新增的地區設定會顯示在AEM環境中。
 
-## 在最適化Forms中使用新增的地區設定 {#use-added-locale-in-af}
+管道執行成功後，新新增的地區設定即可使用。
 
-執行以下步驟，使用新新增的地區設定來使用和轉譯調適型表單：
+## 預覽具有新增地區設定的最適化表單 {#use-added-locale-in-af}
 
-1. 登入您的AEM作者執行個體。
+執行以下步驟，以預覽具有新新增地區設定的最適化：
+
+1. 登入您的AEM Formsas a Cloud Service執行個體。
 1. 前往 **Forms** >  **Forms與檔案**.
 1. 選取最適化表單並按一下 **新增字典** 和 **新增字典至翻譯專案** 精靈出現。
 1. 指定 **專案標題** 並選取 **目標語言** 從「 」的下拉式功能表 **新增字典至翻譯專案** 精靈。
@@ -153,7 +159,7 @@ AEM Forms提供範例使用者端資料庫，協助您輕鬆新增地區設定�
 
 有兩種方法可識別調適型表單的地區設定。 轉譯適用性表單時，會透過以下方式識別請求的地區設定：
 
-* 正在擷取 `[local]` 最適化表單URL中的選取器。 URL 的格式是：`http://host:[port]/content/forms/af/[afName].[locale].html?wcmmode=disabled`。使用 `[local]` 選擇器允許快取最適化表單。
+* 正在擷取 `[local]` 最適化表單URL中的選取器。 URL 的格式是：`http:/[AEM Forms Server URL]/content/forms/af/[afName].[locale].html?wcmmode=disabled`。使用 `[local]` 選擇器允許快取最適化表單。
 
 * 正在以列出的順序擷取下列引數：
 
@@ -165,17 +171,18 @@ AEM Forms提供範例使用者端資料庫，協助您輕鬆新增地區設定�
 
 如果要求的地區設定的使用者端程式庫不存在，它會檢查地區設定中存在的語言代碼的使用者端程式庫。 例如，如果要求的地區設定為 `en_ZA` （南非英文）和的客戶資料庫 `en_ZA` 不存在，調適型表單會將使用者端程式庫用於 `en` （英文）語言（如果有的話）。 但是，如果兩者都不存在，則最適化表單會將該字典用於 `en` 地區設定。
 
-
 地區設定一經識別，「最適化表單」就會挑選表單專屬的字典。 如果找不到所要求地區設定的表單特定字典，則會使用用於編寫最適化表單的語言的字典。
 
-如果沒有可用的地區設定資訊，最適化表單將會以其原始語言顯示，原始語言是開發期間使用的語言。
+如果沒有可用的地區設定資訊，最適化表單會以其原始語言（在表單開發期間使用的語言）顯示。
 
-Get [範例使用者端資源庫](/help/forms/assets/locale-support-sample.zip) 以新增新地區設定的支援。 您需要以所需的地區設定變更資料夾的內容。
+<!--
+Get [sample client library](/help/forms/assets/locale-support-sample.zip) to add support for new locale. You need to change the content of the folder in the required locale.
 
-## 支援新本地化的最佳實務 {#best-practices}
+## Best Practices to support for new localization {#best-practices}
 
-* Adobe建議您在建立最適化表單之後建立翻譯專案。
+*   Adobe recommends creating a translation project after creating an Adaptive Form.
 
-* 在現有的最適化表單中新增欄位時：
-   * **針對機器翻譯**：重新建立字典並執行翻譯專案。 建立翻譯專案後新增至最適化表單的欄位仍維持未翻譯狀態。
-   * **針對人工翻譯**：透過匯出字典 `[server:port]/libs/cq/i18n/gui/translator.html`. 更新新新增欄位的字典並上傳。
+*   When new fields are added in an existing Adaptive Form:
+    * **For machine translation**: Re-create the dictionary and run the translation project. Fields added to an Adaptive Form after creating a translation project remain untranslated. 
+    * **For human translation**: Export the dictionary through `[server:port]/libs/cq/i18n/gui/translator.html`. Update the dictionary for the newly added fields and upload it.
+-->
