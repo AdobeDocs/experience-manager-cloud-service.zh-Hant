@@ -1,9 +1,9 @@
 ---
 title: 如何根據核心元件為最適化表單新增地區設定的支援？
 description: 瞭解如何為最適化表單新增地區設定。
-source-git-commit: 2a738d17b1e2f46c06828512ee07c1c20f35596c
+source-git-commit: 4e48e49fea66fa24052632138a1b305208690d06
 workflow-type: tm+mt
-source-wordcount: '1449'
+source-wordcount: '1484'
 ht-degree: 3%
 
 ---
@@ -16,12 +16,11 @@ ht-degree: 3%
 | Foundation 元件 | [按一下這裡](supporting-new-language-localization.md) |
 | 核心元件 | 本文章 |
 
-AEM Forms提供英文(en)、西班牙文(es)、法文(fr)、義大利文(it)、德文(de)、日文(ja)、葡萄牙文 — 巴西(pt-BR)、中文(zh-CN)、中文 — 台灣(zh-TW)和韓文(ko-KR)地區設定的立即可用支援。
+AEM Forms提供英文(en)、西班牙文(es)、法文(fr)、義大利文(it)、德文(de)、日文(ja)、葡萄牙文 — 巴西(pt-BR)、中文(zh-CN)、中文 — 台灣(zh-TW)和韓文(ko-KR)地區設定的立即可用支援。 您也可以新增對更多地區設定的支援，例如印地語(hi_IN)。
 
 ## 如何為最適化表單選取地區設定？
 
-
-有兩種方法可以在最適化表單呈現時識別及選取其地區設定：
+開始為最適化Forms新增地區設定之前，請先瞭解如何為最適化表單選取地區設定。 有兩種方法可以在最適化表單呈現時識別及選取其地區設定：
 
 * **使用 [地區設定] URL中的選取器**：呈現最適化表單時，系統會透過檢查 [地區設定] 最適化表單URL中的選取器。 URL格式如下： http:/[AEM Forms伺服器URL]/content/forms/af/[afName].[地區設定].html？wcmmode=disabled. 使用 [地區設定] 選擇器允許快取最適化表單。
 
