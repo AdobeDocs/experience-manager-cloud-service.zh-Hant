@@ -1,9 +1,9 @@
 ---
 title: 如何根據核心元件為最適化表單新增地區設定的支援？
 description: 瞭解如何為最適化表單新增地區設定。
-source-git-commit: 4e48e49fea66fa24052632138a1b305208690d06
+source-git-commit: 911b377edd4eb0c8793d500c26ca44a44c69e167
 workflow-type: tm+mt
-source-wordcount: '1484'
+source-wordcount: '1254'
 ht-degree: 3%
 
 ---
@@ -163,25 +163,6 @@ AEM Forms提供範例使用者端資料庫，協助您輕鬆新增地區設定�
 1. 選取最適化表單並按一下 **以HTML預覽**.
 1. 新增 `&afAcceptLang=<locale-name>` 在最適化表單的URL中。
 1. 重新整理頁面，最適化表單會以指定的地區設定呈現。
-
-有兩種方法可識別調適型表單的地區設定。 轉譯適用性表單時，會透過以下方式識別請求的地區設定：
-
-* 正在擷取 `[local]` 最適化表單URL中的選取器。 URL 的格式是：`http:/[AEM Forms Server URL]/content/forms/af/[afName].[locale].html?wcmmode=disabled`。使用 `[local]` 選擇器允許快取最適化表單。
-
-* 正在以列出的順序擷取下列引數：
-
-   * 要求引數 `afAcceptLang`
-若要覆寫使用者的瀏覽器地區設定，您可以傳遞 `afAcceptLang` 要求引數以強制地區設定。 例如，下列URL會強制以加拿大法文地區設定來轉譯表單：
-     `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ca-fr`
-
-   * 為使用者設定的瀏覽器地區設定，該設定是在使用 `Accept-Language` 標頭。
-
-如果要求的地區設定的使用者端程式庫不存在，它會檢查地區設定中存在的語言代碼的使用者端程式庫。 例如，如果要求的地區設定為 `en_ZA` （南非英文）和的客戶資料庫 `en_ZA` 不存在，調適型表單會將使用者端程式庫用於 `en` （英文）語言（如果有的話）。 但是，如果兩者都不存在，則最適化表單會將該字典用於 `en` 地區設定。
-
-地區設定一經識別，「最適化表單」就會挑選表單專屬的字典。 如果找不到所要求地區設定的表單特定字典，則會使用用於編寫最適化表單的語言的字典。
-
-如果沒有可用的地區設定資訊，最適化表單會以其原始語言（在表單開發期間使用的語言）顯示。
-
 
 ## 支援新本地化的最佳實務 {#best-practices}
 
