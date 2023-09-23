@@ -1,10 +1,10 @@
 ---
 title: 如何根據核心元件為最適化表單新增地區設定的支援？
 description: 瞭解如何為最適化表單新增地區設定。
-source-git-commit: 911b377edd4eb0c8793d500c26ca44a44c69e167
+source-git-commit: 0d2e353208e4e59296d551ca5270be06e574f7df
 workflow-type: tm+mt
-source-wordcount: '1254'
-ht-degree: 3%
+source-wordcount: '1339'
+ht-degree: 4%
 
 ---
 
@@ -22,15 +22,15 @@ AEM Forms提供英文(en)、西班牙文(es)、法文(fr)、義大利文(it)、�
 
 開始為最適化Forms新增地區設定之前，請先瞭解如何為最適化表單選取地區設定。 有兩種方法可以在最適化表單呈現時識別及選取其地區設定：
 
-* **使用 [地區設定] URL中的選取器**：呈現最適化表單時，系統會透過檢查 [地區設定] 最適化表單URL中的選取器。 URL格式如下： http:/[AEM Forms伺服器URL]/content/forms/af/[afName].[地區設定].html？wcmmode=disabled. 使用 [地區設定] 選擇器允許快取最適化表單。
+* **使用 `locale` URL中的選取器**：呈現最適化表單時，系統會透過檢查 [地區設定] 最適化表單URL中的選取器。 URL格式如下： http:/[AEM Forms伺服器URL]/content/forms/af/[afName].[地區設定].html？wcmmode=disabled. 使用 [地區設定] 選擇器允許快取最適化表單。 例如，URL `www.example.com/content/forms/af/contact-us.hi.html?wcmmmode=disabled` 以印地語呈現表單。
 
 * 正在以下列順序擷取引數：
 
-   * **要求引數`afAcceptLang`**：若要覆寫使用者的瀏覽器地區設定，您可以傳遞afAcceptLang請求引數。 例如，此URL會強制以加拿大法文地區設定來轉譯表單： `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ca-fr`.
+   * **使用 `afAcceptLang`請求引數**：若要覆寫使用者的瀏覽器地區設定，您可以傳遞afAcceptLang請求引數。 例如， `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ca-fr` URL強制AEM Forms伺服器以加拿大法文地區設定轉譯表單。
 
-   * **瀏覽器地區設定（Accept-Language標頭）**：系統也會考量使用者的瀏覽器地區設定，該設定是使用於請求中指定的 `Accept-Language` 標頭。
+   * **使用瀏覽器地區設定（Accept-Language標頭）**：系統也會考量使用者的瀏覽器地區設定，該設定是使用於請求中指定的 `Accept-Language` 標頭。
 
-  如果所要求地區設定的使用者端程式庫無法使用，系統會檢查地區設定內是否有語言代碼的使用者端程式庫存在。 例如，如果要求的地區設定為 `en_ZA` （南非英文），而且沒有客戶資料庫 `en_ZA`，則最適化表單會使用en （英文）的使用者端資料庫（如有）。 如果兩者都找不到，則最適化表單會為以下專案訴諸字典： `en` 地區設定。
+  如果無法取得所要求地區設定的使用者端程式庫（本文稍後會介紹建立及使用程式庫的程式），則系統會檢查地區設定內是否有語言程式碼的使用者端程式庫。 例如，如果要求的地區設定為 `en_ZA` （南非英文），而且沒有客戶資料庫 `en_ZA`，則最適化表單會使用en （英文）的使用者端資料庫（如有）。 如果兩者都找不到，則最適化表單會為以下專案訴諸字典： `en` 地區設定。
 
   地區設定一經識別，最適化表單就會選取對應的表單特定字典。 如果找不到所要求地區設定的字典，則預設為使用製作最適化表單時所用語言的字典。
 
@@ -39,9 +39,9 @@ AEM Forms提供英文(en)、西班牙文(es)、法文(fr)、義大利文(it)、�
 
 ## 先決條件 {#prerequistes}
 
-在您開始新增新地區設定的支援之前，
+開始新增地區設定之前：
 
-* 安裝純文字編輯器(IDE)以更輕鬆進行編輯。 本檔案中的範例是根據Microsoft® Visual Studio Code。
+* 安裝純文字編輯器(IDE)以更輕鬆進行編輯。 本檔案中的範例是根據 [Microsoft® Visual Studio Code](https://code.visualstudio.com/download).
 * 安裝版本 [Git](https://git-scm.com)，若您的電腦沒有提供。
 * 原地複製 [最適化Forms核心元件](https://github.com/adobe/aem-core-forms-components) 存放庫。 複製存放庫：
    1. 開啟命令列或終端機視窗，並導覽至存放庫的位置。 例如 `/adaptive-forms-core-components`
@@ -51,7 +51,9 @@ AEM Forms提供英文(en)、西班牙文(es)、法文(fr)、義大利文(it)、�
           git clone https://github.com/adobe/aem-core-forms-components.git
       ```
 
-  存放庫包含新增地區設定所需的使用者端資料庫。 在文章的其餘部分，資料夾將改稱為 [最適化Forms核心元件存放庫].
+  存放庫包含新增地區設定所需的使用者端資料庫。
+
+  成功執行命令時，存放庫會複製到 `aem-core-forms-components` 資料夾。 在文章的其餘部分，資料夾將改名為， [最適化Forms核心元件存放庫].
 
 
 ## 新增地區 {#add-localization-support-for-non-supported-locales}
@@ -169,7 +171,13 @@ AEM Forms提供範例使用者端資料庫，協助您輕鬆新增地區設定�
 * Adobe建議您在建立最適化表單之後建立翻譯專案。
 
 * 在現有的最適化表單中新增欄位時：
-   * **針對機器翻譯**：重新建立字典並執行翻譯專案。 建立翻譯專案後新增至最適化表單的欄位仍維持未翻譯狀態。
-   * **針對人工翻譯**：透過匯出字典 `[server:port]/libs/cq/i18n/gui/translator.html`. 更新新新增欄位的字典並上傳。
+   * **針對機器翻譯**：重新建立字典及 [執行翻譯專案](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md). 建立翻譯專案後新增至最適化表單的欄位仍維持未翻譯狀態。
+   * **針對人工翻譯**：使用位於的UI匯出字典 `[AEM Forms Server]/libs/cq/i18n/gui/translator.html`. 更新新新增欄位的字典並上傳。
+
+## 檢視更多
+
+* [使用機器翻譯或人工翻譯來翻譯以核心元件為基礎的最適化表單](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
+* [產生最適化Forms的記錄檔案](/help/forms/generate-document-of-record-core-components.md)
+* [新增調適型表單至 AEM Sites 頁面或體驗片段](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
 
 
