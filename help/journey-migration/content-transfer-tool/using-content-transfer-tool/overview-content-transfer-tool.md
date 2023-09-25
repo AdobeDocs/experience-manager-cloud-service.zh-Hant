@@ -2,7 +2,7 @@
 title: 內容轉移工具綜覽
 description: 瞭解如何使用內容轉移工具將內容從內部部署AEM例項轉移到AEMas a Cloud Service
 exl-id: cfc0366a-2139-4d9d-b5bc-0b65bef4013c
-source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
+source-git-commit: 9c45a46bc50625301529d5433c78fc9c706f8071
 workflow-type: tm+mt
 source-wordcount: '664'
 ht-degree: 40%
@@ -47,7 +47,7 @@ ht-degree: 40%
 
 移轉集有下列屬性：
 
-* 有了新版本，您可以在使用Cloud Acceleration Manager建立的專案中建立最多五個移轉集。
+* 有了新版本，您可以在Cloud Acceleration Manager中建立的專案中最多建立20個移轉集。
 * 每個移轉集的名稱必須是唯一的。
 
 「內容轉移工具」具備支援追加差異內容的功能，可以只轉移在上一次內容轉移活動後所進行的變更。
