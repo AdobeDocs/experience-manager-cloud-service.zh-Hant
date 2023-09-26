@@ -3,10 +3,10 @@ title: 編寫內容片段
 description: 瞭解如何為內容片段製作內容，然後根據用途建立該內容的變體。 這為Headless傳送和頁面製作增加了靈活性。
 feature: Content Fragments
 role: User, Developer, Architect
-source-git-commit: 3d20f4bca566edcdb5f13eab581c33b7f3cf286d
+source-git-commit: 2fa22bf2feb6b8697877b345bc29821e30b1c6a1
 workflow-type: tm+mt
-source-wordcount: '2208'
-ht-degree: 2%
+source-wordcount: '2227'
+ht-degree: 7%
 
 ---
 
@@ -54,21 +54,21 @@ ht-degree: 2%
 
 第一次開啟內容片段編輯器時，您會看到四個主要區域：
 
-* 頂端工具列：主要資訊和動作
-   * 內容片段控制檯的連結（首頁圖示）
-   * 有關模型和資料夾的資訊
+* 頂端工具列：用於關鍵資訊和動作
+   * 內容片段主控台的連結 (首頁圖示)
+   * 有關模型和檔案夾的資訊
    * 連結至 [預覽（如果為模型設定了「預設預覽URL模式」）](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#content-fragment-model-properties)
    * [發佈](#publish-content-fragment)、和 [取消發佈](#unpublish-content-fragment) 動作
-   * 顯示全部的選項 **父引用** （連結圖示）
-   * 片段 **[狀態](/help/sites-cloud/administering/content-fragments/managing.md#statuses-content-fragments)**&#x200B;和上次儲存的資訊
-   * 切換至原始（資產型）編輯器的切換按鈕
-* 左側面板：顯示 **[變數](#variations)** 用於內容片段及其 **欄位**：
+   * 顯示全部&#x200B;**父參考內容**&#x200B;的選項 (連結圖示)
+   * **[狀態](/help/sites-cloud/administering/content-fragments/managing.md#statuses-content-fragments)**&#x200B;片段，以及最後儲存的資訊
+   * 用來切換至原始 (以資產為主) 編輯器的切換開關
+* 左面板：顯示內容片段的&#x200B;**[變數](#variations)**&#x200B;及其&#x200B;**欄位**：
    * 這些連結可用於 [導覽內容片段結構](#navigate-structure)
 * 右側面板：顯示索引標籤 [顯示屬性（中繼資料）和標籤](#view-properties-tags)，此資訊關於 [版本記錄](#view-version-history)，以及與任何專案相關的資訊 [語言副本](#view-language-copies)
-   * 在 **屬性** 標籤您可以更新 **標題** 和 **說明** 針對片段，或 **變數**
+   * 在「**屬性**」標籤中，您可以更新片段的「**標題**」和「**說明**」，或者更新「**變數**」
 * 中央面板：顯示所選變數的實際欄位和內容
-   * 可讓您編輯內容
-   * 如果 **索引標籤預留位置** 欄位是在模型內定義，顯示於此處，且可用於導覽；欄位可水準顯示，或作為下拉式清單顯示
+   * 允許您編輯內容
+   * 如果「**標籤預留位置**」欄位是在此處所示模型中定義，那麼這些欄位可用於導覽；它們會水準顯示或作為下拉式清單顯示
 
 ![內容片段編輯器 — 概觀](assets/cf-authoring-overview.png)
 
@@ -484,7 +484,7 @@ ht-degree: 2%
    <td><p> <img src="assets/cf-authoring-json-icon.png"> </p></td>
   </tr>
   <tr>
-   <td><p><b>標籤預留位置</b></p><p>雖然不是以實際圖示表示，但 <b>索引標籤預留位置</b> 左側面板和中央面板中均有顯示。</p> </td>
+   <td><p><b>標籤預留位置</b></p><p>雖然不是以實際圖示表示，但 <b>索引標籤預留位置</b> 即會顯示在左側面板中。 <br>它也會在中央面板中呈現(水準顯示或下拉式清單（當有太多無法水準顯示時）。</p> </td>
    <td><p> <img src="assets/cf-authoring-tab-icon.png"> </p></td>
   </tr>
  </tbody>
