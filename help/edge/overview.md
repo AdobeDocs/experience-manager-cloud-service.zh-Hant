@@ -1,7 +1,7 @@
 ---
 title: Edge Delivery Services快速入門
-description: Edge Delivery Services快速入門
-source-git-commit: 22a3795340add4ae29ec690b41baef96e8fb4adc
+description: Edge Delivery Services快速入門。
+source-git-commit: 6334efceb9abae560ae77c133df1a70ffb438e6a
 workflow-type: tm+mt
 source-wordcount: '832'
 ht-degree: 0%
@@ -27,7 +27,7 @@ ht-degree: 0%
 
 Edge Delivery是一組可撰寫的服務，可讓您在網站上撰寫內容的方式上擁有高度彈性。 如前所述，您可以使用兩者 [AEM製作](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/getting-started/concepts.html) 和 [document-based authoring](https://www.hlx.live/docs/authoring).
 
-例如，您可以直接從Microsoft Word或Goggle檔案使用內容。 這表示來自這些來源的檔案可以成為您網站上的頁面。 此外，標題、清單、影像、字型元素都可從初始來源傳輸至網站。 新內容將立即新增，無需重建程式。
+例如，您可以直接從Microsoft Word或Google檔案使用內容。 這表示來自這些來源的檔案可以成為您網站上的頁面。 此外，標題、清單、影像、字型元素都可從初始來源傳輸至網站。 新內容將立即新增，無需重建程式。
 
 Edge Delivery運用GitHub，讓客戶可直接從GitHub存放庫管理和部署程式碼。 例如，您可以在Google檔案或Microsoft Word中撰寫內容，而您可以在GitHub中使用CSS和JavaScript開發網站功能。 準備就緒後，您可以使用Sidekick瀏覽器擴充功能來預覽和發佈內容更新。
 
