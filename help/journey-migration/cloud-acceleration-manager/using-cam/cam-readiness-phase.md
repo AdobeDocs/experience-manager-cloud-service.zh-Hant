@@ -1,30 +1,30 @@
 ---
-title: Cloud Acceleration Manager中的整備階段
+title: Cloud Acceleration Manager的整備階段
 description: 本頁提供Cloud Acceleration Manager整備階段的概觀。
 exl-id: 2583985b-0358-433c-9d31-38e2c60dc3dc
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 78ead5f15c2613d9c3bed3025b43423a66805c59
 workflow-type: tm+mt
-source-wordcount: '1049'
-ht-degree: 5%
+source-wordcount: '981'
+ht-degree: 6%
 
 ---
 
-# Cloud Acceleration Manager中的整備階段 {#readiness-phase-cam}
+# Cloud Acceleration Manager的整備階段 {#readiness-phase-cam}
 
-在Cloud Acceleration Manager中建立專案後，您現在可以在「整備」階段開始評估目前的AEM實施。
+在Cloud Acceleration Manager中建立專案後，您現在可以在整備階段中開始評估目前的Adobe Experience Manager (AEM)實施。
 
 整備階段包括：
 
 * [最佳實務分析](#best-practices-analysis)
 * [規劃與設定](#planning-setup)
 
-請依照下列步驟導覽至「整備階段」：
+請依照下列步驟，導覽至「整備階段」：
 
-1. 按一下您的專案卡片以開啟專案登入頁面。
+1. 按一下您的專案卡。
 
    ![影像](/help/journey-migration/cloud-acceleration-manager/assets/cam-landing1.png)
 
-1. 導覽至 **整備** 區段，如下圖所示。
+1. 在專案登陸頁面上，導覽至 **整備程度** 區段，如下圖所示。
 
    ![影像](/help/journey-migration/cloud-acceleration-manager/assets/readiness-1.png)
 
@@ -33,25 +33,23 @@ ht-degree: 5%
 
 ## 使用最佳做法分析卡 {#best-practices-analysis}
 
-請依照下列步驟使用Best Practices Analysis卡：
-
-1. 按一下 **檢閱** 按鈕來自 **最佳實務分析** 卡片。
+1. 按一下 **檢閱** 從 **最佳實務分析** 卡片。
 
    ![影像](/help/journey-migration/cloud-acceleration-manager/assets/readiness-2.png)
 
-1. 請依照下列步驟下載Best Practices Analyzer (BPA)。
+1. 下載Best Practices Analyzer (BPA)。
 
    >[!NOTE]
-   >為避免對業務關鍵例項造成影響，建議您在儘可能接近生產環境的製作環境中，對自訂、設定、內容和使用者應用程式等方面執行BPA。 或者，您可以在複製的生產製作環境中執行 CRA。
+   >為避免對業務關鍵例項造成影響，Adobe建議您在Author環境中執行BPA。 在自訂、設定、內容和使用者應用程式方面，環境應儘可能接近生產環境。 或者，您可以在複製的生產製作環境中執行 CRA。
 
    1. 導覽至 [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) 入口網站，並以zip檔案格式下載Best Practices Analyzer。
 
       >[!NOTE]
-      >檢閱 [使用Best Practices Analyzer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html?lang=en#imp-considerations) 以瞭解如何執行BPA。
+      >檢閱 [使用Best Practices Analyzer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html?lang=en#imp-considerations) 以瞭解如何執行BPA。
 
    1. 將報表匯出為CSV格式
 
-1. 按一下 **上傳新報告** 以在CAM中上傳BPA報告。
+1. 按一下 **上傳新報告** 以便在CAM中上傳BPA報告。
 
    ![影像](/help/journey-migration/cloud-acceleration-manager/assets/readiness-3.png)
 
@@ -62,26 +60,27 @@ ht-degree: 5%
 
    ![影像](/help/journey-migration/cloud-acceleration-manager/assets/cam-bpareport.png)
 
-1. 檢閱並探索CAM中的「最佳實務分析」圖示板。 另請參閱 [檢閱最佳實務分析報告](#analysis-report) 以取得更多詳細資料。
+1. 檢閱並探索CAM中的「最佳實務分析」儀表板。 另請參閱 [檢閱最佳實務分析報告](#analysis-report) 以取得更多詳細資料。
 
    >[!NOTE]
    >上傳新報告會重設所有評估。
 
 ### 使用列印預覽 {#print-preview-cam}
 
-您可以在Cloud Acceleration Manager中選取列印預覽選項，以列印報表的預覽，或將報表列印成PDF格式，以方便共用。
+您可以在Cloud Acceleration Manager中選取列印預覽選項，以可列印報表預覽，或將報表列印為PDF格式，以方便共用。
 
 請遵循下列步驟：
 
-1. 按一下 **列印預覽** 圖示，如下所示。
+1. 按一下 **列印預覽** 圖示。
 
    ![影像](/help/journey-migration/best-practices-analyzer/assets/bpa-printpreview1.png)
 
-1. 按一下 **列印預覽** 開啟新標籤，報告顯示在可列印的預覽中。 按一下 **列印** 將報表列印成PDF格式。
+1. 在可列印預覽中顯示報告的新標籤上，按一下 **列印** 將報表列印成PDF格式。
 
    >[!IMPORTANT]
-   >* 選項 **另存為PDF** 上述功能建議並支援。
-   >* 如果使用瀏覽器的列印按鈕，它將只列印一頁。
+   >
+   >* 選項 **另存為PDF** 建議並支援上述功能。
+   >* 如果使用瀏覽器的列印按鈕，則只會列印一頁。
 
    ![影像](/help/journey-migration/best-practices-analyzer/assets/bpa-printpreview2.png)
 
@@ -94,22 +93,22 @@ ht-degree: 5%
 >[!NOTE]
 >當您在專案中上傳多個BPA報告時，您會看到 **...** 圖示。
 
-1. 導覽至您的專案，然後按一下 **檢閱** 從 **最佳實務分析** 中的卡片 **整備** 階段。
+1. 導覽至您的專案，然後按一下 **檢閱** 從 **最佳實務分析** 卡在中 **整備程度** 階段。
 
    ![影像](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1a.png)
 
-1. 按一下 **...** 圖示來顯示下拉式清單。
+1. 按一下 **...**.
 
    ![影像](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1.png)
 
    >[!IMPORTANT]
    >顯示的報表一律為具有最新報表日期的報告。
 
-1. 按一下 **檢視趨勢線**，如下圖所示。
+1. 從下拉式清單中，按一下 **檢視趨勢線**，如下圖所示。
 
    ![影像](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view2.png)
 
-1. 按一下 **檢視趨勢線** 開啟報告的趨勢線檢視，如下圖所示。
+1. 按一下 **檢視趨勢線** 開啟報告的趨勢線檢視。
 
    ![影像](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view3a.png)
 
@@ -117,9 +116,10 @@ ht-degree: 5%
    >[!NOTE]
    >趨勢線報告會以圖形呈現方式顯示歷史BPA報告的結果。
    >
-   >您會看到兩個顯示下列專案趨勢的圖表：
+   >您會看到兩個顯示下列趨勢的圖表：
+   > 
    >1. **報告發現趨勢**
-   >1. **自訂元件和範本趨勢**
+   >1. **自訂元件與範本趨勢**
    >
    >您可以透過下拉式清單新增或變更圖形檢視，如下圖所示：
    >![影像](/help/journey-migration/cloud-acceleration-manager/assets/reports-bpa1.png)
@@ -127,25 +127,26 @@ ht-degree: 5%
 
 ### 檢閱最佳做法分析報表 {#analysis-report}
 
-探索「最佳實務分析報告」頁面中可用的下列卡片：
+探索最佳實務分析報告頁面中可用的卡片：
 
 ![影像](/help/journey-migration/cloud-acceleration-manager/assets/cam-bpareport.png)
 
 >[!NOTE]
-> 每張卡都具備以下功能：
->* 按一下每個卡片以開啟其相關標籤
->* 將所有報表標籤（包括篩選）加入書籤，以便共用或日後擷取
+> 您可以使用每張卡片：
+>
+>* 開啟其相關聯的標籤
+>* 將所有報表標籤（包括篩選）加入書籤，以便共用或未來擷取
 >* 使用詳細資訊圖示可檢視每個報告發現的詳細資訊
 
 #### 報表屬性 {#report-properties}
 
-此 **報表屬性** 卡片提供有關報告屬性的資訊，例如報告日期、持續時間、篩選器、上傳日期和Adobe Experience Manager (AEM)詳細資訊。
+此 **報表屬性** 卡片提供報表屬性的相關資訊，例如報表日期、持續時間、篩選器、上傳日期和Adobe Experience Manager (AEM)詳細資料。
 
 ![影像](/help/journey-migration/cloud-acceleration-manager/assets/report-properties.png)
 
 #### 報表概觀 {#report-overview}
 
-此 **報表概觀** 卡片會提供報告發現專案和嚴重性層級，在評估移至AEMas a Cloud Service的整備程度時適用，如下圖所示。
+這個 **報表概觀** 卡片會提供報告發現專案和嚴重性層級，在評估移至AEMas a Cloud Service的整備程度時適用，如下圖所示。
 
 ![影像](/help/journey-migration/cloud-acceleration-manager/assets/report-overview.png)
 
@@ -158,11 +159,11 @@ ht-degree: 5%
 ![影像](/help/journey-migration/cloud-acceleration-manager/assets/report-overview3.png)
 
 >[!NOTE]
->另請參閱 [解譯Best Practices Analyzer報表](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html?lang=en) 瞭解結果類別和重要性層級。
+>另請參閱 [解譯Best Practices Analyzer報表](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html?lang=en) 以瞭解發現專案類別和重要性層級。
 
 #### 最佳實務評估 {#best-practices-assessment}
 
-最佳實務評估選項會評估您目前的AEM執行個體，並提供採用AEM最佳實務後續步驟的指引。 您可以從此標籤檢閱下列資訊：
+最佳實務評估選項可評估您目前的AEM執行個體，並提供採用AEM最佳實務之後續步驟的指引。 您可以從此標籤檢閱下列資訊：
 
 * AEM執行個體總覽
 * 自訂元件和範本
@@ -184,9 +185,7 @@ ht-degree: 5%
 
 ## 使用Planning and Setup卡 {#planning-setup}
 
-請詳閱本節，以探索「規劃與設定」活動卡。
-
-1. 按一下 **檢視** 按鈕來自 **規劃與設定** 卡片。 此卡片提供所有相關內容，可協助您規劃和設定AEM移轉。
+1. 按一下 **檢視** 從 **規劃與設定** 卡片。 此卡片提供所有相關內容，可協助您規劃和設定AEM移轉。
 
    ![影像](/help/journey-migration/cloud-acceleration-manager/assets/readiness-view.png)
 
@@ -194,26 +193,24 @@ ht-degree: 5%
 
    ![影像](/help/journey-migration/cloud-acceleration-manager/assets/readiness-5-planning.png)
 
-### 刪除最佳實務分析報告 {#delete-trendline}
-
-請依照下列步驟，從趨勢線檢視中刪除報表：
+### 從趨勢線檢視刪除最佳實務分析報告 {#delete-trendline}
 
 >[!IMPORTANT]
->只有當一個專案中已上傳多個報告時，才能刪除報告。
+>一個專案已上傳多個報告時，才能刪除報告。
 
-1. 導覽至您的專案，然後按一下 **檢閱** 從 **最佳實務分析** 中的卡片 **整備** 階段。
+1. 導覽至您的專案，然後按一下 **檢閱** 從 **最佳實務分析** 卡在中 **整備程度** 階段。
 
    ![影像](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1a.png)
 
-1. 按一下 **...** 圖示來顯示下拉式清單。
+1. 按一下 **...**.
 
    ![影像](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1.png)
 
-1. 按一下 **檢視趨勢線**，如下圖所示。
+1. 在下拉式清單中，按一下 **檢視趨勢線**，如下圖所示。
 
    ![影像](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view2.png)
 
-1. 按一下刪除圖示，從 **趨勢線報告** 畫面。
+1. 按一下中的「刪除」圖示 **趨勢線報告** 畫面。
 
    ![影像](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view5a.png)
 
@@ -223,4 +220,4 @@ ht-degree: 5%
 
 ## 下一步 {#whats-next}
 
-瞭解如何登入Cloud Acceleration Manager以及如何建立專案後，您就可以繼續檢閱中的下一個步驟了 [實作階段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-implementation-phase.html?lang=en).
+瞭解如何登入Cloud Acceleration Manager以及如何建立專案後，您現在已準備好繼續檢閱中的下一個步驟 [實作階段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-implementation-phase.html?lang=en).

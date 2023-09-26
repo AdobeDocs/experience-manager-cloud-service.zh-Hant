@@ -7,10 +7,10 @@ hide: true
 index: false
 hidefromtoc: true
 exl-id: f2f28207-3e14-4cf4-acce-c6cf32231e05
-source-git-commit: 5ce5746026c5683e79cdc1c9dc96804756321cdb
+source-git-commit: 78ead5f15c2613d9c3bed3025b43423a66805c59
 workflow-type: tm+mt
-source-wordcount: '2458'
-ht-degree: 10%
+source-wordcount: '2424'
+ht-degree: 7%
 
 ---
 
@@ -22,9 +22,9 @@ index: no
 hidefromtoc: yes
 -->
 
-[變數](/help/sites-cloud/administering/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) 是AEM內容片段的一項重要功能，因為它們可讓您建立和編輯主要內容的復本，以用於特定頻道和/或案例，讓頁面製作和headless內容傳送更靈活。
+[變數](/help/sites-cloud/administering/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) 是Adobe Experience Manager (AEM)內容片段的重要功能。 它們可讓您建立和編輯主要內容的副本，以用於特定頻道和情境，讓頁面製作和headless內容傳送更靈活。
 
-從 **變數** 標籤您可以：
+從 **變數** 標籤您可以執行下列動作：
 
 * [輸入內容](#authoring-your-content) 針對您的片段，
 * [建立和管理變數](#managing-variations) 的 **主版** 內容，
@@ -33,7 +33,7 @@ hidefromtoc: yes
 
 * [將視覺資產插入片段](#inserting-assets-into-your-fragment) （影像）
 
-* 選擇範圍 [RTF文字](#rich-text)， [純文字](#plain-text) 和 [Markdown](#markdown) 進行編輯
+* 選擇範圍 [RTF文字](#rich-text)， [純文字](#plain-text)、和 [Markdown](#markdown) 進行編輯
 
 * [上傳內容](#uploading-content)
 
@@ -45,11 +45,11 @@ hidefromtoc: yes
 
 >[!CAUTION]
 >
->片段發佈和/或參考後，當作者再次開啟片段進行編輯時，AEM會顯示警告。 這是為了警告，片段的變更也會影響參照的頁面。
+>片段發佈和/或參考後，當作者再次開啟片段進行編輯時，AEM會顯示警告。 這是為了警告對片段所做的變更也會影響參照的頁面。
 
 ## 製作您的內容 {#authoring-your-content}
 
-當您開啟內容片段進行編輯時， **變數** 標籤預設為開啟。 您可以在此處為主要或任何變數創作內容。 結構化片段包含內容模型中定義的各種資料型別的欄位。
+當您開啟內容片段進行編輯時， **變數** 標籤預設為開啟。 您可以在此處為主要或任何變數創作內容。 結構化片段包含在內容模型中定義的各種資料型別的欄位。
 
 例如：
 
@@ -59,19 +59,19 @@ hidefromtoc: yes
 
 * 直接在中編輯您的內容 **變數** 標籤；每種資料型別提供不同的編輯選項，例如：
 
-   * 的 **多行文字** 欄位您也可以開啟 [全熒幕編輯器](#full-screen-editor) 至：
+   * 的 **多行文字** 欄位，您也可以開啟 [全熒幕編輯器](#full-screen-editor) 至：
 
       * 選取 [格式](#formats)
       * 檢視更多編輯選項(適用於 [RTF文字](#rich-text) format)
       * 存取範圍 [動作](#actions)
 
-   * 的 **片段引用** 欄位 [編輯內容片段](#fragment-references-edit-content-fragment) 選項可用，視模型定義而定。
+   * 的 **片段引用** 欄位， [編輯內容片段](#fragment-references-edit-content-fragment) 選項可用，視模型定義而定。
 
-* 指派 **標籤** 變數；標籤可以新增、更新和移除
+* 指派 **標籤** 變數；標籤可以新增、更新和移除。
 
-   * [標籤](/help/sites-cloud/authoring/features/tags.md) 在組織片段時可發揮強大功能，因為其可用於內容分類和分類法。 標籤可用於尋找內容（依標籤）及套用大量作業。
+   * [標籤](/help/sites-cloud/authoring/features/tags.md) 在組織片段時功能強大，因為可用於內容分類和分類法。 標籤可用於尋找內容（依標籤）並套用大量作業。
 
-      * 搜尋標籤將傳回片段，並反白顯示標籤的變數。
+      * 搜尋標籤會傳回片段，並反白標籤變數。
       * 變數標籤也可用來將特定內容傳遞網路(CDN)設定檔（用於CDN快取）的變數分組，而不是使用變數名稱。
 
      例如，您可以將相關片段標籤為「聖誕節啟動」，以僅允許作為子集瀏覽這些片段，或複製這些片段以供日後在新資料夾中再次啟動時使用。
@@ -88,7 +88,7 @@ hidefromtoc: yes
 
 ![全熒幕編輯器圖示](assets/cfm-variations-03.png)
 
-這將開啟全熒幕文字編輯器：
+如此將可開啟全熒幕文字編輯器：
 
 ![全熒幕編輯器](assets/cfm-variations-fullscreentexteditor.png)
 
@@ -152,13 +152,13 @@ RTF編輯可讓您設定格式：
 
 >[!CAUTION]
 >
->如果您選取「純 **文字** 」 **，可能會遺失您已插入「豐富文字」或「標籤文字」的任何格式、標籤和/或資產******。
+>如果您選取 **純文字**，您可能會遺失已插入其中的任何格式、標籤和/或資產 **RTF文字** 或 **Markdown**.
 
 ### Markdown {#markdown}
 
 >[!NOTE]
 >
->如需完整資訊，請參閱 [Markdown](/help/sites-cloud/administering/content-fragments/content-fragments-markdown.md) 檔案。
+>如需完整資訊，請參閱 [Markdown](/help/sites-cloud/administering/content-fragments/content-fragments-markdown.md).
 
 這可讓您使用Markdown設定文字格式。 您可以定義：
 
@@ -189,21 +189,21 @@ RTF編輯可讓您設定格式：
 
 #### 編輯內容片段 {#fragment-references-edit-content-fragment}
 
-選項 **編輯內容片段** 會在新的編輯器標籤中開啟該片段（在相同瀏覽器標籤中）。
+選項 **編輯內容片段** 在新編輯器標籤中開啟該片段（在相同瀏覽器標籤中）。
 
-再次選取原始索引標籤(例如， **小馬公司**)，將會關閉此次要索引標籤(在此情況下， **Adam Smith**)。
+再次選取原始索引標籤(例如， **小馬公司**)，關閉此次要索引標籤(在此情況下， **Adam Smith**)。
 
 ![片段參考](assets/cfm-variations-editreference.png)
 
 #### 新內容片段 {#fragment-references-new-content-fragment}
 
-選項 **新內容片段** 將可讓您建立全新的片段。 為此，將在編輯器中開啟建立內容片段精靈的變體。
+選項 **新內容片段** 可讓您建立片段。 為此，建立內容片段精靈的變數會在編輯器中開啟。
 
-然後，您將能夠透過以下方式建立新片段：
+**若要建立內容片段：**
 
 1. 導覽至並選取所需的資料夾。
 1. 選取 **下一個**.
-1. 指定屬性；例如 **標題**.
+1. 指定屬性；例如， **標題**.
 1. 選取 **建立**.
 1. 最後：
    1. **完成**:
@@ -215,7 +215,7 @@ RTF編輯可讓您設定格式：
 
 ### 檢視關鍵統計資料 {#viewing-key-statistics}
 
-當全螢幕編輯器開啟時，「文字統計 **資料** 」動作會顯示一系列有關文字的資訊。
+當全熒幕編輯器開啟時，動作 **文字統計資料** 顯示一系列有關文字的資訊。
 
 例如：
 
@@ -231,7 +231,7 @@ RTF編輯可讓您設定格式：
 
 >[!NOTE]
 >
->在較技術性的層級上，系統會保留其評為提供 *最佳資訊密度和唯一性比例* 根據特定演演算法。
+>在較技術性的層面上，系統會保留其認為提供 *最佳資訊密度和唯一性比例* 根據特定演演算法。
 
 >[!CAUTION]
 >
@@ -264,24 +264,22 @@ Software Distribution提供其他語言作為語言模型套件：
 1. 原始文字會與建議的摘要並排顯示：
 
    * 任何要刪除的句子都會以紅色醒目提示，並加上刪除線。
-   * 按一下任何醒目提示的句子，將其保留在摘要內容中。
-   * 按一下任何未醒目提示的句子以將其刪除。
+   * 按一下任何醒目提示的句子，以便將其保留在摘要內容中。
+   * 按一下任何未醒目提示的句子，以便將其刪除。
 
-1. 選取 **摘要** 以確認變更。
+1. 選取 **摘要**.
 
 1. 原始文字會與建議的摘要並排顯示：
 
    * 任何要刪除的句子都會以紅色醒目提示，並加上刪除線。
-   * 按一下任何醒目提示的句子，將其保留在摘要內容中。
-   * 按一下任何未醒目提示的句子以將其刪除。
+   * 按一下任何醒目提示的句子，以便將其保留在摘要內容中。
+   * 按一下任何未醒目提示的句子，以便將其刪除。
    * 會顯示摘要統計資料： **實際** 和 **Target**-
    * 您可以 **預覽** 變更。
 
    ![摘要比較](assets/cfm-variations-06.png)
 
 ### 為內容片段加上註釋 {#annotating-a-content-fragment}
-
-若要為片段加上註釋：
 
 1. 選取 **主版** 或必要的變數。
 
@@ -291,23 +289,23 @@ Software Distribution提供其他語言作為語言模型套件：
 
    ![註釋](assets/cfm-variations-07.png)
 
-1. 對話方塊將會開啟。 您可以在此處輸入註解。
+1. 對話方塊開啟。 您可以在此處輸入註解。
 
    ![註釋](assets/cfm-variations-07a.png)
 
-1. 選取 **套用** 在對話方塊上。
+1. 選取 **套用** 於對話方塊中。
 
    ![註釋](assets/cfm-variations-annotations-apply-icon.png)
 
-   如果註解套用到選取的文字，該文字將保持反白狀態。
+   如果註解套用到選取的文字，該文字會保持反白狀態。
 
    ![註釋](assets/cfm-variations-07b.png)
 
-1. 關閉全熒幕編輯器時，註解仍會反白顯示。 如果選取，將會開啟對話方塊，以便您進一步編輯註釋。
+1. 關閉全熒幕編輯器時，註解仍會反白顯示。 如果選取，會開啟一個對話方塊，以便您進一步編輯註釋。
 
 1. 選取&#x200B;**儲存**。
 
-1. 關閉全熒幕編輯器時，註解仍會反白顯示。 如果選取，將會開啟對話方塊，以便您進一步編輯註釋。
+1. 關閉全熒幕編輯器時，註解仍會反白顯示。 如果選取，會開啟一個對話方塊，以便您進一步編輯註釋。
 
    ![註釋](assets/cfm-variations-07c.png)
 
@@ -315,7 +313,7 @@ Software Distribution提供其他語言作為語言模型套件：
 
 註解:
 
-* 在編輯器的全熒幕和正常模式下，由文字上的反白顯示指示。 然後，可以檢視、編輯和/或刪除註解的完整詳細資訊，方法是按一下醒目提示的文字，這會重新開啟對話方塊。
+* 在編輯器的全熒幕和正常模式中，由文字上的反白顯示指示。 然後，可以按一下反白文字（重新開啟對話方塊）來檢視、編輯或刪除註釋的完整細節。
 
   >[!NOTE]
   >
@@ -323,11 +321,11 @@ Software Distribution提供其他語言作為語言模型套件：
 
 * 當您刪除套用了註解的整個文字時，註解也會一併刪除。
 
-* 可透過選取 **註解** 索引標籤進行標籤。
+* 您可以透過選取 **註解** 索引標籤進行標籤。
 
   ![附註](assets/cfm-variations-08.png)
 
-* 可以在中檢視和刪除 [時間表](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#timeline-for-content-fragments) 用於選取的片段。
+* 您可在以下位置檢視和刪除縮圖： [時間表](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#timeline-for-content-fragments) 用於選取的片段。
 
 ### 將資產插入片段 {#inserting-assets-into-your-fragment}
 
@@ -345,32 +343,29 @@ Software Distribution提供其他語言作為語言模型套件：
 >
 有多種方法可新增 [影像](/help/sites-cloud/administering/content-fragments/content-fragments.md#fragments-with-visual-assets) 至片段和/或頁面。
 
-1. 將游標置於要添加影像的位置。
-1. 使用「插 **入資產** 」圖示開啟搜尋對話方塊。
+1. 將游標放在您要新增影像的位置。
+1. 使用 **插入資產** 圖示以開啟搜尋對話方塊。
 
    ![插入資產圖示](assets/cfm-variations-09.png)
 
-1. 在對話方塊中，您可以：
+1. 在對話方塊中，您可以導覽至DAM中的所需資產，或在DAM中搜尋資產。
 
-   * 導覽至DAM中的必要資產
-   * 在DAM中搜尋資產
-
-   找到後，按一下縮圖以選取所需的資產。
+   找到時，按一下縮圖以選取所需資產。
 
 1. 使用 **「選取** 」將資產新增至目前位置之內容片段的段落系統。
 
    >[!CAUTION]
    >
-   如果新增資產後，您將格式變更為：
+   新增資產後，如果您將格式變更為：
    >
-   * **純文字**：資產從片段中完全遺失。
+   * **純文字**：資產從片段中遺失。
    * **Markdown**：資產不可見，但當您返回時仍會存在 **RTF文字**.
 
 ### 將內容片段插入片段 {#inserting-content-fragment-into-your-fragment}
 
 為了簡化編寫內容片段的流程，您也可以將另一個內容片段新增到片段中。
 
-它們會新增為參考，在片段中的目前位置中。
+它們會新增為片段中目前位置的參考。
 
 >[!NOTE]
 >
@@ -391,54 +386,51 @@ Software Distribution提供其他語言作為語言模型套件：
 
    ![插入內容片段圖示](assets/cfm-variations-13.png)
 
-1. 在對話方塊中，您可以：
+1. 在對話方塊中，您可以導覽至Assets資料夾中的所需片段，或搜尋片段。
 
-   * 導覽至「資產」資料夾中的所需片段
-   * 搜尋片段
-
-   找到後，按一下縮圖以選取所需的片段。
+   找到時，按一下縮圖以選取所需片段。
 
 1. 使用 **選取** 將所選內容片段的參考新增至您目前的內容片段（在目前位置）。
 
    >[!CAUTION]
    >
-   如果在新增對其他片段的參考後，您將格式變更為：
+   新增對其他片段的參考後，如果您將格式變更為：
    >
-   * **純文字**：參考從片段中完全遺失。
-   * **Markdown**：參考仍會保留。
+   * **純文字**：參考會從片段中遺失。
+   * **Markdown**：參考會保留。
 
 ## 管理變數 {#managing-variations}
 
 [!CONTEXTUALHELP]
 id="aemcloud_sites_contentfragments_variations"
 title="變化 - 編寫片段內容"
-abstract="了解如何變化內容以用於特定管道。"
+abstract="瞭解如何製作內容變體，以搭配特定管道使用。"
 additional-url="https://video.tv.adobe.com/v/333295" text="內容片段變化"
 
 ### 建立變數 {#creating-a-variation}
 
 變數可讓您取得 **主版** 內容並根據不同目的（如有需要）加以改動。
 
-若要建立新的變數：
+若要建立變數：
 
 1. 開啟片段並確保側面板可見。
 1. 選取 **變數** 從側面板的圖示列開啟。
 1. 選取 **建立變數**.
-1. 將會開啟對話方塊，指定新變 **數的****「標題」(Title)和「說明」(Description** )。
+1. 對話方塊開啟，指定 **標題** 和 **說明** 以取得新的變數。
 1. 選取 **新增**；片段 **主版** 會複製到新的變數，該變數現在會針對 [編輯](#editing-a-variation).
 
    >[!NOTE]
    >
-   建立新變數時，一律如此 **主版** 而不是目前開啟的變數。
+   建立變數時，一律為 **主版** 「 」是複製的，而非開啟的變數。
 
 
    >[!NOTE]
    >
-   當您建立新的變數時，所有 **標籤** 目前已指派給 **主版** 變數會複製到您的新變數。
+   當您建立變數時，所有 **標籤** 目前已指派給 **主版** 變數會複製到您的新變數。
 
 ### 編輯變數 {#editing-a-variation}
 
-您可以在下列任一情況後變更變數內容：
+您可以在下列任一情況後編輯變數內容：
 
 * [建立您的變數](#creating-a-variation).
 * 開啟現有片段，然後從側面板選取所需的變數。
@@ -477,9 +469,9 @@ additional-url="https://video.tv.adobe.com/v/333295" text="內容片段變化"
 
 ### 與主版同步 {#synchronizing-with-master}
 
-**主版** 是內容片段不可或缺的一部分，從定義上講，它保有內容的主副本，而變數則保有該內容的個別更新及自訂版本。 更新Master時，這些變更可能也會與變體相關，因此需要傳播至變體。
+**主版** 是內容片段的一部分，從定義上講，它包含內容的主副本，而變數則包含該內容的個別更新及自訂版本。 更新「主版」時，這些變更也可能與變體相關，因此必須傳播至變體。
 
-編輯變數時，您有權存取動作，以將變數的目前元素與主變數同步。 這可讓您自動將對主版所做的變更複製到所需的變數。
+編輯變數時，您可以存取將變數的目前元素與主版同步的動作。 這可讓您自動將對主版所做的變更複製到所需的變數。
 
 >[!CAUTION]
 >

@@ -1,12 +1,12 @@
 ---
 title: Assets HTTP API中的Adobe Experience Manager as a Cloud Service內容片段支援
-description: 瞭解Assets HTTP API支援內容片段，這是AEM Headless傳送功能的重要一環。
+description: 瞭解Assets HTTP API支援內容片段，這是Adobe Experience Manager的Headless傳送功能的重要一環。
 feature: Content Fragments,Assets HTTP API
 exl-id: d72cc0c0-0641-4fd6-9f87-745af5f2c232
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 78ead5f15c2613d9c3bed3025b43423a66805c59
 workflow-type: tm+mt
-source-wordcount: '1784'
-ht-degree: 19%
+source-wordcount: '1793'
+ht-degree: 13%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 19%
 | AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/assets-api-content-fragments.html?lang=en) |
 | AEM as a Cloud Service  | 本文章 |
 
-瞭解Assets HTTP API支援內容片段，這是AEM Headless傳送功能的重要一環。
+瞭解資產HTTP API支援內容片段，這是Adobe Experience Manager (AEM) Headless傳送功能的重要一環。
 
 >[!NOTE]
 >
@@ -30,13 +30,13 @@ ht-degree: 19%
 >
 >Assets HTTP API的目前實作是根據 [REST](https://en.wikipedia.org/wiki/Representational_state_transfer) 架構樣式。
 
-此 [Assets REST API](/help/assets/mac-api-assets.md) 可讓Adobe Experience Manager as a Cloud Service的開發人員透過CRUD作業（建立、讀取、更新、刪除），直接透過HTTP API存取內容(儲存在AEM中)。
+此 [Assets REST API](/help/assets/mac-api-assets.md) 可讓Adobe Experience Manager as a Cloud Service開發人員透過CRUD （建立、讀取、更新、刪除）作業，直接透過HTTP API存取內容(儲存在AEM中)。
 
 此API可讓您藉由向JavaScript前端應用程式提供內容服務，將Adobe Experience Manager as a Cloud Service當作Headless CMS （內容管理系統）來運作。 或者任何其他可以執行 HTTP 要求並處理 JSON 回應的應用程式。
 
 例如， [單頁應用程式(SPA)](/help/implementing/developing/hybrid/introduction.md)、框架式或自訂)需要透過HTTP API提供的內容（通常為JSON格式）。
 
-當 [AEM Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 提供非常完整、彈性且可自訂的API，可為此用途提供所需的讀取作業，且可自訂其JSON輸出，實作時確實需要AEM WCM （Web內容管理）專門技術，因為它們必須託管在基於專用AEM範本的頁面中。 並非每個SPA開發組織都能直接存取這些知識。
+當 [AEM Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 提供可自訂的API，該API可提供此用途的必要讀取作業，且其JSON輸出可自訂，這些實作需要AEM WCM （Web內容管理）專門技術。 這是因為它們必須託管在基於專用AEM範本的頁面中。 並非每個SPA開發組織都能直接存取這些知識。
 
 此時可使用Assets REST API。 它可讓開發人員直接存取資產（例如影像和內容片段），而不需要先將資產內嵌在頁面中，並以序列化JSON格式傳送其內容。
 
@@ -64,7 +64,7 @@ Assets REST API提供 [REST](https://en.wikipedia.org/wiki/Representational_stat
 
 * 這表示要存取以下位置的資產：
    * `/content/dam/path/to/asset`
-* 您需要要求：
+* 要求：
    * `/api/assets/path/to/asset`
 
 例如，若要存取 `/content/dam/wknd/en/adventures/cycling-tuscany`，要求 `/api/assets/wknd/en/adventures/cycling-tuscany.json`
@@ -78,7 +78,7 @@ Assets REST API提供 [REST](https://en.wikipedia.org/wiki/Representational_stat
 HTTP 方法決定要執行的操作：
 
 * **GET** - 檢索資產或資料夾的 JSON 表示
-* **POST** - 建立新資產或資料夾
+* **POST**  — 建立資產或資料夾
 * **PUT** - 更新資產或資料夾的屬性
 * **DELETE** - 刪除資產或資料夾
 
@@ -108,19 +108,19 @@ HTTP 方法決定要執行的操作：
   <tr>
    <td>支援的使用案例</td>
    <td>一般用途。</td>
-   <td><p>針對單頁應用程式(SPA)或任何其他（使用內容）內容的耗用量進行最佳化。</p> <p>也可以包含佈局資訊。</p> </td>
+   <td><p>針對單頁應用程式(SPA)或任何其他（使用內容）內容的耗用量進行最佳化。</p> <p>它也可以包含版面配置資訊。</p> </td>
   </tr>
   <tr>
    <td>支援的作業</td>
-   <td><p>建立、讀取、更新、刪除。</p> <p>根據圖元型別使用其他操作。</p> </td>
+   <td><p>建立、讀取、更新、刪除。</p> <p>檢視元型別而定，包含其他操作。</p> </td>
    <td>唯讀.</td>
   </tr>
   <tr>
    <td>存取</td>
-   <td><p>可直接存取。</p> <p>使用 <code>/api/assets </code>端點，對應至 <code>/content/dam</code> （在存放庫中）。</p> 
+   <td><p>可以直接存取。</p> <p>使用 <code>/api/assets </code>端點，對應至 <code>/content/dam</code> （在存放庫中）。</p> 
    <p>範例路徑如下所示： <code>/api/assets/wknd/en/adventures/cycling-tuscany.json</code></p>
    </td>
-    <td><p>需要透過AEM頁面上的AEM元件參考。</p> <p>使用 <code>.model</code> 選取器以建立JSON表示方式。</p> <p>範例路徑如下所示：<br/> <code>/content/wknd/language-masters/en/adventures/cycling-tuscany.model.json</code></p> 
+    <td><p>必須透過AEM頁面上的AEM元件來參照。</p> <p>使用 <code>.model</code> 選取器以建立JSON表示方式。</p> <p>範例路徑如下所示：<br/> <code>/content/wknd/language-masters/en/adventures/cycling-tuscany.model.json</code></p> 
    </td>
   </tr>
   <tr>
@@ -130,12 +130,12 @@ HTTP 方法決定要執行的操作：
   </tr>
   <tr>
    <td>架構註解</td>
-   <td><p>寫入存取權通常可處理製作執行個體。</p> <p>讀取可能會被導向到發佈執行個體。</p> </td>
-   <td>由於此方法為唯讀，因此通常用於發佈執行個體。</td>
+   <td><p>寫入存取權通常可處理作者例項。</p> <p>讀取可能會被導向到發佈執行個體。</p> </td>
+   <td>由於此方法為唯讀，因此通常會用於Publish例項。</td>
   </tr>
   <tr>
    <td>輸出</td>
-   <td>JSON型SIREN輸出：冗長但功能強大。 允許在內容內導覽。</td>
+   <td>JSON型SIREN輸出：冗長但功能強大。 它允許在內容內導覽。</td>
    <td>JSON型專有輸出；可透過Sling模型設定。 導覽內容結構難以實作（但並非一定不可能）。</td>
   </tr>
  </tbody>
@@ -143,14 +143,14 @@ HTTP 方法決定要執行的操作：
 
 ### 安全性 {#security}
 
-如果是在沒有特定驗證需求的環境中使用Assets REST API，則需要正確設定AEM CORS篩選器。
+如果是在沒有特定驗證需求的環境中使用Assets REST API，則必須正確設定AEM CORS篩選器。
 
 >[!NOTE]
 >
 >如需詳細資訊，請參閱：
 >
->* [CORS/AEM 說明](https://helpx.adobe.com/tw/experience-manager/kt/platform-repository/using/cors-security-article-understand.html)
->* [影片 - 使用 AEM 開發 CORS](https://helpx.adobe.com/tw/experience-manager/kt/platform-repository/using/cors-security-technical-video-develop.html)
+>* [CORS/AEM 說明](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=zh-Hant)
+>* [影片 — 使用AEM開發CORS (04:06)](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/develop-for-cross-origin-resource-sharing.html?lang=en)
 >
 
 在有特定驗證需求的環境中，建議使用OAuth。
@@ -171,7 +171,7 @@ Assets REST API支援透過URL引數分頁(針對GET請求)：
 * `offset`  — 要擷取的第一個（子項）實體的編號
 * `limit`  — 傳回的最大實體數
 
-回應將包含分頁資訊，作為 `properties` 部分。 這個 `srn:paging` 屬性包含（子）實體的總數( `total`)、位移和限制( `offset`， `limit`)。
+回應包含分頁資訊，作為 `properties` 部分。 這個 `srn:paging` 屬性包含（子）實體的總數( `total`)、位移和限制( `offset`， `limit`)。
 
 >[!NOTE]
 >
@@ -201,7 +201,7 @@ Assets REST API支援透過URL引數分頁(針對GET請求)：
 
 資料夾可作為資產和其他資料夾的容器。 它們反映了AEM內容存放庫的結構。
 
-Assets REST API會公開資料夾屬性的存取權，例如其名稱、標題等。 資產會公開為資料夾和子資料夾的子實體。
+Assets REST API會公開資料夾屬性的存取權。 例如，其名稱和標題。 資產會顯示為資料夾和子資料夾的子專案。
 
 >[!NOTE]
 >
@@ -209,7 +209,7 @@ Assets REST API會公開資料夾屬性的存取權，例如其名稱、標題�
 
 ### Assets {#assets}
 
-如果資產已要求，回應會傳回其中繼資料，例如標題、名稱和個別資產結構描述所定義的其他資訊。
+如果請求資產，回應會傳回其中繼資料，例如標題、名稱和個別資產結構描述所定義的其他資訊。
 
 資產的二進位資料會公開為型別的SIREN連結 `content`.
 
@@ -226,38 +226,38 @@ A [內容片段](/help/assets/content-fragments/content-fragments.md) 是一種�
 內容片段：
 
 * 不要公開任何二進位資料。
-* 完全包含在JSON輸出中(在 `properties` 屬性)。
+* 包含在JSON輸出中(在 `properties` 屬性)。
 
-* 也視為原子元素，也就是說，元素和變數會作為片段屬性的一部分公開，而不是作為連結或子實體公開。 這樣可讓您有效率地存取片段的裝載。
+* 它們也被視為原子元素。 也就是說，元素和變數會作為片段屬性的一部分顯示，而不是作為連結或子實體顯示。 這樣可讓您有效率地存取片段的裝載。
 
 #### 內容模型和內容片段 {#content-models-and-content-fragments}
 
-目前，定義內容片段結構的模型不會透過HTTP API公開。 因此， *消費者* 需要瞭解片段的模式（至少是最低要求） — 儘管大多數資訊可以從承載中推斷；如資料型別等。 是定義的一部分。
+目前，定義內容片段結構的模型不會透過HTTP API公開。 因此， *消費者* 必須知道片段的模型（至少是最低限度） — 雖然大多數資訊可以從裝載中推斷；由於資料型別等是定義的一部分。
 
-若要建立新的內容片段，必須提供模型的（內部存放庫）路徑。
+若要建立內容片段，必須提供模型的（內部存放庫）路徑。
 
 #### 相關聯的內容 {#associated-content}
 
-關聯內容目前未公開。
+關聯內容未公開。
 
 ## 使用 {#using}
 
-根據您使用的是 AEM 作者環境還是發佈環境，以及您的特定使用案例，使用情況可能會有所不同。
+使用方式會因您使用的是AEM製作或發佈環境以及您的特定使用案例而有所不同。
 
-* 強烈建議將建立繫結至作者執行個體([目前沒有方法可使用此API復寫要發佈的片段](/help/assets/content-fragments/assets-api-content-fragments.md#limitations))。
+* 建議將建立繫結至作者執行個體([目前沒有方法可使用此API復寫要發佈的片段](/help/assets/content-fragments/assets-api-content-fragments.md#limitations))。
 * 都可以從兩者傳遞，因為 AEM 僅以 JSON 格式提供要求的內容。
 
-   * 來自 AEM 作者執行個體的儲存和傳遞操作應該足以滿足防火牆後的媒體庫應用程式的需求。
+   * 對於防火牆後的媒體程式庫應用程式，AEM編寫執行個體的儲存和傳送應已足夠。
 
-   * 如果是即時 Web 傳遞，則建議使用 AEM 發佈執行個體。
+   * 對於即時網頁傳送，建議使用AEM Publish執行個體。
 
 >[!CAUTION]
 >
->AEM 雲端執行個體上的 Dispatcher 設定可能會封鎖對 `/api` 的存取。
+>AEM雲端例項上的Dispatcher設定可能會封鎖對的存取 `/api`.
 
 >[!NOTE]
 >
->如需詳細資訊，請參閱 [API參考](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference). 特別是 [Adobe Experience Manager Assets API - 內容片段](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/assets-api-content-fragments/index.html)。
+>如需詳細資訊，請參閱 [API參考](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference). 特別是 [Adobe Experience Manager Assets API - 內容片段](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/assets-api-content-fragments/index.html)。
 
 ## 限制 {#limitations}
 
@@ -265,7 +265,7 @@ A [內容片段](/help/assets/content-fragments/content-fragments.md) 是一種�
 
 * **目前不支援內容片段模型**：它們無法讀取或建立。 為了能夠建立新的或更新現有的內容片段，開發人員必須知道內容片段模型的正確路徑。 目前，取得這些內容的概觀的唯一方法就是透過管理UI。
 * **會忽略參照**. 目前沒有檢查是否參考了現有的內容片段。 因此，例如，刪除內容片段可能會導致包含已刪除內容片段參考的頁面發生問題。
-* **JSON資料型別** 的REST API輸出 *JSON資料型別* 目前為 *字串型輸出*.
+* **JSON資料型別** 的REST API輸出 *JSON資料型別* 是 *字串型輸出*.
 
 ## 狀態代碼和錯誤訊息 {#status-codes-and-error-messages}
 
@@ -275,14 +275,14 @@ A [內容片段](/help/assets/content-fragments/content-fragments.md) 是一種�
 
   傳回時間：
 
-   * 透過請求內容片段 `GET`
-   * 透過成功更新內容片段 `PUT`
+   * 透過以下方式請求內容片段 `GET`
+   * 透過以下方式成功更新內容片段 `PUT`
 
 * **201** （已建立）
 
   傳回時間：
 
-   * 透過成功建立內容片段 `POST`
+   * 透過以下方式成功建立內容片段 `POST`
 
 * **404** （找不到）
 
@@ -324,7 +324,7 @@ A [內容片段](/help/assets/content-fragments/content-fragments.md) 是一種�
       * `Could not update content element`
       * `Could not update fragment data of element`
 
-  詳細的錯誤訊息通常會以下列方式傳回：
+  詳細的錯誤訊息會以下列方式傳回：
 
   ```xml
   {
@@ -343,7 +343,7 @@ A [內容片段](/help/assets/content-fragments/content-fragments.md) 是一種�
 
 如需詳細的API參考資料，請參閱此處：
 
-* [Adobe Experience Manager Assets API - 內容片段](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/assets-api-content-fragments/index.html)
+* [Adobe Experience Manager Assets API - 內容片段](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/assets-api-content-fragments/index.html)
 
 * [Assets HTTP API](/help/assets/mac-api-assets.md)
 
@@ -354,4 +354,4 @@ A [內容片段](/help/assets/content-fragments/content-fragments.md) 是一種�
 如需詳細資訊，請參閱：
 
 * [Assets HTTP API檔案](/help/assets/mac-api-assets.md)
-* [AEM Gem工作階段： OAuth](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-oauth-server-functionality-in-aem.html)
+* [AEM Gem工作階段： OAuth](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2014/aem-oauth-server-functionality-in-aem.html?lang=en)
