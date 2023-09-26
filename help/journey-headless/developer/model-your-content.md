@@ -1,28 +1,28 @@
 ---
 title: 如何建立內容模型
-description: 在 AEM Headless 開發人員歷程的這一部分中，了解如何使用內容模型和內容片段模型及內容片段，建立您的內容模型用於 AEM Headless 傳遞。
+description: 在Adobe Experience Manager (AEM) Headless開發人員歷程的這一部分，瞭解如何使用內容片段模型和內容片段的內容模型化AEM Headless傳送的內容。
 exl-id: f052183d-18fd-4615-a81e-e45db5928fc1
-source-git-commit: d6b98559e7cbe5fc5bd05d9cf37225e960e668e7
-workflow-type: ht
-source-wordcount: '1828'
-ht-degree: 100%
+source-git-commit: d67c5c9baafb9b7478f1d1c2ad924f5a8250a1ee
+workflow-type: tm+mt
+source-wordcount: '1827'
+ht-degree: 71%
 
 ---
 
 # 如何建立內容模型 {#model-your-content}
 
-在 [AEM Headless 開發人員歷程](overview.md)的這一部分中，您可以了解如何建立內容結構模型。然後使用內容片段模型和內容片段實現 Adobe Experience Manager (AEM) 的結構，以便跨管道重複使用。
+在這部分中 [AEM Headless開發人員歷程](overview.md)，您將瞭解如何建立內容結構的模型。 然後使用內容片段模型和內容片段實現 Adobe Experience Manager (AEM) 的結構，以便跨管道重複使用。
 
 ## 到目前為止 {#story-so-far}
 
-一開始，[了解 CMS Headless 開發](learn-about.md)介紹 Headless 內容傳遞以及使用它的原因。然後 [AEM Headless as a Cloud Service 快速入門](getting-started.md)以您自己的專案而言描述 AEM Headless 如何運作。
+開始時， [瞭解CMS Headless開發](learn-about.md) 涵蓋Headless內容傳送和使用它的原因。 然後 [AEM Headless as a Cloud Service 快速入門](getting-started.md)以您自己的專案而言描述 AEM Headless 如何運作。
 
-在 AEM Headless 歷程的上一個文件「[踏上首次使用 AEM Headless 之路](path-to-first-experience.md)」中，您接著了解實作第一個專案所需的步驟。閱讀本文件後，您應該：
+在 AEM Headless 歷程的上一個文件「[踏上首次使用 AEM Headless 之路](path-to-first-experience.md)」中，您接著了解實作第一個專案所需的步驟。閱讀本檔案後，您可以執行下列操作：
 
-* 了解設計內容的重要規劃考量事項
-* 了解根據您的整合層級要求實作 Headless 的步驟。
+* 瞭解並解釋設計內容時重要的規劃考量事項
+* 根據您的整合層級需求，瞭解並解說實作Headless的步驟。
 * 設定必要的工具和 AEM 設定。
-* 了解使您的 Headless 歷程順暢、持續高效產生內容以及確保內容快速傳遞的最佳做法。
+* 瞭解最佳實務，讓您能夠讓Headless歷程順暢、保持內容產生效率，並確保內容快速傳送。
 
 本文章以這些基本知識為基礎，以便您了解如何準備您自己的 AEM Headless 專案。
 
@@ -37,19 +37,19 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->資料模型是一個非常大的領域，因為它在開發關聯式資料庫時會用到。有許多書籍和線上資訊來源可供您使用。
+>資料模型是大型欄位，因為開發關聯式資料庫時會用到它。 有許多書籍和線上資訊來源。
 >
->在建立資料模型和 AEM Headless 搭配使用時，我們只考慮感興趣的層面。
+>此歷程只考慮搭配AEM Headless使用資料模型時的興趣層面。
 
 ## 內容模型 {#content-modeling}
 
 *外面的世界很大很糟糕*。
 
-也許是，但也許不是。這肯定是一個&#x200B;***複雜***&#x200B;世界，資料模型用於定義一個非常 (極為) 小的子部分的簡化表示，使用特定目的所需的特定資訊。
+也許是，但也許不是。這當然是 ***複雜*** 「外部世界」和「資料模型」可用來定義非常（非常）小子區段的簡化表示，使用特定用途所需的特定資訊。
 
 >[!NOTE]
 >
->由於 AEM 處理內容，我們將資料模型稱為內容模型。
+>在AEM處理內容時，此歷程將資料模型稱為內容模型。
 
 例如：
 
@@ -68,7 +68,7 @@ ht-degree: 100%
 * 許多課外活動
 * 以此類推....
 
-即使在這麼小的例子中，此清單也似乎無止盡。但是，如果您只想讓您的應用程式執行一項簡單的任務，則需要將資訊限制在最基本的範圍內。
+即使在這樣小的例子中，清單可能看起來沒完沒了。 但是，如果您只希望應用程式執行簡單的工作，請將資訊限制在要件。
 
 例如，為該地區的所有學校宣傳特別活動：
 
@@ -81,9 +81,9 @@ ht-degree: 100%
 
 ### 概念 {#concepts}
 
-您想要描述的內容稱為&#x200B;**實體** - 基本上是我們要儲存關於其資訊的「東西」。
+您想描述的情況稱為 **實體**  — 基本上就是您想要儲存相關資訊的「專案」。
 
-我們想要儲存關於它們的資訊是&#x200B;**屬性**，例如老師的姓名和資格。
+您想儲存的這些資訊是 **屬性** （屬性），例如教師的名稱和資格。
 
 那麼實體之間就是各種&#x200B;**關係**。例如，通常一個學校只有一位校長，還有很多老師 (校長通常也是老師)。
 
@@ -91,9 +91,9 @@ ht-degree: 100%
 
 ### 基本資訊 {#basics}
 
-通常，您需要先繪製描述實體及其關係的&#x200B;**概念性結構描述**。通常這是高層級的 (概念性)。
+通常您必須先繪製 **概念結構** 說明實體及其關係。 通常這是高層級的 (概念性)。
 
-穩定後，您可以將模型轉譯成描述實體、屬性和關係的&#x200B;**邏輯結構描述**。在此層級，您應該仔細檢查定義以消除重複並最佳化您的設計。
+穩定後，您可以將模型轉譯成描述實體、屬性和關係的&#x200B;**邏輯結構描述**。在此層級，請仔細檢查定義，消除重複並最佳化您的設計。
 
 >[!NOTE]
 >
@@ -118,11 +118,7 @@ ht-degree: 100%
 
 最佳化結構，您可以提高內容建立和查詢的效能。
 
-一切都是平衡的行為，但建立的結構若過於複雜或層次過多，可能：
-
-* 讓產內容的作者感到困惑。
-
-* 如果查詢必須存取多個巢狀 (被參考的) 內容片段以擷取所需內容，就會嚴重影響效能。
+一切都是平衡之舉，但建立過於複雜或層級過多之結構，可能會讓產生內容的作者感到困惑。 此外，如果查詢必須存取多個巢狀（參考的）內容片段來擷取所需內容，則可能會嚴重影響效能。
 
 ## AEM Headless 內容模型 {#content-modeling-for-aem-headless}
 
@@ -132,7 +128,7 @@ ht-degree: 100%
 
 為確保您的應用程式能夠始終一致、有效率地從 AEM 要求和接收所需內容，這些內容必須結構化。
 
-這表示您的應用程式預先知道回應採用的格式，因此知道如何處理回應。這比接收自由格式的內容要容易得多，自由格式的內容必須剖析以確定它包含什麼以及如何使用它。
+這表示您的應用程式預先知道回應採用的格式，因此知道如何處理回應。這比接收自由格式內容容易，因為自由格式內容必須經過剖析，才能判斷其中包含的內容，進而決定其使用方式。
 
 ### 運作方式簡介 {#how}
 
@@ -158,7 +154,7 @@ AEM 使用內容片段來提供將內容 Headless 傳遞到應用程式所需的
 內容片段模型描述一個實體。
 
 >[!NOTE]
->您必須在設定瀏覽器中啟用內容片段功能，才能建立新模型。
+>您必須在設定瀏覽器中啟用內容片段功能，才能建立模式。
 
 >[!TIP]
 >
@@ -202,11 +198,11 @@ AEM 提供以下資料類型用於建立內容模型：
 此類型的參考用於建立巢狀內容，引入建立內容模型時所需的關係。
 可以設定此資料類型以允許片段作者：
    * 直接編輯參考的片段。
-   * 根據適當的模型建立新的內容片段
+   * 根據適當的模式建立內容片段
 
 ### 建立內容片段模型 {#creating-content-fragment-models}
 
-一開始您需要為網站啟用內容片段模型，這是在設定瀏覽器中的「工具 -> 一般 -> 設定瀏覽器」中完成的。您可以選擇設定全域項目，也可以建立新設定。例如：
+開始時，您必須啟用網站的內容片段模型。 這是在「 」下的「設定瀏覽器」中完成 **工具** > **一般** > **設定瀏覽器**. 您可以選取來設定全域專案，或建立組態。 例如：
 
 ![定義設定](assets/cfm-configuration.png)
 
@@ -228,17 +224,17 @@ AEM 提供以下資料類型用於建立內容模型：
 
 ### 選擇適當的模型 {#select-model}
 
-實際建立內容的第一步是建立內容片段。這是使用「建立 -> 內容片段」在「資產 -> 檔案」下的所需資料夾中完成的。精靈將引導您完成這些步驟。
+實際建立內容的第一步是建立內容片段。這是使用「建立 -> 內容片段」在「資產 -> 檔案」下的所需資料夾中完成的。精靈會引導您完成這些步驟。
 
 內容片段基於特定的內容片段模型 (建立流程第一步時選取的)。
 
 ### 建立和編輯結構化內容 {#create-edit-structured-content}
 
-建立片段後，您可以在內容片段編輯器中將其開啟。您可以在這裡：
+建立片段後，您可以在內容片段編輯器中將其開啟。您可以在此處執行下列動作：
 
-* 以正常或全螢幕模式編輯您的內容。
-* 將您的內容格式化為全文、純文字或 Markdown。
-* 建立和管理內容不同版本。
+* 以一般或全熒幕模式編輯您的內容。
+* 將內容格式設定為「全文」、「純文字」或「Markdown」。
+* 建立並管理內容的變體。
 * 關聯內容。
 * 編輯中繼資料。
 * 顯示樹狀結構。
@@ -266,14 +262,14 @@ tbc...
 
 ## 下一步 {#whats-next}
 
-現在您已經了解如何為您的結構建立模型，並根據結構模型建立內容，下一步是[了解如何使用 GraphQL 查詢存取和擷取您的內容片段內容](access-your-content.md)。這將介紹和討論 GraphQL，然後查看一些範例查詢以了解實務運作。
+現在您已經了解如何為您的結構建立模型，並根據結構模型建立內容，下一步是[了解如何使用 GraphQL 查詢存取和擷取您的內容片段內容](access-your-content.md)。此課程會介紹並討論GraphQL，然後檢視一些範例查詢，以瞭解實際運作方式。
 
 ## 其他資源 {#additional-resources}
 
 * [使用內容片段](/help/sites-cloud/administering/content-fragments/overview.md) - 內容片段的引領頁面
    * [設定瀏覽器中的內容片段](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser) - 在設定瀏覽器中啟用內容片段功能
    * [內容片段模型](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) - 建立及編輯新內容片段模型
-   * [管理內容片段](/help/sites-cloud/administering/content-fragments/managing.md) - 建立和編寫內容片段，此頁面將引領您到其他詳細章節
+   * [管理內容片段](/help/sites-cloud/administering/content-fragments/managing.md)  — 建立和編寫內容片段；此頁面將引導您前往其他詳細區段
 * [AEM GraphQL 結構描述](access-your-content.md) - GraphQL 如何實現模型
 * [範例內容片段結構](/help/headless/graphql-api/sample-queries.md#content-fragment-structure-graphql)
 * [AEM Headless 快速入門](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) - 此為簡短的教學影片系列，概述如何使用 AEM 的 Headless 功能，包括內容模型和 GraphQL
