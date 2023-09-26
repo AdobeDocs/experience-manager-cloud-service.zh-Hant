@@ -5,10 +5,10 @@ contentOwner: AK
 feature: Asset Management
 role: User,Leader,Architect
 exl-id: 4437f214-d058-4975-8b8f-869a12c8103b
-source-git-commit: d663c258a83473ec8d3c68bc5683955003d889c7
-workflow-type: ht
-source-wordcount: '752'
-ht-degree: 100%
+source-git-commit: a4601d95076d37ed5df79b7c9dabb8beab8353d0
+workflow-type: tm+mt
+source-wordcount: '825'
+ht-degree: 91%
 
 ---
 
@@ -52,6 +52,12 @@ DAM 圖書管理員、開發人員和超級使用者可以繼續使用管理員�
 ![新增標記](assets/newui-overview.svg)
 
 如需了解如何存取資產檢視和管理員檢視帶來的一些簡化操作，請參閱[資產檢視簡介](/help/assets/assets-view-introduction.md)。
+
+## 與Edge Delivery Services的檔案式製作整合 {#integrate-doc-authoring-edge-and-assets}
+
+Edge Delivery可讓您建立快速、吸引人的網站，讓作者可以快速更新及發佈內容，並快速推出新網站。
+
+將AEM Assets與檔案型撰寫功能整合以供Edge Delivery Services使用，讓網站作者在Microsoft Word或Google檔案中撰寫檔案時，能夠使用AEM Assets存放庫中的可用影像。 如需詳細資訊，請參閱 [將AEM Assets與檔案式製作整合](/help/edge/using.md#integrate-assets-edge).
 
 ## 新資產功能 {#whats-new-assets}
 
