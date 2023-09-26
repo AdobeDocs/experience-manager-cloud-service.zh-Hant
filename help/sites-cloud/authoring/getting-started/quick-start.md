@@ -2,12 +2,13 @@
 title: 編寫頁面的快速入門手冊
 description: 快速高階指南，協助您開始編寫頁面內容
 exl-id: d37c9b61-7382-4bf6-8b90-59726b871264
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 53d4e22805774c0b994ee2bba429c19506639014
 workflow-type: tm+mt
 source-wordcount: '1568'
 ht-degree: 6%
 
 ---
+
 
 # 編寫頁面的快速入門手冊 {#quick-guide-to-authoring-pages}
 
@@ -20,6 +21,8 @@ ht-degree: 6%
 
 * [製作概念](/help/sites-cloud/authoring/getting-started/concepts.md)
 * [基本處理](/help/sites-cloud/authoring/getting-started/basic-handling.md)
+
+{{edge-delivery-authoring}}
 
 ## 一些快速提示 {#a-few-quick-hints}
 

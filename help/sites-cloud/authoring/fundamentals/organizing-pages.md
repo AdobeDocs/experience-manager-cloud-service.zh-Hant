@@ -2,12 +2,13 @@
 title: 建立及組織頁面
 description: 瞭解如何使用AEM建立和管理頁面，以組織您的網站。
 exl-id: c57096ca-34fe-4b19-98e0-8f3cd43cf24e
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 53d4e22805774c0b994ee2bba429c19506639014
 workflow-type: tm+mt
 source-wordcount: '2543'
 ht-degree: 4%
 
 ---
+
 
 # 建立及組織頁面 {#creating-and-organizing-pages}
 
@@ -26,6 +27,8 @@ ht-degree: 4%
 >[!TIP]
 >
 >有許多種 [鍵盤快速鍵](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) 您可從網站主控台使用，以便更有效率地組織頁面。
+
+{{edge-delivery-authoring}}
 
 ## 組織您的網站 {#organizing-your-website}
 

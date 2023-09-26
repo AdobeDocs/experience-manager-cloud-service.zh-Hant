@@ -2,16 +2,19 @@
 title: 製作環境和工具
 description: AEM的製作環境提供各種機制來組織和編輯您的內容
 exl-id: cc3bd4cf-93bd-429d-9a2a-4a02a7b42f7c
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 53d4e22805774c0b994ee2bba429c19506639014
 workflow-type: tm+mt
 source-wordcount: '2150'
 ht-degree: 11%
 
 ---
 
+
 # 製作環境和工具 {#authoring-the-environment-and-tools}
 
 AEM的製作環境提供各種機制來組織和編輯您的內容。 提供的工具可從各種主控台和頁面編輯器存取。
+
+{{edge-delivery-authoring}}
 
 ## 管理您的網站 {#managing-your-site}
 

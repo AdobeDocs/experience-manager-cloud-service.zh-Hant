@@ -2,12 +2,13 @@
 title: 編寫概念
 description: 瞭解使用AEM、作者、預覽和發佈環境在Author中編寫的概念。
 exl-id: ee9e4952-e075-4398-b31f-d7886153efff
-source-git-commit: 31e6ec8e9977c8787e14481ee3a94df767262aec
+source-git-commit: 53d4e22805774c0b994ee2bba429c19506639014
 workflow-type: tm+mt
 source-wordcount: '394'
 ht-degree: 4%
 
 ---
+
 
 # 編寫概念 {#authoring-concepts}
 
@@ -20,12 +21,14 @@ AEM 安裝通常至少包含兩個環境：
 
 製作環境提供可在實際發佈內容之前，建立、更新和檢閱此內容的機制：
 
-* 作者建立和檢閱內容。 內容可以是許多不同型別，包括頁面、資產和出版物。
+* 作者建立和檢閱內容。 內容可以是許多不同的型別，包括頁面、資產和出版物。
 * 此內容將在某個時間點發佈至您的網站。
 
 ![作者、發佈者和Dispatcher圖](/help/sites-cloud/authoring/assets/author-publish.png)
 
 在製作環境中，可透過AEM製作使用者介面使用AEM的功能。 對於發佈環境，您可以設計可供使用者使用的介面的完整外觀。
+
+{{edge-delivery-authoring}}
 
 ## 作者環境 {#author-environment}
 

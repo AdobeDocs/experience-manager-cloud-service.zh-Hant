@@ -2,12 +2,13 @@
 title: 編輯頁面內容
 description: 建立頁面後，您可以編輯內容以進行所需的更新
 exl-id: 8af0f621-14e8-4605-a51a-a3be21f19092
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 53d4e22805774c0b994ee2bba429c19506639014
 workflow-type: tm+mt
 source-wordcount: '2983'
 ht-degree: 6%
 
 ---
+
 
 # 編輯頁面內容{#editing-page-content}
 
@@ -31,6 +32,8 @@ ht-degree: 6%
 >[!TIP]
 >
 >當在 **編輯** 模式，會顯示內容中的連結，但 **無法存取**. 使用 [預覽模式](#previewing-pages) 如果您想使用內容中的連結進行導覽。
+
+{{edge-delivery-authoring}}
 
 ## 頁面工具列 {#page-toolbar}
 

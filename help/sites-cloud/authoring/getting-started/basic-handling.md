@@ -2,12 +2,13 @@
 title: 基本處理
 description: 輕鬆瀏覽AEM及其基本用法
 exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
-source-git-commit: 87630d9530194fd0c6d88e05a17db108b765ccb6
+source-git-commit: 53d4e22805774c0b994ee2bba429c19506639014
 workflow-type: tm+mt
 source-wordcount: '2975'
 ht-degree: 6%
 
 ---
+
 
 # 基本處理 {#basic-handling}
 
@@ -17,6 +18,8 @@ ht-degree: 6%
 >
 >* 部分功能並非在所有主控台中提供，部分主控台可能提供其他功能。 有關個別主控台及其相關功能的特定資訊，請參閱其他頁面上的詳細說明。
 >* 在整個AEM環境中都可以使用鍵盤快速鍵。 尤其是當 [使用主控台](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) 和 [編輯頁面](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md).
+
+{{edge-delivery-authoring}}
 
 ## 觸控式UI {#a-touch-enabled-ui}
 
