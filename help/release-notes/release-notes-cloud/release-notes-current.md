@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 最新發行說明�
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 最新發行說明。'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 407afc27911c507d3662fa4897b29e8187bbec7a
+source-git-commit: 4fc6d29cd008b04ad97ceb17201c1f8d0e72439e
 workflow-type: tm+mt
 source-wordcount: '1934'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -77,7 +77,7 @@ You can now assign metadata form to a specific folder within your Assets Essenti
 
 -->
 
-* **大量匯入資料來源的資料**：管理員現在具備[能力可將大量資產 ](/help/assets/bulk-import-assets-view.md) 從資料來源匯入 AEM Assets。管理員不再需要將個別資產或資料夾上傳到 AEM Assets。 支援大量匯入的資料來源包括 Azure、AWS、Google 雲端和 Dropbox。
+* **大量匯入資料來源的資料**：管理員現在具備[能力可將大量資產 ](/help/assets/bulk-import-assets-view.md) 從資料來源匯入 AEM Assets。管理員不再需要將個別資產或資料夾上傳到 AEM Assets。支援大量匯入的資料來源包括 Azure、AWS、Google 雲端和 Dropbox。
 
   ![從資料來源大量匯入資產](/help/release-notes/assets/bulk-import.png)
 
@@ -114,39 +114,39 @@ You can now assign metadata form to a specific folder within your Assets Essenti
 
 ### [!DNL Forms] 中可用的搶鮮版功能 {#pre-release-features-available-in-forms-channel}
 
-* [**Google reCAPTCHA 企業支援**](/help/forms/captcha-adaptive-forms-core-components.md)：以調適型表單使用 Google reCAPTCHA 企業版，以針對詐欺活動和垃圾郵件提供增強的保護，進而提供更安全的使用者體驗。透過進階的風險分析和緊密整合，真實的使用者可輕鬆地提交表單，同時有效地封鎖機器人。
+* [**Google reCAPTCHA 企業支援**](/help/forms/captcha-adaptive-forms-core-components.md)：以最適化表單使用 Google reCAPTCHA 企業版，以針對詐欺活動和垃圾郵件提供增強的保護，進而提供更安全的使用者體驗。透過進階的風險分析和緊密整合，真實的使用者可輕鬆地提交表單，同時有效地封鎖機器人。
 
-* [**Adobe Analytics 與表單的 Experience Cloud Setup Automation**](/help/forms/forms-experience-cloud-setup-automation.md)：您現在只需輕按幾個按鈕，即可啟用 Adob&#x200B;&#x200B;e Analytics 和 Experience Cloud Setup Automation。這能讓您將 AEM Forms as a Cloud Service 與 Experience Platform 標籤和 Adob&#x200B;&#x200B;e Analytics 連接，以擷取和追蹤已發佈表單的效能指標。
+* [**Adobe Analytics 與表單的 Experience Cloud Setup Automation**](/help/forms/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.md)：您現在只需輕按幾個按鈕，即可啟用 Adobe Analytics 和 Experience Cloud Setup Automation。這能讓您將 AEM Forms as a Cloud Service 與 Experience Platform 標籤和 Adobe Analytics 連接，以擷取和追蹤已發佈表單的效能指標。
 
-* [**適用於調適型表單的 Adob&#x200B;&#x200B;e Analytics 報告範本**](/help/forms/view-understand-aem-forms-analytics-reports.md)：Forms as a Cloud Service 現在提供 Adob&#x200B;&#x200B;e Analytics 報告 OOTB。這可幫助您輕鬆了解表單的效能。表單層級的量度可讓您深入了解表單在多個關鍵效能指標 (KPI) 上的表現，例如呈現、訪客、提交、平均填寫時間。透過追蹤使用者行為和意見回饋，您可以識別表單中造成混亂的部份，並指引表單設計和功能的改善。
+* [**適用於最適化表單的 Adobe Analytics 報告範本**](/help/forms/view-understand-aem-forms-analytics-reports.md)：Forms as a Cloud Service 現在提供 Adobe Analytics 報告 OOTB。這可幫助您輕鬆了解表單的效能。表單層級的量度可讓您深入了解表單在多個關鍵效能指標 (KPI) 上的表現，例如呈現、訪客、提交、平均填寫時間。透過追蹤使用者行為和意見回饋，您可以識別表單中造成混亂的部份，並指引表單設計和功能的改善。
 
-  ![調適型表單使用者參與 Adobe Analytics 報告](/help/forms/assets/forms-analytics-report.png)
+  ![最適化表單使用者參與 Adobe Analytics 報告](/help/forms/assets/forms-analytics-report.png)
 
-* **[以核心元件為主的調適型表單中的表單片段](/help/forms/adaptive-form-fragments-core-components.md)**：告別重複的資料、最佳化您的數位庫存，並可改善協作，同時還可使用表單片段提升表單建構體驗。這些可重複使用的元件無縫整合至到多種表單中，簡化了一致且具有專業外觀的表單建立。表單片段透過「一次變更，處處反映」功能確保可重複性、標準化和品牌一致性。由於在一處進行的更新會自動傳播到使用這些片段的所有表單，因此可體驗更高的可維護性和效率。
+* **[以核心元件為主的最適化表單中的表單片段](/help/forms/adaptive-form-fragments-core-components.md)**：告別重複的資料、最佳化您的數位庫存，並可改善協作，同時還可使用表單片段提升表單建構體驗。這些可重複使用的元件無縫整合至到多種表單中，簡化了一致且具有專業外觀的表單建立。表單片段透過「一次變更，處處反映」功能確保可重複性、標準化和品牌一致性。由於在一處進行的更新會自動傳播到使用這些片段的所有表單，因此可體驗更高的可維護性和效率。
 
-* **[更佳的 Adob&#x200B;&#x200B;e Sign 工作流程步驟](/help/forms/aem-forms-workflow-step-reference.md#sign-document-step-sign-document-step)**：Adobe Sign 工作流程步驟經過改善，其中包括：
+* **[更佳的 Adobe Sign 工作流程步驟](/help/forms/aem-forms-workflow-step-reference.md#sign-document-step-sign-document-step)**：Adobe Sign 工作流程步驟經過改善，其中包括：
    * **Adobe Sign 以政府核發 ID 為主的驗證**：Adobe Acrobat Sign 以政府核發 ID 為主的驗證允許使用者使用政府核發的 ID (駕&#x200B;&#x200B;駛執照、國民身份證、護照) 驗證其身份，進而提&#x200B;&#x200B;供更多的驗證防護層。透過運用受信任的身份識別文件，此增強功能可讓簽名過程更添一層信心，使其成為需要增強安全性、合規性和使用者驗證等情況的理想選擇。
 
-   * **Adobe Sign 文件的稽核軌跡**：使用稽核軌跡功能詳細了解 Adob&#x200B;&#x200B;e Sign 文件的生命週期。透過稽核軌跡，您現在可以保留與文件相關的所有動作和互動的全面記錄。其中包括查看、編輯或簽署文件等人員的詳細資訊，以及每個事件的時間戳記。此加強功能對於維持合規性、解決爭議和確保數位協議的完整性至關重要。
+   * **Adobe Sign 文件的稽核軌跡**：使用稽核軌跡功能詳細了解 Adobe Sign 文件的生命週期。透過稽核軌跡，您現在可以保留與文件相關的所有動作和互動的全面記錄。其中包括查看、編輯或簽署文件等人員的詳細資訊，以及每個事件的時間戳記。此加強功能對於維持合規性、解決爭議和確保數位協議的完整性至關重要。
 
    * **協議收件者的新角色不僅僅是簽署人**：Adobe Acrobat Sign 可以選擇將協議收件人的角色擴展到簽署人之外，這樣更可符合其工作流程要求。啟用後，每位協議收件人有其可設定的個別角色，且以簽署人為預設。
 
-* **[使用文件保證 API (通訊 API 的一部分) 保護您的文件](/help/forms/aem-forms-cloud-service-communications-introduction.md#document-assurance-doc-assurance)**：文件保證 API 可讓您透過在文件上簽名和加密來保護敏感資訊。透過加密，文件內容會被轉換為不可讀的格式，確保只有授權的使用者才能存取。這個強化的保護層不僅可以防止重要資料受到未經授權的查看，還可以讓您高枕無憂。簽名 API 可讓您的組織保護所分發和接收 Adob&#x200B;&#x200B;e PDF 文件的安全和隱私。這項服務使用數位簽名和認證來確保只有預期的收件人才能變更文件。
+* **[使用文件保證 API (通訊 API 的一部分) 保護您的文件](/help/forms/aem-forms-cloud-service-communications-introduction.md#document-assurance-doc-assurance)**：文件保證 API 可讓您透過在文件上簽名和加密來保護敏感資訊。透過加密，文件內容會被轉換為不可讀的格式，確保只有授權的使用者才能存取。這個強化的保護層不僅可以防止重要資料受到未經授權的查看，還可以讓您高枕無憂。簽名 API 可讓您的組織保護所分發和接收 Adobe PDF 文件的安全和隱私。這項服務使用數位簽名和認證來確保只有預期的收件人才能變更文件。
 
 * **通訊 API 中的頁數支援**：現在，除了透過通訊 API 擷取文件之外，您還可以接收有關文件內所含頁數的重要資訊。
 
 * **[使用規則編輯器中的自訂錯誤處理常式發生錯誤處理](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)**：您現在可以呼叫自訂函數來回應外部服務傳回的錯誤，並為一般使用者提供量身打造的回應。例如，您可以針對特定錯誤程式碼在後端叫用自訂的工作流程，或通知客戶服務已關閉。
 
-* **[64位元版AEM Forms Designer](/help/forms/installing-configuring-designer.md)**： 64位元版本的AEM Forms Designer提供更優異的效能、擴充能力及記憶體管理，讓您更輕鬆地建立表單。 有了64位元架構，您可以輕鬆處理更大型且更複雜的專案，確保順暢的設計工作流程及最佳化效率。 透過此尖端的發行版本，提升您的外型設計功能，並擁抱AEM Forms Designer的未來。
+* **[AEM Forms Designer 64 位元版本](/help/forms/installing-configuring-designer.md)**：AEM Forms Designer 64 位元版本在效能、可擴充性和記憶體管理方面更為提升，以增強您的表單建立體驗。透過 64 位元架構，您可以輕鬆處理更大、更複雜的專案，確保設計工作流程流暢和最佳效率。透過這最先進的版本，提升您的表單設計能力並擁抱 AEM Forms Designer 的未來。
 
 
 ### 早期採用計劃 {#forms-early-adopter}
 
-* **[使用DocAssurance API （通訊API的一部分）Protect您的檔案](/help/forms/aem-forms-cloud-service-communications-introduction.md#document-assurance-doc-assurance)**：DocAssurance API可讓您簽署及加密檔案，以保護敏感資訊。 透過加密，文件內容會被轉換為不可讀的格式，確保只有授權的使用者才能存取。這個強化的保護層不僅可以防止重要資料受到未經授權的查看，還可以讓您高枕無憂。簽名 API 可讓您的組織保護所分發和接收 Adob&#x200B;&#x200B;e PDF 文件的安全和隱私。這項服務使用數位簽名和認證來確保只有預期的收件人才能變更文件。
+* **[使用 DocAssurance API (通訊 API 的一部分) 保護您的文件](/help/forms/aem-forms-cloud-service-communications-introduction.md#document-assurance-doc-assurance)**：DocAssurance API 可讓您透過在文件上簽名和加密來保護敏感資訊。透過加密，文件內容會被轉換為不可讀的格式，確保只有授權的使用者才能存取。這個強化的保護層不僅可以防止重要資料受到未經授權的查看，還可以讓您高枕無憂。簽名 API 可讓您的組織保護所分發和接收 Adobe PDF 文件的安全和隱私。這項服務使用數位簽名和認證來確保只有預期的收件人才能變更文件。
 
-      您可以從官方電子郵件ID寫信到「aem-forms-early-adopter-program@adobe.com」，以加入率先採用者計畫並請求存取功能。
+      您可以透過您的官方電子郵件 ID 寫信給「aem-forms-early-adopter-program@adobe.com」，加入早期採用者計畫並要求存取該功能。
   
-* **[Headless 調適型](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html)**：使用 Headless 調適型表單讓您的開發人員能夠建立、發佈和管理可透過 API 存取和互動的互動式表單，而不是透過傳統的圖形使用者介面。Headless 調適型表單可協助您：
+* **[Headless 調適型](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html)**：使用 Headless 最適化表單讓您的開發人員能夠建立、發佈和管理可透過 API 存取和互動的互動式表單，而不是透過傳統的圖形使用者介面。Headless 最適化表單可協助您：
 
    * 使用您選擇的程式語言建置高品質的多管道表單
    * 以原生方式將表單整合到您的桌面和行動應用程式、網站和聊天應用程式
@@ -158,7 +158,7 @@ You can now assign metadata form to a specific folder within your Assets Essenti
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
-### CDN 紀錄 {#cdn-logs}
+### CDN 記錄 {#cdn-logs}
 
 從 Cloud Manager 下載 CDN 記錄，這對於快取命中率最佳化和提高內容傳遞流程的可見性非常有用。[了解關於](/help/implementing/developing/introduction/logging.md#cdn-log) CDN 記錄格式。此功能將於 9 月初逐步向客戶推出。
 
