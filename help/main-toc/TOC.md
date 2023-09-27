@@ -8,9 +8,9 @@ user-guide-description: 了解 Experience Manager as a Cloud Service 的運作�
 breadcrumb-title: 使用手冊
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: af7a4a3e23a07e4768192ae7d6308e3c6036ceb6
+source-git-commit: 18d63a9ed1fd52ebcd696a4ec5f635350cacb1c0
 workflow-type: tm+mt
-source-wordcount: '4321'
+source-wordcount: '4268'
 ht-degree: 98%
 
 ---
@@ -331,20 +331,6 @@ ht-degree: 98%
          + [刪除考量事項](/help/sites-cloud/administering/content-fragments/delete-considerations.md)
          + [分析結構](/help/sites-cloud/administering/content-fragments/analysis.md)
          + [鍵盤快速鍵](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md)
-         + [使用內容片段](/help/sites-cloud/administering/content-fragments/content-fragments.md)
-         + [使用內容片段和 GraphQL 的 Headless 傳遞](/help/sites-cloud/administering/content-fragments/content-fragments-graphql.md)
-         + [為您的執行個體啟用內容片段功能](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md)
-         + [內容片段模型](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
-         + [內容片段主控台](/help/sites-cloud/administering/content-fragments/content-fragments-console.md)
-         + [管理內容片段](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md)
-         + [變化 - 編寫片段內容](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md)
-         + [內容片段關聯內容](/help/sites-cloud/administering/content-fragments/content-fragments-assoc-content.md)
-         + [中繼資料 - 片段屬性](/help/sites-cloud/administering/content-fragments/content-fragments-metadata.md)
-         + [內容片段 - 刪除考量事項](/help/sites-cloud/administering/content-fragments/content-fragments-delete.md)
-         + [Markdown](/help/sites-cloud/administering/content-fragments/content-fragments-markdown.md)
-         + [樹狀結構](/help/sites-cloud/administering/content-fragments/content-fragments-structure-tree.md)
-         + [預覽 - JSON 代表](/help/sites-cloud/administering/content-fragments/content-fragments-json-preview.md)
-         + [內容片段主控台 - 鍵盤快速鍵](/help/sites-cloud/administering/content-fragments/content-fragments-console-keyboard-shortcuts.md)
       + 建立網站 {#site-creation}
          + [建立新網站](/help/sites-cloud/administering/site-creation/create-site.md)
          + [啟用前端管道](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md)

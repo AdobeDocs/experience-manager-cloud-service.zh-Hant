@@ -2,7 +2,7 @@
 title: 內容片段
 description: Adobe Experience Manager as a Cloud Service內容片段允許您設計、建立、組織和使用獨立於頁面的內容
 exl-id: 7a44fc4e-3793-4aa3-8c21-db0567c93244
-source-git-commit: 3d20f4bca566edcdb5f13eab581c33b7f3cf286d
+source-git-commit: 18d63a9ed1fd52ebcd696a4ec5f635350cacb1c0
 workflow-type: tm+mt
 source-wordcount: '1286'
 ht-degree: 4%
@@ -159,7 +159,7 @@ Adobe Experience Manager (AEM)as a Cloud Service中的內容片段包括 [已建
 
 ### 使用關聯內容 {#using-associated-content}
 
-如果您有 [關聯內容](/help/sites-cloud/administering/content-fragments/content-fragments-assoc-content.md) 使用 [內容片段](/help/assets/content-fragments/content-fragments.md) 這些資產可從側面板使用（在您將片段放在內容頁面後）。 關聯內容實際上是的特殊內容來源 [中間內容](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments).
+如果您有 [關聯內容](/help/assets/content-fragments/content-fragments-assoc-content.md) 使用 [內容片段](/help/assets/content-fragments/content-fragments.md) 這些資產可從側面板使用（在您將片段放在內容頁面後）。 關聯內容實際上是的特殊內容來源 [中間內容](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments).
 
 >[!NOTE]
 >
