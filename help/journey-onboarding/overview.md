@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service 上線歷程簡介
 description: 從此處開始，逐步引導您了解 AEM as a Cloud Service 的上線流程。
 exl-id: 892577db-05dc-49ff-bb2c-203efdb89c8c
-source-git-commit: d76a0782c72045698e8a595574f9e4c64c3ebaff
+source-git-commit: 7553d3c9f82c8b675af5f704a48bc316ba0d4885
 workflow-type: tm+mt
-source-wordcount: '1220'
-ht-degree: 96%
+source-wordcount: '1221'
+ht-degree: 95%
 
 ---
 
@@ -86,7 +86,7 @@ ht-degree: 96%
 
 >[!NOTE]
 >
->Edge Delivery Services是一組新的可撰寫服務，可啟用快速開發環境，讓作者可以快速更新及發佈，並快速啟動新網站。 若要進一步瞭解Edge Delivery服務，請參閱 [快速入門頁面](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html).
+>Edge Delivery Services是一組全新的可撰寫服務，可啟用彈性、快速的開發環境，讓作者可以快速更新及發佈，並快速啟動新網站。 若要進一步瞭解Edge Delivery服務，請參閱 [快速入門頁面](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html).
 
 ## 下一步 {#what-is-next}
 
