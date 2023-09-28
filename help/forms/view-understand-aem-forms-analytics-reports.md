@@ -6,7 +6,7 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 source-git-commit: 4fc6d29cd008b04ad97ceb17201c1f8d0e72439e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '942'
 ht-degree: 100%
 
