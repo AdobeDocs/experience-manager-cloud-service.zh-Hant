@@ -4,7 +4,7 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 最新發行�
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 source-git-commit: 4fc6d29cd008b04ad97ceb17201c1f8d0e72439e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1934'
 ht-degree: 100%
 
@@ -77,7 +77,7 @@ You can now assign metadata form to a specific folder within your Assets Essenti
 
 -->
 
-* **大量匯入資料來源的資料**：管理員現在具備[能力可將大量資產 ](/help/assets/bulk-import-assets-view.md) 從資料來源匯入 AEM Assets。管理員不再需要將個別資產或資料夾上傳到 AEM Assets。支援大量匯入的資料來源包括 Azure、AWS、Google 雲端和 Dropbox。
+* **大量匯入資料來源的資料**：管理員現在具備[能力可將大量資產](/help/assets/bulk-import-assets-view.md) 從資料來源匯入 AEM Assets。管理員不再需要將個別資產或資料夾上傳到 AEM Assets。支援大量匯入的資料來源包括 Azure、AWS、Google 雲端和 Dropbox。
 
   ![從資料來源大量匯入資產](/help/release-notes/assets/bulk-import.png)
 
