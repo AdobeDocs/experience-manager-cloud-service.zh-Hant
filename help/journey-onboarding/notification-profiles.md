@@ -5,9 +5,9 @@ feature: Onboarding
 role: Admin, User, Developer
 exl-id: 4edecfcd-6301-4a46-98c7-eb5665f48995
 source-git-commit: afb20efe8ed078a508f828c5df4e079f99dfab21
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '989'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -25,11 +25,11 @@ Adobe 有時需要就 AEM as a Cloud Service 環境聯絡使用者。除了產�
 
 >[!NOTE]
 >
->不支援將群組指派給主動通知。 您需要將使用者直接指派給產品設定檔。
+>不支援將群組指派給主動通知。您必須直接將使用者指派到產品設定檔。
 
 為了讓正確的使用者收到這些通知，您需要按照本文件中所述來設定和指派使用者設定檔。
 
-## 必備條件 {#prerequisites}
+## 先決條件 {#prerequisites}
 
 由於使用者設定檔是在 Admin Console 中建立和維護的，因此在針對通知建立設定檔之前，您必須：
 
@@ -148,4 +148,4 @@ Adobe 有時需要就 AEM as a Cloud Service 環境聯絡使用者。除了產�
 
 如果您想要此上線歷程以外的內容，以下是您可選擇的其他資源。
 
-* [行動中心](/help/operations/actions-center.md)- 利用行動中心可便於對事故和其他重要資訊採取行動.
+* [行動中心](/help/operations/actions-center.md)- 利用行動中心可便於對事故和其他重要資訊採取行動。
