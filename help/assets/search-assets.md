@@ -6,10 +6,10 @@ mini-toc-levels: 1
 feature: Search,Metadata,Asset Distribution
 role: User,Admin
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: fb70abb2aa698303c462e38ad3bec10d028f804e
+source-git-commit: c1e115e0fcf7e168c26f810f0803950df50b2c6f
 workflow-type: tm+mt
-source-wordcount: '5532'
-ht-degree: 7%
+source-wordcount: '5561'
+ht-degree: 8%
 
 ---
 
@@ -46,12 +46,26 @@ AEM中的資產搜尋支援下列使用案例，本文介紹這些使用案例�
 ## 瞭解資產搜尋介面 {#searchui}
 
 請熟悉資產搜尋介面和可用的動作。
-
-![瞭解Experience Manager Assets搜尋結果介面](assets/aem_search_results.png)
-
+<!--
+![Understand Experience Manager Assets search results interface](assets/aem_search_results.png)
+-->
+![瞭解Experience Manager Assets搜尋結果介面](assets/aem-search-interface.png)
 *圖：瞭解 [!DNL Experience Manager Assets] 搜尋結果介面。*
 
-**答：** 將搜尋儲存為智慧型集合。 **B.** 篩選或述詞以縮小搜尋結果。 **C.** 顯示檔案、資料夾或兩者。 **D.** 按一下「篩選器」以開啟或關閉左側邊欄。**E.** 搜尋位置為 DAM。**F.** 具有使用者提供的搜尋關鍵字的Omnisearch欄位。 **G.** 選取載入的搜尋結果。 **高。** 搜尋結果總數中顯示的搜尋結果數目。 **I.** 關閉搜尋。 **J.** 在卡片檢視和清單檢視之間切換。
+**答：** 將搜尋儲存為智慧型集合。
+**B.** 篩選或述詞以縮小搜尋結果。
+**C.** 顯示檔案、資料夾或兩者。
+**D.** 搜尋位置為DAM。
+**E.** 存取已儲存的搜尋。
+**F.** 按一下「篩選器」以開啟或關閉左側邊欄。
+**G.** 將資產顯示為預設搜尋。
+**高。** 搜尋位置為DAM。
+**I.** 具有使用者提供的搜尋關鍵字的Omnisearch欄位。
+**J.** 選取載入的搜尋結果。
+**K.** 依建立、修改、名稱、無進行排序。
+**L.** 依遞增或遞減順序排序。
+**月** 搜尋結果總數中顯示的搜尋結果數目。 **否。** 關閉搜尋。
+**O.** 在卡片檢視和清單檢視之間切換。
 
 ### 動態搜尋Facet {#dynamicfacets}
 
@@ -69,7 +83,7 @@ Experience Manager Assets預設會顯示兩個屬性的Facet計數：
 
 截至2023年8月，Experience Manager Assets包含新版9 `damAssetLucene` 索引。 舊版、 `damAssetLucene-8` 在底下，使用 `statistical` 模式，針對每個搜尋面向計數檢查專案範例的存取控制。
 
-`damAssetLucene-9` 變更Oak查詢Facet計數的行為，不再評估基礎搜尋索引傳回之Facet計數的存取控制，進而加快搜尋回應時間。 因此，使用者可能會看到面向計數值，其中包括他們無權存取的資產。 這些使用者無法存取、下載或讀取這些資產的任何其他詳細資訊，包括其路徑，或取得任何有關這些資產的進一步資訊。
+`damAssetLucene-9` 將 Oak Query 面向計數的行為變更為不再評估對基本搜尋指數傳回的面向計數存取控制，這會使搜尋回應時間更快。因此，使用者可能會看到面向計數值，其中包括他們無權存取的資產。 這些使用者無法存取、下載或讀取這些資產的任何其他詳細資訊，包括其路徑，或取得任何有關這些資產的進一步資訊。
 
 如果您需要切換到先前的行為(`statistical` 模式)，請參閱 [內容搜尋與索引](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html) 建立自訂版本的 `damAssetLucene-9` 索引。 Adobe不建議切換至 `secure` 模式，因為對大型結果集的搜尋回應時間造成影響。
 
@@ -140,7 +154,7 @@ Using Smart Tags adds an extra `OR` clause to find any of the search terms as th
 
 ## 設定資產批次大小以顯示搜尋結果 {#configure-asset-batch-size}
 
-管理員現在可以設定在執行搜尋時顯示的資產批次大小。 當您進一步向下捲動以載入結果時，資產搜尋結果會以設定批次大小數字的倍數顯示。 您可以從可用的批次大小中選取200、500和1000個資產。 設定較小的批次大小數字會加快搜尋回應時間。
+管理員現在可在您執行搜尋時設定顯示資產的批次大小。當您進一步向下捲動以載入結果時，資產搜尋結果將以設定的批次大小數字的倍數顯示。您可以從 200、500 和 1000 個資產的可用批次大小中進行選擇。將批次大小設定為較低數字時，會使搜尋回應時間更快。
 
 例如，如果您將結果計數限制設為200個資產的批次大小，當您開始執行搜尋時，Experience Manager Assets會在搜尋結果中顯示200個資產的批次大小。 當您向下捲動以導覽搜尋結果時，將顯示下一批的200個資產。 此程式會持續進行，直到顯示符合搜尋查詢的所有資產為止。
 
@@ -150,7 +164,7 @@ Using Smart Tags adds an extra `OR` clause to find any of the search terms as th
 
 1. 選取結果計數限制並按一下 **[!UICONTROL 儲存]**.
 
-   ![資產批次大小設定](/help/release-notes/assets/assets-batch-size-configuration.png)
+   ![資產批次大小的設定](/help/release-notes/assets/assets-batch-size-configuration.png)
 
 ## 進階搜尋 {#scope}
 
@@ -160,7 +174,10 @@ Using Smart Tags adds an extra `OR` clause to find any of the search terms as th
 
 **在資料夾中搜尋資產**：您可以將搜尋限制在特定資料夾中。 在 **[!UICONTROL 篩選器]** 面板，新增資料夾的路徑。 您一次只能選取一個資料夾。
 
-![在「篩選器」面板中新增資料夾路徑，將搜尋結果限製為資料夾](assets/search_folder_select.gif)
+![在「篩選器」面板中新增資料夾路徑，將搜尋結果限製為資料夾](assets/limiting-search.gif)
+<!--
+![Limit search results to a folder by adding a folder path in Filters panel](assets/search_folder_select.gif)
+-->
 
 *圖：透過在「篩選器」面板中新增資料夾路徑，將搜尋結果限製為資料夾。*
 
@@ -277,7 +294,9 @@ Using Smart Tags adds an extra `OR` clause to find any of the search terms as th
 
 若要存取資產選擇器介面，請前往 `https://[aem_server]:[port]/aem/assetpicker`. 導覽至所需的資料夾，然後選取一或多個資產。 或者，從Omnisearch方塊搜尋所需的資產，視需要套用篩選器，然後選取它。
 
-![在資產選擇器中瀏覽並選取資產](assets/assetpicker.png)
+![在資產選擇器中瀏覽並選取資產](assets/select-asset.png)
+
+<!--![Browse and select asset in the asset selector](assets/assetpicker.png)-->
 
 *圖：瀏覽並選取資產選擇器中的資產。*
 
