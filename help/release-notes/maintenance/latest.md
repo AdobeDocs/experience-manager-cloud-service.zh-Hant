@@ -2,7 +2,7 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的目前維護版本發行說明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的目前維護版本發行說明。'
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: b147c80581bcb554ae0b4ac971c5f98e7160d1df
+source-git-commit: c62ae58240298604e6cd7737678603eb734434b3
 workflow-type: tm+mt
 source-wordcount: '1363'
 ht-degree: 9%
@@ -94,15 +94,9 @@ ht-degree: 9%
 * Forms-10248：在基於核心元件的調適型Forms中，當資料值型別為布林值時設定選項按鈕或核取方塊的值無法如預期運作。
 * Forms-8114： NVDA熒幕助讀程式未正確讀取日期選擇器和模式。 具體來說，當使用NVDA熒幕助讀程式時，不含模式的日期選擇器會正確讀取。 不過，將模式套用至日期選擇器時，會讀取為表格，而非正確解譯。
 
-
-
-
-
-
-
 ### 已知問題 {#known-issues-13665}
 
-無
+無。
 
 ### 內嵌技術 {#embedded-tech-13665}
 
