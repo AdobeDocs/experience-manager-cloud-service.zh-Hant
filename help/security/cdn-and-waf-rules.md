@@ -1,30 +1,30 @@
 ---
-title: 使用WAF規則設定流量篩選規則
-description: 使用流量篩選規則搭配WAF規則來篩選流量
+title: 設定含 WAF 規則的流量篩選規則
+description: 使用含 WAF 規則的流量篩選規則來篩選流量
 source-git-commit: ce7b6922f92208c06f85afe85818574bf2bc8f6d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2709'
-ht-degree: 70%
+ht-degree: 100%
 
 ---
 
 
-# 使用WAF規則設定流量篩選規則以篩選流量 {#configuring-cdn-and-waf-rules-to-filter-traffic}
+# 設定含 WAF 規則的流量篩選規則來篩選流量 {#configuring-cdn-and-waf-rules-to-filter-traffic}
 
 >[!NOTE]
 >
 >此功能尚未正式推出。若要加入正在進行的早期採用者計劃，請寄送電子郵件至 **aemcs-waf-adopter@adobe.com**，郵件內容包括貴組織的名稱以及您對該功能感興趣的原因。
 
-Adobe會嘗試減輕對客戶網站的攻擊，但主動篩選符合特定模式的流量以便讓惡意流量不會到達您的應用程式中，可能會很有用。 可能的方法包括：
+Adobe 試圖減輕針對客戶網站發動的攻擊，但主動篩選和特定模式相符的流量可能有助於阻擋惡意流量，使其無法接觸您的應用程式。可能的方法包括：
 
 * Apache 層模組，例如 `mod_security`
-* 設定透過Cloud Manager的設定管道部署到CDN的流量篩選規則
+* 透過 Cloud Manager 的設定管道設定部署到 CDN 的流量篩選規則
 
-本文會說明流量篩選規則方法。 這些規則大多會根據請求屬性和請求標頭（包括IP、路徑和使用者代理）來封鎖或允許請求。 這些規則可由所有AEMas a Cloud ServiceSites和Forms客戶設定。
+本文介紹流量篩選規則方法。這些規則大部分會根據要求屬性和要求標頭封鎖或允許要求，包括 IP、路徑和使用者代理程式。所有 AEM as a Cloud Service Sites 和 Forms 客戶都可以設定這類規則。
 
-授權WAF （Web應用程式防火牆）附加元件的客戶也可以設定稱為「WAF流量篩選規則」（簡稱WAF規則）的其他規則類別。 這些WAF規則會封鎖符合已知與惡意流量相關聯的各種模式的請求。 請聯絡您的Adobe客戶團隊，以取得授權這項即將推出的功能的詳細資訊。 請注意，早期採用者計劃期間不需要另外取得授權。
+授權 WAF (Web Application Firewall) 附加元件的客戶也可以設定額外的規則類別，稱為「WAF 流量篩選規則」(或簡稱為 WAF 規則)。如果要求符合各種與惡意流量相關的模式，這些 WAF 規則就會封鎖這些要求。請聯絡您的 Adobe 客戶團隊，深入了解如何授權此即將推出的功能。請注意，早期採用者計劃期間不需要另外取得授權。
 
-流量篩選器規則可以部署到生產（非沙箱）計畫中的所有雲端環境型別(RDE、dev、stage、prod)。
+流量篩選規則可以部署到生產 (非沙箱) 計畫中的所有雲端環境類型 (RDE、開發、中繼、生產)。
 
 ## 設定 {#setup}
 
@@ -36,7 +36,7 @@ Adobe會嘗試減輕對客戶網站的攻擊，但主動篩選符合特定模式
            cdn.yaml
    ```
 
-1. `cdn.yaml` 應該包含中繼資料，以及流量篩選器規則和WAF規則的清單。
+1. `cdn.yaml` 應包含中繼資料以及流量篩選規則和 WAF 規則的清單。
 
    ```
    kind: "CDN"
@@ -49,12 +49,12 @@ Adobe會嘗試減輕對客戶網站的攻擊，但主動篩選符合特定模式
          ...
    ```
 
-「kind」參數應設定為「CDN」，版本則應設定為綱要版本，目前是「1」。請參閱下面的範例。
+「kind」參數應設定為「CDN」，版本則應設定為綱要版本，目前是「1」。請進一步參閱下方範例。
 
 
 <!-- Two properties -- `envType` and `envId` -- may be included to limit the scope of the rules. The envType property may have values "dev", "stage", or "prod", while the envId property is the environment (e.g., "53245"). This approach is useful if it is desired to have a single configuration pipeline, even if some environments have different rules. However, a different approach could be to have multiple configuration pipelines, each pointing to different repositories or git branches. -->
 
-1. 若要設定WAF規則，則必須在Cloud Manager中啟用WAF，如以下針對新方案和現有方案方案方案方案所述。 請注意，必須為 WAF 購買單獨的授權。
+1. 若要設定 WAF 規則，必須在 Cloud Manager 中啟用 WAF (如下所述)，對於新的和現有的計劃案例都適用。請注意，必須為 WAF 購買單獨的授權。
 
    1. 若要對新計畫設定 WAF，請勾選「**WAF-DDOS 防護**」核取方塊 (在&#x200B;**安全性**&#x200B;索引標籤中)，如下所示。繼續依照「[新增生產計劃](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)」中說明的步驟進行，以建立您的計畫
 
@@ -70,7 +70,7 @@ Adobe會嘗試減輕對客戶網站的攻擊，但主動篩選符合特定模式
    1. 為您的管道命名並選取部署觸發器，然後選取「**繼續**」
    1. 在「**原始程式碼**」索引標籤中，選取「**目標性部署**」，然後選取「**設定**」
 
-      ![選取目標部署](/help/security/assets/target-deployment.png)
+      ![選取目標性部署](/help/security/assets/target-deployment.png)
 
    1. 根據需要選取存放庫和分支。如果選取環境中存在設定管道，則此選項會停用。
 
@@ -78,19 +78,19 @@ Adobe會嘗試減輕對客戶網站的攻擊，但主動篩選符合特定模式
 
       >[!NOTE]
       >
-      > 使用者必須以部署管理員身分登入，才能設定或執行這些管道。
-      > 此外，每個環境只能設定和執行一個設定管道。
+      > 使用者必須以部署管理員角色登入才能設定或執行這些管道。
+      > 此外，每個環境只能設定並執行一個設定管道。
 
    1. 選取&#x200B;**儲存**。您的新管道即會顯示在管道卡中，並可在您就緒後執行。
-   1. 對於RDE，將使用命令列，但目前不支援RDE。
+   1. 若為 RDE，會使用命令列，但目前不支援 RDE。
 
-## 流量篩選器規則語法 {#rules-syntax}
+## 流量篩選規則語法 {#rules-syntax}
 
-您可以設定 `traffic filter rules` 以比對IP、使用者代理、請求標題、主機名稱、地理和url等模式。
+您可以將 `traffic filter rules` 設定為符合 IPS、使用者代理、要求標頭、主機名稱、地理位置和 URL 等模式。
 
-授權WAF產品的客戶也可設定流量篩選規則的特殊類別，稱為 `WAF traffic filter rules` 參照一或多個WAF旗標的（簡稱WAF規則），這些旗標會列在它自己的以下區段中。
+授權 WAF 產品許可的客戶也可以設定特殊類別的流量篩選規則，稱為 `WAF traffic filter rules` (或簡稱為 WAF 規則)，其參考一個或多個 WAF 標幟，這些標幟列在以下其所屬小節中。
 
-以下是流量篩選規則集的範例，其中也包含WAF規則。
+以下是一組流量篩選規則的範例，其中也包括 WAF 規則。
 
 ```
 kind: "CDN"
@@ -111,14 +111,14 @@ data:
           wafFlags: [ SQLI, XSS]
 ```
 
-cdn.yaml檔案中流量篩選規則的格式如下所述。 請參閱稍後章節中的一些範例。
+cdn.yaml 檔案中流量篩選規則的格式如下所述。請參閱後面小節中的一些範例。
 
 
-| **屬性** | **大多數流量篩選規則** | **WAF流量篩選規則** | **類型** | **預設值** | **說明** |
+| **屬性** | **大部分流量篩選規則** | **WAF 流量篩選規則** | **類型** | **預設值** | **說明** |
 |---|---|---|---|---|---|
 | 名稱 | X | X | `string` | - | 規則名稱 (64 個字元的長度，只能包含英數字元和 -) |
 | 時間 | X | X | `Condition` | - | 基本結構是：<br><br>`{ <getter>: <value>, <predicate>: <value> }`<br><br>請參閱下面的條件結構語法，其中會說明 getter、述詞以及結合多個條件的方式。 |
-| 動作 | X | X | `Action` | 記錄 | log、allow、block、log或action物件預設為log |
+| 動作 | X | X | `Action` | 記錄 | log、allow、block、log 或 action 物件，預設為 log |
 | rateLimit | X |   | `RateLimit` | 未定義 | 速率限制設定。若未定義，則停用速率限制。<br><br>以下會有一個單獨的章節說明 rateLimit 語法以及範例。 |
 
 ### 條件結構 {#condition-structure}
@@ -174,23 +174,23 @@ cdn.yaml檔案中流量篩選規則的格式如下所述。 請參閱稍後章�
 
 ### 動作結構 {#action-structure}
 
-指定者 `action` 欄位，可以是指定動作型別（允許、區塊、記錄）的字串，並假設所有其他選項的預設值，或是定義規則型別的物件，透過 `type` 必填欄位，以及適用於該型別的其他選項。
+由 `action` 欄位指定，可以是字串，此字串會指定動作類型 (允許、封鎖、記錄) 並假設所有其他選項使用預設值，也可以是物件，在其中規則類型是透過 `type` 必要欄位所定義以及適用該類型的其他選項。
 
-**動作型別**
+**動作類型**
 
-動作會根據其在下表中的型別來排定優先順序，此排序方式反映動作的執行順序：
+動作根據下表中的類型排定優先順序，以反映動作的執行順序：
 
 | **名稱** | **允許的屬性** | **含義** |
 |---|---|---|
-| **允許** | `wafFlags` (可選) | 如果wafFlags不存在，將停止進一步的規則處理並繼續提供回應。 如果wafFlags存在，它會停用指定的WAF保護並繼續進一步的規則處理。 |
-| **區塊** | `status, wafFlags` （選擇性且互斥） | 如果wafFlags不存在，會傳回HTTP錯誤，略過所有其他屬性，錯誤碼會由status屬性定義或預設為406。 如果wafFlags存在，它會啟用指定的WAF保護並繼續進一步的規則處理。 |
-| **記錄** | `wafFlags` (可選) | 會記錄規則已觸發的事實，否則不會影響處理。 wafFlags無效 |
+| **允許** | `wafFlags` (可選) | 如果沒有 wafFlags，則停止進一步處理規則並繼續提供回應。如果有 wafFlags，它將停用指定的 WAF 保護並繼續進一步處理規則。 |
+| **封鎖** | `status, wafFlags` (可選且互斥) | 如果沒有 wafFlags，則繞過所有其他屬性傳回 HTTP 錯誤，錯誤代碼由狀態屬性定義或預設為 406。如果有 wafFlags，它將啟用指定的 WAF 保護並繼續進一步處理規則。 |
+| **記錄** | `wafFlags` (可選) | 記錄規則已觸發的事實，否則不影響處理作業。wafFlags 沒有影響 |
 
-### WAF旗標清單 {#waf-flags-list}
+### WAF 標幟清單 {#waf-flags-list}
 
-此 `wafFlag` 屬性可能包含下列專案：
+`wafFlag` 屬性可能包括以下項目：
 
-| **旗標ID** | **標幟名稱** | **說明** |
+| **標幟 ID** | **標幟名稱** | **說明** |
 |---|---|---|
 | SQLI | SQL 注入 | SQL 注入指試圖透過執行任意資料庫查詢以取得對應用程式的存取權或獲取特權資訊。 |
 | BACKDOOR | 後門 | 後門訊號指試圖決定系統是否存在常見後門檔案的要求。 |
@@ -227,7 +227,7 @@ cdn.yaml檔案中流量篩選規則的格式如下所述。 請參閱稍後章�
 
 * 如果規則相符並遭封鎖，CDN 會以 `406` 傳回代碼回應。
 
-* 組態檔不應包含秘密，因為任何有權存取Git存放庫的人都能讀取。
+* 設定檔不應包含密碼，因為任何有權存取 git 存放庫的人都可以讀取。
 
 ## 規則範例 {#examples}
 
@@ -320,7 +320,7 @@ data:
 
 **範例 4**
 
-此規則會封鎖對OFAC國家/地區的存取權：
+此規則會封鎖對 OFAC 國家的存取：
 
 ```
 kind: "CDN"
@@ -362,13 +362,13 @@ data:
 | 限制 | 10 到 10000 之間的整數 | 必要 | 觸發規則的要求速率 (以每秒要求數為單位). |
 | 視窗 | 整數列舉：1、10 或 60 | 10 | 計算要求速率的取樣期間 (秒數). |
 | 懲罰 | 60 到 3600 之間的整數 | 300 (5 分鐘) | 封鎖相符要求時間的秒數 (四捨五入到最接近的分鐘). |
-| groupBy | 陣列[Getter] | 無 | 速率限制器計數器將依一組請求屬性（例如clientIp）彙總。 |
+| groupBy | array[Getter] | 無 | 速率限制器計數器將由一組要求屬性 (例如 clientIp) 彙總。 |
 
 ### 範例 {#ratelimiting-examples}
 
 **範例 1**
 
-在過去60秒內，當使用者端超過每秒100個請求時，此規則會封鎖5m的使用者端：
+當用戶端在過去 60 秒內超過 100 個要求/秒時，此規則將封鎖用戶端 5m：
 
 ```
 kind: "CDN"
@@ -392,7 +392,7 @@ data:
 
 **範例 2**
 
-封鎖路徑/critical/resource上在過去60秒內超過100個要求/秒時的60個要求：
+當過去 60 秒內超過 100 個要求/秒時，就會封鎖路徑 /重要/資源上的要求 60 秒：
 
 ```
 kind: "CDN"
@@ -409,11 +409,11 @@ data:
         rateLimit: { limit: 100, window: 60, penalty: 60 }
 ```
 
-## CDN 紀錄 {#cdn-logs}
+## CDN 記錄 {#cdn-logs}
 
-AEM as a Cloud Service 會提供對 CDN 紀錄的存取權，這對於包括快取命中率最佳化以及設定 CDN 和 WAF 規則等使用案例都非常有幫助。選取作者或發佈服務時，CDN 紀錄會顯示在 Cloud Manager **下載紀錄**&#x200B;對話框中。
+AEM as a Cloud Service 會提供對 CDN 記錄的存取權，這對於包括快取命中率最佳化以及設定 CDN 和 WAF 規則等使用案例都非常有幫助。選取作者或發佈服務時，CDN 記錄會顯示在 Cloud Manager **下載記錄**&#x200B;對話框中。
 
-「規則」屬性說明哪些流量篩選器規則相符，其模式如下：
+「rules」屬性描述了要符合哪些流量篩選規則，並具有以下模式：
 
 ```
 "rules": "match=<matching-customer-named-rules-that-are-matched>,waf=<matching-WAF-rules>,action=<action_type>"
@@ -425,16 +425,16 @@ AEM as a Cloud Service 會提供對 CDN 紀錄的存取權，這對於包括快�
 "rules": "match=Block-Traffic-under-private-folder,Enable-SQL-injection-everywhere,waf="SQLI,SANS",action=block"
 ```
 
-規則的行為方式如下：
+這些規則的行為方式如下：
 
-* 任何相符規則的客戶宣告規則名稱都會列在matches屬性中。
-* action屬性詳細說明規則是否具有封鎖、允許或記錄的效果。
-* 如果WAF已授權並啟用，則waf屬性會列出偵測到的任何waf規則（例如SQLI；請注意，這與客戶宣告的名稱無關），無論組態中是否列出了waf規則。
-* 如果沒有相符的客戶宣告規則以及沒有相符的waf規則，則rules屬性屬性將為空白。
+* 任何符合的規則其客戶宣告規則名稱將在 matches 屬性中列出。
+* action 屬性詳細說明規則是否具有封鎖、允許或記錄的影響。
+* 如果 WAF 已獲得授權並啟用，則 WAF 屬性將列出偵測到的所有 WAF 規則 (例如 SQLI；請注意，這與客戶宣告的名稱無關)，無論這些 WAF 規則是否列在設定中。
+* 如果沒有客戶宣告的規則相符且沒有 WAF 規則相符，則規則屬性將為空。
 
-一般而言，無論是否為CDN點選、通過或錯過，對CDN的所有請求都會在記錄專案中顯示相符的規則。 但是，會顯示 WAF 規則的紀錄條目僅限於發送給被視為 CDN 未命中或通過但不被視為 CDN 命中的 CDN 要求。
+一般而言，相符的規則會顯示在對 CDN 發出的所有要求的記錄條目中，無論是 CDN 命中、通過還是未命中。但是，會顯示 WAF 規則的記錄條目僅限於發送給被視為 CDN 未命中或通過但不被視為 CDN 命中的 CDN 要求。
 
-以下範例顯示一個cdn.yaml範例和兩個CDN記錄專案：
+以下範例顯示了一個範例 cdn.yaml 和兩個 CDN 記錄條目：
 
 
 ```
@@ -495,14 +495,14 @@ data:
 }
 ```
 
-### 紀錄格式 {#cdn-log-format}
+### 記錄格式 {#cdn-log-format}
 
-以下是 CDN 紀錄中使用的欄位名稱清單以及簡要說明。
+以下是 CDN 記錄中使用的欄位名稱清單以及簡要說明。
 
 | **欄位名稱** | **說明** |
 |---|---|
 | *timestamp* | TLS 終止後要求開始的時間. |
-| *ttfb* | *首位元組時間 (Time To First Byte)* 的縮寫。 發出要求開始到回應內文開始串流的時間之間的時間間隔。 |
+| *ttfb* | *首位元組時間 (Time To First Byte)* 的縮寫。發出要求開始到回應內文開始串流的時間之間的時間間隔。 |
 | *cli_ip* | 用戶端 IP 位址。 |
 | *cli_country* | 雙字母 [ISO 3166-1](https://en.wikipedia.org/wiki/ISO_3166-1) 用戶端國家/地區的 alpha-2 國家/地區代碼。 |
 | *rid* | 用於唯一識別要求的要求標頭的值。 |
@@ -515,4 +515,4 @@ data:
 | *狀態* | 作為整數值的 HTTP 狀態代碼。 |
 | *res_age* | 回應已經 (在所有的節點) 快取的時間量 (以秒為單位)。 |
 | *pop* | CDN 快取伺服器的資料中心。 |
-| *rules* | 任何相符規則的名稱。<br><br>還會指出該相符程度是否導致封鎖。<br><br>例如，「`match=Enable-SQL-Injection-and-XSS-waf-rules-globally,waf=SQLI,action=blocked`」<br><br>如果沒有相符的規則，則為空白。 |
+| *rules* | 任何符合的規則其名稱。<br><br>還會指出該相符程度是否導致封鎖。<br><br>例如，「`match=Enable-SQL-Injection-and-XSS-waf-rules-globally,waf=SQLI,action=blocked`」<br><br>如果沒有相符的規則，則為空白。 |
