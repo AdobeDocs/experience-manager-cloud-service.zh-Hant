@@ -2,16 +2,17 @@
 title: Formsas a Cloud Service通訊簡介
 description: 自動將資料與 XDP 和 PDF 範本合併，或產生 PCL、ZPL 和 PostScript 格式的輸出
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: a635a727e431a73086a860249e4f42d297882298
+Keywords: How to generate document?, Generate PDF document, Manipulation PDF documents, Assembling PDF documents, Validating PDF document, APIs used in encrypting or decrypting PDFs
+source-git-commit: 7c197be7819d6fcbf028237401d05236f90734d1
 workflow-type: tm+mt
-source-wordcount: '1475'
-ht-degree: 75%
+source-wordcount: '1426'
+ht-degree: 80%
 
 ---
 
+
 # AEM Formsas a Cloud Service通訊簡介 {#frequently-asked-questions}
 
-<span class="preview"> [DocAssurance服務](#doc-assurance) 是搶鮮版功能，並可透過 [發行前通道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). 功能的檔案內容可能會有所變更。</span>
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
@@ -159,16 +160,13 @@ You can [query a PDF document](https://developer.adobe.com/experience-manager-fo
 
 The [PDF to XDP API](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/references/pdf-utility-sync/#tag/Document-Conversion) converts a PDF document to an XDP file. For a PDF document to be successfully converted to an XDP file, the PDF document must contain an XFA stream in the dictionary. -->
 
-
-<span class="preview"> 檔案保證服務是發行前功能，可透過我們的以下網站存取： [發行前通道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). 功能的檔案內容可能會有所變更。</span>
-
 ## 檔案保證 {#doc-assurance}
 
 DocAssurance服務包含簽名和加密API：
 
 ### 簽名API
 
-簽名API可讓您的組織保護其發佈和接收Adobe PDF檔案的安全性和隱私權。 此服務使用數位簽名和憑證，以確保只有預期的收件者才能變更檔案。 因為安全功能會套用至檔案本身，所以檔案在其整個生命週期中都會保持安全及受控。 當檔案離線下載以及將它送回您的組織時，防火牆外仍會保持安全。 您可以使用簽名API完成以下任務：
+簽名 API 可讓您的組織保護所分發和接收 Adobe PDF 文件的安全和隱私。這項服務使用數位簽名和認證來確保只有預期的收件人才能變更文件。因為安全功能會套用至檔案本身，所以檔案在其整個生命週期中都會保持安全及受控。 當檔案離線下載以及將它送回您的組織時，防火牆外仍會保持安全。 您可以使用簽名API完成以下任務：
 
 * 新增簽名欄位至PDF檔案。
 * 在PDF檔案中簽署指定的簽名欄位。
@@ -302,3 +300,9 @@ If you attempt to flatten a non-interactive PDF document, an exception occurs.
 An interactive PDF document contains various elements that constitute a form. These elements may include fields (to accept or display data), buttons (to trigger events), and scripts (commands to perform a specific action). Clicking a button may trigger an event that changes the state of a field. For example, choosing a gender option may change the color of a field or the appearance of the form. This is an example of a manual event causing the form state to change.
 
 When such an interactive PDF document is flattened using the Communications APIs, the state of the form is not retained. To ensure that the state of the form is retained even after the form is flattened, set the Boolean value _retainFormState_ to True to save and retain the state of the form.  -->
+
+## 另請參閱 {#see-also}
+
+
+* [通訊處理 — 同步API](/help/forms/aem-forms-cloud-service-communications.md)
+* [通訊處理 — 批次API](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)

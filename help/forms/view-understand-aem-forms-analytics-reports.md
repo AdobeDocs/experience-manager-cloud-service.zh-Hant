@@ -1,21 +1,25 @@
 ---
 title: 檢視並了解 Adaptive Forms 分析報告
 description: 最適化表單可順暢地與 Adobe Analytics 整合，以擷取和追蹤已發佈表單和文件的效能量度。
+keywords: 檢視並了解 Adaptive Forms 分析報告，Adobe分析報表， Forms Analytics報表
 topic-tags: develop
 feature: Adaptive Forms
 role: User
 level: Intermediate
-source-git-commit: 4fc6d29cd008b04ad97ceb17201c1f8d0e72439e
-workflow-type: ht
-source-wordcount: '942'
-ht-degree: 100%
+source-git-commit: 7c197be7819d6fcbf028237401d05236f90734d1
+workflow-type: tm+mt
+source-wordcount: '988'
+ht-degree: 97%
 
 ---
 
 
 # 檢視並了解 Adaptive Forms 分析報告 {#viewing-and-understanding-aem-forms-analytics-reports}
 
-<span class="preview">這是一項預先發佈功能，可透過我們的[預先發佈管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features)存取。</span>
+| 版本 | 文章連結 |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service  | 本文章 |
+| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/integrate-aem-forms-with-experience-cloud-solutions/view-understand-aem-forms-analytics-reports.html) |
 
 在快速發展的數位分析領域，跟上全球趨勢對於做出明智的決策和優化數位體驗至關重要。為此，最適化表單可順暢地與 Adobe Analytics 整合，以擷取和追蹤已發佈表單和文件的效能量度。分析這些量度的目的是做出資料導向式決策，使用量度和分析來增強表單的可用性和有效性。
 
@@ -102,3 +106,9 @@ Adobe Analytics 提供了一系列全面的最適化表單效能量度，旨在�
 可以協助您分析使用者在捨棄表單之前花時間造訪的表單欄位。例如，在下圖中，5 個捨棄表格中，2 個停在&#x200B;**全名**&#x200B;欄位、2 個停在&#x200B;**電話號碼**&#x200B;欄位、1 個停在&#x200B;**文字輸入**&#x200B;欄位。
 
 ![欄位訪客](assets/field-visitors.png){width="100%"}
+
+## 另請參閱 {#see-also}
+
+* [使用 Experience Cloud Setup Automation 為最適化表單啟用 Adobe Analytics](/help/forms/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.md)
+* [新增最適化表單至 AEM Sites 頁面或體驗片段](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+* [將AEM Forms與Adobe Analytics整合](/help/forms/integrate-aem-forms-with-adobe-analytics.md)

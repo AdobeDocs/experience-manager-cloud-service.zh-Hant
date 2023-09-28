@@ -3,9 +3,9 @@ title: AEM as a Cloud Service 中的快取
 description: 瞭解AEMas a Cloud Service快取的基本概念
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
+source-git-commit: a6714e79396f006f2948c34514e5454fef84b5d8
 workflow-type: tm+mt
-source-wordcount: '2800'
+source-wordcount: '2803'
 ht-degree: 1%
 
 ---
@@ -203,16 +203,18 @@ AEM層預設不會快取blob內容。
 
 ### 行銷活動引數 {#marketing-parameters}
 
-網站URL常包含用來追蹤促銷活動成功的行銷活動引數。 若要有效使用Dispatcher快取，建議您設定 `ignoreUrlParams` 屬性為 [在此處記錄](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#ignoring-url-parameters).
+網站URL常包含用來追蹤促銷活動成功的行銷活動引數。
 
-此 `ignoreUrlParams` 區段必須取消註解，並應參考檔案 `conf.dispatcher.d/cache/marketing_query_parameters.any`. 您可取消註解行銷管道相關引數的對應行，以修改檔案。 您也可以新增其他引數。
+對於在2023年10月或之後建立的環境，為了更好的快取要求，CDN將移除常見的行銷相關查詢引數，特別是符合下列規則運算式模式的引數：
 
 ```
-/ignoreUrlParams {
-{{ /0001 { /glob "*" /type "deny" }}}
-{{ $include "../cache/marketing_query_parameters.any"}}
-}
+^(utm_.*|gclid|gdftrk|_ga|mc_.*|trk_.*|dm_i|_ke|sc_.*|fbclid)$
 ```
+
+如果您希望停用此行為，請提交支援票證。
+
+對於2023年10月之前建立的環境，建議設定Dispatcher設定的 `ignoreUrlParams` 屬性為 [在此處記錄](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#ignoring-url-parameters).
+
 
 ## Dispatcher快取失效 {#disp}
 
@@ -304,8 +306,8 @@ Adobe建議您仰賴標準快取標頭來控制內容傳送生命週期。 不�
      <ol>
        <li>發佈內容並讓快取失效。</li>
        <li>從作者/發佈層 — 移除內容並使快取失效。</li>
-       <li><p><strong>從作者階層</strong>  — 移除內容並讓快取失效（如果從發佈代理程式上的AEM作者層級觸發）。</p>
-           <p><strong>從發佈階層</strong>  — 僅讓快取失效（如果從Flush或Resource-only-flush代理程式上的AEM Publish層觸發的話）。</p>
+       <li><p><strong>從作者階層</strong>  — 移除內容並使快取失效(如果從發佈代理程式上的AEM製作層觸發)。</p>
+           <p><strong>從發佈階層</strong>  — 僅讓快取失效(如果從Flush或Resource-only-flush代理程式上的AEM發佈層觸發)。</p>
        </li>
      </ol>
      </td>

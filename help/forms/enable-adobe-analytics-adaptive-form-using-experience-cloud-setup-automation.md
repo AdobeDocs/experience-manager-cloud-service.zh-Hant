@@ -1,20 +1,23 @@
 ---
 title: 為最適化表單啟用 Adobe Analytics
 description: Experience Cloud Setup Automation 可協助將 Adobe Analytics 連接到最適化表單，以追蹤關於訪客互動和參與度的深入見解。
-source-git-commit: 4fc6d29cd008b04ad97ceb17201c1f8d0e72439e
+keywords: 使用 Experience Cloud Setup Automation 為最適化表單啟用 Adobe Analytics，啟用Forms中的Adobe Analytics、Adaptive Forms中的Adobe Analytics、Forms Analytics整合、Forms和Adobe Analytics
+source-git-commit: 4daba42c9d8a7eff5d3ef6f9581c52c787666ed1
 workflow-type: tm+mt
-source-wordcount: '1534'
-ht-degree: 60%
+source-wordcount: '1591'
+ht-degree: 59%
 
 ---
 
 
 # 使用 Experience Cloud Setup Automation 為最適化表單啟用 Adobe Analytics {#integrate-adobe-analytics-to-aem-forms-with-experience-cloud-setup-automation}
 
-<span class="preview">這是一項預先發佈功能，可透過我們的[預先發佈管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features)存取。</span>
+| 版本 | 文章連結 |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service  | 本文章 |
+| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/integrate-aem-forms-with-experience-cloud-solutions/configure-analytics-forms-documents.html) |
 
 Experience Cloud Setup Automation 可協助將 Adobe Analytics 連接到最適化表單，這有助於追蹤和分析使用者與表單的互動，並提供關於訪客互動和參與度的深入見解。Experience Cloud Setup Automation 也可協助監控表單效能，其中涉及評估像是完成時間和退出點等量度。此分析有助於優化表單以提供更好的使用者體驗，同時根據登入狀態 (例如匿名使用者) 區分使用者行為，以識別整體趨勢和模式。
-
 
 ## 將 Adobe Analytics 整合至最適化表單的優勢 {#advantages-of-integrating-adobe-analytics-with-aem-forms}
 
@@ -76,7 +79,7 @@ Experience Cloud設定自動化需要 **Adobe Analytics授權**， **資料收�
 * [為以基礎元件為主的最適化表單啟用 Adobe Analytics](#integrate-adobe-analytics-with-aem-forms-for-foundation-component)
 * [為以核心元件為主的最適化表單啟用 Adobe Analytics](#integrate-adobe-analytics-with-aem-forms-for-core-components)
 
->[!VIDEO](https://video.tv.adobe.com/v/3424577/recaptcha-google-adaptive-forms/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3424577/enable-adobe-analytics/?quality=12&learn=on)
 
 
 <!--
@@ -102,7 +105,7 @@ Experience Cloud設定自動化需要 **Adobe Analytics授權**， **資料收�
    >如果設定程序超過 15 分鐘，請重新嘗試為您的表單啟用分析功能。
 
 1. 在您的 AEM 執行個體上，前往 **[!UICONTROL Forms]** >> **[表單和文件]**，並選取您的&#x200B;**[!UICONTROL 表單]**，您會看到 Adobe Analytics 已整合至您的表單，如下圖所示。
-1. 現在您可以檢視您的[最適化表單  Adobe Analytics 報告](#view-adobe-analytics-report)。
+1. 現在您可以檢視您的[最適化表單 Adobe Analytics 報告](#view-adobe-analytics-report)。
 
 ![整合的 AEM Analytics](assets/analytics-aem-integrated.png){width="100%"}
 
@@ -119,7 +122,7 @@ Experience Cloud設定自動化需要 **Adobe Analytics授權**， **資料收�
    >如果設定程序超過 15 分鐘，請重新嘗試為您的表單啟用分析功能。
 
 1. 在您的 AEM 執行個體上，前往 **[!UICONTROL Forms]** >> **[!UICONTROL 表單和文件]**，並選取您的&#x200B;**[!UICONTROL 表單]**，您會看到 Adobe Analytics 已整合至您的表單。
-1. 現在您可以檢視您的 [最適化表單 Adobe Analytics 報告](#view-adobe-analytics-report).
+1. 現在您可以檢視您的[最適化表單 Adobe Analytics 報告](#view-adobe-analytics-report)。
 
 ## 檢視最適化表單 Adobe Analytics 報告 {#view-adobe-analytics-report}
 
@@ -219,14 +222,20 @@ Experience Cloud設定自動化需要 **Adobe Analytics授權**， **資料收�
 
 ## Best Practices
 
-1.	Verify that Adobe Analytics is enabled on all the forms activated for Adobe Analytics.
+1.    Verify that Adobe Analytics is enabled on all the forms activated for Adobe Analytics.
 
-1.	Check the Adobe Analytics report periodically to gain insights into user behavior and form performance. For instance, you may set the cadence to 15 days or the period you prefer to choose for report analysis. This enables you to improve the forms enrollment experience.
+1.    Check the Adobe Analytics report periodically to gain insights into user behavior and form performance. For instance, you may set the cadence to 15 days or the period you prefer to choose for report analysis. This enables you to improve the forms enrollment experience.
 
-1.	Enable Analytics for all or most of your forms for tracking and analyzing user interaction with your forms and to gain insights into visitor interactions and engagement.
+1.    Enable Analytics for all or most of your forms for tracking and analyzing user interaction with your forms and to gain insights into visitor interactions and engagement.
 
 1. Check your forms performance after you update your form fields or components.
 
-1.	Share Analytics report with your peer groups for review, you can schedule your report for a later time.
+1.    Share Analytics report with your peer groups for review, you can schedule your report for a later time.
 
 -->
+
+## 另請參閱 {#see-also}
+
+* [檢視和瞭解最適化Forms分析報表](/help/forms/view-understand-aem-forms-analytics-reports.md)
+* [新增最適化表單至 AEM Sites 頁面或體驗片段](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+* [將AEM Forms與Adobe Analytics整合](/help/forms/integrate-aem-forms-with-adobe-analytics.md)
