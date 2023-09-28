@@ -6,7 +6,7 @@ exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
 source-git-commit: a5e8c11340ab5eacdefb22da302f9e35d9429bc7
 workflow-type: tm+mt
 source-wordcount: '443'
-ht-degree: 75%
+ht-degree: 92%
 
 ---
 
@@ -25,8 +25,8 @@ AEM as a Cloud Service 中的 Cloud Manager 版本 2023.9.0 發行日期是 2023
 
 ## 新增功能 {#what-is-new}
 
-* CDN記錄檔（若有）可透過Cloud Manager UI下載。
-* 使用者現在可以選擇加入，將Google Lighthouse支援的體驗稽核測試納入非生產用的完整棧疊管道中。
+* CDN 記錄 (如果可用) 可以透過 Cloud Manager UI 下載。
+* 使用者現在可以選擇將 Google LightHouse 支援的體驗稽核測試納入非生產、全堆疊管道中。
 
 ## 早期採用計劃 {#early-adoption}
 
@@ -39,7 +39,7 @@ AEM as a Cloud Service 中的 Cloud Manager 版本 2023.9.0 發行日期是 2023
 * 前 24 小時的時間點備份還原
 * 固定時間還原最長可達 7 天
 
-如果您有興趣測試此新功能並分享您的意見反應，請使用和您的 Adob&#x200B;&#x200B;e ID 相關聯的電子郵件傳送電子郵件至 `aemcs-restorefrombackup-adopter@adobe.com`。請注意：
+如果您有興趣測試此新功能並分享您的意見反應，請使用和您的 Adobe ID 相關聯的電子郵件傳送電子郵件至 `aemcs-restorefrombackup-adopter@adobe.com`。請注意：
 
 * 早期採用者計劃僅適用於開發環境。
 * 此功能可使用的早期採用者計劃很有限。
@@ -51,10 +51,10 @@ AEM as a Cloud Service 中的 Cloud Manager 版本 2023.9.0 發行日期是 2023
 
 該儀表板會利用 Google Lighthouse，這是一種開放原始碼自動化工具，用於提高網頁應用程式的品質。您可以用於在任何網頁 (公用網頁或需要身份驗證的網頁) 上執行。可用於對效能、協助工具、漸進式網頁應用程式、SEO 等進行稽核。
 
-有興趣測試新儀表板嗎？請使用和您的 Adob&#x200B;&#x200B;e ID 相關聯的電子郵件傳送電子郵件至 `aem-lighthouse-pilot@adobe.com`，我們就會協助您開始使用。
+有興趣測試新儀表板嗎？請使用和您的 Adobe ID 相關聯的電子郵件傳送電子郵件至 `aem-lighthouse-pilot@adobe.com`，我們就會協助您開始使用。
 
 ## 錯誤修正 {#bug-fixes}
 
-* 刪除程式時，現在也會刪除任何相關聯的執行中管道。
+* 刪除程式時，現在也會同時刪除任何執行中的相關聯管道。
 * 如果管道正在進行中， **傳送** 的按鈕 **上線完成** 對話方塊現在已停用，並通知使用者由於執行中的管道而無法設定上線日期。
-* 已修正偶爾發生的錯誤，其中管道執行的所有步驟都標示為已完成，但管道的狀態仍在執行，看起來像是停滯狀態。
+* 已修正偶爾出現的錯誤，即管道執行的所有步驟都標記為已完成，但管道狀態仍為執行中，以致呈現停滯狀態。
