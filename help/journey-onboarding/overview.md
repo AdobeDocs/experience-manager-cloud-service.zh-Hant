@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service 上線歷程簡介
 description: 從此處開始，逐步引導您了解 AEM as a Cloud Service 的上線流程。
 exl-id: 892577db-05dc-49ff-bb2c-203efdb89c8c
-source-git-commit: 7553d3c9f82c8b675af5f704a48bc316ba0d4885
+source-git-commit: bba8310b9ba560ab9b6c2f9bea3e5c3cbec9228b
 workflow-type: tm+mt
-source-wordcount: '1221'
-ht-degree: 95%
+source-wordcount: '1256'
+ht-degree: 93%
 
 ---
 
@@ -15,6 +15,8 @@ ht-degree: 95%
 恭喜您選擇了 AEM as a Cloud Service！本文件將逐步引導您了解上線流程。無論您是部署新應用程式還是移轉現有應用程式，這一上線歷程都可確保您的團隊已建立並可以存取 AEM as a Cloud Service。
 
 ## 簡介 {#introduction}
+
+Adobe Experience Manager是一套功能強大的可撰寫內容服務，可跨任何管道快速提供極具影響力的個人化體驗，讓所有人都能瞭解內容。 **Edge遞送服務** 是Adobe Experience Manager中的最新創新，可帶來極致的內容速度並提供卓越的體驗。 透過造訪，瞭解如何開始使用Edge Delivery Services [此頁面](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html). 若要瞭解如何使用Edge Delivery Services，請參閱 [開發人員教學課程](https://www.hlx.live/developer/tutorial) 頁面。
 
 上線是指定的系統管理員為您的組織設定 AEM as a Cloud Service 的過程。此程序包括雲端資源的初始設定，以及根據使用者的工作職責為其指派角色。因此，每個成員都能夠登入並存取他們的 AEM as a Cloud Service 資源。
 
@@ -83,10 +85,6 @@ ht-degree: 95%
 | 8 | [指派 AEM 產品設定檔](assign-profiles-aem.md) | 了解系統管理員如何將您的團隊成員指派到 AEM as a Cloud Service 產品設定檔。 | 系統管理員 |
 | 9 | [開發人員和部署管理員工作](developers.md) | 選擇性 - 了解作為開發人員如何存取和管理 Cloud Manager Git，以及作為部署管理員如何在 Cloud Manager 中設定管道和部署程式碼。 | 開發人員和部署管理員 |
 | 10 | [AEM 使用者工作](aem-users.md) | 選擇性 - 了解作為 AEM 作者如何存取 AEM as a Cloud Service 執行個體，並熟悉為 AEM as a Cloud Service 編寫內容。 | AEM 使用者 |
-
->[!NOTE]
->
->Edge Delivery Services是一組全新的可撰寫服務，可啟用彈性、快速的開發環境，讓作者可以快速更新及發佈，並快速啟動新網站。 若要進一步瞭解Edge Delivery服務，請參閱 [快速入門頁面](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html).
 
 ## 下一步 {#what-is-next}
 
