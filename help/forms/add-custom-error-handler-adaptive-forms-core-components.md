@@ -7,15 +7,15 @@ keywords: 新增自訂錯誤處理常式、新增預設錯誤處理常式、在�
 contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms
-source-git-commit: 7c197be7819d6fcbf028237401d05236f90734d1
+source-git-commit: a589005551dd7d8cdf8ac004725341905f0e99d1
 workflow-type: tm+mt
-source-wordcount: '2406'
-ht-degree: 100%
+source-wordcount: '2408'
+ht-degree: 99%
 
 ---
 
 
-# 最適化表單中的錯誤處理常式 (核心元件) {#error-handlers-in-adaptive-form}
+# 根據核心元件的最適化表單的錯誤處理常式 {#error-handlers-in-adaptive-form}
 
 
 | 版本 | 文章連結 |

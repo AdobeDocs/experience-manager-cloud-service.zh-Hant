@@ -4,15 +4,15 @@ description: 最適化Forms提供一種機制，可建立在任何最適化表�
 topic-tags: author
 keywords: 新增最適化表單片段、最適化表單片段、建立表單片段、新增片段至最適化表單、管理片段
 feature: Adaptive Forms
-source-git-commit: 7c197be7819d6fcbf028237401d05236f90734d1
+source-git-commit: 290cdecdb355b5c9a872d0f12ac701d271a258d4
 workflow-type: tm+mt
-source-wordcount: '1734'
+source-wordcount: '1745'
 ht-degree: 4%
 
 ---
 
 
-# 最適化表單片段 {#adaptive-form-fragments}
+# 根據核心元件在最適化表單中建立和使用最適化Forms片段 {#adaptive-form-fragments}
 
 
 | 版本 | 文章連結 |

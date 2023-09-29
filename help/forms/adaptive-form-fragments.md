@@ -8,15 +8,16 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 1a32eb24-db3b-4fad-b1c7-6326b5af4e5e
 docset: aem65
-source-git-commit: a635a727e431a73086a860249e4f42d297882298
+source-git-commit: 17df7ef15fbd4077201f7e0678ffc9ea2732863d
 workflow-type: tm+mt
-source-wordcount: '2021'
+source-wordcount: '2028'
 ht-degree: 1%
 
 ---
 
 
-# 最適化表單片段 {#adaptive-form-fragments}
+# 在最適化表單中建立和使用最適化Forms片段  {#adaptive-form-fragments}
+
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
@@ -133,7 +134,7 @@ ht-degree: 1%
 1. 以編輯模式開啟最適化表單，您要在其中插入最適化表單片段。
 1. 按一下 **資產** ![資產 — 瀏覽器](assets/assets-browser.png) 在側邊欄中。 在資產瀏覽器中，選取 **最適化表單片段** 從下拉式清單。
 
-   您也可以選擇顯示所有最適化表單片段，或根據其表單模型（表單範本、XML結構描述或基本）進行篩選。
+   您還可以選擇顯示所有自我調整表單片段或根據其表單模型（表單範本、XML 架構或基本）進行篩選。
 
 1. 將最適化表單片段拖放至最適化表單。
 
