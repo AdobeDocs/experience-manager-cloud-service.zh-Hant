@@ -8,10 +8,10 @@ user-guide-description: 了解 Experience Manager as a Cloud Service 的運作�
 breadcrumb-title: 使用手冊
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: abd0632a6874e4917a9ca7fc4fd11696f4c55caa
+source-git-commit: 904b35d31dc317703ad1aec09cefee3c111abcb0
 workflow-type: tm+mt
-source-wordcount: '4271'
-ht-degree: 99%
+source-wordcount: '4286'
+ht-degree: 98%
 
 ---
 
@@ -462,6 +462,7 @@ ht-degree: 99%
       + [Markdown](/help/assets/content-fragments/content-fragments-markdown.md)
       + [樹狀結構](/help/assets/content-fragments/content-fragments-structure-tree.md)
       + [預覽 - JSON 代表](/help/assets/content-fragments/content-fragments-json-preview.md)
+      + [使用MSM對資產重複使用內容片段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/reuse-assets-using-msm.html)
    + Dynamic Media {#dynamicmedia}
       + Dynamic Media 歷程：基礎知識{#dm-journey}
          + [第一部分：什麼是 Dynamic Media - 使用案例 - 資產如何流經系統](/help/assets/dynamic-media/dm-journey-part1.md)
