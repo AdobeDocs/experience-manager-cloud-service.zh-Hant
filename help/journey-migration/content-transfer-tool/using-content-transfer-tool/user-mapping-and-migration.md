@@ -14,7 +14,7 @@ ht-degree: 9%
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_usermapping"
 >title="使用者對應"
->abstract="內容轉移工具可協助您將使用者和群組從現有的 Adobe Experience Manager (AEM) 系統移至 AEM as a Cloud Service。 現有使用者需要對應到他們的 IMS ID，以避免 Cloud Service 製作執行個體上出現重複的使用者。"
+>abstract="內容轉移工具可協助您將使用者和群組從現有的 Adobe Experience Manager (AEM) 系統移至 AEM as a Cloud Service。現有使用者需要對應到他們的 IMS ID，以避免 Cloud Service 製作執行個體上出現重複的使用者。"
 
 >[!NOTE]
 >如需舊版的使用者對應工具，請參閱 [舊版檔案](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/considerations-user-mapping-tool-legacy.md).

@@ -1,22 +1,22 @@
 ---
-title: 將內容擷取至Cloud Service
+title: 將內容引入雲端服務
 description: 瞭解如何使用Cloud Acceleration Manager將移轉集中的內容擷取到目標Cloud Service例項。
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 source-git-commit: 5c482e5f883633c04d70252788b01f878156bac8
 workflow-type: tm+mt
 source-wordcount: '2142'
-ht-degree: 7%
+ht-degree: 8%
 
 ---
 
-# 將內容擷取至Cloud Service {#ingesting-content}
+# 將內容引入雲端服務 {#ingesting-content}
 
 ## Cloud Acceleration Manager中的擷取程式 {#ingestion-process}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_ingestion"
 >title="內容攝入"
->abstract="攝入是指將移轉集中的內容攝入到目標 Cloud Service 執行個體中。 內容轉移工具擁有支援差別內容填滿的功能，其中可以僅轉移自上次內容轉移活動以來所做的變更。"
+>abstract="攝入是指將移轉集中的內容攝入到目標 Cloud Service 執行個體中。「內容轉移工具」具備支援追加差異內容的功能，可以只轉移在上一次內容轉移活動後所進行的變更。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/extracting-content.html#top-up-extraction-process" text="填滿提取"
 
 請依照下列步驟，使用Cloud Acceleration Manager擷取您的移轉集：
