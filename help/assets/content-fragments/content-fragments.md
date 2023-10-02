@@ -2,9 +2,9 @@
 title: 使用內容片段（資產 — 內容片段）
 description: 瞭解Adobe Experience Manager (AEM) as a Cloud Service中的內容片段如何讓您設計、建立、策劃和使用不受頁面影響的內容，適用於頁面製作和headless傳送。 以及它們如何與MSM搭配使用。
 exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
-source-git-commit: c31f43986e44099a3a36cc6c9c2f1a7251499ffb
+source-git-commit: cc752e540fd08c2db5145316f57071c991d264b3
 workflow-type: tm+mt
-source-wordcount: '2211'
+source-wordcount: '2229'
 ht-degree: 5%
 
 ---
@@ -38,7 +38,7 @@ ht-degree: 5%
 >
 >他們現在主要透過 **[內容片段](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console)** 主控台，但仍可從 **資產** 主控台。 本節涵蓋以下專案的管理： **資產** 主控台。
 >
->有兩個編輯器用於編寫內容片段。本節介紹原始編輯器，主要透過以下網址存取： **資產** 主控台。 請參閱網站檔案， [內容片段 — 製作](/help/sites-cloud/administering/content-fragments/authoring.md)，以取得新編輯器的詳細資訊(主要透過以下網址存取： **內容片段** 主控台)。
+>有兩個編輯器用於編寫內容片段。本節介紹原始編輯器，主要透過以下網址存取： **資產** 主控台。 請參閱網站檔案， [內容片段 — 製作](/help/sites-cloud/administering/content-fragments/authoring.md)，以取得新編輯器的詳細資訊(主要透過以下網址存取： **內容片段** 主控台)。 兩個編輯器在頂部工具欄中都有一個切換開關，用於提供對另一個編輯器的快速存取。
 
 此和下列頁面涵蓋建立、設定、維護及使用內容片段的任務：
 

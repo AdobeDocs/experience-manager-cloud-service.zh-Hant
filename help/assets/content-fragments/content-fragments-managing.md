@@ -2,10 +2,10 @@
 title: 管理內容片段（資產 — 內容片段）
 description: 瞭解如何使用Assets主控台來管理您的AEM內容片段，這是Headless內容的基礎。
 exl-id: 333ad877-db2f-454a-a3e5-59a936455932
-source-git-commit: 87630d9530194fd0c6d88e05a17db108b765ccb6
+source-git-commit: cc752e540fd08c2db5145316f57071c991d264b3
 workflow-type: tm+mt
-source-wordcount: '1813'
-ht-degree: 8%
+source-wordcount: '1855'
+ht-degree: 9%
 
 ---
 
@@ -34,11 +34,11 @@ ht-degree: 8%
 
 >[!NOTE]
 >
->內容片段是Sites功能，但儲存為 **資產**.
+>內容片段是 Sites 的一項功能，但儲存為&#x200B;**資產**。
 >
 >他們現在主要透過 **[內容片段](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console)** 主控台，但仍可從 **資產** 主控台。 本節涵蓋以下專案的管理： **資產** 主控台。
 >
->編寫內容片段有兩個編輯器。 本節介紹原始編輯器，主要透過以下網址存取： **資產** 主控台。 請參閱網站檔案， [內容片段 — 製作](/help/sites-cloud/administering/content-fragments/authoring.md)，以取得新編輯器的詳細資訊(主要透過以下網址存取： **內容片段** 主控台)。
+>有兩個編輯器用於編寫內容片段。本節介紹原始編輯器，主要透過以下網址存取： **資產** 主控台。 請參閱網站檔案， [內容片段 — 製作](/help/sites-cloud/administering/content-fragments/authoring.md)，以取得新編輯器的詳細資訊(主要透過以下網址存取： **內容片段** 主控台)。 兩個編輯器在頂部工具欄中都有一個切換開關，用於提供對另一個編輯器的快速存取。
 
 ## 建立內容片段 {#creating-content-fragments}
 
@@ -194,6 +194,8 @@ ht-degree: 8%
    * **已發佈**：綠色
    * **已修改**：橙色
    * **已停用**：紅色
+
+* 按鈕可讓您 **嘗試新的編輯器**，直接開啟 *新* [內容片段編輯器](/help/sites-cloud/administering/content-fragments/authoring.md) 可透過 [內容片段主控台](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console).
 
 * **儲存** 提供對的存取 **儲存並關閉** 選項。
 
