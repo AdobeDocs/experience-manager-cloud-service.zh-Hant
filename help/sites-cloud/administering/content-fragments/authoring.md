@@ -3,9 +3,9 @@ title: 編寫內容片段
 description: 瞭解如何為內容片段製作內容，然後根據用途建立該內容的變體。 這為Headless傳送和頁面製作增加了靈活性。
 feature: Content Fragments
 role: User, Developer, Architect
-source-git-commit: 2fa22bf2feb6b8697877b345bc29821e30b1c6a1
+source-git-commit: 2a4538ad8b52615ffdee110393bfbc01f57694f4
 workflow-type: tm+mt
-source-wordcount: '2227'
+source-wordcount: '2249'
 ht-degree: 7%
 
 ---
@@ -62,6 +62,11 @@ ht-degree: 7%
    * 顯示全部&#x200B;**父參考內容**&#x200B;的選項 (連結圖示)
    * **[狀態](/help/sites-cloud/administering/content-fragments/managing.md#statuses-content-fragments)**&#x200B;片段，以及最後儲存的資訊
    * 用來切換至原始 (以資產為主) 編輯器的切換開關
+
+     >[!WARNING]
+     >
+     >原始編輯器將在同一標籤中開啟。 不建議同時開啟兩個編輯器。
+
 * 左面板：顯示內容片段的&#x200B;**[變數](#variations)**&#x200B;及其&#x200B;**欄位**：
    * 這些連結可用於 [導覽內容片段結構](#navigate-structure)
 * 右側面板：顯示索引標籤 [顯示屬性（中繼資料）和標籤](#view-properties-tags)，此資訊關於 [版本記錄](#view-version-history)，以及與任何專案相關的資訊 [語言副本](#view-language-copies)
