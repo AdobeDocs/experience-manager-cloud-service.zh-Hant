@@ -1,9 +1,7 @@
 ---
 title: 適用於Adobe Express的AEM Assets附加元件
 description: 適用於Adobe Express的AEM Assets附加元件可讓您從Adobe Express使用者介面直接存取AEM Assets中儲存的資產。
-hide: true
-hidefromtoc: true
-source-git-commit: 5fe4204bcfdd42edad53ca80b693800aef0a5dc5
+source-git-commit: e9ff2f2b15642288e82ac6f900dc567231bf85c7
 workflow-type: tm+mt
 source-wordcount: '485'
 ht-degree: 0%
