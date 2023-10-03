@@ -1,9 +1,10 @@
 ---
-title: 將AEM Forms連線至資料庫
-description: 您可以從擷取資料並儲存至RESTful Web服務、以SOAP為基礎的Web服務以及OData服務 [!DNL AEM Forms] as a Cloud Service。 此服務提供專用的工具，可擷取、測試、驗證資料並將資料傳送至各種型別的資料來源。
-source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
+title: 如何將資料庫連線至 [!DNL AEM Forms] as a Cloud Service？
+description: 從調適型表單或AEM工作流程擷取資料並儲存至RESTful Web服務、以SOAP為基礎的Web服務和OData服務。
+exl-id: 9d146275-de0a-4861-b060-d205ed6305f3
+source-git-commit: defeee2fee42c6274c71438d6f9fde6e49a05081
 workflow-type: tm+mt
-source-wordcount: '570'
+source-wordcount: '555'
 ht-degree: 2%
 
 ---

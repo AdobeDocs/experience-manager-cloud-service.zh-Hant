@@ -1,11 +1,11 @@
 ---
-title: AEM 6.5 Forms與AEMCloud Service之間的差異
-description: 您是Experience Manager Forms使用者，且想要升級至Adobe Experience Manager Formsas a Cloud Service嗎？ 比較AEM 6.5 Forms和AEMCloud Services，並在升級或移轉至Cloud Service之前瞭解最顯著的變更。
+title: AEM 6.5 Forms與AEMCloud Service之間有何差異？
+description: 比較AEM 6.5 Forms和AEMCloud Services，並在升級或移轉至Cloud Service之前瞭解最顯著的變更。
 exl-id: 46fcc1b4-8fd5-40e1-b0fc-d2bc9df3802e
 contentOwner: khsingh
-source-git-commit: fa71eb6317314dc8c3540cd0ebb8afaa75d55a59
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
-source-wordcount: '1343'
+source-wordcount: '1350'
 ht-degree: 1%
 
 ---
@@ -37,7 +37,7 @@ ht-degree: 1%
 
 * 使用 [AEM Formsas a Cloud Service移轉公用程式](/help/forms/migrate-to-forms-as-a-cloud-service.md) 準備和移轉最適化Forms、主題、範本和雲端設定，從 <!-- AEM 6.3 Forms--> OSGi上的AEM 6.4 Forms和OSGi上的AEM 6.5 Forms [!DNL AEM] as a Cloud Service。 使用 [您程式的Git存放庫](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) 以匯入現有的最適化表單範本。
 
-* 電子郵件預設僅支援HTTP和HTTP通訊協定。 [聯絡支援團隊](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html#sending-email) 啟用傳送電子郵件的連線埠，並為您的環境啟用SMTP通訊協定。
+* 電子郵件預設僅支援HTTP和HTTP通訊協定。 [聯絡支援團隊](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html#sending-email) 啟用連線埠以傳送電子郵件，並為您的環境啟用SMTP通訊協定。
 
 ## 本地化
 
@@ -76,25 +76,27 @@ Formsas a Cloud Service提供Document Generation和Document Manipulation RESTful
 
 * **Document Manipulation API （組合器服務）**：
 
-   * 依賴檔案服務或應用程式的作業無法使用。 例如，不支援Microsoft Word到PDF、Microsoft Excel到PDF、HTML到PDF、PostScript (PS)到PDF、XDP到PDF forms。 這些作業分別依賴Microsoft Office、Adobe Acrobat、AdobeDistiller、Forms Document Service。
+   * 依賴檔案服務或應用程式的作業無法使用。 例如，不支援Microsoft®Word對PDF、Microsoft®Excel對PDF、HTML對PDF、PostScript (PS)對PDF、XDP對PDF forms。 這些作業分別依賴Microsoft®Office、Adobe Acrobat、AdobeDistiller、Forms Document Service。
 
-   * 在將非PDF格式的檔案與Communications Document Manipulation API搭配使用之前，請先將其轉換為PDF格式。 例如，如果您的檔案是Microsoft Office、HTML、PostScript (PS)、XDP格式，請先將這些檔案轉換為PDF格式，然後再將這些檔案與PDF檔案一起使用。 您可以使用 [ConvertPDF](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-document-services/using-convertpdf-service.html) 轉換的服務。
+   * 在將非PDF格式的檔案與Communications Document Manipulation API搭配使用之前，請先將其轉換為PDF格式。 例如，如果您的檔案是Microsoft® Office、HTML、PostScript (PS)、XDP格式，請先將這些檔案轉換為PDF格式，然後再將這些檔案與PDF檔案一起使用。 您可以使用 [ConvertPDF](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-document-services/using-convertpdf-service.html) 轉換的服務。
 
-* 您可以使用AEM 6.5 Forms環境進行數位簽名、加密、Reader延伸、傳送至印表機、轉換PDF和條碼Forms服務。
+   * 您可以使用AEM 6.5 Forms環境進行數位簽名、加密、Reader延伸、傳送至印表機、轉換PDF和條碼Forms服務。
 
 
 ## 資料整合（表單資料模型）
 
-* 此服務也支援Microsoft Dynamics、SalesForce、以SOAP為基礎的Web服務，以及支援OData的服務。
+* 此服務也支援JDBC聯結器、Microsoft®Dynamics、SalesForce、以SOAP為基礎的Web服務，以及支援OData的服務。
 
 * 您也可以連線AEM使用者設定檔，以擷取和更新使用者資訊。
 
 * Forms資料模型僅支援HTTP和HTTPS端點來提交資料。 此服務不支援REST聯結器的雙向SSL，也不支援SOAP資料來源的x509憑證式驗證。
 
-* Formsas a Cloud Service允許使用Microsoft Azure Blob、Microsoft Sharepoint、Microsoft OneDrive以及支援一般CRUD （建立、讀取、更新和刪除）作業的服務做為資料存放區，同時支援Open API規格2.0和Open API 3.0規格。
+* Formsas a Cloud Service允許使用Microsoft®Azure Blob、Microsoft®Sharepoint、Microsoft®OneDrive以及支援一般CRUD （建立、讀取、更新和刪除）作業的服務做為資料存放區，同時支援Open API規格2.0和Open API 3.0規格。
 
 
 ## 電子簽章
+
+* 此服務提供與Adobe Sign的OOTB整合，並支援電子簽章的DocuSign。
 
 * 此服務也支援Adobe Sign角色。 您可以在最適化Forms編輯器中設定角色，讓業務使用者輕鬆設定簽署工作流程。
 
@@ -105,7 +107,7 @@ Formsas a Cloud Service提供Document Generation和Document Manipulation RESTful
 
    * 將您的XDP型表單轉譯為HTML5 Forms。 此服務不支援HTML5 Forms。
 
-   * 離線擷取資料，並在下次您回到線上時使用 [AEM Forms工作區](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-aem-forms-workspace/introduction-html-workspace.html) 應用程式。
+   * 離線擷取資料，並在下次您使用 [AEM Forms工作區](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-aem-forms-workspace/introduction-html-workspace.html) 應用程式。
 
 ## 互動式通訊
 

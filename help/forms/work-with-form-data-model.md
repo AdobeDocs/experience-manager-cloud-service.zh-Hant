@@ -1,13 +1,13 @@
 ---
 title: 如何使用表單資料模型？
-description: 瞭解如何新增資料模型物件和服務、建立資料模型物件和子屬性、設定服務、新增關聯以及使用OData服務的導覽屬性。 深入瞭解如何產生和編輯範例資料、測試資料模型物件和服務，以及自動驗證輸入資料。
+description: 新增資料模型物件、服務、建立資料模型物件和子屬性、設定服務、使用OData服務的導覽屬性。
 feature: Form Data Model
 role: User
 level: Beginner, Intermediate
 exl-id: c17c0443-d4dc-41f8-9315-6cc49e6c471f
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
-source-wordcount: '4137'
+source-wordcount: '4108'
 ht-degree: 0%
 
 ---

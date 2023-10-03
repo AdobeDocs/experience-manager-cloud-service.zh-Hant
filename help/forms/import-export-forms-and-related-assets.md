@@ -1,11 +1,9 @@
 ---
-title: 匯入和匯出資產
-seo-title: Import and export assets to [!DNL AEM Forms]
-description: 您可以將最適化Forms和相關資產匯入和匯出至AEM執行個體。 這有助於移轉表單或跨系統移動表單。
-seo-description: You can import and export Adaptive Forms and templates from and in to AEM instances. This helps in migrating forms or moving them across systems.
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+title: 如何將資產匯入及匯出至 [!DNL AEM Forms]？
+description: 瞭解如何搭配最適化表單使用DocuSign來收集電子簽章。
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
-source-wordcount: '1323'
+source-wordcount: '1314'
 ht-degree: 0%
 
 ---

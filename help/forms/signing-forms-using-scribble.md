@@ -1,10 +1,13 @@
 ---
-title: 使用手寫簽名對表單進行電子簽章
-description: 使用手寫簽名和簽名步驟，輕鬆在最適化Forms上進行電子簽章。 簡化數位簽章，提升效率。
+title: 如何使用手寫簽名將電子簽章套用至表單？
+description: 瞭解如何使用手寫簽名將電子簽章套用至表單。
+uuid: ffeba886-9b24-4ed1-95c0-e19356ff2f23
+products: SG_EXPERIENCEMANAGER/FORMS
 topic-tags: author
-source-git-commit: 6dd34937a8aeb6c7ddfc0fb1180a112de534dd4b
+exl-id: dc89ecb1-2d9e-4d1d-b85b-af90c550e7d8
+source-git-commit: defeee2fee42c6274c71438d6f9fde6e49a05081
 workflow-type: tm+mt
-source-wordcount: '725'
+source-wordcount: '726'
 ht-degree: 9%
 
 ---

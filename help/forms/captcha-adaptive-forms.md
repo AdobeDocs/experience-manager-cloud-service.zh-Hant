@@ -1,13 +1,18 @@
 ---
-title: 在最適化Forms中使用reCAPTCHA
-description: 瞭解如何在最適化Forms中設定Google reCAPTCHA服務。
+title: 如何在最適化Forms中使用驗證碼？
+description: 瞭解如何為最適化表單設定AEM驗證碼或Google reCAPTCHA服務。
+uuid: 0e11e98a-12ac-484c-b77f-88ebdf0f40e5
+contentOwner: vishgupt
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: adaptive_forms, author
-source-git-commit: 6d0e3ee08862030e9eb7d068b251d13bc3e8e08f
+exl-id: 3fdbe5a3-5c3c-474d-b701-e0182da4191a
+source-git-commit: defeee2fee42c6274c71438d6f9fde6e49a05081
 workflow-type: tm+mt
-source-wordcount: '1930'
-ht-degree: 6%
+source-wordcount: '1935'
+ht-degree: 7%
 
 ---
+
 
 # 在最適化Forms中使用reCAPTCHA {#using-reCAPTCHA-in-adaptive-forms}
 
@@ -47,11 +52,11 @@ CAPTCHA （完全自動化公用圖靈測試來區分電腦和人之間的差異
 1. 取得 [專案ID](https://support.google.com/googleapi/answer/7014113?hl=en#:~:text=To%20locate%20your%20project%20ID,a%20member%20of%20are%20displayed) 並建立 [API金鑰](https://cloud.google.com/recaptcha-enterprise/docs/set-up-non-google-cloud-environments-api-keys#create_an_api_key) 和 [網站的網站金鑰](https://cloud.google.com/recaptcha-enterprise/docs/create-key#create-key).
 1. 建立雲端服務的設定容器。
 
-   1. 前往 **[!UICONTROL 「工具」>「一般」>「設定瀏覽器」]**.
+   1. 前往&#x200B;**[!UICONTROL 工具 > 一般 > 設定瀏覽器]**。
    1. 選取資料夾或建立資料夾，然後使用下列步驟啟用雲端設定的資料夾：
       1. 在設定瀏覽器中，選取資料夾並點選 **[!UICONTROL 屬性]**.
       1. 在組態內容對話方塊中，啟用 **[!UICONTROL 雲端設定]**.
-      1. 點選 **[!UICONTROL 儲存並關閉]** 以儲存組態並結束對話方塊。
+      1. 點選&#x200B;**[!UICONTROL 儲存並關閉]**&#x200B;以儲存設定並退出對話框。
 
 1. 設定雲端服務 [!DNL reCAPTCHA Enterprise].
 
@@ -76,11 +81,11 @@ reCAPTCHA Enterprise服務啟用後，就可在調適型表單中使用。 另�
 
 1. 取得 [reCAPTCHA API金鑰組](https://www.google.com/recaptcha/admin) 來自Google。 它包含 **網站金鑰** 和 **秘密金鑰**.
 1. 建立雲端服務的設定容器。
-   1. 前往 **[!UICONTROL 「工具」>「一般」>「設定瀏覽器」]**.
+   1. 前往&#x200B;**[!UICONTROL 工具 > 一般 > 設定瀏覽器]**。
    1. 選取資料夾或建立資料夾，然後使用下列步驟啟用雲端設定的資料夾：
       1. 在設定瀏覽器中，選取資料夾並點選 **[!UICONTROL 屬性]**.
       1. 在組態內容對話方塊中，啟用 **[!UICONTROL 雲端設定]**.
-      1. 點選 **[!UICONTROL 儲存並關閉]** 以儲存組態並結束對話方塊。
+      1. 點選&#x200B;**[!UICONTROL 儲存並關閉]**&#x200B;以儲存設定並退出對話框。
 
 1. 設定reCAPTCHA v2的雲端服務。
 

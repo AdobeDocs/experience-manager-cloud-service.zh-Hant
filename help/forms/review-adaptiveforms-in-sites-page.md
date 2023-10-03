@@ -1,12 +1,12 @@
 ---
-title: 建立和管理最適化表單的稽核
-description: 稽核是一種機制，可讓稽核者使用指派工作步驟為最適化表單執行不同工作
+title: 如何建立及管理內嵌或建立於Sites頁面的最適化Forms檢閱？
+description: 稽核是一種機制，可讓稽核者使用「指派工作」步驟為最適化表單執行不同工作。
 feature: Adaptive Forms
 hide: true
 hidefromtoc: true
-source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
-source-wordcount: '351'
+source-wordcount: '358'
 ht-degree: 5%
 
 ---

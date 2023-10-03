@@ -1,10 +1,10 @@
 ---
-title: 重要 Adobe Experience Manager Forms 創新
-description: 「探索 [!DNL AEM Forms] as a Cloud Service建立、管理和發佈企業級表單和業務流程。」
+title: 探索Adobe Experience Manager Formsas a Cloud Service的最新創新。
+description: 探索的最新功能 [!DNL AEM Forms] as a Cloud Service建立、管理和發佈企業級表單與業務流程。
 exl-id: 3a90b0aa-369a-4350-9904-79ef656b0f9a
-source-git-commit: e4f5bbf85557846b2ef1c0a8e9bec3da3c999c81
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
-source-wordcount: '1146'
+source-wordcount: '1153'
 ht-degree: 4%
 
 ---

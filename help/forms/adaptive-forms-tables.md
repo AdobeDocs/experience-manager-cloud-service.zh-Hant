@@ -1,12 +1,10 @@
 ---
 title: 調適型表單中的表格
-seo-title: Tables in adaptive forms
-description: AEM Forms中的表格元件可讓您在回應行動版面的調適型表單中建立表格，並且允許使用XDP表格元件。
-seo-description: The Table component in AEM Forms lets you create tables in adaptive forms that are responsive to mobile layouts, and also allows using XDP table components.
+description: 使用表格元件將表格新增至最適化表單。 除了協助設定回應式版面，表格元件還允許新增XDP表格元素。
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Adaptive Forms
 exl-id: 88ace1d4-b68d-40e6-a7b4-918ba25f2e91
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
 source-wordcount: '2492'
 ht-degree: 2%

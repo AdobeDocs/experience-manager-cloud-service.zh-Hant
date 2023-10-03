@@ -1,16 +1,14 @@
 ---
 title: 最適化表單片段
-seo-title: Adaptive Form Fragments
-description: 最適化Forms提供一種機制，可建立在任何最適化表單中使用的表單區段（例如面板或欄位群組）。 您也可以將現有面板儲存為片段。
-seo-description: Adaptive Forms provides a mechanism to create a form segment, such as a panel or a group of fields, as use it in any Adaptive Form. You can also save an existing panel as fragment.
+description: 表單片段是表格的模組化且可重複使用的元件。 瞭解如何建立表單片段，並在各個表單中重複使用，以有效率地組合表單。
 uuid: bb4830b5-82a0-4026-9dae-542daed10e6f
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 1a32eb24-db3b-4fad-b1c7-6326b5af4e5e
 docset: aem65
-source-git-commit: 17df7ef15fbd4077201f7e0678ffc9ea2732863d
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
-source-wordcount: '2028'
+source-wordcount: '2018'
 ht-degree: 1%
 
 ---

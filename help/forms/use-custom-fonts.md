@@ -1,9 +1,10 @@
 ---
-title: 使用自訂字型
+title: 如何在AEM Forms中使用自訂字型？
 description: 瞭解如何將自訂字型新增至Formsas a Cloud Service環境。
-source-git-commit: 6dd34937a8aeb6c7ddfc0fb1180a112de534dd4b
+exl-id: 88214d36-fb97-4d46-a9fe-71dbc7826eb1
+source-git-commit: defeee2fee42c6274c71438d6f9fde6e49a05081
 workflow-type: tm+mt
-source-wordcount: '466'
+source-wordcount: '471'
 ht-degree: 0%
 
 ---

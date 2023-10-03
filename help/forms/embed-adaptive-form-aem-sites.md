@@ -1,13 +1,12 @@
 ---
-title: 在AEM Sites頁面中內嵌最適化表單
-seo-title: How to add an Adaptive Form to an AEM Sites page?
-description: 您可以使用最適化Forms — 內嵌元件將最適化Forms內嵌在AEM Sites頁面中，讓您在不離開AEM Sites頁面的情況下填寫和提交表單。
+title: 如何將最適化表單新增至AEM Sites頁面？
+description: 將Adaptive Forms順暢地內嵌於AEM Sites頁面或AEM外部託管的網頁中。
 feature: Adaptive Forms
 Keywords: Forms AEM Sites, Embed Form to a Sites page, Adaptive Forms AEM Sites, Embed Adaptive Forms to AEM Page, Embed Forms in an AEM Sites page
 exl-id: 359b05e8-d8c1-4a77-9e70-6f6b6e668560
-source-git-commit: d9dee0b5a070da6a19004c749f69c724fff9d967
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
-source-wordcount: '3177'
+source-wordcount: '3165'
 ht-degree: 6%
 
 ---
@@ -363,7 +362,7 @@ AEM site also lets you create an Adaptive Form on the fly using the Adaptive For
 >
 >在原始最適化表單中所做的變更會自動反映在內嵌表單中。 不過，請重新發佈最適化表單或網站頁面，以反映已發佈頁面中的變更。
 
-## 最佳實務 {#best-practices}
+## 最佳做法 {#best-practices}
 
 在AEM Sites頁面中內嵌最適化Forms時，請記住下列幾點：
 

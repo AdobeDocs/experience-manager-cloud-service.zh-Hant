@@ -1,15 +1,13 @@
 ---
-title: 最適化Forms關鍵字
-seo-title: Adaptive Forms keywords
-description: 您無法在最適化Forms中使用這些保留字作為識別碼。
-seo-description: You cannnot use these reserved words as identifiers in your Adaptive Forms.
+title: 最適化Forms保留關鍵字
+description: 保留的關鍵字無法在最適化Forms中作為識別碼使用。
 uuid: 79e77692-2f0c-493b-8c2c-c408ff3dcece
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 678e9dfc-2c46-430a-8da9-0329dda80090
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
 workflow-type: tm+mt
-source-wordcount: '208'
+source-wordcount: '209'
 ht-degree: 4%
 
 ---
@@ -24,12 +22,12 @@ ht-degree: 4%
   <tr>
    <td><p>初始化</p> </td>
    <td><p>getonoffValues</p> </td>
-   <td><p>minOccurs</p> </td>
+   <td><p>minOccure</p> </td>
   </tr>
   <tr>
    <td><p>驗證</p> </td>
    <td><p>setGuideState</p> </td>
-   <td><p>maxOccurse</p> </td>
+   <td><p>maxOccure</p> </td>
   </tr>
   <tr>
    <td><p>forceElementFocusChange</p> </td>
@@ -63,7 +61,7 @@ ht-degree: 4%
   </tr>
   <tr>
    <td><p>valueCommitScript</p> </td>
-   <td><p>Autosavstart</p> </td>
+   <td><p>autoSaveStart</p> </td>
    <td><p>造訪</p> </td>
   </tr>
   <tr>
@@ -107,13 +105,13 @@ ht-degree: 4%
    <td><p>templateId</p> </td>
   </tr>
   <tr>
-   <td><p>mandatoryMessage</p> </td>
+   <td><p>message</p> </td>
    <td><p>multiSelect</p> </td>
    <td>&gt;<p>id</p> </td>
   </tr>
   <tr>
    <td><p>validateExpMessage</p> </td>
-   <td><p>optionsExp</p> </td>
+   <td><p>選項運算式</p> </td>
    <td><p>somexpression</p> </td>
   </tr>
   <tr>
@@ -147,7 +145,7 @@ ht-degree: 4%
    <td><p>enableLayoutOptimization</p> </td>
   </tr>
   <tr>
-   <td><p>navigationChangeExp</p> </td>
+   <td><p>導覽變更費用</p> </td>
    <td><p>handleEvent</p> </td>
    <td><p>資料型別</p> </td>
   </tr>
@@ -163,7 +161,7 @@ ht-degree: 4%
   </tr>
   <tr>
    <td><p>clickStatus</p> </td>
-   <td><p>removecinstance</p> </td>
+   <td><p>removeInstance</p> </td>
    <td><p>maxChars</p> </td>
   </tr>
   <tr>
@@ -177,18 +175,18 @@ ht-degree: 4%
    <td><p>executeExpression</p> </td>
   </tr>
   <tr>
-   <td><p>visibleexp</p> </td>
+   <td><p>visibleExp</p> </td>
    <td><p>initScript</p> </td>
    <td><p>enabledExp</p> </td>
   </tr>
   <tr>
    <td><p>execCompletion</p> </td>
    <td><p>sectionId</p> </td>
-   <td><p>設定焦點</p> </td>
+   <td><p>setFocus</p> </td>
   </tr>
   <tr>
    <td><p>completionExp</p> </td>
-   <td><p>sectionTitle</p> </td>
+   <td><p>章節標題</p> </td>
    <td><p>activeInstance</p> </td>
   </tr>
   <tr>
@@ -217,7 +215,7 @@ ht-degree: 4%
    <td><p>sectionName</p> </td>
   </tr>
   <tr>
-   <td><p>submitPassword</p> </td>
+   <td><p>submitpassword</p> </td>
    <td><p>initializeChildren</p> </td>
    <td><p>sectionFields</p> </td>
   </tr>
@@ -227,8 +225,8 @@ ht-degree: 4%
    <td><p>getSelectedIndex</p> </td>
   </tr>
   <tr>
-   <td><p>repeatablePanelPath</p> </td>
-   <td><p>getitemidentifier</p> </td>
+   <td><p>Repeatablepanelpath</p> </td>
+   <td><p>getItemIdentifier</p> </td>
    <td><p>mobileLayout</p> </td>
   </tr>
   <tr>
@@ -239,4 +237,4 @@ ht-degree: 4%
  </tbody>
 </table>
 
-除了上面列出的關鍵字外，請避免使用類似於 [最適化Forms JavaScript API](https://adobe.com/go/learn_aemforms_javascript_api_63).
+除了上面列出的關鍵字外，請避免使用類似下列的名稱 [最適化Forms JavaScript API](https://adobe.com/go/learn_aemforms_javascript_api_63).

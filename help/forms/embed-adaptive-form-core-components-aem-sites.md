@@ -1,12 +1,12 @@
 ---
-title: 使用AEM Sites編輯器建立或新增最適化表單
-description: 您可以在AEM Sites頁面中使用最適化表單（核心元件），填寫並提交表單而不需離開AEM Sites頁面。
+title: 如何在AEM Sites頁面中新增或建立最適化表單核心元件？
+description: 在AEM Sites頁面中使用最適化表單核心元件，填寫並提交表單而不離開AEM Sites頁面。
 feature: Adaptive Forms
 hide: true
 hidefromtoc: true
-source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
-source-wordcount: '2129'
+source-wordcount: '2131'
 ht-degree: 5%
 
 ---
@@ -263,7 +263,7 @@ ht-degree: 5%
 
 AEM網站頁面會維護最適化表單的參考。 當您翻譯AEM Sites頁面時，該頁面會使用 [翻譯專案](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/reusing-content/translation/managing-projects.html?lang=en#adding-pages-assets-to-a-translation-job) 翻譯成其他語言。
 
-## 最佳實務 {#best-practices}
+## 最佳做法 {#best-practices}
 
 * 內嵌表單中不包含原始表單的頁首和頁尾。
 * 使用者草稿和提交內嵌表單受到支援，並可在Forms Portal的草稿和已提交的Forms標籤中看到。

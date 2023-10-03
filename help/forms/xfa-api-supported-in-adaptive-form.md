@@ -1,14 +1,12 @@
 ---
 title: XDP型最適化Forms中的XFA支援
-seo-title: XFA support in XDP-based Adaptive Forms
-description: 列出Adaptive Forms中支援的XFA事件、屬性、指令碼和驗證。
-seo-description: Lists supported XFA events, properties, scripts, and validation in Adaptive Forms.
+description: 列出最適化Forms中支援的XFA事件、屬性、指令碼和驗證。
 uuid: 75d3c292-cfed-438f-afdb-4071d95a08b7
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 05303b29-9058-4723-b134-4ba605fe40c7
 docset: aem65
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
 workflow-type: tm+mt
 source-wordcount: '683'
 ht-degree: 5%
@@ -20,27 +18,27 @@ ht-degree: 5%
 
 ## 簡介 {#introduction}
 
-Adaptive Forms可支援XDP檔案中定義的多種XFA事件、屬性、指令碼和驗證，包括：
+最適化Forms為XDP檔案中定義的各種XFA事件、屬性、指令碼和驗證提供支援，包括：
 
 * 執行在XDP檔案中的事件上定義的指令碼。
 * 擷取XDP檔案中欄位的預設值和行為屬性。
 * 執行XDP檔案中定義的驗證指令碼。
 
-根據XDP檔案建立最適化表單時，屬性、事件和驗證會自動填入表單編寫UI中。 不過，表單作者可以覆寫其中某些元素來建立替代體驗。
+根據XDP檔案建立最適化表單時，屬性、事件和驗證會自動填入表單編寫UI中。 不過，表單作者可以覆寫其中某些元素，以建立替代體驗。
 
-本文列出Adaptive Forms中支援的XFA事件、屬性和遵循的驗證，並說明如何在Adaptive Forms中覆寫這些事件、屬性和驗證。
+本文列出最適化Forms中支援的XFA事件、屬性和遵循的驗證，並說明如何在最適化Forms中覆寫這些事件、屬性和驗證。
 
 ## 最適化Forms中支援的XFA元素及其對應 {#supported-xfa-elements-and-their-mapping-in-adaptive-forms-br}
 
 ### 欄位 {#fields}
 
-使用XDP檔案建立調適型表單時，您可以將XFA欄位拖放至調適型表單上。 下表列出XFA欄位如何對應至最適化表單欄位。
+使用XDP檔案建立調適型表單時，您可以將XFA欄位拖放至調適型表單上。 下表列出XFA欄位對應至最適化表單欄位的方式。
 
 <table>
  <tbody>
   <tr>
    <td><p><strong>XFA欄位或容器</strong></p> </td>
-   <td><p><strong>對應的最適化表單元件</strong></p> </td>
+   <td><p><strong>對應的自適應表單元件</strong></p> </td>
   </tr>
   <tr>
    <td><p>按鈕 </p> </td>
@@ -67,7 +65,7 @@ Adaptive Forms可支援XDP檔案中定義的多種XFA事件、屬性、指令碼
    <td><p>數值方塊</p> </td>
   </tr>
   <tr>
-   <td><p>小數欄位</p> </td>
+   <td><p>十進位欄位</p> </td>
    <td><p>數值方塊</p> </td>
   </tr>
   <tr>
@@ -113,7 +111,7 @@ Adaptive Forms可支援XDP檔案中定義的多種XFA事件、屬性、指令碼
   </tr>
   <tr>
    <td><p>somexpression </p> </td>
-   <td><p>對應至最適化表單中的繫結參考(bindRef)屬性。</p> </td>
+   <td><p>對應到最適化表單中的繫結參考(bindRef)屬性。</p> </td>
   </tr>
   <tr>
    <td><p>是否存在 </p> </td>
@@ -148,12 +146,12 @@ Adaptive Forms可支援XDP檔案中定義的多種XFA事件、屬性、指令碼
    <td><p>對應至最適化表單的顯示模式。</p> </td>
   </tr>
   <tr>
-   <td><p>rawValue<em> （所有欄位型別）</em></p> </td>
+   <td><p>原始值<em> （所有欄位型別）</em></p> </td>
    <td><p>對應至最適化表單中的值屬性。</p> </td>
   </tr>
   <tr>
    <td><p>個專案<em> （清單方塊、核取方塊）</em></p> </td>
-   <td><p>對應至最適化表單中的options屬性。 您可以使用「選項」運算式來覆寫它。</p> </td>
+   <td><p>對應至最適化表單中的選項屬性。 您可以使用「選項」運算式來覆寫它。</p> </td>
   </tr>
   <tr>
    <td><p>maxChar<em> （文字欄位）</em></p> </td>
@@ -165,15 +163,15 @@ Adaptive Forms可支援XDP檔案中定義的多種XFA事件、屬性、指令碼
   </tr>
   <tr>
    <td><p>fracDigit<em> （數值欄位，小數欄位）</em></p> </td>
-   <td><p>對應至最適化表單中的Frac數字屬性。</p> </td>
+   <td><p>對應至最適化表單中的影格數字屬性。</p> </td>
   </tr>
   <tr>
    <td><p>leadDigit<em> （數值欄位，小數欄位）</em></p> </td>
-   <td><p>對應至最適化表單中的前導位數屬性。</p> </td>
+   <td><p>對應至最適化表單中的潛在客戶數字屬性。</p> </td>
   </tr>
   <tr>
    <td><p>multiSelect<em> （清單方塊）</em></p> </td>
-   <td><p>對應至允許最適化表單中的多選屬性。</p> </td>
+   <td><p>對應至允許最適化表單中有多個選取專案屬性。</p> </td>
   </tr>
  </tbody>
 </table>
@@ -229,7 +227,7 @@ Adaptive Forms可支援XDP檔案中定義的多種XFA事件、屬性、指令碼
 
 ### 驗證 {#validations}
 
-下表擷取XFA驗證如何對應到Adaptive Forms中的驗證。
+下表擷取XFA驗證如何對應至最適化Forms中的驗證。
 
 <table>
  <tbody>
@@ -250,8 +248,8 @@ Adaptive Forms可支援XDP檔案中定義的多種XFA事件、屬性、指令碼
    <td><p>強制 </p> </td>
   </tr>
   <tr>
-   <td><p>空訊息(nullTestMessage) </p> </td>
-   <td><p>mandatoryMessage</p> </td>
+   <td><p>清空訊息(nullTestMessage) </p> </td>
+   <td><p>message</p> </td>
   </tr>
   <tr>
    <td><p>驗證指令碼(scriptTest)</p> </td>
@@ -266,5 +264,5 @@ Adaptive Forms可支援XDP檔案中定義的多種XFA事件、屬性、指令碼
 
 >[!NOTE]
 >
->您無法覆寫與XFA核取按鈕繫結的最適化表單選項按鈕和核取方塊群組的強制屬性。
+>您無法覆寫最適化表單選項按鈕的強制屬性，也無法覆寫繫結至XFA核取按鈕的核取方塊群組。
 

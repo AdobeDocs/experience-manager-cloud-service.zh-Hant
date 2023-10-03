@@ -1,12 +1,10 @@
 ---
-title: 建立和使用主題
-description: 您可以使用主題來風格化最適化表單，並使用核心元件提供視覺身分。 您可以在任何數量的最適化Forms中共用主題。
-seo-description: You can create a new theme by customizing the available theme. The themes are customized and deployed using frontend pipeline.
-keywords: 建立新主題、自訂主題、上傳新主題、在表單中使用主題、使用前端管道自訂主題
+title: 如何在最適化Forms中建立和使用主題？
+description: 您可以使用主題來設定樣式，並使用核心元件來將視覺身分提供給最適化表單。 您可以在任何數量的最適化Forms中共用主題。
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
-source-wordcount: '2709'
+source-wordcount: '2697'
 ht-degree: 4%
 
 ---
@@ -124,7 +122,7 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 
 1. 以純文字編輯器開啟主題資料夾。 例如，若要開啟 `aem-forms-theme-canvas` Visual Studio程式碼編輯器中的資料夾。
 
-1. 導覽至 `aem-forms-theme-canvas` 資料夾。
+1. 導覽至 `aem-forms-theme-canvas` 檔案夾。
 
 1. 執行以下命令：
 
@@ -389,7 +387,7 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 
 最適化表單主題用於最適化表單範本的一部分，以便在建立最適化表單時定義樣式。
 
-## 最佳實務 {#best-practices}
+## 最佳做法 {#best-practices}
 
 * **避免使用其他主題的資產**
 
@@ -423,4 +421,4 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 ## 相關文章 {#related-article}
 
 * [在 AEM Forms as a Cloud Service 和本地開發環境中啟用最適化表單核心元件](/help/forms/enable-adaptive-forms-core-components.md)
-* [建立獨立核心元件式最適化表單](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html)
+* [建立獨立的以核心元件為主的最適化表單](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html)

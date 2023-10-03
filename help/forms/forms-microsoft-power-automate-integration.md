@@ -1,26 +1,26 @@
 ---
-title: 整合最適化表單與Microsoft&reg； Power Automate
-description: 整合最適化表單與Microsoft&reg； Power Automate。
+title: 如何將最適化表單與Microsoft® Power Automate整合
+description: 整合最適化表單與Microsoft® Power Automate。
 hide: true
 hidefromtoc: true
 exl-id: a059627b-df12-454d-9e2c-cc56986b7de6
-source-git-commit: a635a727e431a73086a860249e4f42d297882298
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
-source-wordcount: '1173'
-ht-degree: 2%
+source-wordcount: '1171'
+ht-degree: 15%
 
 ---
 
 # 連線最適化表單與Microsoft® Power Automate {#connect-adaptive-form-with-power-automate}
 
-您可以設定最適化表單，在提交時執行Microsoft® Power Automate Cloud Flow。 設定的最適化表單會將擷取的資料、附件和記錄檔案傳送到Power Automate雲端流程進行處理。 它可幫助您建立自訂資料擷取體驗，同時利用Microsoft® Power Automate的強大功能，圍繞擷取的資料建立商業邏輯，並自動化客戶工作流程。 以下是整合最適化表單與Microsoft® Power Automate後可以執行的一些範例：
+您可以設定最適化表單，在提交時執行 Microsoft® Power Automate Cloud Flow。設定的最適化表單會將擷取的資料、附件和記錄文件傳送到 Power Automate Cloud Flow 進行處理。那有助於建置自訂資料擷取體驗，同時利用 Microsoft® Power Automate 的強大功能，根據擷取的資料建置商業邏輯，並將客戶工作流程自動化。以下是整合最適化表單與 Microsoft® Power Automate 後，可以執行的部分操作範例：
 
-* 在Power Automate業務流程中使用自適應Forms資料
-* 使用Power Automate將擷取的資料傳送至500多個資料來源或任何公開可用的API
+* 在 Power Automate 業務流程中使用最適化表單資料
+* 使用 Power Automate 將擷取的資料傳送到 500 多個資料來源或任何公開可用的 API
 * 對擷取的資料執行複雜的計算
-* 以預先定義的排程將最適化Forms資料儲存至儲存系統
+* 按預定義的排程將最適化表單資料儲存到儲存系統
 
-最適化Forms編輯器提供 **叫用Microsoft®Power Automate流程** 傳送最適化表單資料、附件和記錄檔案的提交動作會傳送到Power Automate雲端流程。 若要使用提交動作將擷取的資料傳送至Microsoft®Power Automate， [使用Microsoft® Power Automate連線您的Formsas a Cloud Service執行個體](forms-microsoft-power-automate-integration.md#connect-forms-server-with-power-automate)
+最適化Forms編輯器提供 **叫用Microsoft®Power Automate流程** 傳送最適化表單資料、附件和記錄檔案的提交動作會傳送到Power Automate雲端流程。 若要使用提交動作將擷取的資料傳送到 Microsoft® Power Automate，[請使用 Microsoft® Power Automate 連線您的 Forms as a Cloud Service 執行個體](forms-microsoft-power-automate-integration.md#connect-forms-server-with-power-automate)
 
 ## 先決條件
 

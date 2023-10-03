@@ -1,14 +1,14 @@
 ---
-title: 如何建立多步驟表單序列？
-description: 您可以利用  [!DNL Experience Manager Forms] 定義表單面板的序列，以便使用者導覽和填寫最適化表單。請採取使用案例方法做為建立多步驟表單序列的範例，以進行更深入的探索。
+title: 如何建立多步驟表單順序？
+description: 您可以利用  [!DNL Experience Manager Forms] 定義表單面板的序列，以便使用者導覽和填寫最適化表單。
 feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 6b3f9131-db6b-451b-a932-b57d809222eb
-source-git-commit: ca0c9f102488c38dbe8c969b54be7404748cbc00
+source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
 workflow-type: tm+mt
-source-wordcount: '563'
-ht-degree: 100%
+source-wordcount: '547'
+ht-degree: 98%
 
 ---
 

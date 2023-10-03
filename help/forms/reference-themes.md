@@ -1,44 +1,42 @@
 ---
-title: 參考主題
-seo-title: Reference Themes
-description: AEM Forms提供最適化表單主題，您可以從Software Distribution取得，並使用這些主題來設定表單的樣式。
-seo-description: AEM Forms provides adaptive forms themes that you can get from Software Distribution and use to style a form.
+title: AEM Forms參考資產
+description: 使用提供的參考最適化表單主題、範本和表單資料模型快速入門。
 discoiquuid: a1229970-5a5a-4f76-a880-278f972587cc
 exl-id: 03305b4a-d82d-4b8d-8804-249b10bdd358
-source-git-commit: 50d4be07b9563fb5047e9b313ae604cd7633a0e2
+source-git-commit: e2f2aa18e2412bc92d1385a125281ecfb81f2ce8
 workflow-type: tm+mt
-source-wordcount: '514'
+source-wordcount: '513'
 ht-degree: 3%
 
 ---
 
 # Formsas a Cloud Service參考資產 {#reference-themes}
 
-您可以安裝 [參考資產套件](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.0.0.zip). 它有助於快速開始和加速您的Adaptive Forms開發。 您可以使用 [封裝管理員](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager.html) 以將此套件部署至您的AEM Formsas a Cloud Service環境。
+您可以透過安裝取得參考主題、範本和表單資料模型 [參考資產套件](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.0.0.zip). 它有助於快速啟動和加速您的Adaptive Forms開發。 您可以使用 [封裝管理員](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager.html) 將此套件部署至您的AEM Formsas a Cloud Service環境。
 
 套件中包含的參考資產包括：
 
 ## 主題 {#themes}
 
-[主題](/help/forms/themes.md) 讓您無須深入瞭解CSS即可設定表單樣式。 包含下列主題：
+[主題](/help/forms/themes.md) 讓您不具備CSS的深入知識，也能設定表單樣式。 包含下列主題：
 
-* Beryl
+* 貝瑞爾
 * 寧靜
 * Ultraminary
-* 城市
+* 城市化
 * Canva
 
-每個主題都包含獨特且優雅的樣式，可用來為使用者建立愉快的最適化表單。 它包含面板、文字方塊、數值方塊、選項按鈕、表格和切換器等選擇器的獨特樣式。 這些主題中的樣式是根據需求。 例如，在特定案例中，您需要使用簡潔字型的極簡主題。 城市主題可讓您達到這個效果。
+每個佈景主題都包含獨特且優雅的樣式，可用來為使用者建立令人愉悅的最適化表單。 它包含面板、文字方塊、數值方塊、選項按鈕、表格和切換器等選取器的唯一樣式。 這些主題中的樣式是根據需求。 例如，在特定案例中，您需要使用簡潔字型的極簡佈景主題。 城市佈景主題可讓您達到這個效果。
 
 ![參考主題](/help/forms/assets/ref-themes.png)
 
-此套件中包含的主題具有回應性，這些主題中的樣式是為行動裝置和案頭顯示器定義的。 各種裝置上的大部分現代化瀏覽器都能輕鬆轉譯套用這些主題之一的表單。
+此套裝中包含的主題為回應式主題，這些主題中的樣式是為行動裝置和桌上型顯示器所定義。 各種裝置上的大部分現代化瀏覽器都能輕鬆轉譯套用這些主題之一的表單。
 
 如需安裝套件的詳細資訊，請參閱 [如何使用套件](/help/implementing/developing/tools/package-manager.md).
 
-### Beryl {#beryl}
+### 貝瑞爾 {#beryl}
 
-We.Gov最適化表單使用Beryl主題，並強調使用背景影像、透明度及大型平面圖示。 在下方熒幕擷圖中，您可以看到Beryl佈景主題的外觀，以及如何增強表單的樣式。
+We.Gov最適化表單使用Beryl佈景主題，並強調使用背景影像、透明度及大型平面圖示。 在下方熒幕擷圖中，您可以看到Beryl佈景主題的外觀，以及如何增強表單的樣式。
 
 ![柏瑞爾主題](/help/forms/assets/beryl.png)
 
@@ -75,22 +73,22 @@ Liberty theme uses a minimalist approach to highlight the important. For example
 
 ### 寧靜 {#tranquil}
 
-寧靜的主題提供寧靜色彩配置的光暗陰影，以反白顯示表單的不同元件。 例如，單選按鈕、面板和標籤會以不同的綠色陰影顯示。
+寧靜的佈景主題提供寧靜色彩配置的明暗陰影，以突顯表單的不同元件。 例如，單選按鈕、面板和標籤會以不同的綠色顯示。
 
-![寧靜主題](/help/forms/assets/tranquil.png)
+![寧靜的主題](/help/forms/assets/tranquil.png)
 
 <!--[Click to enlarge](assets/tranquil-1.png)-->
 
 ### Ultraminary {#ultramarine}
 
-超海洋主題使用深藍色陰影來反白顯示標籤、面板、文字方塊和按鈕等元件。
+Ultraminary主題使用深藍色陰影來反白標示元件，例如定位點、面板、文字方塊和按鈕。
 
 ![超海洋主題](/help/forms/assets/ultramarine.png)
 <!--[Click to enlarge](assets/ultramarine-1.png)-->
 
-### 城市 {#urbane}
+### 城市化 {#urbane}
 
-城市佈景主題強調您的外型應具有極簡主義與功能外觀。 當您將Urbane主題套用至表單時，您可以看到元件是平坦的。 這些面板的外框很細，可以打造現代外觀。
+城市佈景主題強調您的外型應具有極簡和功能外觀。 當您在表單上套用Urbane佈景主題時，可以看到元件是平面的。 這些面板的外框很薄，可以打造現代外觀。
 
 ![都市佈景主題](/help/forms/assets/urbane.png)
 <!--[Click to enlarge](assets/urbane-1.png)-->
@@ -115,18 +113,18 @@ U.S. Web Design Standards theme, as the name suggests, uses typefaces and styles
 
 ### 空白 {#blank}
 
-基本範本提供空白畫布，供您為組織的調適型表單建立初始結構。
+基本範本會提供空白畫布，讓您為組織的調適型表單建立初始結構。
 
 ## 表單資料模型
 
 ### Microsoft® Dynamics 365
 
-Microsoft Dynamics 365資料模型可協助您使用Microsoft Dynamics 365作為資料來源。 此外，也提供範例服務，可供您讀取、更新、刪除資料，以及將資料新增至Microsoft Dynamics 365資料來源。
+Microsoft Dynamics 365資料模型可協助您使用Microsoft Dynamics 365作為資料來源。 此外，它提供範例服務，可供您讀取、更新、刪除資料，以及新增資料至Microsoft Dynamics 365資料來源。
 
 ![Microsoft® Dynamics 365表單資料模型](/help/forms/assets/microsoft-dynamic-fdm.png)
 
 ### Salesforce
 
-Salesforce資料模型可協助您使用Salesforce作為資料來源。 此外，還提供範例服務，可供您讀取、更新、刪除及新增資料至Salesforce。
+Salesforce資料模型可協助您使用Salesforce作為資料來源。 此外，還提供範例服務，可供您讀取、更新、刪除資料，以及新增資料至Salesforce。
 
 ![Salesforce表單資料模型](/help/forms/assets/salesforce-fdm.png)

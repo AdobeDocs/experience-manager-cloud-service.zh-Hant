@@ -1,14 +1,14 @@
 ---
 title: 如何設定資料來源？
-description: Experience Manager Forms資料整合可讓您設定並連線至不同的資料來源。 瞭解如何將RESTful Web服務、以SOAP為基礎的Web服務和OData服務設定為資料來源，並使用它們來建立表單資料模型。
+description: 瞭解如何將RESTful Web服務、以SOAP為基礎的Web服務和OData服務設定為表單資料模型的資料來源。
 feature: Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
-source-wordcount: '2210'
-ht-degree: 4%
+source-wordcount: '2193'
+ht-degree: 5%
 
 ---
 
@@ -106,7 +106,7 @@ You can configure [!DNL Experience Manager] user profile using User Profile Conn
 
 若要設定雲端服務設定的資料夾：
 
-1. 前往 **[!UICONTROL 「工具」>「一般」>「設定瀏覽器」]**.
+1. 前往&#x200B;**[!UICONTROL 工具 > 一般 > 設定瀏覽器]**。
    * 請參閱 [設定瀏覽器](https://experienceleague.adobe.com/docs/experience-manager-65/administering/introduction/configurations.html) 檔案以取得詳細資訊。
 1. 請執行以下操作來啟用雲端設定的全域資料夾，或跳過此步驟來建立和設定雲端服務設定的另一個資料夾。
 
@@ -114,7 +114,7 @@ You can configure [!DNL Experience Manager] user profile using User Profile Conn
 
    1. 在 **[!UICONTROL 設定屬性]** 對話方塊，啟用 **[!UICONTROL 雲端設定]**.
 
-   1. 點選 **[!UICONTROL 儲存並關閉]** 以儲存組態並結束對話方塊。
+   1. 點選&#x200B;**[!UICONTROL 儲存並關閉]**&#x200B;以儲存設定並退出對話框。
 
 1. 在 **[!UICONTROL 設定瀏覽器]**，點選 **[!UICONTROL 建立]**.
 1. 在 **[!UICONTROL 建立設定]** 對話方塊，指定資料夾的標題，然後啟用 **[!UICONTROL 雲端設定]**.

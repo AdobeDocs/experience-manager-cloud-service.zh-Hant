@@ -1,12 +1,11 @@
 ---
-title: Formsas a Cloud Service通訊簡介
-description: 自動將資料與 XDP 和 PDF 範本合併，或產生 PCL、ZPL 和 PostScript 格式的輸出
-exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
+title: Forms as a Cloud Service 通訊簡介
+description: 使用通訊API來簽署、認證或保護您的檔案、自動化PDF產生流程，以及將PDF檔案轉換為另一種格式。
 Keywords: How to generate document?, Generate PDF document, Manipulation PDF documents, Assembling PDF documents, Validating PDF document, APIs used in encrypting or decrypting PDFs
-source-git-commit: 7c197be7819d6fcbf028237401d05236f90734d1
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
-source-wordcount: '1426'
-ht-degree: 80%
+source-wordcount: '1433'
+ht-degree: 79%
 
 ---
 

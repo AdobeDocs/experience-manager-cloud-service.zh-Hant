@@ -1,13 +1,13 @@
 ---
-title: 使用版面模式調整最適化Forms的元件大小
-description: 使用版面配置模式中可用的回應式格線來定義元件位置。 瞭解如何存取版面模式、調整元件大小、調整面板大小、定義面板的多欄版面、為舊回應式版面啟用新回應式格線，以及為具有舊回應式版面的表單停用版面模式。
+title: 如何使用版面模式調整最適化Forms元件的大小？
+description: 定義AEM Forms元件的位置、瞭解如何存取版面模式、調整元件大小、調整面板大小以及定義面板的多欄版面。
 feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 53896a8e-4568-460b-bca7-994baea0c8eb
-source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
-source-wordcount: '1157'
+source-wordcount: '1134'
 ht-degree: 6%
 
 ---

@@ -1,13 +1,13 @@
 ---
-title: 管理AEM收件匣中的Forms應用程式和工作
+title: 如何管理AEM收件匣中的表單應用程式和工作？
 description: AEM收件匣可讓您透過提交應用程式和管理工作來啟動以Forms為中心的工作流程。
+uuid: c6c0d8ea-743f-4852-99d1-69fd50a0994e
 contentOwner: vishgupt
 topic-tags: document_services, publish
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-docset: aem65
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+discoiquuid: dd11fd83-3df1-4727-8340-8c5426812823
+source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
 workflow-type: tm+mt
-source-wordcount: '1145'
+source-wordcount: '1149'
 ht-degree: 2%
 
 ---
@@ -15,13 +15,13 @@ ht-degree: 2%
 
 # 管理AEM收件匣中的Forms應用程式和工作{#manage-forms-applications-and-tasks-in-aem-inbox}
 
-啟動或觸發以Forms為中心的工作流程的多種方式之一，就是透過AEM收件匣中的應用程式。 您需要建立工作流程應用程式，才能使Forms工作流程在收件匣中作為應用程式使用。 如需工作流程應用程式和啟動Forms工作流程其他方法的詳細資訊，請參閱 [在OSGi上啟動以Forms為中心的工作流程](aem-forms-workflow.md#launch).
+啟動或觸發以Forms為中心的工作流程的多種方式之一，就是透過AEM收件匣中的應用程式。 您需要建立工作流程應用程式，才能使Forms Workflow在收件匣中成為應用程式。 如需工作流程應用程式和啟動Forms工作流程其他方法的詳細資訊，請參閱 [在OSGi上啟動以Forms為中心的工作流程](aem-forms-workflow.md#launch).
 
-此外，AEM收件匣會整合來自各種AEM元件(包括Forms工作流程)的通知和工作。 當觸發包含「指派」任務步驟的表單工作流程時，相關聯的應用程式會在受指派人的收件匣中列為任務。 如果受指派人是群組，則該任務會出現在所有群組成員的「收件匣」中，直到個別人員宣告或委派該任務為止。
+此外，AEM收件匣會整合來自各種AEM元件(包括Forms工作流程)的通知和工作。 當觸發包含「指派」任務步驟的Forms Workflow時，相關聯的應用程式會在受指派人的收件匣中列為任務。 如果受指派人是群組，則該任務會出現在所有群組成員的「收件匣」中，直到個別人員宣告或委派該任務為止。
 
 收件匣使用者介面提供清單和行事曆檢視以檢視工作。 您也可以配置檢視設定。 您可以根據各種引數篩選任務。 如需有關檢視和篩選的詳細資訊，請參閱 [您的收件匣](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/inbox.html#inbox-in-the-header).
 
-簡而言之，「收件匣」可讓您建立新的應用程式並管理指派的工作。
+簡而言之，收件匣可讓您建立應用程式並管理指派的工作。
 
 >[!NOTE]
 >
@@ -35,7 +35,7 @@ ht-degree: 2%
 
 ## 管理任務 {#manage-tasks}
 
-當Forms工作流程觸發時，而您是受指派人或受指派人群組的一部分，任務會出現在您的收件匣中。 您可以在「收件匣」中檢視任務詳細資訊，並對任務執行可用的動作。
+當Forms工作流程觸發且您是受指派人或受指派人群組的一部分時，任務會出現在您的收件匣中。 您可以在「收件匣」內檢視任務詳細資訊，並對任務執行可用的動作。
 
 ### 申請或委派任務 {#claim-or-delegate-tasks}
 
@@ -57,7 +57,7 @@ ht-degree: 2%
 
 ### 檢視詳細資料並對任務執行動作 {#view-details-and-perform-actions-on-tasks}
 
-當您開啟任務時，可以檢視任務詳細資訊並執行可用的動作。 任務可用的動作會在相關Forms工作流程的指派任務步驟中定義。
+當您開啟任務時，可以檢視任務詳細資訊並執行可用的動作。 任務可用的動作在相關Forms Workflow的「指派任務」步驟中定義。
 
 1. 點選以選取工作的縮圖。 頂端會顯示開啟或委派所選任務的選項。
 1. 點選 **開啟** 以檢視工作詳細資訊並採取行動。 詳細任務檢視隨即開啟。 在此檢視中，您可以檢視任務詳細資訊並對任務執行動作。
@@ -87,7 +87,7 @@ ht-degree: 2%
 
 頂端的「工作流程詳細資訊」標籤會顯示工作流程中各個階段的任務進度。 它會顯示任務的已完成階段、目前階段及擱置階段。 工作流程的階段定義於 [指派任務步驟](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html#extending-aem) 相關聯工作流程的。
 
-此外，索引標籤會顯示工作流程中每個已完成階段的任務歷史記錄。 您可以點選 **[!UICONTROL 檢視詳細資料]** 完成階段的相關資訊。 它會顯示有關任務的註解、表單與工作附件、狀態、開始與結束日期等。
+此外，索引標籤會顯示工作流程中每個已完成階段的任務歷史記錄。 您可以點選 **[!UICONTROL 檢視詳細資料]** 完成階段的相關資訊。 它會顯示有關任務的註解、表單及工作附件、狀態、開始與結束日期等。
 
 ![workflow-details](assets/workflow-details.png)
 
@@ -99,7 +99,7 @@ ht-degree: 2%
 
 ### 檢視完成的任務 {#view-completed-tasks}
 
-AEM收件匣只會顯示作用中的任務。 已完成的任務未出現在清單中。 不過，您可以使用收件匣篩選器根據數個引數來篩選任務，例如任務型別、狀態、開始和結束日期等。 若要檢視已完成的工作，請執行下列動作：
+AEM收件匣只會顯示作用中的任務。 已完成的任務未出現在清單中。 不過，您可以使用收件匣篩選器根據數個引數來篩選任務，例如任務型別、狀態、開始和結束日期。 若要檢視已完成的工作，請執行下列動作：
 
 1. 在AEM收件匣中，點選 ![toggle-side-panel1](assets/toggle-side-panel1.png) 以開啟篩選選擇器。
 1. 點選 **[!UICONTROL 任務狀態]** 摺疊式功能表及選取 **[!UICONTROL 完成]**. 所有已完成的任務都會出現。

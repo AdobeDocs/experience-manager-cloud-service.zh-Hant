@@ -1,11 +1,11 @@
 ---
-title: 將對新語言環境的支援新增至調適型表單
-description: AEM Forms可讓您新增本地化最適化表單的地區設定。 英文(en)、西班牙文(es)、法文(fr)、義大利文(it)、德文(de)、日文(ja)、葡萄牙文 — 巴西(pt-BR)、中文(zh-CN)、中文 — 台灣(zh-TW)和韓文(ko-KR)地區。
+title: 如何為最適化表單新增地區設定的支援？
+description: 對於最適化Forms，除了現成可用的語言之外，您還可以新增更多語言的區域設定。
 exl-id: 4c7d6caa-1adb-4663-933f-b09129b9baef
-source-git-commit: 23f915f0e2e33b9cf1313d15cb98a0a4f8243746
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
 source-wordcount: '1259'
-ht-degree: 8%
+ht-degree: 7%
 
 ---
 
@@ -32,7 +32,7 @@ AEM Forms提供英文(en)、西班牙文(es)、法文(fr)、義大利文(it)、�
 
 ## 新增新地區設定的支援 {#add-support-for-new-locales}
 
-執行以下步驟來新增對地區設定的支援：
+執行以下步驟來新增新地區設定的支援：
 
 1. [新增不支援地區設定的本地化支援](#add-localization-support-for-non-supported-locales)
 1. [在最適化Forms中使用新增的地區設定](#use-added-locale-in-af)
@@ -41,7 +41,7 @@ AEM Forms提供英文(en)、西班牙文(es)、法文(fr)、義大利文(it)、�
 
 AEM FormsForms目前支援英文(en)、西班牙文(es)、法文(fr)、義大利文(it)、德文(de)、日文(ja)、巴西葡萄牙文(pt-BR)、中文(zh-CN)、中文 — 台灣(zh-TW)和韓文(ko-KR)本地化內容。
 
-若要新增對地區設定的支援：
+若要在Adaptive Forms執行階段新增對新地區設定的支援：
 
 1. [複製您的存放庫](#clone-the-repository)
 1. [新增語言環境至GuideLocalizationService服務](#add-a-locale-to-the-guide-localization-service)
@@ -69,7 +69,7 @@ AEM FormsForms目前支援英文(en)、西班牙文(es)、法文(fr)、義大利
 1. 在UI.content資料夾中，建立 `etc/clientlibs` 資料夾。
 1. 進一步建立名為的資料夾 `locale-name` 在 `etc/clientlibs` 做為xfa和af clientlibs的容器。
 
-##### 3.1在locale-name資料夾中為地區設定新增XFA使用者端資料庫
+##### 3.1在locale-name資料夾中新增地區設定的XFA使用者端資料庫
 
 建立名為的節點 `[locale-name]_xfa` 並輸入為 `cq:ClientLibraryFolder` 在 `etc/clientlibs/locale_name`，含類別 `xfaforms.I18N.<locale>`，並新增下列檔案：
 
@@ -109,11 +109,11 @@ AEM FormsForms目前支援英文(en)、西班牙文(es)、法文(fr)、義大利
    <filter root="/etc/languages"/>
    ```
 
-將變更提交至AEM Git存放庫之前，您需要存取 [Git存放庫資訊](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#accessing-git).
+將變更提交至AEM Git存放庫之前，您需要存取 [Git存放庫資訊](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=zh-Hant#accessing-git).
 
 #### 5.認可存放庫中的變更並部署管道 {#commit-changes-in-repo-deploy-pipeline}
 
-新增地區設定支援後，將變更提交到GIT存放庫。 使用完整棧疊管道部署您的計畫碼。 瞭解 [如何設定管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline) 以新增地區設定支援。
+新增地區設定支援後，將變更提交到GIT存放庫。 使用完整棧疊管道部署您的計畫碼。 瞭解 [如何設定管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=zh-Hant#setup-pipeline) 以新增地區設定支援。
 管道完成後，新新增的地區設定會顯示在AEM環境中。
 
 ### 在最適化Forms中使用新增的地區設定 {#use-added-locale-in-af}
@@ -148,7 +148,7 @@ AEM FormsForms目前支援英文(en)、西班牙文(es)、法文(fr)、義大利
 
 如果沒有地區設定資訊出現，最適化表單會以表單的原始語言傳送。 原始語言是開發最適化表單時使用的語言。
 
-Get [範例使用者端資源庫](/help/forms/assets/locale-support-sample.zip) 以新增新地區設定的支援。 您需要以所需的地區設定變更資料夾的內容。
+取得 [範例使用者端資源庫](/help/forms/assets/locale-support-sample.zip) 以新增新地區設定的支援。 您需要以所需的地區設定變更資料夾的內容。
 
 ## 支援新本地化的最佳實務 {#best-practices}
 

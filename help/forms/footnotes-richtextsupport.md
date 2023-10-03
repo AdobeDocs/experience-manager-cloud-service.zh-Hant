@@ -1,10 +1,11 @@
 ---
-title: 註腳支援最適化Forms
-description: 使用資訊豐富的RTF註腳來增強最適化Forms。 改善使用者體驗和參與。
-source-git-commit: 6dd34937a8aeb6c7ddfc0fb1180a112de534dd4b
+title: 最適化Forms中的註腳支援
+description: 在最適化表單中的註腳使用RTF編輯器(RTE) 。
+exl-id: f04dae84-daab-42f8-876f-02fe426f62be
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
-source-wordcount: '439'
-ht-degree: 12%
+source-wordcount: '438'
+ht-degree: 13%
 
 ---
 

@@ -1,17 +1,17 @@
 ---
 title: 使用方式 [!DNL Adobe Sign] 在最適化表單中？
-description: 您可以啟用電子簽章([!DNL Adobe Sign])最適化表單的工作流程，可自動化簽署工作流程、簡化單一和多重簽名流程，並以電子方式簽署行動裝置的表單。
+description: 在最適化表單中使用Adobe Sign，讓表單收件者從他們選擇的裝置和位置對表單進行電子簽章。
 topic-tags: develop
 feature: Adaptive Forms
 role: User
 level: Intermediate
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+exl-id: cde9523e-5409-4edd-af0f-2c2575cc22ea
+source-git-commit: defeee2fee42c6274c71438d6f9fde6e49a05081
 workflow-type: tm+mt
-source-wordcount: '3173'
+source-wordcount: '3169'
 ht-degree: 3%
 
 ---
-
 
 # 使用 [!DNL Adobe Sign] 在最適化表單中 {#using-adobe-sign-in-an-adaptive-form}
 
@@ -62,7 +62,7 @@ ht-degree: 3%
 1. [新增 [!DNL Adobe Sign] 最適化表單的收件人](#addsignerstoanadaptiveform)
 1. [選擇最適化表單的提交動作](#selectsubmitactionforanadaptiveform)
 
-![收件人詳細資訊](assets/signer_details_new.png)
+![收件者詳細資料](assets/signer_details_new.png)
 
 ### 啟用 [!DNL Adobe Sign] 最適化表單  {#enableadobesign}
 
@@ -203,7 +203,7 @@ Adobe Sign協定可以有一或多個收件者。 新增收件者時，您也可
      >
      >確認第一個收件者或唯一收件者（若有單一收件者）的電子郵件地址與 [!DNL Adobe Sign] 用來設定AEMCloud Service的帳戶。
 
-   * **[!UICONTROL 收件者驗證方法]：** 指定在開啟Adobe Sign合約之前驗證收件者的方法。 您可以在電話、知識庫、以社交身分為基礎的驗證和以下之間選擇 [政府ID](https://helpx.adobe.com/sign/using/adobesign-authentication-government-id.html) 的 [!DNL Adobe Acrobat Sign]. 的 [!DNL Adobe Acrobat Sign for Government] 您可以在電話和知識型驗證之間選擇。
+   * **[!UICONTROL 收件者驗證方法]：** 指定在開啟Adobe Sign合約之前驗證收件者的方法。 您可以在電話、知識庫、以社交身分為基礎的驗證和以下之間選擇 [政府ID](https://helpx.adobe.com/tw/sign/using/adobesign-authentication-government-id.html) 的 [!DNL Adobe Acrobat Sign]. 的 [!DNL Adobe Acrobat Sign for Government] 您可以在電話和知識型驗證之間選擇。
 
    >[!NOTE]
    >

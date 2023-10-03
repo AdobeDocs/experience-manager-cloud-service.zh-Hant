@@ -1,16 +1,14 @@
 ---
-title: 在Designer中變更頁面零點內容
-seo-title: Changing Page Zero content in Designer
-description: 您知道在非Adobe PDF檢視器中檢視XFAPDF時，如何變更顯示在第0頁的訊息？
-seo-description: Do you know how you can change the message displayed on Page Zero of an XFA PDF when viewing it in a non-Adobe PDF viewer?
+title: 如何在Designer中變更「頁面零」內容？
+description: 針對非Adobe PDF檢視器，變更XFAPDF第0頁顯示的訊息。
 uuid: ac23fb21-3f15-48ea-aeeb-4ecc12b771ac
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 56b6a573-8aba-43e7-acb7-c2da45869d95
 docset: aem65
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
-source-wordcount: '232'
+source-wordcount: '224'
 ht-degree: 1%
 
 ---

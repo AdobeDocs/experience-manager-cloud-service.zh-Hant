@@ -1,11 +1,11 @@
 ---
-title: 匯入或匯出最適化Forms和AEM Forms資產
-description: 是否要將最適化Forms和資產移轉至AEM執行個體？ 在此處瞭解如何從匯入和匯出最適化Forms、PDF forms、主題和其他支援資產 [!DNL AEM Forms] 執行個體。
-seo-description: Looking to migrate Adaptive Forms and assets to and from an AEM instances? Learn here how to import and export Adaptive Forms, PDF forms, themes, and other supporting assets from an [!DNL AEM Forms] instance.
+title: 瞭解如何匯入、匯出和組織最適化Forms、PDF forms和其他資產，於[!DNL AEM Forms] 例項
+description: 瞭解如何從AEM執行個體移轉最適化Forms、PDF forms、主題和其他支援資產。
 topic-tags: forms-manager
-source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
+exl-id: f5105fb7-b8c0-4656-8095-b21d392746c0
+source-git-commit: defeee2fee42c6274c71438d6f9fde6e49a05081
 workflow-type: tm+mt
-source-wordcount: '1206'
+source-wordcount: '1199'
 ht-degree: 0%
 
 ---

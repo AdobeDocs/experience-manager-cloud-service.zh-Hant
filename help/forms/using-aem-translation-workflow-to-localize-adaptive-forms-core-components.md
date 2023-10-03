@@ -1,10 +1,11 @@
 ---
-title: 翻譯以核心元件為基礎的最適化表單
-description: 使用機器翻譯或人工翻譯來翻譯以核心元件為基礎的最適化表單
+title: 如何翻譯以核心元件為基礎的最適化表單？
+description: 瞭解如何在AEM Forms中建立表單資料模型、使用範例資料和服務測試模型，並為模型設定各種選項。
 feature: Adaptive Forms
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+exl-id: ad46bf0f-e6ec-4c52-9695-5768a9968e16
+source-git-commit: defeee2fee42c6274c71438d6f9fde6e49a05081
 workflow-type: tm+mt
-source-wordcount: '880'
+source-wordcount: '893'
 ht-degree: 4%
 
 ---

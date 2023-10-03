@@ -1,12 +1,13 @@
 ---
-title: Adaptive Forms中的分隔符號元件
-description: 您可以使用分隔符號元件以視覺化方式分隔表單的區段。
+title: 什麼是Adaptive Forms中的分隔符號元件？
+description: Adaptive Forms中的分隔符號元件有助於以視覺化方式分隔表單各個區段。
+uuid: f8d2aed3-52aa-437f-bfe3-0c8779e7986c
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 docset: aem65
-source-git-commit: 97a6a7865f696f4d61a1fb4e25619caac7b68b51
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
-source-wordcount: '310'
+source-wordcount: '312'
 ht-degree: 1%
 
 ---
