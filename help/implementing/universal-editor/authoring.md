@@ -2,9 +2,9 @@
 title: 使用 Universal Editor 編寫內容
 description: 了解內容作者使用 Universal Editor 建立內容有多簡單和直覺。
 exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
-source-git-commit: b3ba87c1fa2f0578f93c7c3bd2671fbc75178b4e
-workflow-type: ht
-source-wordcount: '2412'
+source-git-commit: 79fe3133a6b0553209b14c4cf47faa9db28caacc
+workflow-type: tm+mt
+source-wordcount: '2410'
 ht-degree: 100%
 
 ---
@@ -158,7 +158,7 @@ Universal Editor 標頭始終顯示在畫面頂端，就在 [Experience Cloud �
 
 >[!TIP]
 >
->如需有關使用 Universal Visual Editor 進行發佈的詳細資訊，請參閱[使用 Universal Visual Editor 發佈內容](publishing.md)文件。
+>如需有關使用 Universal Editor 進行發佈的詳細資訊，請參閱[使用 Universal Visual Editor 發佈內容](publishing.md)文件。
 
 ### 模式邊欄 {#rail}
 
@@ -409,7 +409,7 @@ Universal Editor 標頭始終顯示在畫面頂端，就在 [Experience Cloud �
 若要了解有關 Universal Editor 的詳細資訊，請參閱以下文件。
 
 * [Universal Editor 簡介](introduction.md) - 了解 Universal Editor 如何在任意實作中編輯任何方面的內容，以便提供卓越的體驗、提高內容速度並提供最先進的開發人員體驗。
-* [使用 Universal Editor 發佈內容](publishing.md) - 了解 Universal Visual Editor 如何發佈內容，和您的應用程式如何處理發佈的內容。
+* [使用 Universal Editor 發佈內容](publishing.md) - 了解 Universal Editor 如何發佈內容，和您的應用程式如何處理發佈的內容。
 * [AEM 中 Universal Editor 快速入門](getting-started.md) - 了解如何存取 Universal Editor，以及如何開始檢測您的第一個 AEM 應用程式以使用它。
 * [Universal Editor 架構](architecture.md) - 了解 Universal Editor 的架構，以及資料如何在其服務和階層之間流動。
 * [屬性和類型](attributes-types.md) - 了解 Universal Editor 需要的資料屬性和類型。
