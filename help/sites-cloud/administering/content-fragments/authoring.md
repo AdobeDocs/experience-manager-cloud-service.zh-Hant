@@ -3,13 +3,13 @@ title: 編寫內容片段
 description: 瞭解如何為內容片段製作內容，然後根據用途建立該內容的變體。 這為Headless傳送和頁面製作增加了靈活性。
 feature: Content Fragments
 role: User, Developer, Architect
-source-git-commit: 2a4538ad8b52615ffdee110393bfbc01f57694f4
+exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
+source-git-commit: e92e0d76ed5aa904c3e16bcfda13650fb6a8b5b6
 workflow-type: tm+mt
-source-wordcount: '2249'
+source-wordcount: '2253'
 ht-degree: 7%
 
 ---
-
 
 # 編寫內容片段 {#authoring-content-fragments}
 
@@ -32,23 +32,9 @@ ht-degree: 7%
 * 能夠 [檢視和開啟父參照](#view-parent-references).
 * 內容片段及其參考的階層式檢視，使用 [樹狀結構](#structure-tree).
 
->[!CAUTION]
+>[!WARNING]
 >
 >本節所述的編輯器為 *僅限* 可在 *線上* Adobe Experience Manager (AEM)as a Cloud Service。
-
->[!CAUTION]
->
->若要編輯內容片段，您需要 [適當的許可權](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions). 如果您遇到問題，請聯絡您的系統管理員。
-> 
->例如，如果您沒有 `edit` 許可權：編輯器將是唯讀的。
-
->[!NOTE]
->
->如需詳細資訊，請參閱資產檔案 [原始內容片段編輯器](/help/assets/content-fragments/content-fragments-variations.md)  — 您可透過 **資產** 主控台與 **內容片段** 主控台。
-
->[!NOTE]
->
->您的專案團隊可視需要自訂編輯器。 另請參閱 [自訂內容片段控制檯和編輯器](/help/implementing/developing/extending/content-fragments-console-and-editor.md) 以取得更多詳細資料。
 
 ## 內容片段編輯器 {#content-fragment-editor}
 
@@ -76,12 +62,6 @@ ht-degree: 7%
    * 如果「**標籤預留位置**」欄位是在此處所示模型中定義，那麼這些欄位可用於導覽；它們會水準顯示或作為下拉式清單顯示
 
 ![內容片段編輯器 — 概觀](assets/cf-authoring-overview.png)
-
->[!CAUTION]
->
->內容片段模型通常可以定義資料欄位，名為 **標題** 和 **說明**. 如果這些欄位存在，則為使用者定義的欄位，並且可以在以下欄位中更新： *中央面板* 編輯片段時。
->
->內容片段及其變化也有稱為的中繼資料欄位（變化屬性） **標題** 和 **說明**. 這些欄位是任何內容片段不可或缺的一部分，並在片段時最初定義。 它們可以在以下位置更新： *右側面板* 編輯片段時。
 
 ## 導覽內容片段結構 {#navigate-structure}
 
@@ -494,3 +474,19 @@ ht-degree: 7%
   </tr>
  </tbody>
 </table>
+
+## 很高興知道 {#good-to-know}
+
+此外：
+
+* 若要編輯內容片段，您需要 [適當的許可權](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions). 如果您遇到問題，請聯絡您的系統管理員。
+
+  例如，如果您沒有 `edit` 許可權：編輯器將是唯讀的。
+
+* 內容片段模型通常可以定義資料欄位，名為 **標題** 和 **說明**. 如果這些欄位存在，則為使用者定義的欄位，並且可以在以下欄位中更新： *中央面板* 編輯片段時。
+
+  內容片段及其變化也有稱為的中繼資料欄位（變化屬性） **標題** 和 **說明**. 這些欄位是任何內容片段不可或缺的一部分，並在片段時最初定義。 它們可以在以下位置更新： *右側面板* 編輯片段時。
+
+* 如需詳細資訊，請參閱資產檔案 [原始內容片段編輯器](/help/assets/content-fragments/content-fragments-variations.md)  — 您可透過 **資產** 主控台與 **內容片段** 主控台。
+
+* 您的專案團隊可視需要自訂編輯器。 另請參閱 [自訂內容片段控制檯和編輯器](/help/implementing/developing/extending/content-fragments-console-and-editor.md) 以取得更多詳細資料。
