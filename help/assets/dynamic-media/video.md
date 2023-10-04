@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 1df4f371fe4a98b910634b4742d9ff1a9448674f
+source-git-commit: 00cd62aa64c183a0560326feaacda1db70627858
 workflow-type: tm+mt
-source-wordcount: '9442'
+source-wordcount: '9448'
 ht-degree: 2%
 
 ---
@@ -551,6 +551,7 @@ DASH (Digital Adaptive Streaming over HTTP)是視訊串流的國際標準，被�
 1. 若要建立支援案例，請遵循指示，同時確保您提供下列資訊：
 
    * 主要連絡人姓名、電子郵件、電話。
+   * 您的方案ID和環境ID。
    * 您的Dynamic Media帳戶名稱。
    * 指定您想在Dynamic Media帳戶上，於Experience Manager6.5啟用DASH、多字幕和多音訊曲目支援。
 
@@ -565,7 +566,7 @@ DASH (Digital Adaptive Streaming over HTTP)是視訊串流的國際標準，被�
 
 ## 關於Dynamic Media中視訊的多字幕與多音訊曲目支援{#about-msma}
 
-透過Dynamic Media的多重字幕與多重音訊曲目功能，您可以輕鬆將多重字幕與音訊曲目新增至主要視訊。 此功能表示您的視訊可在全球對象中存取。 您可以透過多種語言，為全球觀眾自訂單一已發佈的主要影片，並遵守不同地理區域的協助工具准則。 作者也可以從使用者介面的單一標籤管理字幕和音軌。
+透過Dynamic Media的多重字幕與多重音訊曲目功能，您可以輕鬆將多重字幕與音訊曲目新增至主要視訊。 此功能表示全球對象都可以存取您的影片。您可以以多種語言向全球對象自訂單一已發佈的主要影片，並遵守不同地理區域的輔助功能指南。作者還可以從使用者介面中的單個標籤管理字幕和音訊。
 
 ![Dynamic Media中的字幕和音訊曲目索引標籤，以及顯示已上傳視訊的.VTT字幕檔案和已上傳的.MP3音訊曲目檔案的表格。](/help/assets/dynamic-media/assets/msma-subtitle-audiotracks-tab.png)
 
