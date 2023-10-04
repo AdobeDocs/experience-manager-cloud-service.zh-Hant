@@ -4,7 +4,7 @@ description: 瞭解如何為內容片段製作內容，然後根據用途建立�
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
-source-git-commit: e92e0d76ed5aa904c3e16bcfda13650fb6a8b5b6
+source-git-commit: b8206ffc0947de4fed085a03a6f90b5ac0f85aab
 workflow-type: tm+mt
 source-wordcount: '2253'
 ht-degree: 7%
@@ -27,8 +27,7 @@ ht-degree: 7%
 * [預覽](#preview-content-fragment) 內容片段提供的呈現體驗數量。
 * 能夠 [發佈](#publish-content-fragment) 和 [取消發佈](#unpublish-content-fragment) 從編輯器中。
 * 能夠 [檢視並開啟相關的語言副本](#view-language-copies) 在編輯器中。
-* 能夠 [檢視版本詳細資料](#view-version-history) 在編輯器中。
-   * 您也可以還原至選取的版本。
+* 能夠 [檢視版本詳細資料](#view-version-history) 在編輯器中。 您也可以還原至選取的版本。
 * 能夠 [檢視和開啟父參照](#view-parent-references).
 * 內容片段及其參考的階層式檢視，使用 [樹狀結構](#structure-tree).
 
