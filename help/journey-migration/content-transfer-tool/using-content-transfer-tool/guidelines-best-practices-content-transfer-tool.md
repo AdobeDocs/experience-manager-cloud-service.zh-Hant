@@ -2,10 +2,10 @@
 title: 使用「內容轉移工具」的准則與最佳作法
 description: 瞭解使用「內容轉移工具」的准則與最佳實務。
 exl-id: d1975c34-85d4-42e0-bb1a-968bdb3bf85d
-source-git-commit: d67c5c9baafb9b7478f1d1c2ad924f5a8250a1ee
+source-git-commit: 5f805122fb52d7f5268075bd7a6a0232e7e8d2ff
 workflow-type: tm+mt
-source-wordcount: '1554'
-ht-degree: 11%
+source-wordcount: '1432'
+ht-degree: 12%
 
 ---
 
@@ -76,12 +76,6 @@ ht-degree: 11%
 * 「內容轉移工具」轉移的使用者和群組只是內容滿足許可權所需的使用者與群組。 此 _摘取_ 程式複製整個 `/home` 並新增從每個使用者的電子郵件地址建立的欄位，以進行「使用者對應」。 如需詳細資訊，請參閱 [使用者對應和主體移轉](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md). 此 _內嵌_ 程式會複製已移轉內容ACL中參考的所有使用者和群組。 另請參閱 [移轉封閉式使用者群組](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/closed-user-groups-migration.md) 封閉使用者群組(CUG)原則中所使用群組的額外考量事項。
 
 * 在提取階段中，「內容轉移工具」會在作用中的 AEM 來源例項上執行。
-
-* 完成 *摘取* 內容轉移程式階段及開始 *擷取階段* 將內容內嵌至您的AEMas a Cloud Service *階段* 或 *生產* 執行個體，記錄支援票證。 通知Adobe您打算執行 *內嵌* 以便Adobe可確保期間不會發生中斷情形。 *內嵌* 程式。 在計畫的前一週記錄支援票證 *內嵌* 日期。 在您提交支援票證後，支援團隊會提供後續步驟的指引。 您可以提交支援票證，其詳細資料如下：
-
-   * 計劃開始的確切日期和估計時間（含您的時區） *內嵌* 階段。
-   * 您計畫要將資料擷取到的環境型別（中繼或生產）。
-   * 方案ID。
 
 * 此 *擷取階段* 若為作者，會縮小整個作者部署。 這表示在整段擷取程式中，無法使用製作AEM。 也請確定當您執行 *內嵌* 階段。
 

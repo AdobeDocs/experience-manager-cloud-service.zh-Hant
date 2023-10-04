@@ -2,10 +2,10 @@
 title: 將內容引入雲端服務
 description: 瞭解如何使用Cloud Acceleration Manager將移轉集中的內容擷取到目標Cloud Service例項。
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 5c482e5f883633c04d70252788b01f878156bac8
+source-git-commit: a6d19de48f114982942b0b8a6f6cbdc38b0d4dfa
 workflow-type: tm+mt
-source-wordcount: '2142'
-ht-degree: 8%
+source-wordcount: '2191'
+ht-degree: 7%
 
 ---
 
@@ -20,9 +20,6 @@ ht-degree: 8%
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/extracting-content.html#top-up-extraction-process" text="填滿提取"
 
 請依照下列步驟，使用Cloud Acceleration Manager擷取您的移轉集：
-
->[!NOTE]
->您記得為此擷取記錄支援票證嗎？ 另請參閱 [使用內容轉移工具前的重要考量](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html#important-considerations) 以及有助於成功擷取的其他考量事項。
 
 1. 前往Cloud Acceleration Manager。 按一下您的專案卡，然後按一下「內容轉移」卡。 瀏覽至 **內嵌工作** 並按一下 **新增內嵌**
 
@@ -120,21 +117,27 @@ ht-degree: 8%
 > 顯示「移轉權杖」欄位，因為在少數情況下，實際上不允許擷取該權杖。 透過允許手動提供，這可讓使用者無需任何其他協助即可快速開始內嵌。 如果提供Token，但訊息仍顯示，則擷取Token並非問題。
 
 * AEMas a Cloud Service會維護環境狀態，而且偶爾會因為各種正常原因而重新啟動移轉服務。 如果服務正在重新啟動，則無法連線到該服務，但最終會提供該服務。
-* 執行個體上可能正在執行另一個處理序。 例如，如果Release Orchestrator套用更新，系統可能會忙碌，而且移轉服務會定期無法使用。 再加上可能會損毀中繼或生產執行個體，因此強烈建議在內嵌期間暫停更新。
+* 執行個體上可能正在執行另一個處理序。 例如，如果 [AEM版本更新](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates.html) 正在套用更新，系統可能忙碌中，且移轉服務定期無法使用。 完成該程式後，可以再次嘗試開始內嵌。
 * 如果 [已套用IP允許清單](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) 透過Cloud Manager，它會封鎖Cloud Acceleration Manager，使其無法連線至移轉服務。 無法新增用於內嵌的IP位址，因為其位址是動態的。 目前，唯一的解決方案是在內嵌執行期間停用IP允許清單。
 * 可能有其他原因需要調查。 如果內嵌仍持續失敗，請聯絡Adobe客戶服務。
 
-### 透過Release Orchestrator的自動更新仍然啟用
+### AEM版本更新與擷取
 
-Release Orchestrator會自動套用更新，讓環境保持最新狀態。 如果在執行內嵌時觸發更新，可能會導致無法預測的結果，包括環境損毀。 有充分理由在開始內嵌前先記錄客戶支援票證（請參閱上述「附註」），如此便可排程暫時停用Release Orchestrator。
+[AEM版本更新](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates.html) 會自動套用至環境，以使用最新的AEMas a Cloud Service版本。 如果在執行內嵌時觸發更新，可能會導致無法預測的結果，包括環境損毀。
 
-如果內嵌開始時Release Orchestrator仍在執行，使用者介面會顯示此訊息。 您仍然可以選擇繼續，接受風險，方法是檢查欄位並再次按按鈕。
+如果「AEM版本更新」已上線到目的地程式，則擷取程式會嘗試在啟動之前停用其佇列。 內嵌完成時，版本更新程式狀態會傳回至內嵌開始前的狀態。
 
 >[!NOTE]
 >
-> Release Orchestrator現在正部署至開發環境，因此也應該暫停這些環境的更新。
+> 您不再需要記錄支援票證來停用「AEM版本更新」。
 
-![影像](/help/journey-migration/content-transfer-tool/assets-ctt/error_releaseorchestrator_ingestion.png)
+如果「AEM版本更新」作用中（亦即更新正在執行或已排入佇列等待執行），內嵌將不會開始，且使用者介面會顯示下列訊息。 更新完成後，即可開始內嵌。 Cloud Manager可用於檢視計畫管道的目前狀態。
+
+>[!NOTE]
+>
+> 「AEM版本更新」會在環境的管道中執行，並會等到管道清除為止。 如果更新排入佇列的時間比預期長，請確保自訂工作流程不會無意中鎖定管道。
+
+![影像](/help/journey-migration/content-transfer-tool/assets-ctt/error_releaseorchestrator_active.png)
 
 ### 由於違反唯一性限制，追加擷取失敗
 
