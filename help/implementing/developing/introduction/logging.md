@@ -2,10 +2,10 @@
 title: AEMas a Cloud Service記錄
 description: 瞭解如何使用AEM的記錄as a Cloud Service來設定中央記錄服務的全域引數、個別服務的特定設定，或如何請求資料記錄。
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: 7d4e1acee54ebcb1398bcc6ab83491e3fa6a8801
+source-git-commit: 8f20876be6b01e1994fb8f91d4a1b4a113588a3e
 workflow-type: tm+mt
-source-wordcount: '2669'
-ht-degree: 8%
+source-wordcount: '2657'
+ht-degree: 10%
 
 ---
 
@@ -107,7 +107,7 @@ AEM記錄層級是透過OSGi設定根據環境型別設定，而這些設定又�
 22.06.2020 18:33:30.372 [cm-p12345-e6789-aem-author-86657cbb55-xrnzq] *WARN* [73.91.59.34 [1592850810364] GET /libs/granite/core/content/login.html HTTP/1.1] libs.granite.core.components.login.login$jsp j_reason param value 'unknown' cannot be mapped to a valid reason message: ignoring
 ```
 
-**紀錄格式**
+**記錄格式**
 
 <table>
 <tbody>
@@ -204,7 +204,7 @@ AEMas a Cloud Service的HTTP請求記錄可讓您依時間順序深入分析向A
 29/Apr/2020:19:14:22 +0000 [139] <- 200 text/html;charset=utf-8 637ms [cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]
 ```
 
-**紀錄格式**
+**記錄格式**
 
 <table>
 <tbody>
@@ -297,7 +297,7 @@ cm-p1234-e5678-aem-publish-b86c6b466-qpfvp - - 17/Jul/2020:09:14:41 +0000  "GET 
 cm-p1234-e5678-aem-publish-b86c6b466-qpfvp - - 17/Jul/2020:09:14:42 +0000  "GET /etc.clientlibs/wknd/clientlibs/clientlib-site/resources/images/country-flags/US.svg HTTP/1.1" 200 810 "https://publish-p6902-e30226.adobeaemcloud.com/content/wknd/us/en.html" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:78.0) Gecko/20100101 Firefox/78.0"
 ```
 
-**紀錄格式**
+**記錄格式**
 
 <table>
 <tbody>
@@ -366,7 +366,7 @@ Fri Jul 17 02:19:48.093874 2020 [core:notice] [pid 1:tid 140272153361288] [cm-p1
 Fri Jul 17 02:29:34.517189 2020 [mpm_worker:notice] [pid 1:tid 140293638175624] [cm-p1234-e30226-aem-publish-b496f64bf-5vckp] AH00295: caught SIGTERM, shutting down
 ```
 
-**紀錄格式**
+**記錄格式**
 
 <table>
 <tbody>
@@ -428,7 +428,7 @@ Define REWRITE_LOG_LEVEL debug
 [17/Jul/2020:23:48:07 +0000] [I] [cm-p12904-e25628-aem-publish-6c5f7c9dbd-mzcvr] "GET /content/wknd/us/en/adventures/ski-touring-mont-blanc/_jcr_content/root/responsivegrid/carousel/item_1571168419252.coreimg.jpeg/1572047288089/adobestock-238230356.jpeg" 302 11ms [publishfarm/0] [action none] "publish-p12904-e25628.adobeaemcloud.com"
 ```
 
-**紀錄格式**
+**記錄格式**
 
 <table>
 <tbody>
@@ -502,11 +502,6 @@ Define DISP_LOG_LEVEL debug
 
 ## CDN記錄 {#cdn-log}
 
->[!NOTE]
->
->此功能將於9月初逐步向客戶推出。
->
-
 AEMas a Cloud Service提供對CDN記錄的存取權，這對使用案例（包括快取命中比率最佳化）很有用。 無法自訂CDN記錄格式，且沒有將其設定為不同模式（例如info、warn或error）的概念。
 
 請注意，Splunk轉送功能尚不支援CDN記錄。
@@ -532,25 +527,25 @@ AEMas a Cloud Service提供對CDN記錄的存取權，這對使用案例（包�
 }
 ```
 
-**紀錄格式**
+**記錄格式**
 
 CDN記錄與其他記錄不同，因為它會遵循JSON格式。
 
 | **欄位名稱** | **說明** |
 |---|---|
 | *timestamp* | TLS 終止後要求開始的時間 |
-| *ttfb* | *首位元組時間 (Time To First Byte)* 的縮寫。 發出要求開始到回應內文開始串流的時間之間的時間間隔。 |
+| *ttfb* | *首位元組時間 (Time To First Byte)* 的縮寫。發出要求開始到回應內文開始串流的時間之間的時間間隔。 |
 | *cli_ip* | 用戶端 IP 位址。 |
-| *cli_country* | 雙字母 [ISO 3166-1](https://en.wikipedia.org/wiki/ISO_3166-1) 使用者端國家/地區的alpha-2國家/地區代碼。 |
+| *cli_country* | 雙字母 [ISO 3166-1](https://en.wikipedia.org/wiki/ISO_3166-1) 用戶端國家/地區的 alpha-2 國家/地區代碼。 |
 | *rid* | 用於唯一識別要求的要求標頭的值。 |
 | *req_ua* | 負責發出特定 HTTP 要求的使用者代理程式。 |
 | *主機* | 發送要求的目標機構。 |
 | *url* | 包括查詢參數的完整路徑。 |
 | *方法* | 用戶端傳送的 HTTP 方法，例如「GET」或「POST」。 |
-| *res_ctype* | 此內容類型會用於表示資源的原始媒體類型. |
+| *res_ctype* | 此內容類型用於指明資源的原始媒體類型。 |
 | *cache* | 快取的狀態。可能的值包括 HIT、MISS 或 PASS |
 | *狀態* | 作為整數值的 HTTP 狀態代碼。 |
-| *res_age* | 回應已快取的時間（秒） （在所有節點中）。 |
+| *res_age* | 回應已經 (在所有的節點) 快取的時間量 (以秒為單位)。 |
 | *pop* | CDN 快取伺服器的資料中心。 |
 
 ## 如何存取記錄檔 {#how-to-access-logs}
