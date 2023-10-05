@@ -1,13 +1,13 @@
 ---
 title: Edge Delivery Services快速入門
-description: Edge Delivery Services快速入門。
-source-git-commit: 6334efceb9abae560ae77c133df1a70ffb438e6a
+description: 開始使用 Edge Delivery Services。
+exl-id: 03a1aa93-d2e6-4175-9cf3-c7ae25c0d24e
+source-git-commit: ba59cb131d3b17730c87377f30162feb4e7aee29
 workflow-type: tm+mt
-source-wordcount: '832'
+source-wordcount: '833'
 ht-degree: 0%
 
 ---
-
 
 # Edge Delivery Services快速入門 {#getstart-edge}
 
@@ -59,7 +59,7 @@ Adobe提供三個管道來協助您進行Edge Delivery Services：
 
 ### 存取社群資源 {#community-resource}
 
-Adobe有兩個社群資源可協助您進行邊緣傳送， [Experience League社群](https://adobe.ly/3RzitVw) 和 [不和諧的頻道](https://discord.gg/YFTKQK8M).
+Adobe有兩個社群資源可協助您進行邊緣傳送， [Experience League社群](https://adobe.ly/3Q6kTKl) 和 [不和諧的頻道](https://discord.gg/YFTKQK8M).
 
 ### 如何存取您的產品共同作業管道 {#collab-channel}
 
