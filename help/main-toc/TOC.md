@@ -8,9 +8,9 @@ user-guide-description: 了解 Experience Manager as a Cloud Service 的運作�
 breadcrumb-title: 使用手冊
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 2d4a81aa0d6755270d4d6efb8649782f4bde4537
+source-git-commit: 1d0001f967cad074ffc8d91f77241502ffaa1d94
 workflow-type: tm+mt
-source-wordcount: '4308'
+source-wordcount: '4313'
 ht-degree: 98%
 
 ---
@@ -87,6 +87,7 @@ ht-degree: 98%
    + Cloud Manager 發行說明 {#cloud-manager}
       + [最新發行說明](/help/implementing/cloud-manager/release-notes/current.md)
       + 2023 {#2023}
+         + [2023.9.0 版發行說明](/help/implementing/cloud-manager/release-notes/2023/2023-9-0.md)
          + [2023.8.0 版發行說明](/help/implementing/cloud-manager/release-notes/2023/2023-8-0.md)
          + [2023.7.0 版發行說明](/help/implementing/cloud-manager/release-notes/2023/2023-7-0.md)
          + [2023.6.0 版發行說明](/help/implementing/cloud-manager/release-notes/2023/2023-6-0.md)
@@ -734,7 +735,7 @@ ht-degree: 98%
    + [移轉](/help/commerce-cloud/migration.md)
    + [常見問題集](/help/commerce-cloud/faq.md)
 + Edge遞送服務 {#edge-delivery}
-   + [Edge Delivery 快速入門。](/help/edge/overview.md)
+   + [開始使用 Edge Delivery](/help/edge/overview.md)
    + [使用邊緣傳送](/help/edge/using.md)
 + Headless {#headless}
    + [什麼是 Headless CMS？](/help/headless/what-is-headless.md)
@@ -847,6 +848,7 @@ ht-degree: 98%
          + [體驗稽核測試](/help/implementing/cloud-manager/experience-audit-testing.md)
          + [體驗稽核儀表板](/help/implementing/cloud-manager/experience-audit-dashboard.md)
       + [存取和管理記錄檔](/help/implementing/cloud-manager/manage-logs.md)
+      + [自訂許可權](/help/implementing/cloud-manager/custom-permissions.md)
       + [SLA 報告](/help/implementing/cloud-manager/sla-reporting.md)
       + [New Relic One](/help/implementing/cloud-manager/user-access-new-relic.md)
       + [通知](/help/implementing/cloud-manager/notifications.md)
