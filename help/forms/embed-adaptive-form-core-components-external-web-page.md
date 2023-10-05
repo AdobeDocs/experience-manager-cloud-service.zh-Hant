@@ -1,16 +1,16 @@
 ---
-title: 在外部網頁中內嵌適用性表單
-description: 了解如何在外部網頁中嵌入調適型表單
+title: 如何根據核心元件將最適化表單內嵌至外部網頁？
+description: 瞭解如何將最適化Forms內嵌至網站。
 contentOwner: Khushwant Singh
 docset: CloudService
 role: Developer
-source-git-commit: 6d0e3ee08862030e9eb7d068b251d13bc3e8e08f
+exl-id: 198f6f76-1134-4818-89a0-6ddc84ff956c
+source-git-commit: 2d4a81aa0d6755270d4d6efb8649782f4bde4537
 workflow-type: tm+mt
-source-wordcount: '979'
-ht-degree: 100%
+source-wordcount: '984'
+ht-degree: 97%
 
 ---
-
 
 # 根據核心元件將調適性表單內嵌至外部網頁 {#embed-adaptive-form-in-external-web-page}
 
@@ -162,6 +162,3 @@ ProxyPassReverse /content https://<AEM_Instance>/content
 1. 在 AEM 發佈執行個體上，前往 AEM Web 主控台的 Configuration Manager：`https://'[server]:[port]'/system/console/configMgr`。
 1. 找到並開啟 **Apache Sling 查閱者篩選器**&#x200B;設定。
 1. 在允許的主機欄位中，指定網頁所在的網域。這樣可讓主機向 AEM 伺服器發送 POST 請求。您還可以使用規則運算式來指定一系列的外部應用程式網域。
-
-
-

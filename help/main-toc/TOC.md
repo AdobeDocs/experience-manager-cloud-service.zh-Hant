@@ -8,9 +8,9 @@ user-guide-description: 了解 Experience Manager as a Cloud Service 的運作�
 breadcrumb-title: 使用手冊
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 9146bf7222ad3cb74e6558868c41b822364ef3f0
+source-git-commit: 2d4a81aa0d6755270d4d6efb8649782f4bde4537
 workflow-type: tm+mt
-source-wordcount: '4296'
+source-wordcount: '4308'
 ht-degree: 98%
 
 ---
@@ -569,7 +569,8 @@ ht-degree: 98%
          + [檢視並了解 Adaptive Forms Analytics 報告](/help/forms/view-understand-aem-forms-analytics-reports.md)
          + [將最適化表單與 Microsoft Power Automate 整合](/help/forms/forms-microsoft-power-automate-integration.md)
          + [在 AEM Sites 頁面中內嵌最適化表單](/help/forms/embed-adaptive-form-aem-sites.md)
-         + [根據核心元件將調適性表單內嵌至外部網頁](/help/forms/embed-adaptive-form-core-components-external-web-page.md)
+         + [根據核心元件將最適化表單內嵌至外部網頁](/help/forms/embed-adaptive-form-core-components-external-web-page.md)
+         + [根據Foundation元件將最適化表單內嵌到外部網頁](/help/forms/embed-adaptive-form-external-web-page.md)
       + 表單資料模式 {#use-form-data-model}
          + [將資料來源連線到 Cloud Service](/help/forms/data-integration.md)
          + [設定資料來源](/help/forms/configure-data-sources.md)
@@ -733,7 +734,7 @@ ht-degree: 98%
    + [移轉](/help/commerce-cloud/migration.md)
    + [常見問題集](/help/commerce-cloud/faq.md)
 + Edge遞送服務 {#edge-delivery}
-   + [Edge傳送快速入門](/help/edge/overview.md)
+   + [Edge Delivery 快速入門。](/help/edge/overview.md)
    + [使用邊緣傳送](/help/edge/using.md)
 + Headless {#headless}
    + [什麼是 Headless CMS？](/help/headless/what-is-headless.md)

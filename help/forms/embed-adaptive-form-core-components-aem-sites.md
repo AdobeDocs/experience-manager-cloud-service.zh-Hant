@@ -4,10 +4,10 @@ description: 在AEM Sites頁面中使用最適化表單核心元件，填寫並�
 feature: Adaptive Forms
 hide: true
 hidefromtoc: true
-source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
+source-git-commit: 2d4a81aa0d6755270d4d6efb8649782f4bde4537
 workflow-type: tm+mt
-source-wordcount: '2131'
-ht-degree: 5%
+source-wordcount: '2150'
+ht-degree: 6%
 
 ---
 
@@ -267,3 +267,8 @@ AEM網站頁面會維護最適化表單的參考。 當您翻譯AEM Sites頁面�
 
 * 內嵌表單中不包含原始表單的頁首和頁尾。
 * 使用者草稿和提交內嵌表單受到支援，並可在Forms Portal的草稿和已提交的Forms標籤中看到。
+
+>[!MORELIKETHIS]
+>
+>* [根據核心元件將調適性表單內嵌至外部網頁](/help/forms/embed-adaptive-form-core-components-external-web-page.md)
+>* [在外部網頁中內嵌適用性表單](/help/forms/embed-adaptive-form-external-web-page.md)
