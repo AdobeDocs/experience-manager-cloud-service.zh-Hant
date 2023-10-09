@@ -1,13 +1,13 @@
 ---
 title: 設定含 WAF 規則的流量篩選規則
 description: 使用含 WAF 規則的流量篩選規則來篩選流量
-source-git-commit: ce7b6922f92208c06f85afe85818574bf2bc8f6d
-workflow-type: ht
-source-wordcount: '2709'
-ht-degree: 100%
+exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
+source-git-commit: 445134438c1a43276235b069ab44f99f7255aed1
+workflow-type: tm+mt
+source-wordcount: '2740'
+ht-degree: 98%
 
 ---
-
 
 # 設定含 WAF 規則的流量篩選規則來篩選流量 {#configuring-cdn-and-waf-rules-to-filter-traffic}
 
@@ -32,8 +32,7 @@ Adobe 試圖減輕針對客戶網站發動的攻擊，但主動篩選和特定�
 
    ```
    config/
-        cdn/
-           cdn.yaml
+        cdn.yaml
    ```
 
 1. `cdn.yaml` 應包含中繼資料以及流量篩選規則和 WAF 規則的清單。
@@ -46,7 +45,15 @@ Adobe 試圖減輕針對客戶網站發動的攻擊，但主動篩選和特定�
    data:
      trafficFilters:
        rules:
-         ...
+       # Block simple path
+       - name: block-path
+         when:
+           allOf:
+             - reqProperty: tier
+               matches: "author|publish"
+             - reqProperty: path
+               equals: '/block/me'
+         action: block
    ```
 
 「kind」參數應設定為「CDN」，版本則應設定為綱要版本，目前是「1」。請進一步參閱下方範例。
@@ -81,6 +88,7 @@ Adobe 試圖減輕針對客戶網站發動的攻擊，但主動篩選和特定�
       > 使用者必須以部署管理員角色登入才能設定或執行這些管道。
       > 此外，每個環境只能設定並執行一個設定管道。
 
+   1. 將程式碼位置設定為儲存根設定的位置（例如/config）。
    1. 選取&#x200B;**儲存**。您的新管道即會顯示在管道卡中，並可在您就緒後執行。
    1. 若為 RDE，會使用命令列，但目前不支援 RDE。
 
@@ -171,6 +179,7 @@ cdn.yaml 檔案中流量篩選規則的格式如下所述。請參閱後面小�
 | **doesNotMatch** | `string` | 如果 getter 結果和所提供的 regex 不相符，則為 true |
 | **in** | `array[string]` | 如果所提供的清單包含 getter 結果，則為 true |
 | **notIn** | `array[string]` | 如果所提供的清單不包含 getter 結果，則為 true |
+| **存在** | `boolean` | 若設為true且屬性存在或設為false且屬性不存在時為true |
 
 ### 動作結構 {#action-structure}
 
@@ -188,7 +197,7 @@ cdn.yaml 檔案中流量篩選規則的格式如下所述。請參閱後面小�
 
 ### WAF 標幟清單 {#waf-flags-list}
 
-`wafFlag` 屬性可能包括以下項目：
+`wafFlags` 屬性可能包括以下項目：
 
 | **標幟 ID** | **標幟名稱** | **說明** |
 |---|---|---|
@@ -318,7 +327,7 @@ data:
           wafFlags: [ SQLI, XSS]
 ```
 
-**範例 4**
+**範例 5**
 
 此規則會封鎖對 OFAC 國家的存取：
 
@@ -333,7 +342,8 @@ data:
       - name: block-ofac-countries
         when:
           allOf:
-            - { reqProperty: tier, equals: publish }
+            - reqProperty: tier
+              matches: "author|publish"
             - reqProperty: clientCountry
               in:
                 - SY
@@ -379,8 +389,8 @@ data:
   trafficFilters:
     - name: limit-requests-client-ip
       when:
-        reqProperty: path
-        like: '*'
+        - reqProperty: tier
+        - matches: "author|publish"
       rateLimit:
         limit: 60
         window: 10
