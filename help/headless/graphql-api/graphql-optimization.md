@@ -2,7 +2,7 @@
 title: 最佳化 GraphQL 查詢
 description: 了解如何為了提供 Headless 內容在 Adobe Experience Manager as a Cloud Service 中進行內容片段篩選、分頁和排序時進行 GraphQL 查詢最佳化。
 exl-id: 67aec373-4e1c-4afb-9c3f-a70e463118de
-source-git-commit: ba864cb28d2de0559d36f113e8e154ed5c115cae
+source-git-commit: 2ac93fbe0075cc2c88def444daba613e8b40c018
 workflow-type: tm+mt
 source-wordcount: '1877'
 ht-degree: 65%
@@ -104,7 +104,7 @@ ht-degree: 65%
 AEM 提供兩種方式進行 GraphQL 查詢最佳化：
 
 * [混合篩選](#use-aem-graphql-hybrid-filtering)
-* [分頁](#use-graphql-pagination) (或進行分頁)
+* [分頁](#use-aem-graphql-pagination) (或進行分頁)
 
    * [排序](#use-graphql-sorting)與最佳化沒有直接關係，而是與分頁有關
 
