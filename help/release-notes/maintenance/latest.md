@@ -2,9 +2,9 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的目前維護版本發行說明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的目前維護版本發行說明。'
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: c62ae58240298604e6cd7737678603eb734434b3
+source-git-commit: 2ec0e09a20e2d129c9f2c01ebe21202b73505ee2
 workflow-type: tm+mt
-source-wordcount: '1363'
+source-wordcount: '1364'
 ht-degree: 9%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 9%
 
 以下摘要說明維護版本13665數的持續改善，該版本於2023年9月27日公開發佈。 此維護版本取代 13420 版。
 
-2023.10.0 Feature Activation提供此維護版本的完整功能集。 如需詳細資訊，請參閱 [Experience Manager 發行藍圖](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html)。
+2023.10.0 功能啟用將提供此維護版本的完整功能集。如需詳細資訊，請參閱 [Experience Manager 發行藍圖](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html)。
 
 ### 增強功能 {#enhancements-13665}
 
