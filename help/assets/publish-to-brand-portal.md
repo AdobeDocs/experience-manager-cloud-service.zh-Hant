@@ -5,10 +5,10 @@ contentOwner: Vishabh Gupta
 feature: Brand Portal,Asset Distribution,Configuration
 role: User
 exl-id: 1cc438bc-8cad-4421-af03-c1f6d750e0a8
-source-git-commit: 780d04852d3760f92c6f0c5edf77630d4bb5a343
+source-git-commit: 7f806c457f7bef1c5309bbc6f69d3989af1b06d3
 workflow-type: tm+mt
-source-wordcount: '1263'
-ht-degree: 93%
+source-wordcount: '1301'
+ht-degree: 90%
 
 ---
 
@@ -32,6 +32,8 @@ ht-degree: 93%
 >[!NOTE]
 >
 >Adobe 建議將發佈時間交錯開來，尤其建議選擇非尖峰時段，如此 AEM 作者才不會佔用過多資源。
+>資產應批次發佈。 批次大小的建議為15K。
+> 的 [!DNL Experience Manager Assets] as a [!DNL Cloud Service]，在實驗室條件下觀察到的傳輸速率為每小時1000個資產。 觀察到此速率，平均大小為10 MB資產。
 
 ## 將資產發佈至 Brand Portal {#publish-assets-to-bp}
 
