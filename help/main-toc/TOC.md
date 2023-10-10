@@ -8,9 +8,9 @@ user-guide-description: 了解 Experience Manager as a Cloud Service 的運作�
 breadcrumb-title: 使用手冊
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 2a1bb951c9da5ea0fdcafd1bb82eda3f55d0a16a
+source-git-commit: baf2a91f76af83ff9790ba3a97e7dafa415086c6
 workflow-type: tm+mt
-source-wordcount: '4316'
+source-wordcount: '4324'
 ht-degree: 98%
 
 ---
@@ -580,6 +580,7 @@ ht-degree: 98%
          + [使用 OAuth 2.0 用戶端認證流程的 Salesforce 應用程式整合](/help/forms/oauth2-client-credentials-flow-for-server-to-server-integration.md)
          + [設定 [!DNL Azure] 儲存空間](/help/forms/configure-azure-storage.md)
          + [設定 [!DNL Microsoft Dynamics 365] 和 [!DNL Salesforce] 雲端服務](/help/forms/configure-msdynamics-salesforce.md)
+         + [將最適化表單連線至Microsoft SharePoint清單](/help/forms/connect-aem-adaptive-form-to-sharepointlist.md)
          + [建立表單資料模型](/help/forms/create-form-data-models.md)
          + [處理表單資料模型](/help/forms/work-with-form-data-model.md)
          + [使用表單資料模型](/help/forms/using-form-data-model.md)

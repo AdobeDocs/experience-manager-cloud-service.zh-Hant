@@ -2,10 +2,10 @@
 title: 如何為最適化表單設定提交動作
 description: 最適化表單提供多個提交動作。提交動作會定義提交之後處理最適化表單的方式。您可以使用內建的提交動作或建立自己的動作。
 exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
-source-git-commit: a635a727e431a73086a860249e4f42d297882298
+source-git-commit: ba83b35f411ffd51e0032e7c7f12c7c82cd982ad
 workflow-type: tm+mt
-source-wordcount: '3388'
-ht-degree: 82%
+source-wordcount: '3395'
+ht-degree: 87%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 82%
 * [提交到 SharePoint](#submit-to-sharedrive)
 * [提交到 OneDrive](#submit-to-onedrive)
 * [提交到 Azure Blob 儲存體](#azure-blob-storage)
-* [提交至Power Automate](#microsoft-power-automate)
+* [提交至 Power Automate](#microsoft-power-automate)
 
 您也可以 [擴充預設提交動作](custom-submit-action-form.md) 以建立您自己的提交動作。
 
@@ -184,8 +184,9 @@ For more information about the Forms Portal and Submit Action, see [Drafts and s
 1. 前往您的 **AEM Forms Author** 執行個體> **[!UICONTROL 工具]** > **[!UICONTROL Cloud Service]** >  **[!UICONTROL Microsoft® SharePoint]**.
 1. 一旦您選取 **[!UICONTROL Microsoft® SharePoint]**，您就會被重新導向至 **[!UICONTROL SharePoint瀏覽器]**.
 1. 選取一個&#x200B;**設定容器**。設定會儲存在選取的設定容器中。
-1. 按一下「**[!UICONTROL 建立]**」。此時會顯示 SharePoint 設定精靈。
-   ![SharePoint 設定](/help/forms/assets/sharepoint_configuration.png)
+1. 按一下 **[!UICONTROL 建立]** > **[!UICONTROL SharePoint檔案庫]** 下拉式清單中的。 此時會顯示 SharePoint 設定精靈。
+
+![SharePoint 設定](/help/forms/assets/sharepoint_configuration.png)
 1. 指定「**[!UICONTROL 標題]**」、「**[!UICONTROL 用戶端 ID]**」、「**[!UICONTROL 用戶端密碼]**」和「**[!UICONTROL OAuth URL]**」。如需有關如何擷取 OAuth URL 之用戶端 ID、用戶端密碼、租用戶 ID 的資訊，請參閱 [Microsoft® 文件](https://learn.microsoft.com/en-us/graph/auth-register-app-v2)。
    * 您可以從 Microsoft® Azure 入口網站擷取應用程式的 `Client ID` 和 `Client Secret`。
    * 在 Microsoft® Azure 入口網站中，將重新導向 URI 新增為 `https://[author-instance]/libs/cq/sharepoint/content/configurations/wizard.html`。以作者執行個體的 URL 取代 `[author-instance]`。
@@ -210,6 +211,7 @@ For more information about the Forms Portal and Submit Action, see [Drafts and s
 ### 在最適化表單中使用SharePoint設定 {#use-sharepoint-configuartion-in-af}
 
 您可以在最適化表單中使用建立的SharePoint設定，以將資料或產生的記錄檔案儲存到SharePoint資料夾中。 執行以下步驟，在最適化表單中使用SharePoint儲存體設定，如下所示：
+
 1. 建立[最適化表單](/help/forms/creating-adaptive-form.md)。
 
    >[!NOTE]
@@ -330,18 +332,18 @@ For more information about the Forms Portal and Submit Action, see [Drafts and s
 若要設定值，請[使用 AEM SDK 產生 OSGi 設定](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=zh-Hant#generating-osgi-configurations-using-the-aem-sdk-quickstart)，並[將設定部署至](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=zh-Hant#deployment-process)您的 Cloud Service 執行個體。
 
 
-## 提交至Power Automate {#microsoft-power-automate}
+## 提交至 Power Automate {#microsoft-power-automate}
 
-您可以設定最適化表單，在提交時執行Microsoft® Power Automate Cloud Flow。 設定的最適化表單會將擷取的資料、附件和記錄檔案傳送到Power Automate雲端流程進行處理。 它可幫助您建立自訂資料擷取體驗，同時利用Microsoft® Power Automate的強大功能，圍繞擷取的資料建立商業邏輯，並自動化客戶工作流程。 以下是整合最適化表單與Microsoft® Power Automate後可以執行的一些範例：
+您可以設定最適化表單，在提交時執行 Microsoft® Power Automate Cloud Flow。設定的最適化表單會將擷取的資料、附件和記錄文件傳送到 Power Automate Cloud Flow 進行處理。那有助於建置自訂資料擷取體驗，同時利用 Microsoft® Power Automate 的強大功能，根據擷取的資料建置商業邏輯，並將客戶工作流程自動化。以下是整合最適化表單與 Microsoft® Power Automate 後，可以執行的部分操作範例：
 
-* 在Power Automate業務流程中使用自適應Forms資料
-* 使用Power Automate將擷取的資料傳送至500多個資料來源或任何公開可用的API
+* 在 Power Automate 業務流程中使用最適化表單資料
+* 使用 Power Automate 將擷取的資料傳送到 500 多個資料來源或任何公開可用的 API
 * 對擷取的資料執行複雜的計算
-* 以預先定義的排程將最適化Forms資料儲存至儲存系統
+* 按預定義的排程將最適化表單資料儲存到儲存系統
 
-最適化Forms編輯器提供 **叫用Microsoft®Power Automate流程** 傳送最適化表單資料、附件和記錄檔案的提交動作會傳送到Power Automate雲端流程。 若要使用提交動作將擷取的資料傳送至Microsoft®Power Automate， [使用Microsoft® Power Automate連線您的Formsas a Cloud Service執行個體](forms-microsoft-power-automate-integration.md)
+最適化Forms編輯器提供 **叫用Microsoft®Power Automate流程** 傳送最適化表單資料、附件和記錄檔案的提交動作會傳送到Power Automate雲端流程。 若要使用提交動作將擷取的資料傳送到 Microsoft® Power Automate，[請使用 Microsoft® Power Automate 連線您的 Forms as a Cloud Service 執行個體](forms-microsoft-power-automate-integration.md)
 
-成功設定後，請使用 [叫用Microsoft®Power Automate流程](forms-microsoft-power-automate-integration.md#use-the-invoke-a-microsoft&reg;-power-automate-flow-submit-action-to-send-data-to-a-power-automate-flow-use-the-invoke-microsoft-power-automate-flow-submit-action) 提交動作以將資料傳送至Power Automate流程。
+在設定成功之後，使用[叫用 Microsoft® Power Automate 流程](forms-microsoft-power-automate-integration.md#use-the-invoke-a-microsoft&reg;-power-automate-flow-submit-action-to-send-data-to-a-power-automate-flow-use-the-invoke-microsoft-power-automate-flow-submit-action)提交動作，將資料傳送到 Power Automate Flow。
 
 ## 使用同步或異步提交 {#use-synchronous-or-asynchronous-submission}
 
