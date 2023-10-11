@@ -5,7 +5,7 @@ contentOwner: AK
 feature: Brand Portal,Asset Distribution,Configuration
 role: Admin
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: 2c8bac8627ed660d2780f93f4018c8fa980e569a
+source-git-commit: ac393e4b275693fae7413fb79496052d106b219c
 workflow-type: tm+mt
 source-wordcount: '2589'
 ht-degree: 8%
@@ -106,7 +106,6 @@ Brand Portal租使用者的預設URL為： `https://<tenant-id>.brand-portal.ado
    Brand Portal發佈代理程式(**[!UICONTROL bpdistributionagent0]**)建立於 **[!UICONTROL 發佈至Brand Portal]**.
 
    ![建立發佈代理程式](assets/test-bpconfig2.png)
-
 
 1. 按一下 **[!UICONTROL 發佈至Brand Portal]** 以開啟發佈代理程式。
 
