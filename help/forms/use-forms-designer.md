@@ -2,9 +2,9 @@
 title: 如何使用Forms Designer建立記錄檔案(DoR)範本和表單片段？
 description: 使用 [!DNL AEM Forms] 設計工具以建立記錄檔案範本和表單片段。
 exl-id: 88a95374-620c-45a9-ae94-2043b542fd62
-source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
+source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
 workflow-type: tm+mt
-source-wordcount: '167'
+source-wordcount: '168'
 ht-degree: 0%
 
 ---

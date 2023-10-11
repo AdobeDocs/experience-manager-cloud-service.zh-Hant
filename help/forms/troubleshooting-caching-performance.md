@@ -1,10 +1,11 @@
 ---
-title: 疑難排解快取效能
-description: 如何針對AEM Formsas a Cloud Service的快取相關問題進行疑難排解？
+title: 如何針對AEM Formsas a Cloud Service的快取相關問題進行疑難排解？
+description: 疑難排解AEM Formsas a Cloud Service的快取相關問題。
 contentOwner: khsingh
-source-git-commit: 6dd34937a8aeb6c7ddfc0fb1180a112de534dd4b
+exl-id: eae44a6f-25b4-46e9-b38b-5cec57b6772c
+source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
 workflow-type: tm+mt
-source-wordcount: '370'
+source-wordcount: '378'
 ht-degree: 2%
 
 ---

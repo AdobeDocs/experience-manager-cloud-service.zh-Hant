@@ -2,11 +2,9 @@
 title: XDP型最適化Forms中的XFA支援
 description: 列出最適化Forms中支援的XFA事件、屬性、指令碼和驗證。
 uuid: 75d3c292-cfed-438f-afdb-4071d95a08b7
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 05303b29-9058-4723-b134-4ba605fe40c7
-docset: aem65
-source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
+source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
 workflow-type: tm+mt
 source-wordcount: '683'
 ht-degree: 5%

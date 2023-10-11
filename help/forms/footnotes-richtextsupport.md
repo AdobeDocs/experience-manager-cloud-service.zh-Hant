@@ -1,11 +1,11 @@
 ---
-title: 最適化Forms中的註腳支援
+title: 如何將註腳新增至最適化表單？
 description: 在最適化表單中的註腳使用RTF編輯器(RTE) 。
 exl-id: f04dae84-daab-42f8-876f-02fe426f62be
-source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
+source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
 workflow-type: tm+mt
-source-wordcount: '438'
-ht-degree: 13%
+source-wordcount: '441'
+ht-degree: 12%
 
 ---
 

@@ -1,13 +1,13 @@
 ---
-title: 如何設定 [!DNL Microsoft Dynamics] OData？
+title: 如何設定 [!DNL Microsoft Dynamics] 適用於AEM Forms的OData？
 description: 瞭解如何根據中定義的實體、屬性和服務來建立表單資料模型 [!DNL Microsoft Dynamics] 服務。
 feature: Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb7b41f0-fd4f-4ba6-9f45-792a66ba6368
-source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
+source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
 workflow-type: tm+mt
-source-wordcount: '982'
+source-wordcount: '986'
 ht-degree: 4%
 
 ---

@@ -1,16 +1,14 @@
 ---
-title: 使用 OAuth 2.0 用戶端認證流程的 Salesforce 整合
-seo-title: Salesforce integration with AEM Forms using OAuth 2.0 client credential flow
-description: 使用 OAuth 2.0 用戶端認證流程，將 Salesforce 整合系統與 AEM Forms 進行整合的步驟
-seo-description: Steps to integrate Salesforce integration with AEM Forms using OAuth 2.0 client credential flow
+title: 如何使用OAuth 2.0使用者端憑證流程整合Salesforce與AEM Forms？
+description: 瞭解如何使用OAuth 2.0使用者端認證流程整合Salesforce與AEM Forms。
 Keywords: Integration of Salesforce using OAuth 2.0 client credential flow, salesforce integration with oauth2 using client credential flow, salesforce and client credential integration
-source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
-workflow-type: ht
-source-wordcount: '420'
-ht-degree: 100%
+exl-id: 2c2029ab-6fb4-41a6-846c-175c3a79d921
+source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
+workflow-type: tm+mt
+source-wordcount: '423'
+ht-degree: 94%
 
 ---
-
 
 # 使用 OAuth 2.0 用戶端認證流程的 Salesforce 整合{#configure-salesforce-with-ouath-2.0-client-credential}
 

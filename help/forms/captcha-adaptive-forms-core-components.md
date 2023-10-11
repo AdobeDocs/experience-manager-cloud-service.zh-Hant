@@ -1,15 +1,15 @@
 ---
-title: 在AEM最適化表單中使用Google reCAPTCHA
+title: 如何在AEM最適化表單中使用Google reCAPTCHA？
 description: 使用Google reCAPTCHA服務輕鬆增強表單安全性。 內的逐步指南！
 topic-tags: Adaptive Forms, author
 keywords: Google reCAPTCHA服務，最適化Forms， CAPTCHA挑戰，機器人預防，核心元件，表單提交安全性，表單垃圾郵件預防
-source-git-commit: 7c197be7819d6fcbf028237401d05236f90734d1
+exl-id: d116f979-efb6-4fac-8202-89afd1037b2c
+source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
 workflow-type: tm+mt
-source-wordcount: '945'
+source-wordcount: '947'
 ht-degree: 7%
 
 ---
-
 
 # 根據核心元件在AEM最適化表單中使用Google reCAPTCHA {#using-reCAPTCHA-in-adaptive-forms}
 

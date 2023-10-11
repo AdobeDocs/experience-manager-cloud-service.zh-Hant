@@ -1,13 +1,14 @@
 ---
-title: 設定AEM Adaptive Forms的非同步提交
+title: 如何設定AEM Adaptive Forms的非同步提交？
 description: 瞭解如何設定最適化Forms的非同步提交。 深入瞭解非同步提交如何適用於Adaptive Forms。
 feature: Adaptive Forms
 role: User
 level: Intermediate
-source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
+exl-id: 026f4920-f8f9-4b08-b1b0-af50229633d7
+source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
 workflow-type: tm+mt
-source-wordcount: '749'
-ht-degree: 1%
+source-wordcount: '751'
+ht-degree: 6%
 
 ---
 
@@ -41,7 +42,7 @@ ht-degree: 1%
 
 ## 非同步提交的運作方式 {#how-asynchronous-submission-works}
 
-[!DNL Experience Manager Forms] 為表單提交提供現成可用的成功和錯誤處理常式。 處理常式是根據伺服器回應執行的使用者端功能。 提交表單時，資料會傳送至伺服器進行驗證，伺服器會傳回回應給使用者端，其中包含提交成功或錯誤事件的相關資訊。 此資訊會以引數形式傳遞至相關處理常式，以執行函式。
+[!DNL Experience Manager Forms] 為表單提交提供現成可用的成功和錯誤處理常式。處理常式是根據伺服器回應執行的用戶端函數。提交表單時，資料會傳送至伺服器進行驗證，伺服器會傳回回應給使用者端，其中包含提交成功或錯誤事件的相關資訊。 這項資訊可以參數傳遞至相關處理常式以執行該函數。
 
 此外，表單作者和開發人員可在表單層級撰寫規則以覆寫預設處理常式。 如需詳細資訊，請參閱 [使用規則覆寫預設處理常式](#custom).
 

@@ -1,10 +1,10 @@
 ---
-title: 管理AEM Forms的中繼資料
+title: 如何管理AEM Forms的中繼資料？
 description: 中繼資料可讓您更輕鬆地分類及組織資產，並幫助尋找特定資產的使用者。
 exl-id: 8527246a-37f0-4d43-a49e-1c76c265514e
-source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
+source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
 workflow-type: tm+mt
-source-wordcount: '1738'
+source-wordcount: '1741'
 ht-degree: 6%
 
 ---

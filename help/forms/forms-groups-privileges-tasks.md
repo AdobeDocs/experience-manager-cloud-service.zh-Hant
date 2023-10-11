@@ -1,11 +1,11 @@
 ---
-title: 內建 [!DNL AEM Forms] as a Cloud Service群組
+title: AEM Formsas a Cloud Service提供哪些立即可用的使用者群組？
 description: 現成可用的使用者群組清單以及指派給每個群組的許可權
 exl-id: bd66ce92-14d9-47fe-b5d3-022e3e468d25
-source-git-commit: 57acac078805bc195cb10c1e94462d5aa077b1af
+source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
 workflow-type: tm+mt
-source-wordcount: '175'
-ht-degree: 22%
+source-wordcount: '185'
+ht-degree: 21%
 
 ---
 

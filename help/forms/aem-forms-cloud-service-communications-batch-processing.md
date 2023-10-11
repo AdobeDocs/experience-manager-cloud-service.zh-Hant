@@ -1,17 +1,17 @@
 ---
-title: AEM Formsas a Cloud Service通訊批次處理
+title: 輕鬆建立大量PDF — 掌握批次處理的藝術 — 您製作數百萬PDF檔案的自助指南！
 description: 如何建立品牌導向和個人化的通訊？
 exl-id: 542c8480-c1a7-492e-9265-11cb0288ce98
-source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
+source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
 workflow-type: tm+mt
-source-wordcount: '1698'
+source-wordcount: '1705'
 ht-degree: 2%
 
 ---
 
 # AEM Formsas a Cloud Service通訊批次處理
 
-通訊可讓您建立、組合及傳遞品牌導向和個人化的通訊，例如商務通訊、檔案、報表、索賠處理信函、福利通知、索賠處理信函、每月帳單和歡迎套件。 您可以使用Communications API將範本(XFA或PDF)與客戶資料結合，以產生PDF、PS、PCL、DPL、IPL和ZPL格式的檔案。
+通訊可讓您建立、組合及傳遞品牌導向和個人化的通訊，例如商務通訊、檔案、報表、索賠處理信函、福利通知、每月帳單和歡迎套件。 您可以使用Communications API將範本(XFA或PDF)與客戶資料結合，以產生PDF、PS、PCL、DPL、IPL和ZPL格式的檔案。
 
 通訊提供API，用於隨選和排程檔案產生。 您可以根據需求使用同步API，也可以根據排程檔案產生使用批次API （非同步API）：
 

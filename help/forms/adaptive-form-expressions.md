@@ -1,10 +1,10 @@
 ---
-title: 最適化表單運算式
+title: 什麼是調適型表單運算式？
 seo-title: Adaptive Form Expressions
 description: 使用最適化Forms運算式來新增自動驗證、計算，並開啟或關閉區段的可見度。
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
 workflow-type: tm+mt
-source-wordcount: '2695'
+source-wordcount: '2697'
 ht-degree: 0%
 
 ---

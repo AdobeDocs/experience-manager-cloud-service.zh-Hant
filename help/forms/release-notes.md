@@ -1,11 +1,11 @@
 ---
-title: 「[!DNL AEM Forms] as a Cloud Service 發行說明」
-description: 「[!DNL AEM Forms] as a Cloud Service 發行說明」
+title: AEM Formsas a Cloud Service發行說明
+description: 瞭解AEM Formsas a Cloud Service的新功能、測試版、搶鮮版資訊等。
 exl-id: 35950b81-6e45-4a75-bd27-8c28fd68e42e
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: ht
-source-wordcount: '2015'
-ht-degree: 100%
+source-git-commit: 8074c0e9566b679830a56094bc9b47cb22f4bb4a
+workflow-type: tm+mt
+source-wordcount: '2028'
+ht-degree: 98%
 
 ---
 

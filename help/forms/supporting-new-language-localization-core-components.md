@@ -1,13 +1,13 @@
 ---
-title: 如何根據核心元件為最適化表單新增地區設定的支援？
+title: 如何根據核心元件為最適化表單新增對新區域設定的支援？
 description: 瞭解如何為最適化表單新增地區設定。
-source-git-commit: 0d2e353208e4e59296d551ca5270be06e574f7df
+exl-id: bc06542b-84c8-4c6a-a305-effbd16d5630
+source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
 workflow-type: tm+mt
-source-wordcount: '1339'
+source-wordcount: '1340'
 ht-degree: 4%
 
 ---
-
 
 # 根據核心元件為最適化Forms新增地區設定 {#supporting-new-locales-for-adaptive-forms-localization}
 
@@ -149,7 +149,7 @@ AEM Forms提供範例使用者端資料庫，協助您輕鬆新增地區設定�
 
 ### 6.提交變更並部署管道 {#commit-changes-in-repo-deploy-pipeline}
 
-在新增地區設定後，將變更提交到GIT存放庫。 使用完整棧疊管道部署您的計畫碼。 瞭解 [如何設定管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline) 以新增地區設定支援。
+在新增地區設定後，將變更提交到GIT存放庫。 使用完整棧疊管道部署您的計畫碼。 瞭解 [如何設定管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=zh-Hant#setup-pipeline) 以新增地區設定支援。
 
 管道執行成功後，新新增的地區設定即可使用。
 
@@ -178,6 +178,4 @@ AEM Forms提供範例使用者端資料庫，協助您輕鬆新增地區設定�
 
 * [使用機器翻譯或人工翻譯來翻譯以核心元件為基礎的最適化表單](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
 * [產生最適化Forms的記錄檔案](/help/forms/generate-document-of-record-core-components.md)
-* [新增調適型表單至 AEM Sites 頁面或體驗片段](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
-
-
+* [新增最適化表單至 AEM Sites 頁面或體驗片段](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)

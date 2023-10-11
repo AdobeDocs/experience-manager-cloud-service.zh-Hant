@@ -1,10 +1,10 @@
 ---
-title: 設定「外出」設定
+title: 如何在AEM Forms中設定「外出」設定？
 description: 在休假或休假時委派任務以無縫執行工作流程。
 exl-id: c7e436f1-8e1c-4334-b3dc-ab9800695301
-source-git-commit: defeee2fee42c6274c71438d6f9fde6e49a05081
+source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
 workflow-type: tm+mt
-source-wordcount: '873'
+source-wordcount: '878'
 ht-degree: 1%
 
 ---

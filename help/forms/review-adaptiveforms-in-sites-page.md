@@ -1,12 +1,12 @@
 ---
-title: 如何建立及管理內嵌或建立於Sites頁面的最適化Forms檢閱？
+title: 如何傳送最適化表單以供檢閱？ 如何管理aem最適化表單的稽核？
 description: 稽核是一種機制，可讓稽核者使用「指派工作」步驟為最適化表單執行不同工作。
 feature: Adaptive Forms
 hide: true
 hidefromtoc: true
-source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
+source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
 workflow-type: tm+mt
-source-wordcount: '358'
+source-wordcount: '360'
 ht-degree: 5%
 
 ---

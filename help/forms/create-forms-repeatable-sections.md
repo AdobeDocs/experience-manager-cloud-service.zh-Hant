@@ -1,9 +1,9 @@
 ---
-title: 如何在最適化表單核心元件中建立可重複的面板
+title: 如何在最適化表單核心元件中建立可重複的面板？
 description: 瞭解如何在最適化表單中建立一個或多個可重複的區段。
 role: Architect, Developer, Admin, User
 exl-id: 02521bf3-83c1-40a0-8fe6-23af240727e9
-source-git-commit: defeee2fee42c6274c71438d6f9fde6e49a05081
+source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
 workflow-type: tm+mt
 source-wordcount: '1390'
 ht-degree: 6%

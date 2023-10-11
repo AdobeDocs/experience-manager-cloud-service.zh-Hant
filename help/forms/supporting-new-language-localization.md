@@ -1,10 +1,10 @@
 ---
-title: 如何為最適化表單新增地區設定的支援？
+title: 如何根據基礎元件為最適化表單新增對新區域設定的支援？
 description: 對於最適化Forms，除了現成可用的語言之外，您還可以新增更多語言的區域設定。
 exl-id: 4c7d6caa-1adb-4663-933f-b09129b9baef
-source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
+source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
 workflow-type: tm+mt
-source-wordcount: '1259'
+source-wordcount: '1264'
 ht-degree: 7%
 
 ---

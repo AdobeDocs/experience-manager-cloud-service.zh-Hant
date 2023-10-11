@@ -1,15 +1,14 @@
 ---
-title: 將提交稽核者與表單建立關聯
-seo-title: Associating submission reviewers with a form
+title: 如何傳送最適化表單以供檢閱？
 description: 共用最適化表單以供一或多個稽核者稽核。
 uuid: 58c8c8fb-9262-4c37-b9b2-e46fe21b77d9
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 71d1aa10-d191-49bc-a50f-1098324f1cfe
 docset: aem65
-source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
+source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
 workflow-type: tm+mt
-source-wordcount: '483'
+source-wordcount: '485'
 ht-degree: 1%
 
 ---

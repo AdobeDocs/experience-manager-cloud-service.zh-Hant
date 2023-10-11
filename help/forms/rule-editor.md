@@ -1,13 +1,13 @@
 ---
-title: 什麼是最適化Forms規則編輯器？
+title: 如何使用規則編輯器將規則新增至表單欄位，以新增動態行為並將複雜邏輯建置至最適化表單？
 description: 最適化Forms規則編輯器可讓您新增動態行為並將複雜邏輯建置到表單中，而不需要編碼或指令碼。
 feature: Adaptive Forms
 role: User
 level: Beginner, Intermediate
 exl-id: 6fd38e9e-435e-415f-83f6-3be177738c00
-source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
+source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
 workflow-type: tm+mt
-source-wordcount: '6422'
+source-wordcount: '6440'
 ht-degree: 1%
 
 ---

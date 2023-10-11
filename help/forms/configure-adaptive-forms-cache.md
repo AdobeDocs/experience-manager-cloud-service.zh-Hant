@@ -1,14 +1,14 @@
 ---
-title: 設定最適化Forms快取
+title: 什麼是調適型表單快取？ 以及如何快取AEM最適化表單？
 description: 最適化Forms快取是專為最適化Forms和檔案所設計，其目標是減少轉譯最適化表單或檔案所需的時間。
 uuid: ba8f79fd-d8dc-4863-bc0d-7c642c45505c
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Configuration
 discoiquuid: 9fa6f761-58ca-4cd0-8992-b9337dc1a279
-source-git-commit: e2f2aa18e2412bc92d1385a125281ecfb81f2ce8
+source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
 workflow-type: tm+mt
-source-wordcount: '965'
+source-wordcount: '974'
 ht-degree: 1%
 
 ---

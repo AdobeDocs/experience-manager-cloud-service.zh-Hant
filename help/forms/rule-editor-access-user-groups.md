@@ -1,12 +1,12 @@
 ---
-title: 如何授與規則編輯器存取權給選定的使用者群組？
+title: 如何提供aem最適化表單規則編輯器的存取權以選取使用者群組？
 description: 有各種型別的使用者具備最適化Forms所需的各種技能。 瞭解如何根據使用者的角色或功能限制使用者的規則編輯器存取權。
 feature: Adaptive Forms
 role: User
 level: Beginner, Intermediate
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
 workflow-type: tm+mt
-source-wordcount: '321'
+source-wordcount: '325'
 ht-degree: 5%
 
 ---

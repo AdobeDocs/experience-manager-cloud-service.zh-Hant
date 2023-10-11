@@ -1,11 +1,11 @@
 ---
-title: 疑難排解安裝和組態
+title: 如何針對AEM Formsas a Cloud Service環境的安裝和設定問題進行疑難排解？
 description: 疑難排解AEM Formsas a Cloud Service環境的安裝和設定。
 contentOwner: khsingh
 exl-id: 249ec8f2-4176-428a-bfcf-80b381ec7263
-source-git-commit: defeee2fee42c6274c71438d6f9fde6e49a05081
+source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
 workflow-type: tm+mt
-source-wordcount: '172'
+source-wordcount: '183'
 ht-degree: 5%
 
 ---

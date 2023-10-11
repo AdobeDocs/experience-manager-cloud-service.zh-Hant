@@ -1,12 +1,12 @@
 ---
-title: 為表單欄位編寫內容內說明
+title: 如何為AEM最適化Forms欄位新增說明文字？
 description: AEM Forms可讓您將內容說明新增至最適化表單欄位和面板，做為文字或豐富媒體（包括影片）。
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 docset: aem65
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
 workflow-type: tm+mt
-source-wordcount: '365'
+source-wordcount: '369'
 ht-degree: 0%
 
 ---

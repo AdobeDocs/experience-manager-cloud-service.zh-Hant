@@ -1,9 +1,9 @@
 ---
-title: 瞭解如何匯入、匯出和組織最適化Forms、PDF forms和其他資產，於[!DNL AEM Forms] 例項
+title: 如何在AEM Forms執行個體上匯入、匯出及組織最適化Forms或PDF forms？
 description: 瞭解如何從AEM執行個體移轉最適化Forms、PDF forms、主題和其他支援資產。
 topic-tags: forms-manager
 exl-id: f5105fb7-b8c0-4656-8095-b21d392746c0
-source-git-commit: defeee2fee42c6274c71438d6f9fde6e49a05081
+source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
 workflow-type: tm+mt
 source-wordcount: '1199'
 ht-degree: 0%

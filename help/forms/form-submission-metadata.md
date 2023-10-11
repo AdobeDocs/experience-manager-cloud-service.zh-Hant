@@ -1,12 +1,12 @@
 ---
-title: 將使用者資料中的資訊新增至表單提交中繼資料
+title: 如何更新已提交表單的中繼資料？
 description: 瞭解如何使用使用者提供的資料，將資訊新增到已提交表單的中繼資料中。 深入瞭解如何在CRX存放庫中檢視更新的表單提交中繼資料。
 feature: Adaptive Forms
 role: User
 level: Intermediate
-source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
+source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
 workflow-type: tm+mt
-source-wordcount: '689'
+source-wordcount: '688'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ ht-degree: 0%
 
    在中繼資料標籤中輸入的指令碼
 
-1. 按一下 **[!DNL OK]**.
+1. 按一下「**[!DNL OK]**」。
 
 使用者在選取為中繼資料欄位的元素中輸入資料後，計算的資訊會記錄在中繼資料中。 您可以在您設定為儲存中繼資料的儲存庫中看到中繼資料。
 
