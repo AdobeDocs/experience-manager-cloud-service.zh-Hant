@@ -1,12 +1,12 @@
 ---
 title: ' [!DNL AEM Forms] as a Cloud Service 簡介'
-description: 探索AEM Forms以製作業務就緒表單、建立業務流程工作流程，並使用檔案服務來製作和保護檔案。
+description: 探索 AEM Forms 以製作業務適用的表單、建立業務工作流程，並使用文件服務製作與保護文件。
 landing-page-description: 了解如何在 AEM as a Cloud Service 中使用表單。
 exl-id: aa5ef10c-ba78-4a9d-8b2b-a72a7a306888
 source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
 source-wordcount: '1149'
-ht-degree: 96%
+ht-degree: 98%
 
 ---
 
