@@ -3,9 +3,9 @@ title: AEM as a Cloud Service 中的快取
 description: 瞭解AEMas a Cloud Service快取的基本概念
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: a6714e79396f006f2948c34514e5454fef84b5d8
+source-git-commit: 469c5f0e115cc57cf7624aecf5b9f45645f2e99a
 workflow-type: tm+mt
-source-wordcount: '2803'
+source-wordcount: '2878'
 ht-degree: 1%
 
 ---
@@ -99,6 +99,33 @@ Define DISABLE_DEFAULT_CACHING
 ```
 
 在Dispatcher層修改快取標題時，請注意不要快取太廣泛。 請參閱HTML/文字區段中的討論 [以上](#html-text). 此外，也請確定原本要私密儲存（而非快取）的資產並未包含在 `LocationMatch` 指令篩選器。
+
+儲存在Blob存放區中的JCR資源（大於16KB）通常可由AEM做為302重新導向。 這些重新導向會遭到攔截並隨後導向CDN，而內容會直接從blob存放區傳送。 在這些回應中只能自訂有限的標題集。 例如，若要自訂 `Content-Disposition` 您應依照以下方式使用dispatcher指示：
+
+```
+<LocationMatch "\.(?i:pdf)$">
+  ForceType application/pdf
+  Header set Content-Disposition inline
+  </LocationMatch>
+```
+
+可在blob回應上自訂的標頭清單為：
+
+```
+content-security-policy
+x-frame-options
+x-xss-protection
+x-content-type-options
+x-robots-tag
+access-control-allow-origin
+content-disposition
+permissions-policy
+referrer-policy
+x-vhost
+content-disposition
+cache-control
+vary
+```
 
 #### 新的預設快取行為 {#new-caching-behavior}
 
