@@ -2,10 +2,10 @@
 title: 為 AEM as a Cloud Service 設定進階網路
 description: 了解如何為 AEM as a Cloud Service 設定進階網路功能，例如 VPN 或彈性或專用輸出 IP 地址等
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: ht
-source-wordcount: '3571'
-ht-degree: 100%
+source-git-commit: 46ff33808e710b511db7cfcdad931c14846d8cfe
+workflow-type: tm+mt
+source-wordcount: '3600'
+ht-degree: 99%
 
 ---
 
@@ -54,7 +54,7 @@ AEM as a Cloud Service 提供多種類型的進階網路功能，客戶可以使
 
 如果程式範圍的彈性連接埠輸出設定準備就緒，則必須對每個環境叫用 `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` 端點，以在環境層級啟用網路以及選擇性地宣告任何連接埠轉送規則。參數可根據環境設定，以提供靈活性。
 
-應透過指定目標主機集 (名稱或 IP，以及使用連接埠) 為 80/443 以外的任何目標連接埠宣告連接埠轉送規則，但前提是不使用 http 或 https 通訊協定：對於每個目標主機，客戶必須將預期的目標連接埠對應到 30000 到 30999 之間的連接埠。
+應透過指定目標主機集 (名稱或 IP，以及使用連接埠) 為 80/443 以外的任何目標連接埠宣告連接埠轉送規則，但前提是不使用 http 或 https 通訊協定：透過http/https使用連線埠80/443的使用者端連線仍然必須在其連線中使用Proxy設定，才能將進階網路的屬性套用至連線。 對於每個目標主機，客戶必須將預期的目標連接埠對應到 30000 到 30999 之間的連接埠。
 
 API 應該在幾秒鐘內回應，指示更新狀態，大約 10 分鐘後，端點的 `GET` 方法應指出進階網路已啟用。
 
