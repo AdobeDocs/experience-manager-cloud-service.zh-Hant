@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 最新發行說明�
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 最新發行說明。'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 8c878833118b2d8dc51e8cfa2c15ce70efbd3deb
+source-git-commit: ab0fc832eb66bcf9a0fcd4f08b481845f3664e14
 workflow-type: tm+mt
-source-wordcount: '1419'
-ht-degree: 83%
+source-wordcount: '1440'
+ht-degree: 85%
 
 ---
 
@@ -32,15 +32,11 @@ ht-degree: 83%
 
 您可以在[這裡](/help/release-notes/maintenance/latest.md)找到最新的維護版本發行說明。
 
-<!-- 
+## 發行影片 {#release-video}
 
-## Release Video {#release-video}
+請觀看2023年9月版本概觀影片，瞭解2023.9.0版本新增功能摘要：
 
-Have a look at the September 2023 Release Overview video for a summary of the features added in the 2023.9.0 release:
-
->[!VIDEO](put new link here)
-
--->
+>[!VIDEO](https://video.tv.adobe.com/v/3424826/?quality=12)
 
 ## Edge遞送服務 {#edge-delivery}
 
@@ -54,7 +50,7 @@ Edge Delivery是一組全新的可撰寫服務，著重於在客戶互動時，�
 
 **將中繼資料表單指派至資料夾**
 
-您現在可以將中繼資料表單指派給部署內的特定資料夾。 資料夾中的所有資產（包括子資料夾中的資產）接著會顯示指派的中繼資料表單中定義的屬性。
+現在您可以將中繼資料表單指派到 部署中的特定資料夾。然後，資料夾中的所有資產 (包括子資料夾中的資產) 將顯示被指派中繼資料表單中定義的屬性。
 
 ![將中繼資料表單指派至資料夾](/help/release-notes/assets/assign-to-folder.png)
 
