@@ -1,5 +1,5 @@
 ---
-title: 使用通用編輯器在內容中編輯
+title: 使用 Universal Editor 進行內容編輯
 description: 探索如何使用通用編輯器來編輯內容的任何方面，無論是在任何實作中的位置或內容中。
 hidefromtoc: true
 index: false
@@ -7,15 +7,15 @@ exl-id: a4854a56-9434-4d15-a56a-f1798f27263a
 source-git-commit: 226df8999d1344ffe8acb2a9ce75b58634300a11
 workflow-type: tm+mt
 source-wordcount: '971'
-ht-degree: 95%
+ht-degree: 97%
 
 ---
 
-# 使用通用編輯器在內容中編輯 {#editing-in-context}
+# 使用 Universal Editor 進行內容編輯 {#editing-in-context}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_edit_inline_universal_editor"
->title="使用通用編輯器在內容中編輯"
+>title="使用 Universal Editor 進行內容編輯"
 >abstract="了解無頭應用程式如何利用 Universal Editor 為作者帶來低摩擦且符合上下文的編輯體驗。"
 
 >[!CONTEXTUALHELP]
