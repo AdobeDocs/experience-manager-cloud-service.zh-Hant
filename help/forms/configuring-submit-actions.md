@@ -2,7 +2,7 @@
 title: 如何為最適化表單設定提交動作？
 description: 最適化表單提供多個提交動作。提交動作會定義提交之後處理最適化表單的方式。您可以使用內建的提交動作或建立自己的動作。
 exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
-source-git-commit: 89e61c009890e2052c5db74b38c93fd54e697cd3
+source-git-commit: 6d949d9f31cc13b30f8ba06058911ddfe8e817af
 workflow-type: tm+mt
 source-wordcount: '3395'
 ht-degree: 87%
@@ -229,15 +229,17 @@ For more information about the Forms Portal and Submit Action, see [Drafts and s
 
 ## 提交到 OneDrive {#submit-to-onedrive}
 
-「**[!UICONTROL 提交到 OneDrive]**」提交動作會將最適化表單連結到 Microsoft® OneDrive。您可以將表單資料、檔案、附件或記錄文件提交到連結的 Microsoft® OneDrive 儲存空間。若要在最適化表單中使用「[!UICONTROL 提交到 OneDrive]」提交動作：
+「**[!UICONTROL 提交到 OneDrive]**」提交動作會將最適化表單連結到 Microsoft® OneDrive。您可以將表單資料、檔案、附件或記錄文件提交到連結的 Microsoft® OneDrive 儲存空間。
+
+>[!VIDEO](https://video.tv.adobe.com/v/3424864/connect-aem-adaptive-form-to-onedrive/?quality=12&learn=on)
+
+若要在最適化表單中使用「[!UICONTROL 提交到 OneDrive]」提交動作：
 
 1. [建立 OneDrive 設定](#create-a-onedrive-configuration-create-onedrive-configuration)：將 AEM Forms 連接到您的 Microsoft® OneDrive 儲存空間。
 2. [在最適化表單中使用「提交到 OneDrive」提交動作](#use-onedrive-configuration-in-an-adaptive-form-use-onedrive-configuartion-in-af)：將您的最適化表單連結到
 已設定的 Microsoft® OneDrive。
 
 ### 建立 OneDrive 設定 {#create-onedrice-configuration}
-
->[!VIDEO](https://video.tv.adobe.com/v/3424864/connect-aem-adaptive-form-to-onedrive/?quality=12&learn=on)
 
 若要將 AEM Forms 連結到您的 Microsoft® OneDrive 儲存空間：
 
