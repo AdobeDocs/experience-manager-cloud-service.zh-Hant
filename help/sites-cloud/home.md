@@ -3,10 +3,10 @@ title: Experience Manager as a Cloud Service Sites 的支援資源
 description: 獲取所有 Adobe AEM Cloud Service 支援資源的完整清單。為您的 AEM Sites as Cloud Service 問題尋求答案。
 landing-page-description: 了解如何使用 AEM Sites as a Cloud Service 編寫和管理。
 exl-id: 0fedbd4b-9d6b-40d9-88b7-e7469db420fc
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: ce841a83d46dc1c4fa2edc858e4a0be0af3ac170
 workflow-type: tm+mt
-source-wordcount: '412'
-ht-degree: 100%
+source-wordcount: '417'
+ht-degree: 98%
 
 ---
 
@@ -19,6 +19,7 @@ ht-degree: 100%
 * [AEM Sites as a Cloud Service 重大變更](sites-cloud-changes.md)
 * [編寫快速入門指南](authoring/getting-started/quick-start.md)
 * [發佈頁面](authoring/fundamentals/publishing-pages.md)
+* [使用Edge Delivery Services製作](/help/edge/overview.md)
 * [編寫回應式版面](authoring/features/responsive-layout.md)
 * [編寫範本](authoring/features/templates.md)
 * [使用體驗片段](authoring/fundamentals/experience-fragments.md)
