@@ -2,7 +2,7 @@
 title: 如何為最適化表單設定提交動作？
 description: 最適化表單提供多個提交動作。提交動作會定義提交之後處理最適化表單的方式。您可以使用內建的提交動作或建立自己的動作。
 exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
-source-git-commit: fb3d3732f698015151d9703bfddfe94b531d31b6
+source-git-commit: 89e61c009890e2052c5db74b38c93fd54e697cd3
 workflow-type: tm+mt
 source-wordcount: '3395'
 ht-degree: 87%
@@ -236,6 +236,8 @@ For more information about the Forms Portal and Submit Action, see [Drafts and s
 已設定的 Microsoft® OneDrive。
 
 ### 建立 OneDrive 設定 {#create-onedrice-configuration}
+
+>[!VIDEO](https://video.tv.adobe.com/v/3424864/connect-aem-adaptive-form-to-onedrive/?quality=12&learn=on)
 
 若要將 AEM Forms 連結到您的 Microsoft® OneDrive 儲存空間：
 
