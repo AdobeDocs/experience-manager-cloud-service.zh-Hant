@@ -8,10 +8,10 @@ user-guide-description: 了解 Experience Manager as a Cloud Service 的運作�
 breadcrumb-title: 使用手冊
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 2218aa58c6105d5fbfc08975e9e39d6476f4b173
+source-git-commit: 66a6897a28bb7fa57992c6782c001629f0f1d0c5
 workflow-type: tm+mt
-source-wordcount: '4333'
-ht-degree: 97%
+source-wordcount: '4325'
+ht-degree: 99%
 
 ---
 
@@ -465,7 +465,7 @@ ht-degree: 97%
       + [Markdown](/help/assets/content-fragments/content-fragments-markdown.md)
       + [樹狀結構](/help/assets/content-fragments/content-fragments-structure-tree.md)
       + [預覽 - JSON 代表](/help/assets/content-fragments/content-fragments-json-preview.md)
-      + [使用MSM對資產重複使用內容片段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/reuse-assets-using-msm.html)
+      + [使用 MSM 重複使用資產的內容片段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/reuse-assets-using-msm.html)
    + Dynamic Media {#dynamicmedia}
       + Dynamic Media 歷程：基礎知識{#dm-journey}
          + [第一部分：什麼是 Dynamic Media - 使用案例 - 資產如何流經系統](/help/assets/dynamic-media/dm-journey-part1.md)
@@ -545,8 +545,8 @@ ht-degree: 97%
       + [設定 [!DNL enhanced connector] for [!DNL Workfront]](/help/assets/workfront-connector-configure.md)
       + [更新 [!DNL Workfront for Experience Manager enhanced connector]](/help/assets/update-workfront-enhanced-connector.md)
 
-   + 與Adobe Express整合 {#integration-adobe-express}
-      + [適用於Adobe Express的AEM Assets附加元件](/help/assets/addon-adobe-express.md)
+   + 整合 Adobe Express{#integration-adobe-express}
+      + [適用於 Adob&#x200B;&#x200B;e Express 的 AEM Assets 附加元件](/help/assets/addon-adobe-express.md)
 + Forms {#forms}
    + 概觀 {#forms-overview}
       + [簡介](/help/forms/home.md)
@@ -581,7 +581,6 @@ ht-degree: 97%
          + [使用 OAuth 2.0 用戶端認證流程的 Salesforce 應用程式整合](/help/forms/oauth2-client-credentials-flow-for-server-to-server-integration.md)
          + [設定 [!DNL Azure] 儲存空間](/help/forms/configure-azure-storage.md)
          + [設定 [!DNL Microsoft Dynamics 365] 和 [!DNL Salesforce] 雲端服務](/help/forms/configure-msdynamics-salesforce.md)
-         + [將最適化表單連線至Microsoft SharePoint清單](/help/forms/connect-aem-adaptive-form-to-sharepointlist.md)
          + [建立表單資料模型](/help/forms/create-form-data-models.md)
          + [處理表單資料模型](/help/forms/work-with-form-data-model.md)
          + [使用表單資料模型](/help/forms/using-form-data-model.md)
@@ -600,7 +599,7 @@ ht-degree: 97%
             + [為最適化表單設定提交動作](/help/forms/configure-submit-actions-core-components.md)
             + [在最適化表單中使用 Google reCAPTCHA](/help/forms/captcha-adaptive-forms-core-components.md)
             + [在調適性表單中新增自訂的錯誤處理常式](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
-            + [根據核心元件為最適化Forms新增地區設定](/help/forms/supporting-new-language-localization-core-components.md)
+            + [為以核心元件為主的調適型表單新增地區設定](/help/forms/supporting-new-language-localization-core-components.md)
       + Foundation 元件 {#authoring-adaptive-forms-foundation-components}
          + 將您的 PDF forms 轉換為最適化表單 {#afcs}
             + [自動表單轉換服務簡介](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html)
@@ -737,9 +736,9 @@ ht-degree: 97%
    + [Adobe Commerce PWA Studio](/help/commerce-cloud/pwa-studio/getting-started.md)
    + [移轉](/help/commerce-cloud/migration.md)
    + [常見問題集](/help/commerce-cloud/faq.md)
-+ Edge遞送服務 {#edge-delivery}
++ Edge Delivery Services {#edge-delivery}
    + [開始使用 Edge Delivery](/help/edge/overview.md)
-   + [使用邊緣傳送](/help/edge/using.md)
+   + [使用 Edge Delivery](/help/edge/using.md)
 + Headless {#headless}
    + [什麼是 Headless CMS？](/help/headless/what-is-headless.md)
    + [AEM Headless 簡介](/help/headless/introduction.md)
@@ -1047,4 +1046,4 @@ ht-degree: 97%
    + [Universal Editor 架構](/help/implementing/universal-editor/architecture.md)
    + [屬性和類型](/help/implementing/universal-editor/attributes-types.md)
    + [Universal Editor 驗證](/help/implementing/universal-editor/authentication.md)
-   + [使用通用編輯器的本機AEM開發](/help/implementing/universal-editor/local-dev.md)
+   + [使用 Universal Editor 進行本地 AEM 開發](/help/implementing/universal-editor/local-dev.md)
