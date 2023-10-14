@@ -2,10 +2,10 @@
 title: 版發行說明 [!DNL Workfront for Experience Manager enhanced connector]
 description: 版發行說明 [!DNL Workfront for Experience Manager enhanced connector]
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
-source-git-commit: 9981fb1ac5ddf5d918cf76476fa185c524749c70
+source-git-commit: f5f2c460815d273fe445c6f415dee7776cc18fce
 workflow-type: tm+mt
-source-wordcount: '1252'
-ht-degree: 2%
+source-wordcount: '1355'
+ht-degree: 1%
 
 ---
 
@@ -15,17 +15,20 @@ ht-degree: 2%
 
 ## 發行日期 {#release-date}
 
-最新版本1.9.13的發行日期 [!DNL Workfront for Experience Manager enhanced connector] 為2023年9月11日。
+最新版本1.9.14的發行日期 [!DNL Workfront for Experience Manager enhanced connector] 為2023年10月13日。
 
 ## 發行重點說明 {#release-highlights}
 
-最新版本的 [!DNL Workfront for Experience Manager enhanced connector] 包含下列更新：
+最新版本的 [!DNL Workfront for Experience Manager enhanced connector] 包含下列錯誤修正：
 
-* Experience Manager增強型聯結器在刪除專案的事件訂閱時，會從Workfront擷取所有事件訂閱，進而影響應用程式的效能。
+* 在「進階設定」底下停用事件訂閱時，您仍然可以選取要 **訂閱檔案更新事件以更新AEM資產中繼資料**， **專案完成時將所有專案資產發佈到Brand Portal**、和 **啟用評論同步**.
 
-* 將資產從Workfront傳送至Experience Manager時，資產MIME型別未設為 `dc:format` Experience Manager中的屬性。
+* 當您在Workfront中預覽儲存在Experience Manager中的部分資產時，這些資產無法適當轉譯。
 
-* 儲存在Experience Manager增強型聯結器上的Workfront專案ID包含重複專案。
+* 使用Workfront重新設定Experience Manager連線時，無法成功建立事件訂閱（例如評論同步更新、刪除、檔案更新）。
+
+* 針對連結資料夾建立、更新、啟用連結資料夾、評論同步啟用和停用、進階設定儲存於聯結器等專案的API效能大幅改善。
+
 
 >[!NOTE]
 >
@@ -34,7 +37,7 @@ ht-degree: 2%
 
 >[!IMPORTANT]
 >
->Adobe建議您 [升級至最新的1.9.13版本](/help/assets/workfront-connector-install.md) 的 [!DNL Workfront for Experience Manager enhanced connector].
+>Adobe建議您 [升級至最新的1.9.14版本](/help/assets/workfront-connector-install.md) 的 [!DNL Workfront for Experience Manager enhanced connector].
 
 ## 已知問題 {#known-issues}
 
@@ -43,6 +46,14 @@ ht-degree: 2%
 * 使用傳統Workfront體驗時， **[!UICONTROL 傳送至]** 中可用的選項 **[!UICONTROL 更多]** 下拉式清單不允許您在Experience Manager中選取目標目的地。 此 **[!UICONTROL 傳送至]** 選項可透過 **[!UICONTROL 檔案動作]** 下拉式清單。 此 **[!UICONTROL 傳送至]** 選項正確運作於 **[!UICONTROL 更多]** 下拉式清單與 **[!UICONTROL 檔案動作]** 新Workfront體驗中可用的下拉式清單。
 
 ## 舊版 {#previous-releases}
+
+### 2023年9月發行版本 {#september-2023-release}
+
+* Experience Manager增強型聯結器在刪除專案的事件訂閱時，會從Workfront擷取所有事件訂閱，進而影響應用程式的效能。
+
+* 將資產從Workfront傳送至Experience Manager時，資產MIME型別未設為 `dc:format` Experience Manager中的屬性。
+
+* 儲存在Experience Manager增強型聯結器上的Workfront專案ID包含重複專案。
 
 ### 2023年8月發行版本 {#august-2023-release}
 
