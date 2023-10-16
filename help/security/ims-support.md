@@ -3,7 +3,7 @@ title: Adobe Experience Manager as a Cloud Service 的 IMS 支援
 description: Adobe Experience Manager as a Cloud Service 的影像管理系統支援
 exl-id: fb563dbd-a761-4d83-9da1-58f8e462b383
 source-git-commit: 361881807e8704dfcb27075365cb73a7f659c82d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1978'
 ht-degree: 100%
 
@@ -62,7 +62,7 @@ AEM 客戶應先佈建組織，而在 IMS 佈建過程中，客戶即可在 Admi
 
 [此文件](https://helpx.adobe.com/tw/enterprise/using/set-up-identity.html)說明 Adobe 身分管理基本知識，包括 IDP 設定。
 
-[此文件](https://helpx.adobe.com/enterprise/admin-guide.html)說明企業管理和 Admin Console 使用方式。
+[此文件](https://helpx.adobe.com/tw/enterprise/admin-guide.html)說明企業管理和 Admin Console 使用方式。
 
 ### 在 Admin Console 中建立使用者 {#onboarding-users-in-admin-console}
 
@@ -215,7 +215,7 @@ AEM 可繼續為管理員使用者支援本機登入。此登入畫面可讓您�
 請參閱角色定義深入了解使用者的角色，這些角色能控制使用者能否使用 Cloud Manager 的特定功能。
 
 >[!NOTE]
->Cloud Manager 已預先設定角色，賦予適當權限。若要了解各個具有特定權限的角色、預先設定的任務或每個角色的相關權限，請參閱[角色型權限](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/role-based-permissions.html?lang=en)。
+>Cloud Manager 已預先設定角色，賦予適當權限。若要了解各個具有特定權限的角色、預先設定的任務或每個角色的相關權限，請參閱[角色型權限](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/role-based-permissions.html?lang=zh-Hant)。
 
 **使用者新增步驟**
 
