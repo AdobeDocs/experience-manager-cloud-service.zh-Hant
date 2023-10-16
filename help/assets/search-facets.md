@@ -4,9 +4,9 @@ description: 本文說明如何在Experience Manager中建立、修改和使用�
 feature: Search,Metadata
 role: User,Admin
 exl-id: f994c1bf-3f9d-4cb2-88f4-72a9ad6fa999
-source-git-commit: 220350e6669c38ea602c2796ec1d5559992338ec
+source-git-commit: 35d70cd3843b5e0857a24a17746e05072aed7e1b
 workflow-type: tm+mt
-source-wordcount: '2503'
+source-wordcount: '2506'
 ht-degree: 21%
 
 ---
@@ -342,6 +342,7 @@ Adobe建議您在移除預設搜尋Facet時務必小心，以免出現效能問�
 
 **另請參閱**
 
+* [搜尋最佳實務](search-best-practices.md)
 * [翻譯資產](translate-assets.md)
 * [Assets HTTP API](mac-api-assets.md)
 * [資產支援的檔案格式](file-format-support.md)
