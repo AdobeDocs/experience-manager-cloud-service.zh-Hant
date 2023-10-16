@@ -2,9 +2,9 @@
 title: 內容搜尋與索引
 description: 瞭解AEMas a Cloud Service中的內容搜尋和索引。
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: d567115445c0a068380e991452d9b976535e3a1d
 workflow-type: tm+mt
-source-wordcount: '2324'
+source-wordcount: '2433'
 ht-degree: 1%
 
 ---
@@ -34,6 +34,11 @@ ht-degree: 1%
 * 在內部，可以設定其他索引並用於查詢。 例如，根據下列條件編寫的查詢： `damAssetLucene` 在Skyline上，索引實際上可能會針對此索引的Elasticsearch版本執行。 應用程式和使用者通常不會看到這種差異，但是，某些工具，例如 `explain` 功能會報告不同的索引。 如需Lucene索引與Elastic索引之間的差異，請參閱 [Apache Jackrabbit Oak中的Elastic檔案](https://jackrabbit.apache.org/oak/docs/query/elastic.html). 客戶不需要且無法直接設定Elasticsearch索引。
 * 依類似的特徵向量搜尋(`useInSimilarity = true`)不受支援。
 
+>[!TIP]
+>
+>如需Oak索引和查詢的詳細資訊，包括進階搜尋和索引功能的詳細說明，請參閱 [Apache Oak檔案](https://jackrabbit.apache.org/oak/docs/query/query.html).
+
+
 ## 使用方式 {#how-to-use}
 
 索引定義可以分為三個主要使用案例，如下所示：
@@ -54,11 +59,15 @@ ht-degree: 1%
 
 3. 完全自訂索引：您可以從頭開始建立全新的索引。 它們的名稱必須有首碼以避免命名衝突。 例如： `/oak:index/acme.product-1-custom-2`，首碼為 `acme.`
 
+>[!NOTE]
+>
+>在上引入新索引 `dam:Asset` 強烈建議不要使用節點型別（尤其是全文檢索索引），因為這些可能會與OOTB產品功能發生衝突，導致功能和效能問題。 一般來說，新增其他屬性至目前的 `damAssetLucene-*` 索引版本是在上索引查詢的最合適方式 `dam:Asset` nodetype (這些變更會自動合併到索引的新產品版本中（如果索引隨後發行）。 如有疑問，請聯絡Adobe支援以尋求建議。
+
 ## 準備新的索引定義 {#preparing-the-new-index-definition}
 
 >[!NOTE]
 >
->如果自訂現成可用的索引，例如 `damAssetLucene-8`，請從以下位置複製最新的現成可用索引定義： *Cloud Service環境* 使用CRX DE封裝管理員(`/crx/packmgr/`) 。 將其重新命名為 `damAssetLucene-8-custom-1` ，並將您的自訂專案新增至XML檔案中。 這可確保不會無意中移除所需的設定。 例如， `tika` 節點在 `/oak:index/damAssetLucene-8/tika` 在雲端服務的自訂索引中是必要專案。 它不存在於Cloud SDK上。
+>如果自訂現成可用的索引，例如 `damAssetLucene-8`，請從以下位置複製最新的現成可用索引定義： *Cloud Service環境* 使用CRX DE封裝管理員(`/crx/packmgr/`) 。 將其重新命名為 `damAssetLucene-8-custom-1` ，並將您的自訂專案新增至XML檔案中。 這可確保不會無意中移除所需的設定。 例如， `tika` 節點在 `/oak:index/damAssetLucene-8/tika` 在部署至AEM Cloud Service環境的自訂索引中是必要的，但本機AEM SDK上並不存在。
 
 針對OOTB索引的自訂，請準備包含遵循此命名模式之實際索引定義的新套件：
 

@@ -2,9 +2,9 @@
 title: 查詢產生器述詞參考
 description: AEMas a Cloud Service中查詢產生器API的述詞參考。
 exl-id: 77118ef7-4d29-470d-9c4b-20537a408940
-source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
+source-git-commit: e10c39c1d7fa05b738dd8f25662617a3a9568f83
 workflow-type: tm+mt
-source-wordcount: '2252'
+source-wordcount: '2295'
 ht-degree: 1%
 
 ---
@@ -25,6 +25,8 @@ ht-degree: 1%
 * **`p.limit`**  — 表示頁面大小的數字。
 * **`p.guessTotal`**  — 建議：避免計算完整結果總計，這可能要花費大量成本。 指示要計算的總數上限的數字（例如1000，這個數字可提供使用者對粗略大小的足夠意見以及較小結果的精確數字）。 或， `true` 以僅計算至所需的最小值 `p.offset` + `p.limit`.
 * **`p.excerpt`**  — 若設為 `true`，在結果中包含全文摘錄。
+* **`p.indexTag`**  — 若設定，查詢中將包含索引標籤選項(請參閱 [查詢選項索引標籤](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#query-option-index-tag))。
+* **`p.facetStrategy`**  — 若設為 `oak`，查詢產生器會將Facet擷取委派給Oak (請參閱 [Facet](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#facets))。
 * **`p.hits`** - （僅適用於JSON servlet）選取將點選寫入為JSON的方式，並使用這些標準點選（可透過ResultHitWriter服務擴充）。
    * **`simple`**  — 最小專案，例如 `path`， `title`， `lastmodified`， `excerpt` （若有設定）。
    * **`full`**  — 節點的sling JSON演算，使用 `jcr:path` 表示點選的路徑。 根據預設，僅列出節點的直接屬性，包括更深層的樹狀結構 `p.nodedepth=N`，0表示完整、無限的子樹狀結構。 新增 `p.acls=true` 在指定的結果專案上包含目前工作階段的JCR許可權(對應： `create` = `add_node`， `modify` = `set_property`， `delete` = `remove`)。
