@@ -3,9 +3,9 @@ title: 查詢和編製索引最佳做法
 description: 瞭解如何根據Adobe的最佳實務准則最佳化您的索引和查詢。
 topic-tags: best-practices
 exl-id: 37eae99d-542d-4580-b93f-f454008880b1
-source-git-commit: 1cdda5f793d853493f1f61eefebbf2af8cdeb6cb
+source-git-commit: ddd67a69bea2e2109ce93a91f42e8f365424f80f
 workflow-type: tm+mt
-source-wordcount: '3141'
+source-wordcount: '3144'
 ht-degree: 0%
 
 ---
@@ -315,4 +315,15 @@ Automated Cloud Manager管道檢查將強制執行上述某些最佳實務。
    * 在這種情況下，查詢引擎必須讀取索引傳回的所有結果，並在記憶體中排序。
    * 這比在基礎索引查詢中套用排序要慢許多倍。
 1. 查詢的執行程式正在嘗試迭代大型結果集。
-   * 發生這種情況可能有幾個原因 —  |原因 |緩解 | ----------|--------------| |委任 `p.guessTotal` （或使用非常大的guessTotal）導致QueryBuilder反複處理大量結果計數結果 |提供 `p.guessTotal` 具有適當值 | |在查詢產生器中使用大型或無限制限制(即 `p.limit=-1`) |使用適當的值 `p.limit` （最好為1000以下） | |在Query Builder中使用篩選述詞，該述詞從基礎JCR查詢中篩選大量結果 |以可在基礎JCR查詢中套用的限制來取代篩選述詞 | |在QueryBuilder中使用以比較器為基礎的排序 |取代為基礎JCR查詢中的屬性型排序（使用依排序編制索引的屬性） | |由於存取控制而篩選大量結果 |將額外的索引屬性或路徑限制套用至查詢，以映象存取控制 | |使用具有大位移的「位移分頁」 |考慮使用 [金鑰組分頁](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#Keyset_Pagination)| |大量或無限制結果的反複專案 |考慮使用 [金鑰組分頁](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#Keyset_Pagination)| |選擇的索引不正確 |在查詢和索引定義中使用標籤以確保使用預期的索引|
+   * 發生此狀況有多種原因，如下所列：
+
+| 原因 | 緩解 |
+|----------|--------------|
+| 委任 `p.guessTotal` （或使用非常大的guessTotal）導致QueryBuilder反複處理大量結果計數結果 | 提供 `p.guessTotal` 具有適當值 |
+| 在查詢產生器中使用大型或無限制限制(即 `p.limit=-1`) | 使用適當的值 `p.limit` （最好為1000以下） |
+| 在Query Builder中使用篩選述詞，從基礎JCR查詢中篩選大量結果 | 以可在基礎JCR查詢中套用的限制來取代篩選述詞 |
+| 在QueryBuilder中使用以比較器為基礎的排序 | 取代為基礎JCR查詢中的屬性型排序（使用依排序編列索引的屬性） |
+| 由於存取控制而篩選大量結果 | 將額外的索引屬性或路徑限制套用至查詢，以映象存取控制 |
+| 使用具有大位移的「位移分頁」 | 考慮使用 [金鑰組分頁](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#Keyset_Pagination) |
+| 大量或無限制結果的反複專案 | 考慮使用 [金鑰組分頁](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#Keyset_Pagination) |
+| 選擇的索引不正確 | 在查詢和索引定義中使用標籤以確保使用預期的索引 |
