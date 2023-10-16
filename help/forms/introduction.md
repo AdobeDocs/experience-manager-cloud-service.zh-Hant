@@ -1,8 +1,8 @@
 ---
 title: Adobe Experience Manager (AEM) Forms as a Cloud Service 概觀
-description: AEM Forms as a Cloud Service 服務是一個用來建立、管理、發佈企業級表格和業務流程的平台。
+description: AEM Forms as a Cloud Service 服務是一個用來建立、管理、發佈企業級表單和業務流程的平台。
 source-git-commit: 8fbbdd8b22eaa34e21507a497e388f671be701c7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '84'
 ht-degree: 100%
 
