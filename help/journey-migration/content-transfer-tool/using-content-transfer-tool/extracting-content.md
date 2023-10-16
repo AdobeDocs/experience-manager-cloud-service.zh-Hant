@@ -2,7 +2,7 @@
 title: 自來源擷取內容
 description: 瞭解如何從來源Adobe Experience Manager (AEM)例項擷取內容，以便稍後將其傳輸至Cloud ServiceAEM例項。
 exl-id: c5c08c4e-d5c3-4a66-873e-96986e094fd3
-source-git-commit: 44a3f3c4ca08cffa06056ea85adc58e3cf1f2f1c
+source-git-commit: 031ddfa2da0fc5ecc92267eae1f9dcaac394573d
 workflow-type: tm+mt
 source-wordcount: '713'
 ht-degree: 28%
@@ -36,7 +36,7 @@ ht-degree: 28%
 
 1. 這會顯示擷取對話方塊。 按一下 **Extract** 以開始提取階段。
 
-   ![影像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam14.png)
+   ![影像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam14b.png)
 
    >[!NOTE]
    >您可以選擇在提取階段期間覆寫預備容器。 如果 **覆寫暫存容器** 功能已停用，如果內容路徑或包含版本設定未變更，此功能可為後續移轉加速擷取。 不過，如果內容路徑或包含版本設定已變更，則 **覆寫暫存容器** 應該啟用。
