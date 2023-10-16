@@ -3,9 +3,9 @@ title: 使用多個存放庫
 description: 了解如何在使用 Cloud Manager 時管理多個 Git 存放庫。
 exl-id: 1b9cca36-c2d7-4f9e-9733-3f1f4f8b2c7a
 source-git-commit: d67c5c9baafb9b7478f1d1c2ad924f5a8250a1ee
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '738'
-ht-degree: 56%
+ht-degree: 100%
 
 ---
 
@@ -15,11 +15,11 @@ ht-degree: 56%
 
 ## 同步客戶管理的 Git 存放庫 {#syncing-customer-managed-git-repositories}
 
-[客戶可以使用自己的 Git 存放庫](integrating-with-git.md)或多個自己的 Git 存放庫，而不是直接使用 Cloud Manager 的 Git 存放庫。在這些情況下，應設定自動同步流程，以確保Cloud Manager的Git存放庫隨時保持最新。
+[客戶可以使用自己的 Git 存放庫](integrating-with-git.md)或多個自己的 Git 存放庫，而不是直接使用 Cloud Manager 的 Git 存放庫。在這種情況下應設定自動同步流程，以確保 Cloud Manager 的 Git 存放庫隨時保持最新。
 
-根據託管客戶 Git 存放庫的位置，可以使用 GitHub 操作或 Jenkins 等持續整合解決方案來設定自動化。建立自動化後，可將每次到客戶自己的Git存放庫的推送自動轉寄到Cloud Manager的Git存放庫。
+根據託管客戶 Git 存放庫的位置，可以使用 GitHub 操作或 Jenkins 等持續整合解決方案來設定自動化。建立自動化後，可將每次到客戶自己的存放庫的推送自動轉寄到 Cloud Manager 的 Git 存放庫。
 
-雖然對單一客戶擁有的 Git 存放庫而言，這類自動化很簡單，但若為多個存放庫設定，則需要初始設定。來自多個Git存放庫的內容必須對應到單一Cloud Manager的Git存放庫中不同的目錄。 Cloud Manager的Git存放庫必須布建根Maven `pom.xml`，在模組區段中列出不同的子專案。
+雖然對單一客戶擁有的 Git 存放庫而言，這類自動化很簡單，但若為多個存放庫設定，則需要初始設定。必須將來自多個 Git 存放庫的內容對應到單一 Cloud Manager 的 Git 存放庫中不同的目錄。必須在 Cloud Manager 的 Git 存放庫佈建根 Maven `pom.xml`，在模組區段中提供不同子專案的清單。
 
 以下是兩個客戶自有 Git 存放庫的範例 `pom.xml` 檔案。
 
@@ -45,27 +45,27 @@ ht-degree: 56%
 </project>
 ```
 
-這類根 `pom.xml` 會被推送到 Cloud Manager 的 Git 存放庫中的某個分支。然後必須設定這兩個專案以自動將變更轉寄到Cloud Manager的Git存放庫。
+這類根 `pom.xml` 會被推送到 Cloud Manager 的 Git 存放庫中的某個分支。然後必須設定這兩個專案，以便自動將變更轉寄到 Cloud Manager 的 Git 存放庫。
 
 以下是可能的解決方案。
 
 1. 可以透過推送到專案 A 中的分支來觸發 GitHub 動作。
-1. 該動作會簽出專案A和Cloud Manager Git存放庫，並將專案A中的所有內容複製到目錄 `project-a` 在Cloud Manager的Git存放庫中。
-1. 然後動作會認可 — 推送變更。
+1. 該操作會檢查專案 A 和 Cloud Manager Git 存放庫，並將專案 A 中的所有內容複製到 Cloud Manager 的 Git 存放庫中的目錄 `project-a`。
+1. 然後，該操作會認可-推送變更。
 
-例如，會將專案 A 中主要分支上的變更自動推送到 Cloud Manager 的 Git 存放庫中的主要分支。分支之間可能存在對應，例如推送到名為的分支 `dev` 在專案A中，會推送至名為的分支 `development` 在Cloud Manager的Git存放庫中。 專案 B 需要類似的步驟。
+例如，會將專案 A 中主要分支上的變更自動推送到 Cloud Manager 的 Git 存放庫中的主要分支。分支之間可能會進行對應，例如，會將對專案 A 中名為 `dev` 分支的推送推到 Cloud Manager 的 Git 存放庫中名為 `development` 的分支。專案 B 需要類似的步驟。
 
-根據分支原則和工作流程，可以為不同的分支設定同步。如果使用的Git存放庫不提供類似GitHub動作的概念，則也有可能透過Jenkins （或類似方法）進行整合。 在這種情況下，webhook 會觸發進行這項工作的 Jenkins 作業。
+根據分支原則和工作流程，可以為不同的分支設定同步。如果使用的 Git 存放庫不提供類似 GitHub 操作的概念，則也有可能經由 Jenkins (或類似方法) 進行整合。在這種情況下，webhook 會觸發進行這項工作的 Jenkins 作業。
 
-請按照以下步驟操作，以便您可以新增第三個來源或存放庫。
+依照下列步驟進行，即可新增第三個來源或存放庫。
 
-1. 新增GitHub操作到新存放庫，這會將變更從該存放庫推送到Cloud Manager的Git存放庫。
+1. 將 GitHub 操作新增到新存放庫，會因此從該存放庫將變更推送到 Cloud Manager 的 Git 存放庫。
 1. 至少執行一次該操作，以確保專案程式碼在 Cloud Manager 的 Git 存放庫中。
 1. 在 Cloud Manager Git 存放庫的根 Maven `pom.xml` 中新增對新目錄的參考資料。
 
 ## GitHub 操作範例 {#sample-github-action}
 
-這是一個GitHub操作的範例，透過推送至主要分支然後推入Cloud Manager的Git存放庫的子目錄中來觸發。 GitHub動作必須提供兩個秘密： `MAIN_USER` 和 `MAIN_PASSWORD`，以便能夠連線並推送至Cloud Manager的Git存放庫。
+這是一個 GitHub 操作的範例，透過推送至主要分支然後推入 Cloud Manager 的 Git 存放庫的子目錄中來觸發。必須對該 GitHub 操作提供兩個秘密：`MAIN_USER` 以及 `MAIN_PASSWORD`，才能連線並推送至 Cloud Manager 的 Git 存放庫。
 
 ```java
 name: SYNC
@@ -122,11 +122,11 @@ jobs:
           git -C ${MAIN_BRANCH} push
 ```
 
-使用GitHub動作相當靈活。 可執行 Git 存放庫分支之間的任何對應，以及單獨 Git 專案至主要專案目錄版面的任何對應。
+使用 GitHub 操作非常靈活。可執行 Git 存放庫分支之間的任何對應，以及單獨 Git 專案至主要專案目錄版面的任何對應。
 
 >[!NOTE]
 >
->範例指令碼使用 `git add` 來更新存放庫。這假設包括刪除。根據Git的預設設定，這必須替換為 `git add --all`.
+>範例指令碼使用 `git add` 來更新存放庫。這假設包括刪除。根據 Git 的預設設定，這必須以 `git add --all` 來取代。
 
 ## Jenkins 作業範例 {#sample-jenkins-job}
 
@@ -137,7 +137,7 @@ jobs:
 1. 該作業會觸發此指令碼。
 1. 該指令碼會依次檢查 Cloud Manager 的 Git 存放庫並將專案程式碼提交到子目錄。
 
-Jenkins作業必須提供兩個秘密： `MAIN_USER` 和 `MAIN_PASSWORD`，以便能夠連線並推送至Cloud Manager的Git存放庫。
+必須對該 Jenkins 作業提供兩個秘密：`MAIN_USER` 以及 `MAIN_PASSWORD`，才能連線並推送至 Cloud Manager 的 Git 存放庫。
 
 ```java
 # Username/email used to commit to Cloud Manager's Git repository
@@ -191,8 +191,8 @@ git commit -F ../commit.txt
 git push
 ```
 
-使用Jenkins作業是靈活的。 可執行 Git 存放庫分支之間的任何對應，以及單獨 Git 專案至主要專案目錄版面的任何對應。
+使用 Jenkins 作業非常靈活。可執行 Git 存放庫分支之間的任何對應，以及單獨 Git 專案至主要專案目錄版面的任何對應。
 
 >[!NOTE]
 >
->範例指令碼使用 `git add` 來更新存放庫。這假設包括刪除。根據Git的預設設定，這必須替換為 `git add --all`.
+>範例指令碼使用 `git add` 來更新存放庫。這假設包括刪除。根據 Git 的預設設定，這必須以 `git add --all` 來取代。
