@@ -1,13 +1,13 @@
 ---
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2023.8.0 版發行說明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2023.8.0 版發行說明。'
-source-git-commit: 2b242cb10fb5d1da725c1396633d2db779a78639
-workflow-type: tm+mt
+exl-id: a0ffa6cf-64ae-468c-93f4-ac6805ef907e
+source-git-commit: 0109cea1be85e647fb6c04dde4714b162bdc75a5
+workflow-type: ht
 source-wordcount: '1686'
 ht-degree: 100%
 
 ---
-
 
 # [!DNL Adobe Experience Manager] as a Cloud Service 2023.8.0 版發行說明 {#release-notes}
 
@@ -130,9 +130,9 @@ You can now assign metadata form to a specific folder within your Assets Essenti
 * **[使用規則編輯器中的自訂錯誤處理常式發生錯誤處理](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)**：您現在可以呼叫自訂函數來回應外部服務傳回的錯誤，並為一般使用者提供量身打造的回應。例如，您可以針對特定錯誤程式碼在後端叫用自訂的工作流程，或通知客戶服務已關閉。
 
 
-### Headless 調適型表單早期採用者計畫 {#forms-early-adopter}
+### Headless 最適化表單早期採用者計畫 {#forms-early-adopter}
 
-使用 [Headless 調適型表單](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html)讓您的開發人員能夠建立、發佈和管理可透過 API 存取和互動的互動式表單，而不是透過傳統的圖形使用者介面。Headless 調適型表單可協助您：
+使用 [Headless 最適化表單](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html)讓您的開發人員能夠建立、發佈和管理可透過 API 存取和互動的互動式表單，而不是透過傳統的圖形使用者介面。Headless 最適化表單可協助您：
 
 * 使用您選擇的程式語言建置高品質的多管道表單
 * 以原生方式將表單整合到您的桌面和行動應用程式、網站和聊天應用程式
