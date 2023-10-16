@@ -3,19 +3,19 @@ title: 更新您的內容片段，以達到最佳化 GraphQL 篩選
 description: 了解如何更新您的內容片段，以便在 Adobe Experience Manager as a Cloud Service 中達到最佳化 GraphQL 篩選，並實現 Headless 內容傳遞。
 exl-id: 211f079e-d129-4905-a56a-4fddc11551cc
 source-git-commit: 97a6a7865f696f4d61a1fb4e25619caac7b68b51
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '890'
-ht-degree: 60%
+ht-degree: 100%
 
 ---
 
 # 更新您的內容片段，以達到最佳化 GraphQL 篩選 {#updating-content-fragments-for-optimized-graphql-filtering}
 
-若要最佳化GraphQL篩選器的效能，請執行程式來更新您的內容片段。
+若要最佳化 GraphQL 篩選器的效能，可執行一個程序來更新您的內容片段。
 
 >[!NOTE]
 >
->更新您的內容片段後，您可以遵循的建議 [最佳化GraphQL查詢](/help/headless/graphql-api/graphql-optimization.md).
+>更新內容片段後，您可以依照[最佳化 GraphQL 查詢](/help/headless/graphql-api/graphql-optimization.md)的建議進行。
 
 
 ## 先決條件 {#prerequisites}
@@ -26,7 +26,7 @@ ht-degree: 60%
 
 1. 確保執行任務的使用者具有必要權限：
 
-   * 至少， `Deployment Manager` 需要Cloud Manager中的角色。
+   * 至少要在 Cloud Manager 中具備 `Deployment Manager` 角色。
 
 ## 更新您的內容片段 {#updating-content-fragments}
 
@@ -67,7 +67,7 @@ ht-degree: 60%
       <td>全部 </td>
       <td> </td>
       <td>變數 </td>
-      <td>執行 (!=0)重新移轉內容片段。<br>將此標幟設為0會執行CF的遞增移轉。 這表示，如果工作因任何原因而終止，則工作的下次執行會從工作終止的點開始移轉。 建議執行第一次移轉（值=1）。 </td>
+      <td>執行 (!=0) 內容片段的重新遷移。<br>將此標幟設定為 0 可執行 CF 的增量遷移。這表示，如果作業由於任何原因終止，則下一次執行作業會從作業被終止的那個點開始遷移。建議強制執行第一次遷移 (值=1)。 </td>
      </tr>
      <tr>
       <td>3</td>
@@ -77,7 +77,7 @@ ht-degree: 60%
       <td>全部 </td>
       <td> </td>
       <td>變數 </td>
-      <td>用於儲存移轉後內容片段數的批次大小。<br>這與一次儲存至存放庫的CF數量相關，並可用於最佳化寫入存放庫的次數。 </td>
+      <td>遷移後用來儲存內容片段數量的批次大小。<br>這與單批中多少個 CF 儲存到存放庫中有關，並且可以用來最佳化寫入存放庫的數量。 </td>
      </tr>
      <tr>
       <td>4</td>
@@ -97,7 +97,7 @@ ht-degree: 60%
       <td>全部 </td>
       <td> </td>
       <td>變數 </td>
-      <td>處理剩餘內容片段直到下一個限制的間隔（秒）<br>此間隔也會被視為啟動作業前的等待時間，以及處理每個後續CF_MIGRATION_LIMIT數目CF之間的延遲。<br>(*)</td>
+      <td>處理剩餘內容片段直到下一個限制的時間間隔 (秒)<br>此時間間隔也被視為開始作業之前的等待時間，以及處理每個後續 CF_MIGRATION_LIMIT 數量的 CF 之間的延遲。<br>(*)</td>
      </tr>
     </tbody>
    </table>
@@ -116,9 +116,9 @@ ht-degree: 60%
    >* 完成遷移所需的大約時間 = 60 + (20,000/1000 * 60) = 1260 秒 = 21 分鐘
    >  在開始時增加的額外「60」秒是由於開始作業時的初始延遲。
    >
-   >這只是 *最小值* 完成工作所需的時間，但不包括I/O時間。 實際花費的時間可能超過此預估值。
+   >這只是完成作業所需的&#x200B;*最短*&#x200B;時間，不包括 I/O 時間。實際花費的時間可能超過這個估計。
 
-1. 監視更新的進度和完成。
+1. 監控更新的進度和完成情況。
 
    為此，請從以下位置監控作者和 golden-publish 的記錄：
 
@@ -144,7 +144,7 @@ ht-degree: 60%
         23.01.2023 12:40:45.180 *INFO* [sling-threadpool-8abcc1bb-cdcb-46d4-8565-942ad8a73209-(apache-sling-job-thread-pool)-1-Content Fragment Upgrade Job Queue Config(cfm/upgrader)] com.adobe.cq.dam.cfm.impl.upgrade.UpgradeJob Finished content fragments upgrade in 5m, slingJobId: 2023/1/23/12/34/ad1b399e-77be-408e-bc3f-57097498fddb_0, status: MaintenanceJobStatus{jobState=SUCCEEDED, statusMessage='Upgrade to version '1' succeeded.', errors=[], successCount=3781, failedCount=0, skippedCount=0}
         ```
 
-   使用 Splunk 啟用環境記錄存取權的客戶可以使用下面的範例查詢來監控升級程序。如需有關啟用Splunk記錄的詳細資訊，請參閱 [偵錯生產和中繼](/help/implementing/developing/introduction/logging.md#debugging-production-and-stage).
+   使用 Splunk 啟用環境記錄存取權的客戶可以使用下面的範例查詢來監控升級程序。如需有關啟用 Splunk 記錄的詳細資訊，請參閱[偵錯生產和階段](/help/implementing/developing/introduction/logging.md#debugging-production-and-stage)。
 
    ```splunk
    index=<indexName> sourcetype=aemerror aem_envId=<environmentId> msg="*com.adobe.cq.dam.cfm.impl.upgrade.UpgradeJob Finished*" 
@@ -218,13 +218,13 @@ ht-degree: 60%
 
    >[!NOTE]
    >
-   >這對發佈層級很重要，因為內容更新只會在Golden-publish上完成，而且當回收Pod時，所有一般發佈Pod都會以Golden-publish為基礎。
+   >這對於發佈層很重要，因為內容更新僅在 golden-publish 上進行，並且在回收 pod 時，所有正常的 publish pod 都是以 golden-publish 為主。
 
 1. 驗證更新程序的完成。
 
    您可以使用 Cloud Manager Developer Console 中的存放庫瀏覽器來驗證更新是否成功完成，以檢查內容片段資料。
 
-   * 在第一次完整移轉前， `cfGlobalVersion` 屬性不存在。
+   * 在第一次完整遷移之前，`cfGlobalVersion` 屬性不存在。
 因此，該屬性 (在 JCR 節點 `/content/dam` 上且值為 `1`) 的存在可確認遷移完成。
 
    * 您還可以查看個別內容片段的以下屬性：
@@ -234,14 +234,14 @@ ht-degree: 60%
 
      >[!NOTE]
      >
-     >此程式會更新作者和發佈執行個體上的內容片段。
+     >該程序會更新作者和發佈執行個體上的內容片段。
      >
-     >因此，Adobe建議您透過以下專案的存放庫瀏覽器執行驗證： *至少* 一位作者 *和* 一個發佈執行個體。
+     >因此，Adobe 建議您經由存放庫瀏覽器對&#x200B;*至少*&#x200B;一位作者&#x200B;*和*&#x200B;一個發佈執個體進行驗證。
 
 ## 限制 {#limitations}
 
 留意以下限制：
 
-* 只有在完成所有內容片段的更新後（以「 」的存在表示），GraphQL篩選器的效能才能最佳化。 `cfGlobalVersion` JCR節點的屬性 `/content/dam`)
+* GraphQL 篩選器的效能最佳化只有在完全更新所有內容片段後才有可能 (由 JCR 節點 `/content/dam` 的 `cfGlobalVersion` 屬性存在來表示)
 
-* 如果內容片段是從內容套件匯入(使用 `crx/de`)後，則不會在GraphQL查詢結果中考慮這些內容片段，直到再次執行更新程式為止。
+* 如果在執行更新程序後從內容套組 (使用 `crx/de`) 匯入內容片段，則在再次執行更新程序之前，GraphQL 查詢結果中不會考慮這些內容片段。
