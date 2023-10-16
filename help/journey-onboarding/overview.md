@@ -3,9 +3,9 @@ title: AEM as a Cloud Service 上線歷程簡介
 description: 從此處開始，逐步引導您了解 AEM as a Cloud Service 的上線流程。
 exl-id: 892577db-05dc-49ff-bb2c-203efdb89c8c
 source-git-commit: bba8310b9ba560ab9b6c2f9bea3e5c3cbec9228b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1256'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 93%
 
 ## 簡介 {#introduction}
 
-Adobe Experience Manager是一套功能強大的可撰寫內容服務，可跨任何管道快速提供極具影響力的個人化體驗，讓所有人都能瞭解內容。 **Edge遞送服務** 是Adobe Experience Manager中的最新創新，可帶來極致的內容速度並提供卓越的體驗。 透過造訪，瞭解如何開始使用Edge Delivery Services [此頁面](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html). 若要瞭解如何使用Edge Delivery Services，請參閱 [開發人員教學課程](https://www.hlx.live/developer/tutorial) 頁面。
+Adobe Experience Manager 是一套功能強大的可組合內容服務，可在任何頻道中快速提供極具影響力的個人化體驗，為所有人解鎖所有內容。**Edge Delivery Services** 是 Adobe Experience Manager 的最創新服務，可使內容速度達到極限並提供卓越的體驗。了解如何開始使用 Edge Delivery Services，請瀏覽[此頁面](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html)。若要了解如何使用 Edge Delivery Services，請參閱[開發人員教學課程](https://www.hlx.live/developer/tutorial)頁面。
 
 上線是指定的系統管理員為您的組織設定 AEM as a Cloud Service 的過程。此程序包括雲端資源的初始設定，以及根據使用者的工作職責為其指派角色。因此，每個成員都能夠登入並存取他們的 AEM as a Cloud Service 資源。
 
