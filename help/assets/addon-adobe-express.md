@@ -1,67 +1,67 @@
 ---
-title: 適用於Adobe Express的AEM Assets附加元件
-description: 適用於Adobe Express的AEM Assets附加元件可讓您從Adobe Express使用者介面直接存取AEM Assets中儲存的資產。
-source-git-commit: e9ff2f2b15642288e82ac6f900dc567231bf85c7
-workflow-type: tm+mt
+title: 適用於 Adobe Express 的 AEM Assets 附加元件
+description: 適用於 Adobe Express 的 AEM Assets 附加元件可讓您從 Adobe Express 使用者介面直接存取 AEM Assets 儲存的資源。
+exl-id: d43e4451-da2a-444d-9aa4-4282130ee44f
+source-git-commit: 9078e5bb71d9f34dc0416725efc20c0ab74cc939
+workflow-type: ht
 source-wordcount: '485'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# 適用於Adobe Express的AEM Assets附加元件 {#assets-addon-adobe-express}
+# 適用於 Adobe Express 的 AEM Assets 附加元件 {#assets-addon-adobe-express}
 
-適用於Adobe Express的AEM Assets附加元件可讓您從Adobe Express使用者介面直接存取AEM Assets中儲存的資產。 您可以將AEM Assets中管理的內容放在快速畫布中，然後將新內容或編輯過的內容儲存在AEM Assets存放庫中。 此附加元件提供下列主要優點：
+適用於 Adobe Express 的 AEM Assets 附加元件可讓您從 Adobe Express 使用者介面直接存取 AEM Assets 儲存的資源。您可以將 AEM Assets 中管理的內容放置在 Express 畫布中，然後將新的或編輯的內容儲存在 AEM Assets 存放庫中。此附加元件提供以下主要優點：
 
-* 透過在AEM中編輯和儲存新資產，提高內容重複使用率
+* 透過在 AEM 中編輯和儲存新資源來提高內容重複使用率
 
-* 減少建立新資產或建立現有資產新版本的整體時間和精力
+* 減少建立新資產或現有資產新版本的整體時間和精力
 
 ## 先決條件 {#prerequisites}
 
-存取AEM Assets中Adobe Express和至少一個環境的權益。 環境可以是資產as a Cloud Service或Assets Essentials中的任何存放庫。
+有權存取 Adobe Express 以及 AEM Assets 中至少一個環境。此環境可以是 Assets as a Cloud Service 或 Assets Essentials 中的任何存放庫。
 
 
-## 將AEM Assets附加元件新增至Adobe Express {#access-assets-addon}
+## 將 AEM Assets 附加元件新增至 Adobe Express {#access-assets-addon}
 
-執行以下步驟，將AEM Assets附加元件新增至Adobe Express：
+執行以下步驟，將 AEM Assets 附加元件新增至 Adobe Express：
 
-1. 開啟Adobe ExpressWeb應用程式。
+1. 開啟 Adobe Express Web 應用程式。
 
-1. 載入新範本或專案，或建立新資產，以開啟新的空白畫布。
+1. 透過載入新範本或專案或建立新資源來開啟新的空白畫布。
 
-1. 按一下 **[!UICONTROL 附加元件]** 可在左側導覽窗格中使用。
+1. 在左側導覽窗格中，點選適用的「**[!UICONTROL 附加元件]**」。
 
-1. 指定 **[!UICONTROL AEM Assets]** 在頂端可用的搜尋列中 [!UICONTROL 附加元件] 區段，然後按一下AEM Assets附加元件。
+1. 在[!UICONTROL 附加元件]的頂部區段可用搜尋列中指定 **[!UICONTROL AEM Assets]**，並點選 AEM Assets 附加元件。
 
-   ![AEM Assets附加元件](assets/aem-assets-add-on.png)
+   ![AEM Assets 附加元件](assets/aem-assets-add-on.png)
 
-1. 按一下 **[!UICONTROL 新增]**. 附加元件會顯示在 **[!UICONTROL 您的附加元件]** 區段。 再按一下附加元件，右側導覽窗格中就會顯示內容。 附加元件會顯示您有權存取的存放庫清單，以及在根層級可用的資產和檔案夾清單。
+1. 按一下&#x200B;**[!UICONTROL 「新增」]**。此附加元件會顯示在&#x200B;**[!UICONTROL 您附加元件]**&#x200B;部份的清單中。再次按一下該附加元件，即可在右側導覽窗格中顯示內容。此附加元件會顯示您有權存取的存放庫清單，以及根層級可用的資產和資料夾清單。
 
-   使用搜尋列來搜尋您需要在畫布中使用的資產。
+   使用搜尋列來搜尋您需要在畫布中使用的資源。
 
-   ![在AEM Assets附加元件中搜尋資產](assets/assets-add-on-browse-assets.png)
+   ![在 AEM Assets 附加元件中搜尋資產](assets/assets-add-on-browse-assets.png)
 
-   A.選取您的AEM Assets存放庫B.使用搜尋列搜尋資產C.以遞增或遞減順序排序資產D.所選位置可用的資產和資料夾。 E.將變更儲存在AEM Assets中
-
-
-
-## 在Adobe Express編輯器中使用AEM Assets {#use-aem-assets-in-express}
-
-將AEM Assets附加元件新增至Adobe Express後，您就可以開始使用儲存在AEM Assets存放庫中的PNG和JPEG影像（在快速畫布中）。 導覽至適當的資料夾，然後按一下資產以將其納入畫布中。
-
-![包含來自Assets附加元件的資產](assets/aem-assets-add-on-include-assets.png)
+   A. 選擇您的 AEM Assets 存放庫 B. 使用搜尋列搜尋資產 C. 依升序或降序對資產進行排序 D. 所選位置的可用資產和資料夾。E. 儲存 AEM Assets 中的變更
 
 
-## 在AEM Assets中儲存Adobe Express專案 {#save-express-projects-in-assets}
 
-在Express畫布中加入適當的修改後，您就可以將畫布儲存到AEM Assets存放庫中。
+## 在 Adobe Express 編輯器中使用 AEM Assets {#use-aem-assets-in-express}
 
-1. 按一下 **[!UICONTROL 儲存]** 以開啟 **[!UICONTROL 上傳]** 對話方塊。
-1. 指定資產的名稱和格式。 您可以將畫布的內容儲存為PNG或JPEG格式型別。
+將 AEM Assets 附加元件新增至 Adobe Express 後，您可以開始在 Express 畫布內使用儲存在 AEM Assets 存放庫中的 PNG 和 JPEG 影像。導覽至適當的資料夾並按一下資源，即可將其包含在畫布中。
 
-1. 按一下旁邊的資料夾圖示 **[!UICONTROL 位置]** 欄位，導覽至您需要儲存資產的位置，然後按一下 **[!UICONTROL 選取]**. 資料夾的名稱會顯示在 **[!UICONTROL 位置]** 欄位。
+![包括資產附加元件中的資產](assets/aem-assets-add-on-include-assets.png)
 
-1. 按一下 **[!UICONTROL 上傳]** 將資產上傳至AEM Assets。
 
-   ![在AEM中儲存資產](assets/aem-assets-add-on-save.png)
+## 將 Adobe Express 專案儲存在 AEM Assets 中 {#save-express-projects-in-assets}
 
+將適當的修改加入 Express 畫布後，您可以將其儲存在 AEM Assets 存放庫中。
+
+1. 按一下「**[!UICONTROL 儲存]**」，開啟「**[!UICONTROL 上傳]**」對話框。
+1. 指定資產的名稱和格式。您可以將畫布內容儲存為 PNG 或 JPEG 格式類型。
+
+1. 按一下「**[!UICONTROL 位置]**」欄位旁邊的資料夾圖示，導覽至需要儲存資產的位置，然後按一下「**[!UICONTROL 選取]**」。資料夾名稱會顯示在「**[!UICONTROL 位置]**」欄位內。
+
+1. 按一下「**[!UICONTROL 上傳]**」，將資產上傳到 AEM Assets。
+
+   ![將資產儲存在 AEM 中](assets/aem-assets-add-on-save.png)
