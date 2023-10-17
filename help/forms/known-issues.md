@@ -1,6 +1,6 @@
 ---
 title: AEM Formsas a Cloud Service環境的已知問題和限制有哪些？
-description: ' [!DNL AEM Forms] as a Cloud Service 環境的已知問題和限制.'
+description: ' [!DNL AEM Forms] as a Cloud Service 環境的已知問題和限制。'
 contentOwner: khsingh
 role: User, Developer
 level: Intermediate

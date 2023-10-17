@@ -5,7 +5,7 @@ exl-id: b743f126-b34e-4f48-a3f0-5dbd4e1ac34e
 source-git-commit: 928a3f0d8ee98e211aa03ad3d0fd83b780e98bbc
 workflow-type: tm+mt
 source-wordcount: '861'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -52,8 +52,8 @@ Cloud Manager 是 AEM as a Cloud Service 的重要元件，可作為您團隊的
 | 產生個人存取權杖 | 存取 Git |  | x |  | x |
 | 建立 RDE | 建立一個快速開發的環境 | x |  |  | x |
 | 重設 RDE | 重設一個快速開發的環境 | x |  |  | x |
-| 建立/修改內容集 | 建立或修改內容複製的內容集 |  | x |  |  |
-| 開始/取消內容複製 | 開始或取消內容復製程式 |  | x |  |  |
+| 建立和/修改內容集 | 建立或修改內容副本的內容集 |  | x |  |  |
+| 開始/取消內容副本 | 開始或取消內容副本程序 |  | x |  |  |
 
 >[!NOTE]
 >

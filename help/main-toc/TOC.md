@@ -548,7 +548,7 @@ ht-degree: 99%
       + [更新 [!DNL Workfront for Experience Manager enhanced connector]](/help/assets/update-workfront-enhanced-connector.md)
 
    + 整合 Adobe Express{#integration-adobe-express}
-      + [適用於 Adob&#x200B;&#x200B;e Express 的 AEM Assets 附加元件](/help/assets/addon-adobe-express.md)
+      + [適用於 Adobe Express 的 AEM Assets 附加元件](/help/assets/addon-adobe-express.md)
 + Forms {#forms}
    + 概觀 {#forms-overview}
       + [簡介](/help/forms/home.md)
@@ -560,7 +560,7 @@ ht-degree: 99%
    + 設定和移轉{#setup-configure-migrate}
       + [Cloud Service 環境上線](/help/forms/setup-forms-cloud-service.md)
       + [設定本機開發環境](/help/forms/setup-local-development-environment.md)
-      + [在 AEM Forms as a Cloud Service 和本地開發環境中啟用最適化表單核心元件](/help/forms/enable-adaptive-forms-core-components.md)
+      + [在 AEM Forms as a Cloud Service 和本機開發環境中啟用最適化表單核心元件](/help/forms/enable-adaptive-forms-core-components.md)
       + [設定統一的儲存連接器](/help/forms/configure-unified-storage-connector.md)
       + [從  [!DNL AEM 6.5 Forms]  或更早版本移轉至  [!DNL AEM Forms] as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
       + [群組與權限](/help/forms/forms-groups-privileges-tasks.md)
@@ -601,7 +601,7 @@ ht-degree: 99%
             + [為最適化表單設定提交動作](/help/forms/configure-submit-actions-core-components.md)
             + [在最適化表單中使用 Google reCAPTCHA](/help/forms/captcha-adaptive-forms-core-components.md)
             + [在調適性表單中新增自訂的錯誤處理常式](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
-            + [為以核心元件為主的調適型表單新增地區設定](/help/forms/supporting-new-language-localization-core-components.md)
+            + [為以核心元件為主的最適化表單新增地區設定](/help/forms/supporting-new-language-localization-core-components.md)
       + Foundation 元件 {#authoring-adaptive-forms-foundation-components}
          + 將您的 PDF forms 轉換為最適化表單 {#afcs}
             + [自動表單轉換服務簡介](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html)
@@ -1048,4 +1048,4 @@ ht-degree: 99%
    + [Universal Editor 架構](/help/implementing/universal-editor/architecture.md)
    + [屬性和類型](/help/implementing/universal-editor/attributes-types.md)
    + [Universal Editor 驗證](/help/implementing/universal-editor/authentication.md)
-   + [使用 Universal Editor 進行本地 AEM 開發](/help/implementing/universal-editor/local-dev.md)
+   + [使用 Universal Editor 進行本機 AEM 開發](/help/implementing/universal-editor/local-dev.md)

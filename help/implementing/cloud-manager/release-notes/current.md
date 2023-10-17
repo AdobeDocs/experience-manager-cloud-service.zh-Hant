@@ -6,7 +6,7 @@ exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
 source-git-commit: b760b3a65d89b0b4f924379fc460015a58e2ed3e
 workflow-type: tm+mt
 source-wordcount: '521'
-ht-degree: 63%
+ht-degree: 80%
 
 ---
 
@@ -29,12 +29,12 @@ AEM as a Cloud Service 中的 Cloud Manager 版本 2023.10.0 發行日期是 202
    * 改良功能會因內容設定檔而異。
 * 自動 [開發環境的更新](/help/implementing/cloud-manager/manage-environments.md#updating-environments) 預設為新程式啟用，為您節省手動執行更新的時間。
    * 此更新將分階段推出。
-* 在2023年10月發行的Cloud Manager中，Java版本正在透過分階段推出進行更新。
-   * Java 8和11以及Maven的次要版本已更新，並將在未來2個月內分階段推出。 新版本包含多項安全性修正和錯誤修正。 新版本為：
-   * *Maven： 3.8.8*
-   * *Java 8版本： /usr/lib/jvm/jdk1.8.0_371*
-   * *Java 11版本： /usr/lib/jvm/jdk-11.0.20*
-   * [請參閱OpenJDK公告](https://openjdk.org/groups/vulnerability/advisories/) 瞭解這些JDK更新中的安全性和錯誤修正的詳細資訊。
+* 隨著 Cloud Manager 2023 年 10 月版發行，Java 版本將分階段推出更新。
+   * Java 8 和 11 以及 Maven 的次要版本已更新，將在未來 2 個月內分階段推出。新版本有多個安全性修正和錯誤修正。新版本為：
+   * *Maven：3.8.8*
+   * *Java 8 版：/usr/lib/jvm/jdk1.8.0_371*
+   * *Java 11 版：/usr/lib/jvm/jdk-11.0.20*
+   * [請參閱 OpenJDK 諮詢服務](https://openjdk.org/groups/vulnerability/advisories/)，了解這些 JDK 更新中的安全性和錯誤修正的詳細資訊。
 
 ## 早期採用計劃 {#early-adoption}
 
