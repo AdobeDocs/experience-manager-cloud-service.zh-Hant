@@ -2,9 +2,9 @@
 title: 搜尋最佳實務 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]
 description: 搜尋、尋找及擷取應用程式中資產的中繼資料的最佳做法。
 contentOwner: KK
-source-git-commit: 31526510cc32c9587e76da522d9377afd837d991
+source-git-commit: 2c9316431d588241b470c8146c9444dbfc0af5fd
 workflow-type: tm+mt
-source-wordcount: '2556'
+source-wordcount: '2544'
 ht-degree: 3%
 
 ---
@@ -299,13 +299,11 @@ The newly added assets are not indexed.
 
 <table>
     <tr>
-        <th> S.No.</th>
         <th> 參數 </th>
         <th> 管理員檢視 </th>
         <th> 資產檢視 </th>
     </tr>
     <tr>
-        <td> 1. </td>
         <td> 自訂Facet </td>
         <td> 您可以新增 <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/search-facets.html?lang=en">根據需求自訂搜尋Facet。</td>
         <td> 「資產」檢視部分支援自訂Facet。 支援的Facet包括：
@@ -319,37 +317,31 @@ The newly added assets are not indexed.
         </td>
     </tr>
     <tr>
-        <td> 2. </td>
         <td> 運算子 </td>
         <td> 支援AND、OR和NOT </td>
         <td> 不支援 </td>
     </tr>
     <tr>
-        <td> 3. </td>
         <td> 萬用字元 </td>
         <td> 支援問號(？) 和星號(*)。</td>
         <td> 不支援 </td>
     </tr>
     <tr>
-        <td> 4. </td>
         <td> 提升搜尋結果 </td>
         <td> 支援 </td>
         <td> 不支援 </td>
     </tr>
      <tr>
-        <td> 5. </td>
         <td> 一次清除所有篩選器 </td>
         <td> 不支援 </td>
         <td> 支援</td>
     </tr>
      <tr>
-        <td> 6. </td>
         <td> 檔案/資料夾/檔案與資料夾 </td>
         <td> 支援 </td>
         <td> 「檔案型別」底下有選取資料夾的選項 </td>
     </tr>
      <tr>
-        <td> 7. </td>
         <td> 資產狀態 </td>
         <td> 
             支援的選項包括：
@@ -374,7 +366,6 @@ The newly added assets are not indexed.
         </td>
     </tr>
      <tr>
-        <td> 8. </td>
         <td> 檔案型別 </td>
         <td>
         支援的選項包括：
@@ -398,7 +389,6 @@ The newly added assets are not indexed.
         </td>
     </tr>
      <tr>
-        <td> 9. </td>
         <td> 檔案大小 </td>
         <td>
         支援的選項包括：
@@ -410,7 +400,6 @@ The newly added assets are not indexed.
         <td> 不支援 </td>
     </tr>
      <tr>
-        <td> 10. </td>
         <td> 其他篩選器 </td>
         <td>
             <ul>
@@ -427,7 +416,6 @@ The newly added assets are not indexed.
         <td> 不支援 </td>
     </tr>
      <tr>
-        <td> 11. </td>
         <td> 尋找類似項目 </td>
         <td> 支援 </td>
         <td> 不支援 </td>
