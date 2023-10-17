@@ -1,11 +1,11 @@
 ---
-title: 如何為最適化表單設定提交動作？
+title: 如何為最適化表單設定提交動作?
 description: 最適化表單提供多個提交動作。提交動作會定義提交之後處理最適化表單的方式。您可以使用內建的提交動作或建立自己的動作。
 hide: true
 hidefromtoc: true
 exl-id: 495948e8-30a7-4e7c-952f-c71de15520f0
 source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3573'
 ht-degree: 100%
 
