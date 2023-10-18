@@ -2,10 +2,10 @@
 title: 設定含 WAF 規則的流量篩選規則
 description: 使用含 WAF 規則的流量篩選規則來篩選流量
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: 445134438c1a43276235b069ab44f99f7255aed1
+source-git-commit: 9345ec974c9fbd525b12b53d20d98809cd72cb04
 workflow-type: tm+mt
-source-wordcount: '2740'
-ht-degree: 98%
+source-wordcount: '3810'
+ht-degree: 71%
 
 ---
 
@@ -526,3 +526,296 @@ data:
 | *res_age* | 回應已經 (在所有的節點) 快取的時間量 (以秒為單位)。 |
 | *pop* | CDN 快取伺服器的資料中心。 |
 | *rules* | 任何符合的規則其名稱。<br><br>還會指出該相符程度是否導致封鎖。<br><br>例如，「`match=Enable-SQL-Injection-and-XSS-waf-rules-globally,waf=SQLI,action=blocked`」<br><br>如果沒有相符的規則，則為空白。 |
+
+## 控制面板工具教學課程  {#dashboard-tooling}
+
+Adobe提供一種機制，可將控制面板工具下載到您的電腦上，以擷取透過Cloud Manager下載的CDN記錄。 透過此工具，您可以分析流量以協助建立適當的流量篩選規則來宣告，包括WAF規則。 本節首先會提供一些熟悉開發環境中儀表板工具的指示，然後是有關如何利用該知識在生產環境中建立規則的指南。
+
+流量篩選規則早期採用者客戶應請求儀表板工具的壓縮檔，其中包括描述如何載入Docker容器和擷取CDN記錄的README檔案。
+
+
+### 熟悉儀表板工具 {#dashboard-getting-familiar}
+
+1. 建立與開發環境關聯的Cloud Manager非生產設定管道。 首先選取部署管道選項。 然後選取目標部署、設定、您的存放庫、Git分支，並將程式碼位置設為/config。
+
+   ![新增非生產管道選取部署](/help/security/assets/waf-select-pipeline1.png)
+
+   ![新增非生產管道選取目標](/help/security/assets/waf-select-pipeline2.png)
+
+
+1. 在您的工作區中，在根層級建立資料夾設定，並新增名為cdn.yaml的檔案，您可在其中宣告簡單規則，在記錄模式而非封鎖模式中設定。
+
+   ```
+   kind: "CDN"
+   version: "1"
+   metadata:
+     envTypes: ["dev"]
+   data:
+     trafficFilters:
+       rules:
+       # Log request on simple path
+       - name: log-rule-example
+         when:
+           allOf:
+             - reqProperty: tier
+               matches: "author|publish"
+             - reqProperty: path
+               equals: '/log/me'
+         action: log
+   ```
+
+1. 提交並推送您的變更，並使用設定管道部署您的設定。
+
+   ![執行設定管道](/help/security/assets/waf-run-pipeline.png)
+
+1. 部署設定後，請嘗試使用網頁瀏覽器或下列curl命令存取https://publish-pXXXXX-eYYYYYY.adobeaemcloud.com/log/me。 系統應顯示404錯誤頁面，因為該頁面不存在。
+
+   ```
+   curl -svo /dev/null https://publish-pXXXXX-eYYYYYY.adobeaemcloud.com/log/me
+   ```
+
+1. 從Cloud Manager下載CDN記錄並驗證規則是否如預期相符，且具有符合規則名稱的規則屬性：
+
+   ```
+   "rules": "match=log-rule-example"
+   ```
+
+   ![選取下載記錄](/help/security/assets/waf-download-logs1.png)
+
+   ![下載記錄檔](/help/security/assets/waf-download-logs2.png)
+
+1. 使用儀表板工具載入Docker影像，並按照README擷取CDN記錄。 如下列熒幕擷取畫面所示，選取正確的時段、正確的環境和正確的篩選器。
+
+   ![從儀表板選取時間](/help/security/assets/dashboard-select-time.png)
+
+   ![從儀表板選取環境](/help/security/assets/dashboard-select-env.png)
+
+1. 套用正確的篩選器後，您應該就能看到儀表板載入預期的資料。 在下方熒幕擷圖中，規則記錄規則範例在過去2小時內已由Ireland的同一IP使用網頁瀏覽器和curl觸發3次。
+
+   ![檢視開發儀表板資料](/help/security/assets/dashboard-see-data-logmode.png)
+   ![檢視開發儀表板資料Widget](/help/security/assets/dashboard-see-data-logmode2.png)
+
+1. 現在變更cdn.yaml以將規則置於封鎖模式，以確保頁面如預期般遭到封鎖。 然後像之前一樣認可、推送並觸發設定管道。
+
+   ```
+   kind: "CDN"
+   version: "1"
+   metadata:
+     envTypes: ["dev"]
+   data:
+     trafficFilters:
+       rules:
+       # Log request on simple path
+       - name: log-rule-example
+         when:
+           allOf:
+             - reqProperty: tier
+               matches: "author|publish"
+             - reqProperty: path
+               equals: '/log/me'
+         action: block
+   ```
+
+1. 部署設定後，請嘗試使用網頁瀏覽器或下列curl命令存取https://publish-pXXXXX-eYYYYYY.adobeaemcloud.com/log/me。 系統應該會顯示406錯誤頁面，指出已封鎖要求。
+
+   ```
+   curl -svo /dev/null https://publish-pXXXXX-eYYYYYY.adobeaemcloud.com/log/me
+   ```
+
+1. 請再次在Cloud Manager中下載您的CDN記錄檔（注意：新請求可能需要5分鐘的時間才會公開在您的CDN記錄檔中），然後像先前一樣在儀表板工具中匯入這些請求。 完成後，請重新整理您的儀表板。 如以下熒幕擷圖所示，對/log/me的請求會被我們的規則封鎖。
+
+   ![檢視生產儀表板資料](/help/security/assets/dashboard-see-data-blockmode.png)
+   ![檢視生產儀表板資料](/help/security/assets/dashboard-see-data-blockmode2.png)
+
+1. 如果您已啟用WAF流量篩選器（此功能為GA後，這將需要額外的授權），請在記錄模式下以WAF流量篩選器規則重複此動作，然後部署規則。
+
+   ```
+   kind: "CDN"
+   version: "1"
+   metadata:
+     envTypes: ["dev"]
+   data:
+     trafficFilters:
+       rules:
+         - name: log-waf-flags
+           when:
+             reqProperty: tier
+             matches: "author|publish"
+           action:
+             type: log
+             wafFlags:
+                 - SANS
+                 - SIGSCI-IP
+                 - TORNODE
+                 - NOUA
+                 - SCANNER
+                 - USERAGENT
+                 - PRIVATEFILE
+                 - ABNORMALPATH
+                 - TRAVERSAL
+                 - NULLBYTE
+                 - BACKDOOR
+                 - LOG4J-JNDI
+                 - SQLI
+                 - XSS
+                 - CODEINJECTION
+                 - CMDEXE
+                 - NO-CONTENT-TYPE
+                 - UTF8
+   ```
+
+1. 使用工具，例如 [nikto](https://github.com/sullo/nikto/tree/master) 以產生相符請求。 以下命令會在1分鐘內傳送約550個惡意請求。
+
+   ```
+   ./nikto.pl -useragent "MyAgent (Demo/1.0)" -D V -Tuning 9 -ssl -h https://publish-pXXXXX-eYYYYY.adobeaemcloud.com
+   ```
+
+1. 從Cloud Manager下載CDN記錄（請記住，這些記錄最多可能需要5分鐘才會顯示）並驗證是否同時顯示相符的已宣告規則和WAF標幟。
+
+   如您所見，WAF已將Nikto產生的數個請求標籤為惡意請求。 我們可以看到Nikto嘗試利用CMDEXE、SQLI和NULLBYTE漏洞。 如果您現在將動作從記錄變更為封鎖，並使用Nikto重新觸發掃描，則先前已標幟的所有要求這次都會遭到封鎖。
+
+   ![檢視WAF資料](/help/security/assets/dashboard-see-data-waf.png)
+
+
+   請注意，只要要求符合任何WAF標幟，這些WAF標幟就會出現，即使它們不是已宣告規則的一部分亦然；如此一來，您就始終會知道潛在的新惡意流量，因為您尚未宣告符合的規則。 例如：
+
+   ```
+   "rules": "match=log-waf-flags,waf=SQLI,action=blocked"
+   ```
+
+1. 在記錄模式下，使用使用速率限制的規則重複此步驟。 一如既往，認可、推送並觸發設定管道以套用您的設定。
+
+   ```
+   kind: "CDN"
+   version: "1"
+   metadata:
+     envTypes: ["dev"]
+   data:
+     trafficFilters:
+       rules:
+         - name: limit-requests-client-ip
+           when:
+             reqProperty: tier
+             matches: "author|publish"
+           rateLimit:
+             limit: 10
+             window: 1
+             penalty: 60
+             groupBy:
+               - reqProperty: clientIp
+           action: log
+   ```
+
+1. 使用工具，例如 [韋蓋塔](https://github.com/tsenart/vegeta) 以產生流量。
+
+   ```
+   echo "GET https://publish-pXXXXX-eYYYYYY.adobeaemcloud.com" | vegeta attack -duration=5s
+   ```
+
+1. 執行工具後，您可以下載CDN記錄並在控制面板中擷取記錄，以確認已觸發速率限制器規則
+
+   現在您已熟悉流量篩選規則的運作方式，您可以移至生產環境。
+
+### 將規則部署至生產環境 {#dashboard-prod-env}
+
+請務必先在記錄模式中宣告規則，以驗證沒有誤判，這表示會錯誤封鎖的合法流量。
+
+1. 建立與您的生產環境相關聯的生產設定管道。
+
+1. 將下列建議的規則複製到您的cdn.yaml。 您可能希望根據網站即時流量的獨特特性來修改規則。 認可、推播並觸發您的設定管道。 確定規則處於記錄模式。
+
+```
+kind: "CDN"
+version: "1"
+metadata:
+  envTypes: ["dev"]
+data:
+  trafficFilters:
+    rules:
+    #  Block client for 5m when it exceeds 100 req/sec on a time window of 1sec
+    - name: limit-requests-client-ip
+      when:
+        reqProperty: path
+        like: '*'
+      rateLimit:
+        limit: 100
+        window: 1
+        penalty: 300
+        groupBy:
+          - reqProperty: clientIp
+      action: block
+      # Block requests coming from OFAC countries
+      - name: block-ofac-countries
+        when:
+          allOf:
+            - { reqProperty: tier, equals: publish }
+            - reqProperty: clientCountry
+              in:
+                - SY
+                - BY
+                - MM
+                - KP
+                - IQ
+                - CD
+                - SD
+                - IR
+                - LR
+                - ZW
+                - CU
+                - CI
+        action: block
+        # Enable recommended WAF protections (only works if WAF is enabled for your environment)
+        - name: block-waf-flags-globally
+          when:
+            reqProperty: tier
+            matches: "author|publish"
+          action:
+            type: block
+            wafFlags:
+              - SANS
+              - SIGSCI-IP
+              - TORNODE
+              - NOUA
+              - SCANNER
+              - USERAGENT
+              - PRIVATEFILE
+              - ABNORMALPATH
+              - TRAVERSAL
+              - NULLBYTE
+              - BACKDOOR
+              - LOG4J-JNDI
+              - SQLI
+              - XSS
+              - CODEINJECTION
+              - CMDEXE
+              - NO-CONTENT-TYPE
+              - UTF8
+        # Disable protection against CMDEXE on /bin
+        - name: allow-cdmexe-on-root-bin
+          when:
+            allOf:
+              - reqProperty: tier
+                matches: "author|publish"
+              - reqProperty: path
+                matches: "^/bin/.*"
+          action:
+            type: allow
+            wafFlags:
+              - CMDEXE
+```
+
+1. 新增任何其他規則以封鎖您可能知道的惡意流量。 例如，某些攻擊您網站的IP。
+
+1. 幾分鐘、幾小時或幾天後（視您網站的流量而定），從Cloud Manager下載CDN記錄並使用儀表板分析它們。
+
+1. 以下是一些考量事項：
+   1. 流量比對宣告規則會出現在圖表和請求記錄中，以便您輕鬆檢查是否觸發了宣告規則。
+   1. 流量符合WAF旗標會顯示在圖表和請求記錄中，即使您未將其記錄在規則中也是如此。 如此一來，您就能隨時掌握潛在的新惡意流量，並視需要建立新規則。 檢視未反映在宣告規則中的WAF標幟，並考慮宣告它們。
+   1. 如需比對規則，請檢查請求記錄檔中是否有誤判，並檢視您是否可從規則中篩選出這些誤判。 例如，可能只有某些路徑是誤判。
+
+1. 設定適當的規則以封鎖模式，並考慮新增其他規則。 當您進一步分析並帶來更多流量時，部分規則可能仍會維持在記錄模式。
+
+1. 重新部署設定
+
+1. 反複分析、經常分析控制面板。
+
