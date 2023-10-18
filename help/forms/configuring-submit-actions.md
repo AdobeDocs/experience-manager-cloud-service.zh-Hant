@@ -1,10 +1,10 @@
 ---
-title: 如何為最適化表單設定提交動作？
+title: 如何為最適化表單設定提交動作?
 description: 最適化表單提供多個提交動作。提交動作會定義提交之後處理最適化表單的方式。您可以使用內建的提交動作或建立自己的動作。
 exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
-source-git-commit: 6d949d9f31cc13b30f8ba06058911ddfe8e817af
+source-git-commit: ddc7ddbcd1761b4320e1c7a30a015d844ef3e0c0
 workflow-type: tm+mt
-source-wordcount: '3395'
+source-wordcount: '3403'
 ht-degree: 87%
 
 ---
@@ -404,3 +404,7 @@ For more information about the Forms Portal and Submit Action, see [Drafts and s
 您使用符合結構描述 (其資料不含 `<afData>`、`<afBoundData>` 和 `</afUnboundData>` 標記) 的 XML 或 JSON 資料，預先填入表單資料模型或以結構描述為主的最適化表單的綱要時，最適化表單的未繫結欄位資料會遺失。該結構描述可以是 XML 結構描述、JSON 結構描述或表單資料模型。未繫結欄位是最適化表單欄位，但沒有 `bindref` 屬性。
 
 <!-- For more information, see [Customizing Pages shown by the Error Handler](/help/sites-developing/customizing-errorhandler-pages.md). -->
+
+>[!MORELIKETHIS]
+>
+>* [建立最適化Forms的自訂提交動作](/help/forms/custom-submit-action-form.md)

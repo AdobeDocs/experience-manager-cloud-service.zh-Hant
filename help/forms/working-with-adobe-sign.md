@@ -6,7 +6,7 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: cde9523e-5409-4edd-af0f-2c2575cc22ea
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: 867b87e0b22fdc4f0466b517e8a04c18fb2dc860
 workflow-type: tm+mt
 source-wordcount: '3172'
 ht-degree: 3%
@@ -361,7 +361,12 @@ Adobe Sign合約ID (agreementId)包含在最適化表單的提交資料中。 �
 
 * 使用個別的電子郵件地址進行設定 [!DNL Adobe Sign] 第一個或單一收件者的帳戶和。 第一個收件者或唯一收件者（如果有單一收件者）的電子郵件地址不能與 [!DNL Adobe Sign] 用來設定AEMCloud Service的帳戶。
 
-## 相關文章 {#related-articles}
+>[!MORELIKETHIS]
+>
+>* [ [!DNL Adobe Sign] 與  整合 [!DNL AEM Forms]](adobe-sign-integration-adaptive-forms.md)
+>* [使用的最佳實務 [!DNL Adobe Sign] 使用最適化Forms](https://medium.com/adobetech/using-adobe-sign-to-e-sign-an-adaptive-form-heres-the-best-way-to-do-it-dc3e15f9b684)
 
-* [整合 [!DNL Adobe Sign] 替換為 [!DNL AEM Forms]](adobe-sign-integration-adaptive-forms.md)
-* [使用的最佳實務 [!DNL Adobe Sign] 使用最適化Forms](https://medium.com/adobetech/using-adobe-sign-to-e-sign-an-adaptive-form-heres-the-best-way-to-do-it-dc3e15f9b684)
+
+## 另請參閱 {#see-also}
+
+{{see-also}}

@@ -5,10 +5,10 @@ topic-tags: author
 keywords: 新增最適化表單片段、最適化表單片段、建立表單片段、新增片段至最適化表單、管理片段
 feature: Adaptive Forms
 exl-id: 3a9ad1b7-2f6f-4ca9-a1c9-549c4238c59e
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '1747'
-ht-degree: 4%
+source-wordcount: '1716'
+ht-degree: 3%
 
 ---
 
@@ -190,8 +190,8 @@ Perform the following steps to show complete fragments in forms:
 您可以使用參考最適化表單片段來建立您的表單。
 <!-- For more information, see [Reference Fragments](../../forms/using/reference-adaptive-form-fragments.md). -->
 
+
+
 ## 另請參閱 {#see-also}
 
-* [新增最適化表單至 AEM Sites 頁面或體驗片段](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
-* [在最適化Forms中建立或新增主題](/help/forms/using-themes-in-core-components.md)
-* [根據核心元件在AEM最適化表單中使用Google reCAPTCHA](/help/forms/captcha-adaptive-forms-core-components.md)
+{{see-also}}

@@ -7,13 +7,13 @@ role: User, Developer
 level: Beginner
 hide: true
 hidefromtoc: true
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: ht
-source-wordcount: '2780'
+exl-id: 6f1c3fe7-b61e-47ce-b565-15b4904db092
+source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
+workflow-type: tm+mt
+source-wordcount: '2748'
 ht-degree: 100%
 
 ---
-
 
 # 建立最適化表單 {#creating-an-adaptive-form}
 
@@ -271,7 +271,4 @@ Do the following to use XML or JSON schema as form model for an Adaptive Form:
 
 >[!MORELIKETHIS]
 >
->* [在 AEM Sites 頁面或體驗片段中建立最適化表單](create-or-add-an-adaptive-form-to-aem-sites-page.md)
->* [建立自訂最適化表單主題](using-themes-in-core-components.md)
->* [設定表單的提交動作](configuring-submit-actions.md)
->* [可用的最適化表單核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html#components)
+>* [建立最適化表單](/help/forms/creating-adaptive-form-core-components.md)

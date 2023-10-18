@@ -3,9 +3,9 @@ title: 如何重複使用最適化表單的中繼資料屬性？
 description: 探索以有效率地重新利用現有的最適化表單來建立新表單。
 seo-description: You can reuse an existing Adaptive Form to create new Adaptive Forms.
 exl-id: fb8cf3a9-fd19-46bf-b40e-2af76ca68b9f
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '615'
+source-wordcount: '617'
 ht-degree: 12%
 
 ---
@@ -71,3 +71,8 @@ ht-degree: 12%
 1. **重新發佈:**
 
    貼上的資產與複製的資產不同。 您可以將其發佈為新資產，以供一般使用者使用。 若要瞭解如何發佈資產， <!-- see [Publishing and unpublishing forms](publishing-unpublishing-forms.md) -->
+
+
+## 另請參閱 {#see-also}
+
+{{see-also}}

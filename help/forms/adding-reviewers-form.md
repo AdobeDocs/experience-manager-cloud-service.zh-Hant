@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 71d1aa10-d191-49bc-a50f-1098324f1cfe
 docset: aem65
-source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '485'
+source-wordcount: '499'
 ht-degree: 1%
 
 ---
@@ -75,3 +75,7 @@ ht-degree: 1%
 >
 >確定所有使用者都復寫為檢閱遠端實作中使用者群組的成員。
 
+>[!MORELIKETHIS]
+>
+>* [建立和管理表單的稽核](/help/forms/create-reviews-forms.md)
+>* [建立和管理最適化表單的稽核](/help/forms/review-adaptiveforms-in-sites-page.md)

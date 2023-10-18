@@ -5,7 +5,7 @@ contentOwner: Khushwant Singh
 docset: CloudService
 role: Developer
 exl-id: 198f6f76-1134-4818-89a0-6ddc84ff956c
-source-git-commit: fb3d3732f698015151d9703bfddfe94b531d31b6
+source-git-commit: a942e87a33775851631a1fe123fa3e8d2686bb30
 workflow-type: tm+mt
 source-wordcount: '982'
 ht-degree: 98%
@@ -162,3 +162,11 @@ ProxyPassReverse /content https://<AEM_Instance>/content
 1. 在 AEM 發佈執行個體上，前往 AEM Web 主控台的 Configuration Manager：`https://'[server]:[port]'/system/console/configMgr`。
 1. 找到並開啟 **Apache Sling 查閱者篩選器**&#x200B;設定。
 1. 在允許的主機欄位中，指定網頁所在的網域。這樣可讓主機向 AEM 伺服器發送 POST 請求。您還可以使用規則運算式來指定一系列的外部應用程式網域。
+
+<!--
+
+>[!MORELIKETHIS]
+>
+>* [Embed adaptive form based on core components to AEM sites](/help/forms/embed-adaptive-form-core-components-aem-sites.md)
+
+-->

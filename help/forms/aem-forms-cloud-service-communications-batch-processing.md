@@ -2,9 +2,9 @@
 title: 輕鬆建立大量PDF — 掌握批次處理的藝術 — 您製作數百萬PDF檔案的自助指南！
 description: 如何建立品牌導向和個人化的通訊？
 exl-id: 542c8480-c1a7-492e-9265-11cb0288ce98
-source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
+source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
 workflow-type: tm+mt
-source-wordcount: '1705'
+source-wordcount: '1735'
 ht-degree: 2%
 
 ---
@@ -171,3 +171,10 @@ ht-degree: 2%
 ## API參考檔案
 
 API參考檔案提供API提供的所有引數、驗證方法和各種服務的詳細資訊。 API參考檔案提供.yaml格式。 您可以下載 [批次API](assets/batch-api.yaml) 將其上傳至Postman以檢查API的功能。
+
+>[!MORELIKETHIS]
+>
+>* [AEM Formsas a Cloud Service通訊簡介](/help/forms/aem-forms-cloud-service-communications-introduction.md)
+>* [最適化Forms的AEM Formsas a Cloud Service架構和通訊API](/help/forms/aem-forms-cloud-service-architecture.md)
+>* [通訊處理 — 同步API](/help/forms/aem-forms-cloud-service-communications.md)
+>* [通訊處理 — 批次API](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)

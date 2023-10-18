@@ -5,10 +5,10 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 6b3f9131-db6b-451b-a932-b57d809222eb
-source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
-workflow-type: ht
-source-wordcount: '547'
-ht-degree: 100%
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+workflow-type: tm+mt
+source-wordcount: '549'
+ht-degree: 99%
 
 ---
 
@@ -51,3 +51,8 @@ ht-degree: 100%
 1. 完成其餘步驟即可建立表單範本。<!-- For more information, see [Creating a custom Adaptive Form template](custom-adaptive-forms-templates.md). -->
 
 在表單範本中定義表單序列後，您可以將它用來建立具有定義為序列之基本結構的表單。不過，您隨時都可以自訂適合您要求的表單。
+
+
+## 另請參閱 {#see-also}
+
+{{see-also}}

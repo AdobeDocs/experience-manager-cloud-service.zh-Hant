@@ -2,9 +2,9 @@
 title: 如何將註腳新增至最適化表單？
 description: 在最適化表單中的註腳使用RTF編輯器(RTE) 。
 exl-id: f04dae84-daab-42f8-876f-02fe426f62be
-source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '441'
+source-wordcount: '443'
 ht-degree: 12%
 
 ---
@@ -55,3 +55,8 @@ ht-degree: 12%
 1. 儲存屬性。
 
 在執行階段，數字會以上標的形式顯示在文字上，其對應的說明會顯示在 **[!UICONTROL 註腳]** 元件在位置 [!UICONTROL 註腳預留位置] 會放置在最適化表單上。 您可以按一下「 」上對應的編號，直接導覽至註腳說明。 [!UICONTROL 註腳].
+
+
+## 另請參閱 {#see-also}
+
+{{see-also}}

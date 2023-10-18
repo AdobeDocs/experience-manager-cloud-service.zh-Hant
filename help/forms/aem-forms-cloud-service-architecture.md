@@ -2,9 +2,9 @@
 title: 最適化Forms的AEM Formsas a Cloud Service架構和通訊API
 description: 瞭解 [!DNL AEM Forms] as a Cloud Service瞭解平台的可擴充性、可復原性和效能。
 exl-id: 9d677bee-50ca-460e-b503-6b7799900735
-source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '1071'
+source-wordcount: '1093'
 ht-degree: 5%
 
 ---
@@ -193,3 +193,10 @@ Set up your development environment, [Configure your CI/CD Pipeline](https://exp
 ## 偵錯 {#debugging}
 
 AEMas a Cloud Service在自助式、可擴充的雲端基礎結構上執行。 它需要AEM開發人員瞭解並偵錯AEMas a Cloud Service的各個層面，從建置和部署，到取得執行AEM應用程式的詳細資訊。 如需詳細資訊，請參閱 [偵錯AEMas a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/overview.html).
+
+
+>[!MORELIKETHIS]
+>
+>* [AEM Formsas a Cloud Service通訊簡介](/help/forms/aem-forms-cloud-service-communications-introduction.md)
+>* [AEM Formsas a Cloud Service通訊批次處理](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
+>* [通訊處理 — 同步API](/help/forms/aem-forms-cloud-service-communications.md)

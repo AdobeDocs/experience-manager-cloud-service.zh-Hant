@@ -4,10 +4,10 @@ description: 使用Google reCAPTCHA服務輕鬆增強表單安全性。 內的�
 topic-tags: Adaptive Forms, author
 keywords: Google reCAPTCHA服務，最適化Forms， CAPTCHA挑戰，機器人預防，核心元件，表單提交安全性，表單垃圾郵件預防
 exl-id: d116f979-efb6-4fac-8202-89afd1037b2c
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '947'
-ht-degree: 7%
+source-wordcount: '919'
+ht-degree: 4%
 
 ---
 
@@ -106,9 +106,6 @@ Tap the **[!UICONTROL Currency Value]** field in the form and create the followi
 **問：我可以在最適化表單中使用多個驗證碼元件嗎？**
 **Ans：** 不支援在最適化表單中使用多個驗證碼元件。 此外，不建議在標籤為延遲載入的片段或面板中使用驗證碼元件。
 
-## 另請參閱
+## 另請參閱 {#see-also}
 
-* [建立最適化表單](/help/forms/creating-adaptive-form-core-components.md)
-* [建立調適性表單片段](/help/forms/adaptive-form-fragments-core-components.md)
-* [新增最適化表單至 AEM Sites 頁面或體驗片段](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
-* [在最適化表單中使用 Google reCAPTCHA](/help/forms/captcha-adaptive-forms-core-components.md)
+{{see-also}}

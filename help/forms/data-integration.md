@@ -2,7 +2,7 @@
 title: 如何將資料庫連線至 [!DNL AEM Forms] as a Cloud Service？
 description: 從調適型表單或AEM工作流程擷取資料並儲存至RESTful Web服務、以SOAP為基礎的Web服務和OData服務。
 exl-id: 9d146275-de0a-4861-b060-d205ed6305f3
-source-git-commit: defeee2fee42c6274c71438d6f9fde6e49a05081
+source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
 workflow-type: tm+mt
 source-wordcount: '555'
 ht-degree: 2%

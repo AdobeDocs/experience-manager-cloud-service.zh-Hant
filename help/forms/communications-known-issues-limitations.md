@@ -2,9 +2,9 @@
 title: AEM Forms中有哪些考量事項、已知問題和最佳實務？
 description: AEM Forms Communication API的考量事項已知問題和最佳實務。
 exl-id: e95615dd-e494-40cd-9cdf-6e9761ca3b3e
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
 workflow-type: tm+mt
-source-wordcount: '1718'
+source-wordcount: '1748'
 ht-degree: 0%
 
 ---
@@ -203,3 +203,11 @@ Microsoft Azure儲存體帳戶獨立於Experience Manager FormsCloud Service授�
 
 **我可以同時執行多個批次作業嗎？**
 可以，您可以同時執行多個批次作業。 每次作業一律使用不同的來源和目的地資料夾，以避免任何衝突。
+
+>[!MORELIKETHIS]
+>
+>* [AEM Formsas a Cloud Service通訊簡介](/help/forms/aem-forms-cloud-service-communications-introduction.md)
+>* [最適化Forms的AEM Formsas a Cloud Service架構和通訊API](/help/forms/aem-forms-cloud-service-architecture.md)
+>* [通訊處理 — 同步API](/help/forms/aem-forms-cloud-service-communications.md)
+>* [通訊處理 — 批次API](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
+

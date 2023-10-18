@@ -3,7 +3,7 @@ title: 如何在最適化表單核心元件中建立可重複的面板？
 description: 瞭解如何在最適化表單中建立一個或多個可重複的區段。
 role: Architect, Developer, Admin, User
 exl-id: 02521bf3-83c1-40a0-8fe6-23af240727e9
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: d0e5a63896ccbeb32b565680276b461fbbf19e9c
 workflow-type: tm+mt
 source-wordcount: '1390'
 ht-degree: 6%
@@ -225,9 +225,14 @@ A panel has various layouts options. The Layout for accordian design option has 
 ```
 
 
-## 相關的文章
+## 另請參閱 {#see-also}
 
-* [建立最適化表單](creating-adaptive-form-core-components.md)
-* [為您的表單建立樣式或主題](using-themes-in-core-components.md)
-* [使用規則編輯器將動態行為新增至表單](rule-editor.md)
-* [設定不同熒幕大小和裝置型別的表單版面](/help/sites-cloud/authoring/features/responsive-layout.md)
+{{see-also}}
+
+
+>[!MORELIKETHIS]
+>
+>* [建立最適化表單](creating-adaptive-form-core-components.md)
+>* [為您的表單建立樣式或主題](using-themes-in-core-components.md)
+>* [使用規則編輯器將動態行為新增至表單](rule-editor.md)
+>* [設定不同熒幕大小和裝置型別的表單版面](/help/sites-cloud/authoring/features/responsive-layout.md)

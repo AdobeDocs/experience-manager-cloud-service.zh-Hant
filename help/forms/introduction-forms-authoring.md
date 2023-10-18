@@ -8,10 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: ba70921e-db7e-43f6-902c-1065d3b13aef
 docset: aem65
 exl-id: 16f86dae-86fb-481b-8978-b8898705ed7e
-source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
-workflow-type: ht
-source-wordcount: '2482'
-ht-degree: 100%
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+workflow-type: tm+mt
+source-wordcount: '2484'
+ht-degree: 99%
 
 ---
 
@@ -362,3 +362,7 @@ J. **其他**：提供更多選項搭配所選元件使用。
 * **工具列：**&#x200B;最適化表單容器具有關聯的全域工具列，該工具列對於表單來說是全域的。可以使用編輯列中的&#x200B;**[!UICONTROL 新增工具列]**&#x200B;動作來新增此工具列，如此作者可新增動作，例如提交、儲存、重設等。
 
 * **資產：**&#x200B;此節點包含其他資訊用於編寫表單。例如，表單模型詳細資料、本地化詳細資料等。
+
+## 另請參閱 {#see-also}
+
+{{see-also}}

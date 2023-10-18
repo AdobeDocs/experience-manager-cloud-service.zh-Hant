@@ -5,10 +5,10 @@ feature: Adaptive Forms
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 5b8ad9a8-77d4-4234-a4d7-c8964b975e96
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '952'
-ht-degree: 6%
+source-wordcount: '959'
+ht-degree: 7%
 
 ---
 
@@ -298,3 +298,7 @@ A `bindRef` 是調適型表單元件與結構描述元素或屬性之間的連�
 **我為何無法為可重複的子表單（minOccours或maxOccurs值大於1）拖曳子表單的個別元素（由任何複雜型別產生的結構）？**
 
 在可重複的子表單中，您必須使用「完成」子表單。 如果您只想使用選擇性欄位，請使用整個結構並刪除不需要的結構。
+
+>[!MORELIKETHIS]
+>
+>* [為最適化表單設計 JSON 綱要](/help/forms/adaptive-form-json-schema-form-model.md)

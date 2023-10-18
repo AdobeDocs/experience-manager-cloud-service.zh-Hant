@@ -2,9 +2,9 @@
 title: 如何產生AEM Forms的記錄檔案(DoR)？
 description: 瞭解如何產生最適化Forms的記錄檔案(DoR)範本。
 exl-id: 16d07932-3308-4b62-8fa4-88c4e42ca7b6
-source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '4140'
+source-wordcount: '4142'
 ht-degree: 4%
 
 ---
@@ -503,3 +503,8 @@ XCI檔案可協助您設定檔案的各種屬性。 Formsas a Cloud Service有�
 1. 開啟Cloud Service SDK設定管理員。 預設URL為： <http://localhost:4502/system/console/configMgr>.
 1. 找到並開啟 **[!UICONTROL 最適化Forms和互動式通訊Web Channel]** 設定。
 1. 指定XCI檔案的路徑並按一下 **[!UICONTROL 儲存]**.
+
+
+## 另請參閱 {#see-also}
+
+{{see-also}}

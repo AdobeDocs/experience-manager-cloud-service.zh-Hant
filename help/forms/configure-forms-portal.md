@@ -2,9 +2,9 @@
 title: 如何在Experience Manager Sites頁面上建立Forms入口網站？
 description: 瞭解如何在AEM Sites頁面上建立Forms入口網站，並使用現成可用的核心元件。
 exl-id: 13cfe3ba-2e85-46bf-a029-2673de69c626
-source-git-commit: defeee2fee42c6274c71438d6f9fde6e49a05081
+source-git-commit: e48272f4d36c608d516c7a947fc16cff3a3b408e
 workflow-type: tm+mt
-source-wordcount: '1839'
+source-wordcount: '1841'
 ht-degree: 4%
 
 ---
@@ -182,3 +182,19 @@ AEM Forms提供下列立即可用的入口網站元件：
 1. 選取 **[!UICONTROL 啟用]** 核取方塊以啟用表單的自動儲存。 您可以設定下列專案：
 * 根據預設， [!UICONTROL 最適化表單事件] 設為「true」，表示表單會在每個事件後自動儲存。
 * 在 [!UICONTROL 觸發]，設定以根據事件發生或特定時間間隔後觸發自動儲存。
+
+## 另請參閱 {#see-also}
+
+{{see-also}}
+
+
+
+<!--
+
+>[!MORELIKETHIS]
+>
+>* [Configure data sources for AEM Forms](/help/forms/configure-data-sources.md)
+>* [Configure Azure storage for AEM Forms](/help/forms/configure-azure-storage.md)
+>* [Integrate Microsoft Dynamics 365 and Salesforce with Adaptive Forms](/help/forms/configure-msdynamics-salesforce.md)
+
+-->

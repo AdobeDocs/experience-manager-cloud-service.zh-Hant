@@ -2,9 +2,9 @@
 title: 如何取得AEM表單的參考主題和範本？
 description: AEM Forms提供範例調適型表單主題、範本和表單資料模型，以協助您快速建立表單。
 exl-id: 81588759-22da-4123-92fe-5ca97e97f1e4
-source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '839'
+source-wordcount: '841'
 ht-degree: 8%
 
 ---
@@ -120,3 +120,8 @@ FSI主題強調表單的極簡和功能外觀。 當您將FSI主題套用至表�
 * Salesforce
 
 如需使用這些模型的詳細資訊，請參閱 [設定Microsoft Dynamics 365和Salesforce雲端服務](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-msdynamics-salesforce.html?lang=en#configure-dynamics-cloud-service)
+
+
+## 另請參閱 {#see-also}
+
+{{see-also}}

@@ -2,9 +2,9 @@
 title: 如何根據基礎元件為最適化表單新增對新區域設定的支援？
 description: 對於最適化Forms，除了現成可用的語言之外，您還可以新增更多語言的區域設定。
 exl-id: 4c7d6caa-1adb-4663-933f-b09129b9baef
-source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '1264'
+source-wordcount: '1266'
 ht-degree: 7%
 
 ---
@@ -157,3 +157,8 @@ AEM FormsForms目前支援英文(en)、西班牙文(es)、法文(fr)、義大利
 * 在現有的最適化表單中新增欄位時：
    * **針對機器翻譯**：重新建立字典並執行翻譯專案。 建立翻譯專案後新增至最適化表單的欄位仍維持未翻譯狀態。
    * **針對人工翻譯**：透過匯出字典 `[server:port]/libs/cq/i18n/gui/translator.html`. 更新新新增欄位的字典並上傳。
+
+
+## 另請參閱 {#see-also}
+
+{{see-also}}

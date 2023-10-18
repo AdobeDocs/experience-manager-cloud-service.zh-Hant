@@ -2,9 +2,9 @@
 title: 如何產生最適化Forms的記錄檔案？
 description: 瞭解如何為最適化Forms核心元件的記錄檔案(DoR)產生範本。
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
-source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '3107'
+source-wordcount: '3109'
 ht-degree: 2%
 
 ---
@@ -404,4 +404,14 @@ When you select a form model, configure Document of Record using options availab
 **表單層級設定**
 
 * **包括DoR中未繫結欄位：** 設定屬性時，記錄檔案中會包含來自結構描述型最適化表單的未繫結欄位。 預設為true。
-<!-- **Exclude fields from DoR if hidden:** Set the property to exclude the hidden fields from Document of Record at form submission. When you enable [Revalidate on server](/help/forms/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form), the server recomputes the hidden fields before excluding those fields from the Document of Record.->>
+
+## 另請參閱 {#see-also}
+
+{{see-also}}
+
+
+<!-- 
+
+**Exclude fields from DoR if hidden:** Set the property to exclude the hidden fields from Document of Record at form submission. When you enable [Revalidate on server](/help/forms/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form), the server recomputes the hidden fields before excluding those fields from the Document of Record.
+
+!->>

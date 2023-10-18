@@ -2,9 +2,9 @@
 title: 如何建立最適化表單範本？
 description: 使用範本編輯器建立最適化表單範本，以定義基本結構和初始內容。
 exl-id: a882cba2-c621-4ff7-a972-c504641b5639
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '2096'
+source-wordcount: '2098'
 ht-degree: 4%
 
 ---
@@ -223,3 +223,8 @@ Perform the following steps to show and hide templates:
 * 在範本編輯器中修改表單的屬性時，請勿使用BindReference屬性。
 * 如果您想要新增中斷點，請在編寫最適化表單範本時建立中斷點。
 如需中斷點的詳細資訊，請參閱 [回應式版面](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/responsive-layout.html#authoring).
+
+
+## 另請參閱 {#see-also}
+
+{{see-also}}

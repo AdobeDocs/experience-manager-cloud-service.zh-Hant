@@ -2,9 +2,9 @@
 title: 如何為最適化Forms設定現成的Microsoft Dynamics 365和Salesforce表單資料模型？
 description: 瞭解如何將Microsoft Dynamics 365和Salesforce與最適化Forms整合。
 exl-id: 2a43b2db-2dfb-4c79-88be-ea770b44dac1
-source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
+source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
 workflow-type: tm+mt
-source-wordcount: '960'
+source-wordcount: '980'
 ht-degree: 2%
 
 ---
@@ -100,3 +100,9 @@ A [!DNL Microsoft® Dynamics 365] 表單資料模型可立即在 [!DNL AEM Forms
 若要存取表單資料模型，請導覽至 **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL 資料整合]**. 可用資料夾清單包括一個具有指定標題的資料夾 `DappTitle`  當 [產生AEM原型專案](setup-local-development-environment.md#forms-cloud-service-local-development-environment). 點選資料夾名稱，選取 **[!UICONTROL Microsoft® Dynamics 365資料模型]**，然後點選「編輯」 ![編輯](assets/edit.png) 圖示以檢視表單資料模型。
 
 設定後 [[!DNL Microsoft® Dynamics 365] 雲端設定服務](#configure-dynamics-cloud-service)，您就可以直接整合最適化表單與最適化表單 [!DNL Microsoft® Dynamics 365] 資料模型。
+
+>[!MORELIKETHIS]
+>
+* [設定AEM Forms的資料來源](/help/forms/configure-data-sources.md)
+* [設定AEM Forms的Azure儲存體](/help/forms/configure-azure-storage.md)
+[將Forms入口網站新增至AEM Sites頁面](/help/forms/configure-forms-portal.md)

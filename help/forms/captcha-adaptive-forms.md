@@ -1,14 +1,14 @@
 ---
 title: 如何在最適化Forms中使用驗證碼？
-description: 瞭解如何為最適化表單設定AEM驗證碼或Google reCAPTCHA服務。
+description: 瞭解如何為最適化表單設定或Google reCAPTCHA服務。
 uuid: 0e11e98a-12ac-484c-b77f-88ebdf0f40e5
 contentOwner: vishgupt
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: adaptive_forms, author
 exl-id: 3fdbe5a3-5c3c-474d-b701-e0182da4191a
-source-git-commit: defeee2fee42c6274c71438d6f9fde6e49a05081
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '1935'
+source-wordcount: '1945'
 ht-degree: 7%
 
 ---
@@ -342,3 +342,12 @@ reCAPTCHA服務使用 `https://www.recaptcha.net/` 作為預設網域。 您可�
 ```
 
 若要設定值，請[使用 AEM SDK 產生 OSGi 設定](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=zh-Hant#generating-osgi-configurations-using-the-aem-sdk-quickstart)，並[將設定部署至](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=zh-Hant#deployment-process)您的 Cloud Service 執行個體。
+
+## 另請參閱 {#see-also}
+
+{{see-also}}
+
+
+>[!MORELIKETHIS]
+>
+>* [最適化Forms的參考主題、範本和表單資料模型](/help/forms/reference-themes-templates-data-models.md)

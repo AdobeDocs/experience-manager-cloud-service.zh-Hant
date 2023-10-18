@@ -2,9 +2,9 @@
 title: 如何管理AEM Forms的中繼資料？
 description: 中繼資料可讓您更輕鬆地分類及組織資產，並幫助尋找特定資產的使用者。
 exl-id: 8527246a-37f0-4d43-a49e-1c76c265514e
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '1741'
+source-wordcount: '1743'
 ht-degree: 6%
 
 ---
@@ -307,3 +307,8 @@ ht-degree: 6%
    您已成功新增自訂中繼資料屬性。
 
 中的所有最適化Forms [!DNL AEM Forms] 現在包含此額外的中繼資料屬性。 您可以從屬性頁面進行編輯。
+
+
+## 另請參閱 {#see-also}
+
+{{see-also}}

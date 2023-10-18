@@ -3,9 +3,9 @@ title: 如何翻譯以核心元件為基礎的最適化表單？
 description: 瞭解如何在AEM Forms中建立表單資料模型、使用範例資料和服務測試模型，並為模型設定各種選項。
 feature: Adaptive Forms
 exl-id: ad46bf0f-e6ec-4c52-9695-5768a9968e16
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '894'
+source-wordcount: '896'
 ht-degree: 4%
 
 ---
@@ -83,3 +83,7 @@ ht-degree: 4%
    ![匯入翻譯檔案](/help/forms/assets/adaptive-forms-core-components-start-translation-import.png)
 
 1. 若要預覽本地化表單，請在AEM Forms UI上選取本地化表單。 按一下 **[!UICONTROL 預覽]** >**[!UICONTROL 以HTML預覽]**. 新增「 」後，重新開啟表單 `afAcceptLang=<locale code>` 至表單的URL。 例如，新增 `afAcceptLang=de`以開啟德文版的表單。
+
+## 另請參閱 {#see-also}
+
+{{see-also}}

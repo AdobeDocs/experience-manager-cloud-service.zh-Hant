@@ -2,9 +2,9 @@
 title: 如何建立並使用主題來設定最適化表單的樣式？
 description: 使用最適化表單主題來設定樣式並為最適化表單提供視覺身分。 您可以在任何數量的最適化Forms中共用主題。
 exl-id: 99c3d1f7-5756-49d2-98ee-72dd62063110
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '5579'
+source-wordcount: '5581'
 ht-degree: 2%
 
 ---
@@ -668,3 +668,8 @@ You can use the theme configuration service to add more fonts to the theme edito
 
   如果要使用字型樣式、背景和透明度等樣式選項來設定頁首和頁尾的樣式，請使用主題編輯器。
 如果您想在頁尾中提供標誌影像、公司名稱和版權資訊等資訊，請使用表單編輯器選項。
+
+
+## 另請參閱 {#see-also}
+
+{{see-also}}

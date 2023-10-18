@@ -5,9 +5,9 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
 exl-id: 1e812d93-4ba5-4589-b59b-2f564d754b0f
-source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
+source-git-commit: d0e5a63896ccbeb32b565680276b461fbbf19e9c
 workflow-type: tm+mt
-source-wordcount: '2344'
+source-wordcount: '2326'
 ht-degree: 66%
 
 ---
@@ -198,7 +198,8 @@ ht-degree: 66%
 * [設定不同熒幕大小和裝置型別的表單版面](/help/sites-cloud/authoring/features/responsive-layout.md)
 * [範例主題範本和表單資料模型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)
 
+## 另請參閱 {#see-also}
 
-## 相關文章 {#related-article}
+{{see-also}}
 
-* [建立獨立的以核心元件為主的最適化表單](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html)
+

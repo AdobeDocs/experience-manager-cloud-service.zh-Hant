@@ -2,9 +2,9 @@
 title: 如何在Adaptive Forms中建立和使用主題？
 description: 您可以使用主題來設定樣式，並使用核心元件來將視覺身分提供給最適化表單。 您可以在任何數量的最適化Forms中共用主題。
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: d0e5a63896ccbeb32b565680276b461fbbf19e9c
 workflow-type: tm+mt
-source-wordcount: '2698'
+source-wordcount: '2680'
 ht-degree: 4%
 
 ---
@@ -418,7 +418,11 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 * [範例主題範本和表單資料模型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)
 
 
-## 相關文章 {#related-article}
+>[!MORELIKETHIS]
+>
+>* [在 AEM Forms as a Cloud Service 和本機開發環境中啟用最適化表單核心元件](/help/forms/enable-adaptive-forms-core-components.md)
 
-* [在 AEM Forms as a Cloud Service 和本地開發環境中啟用最適化表單核心元件](/help/forms/enable-adaptive-forms-core-components.md)
-* [建立獨立的以核心元件為主的最適化表單](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html)
+
+## 另請參閱 {#see-also}
+
+{{see-also}}

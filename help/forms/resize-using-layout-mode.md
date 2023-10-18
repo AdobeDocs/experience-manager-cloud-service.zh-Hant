@@ -5,9 +5,9 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 53896a8e-4568-460b-bca7-994baea0c8eb
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '1135'
+source-wordcount: '1137'
 ht-degree: 6%
 
 ---
@@ -131,3 +131,7 @@ ht-degree: 6%
 
 1. 點選 **[!UICONTROL 版面設定]** 標籤並選取 **[!UICONTROL 停用佈局模式]**.
 1. 點選 ![儲存變更](assets/save_icon.svg) 以儲存範本屬性。
+
+## 另請參閱 {#see-also}
+
+{{see-also}}

@@ -4,9 +4,9 @@ description: 使用表格元件將表格新增至最適化表單。 除了協助
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Adaptive Forms
 exl-id: 88ace1d4-b68d-40e6-a7b4-918ba25f2e91
-source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '2496'
+source-wordcount: '2498'
 ht-degree: 2%
 
 ---
@@ -329,3 +329,8 @@ XFA表格元素對應至表格元件，可立即用於調適型表單。 XDP表�
 * 預設表格中的每個內文儲存格都有與其關聯的預先定義元素名稱。 如果您以最適化表單新增另一個表格，則新表格中的預設內文儲存格將與第一個表格中的元素名稱相同。 在這種情況下，提交表單時產生的資料將僅在一個表格的預設內文儲存格中包含資料。 因此，請務必重新命名預設內文儲存格的元素名稱，以使其在表格中保持唯一，並避免資料遺失。
 
   請注意，這僅適用於預設的內文儲存格。 如果您將更多列或欄新增至表格，將會自動為非預設內文儲存格產生唯一的元素名稱。
+
+## 另請參閱 {#see-also}
+
+{{see-also}}
+

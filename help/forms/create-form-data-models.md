@@ -5,10 +5,10 @@ feature: Form Data Model
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: b17b7441-912c-44c7-a835-809f014a8c86
-source-git-commit: e2f2aa18e2412bc92d1385a125281ecfb81f2ce8
+source-git-commit: a942e87a33775851631a1fe123fa3e8d2686bb30
 workflow-type: tm+mt
-source-wordcount: '1544'
-ht-degree: 1%
+source-wordcount: '1548'
+ht-degree: 2%
 
 ---
 
@@ -138,3 +138,8 @@ ht-degree: 1%
 您現在擁有已新增資料來源的表單資料模型。 接下來，您可以編輯表單資料模型以新增及設定資料模型物件與服務、新增資料模型物件之間的關聯、編輯屬性、新增自訂資料模型物件與屬性、產生範例資料等。
 
 如需詳細資訊，請參閱 [使用表單資料模型](work-with-form-data-model.md).
+
+
+>[!MORELIKETHIS]
+>
+>* [使用表單資料模型](/help/forms/using-form-data-model.md)

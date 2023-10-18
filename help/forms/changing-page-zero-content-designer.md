@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 56b6a573-8aba-43e7-acb7-c2da45869d95
 docset: aem65
-source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
+source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
 workflow-type: tm+mt
-source-wordcount: '224'
+source-wordcount: '248'
 ht-degree: 1%
 
 ---
@@ -45,3 +45,8 @@ ht-degree: 1%
 >[!NOTE]
 >
 >當您重新開啟表單時，您剛建立的自訂屬性可能無法正確地顯示在「表單屬性」對話方塊中。 不過，它仍可正常運作，且表單會顯示更新的「頁面零」訊息。
+
+>[!MORELIKETHIS]
+>
+>* [下載並安裝Forms Designer以建立記錄檔案範本](/help/forms/installing-configuring-designer.md)
+>* [使用Forms Designer建立記錄檔案(DoR)範本和表單片段？](/help/forms/use-forms-designer.md)

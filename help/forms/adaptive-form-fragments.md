@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 1a32eb24-db3b-4fad-b1c7-6326b5af4e5e
 docset: aem65
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '2023'
+source-wordcount: '2029'
 ht-degree: 1%
 
 ---
@@ -125,7 +125,7 @@ ht-degree: 1%
 1. Search然後按一下 **[!UICONTROL 「最適化表單設定服務]** 」，以在編輯模式中開啟。
 1. 禁用 **[!UICONTROL 啟用預留位置代替片段核取方塊以顯示完整片段]** 而不是預留位置圖像。
 
-### 在自我調整表單中插入片段 {#insert-a-fragment-in-an-adaptive-form}
+### 在自適應表單中插入片段 {#insert-a-fragment-in-an-adaptive-form}
 
 您建立的自適應表單片段會顯示在AEM內容尋找器的「自適應表單片段」標籤中。 若要以最適化表單插入最適化表單片段：
 
@@ -242,10 +242,14 @@ ht-degree: 1%
 * 您無法從最適化表單中編輯透過參考插入的最適化表單片段。 要進行編輯，您可以編輯獨立的最適化表單片段或將片段嵌入最適化表單中。
 * 發佈最適化表單時，您需要發佈在最適化表單中透過參考插入的獨立最適化表單片段。
 * 當您重新發佈更新的Adaptive Form片段時，變更會反映在使用片段的Adaptive Form的已發佈例項中。
-* 包含Verify元件的調適型表單不支援匿名使用者。 此外，不建議在自適應表單片段中使用驗證元件。
+* 包含驗證元件的最適化表單不支援匿名使用者。 此外，不建議在自適應表單片段中使用驗證元件。
 * （ **僅限** Mac）為了確保表單片段功能在所有場景中都能完美運行，請將以下內容添加到 /private/etc/hosts 檔中：
   `127.0.0.1 <Host machine>`**主機：** 部署的 [!DNL AEM Forms] Apple Mac 電腦。
 
 ## 參考片段 {#reference-fragments}
 
 您可以使用參考最適化表單片段來建立您的表單。 如需詳細資訊，請參閱 [參考片段](reference-adaptive-form-fragments.md).
+
+>[!MORELIKETHIS]
+>
+>* [核心元件中的最適化表單片段](/help/forms/adaptive-form-fragments-core-components.md)

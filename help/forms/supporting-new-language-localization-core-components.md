@@ -2,14 +2,14 @@
 title: 如何根據核心元件為最適化表單新增對新區域設定的支援？
 description: 瞭解如何為最適化表單新增地區設定。
 exl-id: bc06542b-84c8-4c6a-a305-effbd16d5630
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '1340'
-ht-degree: 4%
+source-wordcount: '1328'
+ht-degree: 5%
 
 ---
 
-# 根據核心元件為最適化Forms新增地區設定 {#supporting-new-locales-for-adaptive-forms-localization}
+# 為以核心元件為主的最適化表單新增地區設定 {#supporting-new-locales-for-adaptive-forms-localization}
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
@@ -176,6 +176,10 @@ AEM Forms提供範例使用者端資料庫，協助您輕鬆新增地區設定�
 
 ## 檢視更多
 
-* [使用機器翻譯或人工翻譯來翻譯以核心元件為基礎的最適化表單](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
 * [產生最適化Forms的記錄檔案](/help/forms/generate-document-of-record-core-components.md)
 * [新增最適化表單至 AEM Sites 頁面或體驗片段](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+
+
+## 另請參閱 {#see-also}
+
+{{see-also}}

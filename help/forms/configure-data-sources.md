@@ -5,7 +5,7 @@ feature: Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
-source-git-commit: ac7e1a1ada156734c3a487269e674e8eade7c9c3
+source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
 workflow-type: tm+mt
 source-wordcount: '2452'
 ht-degree: 11%
@@ -328,3 +328,14 @@ When you enable mutual authentication for form data model, both the data source 
 ## 後續步驟 {#next-steps}
 
 您已設定資料來源。 接下來，您可以建立表單資料模型，或者，如果您已建立不含資料來源的表單資料模型，則可以將其與您設定的資料來源建立關聯。 另請參閱 [建立表單資料模型](create-form-data-models.md) 以取得詳細資訊。
+
+
+<!--
+
+>[!MORELIKETHIS]
+>
+>* [Configure Azure storage for AEM Forms](/help/forms/configure-azure-storage.md)
+>* [Integrate Microsoft Dynamics 365 and Salesforce with Adaptive Forms](/help/forms/configure-msdynamics-salesforce.md)
+>*  [Add Forms Portal to an AEM Sites page](/help/forms/configure-forms-portal.md)
+
+-->

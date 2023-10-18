@@ -3,10 +3,10 @@ title: 什麼是Formsas a Cloud Service通訊API？
 description: 使用通訊API來簽署、認證或保護您的檔案、自動化PDF產生流程，以及將PDF檔案轉換為另一種格式。
 Keywords: How to generate document?, Generate PDF document, Manipulation PDF documents, Assembling PDF documents, Validating PDF document, APIs used in encrypting or decrypting PDFs
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '1433'
-ht-degree: 79%
+source-wordcount: '1446'
+ht-degree: 78%
 
 ---
 
@@ -302,6 +302,6 @@ When such an interactive PDF document is flattened using the Communications APIs
 
 ## 另請參閱 {#see-also}
 
-
 * [通訊處理 — 同步API](/help/forms/aem-forms-cloud-service-communications.md)
 * [通訊處理 — 批次API](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
+* [最適化Forms的AEM Formsas a Cloud Service架構和通訊API](/help/forms/aem-forms-cloud-service-architecture.md)

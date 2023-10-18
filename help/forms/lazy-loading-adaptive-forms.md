@@ -5,9 +5,9 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 0cd38edb-2201-4ca6-8b84-6b5b7f76bd90
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '1075'
+source-wordcount: '1077'
 ht-degree: 7%
 
 ---
@@ -90,3 +90,8 @@ Forms包含某些欄位和區段，不適用於所有使用者和所有條件。
 * 無論欄位是否跨片段標示為全域，請勿轉寄延遲面板內欄位的參考值。
 * 使用面板重設功能，透過下列按一下運算式重設面板上的所有可見專案。\
   guideBridge.resolveNode(guideBridge.getFocus({&quot;focusOption&quot;： &quot;navigablePanel&quot;}))。resetData()
+
+
+## 另請參閱 {#see-also}
+
+{{see-also}}

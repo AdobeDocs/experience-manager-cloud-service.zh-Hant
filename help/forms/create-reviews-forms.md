@@ -3,9 +3,9 @@ title: 如何在表單中建立和管理評論？
 description: 使用稽核機制來新增稽核者並允許稽核者在表單上進行評論。
 topic-tags: forms-manager
 exl-id: 378049f8-bf21-4595-819d-ba5fba7023c0
-source-git-commit: e2f2aa18e2412bc92d1385a125281ecfb81f2ce8
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '731'
+source-wordcount: '733'
 ht-degree: 8%
 
 ---
@@ -114,3 +114,17 @@ ht-degree: 8%
    1. **全部**：評論會顯示在「先前的評論」區段中。 無法新增其他註解。
 
    ![檢閱完成](assets/review-complete-imgg.png)
+
+
+## 另請參閱 {#see-also}
+
+{{see-also}}
+
+
+<!--
+
+>[!MORELIKETHIS]
+>
+>* [Associating submission reviewers with a form](/help/forms/adding-reviewers-form.md)
+
+-->

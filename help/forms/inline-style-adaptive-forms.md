@@ -5,10 +5,10 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 25adabfb-ff19-4cb2-aef5-0a8086d2e552
-source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
+source-git-commit: e48272f4d36c608d516c7a947fc16cff3a3b408e
 workflow-type: tm+mt
-source-wordcount: '769'
-ht-degree: 11%
+source-wordcount: '778'
+ht-degree: 10%
 
 ---
 
@@ -132,3 +132,12 @@ ht-degree: 11%
 您也可以模擬成功和錯誤狀態。 點選「展開」圖示以檢視 **[!UICONTROL 模擬成功]** 和 **[!UICONTROL 模擬錯誤]** 選項。
 
 ![模擬狀態](assets/simulate-states.png)
+
+
+## 另請參閱 {#see-also}
+
+{{see-also}}
+
+>[!MORELIKETHIS]
+>
+>* [在最適化表單核心元件中使用主題](/help/forms/using-themes-in-core-components.md)
