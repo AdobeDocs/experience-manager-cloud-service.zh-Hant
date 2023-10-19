@@ -2,10 +2,10 @@
 title: 設定含 WAF 規則的流量篩選規則
 description: 使用含 WAF 規則的流量篩選規則來篩選流量
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: 550ef9a969dc184fccbfd3b79716744cd80ce463
+source-git-commit: 218bf89a21f6b5e7f2027a88c488838b3e72b80e
 workflow-type: tm+mt
-source-wordcount: '3826'
-ht-degree: 70%
+source-wordcount: '3810'
+ht-degree: 71%
 
 ---
 
@@ -532,7 +532,7 @@ data:
 
 Adobe提供一種機制，可將控制面板工具下載到您的電腦上，以擷取透過Cloud Manager下載的CDN記錄。 透過此工具，您可以分析流量以協助建立適當的流量篩選規則來宣告，包括WAF規則。 本節首先會提供一些熟悉開發環境中儀表板工具的指示，然後是有關如何利用該知識在生產環境中建立規則的指南。
 
-流量篩選規則早期採用者客戶應請求儀表板工具的壓縮檔，其中包括描述如何載入Docker容器和擷取CDN記錄的README檔案。
+控制面板工具可直接從 [AEMCS-CDN-Log-Analysis-ELK-Tool](https://github.com/adobe/AEMCS-CDN-Log-Analysis-ELK-Tool) Github存放庫。
 
 
 ### 熟悉儀表板工具 {#dashboard-getting-familiar}
