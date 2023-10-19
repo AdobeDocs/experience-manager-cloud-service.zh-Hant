@@ -2,10 +2,10 @@
 title: 郵件服務的 OAuth2 支援
 description: Adobe Experience Manager as a Cloud Service 對郵件服務的 Oauth2 支援
 exl-id: 93e7db8b-a8bf-4cc7-b7f0-cda481916ae9
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: ht
+source-git-commit: 417efad485226464b396c3ac3ef5ca8968309792
+workflow-type: tm+mt
 source-wordcount: '679'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -56,9 +56,15 @@ AEM as a Cloud Service 為其整合的郵件服務提供 OAuth2 支援，以允�
 
 接下來，執行下列動作，產生重新整理權杖，其為後續步驟中 OSGi 設定的一部分：
 
-1. 取代 `clientID` 和 `tenantID` 後在瀏覽器中開啟如下 URL，並使用特定於您帳戶的值：`https://login.microsoftonline.com/%3ctenantID%3e/oauth2/v2.0/authorize?client_id=%3cclientId%3e&response_type=code&redirect_uri=http://localhost&response_mode=query&scope=https://outlook.office.com/SMTP.Send%20email%20openid%20profile%20offline_access&state=12345`。
+1. 取代 `clientID` 和 `tenantID` 後在瀏覽器中開啟如下 URL，並使用特定於您帳戶的值：
+
+   `https://login.microsoftonline.com/%3ctenantID%3e/oauth2/v2.0/authorize?client_id=%3cclientId%3e&response_type=code&redirect_uri=http://localhost&response_mode=query&scope=https://outlook.office.com/SMTP.Send%20email%20openid%20profile%20offline_access&state=12345`
+
 1. 詢問時允許權限。
-1. 該 URL 會重新導向到一個新位置，以此格式建構：`http://localhost/?code=<code>&state=12345&session_state=4f984c6b-cc1f-47b9-81b2-66522ea83f81#`
+1. URL會重新導向新位置，並以下列格式建構：
+
+   `http://localhost/?code=<code>&state=12345&session_state=4f984c6b-cc1f-47b9-81b2-66522ea83f81#`
+
 1. 複製上例中`<code>` 的值。
 1. 使用以下 cURL 命令取得 refreshToken。將 tenantID、clientID 和 clientSecret 替換為您帳戶的值和 `<code>` 的值：
 
