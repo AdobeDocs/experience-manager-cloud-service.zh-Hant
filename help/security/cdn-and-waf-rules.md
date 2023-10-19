@@ -2,7 +2,7 @@
 title: 設定含 WAF 規則的流量篩選規則
 description: 使用含 WAF 規則的流量篩選規則來篩選流量
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: 9345ec974c9fbd525b12b53d20d98809cd72cb04
+source-git-commit: 146b85093331fe26da891252c398fc24d4f7c0d6
 workflow-type: tm+mt
 source-wordcount: '3810'
 ht-degree: 71%
@@ -165,7 +165,7 @@ cdn.yaml 檔案中流量篩選規則的格式如下所述。請參閱後面小�
 | reqProperty | `string` | 要求屬性。<br><br>以下其中之一：`path`、`queryString`、`method`、`tier`、`domain`、`clientIp`、`clientCountry`<br><br>網域屬性是要求的主機標頭的小寫變換。對於字串比較很有用，因此不會因區分大小寫而錯過相符的情況。<br><br>`clientCountry` 會使用顯示在 [https://en.wikipedia.org/wiki/Regional_indicator_symbol](https://en.wikipedia.org/wiki/Regional_indicator_symbol) 的字母代碼 |
 | reqHeader | `string` | 傳回具有指定名稱的要求標頭 |
 | queryParam | `string` | 傳回具有指定名稱的查詢參數 |
-| cookie | `string` | 傳回具有指定名稱的 Cookie |
+| reqCookie | `string` | 傳回具有指定名稱的 Cookie |
 
 **述詞**
 
