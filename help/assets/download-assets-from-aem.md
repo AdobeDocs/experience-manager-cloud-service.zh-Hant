@@ -5,9 +5,9 @@ contentOwner: Vishabh Gupta
 feature: Asset Management
 role: User
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: 3a14f3b6f75f6021a7843a5a8a3439d6ea7f886d
+source-git-commit: d25d433203b8ec6787dec87a9ec35092a247096e
 workflow-type: tm+mt
-source-wordcount: '1387'
+source-wordcount: '1388'
 ht-degree: 5%
 
 ---
@@ -132,7 +132,7 @@ Experience Manager會根據資產數量和大小最佳化下載體驗。 從使�
 
    `/0100 { /type "deny" /url "*.assetdownload.zip/assets.zip*" }`
 
-## 開啟時間/關閉時間轉譯 {#on-off-time-rendition}
+## 開啟時間或關閉時間轉譯 {#on-off-time-rendition}
 
 若要啟用 `OnOffTimeAssetAccessFilter` 服務，您需要建立OSGi設定。 此服務可讓您根據開啟/關閉時間設定，封鎖對資產本身以外轉譯和中繼資料的存取。 OSGi設定應該 `com.day.cq.dam.core.impl.servlet.OnOffTimeAssetAccessFilter`. 請遵循下列步驟：
 
