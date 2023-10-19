@@ -2,10 +2,10 @@
 title: 設定含 WAF 規則的流量篩選規則
 description: 使用含 WAF 規則的流量篩選規則來篩選流量
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: 146b85093331fe26da891252c398fc24d4f7c0d6
+source-git-commit: 550ef9a969dc184fccbfd3b79716744cd80ce463
 workflow-type: tm+mt
-source-wordcount: '3810'
-ht-degree: 71%
+source-wordcount: '3826'
+ht-degree: 70%
 
 ---
 
@@ -271,15 +271,15 @@ metadata:
   envTypes: ["dev"]
 data:
   trafficFilters:
-     rules:
-       - name: "block-request-from-chrome-on-path-helloworld-for-publish-tier"
-         when: { reqProperty: clientIp, equals: "192.168.1.1" }
-           allOf:
-            - { reqProperty: path, equals: /helloworld }
-            - { reqProperty: tier, equals: publish }
-            - { reqHeader: user-agent, matches: '.*Chrome.*'  }
-           action:
-             type: block
+    rules:
+      - name: "block-request-from-chrome-on-path-helloworld-for-publish-tier"
+        when:
+          allOf:
+          - { reqProperty: path, equals: /helloworld }
+          - { reqProperty: tier, equals: publish }
+          - { reqHeader: user-agent, matches: '.*Chrome.*'  }
+        action:
+          type: block
 ```
 
 **範例 3**
@@ -387,10 +387,11 @@ metadata:
   envTypes: ["dev"]
 data:
   trafficFilters:
+    rules:
     - name: limit-requests-client-ip
       when:
-        - reqProperty: tier
-        - matches: "author|publish"
+        reqProperty: tier
+        matches: "author|publish"
       rateLimit:
         limit: 60
         window: 10
@@ -545,24 +546,24 @@ Adobe提供一種機制，可將控制面板工具下載到您的電腦上，以
 
 1. 在您的工作區中，在根層級建立資料夾設定，並新增名為cdn.yaml的檔案，您可在其中宣告簡單規則，在記錄模式而非封鎖模式中設定。
 
-   ```
-   kind: "CDN"
-   version: "1"
-   metadata:
-     envTypes: ["dev"]
-   data:
-     trafficFilters:
-       rules:
-       # Log request on simple path
-       - name: log-rule-example
-         when:
-           allOf:
-             - reqProperty: tier
-               matches: "author|publish"
-             - reqProperty: path
-               equals: '/log/me'
-         action: log
-   ```
+```
+kind: "CDN"
+version: "1"
+metadata:
+  envTypes: ["dev"]
+data:
+  trafficFilters:
+    rules:
+    # Log request on simple path
+    - name: log-rule-example
+      when:
+        allOf:
+          - reqProperty: tier
+            matches: "author|publish"
+          - reqProperty: path
+            equals: '/log/me'
+      action: log
+```
 
 1. 提交並推送您的變更，並使用設定管道部署您的設定。
 
@@ -597,24 +598,24 @@ Adobe提供一種機制，可將控制面板工具下載到您的電腦上，以
 
 1. 現在變更cdn.yaml以將規則置於封鎖模式，以確保頁面如預期般遭到封鎖。 然後像之前一樣認可、推送並觸發設定管道。
 
-   ```
-   kind: "CDN"
-   version: "1"
-   metadata:
-     envTypes: ["dev"]
-   data:
-     trafficFilters:
-       rules:
-       # Log request on simple path
-       - name: log-rule-example
-         when:
-           allOf:
-             - reqProperty: tier
-               matches: "author|publish"
-             - reqProperty: path
-               equals: '/log/me'
-         action: block
-   ```
+```
+kind: "CDN"
+version: "1"
+metadata:
+  envTypes: ["dev"]
+data:
+  trafficFilters:
+    rules:
+    # Log request on simple path
+    - name: log-rule-example
+      when:
+        allOf:
+          - reqProperty: tier
+            matches: "author|publish"
+          - reqProperty: path
+            equals: '/log/me'
+      action: block
+```
 
 1. 部署設定後，請嘗試使用網頁瀏覽器或下列curl命令存取https://publish-pXXXXX-eYYYYYY.adobeaemcloud.com/log/me。 系統應該會顯示406錯誤頁面，指出已封鎖要求。
 
@@ -629,40 +630,40 @@ Adobe提供一種機制，可將控制面板工具下載到您的電腦上，以
 
 1. 如果您已啟用WAF流量篩選器（此功能為GA後，這將需要額外的授權），請在記錄模式下以WAF流量篩選器規則重複此動作，然後部署規則。
 
-   ```
-   kind: "CDN"
-   version: "1"
-   metadata:
-     envTypes: ["dev"]
-   data:
-     trafficFilters:
-       rules:
-         - name: log-waf-flags
-           when:
-             reqProperty: tier
-             matches: "author|publish"
-           action:
-             type: log
-             wafFlags:
-                 - SANS
-                 - SIGSCI-IP
-                 - TORNODE
-                 - NOUA
-                 - SCANNER
-                 - USERAGENT
-                 - PRIVATEFILE
-                 - ABNORMALPATH
-                 - TRAVERSAL
-                 - NULLBYTE
-                 - BACKDOOR
-                 - LOG4J-JNDI
-                 - SQLI
-                 - XSS
-                 - CODEINJECTION
-                 - CMDEXE
-                 - NO-CONTENT-TYPE
-                 - UTF8
-   ```
+```
+kind: "CDN"
+version: "1"
+metadata:
+  envTypes: ["dev"]
+data:
+  trafficFilters:
+    rules:
+      - name: log-waf-flags
+        when:
+          reqProperty: tier
+          matches: "author|publish"
+        action:
+          type: log
+          wafFlags:
+              - SANS
+              - SIGSCI-IP
+              - TORNODE
+              - NOUA
+              - SCANNER
+              - USERAGENT
+              - PRIVATEFILE
+              - ABNORMALPATH
+              - TRAVERSAL
+              - NULLBYTE
+              - BACKDOOR
+              - LOG4J-JNDI
+              - SQLI
+              - XSS
+              - CODEINJECTION
+              - CMDEXE
+              - NO-CONTENT-TYPE
+              - UTF8
+```
 
 1. 使用工具，例如 [nikto](https://github.com/sullo/nikto/tree/master) 以產生相符請求。 以下命令會在1分鐘內傳送約550個惡意請求。
 
@@ -685,34 +686,40 @@ Adobe提供一種機制，可將控制面板工具下載到您的電腦上，以
 
 1. 在記錄模式下，使用使用速率限制的規則重複此步驟。 一如既往，認可、推送並觸發設定管道以套用您的設定。
 
-   ```
-   kind: "CDN"
-   version: "1"
-   metadata:
-     envTypes: ["dev"]
-   data:
-     trafficFilters:
-       rules:
-         - name: limit-requests-client-ip
-           when:
-             reqProperty: tier
-             matches: "author|publish"
-           rateLimit:
-             limit: 10
-             window: 1
-             penalty: 60
-             groupBy:
-               - reqProperty: clientIp
-           action: log
-   ```
+```
+kind: "CDN"
+version: "1"
+metadata:
+  envTypes: ["dev"]
+data:
+  trafficFilters:
+    rules:
+      - name: limit-requests-client-ip
+        when:
+          reqProperty: tier
+          matches: "author|publish"
+        rateLimit:
+          limit: 10
+          window: 1
+          penalty: 60
+          groupBy:
+            - reqProperty: clientIp
+        action: log
+```
 
 1. 使用工具，例如 [韋蓋塔](https://github.com/tsenart/vegeta) 以產生流量。
 
    ```
-   echo "GET https://publish-pXXXXX-eYYYYYY.adobeaemcloud.com" | vegeta attack -duration=5s
+   echo "GET https://publish-pXXXXX-eYYYYYY.adobeaemcloud.com" | vegeta attack -duration=5s | tee results.bin | vegeta report
    ```
 
 1. 執行工具後，您可以下載CDN記錄並在控制面板中擷取記錄，以確認已觸發速率限制器規則
+
+   ![檢視WAF資料](/help/security/assets/waf-dashboard-ratelimiter-1.png)
+
+   ![檢視WAF資料](/help/security/assets/waf-dashboard-ratelimiter-2.png)
+
+   如您所見，規則 *limit-requests-client-ip* 已觸發。
 
    現在您已熟悉流量篩選規則的運作方式，您可以移至生產環境。
 
@@ -743,65 +750,65 @@ data:
         penalty: 300
         groupBy:
           - reqProperty: clientIp
-      action: block
-      # Block requests coming from OFAC countries
-      - name: block-ofac-countries
-        when:
-          allOf:
-            - { reqProperty: tier, equals: publish }
-            - reqProperty: clientCountry
-              in:
-                - SY
-                - BY
-                - MM
-                - KP
-                - IQ
-                - CD
-                - SD
-                - IR
-                - LR
-                - ZW
-                - CU
-                - CI
-        action: block
-        # Enable recommended WAF protections (only works if WAF is enabled for your environment)
-        - name: block-waf-flags-globally
-          when:
-            reqProperty: tier
+      action: log
+    # Block requests coming from OFAC countries
+    - name: block-ofac-countries
+      when:
+        allOf:
+          - { reqProperty: tier, equals: publish }
+          - reqProperty: clientCountry
+            in:
+              - SY
+              - BY
+              - MM
+              - KP
+              - IQ
+              - CD
+              - SD
+              - IR
+              - LR
+              - ZW
+              - CU
+              - CI
+      action: log
+    # Enable recommended WAF protections (only works if WAF is enabled for your environment)
+    - name: block-waf-flags-globally
+      when:
+        reqProperty: tier
+        matches: "author|publish"
+      action:
+        type: log
+        wafFlags:
+          - SANS
+          - SIGSCI-IP
+          - TORNODE
+          - NOUA
+          - SCANNER
+          - USERAGENT
+          - PRIVATEFILE
+          - ABNORMALPATH
+          - TRAVERSAL
+          - NULLBYTE
+          - BACKDOOR
+          - LOG4J-JNDI
+          - SQLI
+          - XSS
+          - CODEINJECTION
+          - CMDEXE
+          - NO-CONTENT-TYPE
+          - UTF8
+    # Disable protection against CMDEXE on /bin
+    - name: allow-cdmexe-on-root-bin
+      when:
+        allOf:
+          - reqProperty: tier
             matches: "author|publish"
-          action:
-            type: block
-            wafFlags:
-              - SANS
-              - SIGSCI-IP
-              - TORNODE
-              - NOUA
-              - SCANNER
-              - USERAGENT
-              - PRIVATEFILE
-              - ABNORMALPATH
-              - TRAVERSAL
-              - NULLBYTE
-              - BACKDOOR
-              - LOG4J-JNDI
-              - SQLI
-              - XSS
-              - CODEINJECTION
-              - CMDEXE
-              - NO-CONTENT-TYPE
-              - UTF8
-        # Disable protection against CMDEXE on /bin
-        - name: allow-cdmexe-on-root-bin
-          when:
-            allOf:
-              - reqProperty: tier
-                matches: "author|publish"
-              - reqProperty: path
-                matches: "^/bin/.*"
-          action:
-            type: allow
-            wafFlags:
-              - CMDEXE
+          - reqProperty: path
+            matches: "^/bin/.*"
+      action:
+        type: log
+        wafFlags:
+          - CMDEXE
 ```
 
 1. 新增任何其他規則以封鎖您可能知道的惡意流量。 例如，某些攻擊您網站的IP。
