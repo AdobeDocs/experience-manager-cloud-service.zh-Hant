@@ -2,10 +2,10 @@
 title: 設定含 WAF 規則的流量篩選規則
 description: 使用含 WAF 規則的流量篩選規則來篩選流量
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: 218bf89a21f6b5e7f2027a88c488838b3e72b80e
+source-git-commit: 5231d152a67b72909ca5b38f0bbc40616ccd4739
 workflow-type: tm+mt
-source-wordcount: '3810'
-ht-degree: 71%
+source-wordcount: '3661'
+ht-degree: 69%
 
 ---
 
@@ -166,6 +166,7 @@ cdn.yaml 檔案中流量篩選規則的格式如下所述。請參閱後面小�
 | reqHeader | `string` | 傳回具有指定名稱的要求標頭 |
 | queryParam | `string` | 傳回具有指定名稱的查詢參數 |
 | reqCookie | `string` | 傳回具有指定名稱的 Cookie |
+| postParam | `string` | 從本文傳回具有指定名稱的引數。 只有當內文為內容型別時才有作用 `application/x-www-form-urlencoded` |
 
 **述詞**
 
@@ -208,12 +209,9 @@ cdn.yaml 檔案中流量篩選規則的格式如下所述。請參閱後面小�
 | 周遊 | 目錄周遊 | 目錄周遊指試圖瀏覽整個系統中的特權檔案，期望能獲取敏感資訊。 |
 | USERAGENT | 攻擊工具 | 攻擊工具指使用自動化軟體識別安全漏洞或試圖惡意探索發現的漏洞。 |
 | LOG4J-JNDI | Log4J JNDI | Log4J JNDI 攻擊會試圖惡意探索出現在 2.16.0 之前的 Log4J 版本中的 [Log4Shell 漏洞](https://en.wikipedia.org/wiki/Log4Shell) |
-| AWS SSRF | AWS-SSRF | 伺服器端請求偽造 (SSRF) 是一種要求，會試圖傳送由 Web 應用程式發出的要求到目標內部系統。AWS SSRF 攻擊會利用 SSRF 獲取 Amazon Web Services (AWS) 金鑰並獲取對 S3 貯體及其資料的存取權。 |
 | BHH | 錯誤跳躍標頭 | 錯誤跳躍標頭指透過格式錯誤的傳輸編碼 (TE) 或內容長度 (CL) 標頭或格式正確的 TE 和 CL 標頭進行的 HTTP 走私嘗試 |
 | ABNORMALPATH | 異常路徑 | 異常路徑指原始路徑和標準化路徑不同 (例如：`/foo/./bar` 會標準化為 `/foo/bar`) |
-| 已壓縮 | 偵測到壓縮 | POST 要求內文被壓縮，並且無法檢查。例如，若指定「Content-Encoding: gzip」要求標頭，並且 POST 內文並非純文字。 |
 | DOUBLEENCODING | 雙重編碼 | 雙重編碼會檢查雙重編碼 html 字元的規避技術 |
-| FORCEFULBROWSING | 強制瀏覽 | 強制瀏覽指試圖存取管理頁面時失敗 |
 | NOTUTF8 | 無效的編碼 | 無效的編碼可能會導致伺服器將要求中的惡意字元翻譯為回應，進而導致拒絕服務或 XSS |
 | JSON-ERROR | JSON 編碼錯誤 | 指定為在「Content-Type」要求標頭中包含 JSON 但包含 JSON 剖析錯誤的 POST、PUT 或 PATCH 要求內文。這經常和程式設計錯誤或自動化亦或惡意要求有關。 |
 | MALFORMED-DATA | 要求內文中格式錯誤的資料 | 根據「Content-Type」要求標頭，格式錯誤的 POST、PUT 或 PATCH 要求內文。例如，如果指定了「Content-Type: application/x-www-form-urlencoded」要求標頭並包含 json 的 POST 內文。這經常是程式設計錯誤、自動化或惡意要求。需要代理程式 3.2 或更高版本。 |
@@ -222,9 +220,7 @@ cdn.yaml 檔案中流量篩選規則的格式如下所述。請參閱後面小�
 | NO-CONTENT-TYPE | 缺少「Content-Type」要求標頭 | 沒有「Content-Type」要求標頭的 POST、PUT 或 PATCH 要求。在此案例中，預設情況下應用程式伺服器應假設「Content-Type: text/plain; charset=us-ascii」。許多自動化和惡意要求可能會缺少「內容類型」。 |
 | NOUA | 沒有使用者代理程式 | 許多自動化和惡意要求會使用偽造的使用者代理程式或缺少使用者代理程式，這使得難以識別發出要求的裝置類型。 |
 | TORNODE | Tor 流量 | Tor 是可隱藏使用者身份的軟體。Tor 流量激增可能表示有攻擊者試圖掩飾其位置。 |
-| DATACENTER | 資料中心流量 | 資料中心流量指源自於已識別主機提供者的非自然流量。這種類型的流量通常和真正的一般使用者無關。 |
 | NULLBYTE | 空位元 | 空位元通常不會出現在要求中，因為這表示該要求的格式錯誤且可能是惡意的。 |
-| IMPOSTOR | SearchBot 冒充者 | 搜尋機器人冒充者指冒充 Google 或 Bing 搜尋機器人的人，但並不合法。請注意，這本身不仰賴回應，但必須先在雲端中解析，因此不應用於預規則中。 |
 | PRIVATEFILE | 私人檔案 | 私人檔案通常在本質上屬於機密性，例如 Apache `.htaccess` 檔案或可能洩漏敏感資訊的設定檔案 |
 | SCANNER | 掃描程式 | 可識別熱門的掃描服務和工具 |
 | RESPONSESPLIT | HTTP 回應拆分 | 會識別何時將 CRLF 字元作為輸入提交給應用程式，以將標頭注入 HTTP 回應 |
