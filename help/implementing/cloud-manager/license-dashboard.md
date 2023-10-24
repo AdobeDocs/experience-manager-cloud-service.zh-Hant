@@ -2,10 +2,10 @@
 title: 授權儀表板
 description: Cloud Manager 提供了一個儀表板，用於輕鬆查看您的組織或租用戶可用的 AEMaaCS 產品權利。
 exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: fbfb5d3ee8dbc8bc4cbe118fd4ce97284f712bb4
 workflow-type: tm+mt
-source-wordcount: '873'
-ht-degree: 100%
+source-wordcount: '665'
+ht-degree: 66%
 
 ---
 
@@ -17,7 +17,7 @@ Cloud Manager 提供了一個儀表板，用於輕鬆查看您的組織或租用
 
 Cloud Manager 授權儀表板提供對以下資訊的輕鬆存取：
 
-1. 您可以在所有計畫中使用的解決方案權利，包括已使用的和可用的
+1. 您可在所有程式中取得解決方案權益，包括已使用的和可用的專案
 1. Sites 解決方案按月趨勢的內容請求消耗指標
 
 ## 使用授權儀表板 {#using-dashboard}
@@ -26,7 +26,7 @@ Cloud Manager 授權儀表板提供對以下資訊的輕鬆存取：
 
 >[!NOTE]
 >
->必須由具有&#x200B;**業務負責人**&#x200B;角色的使用者登入才能檢視和儀表板的授權。
+>中的使用者 **企業所有者** 必須登入角色才能檢視授權儀表板。
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織。
 
@@ -40,16 +40,16 @@ Cloud Manager 授權儀表板提供對以下資訊的輕鬆存取：
 * **附加元件** - 本節總結了您可用的授權解決方案的哪些附加元件。
 * **沙箱和開發環境**- 本節總結了您可以使用的環境。
 
-每個部分都總結了可用的內容以及當前的使用方式 (如果有的話)。當前僅顯示 Sites 解決方案，即使租用戶中存在其他解決方案。
+每個區段都總結了可用的內容及其使用方式（如果有的話）。 當前僅顯示 Sites 解決方案，即使租用戶中存在其他解決方案。
 
-* 這&#x200B;**地位**&#x200B;列顯示未使用的權利數量與租用戶可用的權利總數。
+* 此 **狀態** 欄顯示未使用的權利數量與租使用者可用的權利總數。
 * 這&#x200B;**配置在**&#x200B;清單示已套用解決方案權利的計畫。
    * 僅當已建立生產環境或已存在生產環境且已在其上執行更新管道時，才認為權利被使用。
 * 此&#x200B;**使用方式**&#x200B;按一下時，資料行將過去 12 個月內消耗的內容請求顯示為圖表。
 
 >[!TIP]
 >
->請參閱 [Admin Console 概觀](https://helpx.adobe.com/tw/enterprise/using/admin-console.html)了解如何透過 Admin Console 在整個組織中管理您的 Adobe 權利。
+>若要瞭解如何透過Admin Console管理整個組織的Adobe權益，請參閱 [Admin Console概觀](https://helpx.adobe.com/tw/enterprise/using/admin-console.html).
 
 ## 常見問答 {#faq}
 
@@ -59,7 +59,9 @@ Cloud Manager 授權儀表板提供對以下資訊的輕鬆存取：
 
 每次頁面查看或每五個 API 調用計算一個內容請求，在接收內容請求的第一個緩存系統的入口處測量。內容請求僅計入生產環境。
 
-內容請求不包括由 Adobe 或代表 Adobe 發起的僅用於提供產品和服務的請求或活動。Adobe 識別的來自與常見搜索引擎和社交媒體服務相關的機器人、爬蟲和蜘蛛的使用者代理流量也被排除在外。
+內容請求會排除僅為了提供產品和服務而由Adobe或其代表發起的請求或活動。 Adobe 識別的來自與常見搜索引擎和社交媒體服務相關的機器人、爬蟲和蜘蛛的使用者代理流量也被排除在外。
+
+另請參閱 [瞭解Cloud Service內容請求](/help/implementing/cloud-manager/content-requests.md).
 
 ### Adobe Experience Manager 如何衡量內容請求？ {#how-are-content-requests-measured}
 
@@ -67,26 +69,16 @@ Cloud Manager 授權儀表板提供對以下資訊的輕鬆存取：
 
 AEM 還制定了排除知名機器人的規則，包括定期存取該網站以刷新其搜索索引或服務的知名服務。
 
+另請參閱 [瞭解Cloud Service內容請求](/help/implementing/cloud-manager/content-requests.md).
+
 ### 為什麼我的 Analytics 報告顯示的結果與 AEM 內容請求不同？ {#why-are-reports-different}
 
-內容請求將與組織的分析報告工具有所不同，如本表中所述。
-
-| 差異原因 | 解釋 |
-|---|---|
-| 標記 | 作為 AEM 內容請求跟踪的所有頁面可能會或可能不會使用 Analytics 跟踪進行標記。作為 AEM 內容請求跟踪的所有 API 調用不會被組織的分析工具標記。<br>頁面或 API 調用可能會被標記為跟踪操作或只是唯一的頁面視圖而不是所有視圖。 |
-| Tag Management 規則 | Tag Management 規則設定可能會導致頁面上的各種資料收集配置，從而導致與內容請求跟踪的某些差異組合。 |
-| 機器人 | AEM 未預先識別和刪除的未知機器人可能會導致跟踪差異。 |
-| 報表套裝 | 屬於同一 AEM 實例和域的頁面可能會將資料發送到不同的 Analytics 報表包。 |
-| 第三方監控和安全工具 | 監控和安全掃描工具可能會為 AEM 生成未在 Analytics 報告中跟踪的內容請求。 |
-| 預取請求 | 使用預取服務來預加載頁面以提高速度可能會導致內容請求流量顯著增加。 |
-| DDOS | 儘管 Adobe 盡一切努力自動檢測和過濾來自 DDOS 攻擊的流量，但不能保證會檢測到所有可能的 DDOS 攻擊 |
-| 流量攔截器 | 在瀏覽器中使用跟踪器阻止程序可能會選擇不跟踪某些請求。 |
-| 防火牆 | 防火牆可能會阻止 Analytics 跟踪。這在企業防火牆中更為常見。 |
+內容請求可能與組織的Analytics報告工具不同。 如需詳細資訊，請參閱 [瞭解Cloud Service內容請求](/help/implementing/cloud-manager/content-requests.md).
 
 ### 如果我想了解更多有關我的內容請求量的資訊呢? {#current-request-volumes}
 
-如果您想進一步了解授權儀表板中顯示的內容請求量，您的 Adobe 團隊可以提供一份報告，顯示內容請求的主要數量驅動因素。請聯繫您的 Adobe 團隊或 Adobe 客戶服務，申請最高使用率報告。
+如果您想進一步了解授權儀表板中顯示的內容請求量，您的 Adobe 團隊可以提供一份報告，顯示內容請求的主要數量驅動因素。請聯絡您的Adobe團隊或Adobe客戶支援，以請求最高使用量報告。
 
 ### 如果我使用自己的 CDN 怎麼辦？ {#using-own-cdn}
 
-授權儀表板只會顯示 Cloud Service CDN 追蹤的資料。如果您選擇使用自己的 CDN (BYOCDN)，您將按照合約中的規定每年向 Adobe 報告您的內容請求量。
+授權儀表板只會顯示Cloud ServiceCDN追蹤的資料。 如果您選擇使用自己的CDN (BYOCDN)，請按照合約中的規定每年向Adobe報告您的內容請求量。
