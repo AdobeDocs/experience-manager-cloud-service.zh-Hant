@@ -3,10 +3,10 @@ title: CI/CD 管道
 description: 了解 Cloud Manager 的 CI/CD 管道以及如何使用它們來有效地部署您的程式碼。
 index: true
 exl-id: 40d6778f-65e0-4612-bbe3-ece02905709b
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: ht
-source-wordcount: '1337'
-ht-degree: 100%
+source-git-commit: ecb168e9261b3e3ed89e4cbe430b3da9f777a795
+workflow-type: tm+mt
+source-wordcount: '1448'
+ht-degree: 92%
 
 ---
 
@@ -32,12 +32,6 @@ Cloud Manager 提供兩種類型的管道：
 
 ![管道類型](/help/implementing/cloud-manager/assets/configure-pipeline/ci-cd-config1.png)
 
-## 影片概觀 {#video}
-
-如需快速了解管道類型，請觀看此短影片。
-
->[!VIDEO](https://video.tv.adobe.com/v/342363)
-
 ## 生產管道 {#prod-pipeline}
 
 生產管道是專門構建的管道，其中包括一系列精心安排的步驟，用於部署來源程式碼以供生產使用。這些步驟包括首先建置、封裝、測試、驗證和部署到所有中繼環境中。因此，只有在建立了一組生產和中繼環境後，才能新增生產管道。
@@ -59,6 +53,7 @@ Cloud Manager 提供兩種類型的管道：
 除了生產和非生產之外，管道還可以透過它們部署的程式碼類型來區分。
 
 * **[完整堆疊程式碼管道](#full-stack-pipeline)** - 同時部署包含一個或多個 AEM 伺服器應用程序以及 HTTPD/Dispatcher 配置的後端和前端程式碼構建
+* **[設定部署管道](#config-deployment-pipeline)**  — 設定AEM環境、維護任務、CDN規則等的設定。
 * **[前端程式碼管道](#front-end)** - 部署包含一個或多個用戶端 UI 應用程式的前端程式碼建置。
 * **[Web 層設定管道](#web-tier-config-pipelines)** - 部署 HTTPD/ Dispatcher 設定。
 
@@ -73,9 +68,11 @@ Cloud Manager 提供兩種類型的管道：
 | 生產或非生產 | 部署 | 完整堆疊 | 同時部署後端和前端程式碼構建以及 HTTPD/Dispatcher 配置 | 當前端程式碼必須與 AEM 伺服器程式碼同時部署時。<br>當尚未採用前端管道或 Web 層配置管道時。 |
 | 生產或非生產 | 部署 | 前端 | 部署包含一個或多個客戶端 UI 應用程序的前端程式碼建構。 | 支援多個並發的前端管道<br>比完整堆疊部署快得多 |
 | 生產或非生產 | 部署 | Web 層設定 | 部署 HTTPD/Dispatcher 配置 | 幾分鐘內部署 |
+| 生產或非生產 | 部署 | 設定 | 部署流量篩選規則 | 幾分鐘內部署 |
 | 非生產 | 程式碼品質 | 完整堆疊 | 無需部署即可對完整堆疊程式碼執行程式碼品質掃描 | 支援多管道 |
 | 非生產 | 程式碼品質 | 前端 | 無需部署即可對前端程式碼執行程式碼品質掃描 | 支援多管道 |
 | 非生產 | 程式碼品質 | Web 層設定 | 在沒有部署的情況下對 Dispatcher 配置執行程式碼品質掃描 | 支援多管道 |
+| 非生產 | 程式碼品質 | 設定 | 部署流量篩選規則 |  |
 
 下圖說明了 Cloud Manager 的管道配置以及傳統的單一前端存放庫或獨立的前端存放庫設定。
 
@@ -106,6 +103,26 @@ Cloud Manager 提供兩種類型的管道：
 * 如果環境對應的 Web 層配置管道不存在，使用者可以配置完整堆疊管道包括或忽略 Dispatcher 配置。
 
 完整堆疊管道可以是程式碼品質管道或部署。
+
+### 正在設定完整堆疊管道 {#configure-full-stack}
+
+若要了解如何配置完整堆疊管道，請參閱以下文件：
+
+* [新增生產管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#full-stack-code)
+* [新增非生產管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#full-stack-code)
+
+## 設定部署管道 {#config-deployment-pipeline}
+
+使用配置部署管道，您可以在AEM環境中部署配置設定，用於維護任務、CDN規則等。
+
+請參閱檔案 [包含WAF規則的流量篩選規則](/help/security/traffic-filter-rules-including-waf.md) 以瞭解如何管理存放庫中的設定，以便正確部署。
+
+### 正在設定部署管道 {#configure-config-deployment}
+
+若要瞭解如何設定部署管道，請參閱以下檔案：
+
+* [新增生產管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#targeted-deployment)
+* [新增非生產管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#targeted-deployment)
 
 ## 前端管道 {#front-end}
 
@@ -142,14 +159,6 @@ Cloud Manager 提供兩種類型的管道：
 
 請參閱[使用前端管道開發網站](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md)，了解此程序的工作原理以及需要注意的一些注意事項，以充分發揮此程序的潛力。
 
-### 正在設定完整堆疊管道 {#configure-full-stack}
-
-若要了解如何配置完整堆疊管道，請參閱以下文件：
-
-* [新增生產管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#adding-production-pipeline)
-* [新增非生產管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#adding-non-production-pipeline)
-
-
 ## Web 層設定管道 {#web-tier-config-pipelines}
 
 Web 層配置管道透過將 HTTPD/Dispatcher 配置與其他程式碼更改分離，從而能夠將 HTTPD/Dispatcher 配置以獨占方式部署到 AEM 執行時。它是一個簡化的管道，為希望僅部署 Dispatcher 設定更改的使用者提供了一種在幾分鐘內完成的加速方法。
@@ -164,8 +173,8 @@ Web 層配置管道透過將 HTTPD/Dispatcher 配置與其他程式碼更改分�
 * 你必須[選擇使用 Dispatcher 的靈活模式](/help/implementing/dispatcher/disp-overview.md#validation-debug)使用 Web 層配置管道。
 * 使用者必須使用&#x200B;**部署管理員**&#x200B;角色以配置或執行管道。
 * 在任何時候，每個環境只能有一個 Web 層配置管道。
-* 當相對應的完整堆疊管道正在執行時，使用者無法設定 Web 層設定管道。
-* Web 層結構必須遵循靈活模式結構，如[雲端中的 Dispatcher](/help/implementing/dispatcher/disp-overview.md#validation-debug) 文件所定義。
+* 當相應的完整堆疊管道正在執行時，使用者無法配置 Web 層配置管道。
+* Web 層結構必須遵循靈活模式結構，如[雲端中的 Dispatcher](/help/implementing/dispatcher/disp-overview.md#validation-debug)文件所定義。
 
 此外，如果您選擇引入一個 [Web 層設定管道](#full-stack-pipeline)，請注意完整堆疊管道的運作方式。
 
@@ -175,9 +184,15 @@ Web 層配置管道透過將 HTTPD/Dispatcher 配置與其他程式碼更改分�
 
 Web 層配置管道可以是程式碼品質或部署類型。
 
-### 正在設定 Web 層設定管道 {#configure-web-tier-config-pipelines}
+### 設定Web層管道 {#configure-web-tier}
 
-要了解如何配置 Web 層設定檔完整堆疊管道，請參閱以下文件：
+要瞭解如何配置Web層管道，請參閱以下檔案：
 
-* [新增生產管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#adding-production-pipeline)
-* [新增非生產管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#adding-non-production-pipeline)
+* [新增生產管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#targeted-deployment)
+* [新增非生產管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#targeted-deployment)
+
+## 管道型別的影片概述 {#video}
+
+如需快速了解管道類型，請觀看此短影片。
+
+>[!VIDEO](https://video.tv.adobe.com/v/342363)

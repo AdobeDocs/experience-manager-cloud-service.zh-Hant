@@ -2,10 +2,10 @@
 title: 編輯計畫
 description: 了解如何編輯您的生產和沙箱計畫，以在建立計畫後調整其選項。
 exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
-source-git-commit: 97a6a7865f696f4d61a1fb4e25619caac7b68b51
-workflow-type: ht
-source-wordcount: '502'
-ht-degree: 100%
+source-git-commit: ecb168e9261b3e3ed89e4cbe430b3da9f777a795
+workflow-type: tm+mt
+source-wordcount: '507'
+ht-degree: 89%
 
 ---
 
@@ -53,15 +53,19 @@ ht-degree: 100%
    * 此日期僅供參考。這會觸發計劃概述頁面上的上線小工具。然後，小工具會提供至 Adobe Experience Manager (AEM) as a Cloud Service 最佳實務的產品內連結，以便貼近您的歷程進而為您帶來成功的上線體驗。
    * 沙箱計畫沒有此索引標籤。
 
+1. 如果方案有所需的權益，則 **安全性** 標籤會顯示您可以在何處修改程式的安全性選項。
+
+   ![編輯安全性設定](assets/edit-program-security.png)
+
+   * HIPAA之後無法啟用或停用 [程式建立。](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
+      * [深入了解](https://www.adobe.com/go/hipaa-ready_tw) Adobe 的 HIPAA 就緒解決方案實作方式。
+   * 一旦啟動，就可以設定WAF-DDOS保護 [非生產管道。](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
+
+   {{waf-limited-release}}
+
 1. 按一下「**更新**」，儲存計畫的變更。
 
 只要編輯計畫 (包括新增或移除解決方案或附加元件)，這些變更就會在下次部署後生效。
-
-如果您的生產計畫啟用了增強式安全性，則&#x200B;**編輯計畫**&#x200B;視窗中會提供額外的&#x200B;**增強式安全性**&#x200B;索引標籤，用來確認是否已對計畫啟用該功能。
-
-![已對計畫啟用增強式安全性](assets/edit-program-enhanced.png)
-
-建立計劃後，您無法編輯此設定。如需有關增強式安全性選項的詳細資訊，請參閱[建立生產計畫](creating-production-programs.md)。
 
 ## 刪除沙箱計畫 {#delete-sandbox-program}
 

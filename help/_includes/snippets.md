@@ -1,8 +1,8 @@
 ---
-source-git-commit: 867b87e0b22fdc4f0466b517e8a04c18fb2dc860
+source-git-commit: c20f59770f4eb722d49a96952126993577bfd65e
 workflow-type: tm+mt
-source-wordcount: '244'
-ht-degree: 37%
+source-wordcount: '262'
+ht-degree: 34%
 
 ---
 # 代碼片段 {#snippets}
@@ -20,6 +20,10 @@ ht-degree: 37%
 >[!NOTE]
 >
 >AEM 目前不支援指派群組到設定檔。應單獨新增使用者。
+
+## WAF設定限量發行 {#waf-limited-release}
+
+[!BADGE WAF-DDOS保護將於2023年底推出。]{type=Caution tooltip="WAF-DDOS保護將於2023年底推出。"}
 
 ## 另請參閱 {#see-also}
 

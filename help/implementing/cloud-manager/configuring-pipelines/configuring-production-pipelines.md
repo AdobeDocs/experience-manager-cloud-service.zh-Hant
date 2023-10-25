@@ -3,23 +3,23 @@ title: 設定生產管道
 description: 了解如何設定生產管道以建置程式碼並將其部署到生產環境。
 index: true
 exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: ht
-source-wordcount: '1507'
-ht-degree: 100%
+source-git-commit: edc5d88b4ffc4e13299d21f6579f5f52c40e0773
+workflow-type: tm+mt
+source-wordcount: '1420'
+ht-degree: 80%
 
 ---
 
 
 # 設定生產管道 {#configure-production-pipeline}
 
-了解如何設定生產管道以建置程式碼並將其部署到生產環境。生產管道會先將程式碼部署到中繼環境，並在獲得核准後將相同的程式碼部署到生產環境。
+了解如何設定生產管道以建置程式碼並將其部署到生產環境。生產管道會先將計畫碼部署到中繼環境，並在獲得核准後將相同的計畫碼部署到生產環境。
 
 使用者必須擁有&#x200B;**[部署管理員](/help/onboarding/cloud-manager-introduction.md#role-based-permissions)**&#x200B;角色才能設定生產管道。
 
 >[!NOTE]
 >
->直到計畫建立完成，且 Git 存放庫至少有一個分支，並建立生產和中繼環境組後，才能設定生產管道。
+>直到計畫建立完成，Git 存放庫至少有一個分支，並建立生產和中繼環境組後，才能設定生產管道。
 
 在開始部署程式碼之前，您必須從 [!UICONTROL Cloud Manager] 設定管道設定。
 
@@ -56,42 +56,18 @@ ht-degree: 100%
 
    ![生產管道設定](/help/implementing/cloud-manager/assets/configure-pipeline/production-pipeline-configuration.png)
 
-1. 在&#x200B;**原始程式碼**&#x200B;索引標籤上，您必須定義管道應在何處擷取其程式碼以及它是什麼類型的程式碼。
+1. 在 **原始碼** 索引標籤您必須選取管道應處理的程式碼型別。
 
-   * **[前端程式碼](#front-end-code)**
    * **[完整堆疊程式碼](#full-stack-code)**
-   * **[Web 層設定](#web-tier-config)**
+   * **[目標部署](#targeted-deployment)**
 
-完成建立生產流水線的步驟因所選&#x200B;**原始程式碼**&#x200B;選項而異。按照上面的連結跳到本文件的下一部分以完成管道的設定。
+請參閱檔案 [CI/CD管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) 有關管道型別的詳細資訊。
 
-### 前端程式碼 {#front-end-code}
-
-前端程式碼管道部署包含一個或多個用戶端 UI 應用程式的前端程式碼建置。如需有關此類管道的更多資訊，請參閱文件 [CI/CD 管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end)。
-
-若要完成前端程式碼生產管道的設定，請按照以下步驟操作。
-
-1. 在&#x200B;**原始程式碼**&#x200B;索引標籤上，您必須定義以下選項。
-
-   * **存放庫** - 此選項會定義管道應該從哪個 Git 存放庫擷取程式碼。
-
-   >[!TIP]
-   > 
-   >如要了解如何在 Cloud Manager 中新增和管理存放庫，請參閱文件：[新增和管理存放庫](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md)。
-
-   * **Git 分支** - 此選項會定義管道應該選取哪個分支來擷取程式碼。
-      * 輸入分支名稱的前幾個字元，該欄位的自動完成功能將會尋找相符的分支以幫助您進行選擇。
-   * **程式碼位置** - 此選項會定義管道應從所選存放庫的分支中擷取程式碼的路徑。
-   * **在部署到生產之前暫停** - 此選項會在部署到生產之前暫停管道。
-
-   ![前端程式碼](/help/implementing/cloud-manager/assets/configure-pipeline/production-pipeline-frontend.png)
-
-1. 按一下&#x200B;**儲存**，即可儲存您的管道。
-
-管道已儲存，您現在可以在&#x200B;**計畫概觀**&#x200B;頁面的&#x200B;**管道**&#x200B;卡上[管理您的管道](managing-pipelines.md)。
+完成建立生產流水線的步驟因所選原始計畫碼型別而異。 按照上面的連結跳到本文件的下一部分以便完成管道的設定。
 
 ### 完整堆疊程式碼 {#full-stack-code}
 
-完整堆疊程式碼管道同時部署包含一個或多個 AEM 伺服器應用程序以及 HTTPD/Dispatcher 配置的後端和前端程式碼構建。如需有關此類管道的更多資訊，請參閱文件 [CI/CD 管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#full-stack-pipeline)。
+完整堆疊程式碼管道同時部署包含一個或多個 AEM 伺服器應用程序以及 HTTPD/Dispatcher 配置的後端和前端程式碼構建。
 
 >[!NOTE]
 >
@@ -109,7 +85,7 @@ ht-degree: 100%
 
    * **Git 分支** - 此選項會定義管道應該選取哪個分支來擷取程式碼。
       * 輸入分支名稱的前幾個字元，該欄位的自動完成功能將會尋找相符的分支以幫助您進行選擇。
-   * **程式碼位置** - 此選項會定義管道應從所選存放庫的分支中擷取程式碼的路徑。
+   * **忽略 Web 層設定**- 選取後，管道不會部署您的 Web 層設定。
    * **在部署到生產之前暫停** - 此選項會在部署到生產之前暫停管道。
    * **已排程** - 此選項可讓使用者啟用已排程的產生部署。
 
@@ -141,43 +117,54 @@ ht-degree: 100%
 
 管道已儲存，您現在可以在&#x200B;**計畫概觀**&#x200B;頁面的&#x200B;**管道**&#x200B;卡上[管理您的管道](managing-pipelines.md)。
 
-### Web 層設定 {#web-tier-config}
+### 目標部署 {#targeted-deployment}
 
-Web 層設定管道部署 HTTPD/ Dispatcher 設定。如需有關此類管道的更多資訊，請參閱文件 [CI/CD 管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipeline)。
+目標部署只會為AEM應用程式的選定部分部署程式碼。 在這樣的部署中，您可以選擇 **包含** 下列其中一種程式碼型別：
 
-若要完成完整堆疊程式碼生產管道的設定，請按照以下步驟操作。
+* **[設定](#config)**  — 設定AEM環境、維護任務、CDN規則等的設定。
+   * 檢視檔案 [包含WAF規則的流量篩選規則](/help/security/traffic-filter-rules-including-waf.md) 以瞭解如何管理存放庫中的設定，以便正確部署。
+* **[前端計畫碼](#front-end-code)**  — 為AEM應用程式的前端設定JavaScript和CSS。
+   * 有了前端流水線，給前端開發者更多的獨立性，可以加快開發進程。
+   * 請參閱文件[使用前端管道開發網站](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) 了解此程序的工作原理以及需要注意的一些注意事項，以充分發揮此程序的潛力。
+* **[Web層設定](#web-tier-config)**  — 設定Dispatcher屬性以儲存、處理並傳送網頁給使用者端。
 
-1. 在&#x200B;**原始程式碼**&#x200B;索引標籤上，您必須定義以下選項。
+>[!NOTE]
+>
+>* 如果所選環境存在 Web 層程式碼管道，則此選項會停用。
+>* 如果您將現有的完整堆疊管道部署到環境，則為同一環境建立 Web 層設定管道將忽略完整堆疊管道中的現有 Web 層設定。
+> * 在任何時候，每個環境只能有一個設定部署管道。
+
+選擇部署型別後，完成建立生產、目標部署管道的步驟相同。
+
+1. 選擇所需的部署型別。
+
+![目標部署選項](/help/implementing/cloud-manager/assets/configure-pipeline/prod-pipeline-targeted-deployment.png)
+
+1. 定義 **符合資格的部署環境**.
+
+   * 如果您的管道是部署管道，則必須選擇它應該部署到哪些環境。
+
+1. 在 **原始碼**，定義下列選項：
 
    * **存放庫** - 此選項會定義管道應該從哪個 Git 存放庫擷取程式碼。
 
    >[!TIP]
    > 
-   >如要了解如何在 Cloud Manager 中新增和管理存放庫，請參閱文件：[新增和管理存放庫](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md)。
+   >請參閱[新增和管理存放庫](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md)，以便了解如何在 Cloud Manager 中新增和管理存放庫，
 
    * **Git 分支** - 此選項會定義管道應該選取哪個分支來擷取程式碼。
-      * 輸入分支名稱的前幾個字元，該欄位的自動完成功能將會尋找相符的分支以幫助您進行選擇。
+      * 輸入分支名稱的前幾個字元，該欄位的自動完成功能。會尋找相符的分支以幫助您進行選取。
    * **程式碼位置** - 此選項會定義管道應從所選存放庫的分支中擷取程式碼的路徑。
-      * 如果是 Web 層設定管道，這通常是包含 `conf.d`、`conf.dispatcher.d` 和 `opt-in`目錄的路徑。
-      * 例如，如果專案結構是從 [AEM 專案原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hant)產生的，則路徑將為 `/dispatcher/src`。
-   * **在部署到生產之前暫停**- 此選項會在部署到生產之前暫停管道。
-   * **已排程** - 此選項可讓使用者啟用已排程的產生部署。
+   * **在部署到生產之前暫停** - 此選項會在部署到生產之前暫停管道。
+   * **已排程** - 此選項可讓使用者啟用已排程的產生部署。僅適用於Web層目標部署。
 
-   ![Web 層程式碼](/help/implementing/cloud-manager/assets/configure-pipeline/production-pipeline-webtier.png)
+   ![設定部署管道](/help/implementing/cloud-manager/assets/configure-pipeline/prod-pipeline-config-deployment.png)
 
-1. 按一下&#x200B;**儲存**，即可儲存您的管道。
-
->[!NOTE]
->
->如果您將現有的完整堆疊管道部署到環境，則為同一環境建立 Web 層設定管道將忽略完整堆疊管道中的現有 Web 層設定。
+1. 按一下「**儲存**」。
 
 管道已儲存，您現在可以在&#x200B;**計畫概觀**&#x200B;頁面的&#x200B;**管道**&#x200B;卡上[管理您的管道](managing-pipelines.md)。
 
-## 使用前端管道開發網站 {#developing-with-front-end-pipeline}
-
-有了前端流水線，給前端開發者更多的獨立性，可以加快開發進程。
-
-請參閱[使用前端管道開發網站](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md)，了解此程序的工作原理以及需要注意的一些注意事項，以充分發揮此程序的潛力。
+執行目標部署管道時，需進行設定 [例如WAF組態](/help/security/traffic-filter-rules-including-waf.md) 將部署，前提是它們會儲存到您在管道中定義的環境、存放庫和分支。
 
 ## 跳過 Dispatcher 套件 {#skip-dispatcher-packages}
 

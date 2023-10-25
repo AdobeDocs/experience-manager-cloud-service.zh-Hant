@@ -2,10 +2,10 @@
 title: 建立生產計畫
 description: 了解如何使用 Cloud Manager 建立您自己的生產計畫來主持即時流量。
 exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
-workflow-type: ht
-source-wordcount: '581'
-ht-degree: 100%
+source-git-commit: ecb168e9261b3e3ed89e4cbe430b3da9f777a795
+workflow-type: tm+mt
+source-wordcount: '604'
+ht-degree: 88%
 
 ---
 
@@ -32,12 +32,15 @@ ht-degree: 100%
 
 1. 或者，您可以將影像檔拖放到&#x200B;**新增計畫影像**&#x200B;目標或按一下它從檔案瀏覽器選取影像，藉此新增影像到計畫。點選或按一下&#x200B;**繼續**。
 
-1. 如果您擁有增強式安全性權限，**增強式安全性**&#x200B;索引標籤將為您的生產計畫提供&#x200B;**啟用增強式安全性**&#x200B;的選項。如有需要，請選取啟用增強式安全性的選項，然後點選或按一下&#x200B;**繼續**。
+1. 如果您擁有必要的權益， **安全性** 標籤隨即顯示，並提供啟動選項 **HIPAA** 和/或 **WAF-DDOS保護** 用於您的生產計畫。 如果您正在建立的方案有需要，請核取適用的選項，然後點選或按一下 **繼續**.
 
-   * 增強式安全性無法在計畫建立後啟用或停用。
-   * [深入了解](https://www.adobe.com/go/hipaa-ready_tw) Adobe 的 HIPAA 就緒解決方案實作方式。
+   * HIPAA無法在方案建立後啟用或停用。
+      * [深入了解](https://www.adobe.com/go/hipaa-ready_tw) Adobe 的 HIPAA 就緒解決方案實作方式。
+   * 一旦啟動，就可以設定WAF-DDOS保護 [非生產管道。](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
 
-   ![增強式安全性選項](assets/create-production-program-enhanced.png)
+   {{waf-limited-release}}
+
+   ![安全性選項](assets/create-production-program-security.png)
 
 1. 在&#x200B;**解決方案和附加元件**&#x200B;索引標籤上，選取要納入計畫中的解決方案。
 
@@ -65,7 +68,7 @@ ht-degree: 100%
 
 ![Cloud Manager 概覽](assets/navigate-cm.png)
 
-## 存取你的計畫 {#acessing}
+## 存取你的計畫 {#accessing}
 
 1. 在登陸頁面上看到您的計畫卡後，選擇省略符號按鈕以查看可供您使用的選單選項。
 
