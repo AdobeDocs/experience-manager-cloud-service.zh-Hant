@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的運作方式以及該軟體可以為您做哪些事。
 breadcrumb-title: 使用手冊
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 5e6d209729809952b2478fd0a71b32668ba41230
+source-git-commit: c9ad4b6f2ae5107569c556ca11c75868c9e4be63
 workflow-type: tm+mt
-source-wordcount: '4336'
+source-wordcount: '4335'
 ht-degree: 98%
 
 ---
@@ -168,7 +168,7 @@ ht-degree: 98%
    + [AEM as a Cloud Service 的 IMS 支援](/help/security/ims-support.md)
    + [AEM as a Cloud Service 的相同網站 Cookie 支援](/help/security/same-site-cookie-support.md)
    + [郵件服務的 OAuth2 支援](/help/security/oauth2-support-for-mail-service.md)
-   + [設定含 WAF 規則的流量篩選規則來篩選流量](/help/security/cdn-and-waf-rules.md)
+   + [包含WAF規則的流量篩選規則](/help/security/traffic-filter-rules-including-waf.md)
    + [AEM as a Cloud Service 安全性注意事項](/help/security/security-considerations.md)
 + 上線 {#onboarding}
    + [從這裡開始](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html)
@@ -578,7 +578,7 @@ ht-degree: 98%
          + [將AEM Forms連線至資料庫或資料來源](/help/forms/data-integration.md)
          + [設定資料來源](/help/forms/configure-data-sources.md)
          + [設定 [!DNL Microsoft Dynamics] OData](/help/forms/ms-dynamics-odata-configuration.md)
-         + [使用 OAuth 2.0 用戶端認證流程的 Salesforce 應用程式整合](/help/forms/oauth2-client-credentials-flow-for-server-to-server-integration.md)
+         + [使用OAuth 2.0使用者端認證流程將調適型表單連線至Salesforce應用程式](/help/forms/oauth2-client-credentials-flow-for-server-to-server-integration.md)
          + [設定 [!DNL Azure] 儲存空間](/help/forms/configure-azure-storage.md)
          + [設定 [!DNL Microsoft Dynamics 365] 和 [!DNL Salesforce] 雲端服務](/help/forms/configure-msdynamics-salesforce.md)
          + [建立表單資料模型](/help/forms/create-form-data-models.md)

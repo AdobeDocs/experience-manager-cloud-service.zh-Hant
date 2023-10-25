@@ -3,7 +3,7 @@ title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 最新發行說明�
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 最新發行說明。'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: ab0fc832eb66bcf9a0fcd4f08b481845f3664e14
+source-git-commit: 8870e090d13504421c8056315918e13f4a50ee28
 workflow-type: tm+mt
 source-wordcount: '1440'
 ht-degree: 98%
@@ -126,7 +126,7 @@ Edge Delivery 是一組可組合的新服務，著重在最大限度地發揮內
 
 有興趣嘗試該功能並分享回饋意見嗎？從您的官方電子郵件 ID 傳送電子郵件到 **aemcs-waf-adopter@adobe.com**，深入了解有關早期採用者計劃的資訊。名額有限。
 
-若要深入了解該功能，請點選[這裡](/help/security/cdn-and-waf-rules.md)參閱文章。
+若要深入了解該功能，請點選[這裡](/help/security/traffic-filter-rules-including-waf.md)參閱文章。
 
 ## Cloud Manager {#cloud-manager}
 

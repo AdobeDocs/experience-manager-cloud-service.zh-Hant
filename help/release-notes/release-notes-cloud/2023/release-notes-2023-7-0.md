@@ -1,13 +1,13 @@
 ---
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2023.7.0 版發行說明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2023.7.0 版發行說明。'
-source-git-commit: 1158508cc28d33e5799b3102381f227db05a0107
-workflow-type: ht
+exl-id: 7866d94c-e54c-4bb2-aaa6-66c019e46336
+source-git-commit: 8870e090d13504421c8056315918e13f4a50ee28
+workflow-type: tm+mt
 source-wordcount: '942'
 ht-degree: 100%
 
 ---
-
 
 # [!DNL Adobe Experience Manager] as a Cloud Service 2023.7.0 版發行說明 {#release-notes}
 
@@ -89,13 +89,13 @@ Assets Essentials 現在會根據相關性 (依預設) 為搜尋結果進行排�
 
 ### [!DNL Forms] 中可用的搶鮮版功能 {#pre-release-features-available-in-forms-channel}
 
-* [**Google reCAPTCHA 企業支援**](/help/forms/captcha-adaptive-forms.md)：以調適型表單使用 Google reCAPTCHA 企業版，以針對詐欺活動和垃圾郵件提供增強的保護，進而提供更安全的使用者體驗。透過進階的風險分析和緊密整合，真實的使用者可輕鬆地提交表單，同時有效地封鎖機器人。
+* [**Google reCAPTCHA 企業支援**](/help/forms/captcha-adaptive-forms.md)：以最適化表單使用 Google reCAPTCHA 企業版，以針對詐欺活動和垃圾郵件提供增強的保護，進而提供更安全的使用者體驗。透過進階的風險分析和緊密整合，真實的使用者可輕鬆地提交表單，同時有效地封鎖機器人。
 
   >[!VIDEO](https://video.tv.adobe.com/v/3422097/adaptive-forms-recaptcha-core-components-captcha/?quality=12&learn=on)
 
 ### Headless 調適型表單早期採用者計畫 {#forms-early-adopter}
 
-使用 [Headless 調適型表單](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html)讓您的開發人員能夠建立、發佈和管理可透過 API 存取和互動的互動式表單，而不是透過傳統的圖形使用者介面。Headless 調適型表單可協助您：
+使用 [Headless 最適化表單](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html)讓您的開發人員能夠建立、發佈和管理可透過 API 存取和互動的互動式表單，而不是透過傳統的圖形使用者介面。Headless 最適化表單可協助您：
 
 * 使用您選擇的程式語言建置高品質的多管道表單
 * 以原生方式將表單整合到您的桌面和行動應用程式、網站和聊天應用程式
@@ -120,7 +120,7 @@ Assets Essentials 現在會根據相關性 (依預設) 為搜尋結果進行排�
 
 有興趣嘗試該功能並分享回饋意見嗎？從您的官方電子郵件 ID 傳送電子郵件到 **aemcs-waf-adopter@adobe.com**，深入了解有關早期採用者計劃的資訊。名額有限。
 
-若要深入了解該功能，請點選[這裡](/help/security/cdn-and-waf-rules.md)參閱文章。
+若要深入了解該功能，請點選[這裡](/help/security/traffic-filter-rules-including-waf.md)參閱文章。
 
 ### 其他基礎變更 {#other-foundation-changes}
 
