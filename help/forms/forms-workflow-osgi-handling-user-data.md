@@ -5,9 +5,9 @@ uuid: 6eefbe84-6496-4bf8-b065-212aa50cd074
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 9f400560-8152-4d07-a946-e514e9b9cedf
-source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
+source-git-commit: f70e18b1c21fd530587694f91c3969e831cfc640
 workflow-type: tm+mt
-source-wordcount: '1032'
+source-wordcount: '1030'
 ht-degree: 0%
 
 ---
@@ -74,7 +74,7 @@ ht-degree: 0%
 但是，在下列情況下識別與啟動器相關聯的工作流程時，您無法識別或結果可能模稜兩可：
 
 * **透過watched資料夾觸發的工作流程**：如果工作流程是由watched資料夾觸發，則無法使用啟動器識別工作流程執行個體。 在此情況下，使用者資訊會編碼在儲存的資料中。
-* **從發佈AEM執行個體初始的工作流程**：從AEM發佈執行個體提交最適化Forms、互動式通訊或信函時，所有工作流程執行個體都是使用服務使用者建立的。 在這些情況下，不會在工作流程例項資料中擷取登入使用者的使用者名稱。
+* **從發佈AEM執行個體初始的工作流程**：從AEM發佈執行個體提交Adaptive Forms或信函時，所有工作流程執行個體都是使用服務使用者建立的。 在這些情況下，不會在工作流程例項資料中擷取登入使用者的使用者名稱。
 
 ### 存取使用者資料 {#access}
 

@@ -3,14 +3,14 @@ title: 如何使用OAuth 2.0使用者端憑證流程整合Salesforce與AEM Forms
 description: 瞭解如何使用OAuth 2.0使用者端認證流程整合Salesforce與AEM Forms。
 Keywords: Integration of Salesforce using OAuth 2.0 client credential flow, salesforce integration with oauth2 using client credential flow, salesforce and client credential integration
 exl-id: 2c2029ab-6fb4-41a6-846c-175c3a79d921
-source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
+source-git-commit: f70e18b1c21fd530587694f91c3969e831cfc640
 workflow-type: tm+mt
-source-wordcount: '423'
-ht-degree: 94%
+source-wordcount: '422'
+ht-degree: 77%
 
 ---
 
-# 使用 OAuth 2.0 用戶端認證流程的 Salesforce 整合{#configure-salesforce-with-ouath-2.0-client-credential}
+# 使用OAuth 2.0使用者端認證流程將調適型表單連線至Salesforce {#configure-salesforce-with-ouath-2.0-client-credential}
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
@@ -19,8 +19,9 @@ ht-degree: 94%
 
 您可以使用 OAuth 2.0 用戶端認證將 AEM Forms 與 Salesforce 應用程式進行整合。OAuth 2.0 用戶端認證是一種標準且安全的直接通訊方式，無需使用者參與。
 
-![設定 AEM Forms 和 Salesforce 應用程式之間通訊時的工作流程](/help/forms/assets/salesforce-workflow.png)
-AEM Forms 會交換在 Salesforce 連線的應用程式中定義的用戶端認證 (客戶金鑰和客戶密碼)，以取得存取權杖。
+![設定AEM Forms與Salesforce應用程式之間的通訊時的工作流程](/help/forms/assets/salesforce-workflow.png)
+
+AEM Forms會交換在Salesforce連線應用程式中定義的使用者端憑證（消費者金鑰和使用者密碼）以取得存取權杖。
 
 比起授權代碼流程驗證，使用 OAuth 2.0 用戶端認證進行驗證有多種好處：
 
@@ -38,7 +39,7 @@ AEM Forms 會交換在 Salesforce 連線的應用程式中定義的用戶端認�
 
 ## 使用 OAuth 2.0 用戶端認證流程設定 Salesforce 應用程式 {#steps-to-create-aem-datasource-configuration}
 
-若要使用 OAuth 2.0 用戶端認證驗證設定將 Salesforce 應用程式和最適化表單整合，請執行下列步驟：
+若要使用OAuth 2.0使用者端認證驗證設定將Adaptive Form連線至Salesforce應用程式，請執行下列步驟：
 
 1. 登入您的作者執行個體。
 1. 前往&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 雲端服務]** > **[!UICONTROL 資料來源]**。
@@ -66,4 +67,6 @@ AEM Forms 會交換在 Salesforce 連線的應用程式中定義的用戶端認�
 1. 按一下「**[!UICONTROL 測試連線]**」。
 1. 如果連線成功，按一下「**[!UICONTROL 建立]**」按鈕。
 
-現在您即可[建立表單資料模型](/help/forms/create-form-data-models.md)，將已設定的資料來源和您的最適化表單整合在一起。
+現在，您可以 [建立表單資料模型](/help/forms/create-form-data-models.md) 將最適化表單傳送至Salesforce應用程式。
+
+

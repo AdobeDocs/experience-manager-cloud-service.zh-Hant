@@ -2,9 +2,9 @@
 title: 如何建立並使用主題來設定最適化表單的樣式？
 description: 使用最適化表單主題來設定樣式並為最適化表單提供視覺身分。 您可以在任何數量的最適化Forms中共用主題。
 exl-id: 99c3d1f7-5756-49d2-98ee-72dd62063110
-source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+source-git-commit: f70e18b1c21fd530587694f91c3969e831cfc640
 workflow-type: tm+mt
-source-wordcount: '5581'
+source-wordcount: '5578'
 ht-degree: 2%
 
 ---
@@ -650,7 +650,7 @@ You can use the theme configuration service to add more fonts to the theme edito
     
     * **主題編輯器：**
     
-    主題編輯器可讓您建立主題來設定表單的樣式 &lt;!> — 或互動式通訊 — >。 您可以在主題中指定元件的樣式，讓多個表單的外觀和感覺保持一致 &lt;!> — 或互動式通訊 — >由您開發。 建議在主題中指定樣式資訊，然後將主題套用至表單。
+    主題編輯器可讓您建立主題來設定表單的樣式 &lt;!> — 或互動式通訊 — >。 您可以指定主題中元件的樣式，以便在您開發的多個表單之間保持外觀和感覺的一致性。 建議在主題中指定樣式資訊，然後將主題套用至表單。
     
     * **內嵌樣式：**
     
