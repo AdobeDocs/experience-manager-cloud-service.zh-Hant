@@ -2,10 +2,10 @@
 title: 包含WAF規則的流量篩選規則
 description: 設定流量篩選規則，包括Web應用程式防火牆(WAF)規則
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: 1683819d4f11d4503aa0d218ecff6375fc5c54d1
+source-git-commit: 00d3323be28fe12729204ef00e336c7a4c63cda7
 workflow-type: tm+mt
-source-wordcount: '3312'
-ht-degree: 51%
+source-wordcount: '3480'
+ht-degree: 47%
 
 ---
 
@@ -118,6 +118,10 @@ ht-degree: 51%
 
 若為 RDE，會使用命令列，但目前不支援 RDE。
 
+**附註**
+
+* 您可以使用 `yq` 在本機驗證組態檔的YAML格式(例如 `yq cdn.yaml`)。
+
 ## 流量篩選規則語法 {#rules-syntax}
 
 您可以將 `traffic filter rules` 設定為符合 IPS、使用者代理、要求標頭、主機名稱、地理位置和 URL 等模式。
@@ -152,7 +156,7 @@ data:
 |---|---|---|---|---|---|
 | 名稱 | X | X | `string` | - | 規則名稱 (64 個字元的長度，只能包含英數字元和 -) |
 | 時間 | X | X | `Condition` | - | 基本結構是：<br><br>`{ <getter>: <value>, <predicate>: <value> }`<br><br>[請參閱下面的條件結構語法，其中會說明 getter、述詞以及結合多個條件的方式。](#condition-structure) |
-| 動作 | X | X | `Action` | 記錄 | log、allow、block、log 或 action 物件，預設為 log |
+| 動作 | X | X | `Action` | 記錄 | 記錄、允許、封鎖或動作物件。 預設為log |
 | rateLimit | X |   | `RateLimit` | 未定義 | 速率限制設定。若未定義，則停用速率限制。<br><br>以下會有一個單獨的章節說明 rateLimit 語法以及範例。 |
 
 ### 條件結構 {#condition-structure}
@@ -188,11 +192,11 @@ data:
 
 | **屬性** | **類型** | **說明** |
 |---|---|---|
-| reqProperty | `string` | 要求屬性。<br><br>以下其中之一：`path`、`queryString`、`method`、`tier`、`domain`、`clientIp`、`clientCountry`<br><br>網域屬性是要求的主機標頭的小寫變換。對於字串比較很有用，因此不會因區分大小寫而錯過相符的情況。<br><br>`clientCountry` 會使用顯示在 [https://en.wikipedia.org/wiki/Regional_indicator_symbol](https://en.wikipedia.org/wiki/Regional_indicator_symbol) 的字母代碼 |
+| reqProperty | `string` | 要求屬性。<br><br>其中之一：<br><ul><li>`path`：傳回不含查詢引數的URL完整路徑。</li><li>`queryString`：傳回URL的查詢部分</li><li>`method`：傳回要求中使用的HTTP方法。</li><li>`tier`：傳回其中之一 `author`， `preview` 或 `publish`.</li><li>`domain`：傳回網域屬性(如 `Host` header)</li><li>`clientIp`：傳回使用者端IP。</li><li>`clientCountry`：傳回兩個字母的代碼([https://en.wikipedia.org/wiki/Regional_indicator_symbol](https://en.wikipedia.org/wiki/Regional_indicator_symbol) 可識別使用者端所在的國家/地區。</li></ul> |
 | reqHeader | `string` | 傳回具有指定名稱的要求標頭 |
 | queryParam | `string` | 傳回具有指定名稱的查詢參數 |
 | reqCookie | `string` | 傳回具有指定名稱的 Cookie |
-| postParam | `string` | 從本文傳回具有指定名稱的引數。 只有當內文屬於內容型別時才有效 `application/x-www-form-urlencoded` |
+| postParam | `string` | 從要求內文傳回指定名稱的Post引數。 只有當內文屬於內容型別時才有效 `application/x-www-form-urlencoded` |
 
 **述詞**
 
@@ -207,6 +211,19 @@ data:
 | **in** | `array[string]` | 如果所提供的清單包含 getter 結果，則為 true |
 | **notIn** | `array[string]` | 如果所提供的清單不包含 getter 結果，則為 true |
 | **存在** | `boolean` | 若設為true且屬性存在或設為false且屬性不存在時為true |
+
+**附註**
+
+* 要求屬性 `clientIp` 只能與下列述詞一起使用： `equals`， `doesNotEqual`， `in`， `notIn`. `clientIp` 使用時也可以與IP範圍進行比較 `in` 和 `notIn` 述詞。 下列範例實作條件來評估使用者端IP是否在192.168.0.0/24的IP範圍內（所以從192.168.0.0到192.168.0.255）：
+
+```
+when:
+  reqProperty: clientIp
+  in: [ "192.168.0.0/24" ]
+```
+
+* 我們建議使用 [regex101](https://regex101.com/) 和 [Fastly Fiddle](https://fiddle.fastly.dev/) 使用regex時。 您還可以在此進一步瞭解Fastly如何處理regex [文章](https://developer.fastly.com/reference/vcl/regex/#best-practices-and-common-mistakes).
+
 
 ### 動作結構 {#action-structure}
 
@@ -259,6 +276,8 @@ data:
 * 如果規則相符並遭封鎖，CDN 會以 `406` 傳回代碼回應。
 
 * 設定檔不應包含密碼，因為任何有權存取 git 存放庫的人都可以讀取。
+
+* Cloud Manager中定義的IP允許清單優先於流量篩選器規則。
 
 ## 規則範例 {#examples}
 
@@ -396,9 +415,10 @@ data:
 | **屬性** | **類型** | **預設** | **含義** |
 |---|---|---|---|
 | 限制 | 10 到 10000 之間的整數 | 必要 | 每秒觸發規則之要求的要求速率（每CDN POP）。 |
-| 視窗 | 整數列舉：1、10 或 60 | 10 | 計算要求速率的取樣期間 (秒數). |
+| 視窗 | 整數列舉：1、10 或 60 | 10 | 計算要求速率的取樣期間 (秒數)。計數器的準確度將取決於視窗的大小（視窗越大，準確度越高）。 例如，1秒視窗可望達到50%的準確度，60秒視窗可望達到90%的準確度。 |
 | 懲罰 | 60 到 3600 之間的整數 | 300 (5 分鐘) | 封鎖相符要求時間的秒數 (四捨五入到最接近的分鐘). |
 | groupBy | array[Getter] | 無 | 速率限制器計數器將由一組要求屬性 (例如 clientIp) 彙總。 |
+
 
 ### 範例 {#ratelimiting-examples}
 
