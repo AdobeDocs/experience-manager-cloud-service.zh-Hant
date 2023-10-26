@@ -2,10 +2,10 @@
 title: 包含WAF規則的流量篩選規則
 description: 設定流量篩選規則，包括Web應用程式防火牆(WAF)規則
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: 00d3323be28fe12729204ef00e336c7a4c63cda7
+source-git-commit: aca385ff9a44733a6529c7e78e73fc1b138c1177
 workflow-type: tm+mt
-source-wordcount: '3480'
-ht-degree: 47%
+source-wordcount: '3453'
+ht-degree: 45%
 
 ---
 
@@ -227,7 +227,7 @@ when:
 
 ### 動作結構 {#action-structure}
 
-由 `action` 欄位指定，可以是字串，此字串會指定動作類型 (允許、封鎖、記錄) 並假設所有其他選項使用預設值，也可以是物件，在其中規則類型是透過 `type` 必要欄位所定義以及適用該類型的其他選項。
+一個 `action` 可以是指定動作（允許、區塊或記錄）的字串，也可以是由動作型別（允許、區塊或記錄）和wafFlags和/或狀態等選項組成的物件。
 
 **動作類型**
 
@@ -278,6 +278,8 @@ when:
 * 設定檔不應包含密碼，因為任何有權存取 git 存放庫的人都可以讀取。
 
 * Cloud Manager中定義的IP允許清單優先於流量篩選器規則。
+
+* WAF規則符合專案只會顯示在CDN遺漏和通過次數的CDN記錄中，而不會顯示在點選中。
 
 ## 規則範例 {#examples}
 
@@ -491,7 +493,7 @@ AEMas a Cloud Service提供對CDN記錄的存取權，這些記錄可用於快�
 * 如果WAF已獲授權且已啟用， `waf` attribute將列出偵測到的任何WAF旗標（例如SQLI），無論這些WAF旗標是否列在任何規則中。 這是為了提供潛在新規則宣告的深入分析。
 * 如果沒有符合客戶宣告的規則且沒有相符的waf規則， `rules` 屬性將為空白。
 
-一般而言，相符的規則會顯示在對 CDN 發出的所有要求的記錄條目中，無論是 CDN 命中、通過還是未命中。但是，會顯示 WAF 規則的記錄條目僅限於發送給被視為 CDN 未命中或通過但不被視為 CDN 命中的 CDN 要求。
+如前所述，WAF規則符合專案僅會顯示在CDN遺漏和通過次數的CDN記錄中，而非點選中。
 
 以下範例顯示一個範例 `cdn.yaml` 和兩個CDN記錄專案：
 
