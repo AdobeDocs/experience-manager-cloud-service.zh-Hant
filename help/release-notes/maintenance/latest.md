@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的目前維護版本發行說明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的目前維護版本發行說明。'
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: aa9629c3e48ca0bf4654351462a94777af9ed651
+source-git-commit: 6e82bbcc1b83fa9216831f6f746665507a46eec7
 workflow-type: tm+mt
-source-wordcount: '606'
-ht-degree: 23%
+source-wordcount: '585'
+ht-degree: 24%
 
 ---
 
@@ -71,8 +71,7 @@ ht-degree: 23%
 
 ### 已知問題 {#known-issues-14029}
 
-* CQ-4354836：無法從專案控制檯啟動工作流程或建立任務。
-* CQ-4354834 ：使用者無法在收件匣任務中新增評論。
+無。
 
 ### 內嵌技術 {#embedded-tech-14029}
 
