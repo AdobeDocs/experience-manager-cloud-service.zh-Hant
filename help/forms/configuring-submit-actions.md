@@ -2,10 +2,10 @@
 title: 如何為最適化表單設定提交動作?
 description: 最適化表單提供多個提交動作。提交動作會定義提交之後處理最適化表單的方式。您可以使用內建的提交動作或建立自己的動作。
 exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
-source-git-commit: ddc7ddbcd1761b4320e1c7a30a015d844ef3e0c0
+source-git-commit: f79ed400ac2c1956dd7946cec2881f4e77d4bd41
 workflow-type: tm+mt
-source-wordcount: '3403'
-ht-degree: 87%
+source-wordcount: '3429'
+ht-degree: 85%
 
 ---
 
@@ -172,14 +172,22 @@ For more information about the Forms Portal and Submit Action, see [Drafts and s
 
 ## 提交到 SharePoint {#submit-to-sharedrive}
 
-「**[!UICONTROL 提交到 SharePoint]**」提交動作會將最適化表單與 Microsoft® SharePoint 儲存空間建立連結。您可以將表單資料檔案、附件或記錄文件提交到連結的 Microsoft® Sharepoint 儲存空間。若要在最適化表單中使用「**[!UICONTROL 提交到 SharePoint]**」提交動作：
+「**[!UICONTROL 提交到 SharePoint]**」提交動作會將最適化表單與 Microsoft® SharePoint 儲存空間建立連結。您可以將表單資料檔案、附件或記錄文件提交到連結的 Microsoft® Sharepoint 儲存空間。
 
-1. [建立 SharePoint 設定](#create-a-sharepoint-configuration-create-sharepoint-configuration)：會將 AEM Forms 連結到您的 Microsoft® Sharepoint 儲存空間。
+<!-- Using Submit to SharePoint, you can:
+* [Connect an Adaptive Form to SharePoint Document Library](#connect-af-sharepoint-doc-library)
+* [Connect an Adaptive Form to SharePoint List](#connect-af-sharepoint-list) -->
+
+### 將最適化表單連線至SharePoint檔案庫 {#connect-af-sharepoint-doc-library}
+
+若要使用 **[!UICONTROL 提交至SharePoint檔案庫]** 以最適化表單提交動作：
+
+1. [建立SharePoint檔案庫組態](#create-a-sharepoint-configuration-create-sharepoint-configuration)：它會將AEM Forms連線至您的Microsoft® Sharepoint儲存空間。
 2. [使用最適化表單中的「提交到 SharePoint」提交動作](#use-sharepoint-configuartion-in-af)：會將您的最適化表單連結到已設定的 Microsoft® SharePoint。
 
-### 建立 SharePoint 設定 {#create-sharepoint-configuration}
+#### 建立SharePoint檔案庫組態 {#create-sharepoint-configuration}
 
-若要將 AEM Forms 連結到您的 Microsoft® Sharepoint 儲存空間：
+若要將AEM Forms連線至您的Microsoft® Sharepoint檔案庫儲存空間：
 
 1. 前往您的 **AEM Forms Author** 執行個體> **[!UICONTROL 工具]** > **[!UICONTROL Cloud Service]** >  **[!UICONTROL Microsoft® SharePoint]**.
 1. 一旦您選取 **[!UICONTROL Microsoft® SharePoint]**，您就會被重新導向至 **[!UICONTROL SharePoint瀏覽器]**.
@@ -208,15 +216,15 @@ For more information about the Forms Portal and Submit Action, see [Drafts and s
 
 現在，您可以使用此SharePoint Sites設定，在最適化表單中執行提交動作。
 
-### 在最適化表單中使用SharePoint設定 {#use-sharepoint-configuartion-in-af}
+#### 在最適化表單中使用SharePoint檔案庫設定 {#use-sharepoint-configuartion-in-af}
 
-您可以在最適化表單中使用建立的SharePoint設定，以將資料或產生的記錄檔案儲存到SharePoint資料夾中。 執行以下步驟，在最適化表單中使用SharePoint儲存體設定，如下所示：
+您可以使用在最適化表單中建立的SharePoint檔案庫組態，將資料或產生的記錄檔案儲存在SharePoint資料夾中。 執行以下步驟，在最適化表單中使用SharePoint檔案庫儲存設定，如下所示：
 
 1. 建立[最適化表單](/help/forms/creating-adaptive-form.md)。
 
    >[!NOTE]
    >
-   > * 選取相同的 [!UICONTROL 設定容器] 最適化表單的開頭，您已在其中建立SharePoint儲存空間。
+   > * 選取相同的 [!UICONTROL 設定容器] 最適化表單(您已在其中建立SharePoint檔案庫儲存空間)。
    > * 如果沒有選取「[!UICONTROL 設定容器]」，「提交動作」屬性視窗中會顯示全域「[!UICONTROL 儲存空間設定]」資料夾。
 
 1. 選取「**提交動作**」做為「**[!UICONTROL 提交到 SharePoint]**」。
@@ -224,16 +232,74 @@ For more information about the Forms Portal and Submit Action, see [Drafts and s
 1. 選取您要儲存資料的「**[!UICONTROL 儲存空間設定]**」。
 1. 按一下「**[!UICONTROL 儲存]**」以儲存「提交」設定。
 
-提交表單時，資料會儲存在指定的Microsoft® Sharepoint儲存空間中。
+當您提交表單時，資料會儲存在指定的Microsoft® Sharepoint檔案庫儲存空間中。
 儲存資料的資料夾結構是 `/folder_name/form_name/year/month/date/submission_id/data`。
+
+<!--
+### Connect an Adaptive Form to Microsoft® SharePoint List {#connect-af-sharepoint-list}
+
+<span class="preview"> This is a pre-release feature and accessible through our [pre-release channel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
+
+>[!VIDEO](https://video.tv.adobe.com/v/3424820/connect-aem-adaptive-form-to-sharepointlist/?quality=12&learn=on)
+
+To use the [!UICONTROL Submit to SharePoint List] Submit Action in an Adaptive Form:
+
+1. [Create a SharePoint List Configuration](#create-sharepoint-list-configuration): It connects AEM Forms to your Microsoft® Sharepoint List Storage.
+1. [Use the Submit using Form Data Model in an Adaptive Form](#use-submit-using-fdm): It connects your Adaptive Form to configured Microsoft® SharePoint.
+
+#### Create a SharePoint List Configuration {#create-sharepoint-list-configuration}
+
+To connect AEM Forms to your Microsoft&reg; Sharepoint List:
+
+1. Go to **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** >  **[!UICONTROL Microsoft® SharePoint]**.   
+1. Select a **Configuration Container**. The configuration is stored in the selected Configuration Container. 
+1. Click **[!UICONTROL Create]** > **[!UICONTROL SharePoint List]** from the drop-down list. The SharePoint configuration wizard appears.  
+1. Specify the **[!UICONTROL Title]**, **[!UICONTROL Client ID]**, **[!UICONTROL Client Secret]** and **[!UICONTROL OAuth URL]**. For information on how to retrieve Client ID, Client Secret, Tenant ID for OAuth URL, see [Microsoft&reg; Documentation](https://learn.microsoft.com/en-us/graph/auth-register-app-v2).
+    * You can retrieve the `Client ID` and `Client Secret` of your app from the Microsoft&reg; Azure portal.
+    * In the Microsoft&reg; Azure portal, add the Redirect URI as `https://[author-instance]/libs/cq/sharepointlist/content/configurations/wizard.html`. Replace `[author-instance]` with the URL of your Author instance.
+    * Add the API permissions `offline_access` and `Sites.Manage.All` in the **Microsoft® Graph** tab to provide read/write permissions. Add `AllSites.Manage` permission in the **Sharepoint** tab to interact remotely with SharePoint data.
+    * Use OAuth URL: `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`. Replace `<tenant-id>` with the `tenant-id` of your app from the Microsoft&reg; Azure portal.
+
+      >[!NOTE]
+      >
+      > The **client secret** field is mandatory or optional depends upon your Azure Active Directory application configuration. If your application is configured to use a client secret, it is mandatory to provide the client secret.
+
+1. Click **[!UICONTROL Connect]**. On a successful connection, the `Connection Successful` message appears.
+1. Select **[!UICONTROL SharePoint Site]** and **[!UICONTROL SharePoint List]** from the drop-down list.
+1. Tap **[!UICONTROL Create]** to create the cloud configuration for the Microsoft® SharePointList.
+
+    >[!NOTE]
+    >
+    > In Microsoft® SharePoint List, the following column types are not supported:
+    > * image column
+    > * metadata column
+    > * person column
+    > * external data column
+
+#### Use the Submit using Form Data Model in an Adaptive Form {#use-submit-using-fdm}
+
+You can use the created SharePoint List configuration in an Adaptive Form, to save data or generated Document of Record in a SharePoint List folder. Perform the following steps to use a SharePoint List storage configuration in an Adaptive Form as:
+
+1. [Create a Form Data Model using Microsoft® SharePoint List configuration](/help/forms/create-form-data-models.md)
+1. [Configure the Form Data Model to retrieve and send data](/help/forms/work-with-form-data-model.md#configure-services)
+1. [Create an Adaptive Form](/help/forms/creating-adaptive-form.md)
+1. [Configure Submit action using a Form Data Model](/help/forms/configuring-submit-actions.md#submit-using-form-data-model)
+
+When you submit the form, the data is saved in the specified Microsoft&reg; Sharepoint List Storage. 
+
+    >[!NOTE]
+    >
+    > In Microsoft® SharePoint List, the following column types are not supported:
+    > * image column
+    > * metadata column
+    > * person column
+    > * external data column
+    
+-->
 
 ## 提交到 OneDrive {#submit-to-onedrive}
 
-「**[!UICONTROL 提交到 OneDrive]**」提交動作會將最適化表單連結到 Microsoft® OneDrive。您可以將表單資料、檔案、附件或記錄文件提交到連結的 Microsoft® OneDrive 儲存空間。
-
->[!VIDEO](https://video.tv.adobe.com/v/3424864/connect-aem-adaptive-form-to-onedrive/?quality=12&learn=on)
-
-若要在最適化表單中使用「[!UICONTROL 提交到 OneDrive]」提交動作：
+「**[!UICONTROL 提交到 OneDrive]**」提交動作會將最適化表單連結到 Microsoft® OneDrive。您可以將表單資料、檔案、附件或記錄文件提交到連結的 Microsoft® OneDrive 儲存空間。若要在最適化表單中使用「[!UICONTROL 提交到 OneDrive]」提交動作：
 
 1. [建立 OneDrive 設定](#create-a-onedrive-configuration-create-onedrive-configuration)：將 AEM Forms 連接到您的 Microsoft® OneDrive 儲存空間。
 2. [在最適化表單中使用「提交到 OneDrive」提交動作](#use-onedrive-configuration-in-an-adaptive-form-use-onedrive-configuartion-in-af)：將您的最適化表單連結到

@@ -3,7 +3,9 @@ title: 如何將AEM最適化表單連結至Microsoft® SharePoint清單？
 description: 將最適化表單連線至Microsoft® SharePoint清單。 瞭解如何設定Microsoft® SharePoint清單，並使用設定建立表單資料模型。 此外，您將瞭解如何將FDM與最適化表單整合。
 role: User, Developer
 keywords: 將AEM最適化表單連線至Microsoft SharePoint清單、將最適化表單連線至Microsoft SharePoint清單、將AEM最適化表單整合至Microsoft SharePoint清單、將最適化表單整合至Microsoft SharePoint清單、將最適化表單的資料提交至SharePoint清單、將AEM工作流程提交至SharePoint清單。
-source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
+hide: true
+hidefromToC: true
+source-git-commit: f79ed400ac2c1956dd7946cec2881f4e77d4bd41
 workflow-type: tm+mt
 source-wordcount: '552'
 ht-degree: 5%

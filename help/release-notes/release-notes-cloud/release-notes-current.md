@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 最新發行說明�
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 最新發行說明。'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 8870e090d13504421c8056315918e13f4a50ee28
+source-git-commit: 6e834244f3de7e615df12b137f2ae90a11e64ad0
 workflow-type: tm+mt
-source-wordcount: '1440'
-ht-degree: 98%
+source-wordcount: '951'
+ht-degree: 54%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 98%
 
 ## 發行日期 {#release-date}
 
-[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 目前功能版本 (2023.2.0) 的發行日期是 2023 年 9 月 28 日。 下一個功能版本 (2023.10.0) 計畫於 2023 年 10 月 26 日發行。
+的發行日期 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 目前功能版本(2023.10.0)為2023年10月26日。 下一個功能版本(2023.11.0)計畫於2023年11月30日發行。
 
 ## 維護版本發行說明 {#maintenance}
 
@@ -34,33 +34,29 @@ ht-degree: 98%
 
 ## 發行影片 {#release-video}
 
-請觀看2023年9月版本概觀影片，瞭解2023.9.0版本新增功能摘要：
+請觀看 2023 年 10 月發行概觀影片，了解 2023.10.0 版本新增功能摘要：
 
->[!VIDEO](https://video.tv.adobe.com/v/3424826/?quality=12)
-
-## Edge Delivery Services {#edge-delivery}
-
-Edge Delivery 是一組可組合的新服務，著重在最大限度地發揮內容的影響，以便與客戶互動時能推動可衡量的業務成果。
-
-了解更多關於 Edge Delivery Services 的文章：[這裡](/help/edge/overview.md)。
+>[!VIDEO](https://video.tv.adobe.com/v/3425186/?quality=12)
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
+### 新功能 {#assets-features}
+
+**適用於Adobe Express的AEM Assets附加元件**：Experience Manager Assets現在提供 [Adobe Express的附加元件](/help/assets/addon-adobe-express.md). 附加元件可讓您從Adobe Express使用者介面直接存取儲存在Experience Manager Assets中的資產。 您可以將 AEM Assets 中管理的內容放置在 Express 畫布中，然後將新的或編輯的內容儲存在 AEM Assets 存放庫中。此附加元件提供以下主要優點：
+
+* 透過在 AEM 中編輯和儲存新資源來提高內容重複使用率
+
+* 減少建立新資產或現有資產新版本的整體時間和精力
+
+  ![包括資產附加元件中的資產](/help/assets/assets/aem-assets-add-on-include-assets.png)
+
 ### 資產檢視中的新功能 {#assets-view-features}
 
-**將中繼資料表單指派至資料夾**
+* **從OneDrive資料來源大量匯入資產**：管理員現在能夠 [將大量資產從OneDrive匯入AEM Assets](/help/assets/bulk-import-assets-view.md#onedrive-developer-application). 支援大量匯入的資料來源更新清單包括Azure、AWS、Google Cloud、Dropbox和OneDrive。
 
-現在您可以將中繼資料表單指派到部署中的特定資料夾。然後，資料夾中的所有資產 (包括子資料夾中的資產) 將顯示被指派中繼資料表單中定義的屬性。
+  ![將中繼資料表單指派至資料夾](/help/assets/assets/bulk-import-source-details-onedrive.png)
 
-![將中繼資料表單指派至資料夾](/help/release-notes/assets/assign-to-folder.png)
-
-### 管理員檢視中的新功能 {#admin-view-features}
-
-* **整合 AEM Assets as a Cloud Service 與 Edge Delivery Services 文件型撰寫功能**：整合 AEM Assets as a Cloud Service 與 Edge Delivery Services 文件型撰寫功能，讓網站撰寫者能[在 Microsoft Word 或 Google 文件中撰寫文件時使用 AEM Assets 存放庫中提供的影像](/help/edge/using.md#integrate-assets-edge)。
-
-* **擷取 ZIP 封存**：能夠選取在 Experience Manager 中管理的 ZIP 存檔，並可[將檔案直接擷取至 Experience Manager 中的檔案](/help/assets/manage-digital-assets.md#extract-zip-archives)無需下載。
-
-  ![為群組釘選項目](/help/release-notes/assets/extract-archive.png)
+* **程式庫的跨組織權益支援**：Experience Manager Assets現在可讓您在其他IMS組織中設定Creative Cloud程式庫的存取權。 它可讓您更輕鬆地存取Creative Cloud和Experience Manager之間最新的跨產品工作流程，並減少創意內容的時間和精力。
 
 ### [!DNL Experience Manager Assets] 中可用的搶鮮版功能 {#prerelease-features-assets}
 
@@ -72,30 +68,17 @@ Edge Delivery 是一組可組合的新服務，著重在最大限度地發揮內
 
 ### [!DNL Experience Manager Forms] 中的新功能 {#forms-features}
 
-* [**Google reCAPTCHA 企業支援**](/help/forms/captcha-adaptive-forms-core-components.md)：以最適化表單使用 Google reCAPTCHA 企業版，以針對詐欺活動和垃圾郵件提供增強的保護，進而提供更安全的使用者體驗。透過進階的風險分析和緊密整合，真實的使用者可輕鬆地提交表單，同時有效地封鎖機器人。
+* **最適化Forms的自訂屬性**：您可以將自訂屬性（索引鍵值配對）與表單範本或調適型表單元件建立關聯，好讓表單開發人員能夠根據這些自訂屬性的值調整動態表單行為。 例如，開發人員可以根據自訂屬性的值，在行動、桌上型電腦或Web平台上製作Headless Forms元件的不同轉譯，藉此大幅提升各種裝置的使用者體驗。
 
-* [**Adobe Analytics 與表單的 Experience Cloud Setup Automation**](/help/forms/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.md)：您現在只需輕按幾個按鈕，即可啟用 Adobe Analytics 和 Experience Cloud Setup Automation。這能讓您將 AEM Forms as a Cloud Service 與 Experience Platform 標籤和 Adobe Analytics 連接，以擷取和追蹤已發佈表單的效能指標。
+* **主題和範本**：透過我們的新主題和範本，開始您的表單建立流程，量身打造以增強經驗豐富的專業人員和新表單作者的能力。 使用調適型表單元核心元件無縫建置的這些精心策劃的主題和範本，可讓您迅速地開始針對常見使用案例建立表單。
 
-  >[!VIDEO](https://video.tv.adobe.com/v/3424577/enable-adobe-analytics/?quality=12&learn=on)
+  ![現成可用的範本](/help/forms/assets/form-templates-ootb.png)
 
-* [**適用於最適化表單的 Adobe Analytics 報告範本**](/help/forms/view-understand-aem-forms-analytics-reports.md)：Forms as a Cloud Service 現在提供 Adobe Analytics 報告 OOTB。這可幫助您輕鬆了解表單的效能。表單層級的量度可讓您深入了解表單在多個關鍵效能指標 (KPI) 上的表現，例如呈現、訪客、提交、平均填寫時間。透過追蹤使用者行為和意見回饋，您可以識別表單中造成混亂的部份，並指引表單設計和功能的改善。
+### [!DNL Forms] 中可用的搶鮮版功能 {#pre-release-features-available-in-forms-channel}
 
-  ![最適化表單使用者參與 Adobe Analytics 報告](/help/forms/assets/forms-analytics-report.png)
+* **將Forms提交至Microsoft SharePoint清單**： AEM Forms提供OOTB整合，可直接將表單資料提交至SharePoint清單，讓您運用SharePoint的清單功能。
 
-* **[以核心元件為主的最適化表單中的表單片段](/help/forms/adaptive-form-fragments-core-components.md)**：告別重複的資料、最佳化您的數位庫存，並可改善協作，同時還可使用表單片段提升表單建構體驗。這些可重複使用的元件無縫整合至到多種表單中，簡化了一致且具有專業外觀的表單建立。表單片段透過「一次變更，處處反映」功能確保可重複性、標準化和品牌一致性。由於在一處進行的更新會自動傳播到使用這些片段的所有表單，因此可體驗更高的可維護性和效率。
-
-* **[更佳的 Adobe Sign 工作流程步驟](/help/forms/aem-forms-workflow-step-reference.md#sign-document-step-sign-document-step)**：Adobe Sign 工作流程步驟經過改善，其中包括：
-   * **Adobe Sign 以政府核發 ID 為主的驗證**：Adobe Acrobat Sign 以政府核發 ID 為主的驗證允許使用者使用政府核發的 ID (駕&#x200B;&#x200B;駛執照、國民身份證、護照) 驗證其身份，進而提&#x200B;&#x200B;供更多的驗證防護層。透過運用受信任的身份識別文件，此增強功能可讓簽名過程更添一層信心，使其成為需要增強安全性、合規性和使用者驗證等情況的理想選擇。
-
-   * **Adobe Sign 文件的稽核軌跡**：使用稽核軌跡功能詳細了解 Adobe Sign 文件的生命週期。透過稽核軌跡，您現在可以保留與文件相關的所有動作和互動的全面記錄。其中包括查看、編輯或簽署文件等人員的詳細資訊，以及每個事件的時間戳記。此加強功能對於維持合規性、解決爭議和確保數位協議的完整性至關重要。
-
-   * **協議收件者的新角色不僅僅是簽署人**：Adobe Acrobat Sign 可以選擇將協議收件人的角色擴展到簽署人之外，這樣更可符合其工作流程要求。啟用後，每位協議收件人有其可設定的個別角色，且以簽署人為預設。
-
-* **通訊 API 中的頁數支援**：現在，除了透過通訊 API 擷取文件之外，您還可以接收有關文件內所含頁數的重要資訊。
-
-* **[使用規則編輯器中的自訂錯誤處理常式發生錯誤處理](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)**：您現在可以呼叫自訂函數來回應外部服務傳回的錯誤，並為一般使用者提供量身打造的回應。例如，您可以針對特定錯誤程式碼在後端叫用自訂的工作流程，或通知客戶服務已關閉。
-
-* **[AEM Forms Designer 64 位元版本](/help/forms/installing-configuring-designer.md)**：AEM Forms Designer 64 位元版本在效能、可擴充性和記憶體管理方面更為提升，以增強您的表單建立體驗。透過 64 位元架構，您可以輕鬆處理更大、更複雜的專案，確保設計工作流程流暢和最佳效率。透過這最先進的版本，提升您的表單設計能力並擁抱 AEM Forms Designer 的未來。
+  >[!VIDEO](https://video.tv.adobe.com/v/3424820/connect-aem-adaptive-form-to-sharepointlist/?quality=12&learn=on)
 
 ### 早期採用計劃 {#forms-early-adopter}
 
@@ -103,30 +86,17 @@ Edge Delivery 是一組可組合的新服務，著重在最大限度地發揮內
 
   您可以透過您的官方電子郵件 ID 寫信給 `aem-forms-early-adopter-program@adobe.com`，加入早期採用者計畫並要求存取該功能。
 
-* **[Headless 最適化表單](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html)**：使用 Headless 最適化表單讓您的開發人員能夠建立、發佈和管理可透過 API 存取和互動的互動式表單，而不是透過傳統的圖形使用者介面。Headless 最適化表單可協助您：
-
-   * 使用您選擇的程式語言建置高品質的多管道表單
-   * 以原生方式將表單整合到您的桌面和行動應用程式、網站和聊天應用程式
-   * 在表單應用程式中重複使用您的專屬 UI 元件
-   * 使用 Adobe Experience Manager Forms 的強大功能
-
-  使用您的官方電子郵件 ID 寄送電子郵件至 `aem-forms-headless@adobe.com`，即可加入早期採用者計畫。
-
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
-### 行銷活動相關 URL 參數的新 CDN 快取行為 {#cache-url-params}
+### 流量篩選器規則，包括WAF {#traffic-filter-rules-waf}
 
-對於新環境，CDN 將依預設刪除行銷相關的查詢參數，以提高行銷活動效能和快取點擊率。既有環境不受影響。[深入了解.](/help/implementing/dispatcher/caching.md#marketing-parameters)
+[在Adobe管理的CDN篩選流量](/help/security/traffic-filter-rules-including-waf.md) 透過宣告規則來比對網站流量（包括url、IP位址和使用者代理程式），或設定自訂流量速率限制來防禦DoS攻擊。 客戶也可以授權一組進階的Web應用程式防火牆(WAF)規則，針對複雜的網站威脅提供額外的保護。
 
-### 流量篩選規則 (包括 WAF 規則) 早期採用者計劃 {#waf-early-adopter}
+我們鼓勵您透過以下方式熟悉流量篩選規則 [試用教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview.html)！ 它會逐步引導您設定新的Cloud Manager設定管道、在設定檔案中宣告規則，以及分析CDN記錄檔中的惡意流量。
 
-在 CDN 篩選流量的根據：
-* 要求的標頭和屬性 (例如，IP 位址)
-* 已知和惡意流量相關的流量模式
+流量篩選規則現在適用於開發環境，並於11月逐步推出至預備和生產環境。 您可以透過傳送電子郵件至stage和prod，要求更早的存取權 **aemcs-waf-adopter@adobe.com**.
 
-有興趣嘗試該功能並分享回饋意見嗎？從您的官方電子郵件 ID 傳送電子郵件到 **aemcs-waf-adopter@adobe.com**，深入了解有關早期採用者計劃的資訊。名額有限。
-
-若要深入了解該功能，請點選[這裡](/help/security/traffic-filter-rules-including-waf.md)參閱文章。
+進階WAF流量篩選規則可於今年稍後透過「增強式安全性」或「WAF-DDoS保護」方案授權。
 
 ## Cloud Manager {#cloud-manager}
 
