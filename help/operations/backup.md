@@ -5,7 +5,7 @@ exl-id: 469fb1a1-7426-4379-9fe3-f5b0ebf64d74
 source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
 workflow-type: tm+mt
 source-wordcount: '514'
-ht-degree: 21%
+ht-degree: 24%
 
 ---
 
@@ -46,6 +46,6 @@ AEMas a Cloud Service支援：
 
 ## 異地備份 {#offsite-backup}
 
-雖然定期備份涵蓋AEM Cloud Service中意外刪除或技術失敗的風險，但同時也必須涵蓋區域失敗可能帶來的風險。 除了可用性以外，這類資料區域中斷的最大風險主要是資料遺失。
+雖然定期備份涵蓋AEMCloud Service中意外刪除或技術失敗的風險，但同時也必須涵蓋區域失敗可能帶來的風險。 除了可用性以外，這類資料區域中斷的最大風險主要是資料遺失。
 AEMas a Cloud Service涵蓋此風險，作為所有AEM生產環境的標準。 它會持續將整個AEM內容複製到遠端區域，並在三個月內提供回覆功能。 Adobe會將此功能呼叫異地備份。
-如果資料區域中斷，中繼和生產環境的AEM雲端服務復原會由「AEM服務可靠性工程」執行。
+如果資料區域發生中斷，AEM服務可靠性工程部門會針對中繼和生產環境還原AEMCloud Service。

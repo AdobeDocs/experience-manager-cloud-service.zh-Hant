@@ -5,7 +5,7 @@ exl-id: 402dd3a6-44e5-4d13-97d8-1d7fa26a99e4
 source-git-commit: 701a7610780553731a6ac4c85fe3221ee3d98ae2
 workflow-type: tm+mt
 source-wordcount: '740'
-ht-degree: 83%
+ht-degree: 93%
 
 ---
 
@@ -40,16 +40,16 @@ Highlights upcoming features for Assets.
 
 釘選檔案、資料夾和集合，以便在之後需要時可以更快速地存取這些項目。所有釘選的項目都顯示在「我的工作區」的&#x200B;**快速存取**&#x200B;部分。您可以使用「我的工作區」進行存取，而不是瀏覽到存放庫中儲存的位置。
 
-若要釘選資產、資料夾或集合：
+要釘選資產、資料夾或集合：
 
-1. 選取專案並按一下 **[!UICONTROL 釘選至快速存取]**.
+1. 選取項目並按一下「**[!UICONTROL 釘選並快速存取]**」。
 
-1. 選取是否需要為您、整個組織或選取的群組固定專案。 如果您選取 **[!UICONTROL 針對群組]**，在中定義群組名稱 **[!UICONTROL 釘選群組]** 欄位。
+1. 選取是否只是為了您自己、整個組織還是選定的群組而需要釘選項目。如果您選取「**[!UICONTROL 為了群組]**」，請在「**[!UICONTROL 為群組釘選]**」欄位中定義群組名稱。
 
-   ![釘選群組的專案](assets/pin-items-for-groups.png)
-1. 按一下 **[!UICONTROL 釘選]**.
+   ![為群組釘選項目](assets/pin-items-for-groups.png)
+1. 按一下「**[!UICONTROL 釘選]**」。
 
-   所選的專案會顯示在 **[!UICONTROL 快速存取]** 區段。
+   選定的項目會顯示在「我的工作區」的「**[!UICONTROL 快速存取]**」區段。
    ![工作區中的任務](assets/quick-access.png)
 
 **Insights**

@@ -16,7 +16,7 @@ ht-degree: 89%
 >title="管理收藏集"
 >abstract="收藏集是 Assets 檢視中的一組資產、檔案夾或其他集合。使用收藏集在使用者之間共用資產。和檔案夾不同，收藏集可包含來自不同位置的資產。您可以和使用者共用多個收藏集。每個收藏集都包含資產的參考資料。資產的參考完整性會跨越收藏集來維護。"
 
-集合是Adobe Experience Manager Assets檢視中的一組資產、資料夾或其他集合。 使用收藏集在使用者之間共用資產。
+收藏集是Adobe Experience Manager資產檢視中的一組資產、資料夾或其他收藏集。 使用收藏集在使用者之間共用資產。
 
 和檔案夾不同，收藏集可包含來自不同位置的資產。
 
@@ -92,7 +92,7 @@ You can share collections with various users that are assigned different levels 
 
 ## 管理智慧型集合 {#manage-smart-collection}
 
-將搜尋結果另存為 Smart Collection 以動態更新收藏集內容。 如果有新增至「資產」檢視存放庫的資產符合建立Smart Collection時定義的搜尋條件，則開啟Smart Collection時，Smart Collection的內容會自動更新。
+將搜尋結果另存為 Smart Collection 以動態更新收藏集內容。 如果新增到「資產」檢視存放庫的資產符合建立Smart Collection時定義的搜尋條件，則開啟Smart Collection時，Smart Collection的內容會自動更新。
 
 ### 建立智慧型集合 {#create-smart-collection}
 
@@ -162,7 +162,7 @@ Click **[!UICONTROL Collections]** in the left rail and use the Search box to sp
 
 ![共用資產連結](assets/share-link-collections.png)
 
-如需如何與外部利益關係人共用集合連結的詳細資訊，請參閱 [共用資產連結](/help/assets/share-links-for-assets-view.md).
+如需有關如何與外部利益關係人共用收藏集連結的詳細資訊，請參閱 [共用資產連結](/help/assets/share-links-for-assets-view.md).
 
 ## 下載收藏集 {#download-collection}
 

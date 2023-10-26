@@ -3,7 +3,7 @@ title: 體驗稽核測試
 description: 了解體驗稽核如何驗證您的部署過程，並幫助確保部署的變更符合效能、協助工具、最佳實務和 SEO 的基準標準。
 exl-id: 8d31bc9c-d38d-4d5b-b2ae-b758e02b7073
 source-git-commit: 9f305e1127957fdba6dae978da4ac5fce4d3a776
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '588'
 ht-degree: 100%
 

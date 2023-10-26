@@ -5,7 +5,7 @@ exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
 source-git-commit: 13c67c35238c5138120f6d0d4845c759221d65ad
 workflow-type: tm+mt
 source-wordcount: '2015'
-ht-degree: 91%
+ht-degree: 92%
 
 ---
 
@@ -201,7 +201,7 @@ AEM as a Cloud Service 現在主要使用 [Sling 內容分送](https://sling.apa
 
 ## 具有Edge Delivery Services的AEM {#aem-with-edge-delivery-services}
 
-透過Edge Delivery Services，AEM可提供卓越的體驗，促進參與和轉換。 AEM透過提供快速編寫和開發的高影響力體驗來做到這一點。 Edge Delivery Services是一組可撰寫的服務，可啟用快速開發環境，讓作者可以快速更新和發佈，並快速啟動新網站。 因此，您可以使用Edge Delivery Services改善轉換、降低成本，並提供極致的內容速度。
+透過Edge Delivery Services，AEM可提供卓越的體驗，促進參與和轉換。 AEM 會透過提供快速編寫和開發的高影響力體驗來實現這一目標。Edge Delivery Services是一組可撰寫的服務，可啟用快速開發環境，讓作者可以快速更新和發佈，並快速啟動新網站。 因此，透過 Edge Delivery Services，您可以提高轉換率、降低成本並提供極高的內容速度。
 
 更新的架構包含：
 
@@ -211,7 +211,7 @@ AEM as a Cloud Service 現在主要使用 [Sling 內容分送](https://sling.apa
    * 頁面編輯器
    * 檔案式撰寫；從SharePoint或Google Drive
 * 體驗傳送，現在包含：
-   * Edge遞送服務
+   * Edge Delivery Services
 * 輔助服務可快速、有效率地提供內容和程式碼
 
 ![AEMas a Cloud Service概述 — 包含Edge Delivery Services](assets/AEMaaCS-Edge-Architecture.png "AEMas a Cloud Service概述 — 包含Edge Delivery Services")
@@ -219,5 +219,5 @@ AEM as a Cloud Service 現在主要使用 [Sling 內容分送](https://sling.apa
 另請參閱:
 
 * [AEMas a Cloud Service概述 — 包含Edge Delivery Services](/help/edge/overview.md)
-* [使用Edge Delivery Services](/help/edge/using.md)
+* [使用 Edge Delivery Services](/help/edge/using.md)
 * [探索AEM與Edge Delivery Servicesas a Cloud Service的基本架構和重要片段](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/introduction/architecture.html)

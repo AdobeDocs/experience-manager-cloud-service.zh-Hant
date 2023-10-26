@@ -11,7 +11,7 @@ ht-degree: 17%
 
 # Cloud Acceleration Manager 快速入門 {#get-started-cam}
 
-Cloud Acceleration Manager 是雲端型應用程式，旨在引導您的 IT 團隊進行從規劃到在 Cloud Service 上線的轉換歷程。透過Adobe建議的最佳實務、秘訣、檔案和工具，協助進行AEM as aCloud Service歷程的每個階段，讓您的團隊成功進行移轉。
+Cloud Acceleration Manager 是雲端型應用程式，旨在引導您的 IT 團隊進行從規劃到在 Cloud Service 上線的轉變歷程。透過Adobe建議的最佳實務、秘訣、檔案和工具，協助進行AEM as aCloud Service歷程的每個階段，讓您的團隊成功進行移轉。
 
 ## 目標 {#objective}
 

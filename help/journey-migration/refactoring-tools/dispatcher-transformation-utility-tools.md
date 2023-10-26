@@ -25,7 +25,7 @@ Dispatcher是Adobe Experience Manager的快取或負載平衡（或兩者）工�
 >[!NOTE]
 >Dispatcher 最常見的用法是快取來自 **AEM Publish 例項**&#x200B;的回應，以提高您對外發佈網站的回應速度與安全性。
 
-另請參閱 [Dispatcher綜覽](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=zh-Hant) 以瞭解Dispatcher如何執行快取、傳回檔案和執行負載平衡。
+另請參閱 [Dispatcher綜覽](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html) 以瞭解Dispatcher如何執行快取、傳回檔案和執行負載平衡。
 
 ### Apache 和 Dispatcher 設定和測試 {#dispatcher-configurations-cloud}
 
@@ -35,7 +35,7 @@ Dispatcher是Adobe Experience Manager的快取或負載平衡（或兩者）工�
 
 ## AEM Dispatcher 轉換工具 {#aem-dispatcher-converter}
 
-AEM Dispatcher Converter可將現有的內部部署或Adobe Managed Services Dispatcher設定重構成與AEMas a Cloud Service相容的Dispatcher設定。
+AEM Dispatcher Converter可將現有的內部部署或Managed Services Dispatcher設定Adobe為與AEMas a Cloud Service相容的Dispatcher設定。
 
 ## 使用 AEM Dispatcher 轉換工具 {#using-dispatcher-converter}
 
