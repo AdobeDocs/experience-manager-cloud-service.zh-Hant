@@ -1,13 +1,13 @@
 ---
 title: 瞭解Cloud Service內容請求
 description: 如果您已向Adobe購買內容請求授權，請瞭解Adobe Experience Cloud as a Service測量的內容請求型別，以及組織與分析報告工具的差異。
-source-git-commit: e34b21194e35b2f56dd1e7df2165c3fa5c0cb7da
+exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
+source-git-commit: 25a4a6b9ae09cb71f50317990af1718db1e14355
 workflow-type: tm+mt
 source-wordcount: '1171'
 ht-degree: 12%
 
 ---
-
 
 # Cloud Service內容請求
 
@@ -67,5 +67,3 @@ ht-degree: 12%
 | 排除Commerce integration framework呼叫 | 已排除 | 這些是向AEM提出並轉送至Commerce integration framework的請求 — URL開頭為 `/api/graphql` — 為了避免重複計算，這些量度不針對Cloud Service計費。 |
 | 排除 `manifest.json` | 已排除 | 資訊清單不是API呼叫，而是提供如何在案頭或行動電話上安裝網站的資訊。 Adobe不應將JSON請求計算為 `/etc.clientlibs/*/manifest.json` |
 | 排除 `favicon.ico` | 已排除 | 雖然傳回的內容不應是HTML或JSON，但根據我們的觀察，在某些案例中（例如SAML驗證流程），favicon可以傳回為HTML，因此會明確從計數中排除。 |
-
-
