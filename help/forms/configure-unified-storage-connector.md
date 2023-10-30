@@ -1,23 +1,23 @@
 ---
-title: 如何設定AEM Forms的統一儲存聯結器？
-description: 瞭解如何管理AEM Forms的統一儲存聯結器。 使用統一的儲存聯結器將AEM Forms連線至外部資料儲存。
+title: 如何設定AEM Forms的統一儲存聯結器(USC)？
+description: 瞭解如何管理AEM Forms的統一儲存聯結器(USC)。 使用統一儲存聯結器(USC)將AEM Forms連線至外部資料儲存。
 exl-id: c93d0242-0c15-4d69-82a1-d6fcc7da4bae
-source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
+source-git-commit: c33f59cb56decf1e5bbbe0b5bb084e906585e702
 workflow-type: tm+mt
-source-wordcount: '632'
+source-wordcount: '641'
 ht-degree: 0%
 
 ---
 
-# 管理AEM Forms的統一儲存聯結器 {#manage-unified-storage-connector}
+# 管理AEM Forms的統一儲存聯結器(USC) {#manage-unified-storage-connector}
 
-您可以使用統一的儲存聯結器將AEM Forms連線至外部資料儲存。
+您可以使用統一儲存聯結器(USC)將AEM Forms連線至外部資料儲存。
 
-例如，您可以在最適化表單中填寫欄位值，並將其提交至AEM Workflow。 您可以進一步設定AEM Workflow將資料儲存在外部儲存空間，例如Microsoft Azure儲存伺服器。 使用統一的儲存聯結器在AEM Workflow和外部儲存體之間建立連線。
+例如，您可以在最適化表單中填寫欄位值，並將其提交至AEM Workflow。 您可以進一步設定AEM Workflow將資料儲存在外部儲存空間，例如Microsoft Azure儲存伺服器。 使用統一儲存聯結器(USC)在AEM Workflow和外部儲存裝置之間建立連線。
 
 ## 將AEM工作流程與Microsoft Azure儲存伺服器連線 {#connect-workflows-with-azure}
 
-建立Azure儲存體設定，並使用統一儲存聯結器參照該設定。 然後，您可以設定AEM工作流程模型以將資料儲存區外部化，以將其連線至Azure儲存體伺服器。
+建立Azure儲存體設定，並使用統一儲存聯結器(USC)參照該設定。 然後，您可以設定AEM工作流程模型以將資料儲存區外部化，以將其連線至Azure儲存體伺服器。
 
 ### 建立 [!DNL Azure] 儲存設定 {#create-azure-storage-configuration}
 
@@ -31,9 +31,9 @@ ht-degree: 0%
 1. 指定 [!DNL Azure] 中的儲存體帳戶 **[!UICONTROL Azure儲存體帳戶]** 欄位。
 1. 指定金鑰以存取 **[!UICONTROL Azure存取金鑰]** 欄位並點選 **[!UICONTROL 儲存]**.
 
-### 設定AEM Workflow的統一儲存聯結器 {#configure-unified-storage-connector-workflows}
+### 設定AEM Workflow的統一儲存聯結器(USC) {#configure-unified-storage-connector-workflows}
 
-執行以下步驟，為AEM Workflow設定統一的儲存聯結器：
+執行以下步驟，為AEM Workflow設定統一儲存聯結器(USC)：
 
 1. 瀏覽至 **[!UICONTROL 工具]** > **[!UICONTROL Forms]** > **[!UICONTROL 統一的儲存聯結器]**.
 

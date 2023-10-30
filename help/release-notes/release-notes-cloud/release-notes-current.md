@@ -6,7 +6,7 @@ exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 source-git-commit: f1af229fa0fb75a6181eae545ac7e51b31f212f7
 workflow-type: tm+mt
 source-wordcount: '920'
-ht-degree: 56%
+ht-degree: 59%
 
 ---
 
@@ -56,7 +56,7 @@ ht-degree: 56%
 
   ![將中繼資料表單指派至資料夾](/help/assets/assets/bulk-import-source-details-onedrive.png)
 
-* **程式庫的跨組織權益支援**：Experience Manager Assets現在可讓您在其他IMS組織中設定Creative Cloud程式庫的存取權。 它可讓您更輕鬆地存取Creative Cloud和Experience Manager之間最新的跨產品工作流程，並減少創意內容的時間和精力。
+* **針對資料庫的跨組織權益支援**：Experience Manager Assets現在可讓您在其他IMS組織中設定Creative Cloud程式庫的存取權。 它允許更輕鬆地在 Creative Cloud 和 Experience Manager 之間存取最新跨產品工作流程，減少創作者工作所需時間和精力。
 
 ### [!DNL Experience Manager Assets] 中可用的搶鮮版功能 {#prerelease-features-assets}
 

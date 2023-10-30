@@ -9,7 +9,7 @@ role: User, Developer
 level: Intermediate
 topic: Migration
 exl-id: 090e77ff-62ec-40cb-8263-58720f3b7558
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: 397e7d4f23202b8ae7419b0ad5436a6a10e2efb8
 workflow-type: tm+mt
 source-wordcount: '1583'
 ht-degree: 4%
@@ -171,7 +171,7 @@ ht-degree: 4%
 移轉公用程式可協助您根據基礎元件移轉最適化Forms。 此外，Formsas a Cloud Service也支援最適化Forms核心元件。 因此，您可以：
 
 * [建立以核心元件為基礎的獨立最適化Forms](/help/forms/creating-adaptive-form-core-components.md)
-* [直接在AEM Sites頁面中建立以核心元件為基礎的最適化表單](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+* [直接在AEM Sites頁面中建立核心元件式最適化表單](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
 
 若要進一步瞭解AEM Formsas a Cloud Service，請參閱：
 

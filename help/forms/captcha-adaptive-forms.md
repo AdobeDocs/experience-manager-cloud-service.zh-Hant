@@ -6,9 +6,9 @@ contentOwner: vishgupt
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: adaptive_forms, author
 exl-id: 3fdbe5a3-5c3c-474d-b701-e0182da4191a
-source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+source-git-commit: 397e7d4f23202b8ae7419b0ad5436a6a10e2efb8
 workflow-type: tm+mt
-source-wordcount: '1945'
+source-wordcount: '1935'
 ht-degree: 7%
 
 ---
@@ -347,7 +347,10 @@ reCAPTCHA服務使用 `https://www.recaptcha.net/` 作為預設網域。 您可�
 
 {{see-also}}
 
+<!--
 
 >[!MORELIKETHIS]
 >
->* [最適化Forms的參考主題、範本和表單資料模型](/help/forms/reference-themes-templates-data-models.md)
+>* [Reference Themes, Templates, and Form Data models for Adaptive Forms](/help/forms/reference-themes-templates-data-models.md)
+
+-->

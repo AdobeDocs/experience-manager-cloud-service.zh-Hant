@@ -2,9 +2,9 @@
 title: 包含WAF規則的流量篩選規則
 description: 設定流量篩選規則，包括Web應用程式防火牆(WAF)規則
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: aca385ff9a44733a6529c7e78e73fc1b138c1177
+source-git-commit: 8df8322eef7c74932d6feeeb4a7a6045935edd88
 workflow-type: tm+mt
-source-wordcount: '3453'
+source-wordcount: '3473'
 ht-degree: 45%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 45%
 # 包含WAF規則的流量篩選規則 {#traffic-filter-rules-including-waf-rules}
 
 >[!NOTE]
->此功能即將於開發環境中推出，並於11月逐步推出至測試和生產環境。 您可以透過傳送電子郵件至stage和prod，要求更早的存取權 **aemcs-waf-adopter@adobe.com**.
+>此功能現在可用於開發環境，並會在11月晚些時候逐步推出至測試和生產環境。 您可以透過傳送電子郵件至stage和prod，要求更早的存取權 **aemcs-waf-adopter@adobe.com**.
 
 流量篩選規則可以用來在CDN層封鎖或允許請求，這可能在以下情況下有用：
 
@@ -26,6 +26,8 @@ ht-degree: 45%
 流量篩選規則的子類別需要增強式安全性授權或WAF-DDoS保護授權，將於今年晚些時候提供。 這些強大的規則稱為WAF （Web應用程式防火牆）流量篩選規則（簡稱WAF規則），可存取 [WAF旗標](#waf-flags-list) 本文稍後會說明。
 
 流量篩選器規則可以透過Cloud Manager設定管道部署到生產（非沙箱）計畫中的開發、暫存和生產環境型別。 未來將提供RDE支援。
+
+[逐步說明教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview.html) 以快速建立有關此功能的具體專業知識。
 
 ## 本文的組織方式 {#how-organized}
 

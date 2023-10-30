@@ -5,10 +5,10 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
 exl-id: 1e812d93-4ba5-4589-b59b-2f564d754b0f
-source-git-commit: f79ed400ac2c1956dd7946cec2881f4e77d4bd41
+source-git-commit: 397e7d4f23202b8ae7419b0ad5436a6a10e2efb8
 workflow-type: tm+mt
-source-wordcount: '2326'
-ht-degree: 66%
+source-wordcount: '2303'
+ht-degree: 67%
 
 ---
 
@@ -191,15 +191,21 @@ ht-degree: 66%
 1. 點選「**[!UICONTROL 儲存]**」以儲存屬性。
 
 
-## 檢視下一個
+<!--
 
-* [為您的表單建立樣式或主題](using-themes-in-core-components.md)
-* [使用規則編輯器將動態行為新增至表單](rule-editor.md)
-* [設定不同熒幕大小和裝置型別的表單版面](/help/sites-cloud/authoring/features/responsive-layout.md)
-* [範例主題範本和表單資料模型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)
+## See next
+
+* [Create style or themes for your forms](using-themes-in-core-components.md)
+* [Add dynamic behavior to forms using the rule editor](rule-editor.md)
+* [Set layout of forms for different screen sizes and device types](/help/sites-cloud/authoring/features/responsive-layout.md)
+* [Sample themes templates and form data models](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)
+
+-->
 
 ## 另請參閱 {#see-also}
 
 {{see-also}}
 
+* [使用規則編輯器將動態行為新增至表單](rule-editor.md)
+* [設定不同熒幕大小和裝置型別的表單版面](/help/sites-cloud/authoring/features/responsive-layout.md)
 

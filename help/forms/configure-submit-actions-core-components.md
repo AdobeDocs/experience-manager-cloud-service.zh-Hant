@@ -3,9 +3,9 @@ title: 如何為最適化表單設定提交動作?
 description: 最適化表單提供多個提交動作。提交動作會定義提交之後處理最適化表單的方式。您可以使用內建的提交動作或建立您自己的提交動作
 keywords: 如何選取最適化表單的提交動作、將最適化表單連線至sharepoint清單、將最適化表單連線至sharepoint檔案庫、將最適化表單連線至表單資料模型
 exl-id: 495948e8-30a7-4e7c-952f-c71de15520f0
-source-git-commit: f79ed400ac2c1956dd7946cec2881f4e77d4bd41
+source-git-commit: 397e7d4f23202b8ae7419b0ad5436a6a10e2efb8
 workflow-type: tm+mt
-source-wordcount: '3658'
+source-wordcount: '3635'
 ht-degree: 91%
 
 ---
@@ -498,12 +498,14 @@ For more information about the Forms Portal and Submit Action, see [Drafts and s
 <!-- For more information, see [Customizing Pages shown by the Error Handler](/help/sites-developing/customizing-errorhandler-pages.md). -->
 
 
-## 檢視下一個
+<!--
+## See next
 
-* [為您的表單建立樣式或主題](using-themes-in-core-components.md)
-* [建立最適化表單（核心元件）](/help/forms/creating-adaptive-form-core-components.md)
-* [建立最適化Forms的自訂提交動作](/help/forms/custom-submit-action-form.md)
+* [Create style or themes for your forms](using-themes-in-core-components.md)
+* [Create an Adaptive Form (core components)](/help/forms/creating-adaptive-form-core-components.md)
+* [Create a custom Submit Action for Adaptive Forms](/help/forms/custom-submit-action-form.md)
 
+-->
 
 ## 另請參閱 {#see-also}
 

@@ -3,7 +3,7 @@ title: 如何下載和安裝Forms Designer以建立記錄檔案範本？
 description: 使用Forms Designer建立XDP和PDF表單範本，作為記錄檔案的範本。
 keywords: 安裝Designer、安裝Forms Designer、安裝Forms Designer的需求
 exl-id: d6f1cb21-c48b-406d-8d47-482d7a1b4cc3
-source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
+source-git-commit: 397e7d4f23202b8ae7419b0ad5436a6a10e2efb8
 workflow-type: tm+mt
 source-wordcount: '410'
 ht-degree: 9%
@@ -74,8 +74,13 @@ Designer是一種點選式圖形化表單設計工具，可簡化XDP和PDF表單
 * [使用自訂字型](/help/forms/use-custom-fonts.md)
 * [建立獨立的以核心元件為主的最適化表單](/help/forms/creating-adaptive-form-core-components.md)
 * [建立或新增最適化表單至 AEM Sites 頁面](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+* [使用Forms Designer建立記錄檔案(DoR)範本和表單片段](/help/forms/use-forms-designer.md)
 
+
+<!--
 
 >[!MORELIKETHIS]
 >
->* [使用Forms Designer建立記錄檔案(DoR)範本和表單片段](/help/forms/use-forms-designer.md)
+>* [Use Forms Designer to create Document of Record (DoR) templates and form fragments](/help/forms/use-forms-designer.md)
+
+-->

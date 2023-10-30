@@ -3,9 +3,9 @@ title: 如何根據核心元件建立最適化表單範本？
 description: 根據核心元件建立最適化表單範本，以使用範本編輯器定義基本結構和初始內容。
 Keywords: create adaptive form template, create adaptive form template based on core components, Use template to create adpative form.
 exl-id: c1c050d3-953e-4e56-a96b-d84f2ec05e5e
-source-git-commit: 25a4a6b9ae09cb71f50317990af1718db1e14355
+source-git-commit: 25a1504e2655e414f32dfea20e416889cea06dcc
 workflow-type: tm+mt
-source-wordcount: '1993'
+source-wordcount: '1991'
 ht-degree: 1%
 
 ---
@@ -282,11 +282,18 @@ You can also save an Adaptive Form as a template for future use. To save a Adapt
 * 限制範本的數量，以符合網站上提供的根本不同的表單型別
 * 為範本中使用的自訂元件提供必要的彈性和設定功能。
 
-## 檢視下一個
+<!--
+## See next
 
-* [為您的表單建立樣式或主題](using-themes-in-core-components.md)
-* [建立最適化表單（核心元件）](/help/forms/creating-adaptive-form-core-components.md)
+* [Create style or themes for your forms](using-themes-in-core-components.md)
+* [Create an Adaptive Form (core components)](/help/forms/creating-adaptive-form-core-components.md)
+
+-->
 
 ## 另請參閱 {#see-also}
 
 {{see-also}}
+
+* [為您的表單建立樣式或主題](using-themes-in-core-components.md)
+* [建立最適化表單（核心元件）](/help/forms/creating-adaptive-form-core-components.md)
+

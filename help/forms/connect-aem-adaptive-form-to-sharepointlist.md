@@ -5,9 +5,9 @@ role: User, Developer
 keywords: 將AEM最適化表單連線至Microsoft SharePoint清單、將最適化表單連線至Microsoft SharePoint清單、將AEM最適化表單整合至Microsoft SharePoint清單、將最適化表單整合至Microsoft SharePoint清單、將最適化表單的資料提交至SharePoint清單、將AEM工作流程提交至SharePoint清單。
 hide: true
 hidefromToC: true
-source-git-commit: f79ed400ac2c1956dd7946cec2881f4e77d4bd41
+source-git-commit: 397e7d4f23202b8ae7419b0ad5436a6a10e2efb8
 workflow-type: tm+mt
-source-wordcount: '552'
+source-wordcount: '550'
 ht-degree: 5%
 
 ---
@@ -86,16 +86,12 @@ ht-degree: 5%
 * [設定資料來源](/help/forms/configuring-submit-actions.md)
 * [建立表單資料模型](/help/forms/create-form-data-models.md)
 * [使用以Forms為中心的AEM Workflows — 步驟參考來自動化業務流程](/help/forms/aem-forms-workflow-step-reference.md)
-
-## 其他資訊
-
+* [建立最適化Forms的自訂提交動作](/help/forms/custom-submit-action-form.md)
 * [建立最適化表單或新增至AEM Sites頁面](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
 * [將最適化表單內嵌至AEM Sites頁面](/help/forms/embed-adaptive-form-aem-sites.md)
 * [在最適化表單中建立、使用及自訂主題](/help/forms/using-themes-in-core-components.md)
 
->[!MORELIKETHIS]
->
->* [建立最適化Forms的自訂提交動作](/help/forms/custom-submit-action-form.md)
+
 
 
 

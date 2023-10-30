@@ -4,7 +4,7 @@ description: 整合最適化表單與Microsoft® Power Automate。
 hide: true
 hidefromtoc: true
 exl-id: a059627b-df12-454d-9e2c-cc56986b7de6
-source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
+source-git-commit: 397e7d4f23202b8ae7419b0ad5436a6a10e2efb8
 workflow-type: tm+mt
 source-wordcount: '1178'
 ht-degree: 15%
@@ -190,12 +190,18 @@ ht-degree: 15%
         }
 ```
 
-## 另請參閱,
+## 另請參閱
 
 * [建立最適化表單](creating-adaptive-form-core-components.md)
 * [設定提交動作](configure-submit-actions-core-components.md)
 * [Microsoft® Power Automate的Adobe Experience Manager Connector](https://learn.microsoft.com/en-us/connectors/adobeexperiencemanag/)
+* [將最適化表單連線至Microsoft Power Automate](/help/forms/configure-submit-actions-core-components.md#microsoft-power-automate)
+
+
+<!--
 
 >[!MORELIKETHIS]
 >
-* [將最適化表單連線至Microsoft Power Automate](/help/forms/configure-submit-actions-core-components.md#microsoft-power-automate)
+>* [Connect Adaptive Form to Microsoft Power Automate](/help/forms/configure-submit-actions-core-components.md#microsoft-power-automate)
+
+-->
