@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的運作方式以及該軟體可以為您做哪些事。
 breadcrumb-title: 使用手冊
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 7b22d8c4d253642c92f6b2121e2883dac375a5c7
+source-git-commit: 4e3cf2276cdd5fb0722aee0e6cec11da951ca49d
 workflow-type: tm+mt
-source-wordcount: '4347'
+source-wordcount: '4357'
 ht-degree: 98%
 
 ---
@@ -548,6 +548,10 @@ ht-degree: 98%
 
    + 整合 Adobe Express{#integration-adobe-express}
       + [適用於 Adobe Express 的 AEM Assets 附加元件](/help/assets/addon-adobe-express.md)
+
+   + 與Creative Cloud整合 {#integration-creative-cloud}
+      + [將AEM Assets連線至Creative Cloud](/help/assets/connect-assets-with-creative-cloud.md)
+
 + Forms {#forms}
    + 概觀 {#forms-overview}
       + [簡介](/help/forms/home.md)
