@@ -6,7 +6,7 @@ exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 source-git-commit: f1af229fa0fb75a6181eae545ac7e51b31f212f7
 workflow-type: tm+mt
 source-wordcount: '920'
-ht-degree: 59%
+ht-degree: 61%
 
 ---
 
@@ -89,7 +89,7 @@ ht-degree: 59%
 
 我們鼓勵您透過以下方式熟悉流量篩選規則 [試用教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview.html)！ 它會逐步引導您設定新的Cloud Manager設定管道、在設定檔案中宣告規則，以及分析CDN記錄檔中的惡意流量。
 
-流量篩選規則現在適用於開發環境，並於11月逐步推出至預備和生產環境。 您可以透過傳送電子郵件至stage和prod，要求更早的存取權 **aemcs-waf-adopter@adobe.com**.
+流量篩選規則現在適用於開發環境，並於11月逐步推出至預備和生產環境。 您可以透過傳送電子郵件至：**aemcs-waf-adopter@adobe.com**，要求提前在中繼和生產環境中存取。
 
 進階WAF流量篩選規則可於今年稍後透過「增強式安全性」或「WAF-DDoS保護」方案授權。
 

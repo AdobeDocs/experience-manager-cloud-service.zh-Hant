@@ -5,7 +5,7 @@ exl-id: 10f9d679-7579-4650-9379-bc8287cb2ff1
 source-git-commit: 88198e9333a7f706fc99e487d8cde84647fa111f
 workflow-type: tm+mt
 source-wordcount: '1747'
-ht-degree: 56%
+ht-degree: 87%
 
 ---
 
@@ -33,37 +33,37 @@ AEM Assets 檢視中的大量匯入能讓管理員將大量資產從資料來源
 | AWS | <ul> <li>AWS 區域 </li> <li> AWS 儲存貯體 <li> AWS 存取金鑰 </li><li> AWS 存取密碼 </li></ul> |
 | Google 雲端 | <ul> <li>GCP 貯體 </li> <li> GCP 服務帳戶電子郵件 <li> GCP 服務帳戶私密金鑰</li></ul> |
 | Dropbox | <ul> <li>Dropbox 用戶端 ID （應用程式鍵） </li> <li> Dropbox使用者端密碼（應用程式密碼）</li></ul> |
-| OneDrive | <ul> <li>OneDrive租使用者ID  </li> <li> OneDrive使用者端ID</li><li> OneDrive使用者端密碼</li></ul> |
+| OneDrive | <ul> <li>OneDrive 租用戶 ID  </li> <li> OneDrive 用戶端 ID</li><li> OneDrive 用戶端密碼</li></ul> |
 
 除了這些根據資料來源的先決條件之外，您也必須了解資料來源中可用的來源資料夾名稱，其中包含需要匯入到 AEM Assets 的所有資產。
 
-## 設定Dropbox開發人員應用程式 {#dropbox-developer-application}
+## 設定 Dropbox 開發人員應用程式 {#dropbox-developer-application}
 
-在將資產從您的Dropbox帳戶匯入至AEM Assets之前，請先建立和設定Dropbox開發人員應用程式。
+在將 Dropbox 帳戶中的資產匯入到 AEM Assets 之前，請先建立並設定 Dropbox 開發人員應用程式。
 
 執行以下步驟：
 
-1. 登入您的 [Dropbox帳戶](https://www.dropbox.com/developers) 並按一下 **[!UICONTROL 建立應用程式]**.
+1. 登入您的 [Dropbox 帳戶](https://www.dropbox.com/developers)並按一下「**[!UICONTROL 建立應用程式]**」。
 
-1. 在 **[!UICONTROL 選擇API]** 區段中，選取唯一可用的選項按鈕。
+1. 在「**[!UICONTROL 選擇 API]**」區段中，選取唯一可用的選項按鈕。
 
-1. 在 **[!UICONTROL 選擇您需要的存取型別]** 部分，選取下列其中一個選項：
+1. 在「**[!UICONTROL 選擇您需要的存取類型]**」區段中，選取以下其中一個選項：
 
-   * 選取 **[!UICONTROL 應用程式資料夾]**，如果您需要存取在您Dropbox帳戶的應用程式中建立的單一資料夾。
+   * 如果您需要存取在 Dropbox 帳戶中應用程式內建立的單一資料夾，請選取「**[!UICONTROL 應用程式資料夾]**」。
 
-   * 選取 **[!UICONTROL 完整Dropbox]**，以存取Dropbox帳戶內的所有檔案和資料夾。
+   * 如果您需要存取 Dropbox 帳戶中的所有檔案和資料夾，請選取「**[!UICONTROL 完整 Dropbox]**」。
 
-1. 指定應用程式的名稱，然後按一下 **[!UICONTROL 建立應用程式]**.
+1. 指定應用程式的名稱，然後按一下「**[!UICONTROL 建立應用程式]**」。
 
-1. 在 **[!UICONTROL 設定]** 標籤中，將以下專案新增至 **[!UICONTROL 重新導向URI]** 區段：
+1. 在應用程式的「**[!UICONTROL 設定]**」索引標籤中，將以下內容新增至「**[!UICONTROL 重新導向 URI]**」區段：
 
    * https://exc-unifiedcontent.experience.adobe.net
 
-   * https://exc-unifiedcontent.experience-stage.adobe.net （僅適用於Stage環境）
+   * https://exc-unifiedcontent.experience-stage.adobe.net (僅對中繼環境有效)
 
-1. 複製 **[!UICONTROL 應用程式金鑰]** 和 **[!UICONTROL 應用程式機密]** 欄位。 在AEM Assets中設定大量匯入工具時，需要這些值。
+1. 複製「**[!UICONTROL 應用程式金鑰]**」和「**[!UICONTROL 應用程式密碼]**」欄位的值。在 AEM Assets 中設定大量匯入工具時需要這些值。
 
-1. 在 **[!UICONTROL 許可權]** 索引標籤內，新增以下許可權 **[!UICONTROL 個別範圍]** 區段。
+1. 在「**[!UICONTROL 權限]**」索引標籤，將以下權限新增到「**[!UICONTROL 個別範圍]**」區段。
 
    * account_info.read
 
@@ -73,40 +73,40 @@ AEM Assets 檢視中的大量匯入能讓管理員將大量資產從資料來源
 
    * files.content.write
 
-1. 按一下 **[!UICONTROL 提交]** 以儲存變更。
+1. 按一下「**[!UICONTROL 提交]**」以儲存變更。
 
-## 設定OneDrive開發人員應用程式 {#onedrive-developer-application}
+## 設定 OneDrive 開發人員應用程式 {#onedrive-developer-application}
 
-從您的OneDrive帳戶匯入資產至AEM Assets之前，請先建立和設定OneDrive開發人員應用程式。
+在將 OneDrive 帳戶中的資產匯入到 AEM Assets 之前，請先建立並設定 OneDrive 開發人員應用程式。
 
 執行以下步驟：
 
-1. 登入您的 [OneDrive帳戶](https://portal.azure.com/#view/Microsoft_AAD_RegisteredApps/ApplicationsListBlade) 並按一下 **[!UICONTROL 新註冊]**.
+1. 登入您的 [OneDrive 帳戶](https://portal.azure.com/#view/Microsoft_AAD_RegisteredApps/ApplicationsListBlade)，然後按一下「**[!UICONTROL 新註冊]**」。
 
-1. 指定應用程式的名稱，選取 **[!UICONTROL 僅此組織目錄中的帳戶(僅Adobe — 單一租使用者)]** 從 **[!UICONTROL 支援的帳戶型別]**，然後按一下 **[!UICONTROL 註冊]**. 已成功建立應用程式。
+1. 指定應用程式的名稱，從「**[!UICONTROL 支援的帳戶類型]**」中選取「**[!UICONTROL 僅此組織目錄中的帳戶 (僅限 Adobe - 單一租用戶)]**」，然後按一下「**[!UICONTROL 註冊]**」。應用程式建立成功。
 
-1. 複製應用程式使用者端ID和租使用者ID欄位的值。 在AEM Assets中設定大量匯入工具時，需要這些值。
+1. 複製應用程式用戶端 ID 和租用戶 ID 欄位的值。在 AEM Assets 中設定大量匯入工具時需要這些值。
 
-1. 執行以下步驟以新增憑證：
-   1. 在應用程式概觀頁面上，按一下 **[!UICONTROL 新增憑證或密碼]** 然後按一下 **[!UICONTROL 新使用者端密碼]**.
-   1. 指定使用者端密碼描述和到期日，然後按一下 **[!UICONTROL 新增]**.
-   1. 建立使用者端密碼後，複製 **[!UICONTROL 值]** 欄位（請勿複製密碼ID欄位）。 在AEM Assets中設定大量匯入時，這是必要作業。
+1. 請執行下列步驟以新增憑證：
+   1. 在應用程式概觀頁面上，按一下「**[!UICONTROL 新增憑證或密碼]**」，然後按一下「**[!UICONTROL 新用戶端密碼]**」。
+   1. 指定用戶端密碼描述和有效期，然後按一下「**[!UICONTROL 新增]**」。
+   1. 建立用戶端密碼後，複製「**[!UICONTROL 值]**」欄位 (不要複製「密碼 ID」欄位)。在 AEM Assets 中設定大量匯入工具時需要此值。
 
-1. 執行以下步驟以新增重新導向URI：
-   1. 在應用程式概觀頁面上，按一下 **[!UICONTROL 新增重新導向URI]** > **[!UICONTROL 新增平台]** > **[!UICONTROL Web]**.
-   1. 將下列專案新增至 **[!UICONTROL 重新導向URI]** 區段：
+1. 執行下列步驟以新增重新導向 URI：
+   1. 在應用程式概觀頁面上，按一下「**[!UICONTROL 新增重新導向 URI]** > **[!UICONTROL 新增平台]** > **[!UICONTROL Web]**」。
+   1. 將以下內容新增至「**[!UICONTROL 重新導向 URI]**」區段：
 
       * https://exc-unifiedcontent.experience.adobe.net
 
-      * https://exc-unifiedcontent.experience-stage.adobe.net （僅適用於Stage環境）
+      * https://exc-unifiedcontent.experience-stage.adobe.net (僅對中繼環境有效)
 
-      新增第一個URI並按一下 **[!UICONTROL 設定]** 以將其新增。 您可以按一下 **[!UICONTROL 新增URI]** 中可用的選項 **[!UICONTROL Web]** 區段於 **[!UICONTROL 驗證]** 頁面。
+      新增第一個 URI 並按一下「**[!UICONTROL 設定]**」完成新增。您可以按一下「**[!UICONTROL 驗證]**」頁面「**[!UICONTROL Web]**」區段中的「**[!UICONTROL 新增 URI]**」選項來新增更多。
 
-1. 執行以下步驟，為應用程式新增API許可權：
-   1. 按一下 **[!UICONTROL API許可權]** 在左窗格中並按一下 **[!UICONTROL 新增許可權]**.
-   1. 按一下 **[!UICONTROL Microsoft Graph]** > **[!UICONTROL 委派許可權]**. 此 **[!UICONTROL 選取許可權]** 區段會顯示可用的許可權。
-   1. 選取 `offline_access` 許可權來自 `OpenId permissions` 和 `Files.ReadWrite.All` 許可權來自 `Files`.
-   1. 按一下 **[!UICONTROL 新增許可權]** 以儲存更新。
+1. 執行下列步驟以新增應用程式的 API 權限：
+   1. 按一下左窗格中的「**[!UICONTROL API 權限]**」，然後按一下「**[!UICONTROL 新增權限]**」。
+   1. 按一下「**[!UICONTROL Microsoft Graph]** > **[!UICONTROL 委派的權限]**」。「**[!UICONTROL 選取權限]**」區段會顯示可用權限。
+   1. 從 `OpenId permissions` 選取 `offline_access` 權限，從 `Files` 選取 `Files.ReadWrite.All` 權限。
+   1. 按一下「**[!UICONTROL 新增權限]**」以儲存更新。
 
 
 
@@ -123,9 +123,9 @@ AEM Assets 檢視中的大量匯入能讓管理員將大量資產從資料來源
 
    >[!NOTE]
    >
-   >如果您使用Dropbox做為資料來源，請根據下列規則指定來源資料夾路徑：
-   >* 如果您選取 **完整Dropbox** 建立Dropbox應用程式時，包含資產的資料夾位於 `https://www.dropbox.com/home/bulkimport-assets`，然後指定 `bulkimport-assets` 在 **[!UICONTROL 來源資料夾]** 欄位。
-   >* 如果您選取 **應用程式資料夾** 建立Dropbox應用程式時，包含資產的資料夾位於 `https://www.dropbox.com/home/Apps/BulkImportAppFolderScope/bulkimport-assets`，然後指定 `bulkimport-assets` 在 **[!UICONTROL 來源資料夾]** 欄位，其中 `BulkImportAppFolderScope` 指應用程式的名稱。 `Apps` 之後自動新增 `home` 在此案例中。
+   >如果您使用 Dropbox 作為資料來源，請依照下列規則來指定來源資料夾路徑：
+   >* 如果您在建立 Dropbox 應用程式時選取「**完整 Dropbox**」，並且包含資產的資料夾位於 `https://www.dropbox.com/home/bulkimport-assets`，則在「**[!UICONTROL 來源資料夾]**」欄位中指定 `bulkimport-assets`。
+   >* 如果您在建立 Dropbox 應用程式時選取「**應用程式資料夾**」，並且包含資產的資料夾位於 `https://www.dropbox.com/home/Apps/BulkImportAppFolderScope/bulkimport-assets`，則在「**[!UICONTROL 來源資料夾]**」欄位中指定 `bulkimport-assets`，其中 `BulkImportAppFolderScope` 是指應用程式的名稱。在這種情況下，`Apps` 會自動加在 `home` 後面。
 
 1. (可選) 選取「**[!UICONTROL 匯入後刪除來源檔案]**」選項，在檔案匯入到 Experience Manager Assets 後，從來源資料存放區中刪除原始檔案。
 1. 選取「**[!UICONTROL 匯入模式]**」。選取「**[!UICONTROL 跳過]**」、「**[!UICONTROL 取代]**」或「**[!UICONTROL 建立版本]**」。跳過模式是預設值，在此模式下，擷取工具會跳過匯入資產 (如果已存在)。

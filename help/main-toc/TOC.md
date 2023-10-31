@@ -169,7 +169,7 @@ ht-degree: 98%
    + [AEM as a Cloud Service 的 IMS 支援](/help/security/ims-support.md)
    + [AEM as a Cloud Service 的相同網站 Cookie 支援](/help/security/same-site-cookie-support.md)
    + [郵件服務的 OAuth2 支援](/help/security/oauth2-support-for-mail-service.md)
-   + [包含WAF規則的流量篩選規則](/help/security/traffic-filter-rules-including-waf.md)
+   + [流量篩選規則包括 WAF 規則](/help/security/traffic-filter-rules-including-waf.md)
    + [AEM as a Cloud Service 安全性注意事項](/help/security/security-considerations.md)
 + 上線 {#onboarding}
    + [從這裡開始](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html)
@@ -857,7 +857,7 @@ ht-degree: 98%
          + [體驗稽核測試](/help/implementing/cloud-manager/experience-audit-testing.md)
          + [體驗稽核儀表板](/help/implementing/cloud-manager/experience-audit-dashboard.md)
       + [存取和管理記錄檔](/help/implementing/cloud-manager/manage-logs.md)
-      + [自訂許可權](/help/implementing/cloud-manager/custom-permissions.md)
+      + [自訂權限](/help/implementing/cloud-manager/custom-permissions.md)
       + [SLA 報告](/help/implementing/cloud-manager/sla-reporting.md)
       + [New Relic One](/help/implementing/cloud-manager/user-access-new-relic.md)
       + [通知](/help/implementing/cloud-manager/notifications.md)

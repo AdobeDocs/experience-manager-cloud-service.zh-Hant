@@ -1,80 +1,81 @@
 ---
-title: 包含WAF規則的流量篩選規則
-description: 設定流量篩選規則，包括Web應用程式防火牆(WAF)規則
+title: 流量篩選規則包括 WAF 規則
+description: 設定流量篩選規則，包括 Web 應用程式防火牆 (WAF) 規則
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 source-git-commit: 8df8322eef7c74932d6feeeb4a7a6045935edd88
 workflow-type: tm+mt
 source-wordcount: '3473'
-ht-degree: 45%
+ht-degree: 97%
 
 ---
 
 
-# 包含WAF規則的流量篩選規則 {#traffic-filter-rules-including-waf-rules}
+# 流量篩選規則包括 WAF 規則 {#traffic-filter-rules-including-waf-rules}
 
 >[!NOTE]
->此功能現在可用於開發環境，並會在11月晚些時候逐步推出至測試和生產環境。 您可以透過傳送電子郵件至stage和prod，要求更早的存取權 **aemcs-waf-adopter@adobe.com**.
+>此功能現在可用於開發環境，並會在11月晚些時候逐步推出至測試和生產環境。 您可以透過傳送電子郵件至：**aemcs-waf-adopter@adobe.com**，要求提前在中繼和生產環境中存取。
 
-流量篩選規則可以用來在CDN層封鎖或允許請求，這可能在以下情況下有用：
+流量篩選規則可用於封鎖或允許 CDN 層的要求，這在以下情境中可能很有用：
 
-* 在新網站上線之前，限制內部公司流量存取特定網域
-* 建立速率限制，以減少受大量DoS攻擊的影響
-* 防止已知為惡意的IP位址鎖定您的頁面
+* 在新網站上線之前，限制特定網域存取公司內部流量
+* 建立速率限制，以減少受到容量 DoS 攻擊的影響
+* 防止已知的惡意 IP 位址目標定位您的頁面
 
-這些流量篩選規則大多適用於所有AEMas a Cloud ServiceSites和Forms客戶。 他們主要在要求屬性和要求標題上操作，包括IP、主機名稱、路徑和使用者代理。
+大多數流量篩選器規則可供所有 AEM as a Cloud Service 網站和表單客戶使用。它們主要是根據要求屬性和請求標頭進行操作，包括 IP、主機名稱、路徑和使用者代理程式。
 
-流量篩選規則的子類別需要增強式安全性授權或WAF-DDoS保護授權，將於今年晚些時候提供。 這些強大的規則稱為WAF （Web應用程式防火牆）流量篩選規則（簡稱WAF規則），可存取 [WAF旗標](#waf-flags-list) 本文稍後會說明。
+流量篩選規則的子類別需要增強的安全性授權或 WAF-DDoS 保護授權，並將於今年年底推出。這些強大的規則也稱為 WAF (Web 應用程式防火牆) 流量篩選規則 (或簡稱 WAF 規則)，且可以存取本文稍後將進行說明 [WAF 標幟](#waf-flags-list)。
 
-流量篩選器規則可以透過Cloud Manager設定管道部署到生產（非沙箱）計畫中的開發、暫存和生產環境型別。 未來將提供RDE支援。
+流量篩選規則可以透過 Cloud Manager 設定管道部署到生產 (非沙箱) 程式中的開發、中繼和生產環境類型。未來將推出對 RDE 的支援。
 
 [逐步說明教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview.html) 以快速建立有關此功能的具體專業知識。
 
-## 本文的組織方式 {#how-organized}
+## 本文的結構方式 {#how-organized}
 
-本文分為下列小節：
+本文章分為以下幾個章節：
 
-* **流量保護概觀：** 瞭解如何保護您免受惡意流量的侵擾。
-* **設定規則的建議程式：** 閱讀保護網站的高階方法。
-* **設定：** 瞭解如何設定、設定和部署流量篩選器規則，包括進階WAF規則。
-* **規則語法：** 閱讀中有關流量篩選規則宣告方式的資訊 `cdn.yaml` 組態檔。 這包括所有Sites和Forms客戶可用的流量篩選規則，以及授權該功能的使用者的WAF規則子類別。
-* **規則範例：** 請參閱宣告規則的範例，以幫助您順利上路。
-* **費率限制規則：** 瞭解如何使用速率限制規則來保護您的網站免受高流量攻擊。
-* **CDN記錄：** 檢視哪些宣告的規則和WAF標幟符合您的流量。
-* **控制面板工具：** 分析您的CDN記錄檔，以提出新的流量篩選規則。
-* **建議的入門規則：** 開始使用的一組規則。
-* **教學課程：** 關於功能的實用知識，包括如何使用儀表板工具來宣告正確的規則。
+* **流量保護概觀：**&#x200B;了解如何保護您以避免受惡意流量的傷害。
+* **設定規則的建議流程：**&#x200B;閱讀關於保護網站的高級方法。
+* **設定：**&#x200B;了解如何設定、配置和部署流量篩選規則，包括進階的 WAF 規則。
+* **規則語法：**&#x200B;閱讀有關如何在 `cdn.yaml` 設定檔案宣告流量篩選規則。此包括可供所有網站和表單客戶使用的流量篩選規則，以及針對那些授權該功能者所提供的 WAF 規則子類別。
+* **規則範例：**&#x200B;查看已宣告的規則範例以協助您進行。
+* **速率限制規則：**&#x200B;了解如何使用速率限制規則保護您的網站避免受到大量的攻擊。
+* **CDN 日誌：**&#x200B;查看哪些宣告的規則和 WAF 標幟與您的流量相符。
+* **儀表板工具：**&#x200B;分析您的 CDN 日誌以提出新的流量篩選規則。
+* **推薦的入門規則：**&#x200B;一組可以開始使用的入門規則。
+* **教學課程：**&#x200B;有關該功能的實用知識，包括如何使用儀表板工具宣告正確的規則。
 
-我們邀請您透過電子郵件提供意見反應，或詢問有關流量篩選規則的問題 **aemcs-waf-adopter@adobe.com**.
+我們邀請您透過傳送電子郵件至：**aemcs-waf-adopter@adobe.com**，以提供意見回饋或詢問有關流量篩選規則的問題。
 
 ## 流量保護概觀 {#traffic-protection-overview}
 
-在目前的數位環境中，惡意流量是持續存在的威脅。 我們瞭解風險的嚴重性，並提供數種方法來保護客戶應用程式並在發生攻擊時減少攻擊。
+在目前的數位環境中，惡意流量是一種揮之不去的威脅。我們認知到風險的嚴重性，並提供多種方法保護客戶應用程式，以及在發生時減輕攻擊。
 
-在邊緣，AdobeManaged CDN會吸收網路層（第3層和第4層）的DoS攻擊，包括泛洪和反射/放大攻擊。
+在邊緣，Adobe Managed CDN 吸收網路
+層上的 DoS 攻擊 (第 3 層和第 4 層)，包括洪水攻擊和反射/放大攻擊。
 
-根據預設，Adobe會採取措施來防止由於突發的意外高流量超過特定臨界值而導致效能降低。 萬一DoS攻擊影響網站可用性，Adobe的作業團隊會收到警報，並採取步驟加以緩解。
+預設情況下，Adobe 會採取措施防止因超出特定閾值的意外爆發高流量而導致效能下降。果發生影響網站可用性的 DoS 攻擊，Adobe 的營運團隊會收到警報並採取減輕影響的步驟。
 
-客戶可透過在內容傳送流程的各個層級設定規則，採取主動措施來減少應用程式層級攻擊（第7層）。
+客戶可以透過在不同層的內容傳遞流程設定規則，以採取主動式措施減輕應用程式層攻擊 (第 7 層)。
 
-例如，在Apache層，客戶可以設定 [dispatcher模組](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#configuring-access-to-content-filter) 或 [ModSecurity](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/modsecurity-crs-dos-attack-protection.html?lang=en) 以限制對特定內容的存取。
+例如，在 Apache 層，客戶可以設定 [Dispatcher 模組](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=zh-Hant#configuring-access-to-content-filter)或 [ModSecurity](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/modsecurity-crs-dos-attack-protection.html?lang=zh-Hant) 以限制對特定內容的存取。
 
-如本文所述，流量篩選規則可以使用Cloud Manager的設定管道部署到Adobe管理的CDN。 除了根據IP位址、路徑和標題等屬性的流量篩選規則，或根據設定速率限制的規則外，客戶也可以授權一個強大的流量篩選規則子類別，稱為WAF規則。
+如本文所述，可以使用 Cloud Manager 的設定管道將流量篩選器規則部署到 Adobe Managed CDN。除了根據 IP 位址、路徑和標頭等屬性的流量篩選規則，或根據設定速率限制的規則之外，客戶也可以授權稱為 WAF 規則的強大流量篩選規則子類別。
 
-## 建議的程式 {#suggested-process}
+## 建議的流程 {#suggested-process}
 
-以下是建議用於制定正確流量篩選規則的高階端對端流程：
+以下是制定正確流量篩選規則的高階建議端到端流程：
 
-1. 設定非生產和生產設定管道，如中所述 [設定](#setup) 區段。
-1. 已授權WAF流量篩選規則子類別的客戶應在Cloud Manager中啟用它們。
-1. 閱讀並試用本教學課程，以具體瞭解如何使用流量篩選規則，包括WAF規則（如果已授權）。 本教學課程會逐步引導您部署規則至開發環境、模擬惡意流量、下載 [CDN記錄](#cdn-logs)，並在中分析它們 [儀表板工具](#dashboard-tooling).
-1. 將建議的入門規則複製到 `cdn.yaml` 並將設定以記錄模式部署至生產環境。
-1. 收集部分流量後，使用分析結果 [儀表板工具](#dashboard-tooling) 以檢視是否有任何相符專案。 找出誤判，並進行任何必要的調整，最終在區塊模式中啟用入門規則。
-1. 根據CDN記錄的分析，新增自訂規則，先在開發環境中使用模擬流量進行測試，然後以記錄模式部署到中繼和生產環境，再以封鎖模式。
-1. 持續監控流量，隨著威脅環境的變化而變更規則。
+1. 設定非生產和生產設定管道，如[設定](#setup)章節的敘述。
+1. 已獲得 WAF 流量篩選規則子類別授權的客戶應於 Cloud Manager 加以啟用。
+1. 閱讀並嘗試本教學課程，以具體了解如何使用流量篩選規則，包括 WAF 規則 (若已獲得授權)。本教學課程將引導您將規則部署到開發環境、模擬惡意流量、下載 [CDN 日誌](#cdn-logs)，以及在[儀表板工具](#dashboard-tooling)中進行分析。
+1. 將推薦的入門規則複製到 `cdn.yaml`，並以日誌模式將設定部署到生產環境。
+1. 在收集一些流量之後，使用[儀表板工具](#dashboard-tooling)分析結果，以了解是否有任何符合的項目。留意誤報，並進行任何必要的調整，最終在區塊模式下啟用入門規則。
+1. 根據 CDN 日誌的分析新增自訂規則，首先在開發環境中使用模擬流量進行測試，然後以日誌模式部署到中繼和生產環境，然後以區塊模式部署。
+1. 持續監控流量，隨著威脅態勢的發展而進行規則的變更。
 
 ## 設定 {#setup}
 
-1. 首先，在Git中的專案最上層資料夾中建立下列資料夾和檔案結構：
+1. 首先，請在 Git 中建立以下資料夾和檔案結構的最高層級資料夾：
 
    ```
    config/
@@ -102,33 +103,33 @@ ht-degree: 45%
          action: block
    ```
 
-此 `kind` 引數應設為 `CDN` 而版本應設為結構描述版本，目前為 `1`. 請進一步參閱下方範例。
+`kind` 參數應設定為 `CDN`，而版本則應設定為綱要版本，目前是 `1`。請進一步參閱下方範例。
 
 
 <!-- Two properties -- `envType` and `envId` -- may be included to limit the scope of the rules. The envType property may have values "dev", "stage", or "prod", while the envId property is the environment (e.g., "53245"). This approach is useful if it is desired to have a single configuration pipeline, even if some environments have different rules. However, a different approach could be to have multiple configuration pipelines, each pointing to different repositories or git branches. -->
 
-1. 如果WAF規則已獲得授權，您應該在Cloud Manager中啟用功能，如下所述，針對新的和現有的方案方案。
+1. 如果 WAF 規則已獲得授權，則應在 Cloud Manager 中啟用該功能 (如下所述)，對於新的和現有的計畫案例都適用。
 
-   1. 若要在新程式上設定WAF，請核取 **WAF-DDOS保護** 核取方塊 **安全性** 標籤設定時機 [新增生產計畫。](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
+   1. 若要對新計畫設定 WAF，在新增生產計畫時，請勾選「**WAF-DDOS 防護**」核取方塊 (在&#x200B;**安全性**&#x200B;標籤中) [。](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
 
-   1. 若要在現有程式上設定WAF， [編輯您的程式](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md) 並在 **安全性** 標籤取消核取或核取 **WAF-DDOS** 選項。
+   1. 若要在現有的計畫上設定 WAF，[編輯您的計畫](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)並在「**安全性**」標籤隨時取消勾選或勾選 **WAF-DDOS** 選項。
 
-1. 對於RDE以外的環境型別，在Cloud Manager中建立目標部署設定管道。
+1. 對於 RDE 以外的環境類型，請在 Cloud Manager 中建立鎖定目標的部署設定管道。
 
-   * [請參閱此檔案以瞭解生產管道。](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)
-   * [請參閱本檔案以瞭解非生產管道。](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
+   * [請參閱本文件以了解生產管道。](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)
+   * [請參閱本文件以了解非生產管道。](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
 
 若為 RDE，會使用命令列，但目前不支援 RDE。
 
 **附註**
 
-* 您可以使用 `yq` 在本機驗證組態檔的YAML格式(例如 `yq cdn.yaml`)。
+* 您可以使用 `yq` 在本機驗證設定檔的 YAML 格式 (例如 `yq cdn.yaml`)。
 
 ## 流量篩選規則語法 {#rules-syntax}
 
 您可以將 `traffic filter rules` 設定為符合 IPS、使用者代理、要求標頭、主機名稱、地理位置和 URL 等模式。
 
-授權增強式安全性或WAF-DDoS保護安全性產品的客戶也可以設定特殊類別的流量篩選規則，稱為 `WAF traffic filter rules` 參照一或多個（簡稱WAF規則）的 [WAF旗標](#waf-flags-list).
+授權強化的安全性或 WAF-DDoS 保護安全性產品的客戶，也可以設定特殊類別的流量篩選規則 `WAF traffic filter rules` (或簡稱為 WAF 規則)，其參考一個或多個 [WAF 標幟](#waf-flags-list)。
 
 以下是一組流量篩選規則的範例，其中也包括 WAF 規則。
 
@@ -151,14 +152,14 @@ data:
           wafFlags: [ SQLI, XSS]
 ```
 
-中的流量篩選器規則格式 `cdn.yaml` 檔案如下所述。 檢視部分 [其他範例](#examples) 在稍後的章節中，以及在其他章節中 [費率限制規則](#rate-limit-rules).
+`cdn.yaml` 檔案中流量篩選規則的格式如下所述。請參閱後面章節的一些[其他範例](#examples)，以及關於[速率限制規則](#rate-limit-rules)的獨立章節。
 
 
 | **屬性** | **大部分流量篩選規則** | **WAF 流量篩選規則** | **類型** | **預設值** | **說明** |
 |---|---|---|---|---|---|
 | 名稱 | X | X | `string` | - | 規則名稱 (64 個字元的長度，只能包含英數字元和 -) |
 | 時間 | X | X | `Condition` | - | 基本結構是：<br><br>`{ <getter>: <value>, <predicate>: <value> }`<br><br>[請參閱下面的條件結構語法，其中會說明 getter、述詞以及結合多個條件的方式。](#condition-structure) |
-| 動作 | X | X | `Action` | 記錄 | 記錄、允許、封鎖或動作物件。 預設為log |
+| 動作 | X | X | `Action` | 記錄 | 記錄、允許、封鎖或動作物件。預設為記錄 |
 | rateLimit | X |   | `RateLimit` | 未定義 | 速率限制設定。若未定義，則停用速率限制。<br><br>以下會有一個單獨的章節說明 rateLimit 語法以及範例。 |
 
 ### 條件結構 {#condition-structure}
@@ -194,11 +195,11 @@ data:
 
 | **屬性** | **類型** | **說明** |
 |---|---|---|
-| reqProperty | `string` | 要求屬性。<br><br>其中之一：<br><ul><li>`path`：傳回不含查詢引數的URL完整路徑。</li><li>`queryString`：傳回URL的查詢部分</li><li>`method`：傳回要求中使用的HTTP方法。</li><li>`tier`：傳回其中之一 `author`， `preview` 或 `publish`.</li><li>`domain`：傳回網域屬性(如 `Host` header)</li><li>`clientIp`：傳回使用者端IP。</li><li>`clientCountry`：傳回兩個字母的代碼([https://en.wikipedia.org/wiki/Regional_indicator_symbol](https://en.wikipedia.org/wiki/Regional_indicator_symbol) 可識別使用者端所在的國家/地區。</li></ul> |
+| reqProperty | `string` | 要求屬性。<br><br>之一：<br><ul><li>`path`：傳回不帶查詢參數的 URL 完整路徑。</li><li>`queryString`：傳回 URL 的查詢部分</li><li>`method`：傳回要求中所使用的 HTTP 方法。</li><li>`tier`：返回其中之一`author`、`preview`或`publish`。</li><li>`domain`：傳回小寫的網域屬性 (如 `Host` 標頭的定義)</li><li>`clientIp`：傳回用戶端 IP 位址。</li><li>`clientCountry`：傳回兩個字母的代碼 ([https://en.wikipedia.org/wiki/Regional_indicator_symbol](https://en.wikipedia.org/wiki/Regional_indicator_symbol) 識別客戶位於哪個國家。</li></ul> |
 | reqHeader | `string` | 傳回具有指定名稱的要求標頭 |
 | queryParam | `string` | 傳回具有指定名稱的查詢參數 |
 | reqCookie | `string` | 傳回具有指定名稱的 Cookie |
-| postParam | `string` | 從要求內文傳回指定名稱的Post引數。 只有當內文屬於內容型別時才有效 `application/x-www-form-urlencoded` |
+| postParam | `string` | 從要求內文傳回具有指定名稱的 Post 參數。只有當內文為內容類型 `application/x-www-form-urlencoded` 時才有效 |
 
 **述詞**
 
@@ -212,11 +213,11 @@ data:
 | **doesNotMatch** | `string` | 如果 getter 結果和所提供的 regex 不相符，則為 true |
 | **in** | `array[string]` | 如果所提供的清單包含 getter 結果，則為 true |
 | **notIn** | `array[string]` | 如果所提供的清單不包含 getter 結果，則為 true |
-| **存在** | `boolean` | 若設為true且屬性存在或設為false且屬性不存在時為true |
+| **存在** | `boolean` | 設定為 true 且屬性存在，或設為 false 且屬性不存在時為 true |
 
 **附註**
 
-* 要求屬性 `clientIp` 只能與下列述詞一起使用： `equals`， `doesNotEqual`， `in`， `notIn`. `clientIp` 使用時也可以與IP範圍進行比較 `in` 和 `notIn` 述詞。 下列範例實作條件來評估使用者端IP是否在192.168.0.0/24的IP範圍內（所以從192.168.0.0到192.168.0.255）：
+* 要求屬性 `clientIp` 只能與以下述詞一起使用：`equals`、`doesNotEqual`、`in`、`notIn`。`clientIp` 也可以比對 IP 範圍 (在使用 `in` 和 `notIn` 述詞時)。以下範例實作一個條件以評估用戶端 IP 是否在 192.168.0.0/24 的 IP 範圍內 (即從 192.168.0.0 到 192.168.0.255)：
 
 ```
 when:
@@ -224,7 +225,7 @@ when:
   in: [ "192.168.0.0/24" ]
 ```
 
-* 我們建議使用 [regex101](https://regex101.com/) 和 [Fastly Fiddle](https://fiddle.fastly.dev/) 使用regex時。 您還可以在此進一步瞭解Fastly如何處理regex [文章](https://developer.fastly.com/reference/vcl/regex/#best-practices-and-common-mistakes).
+* 我們建議使用 [regex101](https://regex101.com/)，以及在搭配規則運算式時使用 [Fastly Fiddle](https://fiddle.fastly.dev/)。您也可以在本[文章](https://developer.fastly.com/reference/vcl/regex/#best-practices-and-common-mistakes)中了解更多有關 Fastly 如何處理規則運算式的資訊。
 
 
 ### 動作結構 {#action-structure}
@@ -243,7 +244,7 @@ when:
 
 ### WAF 標幟清單 {#waf-flags-list}
 
-此 `wafFlags` 屬性可用於可授權的WAF流量篩選規則，可參考下列內容：
+在可授權 WAF 流量篩選規則中可以使用的 `wafFlags` 屬性，可以參考以下內容：
 
 | **標幟 ID** | **標幟名稱** | **說明** |
 |---|---|---|
@@ -279,13 +280,13 @@ when:
 
 * 設定檔不應包含密碼，因為任何有權存取 git 存放庫的人都可以讀取。
 
-* Cloud Manager中定義的IP允許清單優先於流量篩選器規則。
+* 在 Cloud Manager 中定義的 IP 允許清單優先於流量篩選規則。
 
 * WAF規則符合專案只會顯示在CDN遺漏和通過次數的CDN記錄中，而不會顯示在點選中。
 
 ## 規則範例 {#examples}
 
-下面是一些規則範例。請參閱 [速率限制區段](#rules-with-rate-limits) 向下展開以取得費率限制規則的範例。
+下面是一些規則範例。如需進一步探討速率限制規則的範例，請參閱[「速率限制」一節](#rules-with-rate-limits)。
 
 **範例 1**
 
@@ -351,7 +352,7 @@ data:
 
 **範例 4**
 
-此規則會封鎖路徑請求 `/block-me`，並封鎖符合「 」的每個請求 `SQLI` 或 `XSS` 模式。 此範例包含WAF流量篩選規則，此規則會參考 `SQLI` 和 `XSS` [WAF旗標](#waf-flags-list)，因此需要單獨的授權。
+此規則會封鎖對路徑 `/block-me` 的要求，並封鎖和 `SQLI` 或 `XSS` 模式相符的每個要求。此範例包含 WAF 流量篩選規則，其參考了 `SQLI` 和 `XSS`[WAF 標幟](#waf-flags-list)，因此需要單獨的授權。
 
 ```
 kind: "CDN"
@@ -406,20 +407,20 @@ data:
         action: block
 ```
 
-## 費率限制規則 {#rate-limits-rules}
+## 速率限制規則 {#rate-limits-rules}
 
-有時候，如果流量超過特定傳入請求速率（可能根據特定條件），您會想要封鎖流量。 設定 `rateLimit` 屬性的值會限制那些和規則條件相符的要求的速率。
+有時，如果流量超過傳入要求的特定速率 (可能基於特定條件)，則需要封鎖流量。設定 `rateLimit` 屬性的值會限制那些和規則條件相符的要求的速率。
 
-速率限制規則不能參考WAF旗標。 所有Sites和Forms客戶皆可使用。
+速率限制規則不能參考 WAF 標幟。它們提供給所有網站和表單客戶使用。
 
-速率限制是根據CDN POP計算。 例如，假設Montreal、Miami和Dublin的POP每秒體驗的流量率分別為80、90和120個請求，而速率限制規則則設定為限製為100。 在這種情況下，只有前往都柏林的流量會受到限制。
+速率限制是根據 CDN POP 計算的。例如，假設在蒙特婁、邁阿密和都柏林的 POP 的流量速率分別為每秒 80、90 和 120 個要求，且速率限制規則設定為上限 100。在這種情況下，只有到都柏林的流量會受到速率限制。
 
 ### rateLimit 結構 {#ratelimit-structure}
 
 | **屬性** | **類型** | **預設** | **含義** |
 |---|---|---|---|
-| 限制 | 10 到 10000 之間的整數 | 必要 | 每秒觸發規則之要求的要求速率（每CDN POP）。 |
-| 視窗 | 整數列舉：1、10 或 60 | 10 | 計算要求速率的取樣期間 (秒數)。計數器的準確度將取決於視窗的大小（視窗越大，準確度越高）。 例如，1秒視窗可望達到50%的準確度，60秒視窗可望達到90%的準確度。 |
+| 限制 | 10 到 10000 之間的整數 | 必要 | 觸發規則的要求速率是以每秒要求數為單位 (per CDN POP)。 |
+| 視窗 | 整數列舉：1、10 或 60 | 10 | 計算要求速率的取樣期間 (秒數)。計數器的準確性取決於時間範圍的大小 (範圍愈大，準確度愈高)。例如，1 秒時間範圍的準確度預計為 50%，60 秒時間範圍的準確度預計為 90%。 |
 | 懲罰 | 60 到 3600 之間的整數 | 300 (5 分鐘) | 封鎖相符要求時間的秒數 (四捨五入到最接近的分鐘). |
 | groupBy | array[Getter] | 無 | 速率限制器計數器將由一組要求屬性 (例如 clientIp) 彙總。 |
 
@@ -428,7 +429,7 @@ data:
 
 **範例 1**
 
-在過去60秒內，若使用者端超過每秒100個要求（每個CDN POP），此規則會封鎖5百萬使用者端：
+當在過去 60 秒內超過 100 個要求/秒時 (per CDN POP)，此規則將封鎖用戶端 5m：
 
 ```
 kind: "CDN"
@@ -453,7 +454,7 @@ data:
 
 **範例 2**
 
-封鎖路徑/critical/resource上在過去60秒內超過每秒100個要求（每個CDN POP）時的60個要求：
+當過去 60 秒內超過 100 個要求/秒時 (per CDN POP)，就會封鎖路徑 /重要/資源上的要求 60 秒：
 
 ```
 kind: "CDN"
@@ -472,11 +473,11 @@ data:
 
 ## CDN 記錄 {#cdn-logs}
 
-AEMas a Cloud Service提供對CDN記錄的存取權，這些記錄可用於快取命中比率最佳化和設定流量篩選規則等使用案例。 選取作者或發佈服務時，CDN 記錄會顯示在 Cloud Manager **下載記錄**&#x200B;對話框中。
+AEM as a Cloud Service 會提供對 CDN 記錄的存取權，這對於包括快取命中率最佳化以及設定流量篩選規則等使用案例都非常有幫助。選取作者或發佈服務時，CDN 記錄會顯示在 Cloud Manager **下載記錄**&#x200B;對話框中。
 
-請注意，CDN記錄可能會延遲最多5分鐘。
+請注意，CDN 日誌可能延遲最多 5 分鐘。
 
-此 `rules` 屬性會說明哪些流量篩選器規則符合，其模式如下：
+`rules` 屬性描述要符合哪些流量篩選規則，並具有以下模式：
 
 ```
 "rules": "match=<matching-customer-named-rules-that-are-matched>,waf=<matching-WAF-rules>,action=<action_type>"
@@ -490,14 +491,14 @@ AEMas a Cloud Service提供對CDN記錄的存取權，這些記錄可用於快�
 
 這些規則的行為方式如下：
 
-* 任何相符規則的客戶宣告規則名稱將列在 `match` 屬性。
-* 此 `action` 屬性會決定規則是否具有封鎖、允許或記錄的效果。
-* 如果WAF已獲授權且已啟用， `waf` attribute將列出偵測到的任何WAF旗標（例如SQLI），無論這些WAF旗標是否列在任何規則中。 這是為了提供潛在新規則宣告的深入分析。
-* 如果沒有符合客戶宣告的規則且沒有相符的waf規則， `rules` 屬性將為空白。
+* 任何符合規則的客戶宣告規則名稱將列於 `match` 屬性中。
+* `action` 屬性確定規則是否具有封鎖、允許或記錄的影響。
+* 如果 WAF 已獲得授權並啟用，`waf` 屬性將列出所有偵測到的任何 WAF 標幟 (例如 SQLI)，無論 WAF 標幟是否列於任何規則中。這是提供深入分析要宣告的潛在新規則。
+* 如果沒有客戶宣告的規則相符且沒有 WAF 規則相符，則 `rules` 屬性將為空。
 
 如前所述，WAF規則符合專案僅會顯示在CDN遺漏和通過次數的CDN記錄中，而非點選中。
 
-以下範例顯示一個範例 `cdn.yaml` 和兩個CDN記錄專案：
+以下範例顯示了一個範例 `cdn.yaml` 和兩個 CDN 記錄條目：
 
 
 ```
@@ -580,17 +581,17 @@ data:
 | *pop* | CDN 快取伺服器的資料中心。 |
 | *rules* | 任何符合的規則其名稱。<br><br>還會指出該相符程度是否導致封鎖。<br><br>例如，「`match=Enable-SQL-Injection-and-XSS-waf-rules-globally,waf=SQLI,action=blocked`」<br><br>如果沒有相符的規則，則為空白。 |
 
-## 控制面板工具 {#dashboard-tooling}
+## 儀表板工具 {#dashboard-tooling}
 
-Adobe提供一種機制，可將控制面板工具下載到您的電腦上，以擷取透過Cloud Manager下載的CDN記錄。 透過此工具，您可以分析流量以協助建立適當的流量篩選規則來宣告，包括WAF規則。
+Adobe 提供了將儀表板工具下載到您電腦上的機制，以擷取透過 Cloud Manager 下載的 CDN 日誌。使用此工具，您可以分析流量，以協助制定要宣告的適當流量篩選規則，包括 WAF 規則。
 
-控制面板工具可直接從 [AEMCS-CDN-Log-Analysis-ELK-Tool](https://github.com/adobe/AEMCS-CDN-Log-Analysis-ELK-Tool) Github存放庫。
+儀表板工具可以直接從 [AEMCS-CDN-Log-Analysis-ELK-Tool](https://github.com/adobe/AEMCS-CDN-Log-Analysis-ELK-Tool) Github 存放庫原地複製。
 
-[請參閱教學課程](#tutorial) 以取得如何使用儀表板工具的具體指示。
+[關於如何使用儀表板工具的具體說明，請參閱教學課程 ](#tutorial)。
 
-## 建議的入門者規則 {#recommended-starter-rules}
+## 推薦的入門規則 {#recommended-starter-rules}
 
-您可以將下列建議的規則複製到 `cdn.yaml` 以開始使用。 以記錄模式啟動，分析您的流量，並在滿意時變更為封鎖模式。 您可能希望根據網站即時流量的獨特特性來修改規則。
+您可以將以下推薦的規則複製到您的 `cdn.yaml` 以開始使用。從日誌模式開始分析您的流量，在滿意之後，變更為封鎖模式。您可能希望根據網站即時流量的獨有特徵修改規則。
 
 ```
 kind: "CDN"
@@ -674,12 +675,12 @@ data:
 
 ## 教學課程 {#tutorial}
 
-[完成教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview.html) 以取得流量篩選規則的相關實用知識和經驗。
+[完成教學課程 ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview.html) 以獲得有關流量篩選規則的實用知識和經驗。
 
-此教學課程會逐步引導您瞭解：
+本教學課程將引導您完成：
 
-* 設定Cloud Manager設定管道
+* 設定 Cloud Manager 設定管道
 * 使用工具模擬惡意流量
-* 宣告流量篩選規則，包括WAF規則
+* 宣告流量篩選規則，包括 WAF 規則
 * 使用儀表板工具分析結果
 * 最佳做法

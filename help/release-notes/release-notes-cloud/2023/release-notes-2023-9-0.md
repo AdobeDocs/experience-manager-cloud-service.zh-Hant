@@ -5,7 +5,7 @@ exl-id: d747f58b-8d6c-418d-9d2b-ec3ae4b6dc03
 source-git-commit: 25a4a6b9ae09cb71f50317990af1718db1e14355
 workflow-type: tm+mt
 source-wordcount: '1443'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -33,7 +33,7 @@ ht-degree: 98%
 
 ## 發行影片 {#release-video}
 
-請觀看2023年9月版本概觀影片，瞭解2023.9.0版本新增功能摘要：
+請觀看 2023 年 9 月發行概觀影片，了解 2023.9.0 版本新增功能摘要：
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424826/?quality=12)
 

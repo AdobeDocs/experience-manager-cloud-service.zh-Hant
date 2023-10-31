@@ -2,17 +2,17 @@
 title: 翻譯 Headless 內容
 description: 使用翻譯連接器來翻譯您的 Headless 內容。
 exl-id: 3bfbf186-d684-4742-8c5c-34c34ff3adb5
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: f4e28d89023e8f326e6816ebd8168e1e31e772ce
 workflow-type: tm+mt
 source-wordcount: '2175'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
 
 # 翻譯 Headless 內容 {#translate-content}
 
-使用翻譯連接器來翻譯您的 Headless 內容。
+使用翻譯整合來翻譯Headless內容。
 
 ## 到目前為止 {#story-so-far}
 
