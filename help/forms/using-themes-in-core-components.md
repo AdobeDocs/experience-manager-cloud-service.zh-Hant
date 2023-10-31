@@ -2,7 +2,7 @@
 title: 如何在Adaptive Forms中建立和使用主題？
 description: 您可以使用主題來設定樣式，並使用核心元件來將視覺身分提供給最適化表單。 您可以在任何數量的最適化Forms中共用主題。
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: 397e7d4f23202b8ae7419b0ad5436a6a10e2efb8
+source-git-commit: 4cebcd58a0d6fd429cde3d739095c131cc76d9e5
 workflow-type: tm+mt
 source-wordcount: '2678'
 ht-degree: 4%
@@ -430,7 +430,6 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 ## 另請參閱 {#see-also}
 
 {{see-also}}
-
 * [設定不同熒幕大小和裝置型別的表單版面](/help/sites-cloud/authoring/features/responsive-layout.md)
 * [產生最適化Forms的記錄檔案（核心元件）](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
 * [建立具有可重複區段的最適化Forms](/help/forms/create-forms-repeatable-sections.md)

@@ -5,7 +5,7 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
 exl-id: 1e812d93-4ba5-4589-b59b-2f564d754b0f
-source-git-commit: 397e7d4f23202b8ae7419b0ad5436a6a10e2efb8
+source-git-commit: 4cebcd58a0d6fd429cde3d739095c131cc76d9e5
 workflow-type: tm+mt
 source-wordcount: '2303'
 ht-degree: 67%
@@ -205,7 +205,6 @@ ht-degree: 67%
 ## 另請參閱 {#see-also}
 
 {{see-also}}
-
 * [使用規則編輯器將動態行為新增至表單](rule-editor.md)
 * [設定不同熒幕大小和裝置型別的表單版面](/help/sites-cloud/authoring/features/responsive-layout.md)
 

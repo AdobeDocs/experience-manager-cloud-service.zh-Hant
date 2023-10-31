@@ -2,9 +2,9 @@
 title: 建立及組織頁面
 description: 瞭解如何使用AEM建立和管理頁面，以組織您的網站。
 exl-id: c57096ca-34fe-4b19-98e0-8f3cd43cf24e
-source-git-commit: 53d4e22805774c0b994ee2bba429c19506639014
+source-git-commit: b658f303d25cca958c08a95ead12fa3b987bcb3b
 workflow-type: tm+mt
-source-wordcount: '2543'
+source-wordcount: '2451'
 ht-degree: 4%
 
 ---
@@ -373,18 +373,15 @@ AEM提供可更新任何內部連結的功能，這些連結會參照正在重�
 
 #### 非同步動作 {#asynchronous-actions}
 
-通常，頁面移動或重新命名動作會立即執行。 這將視為同步處理，在動作完成之前，會封鎖UI中的進一步動作。
+頁面移動動作一律會以非同步方式處理，讓使用者能不受阻礙地繼續在UI中編寫。
 
-但是，如果受影響的頁數超過定義的限制，系統會以非同步方式處理動作，讓使用者能夠不受頁面移動或重新命名動作的阻礙，繼續在UI中編寫。
+* 使用者必須定義何時應執行非同步操作
+   * **現在** 會立即開始執行非同步作業。
+   * **稍後** 可讓使用者定義非同步作業何時開始。
 
-* 按一下 **移動** 在上述最後一個步驟中，AEM會檢查設定的限制。
-* 如果受影響的頁數低於限制，會執行同步作業。
-* 如果受影響的頁數超過限制，系統就會執行非同步作業。
-   * 使用者必須定義何時應執行非同步操作
-      * **現在** 會立即開始執行非同步作業。
-      * **稍後** 可讓使用者定義非同步作業何時開始。
-
-        ![非同步頁面移動](/help/sites-cloud/authoring/assets/asynchronous-page-move.png)
+<!--
+  ![Asynchronous page move](assets/asynchronous-page-move.png)
+-->
 
 您可在以下位置檢查非同步作業的狀態： [**非同步工作狀態** 儀表板](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations) 在 **全域導覽** -> **工具** -> **作業** -> **工作**
 

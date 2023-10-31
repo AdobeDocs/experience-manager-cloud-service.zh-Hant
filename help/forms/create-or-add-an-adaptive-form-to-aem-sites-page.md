@@ -4,7 +4,7 @@ description: 瞭解如何建立最適化表單或將其新增到您的AEM Sites�
 feature: Adaptive Forms, Page Editor, Authoring
 Keywords: AF in Sites editor, af in aem sites, aem sites af, add af to a sites page, af aem sites, af sites, create af in a sites page, adaptive form in aem sites, forms aem sites, add form to a sites page, adaptive forms aem sites, add adaptive forms to aem page, create forms in an aem sites page
 exl-id: a1846c5d-7b0f-4f48-9d15-96b2a8836a9d
-source-git-commit: 397e7d4f23202b8ae7419b0ad5436a6a10e2efb8
+source-git-commit: 4cebcd58a0d6fd429cde3d739095c131cc76d9e5
 workflow-type: tm+mt
 source-wordcount: '3212'
 ht-degree: 20%
@@ -268,7 +268,6 @@ AEM FormsCloud Service提供最適化表單容器和Adaptive Forms — 內嵌元
 ## 另請參閱 {#see-also}
 
 {{see-also}}
-
 * [使用規則編輯器將動態行為新增至表單](rule-editor.md)
 * [設定不同熒幕大小和裝置型別的表單版面](/help/sites-cloud/authoring/features/responsive-layout.md)
 
