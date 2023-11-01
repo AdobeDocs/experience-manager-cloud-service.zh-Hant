@@ -2,10 +2,10 @@
 title: 管理 SSL 憑證的簡介
 description: 了解 Cloud Manager 如何提供自助服務工具以安裝 SSL 憑證。
 exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 6db3565fefe4c826bb40695d0fa84368fd3f283b
 workflow-type: tm+mt
-source-wordcount: '630'
-ht-degree: 100%
+source-wordcount: '679'
+ht-degree: 99%
 
 ---
 
@@ -49,7 +49,7 @@ AEM as a Cloud Service 僅支援安全的 `https` 網站。
 * 擁有多個自訂網域的客戶不希望每次新增網域時都上傳憑證。
 * 這類客戶能因獲得具有多個網域的憑證而受益。
 
-## 要求 {#requirements}
+## 憑證需求 {#requirements}
 
 * AEM as a Cloud Service 僅接受符合 OV (組織驗證) 或 EV (擴展驗證) 原則的憑證。
 * 任何憑證都必須是來自受信任憑證授權單位 (CA) 的 X.509 TLS 憑證，並具有相符的 2048 位元 RSA 私密金鑰。
@@ -57,6 +57,30 @@ AEM as a Cloud Service 僅支援安全的 `https` 網站。
 * 不接受自我簽署憑證。
 
 OV 和 EV 憑證為使用者提供額外的 CA 驗證資訊，可用於確定網站所有者、電子郵件寄件者或可執行程式碼或 PDF 文件的數位簽署人是否值得信賴。DV 憑證不允許此類所有權驗證。
+
+### 憑證格式 {#certificate-format}
+
+SSL 憑證文件必須是 PEM 格式才能與 Cloud Manager 一起安裝。PEM 格式的常見文件附檔名包括 `.pem,`。`crt`、`.cer` 和 `.cert`。
+
+以下 `openssl` 命令可用於轉換非 PEM 憑證。
+
+* 將 PFX 轉換為 PEM
+
+  ```shell
+  openssl pkcs12 -in certificate.pfx -out certificate.cer -nodes
+  ```
+
+* 將 P7B 轉換為 PEM
+
+  ```shell
+  openssl pkcs7 -print_certs -in certificate.p7b -out certificate.cer
+  ```
+
+* 將 DER 轉換為 PEM
+
+  ```shell
+  openssl x509 -inform der -in certificate.cer -out certificate.pem
+  ```
 
 ## 限制 {#limitations}
 

@@ -2,10 +2,10 @@
 title: 新增自訂網域名稱
 description: 了解如何使用 Cloud Manager 新增自訂網域名稱。
 exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
-source-git-commit: 600288a87e024fbe58ff605a8bcdc61535cc0759
-workflow-type: ht
-source-wordcount: '601'
-ht-degree: 100%
+source-git-commit: d3021a4dd78a0ca86352a81965ce92868e94664a
+workflow-type: tm+mt
+source-wordcount: '637'
+ht-degree: 89%
 
 ---
 
@@ -22,7 +22,9 @@ ht-degree: 100%
 
 ## 從域設定頁面新增自訂網域名稱 {#adding-cdn-settings}
 
-按照以下步驟從&#x200B;**域設定**&#x200B;頁。如果您使用的 CDN 與 Fastly 提供的不同，則這些步驟不適合您使用，並且您必須使用已設定的 CDN 來設定您的網域。
+新增自訂網域名稱時，將會使用最明確的有效憑證提供網域。 如果多個憑證具有相同的網域，則選擇最近更新的憑證。 Adobe建議您管理憑證，以免網域重疊。
+
+按照以下步驟從&#x200B;**域設定**&#x200B;頁。這些步驟是根據Fastly。 如果您使用不同的CDN，則必須使用您選擇要使用的CDN來設定網域。
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織和計畫。
 

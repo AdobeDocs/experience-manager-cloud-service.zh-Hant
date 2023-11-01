@@ -2,10 +2,10 @@
 title: 管理環境
 description: 了解您可以建立的環境類型，以及如何為您的 Cloud Manager 專案建立環境類型。
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: e636a765cdc1be7cb0d385089e8ccc75b798844a
+source-git-commit: 532f3ac9450d34f3e2a168c04695bafde5a44c9f
 workflow-type: tm+mt
-source-wordcount: '2558'
-ht-degree: 100%
+source-wordcount: '2601'
+ht-degree: 96%
 
 ---
 
@@ -36,6 +36,8 @@ ht-degree: 100%
 >生產和中繼環境都是以一組建立。您不能只建立一個中繼環境或只建立一個生產環境。
 
 ## 新增一個環境 {#adding-environments}
+
+若要新增或編輯環境，使用者必須成為以下群組成員： **企業所有者** 角色。
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織。
 
@@ -234,7 +236,7 @@ Cloud Manager 為每個 AEM as a Cloud Service 環境提供預覽服務 (作為�
 
 ![更新環境索引標籤的選項](assets/environ-update3.png)
 
-具有&#x200B;**部署管理員**&#x200B;角色的使用者可以使用此選項將與此環境關聯的管道更新到最新的 AEM 版本。
+使用者具有 **部署管理員** 或 **企業所有者** 角色可以使用此選項將與此環境關聯的管道更新到最新的AEM版本。
 
 管道版本更新到最新公開的 AEM 版本後，系統會提示使用者執行關聯的管道以將最新版本部署到環境中。
 
@@ -248,7 +250,7 @@ Cloud Manager 為每個 AEM as a Cloud Service 環境提供預覽服務 (作為�
 
 ## 刪除開發環境 {#deleting-environment}
 
-具有必要權限的使用者可以刪除開發環境。
+使用者具有 **部署管理員** 或 **企業所有者** 角色可以刪除開發環境。
 
 在「**環境**」卡上計畫的「**概觀**」畫面中，按一下要刪除的開發環境的省略符號按鈕。
 
@@ -287,7 +289,7 @@ Cloud Manager 為每個 AEM as a Cloud Service 環境提供預覽服務 (作為�
 
 ## 本機登入 {#login-locally}
 
-從&#x200B;**環境**&#x200B;卡中環境的省略符號選單中選擇&#x200B;**本機登入**，即可以本機登入到 Adobe Experience Manager。
+選取 **本機登入** 從環境的省略符號選單 **環境** 卡片以在本機登入Adobe Experience Manager。
 
 ![本機登入](assets/environ-login-locally.png)
 
@@ -300,6 +302,8 @@ Cloud Manager 為每個 AEM as a Cloud Service 環境提供預覽服務 (作為�
 Cloud Manager 支援 Sites 計畫的發佈和預覽服務的自訂網域名稱。每個 Cloud Manager 環境最多可以託管 250 個自訂網域。
 
 要設定自訂網域名稱，請瀏覽到「**環境**」索引標籤，然後按一下環境以查看環境詳細資訊。
+
+使用者必須具有&#x200B;**業務負責人**&#x200B;或&#x200B;**部署管理員**&#x200B;角色，才能在 Cloud Manager 新增自訂網域名稱。
 
 ![環境詳細資訊](assets/domain-names.png)
 

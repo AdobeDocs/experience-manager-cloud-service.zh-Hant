@@ -2,10 +2,10 @@
 title: Adobe Experience Manager (AEM) as a Cloud Service 重大變更
 description: Adobe Experience Manager (AEM) as a Cloud Service 重大變更.
 exl-id: fe11d779-66cd-45aa-aa6b-c819b88d2405
-source-git-commit: 78ead5f15c2613d9c3bed3025b43423a66805c59
+source-git-commit: 30edc83364dd9666b94f54048abc8b7f92ad6ce3
 workflow-type: tm+mt
-source-wordcount: '857'
-ht-degree: 100%
+source-wordcount: '871'
+ht-degree: 97%
 
 ---
 
@@ -79,21 +79,7 @@ Adobe Experience Manager (AEM) Cloud Service 提供許多管理 AEM 專案的新
 
 ## 禁止自訂執行模式 {#custom-runmodes}
 
-AEM Cloud Service 提供以下現成執行模式：
-
-* `author`
-* `publish`
-* `prod`
-* `author.prod`
-* `publish.prod`
-* `stage`
-* `author.stage`
-* `publish.stage`
-* `dev`
-* `author.dev`
-* `publish.dev`
-
-AEM Cloud Service 無法使用其他或自訂的執行模式。
+AEM Cloud Service 無法使用其他或自訂的執行模式。如需針對AEM Cloud Service提供的現成執行模式清單，請參閱檔案 [部署至AEMas a Cloud Service。](/help/implementing/deploying/overview.md#runmodes)
 
 ## 移除複寫代理程式和相關變更 {#replication-agents}
 

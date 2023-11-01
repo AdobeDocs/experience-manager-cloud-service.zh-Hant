@@ -2,10 +2,10 @@
 title: 正在新增 SSL 憑證
 description: 了解如何使用 Cloud Manager 的自助服務工具新增您自己的 SSL 憑證。
 exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: ht
-source-wordcount: '570'
-ht-degree: 100%
+source-git-commit: 6db3565fefe4c826bb40695d0fa84368fd3f283b
+workflow-type: tm+mt
+source-wordcount: '555'
+ht-degree: 94%
 
 ---
 
@@ -17,29 +17,9 @@ ht-degree: 100%
 >
 >提供憑證可能需要幾天時間。因此，Adobe 建議提前準備好憑證。
 
-## 憑證格式 {#certificate-format}
+## 憑證需求 {#certificate-requirements}
 
-SSL 憑證文件必須是 PEM 格式才能與 Cloud Manager 一起安裝。PEM 格式的常見文件附檔名包括 `.pem,`。`crt`、`.cer` 和 `.cert`。
-
-以下 `openssl` 命令可用於轉換非 PEM 憑證。
-
-* 將 PFX 轉換為 PEM
-
-  ```shell
-  openssl pkcs12 -in certificate.pfx -out certificate.cer -nodes
-  ```
-
-* 將 P7B 轉換為 PEM
-
-  ```shell
-  openssl pkcs7 -print_certs -in certificate.p7b -out certificate.cer
-  ```
-
-* 將 DER 轉換為 PEM
-
-  ```shell
-  openssl x509 -inform der -in certificate.cer -out certificate.pem
-  ```
+請檢閱區段 **憑證需求** 檔案 [管理SSL憑證的簡介](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md#requirements) 以確保AEMas a Cloud Service支援您要新增的憑證。
 
 ## 正在新增憑證 {#adding-a-cert}
 
