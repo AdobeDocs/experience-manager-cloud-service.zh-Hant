@@ -1,12 +1,12 @@
 ---
 title: 開始使用 Edge Delivery Services
-description: 開始使用 Edge Delivery Services。
+description: Edge Delivery Services (EDS)快速入門。
 feature: Edge Delivery Services
 exl-id: 03a1aa93-d2e6-4175-9cf3-c7ae25c0d24e
-source-git-commit: 39a7e45e3b367323cb1123227fd806f60d3ea224
+source-git-commit: 34965338015df868778a95582524df08a7c5f136
 workflow-type: tm+mt
-source-wordcount: '877'
-ht-degree: 92%
+source-wordcount: '878'
+ht-degree: 99%
 
 ---
 
@@ -60,7 +60,7 @@ Adobe 提供三個頻道來幫助您使用 Edge Delivery Services：
 
 ### 存取社群資源 {#community-resource}
 
-Adobe致力於為您提供最佳社群參與度，以及對Edge Delivery Services和檔案式編寫的支援。 參與 [Experience League社群](https://adobe.ly/3Q6kTKl) 提出問題、分享意見、展開討論、向Adobe專家和AEM顧問/Champs尋求協助，並即時與志同道合的個人進行交流。 加入我們的 [不和諧的頻道](https://discord.gg/aem-live)，此平台提供更休閒的即時互動與快速創意交流平台。
+Adobe 致力於為您提供 Edge Delivery Services 和文件型製作的最佳社群參與和支援。 參與 [Experience League 社群](https://adobe.ly/3Q6kTKl)，提出問題、分享意見、發起討論、尋求 Adobe 專家和 AEM 顧問/達人的協助，以及與志趣相投的人即時聯繫。 並加入我們的[探索頻道](https://discord.gg/aem-live)，一個更休閒的即時互動和快速思想交流平台。
 
 ### 如何存取您的產品協作頻道 {#collab-channel}
 
