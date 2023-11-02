@@ -5,7 +5,7 @@ exl-id: 487f0b51-501b-48fc-a796-3cb8a6d64462
 source-git-commit: 1b9d49ce1ef8ad4b0a11400b41d8c9b880cbf884
 workflow-type: tm+mt
 source-wordcount: '483'
-ht-degree: 28%
+ht-degree: 29%
 
 ---
 
@@ -53,7 +53,7 @@ ht-degree: 28%
 
 另請參閱 [存取和管理記錄檔](/help/implementing/cloud-manager/manage-logs.md) 瞭解如何透過使用者介面或透過Cloud Manager從API存取和管理記錄。
 
-## 正在連絡支援 {#contacting-support}
+## 連絡支援人員 {#contacting-support}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_support"

@@ -5,13 +5,13 @@ exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 source-git-commit: a6d19de48f114982942b0b8a6f6cbdc38b0d4dfa
 workflow-type: tm+mt
 source-wordcount: '2191'
-ht-degree: 7%
+ht-degree: 8%
 
 ---
 
 # 將內容引入雲端服務 {#ingesting-content}
 
-## Cloud Acceleration Manager中的擷取程式 {#ingestion-process}
+## Cloud Acceleration Manager 中的摘取程序 {#ingestion-process}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_ingestion"
@@ -71,7 +71,7 @@ ht-degree: 7%
 >id="aemcloud_ctt_ingestion_topup"
 >title="追加擷取"
 >abstract="使用填滿功能來移動自上次內容轉移活動以來修改的內容。攝入完成後，檢查記錄檔中是否有任何錯誤/警告。如有任何錯誤應立即處理，方法是處理回報的問題或聯絡 Adobe 客戶服務。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/viewing-logs.html?lang=zh-Hant" text="檢視記錄檔"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/viewing-logs.html?lang=zh-Hant" text="檢視移轉集的"
 
 「內容轉移工具」具備可透過執行 *追加* 移轉集的。 如此可修改移轉集，使其僅包含自上次擷取以來已變更的內容，而無須再次擷取所有內容。
 

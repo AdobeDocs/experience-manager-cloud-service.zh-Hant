@@ -1,17 +1,17 @@
 ---
-title: 使用者對應工具概觀（舊版）
-description: 使用者對應工具概觀（舊版）
+title: 使用者對應工具概觀 (舊版)
+description: 使用者對應工具概觀 (舊版)
 exl-id: 17ed5721-093e-4491-b8c4-3dadcaa6598b
 hide: true
 hidefromtoc: true
 source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '305'
-ht-degree: 10%
+ht-degree: 16%
 
 ---
 
-# 使用者對應工具概觀（舊版） {#overview-user-mapping-tool}
+# 使用者對應工具概觀 (舊版) {#overview-user-mapping-tool}
 
 >[!INFO]
 >
