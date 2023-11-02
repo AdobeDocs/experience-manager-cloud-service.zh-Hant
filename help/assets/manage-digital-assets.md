@@ -6,9 +6,9 @@ mini-toc-levels: 3
 feature: Asset Management,Publishing,Collaboration,Asset Processing
 role: User,Architect,Admin
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: 2f3845495b545f88a1bc5a5feef1a6312f679a26
+source-git-commit: 22cfb23784544947b6a38be0453959913c9e8ccd
 workflow-type: tm+mt
-source-wordcount: '4501'
+source-wordcount: '4519'
 ht-degree: 11%
 
 ---
@@ -266,6 +266,14 @@ To view usage statistics for an asset, in the [!UICONTROL Properties] page, clic
    >如果您從「轉譯」面板選取轉譯 **** ，工具列會變更上下文，並僅顯示與轉譯相關的動作。不會顯示「上傳轉譯」圖示等選項。若要在工具列中檢視這些選項，請導覽至資產的詳細資訊頁面。
 
    您可以設定要在影像或視訊資產的詳細資訊頁面中顯示的轉譯尺寸。 Assets會根據您指定的維度顯示具有精確或最接近維度的轉譯。
+
+   您無法建立具有下列字首的轉譯，因為這些是Adobe的內部字首：
+
+   * cq5
+
+   * cqdam
+
+   * cq5dam
 
    若要在資產詳細資料層級設定影像的轉譯尺寸，請覆蓋節 `renditionpicker` 點(`libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/renditionpicker`)並設定width屬性的值。設定屬性大 **[!UICONTROL 小 (長) (KB]** )以取代寬度，以根據影像大小自訂資產詳細資料頁面上的轉譯。對於基於大小的定製，如果匹配的 `preferOriginal` 格式副本的大小大於原始格式副本的大小，則屬性會為原始格式副本指定首選項。
 
