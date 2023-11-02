@@ -2,9 +2,9 @@
 title: Cloud Acceleration Manager中的實作階段
 description: 本頁提供Cloud Acceleration Manager實作階段的概觀。
 exl-id: e6ac88f0-4b3f-43a1-98bc-8c6608713784
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: c8739388ac21dd40d6757815af6f2732991d216b
 workflow-type: tm+mt
-source-wordcount: '661'
+source-wordcount: '652'
 ht-degree: 7%
 
 ---
@@ -109,7 +109,7 @@ AEMas a Cloud Service部署卡會提供所有相關內容，協助您將程式�
 
 1. 下載並安裝內容轉移工具以填入移轉集並完成內容轉移的提取階段。 檢閱 [內容轉移工具快速入門](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=zh-Hant) 以瞭解如何使用內容轉移工具。
 
-1. 若要將內容從移轉集擷取至AEMas a Cloud Service上的環境，您必須開始擷取。 瀏覽至 **內嵌工作** 並按一下 **新內嵌**. 檢閱 [將內容內嵌至目標](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html) 以便您瞭解如何完成內容轉移的擷取階段。
+1. 若要將內容從移轉集擷取至AEMas a Cloud Service上的環境，您必須開始擷取。 瀏覽至 **內嵌工作** 並按一下 **新內嵌**. 檢閱 [將內容內嵌至目標](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md) 以便您瞭解如何完成內容轉移的擷取階段。
 
    ![影像](/help/journey-migration/cloud-acceleration-manager/assets/contenttransfer-3.png)
 

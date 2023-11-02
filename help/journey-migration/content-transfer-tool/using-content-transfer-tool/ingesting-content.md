@@ -2,10 +2,10 @@
 title: 將內容引入雲端服務
 description: 瞭解如何使用Cloud Acceleration Manager將移轉集中的內容擷取到目標Cloud Service例項。
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: a6d19de48f114982942b0b8a6f6cbdc38b0d4dfa
+source-git-commit: 28cbdff5756b0b25916f8d9a523ab4745873b5fa
 workflow-type: tm+mt
-source-wordcount: '2191'
-ht-degree: 8%
+source-wordcount: '2324'
+ht-degree: 7%
 
 ---
 
@@ -31,27 +31,35 @@ ht-degree: 8%
 
 1. 提供建立內嵌所需的資訊。
 
-   * 選取包含擷取資料的移轉集作為來源。
+   * **移轉集：** 選取包含擷取資料的移轉集作為來源。
       * 移轉集將在長時間不活動後過期，因此預期擷取會在執行擷取後不久進行。 檢閱 [移轉集到期](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry) 以取得詳細資訊。
-   * 選取目標環境。 此環境是擷取移轉集內容的地方。 選取階層。 （作者/發佈）。 不支援快速開發環境。
+
+   >[!TIP]
+   > 如果擷取目前正在執行，對話方塊將會指出該專案。 成功完成擷取後，內嵌會自動開始。 如果擷取失敗或停止，擷取工作將會撤銷。
+
+   * **目的地：** 選取目標環境。 此環境是擷取移轉集內容的地方。
+      * 內嵌不支援快速開發環境(RDE)目的地，即使使用者擁有存取權，也不會顯示為可能的目的地選擇。
+      * 雖然移轉集可同時內嵌至多個目的地，但目的地一次只能是一個執行或等待內嵌的目標。
+
+   * **階層：** 選取階層。 （作者/發佈）。
+      * 如果來源是 `Author`，建議將其擷取至 `Author` 在目標上層。 同樣地，如果來源為 `Publish`，目標應該是 `Publish` 以及。
 
    >[!NOTE]
-   >下列附註適用於擷取內容：
-   > 如果來源是「作者」，建議將其擷取至目標上的「作者」階層。 同樣地，如果來源是「發佈」，則目標也應該是「發佈」。
    > 如果目標層為 `Author`，作者例項會在擷取期間關閉，且無法供使用者（例如作者或執行維護的任何人）使用。 原因是為了保護系統，並防止任何可能遺失或導致擷取衝突的變更。 確保您的團隊知道這個事實。 另請注意，環境在作者擷取期間似乎處於休眠狀態。
-   > 您可以執行選用的預先複製步驟，大幅加快內嵌速度。 另請參閱 [使用AzCopy內嵌](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#ingesting-azcopy) 以取得更多詳細資料。
-   > 如果使用具有預先複製的內嵌（用於S3或Azure資料存放區），建議先單獨執行作者內嵌。 這麼做可加快發佈擷取稍後執行的速度。
-   > 內嵌不支援快速開發環境(RDE)目的地，即使使用者擁有存取權，也不會顯示為可能的目的地選擇。
 
-   >[!IMPORTANT]
-   > 只有當您屬於本機時，才能起始對目的地環境的內嵌 **AEM管理員** 目的地Cloud Service作者服務上的群組 如果您無法開始內嵌，請參閱 [無法開始內嵌](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#unable-to-start-ingestion) 以取得更多詳細資料。
-
-   * 選擇 `Wipe` 值
+   * **擦去：** 選擇 `Wipe` 值
       * 此 **擦去** 選項會設定目的地的擷取起點。 如果 **擦去** 已啟用，包含其所有內容的目的地會重設為Cloud Manager中指定的AEM版本。 如果未啟用，目的地會維持目前內容為起點。
       * 請注意，此選項可以 **NOT** 會影響執行內容內嵌的方式。 內嵌一律會使用內容取代策略，並 _非_ 內容合併策略，因此 **擦去** 和 **非擦去** 在這種情況下，擷取移轉集將會覆寫目的地上相同路徑的內容。 例如，如果移轉集包含 `/content/page1` 目的地已包含 `/content/page1/product1`，內嵌將會移除整個 `page1` 路徑及其子頁面，包括 `product1`，並以移轉集中的內容取代。 這表示執行時，必須仔細規劃 **非擦去** 內嵌至包含任何應維護之內容的目的地。
 
    >[!IMPORTANT]
    > 如果設定 **擦去** 會啟用擷取，並重設整個現有存放庫，包括目標Cloud Service例項的使用者許可權。 對於新增至的管理員使用者，此重設也是true **管理員** 群組，並且必須再次將該使用者新增到管理員群組，才能開始內嵌。
+
+   * **預先複製：** 選擇 `Pre-copy` 值
+      * 您可以執行選用的預先複製步驟，大幅加快內嵌速度。 另請參閱 [使用AzCopy內嵌](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#ingesting-azcopy) 以取得更多詳細資料。
+      * 如果使用具有預先複製的內嵌（適用於S3或Azure資料存放區），建議執行 `Author` 請先單獨內嵌。 如此一來，您就可以加快 `Publish` 擷取（稍後執行）。
+
+   >[!IMPORTANT]
+   > 只有當您屬於本機時，才能起始對目的地環境的內嵌 **AEM管理員** 目的地Cloud Service作者服務上的群組 如果您無法開始內嵌，請參閱 [無法開始內嵌](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#unable-to-start-ingestion) 以取得更多詳細資料。
 
 1. 按一下 **擷取**.
 
@@ -160,8 +168,11 @@ AEM中的每個節點都必須有唯一的uuid。 此錯誤指出正在內嵌的
 
 解決方案可能要求再次執行追加擷取，而不需要違反規定的節點。 或者，建立違規節點的小型移轉集，但停用「包含版本」。
 
-最佳實務指示如果 **非擦去** 內嵌必須使用包含版本的移轉集執行（亦即以「包含版本」=true擷取），在移轉歷程完成之前，儘可能減少修改目的地上的內容至關重要。 否則，這些衝突可能會發生。
+最佳實務指出，如果 **非擦去** 內嵌必須使用包含版本的移轉集執行（亦即以「包含版本」=true擷取），在移轉歷程完成之前，儘可能減少修改目的地上的內容至關重要。 否則，這些衝突可能會發生。
 
+### 內嵌已取消
+
+以執行中的擷取作為來源移轉集而建立的擷取作業將耐心等候，直到擷取成功，而且屆時會正常開始。 如果擷取失敗或停止，則擷取及其索引工作將不會開始，但將會取消。 在這種情況下，請檢查擷取以確定失敗的原因，修正問題並重新開始擷取。 執行固定擷取後，即可排程新的內嵌。
 
 ## 下一步 {#whats-next}
 

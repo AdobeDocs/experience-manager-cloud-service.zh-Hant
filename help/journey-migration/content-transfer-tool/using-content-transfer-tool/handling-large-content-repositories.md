@@ -2,9 +2,9 @@
 title: 處理大型內容存放庫
 description: 本節說明如何處理大型內容存放庫
 exl-id: 21bada73-07f3-4743-aae6-2e37565ebe08
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 858e10f99e2015a1488bb9e1d0990a553c5f6d04
 workflow-type: tm+mt
-source-wordcount: '1813'
+source-wordcount: '1835'
 ht-degree: 8%
 
 ---
@@ -191,6 +191,9 @@ c.a.g.s.m.commons.ContentExtractor - *************** Beginning AzCopy Pre-Copy p
 
 後續執行時，AzCopy會自動略過錯誤前所複製的任何Blob，而且不需要再次複製。
 
+>[!TIP]
+>現在，內嵌可排程在擷取成功後立即自動開始。 另請參閱 [將內容內嵌至目標](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md) 以取得詳細資訊。
+
 #### 針對檔案資料存放區 {#file-data-store-extract}
 
 當針對來源檔案dataStore執行AzCopy時，您應該會在記錄中看到類似這些的訊息，指出正在處理資料夾：
@@ -198,8 +201,7 @@ c.a.g.s.m.commons.ContentExtractor - *************** Beginning AzCopy Pre-Copy p
 
 ### 5.使用AzCopy擷取 {#ingesting-azcopy}
 
-另請參閱 [將內容內嵌至目標](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)
-有關從Cloud Acceleration Manager (CAM)將內容擷取到目標的一般資訊，包括在「新擷取」對話方塊中如何使用AzCopy （預先複製）或不使用的指示。
+另請參閱 [將內容內嵌至目標](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md) 有關從Cloud Acceleration Manager (CAM)將內容擷取到目標的一般資訊，包括在「新擷取」對話方塊中如何使用AzCopy （預先複製）或不使用的指示。
 
 若要在內嵌期間使用AzCopy，Adobe需要您使用至少為2021.6.5561版的AEMas a Cloud Service版本。
 

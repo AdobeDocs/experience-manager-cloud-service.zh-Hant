@@ -2,10 +2,10 @@
 title: 自來源擷取內容
 description: 瞭解如何從來源Adobe Experience Manager (AEM)例項擷取內容，以便稍後將其傳輸至Cloud ServiceAEM例項。
 exl-id: c5c08c4e-d5c3-4a66-873e-96986e094fd3
-source-git-commit: 031ddfa2da0fc5ecc92267eae1f9dcaac394573d
+source-git-commit: 858e10f99e2015a1488bb9e1d0990a553c5f6d04
 workflow-type: tm+mt
-source-wordcount: '713'
-ht-degree: 29%
+source-wordcount: '735'
+ht-degree: 28%
 
 ---
 
@@ -28,6 +28,9 @@ ht-degree: 29%
 1. 從以下位置選取移轉集 **內容轉移** 精靈並按一下 **Extract** 以開始擷取。
 
    ![影像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam12.png)
+
+   >[!TIP]
+   >現在，內嵌可排程在擷取成功後立即自動開始。 另請參閱 [將內容內嵌至目標](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md) 以取得詳細資訊。
 
    >[!IMPORTANT]
    >
