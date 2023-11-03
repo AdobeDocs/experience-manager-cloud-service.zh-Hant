@@ -1,13 +1,13 @@
 ---
 title: 使用 Universal Editor 進行內容編輯
-description: 探索如何使用通用編輯器來編輯內容的任何方面，無論是在任何實作中的位置或內容中。
+description: 探索如何使用 Universal Editor 在任何實作中對內容的任何層面進行就地和內容編輯。
 hidefromtoc: true
 index: false
 exl-id: a4854a56-9434-4d15-a56a-f1798f27263a
 source-git-commit: 226df8999d1344ffe8acb2a9ce75b58634300a11
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '971'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
