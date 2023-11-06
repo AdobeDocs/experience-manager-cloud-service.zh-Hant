@@ -2,9 +2,9 @@
 title: Adobe Experience Manager as a Cloud Service 架構簡介
 description: Adobe Experience Manager as a Cloud Service 架構簡介。
 exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
-source-git-commit: 689b672e75c4e4d2fa8f716d93c65418f332a266
+source-git-commit: b610de53d1bd1b120a2642336aac1713444bfd3e
 workflow-type: tm+mt
-source-wordcount: '2656'
+source-wordcount: '2665'
 ht-degree: 13%
 
 ---
@@ -66,7 +66,7 @@ AEM應用程式的具體化形式為 [計畫](/help/implementing/cloud-manager/g
 
 AEM程式可設定為 [Edge遞送服務](/help/edge/overview.md) 以及。
 
-在設定之後，AEM可以參考用來建置具有Edge Delivery Services的體驗的GitHub程式碼存放庫。 因此，新的設定選項將可用於關聯的體驗。 這些功能包括設定Adobe管理的CDN、存取授權量度或SLA報告。
+在設定之後，AEM可以參考用來建置具有Edge Delivery Services的體驗的GitHub程式碼存放庫。 因此，新的設定選項將可用於關聯的體驗。 這些功能包括設定Adobe管理的CDN，以及存取授權量度或SLA報告。
 
 ## 服務架構 {#service-architecture}
 
@@ -198,7 +198,7 @@ Cloud Manager會管理您的AEMas a Cloud Service例項的所有更新。 這是
 
 * 由Adobe協助以確保產品完整性
 * 客戶貢獻的測試
-   * 功能測試： http
+   * 功能測試：透過向AEM作者或發佈層級提出http請求
    * UI測試：根據Selenium或Cypress技術
 
 這些自動化測試會在預備環境中執行，因此務必要儘可能讓預備環境內容接近生產執行個體上的內容。
