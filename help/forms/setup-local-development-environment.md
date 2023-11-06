@@ -2,9 +2,9 @@
 title: 如何設定AEM Forms的本機開發環境？
 description: 設定Adobe Experience Manager Formsas a Cloud Service的本機開發環境
 exl-id: 12877a77-094f-492a-af58-cffafecf79ae
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: a0433718a223a6d3aa7740232caa17650bce5ff6
 workflow-type: tm+mt
-source-wordcount: '2811'
+source-wordcount: '2847'
 ht-degree: 3%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 3%
 您可以使用本機開發環境執行以下動作，而無需登入雲端開發環境：
 
 * [建立表單](creating-adaptive-form.md) 和相關資產（主題、範本、自訂提交動作等）
-* [將 PDF 表單轉換為調適型表單](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html)
+* [將 PDF 表單轉換為最適化表單](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html)
 * 建置要產生的應用程式 [客戶通訊](aem-forms-cloud-service-communications-introduction.md) 隨選或批次模式。
 
 在本機開發執行個體或應用程式準備就緒要產生的最適化表單或相關資產後 [客戶通訊] 準備就緒，您可以從本機開發環境將調適型表單或客戶通訊應用程式匯出至Cloud Service環境，以進行進一步測試或移至生產環境。
@@ -266,6 +266,10 @@ After the repository is cloned, [integrate your Git repo with Cloud Manager](htt
 
    * 使用 `includeFormscommunications=y` 包含Forms核心元件的選項，以及包含客戶通訊功能所需的相依性。
 
+     >[!WARNING]
+     >
+     * 使用版本45建立Archetype專案時， [AEM原型專案資料夾]/pom.xml一開始將forms核心元件版本設定為2.0.64。在建立或部署Archetype專案之前，請將Forms核心元件版本更新為2.0.62。
+
 1. 將專案部署到您的本機開發環境。 您可以使用以下命令來部署到您的本機開發環境
 
    `mvn -PautoInstallPackage clean install`
@@ -319,7 +323,8 @@ Dispatcher上的快取允許 [!DNL AEM Forms] 以在使用者端預先填入Adap
 ### 有關快取的考量事項 {#considerations-about-caching}
 
 * Dispatcher快取允許 [!DNL AEM Forms] 以在使用者端預先填入Adaptive Forms。 這可改善預填表單的演算速度。
-* 快取安全內容功能預設為停用。 若要啟用此功能，您可以執行 [快取安全內容](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=en) 文章
+* 
+預設停用快取安全內容的功能。若要啟用此功能，您可以執行 [快取安全內容](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=en) 文章
 * Dispatcher可能無法讓某些最適化Forms和相關的最適化Forms失效。 若要解決這類問題，請參閱 [[!DNL AEM Forms] 快取](troubleshooting-caching-performance.md) 在疑難排解一節中。
 * 快取本地化的最適化Forms：
    * 使用URL格式 `http://host:port/content/forms/af/<afName>.<locale>.html` 請求最適化表單的本地化版本，而非 `http://host:port/content/forms/af/afName.html?afAcceptLang=<locale>`
@@ -329,7 +334,7 @@ Dispatcher上的快取允許 [!DNL AEM Forms] 以在使用者端預先填入Adap
 
 您的本機開發環境已準備就緒。
 
-## 在 AEM Forms as a Cloud Service 和本地開發環境中啟用最適化表單核心元件
+## 在 AEM Forms as a Cloud Service 和本機開發環境中啟用最適化表單核心元件
 
 在AEM Formsas a Cloud Service上啟用最適化Forms核心元件，可讓您開始建立、發佈和提供核心元件式的最適化Forms和Headless Forms，並使用AEM FormsCloud Service例項來將您的傳送至多個管道。 您需要啟用調適型表單核心元件的環境才能使用 Headless 調適型表單。
 
