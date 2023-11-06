@@ -1,13 +1,13 @@
 ---
 title: 額外發佈區域
 description: 了解 AEM as a Cloud Service 如何支援額外發佈區域以提高可用性並減少延遲。
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+exl-id: b9ac3c6a-eb8b-461d-8f1d-a0356046a3f9
+source-git-commit: 4f11d1958cbfb252f29a7815af8800426d945ebd
 workflow-type: tm+mt
-source-wordcount: '542'
-ht-degree: 100%
+source-wordcount: '606'
+ht-degree: 89%
 
 ---
-
 
 # 額外發佈區域 {#additional-publish-regions}
 
@@ -35,6 +35,11 @@ ht-degree: 100%
 授權額外發佈區域後，可使用 Cloud Manager 設定這些區域。如需詳細說明，請參閱 [Cloud Manager 文件](/help/implementing/cloud-manager/manage-environments.md#multiple-regions)。
 
 額外發佈區域適用於中繼和生產環境，但不適用於 RDE 或開發環境。
+
+如果某個地區無法使用，客戶就不需要管理將流量路由到可用地區，因為它是由AdobeCDN管理。
+
+如下方「進階網路考量事項」一節所述，建議使用進階網路的客戶針對每個額外的發佈區域進行設定，以便在區域無法使用時維持可用性。
+
 
 ## 進階網路考量事項 {#advanced-networking-considerations}
 

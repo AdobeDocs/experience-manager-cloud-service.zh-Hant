@@ -2,9 +2,9 @@
 title: 使用者對應和主體移轉
 description: AEMas a Cloud Service中的使用者對應和主體移轉概觀。
 exl-id: 4a35fc46-f641-46a4-b3ff-080d090c593b
-source-git-commit: 2fdfb65543fa2942e809aa5d379f4000e40bd517
+source-git-commit: 2f5eeb0333cee13b12edefd0f95541a891e30960
 workflow-type: tm+mt
-source-wordcount: '952'
+source-wordcount: '1003'
 ht-degree: 9%
 
 ---
@@ -27,7 +27,7 @@ AEM as a Cloud Service 最重大的變更是完全整合使用 Adobe ID 以存�
 
 ## 主體移轉詳細資料 {#principal-migration-detail}
 
-內容轉移工具和Cloud Acceleration Manager會將與正在移轉的內容相關聯的任何主體移轉至雲端系統。  「內容轉移工具」會在擷取程式期間，從來源AEM系統複製所有主體，以達成此目的。  CAM擷取接著只會選取和移轉與正在擷取的內容相關聯的主參與者。
+內容轉移工具和Cloud Acceleration Manager會將與正在移轉的內容相關聯的任何主體移轉至雲端系統。  「內容轉移工具」會在擷取程式期間，從來源AEM系統複製所有主體，以達成此目的。  CAM擷取接著只會選取和移轉與正在擷取的內容相關聯的主參與者。 如果主體位於已移轉內容的ACL或CUG原則上，則該主體及其所在的所有群組，以及其上階（父）群組都會被移轉。 此外，如果內容上的主參與者是群組，則其所有下階（子項）群組和使用者也會移轉。
 
 ## 使用者對應詳細資訊 {#user-mapping-detail}
 
