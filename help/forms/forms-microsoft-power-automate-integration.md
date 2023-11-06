@@ -195,7 +195,7 @@ ht-degree: 15%
 * [建立最適化表單](creating-adaptive-form-core-components.md)
 * [設定提交動作](configure-submit-actions-core-components.md)
 * [Microsoft® Power Automate的Adobe Experience Manager Connector](https://learn.microsoft.com/en-us/connectors/adobeexperiencemanag/)
-* [將最適化表單連線至Microsoft Power Automate](/help/forms/configure-submit-actions-core-components.md#microsoft-power-automate)
+* [將最適化表單連接到 Microsoft Power Automate](/help/forms/configure-submit-actions-core-components.md#microsoft-power-automate)
 
 
 <!--

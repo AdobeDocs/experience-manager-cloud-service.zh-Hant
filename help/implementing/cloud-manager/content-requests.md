@@ -1,5 +1,5 @@
 ---
-title: 瞭解Cloud Service內容請求
+title: 了解雲端服務內容請求
 description: 如果您已向Adobe購買內容請求授權，請瞭解Adobe Experience Cloud as a Service測量的內容請求型別，以及組織與分析報告工具的差異。
 exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
 source-git-commit: 25a4a6b9ae09cb71f50317990af1718db1e14355
@@ -31,7 +31,7 @@ ht-degree: 12%
 
 另請參閱 [授權儀表板](/help/implementing/cloud-manager/license-dashboard.md).
 
-## 瞭解Cloud Service內容請求 {#about-content-request}
+## 了解雲端服務內容請求 {#about-content-request}
 
 透過自動分析源自AEM CDN的記錄檔、從CDN隔離傳回HTML（文字/html）或JSON （應用程式/json）內容的請求，以及根據以下詳述的若干包含和排除規則，在Adobe Experience Manager (AEM as a Cloud Service)as a Cloud Service邊緣自動追蹤內容請求。 內容請求會與CDN快取提供的傳回內容無關，或會回到CDN的來源(AEM傳送器)。
 

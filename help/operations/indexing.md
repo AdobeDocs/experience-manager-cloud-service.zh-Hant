@@ -94,7 +94,7 @@ The package from the above sample is built as `com.adobe.granite:new-index-conte
 說明如何部署自訂版本的現成可用索引 `damAssetLucene-8`，我們會提供逐步指南。 在此範例中，我們會將其重新命名為 `damAssetLucene-8-custom-1`. 然後程式如下：
 
 1. 在中建立具有更新索引名稱的新資料夾 `ui.apps` 目錄：
-   * 範例: `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-8-custom-1/`
+   * 例如: `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-8-custom-1/`
 
 2. 新增設定檔 `.content.xml` ，並將自訂設定放在新建立的資料夾中。 以下是自訂的範例：檔案名稱： `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-8-custom-1/.content.xml`
 

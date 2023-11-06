@@ -125,7 +125,7 @@ ht-degree: 1%
       }
    ```
 
-您的AEM環境已設定為快取最適化Forms。 它會快取所有型別的調適型Forms。 如果您需要在傳遞快取頁面之前檢查頁面的使用者存取許可權，請參閱 [快取安全內容](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=zh-Hant).
+您的AEM環境已設定為快取最適化Forms。 它會快取所有型別的調適型Forms。 如果您需要在傳遞快取頁面之前檢查頁面的使用者存取許可權，請參閱 [快取安全內容](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html).
 
 ## 疑難排解 {#troubleshooting}
 

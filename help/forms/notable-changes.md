@@ -6,7 +6,7 @@ contentOwner: khsingh
 source-git-commit: 397e7d4f23202b8ae7419b0ad5436a6a10e2efb8
 workflow-type: tm+mt
 source-wordcount: '1348'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -43,7 +43,7 @@ ht-degree: 1%
 
 * 本地化的最適化Forms的URL慣例現在支援在URL中指定地區設定。 新的URL慣例可在Dispatcher或CDN上快取當地語系化的表單。 在Cloud Service環境中，使用URL格式 `http://host:port/content/forms/af/<afName>.<locale>.html` 請求最適化表單的本地化版本，而非 `http://host:port/content/forms/af/afName.html?afAcceptLang=<locale>`.
 
-* Adobe建議使用Dispatcher或CDN快取。 這有助於改善預填表單的轉譯速度。
+* Adobe 建議使用 Dispatcher 或 CDN 快取。這有助於改善預填表單的轉譯速度。
 
 
 ## 最適化表單
