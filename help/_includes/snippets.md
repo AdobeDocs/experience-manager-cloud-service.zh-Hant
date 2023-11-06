@@ -2,7 +2,7 @@
 source-git-commit: c20f59770f4eb722d49a96952126993577bfd65e
 workflow-type: tm+mt
 source-wordcount: '262'
-ht-degree: 34%
+ht-degree: 100%
 
 ---
 # 代碼片段 {#snippets}
@@ -21,31 +21,31 @@ ht-degree: 34%
 >
 >AEM 目前不支援指派群組到設定檔。應單獨新增使用者。
 
-## WAF設定限量發行 {#waf-limited-release}
+## WAF 組態有限發佈 {#waf-limited-release}
 
-[!BADGE WAF-DDOS保護將於2023年底推出。]{type=Caution tooltip="WAF-DDOS保護將於2023年底推出。"}
+[!BADGE WAF-DDOS 保護將於 2023 年底推出。]{type=Caution tooltip="WAF-DDOS 保護將於 2023 年底推出。"}
 
 ## 另請參閱 {#see-also}
 
-* [建立AEM最適化表單](/help/forms/creating-adaptive-form-core-components.md)
-* [將AEM最適化表單新增至AEM Sites頁面](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
-* [將主題套用至AEM最適化表單](/help/forms/using-themes-in-core-components.md)
-* [將元件新增至AEM最適化表單](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html#components)
-* [在AEM最適化表單中使用驗證碼](/help/forms/captcha-adaptive-forms-core-components.md)
-* [產生AEM最適化表單的PDF版本(DoR)](/help/forms/generate-document-of-record-core-components.md)
-* [翻譯AEM最適化表單](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
-* [為最適化表單啟用Adobe Analytics以追蹤表單使用情況](/help/forms/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.md)
-* [將最適化表單連線至Microsoft SharePoint](/help/forms/configure-submit-actions-core-components.md#submit-to-sharedrive)
-* [將最適化表單連線至Microsoft Power Automate](/help/forms/configure-submit-actions-core-components.md#microsoft-power-automate)
-* [將最適化表單連線至Microsoft OneDrive](/help/forms/configure-submit-actions-core-components.md#create-a-onedrive-configuration)
-* [將最適化表單連線至Microsoft Azure Blob儲存體](/help/forms/configure-submit-actions-core-components.md#azure-blob-storage)
-* [將最適化表單連線至Salesforce](/help/forms/oauth2-client-credentials-flow-for-server-to-server-integration.md)
-* [在AEM最適化表單中使用Adobe Sign](/help/forms/working-with-adobe-sign.md)
+* [建立 AEM 最適化表單](/help/forms/creating-adaptive-form-core-components.md)
+* [新增 AEM 最適化表單至 AEM Sites 頁面](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+* [將主題套用到 AEM 最適化表單](/help/forms/using-themes-in-core-components.md)
+* [將元件新增至 AEM 最適化表單](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html#components)
+* [在 AEM 最適化表單中使用驗證碼](/help/forms/captcha-adaptive-forms-core-components.md)
+* [產生 AEM 最適化表單的 PDF 版本 (DoR)](/help/forms/generate-document-of-record-core-components.md)
+* [翻譯 AEM 最適化表單](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
+* [啟用 Adobe Analytics 讓最適化表單可追蹤表單使用情況](/help/forms/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.md)
+* [將最適化表單連接到 Microsoft SharePoint](/help/forms/configure-submit-actions-core-components.md#submit-to-sharedrive)
+* [將最適化表單連接到 Microsoft Power Automate](/help/forms/configure-submit-actions-core-components.md#microsoft-power-automate)
+* [將最適化表單連接到 Microsoft OneDrive](/help/forms/configure-submit-actions-core-components.md#create-a-onedrive-configuration)
+* [將最適化表單連接至 Microsoft® Azure Blob 儲存體](/help/forms/configure-submit-actions-core-components.md#azure-blob-storage)
+* [將最適化表單連接到 Salesforce](/help/forms/oauth2-client-credentials-flow-for-server-to-server-integration.md)
+* [在 AEM 最適化表單中使用 Adobe Sign in](/help/forms/working-with-adobe-sign.md)
 * [為最適化表單新增地區設定](/help/forms/supporting-new-language-localization-core-components.md)
-* [傳送最適化表單資料至資料庫](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/data-integration.html)
-* [傳送最適化表單資料至REST端點](/help/forms/configure-submit-actions-core-components.md#submit-to-rest-endpoint)
-* [傳送最適化表單資料至AEM Workflow](/help/forms/configure-submit-actions-core-components.md#invoke-an-aem-workflow)
-* [使用Forms入口網站列出AEM網站上的AEM Adaptive Forms](/help/forms/configure-forms-portal.md)
+* [將最適化表單資料傳送到資料庫](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/data-integration.html)
+* [將最適化表單資料傳送到 REST 端點](/help/forms/configure-submit-actions-core-components.md#submit-to-rest-endpoint)
+* [將最適化表單資料傳送到 AEM 工作流程](/help/forms/configure-submit-actions-core-components.md#invoke-an-aem-workflow)
+* [使用 Forms 入口網站在 AEM 網站上列出 AEM 最適化 Forms](/help/forms/configure-forms-portal.md)
 
 
 
