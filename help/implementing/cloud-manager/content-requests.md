@@ -2,10 +2,10 @@
 title: 了解雲端服務內容請求
 description: 如果您已向Adobe購買內容請求授權，請瞭解Adobe Experience Cloud as a Service測量的內容請求型別，以及組織與分析報告工具的差異。
 exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
-source-git-commit: 25a4a6b9ae09cb71f50317990af1718db1e14355
+source-git-commit: dc01da4c85b37f21deb169b941c0cf2a958298b8
 workflow-type: tm+mt
-source-wordcount: '1171'
-ht-degree: 12%
+source-wordcount: '1164'
+ht-degree: 10%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 12%
 | 第三方監控和安全工具 | 監控和安全掃描工具可能會為 AEM 生成未在 Analytics 報告中跟踪的內容請求。 |
 | API存取 | 以程式設計方式存取頁面或Adobe Experience Manager API，可能會為AEM產生未在Analytics報表中追蹤的內容請求。 |
 | 預取請求 | 使用預取服務來預加載頁面以提高速度可能會導致內容請求流量顯著增加。 |
-| DDOS | 儘管 Adobe 盡一切努力自動檢測和過濾來自 DDOS 攻擊的流量，但不能保證會檢測到所有可能的 DDOS 攻擊 |
+| DDOS | 雖然Adobe會嘗試自動偵測並過濾掉來自DDOS攻擊的流量，但無法保證偵測到所有可能的DDOS攻擊。 |
 | 流量攔截器 | 在瀏覽器中使用跟踪器阻止程序可能會選擇不跟踪某些請求。 |
 | 防火牆 | 防火牆可能會阻止 Analytics 跟踪。這種情況在公司防火牆中更為常見。 |
 
@@ -59,7 +59,7 @@ ht-degree: 12%
 | HTTP程式碼400-499 | 已排除 | 內容不存在(404)或存在其他內容或請求相關問題時傳回給訪客的錯誤。 |
 | HTTP程式碼300-399 | 已排除 | 這些是很好的要求，可檢查伺服器上是否有某些專案變更，或將要求重新導向至其他資源。 它們本身不包含內容，因此不計費。 |
 | 要求移至/libs/* | 已排除 | AEM內部JSON請求，例如不可計費的CSRF權杖。 |
-| 來自DDOS攻擊的流量 | 已排除 | DDOS保護。 AEM會自動偵測部分DDOS攻擊並加以封鎖。 偵測到的DDOS攻擊無法計費。<br><br>自動偵測的DDOS型別：<br>· DDOSBlockedCiphersSHA<br>· DDOSBlockedPattern<br>· DDOSSuspiciousRequest |
+| 來自DDOS攻擊的流量 | 已排除 | DDOS保護。 AEM會自動偵測部分DDOS攻擊並加以封鎖。 偵測到的DDOS攻擊無法計費。 |
 | AEMas a Cloud ServiceNewRelic監控 | 已排除 | AEMas a Cloud Service全域監視。 |
 | 供客戶監控其Cloud Service計畫的URL | 已排除 | 建議用於外部監視可用性的URL。<br><br>`/system/probes/health` |
 | AEMas a Cloud ServicePod熱身服務 | 已排除 | 使用者代理： skyline-service-warmup/1.* |
