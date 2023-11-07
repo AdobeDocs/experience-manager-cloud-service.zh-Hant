@@ -6,11 +6,11 @@ exl-id: c1c050d3-953e-4e56-a96b-d84f2ec05e5e
 source-git-commit: f562d082520037fa1b15272c763d35e93dab137f
 workflow-type: tm+mt
 source-wordcount: '1991'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
-# 根據核心元件建立最適化表單範本 {#adaptive-form-templates}
+# 建立以核心元件為基礎的調適型表單範本 {#adaptive-form-templates}
 
 當您編寫表單時，可在編輯器中新增欄位和元件以定義表單結構、內容和動作。 您可在 `guideRootPanel` 表單容器的。 使用範本編輯器，您可以建立包含基本結構和初始內容的範本，以供作者建立表單。
 

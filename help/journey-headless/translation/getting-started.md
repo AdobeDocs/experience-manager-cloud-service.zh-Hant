@@ -5,7 +5,7 @@ exl-id: 04ae2cd6-aba3-4785-9099-2f6ef24e1daf
 source-git-commit: f4e28d89023e8f326e6816ebd8168e1e31e772ce
 workflow-type: tm+mt
 source-wordcount: '1425'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -178,7 +178,7 @@ AEM 的內容，無論是 Headless 網頁還是傳統網頁，都是由其結構
 * 了解 AEM 如何儲存 Headless 內容。
 * 熟悉 AEM 的翻譯工具。
 
-在此基礎上繼續您的AEM Headless翻譯歷程，接下來檢閱檔案 [設定翻譯整合](configure-connector.md) 您將瞭解如何將AEM連線到翻譯服務。|
+以這些知識為基礎，接下來查看文件[設定翻譯整合](configure-connector.md)以繼續您的 AEM Headless 翻譯歷程，您將在此文件了解如何將 AEM 連接到翻譯服務。|
 
 ## 其他資源 {#additional-resources}
 

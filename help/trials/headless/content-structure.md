@@ -7,7 +7,7 @@ exl-id: ace9b9f3-8bc6-4a36-a51c-ff60cdd339ce
 source-git-commit: 07f61a3f6a794e18bc2e02e966392cdce3103a81
 workflow-type: tm+mt
 source-wordcount: '1009'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -98,7 +98,7 @@ ht-degree: 98%
 
    * **轉譯為：****內容參考** - 當您建立冒險時，此欄位會指向代表此旅行的影像資產。
    * **欄位標籤：** `Image` - 這是建立冒險時為此欄位顯示的標籤。
-   * **根路徑：** `/content/dam/aem-demo-assets/en`  — 當使用「資產選擇器」瀏覽資產時，這會指定起點路徑。
+   * **根路徑：**`/content/dam/aem-demo-assets/en` - 這指定使用資產選擇器瀏覽資產時的起點路徑。
 
 1. 新增內容片段模型的必要欄位後，在視窗右上方按一下「**儲存**」。
 

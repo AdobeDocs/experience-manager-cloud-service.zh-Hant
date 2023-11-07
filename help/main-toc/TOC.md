@@ -9,7 +9,7 @@ user-guide-title: AEM as a Cloud Service
 source-git-commit: 4e3cf2276cdd5fb0722aee0e6cec11da951ca49d
 workflow-type: tm+mt
 source-wordcount: '4357'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -549,8 +549,8 @@ ht-degree: 99%
    + 整合 Adobe Express{#integration-adobe-express}
       + [適用於 Adobe Express 的 AEM Assets 附加元件](/help/assets/addon-adobe-express.md)
 
-   + 與Creative Cloud整合 {#integration-creative-cloud}
-      + [將AEM Assets連線至Creative Cloud](/help/assets/connect-assets-with-creative-cloud.md)
+   + 與 Creative Cloud {#integration-creative-cloud} 整合
+      + [將 AEM Assets 連接到 Creative Cloud](/help/assets/connect-assets-with-creative-cloud.md)
 
 + Forms {#forms}
    + 概觀 {#forms-overview}
@@ -597,7 +597,7 @@ ht-degree: 99%
             + [建立最適化表單](/help/forms/creating-adaptive-form-core-components.md)
             + [建立調適性表單片段](/help/forms/adaptive-form-fragments-core-components.md)
             + [為最適化表單建立主題 - 核心元件](/help/forms/using-themes-in-core-components.md)
-            + [根據核心元件建立最適化表單範本](/help/forms/template-editor-core-components.md)
+            + [建立以核心元件為基礎的調適型表單範本](/help/forms/template-editor-core-components.md)
             + [為最適化表單產生記錄文件](/help/forms/generate-document-of-record-core-components.md)
             + [使用機器翻譯或人工翻譯來翻譯最適化表單](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
             + [設定重新導向頁面或感謝訊息](/help/forms/configure-redirect-page-or-thank-you-message.md)

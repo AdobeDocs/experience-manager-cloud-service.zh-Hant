@@ -1,14 +1,14 @@
 ---
-title: 將AEM Assets連線至Creative Cloud
+title: 將 AEM Assets 連接到 Creative Cloud
 description: 瞭解如何設定AEM Assets並將其連結至Creative Cloud。 連線至布建至其他IMS組織的Creative Cloud權利，以便輕鬆使用AEM Assets中的最新Creative Cloud整合，包括Express和Creative Cloud庫。
 source-git-commit: 8c0c01be301ccaeac4e658c16d63227e55b67fcf
 workflow-type: tm+mt
 source-wordcount: '286'
-ht-degree: 0%
+ht-degree: 4%
 
 ---
 
-# 將AEM Assets連線至Creative Cloud  {#cross-org-entitlements}
+# 將 AEM Assets 連接到 Creative Cloud  {#cross-org-entitlements}
 
 Experience Manager Assets可連線至已布建至其他IMS組織的Creative Cloud權益，以便輕鬆使用AEM Assets中的最新Creative Cloud整合，包括Express和Creative Cloud庫。
 
