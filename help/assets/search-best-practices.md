@@ -3,9 +3,9 @@ title: 搜尋最佳實務 [!DNL Adobe Experience Manager] as a [!DNL Cloud Servi
 description: 搜尋、尋找及擷取應用程式中資產的中繼資料的最佳做法。
 contentOwner: KK
 exl-id: 446692de-5cea-4dbd-a98e-ec5177c7017e
-source-git-commit: 8fc09f11127b29a6cd0f56f4e9d217b9756bbb8f
+source-git-commit: 780f0dee9a2a0fd7fa63b93bdd8be6bc23eef04f
 workflow-type: tm+mt
-source-wordcount: '2603'
+source-wordcount: '2544'
 ht-degree: 3%
 
 ---
@@ -46,7 +46,7 @@ ht-degree: 3%
 
 如果您使用的是 **[!UICONTROL 資產檢視]** 以及。
 
-[觀看在AEM Assets中執行基本搜尋的相關影片](https://video.tv.adobe.com/v/3425489)
+>[!VIDEO](https://video.tv.adobe.com/v/3425489)
 
 ## 檔案和資料夾 {#files-folders}
 
@@ -67,7 +67,7 @@ ht-degree: 3%
 
 ![使用檔案和資料夾進行搜尋](assets/files-folders.png)
 
-[觀看在AEM Assets中使用檔案和資料夾執行搜尋的相關影片](https://video.tv.adobe.com/v/3425487)
+>[!VIDEO](https://video.tv.adobe.com/v/3425487)
 
 ## 運算子 {#operators}
 
@@ -119,7 +119,7 @@ AND運運算元是全域搜尋中兩個關鍵字之間的預設運運算元。 �
 * `car*` 傳回含洗車、承運商、運費等的資產。
 * `*car` 以現代汽車、跑車等傳回資產。
 
-[觀看使用萬用字元在AEM Assets中執行搜尋的相關影片](https://video.tv.adobe.com/v/3425488)
+>[!VIDEO](https://video.tv.adobe.com/v/3425488)
 
 **[!UICONTROL 資產檢視]** 不支援使用萬用字元。
 
@@ -187,7 +187,7 @@ To perform a search on such a requirement, type 'classic car' in the search bar.
 1. 前往搜尋篩選器。
 1. 前往「篩選器」。 在 [!UICONTROL MIME型別]，選取所有指定MIME型別，但取消選取PNG。
 
-[觀看使用篩選器在AEM Assets中執行搜尋的相關影片](https://video.tv.adobe.com/v/3425486)
+>[!VIDEO](https://video.tv.adobe.com/v/3425486)
 
 ## 進階搜尋 {#advanced-search}
 
@@ -241,7 +241,7 @@ When you are unsure about the title or meta description of an asset, you can use
 
 如果您使用的是 **[!UICONTROL 資產檢視]** 以及。
 
-[觀看使用進階搜尋在AEM Assets中執行搜尋的相關影片](https://video.tv.adobe.com/v/3425490)
+>[!VIDEO](https://video.tv.adobe.com/v/3425490)
 
 **案例9：尋找類似的紅色轎車相符專案**
 
