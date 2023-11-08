@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的目前維護版本發行說明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的目前維護版本發行說明。'
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: e7e565556b382a662fb8afc5aadaa26d2357e294
+source-git-commit: 2f0a7171f93bb5bc947dba5edb59a8e0e538e052
 workflow-type: tm+mt
-source-wordcount: '1193'
-ht-degree: 12%
+source-wordcount: '1130'
+ht-degree: 13%
 
 ---
 
@@ -101,9 +101,6 @@ ht-degree: 12%
 * Forms-11206：使用者嘗試排程最適化表單的發佈工作流程時，無法如預期運作。
 * Forms-11546： Lighthouse偵測到最適化表單中重複面板缺少ARIA標籤，影響協助工具。
 * Forms-11095：電話號碼、電子郵件地址和號碼欄位的ARIA屬性定義不正確，導致無障礙問題。
-* Forms-9894：當使用者提供無效的存放庫路徑時，輸出服務API會產生不正確的錯誤代碼，導致遇到此問題的使用者混淆。
-* Forms-11404：將各種XML資料與讀取器擴充的PDF合併時，ImportData服務會出現不一致的行為。 具體來說，它成功保留了一個輸出PDF檔案的Reader延伸模組屬性，但無法保留其他輸出PDF的Reader延伸模組屬性。
-
 
 ### 已知問題 {#known-issues-14157}
 
