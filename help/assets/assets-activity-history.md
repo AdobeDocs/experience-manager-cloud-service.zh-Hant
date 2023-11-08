@@ -5,7 +5,9 @@ contentOwner: AG
 feature: Asset Reports,Asset Management
 role: Admin,User
 exl-id: 8dd82c31-f88e-4407-9b6d-c87033d7a823
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+hide: true
+hidefromtoc: true
+source-git-commit: 0712e7bb4f3150fd3361bc77652c6883845f960c
 workflow-type: tm+mt
 source-wordcount: '237'
 ht-degree: 34%
@@ -14,9 +16,9 @@ ht-degree: 34%
 
 # 在活動資料流中檢視資產操作記錄 {#activity-stream-in-timeline}
 
-此功能會在時間軸上顯示資產的活動記錄。 如果您在中執行下列任何資產相關作業 [!DNL Experience Manager Assets]，活動資料流功能會更新時間軸以反映活動。
+此功能會顯示時間軸上資產的活動記錄。 如果您在中執行下列任何資產相關作業 [!DNL Experience Manager Assets]，活動資料流功能會更新時間軸以反映活動。
 
-活動資料流中會記錄下列作業：
+下列作業會記錄於活動資料流中：
 
 * 建立
 * 刪除
@@ -27,7 +29,7 @@ ht-degree: 34%
 * 拒絕
 * 移動
 
-將從儲存日誌檔案的CRX位置提取要在時 `/var/audit/com.day.cq.dam/content/dam` 間軸中顯示的活動日誌。此外，上傳新資產或修改現有資產並簽入時，會記錄時間軸活動 [!DNL Experience Manager] 透過 [Adobe資產連結](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html) 或 [[!DNL Experience Manager] 案頭應用程式](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html).
+將從儲存日誌檔案的CRX位置提取要在時 `/var/audit/com.day.cq.dam/content/dam` 間軸中顯示的活動日誌。此外，當上傳新資產或修改現有資產並簽入時，會記錄時間軸活動 [!DNL Experience Manager] via [Adobe資產連結](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html) 或 [[!DNL Experience Manager] 案頭應用程式](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html).
 
 >[!NOTE]
 >
@@ -37,7 +39,7 @@ ht-degree: 34%
 
 <!-- ![timeline-2](assets/timeline-2.png) -->
 
-時間軸會顯示您對資產執行之作業的活動資料流。
+時間軸會顯示您對資產執行之操作的活動資料流。
 
 <!-- ![activity_stream](assets/activity_stream.png) -->
 
