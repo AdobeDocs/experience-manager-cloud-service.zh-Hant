@@ -5,9 +5,9 @@ topic-tags: author
 keywords: 新增最適化表單片段、最適化表單片段、建立表單片段、新增片段至最適化表單、管理片段
 feature: Adaptive Forms
 exl-id: 3a9ad1b7-2f6f-4ca9-a1c9-549c4238c59e
-source-git-commit: 8de3189495c374fad156e7e6cb23c96c84ece482
+source-git-commit: 1bdd9e323e74a3f2bb06bff52235742e9e22a136
 workflow-type: tm+mt
-source-wordcount: '1780'
+source-wordcount: '1776'
 ht-degree: 3%
 
 ---
@@ -49,7 +49,7 @@ ht-degree: 3%
 
      >[!NOTE]
      >
-     > 在基於核心元件的最適化Forms中，您可以在表單中多次使用單一表單片段。 支援「無」和「綱要」表單片段。
+     > 在Adaptive Forms中，您可以使用單一表單片段（根據核心元件）多次。 支援「無」和「綱要」表單片段。
 
    * **架構** ：指定使用上傳至 AEM Forms 的 XML 或 JSON 綱要建立片段。 您可以上傳或從可用的 XML 或 JSON 架構中選擇作為片段的表單模型。 選擇 XML 綱要時，還可以通過從 XML 架構複雜類型 ]**下拉清單中選擇**[!UICONTROL  所選綱要中存在的 complexType 來創建自我調整表單片段。選擇 JSON 綱要時，您還可以通過從 JSON 架構定義下拉清單中選擇 **[!UICONTROL 所選綱要中存在的綱要定義]** 來創建自我調整表單片段。
    * **表單資料模型：指定使用表單資料模型** 建立片段。 您僅可基於表單資料模型中的一個資料模型物件來建立自我調整表單片段。 展開表單資料模型定義下拉式清單。 它會列出指定表單資料模型中的所有資料模型物件。 從清單中選取資料模型物件。

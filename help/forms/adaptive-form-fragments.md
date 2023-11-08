@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 1a32eb24-db3b-4fad-b1c7-6326b5af4e5e
 docset: aem65
-source-git-commit: 8de3189495c374fad156e7e6cb23c96c84ece482
+source-git-commit: cf7c9fc3f254628f2efee2e00ed295e038d17c99
 workflow-type: tm+mt
-source-wordcount: '2167'
+source-wordcount: '2147'
 ht-degree: 1%
 
 ---
@@ -41,25 +41,25 @@ ht-degree: 1%
 
 1. 按一下以開啟 **表單模型** 標籤，並從 **選取自** 下拉式選單，為片段選取以下其中一個模型：
 
-   * **無** ：指定在不使用任何表單模型的情況下從頭開始創建片段。
+   * **無**：指定從頭開始建立片段，而不使用任何表單模型。
 
      >[!NOTE]
      >
-     > 在以核心元件為基礎的 Adaptive Forms 中，您可以在表單中多次使用單一表單片段。 它支援無型和結構描述型表單片段。
+     > 在Adaptive Forms中，您可以在表單中多次使用單一表單片段（根據核心元件）。 支援「無」和「綱要」表單片段。
 
-   * **表單範本**：指定使用上傳至的XDP範本建立片段 [!DNL AEM Forms]. 選取適當的XDP範本作為片段的表單模型。
+   * **表單範本** ：指定使用上傳至 [!DNL AEM Forms] 的 XDP 範本建立片段。 選擇適當的 XDP 範本作為片段的表單模型。
 
-   ![使用表單範本作為模型建立調適型表單](assets/form-template-model.png)
+   ![以表單範本作為模型建立自我調整表單](assets/form-template-model.png)
 
-   在選取的表單範本中標記為片段的子表單也會顯示出來。 您可從下拉式表單清單選擇最適化表單片段的子表單。
+   也會顯示所選表單範本中標籤為片段的子表單。 您可以從下拉式清單中選取最適化表單片段的子表單。
 
-   ![從指定的表單範本選擇子表單](assets/fragment-subform.png)
+   ![從指定的表單範本中選取子表單](assets/fragment-subform.png)
 
-   此外，您可以使用表單範本中未標記為片段的子表單創建自我調整表單片段，方法是在下拉清單中指定子表單的 SOM 運算式。
+   此外，您可以透過在下拉式方塊中指定子表單的SOM運算式，使用未在表單範本中標籤為片段的子表單來建立最適化表單片段。
 
-   * **XML 架構** ：指定使用上傳到 [!DNL AEM Forms] 的 XML 綱要創建片段。 您可以上傳或從可用的 XML 架構中選擇作為片段的表單模型。
+   * **XML結構描述**：指定使用上傳至的XML結構描述建立片段 [!DNL AEM Forms]. 您可以上傳或從可用的XML結構描述中選取作為片段的表單模型。
 
-   ![建立以 XML 綱要為基礎的最適化表單片段作為模型](assets/xml-schema-model.png)
+   ![根據XML結構描述作為模型建立最適化表單片段](assets/xml-schema-model.png)
 
    您也可以從下拉式方塊選取所選結構描述中存在的complexType，以建立最適化表單片段。
 
@@ -69,9 +69,9 @@ ht-degree: 1%
 
 在編輯模式中，您可以將任何最適化表單元件從AEM sidekick拖放至片段上。 <!-- For information about Adaptive Form components, see Introduction to authoring Adaptive Forms. -->
 
-此外，如果您選取XML結構描述或XDP表單範本作為片段的表單模型，內容尋找器中會出現一個顯示表單模型階層的新索引標籤。 它可讓您將表單模型元素拖放至片段上。 新增的表單模型元素會轉換為表單元件，同時保留關聯XDP或XSD的原始屬性。
+此外，如果您選取XML結構描述或XDP表單範本作為片段的表單模型，內容尋找器中會出現一個顯示表單模型階層的新索引標籤。 它可讓您將表單模型元素拖放至片段上。 添加的表單模型元素將轉換為表單元件，同時保留來自關聯 XDP 或 XSD 的原始屬性。
 
-### 將面板另存為片段 {#save-panel-as-a-fragment}
+### 儲存面板作為片段 {#save-panel-as-a-fragment}
 
 1. 開啟包含您要另存為最適化表單片段的面板的最適化表單。
 1. 在面板工具列中，按一下 **[!UICONTROL 另存為片段]**. 另存為片段對話方塊隨即開啟。
@@ -98,7 +98,7 @@ ht-degree: 1%
 
    * **表單模型**：根據最適化表單的表單模型，此欄位會顯示 **XML結構描述**， **表單範本**，或 **無**. 這是不可編輯的欄位。
 
-   * **片段模型根**：僅顯示在XSD型最適化Forms中。 它會指定片段模型的根。 您可以選擇 **/** 或下拉式清單中的XSD複雜型別。 請注意，只有在您選取複雜型別作為片段模型根時，才能在另一個Adaptive Form中重複使用片段。
+   * **片段模型根** ：僅出現在基於 XSD 的最適化Forms中。 它指定片段模型的根。 您可以從下拉清單中選擇 **/** 或 XSD 複雜類型。 請注意，只有在您選取複雜型別作為片段模型根時，才能在另一個Adaptive Form中重複使用片段。
 如果您選擇 **/** 作為片段模型根，根的完整XSD樹狀結構顯示在Adaptive Form Data Model標籤中。 對於複雜型別片段模型根，在「最適化表單資料模型」索引標籤中只會顯示所選複雜型別的子系。
 
    * **XSD參照**：僅顯示在XSD型最適化Forms中。 它顯示XML綱要的位置。
@@ -137,29 +137,29 @@ ht-degree: 1%
 1. 以編輯模式開啟最適化表單，您要在其中插入最適化表單片段。
 1. 按一下 **資產** ![資產 — 瀏覽器](assets/assets-browser.png) 在側邊欄中。 在資產瀏覽器中，選取 **最適化表單片段** 從下拉式清單。
 
-   您還可以選擇顯示所有自我調整表單片段或根據其表單模型（表單範本、XML 架構或基本）進行篩選。
+   您也可以選擇顯示所有最適化表單片段，或根據其表單模型（表單範本、XML結構描述或基本）進行篩選。
 
-1. 將最適化表單片段拖放至最適化表單。
+1. 將最適化表單片段拖放至最適化表單上。
 
    >[!NOTE]
    >
-   >未啟用最適化表單片段來從最適化表單內進行製作。 此外，您無法在JSON型最適化表單中使用XSD型片段，反之亦然。
+   >最適化表單片段未啟用于從最適化表單內創作的功能。 此外，您不能在基於 JSON 的自我調整表單中使用基於 XSD 的片段，反之亦然。
 
-最適化表單片段會以參考方式插入最適化表單片段中，並與獨立的最適化表單片段同步。 這表示當您更新最適化表單片段時，變更會反映在使用片段的所有Adaptive Forms中。
+最適化表單片段通過引用插入至最適化表單中，並與獨立的最適化表單片段同步。 這意味著當您更新自我調整表單片段時，更改會反映在使用片段的所有自我調整Forms中。
 
-### 在自適應表單中嵌入片段 {#embed-a-fragment-in-adaptive-form}
+### 在最適化表單中嵌入片段 {#embed-a-fragment-in-adaptive-form}
 
-您可以通過按一下 **添加片段的面板工具列上的嵌入資產： *片段名稱* >** 按鈕來選擇將自我調整表單片段嵌入自我調整表單，如下圖所示。
+您可以按一下「 」，選擇將最適化表單片段嵌入最適化表格中 **內嵌資產： &lt;*片段名稱*>** 按鈕時，按鈕會在已新增片段的面板工具列上，如下列範例影像所示。
 
 ![在最適化表單中嵌入表單片段](assets/embed-fragment.png)
 
 >[!NOTE]
 >
->嵌入的片段不再與獨立片段連結。 您可以從最適化表單中編輯嵌入片段中的元件。
+>嵌入的片段不再與獨立片段連結。 您可以從最適化表單內編輯內嵌片段中的元件。
 
-### 使用片段中的片段 {#using-fragments-within-fragments}
+### 在片段中使用片段 {#using-fragments-within-fragments}
 
-您可以創建嵌套的自我調整表單片段，這意味著您可以將一個片段拖放到另一個片段中，並且可以具有嵌套的片段結構。
+您可以建立巢狀的Adaptive Form片段，這表示您可以將片段拖放到另一個片段中，而且可以有巢狀片段結構。
 
 ### 變更片段 {#change-fragments}
 
@@ -173,25 +173,25 @@ ht-degree: 1%
 
 >[!NOTE]
 >
-> * 如果您在適用性表單中多次使用無架構表單片段，則會發生片段欄位之間的資料同步。 您可以使用單一 [表單片段（根據核心元件）](/help/forms/adaptive-form-fragments-core-components.md)  在表單中多次輸入。 它支援基於非基於和基於綱要的表單片段，而不會發生資料同步問題。
+> 如果在自我調整表單中多次使用基於非基礎的表單片段，則會在片段的欄位之間進行資料同步。 您可以在表單中使用未多次綁定到任何表單資料模型的單個 [ 表單片段（基於核心元件）， ](/help/forms/adaptive-form-fragments-core-components.md) 而不會遇到資料同步問題。
 
-## 自動對應資料繫結的片段 {#auto-mapping-of-fragments-for-data-binding}
+## 自動資料繫結的片段映射 {#auto-mapping-of-fragments-for-data-binding}
 
-當您使用XFA表單範本或XSD複雜型別建立最適化表單片段，並將片段拖放至最適化表單時，XFA片段或XSD複雜型別會自動由對應的最適化表單片段取代，其片段模型根會對應至XFA片段或XSD複雜型別。
+當您使用 XFA 表單 範本 或 XSD 複雜類型創建自我調整表單片段並將片段拖放到自我調整表單時，XFA 片段或 XSD 複雜類型將自動替換為相應的自我調整表單片段，其片段模型根映射到 XFA 片段或 XSD 複雜類型。
 
-您可以從「編輯元件」對話方塊變更片段資產及其連結。
+您可以從編輯元件對話方塊中更改片段資產及其綁定。
 
 >[!NOTE]
 >
->您也可以從AEM內容尋找器中的最適化表單片段資料庫拖放已繫結的最適化表單片段，並從Adaptive Form片段面板的「編輯」元件對話方塊提供正確的繫結參考。
+>您還可以從 Finder 中的「最適化表單片段」資料庫中拖放綁定AEM 內容最適化表單片段，並從「最適化表單片段」面板的編輯元件對話方塊中提供正確的綁定引用。
 
 ## 管理片段 {#manage-fragments}
 
-您可以使用此 [!DNL AEM Forms] UI對最適化表單片段執行多項操作。
+您可以使用對最適化表單片段執行數個操作 [!DNL AEM Forms] UI。
 
 1. 前往 `https://[hostname]:'port'/aem/forms.html`。
 
-1. 按一下 **UI工具列中的 [!DNL AEM Forms] 選擇** ，然後選擇最適化表單片段。工具列顯示您可對選取的最適化表單片段執行的下列操作。
+1. 按一下 **選取** 在 [!DNL AEM Forms] UI工具列並選取最適化表單片段。 工具列會顯示您對選取的Adaptive Form片段可以執行的下列操作。
 
 <table>
  <tbody>
@@ -205,7 +205,7 @@ ht-degree: 1%
   </tr>
   <tr>
    <td><p>檢視屬性</p> </td>
-   <td><p>開啟屬性面板。 從「屬性」面板中，您可以檢視和編輯屬性、產生預覽，以及上傳所選片段的縮圖影像。 如需詳細資訊，請參閱 <a href="manage-form-metadata.md" target="_blank">管理中繼資料</a>.<br /> <br /> </p> </td>
+   <td><p>開啟屬性面板。 從「屬性」面板中，您可以檢視和編輯屬性、產生預覽，以及上傳所選片段的縮圖影像。 有關詳細資訊，請參閱 <a href="manage-form-metadata.md" target="_blank"> 管理中繼資料 </a> 。 <br /> <br /> </p> </td>
   </tr>
   <tr>
    <td><p>複製</p> </td>
@@ -254,16 +254,18 @@ ht-degree: 1%
 * 不支援使用不同表單資料模型的最適化表單中的片段。 例如，XSD型最適化表單不支援XDP型片段，反之亦然。
 * 最適化表單片段可透過AEM內容尋找器中的最適化表單片段標籤使用。
 * 透過參考插入或嵌入自適應表單時，獨立自適應表單片段中的任何運算式、指令碼或樣式都會保留。
-* 您無法從最適化表單中編輯通過引用插入的最適化表單片段。 若要編輯，請編輯獨立的Adaptive Form片段或將片段嵌入到Adaptive Form中。
+* 您無法從最適化表單中編輯透過參考插入的最適化表單片段。 若要編輯，請編輯獨立的Adaptive Form片段或將片段嵌入到Adaptive Form中。
 * 發佈最適化表單時，您需要發佈在最適化表單中透過參考插入的獨立最適化表單片段。
-* 當您重新發佈更新的Adaptive Form片段時，變更會反映在使用片段的Adaptive Form的已發佈例項中。
-* 包含Verify元件的調適型表單不支援匿名使用者。 此外，不建議在自適應表單片段中使用驗證元件。
+* 當您重新發佈更新的最適化表單片段時，更改會反映在使用片段的最適化表單的已發佈實例中。
+* 包含驗證元件的最適化表單不支援匿名使用者。 此外，不建議在最適化表單片段中使用驗證元件。
 * （ **僅限** Mac）為了確保表單片段功能在所有場景中都能完美運行，請將以下內容添加到 /private/etc/hosts 檔中：
-  `127.0.0.1 <Host machine>`**主機：** 部署的 [!DNL AEM Forms] Apple Mac 電腦。
+  `127.0.0.1 <Host machine>` **主機**：使用的Apple Mac電腦 [!DNL AEM Forms] 已部署。
 
-## 參考片段 {#reference-fragments}
+<!--
+## Reference Fragments {#reference-fragments}
 
-您可以使用參考最適化表單片段來建立您的表單。 如需詳細資訊，請參閱 [參考片段](reference-adaptive-form-fragments.md).
+Reference Adaptive Form Fragments that you can use to create your form are available. For more information, see [Reference Fragments](reference-adaptive-form-fragments.md).
+-->
 
 >[!MORELIKETHIS]
 >
