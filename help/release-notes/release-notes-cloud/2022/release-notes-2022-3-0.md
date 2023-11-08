@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2022.3.0 版發行說明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2022.3.0 版發行說明。'
 exl-id: 761f1605-c421-4f3a-8f90-af23f4f047b1
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bd0981b262f645653723f1b35d871808506d47ba
 workflow-type: tm+mt
 source-wordcount: '1148'
-ht-degree: 14%
+ht-degree: 15%
 
 ---
 
@@ -44,7 +44,7 @@ ht-degree: 14%
 
 * 您現在可以使用 [!DNL Experience Manager Assets] 使用者介面至：
 
-   * 設定 [偵測重複資產](/help/assets/manage-digital-assets.md#detect-duplicate-assets) 存放庫中。
+   * 設定 [偵測重複資產](/help/assets/detect-duplicate-assets.md) 存放庫中。
 
    * 設定 [新增數位浮水印](/help/assets/watermark-assets.md) 至影像。
 
@@ -58,9 +58,9 @@ ht-degree: 14%
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-### [!DNL Forms]的新增功能 {#what-is-new-forms}
+### [!DNL Forms] 的新增功能 {#what-is-new-forms}
 
-* **[!DNL Communications - Document Generation APIs]**： [Document Generation API](/help/forms/aem-forms-cloud-service-communications.md) 協助組合、重新排列和驗證PDF檔案。 此服務可讓您以同步模式產生檔案。 這些 API 可讓您建立以下用途的應用程式：
+* **[!DNL Communications - Document Generation APIs]**： [Document Generation API](/help/forms/aem-forms-cloud-service-communications.md) 協助組合、重新排列和驗證PDF檔案。 此服務可讓您以同步模式產生文件。 這些 API 可讓您建立以下用途的應用程式：
 
    * 組合 PDF 文件.
    * 分解 PDF 文件.
@@ -78,14 +78,14 @@ ht-degree: 14%
 
 ### 新增功能 {#what-is-new-cif}
 
-* 改進多儲存場景的SEO：現在可以透過CIF雲配置屬性在儲存層級上設定PDP/PLP的URL格式
+* 改進多儲存場景的SEO：現在可以透過CIF雲端設定屬性在儲存層級上設定PDP/PLP的URL格式
 * 產品選取器透過UI中的新篩選器選項支援分階段產品。  這可讓內容從業人員為即將推出的產品準備產品內容管理
 * 使用CIF Cloud Config名稱（而不是config proxy url）簡化CIF設定管理和錯誤處理
 * 產品清單和轉盤元件的手動類別選擇。 這可讓內容從業人員在目錄體驗之外的內容頁面上使用這些元件
 
 ### CIF發行前管道中可用的新功能 {#prerelease-features-cif}
 
-* AEM CIF搜尋核心元件支援Commerce LiveSearch
+* AEM CIF Search核心元件支援Commerce LiveSearch
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
