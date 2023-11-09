@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的目前維護版本發行說明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的目前維護版本發行說明。'
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: 2f0a7171f93bb5bc947dba5edb59a8e0e538e052
+source-git-commit: a8651a44300772b5c9706a5fd85e7fefef72e47d
 workflow-type: tm+mt
-source-wordcount: '1130'
-ht-degree: 13%
+source-wordcount: '1124'
+ht-degree: 14%
 
 ---
 
@@ -13,13 +13,13 @@ ht-degree: 13%
 
 下節是 Experience Manager as a Cloud Service 目前維護版本的技術版本發行說明。
 
-## 14157 版 {#release-14157}
+## 14227 版 {#release-14227}
 
-以下摘要說明維護版本14157數的持續改善，該版本於2023年11月7日公開發佈。 此維護版本是先前 14029 維護版本的更新。
+以下摘要說明維護版本資14227的持續改善，該版本於2023年11月9日公開發佈。 此維護版本是先前 14029 維護版本的更新。維護版本 14227 取代了 14157，以修正一個問題。
 
 2023.11.0 功能啟用將提供此維護版本的完整功能集。如需詳細資訊，請參閱 [Experience Manager 發行藍圖](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html)。
 
-### 增強功能 {#enhancements-14157}
+### 增強功能 {#enhancements-14227}
 
 * ASSETS-29631： Assets Cloud：使用dam：roles進行安全的傳送/搜尋。
 * CQ-4354515：翻譯：用於抑制參照資源翻譯的選項。
@@ -40,7 +40,7 @@ ht-degree: 13%
 * SITES-16545：內容片段：新增端點以擷取內容片段變數的參考。
 * SITES-16853：內容片段：移除/adobe/sites/cf/fragments/{fragmentId}/variation/{name}/tags端點。
 
-### 已修正的問題 {#fixed-issues-14157}
+### 已修正的問題 {#fixed-issues-14227}
 
 * 已修正各種協助工具問題
 * ASSETS-31015：無法將副檔名未知的檔案上傳到資產。
@@ -85,7 +85,6 @@ ht-degree: 13%
 * SITES-16243：內容片段：尋找和取代不適用於具有「轉譯為：多個」的欄位。
 * SITES-16250：內容片段：修補CF有時會傳回不正確的etag標頭。
 * SITES-16686：內容片段：當父參考位於最大深度時，會序列化內容片段非片段參考。
-* SITES-16234： ContextHub：開始鎖定目標時未顯示正確選取的品牌活動名稱。
 * SITES-12880：快速流程：修正Sites >設定分析的本地化。
 * SITES-16103：體驗片段：由於主控台錯誤，Target選項不會顯示在Cloud Service下方。
 * SITES-16001： MSM：建立即時副本時，可從轉出設定中排除多欄位元件。
@@ -102,11 +101,11 @@ ht-degree: 13%
 * Forms-11546： Lighthouse偵測到最適化表單中重複面板缺少ARIA標籤，影響協助工具。
 * Forms-11095：電話號碼、電子郵件地址和號碼欄位的ARIA屬性定義不正確，導致無障礙問題。
 
-### 已知問題 {#known-issues-14157}
+### 已知問題 {#known-issues-14227}
 
 無。
 
-### 內嵌技術 {#embedded-tech-14157}
+### 內嵌技術 {#embedded-tech-14227}
 
 | 技術 | 版本 | 連結 |
 |---|---|---|
