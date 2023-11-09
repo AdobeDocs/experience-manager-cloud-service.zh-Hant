@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 1a32eb24-db3b-4fad-b1c7-6326b5af4e5e
 docset: aem65
-source-git-commit: cf7c9fc3f254628f2efee2e00ed295e038d17c99
+source-git-commit: 1835559f9becea5f79d179be9b01efbe67c82151
 workflow-type: tm+mt
-source-wordcount: '2147'
+source-wordcount: '2148'
 ht-degree: 1%
 
 ---
@@ -173,7 +173,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
-> 如果在自我調整表單中多次使用基於非基礎的表單片段，則會在片段的欄位之間進行資料同步。 您可以在表單中使用未多次綁定到任何表單資料模型的單個 [ 表單片段（基於核心元件）， ](/help/forms/adaptive-form-fragments-core-components.md) 而不會遇到資料同步問題。
+> 如果在自我調整表單中多次使用基於非基礎的表單片段，則片段欄位之間會出現資料同步問題。 您可以在表單中多次使用 [ 未綁定到任何表單資料模型的單個表單片段（基於核心元件 ](/help/forms/adaptive-form-fragments-core-components.md) ），而不會遇到資料同步問題。
 
 ## 自動資料繫結的片段映射 {#auto-mapping-of-fragments-for-data-binding}
 
