@@ -2,10 +2,10 @@
 title: 使用 Universal Editor 編寫內容
 description: 了解內容作者使用 Universal Editor 建立內容有多簡單和直覺。
 exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
-source-git-commit: 79fe3133a6b0553209b14c4cf47faa9db28caacc
+source-git-commit: c6d4300e6e031a4958277fa3bce251ac6aa5dbc9
 workflow-type: tm+mt
-source-wordcount: '2410'
-ht-degree: 100%
+source-wordcount: '2442'
+ht-degree: 73%
 
 ---
 
@@ -50,7 +50,7 @@ UI 分為五個主要區域。
 * [Universal Editor 標頭](#universal-editor-header)
 * [模式邊欄](#mode-rail)
 * [編輯器](#editor)
-* [元件邊欄](#component-rail)
+* [屬性邊欄](#properties-rail)
 
 ![Universal Editor UI](assets/ui.png)
 
@@ -102,11 +102,19 @@ Universal Editor 標頭始終顯示在畫面頂端，就在 [Experience Cloud �
 
 ![Universal Editor 標頭](assets/universal-editor-header.png)
 
-#### 漢堡選單 {#hamburger-menu}
+#### 首頁按鈕 {#home-button}
 
-漢堡選單尚未實作。
+首頁按鈕可帶您回到通用編輯器的起始頁
 
-![漢堡選單](assets/hamburger-menu.png)
+![漢堡選單](assets/home-button.png)
+
+在開始頁面上，您可以輸入要用通用編輯器編輯的網站URL。
+
+![起始頁](assets/start-page.png)
+
+>[!NOTE]
+>
+>您希望使用 Universal Editor 編輯的任何頁面都必須[經過檢測以支援 Universal Editor。](getting-started.md)
 
 #### 位置列 {#location-bar}
 
@@ -121,6 +129,12 @@ Universal Editor 標頭始終顯示在畫面頂端，就在 [Experience Cloud �
 >[!NOTE]
 >
 >您希望使用 Universal Editor 編輯的任何頁面都必須[經過檢測以支援 Universal Editor。](getting-started.md)
+
+#### 驗證標題設定 {#authentication-settings}
+
+如果您需要設定驗證密碼，請點選或按一下驗證標題設定圖示。
+
+![驗證標題設定按鈕](assets/authentication-header-settings.png)
 
 #### 模擬器設定 {#emulator}
 
@@ -162,7 +176,7 @@ Universal Editor 標頭始終顯示在畫面頂端，就在 [Experience Cloud �
 
 ### 模式邊欄 {#rail}
 
-模式邊欄始終位於編輯器的左側。這樣可讓您在不同編輯模式間輕鬆切換編輯器。
+模式邊欄就在home按鈕的下方，而且一律會沿著編輯器的左側顯示。 它可讓您在不同使用模式之間輕鬆切換編輯器。
 
 ![模式邊欄](assets/mode-rail.png)
 
@@ -176,52 +190,41 @@ Universal Editor 標頭始終顯示在畫面頂端，就在 [Experience Cloud �
 >
 >使用快速鍵 `P` 切換到預覽模式。
 
-#### 媒體模式 {#media-mode}
-
-在媒體模式下，內容作者可以點按並選取媒體內容。
-
-![媒體模式](assets/media-mode.png)
-
-內容的詳細資料會顯示在元件邊欄中，作者也可以[編輯媒體內容。](#editing-media)
-
->[!TIP]
->
->使用快速鍵 `M` 可切換至媒體模式。
-
 #### 元件模式 {#component-mode}
 
-在元件模式下，內容作者可以按一下以選取元件對其進行編輯，包括：
+在元件模式中，內容作者可以按一下以選取元件，以便進行編輯，包括：
 
 * 在原處[編輯純文字](#editing-content)。
-* 使用元件邊欄顯示的其他格式選項，在原處[編輯 RTF 文字](#editing-rich-text)。
+* [編輯RTF文字](#editing-rich-text) 「屬性」邊欄中顯示的其他格式選項。
+* [編輯媒體內容](#editing-media)
 * [編輯內容片段](#edit-content-fragment)
 
 ![元件模式](assets/component-mode.png)
 
-當您選取[內容片段](/help/assets/content-fragments/content-fragments.md)時，其詳細資料會顯示在元件邊欄中，您可以在此編輯內容片段。
+選取元件時，其內容的詳細資訊會顯示在 [屬性邊欄。](#properties-rail) 根據內容型別，您可以在就地或屬性邊欄中編輯。
 
 >[!TIP]
 >
->使用快速鍵 `C` 可切換至元件模式。
+>使用快速鍵 `C` 以切換到元件模式。
 
 ### 編輯器 {#editor}
 
 編輯器會佔據大部分視窗，而且是[位置列](#location-bar)中指定之頁面的呈現位置。
 
-* 如果編輯器處於[元件模式](#component-mode)，您可以編輯內容，但無法點選連結。
+* 如果編輯器在 [元件模式，](#component-mode) 內容將可供編輯，但您無法關注連結。
 * 如果編輯器在[預覽模式，](#preview-mode)內容即為可瀏覽，而且您可以點選連結，但無法編輯內容。
 
 ![編輯器](assets/editor.png)
 
-### 元件邊欄 {#component-rail}
+### 屬性邊欄 {#properties-rail}
 
-元件邊欄一律位於編輯器的右側。視其模式而定，可能會顯示在內容或頁面內容之階層中選取的元件詳細資訊。
+屬性邊欄一律會沿著編輯器的右側顯示。 視其模式而定，可能會顯示在內容或頁面內容之階層中選取的元件詳細資訊。
 
-![元件邊欄](assets/component-rail.png)
+![屬性邊欄](assets/component-rail.png)
 
 #### 屬性模式 {#properties-mode}
 
-在屬性模式下，邊欄會顯示編輯器中目前選取的元件屬性。載入頁面時，這就是元件邊欄的預設模式。
+在屬性模式下，邊欄會顯示編輯器中目前選取的元件屬性。這是載入頁面時屬性邊欄的預設模式。
 
 ![屬性模式](assets/properties-mode.png)
 
@@ -234,20 +237,6 @@ Universal Editor 標頭始終顯示在畫面頂端，就在 [Experience Cloud �
 >[!TIP]
 >
 >使用快速鍵 `D` 可切換至屬性模式。
-
-##### 編輯 {#edit}
-
-在[元件模式](#component-mode)時，元件邊欄會顯示所選元件可用的編輯選項。在元件邊欄中，您可以編輯所選元件。不過，您也可以點選或按一下編輯按鈕。
-
-![「編輯」圖示](assets/edit.png)
-
-點選或按一下編輯按鈕將在新的索引標籤中開啟[內容片段編輯器](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor)。這可讓您使用內容片段編輯器的全部功能來編輯關聯的內容片段。
-
-根據工作流程的需要，您可能想要在 Universal Editor 中或直接在內容片段編輯器中編輯內容片段。
-
->[!TIP]
->
->使用快速鍵 `E` 可編輯選取的元件。
 
 #### 內容樹模式 {#content-tree-mode}
 
@@ -263,13 +252,29 @@ Universal Editor 標頭始終顯示在畫面頂端，就在 [Experience Cloud �
 >
 >使用快速鍵 `F` 可切換至內容樹模式。
 
+##### 編輯 {#edit}
+
+當在 [元件模式，](#component-mode) 所選元件的編輯選項會顯示在「屬性」邊欄中。 在屬性邊欄中，您可以編輯選取的元件。 如果選取的元件是內容片段，您也可以點選或按一下「編輯」按鈕。
+
+![「編輯」圖示](assets/edit.png)
+
+點選或按一下編輯按鈕將在新的索引標籤中開啟[內容片段編輯器](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor)。這可讓您使用內容片段編輯器的全部功能來編輯關聯的內容片段。
+
+根據工作流程的需要，您可能想要在 Universal Editor 中或直接在內容片段編輯器中編輯內容片段。
+
+>[!TIP]
+>
+>使用快速鍵 `E` 可編輯選取的元件。
+
 ##### 新增 {#add}
 
-如果您在內容樹或編輯器中選取容器元件，新增選項會顯示在元件邊欄上。
+如果您在內容樹狀結構或編輯器中選取容器元件，「屬性」邊欄會出現「新增」選項。
 
 ![「新增」圖示](assets/ue-add-component-icon.png)
 
 點選或按一下「新增」按鈕即會開啟元件的下拉選單，可用於[新增到選取的容器。](#adding-components)
+
+![新增內容功能表](assets/add-context-menu.png)
 
 >[!TIP]
 >
@@ -277,7 +282,7 @@ Universal Editor 標頭始終顯示在畫面頂端，就在 [Experience Cloud �
 
 ##### 刪除 {#delete}
 
-如果您在內容樹或編輯器中選取容器元件內的元件，刪除選項會顯示在元件邊欄上。
+如果在內容樹狀結構或編輯器中選取容器元件內的元件，屬性邊欄會顯示刪除選項。
 
 ![「刪除」圖示](assets/ue-delete-component-icon.png)
 
@@ -289,51 +294,51 @@ Universal Editor 標頭始終顯示在畫面頂端，就在 [Experience Cloud �
 
 ## 編輯內容 {#editing-content}
 
-編輯內容很簡單又直覺。在編輯模式下 ([媒體模式](#media-mode)和[元件模式](#component-mode))，將滑鼠指標停留於編輯器的內容時，系統會以藍色框醒目提示可編輯內容。
+編輯內容很簡單又直覺。在 [元件模式](#component-mode)，當您將游標移至編輯器中的內容時，可編輯的內容會以藍色方塊醒目提示。
 
 ![可編輯的內容會以藍色框醒目顯示](assets/editable-content.png)
 
 >[!TIP]
 >
->請注意，在編輯模式下，點選或按一下內容會將它選取進行編輯。如果您希望透過以下連結瀏覽您的內容，請切換到[預覽模式。](#preview-mode)
+>請注意，在元件模式中，點選或按一下內容會選取它進行編輯。 如果您希望透過以下連結瀏覽您的內容，請切換到[預覽模式。](#preview-mode)
 
-依您所使用的[模式](#mode-rail)和選取的內容而定，您可能會有不同的原處編輯選項，並且您可能可透過使用後者檢閱其他內容屬性：[元件邊欄。](#component-rail)
+根據您選取的內容，您可能有不同的就地編輯選項，而且您可能會為中的內容提供其他資訊和選項 [屬性邊欄。](#properties-rail)
 
 ### 編輯純文字 {#edit-plain-text}
 
-如果你位於[元件模式](#component-mode)並選取純文字元件，您可以按二下或點選二次在原處編輯文字。
+如果您在 [元件模式](#component-mode) 並選取純文字元件，則按兩下或點選該元件即可就地編輯文字。
 
 ![編輯內容](assets/editing-content.png)
 
 按下 Enter/Return 鍵或在文字框外面輕點或按一下，即可儲存變更。
 
-當您點擊或按一下以選取文字元件時，其詳細資訊將顯示在元件邊欄中。您也可以在邊欄中編輯文字。
+當您點選或按一下以選取文字元件時，其詳細資料會顯示在「屬性」邊欄中。 您也可以在邊欄中編輯文字。
 
-![在文件邊欄中編輯文字](assets/ue-editing-text-component-rail.png)
+![編輯屬性邊欄中的文字](assets/ue-editing-text-component-rail.png)
 
-此外，元件邊欄還會提供文字的詳細資料。一旦焦點離開元件邊欄的編輯欄位，變更就會自動儲存。
+此外，屬性邊欄中還提供您文字的詳細資料。 一旦焦點離開屬性邊欄中已編輯的欄位，變更就會自動儲存。
 
 ### 編輯 RTF 文字 {#edit-rich-text}
 
-如果你位於[元件模式](#component-mode)並選取 RTF 文字元件，您可以按二下或點選二次在原處編輯文字。
+如果您在 [元件模式](#component-mode) 並選取RTF文字元件，按兩下或點選該元件即可就地編輯文字。
 
 按下 Enter/Return 鍵或在文字框外面輕點或按一下，即可儲存變更。
 
 ![編輯 RTF 文字元件](assets/rich-text-editing.png)
 
-此外，元件邊欄中還會提供文字的格式設定選項和詳細資料。一旦焦點離開元件邊欄的編輯欄位，變更就會自動儲存。
+此外，屬性邊欄中還提供格式化選項和文字的詳細資訊。 一旦焦點離開屬性邊欄中已編輯的欄位，變更就會自動儲存。
 
 ### 編輯媒體 {#edit-media}
 
-如果您使用[媒體模式](#media-mode)並選取影像，即可在元件邊欄中檢視其詳細資料。
+如果您在 [元件模式](#component-mode) 如果選取影像，即可在屬性邊欄中檢視其詳細資訊。
 
 ![編輯媒體](assets/ue-edit-media.png)
 
-在元件邊欄中點選或按一下選取影像之預覽下方的「**取代**」按鈕，即可將影像替換為資產資料庫中的另一個影像。
+點選或按一下 **取代** 按鈕取代屬性邊欄中選取影像預覽下方的影像，以使用資產資料庫中的另一個影像取代。
 
 1. [資產選擇器](/help/assets/asset-selector.md#using-asset-selector)視窗會開啟，讓您可選取資產。
 1. 點選或按一下以選取新資產。
-1. 點選或按一下「**選取**」，即可返回到資產已替換的元件邊欄。
+1. 點選或按一下 **選取** 以返回取代資產的屬性邊欄。
 
 變更會自動儲存到您的內容中。
 
@@ -343,15 +348,15 @@ Universal Editor 標頭始終顯示在畫面頂端，就在 [Experience Cloud �
 
 ### 編輯內容片段 {#edit-content-fragment}
 
-如果您使用[元件模式](#component-mode)並選取[內容片段，](/help/sites-cloud/administering/content-fragments/overview.md)即可在元件邊欄中編輯其詳細資料。
+如果您在 [元件模式](#component-mode) 然後選取 [內容片段，](/help/sites-cloud/administering/content-fragments/overview.md) 您可以在「屬性」邊欄中編輯其詳細資料。
 
 ![編輯內容片段](assets/ue-edit-cf.png)
 
-在選取內容片段內容模型中定義的欄位會在元件邊欄中顯示並可供編輯。
+在選定內容片段的內容模型中定義的欄位會在屬性邊欄中顯示和編輯。
 
 如果您選取與內容片段相關的欄位，則內容片段會載入到元件邊欄中，且會自動捲動到該欄位。
 
-一旦焦點離開元件邊欄的編輯欄位，變更就會自動儲存。
+一旦焦點離開屬性邊欄中已編輯的欄位，變更就會自動儲存。
 
 但如果您希望以[內容片段編輯器](/help/sites-cloud/administering/content-fragments/authoring.md)來編輯內容片段，則請按一下模式邊欄中的[「編輯」按鈕](#edit)。
 
@@ -360,7 +365,7 @@ Universal Editor 標頭始終顯示在畫面頂端，就在 [Experience Cloud �
 ### 新增元件到容器中 {#adding-components}
 
 1. 在內容樹或編輯器中選取容器元件。
-1. 然後點選或按一下元件邊欄中的「新增」圖示。
+1. 然後，點選或按一下屬性邊欄中的新增圖示。
 
    ![選取要新增到容器的元件](assets/ue-add-component.png)
 
@@ -375,7 +380,7 @@ Universal Editor 標頭始終顯示在畫面頂端，就在 [Experience Cloud �
 1. 在內容樹或編輯器中選取容器元件。
 1. 點選或按一下容器的 ＞形箭號圖示以在內容樹中展開其內容。
 1. 然後，在內容樹中，選取容器內的元件。
-1. 點選或按一下元件邊欄中的刪除圖示。
+1. 在屬性邊欄中，點選或按一下刪除圖示。
 
    ![刪除元件](assets/ue-delete-component.png)
 
@@ -402,7 +407,7 @@ Universal Editor 標頭始終顯示在畫面頂端，就在 [Experience Cloud �
 
 內容編輯完成後，您通常會希望瀏覽其內容，以查看它在其他頁面內容中的樣子。在[預覽模式](#preview-mode)中，您可以點選連結，像讀者一樣瀏覽您的內容。內容在編輯器中呈現的樣子就是將會發佈的樣子。
 
-請注意，在預覽模式下，點選或按一下內容的回應與內容讀者的回應一樣。如果您想選取內容進行編輯，請切換至編輯模式，例如[元件模式](#component-mode)或[媒體模式](#media-mode)。
+請注意，在預覽模式下，點選或按一下內容的回應與內容讀者的回應一樣。如果要選取要編輯的內容，請切換至 [元件模式。](#component-mode)
 
 ## 其他資源 {#additional-resources}
 

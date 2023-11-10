@@ -2,12 +2,13 @@
 title: AEM 中 Universal Editor 快速入門
 description: 了解如何存取 Universal Editor，以及如何開始檢測您的第一個 AEM 應用程式以使用它。
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
-source-git-commit: 79fe3133a6b0553209b14c4cf47faa9db28caacc
+source-git-commit: 6c3b286182ae33cafadf51e653c2076d1911e444
 workflow-type: tm+mt
-source-wordcount: '803'
-ht-degree: 100%
+source-wordcount: '924'
+ht-degree: 87%
 
 ---
+
 
 # AEM 中 Universal Editor 快速入門 {#getting-started}
 
@@ -109,14 +110,17 @@ Universal Editor 服務需要[統一資源名稱 (URN)](https://en.wikipedia.org
 應用程式中使用的連線會儲存為`<meta>`頁面中的標記`<head>`。
 
 ```html
-<meta name="urn:adobe:aem:editor:<referenceName>" content="<protocol>:<url>">
+<meta name="urn:adobe:aue:<category>:<referenceName>" content="<protocol>:<url>">
 ```
 
+* `<category>`  — 這是使用兩個選項的連線分類。
+   * `system`  — 適用於連線端點
+   * `config`  — 用於 [定義選用的組態設定](#configuration-settings)
 * `<referenceName>` - 這是簡短名稱，可在文件中重複使用以標識連線。例如 `aemconnection`
 * `<protocol>` - 這代表要使用 Universal Editor 持續性服務的哪個持續性外掛程式。例如 `aem`
 * `<url>` - 這是儲存變更之系統的 URL。例如 `http://localhost:4502`
 
-識別碼 `adobe:aem:editor` 表示 Adobe Universal Editor 連線。
+識別碼 `urn:adobe:aue:system` 表示 Adobe Universal Editor 連線。
 
 `itemid` 將使用 `urn` 首碼來縮短識別碼。
 
@@ -134,10 +138,12 @@ itemid="urn:<referenceName>:<resource>"
 ### 連線範例 {#example}
 
 ```html
+<meta name="urn:adobe:aue:system:<referenceName>" content="<protocol>:<url>">
+
 <html>
 <head>
-    <meta name="urn:adobe:aem:editor:aemconnection" content="aem:https://localhost:4502">
-    <meta name="urn:adobe:aem:editor:fcsconnection" content="fcs:https://example.franklin.adobe.com/345fcdd">
+    <meta name="urn:adobe:aue:system:aemconnection" content="aem:https://localhost:4502">
+    <meta name="urn:adobe:aue:system:fcsconnection" content="fcs:https://example.franklin.adobe.com/345fcdd">
 </head>
 <body>
         <aside>
@@ -147,9 +153,9 @@ itemid="urn:<referenceName>:<resource>"
               <p itemprop="title" itemtype="text">Journalist</p>
               <img itemprop="avatar" src="https://www.adobe.com/content/dam/cc/icons/Adobe_Corporate_Horizontal_Red_HEX.svg" itemtype="image" alt="avatar"/>
             </li>
- 
+
 ...
- 
+
             <li itemscope itemid="urn:fcsconnection:/documents/mytext" itemtype="component">
               <p itemprop="name" itemtype="text">John Smith</p>
               <p itemid="urn:aemconnection/content/example/another-source" itemprop="title" itemtype="text">Photographer</p>
@@ -159,6 +165,28 @@ itemid="urn:<referenceName>:<resource>"
         </aside>
 </body>
 </html>
+```
+
+### 組態設定 {#configuration-settings}
+
+您可以使用 `config` 首碼位於您的連線URN中，以視需要設定服務和擴充端點。
+
+如果您不想使用由Adobe託管（但您自己的託管版本）的通用編輯器服務，可以在中繼標籤中設定此專案。 為了覆寫Universal Editor提供的預設服務端點，請設定您自己的服務端點：
+
+* 中繼名稱 —  `urn:adobe:aue:config:service`
+* 中繼內容 —  `content="https://adobe.com"` （範例）
+
+```html
+<meta name="urn:adobe:aue:config:service" content="<url>">
+```
+
+如果您只想為頁面啟用特定擴充功能，可以在meta標籤中加以設定。 若要擷取擴充功能，請設定擴充功能端點：
+
+* 中繼名稱： `urn:adobe:aue:config:extensions`
+* 中繼內容： `content="https://adobe.com,https://anotherone.com,https://onemore.com"` （範例）
+
+```html
+<meta name="urn:adobe:aue:config:extensions" content="<url>,<url>,<url>">
 ```
 
 ## 您已準備好使用 Universal Editor {#youre-ready}
