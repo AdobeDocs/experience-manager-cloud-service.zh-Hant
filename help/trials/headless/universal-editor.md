@@ -4,12 +4,13 @@ description: 探索如何使用 Universal Editor 在任何實作中對內容的�
 hidefromtoc: true
 index: false
 exl-id: a4854a56-9434-4d15-a56a-f1798f27263a
-source-git-commit: 226df8999d1344ffe8acb2a9ce75b58634300a11
-workflow-type: ht
-source-wordcount: '971'
-ht-degree: 100%
+source-git-commit: 2c7ad41ec44ed2627bfcfe206c1b7ba660cef9c0
+workflow-type: tm+mt
+source-wordcount: '977'
+ht-degree: 88%
 
 ---
+
 
 # 使用 Universal Editor 進行內容編輯 {#editing-in-context}
 
@@ -38,11 +39,11 @@ ht-degree: 100%
 
 使用 Universal Editor 可讓您靈活地進行內容中和原處的文字編輯，實現簡單且直覺的內容編寫。
 
-1. 依預設，編輯器應該會在&#x200B;**文字**&#x200B;模式下載入。如果沒有，請點選或按一下編輯器左側模式邊欄中的&#x200B;**文字**&#x200B;圖示。
+1. 依預設，該編輯器應載入於 **元件** 模式。 如果沒有，請點選或按一下 **元件** 圖示來顯示於編輯器左側的模式邊欄中。
 
-1. 點選或按一下最新文章的標題即可進行編輯。
+1. 點兩下或按一下最新文章的標題以進行編輯。
 
-   ![Universal Editor](assets/do-not-localize/ue-text-mode.png)
+   ![Universal Editor](assets/do-not-localize/ue-component-mode.png)
 
 1. 選取的元件會以藍色邊框顯示，且會附上註明其為文字元件的標籤。游標會位於邊框中，等待文字輸入。將文字變更為 `Aloha Spirit in Lofoten`。
 
@@ -56,11 +57,9 @@ Universal Editor 在編寫環境中會自動儲存您的變更。您仍然需要
 
 使用 Universal Editor，您還可以在將影像交換出去的同時仍停留在內容中。
 
-1. 若要將編輯器變更為&#x200B;**媒體**&#x200B;模式，可點選或按一下模式邊欄上的「**媒體**」按鈕。
+1. 剩餘時間 **元件** 模式，點選或按一下瀏覽者的影像以選取它。
 
-1. 點選或按一下衝浪者的影像將其選取。
-
-1. 在元件邊欄中，您可以查看資產的詳細資料。點選或按一下「**取代**」。
+1. 在元件邊欄中，您可以查看資產的詳細資料。點選或按一下 **精選影像** 縮圖。
 
    ![選取要編輯的影像](assets/do-not-localize/ue-edit-media.png)
 
@@ -82,7 +81,7 @@ Universal Editor 可讓您在其中與內容互動、查看傳遞到使用者裝
 
 1. 讀者可能使用具有不同長寬比的不同裝置，因此編輯器會提供模擬模式，以便查看頁面會如何呈現給使用者。例如，選取直向模式的行動裝置選項。
 
-   ![模擬器選單項目](assets/do-not-localize/ue-emulator-3.png)
+   ![模擬器選單項目](assets/do-not-localize/ue-emulator-2.png)
 
 1. 在編輯器中查看內容變更。模擬器的圖示也會變更，以反映其所處的模式。點選或按一下模擬器選單以外的任意位置，可將其關閉並與您的內容進行互動。
 
@@ -118,12 +117,12 @@ Universal Editor 可讓您在其中與內容互動、查看傳遞到使用者裝
 
 1. 在編輯器左側的模式邊欄中，選取「**元件**」。這讓您可在編輯器中選取頁面元件。
 
-1. 點選或按一下以選取其中一項冒險。
+1. 點選或按一下其中一個冒險，例如 **巴厘島衝浪營** 以選取它。
 
-   * 請注意已選取元件的藍色輪廓。選取內容片段時，該標籤應該會顯示&#x200B;**參考**。
+   * 請注意已選取元件的藍色輪廓。在選取內容片段時，索引標籤應該顯示內容片段的名稱。 在此案例中 **巴厘島衝浪營**.
    * 由於 Universal Editor 可容許選取頁面上的任何物件，因此也可以個別選取內容片段的組成元件。點選或按一下插圖中標示的位置，即可選取整個內容片段元件。
 
-1. 此時在模式邊欄上會顯示新的「**編輯**」圖示。點選或按一下「**編輯**」圖示，即可在新的索引標籤上開啟內容片段編輯器。
+1. 此 **編輯** 圖示會顯示在元件邊欄上。 點選或按一下「**編輯**」圖示，即可在新的索引標籤上開啟內容片段編輯器。
 
 ![在 Universal Editor 中選取內容片段](assets/do-not-localize/ue-content-fragments.png)
 
