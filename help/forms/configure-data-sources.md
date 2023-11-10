@@ -5,9 +5,9 @@ feature: Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
-source-git-commit: f79ed400ac2c1956dd7946cec2881f4e77d4bd41
+source-git-commit: b9fb484135fb2d16758548c525b59f5ba011afb5
 workflow-type: tm+mt
-source-wordcount: '2202'
+source-wordcount: '2203'
 ht-degree: 5%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 5%
 
 [!DNL Experience Manager Forms] 資料整合可讓您設定並連線至不同的資料來源。 下列是支援的現成可用型別：
 
-* 關聯式資料庫 — MySQL、 [!DNL Microsoft® SQL Server]， [!DNL IBM® DB2®]、和 [!DNL Oracle RDBMS]
+* 關聯式資料庫 — MySQL、 [!DNL Microsoft® SQL Server]， [!DNL IBM® DB2®]、 postgreSQL和 [!DNL Oracle RDBMS]
 * RESTful Web服務
 * 以SOAP為基礎的web服務
 * OData服務（4.0版）
