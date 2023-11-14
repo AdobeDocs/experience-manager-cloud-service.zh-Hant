@@ -5,7 +5,7 @@ exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
 source-git-commit: b610de53d1bd1b120a2642336aac1713444bfd3e
 workflow-type: tm+mt
 source-wordcount: '2665'
-ht-degree: 13%
+ht-degree: 14%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 13%
 >[!CONTEXTUALHELP]
 >id="intro_aem_cloudservice_architecture"
 >title="AEM as a Cloud Service Architecture 簡介"
->abstract="在此索引標籤中，您可以檢視 AEM as a Cloud Service 的新架構並了解變更。AEM產生了具有可變影像數量的動態架構，因此花時間瞭解雲端架構非常重要。"
+>abstract="在此索引標籤中，您可以檢視 AEM as a Cloud Service 的新架構並了解變更。AEM 產生了具有可變影像數量的動態架構，因此請務必花時間了解雲端架構。"
 >additional-url="https://video.tv.adobe.com/v/330542/" text="架構概述"
 
 Adobe Experience Manager (AEM) as a Cloud Service提供一組可撰寫的服務，用於建立和管理高影響力的體驗。
