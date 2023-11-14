@@ -2,10 +2,10 @@
 title: 組建環境
 description: 了解 Cloud Manager 的構建環境以及它如何構建和測試您的程式碼。
 exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
-source-git-commit: 08cb1b4fc74e03a931551042814afb2d722005a5
+source-git-commit: 7945d67fe7d258af7131076d2416cbe121354a62
 workflow-type: tm+mt
-source-wordcount: '1039'
-ht-degree: 93%
+source-wordcount: '1006'
+ht-degree: 98%
 
 ---
 
@@ -19,25 +19,21 @@ ht-degree: 93%
 Cloud Manager 使用專門的構建環境構建和測試您的程式碼。
 
 * 組建環境以 Linux 為基礎，衍生自 Ubuntu 18.04。
-* 使用 [2023年10月發行的Cloud Manager，](/help/implementing/cloud-manager/release-notes/current.md) Java和Maven版本會持續更新。
-   * 已安裝Apache Maven 3.6.0或3.8.8。
-   * 安裝的Java版本為OracleJDK 8u202和OracleJDK 11.0.2。或OracleJDK 8u371和OracleJDK 11.0.20。
-   * 根據預設， `JAVA_HOME` 環境變數已設為 `/usr/lib/jvm/jdk1.8.0_202` 其中包含OracleJDK 8u202或 `/usr/lib/jvm/jdk1.8.0_371` 其中包含OracleJDK 8u371。 請參閱 [備用Maven執行JDK版本](#alternate-maven-jdk-version) 區段以取得更多詳細資料。
+* 已安裝 Apache Maven 3.8.8。
+* 已安裝的 Java 版本為 Oracle JDK 8u371 和 Oracle JDK 11.0.20。
+* 預設的情況下，`JAVA_HOME` 環境變數設為 `/usr/lib/jvm/jdk1.8.0_371`，其中包含 Oracle JDK 8u371。請參閱 [備用Maven執行JDK版本](#alternate-maven-jdk-version) 區段以取得更多詳細資料。
 * 安裝了一些必要的附加系統套件。
-
    * `bzip2`
    * `unzip`
    * `libpng`
    * `imagemagick`
    * `graphicsmagick`
-
 * 在建置時間可安裝其他套件，如[安裝附加系統套件](#installing-additional-system-packages)區段中所述。
 * 每次構建都是在原始環境中完成的；構建容器在執行之間不保持任何狀態。
 * 一直使用下列三個命令執行 Maven：
-
-* `mvn --batch-mode org.apache.maven.plugins:maven-dependency-plugin:3.1.2:resolve-plugins`
-* `mvn --batch-mode org.apache.maven.plugins:maven-clean-plugin:3.1.0:clean -Dmaven.clean.failOnError=false`
-* `mvn --batch-mode org.jacoco:jacoco-maven-plugin:prepare-agent package`
+   * `mvn --batch-mode org.apache.maven.plugins:maven-dependency-plugin:3.1.2:resolve-plugins`
+   * `mvn --batch-mode org.apache.maven.plugins:maven-clean-plugin:3.1.0:clean -Dmaven.clean.failOnError=false`
+   * `mvn --batch-mode org.jacoco:jacoco-maven-plugin:prepare-agent package`
 * 透過 `settings.xml` 檔案在系統層級設定 Maven，這會利用名為 `adobe-public` 的設定檔自動納入公共 Adobe 成品存放庫。如需更多詳細資訊，請參閱 [Adobe 公共 Maven 存放庫](https://repo1.maven.org/)。
 
 >[!NOTE]

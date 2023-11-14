@@ -3,10 +3,10 @@ title: 管理管道
 description: 了解如何管理現有管道，包括將其編輯、執行和刪除。
 index: true
 exl-id: 4aff5a84-134a-43fa-8de8-8d564f4edd16
-source-git-commit: b8d692e354851a31b4f66b24135c863b5ca723b4
+source-git-commit: 01a89f779689733fb82a556291e091026def63e0
 workflow-type: tm+mt
-source-wordcount: '667'
-ht-degree: 81%
+source-wordcount: '957'
+ht-degree: 60%
 
 ---
 
@@ -34,6 +34,38 @@ ht-degree: 81%
 * **全部顯示** - 將使用者帶到管道畫面，在更詳細的表格中檢視所有管道。
 * **存取存放庫資訊** - 顯示要存取 Cloud Manager Git 存放庫所必需的資訊
 * **了解更多** - 瀏覽至 CI/CD 管道文件資源。
+
+## 管線視窗 {#pipelines}
+
+此 **管道** 視窗顯示所選計畫的所有管道的完整清單。 這很有用，因為它提供的資訊比 [管道卡。](#pipeline-card)
+
+1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織和計畫。
+
+1. 從 **計畫總覽** 頁面，點選或按一下 **管道** 標籤以切換至 **管道** 視窗。
+
+1. 在這裡，您可以看到計畫的所有管道清單，並像在中一樣開始和停止管道執行 **管道卡**.
+
+如果管道正在執行，將游標暫留在其 **狀態** 欄會顯示執行的詳細資訊。
+
+![管道執行詳細資料](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-status.png)
+
+點選或按一下 **檢視詳細資料** 將帶您前往 [管道執行的詳細資訊。](#view-details)
+
+## 活動視窗 {#activity}
+
+此 **活動** 視窗顯示所選方案的所有管道執行的完整清單。
+
+1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織和計畫。
+
+1. 從 **計畫總覽** 頁面，點選或按一下 **活動** 標籤以切換至 **活動** 視窗。
+
+1. 您可以在此處檢視計畫的所有管道執行清單，包括當前和歷史執行。
+
+如果管道正在執行，將游標暫留在其 **狀態** 欄會顯示執行的詳細資訊。
+
+![管道執行詳細資料](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-activity.png)
+
+點選或按一下 **檢視詳細資料** 將帶您前往 [管道執行的詳細資訊。](#view-details)
 
 ## 執行管道 {#running-pipelines}
 
@@ -88,6 +120,16 @@ ht-degree: 81%
 ![管道詳情](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-running-details.png)
 
 從這裡您可以查看管道各個步驟的狀態，並擷取組建紀錄以進行診斷。檢視檔案 [部署程式碼](/help/implementing/cloud-manager/deploy-code.md) 以取得程式碼部署和測試執行的詳細資訊。
+
+管道執行中的所有步驟都會顯示，其中尚未開始的步驟以灰色顯示。 完成的步驟會顯示其持續時間。
+
+管道步驟完成後，會顯示摘要。
+
+![步驟摘要](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-step.png)
+
+點選或按一下 **檢視詳細資料** 顯示連結 **持續時間** 區段。 這包括根據該計畫歷史趨勢的管道平均持續時間。
+
+![持續時間](/help/implementing/cloud-manager/assets/configure-pipeline/duration.png)
 
 >[!NOTE]
 >

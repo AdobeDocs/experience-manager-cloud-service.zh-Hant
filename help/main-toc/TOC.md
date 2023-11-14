@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的運作方式以及該軟體可以為您做哪些事。
 breadcrumb-title: 使用手冊
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 92e7e64f25fdb2b4d8fbfe0da6da4bc81b9c96a1
+source-git-commit: a6d43e6d4138305c2f98dfb6e33946d36fb50fe1
 workflow-type: tm+mt
-source-wordcount: '4372'
+source-wordcount: '4381'
 ht-degree: 99%
 
 ---
@@ -88,6 +88,7 @@ ht-degree: 99%
    + Cloud Manager 發行說明 {#cloud-manager}
       + [最新發行說明](/help/implementing/cloud-manager/release-notes/current.md)
       + 2023 {#2023}
+         + [2023.10.0 版發行說明](/help/implementing/cloud-manager/release-notes/2023/2023-10-0.md)
          + [2023.9.0 版發行說明](/help/implementing/cloud-manager/release-notes/2023/2023-9-0.md)
          + [2023.8.0 版發行說明](/help/implementing/cloud-manager/release-notes/2023/2023-8-0.md)
          + [2023.7.0 版發行說明](/help/implementing/cloud-manager/release-notes/2023/2023-7-0.md)
@@ -843,6 +844,7 @@ ht-degree: 99%
          + [將 Git 與 Cloud Manager 一起使用](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)
          + [使用多個存放庫](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md)
          + [企業開發團隊設定](/help/implementing/cloud-manager/managing-code/enterprise-team-dev-setup.md)
+         + [使用您自己的GitHub存放庫](/help/implementing/cloud-manager/managing-code/byo-github.md)
       + [環境變數](/help/implementing/cloud-manager/environment-variables.md)
       + Cloud Manager CI-CD 管道 {#cicd-pipelines}
          + [簡介](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)

@@ -2,10 +2,10 @@
 title: 不同之處與新增功能 - Adobe Experience Manager as a Cloud Service
 description: 不同之處與新增功能 - Adobe Experience Manager (AEM) as a Cloud Service。
 exl-id: d1ce126e-960c-4367-b741-af709dd81010
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 83b5d9a3ff0e9a3c69e36a97a3f733b05f827d3b
 workflow-type: tm+mt
-source-wordcount: '1896'
-ht-degree: 100%
+source-wordcount: '1897'
+ht-degree: 99%
 
 ---
 
@@ -206,7 +206,7 @@ Web 主控台，這個管理 OSGI 套件及其關聯設定的地方，先前也�
 
 >[!NOTE]
 >
->如需詳細資訊，請從[備份](/help/operations/backup.md)、[索引](/help/operations/indexing.md)和[其他維護任務開始](/help/operations/maintenance.md)。
+>如需詳細資訊，請從開始 [內容復原](/help/operations/backup.md)， [索引](/help/operations/indexing.md)、和 [其他維護任務](/help/operations/maintenance.md).
 
 使用 AEM as a Cloud Service，此類操作是自動進行，因此不再需要中斷任何服務。
 

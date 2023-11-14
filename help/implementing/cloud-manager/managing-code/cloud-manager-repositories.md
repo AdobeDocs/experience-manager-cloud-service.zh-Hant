@@ -2,10 +2,10 @@
 title: Cloud Manager 存放庫
 description: 了解如何在 Cloud Manager 中建立、檢視和刪除 Git 存放庫。
 exl-id: 6e1cf636-78f5-4270-9a21-38b4d5e5a0b0
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: af8ab1f741c658dcb47bdf0d37e403fcb180631a
 workflow-type: tm+mt
-source-wordcount: '575'
-ht-degree: 100%
+source-wordcount: '588'
+ht-degree: 96%
 
 ---
 
@@ -22,9 +22,11 @@ ht-degree: 100%
 
 依照下列步驟在 Cloud Manager 中檢視和管理存放庫。
 
-1. 從&#x200B;**計畫概觀**&#x200B;頁面，按一下&#x200B;**存放庫**&#x200B;索引標籤，並瀏覽至&#x200B;**存放庫**&#x200B;頁面。
+1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織和計畫。
 
-1. 按一下&#x200B;**新增存放庫**&#x200B;以開啟精靈。
+1. 從 **計畫總覽** 頁面，點選或按一下 **存放庫** 標籤以切換至 **存放庫** 頁面。
+
+1. 按一下 **新增存放庫**.
 
    ![新增存放庫按鈕](/help/implementing/cloud-manager/assets/repos/create-repo2.png)
 
