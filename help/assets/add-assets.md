@@ -4,9 +4,9 @@ description: 將您的數位資產新增至 [!DNL Adobe Experience Manager] as a
 feature: Asset Management,Upload
 role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: 408fdf3cac2943fc6c8abfa8d3e94b212a1e455f
+source-git-commit: 5dfcf1c5484b978c1a778eb99a09421533234734
 workflow-type: tm+mt
-source-wordcount: '3211'
+source-wordcount: '3179'
 ht-degree: 11%
 
 ---
@@ -58,7 +58,7 @@ ht-degree: 11%
    To configure the cleanup task for the unfinished chunk upload jobs, go to `https://[aem_server]:[port]/system/console/configMgr/org.apache.sling.servlets.post.impl.helper.ChunkCleanUpTask`.
 -->
 
-若要上傳檔案（或多個檔案），您可以在案頭上選取檔案，然後在使用者介面（網頁瀏覽器）上拖曳至目的地資料夾。 或者，您可以從使用者介面啟動上傳。 [!DNL Experience Manager] 可容納超過1000個資產的資料夾。 如果您想要在此資料夾中上傳更多專案，且已有1000多個專案存在，可能會導致上傳或建立新資料夾發生延遲。
+若要上傳檔案（或多個檔案），您可以在案頭上選取檔案，然後在使用者介面（網頁瀏覽器）上拖曳至目的地資料夾。 或者，您可以從使用者介面啟動上傳。
 
 >[!IMPORTANT]
 >
