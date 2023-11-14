@@ -2,14 +2,20 @@
 title: 如何取得AEM表單的參考主題和範本？
 description: AEM Forms提供範例調適型表單主題、範本和表單資料模型，以協助您快速建立表單。
 exl-id: 81588759-22da-4123-92fe-5ca97e97f1e4
-source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+source-git-commit: dd0c45352ea402065c7c6fced1394849ed9c316c
 workflow-type: tm+mt
-source-wordcount: '841'
-ht-degree: 8%
+source-wordcount: '864'
+ht-degree: 10%
 
 ---
 
 # 參考主題、範本和表單資料模型 {#reference-themes-templates-and-data-models}
+
+
+| 版本 | 文章連結 |
+| -------- | ---------------------------- |
+| 最適化Forms核心元件 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html) |
+| AEM as a Cloud Service  | 本文章 |
 
 <span class="preview">Adobe 建議使用新式且可擴充的資料擷取[核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)，用來[建立新的最適化表單](/help/forms/creating-adaptive-form-core-components.md)或[將最適化表單新增到 AEM Sites 頁面](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)。這些元件代表最適化表單建立方面的重大進步，可確保令人印象深刻的使用者體驗。本文會介紹使用基礎元件編寫最適化表單的舊方法。</span>
 
