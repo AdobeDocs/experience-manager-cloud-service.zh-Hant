@@ -3,10 +3,10 @@ title: Adobe Experience Manager as a Cloud Service 中 Cloud Manager 2023.11.0 �
 description: 以下是 AEM as a Cloud Service 中 Cloud Manager 2023.11.0 的發行說明。
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: b51b3c9aed4d9dacbf12a6cad5f8923d82766bd9
+source-git-commit: 71746b00c2d4ee05126af54241db30a7d3aeab1c
 workflow-type: tm+mt
-source-wordcount: '715'
-ht-degree: 53%
+source-wordcount: '750'
+ht-degree: 51%
 
 ---
 
@@ -31,7 +31,10 @@ AEM as a Cloud Service 中的 Cloud Manager 版本 2023.11.0 發行日期是 202
 * [管道執行詳細資訊頁面](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#view-details) 現在會顯示管道執行中的所有步驟，其中尚未開始的步驟會呈現灰色。
 * 在兩者上 **[活動](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#activity)** 和 **[管道](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#pipelines)** 頁面上，現在當按一下具有執行狀態的管道時，會顯示管道執行的摘要。
 * 新 **持續時間** 區段已新增至 [管道詳細資訊頁面](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#view-details) 這包括根據該計畫歷史趨勢的管道步驟平均持續時間。
-* 在管道執行頁面上，完成的步驟現在顯示持續時間。
+* 在 [管道執行頁面，](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#activity-window) 完成的步驟現在會顯示持續時間。
+* 執行次數： [重複使用組建成品](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse) 現在將顯示最初建立這些成品的執行連結。
+* 要選取的選項 **重要量度失敗** 現在可以設定為 [計畫碼品質管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) 以及。
+
 
 ## 早期採用計劃 {#early-adoption}
 
