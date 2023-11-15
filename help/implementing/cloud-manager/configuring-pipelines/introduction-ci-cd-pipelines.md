@@ -3,9 +3,9 @@ title: CI/CD 管道
 description: 了解 Cloud Manager 的 CI/CD 管道以及如何使用它們來有效地部署您的程式碼。
 index: true
 exl-id: 40d6778f-65e0-4612-bbe3-ece02905709b
-source-git-commit: ecb168e9261b3e3ed89e4cbe430b3da9f777a795
+source-git-commit: b47b1998fe716a8409d8d3cf0102e25c48828819
 workflow-type: tm+mt
-source-wordcount: '1448'
+source-wordcount: '1443'
 ht-degree: 92%
 
 ---
@@ -53,7 +53,7 @@ Cloud Manager 提供兩種類型的管道：
 除了生產和非生產之外，管道還可以透過它們部署的程式碼類型來區分。
 
 * **[完整堆疊程式碼管道](#full-stack-pipeline)** - 同時部署包含一個或多個 AEM 伺服器應用程序以及 HTTPD/Dispatcher 配置的後端和前端程式碼構建
-* **[設定部署管道](#config-deployment-pipeline)**  — 設定AEM環境、維護任務、CDN規則等的設定。
+* **[設定管道](#config-deployment-pipeline)**  — 設定AEM環境、維護任務、CDN規則等的設定。
 * **[前端程式碼管道](#front-end)** - 部署包含一個或多個用戶端 UI 應用程式的前端程式碼建置。
 * **[Web 層設定管道](#web-tier-config-pipelines)** - 部署 HTTPD/ Dispatcher 設定。
 
@@ -111,15 +111,15 @@ Cloud Manager 提供兩種類型的管道：
 * [新增生產管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#full-stack-code)
 * [新增非生產管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#full-stack-code)
 
-## 設定部署管道 {#config-deployment-pipeline}
+## 設定管道 {#config-deployment-pipeline}
 
-使用配置部署管道，您可以在AEM環境中部署配置設定，用於維護任務、CDN規則等。
+透過設定管道，您可以在AEM環境中部署設定以進行維護任務、CDN規則等。
 
 請參閱檔案 [包含WAF規則的流量篩選規則](/help/security/traffic-filter-rules-including-waf.md) 以瞭解如何管理存放庫中的設定，以便正確部署。
 
-### 正在設定部署管道 {#configure-config-deployment}
+### 設定管道設定 {#configure-config-deployment}
 
-若要瞭解如何設定部署管道，請參閱以下檔案：
+要瞭解如何配置管道，請參閱以下檔案：
 
 * [新增生產管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#targeted-deployment)
 * [新增非生產管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#targeted-deployment)

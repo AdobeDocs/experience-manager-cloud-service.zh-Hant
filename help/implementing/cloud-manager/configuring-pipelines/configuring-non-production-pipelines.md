@@ -3,9 +3,9 @@ title: 設定非生產管道
 description: 了解如何設定非生產管道以在部署到生產環境之前測試程式碼的品質。
 index: true
 exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
-source-git-commit: ecb168e9261b3e3ed89e4cbe430b3da9f777a795
+source-git-commit: b47b1998fe716a8409d8d3cf0102e25c48828819
 workflow-type: tm+mt
-source-wordcount: '1290'
+source-wordcount: '1288'
 ht-degree: 80%
 
 ---
@@ -121,7 +121,7 @@ ht-degree: 80%
 >
 >* 如果所選環境存在 Web 層程式碼管道，則此選項會停用。
 >* 如果您將現有的完整堆疊管道部署到環境，則為同一環境建立 Web 層設定管道將忽略完整堆疊管道中的現有 Web 層設定。
-> * 在任何時候，每個環境只能有一個設定部署管道。
+> * 在任何時候，每個環境只能有一個設定管道。
 
 選擇部署型別後，完成建立非生產、目標部署管道的步驟相同。
 
@@ -145,7 +145,7 @@ ht-degree: 80%
       * 輸入分支名稱的前幾個字元，該欄位的自動完成功能。會尋找相符的分支以幫助您進行選取。
    * **程式碼位置** - 此選項會定義管道應從所選存放庫的分支中擷取程式碼的路徑。
 
-   ![設定部署管道](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-config-deployment.png)
+   ![設定管道](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-config-deployment.png)
 
 1. 按一下「**儲存**」。
 

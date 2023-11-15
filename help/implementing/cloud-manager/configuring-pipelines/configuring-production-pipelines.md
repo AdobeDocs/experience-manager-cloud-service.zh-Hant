@@ -3,9 +3,9 @@ title: 設定生產管道
 description: 了解如何設定生產管道以建置程式碼並將其部署到生產環境。
 index: true
 exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
-source-git-commit: edc5d88b4ffc4e13299d21f6579f5f52c40e0773
+source-git-commit: b47b1998fe716a8409d8d3cf0102e25c48828819
 workflow-type: tm+mt
-source-wordcount: '1420'
+source-wordcount: '1418'
 ht-degree: 80%
 
 ---
@@ -132,7 +132,7 @@ ht-degree: 80%
 >
 >* 如果所選環境存在 Web 層程式碼管道，則此選項會停用。
 >* 如果您將現有的完整堆疊管道部署到環境，則為同一環境建立 Web 層設定管道將忽略完整堆疊管道中的現有 Web 層設定。
-> * 在任何時候，每個環境只能有一個設定部署管道。
+> * 在任何時候，每個環境只能有一個設定管道。
 
 選擇部署型別後，完成建立生產、目標部署管道的步驟相同。
 
@@ -158,7 +158,7 @@ ht-degree: 80%
    * **在部署到生產之前暫停** - 此選項會在部署到生產之前暫停管道。
    * **已排程** - 此選項可讓使用者啟用已排程的產生部署。僅適用於Web層目標部署。
 
-   ![設定部署管道](/help/implementing/cloud-manager/assets/configure-pipeline/prod-pipeline-config-deployment.png)
+   ![設定管道](/help/implementing/cloud-manager/assets/configure-pipeline/prod-pipeline-config-deployment.png)
 
 1. 按一下「**儲存**」。
 
