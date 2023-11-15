@@ -433,7 +433,7 @@ ht-degree: 99%
       + [影像的顏色標記](/help/assets/color-tag-images.md)
       + [管理 PDF 文件](/help/assets/manage-pdf-documents.md)
    + 設定、管理及擴充 [!DNL Assets] {#admin}
-      + [偵測重複的資產](/help/assets/detect-duplicate-assets.md)
+      + [偵測重複資產](/help/assets/detect-duplicate-assets.md)
       + [開發人員文件和 API 參考](/help/assets/developer-reference-material-apis.md)
       + [資料夾中繼資料結構](/help/assets/folder-metadata-schema.md)
       + [使用影像和視訊設定檔](/help/assets/dynamic-media/about-image-video-profiles.md)
@@ -704,7 +704,7 @@ ht-degree: 99%
       + [將播放器指派到顯示器](/help/screens-cloud/managing-players-registration/assigning-player-display.md)
    + 使用核心產品功能 {#core-product-features}
       + [影片的縮圖支援](/help/screens-cloud/using-core-product-features/thumbnail-support-videos.md)
-      + [Screens通知服務](/help/screens-cloud/using-core-product-features/screens-notification-service.md)
+      + [Screens 通知服務](/help/screens-cloud/using-core-product-features/screens-notification-service.md)
    + 在 Screens as a Cloud Service 中進行開發 {#developing-screens-cloud}
       + [REST API](/help/screens-cloud/developing/rest-apis-screens-cloud.md)
       + [建立元件](/help/screens-cloud/developing/creating-components.md)
