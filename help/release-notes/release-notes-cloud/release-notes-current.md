@@ -3,7 +3,7 @@ title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 最新發行說明�
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 最新發行說明。'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: f1af229fa0fb75a6181eae545ac7e51b31f212f7
+source-git-commit: afb3de515336d3d13b392f8fcc4d263f4f063689
 workflow-type: tm+mt
 source-wordcount: '920'
 ht-degree: 61%
@@ -87,7 +87,7 @@ ht-degree: 61%
 
 [在Adobe管理的CDN篩選流量](/help/security/traffic-filter-rules-including-waf.md) 透過宣告規則來比對網站流量（包括url、IP位址和使用者代理程式），或設定自訂流量速率限制來防禦DoS攻擊。 客戶也可以授權一組進階的Web應用程式防火牆(WAF)規則，針對複雜的網站威脅提供額外的保護。
 
-我們鼓勵您透過以下方式熟悉流量篩選規則 [試用教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview.html)！ 它會逐步引導您設定新的Cloud Manager設定管道、在設定檔案中宣告規則，以及分析CDN記錄檔中的惡意流量。
+我們建議您透過以下方式熟悉流量篩選規則 [試用教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview.html)！ 它會逐步引導您設定新的Cloud Manager設定管道、在設定檔案中宣告規則，以及分析CDN記錄檔中的惡意流量。
 
 流量篩選規則現在適用於開發環境，並於11月逐步推出至預備和生產環境。 您可以透過傳送電子郵件至：**aemcs-waf-adopter@adobe.com**，要求提前在中繼和生產環境中存取。
 
