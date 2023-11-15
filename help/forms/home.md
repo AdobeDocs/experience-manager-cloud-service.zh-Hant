@@ -4,7 +4,7 @@ description: 探索 AEM Forms 以便產生業務可用表單、建立業務流�
 landing-page-description: 了解如何在 AEM as a Cloud Service 中使用表單。
 exl-id: aa5ef10c-ba78-4a9d-8b2b-a72a7a306888
 source-git-commit: d0e5a63896ccbeb32b565680276b461fbbf19e9c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1151'
 ht-degree: 100%
 
