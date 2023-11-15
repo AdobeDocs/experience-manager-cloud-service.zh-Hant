@@ -2,18 +2,15 @@
 title: 流量篩選規則包括 WAF 規則
 description: 設定流量篩選規則，包括 Web 應用程式防火牆 (WAF) 規則
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: 8df8322eef7c74932d6feeeb4a7a6045935edd88
+source-git-commit: a129c188e9ec6871c86245acb5f0bf0333fdc340
 workflow-type: tm+mt
-source-wordcount: '3473'
+source-wordcount: '3441'
 ht-degree: 97%
 
 ---
 
 
 # 流量篩選規則包括 WAF 規則 {#traffic-filter-rules-including-waf-rules}
-
->[!NOTE]
->此功能現在可用於開發環境，並會在11月晚些時候逐步推出至測試和生產環境。 您可以透過傳送電子郵件至：**aemcs-waf-adopter@adobe.com**，要求提前在中繼和生產環境中存取。
 
 流量篩選規則可用於封鎖或允許 CDN 層的要求，這在以下情境中可能很有用：
 
@@ -57,7 +54,7 @@ ht-degree: 97%
 
 客戶可以透過在不同層的內容傳遞流程設定規則，以採取主動式措施減輕應用程式層攻擊 (第 7 層)。
 
-例如，在 Apache 層，客戶可以設定 [Dispatcher 模組](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=zh-Hant#configuring-access-to-content-filter)或 [ModSecurity](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/modsecurity-crs-dos-attack-protection.html?lang=zh-Hant) 以限制對特定內容的存取。
+例如，在 Apache 層，客戶可以設定 [Dispatcher 模組](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#configuring-access-to-content-filter)或 [ModSecurity](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/modsecurity-crs-dos-attack-protection.html?lang=en) 以限制對特定內容的存取。
 
 如本文所述，可以使用 Cloud Manager 的設定管道將流量篩選器規則部署到 Adobe Managed CDN。除了根據 IP 位址、路徑和標頭等屬性的流量篩選規則，或根據設定速率限制的規則之外，客戶也可以授權稱為 WAF 規則的強大流量篩選規則子類別。
 
