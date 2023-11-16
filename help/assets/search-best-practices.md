@@ -3,9 +3,9 @@ title: 搜尋最佳實務 [!DNL Adobe Experience Manager] as a [!DNL Cloud Servi
 description: 搜尋、尋找及擷取應用程式中資產的中繼資料的最佳做法。
 contentOwner: KK
 exl-id: 446692de-5cea-4dbd-a98e-ec5177c7017e
-source-git-commit: 6638298056f2dae027db4df8c31c3fd59812a56b
+source-git-commit: b3b2cc516743243fbfdcf6189bfd851a1272bf78
 workflow-type: tm+mt
-source-wordcount: '2544'
+source-wordcount: '2520'
 ht-degree: 3%
 
 ---
@@ -38,11 +38,11 @@ ht-degree: 3%
 
 指定 `classic car` 作為搜尋關鍵字，然後按一下「搜尋」。 輸入關鍵字時，您可以在下拉式清單中檢視搜尋建議。 搜尋建議是根據Experience Manager部署上的搜尋索引內容而定。 如果您無法在下拉式功能表中檢視適當的資產，請按下Enter鍵以檢視結果清單。 結果會依相關性排序，從最接近的相符專案開始。
 
-![執行基本搜尋方法1](assets/simple-search-1.png)
+<!--![Performing basic search method 1](assets/simple-search-1.png)-->
 
 您可以用雙引號(「 」)新增搜尋關鍵字，讓搜尋更具體。 此搜尋僅包含同時包含指定字詞的資產。 搜尋條件看起來像 —  `"classic car"`. 因此，搜尋結果會同時包含這兩個詞語 `classic` 和 `car` 「 」會顯示。
 
-![尋找完全相符專案](assets/simple-search-2.png)
+<!--![Finding exact match](assets/simple-search-2.png)-->
 
 如果您使用的是 **[!UICONTROL 資產檢視]** 以及。
 
@@ -65,7 +65,7 @@ ht-degree: 3%
 如果要在特定資料夾中搜尋，請從路徑中選取資料夾，並導覽至所需的資料夾。
 3. 從下拉式清單中選取「檔案」，以顯示包含關鍵字的所有檔案 `classic car`.
 
-![使用檔案和資料夾進行搜尋](assets/files-folders.png)
+<!--![Search using files and folders](assets/files-folders.png)-->
 
 >[!VIDEO](https://video.tv.adobe.com/v/3425487)
 
@@ -164,7 +164,7 @@ To perform a search on such a requirement, type 'classic car' in the search bar.
 1. 選取 [!UICONTROL PDF].
 1. 前往 [!UICONTROL 狀態] > [!UICONTROL 發佈] > [!UICONTROL 已取消發佈].
 
-![篩選器範例2](assets/filter-2.png)
+<!--![Filter example 2](assets/filter-2.png)-->
 
 在中執行以下步驟 **[!UICONTROL 資產檢視]**：
 
@@ -180,7 +180,7 @@ To perform a search on such a requirement, type 'classic car' in the search bar.
 1. 前往「篩選器」。 在 [!UICONTROL 檔案型別]，展開 [!UICONTROL 影像] 並選取 [!UICONTROL 已啟用Web]
 1. 取消選取「PNG」。
 
-![搜尋除吉普以外的所有影像](assets/images-png.png)
+<!--![Search all images except jeep](assets/images-png.png)-->
 
 若要使用中提及的案例搜尋資產 **[!UICONTROL 資產檢視]**，請遵循下列步驟：
 
@@ -203,7 +203,7 @@ Adobe Experience Manager可讓您將多個條件新增至搜尋。 您可以使�
 2. 瀏覽至篩選器面板，然後選取「檔案型別」下的「檔案」。
 3. 使用星號萬用字元縮小搜尋範圍。 型別 `"classic car"` 以搜尋包含 `classic car` 關鍵字。
 
-![案例6](assets/scenario-6.png)
+<!--![Scenario 6](assets/scenario-6.png)-->
 
 案例6無法在中執行 **[!UICONTROL 資產檢視]** 因為它不支援使用萬用字元。
 
@@ -213,7 +213,7 @@ Adobe Experience Manager可讓您將多個條件新增至搜尋。 您可以使�
 
 輸入 `car - classic` 搜尋列中的關鍵字。 瀏覽至篩選器面板，然後選取「檔案型別」下的「檔案」。 搜尋的優先順序是根據下列專案：優先順序1：中繼資料優先順序2：智慧標籤
 
-![案例7](assets/scenario-7.png)
+<!--![Scenario 7](assets/scenario-7.png)-->
 
 案例7無法在中執行 **[!UICONTROL 資產檢視]** 因為它不支援使用萬用字元。
 
@@ -237,7 +237,7 @@ When you are unsure about the title or meta description of an asset, you can use
 
 您可以使用各種搜尋篩選條件來擷取特定條件。 標籤是指派給資產的關鍵字，可讓它於大量資產中識別。 例如，在此案例中，搜尋具有以下特性的資產： *吉普* 標籤中。 若要這麼做，請輸入 `tags:jeep` 於搜尋列中。 搜尋結果中只會列出符合此條件的資產。
 
-![使用標籤進行搜尋](assets/search-tags.png)
+<!--![Search using tags](assets/search-tags.png)-->
 
 如果您使用的是 **[!UICONTROL 資產檢視]** 以及。
 
