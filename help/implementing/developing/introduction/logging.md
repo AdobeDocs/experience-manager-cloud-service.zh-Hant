@@ -2,9 +2,9 @@
 title: AEMas a Cloud Service記錄
 description: 瞭解如何使用AEM的記錄as a Cloud Service來設定中央記錄服務的全域引數、個別服務的特定設定，或如何請求資料記錄。
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: 8f20876be6b01e1994fb8f91d4a1b4a113588a3e
+source-git-commit: 12bdd43b870e30984e2812baea956e06ca7c879c
 workflow-type: tm+mt
-source-wordcount: '2657'
+source-wordcount: '2683'
 ht-degree: 10%
 
 ---
@@ -523,7 +523,8 @@ AEMas a Cloud Service提供對CDN記錄的存取權，這對使用案例（包�
 "cache": "PASS",
 "status": 200,
 "res_age": 0,
-"pop": "PAR"
+"pop": "PAR",
+"rules": "match=Enable-SQL-Injection-and-XSS-waf-rules-globally,waf=SQLI,action=blocked"
 }
 ```
 
@@ -547,6 +548,8 @@ CDN記錄與其他記錄不同，因為它會遵循JSON格式。
 | *狀態* | 作為整數值的 HTTP 狀態代碼。 |
 | *res_age* | 回應已經 (在所有的節點) 快取的時間量 (以秒為單位)。 |
 | *pop* | CDN 快取伺服器的資料中心。 |
+| *rules* | 任何相符專案的名稱 [流量篩選器規則](/help/security/traffic-filter-rules-including-waf.md) 和WAF標幟，也會指出相符專案是否導致區塊。 若沒有相符的規則，則為空白。 |
+
 
 ## 如何存取記錄檔 {#how-to-access-logs}
 
