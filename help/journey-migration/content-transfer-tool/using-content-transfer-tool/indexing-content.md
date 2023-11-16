@@ -2,10 +2,10 @@
 title: 移轉內容後建立索引
 description: 瞭解移轉程式如何在目的地Cloud Service例項上為擷取的內容建立索引。
 exl-id: a13d5df4-b351-410a-9336-1b34a8af21b6
-source-git-commit: 0109cea1be85e647fb6c04dde4714b162bdc75a5
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '514'
-ht-degree: 10%
+source-wordcount: '506'
+ht-degree: 7%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 10%
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_indexing"
 >title="內容編製索引"
->abstract="AEM 編製索引是指將內容移轉到 Cloud Service 例項後編製該內容索引。必須編製索引才能支援在該例項上搜尋內容。"
+>abstract="AEM 編製索引是指將內容移轉到 Cloud Service 例項後編製該內容索引。需要編制索引以支援在該執行個體上搜尋內容。"
 
 一旦Cloud Acceleration Manager完成將內容擷取至您的Cloud Service例項中，即可使用。 一開始不會將內容編列索引，這可能會導致環境不穩定，發生無法搜尋的內容和效能降低等問題。
 為獲得執行個體上的最佳效能，移轉程式將自動開始編制內容索引。 除了監視索引進度外，沒有其他要做的事。
@@ -46,13 +46,13 @@ ht-degree: 10%
 
 ### 完成
 
-當索引工作成功時，執行個體已準備好以最佳效能使用。 此時，索引工作記錄檔將可供檢視或下載，以便進行檢查。
+當索引工作成功時，執行個體已準備好以最佳效能使用。 此時，索引工作記錄檔可供檢視或下載以進行檢查。
 
 ![影像](/help/journey-migration/content-transfer-tool/assets-indexing/complete.png)
 
 ### 錯誤次數
 
-建立目的地Cloud Service執行個體的索引很可能成功。 某些情況下，作業可能會失敗，而擷取工作列會顯示如下。 在所有情況下，將滑鼠懸停在失敗狀態上，可以找到失敗的一些詳細資訊，它可能會提供詳細資訊，幫助您決定後續步驟。 此時，索引工作記錄檔將可供檢視或下載，以幫助發現失敗的來源。 如果下一個步驟不清楚，請聯絡Adobe支援，提供擷取和索引記錄的詳細資訊。
+建立目的地Cloud Service執行個體的索引很可能成功。 某些情況下，作業可能會失敗，而擷取工作列會顯示如下。 在所有情況下，將滑鼠懸停在失敗狀態上，可以找到失敗的一些詳細資訊，它可能會提供詳細資訊，幫助您決定後續步驟。 此時，索引工作記錄檔可供檢視或下載，以協助發現失敗的來源。 如果下一個步驟不清楚，請聯絡Adobe支援，提供擷取和索引記錄的詳細資訊。
 
 ![影像](/help/journey-migration/content-transfer-tool/assets-indexing/failed.png)
 
