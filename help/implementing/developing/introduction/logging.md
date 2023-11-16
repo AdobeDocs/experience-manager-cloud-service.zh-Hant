@@ -2,10 +2,10 @@
 title: AEMas a Cloud Service記錄
 description: 瞭解如何使用AEM的記錄as a Cloud Service來設定中央記錄服務的全域引數、個別服務的特定設定，或如何請求資料記錄。
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: 12bdd43b870e30984e2812baea956e06ca7c879c
+source-git-commit: 9d1aab8f615f9e6aa9751fe978a56c915c9a8797
 workflow-type: tm+mt
-source-wordcount: '2683'
-ht-degree: 10%
+source-wordcount: '2757'
+ht-degree: 9%
 
 ---
 
@@ -556,6 +556,16 @@ CDN記錄與其他記錄不同，因為它會遵循JSON格式。
 ### 雲端環境 {#cloud-environments}
 
 您可以透過Cloud Manager介面下載，或使用命令列介面在命令列追蹤記錄，來存取雲端服務的AEMas a Cloud ServiceAdobe I/O記錄。 如需詳細資訊，請參閱 [Cloud Manager記錄檔案](/help/implementing/cloud-manager/manage-logs.md).
+
+### 其他發佈區域的記錄 {#logs-for-additional-publish-regions}
+
+如果針對特定環境啟用了其他發佈區域，則可以從Cloud Manager下載每個區域的記錄，如上所述。
+
+其他發佈區域的AEM記錄和Dispatcher記錄將在環境ID之後的前3個字母中指定區域，例如 **nld2** 在下列範例中，此範例是指位於荷蘭的其他AEM發佈執行個體：
+
+```
+cm-p7613-e12700-nld2-aem-publish-bcbb77549-5qmmt 127.0.0.1 - 07/Nov/2023:23:57:11 +0000 "HEAD /libs/granite/security/currentuser.json HTTP/1.1" 200 - "-" "Java/11.0.19"
+```
 
 ### 本機 SDK {#local-sdk}
 

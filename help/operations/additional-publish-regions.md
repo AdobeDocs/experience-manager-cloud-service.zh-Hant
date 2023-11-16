@@ -2,10 +2,10 @@
 title: 額外發佈區域
 description: 了解 AEM as a Cloud Service 如何支援額外發佈區域以提高可用性並減少延遲。
 exl-id: b9ac3c6a-eb8b-461d-8f1d-a0356046a3f9
-source-git-commit: 4f11d1958cbfb252f29a7815af8800426d945ebd
+source-git-commit: c0c669f847c9ef64b1fa22cfc24ac693c3c8ad90
 workflow-type: tm+mt
-source-wordcount: '606'
-ht-degree: 89%
+source-wordcount: '639'
+ht-degree: 84%
 
 ---
 
@@ -46,6 +46,10 @@ ht-degree: 89%
 若在已設定進階網路的計畫中啟用額外發佈區域，和進階網路規則相符的額外發佈區域中的流量會依預設路由通過主要區域。為了善用提高的可用性，建議在額外區域啟用進階網路。
 
 如需詳細資訊，請參閱進階網路文件中的[額外發佈區域的進階網路設定](/help/security/configuring-advanced-networking.md#advanced-networking-configuration-for-additional-publish-regions)章節，包括如何將進階網路設定新增到額外區域而不會失去連線能力。
+
+## 記錄 {#logging}
+
+如果啟用了其他發佈區域，將透過Cloud Manager提供每個區域的單獨日誌。 如需詳細資訊，請參閱 [存取和管理記錄檔](/help/implementing/cloud-manager/manage-logs.md) 和 [其他發佈區域的記錄](/help/implementing/developing/introduction/logging.md#logs-for-additional-publish-regions).
 
 ## 限制 {#limitations}
 
