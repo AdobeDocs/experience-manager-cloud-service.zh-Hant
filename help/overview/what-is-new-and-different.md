@@ -2,10 +2,10 @@
 title: 不同之處與新增功能 - Adobe Experience Manager as a Cloud Service
 description: 不同之處與新增功能 - Adobe Experience Manager (AEM) as a Cloud Service。
 exl-id: d1ce126e-960c-4367-b741-af709dd81010
-source-git-commit: 83b5d9a3ff0e9a3c69e36a97a3f733b05f827d3b
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1897'
-ht-degree: 99%
+source-wordcount: '1895'
+ht-degree: 98%
 
 ---
 
@@ -144,7 +144,7 @@ Cloud Manager 在跨多個地理區域的資料中心建立環境，使用範圍
 
 * 部署要求：
 
-   * 程式碼更新；為舊版 AEM 開發的任何客戶應用程式都需要審查並可能進行更新。
+   * 程式碼更新；針對舊版AEM開發的任何客戶應用程式都必須經過審查，且可能需進行更新。
 
    * 內容移轉
 

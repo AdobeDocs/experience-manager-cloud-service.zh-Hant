@@ -2,9 +2,9 @@
 title: 管理內容片段（資產 — 內容片段）
 description: 瞭解如何使用Assets主控台來管理您的AEM內容片段，這是Headless內容的基礎。
 exl-id: 333ad877-db2f-454a-a3e5-59a936455932
-source-git-commit: 2a4538ad8b52615ffdee110393bfbc01f57694f4
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1877'
+source-wordcount: '1873'
 ht-degree: 9%
 
 ---
@@ -141,7 +141,7 @@ ht-degree: 9%
    * 按一下/點選片段或片段連結（這取決於主控台檢視）。
    * 選取片段，然後 **編輯** 工具列中的。
 
-1. 片段編輯器將會開啟。 視需要進行變更：
+1. 片段編輯器隨即開啟。 視需要進行變更：
 
    ![片段編輯器](assets/cfm-managing-03.png)
 
@@ -185,7 +185,7 @@ ht-degree: 9%
 
 * 在片段名稱下方，您可以看到 [內容片段模型](/help/assets/content-fragments/content-fragments-models.md) 用於建立目前的片段：
 
-   * 此名稱也是將開啟模型編輯器的連結。
+   * 該名稱也是開啟模型編輯器的連結。
 
 * 檢視片段的狀態；例如，建立、修改或發佈時間的相關資訊。 狀態也以色彩標示：
 
@@ -199,7 +199,7 @@ ht-degree: 9%
 
   >[!WARNING]
   >
-  >新編輯器將在同一標籤中開啟。 不建議同時開啟兩個編輯器。
+  >新編輯器即會在相同標籤中開啟。 不建議同時開啟兩個編輯器。
 
 * **儲存** 提供對的存取 **儲存並關閉** 選項。
 

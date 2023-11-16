@@ -2,10 +2,10 @@
 title: 計畫和計畫類型
 description: 了解 Cloud Manager 的階層以及不同類型的計畫如何適應其結構以及它們之間的差異。
 exl-id: 507df619-a5b5-419a-9e38-db77541425a2
-source-git-commit: fc14675e47e7a61bf36acb9a16756a593189b702
-workflow-type: ht
-source-wordcount: '520'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '519'
+ht-degree: 93%
 
 ---
 
@@ -33,7 +33,7 @@ Cloud Manager 是圍繞實體階層建置的。這方面的詳細資訊對您在
 
 Cloud Manager 計畫將自動佈建自己的 Git 存放庫。
 
-要存取 Cloud Manager Git 存放庫，使用者需要使用具有命令行工具的 Git 用戶端、獨立的是絕畫 Git 用戶端或使用者選擇的 IDE，例如 Eclipse、IntelliJ 或 NetBeans。
+若要存取Cloud Manager Git存放庫，使用者需要使用具有命令列工具的Git使用者端、獨立的可視Git使用者端或使用者選擇的IDE，例如Eclipse、IntelliJ或NetBeans。
 
 設定 Git 用戶端後，您可以從 Cloud Manager 使用者介面管理您的 Git 存放庫。若要了解如何使用 Cloud Manager 使用者介面管理 Git，請參閱[存取 Git](/help/implementing/cloud-manager/managing-code/accessing-repos.md)。
 

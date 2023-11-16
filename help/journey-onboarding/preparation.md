@@ -2,10 +2,10 @@
 title: 入門準備
 description: 在開始入門流程之前，系統管理員在登入系統前必須了解一些準備步驟。
 exl-id: 86139b1a-c22a-4716-a0f9-cf142cbc6c53
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '763'
-ht-degree: 100%
+source-wordcount: '762'
+ht-degree: 96%
 
 ---
 
@@ -88,4 +88,4 @@ Adobe 代表人員包括：
 * 該合約如何影響入門流程。
 * 如何準備您的入門諮詢電話服務。
 
-現在您已經熟悉了這些準備步驟，可以準備登入系統了。但首先，您需要從系統管理員的角度簡要概觀 AEM as a Cloud Service 的結構，並了解一些重要的術語。請繼續下一段歷程，[ AEM as a Cloud Service 術語](terminology.md)。
+現在您已經熟悉了這些準備步驟，可以準備登入系統了。但首先，您需要從系統管理員的角度簡要總覽AEMas a Cloud Service的結構，並瞭解一些重要的術語。 請繼續下一段歷程，[ AEM as a Cloud Service 術語](terminology.md)。

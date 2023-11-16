@@ -4,10 +4,10 @@ description: 了解如何在 Admin Console 中建立使用者設定檔來管理�
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: 4edecfcd-6301-4a46-98c7-eb5665f48995
-source-git-commit: afb20efe8ed078a508f828c5df4e079f99dfab21
-workflow-type: ht
-source-wordcount: '989'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '985'
+ht-degree: 96%
 
 ---
 
@@ -38,7 +38,7 @@ Adobe 有時需要就 AEM as a Cloud Service 環境聯絡使用者。除了產�
 
 ## 建立新的 Cloud Manager 產品設定檔 {#create-profiles}
 
-要正確設定接收通知，您需要建立兩個使用者設定檔。這些步驟只能執行一次。
+若要正確設定接收通知，請建立兩個使用者設定檔。 這些步驟只執行一次。
 
 1. 請上 [`https://adminconsole.adobe.com` 登入 Admin Console。](https://adminconsole.adobe.com)
 
@@ -52,7 +52,7 @@ Adobe 有時需要就 AEM as a Cloud Service 環境聯絡使用者。除了產�
 
    ![Admin Console 中的執行個體清單](assets/cloud_manager_instance.png)
 
-1. 您將看到所有已設定的 Cloud Manager 產品設定檔清單。
+1. 您可以檢視所有已設定的Cloud Manager產品設定檔清單。
 
    ![Admin Console 中的產品設定檔](assets/cloud_manager_profiles.png)
 

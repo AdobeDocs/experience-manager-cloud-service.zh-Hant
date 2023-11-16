@@ -2,16 +2,16 @@
 title: AEM as a Cloud Service 技術
 description: 在您登入 AEMaaCS 之前，了解系統的一些術語及其基本結構會很有幫助。
 exl-id: d02776a7-836a-4894-a5d5-ae88cc7e4e76
-source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '463'
-ht-degree: 100%
+source-wordcount: '461'
+ht-degree: 87%
 
 ---
 
 # AEM as a Cloud Service 技術 {#terminology}
 
-在此[入門歷程](overview.md)部分，您將了解 AEM as a Cloud Service 的一些術語及其基本結構。
+在這部分中 [入門歷程，](overview.md) 您會瞭解AEMas a Cloud Service的一些術語及其基本結構。
 
 ## 目標 {#objective}
 
@@ -53,4 +53,4 @@ AEM as a Cloud Service 是一種功能強大且靈活的工具，要使用任何
 * 構成 AEMaaCS 的不同層。
 * 每層的基本功能。
 
-在此基礎上繼續您的 AEM 入門歷程，接下來閱讀文件[存取 Admin Console](admin-console.md)，您將在其中了解如何存取主控台，並驗證您身為系統管理員的身分。
+在此基礎上繼續您的AEM入門歷程，接下來閱讀檔案 [存取Admin Console](admin-console.md)，瞭解如何存取主控台及驗證您作為系統管理員的狀態。

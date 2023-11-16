@@ -2,10 +2,10 @@
 title: UI 測試
 description: 自訂 UI 測試是一項選擇性功能，可讓您為自訂應用程式建立和自動執行 UI 測試。
 exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '2389'
-ht-degree: 100%
+source-wordcount: '2385'
+ht-degree: 99%
 
 ---
 
@@ -183,7 +183,7 @@ UI 測試是每個 Cloud Manager 管道特定品質把關程序的一環，在[�
 
 >[!NOTE]
 >
->如果您的專案不包含此行，則需要編輯檔案以選擇進行 UI 測試。
+>如果您的專案不包含此行，請編輯檔案以選擇進行UI測試。
 >
 >該檔案可能包含一條建議不要編輯它的行。這是因為在採用選擇加入的 UI 測試之前，便已採用此項目，而客戶不打算編輯該檔案。您可以安心忽略這件事。
 

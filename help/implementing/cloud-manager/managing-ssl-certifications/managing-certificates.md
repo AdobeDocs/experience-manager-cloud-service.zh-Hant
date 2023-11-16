@@ -2,10 +2,10 @@
 title: 管理 SSL 憑證
 description: 了解如何使用 Cloud Manager 檢查 SSL 憑證的狀態以及如何編輯、取代、更新和刪除它們。
 exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: ht
-source-wordcount: '644'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '637'
+ht-degree: 84%
 
 ---
 
@@ -33,7 +33,7 @@ ht-degree: 100%
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織和計畫。
 1. 從&#x200B;**概觀**&#x200B;頁面瀏覽到&#x200B;**環境**&#x200B;畫面。
 1. 從&#x200B;**環境**&#x200B;畫面瀏覽到 **SSL** 憑證。
-1. 您將看到一個表格，其中一列顯示已成功安裝在計畫中的每個 SSL 憑證。按一下要更新的憑證列最右側的省略符號按鈕，然後選擇&#x200B;**檢視和更新**。
+1. 您可以看到一個表格，其中一列包含已成功安裝在計畫中的每個SSL憑證。 按一下要更新的憑證列最右側的省略符號按鈕，然後選取 **檢視和更新**.
 1. 憑證詳細資訊隨即顯示並可進行更新。
 1. 執行管道以部署更新的憑證。
 
@@ -56,7 +56,7 @@ Cloud Manager 不允許您刪除與一個或多個網域相關聯的 SSL 憑證�
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織和計畫。
 1. 從&#x200B;**概觀**&#x200B;頁面瀏覽到&#x200B;**環境**&#x200B;畫面。
 1. 從&#x200B;**環境**&#x200B;畫面瀏覽到 **SSL** 憑證。
-1. 您將看到一個表格，其中一列包含已成功安裝在計畫中的每個 SSL 憑證。按一下要刪除的憑證列最右側的省略符號按鈕，然後選擇&#x200B;**刪除**。
+1. 您可以看到一個表格，其中一列包含已成功安裝在計畫中的每個SSL憑證。 按一下要刪除的憑證列最右側的省略符號，然後選取 **刪除**.
 1. 在&#x200B;**刪除 SSL 憑證**&#x200B;對話框中確認刪除。
 1. 執行管道以取消部署已刪除的憑證。
 

@@ -2,10 +2,10 @@
 title: 在內容轉移工具中檢視移轉集記錄
 description: 在內容轉移工具中檢視移轉集記錄
 exl-id: aed1ac83-a2fb-425e-aca4-39cd0bb42fd3
-source-git-commit: 9d236e459f13fec6f0aaf80f588d20760636b9bb
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '246'
-ht-degree: 39%
+source-wordcount: '244'
+ht-degree: 40%
 
 ---
 
@@ -38,6 +38,6 @@ ht-degree: 39%
 
 ### 內嵌記錄
 
-若要檢視內嵌記錄，請前往Cloud Acceleration Manager中的內嵌工作清單，然後找到所需的移轉工作，並按一下三個點(**...**)。 然後您可以按一下 **下載記錄** 以下載記錄檔。
+若要檢視內嵌記錄，請前往Cloud Acceleration Manager中的內嵌工作清單，然後尋找所需的移轉工作，並按一下三個點(**...**)。 然後您可以按一下 **下載記錄** 以下載記錄檔。
 
 ![影像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam28.png)

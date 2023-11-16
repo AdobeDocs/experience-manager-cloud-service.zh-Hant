@@ -2,9 +2,9 @@
 title: 您的收件匣
 description: 瞭解如何使用到達收件匣的通知來管理您的工作。
 exl-id: 37d0cf43-192f-4a50-b174-42d7dced3b63
-source-git-commit: 31e6ec8e9977c8787e14481ee3a94df767262aec
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '914'
+source-wordcount: '912'
 ht-degree: 17%
 
 ---
@@ -47,7 +47,7 @@ ht-degree: 17%
 
 1. 按一下/點選工具列中的指示器。
 
-1. 選擇「 **全部查看**」。「 **AEM收件匣** 」將會開啟。收件匣會顯示工作流程、專案和工作中的項目。
+1. 選擇「 **全部查看**」。此 **AEM收件匣** 隨即開啟。 收件匣會顯示工作流程、專案和工作中的項目。
 1. 預設視圖是「列 [表視圖](#inbox-list-view)」，但您也可以切換到「日 [歷視圖」](#inbox-calendar-view)。這是使用檢視選取器 (工具列，右上方) 完成。
 
    對於這兩個檢視，您也可以定義 [檢視設定](#inbox-view-settings). 可用的選項取決於目前檢視。
@@ -142,7 +142,7 @@ ht-degree: 17%
    * 已啟動動作精靈
    * 檔案頁面已開啟
 
-   例如， **委派** 將會開啟對話方塊：
+   例如， **委派** 開啟對話方塊：
 
    ![委派收件匣任務](/help/sites-cloud/authoring/assets/inbox-assign-task.png)
 

@@ -2,16 +2,16 @@
 title: 存取 Admin Console
 description: 一旦您了解了上線所需的準備工作和 AEMaaCS 結構的基礎知識，您就可以首次登入 Admin Console 了。
 exl-id: 0ccce328-a356-4ba9-b7fe-f67abc25b924
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: ht
-source-wordcount: '1104'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '1098'
+ht-degree: 90%
 
 ---
 
 # 存取 Admin Console {#accessing-admin-console}
 
-在這部分[上線歷程，](overview.md)您將了解在首次登入系統之前所需的準備工作。
+在這部分中 [入門歷程，](overview.md) 瞭解首次登入系統之前所需的準備工作。
 
 ## 目標 {#objective}
 
@@ -30,7 +30,7 @@ Adobe Admin Console 是管理您的 Adobe 產品授權和使用者的中心位�
 
 ## Adobe ID {#adobe-id}
 
-若要登入 Admin Console，您需要一個 Adobe ID。Adobe ID 是與特定電子郵件地址綁定的帳戶，需要登入和存取 AEM as a Cloud Service 或您的任何 Adobe 解決方案。透過使用您的 Adobe ID，您可以將所有 Adobe 計畫和產品與一個帳戶相關聯。
+若要登入Admin Console，您需要Adobe ID。 Adobe ID 是與特定電子郵件地址綁定的帳戶，需要登入和存取 AEM as a Cloud Service 或您的任何 Adobe 解決方案。透過使用您的 Adobe ID，您可以將所有 Adobe 計畫和產品與一個帳戶相關聯。
 
 當您作為系統管理員在 Admin Console 中設定您的團隊時，您指定作為 Adobe ID 的電子郵件地址。
 
@@ -50,11 +50,11 @@ Adobe Admin Console 是管理您的 Adobe 產品授權和使用者的中心位�
 
 1. 作為系統管理員，您將在上線流程中收到來自 Adobe 的多封電子郵件。查找提供有關您已被授予存取權限的組織名稱資訊的歡迎電子郵件。
 
-1. 按一下&#x200B;**開始使用**&#x200B;歡迎電子郵件中的鏈接以瀏覽到 Admin Console。如果找不到電子郵件，請直接開啟瀏覽器存取 Admin Console，網址為 [`https://adminconsole.adobe.com`](https://adminconsole.adobe.com)。
+1. 按一下 **開始使用** 歡迎電子郵件中的連結，以導覽至Admin Console。 如果找不到電子郵件，請直接開啟瀏覽器存取 Admin Console，網址為 [`https://adminconsole.adobe.com`](https://adminconsole.adobe.com)。
 
    ![歡迎電子郵件](/help/journey-onboarding/assets/get-started-email.png)
 
-1. 使用 Adobe ID 登入。登入成功後會看到&#x200B;**概觀** Adobe Admin Console 頁面。
+1. 使用 Adobe ID 登入。登入成功後，您會看到 **概觀** Adobe Admin Console頁面。
 
    ![Admin Console](/help/journey-onboarding/assets/get-started1.png)
 
@@ -66,7 +66,7 @@ Adobe Admin Console 是管理您的 Adobe 產品授權和使用者的中心位�
 
    ![審視管理員](/help/journey-onboarding/assets/get-started2.png)
 
-1. 一旦你按一下&#x200B;**管理員**&#x200B;來自&#x200B;**使用者**&#x200B;卡，您可以透過輸入您的 Adobe ID 電子郵件、使用者名、名字或姓氏進行搜索。
+1. 在您按一下 **管理員** 從 **使用者** 卡片，您可以透過輸入您的Adobe ID電子郵件、使用者名稱、名字或姓氏進行搜尋。
 
    ![搜尋使用者](/help/journey-onboarding/assets/get-started3.png)
 
@@ -82,7 +82,7 @@ AEM as a Cloud Service預配置了 Adobe Identity Management 系統 (也稱為 I
 
 透過使用 IMS，AEM as a Cloud Service整合了 AEM 與 Adobe Experience Cloud 其餘部分之間的登入體驗。擁有多個 Adobe 產品的組織尤其受益於在 Admin Console 中建立基於角色的組，然後透過 IMS 指派對多個產品 (包括 AEM as a Cloud Service) 的存取權限。
 
-您將在此上線歷程的下一部分中了解有關產品設定檔和指派使用者的更多資訊。
+在接下來的入門歷程中，您將瞭解有關產品設定檔和指派使用者的更多資訊。
 
 ## 連絡 Adobe 支援人員 {#support}
 

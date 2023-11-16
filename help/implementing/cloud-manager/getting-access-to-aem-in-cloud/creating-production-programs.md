@@ -2,10 +2,10 @@
 title: 建立生產計畫
 description: 了解如何使用 Cloud Manager 建立您自己的生產計畫來主持即時流量。
 exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
-source-git-commit: ecb168e9261b3e3ed89e4cbe430b3da9f777a795
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '604'
-ht-degree: 88%
+source-wordcount: '601'
+ht-degree: 73%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 88%
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織。
 
-1. 從畫面的右上角，按一下&#x200B;**新增計畫**。
+1. 按一下 **新增計畫** 從畫面的右上角。
 
    ![Cloud Manager 登陸頁面](assets/log-in.png)
 
@@ -49,7 +49,7 @@ ht-degree: 88%
 
    ![選取解決方案](assets/setup-prod-select.png)
 
-1. 按一下解決方案名稱前的 > 形圖示，即可顯示選用的附加元件，例如選擇&#x200B;**商務**&#x200B;下的附加選項 **Sites**。
+1. 按一下解決方案名稱前的>形圖示，即可顯示選用的附加元件，例如選取 **商務** 下的附加選項 **網站**.
 
    ![選取附加元件](assets/setup-prod-commerce.png)
 
@@ -70,7 +70,7 @@ ht-degree: 88%
 
 ## 存取你的計畫 {#accessing}
 
-1. 在登陸頁面上看到您的計畫卡後，選擇省略符號按鈕以查看可供您使用的選單選項。
+1. 當您在登陸頁面上看到您的計畫卡時，選擇省略符號按鈕以檢視您可以使用的選單選項。
 
    ![計畫概觀](assets/program-overview.png)
 
@@ -80,7 +80,7 @@ ht-degree: 88%
 
    ![計畫概觀](assets/set-up-prod5.png)
 
-如果您在任何時候需要切換到另一個計畫或返回概覽頁面來建立另一個計畫，請按一下畫面左上角的計畫名稱以顯示&#x200B;**瀏覽**&#x200B;選項。
+如果您在任何時候需要切換到另一個計畫或返回概覽頁面來建立另一個計畫，請按一下畫面左上角的計畫名稱以顯示 **瀏覽至** 選項。
 
 ![瀏覽到](assets/create-program-a1.png)
 

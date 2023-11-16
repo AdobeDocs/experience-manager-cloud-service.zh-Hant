@@ -2,9 +2,9 @@
 title: 製作環境和工具
 description: AEM的製作環境提供各種機制來組織和編輯您的內容
 exl-id: cc3bd4cf-93bd-429d-9a2a-4a02a7b42f7c
-source-git-commit: ccd4206f029ac77b90f731891ac300c5d3849ef8
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '2166'
+source-wordcount: '2164'
 ht-degree: 11%
 
 ---
@@ -73,7 +73,7 @@ AEM的製作環境提供各種機制來組織和編輯您的內容。 提供的�
 
   元件瀏覽器會在視窗左側開啟。
 
-  若要將元件新增至頁面，請按一下所需元件，然後將其拖曳至所需位置。
+  若要將元件新增至頁面，請按一下所需元件，並將其拖曳至所需位置。
 
   ![案頭上的元件瀏覽器](/help/sites-cloud/authoring/assets/component-browser-desktop.png)
 

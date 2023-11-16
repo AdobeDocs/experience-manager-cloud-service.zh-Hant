@@ -2,10 +2,10 @@
 title: AEM Headless 翻譯快速入門
 description: 了解如何組織 Headless 內容以及 AEM 翻譯工具的運作原理。
 exl-id: 04ae2cd6-aba3-4785-9099-2f6ef24e1daf
-source-git-commit: f4e28d89023e8f326e6816ebd8168e1e31e772ce
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1425'
-ht-degree: 100%
+source-wordcount: '1422'
+ht-degree: 96%
 
 ---
 
@@ -80,7 +80,7 @@ AEM 的內容，無論是 Headless 網頁還是傳統網頁，都是由其結構
 
 1. 導覽至&#x200B;**工具** -> **一般** -> **內容片段模型**。
 1. 內容片段模型通常儲存在資料夾結構中。點選或按一下專案的資料夾。
-1. 模型隨即列出。點選或按一下模型以查看詳細資料。
+1. 模型隨即列出。點選或按一下模型以檢視詳細資料。
    ![內容片段模型](assets/content-fragment-models.png)
 1. **內容片段模型編輯器**&#x200B;開啟。
    1. 左欄包含模型的欄位。我們對此欄感興趣。
@@ -178,7 +178,7 @@ AEM 的內容，無論是 Headless 網頁還是傳統網頁，都是由其結構
 * 了解 AEM 如何儲存 Headless 內容。
 * 熟悉 AEM 的翻譯工具。
 
-以這些知識為基礎，接下來查看文件[設定翻譯整合](configure-connector.md)以繼續您的 AEM Headless 翻譯歷程，您將在此文件了解如何將 AEM 連接到翻譯服務。|
+在此基礎上繼續您的AEM Headless翻譯歷程，接下來檢閱檔案 [設定翻譯整合](configure-connector.md) 您可在其中學習如何將AEM連結至翻譯服務。|
 
 ## 其他資源 {#additional-resources}
 

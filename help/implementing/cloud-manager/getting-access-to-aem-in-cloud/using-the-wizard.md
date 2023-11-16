@@ -2,10 +2,10 @@
 title: 專案建立精靈
 description: 了解專案建立精靈，以幫助您在建立生產計畫後快速設定專案。
 exl-id: 03736ca7-1345-4faf-a61a-f9213ab5c89a
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '312'
-ht-degree: 100%
+source-wordcount: '311'
+ht-degree: 96%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 100%
 
    ![建立分支和專案](assets/create-wizard2.png)
 
-1. 或者，按一下分隔線以顯示專案的其他參數。預設值由 AEM Project Archetype 提供，通常不需要變更。
+1. 或者，按一下分隔線以顯示專案的其他引數。 預設值由 AEM Project Archetype 提供，通常不需要變更。
 
    ![其他專案參數](assets/create-wizard5.png)
 

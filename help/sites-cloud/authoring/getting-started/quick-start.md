@@ -2,9 +2,9 @@
 title: 編寫頁面的快速入門手冊
 description: 快速高階指南，協助您開始編寫頁面內容
 exl-id: d37c9b61-7382-4bf6-8b90-59726b871264
-source-git-commit: 53d4e22805774c0b994ee2bba429c19506639014
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1568'
+source-wordcount: '1561'
 ht-degree: 6%
 
 ---
@@ -168,7 +168,7 @@ ht-degree: 6%
 
    >[!NOTE]
    >
-   >您可以 **貼上** 元件至相同頁面或不同頁面。 如果貼上至剪下/復製作業前已開啟的其他頁面，則需要重新整理該頁面。
+   >您可以 **貼上** 元件至相同頁面或不同頁面。 如果貼上至剪下/復製作業前已開啟的其他頁面，該頁面需要重新整理。
 
    * [刪除](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) 元件：
 
@@ -258,7 +258,7 @@ ht-degree: 6%
 
    * [移動](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#moving-or-renaming-a-page):
 
-      * 精靈將會開啟，以收集移動頁面所需的資訊。 請依照熒幕上的指示操作。
+      * 精靈會開啟，以收集移動頁面所需的資訊。 請依照熒幕上的指示操作。
 
    * [刪除](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#deleting-a-page):
 
@@ -292,7 +292,7 @@ ht-degree: 6%
 
    ![引用檢視](/help/sites-cloud/authoring/assets/references-list.png)
 
-1. 點選/按一下所需的參考型別以顯示更多詳細資訊，並（在適當時）採取進一步動作。
+1. 點選/按一下所需的參考型別以顯示更多詳細資料，並（在適當時）採取進一步動作。
 
 ### 建立頁面的版本 {#creating-a-version-of-your-page}
 

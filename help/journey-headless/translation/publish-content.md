@@ -2,10 +2,10 @@
 title: 發佈翻譯的 Headless 內容
 description: 了解如何發佈翻譯的內容，並在內容更新時更新翻譯。
 exl-id: eb8d1152-ed37-47ca-86a8-6a66c010ee62
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1389'
-ht-degree: 100%
+source-wordcount: '1387'
+ht-degree: 97%
 
 ---
 
@@ -95,7 +95,7 @@ ht-degree: 100%
 1. 導覽至&#x200B;**導覽** -> **資產** -> **檔案**。請記住，AEM 中的 Headless 內容儲存成資產 (稱為內容片段)。
 1. 選取專案的語言根。在此情況下，我們已選取 `/content/dam/wknd/en`。
 1. 點選或按一下邊欄選擇器並顯示&#x200B;**參考**&#x200B;面板。
-1. 點選或按一下&#x200B;**語言副本**。
+1. 點選或按一下 **語言副本**.
 1. 勾選&#x200B;**語言副本**&#x200B;核取方塊。
 1. 展開參考面板底部的&#x200B;**更新語言副本**&#x200B;區段。
 1. 在&#x200B;**專案**&#x200B;下拉選單中，選取&#x200B;**新增至現有翻譯專案**。
@@ -137,7 +137,7 @@ ht-degree: 100%
 
    ![選取目標語言](assets/select-target-language.png)
 
-1. 設定好新翻譯工作的目標語言後，點選或按一下工作卡片底部的省略符號按鈕可檢視工作的詳細資料。
+1. 設定好新翻譯工作的目標語言後，點選或按一下工作卡片底部的省略符號按鈕以檢視工作的詳細資訊。
 1. 工作首次建立時是空的。點選或按一下&#x200B;**新增**&#x200B;按鈕並使用路徑瀏覽器[新增內容到工作，就像最初建立翻譯專案時的做法一樣。](translate-content.md##manually-creating)
 
 >[!TIP]

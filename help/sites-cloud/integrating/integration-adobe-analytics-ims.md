@@ -2,10 +2,10 @@
 title: 與 Adobe Analytics 整合時使用的 IMS 設定
 description: 瞭解與Adobe Analytics整合時使用的IMS設定
 exl-id: 12bd1573-373a-4001-be71-c8f155ef6896
-source-git-commit: d59559d38eef182723a8791c6614d03930f64a85
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '914'
-ht-degree: 4%
+source-wordcount: '911'
+ht-degree: 6%
 
 ---
 
@@ -145,7 +145,7 @@ ht-degree: 4%
 * API
    * 例如，Adobe Analytics
 
-您需要其中的一些功能，才能在AEM中根據IMS完成Adobe Analytics的整合。
+其中部分專案您必須根據IMS在AEM中完成Adobe Analytics的整合。
 
 ## 在AEM中完成IMS設定 {#completing-the-ims-configuration-in-aem}
 
@@ -187,7 +187,7 @@ ht-degree: 4%
 
    ![IMS設定 — 檢查健康狀態](assets/integrate-analytics-ims-12.png)
 
-1. 如果成功，您將看到一則確認訊息。
+1. 如果成功，您會看到一則確認訊息。
 
 ## 完成與Adobe Analytics的整合 {#complete-the-integration-with-adobe-analytics}
 
@@ -201,7 +201,7 @@ The configuration can now be referenced for a Cloud Service to use the Analytics
 1. Open the **Tools** menu. Then, within the **Cloud Services** section, select **Legacy Cloud Services**.
 1. Scroll down to **Adobe Analytics** and select **Configure now**.
 
-   The **Create Configuration** dialog will open.
+   The **Create Configuration** dialog opens.
 
 1. Enter a **Title** and, if you want, a **Name** (if left blank, it is generated from the title).
 
@@ -209,7 +209,7 @@ The configuration can now be referenced for a Cloud Service to use the Analytics
 
 1. Confirm with **Create**.
 
-   The **Edit Component** dialog will open.
+   The **Edit Component** dialog opens.
 
 1. Enter the details in the **Analytics Settings** tab:
 

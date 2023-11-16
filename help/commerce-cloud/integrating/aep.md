@@ -11,16 +11,16 @@ level: Beginner
 kt: 10834
 thumbnail: 346811.jpeg
 exl-id: 30bb9b2c-5f00-488e-ad5c-9af7cd2c4735
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '2076'
+source-wordcount: '2074'
 ht-degree: 1%
 
 ---
 
 # AEM-CIF核心元件與Adobe Experience Platform整合 {#aem-cif-aep-integration}
 
-此 [Commerce Integration框架(CIF)](https://github.com/adobe/aem-core-cif-components) 核心元件提供緊密整合，與 [Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-overview.html?lang=en) 透過使用者端互動(例如 __加入購物車__.
+此 [Commerce integration framework(CIF)](https://github.com/adobe/aem-core-cif-components) 核心元件提供緊密整合，與 [Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-overview.html?lang=en) 透過使用者端互動(例如 __加入購物車__.
 
 此 [AEM CIF Core Components](https://github.com/adobe/aem-core-cif-components) 專案提供稱為的JavaScript程式庫 [Adobe Commerce的Adobe Experience Platform聯結器](https://github.com/adobe/aem-core-cif-components/tree/master/extensions/experience-platform-connector) 以從Commerce店面收集事件資料。 該事件資料會傳送至Experience Platform，並用於其他Adobe Experience Cloud產品(例如Adobe Analytics和Adobe Target)，以建置涵蓋客戶歷程的360度設定檔。 透過將Commerce資料連線到Adobe Experience Cloud中的其他產品，您可以執行分析網站上的使用者行為、執行AB測試和建立個人化行銷活動等工作。
 
@@ -226,7 +226,7 @@ npm i --save @adobe/aem-core-cif-experience-platform-connector --force
 
    >[!IMPORTANT]
    >
-   >雖然您可能已經熟悉 [`config.js`](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.frontend/src/main/components/App/config.js) 檔案來源 __AEM Guides - CIF Venia Project__，您需要對此檔案進行一些變更。 首先，檢閱任何 __待辦事項__ 評論。 然後，在內部 `eventsCollector` 屬性，尋找 `eventsCollector > aed` 物件並更新 `orgId` 和 `datastreamId` 屬性至正確的值。 [深入了解](./aep.md#add-aep-values-to-aem)。
+   >雖然您可能已經熟悉 [`config.js`](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.frontend/src/main/components/App/config.js) 檔案來源 __AEM Guides - CIF Venia專案__，您需要對此檔案進行一些變更。 首先，檢閱任何 __待辦事項__ 評論。 然後，在內部 `eventsCollector` 屬性，尋找 `eventsCollector > aed` 物件並更新 `orgId` 和 `datastreamId` 屬性至正確的值。 [深入了解](./aep.md#add-aep-values-to-aem)。
 
 1. 建立 `App.js` 檔案包含下列內容。 此檔案類似典型的React應用程式起點檔案，並包含React和自訂鉤點以及React Context使用方式，以促進Experience Platform整合。
 
@@ -438,9 +438,9 @@ npm i --save @adobe/aem-core-cif-experience-platform-connector --force
 
 1. 從網站頁面，選取 __我的示範StoreFront >我們> en__ 頁面並按一下 __編輯__ 在頂端動作列中。
 
-1. 在頂端動作列中，按一下 __以發佈的形式檢視__，然後在店面導覽中按一下任何偏好的類別。
+1. 在頂端動作列中，按一下 __以發佈的形式檢視__，然後按一下店面導覽列中的任何偏好類別。
 
-1. 按一下任何偏好產品卡 __產品頁面__，然後選取 __顏色，大小__ 以啟用 __加入購物車__ 按鈕。
+1. 按一下中任何偏好產品卡 __產品頁面__，然後選取 __顏色，大小__ 以啟用 __加入購物車__ 按鈕。
 
 
 1. 開啟 __Adobe Experience Platform Debugger__ 從瀏覽器的擴充功能面板選取「 」 __Experience Platform週三SDK__ 在左側邊欄中。

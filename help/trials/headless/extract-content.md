@@ -4,10 +4,10 @@ description: 了解如何將內容片段和 GraphQL API 用作 Headless 內容�
 hidefromtoc: true
 index: false
 exl-id: f5e379c8-e63e-41b3-a9fe-1e89d373dc6b
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1085'
-ht-degree: 100%
+source-wordcount: '1076'
+ht-degree: 94%
 
 ---
 
@@ -163,7 +163,7 @@ ht-degree: 100%
 
    >[!NOTE]
    >
-   >如果您沒有使用前面單元中提到的相同欄位描述，您將需要更新此查詢中的欄位名稱。
+   >如果您未使用先前模組中描述的相同欄位說明，請更新此查詢中的欄位名稱。
    >
    >使用前面提到的 GraphQL 自動完成 (Ctrl+空格鍵或 Option+空格鍵) 功能來協助識別可用屬性。
 
@@ -183,7 +183,7 @@ ht-degree: 100%
 
 1. 如畫面底部的橫幅訊息所確認，查詢已保留。該查詢現在也出現在視窗中的左側持續性查詢面板。
 
-1. 為了使持續性查詢公開可用，需要將其發佈，就像您的內容片段需要發佈一樣。在查詢編輯器右上方，按一下「**發佈**」按鈕以發佈查詢。
+1. 若要讓持續查詢可公開使用，需要發佈它，就像需要發佈您的內容片段一樣。 按一下 **發佈** 在查詢編輯器的右上角以發佈查詢。
 
 1. 橫幅通知中會確認這項發佈。
 

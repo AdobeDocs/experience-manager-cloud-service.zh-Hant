@@ -1,13 +1,13 @@
 ---
 title: 管理標記
 description: 了解如何在 AEM 中管理標記，以便整理您的內容。
-source-git-commit: af60a2b8f1e2dd7fc55247ecb0251d7b85f63eb3
-workflow-type: ht
-source-wordcount: '2272'
-ht-degree: 100%
+exl-id: 42480699-b7a7-4678-a763-569a9b7573e2
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '2268'
+ht-degree: 98%
 
 ---
-
 
 # 管理標記 {#administering-tags}
 
@@ -153,7 +153,7 @@ Be sure to [apply permissions](#setting-tag-permissions) to the namespace before
 
 ## 管理標記 {#managing-tags}
 
-為了管理和編排現有標記和命名空間，您可以採取的動作有許多種。只需在[標記主控台](#tagging-console)中選取標記或命名空間，即可在工具列中顯示為可用的動作。
+您可以對現有標籤和名稱空間執行許多操作，以管理和組織這些標籤和名稱空間。 只需在[標記主控台](#tagging-console)中選取標記或命名空間，即可在工具列中顯示為可用的動作。
 
 * [檢視屬性](#viewing-tag-properties)
 * [編輯](#editing-tags)
@@ -207,7 +207,7 @@ Be sure to [apply permissions](#setting-tag-permissions) to the namespace before
 
 ### 取消發佈標記 {#unpublishing-tags}
 
-為了停用作者執行個體上的標記並將其從發佈執行個體中移除，您可以將其取消發佈。
+若要停用作者執行個體上的標籤並將其從發佈執行個體中移除，您可以將其取消發佈。
 
 1. 若要取消發佈標記，請開啟[標記主控台。](#tagging-console)
 

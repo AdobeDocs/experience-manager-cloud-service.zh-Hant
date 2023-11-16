@@ -4,17 +4,17 @@ description: 系統管理員設定必要的雲端資源後，了解 AEM 使用�
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: 86700cce-139f-451e-9c21-b38b6332f773
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '579'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '577'
+ht-degree: 93%
 
 ---
 
 
 # AEM 使用者工作 {#aem-user-tasks}
 
-在這個可選部分[上線歷程，](overview.md)您將了解 AEM 使用者如何將 AEM as a Cloud Service 存取以創作內容。
+在此選擇性部分中， [入門歷程，](overview.md) 您將瞭解AEM使用者如何存取AEMas a Cloud Service以創作內容。
 
 ## 到目前為止 {#story-so-far}
 
@@ -52,7 +52,7 @@ ht-degree: 100%
 
 1. 從 Cloud Manager **計畫和產品**&#x200B;頁面選擇合適的計畫，以啟動&#x200B;**概觀**&#x200B;頁。如果您不確定要存取哪個計畫，請諮詢您的系統管理員。
 
-1. 來自&#x200B;**概觀** Cloud Manager 中的頁面，按一下來自&#x200B;**環境**&#x200B;卡片。
+1. 從 **概觀** 頁面，按一下Cloud Manager中的作者連結，從 **環境** 卡片。
 
    ![環境卡](/help/journey-onboarding/assets/author-environ.png)
 

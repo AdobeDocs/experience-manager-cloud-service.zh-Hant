@@ -2,10 +2,10 @@
 title: 組建環境
 description: 了解 Cloud Manager 的構建環境以及它如何構建和測試您的程式碼。
 exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
-source-git-commit: 7945d67fe7d258af7131076d2416cbe121354a62
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1006'
-ht-degree: 98%
+source-wordcount: '1005'
+ht-degree: 96%
 
 ---
 
@@ -179,7 +179,7 @@ $ aio cloudmanager:list-pipeline-variables PIPELINEID
 
 ## 安裝附加系統套件 {#installing-additional-system-packages}
 
-為了充分發揮作用，部分組建需要安裝附加系統套件。例如，組建可能會叫用 Python 或 Ruby 指令碼，因此需要安裝適當的語言解譯器。這可透過呼叫 [`exec-maven-plugin`](https://www.mojohaus.org/exec-maven-plugin/) `pom.xml`以叫用 APT 來完成。這項執行通常應包裝在 Cloud Manager 特定的 Maven 設定檔中。若要安裝 Python。
+為了充分發揮作用，部分組建需要安裝附加系統套件。例如，組建可能會叫用Python或Ruby指令碼，因此需要安裝適當的語言解譯器。 這可透過呼叫 [`exec-maven-plugin`](https://www.mojohaus.org/exec-maven-plugin/) `pom.xml`以叫用 APT 來完成。這項執行通常應包裝在 Cloud Manager 特定的 Maven 設定檔中。若要安裝 Python。
 
 ```xml
         <profile>

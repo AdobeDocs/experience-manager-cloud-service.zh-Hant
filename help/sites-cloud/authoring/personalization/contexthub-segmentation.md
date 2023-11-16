@@ -2,9 +2,9 @@
 title: 使用 ContextHub 設定分段
 description: 瞭解如何使用ContextHub設定分段。
 exl-id: fbc38611-dbee-426e-b823-df64b6730c45
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1687'
+source-wordcount: '1682'
 ht-degree: 4%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 4%
 
 細分是建立行銷活動時的關鍵考量。 另請參閱 [瞭解區段](segmentation.md) 區段運作方式和主要術語的相關資訊。
 
-根據您已收集到的網站訪客相關資訊以及您想要達成的目標，您將需要定義目標內容所需的區段和策略。
+根據您已收集到的網站訪客相關資訊以及您想要達成的目標，定義目標內容所需的區段和策略。
 
 接著，這些區段可用來向訪客提供明確鎖定的目標內容。 [活動](activities.md) 此處定義可包含在任何頁面上，並定義專用內容適用於的訪客區段。
 

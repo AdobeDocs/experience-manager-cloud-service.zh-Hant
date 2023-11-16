@@ -2,9 +2,9 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2022.3.0 版發行說明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2022.3.0 版發行說明。'
 exl-id: 761f1605-c421-4f3a-8f90-af23f4f047b1
-source-git-commit: bd0981b262f645653723f1b35d871808506d47ba
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1148'
+source-wordcount: '1151'
 ht-degree: 15%
 
 ---
@@ -113,7 +113,7 @@ ht-degree: 15%
 
 ### 新增功能 {#what-is-new-ctt}
 
-* 檢查大小護欄 — 內容轉移工具檢查大小功能有助於減少失敗的內容轉移。  使用「檢查大小」功能，使用者可以1)判斷是否有足夠的磁碟空間 `crx-quickstart` 擷取前的子目錄，以及2)估計移轉集大小並驗證其是否受支援。 如果違反了其中一項或兩項檢查，使用者將在CTT UI中看到警告。 有了這道護欄，您可以避免內容轉移失敗，並主動與Adobe客戶服務討論移轉選項。 另請參閱 [正在決定移轉集大小和磁碟空間](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=en#migration-set-size) 以取得更多詳細資料。
+* 檢查大小護欄 — 內容轉移工具檢查大小功能有助於減少失敗的內容轉移。  使用「檢查大小」功能，使用者可以1)判斷是否有足夠的磁碟空間 `crx-quickstart` 擷取前的子目錄，以及2)估計移轉集大小並驗證其是否受支援。 如果違反了其中一項或兩項檢查，使用者會在CTT UI中看到警告。 有了這道護欄，您可以避免內容轉移失敗，並主動與Adobe客戶服務討論移轉選項。 另請參閱 [正在決定移轉集大小和磁碟空間](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=en#migration-set-size) 以取得更多詳細資料。
 
 ## 最佳做法分析工具 {#bpa-release}
 

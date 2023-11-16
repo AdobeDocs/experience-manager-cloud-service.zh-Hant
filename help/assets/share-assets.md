@@ -5,9 +5,9 @@ contentOwner: Vishabh Gupta
 feature: Asset Management, Collaboration, Asset Distribution
 role: User, Admin
 exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
-source-git-commit: 177021106fc67e67a8cd6645a6684185331dd6f4
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1344'
+source-wordcount: '1340'
 ht-degree: 5%
 
 ---
@@ -89,7 +89,7 @@ Users with administrator privileges or with read permissions at `/var/dam/share`
 
   ![將下載排入佇列](assets/queue-download.png)
 
-* 在準備下載檔案時，按一下 **[!UICONTROL 下載收件匣]** 檢視下載狀態的選項。 如需大量下載，請按一下 **[!UICONTROL 重新整理]** 按鈕以更新狀態。
+* 在準備下載檔案時，按一下 **[!UICONTROL 下載收件匣]** 檢視下載狀態的選項。 如果下載次數較多，請按一下 **[!UICONTROL 重新整理]** 按鈕以更新狀態。
 
   ![下載收件匣](assets/link-sharing-download-inbox.png)
 

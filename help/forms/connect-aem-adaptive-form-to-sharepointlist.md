@@ -1,13 +1,13 @@
 ---
-title: 如何將AEM最適化表單連結至Microsoft® SharePoint清單？
-description: 將最適化表單連線至Microsoft® SharePoint清單。 瞭解如何設定Microsoft® SharePoint清單，並使用設定建立表單資料模型。 此外，您將瞭解如何將FDM與最適化表單整合。
+title: 如何將AEM最適化表單連結至Microsoft&reg； SharePoint清單？
+description: 將最適化表單連線至Microsoft&reg； SharePoint清單。 瞭解如何設定Microsoft&reg； SharePoint清單，並使用設定建立表單資料模型。 此外，您也會瞭解如何將FDM與最適化表單整合。
 role: User, Developer
 keywords: 將AEM最適化表單連線至Microsoft SharePoint清單、將最適化表單連線至Microsoft SharePoint清單、將AEM最適化表單整合至Microsoft SharePoint清單、將最適化表單整合至Microsoft SharePoint清單、將最適化表單的資料提交至SharePoint清單、將AEM工作流程提交至SharePoint清單。
 hide: true
 hidefromToC: true
-source-git-commit: 397e7d4f23202b8ae7419b0ad5436a6a10e2efb8
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '550'
+source-wordcount: '539'
 ht-degree: 5%
 
 ---
@@ -30,15 +30,15 @@ ht-degree: 5%
 
 將最適化表單連線至Microsoft® SharePoint清單之前，請執行以下步驟：
 
-1. [設定Microsoft® SharePoint清單](/help/forms/configure-data-sources.md#configure-microsoft-sharepoint-list)
-1. [使用Microsoft® SharePoint清單設定建立表單資料模型](/help/forms/create-form-data-models.md)
+1. [設定Microsoft](/help/forms/configure-data-sources.md#configure-microsoft-sharepoint-list)
+1. [使用Microsoft建立表單資料模型](/help/forms/create-form-data-models.md)
 1. [設定表單資料模型以擷取及傳送資料](/help/forms/work-with-form-data-model.md#configure-services)
 1. [建立最適化表單](/help/forms/creating-adaptive-form-core-components.md)
 
 現在，您可以：
 
-* [將Microsoft® SharePoint清單連線至最適化表單](#connect-an-adaptive-form-to-microsoft-sharepoint-list-connect-af-sharepoint-list)
-* [將Microsoft® SharePoint清單連線至AEM工作流程](#connect-sharepoint-list-workflow)
+* [連線Microsoft](#connect-an-adaptive-form-to-microsoft-sharepoint-list-connect-af-sharepoint-list)
+* [連線Microsoft](#connect-sharepoint-list-workflow)
 
 ## 將最適化表單連線至Microsoft® SharePoint清單 {#connect-af-sharepoint-list}
 
@@ -73,7 +73,7 @@ ht-degree: 5%
 
 ## 最佳做法 {#best-practices}
 
-<!-- * For storing data in a tabular format or implementing data permissions, it is advisable to use Microsoft® SharePoint List rather than Microsoft® SharePoint Document Library. -->
+<!-- * For storing data in a tabular format or implementing data permissions, it is advisable to use Microsoft&reg; SharePoint List rather than Microsoft&reg; SharePoint Document Library. -->
 * Microsoft® SharePoint清單不支援下列欄型別：
    * 影像欄
    * 中繼資料欄

@@ -2,9 +2,9 @@
 title: 在Cloud Manager中使用您自己的GitHub存放庫
 description: 瞭解如何設定Cloud Manager以使用您自己的GitHub存放庫。
 feature: Release Information
-source-git-commit: 8d689ea08ab7caf9cb0fa84df23d7e0fd906f379
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '753'
+source-wordcount: '745'
 ht-degree: 2%
 
 ---
@@ -49,7 +49,7 @@ ht-degree: 2%
 
 Cloud Manager現在知道您的GitHub存放庫，但仍需要存取它。 若要授與存取權，您必須安裝AdobeGitHub應用程式，並確認您擁有指定的存放庫。
 
-1. 新增您自己的存放庫後， **私人存放庫所有權驗證** 對話方塊將會開啟。
+1. 新增您自己的存放庫後， **私人存放庫所有權驗證** 對話方塊開啟。
 
    ![私人存放庫所有權驗證](/help/implementing/cloud-manager/assets/repos/private-repo-validate.png)
 
@@ -65,7 +65,7 @@ Cloud Manager現在知道您的GitHub存放庫，但仍需要存取它。 若要
 
 1. 返回 **私人存放庫所有權驗證** 視窗，Cloud Manager已產生的私人檔案的內容在 **機密檔案內容** 欄位。 複製該欄位中的內容。
 
-   * 機密檔案的內容只會顯示一次。 如果您在關閉此視窗之前未複製內容，則需要重新產生密碼。
+   * 機密檔案的內容只會顯示一次。 如果您在關閉此視窗之前未複製內容，請重新產生密碼。
 
    ![複製密碼檔案內容](/help/implementing/cloud-manager/assets/repos/new-secret.png)
 
@@ -81,7 +81,7 @@ Cloud Manager現在知道您的GitHub存放庫，但仍需要存取它。 若要
 
 請注意 **型別** 欄可輕鬆識別Adobe提供的存放庫(**Adobe**)和您自己的GitHub存放庫(**GitHub**)。
 
-如果您需要在稍後日期返回存放庫以完成驗證，請在 **存放庫** 頁面，點選或按一下代表您剛剛新增的GitHub存放庫一列中的省略符號按鈕，然後選取 **所有權驗證** （從下拉式功能表）。
+如果您日後需要返回存放庫完成驗證，請在 **存放庫** 頁面，點選或按一下代表您剛剛新增的GitHub存放庫一列中的省略符號按鈕，然後選取 **所有權驗證** （從下拉式功能表）。
 
 ## 將您自己的GitHub存放庫與Cloud Manager搭配使用 {#using}
 

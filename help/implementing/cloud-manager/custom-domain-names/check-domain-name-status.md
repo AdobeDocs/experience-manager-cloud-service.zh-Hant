@@ -2,10 +2,10 @@
 title: 檢查網域名稱狀態
 description: 了解如何確定您的自訂網域名稱是否已透過 Cloud Manager 成功驗證。
 exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: ht
-source-wordcount: '649'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '647'
+ht-degree: 94%
 
 ---
 
@@ -16,9 +16,9 @@ ht-degree: 100%
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織和計畫。
 
-1. 從「**概觀**」頁面瀏覽到「**環境**」畫面。
+1. 從&#x200B;**概觀**&#x200B;頁面，瀏覽到&#x200B;**環境**&#x200B;畫面。
 
-1. 在左側瀏覽面板中按一下&#x200B;**網域設定**。
+1. 按一下 **網域設定** ，位於左側導覽面板中。
 
 1. 按一下網域名稱的&#x200B;**狀態**&#x200B;圖示。
 
@@ -60,7 +60,7 @@ Cloud Manager 將透過 TXT 值驗證網路擁有權，並顯示以下其中一�
 
 #### 錯誤原因 {#cause}
 
-Fastly 會將網域鎖定到註冊它的初始帳戶，在未經許可的情況下，沒有其他帳戶可以註冊子網域。此外，Fastly 只會讓您將一個頂點網域和關聯的子網域指派給一個 Fastly 服務和帳戶。如果您有現有的 Fastly 帳戶，該帳戶連結了用於 AEM Cloud Service 網域的相同頂點和子網域，您將看到此錯誤。
+Fastly 會將網域鎖定到註冊它的初始帳戶，在未經許可的情況下，沒有其他帳戶可以註冊子網域。此外，Fastly 只會讓您將一個頂點網域和關聯的子網域指派給一個 Fastly 服務和帳戶。如果您有現有的Fastly帳戶，該帳戶連結了用於AEM Cloud Service網域的相同頂點和子網域，您會看到此錯誤。
 
 #### 錯誤解決方法 {#resolution}
 

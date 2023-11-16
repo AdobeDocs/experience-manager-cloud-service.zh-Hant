@@ -2,10 +2,10 @@
 title: 檢查 DNS 記錄狀態
 description: 了解如何使用 Cloud Manager 確定您的 DNS 設定是否正確解析。
 exl-id: 76ca1584-e21d-4e3a-a08a-82b2779167cf
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '250'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '249'
+ht-degree: 96%
 
 ---
 
@@ -15,9 +15,9 @@ ht-degree: 100%
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織和計畫。
 
-1. 從「**概觀**」頁面瀏覽到「**環境**」畫面。
+1. 從&#x200B;**概觀**&#x200B;頁面，瀏覽到&#x200B;**環境**&#x200B;畫面。
 
-1. 在左側瀏覽面板中按一下&#x200B;**網域設定**。
+1. 按一下 **網域設定** ，位於左側導覽面板中。
 
 1. 按一下網域名稱的&#x200B;**狀態**&#x200B;圖示。
 

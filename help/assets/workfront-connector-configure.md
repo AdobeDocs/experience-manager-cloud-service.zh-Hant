@@ -4,9 +4,9 @@ description: 設定 [!DNL Workfront for Experience Manager enhanced connector]
 role: Admin
 feature: Integrations
 exl-id: d4e1247a-342c-4bc4-83bf-4e4902468fb3
-source-git-commit: bb80414989aa5ceb624550d0ea41283c7d5da4c6
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1772'
+source-wordcount: '1771'
 ht-degree: 1%
 
 ---
@@ -68,7 +68,7 @@ ht-degree: 1%
 1. 專案狀態：選取專案必須設定的狀態，才能建立連結的資料夾。
 1. 在具有投資組合的專案中建立連結資料夾：專案必須屬於的Portfolio清單，以便您可以建立連結資料夾。 將此清單保留為空白可為所有專案組合建立連結資料夾。
 1. 使用自訂表單欄位在專案中建立連結資料夾：自訂表單欄位及其專案必須有的對應值，以便您建立連結資料夾。 如果留為空白，則會忽略此設定。 選取 `CUSTOM FORMS: Create DAM Linked Folder` 欄位和輸入 `Yes` ，以取得值。
-1. 按一下啟用自動建立連結資料夾。 如果您返回「事件訂閱」標籤，您會看到現在有一個建立事件。
+1. 按一下「啟用自動建立連結資料夾」。 如果您返回「事件訂閱」標籤，您會看到現在有一個建立事件。
 
 ![連結的資料夾組態](/help/assets/assets/wf-linked-folder-config.png)
 

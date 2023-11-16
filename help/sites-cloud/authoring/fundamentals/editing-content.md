@@ -2,9 +2,9 @@
 title: 編輯頁面內容
 description: 建立頁面後，您可以編輯內容以進行所需的更新
 exl-id: 8af0f621-14e8-4605-a51a-a3be21f19092
-source-git-commit: 53d4e22805774c0b994ee2bba429c19506639014
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '2983'
+source-wordcount: '2978'
 ht-degree: 6%
 
 ---
@@ -153,7 +153,7 @@ ht-degree: 6%
 
    * 如果您使用桌上型裝置，可以按兩下 **將元件拖曳到這裡** 方塊。
 
-   * 此 **插入新元件** 對話方塊將會開啟，讓您選取所需的元件：
+   * 此 **插入新元件** 對話方塊會開啟，讓您選取所需的元件：
 
      ![插入新元件對話方塊](/help/sites-cloud/authoring/assets/editing-insert-component-selection.png)
 
@@ -185,7 +185,7 @@ ht-degree: 6%
 
 ## 元件工具列 {#component-toolbar}
 
-選取元件後會開啟工具列。 這可讓您存取可在元件上執行的各種動作。
+選取元件會開啟工具列。 這可讓您存取可在元件上執行的各種動作。
 
 使用者可用的實際動作會視情況顯示，並非所有動作皆可在此處說明。
 
@@ -253,7 +253,7 @@ ht-degree: 6%
 
   ![父按鈕](/help/sites-cloud/authoring/assets/editing-component-toolbar-parent.png)
 
-* **配置**
+* **版面配置**
 
   這可讓您修改 [版面](/help/sites-cloud/authoring/fundamentals/editing-content.md#edit-component-layout) 所選元件的ID。 這僅適用於所選的元件，且不會啟動 [版面模式](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) 整個頁面。
 

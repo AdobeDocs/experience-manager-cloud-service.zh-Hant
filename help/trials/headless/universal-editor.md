@@ -4,10 +4,10 @@ description: 探索如何使用 Universal Editor 在任何實作中對內容的�
 hidefromtoc: true
 index: false
 exl-id: a4854a56-9434-4d15-a56a-f1798f27263a
-source-git-commit: 2c7ad41ec44ed2627bfcfe206c1b7ba660cef9c0
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '977'
-ht-degree: 88%
+source-wordcount: '969'
+ht-degree: 78%
 
 ---
 
@@ -35,7 +35,7 @@ ht-degree: 88%
 
 >[!NOTE]
 >
->為了在此試用版中使用 Universal Editor，您必須使用 Chrome 作為瀏覽器，並且不能使用無痕模式。這是試用體驗的限制，並非 Universal Editor 的問題。
+>若要在此試用版中使用通用編輯器，您必須使用Chrome作為瀏覽器，且不得處於無痕模式。 這是試用體驗的限制，並非 Universal Editor 的問題。
 
 使用 Universal Editor 可讓您靈活地進行內容中和原處的文字編輯，實現簡單且直覺的內容編寫。
 
@@ -79,7 +79,7 @@ Universal Editor 可讓您在其中與內容互動、查看傳遞到使用者裝
 
    ![模擬器選單項目](assets/do-not-localize/ue-emulator-1.png)
 
-1. 讀者可能使用具有不同長寬比的不同裝置，因此編輯器會提供模擬模式，以便查看頁面會如何呈現給使用者。例如，選取直向模式的行動裝置選項。
+1. Reader可能位於外觀比例不同的不同裝置上，因此編輯器會提供模擬模式，以檢視將向使用者呈現頁面的方式。 例如，選取直向模式的行動裝置選項。
 
    ![模擬器選單項目](assets/do-not-localize/ue-emulator-2.png)
 
@@ -87,7 +87,7 @@ Universal Editor 可讓您在其中與內容互動、查看傳遞到使用者裝
 
 1. 將模擬器返回桌面模式。
 
-您也可以指定模擬器的實際尺寸並旋轉模擬的裝置，以便在任何可能的目標裝置上檢視您的內容。
+您也可以指定模擬器的確切尺寸，並旋轉模擬裝置，以在任何潛在的目標裝置上檢視您的內容。
 
 ## 預覽和發佈 {#preview}
 
@@ -95,7 +95,7 @@ Universal Editor 可讓您在其中與內容互動、查看傳遞到使用者裝
 
 1. 在編輯器左側的模式邊欄中，點選或按一下「**預覽**」。
 
-1. 現在即可點選或按一下&#x200B;**閱讀全文**&#x200B;連結，以查看主要文章。
+1. 現在點選或按一下 **瞭解詳情** 主要文章的連結。
 
    ![預覽模式](assets/do-not-localize/ue-preview-publish-1.png)
 
@@ -103,7 +103,7 @@ Universal Editor 可讓您在其中與內容互動、查看傳遞到使用者裝
 
    ![使用返回連結返回主要頁面](assets/do-not-localize/ue-preview-publish-3.png)
 
-1. 現在即可點選或按一下編輯器右上角的「**發佈**」按鈕，發佈您的內容。
+1. 現在點選或按一下 **發佈** 按鈕來發佈您的內容。
 
    ![預覽和發佈選單項目](assets/do-not-localize/ue-preview-publish-4.png)
 

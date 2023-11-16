@@ -2,10 +2,10 @@
 title: 正在新增 SSL 憑證
 description: 了解如何使用 Cloud Manager 的自助服務工具新增您自己的 SSL 憑證。
 exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
-source-git-commit: 6db3565fefe4c826bb40695d0fa84368fd3f283b
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '555'
-ht-degree: 94%
+source-wordcount: '552'
+ht-degree: 88%
 
 ---
 
@@ -27,13 +27,13 @@ ht-degree: 94%
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選擇適當的組織和計畫。
 
-1. 從&#x200B;**概覽**&#x200B;頁面瀏覽&#x200B;**環境**&#x200B;畫面。
+1. 從&#x200B;**概觀**&#x200B;頁面瀏覽到&#x200B;**環境**&#x200B;畫面。
 
-1. 從瀏覽面板按一下 **SSL 憑證**。包含任何現有 SSL 憑證詳細資訊的表格會顯示在主畫面上。
+1. 按一下 **SSL憑證** 從左側導覽面板。 包含任何現有 SSL 憑證詳細資訊的表格會顯示在主畫面上。
 
    ![新增 SSL 憑證](/help/implementing/cloud-manager/assets/ssl/ssl-cert-1.png)
 
-1. 按一下新增 **SSL 憑證**&#x200B;開啟&#x200B;**新增 SSL 憑證**&#x200B;對話方塊。
+1. 按一下 **新增SSL憑證** 以開啟 **新增SSL憑證** 對話方塊。
 
    * 在&#x200B;**憑證名稱**&#x200B;中輸入憑證名稱。
       * 這僅供參考，可以是任何有助於您輕鬆引用憑證的名稱。
@@ -47,7 +47,7 @@ ht-degree: 94%
 
 1. 按一下&#x200B;**儲存**&#x200B;來儲存您的憑證。
 
-儲存後，您將看到您的憑證在資料表中顯示為新的資料列。
+儲存後，您會看到憑證在表格中顯示為新的一列。
 
 ![已儲存的 SSL 憑證](/help/implementing/cloud-manager/assets/ssl/ssl-cert-3.png)
 

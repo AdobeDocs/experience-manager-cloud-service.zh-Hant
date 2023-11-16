@@ -2,9 +2,9 @@
 title: 驗證內容轉移
 description: 使用內容轉移工具來驗證內容轉移
 exl-id: a12059c3-c15a-4b6d-b2f4-df128ed0eea5
-source-git-commit: c8739388ac21dd40d6757815af6f2732991d216b
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1084'
+source-wordcount: '1077'
 ht-degree: 2%
 
 ---
@@ -142,7 +142,7 @@ Migration validation took 0 minutes
 
 ![影像](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-principal-action.png)
 
-您將看到一個包含摘要資訊的對話方塊。 使用說明圖示可讀取更完整的說明。 按一下 **下載報表** 按鈕以下載完整的逗號分隔(CSV)報表。
+您會看到包含摘要資訊的對話方塊。 使用說明圖示可讀取更完整的說明。 按一下 **下載報表** 按鈕以下載完整的逗號分隔(CSV)報表。
 
 ![影像](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-principal-dialog.png)
 

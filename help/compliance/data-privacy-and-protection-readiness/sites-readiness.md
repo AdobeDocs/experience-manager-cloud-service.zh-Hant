@@ -2,10 +2,10 @@
 title: 資料保護和資料隱私權法規 - Adobe Experience Manager as a Cloud Service Sites 整備
 description: 了解對各種資料保護和資料隱私權法規的 Adobe Experience Manager as a Cloud Service Sites 支援；包括歐盟一般資料保護規範 (GDPR)、加州消費者隱私法，以及在實作新的 AEM as a Cloud Service 專案時如何遵守。
 exl-id: fdcad111-0cdd-46cc-964c-3f8669ca2030
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1025'
-ht-degree: 100%
+source-wordcount: '1024'
+ht-degree: 98%
 
 ---
 
@@ -60,7 +60,7 @@ Adobe Experience Manager 受用於管理使用者選擇加入/選擇退出的 co
 
    * 要選擇退出有關您造訪本網站的資料的彙總和分析，必須在您的瀏覽器上安裝 cookie。此 cookie 表明您已選擇退出。
 
-     如果您刪除選擇退出 cookie，或者如果您變更電腦或網頁瀏覽器，您將需要再次選擇退出。
+     如果您刪除選擇退出Cookie，或者如果您變更電腦或網頁瀏覽器，則需要再次選擇退出。
 
      選擇退出 - 將我從訪客工作階段彙總和分析中排除 (安裝`amcglobal.sc.omtrdc.net`選擇退出 cookie) - 按一下這裡。
 

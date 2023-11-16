@@ -2,10 +2,10 @@
 title: 了解 Headless 內容以及如何在 AEM 中翻譯
 description: 了解 Headless 概念、它們如何對應到 AEM 以及 AEM 翻譯理論。
 exl-id: 72bb6646-e573-4576-8d17-49787d8c8c7f
-source-git-commit: 94e5d0e84d5c55d0ff61a705e079b4dc8e32a777
-workflow-type: ht
-source-wordcount: '743'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '742'
+ht-degree: 97%
 
 ---
 
@@ -57,7 +57,7 @@ ht-degree: 100%
 
 AEM 的強大功能使其能夠以 Headless 方式、全堆疊方式或同時以兩種模式傳遞內容。對於翻譯專家來說，同一套翻譯工具可以套用於兩種類型的內容，為您提供統一的內容翻譯方法。
 
-在接下來的歷程中，您將了解有關 AEM 如何翻譯內容的詳細資訊，其大致概念很簡單：
+在此歷程中，您會進一步瞭解AEM如何翻譯內容的詳細資訊，但從高層面來看，概念很簡單：
 
 1. 透過設定整合框架來定義對翻譯服務的連接。
 1. 使用翻譯規則定義應翻譯的內容。

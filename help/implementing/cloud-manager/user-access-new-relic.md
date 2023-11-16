@@ -2,10 +2,10 @@
 title: New Relic One
 description: 了解適用於 AEM as a Cloud Service 的 New Relic One 應用程式效能監控 (APM) 服務以及如何存取它。
 exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
-source-git-commit: 6ba6dddd8f949e55a0575bd373c0b87dc2d7f2b5
-workflow-type: ht
-source-wordcount: '1732'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '1730'
+ht-degree: 98%
 
 ---
 
@@ -44,7 +44,7 @@ Adobe 非常重視應用程式的監控、可用性和效能。AEM as a Cloud Se
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織。
 
-1. 按一下您要為其管理 New Relic One 使用者的計畫。
+1. 按一下您要為其管理New Relic One使用者的計畫。
 
 1. 在底部&#x200B;**環境**&#x200B;計畫概覽頁面上的卡片，按一下省略符號按鈕並選擇&#x200B;**管理使用者**。
 
@@ -94,7 +94,7 @@ Adobe 非常重視應用程式的監控、可用性和效能。AEM as a Cloud Se
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織。
 
-1. 存取您要為其管理 New Relic One 使用者的計畫。
+1. 按一下您要存取New Relic One的方案。
 
 1. 在底部&#x200B;**環境**&#x200B;計畫概覽頁面上的卡片，按一下省略符號按鈕並選擇&#x200B;**打開 New Relic**。
 

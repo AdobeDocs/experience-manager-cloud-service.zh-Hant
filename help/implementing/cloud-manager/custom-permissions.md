@@ -1,15 +1,15 @@
 ---
-title: 自訂許可權
+title: 自訂權限
 description: 瞭解如何使用自訂許可權建立新的自訂許可權設定檔，並使用可設定的許可權來限制對Cloud Managers使用者程式、管道和環境的存取權。
-source-git-commit: 928a3f0d8ee98e211aa03ad3d0fd83b780e98bbc
+exl-id: 167da985-7f19-45b3-90a3-884817907da2
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1509'
-ht-degree: 2%
+source-wordcount: '1506'
+ht-degree: 3%
 
 ---
 
-
-# 自訂許可權 {#custom-permissions}
+# 自訂權限 {#custom-permissions}
 
 瞭解如何使用自訂許可權建立新的自訂許可權設定檔，並使用可設定的許可權來限制對Cloud Managers使用者程式、管道和環境的存取權。
 
@@ -157,7 +157,7 @@ Cloud Manager有一組預先定義的角色，可控制對Cloud Manager各種功
 | 術語 | 說明 |
 |---|---|
 | 預先定義的許可權 | 預先定義的角色，例如 **企業所有者**， **部署管理員**&#x200B;等 以控管Cloud Manager的各種功能。 有關預先定義角色的詳細資訊，請參閱檔案 [AEMas a Cloud Service團隊和產品設定檔。](/help/onboarding/aem-cs-team-product-profiles.md) |
-| 自訂許可權 | Cloud Manager功能可讓使用者建立許可權設定檔，以定義角色來控管Cloud Manager的支援功能 |
+| 自訂權限 | Cloud Manager功能可讓使用者建立許可權設定檔，以定義角色來控管Cloud Manager的支援功能 |
 | 產品設定檔 | 在Admin Console中建立，用於管理可設定的許可權，這些許可權將適用於屬於許可權設定檔的使用者 |
 | 可設定的許可權 | 可在許可權設定檔中設定的Cloud Manager許可權 |
 | 許可權專案 | 可套用許可權的程式、環境或管道資源 |

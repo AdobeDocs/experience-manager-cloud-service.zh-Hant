@@ -3,10 +3,10 @@ title: 管理管道
 description: 了解如何管理現有管道，包括將其編輯、執行和刪除。
 index: true
 exl-id: 4aff5a84-134a-43fa-8de8-8d564f4edd16
-source-git-commit: 01a89f779689733fb82a556291e091026def63e0
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '957'
-ht-degree: 60%
+source-wordcount: '952'
+ht-degree: 47%
 
 ---
 
@@ -71,7 +71,7 @@ ht-degree: 60%
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織和方案。
 
-1. 瀏覽至&#x200B;**管道**&#x200B;卡 (位於&#x200B;**方案總覽**&#x200B;頁面)，並按一下您執行的管道旁的省略符號按鈕，從選單中選取&#x200B;**執行**。
+1. 導覽至 **管道** 卡來自 **計畫總覽** 頁面，並按一下您執行的管道旁的省略符號按鈕選擇 **執行** 功能表中。
 
 1. 此管道執行開始，並由&#x200B;**狀態**&#x200B;欄顯示。
 
@@ -83,7 +83,7 @@ ht-degree: 60%
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織和方案。
 
-1. 瀏覽至&#x200B;**管道**&#x200B;卡 (位於&#x200B;**方案總覽**&#x200B;頁面)，並按一下您要編輯的管道旁的省略符號按鈕，然後從選單中選取&#x200B;**編輯**。
+1. 導覽至 **管道** 卡來自 **計畫總覽** 頁面，按一下要編輯的管道旁的省略符號按鈕，然後選取 **編輯** 功能表中。
 
 1. **編輯生產管道**&#x200B;或是&#x200B;**編輯非生產管道**&#x200B;對話框會隨即顯示，讓您可以對您在建立管道時輸入的詳細資訊進行編輯。
 
@@ -91,7 +91,7 @@ ht-degree: 60%
       * [設定生產管道](configuring-production-pipelines.md)
       * [設定非生產管道](configuring-non-production-pipelines.md)
 
-1. 按一下&#x200B;**更新**&#x200B;一次，您即完成編輯管道。
+1. 按一下 **更新** 一旦您完成編輯管道。
 
 >[!NOTE]
 >
@@ -101,7 +101,7 @@ ht-degree: 60%
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織和方案。
 
-1. 瀏覽至&#x200B;**管道**&#x200B;卡 (位於&#x200B;**方案總覽**&#x200B;頁面)，並按一下您執行的管道旁的省略符號按鈕，從選單中選取&#x200B;**刪除**。
+1. 導覽至 **管道** 卡來自 **計畫總覽** 頁面，並按一下您執行的管道旁的省略符號按鈕選擇 **刪除** 功能表中。
 
 >[!NOTE]
 >
@@ -111,9 +111,9 @@ ht-degree: 60%
 
 您可以檢視管道的詳細資訊，以檢視其上次執行的狀態和記錄。
 
-1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織和方案。
+1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織和計畫。
 
-1. 瀏覽至&#x200B;**管道**&#x200B;卡 (位於&#x200B;**方案總覽**&#x200B;頁面)，並按一下您執行的管道旁的省略符號按鈕，從選單中選取&#x200B;**檢視詳情**。
+1. 導覽至 **管道** 卡來自 **計畫總覽** 頁面，並按一下您執行的管道旁的省略符號按鈕選擇 **檢視詳細資料** 功能表中。
 
 1. 系統將會帶您前往執行中管道的詳細資訊頁面。
 

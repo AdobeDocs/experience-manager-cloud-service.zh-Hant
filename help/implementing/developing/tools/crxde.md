@@ -2,9 +2,9 @@
 title: 使用 CRXDE Lite
 description: CRXDE Lite是AEM快速入門的一部分，可供您在瀏覽器中存取和修改本機開發環境中的存放庫。
 exl-id: 1581a7e5-6f84-4a45-8e8f-c83692ea077a
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1685'
+source-wordcount: '1684'
 ht-degree: 1%
 
 ---
@@ -201,7 +201,7 @@ CRXDE Lite的使用者介面有許多部分且有許多功能。
 1. 在瀏覽器中開啟CRXDE Lite。
 1. 在 [**瀏覽器窗格**，](#explorer-pane) 選取您要新增屬性的節點。
 1. 在 [**屬性標籤**](#properties-tab) 在底部窗格中，輸入 **名稱**，則 **型別**，以及 **值**.
-1. 按一下 **新增**.
+1. 按一下&#x200B;**「新增」**。
 1. 按一下 [**儲存全部按鈕**](#save-all-button) 將變更儲存在伺服器上。
 
 ## 建立檔案 {#creating-a-file}

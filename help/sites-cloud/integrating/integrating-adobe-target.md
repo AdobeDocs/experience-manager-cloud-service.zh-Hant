@@ -4,7 +4,7 @@ description: 瞭解如何使用觸控式UI和Adobe Launch將Adobe Target與AEMas
 feature: Administering
 role: Admin
 exl-id: cf243fb6-5563-427f-a715-8b14fa0b0fc2
-source-git-commit: 957758a8d3c16328e7638356e7ee6df3e561386d
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
 source-wordcount: '1034'
 ht-degree: 1%
@@ -28,7 +28,7 @@ Adobe Target是Adobe Experience Cloud的一部分，可讓您透過針對所有�
 
 ## 建立Adobe Target設定 {#create-configuration}
 
-1. 瀏覽至 **工具** → **Cloud Services**.
+1. 瀏覽至 **工具** → **Cloud Service**.
    ![導覽](assets/cloudservice1.png "導覽")
 2. 選取 **Adobe Target**.
 3. 選取 **建立** 按鈕。

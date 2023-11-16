@@ -4,17 +4,17 @@ description: 按照此頁面了解如何將團隊成員指派給 Cloud Manager �
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: 555688e5-f937-462c-9fcc-b90685f1882b
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
-workflow-type: ht
-source-wordcount: '1532'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '1528'
+ht-degree: 94%
 
 ---
 
 
 # 將團隊成員指派給 Cloud Manager 產品設定檔 {#assign-team-members}
 
-在[上線歷程](overview.md)的這一部分，您將了解如何將團隊成員指派給 Cloud Manager 產品設定檔
+在這部分中 [入門歷程，](overview.md) 您將瞭解如何將團隊成員指派給Cloud Manager產品設定檔。
 
 ## 目標 {#objective}
 
@@ -33,7 +33,7 @@ ht-degree: 100%
 
 ## 必備條件 {#prerequisites}
 
-要將團隊成員指派給產品設定檔，您需要那些要存取 AEM as a Cloud Service 的團隊成員的詳細資訊，包括：
+若要將團隊成員指派給產品設定檔，您需要擁有團隊成員的詳細資訊，這些成員需要存取AEMas a Cloud Service，包括：
 
 * 名稱
 * 電子郵件地址
@@ -73,7 +73,7 @@ Cloud Manager 是 AEM as a Cloud Service 不可或缺的一部分，用於管理
 
    ![Cloud Manager](/help/journey-onboarding/assets/assign-team2.png)
 
-1. 您將看到預先設定的 Cloud Manager 產品設定檔清單。
+1. 您可以檢視預先設定的Cloud Manager產品設定檔清單。
 
    ![產品設定檔](/help/journey-onboarding/assets/assign-team3.png)
 
@@ -177,7 +177,7 @@ Cloud Manager 是 AEM as a Cloud Service 不可或缺的一部分，用於管理
 * 了解三個重要的 Cloud Manager 產品設定檔：**業務負責人**、**部署管理員**&#x200B;和&#x200B;**開發人員**。
 * 能夠將團隊成員指派給 Cloud Manager 產品設定檔。
 
-您現在已準備好繼續您的上線歷程，接下來查看文件[存取 Cloud Manager](cloud-manager.md)，您將在該文件中了解如何存取 Cloud Manager 和建立專案資源。
+您現在已準備好透過下一次檢視檔案來繼續您的上線之旅 [存取Cloud Manager，](cloud-manager.md) 在這裡，您可以瞭解如何存取Cloud Manager和建立您的專案資源。
 
 ## 其他資源 {#additional-resources}
 

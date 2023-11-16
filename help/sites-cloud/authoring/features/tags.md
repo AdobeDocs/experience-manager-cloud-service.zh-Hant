@@ -2,9 +2,9 @@
 title: 使用標記
 description: 標籤是一種將網站內容分類的快速輕鬆方法
 exl-id: d2a9f578-fe0a-48ea-851c-2c84463661e0
-source-git-commit: a7774ff75fb6bac55d5e931b13597d90bf8d721b
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '562'
+source-wordcount: '560'
 ht-degree: 7%
 
 ---
@@ -47,7 +47,7 @@ ht-degree: 7%
 
 * 啟用個別標籤。
 
-  就像頁面一樣，新建立的標籤需要先啟用，才能在發佈環境中使用。
+  就像頁面一樣，新建立的標籤必須先啟動，才能在發佈環境中使用。
 
 >[!NOTE]
 >

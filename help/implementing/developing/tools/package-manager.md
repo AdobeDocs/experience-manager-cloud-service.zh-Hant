@@ -4,9 +4,9 @@ description: 瞭解AE的基本概念；使用封裝管理員進行封裝管理�
 feature: Administering
 role: Admin
 exl-id: b5fef273-912d-41f6-a698-0231eedb2b92
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '3770'
+source-wordcount: '3769'
 ht-degree: 4%
 
 ---
@@ -143,7 +143,7 @@ MaxPackageSize (in MB) = ConnectionSpeed (in MB/s) * 60 s
 
 封裝清單中的每個專案都有一個狀態指示器，讓您一眼就知道封裝的狀態。 將游標暫留在狀態上會顯示工具提示，其中包含狀態的詳細資訊。
 
-![封裝狀態](assets/package-status.png)
+![套件狀態](assets/package-status.png)
 
 如果封裝已變更或從未建置，則狀態會以連結的形式顯示，以採取快速動作來重建或安裝封裝。
 

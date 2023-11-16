@@ -2,10 +2,10 @@
 title: 了解 CMS Headless 開發
 description: 在 AEM Headless 開發人員歷程的這一部分中，了解 Headless 技術和使用原因。
 exl-id: 8c1fcaf7-1551-4133-b363-6f50af681661
-source-git-commit: 94e5d0e84d5c55d0ff61a705e079b4dc8e32a777
-workflow-type: ht
-source-wordcount: '1638'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '1636'
+ht-degree: 95%
 
 ---
 
@@ -106,7 +106,7 @@ Headless 為傳遞數位體驗帶來了靈活性。但這種靈活性本身也�
 
 ## AEM 和 Headless {#aem-and-headless}
 
-隨著您繼續完成此開發人員歷程，您將了解 AEM 如何在提供其全堆疊傳遞功能的同時支援 Headless 傳遞。
+隨著您繼續此開發人員歷程，您將瞭解AEM如何支援Headless傳送及其全棧疊傳送功能。
 
 作為數位體驗管理領域的產業領導者，Adobe 意識到在解決體驗創作者面臨的現實挑戰方面，理想的解決方案很少是二選一的選擇。這就是為什麼 AEM 不僅支援這兩種模型，而且還獨特地允許將兩者無縫結合，藉此融合 Headless 和全堆疊的優勢，以協助您為內容取用者提供最好服務，無論他們身在何處。
 
@@ -120,7 +120,7 @@ Headless 為傳遞數位體驗帶來了靈活性。但這種靈活性本身也�
 * 了解為何與何時需要 Headless 。
 * 概略了解 Headless 概念如何使用以及它們是如何相互關聯的。
 
-以這些知識為基礎，接下來查看文件 [AEM Headless as a Cloud Service 快速入門](getting-started.md)以繼續您的 AEM Headless 歷程，您將在此文件了解如何設定必要工具，並開始思考 AEM 如何處理 Headless 內容傳遞及其先決條件。
+在此基礎上繼續您的AEM Headless歷程，接下來檢閱檔案 [AEM Headlessas a Cloud Service快速入門](getting-started.md) 您可在其中學習如何設定必要的工具，以及如何開始思考AEM如何進行headless內容傳送及其先決條件。
 
 ## 其他資源 {#additional-resources}
 

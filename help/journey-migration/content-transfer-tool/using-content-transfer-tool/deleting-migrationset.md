@@ -2,9 +2,9 @@
 title: 在內容轉移工具中刪除移轉集
 description: 瞭解如何刪除內容轉移工具中的移轉集。
 exl-id: 7ec1c5ca-bac7-4617-8068-78569d7cb503
-source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '235'
+source-wordcount: '232'
 ht-degree: 8%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 8%
 
    ![影像](/help/journey-migration/content-transfer-tool/assets-ctt/migration-delete1.png)
 
-1. 一旦您按一下 **刪除** 您將看到一個對話方塊來確認刪除操作。
+1. 當您按一下 **刪除** 您會看到確認刪除動作的對話方塊。
 
    ![影像](/help/journey-migration/content-transfer-tool/assets-ctt/migration-delete2.png)
 
@@ -36,6 +36,6 @@ ht-degree: 8%
 >
 >若要使「內容轉移工具」與Cloud Acceleration Manager保持同步，使用者也可以從「內容轉移工具」中刪除移轉集。
 
-若要從「內容轉移精靈」刪除移轉集，請選取移轉集，然後按一下 **刪除** 於動作列中。
+若要從「內容轉移」精靈中刪除移轉集，請選取移轉集，然後按一下 **刪除** 於動作列中。
 
 ![影像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam27.png)

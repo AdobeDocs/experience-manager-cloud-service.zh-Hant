@@ -3,13 +3,13 @@ title: 管理內容片段
 description: 瞭解如何從主控台和編輯器管理您的AEM內容片段（作為Headless內容的基礎）或用於頁面編寫。
 feature: Content Fragments
 role: User, Developer, Architect
-source-git-commit: d381cc80e2c15ea35f9fd23baa78806ce15ec1af
+exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '2540'
+source-wordcount: '2532'
 ht-degree: 3%
 
 ---
-
 
 # 管理內容片段 {#managing-content-fragments}
 
@@ -70,7 +70,7 @@ ht-degree: 3%
 
 ### 主控台的基本結構和處理 {#basic-structure-handling-content-fragments-console}
 
-選取 **內容片段** 將在新索引標籤中開啟主控台。
+選取 **內容片段** 在新標籤中開啟主控台。
 
 ![內容片段主控台 — 概觀](assets/cf-managing-console-overview.png)
 
@@ -130,7 +130,7 @@ ht-degree: 3%
 
 #### （所選）內容片段的動作 {#actions-selected-content-fragment}
 
-選取特定片段將開啟工具列，其焦點為該片段可用的動作。 您也可以選取多個片段 — 動作的選擇將據此調整。
+選取特定片段會開啟工具列，其焦點為該片段可用的動作。 您也可以選取多個片段 — 動作的選擇將據此調整。
 
 ![內容片段控制檯 — 所選片段的工具列](assets/cf-managing-console-fragment-toolbar.png)
 
@@ -223,7 +223,7 @@ ht-degree: 3%
    >
    >要預先定義新片段的位置，您可以導航到要建立片段的資料夾，也可以在建立過程中指定位置。
 
-1. 此 **新內容片段** 對話方塊將會開啟，您可以從此處指定：
+1. 此 **新內容片段** 對話方塊開啟，您可以從此處指定：
 
    * **位置**  — 這將會以目前位置自動完成，但您可以視需要選取其他位置
    * **內容片段模型**  — 從下拉式清單中選取要作為片段基礎的模式
@@ -256,7 +256,7 @@ ht-degree: 3%
 1. 使用 **內容片段** 控制檯以導覽至您的內容片段位置。
 1. 開啟片段進行編輯，方法是選取片段，然後 **在新編輯器中開啟** 工具列中的。
 
-1. 片段編輯器將會開啟。 選取您需要的專案 **變數** amd會視需要進行變更（會自動儲存）：
+1. 片段編輯器隨即開啟。 選取您需要的專案 **變數** amd會視需要進行變更（會自動儲存）：
 
    ![片段編輯器](assets/cf-managing-editor.png)
 

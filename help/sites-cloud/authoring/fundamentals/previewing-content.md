@@ -2,9 +2,9 @@
 title: 預覽內容
 description: 瞭解如何使用AEM預覽服務在內容上線前進行預覽。
 exl-id: 6b4b57f6-2e66-4c83-94d9-bc1e0daab0f3
-source-git-commit: 1804eacb5399dc38c97ff953031666711b9a0e4f
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '316'
+source-wordcount: '315'
 ht-degree: 9%
 
 ---
@@ -26,8 +26,8 @@ AEM提供Sites預覽服務，可讓開發人員和內容作者在網站到達發
 
 您可以使用將內容發佈到預覽服務 **受管理的出版物** UI。
 
-1. 在Sites Console中，選取您要傳送以預覽的一個或多個頁面，然後按一下 **管理發布** 按鈕
-1. 在下列精靈中，選取 **預覽** 作為目的地
+1. 在Sites Console中，選取您要傳送以預覽的一個或多個頁面，然後按一下 **管理發布** 按鈕。
+1. 在下列精靈中，選取 **預覽** 作為目的地。
 
    ![受管理的出版物](/help/sites-cloud/authoring/assets/previewmanagedpublication.png)
 
@@ -57,7 +57,7 @@ https://preview-p<programID>-e>environmentID>.adobeaemcloud.com/<pathtopage>.htm
 
 ## 更多資訊 {#further-information}
 
-另請參閱:
+另請參閱：
 
 * [設定預覽階層的 OSGi 設定](/help/implementing/preview-tier/preview-tier-configuring-osgi.md#configuring-osgi-settings-for-the-preview-tier)
 

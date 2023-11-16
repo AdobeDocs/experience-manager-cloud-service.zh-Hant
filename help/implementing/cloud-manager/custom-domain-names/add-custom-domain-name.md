@@ -2,10 +2,10 @@
 title: 新增自訂網域名稱
 description: 了解如何使用 Cloud Manager 新增自訂網域名稱。
 exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
-source-git-commit: d3021a4dd78a0ca86352a81965ce92868e94664a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '637'
-ht-degree: 89%
+source-wordcount: '632'
+ht-degree: 85%
 
 ---
 
@@ -28,13 +28,13 @@ ht-degree: 89%
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織和計畫。
 
-1. 從「**概觀**」頁面瀏覽到「**環境**」畫面。
+1. 從&#x200B;**概觀**&#x200B;頁面，瀏覽到&#x200B;**環境**&#x200B;畫面。
 
-1. 在左側瀏覽面板中按一下&#x200B;**網域設定**。
+1. 按一下 **網域設定** ，位於左側導覽面板中。
 
    ![域設定窗口](/help/implementing/cloud-manager/assets/cdn/cdn-create.png)
 
-1. 按一下&#x200B;**新增域**&#x200B;右上角的按鈕打開&#x200B;**新增網域名稱**&#x200B;對話。
+1. 按一下 **新增網域** 按鈕以開啟 **新增網域名稱** 對話方塊。
 
    ![新增域對話框](/help/implementing/cloud-manager/assets/cdn/add-cdn1.png)
 
@@ -82,7 +82,7 @@ CDN 部署需要有效的 SSL 憑證和成功的 TXT 驗證。這由狀態指示
 
    1. 輸入自訂網域名稱。
    1. 從下拉清單中選擇與此名稱關聯的 SSL 憑證。
-   1. 按一下&#x200B;**「新增 +」**。
+   1. 按一下 **+新增**.
 
    ![新增自訂網域名稱](/help/implementing/cloud-manager/assets/cdn/cdn-create3.png)
 

@@ -4,9 +4,9 @@ description: 瞭解如何為內容片段製作內容，然後根據用途建立�
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
-source-git-commit: b8206ffc0947de4fed085a03a6f90b5ac0f85aab
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '2253'
+source-wordcount: '2252'
 ht-degree: 7%
 
 ---
@@ -50,7 +50,7 @@ ht-degree: 7%
 
      >[!WARNING]
      >
-     >原始編輯器將在同一標籤中開啟。 不建議同時開啟兩個編輯器。
+     >原始編輯器會在相同標籤中開啟。 不建議同時開啟兩個編輯器。
 
 * 左面板：顯示內容片段的&#x200B;**[變數](#variations)**&#x200B;及其&#x200B;**欄位**：
    * 這些連結可用於 [導覽內容片段結構](#navigate-structure)
@@ -88,7 +88,7 @@ ht-degree: 7%
 
 ### 追蹤連結 {#follow-links}
 
-在編輯器的各個部分中，您會看到連結圖示。 這可用來開啟顯示的專案；例如內容片段模型、父參考或正在參考的片段：
+在編輯器的各個部分中，您可以看到連結圖示。 這可用來開啟顯示的專案；例如內容片段模型、父參考或正在參考的片段：
 
 ![內容片段編輯器 — 連結圖示](assets/cf-authoring-link-icon.png)
 

@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service 團隊和產品設定檔
 description: 了解 AEM as a Cloud Service 團隊和產品設定檔如何能夠授與和限制您的授權 Adobe 解決方案的存取權。
 exl-id: 7b1474c9-aca0-4354-8798-1abdcda2f6dd
-source-git-commit: 928a3f0d8ee98e211aa03ad3d0fd83b780e98bbc
-workflow-type: ht
-source-wordcount: '853'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '849'
+ht-degree: 96%
 
 ---
 
@@ -24,9 +24,9 @@ AEM as a Cloud Service 是完全的雲端原生產品，可提供 AEM 即服務�
 
 在上線期間，您的 AEM as a Cloud Service 團隊成員會透過 Admin Console 新增並指派到以下一個或多個產品設定檔。
 
-* **AEM 管理員**：AEM 管理員通常會指派給開發人員，特別是需要存取開發環境等的開發人員。AEM 管理員的產品設定檔用於在關聯的 AEM 執行個體中授與管理員權限。
+* **AEM管理員**：AEM管理員通常會指派給開發人員，特別是需要存取開發環境等的開發人員。 AEM 管理員的產品設定檔用於在關聯的 AEM 執行個體中授與管理員權限。
 
-* **AEM 使用者**：AEM 使用者是您組織中使用 AEM as a Cloud Service 來建立內容的使用者。這些使用者需要存取 AEM 才能完成他們的工作。AEM 使用者產品設定檔通常會指派給建立和檢閱內容的 AEM 內容作者。此內容可以是多種類型，例如頁面、資產、出版物等。以下顯示的 AEM 使用者產品設定檔已指派給這些成員。
+* **AEM 使用者**：AEM 使用者是您組織中使用 AEM as a Cloud Service 來建立內容的使用者。這些使用者需要存取AEM才能完成他們的工作。 AEM 使用者產品設定檔通常會指派給建立和檢閱內容的 AEM 內容作者。此內容可以是多種類型，例如頁面、資產、出版物等。以下顯示的 AEM 使用者產品設定檔已指派給這些成員。
 
 ![產品設定檔](/help/onboarding/assets/admin-console-profiles.png)
 

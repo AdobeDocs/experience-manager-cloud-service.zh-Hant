@@ -1,13 +1,13 @@
 ---
 title: 自訂主控台
 description: 了解 AEM 提供哪些不同的選項，讓您可自訂編寫執行個體的主控台。
-source-git-commit: f159f0ef86c2b82da4e7308a0892b4947b6e43fb
-workflow-type: ht
-source-wordcount: '548'
+exl-id: 832f9a86-07c4-4229-a0dc-8ad50a8195b0
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '546'
 ht-degree: 100%
 
 ---
-
 
 # 自訂主控台 {#customizing-consoles}
 
@@ -117,4 +117,4 @@ Clientlib 可讓您擴充預設實作以提供新功能，同時會重複使用�
 
 使用主控台時，使用者經常必須從頁面、元件或資產等資源中進行選取。這可能會採取清單的形式，作者必須從中選擇一個項目。
 
-為了維持清單的合理大小並，同時也維持與案例相關，可以實施自訂述詞形式的篩選器。如需詳細資料，請參閱文件「[自訂頁面編寫](/help/implementing/developing/extending/page-authoring.md#filtering-resources)」。
+若要將清單保持為合理的大小並且和使用案例相關，可以以自訂述詞的形式實作篩選器。如需詳細資料，請參閱文件「[自訂頁面編寫](/help/implementing/developing/extending/page-authoring.md#filtering-resources)」。

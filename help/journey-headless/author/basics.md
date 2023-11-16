@@ -2,10 +2,10 @@
 title: 了解編寫基本知識
 description: 了解使用內容片段為 Headless CMS 編寫內容的概念和機制。
 exl-id: 3eca973f-b210-41bb-98da-ecbd2bae9803
-source-git-commit: d6b98559e7cbe5fc5bd05d9cf37225e960e668e7
-workflow-type: ht
-source-wordcount: '1729'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '1727'
+ht-degree: 97%
 
 ---
 
@@ -135,7 +135,7 @@ You can view additional information about items using the Rail Selector. This al
 
 ![建立資料夾選項](/help/journey-headless/author/assets/headless-journey-author-folder-01.png)
 
-對話框隨即開啟，您可以在其中輸入詳細資料，然後使用&#x200B;**建立**&#x200B;加以確認：
+對話方塊隨即開啟，您可以在其中輸入詳細資料，然後使用確認 **建立**：
 
 ![建立資料夾對話框](/help/journey-headless/author/assets/headless-journey-author-folder-02.png)
 
@@ -216,7 +216,7 @@ You can view additional information about items using the Rail Selector. This al
 
 例如，片段可以：
 
-* 需要多段資訊，其中有些是具有特定類型。對於 Headless 內容，參考是關鍵 (歷程的後續部分將會說明)。
+* 需要多段資訊，其中有些是具有特定類型。針對Headless內容，參考是關鍵（您稍後會在歷程中瞭解這些內容）。
 
 * 允許您撰寫一長段文字。這裡有用於管理和格式化文字的其他選項。您甚至可以在全螢幕編輯器中開啟各個文字欄位 (使用右側外觀像螢幕的小圖示)
 
@@ -240,7 +240,7 @@ You can view additional information about items using the Rail Selector. This al
 
 * **內容片段模型**
 
-  您將在編輯器右側面板中看到內容片段模型的名稱。這也是一個將您帶到模型編輯器的連結。
+  您可以在編輯器的右側面板中看到內容片段模型的名稱。 這也是一個將您帶到模型編輯器的連結。
 內容片段模型實際上對您的內容片段至關重要，因為它們定義了您使用的結構。然而，建立和編輯模型 (通常) 是另一個角色的責任，即內容架構師。
 
   >[!NOTE]

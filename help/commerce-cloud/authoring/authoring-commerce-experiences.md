@@ -2,9 +2,9 @@
 title: 編寫Commerce體驗
 description: 瞭解如何在不離開上下文的情況下存取產品資料和內容，以有效率地撰寫和建置商務相關體驗。
 exl-id: 45d697b7-ec96-4c26-be2a-3395b731d52d
-source-git-commit: ba0c1e13f311f48ac138f2c3ca582835a4a83bf6
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '719'
+source-wordcount: '717'
 ht-degree: 1%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 ## 概觀 {#overview}
 
-CIF附加元件利用商業專用功能來擴充AEM編寫。 這可讓作者在不離開內容的情況下存取產品資料和內容，以有效率地建置和管理商務相關的體驗。
+CIF附加元件以特定於commerce的功能擴充AEM編寫功能。 這可讓作者在不離開內容的情況下存取產品資料和內容，以有效率地建置和管理商務相關的體驗。
 
 ## 選取器 {#pickers}
 
@@ -33,7 +33,7 @@ CIF附加元件利用商業專用功能來擴充AEM編寫。 這可讓作者在�
 
 ![未選取的Teaser元件](../assets/authoring/teaser_component_without_selection.png)
 
-此元件的設定對話方塊需要產品。 CIF會使用SKU作為產品識別碼。 作者可以手動輸入sku，或按一下資料夾圖示以開啟產品選擇器。 選取並關閉選擇器後，元件對話方塊會顯示所選產品的名稱
+此元件的設定對話方塊需要產品。 CIF會使用SKU作為產品識別碼。 作者可以手動輸入SKU或按一下資料夾圖示以開啟產品選擇器。 選取並關閉選擇器後，元件對話方塊會顯示所選產品的名稱
 
 ![具有選取範圍的Teaser元件](../assets/authoring/teaser_component_with_selection.png)
 

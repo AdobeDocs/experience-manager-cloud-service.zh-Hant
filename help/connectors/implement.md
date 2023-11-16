@@ -1,10 +1,10 @@
 ---
 title: 實作 AEM 連接器
-description: 瞭解如何建立、測試及實作AEM聯結器。 此外，您也會瞭解常見的整合模式。
+description: 瞭解如何建置、測試和實作AEM聯結器。 此外，您也可以瞭解常見的整合模式。
 exl-id: 70024424-8c52-493e-bbc9-03d238b8a5f5
-source-git-commit: 5482e94bc1a2e7524eb699f2ae766ba40c138e91
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '980'
+source-wordcount: '979'
 ht-degree: 7%
 
 ---
@@ -26,7 +26,7 @@ AEM是尖端的Web體驗管理解決方案，提供許多潛在的整合領域�
 * 正在從AEM擷取資產。 例如，參照儲存在AEM Assets中之資產的外部內容管理系統(CMS)。 或者，以連結至AEM Assets影像的PIM系統為例。
 * 將資產儲存在AEM基礎架構中。 例如，行銷資源管理(MRM)系統將核准的資產儲存在AEM Assets中。
 * 設定和呈現自訂UI元件。 例如，允許作者拖放視訊元件，並設定要在即時網站上播放的特定視訊。
-* 透過合作夥伴服務對資產採取行動。 例如，在發佈頁面時將資產傳送至視訊平台。
+* 透過合作夥伴服務對資產採取行動。 例如，在發佈頁面時傳送資產至視訊平台。
 * 在AEM Admin Console中分析網站、頁面或資產。 例如，針對現有或未發佈的頁面提出SEO建議。
 * 對由外部服務維護的使用者資料的頁面層級存取。 例如，使用人口統計資訊來個人化網站體驗。 閱讀有關ContextHub的資訊，這是一個用於儲存、操作和呈現內容資料的架構。
 * 翻譯網站副本或資產中繼資料。 請參閱 [AEM翻譯框架Bootstrap聯結器](https://github.com/Adobe-Marketing-Cloud/aem-translation-framework-bootstrap-connector) 適用於使用AEM Translation Framework的範常式式碼，這是偏好使用的翻譯聯結器實作。
@@ -65,16 +65,16 @@ Experience Manageras a Cloud Service [檔案](../overview/introduction.md) 提�
 
 建議將大部分聯結器程式碼放在 `/apps/connectors/<vendor>` 為擁有數個聯結器的客戶宣傳乾淨的存放庫結構。
 
-Cloud Services設定
+Cloud Service設定
 -----------------------------
 
-聯結器實作的一個方面是支援聯結器設定的程式碼。 此程式碼會使帶有聯結器名稱的卡片出現在「工具>作業>Cloud Services」下。 按一下時， [設定瀏覽器](/help/implementing/developing/introduction/configurations.md#using-configuration-browser) 客戶選取上層資料夾以包含聯結器設定的位置會彈出。 聯結器的程式碼將產生一個包含所有必須設定的屬性的表單，最終將值儲存在下的設定資料夾中 `/conf`. 您稍後可以在「網站屬性」標籤或「資產屬性」標籤下選取此資料夾。
+聯結器實作的一個方面是支援聯結器設定的程式碼。 此程式碼會使帶有聯結器名稱的卡片出現在「工具>作業>Cloud Service」下。 按一下時， [設定瀏覽器](/help/implementing/developing/introduction/configurations.md#using-configuration-browser) 客戶選取上層資料夾以包含聯結器設定的位置會彈出。 聯結器的程式碼將產生一個包含所有必須設定的屬性的表單，最終將值儲存在下的設定資料夾中 `/conf`. 您稍後可以在「網站屬性」標籤或「資產屬性」標籤下選取此資料夾。
 
 
 內容感知設定
 -----------------------------
 
-[內容感知設定](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration.html) 允許跨不同資料夾進行圖層設定，包括 `/libs`， `/apps`， `/conf` 和子資料夾在 `/conf`. 它支援繼承，因此客戶可以設定全域設定，同時對每個微網站進行特定變更。 由於此功能可用於Cloud Services設定，因此聯結器程式碼應使用內容感知設定API來參照設定，而非參照特定設定節點。
+[內容感知設定](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration.html) 允許跨不同資料夾進行圖層設定，包括 `/libs`， `/apps`， `/conf` 和子資料夾在 `/conf`. 它支援繼承，因此客戶可以設定全域設定，同時對每個微網站進行特定變更。 由於此功能可用於Cloud Service設定，因此聯結器程式碼應使用內容感知設定API來參照設定，而非參照特定設定節點。
 
 如果在聯結器中使用修改後的設定，則建構聯結器以處理包含/合併聯結器提供的預設設定與任何客戶設定的任何未來更新。 請記住，在沒有客戶警告和同意的情況下變更自訂（如由客戶變更的）內容或設定可能會破壞其聯結器（或產生非預期行為）。
 

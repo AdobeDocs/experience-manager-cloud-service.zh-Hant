@@ -5,9 +5,9 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: 9bfc3995-ac8e-488e-b68f-9e1b5b4a3176
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1399'
+source-wordcount: '1398'
 ht-degree: 48%
 
 ---
@@ -107,7 +107,7 @@ ht-degree: 48%
 
    ![編輯頁面](assets/sites-editor-title.png)
 
-您可以隨時在瀏覽器中切換回該索引標籤，以返回網站主控台。 使用網站編輯器，您可以快速檢視頁面內容，因為內容作者和您的對象將看到該頁面。
+您可以隨時在瀏覽器中切換回該索引標籤，以返回網站主控台。 您可以使用網站編輯器快速檢視頁面內容，讓內容作者和您的對象看得見。
 
 >[!NOTE]
 >
@@ -201,7 +201,7 @@ AEM內容是由其結構所驅動。 AEM 對內容結構的要求很少，但在
 * 了解 AEM 如何儲存 內容。
 * 熟悉 AEM 的翻譯工具。
 
-在此基礎上繼續您的AEM Sites翻譯歷程，接下來檢閱檔案 [設定翻譯聯結器](configure-connector.md) 您將瞭解如何將AEM連線到翻譯服務。|
+在此基礎上繼續您的AEM Sites翻譯歷程，接下來檢閱檔案 [設定翻譯聯結器](configure-connector.md) 您可在其中學習如何將AEM連結至翻譯服務。|
 
 ## 其他資源 {#additional-resources}
 

@@ -2,10 +2,10 @@
 title: 使用 Universal Editor 編寫內容
 description: 了解內容作者使用 Universal Editor 建立內容有多簡單和直覺。
 exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
-source-git-commit: c6d4300e6e031a4958277fa3bce251ac6aa5dbc9
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '2442'
-ht-degree: 73%
+source-wordcount: '2432'
+ht-degree: 71%
 
 ---
 
@@ -38,7 +38,7 @@ Universal Editor 支援在任意實作中編輯任何方面的內容，以便提
 
 ## 登入 {#sign-in}
 
-一旦檢測到應用程式與 Universal Editor 一起使用，您將需要登入 Universal Editor。您需要 Adobe ID 才能登入和[存取 Universal Editor。](getting-started.md#request-access)
+應用程式依照指示使用通用編輯器後，請登入通用編輯器。 您需要Adobe ID才能登入和 [擁有通用編輯器的存取權。](getting-started.md#request-access)
 
 登入後，請在[位置列中輸入您要編輯的頁面 URL。](#location-bar)這樣一來，您就可以開始編輯內容，例如[文字內容](#text-mode)或[媒體內容](#media-mode)。
 
@@ -146,7 +146,7 @@ Universal Editor 標頭始終顯示在畫面頂端，就在 [Experience Cloud �
 
 ![模擬選項](assets/emulation-options.png)
 
-根據預設，編輯器將以桌面版面開啟，其中高度和寬度由瀏覽器自動定義。
+依預設，編輯器會在案頭版面配置中開啟，其中高度和寬度會由瀏覽器自動定義。
 
 您也可以選擇在 Universal Editor 中模擬行動裝置：
 
@@ -192,7 +192,7 @@ Universal Editor 標頭始終顯示在畫面頂端，就在 [Experience Cloud �
 
 #### 元件模式 {#component-mode}
 
-在元件模式中，內容作者可以按一下以選取元件，以便進行編輯，包括：
+在元件模式中，內容作者可以選取要編輯的元件，包括：
 
 * 在原處[編輯純文字](#editing-content)。
 * [編輯RTF文字](#editing-rich-text) 「屬性」邊欄中顯示的其他格式選項。

@@ -2,10 +2,10 @@
 title: 與 Adobe Target 整合時使用的 IMS 設定
 description: 瞭解與Adobe Target整合時使用的IMS設定
 exl-id: b5474b70-bedc-4cc9-ad47-89dcb2415e3a
-source-git-commit: 155b24c4b46e8baebd6215c0717d9f2adde95017
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '883'
-ht-degree: 5%
+source-wordcount: '880'
+ht-degree: 7%
 
 ---
 
@@ -154,7 +154,7 @@ Adobe Developer Console專案（整合），與AEM將使用的Adobe Target搭配
 * API
    * 例如，Adobe Target
 
-您需要其中的一些功能，才能在AEM中根據IMS完成Adobe Target的整合。
+其中部分專案您必須根據IMS在AEM中完成Adobe Target的整合。
 
 ## 在AEM中完成IMS設定 {#completing-the-ims-configuration-in-aem}
 
@@ -196,7 +196,7 @@ Adobe Developer Console專案（整合），與AEM將使用的Adobe Target搭配
 
    ![檢查健康狀態](assets/integrate-target-ims-12.png)
 
-1. 如果成功，您將看到一則確認訊息。
+1. 如果成功，您會看到一則確認訊息。
 
 ## 完成與Adobe Target的整合 {#complete-the-integration-with-adobe-target}
 
@@ -211,7 +211,7 @@ The configuration can now be referenced for a Cloud Service to use the Target St
 1. Open the **Tools** menu. Then, within the **Cloud Services** section, select **Legacy Cloud Services**.
 1. Scroll down to **Adobe Target** and select **Configure now**.
 
-   The **Create Configuration** dialog will open.
+   The **Create Configuration** dialog opens.
 
 1. Enter a **Title** and, if you want, a **Name** (if left blank it is generated from the title).
 
@@ -219,7 +219,7 @@ The configuration can now be referenced for a Cloud Service to use the Target St
 
 1. Confirm with **Create**.
 
-   The **Edit Component** dialog will open.
+   The **Edit Component** dialog opens.
 
 1. Enter the details in the **Adobe Target Settings** tab:
 

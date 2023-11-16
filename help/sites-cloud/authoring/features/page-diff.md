@@ -2,9 +2,9 @@
 title: 頁面差異
 description: 頁面差異功能可方便的對兩個頁面進行並排比較，並反白顯示其差異。
 exl-id: 6e5c7f14-c980-48e3-8bdd-a7ec10a9e680
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '610'
+source-wordcount: '609'
 ht-degree: 1%
 
 ---
@@ -65,7 +65,7 @@ ht-degree: 1%
 
 ### 全熒幕和正在退出 {#fullscreen-and-exiting}
 
-若要聚焦於特定內容，您可以按一下並排差異比較任一邊的全熒幕圖示，將其放大至整個瀏覽器視窗。
+若要聚焦於特定內容，您可以按一下並排差異之任一邊的全熒幕圖示，將其放大至整個瀏覽器視窗。
 
 ![全熒幕按鈕](/help/sites-cloud/authoring/assets/versions-full-screen.png)
 

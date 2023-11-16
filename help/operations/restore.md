@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service 中的內容還原
 description: 瞭解如何使用 Cloud Manager 從備份中還原 AEM as a Cloud Service 內容。
 exl-id: 921d0c5d-5c29-4614-ad4b-187b96518d1f
-source-git-commit: bf8493909fa995ec30d67646aec5b712318dbf75
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1166'
-ht-degree: 100%
+source-wordcount: '1162'
+ht-degree: 94%
 
 ---
 
@@ -46,13 +46,13 @@ Cloud Manager 提供兩種型別的備份，您可以從中還原內容。
 
 >[!NOTE]
 >
->若使用者具備&#x200B;**企業所有者**&#x200B;或&#x200B;**部署管理員**&#x200B;角色，他們必須登入角色才能啟動還原操作。
+>使用者具有 **企業所有者** 或 **部署管理員** 必須登入角色才能啟動還原操作。
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織。
 
-1. 按一下要啟動還原的方案。
+1. 按一下要啟動還原的程式。
 
-1. 從 **計畫總覽**&#x200B;頁面，在&#x200B;**環境**&#x200B;卡片，按一下要啟動還原的環境旁的省略符號按鈕，然後選取&#x200B;**還原內容**。
+1. 從 **計畫總覽** 頁面，在 **環境** 卡片，按一下要啟動還原的環境旁的省略符號按鈕，然後選取 **還原內容**.
 
    ![還原選項](assets/backup-option.png)
 

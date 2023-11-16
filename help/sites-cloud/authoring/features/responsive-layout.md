@@ -2,10 +2,10 @@
 title: 回應式版面
 description: AEM可讓您實現頁面的回應式版面
 exl-id: 87202742-5bed-4e87-a427-456a1a0e72cc
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1739'
-ht-degree: 7%
+source-wordcount: '1734'
+ht-degree: 6%
 
 ---
 
@@ -90,7 +90,7 @@ AEM可讓您根據裝置的寬度定義版面：
 
    ![「模擬器」按鈕](/help/sites-cloud/authoring/assets/emulator.png)
 
-1. 模擬器工具列將會開啟。
+1. 模擬器工具列隨即開啟。
 
    ![模擬器工具列](/help/sites-cloud/authoring/assets/responsive-layout-emulator-toolbar.png)
 
@@ -108,7 +108,7 @@ AEM可讓您根據裝置的寬度定義版面：
 1. 若要選取要模擬的特定裝置，您可以：
 
    * 使用「選取裝置」圖示，並從下拉式選取器選取。
-   * 在模擬器工具列中，點選/按一下裝置指示器。
+   * 點選/按一下模擬器工具列中的裝置指示器。
 
    ![選擇裝置下拉式清單](/help/sites-cloud/authoring/assets/responsive-layout-select-device-dropdown.png)
 
@@ -136,7 +136,7 @@ A **配置容器** 是段落系統：
 >
 >如果尚未提供，請使用 **配置容器** 必須為段落系統/頁面明確啟動。 <!-- If not already available, the **Layout Container** must be explicitly [activated for a paragraph system/page](/help/sites-administering/configuring-responsive-layout.md).-->
 
-1. 「配 **置容器** 」是元件瀏覽器中的標準 [元件](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser)。從這裡，您可以將其拖曳至頁面上的必要位置，之後您將看到「拖曳元件至此處 **** 」預留位置。
+1. 「配 **置容器** 」是元件瀏覽器中的標準 [元件](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser)。從這裡，您可以將其拖曳至頁面上的必要位置，之後您會看到 **將元件拖曳到這裡** 預留位置。
 1. 然後，您可以將元件新增至版面容器。 這些元件將儲存實際內容：
 
    ![配置容器](/help/sites-cloud/authoring/assets/responsive-layout-add-to-layout-container.png)

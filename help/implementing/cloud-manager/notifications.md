@@ -2,10 +2,10 @@
 title: 通知
 description: 了解如何使用 Adobe Experience Cloud 通知系統接收有關管道部署的資訊。
 exl-id: c1c740b0-c873-45a8-9518-a856db2be75b
-source-git-commit: d95b432f74a7b52efc9fd1cf0e380c3f5237503c
-workflow-type: ht
-source-wordcount: '589'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '584'
+ht-degree: 85%
 
 ---
 
@@ -32,17 +32,17 @@ ht-degree: 100%
 
 ![通知側邊欄](assets/notificaitons-announcements.png)
 
-按一下任一通知或公告即可檢視其詳細內容。連結至管道部署等活動的通知將帶您了解該活動的詳細資訊，例如管道執行視窗。
+按一下通知或宣告以檢視其詳細資料。 連結至管道部署等活動的通知將帶您了解該活動的詳細資訊，例如管道執行視窗。
 
-按一下面板底部的&#x200B;**檢視全部**&#x200B;選項，即可檢視收件匣中的所有公告。
+按一下 **檢視全部** 面板底部的選項，用以檢視收件匣中的所有公告。
 
-按一下面板底部的&#x200B;**全部標記為已讀**&#x200B;選項，即可將所有未讀通知標示為已讀取並清除鈴鐺圖示標記。
+按一下 **全部標籤為已讀** 面板底部的選項，可將所有未讀取通知標示為已讀取並清除鈴鐺圖示標籤。
 
 ## 通知設定 {#configuration}
 
 您可以自訂接收通知的方式以及接收哪些通知。
 
-請按一下通知側邊欄頂端的齒輪圖示。
+按一下通知側邊欄頂端的齒輪圖示。
 
 ![通知設定圖示](assets/notifications-configuration.png)
 
@@ -54,7 +54,7 @@ ht-degree: 100%
 
 ![通知訂閱](assets/notifications-subscriptions.png)
 
-根據預設，您會透過應用程式和電子郵件收到所有產品的所有通知。按一下產品名稱旁邊的 > 形箭號即可顯示詳細的選項，並定義您收到該產品的通知類型。或者勾選或取消勾選產品級別的選項，即可選取/取消選取擇該產品的所有選項。
+根據預設，您會透過應用程式和電子郵件收到所有產品的所有通知。按一下產品名稱旁的>形箭號，就會顯示詳細的選項，並定義您會收到的該產品通知型別。 或者勾選或取消勾選產品級別的選項，即可選取/取消選取擇該產品的所有選項。
 
 ![通知訂閱自訂](assets/notifications-subscriptions-customize.png)
 

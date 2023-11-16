@@ -2,10 +2,10 @@
 title: 啟動
 description: 啟動可讓您有效率地開發未來版本的內容。可讓您完成變更以供未來發佈，同時維護目前的頁面
 exl-id: 3e410120-d08f-4d05-932f-07bc4440af2b
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: ht
-source-wordcount: '902'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '901'
+ht-degree: 98%
 
 ---
 
@@ -96,7 +96,7 @@ ht-degree: 100%
 
    ![網站主控台中的啟動參考](/help/sites-cloud/authoring/assets/launches-references.png)
 
-1. 點選/按一下適當的啟動，會顯示可用動作清單：
+1. 點選/按一下適當的啟動，畫面會顯示可執行的動作清單：
 
    ![網站主控台中對啟動執行的動作](/help/sites-cloud/authoring/assets/launches-references-actions.png)
 

@@ -2,10 +2,10 @@
 title: 為 Headless 內容設定翻譯整合
 description: 了解如何將 AEM 連接到翻譯服務。
 exl-id: c91b2701-7ede-4d0b-93dd-3636c6638be2
-source-git-commit: f4e28d89023e8f326e6816ebd8168e1e31e772ce
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1231'
-ht-degree: 100%
+source-wordcount: '1230'
+ht-degree: 97%
 
 ---
 
@@ -132,7 +132,7 @@ AEM 是一種靈活而強大的工具，透過多個連接器和多個設定，�
 * 了解 AEM 中翻譯整合框架的重要參數。
 * 能夠為您的翻譯服務設定您自己的連接。
 
-以這些知識為基礎，接下來查看文件[翻譯內容](translation-rules.md)以繼續您的 AEM Headless 翻譯歷程，您將在此文件了解到目前為止如何使用您的設定以實際翻譯您的內容。
+在此基礎上繼續您的AEM Headless翻譯歷程，接下來檢閱檔案 [翻譯內容，](translation-rules.md) 在這裡，您可以瞭解如何使用目前為止的設定來實際翻譯您的內容。
 
 ## 其他資源 {#additional-resources}
 

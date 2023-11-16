@@ -2,10 +2,10 @@
 title: Cloud Manager 存放庫
 description: 了解如何在 Cloud Manager 中建立、檢視和刪除 Git 存放庫。
 exl-id: 6e1cf636-78f5-4270-9a21-38b4d5e5a0b0
-source-git-commit: af8ab1f741c658dcb47bdf0d37e403fcb180631a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '588'
-ht-degree: 96%
+source-wordcount: '585'
+ht-degree: 87%
 
 ---
 
@@ -36,7 +36,7 @@ ht-degree: 96%
 
 當精靈關閉時，您的新存放庫會顯示在表格中。
 
-您可以在資料表中選取存放庫，然後按一下省略符號按鈕，然後選取&#x200B;**複製存放庫 URL**、**檢視和更新**&#x200B;或&#x200B;**刪除**&#x200B;您的存放庫。
+您可以在表格中選取存放庫，然後按一下省略符號按鈕並選取 **複製存放庫URL**， **檢視和更新**，或 **刪除**.
 
 ![存放庫選項](/help/implementing/cloud-manager/assets/repos/create-repo3.png)
 
@@ -58,9 +58,9 @@ ht-degree: 96%
 
 按照這些步驟即可刪除 Cloud Manager 中的存放庫。
 
-1. 從&#x200B;**計畫概觀**&#x200B;頁面，按一下&#x200B;**存放庫**&#x200B;索引標籤，並瀏覽至&#x200B;**存放庫**&#x200B;頁面。
+1. 從 **計畫總覽** 頁面，按一下 **存放庫** 標籤並導覽至 **存放庫** 頁面。
 
-1. 選擇存放庫，按一下省略符號按鈕，然後選擇&#x200B;**刪除**&#x200B;以刪除存放庫。
+1. 選取存放庫，然後按一下省略符號按鈕並選取 **刪除** 以刪除存放庫。
 
    ![刪除存放庫](/help/implementing/cloud-manager/assets/repos/delete-repo.png)
 

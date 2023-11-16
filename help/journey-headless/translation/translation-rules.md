@@ -2,10 +2,10 @@
 title: 設定 Headless 內容的翻譯規則
 description: 了解如何定義翻譯規則以識別要翻譯的內容。
 exl-id: 878ffd5d-0f10-4990-9779-bdf55cd95fac
-source-git-commit: f4e28d89023e8f326e6816ebd8168e1e31e772ce
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '941'
-ht-degree: 100%
+source-wordcount: '940'
+ht-degree: 96%
 
 ---
 
@@ -100,7 +100,7 @@ ht-degree: 100%
 * 了解翻譯規則的作用。
 * 能夠定義您自己的翻譯規則。
 
-以這些知識為基礎，接下來查看文件[翻譯內容](translate-content.md)以繼續您的 AEM Headless 翻譯歷程，您將在此文件了解整合和規則如何搭配運作以翻譯 Headless 內容。
+在此基礎上繼續您的AEM Headless翻譯歷程，接下來檢閱檔案 [翻譯內容](translate-content.md) 在這裡，您可以瞭解整合和規則如何共同運作來翻譯Headless內容。
 
 ## 其他資源 {#additional-resources}
 

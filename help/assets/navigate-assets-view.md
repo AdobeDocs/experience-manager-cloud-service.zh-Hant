@@ -3,10 +3,10 @@ title: 「[!DNL Assets view]使用者介面」
 description: 了解  [!DNL Assets view] 中的使用者介面和導覽
 role: User
 exl-id: 534a8084-88f7-410e-b872-719e47e62b10
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '895'
-ht-degree: 92%
+source-wordcount: '894'
+ht-degree: 90%
 
 ---
 
@@ -68,7 +68,7 @@ ht-degree: 92%
 
 若要找到資產，您可以依照 `Name`、`Relevancy`、`Size`、`Modified` 和 `Created` 的遞增或遞減順序排序資產。
 
-若要導覽到資料夾，請按兩下資料夾的縮圖，或從左側邊欄選取該資料夾。若要檢視資料夾的詳細資訊，請選取該資料夾，或從頂部的工具列按一下「詳細資訊」。若要向上和向下瀏覽階層，請使用左側邊欄或頂部的階層連結。
+若要導覽至資料夾，請連按兩下資料夾的縮圖，或從左側邊欄選取資料夾。 若要檢視資料夾的詳細資訊，請選取該資料夾，或從頂部的工具列按一下「詳細資訊」。若要向上和向下瀏覽階層，請使用左側邊欄或頂部的階層連結。
 
 ![瀏覽資料夾](assets/browsing-folders.png)
 

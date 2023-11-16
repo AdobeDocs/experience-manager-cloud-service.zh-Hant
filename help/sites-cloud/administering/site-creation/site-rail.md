@@ -4,9 +4,9 @@ description: 瞭解網站邊欄的強大功能，協助您輕鬆自訂和管理�
 feature: Administering
 role: Admin
 exl-id: 45785e5a-4fa2-4cf2-a300-f1865f6f5807
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '596'
+source-wordcount: '595'
 ht-degree: 0%
 
 ---

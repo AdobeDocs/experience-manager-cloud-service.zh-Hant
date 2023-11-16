@@ -2,9 +2,9 @@
 title: 建立頁面範本
 description: 範本會定義結果頁面的結構，且使用範本編輯器，建立和維護範本不再是開發人員專屬的工作
 exl-id: 4c9dbf26-5852-45ab-b521-9f051c153b2e
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '4570'
+source-wordcount: '4567'
 ht-degree: 11%
 
 ---
@@ -234,7 +234,7 @@ ht-degree: 11%
 
 * [結構](#editing-a-template-structure-template-author)
 * [初始內容](#editing-a-template-initial-content-author)
-* [配置](#editing-a-template-layout-template-author)
+* [版面配置](#editing-a-template-layout-template-author)
 
 ![範本編輯器模式選擇器](/help/sites-cloud/authoring/assets/templates-mode.png)
 
@@ -268,7 +268,7 @@ ht-degree: 11%
 >
 >在 **初始內容** 模式，以及在結果頁面上，可以刪除任何具有可存取父項的已解鎖元件（即配置容器內的元件）。
 
-#### 配置 {#template-layout}
+#### 版面配置 {#template-layout}
 
 使用版 [面](#editing-a-template-layout-template-author) ，您可以預先定義所需裝置格式的範本版面。**範本製作的** 「版面」模式與頁面製作的「版面 [**** 」模式功能相同](/help/sites-cloud/authoring/features/responsive-layout.md#defining-layouts-layout-mode)。
 
@@ -607,7 +607,7 @@ ht-degree: 11%
 
 >[!NOTE]
 >
->雖然範本作者可以在範本上指定頁面原則，但是他們需要從開發人員取得適當使用者端資料庫的詳細資料。
+>雖然範本作者可以在範本上指定頁面原則，但他們必須向開發人員取得適當使用者端程式庫的詳細資料。
 
 ### 編輯範本 — 初始頁面屬性 — 作者 {#editing-a-template-initial-page-properties-author}
 

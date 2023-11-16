@@ -2,10 +2,10 @@
 title: 休眠和去休眠沙箱環境
 description: 了解沙箱計畫的環境如何自動進入休眠模式以及如何解除休眠。
 exl-id: c0771078-ea68-4d0d-8d41-2d9be86408a4
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '685'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '681'
+ht-degree: 93%
 
 ---
 
@@ -31,7 +31,7 @@ ht-degree: 100%
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織。
 
-1. 按一下要休眠的計畫以顯示其詳細資訊。
+1. 按一下要休眠的程式以顯示其詳細資訊。
 
 1. 在&#x200B;**環境**&#x200B;卡，按一下省略符號按鈕並選擇&#x200B;**Developer Console**。
 
@@ -47,7 +47,7 @@ ht-degree: 100%
 
    ![確認休眠](assets/hibernate-2.png)
 
-休眠成功後，您將在&#x200B;**Developer Console**&#x200B;畫面。
+休眠成功後，您會在中看到您環境的休眠流程完成通知 **開發人員主控台** 畫面。
 
 ![休眠確認](assets/hibernate-4.png)
 
@@ -65,13 +65,13 @@ ht-degree: 100%
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織。
 
-1. 按一下要休眠的計畫以顯示其詳細資訊。
+1. 按一下要休眠的程式以顯示其詳細資訊。
 
 1. 在&#x200B;**環境**&#x200B;卡，按一下省略符號按鈕並選擇&#x200B;**Developer Console**。
 
    * 如需 Developer Console 的更多詳細資訊，請參閱[存取 Developer Console ](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console)。
 
-1. 按一下&#x200B;**取消休眠**。
+1. 按一下 **解除休眠**.
 
    ![取消休眠按鈕](assets/de-hibernation-img1.png)
 

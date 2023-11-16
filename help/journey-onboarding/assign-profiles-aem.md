@@ -1,13 +1,13 @@
 ---
 title: 指派 AEM 產品設定檔
-description: 設定雲端資源後，您需要使用 AEM 產品設定檔授與您的團隊對 AEM 的存取權。
+description: 設定雲端資源後，請使用AEM產品設定檔授與您的團隊對AEM的存取權。
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: c00f5d28-85af-4bd3-a50c-913d1342241c
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '898'
-ht-degree: 100%
+source-wordcount: '886'
+ht-degree: 82%
 
 ---
 
@@ -18,11 +18,11 @@ ht-degree: 100%
 >title="指派 AEM 產品設定檔"
 >abstract="您無權使用 Experience Manager Assets。請聯絡您的管理員。"
 
-在[上線歷程](overview.md)的這一部分，您將了解如何使用 AEM 產品設定檔向您的團隊授與對 AEM 的存取權。
+在這部分中 [入門歷程，](overview.md) 您將瞭解如何使用AEM產品設定檔授與您的團隊存取AEM的許可權。
 
 ## 目標 {#objective}
 
-閱讀此上線歷程[建立環境](create-environments.md)中的上一個文件並設定雲端資源後，您將需要使用 AEM 產品設定檔授與您的團隊對 AEM 的存取權。作為系統管理員，您可以透過指派 AEM 產品設定檔來執行此操作。
+在您閱讀了此上線過程中的上一個檔案後， [建立環境，](create-environments.md) 並設定雲端資源，使用AEM產品設定檔授與您的團隊對AEM的存取權。 作為系統管理員，您可以透過指派 AEM 產品設定檔來執行此操作。
 
 閱讀本文件後，您應會了解：
 
@@ -74,7 +74,7 @@ ht-degree: 100%
 
    選取「![選取執行個體](/help/journey-onboarding/assets/cloud-profiles-1.png)。
 
-1. 您將看到 AEM as a Cloud Service 產品設定檔清單，這些設定檔可以根據使用者的角色指派給使用者。
+1. 您可以檢視可根據使用者的角色指派給使用者的AEMas a Cloud Service產品設定檔清單。
 
    ![產品設定檔](/help/journey-onboarding/assets/cloud-profiles-2.png)
 
@@ -92,7 +92,7 @@ ht-degree: 100%
 
    ![指派存取權](/help/journey-onboarding/assets/add-team2.png)
 
-1. 選擇 `AEM Administrator` 或 `AEM User`，然後如下所示按一下&#x200B;**新增使用者**，並提交必要的詳細資訊以完成新增團隊成員。
+1. 選取 `AEM Administrator` 或 `AEM User` 並按一下 **新增使用者** 如下所示，並提交必要的詳細資訊，以完成新增團隊成員。
 
    ![新增團隊成員](/help/journey-onboarding/assets/add-team3.png)
 
@@ -106,8 +106,8 @@ ht-degree: 100%
 
 但是，如果您想更了解作者和開發人員如何使用該系統，您可以選擇繼續此上線歷程的兩個部分：
 
-* [開發人員和部署管理員任務](developers.md) - 您將了解開發人員如何存取 Git 以儲存他們的自訂程式碼，並使用 Cloud Manager 管道進行部署。
-* [AEM 使用者任務](aem-users.md) - 您將在其中學習如何存取可以開始建立內容的 AEM 環境。
+* [開發人員和部署管理員工作](developers.md)  — 您可在此處瞭解開發人員如何存取Git以儲存其自訂程式碼，並使用Cloud Manager管道進行部署。
+* [AEM使用者工作](aem-users.md)  — 您可在其中瞭解如何存取AEM環境，以便開始建立內容。
 
 ## 其他資源 {#additional-resources}
 

@@ -4,9 +4,9 @@ description: 使用表格元件將表格新增至最適化表單。 除了協助
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Adaptive Forms
 exl-id: 88ace1d4-b68d-40e6-a7b4-918ba25f2e91
-source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '2498'
+source-wordcount: '2494'
 ht-degree: 3%
 
 ---
@@ -71,7 +71,7 @@ AEM Forms的側邊欄元件瀏覽器中提供表格元件，可讓您以最適�
 
 ![add-delete-move-row-column](assets/add-delete-move-row.png)
 
-按兩下列以設定列的屬性，例如「名稱」、「繫結參考」、「重複設定」、「CSS類別」。
+按兩下該列以設定列的屬性，例如「名稱」、「繫結參考」、「重複設定」、「CSS類別」。
 ![add-delete-move-row-column](assets/row-properties-image.png)
 
 
@@ -155,7 +155,7 @@ AEM Forms的側邊欄元件瀏覽器中提供表格元件，可讓您以最適�
 1. 在重複設定索引標籤中，指定最小和最大計數以限制表格中的列數。
 1. 按一下&#x200B;**「完成」**。
 
-在執行階段或預覽時，您將會看到 **+** 和 ![刪除按鈕](/help/forms/assets/Smock_Delete.svg) 按鈕以新增或刪除列。
+在執行階段或預覽時，您會看到 **+** 和 ![刪除按鈕](/help/forms/assets/Smock_Delete.svg) 按鈕以新增或刪除列。
 
 ![add-delete-rows-dynamic](assets/add-delete-layout.png)
 

@@ -2,10 +2,10 @@
 title: 了解如何在內容片段中使用參考
 description: 了解如何在內容片段中使用內容、其他片段和其他資產 (媒體) 的參考。介紹巢狀片段對 Headless CMS 編寫的必要性和機制。
 exl-id: a65e8a5a-954b-4307-8027-ca8bac5f4261
-source-git-commit: d6b98559e7cbe5fc5bd05d9cf37225e960e668e7
-workflow-type: ht
-source-wordcount: '712'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '710'
+ht-degree: 97%
 
 ---
 
@@ -39,11 +39,11 @@ ht-degree: 100%
 
 ## 內容參考 {#content-references}
 
-內容參考的作用就是可讓您參考任何其他內容。這會開啟瀏覽器，讓您選取內容項目。
+內容參考的作用就是可讓您參考任何其他內容。這樣會開啟一個瀏覽器，讓您選取內容專案。
 
 ## 資產/媒體參考 {#assets-media-references}
 
-可以使用&#x200B;**插入資產**&#x200B;選項，讓資產 (例如影像或媒體) 可在文字區塊內被參考。這會開啟瀏覽器，讓您選取資產。
+可以使用&#x200B;**插入資產**&#x200B;選項，讓資產 (例如影像或媒體) 可在文字區塊內被參考。如此將可開啟瀏覽器，讓您選取資產。
 
 ![內容片段 - 插入資產](/help/journey-headless/author/assets/headless-journey-author-references-02.png)
 

@@ -3,10 +3,10 @@ title: 在 AEM 中使用 GraphiQL IDE
 description: 了解如何在 Adobe Experience Manager 中使用 GraphiQL IDE。
 feature: Content Fragments,GraphQL API
 exl-id: be2ebd1b-e492-4d77-b6ef-ffdea9a9c775
-source-git-commit: d6b98559e7cbe5fc5bd05d9cf37225e960e668e7
-workflow-type: ht
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
 source-wordcount: '1141'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -113,7 +113,7 @@ GraphiQL IDE 也讓您管理[查詢變數](/help/headless/graphql-api/content-fr
 
    ![持續性查詢 HTTP 快取標頭](assets/cfm-graphqlapi-headers-01.png "持續性查詢 HTTP 快取標頭")
 
-1. 選擇此選項將開啟&#x200B;**快取設定**&#x200B;對話框：
+1. 選取此項可開啟 **快取設定** 對話方塊：
 
    ![持續性查詢 HTTP 快取標頭設定](assets/cfm-graphqlapi-headers-02.png "持續性查詢 HTTP 快取標頭設定")
 
@@ -159,7 +159,7 @@ GraphiQL IDE 也讓您管理[查詢變數](/help/headless/graphql-api/content-fr
 <!--
   >[!NOTE]
   >
-  >The URL will need [encoding before using programmatically](/help/headless/graphql-api/persisted-queries.md#encoding-query-url).
+  >The URL needs [encoding before using programmatically](/help/headless/graphql-api/persisted-queries.md#encoding-query-url).
   >
   >The target environment might need adjusting, depending on your requirements.
 -->

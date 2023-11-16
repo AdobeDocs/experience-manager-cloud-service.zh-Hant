@@ -3,13 +3,13 @@ title: 內容片段模型
 description: 瞭解內容片段模型如何作為您在AEM中內容片段的基礎。 這些片段可讓您建立結構化內容，以用於Headless傳送或頁面編寫。
 feature: Content Fragments
 role: User, Developer, Architect
-source-git-commit: 3d20f4bca566edcdb5f13eab581c33b7f3cf286d
+exl-id: 8ab5b15f-cefc-45bf-a388-928e8cc8c603
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '3064'
+source-wordcount: '3061'
 ht-degree: 6%
 
 ---
-
 
 # 內容片段模型 {#content-fragment-models}
 
@@ -180,6 +180,7 @@ Adobe Experience Manager (AEM)中的內容片段模型as a Cloud Service定義 [
    * 允許引進索引標籤，以在編輯內容片段內容時使用。
       * 這些在模型編輯器中顯示為分隔線，分隔內容資料型別清單的區段。 每個例項代表新索引標籤的開始。
       * 在片段編輯器中，每個例項都會顯示為一個索引標籤。
+
      >[!NOTE]
      >
      >此資料型別僅用於格式設定，AEM GraphQL結構描述會忽略此資料型別。
@@ -197,7 +198,7 @@ Adobe Experience Manager (AEM)中的內容片段模型as a Cloud Service定義 [
   >如果在舊版AEM中建立的模型包含非法字元，請移除或更新這些字元。
 
 * **呈現為**
-在片段中實現/轉譯欄位的各種選項。 這通常可讓您定義作者將看到欄位的單一例項，還是允許建立多個例項。
+在片段中實現/轉譯欄位的各種選項。 這通常可讓您定義作者會看到欄位的單一例項，還是允許建立多個例項。
 
 * **欄位標籤**
 輸入 **欄位標籤** 自動產生 **屬性名稱**，然後可視需要手動更新。

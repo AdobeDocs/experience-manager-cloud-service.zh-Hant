@@ -2,9 +2,9 @@
 title: 內容轉移工具快速入門
 description: 瞭解如何開始使用內容轉移工具
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
-source-git-commit: 9c45a46bc50625301529d5433c78fc9c706f8071
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1439'
+source-wordcount: '1427'
 ht-degree: 21%
 
 ---
@@ -98,7 +98,7 @@ ht-degree: 21%
    >
    >名稱必須遵循與AEM節點相同的慣例，因此不能包含以下任一字元： . / ： [ ] | *
 
-1. 您現在應該會在清單檢視中看到移轉清單。 按一下三點符號(**...**)以開啟下拉式清單，然後按一下 **複製擷取金鑰**. 在提取階段您需要此金鑰。 複製此擷取金鑰。
+1. 您現在應該會在清單檢視中看到移轉清單。 選取三點符號(**...**)以開啟下拉式清單並選取 **複製擷取金鑰**. 在提取階段您需要此金鑰。 複製此擷取金鑰。
 
    >[!NOTE]
    >
@@ -161,7 +161,7 @@ ht-degree: 21%
    * A *green cloud* indicates that you can complete the extraction process.
    * A *yellow icon* indicates that you did not create the existing migration set and the specific one is created by some other user in the same instance.
 
-1. Select a migration set and click on **Properties** to view or edit the migration set properties. While editing properties, it is not possible to change the **Migration Set name** or the **Service URL**. 
+1. Select a migration set and click **Properties** to view or edit the migration set properties. While editing properties, it is not possible to change the **Migration Set name** or the **Service URL**. 
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ctt06.png) -->
 
@@ -179,7 +179,7 @@ ht-degree: 21%
 
    ![影像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam8.png)
 
-1. 這將會開啟 **檢查大小** 對話方塊。
+1. 這樣會開啟 **檢查大小** 對話方塊。
 
    ![影像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam9.png)
 

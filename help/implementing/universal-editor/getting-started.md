@@ -2,9 +2,9 @@
 title: AEM 中 Universal Editor 快速入門
 description: 了解如何存取 Universal Editor，以及如何開始檢測您的第一個 AEM 應用程式以使用它。
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
-source-git-commit: 6c3b286182ae33cafadf51e653c2076d1911e444
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '924'
+source-wordcount: '922'
 ht-degree: 87%
 
 ---
@@ -171,7 +171,7 @@ itemid="urn:<referenceName>:<resource>"
 
 您可以使用 `config` 首碼位於您的連線URN中，以視需要設定服務和擴充端點。
 
-如果您不想使用由Adobe託管（但您自己的託管版本）的通用編輯器服務，可以在中繼標籤中設定此專案。 為了覆寫Universal Editor提供的預設服務端點，請設定您自己的服務端點：
+如果您不想使用由Adobe託管（但您自己的託管版本）的通用編輯器服務，可以在中繼標籤中設定此專案。 若要覆寫Universal Editor提供的預設服務端點，請設定您自己的服務端點：
 
 * 中繼名稱 —  `urn:adobe:aue:config:service`
 * 中繼內容 —  `content="https://adobe.com"` （範例）

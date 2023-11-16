@@ -1,17 +1,17 @@
 ---
 title: 授予前端開發人員存取權
-description: 將前端開發人員載入Cloud Manager，以便他們能夠存取您的AEM網站Git存放庫和管道。
+description: 讓前端開發人員加入 Cloud Manager，以便能存取您的 AEM 網站 Git 存放庫和管道。
 exl-id: 58e95c92-b859-4bb9-aa62-7766510486fd
-source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '785'
-ht-degree: 2%
+source-wordcount: '784'
+ht-degree: 7%
 
 ---
 
 # 授予前端開發人員存取權 {#grant-fed-access}
 
-將前端開發人員載入Cloud Manager，以便他們能夠存取您的AEM網站Git存放庫和管道。
+讓前端開發人員加入 Cloud Manager，以便能存取您的 AEM 網站 Git 存放庫和管道。
 
 ## 到目前為止 {#story-so-far}
 
@@ -24,14 +24,14 @@ ht-degree: 2%
 
 ## 目標 {#objective}
 
-授與對Cloud Manager的存取權並將使用者角色指派給您的使用者的程式稱為上線。 本檔案將概述入門前端開發人員的最重要步驟，閱讀後您將瞭解：
+授予Cloud Manager存取權並將使用者角色指派給使用者的程式稱為上線。 本檔案將概述入門前端開發人員的最重要步驟，閱讀後您將瞭解：
 
 * 如何將前端開發人員新增為使用者。
-* 如何將所需的角色授與給前端開發人員。
+* 如何將所需的角色授與前端開發人員。
 
 >[!TIP]
 >
->有專門用於將您的團隊上線到AEM as a Cloud Service的完整檔案歷程，連結在 [其他資源區段](#additional-resources) 如果您需要此流程的更多詳細資訊，請參閱本檔案以瞭解詳情。
+>提供了將團隊加入AEM as a Cloud Service的專屬完整檔案歷程，連結至 [其他資源區段](#additional-resources) 如果您需要此流程的更多詳細資訊，請參閱本檔案說明。
 
 ## 負責角色 {#responsible-role}
 
@@ -39,21 +39,21 @@ ht-degree: 2%
 
 ## 要求 {#requirements}
 
-* 您必須成為以下群組成員： **業務負責人** Cloud Manager中的角色。
+* 您必須成為以下群組成員： **企業所有者** Cloud Manager中的角色。
 * 您需要成為 **系統管理員** 在Cloud Manager中。
-* 您需要該Admin Console的存取權。
+* 您需要此Admin Console的存取權。
 
 ## 將前端開發人員新增為使用者 {#add-fed-user}
 
 首先，您需要使用Admin Console將前端開發人員新增為使用者。
 
-1. 登入Admin Console於 [https://adminconsole.adobe.com/](https://adminconsole.adobe.com/).
+1. 於登入Admin Console [https://adminconsole.adobe.com/](https://adminconsole.adobe.com/).
 
 1. 登入後，畫面會顯示類似下列影像的概觀頁面。
 
    ![Admin Console概觀](assets/admin-console.png)
 
-1. 檢查畫面右上角的組織名稱，確認您隸屬於適當的組織。
+1. 透過檢視畫面右上角的組織名稱，確保您在適當的組織中。
 
    ![檢查組織名稱](assets/correct-org.png)
 
@@ -61,7 +61,7 @@ ht-degree: 2%
 
    ![選取AEMaaCS](assets/select-aemaacs.png)
 
-1. 您可以看到預先設定的Cloud Manager產品設定檔清單。 如果您沒有看到這些設定檔，請聯絡您的Cloud Manager管理員，因為您的組織中可能沒有正確的許可權。
+1. 您會看到預先設定的Cloud Manager產品設定檔清單。 如果您沒有看到這些設定檔，請聯絡您的Cloud Manager管理員，因為您的組織中可能沒有正確的許可權。
 
    ![產品設定檔](assets/product-profiles.png)
 
@@ -69,7 +69,7 @@ ht-degree: 2%
 
    ![新增使用者](assets/add-user.png)
 
-1. 在 **新增使用者至您的團隊** 對話方塊中，輸入您要新增之使用者的電子郵件識別碼。 在ID型別中，如果尚未設定團隊成員的Federated ID，請選取Adobe ID 。
+1. 在 **將使用者新增至團隊** 對話方塊中，輸入您要新增之使用者的電子郵件識別碼。 在ID型別中，如果尚未設定團隊成員的Federated ID，請選取Adobe ID 。
 
    ![新增使用者至團隊](assets/add-to-team.png)
 
@@ -79,16 +79,16 @@ ht-degree: 2%
 
 1. 點選或按一下 **儲存** 並且會傳送一封歡迎電子郵件給您新增為使用者的前端開發人員。
 
-受邀的前端開發人員可以按一下歡迎電子郵件中的連結並使用其Adobe ID登入來存取Cloud Manager。
+受邀的前端開發人員可以按一下歡迎電子郵件中的連結，並使用其Adobe ID登入來存取Cloud Manager。
 
 ## 移交給前端開發人員 {#handover}
 
 在前往前端開發人員的途中，透過向Cloud Manager發出的電子郵件邀請，您和AEM管理員現在可以向前端開發人員提供開始自訂所需的剩餘資訊。
 
 * A [典型內容的路徑](#example-page)
-* 主題來源 [您已下載](#download-theme)
+* 主題來源， [您已下載](#download-theme)
 * 此 [proxy使用者認證](#proxy-user)
-* 方案的名稱或URL [複製自Cloud Manager](pipeline-setup.md#login)
+* 方案的名稱或URL [從Cloud Manager複製](pipeline-setup.md#login)
 * 前端設計需求
 
 ## 下一步 {#what-is-next}
@@ -96,12 +96,12 @@ ht-degree: 2%
 現在您已完成AEM快速網站建立歷程的這一部分，您應瞭解：
 
 * 如何將前端開發人員新增為使用者。
-* 如何將所需的角色授與給前端開發人員。
+* 如何將所需的角色授與前端開發人員。
 
-在此知識的基礎上繼續您的AEM快速網站建立歷程，接下來檢視檔案 [擷取Git存放庫存取資訊，](retrieve-access.md) 這會將視角專門切換到前端開發人員，並說明前端開發人員如何使用Cloud Manager存取Git存放庫資訊。
+在此基礎上繼續您的AEM快速網站建立歷程，接下來檢閱檔案 [擷取Git存放庫存取資訊，](retrieve-access.md) 這會將視角專門切換到前端開發人員，並說明前端開發人員如何使用Cloud Manager存取Git存放庫資訊。
 
 ## 其他資源 {#additional-resources}
 
-我們建議您檢閱檔案，繼續快速網站建立歷程的下一部分 [擷取前端開發人員憑證，](retrieve-access.md) 以下是一些其他可選資源，這些資源對本文檔中提到的一些概念進行了更深入的探究，但並非繼續此歷程所必需的。
+我們建議您檢閱檔案，繼續快速網站建立歷程的下一部分 [擷取前端開發人員憑證，](retrieve-access.md) 以下是一些其他可選資源，這些資源對本文中提到的一些概念進行了更深入的探究，但並非繼續此歷程所必需的。
 
-* [入門歷程](/help/journey-onboarding/overview.md)  — 本指南可作為您的起點，確保您的團隊已建立並擁有AEMas a Cloud Service的存取權。
+* [入門歷程](/help/journey-onboarding/overview.md)  — 本指南可作為您的起點，確保您的團隊已設定並可as a Cloud Service存取AEM。

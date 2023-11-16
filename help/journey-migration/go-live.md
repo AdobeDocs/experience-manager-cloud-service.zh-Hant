@@ -2,9 +2,9 @@
 title: 入門
 description: 瞭解在程式碼和內容準備就緒後，如何執行移轉
 exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1710'
+source-wordcount: '1704'
 ht-degree: 4%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 4%
 >title="上線準備"
 >abstract="為確保 AEM as a Cloud Service 順利而成功地上線，您應該規劃程式碼和內容凍結期、測試反覆項目、內容加值、效能測試、安全性測試等。"
 
-在這段歷程中，您將瞭解在程式碼和內容準備好移至AEMas a Cloud Service後，如何規劃及執行移轉。 此外，您將瞭解執行移轉時的最佳實務和已知限制。
+在這段歷程中，您將瞭解在程式碼和內容準備好移至AEMas a Cloud Service後，如何規劃及執行移轉。 此外，您也會瞭解執行移轉時的最佳實務和已知限制。
 
 ## 到目前為止 {#story-so-far}
 
@@ -138,7 +138,7 @@ ht-degree: 4%
 * 設定CDN、SSL和DNS。
    * 如果您使用自己的CDN，請輸入支援票證以設定適當的路由。
       * 請參閱區段 [客戶CDN指向AEM Managed CDN](/help/implementing/dispatcher/cdn.md#point-to-point-cdn) 詳細資訊，請參閱CDN檔案。
-      * 您將需要根據您的CDN供應商的檔案設定SSL和DNS。
+      * 根據您的CDN供應商的檔案設定SSL和DNS。
    * 如果您沒有使用其他CDN，請按照以下檔案管理SSL和DNS：
       * 管理 SSL 憑證
          * [管理 SSL 憑證的簡介](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)

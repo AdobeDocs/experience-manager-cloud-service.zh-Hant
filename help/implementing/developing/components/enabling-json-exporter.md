@@ -2,9 +2,9 @@
 title: 為元件啟用 JSON 匯出
 description: 元件可調整為根據模組化架構產生其內容的JSON匯出。
 exl-id: e9be5c0c-618e-4b56-a365-fcdd185ae808
-source-git-commit: 3d20f4bca566edcdb5f13eab581c33b7f3cf286d
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '472'
+source-wordcount: '468'
 ht-degree: 9%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 9%
 
 JSON匯出是根據 [Sling模型](https://sling.apache.org/documentation/bundles/models.html)，並在上 [Sling模型匯出工具](https://sling.apache.org/documentation/bundles/models.html#exporter-framework-since-130) 框架(本身依賴 [Jackson註解](https://github.com/FasterXML/jackson-annotations/wiki/Jackson-Annotations))。
 
-這表示需要匯出JSON時，元件必須具有Sling模型。 因此，您需要遵循這兩個步驟，在任何元件上啟用JSON匯出。
+這表示需要匯出JSON時，元件必須具有Sling模型。 因此，請依照這兩個步驟，在任何元件上啟用JSON匯出。
 
 * [為元件定義Sling模型](#define-a-sling-model-for-the-component)
 * [為Sling模型介面加上註釋](#annotate-the-sling-model-interface)

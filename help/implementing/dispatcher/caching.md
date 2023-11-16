@@ -3,9 +3,9 @@ title: AEM as a Cloud Service 中的快取
 description: 瞭解AEMas a Cloud Service快取的基本概念
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: 469c5f0e115cc57cf7624aecf5b9f45645f2e99a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '2878'
+source-wordcount: '2874'
 ht-degree: 1%
 
 ---
@@ -72,7 +72,7 @@ Define DISABLE_DEFAULT_CACHING
     </LocationMatch>
   ```
 
-* 雖然設為私用的HTML內容不會在CDN上快取，但可以在以下情況下在Dispatcher上快取 [許可權敏感型快取](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=zh-Hant) 已設定，確保僅授權使用者能獲得內容。
+* 雖然設為私用的HTML內容不會在CDN上快取，但可以在以下情況下在Dispatcher上快取 [許可權敏感型快取](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html) 已設定，確保僅授權使用者能獲得內容。
 
   >[!NOTE]
   >其他方法，包括 [Dispatcher-ttl AEM ACS Commons專案](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/)，無法成功覆寫值。
@@ -146,7 +146,7 @@ AEM層預設不會快取blob內容。
 >[!NOTE]
 >將Cloud Manager環境變數AEM_BLOB_ENABLE_CACHING_HEADERS設定為true，以將較舊的預設行為變更為與新的行為(高於65000的程式ID)一致。 如果程式已上線，請務必確認在變更後，內容會如預期般運作。
 
-現在，在Blob儲存空間中標示為私用的影像無法使用在Dispatcher上快取 [許可權敏感型快取](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=zh-Hant). 系統會一律向AEM來源要求影像，並在使用者獲得授權時提供影像。
+現在，在Blob儲存空間中標示為私用的影像無法使用在Dispatcher上快取 [許可權敏感型快取](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html). 系統會一律向AEM來源要求影像，並在使用者獲得授權時提供影像。
 
 >[!NOTE]
 >其他方法，包括 [dispatcher-ttl AEM ACS Commons專案](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/)時，請勿成功覆寫值。
@@ -277,7 +277,7 @@ Adobe建議您仰賴標準快取標頭來控制內容傳送生命週期。 不�
   <tr>
     <th>N/A</th>
     <th>階層可用性</th>
-    <th>重複資料刪除 </th>
+    <th>去重複化 </th>
     <th>保證 </th>
     <th>動作 </th>
     <th>影響 </th>

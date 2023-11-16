@@ -2,9 +2,9 @@
 title: 建立及組織頁面
 description: 瞭解如何使用AEM建立和管理頁面，以組織您的網站。
 exl-id: c57096ca-34fe-4b19-98e0-8f3cd43cf24e
-source-git-commit: b658f303d25cca958c08a95ead12fa3b987bcb3b
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '2451'
+source-wordcount: '2449'
 ht-degree: 4%
 
 ---
@@ -225,7 +225,7 @@ AEM隨附幾個現成可用的範本。 可用的範本視個別網站而定。 
    >
    >如果您使用該位置已存在的名稱來建立頁面，系統將藉由附加一個編號來自動產生名稱的變體。 例如，如果 `beach` 已存在，則新頁面會變成 `beach1`.
 
-1. 如果您返回主控台，則會看到新頁面：
+1. 如果您返回主控台，便可看到新頁面：
 
    ![產生的新頁面](/help/sites-cloud/authoring/assets/organizing-create-page-result.png)
 
@@ -309,7 +309,7 @@ AEM提供可更新任何內部連結的功能，這些連結會參照正在重�
 
    ![移動按鈕](/help/sites-cloud/authoring/assets/move.png)
 
-   這將會開啟移動頁面精靈。
+   這會開啟移動頁面精靈。
 
 1. 從 **重新命名** 精靈的階段您可以：
 

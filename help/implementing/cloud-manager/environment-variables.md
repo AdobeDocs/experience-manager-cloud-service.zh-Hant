@@ -2,10 +2,10 @@
 title: Cloud Manager 環境變數
 description: 標準環境變數可以透過 Cloud Manager 進行設定和管理，並提供給執行階段環境，用於 OSGi 設定。
 exl-id: 5cdd5532-11fe-47a3-beb2-21967b0e43c6
-source-git-commit: 15a53778e0934a1940efa5cc88467c20b4b67fe4
-workflow-type: ht
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
 source-wordcount: '1016'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -40,7 +40,7 @@ ht-degree: 100%
 1. Cloud Manager 列出了可用的各種計畫。選擇您要管理的計畫。
 1. 選擇所選計畫的&#x200B;**環境**&#x200B;索引標籤，然後在左側瀏覽面板中選擇要建立環境變數的環境。
 1. 在環境的詳細資訊中，選擇&#x200B;**設定**&#x200B;索引標籤，然後選擇&#x200B;**新增**&#x200B;以打開&#x200B;**環境設定**&#x200B;對話框。
-   * 如果您是第一次新增環境變數，將會在頁面中央看到&#x200B;**新增設定**&#x200B;按鈕。您可以使用此按鈕或&#x200B;**新增**&#x200B;來打開&#x200B;**環境設定**&#x200B;對話框。
+   * 如果您是第一次新增環境變數，可以看到 **新增設定** 按鈕來切換頁面。 您可以使用此按鈕或&#x200B;**新增**&#x200B;來打開&#x200B;**環境設定**&#x200B;對話框。
 
    ![設定索引標籤](assets/configuration-tab.png)
 

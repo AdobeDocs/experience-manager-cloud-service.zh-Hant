@@ -11,10 +11,10 @@ topic-tags: Configuration
 feature: Asset Management, Configuration
 role: Admin
 exl-id: e96c8d68-74a6-4d61-82dc-20e619338d4b
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1694'
-ht-degree: 1%
+source-wordcount: '1690'
+ht-degree: 2%
 
 ---
 
@@ -63,9 +63,9 @@ ht-degree: 1%
 
 一旦 [!DNL Azure Media Services] 已在Experience Manager Assets中設定，下一步是建立資產處理設定檔，用於產生音訊和視訊資產的AI型轉錄。 AI型處理設定檔會產生 [支援的音訊或視訊資產](#supported-file-formats-for-transcription) 在Experience Manager Assets中作為轉譯，並將轉錄（.vtt檔案）儲存在原始資產所在的相同資料夾中。 因此，使用者更容易搜尋及找到資產及其轉譯檔案。
 
-前往 **[!UICONTROL 工具]** > **[!UICONTROL 資產]** > **[!UICONTROL 處理設定檔]** 然後按一下 **[!UICONTROL 建立]** 按鈕來建立以人工智慧為基礎的處理設定檔，以產生音訊和視訊檔案的轉錄。 依預設，處理設定檔頁面只會反映三個索引標籤（影像、視訊和自訂）。 但是， **[!UICONTROL Content AI]** 索引標籤可見(如果您已設定 [!DNL Azure Media Services] 在您的 [!DNL Experience Manager Assets] 執行個體。 驗證您的 [!DNL Azure] 如果您沒有看到 **[!UICONTROL Content AI]** 標籤中。
+前往 **[!UICONTROL 工具]** > **[!UICONTROL 資產]** > **[!UICONTROL 處理設定檔]** 並按一下 **[!UICONTROL 建立]** 按鈕來建立以人工智慧為基礎的處理設定檔，以產生音訊和視訊檔案的轉錄。 依預設，處理設定檔頁面只會反映三個索引標籤（影像、視訊和自訂）。 但是， **[!UICONTROL Content AI]** 索引標籤可見(如果您已設定 [!DNL Azure Media Services] 在您的 [!DNL Experience Manager Assets] 執行個體。 驗證您的 [!DNL Azure] 如果您沒有看到 **[!UICONTROL Content AI]** 標籤中。
 
-在 **[!UICONTROL Content AI]** 標籤，按一下 **[!UICONTROL 新增]** 按鈕以設定轉錄。 在這裡，您可以從下拉式清單中選取檔案型別，來包含和排除用於產生轉譯的檔案格式（MIME型別）。 在下圖中，包含所有支援的音訊和視訊檔案，並排除文字檔案。
+在 **[!UICONTROL Content AI]** 索引標籤，按一下 **[!UICONTROL 新增]** 按鈕以設定轉錄。 在這裡，您可以從下拉式清單中選取檔案型別，來包含和排除用於產生轉譯的檔案格式（MIME型別）。 在下圖中，包含所有支援的音訊和視訊檔案，並排除文字檔案。
 
 啟用 **[!UICONTROL 在相同目錄中建立VTT文字稿]** 切換以在原始資產所在的相同資料夾中建立並儲存轉錄轉譯（.vtt檔案）。 無論此設定為何，預設DAM資產處理工作流程也會產生其他轉譯。
 
@@ -124,7 +124,7 @@ ht-degree: 1%
 
 如果您有 [已設定的Dynamic Media](/help/assets/dynamic-media/config-dm.md) 在您的Experience Manager Assets執行個體中，您可以將資產（音訊或視訊檔案）及其轉錄檔（.vtt檔案）發佈到Dynamic Media。 如此一來，原始資產（音訊或視訊檔案）及其轉譯的轉譯（.vtt檔案）會發佈至相同資料夾中的Dynamic Media。 Dynamic Media管理員可以 [啟用CC隱藏式字幕體驗](/help/assets/dynamic-media/video.md#adding-captions-to-video) 適用於使用轉錄轉譯（.vtt檔案）的音訊或視訊檔案。
 
-另請參閱:
+另請參閱：
 
 * [有關如何將CC隱藏式字幕新增到Dynamic Media影片中的影片教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html#add-cc-closed-captioning-to-dynamic-media-video)
 * [將Dynamic Media影片發佈到YouTube](/help/assets/dynamic-media/video.md#publishing-videos-to-youtube)

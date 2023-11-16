@@ -3,10 +3,10 @@ title: 設定生產管道
 description: 了解如何設定生產管道以建置程式碼並將其部署到生產環境。
 index: true
 exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
-source-git-commit: b47b1998fe716a8409d8d3cf0102e25c48828819
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1418'
-ht-degree: 80%
+source-wordcount: '1416'
+ht-degree: 79%
 
 ---
 
@@ -37,7 +37,7 @@ ht-degree: 80%
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織和計畫。
 
-1. 瀏覽至&#x200B;**管道**&#x200B;卡 (從&#x200B;**計畫概觀**&#x200B;頁面) 並按一下&#x200B;**新增**，以選取&#x200B;**新增生產管道**。
+1. 導覽至 **管道** 卡來自 **計畫總覽** 頁面並按一下 **新增** 以選取 **新增生產管道**.
 
    ![計畫管理員概觀中的管道卡](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-1.png)
 
@@ -111,7 +111,7 @@ ht-degree: 80%
    * 您最多可以新增 25 個路徑。
    * 如果您未定義任何路徑，則預設情況下該網站的首頁會包含在體驗稽核中。
 
-1. 按一下「**儲存**」，即可儲存您的管道。
+1. 按一下&#x200B;**儲存**，即可儲存您的管道。
 
 為體驗稽核設定的路徑會提交給服務，並在管道執行時根據效能、協助工具、SEO (搜尋引擎最佳化)、最佳實務和 PWA (漸進式 Web 應用程式) 測試進行評估。如需更多詳細資訊，請參閱[了解體驗稽核結果](/help/implementing/cloud-manager/experience-audit-testing.md)。
 

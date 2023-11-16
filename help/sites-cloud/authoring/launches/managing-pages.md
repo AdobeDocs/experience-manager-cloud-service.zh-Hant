@@ -1,10 +1,10 @@
 ---
 title: 管理啟動項中的頁面
-description: 您可以在Launch中建立新頁面。 您也可以刪除不要的頁面。
+description: 您可以在啟動項中建立新頁面。 您也可以刪除不要的頁面。
 exl-id: 214c8c2f-d09a-4ce9-b474-9505b76084f7
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '290'
+source-wordcount: '289'
 ht-degree: 1%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 1%
 透過啟動，您可以：
 
 * [管理現有頁面中的新內容](/help/sites-cloud/authoring/launches/editing.md)，
-* [在Sites主控台中瀏覽啟動項的結構](#navigate-structure-of-launch)，
+* [在Sites主控台中導覽啟動項的結構](#navigate-structure-of-launch)，
 * 從主控台 [新增頁面至](#add-pages-to-launch)，或 [刪除不需要的頁面](#remove-pages-from-launch)，啟動，
 * 在啟動項中的頁面上執行其他標準動作。
 
@@ -25,36 +25,34 @@ ht-degree: 1%
 * 頁面編輯器：
 
    * 選取 **導覽** 若要在主控台中開啟Launch的結構：
-      ![從頁面編輯器導覽啟動項](/help/sites-cloud/authoring/assets/launches-navigate-page-editor.png)
+     ![從頁面編輯器導覽啟動項](/help/sites-cloud/authoring/assets/launches-navigate-page-editor.png)
 
-      >[!NOTE]
-      >
-      >您也可以：
-      >
-      >* **離開** 啟動並返回以編輯來源頁面
-
+     >[!NOTE]
+     >
+     >您也可以：
+     >
+     >* **離開** 然後返回以編輯來源頁面
 
 * 此 **啟動** Console：如果您選取特定啟動，然後可以選取 **管理內容**：
-   ![Launch Console — 管理內容](/help/sites-cloud/authoring/assets/launches-navigate-launches-console.png)
+  ![Launch Console — 管理內容](/help/sites-cloud/authoring/assets/launches-navigate-launches-console.png)
 
 * 此 **網站** 主控台：如果您選取特定來源頁面並開啟 **引用**，然後您可以選取 **啟動** 後面接著 **管理內容**：
-   ![Launch Console — 管理內容](/help/sites-cloud/authoring/assets/launches-navigate-sites-console.png)
+  ![Launch Console — 管理內容](/help/sites-cloud/authoring/assets/launches-navigate-sites-console.png)
 
-   >[!NOTE]
-   >
-   >您也可以選取 **啟動主控台** 存取 **管理內容** （和其他動作）。
+  >[!NOTE]
+  >
+  >您也可以選取 **啟動主控台** 存取 **管理內容** （和其他動作）。
 
-所有這些進入點都會在Sites主控台中開啟啟動項，您可在其中執行以下操作：
+所有這些入口點都會在Sites主控台中開啟啟動，您可以在其中：
 
 * 導覽,
 * **建立** 新頁面，
-* 選取現有頁面並採取行動；例如， **編輯**，開啟 **屬性**， **鎖定**， **複製**， **貼上** 和 **刪除**
+* 選取現有頁面並執行動作；例如， **編輯**，開啟 **屬性**， **鎖定**， **複製**， **貼上** 和 **刪除**
+  ![從「管理內容」導覽Sites Console中的啟動](/help/sites-cloud/authoring/assets/launches-navigate-manage-content.png)
+* 使用 **引用** 邊欄以返回 **啟動來源** 頁面：
+  ![網站主控台 — 啟動項來源](/help/sites-cloud/authoring/assets/launches-navigate-launch-source.png)
 
-   ![從「管理內容」導覽至「網站主控台」中的啟動項](/help/sites-cloud/authoring/assets/launches-navigate-manage-content.png)
-* 使用 **引用** 要返回到的邊欄 **啟動來源** 頁面：
-   ![Sites主控台 — 啟動來源](/help/sites-cloud/authoring/assets/launches-navigate-launch-source.png)
-
-## 新增頁面至您的啟動項 {#add-pages-to-launch}
+## 將頁面新增至您的啟動項 {#add-pages-to-launch}
 
 若要將新頁面新增至啟動項：
 

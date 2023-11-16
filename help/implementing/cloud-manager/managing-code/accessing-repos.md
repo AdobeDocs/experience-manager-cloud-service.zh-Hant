@@ -2,10 +2,10 @@
 title: 存取存放庫
 description: 了解如何使用 Cloud Manager 中的自助 Git 帳戶管理存取和管理您的 Git 存放庫。
 exl-id: 0c0671a3-e400-46f3-ad86-166a6cfdd44b
-source-git-commit: 9ec45753f56d0576e75f148ca0165c0ccd621f23
-workflow-type: ht
-source-wordcount: '232'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '231'
+ht-degree: 94%
 
 ---
 
@@ -19,11 +19,11 @@ Cloud Manager 可以使用管道卡上顯眼的&#x200B;**存取存放庫資訊**
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織和方案。
 
-1. 從&#x200B;**計劃總覽**&#x200B;頁面瀏覽至&#x200B;**管道**&#x200B;卡，尋找&#x200B;**存取存放庫資訊**&#x200B;按鈕，以存取和管理您的 Git 存放庫。
+1. 從&#x200B;**計畫概觀**&#x200B;頁面瀏覽至&#x200B;**管道**&#x200B;卡，尋找&#x200B;**存取存放庫資訊**&#x200B;按鈕，以存取和管理您的 Git 存放庫。
 
    ![環境卡上的存取存放庫資訊按鈕](/help/implementing/cloud-manager/assets/repos/access-repo1.png)
 
-1. 按一下&#x200B;**檢視存放庫資訊**&#x200B;按鈕，即可開啟對話框以檢視：
+1. 按一下 **檢視存放庫資訊** 按鈕以開啟對話方塊進行檢視：
 
    * Cloud Manager Git 存放庫的 URL。
    * Git 使用者名稱。

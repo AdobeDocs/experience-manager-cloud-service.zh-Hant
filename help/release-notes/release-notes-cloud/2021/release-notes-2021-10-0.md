@@ -2,9 +2,9 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2021.10.0 版發行說明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2021.10.0 版發行說明。'
 exl-id: ab584923-5f06-4b54-941b-e00bc1158b81
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1437'
+source-wordcount: '1436'
 ht-degree: 69%
 
 ---
@@ -56,17 +56,17 @@ No customer-reported bugs fixed in Oct release. Details in CQDOC-18404.
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-### [!DNL Forms]的新增功能 {#what-is-new-forms-oct-2021}
+### [!DNL Forms] 的新增功能 {#what-is-new-forms-oct-2021}
 
-* **Analytics for Adaptive Forms**：您現在可以透過 Adobe Analytics for Adaptive Forms 擷取及追蹤已登入和未登入 (匿名) 的行為，以收集一般用戶的深入解析。它可幫助您根據資料來進行明智的決策，以改善一般用戶體驗。
+* **Analytics for Adaptive Forms**：您現在可以透過 Adobe Analytics for Adaptive Forms 擷取及追蹤已登入和未登入 (匿名) 的行為，以收集一般使用者的深入解析。它可幫助您根據資料來進行明智的決策，以改善一般使用者體驗。
 
 ### [!DNL Forms] 搶鮮版頻道中可用的新功能 {#prerelease-features-forms-oct-2021}
 
 * **外部化 AEM Workflow 資料以進行安全處理**：您可以將包含敏感個人資料 (SPD) 元素的程序內 AEM 工作流程資料 (AEM 工作流程變數資料) 儲存在客戶管理的存放庫中，以進行安全處理。資料元素和工作流程變數未儲存在 AEM 存放庫，並在處理工作流程時隨選從客戶管理的存放庫擷取。
 
-### [!DNL Forms]的 Beta 版功能 {#what-is-new-forms-oct2021-beta}
+### [!DNL Forms] 的 Beta 版功能 {#what-is-new-forms-oct2021-beta}
 
-* **[!DNL AEM Forms as a Cloud Service - Communications]**：[通訊 API](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/using-communications/aem-forms-cloud-service-communications.html) 可幫助您合併範本和 XML 資料，以產生多種格式的列印文件。 此服務可讓您以同步和批次模式產生檔案。 這些 API 可讓您建立以下用途的應用程式：
+* **[!DNL AEM Forms as a Cloud Service - Communications]**：[通訊 API](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/using-communications/aem-forms-cloud-service-communications.html) 可幫助您合併範本和 XML 資料，以產生多種格式的列印文件。 此服務可讓您以同步和批次模式產生文件。這些 API 可讓您建立以下用途的應用程式：
 
    * 使用 XML 資料填寫範本檔案 (PDF 和 XDP) 來產生文件。
    * 產生多種格式的輸出表單，包括非互動式 PDF 列印資料流。
@@ -77,9 +77,9 @@ No customer-reported bugs fixed in Oct release. Details in CQDOC-18404.
 
 ### 新增功能 {#what-is-new-cif}
 
-* CIF附加元件支援最新的Commerce v2.4.3，其中包含新的GraphQL API和結構描述
+* CIF附加元件支援具有新GraphQL API和結構描述的最新Commerce v2.4.3
 
-* 作者可使用RTF編輯器(RTE)，在文字欄位中新增產品與目錄頁面的連結。 RTE工具列已新增CIF圖示，可開啟選擇器，以快速搜尋和選取產品或類別，而不需離開內容。
+* 作者可使用RTF編輯器(RTE)，在文字欄位中新增產品與目錄頁面的連結。 RTE工具列中新增了CIF圖示，可開啟選擇器，以便快速搜尋和選取產品或類別，而不需離開內容。
 
 * 現有的彈出式購物車和結帳頁面已替換為專用的AEM購物車和結帳頁面。 這些頁面上的元件是使用Adobe Commerce的可擴充Peregrine元件所建置
 

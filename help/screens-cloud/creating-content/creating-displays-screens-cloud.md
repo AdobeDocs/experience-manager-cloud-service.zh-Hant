@@ -1,37 +1,37 @@
 ---
-title: as a Cloud Service建立和管理熒幕中的顯示區
-description: 此頁面說明如何建立及管理Screensas a Cloud Service顯示。
+title: as a Cloud Service建立和管理熒幕中的顯示
+description: 此頁面說明如何建立和管理Screensas a Cloud Service的顯示。
 exl-id: 0f9faa4b-b50e-40f8-a8ed-280f8bd0a9b8
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '663'
+source-wordcount: '659'
 ht-degree: 3%
 
 ---
 
-# as a Cloud Service建立和管理熒幕中的顯示區 {#create-displays-screens-cloud}
+# as a Cloud Service建立和管理熒幕中的顯示 {#create-displays-screens-cloud}
 
-發佈管道後，您就可以在Screens Services Provider中建立顯示區。
+發佈管道後，您就可以在Screens服務提供者中建立顯示畫面了。
 
-「顯示器」是通常位於彼此相鄰位置的虛擬熒幕群組。 顯示通常是永久性的安裝。 此物件內容是作者搭配使用且一律參照為邏輯顯示（而非其實體計數器部分）的內容。
+「顯示」是一組虛擬的熒幕，通常位於彼此旁邊。 顯示通常是永久性的安裝。 此物件內容是作者搭配使用的內容，且一律會參照為邏輯顯示，而非其實體計數器部分。
 
 ## 目標 {#objective}
 
-本檔案可協助您瞭解如何建立及管理Screens Services Provider中的顯示區。 閱讀本文件後，您應該：
+本檔案可協助您瞭解如何建立及管理Screens Services Provider中的顯示。 閱讀本文件後，您應該：
 
 * 瞭解如何建立和刪除顯示區
 * 瞭解如何將您的顯示器整理到資料夾中
 
 ## 建立顯示的步驟 {#create-display}
 
-請依照下列步驟，從Screens Services Provider建立顯示區：
+請依照下列步驟，從Screens服務提供者建立顯示區：
 
-1. 從您的AEM Cloud Service執行個體瀏覽至Screens服務提供者。
-1. 選取 **顯示區** 從左側導覽面板中並按一下 **建立** 從畫面的右上角。
+1. 從您的AEM Cloud Service執行個體導覽至Screens服務提供者。
+1. 選取 **顯示區** 從左側導覽面板，然後按一下 **建立** 從畫面的右上角。
 
    ![影像](/help/screens-cloud/assets/display/disp-1.png)
 
-1. 選取 **顯示** 動作列中的。
+1. 選取 **顯示** 從動作列移除。
 
    ![影像](/help/screens-cloud/assets/display/disp-2.png)
 
@@ -45,9 +45,9 @@ ht-degree: 3%
 
 ### 刪除顯示區 {#deleting-display}
 
-您可以從Screens Services Provider中刪除顯示區。
+您可以從Screens服務提供者中刪除顯示區。
 
-選取顯示區並按一下 **刪除** 從面板底部，如下圖所示。
+選取顯示，然後按一下 **刪除** 從面板底部，如下圖所示。
 
 ![影像](/help/screens-cloud/assets/display/disp-5.png)
 
@@ -65,14 +65,14 @@ ht-degree: 3%
 
    ![影像](/help/screens-cloud/assets/display/toggle-rail.png)
 
-1. 選取 **隱藏資料夾** 以再次關閉。
+1. 選取 **隱藏資料夾** 以再次關閉它。
 
 ## 如何建立新資料夾 {#create-folder}
 
-您可以建立資料夾以更好地組織您的顯示器。
+您可以建立資料夾以更妥善地組織您的顯示。
 
 1. 切換作業選項至顯示存貨檢視表。
-1. 確定您目前不在資料夾中，您應會看到以下內容：
+1. 確認您目前不在資料夾中，您應會看到下列內容：
 
    ![影像](/help/screens-cloud/assets/display/verify-view.png)
 
@@ -90,15 +90,15 @@ ht-degree: 3%
 
 1. 切換作業選項至顯示存貨檢視表。
 
-1. 從資料夾側邊欄選取所需的父資料夾，或透過瀏覽詳細目錄檢視選取所需的父資料夾。
+1. 從資料夾側邊欄中或透過在詳細目錄檢視中瀏覽來選取所需的父資料夾。
 1. 確認已選取所需的父資料夾。
 
    ![影像](/help/screens-cloud/assets/display/Nestedview.png)
 
    * 您應在資料夾側邊欄中選取資料夾。
-   * 階層連結導覽應該會在旁邊顯示目前的資料夾名稱 **顯示區**.
+   * 階層連結導覽應在旁顯示目前的資料夾名稱 **顯示區**.
 
-1. 按一下  **建立**  並選取 **資料夾** 選項。
+1. 按一下  **建立**  圖示並選取 **資料夾** 選項。
 
    ![影像](/help/screens-cloud/assets/display/Createfolder.png)
 
@@ -106,23 +106,23 @@ ht-degree: 3%
 
    ![影像](/help/screens-cloud/assets/display/Createfolder2.png)
 
-## 如何將內容移動到新資料夾 {#move-folder}
+## 如何將內容移至新資料夾 {#move-folder}
 
-您可以將內容移至新資料夾，以便更妥善地組織您的顯示器。
+您可以將內容移至新資料夾，以更妥善地組織您的顯示。
 
 1. 切換作業選項至顯示存貨檢視表。
 
-1. 從資料夾側邊欄選取所需的父資料夾，或從詳細目錄檢視中選取。
+1. 從資料夾側邊欄選取所需的父資料夾，或從「詳細目錄」檢視中選取。
 
-1. 確認您選取了所需的父資料夾。
+1. 確認您已選取所需的父資料夾。
 
 ![影像](/help/screens-cloud/assets/display/movetofolder.png)
 
-**注意**：應在資料夾側邊欄中選取資料夾。 此外，階層連結導覽應該會在旁邊顯示目前的資料夾名稱 **顯示區**.
+**注意**：應在資料夾側邊欄中選取資料夾。 此外，階層連結導覽應在旁顯示目前的資料夾名稱 **顯示區**.
 
 ## 如何從資料夾中刪除內容 {#delete-folder}
 
-所有檔案夾操作都可透過詳細目錄檢視中的選擇動作列存取。
+所有檔案夾作業都可透過詳細目錄檢視中的選取動作列存取。
 
 1. 導覽至上層資料夾，或從側邊欄選取資料夾。
 
@@ -133,4 +133,4 @@ ht-degree: 3%
 
 ## 下一步 {#whats-next}
 
-現在，您已瞭解如何為專案建立和管理顯示器，您應該透過下一次檢視檔案來繼續您的Screensas a Cloud Service歷程 [將頻道指派給Screens中的顯示as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/assigning-channels-to-display.html?lang=en).
+現在，您已瞭解如何建立和管理專案的顯示器，您應該透過下一次檢閱檔案來繼續您的Screensas a Cloud Service歷程 [將頻道指派給Screens中的as a Cloud Service顯示](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/assigning-channels-to-display.html?lang=en).

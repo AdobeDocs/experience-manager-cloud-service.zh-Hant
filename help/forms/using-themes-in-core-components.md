@@ -2,9 +2,9 @@
 title: 如何在Adaptive Forms中建立和使用主題？
 description: 您可以使用主題來設定樣式，並使用核心元件來將視覺身分提供給最適化表單。 您可以在任何數量的最適化Forms中共用主題。
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: 4cebcd58a0d6fd429cde3d739095c131cc76d9e5
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '2678'
+source-wordcount: '2677'
 ht-degree: 4%
 
 ---

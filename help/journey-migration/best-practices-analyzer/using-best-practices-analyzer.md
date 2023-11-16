@@ -1,10 +1,10 @@
 ---
 title: 使用最佳做法分析工具
-description: 瞭解如何使用Best Practices Analyzer，以瞭解升級整備。
+description: 瞭解如何使用Best Practices Analyzer以瞭解升級整備程度。
 exl-id: e8498e17-f55a-4600-87d7-60584d947897
-source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '2484'
+source-wordcount: '2478'
 ht-degree: 46%
 
 ---

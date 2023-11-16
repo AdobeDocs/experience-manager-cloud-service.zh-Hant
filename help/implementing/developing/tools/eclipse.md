@@ -2,9 +2,9 @@
 title: Eclipse 適用的 AEM 開發人員工具
 description: 瞭解如何使用適用於Eclipse的AEM開發人員工具（一個以Apache Sling的Eclipse外掛程式為基礎的Eclipse外掛程式）。
 exl-id: 7f9c0f99-e230-440a-8bc9-a0ab7465e3bf
-source-git-commit: a1a92f8767186ba9e93b6b30870ecfa9f3b3bc28
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1199'
+source-wordcount: '1192'
 ht-degree: 2%
 
 ---
@@ -51,9 +51,9 @@ _Eclipse適用的Experience Manager開發人員工具_ 是一個以擴充功能�
 1. 按一下 **新增……**.
 1. 在 **名稱** 欄位，輸入 `AEM Developer Tools`.
 1. 在 **位置** 欄位，複製安裝URL。
-1. 按一下 **新增**.
+1. 按一下&#x200B;**「新增」**。
 1. 檢查兩者 **AEM** 和 **Sling** 外掛程式。
-1. 按一下&#x200B;**下一步**。
+1. 按一下「**下一步**」。
 1. 在 **安裝詳細資料** 視窗，按一下 **下一個** 再來一次。
 1. 接受授權合約，然後按一下 **完成**.
 1. 按一下 **RestartNow** 以重新啟動Eclipse。
@@ -79,7 +79,7 @@ _Eclipse的Experience Manager開發工具_ 提供AEM觀點，讓您可完全控�
 
    ![AEM範例多模組專案](assets/aem-sample-project.png)
 
-1. 按一下&#x200B;**下一步**。
+1. 按一下「**下一步**」。
 
    >[!NOTE]
    >
@@ -100,7 +100,7 @@ _Eclipse的Experience Manager開發工具_ 提供AEM觀點，讓您可完全控�
 
    ![定義原型屬性](assets/archetype-properties.png)
 
-1. 按一下&#x200B;**下一步**。
+1. 按一下「**下一步**」。
 
 1. 然後，您可以設定Eclipse連線的AEM伺服器。
 
@@ -132,7 +132,7 @@ _Eclipse的Experience Manager開發工具_ 提供AEM觀點，讓您可完全控�
 1. 取代的內容 `PROJECT.ui.apps` 專案與 `apps` 和 `etc` 封裝的資料夾：
 
    1. 在「專案總管」面板中，展開 `PROJECT.ui.apps` > `src` > `main` > `content` > `jcr_root` > `apps`.
-   1. 以右鍵按一下 `apps` 資料夾並選擇 **顯示位置** > **系統總管**.
+   1. 用滑鼠右鍵按一下 `apps` 資料夾並選擇 **顯示位置** > **系統總管**.
    1. 刪除 `apps` 和 `etc` 您現在應該看到的資料夾，並放置在這裡 `apps` 和 `etc` 內容封裝的資料夾。
    1. 在Eclipse中，以滑鼠右鍵按一下 `PROJECT.ui.apps` 專案並選擇 **重新整理**.
 
@@ -194,7 +194,7 @@ _Eclipse的Experience Manager開發工具_ 提供AEM觀點，讓您可完全控�
 
 完成後，您應該在執行個體上執行套件，並在儲存時，任何變更都會自動同步到執行個體。
 
-如果您想要從專案重新建置套件，請在 `PROJECT.ui.apps` 或 `PROJECT.ui.content` 並選擇 **執行身分** -> **Maven安裝**.
+如果您想要從專案重新建置套件，請用滑鼠右鍵按一下 `PROJECT.ui.apps` 或 `PROJECT.ui.content` 並選擇 **執行身分** -> **Maven安裝**.
 
 您現在已建立目標資料夾，並在其中加入您的套件(例如，稱為 `PROJECT.ui.apps-0.0.1-SNAPSHOT.zip`)。
 

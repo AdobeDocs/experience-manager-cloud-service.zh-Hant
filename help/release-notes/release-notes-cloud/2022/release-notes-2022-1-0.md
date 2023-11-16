@@ -2,9 +2,9 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2022.1.0 版發行說明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2022.1.0 版發行說明。'
 exl-id: 1c40ab67-8fd7-4f29-b8c9-dd98b6d5b490
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1079'
+source-wordcount: '1074'
 ht-degree: 29%
 
 ---
@@ -65,9 +65,9 @@ ht-degree: 29%
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-### [!DNL Forms]的新增功能 {#what-is-new-forms}
+### [!DNL Forms] 的新增功能 {#what-is-new-forms}
 
-* **[!DNL AEM Forms as a Cloud Service - Communications]**：[通訊 API](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/using-communications/aem-forms-cloud-service-communications.html) 可幫助您合併範本和 XML 資料，以產生多種格式的列印文件。 此服務可讓您以同步和批次模式產生檔案。 這些 API 可讓您建立以下用途的應用程式：
+* **[!DNL AEM Forms as a Cloud Service - Communications]**：[通訊 API](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/using-communications/aem-forms-cloud-service-communications.html) 可幫助您合併範本和 XML 資料，以產生多種格式的列印文件。 此服務可讓您以同步和批次模式產生文件。這些 API 可讓您建立以下用途的應用程式：
 
    * 使用 XML 資料填寫範本檔案來產生文件。
    * 產生多種格式的表單，包括非互動式PDF列印資料流。
@@ -104,7 +104,7 @@ AEMas a Cloud Service2022.01.0中Cloud Manager的發行日期為2022年1月20日
 ### 新增功能 {#what-is-new-cm}
 
 * Cloud Manager [在偵測到多個全堆疊管道執行中使用了相同的 Git 認可時，將避免重建程式碼基底](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse)。
-* 現在存取 AEM 環境記錄檔需要 **Deployment Manager** 產品設定檔。沒有此設定檔的使用者將在使用者介面中看到停用按鈕。
+* 現在存取 AEM 環境記錄檔需要 **Deployment Manager** 產品設定檔。沒有此設定檔的使用者會在使用者介面中看到停用按鈕。
 * UI 不允許針對未啟用 Sites 解決方案的計畫設定前端管道。
 * 在產生Git密碼時，會顯示到期日期。
 
@@ -123,7 +123,7 @@ AEMas a Cloud Service2022.01.0中Cloud Manager的發行日期為2022年1月20日
 
 ### 新增功能 {#what-is-new-ctt}
 
-* 內容驗證 — 使用者能夠可靠地判斷「內容轉移工具」擷取的所有內容是否已成功擷取至目標例項。 若要使用此功能，您需要在 `System Console` 來源AEM環境的。 另請參閱 [驗證內容轉移 — 快速入門](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers.html?lang=en#getting-started) 以取得更多詳細資料。
+* 內容驗證 — 使用者能夠可靠地判斷「內容轉移工具」擷取的所有內容是否已成功擷取至目標例項。 若要使用此功能，請在 `System Console` 來源AEM環境的。 另請參閱 [驗證內容轉移 — 快速入門](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers.html?lang=en#getting-started) 以取得更多詳細資料。
 
 ### 錯誤修正 {#bug-fixes-ctt}
 

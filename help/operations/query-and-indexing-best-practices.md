@@ -3,9 +3,9 @@ title: 查詢和編製索引最佳做法
 description: 瞭解如何根據Adobe的最佳實務准則最佳化您的索引和查詢。
 topic-tags: best-practices
 exl-id: 37eae99d-542d-4580-b93f-f454008880b1
-source-git-commit: ddd67a69bea2e2109ce93a91f42e8f365424f80f
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '3144'
+source-wordcount: '3133'
 ht-degree: 0%
 
 ---
@@ -120,7 +120,7 @@ AEMas a Cloud Service提供 [查詢效能工具](#query-performance-tool)，可�
 * 查詢陳述式本身。
 * 最後一個執行查詢的執行緒的詳細資訊，允許識別執行查詢的頁面或應用程式功能。
 * 查詢的「讀取最佳化」分數。
-   * 這是以為執行查詢而掃描的列數/節點數與讀取的比對結果數之間的比率來計算。
+   * 這是以掃描以執行查詢的列數/節點數與讀取的比對結果數之間的比率來計算。
    * 可以在索引處處理每個限制（以及任何順序）的查詢通常分數為90%或以上。
 * 最大列數的詳細資訊 — 
    * 讀取 — 表示某列已包含在結果集中。
@@ -136,11 +136,12 @@ Explain查詢工具可讓開發人員瞭解查詢執行計畫(請參閱 [讀取�
 
 #### 說明查詢
 
-為了說明查詢，請執行下列動作：
+若要說明查詢，請執行下列動作：
+
 * 使用選取適當的查詢語言 `Language` 下拉式清單。
 * 將查詢陳述式輸入到 `Query` 欄位。
 * 必要時，使用提供的核取方塊選取查詢的執行方式。
-   * 依預設，不需要執行JCR查詢來識別查詢執行計畫（QueryBuilder查詢就不是這種情況）。
+   * 依預設，JCR查詢不需要執行來識別查詢執行計畫（QueryBuilder查詢就不是這種情況）。
    * 提供三個選項來執行查詢 — 
       * `Include Execution Time`  — 執行查詢，但不嘗試讀取任何結果。
       * `Read first page of results`  — 執行查詢並讀取20個結果的第一個「頁面」（複製執行查詢的最佳實務）。
@@ -238,7 +239,7 @@ lucene:damAssetLucene-9(/oak:index/damAssetLucene-9) :ancestors:/content/dam ord
 
 此查詢執行計畫將產生下方的每個資產 `/content/dam` 從索引讀取，然後由查詢引擎進一步篩選（這只會包含符合結果集中非索引屬性限制的那些專案）。
 
-即使只有一小部分資產符合限制 `jcr:content/metadata/myProperty = "My Property Value"`，查詢將需要讀取大量節點，才能（嘗試）填入請求的結果「頁面」。 這可能會導致查詢效能不佳，並顯示為低 `Read Optimization` 分數)，且可能會產生警告訊息，指出有大量節點正在周遊(請參閱 [索引周遊](#index-traversal))。
+即使只有一小部分資產符合限制 `jcr:content/metadata/myProperty = "My Property Value"`，查詢需要讀取大量節點來（嘗試）填入請求的結果「頁面」。 這可能會導致查詢效能不佳，並顯示為低 `Read Optimization` 分數)，且可能會產生警告訊息，指出有大量節點正在周遊(請參閱 [索引周遊](#index-traversal))。
 
 若要最佳化第二個查詢的效能，請建立 `damAssetLucene-9` 索引(`damAssetLucene-9-custom-1`)並新增以下屬性定義 — 
 
