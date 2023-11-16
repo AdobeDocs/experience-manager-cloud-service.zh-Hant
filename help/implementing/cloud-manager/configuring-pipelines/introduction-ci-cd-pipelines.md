@@ -3,9 +3,9 @@ title: CI/CD 管道
 description: 了解 Cloud Manager 的 CI/CD 管道以及如何使用它們來有效地部署您的程式碼。
 index: true
 exl-id: 40d6778f-65e0-4612-bbe3-ece02905709b
-source-git-commit: b47b1998fe716a8409d8d3cf0102e25c48828819
+source-git-commit: 8b8f10bfaad2d8d7d409384e01a2c65a588d77e0
 workflow-type: tm+mt
-source-wordcount: '1443'
+source-wordcount: '1423'
 ht-degree: 92%
 
 ---
@@ -53,7 +53,7 @@ Cloud Manager 提供兩種類型的管道：
 除了生產和非生產之外，管道還可以透過它們部署的程式碼類型來區分。
 
 * **[完整堆疊程式碼管道](#full-stack-pipeline)** - 同時部署包含一個或多個 AEM 伺服器應用程序以及 HTTPD/Dispatcher 配置的後端和前端程式碼構建
-* **[設定管道](#config-deployment-pipeline)**  — 設定AEM環境、維護任務、CDN規則等的設定。
+* **[設定管道](#config-deployment-pipeline)**  — 在幾分鐘內設定和部署流量篩選器規則，包括WAF規則
 * **[前端程式碼管道](#front-end)** - 部署包含一個或多個用戶端 UI 應用程式的前端程式碼建置。
 * **[Web 層設定管道](#web-tier-config-pipelines)** - 部署 HTTPD/ Dispatcher 設定。
 
@@ -113,7 +113,7 @@ Cloud Manager 提供兩種類型的管道：
 
 ## 設定管道 {#config-deployment-pipeline}
 
-透過設定管道，您可以在AEM環境中部署設定以進行維護任務、CDN規則等。
+透過設定管道，您可以在幾分鐘內設定和部署流量篩選器規則，包括WAF規則。
 
 請參閱檔案 [包含WAF規則的流量篩選規則](/help/security/traffic-filter-rules-including-waf.md) 以瞭解如何管理存放庫中的設定，以便正確部署。
 
@@ -129,10 +129,6 @@ Cloud Manager 提供兩種類型的管道：
 前端程式碼是用作靜態文件的任何程式碼。它獨立於 AEM 提供的 UI 程式碼，可能包括網站主題、客戶定義的 SPA、SPA 和其他解決方案。
 
 前端管道透過啟用與後端開發異步的前端程式碼的加速部署，幫助您的團隊簡化您的設計和開發流程。此專用管道將 JavaScript 和 CSS 作為主題部署到 AEM 分發層，從而產生一個新的主題版本，可以從 AEM 提供的頁面中引用。
-
->[!IMPORTANT]
->
->您必須使用 AEM 版本 `2021.10.5933.20211012T154732Z ` 或更高版本，並啟用 AEM Sites 以使用前端管道。
 
 >[!NOTE]
 >

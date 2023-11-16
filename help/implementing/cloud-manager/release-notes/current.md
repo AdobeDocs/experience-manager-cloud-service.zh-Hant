@@ -3,7 +3,7 @@ title: Adobe Experience Manager as a Cloud Service 中 Cloud Manager 2023.11.0 �
 description: 以下是 AEM as a Cloud Service 中 Cloud Manager 2023.11.0 的發行說明。
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: 3a9eaa162d62cd3e674f14ba39ed7c96ad271f79
+source-git-commit: 4e2ea040ec14515525424b42f524601d34786cb8
 workflow-type: tm+mt
 source-wordcount: '746'
 ht-degree: 51%
@@ -26,7 +26,7 @@ AEM as a Cloud Service 中的 Cloud Manager 版本 2023.11.0 發行日期是 202
 ## 新增功能 {#what-is-new}
 
 * Web應用程式防火牆 — DDOS保護(WAF-DDOS)現在可作為AEMas a Cloud Service許可權的一部分購買，並且 [能以自助方式設定。](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
-* 專門化 [設定管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) 現在可在數分鐘內設定環境設定、維護任務、CDN規則等。
+* 專門化 [設定管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) 現在可在數分鐘內設定和部署流量篩選規則，包括WAF規則。
 * [複製內容時](/help/implementing/developing/tools/content-copy.md) 從更高的環境到開發環境，現在會顯示一則訊息，建議在複製大型內容集時務必謹慎，因為開發環境存在容量限制。
 * [管道執行詳細資訊頁面](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#view-details) 現在會顯示管道執行中的所有步驟，其中尚未開始的步驟會呈現灰色。
 * 在兩者上 **[活動](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#activity)** 和 **[管道](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#pipelines)** 頁面上，現在當按一下具有執行狀態的管道時，會顯示管道執行的摘要。
