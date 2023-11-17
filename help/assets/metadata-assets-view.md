@@ -4,10 +4,10 @@ description: 瞭解如何在「資產」檢視中管理中繼資料。 更好的
 role: User,Leader,Admin,Architect,Developer
 contentOwner: AG
 exl-id: cfc105d1-41fc-4418-9905-b2a28a348682
-source-git-commit: d663c258a83473ec8d3c68bc5683955003d889c7
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '1557'
-ht-degree: 88%
+source-wordcount: '1556'
+ht-degree: 87%
 
 ---
 
@@ -111,7 +111,7 @@ MIME 子類型 > MIME 類型 > `default` 表單 > 現成可用的表單
 
 建立表單後，便會在使用者上傳相符 MIME 類型的資產時自動套用表單。
 
-若要重複使用現有表單來建立新表單，請選取中繼資料表單，從工具列按一下&#x200B;**[!UICONTROL 複製]**、命名，然後按一下&#x200B;**[!UICONTROL 確認]**。您可以編輯中繼資料表單，進行變更。變更表單時，會在變更後用於上傳的資料。不會變更現有資產。
+若要重複使用現有表單來建立表單，請選取中繼資料表單，按一下 **[!UICONTROL 複製]** 在工具列中命名，然後按一下 **[!UICONTROL 確認]**. 您可以編輯中繼資料表單，進行變更。變更表單時，會在變更後用於上傳的資料。不會變更現有資產。
 
 ## 屬性元件 {#property-components}
 
@@ -144,7 +144,7 @@ MIME 子類型 > MIME 類型 > `default` 表單 > 現成可用的表單
 * 聯絡[客戶服務](https://experienceleague.adobe.com/?support-solution=General#support)
 
 <!-- TBD: Cannot create a form using the second option. Documenting only the first option for now.
-To reuse an existing form to create a new form, do one of these:
+To reuse an existing form to create a form, do one of these:
 
 * Select a metadata form and click **[!UICONTROL Copy]** from the toolbar, provide a name, and click **[!UICONTROL Confirm]**.
 

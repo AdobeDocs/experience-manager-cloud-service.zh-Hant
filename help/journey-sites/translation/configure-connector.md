@@ -5,10 +5,10 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: d1a3eb42-e9e4-4118-9ff7-7aab5519cf0d
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '1163'
-ht-degree: 82%
+source-wordcount: '1162'
+ht-degree: 81%
 
 ---
 
@@ -71,7 +71,7 @@ AEM 的翻譯整合框架 (TIF) 整合協力廠商翻譯服務以協調 AEM 內�
 * 是否進行人工翻譯或機器翻譯
 * 是否要翻譯與頁面關聯的其他內容，例如標籤
 
-若要建立新的翻譯設定：
+若要建立翻譯組態：
 
 1. 在全域導覽功能表中，按一下或點選&#x200B;**工具** -> **雲端服務** -> **翻譯雲端服務**。
 1. 在內容結構中導覽到想要建立設定的位置。這通常根據特定專案，也可以是全域的。

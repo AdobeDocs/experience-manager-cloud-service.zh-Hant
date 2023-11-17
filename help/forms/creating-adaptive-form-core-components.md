@@ -5,10 +5,10 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
 exl-id: 1e812d93-4ba5-4589-b59b-2f564d754b0f
-source-git-commit: 4cebcd58a0d6fd429cde3d739095c131cc76d9e5
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '2303'
-ht-degree: 67%
+source-wordcount: '2301'
+ht-degree: 65%
 
 ---
 
@@ -35,19 +35,19 @@ ht-degree: 67%
 
 您必須符合以下條件才能建立最適化表單：
 
-* **為您的環境啟用最適化表單核心元件**：建立新程式時，已針對您的環境啟用最適化表單核心元件。如果您有以 Archetype 39 或更早版本為基礎的 Forms as a Cloud Service 環境，請[為您的環境啟用最適化表單核心元件](enable-adaptive-forms-core-components.md)。為您的環境啟用核心元件後，**最適化表單 (核心元件)** 範本和畫布主題就會新增到您的環境中。如果您的 AEM SDK 版本比 2023.02.0 更舊，[請確定已`prerelease`在您的環境中啟用標幟](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=zh-Hant#new-features)，因為最適化表單核心元件是 2023.02.0 版本之前搶鮮版的一部分。
+* **為您的環境啟用最適化Forms核心元件**：建立方案時，最適化Forms核心元件已為您的環境啟用。 如果您有以 Archetype 39 或更早版本為基礎的 Forms as a Cloud Service 環境，請[為您的環境啟用最適化表單核心元件](enable-adaptive-forms-core-components.md)。為您的環境啟用核心元件後，**最適化表單 (核心元件)** 範本和畫布主題就會新增到您的環境中。如果您的 AEM SDK 版本比 2023.02.0 更舊，[請確定已`prerelease`在您的環境中啟用標幟](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=zh-Hant#new-features)，因為最適化表單核心元件是 2023.02.0 版本之前搶鮮版的一部分。
 
 * **最適化表單範本**：此範本會提供基本結構並定義最適化表單的外觀 (版面和樣式)。其中具有包含特定屬性和內容結構的預先格式化元件。它也會提供定義主題和提交動作的選項。主題會定義外觀，而提交動作會定義提交最適化表單時要採取的動作。例如，將所收集的資料傳送到資料來源。雲端服務會提供一個名為 blank 的 OOTB 範本：
 
    * 該 `blank` 範本會包含在每個新的 AEM Forms as a Cloud Service 程式中。
    * 您可以透過套件管理員安裝參考套件，將該 `blank` 範本新增到您的 AEM Forms as a Cloud Service 程式。
-   * 您也可以從頭開始[建立新的最適化表單範本 (核心元件)](/help/forms/template-editor-core-components.md)。
+   * 您也可以 [建立最適化Forms範本（核心元件）](/help/forms/template-editor-core-components.md) 從頭開始。
    * 您也可以部署 [範例範本](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html) 至您的環境。 這些功能可協助您快速建立表格。
 
 * **最適化表單主題**：主題包含元件和面板的樣式詳細資料。樣式包括背景顏色、狀態顏色、透明度、對齊方式和大小等屬性。套用主題時，指定的樣式會反映在對應的元件上。該 `Canvas` 範本會包含在每個新的 AEM Forms as a Cloud Service 程式中。您也可以部署 [範例主題](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html) 至您的環境。 這些可幫助您開始設計表單的樣式，並提供基礎結構，以根據您的業務需求建立或自訂主題。
 
   <!-- * You can install the reference package, via package manager, to add the `Canvas` template to your AEM Forms as a Cloud Service program.
-    * You can also [create a new Adaptive Forms theme (Core Components)](template-editor.md) and deploy it to your AEM Forms as a Cloud Service program. -->
+    * You can also [create an Adaptive Forms theme (Core Components)](template-editor.md) and deploy it to your AEM Forms as a Cloud Service program. -->
 
 * **權限**：將您的使用者新增到 [!DNL forms-users] 群組。[!DNL forms-users] 群組的成員擁有建立最適化表單的權限。如需表單特定之使用者群組的詳細清單，請參閱[群組和權限](forms-groups-privileges-tasks.md)。
 

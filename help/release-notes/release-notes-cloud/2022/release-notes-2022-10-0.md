@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2022.10.0 版發行說明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2022.10.0 版發行說明。'
 exl-id: 8fce7c50-f322-4bcf-bd76-390faedfd5b7
-source-git-commit: 87630d9530194fd0c6d88e05a17db108b765ccb6
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '836'
-ht-degree: 80%
+source-wordcount: '835'
+ht-degree: 78%
 
 ---
 
@@ -69,7 +69,7 @@ ht-degree: 80%
    * **[範本編輯器中的表單資料模型](/help/forms/creating-adaptive-form.md#edit-form-model-properties-of-an-adaptive-form-edit-form-model)**：您可以在範本編輯器中將表單資料模型結構描述關聯到調適型表單範本。它有助於縮短建立調適型表單所需的時間。該選項也以新增至調適型表單編輯器中，讓使用者能夠選取或變更現有表單的表單資料模型。
    * **[範本編輯器中的文件記錄](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform)**：您現在可以將為使用範本建立的所有表單產生文件記錄的過程標準化。這有助於提高組織要求的合規性和標準化。
 
-* **[從 AEM Sites 頁面啟動調適型表單精靈](/help/forms/embed-adaptive-form-aem-sites.md)**：AEM Sites 頁面已延伸對調適型表單的支援。您現在可以建立新的調適型表單或內嵌現有的調適型表單，同時保留在 AEM Sites 頁面上。
+* **[從 AEM Sites 頁面啟動調適型表單精靈](/help/forms/embed-adaptive-form-aem-sites.md)**：AEM Sites 頁面已延伸對調適型表單的支援。您現在可以建立最適化表單或內嵌現有的最適化表單，同時保留在AEM Sites頁面上。
 * **[變更 DoR 中核取方塊和選項按鈕的顯示對齊方式](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#customize-the-branding-information-in-document-of-record-customize-the-branding-information-in-document-of-record)**：您現在可以為文件記錄上的核取方塊和選項按鈕設定所要的對齊方式 (水平、垂直、與調適型表單相同)。此選項決定了文件記錄中核取方塊和選項按鈕選項的位置。
 
 ## CIF 附加元件 {#cloud-services-cif}

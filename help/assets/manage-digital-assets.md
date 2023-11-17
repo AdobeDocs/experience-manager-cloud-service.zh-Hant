@@ -6,9 +6,9 @@ mini-toc-levels: 3
 feature: Asset Management,Publishing,Collaboration,Asset Processing
 role: User,Architect,Admin
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: bd0981b262f645653723f1b35d871808506d47ba
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '4346'
+source-wordcount: '4344'
 ht-degree: 11%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 11%
 >* 共用型別的資產資料夾 `sling:OrderedFolder`，在共用至Experience Cloud時不受支援。 如果要共用資料夾，請勿選取 [!UICONTROL 已訂購] 建立資料夾時。
 >* Experience Manager不允許使用 `subassets` word做為資料夾的名稱。 這是為包含複合資產的子資產的節點保留的關鍵字
 
-1. 導覽至數位資產資料夾中您要建立新資料夾的位置。 在功能表中，按一下 **[!UICONTROL 建立]**. 選取 **[!UICONTROL 新增資料夾]**.
+1. 導覽至數位資產資料夾中您要建立資料夾的位置。 在功能表中，按一下 **[!UICONTROL 建立]**. 選取 **[!UICONTROL 新增資料夾]**.
 1. 在 **[!UICONTROL 標題]** 欄位，提供資料夾名稱。 根據預設，DAM會使用您提供的標題作為資料夾名稱。 建立資料夾後，您可以覆寫預設值並指定另一個資料夾名稱。
 1. 按一下「**[!UICONTROL 建立]**」。您的資料夾會顯示在數位資產資料夾中。
 
@@ -54,7 +54,7 @@ ht-degree: 11%
 1. 按一下 **[!UICONTROL 提取封存]** 選項以供動作列使用。
 1. 選取您要儲存已解壓縮資料夾中可用之已解壓縮資產的資料夾。
 1. 按一下「**[!UICONTROL 下一步]**」。
-1. 選取適當的行為，以便在擷取期間處理檔案名稱衝突。 您可以選取建立現有資產的新版本、取代資產、將兩個資產保留在目的地資料夾中，或略過新資產的擷取。
+1. 選取適當的行為，以便在擷取期間處理檔案名稱衝突。 您可以選取建立現有資產的版本、取代資產、將兩個資產保留在目的地資料夾中，或略過新資產的擷取。
 1. 按一下 **[!UICONTROL Extract]**. Zip擷取程式隨即開始。 程式完成後，您可以在目的地資料夾中檢視擷取的資產。
 
    ![zip解壓縮](assets/zip-extraction.png)

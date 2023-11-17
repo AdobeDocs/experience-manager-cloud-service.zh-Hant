@@ -2,9 +2,9 @@
 title: 編輯頁面內容
 description: 建立頁面後，您可以編輯內容以進行所需的更新
 exl-id: 8af0f621-14e8-4605-a51a-a3be21f19092
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '2978'
+source-wordcount: '2975'
 ht-degree: 6%
 
 ---
@@ -161,7 +161,7 @@ ht-degree: 6%
 
 ### 使用「資產瀏覽器」插入元件 {#inserting-a-component-using-the-assets-browser}
 
-您也可以拖曳以下專案的資產，將新元件新增至頁面： [資產瀏覽器](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser). 這會自動建立適當型別（並包含資產）的新元件。
+您也可以拖曳以下專案的資產，將新元件新增至頁面： [資產瀏覽器](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser). 這會自動建立適當型別的元件（並包含資產）。
 
 您可針對您的安裝設定此行為。 如需詳細資訊，請參閱設定段落系統好讓拖曳資產建立元件例項。 <!--This behavior can be configured for your installation. See [Configuring a Paragraph System so that Dragging an Asset Creates a Component Instance](/help/sites-developing/developing-components.md#configuring-a-paragraph-system-so-that-dragging-an-asset-creates-a-component-instance) for further details.-->
 
@@ -261,7 +261,7 @@ ht-degree: 6%
 
 * **轉換為體驗片段變數**
 
-  這可讓您建立新的 [體驗片段](/help/sites-cloud/authoring/fundamentals/experience-fragments.md) 或是將其新增到現有的體驗片段中。
+  這可讓您建立 [體驗片段](/help/sites-cloud/authoring/fundamentals/experience-fragments.md) 或是將其新增到現有的體驗片段中。
 
   ![「轉換為體驗片段」按鈕](/help/sites-cloud/authoring/assets/editing-component-toolbar-xf.png)
 

@@ -4,9 +4,9 @@ description: 瞭解如何建立最適化表單或將其新增到您的AEM Sites�
 feature: Adaptive Forms, Page Editor, Authoring
 Keywords: AF in Sites editor, af in aem sites, aem sites af, add af to a sites page, af aem sites, af sites, create af in a sites page, adaptive form in aem sites, forms aem sites, add form to a sites page, adaptive forms aem sites, add adaptive forms to aem page, create forms in an aem sites page
 exl-id: a1846c5d-7b0f-4f48-9d15-96b2a8836a9d
-source-git-commit: 4cebcd58a0d6fd429cde3d739095c131cc76d9e5
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '3212'
+source-wordcount: '3209'
 ht-degree: 20%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 20%
 
 您可以使用AEM頁面編輯器快速建立多個表單並新增到您的AEM Sites頁面。 使用AEM頁面編輯器，內容作者就能利用調適型表單元件的功能（包括動態行為、驗證、資料整合、產生記錄檔案和業務流程自動化），在Sites頁面內建立順暢的資料擷取體驗。 它也可讓您使用AEM Sites頁面的各種功能，例如，版本設定、目標定位、翻譯和多網站管理員。
 
-AEM FormsCloud Service提供最適化表單容器和Adaptive Forms — 內嵌元件。 您可以使用調適型表單容器在AEM Sites頁面或體驗片段中建立新表單，而調適型Forms — 內嵌元件可讓您新增現有調適型表單或使用調適型Forms編輯器建立新表單。
+AEM FormsCloud Service提供最適化表單容器和Adaptive Forms — 內嵌元件。 您可以使用調適型表單容器在AEM Sites頁面或體驗片段中建立表單，而調適型Forms — 內嵌元件可讓您新增現有的調適型表單或使用調適型Forms編輯器建立表單。
 
 ![AEM Sites頁面中的最適化表單範例](/help/forms/assets/adaptive-form-in-sites-page.png)
 
@@ -187,7 +187,7 @@ AEM FormsCloud Service提供最適化表單容器和Adaptive Forms — 內嵌元
    會出現對話方塊，將最適化表單容器轉換為新的體驗片段或新增到現有的體驗片段
 1. 在轉換為體驗片段變數對話方塊中，設定以下選項的值：
 
-   * **動作：** 選取以建立新的體驗片段或新增到現有的體驗片段。
+   * **動作：** 選取以建立體驗片段或新增到現有的體驗片段。
    * **父路徑：** 指定要託管體驗片段的資料夾路徑。 選項僅適用於建立新的體驗片段。
    * **範本：** 指定體驗片段範本的路徑。 如果您沒有體驗片段範本， [建立它](/help/implementing/developing/extending/experience-fragments.md). 該選項僅可用於將最適化表單新增到現有的體驗片段。
    * **片段標題：** 指定體驗片段的標題。 標題可唯一識別體驗片段

@@ -2,9 +2,9 @@
 title: 建立示範網站
 description: 根據預先設定的範本庫在 AEM 中建立示範網站。
 exl-id: e76fd283-12b2-4139-9e71-2e145b9620b1
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '838'
+source-wordcount: '836'
 ht-degree: 11%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 11%
 
 在AEM參考示範附加元件歷程的上一個檔案中， [建立計畫，](create-program.md) 您執行了第一個設定步驟來建立方案以進行測試，並使用管道來部署附加內容。 您現在應該：
 
-* 瞭解如何使用Cloud Manager建立新計畫。
+* 瞭解如何使用Cloud Manager建立計畫。
 * 瞭解如何啟用新方案的參考示範附加元件。
 * 能夠執行管道以部署附加內容。
 
@@ -25,7 +25,7 @@ ht-degree: 11%
 
 ## 目標 {#objective}
 
-本檔案可協助您瞭解如何根據參考示範附加元件的範本建立新網站。 閱讀本文件後，您應該：
+本檔案可協助您瞭解如何根據參考示範附加元件的範本建立網站。 閱讀本文件後，您應該：
 
 * 瞭解如何存取AEM製作環境。
 * 瞭解如何根據範本建立網站。

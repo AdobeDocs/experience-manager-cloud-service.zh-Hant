@@ -2,9 +2,9 @@
 title: 內容片段模型（資產 — 內容片段）
 description: 瞭解內容片段模型如何作為AEM中Headless內容的基礎，以及如何使用結構化內容建立內容片段。
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
-source-git-commit: f499edbc05b71495c072564bb065a07c34a9e236
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '2937'
+source-wordcount: '2935'
 ht-degree: 8%
 
 ---
@@ -296,7 +296,7 @@ type CompanyModel {
 
 * **允許建立片段**
 
-  這將允許片段作者根據適當的模型建立新片段。
+  如此可讓片段作者根據適當的模型建立片段。
 
    * **片段參考複合**  — 允許片段作者藉由選取多個片段來建置複合
 

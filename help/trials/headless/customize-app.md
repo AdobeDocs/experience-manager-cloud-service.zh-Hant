@@ -4,10 +4,10 @@ description: 使用範例 React 應用程式，了解如何使用 AEM as a Cloud
 hidefromtoc: true
 index: false
 exl-id: 32290ad4-d915-41b7-a073-2637eb38e978
-source-git-commit: 3177832b32c98bf463c763dafe2d9e284dc2ac28
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '1044'
-ht-degree: 100%
+source-wordcount: '1040'
+ht-degree: 98%
 
 ---
 
@@ -105,7 +105,7 @@ ht-degree: 100%
 
 1. 選取「**騎越野車 - 可購物**」圖層。
 
-1. 為了在此面板上建立新的標註，您必須建立一個新的可購物機會內容片段。點選或按一下「**+ 建立新片段**」按鈕。
+1. 若要在此面板上建立標註，請建立可購物機會內容片段。 點選或按一下「**+ 建立新片段**」按鈕。
 
    ![新增一個「可購物機會」](assets/do-not-localize/add-reference-1-5.png)
 

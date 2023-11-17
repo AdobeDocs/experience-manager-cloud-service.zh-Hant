@@ -2,9 +2,9 @@
 title: 管理您的示範網站
 description: 了解可協助您管理示範網站的工具以及如何移除它們。
 exl-id: 988c6e09-c43e-415f-8d61-998c294c5a11
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '943'
+source-wordcount: '942'
 ht-degree: 17%
 
 ---
@@ -93,7 +93,7 @@ ht-degree: 17%
 恭喜！您已完成AEM參考示範附加元件歷程！ 您現在應該：
 
 * 基本瞭解Cloud Manager，並瞭解管道如何將內容和設定傳送到AEM。
-* 瞭解如何使用Cloud Manager建立新計畫。
+* 瞭解如何使用Cloud Manager建立計畫。
 * 瞭解如何為新程式啟動參考示範附加元件，並能夠執行管道以部署附加元件內容。
 * 瞭解如何存取AEM製作環境，以根據範本建立網站。
 * 瞭解如何存取自助示範公用程式。

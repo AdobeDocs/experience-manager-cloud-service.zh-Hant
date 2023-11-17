@@ -2,9 +2,9 @@
 title: 元件參考指南
 description: 開發人員參考指南，瞭解元件及其結構的詳細資訊
 exl-id: 45e5265b-39d6-4a5c-be1a-e66bb7ea387d
-source-git-commit: 87630d9530194fd0c6d88e05a17db108b765ccb6
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '3648'
+source-wordcount: '3646'
 ht-degree: 1%
 
 ---
@@ -248,7 +248,7 @@ Content not found
 >See the [AEM Gems session](https://docs.adobe.com/content/ddc/en/gems/customizing-dialog-fields-in-touch-ui.html) on customizing dialog fields.
 -->
 
-若要建立新的Widget以用於元件對話方塊，需要您建立新的Granite UI欄位元件。
+若要建立Widget以用於元件對話方塊，需要您建立Granite UI欄位元件。
 
 如果您將對話方塊視為表單元素的簡單容器，則也可以將對話方塊內容的主要內容視為表單欄位。 建立新表單欄位需要您建立資源型別；這等同於建立新元件。 為協助您完成該工作，Granite UI提供了可供繼承的通用欄位元件(使用 `sling:resourceSuperType`)：
 

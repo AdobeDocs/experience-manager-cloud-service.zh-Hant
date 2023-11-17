@@ -2,9 +2,9 @@
 title: 在Screensas a Cloud Service中建立和管理頻道
 description: 本頁面說明如何在Screens中以as a Cloud Service方式建立和管理頻道。
 exl-id: 3b0bae7a-4a45-485a-ab04-604510ff6578
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '1087'
+source-wordcount: '1086'
 ht-degree: 2%
 
 ---
@@ -28,7 +28,7 @@ ht-degree: 2%
 >**必備條件**
 >在開始本指南的本節之前，請檢閱 [在Screensas a Cloud Service中建立和管理專案](/help/screens-cloud/creating-content/creating-projects-screens-cloud.md).
 
-請依照下列步驟，在Screensas a Cloud Service中建立新的順序頻道：
+請依照下列步驟，在Screensas a Cloud Service中建立順序頻道：
 
 1. 導覽至Screens內容提供者。
 

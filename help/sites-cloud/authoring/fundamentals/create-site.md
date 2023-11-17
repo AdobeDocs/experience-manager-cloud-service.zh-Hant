@@ -1,12 +1,12 @@
 ---
 title: 建立新網站
-description: 瞭解管理員如何使用AEM建立新網站，並使用網站範本定義網站的樣式和結構。
+description: 瞭解管理員如何使用AEM建立網站，並使用網站範本定義網站的樣式和結構。
 feature: Administering
 role: Admin
 exl-id: 50105d03-9d94-4aec-b0a7-0b88e3fe50e0
-source-git-commit: 53d4e22805774c0b994ee2bba429c19506639014
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '127'
+source-wordcount: '125'
 ht-degree: 7%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 7%
 
 # 建立新網站 {#new-site}
 
-瞭解管理員如何使用AEM建立新網站，並使用網站範本定義網站的樣式和結構。
+瞭解管理員如何使用AEM建立網站，並使用網站範本定義網站的樣式和結構。
 
 {{edge-delivery-authoring}}
 

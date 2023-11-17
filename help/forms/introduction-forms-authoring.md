@@ -1,17 +1,15 @@
 ---
 title: 編寫最適化表單簡介
 description: AEM Forms 提供易於使用但功能強大的介面來編寫最適化表單。它提供了許多可用於建置表單的元件和工具。
-uuid: 3b150507-41b9-47c2-a94c-f85b903b2274
 content-type: reference
 topic-tags: author, introduction
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: ba70921e-db7e-43f6-902c-1065d3b13aef
 docset: aem65
 exl-id: 16f86dae-86fb-481b-8978-b8898705ed7e
-source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '2484'
-ht-degree: 100%
+source-wordcount: '2482'
+ht-degree: 99%
 
 ---
 
@@ -54,7 +52,7 @@ XML 和 JSON 結構描述表示組織的後端系統產生或使用資料的結�
 * 標準表單元件
 * 整合式資產存放庫
 
-當您建立新的最適化表單或編輯現有的最適化表單時，您可以使用以下 UI 元素：
+當您建立或編輯現有的最適化表單時，會使用下列UI元素：
 
 * [側邊欄](#sidebar)
 * [頁面工具列](#page-toolbar)

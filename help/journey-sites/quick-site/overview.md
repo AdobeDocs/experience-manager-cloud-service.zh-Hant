@@ -2,10 +2,10 @@
 title: AEM 快速網站建立歷程
 description: 從這裡開始，此歷程會逐步引導您了解簡單易用的 AEM 快速網站建立工具，以簡化 AEM 網站的前端開發，並在沒有 AEM 後端知識的情況下快速自訂您的網站。
 exl-id: b8218232-0298-4b16-9dab-fa59be592a24
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '1034'
-ht-degree: 100%
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+workflow-type: tm+mt
+source-wordcount: '1032'
+ht-degree: 96%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 
 AEM Sites 是用於建立和管理數位體驗的強大工具集。內容作者可以使用網站編輯器輕鬆建立數位體驗，並使用網站主控台組織內容，同時能夠查看 AEM 跨管道傳遞給您對象的即時內容。
 
-AEM 快速網站建立歷程工具可讓非開發人員使用網站範本從頭開始快速建立新網站。建立後，快速網站建立工具還可讓您快速為 AEM 網站自訂主題並建立風格 (JavaScript、CSS 和靜態資源)。這使得前端開發人員即使不懂 AEM 也能與內容建立者分開且並行工作。AEM 管理員只需下載網站主題並將其提供給前端開發人員，前端開發人員使用他們偏好的工具自訂主題，然後將變更提交到 AEM 程式碼存放庫，然後進行部署。
+AEM快速網站建立工具可讓非開發人員使用網站範本，從頭開始快速建立網站。 建立後，快速網站建立工具還可讓您快速為 AEM 網站自訂主題並建立風格 (JavaScript、CSS 和靜態資源)。這使得前端開發人員即使不懂 AEM 也能與內容建立者分開且並行工作。AEM 管理員只需下載網站主題並將其提供給前端開發人員，前端開發人員使用他們偏好的工具自訂主題，然後將變更提交到 AEM 程式碼存放庫，然後進行部署。
 
 快速網站建立工具讓開發人員不需具備網站建立知識，前端開發人員不需具備 AEM 知識，主題開發工作與內容建立工作可並行，因而大幅加速網站的價值實現時間並增加網站自訂和部署敏捷性。
 
@@ -54,7 +54,7 @@ AEM 快速網站建立歷程工具可讓非開發人員使用網站範本從頭�
 |---|---|---|--|
 | 0 | AEM 快速網站建立歷程  | 本文件 | AEM &amp; Cloud Manager 管理員 |
 | 1 | [了解 Cloud Manager 和快速網站建立工作流程](cloud-manager.md) | 了解 Cloud Manager 以及它如何與新的快速網站建立流程繫結在一起。 | AEM 管理員 |
-| 2 | [從範例建立網站](create-site.md) | 解如何使用網站範本快速建立新的 AEM 網站。 | AEM 管理員 |
+| 2 | [從範例建立網站](create-site.md) | 瞭解如何使用網站範本快速建立AEM網站。 | AEM 管理員 |
 | 3 | [設定您的管道](pipeline-setup.md) | 建立前端管道以管理網站主題的自訂。 | Cloud Manager 管理員 |
 | 4 | [授予前端開發人員存取權](grant-access.md) | 讓前端開發人員加入 Cloud Manager，以便能存取您的 AEM 網站 Git 存放庫和管道。 | Cloud Manager 管理員 |
 | 5 | [擷取 git 存放庫存取資訊](retrieve-access.md) | 了解前端開發人員如何使用 Cloud Manager 來存取 Git 存放庫資訊。 | 前端開發人員 |

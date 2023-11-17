@@ -2,9 +2,9 @@
 title: 使用 CRXDE Lite
 description: CRXDE Lite是AEM快速入門的一部分，可供您在瀏覽器中存取和修改本機開發環境中的存放庫。
 exl-id: 1581a7e5-6f84-4a45-8e8f-c83692ea077a
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '1684'
+source-wordcount: '1683'
 ht-degree: 1%
 
 ---
@@ -206,7 +206,7 @@ CRXDE Lite的使用者介面有許多部分且有許多功能。
 
 ## 建立檔案 {#creating-a-file}
 
-若要以CRXDE Lite建立新檔案：
+若要建立具有CRXDE Lite的檔案：
 
 1. 在瀏覽器中開啟CRXDE Lite。
 1. 在 [**瀏覽器窗格**，](#explorer-pane) 以滑鼠右鍵按一下要建立檔案的元件，然後選取 **建立**，然後 **建立檔案**.

@@ -2,9 +2,9 @@
 title: as a Cloud Service建立和管理熒幕中的顯示
 description: 此頁面說明如何建立和管理Screensas a Cloud Service的顯示。
 exl-id: 0f9faa4b-b50e-40f8-a8ed-280f8bd0a9b8
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '659'
+source-wordcount: '657'
 ht-degree: 3%
 
 ---
@@ -67,7 +67,7 @@ ht-degree: 3%
 
 1. 選取 **隱藏資料夾** 以再次關閉它。
 
-## 如何建立新資料夾 {#create-folder}
+## 如何建立資料夾 {#create-folder}
 
 您可以建立資料夾以更妥善地組織您的顯示。
 
@@ -86,7 +86,7 @@ ht-degree: 3%
 
    ![影像](/help/screens-cloud/assets/display/Createfolder2.png)
 
-## 如何建立新的巢狀資料夾 {#nested-folder}
+## 如何建立巢狀資料夾 {#nested-folder}
 
 1. 切換作業選項至顯示存貨檢視表。
 

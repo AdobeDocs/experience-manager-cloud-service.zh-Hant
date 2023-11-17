@@ -4,10 +4,10 @@ description: 使用您先前建立的內容片段模式來建立可用來編寫�
 hidefromtoc: true
 index: false
 exl-id: d74cf5fb-4c4a-4363-a500-6e2ef6811e60
-source-git-commit: 91e9711e10a7aa8e3c7fa0b4cc25a098741e53b1
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '702'
-ht-degree: 100%
+source-wordcount: '701'
+ht-degree: 97%
 
 ---
 
@@ -33,7 +33,7 @@ ht-degree: 100%
 
 內容片段代表您的 Headless 內容，且以預先定義的結構為基礎，稱為內容片段模式。您已經在前面的單元建立模型。
 
-在本單元中，您會使用內容片段主控台根據該模型建立新的內容片段。將內容片段主控台視為您的 Headless 內容資料庫。使用該控制台來建立新的內容片段並管理現有片段。
+在本模式中，您會使用內容片段主控台，根據該模式建立內容片段。 將內容片段主控台視為您的 Headless 內容資料庫。使用該控制台來建立新的內容片段並管理現有片段。
 
 內容片段主控台可用於在不同的傳遞管道中建立和編輯 Headless 內容，不受內容影響，這在許多編寫案例中可能是最有效的方法。在後面的模組中，我們會探索在內容中和在原處編輯 Headless 內容。
 

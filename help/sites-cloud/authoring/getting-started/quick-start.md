@@ -2,9 +2,9 @@
 title: 編寫頁面的快速入門手冊
 description: 快速高階指南，協助您開始編寫頁面內容
 exl-id: d37c9b61-7382-4bf6-8b90-59726b871264
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '1561'
+source-wordcount: '1560'
 ht-degree: 6%
 
 ---
@@ -76,7 +76,7 @@ ht-degree: 6%
 
 ### 建立新頁面 {#creating-a-new-page}
 
-至 [建立新頁面](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page)：
+至 [建立頁面](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page)：
 
 1. [導覽至該位置](#finding-your-page) 建立新頁面的位置。
 1. 使用 **建立** 圖示，然後選取 **頁面** 從清單：

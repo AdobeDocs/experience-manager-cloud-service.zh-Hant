@@ -2,9 +2,9 @@
 title: 製作環境和工具
 description: AEM的製作環境提供各種機制來組織和編輯您的內容
 exl-id: cc3bd4cf-93bd-429d-9a2a-4a02a7b42f7c
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '2164'
+source-wordcount: '2163'
 ht-degree: 11%
 
 ---
@@ -120,7 +120,7 @@ AEM的製作環境提供各種機制來組織和編輯您的內容。 提供的�
 
 * 適當型別的現有元件。
    * 例如，您可以將影像型別的資產拖曳至影像元件上。
-* A [預留位置](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-placeholder) 在段落系統中建立適當型別的新元件。
+* A [預留位置](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-placeholder) 在段落系統中建立適當型別的元件。
    * 例如，您可以將影像型別的資產拖曳至段落系統，以建立「影像」元件。
 
 >[!NOTE]

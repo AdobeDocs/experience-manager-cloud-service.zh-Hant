@@ -3,13 +3,13 @@ title: AEM as a Cloud Service 的目標選擇器
 description: 使用 AEM 目標選擇器顯示和選取可用為原始資產副本的資產。
 contentOwner: Adobe
 role: Admin,User
-source-git-commit: cf783a91d33bc7a42e177ace3ca49844f14a6a79
+exl-id: 7e7bc1ee-d580-4c88-b550-273e8b0620ba
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '1908'
+source-wordcount: '1906'
 ht-degree: 86%
 
 ---
-
 
 # 微前端目標選擇器 {#Overview}
 
@@ -212,7 +212,7 @@ interface SelectedDestination {
 
 ### 範例 1：在目標選擇器中建立資料夾
 
-目的地選擇器可讓您建立新資料夾，以上傳、移動或複製特定位置的資產。
+目的地選擇器可讓您建立資料夾，以上傳、移動或複製特定位置的資產。
 
 ![create-folder-destination-selector](assets/create-folder-destination-selector.png)
 
@@ -261,7 +261,7 @@ interface SelectedDestination {
 
 ### 建立新資料夾 {#create-new-folder}
 
-它可讓您在的目標資料夾中建立新資料夾 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service].
+它可讓您在的目的地資料夾中建立資料夾 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service].
 
 ### 檢視的類型 {#types-of-view}
 

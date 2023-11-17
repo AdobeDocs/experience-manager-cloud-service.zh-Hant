@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: 1d3ad496-a964-476e-b1da-4aa6d8ad53b7
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '986'
+source-wordcount: '984'
 ht-degree: 15%
 
 ---
@@ -41,9 +41,9 @@ ht-degree: 15%
 
    ![select_form](assets/select_form.png)
 
-1. （選用）在中繼資料結構編輯器中，建立新欄位以進行條件化。 在中指定名稱和屬性路徑 **[!UICONTROL 設定]** 標籤。
+1. （選用）在中繼資料結構編輯器中，建立欄位以進行條件化。 在中指定名稱和屬性路徑 **[!UICONTROL 設定]** 標籤。
 
-   若要建立新標籤，請點選/按一下 `+` 以新增索引標籤，然後新增中繼資料欄位。
+   若要建立標籤，請點選/按一下 `+` 以新增索引標籤，然後新增中繼資料欄位。
 
    ![add_tab](assets/add_tab.png)
 

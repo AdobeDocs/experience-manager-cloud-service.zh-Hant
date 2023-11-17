@@ -2,10 +2,10 @@
 title: AEM Headful 和 Headless 技術
 description: AEM 專案可以在 Headful 和 Headless 模型中實作，但這不必是二選一。AEM 提供了在一個專案中利用兩種模型優勢的靈活性。
 exl-id: 709850ca-7757-47ab-9625-f411121cde2c
-source-git-commit: 87630d9530194fd0c6d88e05a17db108b765ccb6
-workflow-type: ht
-source-wordcount: '1013'
-ht-degree: 100%
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+workflow-type: tm+mt
+source-wordcount: '1012'
+ht-degree: 97%
 
 ---
 
@@ -43,7 +43,7 @@ AEM 還可用於簡單地管理內容，允許由另一個平台管理內容的�
 
 >[!NOTE]
 >
->當然，您也可以將網路商店 SPA 重新實作為功能完整的 AEM SPA，方法是使用 [AEM SPA 編輯器框架](/help/implementing/developing/hybrid/introduction.md)。如果您已經擁有 AEM 並希望建立新的網路商店或其他 SPA，建議使用此方法，但它不在本文件討論範圍內。
+>當然，您也可以將網路商店 SPA 重新實作為功能完整的 AEM SPA，方法是使用 [AEM SPA 編輯器框架](/help/implementing/developing/hybrid/introduction.md)。如果您已有AEM且想要建立網站商店或其他SPA，建議使用此方法，但超出了本檔案的範圍。
 
 ## SPA 整合層級 {#integration-levels}
 

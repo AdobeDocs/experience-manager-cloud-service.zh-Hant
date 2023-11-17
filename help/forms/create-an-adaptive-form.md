@@ -8,10 +8,10 @@ level: Beginner
 hide: true
 hidefromtoc: true
 exl-id: 6f1c3fe7-b61e-47ce-b565-15b4904db092
-source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '2748'
-ht-degree: 100%
+source-wordcount: '2737'
+ht-degree: 97%
 
 ---
 
@@ -38,17 +38,17 @@ ht-degree: 100%
 
 您必須符合以下條件才能建立最適化表單：
 
-* **為您的環境啟用最適化表單核心元件**：建立新程式時，已針對您的環境啟用最適化表單核心元件。如果您有以 Archetype 39 或更早版本為基礎的 Forms as a Cloud Service 環境，請[為您的環境啟用最適化表單核心元件](enable-adaptive-forms-core-components.md)。為您的環境啟用核心元件後，**最適化表單 (核心元件)** 範本和畫布主題就會新增到您的環境中。如果您的 AEM SDK 版本比 2023.02.0 更舊，[請確定已`prerelease`在您的環境中啟用標幟](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=zh-Hant#new-features)，因為最適化表單核心元件是 2023.02.0 版本之前搶鮮版的一部分。
+* **為您的環境啟用最適化Forms核心元件**：建立方案時，最適化Forms核心元件已為您的環境啟用。 如果您有以 Archetype 39 或更早版本為基礎的 Forms as a Cloud Service 環境，請[為您的環境啟用最適化表單核心元件](enable-adaptive-forms-core-components.md)。為您的環境啟用核心元件後，**最適化表單 (核心元件)** 範本和畫布主題就會新增到您的環境中。如果您的 AEM SDK 版本比 2023.02.0 更舊，[請確定已`prerelease`在您的環境中啟用標幟](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=zh-Hant#new-features)，因為最適化表單核心元件是 2023.02.0 版本之前搶鮮版的一部分。
 
 * **最適化表單範本**：此範本會提供基本結構並定義最適化表單的外觀 (版面和樣式)。其中具有包含特定屬性和內容結構的預先格式化元件。它也會提供定義主題和提交動作的選項。主題會定義外觀，而提交動作會定義提交最適化表單時要採取的動作。例如，將所收集的資料傳送到資料來源。雲端服務會提供一個名為 blank 的 OOTB 範本：
 
    * 該 `blank` 範本會包含在每個新的 AEM Forms as a Cloud Service 程式中。
    * 您可以透過套件管理員安裝參考套件，將該 `blank` 範本新增到您的 AEM Forms as a Cloud Service 程式。
-   * 您也可以從頭開始[建立新的最適化表單範本 (核心元件)](template-editor.md)。
+   * 您也可以 [建立最適化Forms範本（核心元件）](template-editor.md) 從頭開始。
 
 * **最適化表單主題**：主題包含元件和面板的樣式詳細資料。樣式包括背景顏色、狀態顏色、透明度、對齊方式和大小等屬性。套用主題時，指定的樣式會反映在對應的元件上。`Canvas` 會包含在每個新的 AEM Forms as a Cloud Service 程式中。
   <!-- * You can install the reference package, via package manager, to add the `Canvas` template to your AEM Forms as a Cloud Service program.
-    * You can also [create a new Adaptive Forms theme (Core Components)](template-editor.md) and deploy it to your AEM Forms as a Cloud Service program. -->
+    * You can also [create an Adaptive Forms theme (Core Components)](template-editor.md) and deploy it to your AEM Forms as a Cloud Service program. -->
 
 * **權限**：將您的使用者新增到 [!DNL forms-users] 群組。[!DNL forms-users] 群組的成員擁有建立最適化表單的權限。如需表單特定之使用者群組的詳細清單，請參閱[群組和權限](forms-groups-privileges-tasks.md)。
 
@@ -117,13 +117,13 @@ ht-degree: 100%
 
 * **權限**：將您的使用者新增到 [!DNL forms-users]，以便為他們提供建立最適化表單的權限。如需表單特定之使用者群組的詳細清單，請參閱[群組和權限](forms-groups-privileges-tasks.md)。
 
-* **最適化表單主題**：主題包含元件和面板的樣式詳細資料。樣式包括背景顏色、狀態顏色、透明度、對齊方式和大小等屬性。套用主題時，指定的樣式會反映在對應的元件上。您可以[建立新主題](themes.md)或[匯入現有的主題](import-export-forms-templates.md#uploading-a-theme)。您也可以針對一些範例主題部署[最新的原型版本](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html#create-project)。
+* **最適化表單主題**：主題包含元件和面板的樣式詳細資料。樣式包括背景顏色、狀態顏色、透明度、對齊方式和大小等屬性。套用主題時，指定的樣式會反映在對應的元件上。您可以 [建立主題](themes.md) 或 [匯入現有主題](import-export-forms-templates.md#uploading-a-theme). 您也可以針對一些範例主題部署[最新的原型版本](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html#create-project)。
 
 * **最適化表單範本**：此範本會提供基本結構並定義最適化表單的外觀 (版面和樣式)。其中具有包含特定屬性和內容結構的預先格式化元件。它也會提供定義主題和提交動作的選項。主題會定義外觀，而提交動作會定義提交最適化表單時要採取的動作。例如，將所收集的資料傳送到資料來源。雲端服務支援兩種類型的範本：
 
-   * **可編輯範本**：您可以[建立新的](template-editor.md)或[匯入現有可編輯的範本](migrate-to-forms-as-a-cloud-service.md)。您也可以部署[最新的原型版本](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=zh-Hant#:~:text=The%20AEM%20Archetype%20is%20made%20up%20of%20modules%3A,and%20request%20filters.%20it.tests%3A%20are%20Java-based%20integration%20tests.)以取得一些可編輯範本範例。
+   * **可編輯的範本**：您可以 [建立](template-editor.md) 或 [匯入現有的可編輯範本](migrate-to-forms-as-a-cloud-service.md). 您也可以部署[最新的原型版本](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=zh-Hant#:~:text=The%20AEM%20Archetype%20is%20made%20up%20of%20modules%3A,and%20request%20filters.%20it.tests%3A%20are%20Java-based%20integration%20tests.)以取得一些可編輯範本範例。
 
-   * **靜態範本**：這些是舊範本，建議僅用於從 Adobe Managed Services (AMS) 和內部部署 AEM Forms 安裝 (AEM 6.5 Forms 或更早版本) 移轉的客戶。這些範本可讓您繼續使用對靜態範本的現有投資。建立新的最適化表單時，建議使用可編輯範本。
+   * **靜態範本**：這些是舊範本，建議僅用於從 Adobe Managed Services (AMS) 和內部部署 AEM Forms 安裝 (AEM 6.5 Forms 或更早版本) 移轉的客戶。這些範本可讓您繼續使用對靜態範本的現有投資。建立最適化表單時，請使用可編輯的範本。
 
 
 ## 建立最適化表單 {#create-an-adaptive-form-foundation-components}
@@ -143,7 +143,7 @@ ht-degree: 100%
      >
      > 您也可以使用最適化表單編輯器建立「[!UICONTROL 記錄文件]」範本。如需更多資訊，請參閱[最適化表單編輯器中的記錄文件支援](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform)。
 
-   * 選取靜態範本時，無法使用資料、樣式、提交、傳遞和預覽選項。建立新的最適化表單時，建議使用可編輯範本。
+   * 選取靜態範本時，無法使用資料、樣式、提交、傳遞和預覽選項。建立最適化表單時，建議使用可編輯的範本。
 
 1. 在「**[!UICONTROL 樣式]**」標籤中，選取一個主題：
 

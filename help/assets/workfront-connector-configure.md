@@ -4,9 +4,9 @@ description: 設定 [!DNL Workfront for Experience Manager enhanced connector]
 role: Admin
 feature: Integrations
 exl-id: d4e1247a-342c-4bc4-83bf-4e4902468fb3
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '1771'
+source-wordcount: '1770'
 ht-degree: 1%
 
 ---
@@ -98,7 +98,7 @@ Adobe Workfront檔案與資產之間的中繼資料對應是在AEM中繼資料�
 若要設定對應，請遵循下列步驟：
 
 1. 瀏覽至 **工具** > **資產** > **中繼資料結構**.
-1. 選取您要編輯的中繼資料結構表單，然後按一下 **編輯** 或從頭開始建立新的中繼資料結構。
+1. 選取您要編輯的中繼資料結構表單，然後按一下 **編輯** 或從頭開始建立中繼資料結構。
 1. 選取您要編輯的中繼資料結構表單欄位，然後選取 **設定** 標籤。
 1. 在 [!DNL Workfront] 自訂表單欄位選取 [!DNL Workfront] 您希望對應到所選AEM屬性的欄位。 可用的選項包括：
 

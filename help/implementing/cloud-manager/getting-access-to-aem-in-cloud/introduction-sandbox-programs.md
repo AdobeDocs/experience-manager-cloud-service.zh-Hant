@@ -2,10 +2,10 @@
 title: 沙箱計畫簡介
 description: 了解沙箱計畫與生產計畫有何不同。
 exl-id: 4606590c-6826-4794-9d2e-5548a00aa2fa
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '475'
-ht-degree: 100%
+source-wordcount: '474'
+ht-degree: 98%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 100%
 
 ## 自動建立 {#auto-creation}
 
-沙箱計畫具有自動建立功能。每當您自動建立新的沙箱計畫 Cloud Manager 時：
+沙箱計畫具有自動建立功能。每當您建立沙箱程式時，Cloud Manager都會自動：
 
 * 在您的計畫中新增 AEM Sites 和 AEM Assets 作為解決方案。
 * 使用基於範執行個體目的範執行個體目設定項目 git 存放庫 [AEM Project 原型。](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hant)

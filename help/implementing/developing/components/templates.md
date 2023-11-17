@@ -2,9 +2,9 @@
 title: 頁面範本
 description: 建立作為新頁面基礎的頁面時，會使用頁面範本
 exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '3291'
+source-wordcount: '3287'
 ht-degree: 1%
 
 ---
@@ -83,7 +83,7 @@ ht-degree: 1%
 
    如需初始內容的技術細節，請參閱 [初始內容](#initial-content) （在此檔案中）。
 
-   **配置**
+   **版面配置**
 
    * 您可以為一系列裝置定義範本配置。
    * 範本的回應式版面運作方式與頁面製作相同。
@@ -103,7 +103,7 @@ ht-degree: 1%
 
 1. 使用它來建立內容頁面。
 
-   * 使用範本建立新頁面時，靜態範本與可編輯範本之間沒有可見的差異和指示。
+   * 使用範本建立頁面時，靜態範本和可編輯範本之間沒有可見的差異和指示。
    * 對於頁面作者，程式是透明的。
 
    如需頁面作者如何使用範本建立頁面的詳細資訊，請參閱 [建立及組織頁面](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#templates).
@@ -141,11 +141,11 @@ ht-degree: 1%
 >
 >即使您可以巢狀內嵌資料夾，當使用者在 **範本** 主控台則是以平面結構呈現。
 
-在標準AEM執行個體中 `global` 資料夾已存在於範本主控台中。 此檔案會保留預設範本，並在目前資料夾中找不到原則及/或範本型別時，做為遞補內容。 您可以將預設範本新增至此資料夾或建立新資料夾（建議選項）。
+在標準AEM執行個體中 `global` 資料夾已存在於範本主控台中。 此檔案會保留預設範本，並在目前資料夾中找不到原則及/或範本型別時，做為遞補內容。 您可以將預設範本新增至此資料夾或建立資料夾（建議）。
 
 >[!NOTE]
 >
->最佳實務是建立新資料夾來儲存您的自訂範本，而不是使用 `global` 資料夾。
+>最佳實務是建立資料夾來儲存您的自訂範本，而不是使用 `global` 資料夾。
 
 >[!CAUTION]
 >
@@ -161,7 +161,7 @@ ht-degree: 1%
 
 將會建立所有允許專案的清單。 如果任何設定重疊( `path`/ `label`)，則只會向使用者顯示最接近目前資料夾的執行個體。
 
-若要建立新資料夾，您可以執行下列任一操作：
+若要建立資料夾，您可以執行下列任一操作：
 
 * 以程式設計方式或使用CRXDE Lite
 * 使用 [設定瀏覽器](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)
@@ -451,7 +451,7 @@ GITHUB上的程式碼
 * 此 `root` node會儲存元件清單，以定義結果頁面中的可用專案。
 * 如果在結構模式下將內容新增到元件中，且隨後解鎖該元件（反之亦然），則會將此內容用作初始內容。
 
-### 配置 {#layout}
+### 版面配置 {#layout}
 
 時間 [編輯範本您可以定義版面](/help/sites-cloud/authoring/features/templates.md)，此會使用 [標準回應式佈局](/help/sites-cloud/authoring/features/responsive-layout.md).
 

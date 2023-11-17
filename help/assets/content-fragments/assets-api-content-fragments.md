@@ -3,9 +3,9 @@ title: Assets HTTP API中的Adobe Experience Manager as a Cloud Service內容片
 description: 瞭解Assets HTTP API支援內容片段，這是Adobe Experience Manager的Headless傳送功能的重要一環。
 feature: Content Fragments,Assets HTTP API
 exl-id: d72cc0c0-0641-4fd6-9f87-745af5f2c232
-source-git-commit: 78ead5f15c2613d9c3bed3025b43423a66805c59
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '1793'
+source-wordcount: '1791'
 ht-degree: 13%
 
 ---
@@ -263,7 +263,7 @@ A [內容片段](/help/assets/content-fragments/content-fragments.md) 是一種�
 
 有幾項限制：
 
-* **目前不支援內容片段模型**：它們無法讀取或建立。 為了能夠建立新的或更新現有的內容片段，開發人員必須知道內容片段模型的正確路徑。 目前，取得這些內容的概觀的唯一方法就是透過管理UI。
+* **目前不支援內容片段模型**：它們無法讀取或建立。 為了能夠建立或更新現有的內容片段，開發人員必須知道內容片段模型的正確路徑。 目前，取得這些內容的概觀的唯一方法就是透過管理UI。
 * **會忽略參照**. 目前沒有檢查是否參考了現有的內容片段。 因此，例如，刪除內容片段可能會導致包含已刪除內容片段參考的頁面發生問題。
 * **JSON資料型別** 的REST API輸出 *JSON資料型別* 是 *字串型輸出*.
 

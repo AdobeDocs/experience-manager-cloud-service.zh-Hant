@@ -2,9 +2,9 @@
 title: 自訂權限
 description: 瞭解如何使用自訂許可權建立新的自訂許可權設定檔，並使用可設定的許可權來限制對Cloud Managers使用者程式、管道和環境的存取權。
 exl-id: 167da985-7f19-45b3-90a3-884817907da2
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '1506'
+source-wordcount: '1501'
 ht-degree: 3%
 
 ---
@@ -48,7 +48,7 @@ Cloud Manager有一組預先定義的角色，可控制對Cloud Manager各種功
 
 ### 建立新的產品設定檔 {#create}
 
-您必須先建立新的產品設定檔，才能指派自訂許可權。
+您必須先建立產品設定檔，才能為其指派自訂許可權。
 
 1. 登入Cloud Manager於 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)
 
@@ -123,10 +123,10 @@ Cloud Manager有一組預先定義的角色，可控制對Cloud Manager各種功
 
 | 權限 | 說明 |
 |---|---|
-| 計畫建立 | 允許使用者建立新計畫 |
+| 計畫建立 | 允許使用者建立方案 |
 | 計畫存取 | 允許使用者存取程式 |
 | 計畫編輯 | 允許使用者編輯計畫 |
-| 環境建立 | 允許使用者建立新環境 |
+| 環境建立 | 允許使用者建立環境 |
 | 環境編輯 | 允許使用者更新及編輯環境 |
 | 環境記錄讀取 | 允許使用者讀取環境記錄 |
 | 管道建立 | 允許使用者建立新管道 |
@@ -145,7 +145,7 @@ Cloud Manager有一組預先定義的角色，可控制對Cloud Manager各種功
 
 下列許可權是組織層級的許可權：
 
-* **計畫建立**  — 此許可權可讓使用者在組織中建立新的方案。
+* **計畫建立**  — 此許可權可讓使用者在組織中建立方案。
 * **存放庫資訊存取** 此租使用者/組織層級許可權可讓使用者產生使用者名稱、密碼和存放庫URL，以便存取和貢獻給客戶專案。
    * 組織中所有存放庫存取許可權的使用者名稱和密碼都是通用的，不過每個計畫的存放庫URL都是唯一的。
    * 請參閱檔案 [存取存放庫](/help/implementing/cloud-manager/managing-code/accessing-repos.md) 以取得詳細資訊。

@@ -2,10 +2,10 @@
 title: 為 Headless 內容設定翻譯整合
 description: 了解如何將 AEM 連接到翻譯服務。
 exl-id: c91b2701-7ede-4d0b-93dd-3636c6638be2
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '1230'
-ht-degree: 97%
+source-wordcount: '1229'
+ht-degree: 95%
 
 ---
 
@@ -68,9 +68,9 @@ AEM 的翻譯整合框架 (TIF) 整合協力廠商翻譯服務以協調 AEM 內�
 * 是否進行人工翻譯或機器翻譯
 * 是否要翻譯與內容片段相關聯的其他內容，例如標記
 
-若要建立新的翻譯設定：
+若要建立翻譯組態：
 
-1. 在全域導覽功能表中，按一下或點選&#x200B;**工具** -> **雲端服務** -> **翻譯雲端服務**。
+1. 在全域導覽功能表中，按一下或點選 **工具** > **Cloud Service** > **翻譯Cloud Service**.
 1. 在內容結構中導覽到想要建立設定的位置。這通常根據特定專案，也可以是全域的。
    * 例如，在此情況下，以全域方式建立設定以套用到所有內容，或僅適用於 WKND 專案。
 

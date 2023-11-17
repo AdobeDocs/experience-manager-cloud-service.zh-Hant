@@ -5,7 +5,7 @@ role: User, Developer
 keywords: 將AEM最適化表單連線至Microsoft SharePoint清單、將最適化表單連線至Microsoft SharePoint清單、將AEM最適化表單整合至Microsoft SharePoint清單、將最適化表單整合至Microsoft SharePoint清單、將最適化表單的資料提交至SharePoint清單、將AEM工作流程提交至SharePoint清單。
 hide: true
 hidefromToC: true
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
 source-wordcount: '539'
 ht-degree: 5%
@@ -56,7 +56,7 @@ ht-degree: 5%
 1. [建立工作流程以叫用表單資料模型](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html)
 
    <!--
-    To create a new workflow with the editor, perform the following steps:
+    To create a workflow with the editor:
     1.  Go to your **AEM Forms Author** instance > **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**.
     1.  Click **[!UICONTROL Create]** > **[!UICONTROL Create Model]**. The Add Workflow Model dialog appears. 
     1. Specify **[!UICONTROL Title]** and **[!UICONTROL Name (optional)]**.

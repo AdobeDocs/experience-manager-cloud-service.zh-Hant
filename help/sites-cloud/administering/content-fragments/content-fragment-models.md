@@ -4,9 +4,9 @@ description: 瞭解內容片段模型如何作為您在AEM中內容片段的基�
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: 8ab5b15f-cefc-45bf-a388-928e8cc8c603
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '3061'
+source-wordcount: '3060'
 ht-degree: 6%
 
 ---
@@ -353,7 +353,7 @@ type CompanyModel {
 
 * **允許建立片段**
 
-  如此可讓片段作者根據適當的模型建立新片段。
+  如此可讓片段作者根據適當的模型建立片段。
 
    * **片段參考複合**  — 允許片段作者藉由選取多個片段來建置複合
 

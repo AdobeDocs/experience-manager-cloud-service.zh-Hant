@@ -4,10 +4,10 @@ description: 瞭解如何使用AEM建立網站，並使用網站範本定義網�
 feature: Administering
 role: Admin
 exl-id: 9c71c167-2934-4210-abd9-ab085b36593b
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '774'
-ht-degree: 13%
+source-wordcount: '773'
+ht-degree: 11%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 13%
 
 必須先建立網站，內容作者才能建立含有內容的頁面。 這通常由定義網站初始結構的AEM管理員執行。 使用網站範本可讓您快速且靈活地建立網站。
 
-AEM 快速網站建立歷程工具可讓非開發人員使用網站範本從頭開始快速建立新網站。
+AEM快速網站建立工具可讓非開發人員使用網站範本，從頭開始快速建立網站。
 
 建立後，快速網站建立工具還可讓您快速為 AEM 網站自訂主題並建立風格 (JavaScript、CSS 和靜態資源)。這使得前端開發人員即使不懂 AEM 也能與內容建立者分開且並行工作。AEM 管理員只需下載網站主題並將其提供給前端開發人員，前端開發人員使用他們偏好的工具自訂主題，然後將變更提交到 AEM 程式碼存放庫，然後進行部署。
 

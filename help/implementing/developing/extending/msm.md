@@ -1,13 +1,13 @@
 ---
 title: 擴充多網站管理員
 description: 了解如何擴充多網站管理員的功能。
-source-git-commit: f159f0ef86c2b82da4e7308a0892b4947b6e43fb
-workflow-type: ht
-source-wordcount: '2436'
-ht-degree: 100%
+exl-id: 4b7a23c3-65d1-4784-9dea-32fcceca37d1
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+workflow-type: tm+mt
+source-wordcount: '2435'
+ht-degree: 99%
 
 ---
-
 
 # 擴充多網站管理員 {#extending-the-multi-site-manager}
 
@@ -165,7 +165,7 @@ Node sourcenode = source.adaptTo(javax.jcr.Node.class);
 
 ### 建立「推出設定」 {#create-the-rollout-configuration}
 
-若要建立新的推出設定：
+若要建立轉出設定：
 
 1. 在 `https://<host>:<port>/crx/de` 開啟 CRXDE Lite。
 

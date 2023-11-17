@@ -4,9 +4,9 @@ description: 瞭解Adobe工程和諮詢團隊編譯的最佳實務，協助啟�
 feature: Multi Site Manager
 role: Admin
 exl-id: 61b8ded8-3b9e-423f-85a9-7280e1a721cc
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '1420'
+source-wordcount: '1419'
 ht-degree: 3%
 
 ---
@@ -66,7 +66,7 @@ MSM是可設定的架構，用於自動化內容部署。 實作通常涉及網�
 
 以下是建立網站時請謹記的幾個考量事項：
 
-* 若要建立新網站，您需要 [Blueprint設定](creating-live-copies.md#managing-blueprint-configurations).
+* 若要建立網站，您需要 [Blueprint設定](creating-live-copies.md#managing-blueprint-configurations).
 * 若要允許選取在新網站中建立的語言路徑，對應的語言根必須存在於Blueprint （來源）中。
 * 一次a [新網站已建立為即時副本](creating-live-copies.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration) (使用 **建立**，然後 **網站**)，此即時副本的前兩個層級為 *淺層*. 頁面的子系不屬於即時關係，但如果找到符合觸發器的即時關係，轉出仍會下降。
 

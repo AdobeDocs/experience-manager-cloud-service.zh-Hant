@@ -2,9 +2,9 @@
 title: 使用定位模式編寫目標內容
 description: 目標定位模式和Target元件提供建立體驗內容的工具
 exl-id: 8d80d867-2d0f-4ddb-8a06-f9441e6d85ce
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '5409'
+source-wordcount: '5408'
 ht-degree: 6%
 
 ---
@@ -102,7 +102,7 @@ ht-degree: 6%
 
    >[!NOTE]
    >
-   >當您建立新活動且已將Adobe Target雲端設定附加至頁面或其其中一個父頁面時，AEM會自動將Adobe Target視為引擎。
+   >當您建立活動且已將Adobe Target雲端設定附加至頁面或其其中一個父頁面時，AEM會自動將Adobe Target視為引擎。
 
 1. 在 **目標定位** engine下拉式功能表，選取您的目標定位引擎。
 

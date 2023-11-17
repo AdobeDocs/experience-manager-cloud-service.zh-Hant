@@ -2,9 +2,9 @@
 title: 建立及組織頁面
 description: 瞭解如何使用AEM建立和管理頁面，以組織您的網站。
 exl-id: c57096ca-34fe-4b19-98e0-8f3cd43cf24e
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '2449'
+source-wordcount: '2448'
 ht-degree: 4%
 
 ---
@@ -213,7 +213,7 @@ AEM隨附幾個現成可用的範本。 可用的範本視個別網站而定。 
    >
    >另請參閱 [頁面命名慣例](#page-naming-conventions).
 
-   建立新頁面所需的最低資訊為 **標題**.
+   建立頁面所需的最低資訊為 **標題**.
 
    ![提供頁面標題](/help/sites-cloud/authoring/assets/organizing-create-page-title.png)
 

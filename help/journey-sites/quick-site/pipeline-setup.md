@@ -2,9 +2,9 @@
 title: 設定您的管道
 description: 建立前端管道以管理網站主題的自訂。
 exl-id: 0d77d1a6-98f3-4961-9283-f52c1b5b2a7b
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '965'
+source-wordcount: '964'
 ht-degree: 10%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 10%
 在AEM快速網站建立歷程的上一個檔案中， [從範本建立網站，](create-site.md) 您已瞭解如何使用網站範本快速建立可以使用前端工具進一步自訂的AEM網站，現在您應該：
 
 * 瞭解如何取得AEM網站範本。
-* 瞭解如何使用範本建立新網站。
+* 瞭解如何使用範本建立網站。
 * 瞭解如何從新網站下載範本以提供給前端開發人員。
 
 本文基於這些基礎之上，因此您可以設定前端管道，前端開發人員稍後將在歷程中使用它來部署前端自訂。

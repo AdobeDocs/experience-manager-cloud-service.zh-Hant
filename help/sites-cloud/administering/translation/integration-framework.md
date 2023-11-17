@@ -4,9 +4,9 @@ description: 瞭解如何設定翻譯整合框架以與協力廠商翻譯服務�
 feature: Language Copy
 role: Admin
 exl-id: 6e74cdee-7965-4087-a733-e9d81c4aa7c2
-source-git-commit: 7d09cafc4f8518fee185d3f9efc76c33ec20f9a3
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '1518'
+source-wordcount: '1517'
 ht-degree: 9%
 
 ---
@@ -67,7 +67,7 @@ ht-degree: 9%
 >
 >如需AEM內容翻譯功能的總覽，請參閱 [翻譯多語言網站的內容](overview.md).
 
-架構的單一設定可控制頁面內容和資產的翻譯方式。 若要建立新的翻譯設定：
+架構的單一設定可控制頁面內容和資產的翻譯方式。 若要建立翻譯組態：
 
 1. 在 [全域導覽功能表、](/help/sites-cloud/authoring/getting-started/basic-handling.md#global-navigation) 按一下或點選 **工具 — >Cloud Service->翻譯Cloud Service**.
 1. 在內容結構中導覽到想要建立設定的位置。這通常以特定網站為基礎，或可能是全域的。

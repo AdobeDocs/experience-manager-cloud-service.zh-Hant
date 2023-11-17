@@ -2,9 +2,9 @@
 title: 為 Screens as a Cloud Service 開發自訂元件
 description: 下列教學課程將逐步說明為AEM Screens建立自訂元件的步驟。 AEM Screens會重複使用其他AEM產品的許多現有設計模式與技術。 本教學課程著重說明針對AEM Screens進行開發時的差異和特殊考量事項。
 exl-id: fe8e7bf2-6828-4a5a-b650-fb3d9c172b97
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '2107'
+source-wordcount: '2106'
 ht-degree: 3%
 
 ---
@@ -329,7 +329,7 @@ AEM Screens元件在編輯模式與預覽/生產模式中的轉譯方式不同�
 
 1. 複製並貼上 `shared` 建立使用者端資料庫的使用者端資料庫資料夾，命名為 `production`.
 
-   ![複製共用使用者端程式庫以建立新的生產使用者端程式庫](/help/screens-cloud/developing/assets/copy-clientlib.gif)
+   ![複製共用使用者端程式庫以建立生產使用者端程式庫](/help/screens-cloud/developing/assets/copy-clientlib.gif)
 
    複製共用使用者端程式庫以建立生產使用者端程式庫。
 

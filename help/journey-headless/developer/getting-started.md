@@ -2,10 +2,10 @@
 title: AEM Headless as a Cloud Service 快速入門
 description: 在 AEM Headless 開發人員歷程的這一部分，了解 AEM Headless 先決條件。
 exl-id: 9661e17b-fa9f-4689-900c-412b068e942c
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '3096'
-ht-degree: 97%
+source-wordcount: '3095'
+ht-degree: 96%
 
 ---
 
@@ -117,7 +117,7 @@ AEM 支援 CMS 的全 Headless 模型和傳統的全堆疊或 Headful 模型。�
 
 ### 您沒有 Headless 內容的外部取用者，例如單頁應用程式 (SPA)。 {#do-not-have-a-spa}
 
-如果您的目標是建立一個新的 SPA 以 Headless 方式取用來自 AEM 的內容，您可以使用內容片段等功能來管理您的 Headless 內容，也可以使用 AEM 的 SPA 編輯器架構建置 SPA。
+如果您的目標是建立一個SPA以從AEM中無頭使用內容，您可以使用內容片段等功能來管理您的Headless內容，也可以使用AEM SPA Editor框架建置SPA。
 
 使用 SPA 編輯器，SPA 不僅可以取用來自 AEM 的內容，還可以由您的內容作者在 AEM 中進行完全編輯，從而為您提供在 AEM 中進行 Headless 傳遞和在情境中編輯的靈活性。
 
