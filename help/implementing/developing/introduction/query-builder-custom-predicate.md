@@ -2,35 +2,35 @@
 title: 為查詢產生器實作自訂述詞求值器
 description: AEM中的查詢產生器提供簡單且可自訂的方式來查詢內容存放庫
 exl-id: 8c2f8c22-1851-4313-a1c9-10d6d9b65824
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '668'
+source-wordcount: '667'
 ht-degree: 0%
 
 ---
 
 # 為查詢產生器實作自訂述詞求值器 {#implementing-a-custom-predicate-evaluator-for-the-query-builder}
 
-本檔案說明如何延伸 [查詢產生器](query-builder-api.md) 實作自訂述詞評估器。
+本檔案說明如何延伸 [查詢產生器](query-builder-api.md) 實作自訂述詞求值器。
 
 ## 概觀 {#overview}
 
 此 [查詢產生器](query-builder-api.md) 提供查詢內容存放庫的簡單方法。 AEM隨附 [一組述詞評估器](#query-builder-predicates.md) 可協助您查詢資料。
 
-不過，您可能會想要實作自訂述詞評估器來簡化查詢，該評估器會隱藏一些複雜性並確保語意更好。
+不過，您可能想要實作自訂述詞評估器來簡化查詢，該評估器會隱藏一些複雜度並確保語意更佳。
 
-自訂述詞也可以執行其他不能直接使用XPath執行的動作，例如：
+自訂述詞也可以執行其他不直接與XPath一起執行的動作，例如：
 
 * 正在查詢其他服務的資料
 * 根據計算的自訂篩選
 
 >[!NOTE]
 >
->實作自訂述詞時，必須考量效能問題。
+>實作自訂述詞時必須考慮效能問題。
 
 >[!TIP]
 >
->您可在以下連結中找到查詢範例： [查詢產生器](query-builder-api.md) 檔案。
+>您可在以下網址找到查詢範例： [查詢產生器](query-builder-api.md) 檔案。
 
 >[!TIP]
 >
@@ -43,7 +43,7 @@ ht-degree: 0%
 >
 >GitHub上的連結程式碼以及本檔案中的程式碼片段僅供示範之用。
 
-### 述詞評估器詳細資料 {#predicate-evaluator-in-detail}
+### 述詞求值器詳細資料 {#predicate-evaluator-in-detail}
 
 述詞評估器處理特定述詞的評估，這些述詞是查詢的定義限制。
 
@@ -51,7 +51,7 @@ ht-degree: 0%
 
 >[!TIP]
 >
->如需更多有關「 」的資訊， `PredicateEvaluator` 和 `com.day.cq.search` 套件請參閱 [Java檔案](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html?com/day/cq/search/package-summary.html).
+>如需關於的詳細資訊 `PredicateEvaluator` 和 `com.day.cq.search` 套件請參閱 [Java檔案](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html?com/day/cq/search/package-summary.html).
 
 ### 實施復寫中繼資料的自訂述詞求值器 {#implementing-a-custom-predicate-evaluator-for-replication-metadata}
 
@@ -59,11 +59,11 @@ ht-degree: 0%
 
 * `cq:lastReplicated` 儲存上次復寫動作的日期
 * `cq:lastReplicatedBy` 會儲存觸發上次復寫動作之使用者的id
-* `cq:lastReplicationAction` 儲存上次復寫動作（例如啟用、停用）的磁碟區
+* `cq:lastReplicationAction` 儲存上次的復寫動作（例如啟用、停用）
 
 #### 使用預設述詞評估器查詢復寫中繼資料 {#querying-replication-metadata-with-default-predicate-evaluators}
 
-以下查詢會擷取下列專案的節點清單： `/content` 已由啟用的分支 `admin` 從年初開始。
+以下查詢會擷取下列位置的節點清單： `/content` 已由啟用的分支 `admin` 從年初開始。
 
 ```xml
 path=/content
@@ -79,11 +79,11 @@ daterange.lowerBound=2013-01-01T00:00:00.000+01:00
 daterange.lowerOperation=>=
 ```
 
-此查詢有效，但難以讀取，且不會強調三個復寫屬性之間的關係。 實作自訂述詞評估器將降低複雜性並改善此查詢的語意。
+此查詢有效，但難以讀取，且不會強調三個復寫屬性之間的關係。 實作自訂述詞求值器將降低複雜性並改善此查詢的語意。
 
 #### 目標 {#objectives}
 
-的目標 `ReplicationPredicateEvaluator` 是以下列語法支援上述查詢。
+的目標 `ReplicationPredicateEvaluator` 是使用下列語法支援上述查詢。
 
 ```xml
 path=/content
@@ -93,21 +93,21 @@ replic.since=2013-01-01T00:00:00.000+01:00
 replic.action=Activate
 ```
 
-使用自訂述詞評估器將復寫中繼資料述詞分組，有助於建立有意義的查詢。
+使用自訂述詞求值器將復寫中繼資料述詞分組，有助於建立有意義的查詢。
 
 #### 更新Maven相依性 {#updating-maven-dependencies}
 
 >[!TIP]
 >
->詳細說明新AEM專案的設定，包括使用maven，請參見 [wknd教學課程。](develop-wknd-tutorial.md)
+>詳細說明新AEM專案的設定，包括使用Maven [wknd教學課程。](develop-wknd-tutorial.md)
 
-首先，您需要更新專案的Maven相依性。 此 `PredicateEvaluator` 是 `cq-search` 成品，因此需要將其新增至您的Maven pom檔案。
+首先，您需要更新專案的Maven相依性。 此 `PredicateEvaluator` 是 `cq-search` 成品，因此必須將其新增至您的Maven pom檔案。
 
 >[!NOTE]
 >
 >範圍 `cq-search` 相依性已設定為 `provided` 因為 `cq-search` 由 `OSGi` 容器。
 
-以下程式碼片段顯示 `pom.xml` 檔案，在 [統一的差異格式](https://en.wikipedia.org/wiki/Diff#Unified_format)
+下列程式碼片段顯示 `pom.xml` 檔案，在 [統一的差異格式](https://en.wikipedia.org/wiki/Diff#Unified_format)
 
 ```text
 @@ -120,6 +120,12 @@
@@ -124,16 +124,16 @@ replic.action=Activate
              <version>3.8.1</version></dependency>
 ```
 
-#### 寫入ReplicationPredicateEvaluator {#writing-the-replicationpredicateevaluator}
+#### 正在寫入ReplicationPredicateEvaluator {#writing-the-replicationpredicateevaluator}
 
-此 `cq-search` 專案包含 `AbstractPredicateEvaluator` 抽象類別。 您可以透過一些步驟來擴充此功能，以實作您自己的自訂述詞評估器 `(PredicateEvaluator`)。
+此 `cq-search` 專案包含 `AbstractPredicateEvaluator` 抽象類別。 您只需幾個步驟即可擴充此功能，以實作您自己的自訂述詞評估器 `(PredicateEvaluator`)。
 
 >[!NOTE]
 >
 >下列程式說明如何建置 `Xpath` 篩選資料的運算式。 另一個選項是實作 `includes` 以列為基礎選取資料的方法。 請參閱 [Java檔案](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/eval/PredicateEvaluator.html) 以取得詳細資訊。
 
 1. 建立可擴充的新Java類別 `com.day.cq.search.eval.AbstractPredicateEvaluator`
-1. 使用以下專案標註您的類別： `@Component` 如中的程式碼片段顯示 [統一的差異格式](https://en.wikipedia.org/wiki/Diff#Unified_format)
+1. 使用為課程加上註釋 `@Component` 如中的程式碼片段顯示 [統一的差異格式](https://en.wikipedia.org/wiki/Diff#Unified_format)
 
    ```text
    @@ -19,8 +19,11 @@
@@ -151,11 +151,11 @@ replic.action=Activate
 
    >[!NOTE]
    >
-   >此 `factory`必須是開頭為的唯一字串 `com.day.cq.search.eval.PredicateEvaluator/`並以自訂名稱結尾 `PredicateEvaluator`.
+   >此 `factory`必須是唯一的字串，開頭為 `com.day.cq.search.eval.PredicateEvaluator/`結尾為您的自訂名稱 `PredicateEvaluator`.
 
    >[!NOTE]
    >
-   >的名稱 `PredicateEvaluator` 是述詞名稱，用於建立查詢。
+   >的名稱 `PredicateEvaluator` 是建立查詢時使用的述詞名稱。
 
 1. 覆寫:
 
@@ -163,7 +163,7 @@ replic.action=Activate
    public String getXPathExpression(Predicate predicate, EvaluationContext context)
    ```
 
-   在覆寫方法中，您建置 `Xpath` 運算式根據 `Predicate` 在引數中給出。
+   在覆寫方法中，您建置 `Xpath` 運算式基礎為 `Predicate` 在引數中給出。
 
 ### 復寫中繼資料的自訂述詞求值器範例 {#example-of-a-custom-predicate-evaluator-for-replication-metadata}
 

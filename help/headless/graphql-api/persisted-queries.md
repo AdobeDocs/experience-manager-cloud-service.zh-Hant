@@ -3,9 +3,9 @@ title: 持續性 GraphQL 查詢
 description: 了解如何在 Adobe Experience Manager as a Cloud Service 中保留 GraphQL 查詢，以將效能最佳化。用戶端應用程式可以使用 HTTP GET 方法要求持續性查詢，回應可以在 Dispatcher 和 CDN 層快取，最終提高用戶端應用程式的效能。
 feature: Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1679'
+source-wordcount: '1676'
 ht-degree: 99%
 
 ---
@@ -395,7 +395,7 @@ curl -u admin:admin -X POST \
 
   >[!NOTE]
   >
-  >如需更多詳細資訊，請參閱 https://graphql.github.io/graphql-over-http/draft/#sec-Status-Codes。
+  >請參閱https://graphql.github.io/graphql-over-http/draft/#sec-Status-Codes
 
 ## 編碼查詢 URL 以供應用程式使用 {#encoding-query-url}
 

@@ -1,9 +1,9 @@
 ---
 title: 什麼是調適型表單運算式？
 description: 使用最適化Forms運算式來新增自動驗證、計算，並開啟或關閉區段的可見度。
-source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2697'
+source-wordcount: '2698'
 ht-degree: 0%
 
 ---
@@ -109,7 +109,7 @@ click運算式會處理對按鈕的點選事件執行的動作。 GuideBridge開
 
 **`marital_status.value == "married" ? ["1=One", "2=two"] : ["0=Zero"]`.**
 
-每當值 **writary_status** 欄位變更，則重新觸發運算式。 您也可以填入REST服務的下拉式清單。 <!-- For detailed information, see [Dynamically populating dropdowns](dynamically-populate-dropdowns.md). -->
+每當值 **writary_status** 欄位變更，則重新觸發運算式。 您也可以從REST服務填入下拉式清單。 <!-- For detailed information, see [Dynamically populating dropdowns](dynamically-populate-dropdowns.md). -->
 
 ### 摘要運算式 {#summary}
 

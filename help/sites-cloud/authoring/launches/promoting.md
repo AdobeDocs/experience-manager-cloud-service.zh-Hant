@@ -2,9 +2,9 @@
 title: 提升啟動
 description: 您必須提升啟動頁面，才能在發佈前將內容移回來源（生產環境）。
 exl-id: 5f5ed17c-43db-4ef6-ab79-c491326fa01c
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '812'
+source-wordcount: '811'
 ht-degree: 6%
 
 ---
@@ -52,7 +52,7 @@ ht-degree: 6%
       1. 選擇所需的啟動頁面，使用 [選擇模式](/help/sites-cloud/authoring/getting-started/basic-handling.md).
       1. 此 **提升** 動作在工具列中可供使用。
    * 此 **啟動** 主控台：
-      1. 選取您的啟動項（點選/按一下縮圖）。
+      1. 選取您的啟動項（選取縮圖）。
       1. 選取 **提升**.
 1. 在第一個步驟中，您可以指定：
    * **目標**

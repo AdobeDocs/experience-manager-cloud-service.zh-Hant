@@ -1,13 +1,13 @@
 ---
 title: 自訂頁面編寫
 description: 了解 AEM as a Cloud Service 提供用來自訂頁面編寫功能的機制。
-source-git-commit: f159f0ef86c2b82da4e7308a0892b4947b6e43fb
-workflow-type: ht
-source-wordcount: '981'
-ht-degree: 100%
+exl-id: 98d3c7ab-46d2-4e8d-b0da-5c8a7b398135
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
+source-wordcount: '969'
+ht-degree: 96%
 
 ---
-
 
 # 自訂頁面編寫 {#customizing-page-authoring}
 
@@ -22,7 +22,7 @@ Clientlib 讓您可擴充預設實作以啟用新功能，同時會重複使用�
 * 依賴編寫 clientlib `cq.authoring.editor.sites.page`。
 * 屬於適當的 `cq.authoring.editor.sites.page.hook` 類別的一部分。
 
-如需有關 clientlibs 的更多詳細資料，請參閱文件[「在 AEM as a Cloud Service 上使用用戶端資料庫」。](/help/implementing/developing/introduction/clientlibs.md)
+另請參閱 [在AEMas a Cloud Service上使用使用者端資料庫](/help/implementing/developing/introduction/clientlibs.md).
 
 ## 覆蓋 {#overlays}
 
@@ -30,9 +30,9 @@ Clientlib 讓您可擴充預設實作以啟用新功能，同時會重複使用�
 
 建立覆蓋時，不需要按原件 1:1 複製，因為 [Sling 資源合併](/help/implementing/developing/introduction/sling-resource-merger.md)可容許繼承。
 
-如需詳細資訊，請參閱 [JS 文件集](https://developer.adobe.com/experience-manager/reference-materials/6-5/jsdoc/ui-touch/editor-core/index.html)。
+如需詳細資訊，請參閱 [JS檔案集](https://developer.adobe.com/experience-manager/reference-materials/6-5/jsdoc/ui-touch/editor-core/index.html).
 
-如需有關覆蓋的更多資訊，請參閱文件[「適用於 Adobe Experience Manager as a Cloud Service 的覆蓋」。](/help/implementing/developing/introduction/overlays.md)
+如需覆蓋圖的詳細資訊，請參閱 [Adobe Experience Manager as a Cloud Service的覆蓋圖](/help/implementing/developing/introduction/overlays.md).
 
 ## 新增「新圖層」(模式) {#add-new-layer-mode}
 

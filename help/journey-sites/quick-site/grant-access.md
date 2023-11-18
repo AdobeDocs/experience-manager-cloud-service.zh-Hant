@@ -2,9 +2,9 @@
 title: 授予前端開發人員存取權
 description: 讓前端開發人員加入 Cloud Manager，以便能存取您的 AEM 網站 Git 存放庫和管道。
 exl-id: 58e95c92-b859-4bb9-aa62-7766510486fd
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '784'
+source-wordcount: '778'
 ht-degree: 7%
 
 ---
@@ -65,7 +65,7 @@ ht-degree: 7%
 
    ![產品設定檔](assets/product-profiles.png)
 
-1. 若要將前端開發人員指派給正確的設定檔，請點選或按一下 **使用者** 標籤然後按一下 **新增使用者** 按鈕。
+1. 要將前端開發人員指派給正確的設定檔，請選擇 **使用者** 標籤然後按一下 **新增使用者** 按鈕。
 
    ![新增使用者](assets/add-user.png)
 
@@ -73,11 +73,11 @@ ht-degree: 7%
 
    ![新增使用者至團隊](assets/add-to-team.png)
 
-1. 在 **產品** 選取、點選或按一下加號，然後選取 **Adobe Experience Manager as a Cloud Service** 並指派 **部署管理員** 和 **開發人員** 給使用者的產品設定檔。
+1. 在 **產品** 選取，選取加號，然後選取 **Adobe Experience Manager as a Cloud Service** 並指派 **部署管理員** 和 **開發人員** 給使用者的產品設定檔。
 
    ![指派團隊設定檔](assets/assign-team.png)
 
-1. 點選或按一下 **儲存** 並且會傳送一封歡迎電子郵件給您新增為使用者的前端開發人員。
+1. 選取 **儲存** 並且會傳送一封歡迎電子郵件給您新增為使用者的前端開發人員。
 
 受邀的前端開發人員可以按一下歡迎電子郵件中的連結，並使用其Adobe ID登入來存取Cloud Manager。
 

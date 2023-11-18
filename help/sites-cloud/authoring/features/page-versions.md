@@ -2,9 +2,9 @@
 title: 使用頁面版本
 description: 瞭解如何在AEM中建立、比較及還原頁面版本。
 exl-id: 33d8e43c-594d-4bba-9631-b2c42a1e910f
-source-git-commit: 31e6ec8e9977c8787e14481ee3a94df767262aec
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1507'
+source-wordcount: '1505'
 ht-degree: 3%
 
 ---
@@ -35,7 +35,7 @@ ht-degree: 3%
 1. 瀏覽以顯示您要建立版本的頁面。
 1. 選取中的頁面 [選擇模式](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
 1. 開啟 **時間表** 邊欄。
-1. 按一下/點選註解欄位旁的省略符號以顯示選項：
+1. 在註解欄位中選取省略符號，以顯示選項：
 
    ![時間軸邊欄中的版本](/help/sites-cloud/authoring/assets/versions-timeline-rail.png)
 
@@ -209,7 +209,7 @@ ht-degree: 3%
 
 時間扭曲是 [模式](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) 頁面編輯器的。 若要啟動，只需像切換任何其他模式一樣切換即可。
 
-1. 啟動您要啟動Timewarp之頁面的編輯器，然後選取 **時間扭曲** 在模式選取項中。
+1. 為您要啟動Timewarp的頁面啟動編輯器，然後選取 **時間扭曲** 在模式選取項中。
 
    ![時間扭曲模式](/help/sites-cloud/authoring/assets/versions-timewarp-mode.png)
 

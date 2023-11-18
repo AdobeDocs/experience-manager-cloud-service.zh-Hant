@@ -4,9 +4,9 @@ description: 瞭解AE的基本概念；使用封裝管理員進行封裝管理�
 feature: Administering
 role: Admin
 exl-id: b5fef273-912d-41f6-a698-0231eedb2b92
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '3769'
+source-wordcount: '3771'
 ht-degree: 4%
 
 ---
@@ -97,7 +97,7 @@ MaxPackageSize (in MB) = ConnectionSpeed (in MB/s) * 60 s
 
 您可以透過三種方式存取「封裝管理員」：
 
-1. 從AEM主功能表 — > **工具** -> **部署** -> **封裝**
+1. 從AEM主功能表> **工具** > **部署** > **封裝**
 1. 從 [CRXDE Lite](crxde.md) 使用頂端切換列
 1. 直接存取 `http://<host>:<port>/crx/packmgr/`
 
@@ -314,7 +314,7 @@ MaxPackageSize (in MB) = ConnectionSpeed (in MB/s) * 60 s
 
 1. 按一下 **儲存** 以儲存。
 
-1. 按一下 **更多** -> **折行** 而對話方塊會要求確認。
+1. 按一下 **更多** > **折行** 而對話方塊會要求確認。
 
 ### 檢視其他封裝版本 {#other-versions}
 
@@ -324,7 +324,7 @@ MaxPackageSize (in MB) = ConnectionSpeed (in MB/s) * 60 s
 
 1. 按一下封裝名稱，從封裝清單開啟封裝詳細資訊。
 
-1. 按一下 **更多** -> **其他版本** 且會開啟一個對話方塊，其中包含相同封裝的其他版本清單，其中包含狀態資訊。
+1. 按一下 **更多** > **其他版本** 且會開啟一個對話方塊，其中包含相同封裝的其他版本清單，其中包含狀態資訊。
 
 ### 檢視封裝內容和測試安裝 {#viewing-package-contents-and-testing-installation}
 
@@ -334,11 +334,11 @@ MaxPackageSize (in MB) = ConnectionSpeed (in MB/s) * 60 s
 
 1. 按一下封裝名稱，從封裝清單開啟封裝詳細資訊。
 
-1. 若要檢視內容，請按一下 **更多** -> **內容**，而「封裝管理員」會在活動記錄中列出封裝的整個內容。
+1. 若要檢視內容，請按一下 **更多** > **內容**，而「封裝管理員」會在活動記錄中列出封裝的整個內容。
 
    ![封裝內容](assets/package-contents.png)
 
-1. 若要執行試執行安裝，請按一下 **更多** -> **測試安裝** 和「封裝管理員」在活動記錄中報告結果，就像已執行安裝一樣。
+1. 若要執行試執行安裝，請按一下 **更多** > **測試安裝** 和「封裝管理員」在活動記錄中報告結果，就像已執行安裝一樣。
 
    ![測試安裝](assets/test-install.png)
 
@@ -478,7 +478,7 @@ MaxPackageSize (in MB) = ConnectionSpeed (in MB/s) * 60 s
 
 1. 按一下封裝名稱，從封裝清單開啟封裝詳細資訊。
 
-1. 若要驗證套件，請按一下 **更多** -> **驗證**，
+1. 若要驗證套件，請按一下 **更多** > **驗證**，
 
 1. 在隨後出現的模型對話方塊中，使用核取方塊選取驗證型別，然後按一下開始驗證 **驗證**.
 
@@ -516,7 +516,7 @@ curl -v -X POST --user admin:admin -F file=@/Users/SomeGuy/Desktop/core.wcm.comp
 
 1. 按一下封裝名稱，從封裝清單開啟封裝詳細資訊。
 
-1. 按一下 **更多** -> **涵蓋範圍**.
+1. 按一下 **更多** > **涵蓋範圍**.
 
 1. 涵蓋範圍詳細資訊會列在活動記錄中。
 
@@ -576,7 +576,7 @@ curl -v -X POST --user admin:admin -F file=@/Users/SomeGuy/Desktop/core.wcm.comp
 
 1. 按一下封裝名稱，開啟您要從封裝清單解除安裝的封裝詳細資料。
 
-1. 按一下 **更多** -> **解除安裝**，即可從存放庫中移除此封裝的內容。
+1. 按一下 **更多** > **解除安裝**，即可從存放庫中移除此封裝的內容。
 
 1. 對話方塊將會要求確認並列出進行的所有變更。
 
@@ -588,7 +588,7 @@ curl -v -X POST --user admin:admin -F file=@/Users/SomeGuy/Desktop/core.wcm.comp
 
 1. [Access封裝管理員。](#accessing)
 
-1. 按一下封裝名稱，開啟您要從封裝清單中刪除之封裝的封裝詳細資訊。
+1. 按一下封裝名稱，開啟您要從封裝清單中刪除之封裝的封裝詳細資料。
 
 1. AEM會要求您確認是否要刪除套裝程式。 按一下 **確定** 以確認刪除。
 
@@ -602,7 +602,7 @@ curl -v -X POST --user admin:admin -F file=@/Users/SomeGuy/Desktop/core.wcm.comp
 
 1. 按一下封裝名稱，開啟您要從封裝清單復寫之封裝的詳細資訊。
 
-1. 按一下 **更多** -> **復寫**.
+1. 按一下 **更多** > **復寫**.
 
 1. 會複製套件，並在活動記錄中報告詳細資訊。
 

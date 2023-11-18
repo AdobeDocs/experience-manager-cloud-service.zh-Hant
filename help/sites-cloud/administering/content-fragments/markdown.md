@@ -3,13 +3,13 @@ title: Markdown
 description: 瞭解內容片段編輯器如何使用Markdown語法，輕鬆建立頁面製作和Headless傳送的內容。
 feature: Content Fragments
 role: User
-source-git-commit: af97fec754edae6216551763fd20cad5ee07179c
+exl-id: 6fbf8128-3b7f-4eda-bbbd-3336578d2586
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '557'
+source-wordcount: '559'
 ht-degree: 4%
 
 ---
-
 
 # Markdown {#markdown}
 
@@ -31,7 +31,7 @@ ht-degree: 4%
 
 ## 標題標籤法 {#heading-notation}
 
-若要建立標題，請在標題前面放置雜湊標籤(#)。 一個雜湊標籤(#)用於H1，兩個雜湊標籤(##)用於H2等。 您最多可以使用6個雜湊標籤。 例如：
+若要建立標題，請在標題前面放置雜湊標籤(#)。 一個雜湊標籤(#)用於H1，兩個雜湊標籤(##)用於H2，以此類推。 您最多可以使用6個雜湊標籤。 例如：
 
     `## This is an H2`
 

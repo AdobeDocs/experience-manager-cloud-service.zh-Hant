@@ -2,10 +2,10 @@
 title: Cloud Manager 環境變數
 description: 標準環境變數可以透過 Cloud Manager 進行設定和管理，並提供給執行階段環境，用於 OSGi 設定。
 exl-id: 5cdd5532-11fe-47a3-beb2-21967b0e43c6
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1016'
-ht-degree: 97%
+source-wordcount: '1010'
+ht-degree: 86%
 
 ---
 
@@ -37,7 +37,7 @@ ht-degree: 97%
 >您必須是 [**Deployment Manager** 角色](/help/onboarding/cloud-manager-introduction.md#role-based-premissions)的成員才能新增或修改環境變數。
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Adobe Cloud Manager。
-1. Cloud Manager 列出了可用的各種計畫。選擇您要管理的計畫。
+1. Cloud Manager 列出了可用的各種計畫。選取您要管理的專案。
 1. 選擇所選計畫的&#x200B;**環境**&#x200B;索引標籤，然後在左側瀏覽面板中選擇要建立環境變數的環境。
 1. 在環境的詳細資訊中，選擇&#x200B;**設定**&#x200B;索引標籤，然後選擇&#x200B;**新增**&#x200B;以打開&#x200B;**環境設定**&#x200B;對話框。
    * 如果您是第一次新增環境變數，可以看到 **新增設定** 按鈕來切換頁面。 您可以使用此按鈕或&#x200B;**新增**&#x200B;來打開&#x200B;**環境設定**&#x200B;對話框。
@@ -65,20 +65,20 @@ ht-degree: 97%
 
 >[!TIP]
 >
->如果要新增多個變數，建議新增第一個變數，然後使用&#x200B;**環境設定**&#x200B;對話框中的&#x200B;**新增**&#x200B;按鈕以新增其他變數。這樣，只要更新環境一次即可新增這些變數。
+>如果要新增多個變數，建議新增第一個變數，然後使用 **新增** 中的按鈕 **環境設定** 對話方塊以新增其他變數。 這樣，只要更新環境一次即可新增這些變數。
 
 ## 更新環境變數 {#update-variables}
 
 建立環境變數後，您可以使用&#x200B;**新增/更新**&#x200B;按鈕以啟動&#x200B;**環境設定**&#x200B;對話框來更新變數。
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Adobe Cloud Manager。
-1. Cloud Manager 列出了可用的各種計畫。選擇您要管理的計畫。
+1. Cloud Manager 列出了可用的各種計畫。選取您要管理的專案。
 1. 選擇&#x200B;**環境**&#x200B;所選計畫的索引標籤，然後在左側瀏覽面板中選擇要為其建立環境變數的環境。
 1. 在環境的詳細資訊中，選擇&#x200B;**設定**&#x200B;索引標籤，然後在右上角選擇&#x200B;**新增更新**&#x200B;以打開&#x200B;**環境設定**&#x200B;對話框。
 
    ![變數的新增/更新按鈕](assets/add-update-variables.png)
 
-1. 使用要修改變數之列最後一欄中的省略符號按鈕，選擇&#x200B;**編輯**&#x200B;或&#x200B;**刪除**。
+1. 使用要修改之變數列最後一欄中的省略符號按鈕，選取 **編輯** 或 **刪除**.
 
    ![編輯或刪除變數](assets/edit-delete-variable.png)
 
@@ -88,13 +88,13 @@ ht-degree: 97%
 
    ![編輯變數](assets/edit-variable.png)
 
-1. 完成所有必需的設定變更後，選取「**儲存**」。
+1. 進行必要的設定變更後，選取「 」 **儲存**.
 
 [新增變數時](#add-variables)，具有&#x200B;**更新**&#x200B;狀態的指示器會顯示在表格頂端和更新的變數旁邊，表示正在使用設定更新環境。完成後，更新的環境變數會顯示在表格中。
 
 >[!TIP]
 >
->如果要更新多個變數，建議使用&#x200B;**環境設定**&#x200B;對話框，在點選或按一下&#x200B;**儲存**&#x200B;之前立即更新所有必要的變數。這樣，只要更新環境一次即可新增這些變數。
+>如果要更新多個變數，建議使用 **環境設定** 對話方塊，在點選或按一下之前立即更新所有必要的變數 **儲存**. 這樣，只要更新環境一次即可新增這些變數。
 
 ## 使用環境變數 {#using}
 
@@ -110,7 +110,7 @@ ht-degree: 97%
 
 ## 環境變數可用性 {#availability}
 
-環境變數可以用在很多地方。
+環境變數可以用在幾個地方。
 
 ### 編寫、預覽和發佈 {#author-preview-publish}
 

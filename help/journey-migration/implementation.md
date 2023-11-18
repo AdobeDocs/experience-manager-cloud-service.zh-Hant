@@ -2,7 +2,7 @@
 title: 實作階段
 description: 確定您的程式碼和內容已準備好移轉至雲端
 exl-id: d124f9a5-a754-4ed0-a839-f2968c7c8faa
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '2339'
 ht-degree: 10%
@@ -75,7 +75,7 @@ Cloud Manager 可讓組織在雲端中自行管理 AEM。其內容包含持續�
 * 瞭解如何下載以下載來設定本機開發環境 [AEMAS A CLOUD SERVICESDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=en)
 * 最後，請熟悉 [AEMas a Cloud ServiceJava API](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html).
 
-此外，您也可以：
+您也可以：
 
 * 觀看此影片以瞭解如何在本機安裝Dispatcher SDK：
 

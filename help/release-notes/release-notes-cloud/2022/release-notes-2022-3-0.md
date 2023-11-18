@@ -2,7 +2,7 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2022.3.0 版發行說明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2022.3.0 版發行說明。'
 exl-id: 761f1605-c421-4f3a-8f90-af23f4f047b1
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '1151'
 ht-degree: 15%
@@ -34,7 +34,7 @@ ht-degree: 15%
 
 ### [!DNL Sites] 發行前通道中可用的新功能 {#prerelease-features-sites}
 
-* 現在可以使用內容模型編輯器中的簡單核取方塊，將內容模型資料型別定義為可翻譯。 此外，AEM翻譯規則和設定會自動更新。
+* 現在可以使用內容模型編輯器中的簡單核取方塊，將內容模型資料型別定義為可翻譯。 此外，AEM翻譯規則和設定也會自動更新。
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 

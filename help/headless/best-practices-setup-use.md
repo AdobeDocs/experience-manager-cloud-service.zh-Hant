@@ -2,10 +2,10 @@
 title: 搭配內容片段設定及使用AEM GraphQL的最佳做法
 description: 瞭解設定及搭配內容片段使用AEM GraphQL的建議最佳實務。
 exl-id: 4d6a5aaa-c8be-4858-ad07-085dc4fb77e7
-source-git-commit: 25a4a6b9ae09cb71f50317990af1718db1e14355
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '737'
-ht-degree: 39%
+source-wordcount: '739'
+ht-degree: 40%
 
 ---
 
@@ -201,7 +201,7 @@ AEM Headless CMS讓開發人員可以自由使用他們熟悉的語言、架構�
 
 ### 其他資源
 
-如需AEM GraphQL和內容片段的詳細資訊，請參閱：
+如需AEM GraphQL和內容片段的詳細資訊，請參閱下列內容：
 
 * [與內容片段搭配使用的 AEM GraphQL API](/help/headless/graphql-api/content-fragments.md)
 * [使用 GraphiQL IDE](/help/headless/graphql-api/graphiql-ide.md)

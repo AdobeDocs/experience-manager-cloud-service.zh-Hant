@@ -2,9 +2,9 @@
 title: 正在新增 SSL 憑證
 description: 了解如何使用 Cloud Manager 的自助服務工具新增您自己的 SSL 憑證。
 exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '552'
+source-wordcount: '551'
 ht-degree: 88%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 88%
 
 ## 憑證需求 {#certificate-requirements}
 
-請檢閱區段 **憑證需求** 檔案 [管理SSL憑證的簡介](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md#requirements) 以確保AEMas a Cloud Service支援您要新增的憑證。
+檢閱區段 **憑證需求** 檔案 [管理SSL憑證的簡介](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md#requirements) 以確保AEMas a Cloud Service支援您要新增的憑證。
 
 ## 正在新增憑證 {#adding-a-cert}
 

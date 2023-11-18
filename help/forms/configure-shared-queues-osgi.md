@@ -4,9 +4,9 @@ description: 瞭解如何針對以下專案使用共用佇列，以執行Forms�
 topic-tags: process
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
-source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '840'
+source-wordcount: '839'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # 共用及要求存取使用者的收件匣專案 {#share-and-request-access}
 
-佇列是使用者的AEM收件匣中的專案清單。 這些專案可以是指派給使用者的專案或共用給使用者所屬群組的專案。 您可以存取收件匣以檢視收件匣專案並採取行動。 例如，與其他使用者共用一個專案。
+佇列是使用者的AEM收件匣中的專案清單。 這些專案可以是指派給使用者的專案或共用給使用者所屬群組的專案。 您可以存取「收件匣」以檢視和處理「收件匣」專案。 例如，與其他使用者共用一個專案。
 
 您也可以與其他使用者共用您的收件匣專案。 一旦其他使用者擁有您收件匣專案的存取權，使用者就可以宣告共用專案並對之採取適當的動作。 同樣地，您可以向其他使用者要求收件匣專案的存取權。
 

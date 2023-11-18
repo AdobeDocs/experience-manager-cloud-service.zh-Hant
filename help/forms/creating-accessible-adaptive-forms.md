@@ -1,15 +1,13 @@
 ---
 title: 如何建立無障礙的最適化Forms？
 description: AEM Forms提供多種工具，可讓您建立無障礙的最適化Forms，並協助您遵循無障礙標準。
-uuid: 6472bc2d-47ca-4883-88b7-5de0b758fd00
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
-discoiquuid: 1e95c66b-d132-4c44-a1dc-31fd09af8113
 docset: aem65
 exl-id: 3b5247fa-decb-40eb-a629-6d834976d33c
-source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2025'
+source-wordcount: '2023'
 ht-degree: 0%
 
 ---
@@ -18,7 +16,7 @@ ht-degree: 0%
 
 ## 簡介 {#introduction}
 
-可存取的表單是所有人都能使用的表單，包括有特殊需求的使用者。 最適化Forms包含許多功能，可增強具有不同能力之使用者的可用性。 在最適化Forms中建立協助工具，不僅可讓內容有儘可能廣泛的閱聽眾，而且在必須遵循協助工具標準的地理位置提供檔案時，這也是必要條件。 [!DNL AEM Forms] 協助表單開發人員符合協助工具標準。
+可存取的表單是所有人都能使用的表單，包括有特殊需求的使用者。 最適化Forms包含多項功能，可提升不同功能使用者的可用性。 在最適化Forms中建立協助工具，不僅可讓內容有儘可能廣泛的閱聽眾，而且在必須遵循協助工具標準的地理位置提供檔案時，這也是必要條件。 [!DNL AEM Forms] 協助表單開發人員符合協助工具標準。
 
 製作最適化表單時，作者應考量下列幾點，以建立無障礙的最適化表單：
 

@@ -5,10 +5,10 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: 3db2ff19-dc24-47b6-aa56-2ee2305fe045
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: ht
-source-wordcount: '931'
-ht-degree: 100%
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
+source-wordcount: '927'
+ht-degree: 93%
 
 ---
 
@@ -26,7 +26,7 @@ AEM 提供同樣強大的工具來翻譯您的內容，使您能夠盡快將內�
 
 ## AEM 文件歷程 {#documentation-journeys}
 
-[文件歷程](/help/journey-documentation/documentation-journeys.md)提供敘述來協助剛開始使用 AEM 的讀者，讓他們能從頭到尾理解和解決業務問題，同時將採用的先前主題或 AEM 知識降至最低，藉以連結許多不同且複雜的主題和功能。
+[檔案歷程](/help/journey-documentation/documentation-journeys.md) 藉由提供敘述來協助剛開始使用AEM的讀者，讓他們能從頭到尾理解和解決業務問題，同時將採用的先前主題或AEM知識降至最低，藉以連結許多不同、複雜的主題和功能。
 
 文件歷程根據最佳實務原則而設計，其中包含 Adobe 的最新研究、Adobe 顧問的成熟實作經驗以及客戶專案的意見回饋。
 
@@ -47,7 +47,7 @@ AEM 提供同樣強大的工具來翻譯您的內容，使您能夠盡快將內�
 | 管理員 | 管理 AEM 的基本設定和配置 | 翻譯專家與管理員一起進行翻譯作業所需的設定變更，例如安裝翻譯連接器。 |
 | 內容架構師 | 分析必須作為網站傳遞之資料的要求並定義此資料的結構 | 翻譯專家與內容架構師一起定義內容的組織，以便輕鬆翻譯。 |
 
-此歷程的資訊當然對所有角色都有用，但有些資訊對於某些角色可能是多餘的。請密切注意[即將到來、涵蓋其他角色的歷程](/help/journey-documentation/documentation-journeys.md#journeys)。
+此歷程中的資訊對所有角色都很有用，但有些資訊可能對特定角色來說是多餘的。 請密切注意[即將到來、涵蓋其他角色的歷程](/help/journey-documentation/documentation-journeys.md#journeys)。
 
 ## Sites 翻譯歷程 {#the-journey}
 

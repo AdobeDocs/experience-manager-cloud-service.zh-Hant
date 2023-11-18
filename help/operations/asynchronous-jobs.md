@@ -2,9 +2,9 @@
 title: 非同步作業
 description: Adobe Experience Manager會以非同步方式完成部分耗用大量資源的工作，作為背景作業，以最佳化效能。
 exl-id: 9c5c4604-1290-4dea-a14d-08f3ab3ef829
-source-git-commit: b658f303d25cca958c08a95ead12fa3b987bcb3b
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '865'
+source-wordcount: '863'
 ht-degree: 70%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 70%
 * 從 Experience Manager 的遠端部署作業中擷取高於臨界值限制設定的資產
 * 轉出即時副本
 
-您可以從以下網址檢視非同步作業的狀態： **[!UICONTROL 背景作業]** 儀表板位置 **全域導覽** -> **工具** -> **一般** -> **工作**.
+您可以從以下網址檢視非同步作業的狀態： **[!UICONTROL 背景作業]** 儀表板位置 **全域導覽** > **工具** > **一般** > **工作**.
 
 >[!NOTE]
 >
@@ -35,7 +35,7 @@ AEM 以非同步方式處理操作時，您會透過[收件匣](/help/sites-clou
 
 若要檢視非同步操作的詳細狀態，請導覽至 **[!UICONTROL 背景作業]** 頁面。
 
-1. 在Experience Manager介面中，選取 **全域導覽** -> **工具** -> **一般** -> **工作**.
+1. 在Experience Manager介面中，選取 **全域導覽** > **工具** > **一般** > **工作**.
 
 1. 在 **[!UICONTROL 背景作業]** 頁面中，檢閱作業的詳細資訊。
 
@@ -71,7 +71,7 @@ AEM 以非同步方式處理操作時，您會透過[收件匣](/help/sites-clou
 
 ## 設定非同步作業處理選項 {#configure}
 
-非同步作業有許多選項可供設定。 下列範例說明如何在本機開發系統上使用Configuration Manager完成此操作。
+非同步作業有數個選項可供設定。 下列範例說明如何在本機開發系統上使用Configuration Manager完成此操作。
 
 >[!NOTE]
 >

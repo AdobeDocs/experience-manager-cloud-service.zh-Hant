@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: 464a97ce-da3e-47b5-9879-fafaf2f2378c
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '455'
-ht-degree: 15%
+source-wordcount: '443'
+ht-degree: 7%
 
 ---
 
@@ -24,13 +24,13 @@ ht-degree: 15%
 
 1. 執行下列任一項作業：
 
-   * 從「資產」UI中，選取資產，然後按一下/點選 **[!UICONTROL 檢視屬性]** 圖示。
+   * 從「資產」UI中選取資產，然後選取 **[!UICONTROL 檢視屬性]** 圖示。
    * 從資產縮圖中，選取 **[!UICONTROL 檢視屬性]** 快速動作。
-   * 從資產頁面，按一下/點選 **[!UICONTROL 檢視屬性]** 工具列中的。
+   * 從資產頁面中，選取 **[!UICONTROL 檢視屬性]** 工具列中的。
 
-   資產頁面會顯示資產的所有中繼資料。 此中繼資料上傳（擷取）至Experience Manager Assets時，會自動擷取。
+   資產頁面會顯示資產的中繼資料。 此中繼資料上傳（擷取）至Experience Manager Assets時，會自動擷取。
 
-1. 視需要對各種標籤下的中繼資料進行編輯，在完成時，按一下工具列中的「儲存 **** 」以儲存您所做的變更。按一下/點 **[!UICONTROL 選「關閉]** 」，返回「資產」網頁介面。
+1. 視需要對各種標籤下的中繼資料進行編輯，在完成時，選取 **[!UICONTROL 儲存]** 以儲存變更。 選取 **[!UICONTROL 關閉]** 以返回「資產」網頁介面。
 
    >[!NOTE]
    >
@@ -49,10 +49,10 @@ ht-degree: 15%
 您可以在Experience Manager中新增自己的名稱空間。 就像cq、jcr和sling等預先定義的名稱空間一樣，您可以擁有用於存放庫中繼資料和xml處理的名稱空間。
 
 1. 移至節點型別管理頁面 *https://&lt;host>：&lt;port>/crx/explorer/nodetypes/index.jsp*.
-1. 按一下或點選 **[!UICONTROL 名稱空間]** ，位於頁面頂端。 名稱空間管理頁面會顯示在視窗中。
+1. 選取 **[!UICONTROL 名稱空間]** ，位於頁面頂端。 名稱空間管理頁面會顯示在視窗中。
 
-1. 若要新增名稱空間，請按一下或點選 **[!UICONTROL 新增]** 在底部。
-1. 以XML名稱空間慣例指定自訂名稱空間（以URI格式指定ID，並為該ID指定關聯的前置詞），然後按一下或點選 **[!UICONTROL 儲存]**.
+1. 若要新增名稱空間，請選取 **[!UICONTROL 新增]** 在底部。
+1. 以XML名稱空間慣例指定自訂名稱空間（以URI格式指定ID，並為該ID指定關聯的前置詞），然後選取 **[!UICONTROL 儲存]**.
 
 **另請參閱**
 

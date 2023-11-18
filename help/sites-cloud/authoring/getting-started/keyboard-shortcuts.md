@@ -2,9 +2,9 @@
 title: 主控台的鍵盤快速鍵
 description: 使用這些鍵盤快速鍵可節省編寫時的時間
 exl-id: 68508d05-a98d-483a-aa6d-f743ee29c284
-source-git-commit: d6b98559e7cbe5fc5bd05d9cf37225e960e668e7
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '376'
+source-wordcount: '378'
 ht-degree: 3%
 
 ---
@@ -65,7 +65,7 @@ AEM會避免常用瀏覽器已使用的常用捷徑，但AEM捷徑不會覆寫�
 
 ## 停用鍵盤快速鍵 {#deactivating-keyboard-shortcuts}
 
-AEM為一些常用功能（編輯、屬性、複製/貼上、顯示各種側欄功能表等）提供鍵盤快速鍵。
+AEM為一些常用功能（編輯、屬性、複製/貼上、顯示各種側邊欄功能表等）提供鍵盤快速鍵。
 
 對於未使用鍵盤快速鍵或有某些協助工具需求的使用者，可以停用所有鍵盤快速鍵。
 

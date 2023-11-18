@@ -5,9 +5,9 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: 9bfc3995-ac8e-488e-b68f-9e1b5b4a3176
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1398'
+source-wordcount: '1390'
 ht-degree: 48%
 
 ---
@@ -35,7 +35,7 @@ ht-degree: 48%
 
 ## 要求和先決條件 {#requirements-prerequisites}
 
-有許多要求必須符合，才能開始翻譯 AEM 內容。
+開始翻譯AEM內容之前，有幾項需求。
 
 ### 知識 {#knowledge}
 
@@ -65,7 +65,7 @@ ht-degree: 48%
 
 若要存取網站主控台：
 
-1. 在全域導覽功能表中，按一下或點選 **導覽** -> **網站**.
+1. 在全域導覽功能表中，選取 **導覽** > **網站**.
 1. 網站主控台會開啟至內容的最上層。
 1. 確定 **欄檢視** 使用視窗右上角的檢視選擇器來選取。
 
@@ -75,7 +75,7 @@ ht-degree: 48%
 
    ![內容階層](assets/sites-console-hierarchy.png)
 
-1. 點選或按一下欄中某個專案的核取方塊，即會選取該專案並在右側欄中顯示所選專案的詳細資訊，以及在上方工具列中針對所選專案顯示許多可用的動作。
+1. 點選或按一下欄中某個專案的核取方塊，即會選取該專案並在右側欄中顯示所選專案的詳細資料，以及在上方工具列中針對所選專案顯示數個可用的動作。
 
    ![內容選擇](assets/sites-console-selection.png)
 
@@ -97,7 +97,7 @@ ht-degree: 48%
 
 若要編輯頁面：
 
-1. 使用網站主控台來尋找及選取頁面。 請記住，您需要點選或按一下個別頁面的核取方塊以將其選取。
+1. 使用網站主控台來尋找及選取頁面。 請記住，您必須選取個別頁面的核取方塊才能選取它。
 
    ![選取要編輯的頁面](assets/sites-editor-select-page.png)
 

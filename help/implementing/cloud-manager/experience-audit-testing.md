@@ -2,10 +2,10 @@
 title: 體驗稽核測試
 description: 了解體驗稽核如何驗證您的部署過程，並幫助確保部署的變更符合效能、協助工具、最佳實務和 SEO 的基準標準。
 exl-id: 8d31bc9c-d38d-4d5b-b2ae-b758e02b7073
-source-git-commit: 9f305e1127957fdba6dae978da4ac5fce4d3a776
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '588'
-ht-degree: 100%
+source-wordcount: '589'
+ht-degree: 95%
 
 ---
 
@@ -35,7 +35,7 @@ Experience Audit 由 Google Lighthouse 提供技術支援，Lighthouse 是 Googl
 
 >[!INFO]
 >
->自 2023 年 8 月 31 日起，體驗稽核將轉變為展示行動平台的特定結果。請注意，行動效能量度通常註冊低於桌面的效能量度，因此在此變更之後，請預期所報告的效能會發生有變化。
+>自 2023 年 8 月 31 日起，體驗稽核將轉變為展示行動平台的特定結果。請注意，行動效能量度通常註冊的比桌上型電腦低，因此您應預期在此變更後，報告的效能會有所轉變。
 
 >[!TIP]
 >

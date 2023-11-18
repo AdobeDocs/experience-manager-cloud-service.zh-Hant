@@ -2,10 +2,10 @@
 title: 使用 Universal Editor 編寫內容
 description: 了解內容作者使用 Universal Editor 建立內容有多簡單和直覺。
 exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2432'
-ht-degree: 71%
+source-wordcount: '2398'
+ht-degree: 58%
 
 ---
 
@@ -68,7 +68,7 @@ Experience Cloud 標頭會始終顯示在畫面頂端。這是一個錨點，說
 
 #### 組織 {#organization}
 
-這將顯示您目前登入的組織。如果您的 Adobe ID 與多個組織關聯，可點選或按一下以切換到另一個組織。
+這將顯示您目前登入的組織。如果您的Adobe ID與多個組織相關聯，請選取以切換至其他組織。
 
 ![組織指示器](assets/organization.png)
 
@@ -92,7 +92,7 @@ Experience Cloud 標頭會始終顯示在畫面頂端。這是一個錨點，說
 
 #### 使用者屬性 {#user-properties}
 
-點選或按一下代表您使用者的圖示以存取您的使用者設定。如果您沒有設定使用者圖片，則會隨機分配圖示。
+選取代表您的使用者的圖示，以存取您的使用者設定。 如果您沒有設定使用者圖片，則會隨機分配圖示。
 
 ![使用者屬性](assets/user-properties.png)
 
@@ -114,11 +114,11 @@ Universal Editor 標頭始終顯示在畫面頂端，就在 [Experience Cloud �
 
 >[!NOTE]
 >
->您希望使用 Universal Editor 編輯的任何頁面都必須[經過檢測以支援 Universal Editor。](getting-started.md)
+>您要使用通用編輯器編輯的任何頁面必須是 [用於支援通用編輯器。](getting-started.md)
 
 #### 位置列 {#location-bar}
 
-位置列會顯示您正在編輯頁面的網址。點選或按一下以輸入要編輯的其他頁面的網址。
+位置列會顯示您正在編輯頁面的網址。選取「 」即可輸入其他頁面要編輯的位址。
 
 ![位置列](assets/location-bar.png)
 
@@ -128,17 +128,17 @@ Universal Editor 標頭始終顯示在畫面頂端，就在 [Experience Cloud �
 
 >[!NOTE]
 >
->您希望使用 Universal Editor 編輯的任何頁面都必須[經過檢測以支援 Universal Editor。](getting-started.md)
+>您要使用通用編輯器編輯的任何頁面必須是 [用於支援通用編輯器。](getting-started.md)
 
 #### 驗證標題設定 {#authentication-settings}
 
-如果您需要設定驗證密碼，請點選或按一下驗證標題設定圖示。
+如果您需要設定驗證密碼，請選取驗證標題設定圖示。
 
 ![驗證標題設定按鈕](assets/authentication-header-settings.png)
 
 #### 模擬器設定 {#emulator}
 
-點選或按一下模擬圖示可定義 Universal Editor 呈現頁面的方式。
+選取模擬圖示以定義Universal Editor呈現頁面的方式。
 
 ![模擬器圖示](assets/emulator.png)
 
@@ -156,7 +156,7 @@ Universal Editor 標頭始終顯示在畫面頂端，就在 [Experience Cloud �
 
 #### 開啟應用程式預覽 {#open-app-preview}
 
-點選或按一下開啟應用程式預覽圖示，以在其瀏覽器標籤中開啟您正在編輯的頁面，無需編輯器即可預覽內容。
+選取開啟應用程式預覽圖示，即可使用自己的瀏覽器標籤開啟您目前正在編輯的頁面，無須使用編輯器即可預覽您的內容。
 
 ![開啟應用程式預覽](assets/open-app-preview.png)
 
@@ -166,7 +166,7 @@ Universal Editor 標頭始終顯示在畫面頂端，就在 [Experience Cloud �
 
 #### 發佈 {#publish}
 
-點選或按一下發佈按鈕，以便即時發佈內容變更以供讀者使用。
+選取「發佈」按鈕，讓您可以發佈內容的變更供讀者即時使用。
 
 ![發佈按鈕](assets/publish.png)
 
@@ -182,7 +182,7 @@ Universal Editor 標頭始終顯示在畫面頂端，就在 [Experience Cloud �
 
 #### 預覽模式 {#preview-mode}
 
-在預覽模式下，在編輯器中呈現的頁面就是發佈服務所顯示的樣子。這可讓內容作者透過按一下連結等來導覽內容。
+在預覽模式下，在編輯器中呈現的頁面就是發佈服務所顯示的樣子。這可讓內容作者按一下連結等方式來導覽內容。
 
 ![預覽模式](assets/preview-mode.png)
 
@@ -254,13 +254,13 @@ Universal Editor 標頭始終顯示在畫面頂端，就在 [Experience Cloud �
 
 ##### 編輯 {#edit}
 
-當在 [元件模式，](#component-mode) 所選元件的編輯選項會顯示在「屬性」邊欄中。 在屬性邊欄中，您可以編輯選取的元件。 如果選取的元件是內容片段，您也可以點選或按一下「編輯」按鈕。
+當在 [元件模式，](#component-mode) 所選元件的編輯選項會顯示在「屬性」邊欄中。 在屬性邊欄中，您可以編輯選取的元件。 如果選取的元件是內容片段，您也可以選取「編輯」按鈕。
 
 ![「編輯」圖示](assets/edit.png)
 
 點選或按一下編輯按鈕將在新的索引標籤中開啟[內容片段編輯器](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor)。這可讓您使用內容片段編輯器的全部功能來編輯關聯的內容片段。
 
-根據工作流程的需要，您可能想要在 Universal Editor 中或直接在內容片段編輯器中編輯內容片段。
+根據工作流程的需求，您可能會想要在通用編輯器中或直接在內容片段編輯器中編輯內容片段。
 
 >[!TIP]
 >
@@ -300,7 +300,7 @@ Universal Editor 標頭始終顯示在畫面頂端，就在 [Experience Cloud �
 
 >[!TIP]
 >
->請注意，在元件模式中，點選或按一下內容會選取它進行編輯。 如果您希望透過以下連結瀏覽您的內容，請切換到[預覽模式。](#preview-mode)
+>請注意，在元件模式中，點選或按一下內容會選取它進行編輯。 如果您想透過以下連結導覽內容，請切換至 [預覽模式。](#preview-mode)
 
 根據您選取的內容，您可能有不同的就地編輯選項，而且您可能會為中的內容提供其他資訊和選項 [屬性邊欄。](#properties-rail)
 
@@ -310,23 +310,23 @@ Universal Editor 標頭始終顯示在畫面頂端，就在 [Experience Cloud �
 
 ![編輯內容](assets/editing-content.png)
 
-按下 Enter/Return 鍵或在文字框外面輕點或按一下，即可儲存變更。
+按下Enter/Return或在文字方塊外選取，以儲存變更。
 
-當您點選或按一下以選取文字元件時，其詳細資料會顯示在「屬性」邊欄中。 您也可以在邊欄中編輯文字。
+當您選取選取文字元件時，其詳細資訊會顯示在「屬性」邊欄中。 您也可以在邊欄中編輯文字。
 
 ![編輯屬性邊欄中的文字](assets/ue-editing-text-component-rail.png)
 
-此外，屬性邊欄中還提供您文字的詳細資料。 一旦焦點離開屬性邊欄中已編輯的欄位，變更就會自動儲存。
+此外，屬性邊欄中也提供您文字的詳細資料。 一旦焦點離開屬性邊欄中已編輯的欄位，變更就會自動儲存。
 
 ### 編輯 RTF 文字 {#edit-rich-text}
 
 如果您在 [元件模式](#component-mode) 並選取RTF文字元件，按兩下或點選該元件即可就地編輯文字。
 
-按下 Enter/Return 鍵或在文字框外面輕點或按一下，即可儲存變更。
+按下Enter/Return或在文字方塊外選取，以儲存變更。
 
 ![編輯 RTF 文字元件](assets/rich-text-editing.png)
 
-此外，屬性邊欄中還提供格式化選項和文字的詳細資訊。 一旦焦點離開屬性邊欄中已編輯的欄位，變更就會自動儲存。
+此外，屬性邊欄中也有格式化選項和文字的詳細資訊。 一旦焦點離開屬性邊欄中已編輯的欄位，變更就會自動儲存。
 
 ### 編輯媒體 {#edit-media}
 
@@ -334,11 +334,11 @@ Universal Editor 標頭始終顯示在畫面頂端，就在 [Experience Cloud �
 
 ![編輯媒體](assets/ue-edit-media.png)
 
-點選或按一下 **取代** 按鈕取代屬性邊欄中選取影像預覽下方的影像，以使用資產資料庫中的另一個影像取代。
+選取 **取代** 按鈕取代屬性邊欄中選取影像預覽下方的影像，以使用資產資料庫中的另一個影像取代。
 
 1. [資產選擇器](/help/assets/asset-selector.md#using-asset-selector)視窗會開啟，讓您可選取資產。
-1. 點選或按一下以選取新資產。
-1. 點選或按一下 **選取** 以返回取代資產的屬性邊欄。
+1. 選取「 」以選取新資產。
+1. 選取 **選取** 以返回取代資產的屬性邊欄。
 
 變更會自動儲存到您的內容中。
 
@@ -358,14 +358,14 @@ Universal Editor 標頭始終顯示在畫面頂端，就在 [Experience Cloud �
 
 一旦焦點離開屬性邊欄中已編輯的欄位，變更就會自動儲存。
 
-但如果您希望以[內容片段編輯器](/help/sites-cloud/administering/content-fragments/authoring.md)來編輯內容片段，則請按一下模式邊欄中的[「編輯」按鈕](#edit)。
+如果您想在 [內容片段編輯器](/help/sites-cloud/administering/content-fragments/authoring.md) 請改為按一下 [編輯按鈕](#edit) 在模式邊欄中。
 
-根據工作流程的需要，您可能想要在 Universal Editor 中或直接在內容片段編輯器中編輯內容片段。
+根據工作流程的需求，您可能會想要在通用編輯器中或直接在內容片段編輯器中編輯內容片段。
 
 ### 新增元件到容器中 {#adding-components}
 
 1. 在內容樹或編輯器中選取容器元件。
-1. 然後，點選或按一下屬性邊欄中的新增圖示。
+1. 接著，在屬性邊欄中選取新增圖示。
 
    ![選取要新增到容器的元件](assets/ue-add-component.png)
 
@@ -378,9 +378,9 @@ Universal Editor 標頭始終顯示在畫面頂端，就在 [Experience Cloud �
 ### 從容器中刪除元件 {#deleting-components}
 
 1. 在內容樹或編輯器中選取容器元件。
-1. 點選或按一下容器的 ＞形箭號圖示以在內容樹中展開其內容。
+1. 選取容器的>形箭號圖示，展開內容樹狀結構中的內容。
 1. 然後，在內容樹中，選取容器內的元件。
-1. 在屬性邊欄中，點選或按一下刪除圖示。
+1. 在屬性邊欄中選取刪除圖示。
 
    ![刪除元件](assets/ue-delete-component.png)
 
@@ -394,7 +394,7 @@ Universal Editor 標頭始終顯示在畫面頂端，就在 [Experience Cloud �
 
 1. 在內容樹或編輯器中選取容器元件。
 1. 如果尚未變成[內容樹模式，](#content-tree-mode)切換至該模式。
-1. 點選或按一下容器的 ＞形箭號圖示以在內容樹中展開其內容。
+1. 選取容器的>形箭號圖示，展開內容樹狀結構中的內容。
 1. 拖曳容器內的元件旁的手柄圖示證明您可以將它們重新排序。拖曳元件，在容器內將它們重新排序。
 
    ![重新排序元件](assets/ue-reordering-components.png)
@@ -407,7 +407,7 @@ Universal Editor 標頭始終顯示在畫面頂端，就在 [Experience Cloud �
 
 內容編輯完成後，您通常會希望瀏覽其內容，以查看它在其他頁面內容中的樣子。在[預覽模式](#preview-mode)中，您可以點選連結，像讀者一樣瀏覽您的內容。內容在編輯器中呈現的樣子就是將會發佈的樣子。
 
-請注意，在預覽模式下，點選或按一下內容的回應與內容讀者的回應一樣。如果要選取要編輯的內容，請切換至 [元件模式。](#component-mode)
+請注意，在預覽模式下，點選或按一下內容的回應與內容讀者的回應一樣。如果您想要選取要編輯的內容，請切換至 [元件模式。](#component-mode)
 
 ## 其他資源 {#additional-resources}
 

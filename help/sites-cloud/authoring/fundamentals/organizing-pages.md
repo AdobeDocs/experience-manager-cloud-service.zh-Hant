@@ -2,10 +2,10 @@
 title: 建立及組織頁面
 description: 瞭解如何使用AEM建立和管理頁面，以組織您的網站。
 exl-id: c57096ca-34fe-4b19-98e0-8f3cd43cf24e
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2448'
-ht-degree: 4%
+source-wordcount: '2429'
+ht-degree: 3%
 
 ---
 
@@ -16,17 +16,17 @@ ht-degree: 4%
 
 >[!NOTE]
 >
->若要在頁面上執行建立、複製、移動、編輯和刪除等動作，您的帳戶需要適當的存取許可權和許可權。
+>您的帳戶需要適當的存取許可權才能在頁面上執行動作，例如建立、複製、移動、編輯和刪除。
 >
 >如果您遇到任何問題，我們建議您連絡系統管理員。
 
 <!--
->Your account needs the [appropriate access rights](/help/sites-administering/security.md) and [permissions](/help/sites-administering/security.md#permissions) to take action on pages such as create, copy, move, edit, and delete.
+>Your account needs the [appropriate access rights](/help/sites-administering/security.md) and [permissions](/help/sites-administering/security.md#permissions) to act on pages such as create, copy, move, edit, and delete.
 -->
 
 >[!TIP]
 >
->有許多種 [鍵盤快速鍵](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) 您可從網站主控台使用，以便更有效率地組織頁面。
+>有好幾個 [鍵盤快速鍵](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) 您可從網站主控台使用，以便更有效率地組織頁面。
 
 {{edge-delivery-authoring}}
 
@@ -70,7 +70,7 @@ ht-degree: 4%
 
 ### 頁面命名慣例 {#page-naming-conventions}
 
-建立新頁面時，有兩個索引鍵欄位：
+建立頁面時，有兩個索引鍵欄位：
 
 * **[標題](#title)**:
 
@@ -95,7 +95,7 @@ ht-degree: 4%
 >
 >也請記住，某些瀏覽器（例如舊版的IE）只能接受一定長度的URL，因此還有技術原因需縮短頁面名稱。
 
-建立新頁面時，AEM會 [根據慣例驗證頁面名稱](/help/implementing/developing/introduction/naming-conventions.md) 由AEM和JCR所強制。
+建立頁面時，AEM [根據慣例驗證頁面名稱](/help/implementing/developing/introduction/naming-conventions.md) 由AEM和JCR所強制。
 
 允許的最小字元為：
 
@@ -113,7 +113,7 @@ ht-degree: 4%
 
 #### 標題 {#title}
 
-如果您在建立新頁面時只提供頁面 **Title** ,AEM會從此字串衍生頁面 **Name**[ ，並根據AEM和JCR所強加的慣例來驗證名稱。](/help/implementing/developing/introduction/naming-conventions.md)
+如果您只提供頁面 **標題** 建立頁面時，AEM會衍生頁面 **名稱** 來自此字串和 [根據慣例驗證名稱](/help/implementing/developing/introduction/naming-conventions.md) 由AEM和JCR所強制。
 
 A **標題** 接受包含無效字元的欄位，但衍生的名稱會以無效的字元取代。 例如：
 
@@ -124,7 +124,7 @@ A **標題** 接受包含無效字元的欄位，但衍生的名稱會以無效�
 
 #### 名稱 {#name}
 
-當您提供頁面時 **名稱** 建立新頁面時，AEM會 [根據慣例驗證名稱](/help/implementing/developing/introduction/naming-conventions.md) 由AEM和JCR所強制。 您無法在中提交無效的字元 **名稱** 欄位。 當AEM偵測到無效字元時，此欄位會以說明訊息強調顯示。
+當您提供頁面時 **名稱** 建立頁面時，AEM [根據慣例驗證名稱](/help/implementing/developing/introduction/naming-conventions.md) 由AEM和JCR所強制。 您無法在中提交無效的字元 **名稱** 欄位。 當AEM偵測到無效字元時，此欄位會以說明訊息強調顯示。
 
 ![輸入無效頁面名稱的範例](/help/sites-cloud/authoring/assets/organizing-invalid-name.png)
 
@@ -185,7 +185,7 @@ AEM隨附幾個現成可用的範本。 可用的範本視個別網站而定。 
 
 1. 從精靈的第一階段，您可以：
 
-   * 選取您要用來建立新頁面的範本，然後按一下/點選 **下一個** 以繼續進行。
+   * 選取您要用來建立新頁面的範本，然後選取 **下一個** 以繼續進行。
 
    * **取消** 以中止程式。
 
@@ -193,7 +193,7 @@ AEM隨附幾個現成可用的範本。 可用的範本視個別網站而定。 
 
 1. 在精靈的最後階段，您可以：
 
-   * 使用三個索引標籤來輸入 [頁面屬性](/help/sites-cloud/authoring/fundamentals/page-properties.md) 您要指派給新頁面，然後按一下/點選 **建立** 以實際建立頁面。
+   * 使用三個索引標籤來輸入 [頁面屬性](/help/sites-cloud/authoring/fundamentals/page-properties.md) 您想要指派給新頁面，然後選取 **建立** 以實際建立頁面。
 
    * 使用 **返回** 以返回範本選取。
 
@@ -206,7 +206,7 @@ AEM隨附幾個現成可用的範本。 可用的範本視個別網站而定。 
    * **名稱**:
 
       * 這會用來產生URI。 如果未指定，則會從標題衍生名稱。
-      * 如果您提供頁面 **名稱** 建立新頁面時，AEM會 [根據慣例驗證名稱](/help/implementing/developing/introduction/naming-conventions.md) 由AEM和JCR所強制。
+      * 如果您提供頁面 **名稱** 建立頁面時，AEM [根據慣例驗證名稱](/help/implementing/developing/introduction/naming-conventions.md) 由AEM和JCR所強制。
       * 您 **無法提交無效的字元** 在 **名稱** 欄位。 當AEM偵測到無效字元時，該欄位會醒目顯示，並顯示說明訊息，指出需要移除/取代的字元。
 
    >[!TIP]
@@ -269,7 +269,7 @@ AEM隨附幾個現成可用的範本。 可用的範本視個別網站而定。 
    ![複製](/help/sites-cloud/authoring/assets/copy.png)
 
 1. 導覽至頁面新復本的位置。
-1. 點選或按一下 **貼上** 圖示可用。
+1. 選取 **貼上** 圖示可用。
 
    ![貼上](/help/sites-cloud/authoring/assets/paste.png)
 
@@ -279,7 +279,7 @@ AEM隨附幾個現成可用的範本。 可用的範本視個別網站而定。 
 
    ![貼上對話方塊](/help/sites-cloud/authoring/assets/paste-dialog.png)
 
-1. 點選或按一下 **貼上** 按鈕以確認貼上交易並建立新頁面。
+1. 選取 **貼上** 按鈕以確認貼上交易並建立新頁面。
 
 >[!NOTE]
 >
@@ -313,7 +313,7 @@ AEM提供可更新任何內部連結的功能，這些連結會參照正在重�
 
 1. 從 **重新命名** 精靈的階段您可以：
 
-   * 指定移動頁面後您希望頁面使用的名稱，然後按一下/點選 **下一個** 以繼續進行。
+   * 指定移動頁面後您希望頁面使用的名稱，然後選取「 」 **下一個** 以繼續進行。
    * **取消** 以中止程式。
 
    ![移動和重新命名頁面](/help/sites-cloud/authoring/assets/move-page-rename.png)
@@ -383,7 +383,7 @@ AEM提供可更新任何內部連結的功能，這些連結會參照正在重�
   ![Asynchronous page move](assets/asynchronous-page-move.png)
 -->
 
-您可在以下位置檢查非同步作業的狀態： [**非同步工作狀態** 儀表板](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations) 在 **全域導覽** -> **工具** -> **作業** -> **工作**
+您可在以下位置檢查非同步作業的狀態： [**非同步工作狀態** 儀表板](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations) 在 **全域導覽** > **工具** > **作業** > **工作**
 
 >[!NOTE]
 >

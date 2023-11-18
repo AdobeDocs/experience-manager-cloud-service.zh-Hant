@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: 1d3ad496-a964-476e-b1da-4aa6d8ad53b7
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '984'
-ht-degree: 15%
+source-wordcount: '971'
+ht-degree: 7%
 
 ---
 
@@ -36,14 +36,14 @@ ht-degree: 15%
 
 無論選擇的資產型別為何，都會將版權資訊顯示為必填欄位。
 
-1. 點選/按一下 [!DNL Experience Manager] 標誌，並前往 **[!UICONTROL 工具]** > **[!UICONTROL 資產]** > **[!UICONTROL 中繼資料結構]**.
-1. 在「方 **[!UICONTROL 案表單]** 」頁中，選擇方案表單，然後從工具欄點選/單 **[!UICONTROL 擊「編輯]** 」以編輯方案。
+1. 選取 [!DNL Experience Manager] 標誌，並前往 **[!UICONTROL 工具]** > **[!UICONTROL 資產]** > **[!UICONTROL 中繼資料結構]**.
+1. 在 **[!UICONTROL 結構描述Forms]** 頁面，選取結構表單，然後選取 **[!UICONTROL 編輯]** 以編輯結構。
 
    ![select_form](assets/select_form.png)
 
 1. （選用）在中繼資料結構編輯器中，建立欄位以進行條件化。 在中指定名稱和屬性路徑 **[!UICONTROL 設定]** 標籤。
 
-   若要建立標籤，請點選/按一下 `+` 以新增索引標籤，然後新增中繼資料欄位。
+   若要建立標籤，請選取 `+` 以新增索引標籤，然後新增中繼資料欄位。
 
    ![add_tab](assets/add_tab.png)
 
@@ -53,7 +53,7 @@ ht-degree: 15%
 
 1. 機碼值組是提供給表單使用者的選項。 您可以手動或從JSON檔案提供索引鍵/值組。
 
-   * 若要手動指定值，請選取 **[!UICONTROL 手動新增]**，然後點選/按一下 **[!UICONTROL 新增選擇]** 並指定選項文字和值。 例如，指定「視訊」、「PDF」、「Word」和「影像」資產型別。
+   * 若要手動指定值，請選取 **[!UICONTROL 手動新增]**，並選取 **[!UICONTROL 新增選擇]** 並指定選項文字和值。 例如，指定「視訊」、「PDF」、「Word」和「影像」資產型別。
 
    * 若要動態擷取JSON檔案中的值，請選取 **[!UICONTROL 透過JSON路徑新增]** 和提供JSON檔案的路徑。 [!DNL Experience Manager] 向使用者呈現表單時，會即時擷取機碼值組。
 
@@ -80,7 +80,7 @@ ht-degree: 15%
    ![select_dependentfield](assets/select_dependentfield.png)
 
 1. 在 **[!UICONTROL 需求]**，選擇 **[!UICONTROL 必要（根據新規則）]** 選項。
-1. 點選/按一 **[!UICONTROL 下「新增規則]** 」，然後選擇「 **** 資產類型」欄位以建立相依性。也選擇要在其上建立相關性的欄位值。在這種情況下，請選擇「 **[!UICONTROL 視訊」]**。點選/按一 **[!UICONTROL 下「完成]** 」以儲存變更。
+1. 選取 **[!UICONTROL 新增規則]** 並選擇 **[!UICONTROL 資產型別]** 欄位以建立相依性。 也選擇要在其上建立相依性的欄位值。 在這種情況下，請選擇「 **[!UICONTROL 視訊」]**。選取 **[!UICONTROL 完成]** 以儲存變更。
 
    ![define_rule](assets/define_rule.png)
 
@@ -90,13 +90,13 @@ ht-degree: 15%
 
 1. 在「可 **[!UICONTROL 見性]**」下，選擇「可 **[!UICONTROL 見」，根據新規則選項]** 。
 
-1. 點選/按一 **[!UICONTROL 下「新增規則]** 」，然後選擇「 **** 資產類型」欄位以建立相依性。也選擇要在其上建立相關性的欄位值。在這種情況下，請選擇「 **[!UICONTROL 視訊」]**。點選/按一 **[!UICONTROL 下「完成]** 」以儲存變更。
+1. 選取 **[!UICONTROL 新增規則]** 並選擇 **[!UICONTROL 資產型別]** 欄位以建立相依性。 也選擇要在其上建立相關性的欄位值。在這種情況下，請選擇「 **[!UICONTROL 視訊」]**。選取 **[!UICONTROL 完成]** 以儲存變更。
 
    ![define_visibilityrule](assets/define_visibilityrule.png)
 
    >[!CAUTION]
    >
-   >若要重設值，請按一下或點選空白字元或介面上值以外的任何位置。 如果值已重設，請再次選取值。
+   >若要重設值，請在介面中選取值以外的任何位置。 如果值已重設，請再次選取值。
 
    >[!NOTE]
    >

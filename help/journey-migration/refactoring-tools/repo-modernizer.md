@@ -2,9 +2,9 @@
 title: 存放庫現代化工具
 description: 瞭解如何重新建構現有的專案套件，使其與針對Adobe Experience Manager as a Cloud Service定義的專案結構相容。
 exl-id: cd9d212e-e720-4209-8b5a-659883cc1d95
-source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '324'
+source-wordcount: '322'
 ht-degree: 5%
 
 ---
@@ -32,7 +32,7 @@ Repository Modernizer會建立下列部署結構，以建立相容的AEM Cloud S
 
 >[!VIDEO](https://video.tv.adobe.com/v/333057/?quality=12&learn=on)
 
-* 透過Adobe I/OCLI ：建議透過使用Repository Modernizer `aio-cli-plugin-aem-cloud-service-migration` (適用於Adobe I/OCLI的AEMas a Cloud Service程式碼重構外掛程式)。
+* 透過Adobe I/OCLI ：Adobe建議透過以下方式使用Repository Modernizer： `aio-cli-plugin-aem-cloud-service-migration` (適用於Adobe I/OCLI的AEMas a Cloud Service程式碼重構外掛程式)。
 
   另請參閱 **[Git資源： aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#introduction)** 以便您瞭解如何安裝和使用外掛程式。
 

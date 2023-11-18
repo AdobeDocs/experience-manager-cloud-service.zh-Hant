@@ -4,9 +4,9 @@ description: 瞭解在開發多語言網站時如何準備翻譯內容。
 feature: Language Copy
 role: Admin
 exl-id: afc577a2-2791-481a-ac77-468011e4302e
-source-git-commit: a1a92f8767186ba9e93b6b30870ecfa9f3b3bc28
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '769'
+source-wordcount: '751'
 ht-degree: 1%
 
 ---
@@ -71,20 +71,20 @@ ht-degree: 1%
 * `<language-code>`  — 支援的語言代碼是由ISO-639-1定義的兩字母代碼，例如 `en`.
 * `<language-code>_<country-code>` 或 `<language-code>-<country-code>`  — 支援的國家代碼是小寫或大寫的兩字母代碼，如ISO 3166所定義，例如 `en_US`， `en_us`， `en_GB`， `en-gb`.
 
-根據您為全域網站選擇的結構，您可以使用任一格式。 例如，WKND網站法文副本的根頁面具有 `fr` 作為 **名稱** 屬性。 請注意 **名稱** 屬性會用作存放庫中頁面節點的名稱，從而決定頁面的路徑(`http://<host>:<4502>/content/wknd/language-masters/fr.html`)。
+根據您為全域網站選擇的結構，您可以使用任一格式。 例如，WKND網站法文副本的根頁面具有 `fr` 作為 **名稱** 屬性。 此 **名稱** 屬性會用作存放庫中頁面節點的名稱，從而決定頁面的路徑(`http://<host>:<4502>/content/wknd/language-masters/fr.html`)。
 
 1. 導覽至網站。
-1. 按一下或點選您要建立語言副本的網站。
-1. 按一下或點選 **建立**，然後按一下或點選 **頁面**.
+1. 選取您要建立語言副本的網站。
+1. 選取 **建立**，然後選取 **頁面**.
 
    ![建立頁面](../assets/create-page.png)
 
-1. 選取頁面範本，然後按一下或點選 **下一個**.
+1. 選取頁面範本，然後選取 **下一個**.
 1. 在 **名稱** 欄位輸入國家/地區代碼，格式為 `<language-code>` 或 `<language-code>_<country-code>`，例如 `en`， `en_US`， `en_us`， `en_GB`， `en_gb`. 輸入頁面的標題。
 
    ![建立語言根頁面](../assets/create-language-root.png)
 
-1. 按一下或點選 **建立**. 在確認對話方塊中，按一下或點選 **完成** 返回Sites主控台，或 **開啟** 以開啟語言副本。
+1. 選擇 **建立**。在確認對話方塊中，選取 **完成** 返回Sites主控台，或 **開啟** 以開啟語言副本。
 
 ## 檢視語言根的狀態 {#seeing-the-status-of-language-roots}
 
@@ -94,11 +94,11 @@ AEM提供 **引用** 顯示已建立之語言根目錄的邊欄。
 
 請使用下列程式檢視頁面的語言副本 [邊欄選擇器](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector).
 
-1. 在網站主控台上，選取網站的頁面，然後按一下或點選 **引用**.
+1. 在網站主控台上，選取網站的頁面，然後選取 **引用**.
 
    ![開啟參考邊欄](../assets/opening-references-rail.png)
 
-1. 在參照邊欄中，按一下或點選 **語言副本**. 邊欄會顯示網站的語言副本。
+1. 在參照邊欄中，選取 **語言副本**. 邊欄會顯示網站的語言副本。
 
 ## 多個層級的語言副本 {#multiple-levels}
 

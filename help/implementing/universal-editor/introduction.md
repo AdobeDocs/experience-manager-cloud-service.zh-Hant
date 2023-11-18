@@ -2,10 +2,10 @@
 title: Universal Editor 簡介
 description: 瞭解通用編輯器如何讓您看到即得(WYSIWYG)編輯任何Headless和Headful體驗。 了解它如何幫助內容作者提供卓越的體驗、提高其內容速度，以及如何提供最先進的開發人員體驗。
 exl-id: d4fc2384-a0f5-4a6f-9572-62749786be4c
-source-git-commit: 79fe3133a6b0553209b14c4cf47faa9db28caacc
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '919'
-ht-degree: 96%
+source-wordcount: '925'
+ht-degree: 89%
 
 ---
 
@@ -34,8 +34,8 @@ Universal Editor 可以用於任何實作、任何內容和任何方面的內容
 
 實作使用 Universal Editor 的要求簡單且支援：
 
-* **任何架構** - 伺服器端轉譯、邊緣端轉譯、用戶端轉譯等。
-* **任何框架** - Vanilla AEM，或任何協力廠商框架，如 React、Next.js、Angular 等。
+* **任何架構**  — 伺服器端轉譯、邊緣端轉譯、使用者端轉譯等。
+* **任何框架** - Vanilla AEM或任何協力廠商架構，例如React、Next.js、Angular等。
 * **任何託管** - 可以在本機託管到 AEM，或託管在遠端網域上
 
 ### 任何內容 {#any-content}
@@ -50,7 +50,7 @@ Universal Editor 可以用於任何實作、任何內容和任何方面的內容
 
 對於內容作者而言，內容不僅僅是包含的資訊，還包括呈現和接收資訊的方式。內容帶有額外的中繼資料和檢測規則，Universal Editor 可以理解和編輯這些規則，包括：
 
-* **套用版面和樣式** - 透過使用樣式系統，行銷從業人員和內容作者可以將不同的樣式套用至其內容，並為內容建立不同的版面，例如欄、浮動切換、標籤、摺疊式功能表等。
+* **套用版面與樣式**  — 使用樣式系統，行銷從業人員和內容作者就可以將不同的樣式套用至其內容，並為內容建立不同的版面，例如欄、輪播、索引標籤、摺疊式功能表等。
 
 ## 值 {#value}
 

@@ -4,10 +4,10 @@ description: 瞭解如何設定 [!DNL Adobe Experience Manager] RTF編輯器外�
 contentOwner: AG
 mini-toc-levels: 1
 exl-id: 91619662-e865-47d1-8bec-0739f402353a
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '4299'
-ht-degree: 1%
+source-wordcount: '4298'
+ht-degree: 2%
 
 ---
 
@@ -586,9 +586,9 @@ RTF編輯器使用容器DOM元素，其ID為 `CQrte` 提供不同的樣式來檢
 >
 RTE拼字檢查器可隨選使用。 當您開始輸入文字時，它不會自動執行。
 >
-若要執行拼字檢查程式，請點選/按一下工具列中的「拼字檢查程式」按鈕。 RTE會檢查單字的拼字，並反白拼錯的單字。
+若要執行拼字檢查，請從工具列選取「拼字檢查」按鈕。 RTE會檢查單字的拼字，並反白拼錯的單字。
 >
-如果您合併拼字檢查程式所建議的任何變更，文字的狀態會變更，且拼字錯誤的單字不會再反白顯示。 若要執行拼字檢查程式，請再次點選/按一下「拼字檢查程式」按鈕。
+如果您合併拼字檢查程式所建議的任何變更，文字的狀態會變更，且拼字錯誤的單字不會再反白顯示。 若要執行拼字檢查程式，請再次選取拼字檢查程式按鈕。
 
 ## 設定復原和重做動作的歷史記錄大小 {#undohistory}
 

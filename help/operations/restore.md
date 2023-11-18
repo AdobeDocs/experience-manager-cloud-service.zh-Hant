@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service 中的內容還原
 description: 瞭解如何使用 Cloud Manager 從備份中還原 AEM as a Cloud Service 內容。
 exl-id: 921d0c5d-5c29-4614-ad4b-187b96518d1f
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1162'
-ht-degree: 94%
+source-wordcount: '1158'
+ht-degree: 81%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 94%
 >* 此功能僅適用於開發環境。
 >* 每個計畫的內容還原限制為每月兩次。
 >
->如需 AEM as a Cloud Service 現有備份與還原系統的詳細資訊，請參閱檔案 [AEM as a Cloud Service 的備份和還原](/help/operations/backup.md)
+>如需AEMas a Cloud Service現有備份與還原系統的詳細資訊，請參閱 [AEMas a Cloud Service的備份和還原](/help/operations/backup.md).
 
 ## 概觀 {#overview}
 
@@ -42,7 +42,7 @@ Cloud Manager 提供兩種型別的備份，您可以從中還原內容。
 
 ## 還原內容 {#restoring-content}
 
-首先決定您要還原之內容的時間範圍。 然後，若要從備份中還原環境的內容，請執行這些步驟。
+首先，決定您要還原之內容的時間範圍。 然後，若要從備份中還原環境的內容，請執行這些步驟。
 
 >[!NOTE]
 >
@@ -58,7 +58,7 @@ Cloud Manager 提供兩種型別的備份，您可以從中還原內容。
 
    * 或者，您可以直接導覽至&#x200B;**還原內容**&#x200B;特定環境的「環境詳細資訊」頁面標籤。
 
-1. 在&#x200B;**還原內容**&#x200B;環境詳細資訊頁面的標籤中，首先在&#x200B;**還原時間**&#x200B;下拉式清單中選取還原的時間期限。
+1. 在 **還原內容** 環境詳細資訊頁面的索引標籤中，首先在 **還原時間** 下拉式清單。
 
    1. 如果您選取&#x200B;**過去 24 小時**，相鄰的&#x200B;**時間**&#x200B;欄位可讓您指定過去 24 小時內要還原的確切時間。
 
@@ -72,13 +72,13 @@ Cloud Manager 提供兩種型別的備份，您可以從中還原內容。
 
    ![可用的備份](assets/backup-available.png)
 
-1. 使用資訊圖示尋找您要還原的備份，以檢視有關該備份中包含的程式碼版本和 AEM 版本的資訊，並考慮以下情況下還原的影響：[選擇備份。](#choosing-the-right-backup)
+1. 使用資訊圖示來尋找您要還原的備份，以檢視有關該備份中包含的程式碼版本和AEM版本的資訊，並考慮以下情況下還原的影響： [選擇備份。](#choosing-the-right-backup)
 
    ![備份資訊](assets/backup-info.png)
 
-   * 請注意，針對還原選項顯示的時間戳記都根據使用者電腦的時區而定。
+   * 針對還原選項顯示的時間戳記都根據使用者電腦的時區而定。
 
-1. 按一下&#x200B;**還原**&#x200B;圖示，代表您要還原以啟動還原程式的備份。
+1. 按一下 **還原** 圖示代表您要還原以啟動還原程式的備份。
 
 1. 檢視以下專案的詳細資訊：**還原內容**&#x200B;對話方塊，然後再按一下以確認您的請求&#x200B;**還原**。
 

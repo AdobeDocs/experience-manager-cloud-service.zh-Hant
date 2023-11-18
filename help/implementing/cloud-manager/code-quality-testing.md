@@ -2,10 +2,10 @@
 title: 程式碼品質測試
 description: 了解管道程式碼品質測試如何運作及如何提高部署品質。
 exl-id: e2981be9-fb14-451c-ad1e-97c487e6dc46
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1161'
-ht-degree: 100%
+source-wordcount: '1159'
+ht-degree: 96%
 
 ---
 
@@ -110,7 +110,7 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 
 ## 掃描最佳化的內容套件 {#content-package-scanning-optimization}
 
-在品質分析流程中，Cloud Manager 會對 Maven 組建產生的內容套件進行分析。Cloud Manager 可提供最佳化功能以加速此流程，若需遵守某些套件限制，前述功能即有助益。最顯著的是針對輸出單一內容套件的專案執行的最佳化，該套件通常稱為「全」套件，其中會包含由組建產生並標記為已略過的一些其他內容套件。當 Cloud Manager 偵測到這種情況時，會直接掃描個別內容套件並根據相依性進行排序，而不是將「全」套件解除封裝。例如，考慮以下組建輸出。
+在品質分析流程中，Cloud Manager 會對 Maven 組建產生的內容套件進行分析。Cloud Manager 可提供最佳化功能以加速此流程，若需遵守某些套件限制，前述功能即有助益。最顯著的是針對輸出單一內容套件（通常稱為「全」套件）的專案執行的最佳化，該套件包含由組建產生的數個其他內容套件（這些內容套件標籤為已略過）。 當 Cloud Manager 偵測到這種情況時，會直接掃描個別內容套件並根據相依性進行排序，而不是將「全」套件解除封裝。例如，考慮以下組建輸出。
 
 * `all/myco-all-1.0.0-SNAPSHOT.zip` (content-package)
 * `ui.apps/myco-ui.apps-1.0.0-SNAPSHOT.zip` (skipped-content-package)

@@ -3,10 +3,10 @@ title: 在 AEM 中管理 GraphQL 端點
 description: 了解如何在 Adobe Experience Manager as a Cloud Service 中管理 GraphQL 端點，以進行 Headless 內容傳遞。
 feature: Content Fragments,GraphQL API
 exl-id: f7164ae3-4074-4db7-8c43-a79cc2ef00b1
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '512'
-ht-degree: 98%
+source-wordcount: '513'
+ht-degree: 95%
 
 ---
 
@@ -64,7 +64,7 @@ AEM 全域端點的 GraphQL 存放庫路徑：
 1. 選擇 **建立**。
 1. 此 **建立新的GraphQL端點** 對話方塊開啟。 您可以在這裡指定：
    * **名稱**：端點名稱，您可以輸入任何文字。
-   * **使用以下方式提供的 GraphQL 結構描述**：使用下拉選單選取所需的網站/專案。
+   * **使用由提供的GraphQL結構描述**：使用下拉式清單來選取所需的網站/專案。
 
    >[!NOTE]
    >

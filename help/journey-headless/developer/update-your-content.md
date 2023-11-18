@@ -2,10 +2,10 @@
 title: 如何透過 AEM Assets API 更新您的內容
 description: 在 AEM Headless 開發人員歷程的這一部分中，了解如何使用 REST API 存取和更新內容片段的內容。
 exl-id: 84120856-fd1d-40f7-8df4-73d4cdfcc43b
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1096'
-ht-degree: 100%
+source-wordcount: '1093'
+ht-degree: 97%
 
 ---
 
@@ -106,7 +106,7 @@ This means that subsequent (`write`) requests cannot be combined into a single t
 
 ### Security {#security}
 
-If the Assets REST API is used within an environment without specific authentication requirements, AEM's CORS filter needs to be configured correctly.
+If the Assets REST API is used within an environment without specific authentication requirements, AEM's CORS filter must be configured correctly.
 
 >[!NOTE]
 >
@@ -163,7 +163,7 @@ The response will contain paging information as part of the `properties` section
 
 Folders act as containers for assets and other folders. They reflect the structure of the AEM content repository.
 
-The Assets REST API exposes access to the properties of a folder; for example its name, title, etc. Assets are exposed as child entities of folders, and sub-folders.
+The Assets REST API exposes access to the properties of a folder; for example its name, title, and so on Assets are exposed as child entities of folders, and sub-folders.
 
 >[!NOTE]
 >
@@ -196,7 +196,7 @@ Content fragments:
 
 ### Content Models and Content Fragments {#content-models-and-content-fragments}
 
-Currently the models that define the structure of a content fragment are not exposed through an HTTP API. Therefore the *consumer* needs to know about the model of a fragment (at least a minimum) - although most information can be inferred from the payload; as data types, etc. are part of the definition.
+Currently the models that define the structure of a content fragment are not exposed through an HTTP API. Therefore, the *consumer* needs to know about the model of a fragment (at least a minimum) - although most information can be inferred from the payload; as data types, and so on, are part of the definition.
 
 To create a content fragment, the (internal repository) path of the model has to be provided.
 
@@ -254,7 +254,7 @@ API 參考文件中定義了受支援要求的確切格式。
 
 >[!NOTE]
 >
->如需更多詳細資訊，請參閱 API 參考。特別是 [Adobe Experience Manager Assets API - 內容片段](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/assets-api-content-fragments/index.html)。
+>請參閱API參考資料 [Adobe Experience Manager Assets API — 內容片段](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/assets-api-content-fragments/index.html).
 
 ### 讀取/傳遞 {#read-delivery}
 
@@ -293,11 +293,11 @@ API 參考文件中定義了受支援要求的確切格式。
 
 ### 刪除 {#delete}
 
-使用方式：
+使用方式如下：
 
 `DELETE /{cfParentPath}/{cfName}`
 
-如需使用 AEM Assets REST API 的更多詳細資訊，您可以參考：
+如需使用AEM Assets REST API的詳細資訊，請參閱下列內容：
 
 * Adobe Experience Manager Assets HTTP API (其他資源)
 * AEM Assets HTTP API 支援內容片段 (其他資源)

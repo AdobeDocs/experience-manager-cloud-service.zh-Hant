@@ -2,9 +2,9 @@
 title: 管理啟動項中的頁面
 description: 您可以在啟動項中建立新頁面。 您也可以刪除不要的頁面。
 exl-id: 214c8c2f-d09a-4ce9-b474-9505b76084f7
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '289'
+source-wordcount: '288'
 ht-degree: 1%
 
 ---
@@ -47,7 +47,7 @@ ht-degree: 1%
 
 * 導覽,
 * **建立** 新頁面，
-* 選取現有頁面並執行動作；例如， **編輯**，開啟 **屬性**， **鎖定**， **複製**， **貼上** 和 **刪除**
+* 選取現有頁面並採取行動；例如， **編輯**，開啟 **屬性**， **鎖定**， **複製**， **貼上** 和 **刪除**
   ![從「管理內容」導覽Sites Console中的啟動](/help/sites-cloud/authoring/assets/launches-navigate-manage-content.png)
 * 使用 **引用** 邊欄以返回 **啟動來源** 頁面：
   ![網站主控台 — 啟動項來源](/help/sites-cloud/authoring/assets/launches-navigate-launch-source.png)

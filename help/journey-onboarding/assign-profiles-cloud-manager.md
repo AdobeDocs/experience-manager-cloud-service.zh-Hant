@@ -4,10 +4,10 @@ description: 按照此頁面了解如何將團隊成員指派給 Cloud Manager �
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: 555688e5-f937-462c-9fcc-b90685f1882b
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1528'
-ht-degree: 94%
+source-wordcount: '1527'
+ht-degree: 93%
 
 ---
 
@@ -33,7 +33,7 @@ ht-degree: 94%
 
 ## 必備條件 {#prerequisites}
 
-若要將團隊成員指派給產品設定檔，您需要擁有團隊成員的詳細資訊，這些成員需要存取AEMas a Cloud Service，包括：
+若要將團隊成員指派給產品設定檔，您需要擁有有關必須存取AEMas a Cloud Service之團隊成員的詳細資訊，包括：
 
 * 名稱
 * 電子郵件地址
@@ -181,7 +181,7 @@ Cloud Manager 是 AEM as a Cloud Service 不可或缺的一部分，用於管理
 
 ## 其他資源 {#additional-resources}
 
-建議繼續如前所述的上線歷程。如果您想深入了解此歷程中的特定主題，請參閱以下其他資源。
+建議繼續如前所述的上線歷程。如果您想深入瞭解此歷程中的特定主題，請參閱以下其他資源。
 
 * [Cloud Manager 簡介](/help/onboarding/cloud-manager-introduction.md) - 了解 Cloud Manager、Cloud Manager 計畫和環境。
 * [Cloud Manager 產品設定檔](/help/onboarding/aem-cs-team-product-profiles.md) - 了解 AEM as a Cloud Service 團隊和產品設定檔。

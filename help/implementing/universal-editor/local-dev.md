@@ -2,10 +2,10 @@
 title: 使用 Universal Editor 進行本機 AEM 開發
 description: 了解 Universal Editor 如何支援為開發目的在本機 AEM 執行個體上進行編輯。
 exl-id: ba1bf015-7768-4129-8372-adfb86e5a120
-source-git-commit: 3b98543098f4125a7d7e5896e5aa46e441a40f32
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '585'
-ht-degree: 100%
+source-wordcount: '580'
+ht-degree: 94%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 100%
 
 為此，您需要將 AEM 設定為在 HTTPS 上執行。出於開發目的，您可以使用自我簽署憑證。
 
-請參閱此文件以了解如何設定在 HTTPS 上執行 AEM，包括您可以使用的自我簽署憑證。
+請參閱本檔案以瞭解如何設定在HTTPS上執行的AEM，包括您可使用的自我簽署憑證。
 
 ## 安裝 Universal Editor 服務 {#install-ue-service}
 
@@ -30,7 +30,7 @@ Universal Editor 服務綁定 Universal Editor 和後端系統。由於官方 Un
 
 [NodeJS 版本 16](https://nodejs.org/en/download/releases)需要執行 Universal Editor 服務的本機副本
 
-Universal Editor 服務由 AEM Engineering 直接分發。請聯絡您在 VIP 計劃中的工程聯絡人，以便取得本機副本。
+Universal Editor 服務由 AEM Engineering 直接分發。請聯絡VIP程式中的工程師以取得本機復本。
 
 工程人員將為您提供 `universal-editor-service.cjs` 檔案。將其儲存至您的本機開發環境中。
 

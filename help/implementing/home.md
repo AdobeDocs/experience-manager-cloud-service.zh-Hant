@@ -3,10 +3,10 @@ title: 實作 Adobe Experience Manager as a Cloud Service
 description: Adobe Experience Manager as a Cloud Service 實作自助資源與文件連結
 landing-page-description: 了解如何自訂您的 Experience Manager as a Cloud Service 部署。
 exl-id: d1e359a0-8a03-4f57-aa9c-cf1d0e9b7d0c
-source-git-commit: 4a5e5f6a105db8f010fb7d49810e2ff2656f253a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '402'
-ht-degree: 100%
+source-wordcount: '404'
+ht-degree: 95%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 100%
 
 | 使用手冊 | 說明 |
 |---|---|
-| [概觀](/help/overview/home.md) | 本指南提供 Experience Manager as a Cloud Service 概觀，包括簡介、術語、架構等等。 |
+| [概觀](/help/overview/home.md) | 本指南提供Experience Manager as a Cloud Service概述，包括簡介、術語、架構等。 |
 | [發行說明](/help/release-notes/home.md) | 本指南提供 Experience Manager as a Cloud Service 最新版本的重要資訊，包括新增、過時和移除的功能，以及已知問題。 |
 | [安全性使用手冊](/help/security/home.md) | 了解 Experience Manager as a Cloud Service 與安全性相關的重要主題。 |
 | [入門歷程](/help/journey-onboarding/overview.md) | 本指南簡單扼要地說明如何開始使用 Experience Manager as a Cloud Service，包括如何取得存取權限和重要的資料保護資訊。 |

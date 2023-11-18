@@ -2,9 +2,9 @@
 title: 變化 — 編寫片段內容（資產 — 內容片段）
 description: 瞭解變數如何可讓您為片段編寫內容，然後根據用途建立該內容的變數，從而使您在AEM中的Headless內容更靈活。
 exl-id: af05aae6-d535-4007-ba81-7f41213ff152
-source-git-commit: 78ead5f15c2613d9c3bed3025b43423a66805c59
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2532'
+source-wordcount: '2530'
 ht-degree: 7%
 
 ---
@@ -79,7 +79,7 @@ ht-degree: 7%
 
 ### 全熒幕編輯器 {#full-screen-editor}
 
-編輯多行文字欄位時，您可以開啟全熒幕編輯器；點選或按一下實際文字，然後選取以下動作圖示：
+編輯多行文字欄位時，您可以開啟全熒幕編輯器；在實際文字中選取，然後選取以下動作圖示：
 
 ![全熒幕編輯器圖示](assets/cfm-variations-03.png)
 

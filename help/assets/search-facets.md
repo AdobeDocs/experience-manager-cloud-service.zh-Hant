@@ -4,9 +4,9 @@ description: 本文說明如何在Experience Manager中建立、修改和使用�
 feature: Search,Metadata
 role: User,Admin
 exl-id: f994c1bf-3f9d-4cb2-88f4-72a9ad6fa999
-source-git-commit: 35d70cd3843b5e0857a24a17746e05072aed7e1b
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2506'
+source-wordcount: '2504'
 ht-degree: 21%
 
 ---
@@ -108,7 +108,7 @@ Adobe Experience Manager資產的企業範圍部署能儲存許多資產。 有�
 1. 執行下列任一項作業：
 
    * 在 **[!UICONTROL 屬性名稱]** 欄位，提及JSON檔案的路徑，您可在此定義選項的節點，並指定對應的索引鍵值配對。
-   * 點選 ![資產新增圖示](assets/do-not-localize/aem_assets_add_icon.png) 在「選項」欄位旁，指定您要在「濾鏡」面板中提供的選項之顯示文字和值。 若要新增其他選項，請點選/按一下 ![資產新增圖示](assets/do-not-localize/aem_assets_add_icon.png) 並重複該步驟。
+   * 點選 ![資產新增圖示](assets/do-not-localize/aem_assets_add_icon.png) 在「選項」欄位旁，指定您要在「濾鏡」面板中提供的選項之顯示文字和值。 若要新增其他選項，請選取 ![資產新增圖示](assets/do-not-localize/aem_assets_add_icon.png) 並重複該步驟。
 
 1. 確保清 **[!UICONTROL 除「單選]** 」，讓使用者一次為檔案類型選取多個選項 (例如影像、檔案、多媒體和封存)。如果您選 **[!UICONTROL 取「單選]**」，使用者一次只能為檔案類型選取一個選項。
 
@@ -145,7 +145,7 @@ Adobe Experience Manager資產的企業範圍部署能儲存許多資產。 有�
 
    ![標籤述詞的一般設定](assets/tags_predicate.png)
 
-1. 在 **[!UICONTROL 說明]** 欄位，輸入選填的說明，然後按一下/點選 **[!UICONTROL 完成]**.
+1. 在 **[!UICONTROL 說明]** 欄位，輸入選擇性說明，然後選取 **[!UICONTROL 完成]**.
 1. 導覽至「搜尋」面板。 此 **[!UICONTROL 標籤]** 述詞會新增至「搜尋」面板。
 1. 指定您要依據其搜尋資產的標籤，或從建議清單中選取。
 1. 選取 **[!UICONTROL 全部符合]** 以搜尋包含您所指定之所有標籤的相符專案。

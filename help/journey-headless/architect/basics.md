@@ -2,10 +2,10 @@
 title: 了解內容模型的基本知識
 description: 了解使用內容片段進行 Headless CMS 內容模型的基本知識。
 exl-id: dc460490-dfc8-4a46-a468-3d03e593447d
-source-git-commit: 87630d9530194fd0c6d88e05a17db108b765ccb6
-workflow-type: ht
-source-wordcount: '903'
-ht-degree: 100%
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
+source-wordcount: '901'
+ht-degree: 98%
 
 ---
 
@@ -130,7 +130,7 @@ AEM 提供以下資料類型用於建立內容模型：
 * 人員
 * 獎項
 
-看起來很簡單，但當然一家公司既有 CEO 又有員工....這些都是人，每一個都被定義為人員。
+看似簡單明瞭，但公司同時有CEO和員工....這些都是人，每一個都被定義為人員。
 
 人員可以獲得一個獎項 (或兩個)。
 

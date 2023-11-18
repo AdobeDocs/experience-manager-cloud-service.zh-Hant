@@ -1,8 +1,8 @@
 ---
 title: 影像的顏色標記
-description: Adobe Experience Manager資產可讓您區分影像中的顏色，並自動將這些差異套用為標籤。 然後，您可以使用這些標籤來搜尋和篩選影像。
+description: Adobe Experience Manager Assets可讓您區分影像中的顏色，並自動將這些差異套用為標籤。 然後，您可以使用這些標籤來搜尋和篩選影像。
 exl-id: 3afa949b-ea1b-4b8e-ac94-06566e2c7147
-source-git-commit: 57d6b50ef5256bf6e8fce84100eed4690b77cb87
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '1220'
 ht-degree: 6%

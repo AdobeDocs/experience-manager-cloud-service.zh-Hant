@@ -4,10 +4,10 @@ description: 瞭解內容片段編輯器如何使用Markdown語法，讓您輕�
 feature: Content Fragments
 role: User
 exl-id: 7a6d4a63-faf8-4e1c-95da-90db2027a2dd
-source-git-commit: ceab75d3592a461478da3250a41ce00b6d4f31ef
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '576'
-ht-degree: 3%
+source-wordcount: '578'
+ht-degree: 7%
 
 ---
 
@@ -17,11 +17,11 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->內容片段是Sites功能，但儲存為 **資產**.
+>內容片段是 Sites 的一項功能，但儲存為&#x200B;**資產**。
 >
->編寫內容片段有兩個編輯器。 本節介紹原始編輯器，主要透過以下網址存取： **資產** 主控台。 請參閱網站檔案， [內容片段 — 製作](/help/sites-cloud/administering/content-fragments/authoring.md)，以取得新編輯器的詳細資訊(主要透過以下網址存取： **內容片段** 主控台)。
+>有兩個編輯器用於編寫內容片段。本節介紹原始編輯器，主要透過以下網址存取： **資產** 主控台。 請參閱網站檔案， [內容片段 — 製作](/help/sites-cloud/administering/content-fragments/authoring.md)，以取得新編輯器的詳細資訊(主要透過以下網址存取： **內容片段** 主控台)。
 
-![Markdown編輯器](/help/assets/content-fragments/assets/cfm-markdown-01.png)
+![Markdown 編輯器](/help/assets/content-fragments/assets/cfm-markdown-01.png)
 
 您可以定義：
 
@@ -37,7 +37,7 @@ ht-degree: 3%
 
 ## 標題標籤法 {#heading-notation}
 
-若要建立標題，請在標題前面放置雜湊標籤(#)。 一個雜湊標籤(#)用於H1，兩個雜湊標籤(##)用於H2等。 您最多可以使用6個雜湊標籤。 例如：
+若要建立標題，請在標題前面放置雜湊標籤(#)。 一個雜湊標籤(#)用於H1，兩個雜湊標籤(##)用於H2，以此類推。 您最多可以使用6個雜湊標籤。 例如：
 
     `## This is an H2`
 

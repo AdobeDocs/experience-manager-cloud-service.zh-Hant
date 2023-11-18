@@ -2,7 +2,7 @@
 title: ContextHub 診斷
 description: ContextHub提供診斷頁面，您可在其中檢視ContextHub架構的概觀
 exl-id: c8d4e160-ea02-49f3-9e31-119445ef5a68
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '438'
 ht-degree: 1%
@@ -15,7 +15,7 @@ ContextHub提供診斷頁面，您可在其中檢視ContextHub架構的概觀。
 
 `http://<host>:<port>/conf/<site>/settings/cloudsettings/default/contexthub.diagnostics.html`
 
-「ContextHub診斷」頁面提供有關已建立的存放區和UI模組、已載入的使用者端程式庫資料夾，以及實用頁面的連結的資訊。
+「ContextHub診斷」頁面提供有關已建立之存放區和UI模組、已載入的使用者端程式庫資料夾以及有用頁面連結的資訊。
 
 >[!NOTE]
 >
@@ -34,14 +34,14 @@ ContextHub提供診斷頁面，您可在其中檢視ContextHub架構的概觀。
 
 模組區段會列出所有已設定的ContextHub UI模組。 清單中的每個專案都包含下列資訊：
 
-* **標題：** 此 [UI模組型別](sample-modules.md) UI模組所根據。
+* **標題：** 此 [UI模組型別](sample-modules.md) UI模組所根據的UI識別碼。
 * **路徑：** 存放設定的存放庫節點的路徑。
 * **resourceType：** 定義UI模組型別的存放庫節點的路徑。
-* **clientlibs：** 已載入且實作UI模組型別的使用者端程式庫的類別。
+* **clientlibs：** 已載入實作UI模組型別的使用者端程式庫的類別。
 
 ## Clientlibs {#clientlibs}
 
-Clientlibs區段會列出所有的 [使用者端資料庫資料夾](/help/implementing/developing/introduction/clientlibs.md) ContextHub已載入。 使用者端程式庫可依下列方式分類：
+Clientlibs區段會列出所有的[使用者端資料庫資料夾](/help/implementing/developing/introduction/clientlibs.md) ContextHub已載入。 使用者端程式庫可依下列方式分類：
 
 * **kernel.js：** 實作ContextHub架構、區段引擎和存放區型別的使用者端資料庫。
 * **ui.js：** 實作ContextHub UI和UI模組型別的使用者端程式庫。
@@ -54,6 +54,6 @@ URL區段包含ContextHub功能的連結：
 * **設定編輯器：** 開啟 [ContextHub設定頁面](configuring-contexthub.md) 您可以在此處設定存放區、UI模式和UI模組。
 * **ContextHub模組的設定：** 開啟 `/etc/cloudsettings/default/contexthub.config.kernel.js` 檔案，其中包含ContextHub存放區設定的JavaScript物件表示。
 * **ContextHub UI的設定：** 開啟 `/etc/cloudsettings/default/contexthub.config.ui.js` 檔案，其中包含ContextHub UI模式設定的JavaScript物件表示。
-* **kernel.js：** 開啟 `/etc/cloudsettings/default/contexthub.kernel.js` 檔案，其中包含實作ContextHub架構、區段引擎和存放區型別的使用者端程式庫原始碼。
+* **kernel.js：** 開啟 `/etc/cloudsettings/default/contexthub.kernel.js` 檔案，其中包含實作ContextHub架構、區段引擎及存放區型別的使用者端程式庫原始碼。
 * **ui.js：** 開啟 `/etc/cloudsettings/default/contexthub.ui.js` 檔案，其中包含實作ContextHub UI和UI模組型別的使用者端程式庫原始碼。
 * **style.css：** 開啟 `/etc/cloudsettings/default/contexthub.styles.css` 檔案，其中包含ContextHub UI和UI模組的CSS樣式。

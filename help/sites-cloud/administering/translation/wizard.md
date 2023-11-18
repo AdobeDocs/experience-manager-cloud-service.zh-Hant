@@ -4,10 +4,10 @@ description: 瞭解如何在AEM中使用語言複製精靈。
 feature: Language Copy
 role: Admin
 exl-id: bf8bdc53-0248-47de-bb9d-c884a7179ab0
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '280'
-ht-degree: 16%
+source-wordcount: '270'
+ht-degree: 15%
 
 ---
 
@@ -21,19 +21,19 @@ ht-degree: 16%
 
 >[!NOTE]
 >
->使用者必須成為以下群組成員： `project-administrators` 群組以建立網站的語言副本。
+>使用者必須是 `project-administrators` 群組以建立網站的語言副本。
 
 若要存取精靈：
 
-1. 在網站主控台中，選取頁面，然後點選或按一下 **建立** 並選取 **語言副本**.
+1. 在網站主控台中，選取頁面並選取 **建立** 並選取 **語言副本**.
 
    ![從精靈建立語言副本](../assets/language-copy-wizard.png)
 
-1. 精靈會開啟並顯示 **選取來源** 步驟可讓您新增/移除頁面。 您也可以選擇包含或排除子頁面。 選取您要包含的頁面，然後點選或按一下 **下一個**.
+1. 精靈會開啟並顯示 **選取來源** 步驟可讓您新增/移除頁面。 您也可以選擇包含或排除子頁面。 選取您要包含的頁面，然後選取 **下一個**.
 
    ![使用精靈新增頁面](../assets/language-copy-wizard-add-pages.png)
 
-1. 此 **設定** 精靈的步驟可讓您新增/移除語言並選取翻譯方法。 點選或按一下&#x200B;**下一步**。
+1. 此 **設定** 精靈的步驟可讓您新增/移除語言並選取翻譯方法。 選取 **下一個**.
 
    ![精靈的設定步驟](../assets/language-copy-wizard-configure.png)
 
@@ -41,7 +41,7 @@ ht-degree: 16%
    >
    >依預設，只有一個翻譯設定。 若要能夠選取其他設定，您必須先設定雲端設定。 另請參閱 [設定翻譯整合框架](integration-framework.md).
 
-1. 在 **Translate** 精靈的步驟您可以選擇僅建立結構、建立新翻譯專案或新增至現有翻譯專案。
+1. 在 **Translate** 精靈的步驟您可以選擇僅建立結構、建立翻譯專案或新增至現有翻譯專案。
 
    >[!NOTE]
    >
@@ -49,6 +49,6 @@ ht-degree: 16%
 
    ![精靈的翻譯步驟](../assets/language-copy-wizard-translate.png)
 
-1. 此 **建立** 按鈕結束精靈。 點選或按一下 **完成** 關閉精靈或 **開啟** 以檢視產生的翻譯專案。
+1. 此 **建立** 按鈕結束精靈。 選取 **完成** 關閉精靈或 **開啟** 以檢視產生的翻譯專案。
 
    ![結束精靈](../assets/language-copy-wizard-done.png)

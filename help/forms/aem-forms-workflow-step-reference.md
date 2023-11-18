@@ -4,9 +4,9 @@ description: 以Forms為中心的工作流程可讓您快速建立最適化Forms
 exl-id: e1403ba6-8158-4961-98a4-2954b2e32e0d
 google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
 keywords: 使用AEM工作流程、使用指派工作步驟、轉換為PDF/A步驟、產生記錄步驟的檔案、使用工作流程、簽署檔案步驟、產生列印輸出步驟、產生非互動式PDF輸出
-source-git-commit: a942e87a33775851631a1fe123fa3e8d2686bb30
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '7446'
+source-wordcount: '7444'
 ht-degree: 0%
 
 ---
@@ -396,7 +396,7 @@ PDF/A是一種用於長期儲存檔案內容的封存格式，透過嵌入字型
 * **[!UICONTROL 簽章程式]**：您可以選擇以循序或平行順序簽署檔案。 依序由一位簽署者一次收到檔案以供簽署。 第一個簽署者完成檔案的簽署後，檔案會傳送給第二個簽署者，依此類推。 多個簽署者可同時以平行順序簽署檔案。
 * **[!UICONTROL 重新導向URL]**：指定重新導向URL。 檔案簽署後，您可以將受指派人重新導向至URL。 此URL通常包含感謝訊息或進一步說明。
 * **[!UICONTROL 工作流程階段]**：工作流程可以有多個階段。 這些階段會顯示在「AEM收件匣」中。 您可以在模型的屬性中定義這些階段( **[!UICONTROL Sidekick]** > **[!UICONTROL 頁面]** > **[!UICONTROL 頁面屬性]** > **[!UICONTROL 階段]**)。
-* **[!UICONTROL 選取收件者]**：指定選擇檔案收件者的方法。 您可以動態地將工作流程指派給使用者或群組，或手動新增收件者的詳細資訊。 在下拉式清單中選取手動時，您會新增收件者詳細資訊，例如電子郵件、角色和驗證方法。
+* **[!UICONTROL 選取收件者]**：指定選擇檔案收件者的方法。 您可以動態地將工作流程指派給使用者或群組，或手動新增收件者的詳細資訊。 當您在下拉式清單中選取手動時，您會新增收件者詳細資訊，例如電子郵件、角色和驗證方法。
 
   >[!NOTE]
   >
@@ -572,7 +572,7 @@ Send a document directly to a printer. It supports the following printing access
 
 * **範本檔案**：指定XDP範本的位置。 這是必填欄位。
 
-* **資料檔案**：指定需要與範本合併的資料xml的位置。
+* **資料檔案**：指定必須與範本合併的資料xml的位置。
 
 ### 輸出檔案 {#output-document}
 

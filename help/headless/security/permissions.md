@@ -3,10 +3,10 @@ title: Headless 內容的權限考量事項
 description: 了解使用 Adobe Experience Manager 進行 Headless 實作時涉及的不同權限和 ACL 考量事項。了解編寫和發佈環境所需的不同角色和可能權限層級。
 feature: Content Fragments,GraphQL API
 exl-id: 3fbee755-2fa4-471b-83fc-3f4bf056267a
-source-git-commit: 526520a8d9d217d0861a7283b10f7b89dffaf9d5
-workflow-type: ht
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
 source-wordcount: '841'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -64,7 +64,7 @@ ht-degree: 100%
 >
 >修改內容片段模型會改變 Headless 應用程式所依賴的基礎 GraphQL API。
 
-如果您想要建立一個可以管理內容片段模型但沒有完全管理員存取權的群組，可以建立具有以下存取控制項目的群組：
+如果您想要建立管理內容片段模型但不是完整管理員存取權的群組，您可以建立具有下列存取控制專案的群組：
 
 | 路徑 | 權限 | 權限 |
 |-----| -------------| ---------|

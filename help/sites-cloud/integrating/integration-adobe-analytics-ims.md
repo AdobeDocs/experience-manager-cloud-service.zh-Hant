@@ -2,9 +2,9 @@
 title: 與 Adobe Analytics 整合時使用的 IMS 設定
 description: 瞭解與Adobe Analytics整合時使用的IMS設定
 exl-id: 12bd1573-373a-4001-be71-c8f155ef6896
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '911'
+source-wordcount: '908'
 ht-degree: 6%
 
 ---
@@ -35,7 +35,7 @@ ht-degree: 6%
 * 您組織的系統管理員應使用Admin Console，將您組織中所需的開發人員新增到相關的產品設定檔。
 
    * 這可讓特定開發人員透過使用Adobe Developer Console來啟用整合。
-   * 如需詳細資訊，請參閱 [管理開發人員](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-developers.ug.html).
+   * 另請參閱 [管理開發人員](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-developers.ug.html).
 
 
 ## 設定IMS設定 — 產生公開金鑰 {#configuring-ims-generating-a-public-key}

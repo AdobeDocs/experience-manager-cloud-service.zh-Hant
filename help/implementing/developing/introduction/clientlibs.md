@@ -2,9 +2,9 @@
 title: 在AEMas a Cloud Service上使用使用者端資料庫
 description: AEM提供使用者端程式庫資料夾，可讓您將使用者端程式碼(clientlibs)儲存在存放庫中、將其組織成類別，以及定義何時及如何將每個類別的程式碼提供給使用者端
 exl-id: 370db625-09bf-43fb-919d-4699edaac7c8
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2552'
+source-wordcount: '2551'
 ht-degree: 1%
 
 ---
@@ -170,7 +170,7 @@ AEM提供數個工具，用於偵錯和測試使用者端程式庫資料夾。
 
 ## 其他Client Library資料夾功能 {#additional-features}
 
-AEM中的使用者端程式庫資料夾支援許多其他功能。 不過，AEMas a Cloud Service上並不要求這些字元，因此不建議使用。 為了完整起見，此處列出它們。
+AEM中的使用者端程式庫資料夾還支援其他幾項功能。 不過，AEMas a Cloud Service上並不要求這些字元，因此不建議使用。 為了完整起見，此處列出它們。
 
 >[!WARNING]
 >
@@ -339,7 +339,7 @@ languageOut (defaults to "ECMASCRIPT5")
 compilationLevel (defaults to "simple") (can be "whitespace", "simple", "advanced")
 ```
 
-如需GCC選項的詳細資訊，請參閱 [GCC檔案](https://developers.google.com/closure/compiler/docs/compilation_levels).
+如需有關GCC選項的詳細資訊，請參閱 [GCC檔案](https://developers.google.com/closure/compiler/docs/compilation_levels).
 
 #### 設定系統預設的迷你器 {#set-system-default-minifier}
 

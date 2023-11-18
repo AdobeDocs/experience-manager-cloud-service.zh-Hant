@@ -3,10 +3,10 @@ title: 建立計畫
 description: 了解如何使用 Cloud Manager 來建立您的第一個計畫。
 role: Admin, User, Developer
 exl-id: ade4bb43-5f48-4938-ac75-118009f0a73b
-source-git-commit: d67c5c9baafb9b7478f1d1c2ad924f5a8250a1ee
-workflow-type: ht
-source-wordcount: '678'
-ht-degree: 100%
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
+source-wordcount: '676'
+ht-degree: 97%
 
 ---
 
@@ -51,7 +51,7 @@ Cloud Manager 計畫代表一組 Cloud Manager 環境。這些計畫支援業務
 
    ![Cloud Manager 登陸頁面](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/cloud-manager-my-programs.png)
 
-1. 從建立計劃精靈中，選取&#x200B;**設定沙箱**，然後提供計劃名稱，並點選或按一下&#x200B;**繼續**。
+1. 從建立計畫精靈中，選擇 **設定沙箱**，然後提供方案名稱並選取「 」 **繼續**.
 
    ![計畫類型建立](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/create-sandbox.png)
 

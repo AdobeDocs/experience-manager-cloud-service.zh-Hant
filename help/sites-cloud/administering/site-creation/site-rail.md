@@ -4,9 +4,9 @@ description: 瞭解網站邊欄的強大功能，協助您輕鬆自訂和管理�
 feature: Administering
 role: Admin
 exl-id: 45785e5a-4fa2-4cf2-a300-f1865f6f5807
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '595'
+source-wordcount: '583'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ ht-degree: 0%
 
 ![下載主題來源](/help/sites-cloud/administering/assets/download-theme-wireframe.png)
 
-點選或按一下 **下載主題來源** 將網站主題的本機副本下載為 `.zip` 檔案進行自訂。
+選取 **下載主題來源** 將網站主題的本機副本下載為 `.zip` 檔案進行自訂。
 
 ## 正在下載範本資源 {#downloading-template-resources}
 
@@ -48,7 +48,7 @@ ht-degree: 0%
 
 ![下載主題來源](/help/sites-cloud/administering/assets/download-theme-wireframe.png)
 
-點選或按一下標題下方的一或多個按鈕 **下載其他範本資源** 下載可用檔案的本機復本。
+選取標題下的一或多個按鈕 **下載其他範本資源** 下載可用檔案的本機復本。
 
 ## 檢視和變更佈景主題版本 {#them-versions}
 
@@ -60,11 +60,11 @@ ht-degree: 0%
 
 主題的目前版本會顯示其認可雜湊及其上次更新的時間戳記。
 
-點選或按一下 **選取版本** 以檢視舊版主題。
+選取 **選取版本** 以檢視舊版主題。
 
 ![選取主題版本](/help/sites-cloud/administering/assets/select-theme-versions.png)
 
-點選或按一下您要變更的版本，然後點選或按一下 **套用** 進行變更。
+選取您要變更的版本，然後選取 **套用** 進行變更。
 
 如果AEM偵測到較新版本的主題已透過前端管道部署但未套用至您的網站，則會顯示通知圖示。
 
@@ -78,7 +78,7 @@ ht-degree: 0%
 
 不過，您可以使用網站邊欄啟用網站的前端管道。
 
-利用站台主控台中顯示的站台邊欄，選取您的站台根以顯示有關站台的主題資訊，然後點選或按一下 **啟用前端管道**.
+在站台主控台中顯示的站台邊欄中，選取您的站台根以顯示有關站台的主題資訊，然後選取「 」 **啟用前端管道**.
 
 ![啟用前端管道](/help/sites-cloud/administering/assets/enable-fep.png)
 

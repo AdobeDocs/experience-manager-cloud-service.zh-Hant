@@ -2,9 +2,9 @@
 title: 為Adobe Experience Manager as a Cloud Service建立無障礙內容（符合WCAG 2.1）
 description: 使用AEMas a Cloud Service協助讓身心障礙人士存取及使用網路內容
 exl-id: 294fd1ed-9b4a-42cb-8f9e-e7a5d7e6930e
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '13861'
+source-wordcount: '13859'
 ht-degree: 3%
 
 ---
@@ -476,7 +476,7 @@ AEM可讓您使用適當的HTML元素，輕鬆建構語義上有意義的網頁�
 
 此外，使用純文字瀏覽器、單色顯示裝置或檢視頁面黑白列印成品的人無法察覺顏色。
 
-進一步考慮因素為 *已選取* 介面元素的狀態（例如索引標籤、切換按鈕等），這些元素需要以顏色和視覺呈現方式以外的其他某種方式傳遞。 對於這類元素，當建立不依賴特定感官的全包容式使用者體驗時，額外使用圖案、形狀和程式化資訊會很有幫助。
+進一步考慮因素為 *已選取* 介面元素的狀態（例如索引標籤、切換按鈕等），這些元素必須以顏色和視覺呈現方式以外的其他某種方式傳遞。 對於這類元素，當建立不依賴特定感官的全包容式使用者體驗時，額外使用圖案、形狀和程式化資訊會很有幫助。
 
 #### 如何達到標準 — 使用顏色(1.4.1) {#how-to-meet-use-of-color}
 
@@ -671,7 +671,7 @@ AEM可讓您使用適當的HTML元素，輕鬆建構語義上有意義的網頁�
 
 [指引2.2充足時間：為使用者提供充足的時間來閱讀及使用內容。](https://www.w3.org/TR/WCAG/#enough-time)
 
-此准則涉及的是，確保使用者有足夠的時間來閱讀內容並採取動作。
+此准則涉及的是，確保使用者有充足的時間進行閱讀和行動。
 
 ### 計時可調(2.2.1)  {#timing-adjustable}
 

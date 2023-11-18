@@ -2,9 +2,9 @@
 title: 元件參考指南
 description: 開發人員參考指南，瞭解元件及其結構的詳細資訊
 exl-id: 45e5265b-39d6-4a5c-be1a-e66bb7ea387d
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '3646'
+source-wordcount: '3642'
 ht-degree: 1%
 
 ---
@@ -55,7 +55,7 @@ ht-degree: 1%
 
 ### 內容邏輯和轉譯標籤  {#content-logic-and-rendering-markup}
 
-您的元件呈現方式 [HTML](https://www.w3schools.com/htmL/html_intro.asp). 您的元件需要定義所需的HTML，以便在製作和發佈環境中取得所需內容，然後視需要轉譯。
+您的元件呈現方式 [HTML](https://www.w3schools.com/htmL/html_intro.asp). 您的元件必須定義取得所需內容所需的HTML，然後視需要在製作和發佈環境中轉譯。
 
 建議將負責標示和轉譯的程式碼，與控制用來選取元件內容的邏輯的程式碼分開。
 
@@ -181,7 +181,7 @@ AEM元件的結構既強大又靈活。 主要部分為：
 | `component.html` | `nt:file` | 這是元件的HTL指令碼檔案。 |
 | `cq:icon` | `String` | 此值指向 [元件的圖示](#component-icon) 和會顯示在「元件瀏覽器」中。 |
 
-如果檢視 **文字** 元件中，我們可以看到許多這些元素：
+如果您檢視 **文字** 元件中，您可以看到幾個元素：
 
 ![文字元件結構](assets/components-text.png)
 
@@ -250,7 +250,7 @@ Content not found
 
 若要建立Widget以用於元件對話方塊，需要您建立Granite UI欄位元件。
 
-如果您將對話方塊視為表單元素的簡單容器，則也可以將對話方塊內容的主要內容視為表單欄位。 建立新表單欄位需要您建立資源型別；這等同於建立新元件。 為協助您完成該工作，Granite UI提供了可供繼承的通用欄位元件(使用 `sling:resourceSuperType`)：
+如果您將對話方塊視為表單元素的簡單容器，則也可以將對話方塊內容的主要內容視為表單欄位。 建立新表單欄位需要您建立資源型別；這等同於建立元件。 為協助您完成該工作，Granite UI提供了可供繼承的通用欄位元件(使用 `sling:resourceSuperType`)：
 
 `/libs/granite/ui/components/coral/foundation/form/field`
 
@@ -441,7 +441,7 @@ Granite UI和Granite UI Widget中的欄位驗證已透過使用 `foundation-vali
 
 ### 偵測對話方塊的可用性 {#dialog-ready}
 
-如果您有自訂JavaScript，只有在對話方塊可用且準備就緒時才需要執行，則應接聽 `dialog-ready` 事件。
+如果您有自訂JavaScript，只有在對話方塊可用且準備就緒時才必須執行，則應接聽 `dialog-ready` 事件。
 
 每當對話方塊載入（或重新載入）並準備就緒可供使用時，即代表每當對話方塊的DOM中有變更（建立/更新）時，就會觸發此事件。
 

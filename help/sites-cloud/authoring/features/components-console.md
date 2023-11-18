@@ -2,9 +2,9 @@
 title: 元件主控台
 description: 元件主控台可讓您瀏覽針對執行個體定義的所有元件
 exl-id: f4949331-5302-46d3-a004-b813bb95ec2f
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '272'
+source-wordcount: '271'
 ht-degree: 18%
 
 ---
@@ -29,7 +29,7 @@ ht-degree: 18%
 
 ### 元件詳細資料 {#component-details}
 
-若要檢視特定元件的詳細資訊，請點選/按一下所需資源。 三個索引標籤提供：
+若要檢視特定元件的詳細資訊，請選取所需資源。 三個索引標籤提供：
 
 * **屬性**
 

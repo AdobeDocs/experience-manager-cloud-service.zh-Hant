@@ -4,9 +4,9 @@ description: 瞭解如何建立最適化表單或將其新增到您的AEM Sites�
 feature: Adaptive Forms, Page Editor, Authoring
 Keywords: AF in Sites editor, af in aem sites, aem sites af, add af to a sites page, af aem sites, af sites, create af in a sites page, adaptive form in aem sites, forms aem sites, add form to a sites page, adaptive forms aem sites, add adaptive forms to aem page, create forms in an aem sites page
 exl-id: a1846c5d-7b0f-4f48-9d15-96b2a8836a9d
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '3209'
+source-wordcount: '3208'
 ht-degree: 20%
 
 ---
@@ -33,7 +33,7 @@ AEM FormsCloud Service提供最適化表單容器和Adaptive Forms — 內嵌元
 如果您過去曾為網站建立最適化Forms基礎元件或純HTML型表單，Adobe建議您使用最適化Forms核心元件在AEM Sites頁面或體驗片段中建立最適化表單。 它可讓您使用AEM Sites頁面的各種功能，例如、版本設定、目標定位、翻譯和多網站管理員，增強最適化Forms的整體表單建立和管理體驗。 讓我們來探索其中的部分功能：
 
 * **版本設定：** AEM Sites頁面選件 [強大的版本設定功能](/help/sites-cloud/authoring/features/page-versions.md)，可讓您追蹤及管理不同版本的表單。 這可讓您變更和增強表單，同時維持必要時回覆至先前版本的能力。 版本設定可確保採用受控且有條理的方式來形成開發和演化。
-* **鎖定目標(與Adobe Target整合)：** 透過AEM Sites頁面鎖定目標功能，您也可以 [為不同受眾個人化表單體驗](/help/sites-cloud/integrating/integration-adobe-target-ims.md). 運用使用者區段和目標定位條件，您可以針對特定使用者群組量身打造表單的內容、設計或行為。 這可讓您提供個人化和相關的表單體驗，提高參與度和轉換率。
+* **鎖定目標(與Adobe Target整合)：** 透過AEM Sites頁面鎖定目標功能，您也可以 [為不同受眾個人化表單體驗](/help/sites-cloud/integrating/integration-adobe-target-ims.md). 透過使用使用者區段和目標定位條件，您可以針對特定使用者群組量身打造表單的內容、設計或行為。 這可讓您提供個人化和相關的表單體驗，提高參與度和轉換率。
 * **翻譯：** AEM Sites [與翻譯服務緊密整合](/help/sites-cloud/administering/translation/overview.md)，讓您輕鬆地將表單翻譯成多種語言。 此功能可簡化本地化程式，確保全球受眾可存取您的表單。 您可以在AEM翻譯專案中有效率地管理翻譯，減少支援多語言表單所需的時間與精力。 如需翻譯的詳細資訊，請參閱考量事項一節。
 * **多網站管理和即時副本：** AEM Sites提供強大的 [多網站管理和即時複製功能](/help/sites-cloud/administering/msm/overview.md)，讓您在單一環境中建立和管理多個網站。 此功能現在可讓您跨不同網站重複使用表單，確保一致性並減少重複工作。 透過集中化控制及管理，您可以有效維護及更新多個網站的表單。
 * **主題：** AEM Sites頁面提供跨多個網頁設計和維護一致視覺樣式的架構。 這些會定義顏色、字型、樣式表及其他視覺元素，這些元素有助於網站的整體外觀和風格。 [您可以將為AEM Sites頁面設計的主題用於最適化表單，以節省時間和精力](/help/sites-cloud/administering/site-creation/site-themes.md#using-site-themes-using-themes).
@@ -188,7 +188,7 @@ AEM FormsCloud Service提供最適化表單容器和Adaptive Forms — 內嵌元
 1. 在轉換為體驗片段變數對話方塊中，設定以下選項的值：
 
    * **動作：** 選取以建立體驗片段或新增到現有的體驗片段。
-   * **父路徑：** 指定要託管體驗片段的資料夾路徑。 選項僅適用於建立新的體驗片段。
+   * **父路徑：** 指定要託管體驗片段的資料夾路徑。 選項僅適用於建立體驗片段。
    * **範本：** 指定體驗片段範本的路徑。 如果您沒有體驗片段範本， [建立它](/help/implementing/developing/extending/experience-fragments.md). 該選項僅可用於將最適化表單新增到現有的體驗片段。
    * **片段標題：** 指定體驗片段的標題。 標題可唯一識別體驗片段
 

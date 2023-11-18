@@ -4,7 +4,7 @@ description: 設定 [!DNL Workfront for Experience Manager enhanced connector]
 role: Admin
 feature: Integrations
 exl-id: d4e1247a-342c-4bc4-83bf-4e4902468fb3
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '1770'
 ht-degree: 1%
@@ -61,7 +61,7 @@ ht-degree: 1%
 ### 連結的資料夾結構設定 {#linked-folder-structure}
 
 1. 前往雲端服務中的專案連結資料夾索引標籤。
-1. 連結資料夾父路徑：在DAM中選取您想要建立連結資料夾的資料夾。 如果留空，其將預設為/content/dam。 請確定Workfront工具中繼資料結構和Workfront連結資料夾中繼資料結構已套用至選取的資料夾。
+1. 連結資料夾父路徑：在DAM中選取您要建立連結資料夾的資料夾。 如果留空，其將預設為/content/dam。 請確定Workfront工具中繼資料結構和Workfront連結資料夾中繼資料結構已套用至選取的資料夾。
 1. 連結的資料夾結構：輸入逗號分隔值。 每個值都應 `DE:<some-project-custom-form-field>`、Portfolio、方案、年份、名稱或某些「常值字串值」（最後一項帶有引號）。 目前設為Portfolio、方案、年、DE：專案型別、名稱。
 1. 如果Workfront中的資料夾標題應包含結構中的所有資料夾，則應核取使用資料夾結構名稱在Workfront中建立連結資料夾標題。 否則，這是最後一個資料夾的標題。
 1. 子資料夾多欄位可讓您指定應建立為連結資料夾的子資料夾的資料夾清單。
@@ -100,7 +100,7 @@ Adobe Workfront檔案與資產之間的中繼資料對應是在AEM中繼資料�
 1. 瀏覽至 **工具** > **資產** > **中繼資料結構**.
 1. 選取您要編輯的中繼資料結構表單，然後按一下 **編輯** 或從頭開始建立中繼資料結構。
 1. 選取您要編輯的中繼資料結構表單欄位，然後選取 **設定** 標籤。
-1. 在 [!DNL Workfront] 自訂表單欄位選取 [!DNL Workfront] 您希望對應到所選AEM屬性的欄位。 可用的選項包括：
+1. 在 [!DNL Workfront] 自訂表單欄位選取 [!DNL Workfront] 要對應到所選AEM屬性的欄位。 可用的選項包括：
 
    * 記錄自訂表單欄位
    * 專案自訂表單欄位
@@ -108,7 +108,7 @@ Adobe Workfront檔案與資產之間的中繼資料對應是在AEM中繼資料�
    * 任務自訂表單欄位
    * 專案概述欄位（ID、名稱、說明或參考編號）
 
-1. 在 [!DNL Workfront] 欄位選取於 [!UICONTROL Workfront自訂表單欄位] 是Workfront使用者預先輸入欄位，您必須指定您要對應的Workfront使用者欄位。 若要這麼做，請勾選「從Workfront參考物件欄位取得值」 ，然後指定 [!UICONTROL Workfront使用者自訂表單欄位] 以從中擷取要對映的值。
+1. 在 [!DNL Workfront] 欄位選取於 [!UICONTROL Workfront自訂表單欄位] 是Workfront使用者預先輸入欄位，您必須指定要對應的Workfront使用者欄位。 若要這麼做，請勾選「從Workfront參考物件欄位取得值」 ，然後指定 [!UICONTROL Workfront使用者自訂表單欄位] 以從中擷取要對映的值。
 
    ![中繼資料對應設定](/help/assets/assets/wf-metadata-mapping-config1.png)
 

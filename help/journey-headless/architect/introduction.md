@@ -2,10 +2,10 @@
 title: AEM as a Headless CMS 內容模型 - 簡介
 description: 介紹使用 Adobe Experience Manager as a Cloud Service as a Headless CMS 的功能為您的專案建立內容模型。
 exl-id: 62061d73-6fdb-440b-a7dd-b0d530d49186
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '748'
-ht-degree: 96%
+source-wordcount: '745'
+ht-degree: 80%
 
 ---
 
@@ -29,14 +29,14 @@ ht-degree: 96%
 
 ![傳統的全堆疊 CMS](/help/journey-headless/developer/assets/full-stack.png)
 
-在全堆疊 CMS 中，所有操控內容的功能都在 CMS 中。系統的功能構成了 CMS 堆疊的不同元件。全堆疊解決方案有很多優點。
+在全棧疊CMS中，操控內容的功能在CMS中。 系統的功能構成了 CMS 堆疊的不同元件。全堆疊解決方案有很多優點。
 
 * 只需維護一個系統。
 * 內容集中管理。
 * 系統的所有服務都是整合在內的。
 * 內容編寫可完美無縫進行。
 
-因此，如果需要新增新管道或支援新類型的體驗，可以將一個 (或多個) 新元件插入至堆疊中，並且只有一個地方可以進行變更。
+因此，如果必須新增新管道或需要支援新型別的體驗，可以將一個（或多個）新元件插入棧疊中，並且只有一個位置可以進行變更。
 
 ![將新管道加入到堆疊](/help/journey-headless/developer/assets/adding-channel.png)
 
@@ -50,15 +50,15 @@ ht-degree: 96%
 
 ![ Headless CMS](/help/journey-headless/developer/assets/headless-cms.png)
 
-取用內容的服務，無論是 AR 體驗、網路商店、行動體驗、漸進式網頁應用程式 (PWA) 等，都從 Headless CMS 取用內容並提供自己的呈現操作。它們負責為您的內容提供自己的頭。
+消費服務，不論是AR體驗、網路商店、行動體驗、漸進式網頁應用程式(PWA)等，都會從Headless CMS擷取內容，並提供各自專屬的轉譯。 它們負責為您的內容提供自己的頭。
 
 省略頭可消除複雜性來簡化 CMS。這樣做也會將呈現內容的責任轉移到實際需要內容並且通常更適合執行呈現的服務。
 
 ## 內容模型 {#content-modeling}
 
-內容模型 (也稱為資料模型) 是您的專長，那麼在建立 Headless 模型時需要考慮什麼？
+內容模型（也稱為資料模型）是您的專長，所以為Headless建模時必須考慮什麼？
 
-要讓 Headless 應用程式能夠存取內容並對內容進行一些處理，內容確實需要具有預先定義的結構。您的內容可以採用自由格式，但會使應用程式&#x200B;*十分*&#x200B;不便。
+若要讓Headless應用程式能夠存取您的內容並據以採取行動，內容必須具備預先定義的結構。 您的內容可以採用自由格式，但會使應用程式&#x200B;*十分*&#x200B;不便。
 
 對於 AEM，作為內容架構師，您將執行內容模型以設計一系列&#x200B;**內容片段模型**。這些定義了內容作者建立保留內容的&#x200B;**內容片段**&#x200B;時使用的結構。
 

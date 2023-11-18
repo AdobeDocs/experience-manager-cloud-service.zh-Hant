@@ -5,9 +5,9 @@ uuid: ffeba886-9b24-4ed1-95c0-e19356ff2f23
 products: SG_EXPERIENCEMANAGER/FORMS
 topic-tags: author
 exl-id: dc89ecb1-2d9e-4d1d-b85b-af90c550e7d8
-source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '728'
+source-wordcount: '726'
 ht-degree: 9%
 
 ---
@@ -76,7 +76,7 @@ ht-degree: 9%
    * **範本訊息：** 指定載入簽章PDF時要顯示的訊息。 Adobe Sign服務需要一些時間準備和載入簽名PDF。
    * **簽署服務：** 選取 **草寫簽名** 選項。
 
-   * **CSS類別**：指定使用者端程式庫的CSS類別（如有）。 建議使用 [主題](themes.md) 和 [內嵌樣式](inline-style-adaptive-forms.md) 而非CSS類別。
+   * **CSS類別**：指定使用者端程式庫的CSS類別（如有）。 Adobe建議使用 [主題](themes.md) 和 [內嵌樣式](inline-style-adaptive-forms.md) 而非CSS類別。
 
    點選「完成」 ![aem_forms_save](assets/aem_forms_save.png) 圖示以儲存變更。 已成功設定簽章。
 

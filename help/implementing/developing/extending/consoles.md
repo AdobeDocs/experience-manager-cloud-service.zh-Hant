@@ -2,10 +2,10 @@
 title: 自訂主控台
 description: 了解 AEM 提供哪些不同的選項，讓您可自訂編寫執行個體的主控台。
 exl-id: 832f9a86-07c4-4229-a0dc-8ad50a8195b0
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '546'
-ht-degree: 100%
+source-wordcount: '525'
+ht-degree: 92%
 
 ---
 
@@ -17,7 +17,7 @@ AEM 會提供選項，讓您自訂編寫執行個體的主控台 (以及[頁面�
 
 Clientlib 可讓您擴充預設實作以提供新功能，同時會重複使用標準函數、物件和方法。使用 clientlibs 進行自訂時，您可以在 `/apps.` 下面建立自己的 clientlib，例如，clientlib 可以為您的自訂元件保留所需的程式碼。
 
-如需有關 clientlibs 的更多詳細資料，請參閱文件[「在 AEM as a Cloud Service 上使用用戶端資料庫」。](/help/implementing/developing/introduction/clientlibs.md)
+另請參閱 [在AEMas a Cloud Service上使用使用者端資料庫](/help/implementing/developing/introduction/clientlibs.md).
 
 ## 覆蓋 {#overlays}
 
@@ -25,11 +25,11 @@ Clientlib 可讓您擴充預設實作以提供新功能，同時會重複使用�
 
 覆蓋可用於多種方式，以擴充您的 AEM 主控台。以下章節會提供幾個範例。
 
-如需有關覆蓋的更多資訊，請參閱文件[「適用於 Adobe Experience Manager as a Cloud Service 的覆蓋」。](/help/implementing/developing/introduction/overlays.md)
+另請參閱 [Adobe Experience Manager as a Cloud Service的覆蓋圖](/help/implementing/developing/introduction/overlays.md).
 
 >[!TIP]
 >
->如果您有興趣了解有哪些自訂編寫體驗的選項，請參閱文件[「自訂頁面編寫」。](/help/implementing/developing/extending/page-authoring.md)
+>如果您對自訂編寫體驗的選項感興趣，請參閱 [自訂頁面製作](/help/implementing/developing/extending/page-authoring.md).
 
 ## 自訂主控台的預設檢視 {#customizing-the-default-view-for-a-console}
 
@@ -117,4 +117,4 @@ Clientlib 可讓您擴充預設實作以提供新功能，同時會重複使用�
 
 使用主控台時，使用者經常必須從頁面、元件或資產等資源中進行選取。這可能會採取清單的形式，作者必須從中選擇一個項目。
 
-若要將清單保持為合理的大小並且和使用案例相關，可以以自訂述詞的形式實作篩選器。如需詳細資料，請參閱文件「[自訂頁面編寫](/help/implementing/developing/extending/page-authoring.md#filtering-resources)」。
+若要將清單保持為合理的大小並且和使用案例相關，可以以自訂述詞的形式實作篩選器。另請參閱 [自訂頁面製作](/help/implementing/developing/extending/page-authoring.md#filtering-resources) 以取得詳細資訊。

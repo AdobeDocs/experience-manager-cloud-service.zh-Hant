@@ -2,9 +2,9 @@
 title: 編輯頁面內容
 description: 建立頁面後，您可以編輯內容以進行所需的更新
 exl-id: 8af0f621-14e8-4605-a51a-a3be21f19092
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2975'
+source-wordcount: '2973'
 ht-degree: 6%
 
 ---
@@ -341,7 +341,7 @@ ht-degree: 6%
 
    ![頁面元件的元件工具列](/help/sites-cloud/authoring/assets/editing-layout-toolbar.png)
 
-   按一下或點選 **版面** 調整元件版面的動作。
+   選取 **版面** 調整元件版面的動作。
 
    ![元件工具列的「配置」按鈕](/help/sites-cloud/authoring/assets/editing-component-toolbar-layout.png)
 

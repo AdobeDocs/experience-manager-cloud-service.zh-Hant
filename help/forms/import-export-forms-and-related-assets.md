@@ -1,9 +1,9 @@
 ---
 title: 如何將資產匯入及匯出至 [!DNL AEM Forms]？
 description: 瞭解如何搭配最適化表單使用DocuSign來收集電子簽章。
-source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1325'
+source-wordcount: '1322'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ ht-degree: 0%
 1. 選取表單資產，然後點選 **[!UICONTROL 下載]** 圖示。
 1. 在「下載資產」中，選擇下列其中一個選項，然後點選 **[!UICONTROL 下載]**.
 
-   * **下載為CRX套件：** 使用選項從下載並移動所有選取的資產和相關相依性 [!DNL AEM Forms] 執行個體到另一個。 它會將所有資產和資料夾下載為CRX套件。 任何表單資產，包括在AEM (Adaptive Forms和Adaptive Form片段)、PDF檔案和資源（XSD、XFS、影像）中創作的表單，都可透過以下套件下載： [!DNL AEM Forms] UI。
+   * **下載為CRX套件：** 使用選項從下載並移動所有選取的資產和相關相依性 [!DNL AEM Forms] 執行個體到另一個。 它會將所有資產和資料夾下載為CRX套件。 任何表單資產，包括在AEM (Adaptive Forms和Adaptive Form片段)、PDF檔案和資源（XSD、XFS、影像）中編寫的表單，都可從以下來源以套件下載： [!DNL AEM Forms] UI。
 以封裝形式下載資產的優點是，它也能下載所選要下載的資產所使用的資產。 例如，如果您有使用表單範本、XSD和影像的最適化表單。 當您選取此最適化表單並將其下載為套件時，下載的套件也包含表單範本、XSD和影像。 也會下載與資產相關聯的所有中繼資料屬性（包括自訂屬性）。
 
    * **將資產下載為二進位檔案：** 使用選項僅下載表單範本(XDP)、PDF forms(PDF)、檔案(PDF)和資源（影像、結構描述、樣式表）。 您可以使用外部應用程式編輯這些資產。 它會將具有二進位檔(例如XSD、XDP、影像、PDF和XDP)的表單資產下載為.zip檔案。

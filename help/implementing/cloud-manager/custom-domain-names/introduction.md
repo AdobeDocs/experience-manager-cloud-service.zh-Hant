@@ -2,10 +2,10 @@
 title: 自訂網域名稱簡介
 description: Cloud Manager 的 UI 可讓您新增自訂網域，以自助服務方式使用唯一的品牌名稱識別您的網站。
 exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '757'
-ht-degree: 100%
+source-wordcount: '753'
+ht-degree: 96%
 
 ---
 
@@ -46,7 +46,7 @@ AEM as a Cloud Service 提供內建的內容傳遞網路 (CDN) 服務，但也�
 
 ## 工作流程 {#workflow}
 
-新增自訂網域名稱需要 DNS 服務和 Cloud Manager 互動。因此，安裝、設定和驗證自訂網域名稱需要執行許多步驟。下表概觀了所需的步驟，包括發生常見錯誤時應採取的措施。
+新增自訂網域名稱需要 DNS 服務和 Cloud Manager 互動。因此，安裝、設定和驗證自訂網域名稱需要執行幾個步驟。 下表概觀了所需的步驟，包括發生常見錯誤時應採取的措施。
 
 | 步驟 | 說明 | 責任 | 了解更多 |
 |--- |--- |--- |---|
@@ -66,7 +66,7 @@ AEM as a Cloud Service 提供內建的內容傳遞網路 (CDN) 服務，但也�
 
 ## 限制 {#limitations}
 
-搭配 AEMaaCS 使用自訂網域名稱有幾項限制。
+搭配AEMaaCS使用自訂網域名稱有幾項限制。
 
 * Cloud Manager 支援自訂網域名稱用於 Sites 計畫的發佈和預覽服務。不支援編寫服務的自訂網域。
 * 每個 Cloud Manager 環境最多可以託管 500 個自訂網域。

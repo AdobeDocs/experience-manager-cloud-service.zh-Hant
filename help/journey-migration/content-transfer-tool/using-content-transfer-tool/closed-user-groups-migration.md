@@ -4,9 +4,9 @@ description: 瞭解將內容移轉至Adobe Experience Manager as a Cloud Service
 hide: true
 hidefromtoc: true
 exl-id: f62ed751-d5e2-4a01-8910-c844afab5733
-source-git-commit: 0109cea1be85e647fb6c04dde4714b162bdc75a5
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '462'
+source-wordcount: '461'
 ht-degree: 9%
 
 ---
@@ -45,5 +45,5 @@ ht-degree: 9%
 1. 請確定CUG原則中使用的每個群組，在移轉後都存在於發佈上。
    - 如果移轉內容的ACL中包含群組，則群組可能存在。
    - 如果沒有，請使用套件將其安裝在目的地執行個體上（或在那裡手動建立），並啟動它及其成員。 然後確認它存在於Publish上。
-1. 重新發佈與CUG原則相關聯的所有頁面，例如先編輯頁面，以確保發佈該頁面。 請務必重新發佈所有這些。
+1. 重新發佈與CUG原則相關聯的所有頁面，例如先編輯頁面，以確保發佈該頁面。 請務必將其全部重新發佈。
    - 重新發佈所有頁面後，請確認每個受CUG保護頁面的功能。

@@ -2,9 +2,9 @@
 title: 樣式系統
 description: 樣式系統可讓範本作者在元件的內容原則中定義樣式類別，讓內容作者在編輯頁面上的元件時能夠選取這些類別。 這些樣式可作為元件的替代視覺變體，使其更靈活。
 exl-id: 224928dd-e365-4f3e-91af-4d8d9f47efdd
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1319'
+source-wordcount: '1317'
 ht-degree: 2%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 2%
 
 ## 使用案例 {#use-case}
 
-範本作者不僅需要設定元件如何為內容作者運作，還需要設定元件的許多替代視覺變體。
+範本作者不僅需要為內容作者設定元件運作方式的能力，還需要設定元件的數個替代視覺變數。
 
 同樣地，內容作者不僅需要建構和排列其內容的能力，還需要選取視覺呈現的方式。
 
@@ -60,10 +60,10 @@ ht-degree: 2%
 
 下列章節 [作為內容作者](#as-a-content-author) 和 [作為範本作者](#as-a-template-author) 說明如何使用WKND的樣式系統來測試樣式系統的功能。
 
-如果您希望對自己的元件使用「樣式系統」，請執行下列動作：
+如果您想要針對自己的元件使用「樣式系統」，請執行下列動作：
 
 1. 依照一節所述以使用者端程式庫形式安裝CSS [概觀](#overview).
-1. 依照一節中的說明，設定您想要讓內容作者使用的CSS類別 [作為範本作者](#as-a-template-author).
+1. 依照一節中的說明，設定您要讓內容作者可以使用的CSS類別 [作為範本作者](#as-a-template-author).
 1. 然後，內容作者就可以使用區段所述的樣式 [作為內容作者](#as-a-content-author).
 
 ### 作為內容作者 {#as-a-content-author}
@@ -73,7 +73,7 @@ ht-degree: 2%
 
    ![作者的樣式系統](/help/sites-cloud/authoring/assets/style-system-author1.png)
 
-1. 點選或按一下 **樣式** 「 」工具列上的按鈕 **清單** 元件以開啟樣式選單並變更元件的外觀。
+1. 選取 **樣式** 「 」工具列上的按鈕 **清單** 元件以開啟樣式選單並變更元件的外觀。
 
    ![選取樣式](/help/sites-cloud/authoring/assets/style-system-author2.png)
 
@@ -83,7 +83,7 @@ ht-degree: 2%
 
 ### 作為範本作者 {#as-a-template-author}
 
-1. 編輯WKND的英文主版首頁時 `http://<host>:<port>/sites.html/content/wknd/language-masters/en`，透過編輯頁面的範本 **頁面資訊 — >編輯範本**.
+1. 編輯WKND的英文主版首頁時 `http://<host>:<port>/sites.html/content/wknd/language-masters/en`，透過編輯頁面的範本 **頁面資訊>編輯範本**.
 
    ![編輯範本](/help/sites-cloud/authoring/assets/style-system-edit-template.png)
 
@@ -159,4 +159,4 @@ ht-degree: 2%
 
 這種定義樣式名稱的功能對於一般元件（例如佈局容器或內容片段元件）非常有用，可為它們提供額外的含義。
 
-例如，這可讓配置容器獲得如之類的語意 `<main>`， `<aside>`， `<nav>`等
+例如，這可讓配置容器獲得如之類的語意 `<main>`， `<aside>`， `<nav>`、等等。

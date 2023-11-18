@@ -6,7 +6,7 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: cde9523e-5409-4edd-af0f-2c2575cc22ea
-source-git-commit: 867b87e0b22fdc4f0466b517e8a04c18fb2dc860
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '3172'
 ht-degree: 3%
@@ -168,13 +168,13 @@ ht-degree: 3%
 
    如果 **[!UICONTROL Adobe Sign Cloud Service]** 清單是空的，請遵循 [設定 [!DNL Adobe Sign] 替換為 [!DNL AEM Forms]](adobe-sign-integration-adaptive-forms.md) 文章以設定服務。
 
-   下拉式清單列出存在於以下專案中的Cloud Service： `global` 「工具」 > **[!UICONTROL Cloud Service]** > **[!UICONTROL Adobe Sign]**. 此外，下拉式清單也會列出您在所選資料夾中存在的Cloud Service。 **[!UICONTROL 設定容器]** 欄位建立最適化表單時。
+   下拉式清單會列出以下專案中存在的Cloud Service： `global` 「工具」 > **[!UICONTROL Cloud Service]** > **[!UICONTROL Adobe Sign]**. 此外，下拉式清單也會列出您在檔案夾中選取的Cloud Service。 **[!UICONTROL 設定容器]** 欄位建立最適化表單時。
 
 1. 從中選擇簽署順序 **[!UICONTROL 收件者可以完成]** 對話方塊。 收件者可以簽署最適化表單 **[!UICONTROL 循序方式]**  — 一個接一個的收件者，或 **[!UICONTROL 同時]**  — 使用任何順序。
 
    收件者會依序一次收到一個Adobe Sign合約。 收件者完成指派的動作後，協定會傳送給下一個收件者，依此類推。
 
-   所有收件者都會同時收到Adobe Sign合約，並可互相平行採取行動。
+   所有收件者都會同時收到Adobe Sign合約，且可互相平行動作。
 
 1. 使用「合約識別碼」欄位，將繫結與合約識別碼(agreementId)相關聯。 它會將合約ID新增至結構描述型表單提交資料的afBoundData區段。 合約ID也會新增至所有啟用Adobe Sign之表單的已提交資料中的afSubmissionInfo區段。 您可以使用協定ID來使用自訂程式碼追蹤協定狀態（需要自訂實施）。
 
@@ -286,7 +286,7 @@ Adobe Sign合約ID (agreementId)包含在最適化表單的提交資料中。 �
 <!-- Remove when forms portal goes live
 >[!NOTE]
 >
->Data of the Adaptive Form is stored temporarily on Forms Portal. It is recommended to use [custom storage for Forms Portal](/help/forms/using/configuring-draft-submission-storage.md). It ensures that the PII (personally identifiable information) data is not stored on AEM servers. 
+>Data of the Adaptive Form is stored temporarily on Forms Portal. Adobe recommends using [custom storage for Forms Portal](/help/forms/using/configuring-draft-submission-storage.md). It ensures that the PII (personally identifiable information) data is not stored on AEM servers. 
 -->
 
 您的表單簽署體驗已準備就緒。 您可以預覽表單以驗證簽名體驗。 在已發佈的表單上， [!DNL Adobe Sign] 收件者收到透過電子郵件簽署的表單時，會顯示封鎖欄位。 當 **[!UICONTROL 收件者與填表人何時相同？]** 選項標示為「是」且符合條件，使用者在提交後會重新導向至Adobe Sign合約，使用者可以立即簽署檔案，不必等待合約出現在電子郵件上。

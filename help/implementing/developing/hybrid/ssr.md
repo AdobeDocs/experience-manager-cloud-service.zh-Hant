@@ -2,9 +2,9 @@
 title: SPA和伺服器端轉譯
 description: 在SPA中使用伺服器端轉譯(SSR)可以加速頁面的初始載入，然後將進一步的轉譯傳遞給使用者端。
 exl-id: be409559-c7ce-4bc2-87cf-77132d7c2da1
-source-git-commit: 66c9e95f96c8ce181722488a34a175c80f6f917c
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1518'
+source-wordcount: '1517'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,7 @@ SSR通常會在下列任一問題明確為「是」時提供某些值：
 
 >[!NOTE]
 >
->Cloud Manager不支援部署至Adobe I/O Runtime。 因此，您需要設定自己的基礎架構，才能將SSR程式碼部署至Adobe I/O Runtime。
+>Cloud Manager不支援部署至Adobe I/O Runtime。 因此，您必須設定自己的基礎結構，將SSR程式碼部署至Adobe I/O Runtime。
 
 ## 遠端轉譯器設定 {#remote-content-renderer-configuration}
 

@@ -2,9 +2,9 @@
 title: 索引轉換器
 description: 瞭解如何移轉索引定義，為移動至AEMas a Cloud Service做準備。
 exl-id: ac02ca41-eb35-4f24-bf17-d00ce318423d
-source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '290'
+source-wordcount: '288'
 ht-degree: 1%
 
 ---
@@ -34,7 +34,7 @@ Index Converter是用來移轉客戶的索引定義的公用程式，為移轉�
 
 ## 使用索引轉換器 {#using-index-converter}
 
-* 透過Adobe I/OCLI ：建議透過以下方式使用索引轉換器： `aio-cli-plugin-aem-cloud-service-migration` (適用於Adobe I/OCLI的AEMas a Cloud Service程式碼重構外掛程式)。
+* 透過Adobe I/OCLI ：Adobe建議透過以下方式使用索引轉換器： `aio-cli-plugin-aem-cloud-service-migration` (適用於Adobe I/OCLI的AEMas a Cloud Service程式碼重構外掛程式)。
 
   另請參閱 **[Git資源： aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#introduction)** 以瞭解如何安裝及使用外掛程式。
 

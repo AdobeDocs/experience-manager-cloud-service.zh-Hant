@@ -2,10 +2,10 @@
 title: AEM Headless 內容架構師歷程
 description: 從這裡開始，此歷程會逐步引導您了解 AEM 強大且靈活的 Headless 特性、其功能，以及如何在您的第一個 Headless 專案中建立內容模型。
 exl-id: ccfec100-8005-4f47-b5b6-ca188b35315c
-source-git-commit: 94e5d0e84d5c55d0ff61a705e079b4dc8e32a777
-workflow-type: ht
-source-wordcount: '802'
-ht-degree: 100%
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
+source-wordcount: '797'
+ht-degree: 91%
 
 ---
 
@@ -29,7 +29,7 @@ Headless 實作放棄了全堆疊解決方案中的傳統頁面和元件管理�
 
 ## AEM 文件歷程 {#documentation-journeys}
 
-[文件歷程](/help/journey-documentation/documentation-journeys.md)提供敘述來協助剛開始使用 AEM 的讀者，讓他們能從頭到尾理解和解決業務問題，同時將採用的先前主題或 AEM 知識降至最低，藉以連結許多不同且複雜的主題和功能。
+[檔案歷程](/help/journey-documentation/documentation-journeys.md) 藉由提供敘述來協助剛開始使用AEM的讀者，讓他們能從頭到尾理解和解決業務問題，同時將採用的先前主題或AEM知識降至最低，藉以連結許多不同、複雜的主題和功能。
 
 文件歷程根據最佳做法原則而設計，其中包含 Adobe 的最新研究、Adobe 顧問的成熟實作經驗以及客戶專案的意見回饋。
 
@@ -41,7 +41,7 @@ Headless 實作放棄了全堆疊解決方案中的傳統頁面和元件管理�
 
 此歷程從內容架構師的角度闡述 AEM Headless 專案的要求、步驟和方法。此歷程將定義內容架構師必須與之互動專案才能成功的其他角色，但歷程是以內容架構師的角度出發。
 
-此歷程提供的資訊當然對其他角色有用，但某些資訊對某些角色來說是多餘的。請密切注意即將到來、涵蓋其他角色的歷程。
+此歷程中的資訊對其他角色可能有用，但有些資訊對特定角色來說是多餘的。 請密切注意即將到來、涵蓋其他角色的歷程。
 
 ## Headless 內容架構師歷程 {#the-journey}
 
@@ -64,7 +64,7 @@ Headless 實作放棄了全堆疊解決方案中的傳統頁面和元件管理�
 
 文件歷程會透過敘述方式，指導您完成複雜的相關流程和功能，向您展示 AEM 如何解決業務問題。此歷程說明了多個功能如何共同運作以解決單一業務需求。
 
-因為這樣的歷程是設計成獨立的。然而，其中一些可以相互關聯。查看這些額外的歷程，進一步了解 AEM 的強大功能如何協同工作。
+因為這樣的歷程是設計成獨立的。但是，其中幾個可以相互關聯。 查看這些額外的歷程，進一步了解 AEM 的強大功能如何協同工作。
 
 * [AEM Headless 翻譯歷程](/help/journey-headless/translation/overview.md) - 此文件歷程讓您對 Headless 技術、AEM 如何提供 Headless 內容以及如何翻譯它，有廣泛的了解。
 * [Headless 編寫歷程](/help/journey-headless/author/overview.md) - 從這裡開始，此歷程會逐步引導您了解 AEM 強大且靈活的 Headless 特性、其功能，以及如何在您的第一個 Headless 專案中建立內容模型。

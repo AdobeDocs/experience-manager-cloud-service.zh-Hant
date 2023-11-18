@@ -2,10 +2,10 @@
 title: Adobe Experience Manager as a Cloud Service 架構簡介
 description: Adobe Experience Manager as a Cloud Service 架構簡介。
 exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
-source-git-commit: b610de53d1bd1b120a2642336aac1713444bfd3e
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '2665'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -176,7 +176,7 @@ AEM 專案的程式碼和設定會儲存在程式碼存放庫中；進行變更�
    * 用於儲存 AEM 製作層和發佈層的伺服器端 Java 程式碼和 OSGI 設定。
 * AEM 前端：
    * 用於儲存 AEM 製作和發佈層的用戶端 JS、CSS 和 HTML 程式碼。
-如需更多有關 clientlibs 的詳細資料，請參閱[在 AEM as a Cloud Service 上使用用戶端資料庫](/help/implementing/developing/introduction/clientlibs.md)。
+如需有關clientlibs的詳細資訊，請參閱 [在AEMas a Cloud Service上使用使用者端資料庫。](/help/implementing/developing/introduction/clientlibs.md)
 * AEM Web 層：
    * 儲存 AEM 發佈層的 Dispatcher 設定檔案。
 * AEM 設定：

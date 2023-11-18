@@ -2,9 +2,9 @@
 title: 為 Screens as a Cloud Service 開發自訂元件
 description: 下列教學課程將逐步說明為AEM Screens建立自訂元件的步驟。 AEM Screens會重複使用其他AEM產品的許多現有設計模式與技術。 本教學課程著重說明針對AEM Screens進行開發時的差異和特殊考量事項。
 exl-id: fe8e7bf2-6828-4a5a-b650-fb3d9c172b97
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2106'
+source-wordcount: '2105'
 ht-degree: 3%
 
 ---
@@ -77,7 +77,7 @@ Screens專案的原始程式碼通常會作為多模組Maven專案來管理。 �
    * `/content/dam/we-retail-run`
    * `/content/screens/we-retail-run`
 
-   此套件包含專案所需的起始內容和設定結構。 **`/conf/we-retail-run`** 包含We.Retail Run專案的所有設定。 **`/content/dam/we-retail-run`** 包括開始專案的數位資產。 **`/content/screens/we-retail-run`** 包含Screens內容結構。 所有這些路徑下的內容主要是在AEM中更新。 為了提高環境（本機、開發、舞台、生產）之間的一致性，通常會將基本內容結構儲存在原始檔控制中。
+   此套件包含專案所需的起始內容和設定結構。 **`/conf/we-retail-run`** 包含We.Retail Run專案的所有設定。 **`/content/dam/we-retail-run`** 包括開始專案的數位資產。 **`/content/screens/we-retail-run`** 包含Screens內容結構。 這些路徑下的內容主要是在AEM中更新。 為了提高環境（本機、開發、舞台、生產）之間的一致性，通常會將基本內容結構儲存在原始檔控制中。
 
 1. **導覽至「AEM Screens > We.Retail Run」專案：**
 
@@ -125,7 +125,7 @@ AEM Screens有一些有趣的限制，不適用於傳統WCM Sites元件。
    <!--/* production: preview authoring mode + unspecified mode (that is, on publish) */-->
    <sly data-sly-test.production="${wcmmode.preview || wcmmode.disabled}" data-sly-include="production.html" />
    
-   <!--/* edit: any other authoring mode, that is, edit, design, scaffolding, etc. */-->
+   <!--/* edit: any other authoring mode, that is, edit, design, scaffolding, and so on. */-->
    <sly data-sly-test="${!production}" data-sly-include="edit.html" />
    ```
 

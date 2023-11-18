@@ -2,9 +2,9 @@
 title: 自訂程式碼品質規則
 description: 本頁說明了 Cloud Manager 在程式碼品質測試過程中執行的自訂程式碼品質規則。它們是根據 Adobe Experience Manager Engineering 的最佳實務。
 exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
-source-git-commit: a62312954db0631cf594a27db36bab8a2441360f
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '4097'
+source-wordcount: '4095'
 ht-degree: 87%
 
 ---
@@ -542,7 +542,7 @@ AEM應用程式經常使用HTTP通訊協定聯絡其他應用程式，而Apache 
 
 此規則會檢查這種HttpClient物件在方法內是否不是私人，而是在類別層級上是否為全域，以便可以重複使用。 在這種情況下，httpClient欄位應在類別的建構函式中設定，或 `activate()` 方法（如果此類別是OSGi元件/服務）。
 
-另請檢視 [Optimization指南](https://hc.apache.org/httpclient-legacy/performance.html) HttpClient的使用說明，以瞭解使用HttpClient的一些最佳作法。
+檢查 [Optimization指南](https://hc.apache.org/httpclient-legacy/performance.html) HttpClient的使用說明，以瞭解使用HttpClient的一些最佳作法。
 
 #### 不符合規範的程式碼 {#non-compliant-code-14}
 

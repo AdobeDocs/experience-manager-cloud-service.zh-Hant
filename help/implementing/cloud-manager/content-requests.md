@@ -2,9 +2,9 @@
 title: 了解雲端服務內容請求
 description: 如果您已向Adobe購買內容請求授權，請瞭解Adobe Experience Cloud as a Service測量的內容請求型別，以及組織與分析報告工具的差異。
 exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
-source-git-commit: dc01da4c85b37f21deb169b941c0cf2a958298b8
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1164'
+source-wordcount: '1162'
 ht-degree: 10%
 
 ---

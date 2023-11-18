@@ -4,10 +4,10 @@ description: 了解如何使用 AEM 強大的 Live Copy 和多網站管理員功
 feature: Multi Site Manager
 role: Admin
 exl-id: 22b4041f-1df9-4189-8a09-cbc0c89fbf2e
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2714'
-ht-degree: 100%
+source-wordcount: '2702'
+ht-degree: 97%
 
 ---
 
@@ -32,7 +32,7 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->MSM 也可用於 Assets，包括內容片段。如需進一步的詳細資訊，請參閱[使用 MSM for Assets 重複使用內容片段](/help/assets/reuse-assets-using-msm.md) (只能透過 Assets 主控台使用)。
+>MSM 也可用於 Assets，包括內容片段。另請參閱 [使用MSM對資產重複使用內容片段](/help/assets/reuse-assets-using-msm.md) （只能透過「資產」主控台使用）。
 
 ## 可能的案例 {#possible-scenarios}
 
@@ -106,7 +106,7 @@ MSM 和 Live Copy 有很多使用案例。部分案例包括：
   >
   >對比：
   >
-  >* 有多少個別副本需要調整。
+  >* 必須調整的個別副本數量。
 
 ## 從 UI 存取 MSM {#msm-from-the-ui}
 
@@ -172,7 +172,7 @@ MSM 可以使用相關主控台的各種選項直接在 UI 中存取 MSM。
 
 >[!TIP]
 >
->如需物件名稱，請參閱文件「[擴充多網站管理員](/help/implementing/developing/extending/msm.md#overview-of-the-java-api)」。
+>另請參閱 [擴充多站點管理員](/help/implementing/developing/extending/msm.md#overview-of-the-java-api) 物件名稱。
 
 ## Live Copy {#live-copies}
 
@@ -278,7 +278,7 @@ Live Copy 的來源可以是一般頁面或藍圖設定所包含的頁面。兩�
 推出設定定義 Live Copy 何時以及如何與來源內容同步。推出設定由觸發器和一個或多個同步動作組成：
 
 * **觸發器** - 觸發器是導致即時動作同步發生的事件，例如啟動來源頁面。MSM 定義了您可以使用的觸發器。
-* **同步動作** - 在 Live Copy 上執行同步動作以將其與來源同步。範例動作包括複製內容、排序子節點和啟動 Live Copy 頁面。MSM 提供了許多同步動作。
+* **同步動作** - 在 Live Copy 上執行同步動作以將其與來源同步。範例動作包括複製內容、排序子節點和啟動 Live Copy 頁面。MSM提供數個同步動作。
 
 >[!NOTE]
 >
@@ -296,7 +296,7 @@ Live Copy 中的每個頁面和元件都透過即時關係與其來源頁面和�
 
 您可以&#x200B;**暫停** Live Copy 頁面的 Live Copy 繼承，以便您可以變更頁面屬性和元件。當您暫停繼承時，頁面屬性和元件將不再與來源同步。
 
-在編輯個別頁面時，作者可以為元件&#x200B;**取消繼承**。取消繼承後，即時關係會暫停，該元件將不會進行同步。當需要自訂內容的子部分時，取消繼承和同步很有用。
+在編輯個別頁面時，作者可以為元件&#x200B;**取消繼承**。取消繼承後，即時關係會暫停，該元件將不會進行同步。當必須自訂內容的子區段時，取消繼承和同步會很有用。
 
 ### 分離 Live Copy {#detaching-a-live-copy}
 
@@ -319,7 +319,7 @@ Live Copy 中的每個頁面和元件都透過即時關係與其來源頁面和�
 1. 開發源網站的內容。
 1. 決定要使用的推出設定。
 
-   1. MSM [安裝了多個推出設定](live-copy-sync-config.md#installed-rollout-configurations)，可滿足多種使用案例。
+   1. MSM [安裝數個轉出設定](live-copy-sync-config.md#installed-rollout-configurations) 可滿足數種使用案例的需求。
    1. 如果需要，您可以選擇[建立推出設定](live-copy-sync-config.md#creating-a-rollout-configuration)。
 
 1. 決定您需要在哪裡[指定要使用的推出設定](live-copy-sync-config.md#specifying-the-rollout-configurations-to-use)，並根據需要進行設定。

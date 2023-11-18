@@ -2,9 +2,9 @@
 title: 啟用漸進式網頁應用程式功能
 description: AEM Sites可讓內容作者透過簡易設定（而非編碼）為任何網站啟用漸進式網頁應用程式功能。
 exl-id: 1552a4ce-137a-4208-b7f6-2fc06db8dc39
-source-git-commit: c31f43986e44099a3a36cc6c9c2f1a7251499ffb
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2004'
+source-wordcount: '1998'
 ht-degree: 1%
 
 ---
@@ -102,8 +102,8 @@ RewriteCond %{REQUEST_URI} (.html|.jpe?g|.png|.svg|.webmanifest)$
 替換為 [必備條件](#prerequisites) met，內容作者可以輕鬆為網站啟用PWA功能。 以下是如何進行此操作的基本概述。 區段中會詳細說明個別選項 [詳細選項。](#detailed-options)
 
 1. 登入AEM。
-1. 從主功能表，點選或按一下 **導覽** -> **網站**.
-1. 選取您的網站專案，然後點選或按一下 [**屬性**](/help/sites-cloud/authoring/fundamentals/page-properties.md) 或使用快速鍵 `p`.
+1. 從主功能表中選取 **導覽** > **網站**.
+1. 選取您的網站專案，然後選取 [**屬性**](/help/sites-cloud/authoring/fundamentals/page-properties.md) 或使用快速鍵 `p`.
 1. 選取 **漸進式網頁應用程式** 標籤並設定適用的屬性。 您至少需要：
    1. 選取選項 **啟用PWA**.
    1. 定義 **啟動URL**.
@@ -123,7 +123,7 @@ RewriteCond %{REQUEST_URI} (.html|.jpe?g|.png|.svg|.webmanifest)$
 
       ![定義PWA離線路徑](../assets/pwa-offline.png)
 
-1. 點選或按一下&#x200B;**儲存並關閉**。
+1. 選取 **儲存並關閉**.
 
 您的網站現已設定完成，您可以 [將其安裝為本機應用程式。](#using-pwa-enabled-site)
 

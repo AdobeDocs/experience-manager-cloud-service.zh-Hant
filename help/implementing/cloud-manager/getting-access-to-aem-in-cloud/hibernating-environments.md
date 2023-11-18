@@ -2,10 +2,10 @@
 title: 休眠和去休眠沙箱環境
 description: 了解沙箱計畫的環境如何自動進入休眠模式以及如何解除休眠。
 exl-id: c0771078-ea68-4d0d-8d41-2d9be86408a4
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '681'
-ht-degree: 93%
+source-wordcount: '683'
+ht-degree: 85%
 
 ---
 
@@ -51,7 +51,7 @@ ht-degree: 93%
 
 ![休眠確認](assets/hibernate-4.png)
 
-在 Developer Console 中，您還可以按一下&#x200B;**環境**&#x200B;上面階層連結中的連結 **Pod** 要休眠的環境清單的下拉式清單。
+在開發人員控制檯中，您也可以按一下 **環境** 上面階層連結中的連結 **Pod** 要休眠的環境清單的下拉式清單。
 
 ![要休眠的環境清單](assets/hibernate-1b.png)
 
@@ -88,7 +88,7 @@ ht-degree: 93%
    ![取消休眠完成](assets/de-hibernation-img4.png)
 
 
-在 Developer Console 中，您還可以按一下&#x200B;**環境**&#x200B;上面階層連結中的連結 **Pod** 要取消休眠的環境清單的下拉式清單。
+在開發人員控制檯中，您也可以按一下 **環境** 上面階層連結中的連結 **Pod** 要解除休眠的環境清單的下拉式清單。
 
 ![休眠的 pod 清單](assets/de-hibernate-1b.png)
 

@@ -2,9 +2,9 @@
 title: 管理對象
 description: 「對象」主控台可讓您建立、組織和管理Adobe Target帳戶的對象，或管理ContextHub的區段
 exl-id: dff72c15-afcd-4b16-a711-e9ca3010e3ec
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '962'
+source-wordcount: '932'
 ht-degree: 10%
 
 ---
@@ -33,8 +33,8 @@ ht-degree: 10%
 
 若要在「對象」主控台中建立ContextHub區段：
 
-1. 在導覽主控台中，按一下或點選 **個人化**. 按一下或點選 **受眾**.
-1. 點選或按一下 **建立ContextHub區段**.
+1. 在導覽主控台中，選取 **個人化**. 選取 **受眾**.
+1. 選取 **建立ContextHub區段**.
 
    ![建立區段](/help/sites-cloud/authoring/assets/audiences-create-segment.png)
 
@@ -60,20 +60,20 @@ ht-degree: 10%
 
 若要建立Adobe Target閱聽眾：
 
-1. 在導覽主控台中，按一下或點選 **個人化**. 按一下或點選 **受眾**.
+1. 在導覽主控台中，選取 **個人化**. 選取 **受眾**.
 
    ![導覽至對象](/help/sites-cloud/authoring/assets/audiences-navigation.png)
 
-1. 在「對象」主控台中，點選或按一下 **建立** 然後 **建立目標對象**.
+1. 在「對象」主控台中，選取 **建立** 然後 **建立目標對象**.
 
    ![建立Target對象](/help/sites-cloud/authoring/assets/audiences-create-target.png)
 
-1. 在 **Adobe Target設定** 對話方塊中，選取目標組態，然後點選或按一下 **確定**.
-1. 在「規則#1」區域中，點選或按一下屬性型別，然後在可用的欄位中輸入任何屬性資訊。 完成後，選取屬性右邊的核取記號以儲存。 另請參閱 [屬性及其選項](#attributes-and-their-options) 以取得所有屬性的相關資訊。
+1. 在 **Adobe Target設定** 對話方塊中，選取目標組態，然後選取 **確定**.
+1. 在「規則#1」區域中，選取屬性型別，並在可用的欄位中輸入任何屬性資訊。 完成後，選取屬性右邊的核取記號以儲存。 另請參閱 [屬性及其選項](#attributes-and-their-options) 以取得所有屬性的相關資訊。
 1. 按一 **下「新增規則** 」以新增其他規則。視需要輸入任意數量的規則。規則會與布林運算子AND結合，這表示對象必須符合每個規則的所有要求才能符合活動的資格。
-1. 點選或按一下&#x200B;**下一步**。
-1. 輸入對象名稱，然後點選或按一下 **儲存**.
-1. 點選或按一下&#x200B;**儲存**。您的對象會列在「對象」清單中。
+1. 選取 **下一個**.
+1. 輸入對象名稱，然後選取「 」 **儲存**.
+1. 選取&#x200B;**儲存**。您的對象會列在「對象」清單中。
 
 ### 屬性及其選項 {#attributes-and-their-options}
 
@@ -97,6 +97,6 @@ ht-degree: 10%
 
 您可以從「對象」主控台編輯任何ContextHub對象。 您也可以編輯Adobe Target對象，但只能編輯在AEM中建立的對象：
 
-1. 在導覽主控台中，按一下或點選 **個人化**. 按一下或點選 **受眾**.
-1. 點選或按一下您要編輯的ContextHub區段旁的圖示，然後點選或按一下 **編輯**.
+1. 在導覽主控台中，選取 **個人化**. 選取 **受眾**.
+1. 選取您要編輯的ContextHub區段旁的圖示，然後選取 **編輯**.
 1. 在區段編輯器中進行任何編輯。 如需詳細資訊，請參閱ContextHub檔案。 <!--See the [ContextHub](/help/sites-administering/contexthub-config.md) documentation for more information.-->

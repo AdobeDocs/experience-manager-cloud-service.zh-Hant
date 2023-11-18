@@ -2,10 +2,10 @@
 title: 管理專案
 description: 專案可讓您將資源分組到一個實體中，以便在「專案」主控台中存取和管理該實體，藉此組織您的專案
 exl-id: be4616e7-18bc-4b2d-89f6-d04178ac7f3a
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '892'
-ht-degree: 12%
+source-wordcount: '876'
+ht-degree: 11%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 12%
 
 專案可讓您將資源分組為一個實體，以組織您的專案。
 
-在 **專案** 主控台，您可以存取專案並對其執行動作：
+在 **專案** 主控台，您可以存取專案並採取行動：
 
 ![專案主控台](/help/sites-cloud/authoring/assets/projects-console.png)
 
@@ -33,7 +33,7 @@ AEM提供這些立即可用的範本，供您在建立專案時選擇：
 
 從專案到專案，建立專案的程式都相同。專案類型之間的差異包括可用的使 [用者角色](/help/sites-cloud/authoring/projects/overview.md)[和工作流程](/help/sites-cloud/authoring/projects/workflows.md)。若要建立專案：
 
-1. 在「 **專案**」中，點選/按一 **下「建立** 」以開啟「 **** 建立專案」精靈：
+1. 在 **專案**，選取 **建立** 以開啟 **建立專案** 精靈：
 1. 選取範本並按一下 **下一個**.
 
    ![建立專案](/help/sites-cloud/authoring/assets/projects-create.png)
@@ -42,7 +42,7 @@ AEM提供這些立即可用的範本，供您在建立專案時選擇：
 
    ![新增專案詳細資料](/help/sites-cloud/authoring/assets/projects-add-team.png)
 
-1. 點選/按一下 **建立**. 確認會詢問您是要開啟新專案，還是返回主控台。
+1. 選擇 **建立**。確認會詢問您是要開啟新專案，還是返回主控台。
 
 ### 將資源與專案建立關聯 {#associating-resources-with-your-project}
 
@@ -51,7 +51,7 @@ AEM提供這些立即可用的範本，供您在建立專案時選擇：
 若要將資源與專案產生關聯，請執行下列動作：
 
 1. 從開啟您的專案 **專案** 主控台。
-1. 點選/按一下 **新增圖磚** 並選取您要連結至專案的圖磚。 您可以選取多種型別的圖磚。
+1. 選取 **新增圖磚** 並選取您要連結至專案的圖磚。 您可以選取多種型別的圖磚。
 
    ![將圖磚新增至專案](/help/sites-cloud/authoring/assets/projects-add-tile.png)
 
@@ -59,7 +59,7 @@ AEM提供這些立即可用的範本，供您在建立專案時選擇：
    >
    >有關可與專案關聯的專案拼貼的詳細說明，請參閱 [專案動態磚](/help/sites-cloud/authoring/projects/overview.md#project-tiles).
 
-1. 點選/按一下 **建立**. 您的資源已連結至專案，從現在開始，您就可以從專案存取該資源。
+1. 選擇 **建立**。您的資源已連結至專案，從現在開始，您就可以從專案存取該資源。
 
 ### 刪除專案或資源連結 {#deleting-a-project-or-resource-link}
 
@@ -71,13 +71,13 @@ AEM提供這些立即可用的範本，供您在建立專案時選擇：
    * 若要刪除專案中的資源連結，請在以下位置開啟您的專案： **專案** 主控台。
 
 1. 按一下以進入選擇模式 **選取** 並選取您的專案或資源連結。
-1. 點選/按一下 **刪除**.
+1. 選取&#x200B;**刪除**。
 
-1. 您需要在對話方塊中確認刪除。 若已確認，則會刪除專案或資源連結。 點選/按一下 **取消選取** 以結束選取模式。
+1. 您需要在對話方塊中確認刪除。 若已確認，則會刪除專案或資源連結。 選取 **取消選取** 以結束選取模式。
 
 >[!NOTE]
 >
->當您建立專案並將使用者新增至各種角色時，系統會自動建立與專案相關的群組，以管理相關的權限。例如，名為Myproject的專案會有三個群組 **Myproject Owners**、 **Myproject Editors**、 **Myproject Obsertors**。不過，如果刪除專案，這些群組不會自動刪除。管理員需要手動刪除「工具 **>安全** 性 **>** 群組 ****」。
+>當您建立專案並將使用者新增至各種角色時，系統會自動建立與專案相關的群組，以管理相關的權限。例如，名為Myproject的專案會有三個群組 **Myproject Owners**、 **Myproject Editors**、 **Myproject Obsertors**。不過，如果刪除專案，這些群組不會自動刪除。管理員必須手動刪除中的群組 **工具** > **安全性** > **群組**.
 
 ### 將專案新增至圖磚 {#adding-items-to-a-tile}
 
@@ -85,11 +85,11 @@ AEM提供這些立即可用的範本，供您在建立專案時選擇：
 
 若要將專案新增至圖磚：
 
-1. 在 **專案**，導覽至專案，然後點選或按一下您要新增專案的圖磚上的向下V形。
+1. 在 **專案**，導覽至專案，並在您要新增專案的方塊上選取向下V形。
 
    ![將專案新增至圖磚](/help/sites-cloud/authoring/assets/project-workflows.png)
 
-1. 新增專案至圖磚，就像建立新圖磚時一樣。 專案拼貼已說明 [此處](/help/sites-cloud/authoring/projects/overview.md#project-tiles). 在此範例中，已新增另一個工作流程。
+1. 新增專案至圖磚，就像建立圖磚時一樣。 專案拼貼已說明 [此處](/help/sites-cloud/authoring/projects/overview.md#project-tiles). 在此範例中，已新增另一個工作流程。
 
 ### 開啟拼貼 {#opening-a-tile}
 
@@ -97,7 +97,7 @@ AEM提供這些立即可用的範本，供您在建立專案時選擇：
 
 若要開啟圖磚，以便檢視或修改專案：
 
-1. 在「專案」主控台中，點選/按一下卡片底部的省略符號(...)圖示。
+1. 在「專案」主控台中，選取卡片底部的省略符號(...)圖示。
 
    ![開啟圖磚](/help/sites-cloud/authoring/assets/project-links.png)
 
@@ -111,7 +111,7 @@ AEM提供這些立即可用的範本，供您在建立專案時選擇：
 
 ### 檢視專案時間表 {#viewing-a-project-timeline}
 
-專案時間表提供有關專案中資產上次使用時間的資訊。 若要檢視專案時間表，請按一下/點選 **時間表**，然後進入選擇模式並選取專案。 資產會顯示在左窗格中。 按一下/點選 **時間表** 以返回 **專案** 主控台。
+專案時間表提供有關專案中資產上次使用時間的資訊。 若要檢視專案時間表，請選取 **時間表**，然後進入選擇模式並選取專案。 資產會顯示在左窗格中。 選取 **時間表** 以返回 **專案** 主控台。
 
 ![專案時間表](/help/sites-cloud/authoring/assets/projects-timeline.png)
 
@@ -137,9 +137,9 @@ AEM提供這些立即可用的範本，供您在建立專案時選擇：
    >
    如果您的專案中尚未包含此圖磚，您可能需要新增此圖磚。 另請參閱 [新增圖磚](#adding-items-to-a-tile).
 
-1. 點選/按一下 **編輯**.
+1. 選取&#x200B;**編輯**。
 1. 變更選擇器從 **作用中** 至 **非使用中** （反之亦然）。
 
    ![啟用專案](/help/sites-cloud/authoring/assets/projects-add-team.png)
 
-1. 點選/按一下 **完成** 以儲存變更。
+1. 選取 **完成** 以儲存變更。

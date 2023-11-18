@@ -2,9 +2,9 @@
 title: AEMas a Cloud Service記錄
 description: 瞭解如何使用AEM的記錄as a Cloud Service來設定中央記錄服務的全域引數、個別服務的特定設定，或如何請求資料記錄。
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: 9d1aab8f615f9e6aa9751fe978a56c915c9a8797
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2757'
+source-wordcount: '2753'
 ht-degree: 9%
 
 ---
@@ -279,7 +279,7 @@ AEMas a Cloud Service在發佈上為Apache Web Server和Dispatcher層提供三�
 * Apache HTTPD Web Server錯誤記錄
 * Dispatcher記錄
 
-請注意，這些記錄檔僅適用於發佈階層。
+這些記錄檔僅適用於發佈階層。
 
 這組記錄提供在請求到達AEM應用程式之前，AEMas a Cloud Service發佈層級的HTTP請求見解。 這很有必要瞭解，因為理想情況下，對發佈層級伺服器的大部分HTTP請求都是由Apache HTTPD Web Server和AEM Dispatcher快取的內容所提供，而且絕對不會連線AEM應用程式本身。 因此，AEM Java、要求或存取記錄檔中並沒有這些要求的記錄陳述式。
 
@@ -504,7 +504,7 @@ Define DISP_LOG_LEVEL debug
 
 AEMas a Cloud Service提供對CDN記錄的存取權，這對使用案例（包括快取命中比率最佳化）很有用。 無法自訂CDN記錄格式，且沒有將其設定為不同模式（例如info、warn或error）的概念。
 
-請注意，Splunk轉送功能尚不支援CDN記錄。
+Splunk轉送功能尚不支援CDN記錄。
 
 **範例**
 
@@ -643,7 +643,7 @@ Apache層記錄（包括Dispatcher）位於容納Dispatcher的Docker容器中。
 方案123，生產環境
 
 * Splunk HEC端點位址： `splunk-hec-ext.acme.com`
-* Splunk索引：acme_123prod （客戶可以選擇任何想要的命名慣例）
+* Splunk索引：acme_123prod （客戶可以選擇想要的任何命名慣例）
 * Splunk連線埠：443
 * Splunk HEC權杖： ABC123
 

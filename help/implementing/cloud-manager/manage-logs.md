@@ -2,10 +2,10 @@
 title: 存取和管理記錄檔
 description: 了解如何存取和管理記錄檔以協助進行 AEM as a Cloud Service 中的開發流程。
 exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
-source-git-commit: 7272f6ebd1b9c4e67985cba0221d8cafbeb1560a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '345'
-ht-degree: 77%
+ht-degree: 73%
 
 ---
 
@@ -36,7 +36,7 @@ ht-degree: 77%
 
    ![下載其他發佈區域的記錄](assets/download-publish-region-logs.png)
 
-1. 選擇服務後，按一下要擷取記錄旁邊的下載圖示。
+1. 選取服務後，按一下您要擷取之記錄檔旁的下載圖示。
 
 您也可以從&#x200B;**環境**&#x200B;頁面存取記錄檔。
 

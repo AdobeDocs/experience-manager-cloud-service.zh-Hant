@@ -2,9 +2,9 @@
 title: 設定 ContextHub
 description: 瞭解如何設定Context Hub，此架構用於儲存、操控和呈現內容資料。
 exl-id: 1fd7d41e-31ad-4838-8749-a5791edcfd63
-source-git-commit: 31e6ec8e9977c8787e14481ee3a94df767262aec
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1689'
+source-wordcount: '1629'
 ht-degree: 1%
 
 ---
@@ -43,10 +43,10 @@ UI模式會在工具列左側顯示為一系列圖示。 選取後，UI模式的
 
 新增UI模式至群組相關的ContextHub模組。 建立UI模式時，您會提供顯示在ContextHub工具列中的標題和圖示。
 
-1. 在Experience Manager邊欄上，按一下或點選「工具>網站>內容中心」。
-1. 按一下或點選預設的「設定容器」 。
-1. 按一下或點選「Context Hub設定」 。
-1. 按一下或點選「建立」按鈕，然後按一下或點選「Context Hub UI模式」。
+1. 在Experience Manager邊欄中，選取「工具>網站>內容中心」。
+1. 選取預設的「組態容器」。
+1. 選取Context Hub組態。
+1. 選取「建立」按鈕，然後選取「Context Hub UI模式」。
 
    ![新增UI模式](assets/contexthub-ui-mode.png)
 
@@ -56,7 +56,7 @@ UI模式會在工具列左側顯示為一系列圖示。 選取後，UI模式的
    * 模式圖示：的選取器 [Coral UI圖示](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons) 以使用 `coral-Icon--user`
    * 啟用：選取此選項可在ContextHub工具列中顯示UI模式
 
-1. 按一下或點選「儲存」。
+1. 選取儲存。
 
 ### 新增使用者介面模組 {#adding-a-ui-module}
 
@@ -76,11 +76,11 @@ UI模組屬性包含詳細設定，您可以在其中提供模組特定屬性的
 | [contexthub.tagcloud](sample-modules.md#contexthub-tagcloud-ui-module-type) | 顯示頁面標籤的相關統計資料 | `tagcloud` |
 | [granite.profile](sample-modules.md#granite-profile-ui-module-type) | 顯示目前使用者的設定檔資訊，包括 `authorizableID`， `displayName` 和 `familyName`. 您可以變更以下專案的值： `displayName` 和 `familyName`. | `profile` |
 
-1. 在Experience Manager邊欄上，按一下或點選「工具>網站> ContextHub」。
-1. 按一下或點選您要新增UI模組的設定容器。
+1. 在Experience Manager邊欄中，選取「工具>網站> ContextHub」。
+1. 選取要新增UI模組的設定容器。
 1. 按一下或輸入您要新增UI模組的ContextHub組態。
-1. 按一下或點選您要新增UI模組的UI模式。
-1. 按一下或點選「建立」按鈕，然後按一下或點選「ContextHub UI模組（一般）」。
+1. 選取要新增UI模組的UI模式。
+1. 選取「建立」按鈕，然後選取「ContextHub UI模組（一般）」。
 
    ![contexthub UI模組](assets/contexthub-ui-module.png)
 
@@ -91,7 +91,7 @@ UI模組屬性包含詳細設定，您可以在其中提供模組特定屬性的
    * 啟用：選取以在ContextHub工具列中顯示UI模組
 
 1. （選用）若要覆寫預設存放區設定，請輸入JSON物件以設定UI模組。
-1. 按一下或點選「儲存」。
+1. 選取儲存。
 
 ## 建立ContextHub存放區 {#creating-a-contexthub-store}
 
@@ -111,18 +111,18 @@ AEM提供下列範例商店候選者，您可以據以建立商店。
 |---|---|
 | [aem.segmentation](sample-stores.md#aem-segmentation-sample-store-candidate) | 儲存已解析和未解析的ContextHub區段。 自動從ContextHub SegmentManager擷取區段 |
 | [contexthub.geolocation](sample-stores.md#contexthub-geolocation-sample-store-candidate) | 儲存瀏覽器位置的經緯度。 |
-| [granite.emulators](sample-stores.md#granite-emulators-sample-store-candidate) | 定義許多裝置的屬性和功能，並偵測目前的使用者端裝置 |
+| [granite.emulators](sample-stores.md#granite-emulators-sample-store-candidate) | 定義數個裝置的屬性和功能，並偵測目前的使用者端裝置 |
 | [granite.profile](sample-stores.md#granite-profile-sample-store-candidate) | 儲存目前使用者的設定檔資料 |
 | [contexthub.surferinfo](sample-stores.md#contexthub-surferinfo-sample-store-candidate) | 儲存使用者端的相關資訊，例如裝置資訊、瀏覽器型別和視窗方向 |
 
-1. 在Experience Manager邊欄上，按一下或點選「工具>網站> ContextHub」。
-1. 按一下或點選預設設定容器。
-1. 按一下或點選「 Contexthub設定」
-1. 若要新增存放區，請按一下或點選「建立」圖示，然後按一下或點選「 ContextHub存放區設定」。
+1. 在Experience Manager邊欄中，選取「工具>網站> ContextHub」。
+1. 選取預設設定容器。
+1. 選取Contexthub設定
+1. 若要新增存放區，請選取「建立」圖示，然後選取「ContextHub存放區設定」。
 
    ![ContextHub存放區設定](assets/contexthub-store-configuration.png)
 
-1. 提供基本設定屬性的值，然後按一下或點選「下一步」：
+1. 提供基本組態屬性的值，然後選取[下一步]：
 
    * **設定標題：** 識別存放區的標題
    * **存放區型別：** 作為存放區基礎之存放區候選專案的storeType屬性值
@@ -130,7 +130,7 @@ AEM提供下列範例商店候選者，您可以據以建立商店。
    * **已啟用：** 選取以啟用存放區
 
 1. （選用）若要覆寫預設存放區設定，請在「詳細資料設定(JSON)」方塊中輸入JSON物件。
-1. 按一下或點選「儲存」。
+1. 選取儲存。
 
 ## 範例：使用JSONP服務  {#example-using-a-jsonp-service}
 
@@ -205,10 +205,10 @@ contexthub.generic-jsonp範例存放區候選專案可讓您從JSONP服務或傳
 
 編輯ContextHub的設定並核取選項 **偵錯**
 
-1. 在導軌中，按一下或點選 **「工具」>「網站」>「ContextHub」**
-1. 按一下或點選預設值 **設定容器**
-1. 選取 **ContextHub設定** 然後按一下或點選 **編輯選取的元素**
-1. 按一下或點選 **偵錯** 然後按一下或點選 **儲存**
+1. 在邊欄中選取 **「工具」>「網站」>「ContextHub」**
+1. 選取預設值 **設定容器**
+1. 選取 **ContextHub設定** 並選取 **編輯選取的元素**
+1. 選取 **偵錯** 並選取 **儲存**
 
 ### 透過CRXDE {#via-crxde}
 
@@ -243,10 +243,10 @@ contexthub.generic-jsonp範例存放區候選專案可讓您從JSONP服務或傳
 
 * 編輯ContextHub的設定並核取選項 **停用ContextHub**
 
-   1. 在導軌中，按一下或點選 **「工具」>「網站」>「ContextHub」**
-   1. 按一下或點選預設值 **設定容器**
-   1. 選取 **ContextHub設定** 然後按一下或點選 **編輯選取的元素**
-   1. 按一下或點選 **停用ContextHub** 然後按一下或點選 **儲存**
+   1. 在邊欄中選取 **「工具」>「網站」>「ContextHub」**
+   1. 選取預設值 **設定容器**
+   1. 選取 **ContextHub設定** 並選取 **編輯選取的元素**
+   1. 選取 **停用ContextHub** 並選取 **儲存**
 
 或
 

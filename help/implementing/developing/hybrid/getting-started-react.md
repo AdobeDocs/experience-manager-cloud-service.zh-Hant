@@ -2,9 +2,9 @@
 title: 開始在 AEM 中使用 React 建立 SPA
 description: 本文介紹了一個SPA應用計畫範例，說明它是如何組合在一起的，並可讓您使用React框架快速啟動並執行您自己的SPA。
 exl-id: 13998526-65e7-4d1b-bd47-452bad3780a2
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1141'
+source-wordcount: '1139'
 ht-degree: 10%
 
 ---
@@ -117,7 +117,7 @@ module.exports = {
 
 ### index.js {#index-js}
 
-SPA的進入點當然是 `index.js` 此處顯示的檔案已簡化，以專注於重要內容。
+SPA的進入點為 `index.js` 此處顯示的檔案已簡化，以專注於重要內容。
 
 ```
 import ReactDOM from 'react-dom';
@@ -266,4 +266,4 @@ export default MapTo('my-react-app/react/components/structure/page')(PageClass, 
 * [SPA 編輯器概述](editor-overview.md)更深入地介紹 AEM 和 SPA 之間的通訊模型。
 * [wknd SPA專案](wknd-tutorial.md) 是逐步教學課程，在AEM中實作簡單的SPA專案。
 * [SPA的動態模型至元件對應](model-to-component-mapping.md) 說明動態模型到元件的對應，以及它如何在AEM的SPA中運作。
-* [SPA Blueprint](blueprint.md) 若您想在AEM中針對React或Angular以外的框架實作SPA，或只是想更深入瞭解SPA SDK的運作方式，可深入探討AEM適用的SDK。
+* [SPA Blueprint](blueprint.md) 若您想在AEM中針對React或Angular以外的框架實作SPA，或只是想要更深入的瞭解，提供了有關AEM適用的SPA SDK運作方式的深入探討。

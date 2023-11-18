@@ -2,9 +2,9 @@
 title: Eclipse 適用的 AEM 開發人員工具
 description: 瞭解如何使用適用於Eclipse的AEM開發人員工具（一個以Apache Sling的Eclipse外掛程式為基礎的Eclipse外掛程式）。
 exl-id: 7f9c0f99-e230-440a-8bc9-a0ab7465e3bf
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1192'
+source-wordcount: '1191'
 ht-degree: 2%
 
 ---
@@ -64,7 +64,7 @@ _Eclipse適用的Experience Manager開發人員工具_ 是一個以擴充功能�
 
 _Eclipse的Experience Manager開發工具_ 提供AEM觀點，讓您可完全控制AEM專案和執行個體。 若要開啟「AEM透視」：
 
-1. 從Eclipse功能表列中，選取 **視窗** -> **透視** -> **開啟透視** -> **其他**.
+1. 從Eclipse功能表列中，選取 **視窗** > **透視** > **開啟透視** > **其他**.
 1. 選取 **AEM** 在對話方塊中，然後按一下 **開啟**.
 
 ![Eclipse中的AEM視角](assets/eclipse-aem-perspective.png)
@@ -83,7 +83,7 @@ _Eclipse的Experience Manager開發工具_ 提供AEM觀點，讓您可完全控�
 
    >[!NOTE]
    >
-   >此步驟可能需要一些時間，因為m2eclipse需要掃描原型目錄。
+   >此步驟可能需要一些時間，因為m2eclipse必須掃描原型目錄。
 
 1. 選擇 `com.adobe.granite.archetypes : sample-project-archetype : <highest-number>` 在功能表中，然後按一下 **下一個**.
 
@@ -139,7 +139,7 @@ _Eclipse的Experience Manager開發工具_ 提供AEM觀點，讓您可完全控�
 1. 然後對 `PROJECT.ui.content` 並將其內容資料夾取代為您的其中一個套件：
 
    1. 在「專案總管」面板中，展開 `PROJECT.ui.content` > `src` > `main` > `content` > `jcr_root` > `content`.
-   1. 以滑鼠右鍵按一下較深入的內容資料夾，然後選擇 **顯示位置** -> **系統總管**.
+   1. 以滑鼠右鍵按一下較深入的內容資料夾，然後選擇 **顯示位置** > **系統總管**.
    1. 刪除您現在應該看到的內容資料夾，並在此處放置內容封裝的內容資料夾。
    1. 在Eclipse中，以滑鼠右鍵按一下 `PROJECT.ui.content` 專案並選擇 **重新整理**.
 
@@ -194,7 +194,7 @@ _Eclipse的Experience Manager開發工具_ 提供AEM觀點，讓您可完全控�
 
 完成後，您應該在執行個體上執行套件，並在儲存時，任何變更都會自動同步到執行個體。
 
-如果您想要從專案重新建置套件，請用滑鼠右鍵按一下 `PROJECT.ui.apps` 或 `PROJECT.ui.content` 並選擇 **執行身分** -> **Maven安裝**.
+如果您想要從專案重新建置套件，請用滑鼠右鍵按一下 `PROJECT.ui.apps` 或 `PROJECT.ui.content` 並選擇 **執行身分** > **Maven安裝**.
 
 您現在已建立目標資料夾，並在其中加入您的套件(例如，稱為 `PROJECT.ui.apps-0.0.1-SNAPSHOT.zip`)。
 
@@ -206,7 +206,7 @@ _Eclipse的Experience Manager開發工具_ 提供AEM觀點，讓您可完全控�
 
 1. 選取所有已建立的專案。
 1. 按一下滑鼠右鍵。
-1. 在內容功能表中，選取 **Maven** -> **更新專案**.
+1. 在內容功能表中，選取 **Maven** > **更新專案**.
 1. 檢查 **強制更新快照/版本**.
 1. 按一下&#x200B;**「確定」**。
 

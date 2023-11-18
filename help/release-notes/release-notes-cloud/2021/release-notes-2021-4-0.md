@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2021.4.0 版發行說明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2021.4.0 版發行說明。'
 exl-id: 775332b5-24ce-430e-97a2-6eeb80877c64
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1531'
-ht-degree: 39%
+source-wordcount: '1533'
+ht-degree: 40%
 
 ---
 
@@ -33,7 +33,7 @@ ht-degree: 39%
 
 ## [!DNL Adobe Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
-### [!DNL Sites]的新增功能 {#what-is-new-sites}
+### [!DNL Sites] 的新增功能 {#what-is-new-sites}
 
 * GraphQL端點 — 現在可以為個別AEM Sites設定啟用AEM GraphQL API，並使用新的GraphQL Console UI為這些設定建立自訂GraphQL端點。 此UI也可讓您管理GraphQL端點。
 
@@ -51,7 +51,7 @@ ht-degree: 39%
 
 ## [!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### [!DNL Assets]的新增功能 {#what-is-new-assets}
+### [!DNL Assets] 的新增功能 {#what-is-new-assets}
 
 * [!DNL Experience Manager] 不會封存下載原始檔案的單一資產下載。 此增強功能可提供更快的下載速度。
 
@@ -83,7 +83,7 @@ ht-degree: 39%
 
 * 在「屬性」頁面中選取要更新中繼資料時，如果結構描述提供了許多選項，介面的回應速度會很慢。 (CQ-4318538)
 
-* 在單行文字欄位中更新和儲存中繼資料值時，即使下拉式選單上的編輯功能已停用，下拉式選單中的值也會被刪除。 (CQ-4317077)
+* 在單行文字欄位中更新和儲存中繼資料值時，即使下拉式清單選單上的編輯功能已停用，下拉式清單選單中的值也會被刪除。 (CQ-4317077)
 
 * 您可以使用省略符號作為註解來檢閱資產。 使用小橢圓時，橢圓會與列印版本中的註釋編號重疊。 (CQ-4316792)
 
@@ -91,13 +91,13 @@ ht-degree: 39%
 
 ## [!DNL Adobe Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-### [!DNL Forms]的新增功能 {#what-is-new-forms}
+### [!DNL Forms] 的新增功能 {#what-is-new-forms}
 
 * **在啟用 Adobe Sign 的最適化表格中使用政府機關身分證件驗證方法**
 
   在先進的機器學習演演算法的支援下，Adobe Sign的政府機關身分證件流程讓全球的公司能夠確保對其接收者身分進行高品質的驗證。 現在，您可以在啟用 Adobe Sign 的最適化表格中使用政府機關身分證件驗證方法。
 
-  政府機關身分證件是優質的身分驗證方法，會指示收件者 [上傳政府機構簽發的身分證件（駕照、國民身分證、護照）的影像](https://helpx.adobe.com/in/sign/using/adobesign-authentication-government-id.html)，然後評估該檔案以確保其真實性。
+  政府機關身分證件是優質的身分驗證方法，會指示收件者 [上傳政府機構簽發的身分證件（駕照、國民身分證、護照）的影像](https://helpx.adobe.com/tw/in/sign/using/adobesign-authentication-government-id.html)，然後評估該檔案以確保其真實性。
 
 * **支援使用表格中的簽名體驗來提交非同步的最適化表格**
 
@@ -109,7 +109,7 @@ ht-degree: 39%
 
 * **支援使用常值選項來設定 JSON 類型變數的值**
 
-  您可以在 AEM 工作流程的設定變數步驟中，使用常值選項來設定 JSON 類型變數的值。 常值選項可讓您以字串形式指定JSON。
+  您可以在 AEM 工作流程的設定變數步驟中，使用常值選項來設定 JSON 類型變數的值。 此常值選項可讓您以字串形式指定 JSON。
 
 * **使用本機開發環境來建立記錄文件 (DoR)**
 

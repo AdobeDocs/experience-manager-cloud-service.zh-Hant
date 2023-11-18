@@ -2,10 +2,10 @@
 title: 存取 KPI
 description: 了解如何存取您的 KPI 並定義報告流程
 exl-id: 8556e0e3-a557-4fd6-9b82-09cb1decff0a
-source-git-commit: d1da8559da856e028a5dcad1d0c0b2c00176af0c
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '545'
-ht-degree: 100%
+source-wordcount: '544'
+ht-degree: 96%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 100%
 
 在 2018 年的一項研究中，IDC 分析了幾家大公司在使用 Adobe Experience Manager 時看到的商業價值。平均而言，使用 Experience Manager Sites 的組織將其數位體驗團隊的工作效率提高了 23%，將進行微小編輯變更所需的時間減少了 64%，並將每月的網站造訪數增加了 10%。使用 Experience Manager Assets 的公司將其數位資產團隊的工作效率提高了 19%，將建立新資產的時間縮短了 47%，並將推出行銷活動的時間縮短了 20%。
 
-要實現同樣顯著的收益，您的組織需要為您的 Experience Manager 實作制定明確的目標。您需要有 KPI 來協助每個人專注於這些目標。
+若要獲得相同的重大成果，貴組織必須有明確的Experience Manager實施目標。 您需要有 KPI 來協助每個人專注於這些目標。
 
 ## 存取 KPI
 

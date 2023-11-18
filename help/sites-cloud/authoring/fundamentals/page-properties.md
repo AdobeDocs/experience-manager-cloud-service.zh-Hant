@@ -2,9 +2,9 @@
 title: 編輯頁面屬性
 description: 瞭解如何定義在AEM中管理頁面所需的屬性。
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2280'
+source-wordcount: '2270'
 ht-degree: 6%
 
 ---
@@ -87,9 +87,9 @@ ht-degree: 6%
   >* 不支援規則運算式模式。
   >* 不應設為現有頁面。
 
-   * **新增**  — 點選或按一下以顯示欄位，以定義頁面的虛名URL。
-      * 再點選或按一下以新增多個。
-      * 點選或按一下 **移除** 圖示可刪除虛名URL。
+   * **新增**  — 選取以顯示欄位來定義頁面的虛名URL。
+      * 再次選取以新增多個。
+      * 選取 **移除** 圖示可刪除虛名URL。
    * **重新導向虛名URL**  — 指出您是否希望頁面使用虛名URL。
 
 ### 進階 {#advanced}
@@ -105,7 +105,7 @@ ht-degree: 6%
       * 例如，如果您定義別名 `private` 針對頁面 `/content/wknd/us/en/magazine/members-only`，則也可以透過存取此頁面 `/content/wknd/us/en/magazine/private`
       * 建立別名會設定 `sling:alias` 屬性，只會影響資源，不會影響存放庫路徑。
       * 無法發佈編輯器中以別名存取的頁面。 [發佈選項](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) 在編輯器中，僅適用於透過實際路徑存取的頁面。
-      * 如需詳細資訊，請參閱 [根據SEO和URL管理最佳實務提供的本地化頁面名稱](/help/overview/seo-and-url-management.md#localized-page-names).
+      * 另請參閱 [根據SEO和URL管理最佳實務提供的本地化頁面名稱](/help/overview/seo-and-url-management.md#localized-page-names).
 
 * **設定**
 
@@ -237,7 +237,7 @@ ht-degree: 6%
 
 >[!NOTE]
 >
->如需詳細資訊，請參閱 [啟用漸進式網頁應用程式功能](/help/sites-cloud/authoring/features/enable-pwa.md).
+>另請參閱 [啟用漸進式網頁應用程式功能](/help/sites-cloud/authoring/features/enable-pwa.md).
 
 * **設定可安裝體驗**
 

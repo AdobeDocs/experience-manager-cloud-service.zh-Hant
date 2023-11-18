@@ -2,10 +2,10 @@
 title: 企業開發團隊設定
 description: 了解如何設定和擴展您的企業開發團隊，並了解 AEM as a Cloud Service 如何支援您的開發流程。
 exl-id: 85f8779b-12cb-441b-a34d-04641184497a
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '1437'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -41,7 +41,7 @@ Cloud Manager 支援靈活的多團隊設定，可以根據企業的需求進行
 
 每個企業都有不同的需求，包括不同的團隊設定、流程和開發工作流程。Adobe 將下述設定用於在 AEM as a Cloud Service 之上提供體驗的多個專案。
 
-例如，Adobe Photoshop 或 Adobe Illustrator 等 Adobe Creative Cloud 應用程式包括可供一般使用者使用的教學課程、範例和指南等內容資源。此內容由使用 AEM as a Cloud Service 的用戶端應用程式以 Headless 方式使用，透過對 AEM 雲端發佈層進行 API 呼叫以將結構化內容擷取為 JSON 串流，並利用 [AEM as a Cloud Service 中的內容交付網路 (CDN)](/help/implementing/dispatcher/cdn.md#content-delivery)，以最佳效能提供結構化和非結構化內容。
+例如，Adobe Photoshop 或 Adobe Illustrator 等 Adobe Creative Cloud 應用程式包括可供一般使用者使用的教學課程、範例和指南等內容資源。使用AEMas a Cloud Service的使用者端應用程式會以無頭方式使用此內容，方法是對AEM雲端發佈層級進行API呼叫，以將結構化內容擷取為JSON資料流，並使用 [AEMas a Cloud Service中的Content Delivery Network (CDN)](/help/implementing/dispatcher/cdn.md#content-delivery) 以最佳效能提供結構化和非結構化內容。
 
 為本專案貢獻內容的團隊應遵循以下流程。
 

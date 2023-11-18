@@ -2,10 +2,10 @@
 title: Cloud Manager 存放庫
 description: 了解如何在 Cloud Manager 中建立、檢視和刪除 Git 存放庫。
 exl-id: 6e1cf636-78f5-4270-9a21-38b4d5e5a0b0
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '585'
-ht-degree: 87%
+source-wordcount: '582'
+ht-degree: 85%
 
 ---
 
@@ -22,9 +22,9 @@ ht-degree: 87%
 
 依照下列步驟在 Cloud Manager 中檢視和管理存放庫。
 
-1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織和計畫。
+1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織和方案。
 
-1. 從 **計畫總覽** 頁面，點選或按一下 **存放庫** 標籤以切換至 **存放庫** 頁面。
+1. 從 **計畫總覽** 頁面，選取 **存放庫** 標籤以切換至 **存放庫** 頁面。
 
 1. 按一下 **新增存放庫**.
 
@@ -130,5 +130,5 @@ $ git submodule add -b main https://git.cloudmanager.adobe.com/ProgramName/proje
 * 由於安全理由，請勿在 Git URL 中嵌入憑證。
 * 除非另有必要，否則強烈建議使用淺子模組。
    * 為此，需對每個子模組執行 `git config -f .gitmodules submodule.<submodule path>.shallow true`。
-* 會將 Git 子模組參考資料儲存到特定的 Git 認可。因此，若對子模組存放庫進行變更，需要更新參考的認可。
+* 會將 Git 子模組參考資料儲存到特定的 Git 認可。因此，若對子模組存放庫進行變更，必須更新參考的認可。
    * 例如，使用 `git submodule update --remote`

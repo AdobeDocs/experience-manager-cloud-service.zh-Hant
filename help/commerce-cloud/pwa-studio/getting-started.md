@@ -5,7 +5,7 @@ topics: Commerce
 feature: Commerce Integration Framework
 thumbnail: 37843.jpg
 exl-id: a7c187ba-885e-45bf-a538-3c235b09a0f1
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '764'
 ht-degree: 1%
@@ -64,7 +64,7 @@ ht-degree: 1%
 
 1. Apollo使用者端預期的AEM GraphQL端點位於 `<https://pwa-studio/endpoint.js>`. 若要將端點對應至此位置，請自訂PWA Studio應用程式的「向上」設定： a.將AEM_CFM_GRAPHQL變數新增至pwa-root/.env，並將其調整為指向您的AEM內容片段GraphQL端點。
 
-   例如: `AEM_CFM_GRAPHQL=<http://localhost:4503/content/graphql/global>`
+   範例: `AEM_CFM_GRAPHQL=<http://localhost:4503/content/graphql/global>`
 
    b.將Proxy解析器新增至您的UPPER設定。 UPPER設定的範例看起來可能像這樣：
 
@@ -95,13 +95,13 @@ ht-degree: 1%
 
   將allowedorigin屬性設定為PWA應用程式的完整主機名稱。
 
-  例如:  `<https://pwa-studio-test-vflyn.local.pwadev:9366>`
+  範例:  `<https://pwa-studio-test-vflyn.local.pwadev:9366>`
 
 * Apache Sling反向連結篩選器(org.apache.sling.security.impl.ReferrerFilter.cfg.json)
 
   將allow.hosts屬性設定為PWA應用程式的主機名稱。
 
-  例如: `pwa-studio-test-vflyn.local.pwadev`
+  範例: `pwa-studio-test-vflyn.local.pwadev`
 
 您可以在這裡找到這兩個設定的完整範例： <https://github.com/adobe/aem-pwa-studio-extensions/tree/master/aem-cfm-blog-extension/aem/config/src/main/content/jcr_root/apps/blog-demo/config>.
 

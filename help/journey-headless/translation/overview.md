@@ -2,10 +2,10 @@
 title: AEM Headless 翻譯歷程
 description: 從這裡開始，此歷程會逐步引導您了解如何使用 AEM 強大的翻譯工具來翻譯您的 Headless 內容。
 exl-id: b677f691-5257-43c3-a4b9-c34932577b31
-source-git-commit: f4e28d89023e8f326e6816ebd8168e1e31e772ce
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1045'
-ht-degree: 100%
+source-wordcount: '1040'
+ht-degree: 93%
 
 ---
 
@@ -32,7 +32,7 @@ Headless 實作放棄了全堆疊解決方案中的傳統頁面和元件管理�
 
 ## AEM 文件歷程 {#documentation-journeys}
 
-[文件歷程](/help/journey-documentation/documentation-journeys.md)提供敘述來協助剛開始使用 AEM 的讀者，讓他們能從頭到尾理解和解決業務問題，同時將採用的先前主題或 AEM 知識降至最低，藉以連結許多不同且複雜的主題和功能。
+[檔案歷程](/help/journey-documentation/documentation-journeys.md) 藉由提供敘述來協助剛開始使用AEM的讀者，讓他們能從頭到尾理解和解決業務問題，同時將採用的先前主題或AEM知識降至最低，藉以連結許多不同、複雜的主題和功能。
 
 文件歷程根據最佳做法原則而設計，其中包含 Adobe 的最新研究、Adobe 顧問的成熟實作經驗以及客戶專案的意見回饋。
 
@@ -53,7 +53,7 @@ Headless 實作放棄了全堆疊解決方案中的傳統頁面和元件管理�
 | 管理員 | 管理 AEM 的基本設定和配置 | 翻譯專家與管理員一起進行翻譯作業所需的設定變更，例如安裝翻譯連接器。 |
 | 內容架構師 | 分析必須以 Headless 方式傳遞之資料的要求並定義該資料的結構 | 翻譯專家與內容架構師一起定義內容的組織，以便輕鬆翻譯。 |
 
-此歷程的資訊當然對所有角色都有用，但有些資訊對於某些角色可能是多餘的。請密切注意[即將到來、涵蓋其他角色的歷程](/help/journey-documentation/documentation-journeys.md#journeys)。
+此歷程中的資訊對所有角色都很有用，但有些資訊可能對特定角色來說是多餘的。 請密切注意[即將到來、涵蓋其他角色的歷程](/help/journey-documentation/documentation-journeys.md#journeys)。
 
 ## Headless 翻譯歷程 {#the-journey}
 
@@ -78,7 +78,7 @@ Headless 實作放棄了全堆疊解決方案中的傳統頁面和元件管理�
 
 文件歷程會透過敘述方式，指導您完成複雜的相關流程和功能，向您展示 AEM 如何解決業務問題。此歷程說明了多個功能如何共同運作以解決單一業務需求。
 
-因為這樣的歷程是設計成獨立的。然而，其中一些可以相互關聯。查看這些額外的歷程，進一步了解 AEM 的強大功能如何協同工作。
+因為這樣的歷程是設計成獨立的。但是，其中幾個可以相互關聯。 查看這些額外的歷程，進一步了解 AEM 的強大功能如何協同工作。
 
 * [Headless 編寫歷程](/help/journey-headless/author/overview.md) - 從這裡開始，此歷程會逐步引導您了解 AEM 強大且靈活的 Headless 特性、其功能，以及如何在您的第一個 Headless 專案中建立內容模型。
 * [Headless 架構師歷程](/help/journey-headless/architect/overview.md) - 從這裡開始介紹 Adobe Experience Manager as a Cloud Service 的強大、靈活、 Headless 功能，以及如何為您的專案建立內容模型。

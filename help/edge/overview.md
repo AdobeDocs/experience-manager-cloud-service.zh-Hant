@@ -3,10 +3,10 @@ title: 開始使用 Edge Delivery Services
 description: 開始使用 Edge Delivery Services (EDS)。
 feature: Edge Delivery Services
 exl-id: 03a1aa93-d2e6-4175-9cf3-c7ae25c0d24e
-source-git-commit: 34965338015df868778a95582524df08a7c5f136
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '878'
-ht-degree: 100%
+source-wordcount: '870'
+ht-degree: 92%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 100%
 
 透過 Edge Delivery Services，AEM 可提供促進參與度和轉換率的卓越體驗。AEM 會透過提供快速編寫和開發的高影響力體驗來實現這一目標。這是一組可組合的服務，有助建立快速開發環境；編寫作者可在其中快速更新和發佈，並且能快速推出新網站。因此，透過 Edge Delivery Services，您可以提高轉換率、降低成本並提供極高的內容速度。
 
-透過利用 Edge Delivery，您可以：
+透過使用Edge Delivery，您可以：
 
 * 建立具有完善 Lighthouse 分數功能的快速網站，並透過真實使用者監控 (RUM) 持續監控您的網站效能。
 * 透過分離內容來源來提高編寫工作效率。您可以一開啟即使用 AEM 編寫和文件型編寫。因此，您可以在同一網站上使用多個內容來源。
@@ -50,7 +50,7 @@ Edge Delivery Services 屬於 Adobe Experience Manager 一部份，因此 Edge D
 
 ## 取得 Adobe 的協助 {#adobe-gethelp}
 
-您可以透過預先被分配的產品協作頻道 (請參閱下文取得存取詳情) 與 Adobe 產品團隊互動，回答有關產品使用或最佳實務的問題。請注意，沒有與透過產品協作頻道進行對話相關的服務層級條款 (SLT)。如果產品問題需要額外調查和故障排除，並且需要符合回應 SLT，您可以按照[支援流程](https://experienceleague.adobe.com/?lang=en&amp;support-tab=home#support)來提交支援服務單。
+您可以透過預先被分配的產品協作頻道 (請參閱下文取得存取詳情) 與 Adobe 產品團隊互動，回答有關產品使用或最佳實務的問題。沒有透過產品共同作業管道與交談相關聯的服務等級條款(SLT)。 如果產品問題需要額外的調查和疑難排解，並且必須符合回應SLT，您可以遵循以下內容提交支援票證 [支援流程](https://experienceleague.adobe.com/?lang=en&amp;support-tab=home#support).
 
 Adobe 提供三個頻道來幫助您使用 Edge Delivery Services：
 
@@ -73,14 +73,14 @@ Adobe 致力於為您提供 Edge Delivery Services 和文件型製作的最佳�
 透過 Admin Console 記錄支援服務單的步驟：
 
 1. 將 **Edge Delivery** 加入服務單標題中。
-2. 在說明中，請提供以下詳細資訊：
+2. 在說明中，提供下列詳細資訊：
 
    * 即時網站的 URL。例如：[www.mydomain.com]。
    * 原始網站的 URL (.hlx URL)。
 
 ## 下一步 {#whats-next}
 
-開始先檢閱下一篇文章：[使用 Edge Delivery Services](/help/edge/using.md)。
+檢閱以開始 [使用Edge Delivery Services](/help/edge/using.md).
 
 ## 實用資源 {#useful-resources}
 

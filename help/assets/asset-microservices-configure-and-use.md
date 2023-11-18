@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Compute Microservices,Workflow,Asset Processing
 role: Architect,Admin
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2930'
+source-wordcount: '2928'
 ht-degree: 2%
 
 ---
@@ -194,7 +194,7 @@ asset compute服務整合可讓Experience Manager使用這些引數，傳遞至�
 若要將後處理工作流程組態新增至 [!DNL Experience Manager]，請遵循下列步驟：
 
 * 建立一或多個工作流程模型。 這些自訂模型稱為 *後處理工作流程模型* 在本檔案中。 這些是規則值 [!DNL Experience Manager] 工作流程模型。
-* 將所需的工作流程步驟新增至這些模型。 檢閱預設工作流程的步驟，並將所有必要的預設步驟新增至自訂工作流程。 這些步驟會根據工作流程模型設定在資產上執行。 例如，如果您想在資產上傳時自動進行智慧標籤，請將步驟新增至您的自訂後處理工作流程模型。
+* 將所需的工作流程步驟新增至這些模型。 檢閱預設工作流程的步驟，並將所有必要的預設步驟新增到自訂工作流程中。 這些步驟會根據工作流程模型設定在資產上執行。 例如，如果您想在資產上傳時自動進行智慧標籤，請將步驟新增至您的自訂後處理工作流程模型。
 * 新增 [!UICONTROL DAM更新資產工作流程已完成程式] 在結尾處步驟。 新增此步驟可確保Experience Manager知道處理何時結束，並且資產可以標示為已處理，即 *新增* 會顯示在資產上。
 * 建立「自訂工作流程執行器」服務的設定，以允許透過路徑（資料夾位置）或規則運算式來設定後處理工作流程模型的執行。
 

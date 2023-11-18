@@ -4,10 +4,10 @@ description: 設定雲端資源後，請使用AEM產品設定檔授與您的團�
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: c00f5d28-85af-4bd3-a50c-913d1342241c
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '886'
-ht-degree: 82%
+source-wordcount: '885'
+ht-degree: 80%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 82%
 
 在您閱讀了此上線過程中的上一個檔案後， [建立環境，](create-environments.md) 並設定雲端資源，使用AEM產品設定檔授與您的團隊對AEM的存取權。 作為系統管理員，您可以透過指派 AEM 產品設定檔來執行此操作。
 
-閱讀本文件後，您應會了解：
+閱讀本檔案後，您應會瞭解：
 
 * 什麼是 AEM 產品設定檔。
 * 如何將團隊成員新增到 AEM 使用者產品設定檔。
@@ -88,7 +88,7 @@ ht-degree: 82%
 
    ![管理存取權](/help/journey-onboarding/assets/add-team1.png)
 
-1. 會有新索引標籤將您引導至 Admin Console，您可以在其中存取環境的編寫執行個體。根據需要授與此人的權限選擇 **AEM 管理員**&#x200B;或 **AEM 使用者**。
+1. 會有新索引標籤將您引導至 Admin Console，您可以在其中存取環境的編寫執行個體。選取 **AEM管理員** 或 **AEM使用者** 根據授與此人的許可權而定。
 
    ![指派存取權](/help/journey-onboarding/assets/add-team2.png)
 

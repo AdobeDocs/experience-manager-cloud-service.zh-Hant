@@ -2,9 +2,9 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2022.1.0 版發行說明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2022.1.0 版發行說明。'
 exl-id: 1c40ab67-8fd7-4f29-b8c9-dd98b6d5b490
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: fe19e99baa921247f86542c6643c1faf837e7d91
 workflow-type: tm+mt
-source-wordcount: '1074'
+source-wordcount: '1072'
 ht-degree: 29%
 
 ---
@@ -88,12 +88,12 @@ ht-degree: 29%
 * 增強的myAccount元件
 * 產品推薦元件支援其他頁面型別（首頁、購物車、訂單確認）
 * **希望清單**
-   * 登入的訪客可將產品新增至願望清單
+   * 登入的訪客可將產品新增至允許清單
    * 您可以透過myAccount管理願望清單及其產品
    * 可以透過原則（例如產品Teaser、產品詳細資訊）在元件層級上啟用/停用「新增到願望清單」按鈕
    * 可作為核心元件使用，並可在AEM Venia Storefront中使用
 
-![希望清單](/help/assets/CIF/wishlist.png)
+<!-- Image was not found during PR validation despite correct path ![Wishlist](/help/assets/CIF/wantlist.png) -->
 
 ## Cloud Manager {#cloud-manager}
 

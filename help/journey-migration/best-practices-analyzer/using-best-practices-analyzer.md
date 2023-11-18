@@ -2,10 +2,10 @@
 title: 使用最佳做法分析工具
 description: 瞭解如何使用Best Practices Analyzer以瞭解升級整備程度。
 exl-id: e8498e17-f55a-4600-87d7-60584d947897
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2478'
-ht-degree: 46%
+source-wordcount: '2476'
+ht-degree: 45%
 
 ---
 
@@ -161,7 +161,7 @@ For Adobe Experience Manager 6.1, the tool is not functional and only the HTTP i
 
 如果快取已過期，則會在CSV檔案建置和下載之前重新產生報表。
 
-CSV 格式的報表包含從「模式偵測器」輸出產生的資訊，且會依類別類型、子類型和重要性層級排序和組織。其格式適用於 Microsoft Excel 等應用程式的檢視和編輯作業。其目的是要以可重複的格式提供所有的結果資訊，以利進行長時間的報表比較，藉此衡量進度。
+CSV 格式的報表包含從「模式偵測器」輸出產生的資訊，且會依類別類型、子類型和重要性層級排序和組織。其格式適用於 Microsoft Excel 等應用程式的檢視和編輯作業。其目的是要以可重複的格式提供所有結果資訊，以利比較不同時間的報表，藉此衡量進度。
 
 CSV 格式報表的欄包括：
 

@@ -2,9 +2,9 @@
 title: 如何在Adaptive Forms中建立和使用主題？
 description: 您可以使用主題來設定樣式，並使用核心元件來將視覺身分提供給最適化表單。 您可以在任何數量的最適化Forms中共用主題。
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2677'
+source-wordcount: '2676'
 ht-degree: 4%
 
 ---
@@ -367,7 +367,7 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 
    ![執行管道](/help/forms/assets/canvas-theme-run-pipeline.png)
 
-建置完成後，主題即可在製作例項上使用。 它會顯示在 **[!UICONTROL 樣式]** 索引標籤建立新最適化表單時，使用最適化表單建立精靈中的這個索引標籤。
+建置完成後，主題即可在製作例項上使用。 它會顯示在 **[!UICONTROL 樣式]** 索引標籤建立最適化表單時，使用最適化表單建立精靈中的這個索引標籤。
 
 ![樣式標籤下可用的自訂主題](/help/forms/assets/custom-theme-style-tab.png)
 

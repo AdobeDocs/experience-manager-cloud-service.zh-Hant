@@ -2,10 +2,10 @@
 title: 建立資產資料夾 - Headless 設定
 description: 使用 AEM 內容片段模型定義內容片段的結構，這是 Headless 內容的基礎。
 exl-id: 9a156a17-8403-40fc-9bd0-dd82fb7b2235
-source-git-commit: 7d09cafc4f8518fee185d3f9efc76c33ec20f9a3
-workflow-type: ht
-source-wordcount: '383'
-ht-degree: 100%
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
+source-wordcount: '377'
+ht-degree: 88%
 
 ---
 
@@ -25,8 +25,8 @@ ht-degree: 100%
 
 管理員只需要偶爾建立資料夾來組織建立的內容。出於本快速入門指南的目的，我們只需要建立一個資料夾。
 
-1. 登入 AEM as a Cloud Service，然後從主選單中選擇&#x200B;**導覽 -> 資產 -> 檔案**。
-1. 點選或按一下&#x200B;**建立 -> 資料夾**。
+1. 登入AEMas a Cloud Service，並從主功能表選取 **導覽>資產>檔案**.
+1. 選取 **建立>資料夾**.
 1. 為您的資料夾提供 **標題**&#x200B;和&#x200B;**名稱**。
    * **標題** 應該是描述性的。
    * **名稱**&#x200B;會成為存放庫中的節點名稱。
@@ -38,12 +38,12 @@ ht-degree: 100%
 1. 在&#x200B;**屬性**&#x200B;視窗中，選擇&#x200B;**雲端服務**&#x200B;索引標籤。
 1. 對於&#x200B;**雲端設定**，選擇您之前建立的[設定。](create-configuration.md)
    ![設定資產資料夾](../assets/assets-folder-configure.png)
-1. 點選或按一下&#x200B;**儲存並關閉**。
-1. 點選或按一下&#x200B;**確定**。
+1. 選取 **儲存並關閉**.
+1. 選取 **確定** 在確認視窗中。
 
    ![確認視窗](../assets/assets-folder-confirmation.png)
 
-您可以在剛建立的資料夾中建立其他子資料夾。子資料夾將繼承父資料夾的&#x200B;**雲端設定**。但是，如果您希望使用來自另一個設定的模型，這可以被覆寫。
+您可以在剛建立的資料夾中建立其他子資料夾。子資料夾將繼承父資料夾的&#x200B;**雲端設定**。不過，如果您要使用其他組態的模型，則可以覆寫此選項。
 
 如果您使用的是當地語系化網站結構，則可以在新資料夾下[建立語言根](/help/assets/translate-assets.md)。
 

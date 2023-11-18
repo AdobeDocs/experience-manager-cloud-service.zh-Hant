@@ -4,10 +4,10 @@ description: 了解如何在 Admin Console 中建立使用者設定檔來管理�
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: 4edecfcd-6301-4a46-98c7-eb5665f48995
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '985'
-ht-degree: 96%
+source-wordcount: '982'
+ht-degree: 94%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 96%
 
 ## 概觀 {#overview}
 
-Adobe 有時需要就 AEM as a Cloud Service 環境聯絡使用者。除了產品內通知，Adobe 偶爾也會使用電子郵件進行通知。此類電子郵件通知有兩種類型：
+Adobe有時會就AEMas a Cloud Service環境聯絡使用者。 除了產品內通知，Adobe 偶爾也會使用電子郵件進行通知。此類電子郵件通知有兩種類型：
 
 * **事件通知** - 這些通知是在事件期間或 Adobe 發現您的 AEM as a Cloud Service 環境存在潛在可用性問題時傳送的。
 * **主動通知** - 當 Adobe 支援團隊成員想要提供有關可使您的 AEM as a Cloud Service 環境受益的潛在最佳化或建議的指引時，將傳送這些通知。
@@ -148,4 +148,4 @@ Adobe 有時需要就 AEM as a Cloud Service 環境聯絡使用者。除了產�
 
 如果您想要此上線歷程以外的內容，以下是您可選擇的其他資源。
 
-* [行動中心](/help/operations/actions-center.md)- 利用行動中心可便於對事故和其他重要資訊採取行動。
+* [動作中心](/help/operations/actions-center.md)  — 善用行動中心，方便處理事件和其他重要資訊。

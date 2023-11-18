@@ -2,10 +2,10 @@
 title: 從範本建立網站
 description: 瞭解如何使用網站範本快速建立AEM網站。
 exl-id: 31bb04c2-b3cc-44ca-b517-5b0d66d9b1fa
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1496'
-ht-degree: 3%
+source-wordcount: '1474'
+ht-degree: 2%
 
 ---
 
@@ -40,8 +40,8 @@ ht-degree: 3%
 
 * `files`：包含UI套件、XD檔案和可能的其他檔案的資料夾
 * `previews`：包含網站範本熒幕擷圖的資料夾
-* `site`：針對從此範本建立之每個網站複製的內容套件，例如頁面範本、頁面等
-* `theme`：範本主題的來源，用於修改網站的外觀，包括CSS、JavaScript等
+* `site`：針對從此範本建立之每個網站複製的內容套件，例如頁面範本、頁面等。
+* `theme`：範本主題的來源，用於修改網站的外觀，包括CSS、JavaScript等。
 
 範本具備強大的功能，可重複使用，讓內容作者能夠快速建立網站。 由於您可以在AEM安裝中使用多個範本，因此您可以彈性地滿足各種業務需求。
 
@@ -71,17 +71,17 @@ ht-degree: 3%
 
    * `https://<your-author-environment>.adobeaemcloud.com/sites.html/content`
 
-1. 點選或按一下 **建立** 在畫面的右上方，從下拉式功能表中選取 **從範本建立網站**.
+1. 選取 **建立** 在畫面的右上方，從下拉式功能表中選取 **從範本建立網站**.
 
    ![從範本建立新網站](assets/create-site-from-template.png)
 
-1. 在建立網站精靈中，點選或按一下 **匯入** 左欄頂端的。
+1. 在「建立網站」精靈中，選取 **匯入** 左欄頂端的。
 
    ![網站建立精靈](assets/site-creation-wizard.png)
 
-1. 在檔案瀏覽器中，找到範本 [您先前已下載](#obtaining-template) 然後點選或按一下 **上傳**.
+1. 在檔案瀏覽器中，找到範本 [您先前已下載](#obtaining-template) 並選取 **上傳**.
 
-1. 上傳後，範本就會顯示在可用範本清單中。 點選或按一下以將其選取（這也會在右欄中顯示範本的相關資訊），然後點選或按一下 **下一個**.
+1. 上傳後，範本就會顯示在可用範本清單中。 選取以將其選取（這也會在右欄中顯示範本的相關資訊），然後選取 **下一個**.
 
    ![選取範本](assets/select-site-template.png)
 
@@ -90,11 +90,11 @@ ht-degree: 3%
    * 網站標題會顯示在瀏覽器標題列中。
    * 網站名稱會成為URL的一部分。
 
-1. 點選或按一下 **建立** 且新網站是從網站範本建立的。
+1. 選取 **建立** 且新網站是從網站範本建立的。
 
    ![新網站的詳細資料](assets/create-site-details.png)
 
-1. 在出現的確認對話方塊中，點選或按一下 **完成**.
+1. 在出現的確認對話方塊中，選取 **完成**.
 
    ![成功對話方塊](assets/success.png)
 
@@ -115,7 +115,7 @@ ht-degree: 3%
 
 如果您確實需要額外的前端自訂，請記住，前端開發人員可能不熟悉您的內容的詳細資訊。 因此，建議為開發人員提供典型內容的路徑，當自訂主題時，作為參考基礎。 典型的範例是網站主語言的首頁。
 
-1. 在網站瀏覽器中，導覽至網站主要語言的首頁，然後點選或按一下頁面以選取它，然後點選或按一下 **編輯** 功能表列中的。
+1. 在網站瀏覽器中，導覽至網站主要語言的首頁，然後選取要選取的頁面，再選取 **編輯** 功能表列中的。
 
    ![一般首頁](assets/home-page-in-console.png)
 
@@ -137,7 +137,7 @@ ht-degree: 3%
 
    ![顯示網站邊欄](assets/show-site-rail.png)
 
-1. 點選或按一下新網站的根目錄，然後點選或按一下 **下載主題來源** 在網站邊欄中。
+1. 選取新網站的根目錄，然後選取 **下載主題來源** 在網站邊欄中。
 
    ![下載主題來源](assets/download-theme-sources.png)
 
@@ -147,8 +147,8 @@ ht-degree: 3%
 
 為了讓前端開發人員使用您網站中的實際AEM內容預覽自訂，您必須設定Proxy使用者。
 
-1. 在AEM中，從主導覽移至 **工具** -> **安全性** -> **使用者**.
-1. 在使用者管理控制檯中，點選或按一下 **建立**.
+1. 在AEM中，從主導覽移至 **工具** > **安全性** > **使用者**.
+1. 在使用者管理主控台中，選取 **建立**.
 
    ![使用者管理主控台](assets/user-management-console.png)
 1. 在 **建立新使用者** 視窗至少必須提供：
@@ -162,7 +162,7 @@ ht-degree: 3%
 
    ![新增至群組](assets/add-to-group.png)
 
-1. 點選或按一下&#x200B;**儲存並關閉**。
+1. 選取 **儲存並關閉**.
 
 您現在已完成設定。 內容作者現在可以開始在網站上建立內容，為歷程的下一步中的前端自訂做準備。
 
@@ -181,7 +181,7 @@ ht-degree: 3%
 我們建議您檢閱檔案，繼續快速網站建立歷程的下一部分 [設定您的管道，](pipeline-setup.md) 以下是一些其他可選資源，這些資源對本文中提到的一些概念進行了更深入的探究，但並非繼續此歷程所必需的。
 
 * [AEM標準網站範本](https://github.com/adobe/aem-site-template-standard)  — 這是AEM標準網站範本的GitHub存放庫。
-* [建立及組織頁面](/help/sites-cloud/authoring/fundamentals/organizing-pages.md)  — 如果您希望在從範本建立AEM網站後進一步自訂，本指南會詳細說明如何管理您的網站頁面。
+* [建立及組織頁面](/help/sites-cloud/authoring/fundamentals/organizing-pages.md)  — 如果您想要在從範本建立AEM網站後進一步自訂，本指南會詳細說明如何管理您的網站頁面。
 * [如何使用封裝](/help/implementing/developing/tools/package-manager.md)  — 套件可匯入和匯出存放庫內容。 本檔案說明如何在AEM 6.5中使用套件（同樣適用於AEMaaCS）。
 * [網站管理文件](/help/sites-cloud/administering/site-creation/create-site.md) - 查看關於建立網站的技術文件，了解快速網站建立工具功能的更多詳細資訊。
 * [建立表單或新增表單至AEM Sites頁面](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)  — 瞭解將表單整合至網站的分步技巧和最佳實務，將您的數位體驗最佳化以發揮最大影響力。

@@ -2,10 +2,10 @@
 title: 內容片段 — 設定瀏覽器（資產 — 內容片段）
 description: 瞭解如何在設定瀏覽器中啟用內容片段功能。
 exl-id: 9fc911de-1d33-4811-8f58-ea21ce94bedb
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '358'
-ht-degree: 10%
+source-wordcount: '355'
+ht-degree: 17%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 10%
 在使用內容片段之前，您必須使用 **設定瀏覽器** 若要啟用：
 
 * **內容片段模型**  — 必要
-* **GraphQL持續查詢**  — 選擇性
+* **GraphQL持續查詢**  — 選填
 
 >[!CAUTION]
 >
@@ -38,7 +38,7 @@ ht-degree: 10%
 
 >[!NOTE]
 >
->如需詳細資訊，請參閱 [設定瀏覽器](/help/implementing/developing/introduction/configurations.md#using-configuration-browser).
+>另請參閱 [設定瀏覽器](/help/implementing/developing/introduction/configurations.md#using-configuration-browser).
 
 >[!NOTE]
 >
@@ -51,7 +51,7 @@ ht-degree: 10%
 >
 >* GraphQL端點（仍然）以父（根）設定為基礎。
 >
->* 與父（根）設定相關的持續查詢（依然）已儲存。
+>* 與父（根）設定相關的持續查詢（仍）已儲存。
 
 
 1. 導覽至「 **工具**」、「 **一般**」，然後開啟「 **設定瀏覽器**」。
@@ -59,8 +59,8 @@ ht-degree: 10%
 1. 使用 **建立** 若要開啟對話方塊，您可以：
 
    1. 指定 **標題**.
-   1. 此 **名稱** 會成為存放庫中的節點名稱。
-      * 系統會根據標題自動產生，並根據 [AEM命名慣例](/help/implementing/developing/introduction/naming-conventions.md).
+   1. **名稱**&#x200B;會成為存放庫中的節點名稱。
+      * 它會根據標題自動產生，並根據 [AEM 命名慣例](/help/implementing/developing/introduction/naming-conventions.md)進行調整。
       * 您可以視需要加以調整。
    1. 若要啟用其使用，請選取
       * **內容片段模型**
@@ -76,6 +76,6 @@ ht-degree: 10%
 
 設定時 **全域** 已啟用內容片段功能，然後套用至任何資產資料夾。
 
-若要搭配可比的「資產」資料夾使用其他設定（即不包括全域），您必須定義連線。 此連線可透過選取適當的 **設定** 在 **Cloud Services** 的標籤 **資料夾屬性** 適當資料夾的URL。
+若要搭配可比的「資產」資料夾使用其他設定（即不包括全域），您必須定義連線。 選取適當的連線即可完成此連線 **設定** 在 **Cloud Service** 的標籤 **資料夾屬性** 的對應資料夾。
 
 ![套用設定](assets/cfm-conf-02.png)

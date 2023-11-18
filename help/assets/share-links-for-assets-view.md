@@ -2,9 +2,9 @@
 title: 如何共用資產的連結？
 description: 產生連結，然後和無法存取  [!DNL Assets view]  應用程式的其他人共用資產。
 exl-id: 6e05b06c-7436-40e3-acee-c8b1ed218f9e
-source-git-commit: e2efffe0192f7914fd97178884b7938b84fd9a27
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '407'
+source-wordcount: '406'
 ht-degree: 93%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 93%
 
 若要產生資產或包含資產的檔案夾的連結：
 
-1. 請選取資產和/或包含資產的檔案夾，並按一下&#x200B;**[!UICONTROL 共用連結]**。
+1. 選取包含資產的資產或（或）資料夾，然後按一下 **[!UICONTROL 共用連結]**.
 
 1. 如果您要進行調整，可按一下「行事曆」圖示，以使用&#x200B;**[!UICONTROL 到期日]**&#x200B;欄位定義連結的到期日。您還可以直接以「`yyyy-mm-dd`」格式指定日期。預設的連結到期日設為共用日期起的 2 週。
 
@@ -43,9 +43,9 @@ ht-degree: 93%
 
 ## 後續步驟 {#next-steps}
 
-* [觀看在「資產」檢視中分享資產連結的相關影片](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/link-sharing.html)
+* [觀看在「資產」檢視中共用資產連結的相關影片](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/link-sharing.html)
 
-* 使用提供產品意見回饋 [!UICONTROL 意見反應] 「資產」檢視使用者介面中可用的選項
+* 使用資產檢視使用者介面所提供的[!UICONTROL 意見回饋]選項提供產品意見回饋
 
 * 若要提供文件意見回饋，請使用右側邊欄提供的[!UICONTROL 編輯此頁面]![來編輯頁面](assets/do-not-localize/edit-page.png)或[!UICONTROL 記錄問題]![來建立 GitHub 問題](assets/do-not-localize/github-issue.png)
 

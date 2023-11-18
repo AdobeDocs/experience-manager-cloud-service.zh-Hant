@@ -1,13 +1,13 @@
 ---
 title: 自訂頁面屬性的檢視
 description: 了解作者如何檢視和編輯頁面屬性。
-source-git-commit: f159f0ef86c2b82da4e7308a0892b4947b6e43fb
-workflow-type: ht
-source-wordcount: '364'
-ht-degree: 100%
+exl-id: 363b3c2d-f965-485f-bdae-2ea5b4cecb83
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
+source-wordcount: '361'
+ht-degree: 92%
 
 ---
-
 
 # 自訂頁面屬性的檢視{#customizing-views-of-page-properties}
 
@@ -70,10 +70,10 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->設定和 Live Copy 搭配使用的頁面屬性時，如需更多詳細資料，請參閱文件「[擴充多網站管理員](/help/implementing/developing/extending/msm.md#configuring-msm-locks-on-page-properties)」。
+>當設定要與即時副本一起使用的頁面屬性時，請參閱 [擴充多站點管理員](/help/implementing/developing/extending/msm.md#configuring-msm-locks-on-page-properties) 以取得更多詳細資料。
 
 ## 頁面屬性的設定範例 {#sample-configuration-of-page-properties}
 
 本範例會示範 [Sling 資源合併](/help/implementing/developing/introduction/sling-resource-merger.md)的對話框差異技術，包括 [`sling:orderBefore`](/help/implementing/developing/introduction/sling-resource-merger.md#properties) 的使用。還會說明 `cq:showOnCreate` 和 `cq:hideOnEdit` 兩者的使用。
 
-您可以在以下位置找到此頁面的程式碼：[GitHub。](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-page-dialog)
+您可以在此頁面找到程式碼： [GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-page-dialog).

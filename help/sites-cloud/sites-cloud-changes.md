@@ -2,9 +2,9 @@
 title: AEM Cloud Service 中 AEM Sites 的重大變更
 description: 進一步瞭解AEM Cloud Service中AEM Sites的重大變更
 exl-id: 60b1aec4-75a0-459f-bf77-8d8c1af757ce
-source-git-commit: d1da8559da856e028a5dcad1d0c0b2c00176af0c
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '537'
+source-wordcount: '535'
 ht-degree: 19%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 19%
 
 # AEM Sites as a Cloud Service 重大變更 {#notable-changes}
 
-AEM Sitesas a Cloud Service在雲端原生AEMas a Cloud Service平台中提供體驗管理功能。 除了AEMas a Cloud Service的核心優點（例如雲端原生擴充性、運作時間和隨時保持最新狀態），AEM Sitesas a Cloud Service還提供許多Sites特有的變更和新增功能。
+AEM Sitesas a Cloud Service在雲端原生AEMas a Cloud Service平台中提供體驗管理功能。 除了AEMas a Cloud Service的核心優點（例如雲端原生擴充性、運作時間和隨時保持最新狀態），AEM Sitesas a Cloud Service還提供數個Sites特有的變更和新增功能。
 
 >[!NOTE]
 >本檔案著重說明AEM Sites的重大變更。 如需AEMas a Cloud Service和其他模組的一般變更，請參閱：

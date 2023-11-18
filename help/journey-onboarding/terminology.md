@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service 技術
 description: 在您登入 AEMaaCS 之前，了解系統的一些術語及其基本結構會很有幫助。
 exl-id: d02776a7-836a-4894-a5d5-ae88cc7e4e76
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '461'
-ht-degree: 87%
+source-wordcount: '463'
+ht-degree: 81%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 87%
 
 AEM as a Cloud Service 是一種功能強大且靈活的工具，要使用任何工具，您應該熟悉它的組織以及用於描述它的術語和語言。本文件總結了您在開始使用該系統之前需要了解的一些關鍵術語。
 
-閱讀本文件後，您將了解：
+閱讀本檔案後，您應瞭解
 
 * 構成 AEMaaCS 的不同層。
 * 每層的基本功能。
@@ -44,7 +44,7 @@ AEM as a Cloud Service 是一種功能強大且靈活的工具，要使用任何
    * WKND Media 部門的 Assets 計畫
 * WKND Magazine 和 WKND Media 計畫都有開發、測試和生產&#x200B;**環境**。
 * **存放庫**&#x200B;用於維護 WKND Magazine 和 WKND Media 的自訂計劃碼和應用計劃。
-* 有各種&#x200B;**工具和工作流程**&#x200B;可跨存放庫運作，以使用 CI/CD 管道、存取記錄、存取 AEM 等部署計劃碼。
+* 各種 **工具與工作流程** 在整個存放庫中進行工作，以使用CI/CD管道、存取記錄、存取AEM等部署程式碼。
 
 ## 下一步 {#what-is-next}
 

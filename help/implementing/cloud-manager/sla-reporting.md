@@ -2,10 +2,10 @@
 title: SLA 報告
 description: 了解如何查看生產 AEM 環境相對於簽訂的服務水平協議 (SLA) 的效能。
 exl-id: 03932415-a029-4703-b44a-f86a87edb328
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '247'
-ht-degree: 95%
+source-wordcount: '245'
+ht-degree: 91%
 
 ---
 
@@ -32,7 +32,7 @@ SLA 報告數據可透過&#x200B;**報告**&#x200B;標籤。請依照下列步�
 
 ## SLA 量度 {#sla-metrics}
 
-所選年份的圖表包括許多資料集。
+所選年份的圖表包括數個資料集。
 
 * **發布層級合約** - 這是您和 Adobe 的合約中為發佈層級定義的 SLA。
 

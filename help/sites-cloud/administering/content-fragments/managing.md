@@ -4,9 +4,9 @@ description: 瞭解如何從主控台和編輯器管理您的AEM內容片段（�
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2532'
+source-wordcount: '2531'
 ht-degree: 3%
 
 ---
@@ -200,7 +200,7 @@ ht-degree: 3%
 
      ![內容片段主控台 — 語言指標](assets/cf-managing-console-language-indicator.png)
 
-   * 按一下/點選計數，開啟顯示所有語言副本的對話方塊。 若要開啟特定語言副本，請按一下 **標題** 在對話方塊中。
+   * 選取計數以開啟顯示所有語言副本的對話方塊。 若要開啟特定語言副本，請按一下 **標題** 在對話方塊中。
 
      ![內容片段主控台 — 「語言」對話方塊](assets/cf-managing-console-languages-dialog.png)
 
@@ -299,7 +299,7 @@ ht-degree: 3%
 
   >[!NOTE]
   >
-  >如需預覽環境的詳細資訊，請參閱：
+  >如需預覽環境的詳細資訊，請參閱下列內容：
   >
   >* [管理環境](/help/implementing/cloud-manager/manage-environments.md#access-preview-service)
   >* [設定預覽階層的 OSGi 設定](/help/implementing/preview-tier/preview-tier-configuring-osgi.md#configuring-osgi-settings-for-the-preview-tier)
@@ -413,7 +413,7 @@ The **Replace** option is available to find, and replace, specified text in your
 
 ![內容片段主控台 — 語言指標](assets/cfc-console-language-indicator.png)
 
-按一下/點選計數，開啟顯示所有語言副本的對話方塊。 若要開啟特定語言副本，請按一下 **標題** 在對話方塊中。
+選取計數以開啟顯示所有語言副本的對話方塊。 若要開啟特定語言副本，請按一下 **標題** 在對話方塊中。
 
 ![內容片段主控台 — 「語言」對話方塊](assets/cf-managing-console-languages-dialog.png)
 

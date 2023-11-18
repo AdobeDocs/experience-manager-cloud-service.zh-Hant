@@ -4,9 +4,9 @@ description: 瞭解翻譯規則如何識別需要翻譯的內容。
 feature: Language Copy
 role: Admin
 exl-id: 24cc6aa6-5b3c-462b-a10a-8b25277229dc
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1290'
+source-wordcount: '1288'
 ht-degree: 2%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 2%
 
 如果 **啟用內容模型欄位以進行翻譯** 選項作用中，AEM將使用 **可翻譯** 欄位於 [內容片段模型](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#properties) 以判斷欄位是否要翻譯，並據此自動建立翻譯規則。 此選項會取代您可能已建立的任何翻譯規則，而且不需要介入或額外的步驟。
 
-如果您想使用翻譯規則來翻譯您的內容片段， **啟用內容模型欄位以進行翻譯** 必須停用「翻譯整合架構」設定上的選項，而且您必須依照下列步驟建立規則。
+如果要使用翻譯規則來翻譯您的內容片段，請 **啟用內容模型欄位以進行翻譯** 必須停用「翻譯整合架構」設定上的選項，而且您必須依照下列步驟建立規則。
 
 ## 概觀 {#overview}
 
@@ -167,7 +167,7 @@ ht-degree: 2%
 
    ![新增翻譯內容](../assets/add-translation-context.png)
 
-1. 使用路徑瀏覽器來選取所需的內容，然後點選或按一下 **確認** 按鈕以儲存。
+1. 使用路徑瀏覽器來選取所需的前後關聯，然後選取 **確認** 按鈕以儲存。
 
    ![選取內容](../assets/select-context.png)
 

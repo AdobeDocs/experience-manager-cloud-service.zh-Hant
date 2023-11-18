@@ -2,9 +2,9 @@
 title: 組建環境
 description: 了解 Cloud Manager 的構建環境以及它如何構建和測試您的程式碼。
 exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1005'
+source-wordcount: '1004'
 ht-degree: 96%
 
 ---
@@ -42,7 +42,7 @@ Cloud Manager 使用專門的構建環境構建和測試您的程式碼。
 
 ### 使用特定 Java 版本 {#using-java-support}
 
-預設情況下，專案會由 Cloud Manager 建置流程使用 Oracle 8 JDK 來建置。希望使用備用 JDK 的客戶有兩種選擇。
+預設情況下，專案會由 Cloud Manager 建置流程使用 Oracle 8 JDK 來建置。想要使用替代JDK的客戶有兩個選項。
 
 * [Maven 工具鏈](#maven-toolchains)
 * [如需全部 Maven 執行流程，可選取備用 JDK 版本。](#alternate-maven-jdk-version)
@@ -129,7 +129,7 @@ Cloud Manager 使用專門的構建環境構建和測試您的程式碼。
 | `BRANCH` | 為執行設定的分支 |
 | `CM_PIPELINE_ID` | 數值的管道識別碼 |
 | `CM_PIPELINE_NAME` | 管道名稱 |
-| `CM_PROGRAM_ID` | 數值的計畫識別碼 |
+| `CM_PROGRAM_ID` | 數值的方案識別碼 |
 | `CM_PROGRAM_NAME` | 計畫名稱 |
 | `ARTIFACTS_VERSION` | 對於中繼或生產管道，由 Cloud Manager 產生的綜合版本 |
 | `CM_AEM_PRODUCT_VERSION` | 發行版本 |
@@ -179,7 +179,7 @@ $ aio cloudmanager:list-pipeline-variables PIPELINEID
 
 ## 安裝附加系統套件 {#installing-additional-system-packages}
 
-為了充分發揮作用，部分組建需要安裝附加系統套件。例如，組建可能會叫用Python或Ruby指令碼，因此需要安裝適當的語言解譯器。 這可透過呼叫 [`exec-maven-plugin`](https://www.mojohaus.org/exec-maven-plugin/) `pom.xml`以叫用 APT 來完成。這項執行通常應包裝在 Cloud Manager 特定的 Maven 設定檔中。若要安裝 Python。
+為了充分發揮作用，部分組建需要安裝附加系統套件。例如，組建可能會叫用Python或Ruby指令碼，而且必須安裝適當的語言解譯器。 這可透過呼叫 [`exec-maven-plugin`](https://www.mojohaus.org/exec-maven-plugin/) `pom.xml`以叫用 APT 來完成。這項執行通常應包裝在 Cloud Manager 特定的 Maven 設定檔中。若要安裝 Python。
 
 ```xml
         <profile>

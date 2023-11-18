@@ -2,10 +2,10 @@
 title: 不同之處與新增功能 - Adobe Experience Manager as a Cloud Service
 description: 不同之處與新增功能 - Adobe Experience Manager (AEM) as a Cloud Service。
 exl-id: d1ce126e-960c-4367-b741-af709dd81010
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1895'
-ht-degree: 98%
+source-wordcount: '1889'
+ht-degree: 94%
 
 ---
 
@@ -36,13 +36,13 @@ AEM 這麼多年來一直透過以下方式提供：
 
 >[!NOTE]
 >
->如需內部部署和受管理服務版本的更多詳細資訊，請參閱 [AEM 6.5](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=zh-Hant) 的文件集。
+>如需內部部署和託管服務版本的詳細資訊，請參閱 [AEM 6.5檔案](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=zh-Hant) .
 
 ## 架構 {#architecture}
 
 >[!NOTE]
 >
->如需更多詳細資訊，請參閱[架構](/help/overview/architecture.md)。
+>如需詳細資訊，請參閱 [架構](/help/overview/architecture.md).
 
 AEM as a Cloud Service 現已具備：
 
@@ -87,7 +87,7 @@ AEM 版本更新有兩種類型：
 
 >[!TIP]
 >
->如需更多詳細資訊，請參閱 [AEM 版本更新](/help/implementing/deploying/aem-version-updates.md)。
+>如需詳細資訊，請參閱 [AEM版本更新](/help/implementing/deploying/aem-version-updates.md).
 
 ## Cloud Manager {#cloud-manager}
 
@@ -156,7 +156,7 @@ Cloud Manager 在跨多個地理區域的資料中心建立環境，使用範圍
 
 >[!NOTE]
 >
->如需更多詳細資訊，您可以從[開發指南](/help/implementing/developing/introduction/development-guidelines.md)和[開發 - WKND 教學課程](/help/implementing/developing/introduction/develop-wknd-tutorial.md)開始。
+>如需詳細資訊，您可從以下開始 [開發指導方針](/help/implementing/developing/introduction/development-guidelines.md) 和 [開發 — WKND教學課程](/help/implementing/developing/introduction/develop-wknd-tutorial.md).
 
 支援 AEM as a Cloud Service 的新架構涉及對整體開發人員體驗的一些重要變更。AEM as a Cloud Service 的主要目標之一是讓有經驗的客戶 (已經在使用內部部署或做為 Adobe Managed Services 的 AEM) 盡快移轉到 AEM as a Cloud Service，而無需重寫他們的大部分自訂程式碼。但是，可能仍需要進行一些調整。
 
@@ -224,7 +224,7 @@ AEM as a Cloud Service 的操作也受到新的監控、報告和警報基礎結
 
 >[!NOTE]
 >
->如需更多詳細資訊，請參閱[安全性 - IMS 支援](/help/security/ims-support.md)。
+>另請參閱 [安全性 — IMS支援](/help/security/ims-support.md).
 
 AEM as a Cloud Service 最重大的變更是完全整合使用 Adobe ID 以存取編寫層。
 
@@ -240,7 +240,7 @@ AEM as a Cloud Service 最重大的變更是完全整合使用 Adobe ID 以存�
 
 >[!NOTE]
 >
->如需更多詳細資訊，[基本處理](/help/sites-cloud/authoring/getting-started/basic-handling.md)是很好的起點。
+>如需詳細資訊，請參閱 [基本處理](/help/sites-cloud/authoring/getting-started/basic-handling.md) 是個不錯的起點。
 
 使用過 AEM 的任何人都會非常熟悉 Sites 和 Assets 的編寫使用者介面 (UI) 的基本原理。
 
@@ -274,6 +274,6 @@ Adobe Experience Manager Assets as a Cloud Service 為企業提供一種雲端�
 
 >[!TIP]
 >
->大致了解 AEM as a Cloud Service 後，您可以透過查看[上線歷程](/help/journey-onboarding/overview.md)來快速上線。
+>當您概要瞭解AEMas a Cloud Service時，您可以檢閱 [入門歷程](/help/journey-onboarding/overview.md).
 >
 >已經入門或準備好深入測試 AEM 功能？安裝 [AEM 參考示範附加元件](/help/journey-sites/demos-add-on/overview.md)以使用豐富的範例探索 AEM 的強大功能。

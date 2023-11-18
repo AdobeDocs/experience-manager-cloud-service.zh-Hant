@@ -4,9 +4,9 @@ description: 瞭解如何使用AEM建立網站，並使用網站範本定義網�
 feature: Administering
 role: Admin
 exl-id: 9c71c167-2934-4210-abd9-ab085b36593b
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '773'
+source-wordcount: '756'
 ht-degree: 11%
 
 ---
@@ -55,19 +55,19 @@ AEM快速網站建立工具可讓非開發人員使用網站範本，從頭開�
 
    * `https://<your-author-environment>.adobeaemcloud.com/sites.html/content`
 
-1. 點選或按一下 **建立** 在畫面的右上方，從下拉式功能表中選取 **從範本建立網站**.
+1. 選取 **建立** 在畫面的右上方，從下拉式功能表中選取 **從範本建立網站**.
 
    ![從範本建立網站](../assets/create-site-from-template.png)
 
-1. 在「建立網站」精靈中，點選或按一下左側面板中的現有範本或開啟 **匯入** ，以匯入新的範本。
+1. 在「建立網站」精靈中，選取左側面板中或上的現有範本 **匯入** ，以匯入新的範本。
 
    ![網站建立精靈](../assets/site-creation-wizard.png)
 
-   1. 如果您選擇匯入，請在檔案瀏覽器中，找到您要使用的範本，然後點選或按一下 **上傳**.
+   1. 如果您選擇匯入，請在檔案瀏覽器中找出您要使用的範本，然後選取 **上傳**.
 
    1. 上傳後，範本就會顯示在可用範本清單中。
 
-1. 選取範本時，它會在右欄中顯示範本的相關資訊。 選取您想要的範本後，點選或按一下 **下一個**.
+1. 選取範本時，它會在右欄中顯示範本的相關資訊。 選取您想要的範本後，選取 **下一個**.
 
    ![選取範本](../assets/select-site-template.png)
 
@@ -77,11 +77,11 @@ AEM快速網站建立工具可讓非開發人員使用網站範本，從頭開�
    * 網站名稱會成為URL的一部分。
    * 網站名稱必須符合 [AEM頁面命名慣例](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#page-name-restrictions-and-best-practices).
 
-1. 點選或按一下 **建立** 並從網站範本建立網站。
+1. 選取 **建立** 並從網站範本建立網站。
 
    ![新網站的詳細資料](../assets/create-site-details.png)
 
-1. 在出現的確認對話方塊中，點選或按一下 **完成**.
+1. 在出現的確認對話方塊中，選取 **完成**.
 
    ![成功對話方塊](../assets/success.png)
 
@@ -93,10 +93,10 @@ AEM快速網站建立工具可讓非開發人員使用網站範本，從頭開�
 
 ## 網站自訂 {#site-customization}
 
-如果您的網站需要在可用範本之外進行自訂，您有多種選擇。
+如果您的網站需要在可用範本之外進行自訂，您有幾個選項。
 
-* 如果需要調整網站結構或初始內容， [網站範本可自訂以符合您的需求](site-templates.md).
-* 如果需要調整網站樣式， [可以下載網站主題並加以自訂](/help/journey-sites/quick-site/overview.md).
-* 如果需要調整網站功能， [網站可完全自訂](/help/implementing/developing/introduction/develop-wknd-tutorial.md).
+* 如果必須調整網站結構或初始內容， [網站範本可自訂以符合您的需求](site-templates.md).
+* 如果必須調整網站樣式， [可以下載網站主題並加以自訂](/help/journey-sites/quick-site/overview.md).
+* 如果必須調整網站功能， [網站可完全自訂](/help/implementing/developing/introduction/develop-wknd-tutorial.md).
 
 任何自訂作業都應在開發團隊的支援下進行。

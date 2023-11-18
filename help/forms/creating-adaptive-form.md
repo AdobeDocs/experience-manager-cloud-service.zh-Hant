@@ -5,7 +5,7 @@ feature: Adaptive Forms
 role: User, Developer
 level: Beginner
 exl-id: 38ca5eea-793b-420b-ae60-3a0bd83caf00
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '1546'
 ht-degree: 90%
@@ -26,7 +26,7 @@ ht-degree: 90%
 
 開始之前，請先了解您可以使用的表單元件類型：
 
-* [最適化Forms核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=zh-Hant) 是標準化的資料擷取元件。 這些元件為您的數位註冊體驗提供自訂功能、縮短的開發時間並降低維護成本。開發人員可以輕鬆地自訂這些元件和設計其樣式。Adobe建議運用這些現代且可擴充的元件來開發最適化Forms。
+* [最適化Forms核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=zh-Hant) 是標準化的資料擷取元件。 這些元件為您的數位註冊體驗提供自訂功能、縮短的開發時間並降低維護成本。開發人員可以輕鬆地自訂這些元件和設計其樣式。Adobe建議使用這些現代且可擴展的元件來開發最適化Forms。
 
 * [最適化Forms Foundation元件](creating-adaptive-form.md) 是傳統（舊）資料擷取元件。 您可以繼續使用這些元件來編輯以現有基礎元件為主的最適化表單。如果您要建立新表單，Adobe 建議使用[](creating-adaptive-form-core-components.md)最適化表單核心元件以建立最適化表單。
 

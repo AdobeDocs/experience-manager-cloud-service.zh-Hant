@@ -2,10 +2,10 @@
 title: 設定您的管道
 description: 建立前端管道以管理網站主題的自訂。
 exl-id: 0d77d1a6-98f3-4961-9283-f52c1b5b2a7b
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '964'
-ht-degree: 10%
+source-wordcount: '956'
+ht-degree: 9%
 
 ---
 
@@ -57,7 +57,7 @@ ht-degree: 10%
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Adobe Cloud Manager。
 
-1. Cloud Manager 列出了可用的各種計畫。點選或按一下您要管理的專案。 如果您剛開始使用AEMas a Cloud Service，則可能只有一個可用計畫。
+1. Cloud Manager 列出了可用的各種計畫。選取您要管理的專案。 如果您剛開始使用AEMas a Cloud Service，則可能只有一個可用計畫。
 
    ![在Cloud Manager中選取計畫](assets/cloud-manager-select-program.png)
 
@@ -71,7 +71,7 @@ ht-degree: 10%
 
 現在您已存取Cloud Manager，可以為前端部署建立管道。
 
-1. 在 **管道** 部分，點選或按一下 **新增** 按鈕。
+1. 在 **管道** 部分，選擇 **新增** 按鈕。
 
    ![管道](assets/pipelines-add.png)
 
@@ -83,7 +83,7 @@ ht-degree: 10%
 
    ![新增管道設定](assets/add-pipeline-configuration.png)
 
-1. 點選或按一下&#x200B;**繼續**。
+1. 選取 **繼續**.
 
 1. 在 **原始碼** 標籤：
    * 選取 **前端計畫碼** 作為要部署的程式碼型別。
@@ -94,7 +94,7 @@ ht-degree: 10%
 
    ![用於新增管道的原始碼資訊](assets/add-pipeline-source-code.png)
 
-1. 點選或按一下&#x200B;**儲存**。
+1. 選取&#x200B;**儲存**。
 
 新管道建立並顯示在中 **管道** 部分。 點選並按一下管道名稱后的省略符號會顯示選項，以便視需要進一步編輯或檢視詳細資料。
 

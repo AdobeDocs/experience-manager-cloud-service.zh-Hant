@@ -6,10 +6,10 @@ mini-toc-levels: 3
 feature: Asset Management,Publishing,Collaboration,Asset Processing
 role: User,Architect,Admin
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '4344'
-ht-degree: 11%
+source-wordcount: '4301'
+ht-degree: 10%
 
 ---
 
@@ -73,7 +73,7 @@ ht-degree: 11%
 
 1. 在預覽模式中，縮放選項可用於 [支援的影像型別](/help/assets/file-format-support.md) （使用互動式編輯）。
 
-   若要放大資產，請點選/按一下 `+` （或點選/按一下資產上的放大鏡）。 若要縮小顯示，請點選/按一下 `-`. 放大時，您可以透過平移仔細檢視影像的任何區域。 重設縮放箭頭可讓您回到原始檢視。
+   若要放大資產，請選取 `+` （或選取資產上的放大鏡）。 若要縮小顯示，請選取 `-`. 放大時，您可以透過平移仔細檢視影像的任何區域。 重設縮放箭頭可讓您回到原始檢視。
 
    點選 **[!UICONTROL 重設]** 將檢視重設為原始大小。
 
@@ -81,7 +81,7 @@ ht-degree: 11%
 
 1. 導覽至您要編輯其中繼資料的資產位置。
 
-1. 選取資產，然後點選/按一下 **[!UICONTROL 屬性]** 以檢視資產屬性。 或者，選擇 **[!UICONTROL 屬性]** 資產卡上的快速動作。
+1. 選取資產，然後選取 **[!UICONTROL 屬性]** 以檢視資產屬性。 或者，選擇 **[!UICONTROL 屬性]** 資產卡上的快速動作。
 
    ![properties_quickaction](assets/properties_quickaction.png)
 
@@ -106,7 +106,7 @@ ht-degree: 11%
    >
    > 若要建立標籤，您必須具備寫入許可權： `/content/cq:tags/default` CRX存放庫中的路徑。
 
-1. 點選/按一下 **[!UICONTROL 儲存並關閉]**.
+1. 選取 **[!UICONTROL 儲存並關閉]**.
 
 1. 導覽至「資產」使用者介面。 編輯的中繼資料屬性（包括標題、說明和標籤）會顯示在「卡片」檢視的資產卡片上，以及「清單」檢視的相關欄下。
 
@@ -138,7 +138,7 @@ To view usage statistics for an asset, in the [!UICONTROL Properties] page, clic
 
 其他屬性和中繼資料資訊會保留。 複製資產時不會建立部分副本。
 
-1. 從「資產」UI中，選取一或多個資產，然後點選/按一下 **[!UICONTROL 複製]** 圖示。 或者，選取 **[!UICONTROL 複製]** ![復製圖示](assets/copy_icon.png) 從資產卡片快速動作。
+1. 從「資產」UI中，選取一或多個資產，然後選取 **[!UICONTROL 複製]** 圖示。 或者，選取 **[!UICONTROL 複製]** ![復製圖示](assets/copy_icon.png) 從資產卡片快速動作。
 
    >[!NOTE]
    >
@@ -162,13 +162,13 @@ To view usage statistics for an asset, in the [!UICONTROL Properties] page, clic
 
 1. 導覽至您要移動之資產的位置。
 
-1. 選取資產，然後點選/按一下 **[!UICONTROL 移動]** 圖示 ![move_icon](assets/move_icon.png) 工具列中的。
+1. 選取資產，然後選取 **[!UICONTROL 移動]** 圖示 ![move_icon](assets/move_icon.png) 工具列中的。
 
 1. 在「移動資產」精靈中，執行下列任一項作業：
 
-   * 指定資產移動後的名稱。 然後點選/按一下 **[!UICONTROL 下一個]** 以繼續進行。
+   * 指定資產移動後的名稱。 然後選取 **[!UICONTROL 下一個]** 以繼續進行。
 
-   * 點選/按一下 **[!UICONTROL 取消]** 以停止程式。
+   * 選取 **[!UICONTROL 取消]** 以停止程式。
 
    >[!NOTE]
    >
@@ -177,20 +177,20 @@ To view usage statistics for an asset, in the [!UICONTROL Properties] page, clic
 
 1. 在 **[!UICONTROL 選取目的地]** 對話方塊，請執行下列任一項作業：
 
-   * 導覽至資產的新位置，然後點選/按一下 **[!UICONTROL 下一個]** 以繼續進行。
+   * 導覽至資產的新位置，然後選取 **[!UICONTROL 下一個]** 以繼續進行。
 
-   * 點選/按一下 **[!UICONTROL 返回]** 以返回 **[!UICONTROL 重新命名]** 畫面。
+   * 選取 **[!UICONTROL 返回]** 以返回 **[!UICONTROL 重新命名]** 畫面。
 
 1. 如果要移動的資產有任何引用頁面、資產或集合， **[!UICONTROL 調整引用]** 標籤會出現在 **[!UICONTROL 選取目的地]** 標籤。
 
    在「 」中執行下列任一項作業 **[!UICONTROL 調整引用]** 畫面：
 
-   * 指定要根據新詳細資料調整的引用，然後點選/按一下 **[!UICONTROL 移動]** 以繼續進行。
+   * 根據新的詳細資料指定要調整的參照，然後選取 **[!UICONTROL 移動]** 以繼續進行。
 
    * 從 **[!UICONTROL 調整]** 欄中，選取/取消選取資產的參照。
-   * 點選/按一下 **[!UICONTROL 返回]** 以返回 **[!UICONTROL 選取目的地]** 畫面。
+   * 選取 **[!UICONTROL 返回]** 以返回 **[!UICONTROL 選取目的地]** 畫面。
 
-   * 點選/按一下 **[!UICONTROL 取消]** 以停止移動作業。
+   * 選取 **[!UICONTROL 取消]** 以停止移動作業。
 
    如果您不更新引用，引用會持續指向資產的上一個路徑。 如果您調整參照，參照會更新為新的資產路徑。
 
@@ -198,11 +198,11 @@ To view usage statistics for an asset, in the [!UICONTROL Properties] page, clic
 
 1. 您可以為資產新增或移除轉譯，但原始資產除外。 導覽至您要新增或移除轉譯的資產位置。
 
-1. 點選/按一下資產，以開啟其資產頁面。
+1. 選取要開啟其資產頁面的資產。
 
    <!--![chlimage_1-220](assets/chlimage_1-220.png)-->
 
-1. 點選/按一下「全域導覽」圖示，然後選取 **[!UICONTROL 轉譯]** 從清單中。
+1. 選取GlobalNav圖示，然後選取 **[!UICONTROL 轉譯]** 從清單中。
 
    ![renditions_menu](assets/renditions_menu.png)
 
@@ -218,13 +218,13 @@ To view usage statistics for an asset, in the [!UICONTROL Properties] page, clic
 
    **刪除轉譯**
 
-   從中選擇轉譯 **[!UICONTROL 轉譯]** 面板，然後點選/按一下 **[!UICONTROL 刪除轉譯]** 圖示。 資產處理完成後，無法大量刪除轉譯。 若為個別資產，您可以從使用者介面手動移除轉譯。 對於多個資產，您可以進行自訂 [!DNL Experience Manager] 以刪除特定轉譯或刪除資產，並重新上傳已刪除的資產。
+   從中選擇轉譯 **[!UICONTROL 轉譯]** 面板，然後選取 **[!UICONTROL 刪除轉譯]** 圖示。 資產處理完成後，無法大量刪除轉譯。 若為個別資產，您可以從使用者介面手動移除轉譯。 對於多個資產，您可以進行自訂 [!DNL Experience Manager] 以刪除特定轉譯或刪除資產，並重新上傳已刪除的資產。
 
    ![delete_renditionicon](assets/delete_renditionicon.png)
 
    **上傳新轉譯**
 
-   導覽至資產的資產詳細資訊頁面，然後點選/按一下工具列中的「新增轉譯 **** 」圖示，以上傳資產的新轉譯。
+   導覽至資產的資產詳細資訊頁面，然後選取 **[!UICONTROL 新增轉譯]** 圖示以上傳資產的新轉譯。
 
    <!--![chlimage_1-221](assets/chlimage_1-221.png)-->
 
@@ -314,7 +314,7 @@ To view usage statistics for an asset, in the [!UICONTROL Properties] page, clic
 
 CUG是限制資產存取權的額外方式。 您也可以設定資料夾的登入頁面。
 
-1. 從「資產」UI中選取資料夾，然後點選/按一下工具列中的「屬性」圖示，以顯示屬性頁面。
+1. 從「資產」UI中選取資料夾，然後從工具列選取「屬性」圖示以顯示屬性頁面。
 1. 從 **[!UICONTROL 許可權]** 標籤，新增成員或群組於 **[!UICONTROL 封閉使用者群組]**.
 
    ![add_user](assets/add_user.png)
@@ -355,13 +355,13 @@ The editing tools in the [!DNL Experience Manager Assets] interface let you perf
 
 1. Do one of the following to open an asset in edit mode:
 
-    * Select the asset and then click/tap the **[!UICONTROL Edit]** icon in the toolbar.
-    * Tap/click the **[!UICONTROL Edit]** icon that appears on an asset in the Card view.
-    * In the asset page, tap/click the **[!UICONTROL Edit]** icon in the toolbar.
+    * Select the asset and then select the **[!UICONTROL Edit]** icon in the toolbar.
+    * Select the **[!UICONTROL Edit]** icon that appears on an asset in the Card view.
+    * In the asset page, select the **[!UICONTROL Edit]** icon in the toolbar.
 
    ![edit_icon](assets/edit_icon.png)
 
-1. To crop the image, tap/click the **Crop** icon.
+1. To crop the image, select the **Crop** icon.
 
    ![chlimage_1-226](assets/chlimage_1-226.png)
 
@@ -378,15 +378,15 @@ The editing tools in the [!DNL Experience Manager Assets] interface let you perf
 
    ![chlimage_1-229](assets/chlimage_1-229.png)
 
-1. Tap/click the appropriate Rotate icon to rotate the image clockwise or anti-clockwise.
+1. Select the appropriate Rotate icon to rotate the image clockwise or anti-clockwise.
 
    ![chlimage_1-230](assets/chlimage_1-230.png)
 
-1. Tap/click the appropriate Flip icon to flip the image horizontally or vertically.
+1. Select the appropriate Flip icon to flip the image horizontally or vertically.
 
    ![chlimage_1-231](assets/chlimage_1-231.png)
 
-1. Tap/click the **Finish** icon to save the changes.
+1. Select the **Finish** icon to save the changes.
 
    ![chlimage_1-232](assets/chlimage_1-232.png)
 
@@ -425,7 +425,7 @@ The editing tools in the [!DNL Experience Manager Assets] interface let you perf
 >對於內容片段， [註解會在片段編輯器中建立](content-fragments/content-fragments.md).
 
 1. 導覽至您要新增註解的資產位置。
-1. 點選/按一下 **[!UICONTROL 註解]** 圖示來自下列其中一項：
+1. 選取 **[!UICONTROL 註解]** 圖示來自下列其中一項：
 
    * [快速動作](#quick-actions)
    * 在選取資產或導覽至資產頁面後，從工具列重新選取
@@ -454,18 +454,18 @@ The editing tools in the [!DNL Experience Manager Assets] interface let you perf
    >
    >儲存註解之前，您可以新增多個註解。
 
-1. 點選/按一下 **[!UICONTROL 關閉]** 退出「註釋」模式。
+1. 選取 **[!UICONTROL 關閉]** 退出「註釋」模式。
 1. 若要檢視通知，請使用Aaron MacDonald的憑證登入資產，然後按一下 **[!UICONTROL 通知]** 圖示以檢視通知。
 
    >[!NOTE]
    >
    >註解也可以新增到視訊資產。 在影片的註解時，播放器會暫停，讓您在影格上註解。 如需詳細資訊，請參閱 [管理視訊資產](manage-video-assets.md). 不過，視訊註解尚不支援MXF視訊格式。
 
-1. 若要選擇不同顏色以便區分使用者，請按一下/點選「設定檔」圖示，然後按一下/點選 **[!UICONTROL 我的偏好設定]**.
+1. 若要選擇不同顏色以便區分使用者，請選取「設定檔」圖示，然後選取 **[!UICONTROL 我的偏好設定]**.
 
    <!--![chlimage_1-237](assets/chlimage_1-237.png)-->
 
-   在「注釋顏色」( **[!UICONTROL Annotation Color)框中指定所要的顏色]** ，然後按一下/點選「 **[!UICONTROL 接受」(Accept]**)。
+   在「 」中指定所要的顏色 **[!UICONTROL 附註顏色]** 方塊，然後選取 **[!UICONTROL Accept]**.
 
 <!-- ![chlimage_1-238](assets/chlimage_1-238.png)-->
 
@@ -485,7 +485,7 @@ The editing tools in the [!DNL Experience Manager Assets] interface let you perf
 
 1. 若要檢視資產的已儲存註解，請導覽至資產位置並開啟資產的資產頁面。
 
-1. 點選/按一下「全域導覽」圖示，然後選擇 **[!UICONTROL 時間表]** 從清單中。
+1. 選取GlobalNav圖示，然後選擇 **[!UICONTROL 時間表]** 從清單中。
 
    <!--![chlimage_1-239](assets/chlimage_1-239.png)-->
 
@@ -493,11 +493,11 @@ The editing tools in the [!DNL Experience Manager Assets] interface let you perf
 
    <!--![chlimage_1-240](assets/chlimage_1-240.png)-->
 
-   點選/按一下中的註解 **[!UICONTROL 時間表]** 面板來檢視影像上對應的註解。
+   選擇註釋 **[!UICONTROL 時間表]** 面板來檢視影像上對應的註解。
 
    <!--![chlimage_1-241](assets/chlimage_1-241.png)-->
 
-   點選/按一下 **[!UICONTROL 刪除]**，以刪除特定註解。
+   選取 **[!UICONTROL 刪除]**，以刪除特定註解。
 
 ### 列印註解 {#printing-annotations}
 
@@ -509,7 +509,7 @@ The editing tools in the [!DNL Experience Manager Assets] interface let you perf
 >
 >將已附註的資產列印為PDF時，您可以選取多個附註。
 
-若要列印註解和檢閱狀態，請點選/按一下 **[!UICONTROL 列印]** 圖示並依照精靈中的指示操作。 此 **[!UICONTROL 列印]** 圖示只有在資產擁有至少一個指派的註釋或稽核狀態時才會出現在工具列中。
+若要列印註解和檢閱狀態，請選取 **[!UICONTROL 列印]** 圖示並依照精靈中的指示操作。 此 **[!UICONTROL 列印]** 圖示只有在資產擁有至少一個指派的註釋或稽核狀態時才會出現在工具列中。
 
 1. 從「資產」UI中，開啟資產的預覽頁面。
 1. 執行下列任一項作業：
@@ -525,7 +525,7 @@ The editing tools in the [!DNL Experience Manager Assets] interface let you perf
 
    <!--![chlimage_1-243](assets/chlimage_1-243.png)-->
 
-1. 點選/按一下 **[!UICONTROL 列印]** 圖示。
+1. 選取 **[!UICONTROL 列印]** 圖示。
 
    <!--![chlimage_1-244](assets/chlimage_1-244.png)-->
 
@@ -565,21 +565,21 @@ The editing tools in the [!DNL Experience Manager Assets] interface let you perf
 * 檢視資產的目前修訂版本。
 * 將資產還原至先前版本。
 
-1. 導覽至您要建立版本的資產位置，然後點選/按一下以開啟其資產頁面。
+1. 導覽至您要建立版本的資產位置，並選取該資產以開啟其資產頁面。
 
-1. 點選/按一下「全域導覽」圖示，然後選擇 **[!UICONTROL 時間表]** 功能表中。
+1. 選取GlobalNav圖示，然後選擇 **[!UICONTROL 時間表]** 功能表中。
 
    ![時間表](assets/timeline.png)
 
-1. 點選/按一下 **[!UICONTROL 動作]** （箭頭）圖示來檢視您可以對資產執行的可用動作。
+1. 選取 **[!UICONTROL 動作]** （箭頭）圖示來檢視您可以對資產執行的可用動作。
 
    <!--![chlimage_1-249](assets/chlimage_1-249.png)-->
 
-1. 點選/按一下 **[!UICONTROL 另存為版本]** 以建立資產的版本。
+1. 選取 **[!UICONTROL 另存為版本]** 以建立資產的版本。
 
 <!--![chlimage_1-250](assets/chlimage_1-250.png)-->
 
-1. 新增標籤和註解，然後按一下 **[!UICONTROL 建立]** 以建立版本。 或者，點選/按一下 **取消** 以結束作業。
+1. 新增標籤和註解，然後按一下 **[!UICONTROL 建立]** 以建立版本。 或者，選取 **取消** 以結束作業。
 
    <!--![chlimage_1-251](assets/chlimage_1-251.png)-->
 
@@ -595,9 +595,9 @@ The editing tools in the [!DNL Experience Manager Assets] interface let you perf
 
    ![save_version](assets/save_version.png)
 
-1. 若要產生版本的預覽，請點選/按一下「預 **[!UICONTROL 覽版本」]**。
+1. 若要產生版本的預覽，請選取 **[!UICONTROL 預覽版本]**.
 1. 若要在Assets UI中顯示此版本，請選取 **[!UICONTROL 還原為此版本]**.
-1. 若要比較兩個版本，請前往資產的資產頁面，然後點選/按一下要與目前版本比較的版本。
+1. 若要比較兩個版本，請前往資產的資產頁面，並選取要與目前版本比較的版本。
 
    ![select_version_tocompare](assets/select_version_tocompare.png)
 
@@ -607,16 +607,16 @@ The editing tools in the [!DNL Experience Manager Assets] interface let you perf
 
 ### 在資產上開始工作流程 {#starting-a-workflow-on-an-asset}
 
-1. 導覽至您要啟動工作流程的資產位置，然後點選/按一下資產以開啟資產頁面。
-1. 點選/按一下「全域導覽」圖示，然後選擇 **[!UICONTROL 時間表]** 以顯示「時間軸」。
+1. 導覽至您要啟動工作流程的資產位置，然後選取要開啟資產頁面的資產。
+1. 選取GlobalNav圖示，然後選擇 **[!UICONTROL 時間表]** 以顯示「時間軸」。
 
    ![時間軸–1](assets/timeline-1.png)
 
-1. 點選/按一下 **[!UICONTROL 動作]** （箭頭）圖示以開啟資產可用的動作清單。
+1. 選取 **[!UICONTROL 動作]** （箭頭）圖示以開啟資產可用的動作清單。
 
    <!--![chlimage_1-252](assets/chlimage_1-252.png)-->
 
-1. 點選/按一下 **[!UICONTROL 開始工作流程]** 從清單中。
+1. 選取 **[!UICONTROL 開始工作流程]** 從清單中。
 
    <!--![chlimage_1-253](assets/chlimage_1-253.png)-->
 
@@ -628,7 +628,7 @@ The editing tools in the [!DNL Experience Manager Assets] interface let you perf
 
    <!--![chlimage_1-255](assets/chlimage_1-255.png)-->
 
-1. 點選/按一 **[!UICONTROL 下「開始]** 」，然後點選/按一下對話 **[!UICONTROL 方塊中的「繼續]** 」以進行確認。工作流程的每個步驟都會以事件的形式顯示在時間軸中。
+1. 選取 **[!UICONTROL 開始]** 然後選取 **[!UICONTROL 繼續]** 在對話方塊中確認。 工作流程的每個步驟都會以事件的形式顯示在時間軸中。
 
    <!--![chlimage_1-256](assets/chlimage_1-256.png)-->
 

@@ -2,10 +2,10 @@
 title: 了解如何在內容片段中使用參考
 description: 了解如何在內容片段中使用內容、其他片段和其他資產 (媒體) 的參考。介紹巢狀片段對 Headless CMS 編寫的必要性和機制。
 exl-id: a65e8a5a-954b-4307-8027-ca8bac5f4261
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '710'
-ht-degree: 97%
+source-wordcount: '708'
+ht-degree: 95%
 
 ---
 
@@ -58,7 +58,7 @@ ht-degree: 97%
 * 人員
 * 獎項
 
-看起來很簡單，但當然一家公司既有 CEO 又有員工....這些都是人，每一個都被定義為人員。
+看似簡單明瞭，但公司同時有CEO和員工....這些都是人，每一個都被定義為人員。
 
 人員可以獲得一個獎項 (或兩個)。
 

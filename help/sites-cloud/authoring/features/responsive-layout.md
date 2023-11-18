@@ -2,9 +2,9 @@
 title: 回應式版面
 description: AEM可讓您實現頁面的回應式版面
 exl-id: 87202742-5bed-4e87-a427-456a1a0e72cc
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1734'
+source-wordcount: '1731'
 ht-degree: 6%
 
 ---
@@ -108,7 +108,7 @@ AEM可讓您根據裝置的寬度定義版面：
 1. 若要選取要模擬的特定裝置，您可以：
 
    * 使用「選取裝置」圖示，並從下拉式選取器選取。
-   * 點選/按一下模擬器工具列中的裝置指示器。
+   * 在模擬器工具列中選取裝置指示器。
 
    ![選擇裝置下拉式清單](/help/sites-cloud/authoring/assets/responsive-layout-select-device-dropdown.png)
 
@@ -143,7 +143,7 @@ A **配置容器** 是段落系統：
 
 ## 選取配置容器並對其執行動作（編輯模式） {#selecting-and-taking-action-on-a-layout-container-edit-mode}
 
-如同其他元件，您可以選取版面容器，然後對其執行剪下、複製、刪除等動作(當在 **編輯** 模式)：
+與其他元件一樣，您可以選取「配置容器」(Layout Container)，然後對其執行剪下、複製、刪除等動作(當執行 **編輯** 模式)：
 
 >[!CAUTION]
 >
@@ -195,14 +195,14 @@ A **配置容器** 是段落系統：
   >
   >當元件(如 **影像** 都會重新調整大小。
 
-* 按一下/點選內容元件，工具列可讓您：
+* 選取內容元件，工具列可讓您：
    * **父級**  — 可讓您選取整個配置容器元件，以便對整體執行動作。
    * **浮動至新行**  — 元件會移至新的一行，視格線內的可用空間而定。
    * **隱藏元件**  — 元件會設定為隱藏（可從配置容器的工具列還原）。
 
   ![隱藏元件](/help/sites-cloud/authoring/assets/responsive-layout-hide.png)
 
-* 在 **版面** 模式：您可以點選/按一下 **將元件拖曳到這裡** 以選取整個元件。 工具列會針對此模式顯示。
+* 在 **版面** 模式您可以選取 **將元件拖曳到這裡** 以選取整個元件。 工具列會針對此模式顯示。
 
   根據配置元件及其所屬元件的狀態，工具列有不同的選項。 例如：
 

@@ -3,9 +3,9 @@ title: 查詢和編製索引最佳做法
 description: 瞭解如何根據Adobe的最佳實務准則最佳化您的索引和查詢。
 topic-tags: best-practices
 exl-id: 37eae99d-542d-4580-b93f-f454008880b1
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '3133'
+source-wordcount: '3128'
 ht-degree: 0%
 
 ---
@@ -85,7 +85,7 @@ AEMas a Cloud Service提供 [查詢效能工具](#query-performance-tool)，可�
 
 查詢引擎只會考慮單一索引。 這表示可以而且應該透過新增更多自訂索引屬性來自訂現有索引。
 
-此 [JCR查詢速查表](#jcr-query-cheatsheet) 本節列出可用的限制，並概述索引定義的外觀如何才能擷取它。 使用 [查詢效能工具](#query-performance-tool) 測試查詢並確定使用了正確的索引，而且查詢引擎不需要評估索引之外的限制。
+此 [JCR查詢速查表](#jcr-query-cheatsheet) 本節列出可用的限制，並概述索引定義的外觀必須如何才能擷取。 使用 [查詢效能工具](#query-performance-tool) 測試查詢並確定使用了正確的索引，而且查詢引擎不需要評估索引之外的限制。
 
 ### 排序 {#ordering}
 
@@ -239,7 +239,7 @@ lucene:damAssetLucene-9(/oak:index/damAssetLucene-9) :ancestors:/content/dam ord
 
 此查詢執行計畫將產生下方的每個資產 `/content/dam` 從索引讀取，然後由查詢引擎進一步篩選（這只會包含符合結果集中非索引屬性限制的那些專案）。
 
-即使只有一小部分資產符合限制 `jcr:content/metadata/myProperty = "My Property Value"`，查詢需要讀取大量節點來（嘗試）填入請求的結果「頁面」。 這可能會導致查詢效能不佳，並顯示為低 `Read Optimization` 分數)，且可能會產生警告訊息，指出有大量節點正在周遊(請參閱 [索引周遊](#index-traversal))。
+即使只有一小部分資產符合限制 `jcr:content/metadata/myProperty = "My Property Value"`，查詢必須讀取大量節點來（嘗試）填入請求的結果「頁面」。 這可能會導致查詢效能不佳，並顯示為低 `Read Optimization` 分數)，且可能會產生警告訊息，指出有大量節點正在周遊(請參閱 [索引周遊](#index-traversal))。
 
 若要最佳化第二個查詢的效能，請建立 `damAssetLucene-9` 索引(`damAssetLucene-9-custom-1`)並新增以下屬性定義 — 
 
@@ -308,7 +308,8 @@ Automated Cloud Manager管道檢查將強制執行上述某些最佳實務。
 05.10.2023 10:56:10.498 *WARN* [127.0.0.1 [1696502982443] POST /libs/settings/granite/operations/diagnosis/granite_queryperformance.explain.json HTTP/1.1] org.apache.jackrabbit.oak.plugins.index.search.spi.query.FulltextIndex$FulltextPathCursor Index-Traversed 60000 nodes with filter Filter(query=select [jcr:path], [jcr:score], * from [dam:Asset] as a where isdescendantnode(a, '/content/dam') order by [jcr:content/metadata/unindexedProperty] /* xpath: /jcr:root/content/dam//element(*, dam:Asset) order by jcr:content/metadata/unindexedProperty */, path=/content/dam//*)
 ```
 
-發生此狀況有多種原因 — 
+發生此狀況有幾個原因 — 
+
 1. 不是所有查詢限制都可以在索引上處理。
    * 在此情況下，將會從索引讀取最終結果集的超集，並接著在查詢引擎中篩選。
    * 這比在基礎索引查詢中套用限制要慢許多倍。
@@ -316,7 +317,7 @@ Automated Cloud Manager管道檢查將強制執行上述某些最佳實務。
    * 在這種情況下，查詢引擎必須讀取索引傳回的所有結果，並在記憶體中排序。
    * 這比在基礎索引查詢中套用排序要慢許多倍。
 1. 查詢的執行程式正在嘗試迭代大型結果集。
-   * 發生此狀況有多種原因，如下所列：
+   * 發生此狀況可能有幾個原因，如下所列：
 
 | 原因 | 緩解 |
 |----------|--------------|

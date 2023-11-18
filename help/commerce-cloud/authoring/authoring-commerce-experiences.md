@@ -2,9 +2,9 @@
 title: 編寫Commerce體驗
 description: 瞭解如何在不離開上下文的情況下存取產品資料和內容，以有效率地撰寫和建置商務相關體驗。
 exl-id: 45d697b7-ec96-4c26-be2a-3395b731d52d
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '717'
+source-wordcount: '718'
 ht-degree: 1%
 
 ---
@@ -77,7 +77,7 @@ CIF產品目錄頁面是即時轉譯的虛擬頁面。 因此，不可能內嵌�
 
 ### 存取關聯產品內容 {#associated-content}
 
-如果通用編輯器辨識出頁面上的1：n產品，側面板會自動顯示「關聯的商務內容」索引標籤。 此索引標籤可讓作者快速存取已使用產品標籤的AEM內容(請參閱 [利用關聯AEM內容豐富產品資料](./enrich-product-associated-content.md) 以取得詳細資訊)。 如果頁面上有多個產品，此標籤會提供下拉式選單，以篩選內容型別和特定產品。 使用內容的運作方式與使用「資產」標籤中的內容完全相同。
+如果通用編輯器辨識出頁面上的1：n產品，側面板會自動顯示「關聯的商務內容」索引標籤。 此索引標籤可讓作者快速存取已使用產品標籤的AEM內容(請參閱 [利用關聯AEM內容豐富產品資料](./enrich-product-associated-content.md) 以取得詳細資訊)。 如果頁面上有多個產品，此索引標籤會提供下拉式清單，以篩選內容型別和特定產品。 使用內容的運作方式與使用「資產」標籤中的內容完全相同。
 
 ![產品資料側面板](../assets/authoring/associated-commerce-content-tab.png)
 

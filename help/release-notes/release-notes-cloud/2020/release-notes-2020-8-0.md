@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2020.8.0 版發行說明。'
 description: '"[!DNL Adobe Experience Manager] 2020.8.0版as a Cloud Service發行說明。」'
 exl-id: 83413130-ae90-4419-bcf7-42fdc740452b
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1038'
-ht-degree: 34%
+source-wordcount: '1036'
+ht-degree: 35%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 34%
 
 ## [!DNL Adobe Experience Manager Sites] as a Cloud Service {#sites}
 
-### [!DNL Sites]的新增功能 {#what-is-new-sites}
+### [!DNL Sites] 的新增功能 {#what-is-new-sites}
 
 * 能夠 [將頁面和子頁面（頁面樹狀結構）還原為舊版](/help/sites-cloud/authoring/features/page-versions.md#reinstating-versions).
 
@@ -25,7 +25,7 @@ ht-degree: 34%
 
 ## [!DNL Adobe Experience Manager Assets] as a Cloud Service {#assets}
 
-### [!DNL Assets]的新增功能 {#what-is-new-assets}
+### [!DNL Assets] 的新增功能 {#what-is-new-assets}
 
 * 現在資產微服務可支援視訊轉碼。 中的新區段 [!UICONTROL 處理設定檔] 設定可讓您設定視訊位元速率和維度。 輸出格式為使用H.264轉碼器的MP4。 如需詳細資訊，請參閱 [管理視訊資產](/help/assets/manage-video-assets.md#transcode-video). 如需更多轉碼選項及視訊傳送，請使用 [!DNL Dynamic Media] 附加元件。
 
@@ -55,7 +55,7 @@ ht-degree: 34%
 
 * [!DNL AEM Desktop app] 2.0.3版現已推出。 它改善了與的相容性 [!DNL Experience Manager] 6.5.5 Service Pack和更新的使用者端作業系統相容性清單。 [!DNL Windows] 7和 [!DNL macOS] 不支援10.14之前的版本。
 
-### 修正在[!DNL Assets]中的錯誤 {#bugs-fixed}
+### 修正在 [!DNL Assets] 中的錯誤 {#bugs-fixed}
 
 * 第一次按一下「建立關聯及取消關聯」選項時，該選項沒有回應。 (CQ-4299022)
 * 下載資產時，如果您選取透過電子郵件接收資產的選項，則不會傳送電子郵件。 (CQ-4299146)
@@ -84,7 +84,7 @@ ht-degree: 34%
 
   如需更多詳細資訊，請參閱[體驗稽核測試](/help/implementing/cloud-manager/experience-audit-testing.md)。
 
-* Assets程式中新建立的環境現在將自動設定為智慧內容服務。
+* Assets 計畫中新建立的環境現在將自動設定智慧內容服務。
 
 * 休眠的環境可以從 Cloud Manager 的&#x200B;**概觀**&#x200B;頁。
 

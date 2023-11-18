@@ -4,9 +4,9 @@ description: 瞭解可用的強大Live Copy同步選項，以及如何根據專�
 feature: Multi Site Manager
 role: Admin
 exl-id: 0c97652c-edac-436e-9b5b-58000bccf534
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2425'
+source-wordcount: '2414'
 ht-degree: 2%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 2%
 
 # 設定 Live Copy 同步 {#configuring-live-copy-synchronization}
 
-Adobe Experience Manager提供許多現成的同步設定。 在使用即時副本之前，您應該考慮以下事項，以定義即時副本與其來源內容同步化的方式和時間。
+Adobe Experience Manager提供數種立即可用的同步設定。 在使用即時副本之前，您應該考慮以下事項，以定義即時副本與其來源內容同步化的方式和時間。
 
 1. 決定現有的轉出設定是否符合您的需求
 1. 如果現有轉出設定無法達成，請決定是否需要建立您自己的轉出設定。
@@ -182,13 +182,13 @@ MSM可讓您指定一般使用的轉出設定集，並視需要覆寫特定即�
 
    ![覆寫即時副本設定繼承](../assets/live-copy-inherit-override.png)
 
-1. 按一下或點選 **儲存並關閉**.
+1. 選取 **儲存並關閉**.
 
 ### 設定Blueprint頁面的轉出設定 {#setting-the-rollout-configuration-for-a-blueprint-page}
 
 使用轉出設定來設定Blueprint頁面，以便在轉出Blueprint頁面時使用。
 
-請注意，Blueprint頁面的子頁面會繼承設定。 當您設定要使用的轉出設定時，可能會覆寫頁面從其父項繼承的設定。
+Blueprint頁面的子頁面會繼承設定。 當您設定要使用的轉出設定時，可能會覆寫頁面從其父項繼承的設定。
 
 1. 使用 **網站** 控制檯以選取Blueprint的根頁面。
 1. 選取 **屬性** 工具列中的。

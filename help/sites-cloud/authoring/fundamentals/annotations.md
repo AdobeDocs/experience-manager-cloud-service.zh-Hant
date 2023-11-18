@@ -2,9 +2,9 @@
 title: 新增頁面註解
 description: 使用註解模式，像使用註解一樣在頁面上留下註解和草圖，以協助您的內容檢閱程式
 exl-id: a9cb9745-8140-4795-a5f9-fb3a1a299bd8
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '694'
+source-wordcount: '676'
 ht-degree: 0%
 
 ---
@@ -43,11 +43,11 @@ ht-degree: 0%
 
    ![附註範例](/help/sites-cloud/authoring/assets/annotation-sketches.png)
 
-1. 按一下或點選註解以開啟註解對話方塊並檢視其詳細資料。
+1. 選取註釋以開啟註釋對話方塊並檢視其詳細資訊。
 
    ![附註詳細資料](/help/sites-cloud/authoring/assets/annotation-adding.png)
 
-1. 若要退出「註釋」模式並返回先前使用的模式，請點選/按一下頂端工具列右側的x按鈕。
+1. 若要退出「註釋」模式並返回先前使用的模式，請選取頂端工具列右側的x按鈕。
 
 ## 新增和編輯註解 {#annotating-a-component}
 
@@ -55,9 +55,9 @@ ht-degree: 0%
 
 1. [啟動附註模式](#annotate-mode) 在頁面上。
 
-1. 按一下或點選「新增註釋」圖示（工具列左側的加號）以開始新增註釋。
+1. 選取「加入註釋」(Add Annotation)圖示（工具列左側的加號）以開始加入註釋。
 
-1. 按一下或點選所需的元件（可加上註解的元件會以藍色邊框反白顯示）以新增註解，然後開啟對話方塊：
+1. 選取所需的元件（可加上註解的元件會以藍色邊框反白顯示）以新增註解，並開啟對話方塊：
 
    ![新增註解](/help/sites-cloud/authoring/assets/annotation-adding.png)
 
@@ -80,9 +80,9 @@ ht-degree: 0%
 
 1. 編輯完特定註解後，您可以：
 
-   * 按一下或點選文字標籤以開啟附註。 開啟後，即可檢視全文、進行變更，或 [刪除註解。](#deleting-annotations)
+   * 選取文字標籤以開啟附註。 開啟後，即可檢視全文、進行變更，或 [刪除註解。](#deleting-annotations)
    * 重新定位文字標籤。
-   * 按一下或點選草圖線以選取該草圖，並將其拖曳至所需位置。
+   * 選取草繪線以選取該草繪，並將其拖曳至所需位置。
    * 移動或複製元件
       * 也會移動或複製任何相關的註釋及其草圖，但它們相對於段落的位置將保持相同。
 
@@ -101,9 +101,9 @@ ht-degree: 0%
 
 1. [啟動附註模式](#annotate-mode) 在頁面上。
 
-1. 按一下/點選文字標籤以開啟附註。
+1. 選取文字標籤以開啟附註。
 
-1. 按一下或點選「刪除」圖示。
+1. 選取刪除圖示。
 
    ![刪除註解](/help/sites-cloud/authoring/assets/annotation-delete.png)
 
@@ -119,7 +119,7 @@ ht-degree: 0%
 
 1. [啟動附註模式](#annotate-mode) 在頁面上。
 
-1. 按一下或點選草圖。 AEM會以較暗的藍色方塊反白顯示。
+1. 選取草繪。 AEM會以較暗的藍色方塊反白顯示。
 
    ![選取要刪除的草圖](/help/sites-cloud/authoring/assets/annotation-sketch-delete.png)
 

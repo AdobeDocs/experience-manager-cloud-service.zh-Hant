@@ -2,10 +2,10 @@
 title: 內容複製工具
 description: 內容複製工具可讓使用者隨選從AEMas a Cloud Service的生產環境複製可變內容，以降低環境等級以進行測試。
 exl-id: 5883e4bc-9861-498e-bd35-32ff03d901cc
-source-git-commit: 361881807e8704dfcb27075365cb73a7f659c82d
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1306'
-ht-degree: 38%
+source-wordcount: '1292'
+ht-degree: 35%
 
 ---
 
@@ -41,7 +41,7 @@ ht-degree: 38%
 | 建立和修改[內容集](#create-content-set) | 不需要 | 必填 |
 | 開始獲取消[內容副本程序](#copy-content) | 必填 | 必填 |
 
-有關許可權以及如何設定許可權的更多詳細資訊，請參閱檔案 [AEMas a Cloud Service團隊和產品設定檔。](/help/onboarding/aem-cs-team-product-profiles.md)
+如需許可權以及如何設定許可權的詳細資訊，請參閱 [AEMas a Cloud Service團隊和產品設定檔](/help/onboarding/aem-cs-team-product-profiles.md).
 
 ## 建立內容集 {#create-content-set}
 
@@ -49,7 +49,7 @@ ht-degree: 38%
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織和計畫。
 
-1. 從&#x200B;**概觀**&#x200B;頁面瀏覽到&#x200B;**環境**&#x200B;畫面。
+1. 從&#x200B;**概觀**&#x200B;頁面，瀏覽到&#x200B;**環境**&#x200B;畫面。
 
 1. 從&#x200B;**環境**&#x200B;畫面瀏覽&#x200B;**內容集**&#x200B;頁面。
 
@@ -57,7 +57,7 @@ ht-degree: 38%
 
    ![內容集](assets/content-sets.png)
 
-1. 在精靈的&#x200B;**詳細資訊**&#x200B;索引標籤上，為內容集提供名稱和描述，然後按下或點擊&#x200B;**繼續**。
+1. 在 **詳細資料** 標籤中，提供內容集的名稱和說明，然後選取 **繼續**.
 
    ![內容詳細資料](assets/add-content-set-details.png)
 
@@ -74,8 +74,8 @@ ht-degree: 38%
 
    1. 在包含的路徑清單中，按一下 **新增排除子路徑** ，位於您要限制的路徑旁。
    1. 在選取的路徑下輸入要排除的子路徑。
-   1. 按下或點擊&#x200B;**排除路徑**。
-   1. 如有必要，請再次按下或點擊&#x200B;**新增排除子路徑**，新增額外路徑排除。
+   1. 選取 **排除路徑**.
+   1. 選取 **新增排除子路徑** 同樣地，以視需要新增其他要排除的路徑。
       * 排除的路徑必須相對於包含的路徑。
       * 排除的路徑數量沒有限制。
 
@@ -88,7 +88,7 @@ ht-degree: 38%
 
    ![正在編輯路徑清單](assets/add-content-set-excluded-paths.png)
 
-1. 按下或點擊&#x200B;**建立**&#x200B;建立內容集。
+1. 選取 **建立** 以建立內容集。
 
 內容集現在可用於在環境之間複製內容。
 
@@ -109,7 +109,7 @@ ht-degree: 38%
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織和計畫。
 
-1. 從&#x200B;**概觀**&#x200B;頁面瀏覽到&#x200B;**環境**&#x200B;畫面。
+1. 從&#x200B;**概觀**&#x200B;頁面，瀏覽到&#x200B;**環境**&#x200B;畫面。
 
 1. 從&#x200B;**環境**&#x200B;畫面瀏覽&#x200B;**內容集**&#x200B;頁面。
 
@@ -136,7 +136,7 @@ ht-degree: 38%
 
 1. 如有需要，您也可以選取 **包含存取控制清單** 在復製程式中。
 
-1. 按下或點擊&#x200B;**複製**。
+1. 選取 **複製**.
 
 複製程序開始。複製過程的狀態反映在所選內容集的控制台中。
 
@@ -146,7 +146,7 @@ ht-degree: 38%
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織和計畫。
 
-1. 從&#x200B;**概觀**&#x200B;頁面瀏覽到&#x200B;**環境**&#x200B;畫面。
+1. 從&#x200B;**概觀**&#x200B;頁面，瀏覽到&#x200B;**環境**&#x200B;畫面。
 
 1. 從&#x200B;**環境**&#x200B;畫面瀏覽&#x200B;**複製內容活動**&#x200B;頁面。
 

@@ -2,9 +2,9 @@
 title: 將內容引入雲端服務
 description: 瞭解如何使用Cloud Acceleration Manager將移轉集中的內容擷取到目標Cloud Service例項。
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 28cbdff5756b0b25916f8d9a523ab4745873b5fa
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2324'
+source-wordcount: '2326'
 ht-degree: 7%
 
 ---
@@ -139,7 +139,7 @@ ht-degree: 7%
 >
 > 您不再需要記錄支援票證來停用「AEM版本更新」。
 
-如果「AEM版本更新」作用中（亦即更新正在執行或已排入佇列等待執行），內嵌將不會開始，且使用者介面會顯示下列訊息。 更新完成後，即可開始內嵌。 Cloud Manager可用於檢視計畫管道的目前狀態。
+如果「AEM版本更新」作用中（即更新正在執行或排入佇列等待執行），則擷取不會開始，且使用者介面會顯示下列訊息。 更新完成後，即可開始內嵌。 Cloud Manager可用於檢視計畫管道的目前狀態。
 
 >[!NOTE]
 >
@@ -162,13 +162,14 @@ AEM中的每個節點都必須有唯一的uuid。 此錯誤指出正在內嵌的
 ### 由於無法刪除參照的節點，追加擷取失敗
 
 另一個常見原因 [追加擷取](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) 失敗是目的地執行個體上特定節點的版本衝突。 若要識別此錯誤，請使用Cloud Acceleration Manager UI下載擷取記錄，並尋找類似以下的專案：
+
 >java.lang.RuntimeException： org.apache.jackrabbit.oak.api.CommitFailedException： OakIntegrity0001：無法刪除參照的節點： 8a2289f4-b904-4bd0-8410-15e41e0976a8
 
 如果目的地的節點在內嵌和後續內嵌之間被修改，就可能發生這種情況 **非擦去** 內嵌，使得已建立新版本。 如果在啟用「包含版本」的情況下擷取移轉集，則可能會發生衝突，因為目的地現在具有由版本記錄和其他內容參考的更新版本。 由於正在參考違規版本節點，擷取程式無法刪除該節點。
 
 解決方案可能要求再次執行追加擷取，而不需要違反規定的節點。 或者，建立違規節點的小型移轉集，但停用「包含版本」。
 
-最佳實務指出，如果 **非擦去** 內嵌必須使用包含版本的移轉集執行（亦即以「包含版本」=true擷取），在移轉歷程完成之前，儘可能減少修改目的地上的內容至關重要。 否則，這些衝突可能會發生。
+最佳實務指出，如果 **非擦去** 內嵌必須使用包含版本的移轉集執行（亦即，以「包含版本」=true擷取），在移轉歷程完成之前，儘可能減少修改目的地上的內容至關重要。 否則，這些衝突可能會發生。
 
 ### 內嵌已取消
 

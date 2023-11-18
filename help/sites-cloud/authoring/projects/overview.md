@@ -2,10 +2,10 @@
 title: 專案
 description: 專案可讓您將資源群組到一個實體中，其共同的共用環境使您的專案容易管理
 exl-id: c5f3331e-637f-4816-be83-faf2df59bd5f
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '1255'
-ht-degree: 100%
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
+source-wordcount: '1253'
+ht-degree: 98%
 
 ---
 
@@ -37,7 +37,7 @@ ht-degree: 100%
 ![專案主控台](/help/sites-cloud/authoring/assets/projects-console.png)
 
 * 選取&#x200B;**時間軸**，然後選取專案以檢視其時間軸。
-* 按一下/點選&#x200B;**選取**&#x200B;以進選取模式。
+* 選取 **選取** 以進入選取模式。
 * 按一下&#x200B;**建立**&#x200B;以新增專案。
 * **切換使用中專案**&#x200B;可讓您在所有專案和僅使用中專案之間切換。
 * **顯示統計檢視**&#x200B;可讓您查看有關任務完成情況的專案統計資料。
@@ -178,4 +178,4 @@ AEM 隨附三種不同範本，可立即可用：
 
 >[!NOTE]
 >
->當您建立專案並將使用者新增至各種角色時，系統會自動建立與專案相關的群組，以管理相關的權限。例如，名為Myproject的專案會有三個群組 **Myproject Owners**、 **Myproject Editors**、 **Myproject Obsertors**。不過，如果刪除專案，這些群組不會自動刪除。管理員需要手動刪除「工具 **>安全** 性 **>** 群組 ****」。
+>當您建立專案並將使用者新增至各種角色時，系統會自動建立與專案相關的群組，以管理相關的權限。例如，名為Myproject的專案會有三個群組 **Myproject Owners**、 **Myproject Editors**、 **Myproject Obsertors**。不過，如果刪除專案，這些群組不會自動刪除。管理員必須手動刪除中的群組 **工具** > **安全性** > **群組**.

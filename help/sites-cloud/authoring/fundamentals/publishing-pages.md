@@ -2,7 +2,7 @@
 title: 發佈頁面
 description: 瞭解如何使用AEM中的各種機制來發佈和取消發佈頁面。
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '1801'
 ht-degree: 6%
@@ -224,7 +224,7 @@ ht-degree: 6%
 
 ### 從編輯器中取消發佈 {#unpublishing-from-the-editor}
 
-編輯頁面時，如果您想取消發佈該頁面，請選取「 」 **取消發佈頁面** 在 **頁面資訊** 功能表，視需要而定 [發佈頁面](#publishing-from-the-editor).
+編輯頁面時，如果您要取消發佈該頁面，請選取「 」 **取消發佈頁面** 在 **頁面資訊** 功能表，視需要而定 [發佈頁面](#publishing-from-the-editor).
 
 >[!NOTE]
 >

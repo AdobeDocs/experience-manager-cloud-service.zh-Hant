@@ -2,9 +2,9 @@
 title: 自訂網站主題
 description: 瞭解如何使用即時AEM內容建立、自訂和測試網站主題。
 exl-id: b561bee0-3a64-4dd3-acb8-996f0ca5bfab
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '962'
+source-wordcount: '960'
 ht-degree: 1%
 
 ---
@@ -64,7 +64,7 @@ ht-degree: 1%
 
    ![npm run live](assets/npm-run-live.png)
 
-1. Proxy伺服器啟動時，會自動開啟瀏覽器，以 `http://localhost:7001/`. 點選或按一下 **本機登入（僅限管理員工作）** 並使用AEM管理員提供給您的Proxy使用者認證登入。
+1. Proxy伺服器啟動時，會自動開啟瀏覽器，以 `http://localhost:7001/`. 選取 **本機登入（僅限管理員工作）** 並使用AEM管理員提供給您的Proxy使用者認證登入。
 
    ![本機登入](assets/sign-in-locally.png)
 

@@ -2,9 +2,9 @@
 title: 設定和設定瀏覽器
 description: 瞭解Adobe Experience Manager (AEM)設定，以及這些設定如何在AEM中管理工作區設定。
 exl-id: 0ade04df-03a9-4976-a4b7-c01b4748474d
-source-git-commit: 78ead5f15c2613d9c3bed3025b43423a66805c59
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1493'
+source-wordcount: '1487'
 ht-degree: 4%
 
 ---
@@ -68,8 +68,8 @@ AEM管理員和作者可以將設定視為工作區。 藉由實作這些功能�
 
 使用設定瀏覽器，即可在AEM中輕鬆建立設定。
 
-1. 登入AEMas a Cloud Service，並從主功能表選取 **工具** -> **一般** -> **設定瀏覽器**.
-1. 點選或按一下&#x200B;**建立**。
+1. 登入AEMas a Cloud Service，並從主功能表選取 **工具** > **一般** > **設定瀏覽器**.
+1. 選擇 **建立**。
 1. 提供設定的&#x200B;**標題**&#x200B;和&#x200B;**名稱**。
 
    ![建立設定](assets/configuration-create.png)
@@ -83,7 +83,7 @@ AEM管理員和作者可以將設定視為工作區。 藉由實作這些功能�
    * [內容片段模型](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
    * [可編輯的範本](/help/sites-cloud/authoring/features/templates.md)
    * 各種雲端設定
-1. 點選或按一下&#x200B;**建立**。
+1. 選擇 **建立**。
 
 >[!TIP]
 >
@@ -93,7 +93,7 @@ AEM管理員和作者可以將設定視為工作區。 藉由實作這些功能�
 
 如果您將設定視為工作區，則可以在這些設定上設定存取權，以強制實行誰可以存取這些工作區，誰不可以存取。
 
-1. 登入AEMas a Cloud Service，並從主功能表選取 **工具** -> **一般** -> **設定瀏覽器**.
+1. 登入AEMas a Cloud Service，並從主功能表選取 **工具** > **一般** > **設定瀏覽器**.
 1. 選取要編輯的組態，然後選取 **屬性** 工具列中的。
 1. 選取您要新增至設定的任何其他功能。
 
@@ -110,7 +110,7 @@ AEM管理員和作者可以將設定視為工作區。 藉由實作這些功能�
 1. 勾選一或多個選取的使用者或角色應該擁有的存取選項，然後按一下 **新增**.
    ![將存取權新增至設定](assets/configuration-edit.png)
 1. 重複這些步驟，您就可以選取使用者或角色，並視需要指派其他存取許可權。
-1. 點選或按一下 **儲存並關閉** 完成後。
+1. 選取 **儲存並關閉** 完成後。
 
 ## 開發人員設定 {#configurations-developer}
 
@@ -196,9 +196,9 @@ String bgkcolor = imageServerSettings.get("bgkcolor", "FFFFFF");
 
 ### 使用設定 {#using-configurations}
 
-AEM中的設定是根據Sling內容感知設定。 Sling套件組合提供的服務API可用於取得內容感知設定。 內容感知組態是與內容資源或資源樹狀結構相關的組態 [如上一個範例所述。](#developer-example)
+AEM中的設定是根據Sling內容感知設定。 Sling套件組合提供的服務API可用於取得內容感知設定。 內容感知組態是與內容資源或資源樹狀結構相關的組態 [在上一個範例中說明](#developer-example).
 
-如需內容感知設定、範例及使用方式的詳細資訊， [請參閱Sling檔案。](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration.html)
+如需內容感知設定、範例及使用方式的詳細資訊，請參閱 [Sling檔案。](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration.html).
 
 ### ConfMgr Web主控台 {#confmgr-web-console}
 

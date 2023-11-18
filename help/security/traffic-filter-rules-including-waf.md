@@ -2,9 +2,9 @@
 title: 流量篩選規則包括 WAF 規則
 description: 設定流量篩選規則，包括 Web 應用程式防火牆 (WAF) 規則
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: a129c188e9ec6871c86245acb5f0bf0333fdc340
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '3441'
+source-wordcount: '3435'
 ht-degree: 97%
 
 ---
@@ -113,8 +113,8 @@ ht-degree: 97%
 
 1. 對於 RDE 以外的環境類型，請在 Cloud Manager 中建立鎖定目標的部署設定管道。
 
-   * [請參閱本文件以了解生產管道。](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)
-   * [請參閱本文件以了解非生產管道。](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
+   * [請參閱設定生產管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md).
+   * [請參閱設定非生產管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md).
 
 若為 RDE，會使用命令列，但目前不支援 RDE。
 
@@ -588,7 +588,7 @@ Adobe 提供了將儀表板工具下載到您電腦上的機制，以擷取透�
 
 ## 推薦的入門規則 {#recommended-starter-rules}
 
-您可以將以下推薦的規則複製到您的 `cdn.yaml` 以開始使用。從日誌模式開始分析您的流量，在滿意之後，變更為封鎖模式。您可能希望根據網站即時流量的獨有特徵修改規則。
+您可以將以下推薦的規則複製到您的 `cdn.yaml` 以開始使用。從日誌模式開始分析您的流量，在滿意之後，變更為封鎖模式。您可能想要根據網站即時流量的獨特特性修改規則。
 
 ```
 kind: "CDN"

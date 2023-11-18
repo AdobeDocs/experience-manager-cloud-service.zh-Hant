@@ -5,7 +5,7 @@ mini-toc-levels: 1
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 role: User, Architect, Admin
 exl-id: 691a0925-0061-4c62-85ac-8257b96dddf2
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '1627'
 ht-degree: 6%
@@ -134,7 +134,6 @@ Only the selected folder content and references are published.
 >
 >不過，您可以移除現有的自訂專案，以使用新的 [!DNL Manager Publication] 功能。
 
-
 ## 稍後發佈資產 {#publish-assets-later}
 
 若要將資產發佈工作流程安排在之後的日期或時間：
@@ -182,6 +181,7 @@ Only the selected folder content and references are published.
 此 `Request Publication` 選項有助於在發佈資產之前驗證資產的工作流程 [!DNL AEM] 資產環境。 [!DNL AEM] 為各種使用者提供不同等級的許可權。 您可以是 *投稿人* 正在上傳資產，但在驗證上傳後才能發佈這些資產的訪客。 此外，身為 *管理員* 您可以管理資產的讀取和寫入工作流程。
 
 請求發佈選項適用於下列使用者：
+
 * **貢獻者：** 如果您是可協助撰寫的使用者 [!DNL AEM] Assets，則您對的存取權有限 [!DNL AEM] 資產工作流程。 `Manage publication` 按鈕已為您隱藏。 身為貢獻者，您只能透過新增資產來貢獻，但無法發佈資產或擁有工作流程的讀取存取權。
 
 * **工作流程使用者：** 此使用者無法發佈資產，但擁有工作流程的讀取存取權。 身為工作流程使用者，您可以：

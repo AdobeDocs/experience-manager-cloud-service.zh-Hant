@@ -2,9 +2,9 @@
 title: 將體驗片段匯出到 Adobe Target
 description: 瞭解如何將您的體驗片段匯出至Adobe Target，以測試並個人化體驗。
 exl-id: 752d91f9-13a6-40c2-9425-7d18dafe9205
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2254'
+source-wordcount: '2246'
 ht-degree: 1%
 
 ---
@@ -165,7 +165,7 @@ ht-degree: 1%
    >1. Navigate to **Tools** &gt; **General** &gt; **CRXDE Lite**.
    >1. Navigate to **/libs/cq/analytics/components/testandtargetpage/dialog/items/tabs/items/tab1_general/items/a4tAnalyticsConfig**
    >1. Set the property **disable** to **false**.
-   >1. Tap or click **Save All**.
+   >1. Select **Save All**.
 
    -->
 
@@ -189,7 +189,7 @@ ht-degree: 1%
 
    * **使用準確定位：** 依預設，會選取此核取方塊。 如果選取，雲端服務設定將等待內容載入後再載入內容。 請參閱下列備註。
 
-   * **從Adobe Target同步區段：** 選取此選項可下載Target中定義的區段，以便在AEM中使用。 當「API型別」屬性為REST時，您必須選取此選項，因為內嵌區段不受支援，而且您一律需要使用來自Target的區段。 (請注意，AEM術語「區段」等同於Target「對象」。)
+   * **從Adobe Target同步區段：** 選取此選項可下載Target中定義的區段，以便在AEM中使用。 當「API型別」屬性為REST時，選取此選項，因為內嵌區段不受支援，而且您一律需要使用來自Target的區段。 ( AEM術語「區段」等同於Target「對象」。)
 
    * **使用者端資源庫：** 此預設為AT.js （已棄用mbox.js）
 
@@ -290,8 +290,8 @@ When you associate a page with the framework, the child pages inherit the associ
 1. In the **Sites** console, navigate to the site that you want to configure.
 1. Using either [quick actions](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions) or [selection mode](/help/sites-cloud/authoring/getting-started/basic-handling.md#selecting-resources), select **View Properties.**
 1. Select the **Cloud Services** tab.
-1. Tap/click **Edit**.
-1. Tap/click **Add Configuration** under **Cloud Service Configurations** and select **Adobe Target**.
+1. Select **Edit**.
+1. Select **Add Configuration** under **Cloud Service Configurations** and select **Adobe Target**.
 
   ![Cloud Service Configuration](assets/chlimage_1-165.png)
 
@@ -301,7 +301,7 @@ When you associate a page with the framework, the child pages inherit the associ
    >
    >Make sure that you select the specific **framework** that you created and not the Target cloud configuration under which it was created.
 
-1. Tap/click **Done**.
+1. Select **Done**.
 1. Activate the root page of the website to replicate it to the publish server. (See [How To Publish Pages](/help/sites-cloud/authoring/fundamentals/publishing-pages.md).)
 
    >[!NOTE]
@@ -315,7 +315,7 @@ When you associate a page with the framework, the child pages inherit the associ
 >
 >對於媒體資產（例如影像），只會將參考匯出至Target。 資產本身仍會儲存在AEM Assets中，並從AEM發佈例項傳送。
 >
->因此，在匯出至Target之前，需要發佈包含所有相關資產的體驗片段。
+>因此，在匯出至Target之前，必須發佈包含所有相關資產的體驗片段。
 
 若要將體驗片段從AEM匯出至Target （在指定雲端設定後）：
 
@@ -326,19 +326,19 @@ When you associate a page with the framework, the child pages inherit the associ
    >
    >它必須是體驗片段Web變數。
 
-1. 點選/按一下 **匯出至Adobe Target**.
+1. 選取 **匯出至Adobe Target**.
 
    >[!NOTE]
    >
    >如果體驗片段已匯出，請選取「 」 **Adobe Target中的更新**.
 
-1. 點選/按一下 **不發佈即匯出** 或 **發佈** 視需要。
+1. 選取 **不發佈即匯出** 或 **發佈** 視需要。
 
    >[!NOTE]
    >
    >選取 **發佈** 將立即發佈體驗片段並將其傳送到Target。
 
-1. 點選/按一下 **確定** 在確認對話方塊中。
+1. 選取 **確定** 在確認對話方塊中。
 
    您的體驗片段現在應該在Target中。
 

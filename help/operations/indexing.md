@@ -2,9 +2,9 @@
 title: 內容搜尋與索引
 description: 瞭解AEMas a Cloud Service中的內容搜尋和索引。
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2432'
+source-wordcount: '2428'
 ht-degree: 1%
 
 ---
@@ -67,7 +67,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->如果自訂現成可用的索引，例如 `damAssetLucene-8`，請從以下位置複製最新的現成可用索引定義： *Cloud Service環境* 使用CRX DE封裝管理員(`/crx/packmgr/`) 。 將其重新命名為 `damAssetLucene-8-custom-1` ，並將您的自訂專案新增至XML檔案中。 這可確保不會無意中移除所需的設定。 例如， `tika` 節點在 `/oak:index/damAssetLucene-8/tika` 在部署至AEM Cloud Service環境的自訂索引中是必要的，但本機AEM SDK上並不存在。
+>如果自訂現成可用的索引，例如 `damAssetLucene-8`，從複製最新的現成可用索引定義 *Cloud Service環境* 使用CRX DE封裝管理員(`/crx/packmgr/`) 。 將其重新命名為 `damAssetLucene-8-custom-1` ，並將您的自訂專案新增至XML檔案中。 這可確保不會無意中移除所需的設定。 例如， `tika` 節點在 `/oak:index/damAssetLucene-8/tika` 在部署至AEM Cloud Service環境的自訂索引中是必要的，但本機AEM SDK上並不存在。
 
 針對OOTB索引的自訂，請準備包含遵循此命名模式之實際索引定義的新套件：
 
@@ -94,7 +94,7 @@ The package from the above sample is built as `com.adobe.granite:new-index-conte
 說明如何部署自訂版本的現成可用索引 `damAssetLucene-8`，我們會提供逐步指南。 在此範例中，我們會將其重新命名為 `damAssetLucene-8-custom-1`. 然後程式如下：
 
 1. 在中建立具有更新索引名稱的新資料夾 `ui.apps` 目錄：
-   * 例如: `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-8-custom-1/`
+   * 範例: `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-8-custom-1/`
 
 2. 新增設定檔 `.content.xml` ，並將自訂設定放在新建立的資料夾中。 以下是自訂的範例：檔案名稱： `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-8-custom-1/.content.xml`
 
@@ -240,7 +240,7 @@ The package from the above sample is built as `com.adobe.granite:new-index-conte
 
 >[!TIP]
 >
->如需AEMas a Cloud Service所需套件結構的更多詳細資訊，請參閱檔案 [AEM專案結構](/help/implementing/developing/introduction/aem-project-content-package-structure.md).
+>如需AEMas a Cloud Service所需套件結構的詳細資訊，請參閱 [AEM專案結構](/help/implementing/developing/introduction/aem-project-content-package-structure.md).
 
 ## 使用滾動式部署的索引管理 {#index-management-using-rolling-deployments}
 

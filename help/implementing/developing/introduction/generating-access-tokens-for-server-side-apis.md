@@ -1,17 +1,17 @@
 ---
 title: 為伺服器端API產生存取權杖
-description: 瞭解如何產生安全JWT權杖，以促進第三方伺服器與AEMas a Cloud Service之間的通訊
+description: 瞭解如何產生安全JWT權杖，以促進協力廠商伺服器與AEMas a Cloud Service之間的通訊
 exl-id: 20deaf8f-328e-4cbf-ac68-0a6dd4ebf0c9
-source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2090'
+source-wordcount: '2089'
 ht-degree: 0%
 
 ---
 
 # 為伺服器端API產生存取權杖 {#generating-access-tokens-for-server-side-apis}
 
-某些架構依賴對AEM的呼叫與AEM基礎架構以外伺服器上託管的應用程式as a Cloud Service。 例如，呼叫伺服器的行動應用程式，接著會向AEM發出as a Cloud Service的API請求。
+有些架構依賴對AEM的呼叫與AEM基礎架構以外伺服器上託管的應用程式as a Cloud Service。 例如，呼叫伺服器的行動應用程式，接著會向AEM發出as a Cloud Service的API請求。
 
 伺服器對伺服器的流程如下所述，以及簡化的開發流程。 AEMas a Cloud Service [開發人員主控台](development-guidelines.md#crxde-lite-and-developer-console) 用於產生驗證程式所需的權杖。
 
@@ -23,21 +23,21 @@ ht-degree: 0%
 
 ## 伺服器對伺服器流量 {#the-server-to-server-flow}
 
-具有IMS組織管理員角色以及AEM作者上AEM使用者或AEM管理員產品設定檔成員的使用者，可以從AEMas a Cloud Service產生一組認證。 每個認證都是JSON裝載，其中包含憑證（公開金鑰）、私密金鑰和由以下憑證組成的技術帳戶： `clientId` 和 `clientSecret`. 這些認證稍後可由具有AEMas a Cloud Service環境管理員角色的使用者擷取，並應安裝在非AEM伺服器上，且謹慎視為秘密金鑰。 此JSON格式檔案包含與AEMas a Cloud ServiceAPI整合所需的所有資料。 資料可用來建立已簽署的JWT權杖，該權杖會與AdobeIdentity Management服務(IMS)交換，以取得IMS存取權杖。 然後，可將此存取權杖用作持有者驗證權杖，以向AEM發出as a Cloud Service請求。 憑證中的憑證預設在一年後到期，但可在需要時重新整理，如上所述 [此處](#refresh-credentials).
+具有IMS組織管理員角色以及AEM Author上的AEM使用者或AEM管理員產品設定檔成員的使用者，可以從AEMas a Cloud Service產生一組認證。 每個認證都是JSON裝載，其中包含憑證（公開金鑰）、私密金鑰和由以下憑證組成的技術帳戶： `clientId` 和 `clientSecret`. 這些認證稍後可由具有AEMas a Cloud Service環境管理員角色的使用者擷取，並應安裝在非AEM伺服器上，且謹慎視為機密金鑰。 此JSON格式檔案包含與AEMas a Cloud ServiceAPI整合所需的所有資料。 資料可用來建立已簽署的JWT權杖，該權杖會與AdobeIdentity Management服務(IMS)交換以取得IMS存取權杖。 然後，可將此存取權杖用作持有者驗證權杖，以向AEM發出as a Cloud Service請求。 憑證中的憑證預設在一年後到期，但可在需要時重新整理，如上所述 [此處](#refresh-credentials).
 
 伺服器對伺服器流程涉及以下步驟：
 
-* 從開發人員控制檯擷取AEMas a Cloud Service的認證
+* 從開發人員主控台as a Cloud Service擷取AEM上的認證
 * 在呼叫AEM的非AEM伺服器上安裝AEMas a Cloud Service的認證
-* 產生JWT權杖並使用Adobe的IMS API將該Token交換為存取權杖
-* 以存取權杖作為持有者驗證權杖來呼叫AEM API
+* 產生JWT權杖並使用Adobe的IMS API將該權杖交換為存取權杖
+* 使用存取權杖作為持有者驗證權杖呼叫AEM API
 * 在AEM環境中為技術帳戶使用者設定適當的許可權
 
 ### 擷取AEMas a Cloud Service認證 {#fetch-the-aem-as-a-cloud-service-credentials}
 
-有權存取AEMas a Cloud Service開發人員控制檯的使用者，可以在開發人員控制檯中檢視給定環境的整合索引標籤。 具有AEMas a Cloud Service環境管理員角色的使用者可以建立、檢視或管理認證。
+有權存取AEMas a Cloud Service開發人員控制檯的使用者，請參閱特定環境的開發人員控制檯中的整合索引標籤。 具有AEMas a Cloud Service環境管理員角色的使用者可以建立、檢視或管理認證。
 
-按一下 **建立新的技術帳戶**，系統會建立一組認證，其中包含使用者端id、使用者端密碼、私密金鑰、憑證，以及環境製作和發佈層級的設定，不論pod選取範圍為何。
+按一下 **建立新的技術帳戶**，會建立一組憑證，其中包含使用者端id、使用者端密碼、私密金鑰、憑證，以及環境製作和發佈層級的設定，不論pod選取範圍為何。
 
 ![建立新的技術帳戶](/help/implementing/developing/introduction/assets/s2s-createtechaccount.png)
 
@@ -45,11 +45,11 @@ ht-degree: 0%
 
 ![下載認證](/help/implementing/developing/introduction/assets/s2s-credentialdownload.png)
 
-建立認證後，它們會顯示在 **技術帳戶** 索引標籤中的 **整合** 區段：
+建立認證後，它們會出現在 **技術帳戶** 索引標籤中的 **整合** 區段：
 
 ![檢視認證](/help/implementing/developing/introduction/assets/s2s-viewcredentials.png)
 
-使用者稍後可以使用「檢視」動作來檢視認證。 此外，如文章稍後所述，使用者可以編輯相同技術帳戶的認證。 他們透過建立新的私密金鑰或憑證來完成此編輯，適用於必須續約或撤銷憑證的情況。
+使用者稍後可以使用「檢視」動作來檢視認證。 此外，如文章稍後所述，使用者可以編輯相同技術帳戶的認證。 他們透過建立私密金鑰或憑證來完成此編輯，適用於必須更新或撤銷憑證的情況。
 
 具有AEMas a Cloud Service環境管理員角色的使用者稍後可以為其他技術帳戶建立認證。 當不同的API有不同的存取要求時，這項功能會很有用。 例如，讀取與讀寫。
 
@@ -63,13 +63,13 @@ ht-degree: 0%
 
 ### 在非AEM伺服器上安裝AEM服務認證 {#install-the-aem-service-credentials-on-a-non-aem-server}
 
-呼叫AEM的應用程式應能存取AEMas a Cloud Service的認證，將其視為秘密。
+呼叫AEM的應用程式應能存取AEMas a Cloud Service的認證，將其視為機密。
 
 ### 產生JWT權杖並將其交換為存取權杖 {#generate-a-jwt-token-and-exchange-it-for-an-access-token}
 
-在呼叫Adobe的IMS服務中使用憑證建立JWT權杖以擷取存取權杖，該權杖的有效期限為24小時。
+使用認證在呼叫Adobe的IMS服務中建立JWT權杖以擷取存取權杖，該權杖的有效期限為24小時。
 
-可以使用為此目的而設計的使用者端程式庫，將AEM CS服務認證交換為存取權杖。 使用者端程式庫可從以下位置取得： [Adobe的公開GitHub存放庫](https://github.com/adobe/aemcs-api-client-lib)，其中包含更詳細的指引和最新資訊。
+可以使用為此目的而設計的使用者端程式庫來交換AEM CS服務認證以取得存取權杖。 使用者端程式庫可從以下位置取得： [Adobe的公開GitHub存放庫](https://github.com/adobe/aemcs-api-client-lib)，其中包含更詳細的指引和最新資訊。
 
 ```
 /*jshint node:true */
@@ -89,9 +89,9 @@ exchange(config).then(accessToken => {
 });
 ```
 
-相同交換能以能夠產生具有正確格式的已簽署JWT權杖並呼叫IMS權杖交換API的任何語言執行。
+相同交換可以用任何能夠產生具有正確格式的已簽署JWT權杖並呼叫IMS權杖交換API的語言執行。
 
-存取權杖會定義其到期時間，通常為24小時。 Git存放庫中有範常式式碼，可用於管理存取權杖並在其過期前重新整理。
+存取權杖會定義其到期時間，通常為24小時。 Git存放庫中有範常式式碼，可用來管理存取權杖並在其過期前重新整理。
 
 >[!NOTE]
 >如果有多個認證，請務必針對稍後叫用的AEM API呼叫，參考適當的json檔案。
@@ -106,10 +106,10 @@ curl -H "Authorization: Bearer <your_ims_access_token>" https://author-p123123-e
 
 ### 在AEM中為技術帳戶使用者設定適當的許可權 {#set-the-appropriate-permissions-for-the-technical-account-user-in-aem}
 
-首先，必須在Adobe Admin Console中建立新產品設定檔。
+首先，必須在Adobe Admin Console中建立新的產品設定檔。
 
 1. 前往Adobe Admin Console，網址為 [https://adminconsole.adobe.com/](https://adminconsole.adobe.com/).
-1. 按下 **管理** 連結在 **產品和服務** 欄中找出。
+1. 按下 **管理** 連結至 **產品和服務** 欄中。
 1. 選取 **AEMas a Cloud Service**.
 1. 按下 **新設定檔** 按鈕。
 
@@ -128,7 +128,7 @@ curl -H "Authorization: Bearer <your_ims_access_token>" https://author-p123123-e
 
    ![新增技術帳戶](/help/implementing/developing/introduction/assets/s2s-addtechaccount.png)
 
-1. 等待10分鐘讓變更生效，並使用從新認證產生的存取權杖對AEM進行API呼叫。 若為cURL命令，其表示方式將與以下範例類似：
+1. 請等待10分鐘，讓變更生效，並使用新認證產生的存取權杖向AEM發出API呼叫。 cURL指令的顯示方式與以下範例類似：
 
    `curl -H "Authorization: Bearer <access_token>" https://author-pXXXXX-eXXXXX.adobeaemcloud.net/content/dam.json `
 
@@ -137,9 +137,9 @@ curl -H "Authorization: Bearer <your_ims_access_token>" https://author-p123123-e
 
 若要檢查此資訊，請執行下列動作：
 
-1. 登入作者執行個體。
+1. 登入編寫執行個體。
 1. 前往 **工具** > **安全性**，然後按一下 **群組** 卡片。
-1. 找出您在群組清單中建立的設定檔名稱，然後按一下該名稱：
+1. 在群組清單中找出您建立的設定檔名稱，然後按一下該設定檔：
 
    ![群組設定檔](/help/implementing/developing/introduction/assets/s2s-groupprofile.png)
 
@@ -152,7 +152,7 @@ curl -H "Authorization: Bearer <your_ims_access_token>" https://author-p123123-e
 
 1. 前往 **工具** > **安全性** > **使用者**.
 1. 檢查您的技術帳戶是否為使用者清單，然後選取它。
-1. 按一下 **群組** 索引標籤，以便您可以驗證使用者是否屬於與您的產品設定檔相對應的群組。 此使用者也是其他幾個群組的成員，包括「貢獻者」：
+1. 按一下 **群組** 標籤，以便您確認使用者屬於與產品設定檔相對應的群組。 此使用者也是少數其他群組的成員，包括「貢獻者」：
 
    ![群組會籍](/help/implementing/developing/introduction/assets/s2s-groupmembership.png)
 
@@ -162,7 +162,7 @@ curl -H "Authorization: Bearer <your_ims_access_token>" https://author-p123123-e
 
 <u>**設定適當的群組許可權**</u>
 
-最後，以必要的適當許可權設定群組，以便您可以適當叫用或鎖定API。
+最後，以必要的適當許可權設定群組，讓您可以適當叫用或鎖定API。
 
 1. 登入適當的作者執行個體，並導覽至 **設定** > **安全性** > **許可權**
 1. 在左側窗格中，搜尋與產品設定檔相對應的群組名稱（在此案例中為「唯讀API」），然後選取它：
@@ -173,7 +173,7 @@ curl -H "Authorization: Bearer <your_ims_access_token>" https://author-p123123-e
 
    ![編輯權限](/help/implementing/developing/introduction/assets/s2s-editpermissions.png) 
 
-1. 適當地修改許可權，然後按一下 **儲存**
+1. 適當修改許可權，然後按一下 **儲存**
 
    ![確認編輯許可權](/help/implementing/developing/introduction/assets/s2s-confirmeditpermissions.png)
 
@@ -183,15 +183,15 @@ curl -H "Authorization: Bearer <your_ims_access_token>" https://author-p123123-e
 
 ## 開發人員流程 {#developer-flow}
 
-開發人員可能想要使用非AEM應用程式的開發執行個體進行測試（在他們的筆記型電腦上執行或託管），這些執行個體會向開發AEMas a Cloud Service開發環境提出請求。 不過，由於開發人員不一定具備IMS管理員角色許可權，因此Adobe不能假設他們可以產生一般伺服器對伺服器流程中說明的JWT載體。 因此，Adobe為開發人員提供了一種直接產生存取權杖的機制，可用於對AEMas a Cloud Service上他們有權存取的環境的請求。
+開發人員可能想要使用非AEM應用程式的開發執行個體進行測試（在他們的筆記型電腦上執行或託管），該應用程式會向開發AEMas a Cloud Service開發環境發出請求。 不過，由於開發人員不一定具備IMS管理員角色許可權，因此Adobe不能假設他們可以產生一般伺服器對伺服器流程中說明的JWT持有者。 因此，Adobe為開發人員提供了一種直接產生存取權杖的機制，可用於對AEMas a Cloud Service上他們有權存取的環境的請求。
 
-請參閱 [開發人員指引檔案](/help/implementing/developing/introduction/development-guidelines.md#crxde-lite-and-developer-console) 以取得使用AEMas a Cloud Service開發人員控制檯所需許可權的相關資訊。
+請參閱 [開發人員指南檔案](/help/implementing/developing/introduction/development-guidelines.md#crxde-lite-and-developer-console) 以取得使用AEMas a Cloud Service開發人員控制檯所需許可權的相關資訊。
 
 >[!NOTE]
 >
 >本機開發存取權杖的有效期最長為24小時，之後必須使用相同方法重新產生。
 
-開發人員可使用此代號，從非AEM測試應用程式呼叫AEMas a Cloud Service環境。 開發人員通常會在自己的筆記型電腦上搭配非AEM應用程式使用此代號。 此外，AEM as a Cloud通常是非生產環境。
+開發人員可使用此代號，從非AEM測試應用程式呼叫AEMas a Cloud Service環境。 開發人員通常會在自己的筆記型電腦上，將此Token與非AEM應用程式搭配使用。 此外，AEM as a Cloud通常是非生產環境。
 
 開發人員流程涉及以下步驟：
 
@@ -211,23 +211,23 @@ curl -H "Authorization: Bearer <your_ims_access_token>" https://author-p123123-e
 
 ## 重新整理認證 {#refresh-credentials}
 
-根據預設，AEMas a Cloud Service上的認證將於一年後過期。 為確保服務的連續性，開發人員可以選擇重新整理憑證，將其可用性延長一年。
+根據預設，AEMas a Cloud Service上的認證在一年後過期。 為確保服務的連續性，開發人員可以選擇重新整理憑證，將其可用性延長一年。
 
 若要達到此重新整理擴充功能，請執行下列動作：
 
-* 使用 **新增憑證** 按鈕於 **整合** - **技術帳戶** 在開發人員控制檯中，如下所示
+* 使用 **新增憑證** 按鈕在 **整合** - **技術帳戶** 在開發人員控制檯中，如下所示
 
   ![認證重新整理](/help/implementing/developing/introduction/assets/s2s-credentialrefresh.png)
 
-* 按下按鈕後，會產生一組憑證，其中包含新的憑證。 在AEM以外的伺服器上安裝新憑證，並確保如預期般連線，而不會移除舊憑證。
-* 產生存取權杖時，請務必使用新憑證而非舊憑證。
+* 按下按鈕後，會產生一組包含新憑證的認證。 在off-AEM伺服器上安裝新憑證，並確保如預期般連線，而不移除舊憑證。
+* 產生存取權杖時，請務必使用新憑證，而非舊憑證。
 * 選擇性地撤銷（然後刪除）先前的憑證，使其無法再用來向AEMas a Cloud Service進行驗證。
 
 ## 認證撤銷 {#credentials-revocation}
 
-如果私密金鑰遭到破壞，您必須使用新的憑證和新的私密金鑰來建立認證。 應用程式使用新憑證來產生存取權杖後，您可以執行下列操作來撤銷和刪除舊憑證：
+如果私密金鑰遭到破壞，您必須使用新的憑證和新的私密金鑰來建立認證。 應用程式使用新認證來產生存取權杖後，您可以執行下列動作來撤銷和刪除舊憑證：
 
-1. 首先，新增金鑰。 此金鑰會產生具有新私密金鑰和新憑證的認證。 新的私密金鑰在使用者介面中標示為 **目前** 因此，和將用於此技術帳戶日後的所有新憑證。 與舊版私密金鑰相關聯的認證在撤銷之前仍然有效。 若要完成此撤銷，請選取三個點(**...**)，然後選取「 」 **新增私人金鑰**：
+1. 首先，新增金鑰。 此金鑰會產生具有新私密金鑰和新憑證的認證。 新的私密金鑰在使用者介面中標示為 **目前** 因此，和將用於此技術帳戶日後的所有新憑證。 與舊版私密金鑰關聯的認證在撤銷前仍然有效。 若要達成此撤銷，請選取三個點(**...**)，然後選取「 」 **新增私人金鑰**：
 
    ![新增私人金鑰](/help/implementing/developing/introduction/assets/s2s-addnewprivatekey.png)
 
@@ -235,12 +235,12 @@ curl -H "Authorization: Bearer <your_ims_access_token>" https://author-p123123-e
 
    ![確認新增新的私密金鑰](/help/implementing/developing/introduction/assets/s2s-addprivatekeyconfirm.png)
 
-   具有新憑證的新瀏覽標籤隨即開啟，使用者介面也會更新，以顯示具有標籤為的新私密金鑰的兩個私密金鑰 **目前**：
+   具有新憑證的新瀏覽標籤隨即開啟，且使用者介面會更新，以顯示具有標籤為的新私密金鑰的兩個私密金鑰 **目前**：
 
    ![UI中的私密金鑰](/help/implementing/developing/introduction/assets/s2s-twokeys.png)
 
 1. 在非AEM伺服器上安裝新認證，並確保連線正常運作。 另請參閱 [伺服器對伺服器流量區段](#the-server-to-server-flow) 以取得詳細資訊。
-1. 選取三個點(**...**)的右側，然後選取 **撤銷**：
+1. 選取三個點(**...**)，然後選取 **撤銷**：
 
    ![撤銷憑證](/help/implementing/developing/introduction/assets/s2s-revokecert.png)
 
@@ -248,4 +248,4 @@ curl -H "Authorization: Bearer <your_ims_access_token>" https://author-p123123-e
 
    ![撤銷憑證確認](/help/implementing/developing/introduction/assets/s2s-revokecertificateconfirmation.png)
 
-1. 最後，刪除已遭破壞的憑證。
+1. 最後，刪除已洩漏的憑證。

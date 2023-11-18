@@ -2,10 +2,10 @@
 title: 專案設定
 description: 了解如何使用 Maven 構建 AEM 項目，以及在建立自己的項目時必須遵守的標準。
 exl-id: 76af0171-8ed5-4fc7-b5d5-7da5a1a06fa8
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1404'
-ht-degree: 100%
+source-wordcount: '1399'
+ht-degree: 97%
 
 ---
 
@@ -110,7 +110,7 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->對於來自受密碼保護的 Maven 存放庫的成品，應極為謹慎地使用，因為透過此機制部署的程式碼不會透過 Cloud Manager 品質閘道中實作的所有[程式碼品質規則](/help/implementing/cloud-manager/custom-code-quality-rules.md)。因此，它只應在極少數情況下用於不與 AEM 綁定的程式碼。建議同時部署 Java 原始程式碼和整個專案的原始程式碼還有二進位。
+>對於來自受密碼保護的Maven存放庫的成品，應謹慎使用，因為透過此機制部署的程式碼目前不會執行 [程式碼品質規則](/help/implementing/cloud-manager/custom-code-quality-rules.md) 在Cloud Manager的品質閘道中實作。 因此，它只應在極少數情況下用於不與 AEM 綁定的程式碼。建議同時部署 Java 原始程式碼和整個專案的原始程式碼還有二進位。
 
 若要在 Cloud Manager 中使用受密碼保護的 Maven 存放庫：
 

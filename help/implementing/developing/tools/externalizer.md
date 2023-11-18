@@ -2,9 +2,9 @@
 title: 外部化URL
 description: Externalizer是一項OSGi服務，可讓您以程式設計方式將資源路徑轉換為外部和絕對URL。
 exl-id: 06efb40f-6344-4831-8ed9-9fc49f2c7a3f
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '653'
+source-wordcount: '651'
 ht-degree: 0%
 
 ---
@@ -72,7 +72,7 @@ Externalizer服務可讓您集中定義網域，以程式設計方式為資源�
 
    * **`scheme`** 通常為http或https，但可以是其他通訊協定。
 
-      * 建議使用https來強制執行https連結。
+      * Adobe建議使用https來強制執行https連結。
       * 若使用者端代碼在要求外部化URL時未覆寫配置，則會使用它。
 
    * **`server`** 是主機名稱（網域名稱或ip位址）。

@@ -2,10 +2,10 @@
 title: 建立內容片段 - Headless 設定
 description: 了解如何使用 AEM 的內容片段來設計、建立、規劃和使用每頁自主的內容以進行 Headless 傳遞。
 exl-id: a227ae2c-f710-4968-8a00-bfe48aa66145
-source-git-commit: 7d09cafc4f8518fee185d3f9efc76c33ec20f9a3
-workflow-type: ht
-source-wordcount: '347'
-ht-degree: 100%
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
+source-wordcount: '341'
+ht-degree: 87%
 
 ---
 
@@ -25,12 +25,12 @@ ht-degree: 100%
 
 內容作者將建立任意數量的內容片段來表示他們建立的內容。這是他們在 AEM 中的主要任務。出於本快速入門指南的目的，我們只需要建立一個。
 
-1. 登入 AEM as a Cloud Service，然後從主選單中選擇&#x200B;**導覽** -> **內容片段**。
+1. 登入AEMas a Cloud Service，並從主功能表選取 **導覽** > **內容片段**.
 
-1. 點選或按一下[您之前建立的資料夾。](create-assets-folder.md)
-1. 點選或按一下&#x200B;**建立**。
+1. 選取 [您先前建立的資料夾。](create-assets-folder.md)
+1. 選擇 **建立**。
 1. 建立內容片段以顯示為對話框。
-選擇您希望用於建立內容片段的位置和模型。
+選取您要用來建立內容片段的位置和模式。
 
    * 可用模型取決於您為內容片段建立所在資產資料夾所定義的&#x200B;[**雲端設定**](create-assets-folder.md)。
    * 如果您的模型不可用，請檢查資產資料夾的設定。
@@ -39,7 +39,7 @@ ht-degree: 100%
 
    ![「建立新內容片段」對話框](/help/sites-cloud/administering/content-fragments/assets/cfc-console-create.png)
 
-1. 點選或按一下&#x200B;**建立**&#x200B;或&#x200B;**建立並開啟**。
+1. 選取 **建立** 或  **建立並開啟**.
 
 內容片段可以參考其他內容片段，必要時允許巢狀內容結構。
 

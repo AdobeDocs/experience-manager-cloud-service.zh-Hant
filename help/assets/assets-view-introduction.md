@@ -1,20 +1,20 @@
 ---
 title: AEM中的「資產」檢視如何協助您？
-description: 進一步瞭解AEM中「資產」檢視的主要優點。 Adobe 利用其在強化行銷和創意專業人士能力的專業知識，推出了改變遊戲規則的全新使用者體驗。
+description: 進一步瞭解AEM中「資產」檢視的主要優點。 Adobe運用其在增強行銷和創意專業人士能力方面的專業知識，引進了改變遊戲規則的新使用者體驗。
 mini-toc-levels: 3
-source-git-commit: 20e0527ebecb6720f39c0a4b2957dc899117d96f
+exl-id: c27134f5-178c-4db1-a8e6-ec45d020f2b5
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '1079'
-ht-degree: 79%
+ht-degree: 76%
 
 ---
-
 
 # Assets檢視簡介 {#assets-view}
 
 ![部署 Assets Essentials](assets/banner-image.jpg)
 
-在現今步調速迅的數位優先環境中，即時的內容創作和傳遞實屬不可或缺，針對下游行銷速度所設計的數位資產管理 (DAM) 體驗至關重要。Adobe 利用其在強化行銷和創意專業人士能力的專業知識，推出了改變遊戲規則的全新使用者體驗。此工作流程優先的方法革新了企業處理動態數位資產的方式，讓行銷人員有能力在尋找、共同作業、個人化與傳遞資產方面，將效率提升到極致。這些簡化的工作流程加快內容速度，並將行銷作業推升到新的高度。
+在現今步調速迅的數位優先環境中，即時的內容創作和傳遞實屬不可或缺，針對下游行銷速度所設計的數位資產管理 (DAM) 體驗至關重要。Adobe運用其在增強行銷和創意專業人士能力方面的專業知識，引進了改變遊戲規則的新使用者體驗。 此工作流程優先的方法革新了企業處理動態數位資產的方式，讓行銷人員有能力在尋找、共同作業、個人化與傳遞資產方面，將效率提升到極致。這些簡化的工作流程加快內容速度，並將行銷作業推升到新的高度。
 
 若要進一步瞭解資產as a Cloud Service的可用角色型體驗，請參閱 [Assetsas a Cloud Service簡介](/help/assets/overview.md#persona-based-experiences).
 
@@ -128,9 +128,3 @@ Assets 檢視中的垃圾桶資料夾列出了從根 Assets 資料夾刪除的�
 
 * [我的工作區](/help/assets/my-workspace-assets-view.md)
 * [開始使用資產檢視](/help/assets/get-started-assets-view.md)
-
-
-
-
-
-

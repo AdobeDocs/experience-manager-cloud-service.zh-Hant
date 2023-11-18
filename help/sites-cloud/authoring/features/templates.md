@@ -2,10 +2,10 @@
 title: 建立頁面範本
 description: 範本會定義結果頁面的結構，且使用範本編輯器，建立和維護範本不再是開發人員專屬的工作
 exl-id: 4c9dbf26-5852-45ab-b521-9f051c153b2e
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '4567'
-ht-degree: 11%
+source-wordcount: '4538'
+ht-degree: 10%
 
 ---
 
@@ -40,7 +40,7 @@ ht-degree: 11%
 >
 >管理員必須在中設定範本資料夾 **設定瀏覽器** 並套用適當的許可權，然後範本作者才能在該資料夾中建立範本。
 
-開始之前，請務必考慮到建立新範本需要共同作業。 因此， [角色](#roles) 會針對每項任務指定。 這不會影響您實際使用範本來建立頁面的方式，但會影響頁面與其範本的關聯方式。
+開始之前，請務必考慮到建立範本需要共同作業。 因此， [角色](#roles) 會針對每項任務指定。 這不會影響您實際使用範本來建立頁面的方式，但會影響頁面與其範本的關聯方式。
 
 ### 角色 {#roles}
 
@@ -67,7 +67,7 @@ ht-degree: 11%
 
 ## 建立和管理範本 {#creating-and-managing-templates}
 
-建立新的可編輯範本時，您可以：
+建立可編輯的範本時，您可以：
 
 * 使用 **範本** 主控台。 這可在以下位置取得： **一般** 的區段 **工具** 主控台。
    * 或直接存取： `https://<host>:<port>/libs/wcm/core/content/sites/templates.html/conf`
@@ -89,7 +89,7 @@ ht-degree: 11%
 
 >[!TIP]
 >
->切勿在範本中輸入任何需要國際化的資訊。 <!-- Never enter any information that needs to be [internationalized](/help/sites-developing/i18n.md) into a template.-->
+>切勿在範本中輸入任何必須國際化的資訊。 <!-- Never enter any information that must be [internationalized](/help/sites-developing/i18n.md) into a template.-->
 >
 >針對必須本地化的範本元素（例如頁首和頁尾），請使用 [核心元件的本地化功能。](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html)
 
@@ -160,12 +160,12 @@ ht-degree: 11%
 若要定義範本縮圖：
 
 1. 編輯範本屬性。
-1. 選擇您要上傳縮圖或是從範本內容產生縮圖。
-   * 如果要上傳縮圖，請按一下或點選 **上傳影像**
-   * 如果您想要產生縮圖，請按一下或點選 **產生預覽**
+1. 選擇您要上傳縮圖，還是從範本內容產生縮圖。
+   * 如果要上傳縮圖，請選取 **上傳影像**
+   * 如果您要產生縮圖，請選取 **產生預覽**
 1. 對於這兩種方法，都會顯示縮圖的預覽。
-   * 如果不滿意，請按一下或點選 **清除** 上傳另一個影像或重新產生縮圖。
-1. 當您對縮圖感到滿意時，請按一下或點選 **儲存並關閉**.
+   * 如果不滿意，請選取 **清除** 上傳另一個影像或重新產生縮圖。
+1. 如果您對縮圖感到滿意，請選取 **儲存並關閉**.
 
 ### 啟用和允許範本 — 範本作者 {#enabling-and-allowing-a-template-template-author}
 
@@ -184,7 +184,7 @@ ht-degree: 11%
 
 1. 在 **範本主控台**，選取範本。
 1. 選取 **啟用** 或 **停用** ，然後在確認對話方塊中再次開啟。
-1. 您現在可以在以下情況下使用範本： [建立新頁面](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page)，但您可能希望 [編輯範本](#editing-templates-template-authors) 根據您的需求。
+1. 您現在可以在以下情況下使用範本： [建立頁面](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page)，但您可能希望 [編輯範本](#editing-templates-template-authors) 根據您的需求。
 
 >[!NOTE]
 >
@@ -219,7 +219,7 @@ ht-degree: 11%
 
 ### 發佈範本 — 範本作者 {#publishing-a-template-template-author}
 
-由於範本在轉譯頁面時為參考狀態，因此需要發佈已完整設定的範本，才能用於發佈環境。
+由於範本在轉譯頁面時為參考狀態，因此必須發佈已完整設定的範本，才能用於發佈環境。
 
 1. 在 **範本主控台**，選取範本。
 1. 選取 **發佈** 以開啟精靈。
@@ -293,7 +293,7 @@ ht-degree: 11%
 
 ![範本編輯器頁面結構](/help/sites-cloud/authoring/assets/templates-page-structure.png)
 
-在模板編輯器的「結構」( **Structure** )模式下，可以執行一些操作，並可以執行一些功能來幫助您：
+您可以在中執行數個動作 **結構** 範本編輯器的模式和數個功能可協助您：
 
 #### 新增元件 {#add-components}
 
@@ -360,15 +360,15 @@ ht-degree: 11%
 
 內容（或設計）原則會定義元件的設計屬性。 例如，可用的元件或最小/最大尺寸。 這些適用於範本（以及使用範本建立的頁面）。
 
-在 **原則** 您可以透過下拉式清單選取要套用至元件的現有原則。
+在 **原則** 您可以透過下拉式清單，選取要套用至元件的現有原則。
 
 ![選取原則](/help/sites-cloud/authoring/assets/templates-policy-selector.png)
 
-選取「 」旁邊的「新增」按鈕，即可新增一項原則。 **選取原則** 下拉式清單。 之後，應該會在 **原則標題** 欄位。
+選取「 」旁邊的「新增」按鈕，即可新增一項原則。 **選取原則** 下拉式清單。 在中提供新標題 **原則標題** 欄位。
 
 ![「新增原則」按鈕](/help/sites-cloud/authoring/assets/templates-add-policy-button.png)
 
-中選取的現有原則 **選取原則** 您可以使用下拉式清單旁邊的複製按鈕來複製下拉式清單作為新原則。 之後，應該會在 **原則標題** 欄位。 依預設，複製的原則標題為 **X的副本**，其中X是複製原則的標題。
+中選取的現有原則 **選取原則** 下拉式清單可使用下拉式清單旁的複製按鈕來復製為新原則。 在中提供新標題 **原則標題** 欄位。 依預設，複製的原則標題為 **X的副本**，其中X是複製原則的標題。
 
 ![「複製原則」按鈕](/help/sites-cloud/authoring/assets/templates-copy-policy-button.png)
 
@@ -395,13 +395,13 @@ ht-degree: 11%
 
 例如，對於影像元件，可定義允許的寬度並啟用延遲載入。
 
-如果設定允許多項組態，請按一下或點選 **新增** 按鈕以新增其他設定。
+如果設定允許多項組態，請選取 **新增** 按鈕以新增其他設定。
 
 ![新增按鈕](/help/sites-cloud/authoring/assets/templates-add-button.png)
 
-若要移除設定，請按一下或點選 **刪除** 按鈕位於設定的右側。
+若要移除組態，請選取 **刪除** 按鈕位於設定的右側。
 
-若要移除設定，請按一下或點選 **刪除** 按鈕。
+若要移除組態，請選取 **刪除** 按鈕。
 
 ![刪除按鈕](/help/sites-cloud/authoring/assets/templates-delete-button.png)
 
@@ -461,9 +461,9 @@ ht-degree: 11%
 
 在 **預設元件** 索引標籤上，您可定義哪些元件會自動與指定媒體型別建立關聯，這樣當作者從資產瀏覽器拖曳資產時，AEM就能知道要與哪個元件建立關聯。 請注意，只有具備拖放區域的元件才適用於此類設定。
 
-按一下或點選 **新增對應** 新增全新的元件和MIME型別對應。
+選取 **新增對應** 新增全新的元件和MIME型別對應。
 
-在清單中選取元件，然後按一下或點選「 **新增類型** 」，將其他MIME類型新增至已映射的元件。按一下「 **刪除** 」圖示以移除MIME類型。
+在清單中選取元件，然後選取 **新增型別** 將其他MIME型別新增至已對應的元件。 按一下「 **刪除** 」圖示以移除MIME類型。
 
 ![預設元件索引標籤](/help/sites-cloud/authoring/assets/templates-default-components-tab.png)
 
@@ -568,11 +568,11 @@ ht-degree: 11%
 
   ![原則選擇器](/help/sites-cloud/authoring/assets/templates-policy-selector.png)
 
-  選取「 」旁邊的「新增」按鈕，即可新增一項原則。 **選取原則** 下拉式清單。 之後，應該會在 **原則標題** 欄位。
+  選取「 」旁邊的「新增」按鈕，即可新增一項原則。 **選取原則** 下拉式清單。 在中提供新標題 **原則標題** 欄位。
 
   ![「新增原則」按鈕](/help/sites-cloud/authoring/assets/templates-add-policy-button.png)
 
-  中選取的現有原則 **選取原則** 您可以使用下拉式清單旁邊的複製按鈕來複製下拉式清單作為新原則。 之後，應該會在 **原則標題** 欄位。 依預設，複製的原則標題為 **X的副本**，其中X是複製原則的標題。
+  中選取的現有原則 **選取原則** 下拉式清單可使用下拉式清單旁的複製按鈕來復製為新原則。 在中提供新標題 **原則標題** 欄位。 依預設，複製的原則標題為 **X的副本**，其中X是複製原則的標題。
 
   ![「複製原則」按鈕](/help/sites-cloud/authoring/assets/templates-copy-policy-button.png)
 

@@ -2,10 +2,10 @@
 title: AEM Headful 和 Headless 技術
 description: AEM 專案可以在 Headful 和 Headless 模型中實作，但這不必是二選一。AEM 提供了在一個專案中利用兩種模型優勢的靈活性。
 exl-id: 709850ca-7757-47ab-9625-f411121cde2c
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1012'
-ht-degree: 97%
+source-wordcount: '1014'
+ht-degree: 93%
 
 ---
 
@@ -23,7 +23,7 @@ AEM 還可用於簡單地管理內容，允許由另一個平台管理內容的�
 
 ![AEM 實作模型](/help/headless/assets/aem-implementation-models.png)
 
-在 Headful 或全堆疊模型中，內容在 AEM 存放庫和 AEM 元件中管理，以 Java、HTL 等為基礎。用於呈現內容以提供使用者體驗。在此模型中，內容的建立、樣式設定、內容的呈現和傳遞都在 AEM 中進行。
+在Headful或完整棧疊模式中，內容在AEM存放庫中管理，而根據Java、HTL等的AEM元件用於呈現內容以符合使用者體驗。 在此模型中，內容的建立、樣式設定、內容的呈現和傳遞都在 AEM 中進行。
 
 在 Headless 模型中，內容在 AEM 存放庫中管理，但透過 REST 和 GraphQL 等 API 傳遞到另一個系統以呈現內容以提供使用者體驗。在此模型中，內容是在 AEM 中建立，但樣式設定、內容的呈現和傳遞都在另一個平台進行。
 

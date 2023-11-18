@@ -3,9 +3,9 @@ title: 設定非生產管道
 description: 了解如何設定非生產管道以在部署到生產環境之前測試程式碼的品質。
 index: true
 exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
-source-git-commit: b47b1998fe716a8409d8d3cf0102e25c48828819
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1288'
+source-wordcount: '1285'
 ht-degree: 80%
 
 ---
@@ -67,7 +67,7 @@ ht-degree: 80%
    * **[完整堆疊程式碼](#full-stack-code)**
    * **[目標部署](#targeted-deployment)**
 
-請參閱檔案 [CI/CD管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) 有關管道型別的詳細資訊。
+另請參閱 [CI/CD管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) 有關管道型別的詳細資訊。
 
 完成建立非生產流水線的步驟因所選原始計畫碼型別而異。 按照上面的連結跳到本文件的下一部分以便完成管道的設定。
 

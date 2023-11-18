@@ -2,10 +2,10 @@
 title: Adobe Experience Manager as a Cloud Service 2020.6.0 版發行說明
 description: '"[!DNL Adobe Experience Manager] 2020.6.0版as a Cloud Service發行說明。」'
 exl-id: fd6ebe2b-6d98-498c-a45d-b9a9c34e6be7
-source-git-commit: 9ceec0401b91bba2408bda89d4f2c486e2d51eec
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1933'
-ht-degree: 95%
+source-wordcount: '1932'
+ht-degree: 94%
 
 ---
 
@@ -84,7 +84,7 @@ AEMas a Cloud ServiceSDK API Jar （先前託管於該位置）現在位於Maven
 
 * 「建置」記錄現在包含探索到的成品清單，包括略過的內容封裝。
 
-* 「建置」步驟現在會驗證所有產生的內容封裝皆包含所有必要屬性 - 名稱、群組和版本。
+* 「建置」步驟現在會驗證所有產生的內容套件皆包含所有必要屬性 — 名稱、群組和版本。
 
 * 「建置」步驟現在會驗證組建是否至少產生了一個內容封裝。
 

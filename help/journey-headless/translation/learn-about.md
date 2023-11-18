@@ -2,10 +2,10 @@
 title: 了解 Headless 內容以及如何在 AEM 中翻譯
 description: 了解 Headless 概念、它們如何對應到 AEM 以及 AEM 翻譯理論。
 exl-id: 72bb6646-e573-4576-8d17-49787d8c8c7f
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '742'
-ht-degree: 97%
+ht-degree: 91%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 97%
 
 ![傳統的全堆疊 CMS](/help/journey-headless/developer/assets/full-stack.png)
 
-在全堆疊 CMS 中，所有操控內容的功能都在 CMS 中。系統的功能構成了 CMS 堆疊的不同元件。全堆疊解決方案有很多優點。
+在全棧疊CMS中，操控內容的功能在CMS中。 系統的功能構成了 CMS 堆疊的不同元件。全堆疊解決方案有很多優點。
 
 * 只需維護一個系統。
 * 內容集中管理。
@@ -47,7 +47,7 @@ ht-degree: 97%
 
 ![ Headless CMS](/help/journey-headless/developer/assets/headless-cms.png)
 
-取用內容的服務，無論是 AR 體驗、網路商店、行動體驗、漸進式網頁應用程式 (PWA) 等，都從 Headless CMS 取用內容並提供自己的呈現操作。它們負責為您的內容提供自己的頭。
+消費服務，不論是AR體驗、網路商店、行動體驗、漸進式網頁應用程式(PWA)等，都會從Headless CMS擷取內容，並提供專屬的轉譯。 它們負責為您的內容提供自己的頭。
 
 省略頭可消除複雜性來簡化 CMS。這樣做也會將呈現內容的責任轉移到實際需要內容並且通常更適合執行呈現的服務。
 

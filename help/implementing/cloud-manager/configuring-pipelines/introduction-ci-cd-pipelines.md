@@ -3,10 +3,10 @@ title: CI/CD 管道
 description: 了解 Cloud Manager 的 CI/CD 管道以及如何使用它們來有效地部署您的程式碼。
 index: true
 exl-id: 40d6778f-65e0-4612-bbe3-ece02905709b
-source-git-commit: 8b8f10bfaad2d8d7d409384e01a2c65a588d77e0
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1423'
-ht-degree: 92%
+source-wordcount: '1418'
+ht-degree: 90%
 
 ---
 
@@ -61,7 +61,7 @@ Cloud Manager 提供兩種類型的管道：
 
 ### 了解 Cloud Manager 中的 CI-CD 管道 {#understand-pipelines}
 
-下表總結了 Cloud Manager 中可用的所有管道及其用途。
+下表總結了Cloud Manager中可用的管道及其用法。
 
 | 管道類型 | 部署或程式碼品質 | 原始碼 | 用途 | 附註 |
 |--- |--- |--- |---|---|
@@ -115,7 +115,7 @@ Cloud Manager 提供兩種類型的管道：
 
 透過設定管道，您可以在幾分鐘內設定和部署流量篩選器規則，包括WAF規則。
 
-請參閱檔案 [包含WAF規則的流量篩選規則](/help/security/traffic-filter-rules-including-waf.md) 以瞭解如何管理存放庫中的設定，以便正確部署。
+另請參閱 [包含WAF規則的流量篩選規則](/help/security/traffic-filter-rules-including-waf.md) 以瞭解如何管理存放庫中的設定，以便正確部署。
 
 ### 設定管道設定 {#configure-config-deployment}
 
@@ -157,7 +157,7 @@ Cloud Manager 提供兩種類型的管道：
 
 ## Web 層設定管道 {#web-tier-config-pipelines}
 
-Web 層配置管道透過將 HTTPD/Dispatcher 配置與其他程式碼更改分離，從而能夠將 HTTPD/Dispatcher 配置以獨占方式部署到 AEM 執行時。它是一個簡化的管道，為希望僅部署 Dispatcher 設定更改的使用者提供了一種在幾分鐘內完成的加速方法。
+Web 層配置管道透過將 HTTPD/Dispatcher 配置與其他程式碼更改分離，從而能夠將 HTTPD/Dispatcher 配置以獨占方式部署到 AEM 執行時。它是一個簡化的管道，為只想部署Dispatcher配置更改的使用者提供了一種在幾分鐘內完成的加速方法。
 
 >[!TIP]
 >

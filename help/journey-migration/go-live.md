@@ -2,7 +2,7 @@
 title: 入門
 description: 瞭解在程式碼和內容準備就緒後，如何執行移轉
 exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '1704'
 ht-degree: 4%

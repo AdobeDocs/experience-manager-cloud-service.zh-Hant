@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Smart Tags,Tagging
 role: Admin,User
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2463'
+source-wordcount: '2461'
 ht-degree: 6%
 
 ---
@@ -78,7 +78,7 @@ AEM預設會將智慧標籤自動新增至文字型資產和影片。 若要將�
 
 **數量與大小：** 每個標籤至少10個影像，最多50個影像。
 
-**一致性**：確認標籤的影像在視覺上類似。 最好將相同視覺方面（例如影像中相同型別的物件）的標籤一起加入單一標籤模型中。 例如，將所有影像標示為 `my-party` （適用於訓練），因為視覺效果不同。
+**一致性**：確認標籤的影像在視覺上類似。 最好將相同視覺方面（例如影像中相同型別的物件）的標籤一起加入單一標籤模型中。 例如，將這些影像標示為 `my-party` （適用於訓練），因為視覺效果不同。
 
 ![插圖影像，以示範訓練准則](assets/do-not-localize/coherence.png)
 

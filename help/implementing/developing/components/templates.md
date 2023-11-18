@@ -2,9 +2,9 @@
 title: 頁面範本
 description: 建立作為新頁面基礎的頁面時，會使用頁面範本
 exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '3287'
+source-wordcount: '3279'
 ht-degree: 1%
 
 ---
@@ -40,7 +40,7 @@ ht-degree: 1%
 
 建立頁面範本主要使用 [範本主控台與範本編輯器](/help/sites-cloud/authoring/features/templates.md) 由範本作者執行。 本節提供此程式的概述，並接著說明在技術層級進行的工作。
 
-建立新的可編輯範本時，您可以：
+建立可編輯的範本時，您可以：
 
 1. 建立 [範本的資料夾](#template-folders). 這並不強制，但建議最佳實務。
 1. 選取 [範本型別](#template-type). 這會複製以建立 [範本定義](#template-definitions).
@@ -112,7 +112,7 @@ ht-degree: 1%
 
 >[!TIP]
 >
->切勿在範本中輸入任何需要國際化的資訊。 為了達到內部化的目的， [核心元件的本地化功能](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html) 建議使用。
+>切勿在範本中輸入任何必須國際化的資訊。 為了達到內部化的目的， [核心元件的本地化功能](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html) 建議使用。
 
 >[!NOTE]
 >
@@ -191,13 +191,13 @@ ht-degree: 1%
 
 1. 除了標準編寫許可權和許可權之外(例如， `content-authors`)您現在需要指派群組並定義作者所需的存取許可權(ACL)，才能在新資料夾中建立範本。
 
-   此 `template-authors` group — 需要指派的預設群組。 請參閱區段 [ACL和群組](#acls-and-groups) 以取得詳細資訊。
+   此 `template-authors` group是必須指派的預設群組。 請參閱區段 [ACL和群組](#acls-and-groups) 以取得詳細資訊。
 
    <!--See [Access Right Management](/help/sites-administering/user-group-ac-admin.md#access-right-management) for full details on managing and assigning access rights.-->
 
 ### 使用設定瀏覽器 {#using-the-configuration-browser}
 
-1. 前往 **全域導覽** -> **工具** > [**設定瀏覽器**](/help/implementing/developing/introduction/configurations.md#using-configuration-browser).
+1. 前往 **全域導覽** > **工具** > [**設定瀏覽器**](/help/implementing/developing/introduction/configurations.md#using-configuration-browser).
 
    現有資料夾會列在左側，包括 `global` 資料夾。
 
@@ -289,9 +289,9 @@ ht-degree: 1%
 
 ## 範本型別 {#template-type}
 
-建立新範本時，您需要指定範本型別：
+建立範本時，您需要指定範本型別：
 
-* 範本型別可有效提供範本的範本。 建立新範本時，會使用所選範本型別的結構和初始內容來建立新範本。
+* 範本型別可有效提供範本的範本。 建立範本時，會使用所選範本型別的結構和初始內容來建立新範本。
 
    * 範本型別會複製以建立範本。
    * 複製一旦發生，範本和範本型別之間的唯一連線是靜態參考，以供參考。
@@ -338,7 +338,7 @@ The [device groups](/help/sites-developing/mobile.md#device-groups) used for an 
 * On the editable template type
 * On the editable template
 
-When creating a new editable template, the value is copied from the template type to the individual template. If the value is not set on the type, it can be set on the template. Once a template is created, there is no inheritance from the type to the template.
+When creating an editable template, the value is copied from the template type to the individual template. If the value is not set on the type, it can be set on the template. Once a template is created, there is no inheritance from the type to the template.
 
 >[!CAUTION]
 >
@@ -432,7 +432,7 @@ GITHUB上的程式碼
 
 定義結果頁面的結構：
 
-* 與初始內容合併( `/initial`)建立新頁面時。
+* 與初始內容合併( `/initial`)建立頁面時。
 * 對結構所做的變更會反映在使用範本建立的任何頁面中。
 * 此 `root` ( `structure/jcr:content/root`)節點會定義產生頁面中可用的元件清單。
    * 範本結構中定義的元件無法在任何結果頁面上移動或從中刪除。
@@ -446,7 +446,7 @@ GITHUB上的程式碼
 定義建立新頁面時將具有的初始內容：
 
 * 包含 `jcr:content` 複製到任何新頁面的節點。
-* 與結構合併( `/structure`)建立新頁面時。
+* 與結構合併( `/structure`)建立頁面時。
 * 如果在建立後變更初始內容，則不會更新任何現有頁面。
 * 此 `root` node會儲存元件清單，以定義結果頁面中的可用專案。
 * 如果在結構模式下將內容新增到元件中，且隨後解鎖該元件（反之亦然），則會將此內容用作初始內容。
@@ -545,7 +545,7 @@ GITHUB上的程式碼
 
 ### 範本可用性 {#template-availability}
 
-在網站管理員介面中建立新頁面時，可用範本清單取決於新頁面的位置以及每個範本中指定的版位限制。
+在網站管理員介面中建立頁面時，可用範本清單會根據新頁面的位置及每個範本中指定的版位限制而定。
 
 下列屬性決定是否使用範本 `T` 可用於作為頁面的子項放置的新頁面 `P`. 這些屬性都是多值字串，其中包含零個或多個用於和路徑比對的規則運算式：
 

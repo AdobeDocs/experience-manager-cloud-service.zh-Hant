@@ -2,10 +2,10 @@
 title: 適用於 Adobe Express 的 AEM Assets 附加元件
 description: 適用於 Adobe Express 的 AEM Assets 附加元件可讓您從 Adobe Express 使用者介面直接存取 AEM Assets 儲存的資源。
 exl-id: d43e4451-da2a-444d-9aa4-4282130ee44f
-source-git-commit: 9078e5bb71d9f34dc0416725efc20c0ab74cc939
-workflow-type: ht
-source-wordcount: '485'
-ht-degree: 100%
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
+source-wordcount: '484'
+ht-degree: 96%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 100%
 
 1. 開啟 Adobe Express Web 應用程式。
 
-1. 透過載入新範本或專案或建立新資源來開啟新的空白畫布。
+1. 載入新範本或專案，或建立資產，以開啟新的空白畫布。
 
 1. 在左側導覽窗格中，點選適用的「**[!UICONTROL 附加元件]**」。
 

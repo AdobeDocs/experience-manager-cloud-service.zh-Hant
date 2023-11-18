@@ -4,10 +4,10 @@ description: 使用 AEM 目標選擇器顯示和選取可用為原始資產副�
 contentOwner: Adobe
 role: Admin,User
 exl-id: 7e7bc1ee-d580-4c88-b550-273e8b0620ba
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: 96a82439c51c22125c206b4e912e85e0bf603498
 workflow-type: tm+mt
-source-wordcount: '1906'
-ht-degree: 86%
+source-wordcount: '1904'
+ht-degree: 85%
 
 ---
 
@@ -259,7 +259,7 @@ interface SelectedDestination {
 
 這是一個 `optionsFormSetup` 屬性的範例。您可以使用它來確認選取範圍，這會在 `onConfirm` 事件上傳遞。
 
-### 建立新資料夾 {#create-new-folder}
+### 建立資料夾 {#create-new-folder}
 
 它可讓您在的目的地資料夾中建立資料夾 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service].
 
@@ -274,7 +274,7 @@ interface SelectedDestination {
 
 ### 資訊 {#info}
 
-資訊或資訊圖示可讓您檢視所選資產的中繼資料。 這會包括各種詳細資訊，例如維度、大小、說明、路徑、修改日期和建立日期。此中繼資訊會在上傳或複製或建立新資產時提供。
+資訊或資訊圖示可讓您檢視所選資產的中繼資料。 這會包括各種詳細資訊，例如維度、大小、說明、路徑、修改日期和建立日期。中繼資料資訊是在上傳、複製或建立資產時提供。
 
 ### 選取資料夾 {#select-folder}
 

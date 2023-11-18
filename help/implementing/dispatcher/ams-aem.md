@@ -3,10 +3,10 @@ title: 將 Dispatcher 設定從 AMS 移轉到 AEM as a Cloud Service
 description: 將 Dispatcher 設定從 AMS 移轉到 AEM as a Cloud Service
 feature: Dispatcher
 exl-id: ff7397dd-b6e1-4d08-8e2d-d613af6b81b3
-source-git-commit: 24c6e5e78e3e1b30e4becfad2f4f6e57e75ad4e9
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1451'
-ht-degree: 18%
+source-wordcount: '1455'
+ht-degree: 16%
 
 ---
 
@@ -94,7 +94,7 @@ Managed Services和AEMas a Cloud Service中的Dispatcher設定結構有所差異
 $ validator httpd .
 ```
 
-如果您看見有關遺失 Include 檔案的錯誤，請檢查您是否已正確地重新命名那些檔案。
+如果您看見有關遺失Include檔案的錯誤，請檢查您是否已正確地重新命名那些檔案。
 
 如果您看到未加入允許清單的Apache指示詞，請將其移除。
 
@@ -228,7 +228,7 @@ $include "../virtualhosts/default_virtualhosts.any"
 $ validator dispatcher .
 ```
 
-如果您看見有關遺失 Include 檔案的錯誤，請檢查您是否已正確地重新命名那些檔案。
+如果您看見有關遺失Include檔案的錯誤，請檢查您是否已正確地重新命名那些檔案。
 
 如果您看見有關未定義變數「`PUBLISH_DOCROOT`」的錯誤，請將其重新命名為「`DOCROOT`」。
 

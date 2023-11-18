@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service 開發指導方針
 description: 了解在 AEM as a Cloud Service 上進行開發的準則，以及它和內部部署的 AEM 以及 AMS 中的 AEM 的重要區別。
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: 1683819d4f11d4503aa0d218ecff6375fc5c54d1
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2733'
+source-wordcount: '2732'
 ht-degree: 4%
 
 ---
@@ -35,7 +35,7 @@ ht-degree: 4%
 
 執行個體的檔案系統不應在AEMas a Cloud Service中使用。 磁碟是暫時性的，當執行個體回收時就會加以處置。 在處理單一請求時，可以限制使用檔案系統作為暫時性儲存空間，但不應將其濫用於大型檔案。 這是因為這可能會對資源使用配額產生負面影響，並遇到磁碟限制。
 
-舉例來說，若不支援使用檔案系統，發佈層級應確保任何需要儲存的資料都會運送至外部服務，以供長期儲存之用。
+舉例來說，若不支援使用檔案系統，發佈層級應確保任何必須儲存的資料都會運送至外部服務，以供長期儲存之用。
 
 ## 觀察 {#observation}
 
@@ -243,7 +243,7 @@ AEM中的電子郵件應使用 [Day CQ Mail Service OSGi服務](https://experien
 
 SMTP伺服器連線埠應該設定為 `portDest` 設定進階網路時，在API呼叫中使用的portForwards引數中設定的值，以及 `portOrig` 值應為介於30000 - 30999所需範圍內的有意義值。 例如，如果SMTP伺服器連線埠是465，則應該使用連線埠30465做為 `portOrig` 值。
 
-在此情況下，並假設需要啟用SSL，請在的設定中 **Day CQ郵件服務OSGI** 服務：
+在此情況下，並假設需要啟用SSL，請在的 **Day CQ郵件服務OSGI** 服務：
 
 * 設定 `smtp.port` 至 `30465`
 * 設定 `smtp.ssl` 至 `true`

@@ -2,10 +2,10 @@
 title: Universal Editor 架構
 description: 了解 Universal Editor 的架構，以及資料如何在其服務和階層之間流動。
 exl-id: e6f40743-0f21-4fb6-bf23-76426ee174be
-source-git-commit: 79fe3133a6b0553209b14c4cf47faa9db28caacc
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '651'
-ht-degree: 100%
+source-wordcount: '650'
+ht-degree: 97%
 
 ---
 
@@ -29,7 +29,7 @@ Universal Editor 由四個基本建置區塊組成，這些建置區塊可進行
 
 >[!TIP]
 >
->若要查看 Universal Editor 及其架構的實際運作，請參閱 [AEM 中 Universal Editor 快速入門](getting-started.md)文件，了解如何存取 Universal Editor，以及如何開始檢測您的第一個 AEM 應用程式以便加以使用。
+>若要查看 Universal Editor 及其架構，請參閱[AEM 中 Universal Editor 快速入門](getting-started.md)，了解如何存取 Universal Editor，和如何開始檢測您的第一個 AEM 應用程式以使用它。
 
 ### 編輯 {#editors}
 
@@ -50,7 +50,7 @@ Universal Editor 致力於最小化 SDK，因此檢測是遠端應用程式實�
 ### 持續性層 {#persistence-layer}
 
 * **內容片段模型** - 若要支援編輯內容片段屬性的邊欄、內容片段編輯器和表單型編輯器，就需要每個元件和內容片段的模型。
-* **內容** - 內容可以儲存在任何地方，例如 AEM、Magento 等。
+* **內容**  — 內容可儲存在任何位置，例如在AEM、Magento等。
 
 ![持續性層](assets/persistence-layer.png)
 

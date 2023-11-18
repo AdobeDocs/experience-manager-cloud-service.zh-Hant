@@ -3,13 +3,13 @@ title: 內容片段 - 刪除考量事項
 description: 在AEM中定義內容片段刪除原則之前，請檢閱這些重要考量。 內容片段是傳送Headless內容的強大工具，必須仔細考慮刪除這些片段的影響。
 feature: Content Fragments
 role: User, Developer, Architect
-source-git-commit: 3d20f4bca566edcdb5f13eab581c33b7f3cf286d
+exl-id: d1726bff-3aa8-4758-bee7-0cacea1f660a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '452'
+source-wordcount: '450'
 ht-degree: 1%
 
 ---
-
 
 # 刪除內容片段的注意事項 {#delete-considerations-content-fragments}
 
@@ -23,14 +23,14 @@ ht-degree: 1%
 
 1. **作為單一實體的內容片段。**
 
-   * **使用案例**：需要編輯/更新內容片段的使用者 —  **並刪除整個片段**.
+   * **使用案例**：必須編輯/更新內容片段的使用者 —  **並刪除整個片段**.
    * **許可權**：您可透過「使用者」及/或「群組管理」指派「刪除」許可權。
 
 2. **構成內容片段的多個子實體；例如，變數、子節點。**
 
    內容片段編輯器的基本操作需要可以刪除這類暫時性子元素。 例如，操控變數時；編輯中繼資料或管理關聯內容時，也可以。
 
-   * **使用案例**：需要編輯/更新內容片段的使用者 —  **不允許刪除整個片段**.
+   * **使用案例**：必須編輯/更新內容片段的使用者 —  **不允許刪除整個片段**.
    * **許可權**：請參閱 [僅編輯器功能所需的許可權](#permissions-required-for-editor-functionality-only).
 
 >[!NOTE]
@@ -76,4 +76,3 @@ ht-degree: 1%
 * 適用於以下所有節點 `jcr:content` 所有內容片段的：
 
    * `jcr:addChildNodes`， `jcr:modifyProperties`、和 `jcr:removeChildNodes`， `jcr:removeNode`
-

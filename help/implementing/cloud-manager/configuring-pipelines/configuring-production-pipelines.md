@@ -3,9 +3,9 @@ title: 設定生產管道
 description: 了解如何設定生產管道以建置程式碼並將其部署到生產環境。
 index: true
 exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1416'
+source-wordcount: '1413'
 ht-degree: 79%
 
 ---
@@ -61,7 +61,7 @@ ht-degree: 79%
    * **[完整堆疊程式碼](#full-stack-code)**
    * **[目標部署](#targeted-deployment)**
 
-請參閱檔案 [CI/CD管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) 有關管道型別的詳細資訊。
+另請參閱 [CI/CD管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) 有關管道型別的詳細資訊。
 
 完成建立生產流水線的步驟因所選原始計畫碼型別而異。 按照上面的連結跳到本文件的下一部分以便完成管道的設定。
 

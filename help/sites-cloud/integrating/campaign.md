@@ -4,9 +4,9 @@ description: 瞭解AEMas a Cloud Service支援與Adobe Campaign整合。
 feature: Administering
 role: Admin
 exl-id: 23874955-bdf3-41be-8a06-53d2afdd7f2b
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '175'
+source-wordcount: '173'
 ht-degree: 1%
 
 ---
@@ -18,13 +18,13 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->本檔案說明如何將Adobe Campaign與雲端原生AEM解決方案as a Cloud ServiceAEM整合。
+>本檔案說明如何整合Adobe Campaign與雲端原生AEM解決方案AEMas a Cloud Service。
 >
->如需整合Adobe Campaign與AEM 6.5、內部部署或AMS託管的AEM解決方案的詳細資訊， [檢視此檔案](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/campaign.html).
+>如需整合Adobe Campaign與AEM 6.5、內部部署或AMS託管的AEM解決方案的詳細資訊， [請參閱此檔案](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/campaign.html).
 
 ## 與Adobe Campaign Classic整合 {#acc}
 
-Adobe Campaign Classic (ACC)有許多版本。 是否支援與AEMas a Cloud Service整合，取決於您實作的ACC版本。
+有數個Adobe Campaign Classic (ACC)版本。 是否支援與AEMas a Cloud Service整合，端視您已實作的ACC版本而定。
 
 | ACC版本 | 與AEMaaCS整合 |
 |---|---|

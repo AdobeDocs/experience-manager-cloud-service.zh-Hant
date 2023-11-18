@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: ed50fa70-a8dd-4cc6-82a9-d59de0fa417d
 docset: aem65
-source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2315'
+source-wordcount: '2316'
 ht-degree: 3%
 
 ---
@@ -686,7 +686,7 @@ Adaptive Forms的檔案附件Widget可讓您上傳檔案。 您也可以使用�
 
 `}`
 
-此外，根據標籤導覽器是否有巢狀/子項/子項導覽器，有類別可設定標籤導覽器的樣式（左側和頂部）。
+此外，根據標籤導覽器是否有巢狀/子系/子導覽器，標籤導覽器（包括左側和頂部）的樣式也會有類別。
 
 <table>
  <tbody>

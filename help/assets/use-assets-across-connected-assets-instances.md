@@ -6,7 +6,7 @@ mini-toc-levels: 2
 feature: Asset Management,Connected Assets,Asset Distribution,User and Groups
 role: Admin,User,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '3869'
 ht-degree: 16%
@@ -33,7 +33,7 @@ ht-degree: 16%
 
 在中編輯頁面時 [!UICONTROL 頁面編輯器] 作為目標目的地，作者可順暢地搜尋、瀏覽及內嵌其他來源的資產 [!DNL Assets] 作為資產來源的部署。 管理員會為的部署建立一次性整合 [!DNL Experience Manager] 替換為 [!DNL Sites] 另一個部署的功能 [!DNL Experience Manager] 替換為 [!DNL Assets] 功能。 您也可以透過Connected Assets在網站的網頁中使用Dynamic Media影像，並使用Dynamic Media功能，例如智慧型裁切和影像預設集。
 
-對於 [!DNL Sites] 作者，遠端資產會以唯讀本機資產的形式提供。 此功能可支援順暢的搜尋作業，並可存取網站編輯器上的遠端資產。 若有任何其他使用案例，需要完整的資產語料庫才能在Sites上使用，請考慮大量移轉資產，而非運用連線資產。
+對於 [!DNL Sites] 作者，遠端資產會以唯讀本機資產的形式提供。 此功能可支援順暢的搜尋作業，並可存取網站編輯器上的遠端資產。 若有任何其他使用案例，需要完整的資產語料庫才能在Sites上使用，請考慮大量移轉資產，而非使用「連線資產」。
 
 ### 先決條件和支援的部署 {#prerequisites}
 

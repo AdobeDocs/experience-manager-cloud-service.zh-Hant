@@ -2,10 +2,10 @@
 title: UI 測試
 description: 自訂 UI 測試是一項選擇性功能，可讓您為自訂應用程式建立和自動執行 UI 測試。
 exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '2385'
-ht-degree: 99%
+ht-degree: 98%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 99%
 
 AEM 提供了[Cloud Manager 品質關卡](/help/implementing/cloud-manager/custom-code-quality-rules.md)整合套件，以確保自訂應用程序順利更新。尤其是 IT 測試門已經支援使用 AEM API 建立和自動化自訂測試。
 
-UI 測試是封裝在 Docker 映像檔中，提供廣泛的語言和架構 (例如 Cypress、Selenium、Java 和 Maven 以及 JavaScript) 選擇。此外，可以透過使用 [AEM 專案原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)輕鬆產生 UI 測試專案。
+UI 測試是封裝在 Docker 映像檔中，提供廣泛的語言和架構 (例如 Cypress、Selenium、Java 和 Maven 以及 JavaScript) 選擇。此外，UI測試專案可以透過使用輕鬆生成 [AEM專案原型。](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)
 
 Adobe 鼓勵使用 Cypress，因為它提供即時重新載入和自動等待功能，有助於節省時間及提高測試期間的工作效率。Cypress 也提供簡單直覺的語法，容易學習和使用，即使是測試的初學者也能輕易上手。
 

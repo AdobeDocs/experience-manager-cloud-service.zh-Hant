@@ -1,17 +1,17 @@
 ---
 title: 將工作流程套用至頁面
-description: 編寫時，您可以叫用工作流程以在頁面上執行動作；也可以套用多個工作流程。
+description: 編寫時，您可以叫用工作流程以在頁面上動作；也可以套用多個工作流程。
 exl-id: 86e71f0e-e53e-40bc-901d-2a1ab347bd0a
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '657'
+source-wordcount: '654'
 ht-degree: 15%
 
 ---
 
 # 將工作流程套用至頁面 {#applying-workflows-to-pages}
 
-編寫時，您可以叫用工作流程以在頁面上執行動作；也可以套用多個工作流程。
+編寫時，您可以叫用工作流程以在頁面上動作；也可以套用多個工作流程。
 
 套用工作流程時，請指定下列資訊：
 
@@ -116,7 +116,7 @@ ht-degree: 15%
 
 1. 在 **範圍** 您可以選取的步驟：
 
-   * **新增內容** 以開啟 [路徑瀏覽器](/help/sites-cloud/authoring/fundamentals/environment-tools.md#path-browser) 並選取其他資源；在瀏覽器中，按一下/點選 **選取** 以將內容新增至工作流程例項。
+   * **新增內容** 以開啟 [路徑瀏覽器](/help/sites-cloud/authoring/fundamentals/environment-tools.md#path-browser) 並選取其他資源；在瀏覽器中時，選取 **選取** 以將內容新增至工作流程例項。
 
    * 檢視其他動作的現有資源：
 

@@ -1,13 +1,13 @@
 ---
 title: 設定頁面屬性的大量編輯
 description: 了解如何設定大量編輯，以便您可以同時編輯多個頁面的屬性。
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+exl-id: 0d10c6b9-8643-479d-adc1-4066d227e83d
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '248'
-ht-degree: 100%
+source-wordcount: '250'
+ht-degree: 94%
 
 ---
-
 
 # 設定頁面屬性的大量編輯 {#configuring-bulk-editing-of-page-properties}
 
@@ -20,7 +20,7 @@ ht-degree: 100%
 * 某些欄位通常是唯一的。套用一個值時，您必須決定啟用這類欄位的大量編輯是否有意義。
    * 例如，頁面標題幾乎永遠是唯一的。
 * 某些欄位可能具有多個值，在轉譯時需要有意義的表示。
-   * 例如，標示為「**準備好發佈**」的狀態下拉選單。在大量編輯之前，這可能會有幾個值，例如&#x200B;**就緒**、**檢閱中**、**進行中**&#x200B;等。
+   * 例如，標示為「**準備好發佈**」的狀態下拉選單。在大量編輯之前，這可能有數個值，例如 **就緒**， **稽核中**， **進行中**、等等。
 
 由於可能存在多個值，建議僅啟用下列欄位類型供大量編輯。
 

@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2023.9.0 版發行說明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2023.9.0 版發行說明。'
 exl-id: d747f58b-8d6c-418d-9d2b-ec3ae4b6dc03
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '1441'
-ht-degree: 98%
+ht-degree: 96%
 
 ---
 
@@ -84,7 +84,7 @@ Edge Delivery 是一組可組合的新服務，著重在最大限度地發揮內
 * **[以核心元件為主的最適化表單中的表單片段](/help/forms/adaptive-form-fragments-core-components.md)**：告別重複的資料、最佳化您的數位庫存，並可改善協作，同時還可使用表單片段提升表單建構體驗。這些可重複使用的元件無縫整合至到多種表單中，簡化了一致且具有專業外觀的表單建立。表單片段透過「一次變更，處處反映」功能確保可重複性、標準化和品牌一致性。由於在一處進行的更新會自動傳播到使用這些片段的所有表單，因此可體驗更高的可維護性和效率。
 
 * **[更佳的 Adobe Sign 工作流程步驟](/help/forms/aem-forms-workflow-step-reference.md#sign-document-step-sign-document-step)**：Adobe Sign 工作流程步驟經過改善，其中包括：
-   * **Adobe Sign 以政府核發 ID 為主的驗證**：Adobe Acrobat Sign 以政府核發 ID 為主的驗證允許使用者使用政府核發的 ID (駕&#x200B;&#x200B;駛執照、國民身份證、護照) 驗證其身份，進而提&#x200B;&#x200B;供更多的驗證防護層。透過運用受信任的身份識別文件，此增強功能可讓簽名過程更添一層信心，使其成為需要增強安全性、合規性和使用者驗證等情況的理想選擇。
+   * **Adobe Sign 以政府核發 ID 為主的驗證**：Adobe Acrobat Sign 以政府核發 ID 為主的驗證允許使用者使用政府核發的 ID (駕&#x200B;&#x200B;駛執照、國民身份證、護照) 驗證其身份，進而提&#x200B;&#x200B;供更多的驗證防護層。此增強功能使用信任的身分識別檔案，為簽署程式增添額外的信賴等級，非常適合需要增強安全性、法規遵循及使用者驗證的情況。
 
    * **Adobe Sign 文件的稽核軌跡**：使用稽核軌跡功能詳細了解 Adobe Sign 文件的生命週期。透過稽核軌跡，您現在可以保留與文件相關的所有動作和互動的全面記錄。其中包括查看、編輯或簽署文件等人員的詳細資訊，以及每個事件的時間戳記。此加強功能對於維持合規性、解決爭議和確保數位協議的完整性至關重要。
 

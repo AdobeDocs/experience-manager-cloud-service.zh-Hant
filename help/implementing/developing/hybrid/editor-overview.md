@@ -2,10 +2,10 @@
 title: SPA 編輯器概觀
 description: 本文全面概述了 SPA 編輯器及其運作原理，包括 SPA 編輯器在 AEM 中互動的詳細工作流程。
 exl-id: 9814d86e-8d87-4f7f-84ba-6943fe6da22f
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1630'
-ht-degree: 100%
+source-wordcount: '1632'
+ht-degree: 96%
 
 ---
 
@@ -21,13 +21,13 @@ SPA 編輯器提供了一個全面的解決方案來支援在 AEM 中使用 SPA�
 
 若要能在 AEM 中編輯 SPA，SPA 的 JSON 輸出與 AEM 存放庫中的內容模型之間必須要有對應，才能儲存內容的變更。
 
-AEM 中的 SPA 支援帶入一個薄 JS 層，在頁面編輯器中載入內容時會與 SPA JS 程式碼互動，如此可以傳送事件，可以啟動編輯控制項的位置以允許進行情境式編輯。此功能是內容服務 API 端點概念為建置基礎，因為來自 SPA 的內容需要透過內容服務載入。
+AEM 中的 SPA 支援帶入一個薄 JS 層，在頁面編輯器中載入內容時會與 SPA JS 程式碼互動，如此可以傳送事件，可以啟動編輯控制項的位置以允許進行情境式編輯。此功能以Content Services API端點概念為基礎，因為來自SPA的內容必須透過Content Services載入。
 
-如需有關 AEM 中 SPA 的更多詳細資訊，請參閱以下文件：
+如需AEM中SPA的詳細資訊，請參閱下列內容：
 
-* [SPA 藍圖](blueprint.md)：說明 SPA 的技術要求
-* [開始在 AEM 中使用 React 建立 SPA](getting-started-react.md)：快速導覽使用 React 的簡易 SPA
-* [開始在 AEM 中使用 Angular 建立 SPA](getting-started-angular.md)：快速導覽使用 Angular 的簡易 SPA
+* [SPA 藍圖](blueprint.md)：說明 SPA 的技術要求.
+* [開始在 AEM 中使用 React 建立 SPA](getting-started-react.md)：快速導覽使用 React 的簡易 SPA.
+* [開始在 AEM 中使用 Angular 建立 SPA](getting-started-angular.md)：快速導覽使用 Angular 的簡易 SPA.
 
 ## 設計 {#design}
 
@@ -185,6 +185,6 @@ Adobe 完全支援 AEM SPA Editor SDK，並會持續增強和擴展。SPA 編輯
 * 編輯設定 (例如接聽程式)
 * 還原/取消復原
 * 頁面差異和時間彎曲
-* 執行 HTML 重寫伺服器端的功能，例如連結檢查程式、CDN 重寫程式服務、URL 縮短等。
+* 執行HTML重寫伺服器端的功能，例如連結檢查器、CDN重寫器服務、URL縮短等。
 * 開發人員模式
 * AEM 啟動

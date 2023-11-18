@@ -2,9 +2,9 @@
 title: 基本處理
 description: 輕鬆瀏覽AEM及其基本用法
 exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2970'
+source-wordcount: '2943'
 ht-degree: 6%
 
 ---
@@ -31,21 +31,21 @@ AEM使用者介面已啟用觸控功能。 觸控式介面可讓您使用觸控�
 
 ![導覽面板](/help/sites-cloud/authoring/assets/navigation.png)
 
-為了更清楚瞭解AEM的基本用法，本檔案根據 **網站** 主控台。 按一下或點選 **網站** 以開始使用。
+為了更清楚瞭解AEM的基本用法，本檔案根據 **網站** 主控台。 選擇於 **網站** 以開始使用。
 
 ## 產品導覽 {#product-navigation}
 
-每當使用者首次存取主控台時，就會啟動產品導覽教學課程。 請花上一分鐘的時間，按一下或點選連結，以取得AEM基本處理的良好概觀。
+每當使用者首次存取主控台時，就會啟動產品導覽教學課程。 請花上一分鐘時間選取，以取得AEM基本處理的良好概觀。
 
 ![導覽教學課程](/help/sites-cloud/authoring/assets/tutorial.png)
 
-按一下或點選 **下一個** 以進入概覽的下一頁。 按一下或點選 **關閉** 或者，按一下或點選概述對話方塊外部以關閉。
+選取 **下一個** 以進入概覽的下一頁。 選取 **關閉** 或在「概述」對話方塊外部選取以關閉。
 
 除非您檢視所有投影片或核取選項，否則概觀將會在您下次存取主控台時重新啟動 **不要再顯示**.
 
 ## 全域導覽 {#global-navigation}
 
-您可以使用全域導覽面板在主控台之間導覽。 當您按一下或點選畫面左上方的Adobe Experience Manager連結，就會觸發此動作成為全熒幕下拉式清單。
+您可以使用全域導覽面板在主控台之間導覽。 當您選取畫面左上方的Adobe Experience Manager連結時，就會以全熒幕下拉式清單的形式觸發此動作。
 
 您可以按一下或點選以關閉全域導覽面板 **關閉** 以返回您之前的位置。
 
@@ -79,7 +79,7 @@ AEM使用者介面已啟用觸控功能。 觸控式介面可讓您使用觸控�
 
 ## 「工具」面板 {#tools-panel}
 
-在「工具」面板中，有一個側面板，其中包含一系列類別，這些類別將類似的「工具」主控台組合在一起。 「工具」主控台可供存取多種專用工具與主控台，協助您管理網站、數位資產和內容存放庫的其他方面。 <!--The [Tools consoles](/help/sites-administering/tools-consoles.md) provide access to a number of specialized tools and consoles that help you administer your websites, digital assets, and other aspects of your content repository.-->
+在「工具」面板中，有一個側面板，其中包含一系列類別，這些類別將類似的「工具」主控台組合在一起。 「工具」主控台可供存取數個專用工具與主控台，協助您管理網站、數位資產及內容存放庫的其他方面。 <!--The [Tools consoles](/help/sites-administering/tools-consoles.md) provide access to several specialized tools and consoles that help you administer your websites, digital assets, and other aspects of your content repository.-->
 
 ![「工具」面板](/help/sites-cloud/authoring/assets/tools-panel.png)
 
@@ -304,7 +304,7 @@ AEM使用者介面已啟用觸控功能。 觸控式介面可讓您使用觸控�
 
    * 點選或按一下時，資源名稱和>形箭號會反白顯示。
    * 已點按/已點按資源的子項會顯示在已點按/已點按資源右側的欄中。
-   * 如果您點選或按一下沒有子系的資源名稱，其詳細資料會顯示於最後一欄。
+   * 如果您選取沒有子系的資源名稱，其詳細資訊會顯示在最後一欄。
 
 * 點選或按一下縮圖會選取資源。
 
@@ -331,7 +331,7 @@ AEM使用者介面已啟用觸控功能。 觸控式介面可讓您使用觸控�
    * 頁面標題
    * 重要日期（例如上次編輯、上次發佈）
    * 如果頁面已鎖定、隱藏或屬於即時副本的一部分
-   * 適當時，您何時需要在工作流程中採取動作
+   * 適當時，亦即需要您擔任工作流程一部分的時間
       * 指出所需動作的標籤，可能與 [收件匣](/help/sites-cloud/authoring/getting-started/inbox.md).
 
 * [快速動作](#quick-actions) 也可以在此檢視中使用，例如選取和常見動作，例如編輯。
@@ -352,12 +352,12 @@ AEM使用者介面已啟用觸控功能。 觸控式介面可讓您使用觸控�
 
    * 當選取清單中的所有專案時，此核取方塊會顯示為已核取。
 
-      * 按一下或點選核取方塊以取消選取全部。
+      * 選取核取方塊以取消選取全部。
 
    * 僅選取部分專案時，其顯示會帶有減號。
 
-      * 按一下或點選核取方塊以選取全部。
-      * 再按一下或點選核取方塊以取消選取全部。
+      * 勾選核取方塊以選取全部。
+      * 再次選取核取方塊以取消選取全部。
 
 * 選擇要顯示的欄，使用 **檢視設定** 選項位於「檢視」按鈕下。 下列欄可供顯示：
 
@@ -383,7 +383,7 @@ AEM使用者介面已啟用觸控功能。 觸控式介面可讓您使用觸控�
 
   ![欄順序](/help/sites-cloud/authoring/assets/column-order.png)
 
-  按一下或點選垂直選取列並將專案拖曳至清單中的新位置。
+  選取垂直選取列並將專案拖曳到清單中的新位置。
 
   ![訂單清單](/help/sites-cloud/authoring/assets/order-list.png)
 
@@ -471,7 +471,7 @@ AEM使用者介面已啟用觸控功能。 觸控式介面可讓您使用觸控�
 
 >[!TIP]
 >
->從範本建立新網站並自訂其主題的程式的端對端說明可在以下連結中找到： [快速網站建立歷程](/help/journey-sites/quick-site/overview.md).
+>從範本建立網站並自訂其主題的程式的端對端說明可在以下連結中找到： [快速網站建立歷程](/help/journey-sites/quick-site/overview.md).
 
 ### 篩選 {#filter}
 

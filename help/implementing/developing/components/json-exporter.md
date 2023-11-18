@@ -2,10 +2,10 @@
 title: 內容服務的 JSON 匯出工具
 description: AEM Content Services的設計目的，是要概括AEM內/外部內容的說明和傳遞，而不只是關注網頁。 它們使用可供任何使用者端使用的標準化方法，將內容傳送至非傳統AEM網頁的管道。
 exl-id: d3ddffb7-cef9-4c86-aa31-175f13f9b4a5
-source-git-commit: 7d09cafc4f8518fee185d3f9efc76c33ec20f9a3
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '404'
-ht-degree: 12%
+source-wordcount: '398'
+ht-degree: 11%
 
 ---
 
@@ -67,8 +67,6 @@ AEM Content Services的設計目的，是要概括AEM內/外部內容的說明�
 
 ### 更多資訊 {#further-information}
 
-另請參閱:
-
 * Assets HTTP API
    * [Assets HTTP API](/help/assets/developer-reference-material-apis.md)
 * Sling 模型:
@@ -77,8 +75,6 @@ AEM Content Services的設計目的，是要概括AEM內/外部內容的說明�
    * [為元件啟用 JSON 匯出](enabling-json-exporter.md)
 
 ## 相關檔案 {#related-documentation}
-
-如需詳細資訊，請參閱：
 
 * [內容片段](/help/sites-cloud/administering/content-fragments/overview.md)
 * [內容片段模型](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)

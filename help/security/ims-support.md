@@ -2,8 +2,8 @@
 title: Adobe Experience Manager as a Cloud Service 的 IMS 支援
 description: Adobe Experience Manager as a Cloud Service 的影像管理系統支援
 exl-id: fb563dbd-a761-4d83-9da1-58f8e462b383
-source-git-commit: 361881807e8704dfcb27075365cb73a7f659c82d
-workflow-type: ht
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
 source-wordcount: '1978'
 ht-degree: 100%
 
@@ -158,7 +158,7 @@ AEM 可繼續為管理員使用者支援本機登入。此登入畫面可讓您�
 
 ![本機登入](/help/security/assets/ims9.png)
 
-<!-- the above image needs to be updated for skyline -->
+<!-- the above image must be updated for skyline -->
 
 **IMS 登入**
 

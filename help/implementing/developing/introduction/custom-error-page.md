@@ -2,9 +2,9 @@
 title: 自訂錯誤頁面
 description: AEM隨附處理HTTP錯誤的標準錯誤處理常式，且可加以自訂。
 exl-id: b74c65d1-8ef5-4ad4-8255-8187f3b1d84c
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '572'
+source-wordcount: '571'
 ht-degree: 2%
 
 ---
@@ -77,6 +77,6 @@ HTTP [500內部伺服器錯誤](https://www.w3.org/Protocols/rfc2616/rfc2616-sec
 >
 >在作者執行個體上， [CQ WCM偵錯篩選器](/help/implementing/deploying/configuring-osgi.md) 預設為啟用。 這會一律產生回應代碼200。 預設錯誤處理常式會透過將完整棧疊追蹤寫入回應來回應。
 >
->對於自訂錯誤處理常式，需要具備程式碼500的回應，因此 [需要停用CQ WCM偵錯篩選器](/help/implementing/deploying/configuring-osgi.md). 這可確保傳回回應代碼500，這隨之會觸發正確的Sling錯誤處理常式。
+>對於自訂錯誤處理常式，需要具備程式碼500的回應，因此 [必須停用CQ WCM偵錯篩選器](/help/implementing/deploying/configuring-osgi.md). 這可確保傳回回應代碼500，這隨之會觸發正確的Sling錯誤處理常式。
 >
 >在發佈執行個體上，CQ WCM偵錯篩選器為 **一直** 已停用（即使設定為已啟用）。

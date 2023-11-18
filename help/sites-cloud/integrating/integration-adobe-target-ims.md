@@ -2,9 +2,9 @@
 title: 與 Adobe Target 整合時使用的 IMS 設定
 description: 瞭解與Adobe Target整合時使用的IMS設定
 exl-id: b5474b70-bedc-4cc9-ad47-89dcb2415e3a
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '880'
+source-wordcount: '877'
 ht-degree: 7%
 
 ---
@@ -33,7 +33,7 @@ ht-degree: 7%
 * 您組織的系統管理員應使用Admin Console，將您組織中所需的開發人員新增到相關的產品設定檔。
 
    * 這可讓特定開發人員透過使用Adobe Developer Console來啟用整合。
-   * 如需詳細資訊，請參閱 [管理開發人員](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-developers.ug.html).
+   * 另請參閱 [管理開發人員](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-developers.ug.html).
 
 
 ## 設定IMS設定 — 產生公開金鑰 {#configuring-an-ims-configuration-generating-a-public-key}
@@ -231,7 +231,7 @@ The configuration can now be referenced for a Cloud Service to use the Target St
 
       >[!NOTE]
       >
-      >For IMS this value needs to be taken from Target itself. You can log into Target and extract the Tenant ID from the URL.
+      >For IMS, this value must be taken from Target itself. You can log into Target and extract the Tenant ID from the URL.
       >
       >For example, if the URL is:
       >
@@ -251,7 +251,7 @@ The configuration can now be referenced for a Cloud Service to use the Target St
 
     * **Use accurate targeting**: By default this check box is selected. If selected, the cloud service configuration will wait for the context to load before loading content. See note that follows.
 
-    * **Synchronize segments from Adobe Target**: Select this option to download segments that are defined in Target to use them in AEM. You must select this option when the API Type property is REST, because inline segments are not supported and you always need to use segments from Target. (Note that the AEM term of 'segment' is equivalent to the Target 'audience'.)
+    * **Synchronize segments from Adobe Target**: Select this option to download segments that are defined in Target to use them in AEM. Select this option when the API Type property is REST, because inline segments are not supported and you always need to use segments from Target. (The AEM term of 'segment' is equivalent to the Target 'audience'.)
 
     * **Client library**: Select whether you want the AT.js client library, or mbox.js (deprecated).
 

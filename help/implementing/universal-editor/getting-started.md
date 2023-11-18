@@ -2,10 +2,10 @@
 title: AEM 中 Universal Editor 快速入門
 description: 了解如何存取 Universal Editor，以及如何開始檢測您的第一個 AEM 應用程式以使用它。
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '922'
-ht-degree: 87%
+source-wordcount: '920'
+ht-degree: 78%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 87%
 
 雖然 Universal Editor 可以編輯來自任何來源的內容，但本文件將以 AEM 應用程式為例。
 
-要將 AEM 應用程式上線，並對其進行檢測以使用 Universal Editor 的步驟很多。
+入門使用AEM應用程式並檢測其是否使用通用編輯器有數個步驟。
 
 1. [要求存取 Universal Editor。](#request-access)
 1. [包括 Universal Editor 核心庫。](#core-library)
@@ -43,13 +43,13 @@ ht-degree: 87%
 
 ## 包括 Universal Editor 核心庫。 {#core-library}
 
-您的應用程式需要包含以下相依性，才可與 Universal Editor 一起使用。
+您必須先包含下列相依性，應用程式才能透過通用編輯器進行檢測。
 
 ```javascript
 @adobe/universal-editor-cors
 ```
 
-要啟動檢測，需要將以下匯入內容新增到您的 `index.js`。
+若要啟動檢測，必須將下列匯入專案新增至 `index.js`.
 
 ```javascript
 import "@adobe/universal-editor-cors";
@@ -103,7 +103,7 @@ X-Frame-Options：SAMEORIGIN 禁止在 iframe 中呈現 AEM 頁面。移除標�
 
 Universal Editor 服務需要[統一資源名稱 (URN)](https://en.wikipedia.org/wiki/Uniform_Resource_Name) 來識別和使用正確的後端系統來處理應用程式中正在編輯的內容。因此，需要 URN 模式將內容對應回內容資源。
 
-新增到頁面的檢測屬性主要包括 [HTML Microdata](https://developer.mozilla.org/en-US/docs/Web/HTML/Microdata)，這是一種業界標準格式，也可用於讓 HTML 更具語義，使 HTML 文件可編製索引等。
+新增至頁面的檢測屬性主要包含 [HTMLMicrodata，](https://developer.mozilla.org/en-US/docs/Web/HTML/Microdata) 產業標準，也可用來讓HTML更具語意、讓HTML檔案可建立索引等等。
 
 ### 建立連線 {#connections}
 

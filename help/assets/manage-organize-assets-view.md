@@ -4,10 +4,10 @@ description: 在  [!DNL Assets view] 中移動、刪除、複製、重新命名�
 role: User,Leader
 contentOwner: AG
 exl-id: b01e98b9-0cc2-47c5-9f5b-79b8e6bef39f
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '1034'
-ht-degree: 93%
+ht-degree: 92%
 
 ---
 
@@ -104,7 +104,7 @@ TBD: query for engineering: How many versions are maintained. What happens when 
 
 1. 選取該資產，然後按一下工具列中的「**[!UICONTROL 詳細資料]**」。
 
-1. 在&#x200B;**[!UICONTROL 基本]**&#x200B;索引標籤中，從&#x200B;**[!UICONTROL 狀態]**&#x200B;下拉式清單中選取資產狀態。可能的值包括「已核准」、「已拒絕」以及「無狀態」(預設)。
+1. 在 **[!UICONTROL 基本]** 索引標籤中，選取資產狀態 **[!UICONTROL 狀態]** 下拉式清單。 可能的值包括「已核准」、「已拒絕」以及「無狀態」(預設)。
 
    >[!VIDEO](https://video.tv.adobe.com/v/342495)
 

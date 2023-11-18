@@ -2,10 +2,10 @@
 title: 使用 Universal Editor 發佈內容
 description: 了解 Universal Editor 如何發佈內容，和您的應用程式如何處理發佈的內容。
 exl-id: aee34469-37c2-4571-806b-06c439a7524a
-source-git-commit: 79fe3133a6b0553209b14c4cf47faa9db28caacc
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '361'
-ht-degree: 100%
+source-wordcount: '359'
+ht-degree: 94%
 
 ---
 
@@ -34,4 +34,4 @@ ht-degree: 100%
 
 Universal Editor 的目標是不強加任何特定模式，以完全低耦合的方式達成實施的目標，同時仍保持實施簡單和直接的特性。
 
-同樣地，Universal Editor 不會要求特定專案用哪種方法決定要從哪一層傳遞內容。相反，它支援多種可能性，可讓專案自行決定最符合其需求的解決方案。
+同樣地，Universal Editor 不會要求特定專案用哪種方法決定要從哪一層傳遞內容。相反地，它提供了多種可能性，並允許專案決定最適合自身需求的解決方案。

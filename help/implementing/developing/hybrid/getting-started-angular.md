@@ -2,7 +2,7 @@
 title: 開始在 AEM 中使用 Angular 建立 SPA
 description: 本文介紹SPA應用程式範例，說明其如何組合，並可讓您使用Angular架構快速啟動並執行您自己的SPA。
 exl-id: 8013ac2c-d1a7-4940-bb65-15e3ed7652d6
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '990'
 ht-degree: 11%
@@ -276,4 +276,4 @@ AEM中SPA的核心構想是將該SPA元件對應至AEM元件，並在修改內�
 * [SPA 編輯器概述](editor-overview.md)更深入地介紹 AEM 和 SPA 之間的通訊模型。
 * [wknd SPA專案](wknd-tutorial.md) 是逐步教學課程，在AEM中實作簡單的SPA專案。
 * [SPA的動態模型至元件對應](model-to-component-mapping.md) 說明動態模型到元件的對應，以及它如何在AEM的SPA中運作。
-* [SPA Blueprint](blueprint.md) 若您想在AEM中針對React或Angular以外的框架實作SPA，或只是想更深入瞭解SPA SDK的運作方式，可深入探討AEM適用的SDK。
+* [SPA Blueprint](blueprint.md) 若您想在AEM中針對React或Angular以外的框架實作SPA，或只是想要更深入的瞭解，提供了有關AEM適用的SPA SDK運作方式的深入探討。

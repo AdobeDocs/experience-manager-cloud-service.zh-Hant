@@ -2,10 +2,10 @@
 title: ' [!DNL Workfront for Experience Manager enhanced connector] 版發行說明'
 description: ' [!DNL Workfront for Experience Manager enhanced connector] 版發行說明'
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
-source-git-commit: f5f2c460815d273fe445c6f415dee7776cc18fce
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1355'
-ht-degree: 100%
+source-wordcount: '1352'
+ht-degree: 97%
 
 ---
 
@@ -32,7 +32,7 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->AEM 6.4 的延伸支援已結束。如需更多詳細資訊，請參閱我們的[技術支援期間](https://helpx.adobe.com/tw/support/programs/eol-matrix.html)。請到[這裡](https://experienceleague.adobe.com/docs/?lang=en)尋找支援的版本。
+>AEM 6.4 的延伸支援已結束。請參閱我們的 [技術支援期間](https://helpx.adobe.com/support/programs/eol-matrix.html). 請到[這裡](https://experienceleague.adobe.com/docs/?lang=en)尋找支援的版本。
 
 
 >[!IMPORTANT]
@@ -43,7 +43,7 @@ ht-degree: 100%
 
 * 使用 AEM 6.4 設定專案連結的資料夾時，Experience Manager 並未儲存「**[!UICONTROL 子資料夾]**」和「**[!UICONTROL 在產品組合的專案中建立連結的資料夾]**」欄位的值。「**[!UICONTROL 子資料夾]**」欄位的值更新為&#x200B;**[!UICONTROL 未定義的]**，而「**[!UICONTROL 在產品組合的專案中建立連結的資料夾]**」欄位的值在儲存設定之後自動更新為&#x200B;**[!UICONTROL 預設產品組合]**。
 
-* 在使用傳統 Workfront 體驗時，「**[!UICONTROL 更多]**」下拉式清單中的「**[!UICONTROL 傳送至]**」選項不允許您在 Experience Manager 之內選取目標目的地。使用「**[!UICONTROL 文件動作]**」下拉式清單時，「**[!UICONTROL 傳送至]**」選項正常運作。在使用新的 Workfront 體驗時，「**[!UICONTROL 更多]**」下拉式清單和「**[!UICONTROL 文件動作]**」下拉式清單的「**[!UICONTROL 傳送至]**」選項正常運作。
+* 使用傳統Workfront體驗時， **[!UICONTROL 傳送至]** 中可用的選項 **[!UICONTROL 更多]** 下拉式清單不允許您在Experience Manager中選取目標目的地。 使用「**[!UICONTROL 文件動作]**」下拉式清單時，「**[!UICONTROL 傳送至]**」選項正常運作。在使用新的 Workfront 體驗時，「**[!UICONTROL 更多]**」下拉式清單和「**[!UICONTROL 文件動作]**」下拉式清單的「**[!UICONTROL 傳送至]**」選項正常運作。
 
 ## 舊版本 {#previous-releases}
 
@@ -222,4 +222,4 @@ ht-degree: 100%
 
 >[!MORELIKETHIS]
 >
->* [整合  [!DNL Workfront for Experience Manager enhanced connector]  與 Experience Manager 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/integrations/workfront-integrations.html?lang=zh-Hant)
+>* [整合  [!DNL Workfront for Experience Manager enhanced connector]  與 Experience Manager 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/integrations/workfront-integrations.html?lang=en)

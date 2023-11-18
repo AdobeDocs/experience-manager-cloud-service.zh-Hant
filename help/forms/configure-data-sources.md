@@ -5,9 +5,9 @@ feature: Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
-source-git-commit: b9fb484135fb2d16758548c525b59f5ba011afb5
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2203'
+source-wordcount: '2201'
 ht-degree: 5%
 
 ---
@@ -283,7 +283,7 @@ OData服務由其服務根URL識別。 若要在中設定OData服務 [!DNL Exper
 
    >[!NOTE]
    >
-   您必須選取要連線的OAuth 2.0驗證型別 [!DNL Microsoft®® Dynamics] 使用OData端點做為服務根目錄的服務。
+   選取要連線的OAuth 2.0驗證型別 [!DNL Microsoft®® Dynamics] 使用OData端點做為服務根目錄的服務。
 
 1. 點選 **[!UICONTROL 建立]** 以建立OData服務的雲端設定。
 

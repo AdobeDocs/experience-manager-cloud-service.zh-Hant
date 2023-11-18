@@ -2,9 +2,9 @@
 title: 您的收件匣
 description: 瞭解如何使用到達收件匣的通知來管理您的工作。
 exl-id: 37d0cf43-192f-4a50-b174-42d7dced3b63
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '912'
+source-wordcount: '910'
 ht-degree: 17%
 
 ---
@@ -45,7 +45,7 @@ ht-degree: 17%
 
 若要開啟AEM通知收件匣：
 
-1. 按一下/點選工具列中的指示器。
+1. 選取工具列中的指示器。
 
 1. 選擇「 **全部查看**」。此 **AEM收件匣** 隨即開啟。 收件匣會顯示工作流程、專案和工作中的項目。
 1. 預設視圖是「列 [表視圖](#inbox-list-view)」，但您也可以切換到「日 [歷視圖」](#inbox-calendar-view)。這是使用檢視選取器 (工具列，右上方) 完成。

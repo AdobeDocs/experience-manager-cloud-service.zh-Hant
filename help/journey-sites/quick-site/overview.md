@@ -2,10 +2,10 @@
 title: AEM 快速網站建立歷程
 description: 從這裡開始，此歷程會逐步引導您了解簡單易用的 AEM 快速網站建立工具，以簡化 AEM 網站的前端開發，並在沒有 AEM 後端知識的情況下快速自訂您的網站。
 exl-id: b8218232-0298-4b16-9dab-fa59be592a24
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1032'
-ht-degree: 96%
+source-wordcount: '1029'
+ht-degree: 89%
 
 ---
 
@@ -29,7 +29,7 @@ AEM快速網站建立工具可讓非開發人員使用網站範本，從頭開�
 
 ## AEM 文件歷程 {#documentation-journeys}
 
-[文件歷程](/help/journey-documentation/documentation-journeys.md)提供敘述來協助剛開始使用 AEM 的讀者，讓他們能從頭到尾理解和解決業務問題，同時將採用的先前主題或 AEM 知識降至最低，藉以連結許多不同且複雜的主題和功能。
+[檔案歷程](/help/journey-documentation/documentation-journeys.md) 藉由提供敘述來協助剛開始使用AEM的讀者，讓他們能從頭到尾理解和解決業務問題，同時將採用的先前主題或AEM知識降至最低，藉以連結許多不同、複雜的主題和功能。
 
 文件歷程根據最佳實務原則而設計，其中包含 Adobe 的最新研究、Adobe 顧問的成熟實作經驗以及客戶專案的意見回饋。
 
@@ -67,7 +67,7 @@ AEM快速網站建立工具可讓非開發人員使用網站範本，從頭開�
 
 * 如果您是 AEM 或 Cloud Manager 管理員，或者如果您同時擔任前端開發人員和管理員角色，或者如果您只是想了解 AEM 中的端到端流程，請從歷程的開頭：[了解 Cloud Manager](cloud-manager.md) 開始進行。
 * 如果您只負責前端開發，會與 AEM 和 Cloud Manager 管理員互動，可以直接跳到[擷取 Git 存放庫存取權資訊](retrieve-access.md)，以取得 AEM Git 存放庫存取權並開始自訂。
-* 如果您已經了解 AEM Sites 和 Cloud Manager 如何協同運作，想直接開始設定，您可以[直接跳到從範本建立新網站。](create-site.md)
+* 如果您已瞭解AEM Sites和Cloud Manager的合作方式，並且希望直接從設定開始，您可以 [直接跳至從範本建立網站。](create-site.md)
 
 ## 其他資源 {#additional-resources}
 

@@ -5,9 +5,9 @@ uuid: c6c0d8ea-743f-4852-99d1-69fd50a0994e
 contentOwner: vishgupt
 topic-tags: document_services, publish
 discoiquuid: dd11fd83-3df1-4727-8340-8c5426812823
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1150'
+source-wordcount: '1149'
 ht-degree: 2%
 
 ---
@@ -95,7 +95,7 @@ ht-degree: 2%
 
 「動作」工具列會顯示任務的所有可用選項。 「儲存」、「重設」和「委派」是預設動作，其他可用動作則配置於 [指派任務步驟](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html#extending-aem). 在上述範例中，核准和拒絕是在工作流程中設定。
 
-當您對任務執行動作時，它會在工作流程中繼續進行。
+當您執行任務時，它會在工作流程中繼續進行。
 
 ### 檢視完成的任務 {#view-completed-tasks}
 

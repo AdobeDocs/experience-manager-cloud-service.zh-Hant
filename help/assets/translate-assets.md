@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Management,Translation
 role: Admin,User
 exl-id: 98df1412-a957-48a3-81c2-7dfe1d5e6d31
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2643'
-ht-degree: 23%
+source-wordcount: '2599'
+ht-degree: 17%
 
 ---
 
@@ -57,7 +57,7 @@ Also see, [Creating translation projects for content fragments](creating-transla
 
 多語言資產是指具有多語言二進位檔案、中繼資料和標籤的資產。 一般而言，資產的二進位檔案、中繼資料和標籤會以一種語言存在，然後會翻譯成其他語言以用於多語言專案。
 
-在Adobe Experience Manager資產中，多語言資產包含在資料夾中，其中每個資料夾都包含不同語言的資產。
+在Adobe Experience Manager Assets中，多語言資產包含在資料夾中，其中每個資料夾都包含不同語言的資產。
 
 每個語言資料夾都稱為語言副本。 語言副本的根資料夾（稱為語言根）可識別語言副本中內容的語言。 例如， `/content/dam/it` 是義大利文語言副本的義大利文語言根。 語言副本必須使用 [已正確設定的語言根目錄](#create-a-language-root) 以便在翻譯來源資產時鎖定正確的語言。
 
@@ -88,33 +88,33 @@ Also see, [Creating translation projects for content fragments](creating-transla
 
 例如，範例階層的義大利文語言副本的根頁面有 `it` 作為Name屬性。 Name屬性會用作存放庫中資產節點的名稱，從而決定資產的路徑。 (*&lt;server>：&lt;port>/assets.html/content/dam/it/*)
 
-1. 在「資產」主控台中，按一下/點選「 **[!UICONTROL 建立]** 」，然後從 **[!UICONTROL 選單選擇「資料夾]** 」。
+1. 從「資產」控制檯中，選取 **[!UICONTROL 建立]** 並選擇 **[!UICONTROL 資料夾]** 功能表中。
 1. 在「名稱」欄位中，輸入國家/地區代碼，格式為 `<language-code>`.
-1. 按一下或點選 **[!UICONTROL 建立]**. 語言根會在Assets主控台中建立。
+1. 選擇 **[!UICONTROL 建立]**。語言根會在Assets主控台中建立。
 
 ### 檢視語言根 {#view-language-roots}
 
 觸控最佳化的UI提供「參考」面板，顯示已在其中建立的語言根清單 [!DNL Assets].
 
 1. 在「資產」主控台中，選取您要建立語言副本的主要語言。
-1. 按一下或點選「全域導覽」圖示，然後選擇 **[!UICONTROL 引用]** 以開啟「參考」窗格。
-1. 在「參考」窗格中，按一下或點選 **[!UICONTROL 語言副本]**. 「語言副本」面板會顯示資產的語言副本。
+1. 選取GlobalNav圖示，然後選擇 **[!UICONTROL 引用]** 以開啟「參考」窗格。
+1. 在「參照」窗格中，選取 **[!UICONTROL 語言副本]**. 「語言副本」面板會顯示資產的語言副本。
 
 ### 建立新的翻譯專案 {#create-a-new-translation-project}
 
 如果您使用此選項，要翻譯的資產會複製到您要翻譯的語言的語言根目錄。 系統會根據您選擇的選項，在「專案」主控台中為資產建立翻譯專案。 根據設定，翻譯專案可以手動啟動，或是在建立翻譯專案後立即自動執行。
 
 1. 在「資產」UI中，選取您要建立語言副本的來源資料夾。
-1. 開啟「參 **[!UICONTROL 考」窗格]** ，然後按一下「復本」下的「語言復本 **[!UICONTROL 」(Language Copies]****[!UICONTROL )]**。
-1. 按一下/點選 **[!UICONTROL 建立並翻譯]** 在底部。
-1. 從「目 **[!UICONTROL 標語言]** 」清單中，選取您要建立檔案夾結構的語言。
+1. 開啟 **[!UICONTROL 引用]** 窗格並選取 **[!UICONTROL 語言副本]** 在 **[!UICONTROL 份數]**.
+1. 選取 **[!UICONTROL 建立並翻譯]** 在底部。
+1. 從 **[!UICONTROL 目標語言]** 清單中，選取您要建立檔案夾結構的語言。
 1. 從 **[!UICONTROL 專案]** 清單，選取 **[!UICONTROL 建立新的翻譯專案]**.
 1. 在「專 **[!UICONTROL 案標題]** 」欄位中，輸入專案標題。
-1. 按一下/點選 **[!UICONTROL 建立]**. 來源資料夾中的資產會複製到您在步驟4中所選地區設定的目標資料夾。
+1. 選擇於 **[!UICONTROL 建立]**. 來源資料夾中的資產會複製到您在步驟4中所選地區設定的目標資料夾。
 1. 若要導覽至資料夾，請選取語言副本，然後按一下 **[!UICONTROL 在資產中顯示]**.
 1. 導覽至「專案」主控台。 翻譯資料夾會複製到專案主控台。
 1. 開啟資料夾以檢視翻譯專案。
-1. 按一下/點選專案以開啟詳細資訊頁面。
+1. 選取專案以開啟詳細資訊頁面。
 1. 若要檢視翻譯工作的狀態，請按一下 **[!UICONTROL 翻譯工作]** 圖磚。 <!-- For more details around job statuses, see [Monitoring the Status of a Translation Job](/help/sites-administering/tc-manage.md#monitoring-the-status-of-a-translation-job). -->
 1. 在「資產」使用者介面中，開啟每個已翻譯資產的「屬性」頁面，以檢視已翻譯的中繼資料。
 
@@ -128,18 +128,18 @@ Also see, [Creating translation projects for content fragments](creating-transla
 
 1. 在「資產」UI中，導覽至包含未翻譯資產的來源資料夾。
 1. 選取您要轉換的資產，並開啟「參考」 **[!UICONTROL 窗格]**。「語 **[!UICONTROL 言副本]** 」部分顯示當前可用的翻譯副本數。
-1. 按一下/點選「 **[!UICONTROL 復本」下的]** 「語言 **[!UICONTROL 復本」]**。將顯示可用翻譯副本的清單。
-1. 按一下/點選 **[!UICONTROL 建立並翻譯]** 在底部。
-1. 從「目 **[!UICONTROL 標語言]** 」清單中，選取您要建立檔案夾結構的語言。
+1. 選取 **[!UICONTROL 語言副本]** 在 **[!UICONTROL 份數]**. 將顯示可用翻譯副本的清單。
+1. 選取 **[!UICONTROL 建立並翻譯]** 在底部。
+1. 從 **[!UICONTROL 目標語言]** 清單中，選取您要建立檔案夾結構的語言。
 1. 從「項 **[!UICONTROL 目]** 」清單中，選擇「 **[!UICONTROL 添加到現有翻譯項目」]** ，以在資料夾中運行翻譯工作流。
    >[!NOTE]
    >
    >如果您選擇 **[!UICONTROL 新增至現有翻譯專案]** 選項，只有在您的專案設定完全符合既有專案的設定時，才會將翻譯專案新增至既有專案。 否則，將會建立新專案。
 1. 從 **[!UICONTROL 現有翻譯專案]** 清單中，選取專案以新增要翻譯的資產。
-1. 按一下/點選「 **[!UICONTROL 建立]**」。要翻譯的資產會新增至目標資料夾。更新的資料夾會列在「語言復 **[!UICONTROL 本」區段下]** 。
+1. 選擇 **[!UICONTROL 建立]**。要翻譯的資產會新增至目標資料夾。更新的資料夾會列在「語言復 **[!UICONTROL 本」區段下]** 。
 1. 導覽至「專案」主控台，並開啟您新增的現有翻譯專案。
-1. 按一下/點選翻譯專案，以檢視專案詳細資訊頁面。
-1. 按一下/點選「 」底部的省略符號 **翻譯工作** 圖磚，以在翻譯工作流程中檢視資產。 翻譯工作清單也會顯示資產中繼資料和標記項目。這些項目表示資產中繼資料和標記也已翻譯。
+1. 選取翻譯專案，檢視專案詳細資訊頁面。
+1. 選取底部的省略符號 **翻譯工作** 圖磚，以在翻譯工作流程中檢視資產。 翻譯工作清單也會顯示資產中繼資料和標記項目。這些項目表示資產中繼資料和標記也已翻譯。
 
    >[!NOTE]
    >
@@ -147,8 +147,8 @@ Also see, [Creating translation projects for content fragments](creating-transla
    >* 如果您使用機器翻譯，則不會翻譯資產二進位檔案。
    >* 如果您新增至翻譯工作的資產包含子資產，請選取子資產並加以移除，翻譯才能順利進行，而不會出現任何問題。
 
-1. 若要開始資產的翻譯，請按一下/點選「 」上的「 」箭頭 **[!UICONTROL 翻譯工作]** 並選取 **[!UICONTROL 開始]** 從清單中。 訊息會通知開始翻譯工作。
-1. 若要檢視翻譯工作的狀態，請按一下/點選 **[!UICONTROL 翻譯工作]** 圖磚。 <!-- For more details, see [Monitoring the Status of a Translation Job](/help/sites-administering/tc-manage.md#monitoring-the-status-of-a-translation-job). -->
+1. 若要開始資產的翻譯，請選取 **[!UICONTROL 翻譯工作]** 並選取 **[!UICONTROL 開始]** 從清單中。 訊息會通知開始翻譯工作。
+1. 若要檢視翻譯工作的狀態，請選取「 」底部的省略符號 **[!UICONTROL 翻譯工作]** 圖磚。 <!-- For more details, see [Monitoring the Status of a Translation Job](/help/sites-administering/tc-manage.md#monitoring-the-status-of-a-translation-job). -->
 1. 翻譯完成後，狀態會變更為「準備好檢閱」。 導覽至「資產」UI，然後開啟每個已翻譯資產的「屬性」頁面，以檢視已翻譯的中繼資料。
 
 ### 更新語言副本 {#update-language-copies}
@@ -163,31 +163,31 @@ Also see, [Creating translation projects for content fragments](creating-transla
 如果您使用此選項，資產集將新增到現有翻譯專案中，以更新您選擇地區設定的語言副本。
 
 1. 從「資產」UI中，選取您新增資產資料夾的來源資料夾。
-1. 開啟「參 **[!UICONTROL 考」窗格]**，然後按一下/點選「復本」下的「語言復本 ******** 」，以顯示語言復本清單。
+1. 開啟 **[!UICONTROL 引用窗格]**，並選取 **[!UICONTROL 語言副本]** 在 **[!UICONTROL 份數]** 以顯示語言副本清單。
 1. 在「語言副本」之前選 **[!UICONTROL 取核取方塊]**，以選取所有語言副本。取消選擇與要翻譯的語言環境相對應的語言副本 (副本) 以外的其他副本。
-1. 按一下/點選 **[!UICONTROL 更新語言副本]** 在底部。
+1. 選取 **[!UICONTROL 更新語言副本]** 在底部。
 1. 從 **[!UICONTROL 專案]** 清單，選擇 **[!UICONTROL 新增至現有翻譯專案]**.
 1. 從 **[!UICONTROL 現有翻譯專案]** 清單中，選取專案以新增要翻譯的資產。
-1. 按一下/點選「 **[!UICONTROL 開始]**」。
+1. 選取 **[!UICONTROL 開始]**.
 1. 請參閱步驟9-14 / [新增至現有翻譯專案](#add-to-existing-translation-project) 以完成其餘程式。
 
 ### 建立暫存語言副本 {#creating-temporary-language-copies}
 
 當您執行翻譯工作流程，以使用原始資產的已編輯版本更新語言副本時，現有的語言副本會保留，直到您核准翻譯資產為止。 [!DNL Assets] 會將新翻譯的資產儲存在暫存位置，並在您明確核准資產後更新現有的語言副本。 如果您拒絕資產，則語言副本會維持不變。
 
-1. 按一下/點選下方的來源根資料夾 **[!UICONTROL 語言副本]** 您已為其建立語言副本，然後按一下/點選 **[!UICONTROL 在資產中顯示]** 以開啟資料夾 [!DNL Assets].
-1. 在「資產」使用者介面中，選取您已翻譯的資產，然後按一下/點選 **[!UICONTROL 編輯]** 圖示以在編輯模式中開啟資產。
+1. 選取下的來源根資料夾 **[!UICONTROL 語言副本]** 已為其建立語言副本，然後選取 **[!UICONTROL 在資產中顯示]** 以開啟資料夾 [!DNL Assets].
+1. 在Assets UI中，選取您已翻譯的資產，然後選取 **[!UICONTROL 編輯]** 圖示以在編輯模式中開啟資產。
 1. 編輯資產，然後儲存變更。
 1. 執行中的步驟2-14 [新增至現有翻譯專案](#add-to-existing-translation-project) 更新語言副本的程式。
-1. 按一下/點選「 」底部的省略符號 **[!UICONTROL 翻譯工作]** 圖磚。 從「 」中的資產清單 **[!UICONTROL 翻譯工作]** 頁面上，您可以清楚檢視資產翻譯版本的儲存暫時位置。
+1. 選取底部的省略符號 **[!UICONTROL 翻譯工作]** 圖磚。 從「 」中的資產清單 **[!UICONTROL 翻譯工作]** 頁面上，您可以清楚檢視資產翻譯版本的儲存暫時位置。
 1. 選取旁邊的核取方塊 **[!UICONTROL 標題]**.
-1. 在工具列中，按一下/點選「 **[!UICONTROL Accept Translation]** 」 (接受翻譯)，然後在對話方塊中按一下/點選「 **[!UICONTROL Accept]** 」 (接受)，以使用已編輯資產的翻譯版本覆寫目標資料夾中的翻譯資產。
+1. 從工具列中選取 **[!UICONTROL 接受翻譯]** 然後選取 **[!UICONTROL Accept]** 在對話方塊中，以已編輯資產的翻譯版本覆寫目標資料夾中的翻譯資產。
 
    >[!NOTE]
    >
    >若要啟用翻譯工作流程以更新目標資產，請接受資產和中繼資料。
 
-   按一下/點選 **[!UICONTROL 拒絕翻譯]** 在目標地區設定根目錄中保留資產的原始翻譯版本，並拒絕編輯的版本。
+   選取 **[!UICONTROL 拒絕翻譯]** 在目標地區設定根目錄中保留資產的原始翻譯版本，並拒絕編輯的版本。
 
 1. 導覽至「資產」主控台，然後開啟每個已翻譯資產的「屬性」頁面，以檢視已翻譯的中繼資料。
 
@@ -229,12 +229,12 @@ For tips on translating metadata for assets efficiently, see [5 Steps to efficie
 使用「 **僅建立結構** 」選項，在目標語言根目錄中建立目標資料夾層次結構，以匹配源語言根目錄中源資料夾的層次結構。在這種情況下，來源資產會複製到目標資料夾。但是，不會生成任何翻譯項目。
 
 1. 在「資產」UI中，選取您要在目標語言根目錄中建立結構的來源資料夾。
-1. 開啟「參 **[!UICONTROL 考」窗格]** ，然後按一下「復本」下的「語言復本 **[!UICONTROL 」(Language Copies]****[!UICONTROL )]**。
-1. 按一下/點選 **[!UICONTROL 建立並翻譯]** 在底部。
+1. 開啟 **[!UICONTROL 引用]** 窗格並選取 **[!UICONTROL 語言副本]** 在 **[!UICONTROL 份數]**.
+1. 選取 **[!UICONTROL 建立並翻譯]** 在底部。
 1. 從 **[!UICONTROL 目標語言]** 清單中，選取您要建立檔案夾結構的語言。
 1. 從「專 **[!UICONTROL 案]** 」清單中，選 **[!UICONTROL 擇「僅建立結構」]**。
-1. 按一下/點選「 **[!UICONTROL 建立]**」。目標語言的新結構列在 **[!UICONTROL 語言副本]**.
-1. 按一下/點選清單中的結構，然後按一下/點選 **[!UICONTROL 在資產中顯示]** 以瀏覽至目標語言中的資料夾結構。
+1. 選擇 **[!UICONTROL 建立]**。目標語言的新結構列在 **[!UICONTROL 語言副本]**.
+1. 從清單中選取結構，然後選取 **[!UICONTROL 在資產中顯示]** 以瀏覽至目標語言中的資料夾結構。
 
 ## 將翻譯雲端服務套用至資料夾 {#applying-translation-cloud-services-to-folders}
 
@@ -247,7 +247,7 @@ Adobe Experience Manager可讓您從所選的翻譯提供者取得雲端型翻�
 將翻譯雲端服務直接套用至您的資產檔案夾，讓您在建立或更新翻譯工作流程時，無需設定翻譯服務。
 
 1. 從「資產」使用者介面中，選取您要套用翻譯服務的資料夾。
-1. 在工具列中，按一下/點選「屬 **[!UICONTROL 性」圖示]** ，以顯示「資 **** 料夾屬性」頁面。
+1. 從工具列中選取 **[!UICONTROL 屬性]** 圖示以顯示 **[!UICONTROL 資料夾屬性]** 頁面。
 
    ![chlimage_1-215](assets/chlimage_1-215.png)
 
@@ -260,23 +260,23 @@ Adobe Experience Manager可讓您從所選的翻譯提供者取得雲端型翻�
 
    ![chlimage_1-217](assets/chlimage_1-217.png)
 
-1. 在工具列中，按一下/點選「 **[!UICONTROL 儲存]**」，然後按一下「確定 **** 」以關閉對話方塊。轉譯服務會套用至資料夾。
+1. 從工具列中選取 **[!UICONTROL 儲存]**，然後按一下 **[!UICONTROL 確定]** 以關閉對話方塊。轉譯服務會套用至資料夾。
 
 ### 套用自訂翻譯聯結器 {#applying-custom-translation-connector}
 
 如果要為要用於翻譯工作流的翻譯服務應用自定義連接器。若要套用自訂聯結器，請先從安裝聯結器 [封裝管理員](/help/implementing/developing/tools/package-manager.md). 然後，從雲端服務主控台設定連接器。在您設定連接器後，「套用轉譯服務」中所述的「雲端服務」標籤中的連接器清 [單中會顯示此連接器](#applying-the-translation-services)。在您應用自定義連接器並運行翻譯工作流後，翻譯項目的「 **[!UICONTROL Translation Summary]** 」 (翻譯摘要) 表徵圖會在heads **[!UICONTROL Provider]** and **[!UICONTROL Method下顯示連接器詳細資訊]**。
 
 1. 從安裝聯結器 [封裝管理員](/help/implementing/developing/tools/package-manager.md).
-1. 按一下/點選Experience Manager標誌，然後導覽至 **[!UICONTROL 「工具>部署>Cloud Service」]**.
+1. 選取Experience Manager標誌，並導覽至 **[!UICONTROL 「工具>部署>Cloud Service」]**.
 1. 在「雲端服務」頁面的「 **[!UICONTROL 協力廠商服務]** 」下，找 **[!UICONTROL 出您安裝的連接器]** 。
 
    ![chlimage_1-218](assets/chlimage_1-218.png)
 
-1. 按一下/點選 **[!UICONTROL 立即設定]** 用以開啟 **[!UICONTROL 建立設定]** 對話方塊。
+1. 選取 **[!UICONTROL 立即設定]** 用以開啟 **[!UICONTROL 建立設定]** 對話方塊。
 
    ![chlimage_1-219](assets/chlimage_1-219.png)
 
-1. 指定連接器的標題和名稱，然後按一下/點選「建 **[!UICONTROL 立」]**。自訂連接器位於「套用轉譯服務」步驟5中所述「 **[!UICONTROL 雲端服務]** 」標籤的連 [接器清單中](#applying-the-translation-services)。
+1. 指定聯結器的標題和名稱，然後選取 **[!UICONTROL 建立]**. 自訂連接器位於「套用轉譯服務」步驟5中所述「 **[!UICONTROL 雲端服務]** 」標籤的連 [接器清單中](#applying-the-translation-services)。
 1. 在套用自訂連接器後，執行建立翻譯專案中說明的任何翻譯工作流程。驗證「項目」控制台中翻譯項 **[!UICONTROL 目的「翻譯摘要]** 」表徵圖中連接器的詳 **[!UICONTROL 細資訊]** 。
 
    ![chlimage_1-220](assets/chlimage_1-220.png)

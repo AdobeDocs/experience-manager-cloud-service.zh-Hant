@@ -2,10 +2,10 @@
 title: AEM Headless 翻譯快速入門
 description: 了解如何組織 Headless 內容以及 AEM 翻譯工具的運作原理。
 exl-id: 04ae2cd6-aba3-4785-9099-2f6ef24e1daf
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1422'
-ht-degree: 96%
+source-wordcount: '1413'
+ht-degree: 93%
 
 ---
 
@@ -32,7 +32,7 @@ ht-degree: 96%
 
 ## 要求和先決條件 {#requirements-prerequisites}
 
-有許多要求必須符合，才能開始翻譯 Headless AEM 內容。
+開始翻譯Headless AEM內容之前，有幾項需求。
 
 ### 知識 {#knowledge}
 
@@ -78,17 +78,17 @@ AEM 的內容，無論是 Headless 網頁還是傳統網頁，都是由其結構
 
 因為內容模型定義了內容結構，所以您需要知道模型的哪些欄位必須翻譯。通常，您與內容架構師一起定義它。若要瀏覽內容模型的欄位，請按照以下步驟操作。
 
-1. 導覽至&#x200B;**工具** -> **一般** -> **內容片段模型**。
-1. 內容片段模型通常儲存在資料夾結構中。點選或按一下專案的資料夾。
-1. 模型隨即列出。點選或按一下模型以檢視詳細資料。
+1. 瀏覽至 **工具** > **一般** > **內容片段模型**.
+1. 內容片段模型通常儲存在資料夾結構中。選取專案的資料夾。
+1. 模型隨即列出。選取模型以檢視詳細資訊。
    ![內容片段模型](assets/content-fragment-models.png)
 1. **內容片段模型編輯器**&#x200B;開啟。
    1. 左欄包含模型的欄位。我們對此欄感興趣。
    1. 左欄包含可新增至模型的欄位。此欄我們可以忽略。
       ![內容片段模型編輯器](assets/content-fragment-model-editor.png)
-1. 點選或按一下模型的其中一個欄位。AEM 會標記該欄位，該欄位的詳細資料會顯示在右欄中。
+1. 選取模型的其中一個欄位。 AEM 會標記該欄位，該欄位的詳細資料會顯示在右欄中。
    ![內容片段模型編輯器詳細資料](assets/content-fragment-model-editor-detail.png)
-1. 內容架構師會在每一個需要翻譯的內容模型欄位上啟用&#x200B;**可翻譯**&#x200B;欄位。
+1. 內容架構師會啟用 **可翻譯** 每個必須翻譯的內容模型欄位上的欄位。
 
 >[!TIP]
 >

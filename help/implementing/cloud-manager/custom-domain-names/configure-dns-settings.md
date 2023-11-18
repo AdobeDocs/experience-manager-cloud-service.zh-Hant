@@ -2,10 +2,10 @@
 title: 正在設定 DNS 設定
 description: 了解如何為自訂網域名稱設定 DNS 設定。
 exl-id: 6e294f0b-52cb-40dd-bc42-ddbcffdf5600
-source-git-commit: 9fd7c17fce8c11809eabcc6387cbace0ebdc64a2
-workflow-type: ht
-source-wordcount: '338'
-ht-degree: 100%
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
+source-wordcount: '337'
+ht-degree: 95%
 
 ---
 
@@ -37,7 +37,7 @@ ht-degree: 100%
 
 Apex 網域是不包含子網域的自訂網域，例如`example.com`。Apex 網域是透過您的 DNS 提供者使用 `A`、`ALIAS` 或 `ANAME`記錄設定的。Apex 網域必須指向特定的 IP 位址。
 
-透過您的網域提供者將以下所有 `A` 記錄新增到您網域的 DNS 設定中。
+新增下列專案 `A` 記錄到您的網域的DNS設定，經由您的網域提供者。
 
 * `A RECORD`
 

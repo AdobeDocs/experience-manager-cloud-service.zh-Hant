@@ -2,10 +2,10 @@
 title: 屬性和類型
 description: 了解 Universal Editor 需要的資料屬性和類型。
 exl-id: 02795a31-244a-42b4-8297-2649125d7777
-source-git-commit: 3b98543098f4125a7d7e5896e5aa46e441a40f32
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '680'
-ht-degree: 100%
+source-wordcount: '679'
+ht-degree: 97%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->內容驗證在伺服器端執行。Universal Editor 僅使用資料屬性。需要在 API 層級驗證它們是否適合模型/結構。
+>內容驗證在伺服器端執行。Universal Editor 僅使用資料屬性。驗證是否符合模型/結構時，必須在API層級處理。
 
 ## 資料屬性 {#data-properties}
 

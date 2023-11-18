@@ -1,9 +1,10 @@
 ---
 title: 使用內容轉換器
 description: 瞭解如何轉換您的內容結構，為移轉至AEMas a Cloud Service做好準備。
-source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
+exl-id: 40516ff7-5686-42e6-bdd1-c9c6de432b09
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '645'
+source-wordcount: '642'
 ht-degree: 2%
 
 ---
@@ -22,7 +23,7 @@ ht-degree: 2%
 
 ## 可用性 {#availability-ct}
 
-內容轉換器與 [內容轉移工具](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md) 可從軟體發佈入口網站下載為zip檔案的網站。 您可以透過「封裝管理員」，在來源AEM執行個體上安裝封裝。
+內容轉換器與 [內容轉移工具](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md) 可從軟體發佈入口網站下載為zip檔。 您可以透過「封裝管理員」，在來源AEM執行個體上安裝封裝。
 
 >[!NOTE]
 >內容轉換器可搭配內容轉移工具v2.0.20或更新版本使用。
@@ -62,7 +63,7 @@ ht-degree: 2%
    >[!NOTE]
    > 任何可變更來源內容的操作(`move`/`remove`/`rename`)預設會建立「 」底下來源路徑的備份套件 `/etc/packages/content-transformation` 轉換之前。 雖然每個操作對話方塊都有一個選項可停用/啟用備份套件的建立，但嚴格建議您一律選取啟用套件的建立。
 
-1. 以下顯示為路徑移動作業所建立的備份封裝範例，按一下安裝以恢復來源路徑。 請注意，安裝只會讓來源路徑回到其原始位置，而不會刪除轉換期間移動它們的路徑。 若要刪除移動位置中的路徑，請按一下 **新增路徑** 按鈕以新增位置(例如 `/etc/packages/content-transformation/paths`)，選取位置並按一下 **移除**.
+1. 以下顯示為路徑移動作業所建立的備份封裝範例，按一下安裝以恢復來源路徑。 安裝作業只會讓來源路徑回到其原始位置，而不會刪除轉換期間移動它們的路徑。 若要刪除移動位置中的路徑，請按一下 **新增路徑** 按鈕以新增位置(例如 `/etc/packages/content-transformation/paths`)，選取位置並按一下 **移除**.
 
    >[!CAUTION]
    > 不要刪除 `/etc/packages/content-transformation` 因為這是備份封裝所在的位置。 只有在您確定不再需要這些套件時，才能刪除此位置以減少存放庫大小。

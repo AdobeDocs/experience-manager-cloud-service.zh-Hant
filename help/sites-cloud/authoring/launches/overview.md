@@ -2,10 +2,10 @@
 title: 啟動
 description: 啟動可讓您有效率地開發未來版本的內容。可讓您完成變更以供未來發佈，同時維護目前的頁面
 exl-id: 3e410120-d08f-4d05-932f-07bc4440af2b
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '901'
-ht-degree: 98%
+source-wordcount: '899'
+ht-degree: 95%
 
 ---
 
@@ -29,7 +29,7 @@ ht-degree: 98%
 
 啟動也可以：
 
-* 為多個根分支建立。雖然您可以為整個網站建立啟動 (並在其中進行變更)，但這可能是不切實際的，因為需要複製整個網站。當涉及數百甚至數千頁時，複製動作和之後提升工作所需的比較作業，會影響系統要求和效能。
+* 為多個根分支建立。雖然您可以建立整個網站的啟動（並在那裡進行變更），但這並不實際，因為必須複製整個網站。 當涉及數百甚至數千頁時，複製動作和之後提升工作所需的比較作業，會影響系統要求和效能。
 * 巢狀 (啟動中有啟動) 可讓您在現有啟動中建立啟動，如此作者可以利用已完成的變更，而不用對每個啟動重複進行相同的變更。
 
 此章節描述如何從 Sites 主控台或[啟動](#the-launches-console)主控台，建立、編輯和提升 (如有需要可[刪除](/help/sites-cloud/authoring/launches/creating.md#deleting-a-launch)) 啟動頁面。
@@ -96,7 +96,7 @@ ht-degree: 98%
 
    ![網站主控台中的啟動參考](/help/sites-cloud/authoring/assets/launches-references.png)
 
-1. 點選/按一下適當的啟動，畫面會顯示可執行的動作清單：
+1. 選取適當的啟動，便會顯示可能的動作清單：
 
    ![網站主控台中對啟動執行的動作](/help/sites-cloud/authoring/assets/launches-references-actions.png)
 
