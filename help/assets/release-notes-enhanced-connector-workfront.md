@@ -2,10 +2,10 @@
 title: ' [!DNL Workfront for Experience Manager enhanced connector] 版發行說明'
 description: ' [!DNL Workfront for Experience Manager enhanced connector] 版發行說明'
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 16aa0241dd954b7f66523d746827d81b956578bd
 workflow-type: tm+mt
-source-wordcount: '1352'
-ht-degree: 97%
+source-wordcount: '1379'
+ht-degree: 94%
 
 ---
 
@@ -15,20 +15,14 @@ ht-degree: 97%
 
 ## 發行日期 {#release-date}
 
-[!DNL Workfront for Experience Manager enhanced connector] 的最新版本 1.9.14 發布日期是 2023 年 10 月 13 日。
+最新版本1.9.15的發行日期 [!DNL Workfront for Experience Manager enhanced connector] 為2023年11月17日。
 
 ## 版本重點 {#release-highlights}
 
 [!DNL Workfront for Experience Manager enhanced connector] 的最新版本包括以下錯誤修復：
 
-* 當在「進階設定」下停用事件訂閱時，仍然可以選取以下選項：**訂閱文件更新事件以更新 AEM 資產中繼資料**、**在專案完成時將所有專案資產發佈到 Brand Portal**，以及&#x200B;**啟用註解同步**。
-
-* 在 Workfront 中預覽時，無法正確轉譯 Experience Manager 所儲存的某些資產。
-
-* 在重新設定 Experience Manager 與 Workfront 的連線時，未成功建立註解同步更新、刪除、文件更新等事件訂閱。
-
-* 對於連結的資料夾建立、更新、啟用連結的資料夾、評論同步啟用和停用、進階設定保存於連接器上等主要 API 效能改善。
-
+* 檢視AEM資料夾清單時，對話方塊需要超過一分鐘的時間載入。
+* 已授權 [!DNL Workfront] 使用者持續收到驗證失敗錯誤記錄。
 
 >[!NOTE]
 >
@@ -37,7 +31,7 @@ ht-degree: 97%
 
 >[!IMPORTANT]
 >
->Adobe 推薦[升級到最新 1.9.14 版本 ](/help/assets/workfront-connector-install.md) 的 [!DNL Workfront for Experience Manager enhanced connector]。
+>Adobe 推薦[升級到最新 1.9.15 版本 ](/help/assets/workfront-connector-install.md) 的 [!DNL Workfront for Experience Manager enhanced connector]。
 
 ## 已知問題 {#known-issues}
 
@@ -46,6 +40,16 @@ ht-degree: 97%
 * 使用傳統Workfront體驗時， **[!UICONTROL 傳送至]** 中可用的選項 **[!UICONTROL 更多]** 下拉式清單不允許您在Experience Manager中選取目標目的地。 使用「**[!UICONTROL 文件動作]**」下拉式清單時，「**[!UICONTROL 傳送至]**」選項正常運作。在使用新的 Workfront 體驗時，「**[!UICONTROL 更多]**」下拉式清單和「**[!UICONTROL 文件動作]**」下拉式清單的「**[!UICONTROL 傳送至]**」選項正常運作。
 
 ## 舊版本 {#previous-releases}
+
+### 2023 年 10 月版 {#october-2023-release}
+
+* 當在「進階設定」下停用事件訂閱時，仍然可以選取以下選項：**訂閱文件更新事件以更新 AEM 資產中繼資料**、**在專案完成時將所有專案資產發佈到 Brand Portal**，以及&#x200B;**啟用註解同步**。
+
+* 在 Workfront 中預覽時，無法正確轉譯 Experience Manager 所儲存的某些資產。
+
+* 在重新設定 Experience Manager 與 Workfront 的連線時，未成功建立註解同步更新、刪除、文件更新等事件訂閱。
+
+* 對於連結的資料夾建立、更新、啟用連結的資料夾、評論同步啟用和停用、進階設定保存於連接器上等主要 API 效能改善。
 
 ### 2023 年 9 月版 {#september-2023-release}
 
