@@ -2,10 +2,10 @@
 title: Universal Editor 架構
 description: 了解 Universal Editor 的架構，以及資料如何在其服務和階層之間流動。
 exl-id: e6f40743-0f21-4fb6-bf23-76426ee174be
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '650'
-ht-degree: 97%
+source-wordcount: '651'
+ht-degree: 93%
 
 ---
 
@@ -34,7 +34,7 @@ Universal Editor 由四個基本建置區塊組成，這些建置區塊可進行
 ### 編輯 {#editors}
 
 * **Universal Editor** - Universal Editor 使用經過檢測的 DOM 來就地編輯內容。如需必要中繼資料的詳細資訊，請參閱[屬性和類型](attributes-types.md)。請參閱文件[AEM 中 Universal Editor 快速入門](getting-started.md)，了解 AEM 中的檢測範例。
-* **屬性邊欄** - 元件的某些屬性不能在內容中編輯，例如浮動切換的切換時間，或摺疊式功能表標籤應始終打開或關閉。為了編輯此類元件資訊，編輯器的側欄提供了表單型編輯器。
+* **屬性邊欄**  — 元件的某些屬性無法在內容中編輯，例如輪播的輪播時間或應一律開啟或關閉摺疊式功能表索引標籤。 為了編輯此類元件資訊，編輯器的側欄提供了表單型編輯器。
 
 ### 遠端應用程式 {#remote-app}
 

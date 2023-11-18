@@ -2,10 +2,10 @@
 title: 建立設定 - Headless 設定
 description: 建立設定是在 AEM as a Cloud Service 中開始使用 Headless 的第一步。
 exl-id: 48801599-f279-4e55-8033-9c418d2af5bb
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '325'
-ht-degree: 94%
+ht-degree: 92%
 
 ---
 
@@ -39,7 +39,7 @@ ht-degree: 94%
 
 1. 選取 **建立**
 
-如果需要，您可以建立多個設定。設定也可以是巢狀。
+您可以視需要建立多個組態。 設定也可以是巢狀。
 
 >[!NOTE]
 >

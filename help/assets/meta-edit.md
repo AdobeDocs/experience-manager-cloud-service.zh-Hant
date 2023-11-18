@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: 464a97ce-da3e-47b5-9879-fafaf2f2378c
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '443'
 ht-degree: 7%
@@ -16,7 +16,7 @@ ht-degree: 7%
 
 中繼資料是可搜尋資產的其他相關資訊。 上傳影像時，系統會自動擷取該影像。 您可以編輯現有的中繼資料，或將新的中繼資料屬性新增到現有欄位（例如，當中繼資料欄位為空白時）。
 
-因為公司需要受控制且可靠的中繼資料辭彙， [!DNL Experience Manager Assets] 不允許臨時新增新的中繼資料屬性。 雖然作者無法為資產新增中繼資料欄位，但開發人員可以。 另請參閱 [建立資產的新中繼資料屬性](meta-edit.md#editing-metadata-schema).
+因為公司需要受控制且可靠的中繼資料辭彙， [!DNL Experience Manager Assets] 不允許隨選新增新的中繼資料屬性。 雖然作者無法為資產新增中繼資料欄位，但開發人員可以。 另請參閱 [建立資產的新中繼資料屬性](meta-edit.md#editing-metadata-schema).
 
 ## 編輯資產的中繼資料 {#editing-metadata-for-an-asset}
 

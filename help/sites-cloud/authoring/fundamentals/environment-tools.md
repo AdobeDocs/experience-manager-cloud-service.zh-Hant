@@ -2,9 +2,9 @@
 title: 製作環境和工具
 description: AEM的製作環境提供各種機制來組織和編輯您的內容
 exl-id: cc3bd4cf-93bd-429d-9a2a-4a02a7b42f7c
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '2158'
+source-wordcount: '2161'
 ht-degree: 10%
 
 ---
@@ -189,7 +189,7 @@ AEM的製作環境提供各種機制來組織和編輯您的內容。 提供的�
 
   基本頁面的元件會有常用選項。
 
-  如果按一下樹狀結構中的元件可編輯，則名稱右側會出現扳手圖示。 按一下此圖示將直接啟動元件的編輯對話方塊。
+  如果按一下樹狀結構中的元件可編輯，則名稱右側會出現扳手圖示。 按一下此圖示會啟動元件的編輯對話方塊。
 
   ![內容樹編輯按鈕](/help/sites-cloud/authoring/assets/content-tree-edit.png)
 
@@ -288,7 +288,7 @@ AEM的製作環境提供各種機制來組織和編輯您的內容。 提供的�
 >* 視頁面的特性而定，某些模式可能無法使用。
 >* 存取某些模式需要適當的許可權。
 >* 由於空間限制，開發人員模式不適用於行動裝置。
->* 有一個 [鍵盤快速鍵](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) ( `Ctrl-Shift-M`)以在 **預覽** 和目前選取的模式(例如， **編輯**， **版面**、等)。
+>* 有一個 [鍵盤快速鍵](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) ( `Ctrl-Shift-M`)以在 **預覽** 和目前選取的模式(例如， **編輯**， **版面**、等等)。
 >
 
 ## 路徑選擇 {#path-selection}
@@ -318,7 +318,7 @@ AEM的製作環境提供各種機制來組織和編輯您的內容。 提供的�
 * 選取資源後， **選取** 對話方塊右上角的按鈕會變成使用中按鈕。 選取以確認選取範圍或 **取消** 以中止。
 * 如果上下文允許選擇多個資源，則選擇資源也會激活「選擇 **** 」按鈕，但也會向窗口的右上角添加選定資源的計數。按一下 **數字旁** 的X，取消選取全部。
 * 當您瀏覽樹狀結構時，您的位置會反映在對話方塊頂端的階層連結中。 這些階層連結也可用來在資源階層內快速跳轉。
-* 您可以隨時使用對話方塊頂端的搜尋欄位。 按一下 **X** ，以清除搜尋。
+* 您隨時可以使用對話方塊頂端的搜尋欄位。 按一下 **X** ，以清除搜尋。
 * 若要縮小搜尋範圍，您可以顯示篩選選項，並根據特定路徑篩選結果。
 
   ![篩選器選項](/help/sites-cloud/authoring/assets/filters-option.png)

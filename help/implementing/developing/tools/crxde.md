@@ -2,7 +2,7 @@
 title: 使用 CRXDE Lite
 description: CRXDE Lite是AEM快速入門的一部分，可供您在瀏覽器中存取和修改本機開發環境中的存放庫。
 exl-id: 1581a7e5-6f84-4a45-8e8f-c83692ea077a
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '1685'
 ht-degree: 1%

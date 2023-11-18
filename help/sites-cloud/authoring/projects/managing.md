@@ -2,9 +2,9 @@
 title: 管理專案
 description: 專案可讓您將資源分組到一個實體中，以便在「專案」主控台中存取和管理該實體，藉此組織您的專案
 exl-id: be4616e7-18bc-4b2d-89f6-d04178ac7f3a
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '876'
+source-wordcount: '875'
 ht-degree: 11%
 
 ---
@@ -38,7 +38,7 @@ AEM提供這些立即可用的範本，供您在建立專案時選擇：
 
    ![建立專案](/help/sites-cloud/authoring/assets/projects-create.png)
 
-1. 定義 **標題** 和 **說明** 並新增 **縮圖** 影像（若有需要）。 您也可以新增或刪除使用者，以及使用者所屬的群組。 此外，按一下 **進階** 以新增在URL中使用的名稱。
+1. 定義 **標題** 和 **說明** 並新增 **縮圖** 影像（如有需要）。 您也可以新增或刪除使用者，以及使用者所屬的群組。 此外，按一下 **進階** 以新增在URL中使用的名稱。
 
    ![新增專案詳細資料](/help/sites-cloud/authoring/assets/projects-add-team.png)
 

@@ -4,7 +4,7 @@ description: 瞭解如何從主控台和編輯器管理您的AEM內容片段（�
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '2531'
 ht-degree: 3%
@@ -228,7 +228,7 @@ ht-degree: 3%
    * **位置**  — 這將會以目前位置自動完成，但您可以視需要選取其他位置
    * **內容片段模型**  — 從下拉式清單中選取要作為片段基礎的模式
    * **標題**
-   * **名稱**  — 這將根據以下專案自動完成： **標題**，但如有需要，可加以編輯
+   * **名稱**  — 這將根據以下專案自動完成： **標題**，但必要時可加以編輯
    * **說明**
 
    ![新內容片段對話方塊](assets/cf-managing-new-cf-dialog.png)

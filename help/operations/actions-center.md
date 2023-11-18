@@ -2,10 +2,10 @@
 title: 行動中心
 description: 善用行動中心，方便處理事件和其他重要資訊
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '726'
-ht-degree: 98%
+ht-degree: 83%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 98%
 
 AEM as Cloud Service 在發生需要立即採取行動的嚴重事件時會傳送行動中心電子郵件，並提出主動建議以進行最佳化。例如，佇列阻塞或一組過期的憑證；您可在[下表](#supported-notification-types)檢視整套行動中心通知類型，通知類型會隨時間增加。
 
-收到行動中心電子郵件通知後，可以點選並打開 AEM as a Cloud Service 的通知中心，這會彈出顯示附加內容的快顯視窗，說明建議客戶採取的動作。
+收到「作業中心」電子郵件通知時，您可以按一下該通知，開啟AEMas a Cloud Service的「作業中心」，並出現快顯視窗，顯示說明客戶應採取的作業的額外內容。
 
 除了顯示有關剛剛按一下的電子郵件通知資訊外，行動中心還可充當中樞，讓您在其中查看和管理目前和較舊的通知組。<!-- It can be accessed directly at the url TBD (Alexandru: I'm intentionally keeping it TBD for now so customers do not find it) -->
 
@@ -35,7 +35,7 @@ AEM as Cloud Service 在發生需要立即採取行動的嚴重事件時會傳�
 
 ## 詳細的使用者流程 {#detailed-user-flow}
 
-按一下電子郵件會將您帶往行動中心，顯示您按一下的通知內容的快顯視窗會隨即出現，在某些情況下，還會顯示說明如何採取糾正措施的其他資訊連結。您還可以直接存取行動中心：[https://experience.adobe.com/aem/actions-center](https://experience.adobe.com/aem/actions-center/)；您可以在行動中心選取相關的計畫和環境。
+按一下電子郵件即可進入「動作中心」，快顯視窗會顯示您所按通知的前後關聯，在某些情況下，還會顯示其他資訊的連結，說明如何採取更正動作。 您還可以直接存取行動中心：[https://experience.adobe.com/aem/actions-center](https://experience.adobe.com/aem/actions-center/)；您可以在行動中心選取相關的計畫和環境。
 
 ![事件詳細資料](/help/operations/assets/incident-details.png)
 
@@ -45,7 +45,7 @@ AEM as Cloud Service 在發生需要立即採取行動的嚴重事件時會傳�
 
 ![通知清單](/help/operations/assets/notification-list.png)
 
-在大多數情況下，快顯視窗應提供解決問題的所有必要內容。但是，如果對 Adobe 支援有疑問，您可以按一下快顯視窗中的&#x200B;**聯絡支援人員**&#x200B;連結。這將彈出一個表格，您可以在表格中描述問題並提交它以建立支援票證，其中可包含對特定通知的參考，以便 Adobe 支援工程師了解相關內容。
+在大多數情況下，快顯視窗應該會提供所有解決問題所需的內容。 不過，如果Adobe支援有任何問題，您可以按一下 **聯絡支援人員** 快顯視窗中的連結。 這將彈出一個表格，您可以在表格中描述問題並提交它以建立支援票證，其中可包含對特定通知的參考，以便 Adobe 支援工程師了解相關內容。
 
 ![聯絡支援 1](/help/operations/assets/contact-support1.png)
 

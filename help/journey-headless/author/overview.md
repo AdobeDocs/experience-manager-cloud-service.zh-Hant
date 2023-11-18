@@ -2,10 +2,10 @@
 title: AEM Headless 內容作者歷程
 description: 從這裡開始，此歷程會逐步引導您了解 AEM 強大且靈活的 Headless 特性、其功能，以及如何為您的專案編寫內容。
 exl-id: fe124c6b-932a-44fc-a87b-12691aefea56
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '876'
-ht-degree: 91%
+source-wordcount: '873'
+ht-degree: 90%
 
 ---
 
@@ -27,7 +27,7 @@ Headless 內容不是以傳統的頁面和元件結構為基礎。相反，是�
 
 * 對什麼是 Headless 內容傳遞及其優勢有基本的了解。
 * 了解 AEM 的 Headless 功能以及它們如何協同工作以傳遞 Headless 體驗。
-* 能夠為您的 AEM Headless 專案編寫內容。
+* 可以為您的AEM Headless專案編寫內容。
 
 ## AEM 文件歷程 {#documentation-journeys}
 

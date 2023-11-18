@@ -2,7 +2,7 @@
 title: 一般Lucene索引移除
 description: 瞭解一般Lucene索引的計畫移除情況，以及您會受到哪些影響。
 exl-id: 3b966d4f-6897-406d-ad6e-cd5cda020076
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '1335'
 ht-degree: 0%
@@ -42,7 +42,7 @@ org.apache.jackrabbit.oak.plugins.index.lucene.LucenePropertyIndex This index is
 
 Adobe已透過以下方式調整指數成本： `costPerEntry` 和 `costPerExecution` 屬性以確保其他索引，例如 `/oak:index/pathreference` 會儘可能優先使用。
 
-若客戶應用程式使用的查詢仍相依於此索引，則應立即更新以使用其他現有索引，以便視需要自訂。 或者，可將新的自訂索引新增到客戶應用程式。 AEMas a Cloud Service索引管理的完整指示可在以下連結中找到： [索引檔案](/help/operations/indexing.md).
+若客戶應用程式使用的查詢仍相依於此索引，則應立即更新以使用其他現有索引，如有必要，可自訂這些索引。 或者，可將新的自訂索引新增到客戶應用程式。 AEMas a Cloud Service索引管理的完整指示可在以下連結中找到： [索引檔案](/help/operations/indexing.md).
 
 ## 您有受到影響嗎？ {#are-you-affected}
 

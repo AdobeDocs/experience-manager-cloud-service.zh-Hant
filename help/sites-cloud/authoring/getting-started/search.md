@@ -2,7 +2,7 @@
 title: 搜尋
 description: 透過完整的搜尋更快找到您的內容
 exl-id: 8a799e9a-1461-4e79-ae90-1978af6cf0ed
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '492'
 ht-degree: 8%
@@ -41,7 +41,7 @@ AEM的製作環境提供多種搜尋內容的機制，視資源型別而定。
 
    ![搜尋位置](/help/sites-cloud/authoring/assets/search-term-location.png)
 
-1. 如有需要，您可以移除位置篩選器(選取 **X** ，以搜尋所有主控台/資源型別。
+1. 如有必要，您可以移除位置篩選器(選取 **X** ，以搜尋所有主控台/資源型別。
 1. 將顯示結果，並根據控制檯和相關資源型別分組。
 
    您可以選取特定資源（以供後續動作），或透過選取所需的資源型別向下展開；例如 **檢視所有網站**：

@@ -2,9 +2,9 @@
 title: 頁面範本
 description: 建立作為新頁面基礎的頁面時，會使用頁面範本
 exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '3279'
+source-wordcount: '3278'
 ht-degree: 1%
 
 ---
@@ -47,7 +47,7 @@ ht-degree: 1%
 
    >[!NOTE]
    >
-   >現成提供一系列範本型別。 您也可以 [建立您自己的特定網站範本型別](#creating-template-types) 若有需要。
+   >現成提供一系列範本型別。 您也可以 [建立您自己的特定網站範本型別](#creating-template-types) 如有需要。
 
 1. 設定新範本的結構、內容原則、初始內容和版面配置。
 
@@ -449,7 +449,7 @@ GITHUB上的程式碼
 * 與結構合併( `/structure`)建立頁面時。
 * 如果在建立後變更初始內容，則不會更新任何現有頁面。
 * 此 `root` node會儲存元件清單，以定義結果頁面中的可用專案。
-* 如果在結構模式下將內容新增到元件中，且隨後解鎖該元件（反之亦然），則會將此內容用作初始內容。
+* 如果在結構模式下將內容新增到元件，且隨後解鎖該元件（或反之），則此內容會用作初始內容。
 
 ### 版面配置 {#layout}
 

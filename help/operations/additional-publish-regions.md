@@ -2,10 +2,10 @@
 title: 額外發佈區域
 description: 了解 AEM as a Cloud Service 如何支援額外發佈區域以提高可用性並減少延遲。
 exl-id: b9ac3c6a-eb8b-461d-8f1d-a0356046a3f9
-source-git-commit: c0c669f847c9ef64b1fa22cfc24ac693c3c8ad90
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '639'
-ht-degree: 84%
+source-wordcount: '640'
+ht-degree: 80%
 
 ---
 
@@ -55,7 +55,7 @@ ht-degree: 84%
 
 在考慮使用額外發佈區域時，請謹記以下限制。
 
-* 只能將額外發佈區域新增到 AEM Sites。額外發佈區域不會延伸到在同一計畫中部署的額外 AEM 解決方案或相關功能 (例如 AEM Forms 或 Adob&#x200B;&#x200B;e Learning Manager)。
+* 只能將額外發佈區域新增到 AEM Sites。其他發佈區域不會延伸至相同方案中部署的其他AEM解決方案或相關功能(例如AEM Forms或Adobe Learning Manager)。
 * 只有在租用戶中有相關權益且未使用時，才能新增額外區域。
 * 最多可以向任何個別環境新增三個額外的發佈區域。
 * 額外區域僅適用於生產計畫。此功能在沙箱計畫中無法使用。

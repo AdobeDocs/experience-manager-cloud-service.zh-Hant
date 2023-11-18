@@ -2,10 +2,10 @@
 title: 屬性和類型
 description: 了解 Universal Editor 需要的資料屬性和類型。
 exl-id: 02795a31-244a-42b4-8297-2649125d7777
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '679'
-ht-degree: 97%
+source-wordcount: '682'
+ht-degree: 91%
 
 ---
 
@@ -32,7 +32,7 @@ ht-degree: 97%
 | `data-editor-itemfilter` | 定義可以使用哪些參考 |
 | `data-editor-itemlabel` | 為編輯器中顯示的可選項目定義自訂標籤，<br>如果`itemmodel`已經設定了，會透過模型擷取標籤 |
 | `data-editor-itemmodel` | 定義模型，該模型用於屬性邊欄中的表單型編輯 |
-| `data-editor-behavior` | 定義檢測行為，例如獨立的文字或影像也可以像元件一樣可移動或刪除 |
+| `data-editor-behavior` | 定義檢測的行為，例如，獨立的文字或影像也可以模擬元件，使其可移動或可刪除 |
 
 ## 項目類型 {#item-types}
 
@@ -43,7 +43,7 @@ ht-degree: 97%
 | `media` | 可編輯的是資產，例如影像或影片 | 選用 | 必要 | 傳遞給資產選擇器的選擇性<br>影像或影片篩選條件清單 | 選用 | N/A | 選用 |
 | `container` | 可編輯的行為就像元件的容器，也就是段落系統。 | 視情況而定 <br> (請參閱下文)。 | 視情況而定 <br> (請參閱下文)。 | 選擇性 <br> 允許元件清單 | 選用 | N/A | N/A |
 | `component` | 可編輯的是元件。它不會新增額外功能。需要它才能指明 DOM 的可移動/可刪除部分，以及開啟屬性邊欄及其欄位 | 必要 | N/A | N/A | 選用 | 選用 | N/A |
-| `reference` | 可編輯的是參考，例如內容片段、體驗片段或產品 | 視情況而定 <br> (請參閱下文)。 | 視情況而定 <br> (請參閱下文)。 | 傳遞給參考選擇器的選擇性<br>內容片段、產品或體驗片段篩選條件清單 | 選用 | 選用 | N/A |
+| `reference` | 可編輯是參考資料，例如內容片段、體驗片段或產品 | 視情況而定 <br> (請參閱下文)。 | 視情況而定 <br> (請參閱下文)。 | 傳遞給參考選擇器的選擇性<br>內容片段、產品或體驗片段篩選條件清單 | 選用 | 選用 | N/A |
 
 根據使用案例 `itemprop` 或 `itemid`，可能需要也可能不需要。例如：
 

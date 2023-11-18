@@ -6,7 +6,7 @@ mini-toc-levels: 1
 feature: Collaboration,Adobe Asset Link,Desktop App
 role: Architect,User,Admin
 exl-id: cbed0d62-5148-45eb-b6a0-9fd164060fdc
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '3489'
 ht-degree: 15%
@@ -82,7 +82,7 @@ Adobe Creative Cloud為創意團隊提供解決方案和服務的生態系統，
 * [Experience Manager Assets Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html) ，用於可設定的Assets附加元件以發佈資產。
 
 * 自訂解決方案是根據 [Asset Share Commons](https://opensource.adobe.com/asset-share-commons/) 程式碼基底。
-* Experience Manager [連結共用](/help/assets/share-assets.md) 以使用連結來臨機共用資產。
+* Experience Manager [連結共用](/help/assets/share-assets.md) 以使用連結隨選共用資產。
 * [Assets網頁介面](/help/assets/manage-digital-assets.md) 利用Experience Manager存取控制設定保護外部合作方的區域，以及必要的IT/網路組態調整，讓這些外部使用者能夠存取Experience Manager。
 
 ## 重要概念與使用案例 {#key-concepts-and-use-cases}

@@ -2,15 +2,15 @@
 title: Screensas a Cloud Service中的Screens通知服務
 description: 本頁面說明如何在Screensas a Cloud Service設定「通知服務」。
 index: true
-source-git-commit: 81ce7954479366e40b47325577e1450f3d7a4c29
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '124'
-ht-degree: 4%
+source-wordcount: '125'
+ht-degree: 6%
 
 ---
 
 
-# Screens通知服務 {#notification-service}
+# Screens 通知服務 {#notification-service}
 
 ## 簡介 {#introduction}
 

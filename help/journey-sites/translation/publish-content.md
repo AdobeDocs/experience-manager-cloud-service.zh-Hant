@@ -5,10 +5,10 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: 081167dd-da4c-48d2-a6d3-f95e873be3e9
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '1329'
-ht-degree: 71%
+source-wordcount: '1326'
+ht-degree: 70%
 
 ---
 
@@ -157,7 +157,7 @@ ht-degree: 71%
 
 * 基本瞭解AEM內容管理功能。
 * 瞭解AEM翻譯功能以及這些功能與您的網站內容的相關性。
-* 能夠開始翻譯您自己的 內容。
+* 快速翻譯您自己的內容。
 
 您現在已準備好在 AEM 中翻譯您自己的 內容。但是，AEM 是一個強大的工具，還有許多其他選項可用。查看[其他資源章節](#additional-resources)提供的一些其他資源，以詳細了解您在此歷程中看到的功能。
 

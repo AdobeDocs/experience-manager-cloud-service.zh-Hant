@@ -2,10 +2,10 @@
 title: 不同之處與新增功能 - Adobe Experience Manager as a Cloud Service
 description: 不同之處與新增功能 - Adobe Experience Manager (AEM) as a Cloud Service。
 exl-id: d1ce126e-960c-4367-b741-af709dd81010
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '1889'
-ht-degree: 94%
+source-wordcount: '1891'
+ht-degree: 93%
 
 ---
 
@@ -182,7 +182,7 @@ Web 主控台，這個管理 OSGI 套件及其關聯設定的地方，先前也�
 
 由於程式碼和內容的明確分離，開發人員可以使用特定過程來更新內容作為部署的一部分。可變內容的典型使用案例：
 
-* 客戶專案內含的標準&#x200B;*預設*&#x200B;內容 (例如資料夾、範本、工作流程等)
+* 標準 *預設* 屬於客戶專案一部分的內容（例如資料夾、範本、工作流程等）
 
 * 搜尋索引定義
 

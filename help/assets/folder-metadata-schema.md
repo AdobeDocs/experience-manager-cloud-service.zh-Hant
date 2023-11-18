@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: c86760ed-169d-40f7-91a4-8aee449b286c
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '1069'
 ht-degree: 10%
@@ -48,7 +48,7 @@ ht-degree: 10%
 
 1. 若要設定元件，請選取該元件，並在下列位置修改其屬性： **[!UICONTROL 設定]** 標籤。
 
-   必要時，從元件庫中刪除元件， **[!UICONTROL 設定]** 標籤。
+   如有必要，請從以下位置刪除元件： **[!UICONTROL 設定]** 標籤。
 
    ![configure_properties](assets/configure_properties.png)
 

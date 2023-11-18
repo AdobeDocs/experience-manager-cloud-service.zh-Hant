@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2022.6.0 版發行說明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2022.6.0 版發行說明。'
 exl-id: cf2133dc-56cd-4a07-ab11-72e16f015ff5
-source-git-commit: 7d09cafc4f8518fee185d3f9efc76c33ec20f9a3
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '639'
-ht-degree: 23%
+source-wordcount: '637'
+ht-degree: 31%
 
 ---
 
@@ -37,7 +37,7 @@ ht-degree: 23%
 
 ### [!DNL Sites] 中的新功能 {#sites-features}
 
-* 新 [使用者介面](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console) 內容管理員和內容作者現在可以有效地管理（執行發佈、取消發佈、複製、移動等動作）、搜尋/篩選，以及為無頭式使用案例建立內容片段。
+* 新 [使用者介面](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console) 內容管理員和內容作者現在可以有效地管理（例如發佈、取消發佈、複製、移動等）、搜尋/篩選，以及為無頭式使用案例建立內容片段。
 
   ![內容片段主控台](/help/release-notes/assets/cf-ui.png)
 
@@ -53,7 +53,7 @@ Experience Manager Assets現在使用Adobe Sensei AI功能 [區分影像中的�
 
 ### [!DNL Forms] 中的新功能 {#forms-features}
 
-* **[整合Adaptive Forms與Microsoft® Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)**：您現在可以設定最適化表單，在提交時執行Microsoft® Power Automate Cloud Flow。 設定的最適化表單會將擷取的資料、附件和記錄檔案傳送到Power Automate雲端流程進行處理。 它可幫助您建立自訂資料擷取體驗，同時利用Microsoft® Power Automate的強大功能，圍繞擷取的資料建立商業邏輯，並自動化客戶工作流程。
+* **[整合Adaptive Forms與Microsoft® Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)**：您現在可以設定最適化表單，在提交時執行Microsoft® Power Automate Cloud Flow。 設定的最適化表單會將擷取的資料、附件和記錄文件傳送到 Power Automate Cloud Flow 進行處理。那有助於建置自訂資料擷取體驗，同時利用 Microsoft® Power Automate 的強大功能，根據擷取的資料建置商業邏輯，並將客戶工作流程自動化。
 
 * **用於建立最適化表單的精靈**：您可以使用業務使用者友善的精靈來快速撰寫最適化Forms。 精靈提供快速索引標籤導覽，以便輕鬆選取用於建立最適化表單的預先設定範本、樣式、欄位和提交選項。
 
@@ -71,7 +71,7 @@ Experience Manager Assets現在使用Adobe Sensei AI功能 [區分影像中的�
 
 * 改善對GQL使用者端設定覆寫的支援（例如，設定自訂快取行為）
 
-* 現成支援多個商務端點，並可透過Cloud Manager設定。 詳情請見CIF部落格 [此處](https://medium.com/adobetech/use-aem-as-a-cloud-service-with-multiple-adobe-commerce-systems-9295612a9554).
+* 現成支援多個商務端點，並可透過Cloud Manager設定。 您可以在CIF部落格中找到詳細資訊 [此處](https://medium.com/adobetech/use-aem-as-a-cloud-service-with-multiple-adobe-commerce-systems-9295612a9554).
 
 
 ### 錯誤修正 {#bug-fixes-cif}
@@ -84,7 +84,7 @@ Experience Manager Assets現在使用Adobe Sensei AI功能 [區分影像中的�
 
 ### 新增功能 {#what-is-new-demos}
 
-* 新的WKND內容和商務範本透過E2E購物體驗擴充WKND，包含產品目錄、購物車、結帳和myAccount。 此範本使用CIF及其CIF核心元件，因此您也需要安裝CIF附加元件。 詳情請見CIF部落格 [此處](https://medium.com/adobetech/learn-how-to-create-a-shoppable-experience-with-the-new-wknd-reference-site-and-cif-b3b2c161f67e).
+* 新的WKND內容和商務範本透過E2E購物體驗擴充WKND，包含產品目錄、購物車、結帳和myAccount。 此範本使用CIF及其CIF核心元件，因此您也需要安裝CIF附加元件。 您可以在CIF部落格中找到詳細資訊 [此處](https://medium.com/adobetech/learn-how-to-create-a-shoppable-experience-with-the-new-wknd-reference-site-and-cif-b3b2c161f67e).
 
 ![WKND商店](/help/assets/CIF/wknd_shop.png)
 

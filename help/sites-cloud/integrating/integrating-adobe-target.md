@@ -4,7 +4,7 @@ description: 瞭解如何使用觸控式UI和Adobe Launch將Adobe Target與AEMas
 feature: Administering
 role: Admin
 exl-id: cf243fb6-5563-427f-a715-8b14fa0b0fc2
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '1034'
 ht-degree: 1%
@@ -50,7 +50,7 @@ Adobe Target是Adobe Experience Cloud的一部分，可讓您透過針對所有�
 在這兩種情況下：
 
 * 依預設，使用者端代碼（如果先新增）也會自動複製到「租使用者ID」欄位中。
-* 如有需要，您可以變更預設租使用者ID集。
+* 如有必要，您可以變更預設的租使用者ID集。
 * 對Target進行的後端呼叫是根據租使用者ID，而對Target進行的使用者端呼叫是根據使用者端代碼。
 
 如前所述，第一個案例是AEMas a Cloud Service最常見的情況。 無論是哪一種方式，請確定 **兩者** 欄位包含正確的資訊，具體取決於您的需求。

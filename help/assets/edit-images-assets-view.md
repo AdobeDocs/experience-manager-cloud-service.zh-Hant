@@ -3,10 +3,10 @@ title: 編輯影像
 description: 使用  [!DNL Adobe Photoshop Express]  支援的選項編輯影像，並將更新的影像另存新版。
 role: User
 exl-id: fc21a6ee-bf23-4dbf-86b0-74695a315b2a
-source-git-commit: 30b8c9b8eaee6292323dde4b436c29fe8290c910
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '896'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -36,7 +36,7 @@ ht-degree: 100%
 1. 選取影像並按一下「**編輯**」。
 2. 從左窗格中可用的快速動作中，按一下「**[!DNL Resize Image]**」。
 3. 從「**[!UICONTROL 調整大小的內容]**」下拉清單選取適當的社交媒體平台，然後從顯示的選項中選擇影像大小。
-4. 如果需要，使用「**[!UICONTROL 影像比例]**」欄位來縮放影像。
+4. 如有必要，使用 **[!UICONTROL 影像比例]** 欄位。
 5. 按一下「**[!DNL Apply]**」以套用您的變更。
    ![使用 Adobe Express 進行影像編輯](assets/adobe-express-resize-image.png)
 

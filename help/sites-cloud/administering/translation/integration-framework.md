@@ -4,7 +4,7 @@ description: 瞭解如何設定翻譯整合框架以與協力廠商翻譯服務�
 feature: Language Copy
 role: Admin
 exl-id: 6e74cdee-7965-4087-a733-e9d81c4aa7c2
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '1499'
 ht-degree: 8%
@@ -45,7 +45,7 @@ ht-degree: 8%
 
 安裝聯結器套件後，您可以為聯結器建立雲端設定。 通常您需要提供認證來向翻譯服務進行驗證。 如需為Microsoft Translator聯結器新增雲端設定的詳細資訊，請參閱 [與Microsoft Translator整合](connect-ms-translator.md).
 
-如果需要，您可以為相同聯結器建立多個雲端設定。 例如，為您在同一廠商的每個帳戶或專案建立一個設定。
+您可以視需要為相同的聯結器建立多個雲端設定。 例如，為您在同一廠商的每個帳戶或專案建立一個設定。
 
 設定連線後，您可以建立使用它的翻譯整合框架設定。
 

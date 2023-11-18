@@ -2,10 +2,10 @@
 title: 發佈翻譯的 Headless 內容
 description: 了解如何發佈翻譯的內容，並在內容更新時更新翻譯。
 exl-id: eb8d1152-ed37-47ca-86a8-6a66c010ee62
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '1360'
-ht-degree: 83%
+source-wordcount: '1359'
+ht-degree: 82%
 
 ---
 
@@ -155,7 +155,7 @@ ht-degree: 83%
 * 大致了解什麼是 Headless 內容傳遞。
 * 對 AEM Headless 功能有基本的了解。
 * 了解 AEM 的翻譯功能及其與 Headless 內容的關係。
-* 能夠開始翻譯您自己的 Headless 內容。
+* 能夠開始翻譯您自己的Headless內容。
 
 您現在已準備好在 AEM 中翻譯您自己的 Headless 內容。但是，AEM 是一個強大的工具，還有許多其他選項可用。查看[其他資源章節](#additional-resources)提供的一些其他資源，以詳細了解您在此歷程中看到的功能。
 

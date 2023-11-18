@@ -2,10 +2,10 @@
 title: 匯出為 CSV
 description: 將頁面的相關資訊匯出至本機系統上的CSV檔案
 exl-id: 818e927e-40b2-4ccb-bfb3-88284ad49829
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '197'
-ht-degree: 38%
+ht-degree: 32%
 
 ---
 
@@ -46,7 +46,7 @@ ht-degree: 38%
 
 若要建立CSV匯出：
 
-1. 開啟 **Sites** Console，視需要導覽至所需位置。
+1. 開啟 **網站** 主控台，視需要導覽至所需位置。
    * 瀏覽Sites **控制台時**  (在「清單」檢視中)，可使用「建立 **CSV報表** 」選項
    * 這是的選項 **建立** 下拉式功能表：
 

@@ -2,7 +2,7 @@
 title: 將工作流程套用至頁面
 description: 編寫時，您可以叫用工作流程以在頁面上動作；也可以套用多個工作流程。
 exl-id: 86e71f0e-e53e-40bc-901d-2a1ab347bd0a
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '654'
 ht-degree: 15%
@@ -141,6 +141,6 @@ ht-degree: 15%
 
 ## 從頁面編輯器啟動工作流程 {#starting-a-workflow-from-the-page-editor}
 
-編輯頁面時，您可以選取 **頁面資訊** 工具列中的。 下拉式選單具有選項 **在工作流程中開始**. 這會開啟一個對話方塊，您可以在其中指定所需的工作流程，以及標題（如有需要）：
+編輯頁面時，您可以選取 **頁面資訊** 工具列中的。 下拉式選單具有選項 **在工作流程中開始**. 這會開啟一個對話方塊，您可以在其中指定所需的工作流程，並視需要指定標題：
 
 ![從頁面編輯器啟動工作流程](/help/sites-cloud/authoring/assets/workflows-create-page-editor.png)

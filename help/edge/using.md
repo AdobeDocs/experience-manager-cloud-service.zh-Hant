@@ -3,10 +3,10 @@ title: 使用 Edge Delivery Services
 description: 使用 Edge Delivery Services (EDS)
 feature: Edge Delivery Services
 exl-id: 41999302-b4c9-4f5a-b659-6e7398a3c4f4
-source-git-commit: 34965338015df868778a95582524df08a7c5f136
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '618'
-ht-degree: 99%
+source-wordcount: '617'
+ht-degree: 97%
 
 ---
 
@@ -33,7 +33,7 @@ Edge Delivery 運用 GitHub，因此客戶可以直接從其 GitHub 存放庫管
 
 ## 使用 Sidekick {#using-sidekick}
 
-AEM sidekick 提供一個有感知選項的工具列，讓您可以輕鬆編輯、預覽和發佈內容。[安裝](https://www.hlx.live/docs/sidekick-extension) AEM sidekick 擴充功能後，可以在專案環境中或編輯內容時使用 (例如，在 Google Docs 中)。根據環境的不同，此工具有多種可用操作，例如：預覽、重新載入、編輯和發佈。您也可以在使用 Sidekick 時切換環境，從預覽切換到生產，反之亦然。
+AEM sidekick 提供一個有感知選項的工具列，讓您可以輕鬆編輯、預覽和發佈內容。[安裝](https://www.hlx.live/docs/sidekick-extension) AEM sidekick 擴充功能後，可以在專案環境中或編輯內容時使用 (例如，在 Google Docs 中)。根據環境的不同，此工具有多種可用操作，例如：預覽、重新載入、編輯和發佈。在使用Sidekick時，您也可以將環境從預覽切換到生產，反之亦然。
 
 **若要發佈**，在預覽頁面上開啟 Sidekick 並使用「發佈」操作。按一下「發佈」後，目前的頁面預覽版本將可供您在即時和生產環境中使用。
 

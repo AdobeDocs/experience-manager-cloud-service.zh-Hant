@@ -5,10 +5,10 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 6b3f9131-db6b-451b-a932-b57d809222eb
-source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '549'
-ht-degree: 100%
+source-wordcount: '548'
+ht-degree: 95%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 100%
 | AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/introduction-form-sequence.html) |
 | AEM as a Cloud Service  | 本文章 |
 
-最適化表單可讓表單作者輕鬆建立多步驟資料擷取體驗。它隨附內建支援，可建立多個面板並將每個面板與不同的導覽模式建立關聯。表單作者可以在邏輯區段將表單欄位分組，並以面板來代表群組。面板之間的整體導覽是使用面板版面來控制。作者可以選擇以不同的版面排列面板，例如使用「精靈」版面依序放置，或使用「標籤式」版面以臨時的方式放置。如需有關面板版面的資訊，請參閱[最適化表單的版面功能](layout-capabilities-adaptive-forms.md)。
+最適化表單可讓表單作者輕鬆建立多步驟資料擷取體驗。它隨附內建支援，可建立多個面板並將每個面板與不同的導覽模式建立關聯。表單作者可以在邏輯區段將表單欄位分組，並以面板來代表群組。面板之間的整體導覽是使用面板版面來控制。作者可以選擇以不同的版面配置來排列面板，例如，使用「精靈」版面配置以循序方式放置，或使用「索引標籤」版面配置以即興方式放置。 如需有關面板版面的資訊，請參閱[最適化表單的版面功能](layout-capabilities-adaptive-forms.md)。
 
 在典型的表單填寫體驗中，所涉及的步驟並非只有擷取資料。完整的表單提交可能包括其他步驟，例如以數位方式在表單上簽名、驗證表單中填寫的資訊、處理付款等。具體情況因案例而異。
 

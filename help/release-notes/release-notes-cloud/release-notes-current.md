@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 最新發行說明�
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 最新發行說明。'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: afb3de515336d3d13b392f8fcc4d263f4f063689
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '920'
+source-wordcount: '917'
 ht-degree: 61%
 
 ---
@@ -52,7 +52,7 @@ ht-degree: 61%
 
 ### 資產檢視中的新功能 {#assets-view-features}
 
-* **從OneDrive資料來源大量匯入資產**：管理員現在能夠 [將大量資產從OneDrive匯入AEM Assets](/help/assets/bulk-import-assets-view.md#onedrive-developer-application). 支援大量匯入的資料來源更新清單包括Azure、AWS、Google Cloud、Dropbox和OneDrive。
+* **從OneDrive資料來源大量匯入資產**：管理員現在可以 [將大量資產從OneDrive匯入AEM Assets](/help/assets/bulk-import-assets-view.md#onedrive-developer-application). 支援大量匯入的資料來源更新清單包括Azure、AWS、Google Cloud、Dropbox和OneDrive。
 
   ![將中繼資料表單指派至資料夾](/help/assets/assets/bulk-import-source-details-onedrive.png)
 

@@ -2,7 +2,7 @@
 title: 參與工作流程
 description: 工作流程通常包括需要人員在頁面或資產上執行活動的步驟。
 exl-id: 62192da9-0b5b-4997-9c2b-d1aee04b01f9
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '1507'
 ht-degree: 1%
@@ -59,7 +59,7 @@ ht-degree: 1%
 在此動作中，您可以指出：
 
 * **下一步**：下一個要採取的步驟；您可以從提供的清單中選取
-* **註解**：若有需要
+* **註解**：如有必要
 
 您可以透過下列任一方式完成參與者步驟：
 
@@ -75,7 +75,7 @@ ht-degree: 1%
 1. 開啟 **[AEM收件匣](/help/sites-cloud/authoring/getting-started/inbox.md)**.
 1. 選取您要對其執行動作的工作流程專案（選取縮圖）。
 1. 選取 **完成** 工具列中的。
-1. 此 **完成工作專案** 對話方塊開啟。 選取 **下一步** 從下拉式選擇器新增 **註解** 若有需要。
+1. 此 **完成工作專案** 對話方塊開啟。 選取 **下一步** 從下拉式選擇器新增 **註解** 如有需要。
 1. 使用 **確定** 完成步驟(或 **取消** 以中止動作)。
 
 #### 完成參與者步驟 — 頁面編輯器 {#completing-a-participant-step-page-editor}
@@ -84,7 +84,7 @@ ht-degree: 1%
 
 1. 開啟 [編輯頁面](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#opening-a-page-for-editing).
 1. 選取 **完成** 從頂部的狀態列開啟。
-1. 此 **完成工作專案** 對話方塊開啟。 選取 **下一步** 從下拉式選擇器新增 **註解** 若有需要。
+1. 此 **完成工作專案** 對話方塊開啟。 選取 **下一步** 從下拉式選擇器新增 **註解** 如有需要。
 1. 使用 **確定** 完成步驟(或 **取消** 以中止動作)。
 
 #### 完成參與者步驟 — 時間表 {#completing-a-participant-step-timeline}
@@ -118,7 +118,7 @@ ht-degree: 1%
 在此動作中，您可以指出：
 
 * **使用者**：您要委派給的使用者；您可以從提供的清單中選取
-* **註解**：若有需要
+* **註解**：如有必要
 
 您可從下列任一項委派參與者步驟：
 
@@ -134,7 +134,7 @@ ht-degree: 1%
 1. 開啟 **[AEM收件匣](/help/sites-cloud/authoring/getting-started/inbox.md)**.
 1. 選取您要對其執行動作的工作流程專案（選取縮圖）。
 1. 選取 **委派** 工具列中的。
-1. 對話方塊隨即開啟。 指定 **使用者** 從下拉式選取器（也可以是群組）中新增 **註解** 若有需要。
+1. 對話方塊隨即開啟。 指定 **使用者** 從下拉式選取器（也可以是群組）中新增 **註解** 如有需要。
 1. 使用 **確定** 完成步驟(或 **取消** 以中止動作)。
 
 #### 委派參與者步驟 — 頁面編輯器 {#delegating-a-participant-step-page-editor}
@@ -143,7 +143,7 @@ ht-degree: 1%
 
 1. 開啟 [編輯頁面](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#opening-a-page-for-editing).
 1. 選取 **委派** 從頂部的狀態列開啟。
-1. 對話方塊隨即開啟。 指定 **使用者** 從下拉式選取器（也可以是群組）中新增 **註解** 若有需要。
+1. 對話方塊隨即開啟。 指定 **使用者** 從下拉式選取器（也可以是群組）中新增 **註解** 如有需要。
 1. 使用 **確定** 完成步驟(或 **取消** 以中止動作)。
 
 #### 委派參與者步驟 — 時間表 {#delegating-a-participant-step-timeline}
@@ -168,7 +168,7 @@ ht-degree: 1%
 在此動作中，您可以指出：
 
 * **上一步**：要傳回到的步驟；您可以從提供的清單中選取
-* **註解**：若有需要
+* **註解**：如有必要
 
 您可以透過下列其中一種方式，對參與者步驟執行後退：
 
@@ -184,7 +184,7 @@ ht-degree: 1%
 1. 開啟 **[AEM收件匣](/help/sites-cloud/authoring/getting-started/inbox.md)**.
 1. 選取您要對其執行動作的工作流程專案（選取縮圖）。
 1. 選取 **後退** 以開啟對話方塊。
-1. 指定 **上一步** 並新增 **註解** 若有需要。
+1. 指定 **上一步** 並新增 **註解** 如有需要。
 1. 使用 **確定** 完成步驟(或 **取消** 以中止動作)。
 
 #### 對參與者步驟執行後退 — 頁面編輯器 {#performing-step-back-on-a-participant-step-page-editor}
@@ -193,7 +193,7 @@ ht-degree: 1%
 
 1. 開啟 [編輯頁面](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#opening-a-page-for-editing).
 1. 選取 **後退** 從頂部的狀態列開啟。
-1. 指定 **上一步** 並新增 **註解** 若有需要。
+1. 指定 **上一步** 並新增 **註解** 如有需要。
 1. 使用 **確定** 完成步驟(或 **取消** 以中止動作)。
 
 #### 對參與者步驟執行後退 — 時間表 {#performing-step-back-on-a-participant-step-timeline}
@@ -245,7 +245,7 @@ ht-degree: 1%
 1. 開啟 **[AEM收件匣](/help/sites-cloud/authoring/getting-started/inbox.md)**.
 1. 選取您要對其執行動作的工作流程專案（選取縮圖）。
 1. 選取 **開啟** 以開啟資訊標籤。
-1. 如有需要，請選取適當的動作，提供任何詳細資訊，然後確認 **確定** (或 **取消**)。
+1. 如有必要，請選取適當的動作，提供任何詳細資訊，然後確認 **確定** (或 **取消**)。
 1. 使用 **儲存** 或 **取消** 以結束。
 
 #### 開啟工作流程詳細資料 — 頁面編輯器 {#opening-workflow-details-page-editor}
@@ -254,7 +254,7 @@ ht-degree: 1%
 
 1. 開啟 [編輯頁面](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#opening-a-page-for-editing).
 1. 選取 **檢視詳細資料** 以開啟資訊標籤。
-1. 如有需要，請選取適當的動作，提供任何詳細資訊，然後確認 **確定** (或 **取消**)。
+1. 如有必要，請選取適當的動作，提供任何詳細資訊，然後確認 **確定** (或 **取消**)。
 1. 使用 **儲存** 或 **取消** 以結束。
 
 ### 檢視工作流程裝載（多個資源） {#viewing-the-workflow-payload-multiple-resources}

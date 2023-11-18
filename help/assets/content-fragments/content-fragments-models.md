@@ -2,7 +2,7 @@
 title: 內容片段模型（資產 — 內容片段）
 description: 瞭解內容片段模型如何作為AEM中Headless內容的基礎，以及如何使用結構化內容建立內容片段。
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '2931'
 ht-degree: 8%
@@ -30,7 +30,7 @@ AEM中的內容片段模型為您的定義了內容結構 [內容片段，](/hel
    >
    >如果[尚未啟用使用內容片段模型](/help/assets/content-fragments/content-fragments-configuration-browser.md)，則&#x200B;**建立**&#x200B;選項將無法使用。
 
-1. 指定「模 **型標題」**。您也可以定義各種屬性；例如，新增 **標籤**， a **說明**，並選取 **啟用模型** 至 [啟用模型](#enabling-disabling-a-content-fragment-model) 若有需要。
+1. 指定「模 **型標題」**。您也可以定義各種屬性；例如，新增 **標籤**， a **說明**，並選取 **啟用模型** 至 [啟用模型](#enabling-disabling-a-content-fragment-model) 如有需要。
 
    >[!NOTE]
    >

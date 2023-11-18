@@ -2,10 +2,10 @@
 title: 新增 TXT 記錄
 description: 了解如何新增 TXT 記錄以在 Cloud Manager 中新增自訂網域名稱。
 exl-id: d441de29-af41-4d3e-9155-531af9702841
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '327'
-ht-degree: 97%
+source-wordcount: '326'
+ht-degree: 91%
 
 ---
 
@@ -15,7 +15,7 @@ DNS TXT 記錄授權將域託管在 CDN 服務中。您必須在授權 Cloud Man
 
 在新增 TXT 記錄之前，您必須滿足這些要求。
 
-* 您必須能夠修改組織網域的 DNS 記錄，或聯繫可以修改的適當人員。
+* 您必須能夠編輯組織網域的DNS記錄，或聯絡可以編輯的適當人員。
 * 如果您還不知道您的網域名稱主機服務商或註冊商，則必須確定它。
 
 當您啟動域驗證時，Cloud Manager 會為您提供用於驗證的名稱和 TXT 值。使用指定的名稱和值將 TXT 記錄新增到您域的 DNS 伺服器。

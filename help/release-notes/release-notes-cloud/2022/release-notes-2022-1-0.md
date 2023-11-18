@@ -2,9 +2,9 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2022.1.0 版發行說明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2022.1.0 版發行說明。'
 exl-id: 1c40ab67-8fd7-4f29-b8c9-dd98b6d5b490
-source-git-commit: fe19e99baa921247f86542c6643c1faf837e7d91
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '1072'
+source-wordcount: '1069'
 ht-degree: 29%
 
 ---
@@ -123,7 +123,7 @@ AEMas a Cloud Service2022.01.0中Cloud Manager的發行日期為2022年1月20日
 
 ### 新增功能 {#what-is-new-ctt}
 
-* 內容驗證 — 使用者能夠可靠地判斷「內容轉移工具」擷取的所有內容是否已成功擷取至目標例項。 若要使用此功能，請在 `System Console` 來源AEM環境的。 另請參閱 [驗證內容轉移 — 快速入門](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers.html?lang=en#getting-started) 以取得更多詳細資料。
+* 內容驗證 — 使用者可以可靠地判斷「內容轉移工具」擷取的所有內容是否已成功擷取至目標例項。 若要使用此功能，請在 `System Console` 來源AEM環境的。 另請參閱 [驗證內容轉移 — 快速入門](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers.html?lang=en#getting-started) 以取得更多詳細資料。
 
 ### 錯誤修正 {#bug-fixes-ctt}
 

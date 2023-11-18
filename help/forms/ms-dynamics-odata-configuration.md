@@ -5,9 +5,9 @@ feature: Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb7b41f0-fd4f-4ba6-9f45-792a66ba6368
-source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '986'
+source-wordcount: '985'
 ht-degree: 4%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 4%
 
 * 查詢 [!DNL Microsoft Dynamics] 資料伺服器並預先填入Adaptive Forms
 * 將資料寫入 [!DNL Microsoft Dynamics] 在最適化表單提交上
-* 將資料寫入 [!DNL Microsoft Dynamics] 透過表單資料模型中定義的自訂實體（反之亦然）
+* 將資料寫入 [!DNL Microsoft Dynamics] 流經表單資料模型中定義的自訂實體，反之
 
 <!--[!DNL Experience Manager Forms] add-on package also includes reference OData configuration that you can use to quickly integrate [!DNL Microsoft Dynamics] with [!DNL Experience Manager Forms].-->
 

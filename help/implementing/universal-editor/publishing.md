@@ -2,10 +2,10 @@
 title: 使用 Universal Editor 發佈內容
 description: 了解 Universal Editor 如何發佈內容，和您的應用程式如何處理發佈的內容。
 exl-id: aee34469-37c2-4571-806b-06c439a7524a
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '359'
-ht-degree: 94%
+source-wordcount: '360'
+ht-degree: 82%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 94%
 
 可透過應用程式中的簡單條件陳述式來決定是否應存取編寫層或發佈層，以便在偵測到編輯器中開啟層時，選擇適當的編寫或發佈端點。
 
-另一種選擇是將應用程式部署到設定不同的兩個環境，然後讓一個環境從編寫層擷取其內容，另一個環境從發佈層擷取。若要讓作者在 Universal Editor 中開啟已發佈的 URL，可以建立一個小指令碼來將發佈端 URL「轉換」為編寫環境中的等位 URL (例如在前面加上 `author` 子網域)，使作者自動重新導向。
+另一種選擇是將應用程式部署到設定不同的兩個環境，然後讓一個環境從編寫層擷取其內容，另一個環境從發佈層擷取。若要讓作者在通用編輯器中開啟已發佈的URL，可以建立一個小型指令碼，將發佈端URL「轉換」成其在製作環境中的同等專案(例如，在前端加上 `author` 子網域)，如此作者便會自動重新導向。
 
 ## 摘要 {#summary}
 

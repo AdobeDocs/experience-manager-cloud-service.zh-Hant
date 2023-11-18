@@ -2,9 +2,9 @@
 title: 發佈頁面
 description: 瞭解如何使用AEM中的各種機制來發佈和取消發佈頁面。
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '1801'
+source-wordcount: '1805'
 ht-degree: 6%
 
 ---
@@ -66,7 +66,7 @@ ht-degree: 6%
 
    * 如果沒有要發佈的引用，則會直接發佈頁面。
    * 如果頁面含有需要發佈的參照，這些參照會列在 **發佈** 精靈，您可在其中執行以下其中一項作業：
-      * 指定哪些資產/標籤/等 您要與頁面一起發佈，然後使用 **發佈** 以完成程式。
+      * 指定您要與頁面一起發佈的資產或標籤等，然後使用 **發佈** 以完成程式。
       * 使用 **取消** 以中止動作。
 
    ![使用頁面發佈參考](/help/sites-cloud/authoring/assets/publishing-references.png)

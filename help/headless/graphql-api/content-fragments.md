@@ -3,10 +3,10 @@ title: 與內容片段搭配使用的 AEM GraphQL API
 description: 了解如何將 Adobe Experience Manager (AEM) as a Cloud Service 中的內容片段與 AEM GraphQL API 搭配使用，以實現 Headless 內容傳遞。
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '4921'
-ht-degree: 96%
+source-wordcount: '4923'
+ht-degree: 95%
 
 ---
 
@@ -503,7 +503,7 @@ query GetAdventureByType($includePrice: Boolean!) {
 
 | 選項 | 類型 | 說明 |
 |--- |--- |--- |
-| `_ignoreCase` | `String` | 忽略字串的大小寫，例如 `time` 值將符合 `TIME`、`time`、`tImE`... |
+| `_ignoreCase` | `String` | 忽略字串的大小寫，例如 `time` 符合 `TIME`， `time`， `tImE`， ... |
 | `_sensitiveness` | `Float` | 允許 `float` 值的某些差數視為相同 (以解決由於 `float` 值的內部表示造成的技術限制；應避免，因為此選項可能對效能有負面影響 |
 
 運算式可以使用邏輯運算子 (`_logOp`) 合併成一個集合：
@@ -515,7 +515,7 @@ query GetAdventureByType($includePrice: Boolean!) {
 
 篩選器定義 (作為 `filter` 引數傳遞給查詢) 包含：
 
-* 每個欄位的子定義 (欄位可以透過其名稱存取，例如，資料 (欄位) 類型中的 `lastName` 欄位其篩選器中有一個 `lastName` 欄位)
+* 每個欄位的子定義(可透過其名稱存取欄位，例如， `lastName` 的篩選器中的欄位 `lastName` 資料（欄位）型別中的欄位
 * 每個子定義包含 `_expressions` 陣列，其提供運算式集，以及 `_logOp` 欄位，其定義應用來將運算式合併的邏輯運算子
 * 每個運算式由值 (`value` 欄位) 和運算子 (`_operator` 欄位) 定義，應比較欄位內容與
 
@@ -914,7 +914,7 @@ query ($seoName: String!, $format: AssetTransformFormat!) {
 使用 GraphQL for AEM 進行查詢的基本操作符合標準 GraphQL 規格。使用 GraphQL for AEM 進行查詢，有一些擴充功能：
 
 * 如果您需要單一結果：
-   * 使用模型名稱，例如城市
+   * 使用模型名稱；例如city
 
 * 如果您期望結果清單：
    * 新增 `List` 到模型名稱，例如 `cityList`

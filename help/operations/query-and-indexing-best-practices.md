@@ -3,7 +3,7 @@ title: 查詢和編製索引最佳做法
 description: 瞭解如何根據Adobe的最佳實務准則最佳化您的索引和查詢。
 topic-tags: best-practices
 exl-id: 37eae99d-542d-4580-b93f-f454008880b1
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '3128'
 ht-degree: 0%
@@ -140,7 +140,7 @@ Explain查詢工具可讓開發人員瞭解查詢執行計畫(請參閱 [讀取�
 
 * 使用選取適當的查詢語言 `Language` 下拉式清單。
 * 將查詢陳述式輸入到 `Query` 欄位。
-* 必要時，使用提供的核取方塊選取查詢的執行方式。
+* 如有必要，請使用提供的核取方塊選取查詢的執行方式。
    * 依預設，JCR查詢不需要執行來識別查詢執行計畫（QueryBuilder查詢就不是這種情況）。
    * 提供三個選項來執行查詢 — 
       * `Include Execution Time`  — 執行查詢，但不嘗試讀取任何結果。

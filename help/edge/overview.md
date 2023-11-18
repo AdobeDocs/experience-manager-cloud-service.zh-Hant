@@ -3,10 +3,10 @@ title: 開始使用 Edge Delivery Services
 description: 開始使用 Edge Delivery Services (EDS)。
 feature: Edge Delivery Services
 exl-id: 03a1aa93-d2e6-4175-9cf3-c7ae25c0d24e
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '870'
-ht-degree: 92%
+source-wordcount: '862'
+ht-degree: 74%
 
 ---
 
@@ -22,15 +22,15 @@ ht-degree: 92%
 
 ## Edge Delivery 如何運作 {#edge-works}
 
-下圖說明如何在 Microsoft Word (文件型編輯) 中編輯內容並將其發佈到 Edge Delivery。圖中還展示了使用各種編輯器的傳統 AEM 發佈方法。
+下圖說明如何在Microsoft® Word （檔案式編輯）中編輯內容並發佈至Edge Delivery。 圖中還展示了使用各種編輯器的傳統 AEM 發佈方法。
 
 ![Edge Delivery 架構](assets/edgedelivery.png)
 
 Edge Delivery 是一組可組合的服務，可讓您以高度靈活的方式在網站上編寫內容。如前所述，您可以同時使用 [AEM 編寫](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/getting-started/concepts.html)和[文件型編寫](https://www.hlx.live/docs/authoring)。
 
-例如，您可以直接使用 Microsoft Word 或 Google Docs 中的內容。這表示這些來源的文件可以成為您網站上的頁面。此外，標題、清單、影像、字體元素、都可以從初始來源傳輸到網站。新內容將立即加入，無需重建過程。
+例如，您可以直接從Microsoft®Word或Google檔案使用內容。 這表示這些來源的文件可以成為您網站上的頁面。此外，標題、清單、影像、字體元素、都可以從初始來源傳輸到網站。新內容會立即新增，不需要重新建置程式。
 
-Edge Delivery 運用 GitHub，因此客戶可以直接從其 GitHub 存放庫管理和部署程式碼。例如，您可以在 Google Docs 或 Microsoft Word 中編寫內容，並可使用 GitHub 中的 CSS 和 JavaScript 開發您的網站功能。準備好後，您可以使用 Sidekick 瀏覽器擴充功能來預覽和發佈內容更新。
+Edge Delivery使用GitHub，因此客戶可以直接從其GitHub存放庫管理和部署程式碼。 例如，您可以在Google檔案或Microsoft中撰寫內容®Word也可以在GitHub中使用CSS和JavaScript開發網站功能。 準備好後，您可以使用 Sidekick 瀏覽器擴充功能來預覽和發佈內容更新。
 
 延伸閱讀：
 
@@ -40,9 +40,9 @@ Edge Delivery 運用 GitHub，因此客戶可以直接從其 GitHub 存放庫管
 
 ## Edge Delivery Services 和其他 Adobe Experience Cloud 產品 {#edge-other-products}
 
-Edge Delivery Services 屬於 Adobe Experience Manager 一部份，因此 Edge Delivery 和 AEM 網站可以在相同網域中共存。這是大型網站的常見使用案例。最重要的是，可以在 AEM Sites 頁面中輕鬆使用來自 Edge Delivery 的內容，反之亦然。
+Edge Delivery Services 屬於 Adobe Experience Manager 一部份，因此 Edge Delivery 和 AEM 網站可以在相同網域中共存。這是大型網站的常見使用案例。此外，Edge Delivery的內容可輕鬆用於AEM Sites頁面，反之亦然。
 
-您也可以將 Edge Delivery Services 與 Adobe Target、Analytics 和 Launch 結合使用。
+您也可以將Edge Delivery Services與Adobe Target、Analytics和Launch搭配使用。
 
 ## 取得 Edge Delivery Services 存取權 {#getting-access}
 
@@ -64,7 +64,7 @@ Adobe 致力於為您提供 Edge Delivery Services 和文件型製作的最佳�
 
 ### 如何存取您的產品協作頻道 {#collab-channel}
 
-鑑於與客戶直接溝通管道的重要性，所有 AEM 客戶在發佈時都將建立一個 Slack 頻道，以實現速度、重要更新和體驗品質的大規模報告。您將獲得 Adobe 邀請您加入針對您組織的 Slack 頻道。
+考慮到與客戶直接溝通管道的價值，所有AEM客戶在上市時都會建立Slack管道，用於速度、關鍵更新以及體驗品質的規模化報告。 您會收到Adobe的邀請，以加入貴組織專屬的Slack頻道。
 
 若要了解更多資訊，請參閱「[使用 Slack 機器人](https://www.hlx.live/docs/slack)」文件取得更多詳細資訊。
 

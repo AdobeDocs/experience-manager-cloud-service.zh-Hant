@@ -2,10 +2,10 @@
 title: 了解如何在內容片段中使用參考
 description: 了解如何在內容片段中使用內容、其他片段和其他資產 (媒體) 的參考。介紹巢狀片段對 Headless CMS 編寫的必要性和機制。
 exl-id: a65e8a5a-954b-4307-8027-ca8bac5f4261
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '708'
-ht-degree: 95%
+source-wordcount: '705'
+ht-degree: 88%
 
 ---
 
@@ -27,13 +27,13 @@ ht-degree: 95%
    * 內容參考
    * 資產/媒體參考
    * 片段參考
-   * 文字區塊內的臨時參考
+   * 文字區塊中的即興參考
 
 ## 什麼是參考 {#what-are-references}
 
 參考只是一種連接資源 (無論是其他內容、資產 (如影像) 還是其他片段) 的機制。雖然非常相似，但還是有一些不同。
 
-一些參考有專用資料類型 (例如，內容參考和片段參考)，而其他參考只是新增至文字區塊內的參考 (資產參考和臨時參考)。
+有些參考資料具有專用的資料型別（例如「內容參考」和「片段參考」），而有些只是新增為文字區塊內的參考（資產參考和即興參考）。
 
 ![內容片段 - 參考](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-overview.png)
 
@@ -96,7 +96,7 @@ ht-degree: 95%
 
 ## 臨時參考 {#adhoc-references}
 
-臨時參考可以簡單連結的形式新增到文字區塊內：
+即興參考可以新增為文字區塊內的簡單連結：
 
 ![內容片段 - 臨時參考](/help/journey-headless/author/assets/headless-journey-author-references-04.png)
 

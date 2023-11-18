@@ -2,7 +2,7 @@
 title: 在AEMas a Cloud Service上使用使用者端資料庫
 description: AEM提供使用者端程式庫資料夾，可讓您將使用者端程式碼(clientlibs)儲存在存放庫中、將其組織成類別，以及定義何時及如何將每個類別的程式碼提供給使用者端
 exl-id: 370db625-09bf-43fb-919d-4699edaac7c8
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '2551'
 ht-degree: 1%
@@ -29,7 +29,7 @@ Clientlibs是內建的解決方案，可從AEM傳遞CSS和JavaScript。
 
 ## 什麼是使用者端資料庫 {#what-are-clientlibs}
 
-網站需要在使用者端處理JavaScript和CSS以及靜態資源，例如圖示和網頁字型。 clientlib是一種可參考（視需要依類別）並為這些資源服務的AEM機制。
+網站需要在使用者端處理JavaScript和CSS以及靜態資源，例如圖示和網頁字型。 clientlib是一種可供參考（必要時可依類別）並為這些資源服務的AEM機制。
 
 AEM會在中央位置將網站的CSS和JavaScript收集至單一檔案，以確保HTML輸出中只包含任何資源的一個副本。 這樣可最大化傳送效率，並透過Proxy在存放庫中集中維護這類資源，以確儲存取安全。
 

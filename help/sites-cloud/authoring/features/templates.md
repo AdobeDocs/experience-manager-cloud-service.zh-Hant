@@ -2,9 +2,9 @@
 title: 建立頁面範本
 description: 範本會定義結果頁面的結構，且使用範本編輯器，建立和維護範本不再是開發人員專屬的工作
 exl-id: 4c9dbf26-5852-45ab-b521-9f051c153b2e
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '4538'
+source-wordcount: '4535'
 ht-degree: 10%
 
 ---
@@ -73,7 +73,7 @@ ht-degree: 10%
    * 或直接存取： `https://<host>:<port>/libs/wcm/core/content/sites/templates.html/conf`
 * 可以 [建立範本的資料夾](#creating-a-template-folder-admin) 如有需要
 * [建立新範本](#creating-a-new-template-template-author)，一開始會是空的
-* [定義其他屬性](#defining-template-properties-template-author) 範本（若有需要）
+* [定義其他屬性](#defining-template-properties-template-author) 範本（如有需要）
 * [編輯範本](#editing-templates-template-authors) 若要定義：
    * [結構](#editing-a-template-structure-template-author)  — 使用範本建立的頁面上無法變更的預定義內容。
    * [初始內容](#editing-a-template-initial-content-author)  — 可在使用範本建立的頁面上變更的預定義內容。
@@ -351,7 +351,7 @@ ht-degree: 10%
 
 設定視窗分為兩個部分。
 
-* 在對話方塊的左側，在 **原則**，您就能選取現有的原則或選取現有的原則。
+* 在對話方塊的左側，在 **原則**，您可以選取現有原則或選取現有原則。
 * 對話方塊右側下方的 **屬性**&#x200B;時，您可以設定元件型別的特定屬性。
 
 可用的屬性取決於所選的元件。 例如，對於文字元件，屬性會定義複製和貼上選項、格式選項和段落樣式等選項。

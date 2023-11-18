@@ -2,9 +2,9 @@
 title: 使用定位模式編寫目標內容
 description: 目標定位模式和Target元件提供建立體驗內容的工具
 exl-id: 8d80d867-2d0f-4ddb-8a06-f9441e6d85ce
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '5306'
+source-wordcount: '5304'
 ht-degree: 5%
 
 ---

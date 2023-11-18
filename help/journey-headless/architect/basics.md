@@ -2,10 +2,10 @@
 title: 了解內容模型的基本知識
 description: 了解使用內容片段進行 Headless CMS 內容模型的基本知識。
 exl-id: dc460490-dfc8-4a46-a468-3d03e593447d
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '901'
-ht-degree: 98%
+source-wordcount: '900'
+ht-degree: 97%
 
 ---
 
@@ -109,7 +109,7 @@ AEM 提供以下資料類型用於建立內容模型：
 
 >[!NOTE]
 >
->您也可以使用文字區塊內的連結建立臨時參考。
+>您也可以使用文字區塊中的連結來建立即興參照。
 
 ## 結構階層 (巢狀片段) {#levels-of-structure-nested-fragments}
 

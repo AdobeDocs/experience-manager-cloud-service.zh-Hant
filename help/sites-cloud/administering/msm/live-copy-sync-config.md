@@ -4,7 +4,7 @@ description: 瞭解可用的強大Live Copy同步選項，以及如何根據專�
 feature: Multi Site Manager
 role: Admin
 exl-id: 0c97652c-edac-436e-9b5b-58000bccf534
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '2414'
 ht-degree: 2%
@@ -22,7 +22,7 @@ Adobe Experience Manager提供數種立即可用的同步設定。 在使用即�
 
 ## 已安裝及自訂轉出設定 {#installed-and-custom-rollout-configurations}
 
-本節提供有關已安裝轉出設定及其使用的同步化動作，以及如何視需要建立自訂設定的資訊。
+本節提供有關已安裝轉出設定及其使用的同步化動作，以及如何在必要時建立自訂設定的資訊。
 
 >[!CAUTION]
 >
@@ -174,7 +174,7 @@ MSM可讓您指定一般使用的轉出設定集，並視需要覆寫特定即�
 
    ![來自父頁面的即時副本繼承](../assets/live-copy-inherit.png)
 
-1. 如有需要，請調整 **即時副本繼承** 標幟。 如果勾選，即時副本設定將在所有子項上都有效。
+1. 如有必要，請調整 **即時副本繼承** 標幟。 如果勾選，即時副本設定將在所有子項上都有效。
 
 1. 清除 **從父項繼承轉出設定** 屬性，然後從清單中選取一或多個轉出設定。
 

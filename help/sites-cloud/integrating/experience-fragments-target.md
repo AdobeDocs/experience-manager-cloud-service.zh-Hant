@@ -2,7 +2,7 @@
 title: 將體驗片段匯出到 Adobe Target
 description: 瞭解如何將您的體驗片段匯出至Adobe Target，以測試並個人化體驗。
 exl-id: 752d91f9-13a6-40c2-9425-7d18dafe9205
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '2246'
 ht-degree: 1%
@@ -102,7 +102,7 @@ ht-degree: 1%
    * 適當的設定
    * 所需的格式選項
    * Adobe Target工作區
-   * 必要時 — 外部化器網域
+   * 如有必要 — 外部化器網域
 
    >[!CAUTION]
    >

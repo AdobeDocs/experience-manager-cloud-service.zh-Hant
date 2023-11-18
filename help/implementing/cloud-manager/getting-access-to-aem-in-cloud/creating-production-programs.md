@@ -2,7 +2,7 @@
 title: 建立生產計畫
 description: 了解如何使用 Cloud Manager 建立您自己的生產計畫來主持即時流量。
 exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '597'
 ht-degree: 73%
@@ -32,7 +32,7 @@ ht-degree: 73%
 
 1. 或者，您可以將影像檔拖放到&#x200B;**新增計畫影像**&#x200B;目標或按一下它從檔案瀏覽器選取影像，藉此新增影像到計畫。選取 **繼續**.
 
-1. 如果您擁有必要的權益， **安全性** 標籤隨即顯示，並提供啟動選項 **HIPAA** 和/或 **WAF-DDOS保護** 用於您的生產計畫。 如果您正在建立的計畫有需要，請核取適用的選項，然後選取 **繼續**.
+1. 如果您擁有必要的權益， **安全性** 標籤隨即顯示，並提供啟動選項 **HIPAA** 和/或 **WAF-DDOS保護** 用於您的生產計畫。 若您正在建立的程式有需要，請核取適用的選項，然後選取 **繼續**.
 
    * HIPAA無法在方案建立後啟用或停用。
       * [深入了解](https://www.adobe.com/go/hipaa-ready_tw) Adobe 的 HIPAA 就緒解決方案實作方式。

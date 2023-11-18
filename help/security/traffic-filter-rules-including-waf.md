@@ -2,10 +2,10 @@
 title: 流量篩選規則包括 WAF 規則
 description: 設定流量篩選規則，包括 Web 應用程式防火牆 (WAF) 規則
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '3435'
-ht-degree: 97%
+source-wordcount: '3437'
+ht-degree: 95%
 
 ---
 
@@ -103,7 +103,7 @@ ht-degree: 97%
 `kind` 參數應設定為 `CDN`，而版本則應設定為綱要版本，目前是 `1`。請進一步參閱下方範例。
 
 
-<!-- Two properties -- `envType` and `envId` -- may be included to limit the scope of the rules. The envType property may have values "dev", "stage", or "prod", while the envId property is the environment (e.g., "53245"). This approach is useful if it is desired to have a single configuration pipeline, even if some environments have different rules. However, a different approach could be to have multiple configuration pipelines, each pointing to different repositories or git branches. -->
+<!-- Two properties -- `envType` and `envId` -- may be included to limit the scope of the rules. The envType property may have values "dev", "stage", or "prod", while the envId property is the environment (for example, "53245"). This approach is useful if it is desired to have a single configuration pipeline, even if some environments have different rules. However, a different approach could be to have multiple configuration pipelines, each pointing to different repositories or git branches. -->
 
 1. 如果 WAF 規則已獲得授權，則應在 Cloud Manager 中啟用該功能 (如下所述)，對於新的和現有的計畫案例都適用。
 
@@ -120,7 +120,7 @@ ht-degree: 97%
 
 **附註**
 
-* 您可以使用 `yq` 在本機驗證設定檔的 YAML 格式 (例如 `yq cdn.yaml`)。
+* 您可以使用 `yq` 在本機驗證組態檔的YAML格式(例如， `yq cdn.yaml`)。
 
 ## 流量篩選規則語法 {#rules-syntax}
 
@@ -490,7 +490,7 @@ AEM as a Cloud Service 會提供對 CDN 記錄的存取權，這對於包括快�
 
 * 任何符合規則的客戶宣告規則名稱將列於 `match` 屬性中。
 * `action` 屬性確定規則是否具有封鎖、允許或記錄的影響。
-* 如果 WAF 已獲得授權並啟用，`waf` 屬性將列出所有偵測到的任何 WAF 標幟 (例如 SQLI)，無論 WAF 標幟是否列於任何規則中。這是提供深入分析要宣告的潛在新規則。
+* 如果WAF已獲授權且已啟用， `waf` attribute將列出偵測到的任何WAF旗標（例如SQLI），無論這些WAF旗標是否列在任何規則中。 這是提供深入分析要宣告的潛在新規則。
 * 如果沒有客戶宣告的規則相符且沒有 WAF 規則相符，則 `rules` 屬性將為空。
 
 如前所述，WAF規則符合專案僅會顯示在CDN遺漏和通過次數的CDN記錄中，而非點選中。

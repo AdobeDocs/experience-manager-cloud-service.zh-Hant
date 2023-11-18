@@ -2,10 +2,10 @@
 title: 建立內容片段 - Headless 設定
 description: 了解如何使用 AEM 的內容片段來設計、建立、規劃和使用每頁自主的內容以進行 Headless 傳遞。
 exl-id: a227ae2c-f710-4968-8a00-bfe48aa66145
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '341'
-ht-degree: 87%
+ht-degree: 85%
 
 ---
 
@@ -35,7 +35,7 @@ ht-degree: 87%
    * 可用模型取決於您為內容片段建立所在資產資料夾所定義的&#x200B;[**雲端設定**](create-assets-folder.md)。
    * 如果您的模型不可用，請檢查資產資料夾的設定。
 
-   新增標題、名稱，如果需要，可以新增描述。
+   新增「標題」、「名稱」，並視需要新增「說明」。
 
    ![「建立新內容片段」對話框](/help/sites-cloud/administering/content-fragments/assets/cfc-console-create.png)
 

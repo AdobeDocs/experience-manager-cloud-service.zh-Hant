@@ -2,7 +2,7 @@
 title: 編輯頁面屬性
 description: 瞭解如何定義在AEM中管理頁面所需的屬性。
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '2270'
 ht-degree: 6%
@@ -315,7 +315,7 @@ ht-degree: 6%
 * **檢視**
 
    * 受影響的頁面清單
-      * 您可以視需要選取/取消選取
+      * 您可以選取/取消選取（如有必要）
       * 索引標籤
          * 和檢視單一頁面屬性時一樣，屬性會依索引標籤排序。
    * 屬性的子集

@@ -2,9 +2,9 @@
 title: 您的收件匣
 description: 瞭解如何使用到達收件匣的通知來管理您的工作。
 exl-id: 37d0cf43-192f-4a50-b174-42d7dced3b63
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '910'
+source-wordcount: '911'
 ht-degree: 17%
 
 ---
@@ -148,7 +148,7 @@ ht-degree: 17%
 
    視是否已開啟對話方塊、精靈、檔案頁面而定，您可以：
 
-   * 確認適當的動作，例如重新指派。
+   * 確認適當的動作，例如，重新指派。
    * 取消動作
    * 選取「上一步」箭頭可返回收件匣，例如，若已開啟動作精靈或檔案頁面，則可返回收件匣。
 

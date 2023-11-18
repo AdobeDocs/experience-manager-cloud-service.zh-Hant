@@ -2,7 +2,7 @@
 title: 元件參考指南
 description: 開發人員參考指南，瞭解元件及其結構的詳細資訊
 exl-id: 45e5265b-39d6-4a5c-be1a-e66bb7ea387d
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '3642'
 ht-degree: 1%
@@ -59,7 +59,7 @@ ht-degree: 1%
 
 建議將負責標示和轉譯的程式碼，與控制用來選取元件內容的邏輯的程式碼分開。
 
-支援此理念的有 [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)，特意限制以確保使用實際程式語言來定義基礎商業邏輯的範本化語言。 此機制會醒目顯示呼叫特定檢視的程式碼，並視需要為相同元件的不同檢視允許特定邏輯。
+支援此理念的有 [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)，特意限制以確保使用實際程式語言來定義基礎商業邏輯的範本化語言。 此機制會醒目顯示呼叫特定檢視的程式碼，並在必要時允許同一元件的不同檢視使用特定邏輯。
 
 此（選用）邏輯可透過不同方式實作，並使用特定命令從HTL叫用：
 

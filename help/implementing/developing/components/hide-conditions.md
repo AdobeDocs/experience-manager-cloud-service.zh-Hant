@@ -2,7 +2,7 @@
 title: 使用隱藏條件
 description: 隱藏條件可用於判斷元件資源是否已轉譯。
 exl-id: 2a96f246-fb0f-4298-899e-ebbf9fc1c96f
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '617'
 ht-degree: 2%
@@ -45,7 +45,7 @@ ${cqDesign.property1 == 'someText' && cqDesign.property2 || cqDesign.property3 !
 
 * 若要有效，應呈現找到屬性的範圍(例如 `cqDesign.myProperty`)。
 * 值是唯讀的。
-* 功能（若有需要）應該限製為服務提供的一組給定值。
+* 功能（如有需要）應限製為服務提供的一組給定值。
 
 ## 範例 {#example}
 
