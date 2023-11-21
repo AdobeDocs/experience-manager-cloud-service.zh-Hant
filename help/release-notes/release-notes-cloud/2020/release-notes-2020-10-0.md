@@ -2,9 +2,9 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2020.10.0 版發行說明。'
 description: '"[!DNL Adobe Experience Manager] 2020.10.0版as a Cloud Service發行說明。」'
 exl-id: ac741744-5b47-47a4-b5af-e1089e92c3f0
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '1193'
+source-wordcount: '1194'
 ht-degree: 24%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 24%
 
 ## [!DNL Adobe Experience Manager Sites] as a Cloud Service {#sites}
 
-### [!DNL Sites]的新增功能 {#what-is-new-sites}
+### [!DNL Sites] 的新增功能 {#what-is-new-sites}
 
 * **[核心元件2.12.0](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)**：Adobe Experience Manager as a Cloud Service受益於最新版本核心元件的自動更新。 版本2.12.0包含社群貢獻的最新改善。 改善專案包括 [新的POST表單處理常式；](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/forms/form-container.html#post-data) 包括自訂CSS、JavaScript和中繼資料的功能 [透過內容感知設定標籤；](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/including-clientlibs.html#context-aware-loading) 和 [`DataLayerBuilder`](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/integrations.html#enabling-custom-components) 可簡化自訂元件中Adobe資料層整合的公用程式。 請參閱 [變更清單](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.12.0) 2.12.0版。
 
@@ -45,15 +45,15 @@ ht-degree: 24%
 
 ## [!DNL Adobe Experience Manager Forms] as a Cloud Service {#forms-oct-2021}
 
-### [!DNL Forms]的新增功能 {#what-is-new-forms-oct-2021}
+### [!DNL Forms] 的新增功能 {#what-is-new-forms-oct-2021}
 
-* **Analytics for Adaptive Forms**：您現在可以透過Adobe Analytics for Adaptive Forms擷取及追蹤已登入和未登入（匿名）的行為，以收集一般使用者的深入解析。 它可協助業務使用者根據所收集的深入分析，針對最適化表單內容、版面配置和樣式做出明智的決策。
+* **Analytics for Adaptive Forms**：您現在可以透過Adobe Analytics for Adaptive Forms擷取及追蹤已登入和未登入（匿名）的行為，以收集使用者深入解析。 它可協助業務使用者根據所收集的深入分析，針對最適化表單內容、版面配置和樣式做出明智的決策。
 
 ### [!DNL Forms] 發行前通道中可用的新功能 {#prerelease-features-forms-oct-2021}
 
 * **外部化AEM Workflow資料以進行安全處理**：您可以將包含敏感個人資料(SPD)元素的程式內AEM Workflow變數資料儲存在客戶管理的存放庫中，以進行安全處理。 處理工作流程時，儲存在工作流程變數中的資料不會儲存在AEM存放庫中。 系統會隨選從客戶管理的存放庫擷取。
 
-### [!DNL Forms]的 Beta 版功能 {#sep-what-is-new-forms-oct-prerelease}
+### [!DNL Forms] 的 Beta 版功能 {#sep-what-is-new-forms-oct-prerelease}
 
 * **[!DNL AEM Forms as a Cloud Service - Communications]**： [通訊API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications.html) 協助您合併範本與XML資料，以產生多種格式的檔案。 此服務可讓您以同步和批次模式產生檔案。
 
@@ -63,7 +63,7 @@ ht-degree: 24%
 
 ### 新增功能 {#what-is-new-commerce}
 
-* 已發行CIF Venia Reference Site - 2020.10.2，其中包含最新CIF Core Components v1.4.0版。另請參閱 [CIF Venia參考網站](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.10.2) 以取得更多詳細資料。
+* 已發行CIF Venia參考網站 — 2020.10.2，其中包含最新CIF核心元件1.4.0版。另請參閱 [CIF Venia參考網站](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.10.2) 以取得更多詳細資料。
 
 * 已發行CIF Core Components v1.4.0。另請參閱 [CIF核心元件](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.4.0) 以取得更多詳細資料。
 
@@ -79,7 +79,7 @@ ht-degree: 24%
 
 Experience Manageras a Cloud Service2020.10.0中的Cloud Manager發行日期是2020年10月02日。
 
-### [!DNL Cloud Manager]的新增功能 {#what-is-new-cm}
+### [!DNL Cloud Manager] 的新增功能 {#what-is-new-cm}
 
 * 環境頁面已重新設計。
 

@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Asset Compute Microservices,Workflow,Asset Processing
 role: Architect,Admin
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '2928'
 ht-degree: 2%
@@ -246,7 +246,7 @@ asset compute服務整合可讓Experience Manager使用這些引數，傳遞至�
    * 標題：停用自動啟動工作流程
    * 名稱： disable-auto-start-workflow
 1. 選取 __完成__ 建立工作流程模型的方式
-1. __選取__ 和 __編輯__ 新建立的工作流程模型
+1. __選取__ 和 __編輯__ 已建立的工作流程模型
 1. 在工作流程模型編輯器中，選擇 __步驟1__ 從模型定義中刪除它
 1. 開啟 __側面板__，並選取 __步驟__
 1. 拖曳 __DAM更新資產工作流程已完成__ 逐步執行模型定義

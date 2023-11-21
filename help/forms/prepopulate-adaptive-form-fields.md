@@ -3,9 +3,9 @@ title: 如何預先填寫最適化表單欄位？
 description: 使用現有資料預先填寫最適化表單的欄位，使用者可以使用其社交設定檔登入，預先填寫表單中的基本資訊。
 topic-tags: develop
 exl-id: e2a87233-a0d5-48f0-b883-915fe56f105f
-source-git-commit: ebb77adfc97c805383de660d238e04a2173122b7
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '2042'
+source-wordcount: '2041'
 ht-degree: 4%
 
 ---
@@ -261,7 +261,7 @@ Prefill-Submit-Data-ContentPackage.zip
 
 >[!NOTE]
 >
-> 根據經驗，如果繫結和未繫結欄位在終端使用者填寫的資料中相交，請勿將其混合在一起。 如果可能的話，您應該修改結構描述或XFA表單範本，並為未繫結欄位新增專案，這樣它也會變成繫結，而且其資料可以像提交資料中的其他欄位一樣使用。
+> 根據經驗，如果繫結和未繫結欄位在使用者在未繫結欄位中填充的資料中相交，請勿將其混合。 如果可能的話，您應該修改結構描述或XFA表單範本，並為未繫結欄位新增專案，這樣它也會變成繫結，而且其資料可以像提交資料中的其他欄位一樣使用。
 
 ## 預填使用者資料的支援通訊協定 {#supported-protocols-for-prefilling-user-data}
 

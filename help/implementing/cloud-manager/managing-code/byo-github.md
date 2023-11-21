@@ -2,10 +2,10 @@
 title: 在 Cloud Manager 中使用您自己的 GitHub 存放庫
 description: 了解如何設定 Cloud Manager 以搭配使用您自己的 GitHub 存放庫。
 feature: Release Information
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '721'
-ht-degree: 73%
+source-wordcount: '720'
+ht-degree: 70%
 
 ---
 
@@ -75,7 +75,7 @@ Cloud Manager 現在知道您的 GitHub 存放庫，但仍然需要存取它。�
 
 可以按任何順序安裝應用程式並建立密碼檔案。但是，必須先完成這兩個步驟才能進行驗證。
 
-在驗證之前，存放庫將以紅色圖示列出，表示它尚未驗證且不能使用。
+在驗證之前，存放庫將以紅色圖示列出，表示它尚未驗證且尚無法使用。
 
 ![未經驗證的存放庫](/help/implementing/cloud-manager/assets/repos/unvalidated-repo.png)
 

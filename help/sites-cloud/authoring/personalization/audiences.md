@@ -2,7 +2,7 @@
 title: 管理對象
 description: 「對象」主控台可讓您建立、組織和管理Adobe Target帳戶的對象，或管理ContextHub的區段
 exl-id: dff72c15-afcd-4b16-a711-e9ca3010e3ec
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '932'
 ht-degree: 10%
@@ -42,7 +42,7 @@ ht-degree: 10%
 
    >[!NOTE]
    >
-   >您可以點選或按一下來排序已修改的清單 **已修改** 依遞減順序排序，以檢視任何新建立的對象。
+   >您可以點選或按一下來排序已修改的清單 **已修改** 依遞減順序排序，以檢視任何建立的對象。
 
 如需使用ContextHub建立區段的詳細資訊，請參閱「使用ContextHub設定區段」檔案。 <!--For further detail about creating segments using ContextHub, see [Configuring Segmentation with ContextHub](/help/sites-administering/segmentation.md).-->
 

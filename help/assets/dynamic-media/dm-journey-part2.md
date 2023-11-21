@@ -11,9 +11,9 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: cdca41ad-a2cd-4f68-aaa4-5eec33c30f0b
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '2870'
+source-wordcount: '2872'
 ht-degree: 0%
 
 ---
@@ -121,7 +121,7 @@ _從「進階」標籤中選取選項，以建立影像預設集。_
 
 您記得在 [Dynamic Media URL剖析](#dm-journey-d) 先前版本，讓您瞭解有關Dynamic Media URL及其建置方式。 此 **[!UICONTROL 影像修飾元]** 您可以在此文字方塊中輸入任何其他所需的影像處理引數。 使用預設集傳送影像時，引數會包含在URL的預設集名稱中。 在上面的熒幕擷圖中，引數 `bgc=451B15` 「 」已新增。 也就是說，已新增深棕色背景顏色。
 
-您可以將影像預設集視為影像的配方。 它將每次都持續傳送使用預設集的任何影像；都會一樣。 引數 `&op_brightness=+10` 也增加以稍微增加亮度。
+您可以將影像預設集視為影像的配方。 它會每次傳送使用預設集的任何影像；都會一樣。 引數 `&op_brightness=+10` 也增加以稍微增加亮度。
 
 完成後，您儲存了預設集，現在它可用於您擁有的所有影像。 在此案例中，我們要套用 _Medium_ 將影像預設為液體巧克力碗的影像。
 

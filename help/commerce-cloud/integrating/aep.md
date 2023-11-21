@@ -11,7 +11,7 @@ level: Beginner
 kt: 10834
 thumbnail: 346811.jpeg
 exl-id: 30bb9b2c-5f00-488e-ad5c-9af7cd2c4735
-source-git-commit: 43220614f567bdfad17c6ac9c8b3adcc856ff044
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '2068'
 ht-degree: 1%
@@ -57,7 +57,7 @@ ht-degree: 1%
 ![AEM Commerce專案](../assets/aep-integration/aem-project-with-commerce.png)
 
 
-從專案的根目錄執行下列命令，建置新建立的AEM Commerce專案並將其部署至本機AEM SDK。
+從專案的根目錄執行下列命令，建置已建立的AEM Commerce專案並將其部署至本機AEM SDK。
 
 ```bash
 $ mvn clean install -PautoInstallSinglePackage
@@ -403,11 +403,11 @@ npm i --save @adobe/aem-core-cif-experience-platform-connector --force
 
    ![AEP建立資料串流](../assets/aep-integration/AEP-Datastream-Create.png)
 
-1. 使用為您的資料流命名 __名稱__ 必填欄位。 在 __事件結構描述__ 欄位，選取新建立的綱要，然後按一下 __儲存__.
+1. 使用為您的資料流命名 __名稱__ 必填欄位。 在 __事件結構描述__ 欄位，選取建立的綱要，然後按一下 __儲存__.
 
    ![aep定義資料串流](../assets/aep-integration/AEP-Datastream-Define.png)
 
-1. 開啟新建立的資料流，然後按一下 __新增服務__.
+1. 開啟已建立的資料流，然後按一下 __新增服務__.
 
    ![AEP資料串流新增服務](../assets/aep-integration/AEP-Datastream-Add-Service.png)
 

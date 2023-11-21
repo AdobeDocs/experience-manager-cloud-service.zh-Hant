@@ -2,9 +2,9 @@
 title: AEM Forms中有哪些考量事項、已知問題和最佳實務？
 description: AEM Forms Communication API的考量事項已知問題和最佳實務。
 exl-id: e95615dd-e494-40cd-9cdf-6e9761ca3b3e
-source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '1748'
+source-wordcount: '1749'
 ht-degree: 0%
 
 ---
@@ -171,7 +171,7 @@ Type-1和OpenType®字型未內嵌在PCL輸出中。 使用Type-1和OpenType®�
 
 ## 最佳做法
 
-* Adobe建議將資料檔案blob容器存放區託管在AEM Cloud Service使用的雲端區域。
+* Adobe建議您在AEM Cloud Service使用的雲端區域託管資料檔案blob容器存放區。
 
 ## 常見問題 {#faq}
 

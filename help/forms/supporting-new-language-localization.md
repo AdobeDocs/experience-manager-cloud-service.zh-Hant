@@ -2,7 +2,7 @@
 title: 如何根據基礎元件為最適化表單新增對新區域設定的支援？
 description: 對於最適化Forms，除了現成可用的語言之外，您還可以新增更多語言的區域設定。
 exl-id: 4c7d6caa-1adb-4663-933f-b09129b9baef
-source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '1266'
 ht-degree: 7%
@@ -102,7 +102,7 @@ AEM FormsForms目前支援英文(en)、西班牙文(es)、法文(fr)、義大利
 1. 新增 `<locale-name>` 預設地區設定值 `de`， `es`， `fr`， `it`， `pt-br`， `zh-cn`， `zh-tw`， `ja`， `ko-kr`，如果尚未存在。
 
 1. 新增 `<locale>` 至的值 `languages` 屬性 `/etc/languages`.
-1. 將新建立的資料夾新增至 `filter.xml` 在etc/META-INF/下[資料夾階層] 作為：
+1. 將建立的資料夾新增至 `filter.xml` 在etc/META-INF/下[資料夾階層] 作為：
 
    ```
    <filter root="/etc/clientlibs/[locale-name]"/>

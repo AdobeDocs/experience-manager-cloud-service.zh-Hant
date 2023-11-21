@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Mixed Media Sets
 role: User
 exl-id: 7ccde741-38d2-44c9-9378-f2721384aab7
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '1500'
 ht-degree: 12%
@@ -58,7 +58,7 @@ ht-degree: 12%
 
 1. [將URL連結至您的網頁應用程式](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) 或 [內嵌視訊或影像檢視器](/help/assets/dynamic-media/embed-code.md).
 
-   Adobe Experience Manager資產會為混合媒體集建立URL呼叫，並在您發佈混合媒體集後加以啟用。 您可以在預覽資產時複製這些URL。 或者，您也可以將它們內嵌在您的網站上。
+   Adobe Experience Manager Assets會為混合媒體集建立URL呼叫，並在您發佈混合媒體集後加以啟用。 您可以在預覽資產時複製這些URL。 或者，您也可以將它們內嵌在您的網站上。
 
    選取「混合媒體集」，然後在左側導軌下拉式選單中選取 **[!UICONTROL 檢視者]**.
 
@@ -118,7 +118,7 @@ ht-degree: 12%
 
 1. 若要刪除資產，請選取相對應的核取方塊，然後選取 **[!UICONTROL 刪除資產]**.
 1. 若要套用預設集，請選取 **[!UICONTROL 預設集]** 並選取要套用至資產的預設集。
-1. 選取&#x200B;**[!UICONTROL 儲存]**。您新建立的混合媒體集會顯示在您建立的資料夾中。
+1. 選取&#x200B;**[!UICONTROL 儲存]**。您建立的混合媒體集會顯示在您建立的資料夾中。
 
 ## 編輯混合媒體集 {#editing-mixed-media-sets}
 

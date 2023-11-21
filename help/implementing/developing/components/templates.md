@@ -2,7 +2,7 @@
 title: 頁面範本
 description: 建立作為新頁面基礎的頁面時，會使用頁面範本
 exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '3278'
 ht-degree: 1%
@@ -356,7 +356,7 @@ When creating an editable template, the value is copied from the template type t
 如果您已建立可作為其他範本基礎的範本，則可以複製此範本作為範本型別。
 
 1. 建立範本，就像建立任何頁面範本一樣 [如此處的紀錄](/help/sites-cloud/authoring/features/templates.md#creating-a-new-template-template-author)，這會作為範本型別的基礎。
-1. 使用CRXDE Lite，複製新建立的範本，從 `templates` 節點至 `template-types` 下的節點 [範本資料夾](#template-folders).
+1. 使用CRXDE Lite，複製建立的範本，從 `templates` 節點至 `template-types` 下的節點 [範本資料夾](#template-folders).
 1. 從刪除範本 `templates` 下的節點 [範本資料夾](#template-folders).
 1. 在「 」下範本的副本中 `template-types` 節點，全部刪除 `cq:template` 和 `cq:templateType` 全部屬性 `jcr:content` 節點。
 
@@ -595,6 +595,6 @@ GITHUB上的程式碼
 
 若要限制哪些範本可用來在指定頁面下建立子頁面，請使用 `cq:allowedTemplates` 屬性 `jcr:content` 頁面節點，用來指定允許做為子頁面的範本清單。 例如，清單中的每個值都必須是允許的子頁面範本的絕對路徑 `/apps/wknd/templates/page-content`.
 
-您可以使用 `cq:allowedTemplates` 範本的屬性  `jcr:content` 節點，將此設定套用至使用此範本的所有新建立頁面。
+您可以使用 `cq:allowedTemplates` 範本的屬性  `jcr:content` 節點，將此設定套用至使用此範本的所有已建立頁面。
 
 如果您想要新增更多限制，例如關於範本階層的限制，您可以使用 `allowedParents/allowedChildren` 屬性。 然後，您可以明確指定從範本T建立的頁面必須是從範本T建立的頁面的父項/子項。

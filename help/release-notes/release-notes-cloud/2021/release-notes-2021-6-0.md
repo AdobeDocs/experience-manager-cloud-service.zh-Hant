@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2021.6.0 版發行說明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2021.6.0 版發行說明。'
 exl-id: 2c72973b-5a51-4744-bf88-50da0013ba31
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '1436'
-ht-degree: 48%
+source-wordcount: '1435'
+ht-degree: 49%
 
 ---
 
@@ -103,7 +103,7 @@ AEM as a Cloud Service 2021.6.0 中的 Cloud Manager 發行日期是 2021 年 6 
 * 使用者可以根據屬性述詞搜尋及篩選檔案夾。
 * [!DNL Experience Manager Assets] 嵌入的PDF檢視器提供者： [!DNL Adobe Document Cloud] 以預覽支援的檔案。 此功能可讓使用者預覽PDF和其他多頁檔案，而不需要任何複雜的處理。 如此可改善與的同等功能 [!DNL Experience Manager] 6.5.
 
-### 修正在[!DNL Assets]中的錯誤 {#bugs-fixed-assets}
+### 修正在 [!DNL Assets] 中的錯誤 {#bugs-fixed-assets}
 
 * 將擁有者新增至子資料夾時， [!DNL Assets] 也會將相同的使用者新增為父資料夾的擁有者。 (CQ-4323737)
 * 將資產新增至收藏集時，如果使用者對收藏集搜尋套用篩選器，則使用者無法在清單檢視中檢視收藏集。 (CQ-4323181)
@@ -118,16 +118,16 @@ AEM as a Cloud Service 2021.6.0 中的 Cloud Manager 發行日期是 2021 年 6 
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-### [!DNL Forms]的新增功能 {#what-is-new-forms}
+### [!DNL Forms] 的新增功能 {#what-is-new-forms}
 
 * 新增篩選 AEM 收件匣中自訂欄的功能
 * 新增使用最適化表單的主題編輯器和樣式圖層的功能，以設定驗證碼元件的樣式。
 * 改善自動偵測來源 PDF 表單中邏輯區段並將這些區段轉換成對應的最適化表單面板的速度和準確性。
 * 新增將 PDF 或 XDP 檔案從一個資料夾移至另一個資料夾的移動動作。
 
-### [!DNL Forms]的 Beta 版功能 {#what-is-new-forms-prerelease}
+### [!DNL Forms] 的 Beta 版功能 {#what-is-new-forms-prerelease}
 
-* **[!DNL AEM Forms as a Cloud Service - Communications]**：通訊 API 可幫助您合併 XDP 範本和 XML 資料，以產生多種格式的列印文件。此服務可讓您以同步模式產生檔案。 這些 API 可讓您建立以下用途的應用程式：
+* **[!DNL AEM Forms as a Cloud Service - Communications]**：通訊 API 可幫助您合併 XDP 範本和 XML 資料，以產生多種格式的列印文件。此服務可讓您以同步模式產生文件。 這些 API 可讓您建立以下用途的應用程式：
    * 使用 XML 資料填寫範本檔案來產生最終表單文件。
    * 產生多種格式的輸出表單，包括非互動式 PDF 列印資料流。
    * 從 XFA 表單 PDF 和 Adobe Acrobat 表單 (AcroForm) 產生列印 PDF。
@@ -136,7 +136,7 @@ AEM as a Cloud Service 2021.6.0 中的 Cloud Manager 發行日期是 2021 年 6 
 
 您可以寫信寄到 [!DNL formscsbeta@adobe.com] 來註冊 beta 版計劃。
 
-### 修正在[!DNL Forms]中的錯誤 {#forms-bugs-fixed}
+### 修正在 [!DNL Forms] 中的錯誤 {#forms-bugs-fixed}
 
 * 當欄位在透過表單資料模型 (FDM) 提交資料到後端服務前驗證時，雖然會成功驗證，但表單資料模型無法叫用發佈驗證。
 * 從 Apple iOS 裝置提交包含標準 HTML 上傳欄位的表單時，有時不會傳送檔案內容並在另一端收到 0 位元組檔案。這是 Apple iOS 的已知問題。[FB9117687](https://feedbackassistant.apple.com/feedback/9117687)
@@ -166,7 +166,7 @@ AEM Screensas a Cloud Service的發行日期為2021年6月24日。
 
 ### 新增功能 {#what-is-new-cif}
 
-* 內容片段的新CIF產品和類別參考資料型別(包括 產品/類別選擇器UI支援)
+* 內容片段的新增CIF產品和類別參考資料型別(包括 產品/類別選擇器UI支援)
 * 新Commerce內容片段核心元件
 * AEM後端支援全文檢索商務搜尋
 * Commerce核心元件支援Adobe Commerce Sensei Recs資料收集

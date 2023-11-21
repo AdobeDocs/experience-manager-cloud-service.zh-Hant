@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: 464a97ce-da3e-47b5-9879-fafaf2f2378c
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '443'
 ht-degree: 7%
@@ -36,7 +36,7 @@ ht-degree: 7%
    >
    >如果文字欄位為空，則沒有現有的中繼資料集。 您可以在欄位中輸入值，並將其儲存以新增該中繼資料屬性。
 
-對資產中繼資料所做的任何變更，都會當作其XMP資料的一部分，回寫至原始二進位檔。 這可透過Experience Manager中繼資料回寫工作流程完成。 對現有屬性進行的變更(例如 `dc:title`)被覆寫和新建立的屬性(包括自訂屬性，例如 `cq:tags`)與結構描述一起新增。
+對資產中繼資料所做的任何變更，都會當作其XMP資料的一部分，回寫至原始二進位檔。 這可透過Experience Manager中繼資料回寫工作流程完成。 對現有屬性進行的變更(例如 `dc:title`)被覆寫並建立屬性(包括自訂屬性，例如 `cq:tags`)與結構描述一起新增。
 
 <!-- XMP write-back is supported and enabled for the platforms and file formats described in technical requirements. -->
 

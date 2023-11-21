@@ -3,10 +3,10 @@ title: CI/CD 管道
 description: 了解 Cloud Manager 的 CI/CD 管道以及如何使用它們來有效地部署您的程式碼。
 index: true
 exl-id: 40d6778f-65e0-4612-bbe3-ece02905709b
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '1418'
-ht-degree: 90%
+source-wordcount: '1417'
+ht-degree: 89%
 
 ---
 
@@ -169,8 +169,8 @@ Web 層配置管道透過將 HTTPD/Dispatcher 配置與其他程式碼更改分�
 * 你必須[選擇使用 Dispatcher 的靈活模式](/help/implementing/dispatcher/disp-overview.md#validation-debug)使用 Web 層配置管道。
 * 使用者必須使用&#x200B;**部署管理員**&#x200B;角色以配置或執行管道。
 * 在任何時候，每個環境只能有一個 Web 層配置管道。
-* 當相應的完整堆疊管道正在執行時，使用者無法配置 Web 層配置管道。
-* Web 層結構必須遵循靈活模式結構，如[雲端中的 Dispatcher](/help/implementing/dispatcher/disp-overview.md#validation-debug)文件所定義。
+* 當相應的完整棧疊管道正在執行時，使用者無法配置Web層配置管道。
+* Web 層結構必須遵循靈活模式結構，如[雲端中的 Dispatcher](/help/implementing/dispatcher/disp-overview.md#validation-debug) 文件所定義。
 
 此外，如果您選擇引入一個 [Web 層設定管道](#full-stack-pipeline)，請注意完整堆疊管道的運作方式。
 

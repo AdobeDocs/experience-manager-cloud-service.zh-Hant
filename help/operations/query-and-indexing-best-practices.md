@@ -3,9 +3,9 @@ title: 查詢和編製索引最佳做法
 description: 瞭解如何根據Adobe的最佳實務准則最佳化您的索引和查詢。
 topic-tags: best-practices
 exl-id: 37eae99d-542d-4580-b93f-f454008880b1
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '3128'
+source-wordcount: '3127'
 ht-degree: 0%
 
 ---

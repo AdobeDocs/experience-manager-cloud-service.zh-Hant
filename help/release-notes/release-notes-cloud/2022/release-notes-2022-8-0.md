@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2022.8.0 版發行說明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2022.8.0 版發行說明。'
 exl-id: 0eff8100-5990-4553-8373-445fb7e6fb27
-source-git-commit: 87630d9530194fd0c6d88e05a17db108b765ccb6
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '624'
-ht-degree: 55%
+source-wordcount: '623'
+ht-degree: 54%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 55%
 
 ## 發行影片 {#release-video}
 
-請觀看2022年8月版本概觀影片，瞭解2022.8.0版本新增功能摘要：
+請觀看 2022 年 8 月發行概觀影片，了解 2022.8.0 版本新增功能摘要：
 
 >[!VIDEO](https://video.tv.adobe.com/v/346608/?quality=12)
 
@@ -53,7 +53,7 @@ ht-degree: 55%
 
 ### [!DNL Assets] 中的新功能 {#features-assets}
 
-* 您現在可以將Adobe Experience Manager資產設定為 [根據MIME型別限制使用者可以上傳的資產型別](/help/assets/configure-asset-upload-restrictions.md).
+* 您現在可以將Adobe Experience Manager Assets設定為 [根據MIME型別限制使用者可以上傳的資產型別](/help/assets/configure-asset-upload-restrictions.md).
 
   ![資產上傳限制](/help/assets/assets/asset-upload-restrictions.png)
 
@@ -67,7 +67,7 @@ ht-degree: 55%
 
    * 使用靜態範本：已投資於舊型靜態範本的客戶可以在此精靈中使用靜態範本來撰寫調適型表單，繼續他們的雲端採用之旅。 這讓客戶有更多時間可以將舊的靜態範本移轉到可編輯的新式範本。
 
-* [在伺服器端進行處理時從記錄文件 (DoR) 中移除隱藏欄位](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)：您可以為一般使用者產生記錄文件 PDF，檔案中僅包含他們在資料擷取體驗期間可以看到的那些欄位。 在提交表單後，伺服器會根據提交的資料來驗證哪些欄位已對一般使用者隱藏，並從記錄文件中將其排除以維持一致性。
+* [在伺服器端進行處理時從記錄文件 (DoR) 中移除隱藏欄位](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)：您可以為一般使用者產生記錄文件 PDF，檔案中僅包含他們在資料擷取體驗期間可以看到的那些欄位。 在提交表單時，伺服器會根據提交的資料驗證哪些欄位已對使用者隱藏，並從記錄檔案中排除以達到一致性。
 
 ## CIF 附加元件 {#cloud-services-cif}
 

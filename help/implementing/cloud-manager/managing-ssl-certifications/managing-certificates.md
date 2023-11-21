@@ -2,10 +2,10 @@
 title: 管理 SSL 憑證
 description: 了解如何使用 Cloud Manager 檢查 SSL 憑證的狀態以及如何編輯、取代、更新和刪除它們。
 exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '637'
-ht-degree: 84%
+source-wordcount: '636'
+ht-degree: 78%
 
 ---
 
@@ -66,7 +66,7 @@ Cloud Manager 不允許您刪除與一個或多個網域相關聯的 SSL 憑證�
 
 ## 既有的 CDN 設定 {#pre-existing-cdn}
 
-如果您的 SSL 憑證存在既有 CDN 設定，則 **SSL 憑證**&#x200B;頁面上會顯示一則資訊訊息，鼓勵您透過 UI 新增這些設定，以便在 Cloud Manager 中顯示和設定它們。
+如果您的SSL憑證存在既有CDN設定，則 **SSL憑證** 頁面，鼓勵您透過UI新增這些設定，以便在Cloud Manager中顯示和設定它們。
 
 使用 UI 移轉所有預先存在的環境設定後，該訊息就會消失。訊息可能需要 1-2 個工作日才能消失。
 

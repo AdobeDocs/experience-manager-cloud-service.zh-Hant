@@ -2,7 +2,7 @@
 title: 如何設定AEM Forms的本機開發環境？
 description: 設定Adobe Experience Manager Formsas a Cloud Service的本機開發環境
 exl-id: 12877a77-094f-492a-af58-cffafecf79ae
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '2846'
 ht-degree: 3%
@@ -286,7 +286,7 @@ Dispatcher是Apache HTTP Web伺服器模組，可在CDN和AEM Publish層級之�
 
 ### 設定本機傳送器 {#setup-local-dispatcher}
 
-此 [!DNL Experience Manager] as a Cloud ServiceSDK包含建議的Dispatcher工具版本，有助於在本機設定、驗證和模擬Dispatcher。 Dispatcher工具以Docker為基礎，並提供命令列工具，將Apache HTTP Web Server和Dispatcher設定檔案傳輸為相容的格式，並將其部署到Docker容器中執行的Dispatcher。
+此 [!DNL Experience Manager] as a Cloud ServiceSDK包含建議的Dispatcher工具版本，有助於本機設定、驗證和模擬Dispatcher。 Dispatcher工具以Docker為基礎，並提供命令列工具，將Apache HTTP Web Server和Dispatcher設定檔案傳輸為相容的格式，並將其部署到Docker容器中執行的Dispatcher。
 
 Dispatcher上的快取允許 [!DNL AEM Forms] 以在使用者端預先填入Adaptive Forms。 這可改善預填表單的演算速度。
 
@@ -298,7 +298,7 @@ Dispatcher上的快取允許 [!DNL AEM Forms] 以在使用者端預先填入Adap
 
 1. 開啟您的AEM專案並導覽至 `\src\conf.dispatcher.d\available_farms`
 1. 建立 `default.farm` 檔案。 例如，`forms.farm`。
-1. 開啟新建立的 `forms.farm` 編輯和取代下列程式碼的檔案：
+1. 開啟已建立的 `forms.farm` 編輯和取代下列程式碼的檔案：
 
    ```json
    #/ignoreUrlParams {

@@ -2,10 +2,10 @@
 title: 使用 Universal Editor 進行本機 AEM 開發
 description: 了解 Universal Editor 如何支援為開發目的在本機 AEM 執行個體上進行編輯。
 exl-id: ba1bf015-7768-4129-8372-adfb86e5a120
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '580'
-ht-degree: 94%
+source-wordcount: '579'
+ht-degree: 92%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 94%
 
 ## 將 AEM 設定為在 HTTPS 上執行 {#aem-https}
 
-在使用 HTTPS 保護的外部框架內，無法載入不安全的 HTTP 框架。Universal Editor 服務會在 HTTPS 上執行，因此 AEM 或任何其他遠端頁面也必須在 HTTPS 上執行。
+在以HTTPS固定的外部框架中，無法載入不安全的HTTP框架。 Universal Editor 服務會在 HTTPS 上執行，因此 AEM 或任何其他遠端頁面也必須在 HTTPS 上執行。
 
 為此，您需要將 AEM 設定為在 HTTPS 上執行。出於開發目的，您可以使用自我簽署憑證。
 

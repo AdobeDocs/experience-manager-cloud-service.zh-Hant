@@ -2,7 +2,7 @@
 title: 複製
 description: 瞭解AEMas a Cloud Service中的散佈和疑難排解復寫。
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '1341'
 ht-degree: 1%
@@ -64,7 +64,7 @@ Adobe Experience Manager as a Cloud Service使用 [Sling Content Distribution](h
 1. 從AEMas a Cloud Service首頁，前往 **工具 — 工作流程 — 模型**.
 1. 在「工作流程模型」頁面中，按下 **建立** 在畫面的右上角。
 1. 新增標題和名稱至您的模型。 如需詳細資訊，請參閱 [建立工作流程模型](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html).
-1. 從清單中選取新建立的模型，然後按 **編輯**
+1. 從清單中選取已建立的模型，然後按下 **編輯**
 1. 在下列視窗中，將「處理步驟」拖放至目前的模型流程：
 
    ![程序步驟](/help/operations/assets/processstep.png)

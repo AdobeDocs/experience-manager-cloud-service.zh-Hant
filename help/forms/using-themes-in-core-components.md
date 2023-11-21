@@ -2,7 +2,7 @@
 title: 如何在Adaptive Forms中建立和使用主題？
 description: 您可以使用主題來設定樣式，並使用核心元件來將視覺身分提供給最適化表單。 您可以在任何數量的最適化Forms中共用主題。
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '2676'
 ht-degree: 4%
@@ -319,7 +319,7 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 
 ##### 5.2.將變更推送至存放庫 {#committing-the-changes}
 
-現在，將變更推送到AEM FormsCloud Service的主題存放庫。.
+現在，將變更推送到AEM FormsCloud Service的主題存放庫。
 
 1. 導覽至主題資料夾的根目錄。  在此案例中，主題資料夾名稱為 `aem-forms-theme-canvas`.
 1. 開啟命令提示或終端機。

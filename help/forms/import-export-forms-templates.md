@@ -3,7 +3,7 @@ title: 如何在AEM Forms執行個體上匯入、匯出及組織最適化Forms�
 description: 瞭解如何從AEM執行個體移轉最適化Forms、PDF forms、主題和其他支援資產。
 topic-tags: forms-manager
 exl-id: f5105fb7-b8c0-4656-8095-b21d392746c0
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '1206'
 ht-degree: 0%
@@ -185,7 +185,7 @@ You can import assets that are exported into a .cmp file. A .cmp file can have o
 
    如果具有指定名稱的資料夾存在，則提交會失敗並出現錯誤。 您可以將游標移至錯誤上方，檢視錯誤訊息 ![aem6forms_error_alert](assets/Smock_Alert_18_N.svg) 圖示出現在名稱欄位旁。
 
-   您可以點選新建立的資料夾以進入資料夾並在資料夾中建立資產或資料夾。 此外，您可以選取資料夾，並選擇將資料夾排入下載佇列、刪除資料夾或編輯資料夾名稱。
+   您可以點選已建立的資料夾以進入資料夾並在資料夾中建立資產或資料夾。 此外，您可以選取資料夾，並選擇將資料夾排入下載佇列、刪除資料夾或編輯資料夾名稱。
 
 
 <!-- ### Create copies of one or more assets or letters {#create-copies-of-one-or-more-assets-or-letters}

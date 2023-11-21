@@ -2,9 +2,9 @@
 title: 如何為最適化表單設定提交動作?
 description: 最適化表單提供多個提交動作。提交動作會定義提交之後處理最適化表單的方式。您可以使用內建的提交動作或建立自己的動作。
 exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
-source-git-commit: f79ed400ac2c1956dd7946cec2881f4e77d4bd41
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '3429'
+source-wordcount: '3428'
 ht-degree: 85%
 
 ---
@@ -447,7 +447,7 @@ When you submit the form, the data is saved in the specified Microsoft&reg; Shar
 
 啟用伺服器端驗證
 
-如果一般使用者略過那些驗證並提交表單，伺服器將再次執行驗證。如果伺服器端驗證失敗，就會停止提交交易。系統會再次對一般使用者呈現原始表單。擷取的資料和提交的資料會做為錯誤呈現給使用者。
+如果一般使用者略過那些驗證並提交表單，伺服器將再次執行驗證。如果伺服器端驗證失敗，就會停止提交交易。使用者會再次看到原始表單。 擷取的資料和提交的資料會做為錯誤呈現給使用者。
 
 >[!NOTE]
 >

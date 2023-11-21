@@ -2,7 +2,7 @@
 title: 流量篩選規則包括 WAF 規則
 description: 設定流量篩選規則，包括 Web 應用程式防火牆 (WAF) 規則
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '3437'
 ht-degree: 95%
@@ -192,7 +192,7 @@ data:
 
 | **屬性** | **類型** | **說明** |
 |---|---|---|
-| reqProperty | `string` | 要求屬性。<br><br>之一：<br><ul><li>`path`：傳回不帶查詢參數的 URL 完整路徑。</li><li>`queryString`：傳回 URL 的查詢部分</li><li>`method`：傳回要求中所使用的 HTTP 方法。</li><li>`tier`：返回其中之一`author`、`preview`或`publish`。</li><li>`domain`：傳回小寫的網域屬性 (如 `Host` 標頭的定義)</li><li>`clientIp`：傳回用戶端 IP 位址。</li><li>`clientCountry`：傳回兩個字母的代碼 ([https://en.wikipedia.org/wiki/Regional_indicator_symbol](https://en.wikipedia.org/wiki/Regional_indicator_symbol) 識別客戶位於哪個國家。</li></ul> |
+| reqProperty | `string` | 要求屬性。<br><br>之一：<br><ul><li>`path`：傳回不含查詢引數的URL完整路徑。</li><li>`queryString`：傳回URL的查詢部分</li><li>`method`：傳回要求中所使用的 HTTP 方法。</li><li>`tier`：返回其中之一`author`、`preview`或`publish`。</li><li>`domain`：傳回小寫的網域屬性 (如 `Host` 標頭的定義)</li><li>`clientIp`：傳回用戶端 IP 位址。</li><li>`clientCountry`：傳回兩個字母的代碼 ([https://en.wikipedia.org/wiki/Regional_indicator_symbol](https://en.wikipedia.org/wiki/Regional_indicator_symbol) 識別客戶位於哪個國家。</li></ul> |
 | reqHeader | `string` | 傳回具有指定名稱的要求標頭 |
 | queryParam | `string` | 傳回具有指定名稱的查詢參數 |
 | reqCookie | `string` | 傳回具有指定名稱的 Cookie |

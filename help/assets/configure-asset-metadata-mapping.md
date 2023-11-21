@@ -2,9 +2,9 @@
 title: 設定Workfront和Experience Manager Assets之間的資產中繼資料對應
 description: 在Adobe Workfront和Experience Manageras a Cloud Service應用程式之間對應資產中繼資料欄位。 對應中繼資料欄位後，當您從Workfront傳送資產至Experience Manager Assets時，可以在Experience Manager Assets中檢視對應的資產中繼資料。
 exl-id: 71400769-b2bc-4f5d-8b6b-a73598e837b4
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '1023'
+source-wordcount: '1024'
 ht-degree: 4%
 
 ---

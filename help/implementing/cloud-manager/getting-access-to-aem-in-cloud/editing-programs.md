@@ -2,10 +2,10 @@
 title: 編輯計畫
 description: 了解如何編輯您的生產和沙箱計畫，以在建立計畫後調整其選項。
 exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
-source-git-commit: ecb168e9261b3e3ed89e4cbe430b3da9f777a795
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '507'
-ht-degree: 89%
+source-wordcount: '506'
+ht-degree: 90%
 
 ---
 
@@ -57,7 +57,7 @@ ht-degree: 89%
 
    ![編輯安全性設定](assets/edit-program-security.png)
 
-   * HIPAA之後無法啟用或停用 [程式建立。](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
+   * HIPAA無法在之後啟用或停用 [程式建立。](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
       * [深入了解](https://www.adobe.com/go/hipaa-ready_tw) Adobe 的 HIPAA 就緒解決方案實作方式。
    * 一旦啟動，就可以設定WAF-DDOS保護 [非生產管道。](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
 

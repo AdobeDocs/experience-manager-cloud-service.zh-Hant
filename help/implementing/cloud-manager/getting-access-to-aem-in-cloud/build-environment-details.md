@@ -2,10 +2,10 @@
 title: 組建環境
 description: 了解 Cloud Manager 的構建環境以及它如何構建和測試您的程式碼。
 exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '1004'
-ht-degree: 96%
+ht-degree: 94%
 
 ---
 
@@ -157,9 +157,9 @@ $ aio cloudmanager:list-pipeline-variables PIPELINEID
 * 變數名稱只能包含字母數字構成的字元和底線 (`_`)。
 * 按照慣例，上述名稱應全部大寫。
 * 每個管道限制為 200 個變數。
-* 每個名稱的長度都必須少於 100 個字元。
+* 每個名稱不得超過100個字元。
 * 每個`string`變數值都必須少於 2048 個字元。
-* 每個`secretString`變數值都必須少於 500 個字元。
+* 每個 `secretString` 型別變數值不得超過500個字元。
 
 在 Maven `pom.xml` 檔案中使用時，使用類似下列的語法將這些變數對應到 Maven 屬性通常會有幫助。
 

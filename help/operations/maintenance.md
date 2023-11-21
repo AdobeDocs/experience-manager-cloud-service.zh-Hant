@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service 中的維護任務
 description: 瞭解AEMas a Cloud Service中的維護任務以及如何進行設定。
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
-source-git-commit: 1d20c42dd140e1bdadbf4e7e0abf899c824d3b34
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '1114'
+source-wordcount: '1111'
 ht-degree: 12%
 
 ---

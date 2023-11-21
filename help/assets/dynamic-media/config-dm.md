@@ -4,7 +4,7 @@ description: 瞭解如何在Adobe Experience Manager as a Cloud Service中設定
 contentOwner: Rick Brough
 role: Admin,User
 exl-id: 8e07bc85-ef26-4df4-8e64-3c69eae91e11
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '3794'
 ht-degree: 3%
@@ -84,7 +84,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 
    新密碼會在您選取時儲存 **[!UICONTROL 儲存]** 位於的右上角 **[!UICONTROL 建立Dynamic Media設定]** 頁面。
 
-   如果您已選取 **[!UICONTROL 取消]** 在 **[!UICONTROL 變更密碼]** 對話方塊中，您仍必須在儲存新建立的Dynamic Media組態時輸入新密碼。
+   如果您已選取 **[!UICONTROL 取消]** 在 **[!UICONTROL 變更密碼]** 對話方塊中，您仍必須在儲存已建立的Dynamic Media組態時輸入新密碼。
 
    另請參閱 [變更Dynamic Media的密碼](#change-dm-password).
 

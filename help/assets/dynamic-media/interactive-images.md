@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Interactive Images
 role: User
 exl-id: 89eef5e6-d508-4f33-b54e-24d4df49f8c3
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '4176'
+source-wordcount: '4175'
 ht-degree: 2%
 
 ---
@@ -378,7 +378,7 @@ ht-degree: 2%
 1. 後端邏輯會將對應的快速檢視資料或內容傳回前端程式碼。
 1. 前端程式碼會載入快速檢視資料或內容。
 1. 前端程式碼可選擇將載入的快速檢視資料轉換為HTML表示法。
-1. 前端程式碼會顯示模型對話方塊或面板，並在畫面上為一般使用者呈現HTML內容。
+1. 前端程式碼會顯示模型對話方塊或面板，並在畫面上為使用者呈現HTML內容。
 
 這些呼叫不一定代表網頁邏輯從任意步驟呼叫的獨立公用API呼叫。 相反地，這是一種鏈結呼叫，下個步驟的每一個都會隱藏在上一個步驟的最後一個階段（回撥）。
 

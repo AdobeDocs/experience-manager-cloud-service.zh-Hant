@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Image Sets
 role: User
 exl-id: 2eb71f24-73d9-4b5c-8605-923a0e3d1505
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '2134'
 ht-degree: 5%
@@ -190,7 +190,7 @@ ht-degree: 5%
    >
    >建立影像集時，您可以變更影像集縮圖。 或者，您可以讓Experience Manager根據影像集中的資產自動選取縮圖。 若要選取縮圖，請選取 **[!UICONTROL 變更縮圖]** 位於「影像集編輯器」頁面上「標題」欄位上方。 然後，選取任何影像（您也可以導覽至其他資料夾以尋找影像）。 如果您選取縮圖，然後決定要讓Experience Manager從影像集產生縮圖，請選取「 」 **[!UICONTROL 切換至]** **[!UICONTROL 自動縮圖]**.
 
-1. 按一下「**[!UICONTROL 儲存]**」。您新建立的影像集會顯示在您建立的資料夾中。
+1. 按一下「**[!UICONTROL 儲存]**」。您建立的影像集會顯示在您建立的資料夾中。
 
 ## 檢視影像集 {#viewing-image-sets}
 

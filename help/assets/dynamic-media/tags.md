@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Asset Reports
 role: Admin,User
 exl-id: a71fef45-c9a4-4091-8af1-c3c173324b7a
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '6663'
+source-wordcount: '6661'
 ht-degree: 7%
 
 ---
@@ -52,7 +52,7 @@ name used to be Experience Platform Launch. Changed to Experience Platform Data 
 
 ### 關於使用Adobe Analytics進行追蹤  {#about-tracking-using-adobe-analytics}
 
-Adobe Analytics可讓您追蹤一般使用者在您網站上與Dynamic Media Viewers互動時所執行的動作。 Adobe Analytics也可讓您追蹤檢視器特定資料。 例如，您可以追蹤並記錄檢視載入事件以及資產名稱、任何已發生的縮放動作和視訊播放動作。
+Adobe Analytics可讓您追蹤使用者在您網站上與Dynamic Media Viewers互動時所執行的動作。 Adobe Analytics也可讓您追蹤檢視器特定資料。 例如，您可以追蹤並記錄檢視載入事件以及資產名稱、任何已發生的縮放動作和視訊播放動作。
 
 在Experience Platform標籤中， *資料元素* 和 *規則* 共同啟用Adobe Analytics追蹤。
 
@@ -223,7 +223,7 @@ Dynamic Media Viewers擴充功能的唯一設定選項是 **[!UICONTROL 啟用�
 
 現在，假設使用者透過兩個檢視器載入網頁。 在 *檢視者1*，然後放大至50%縮放比例；接著放大 *檢視者2*，會放大至25%的縮放比例。 在 *檢視者1*，然後移動影像，最後按一下鍵盤上的鍵。
 
-一般使用者的活動會導致系統對Adobe Analytics進行以下兩個追蹤呼叫：
+使用者的活動會導致系統對Adobe Analytics進行以下兩個追蹤呼叫：
 
 * 發生第一個呼叫是因為 **[!UICONTROL Trackpan]** 當使用者進入時觸發規則 *檢視者1*. 該呼叫傳送50%作為的值 **[!UICONTROL 縮放比例]** 資料元素，因為資料元素知道規則是由以下觸發 *檢視者1* 並擷取對應的比例值；
 * 第二個呼叫的發生是因為 **[!UICONTROL TrackKey]** 當使用者按下鍵盤上的按鍵時，就會觸發規則。 該呼叫傳送25%作為的值 **[!UICONTROL 縮放比例]** 資料元素，因為檢視器未觸發規則。 因此，資料元素會傳回最新值。
@@ -519,7 +519,7 @@ Experience Platform標籤中的屬性是具名設定，可讓所有設定保持�
 
 1. 選取&#x200B;**[!UICONTROL 儲存]**。
 
-   選取新建立的屬性，然後繼續前往 *擴充功能的安裝和設定*.
+   選取建立的屬性，然後繼續前往 *擴充功能的安裝和設定*.
 
 ### 安裝及設定擴充功能 {#installing-and-setup-of-extensions}
 

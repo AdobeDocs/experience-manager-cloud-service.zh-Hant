@@ -2,7 +2,7 @@
 title: 內容轉換器概觀
 description: 瞭解如何使用內容轉換器來偵測並修正BPA回報的內容相關問題。
 exl-id: aa3397ff-3dd6-4c67-9064-cb9b19bf1c73
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '388'
 ht-degree: 2%
@@ -24,7 +24,7 @@ Content Transformer (CT)是由Adobe開發的工具，可用於自動偵測和修
 | DOPI | deprecated.ordered.index | 移除已棄用的索引。 |
 | OAUI | non.migrated.oauth.users | 請移除這些使用者，以確保他們不會移轉至AEMas a Cloud Service。 |
 | PCX | page.complexity.medium <br> page.complexity.high | 請刪除頁面/子項，或將它們移至其他位置，以確保它們不會移轉至AEMas a Cloud Service。 |
-| REP | forward.replication <br> reverse.replication <br> standard.replication.agent.modification <br> custom.replication.agent.detection | 移除新建立的復寫代理。 <br> 或 <br> 移除已修改/新增的屬性。 |
+| REP | forward.replication <br> reverse.replication <br> standard.replication.agent.modification <br> custom.replication.agent.detection | 移除已建立的復寫代理。 <br> 或 <br> 移除已修改/新增的屬性。 |
 | URS | clientlibs.location <br> file.location <br> node.location <br> workflow.location | 移至正確位置，以避免移轉期間發生問題。 |
 | URS | node.size | 將節點暫時移至`/etc/packages/content-transformation/paths` 以確保這些檔案不會移轉至AEMas a Cloud Service。 |
 

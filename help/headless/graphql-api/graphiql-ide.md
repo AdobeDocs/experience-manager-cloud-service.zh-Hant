@@ -3,10 +3,10 @@ title: 在 AEM 中使用 GraphiQL IDE
 description: 了解如何在 Adobe Experience Manager 中使用 GraphiQL IDE。
 feature: Content Fragments,GraphQL API
 exl-id: be2ebd1b-e492-4d77-b6ef-ffdea9a9c775
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '1137'
-ht-degree: 98%
+source-wordcount: '1138'
+ht-degree: 94%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 98%
 * 選擇適合您要用於查詢之 Sites 設定的&#x200B;**端點**
 * 直接輸入新查詢
 * 建立和存取&#x200B;**[持續性查詢](/help/headless/graphql-api/persisted-queries.md)**
-* 執行查詢以立即查看結果
+* 執行查詢以立即檢視結果
 * 管理&#x200B;**查詢變數**
 * 儲存和管理&#x200B;**持續性查詢**
 * 發佈或取消發佈，**持續性查詢**，至您的&#x200B;**發佈**&#x200B;或&#x200B;**預覽**&#x200B;服務；例如，至/從 `dev-publish`
@@ -105,7 +105,7 @@ GraphiQL IDE 也讓您管理[查詢變數](/help/headless/graphql-api/content-fr
 >
 >Dispatcher 上的自訂重寫規則可能會覆蓋 AEM 發佈的預設值。
 >
->如果您根據位置匹配模式從 Dispatcher 發送以 TTL 為主的快取控制標題，那麼，如有必要，您可能希望從匹配中排除 `/graphql/execute.json/*`。
+>如果您根據位置比對模式從Dispatcher傳送TTL型快取控制標題，則可能想要排除（如有必要） `/graphql/execute.json/*` 從相符專案。
 
 使用 GraphQL，您可以設定 HTTP 快取標頭來控制您個人持續性查詢的這些參數。
 

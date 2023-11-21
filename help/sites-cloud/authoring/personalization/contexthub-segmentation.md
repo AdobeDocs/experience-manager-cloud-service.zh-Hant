@@ -2,7 +2,7 @@
 title: 使用 ContextHub 設定分段
 description: 瞭解如何使用ContextHub設定分段。
 exl-id: fbc38611-dbee-426e-b823-df64b6730c45
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '1652'
 ht-degree: 4%
@@ -101,7 +101,7 @@ AEM可讓您輕鬆個人化您的使用者體驗。 它也可讓您驗證區段�
    * 最小值： `0`
    * 最大值： `1000000`
 
-1. 在區段控制檯中，編輯您新建立的區段以在區段編輯器中開啟它。
+1. 在區段控制檯中，編輯您建立的區段以在區段編輯器中開啟該區段。
 1. 將比較或參考拖曳至區段編輯器，該比較或參考會出現在預設的AND容器中。
 1. 連按兩下新參照或區段的設定選項，即可編輯特定引數。 在此範例中，我們正在測試巴塞爾的人員。
 

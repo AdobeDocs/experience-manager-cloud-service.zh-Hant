@@ -2,9 +2,9 @@
 title: 最適化Forms的版面配置功能有哪些？
 description: Adaptive Forms在各種裝置上的版面配置與外觀是由版面配置設定所控制。 瞭解各種版面以及如何套用它們。
 exl-id: e30c6ff9-692b-4415-8f14-b4ef616b2d12
-source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '861'
+source-wordcount: '860'
 ht-degree: 8%
 
 ---
@@ -71,7 +71,7 @@ window.guideBridge.validate([], this.panel.navigationContext.currentItem.somExpr
 
 使用此版面，您可以放置 **[!UICONTROL 面板最適化表單]** 具有摺疊式功能表樣式導覽的面板中的元件。 使用此版面，您也可以建立可重複的面板。 可重複面板可讓您視需要動態新增或移除面板。 您可以定義面板重複的最小和最大次數。 此外，面板的標題可以根據面板專案中提供的資訊動態決定。
 
-摘要運算式可用來顯示一般使用者在最小化面板標題中提供的值。
+摘要運算式可用來顯示使用者在最小化面板標題中提供的值。
 
 ![在最適化Forms中使用摺疊式面板版面的可重複面板](assets/accordion-layout.png)
 

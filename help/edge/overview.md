@@ -3,10 +3,10 @@ title: 開始使用 Edge Delivery Services
 description: 開始使用 Edge Delivery Services (EDS)。
 feature: Edge Delivery Services
 exl-id: 03a1aa93-d2e6-4175-9cf3-c7ae25c0d24e
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '862'
-ht-degree: 74%
+source-wordcount: '863'
+ht-degree: 72%
 
 ---
 
@@ -46,7 +46,7 @@ Edge Delivery Services 屬於 Adobe Experience Manager 一部份，因此 Edge D
 
 ## 取得 Edge Delivery Services 存取權 {#getting-access}
 
-開始使用 Edge Delivery Services 很容易。請依照「[開始使用 - 開發人員教學課程](https://www.hlx.live/developer/tutorial)」步驟開始使用。
+Edge Delivery Services可讓您輕鬆上手。 請依照「[開始使用 - 開發人員教學課程](https://www.hlx.live/developer/tutorial)」步驟開始使用。
 
 ## 取得 Adobe 的協助 {#adobe-gethelp}
 

@@ -4,7 +4,7 @@ seo-title: Rapidly build Adaptive Forms-based processes, automate document servi
 description: 使用AEM Forms工作流程自動化並快速建立業務流程工作流程。 例如，檢閱和核准、PDF產生、Adobe Sign工作流程。
 uuid: 797ba0f7-a378-45ac-9f82-fa9a952027be
 topic-tags: publish, document_services
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '2392'
 ht-degree: 1%
@@ -66,7 +66,7 @@ AEM提供直覺式使用者介面，讓您使用提供的工作流程步驟建�
 1. 開啟「工作流程模型」主控台。 預設URL為 `https://[server]:[port]/libs/cq/workflow/admin/console/content/models.html/etc/workflow/models`
 1. 選取 **建立**，然後 **建立模型**. 「新增工作流程模型」對話方塊隨即顯示。
 1. 輸入 **標題** 和 **名稱** （選擇性）。 例如，抵押貸款應用程式。 點選 **完成**.
-1. 選取新建立的工作流程模型並點選 **編輯**. 現在，您可以新增工作流程步驟以建立商業邏輯。 第一次建立工作流程模型時，模型會包含：
+1. 選取已建立的工作流程模型並點選 **編輯**. 現在，您可以新增工作流程步驟以建立商業邏輯。 第一次建立工作流程模型時，模型會包含：
 
    * 步驟：流程開始與流程結束。 這些步驟代表工作流程的開始和結束。 這些步驟為必要步驟，無法編輯或移除。
    * 名為步驟1的範例參與者步驟。 此步驟已設定為將工作專案指派給管理員使用者。 移除此步驟。

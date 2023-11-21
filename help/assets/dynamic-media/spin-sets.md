@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Spin Sets
 role: User
 exl-id: ed470472-62d9-4684-971b-30df3919c180
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '1926'
 ht-degree: 9%
@@ -168,7 +168,7 @@ ht-degree: 9%
 
    * 若要套用預設集，在頁面右上角附近，選取 **[!UICONTROL 預設集]**，然後選取要一次套用至所有資產的預設集。
 
-1. 選取&#x200B;**[!UICONTROL 儲存]**。您新建立的「迴轉集」會顯示在您建立的資料夾中。
+1. 選取&#x200B;**[!UICONTROL 儲存]**。您建立的「迴轉集」會顯示在您建立的資料夾中。
 
 ## 檢視迴轉集 {#viewing-spin-sets}
 

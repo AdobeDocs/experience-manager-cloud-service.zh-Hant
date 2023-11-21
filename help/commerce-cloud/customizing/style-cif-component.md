@@ -1,5 +1,5 @@
 ---
-title: 建立Adobe Experience Manager CIF核心元件的樣式
+title: 樣式Adobe Experience Manager CIF核心元件
 description: 瞭解如何設定Adobe Experience Manager (AEM) CIF核心元件的樣式。 本教學課程涵蓋如何使用使用者端資料庫或clientlibs來針對AEM Commerce實作部署及管理CSS和JavaScript。 本教學課程也涵蓋ui.frontend模組和webpack專案如何整合至端對端建置流程。
 sub-product: Commerce
 topics: Development
@@ -11,7 +11,7 @@ feature: Commerce Integration Framework
 kt: 3456
 thumbnail: 3456-style-cif.jpg
 exl-id: 521c1bb8-7326-4ee8-aba3-f386727e2b34
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '2535'
 ht-degree: 2%
@@ -57,7 +57,7 @@ ht-degree: 2%
    $ mvn clean install -PautoInstallPackage,cloud
    ```
 
-1. 新增必要的OSGi設定，以便將AEM執行個體連線至Adobe Commerce執行個體，或將設定新增至新建立的專案。
+1. 新增必要的OSGi設定，以便將AEM執行個體連線至Adobe Commerce執行個體，或將設定新增至已建立的專案。
 
 1. 此時，您應該有已連線至Adobe Commerce執行個體的有效店面版本。 導覽至 `US` > `Home` 頁面位置： [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html).
 
@@ -69,7 +69,7 @@ ht-degree: 2%
 
 在AEM中，負責轉譯店面主題/樣式的CSS和JavaScript是由 [使用者端資料庫](/help/implementing/developing/introduction/clientlibs.md) 或「clientlibs」的簡稱。 使用者端程式庫提供的機制，可在專案程式碼中整理CSS和JavaScript，然後傳送至頁面。
 
-品牌特定樣式可透過新增及覆寫這些使用者端程式庫管理的CSS，套用至AEM CIF核心元件。 瞭解使用者端程式庫如何建構並包含在頁面上至關重要。
+可透過新增和覆寫這些使用者端資料庫所管理的CSS，將品牌特定樣式套用至AEM CIF核心元件。 瞭解使用者端程式庫如何建構並包含在頁面上至關重要。
 
 此 [ui.frontend](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html) 是專用的 [webpack](https://webpack.js.org/) 專案以管理專案的所有前端資產。 此網頁套件可讓前端開發人員使用各種語言和技術，例如 [TypeScript](https://www.typescriptlang.org/)， [Sas](https://sass-lang.com/)，以及更多功能。
 
@@ -469,7 +469,7 @@ AEM也會嘗試快取使用者端程式庫以提高效能。 在程式碼部署�
 
 ## 恭喜 {#congratulations}
 
-您完成了第一個AEM CIF核心元件的樣式設定，而且使用了Webpack開發伺服器！
+您已完成第一個AEM CIF核心元件的樣式，而且使用的是Webpack開發伺服器！
 
 ## 額外挑戰 {#bonus-challenge}
 

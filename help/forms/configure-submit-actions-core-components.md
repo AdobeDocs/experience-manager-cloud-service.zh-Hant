@@ -3,10 +3,10 @@ title: 如何為最適化表單設定提交動作?
 description: 最適化表單提供多個提交動作。提交動作會定義提交之後處理最適化表單的方式。您可以使用內建的提交動作或建立您自己的提交動作
 keywords: 如何選取最適化表單的提交動作、將最適化表單連線至sharepoint清單、將最適化表單連線至sharepoint檔案庫、將最適化表單連線至表單資料模型
 exl-id: 495948e8-30a7-4e7c-952f-c71de15520f0
-source-git-commit: 397e7d4f23202b8ae7419b0ad5436a6a10e2efb8
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '3635'
-ht-degree: 92%
+source-wordcount: '3634'
+ht-degree: 91%
 
 ---
 
@@ -473,7 +473,7 @@ For more information about the Forms Portal and Submit Action, see [Drafts and s
 
 啟用伺服器端驗證
 
-如果一般使用者略過那些驗證並提交表單，伺服器將再次執行驗證。如果伺服器端驗證失敗，就會停止提交交易。系統會再次對一般使用者呈現原始表單。擷取的資料和提交的資料會做為錯誤呈現給使用者。
+如果一般使用者略過那些驗證並提交表單，伺服器將再次執行驗證。如果伺服器端驗證失敗，就會停止提交交易。使用者會再次看到原始表單。 擷取的資料和提交的資料會做為錯誤呈現給使用者。
 
 >[!NOTE]
 >

@@ -2,9 +2,9 @@
 title: 如何產生最適化Forms的記錄檔案？
 description: 瞭解如何為最適化Forms核心元件的記錄檔案(DoR)產生範本。
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '3107'
+source-wordcount: '3106'
 ht-degree: 2%
 
 ---
@@ -44,7 +44,7 @@ ht-degree: 2%
 1. 在「表單模型」標籤的「記錄檔案範本組態」區段中，選取 **建立表單範本為記錄檔案範本的關聯**. 選取此選項時，會顯示電腦上可用的所有XFA範本（XDP檔案）。 選取適當的檔案。 此外，請確定最適化表單和選取的XFA範本（XDP檔案）使用的是相同結構描述（資料結構描述）。
 1. 按一下 **[!UICONTROL 完成。]**
 
-您的最適化表單現在已設定為使用XDP檔案作為記錄檔案的範本。 接下來的步驟是 [將最適化表單元件與對應的範本欄位繫結](#bind-adaptive-form-components-with-template-fields).
+您的最適化表單現在已設定為使用XDP檔案作為記錄檔案的範本。 下一步是 [將最適化表單元件與對應的範本欄位繫結](#bind-adaptive-form-components-with-template-fields).
 
 ## 產生以Acroform為基礎的記錄檔案 {#generate-an-Acroform-based-document-of-record}
 
@@ -57,7 +57,7 @@ ht-degree: 2%
 1. 在「表單模型」標籤的「記錄檔案範本組態」區段中，選取 **建立表單範本為記錄檔案範本的關聯**. 選取此選項時，會顯示電腦上可用的所有AcrobatPDF(Acroform)。 選取您要使用的Acroform。
 1. 按一下 **[!UICONTROL 完成。]**
 
-您的最適化表單現在已設定為使用Acroform作為記錄檔案的範本。 接下來的步驟是 [將最適化表單元件與對應的範本欄位繫結](#bind-adaptive-form-components-with-template-fields).
+您的最適化表單現在已設定為使用Acroform作為記錄檔案的範本。 下一步是 [將最適化表單元件與對應的範本欄位繫結](#bind-adaptive-form-components-with-template-fields).
 
 ## 自動產生記錄檔案 {#auto-generate-a-document-of-record}
 
@@ -136,7 +136,7 @@ The form developer binds Adaptive Forms fields with corresponding Document of Re
 
 處理最適化Forms的記錄檔案時，請牢記以下考量事項和限制。
 
-* 記錄檔案範本不支援RTF文字。 因此，靜態最適化表單中或一般使用者填入的資訊中的任何RTF文字都會在記錄檔案中顯示為純文字。
+* 記錄檔案範本不支援RTF文字。 因此，靜態最適化表單中或使用者填入的資訊中的任何RTF文字都會在記錄檔案中顯示為純文字。
 * 最適化表單中的檔案片段未出現在記錄檔案中。 不過，支援最適化表單片段。
 * 不支援針對XML結構描述型最適化表單產生的記錄檔案中的內容繫結。
 * 當使用者請求轉譯記錄檔案時，記錄檔案的當地語系化版本是應地區設定的要求建立的。 記錄檔案本地化與最適化表單本地化同時發生。 <!-- For more information on localization of Document of Record and Adaptive Forms see Using AEM translation workflow to localize Adaptive Forms and Document of Record.-->

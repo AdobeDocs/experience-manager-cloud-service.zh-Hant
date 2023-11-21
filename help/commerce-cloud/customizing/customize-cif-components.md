@@ -11,7 +11,7 @@ feature: Commerce Integration Framework
 kt: 4279
 thumbnail: customize-aem-cif-core-component.jpg
 exl-id: 4933fc37-5890-47f5-aa09-425c999f0c91
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '2559'
 ht-degree: 2%
@@ -20,7 +20,7 @@ ht-degree: 2%
 
 # 自訂AEM CIF核心元件 {#customize-cif-components}
 
-此 [CIF Venia專案](https://github.com/adobe/aem-cif-guides-venia) 是用於的參考程式碼基底 [CIF核心元件](https://github.com/adobe/aem-core-cif-components). 在本教學課程中，您將進一步延伸 [產品Teaser](https://github.com/adobe/aem-core-cif-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser) 元件以顯示來自Adobe Commerce的自訂屬性。 您也會進一步瞭解AEM與Adobe Commerce之間的GraphQL整合，以及CIF核心元件提供的擴充功能勾點。
+此 [CIF Venia專案](https://github.com/adobe/aem-cif-guides-venia) 是用於的參考程式碼基底 [CIF核心元件](https://github.com/adobe/aem-core-cif-components). 在本教學課程中，您將進一步延伸 [產品Teaser](https://github.com/adobe/aem-core-cif-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser) 元件以顯示來自Adobe Commerce的自訂屬性。 您也會深入瞭解AEM與Adobe Commerce之間的GraphQL整合，以及CIF核心元件所提供的擴充功能勾點。
 
 >[!TIP]
 >
@@ -59,7 +59,7 @@ Venia品牌最近開始使用永續性材料來製造某些產品，而企業想
    $ mvn clean install -PautoInstallSinglePackage,cloud
    ```
 
-1. 新增必要的OSGi設定，以便將AEM執行個體連線至Adobe Commerce執行個體，或將設定新增至新建立的專案。
+1. 新增必要的OSGi設定，以便將AEM執行個體連線至Adobe Commerce執行個體，或將設定新增至已建立的專案。
 
 1. 此時，您應該有已連線至Adobe Commerce執行個體的有效店面版本。 導覽至 `US` > `Home` 頁面位置： [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html).
 
@@ -336,7 +336,7 @@ AEM元件的常見擴充功能是修改元件產生的標籤。 此編輯透過�
 
 >[!NOTE]
 >
-> 如果您使用CIF產品和類別選擇器（例如這個Product Teaser或CIF頁面元件）來自訂元件，請務必包含必要的 `cif.shell.picker` 元件對話方塊的clientlib。 另請參閱 [CIF產品和類別選擇器的使用情況](use-cif-pickers.md) 以取得詳細資訊。
+> 如果您使用CIF產品和類別選擇器(例如此產品Teaser或CIF頁面元件)自訂元件，請務必包含必要的 `cif.shell.picker` 元件對話方塊的clientlib。 另請參閱 [CIF產品和類別選擇器的使用情況](use-cif-pickers.md) 以取得詳細資訊。
 
 1. 在IDE中，瀏覽並展開 `ui.apps` 模組，並將資料夾階層展開至： `ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/productteaser` 並檢查 `.content.xml` 檔案。
 
@@ -352,9 +352,9 @@ AEM元件的常見擴充功能是修改元件產生的標籤。 此編輯透過�
        componentGroup="Venia - Commerce"/>
    ```
 
-   以上元件定義適用於專案中的產品Teaser元件。 注意屬性 `sling:resourceSuperType="core/cif/components/commerce/productteaser/v1/productteaser"`. 此屬性是建立 [Proxy元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/using.html#create-proxy-components). 除了從AEM CIF核心元件複製和貼上Product Teaser HTL指令碼之外，您還可以使用 `sling:resourceSuperType` 以繼承所有功能。
+   以上元件定義適用於專案中的產品Teaser元件。 注意屬性 `sling:resourceSuperType="core/cif/components/commerce/productteaser/v1/productteaser"`. 此屬性是建立 [Proxy元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/using.html#create-proxy-components). 您可以使用「 」，而不是從AEM CIF核心元件複製和貼上Product Teaser HTL指令碼 `sling:resourceSuperType` 以繼承所有功能。
 
-1. 開啟檔案 `productteaser.html`. 此檔案是 `productteaser.html` 來自的檔案 [CIF產品預告](https://github.com/adobe/aem-core-cif-components/blob/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser/productteaser.html).
+1. 開啟檔案 `productteaser.html`. 此檔案是 `productteaser.html` 來自的檔案 [CIF產品Teaser](https://github.com/adobe/aem-core-cif-components/blob/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser/productteaser.html).
 
    ```html
    <!--/* productteaser.html */-->

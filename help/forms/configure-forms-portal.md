@@ -2,9 +2,9 @@
 title: 如何在Experience Manager Sites頁面上建立Forms入口網站？
 description: 瞭解如何在AEM Sites頁面上建立Forms入口網站，並使用現成可用的核心元件。
 exl-id: 13cfe3ba-2e85-46bf-a029-2673de69c626
-source-git-commit: e48272f4d36c608d516c7a947fc16cff3a3b408e
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '1841'
+source-wordcount: '1840'
 ht-degree: 4%
 
 ---
@@ -33,7 +33,7 @@ Form Portal元件可讓您新增下列功能：
 * 啟用根據標題和說明的表單搜尋功能。
 * 使用自訂CSS來自訂入口網站的外觀。
 * 建立表單連結。
-* 列出一般使用者建立的最適化Forms相關的草稿和提交內容。
+* 列出與使用者建立的最適化Forms相關的草稿和提交內容。
 
 ## Forms Portal頁面的元件 {#forms-portal-components}
 

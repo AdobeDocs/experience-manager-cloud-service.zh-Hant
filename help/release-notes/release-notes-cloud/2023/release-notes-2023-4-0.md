@@ -1,13 +1,13 @@
 ---
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2023.4.0 版發行說明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2023.4.0 版發行說明。'
-source-git-commit: 104065f208adf9bcc8e6a090b224517a7904f5f9
-workflow-type: ht
-source-wordcount: '1171'
-ht-degree: 100%
+exl-id: c34aedee-e45a-4e2a-ae7f-930bc0cc026f
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+workflow-type: tm+mt
+source-wordcount: '1170'
+ht-degree: 99%
 
 ---
-
 
 # [!DNL Adobe Experience Manager] as a Cloud Service 2023.4.0 版發行說明 {#release-notes}
 
@@ -43,7 +43,7 @@ ht-degree: 100%
 ### [!DNL Experience Manager Sites] 發行前版本的新功能 {#prerelease-sites}
 
 * 內容片段及其參考資料現在可以發佈到 [AEM 預覽服務](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=zh-Hant#access-preview-service) (使用[內容片段主控台](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=zh-Hant))，讓使用者在上線前可在分離的預覽應用程式上先預覽最終體驗。
-* 現在可以使用 AEM GraphQL 在 Headless 情境下，動態最佳化影像以進行 Web 傳遞。[查詢變數](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/images.html?lang=en#query-variables)可以在 GraphQL 查詢中定義，以允許分離的用戶端應用程式相應地要求 AEM 中的最佳化影像。
+* 現在可以使用 AEM GraphQL 在 Headless 情境下，動態最佳化影像以進行 Web 傳遞。[查詢變數](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/images.html?lang=zh-Hant#query-variables)可以在 GraphQL 查詢中定義，以允許分離的用戶端應用程式相應地要求 AEM 中的最佳化影像。
 * 現在可以使用 AEM GraphQL 內容傳遞 API 將[內容片段變化](https://experienceleague.adobe.com/docs/experience-manager-65/assets/content-fragments/content-fragments-variations.html?lang=en)上的標記輸出至 JSON。
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
@@ -63,7 +63,7 @@ ht-degree: 100%
 * 顏色搜尋面向的可用性改進 - 顏色值的輸入欄位現在為可編輯，搜尋結果只在您退出檢色器時才會更新。
 
 * 為 Dynamic Media 影片傳遞 (啟用 CMAF) 中的自適應串流推出新的通訊協定支援 (DASH - 基於 HTTP 的動態自適應串流)：
-   * 自適應串流 (DASH/HLS) 可確保更好的一般使用者觀看影片體驗
+   * 最適化串流(DASH/HLS)可確保更出色的視訊使用者觀看體驗
    * DASH 是自適應影片串流的國際標準通訊協定，在業界被廣泛採用
    * 「在所有區域提供」將透過支援票證啟用
 
@@ -116,7 +116,7 @@ ht-degree: 100%
 
 ## 維護版本發行說明 {#maintenance}
 
-您可以在[此處](/help/release-notes/maintenance/latest.md)找到最新的維護版本發行說明。
+您可以在[這裡](/help/release-notes/maintenance/latest.md)找到最新的維護版本發行說明。
 
 ## Cloud Manager {#cloud-manager}
 
@@ -124,4 +124,4 @@ ht-degree: 100%
 
 ## 移轉工具 {#migration-tools}
 
-您可以在[此處](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)找到移轉工具版本的完整清單。
+您可以在[這裡](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)找到移轉工具版本的完整清單。

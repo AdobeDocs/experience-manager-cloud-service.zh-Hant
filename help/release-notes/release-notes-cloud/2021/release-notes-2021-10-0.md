@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2021.10.0 版發行說明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2021.10.0 版發行說明。'
 exl-id: ab584923-5f06-4b54-941b-e00bc1158b81
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '1436'
-ht-degree: 69%
+ht-degree: 67%
 
 ---
 
@@ -58,7 +58,7 @@ No customer-reported bugs fixed in Oct release. Details in CQDOC-18404.
 
 ### [!DNL Forms] 的新增功能 {#what-is-new-forms-oct-2021}
 
-* **Analytics for Adaptive Forms**：您現在可以透過 Adobe Analytics for Adaptive Forms 擷取及追蹤已登入和未登入 (匿名) 的行為，以收集一般使用者的深入解析。它可幫助您根據資料來進行明智的決策，以改善一般使用者體驗。
+* **Analytics for Adaptive Forms**：您現在可以透過Adobe Analytics for Adaptive Forms擷取及追蹤已登入和未登入（匿名）的行為，以收集使用者深入解析。 它可幫助您根據資料來進行明智的決策，以改善使用者體驗。
 
 ### [!DNL Forms] 搶鮮版頻道中可用的新功能 {#prerelease-features-forms-oct-2021}
 

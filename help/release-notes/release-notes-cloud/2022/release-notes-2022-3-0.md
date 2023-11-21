@@ -2,9 +2,9 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2022.3.0 版發行說明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2022.3.0 版發行說明。'
 exl-id: 761f1605-c421-4f3a-8f90-af23f4f047b1
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '1151'
+source-wordcount: '1152'
 ht-degree: 15%
 
 ---
@@ -91,7 +91,7 @@ ht-degree: 15%
 
 ### 新增功能 {#what-is-new-foundation}
 
-* 為了更有效率並有效地疑難排解雲端環境中的自訂功能，我們發佈了一款新的開發人員工具 —  [存放庫瀏覽器](/help/implementing/developing/tools/repository-browser.md). 它是輕量、唯讀的HTML瀏覽器，您可以從開發人員控制檯啟動。 瞭解發佈者、作者和預覽層以及所有環境（包括生產、暫存和開發）中的內容存放庫。 瀏覽內容結構、檢視屬性，以及預覽和下載二進位檔案。
+* 為了更有效率並有效地疑難排解雲端環境中的自訂功能，我們發佈了一款新的開發人員工具 —  [存放庫瀏覽器](/help/implementing/developing/tools/repository-browser.md). 它是一個輕量、只讀、HTML的瀏覽器，您可以從開發人員控制檯啟動。 瞭解發佈者、作者和預覽層以及所有環境（包括生產、暫存和開發）中的內容存放庫。 瀏覽內容結構、檢視屬性，以及預覽和下載二進位檔案。
 
   ![repobrowserrelnotes](/help/release-notes/assets/repobrowserrelnotes.png)
 

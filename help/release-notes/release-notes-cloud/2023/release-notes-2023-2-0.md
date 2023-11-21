@@ -1,13 +1,13 @@
 ---
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2023.2.0 版發行說明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2023.2.0 版發行說明。'
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '732'
-ht-degree: 100%
+exl-id: 671056e6-84cc-4c2c-bca3-fde68d5cc835
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+workflow-type: tm+mt
+source-wordcount: '731'
+ht-degree: 98%
 
 ---
-
 
 # [!DNL Adobe Experience Manager] as a Cloud Service 2023.2.0 版發行說明 {#release-notes}
 
@@ -35,7 +35,7 @@ ht-degree: 100%
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
-### [!DNL Experience Manager Sites] 中的新功能 預先發佈 {#prerelease-sites}
+### [!DNL Experience Manager Sites] 預先發佈的新功能 {#prerelease-sites}
 
 * 將 AEM as a Cloud Service 中的內容片段匯出到 Adobe Target 作為 JSON 選件。
 * 支援 GraphQL 分頁和排序，以及內部快取增強功能，現在可協助提升分離的用戶端應用程式在使用複雜 GraphQL 查詢和篩選器從 AEM 擷取大型內容集時的工作效能。
@@ -45,7 +45,7 @@ ht-degree: 100%
 ### [!DNL Assets] 中的新功能 {#assets-features}
 
 * 為 Dynamic Media 影片傳遞 (啟用 CMAF) 中的自適應串流推出的新通訊協定 (DASH - 基於 HTTP 的動態自適應串流) 支援：
-   * 自適應串流 (DASH/HLS) 可確保更好的一般使用者觀看影片體驗
+   * 最適化串流(DASH/HLS)可確保更出色的視訊使用者觀看體驗
    * DASH 是自適應影片串流的國際標準通訊協定，在業界被廣泛採用
    * 在 NA 可使用，透過支援票證啟用，即將在 APAC、EMEA 推出
 
@@ -92,7 +92,7 @@ ht-degree: 100%
 
 ## 維護版本發行說明 {#maintenance}
 
-您可以在[此處](/help/release-notes/maintenance/latest.md)找到最新的維護版本發行說明。
+您可以在[這裡](/help/release-notes/maintenance/latest.md)找到最新的維護版本發行說明。
 
 ## Cloud Manager {#cloud-manager}
 
@@ -100,4 +100,4 @@ ht-degree: 100%
 
 ## 移轉工具 {#migration-tools}
 
-您可以在[此處](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)找到移轉工具版本的完整清單。
+您可以在[這裡](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)找到移轉工具版本的完整清單。

@@ -2,7 +2,7 @@
 title: 在 AEM 中編輯外部 SPA
 description: 本檔案說明將獨立SPA上傳到AEM執行個體、新增內容的可編輯區段及啟用編寫的建議步驟。
 exl-id: 7978208d-4a6e-4b3a-9f51-56d159ead385
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '2418'
 ht-degree: 1%
@@ -111,7 +111,7 @@ npm install --save @adobe/aem-spa-component-mapping @adobe/aem-spa-page-model-ma
 
    ![文字元件屬性](assets/external-spa-text-properties.png)
 
-   這些值會以屬性形式傳遞至新建立的 `AEMText` React元件，並可用於呈現內容。
+   這些值會以屬性形式傳遞至已建立的 `AEMText` React元件，並可用於呈現內容。
 
    ```javascript
    import React from 'react';
@@ -343,7 +343,7 @@ mvn clean install -PautoInstallSinglePackage
 
 1. 在SPA路由中新增協助程式。
 
-   * 新建立的頁面尚無法在AEM中轉譯預期的內容。 原因是因為路由器預期路徑為 `/test` 而AEM作用中路徑是 `/wknd-spa-react/us/en/test`. 為了適應AEM特定的URL部分，您必須在SPA端新增一些協助程式。
+   * 建立的頁面尚無法在AEM中轉譯預期的內容。 原因是因為路由器預期路徑為 `/test` 而AEM作用中路徑是 `/wknd-spa-react/us/en/test`. 為了適應AEM特定的URL部分，您必須在SPA端新增一些協助程式。
 
    ![路由協助程式](assets/external-spa-router-helper.png)
 
@@ -356,7 +356,7 @@ mvn clean install -PautoInstallSinglePackage
 
 1. 驗證是否在AEM中編輯頁面。
 
-   * 將專案部署到AEM並導覽至新建立的 `test` 頁面。 頁面內容現在已呈現，且AEM元件可供編輯。
+   * 將專案部署到AEM並導覽至已建立的 `test` 頁面。 頁面內容現在已呈現，且AEM元件可供編輯。
 
 ## 框架限制 {#framework-limitations}
 

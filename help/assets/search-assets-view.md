@@ -3,10 +3,10 @@ title: 瞭解如何搜尋和探索中的資產 [!DNL Assets view]？
 description: 瞭解如何在AEM Assets檢視中搜尋和探索資產。 強大的搜尋功能可讓您快速探索合適的資產，協助您改善內容速度。
 role: User
 exl-id: be9597a3-056c-436c-a09e-15a03567c85a
-source-git-commit: d663c258a83473ec8d3c68bc5683955003d889c7
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '924'
-ht-degree: 93%
+source-wordcount: '922'
+ht-degree: 90%
 
 ---
 
@@ -123,7 +123,7 @@ ht-degree: 93%
 
 ## 已儲存搜尋 {#saved-search}
 
-搜尋功能可以在 [!DNL Assets view] 中輕鬆使用。您不僅可以從搜尋方塊中輸入關鍵字然後按下「Return」來查看結果，也可按一下快速再次搜尋最近搜尋的關鍵字。
+搜尋功能可以在 [!DNL Assets view] 中輕鬆使用。從搜尋方塊中，您只需輸入關鍵字並按Return鍵即可檢視結果，或者只要按一下即可快速再次搜尋最近搜尋的關鍵字。
 
 您也可以根據資產的中繼資料和類型的特定條件，來篩選搜尋結果。對於常用的篩選條件，若要改善搜尋體驗，[!DNL Assets view] 可讓您儲存搜尋參數。您稍後可以選取已儲存搜尋，按一下即可搜尋並套用篩選器。
 

@@ -5,7 +5,7 @@ contentOwner: Vishabh Gupta
 feature: Search,Adobe Stock
 role: Admin,User
 exl-id: 13f21d79-2a8d-4cb1-959e-c10cc44950ea
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '2490'
 ht-degree: 8%
@@ -271,7 +271,7 @@ IMS 設定包括兩個步驟：
 
 1. 瀏覽至 **[!UICONTROL 工具]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Adobe Stock]**. 選取 [!DNL Adobe Stock] 雲端設定並按一下 **[!UICONTROL 屬性]**.
 
-1. 將新建立的使用者群組新增至 [!DNL Adobe Stock] 設定。 按一下&#x200B;**[!UICONTROL 「儲存並關閉」]**。
+1. 將已建立的使用者群組新增至 [!DNL Adobe Stock] 設定。 按一下&#x200B;**[!UICONTROL 「儲存並關閉」]**。
 
    ![assign-user](assets/aem-stock-adduser.png)
 

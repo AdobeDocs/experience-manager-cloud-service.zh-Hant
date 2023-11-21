@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Asset Management,Image Profiles,Renditions
 role: User
 exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '3528'
 ht-degree: 7%
@@ -134,7 +134,7 @@ ht-degree: 7%
 
    ![裁切](assets/crop.png)
 
-1. 選取&#x200B;**[!UICONTROL 儲存]**。新建立的設定檔會顯示在可用設定檔清單中。
+1. 選取&#x200B;**[!UICONTROL 儲存]**。建立的設定檔會顯示在可用設定檔清單中。
 
 ## 編輯或刪除Dynamic Media影像設定檔 {#editing-or-deleting-image-profiles}
 

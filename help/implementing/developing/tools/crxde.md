@@ -2,9 +2,9 @@
 title: 使用 CRXDE Lite
 description: CRXDE Lite是AEM快速入門的一部分，可供您在瀏覽器中存取和修改本機開發環境中的存放庫。
 exl-id: 1581a7e5-6f84-4a45-8e8f-c83692ea077a
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '1685'
+source-wordcount: '1683'
 ht-degree: 1%
 
 ---
@@ -192,7 +192,7 @@ CRXDE Lite的使用者介面有許多部分且有許多功能。
 >
 大部分的編輯操作，包括 **建立節點**，會將所有變更保留在記憶體中，並僅在儲存時將它們儲存在存放庫中(使用 [**儲存全部按鈕**](#save-all-button))。 不過，某些作業（例如移動）會自動持續存在。
 >
-有關父節點的節點型別是否允許新建立的節點的驗證，也會在儲存變更時由存放庫執行。 如果您在儲存節點時收到錯誤訊息，請檢查內容結構是否有效(例如，您無法建立 `nt:unstructured` 作為子項的節點 `nt:folder` 節點)。
+儲存變更時，存放庫也會針對父節點的節點型別是否允許建立節點進行驗證。 如果您在儲存節點時收到錯誤訊息，請檢查內容結構是否有效(例如，您無法建立 `nt:unstructured` 作為子項的節點 `nt:folder` 節點)。
 
 ## 建立屬性 {#creating-a-property}
 

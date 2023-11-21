@@ -2,9 +2,9 @@
 title: 如何設定 [!DNL AEM Forms] as a cloud service環境？
 description: 瞭解如何設定和 [!DNL AEM Forms] as a Cloud Service環境。
 exl-id: 42f53662-fbcf-4676-9859-bf187ee9e4af
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '650'
+source-wordcount: '649'
 ht-degree: 16%
 
 ---
@@ -29,7 +29,7 @@ ht-degree: 16%
 
 * **AEM管理員**：AEM管理員可協助進行整體設定，例如設定使用者、強化環境、設定資料來源、設定電子郵件和協力廠商軟體。 AEM管理員也可協助進行整合，例如與Adobe Analytics、Adobe Target和Adobe Sign整合。
 
-* **一般使用者**：一般使用者與已發佈的表單互動並提交表單、簽署已提交的表單、透過入口網站追蹤已提交的應用程式，並接收個人化通訊。
+* **一般使用者**：使用者與已發佈的表單互動並提交表單、簽署已提交的表單、透過入口網站追蹤已提交的應用程式，並接收個人化通訊。
 
 <!-- While onboarding to the service, assign the following AEM groups to [!DNL AEM Forms] as a Cloud Service based on their role:
 

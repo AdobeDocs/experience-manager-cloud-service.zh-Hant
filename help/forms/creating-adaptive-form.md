@@ -5,10 +5,10 @@ feature: Adaptive Forms
 role: User, Developer
 level: Beginner
 exl-id: 38ca5eea-793b-420b-ae60-3a0bd83caf00
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '1546'
-ht-degree: 90%
+ht-degree: 87%
 
 ---
 
@@ -100,7 +100,7 @@ Adaptive Forms allow you to create forms that are engaging, responsive, dynamic,
 
    * **表單資料模型**：[表單資料模型](data-integration.md)可讓您將來自分散資料來源的實體和服務整合到最適化表單。如果您建立的最適化表單是對多個資料來源擷取和寫入資料，請選擇「表單資料模型」。
 
-   * **JSON 結構描述**：[JSON 結構描述](adaptive-form-json-schema-form-model.md)代表組織內後端系統產生或使用之資料的結構。您可以將結構描述與最適化表單建立關聯，並使用其元素將動態內容新增到最適化表單。編寫最適化表單時，可在內容瀏覽器的「資料模型物件」標籤中使用綱要的元素，且所有欄位也會新增到新建立的最適化表單中。
+   * **JSON 結構描述**：[JSON 結構描述](adaptive-form-json-schema-form-model.md)代表組織內後端系統產生或使用之資料的結構。您可以將結構描述與最適化表單建立關聯，並使用其元素將動態內容新增到最適化表單。編寫Adaptive Forms時，可在內容瀏覽器的「資料模型物件」索引標籤中使用結構描述的元素，所有欄位也會新增到已建立的Adaptive Form。
 
    系統預設會選取資料模型的所有欄位。建立最適化表單時，所有選取的資料模型欄位都會轉換成對應的最適化表單元件。精靈會為您提供核取方塊，以便您只選取要在最適化表單中包含哪些欄位。
 
@@ -124,7 +124,7 @@ Adaptive Forms allow you to create forms that are engaging, responsive, dynamic,
    * **[!UICONTROL 名稱：]**&#x200B;指定表單的名稱。存放庫中會建立具有指定名稱的節點。您開始輸入標題時，就會自動產生名稱欄位的值。您可以變更建議的值。名稱欄位只能包含字母數字字元、連字號和底線。所有無效的輸入都會以連字號取代。
    * **[!UICONTROL 路徑：]**&#x200B;指定最適化表單的儲存位置。您可以將最適化表單直接儲存在 `/content/dam/formsanddocuments`，或建立一個資料夾 (例如 `/content/dam/formsanddocuments/adaptiveforms`) 以儲存最適化表單。要使用路徑中的資料夾之前，請務必先建立該資料夾。「**[!UICONTROL 路徑：]**」欄位不會自動建立資料夾。
 
-1. 點選「**[!UICONTROL 建立]**」。此時已建立最適化表單，並在最適化表單編輯器中開啟。編輯器會顯示範本中可用的內容，這也會顯示側邊欄，以便您根據需求自訂新建立的表單。
+1. 點選「**[!UICONTROL 建立]**」。此時已建立最適化表單，並在最適化表單編輯器中開啟。編輯器會顯示範本中可用的內容，它也會顯示側邊欄，以根據需求自訂建立的表單。
 
    視最適化表單的類型而定，出現在相關聯 <!--XFA form template, XML schema or -->JSON 結構描述或表單資料模型中的表單元素，會顯示在側邊欄「**[!UICONTROL 內容瀏覽器]**」的「**[!UICONTROL 資料模型物件]**」標籤中。您也可以拖放這些元素以建置自己的最適化表單。
 

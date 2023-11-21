@@ -2,9 +2,9 @@
 title: 管理活動
 description: 「活動」主控台可讓您建立、組織和管理品牌的行銷活動
 exl-id: e7cab16d-7678-472d-b75f-7f67b303ba8d
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '1960'
+source-wordcount: '1958'
 ht-degree: 15%
 
 ---
@@ -213,7 +213,7 @@ AEM與Adobe Target同步活動時，AEM會包含名為的活動屬性 `thirdPart
 
 >[!NOTE]
 >
->在Adobe Target中建立行銷活動時，會指派名為的屬性 `thirdPartyId` 至每個行銷活動。 當您在Adobe Target中刪除行銷活動時， `thirdPartyId` 不會刪除。 您無法重複使用 `thirdPartyId` 適用於不同型別(AB、XT)的行銷活動，且無法手動移除。 為避免此問題，請為每個行銷活動命名一個唯一的名稱；因此，行銷活動名稱不能在不同行銷活動型別中重複使用。
+>在Adobe Target中建立行銷活動時，會指派名為的屬性 `thirdPartyId` 至每個行銷活動。 當您在Adobe Target中刪除行銷活動時， `thirdPartyId` 不會刪除。 您無法重複使用 `thirdPartyId` 適用於不同型別(AB、XT)的行銷活動，且無法手動移除。 為避免此問題，請為每個行銷活動命名一個唯一的名稱；行銷活動名稱不能在不同行銷活動型別中重複使用。
 >
 >如果在相同的行銷活動型別中使用相同的名稱，則會覆寫現有的行銷活動。
 >

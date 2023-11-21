@@ -5,10 +5,10 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
 exl-id: 1e812d93-4ba5-4589-b59b-2f564d754b0f
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '2301'
-ht-degree: 65%
+ht-degree: 64%
 
 ---
 
@@ -85,7 +85,7 @@ ht-degree: 65%
 
    * **表單資料模型**：[表單資料模型](data-integration.md)可讓您將來自分散資料來源的實體和服務整合到最適化表單。如果您建立的最適化表單是對多個資料來源擷取和寫入資料，請選擇「表單資料模型」。
 
-   * **JSON 結構描述**：[JSON 結構描述](adaptive-form-json-schema-form-model.md)是我們以核心元件為主的最適化表單，透過提供與 JSON 結構描述建立關聯的能力 (代表要產生或使用的資料結構)，可以與組織的後端系統緊密整合。這種關聯可讓作者使用結構描述的元素，動態地將內容新增到最適化表單。在編寫流程中，您可以在內容瀏覽器的「資料模型物件」標籤輕鬆存取綱要的元素，且所有欄位都會自動新增到任何新建立的最適化表單中。
+   * **JSON 結構描述**：[JSON 結構描述](adaptive-form-json-schema-form-model.md)是我們以核心元件為主的最適化表單，透過提供與 JSON 結構描述建立關聯的能力 (代表要產生或使用的資料結構)，可以與組織的後端系統緊密整合。這種關聯可讓作者使用結構描述的元素，動態地將內容新增到最適化表單。在編寫過程中，您可以在內容瀏覽器的資料模型物件標籤中輕鬆存取結構描述的元素，而且所有欄位都會自動新增到任何建立的調適型表單中。
 
    根據預設，系統會自動選取相關聯 JSON 結構描述的所有欄位，並轉換成對應的最適化表單元件，進而簡化編寫流程。該精靈提供額外的便利性，讓您透過核取方塊就能選擇性地選擇要在最適化表單中納入哪些欄位。
 

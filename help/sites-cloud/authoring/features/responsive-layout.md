@@ -2,9 +2,9 @@
 title: 回應式版面
 description: AEM可讓您實現頁面的回應式版面
 exl-id: 87202742-5bed-4e87-a427-456a1a0e72cc
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '1731'
+source-wordcount: '1732'
 ht-degree: 6%
 
 ---
@@ -149,7 +149,7 @@ A **配置容器** 是段落系統：
 >
 >由於版面容器是段落系統，刪除元件將會同時刪除版面格線以及容器內容納的所有元件（及其內容）。
 
-1. 如果您將滑鼠移至格點預留位置，或點選格點預留位置，就會顯示動作選單。
+1. 如果您將滑鼠移到格點預留位置上或點選格點預留位置，則會顯示動作選單。
 
    ![新增到版面容器](/help/sites-cloud/authoring/assets/responsive-layout-container.png)
 

@@ -3,10 +3,10 @@ title: 設定生產管道
 description: 了解如何設定生產管道以建置程式碼並將其部署到生產環境。
 index: true
 exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '1413'
-ht-degree: 79%
+source-wordcount: '1412'
+ht-degree: 77%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 79%
 
 >[!NOTE]
 >
->直到計畫建立完成，Git 存放庫至少有一個分支，並建立生產和中繼環境組後，才能設定生產管道。
+>直到計畫建立完成，Git存放庫至少有一個分支，並建立生產和測試環境集後，才能設定生產管道。
 
 在開始部署程式碼之前，您必須從 [!UICONTROL Cloud Manager] 設定管道設定。
 

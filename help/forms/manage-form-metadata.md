@@ -2,9 +2,9 @@
 title: 如何管理AEM Forms的中繼資料？
 description: 中繼資料可讓您更輕鬆地分類及組織資產，並幫助尋找特定資產的使用者。
 exl-id: 8527246a-37f0-4d43-a49e-1c76c265514e
-source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '1743'
+source-wordcount: '1742'
 ht-degree: 6%
 
 ---
@@ -140,7 +140,7 @@ ht-degree: 6%
      <li>HTML</li> 
      <li>PDF</li> 
      <li>兩者</li> 
-    </ul> <p>此選項僅用來限制一般使用者可在表單入口網站上看到的表單轉譯格式。</p> </td> 
+    </ul> <p>此選項僅用於限制使用者可在表單入口網站上看到表單時的表單轉譯格式。</p> </td> 
   </tr> 
   <tr> 
    <td>標記</td> 

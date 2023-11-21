@@ -1,7 +1,7 @@
 ---
 title: 什麼是調適型表單運算式？
 description: 使用最適化Forms運算式來新增自動驗證、計算，並開啟或關閉區段的可見度。
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '2698'
 ht-degree: 0%
@@ -187,7 +187,7 @@ click運算式會處理對按鈕的點選事件執行的動作。 GuideBridge開
 
 ### 必填 {#required}
 
-若要將元件設為必要，請在 **編輯** 元件對話方塊中，您可以選取選項 **標題與文字>必填**. 您也可以新增適當的必要訊息（選擇性） 。.
+若要將元件設為必要，請在 **編輯** 元件對話方塊中，您可以選取選項 **標題與文字>必填**. 您也可以新增適當的必要訊息（選擇性）。
 
 ### 驗證模式 {#validation-patterns}
 

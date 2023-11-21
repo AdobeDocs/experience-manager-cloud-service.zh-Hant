@@ -1,22 +1,22 @@
 ---
 title: 體驗稽核儀表板
-description: 了解體驗稽核如何驗證您的部署流程，並透過清楚、資訊豐富的儀表板介面協助確保部署的變更符合效能、協助工具、最佳做法和 SEO 的基線標準。
+description: 瞭解體驗稽核如何驗證您的部署流程，並透過清晰、資訊豐富的儀表板介面，協助確保部署的變更符合效能、協助工具、最佳實務和SEO的基準標準。
 exl-id: 6d33c3c5-258c-4c9c-90c2-d566eaeb14c0
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '831'
-ht-degree: 82%
+source-wordcount: '830'
+ht-degree: 73%
 
 ---
 
 # 體驗稽核儀表板 {#experience-audit-dashboard}
 
 
-了解體驗稽核如何驗證您的部署流程，並透過清楚、資訊豐富的儀表板介面協助確保部署的變更符合效能、協助工具、最佳做法和 SEO 的基線標準。
+瞭解體驗稽核如何驗證您的部署流程，並透過清晰、資訊豐富的儀表板介面，協助確保部署的變更符合效能、協助工具、最佳實務和SEO的基準標準。
 
 >[!NOTE]
 >
->此功能僅適用於[早期採用者計劃。](/help/implementing/cloud-manager/release-notes/current.md#early-adoption)
+>此功能僅適用於[早期採用者方案。](/help/implementing/cloud-manager/release-notes/current.md#early-adoption)
 >
 >如需AEMas a Cloud Service現有體驗稽核功能的詳細資訊，請參閱 [體驗稽核測試](/help/implementing/cloud-manager/experience-audit-testing.md).
 
@@ -28,7 +28,7 @@ ht-degree: 82%
 
 1. 不要引入迴歸。
 
-Cloud Manager 中的體驗稽核可確保一般使用者的網站體驗達到最高標準。
+Cloud Manager中的體驗稽核可確保使用者在網站上的體驗達到最高標準。
 
 稽核結果會提供資訊，可讓部署管理員查看目前和先前分數之間的分數和變更。此深入分析對於判斷是否有會於目前部署引入的迴歸十分有用。
 

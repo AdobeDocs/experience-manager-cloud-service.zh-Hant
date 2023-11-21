@@ -2,10 +2,10 @@
 title: SPA 簡介和逐步解說
 description: 本文章介紹 SPA 的概念，並逐步解說如何使用基本 SPA 應用程式進行編寫，說明它與基礎 AEM SPA 編輯器的關係。
 exl-id: 8dad48d5-fa90-467c-8bec-e4b76e057f80
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '2066'
-ht-degree: 94%
+source-wordcount: '2065'
+ht-degree: 93%
 
 ---
 
@@ -130,7 +130,7 @@ SPA 背後的主要概念是減少對伺服器呼叫和依賴，以儘量減少�
 
 ## SPA 應用程式和 AEM SPA 編輯器 {#spa-apps-and-the-aem-spa-editor}
 
-體驗 SPA 對於一般使用者的行為再查看 SPA 頁面，有助於更好地了解 SAP 應用程式如何與 AEM 中的 SPA 編輯器搭配運作。
+體驗SPA如何為使用者運作，然後檢查SPA頁面，有助於更清楚瞭解SAP應用程式如何在AEM中搭配SPA編輯器運作。
 
 ### 使用 SPA 應用程式 {#using-an-spa-application}
 

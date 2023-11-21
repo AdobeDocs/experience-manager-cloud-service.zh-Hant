@@ -2,10 +2,10 @@
 title: New Relic One
 description: 了解適用於 AEM as a Cloud Service 的 New Relic One 應用程式效能監控 (APM) 服務以及如何存取它。
 exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '1728'
-ht-degree: 93%
+source-wordcount: '1726'
+ht-degree: 92%
 
 ---
 
@@ -120,7 +120,7 @@ Adobe 非常重視應用程式的監控、可用性和效能。AEM as a Cloud Se
 
 ## 偵錯 New Relic One Access {#troubleshooting}
 
-如果您被新增為 New Relic One 使用者，如章節中所述[管理 New Relic One 使用者](#manage-users)並且找不到原始帳戶確認電子郵件，請按照以下步驟操作。
+如果您是依照一節所述新增為New Relic One使用者 [管理New Relic One使用者](#manage-users) 且無法依照下列步驟找到原始帳戶確認電子郵件。
 
 1. 瀏覽 New Relic 至 [`login.newrelic.com/login`](https://login.newrelic.com/login) 登入頁面的概覽頁面。
 

@@ -2,9 +2,9 @@
 title: ContextHub JavaScript API參考
 description: 將ContextHub元件新增至頁面後，指令碼即可使用ContextHub JavaScript API
 exl-id: ec35bef5-610c-4e85-a43a-d4201b5eb03e
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '4612'
+source-wordcount: '4613'
 ht-degree: 2%
 
 ---
@@ -219,7 +219,7 @@ A `boolean` 值：
 
 ##### 參數 {#parameters-getkeys}
 
-* **`includeInternals`：** 值 `true` 結果中包含內部使用的索引鍵。 這些鍵以底線(`_`)個字元。 預設值為 `false`。
+* **`includeInternals`：** 值 `true` 在結果中包含內部使用的索引鍵。 這些鍵以底線(`_`)個字元。 預設值為 `false`。
 
 ##### 傳回 {#returns-getkeys}
 
@@ -242,7 +242,7 @@ A `boolean` 值：
 
 ##### 參數 {#parameters-gettree}
 
-* `includeInternals:` 值 `true` 結果中包含內部使用的索引鍵/值配對。 此資料的鍵值以底線(`_`)個字元。 預設值為 `false`。
+* `includeInternals:` 值 `true` 在結果中包含內部使用的索引鍵/值配對。 此資料的鍵值以底線(`_`)個字元。 預設值為 `false`。
 
 ##### 傳回 {#returns-gettree}
 

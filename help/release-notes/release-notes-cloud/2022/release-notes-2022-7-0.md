@@ -2,7 +2,7 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2022.7.0 版發行說明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2022.7.0 版發行說明。'
 exl-id: b339ab48-e836-4589-a573-9c50917b9280
-source-git-commit: d6b98559e7cbe5fc5bd05d9cf37225e960e668e7
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '949'
 ht-degree: 18%
@@ -39,7 +39,7 @@ ht-degree: 18%
 
 * 此 [內容片段主控台](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console) 現在支援 [鍵盤快速鍵](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md).
 
-* AEM作為Cloud Service [網頁最佳化的影像傳遞](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html) 可透過傳遞如WebP等格式來大幅提升頁面速度。 這項新服務也提供更彈性的影像調整大小和變形選項。 所有版本的 [核心影像元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html) 允許使用此服務，並藉由按一下影像元件原則中的選項將影像傳送為WebP。
+* AEM作為Cloud Service [網頁最佳化的影像傳遞](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html) 可透過傳遞如WebP等格式來大幅提升頁面速度。 這項新服務也提供更彈性的影像調整大小和變形選項。 所有版本的 [核心影像元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html) 可讓您使用此服務，並藉由按一下影像元件原則中的選項，將影像傳遞為WebP。
 
 * AEM個人化活動現在可以使用體驗片段，以取代我們的舊版選件。 此功能：
    * 啟用移轉路徑，其中AEM內容會推廣體驗片段選件，而非舊版資料庫選件，以提供符合未來大規模個人化、樣式設定適當的內容。
@@ -54,7 +54,7 @@ ht-degree: 18%
 
 ### [!DNL Assets] 發行前通道中可用的新功能 {#prerelease-features-assets}
 
-您現在可以將Adobe Experience Manager資產設定為 [根據MIME型別限制使用者可以上傳的資產型別](/help/assets/configure-asset-upload-restrictions.md).
+您現在可以將Adobe Experience Manager Assets設定為 [根據MIME型別限制使用者可以上傳的資產型別](/help/assets/configure-asset-upload-restrictions.md).
 
 ![資產上傳限制](/help/assets/assets/asset-upload-restrictions.png)
 
@@ -89,7 +89,7 @@ ht-degree: 18%
 
 * 產品目錄擴充現在支援AEM頁面。 這可讓作者管理頁面 — 產品關聯。
 
-* 多項CIF核心元件改良
+* 各種CIF核心元件改善專案
 
 ### 錯誤修正 {#bug-fixes-cif}
 

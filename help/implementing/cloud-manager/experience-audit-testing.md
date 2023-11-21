@@ -2,10 +2,10 @@
 title: 體驗稽核測試
 description: 了解體驗稽核如何驗證您的部署過程，並幫助確保部署的變更符合效能、協助工具、最佳實務和 SEO 的基準標準。
 exl-id: 8d31bc9c-d38d-4d5b-b2ae-b758e02b7073
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '589'
-ht-degree: 95%
+source-wordcount: '588'
+ht-degree: 92%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 95%
 
 1. 不要引入迴歸。
 
-Cloud Manager 中的體驗稽核可確保一般使用者的網站體驗達到最高標準。
+Cloud Manager中的體驗稽核可確保使用者在網站上的體驗達到最高標準。
 
 稽核結果會提供資訊，可讓部署管理員查看目前和先前分數之間的分數和變更。此深入分析對於判斷是否有會於目前部署引入的迴歸十分有用。
 

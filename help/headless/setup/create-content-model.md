@@ -2,10 +2,10 @@
 title: 建立內容片段模型 - Headless 設定
 description: 針對您將建立並使用 AEM Headless 功能提供的內容，使用內容片段模型來定義該內容的結構。
 exl-id: 8e3e4d00-34d3-4d4f-bc3a-43b8a322b986
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '478'
-ht-degree: 91%
+ht-degree: 88%
 
 ---
 
@@ -44,7 +44,7 @@ ht-degree: 91%
 
 1. 當您完成模型建立後，選取 **儲存**.
 
-1. 新建立之模型的模式取決於在建立模型時是否選取&#x200B;**啟用模型**：
+1. 所建立模型的模式取決於您是否選取 **啟用模型** 建立模型時：
    * 選取 - 新模型已&#x200B;**啟用**
    * 未選取 - 新模型會以&#x200B;**草稿**&#x200B;模式建立
 

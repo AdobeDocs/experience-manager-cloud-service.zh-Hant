@@ -2,9 +2,9 @@
 title: 使用定位模式編寫目標內容
 description: 目標定位模式和Target元件提供建立體驗內容的工具
 exl-id: 8d80d867-2d0f-4ddb-8a06-f9441e6d85ce
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '5304'
+source-wordcount: '5302'
 ht-degree: 5%
 
 ---
@@ -51,7 +51,7 @@ ht-degree: 5%
 
 >[!NOTE]
 >
->在Adobe Target中建立行銷活動時，會指派名為的屬性 `thirdPartyId` 至每個行銷活動。 在Adobe Target中刪除行銷活動時，不會刪除thirdPartyId。 您無法重複使用 `thirdPartyId` 適用於不同型別(AB、XT)的行銷活動，且無法手動移除。 為避免此問題，請為每個行銷活動命名一個唯一的名稱；因此，行銷活動名稱不能在不同行銷活動型別中重複使用。
+>在Adobe Target中建立行銷活動時，會指派名為的屬性 `thirdPartyId` 至每個行銷活動。 在Adobe Target中刪除行銷活動時，不會刪除thirdPartyId。 您無法重複使用 `thirdPartyId` 適用於不同型別(AB、XT)的行銷活動，且無法手動移除。 為避免此問題，請為每個行銷活動命名一個唯一的名稱；行銷活動名稱不能在不同行銷活動型別中重複使用。
 >
 >如果在相同的行銷活動型別中使用相同的名稱，則會覆寫現有的行銷活動。
 >
