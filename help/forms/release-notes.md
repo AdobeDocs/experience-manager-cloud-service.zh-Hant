@@ -209,7 +209,7 @@ Output as a Cloud service：Output 服務可幫助您合併 XDP 範本和 XML �
 
   在先進的機器學習演演算法的支援下，Adobe Sign的政府機關身分證件流程讓全球的公司能夠確保對其接收者身分進行高品質的驗證。 現在，您可以在啟用 Adobe Sign 的最適化表格中使用政府機關身分證件驗證方法。
 
-  政府機關身分證件是優質的身分驗證方法，會指示收件者 [上傳政府機構簽發的身分證件（駕照、國民身分證、護照）的影像](https://helpx.adobe.com/tw/in/sign/using/adobesign-authentication-government-id.html)，然後評估該檔案以確保其真實性。
+  政府機關身分證件是優質的身分驗證方法，會指示收件者 [上傳政府機構簽發的身分證件（駕照、國民身分證、護照）的影像](https://helpx.adobe.com/tw/sign/using/adobesign-authentication-government-id.html)，然後評估該檔案以確保其真實性。
 
 - **支援使用表格中的簽名體驗來提交非同步的最適化表格**
 

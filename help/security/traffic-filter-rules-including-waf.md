@@ -54,7 +54,7 @@ ht-degree: 95%
 
 客戶可以透過在不同層的內容傳遞流程設定規則，以採取主動式措施減輕應用程式層攻擊 (第 7 層)。
 
-例如，在 Apache 層，客戶可以設定 [Dispatcher 模組](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#configuring-access-to-content-filter)或 [ModSecurity](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/modsecurity-crs-dos-attack-protection.html?lang=en) 以限制對特定內容的存取。
+例如，在 Apache 層，客戶可以設定 [Dispatcher 模組](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=zh-Hant#configuring-access-to-content-filter)或 [ModSecurity](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/modsecurity-crs-dos-attack-protection.html?lang=zh-Hant) 以限制對特定內容的存取。
 
 如本文所述，可以使用 Cloud Manager 的設定管道將流量篩選器規則部署到 Adobe Managed CDN。除了根據 IP 位址、路徑和標頭等屬性的流量篩選規則，或根據設定速率限制的規則之外，客戶也可以授權稱為 WAF 規則的強大流量篩選規則子類別。
 
@@ -672,7 +672,7 @@ data:
 
 ## 教學課程 {#tutorial}
 
-[完成教學課程 ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview.html) 以獲得有關流量篩選規則的實用知識和經驗。
+[完成教學課程 ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview.html)以獲得有關流量篩選規則的實用知識和經驗。
 
 本教學課程將引導您完成：
 

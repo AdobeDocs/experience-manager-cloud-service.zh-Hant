@@ -26,7 +26,7 @@ ht-degree: 94%
 
 >[!NOTE]
 >
->AEM 6.4 的延伸支援已結束。請參閱我們的 [技術支援期間](https://helpx.adobe.com/support/programs/eol-matrix.html). 請到[這裡](https://experienceleague.adobe.com/docs/?lang=en)尋找支援的版本。
+>AEM 6.4 的延伸支援已結束。請參閱我們的 [技術支援期間](https://helpx.adobe.com/tw/support/programs/eol-matrix.html). 請到[這裡](https://experienceleague.adobe.com/docs/?lang=en)尋找支援的版本。
 
 
 >[!IMPORTANT]
@@ -226,4 +226,4 @@ ht-degree: 94%
 
 >[!MORELIKETHIS]
 >
->* [整合  [!DNL Workfront for Experience Manager enhanced connector]  與 Experience Manager 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/integrations/workfront-integrations.html?lang=en)
+>* [整合  [!DNL Workfront for Experience Manager enhanced connector]  與 Experience Manager 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/integrations/workfront-integrations.html?lang=zh-Hant)

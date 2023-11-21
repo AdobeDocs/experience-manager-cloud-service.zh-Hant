@@ -3,14 +3,14 @@ title: 搜尋最佳實務 [!DNL Adobe Experience Manager] as a [!DNL Cloud Servi
 description: 搜尋、尋找及擷取應用程式中資產的中繼資料的最佳做法。
 contentOwner: KK
 exl-id: 446692de-5cea-4dbd-a98e-ec5177c7017e
-source-git-commit: b3b2cc516743243fbfdcf6189bfd851a1272bf78
+source-git-commit: 47003c9aa0faefc01a9935c53a5a78938c37cf66
 workflow-type: tm+mt
-source-wordcount: '2520'
+source-wordcount: '2521'
 ht-degree: 3%
 
 ---
 
-# AEM搜尋最佳實務
+# AEM Assets搜尋最佳實務
 
 [!DNL Adobe Experience Manager Assets] 提供強大的資產搜尋方法，協助您實現更高的內容速度。 有時候，尋找正確的資產可能會很困難且耗時。 因此，搜尋中的資產功能 [!DNL Adobe Experience Manager Assets] 是使用數位資產管理系統的關鍵所在 — 無論是供創意人員進一步使用、供業務使用者和行銷人員健全管理資產，還是DAM管理員管理。
 
