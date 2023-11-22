@@ -5,15 +5,15 @@ contentOwner: KK
 mini-toc-levels: 3
 feature: Asset Management,Publishing,Collaboration,Asset Processing
 role: User,Architect,Admin
-source-git-commit: bd0981b262f645653723f1b35d871808506d47ba
+exl-id: 40f63933-4f4e-4318-8d42-4b5c9b01f7cd
+source-git-commit: 237b4a8e01af74dbaac0ba1715b5fa95c931be7c
 workflow-type: tm+mt
 source-wordcount: '182'
-ht-degree: 4%
+ht-degree: 6%
 
 ---
 
-
-# 偵測重複的資產 {#detect-duplicate-assets}
+# 偵測重複資產 {#detect-duplicate-assets}
 
 如果DAM使用者上傳一個或多個已存在於存放庫中的資產， [!DNL Experience Manager] 會偵測重複並通知使用者。 根據預設，重複資料偵測會停用，因為這會根據存放庫的大小和上傳的資產數量產生效能影響。
 
@@ -43,4 +43,3 @@ ht-degree: 4%
 >[!NOTE]
 >
 >當您將資產上傳到存放庫時，Experience Manager會偵測重複並通知您前100個重複資產的情況。
-

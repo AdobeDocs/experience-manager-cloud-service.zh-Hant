@@ -2,10 +2,10 @@
 title: 郵件服務的 OAuth2 支援
 description: Adobe Experience Manager as a Cloud Service 對郵件服務的 Oauth2 支援
 exl-id: 93e7db8b-a8bf-4cc7-b7f0-cda481916ae9
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: c8e8a1c862784976094391d567fac0f9122af8b4
 workflow-type: tm+mt
-source-wordcount: '679'
-ht-degree: 98%
+source-wordcount: '712'
+ht-degree: 92%
 
 ---
 
@@ -29,10 +29,12 @@ AEM as a Cloud Service 為其整合的郵件服務提供 OAuth2 支援，以允�
 1. 前往建立的應用程式，然後選取「 」 **API許可權**.
 1. 按一下「**新增權限** > **Graph 權限** > **委派的權限**」。
 1. 為您的應用程式選取以下權限，然後按一下「**新增權限**」：
+
+   >[!NOTE]
+   >
+   >許可權設定可能會隨著時間而改變。 如果這些功能無法如預期運作，請搭配Microsoft使用。
+
    * `https://outlook.office.com/SMTP.Send`
-   * `https://graph.microsoft.com/Mail.Read`
-   * `https://graph.microsoft.com/Mail.Send`
-   * `https://graph.microsoft.com/User.Read`
    * `openid`
    * `offline_access`
    * `email`
@@ -134,16 +136,18 @@ AEM as a Cloud Service 為其整合的郵件服務提供 OAuth2 支援，以允�
 
 1. 填寫 `authUrl`、`tokenUrl` 和 `refreshURL`，並按照上一節中的描述建構它們。
 1. 將以下範圍新增到設定中：
+
+   >[!NOTE]
+   >
+   >範圍可能隨時間演變。 如果這些功能無法如預期運作，請搭配Microsoft使用。
+
    * `https://outlook.office.com/SMTP.Send`
-   * `https://graph.microsoft.com/Mail.Read`
-   * `https://graph.microsoft.com/Mail.Send`
-   * `https://graph.microsoft.com/User.Read`
    * `openid`
    * `offline_access`
    * `email`
    * `profile`
-1. 建立 OSGI 屬性檔案 `called com.day.cq.mailer.DefaultMailService.cfg.json`
-(在 `/apps/<my-project>/osgiconfig/config` 下方)，並使用以下語法：`smtp.host` 和 `smtp.port` 值會反映出進階網路設定，如[電子郵件服務教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/email-service.html?lang=zh-Hant)中所述。
+1. 建立OSGI屬性檔案 `called com.day.cq.mailer.DefaultMailService.cfg.json`
+在 `/apps/<my-project>/osgiconfig/config` 並使用下列語法。 `smtp.host` 和 `smtp.port` 值會反映出進階網路設定，如[電子郵件服務教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/email-service.html?lang=zh-Hant)中所述。
 
    ```
    {
