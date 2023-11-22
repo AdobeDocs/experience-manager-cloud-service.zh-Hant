@@ -2,7 +2,7 @@
 title: 如何產生AEM Forms的記錄檔案(DoR)？
 description: 瞭解如何產生最適化Forms的記錄檔案(DoR)範本。
 exl-id: 16d07932-3308-4b62-8fa4-88c4e42ca7b6
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 00a905a08de1c14ef0ded7475d2f95abacc50af1
 workflow-type: tm+mt
 source-wordcount: '4139'
 ht-degree: 4%
