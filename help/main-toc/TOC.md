@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的運作方式以及該軟體可以為您做哪些事。
 breadcrumb-title: 使用手冊
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 219eb2544dbac8ac5104be4ef8eb1bae996d95f0
+source-git-commit: 700d07e941dafd8dadd8f7abbfc10b92cb7e8144
 workflow-type: tm+mt
-source-wordcount: '4384'
-ht-degree: 100%
+source-wordcount: '4390'
+ht-degree: 99%
 
 ---
 
@@ -680,6 +680,7 @@ ht-degree: 100%
    + Screens as a Cloud Service 概觀 {#overview}
       + [簡介](/help/screens-cloud/introduction/introduction.md)
       + [了解角色定義](/help/screens-cloud/introduction/personas-screens-cloud.md)
+      + [Adobe Analytics與Screens Cloud整合](/help/screens-cloud/introduction/adobe-analytics-integration-with-screens.md)
    + 開始使用 Screens as a Cloud Service {#onboarding-screens-cloud}
       + [首次登入](/help/screens-cloud/onboarding-screens-cloud/first-time-login-screens-cloud.md)
       + 在 Cloud Manager 中將 Screens 程式新增為附加元件{#adding-screens-addon}
