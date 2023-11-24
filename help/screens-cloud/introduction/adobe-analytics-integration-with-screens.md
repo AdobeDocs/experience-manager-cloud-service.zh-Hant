@@ -1,5 +1,5 @@
 ---
-title: Adobe Analytics與AEM Screens整合
+title: Adobe Analytics與AEM Screens Cloud整合
 seo-title: Adobe Analytics Integration with AEM Screens
 description: 請詳閱本頁，瞭解開箱即用的AEM Screens與Adobe Analytics整合，並為您提供播放證明。
 seo-description: Follow this page to learn about out of the box integration of AEM Screens with Adobe Analytics and provides you with a proof of play.
@@ -12,14 +12,15 @@ discoiquuid: b1a0e00e-0368-42c9-8bcd-5f00b4d0990c
 docset: aem65
 role: Admin, Developer
 level: Intermediate
-source-git-commit: bf0a841a5cd5eb278fd3d59484c84d1cee172b4e
+exl-id: e22242ce-e5ce-4486-bba4-e6a89ac4fb5e
+source-git-commit: 75d147886c8151f8b8ac41af907e17b5deff5a9c
 workflow-type: tm+mt
-source-wordcount: '418'
+source-wordcount: '419'
 ht-degree: 0%
 
 ---
 
-# Adobe Analytics與AEM Screens整合 {#adobe-analytics-integration-with-aem-screens}
+# Adobe Analytics與AEM Screens Cloud整合 {#adobe-analytics-integration-with-aem-screens}
 
 本節涵蓋下列主題：
 
@@ -54,18 +55,15 @@ AEM Screens客戶想要瞭解內容在何時顯示，以及顯示時間（彙總
 
 ![與Adobe Analytics整合](/help/screens-cloud/assets/analytics-architecture.png)
 
-## 在AEM Screens雲端中啟用Adobe Analytics {#enabling-adobe-analytics-in-aem-screens-cloud}
+## 在AEM Screens Cloud中啟用Adobe Analytics {#enabling-adobe-analytics-in-aem-screens-cloud}
 
 請聯絡您的Adobe關係管理員，以在Screens Cloud中啟用Adobe分析。
 
-## Screens Analytics：啟用流程 {#screens-analytics-enablement-flow}
-
->[!CAUTION]
->
->在您設定屬性之前，請聯絡您的Adobe關係管理員以建立票證以取得 **Analytics API金鑰** 和 **分析專案** 與AEM Screens搭配使用。
-
-## 在AEM Screens中使用Adobe Analytics服務 {#using-adobe-analytics-service-in-aem-screens}
+## 在AEM Screens Cloud中使用Adobe Analytics服務 {#using-adobe-analytics-service-in-aem-screens}
 
 此情境會透過韌體和Instrument Screens核心元件中分析服務的REST呼叫叫用Analytics API，以明確建立和傳送特定使用案例的特定事件，同時允許擴充功能，讓任何自訂訊息可從自訂開發頻道傳送到Analytics。
 
 Analytics事件會離線儲存在indexedDB中，並在稍後加入區塊並傳送至雲端。
+
+>[!NOTE]
+>若要進一步瞭解事件的順序和標準資料模型，請參閱 [為AEM Screens設定Adobe Analytics](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/administering/analytics-integration/configuring-adobe-analytics-aem-screens.html) 以取得詳細資訊。
