@@ -3,9 +3,9 @@ title: 如何為最適化表單啟用Adobe Analytics？
 description: Experience Cloud Setup Automation 可協助將 Adobe Analytics 連接到最適化表單，以追蹤關於訪客互動和參與度的深入見解。
 keywords: 使用 Experience Cloud Setup Automation 為最適化表單啟用 Adobe Analytics，啟用Forms中的Adobe Analytics、Adaptive Forms中的Adobe Analytics、Forms Analytics整合、Forms和Adobe Analytics
 exl-id: 0e1aa040-08b4-4c1a-b247-ad6fff410187
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: fa107ee89deb217ada2cfbcccb4602a7a6aff125
 workflow-type: tm+mt
-source-wordcount: '1593'
+source-wordcount: '1576'
 ht-degree: 59%
 
 ---
@@ -161,14 +161,13 @@ Experience Cloud設定自動化需要 **Adobe Analytics授權**， **資料收�
 
 1. 新增 `customfooterlibs.html` 檔案。
 
-       ```
-       // customheaderlibs.html
-       &lt;sly data-sly-use.page=&quot;com.adobe.cq.wcm.core.components.models.Page&quot;>
-       &lt;sly data-sly-test=&quot;${page.data &amp;&amp; page.dataLayerClientlibIncluded}&quot; data-sly-call=&quot;${clientlib.js @ categories=&amp;#39;core.forms.components.commons.v1.datalayer&amp;#39;, async=true}&quot;>&lt;/sly>
-       &lt;/sly>
-       
-       ```
-   
+   ```
+   // customheaderlibs.html
+   <sly data-sly-use.page="com.adobe.cq.wcm.core.components.models.Page">
+   <sly data-sly-test="${page.data && page.dataLayerClientlibIncluded}" data-sly-call="${clientlib.js @ categories='core.forms.components.commons.v1.datalayer', async=true}"></sly>
+   </sly>
+   ```
+
    此 `customfooterlibs.html` 用於JavaScript。
 
 1. [執行管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/enable-front-end-pipeline.html) 以部署變更。
