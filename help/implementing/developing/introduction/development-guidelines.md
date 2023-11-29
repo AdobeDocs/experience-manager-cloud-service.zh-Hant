@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service 開發指導方針
 description: 了解在 AEM as a Cloud Service 上進行開發的準則，以及它和內部部署的 AEM 以及 AMS 中的 AEM 的重要區別。
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: c706757857a528a0475f659c6b38110db6f6572a
 workflow-type: tm+mt
-source-wordcount: '2733'
+source-wordcount: '2791'
 ht-degree: 4%
 
 ---
@@ -166,7 +166,7 @@ DEBUG 3 WebApp Panel: WebApp successfully deployed
 
 雲端環境上的對話串傾印會持續收集，但目前無法自助下載。 同時，如果偵錯問題需要執行緒傾印，請聯絡AEM支援，指定確切的時間範圍。
 
-## CRX/DE Lite和開發人員主控台 {#crxde-lite-and-developer-console}
+## CRX/DE Lite和AEMas a Cloud Service開發人員主控台 {#crxde-lite-and-developer-console}
 
 ### 本機開發 {#local-development}
 
@@ -176,15 +176,19 @@ DEBUG 3 WebApp Panel: WebApp successfully deployed
 
 ### AEM as a Cloud Service 開發工具 {#aem-as-a-cloud-service-development-tools}
 
+>[!NOTE]
+>AEMas a Cloud Service開發人員控制檯不應與名稱類似的 [*Adobe Developer Console*](https://developer.adobe.com/developer-console/).
+>
+
 客戶可以在作者階層的開發環境中存取CRXDE Lite，但不能在預備或生產環境中存取。 不可變的存放庫(`/libs`， `/apps`)無法在執行階段寫入，因此嘗試這麼做將會導致錯誤。
 
-而是可以從開發人員控制檯啟動存放庫瀏覽器，為作者、發佈和預覽層級的所有環境提供存放庫的唯讀檢視。 深入瞭解存放庫瀏覽器 [此處](/help/implementing/developing/tools/repository-browser.md).
+您可以從AEMas a Cloud Service開發人員控制檯啟動存放庫瀏覽器，為作者、發佈和預覽層級的所有環境提供存放庫的唯讀檢視。 深入瞭解存放庫瀏覽器 [此處](/help/implementing/developing/tools/repository-browser.md).
 
-針對RDE、開發、測試和生產環境，開發人員控制檯提供了一組用於偵錯AEMas a Cloud Service開發人員環境的工具。 可藉由調整作者或發佈服務URL來決定URL，如下所示：
+AEMas a Cloud Service開發人員控制檯針對RDE、開發、測試和生產環境提供了一組用於偵錯AEMas a Cloud Service開發人員環境的工具。 可藉由調整作者或發佈服務URL來決定URL，如下所示：
 
 `https://dev-console/-<namespace>.<cluster>.dev.adobeaemcloud.com`
 
-作為捷徑，以下Cloud Manager CLI命令可用於根據以下所述的環境引數啟動開發人員主控台：
+作為捷徑，以下Cloud Manager CLI命令可用於根據以下所述的環境引數啟動AEMas a Cloud Service開發人員控制檯：
 
 `aio cloudmanager:open-developer-console <ENVIRONMENTID> --programId <PROGRAMID>`
 
@@ -202,11 +206,11 @@ DEBUG 3 WebApp Panel: WebApp successfully deployed
 
 ![開發主控台3](/help/implementing/developing/introduction/assets/devconsole3.png)
 
-Developer Console也提供除錯功能，連結至Explain查詢工具：
+AEMas a Cloud Service開發人員控制檯也可用於除錯，其中包含「說明查詢」工具的連結：
 
 ![開發主控台4](/help/implementing/developing/introduction/assets/devconsole4.png)
 
-對於生產計畫，對開發人員控制檯的存取權由Admin Console中的「Cloud Manager — 開發人員角色」定義，而對於沙箱計畫，任何具有產品設定檔的使用者都可以使用Developer Console來存取AEMas a Cloud Service。 對於所有計畫，狀態傾印需要「Cloud Manager — 開發人員角色」，並且還必須在作者和發佈服務的AEM使用者或AEM管理員產品設定檔中定義存放庫瀏覽器和使用者，才能檢視來自這兩個服務的資料。 如需關於設定使用者許可權的詳細資訊，請參閱 [Cloud Manager檔案](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html).
+對於生產計畫，AEMas a Cloud Service開發人員控制檯的存取權由Adobe Admin Console中的「Cloud Manager — 開發人員角色」定義，而對於沙箱計畫，AEMas a Cloud Service開發人員控制檯則可供任何擁有產品設定檔的使用者存取AEMas a Cloud Service。 對於所有計畫，狀態傾印需要「Cloud Manager — 開發人員角色」，並且還必須在作者和發佈服務的AEM使用者或AEM管理員產品設定檔中定義存放庫瀏覽器和使用者，才能檢視來自這兩個服務的資料。 如需關於設定使用者許可權的詳細資訊，請參閱 [Cloud Manager檔案](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html).
 
 ### 效能監控 {#performance-monitoring}
 
