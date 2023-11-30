@@ -3,10 +3,10 @@ title: 如何為最適化表單設定提交動作?
 description: 最適化表單提供多個提交動作。提交動作會定義提交之後處理最適化表單的方式。您可以使用內建的提交動作或建立您自己的提交動作
 keywords: 如何選取最適化表單的提交動作、將最適化表單連線至sharepoint清單、將最適化表單連線至sharepoint檔案庫、將最適化表單連線至表單資料模型
 exl-id: 495948e8-30a7-4e7c-952f-c71de15520f0
-source-git-commit: 24b0871e75280d0125c13b1605c0e8b5e555c8e7
+source-git-commit: 6ebc40b501472025cafffa258e253a53139a0301
 workflow-type: tm+mt
-source-wordcount: '3634'
-ht-degree: 91%
+source-wordcount: '4063'
+ht-degree: 86%
 
 ---
 
@@ -107,10 +107,9 @@ ht-degree: 91%
 
 「**[!UICONTROL 提交到 SharePoint]**」提交動作會將最適化表單與 Microsoft® SharePoint 儲存空間建立連結。您可以將表單資料檔案、附件或記錄文件提交到連結的 Microsoft® Sharepoint 儲存空間。
 
-<!--
-Using Submit to SharePoint, you can:
-* [Connect an Adaptive Form to SharePoint Document Library](#connect-af-sharepoint-doc-library)
-* [Connect an Adaptive Form to SharePoint List](#connect-af-sharepoint-list) -->
+使用提交至SharePoint，您可以：
+* [將最適化表單連線至SharePoint檔案庫](#connect-af-sharepoint-doc-library)
+* [將最適化表單連線至SharePoint清單](#connect-af-sharepoint-list)
 
 ### 將最適化表單連線至SharePoint檔案庫 {#connect-af-sharepoint-doc-library}
 
@@ -169,61 +168,57 @@ Using Submit to SharePoint, you can:
 當您提交表單時，資料會儲存在指定的Microsoft® Sharepoint檔案庫儲存空間中。
 儲存資料的資料夾結構是 `/folder_name/form_name/year/month/date/submission_id/data`。
 
-<!--
+### 將最適化表單連線至Microsoft® SharePoint清單 {#connect-af-sharepoint-list}
 
-### Connect an Adaptive Form to Microsoft® SharePoint List {#connect-af-sharepoint-list}
-
-<span class="preview"> This is a pre-release feature and accessible through our [pre-release channel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
+<span class="preview">這是一項預先發佈功能，可透過我們的[預先發佈管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features)存取。</span>
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424820/connect-aem-adaptive-form-to-sharepointlist/?quality=12&learn=on)
 
-To use the [!UICONTROL Submit to SharePoint List] Submit Action in an Adaptive Form:
+若要使用 [!UICONTROL 提交至SharePoint清單] 以最適化表單提交動作：
 
-1. [Create a SharePoint List Configuration](#create-sharepoint-list-configuration): It connects AEM Forms to your Microsoft® Sharepoint List Storage.
-1. [Use the Submit using Form Data Model in an Adaptive Form](#use-submit-using-fdm): It connects your Adaptive Form to configured Microsoft® SharePoint.
+1. [建立SharePoint清單設定](#create-sharepoint-list-configuration)：它會將AEM Forms連線至您的Microsoft® Sharepoint清單儲存空間。
+1. [在最適化表單中使用表單資料模型提交](#use-submit-using-fdm)：此動作會將您的最適化表單連線至設定的Microsoft® SharePoint。
 
-#### Create a SharePoint List Configuration {#create-sharepoint-list-configuration}
+#### 建立SharePoint清單設定 {#create-sharepoint-list-configuration}
 
-To connect AEM Forms to your Microsoft&reg; Sharepoint List:
+若要將AEM Forms連線至您的Microsoft®Sharepoint清單：
 
-1. Go to **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** >  **[!UICONTROL Microsoft® SharePoint]**.   
-1. Select a **Configuration Container**. The configuration is stored in the selected Configuration Container. 
-1. Click **[!UICONTROL Create]** > **[!UICONTROL SharePoint List]** from the drop-down list. The SharePoint configuration wizard appears.  
-1. Specify the **[!UICONTROL Title]**, **[!UICONTROL Client ID]**, **[!UICONTROL Client Secret]** and **[!UICONTROL OAuth URL]**. For information on how to retrieve Client ID, Client Secret, Tenant ID for OAuth URL, see [Microsoft&reg; Documentation](https://learn.microsoft.com/en-us/graph/auth-register-app-v2).
-    * You can retrieve the `Client ID` and `Client Secret` of your app from the Microsoft&reg; Azure portal.
-    * In the Microsoft&reg; Azure portal, add the Redirect URI as `https://[author-instance]/libs/cq/sharepointlist/content/configurations/wizard.html`. Replace `[author-instance]` with the URL of your Author instance.
-    * Add the API permissions `offline_access` and `Sites.Manage.All` in the **Microsoft® Graph** tab to provide read/write permissions. Add `AllSites.Manage` permission in the **Sharepoint** tab to interact remotely with SharePoint data.
-    * Use OAuth URL: `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`. Replace `<tenant-id>` with the `tenant-id` of your app from the Microsoft&reg; Azure portal.
+1. 前往 **[!UICONTROL 工具]** > **[!UICONTROL Cloud Service]** >  **[!UICONTROL Microsoft® SharePoint]**.
+1. 選取一個&#x200B;**設定容器**。設定會儲存在選取的設定容器中。
+1. 按一下 **[!UICONTROL 建立]** > **[!UICONTROL SharePoint清單]** 下拉式清單中的。 此時會顯示 SharePoint 設定精靈。
+1. 指定「**[!UICONTROL 標題]**」、「**[!UICONTROL 用戶端 ID]**」、「**[!UICONTROL 用戶端密碼]**」和「**[!UICONTROL OAuth URL]**」。如需有關如何擷取 OAuth URL 之用戶端 ID、用戶端密碼、租用戶 ID 的資訊，請參閱 [Microsoft® 文件](https://learn.microsoft.com/en-us/graph/auth-register-app-v2)。
+   * 您可以從 Microsoft® Azure 入口網站擷取應用程式的 `Client ID` 和 `Client Secret`。
+   * 在 Microsoft® Azure 入口網站中，將重新導向 URI 新增為 `https://[author-instance]/libs/cq/sharepointlist/content/configurations/wizard.html`。以作者執行個體的 URL 取代 `[author-instance]`。
+   * 新增API許可權 `offline_access` 和 `Sites.Manage.All` 在 **Microsoft® Graph** 索引標籤以提供讀取/寫入許可權。 新增 `AllSites.Manage` 中的許可權 **Sharepoint** 索引標籤以與SharePoint資料進行遠端互動。
+   * 使用 OAuth URL：`https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`。從 Microsoft® Azure 入口網站，以應用程式的 `tenant-id` 取代 `<tenant-id>`。
 
-      >[!NOTE]
-      >
-      > The **client secret** field is mandatory or optional depends upon your Azure Active Directory application configuration. If your application is configured to use a client secret, it is mandatory to provide the client secret.
+     >[!NOTE]
+     >
+     > **用戶端密碼**&#x200B;欄位為必填或選用，取決於您的 Azure Active Directory 應用程式設定。如果您的應用程式設定為使用用戶端密碼，就必須提供用戶端密碼。
 
-1. Click **[!UICONTROL Connect]**. On a successful connection, the `Connection Successful` message appears.
-1. Select **[!UICONTROL SharePoint Site]** and **[!UICONTROL SharePoint List]** from the drop-down list.
-1. Tap **[!UICONTROL Create]** to create the cloud configuration for the Microsoft® SharePointList.
+1. 按一下「**[!UICONTROL 連結]**」。連結成功後，就會顯示 `Connection Successful` 訊息。
+1. 選取 **[!UICONTROL SharePoint網站]** 和 **[!UICONTROL SharePoint清單]** 下拉式清單中的。
+1. 點選 **[!UICONTROL 建立]** 以建立Microsoft® SharePointList的雲端設定。
 
 
-#### Use the Submit using Form Data Model in an Adaptive Form {#use-submit-using-fdm}
+#### 在最適化表單中使用表單資料模型提交 {#use-submit-using-fdm}
 
-You can use the created SharePoint List configuration in an Adaptive Form, to save data or generated Document of Record in a SharePoint List folder. Perform the following steps to use a SharePoint List storage configuration in an Adaptive Form as:
+您可以在調適型表單中使用已建立的SharePoint清單設定，以在SharePoint清單中儲存資料或產生的記錄檔案。 執行以下步驟，在最適化表單中使用SharePoint清單：
 
-1. [Create a Form Data Model using Microsoft® SharePoint List configuration](/help/forms/create-form-data-models.md)
-1. [Configure the Form Data Model to retrieve and send data](/help/forms/work-with-form-data-model.md#configure-services)
-1. [Create an Adaptive Form](/help/forms/creating-adaptive-form-core-components.md)
-1. [Configure Submit action using a Form Data Model](/help/forms/configuring-submit-actions.md#submit-using-form-data-model)
+1. [使用Microsoft® SharePoint清單設定建立表單資料模型](/help/forms/create-form-data-models.md)
+1. [設定表單資料模型以擷取及傳送資料](/help/forms/work-with-form-data-model.md#configure-services)
+1. [建立最適化表單](/help/forms/creating-adaptive-form-core-components.md)
+1. [使用表單資料模型設定提交動作](/help/forms/configuring-submit-actions.md#submit-using-form-data-model)
 
-When you submit the form, the data is saved in the specified Microsoft&reg; Sharepoint List Storage. 
+提交表單時，資料會儲存在指定的Microsoft® Sharepoint清單儲存空間中。
 
 >[!NOTE]
 >
-> In Microsoft® SharePoint List, the following column types are not supported:
-> * image column
-> * metadata column
-> * person column
-> * external data column
-
--->
+> Microsoft® SharePoint清單不支援下列欄型別：
+> * 影像欄
+> * 中繼資料欄
+> * 人員欄
+> * 外部資料欄
 
 ## 使用表單資料模型提交 {#submit-using-form-data-model}
 
