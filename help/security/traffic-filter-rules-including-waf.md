@@ -4,8 +4,8 @@ description: 設定流量篩選規則，包括 Web 應用程式防火牆 (WAF) �
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 source-git-commit: 8407f3142de78ee792bdece327734dd02a4f234b
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '3388'
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 0%
 
 流量篩選規則可以透過 Cloud Manager 設定管道部署到生產 (非沙箱) 程式中的開發、中繼和生產環境類型。未來將推出對 RDE 的支援。
 
-[逐步說明教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview.html) 以快速建立有關此功能的具體專業知識。
+[按照教學課程進行操作](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview.html)，快速建立有關此功能的具體專業知識。
 
 ## 本文的結構方式 {#how-organized}
 
@@ -113,14 +113,14 @@ ht-degree: 0%
 
 1. 對於 RDE 以外的環境類型，請在 Cloud Manager 中建立鎖定目標的部署設定管道。
 
-   * [請參閱設定生產管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md).
-   * [請參閱設定非生產管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md).
+   * [參閱設定生產管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)。
+   * [參閱設定非生產管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)。
 
 若為 RDE，會使用命令列，但目前不支援 RDE。
 
 **附註**
 
-* 您可以使用 `yq` 在本機驗證組態檔的YAML格式(例如， `yq cdn.yaml`)。
+* 您可以使用 `yq` 在本機驗證設定檔的 YAML 格式 (例如 `yq cdn.yaml`)。
 
 ## 流量篩選規則語法 {#rules-syntax}
 
@@ -192,7 +192,7 @@ data:
 
 | **屬性** | **類型** | **說明** |
 |---|---|---|
-| reqProperty | `string` | 要求屬性。<br><br>之一：<br><ul><li>`path`：傳回不含查詢引數的URL完整路徑。</li><li>`queryString`：傳回URL的查詢部分</li><li>`method`：傳回要求中所使用的 HTTP 方法。</li><li>`tier`：返回其中之一`author`、`preview`或`publish`。</li><li>`domain`：傳回小寫的網域屬性 (如 `Host` 標頭的定義)</li><li>`clientIp`：傳回用戶端 IP 位址。</li><li>`clientCountry`：傳回兩個字母的代碼 ([https://en.wikipedia.org/wiki/Regional_indicator_symbol](https://en.wikipedia.org/wiki/Regional_indicator_symbol) 識別客戶位於哪個國家。</li></ul> |
+| reqProperty | `string` | 要求屬性。<br><br>之一：<br><ul><li>`path`：傳回不帶查詢參數的 URL 完整路徑。</li><li>`queryString`：傳回 URL 的查詢部分</li><li>`method`：傳回要求中所使用的 HTTP 方法。</li><li>`tier`：返回其中之一`author`、`preview`或`publish`。</li><li>`domain`：傳回小寫的網域屬性 (如 `Host` 標頭的定義)</li><li>`clientIp`：傳回用戶端 IP 位址。</li><li>`clientCountry`：傳回兩個字母的代碼 ([https://en.wikipedia.org/wiki/Regional_indicator_symbol](https://en.wikipedia.org/wiki/Regional_indicator_symbol) 識別客戶位於哪個國家。</li></ul> |
 | reqHeader | `string` | 傳回具有指定名稱的要求標頭 |
 | queryParam | `string` | 傳回具有指定名稱的查詢參數 |
 | reqCookie | `string` | 傳回具有指定名稱的 Cookie |
@@ -227,7 +227,7 @@ when:
 
 ### 動作結構 {#action-structure}
 
-一個 `action` 可以是指定動作（允許、區塊或記錄）的字串，也可以是由動作型別（允許、區塊或記錄）和wafFlags和/或狀態等選項組成的物件。
+一個`action`可以是指定動作 (允許、封鎖或記錄) 的字串，也可以是由動作類型 (允許、封鎖或記錄) 以及 wafFlags 和/或狀態等選項組成的物件。
 
 **動作類型**
 
@@ -278,7 +278,7 @@ when:
 
 * 在 Cloud Manager 中定義的 IP 允許清單優先於流量篩選規則。
 
-* WAF規則符合專案只會顯示在CDN遺漏和通過次數的CDN記錄中，而不會顯示在點選中。
+* WAF 規則的符合項目只會出現在 CDN 未命中和通過的 CDN 記錄中，而非點擊的記錄中。
 
 ## 規則範例 {#examples}
 
@@ -489,10 +489,10 @@ AEM as a Cloud Service 會提供對 CDN 記錄的存取權，這對於包括快�
 
 * 任何符合規則的客戶宣告規則名稱將列於 `match` 屬性中。
 * `action` 屬性確定規則是否具有封鎖、允許或記錄的影響。
-* 如果WAF已獲授權且已啟用， `waf` attribute將列出偵測到的任何WAF旗標（例如SQLI），無論這些WAF旗標是否列在任何規則中。 這是提供深入分析要宣告的潛在新規則。
+* 如果 WAF 已獲得授權並啟用，`waf` 屬性將列出所有偵測到的任何 WAF 標幟 (例如 SQLI)，無論 WAF 標幟是否列於任何規則中。這是提供深入分析要宣告的潛在新規則。
 * 如果沒有客戶宣告的規則相符且沒有 WAF 規則相符，則 `rules` 屬性將為空。
 
-如前所述，WAF規則符合專案僅會顯示在CDN遺漏和通過次數的CDN記錄中，而非點選中。
+如前所述，WAF 規則的符合項目只會出現在 CDN 未命中和通過的 CDN 記錄中，而非點擊的記錄中。
 
 以下範例顯示了一個範例 `cdn.yaml` 和兩個 CDN 記錄條目：
 
@@ -587,7 +587,7 @@ Adobe 提供了將儀表板工具下載到您電腦上的機制，以擷取透�
 
 ## 推薦的入門規則 {#recommended-starter-rules}
 
-您可以將以下推薦的規則複製到您的 `cdn.yaml` 以開始使用。從日誌模式開始分析您的流量，在滿意之後，變更為封鎖模式。您可能想要根據網站即時流量的獨特特性修改規則。
+您可以將以下推薦的規則複製到您的 `cdn.yaml` 以開始使用。從日誌模式開始分析您的流量，在滿意之後，變更為封鎖模式。您可能想要根據網站即時流量的獨有特徵修改規則。
 
 ```
 kind: "CDN"
@@ -670,7 +670,7 @@ data:
 
 ## 教學課程 {#tutorial}
 
-[完成教學課程 ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview.html)以獲得有關流量篩選規則的實用知識和經驗。
+[完成教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview.html)以獲得有關流量篩選規則的實用知識和經驗。
 
 本教學課程將引導您完成：
 

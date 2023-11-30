@@ -5,7 +5,7 @@ exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
 source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '3594'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -54,7 +54,7 @@ AEM as a Cloud Service 提供多種類型的進階網路功能，客戶可以使
 
 如果程式範圍的彈性連接埠輸出設定準備就緒，則必須對每個環境叫用 `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` 端點，以在環境層級啟用網路以及選擇性地宣告任何連接埠轉送規則。參數可根據環境設定，以提供靈活性。
 
-應透過指定目標主機集 (名稱或 IP，以及使用連接埠) 為 80/443 以外的任何目標連接埠宣告連接埠轉送規則，但前提是不使用 http 或 https 通訊協定。透過http/https使用連線埠80/443的使用者端連線仍然必須在其連線中使用Proxy設定，才能將進階網路的屬性套用至連線。 對於每個目標主機，客戶必須將預期的目標連接埠對應到 30000 到 30999 之間的連接埠。
+應透過指定目標主機集 (名稱或 IP，以及使用連接埠) 為 80/443 以外的任何目標連接埠宣告連接埠轉送規則，但前提是不使用 http 或 https 通訊協定。透過 http/https 使用連接埠 80/443 的用戶端連線仍然必須在其連線中使用 Proxy 設定，並將進階網路的屬性套用至該連線。對於每個目標主機，客戶必須將預期的目標連接埠對應到 30000 到 30999 之間的連接埠。
 
 API 應該在幾秒鐘內回應，指示更新狀態，大約 10 分鐘後，端點的 `GET` 方法應指出進階網路已啟用。
 
@@ -195,7 +195,7 @@ ProxyPassReverse "/somepath" "https://example.com:8443"
 
 設定專用輸出 IP 位址與[彈性連接埠輸出](#configuring-flexible-port-egress-provision)同出一轍。
 
-主要區別在於流量一律從專用的、唯一的 IP 輸出。要尋找該 IP，請使用 DNS 解析器識別與 `p{PROGRAM_ID}.external.adobeaemcloud.com` 相關聯的 IP 位址。該IP位址預期不會變更，但如果將來必須變更，則會提供進階通知。
+主要區別在於流量一律從專用的、唯一的 IP 輸出。要尋找該 IP，請使用 DNS 解析器識別與 `p{PROGRAM_ID}.external.adobeaemcloud.com` 相關聯的 IP 位址。該 IP 位址預期不會變更，但如果將來必須變更，會事先通知。
 
 除了 `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` 端點中的彈性連接埠輸出支援的路由規則之外，專用輸出 IP 位址還支援 `nonProxyHosts` 參數。這可讓您宣告一組應該路由經過共用 IP 位址範圍而不是專用 IP 的主機，這可能很有用，因為經過共用 IPS 輸出的流量可能得到進一步最佳化。`nonProxyHost` URL 可能遵循 `example.com` 或`*.example.com` 的模式，其中僅在網域開頭支援萬用字元。
 
@@ -336,7 +336,7 @@ public JSONObject getJsonObject(String relativePath, String queryString) throws 
 ## 舊版專用輸出位址客戶 {#legacy-dedicated-egress-address-customers}
 
 如果在 2021.09.30 之前已為您佈建專用輸出 IP，則您的專用輸出 IP 功能僅支援 HTTP 和 HTTPS 連接埠。
-這包括 HTTP/1.1 和加密後的 HTTP/2。此外，一個專用輸出端點可以分別透過連線埠80/443上的HTTP/HTTPS與任何目標通訊。
+這包括 HTTP/1.1 和加密後的 HTTP/2。此外，一個專用輸出端點可以分別透過連接埠 80/443 上的 HTTP/HTTPS 與任何目標通訊。
 
 ## 虛擬私人網路 (VPN) {#vpn}
 
@@ -371,7 +371,7 @@ API 應該在幾秒鐘內做出回應，表明 `updating` 的狀態，大約 10 
 
 程式層級 VPN 設定可以透過叫用 `PUT /api/program/<program_id>/network/<network_id>` 端點進行更新。
 
-在初始VPN布建後，無法變更位址空間。 如果有必要，請聯絡客戶支援。此外，`kind` 參數 (`flexiblePortEgress`、`dedicatedEgressIP` 或 `VPN`) 無法修改。請聯絡客戶支援以尋求協助，描述已經建立的內容和變更的原因。
+在初始 VPN 佈建後，無法變更位址空間。如果有必要，請聯絡客戶支援。此外，`kind` 參數 (`flexiblePortEgress`、`dedicatedEgressIP` 或 `VPN`) 無法修改。請聯絡客戶支援以尋求協助，描述已經建立的內容和變更的原因。
 
 可以透過再次叫用 `PUT /program/{programId}/environment/{environmentId}/advancedNetworking` 端點來更新每個環境的路由規則，確保包括完整的設定參數集，而不是子集。套用環境更新通常需要 5-10 分鐘的時間。
 
@@ -543,7 +543,7 @@ Header always set Cache-Control private
 
 ## 額外發佈區域的進階網路設定 {#advanced-networking-configuration-for-additional-publish-regions}
 
-將額外區域新增到已設定進階網路的環境時，來自和進階網路規則相符的額外發佈區域的流量會依預設路由通過主要區域。但是，如果主要區域變成無法使用，並且在額外區域中尚未啟用進階網路，則進階網路流量會下降。如果您想要在其中一個區域發生中斷時最佳化延遲並提高可用性，則必須為其他發佈區域啟用進階網路。 以下章節會說明兩種不同的案例。
+將額外區域新增到已設定進階網路的環境時，來自和進階網路規則相符的額外發佈區域的流量會依預設路由通過主要區域。但是，如果主要區域變成無法使用，並且在額外區域中尚未啟用進階網路，則進階網路流量會下降。如果您想在其中一個區域發生中斷時將延遲最佳化並提高可用性，則有必要啟用額外發佈區域的進階網路。以下章節會說明兩種不同的案例。
 
 >[!NOTE]
 >
@@ -557,7 +557,7 @@ Header always set Cache-Control private
 
 1. 如果您已鎖定基礎結構，以便將專用的 AEM IP 位址加入允許清單，則建議暫時停用該基礎結構中的任何否決規則。如果不這樣做，有一小段時間您自己的基礎結構會拒絕來自新區域的 IP 位址的請求。請注意，如果您已經由完整網域名稱 (FQDN) 鎖定基礎結構，(例如，`p1234.external.adobeaemcloud.com`)，則沒有必要這麼做，因為所有 AEM 區域都會從相同的 FQDN 輸出進階網路流量
 1. 根據進階網路文件中的說明，可透過對 Cloud Manager Create Network Infrastructure API 的 POST 呼叫為次要區域建立計畫範圍的網路基礎結構。承載的 JSON 設定相對於主要區域的唯一差異是區域屬性
-1. 如果您的基礎結構必須被IP鎖定以允許AEM流量，請新增符合的IP `p1234.external.adobeaemcloud.com`. 每個區域都應該有一個。
+1. 如果您的基礎結構必須由 IP 鎖定以允許 AEM 流量，請新增和 `p1234.external.adobeaemcloud.com` 相符的 IPS。每個區域都應該有一個。
 
 #### 尚未在任何區域中設定進階網路 {#not-yet-configured}
 

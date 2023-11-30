@@ -5,7 +5,7 @@ exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
 source-git-commit: 16aa0241dd954b7f66523d746827d81b956578bd
 workflow-type: tm+mt
 source-wordcount: '1379'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -15,18 +15,18 @@ ht-degree: 94%
 
 ## 發行日期 {#release-date}
 
-最新版本1.9.15的發行日期 [!DNL Workfront for Experience Manager enhanced connector] 為2023年11月17日。
+[!DNL Workfront for Experience Manager enhanced connector] 的最新版本 1.9.15 發布日期是 2023 年 11 月 17 日。
 
 ## 版本重點 {#release-highlights}
 
 [!DNL Workfront for Experience Manager enhanced connector] 的最新版本包括以下錯誤修復：
 
-* 檢視AEM資料夾清單時，對話方塊需要超過一分鐘的時間載入。
-* 已授權 [!DNL Workfront] 使用者持續收到驗證失敗錯誤記錄。
+* 查看 AEM 檔案夾清單時，對話框需要超過一分鐘才能載入。
+* 已獲授權的 [!DNL Workfront] 使用者正持續收到身份驗證失敗錯誤記錄。
 
 >[!NOTE]
 >
->AEM 6.4 的延伸支援已結束。請參閱我們的 [技術支援期間](https://helpx.adobe.com/tw/support/programs/eol-matrix.html). 請到[這裡](https://experienceleague.adobe.com/docs/?lang=en)尋找支援的版本。
+>AEM 6.4 的延伸支援已結束。請參閱我們的[技術支援期](https://helpx.adobe.com/tw/support/programs/eol-matrix.html)。請到[這裡](https://experienceleague.adobe.com/docs/?lang=en)尋找支援的版本。
 
 
 >[!IMPORTANT]
@@ -37,7 +37,7 @@ ht-degree: 94%
 
 * 使用 AEM 6.4 設定專案連結的資料夾時，Experience Manager 並未儲存「**[!UICONTROL 子資料夾]**」和「**[!UICONTROL 在產品組合的專案中建立連結的資料夾]**」欄位的值。「**[!UICONTROL 子資料夾]**」欄位的值更新為&#x200B;**[!UICONTROL 未定義的]**，而「**[!UICONTROL 在產品組合的專案中建立連結的資料夾]**」欄位的值在儲存設定之後自動更新為&#x200B;**[!UICONTROL 預設產品組合]**。
 
-* 使用傳統Workfront體驗時， **[!UICONTROL 傳送至]** 中可用的選項 **[!UICONTROL 更多]** 下拉式清單不允許您在Experience Manager中選取目標目的地。 使用「**[!UICONTROL 文件動作]**」下拉式清單時，「**[!UICONTROL 傳送至]**」選項正常運作。在使用新的 Workfront 體驗時，「**[!UICONTROL 更多]**」下拉式清單和「**[!UICONTROL 文件動作]**」下拉式清單的「**[!UICONTROL 傳送至]**」選項正常運作。
+* 在使用傳統 Workfront 體驗時，「**[!UICONTROL 更多]**」下拉式清單中的「**[!UICONTROL 傳送至]**」選項不允許您在 Experience Manager 之內選取目標目的地。使用「**[!UICONTROL 文件動作]**」下拉式清單時，「**[!UICONTROL 傳送至]**」選項正常運作。在使用新的 Workfront 體驗時，「**[!UICONTROL 更多]**」下拉式清單和「**[!UICONTROL 文件動作]**」下拉式清單的「**[!UICONTROL 傳送至]**」選項正常運作。
 
 ## 舊版本 {#previous-releases}
 

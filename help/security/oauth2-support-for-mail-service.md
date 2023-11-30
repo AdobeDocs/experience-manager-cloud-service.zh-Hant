@@ -5,7 +5,7 @@ exl-id: 93e7db8b-a8bf-4cc7-b7f0-cda481916ae9
 source-git-commit: c8e8a1c862784976094391d567fac0f9122af8b4
 workflow-type: tm+mt
 source-wordcount: '712'
-ht-degree: 92%
+ht-degree: 93%
 
 ---
 
@@ -26,7 +26,7 @@ AEM as a Cloud Service 為其整合的郵件服務提供 OAuth2 支援，以允�
    ![開始應用程式註冊流程](assets/oauth-outlook1.png)
 
 1. 根據您的要求填寫資訊，然後按一下「**註冊**」。
-1. 前往建立的應用程式，然後選取「 」 **API許可權**.
+1. 前往已建立的應用程式，然後選取「**API 權限**」。
 1. 按一下「**新增權限** > **Graph 權限** > **委派的權限**」。
 1. 為您的應用程式選取以下權限，然後按一下「**新增權限**」：
 

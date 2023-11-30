@@ -5,7 +5,7 @@ exl-id: 35950b81-6e45-4a75-bd27-8c28fd68e42e
 source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '2024'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -31,7 +31,7 @@ Adobe Experience Manager [!DNL AEM Forms] as a Cloud Service 會持續進行改�
 
 ### [!DNL Forms] 的新增功能 {#what-is-new-forms-oct-2021}
 
-- **Analytics for Adaptive Forms**：您現在可以透過Adobe Analytics for Adaptive Forms擷取及追蹤已登入和未登入（匿名）的行為，以收集使用者深入解析。 它可幫助您根據資料來進行明智的決策，以改善使用者體驗。
+- **Analytics for Adaptive Forms**：您現在可以透過 Adobe Analytics for Adaptive Forms 擷取及追蹤已登入和未登入 (匿名) 的行為，以收集使用者的深入解析。這可幫助您根據資料來進行明智的決策，以改善使用者體驗。
 
 ### [!DNL Forms] 搶鮮版頻道中可用的新功能 {#prerelease-features-forms-oct-2021}
 
@@ -52,7 +52,7 @@ Adobe Experience Manager [!DNL AEM Forms] as a Cloud Service 會持續進行改�
 
 - **在最適化表單中使用 Adobe Sign 角色**：適用於商業和企業服務等級的 Adobe Sign 可選擇擴充協議收件者的角色，而不只是簽署者，以便更符合其工作流程需求。您現在可以[啟用每個協議收件者，以便在最適化表單中設定其角色](working-with-adobe-sign.md#addsignerstoanadaptiveform)，並將簽署者設定為預設角色。
 
-- **Analytics for Adaptive Forms**：您現在可以擷取和 [透過Adobe Analytics追蹤使用者行為](integrate-aem-forms-with-adobe-analytics.md) (適用於Adaptive Forms)收集使用者深入分析。 它可幫助您根據資料來進行明智的決策，以改善使用者體驗。
+- **Analytics for Adaptive Forms**：您現在可以透過 Adobe Analytics](integrate-aem-forms-with-adobe-analytics.md) for Adaptive Forms 方式來擷取及[追蹤使用者行為，以收集使用者的深入解析。 這可幫助您根據資料來進行明智的決策，以改善使用者體驗。
 
 - **輕鬆地將 AEM Forms 連線到 Microsoft Dynamics 和 Salesforce**：此服務會提供 Microsoft Dynamics 和 Salesforce 適用的資料模型，好讓[開發人員更快且更輕鬆地將 Microsoft Dynamics 和 Salesforce 設定為最適化表單的資料來源](configure-msdynamics-salesforce.md)。
 
@@ -110,7 +110,7 @@ Adobe Experience Manager [!DNL AEM Forms] as a Cloud Service 會持續進行改�
 
 - **統一的儲存連接器：**&#x200B;使用統一的儲存連接器可將客戶管理的存放庫中的程序內資料外部化。 例如，您可以
 
-   - 啟用Forms入口網站的儲存並繼續功能，並將最適化表單草稿儲存在客戶管理的資料存放庫中。
+   - 啟用 Forms Portal 的儲存並繼續功能，並將最適化表單草稿儲存在客戶管理的資料存放庫中。
    - 將包含敏感個人資料 (SPD) 的程序內 AEM 工作流程資料 (AEM 工作流程變數資料) 儲存在客戶管理的存放庫中。
 
 - **[!DNL AEM Forms as a Cloud Service - Communications]**：[通訊 API](aem-forms-cloud-service-communications.md) 可幫助您合併 XDP 範本和 XML 資料，以產生多種格式的列印文件。 此服務可讓您以同步模式產生文件。 這些 API 可讓您建立以下用途的應用程式：
@@ -124,7 +124,7 @@ Adobe Experience Manager [!DNL AEM Forms] as a Cloud Service 會持續進行改�
 
 - **在最適化表單中使用 Adobe Sign 角色**：適用於商業和企業服務等級的 Adobe Sign 可選擇擴充協議收件者的角色，而不只是簽署者，以便更符合其工作流程需求。 您現在可以[啟用每個協議收件者，以便在最適化表單中設定其角色](working-with-adobe-sign.md#addsignerstoanadaptiveform)，並將簽署者設定為預設角色。
 
-- **Analytics for Adaptive Forms**：您現在可以透過Adaptive Forms的Adobe Analytics擷取及追蹤使用者行為，以收集使用者的深入解析。 它可幫助您根據資料來進行明智的決策，以改善使用者體驗。
+- **Analytics for Adaptive Forms**：您現在可以透過 Adobe Analytics for Adaptive Forms 方式來擷取及追蹤使用者行為，以收集使用者的深入解析。 這可幫助您根據資料來進行明智的決策，以改善使用者體驗。
 
 - **輕鬆地將 AEM Forms 連線到 Microsoft Dynamics 和 Salesforce**：此服務會提供 Microsoft Dynamics 和 Salesforce 適用的資料模型，好讓[開發人員更快且更輕鬆地將 Microsoft Dynamics 和 Salesforce 設定為最適化表單的資料來源](configure-msdynamics-salesforce.md)。
 
@@ -207,9 +207,9 @@ Output as a Cloud service：Output 服務可幫助您合併 XDP 範本和 XML �
 
 - **在啟用 Adobe Sign 的最適化表格中使用政府機關身分證件驗證方法**
 
-  在先進的機器學習演演算法的支援下，Adobe Sign的政府機關身分證件流程讓全球的公司能夠確保對其接收者身分進行高品質的驗證。 現在，您可以在啟用 Adobe Sign 的最適化表格中使用政府機關身分證件驗證方法。
+  在先進的機器學習演算法的支援下，Adobe Sign 的政府機關身分證件流程讓全球的公司能夠確保對其接收者身分進行高品質的驗證。 現在，您可以在啟用 Adobe Sign 的最適化表格中使用政府機關身分證件驗證方法。
 
-  政府機關身分證件是優質的身分驗證方法，會指示收件者 [上傳政府機構簽發的身分證件（駕照、國民身分證、護照）的影像](https://helpx.adobe.com/tw/sign/using/adobesign-authentication-government-id.html)，然後評估該檔案以確保其真實性。
+  政府機關身分證件是優質的身分驗證方法，會指示接收者[上傳政府機構簽發的身分證件 (駕照、國民身分證、護照) 的影像](https://helpx.adobe.com/tw/sign/using/adobesign-authentication-government-id.html)，然後評估該證件以確保其真實性。
 
 - **支援使用表格中的簽名體驗來提交非同步的最適化表格**
 

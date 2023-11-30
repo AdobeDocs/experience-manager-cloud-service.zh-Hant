@@ -5,7 +5,7 @@ exl-id: d1ce126e-960c-4367-b741-af709dd81010
 source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '1891'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -36,13 +36,13 @@ AEM 這麼多年來一直透過以下方式提供：
 
 >[!NOTE]
 >
->如需內部部署和託管服務版本的詳細資訊，請參閱 [AEM 6.5檔案](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=zh-Hant) .
+>如需內部部署和受管理服務版本的更多詳細資訊，請參閱「[AEM 6.5 文件](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=zh-Hant)」。
 
 ## 架構 {#architecture}
 
 >[!NOTE]
 >
->如需詳細資訊，請參閱 [架構](/help/overview/architecture.md).
+>如需詳細資訊，請參閱「[架構](/help/overview/architecture.md)」。
 
 AEM as a Cloud Service 現已具備：
 
@@ -87,11 +87,11 @@ AEM 版本更新有兩種類型：
 
 >[!TIP]
 >
->如需詳細資訊，請參閱 [AEM版本更新](/help/implementing/deploying/aem-version-updates.md).
+>如需更多詳細資訊，請參閱「[AEM 版本更新](/help/implementing/deploying/aem-version-updates.md)」。
 
 ## Cloud Manager {#cloud-manager}
 
-Adobe Cloud Manager 是 AEM as a Cloud Service 的持續升級方法不可或缺的一部分，因為它控制對您執行個體的所有更新 - 這是強制的。
+Adobe Cloud Manager 是 AEM as a Cloud Service 的持續升級方法不可或缺的一部分，因為這可控制對您執行個體的所有更新 - 這是強制的。
 
 當有新的雲端服務版本可用時，Adobe 可以觸發更新。或者，您可以使用 Cloud Manager 提供的管道觸發應用程式更新。
 
@@ -132,7 +132,7 @@ Cloud Manager 在跨多個地理區域的資料中心建立環境，使用範圍
 
 * 許多手動設定工作已變得多餘。
 
-它也與現在有很大不同：
+這也與現在有很大不同：
 
 * 確保滿足所有先決條件的評估階段；包括，例如：
 
@@ -144,7 +144,7 @@ Cloud Manager 在跨多個地理區域的資料中心建立環境，使用範圍
 
 * 部署要求：
 
-   * 程式碼更新；針對舊版AEM開發的任何客戶應用程式都必須經過審查，且可能需進行更新。
+   * 程式碼更新；為舊版 AEM 開發的任何客戶應用程式都必須審查並可能進行更新。
 
    * 內容移轉
 
@@ -156,7 +156,7 @@ Cloud Manager 在跨多個地理區域的資料中心建立環境，使用範圍
 
 >[!NOTE]
 >
->如需詳細資訊，您可從以下開始 [開發指導方針](/help/implementing/developing/introduction/development-guidelines.md) 和 [開發 — WKND教學課程](/help/implementing/developing/introduction/develop-wknd-tutorial.md).
+>如需更多詳細資訊，您可以從[開發指南](/help/implementing/developing/introduction/development-guidelines.md)和[開發 - WKND 教學課程](/help/implementing/developing/introduction/develop-wknd-tutorial.md)開始。
 
 支援 AEM as a Cloud Service 的新架構涉及對整體開發人員體驗的一些重要變更。AEM as a Cloud Service 的主要目標之一是讓有經驗的客戶 (已經在使用內部部署或做為 Adobe Managed Services 的 AEM) 盡快移轉到 AEM as a Cloud Service，而無需重寫他們的大部分自訂程式碼。但是，可能仍需要進行一些調整。
 
@@ -182,7 +182,7 @@ Web 主控台，這個管理 OSGI 套件及其關聯設定的地方，先前也�
 
 由於程式碼和內容的明確分離，開發人員可以使用特定過程來更新內容作為部署的一部分。可變內容的典型使用案例：
 
-* 標準 *預設* 屬於客戶專案一部分的內容（例如資料夾、範本、工作流程等）
+* 客戶專案內含的標準&#x200B;*預設*&#x200B;內容 (例如資料夾、範本、工作流程等)
 
 * 搜尋索引定義
 
@@ -200,13 +200,13 @@ Web 主控台，這個管理 OSGI 套件及其關聯設定的地方，先前也�
 
 >[!NOTE]
 >
->應注意，Cloud QuickStart 不允許使用所有 AEM Sites 和 AEM Assets 功能。它包含一個簡單的編寫環境，可以在其中開發和測試大部分的擴充功能。
+>應注意，Cloud QuickStart 不允許使用所有 AEM Sites 和 AEM Assets 功能。這包含一個簡單的編寫環境，可以在其中開發和測試大部分的擴充功能。
 
 ## 運作和效能 {#operations-and-performance}
 
 >[!NOTE]
 >
->如需詳細資訊，請從開始 [內容復原](/help/operations/backup.md)， [索引](/help/operations/indexing.md)、和 [其他維護任務](/help/operations/maintenance.md).
+>如需詳細資訊，請從[內容還原](/help/operations/backup.md)、[索引](/help/operations/indexing.md)和[其他維護任務](/help/operations/maintenance.md)開始。
 
 使用 AEM as a Cloud Service，此類操作是自動進行，因此不再需要中斷任何服務。
 
@@ -224,7 +224,7 @@ AEM as a Cloud Service 的操作也受到新的監控、報告和警報基礎結
 
 >[!NOTE]
 >
->另請參閱 [安全性 — IMS支援](/help/security/ims-support.md).
+>參閱「[安全 - IMS 支援](/help/security/ims-support.md)」。
 
 AEM as a Cloud Service 最重大的變更是完全整合使用 Adobe ID 以存取編寫層。
 
@@ -240,7 +240,7 @@ AEM as a Cloud Service 最重大的變更是完全整合使用 Adobe ID 以存�
 
 >[!NOTE]
 >
->如需詳細資訊，請參閱 [基本處理](/help/sites-cloud/authoring/getting-started/basic-handling.md) 是個不錯的起點。
+>如需更多詳細資訊，從[基本處理](/help/sites-cloud/authoring/getting-started/basic-handling.md)開始是最佳起點。
 
 使用過 AEM 的任何人都會非常熟悉 Sites 和 Assets 的編寫使用者介面 (UI) 的基本原理。
 
@@ -250,7 +250,7 @@ AEM as a Cloud Service 最重大的變更是完全整合使用 Adobe ID 以存�
 
 Adobe Experience Manager Sites as a Cloud Service 結合 AEM 內容管理系統與 AEM 數位資產管理的強大功能，協助您為客戶提供內容導向的個人化體驗。
 
-如需詳細資訊，請參閱 [Sites 變更](/help/sites-cloud/sites-cloud-changes.md) 的概觀。
+如需詳細資訊，請參閱 [Sites 變更](/help/sites-cloud/sites-cloud-changes.md)的概觀。
 
 ## AEM Assets {#aem-assets}
 
@@ -274,6 +274,6 @@ Adobe Experience Manager Assets as a Cloud Service 為企業提供一種雲端�
 
 >[!TIP]
 >
->當您概要瞭解AEMas a Cloud Service時，您可以檢閱 [入門歷程](/help/journey-onboarding/overview.md).
+>當您清楚了解 AEM as a Cloud Service 後，即可透過查看[上線歷程](/help/journey-onboarding/overview.md)快速上線。
 >
 >已經入門或準備好深入測試 AEM 功能？安裝 [AEM 參考示範附加元件](/help/journey-sites/demos-add-on/overview.md)以使用豐富的範例探索 AEM 的強大功能。

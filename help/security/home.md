@@ -6,7 +6,7 @@ exl-id: 17a5f951-84e4-4a15-8919-985451e3b527
 source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '384'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 94%
 
 | 使用手冊 | 說明 |
 |---|---|
-| [概觀](/help/overview/home.md) | 本指南提供Experience Manager as a Cloud Service概述，包括簡介、術語、架構等。 |
+| [概觀](/help/overview/home.md) | 本指南提供 Experience Manager as a Cloud Service 概觀，包括簡介、術語和架構等。 |
 | [發行說明](/help/release-notes/home.md) | 本指南提供 Experience Manager as a Cloud Service 最新版本的重要資訊，包括新增、過時和移除的功能，以及已知問題。 |
 | [入門歷程](/help/journey-onboarding/overview.md) | 本指南簡單扼要地說明如何開始使用 Experience Manager as a Cloud Service，包括如何取得存取權限和重要的資料保護資訊。 |
 | [Sites 使用手冊](/help/sites-cloud/home.md) | 了解如何使用及管理 Experience Manager Sites as a Cloud Service。 |
