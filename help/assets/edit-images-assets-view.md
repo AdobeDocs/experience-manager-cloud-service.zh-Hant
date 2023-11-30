@@ -3,10 +3,10 @@ title: 編輯影像
 description: 使用  [!DNL Adobe Photoshop Express]  支援的選項編輯影像，並將更新的影像另存新版。
 role: User
 exl-id: fc21a6ee-bf23-4dbf-86b0-74695a315b2a
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: e6ff21ee705a1164fdf163ce4f49064d83f149d8
 workflow-type: tm+mt
-source-wordcount: '896'
-ht-degree: 98%
+source-wordcount: '1159'
+ht-degree: 76%
 
 ---
 
@@ -79,6 +79,36 @@ ht-degree: 98%
 * 支援的影像解析度：最小 - 50 像素，最大 - 每維度 6000 像素
 
 * 支援的檔案大小上限：17MB
+
+## 使用Adobe Express內嵌編輯器編輯影像 {#edit-using-embedded-editor}
+
+[!DNL Assets view] 直接從您的資產存放庫全面編輯影像。 內嵌編輯器可讓您使用輕鬆且直覺地編輯影像 [!DNL Adobe Express]. 它會透過使用範本或修改現有資產來加快資產的可重複使用性。 您可以使用預先定義的元素，讓您的資產看起來令人驚豔，或執行快速動作，只要按幾下即可編輯您的影像。
+
+若要使用編輯影像 [!DNL Adobe Express] 內嵌編輯器，請遵循下列步驟：
+
+1. 從中選擇影像 [!DNL Experience Manager] 資產存放庫。
+1. 按一下 **[!UICONTROL 以Adobe Express開啟]**. [!DNL Adobe Express] 畫面隨即顯示。
+
+   ![Adobe Express內嵌編輯器](assets/embedded-editor.png)
+
+   您可以善用以下功能 [!DNL Adobe Express] 執行所有與影像編輯相關的動作，例如 [調整影像大小](https://helpx.adobe.com/in/express/using/resize-image.html)， [移除或變更背景顏色](https://helpx.adobe.com/in/express/using/remove-background.html)， [裁切影像](https://helpx.adobe.com/in/express/using/crop-image.html)，以及更多功能。
+
+1. 完成影像編輯後，您可以將資產下載為新資產，或將資產另存為新版本。
+
+## 使用Adobe Express建立新資產 {#create-new-embedded-editor}
+
+[!DNL Assets view] 提供使用從頭開始建立新範本的功能 [!DNL Adobe Express] 內嵌編輯器。 若要使用建立新資產 [!DNL Adobe Expresss]，請執行以下步驟：
+
+1. 瀏覽至 **[!UICONTROL 我的工作區]** 並按一下 **[!UICONTROL 建立]**. [!DNL Adobe Express] 空白畫布會顯示在 [!DNL Assets view] 使用者介面。
+1. 建立您的內容，使用 [範本](https://helpx.adobe.com/in/express/using/work-with-templates.html). 否則，請導覽至 **[!UICONTROL 您的內容]** 以修改現有內容。
+1. 完成編輯後，請按一下 **[!UICONTROL 另存為新資產]**.
+1. 指定已建立資產的目的地路徑。
+
+>[!NOTE]
+>
+>* 您只能修改 `JPEG` 和 `PNG` 格式。
+>* 資產大小應小於14 MB。
+>* 您可以將影像另存新檔 `PDF`， `JPEG`，或 `PNG` 格式。
 
 ## 使用 [!DNL Adobe Photoshop Express] 編輯影像 {#edit-using-photoshop-express}
 

@@ -3,10 +3,10 @@ title: 瞭解如何搜尋和探索中的資產 [!DNL Assets view]？
 description: 瞭解如何在AEM Assets檢視中搜尋和探索資產。 強大的搜尋功能可讓您快速探索合適的資產，協助您改善內容速度。
 role: User
 exl-id: be9597a3-056c-436c-a09e-15a03567c85a
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 224529293f87b772c150dd26ce5260a9172c8b68
 workflow-type: tm+mt
-source-wordcount: '922'
-ht-degree: 90%
+source-wordcount: '1321'
+ht-degree: 73%
 
 ---
 
@@ -141,6 +141,67 @@ What about temporarily hiding an asset (suspending search on it) from the search
 
 When userA is searching and userB add an asset that matches search results, will the asset display in search as soon as userA refreshes the page? Assuming indexing is near real-time. May not be so for bulk uploads.
 -->
+
+## 使用搜尋結果 {#work-with-search-results}
+
+您可以選取搜尋結果中顯示的資產，然後執行以下動作：
+
+* **詳細資料**：檢視和編輯資產屬性。
+
+* 按一下&#x200B;**新增到集合**：將所選資產新增到集合中。
+
+* **下載**：下載資產。
+
+* **刪除**：刪除資產。
+
+* **複製**：將資產複製到其他資料夾位置。
+
+* **移動**：將資產移動到其他資料夾位置。
+
+* **重新命名**：重新命名資產。
+
+* **指派任務**：將資產的任務指派給使用者。
+
+* **共用連結**：與其他使用者 [共用資產連結](share-links-for-assets-view.md)，以便他們可以存取和下載該資產。
+
+* **觀看**：[監視](manage-notifications-assets-view.md) 對資產執行的作業。
+
+* **顯示檔案位置**：瀏覽到資產資料夾位置。
+
+* **釘選到快速存取** :[釘選資產](my-workspace-assets-view.md) 以便以後需要時能更快地存取。所有釘選的項目都顯示在「我的工作區」的&#x200B;**快速存取**&#x200B;部分。
+
+## 設定搜尋第一個首頁 {#configuring-search-first-homepage}
+
+搜尋第一個首頁可讓您立即瀏覽各種檔案和資料夾。 它可讓您輕鬆導覽資產型別、中繼資料、智慧標籤，甚至內容本身，而不需知道確切的關鍵字。 [!DNL Assets view] 可讓您透過控制登入時應該顯示的內容，來設定首頁 [!DNL Assets view].
+
+若要設定搜尋第一個首頁，請執行下列步驟：
+
+1. 瀏覽至 **[!UICONTROL 設定]** > **[!UICONTROL 一般設定]**.
+1. 選取 **[!UICONTROL 請先搜尋]**. 它會進一步開啟搜尋優先相關設定。 您可以設定 [對齊方式](#setting-alignment-search-bar) 或 [設定背景和標誌影像](#setting-background-image-and-logo) ，屬於您的首頁。
+
+### 設定搜尋列對齊 {#setting-alignment-search-bar}
+
+[!DNL Assets view] 可讓您變更搜尋列的對齊方式。 您可以讓搜尋列顯示在中央或頂端。 選取適當的對齊方式，然後按一下 **[!UICONTROL 儲存]**.
+
+![搜尋第一個首頁對齊方式](assets/search-first-alignment.png)
+
+### 設定首頁的背景和標誌影像 {#setting-background-image-and-logo}
+
+您可以將品牌標誌和背景影像新增至您的搜尋第一個首頁。 執行以下步驟：
+
+1. 瀏覽至 **[!UICONTROL 背景和標誌影像]** 區段在 **[!UICONTROL 首頁]**.
+1. 按一下 **[!UICONTROL 取代]** 瀏覽現有資產存放庫的影像。
+1. 按一下「**[!UICONTROL 儲存]**」。[預覽](#preview-configured-homepage) 這些變更將會經過修改。
+
+### 預覽設定的首頁 {#preview-configured-homepage}
+
+您可以預覽以檢查搜尋第一個首頁的版面配置和格式。 使用 **[!UICONTROL 預覽]**，您可以修正版面配置或視需要進行修改。 若要預覽設定的首頁，請執行下列步驟：
+
+1. 按一下 **[!UICONTROL 一般設定]** 並選取 **[!UICONTROL 請先搜尋]**.
+1. 瀏覽至 **[!UICONTROL 自訂搜尋第一個首頁]** 並按一下 **[!UICONTROL 預覽]**. 切換到 **[!UICONTROL 深色主題]** 按鈕以用深色或淺色主題預覽首頁。
+1. 按一下 **[!UICONTROL 關閉]** 以關閉預覽畫面。
+
+   ![搜尋第一個首頁預覽](assets/search-first-preview.gif)
 
 ## 後續步驟 {#next-steps}
 
