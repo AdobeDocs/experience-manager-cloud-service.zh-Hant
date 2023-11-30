@@ -4,9 +4,9 @@ description: 瞭解如何從主控台和編輯器管理您的AEM內容片段（�
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 3f934add7521586caf728c4bfa37f2d1a82b144a
 workflow-type: tm+mt
-source-wordcount: '2531'
+source-wordcount: '2622'
 ht-degree: 3%
 
 ---
@@ -142,10 +142,7 @@ ht-degree: 3%
 * **[移動](/help/assets/manage-digital-assets.md)**
 * **[重新命名](/help/assets/manage-digital-assets.md)**
 * **[刪除](#deleting-a-fragment)**
-
-<!--
-* **[Replace](#find-and-replace)**
--->
+* **[取代](#find-and-replace)**
 
 >[!NOTE]
 >
@@ -368,13 +365,22 @@ ht-degree: 3%
 >
 >如果片段已從其他片段或頁面引用，您將看到警告訊息，並需要確認您要繼續。
 
-<!--
-## Find and Replace {#find-and-replace}
+## 尋找和取代 {#find-and-replace}
 
-The **Replace** option is available to find, and replace, specified text in your selected Content Fragment:
+此 **取代** 動作可用（在頂端工具列中）來尋找和取代所選內容片段中的指定文字。
 
-![Unpublish dialog](assets/cf-managing-find-replace.png)
--->
+![尋找和取代](assets/cf-managing-find-replace.png)
+
+取代之前，會檢查驗證條件並通知您任何衝突，可讓您變更取代字串或僅取代已驗證的執行個體。
+
+>[!NOTE]
+>
+>一次最多只能對20個選定的內容片段執行尋找和取代動作。
+>
+>如果您選取20個以上的內容片段，您會看到訊息 **找不到和取代**.
+
+![確認取代](assets/cf-managing-confirm-replace.png)
+
 
 ## 刪除片段 {#deleting-a-fragment}
 

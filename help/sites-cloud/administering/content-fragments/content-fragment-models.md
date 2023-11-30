@@ -4,9 +4,9 @@ description: 瞭解內容片段模型如何作為您在AEM中內容片段的基�
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: 8ab5b15f-cefc-45bf-a388-928e8cc8c603
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 3f934add7521586caf728c4bfa37f2d1a82b144a
 workflow-type: tm+mt
-source-wordcount: '3058'
+source-wordcount: '3121'
 ht-degree: 6%
 
 ---
@@ -198,7 +198,8 @@ Adobe Experience Manager (AEM)中的內容片段模型as a Cloud Service定義 [
   >如果在舊版AEM中建立的模型包含非法字元，請移除或更新這些字元。
 
 * **呈現為**
-在片段中實現/轉譯欄位的各種選項。 這通常可讓您定義作者會看到欄位的單一例項，還是允許建立多個例項。
+
+  在片段中實現/轉譯欄位的各種選項。 這通常可讓您定義作者將看到欄位的單一例項，還是允許建立多個例項。 時間 **多個欄位** 用於定義專案的最小和最大數量 — 請參閱 [驗證](#validation) 以取得更多詳細資料。
 
 * **欄位標籤**
 輸入 **欄位標籤** 自動產生 **屬性名稱**，然後可視需要手動更新。
@@ -256,6 +257,14 @@ Adobe Experience Manager (AEM)中的內容片段模型as a Cloud Service定義 [
    * 只能參考預先定義的寬度和/或高度範圍（以畫素為單位）內的影像。
 * **片段參考**
    * 測試特定內容片段模型。
+* **專案最小數量** / **專案最大數量**
+
+  已定義為 **多個欄位** (設定為 **呈現為**)擁有下列選項：
+
+   * **最小項目數量**
+   * **項目數量上限**
+
+  這些將在中驗證 [內容片段編輯器](/help/sites-cloud/administering/content-fragments/authoring.md).
 
 ## 使用參照來形成巢狀內容 {#using-references-to-form-nested-content}
 

@@ -2,14 +2,15 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2023.9.0 版發行說明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2023.9.0 版發行說明。'
 exl-id: d747f58b-8d6c-418d-9d2b-ec3ae4b6dc03
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 3f934add7521586caf728c4bfa37f2d1a82b144a
 workflow-type: tm+mt
-source-wordcount: '1442'
+source-wordcount: '1441'
 ht-degree: 95%
 
 ---
 
-# [!DNL Adobe Experience Manager] as a Cloud Service 最新發行說明 {#release-notes}
+
+# [!DNL Adobe Experience Manager] as a Cloud Service 2023.9.0 版發行說明 {#release-notes}
 
 以下章節概述 [!DNL Experience Manager] as a Cloud Service 目前 (最新) 版本的功能發行說明。
 

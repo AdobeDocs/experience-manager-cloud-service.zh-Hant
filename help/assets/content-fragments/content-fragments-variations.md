@@ -2,9 +2,9 @@
 title: 變化 — 編寫片段內容（資產 — 內容片段）
 description: 瞭解變數如何可讓您為片段編寫內容，然後根據用途建立該內容的變數，從而使您在AEM中的Headless內容更靈活。
 exl-id: af05aae6-d535-4007-ba81-7f41213ff152
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 3f934add7521586caf728c4bfa37f2d1a82b144a
 workflow-type: tm+mt
-source-wordcount: '2530'
+source-wordcount: '2546'
 ht-degree: 7%
 
 ---
@@ -76,6 +76,10 @@ ht-degree: 7%
   >**標籤** 也可以新增(至 **主版** 變數)，作為 [中繼資料](/help/assets/content-fragments/content-fragments-metadata.md)
 
 * [建立和管理變數](#managing-variations) 的 **主版** 內容。
+
+>[!NOTE]
+>
+>根據基礎模型中的定義，欄位可能會受限於特定型別 [驗證](/help/assets/content-fragments/content-fragments-models.md#validation).
 
 ### 全熒幕編輯器 {#full-screen-editor}
 

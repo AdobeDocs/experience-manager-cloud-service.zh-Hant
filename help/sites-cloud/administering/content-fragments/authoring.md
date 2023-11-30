@@ -4,9 +4,9 @@ description: 瞭解如何為內容片段製作內容，然後根據用途建立�
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 3f934add7521586caf728c4bfa37f2d1a82b144a
 workflow-type: tm+mt
-source-wordcount: '2251'
+source-wordcount: '2267'
 ht-degree: 7%
 
 ---
@@ -59,6 +59,10 @@ ht-degree: 7%
 * 中央面板：顯示所選變數的實際欄位和內容
    * 允許您編輯內容
    * 如果「**標籤預留位置**」欄位是在此處所示模型中定義，那麼這些欄位可用於導覽；它們會水準顯示或作為下拉式清單顯示。
+
+  >[!NOTE]
+  >
+  >根據基礎模型中的定義，欄位可能會受限於特定型別 [驗證](/help/assets/content-fragments/content-fragments-models.md#validation).
 
 ![內容片段編輯器 — 概觀](assets/cf-authoring-overview.png)
 
