@@ -2,9 +2,9 @@
 title: 如何根據核心元件為最適化表單新增對新區域設定的支援？
 description: 瞭解如何為最適化表單新增地區設定。
 exl-id: bc06542b-84c8-4c6a-a305-effbd16d5630
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: a801e6c605fff46ca07699727f3078c9a285a943
 workflow-type: tm+mt
-source-wordcount: '1328'
+source-wordcount: '1348'
 ht-degree: 5%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 5%
 | Foundation 元件 | [按一下這裡](supporting-new-language-localization.md) |
 | 核心元件 | 本文章 |
 
-AEM Forms提供英文(en)、西班牙文(es)、法文(fr)、義大利文(it)、德文(de)、日文(ja)、葡萄牙文 — 巴西(pt-BR)、中文(zh-CN)、中文 — 台灣(zh-TW)和韓文(ko-KR)地區設定的立即可用支援。 您也可以新增對更多地區設定的支援，例如印地語(hi_IN)。
+AEM Forms提供英文(en)、西班牙文(es)、法文(fr)、義大利文(it)、德文(de)、日文(ja)、葡萄牙文 — 巴西(pt-BR)、中文(zh-CN)、中文 — 台灣(zh-TW)和韓文(ko-KR)地區設定的立即可用支援。 您也可以新增對更多地區設定的支援，例如印地語(hi_IN)。 您也可以新增這些地區設定，以從右至左(RTL)語言呈現最適化Forms，例如阿拉伯文、波斯文和烏爾都文。
 
 ## 如何為最適化表單選取地區設定？
 

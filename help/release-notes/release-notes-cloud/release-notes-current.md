@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 最新發行說明�
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 最新發行說明。'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 0290e40094147a1c85eacf157904c7ef7388c5e7
+source-git-commit: a801e6c605fff46ca07699727f3078c9a285a943
 workflow-type: tm+mt
-source-wordcount: '1299'
+source-wordcount: '1297'
 ht-degree: 24%
 
 ---
@@ -146,6 +146,6 @@ ht-degree: 24%
 
 ## 已知問題 {#known-issues}
 
-* 使用者無法根據核心元件提交最適化Forms。 使用核心元件2.0.38 - 2.0.60版建置的最適化Forms會發生問題。
+* 無法根據核心元件提交最適化Forms。 使用核心元件2.0.38 - 2.0.60版建置的最適化Forms會發生問題。
 
   以解決問題。 您可以移至最適化表單核心元件2.0.62版或更新版本。 若要為您的環境設定最適化Forms核心元件版本， [設定core.forms.components.version、core.forms.components.af.version和core.wcm.components.version元件的版本](/help/forms/enable-adaptive-forms-core-components.md#2-add-adaptive-forms-core-components-dependencies-to-your-git-repository) 您的Formsas a Cloud Service存放庫或AEM原型專案和中的相依性 [將變更部署至您的Formsas a Cloud Service環境](/help/forms/enable-adaptive-forms-core-components.md#build-and-deploy-updated-code-on-an-aem-forms-as-a-cloud-service-environment). 您可以在下列位置找到最新版的最適化Forms核心元件相依性： [最適化Forms核心元件Git存放庫](https://github.com/adobe/aem-core-forms-components#system-requirements).
