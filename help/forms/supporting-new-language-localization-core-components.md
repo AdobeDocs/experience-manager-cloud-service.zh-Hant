@@ -2,10 +2,10 @@
 title: 如何根據核心元件為最適化表單新增對新區域設定的支援？
 description: 瞭解如何為最適化表單新增地區設定。
 exl-id: bc06542b-84c8-4c6a-a305-effbd16d5630
-source-git-commit: a801e6c605fff46ca07699727f3078c9a285a943
+source-git-commit: 5be0c5e347d2ec7ef660a701c8c6faf6a2d6d17a
 workflow-type: tm+mt
-source-wordcount: '1348'
-ht-degree: 5%
+source-wordcount: '1335'
+ht-degree: 3%
 
 ---
 
@@ -13,8 +13,10 @@ ht-degree: 5%
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
-| Foundation 元件 | [按一下這裡](supporting-new-language-localization.md) |
+| 基礎元件 | [按一下這裡](supporting-new-language-localization.md) |
 | 核心元件 | 本文章 |
+
+<span class="preview"> 由右至左語言支援功能在早期採用者計畫下提供。 您可以從您的官方電子郵件ID寫信到aem-forms-early-adopter-program@adobe.com ，以加入率先採用者計畫並請求存取該功能。 </span>
 
 AEM Forms提供英文(en)、西班牙文(es)、法文(fr)、義大利文(it)、德文(de)、日文(ja)、葡萄牙文 — 巴西(pt-BR)、中文(zh-CN)、中文 — 台灣(zh-TW)和韓文(ko-KR)地區設定的立即可用支援。 您也可以新增對更多地區設定的支援，例如印地語(hi_IN)。 您也可以新增這些地區設定，以從右至左(RTL)語言呈現最適化Forms，例如阿拉伯文、波斯文和烏爾都文。
 
@@ -80,7 +82,7 @@ AEM Forms提供英文(en)、西班牙文(es)、法文(fr)、義大利文(it)、�
 ### 2.新增語言環境至「本地化指南」服務 {#add-a-locale-to-the-guide-localization-service}
 
 1. 以純文字編輯器開啟上一節複製的存放庫資料夾。
-1. 導覽至 `[AEM Forms as a Cloud Service Git repository]/ui.config/src/main/content/jcr_root/apps/<appid>/osgiconfig/config` 檔案夾。您可找到 `<appid>` 在 `archetype.properties` 專案的檔案。
+1. 導覽至 `[AEM Forms as a Cloud Service Git repository]/ui.config/src/main/content/jcr_root/apps/<appid>/osgiconfig/config` 資料夾。 您可找到 `<appid>` 在 `archetype.properties` 專案的檔案。
 1. 開啟 `[AEM Forms as a Cloud Service Git repository]/ui.config/src/main/content/jcr_root/apps/<appid>/osgiconfig/config/Guide Localization Service.cfg.json` 檔案進行編輯。 如果檔案不存在，請建立檔案。 具有支援地區設定的範例檔案如下所示：
 
    ![範例指南Localization Service.cfg.json](locales.png)
@@ -100,7 +102,7 @@ AEM Forms提供範例使用者端資料庫，協助您輕鬆新增地區設定�
 
 ### 4.建立特定地區設定的檔案 {#locale-specific-file}
 
-1. 瀏覽到 `[AEM Forms as a Cloud Service Git repository]/ui.apps/src/main/content/jcr_root/apps/<program-id>/clientlibs/clientlib-it-custom-locale/resources/i18n/`
+1. 瀏覽至 `[AEM Forms as a Cloud Service Git repository]/ui.apps/src/main/content/jcr_root/apps/<program-id>/clientlibs/clientlib-it-custom-locale/resources/i18n/`
 1. 找到 [GitHub上的英文地區設定.json檔案](https://github.com/adobe/aem-core-forms-components/blob/master/ui.af.apps/src/main/content/jcr_root/apps/core/fd/af-clientlibs/core-forms-components-runtime-all/resources/i18n/en.json)，其中包含產品所包含的最新預設字串集。
 1. 為您的特定地區設定建立.json檔案。
 1. 在新建立的.json檔案中，映象英文地區設定檔案的結構。

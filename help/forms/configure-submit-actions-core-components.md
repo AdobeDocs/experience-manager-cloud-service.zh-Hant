@@ -1,12 +1,12 @@
 ---
-title: 如何為最適化表單設定提交動作?
+title: 如何設定最適化表單的提交動作？
 description: 最適化表單提供多個提交動作。提交動作會定義提交之後處理最適化表單的方式。您可以使用內建的提交動作或建立您自己的提交動作
 keywords: 如何選取最適化表單的提交動作、將最適化表單連線至sharepoint清單、將最適化表單連線至sharepoint檔案庫、將最適化表單連線至表單資料模型
 exl-id: 495948e8-30a7-4e7c-952f-c71de15520f0
-source-git-commit: 6ebc40b501472025cafffa258e253a53139a0301
+source-git-commit: 5be0c5e347d2ec7ef660a701c8c6faf6a2d6d17a
 workflow-type: tm+mt
-source-wordcount: '4063'
-ht-degree: 86%
+source-wordcount: '4006'
+ht-degree: 84%
 
 ---
 
@@ -105,7 +105,7 @@ ht-degree: 86%
 
 ## 提交到 SharePoint {#submit-to-sharedrive}
 
-「**[!UICONTROL 提交到 SharePoint]**」提交動作會將最適化表單與 Microsoft® SharePoint 儲存空間建立連結。您可以將表單資料檔案、附件或記錄文件提交到連結的 Microsoft® Sharepoint 儲存空間。
+「**[!UICONTROL 提交到 SharePoint]**」提交動作會將最適化表單與 Microsoft® SharePoint 儲存空間建立連結。您可以將表單資料檔案、附件或記錄檔案提交至連線的Microsoft® Sharepoint儲存體。
 
 使用提交至SharePoint，您可以：
 * [將最適化表單連線至SharePoint檔案庫](#connect-af-sharepoint-doc-library)
@@ -205,7 +205,7 @@ ht-degree: 86%
 
 您可以在調適型表單中使用已建立的SharePoint清單設定，以在SharePoint清單中儲存資料或產生的記錄檔案。 執行以下步驟，在最適化表單中使用SharePoint清單：
 
-1. [使用Microsoft® SharePoint清單設定建立表單資料模型](/help/forms/create-form-data-models.md)
+1. [使用Microsoft建立表單資料模型](/help/forms/create-form-data-models.md)
 1. [設定表單資料模型以擷取及傳送資料](/help/forms/work-with-form-data-model.md#configure-services)
 1. [建立最適化表單](/help/forms/creating-adaptive-form-core-components.md)
 1. [使用表單資料模型設定提交動作](/help/forms/configuring-submit-actions.md#submit-using-form-data-model)
@@ -215,10 +215,10 @@ ht-degree: 86%
 >[!NOTE]
 >
 > Microsoft® SharePoint清單不支援下列欄型別：
-> * 影像欄
-> * 中繼資料欄
-> * 人員欄
-> * 外部資料欄
+* 影像欄
+* 中繼資料欄
+* 人員欄
+* 外部資料欄
 
 ## 使用表單資料模型提交 {#submit-using-form-data-model}
 
@@ -263,7 +263,7 @@ ht-degree: 86%
 
 >[!NOTE]
 >
->若要將欄位做為 REST URL 的參數傳遞，所有欄位都必須具有不同的元素名稱，即使這些欄位位於不同面板上也是如此。
+若要將欄位做為 REST URL 的參數傳遞，所有欄位都必須具有不同的元素名稱，即使這些欄位位於不同面板上也是如此。
 
 <!-- ## Send PDF via Email {#send-pdf-via-email}
 
@@ -312,7 +312,7 @@ For more information about the Forms Portal and Submit Action, see [Drafts and s
 
 ## 提交到 OneDrive {#submit-to-onedrive}
 
-「**[!UICONTROL 提交到 OneDrive]**」提交動作會將最適化表單連結到 Microsoft® OneDrive。您可以將表單資料、檔案、附件或記錄文件提交到連結的 Microsoft® OneDrive 儲存空間。
+「**[!UICONTROL 提交到 OneDrive]**」提交動作會將最適化表單連結到 Microsoft® OneDrive。您可以將表單資料、檔案、附件或記錄檔案提交至已連線的Microsoft® OneDrive儲存體。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424864/connect-aem-adaptive-form-to-onedrive/?quality=12&learn=on)
 
@@ -341,7 +341,7 @@ For more information about the Forms Portal and Submit Action, see [Drafts and s
 
    >[!NOTE]
    >
-   > **用戶端密碼**&#x200B;欄位為必填或選用，取決於您的 Azure Active Directory 應用程式設定。如果您的應用程式設定為使用用戶端密碼，就必須提供用戶端密碼。
+   **用戶端密碼**&#x200B;欄位為必填或選用，取決於您的 Azure Active Directory 應用程式設定。如果您的應用程式設定為使用用戶端密碼，就必須提供用戶端密碼。
 
 1. 按一下「**[!UICONTROL 連結]**」。連結成功後，就會顯示 `Connection Successful` 訊息。
 
@@ -349,8 +349,8 @@ For more information about the Forms Portal and Submit Action, see [Drafts and s
 
    >[!NOTE]
    >
-   >* 根據預設，`forms-ootb-storage-adaptive-forms-submission` 會顯示在 OneDrive 容器中。
-   > * 建立一個資料夾做為 `forms-ootb-storage-adaptive-forms-submission`；如果尚未出現，請按一下「**建立資料夾**」。
+   * 根據預設，`forms-ootb-storage-adaptive-forms-submission` 會顯示在 OneDrive 容器中。
+   * 建立一個資料夾做為 `forms-ootb-storage-adaptive-forms-submission`；如果尚未出現，請按一下「**建立資料夾**」。
 
 現在，您可以使用此 OneDrive 儲存空間設定，在最適化表單中使用該提交動作。
 
@@ -361,8 +361,8 @@ For more information about the Forms Portal and Submit Action, see [Drafts and s
 
    >[!NOTE]
    >
-   > * 對於已在其中建立 OneDrive 儲存空間的最適化表單，請選取相同的「[!UICONTROL 設定容器]」。
-   > * 如果沒有選取「[!UICONTROL 設定容器]」，「提交動作」屬性視窗中會顯示全域「[!UICONTROL 儲存空間設定]」資料夾。
+   * 對於已在其中建立 OneDrive 儲存空間的最適化表單，請選取相同的「[!UICONTROL 設定容器]」。
+   * 如果沒有選取「[!UICONTROL 設定容器]」，「提交動作」屬性視窗中會顯示全域「[!UICONTROL 儲存空間設定]」資料夾。
 
 1. 選取「**提交動作**」做為「**[!UICONTROL 提交到 OneDrive]**」。
    ![OneDrive GIF](/help/forms/assets/onedrive-video.gif)
@@ -404,8 +404,8 @@ For more information about the Forms Portal and Submit Action, see [Drafts and s
 
    >[!NOTE]
    >
-   > * 對於已在其中建立 OneDrive 儲存空間的最適化表單，請選取相同的「[!UICONTROL 設定容器]」。
-   > * 如果沒有選取「[!UICONTROL 設定容器]」，「提交動作」屬性視窗中會顯示全域「[!UICONTROL 儲存空間設定]」資料夾。
+   * 對於已在其中建立 OneDrive 儲存空間的最適化表單，請選取相同的「[!UICONTROL 設定容器]」。
+   * 如果沒有選取「[!UICONTROL 設定容器]」，「提交動作」屬性視窗中會顯示全域「[!UICONTROL 儲存空間設定]」資料夾。
 
 1. 將「**提交動作**」選取作為「**[!UICONTROL 提交到 Azure Blob 儲存體]**」。
    ![Azure Blob 儲存體 GIF](/help/forms/assets/azure-submit-video.gif)
@@ -470,7 +470,7 @@ For more information about the Forms Portal and Submit Action, see [Drafts and s
 
 >[!NOTE]
 >
->伺服器端驗證會驗證表單模型。建議您建立獨立的用戶端程式庫已進行驗證，並避免與相同用戶端程式庫中其他內容混淆，例如 HTML 樣式和 DOM 操作等。
+伺服器端驗證會驗證表單模型。建議您建立獨立的用戶端程式庫已進行驗證，並避免與相同用戶端程式庫中其他內容混淆，例如 HTML 樣式和 DOM 操作等。
 
 ### 支援驗證運算式中的自訂函數 {#supporting-custom-functions-in-validation-expressions-br}
 

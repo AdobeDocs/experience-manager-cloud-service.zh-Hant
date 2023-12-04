@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 最新發行說明�
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 最新發行說明。'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 8eb087bdda335b0a33e616eb534615396b220369
+source-git-commit: 5be0c5e347d2ec7ef660a701c8c6faf6a2d6d17a
 workflow-type: tm+mt
-source-wordcount: '1297'
-ht-degree: 24%
+source-wordcount: '1279'
+ht-degree: 23%
 
 ---
 
@@ -103,7 +103,7 @@ ht-degree: 24%
 
 ### 早期採用計劃 {#forms-early-adopter}
 
-* **提交最適化表單至Adobe Workfront Fusion案例**：Formsas a Cloud Service提供立即可用的選項，讓您輕鬆將最適化表單與Adobe Workfront連結。 這可簡化將最適化表單提交至Adobe Workfront情境的程式，讓您在提交最適化表單時觸發Workfront Fusion情境。
+* **[提交最適化表單至Adobe Workfront Fusion案例](/help/forms/submit-adaptive-form-to-workfront-fusion.md)**：Formsas a Cloud Service提供立即可用的選項，讓您輕鬆將最適化表單與Adobe Workfront連結。 這可簡化將最適化表單提交至Adobe Workfront情境的程式，讓您在提交最適化表單時觸發Workfront Fusion情境。
 
 * **[從右至左語言支援](/help/forms/supporting-new-language-localization-core-components.md)**：建置在核心元件上的調適型Forms現在能以從右至左(RTL)語言顯示，例如阿拉伯文、波斯文和烏都文。 全球超過20億人使用RTL語言。 使用RTL語言中的表單，可讓您延伸最適化表單的觸角，以迎合這些不同的受眾，並拓展RTL市場。 在某些地區，提供當地語言的表格也是法律義務。 您可以因應當地語言，不僅為更廣大的受眾敞開大門，也確保符合相關法律法規。
 
