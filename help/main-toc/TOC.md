@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的運作方式以及該軟體可以為您做哪些事。
 breadcrumb-title: 使用手冊
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 3f934add7521586caf728c4bfa37f2d1a82b144a
+source-git-commit: ba7976c192e3696b1367a4f9a5bf0c320a5f258e
 workflow-type: tm+mt
-source-wordcount: '4393'
+source-wordcount: '4420'
 ht-degree: 99%
 
 ---
@@ -585,6 +585,7 @@ ht-degree: 99%
          + [將根據核心元件的最適化表單內嵌至外部網頁](/help/forms/embed-adaptive-form-core-components-external-web-page.md)
          + [將根據基礎元件的最適化表單內嵌至外部網頁](/help/forms/embed-adaptive-form-external-web-page.md)
       + 表單資料模式 {#use-form-data-model}
+         + [提交最適化表單至Adobe Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
          + [將 AEM Forms 連接到資料庫或資料來源](/help/forms/data-integration.md)
          + [設定資料來源](/help/forms/configure-data-sources.md)
          + [設定 [!DNL Microsoft Dynamics] OData](/help/forms/ms-dynamics-odata-configuration.md)
@@ -788,7 +789,7 @@ ht-degree: 99%
       + [驗證](/help/headless/security/authentication.md)
    + 部署 {#deployment}
       + [架構](/help/headless/deployment/architecture.md)
-      + [Dispatcher - 端點](/help/headless/deployment/dispatcher.md)
+      + [Dispatcher — 端點](/help/headless/deployment/dispatcher.md)
       + [Dispatcher - 啟用持續性查詢的快取](/help/headless/deployment/dispatcher-caching.md)
       + [CORS 組態](/help/headless/deployment/cross-origin-resource-sharing.md)
       + [推薦者篩選器](/help/headless/deployment/referrer-filter.md)
