@@ -1,7 +1,7 @@
 ---
-source-git-commit: c20f59770f4eb722d49a96952126993577bfd65e
-workflow-type: ht
-source-wordcount: '262'
+source-git-commit: 8bc20c66aad7bf4befdd28db2c628a1535ae375b
+workflow-type: tm+mt
+source-wordcount: '205'
 ht-degree: 100%
 
 ---
@@ -14,12 +14,6 @@ ht-degree: 100%
 ## Edge Delivery Services 編寫 {#edge-delivery-authoring}
 
 [!BADGE 若要為 Edge Delivery Services 編寫 AEM 內容，請按一下這裡。]{type=Positive url="/help/edge/overview.md" tooltip="為 Edge Delivery Services 編寫 AEM 內容"}
-
-## 指派群組至設定檔的 IMS 支援 {#ims-group-profiles}
-
->[!NOTE]
->
->AEM 目前不支援指派群組到設定檔。應單獨新增使用者。
 
 ## WAF 組態有限發佈 {#waf-limited-release}
 

@@ -2,7 +2,7 @@
 title: 內容複製工具
 description: 內容複製工具可讓使用者隨選從AEMas a Cloud Service的生產環境複製可變內容，以降低環境等級以進行測試。
 exl-id: 5883e4bc-9861-498e-bd35-32ff03d901cc
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+source-git-commit: 8bc20c66aad7bf4befdd28db2c628a1535ae375b
 workflow-type: tm+mt
 source-wordcount: '1290'
 ht-degree: 34%
@@ -200,5 +200,3 @@ ht-degree: 34%
 * 內容複製工具沒有版本設定功能，且自上次內容復製作業以來，無法自動在內容集中的來源環境中偵測修改的內容或建立的內容。
    * 如果您只想使用內容變更來更新目的地環境，則自上次內容復製作業以來，您必須建立內容集。 然後，指定自上次內容復製作業以來進行變更的來源例項上的路徑。
 * 版本資訊不包含在內容副本中。
-
-{{ims-group-profiles}}
