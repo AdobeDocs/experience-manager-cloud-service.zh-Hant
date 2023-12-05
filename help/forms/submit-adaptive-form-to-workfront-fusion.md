@@ -3,9 +3,9 @@ title: 整合Adobe Workfront Fusion與AEM Forms提交作業
 description: Adobe Workfront Fusion可讓您專注於新工作，而非重複工作。 您可以使用表單提交功能將Adobe Workfront Fusion連結至最適化表單。
 keywords: 提交最適化表單至Adobe Workfront Fusion、Adobe Workfront Fusion與AEM Forms提交的整合、Adobe Workfront Fusion與AEM Forms、Workfront Fusion與AEM Forms、連線Workfront Fusion至AEM Forms、AEM Forms及Workfront Fusion、如何連線Workfront Fusion與AEM Forms？，連線Workfront Fusion至表單
 topic-tags: author, developer
-source-git-commit: 5be0c5e347d2ec7ef660a701c8c6faf6a2d6d17a
+source-git-commit: cebdd5c4b1ad9531f2cc2893c2e7900658e451ed
 workflow-type: tm+mt
-source-wordcount: '1242'
+source-wordcount: '1240'
 ht-degree: 3%
 
 ---
@@ -144,7 +144,7 @@ ht-degree: 3%
 - [全新最適化Forms](#new-af-submit-action)
 - [現有的最適化表單](#existing-af-submit-action)
 
-#### 2.1為Workfront Fusion設定新最適化表單的提交動作 {#new-af-submit-action}
+#### 設定Workfront Fusion適用性表單的提交動作 {#new-af-submit-action}
 
 若要設定Workfront Fusion適用性表單的提交動作：
 
@@ -165,7 +165,7 @@ ht-degree: 3%
 1. 按一下&#x200B;**[!UICONTROL 建立]**。
 1. 指定新最適化表單的名稱，然後按一下 **[!UICONTROL 建立]**.
 
-#### 2.2設定Workfront Fusion現有最適化表單的提交動作 {#existing-af-submit-action}
+#### 設定Workfront Fusion現有最適化表單的提交動作 {#existing-af-submit-action}
 
 若要設定Workfront Fusion現有最適化表單的提交動作：
 
@@ -178,7 +178,7 @@ ht-degree: 3%
    ![適用於Workfront Fusion的提交動作](/help/forms/assets/workfront-scenario-existing-af.png)
 
 1. 開啟 **[!UICONTROL 提交]** 標籤。
-1. 選取 **[提交動作]** 作為 **[!UICONTROL 叫用Workfront Fusion案例]**
+1. 選取 **[!UICONTROL 提交動作]** 作為 **[!UICONTROL 叫用Workfront Fusion案例]**
 1. 選取 **[!UICONTROL Workfront Fusion分析藍本]** 下拉式清單中的。
 1. 按一下&#x200B;**[!UICONTROL 「完成」]**。
 

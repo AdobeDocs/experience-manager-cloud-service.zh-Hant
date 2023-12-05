@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的運作方式以及該軟體可以為您做哪些事。
 breadcrumb-title: 使用手冊
 user-guide-title: AEM as a Cloud Service
-source-git-commit: ce98053371c8a40db3935c47356213e712a4e39e
+source-git-commit: 54ab961b9689075f6a34ff51ecf92bf1ae68ebf1
 workflow-type: tm+mt
 source-wordcount: '4429'
 ht-degree: 99%
@@ -581,11 +581,11 @@ ht-degree: 99%
          + [將最適化表單整合至 Adobe Analytics](/help/forms/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.md)
          + [檢視並了解 Adaptive Forms Analytics 報告](/help/forms/view-understand-aem-forms-analytics-reports.md)
          + [將最適化表單與 Microsoft Power Automate 整合](/help/forms/forms-microsoft-power-automate-integration.md)
+         + [提交最適化表單至Adobe Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
          + [在 AEM Sites 頁面中內嵌最適化表單](/help/forms/embed-adaptive-form-aem-sites.md)
          + [將根據核心元件的最適化表單內嵌至外部網頁](/help/forms/embed-adaptive-form-core-components-external-web-page.md)
          + [將根據基礎元件的最適化表單內嵌至外部網頁](/help/forms/embed-adaptive-form-external-web-page.md)
       + 表單資料模式 {#use-form-data-model}
-         + [提交最適化表單至Adobe Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
          + [將 AEM Forms 連接到資料庫或資料來源](/help/forms/data-integration.md)
          + [設定資料來源](/help/forms/configure-data-sources.md)
          + [設定 [!DNL Microsoft Dynamics] OData](/help/forms/ms-dynamics-odata-configuration.md)
