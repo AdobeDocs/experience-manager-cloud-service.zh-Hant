@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的運作方式以及該軟體可以為您做哪些事。
 breadcrumb-title: 使用手冊
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 54ab961b9689075f6a34ff51ecf92bf1ae68ebf1
+source-git-commit: d3af2812e4f9e50937fbefbf9a0fb67004a460a9
 workflow-type: tm+mt
 source-wordcount: '4429'
 ht-degree: 99%
@@ -347,7 +347,7 @@ ht-degree: 99%
          + AEM 快速網站建立歷程 {#quick-site}
             + [了解 AEM 快速網站建立](/help/journey-sites/quick-site/overview.md)
             + [了解 Cloud Manager](/help/journey-sites/quick-site/cloud-manager.md)
-            + [從範例建立網站](/help/journey-sites/quick-site/create-site.md)
+            + [使用範本建立網站](/help/journey-sites/quick-site/create-site.md)
             + [設定您的管道](/help/journey-sites/quick-site/pipeline-setup.md)
             + [授予前端開發人員存取權](/help/journey-sites/quick-site/grant-access.md)
             + [擷取 git 存放庫存取資訊](/help/journey-sites/quick-site/retrieve-access.md)
@@ -366,7 +366,7 @@ ht-degree: 99%
          + 轉換 {#translation}
             + Sites 翻譯歷程 {#sites}
                + [了解 AEM 中的網站翻譯](/help/journey-sites/translation/overview.md)
-               + [AEM Sites 翻譯快速入門](/help/journey-sites/translation/getting-started.md)
+               + [開始使用 AEM Sites 翻譯](/help/journey-sites/translation/getting-started.md)
                + [了解網站內容以及如何在 AEM 中翻譯](/help/journey-sites/translation/learn-about.md)
                + [設定翻譯連接器](/help/journey-sites/translation/configure-connector.md)
                + [設定翻譯規則](/help/journey-sites/translation/translation-rules.md)
@@ -395,11 +395,11 @@ ht-degree: 99%
       + [與 Adobe Campaign 整合](/help/sites-cloud/integrating/campaign.md)
 + 資產 {#assets}
    + [[!DNL Assets] as a [!DNL Cloud Service]](/help/assets/home.md)
-   + [概覽與新增功能](/help/assets/overview.md)
+   + [概觀與新增功能](/help/assets/overview.md)
    + [ [!DNL Assets] as a [!DNL Cloud Service] 重大變更](/help/assets/assets-cloud-changes.md)
    + [[!DNL Assets] 架構](/help/assets/architecture.md)
    + [支援的檔案格式](/help/assets/file-format-support.md)
-   + [資產微服務概覽](/help/assets/asset-microservices-overview.md)
+   + [資產微服務概觀](/help/assets/asset-microservices-overview.md)
    + [ [!DNL Assets] 中的協助工具](/help/assets/accessibility.md)
    + 管理數位資產 {#manage}
       + [微前端資產選擇器](/help/assets/asset-selector.md)
@@ -580,8 +580,8 @@ ht-degree: 99%
          + [將 AEM Forms as a Cloud Service 與 Adobe Analytics 整合](/help/forms/integrate-aem-forms-with-adobe-analytics.md)
          + [將最適化表單整合至 Adobe Analytics](/help/forms/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.md)
          + [檢視並了解 Adaptive Forms Analytics 報告](/help/forms/view-understand-aem-forms-analytics-reports.md)
-         + [將最適化表單與 Microsoft Power Automate 整合](/help/forms/forms-microsoft-power-automate-integration.md)
          + [提交最適化表單至Adobe Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
+         + [將最適化表單與 Microsoft Power Automate 整合](/help/forms/forms-microsoft-power-automate-integration.md)
          + [在 AEM Sites 頁面中內嵌最適化表單](/help/forms/embed-adaptive-form-aem-sites.md)
          + [將根據核心元件的最適化表單內嵌至外部網頁](/help/forms/embed-adaptive-form-core-components-external-web-page.md)
          + [將根據基礎元件的最適化表單內嵌至外部網頁](/help/forms/embed-adaptive-form-external-web-page.md)
@@ -682,7 +682,7 @@ ht-degree: 99%
    + Screens as a Cloud Service 概觀 {#overview}
       + [簡介](/help/screens-cloud/introduction/introduction.md)
       + [了解角色定義](/help/screens-cloud/introduction/personas-screens-cloud.md)
-      + [Adobe Analytics與Screens Cloud整合](/help/screens-cloud/introduction/adobe-analytics-integration-with-screens.md)
+      + [Adobe Analytics 與 Screens Cloud 整合](/help/screens-cloud/introduction/adobe-analytics-integration-with-screens.md)
    + 開始使用 Screens as a Cloud Service {#onboarding-screens-cloud}
       + [首次登入](/help/screens-cloud/onboarding-screens-cloud/first-time-login-screens-cloud.md)
       + 在 Cloud Manager 中將 Screens 程式新增為附加元件{#adding-screens-addon}

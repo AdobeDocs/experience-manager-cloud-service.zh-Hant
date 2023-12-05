@@ -3,7 +3,7 @@ title: 整合Adobe Workfront Fusion與AEM Forms提交作業
 description: Adobe Workfront Fusion可讓您專注於新工作，而非重複工作。 您可以使用表單提交功能將Adobe Workfront Fusion連結至最適化表單。
 keywords: 提交最適化表單至Adobe Workfront Fusion、Adobe Workfront Fusion與AEM Forms提交的整合、Adobe Workfront Fusion與AEM Forms、Workfront Fusion與AEM Forms、連線Workfront Fusion至AEM Forms、AEM Forms及Workfront Fusion、如何連線Workfront Fusion與AEM Forms？，連線Workfront Fusion至表單
 topic-tags: author, developer
-source-git-commit: cebdd5c4b1ad9531f2cc2893c2e7900658e451ed
+source-git-commit: 68314ca09594d3c4c5639363326117b89b733a4d
 workflow-type: tm+mt
 source-wordcount: '1240'
 ht-degree: 3%
@@ -128,6 +128,7 @@ ht-degree: 3%
 #### 1.3啟動Workfront情境 {#activate-scenario}
 
 若要啟動案例：
+
 1. 按一下 **[!UICONTROL 情境]** ![「共用」圖示](/help/forms/assets/Smock_ShareAndroid_18_N.svg) 在左側面板中。
 1. 按一下 **[!UICONTROL 非使用中案例]** 標籤。
 1. 按一下 **開啟/關閉** 適用於您的AEM Forms情境的切換按鈕。
