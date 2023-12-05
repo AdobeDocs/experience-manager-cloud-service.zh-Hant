@@ -3,7 +3,7 @@ title: 如何設定最適化表單的提交動作？
 description: 最適化表單提供多個提交動作。提交動作會定義提交之後處理最適化表單的方式。您可以使用內建的提交動作或建立您自己的提交動作
 keywords: 如何選取最適化表單的提交動作、將最適化表單連線至sharepoint清單、將最適化表單連線至sharepoint檔案庫、將最適化表單連線至表單資料模型
 exl-id: 495948e8-30a7-4e7c-952f-c71de15520f0
-source-git-commit: 4e5a730f59a7594085319435bfe1ea3a7368bfc2
+source-git-commit: e9110b5f5b46d38712b7462490afc1052fb8d00c
 workflow-type: tm+mt
 source-wordcount: '4114'
 ht-degree: 82%
@@ -440,6 +440,7 @@ For more information about the Forms Portal and Submit Action, see [Drafts and s
 您可以設定最適化表單，在提交時提交資料給Workfront Fusion。 Workfront Fusion允許流程自動化，以便使用者可以專注於新任務，而不是一遍又一遍地重複相同的任務。 它可自動化簡單和複雜的工作，節省時間並確保一致的流程執行。
 
 最適化Forms編輯器提供 **叫用Workfront Fusion案例** 提交動作以將最適化Forms資料或附件傳送至Workfront Fusion案例。 若要使用提交動作將擷取的資料傳送至Workfront Fusion案例，請參閱 [提交最適化表單至Adobe Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md).
+
 
 ## 使用同步或異步提交 {#use-synchronous-or-asynchronous-submission}
 
