@@ -4,10 +4,10 @@ description: 探索如何使用 Universal Editor 在任何實作中對內容的�
 hidefromtoc: true
 index: false
 exl-id: a4854a56-9434-4d15-a56a-f1798f27263a
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '936'
-ht-degree: 67%
+ht-degree: 62%
 
 ---
 
@@ -17,12 +17,12 @@ ht-degree: 67%
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_edit_inline_universal_editor"
 >title="使用 Universal Editor 進行內容編輯"
->abstract="了解無頭應用程式如何利用 Universal Editor 為作者帶來低摩擦且符合上下文的編輯體驗。"
+>abstract="瞭解您的Headless應用程式如何使用通用編輯器，在內容編輯中輕鬆降低摩擦力，觸手可及。"
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_edit_inline_universal_editor_guide"
 >title="啟動 Universal Editor"
->abstract="在本指南中，我們將探討 Universal Editor，以及它如何讓所有人都能在任何實施中編輯各種內容，從而提高內容流通速度。<br><br>點選下方，在新標籤中啟動此單元，然後按照本指南進行操作。"
+>abstract="在本指南中，您將會瞭解通用編輯器，以及其如何讓任何人能夠編輯任何實作中您內容的每個方面，從而提高內容速度。<br><br>點選下方，在新標籤中啟動此單元，然後按照本指南進行操作。"
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_edit_inline_universal_editor_guide_footer"
