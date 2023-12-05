@@ -2,10 +2,10 @@
 title: 如何設定最適化表單的提交動作？
 description: 最適化表單提供多個提交動作。提交動作會定義提交之後處理最適化表單的方式。您可以使用內建的提交動作或建立自己的動作。
 exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 4e5a730f59a7594085319435bfe1ea3a7368bfc2
 workflow-type: tm+mt
-source-wordcount: '3805'
-ht-degree: 78%
+source-wordcount: '3913'
+ht-degree: 76%
 
 ---
 
@@ -28,6 +28,7 @@ ht-degree: 78%
 * [提交到 OneDrive](#submit-to-onedrive)
 * [提交到 Azure Blob 儲存體](#azure-blob-storage)
 * [提交至 Power Automate](#microsoft-power-automate)
+* [提交至Workfront Fusion](#workfront-fusion)
 
 您也可以 [擴充預設提交動作](custom-submit-action-form.md) 以建立您自己的提交動作。
 
@@ -404,6 +405,13 @@ For more information about the Forms Portal and Submit Action, see [Drafts and s
 最適化Forms編輯器提供 **叫用Microsoft®Power Automate流程** 傳送最適化表單資料、附件和記錄檔案的提交動作會傳送到Power Automate雲端流程。 若要使用提交動作將擷取的資料傳送到 Microsoft® Power Automate，[請使用 Microsoft® Power Automate 連線您的 Forms as a Cloud Service 執行個體](forms-microsoft-power-automate-integration.md)
 
 在設定成功之後，使用[叫用 Microsoft® Power Automate 流程](forms-microsoft-power-automate-integration.md#use-the-invoke-a-microsoft&reg;-power-automate-flow-submit-action-to-send-data-to-a-power-automate-flow-use-the-invoke-microsoft-power-automate-flow-submit-action)提交動作，將資料傳送到 Power Automate Flow。
+
+## 提交至Workfront Fusion {#workfront-fusion}
+
+您可以設定最適化表單，在提交時提交資料給Workfront Fusion。 Workfront Fusion允許流程自動化，以便使用者可以專注於新任務，而不是一遍又一遍地重複相同的任務。 它可自動化簡單和複雜的工作，節省時間並確保一致的流程執行。
+
+最適化Forms編輯器提供 **叫用Workfront Fusion案例** 提交動作以將最適化Forms資料或附件傳送至Workfront Fusion案例。 若要使用提交動作將擷取的資料傳送至Workfront Fusion案例，請參閱 [提交最適化表單至Adobe Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md).
+
 
 ## 使用同步或異步提交 {#use-synchronous-or-asynchronous-submission}
 
