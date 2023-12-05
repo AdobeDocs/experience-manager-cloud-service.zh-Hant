@@ -2,10 +2,10 @@
 title: 回應式版面
 description: AEM可讓您實現頁面的回應式版面
 exl-id: 87202742-5bed-4e87-a427-456a1a0e72cc
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '1732'
-ht-degree: 6%
+source-wordcount: '1737'
+ht-degree: 5%
 
 ---
 
@@ -49,7 +49,7 @@ AEM使用一組機製為頁面實現回應式佈局：
 
 >[!TIP]
 >
->Adobe提供 [GitHub檔案](https://adobe-marketing-cloud.github.io/aem-responsivegrid/) 回應式版面作為參考，可提供給前端開發人員使用AEM以外的AEM格線，例如建立未來AEM網站的靜態HTML模型時。
+>Adobe提供 [GitHub檔案](https://adobe-marketing-cloud.github.io/aem-responsivegrid/) 回應式版面作為參考，前端開發人員可以參考該參考，以便在AEM之外使用AEM格線，例如在為未來的AEM網站建立靜態HTML模型時。
 
 >[!NOTE]
 >
@@ -124,7 +124,7 @@ AEM可讓您根據裝置的寬度定義版面：
    * 如果模擬的裝置高度高於熒幕大小，則不會顯示折線。
    * 顯示摺頁是為了方便作者使用，不會顯示在已發佈的頁面上。
 
-## 新增版面容器及其內容 (編輯模式) {#adding-a-layout-container-and-its-content-edit-mode}
+## 新增版面容器及其內容（編輯模式） {#adding-a-layout-container-and-its-content-edit-mode}
 
 A **配置容器** 是段落系統：
 
@@ -149,7 +149,7 @@ A **配置容器** 是段落系統：
 >
 >由於版面容器是段落系統，刪除元件將會同時刪除版面格線以及容器內容納的所有元件（及其內容）。
 
-1. 如果您將滑鼠移到格點預留位置上或點選格點預留位置，則會顯示動作選單。
+1. 如果您將滑鼠移到格點預留位置上或選取該預留位置，則會顯示動作選單。
 
    ![新增到版面容器](/help/sites-cloud/authoring/assets/responsive-layout-container.png)
 
@@ -231,7 +231,7 @@ A **配置容器** 是段落系統：
   >在上述範例中，浮動和隱藏動作可供使用，因為此配置容器是巢狀內嵌於上層配置容器中。
 
    * **取消隱藏元件**
-選取父元件以顯示包含「 」的動作工具列 **顯示隱藏的元件** 選項。 在此示例中，隱藏了兩個元件。
+選取父元件以顯示包含「 」的動作工具列 **顯示隱藏的元件** 選項。 在此範例中，隱藏了兩個元件。
 
      ![取消隱藏元件](/help/sites-cloud/authoring/assets/responsive-layout-unhide.png)
 

@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: Image Sets
 role: User
 exl-id: 2eb71f24-73d9-4b5c-8605-923a0e3d1505
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2134'
-ht-degree: 5%
+source-wordcount: '2145'
+ht-degree: 3%
 
 ---
 
@@ -43,7 +43,7 @@ ht-degree: 5%
 
 快速上手並執行：
 
-1. 選用. [建立批次集預設集](/help/assets/dynamic-media/batch-set-presets-dm.md) 並將其套用至上傳迴轉集影像的新資料夾。
+1. 選填。 [建立批次集預設集](/help/assets/dynamic-media/batch-set-presets-dm.md) 並將其套用至上傳迴轉集影像的新資料夾。
 
    批次集預設集可以幫助您自動建立影像集。
 
@@ -128,7 +128,7 @@ ht-degree: 5%
 >[!NOTE]
 >
 >您也可以透過自動建立影像集 [批次集預設集](/help/assets/dynamic-media/batch-set-presets-dm.md).
->**** 重要：批集由IPS(Image Production System)建立，作為資產提取的一部分。
+>**重要：** 批次集由IPS (Image Production System)建立，作為資產提取的一部分。
 
 將資產新增至集時，資產會自動以字母數字順序新增。 在新增資產後，您可以手動重新排序或排序資產。
 
@@ -148,7 +148,7 @@ ht-degree: 5%
 **若要建立影像集：**
 
 1. 在Adobe Experience Manager中，選取Experience Manager標誌以存取全域導覽主控台。
-1. 點選 **[!UICONTROL 導覽]** > **[!UICONTROL 資產]**. 導覽至您要建立影像集的位置，然後前往 **[!UICONTROL 建立]** > **[!UICONTROL 影像集]** 以開啟「影像集編輯器」頁面。
+1. 選取 **[!UICONTROL 導覽]** > **[!UICONTROL 資產]**. 導覽至您要建立影像集的位置，然後前往 **[!UICONTROL 建立]** > **[!UICONTROL 影像集]** 以開啟「影像集編輯器」頁面。
 
    您也可以從包含資產的資料夾內建立資產集。
 
@@ -164,7 +164,7 @@ ht-degree: 5%
 
    * 在「影像集編輯器」頁面中間附近，選取 **[!UICONTROL 點選以開啟資產選擇器]**.
 
-   點選以選取您要納入影像集的資產。 選取的資產上面有勾號圖示。 完成後，在頁面的右上角附近，選取 **[!UICONTROL 選取]**.
+   選取以選取您要納入影像集的資產。 選取的資產上面有勾號圖示。 完成後，在頁面的右上角附近，選取 **[!UICONTROL 選取]**.
 
    使用「資產選擇器」，您可以輸入關鍵字並選取 **[!UICONTROL 傳回]**. 您也可以套用篩選條件來調整搜尋結果。您可以依路徑、系列、檔案類型和標籤來篩選。選取篩選，然後選取 **[!UICONTROL 篩選]** 圖示加以儲存。 選取「檢視」圖示並選取 **[!UICONTROL 欄檢視]**， **[!UICONTROL 卡片檢視]**，或 **[!UICONTROL 清單檢視]**.
 
@@ -190,7 +190,7 @@ ht-degree: 5%
    >
    >建立影像集時，您可以變更影像集縮圖。 或者，您可以讓Experience Manager根據影像集中的資產自動選取縮圖。 若要選取縮圖，請選取 **[!UICONTROL 變更縮圖]** 位於「影像集編輯器」頁面上「標題」欄位上方。 然後，選取任何影像（您也可以導覽至其他資料夾以尋找影像）。 如果您選取縮圖，然後決定要讓Experience Manager從影像集產生縮圖，請選取「 」 **[!UICONTROL 切換至]** **[!UICONTROL 自動縮圖]**.
 
-1. 按一下「**[!UICONTROL 儲存]**」。您建立的影像集會顯示在您建立的資料夾中。
+1. 按一下 **[!UICONTROL 儲存]**. 您建立的影像集會顯示在您建立的資料夾中。
 
 ## 檢視影像集 {#viewing-image-sets}
 
@@ -236,7 +236,7 @@ ht-degree: 5%
 
    * 暫留在影像集資產上，然後選取「 」 **[!UICONTROL 編輯]** （鉛筆圖示）。
    * 將滑鼠指標暫留在影像集資產上，選取 **[!UICONTROL 選取]** （勾號圖示），然後選取 **[!UICONTROL 編輯]** （在工具列中）。
-   * 點選影像集資產，然後選取 **[!UICONTROL 編輯]** （鉛筆圖示）。
+   * 在影像集資產上選取，然後選取 **[!UICONTROL 編輯]** （鉛筆圖示）。
 
 1. 若要編輯「影像集」中的影像，請執行下列任一項作業：
 
@@ -255,7 +255,7 @@ ht-degree: 5%
    >
    >您可以編輯影像集中的影像。 導覽至該集並選取 **[!UICONTROL 設定成員]** 在左側邊欄中。 若要開啟編輯視窗，請選取資產上的「鉛筆」圖示。
 
-1. 點選 **[!UICONTROL 儲存]** 完成編輯時。
+1. 選取 **[!UICONTROL 儲存]** 完成編輯時。
 
 ## 預覽影像集 {#previewing-image-sets}
 

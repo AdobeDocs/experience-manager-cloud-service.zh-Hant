@@ -10,10 +10,10 @@ feature: Commerce Integration Framework
 kt: 3046
 thumbnail: 28952.jpg
 exl-id: 4385c9e5-2b25-4f95-952f-72349431cf94
-source-git-commit: 97a6a7865f696f4d61a1fb4e25619caac7b68b51
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '378'
-ht-degree: 2%
+source-wordcount: '364'
+ht-degree: 3%
 
 ---
 
@@ -25,7 +25,7 @@ Adobe Experience Manager (AEM) CIF核心元件可用於多個AEM網站結構，�
 
 >[!VIDEO](https://video.tv.adobe.com/v/28952/?quality=12)
 
-Live Copy和Language Copy的AEM多網站管理功能可與Commerce Integration Framework搭配使用，以便全域管理跨區域和區域設定的網站。
+即時副本和語言副本的AEM多網站管理功能可與Commerce integration framework搭配使用，以全域方式管理跨地區和地區的網站。
 
 建議的設定是使用AEM網站與Adobe Commerce商店檢視之間的1:1關係。
 
@@ -37,13 +37,13 @@ Live Copy和Language Copy的AEM多網站管理功能可與Commerce Integration F
 
 2. 請確定AEM與Adobe Commerce之間的連線正常運作。
 
-3. 按照以下步驟建立CIFCloud Service設定的子設定：
+3. 依照下列步驟建立CIFCloud Service設定的子設定：
 
-   * 在AEM中，前往「工具」 — >「一般」 — > [設定瀏覽器](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)
+   * 在AEM中，前往「工具」 > 「一般」 > [設定瀏覽器](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)
    * 選取您建立的基本組態
    * 使用上述第2點所述的步驟建立設定
 
-   此新組態會建立為基底組態的子組態。 您現在可以前往「工具」 — >「一般」 — >「組態瀏覽器」並建立組態設定。
+   此新組態會建立為基底組態的子組態。 您現在可以前往「工具>一般>組態瀏覽器」並建立組態設定。
 
    >[!TIP]
    >

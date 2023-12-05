@@ -2,10 +2,10 @@
 title: 如何將 Headless 應用程式上線
 description: 在 AEM Headless 開發人員歷程的這一部分中，了解如何從 Git 取出本機程式碼並移至 Cloud Manager Git 以用於 CI/CD 管道，藉此來部署 Headless 應用程式。
 exl-id: 81616e31-764b-44b0-94a6-3ae24ce56bf6
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '1093'
-ht-degree: 98%
+source-wordcount: '1060'
+ht-degree: 93%
 
 ---
 
@@ -83,7 +83,7 @@ ht-degree: 98%
       * 檢查使用者、要求和負載的數量
 * 存取應用程式和空間特定的效能報告
    * 伺服器啟動後，檢查一般量度是否為綠色/橘色/紅色，然後識別特定的應用程式問題
-   * 開啟上面篩選到應用程式或空間 (例如 Photoshop 桌面、付費牆) 的相同報告
+   * 開啟上方經篩選以至應用程式或空間的相同報表(例如Photoshop案頭版、付費牆版)
    * 使用 Splunk log API 存取服務和應用程式效能
    * 如果還有其他問題，請聯絡客戶支援。
 
@@ -124,7 +124,7 @@ ht-degree: 98%
 
 ### 探索單頁應用程式 {#explore-spa}
 
-不過，AEM Headless 存放區不需要就此停止。您可能還記得，在[歷程的快速入門部分](getting-started.md#integration-levels)中，我們簡短討論到 AEM 如何不僅支援 Headless 傳遞和傳統的全堆疊模型，而且還可支援結合兩者優點的混合模型。
+不過，AEM Headless 存放區不需要就此停止。您可能會記得 [歷程的快速入門部分](getting-started.md#integration-levels) 我們簡要討論AEM如何不僅支援headless傳送和傳統的全棧疊模式，而且支援結合了兩者優勢的混合模式。
 
 如果您的專案需要這種靈活性，請繼續學習此歷程的額外部分 (選用)：[如何使用 AEM 建立單頁應用程式 (SPA)。](create-spa.md)
 

@@ -1,9 +1,9 @@
 ---
 title: 什麼是調適型表單運算式？
 description: 使用最適化Forms運算式來新增自動驗證、計算，並開啟或關閉區段的可見度。
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2698'
+source-wordcount: '2683'
 ht-degree: 0%
 
 ---
@@ -274,7 +274,7 @@ guideBridge.on("elementValueChanged", function (event, data)  {
 1. 開啟已建立節點的「屬性」標籤。 例如，開啟的「屬性」標籤 `textboxpatterns`. 新增 `guideComponentType` 屬性並設定其值為 *fd/af/components/formatter/guideTextBox*.
 
 1. 此屬性的值會依您要定義模式的欄位而有所不同。 數值欄位中， `guideComponentType` 屬性為 *fd/af/components/formatter/guideNumericBox*. 「日期挑選器」欄位的值為 *fd/af/components/formatter/guideDatepicker*.&quot;
-1. 您可以將屬性指派給，以新增自訂模式 `textboxpatterns` 節點。 以名稱新增屬性(例如 `pattern1`)，並將其值設為您要新增的模式。 例如，新增屬性 `pattern1` 值為Fax=text{99-999-9999999}. 此模式適用於您在Adaptive Forms中使用的所有文字方塊。
+1. 您可以將屬性指派給，以新增自訂模式 `textboxpatterns` 節點。 以名稱新增屬性(例如， `pattern1`)，並將其值設為您要新增的模式。 例如，新增屬性 `pattern1` 值為Fax=text{99-999-9999999}. 此模式適用於您在Adaptive Forms中使用的所有文字方塊。
 
    ![在CrxDe中建立欄位的自訂模式](assets/creating-custom-patterns.png)
 

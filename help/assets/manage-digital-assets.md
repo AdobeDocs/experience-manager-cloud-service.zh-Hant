@@ -6,10 +6,10 @@ mini-toc-levels: 3
 feature: Asset Management,Publishing,Collaboration,Asset Processing
 role: User,Architect,Admin
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '4301'
-ht-degree: 10%
+source-wordcount: '4270'
+ht-degree: 9%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 10%
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html?lang=zh-Hant) |
+| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html?lang=en) |
 | AEM as a Cloud Service  | 本文章 |
 
 本文說明如何在中管理和編輯資產 [!DNL Adobe Experience Manager Assets]. 管理 [!DNL Content Fragments]，請參閱 [[!DNL Content Fragments]](content-fragments/content-fragments.md) 資產。
@@ -69,13 +69,13 @@ ht-degree: 10%
 若要預覽資產，請依照下列步驟操作。
 
 1. 從「資產」使用者介面，導覽至您要預覽的資產位置。
-1. 點選所需的資產以開啟它。
+1. 選取要開啟的資產。
 
 1. 在預覽模式中，縮放選項可用於 [支援的影像型別](/help/assets/file-format-support.md) （使用互動式編輯）。
 
    若要放大資產，請選取 `+` （或選取資產上的放大鏡）。 若要縮小顯示，請選取 `-`. 放大時，您可以透過平移仔細檢視影像的任何區域。 重設縮放箭頭可讓您回到原始檢視。
 
-   點選 **[!UICONTROL 重設]** 將檢視重設為原始大小。
+   選取 **[!UICONTROL 重設]** 將檢視重設為原始大小。
 
 ## 編輯屬性 {#editing-properties}
 
@@ -93,7 +93,7 @@ ht-degree: 10%
 
 1. 若要排程啟動資產的特定日期/時間，請使用「準時」欄位旁的日 **[!UICONTROL 期選擇器]** 。
 
-   ![日期挑選器](assets/date-picker.png)
+   ![日期選取器](assets/date-picker.png)
 
 1. 若要在特定期間後停用資產，請從日期選擇器旁的停用日期/時間 **[!UICONTROL 關閉時間]** 欄位。 停用日期應晚於資產的啟用日期。 在 [!UICONTROL 關閉時間]，無法透過Assets網頁介面或HTTP API使用資產及其轉譯。
 
@@ -340,7 +340,7 @@ CUG是限制資產存取權的額外方式。 您也可以設定資料夾的登�
 
 一次只能對單一資產使用快速動作圖示。 視您的裝置而定，執行下列動作以顯示快速動作圖示：
 
-* 觸控裝置：觸控並按住。 例如，在iPad上，您可以點選並按住資產，以便顯示快速動作。
+* 觸控裝置：觸控並按住。 例如，在iPad上，您可以選取並按住資產，以便顯示快速動作。
 * 非觸控裝置：游標暫留。 例如，在案頭裝置上，如果游標停留在資產縮圖上，則會顯示快速動作列。
 
 <!-- Hiding this topic via cqdoc-18707
@@ -543,7 +543,7 @@ The editing tools in the [!DNL Experience Manager Assets] interface let you perf
 
    <!--![chlimage_1-247](assets/chlimage_1-247.png)-->
 
-   若要修改彩現PDF檔案的外觀，例如註釋和狀態的字型顏色、大小和樣式、背景顏色，請開啟 **[!UICONTROL 註解PDF設定]** 從Configuration Manager中，修改所需的選項。 例如，若要變更已核准狀態的顯示顏色，請修改對應欄位中的顏色代碼。 如需有關變更註解字型顏色的資訊，請參閱 [註解](/help/assets/manage-digital-assets.md#annotating).
+   若要修改彩現PDF檔案的外觀，例如註解與狀態的字型顏色、大小與樣式、背景顏色，請開啟 **[!UICONTROL 註解PDF設定]** 從Configuration Manager中，修改所需的選項。 例如，若要變更已核准狀態的顯示顏色，請修改對應欄位中的顏色代碼。 如需有關變更註解字型顏色的資訊，請參閱 [註解](/help/assets/manage-digital-assets.md#annotating).
 
    返回演算後的PDF檔案並重新整理。 重新整理的PDF會反映您所做的變更。
 

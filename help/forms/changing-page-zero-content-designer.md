@@ -1,15 +1,13 @@
 ---
 title: 如何在Designer中變更「頁面零」內容？
 description: 針對非Adobe PDF檢視器，變更XFAPDF第0頁顯示的訊息。
-uuid: ac23fb21-3f15-48ea-aeeb-4ecc12b771ac
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
-discoiquuid: 56b6a573-8aba-43e7-acb7-c2da45869d95
 docset: aem65
-source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '248'
-ht-degree: 1%
+source-wordcount: '246'
+ht-degree: 0%
 
 ---
 
@@ -44,7 +42,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->當您重新開啟表單時，您剛建立的自訂屬性可能無法正確地顯示在「表單屬性」對話方塊中。 不過，它仍可正常運作，且表單會顯示更新的「頁面零」訊息。
+>當您重新開啟表單時，您建立的自訂屬性可能無法正確顯示在表單屬性對話方塊中。 不過，它仍可正常運作，且表單會顯示更新的「頁面零」訊息。
 
 >[!MORELIKETHIS]
 >

@@ -2,9 +2,9 @@
 title: 如何根據核心元件為最適化表單新增對新區域設定的支援？
 description: 瞭解如何為最適化表單新增地區設定。
 exl-id: bc06542b-84c8-4c6a-a305-effbd16d5630
-source-git-commit: 5be0c5e347d2ec7ef660a701c8c6faf6a2d6d17a
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '1335'
+source-wordcount: '1333'
 ht-degree: 3%
 
 ---
@@ -74,7 +74,7 @@ AEM Forms提供英文(en)、西班牙文(es)、法文(fr)、義大利文(it)、�
    git clone https://git.cloudmanager.adobe.com/<my-org>/<my-program>/
    ```
 
-   取代 `<my-org>` 和 `<my-program>` 以上的URL中，加入您的組織名稱和方案名稱。 如需詳細指示，以取得組織名稱、計畫名稱或Git存放庫的完整路徑以及複製存放庫所需的認證，請參閱 [存取Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git) 文章。
+   取代 `<my-org>` 和 `<my-program>` 以上的URL中，加入您的組織名稱和方案名稱。 如需取得組織名稱、計畫名稱或Git存放庫的完整路徑以及複製存放庫所需的憑證的詳細說明，請參閱 [存取Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git) 文章。
 
    成功完成命令後，資料夾 `<my-program>` 「 」已建立。 其中包含從Git存放庫複製的內容。 在文章的其餘部分，資料夾將改稱為 `[AEM Forms as a Cloud Service Git repository]`.
 

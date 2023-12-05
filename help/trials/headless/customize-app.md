@@ -4,10 +4,10 @@ description: 使用範例 React 應用程式，了解如何使用 AEM as a Cloud
 hidefromtoc: true
 index: false
 exl-id: 32290ad4-d915-41b7-a073-2637eb38e978
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1019'
-ht-degree: 87%
+source-wordcount: '1017'
+ht-degree: 85%
 
 ---
 
@@ -69,7 +69,7 @@ ht-degree: 87%
 
 1. 從預覽返回內容片段編輯器的瀏覽器標籤。
 
-1. 您需要返回到內容片段編輯器中的正確位置。編輯器左上方的階層連結顯示您在內容層次結構中的位置。在階層連結中，點選或按一下「**峽谷中的越野騎士**」，可返回該頁面。
+1. 您需要返回到內容片段編輯器中的正確位置。編輯器左上方的階層連結顯示您在內容層次結構中的位置。選取 **峽谷中的越野騎士** 在該階層連結中返回該頁面。
 
    ![階層連結](assets/do-not-localize/swap-image-2.png)
 

@@ -2,10 +2,10 @@
 title: 自訂 HTTP 標頭
 description: 瞭解如何設定將傳送至商務引擎的自訂HTTP標頭，以及CIF已傳送的標頭。
 exl-id: 2cef5d4b-45f6-4d72-a24b-67ca53d9057d
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '285'
-ht-degree: 5%
+source-wordcount: '279'
+ht-degree: 3%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 5%
 
 您可以在專案的「Cloud Service設定」頁面中設定HTTP標頭的值：
 
-1. 前往「工具 — >Cloud Service-> CIF設定」中的「Cloud Services設定」頁面
+1. 前往「工具> Cloud Service > CIF設定」中的「Cloud Services設定」頁面
 1. 開啟現有設定或建立設定
 1. 前往「進階」索引標籤，尋找「自訂HTTP標題」多欄位。 您可以選取先前定義的標頭，並為其指派值。
 

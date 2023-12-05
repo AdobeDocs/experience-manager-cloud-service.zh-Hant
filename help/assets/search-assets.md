@@ -6,10 +6,10 @@ mini-toc-levels: 1
 feature: Search,Metadata,Asset Distribution
 role: User,Admin
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '5562'
-ht-degree: 8%
+source-wordcount: '5496'
+ht-degree: 6%
 
 ---
 
@@ -83,7 +83,7 @@ Experience Manager Assets預設會顯示兩個屬性的Facet計數：
 
 截至2023年8月，Experience Manager Assets包含新版9 `damAssetLucene` 索引。 舊版、 `damAssetLucene-8` 在底下，使用 `statistical` 模式，針對每個搜尋面向計數檢查專案範例的存取控制。
 
-`damAssetLucene-9` 將 Oak Query 面向計數的行為變更為不再評估對基本搜尋指數傳回的面向計數存取控制，這會使搜尋回應時間更快。因此，使用者可能會看到面向計數值，其中包括他們無權存取的資產。 這些使用者無法存取、下載或讀取這些資產的任何其他詳細資訊，包括其路徑，或取得任何有關這些資產的進一步資訊。
+`damAssetLucene-9` 變更Oak查詢Facet計數的行為，不再評估基礎搜尋索引傳回之Facet計數的存取控制，進而加快搜尋回應時間。 因此，使用者可能會看到面向計數值，其中包括他們無權存取的資產。 這些使用者無法存取、下載或讀取這些資產的任何其他詳細資訊，包括其路徑，或取得任何有關這些資產的進一步資訊。
 
 如果您需要切換到先前的行為(`statistical` 模式)，請參閱 [內容搜尋與索引](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html) 建立自訂版本的 `damAssetLucene-9` 索引。 Adobe不建議切換至 `secure` 模式，因為對大型結果集的搜尋回應時間造成影響。
 
@@ -144,7 +144,7 @@ Using Smart Tags adds an extra `OR` clause to find any of the search terms as th
 
 1. 從 [!DNL Assets] 使用者介面，開啟資產的屬性頁面。 按一下 **[!UICONTROL 進階]** 並按一下 **[!UICONTROL 新增]** 在 **[!UICONTROL 針對搜尋關鍵字提升]**.
 1. 在 **[!UICONTROL 搜尋提升]** 方塊，指定您要增加影像搜尋的關鍵字，然後按一下 **[!UICONTROL 新增]**. 您可以用相同方式指定多個關鍵字。
-1. 按一下&#x200B;**[!UICONTROL 「儲存並關閉」]**。您針對此關鍵字提升的資產會出現在最上層的搜尋結果中。
+1. 按一下 **[!UICONTROL 儲存並關閉]**. 您針對此關鍵字提升的資產會出現在最上層的搜尋結果中。
 
 您可以藉此機會提升目標關鍵字搜尋結果中某些資產的排名。 請觀看下方的視訊範例。 如需詳細資訊，請參閱 [搜尋 [!DNL Experience Manager]](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html).
 
@@ -154,7 +154,7 @@ Using Smart Tags adds an extra `OR` clause to find any of the search terms as th
 
 ## 設定資產批次大小以顯示搜尋結果 {#configure-asset-batch-size}
 
-管理員現在可在您執行搜尋時設定顯示資產的批次大小。當您進一步向下捲動以載入結果時，資產搜尋結果將以設定的批次大小數字的倍數顯示。您可以從 200、500 和 1000 個資產的可用批次大小中進行選擇。將批次大小設定為較低數字時，會使搜尋回應時間更快。
+管理員現在可以設定在執行搜尋時顯示的資產批次大小。 當您進一步向下捲動以載入結果時，資產搜尋結果將以設定的批次大小數字的倍數顯示。您可以從 200、500 和 1000 個資產的可用批次大小中進行選擇。將批次大小設定為較低數字時，會使搜尋回應時間更快。
 
 例如，如果您將結果計數限制設為200個資產的批次大小，當您開始執行搜尋時，Experience Manager Assets會在搜尋結果中顯示200個資產的批次大小。 當您向下捲動以導覽搜尋結果時，將顯示下一批的200個資產。 此程式會持續進行，直到顯示符合搜尋查詢的所有資產為止。
 
@@ -183,7 +183,7 @@ Using Smart Tags adds an extra `OR` clause to find any of the search terms as th
 
 ### 尋找類似影像 {#visualsearch}
 
-若要尋找視覺上類似使用者選取之影像的影像，請從影像的卡片檢視或工具列按一下「尋找類似 **** 」選項。[!DNL Experience Manager]會顯示來自DAM儲存庫的智慧型標籤影像，這些影像類似於使用者選取的影像。
+若要尋找視覺上類似使用者選取之影像的影像，請從影像的卡片檢視或工具列按一下「尋找類似 **** 」選項。[!DNL Experience Manager] 顯示來自DAM存放庫的智慧型標籤影像，這些影像類似於使用者選取的影像。
 
 ![使用卡片檢視中的選項尋找類似影像](assets/search_find_similar.png)
 
@@ -195,7 +195,7 @@ Using Smart Tags adds an extra `OR` clause to find any of the search terms as th
 
 ### Dynamic Media資產 {#dmassets}
 
-您可以從&#x200B;**[!UICONTROL 「篩選器」]**&#x200B;面板中選取&#x200B;**[!UICONTROL 「動態媒體」]**>**[!UICONTROL 「集合」]**，以篩選動態媒體影像。這樣可以篩選並顯示影像集、旋轉木馬、混合媒體集和迴轉集等資產。
+您可以從&#x200B;**[!UICONTROL 「篩選器」]**&#x200B;面板中選取&#x200B;**[!UICONTROL 「動態媒體」]**>**[!UICONTROL 「集合」]**，以篩選動態媒體影像。這樣可篩選並顯示影像集、轉盤、混合媒體集和迴轉集等資產。
 
 ### 使用中繼資料欄位中的特定值的GQL搜尋 {#gql-search}
 
@@ -284,7 +284,7 @@ Using Smart Tags adds an extra `OR` clause to find any of the search terms as th
 
 | 名稱 | 值 | 範例 | 用途 |
 |---|---|---|---|
-| 資源尾碼(B) | URL中作為資源尾碼的資料夾路徑： [https://localhost:4502/aem/assetpicker.html/&lt;folder_path>](https://localhost:4502/aem/assetpicker.html) | 若要在選取特定檔案夾後啟動資產選擇器（例如選取檔案夾後） `/content/dam/we-retail/en/activities` 選取時，URL的格式為： `https://localhost:4502/aem/assetpicker.html/content/dam/we-retail/en/activities?assettype=images` | 如果您在啟動資產選擇器時要求選擇特定資料夾，請將其作為資源尾碼傳遞。 |
+| 資源尾碼(B) | URL中作為資源尾碼的資料夾路徑： [https://localhost:4502/aem/assetpicker.html/&lt;folder_path>](https://localhost:4502/aem/assetpicker.html) | 若要在選取特定資料夾後啟動資產選擇器（例如，使用資料夾） `/content/dam/we-retail/en/activities` 選取時，URL的格式為： `https://localhost:4502/aem/assetpicker.html/content/dam/we-retail/en/activities?assettype=images` | 如果您在啟動資產選擇器時要求選擇特定資料夾，請將其作為資源尾碼傳遞。 |
 | `mode` | 單一，多個 | <ul><li>`https://localhost:4502/aem/assetpicker.html?mode=single`</li><li>`https://localhost:4502/aem/assetpicker.html?mode=multiple`</li></ul> | 在多重模式中，您可以使用資產選擇器同時選取數個資產。 |
 | `dialog` | true， false | [https://localhost:4502/aem/assetpicker.html?dialog=true](https://localhost:4502/aem/assetpicker.html?dialog=true) | 使用這些引數以Granite對話方塊開啟資產選擇器。 此選項僅適用於透過Granite路徑欄位啟動資產選擇器，並將其設定為pickerSrc URL時。 |
 | `root` | &lt;folder_path> | `https://localhost:4502/aem/assetpicker.html?assettype=images&root=/content/dam/we-retail/en/activities` | 使用此選項可指定資產選擇器的根資料夾。 在此情況下，資產選擇器可讓您僅選取根資料夾下的子資產（直接/間接）。 |
@@ -329,7 +329,7 @@ Using Smart Tags adds an extra `OR` clause to find any of the search terms as th
 * 全文檢索搜尋支援下列運運算元： `-` 和 `^`. 若要將這些字母搜尋為字串常值，請以雙引號括住搜尋運算式。 例如，使用 `"Notebook - Beauty"` 而非 `Notebook - Beauty`.
 * 如果搜尋結果太多，請限制 [搜尋範圍](#scope) 零入所需的資產。 當您知道如何更妥善尋找所需資產（例如特定檔案型別、特定位置、特定中繼資料等）時，此功能就會最有效。
 
-* **標籤**：標籤可協助您更有效率地將可瀏覽和搜尋的資產分類。 標記有助於將適當的分類法傳播給其他使用者和工作流程。[!DNL Experience Manager] 提供使用Adobe Sensei的人工智慧服務自動標籤資產的方法，以透過使用和培訓持續更有效地標籤您的資產。 搜尋資產時，智慧標籤會納入考量。 它可與內建搜尋功能搭配使用。 另請參閱 [搜尋行為](#searchbehavior). 若要最佳化搜尋結果的顯示順序，您可以 [提升搜尋排名](#searchrank) 中的幾個選取資產。
+* **標籤**：標籤可協助您更有效率地將可瀏覽和搜尋的資產分類。 標籤有助於將適當的分類傳播給其他使用者和工作流程。 [!DNL Experience Manager] 提供使用Adobe Sensei的人工智慧服務自動標籤資產的方法，以透過使用和培訓持續更有效地標籤您的資產。 搜尋資產時，智慧標籤會納入考量。 它可與內建搜尋功能搭配使用。 另請參閱 [搜尋行為](#searchbehavior). 若要最佳化搜尋結果的顯示順序，您可以 [提升搜尋排名](#searchrank) 中的幾個選取資產。
 
 * **索引**：搜尋結果中只會傳回已編制索引的中繼資料和資產。 為了獲得更好的涵蓋範圍和效能，請確保建立適當的索引並遵循最佳實務。 另請參閱 [索引](#searchindex).
 
@@ -466,7 +466,7 @@ You can configure [!DNL Experience Manager] to extract the text from the assets 
 
 ### 排序搜尋結果 {#sort}
 
-排序搜尋結果以更快找到所需資產。 您可以在清單檢視中排序搜尋結果，而且只有在您選取 **[[!UICONTROL 檔案]](#searchui)** 從 **[!UICONTROL 篩選器]** 面板。 [!DNL Assets]使用伺服器端排序功能，快速排序資料夾或搜尋查詢結果中的所有資產 (無論多少)。伺服器端排序比用戶端排序提供更快速且更精確的結果。
+排序搜尋結果以更快找到所需資產。 您可以在清單檢視中排序搜尋結果，而且只有在您選取 **[[!UICONTROL 檔案]](#searchui)** 從 **[!UICONTROL 篩選器]** 面板。 [!DNL Assets] 使用伺服器端排序功能，快速排序資料夾或搜尋查詢結果中的所有資產（無論多少）。 伺服器端排序比用戶端排序提供更快速且更精確的結果。
 
 在清單檢視中，您可以排序搜尋結果，就像排序任何資料夾中的資產一樣。 排序功能適用於這些欄 — 名稱、標題、狀態、Dimension、大小、評等、使用狀況、（日期）建立時間、（日期）修改時間、（日期）發佈時間、工作流程和出庫。
 
@@ -531,7 +531,7 @@ You can configure [!DNL Experience Manager] to extract the text from the assets 
 | 搜尋結果太多。 | 廣泛搜尋引數。 | 考慮限制 [搜尋範圍](#scope). 使用智慧標籤可能會為您提供比您預期更多的搜尋結果。 另請參閱 [使用智慧標籤搜尋行為](#withsmarttags). |
 | 不相關或部分相關的搜尋結果。 | 使用智慧標籤來變更搜尋行為。 | 瞭解 [搜尋在智慧型標籤後如何變更](#withsmarttags). |
 | 沒有資產的自動完成建議。 | 新上傳的資產尚未編列索引。 當您開始在Omnisearch列中輸入搜尋關鍵字時，中繼資料無法立即作為建議使用。 | [!DNL Experience Manager] 會等到逾時期間到期（預設為一小時）後才執行背景工作，為所有新上傳或更新資產的中繼資料編制索引，然後將中繼資料新增到建議清單中。 |
-| 沒有搜尋結果. | <ul><li>符合您查詢的資產不存在。 </li><li> 在搜尋查詢前新增空格。 </li><li> 不支援的中繼資料欄位包含您搜尋的關鍵字。</li><li> 在資產休假期間進行搜尋。 </li></ul> | <ul><li>使用不同的關鍵字進行搜尋。 或者，使用智慧標籤或相似性搜尋來改善搜尋結果。 </li><li>[已知限制](#limitations).</li><li>所有中繼資料欄位都不會考慮進行搜尋。 另請參閱 [範圍](#scope).</li><li>稍後搜尋或修改所需資產的開啟時間和關閉時間。</li></ul> |
+| 沒有搜尋結果。 | <ul><li>符合您查詢的資產不存在。 </li><li> 在搜尋查詢前新增空格。 </li><li> 不支援的中繼資料欄位包含您搜尋的關鍵字。</li><li> 在資產休假期間進行搜尋。 </li></ul> | <ul><li>使用不同的關鍵字進行搜尋。 或者，使用智慧標籤或相似性搜尋來改善搜尋結果。 </li><li>[已知限制](#limitations).</li><li>所有中繼資料欄位都不會考慮進行搜尋。 另請參閱 [範圍](#scope).</li><li>稍後搜尋或修改所需資產的開啟時間和關閉時間。</li></ul> |
 | 無法使用搜尋篩選器或述詞。 | <ul><li>搜尋篩選器可能未設定。</li><li>無法供您的登入使用。</li><li>（不太可能）搜尋選項沒有在您使用的部署上自訂。</li></ul> | <ul><li>請聯絡管理員，檢查搜尋自訂專案是否可用。</li><li>請連絡系統管理員，檢查您的帳戶是否有使用自訂的許可權。</li><li>請聯絡管理員，並檢查以下專案的可用自訂專案： [!DNL Assets] 您正在使用的部署。</li></ul> |
 | 搜尋視覺上相似的影像時，缺少預期的影像。 | <ul><li>影像在中無法使用 [!DNL Experience Manager].</li><li>影像未編列索引。 通常是在最近上傳時。</li><li>影像未使用智慧標籤。</li></ul> | <ul><li>將影像新增至 [!DNL Assets].</li><li>請聯絡您的管理員以重新索引存放庫。 此外，請確定您使用的是適當的索引。</li><li>請聯絡您的管理員，為相關資產設定智慧標籤。</li></ul> |
 | 搜尋視覺上相似的影像時，會顯示不相關的影像。 | 視覺化搜尋行為。 | [!DNL Experience Manager] 會儘可能顯示潛在的相關資產。 將相關性較低的影像（如果有的話）新增到結果中，但搜尋排名較低。 當您向下捲動搜尋結果時，相符專案的品質和搜尋資產的相關性會降低。 |

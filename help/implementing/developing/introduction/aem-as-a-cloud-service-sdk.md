@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service SDK
 description: AEMas a Cloud Service軟體開發套件概覽
 exl-id: 06f3d5ee-440e-4cc5-877a-5038f9bd44c6
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1236'
-ht-degree: 2%
+source-wordcount: '1213'
+ht-degree: 1%
 
 ---
 

@@ -2,10 +2,10 @@
 title: 將內容引入雲端服務
 description: 瞭解如何使用Cloud Acceleration Manager將移轉集中的內容擷取到目標Cloud Service例項。
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2326'
-ht-degree: 7%
+source-wordcount: '2275'
+ht-degree: 5%
 
 ---
 
@@ -49,7 +49,7 @@ ht-degree: 7%
 
    * **擦去：** 選擇 `Wipe` 值
       * 此 **擦去** 選項會設定目的地的擷取起點。 如果 **擦去** 已啟用，包含其所有內容的目的地會重設為Cloud Manager中指定的AEM版本。 如果未啟用，目的地會維持目前內容為起點。
-      * 請注意，此選項可以 **NOT** 會影響執行內容內嵌的方式。 內嵌一律會使用內容取代策略，並 _非_ 內容合併策略，因此 **擦去** 和 **非擦去** 在這種情況下，擷取移轉集將會覆寫目的地上相同路徑的內容。 例如，如果移轉集包含 `/content/page1` 目的地已包含 `/content/page1/product1`，內嵌將會移除整個 `page1` 路徑及其子頁面，包括 `product1`，並以移轉集中的內容取代。 這表示執行時，必須仔細規劃 **非擦去** 內嵌至包含任何應維護之內容的目的地。
+      * 此選項會 **NOT** 會影響執行內容內嵌的方式。 內嵌一律會使用內容取代策略，並 _非_ 內容合併策略，因此 **擦去** 和 **非擦去** 在這種情況下，擷取移轉集將會覆寫目的地上相同路徑的內容。 例如，如果移轉集包含 `/content/page1` 目的地已包含 `/content/page1/product1`，內嵌將會移除整個 `page1` 路徑及其子頁面，包括 `product1`，並以移轉集中的內容取代。 這表示執行時，必須仔細規劃 **非擦去** 內嵌至包含任何應維護之內容的目的地。
 
    >[!IMPORTANT]
    > 如果設定 **擦去** 會啟用擷取，並重設整個現有存放庫，包括目標Cloud Service例項的使用者許可權。 對於新增至的管理員使用者，此重設也是true **管理員** 群組，並且必須再次將該使用者新增到管理員群組，才能開始內嵌。
@@ -73,18 +73,18 @@ ht-degree: 7%
 
    ![影像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam23b.png)
 
-## 追加擷取 {#top-up-ingestion-process}
+## 填滿攝入 {#top-up-ingestion-process}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_ingestion_topup"
->title="追加擷取"
+>title="填滿攝入"
 >abstract="使用填滿功能來移動自上次內容轉移活動以來修改的內容。攝入完成後，檢查記錄檔中是否有任何錯誤/警告。如有任何錯誤應立即處理，方法是處理回報的問題或聯絡 Adobe 客戶服務。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/viewing-logs.html?lang=zh-Hant" text="檢視移轉集的"
 
 「內容轉移工具」具備可透過執行 *追加* 移轉集的。 如此可修改移轉集，使其僅包含自上次擷取以來已變更的內容，而無須再次擷取所有內容。
 
 >[!NOTE]
->初始轉移內容後，建議您先頻繁地執行追加差異內容，以縮短最終差異化內容轉移的內容凍結時間，然後再於雲端服務上線。如果您在第一次擷取使用了預先複製步驟，您可以略過後續追加擷取的預先複製（如果追加移轉集大小小於200 GB）。 原因是它可能會為整個程式增加時間。
+>初始轉移內容後，建議您先頻繁地執行追加差異內容，以縮短最終差異化內容轉移的內容凍結時間，然後再於Cloud Service上線。 如果您在第一次擷取使用了預先複製步驟，您可以略過後續追加擷取的預先複製（如果追加移轉集大小小於200 GB）。 原因是它可能會為整個程式增加時間。
 
 若要在某些內嵌完成之後內嵌差異內容，您必須執行 [追加提取](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process)，然後搭配使用內嵌方法與 **擦去** 選項 **已停用**. 請務必閱讀 **擦去** 上方說明，以避免遺失目的地上的內容。
 

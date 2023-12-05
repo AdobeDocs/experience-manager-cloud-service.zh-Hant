@@ -2,7 +2,7 @@
 title: 管理產品目錄頁面和範本
 description: 瞭解如何管理產品目錄頁面和範本
 exl-id: 0d795d85-c865-40d5-941e-e02ee96fdd11
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
 source-wordcount: '718'
 ht-degree: 1%
@@ -89,7 +89,7 @@ CIF只要按幾下即可支援多個範本。 若要建立其他範本，請從�
 
 ![建立範本 ](assets/create-template-picker.png)
 
-現在我們必須將此範本指派給特定類別。 在中開啟屬性 **頁面資訊** 選單並切換至商務標籤。 按一下資料夾圖示以選取 **購買外觀** 類別選擇器中的類別。 您可以啟用核取方塊，將多個類別指派給範本，也可以包含子類別。
+現在您必須將此範本指派給特定類別。 在中開啟屬性 **頁面資訊** 選單並切換至商務標籤。 按一下資料夾圖示以選取 **購買外觀** 類別選擇器中的類別。 您可以啟用核取方塊，將多個類別指派給範本，也可以包含子類別。
 
 ![建立範本關聯](assets/create-template-associate.png)
 

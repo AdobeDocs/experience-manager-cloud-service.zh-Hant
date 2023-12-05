@@ -5,9 +5,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 docset: aem65
 exl-id: 3b5247fa-decb-40eb-a629-6d834976d33c
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2022'
+source-wordcount: '2018'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ Ultraminary-Accessible主題是參考主題。 它有助於示範如何修正最
 
 1. 下載主題套件。
 1. 瀏覽至 **[!UICONTROL Experience Manager]** > **[!UICONTROL 導覽]** ![導覽](assets/Smock_Compass_18_N.svg) > **[!UICONTROL Forms]** 在您的AEM執行個體上。
-1. 點選 **[!UICONTROL 建立]** > **[!UICONTROL 檔案上傳]**. 選取並上傳x Ultramarine-Accessible-Theme.zip檔案。 它會上傳主題到您的AEM執行個體。
+1. 選取 **[!UICONTROL 建立]** > **[!UICONTROL 檔案上傳]**. 選取並上傳x Ultramarine-Accessible-Theme.zip檔案。 它會上傳主題到您的AEM執行個體。
 
 ## 讓最適化表單可供存取
 
@@ -58,8 +58,8 @@ Ultraminary-Accessible主題是參考主題。 它有助於示範如何修正最
 將Ultraminary-Accessible主題套用至您現有的最適化表單。 若要套用主題：
 
 1. 開啟最適化表單進行編輯。
-1. 選取元件並點選父圖示。 在內容功能表中，點選 **[!UICONTROL 最適化表單容器]** 然後點選「設定」圖示。
-1. 在屬性瀏覽器中選取Ultraminary-Accessible主題，然後點選 **[!UICONTROL 儲存]** 圖示。
+1. 選取元件並選取父項圖示。 在內容功能表中，選取 **[!UICONTROL 最適化表單容器]** 然後選取「設定」圖示。
+1. 在屬性瀏覽器中選取Ultramarine-Accessible主題，然後選取 **[!UICONTROL 儲存]** 圖示。
 1. 重新整理瀏覽器視窗。 主題會套用至最適化表單。
 
 套用無障礙主題後，請執行以下列出的其他修正。 除了協助工具主題中涵蓋的協助工具修正之外，這些修正也包括：
@@ -100,7 +100,7 @@ Ultraminary-Accessible主題是參考主題。 它有助於示範如何修正最
 
 若要使用「協助工具」選項，請遵循下列步驟：
 
-1. 選取元件並點選 ![cmppr](assets/cmppr.png).
+1. 選取元件並選取 ![cmppr](assets/cmppr.png).
 1. 按一下 **[!UICONTROL 協助工具]** 在側邊欄中，選擇所需的協助工具選項。
 
 ### 表單元件中的協助工具選項 {#accessibility-options-in-form-components}
@@ -128,7 +128,7 @@ Ultraminary-Accessible主題是參考主題。 它有助於示範如何修正最
 
 確定文字在表單中說明了物件及其用途。 熒幕助讀程式會在遇到影像時讀取此替代文字。 影像必須一律指定替代文字。
 
-選取影像元件並點選 ![cmppr](assets/cmppr.png). 在側邊欄中的「屬性」下方，指定影像的替代文字。
+選取影像元件並選取 ![cmppr](assets/cmppr.png). 在側邊欄中的「屬性」下方，指定影像的替代文字。
 
 ![影像的替代文字](assets/image-properties.png)
 
@@ -150,14 +150,14 @@ Ultraminary-Accessible主題是參考主題。 它有助於示範如何修正最
 
 | 動作 | 鍵盤快速鍵 |
 |---|---|
-| 在表單中向前移動游標 | 定位字元 |
+| 在表單中向前移動游標 | 標籤 |
 | 在表單中向後移動游標 | Shift+Tab鍵 |
 | 移至下一個面板 | Alt+向右鍵 |
 | 移至上一個面板 | Alt+向左鍵 |
 | 重設表單中的填入資料 | Alt+R |
 | 提交表單 | Alt+S |
 
-此外，還有各種鍵盤快速鍵可供您使用 **[!UICONTROL 日期選取器]** 最適化Forms中的元件。 若要啟用快速鍵，請點選 **[!UICONTROL 日期選取器]** 元件並點選 ![設定](assets/configure-icon.svg) 以開啟屬性。 在 **[!UICONTROL 模式]** 區段，使用 **[!UICONTROL 型別]** 和 **[!UICONTROL 圖樣]** 下拉式清單。 儲存屬性以啟用快捷鍵用於 **[!UICONTROL 日期選取器]** 元件。
+此外，還有各種鍵盤快速鍵可供您使用 **[!UICONTROL 日期選取器]** 最適化Forms中的元件。 若要啟用快速鍵，請選取 **[!UICONTROL 日期選取器]** 元件並選取 ![設定](assets/configure-icon.svg) 以開啟屬性。 在 **[!UICONTROL 模式]** 區段，使用 **[!UICONTROL 型別]** 和 **[!UICONTROL 圖樣]** 下拉式清單。 儲存屬性以啟用快捷鍵用於 **[!UICONTROL 日期選取器]** 元件。
 
 下列鍵盤快速鍵適用於Adaptive Forms中的日期選擇器元件：
 
@@ -165,7 +165,7 @@ Ultraminary-Accessible主題是參考主題。 它有助於示範如何修正最
 |---|---|
 | <ul><li>當索引標籤焦點反白標示行事曆圖示時，顯示日期選擇器元件選項</li><li>當索引標籤焦點反白某個選項時，執行點按事件</li> | 空格或Enter |
 | 隱藏日期選擇器元件選項 | Esc 鍵 |
-| <ul><li>在日期選擇器元件中可用的選項間向前移動游標。</li><li>當日期輸入欄位作用中時，將索引標籤焦點設定在行事曆圖示上</li> | 定位字元 |
+| <ul><li>在日期選擇器元件中可用的選項間向前移動游標。</li><li>當日期輸入欄位作用中時，將索引標籤焦點設定在行事曆圖示上</li> | 標籤 |
 | 在日期選擇器元件中可用的選項間向後移動游標 | Shift+Tab鍵 |
 | <ul><li>當索引標籤焦點反白顯示日期輸入欄位時，顯示日期選擇器元件選項</li><li>在日期選擇器元件中可用的行事曆中，將游標向下移動</li> | 向下鍵 |
 | 在日期選擇器元件中可用的行事曆中，將游標向上移動 | 向上鍵 |

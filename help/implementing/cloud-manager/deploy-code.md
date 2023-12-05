@@ -2,10 +2,10 @@
 title: 部署您的程式碼
 description: 了解如何在 AEM as a Cloud Service 中使用 Cloud Manager 管道來將程式碼部署。
 exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1193'
-ht-degree: 96%
+source-wordcount: '1190'
+ht-degree: 94%
 
 ---
 
@@ -151,7 +151,7 @@ _只有 Full Stack Code 流水線類型支援程式碼掃描、功能測試、UI
 
 ### 重新執行 API {#reexecute-API}
 
-除了可在 UI 中使用之外，您還可以使用 [Cloud Manager API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Pipeline-Execution) 觸發重新執行，並且識別被觸發為重新執行的執行。
+除了可在UI中使用外，您還可以使用 [Cloud Manager API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Pipeline-Execution) 以觸發重新執行並識別觸發為重新執行的執行。
 
 #### 觸發重新執行 {#reexecute-deployment-api}
 

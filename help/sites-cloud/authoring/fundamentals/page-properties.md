@@ -2,10 +2,10 @@
 title: 編輯頁面屬性
 description: 瞭解如何定義在AEM中管理頁面所需的屬性。
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2270'
-ht-degree: 6%
+source-wordcount: '2268'
+ht-degree: 3%
 
 ---
 
@@ -44,7 +44,7 @@ ht-degree: 6%
       * **覆寫值**  — 要附加至頁面標題的品牌概要文字。
          * 此值會附加至頁面標題後的垂直號字元，例如「騎行Tuscany」 |隨時準備迎接WKND」
 
-* **HTML ID**
+* **HTMLID**
 
    * **ID**  — 要套用至元件的HTMLID。
 
@@ -74,14 +74,14 @@ ht-degree: 6%
 
    * 保留這些欄位(**準時** 和 **關閉時間**)空白適用於您要立即發佈的頁面，並可於發佈環境中使用，直到頁面停用（一般案例）為止。
 
-* **虛名 URL**
+* **虛名URL**
 
    * 可讓您輸入此頁面的虛名URL，此URL可讓您擁有較短和/或較具表現力的URL。
    * 例如，如果虛名URL設為 `welcome` 至路徑所識別的頁面 `/v1.0/startpage` 適用於網站 `http://example.com`，然後 `http://example.com/welcome` 會是虛名URL `http://example.com/content/v1.0/startpage`
 
   >[!CAUTION]
   >
-  >虛名 URL:
+  >虛名URL：
   >
   >* 必須是唯一的，因此您應該注意該值尚未被其他頁面使用。
   >* 不支援規則運算式模式。
@@ -172,14 +172,14 @@ ht-degree: 6%
 
 ### 個人化 {#personalization}
 
-* **ContextHub 組態**
+* **ContextHub設定**
 
    * **繼承自 &lt;path>**  — 啟用/停用繼承；切換的可用性 **ContextHub路徑** 和 **區段路徑** 進行選取
 
    * **ContextHub路徑**  — 定義 [ContextHub設定](/help/sites-cloud/authoring/personalization/contexthub.md)
    * **區段路徑**  — 定義 [區段路徑](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
 
-* **定位組態**
+* **目標設定**
 
    * **品牌**  — 定義 [品牌以指定目標定位的範圍](/help/sites-cloud/authoring/personalization/targeted-content.md).
 
@@ -188,7 +188,7 @@ ht-degree: 6%
 
 ### 權限 {#permissions}
 
-* **權限**
+* **許可權**
 
    * **新增權限**
    * **編輯已關閉的使用者群組**
@@ -249,7 +249,7 @@ ht-degree: 6%
    * **背景顏色**  — 應用程式的背景顏色，會在應用程式載入時顯示
    * **圖示**  — 代表使用者裝置上的應用程式的圖示
 
-* **快取管理 (進階)**
+* **快取管理（進階）**
 
    * **快取策略與內容重新整理頻率**  — 定義PWA的快取模型
    * **要快取以供離線使用的檔案**

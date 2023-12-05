@@ -2,9 +2,9 @@
 title: 了解雲端服務內容請求
 description: 如果您已向Adobe購買內容請求授權，請瞭解Adobe Experience Cloud as a Service測量的內容請求型別，以及組織與分析報告工具的差異。
 exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '1160'
+source-wordcount: '1165'
 ht-degree: 10%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 10%
 
 ## Cloud Service內容請求的差異{#content-requests-variances}
 
-內容請求可能與組織的Analytics報告工具不同，如下表所述。 一般而言，Analytics工具會透過使用者端檢測收集資料 <b>不應使用</b> 來報告特定網站的內容請求數量，原因很簡單，這些請求通常取決於要觸發的使用者同意，因此會遺漏相當一部分的流量。 收集記錄檔中資料伺服器端的Analytics工具，或為在AEMas a Cloud Service上新增自己CDN的客戶提供CDN報告，可提供較佳的計數。 若要報告頁面檢視及其相關效能，AdobeRUM資料服務是Adobe的建議選項。
+內容請求可能與組織的Analytics報告工具不同，如下表所述。 一般而言， *不要* 使用透過使用者端檢測收集資料的分析工具，報告指定網站的內容請求數量，原因很簡單，這些請求通常取決於要觸發的使用者同意，因此會遺漏相當一部分的流量。 收集記錄檔中資料伺服器端的Analytics工具，或為在AEMas a Cloud Service上新增自己CDN的客戶提供CDN報告，可提供較佳的計數。 若要報告頁面檢視及其相關效能，AdobeRUM資料服務是Adobe的建議選項。
 
 | 差異原因 | 解釋 |
 |---|---|

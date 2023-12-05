@@ -2,10 +2,10 @@
 title: 編輯頁面內容
 description: 建立頁面後，您可以編輯內容以進行所需的更新
 exl-id: 8af0f621-14e8-4605-a51a-a3be21f19092
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2973'
-ht-degree: 6%
+source-wordcount: '2974'
+ht-degree: 5%
 
 ---
 
@@ -85,7 +85,7 @@ ht-degree: 6%
 
   ![預覽按鈕](/help/sites-cloud/authoring/assets/preview.png)
 
-* **注釋**
+* **註解**
 
   讓您新增 [註解](/help/sites-cloud/authoring/fundamentals/annotations.md) 在檢閱頁面時移至頁面。 在第一個註解後，圖示會切換為指示頁面上註解數量的數字。
 
@@ -253,7 +253,7 @@ ht-degree: 6%
 
   ![父按鈕](/help/sites-cloud/authoring/assets/editing-component-toolbar-parent.png)
 
-* **版面配置**
+* **版面**
 
   這可讓您修改 [版面](/help/sites-cloud/authoring/fundamentals/editing-content.md#edit-component-layout) 所選元件的ID。 這僅適用於所選的元件，且不會啟動 [版面模式](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) 整個頁面。
 
@@ -322,7 +322,7 @@ ht-degree: 6%
 
 若要移動段落元件：
 
-1. 使用點選並按住或點選並按住來選取要移動的段落。
+1. 選取要以選取並按住或按住來移動的段落。
 1. 將段落拖曳到新位置。 AEM會指出段落可以儲存的位置。 將其拖曳至所需位置。
 
    ![移動元件](/help/sites-cloud/authoring/assets/editing-moving-component.png)

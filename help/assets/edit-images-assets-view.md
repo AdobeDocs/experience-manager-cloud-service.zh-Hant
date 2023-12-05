@@ -3,10 +3,10 @@ title: 編輯影像
 description: 使用  [!DNL Adobe Photoshop Express]  支援的選項編輯影像，並將更新的影像另存新版。
 role: User
 exl-id: fc21a6ee-bf23-4dbf-86b0-74695a315b2a
-source-git-commit: da54e996bad3e6dc8558cecd5bfd7eb99670b142
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1171'
-ht-degree: 75%
+source-wordcount: '1136'
+ht-degree: 76%
 
 ---
 
@@ -91,7 +91,7 @@ ht-degree: 75%
 
    ![Adobe Express內嵌編輯器](assets/embedded-editor.png)
 
-   您可以善用以下功能 [!DNL Adobe Express] 執行所有與影像編輯相關的動作，例如 [調整影像大小](https://helpx.adobe.com/in/express/using/resize-image.html)， [移除或變更背景顏色](https://helpx.adobe.com/in/express/using/remove-background.html)， [裁切影像](https://helpx.adobe.com/in/express/using/crop-image.html)，以及更多功能。
+   您可以使用以下功能 [!DNL Adobe Express] 執行所有與影像編輯相關的動作，例如 [調整影像大小](https://helpx.adobe.com/in/express/using/resize-image.html)， [移除或變更背景顏色](https://helpx.adobe.com/in/express/using/remove-background.html)， [裁切影像](https://helpx.adobe.com/in/express/using/crop-image.html)，以及更多功能。
 
 1. 完成影像編輯後，您可以將資產下載為新資產，或將資產另存為新版本。
 

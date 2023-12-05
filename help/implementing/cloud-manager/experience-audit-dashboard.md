@@ -2,10 +2,10 @@
 title: 體驗稽核儀表板
 description: 瞭解體驗稽核如何驗證您的部署流程，並透過清晰、資訊豐富的儀表板介面，協助確保部署的變更符合效能、協助工具、最佳實務和SEO的基準標準。
 exl-id: 6d33c3c5-258c-4c9c-90c2-d566eaeb14c0
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '830'
-ht-degree: 73%
+source-wordcount: '824'
+ht-degree: 70%
 
 ---
 
@@ -77,7 +77,7 @@ Cloud Manager中的體驗稽核可確保使用者在網站上的體驗達到最�
 
 ![Lighthouse 分數圖](assets/lighthouse-scores.png)
 
-請注意，圖表上的每個點都是相關月份中所有部署的平均值。
+圖表上的每個點為興趣月份所有部署的平均值。
 
 若要瀏覽回生產管道執行頁面，只需選取瀏覽器上的返回箭頭即可。
 

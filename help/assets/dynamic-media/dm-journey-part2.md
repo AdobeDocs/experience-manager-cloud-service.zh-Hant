@@ -11,9 +11,9 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: cdca41ad-a2cd-4f68-aaa4-5eec33c30f0b
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '2872'
+source-wordcount: '2677'
 ht-degree: 0%
 
 ---
@@ -123,7 +123,7 @@ _從「進階」標籤中選取選項，以建立影像預設集。_
 
 您可以將影像預設集視為影像的配方。 它會每次傳送使用預設集的任何影像；都會一樣。 引數 `&op_brightness=+10` 也增加以稍微增加亮度。
 
-完成後，您儲存了預設集，現在它可用於您擁有的所有影像。 在此案例中，我們要套用 _Medium_ 將影像預設為液體巧克力碗的影像。
+完成後，您儲存了預設集，現在它可用於您擁有的所有影像。 在此案例中，您想要套用 _Medium_ 將影像預設為液體巧克力碗的影像。
 
 ![套用影像預設集 *Medium* 產生影像轉譯](/help/assets/dynamic-media/assets/dm-medium-image-preset.png)
 _套用影像預設集「媒體」以產生影像的轉譯。_

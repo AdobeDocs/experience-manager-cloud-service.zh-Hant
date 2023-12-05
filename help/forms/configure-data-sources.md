@@ -5,10 +5,10 @@ feature: Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2201'
-ht-degree: 5%
+source-wordcount: '2121'
+ht-degree: 2%
 
 ---
 
@@ -48,7 +48,7 @@ ht-degree: 5%
 您可以使用以下專案設定關聯式資料庫： [!DNL Experience Manager] Web主控台設定。 請執行下列動作：
 
 1. 前往 [!DNL Experience Manager] Web主控台： `https://server:host/system/console/configMgr`.
-1. 尋找 **[!UICONTROL Day Commons JDBC連線集區]** 設定。 點選以在編輯模式中開啟設定。
+1. 尋找 **[!UICONTROL Day Commons JDBC連線集區]** 設定。 選取以在編輯模式中開啟設定。
 
    ![jdbc聯結器集區](/help/forms/assets/jdbc_connector.png)
 
@@ -74,7 +74,7 @@ ht-degree: 5%
    >
    > 另請參閱 [使用JDBC DataSourcePool的SQL連線](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool.html) 以取得更多詳細資訊。
 
-1. 點選 **[!UICONTROL 儲存]** 以儲存組態。
+1. 選取 **[!UICONTROL 儲存]** 以儲存組態。
 
 現在，您可以將已設定的關聯式資料庫與表單資料模型搭配使用。
 
@@ -83,7 +83,7 @@ ht-degree: 5%
 You can configure [!DNL Experience Manager] user profile using User Profile Connector configuration in [!DNL Experience Manager] Web Console. Do the following:
 
 1. Go to [!DNL Experience Manager] web console at `https://[server]:[port]/system/console/configMgr`.
-1. Look for **[!UICONTROL AEM Forms Data Integrations - User Profile Connector Configuration]** and tap to open the configuration in edit mode.
+1. Look for **[!UICONTROL AEM Forms Data Integrations - User Profile Connector Configuration]** and select to open the configuration in edit mode.
 1. In the User Profile Connector Configuration dialog, you can add, remove, or update user profile properties. The specified properties are available for use in form data model. Use the following format to specify user profile properties:
 
    `name=[property_name_with_location_in_user_profile],type=[property_type]`
@@ -97,7 +97,7 @@ You can configure [!DNL Experience Manager] user profile using User Profile Conn
    >
    >The **&#42;** in the above example denotes all nodes under the `profile/empLocation/` node in [!DNL Experience Manager] user profile in CRXDE structure. It means that the Form Data Model can access the `city` property of type `string` present in any node under the `profile/empLocation/` node. However, the nodes that contain the specified property must follow a consistent structure.
 
-1. Tap **[!UICONTROL Save]** to save the configuration. -->
+1. Select **[!UICONTROL Save]** to save the configuration. -->
 
 ## 設定雲端服務設定的資料夾 {#cloud-folder}
 
@@ -111,15 +111,15 @@ You can configure [!DNL Experience Manager] user profile using User Profile Conn
    * 請參閱 [設定瀏覽器](https://experienceleague.adobe.com/docs/experience-manager-65/administering/introduction/configurations.html) 檔案以取得詳細資訊。
 1. 請執行以下操作來啟用雲端設定的全域資料夾，或跳過此步驟來建立和設定雲端服務設定的另一個資料夾。
 
-   1. 在 **[!UICONTROL 設定瀏覽器]**，選取 `global` 資料夾並點選 **[!UICONTROL 屬性]**.
+   1. 在 **[!UICONTROL 設定瀏覽器]**，選取 `global` 資料夾並選取 **[!UICONTROL 屬性]**.
 
    1. 在 **[!UICONTROL 設定屬性]** 對話方塊，啟用 **[!UICONTROL 雲端設定]**.
 
-   1. 點選&#x200B;**[!UICONTROL 儲存並關閉]**&#x200B;以儲存設定並退出對話框。
+   1. 選取 **[!UICONTROL 儲存並關閉]** 以儲存組態並結束對話方塊。
 
-1. 在 **[!UICONTROL 設定瀏覽器]**，點選 **[!UICONTROL 建立]**.
+1. 在 **[!UICONTROL 設定瀏覽器]**，選取 **[!UICONTROL 建立]**.
 1. 在 **[!UICONTROL 建立設定]** 對話方塊，指定資料夾的標題，然後啟用 **[!UICONTROL 雲端設定]**.
-1. 點選 **[!UICONTROL 建立]** 以建立為雲端服務設定啟用的資料夾。
+1. 選取 **[!UICONTROL 建立]** 以建立為雲端服務設定啟用的資料夾。
 
 ## 設定RESTful Web服務 {#configure-restful-web-services}
 
@@ -127,11 +127,11 @@ RESTful Web服務可使用以下方式描述 [Swagger規格](https://swagger.io/
 
 ### 為Open API規格2.0版設定RESTful服務 {#configure-restful-services-open-api-2.0}
 
-1. 前往&#x200B;**[!UICONTROL 工具 > 雲端服務 > 資料來源]**。點選以選取您要建立雲端設定的資料夾。
+1. 前往 **[!UICONTROL 「工具>Cloud Service>資料來源」]**. 選取以選取您要建立雲端設定的資料夾。
 
    另請參閱 [設定雲端服務設定的資料夾](configure-data-sources.md#cloud-folder) 以取得為雲端服務設定建立和設定資料夾的資訊。
 
-1. 點選 **[!UICONTROL 建立]** 以開啟 **[!UICONTROL 建立資料來源設定精靈]**. 指定設定的名稱及標題（選擇性），選取 **[!UICONTROL RESTful服務]** 從 **[!UICONTROL 服務型別]** 下拉式清單(可選擇瀏覽並選取設定的縮圖影像，然後點選 **[!UICONTROL 下一個]**.
+1. 選取 **[!UICONTROL 建立]** 以開啟 **[!UICONTROL 建立資料來源設定精靈]**. 指定設定的名稱及標題（選擇性），選取 **[!UICONTROL RESTful服務]** 從 **[!UICONTROL 服務型別]** 下拉式清單(可選擇瀏覽並選取設定的縮圖影像，然後選取 **[!UICONTROL 下一個]**.
 1. 指定RESTful服務的下列詳細資料：
 
    * 選取URL或檔案，從 [!UICONTROL Swagger來源] 下拉式清單，並據此指定 [!DNL Swagger URL] 至[!DNL  Swagger] 定義檔案或上傳 [!DNL Swagger] 從您的本機檔案系統傳送檔案。
@@ -148,15 +148,15 @@ RESTful Web服務可使用以下方式描述 [Swagger規格](https://swagger.io/
 
    <!--If you select **[!UICONTROL Mutual Authentication]** as the authentication type, see [Certificate-based mutual authentication for RESTful and SOAP web services](#mutual-authentication).-->
 
-1. 點選 **[!UICONTROL 建立]** 以建立RESTful服務的雲端設定。
+1. 選取 **[!UICONTROL 建立]** 以建立RESTful服務的雲端設定。
 
 ### 為Open API規格3.0版設定RESTful服務 {#configure-restful-services-open-api-3.0}
 
-1. 前往&#x200B;**[!UICONTROL 工具 > 雲端服務 > 資料來源]**。點選以選取您要建立雲端設定的資料夾。
+1. 前往 **[!UICONTROL 「工具>Cloud Service>資料來源」]**. 選取以選取您要建立雲端設定的資料夾。
 
    另請參閱 [設定雲端服務設定的資料夾](configure-data-sources.md#cloud-folder) 以取得為雲端服務設定建立和設定資料夾的資訊。
 
-1. 點選 **[!UICONTROL 建立]** 以開啟 **[!UICONTROL 建立資料來源設定精靈]**. 指定設定的名稱及標題（選擇性），選取 **[!UICONTROL RESTful服務]** 從 **[!UICONTROL 服務型別]** 下拉式清單(可選擇瀏覽並選取設定的縮圖影像，然後點選 **[!UICONTROL 下一個]**.
+1. 選取 **[!UICONTROL 建立]** 以開啟 **[!UICONTROL 建立資料來源設定精靈]**. 指定設定的名稱及標題（選擇性），選取 **[!UICONTROL RESTful服務]** 從 **[!UICONTROL 服務型別]** 下拉式清單(可選擇瀏覽並選取設定的縮圖影像，然後選取 **[!UICONTROL 下一個]**.
 1. 指定RESTful服務的下列詳細資料：
 
    * 選取URL或檔案，從 [!UICONTROL Swagger來源] 下拉式清單，並據此指定 [!DNL Swagger 3.0 URL] 至[!DNL  Swagger] 定義檔案或上傳 [!DNL Swagger] 從您的本機檔案系統傳送檔案。
@@ -167,7 +167,7 @@ RESTful Web服務可使用以下方式描述 [Swagger規格](https://swagger.io/
 
    <!--If you select **[!UICONTROL Mutual Authentication]** as the authentication type, see [Certificate-based mutual authentication for RESTful and SOAP web services](#mutual-authentication).-->
 
-1. 點選 **[!UICONTROL 建立]** 以建立RESTful服務的雲端設定。
+1. 選取 **[!UICONTROL 建立]** 以建立RESTful服務的雲端設定。
 
 RESTful Services Open API Specification 3.0版不支援的作業包括：
 * 回呼
@@ -208,7 +208,7 @@ RESTful Services Open API Specification 3.0版不支援的作業包括：
 } 
 ```
 
-1. 點選 **[!UICONTROL REST資料來源的表單資料模型HTTP使用者端設定]**.
+1. 選取 **[!UICONTROL REST資料來源的表單資料模型HTTP使用者端設定]**.
 
 1. 在 [!UICONTROL REST資料來源的表單資料模型HTTP使用者端設定] 對話方塊：
 
@@ -228,15 +228,15 @@ RESTful Services Open API Specification 3.0版不支援的作業包括：
 
 若要在中設定以SOAP為基礎的Web服務 [!DNL Experience Manager] as a Cloud Service，請確定您擁有Web服務的WSDL URL，並執行下列動作：
 
-1. 前往&#x200B;**[!UICONTROL 工具 > 雲端服務 > 資料來源]**。點選以選取您要建立雲端設定的資料夾。
+1. 前往 **[!UICONTROL 「工具>Cloud Service>資料來源」]**. 選取以選取您要建立雲端設定的資料夾。
 
    另請參閱 [設定雲端服務設定的資料夾](configure-data-sources.md#cloud-folder) 以取得為雲端服務設定建立和設定資料夾的資訊。
 
-1. 點選 **[!UICONTROL 建立]** 以開啟 **[!UICONTROL 建立資料來源設定精靈]**. 指定設定的名稱及標題（選擇性），選取 **[!UICONTROL SOAP Web服務]** 從 **[!UICONTROL 服務型別]** 下拉式清單(可選擇瀏覽並選取設定的縮圖影像，然後點選 **[!UICONTROL 下一個]**.
+1. 選取 **[!UICONTROL 建立]** 以開啟 **[!UICONTROL 建立資料來源設定精靈]**. 指定設定的名稱及標題（選擇性），選取 **[!UICONTROL SOAP Web服務]** 從 **[!UICONTROL 服務型別]** 下拉式清單(可選擇瀏覽並選取設定的縮圖影像，然後選取 **[!UICONTROL 下一個]**.
 1. 為SOAP Web服務指定下列專案：
 
    * Web服務的WSDL URL。
-   * 服務端點. 在此欄位中指定值，以覆寫WSDL中提及的服務端點。
+   * 服務端點。 在此欄位中指定值，以覆寫WSDL中提及的服務端點。
    * 選取驗證型別 — 無、OAuth2.0([授權代碼](https://oauth.net/2/grant-types/authorization-code/)， [使用者端認證](https://oauth.net/2/grant-types/client-credentials/))、基本驗證或自訂驗證 — 存取SOAP服務，並相應地提供驗證的詳細資訊。
 
      <!--If you select **[!UICONTROL X509 Token]** as the Authentication type, configure the X509 certificate. For more information, see [Set up certificates](install-configure-document-services.md#set-up-certificates-for-reader-extension-and-encryption-service).-->
@@ -244,7 +244,7 @@ RESTful Services Open API Specification 3.0版不支援的作業包括：
 
      <!--If you select **[!UICONTROL Mutual Authentication]** as the authentication type, see [Certificate-based mutual authentication for RESTful and SOAP web services](#mutual-authentication).-->
 
-1. 點選 **[!UICONTROL 建立]** 以建立SOAP Web服務的雲端設定。
+1. 選取 **[!UICONTROL 建立]** 以建立SOAP Web服務的雲端設定。
 
 ### 啟用在SOAP Web服務WSDL中使用匯入陳述式 {#enable-import-statements}
 
@@ -269,11 +269,11 @@ OData服務由其服務根URL識別。 若要在中設定OData服務 [!DNL Exper
 > 表單資料模型支援 [OData版本4](https://www.odata.org/documentation/).
 >如需設定的逐步指南 [!DNL Microsoft®® Dynamics 365]，線上或內部部署，請參閱 [[!DNL Microsoft® Dynamics] OData設定](ms-dynamics-odata-configuration.md).
 
-1. 前往&#x200B;**[!UICONTROL 工具 > 雲端服務 > 資料來源]**。點選以選取您要建立雲端設定的資料夾。
+1. 前往 **[!UICONTROL 「工具>Cloud Service>資料來源」]**. 選取以選取您要建立雲端設定的資料夾。
 
    另請參閱 [設定雲端服務設定的資料夾](#cloud-folder) 以取得為雲端服務設定建立和設定資料夾的資訊。
 
-1. 點選 **[!UICONTROL 建立]** 以開啟 **[!UICONTROL 建立資料來源設定精靈]**. 指定設定的名稱及標題（選擇性），選取 **[!UICONTROL OData服務]** 從 **[!UICONTROL 服務型別]** 下拉式清單(可選擇瀏覽並選取設定的縮圖影像，然後點選 **[!UICONTROL 下一個]**.
+1. 選取 **[!UICONTROL 建立]** 以開啟 **[!UICONTROL 建立資料來源設定精靈]**. 指定設定的名稱及標題（選擇性），選取 **[!UICONTROL OData服務]** 從 **[!UICONTROL 服務型別]** 下拉式清單(可選擇瀏覽並選取設定的縮圖影像，然後選取 **[!UICONTROL 下一個]**.
 1. 指定OData服務的下列詳細資料：
 
    * 要設定之OData服務的服務根URL。
@@ -285,7 +285,7 @@ OData服務由其服務根URL識別。 若要在中設定OData服務 [!DNL Exper
    >
    選取要連線的OAuth 2.0驗證型別 [!DNL Microsoft®® Dynamics] 使用OData端點做為服務根目錄的服務。
 
-1. 點選 **[!UICONTROL 建立]** 以建立OData服務的雲端設定。
+1. 選取 **[!UICONTROL 建立]** 以建立OData服務的雲端設定。
 
 <!--
 ## Configure Microsoft® SharePoint List {#config-sharepoint-list}
@@ -309,7 +309,7 @@ To save data in a tabular form use, Microsoft® SharePoint List. To configure a 
 
 1. Click **[!UICONTROL Connect]**. On a successful connection, the `Connection Successful` message appears.
 1. Select **[!UICONTROL SharePoint Site]** and **[!UICONTROL SharePoint List]** from the drop-down list.
-1. Tap **[!UICONTROL Create]** to create the cloud configuration for the Microsoft® SharePointList.
+1. Select **[!UICONTROL Create]** to create the cloud configuration for the Microsoft® SharePointList.
 
 -->
 
@@ -319,11 +319,11 @@ When you enable mutual authentication for form data model, both the data source 
 
 1. Upload the private key (certificate) to [!DNL Experience Manager Forms] server. To upload the private key:
    1. Log in to your [!DNL Experience Manager Forms] server as an administrator.
-   1. Navigate to **[!UICONTROL Tools]** > **[!UICONTROL Security]** > **[!UICONTROL Users]**. Select the `fd-cloudservice` user and tap **[!UICONTROL Properties]**.
-   1. Open the **[!UICONTROL Keystore]** tab, expand the **[!UICONTROL Add Private Key from KeyStore file]** option, upload the KeyStore File, specify the aliases, passwords, and tap **[!UICONTROL Submit]**. The Certificate is uploaded.  The private key alias is mentioned in the certificate and set while creating the certificate.
+   1. Navigate to **[!UICONTROL Tools]** > **[!UICONTROL Security]** > **[!UICONTROL Users]**. Select the `fd-cloudservice` user and select **[!UICONTROL Properties]**.
+   1. Open the **[!UICONTROL Keystore]** tab, expand the **[!UICONTROL Add Private Key from KeyStore file]** option, upload the KeyStore File, specify the aliases, passwords, and select **[!UICONTROL Submit]**. The Certificate is uploaded.  The private key alias is mentioned in the certificate and set while creating the certificate.
 1. Upload trust certificate to Global Trust Store. To upload the certificate:
    1. Navigate to **[!UICONTROL Tools]** > **[!UICONTROL Security]** > **[!UICONTROL Trust Store]**.
-   1. Expand the **[!UICONTROL Add Certificate from CER file]** option, tap **[!UICONTROL Select Certificate File]**, upload the certificate, and tap **[!UICONTROL Submit]**.
+   1. Expand the **[!UICONTROL Add Certificate from CER file]** option, select **[!UICONTROL Select Certificate File]**, upload the certificate, and select **[!UICONTROL Submit]**.
 1. Configure [SOAP](#configure-soap-web-services) or [RESTful](#configure-restful-web-services) web services as the data source and select **[!UICONTROL Mutual authentication]** as the authentication type. If you configure multiple self-signed certificates for `fd-cloudservice` user, specify the Key Alias name for the certificate.-->
 
 ## 後續步驟 {#next-steps}

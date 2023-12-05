@@ -2,10 +2,10 @@
 title: Adobe Experience Manager as a Cloud Service 架構簡介
 description: Adobe Experience Manager as a Cloud Service 架構簡介。
 exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2665'
-ht-degree: 99%
+source-wordcount: '2658'
+ht-degree: 98%
 
 ---
 
@@ -135,7 +135,7 @@ AEM as a Cloud Service 中的高層級可組合服務清單可以用兩個區段
    * 負責公開客戶資料，例如授權指標 (例如內容請求、儲存、使用者) 或使用報告 (例如上傳、下載數量)。
    * 客戶資料可以透過 API 以及在產品使用者介面中 (例如 Cloud Manager) 公開。
 * 真實使用者指標 (RUM) 服務：
-   * 負責從客戶體驗中收集關鍵量度 (例如頁面瀏覽次數、Core Web Vitals、轉換事件)，並回應相關聯查詢 (例如過去 7 天內指定網域的熱門頁面瀏覽次數)。
+   * 負責從客戶體驗中收集關鍵量度（例如頁面檢視、核心Web存取、轉換事件），以及回應相關查詢（例如過去7天內指定網域的最上層頁面檢視）。
 * Assets Compute 服務：
    * 負責處理上傳的影像、影片和文件；例如 PDF 和 Adobe Photoshop 檔案。處理可以使用 Adobe Sensei 擷取影像和影片中繼資料 (例如描述性標籤或原色色調)，然後產生再現 (例如不同的尺寸或格式)，而且可存取 Adobe Photoshop 和 Adobe Lightroom API 等 API。
 * Identity Management Service (IMS)：

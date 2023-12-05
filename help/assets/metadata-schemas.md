@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: 9e94afeb-1c54-4653-bf52-b0910c0cb6c1
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '2638'
-ht-degree: 10%
+source-wordcount: '2627'
+ht-degree: 9%
 
 ---
 
@@ -92,17 +92,17 @@ ht-degree: 10%
 | -------------------------------- | ----------------------------------------------------------------------------------- |
 | [!UICONTROL 區段標題] | 新增區段標題以取得常用元件清單。 |
 | [!UICONTROL 單行文字] | 新增單行文字屬性。 它會儲存為字串。 |
-| [!UICONTROL 多值文字] | 新增多值文字屬性。它會儲存為字串陣列。 |
+| [!UICONTROL 多值文字] | 新增多值文字屬性。 它會儲存為字串陣列。 |
 | [!UICONTROL 數字] | 新增數字元件。 |
 | [!UICONTROL 日期] | 新增日期元件。 |
-| [!UICONTROL 下拉式] | 新增下拉式清單。 |
-| [!UICONTROL 標準標記] | 新增標記. |
+| [!UICONTROL 下拉式清單] | 新增下拉式清單。 |
+| [!UICONTROL 標準標籤] | 新增標籤。 |
 | [!UICONTROL 智慧標記] | 透過自動新增中繼資料標記增強搜尋功能。 |
 | [!UICONTROL 隱藏欄位] | 新增隱藏欄位。 儲存資產時，會以POST引數的形式傳送。 |
 | [!UICONTROL 資產引用者] | 新增此元件以檢視資產所參考的資產清單。 |
 | [!UICONTROL 資產引用] | 新增以顯示參照資產的資產清單。 |
 | [!UICONTROL 產品引用] | 新增以顯示與資產連結的產品清單。 |
-| [!UICONTROL 關聯式中繼資料] | 新增以控制其他中繼資料索引標籤在資產屬性頁面中的顯示。 |
+| [!UICONTROL 內容中繼資料] | 新增以控制其他中繼資料索引標籤在資產屬性頁面中的顯示。 |
 
 <!-- TBD: Ratings are not available in Experience Manager as a Cloud Service. Removed via cqdoc-18089 ticket. 
 | [!UICONTROL Asset Rating]        | Add to display options for rating the asset.                                       |
@@ -227,7 +227,7 @@ Experience Manager僅可讓您刪除自訂結構表單。 它不允許您刪除�
 
 1. 在 **[!UICONTROL 中繼資料結構Forms]** 頁面，選取 `my_default` 表單，然後按一下 **[!UICONTROL 編輯]**.
 1. 在 **[!UICONTROL 中繼資料結構編輯器]** 頁面，新增文字欄位至結構表單。 例如，新增含有標籤的欄位 **[!UICONTROL 類別]**.
-1. 按一下「**[!UICONTROL 儲存]**」。修改後的表單會列在 **[!UICONTROL 中繼資料結構Forms]** 頁面。
+1. 按一下 **[!UICONTROL 儲存]**. 修改後的表單會列在 **[!UICONTROL 中繼資料結構Forms]** 頁面。
 1. 選取 **[!UICONTROL 套用至資料夾]** 將自訂中繼資料套用至資料夾。
 1. 選取要套用修改後之結構描述的資料夾，然後選取 **[!UICONTROL 套用]**.
 1. 如果資料夾套用了其他中繼資料結構，系統會顯示一則訊息，警告您即將覆寫現有的中繼資料結構。 按一下 **覆寫**.
@@ -245,7 +245,7 @@ Experience Manager僅可讓您刪除自訂結構表單。 它不允許您刪除�
 1. 按一下Experience Manager標誌，然後導覽至 **[!UICONTROL 工具]** > **[!UICONTROL 資產]** > **[!UICONTROL 中繼資料結構]**. 此時會顯示&#x200B;**[!UICONTROL 「中繼資料結構描述表單」]**&#x200B;頁面。
 1. 將預設中繼資料表單儲存為自訂表單。 例如，儲存為 `my_default`.
 1. 編輯自訂表格。 新增必要欄位。 例如，新增 **[!UICONTROL 類別]** 欄位，並將欄位設為必填。
-1. 按一下「**[!UICONTROL 儲存]**」。修改後的表單會列在 **[!UICONTROL 中繼資料結構Forms]** 頁面。 選取表單，然後選取 **[!UICONTROL 套用至資料夾]** 將自訂中繼資料套用至資料夾。
+1. 按一下 **[!UICONTROL 儲存]**. 修改後的表單會列在 **[!UICONTROL 中繼資料結構Forms]** 頁面。 選取表單，然後選取 **[!UICONTROL 套用至資料夾]** 將自訂中繼資料套用至資料夾。
 1. 導覽至資料夾，然後上傳部分資產，其中遺失您新增至自訂表單之必要欄位的中繼資料。 資產的「卡片」檢視中會顯示訊息，指出必填欄位缺少中繼資料。
 1. （選擇性）存取 `https://[server]:[port]/system/console/components/`. 設定並啟用 `com.day.cq.dam.core.impl.MissingMetadataNotificationJob` 預設為停用的元件。 設定Experience Manager檢查資產中繼資料有效性的頻率。
 

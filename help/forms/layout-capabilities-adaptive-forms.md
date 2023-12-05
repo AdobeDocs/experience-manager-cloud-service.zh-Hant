@@ -2,9 +2,9 @@
 title: 最適化Forms的版面配置功能有哪些？
 description: Adaptive Forms在各種裝置上的版面配置與外觀是由版面配置設定所控制。 瞭解各種版面以及如何套用它們。
 exl-id: e30c6ff9-692b-4415-8f14-b4ef616b2d12
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '860'
+source-wordcount: '847'
 ht-degree: 8%
 
 ---
@@ -39,11 +39,11 @@ Before learning about the different layout capabilities of Adaptive Forms, read 
 
 若要變更最適化表單的版面，請在以下位置使用製作模式： [!DNL Experience Manager].
 
-## [!UICONTROL 面板版面配置] {#panel-layout}
+## [!UICONTROL 面板配置] {#panel-layout}
 
 表單作者可以將版面配置與調適型表單的每個面板建立關聯，包括根面板。
 
-面板配置位於 `/libs/fd/af/layouts/panel` 位置。 點選面板並選取 ![cmppr1](assets/configure-icon.svg) 以檢視面板屬性。
+面板配置位於 `/libs/fd/af/layouts/panel` 位置。 選取面板並選取 ![cmppr1](assets/configure-icon.svg) 以檢視面板屬性。
 
 ![最適化表單根面板的面板配置清單](assets/layouts.png)
 

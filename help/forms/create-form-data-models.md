@@ -5,10 +5,10 @@ feature: Form Data Model
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: b17b7441-912c-44c7-a835-809f014a8c86
-source-git-commit: a942e87a33775851631a1fe123fa3e8d2686bb30
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1548'
-ht-degree: 2%
+source-wordcount: '1512'
+ht-degree: 1%
 
 ---
 
@@ -37,17 +37,17 @@ ht-degree: 2%
 請確定您已依照中的說明，設定您要用於表單資料模型中的資料來源 [設定資料來源](configure-data-sources.md). 執行下列作業，根據已設定的資料來源建立表單資料模型：
 
 1. 在 [!DNL Experience Manager] 作者例項，瀏覽至 **[!UICONTROL Forms >資料整合]**.
-1. 點選 **[!UICONTROL 建立>表單資料模型]**.
+1. 選取 **[!UICONTROL 建立>表單資料模型]**.
 1. 在建立表單資料模型對話方塊中：
 
    * 指定表單資料模型的名稱。
    * (**可選**)指定表單資料模型的標題、說明和標籤。
-   * (**選填，且僅在已設定資料來源時適用**)點選「 」旁的勾選圖示 **[!UICONTROL 資料來源組態]** 欄位並選取您要使用之資料來源的雲端服務所在的設定節點。 它會將下一頁可供選取的資料來源清單，限制在所選設定節點中可供選取的資料來源。 但是，任何 [!DNL Experience Manager] 預設會列出使用者設定檔資料來源。 如果您未選取組態節點，則會列出所有組態節點的資料來源。
+   * (**選填，且僅在已設定資料來源時適用**)選取「 」旁的勾選圖示 **[!UICONTROL 資料來源組態]** 欄位並選取您要使用之資料來源的雲端服務所在的設定節點。 它會將下一頁可供選取的資料來源清單，限制在所選設定節點中可供選取的資料來源。 但是，任何 [!DNL Experience Manager] 預設會列出使用者設定檔資料來源。 如果您未選取組態節點，則會列出所有組態節點的資料來源。
 
-1. 點選 **[!UICONTROL 下一個]**.
+1. 選取 **[!UICONTROL 下一個]**.
 
 1. (**僅適用於已設定資料來源時**) **[!UICONTROL 選取資料來源]** 畫面會列出可用的資料來源（若有）。 選取您要在表單資料模型中使用的資料來源。
-1. 點選 **[!UICONTROL 建立]** 在確認對話方塊上，點選 **[!UICONTROL 開啟]** 以開啟表單資料模型編輯器。
+1. 選取 **[!UICONTROL 建立]** 在確認對話方塊中，選取 **[!UICONTROL 開啟]** 以開啟表單資料模型編輯器。
 
    讓我們檢閱表單資料模型編輯器UI的不同元件。
 
@@ -71,21 +71,21 @@ ht-degree: 2%
 
 執行下列動作，將資料來源新增或更新至現有的表單資料模型。
 
-1. 前往 **[!UICONTROL Forms >資料整合]**，選取您要新增或更新資料來源的表單資料模型，然後點選 **[!UICONTROL 屬性]**.
+1. 前往 **[!UICONTROL Forms >資料整合]**，選取您要新增或更新資料來源的表單資料模型，然後選取 **[!UICONTROL 屬性]**.
 1. 在表單資料模型屬性中，前往 **[!UICONTROL 更新來源]** 標籤。
 
    在 **[!UICONTROL 更新來源]** 標籤：
 
-   * 點選中的「瀏覽」圖示 **[!UICONTROL 內容感知設定]** 欄位並選取您要新增之資料來源的雲端設定所在的設定節點。 如果您未選取節點，則雲端設定只會位於 `global` 點選時列出節點 **[!UICONTROL 新增來源]**.
+   * 選取中的瀏覽圖示 **[!UICONTROL 內容感知設定]** 欄位並選取您要新增之資料來源的雲端設定所在的設定節點。 如果您未選取節點，則雲端設定只會位於 `global` 當您選取時，節點會列出 **[!UICONTROL 新增來源]**.
 
-   * 若要新增資料來源，請點選 **[!UICONTROL 新增來源]** 並選取要新增至表單資料模型的資料來源。 所有資料來源皆於中設定 `global` 和選取的組態節點（如果有的話）會顯示出來。
+   * 若要新增資料來源，請選取 **[!UICONTROL 新增來源]** 並選取要新增至表單資料模型的資料來源。 所有資料來源皆於中設定 `global` 和選取的組態節點（如果有的話）會顯示出來。
 
-   * 若要以相同型別的另一個資料來源取代現有的資料來源，請點選 **[!UICONTROL 編輯]** 圖示並選取可用資料來源清單中的「 」。
-   * 若要刪除現有的資料來源，請點選 **[!UICONTROL 刪除]** 資料來源的圖示。 如果將資料來源中的資料模型物件新增至表單資料模型，則會停用「刪除」圖示。
+   * 若要以相同型別的另一個資料來源取代現有的資料來源，請選取 **[!UICONTROL 編輯]** 圖示並選取可用資料來源清單中的「 」。
+   * 若要刪除現有的資料來源，請選取 **[!UICONTROL 刪除]** 資料來源的圖示。 如果將資料來源中的資料模型物件新增至表單資料模型，則會停用「刪除」圖示。
 
      ![fdm-properties](assets/fdm-properties.png)
 
-1. 點選 **[!UICONTROL 儲存並關閉]** 以儲存更新。
+1. 選取 **[!UICONTROL 儲存並關閉]** 以儲存更新。
 
 >[!NOTE]
 >
@@ -120,7 +120,8 @@ ht-degree: 2%
       1. 在本機開發執行個體上 `/system/console/configMgr`，選取名為的工廠OSGi設定 **[!UICONTROL Apache Sling內容感知設定覆寫提供者： OSGi設定]**.
       1. 提供說明。
       1. 選取 **[!UICONTROL 已啟用]**.
-      1. 在覆寫下，根據sling覆寫語法中的環境，提供需要變更的欄位。 如需詳細資訊，請參閱 [Apache Sling內容感知設定 — 覆寫](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration-override.html#override-syntax). 例如，`cloudconfigs/fdm/{configName}/url="newURL"`。選取「 」，可新增多個覆寫 **[!UICONTROL +]**.
+      1. 在覆寫下，根據sling覆寫語法中的環境，提供需要變更的欄位。 如需詳細資訊，請參閱 [Apache Sling內容感知設定 — 覆寫](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration-override.html#override-syntax). 例如， `cloudconfigs/fdm/{configName}/url="newURL"`.
+選取「 」，可新增多個覆寫 **[!UICONTROL +]**.
       1. 選取&#x200B;**[!UICONTROL 儲存]**。
       1. 若要取得OSGi設定JSON，請遵循中的步驟 [使用AEM SDK快速入門產生OSGi設定](/help/implementing/deploying/configuring-osgi.md#generating-osgi-configurations-using-the-aem-sdk-quickstart).
       1. 將JSON放在上一步建立的OSGi Factory設定檔案中。

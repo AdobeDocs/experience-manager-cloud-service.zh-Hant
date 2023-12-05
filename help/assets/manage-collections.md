@@ -6,10 +6,10 @@ mini-toc-levels: 1
 feature: Collections,Asset Management
 role: User
 exl-id: b0798adc-56a4-4577-b4ee-8d1fca3bff09
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2400'
-ht-degree: 19%
+source-wordcount: '2391'
+ht-degree: 18%
 
 ---
 
@@ -44,7 +44,7 @@ ht-degree: 19%
 
 ### 使用靜態參考建立集合 {#create-a-collection-with-static-references}
 
-您可以建立具有靜態參照的集合，例如具有資產、資料夾、集合、迴轉集及影像集參照的集合。
+您可以建立具有靜態參照的集合，例如，具有資產、資料夾、集合、迴轉集及影像集參照的集合。
 
 1. 導覽至 **[!UICONTROL 集合]** 主控台。
 1. 從工具列中選取 **[!UICONTROL 建立]**.
@@ -231,7 +231,7 @@ Adobe Enterprise Manager Assets可讓您大量編輯許多集合的中繼資料�
 
 在「資產」使用者介面中，您可以根據特定規則、搜尋准則或自訂搜尋刻面來搜尋或篩選資產。如果您將這些項目儲存為「 **[!UICONTROL 已儲存的搜尋]**」，您稍後可從「篩選」面板的「已儲存的搜尋 **** 」清單中存取。建立儲存的搜尋也會建立智慧型系列。
 
-儲存的搜尋會在您建立智慧型系列時建立。智慧型系列會自動新增至「已儲 **[!UICONTROL 存的搜尋]** 」清單。系列的「已保存的搜索」查詢將保存在相 `dam:query` 對位置CRXDE的屬性中 `/content/dam/collections/`。您可以儲存的搜尋以及清單中顯示的已儲存搜尋沒有限制。
+儲存的搜尋會在您建立智慧型系列時建立。智慧型系列會自動新增至「已儲 **[!UICONTROL 存的搜尋]** 」清單。系列的「已儲存的搜尋」查詢會儲存在 `dam:query` CRXDE中相對位置的屬性 `/content/dam/collections/`. 您可以儲存的搜尋以及清單中顯示的已儲存搜尋沒有限制。
 
 >[!NOTE]
 >
@@ -254,7 +254,7 @@ Adobe Enterprise Manager Assets可讓您大量編輯許多集合的中繼資料�
 
 1. 在「系列」控制檯中，選取您要執行工作流程的系列。
 1. 選取GlobalNav圖示，然後選擇 **[!UICONTROL 時間表]** 從清單中。
-1. 從時間軸中，選取或點選底部的脫字元號圖示，然後選取「 」 **[!UICONTROL 開始工作流程]**.
+1. 從時間軸中，選取底部的脫字元圖示，然後選取 **[!UICONTROL 開始工作流程]**.
 1. 在「開 **[!UICONTROL 始工作流]** 」部分，從清單中選擇工作流模型。例如，選取「 **[!UICONTROL DAM更新資產」模型]** 。
 1. 輸入工作流程的標題，然後選取 **[!UICONTROL 開始]**.
 1. 在對話方塊中選取 **[!UICONTROL 繼續]**. 工作流程會在集合中的所有資產上執行。

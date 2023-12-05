@@ -2,10 +2,10 @@
 title: 使用 Universal Editor 編寫內容
 description: 了解內容作者使用 Universal Editor 建立內容有多簡單和直覺。
 exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2398'
-ht-degree: 58%
+source-wordcount: '2387'
+ht-degree: 55%
 
 ---
 
@@ -172,7 +172,7 @@ Universal Editor 標頭始終顯示在畫面頂端，就在 [Experience Cloud �
 
 >[!TIP]
 >
->如需有關使用 Universal Editor 進行發佈的詳細資訊，請參閱[使用 Universal Visual Editor 發佈內容](publishing.md)文件。
+>檢視檔案 [使用通用編輯器發佈內容](publishing.md) 以取得有關使用Universal Editor發佈的詳細資訊。
 
 ### 模式邊欄 {#rail}
 
@@ -232,7 +232,7 @@ Universal Editor 標頭始終顯示在畫面頂端，就在 [Experience Cloud �
 
 ![元件詳細資料](assets/component-details.png)
 
-請注意，並非所有元件都有可以顯示和/或編輯的詳細資料。
+並非所有元件都有可顯示及/或編輯的詳細資料。
 
 >[!TIP]
 >
@@ -300,7 +300,7 @@ Universal Editor 標頭始終顯示在畫面頂端，就在 [Experience Cloud �
 
 >[!TIP]
 >
->請注意，在元件模式中，點選或按一下內容會選取它進行編輯。 如果您想透過以下連結導覽內容，請切換至 [預覽模式。](#preview-mode)
+>在元件模式中，點選或按一下內容會選取它以進行編輯。 如果您想透過以下連結導覽內容，請切換至 [預覽模式。](#preview-mode)
 
 根據您選取的內容，您可能有不同的就地編輯選項，而且您可能會為中的內容提供其他資訊和選項 [屬性邊欄。](#properties-rail)
 
@@ -407,14 +407,14 @@ Universal Editor 標頭始終顯示在畫面頂端，就在 [Experience Cloud �
 
 內容編輯完成後，您通常會希望瀏覽其內容，以查看它在其他頁面內容中的樣子。在[預覽模式](#preview-mode)中，您可以點選連結，像讀者一樣瀏覽您的內容。內容在編輯器中呈現的樣子就是將會發佈的樣子。
 
-請注意，在預覽模式下，點選或按一下內容的回應與內容讀者的回應一樣。如果您想要選取要編輯的內容，請切換至 [元件模式。](#component-mode)
+在預覽模式中，點選或按一下內容的反應就像對內容的讀者一樣。 如果您想要選取要編輯的內容，請切換至 [元件模式。](#component-mode)
 
 ## 其他資源 {#additional-resources}
 
 若要了解有關 Universal Editor 的詳細資訊，請參閱以下文件。
 
 * [Universal Editor 簡介](introduction.md) - 了解 Universal Editor 如何在任意實作中編輯任何方面的內容，以便提供卓越的體驗、提高內容速度並提供最先進的開發人員體驗。
-* [使用 Universal Editor 發佈內容](publishing.md) - 了解 Universal Editor 如何發佈內容，和您的應用程式如何處理發佈的內容。
+* [使用通用編輯器發佈內容](publishing.md)  — 瞭解通用編輯器如何發佈內容，以及您的應用程式如何處理已發佈的內容。
 * [AEM 中 Universal Editor 快速入門](getting-started.md) - 了解如何存取 Universal Editor，以及如何開始檢測您的第一個 AEM 應用程式以使用它。
 * [Universal Editor 架構](architecture.md) - 了解 Universal Editor 的架構，以及資料如何在其服務和階層之間流動。
 * [屬性和類型](attributes-types.md) - 了解 Universal Editor 需要的資料屬性和類型。

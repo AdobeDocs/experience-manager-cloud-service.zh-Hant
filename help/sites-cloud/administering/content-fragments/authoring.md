@@ -4,10 +4,10 @@ description: 瞭解如何為內容片段製作內容，然後根據用途建立�
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
-source-git-commit: 3f934add7521586caf728c4bfa37f2d1a82b144a
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2267'
-ht-degree: 7%
+source-wordcount: '2266'
+ht-degree: 6%
 
 ---
 
@@ -58,7 +58,7 @@ ht-degree: 7%
    * 在「**屬性**」標籤中，您可以更新片段的「**標題**」和「**說明**」，或者更新「**變數**」
 * 中央面板：顯示所選變數的實際欄位和內容
    * 允許您編輯內容
-   * 如果「**標籤預留位置**」欄位是在此處所示模型中定義，那麼這些欄位可用於導覽；它們會水準顯示或作為下拉式清單顯示。
+   * 如果 **索引標籤預留位置** 欄位會在此顯示的模式中定義，並可用於導覽；欄位會水準顯示或作為下拉式清單顯示。
 
   >[!NOTE]
   >
@@ -92,7 +92,7 @@ ht-degree: 7%
 
 ### 追蹤連結 {#follow-links}
 
-在編輯器的各個部分中，您可以看到連結圖示。 這可用來開啟顯示的專案；例如內容片段模型、父參考或正在參考的片段：
+在編輯器的各個部分中，您可以看到連結圖示。 這可用來開啟顯示的專案；例如，內容片段模型、父參照或參照的片段：
 
 ![內容片段編輯器 — 連結圖示](assets/cf-authoring-link-icon.png)
 
@@ -190,7 +190,7 @@ ht-degree: 7%
 的 **[多行文字](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)** 定義為 **RTF文字**，提供各種功能：
 
 * 編輯內容：
-   * 還原/取消復原
+   * 還原/重做
    * 貼上/貼上成文字
    * 複製
    * 選取段落格式

@@ -2,10 +2,10 @@
 title: 轉譯專用內容片段設定元件
 description: 轉譯專用內容片段設定元件
 exl-id: 6606dc3b-f1b8-4941-8fd0-f69cbd414afa
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '521'
-ht-degree: 6%
+source-wordcount: '519'
+ht-degree: 5%
 
 ---
 
@@ -105,7 +105,7 @@ OSGi設定是：
  <tbody>
   <tr>
    <td><code>paragraphScope</code></td>
-   <td><p>字串屬性，定義在中時如何輸出段落 <em>單一元素轉譯模式</em>.</p> <p>值:</p>
+   <td><p>字串屬性，定義在中時如何輸出段落 <em>單一元素轉譯模式</em>.</p> <p>值：</p>
     <ul>
      <li><code>all</code> ：呈現所有段落</li>
      <li><code>range</code> ：呈現以下專案提供的段落範圍： <code>paragraphRange</code></li>
@@ -113,7 +113,7 @@ OSGi設定是：
   </tr>
   <tr>
    <td><code>paragraphRange</code></td>
-   <td><p>字串屬性，定義段落範圍(若在 <em>單一元素轉譯模式</em>.</p> <p>格式:</p>
+   <td><p>字串屬性，定義段落範圍(若在 <em>單一元素轉譯模式</em>.</p> <p>格式：</p>
     <ul>
      <li><code>1</code> 或 <code>1-3</code> 或 <code>1-3;6;7-8</code> 或 <code>*-3;5-*</code>
      <ul>

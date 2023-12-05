@@ -2,10 +2,10 @@
 title: 管理標記
 description: 了解如何在 AEM 中管理標記，以便整理您的內容。
 exl-id: 42480699-b7a7-4678-a763-569a9b7573e2
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2210'
-ht-degree: 77%
+source-wordcount: '2200'
+ht-degree: 73%
 
 ---
 
@@ -62,7 +62,7 @@ ht-degree: 77%
 若要存取標記主控台：
 
 1. 使用管理權限登入編寫環境。
-1. 在全域導覽功能表中選取 **`Tools`** > **`General`** ->
+1. 在全域導覽功能表中選取 **`Tools`** > **`General`** >
    **`Tagging`**。
 
 ![AEM 中的標記主控台](/help/sites-cloud/administering/assets/tagging-console.png)
@@ -91,7 +91,7 @@ ht-degree: 77%
 
 1. 輸入必要資訊後，請選取 **建立**.
 
-命名空間即建立完成。請注意，在標記主控台中，命名空間位於最低層級 (在主控台的最左欄)，並以檔案夾圖示表示，反映其作為「容器」或其他標記分組的性質。
+命名空間即建立完成。在標籤主控台中，名稱空間位於最低層級（在主控台中最左側的欄），並由資料夾圖示表示，這反映了它們作為「容器」或其他標籤分組的性質。
 
 你現在即可在此命名空間中[建立新標記](#creating-tags)或是[管理現有標記。](#managing-tags)
 
@@ -163,7 +163,7 @@ Be sure to [apply permissions](#setting-tag-permissions) to the namespace before
 * [合併](#merging-tags)
 * [刪除](#deleting-tags)
 
-請注意，當工具列上的空間不足時，其他選項會在省略符號圖示後方提供。
+當工具列上有足夠的可用空間時，省略符號圖示後面會有其他選項。
 
 ### 檢視標記屬性 {#viewing-tag-properties}
 
@@ -243,7 +243,7 @@ Be sure to [apply permissions](#setting-tag-permissions) to the namespace before
 
    ![檢視標記參考的詳細資料](assets/tag-references-detail.png)
 
-將滑鼠停留在清單中的參考內容上或進行點選，即會顯示內容的完整路徑。
+將滑鼠停留在清單中或選取參照內容，以顯示內容的完整路徑。
 
 如需有關選取檢視模式和邊欄的詳細資訊，請參閱 [基本處理](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector).
 
@@ -359,7 +359,7 @@ Tag permissions are ['secure (by default)'](/help/sites-administering/production
 
 1. 選取您要翻譯的標籤，然後選取「 」 **編輯** （在工具列中）。
 
-1. 在&#x200B;**編輯標記**&#x200B;對話框中 (在&#x200B;**本地化**&#x200B;欄中)，選取目標語言，例如德文。
+1. 在 **編輯標籤** 對話方塊，在 **本地化** 欄，選取目標語言，例如，德文。
 
 1. 在顯示的&#x200B;**德文**&#x200B;欄位中，提供翻譯後的標題。
 

@@ -4,10 +4,10 @@ description: 瞭解如何從主控台和編輯器管理您的AEM內容片段（�
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
-source-git-commit: 3f934add7521586caf728c4bfa37f2d1a82b144a
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2622'
-ht-degree: 3%
+source-wordcount: '2617'
+ht-degree: 2%
 
 ---
 
@@ -137,7 +137,7 @@ ht-degree: 3%
 * **[在新編輯器中開啟](#editing-the-content-of-your-fragment)**
 * **[開啟](/help/assets/content-fragments/content-fragments-variations.md)** （在原始編輯器中）
 * **[發佈](#publishing-and-previewing-a-fragment)** (和&#x200B;**[取消發佈](#unpublishing-a-fragment)**)
-* **[管理標記](#manage-tags)**
+* **[管理標籤](#manage-tags)**
 * **[複製](/help/assets/manage-digital-assets.md)**
 * **[移動](/help/assets/manage-digital-assets.md)**
 * **[重新命名](/help/assets/manage-digital-assets.md)**
@@ -172,12 +172,12 @@ ht-degree: 3%
       * **同步中**：內容片段在網站上同步 **作者** 和 **預覽** 服務。
       * **不同步**：內容片段在上的不同步 **作者** 和 **預覽** 服務。 您需要 **發佈** 至 **預覽** 以確保兩個執行個體恢復同步。
       * 空白：內容片段不存在於 **預覽** 服務。
-* **修改時間**
+* **已修改**
    * 僅供參考。
-* **修改者:**
+* **修改者**
    * 僅供參考。
    * 可用於 [快速篩選](#fast-filtering).
-* **標記**
+* **標籤**
    * 僅供參考。
    * 顯示與內容片段相關的所有標籤；主要變數和任何變數。
    * 可用於 [快速篩選](#fast-filtering).
@@ -186,7 +186,7 @@ ht-degree: 3%
 * **發佈者**
    * 僅供參考。
    * 可用於 [快速篩選](#fast-filtering).
-* **引用者**:
+* **引用者**：
    * 提供開啟對話方塊的連結，其中列出所有 [父引用](#parent-references-fragment)  片段；包括參照內容片段、體驗片段和頁面。 若要開啟特定參照，請按一下 **標題** 在對話方塊中。
 
      ![內容片段主控台 — 「參考」對話方塊](assets/cf-managing-console-references-dialog.png)
@@ -222,10 +222,10 @@ ht-degree: 3%
 
 1. 此 **新內容片段** 對話方塊開啟，您可以從此處指定：
 
-   * **位置**  — 這將會以目前位置自動完成，但您可以視需要選取其他位置
-   * **內容片段模型**  — 從下拉式清單中選取要作為片段基礎的模式
+   * **位置**  — 使用目前位置自動完成，但您可以視需要選取其他位置。
+   * **內容片段模型**  — 從下拉式清單中選取要作為片段基礎的模式。
    * **標題**
-   * **名稱**  — 這將根據以下專案自動完成： **標題**，但必要時可加以編輯
+   * **名稱**  — 根據 **標題**，但如有需要，您可以加以編輯。
    * **說明**
 
    ![新內容片段對話方塊](assets/cf-managing-new-cf-dialog.png)
@@ -270,7 +270,7 @@ ht-degree: 3%
 1. 選取 **管理標籤** （在工具列中）。
 1. 使用標籤選取器來選取要套用的標籤，或移除標籤：
 
-   ![管理標記](assets/cf-managing-manage-tags.png)
+   ![管理標籤](assets/cf-managing-manage-tags.png)
 
 1. **儲存** 更新。 這會將您帶回主控台。
 
@@ -299,8 +299,8 @@ ht-degree: 3%
   >如需預覽環境的詳細資訊，請參閱下列內容：
   >
   >* [管理環境](/help/implementing/cloud-manager/manage-environments.md#access-preview-service)
-  >* [設定預覽階層的 OSGi 設定](/help/implementing/preview-tier/preview-tier-configuring-osgi.md#configuring-osgi-settings-for-the-preview-tier)
-  >* [使用 Developer Console 偵錯預覽](/help/implementing/preview-tier/preview-tier-configuring-osgi.md#debugging-preview-using-the-developer-console)
+  >* [配置預覽層級的OSGi設定](/help/implementing/preview-tier/preview-tier-configuring-osgi.md#configuring-osgi-settings-for-the-preview-tier)
+  >* [使用Developer Console除錯預覽](/help/implementing/preview-tier/preview-tier-configuring-osgi.md#debugging-preview-using-the-developer-console)
 
 >[!CAUTION]
 >

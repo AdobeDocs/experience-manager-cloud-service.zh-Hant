@@ -1,21 +1,17 @@
 ---
 title: Adobe Analytics與AEM Screens Cloud整合
-seo-title: Adobe Analytics Integration with AEM Screens
 description: 請詳閱本頁，瞭解開箱即用的AEM Screens與Adobe Analytics整合，並為您提供播放證明。
-seo-description: Follow this page to learn about out of the box integration of AEM Screens with Adobe Analytics and provides you with a proof of play.
-uuid: 80d61af7-bf4d-46ca-a026-99a666c2e1a0
 contentOwner: trushton
 content-type: reference
 products: SG_EXPERIENCEMANAGER/Cloud/SCREENS
 topic-tags: administering
-discoiquuid: b1a0e00e-0368-42c9-8bcd-5f00b4d0990c
 docset: aem65
 role: Admin, Developer
 level: Intermediate
 exl-id: e22242ce-e5ce-4486-bba4-e6a89ac4fb5e
-source-git-commit: 75d147886c8151f8b8ac41af907e17b5deff5a9c
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '419'
+source-wordcount: '408'
 ht-degree: 0%
 
 ---
@@ -49,7 +45,7 @@ AEM Screens提供與Adobe Analytics的現成整合，並為您提供播放證明
 
 ## 架構詳細資料 {#architectural-details}
 
-AEM Screens客戶想要瞭解內容在何時顯示，以及顯示時間（彙總）。 這是招牌解決方案的常見功能。 AEM Screens不會建置我們自己的分析，而是會利用Adobe Analytics，透過它，我們可以在市場上實現一些獨一無二的東西 — 跨管道分析，有助於將位置中顯示的內容與其他資料來源建立關聯。
+AEM Screens客戶想要瞭解內容在何時顯示，以及顯示時間（彙總）。 這是招牌解決方案的常見功能。 AEM Screens不建立自己的分析，而是使用Adobe Analytics，透過它，您可以實現市場上獨一無二的功能 — 跨管道分析，協助將位置中顯示的內容與其他資料來源建立關聯。
 
 下列架構圖表說明Adobe Analytics與AEM Screens的整合：
 

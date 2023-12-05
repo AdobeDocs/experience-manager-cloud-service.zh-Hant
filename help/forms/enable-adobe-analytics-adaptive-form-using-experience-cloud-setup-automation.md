@@ -1,12 +1,12 @@
 ---
 title: 如何為最適化表單啟用Adobe Analytics？
 description: Experience Cloud Setup Automation 可協助將 Adobe Analytics 連接到最適化表單，以追蹤關於訪客互動和參與度的深入見解。
-keywords: 使用 Experience Cloud Setup Automation 為最適化表單啟用 Adobe Analytics，啟用Forms中的Adobe Analytics、Adaptive Forms中的Adobe Analytics、Forms Analytics整合、Forms和Adobe Analytics
+keywords: 使用Experience Cloud設定自動化啟用最適化表單的Adobe Analytics、在Forms中啟用Adobe Analytics、在最適化Forms中啟用Adobe Analytics、Forms分析整合、Forms和Adobe Analytics
 exl-id: 0e1aa040-08b4-4c1a-b247-ad6fff410187
-source-git-commit: fa107ee89deb217ada2cfbcccb4602a7a6aff125
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1576'
-ht-degree: 59%
+source-wordcount: '1555'
+ht-degree: 58%
 
 ---
 
@@ -93,7 +93,7 @@ Experience Cloud設定自動化需要 **Adobe Analytics授權**， **資料收�
 1. 建立雲端服務的設定容器：
    1. 前往&#x200B;**[!UICONTROL 工具 > 一般 > 設定瀏覽器]**。
    1. 選取或建立設定容器，並啟用&#x200B;**[!UICONTROL 雲端設定]**&#x200B;資料夾。
-   1. 點選&#x200B;**[!UICONTROL 儲存並關閉]**&#x200B;以儲存設定並退出對話框。
+   1. 選取 **[!UICONTROL 儲存並關閉]** 以儲存組態並結束對話方塊。
 1. 在您的 AEM 執行個體上，前往 **[Forms]** >> **[表單和文件]**。
 1. 選取您的&#x200B;**[!UICONTROL 表單]** >> **[!UICONTROL 屬性]**，在&#x200B;**[!UICONTROL 設定容器]**&#x200B;中，選取您在步驟 1 於&#x200B;**[!UICONTROL 設定瀏覽器]** 建立或選取的設定容器。
 1. 選取左邊欄的任務面板，然後按一下&#x200B;**設定 Analytics** 和&#x200B;**啟動 Adobe Analytics**。

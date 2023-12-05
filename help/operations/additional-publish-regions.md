@@ -2,10 +2,10 @@
 title: 額外發佈區域
 description: 了解 AEM as a Cloud Service 如何支援額外發佈區域以提高可用性並減少延遲。
 exl-id: b9ac3c6a-eb8b-461d-8f1d-a0356046a3f9
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '640'
-ht-degree: 80%
+source-wordcount: '638'
+ht-degree: 78%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 80%
 
 >[!NOTE]
 >
->此功能目前僅適用於 AEM Sites。該功能也無法適用沙箱計畫。此外，請注意，額外發佈區域功能會要求您的計畫需更新到 AEM 12142 版或更高版本。
+>此功能目前僅適用於 AEM Sites。該功能也無法適用沙箱計畫。此外，其他發佈區域功能要求您的程式必須更新至AEM發行版本12142或更高版本。
 
 ## 使用案例 {#use-cases}
 

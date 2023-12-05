@@ -3,9 +3,9 @@ title: 查詢和編製索引最佳做法
 description: 瞭解如何根據Adobe的最佳實務准則最佳化您的索引和查詢。
 topic-tags: best-practices
 exl-id: 37eae99d-542d-4580-b93f-f454008880b1
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '3127'
+source-wordcount: '3088'
 ht-degree: 0%
 
 ---
@@ -171,9 +171,9 @@ Explain查詢工具可讓開發人員瞭解查詢執行計畫(請參閱 [讀取�
 
 ...其中包含 — 
 * 3個限制
-   * 節點類型 (`dam:Asset`)
+   * 節點型別(`dam:Asset`)
    * 路徑（子系） `/content/dam`)
-   * 屬性 (`jcr:content/metadata/dc:title = "My Title"`)
+   * 屬性(`jcr:content/metadata/dc:title = "My Title"`)
 * 排序依據： `jcr:created` 屬性
 
 說明此查詢會產生下列計畫 — 
@@ -211,9 +211,9 @@ lucene:damAssetLucene-9(/oak:index/damAssetLucene-9) +:ancestors:/content/dam +j
 
 ...其中包含 — 
 * 3個限制
-   * 節點類型 (`dam:Asset`)
+   * 節點型別(`dam:Asset`)
    * 路徑（子系） `/content/dam`)
-   * 屬性 (`jcr:content/metadata/myProperty = "My Property Value"`)
+   * 屬性(`jcr:content/metadata/myProperty = "My Property Value"`)
 * 排序依據： `jcr:created` 屬性**
 
 說明此查詢會產生下列計畫 — 
@@ -268,7 +268,7 @@ lucene:damAssetLucene-9(/oak:index/damAssetLucene-9) :ancestors:/content/dam ord
    * 在索引定義（和相關聯的查詢）中使用索引標籤，並且 `selectionPolicy = tag` 以確保該索引僅用於預期的查詢。
    * 確定 `queryPaths` 和 `includedPaths` 都會提供（通常使用相同的值）。
    * 使用 `excludedPaths` 以排除不包含有用結果的路徑。
-   * 使用 `analyzed` 屬性，僅在需要時提供，例如僅針對該屬性使用全文查詢限制時。
+   * 使用 `analyzed` 屬性，僅在需要時使用，例如，僅針對該屬性使用全文查詢限制時。
    * 永遠指定 `async = [ async, nrt ] `， `compatVersion = 2` 和 `evaluatePathRestrictions = true`.
    * 僅指定 `nodeScopeIndex = true` 如果您需要節點領域全文檢索索引。
 

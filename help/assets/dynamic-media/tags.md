@@ -1,18 +1,18 @@
 ---
-title: 整合 Dynamic Media 檢視器與 Analytics 和 Adobe Experience Platform 標記
+title: 整合Dynamic Media檢視器與Adobe Analytics和Experience Platform標籤
 description: 瞭解適用於Experience Platform標籤的Dynamic Media Viewers擴充功能和Dynamic Media Viewers 5.13。它可讓Adobe Analytics和Platform標籤的客戶在其Experience Platform標籤設定中，使用特定於Dynamic Media檢視器的事件和資料。
 contentOwner: Rick Brough
 feature: Asset Reports
 role: Admin,User
 exl-id: a71fef45-c9a4-4091-8af1-c3c173324b7a
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '6661'
-ht-degree: 7%
+source-wordcount: '6701'
+ht-degree: 6%
 
 ---
 
-# 整合 Dynamic Media 檢視器與 Analytics 和 Adobe Experience Platform 標記 {#integrating-dynamic-media-viewers-with-adobe-analytics-and-adobe-launch}
+# 整合Dynamic Media檢視器與Adobe Analytics和Experience Platform標籤 {#integrating-dynamic-media-viewers-with-adobe-analytics-and-adobe-launch}
 
 ## 什麼是Dynamic Media Viewers與Adobe Analytics和Experience Platform標籤的整合？ {#what-is-dynamic-media-viewers-integration-with-adobe-analytics-and-adobe-launch}
 
@@ -506,7 +506,7 @@ Adobe建議您詳閱本節之前的所有檔案，以便瞭解完整的整合。
 
 Experience Platform標籤中的屬性是具名設定，可讓所有設定保持在一起。 系統會產生一個組態設定程式庫，並發佈至不同的環境層級（開發、測試和生產）。
 
-另請參閱 [設定tap屬性](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/initial-configuration/configure-tags.html).
+另請參閱 [設定選取屬性](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/initial-configuration/configure-tags.html).
 
 **若要在Experience Platform標籤中建立屬性：**
 
@@ -555,7 +555,7 @@ Experience Platform標籤中的屬性是具名設定，可讓所有設定保持�
 
 另請參閱 [Adobe Analytics擴充功能](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/analytics/overview.html).
 
-* (選用. 只有在需要視訊追蹤時才需要) *Adobe Medium Analytics for Audio and Video* 副檔名
+* (選擇性。 只有在需要視訊追蹤時才需要) *Adobe Medium Analytics for Audio and Video* 副檔名
 
 填寫追蹤伺服器欄位。 的追蹤伺服器 *Adobe Medium Analytics for Audio and Video* 擴充功能與用於Adobe Analytics的追蹤伺服器不同。 它會依循範本 `<trackingNamespace>.hb.omtrdc.net`，其中 `<trackingNamespace>` 是來自布建電子郵件的資訊。
 
@@ -655,7 +655,7 @@ Experience Platform標籤可能具有多個開發環境、一個測試環境及�
 
 <!-- Prerequisites list below should be verified by Sasha -->
 
-先決條件:
+先決條件：
 
 * Experience Manager會執行作者和發佈執行個體。
 * Experience Manager作者節點是在Dynamic Media中設定。 <!-- Scene7 run mode (dynamicmedia_s7) -->
@@ -748,7 +748,8 @@ Experience Manager設定包含下列兩個主要步驟：
    * **[!UICONTROL 標題]**  — 輸入描述性科目標題。
    * **[!UICONTROL 授權伺服器]**  — 返回您先前開啟的整合詳細資訊頁面。 選取 **[!UICONTROL JWT]** 標籤。 複製伺服器名稱（不含路徑），如下方醒目提示。
 
-   返回「帳 **[!UICONTROL 戶]** 」頁面，然後將名稱貼到相應欄位。例如， `https://ims-na1.adobelogin.com/`
+   返回 **[!UICONTROL 帳戶]** 頁面，然後將名稱貼到個別欄位。
+例如， `https://ims-na1.adobelogin.com/`
 （伺服器名稱範例僅供說明之用）
 
    ![2019-07-25_15-01-53](assets/2019-07-25_15-01-53.png)

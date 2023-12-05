@@ -1,25 +1,25 @@
 ---
-title: 範例ContextHub存放區候選者
-description: ContextHub提供幾個您可在解決方案中使用的候選範例商店
+title: ContextHub存放區候選範例
+description: ContextHub提供數個您可在解決方案中使用的候選範例商店
 exl-id: 9493d91e-0b23-4dc4-a014-d8d13687efad
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '464'
+source-wordcount: '457'
 ht-degree: 1%
 
 ---
 
-# 範例ContextHub存放區候選者 {#sample-contexthub-store-candidates}
+# ContextHub存放區候選範例 {#sample-contexthub-store-candidates}
 
-ContextHub提供幾個您可在解決方案中使用的候選範例商店。 每個範例都會提供下列資訊：
+ContextHub提供數個您可在解決方案中使用的候選範例商店。 每個範例都會提供下列資訊：
 
 * 在何處尋找原始程式碼，以方便您開啟它以供學習。
 * 如何設定您從候選商店建立的商店。
-* 如何建構存放區資料，以便您存取。
+* 如何建構存放區資料以方便您存取。
 
 >[!WARNING]
 >
->範例存放區候選項作為參考設定提供，以幫助您為專案建立自己的專用設定，因此不應直接使用。
+>範例存放區候選專案作為參考設定提供，以幫助您為專案建立自己的專用設定。 請勿直接使用，
 
 ## aem.segmentation範例存放區候選專案 {#aem-segmentation-sample-store-candidate}
 
@@ -92,7 +92,7 @@ aem.segmentation存放區候選擴充 [`ContextHub.Store.PersistedJSONPStore`](c
 
 ### 資料專案 {#data-items-geolocation}
 
-存放區使用類似於以下範例的資料樹狀結構：
+存放區會使用與下列範例類似的資料樹狀結構：
 
 ```javascript
 {
@@ -103,7 +103,7 @@ aem.segmentation存放區候選擴充 [`ContextHub.Store.PersistedJSONPStore`](c
 
 >[!NOTE]
 >
->Chrome 50.x中推出的安全性原則要求所有與地理位置相關的呼叫都必須透過安全連線進行。 因此，如果AEM也透過https執行，AEM會強制對地理位置API呼叫使用https。 否則，會使用http來遵守相同來源的原則。
+>Chrome 50.x中推出的安全性原則要求所有與地理位置相關的呼叫都必須透過安全連線進行。 因此，如果AEM也透過https執行，AEM會強制使用https進行地理位置API呼叫。 否則，會使用http來遵守相同來源的原則。
 >
 >另請參閱 [此Google部落格](https://developers.google.com/web/updates/2016/04/geolocation-on-secure-contexts-only) 以取得有關Chrome中變更的詳細資訊。
 
@@ -176,7 +176,7 @@ aem.segmentation存放區候選擴充 [`ContextHub.Store.PersistedJSONPStore`](c
 
 ## granite.emulators範例存放區候選專案 {#granite-emulators-sample-store-candidate}
 
-此 `granite.emulators` 範例存放區候選項會儲存使用者端裝置的相關資訊。
+此 `granite.emulators` 範例存放區候選專案會儲存使用者端裝置的相關資訊。
 
 ### 來源位置 {#source-location-emulators}
 
@@ -188,7 +188,7 @@ aem.segmentation存放區候選擴充 [`ContextHub.Store.PersistedJSONPStore`](c
 
 ### 設定 {#configuration-emulators}
 
-預設設定包含一個名為的陣列 `defaultEmulators` 包含不同裝置的相關資訊。 建立存放區時，請視需要在「詳細資料組態」屬性中提供不同的裝置設定檔，使用下列範例中說明的格式：
+預設設定包含一個名為的陣列 `defaultEmulators` 包含不同裝置的相關資訊。 建立存放區時，請視需要在「詳細資料組態」屬性中提供不同的裝置設定檔，格式如下例所示：
 
 ```javascript
 {
@@ -309,7 +309,7 @@ aem.segmentation存放區候選擴充 [`ContextHub.Store.PersistedJSONPStore`](c
 
 ## granite.profile範例存放區候選專案 {#granite-profile-sample-store-candidate}
 
-儲存有關目前使用者的資訊。
+儲存目前使用者的相關資訊。
 
 ### 來源位置 {#source-location-profile}
 

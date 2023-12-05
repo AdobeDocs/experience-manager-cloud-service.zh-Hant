@@ -2,10 +2,10 @@
 title: 使用最佳做法分析工具
 description: 瞭解如何使用Best Practices Analyzer以瞭解升級整備程度。
 exl-id: e8498e17-f55a-4600-87d7-60584d947897
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '2476'
-ht-degree: 45%
+source-wordcount: '2418'
+ht-degree: 42%
 
 ---
 
@@ -53,11 +53,11 @@ ht-degree: 45%
 
 ## 檢視Best Practices Analyzer報表 {#viewing-report}
 
-### Adobe Experience Manager 6.3.0 和更新版本 {#aem-later-versions}
+### Adobe Experience Manager 6.3.0和更新版本 {#aem-later-versions}
 
 請詳閱本節，瞭解如何檢視Best Practices Analyzer報告：
 
-1. 選取Adobe Experience Manager並導覽至工具 — > **作業** -> **Best Practices Analyzer**.
+1. 選取Adobe Experience Manager並導覽至「工具> 」 **作業** > **Best Practices Analyzer**.
 
    ![影像](/help/journey-migration/best-practices-analyzer/assets/BPA_pic1.png)
 
@@ -125,11 +125,11 @@ For Adobe Experience Manager 6.1, the tool is not functional and only the HTTP i
 >[!CONTEXTUALHELP]
 >id="aemcloud_bpa_interpreting"
 >title="解讀最佳做法分析工具的報表"
->abstract="檢視 BPA 報表輸出有兩種選項：UI 和 CSV。在 AEM 執行個體中執行最佳做法分析工具時，UI 報表會在工具視窗中顯示為結果。CSV 格式的報表包含從「模式偵測器」輸出產生的資訊，且會依類別類型、子類型和重要性層級排序和組織。"
+>abstract="檢視 BPA 報表輸出有兩種選項：UI 和 CSV。在 AEM 執行個體中執行最佳做法分析工具時，UI 報表會在工具視窗中顯示為結果。CSV 格式的報表包含從「模式偵測器」輸出產生的資訊，且會依類別類型、子類型和重要性層級排序和編排。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=zh-Hant#analysis-report" text="檢閱最佳做法分析報表"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html?lang=zh-Hant" text="了解最佳做法分析工具報表類別"
 
-在 AEM 執行個體中執行最佳做法分析工具時， 報表會在工具視窗中顯示為結果。
+在AEM例項中執行Best Practices Analyzer工具時，報表會在工具視窗中顯示為結果。
 
 報表格式為：
 
@@ -177,7 +177,7 @@ CSV 格式報表的欄包括：
 
 個別結果的欄中若有 &quot;\N&quot; 值，表示未提供任何資料。
 
-## HTTP 介面 {#http-interface}
+## HTTP介面 {#http-interface}
 
 BPA提供HTTP介面，可作為AEM使用者介面的替代介面。 該介面同時支援 HEAD 和 GET 命令。它可用來產生BPA報表，並以三種格式之一傳回：JSON、CSV和定位鍵分隔值(TSV)。
 
@@ -186,7 +186,7 @@ BPA提供HTTP介面，可作為AEM使用者介面的替代介面。 該介面同
 * `http://<host>/apps/best-practices-analyzer/analysis/report.csv` (CSV 格式)
 * `http://<host>/apps/best-practices-analyzer/analysis/report.tsv` (TSV 格式)
 
-### 執行 HTTP 要求 {#executing-http-request}
+### 執行HTTP要求 {#executing-http-request}
 
 HTTP 介面可用於多種方法中。
 
@@ -197,7 +197,7 @@ HTTP 介面可用於多種方法中。
 以下是其操作方式的範例：
 `curl -u admin:admin 'http://localhost:4502/apps/best-practices-analyzer/analysis/report.csv' > report.csv`。
 
-### 標題和參數 {#http-headers-and-parameters}
+### 標題和引數 {#http-headers-and-parameters}
 
 此介面使用下列 HTTP 標題：
 
@@ -208,7 +208,7 @@ HTTP 介面可用於多種方法中。
 在不方便使用 HTTP 標題時，可權衡使用下列 HTTP 查詢參數：
 
 * `max-age` （數字，選用）：指定快取時效性存留期（以秒為單位）。 此數字必須大於或等於 0。預設的時效性存留期為86400秒。 如果沒有此引數或對應的標頭，新的快取將會在24小時內用來處理請求，屆時必須重新產生快取。 使用 `max-age=0` 會強制清除快取，並使用新產生快取的先前非零時效性存留期來開始重新產生報表。
-* `respond-async` （布林值，選用）：指定應以非同步方式提供回應。 使用 `respond-async=true` 快取過期時，伺服器會傳回的回應 `202 Accepted` 而不等待快取重新整理及報告產生。 如果快取為最新狀態，此參數就沒有效用。預設值為 `false`.若沒有此引數或對應標頭，伺服器將會同步回應，而這可能需要相當長的時間，且需要調整HTTP使用者端的最大回應時間。
+* `respond-async` （布林值，選用）：指定應以非同步方式提供回應。 使用 `respond-async=true` 快取過期時，伺服器會傳回的回應 `202 Accepted` 而不等待快取重新整理及報告產生。 如果快取為最新狀態，此參數就沒有效用。預設值為 `false`. 若沒有此引數或對應標頭，伺服器將會同步回應，而這可能需要相當長的時間，且需要調整HTTP使用者端的最大回應時間。
 * `may-refresh-cache` （布林值，選用）：指定如果目前快取空白、過時或即將過時，伺服器可以重新整理快取以回應要求。 如果 `may-refresh-cache=true`，或未指定時，伺服器可能會起始背景工作，並叫用模式偵測器並重新整理快取。 如果 `may-refresh-cache=false` 若快取為空白或過時（報表為空白），則伺服器不會起始任何原本應完成的重新整理工作。 任何已在處理的重新整理任務都不會受此引數影響。
 * `return-minimal` （布林值，選用）：指定伺服器的回應應僅包含進度指示的狀態，以及JSON格式的快取狀態。 如果 `return-minimal=true`，則回應內文會限製為狀態物件。 如果 `return-minimal=false`，或未指定時，則會提供完整的回應。
 * `log-findings` （布林值，選用）：指定第一次建立或重新整理快取時，伺服器應記錄快取的內容。 快取中的每個結果都會記錄為JSON字串。 只有在 `log-findings=true` 而且請求會產生新快取。
@@ -242,7 +242,7 @@ HTTP 介面可用於多種方法中。
 
 此屬性的值是快取存留期 (以秒為單位)。管理員可以使用 CRX/DE Lite 調整快取存留期。
 
-### 在 AEM 6.1 上安裝 {#installing-on-aem61}
+### 在AEM 6.1上安裝 {#installing-on-aem61}
 
 BPA會使用名為的系統服務使用者帳戶 `repository-reader-service` 執行模式偵測器。 此帳戶適用於 AEM 6.2 和更新版本。在AEM 6.1上，必須建立此帳戶 *早於* 請依照下列步驟安裝BPA：
 

@@ -5,9 +5,9 @@ content-type: reference
 topic-tags: publish
 discoiquuid: 32a7a50c-74f4-49bc-a0bd-a9ec142527cb
 docset: aem65s
-source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1338'
+source-wordcount: '1327'
 ht-degree: 0%
 
 ---
@@ -62,19 +62,19 @@ ht-degree: 0%
 1. 登入 [!DNL AEM Forms] 伺服器。
 1. 使用下列其中一項，選取並發佈資產。
 
-   1. 將指標移至資產上，然後點選 **[!UICONTROL 發佈]** ![aem6forms_globe](assets/aem6forms_globe.pngasset.png).
-   1. 執行下列任一項作業，然後點選「發佈」：
+   1. 將指標移至資產上並選取 **[!UICONTROL 發佈]** ![aem6forms_globe](assets/aem6forms_globe.pngasset.png).
+   1. 執行下列任一項作業，然後選取「發佈」：
 
-      * 如果您在卡片檢視中，請點選 **[!UICONTROL 輸入選取範圍]** ![aem6forms_check-circle](assets/aem6forms_check-circle.png)，然後點選資產。 已選取資產。
+      * 如果您在卡片檢視中，請選取 **[!UICONTROL 輸入選取範圍]** ![aem6forms_check-circle](assets/aem6forms_check-circle.png)，然後選取資產。 已選取資產。
       * 如果您在清單檢視中，請選取資產的核取方塊。 已選取資產。
-      * 點選資產以顯示其詳細資料。
+      * 選取要顯示其詳細資訊的資產。
       * 點選「檢視屬性」以顯示資產屬性 ![viewproperties](assets/viewproperties.png).
 
       >[!NOTE]
       >
       >請勿選取多個資產。 不支援一次發佈多個資產。
 
-1. 當發佈程式啟動時，確認對話方塊會出現，列出所有相關資產和資源。 在包含相關資產的對話方塊中，點選 **[!UICONTROL 發佈]**. 資產會發佈，且發佈資產成功對話方塊會出現。
+1. 當發佈程式啟動時，確認對話方塊會出現，列出所有相關資產和資源。 在包含相關資產的對話方塊中，選取 **[!UICONTROL 發佈]**. 資產會發佈，且發佈資產成功對話方塊會出現。
 
    >[!NOTE]
    >
@@ -99,9 +99,9 @@ ht-degree: 0%
 完成下列步驟，在伺服器上發佈所有Correspondence Management資產：
 
 1. 登入 [!DNL AEM Forms] 伺服器。
-1. 點選 **Adobe Experience Manager** 於全域導覽列中。
-1. 點選 ![工具](assets/tools.png)，然後點選 **Forms**.
-1. 點選 **發佈對應管理資產**.
+1. 選取 **Adobe Experience Manager** 於全域導覽列中。
+1. 選取 ![工具](assets/tools.png)，然後選取 **Forms**.
+1. 選取 **發佈對應管理資產**.
 
    ![publish-cmp-assets](assets/publish-cmp-assets.png)
 
@@ -109,7 +109,7 @@ ht-degree: 0%
 
    ![publish-last-run-details](assets/publish-last-run-details.png)
 
-1. 點選 **發佈** 然後，在確認訊息中，點選 **確定**.
+1. 選取 **發佈** 然後，在確認訊息中，選取 **確定**.
 
    批次處理完成後，您可以檢視上次執行的詳細資訊。 這包括管理員登入以及批次是否成功執行的資訊。
 
@@ -123,27 +123,27 @@ ht-degree: 0%
 
 請依照下列步驟，排程發佈和取消發佈Forms &amp; Documents資產的日期和時間：
 
-1. 選取資產並點選 **[!UICONTROL 檢視屬性]**. 「中繼資料屬性」頁面隨即開啟。
-1. 在「中繼資料屬性」頁面中，點選 **[!UICONTROL 進階]**，然後點選 **[!UICONTROL 編輯]** ![illustratorcc_penciltool_cur_edit_2_17](assets/illustratorcc_penciltool_cur_edit_2_17.png).
+1. 選取資產並選取 **[!UICONTROL 檢視屬性]**. 「中繼資料屬性」頁面隨即開啟。
+1. 在「中繼資料屬性」頁面中，選取 **[!UICONTROL 進階]**，然後選取 **[!UICONTROL 編輯]** ![illustratorcc_penciltool_cur_edit_2_17](assets/illustratorcc_penciltool_cur_edit_2_17.png).
 1. 在 **[!UICONTROL 準時發佈]** 和 **[!UICONTROL 發佈關閉時間]** 欄位中，選取日期和時間。\
-   點選 **[!UICONTROL 完成]** ![aem6forms_check](assets/aem6forms_check.png).
+   選取 **[!UICONTROL 完成]** ![aem6forms_check](assets/aem6forms_check.png).
 
 ## 取消發佈資產 {#unpublish-an-asset}
 
-1. 選取已發佈的資產，然後點選 **[!UICONTROL 取消發佈]** ![取消發佈](assets/unpublish.png).
+1. 選取已發佈的資產，然後選取 **[!UICONTROL 取消發佈]** ![取消發佈](assets/unpublish.png).
 1. 使用下列其中一項，選取並取消發佈資產。
 
-   1. 將指標移至資產上，然後點選 **[!UICONTROL 取消發佈]** ![取消發佈](assets/unpublish.png).
-   1. 執行下列任一項作業，然後點選「取消發佈」：
+   1. 將指標移至資產上並選取 **[!UICONTROL 取消發佈]** ![取消發佈](assets/unpublish.png).
+   1. 執行下列任一項作業，然後選取取消發佈：
 
-      * 如果您在卡片檢視中，請點選 **[!UICONTROL 輸入選取範圍]** ![aem6forms_check-circle](assets/aem6forms_check-circle.png)，然後點選資產。 已選取資產。
+      * 如果您在卡片檢視中，請選取 **[!UICONTROL 輸入選取範圍]** ![aem6forms_check-circle](assets/aem6forms_check-circle.png)，然後選取資產。 已選取資產。
 
-      * 如果您在清單檢視中，請將滑鼠指標暫留在資產上，然後點選 ![selectassetcheckmark](assets/selectassetcheckmark.png) . 已選取資產。
+      * 如果您在清單檢視中，將滑鼠指標暫留在資產上並選取「 」 ![selectassetcheckmark](assets/selectassetcheckmark.png) . 已選取資產。
 
-      * 點選資產以顯示其詳細資料。
+      * 選取要顯示其詳細資訊的資產。
       * 點選「檢視屬性」以顯示資產屬性 ![viewproperties](assets/viewproperties.png).
 
-1. 取消發佈程式啟動時，會顯示確認對話方塊。 點選 **[!UICONTROL 取消發佈]**.
+1. 取消發佈程式啟動時，會顯示確認對話方塊。 選取 **[!UICONTROL 取消發佈]**.
 
    >[!NOTE]
    >
@@ -157,8 +157,8 @@ ht-degree: 0%
 >
 >如果系統中刪除了發佈信函中使用的任何相依資產，請勿將信函還原為上次發佈狀態。
 
-1. 選取資產並點選 **[!UICONTROL 回覆至先前發佈的版本]** ![reverttopreviouslypublishedversion](assets/reverttopreviouslypublishedversion.png).
-1. 在回覆資產之前，會顯示確認對話方塊。 點選 **[!UICONTROL 回覆]**.
+1. 選取資產並選取 **[!UICONTROL 回覆至先前發佈的版本]** ![reverttopreviouslypublishedversion](assets/reverttopreviouslypublishedversion.png).
+1. 在回覆資產之前，會顯示確認對話方塊。 選取 **[!UICONTROL 回覆]**.
 
    資產或信函會復原至其先前發佈的版本。
 
@@ -168,17 +168,17 @@ ht-degree: 0%
 >
 >刪除資產會將其從發佈執行個體中移除。 刪除資產也會移除其版本記錄（基礎版本除外）。
 
-1. 選取資產並點選 **[!UICONTROL 刪除]** ![刪除](assets/delete.png).
+1. 選取資產並選取 **[!UICONTROL 刪除]** ![刪除](assets/delete.png).
 
    >[!NOTE]
    >
    >點選資產以顯示資產詳細資訊，或點選檢視屬性以顯示資產屬性時，也可以使用「刪除」選項 ![viewproperties](assets/viewproperties.png).
 
-1. 刪除資產之前，會顯示確認對話方塊。 點選 **[!UICONTROL 刪除]**.
+1. 刪除資產之前，會顯示確認對話方塊。 選取&#x200B;**[!UICONTROL 刪除]**。
 
    >[!NOTE]
    >
-   >只會刪除選取的資產，不會刪除相依的資產和。 若要檢查資產的引用，請點選 ![引用](assets/references.png) 然後選取資產。
+   >只會刪除選取的資產，不會刪除相依的資產和。 若要檢查資產的引用，請選取 ![引用](assets/references.png) 然後選取資產。
    >
    >
    >如果您嘗試刪除的資產是另一個資產的子資產，則不會刪除它。 若要刪除這類資產，請從其他資產中移除此資產的參考資料，然後重試。
@@ -190,7 +190,7 @@ ht-degree: 0%
 若要啟用表單的驗證：
 
 1. 在瀏覽器中，開啟發佈執行個體中的configMgr 。\
-   URL: `https://<hostname>:<PublishPort>/system/console/configMgr`
+   URL： `https://<hostname>:<PublishPort>/system/console/configMgr`
 
 1. 在Adobe Experience Manager Web主控台設定中，按一下 **Apache Sling驗證服務** 以進行設定。
 1. 在出現的Apache Sling Authentication Service對話方塊中，使用 **+** 按鈕以新增路徑。\

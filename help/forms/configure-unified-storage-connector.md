@@ -2,9 +2,9 @@
 title: 如何設定AEM Forms的統一儲存聯結器(USC)？
 description: 瞭解如何管理AEM Forms的統一儲存聯結器(USC)。 使用統一儲存聯結器(USC)將AEM Forms連線至外部資料儲存。
 exl-id: c93d0242-0c15-4d69-82a1-d6fcc7da4bae
-source-git-commit: c33f59cb56decf1e5bbbe0b5bb084e906585e702
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '641'
+source-wordcount: '642'
 ht-degree: 0%
 
 ---
@@ -26,10 +26,10 @@ ht-degree: 0%
 執行以下步驟來建立 [!DNL Azure] 儲存設定：
 
 1. 瀏覽至 **[!UICONTROL 工具]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Azure儲存體]**.
-1. 選取資料夾以建立設定並點選 **[!UICONTROL 建立]**.
+1. 選取資料夾以建立設定，然後選取 **[!UICONTROL 建立]**.
 1. 在中指定設定的標題 **[!UICONTROL 標題]** 欄位。
 1. 指定 [!DNL Azure] 中的儲存體帳戶 **[!UICONTROL Azure儲存體帳戶]** 欄位。
-1. 指定金鑰以存取 **[!UICONTROL Azure存取金鑰]** 欄位並點選 **[!UICONTROL 儲存]**.
+1. 指定金鑰以存取 **[!UICONTROL Azure存取金鑰]** 欄位並選取 **[!UICONTROL 儲存]**.
 
 ### 設定AEM Workflow的統一儲存聯結器(USC) {#configure-unified-storage-connector-workflows}
 
@@ -39,17 +39,17 @@ ht-degree: 0%
 
 1. 在 **[!UICONTROL 工作流程]** 區段，選取 **[!UICONTROL Azure]** 從「儲存」下拉式清單。
 1. 指定 [Azure儲存體設定的設定路徑](#create-azure-storage-configuration) 在 **[!UICONTROL 儲存設定路徑]** 欄位。
-1. 點選 **[!UICONTROL 發佈]** 然後點選 **[!UICONTROL 儲存]** 以儲存組態。
+1. 選取 **[!UICONTROL 發佈]** 然後選取 **[!UICONTROL 儲存]** 以儲存組態。
 
 ### 設定外部資料儲存的AEM Workflow模型 {#configure-workflow-external-data-storage}
 
 執行以下步驟，為外部資料儲存設定AEM Workflow模型：
 
 1. 瀏覽至 **[!UICONTROL 工具]** > **[!UICONTROL 工作流程]** > **[!UICONTROL 模型]**.
-1. 選取模型名稱並點選 **[!UICONTROL 編輯]**.
-1. 點選「頁面資訊」圖示並點選 **[!UICONTROL 開啟屬性]**.
+1. 選取模型名稱並選取 **[!UICONTROL 編輯]**.
+1. 選取「頁面資訊」圖示，然後選取 **[!UICONTROL 開啟屬性]**.
 1. 選取 **[!UICONTROL 將工作流程資料儲存區外部化]**.
-1. 點選 **[!UICONTROL 儲存並關閉]** 以儲存屬性。
+1. 選取 **[!UICONTROL 儲存並關閉]** 以儲存屬性。
 
 >[!NOTE]
 >

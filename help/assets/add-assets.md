@@ -4,10 +4,10 @@ description: 將您的數位資產新增至 [!DNL Adobe Experience Manager] as a
 feature: Asset Management,Upload
 role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '3179'
-ht-degree: 11%
+source-wordcount: '3137'
+ht-degree: 8%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 11%
 
 [!DNL Assets] 提供下列上傳方法。 Adobe建議您先瞭解上傳選項的使用案例及適用性，然後再使用。
 
-| 上傳方法 | 使用時機? | 主要角色 |
+| 上傳方法 | 何時使用？ | 主要角色 |
 |---------------------|----------------|-----------------|
 | [Assets控制檯使用者介面](#upload-assets) | 偶爾上傳、輕鬆按壓和拖曳、尋找上傳。 請勿使用上傳許多資產。 | 所有使用者 |
 | [上傳API](#upload-using-apis) | 適用於上傳期間的動態決策。 | 開發人員 |
@@ -37,7 +37,7 @@ ht-degree: 11%
 
 <!-- #ENGCHECK do we support pausing? I couldn't get pause to show with 1.5GB upload.... If not, this should be removed#
 
-   You can pause the uploading of large assets (greater than 500 MB) and resume it later from the same page. Tap the **[!UICONTROL Pause]** icon beside progress bar that appears when an upload starts.
+   You can pause the uploading of large assets (greater than 500 MB) and resume it later from the same page. Select the **[!UICONTROL Pause]** icon beside progress bar that appears when an upload starts.
 
    The size above which an asset is considered a large asset is configurable. For example, you can configure the system to consider assets above 1000 MB (instead of 500 MB) as large assets. In this case, **[!UICONTROL Pause]** appears on the progress bar when assets of size greater than 1000 MB are uploaded.
 
@@ -193,7 +193,7 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 
 1. 選取 **[!UICONTROL 匯入後刪除來源檔案]** 在檔案匯入到之後從來源資料存放區中刪除原始檔案的選項 [!DNL Experience Manager].
 
-1. 選取「**[!UICONTROL 匯入模式]**」。選取「**跳過**」、「**取代**」或「**建立版本**」。跳過模式是預設值，在此模式下，擷取工具會跳過匯入資產 (如果已存在)。瞭解以下專案的意義： [取代和建立版本選項](#handling-upload-existing-file).
+1. 選取「**[!UICONTROL 匯入模式]**」。選取「**跳過**」、「**取代**」或「**建立版本**」。略過模式為預設模式，在此模式中，擷取程式會略過以匯入資產（若已存在）。 瞭解以下專案的意義： [取代和建立版本選項](#handling-upload-existing-file).
 
 1. 要使用「**[!UICONTROL 資產目標資料夾]**」欄位在所要匯入資產的 DAM 中定義位置，請指定路徑。 例如，`/content/dam/imported_assets`。
 
@@ -207,7 +207,7 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 
 ### 編輯設定 {#edit-configuration}
 
-若要編輯組態詳細資訊，請選取組態，然後按一下 **[!UICONTROL 編輯]**. 執行編輯操作時無法編輯設定的標題和匯入資料來源。
+若要編輯組態詳細資訊，請選取組態，然後按一下 **[!UICONTROL 編輯]**. 執行編輯操作時，您無法編輯設定和匯入資料來源的標題。
 
 ### 刪除設定 {#delete-configuration}
 
@@ -215,13 +215,13 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 
 ### 驗證與資料來源的連線 {#validate-connection}
 
-若要驗證與資料來源的連線，請選取設定，然後按一下 **[!UICONTROL check]**. 如果連線成功，Experience Manager 會顯示以下訊息：
+若要驗證與資料來源的連線，請選取設定，然後按一下 **[!UICONTROL check]**. 如果連線成功，Experience Manager會顯示下列訊息：
 
 ![大量匯入成功訊息](assets/bulk-import-success-message.png)
 
 ### 叫用大量匯入工作的測試回合 {#invoke-test-run-bulk-import}
 
-選取設定並按一下 **[!UICONTROL 練習]** 以叫用大量匯入工作的測試回合。 Experience Manager 會顯示以下有關該大量匯入作業的詳細資訊：
+選取設定並按一下 **[!UICONTROL 練習]** 以叫用大量匯入工作的測試回合。 Experience Manager會顯示下列有關大量匯入工作的詳細資訊：
 
 ![試執行結果](assets/dry-assets-result.png)
 
@@ -417,5 +417,5 @@ Experience Manager會顯示工作歷史記錄。 在「大量匯入工作歷史�
 >
 >* [[!DNL Adobe Experience Manager] 桌面應用程式](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)
 >* [關於 [!DNL Adobe Asset Link]](https://www.adobe.com/tw/creativecloud/business/enterprise/adobe-asset-link.html)
->* [[!DNL Adobe Asset Link] 文件](https://helpx.adobe.com/tw/enterprise/using/adobe-asset-link.html)
+>* [[!DNL Adobe Asset Link] 檔案](https://helpx.adobe.com/tw/enterprise/using/adobe-asset-link.html)
 >* [資產上傳的技術參考](developer-reference-material-apis.md#asset-upload)

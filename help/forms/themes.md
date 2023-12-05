@@ -2,9 +2,9 @@
 title: 如何建立並使用主題來設定最適化表單的樣式？
 description: 使用最適化表單主題來設定樣式並為最適化表單提供視覺身分。 您可以在任何數量的最適化Forms中共用主題。
 exl-id: 99c3d1f7-5756-49d2-98ee-72dd62063110
-source-git-commit: f70e18b1c21fd530587694f91c3969e831cfc640
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '5578'
+source-wordcount: '5558'
 ht-degree: 2%
 
 ---
@@ -67,7 +67,7 @@ ht-degree: 2%
 
 1. 在「佈景主題」頁面中， **[!UICONTROL 選取]** 主題，然後按一下 **[!UICONTROL 下載]**. 隨即顯示包含主題詳細資訊的對話方塊。
 
-1. 按一下「**[!UICONTROL 下載]**」。主題會下載為zip檔案。
+1. 按一下 **[!UICONTROL 下載]**. 主題會下載為zip檔案。
 
 >[!NOTE]
 >
@@ -253,7 +253,7 @@ ht-degree: 2%
 
 * 左側的索引標籤
 * 頂端標籤
-* 折疊式面板
+* 折疊面板
 * 回應式
 * 精靈
 * 行動佈局
@@ -363,7 +363,7 @@ ht-degree: 2%
 * **[!UICONTROL 數值方塊Widget]**：可讓您選取元件以自訂其在側邊欄中的外觀。
 * **[!UICONTROL 欄位Widget]**：可讓您選取樣式的一般元件。 在此範例中，會選取所有文字輸入元件（文字方塊/數值方塊/數值步進器/日期輸入）來設定樣式。
 
-* ![欄位層級](assets/select_parent_icon.svg)：可讓您選取樣式化的父元件。 如果您選取數值方塊並點選此圖示，則會選取欄位元件。 如果您選取欄位元件並點選此圖示，則會選取面板。 如果您持續點選此圖示以進行選取，您最後會選取樣式的配置。
+* ![欄位層級](assets/select_parent_icon.svg)：可讓您選取樣式化的父元件。 如果您選取數值方塊並選取此圖示，則會選取欄位元件。 如果您選取欄位元件並選取此圖示，則會選取面板。 如果您持續點選此圖示以進行選取，您最後會選取樣式的配置。
 
 >[!NOTE]
 >
@@ -587,7 +587,7 @@ You can use the theme configuration service to add more fonts to the theme edito
 
 1. 在製作例項中，導覽至 **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL 主題]**.
 1. 開啟「主題資料庫」資料夾。
-1. 在「佈景主題資料庫」資料夾中，將指標暫留在對應的現成佈景主題上，然後點選 **[!UICONTROL 複製]**.
+1. 在「佈景主題資料庫」資料夾中，將指標暫留在對應的現成佈景主題上，然後選取 **[!UICONTROL 複製]**.
 1. 將複製的主題貼到「主題庫」資料夾外。
 1. 自訂複製的主題。
 

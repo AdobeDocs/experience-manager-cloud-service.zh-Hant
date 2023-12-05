@@ -1,14 +1,14 @@
 ---
-title: AEM Sites 翻譯快速入門
+title: 開始使用AEM Sites翻譯
 description: 瞭解如何組織您的AEM Sites內容以及AEM翻譯工具的運作方式。
 index: true
 hide: false
 hidefromtoc: false
 exl-id: 9bfc3995-ac8e-488e-b68f-9e1b5b4a3176
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1390'
-ht-degree: 48%
+source-wordcount: '1391'
+ht-degree: 39%
 
 ---
 
@@ -23,14 +23,14 @@ ht-degree: 48%
 * 瞭解AEM Sites內容建立的基本概念。
 * 熟悉AEM支援翻譯的方式。
 
-本文章以這些基本知識為基礎，以便您了解 AEM 如何儲存和管理 內容，以及您如何使用 AEM 的翻譯工具來翻譯該內容。
+本文基於這些基礎之上，以便您瞭解AEM如何儲存和管理內容，以及如何使用AEM翻譯工具來翻譯該內容。
 
 ## 目標 {#objective}
 
 本檔案可協助您瞭解如何開始在AEM中翻譯網站內容。 閱讀本文件後，您應該：
 
 * 了解內容結構對翻譯的重要性。
-* 了解 AEM 如何儲存 內容。
+* 瞭解AEM如何儲存內容。
 * 熟悉 AEM 的翻譯工具。
 
 ## 要求和先決條件 {#requirements-prerequisites}
@@ -55,9 +55,9 @@ ht-degree: 48%
 * 用於連接到您偏好之翻譯服務的認證
 * 是 AEM `project-administrators` 群組的成員
 
-## AEM 如何儲存 內容 {#content-in-aem}
+## AEM如何儲存內容 {#content-in-aem}
 
-對於翻譯專家來說，深入了解 AEM 如何管理 內容並不重要。不過，在稍後使用AEM翻譯工具時，熟悉基本概念和術語會很有幫助。 最重要的是，您需要瞭解您自己的內容，以及它是如何建構以有效地翻譯它。
+對於翻譯專家來說，深入瞭解AEM管理內容的方式並不重要。 不過，在稍後使用AEM翻譯工具時，熟悉基本概念和術語會很有幫助。 最重要的是，您需要瞭解您自己的內容，以及它是如何建構以有效地翻譯它。
 
 ### 網站主控台 {#sites-console}
 
@@ -101,7 +101,7 @@ ht-degree: 48%
 
    ![選取要編輯的頁面](assets/sites-editor-select-page.png)
 
-1. 點選 **編輯** 工具列中的選項。
+1. 選取 **編輯** 工具列中的選項。
 1. 網站編輯器隨即開啟，並載入所選頁面，以在新的瀏覽器標籤中編輯。
 1. 將滑鼠指標停留在內容上或點選內容會顯示個別元件的選取器。 元件是組成頁面的拖放建置區塊。
 
@@ -198,14 +198,14 @@ AEM內容是由其結構所驅動。 AEM 對內容結構的要求很少，但在
 現在您已完成AEM Sites翻譯歷程的這一部分，您應：
 
 * 了解內容結構對翻譯的重要性。
-* 了解 AEM 如何儲存 內容。
+* 瞭解AEM如何儲存內容。
 * 熟悉 AEM 的翻譯工具。
 
 在此基礎上繼續您的AEM Sites翻譯歷程，接下來檢閱檔案 [設定翻譯聯結器](configure-connector.md) 您可在其中學習如何將AEM連結至翻譯服務。|
 
 ## 其他資源 {#additional-resources}
 
-雖然建議您查閱文件[設定翻譯連接器](configure-connector.md)來繼續 翻譯歷程的下個部分，以下也有一些其他選擇性資源，在深入探究本文件提到的一些概念，但不是繼續 歷程的必要條件。
+我們建議您檢閱檔案，以繼續翻譯歷程的下一部分 [設定翻譯聯結器](configure-connector.md) 以下是一些其他可選資源，這些資源對本文中提到的一些概念進行了更深入的探究，但並非繼續此歷程所必需的。
 
 * [AEM 基本處理](/help/sites-cloud/authoring/getting-started/basic-handling.md) - 了解 AEM UI 的基本知識，以便能夠輕鬆導覽和執行基本任務，例如尋找您的內容。
 * [識別要翻譯的內容](/help/sites-cloud/administering/translation/rules.md) - 了解翻譯規則如何識別需要翻譯的內容。

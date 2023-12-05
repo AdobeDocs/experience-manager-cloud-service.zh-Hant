@@ -5,9 +5,9 @@ feature: Form Data Model
 role: User
 level: Beginner, Intermediate
 exl-id: 827ce457-6585-46fb-8e28-1d970a40d949
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1231'
+source-wordcount: '1213'
 ht-degree: 1%
 
 ---
@@ -46,7 +46,7 @@ ht-degree: 1%
 
    ![create-af-1-1](assets/create-af-1-1.png)
 
-1. 點選以展開 **[!UICONTROL 選取表單資料模型]**. 列出所有可用的表單資料模型。
+1. 選取以展開 **[!UICONTROL 選取表單資料模型]**. 列出所有可用的表單資料模型。
 
    從資料模型中選取。
 
@@ -93,14 +93,14 @@ For more information, see:
 <!--To preview an interactive communication with sample Form Data Model data:
 
 1. On [!DNL  Experience Manager] author instance, navigate to **[!UICONTROL Forms > Forms & Documents]**.
-1. Select an interactive communication and tap **[!UICONTROL Preview]** in the toolbar to select **[!UICONTROL Web Channel]**, **[!UICONTROL Print Channel]**, or **[!UICONTROL Both Channels]** to preview the interactive communication.
-1. In the Preview [*channel*] dialog, ensure that **[!UICONTROL Test Data of Form Data Model]** is selected and tap **[!UICONTROL Preview]**.
+1. Select an interactive communication and select **[!UICONTROL Preview]** in the toolbar to select **[!UICONTROL Web Channel]**, **[!UICONTROL Print Channel]**, or **[!UICONTROL Both Channels]** to preview the interactive communication.
+1. In the Preview [*channel*] dialog, ensure that **[!UICONTROL Test Data of Form Data Model]** is selected and select **[!UICONTROL Preview]**.
 
 The interactive communication opens with prefilled sample data.
 
 ![web-preview](assets/web-preview.png)-->
 
-若要預覽包含範例資料的最適化表單，請在作者模式中開啟最適化表單，然後點選 **[!UICONTROL 預覽]**.
+若要預覽含有範例資料的最適化表單，請在作者模式中開啟最適化表單，然後選取 **[!UICONTROL 預覽]**.
 
 ## 使用表單資料模型服務預填 {#prefill}
 
@@ -130,10 +130,10 @@ Edit Properties dialog for an interactive communication-->
 
 1. 將包含二進位屬性的資料模型物件新增至表單資料模型。
 1. 在最適化表單中，拖放 **[!UICONTROL 檔案附件]** 元件從元件瀏覽器移至最適化表單。
-1. 點選以選取新增的元件，然後點選 ![settings_icon](assets/configure-icon.svg) 以開啟元件的「屬性」瀏覽器。
-1. 在「繫結參考」欄位中，點選 ![foldersearch_18](assets/folder-search-icon.svg) 並導覽以選取您在表單資料模型中新增的二進位屬性。 視需要設定其他屬性。
+1. 選取以選取新增的元件，然後選取 ![settings_icon](assets/configure-icon.svg) 以開啟元件的「屬性」瀏覽器。
+1. 在「繫結參考」欄位中，選取 ![foldersearch_18](assets/folder-search-icon.svg) 並導覽以選取您在表單資料模型中新增的二進位屬性。 視需要設定其他屬性。
 
-   點選 ![勾選按鈕](assets/save_icon.svg) 以儲存屬性。 附件欄位現在已繫結至表單資料模型的二進位屬性。
+   選取 ![勾選按鈕](assets/save_icon.svg) 以儲存屬性。 附件欄位現在已繫結至表單資料模型的二進位屬性。
 
 1. 在最適化表單容器屬性的提交區段中，啟用 **[!UICONTROL 提交表單附件]**. 它會在表單提交時，將二進位屬性欄位中的附件提交至資料來源。
 

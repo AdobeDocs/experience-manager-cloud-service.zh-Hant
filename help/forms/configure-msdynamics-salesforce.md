@@ -2,9 +2,9 @@
 title: 如何為最適化Forms設定現成的Microsoft Dynamics 365和Salesforce表單資料模型？
 description: 瞭解如何將Microsoft Dynamics 365和Salesforce與最適化Forms整合。
 exl-id: 2a43b2db-2dfb-4c79-88be-ea770b44dac1
-source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '980'
+source-wordcount: '952'
 ht-degree: 2%
 
 ---
@@ -48,20 +48,20 @@ ht-degree: 2%
 執行以下步驟來設定 [!DNL Salesforce] 雲端服務：
 
 1. 開啟 [!DNL AEM Forms] 作者例項，瀏覽至 **[!UICONTROL 工具]** ![錘子](assets/hammer.png) > **[!UICONTROL Cloud Service]** > **[!UICONTROL 資料來源]**. 可用包裝函式資料夾清單包含一個資料夾，其標題已指定給 `DappTitle`  當 [產生AEM原型專案](setup-local-development-environment.md#forms-cloud-service-local-development-environment).
-1. 點選資料夾名稱，選取 **[!UICONTROL Salesforce雲端設定]**，然後點選 **[!UICONTROL 屬性]**.
+1. 選取資料夾名稱，選取 **[!UICONTROL Salesforce雲端設定]**，並選取 **[!UICONTROL 屬性]**.
 1. 在 **[!UICONTROL 驗證設定]** 標籤：
    1. 指定 [!DNL Salesforce] 中的網域URL **[!UICONTROL 主機]** 欄位。 例如， [網域名稱].my.salesforce.com.
    1. 為連線的應用程式指定使用者端ID （稱為使用者金鑰）和使用者端密碼（稱為使用者密碼）。
    1. 指定 **full offline_access** (`full` 和 `offine_access` 值（以空格分隔） **[!UICONTROL 授權範圍]** 欄位。
-   1. 點選 **[!UICONTROL 連線至OAuth]**. 您被重新導向至 [!DNL Microsoft® Dynamics] 登入頁面。
+   1. 選取 **[!UICONTROL 連線至OAuth]**. 您被重新導向至 [!DNL Microsoft® Dynamics] 登入頁面。
    1. 使用您的帳戶登入 [!DNL Salesforce] 認證並接受，以允許雲端服務設定連線至 [!DNL Salesforce] 服務。 如果連線成功，您將被重新導向至 [!DNL Salesforce] 雲端服務設定頁面，顯示成功訊息。
-1. 點選 **[!UICONTROL 儲存並關閉]** 以完成組態設定。
+1. 選取 **[!UICONTROL 儲存並關閉]** 以完成組態設定。
 
 ### 開箱即用的存取權 [!DNL Salesforce] 表單資料模型
 
 A [!DNL Salesforce] 表單資料模型可立即在 [!DNL AEM Forms] 在您之後的伺服器 [根據Experience Manager原型設定Forms的開發專案](setup-local-development-environment.md#forms-cloud-service-local-development-environment).
 
-若要存取表單資料模型，請導覽至 **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL 資料整合]**. 可用資料夾清單包括一個具有指定標題的資料夾 `DappTitle`  當 [產生AEM原型專案](setup-local-development-environment.md#forms-cloud-service-local-development-environment). 點選資料夾名稱，選取 **[!UICONTROL Salesforce資料模型]**，然後點選「編輯」 ![編輯](assets/edit.png) 圖示以檢視表單資料模型。
+若要存取表單資料模型，請導覽至 **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL 資料整合]**. 可用資料夾清單包括一個具有指定標題的資料夾 `DappTitle`  當 [產生AEM原型專案](setup-local-development-environment.md#forms-cloud-service-local-development-environment). 選取資料夾名稱，然後選取 **[!UICONTROL Salesforce資料模型]**，然後選取編輯 ![編輯](assets/edit.png) 圖示以檢視表單資料模型。
 
 設定後 [[!DNL Salesforce] 雲端設定服務](#configure-salesforce-cloud-service)，您就可以直接整合最適化表單與最適化表單 [!DNL Salesforce] 資料模型。
 
@@ -82,7 +82,7 @@ A [!DNL Salesforce] 表單資料模型可立即在 [!DNL AEM Forms] 在您之後
 執行以下步驟來設定 [!DNL Microsoft® Dynamics 365] 雲端服務：
 
 1. 開啟 [!DNL AEM Forms] 作者例項，瀏覽至 **[!UICONTROL 工具]** ![錘子](assets/hammer.png) > **[!UICONTROL Cloud Service]** > **[!UICONTROL 資料來源]**. 可用包裝函式資料夾清單包含一個資料夾，其標題已指定給 `DappTitle`  當 [產生AEM原型專案](setup-local-development-environment.md#forms-cloud-service-local-development-environment).
-1. 點選資料夾名稱，選取 **[!UICONTROL Microsoft® Dynamics 365雲端設定]**，然後點選 **[!UICONTROL 屬性]**.
+1. 選取資料夾名稱，選取 **[!UICONTROL Microsoft® Dynamics 365雲端設定]**，並選取 **[!UICONTROL 屬性]**.
 1. 在 **[!UICONTROL 驗證設定]** 標籤：
    1. 輸入值 **[!UICONTROL 服務根目錄]** 欄位。 前往Dynamics執行個體並導覽至 [開發人員資源](https://docs.microsoft.com/en-us/powerapps/developer/data-platform/view-download-developer-resources) 以檢視「服務根」欄位的值。 例如 `https://<tenant-name>.dynamics.com/api/data/v9.1/`
    1. 指定連線應用程式的使用者端ID （稱為應用程式ID）和使用者端密碼。
@@ -91,13 +91,13 @@ A [!DNL Salesforce] 表單資料模型可立即在 [!DNL AEM Forms] 在您之後
 
    1. 指定 `openid` 在 **[!UICONTROL 授權範圍]** 授權程式的欄位 [!DNL Microsoft® Dynamics 365].
    1. 使用您的帳戶登入 [!DNL Microsoft® Dynamics 365] 認證並接受，以允許雲端服務設定連線至 [!DNL Microsoft® Dynamics 365] 服務。 如果連線成功，您將被重新導向至 [!DNL Microsoft® Dynamics 365] 雲端服務設定頁面，顯示成功訊息。
-1. 點選 **[!UICONTROL 儲存並關閉]** 以完成組態設定。
+1. 選取 **[!UICONTROL 儲存並關閉]** 以完成組態設定。
 
 ### 開箱即用的存取權 [!DNL Microsoft® Dynamics 365] 表單資料模型
 
 A [!DNL Microsoft® Dynamics 365] 表單資料模型可立即在 [!DNL AEM Forms] 在您之後的伺服器 [根據Experience Manager原型設定Forms的開發專案](setup-local-development-environment.md##forms-cloud-service-local-development-environment).
 
-若要存取表單資料模型，請導覽至 **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL 資料整合]**. 可用資料夾清單包括一個具有指定標題的資料夾 `DappTitle`  當 [產生AEM原型專案](setup-local-development-environment.md#forms-cloud-service-local-development-environment). 點選資料夾名稱，選取 **[!UICONTROL Microsoft® Dynamics 365資料模型]**，然後點選「編輯」 ![編輯](assets/edit.png) 圖示以檢視表單資料模型。
+若要存取表單資料模型，請導覽至 **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL 資料整合]**. 可用資料夾清單包括一個具有指定標題的資料夾 `DappTitle`  當 [產生AEM原型專案](setup-local-development-environment.md#forms-cloud-service-local-development-environment). 選取資料夾名稱，然後選取 **[!UICONTROL Microsoft® Dynamics 365資料模型]**，然後選取編輯 ![編輯](assets/edit.png) 圖示以檢視表單資料模型。
 
 設定後 [[!DNL Microsoft® Dynamics 365] 雲端設定服務](#configure-dynamics-cloud-service)，您就可以直接整合最適化表單與最適化表單 [!DNL Microsoft® Dynamics 365] 資料模型。
 

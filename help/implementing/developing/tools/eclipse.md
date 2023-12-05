@@ -2,9 +2,9 @@
 title: Eclipse 適用的 AEM 開發人員工具
 description: 瞭解如何使用適用於Eclipse的AEM開發人員工具（一個以Apache Sling的Eclipse外掛程式為基礎的Eclipse外掛程式）。
 exl-id: 7f9c0f99-e230-440a-8bc9-a0ab7465e3bf
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1191'
+source-wordcount: '1138'
 ht-degree: 2%
 
 ---
@@ -51,7 +51,7 @@ _Eclipse適用的Experience Manager開發人員工具_ 是一個以擴充功能�
 1. 按一下 **新增……**.
 1. 在 **名稱** 欄位，輸入 `AEM Developer Tools`.
 1. 在 **位置** 欄位，複製安裝URL。
-1. 按一下&#x200B;**「新增」**。
+1. 按一下 **新增**.
 1. 檢查兩者 **AEM** 和 **Sling** 外掛程式。
 1. 按一下「**下一步**」。
 1. 在 **安裝詳細資料** 視窗，按一下 **下一個** 再來一次。
@@ -196,7 +196,7 @@ _Eclipse的Experience Manager開發工具_ 提供AEM觀點，讓您可完全控�
 
 如果您想要從專案重新建置套件，請用滑鼠右鍵按一下 `PROJECT.ui.apps` 或 `PROJECT.ui.content` 並選擇 **執行身分** > **Maven安裝**.
 
-您現在已建立目標資料夾，並在其中加入您的套件(例如，稱為 `PROJECT.ui.apps-0.0.1-SNAPSHOT.zip`)。
+您現在已建立目標資料夾，並在其中加入您的套件(例如， `PROJECT.ui.apps-0.0.1-SNAPSHOT.zip`)。
 
 ## 疑難排解 {#troubleshooting}
 

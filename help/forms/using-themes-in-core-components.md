@@ -2,9 +2,9 @@
 title: 如何在Adaptive Forms中建立和使用主題？
 description: 您可以使用主題來設定樣式，並使用核心元件來將視覺身分提供給最適化表單。 您可以在任何數量的最適化Forms中共用主題。
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2676'
+source-wordcount: '2610'
 ht-degree: 4%
 
 ---
@@ -167,7 +167,7 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 
 ##### 設定元件層級樣式 {#component-based-customization}
 
-您也可以變更特定最適化表單核心元件的字型、顏色、大小和其他CSS屬性。 例如按鈕、核取方塊、容器、頁尾等。 您可以編輯特定元件的CSS檔案來設定按鈕或核取方塊的樣式，使其與貴組織的樣式一致。 若要自訂元件的樣式：
+您也可以變更特定最適化表單核心元件的字型、顏色、大小和其他CSS屬性。 例如，按鈕、核取方塊、容器、頁尾等。 您可以編輯特定元件的CSS檔案來設定按鈕或核取方塊的樣式，使其與貴組織的樣式一致。 若要自訂元件的樣式：
 
 1. 開啟檔案 `<your-theme-sources>/src/components/<component>/<component.scss>` 以進行編輯。 例如，若要變更按鈕元件的字型顏色，請開啟 `<your-theme-sources>/src/components/button/button.scss`，檔案。
 1. 根據您的需求變更任何的值。 例如，若要將滑鼠懸停時按鈕元件的顏色變更為 `green`，變更 `color: $white` 中的屬性 `cmp-adaptiveform-button__widget:hover` 類別至十六進位程式碼 `#12B453` 或任何其他陰影 `green`. 最終程式碼如下所示：
@@ -377,7 +377,7 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 
 1. 登入您的AEM Forms作者執行個體。
 
-1. 點選 **Adobe Experience Manager** > **Forms** > **Forms與檔案**.
+1. 選取 **Adobe Experience Manager** > **Forms** > **Forms與檔案**.
 
 1. 按一下 **建立** > **最適化Forms**. 建立最適化表單的精靈隨即開啟。
 

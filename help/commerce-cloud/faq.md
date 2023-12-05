@@ -1,15 +1,15 @@
 ---
-title: AEM — 使用Commerce Integration Framework進行Commerce整合常見問題集
-description: AEM — 使用Commerce Integration Framework進行Commerce整合常見問題集
+title: AEM — 使用Commerce integration framework常見問答集進行Commerce整合
+description: AEM — 使用Commerce integration framework常見問答集進行Commerce整合
 exl-id: 0a946d98-22c7-445d-984a-9e09c306ce45
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '967'
+source-wordcount: '963'
 ht-degree: 0%
 
 ---
 
-# AEM — 使用Commerce Integration Framework進行Commerce整合常見問題集
+# AEM — 使用Commerce integration framework常見問答集進行Commerce整合
 
 ## 1. CIF GraphQL是否僅用於商務，或是否可用於查詢在AEM JCR上編寫的內容？
 
@@ -23,7 +23,7 @@ Adobe已採用Adobe Commerce的GraphQL API作為適用於所有商務相關資�
 
 ## 3.商業解決方案的部署位置重要嗎？ （內部部署或雲端）
 
-不，您的商務解決方案部署在哪裡並不重要。 不論部署模式為何，CIF和AEM儲存庫都能運作。 不過，如果解決方案是使用建議的E2E參考架構進行部署，則E2E測試可以根據代表典型企業客戶設定檔的效能KPI執行。 此方法提供可當作基準的其他資訊。
+不，您的商務解決方案部署在哪裡並不重要。 無論部署模式為何，CIF和AEM店面都能運作。 不過，如果解決方案是使用建議的E2E參考架構進行部署，則E2E測試可以根據代表典型企業客戶設定檔的效能KPI執行。 此方法提供可當作基準的其他資訊。
 
 ## 4.如何在AEM中建立目錄頁面或產品頁面？ 它們如何在AEM中持續存在？
 
@@ -53,9 +53,9 @@ Adobe建議針對Dispatcher上快取的頁面設定TTL型快取失效。 若是�
 
 已提供產品搜尋參考實作，但未提供具有內容的整合式搜尋。 此功能因客戶而異，專案專屬層級也能提供更好的解決方案。
 
-## 11. Search如何使用CIF搭配AEM和商務使用？
+## 11. Search如何使用CIF與AEM及商務搭配運作？
 
-CIF提供搜尋列和搜尋結果元件。 搜尋列元件會將具有搜尋字詞的GraphQL要求傳送至商業解決方案，然後傳回包含產品名稱、價格、SLUG等的產品清單。 「搜尋結果」元件接著會在以AEM建立的搜尋結果頁面上的相簿檢視中顯示搜尋結果。 「搜尋」支援基本的全文檢索搜尋。 我們使用SLUG/url鍵來建置PDP的參考。
+CIF提供「搜尋列」和「搜尋結果」元件。 搜尋列元件會將具有搜尋字詞的GraphQL要求傳送至商業解決方案，然後傳回包含產品名稱、價格、SLUG等的產品清單。 「搜尋結果」元件接著會在以AEM建立的搜尋結果頁面上的相簿檢視中顯示搜尋結果。 「搜尋」支援基本的全文檢索搜尋。 我們使用SLUG/url鍵來建置PDP的參考。
 
 ## 12.如何在MSM或翻譯中使用產品資料？
 
@@ -65,7 +65,7 @@ CIF提供搜尋列和搜尋結果元件。 搜尋列元件會將具有搜尋字�
 
 Adobe建議管理AEM中的行銷相關資料和內容。 使用內容片段的其他屬性裝飾您的商業解決方案的產品資料，或建立非結構化內容的體驗片段並將其與您的產品連結。
 
-## 14.在整個簡報層使用AEM時，我們如何確保PCI相容性？
+## 14.在整個展示層使用AEM時，如何確保PCI法規遵循？
 
 Adobe建議使用抽象的付款方法。 這樣一來，瀏覽器使用者端就會與支付閘道提供者直接通訊，因此Adobe或商業解決方案都不會保留或傳遞持卡人資料。 此方法只需要第3級PCI相容性。 不過，還有其他完全符合PCI規範的事項需要考慮，例如員工如何與系統和資料互動。 如需Adobe Commerce PCI法規遵循的詳細資訊，請參閱 [PCI法規遵循需求](https://business.adobe.com/products/magento/pci-compliance.html).
 

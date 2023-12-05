@@ -2,10 +2,10 @@
 title: 如何透過 AEM Delivery API 存取您的內容
 description: 在 AEM Headless 開發人員歷程的這一部分中，了解如何使用 GraphQL 查詢來存取您的內容片段內容。
 exl-id: 1adecc69-5f92-4007-8a2a-65bf1e960645
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '1366'
-ht-degree: 100%
+source-wordcount: '1335'
+ht-degree: 99%
 
 ---
 
@@ -242,7 +242,7 @@ It provides features such as syntax-highlighting, auto-complete, auto-suggest, t
 在開始對您的內容進行查詢之前，您需要：
 
 * 啟用您的端點
-   * 使用「工具 -> 一般 -> GraphQL」
+   * 使用「工具>一般> GraphQL」
    * [啟用 GraphQL 端點](/help/headless/graphql-api/graphql-endpoint.md)
       * 這也會啟用 GraphiQL IDE。
 
@@ -269,7 +269,7 @@ It provides features such as syntax-highlighting, auto-complete, auto-suggest, t
 
 可以在 GraphiQL 介面輸入查詢。您可以從以下任一方式存取查詢編輯器：
 
-* **工具** -> **一般** -> **GraphQL 查詢編輯器**
+* **工具** > **一般** > **GraphQL查詢編輯器**
 * 直接；例如 `http://localhost:4502/aem/graphiql.html`
 
 ![GraphiQL 介面](assets/graphiql-interface.png "GraphiQL 介面")

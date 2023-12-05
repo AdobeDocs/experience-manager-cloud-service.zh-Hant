@@ -5,10 +5,10 @@ feature: Adaptive Forms
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 8eeb9c5e-6866-4bfe-b922-1f028728ef0d
-source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1347'
-ht-degree: 9%
+source-wordcount: '1333'
+ht-degree: 8%
 
 ---
 
@@ -738,7 +738,7 @@ Here is the sample JSON code for previously mentioned examples.
 
 1. 前往Experience Manager網頁主控台，位於 `https://server:host/system/console/configMgr`.
 1. 尋找 **[!UICONTROL 最適化表單和互動式通訊Web通道設定]**.
-1. 點選以在編輯模式中開啟設定。
+1. 選取以在編輯模式中開啟設定。
 1. 選取 **[!UICONTROL 產生符合結構描述的資料]** 核取方塊。
 1. 儲存設定。
 

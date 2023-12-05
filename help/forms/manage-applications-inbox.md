@@ -5,9 +5,9 @@ uuid: c6c0d8ea-743f-4852-99d1-69fd50a0994e
 contentOwner: vishgupt
 topic-tags: document_services, publish
 discoiquuid: dd11fd83-3df1-4727-8340-8c5426812823
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1148'
+source-wordcount: '1084'
 ht-degree: 2%
 
 ---
@@ -30,8 +30,8 @@ ht-degree: 2%
 ## 建立應用程式 {#create-application}
 
 1. 前往AEM收件匣，網址為https://&#39;[伺服器]：[連線埠]&#39;/aem/inbox.
-1. 在收件匣UI中，點選 **[!UICONTROL 建立>應用程式]**. 便會顯示「選取應用程式」頁面。
-1. 選取應用程式並按一下 **[!UICONTROL 建立]**. 與應用程式關聯的最適化表單隨即開啟。 在最適化表單中填入資訊，然後點選 **[!UICONTROL 提交]**. 它會啟動關聯的工作流程，並在受指派人的收件匣中建立任務。
+1. 在收件匣UI中，選取 **[!UICONTROL 建立>應用程式]**. 便會顯示「選取應用程式」頁面。
+1. 選取應用程式並按一下 **[!UICONTROL 建立]**. 與應用程式關聯的最適化表單隨即開啟。 填寫最適化表單中的資訊並選擇 **[!UICONTROL 提交]**. 它會啟動關聯的工作流程，並在受指派人的收件匣中建立任務。
 
 ## 管理任務 {#manage-tasks}
 
@@ -41,17 +41,17 @@ ht-degree: 2%
 
 指派給群組的任務會出現在所有群組成員的收件匣中。 任何群組成員都可以要求該任務或將其委派給其他群組成員。 若要這麼做：
 
-1. 點選以選取工作的縮圖。 用於開啟或委派任務的選項會顯示在頂端。
+1. 選取以選取任務的縮圖。 用於開啟或委派任務的選項會顯示在頂端。
 
    ![選擇任務](assets/select-task.png)
 
 1. 執行下列任一項作業：
 
-   * 若要委派任務，請點選 **[!UICONTROL 委派]**. 「委派專案」對話方塊開啟。 選取使用者，並選擇性地新增註解，然後點選 **[!UICONTROL 確定]**.
+   * 若要委派任務，請選取 **[!UICONTROL 委派]**. 「委派專案」對話方塊開啟。 選取使用者，並選擇性地新增註解，然後選取 **[!UICONTROL 確定]**.
 
    ![委派](assets/delegate.png)
 
-   * 若要宣告工作，請點選 **[!UICONTROL 開啟]**. 「指派給自己」對話方塊開啟。 點選 **[!UICONTROL 繼續]** 以宣告任務。 您作為受指派人會出現在您的收件匣中。
+   * 若要宣告工作，請選取 **[!UICONTROL 開啟]**. 「指派給自己」對話方塊開啟。 選取 **[!UICONTROL 繼續]** 以宣告任務。 您作為受指派人會出現在您的收件匣中。
 
    ![索賠](assets/claim.png)
 
@@ -59,7 +59,7 @@ ht-degree: 2%
 
 當您開啟任務時，可以檢視任務詳細資訊並執行可用的動作。 任務可用的動作在相關Forms Workflow的「指派任務」步驟中定義。
 
-1. 點選以選取工作的縮圖。 頂端會顯示開啟或委派所選任務的選項。
+1. 選取以選取任務的縮圖。 頂端會顯示開啟或委派所選任務的選項。
 1. 選取 **開啟** 以檢視工作詳細資訊和可用的動作。 詳細任務檢視隨即開啟。 在此檢視中，您可以檢視任務詳細資訊並對任務執行動作。
 
    >[!NOTE]
@@ -87,7 +87,7 @@ ht-degree: 2%
 
 頂端的「工作流程詳細資訊」標籤會顯示工作流程中各個階段的任務進度。 它會顯示任務的已完成階段、目前階段及擱置階段。 工作流程的階段定義於 [指派任務步驟](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html#extending-aem) 相關聯工作流程的。
 
-此外，索引標籤會顯示工作流程中每個已完成階段的任務歷史記錄。 您可以點選 **[!UICONTROL 檢視詳細資料]** 完成階段的相關資訊。 它會顯示有關任務的註解、表單及工作附件、狀態、開始與結束日期等。
+此外，索引標籤會顯示工作流程中每個已完成階段的任務歷史記錄。 您可以選取 **[!UICONTROL 檢視詳細資料]** 完成階段的相關資訊。 它會顯示有關任務的註解、表單及工作附件、狀態、開始與結束日期等。
 
 ![workflow-details](assets/workflow-details.png)
 
@@ -101,12 +101,12 @@ ht-degree: 2%
 
 AEM收件匣只會顯示作用中的任務。 已完成的任務未出現在清單中。 不過，您可以使用收件匣篩選器根據數個引數來篩選任務，例如任務型別、狀態、開始和結束日期。 若要檢視已完成的工作，請執行下列動作：
 
-1. 在AEM收件匣中，點選 ![toggle-side-panel1](assets/toggle-side-panel1.png) 以開啟篩選選擇器。
-1. 點選 **[!UICONTROL 任務狀態]** 摺疊式功能表及選取 **[!UICONTROL 完成]**. 所有已完成的任務都會出現。
+1. 在AEM收件匣中，選取 ![toggle-side-panel1](assets/toggle-side-panel1.png) 以開啟篩選選擇器。
+1. 選取 **[!UICONTROL 任務狀態]** 摺疊式功能表及選取 **[!UICONTROL 完成]**. 所有已完成的任務都會出現。
 
-   ![filter](assets/filter.png)
+   ![篩選](assets/filter.png)
 
-1. 點選以選取工作並按一下 **[!UICONTROL 開啟]**.
+1. 選取以選取工作並按一下 **[!UICONTROL 開啟]**.
 
 任務會開啟以顯示與任務相關聯的檔案或最適化表單。 對於最適化表單，任務會顯示唯讀的最適化表單或其PDF記錄檔案，如在的表單/檔案索引標籤中所設定。 [指派任務工作流程步驟](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html#extending-aem).
 
@@ -114,7 +114,7 @@ AEM收件匣只會顯示作用中的任務。 已完成的任務未出現在清�
 
 ![completed-task](assets/completed-task.png)
 
-此 **[!UICONTROL 工作流程詳細資訊]** 標籤會顯示工作流程的每個步驟。 點選 **[!UICONTROL 檢視詳細資料]** 以取得詳細資訊。
+此 **[!UICONTROL 工作流程詳細資訊]** 標籤會顯示工作流程的每個步驟。 選取 **[!UICONTROL 檢視詳細資料]** 以取得詳細資訊。
 
 ![completed-task-workflow](assets/completed-task-workflow.png)
 

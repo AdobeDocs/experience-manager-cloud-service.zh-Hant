@@ -2,9 +2,9 @@
 title: 編輯啟動
 description: 為您的頁面（或一組頁面）建立啟動後，您可以在頁面的啟動副本中編輯內容。
 exl-id: d3cd3383-e0a0-4019-9f97-8baa3be99e6e
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '553'
+source-wordcount: '551'
 ht-degree: 18%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 18%
 
 ## 編輯啟動頁面 {#editing-launch-pages}
 
-建立頁面（或一組頁面）的啟動後，您可以在頁面的啟動副本中編輯內容。
+為某個頁面（或一組頁面）建立啟動後，您可以在頁面的啟動副本中編輯內容。
 
 1. 存取 [從「引用」（網站主控台）啟動](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console) 以顯示可用的動作。
 1. 選取 **前往頁面** 以開啟頁面進行編輯。

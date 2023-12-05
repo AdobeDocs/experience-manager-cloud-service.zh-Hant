@@ -2,9 +2,9 @@
 title: 查詢產生器述詞參考
 description: AEMas a Cloud Service中查詢產生器API的述詞參考。
 exl-id: 77118ef7-4d29-470d-9c4b-20537a408940
-source-git-commit: e10c39c1d7fa05b738dd8f25662617a3a9568f83
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2295'
+source-wordcount: '2270'
 ht-degree: 1%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 1%
 
 * **`p.offset`**  — 表示結果頁面開始的數字，也就是要略過多少專案。
 * **`p.limit`**  — 表示頁面大小的數字。
-* **`p.guessTotal`**  — 建議：避免計算完整結果總計，這可能要花費大量成本。 指示要計算的總數上限的數字（例如1000，這個數字可提供使用者對粗略大小的足夠意見以及較小結果的精確數字）。 或， `true` 以僅計算至所需的最小值 `p.offset` + `p.limit`.
+* **`p.guessTotal`**  — 建議：避免計算完整結果總計，這可能要花費大量成本。 指示要計算的總數上限的數字（例如，1000，這個數字可提供使用者對粗略大小和精確數字的足夠意見反應，以獲得較小結果）。 或， `true` 以僅計算至所需的最小值 `p.offset` + `p.limit`.
 * **`p.excerpt`**  — 若設為 `true`，在結果中包含全文摘錄。
 * **`p.indexTag`**  — 若設定，查詢中將包含索引標籤選項(請參閱 [查詢選項索引標籤](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#query-option-index-tag))。
 * **`p.facetStrategy`**  — 若設為 `oak`，查詢產生器會將Facet擷取委派給Oak (請參閱 [Facet](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#facets))。
@@ -76,7 +76,7 @@ group.2_group.type=dam:Asset
 
 #### 屬性 {#properties-13}
 
-* **`orderby`**  — 例如，JCR屬性名稱，以@開頭 `@jcr:lastModified` 或 `@jcr:content/jcr:title`，或查詢中的其他述詞，例如 `2_property`，排序依據
+* **`orderby`**  — 以@開頭的JCR屬性名稱，例如， `@jcr:lastModified` 或 `@jcr:content/jcr:title`，或查詢中的其他述詞，例如， `2_property`，排序依據
 * **`sort`**  — 排序方向 `desc` 降序或 `asc` 遞增（預設）
 * **`case`**  — 若設為 `ignore`，這會使排序不區分大小寫，表示 `a` 早於 `B`；如果為空白或省略，排序會區分大小寫，這表示 `B` 早於 `a`
 
@@ -92,7 +92,7 @@ group.2_group.type=dam:Asset
 
 #### 屬性 {#properties}
 
-* **`boolproperty`**  — 屬性的相對路徑，例如 `myFeatureEnabled` 或 `jcr:content/myFeatureEnabled`
+* **`boolproperty`**  — 屬性的相對路徑，例如， `myFeatureEnabled` 或 `jcr:content/myFeatureEnabled`
 * **`value`**  — 要檢查屬性的值， `true` 或 `false`
 
 ### contentfragment {#contentfragment}
@@ -134,10 +134,10 @@ group.2_group.type=dam:Asset
 
 #### 屬性 {#properties-3}
 
-* **`property`**  — 相對路徑 `DATE` 屬性，例如 `jcr:lastModified`
-* **`lowerBound`**  — 下限為檢查屬性的日期，例如 `2014-10-01`
+* **`property`**  — 相對路徑 `DATE` 屬性，例如， `jcr:lastModified`
+* **`lowerBound`**  — 用於檢查屬性的日期下限，例如 `2014-10-01`
 * **`lowerOperation`** - `>` （較新）或 `>=` （在或更新版本），套用至 `lowerBound`. 預設值為 `>`
-* **`upperBound`**  — 上限以檢查屬性，例如 `2014-10-01T12:15:00`
+* **`upperBound`**  — 檢查屬性的上限，例如 `2014-10-01T12:15:00`
 * **`upperOperation`** - `<` （較舊）或 `<=` （等於或大於），適用於 `upperBound`. 預設值為 `<`
 * **`timeZone`**  — 未指定為ISO-8601日期字串時要使用的時區ID。 預設為系統的預設時區。
 
@@ -186,7 +186,7 @@ group.2_group.type=dam:Asset
 
 #### 屬性 {#properties-8}
 
-* **`language`**  — 例如ISO語言代碼 `de`
+* **`language`** - ISO語言代碼，例如 `de`
 
 ### 主要資產 {#mainasset}
 
@@ -235,7 +235,7 @@ group.2_group.type=dam:Asset
 * **`notexpired`**  — 布林值， `true` 針對尚未過期（未來日期或相等）， `false` 適用於已過期（過去日期） （必要）
 * **`property`**  — 相對路徑 `DATE` 要檢查的屬性（必要）
 
-### path {#path}
+### 路徑 {#path}
 
 此述詞在給定路徑內搜尋。
 
@@ -260,7 +260,7 @@ group.2_group.type=dam:Asset
 
 #### 屬性 {#properties-15}
 
-* **`property`**  — 屬性的相對路徑，例如 `jcr:title`.
+* **`property`**  — 屬性的相對路徑，例如， `jcr:title`.
 * **`value`**  — 要檢查屬性的值；遵循JCR屬性型別進行字串轉換。
 * **`N_value`**  — 使用 `1_value`， `2_value`， ...以檢查多個值(與 `OR` 依預設，使用 `AND` 如果 `and=true`)。
 * **`and`**  — 設為 `true` 用於合併多個值(`N_value`)和 `AND`
@@ -347,7 +347,7 @@ group.2_group.type=dam:Asset
 
 #### 屬性 {#properties-21}
 
-* **`tag`**  — 要尋找的標籤標題路徑，例如 `properties:orientation/landscape`
+* **`tag`**  — 標籤標題路徑以尋找，例如 `properties:orientation/landscape`
 * **`N_value`**  — 使用 `1_value`， `2_value`， ...以檢查多個標籤(與 `OR` 依預設，使用 `AND` 如果 `and=true`)
 * **`property`**  — 要檢視的屬性（或屬性的相對路徑） （預設） `cq:tags`)
 
@@ -359,7 +359,7 @@ group.2_group.type=dam:Asset
 
 #### 屬性 {#properties-22}
 
-* **`tagid`**  — 要尋找的標籤ID，例如 `properties:orientation/landscape`
+* **`tagid`**  — 標籤識別碼，用於尋找， `properties:orientation/landscape`
 * **`N_value`**  — 使用 `1_value`， `2_value`， ...以檢查多個標籤ID (與 `OR` 依預設，使用 `AND` 如果 `and=true`)
 * **`property`**  — 要檢視的屬性（或屬性的相對路徑） （預設） `cq:tags`)
 
@@ -384,4 +384,4 @@ group.2_group.type=dam:Asset
 
 #### 屬性 {#Properties-2}
 
-* **`type`**  — 節點型別或 `mixin` 要搜尋的名稱，例如 `cq:Page`
+* **`type`**  — 節點型別或 `mixin` 名稱來搜尋，例如 `cq:Page`

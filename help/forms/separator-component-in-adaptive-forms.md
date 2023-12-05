@@ -5,9 +5,9 @@ uuid: f8d2aed3-52aa-437f-bfe3-0c8779e7986c
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 docset: aem65
-source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '312'
+source-wordcount: '313'
 ht-degree: 1%
 
 ---
@@ -28,7 +28,7 @@ ht-degree: 1%
 
 若要指定分隔符號元件的屬性：
 
-1. 選取分隔符號元件並點選 ![cmppr](assets/cmppr.png). 屬性會在側邊欄中開啟。
+1. 選取分隔符號元件並選取 ![cmppr](assets/cmppr.png). 屬性會在側邊欄中開啟。
 1. 按一下「內嵌CSS屬性」區段中的索引標籤，以便指定CSS屬性。 例如， a。在「欄位」標籤中，按一下 **新增專案**. 會新增包含兩個欄位的列。
 1. 在左側的第一個欄位中，指定您要套用的CSS3屬性。 例如， **邊框**. 您也可以按一下向下箭頭按鈕來選取屬性。 下拉式清單並非詳盡無遺，您可以在此欄位中指定任何支援的CSS3屬性名稱。
 1. 在相鄰的欄位中，指定指定CSS3屬性的有效值。 例如， **3畫素純黑**.

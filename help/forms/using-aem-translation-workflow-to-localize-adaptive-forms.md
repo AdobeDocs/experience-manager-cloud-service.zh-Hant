@@ -6,9 +6,9 @@ content-type: reference
 topic-tags: develop
 discoiquuid: f5642571-9657-4ca1-93c5-4ae2eb91e967
 noindex: true
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '535'
+source-wordcount: '533'
 ht-degree: 1%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 1%
 
 機器翻譯服務會立即翻譯最適化表單和記錄檔案中的內容。 [!DNL AEM Forms] 已預先設定為使用試用版 [!DNL Microsoft Translator] 用於機器翻譯。 執行以下步驟來啟用最適化Forms和記錄檔案的機器翻譯：
 
-1. 在 [!DNL AEM Forms] UI，選取表單，然後點選 **新增字典** 選項。
+1. 在 [!DNL AEM Forms] UI，選取表單，然後選取 **新增字典** 選項。
 1. 在 **新增字典至翻譯專案** 熒幕，選取 **建立新的翻譯專案** 或 **新增至現有翻譯專案** 選項。
 1. 在 **專案標題** 欄位中，指定標題。 例如 `Government Reference Site - German locale.`
 1. 在 **目標語言** 欄位，指定地區設定(例如， `German(de)`)，然後按一下 **完成**. 您可以指定多個地區設定。 表單會轉譯為 **目標語言** 欄位。
@@ -48,7 +48,7 @@ ht-degree: 1%
 [記錄檔案設定](generate-document-of-record-for-non-xfa-based-adaptive-forms.md#p-document-of-record-settings-p)
 
 1. [自訂記錄檔案的品牌資訊](generate-document-of-record-for-non-xfa-based-adaptive-forms.md) 並確保瀏覽器地區設定為您使用機器語言將最適化表單當地語系化的相同語言。 瀏覽器地區設定可協助將記錄檔案中的品牌資訊本地化。
-1. 若要檢視當地語系化的記錄檔案，請點選「產生預覽」。 記錄檔案PDF會產生，並在瀏覽器的新索引標籤中開啟。
+1. 若要檢視當地語系化的記錄檔案，請選取「產生預覽」。 記錄檔案PDF會產生，並在瀏覽器的新索引標籤中開啟。
 
 <!-- ## Localizing an Adaptive Form and its Document of Record using Human Translation {#localizing-an-adaptive-form-and-its-document-of-record-using-human-translation}
 

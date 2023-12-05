@@ -4,10 +4,10 @@ description: 瞭解如何建立最適化表單或將其新增到您的AEM Sites�
 feature: Adaptive Forms, Page Editor, Authoring
 Keywords: AF in Sites editor, af in aem sites, aem sites af, add af to a sites page, af aem sites, af sites, create af in a sites page, adaptive form in aem sites, forms aem sites, add form to a sites page, adaptive forms aem sites, add adaptive forms to aem page, create forms in an aem sites page
 exl-id: a1846c5d-7b0f-4f48-9d15-96b2a8836a9d
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '3208'
-ht-degree: 20%
+source-wordcount: '3177'
+ht-degree: 18%
 
 ---
 
@@ -53,12 +53,12 @@ AEM FormsCloud Service提供最適化表單容器和Adaptive Forms — 內嵌元
 
 * **[將最適化表單轉換為體驗片段](#convert-an-adaptive-form-in-sites-page-to-an-experience-fragment)：** 將新增至AEM Sites頁面的最適化表單轉換為體驗片段，以便在多個AEM Sites頁面中重複使用表單。
 
-* **[根據核准的範本建立並新增表單至AEM Sites頁面：](/help/forms/embed-adaptive-form-aem-sites.md#embed-form-using-adaptive-form-wizzard-aem-sites)** 您可以善用預先核准的範本，快速建立符合您組織品牌方針和設計標準的最適化Forms。 此選項僅適用於以最適化Forms編輯器或Adaptive Forms — 內嵌元件建立的最適化Forms 。
+* **[根據核准的範本建立並新增表單至AEM Sites頁面：](/help/forms/embed-adaptive-form-aem-sites.md#embed-form-using-adaptive-form-wizzard-aem-sites)** 您可以使用預先核准的範本，快速建立符合您組織品牌指導方針和設計標準的最適化Forms。 此選項僅適用於以最適化Forms編輯器或Adaptive Forms — 內嵌元件建立的最適化Forms 。
 
 * **[將現有表單新增至AEM Sites頁面：](/help/forms/embed-adaptive-form-aem-sites.md#embed-an-adaptive-form-in-sites-editor)** 您可以輕鬆將已建立的表單整合至網站，讓訪客直接與表單互動。 此選項僅適用於以最適化Forms編輯器或Adaptive Forms — 內嵌元件建立的最適化Forms 。
 
 
-* **新增多個表單至AEM Sites頁面或體驗片段：**  您可以在AEM Sites頁面上建立或新增多個最適化Forms，以根據使用者的偏好和需求為其提供多個選擇。 這些可以是從頭開始的全新形式和現有形式的組合。您可以使用 **[!UICONTROL 最適化表單容器]** 多次元件，以在AEM Sites頁面中新增最適化Forms。 您可以使用 **[!UICONTROL 最適化Forms — 內嵌]** 在AEM Sites頁面中多次使用元件，只有在 **[!UICONTROL 表單覆蓋影格的整個寬度]** 已選取選項。 萬一 **[!UICONTROL 表單覆蓋影格的整個寬度]** 選項未勾選，AEM Sites頁面僅支援一個不含iframe的最適化表單存在。 若要使用，新增更多最適化Forms **[!UICONTROL 最適化Forms — 內嵌]** 元件，選取 **[!UICONTROL 表單覆蓋影格的整個寬度]** 選項。
+* **新增多個表單至AEM Sites頁面或體驗片段：**  您可以在AEM Sites頁面上建立或新增多個最適化Forms，以根據使用者的偏好和需求為其提供多個選擇。 這些可以是全新表單和現有表單的組合。 您可以使用 **[!UICONTROL 最適化表單容器]** 多次元件，以在AEM Sites頁面中新增最適化Forms。 您可以使用 **[!UICONTROL 最適化Forms — 內嵌]** 在AEM Sites頁面中多次使用元件，只有在 **[!UICONTROL 表單覆蓋影格的整個寬度]** 已選取選項。 萬一 **[!UICONTROL 表單覆蓋影格的整個寬度]** 選項未勾選，AEM Sites頁面僅支援一個不含iframe的最適化表單存在。 若要使用，新增更多最適化Forms **[!UICONTROL 最適化Forms — 內嵌]** 元件，選取 **[!UICONTROL 表單覆蓋影格的整個寬度]** 選項。
 
 ## 在AEM Sites頁面或AEM體驗片段中建立最適化表單的考量事項 {#consideration}
 
@@ -195,13 +195,13 @@ AEM FormsCloud Service提供最適化表單容器和Adaptive Forms — 內嵌元
 
 ## 在AEM Sites頁面或體驗片段中設定表單的提交動作 {#configure-submit-action-for-form}
 
-提交動作讓您可選擇透過最適化表單擷取的資料目標。使用者按一下最適化表單上的「提交」按鈕時，就會加以觸發。調適型表單包含一些立即可用的提交動作。 您也可以擴充預設提交動作，以建立自己的自訂提交動作。 若要設定表單的提交動作：
+提交動作讓您可選擇透過最適化表單擷取的資料目標。當使用者按一下最適化表單上的提交按鈕時會觸發。 調適型表單包含一些立即可用的提交動作。 您也可以擴充預設提交動作，以建立自己的自訂提交動作。 若要設定表單的提交動作：
 
 1. 開啟包含最適化表單的AEM頁面編輯器或體驗片段。
 1. 開啟「內容樹」，然後選取 **[!UICONTROL 最適化Forms容器]** 託管您的最適化表單。 一個AEM Sites頁面可以託管多個最適化Forms。 因此，請仔細選取正確的最適化Forms容器。
 1. 按一下最適化表單容器屬性 ![最適化表單容器屬性](/help/forms/assets/configure-icon.svg) 圖示。 可設定提交動作的調適型表單容器對話方塊隨即開啟。
    ![按一下扳手圖示，開啟最適化表單容器對話方塊，設定最適化表單的提交動作](/help/forms/assets/adaptive-forms-container.png)
-1. 根據您的要求選取和設定「提交動作」。如需「提交動作」的詳細資訊，請參閱 [最適化表單提交動作](/help/forms/configuring-submit-actions.md)
+1. 根據您的要求，選取並設定提交動作。 如需「提交動作」的詳細資訊，請參閱 [最適化表單提交動作](/help/forms/configuring-submit-actions.md)
 
 
 ## 為AEM Sites頁面或體驗片段中的表單設定結構描述或表單資料模型 {#configure-schema-or-data-model-for-form}
@@ -239,8 +239,8 @@ AEM FormsCloud Service提供最適化表單容器和Adaptive Forms — 內嵌元
 1. 開啟「內容樹」，然後選取 **[!UICONTROL 最適化Forms容器]** 託管您的最適化表單。 一個AEM Sites頁面可以託管多個最適化Forms。 因此，請仔細選取正確的最適化Forms容器。
 1. 按一下最適化表單容器屬性 ![最適化表單容器屬性](/help/forms/assets/configure-icon.svg) 圖示。 用來設定資料模型的最適化表單容器對話方塊隨即開啟。
    ![按一下「扳手」圖示，開啟「最適化表單容器」對話方塊，以設定最適化表單的預填服務](/help/forms/assets/adaptive-forms-container.png)
-1. 選擇表單資料模型. 開啟 **[!UICONTROL 基本]** 標籤。 在預填服務中，選取 **[!UICONTROL 表單資料模型預填服務]**.
-1. 按一下&#x200B;**[!UICONTROL 「完成」]**。您的最適化表單現在已設定為使用表單資料模型預填。 您現在可以使用 [規則編輯器](rule-editor.md) 建立規則以預先填入表單的欄位。
+1. 選取表單資料模型。 開啟 **[!UICONTROL 基本]** 標籤。 在預填服務中，選取 **[!UICONTROL 表單資料模型預填服務]**.
+1. 按一下 **[!UICONTROL 完成]**. 您的最適化表單現在已設定為使用表單資料模型預填。 您現在可以使用 [規則編輯器](rule-editor.md) 建立規則以預先填入表單的欄位。
 
 
 ## 將使用者重新導向至頁面，或在提交表單時顯示感謝訊息

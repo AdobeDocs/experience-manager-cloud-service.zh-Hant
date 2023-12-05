@@ -4,9 +4,9 @@ description: 以Forms為中心的工作流程可讓您快速建立最適化Forms
 exl-id: e1403ba6-8158-4961-98a4-2954b2e32e0d
 google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
 keywords: 使用AEM工作流程、使用指派工作步驟、轉換為PDF/A步驟、產生記錄步驟的檔案、使用工作流程、簽署檔案步驟、產生列印輸出步驟、產生非互動式PDF輸出
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '7448'
+source-wordcount: '7367'
 ht-degree: 0%
 
 ---
@@ -185,7 +185,7 @@ PDF/A是一種用於長期儲存檔案內容的封存格式，透過嵌入字型
 
 ## 傳送電子郵件步驟 {#send-email-step}
 
-使用電子郵件步驟來傳送電子郵件，例如包含記錄檔案、最適化表單連結的電子郵件 <!-- , link of an interactive communication-->，或附加了PDF檔案。 傳送電子郵件步驟支援 [HTML電子郵件](https://en.wikipedia.org/wiki/HTML_email). HTML電子郵件會迅速回應，並因應收件者的電子郵件使用者端和熒幕大小。 您可以使用HTML電子郵件範本來定義電子郵件的外觀、色彩配置和行為。
+使用電子郵件步驟來傳送電子郵件，例如，包含記錄檔案、最適化表單連結的電子郵件 <!-- , link of an interactive communication-->，或附加了PDF檔案。 傳送電子郵件步驟支援 [HTML電子郵件](https://en.wikipedia.org/wiki/HTML_email). HTML電子郵件會迅速回應，並因應收件者的電子郵件使用者端和熒幕大小。 您可以使用HTML電子郵件範本來定義電子郵件的外觀、色彩配置和行為。
 
 電子郵件步驟使用Day CQ Mail Service傳送電子郵件。 在使用電子郵件步驟之前，請確定已設定電子郵件服務。 預設僅支援HTTP和HTTP通訊協定。 [聯絡支援團隊](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html?lang=en#sending-email) 啟用連線埠以傳送電子郵件，並為您的環境啟用SMTP通訊協定。 此限制有助於改善平台的安全性。
 

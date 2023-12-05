@@ -4,10 +4,10 @@ description: 了解使用 AEM as a Cloud Service 時的重要安全性注意事�
 hidefromtoc: true
 hide: true
 exl-id: d2dfde05-ce02-478e-8697-b939fb8740c3
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '229'
-ht-degree: 100%
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+workflow-type: tm+mt
+source-wordcount: '217'
+ht-degree: 88%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 100%
 
 ### Trust Store 的特色 {#truststore-characteristics}
 
-* Trust-store 於 `/etc/truststore` 下方，由 Java keystore 檔案、keystore 密碼和存放庫中繼資料組成。請注意，由於技術原因，密碼和 keystore 本身都已加密，即使根據預設，所有人都可以透過 API 存取包含的憑證
+* Trust-store 於 `/etc/truststore` 下方，由 Java keystore 檔案、keystore 密碼和存放庫中繼資料組成。由於技術原因，密碼和金鑰存放區本身都會加密，即使預設透過API每個人都可存取包含的憑證
 * 現成的憑證僅用於 HTTPS 和 SAML 支援，必須先手動建立存放區
 * 客戶可以透過 [keystore API](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/granite/keystore/KeyStoreService.html#getTrustStore-org.apache.sling.api.resource.ResourceResolver-) 在自己的程式碼中使用它
 * 可透過&#x200B;**工具** - **安全性** - **Trust Store**，或存取 *`https://serveraddress:serverport/libs/granite/security/content/truststore.html`* 來管理 trust-store，如下所示：

@@ -2,9 +2,9 @@
 title: 內容搜尋與索引
 description: 瞭解AEMas a Cloud Service中的內容搜尋和索引。
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2427'
+source-wordcount: '2442'
 ht-degree: 1%
 
 ---
@@ -67,7 +67,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->如果自訂現成可用的索引，例如 `damAssetLucene-8`，從複製最新的現成可用索引定義 *Cloud Service環境* 使用CRX DE封裝管理員(`/crx/packmgr/`) 。 將其重新命名為 `damAssetLucene-8-custom-1` ，並將您的自訂專案新增至XML檔案中。 這可確保不會無意中移除所需的設定。 例如， `tika` 節點在 `/oak:index/damAssetLucene-8/tika` 在部署至AEM Cloud Service環境的自訂索引中是必要的，但本機AEM SDK上並不存在。
+>例如，如果自訂現成可用的索引， `damAssetLucene-8`，從複製最新的現成可用索引定義 *Cloud Service環境* 使用CRX DE封裝管理員(`/crx/packmgr/`) 。 將其重新命名為 `damAssetLucene-8-custom-1` ，並將您的自訂專案新增至XML檔案中。 這可確保不會無意中移除所需的設定。 例如， `tika` 節點在 `/oak:index/damAssetLucene-8/tika` 在部署至AEM Cloud Service環境的自訂索引中是必要的，但本機AEM SDK上並不存在。
 
 針對OOTB索引的自訂，請準備包含遵循此命名模式之實際索引定義的新套件：
 
@@ -94,7 +94,7 @@ The package from the above sample is built as `com.adobe.granite:new-index-conte
 說明如何部署自訂版本的現成可用索引 `damAssetLucene-8`，我們會提供逐步指南。 在此範例中，我們會將其重新命名為 `damAssetLucene-8-custom-1`. 然後程式如下：
 
 1. 在中建立具有更新索引名稱的新資料夾 `ui.apps` 目錄：
-   * 範例: `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-8-custom-1/`
+   * 範例： `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-8-custom-1/`
 
 2. 新增設定檔 `.content.xml` ，並在建立的資料夾內使用自訂設定。 以下是自訂的範例：檔案名稱： `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-8-custom-1/.content.xml`
 
@@ -188,7 +188,7 @@ The package from the above sample is built as `com.adobe.granite:new-index-conte
 
    以下是專案最上層的範例 `pom.xml` 包含上述設定的檔案：
 
-   檔案名稱: `pom.xml`
+   檔案名稱： `pom.xml`
 
    ```xml
    <plugin>
@@ -274,7 +274,7 @@ The package from the above sample is built as `com.adobe.granite:new-index-conte
 
 ### 使用滾動式部署的索引管理 {#index-management-with-rolling-deployments}
 
-滾動式部署沒有停機時間。 在更新期間，應用程式的舊版本（例如版本1）和新版本（版本2）會針對相同的存放庫同時執行。 如果版本1要求某個索引可用，則不得在版本2中移除此索引。 稍後應移除索引，例如版本3，此時可保證應用程式的版本1不再執行。 此外，應用程式的編寫應使版本1運作良好，即使版本2正在執行以及有版本2的索引可用。
+滾動式部署沒有停機時間。 在更新期間，應用程式的舊版本（例如版本1）和新版本（版本2）會針對相同的存放庫同時執行。 如果版本1要求某個索引可用，則不得在版本2中移除此索引。 稍後應移除索引，例如，在版本3中，此時可保證應用程式的版本1不再執行。 此外，應用程式的編寫應使版本1運作良好，即使版本2正在執行以及有版本2的索引可用。
 
 升級到新版本後，系統可以對舊索引進行垃圾回收。 舊索引可能仍會保留一段時間，以加速倒回（如果需要倒回）。
 

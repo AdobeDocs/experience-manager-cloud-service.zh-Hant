@@ -2,10 +2,10 @@
 title: 如何建立內容模型
 description: 在 Adobe Experience Manager (AEM) Headless 開發人員歷程的這一部分中，了解如何使用內容模型和內容片段模型及內容片段，建立您的內容模型用於 AEM Headless 傳遞。
 exl-id: f052183d-18fd-4615-a81e-e45db5928fc1
-source-git-commit: d67c5c9baafb9b7478f1d1c2ad924f5a8250a1ee
-workflow-type: ht
-source-wordcount: '1827'
-ht-degree: 100%
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+workflow-type: tm+mt
+source-wordcount: '1814'
+ht-degree: 98%
 
 ---
 
@@ -210,7 +210,7 @@ AEM 提供以下資料類型用於建立內容模型：
 >
 >請參閱其他資源 - 設定瀏覽器中的內容片段
 
-然後可以建立內容片段模型並定義結構。此操作可以在&#x200B;**工具** ->**一般** -> **內容片段模型**&#x200B;下完成。例如：
+然後可以建立內容片段模型並定義結構。您可以透過以下步驟完成這項操作： **工具** > **一般** > **內容片段模型**. 例如：
 
 ![內容片段模型](assets/cfm-model.png)
 
@@ -224,7 +224,7 @@ AEM 提供以下資料類型用於建立內容模型：
 
 ### 選擇適當的模型 {#select-model}
 
-實際建立內容的第一步是建立內容片段。這是使用「建立 -> 內容片段」在「資產 -> 檔案」下的所需資料夾中完成的。精靈會引導您完成這些步驟。
+實際建立內容的第一步是建立內容片段。方法是使用「資產>檔案」底下所需資料夾中的「建立>內容片段」 。 精靈會引導您完成這些步驟。
 
 內容片段基於特定的內容片段模型 (建立流程第一步時選取的)。
 

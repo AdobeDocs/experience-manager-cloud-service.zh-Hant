@@ -2,9 +2,9 @@
 title: 將ContextHub新增至頁面並存取存放區
 description: 將ContextHub新增至您的頁面，以啟用ContextHub功能並連結至ContextHub JavaScript程式庫
 exl-id: 8bfe2cff-3944-4e86-a95c-ebf1cb13913c
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '923'
+source-wordcount: '897'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ ContextHub JavaScript API提供對ContextHub管理之內容資料的存取權。
 <sly data-sly-resource="${'contexthub' @ resourceType='granite/contexthub/components/contexthub'}"/>
 ```
 
-請注意，您還需要設定ContextHub工具列是否以「預覽」模式顯示。 另請參閱 [顯示和隱藏ContextHub UI](configuring-contexthub.md#showing-and-hiding-the-contexthub-ui).
+您還需要設定ContextHub工具列是否以「預覽」模式顯示。 另請參閱 [顯示和隱藏ContextHub UI](configuring-contexthub.md#showing-and-hiding-the-contexthub-ui).
 
 ## 關於ContextHub存放區 {#about-contexthub-stores}
 
@@ -103,7 +103,7 @@ ContextHub提供 [`ContextHub.Utils.JSON.tree`](contexthub-api.md#contexthub-uti
 * [getItem](contexthub-api.md#getitem-key)
 * [setItem](contexthub-api.md#setitem-key-value-options)
 
-請注意，自訂商店候選者可以定義其他函式，以提供對商店資料的存取權。
+自訂商店候選者可以定義其他函式，提供存取商店資料的許可權。
 
 >[!NOTE]
 >
@@ -139,7 +139,7 @@ ContextHub區段會安裝在 `/conf/<site>/settings/wcm/segments` 節點。
 
 >[!WARNING]
 >
->提供的已安裝區段可作為參考設定，協助您為專案建置專屬設定，因此不應直接使用。
+>提供的已安裝區段可作為參考設定，協助您為專案建立自己的專用設定。 請勿直接使用，
 
 ## 偵錯ContextHub {#debugging-contexthub}
 

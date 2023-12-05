@@ -11,10 +11,10 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: f3472006-d5ae-4f70-af3e-44e73aee85cc
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '3706'
-ht-degree: 1%
+source-wordcount: '3685'
+ht-degree: 0%
 
 ---
 
@@ -52,7 +52,7 @@ _第二部分_
 * 業務分析師
 * 內容架構師
 * 內容作者
-* Designer
+* 設計工具
 * 開發人員
 * 行銷
 * 產品經理/擁有者
@@ -182,7 +182,7 @@ Dynamic Media為解決的另一個使用案例是影片。 視訊很複雜。 �
 
 來到Dynamic Media的客戶有以下他們想要解決的問題：
 
-&quot;_我們有影片，而且我們花了很多錢來製作它。 但我們避免將它放在頁面上或傳送，因為從測試來看，我們無法保證視訊品質，或視訊是否真的要播放。 最終，這會影響我們的品牌，甚至影響我們的角色轉換。_&quot;
+&quot;_我的企業擁有視訊，我們的部門花了很多錢製作它，但並沒有把它放在頁面上，或送出它。 原因是我們的測試無法保證視訊品質，即使真的要播放。 最終，這會影響我們的品牌，甚至影響我們的角色轉換。_&quot;
 
 Dynamic Media的解決方案是取用那個主要視訊檔案，讓Dynamic Media透過轉碼程式完成所有大小。 接著，再搭配使用Dynamic Media的智慧型視訊播放器。 此工作流程可保證您在主要登陸頁面、類別或產品詳細資料頁面上使用該影片，其全程將保持一致，並提供高品質。
 

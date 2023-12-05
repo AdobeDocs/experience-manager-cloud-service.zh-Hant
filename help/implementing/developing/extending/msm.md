@@ -2,10 +2,10 @@
 title: 擴充多網站管理員
 description: 了解如何擴充多網站管理員的功能。
 exl-id: 4b7a23c3-65d1-4784-9dea-32fcceca37d1
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2429'
-ht-degree: 95%
+source-wordcount: '2337'
+ht-degree: 93%
 
 ---
 
@@ -86,7 +86,7 @@ ht-degree: 95%
 
    * `getName` - 傳回動作的名稱
 
-      * 該名稱會用於參照動作，例如在推出設定中。
+      * 此名稱是用來參照動作，例如在轉出設定中。
 
    * `execute` - 執行動作的任務
 
@@ -175,7 +175,7 @@ Node sourcenode = source.adaptTo(javax.jcr.Node.class);
 
 1. 在此位置下，建立一個具有以下屬性的節點：
 
-   * **名稱**：推出設定的節點名稱，例如 `contentCopy` 或是 `workflow`
+   * **名稱**：轉出設定的節點名稱，例如， `contentCopy` 或 `workflow`
    * **類型**：`cq:RolloutConfig`
 
 1. 將以下屬性新增至此節點：
@@ -204,7 +204,7 @@ Node sourcenode = source.adaptTo(javax.jcr.Node.class);
 
 新增類型 `cq:LiveSyncAction` 的子節點，以將同步動作新增到推出設定中。同步動作節點的順序會決定動作發生的順序。
 
-1. 在 CRXDE Lite 中，選取您的[推出設定](#create-the-rollout-configuration)節點，例如 `/apps/msm/myproject/rolloutconfigs/myrolloutconfig`。
+1. 在CRXDE Lite中，選取 [轉出設定](#create-the-rollout-configuration) 節點，例如， `/apps/msm/myproject/rolloutconfigs/myrolloutconfig`.
 
 1. 建立具有下列節點屬性的節點：
 

@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service 開發指導方針
 description: 了解在 AEM as a Cloud Service 上進行開發的準則，以及它和內部部署的 AEM 以及 AMS 中的 AEM 的重要區別。
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: c706757857a528a0475f659c6b38110db6f6572a
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '2791'
+source-wordcount: '2745'
 ht-degree: 4%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 4%
 
 ## 程式碼必須可感知叢集 {#cluster-aware}
 
-在AEMas a Cloud Service中執行的程式碼必須瞭解，它一律在叢集中執行。 這表示執行中的例項永遠多於一個。程式碼必須具復原性，尤其是因為例項可能隨時停止。
+在AEMas a Cloud Service中執行的程式碼必須瞭解，它一律在叢集中執行。 這表示執行中的例項永遠多於一個。 程式碼必須具復原性，尤其是因為例項可能隨時停止。
 
 在AEMas a Cloud Service更新期間，有些執行個體同時執行舊程式碼和新程式碼。 因此，舊程式碼不得中斷新程式碼建立的內容，且新程式碼必須能夠處理舊內容。
 
@@ -33,7 +33,7 @@ ht-degree: 4%
 
 ## 檔案系統上的狀態 {#state-on-the-filesystem}
 
-執行個體的檔案系統不應在AEMas a Cloud Service中使用。 磁碟是暫時性的，當執行個體回收時就會加以處置。 在處理單一請求時，可以限制使用檔案系統作為暫時性儲存空間，但不應將其濫用於大型檔案。 這是因為這可能會對資源使用配額產生負面影響，並遇到磁碟限制。
+請勿在AEMas a Cloud Service中使用執行個體的檔案系統。 磁碟是暫時性的，當執行個體回收時就會加以處置。 在處理單一請求時，可以限制使用檔案系統作為暫時性儲存空間，但不應將其濫用於大型檔案。 這是因為這可能會對資源使用配額產生負面影響，並遇到磁碟限制。
 
 舉例來說，若不支援使用檔案系統，發佈層級應確保任何必須儲存的資料都會運送至外部服務，以供長期儲存之用。
 
@@ -47,7 +47,7 @@ ht-degree: 4%
 
 為了將問題降至最低，應儘可能避免長時間執行工作，而且這些工作應至少可以恢復。 若要執行這類作業，請使用Sling作業，此作業有至少執行一次的保證，因此如果中斷，將會儘快重新執行。 但是他們或許不應該從頭開始。 若要排程這類工作，最好使用 [Sling工作](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#jobs-guarantee-of-processing) 排程器，因為這再次可確保至少執行一次。
 
-Sling Commons排程器不應用於排程，因為無法保證執行。 只是更有可能已排程。
+請勿使用Sling Commons Scheduler進行排程，因為無法保證執行。 只是更有可能已排程。
 
 同樣地，由於所有非同步發生的事（例如對觀察事件執行動作，包括JCR事件或Sling資源事件），無法保證執行，因此必須謹慎使用。 目前的AEM部署就是如此。
 
@@ -109,7 +109,7 @@ AEMas a Cloud Service不支援從發佈到作者的反向復寫。 如果需要�
 
 對於本機開發，記錄專案會寫入本機檔案中的 `/crx-quickstart/logs` 資料夾。
 
-在雲端環境中，開發人員可以透過Cloud Manager下載記錄，或使用命令列工具來追蹤記錄。 <!-- See the [Cloud Manager documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) for more details. Note that custom logs are not supported and so all logs should be output to the error log. -->
+在雲端環境中，開發人員可以透過Cloud Manager下載記錄，或使用命令列工具來追蹤記錄。 <!-- See the [Cloud Manager documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) for more details. Custom logs are not supported and so all logs should be output to the error log. -->
 
 **設定記錄層級**
 
@@ -172,7 +172,7 @@ DEBUG 3 WebApp Panel: WebApp successfully deployed
 
 對於本機開發，開發人員擁有CRXDE Lite(`/crx/de`)和AEM Web主控台(`/system/console`)。
 
-請注意，在本機開發中（使用SDK）， `/apps` 和 `/libs` 可以直接寫入，這與雲端環境不同，因為雲端環境中的頂層資料夾是無法變更的。
+在本機開發上（使用SDK）， `/apps` 和 `/libs` 可以直接寫入，這與雲端環境不同，因為雲端環境中的頂層資料夾是無法變更的。
 
 ### AEM as a Cloud Service 開發工具 {#aem-as-a-cloud-service-development-tools}
 

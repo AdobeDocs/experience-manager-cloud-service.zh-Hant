@@ -2,9 +2,9 @@
 title: 頁面範本
 description: 建立作為新頁面基礎的頁面時，會使用頁面範本
 exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '3278'
+source-wordcount: '3267'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 1%
 
 使用「頁面範本」，建立頁面的片段會隔離在元件中。 您可以在UI中設定必要的元件組合，因此不需要為每個頁面變數開發新的頁面元件。
 
-本文件:
+本檔案：
 
 * 提供建立頁面範本的概觀
 * 說明建立可編輯範本所需的管理員/開發人員工作
@@ -83,7 +83,7 @@ ht-degree: 1%
 
    如需初始內容的技術細節，請參閱 [初始內容](#initial-content) （在此檔案中）。
 
-   **版面配置**
+   **版面**
 
    * 您可以為一系列裝置定義範本配置。
    * 範本的回應式版面運作方式與頁面製作相同。
@@ -236,7 +236,7 @@ ht-degree: 1%
   <tr>
    <th>路徑</th>
    <th>角色/群組</th>
-   <th>權限<br /> </th>
+   <th>許可權<br /> </th>
    <th>說明</th>
   </tr>
   <tr>
@@ -495,7 +495,7 @@ GITHUB上的程式碼
 
          * 名稱：狀態
          * 型別：字串
-         * 值: `enabled`
+         * 值： `enabled`
 
 1. **允許的範本**
 
@@ -531,11 +531,11 @@ GITHUB上的程式碼
 
 轉譯頁面時：
 
-* **範本**:
+* **範本**：
 
    * 此 `cq:template` 屬性屬於 `jcr:content` 節點是用來存取對應至該頁面的範本。
 
-* **元件**:
+* **元件**：
 
    * 頁面元件會合併 `structure/jcr:content` 範本的樹狀結構 `jcr:content` 頁面的樹狀結構。
       * 頁面元件將只允許作者編輯已標籤為可編輯的範本結構的節點（以及任何子系）。
@@ -593,8 +593,8 @@ GITHUB上的程式碼
 
 #### 限制子頁面中使用的範本 {#limiting-templates-used-in-child-pages}
 
-若要限制哪些範本可用來在指定頁面下建立子頁面，請使用 `cq:allowedTemplates` 屬性 `jcr:content` 頁面節點，用來指定允許做為子頁面的範本清單。 例如，清單中的每個值都必須是允許的子頁面範本的絕對路徑 `/apps/wknd/templates/page-content`.
+若要限制哪些範本可用來在指定頁面下建立子頁面，請使用 `cq:allowedTemplates` 屬性 `jcr:content` 頁面節點，用來指定允許做為子頁面的範本清單。 清單中的每個值都必須是允許的子頁面範本的絕對路徑，例如， `/apps/wknd/templates/page-content`.
 
 您可以使用 `cq:allowedTemplates` 範本的屬性  `jcr:content` 節點，將此設定套用至使用此範本的所有已建立頁面。
 
-如果您想要新增更多限制，例如關於範本階層的限制，您可以使用 `allowedParents/allowedChildren` 屬性。 然後，您可以明確指定從範本T建立的頁面必須是從範本T建立的頁面的父項/子項。
+如果您想要新增更多限制，例如關於範本階層，您可以使用 `allowedParents/allowedChildren` 屬性。 然後，您可以明確指定從範本T建立的頁面必須是從範本T建立的頁面的父項/子項。

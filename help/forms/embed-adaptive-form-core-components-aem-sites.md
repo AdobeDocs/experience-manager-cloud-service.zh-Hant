@@ -4,10 +4,10 @@ description: 在AEM Sites頁面中使用最適化表單核心元件，填寫並�
 feature: Adaptive Forms
 hide: true
 hidefromtoc: true
-source-git-commit: 2d4a81aa0d6755270d4d6efb8649782f4bde4537
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2150'
-ht-degree: 6%
+source-wordcount: '2067'
+ht-degree: 4%
 
 ---
 
@@ -106,7 +106,7 @@ ht-degree: 6%
 ![編輯對話方塊](/help/forms/assets/adaptiveformcontainer-editdialog.png)
 
 在 [!UICONTROL 編輯最適化Forms容器] 對話方塊中，您可以指定下列專案。
-* **基本標籤**
+* **基本索引標籤**
    * **預填服務**：您可以使用預填服務，使用現有資料自動填寫最適化表單的欄位。 當使用者開啟表單時，這些欄位的值將被預填。 如需預填服務的詳細資訊，請參閱 [預填自適應表單欄位](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/prepopulate-adaptive-form-fields.html#configuring-prefill-service-using-configuration-manager)
    * **使用者端資料庫類別**：指定 [JavaScript函式](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-rules-and-use-expressions-in-an-adaptive-form/rule-editor.html?lang=en#custom-functions) 在運算式中使用且由最適化Forms支援的欄位。
 * **資料模型**：資料模型可讓您將實體和服務從不同的資料來源整合到最適化表單中。 選擇 **[!UICONTROL 表單資料模型]** 如果您建立的最適化表單涉及從和向多個資料來源擷取及寫入資料。
@@ -119,7 +119,7 @@ ht-degree: 6%
 
 * **提交索引標籤**
 
-   * **重新導向至 URL**
+   * **重新導向至URL**
       * **重新導向URL/路徑**：指定在提交後會重新導向最適化表單的URL或路徑。
 
       * **提交動作**：當使用者按一下最適化表單上的提交按鈕時，就會觸發提交動作。 您可以 [在最適化表單上設定提交動作](/help/forms/configuring-submit-actions.md). 調適型表單提供下列立即可用的提交動作：
@@ -203,7 +203,7 @@ ht-degree: 6%
 
 1. 在編輯模式中開啟 AEM Sites 頁面。
 1. 在元件瀏覽器面板中，拖放 [!UICONTROL 最適化Forms — 內嵌] 元件時。
-1. 點選 [!UICONTROL 最適化Forms — 內嵌] 元件於「網站」頁面並點選 ![settings_icon](/help/forms/assets/Smock_Wrench_18_N.svg) 於動作列上。 此 **[!UICONTROL 編輯最適化Forms — 內嵌]** 對話方塊開啟。
+1. 選取 [!UICONTROL 最適化Forms — 內嵌] 元件並選取 ![settings_icon](/help/forms/assets/Smock_Wrench_18_N.svg) 於動作列上。 此 **[!UICONTROL 編輯最適化Forms — 內嵌]** 對話方塊開啟。
 1. 瀏覽並選取最適化表單，以內嵌於 [!UICONTROL 資產路徑].
 1. 儲存設定。 最適化表單現在內嵌在頁面中。
 
@@ -253,7 +253,7 @@ ht-degree: 6%
 若要修改最適化表單的任何設定或屬性，請執行下列任一項作業：
 
 * 在個別編輯器中以最適化表單開啟原始表單，並加以修改。
-* 在編輯模式中，從網站頁面內點選最適化表單，然後點選 **[!UICONTROL 在新視窗中編輯]**. 原始表單會以您可以修改的編輯模式開啟。
+* 在編輯模式下從網站頁面內選取最適化表單，然後選取「 」 **[!UICONTROL 在新視窗中編輯]**. 原始表單會以您可以修改的編輯模式開啟。
 
 ## 變更新增至AEM Sites頁面的最適化表單版面 {#change-layout-af-aem-sites-page}
 
@@ -270,5 +270,5 @@ AEM網站頁面會維護最適化表單的參考。 當您翻譯AEM Sites頁面�
 
 >[!MORELIKETHIS]
 >
->* [根據核心元件將調適性表單內嵌至外部網頁](/help/forms/embed-adaptive-form-core-components-external-web-page.md)
->* [在外部網頁中內嵌適用性表單](/help/forms/embed-adaptive-form-external-web-page.md)
+>* [根據核心元件將最適化表單內嵌到外部網頁](/help/forms/embed-adaptive-form-core-components-external-web-page.md)
+>* [將最適化表單內嵌在外部網頁中](/help/forms/embed-adaptive-form-external-web-page.md)

@@ -4,10 +4,10 @@ description: 瞭解如何在Adobe Experience Manager as a Cloud Service中設定
 contentOwner: Rick Brough
 role: Admin,User
 exl-id: 8e07bc85-ef26-4df4-8e64-3c69eae91e11
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '3794'
-ht-degree: 3%
+source-wordcount: '3811'
+ht-degree: 2%
 
 ---
 
@@ -36,7 +36,7 @@ ht-degree: 3%
 >* [智慧型影像](/help/assets/dynamic-media/imaging-faq.md)
 >* [快取失效](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)
 >* [直接連結保護](/help/assets/dynamic-media/hotlink-protection.md)
->* [HTTP/2 內容傳送](/help/assets/dynamic-media/http2faq.md)
+>* [HTTP/2內容傳送](/help/assets/dynamic-media/http2faq.md)
 >* cdn層級的URL重新導向
 >* Akamai ChinaCDN （針對中國境內的最佳傳送方式）
 
@@ -100,12 +100,12 @@ To migrate any custom viewer presets and configurations that you have created fr
 
    >[!NOTE]
    >
-   >動態媒體中不支援版本修訂。此外，延遲啟動僅適用於以下情況： **[!UICONTROL 發佈資產]** 在「編輯Dynamic Media設定」頁面中，設定為 **[!UICONTROL 啟動時]**.然後，直到第一次啟動資產為止。
+   >動態媒體中不支援版本修訂。此外，延遲啟動僅適用於以下情況： **[!UICONTROL 發佈資產]** 在「編輯Dynamic Media設定」頁面中，設定為 **[!UICONTROL 啟動時]**. 然後，直到第一次啟動資產為止。
    >
    >
    >資產啟動後，所有更新都會立即上線發佈至S7傳送。
 
-   ![dynamicmediaconfiguration2updated](/help/assets/assets-dm/dynamicmediaconfigurationupdated.png)
+   ![dynamicmediaconfiguration2已更新](/help/assets/assets-dm/dynamicmediaconfigurationupdated.png)
 
 1. 選取&#x200B;**[!UICONTROL 儲存]**。新的Dynamic Media密碼和設定已儲存。 如果您已選取 **[!UICONTROL 取消]** 相反地，不會發生密碼更新。
 1. 在 **[!UICONTROL 設定Dynamic Media]** 對話方塊，選取 **[!UICONTROL 確定]** 以開始設定。
@@ -311,9 +311,9 @@ Dynamic Media色彩管理可讓您校正資產的色彩。 透過色彩校正，
 1. 在mimeTypes資料夾下，選取MIME型別。
 1. 在CRXDE Lite頁面的右側，下半部：
 
-   * 點兩下 **[!UICONTROL 已啟用]** 欄位。 預設會啟用所有資產MIME型別(設為 **[!UICONTROL true]**)，這表示資產會同步至Dynamic Media以進行處理。 如果您不想處理此資產MIME型別，請將此設定變更為 **[!UICONTROL false]**.
+   * 連按兩下 **[!UICONTROL 已啟用]** 欄位。 預設會啟用所有資產MIME型別(設為 **[!UICONTROL true]**)，這表示資產會同步至Dynamic Media以進行處理。 如果您不想處理此資產MIME型別，請將此設定變更為 **[!UICONTROL false]**.
 
-   * 點兩下 **[!UICONTROL jobParam]** 以開啟其相關的文字欄位。 另請參閱 [支援的MIME型別](/help/assets/file-format-support.md) 取得您可用於指定MIME型別的允許處理引數值清單。
+   * 雙選 **[!UICONTROL jobParam]** 以開啟其相關的文字欄位。 另請參閱 [支援的MIME型別](/help/assets/file-format-support.md) 取得您可用於指定MIME型別的允許處理引數值清單。
 
 1. 執行下列任一項作業：
    * 重複步驟3至4以編輯更多MIME型別。
@@ -336,7 +336,7 @@ Dynamic Media色彩管理可讓您校正資產的色彩。 透過色彩校正，
 
    ![2019-08-02_16-17-29](assets/2019-08-02_16-17-29.png)
 
-1. 在頁面上，向下捲動至名稱 *Adobe CQ Scene7 Asset MIME類型Service* ，如下列螢幕擷取所示。在名稱的右側，點選「 **[!UICONTROL Edit the configuration values]** (pencil icon)(編輯配置值 (鉛筆圖示) 」。
+1. 在頁面上，向下捲動至名稱 *Adobe CQ Scene7 Asset MIME類型Service* ，如下列螢幕擷取所示。在名稱的右側，選取 **[!UICONTROL 編輯設定值]** （鉛筆圖示）。
 
    ![編輯設定值](assets/2019-08-02_16-44-56.png)
 
@@ -369,7 +369,7 @@ Dynamic Media色彩管理可讓您校正資產的色彩。 透過色彩校正，
 
    ![編輯CRXDE Lite的DWG檔案](assets/crxdelite_cqdoc-14627.png)
 
-1. 具有MIME型別 `image_vnd.dwg` 仍然選取，從 **[!UICONTROL 屬性]** 標籤，在 **[!UICONTROL 已啟用]** 列，在 **[!UICONTROL 值]** 欄標題，點兩下值。 此 **[!UICONTROL 值]** 下拉式清單已開啟。
+1. 具有MIME型別 `image_vnd.dwg` 仍然選取，從 **[!UICONTROL 屬性]** 標籤，在 **[!UICONTROL 已啟用]** 列，在 **[!UICONTROL 值]** 欄標題，連按兩下該值。 此 **[!UICONTROL 值]** 下拉式清單已開啟。
 1. 型別 `false` 在欄位中(或選取 **[!UICONTROL false]** （從下拉式清單中選取）。
 
    ![編輯CRXDE Lite中的MIME型別](assets/2019-08-02_16-60-30.png)
@@ -474,7 +474,7 @@ Dynamic Media Classic (Scene7)上傳連線設定會將Experience Manager資產�
 
 **若要更新與Dynamic Media Classic (Scene7)伺服器的最大上傳連線：**
 
-1. 瀏覽到 `https://<server>/system/console/configMgr/com.day.cq.dam.scene7.impl.Scene7UploadServiceImpl`
+1. 瀏覽至 `https://<server>/system/console/configMgr/com.day.cq.dam.scene7.impl.Scene7UploadServiceImpl`
 1. 在 **[!UICONTROL 連線數目]** 欄位，或 **[!UICONTROL 作用中工作逾時]** 欄位或兩者皆有，視需要變更數字。
 
    此 **[!UICONTROL 連線數目]** 設定可控制Experience Manager上傳至Dynamic Media所允許的最大HTTP連線數量。 通常預先定義的十個連線值就足夠了。

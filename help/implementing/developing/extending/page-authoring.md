@@ -2,10 +2,10 @@
 title: 自訂頁面編寫
 description: 了解 AEM as a Cloud Service 提供用來自訂頁面編寫功能的機制。
 exl-id: 98d3c7ab-46d2-4e8d-b0da-5c8a7b398135
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '969'
-ht-degree: 96%
+source-wordcount: '937'
+ht-degree: 94%
 
 ---
 
@@ -158,7 +158,7 @@ Clientlib 讓您可擴充預設實作以啟用新功能，同時會重複使用�
 
 ## 新增「新頁面動作」。 {#add-a-new-page-action}
 
-若要將新頁面動作新增到頁面工具列，例如&#x200B;**返回 Sites** (主控台) 動作。
+若要在頁面工具列中新增頁面動作，例如 **返回網站** （主控台）動作。
 
 ### 程式碼範例 {#code-sample-3}
 

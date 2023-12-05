@@ -2,10 +2,10 @@
 title: 元件主控台
 description: 元件主控台可讓您瀏覽針對執行個體定義的所有元件
 exl-id: f4949331-5302-46d3-a004-b813bb95ec2f
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '271'
-ht-degree: 18%
+ht-degree: 14%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 18%
 
 「元件主控台」可讓您瀏覽針對執行個體定義的所有元件，並檢視每個元件的關鍵資訊。
 
-您可從「工具」->「一 **般」->「元件」** 存取它 ********。由於沒有元件的樹結構，因此只有清單視圖可用。
+可從下列位置存取： **工具>** **一般>** **元件**. 由於沒有元件的樹結構，因此只有清單視圖可用。
 
 ![元件主控台](/help/sites-cloud/authoring/assets/components-console.png)
 

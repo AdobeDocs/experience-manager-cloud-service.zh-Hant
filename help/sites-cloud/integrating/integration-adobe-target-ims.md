@@ -2,10 +2,10 @@
 title: 與 Adobe Target 整合時使用的 IMS 設定
 description: 瞭解與Adobe Target整合時使用的IMS設定
 exl-id: b5474b70-bedc-4cc9-ad47-89dcb2415e3a
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '877'
-ht-degree: 7%
+source-wordcount: '854'
+ht-degree: 4%
 
 ---
 
@@ -171,7 +171,7 @@ Adobe Developer Console專案（整合），與AEM將使用的Adobe Target搭配
    * **使用者端密碼**：在專案中產生此專案 [概觀](#details-stored-for-the-ims-integration-project) 部分，並複製
    * **裝載**：從以下位置複製此專案： [產生JWT](#details-stored-for-the-ims-integration-project) 區段
 
-   ![Adobe IMS 技術帳戶設定](assets/integrate-target-ims-10.png)
+   ![Adobe IMS技術帳戶設定](assets/integrate-target-ims-10.png)
 
 1. 使用&#x200B;**建立**&#x200B;確認。
 
@@ -183,7 +183,7 @@ Adobe Developer Console專案（整合），與AEM將使用的Adobe Target搭配
 
 若要確認組態是否如預期般運作：
 
-1. 開啟:
+1. 開啟：
 
    * `https://localhost<port>/libs/cq/adobeims-configuration/content/configurations.html`
 
@@ -283,7 +283,7 @@ When configuring the Tenant ID and Client Code fields, be aware of that for most
 >
 >For legacy purposes, you can also enter different values in the Tenant ID and the Client Code fields.
 
-In both cases, be aware that:
+In both cases, note the following:
 
 * By default, the Client Code (if added first) will also be automatically copied into the Tenant ID field.
 * You have the option to change the default Tenant ID set.

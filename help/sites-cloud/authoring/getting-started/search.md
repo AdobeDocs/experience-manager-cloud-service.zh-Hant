@@ -2,10 +2,10 @@
 title: 搜尋
 description: 透過完整的搜尋更快找到您的內容
 exl-id: 8a799e9a-1461-4e79-ae90-1978af6cf0ed
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '492'
-ht-degree: 8%
+ht-degree: 7%
 
 ---
 
@@ -35,7 +35,7 @@ AEM的製作環境提供多種搜尋內容的機制，視資源型別而定。
 
 1. 開啟 **搜尋** （使用工具列中的放大鏡），然後輸入搜尋字詞。 提出建議並可加以選取：
 
-   ![搜尋期限](/help/sites-cloud/authoring/assets/search-term.png)
+   ![搜尋字詞](/help/sites-cloud/authoring/assets/search-term.png)
 
    依預設，搜尋結果僅限於您目前的位置（即主控台和相關資源型別）：
 
@@ -44,7 +44,7 @@ AEM的製作環境提供多種搜尋內容的機制，視資源型別而定。
 1. 如有必要，您可以移除位置篩選器(選取 **X** ，以搜尋所有主控台/資源型別。
 1. 將顯示結果，並根據控制檯和相關資源型別分組。
 
-   您可以選取特定資源（以供後續動作），或透過選取所需的資源型別向下展開；例如 **檢視所有網站**：
+   您可以選取特定資源（以供後續動作），或透過選取所需的資源型別向下展開；例如， **檢視所有網站**：
 
    ![搜尋結果](/help/sites-cloud/authoring/assets/search-results.png)
 

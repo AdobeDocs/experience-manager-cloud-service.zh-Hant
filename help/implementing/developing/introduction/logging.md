@@ -2,10 +2,10 @@
 title: AEMas a Cloud Service記錄
 description: 瞭解如何使用AEM的記錄as a Cloud Service來設定中央記錄服務的全域引數、個別服務的特定設定，或如何請求資料記錄。
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '2753'
-ht-degree: 9%
+source-wordcount: '2720'
+ht-degree: 8%
 
 ---
 
@@ -190,14 +190,14 @@ AEM Java記錄檔定義為OSGi設定，因此會使用執行模式資料夾鎖�
 
 AEMas a Cloud Service的HTTP請求記錄可讓您依時間順序深入分析向AEM提出的HTTP請求及其HTTP回應。 此記錄有助於瞭解向AEM發出的HTTP請求，以及這些請求被處理和回應的順序。
 
-瞭解此記錄的關鍵在於透過其ID （以方括弧中的數值表示）對應HTTP請求和回應配對。 請注意，請求及其對應的回應在記錄中通常會有其他HTTP請求和回應插入在它們之間。
+瞭解此記錄的關鍵在於透過其ID （以方括弧中的數值表示）對應HTTP請求和回應配對。 通常請求及其對應的回應會在記錄中於其他HTTP請求和回應之間插入。
 
 **紀錄範例**
 
 ```
-29/Apr/2020:19:14:21 +0000 [137] -> POST /conf/global/settings/dam/adminui-extension/metadataprofile/ HTTP/1.1 [cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]
+29/Apr/2020:19:14:21 +0000 [137] > POST /conf/global/settings/dam/adminui-extension/metadataprofile/ HTTP/1.1 [cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]
 ...
-29/Apr/2020:19:14:22 +0000 [139] -> GET /mnt/overlay/dam/gui/content/processingprofilepage/metadataprofiles/editor.html/conf/global/settings/dam/adminui-extension/metadataprofile/main HTTP/1.1 [cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]
+29/Apr/2020:19:14:22 +0000 [139] > GET /mnt/overlay/dam/gui/content/processingprofilepage/metadataprofiles/editor.html/conf/global/settings/dam/adminui-extension/metadataprofile/main HTTP/1.1 [cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]
 ...
 29/Apr/2020:19:14:21 +0000 [137] <- 201 text/html 111ms [cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]
 ...
@@ -285,7 +285,7 @@ AEMas a Cloud Service在發佈上為Apache Web Server和Dispatcher層提供三�
 
 ### Apache HTTPD Web Server存取記錄檔 {#apache-httpd-web-server-access-log}
 
-Apache HTTP Web Server存取記錄檔為到達發佈層的Web伺服器/Dispatcher的每個HTTP請求提供陳述式。 請注意，從上游CDN提供的請求不會反映在這些記錄中。
+Apache HTTP Web Server存取記錄檔為到達發佈層的Web伺服器/Dispatcher的每個HTTP請求提供陳述式。 從上游CDN提供的請求不會反映在這些記錄中。
 
 請參閱下列連結中有關錯誤記錄格式的資訊： [官方apache檔案](https://httpd.apache.org/docs/2.4/logs.html#accesslog).
 
@@ -454,7 +454,7 @@ Define REWRITE_LOG_LEVEL debug
 </tr>
 <tr>
 <td>持續時間</td>
-<td>1949ms</td>
+<td>1949毫秒</td>
 </tr>
 <tr>
 <td>陣列</td>
@@ -611,7 +611,7 @@ Apache層記錄（包括Dispatcher）位於容納Dispatcher的Docker容器中。
 
 與傳送至Splunk的記錄檔相關聯的網路頻寬會視為客戶網路I/O使用量的一部分。
 
-請注意，Splunk轉送尚不支援CDN記錄。
+Splunk轉送尚不支援CDN記錄檔。
 
 ### 啟用Splunk轉送 {#enabling-splunk-forwarding}
 

@@ -2,9 +2,9 @@
 title: 註冊、登入和使用者個人資料
 description: 瞭解AEMas a Cloud Service的註冊、登入、使用者資料和群組同步
 exl-id: a991e710-a974-419f-8709-ad86c333dbf8
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '1165'
+source-wordcount: '1132'
 ht-degree: 1%
 
 ---
@@ -113,7 +113,7 @@ AEMas a Cloud Service已啟用Cookie型粘性工作階段，這可確保一般�
 
 ## 資料同步 {#data-synchronization}
 
-網站一般使用者期望在每個網頁請求上獲得一致的體驗，甚至當他們使用不同的瀏覽器登入時，即使他們不知道，也會被帶到發佈層級基礎架構的不同伺服器節點。 AEMas a Cloud Service會透過快速同步 `/home` 發佈層級所有節點的資料夾階層（使用者設定檔資訊、群組成員資格等）。
+網站一般使用者期望在每個網頁請求上獲得一致的體驗，甚至當他們使用不同的瀏覽器登入時，即使他們不知道，也會被帶到發佈層級基礎架構的不同伺服器節點。 AEMas a Cloud Service會透過快速同步 `/home` 用於發佈層級所有節點的資料夾階層（使用者設定檔資訊、群組成員資格等）。
 
 與其他AEM解決方案不同，AEMas a Cloud Service中的使用者和群組成員資格同步不使用點對點傳訊方法，而是實作不需要客戶設定的發佈 — 訂閱方法。
 

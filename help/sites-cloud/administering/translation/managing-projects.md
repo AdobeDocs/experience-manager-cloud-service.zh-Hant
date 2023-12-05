@@ -4,16 +4,16 @@ description: 瞭解如何在AEM中建立和管理機器翻譯專案和人工翻�
 feature: Language Copy
 role: Admin
 exl-id: dc2f3958-72b5-4ae3-a224-93d8b258bc80
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '3971'
+source-wordcount: '3960'
 ht-degree: 1%
 
 ---
 
 # 管理翻譯專案 {#managing-translation-projects}
 
-翻譯專案使您能夠管理 AEM 內容的翻譯。翻譯專案是AEM的型別 [專案](/help/sites-cloud/authoring/projects/overview.md) 包含要翻譯成其他語言的資源。 這些資源是 [語言副本](preparation.md) 從語言母版建立的。
+翻譯專案可讓您管理AEM內容的翻譯。 翻譯專案是AEM的型別 [專案](/help/sites-cloud/authoring/projects/overview.md) 包含要翻譯成其他語言的資源。 這些資源是 [語言副本](preparation.md) 從語言母版建立的。
 
 >[!TIP]
 >
@@ -78,7 +78,7 @@ AEM會偵測是否正在為內容的初始翻譯建立翻譯專案，或更新�
 
 1. 使用工具列，開啟 **引用** 邊欄。
 
-   ![參考](../assets/references.png)
+   ![引用](../assets/references.png)
 
 1. 選取 **語言副本**，然後選取您要翻譯來源頁面的語言副本。
 1. 選取 **建立並翻譯** 然後設定翻譯工作：
@@ -100,7 +100,7 @@ AEM會偵測是否正在為內容的初始翻譯建立翻譯專案，或更新�
 
 1. 使用工具列，開啟 **引用** 邊欄。
 
-   ![參考](../assets/references.png)
+   ![引用](../assets/references.png)
 
 1. 選取 **語言副本**，然後選取您要翻譯來源頁面的語言副本。
 1. 選取 **更新語言副本** 然後設定翻譯工作：
@@ -126,7 +126,7 @@ AEM會偵測是否正在為內容的初始翻譯建立翻譯專案，或更新�
 
 1. 使用工具列，開啟 **引用** 邊欄。
 
-   ![參考](../assets/references.png)
+   ![引用](../assets/references.png)
 
 1. 選取 **語言副本**，然後選取您要翻譯來源頁面的語言副本。
 
@@ -153,7 +153,7 @@ AEM會偵測是否正在為內容的初始翻譯建立翻譯專案，或更新�
 1. 使用網站主控台來選取您用來作為來源的主要語言的語言根。
 1. 按一下或點選以開啟參考邊欄 **引用** （在工具列中）。
 
-   ![參考](../assets/references.png)
+   ![引用](../assets/references.png)
 
 1. 選取 **語言副本**，然後選取您要填入的語言副本。
 
@@ -463,7 +463,7 @@ AEM中的翻譯專案使用標準 [AEM專案主控台](/help/sites-cloud/authori
 
 ### 匯出翻譯工作 {#exporting-a-translation-job}
 
-您可以下載翻譯工作的內容，例如透過聯結器傳送給未與AEM整合的翻譯提供者，或檢閱內容。
+例如，您可以下載翻譯工作的內容，透過聯結器傳送給未與AEM整合的翻譯提供者，或檢閱內容。
 
 1. 從翻譯工作圖磚的下拉式功能表中，選取 **匯出**.
 1. 在對話方塊中，選取 **下載匯出的檔案**，並在必要時使用網頁瀏覽器對話方塊來儲存檔案。
@@ -471,7 +471,7 @@ AEM中的翻譯專案使用標準 [AEM專案主控台](/help/sites-cloud/authori
 
 ### 匯入翻譯工作 {#importing-a-translation-job}
 
-您可以將已翻譯內容匯入至AEM，例如當翻譯提供者將內容傳送給您時，因為它們未透過聯結器與AEM整合。
+例如，當您的翻譯提供者將翻譯內容傳送給您時，您可將翻譯內容匯入至AEM，因為它們未透過聯結器與AEM整合。
 
 1. 從翻譯工作圖磚的下拉式功能表中，選取 **匯入**.
 1. 使用網頁瀏覽器的對話方塊來選取要匯入的檔案。

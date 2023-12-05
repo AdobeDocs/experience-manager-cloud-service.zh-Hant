@@ -1,13 +1,12 @@
 ---
 title: 如何預覽最適化表單？
 description: 使用者可在發佈或啟用之前預覽表單，以確保表單符合預期。 預覽選項可能因支援的表單型別而異。
-uuid: 9ec359ea-f518-441c-9c3d-e3c1ea07a532
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 377d804d-4a75-4c93-8125-d2660cf56418
-source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '365'
+source-wordcount: '359'
 ht-degree: 3%
 
 ---
@@ -19,14 +18,14 @@ ht-degree: 3%
 
 在 [!DNL AEM Forms]，您可以預覽存放庫中呈現的表單和檔案。 預覽有助於瞭解表單發佈給使用者時的確切外觀和行為。
 
-預覽表單時，表單會以互動式介面呈現，使用者可以使用資料填寫表單。 預覽檔案時，會以非互動模式呈現，使用者只能檢視檔案。 對於表單，還有一個自訂預覽選項可供使用。 使用此選項，您可以使用XML檔案中的資料來預覽表單。 資料會填滿正在預覽之表單的部分或全部欄位。
+預覽表單時，表單會以互動式介面呈現，使用者可以使用資料填寫表單。 預覽檔案時，會以非互動模式呈現，使用者只能檢視檔案。 對於表單，還有一個自訂預覽選項可供使用。 使用此選項，您可以使用XML檔案中的資料來預覽表單。 資料會填滿正在預覽之表單的部分欄位或所有欄位。
 
 下表列出不同支援表單型別可用的預覽選項：
 
 <table>
  <tbody>
   <tr>
-   <td><strong>資產類型</strong><br /> </td>
+   <td><strong>資產型別</strong><br /> </td>
    <td><strong>可用的預覽選項</strong><br /> </td>
   </tr>
   <tr>

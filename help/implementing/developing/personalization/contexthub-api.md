@@ -2,9 +2,9 @@
 title: ContextHub JavaScript API參考
 description: 將ContextHub元件新增至頁面後，指令碼即可使用ContextHub JavaScript API
 exl-id: ec35bef5-610c-4e85-a43a-d4201b5eb03e
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '4613'
+source-wordcount: '4602'
 ht-degree: 2%
 
 ---
@@ -162,7 +162,7 @@ A `ContextHub.Utils.Persistence` 物件。 如需有關預設值和初始化的�
 * **物件：** 金鑰為屬性名稱。
 * **陣列：** 索引鍵是陣列索引。
 
-請注意，值可以是物件。
+值可以是物件。
 
 ##### 參數 {#parameters-addallitems}
 
@@ -390,7 +390,7 @@ ContextHub.Store.JSONPStore擴展 [ContextHub.Store.Core](#contexthub-store-core
    * `secure`：（字串或布林值）決定用於服務URL的通訊協定：
       * `auto`： //
       * `true`： https://
-      * `false`: http://
+      * `false`： http://
 * **覆寫：** （布林值）。 值 `true` 導致現有的服務設定被以下屬性取代： `serviceConfig`. 值 `false` 會導致現有的服務設定屬性與的屬性合併 `serviceConfig`.
 
 #### getRawResponse() {#getrawresponse}
@@ -415,9 +415,9 @@ ContextHub.Store.JSONPStore擴展 [ContextHub.Store.Core](#contexthub-store-core
 * **`path`：** （字串）服務的路徑。
 * **`port`：** （號碼）服務的連線埠號碼。
 * **`secure`：** （字串或布林值）決定用於服務URL的通訊協定：
-   * `auto`: //
+   * `auto`： //
    * `true`： https://
-   * `false`: http://
+   * `false`： http://
 
 #### getServiceURL(resolve) {#getserviceurl-resolve}
 
@@ -439,19 +439,19 @@ A `string` 代表服務URL的值。
 
 * **`name`：** （字串）存放區的名稱。
 * **`config`：** （物件）包含服務屬性的物件。 JSONPStore物件使用 `service` 物件來建構JSONP服務的URL：
-   * `eventDeferring`: 32.
+   * `eventDeferring`：32。
    * `eventing`：此存放區的ContextHub.Utils.Eventing物件。 預設值為 `ContextHub.eventing` 物件。
    * `persistence`：此存放區的ContextHub.Utils.Persistence物件。 預設會使用記憶體持續性（JavaScript物件）。
-   * `service`: (物件)
+   * `service`：（物件）
       * `host`：（字串）伺服器名稱或IP位址。
       * `jsonp`：（布林值）如果值為true，表示服務是JSONP服務；否則為false。 若為True，則 `{callback: "ContextHub.Callbacks.*Object.name*}`物件已新增至 `service.params`.
       * `params`：（物件）以物件屬性表示的URL引數。 引數名稱和值分別是物件屬性名稱和值。
       * `path`：（字串）服務的路徑。
       * `port`：（數字）服務的連線埠號碼。
       * `secure`：（字串或布林值）決定用於服務URL的通訊協定：
-         * `auto`: //
+         * `auto`： //
          * `true`： https://
-         * `false`: http://
+         * `false`： http://
       * `timeout`：（數量）逾時前等待JSONP服務回應的時間長度，以毫秒為單位。
          * `ttl`：呼叫JSONP服務之間的最小時間量（以毫秒為單位）。 (請參閱 [queryservice](#queryservice-reload) 函式)。
 

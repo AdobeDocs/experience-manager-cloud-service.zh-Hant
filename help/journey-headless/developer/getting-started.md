@@ -2,10 +2,10 @@
 title: AEM Headless as a Cloud Service 快速入門
 description: 在 AEM Headless 開發人員歷程的這一部分，了解 AEM Headless 先決條件。
 exl-id: 9661e17b-fa9f-4689-900c-412b068e942c
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '3093'
-ht-degree: 96%
+source-wordcount: '3057'
+ht-degree: 95%
 
 ---
 
@@ -181,7 +181,7 @@ AEM 支援 CMS 的全 Headless 模型和傳統的全堆疊或 Headful 模型。�
 
 清楚您的內容更新工作流程。系統必須支援的核准流程是什麼？是否可以使用 AEM 工作流程來自動化此流程？
 
-請注意，可以使用您的[內容階層](#content-hierarchy)讓翻譯變輕鬆。
+您的 [內容階層](#content-hierarchy) 可用來讓翻譯更容易。
 
 請參閱[其他資源](#additional-resources)章節，了解有關 AEM 工作流程和翻譯工具的其他文件，包括指向 AEM Headless 翻譯歷程的連結。
 

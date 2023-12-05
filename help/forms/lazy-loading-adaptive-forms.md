@@ -5,9 +5,9 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 0cd38edb-2201-4ca6-8b84-6b5b7f76bd90
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1074'
+source-wordcount: '1063'
 ht-degree: 7%
 
 ---
@@ -52,8 +52,8 @@ Forms包含某些欄位和區段，不適用於所有使用者和所有條件。
 執行以下步驟，啟用最適化表單片段的延遲載入：
 
 1. 以製作模式開啟最適化表單，其中包含您要啟用以延遲載入的片段。
-1. 選取最適化表單片段並點選 ![設定](assets/configure-icon.svg).
-1. 在側邊欄中，啟用 **[!UICONTROL 緩慢地載入片段]** 然後點選 **完成**.
+1. 選取最適化表單片段，然後選取 ![設定](assets/configure-icon.svg).
+1. 在側邊欄中，啟用 **[!UICONTROL 緩慢地載入片段]** 並選取 **完成**.
 
    ![啟用最適化表單片段的延遲載入](assets/lazy-loading-fragment.png)
 
@@ -62,7 +62,7 @@ Forms包含某些欄位和區段，不適用於所有使用者和所有條件。
 您可以將延遲載入片段中物件的值標示為全域，以便在未載入包含片段時可以在指令碼中使用。 請執行下列動作：
 
 1. 以製作模式開啟最適化表單片段。
-1. 點選您要標示為全域值的欄位，然後點選 ![設定](assets/configure-icon.svg).
+1. 選取您要將其值標示為全域值的欄位，然後選取 ![設定](assets/configure-icon.svg).
 1. 在側邊欄中，啟用 **[!UICONTROL 在緩慢載入時使用值]**.
 
    ![側欄中的延遲載入欄位](assets/enable-lazy-loading.png)

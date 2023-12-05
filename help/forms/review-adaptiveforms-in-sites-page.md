@@ -4,10 +4,10 @@ description: 稽核是一種機制，可讓稽核者使用「指派工作」步�
 feature: Adaptive Forms
 hide: true
 hidefromtoc: true
-source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '360'
-ht-degree: 5%
+source-wordcount: '338'
+ht-degree: 4%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 5%
 1. 在編輯模式下開啟您的作者執行個體。
 1. 前往 **[!UICONTROL 工具]** >  **[!UICONTROL 工作流程]** >  **[!UICONTROL 模型]** > **[!UICONTROL 建立]** > **[!UICONTROL 建立模型]**
 1. 指定工作流程的標題並新增 **[指派任務]** 步驟
-1. 點選 ![settings_icon](assets/settings_icon.png) 於動作列上。 此 **[!UICONTROL 指派任務]** 對話方塊開啟。
+1. 選取 ![settings_icon](assets/settings_icon.png) 於動作列上。 此 **[!UICONTROL 指派任務]** 對話方塊開啟。
 1. 開啟 [!UICONTROL 表單和檔案] 標籤並開啟 [!UICONTROL 預先填入] 下拉式清單，並指定：
 
    * 選擇輸入資料檔案，使用
@@ -44,7 +44,7 @@ ht-degree: 5%
 現在，請在網站的頁面上設定最適化表單容器元件的提交動作：
 
 1. 移至網站的頁面。
-1. 點選 ![settings_icon](assets/settings_icon.png) 最適化表單容器的。 此 **[!UICONTROL 最適化表單容器]** 對話方塊開啟。
+1. 選取 ![settings_icon](assets/settings_icon.png) 最適化表單容器的。 此 **[!UICONTROL 最適化表單容器]** 對話方塊開啟。
 1. 開啟 **[!UICONTROL 提交]** 定位字元並指定 **[!UICONTROL 提交動作]** 至 [叫用AEM工作流程](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html?lang=en#invoke-an-aem-workflow)
 
 1. 按一下 [完成] 以儲存設定。

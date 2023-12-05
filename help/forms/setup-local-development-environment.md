@@ -2,10 +2,10 @@
 title: 如何設定AEM Forms的本機開發環境？
 description: 設定Adobe Experience Manager Formsas a Cloud Service的本機開發環境
 exl-id: 12877a77-094f-492a-af58-cffafecf79ae
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2846'
-ht-degree: 3%
+source-wordcount: '2682'
+ht-degree: 2%
 
 ---
 
@@ -89,7 +89,7 @@ You can use the [development tools](https://experienceleague.adobe.com/docs/expe
 1. 導覽至 **[!UICONTROL AEMas a Cloud Service]** 標籤。
 1. 依發佈日期遞減排序。
 1. 按一下最新的Adobe Experience Manager as a Cloud Service SDK、Experience Manager Forms功能封存(AEM Forms附加元件)、表單參考資產或Forms Designer。
-1. 檢閱並接受EULA。 點選 **[!UICONTROL 下載]** 按鈕。
+1. 檢閱並接受EULA。 選取&#x200B;**[!UICONTROL 下載]**&#x200B;按鈕。
 
 ## 設定AEM專案的開發工具 {#setup-development-tools-for-AEM-projects}
 
@@ -323,8 +323,7 @@ Dispatcher上的快取允許 [!DNL AEM Forms] 以在使用者端預先填入Adap
 ### 有關快取的考量事項 {#considerations-about-caching}
 
 * Dispatcher快取允許 [!DNL AEM Forms] 以在使用者端預先填入Adaptive Forms。 這可改善預填表單的演算速度。
-* 
-預設停用快取安全內容的功能。若要啟用此功能，您可以執行 [快取安全內容](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=en) 文章
+* 快取安全內容功能預設為停用。 若要啟用此功能，您可以執行 [快取安全內容](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=en) 文章
 * Dispatcher可能無法讓某些最適化Forms和相關的最適化Forms失效。 若要解決這類問題，請參閱 [[!DNL AEM Forms] 快取](troubleshooting-caching-performance.md) 在疑難排解一節中。
 * 快取本地化的最適化Forms：
    * 使用URL格式 `http://host:port/content/forms/af/<afName>.<locale>.html` 請求最適化表單的本地化版本，而非 `http://host:port/content/forms/af/afName.html?afAcceptLang=<locale>`
@@ -388,7 +387,7 @@ For information about troubleshooting, stopping local AEM environment, run modes
 
 1. 下載表單資料模型
 
-1. 匯出可編輯的範本、雲端設定和工作流程模型。 若要從您現有的SDK匯出所有先前提及的專案，請建立 [CRX-Package](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=zh-Hant) 篩選：
+1. 匯出可編輯的範本、雲端設定和工作流程模型。 若要從您現有的SDK匯出所有先前提及的專案，請建立 [CRX-Package](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html) 篩選：
 
    * /conf/ReferenceEditableTemplates
    * /conf/global/settings/cloudconfigs

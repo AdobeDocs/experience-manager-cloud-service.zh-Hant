@@ -2,9 +2,9 @@
 title: 延伸 ContextHub
 description: 當提供的ContextHub存放區和模組不符合您的解決方案需求時，定義這些新的型別
 exl-id: ba817c18-f8bd-485d-b043-87593a6a93b5
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '627'
+source-wordcount: '625'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ contexthub.store.[storeType]
 * [&#39;ContextHub.Store.JSONPStore&#39;](contexthub-api.md#contexthub-store-jsonpstore)
 * [&#39;ContextHub.Store.PersistedJSONPStore&#39;](contexthub-api.md#contexthub-store-persistedjsonpstore)
 
-請注意，每個基礎存放區都會擴充 [`ContextHub.Store.Core`](contexthub-api.md#contexthub-store-core) 商店。
+每個基礎存放區會延伸 [`ContextHub.Store.Core`](contexthub-api.md#contexthub-store-core) 商店。
 
 下列範例會建立 `ContextHub.Store.PersistedStore` 商店候選者：
 

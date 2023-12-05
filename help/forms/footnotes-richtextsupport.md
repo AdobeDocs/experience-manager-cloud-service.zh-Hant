@@ -2,10 +2,10 @@
 title: 如何將註腳新增至最適化表單？
 description: 在最適化表單中的註腳使用RTF編輯器(RTE) 。
 exl-id: f04dae84-daab-42f8-876f-02fe426f62be
-source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '443'
-ht-degree: 13%
+source-wordcount: '429'
+ht-degree: 12%
 
 ---
 
@@ -33,7 +33,7 @@ ht-degree: 13%
 若要在Adaptive Forms中新增註腳，請執行以下步驟：
 1. 在中開啟最適化表單 **編輯** 模式。
 1. 在元件瀏覽器中，拖放 **[!UICONTROL 文字]** 元件至最適化表單。
-1. 選取 **[!UICONTROL 文字]** 您所新增並點選的元件 ![cmppr](assets/configure-icon.svg) 以編輯其屬性。
+1. 選取 **[!UICONTROL 文字]** 新增並選取的元件 ![cmppr](assets/configure-icon.svg) 以編輯其屬性。
 
    ![最適化Forms中的註腳](/help/forms/assets/footnote_rte.png)
 

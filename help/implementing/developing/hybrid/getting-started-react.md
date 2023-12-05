@@ -1,15 +1,15 @@
 ---
-title: 開始在 AEM 中使用 React 建立 SPA
+title: 使用React在AEM中開始使用SPA
 description: 本文介紹了一個SPA應用計畫範例，說明它是如何組合在一起的，並可讓您使用React框架快速啟動並執行您自己的SPA。
 exl-id: 13998526-65e7-4d1b-bd47-452bad3780a2
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1138'
-ht-degree: 10%
+source-wordcount: '1130'
+ht-degree: 5%
 
 ---
 
-# 開始在 AEM 中使用 React 建立 SPA {#getting-started-with-spas-in-aem-using-react}
+# 使用React在AEM中開始使用SPA {#getting-started-with-spas-in-aem-using-react}
 
 單頁應用程式 (SPA) 可為網站使用者提供引人入勝的體驗。開發人員希望能使用SPA架構建立網站，而作者則想在AEM中順暢地編輯使用SPA架構建立之網站的內容。
 
@@ -95,7 +95,7 @@ module.exports = {
 };
 ```
 
-### 正在建置 {#building}
+### 建置 {#building}
 
 實際建立應用程式使用 [Webpack](https://webpack.js.org/) 用於整合，以及自動建立使用者端程式庫的aem-clientlib-generator。 因此， build指令將類似於：
 
@@ -256,13 +256,13 @@ export default MapTo('my-react-app/react/components/structure/page')(PageClass, 
 
 單頁應用程式內的元件定期需要共用資訊。 有幾種建議的方法可以達成此目的，依複雜度遞增的順序列示如下。
 
-* **選項1：** 集中邏輯並廣播至必要的元件，例如透過使用React Context。
+* **選項1：** 集中邏輯並廣播至必要的元件，例如，透過使用React Context。
 * **選項2：** 使用狀態庫（例如Redux）共用元件狀態。
 * **選項3：** 透過自訂和擴充容器元件來利用物件階層。
 
 ## 後續步驟 {#next-steps}
 
-* [開始在 AEM 中使用 Angular 建立 SPA](getting-started-angular.md)展示如何在 AEM 中使用 Angular 建立基本 SPA 以與 SPA 編輯器搭配運作.
+* [使用Angular在AEM中開始使用SPA](getting-started-angular.md) 顯示如何建立基本SPA，以便與AEM中的SPA編輯器搭配使用Angular。
 * [SPA 編輯器概述](editor-overview.md)更深入地介紹 AEM 和 SPA 之間的通訊模型。
 * [wknd SPA專案](wknd-tutorial.md) 是逐步教學課程，在AEM中實作簡單的SPA專案。
 * [SPA的動態模型至元件對應](model-to-component-mapping.md) 說明動態模型到元件的對應，以及它如何在AEM的SPA中運作。

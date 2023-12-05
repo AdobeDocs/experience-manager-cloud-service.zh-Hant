@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service 中的內容還原
 description: 瞭解如何使用 Cloud Manager 從備份中還原 AEM as a Cloud Service 內容。
 exl-id: 921d0c5d-5c29-4614-ad4b-187b96518d1f
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1158'
-ht-degree: 81%
+source-wordcount: '1157'
+ht-degree: 77%
 
 ---
 

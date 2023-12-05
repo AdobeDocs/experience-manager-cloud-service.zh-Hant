@@ -2,23 +2,23 @@
 title: 為Adobe Experience Manager as a Cloud Service建立無障礙內容（符合WCAG 2.1）
 description: 使用AEMas a Cloud Service協助讓身心障礙人士存取及使用網路內容
 exl-id: 294fd1ed-9b4a-42cb-8f9e-e7a5d7e6930e
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '13859'
-ht-degree: 3%
+source-wordcount: '13685'
+ht-degree: 2%
 
 ---
 
 # 建立可存取的內容 (符合 WCAG 2.1) {#creating-accessible-content-wcag-conformance}
 
-此 [網頁內容可及性指引(WCAG) 2.1](https://www.w3.org/TR/WCAG/) 繪製者： [全球資訊網協會的工作小組](https://www.w3.org/群組/#Accessibility_Guidelines_Working_Group). 此服務包含一系列技術獨立指引和成功標準，有助身心障礙人士存取及使用網路內容。
+此 [網頁內容可及性指引(WCAG) 2.1](https://www.w3.org/TR/WCAG/) 繪製者： [全球資訊網協會的工作小組](https://www.w3.org/groups/#Accessibility_Guidelines_Working_Group). 此服務包含一系列技術獨立指引和成功標準，有助身心障礙人士存取及使用網路內容。
 
 作為介紹，聯盟提供了一系列區段和支援檔案：
 
 * [WCAG 2.1的新功能](https://www.w3.org/TR/WCAG/#new-features-in-wcag-2-1)
-* [How to Meet WCAG 2.1 (如何達成 WCAG 2.1) ](https://www.w3.org/WAI/WCAG21/quickref/)
-* [Understanding WCAG 2.1 (了解 WCAG 2.1) ](https://www.w3.org/WAI/WCAG21/Understanding/)
-* [Techniques for WCAG 2.1 (WCAG 2.1 的專用技術) ](https://www.w3.org/WAI/WCAG21/Techniques/)
+* [如何滿足WCAG 2.1](https://www.w3.org/WAI/WCAG21/quickref/)
+* [瞭解WCAG 2.1](https://www.w3.org/WAI/WCAG21/Understanding/)
+* [適用於WCAG 2.1的技術](https://www.w3.org/WAI/WCAG21/Techniques/)
 * [WCAG檔案](https://www.w3.org/WAI/standards-guidelines/wcag/docs/)
 
 此外，請參閱：
@@ -307,7 +307,7 @@ c
 
 #### 如何達到標準 — 資訊和關係(1.3.1) {#how-to-meet-info-and-relationships}
 
-AEM可讓您使用適當的HTML元素，輕鬆建構語義上有意義的網頁內容。 在RTE （文字元件）中開啟頁面內容，並使用 **引數格式** 選單（段落符號），指定適當的結構元素（例如段落、標題等）。
+AEM可讓您使用適當的HTML元素，輕鬆建構語義上有意義的網頁內容。 在RTE （文字元件）中開啟頁面內容，並使用 **引數格式** 選單（段落符號），指定適當的結構元素（例如，段落、標題等）。
 
 在適用的情況下，您可以使用下列元素，確定您的網頁指定了適當的結構：
 
@@ -357,7 +357,7 @@ AEM可讓您使用適當的HTML元素，輕鬆建構語義上有意義的網頁�
      >
      實際上相同，但 `<strong>` 和 `<em>` 偏好使用，因為它們的語意正確html。 您的開發團隊可以設定要使用的RTE `<strong>` 和 `<em>` (而非 `<b>` 和 `<i>`)時，退出連結逾時。
 
-* **複雜資料表**：有時候，如果有具有兩個或多個標題級別的複雜表格，則基本表格屬性可能不足以提供所有必要的結構資訊。 對於這些類型的複雜表格，需要使用header和 **id屬性在標題及其相關儲存格之間建** 立直 **接** 關係。
+* **複雜資料表**：有時候，如果有具有兩個或多個標題級別的複雜表格，則基本表格屬性可能不足以提供所有必要的結構資訊。 對於這些型別的複雜表格，需要使用在標題及其相關儲存格之間建立直接關係 **頁首** 和 **id** 屬性。
 
   >[!NOTE]
   >
@@ -442,7 +442,7 @@ AEM可讓您使用適當的HTML元素，輕鬆建構語義上有意義的網頁�
 
 請確定任何依賴頁面內容視覺特性的資訊也會以替代格式呈現。
 
-* 不要依賴視覺位置來提供資訊。 例如，如果您想讓使用者參閱頁面右側的功能表以存取進一步資訊，請勿參閱 *右側的功能表*；請改為命名選單（例如透過標題），並在文字中參照該名稱。
+* 不要依賴視覺位置來提供資訊。 例如，如果您想讓使用者參閱頁面右側的功能表以存取進一步資訊，請勿參閱 *右側的功能表*；請改為命名選單（例如，透過標題），並在文字中參照該名稱。
 * 請勿依賴文字樣式（例如粗體或斜體文字）作為傳達資訊的唯一方式。
 
 >[!NOTE]
@@ -1208,7 +1208,7 @@ AEM針對根語言的變體提供進一步的微調，例如，美式英文 — 
 * 核取方塊或選項按鈕：標籤會放置在緊鄰欄位右側的位置。
 * 所有其他表單元件（例如文字方塊、下拉式方塊）：標籤會放置在欄位上方或左側。
 
-在功能有限的簡單表單中，適當地標示 `Submit` 按鈕可作為相鄰欄位的標籤(例如 `Search`)。 當尋找標籤文字的空間可能困難時，這個用法很有用。
+在功能有限的簡單表單中，適當地標示 `Submit` 按鈕可作為相鄰欄位的標籤(例如， `Search`)。 當尋找標籤文字的空間可能困難時，這個用法很有用。
 
 #### 更多資訊 — 標籤或指示(3.3.2) {#more-information-labels-or-instructions}
 

@@ -4,9 +4,9 @@ description: 瞭解如何使用使用者提供的資料，將資訊新增到已�
 feature: Adaptive Forms
 role: User
 level: Intermediate
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '685'
+source-wordcount: '693'
 ht-degree: 0%
 
 ---
@@ -27,8 +27,8 @@ ht-degree: 0%
 執行以下步驟，在中繼資料中新增元素：
 
 1. 在編輯模式中開啟最適化表單。\
-   若要以編輯模式開啟您的表單，請在表單管理員中，選取您的表單並點選 **[!UICONTROL 開啟]**.
-1. 在編輯模式中，選取元件，點選 ![欄位層級](assets/select_parent_icon.svg) > **[!DNL Adaptive Form Container]**，然後點選 ![cmppr](assets/configure-icon.svg).
+   若要以編輯模式開啟表單，請在表單管理員中，選取您的表單並選取 **[!UICONTROL 開啟]**.
+1. 在編輯模式中，選取元件，選取 ![欄位層級](assets/select_parent_icon.svg) > **[!DNL Adaptive Form Container]**，然後選取 ![cmppr](assets/configure-icon.svg).
 1. 在側邊欄中，按一下 **[!DNL Metadata]**.
 1. 在「中繼資料」段落中，按一下 **[!DNL Add]**.
 1. 使用「中繼資料」標籤的「值」欄位來新增指令碼。 您新增的指令碼會從表單上的元素收集資料，並計算饋送至中繼資料的值。

@@ -2,9 +2,9 @@
 title: 如何建立最適化表單範本？
 description: 使用範本編輯器建立最適化表單範本，以定義基本結構和初始內容。
 exl-id: a882cba2-c621-4ff7-a972-c504641b5639
-source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2098'
+source-wordcount: '2059'
 ht-degree: 4%
 
 ---
@@ -38,13 +38,13 @@ Experience Manager提供可組織範本的全域資料夾。 但預設不會啟�
 
 建立資料夾後，請開啟資料夾並執行以下步驟來建立範本：
 
-1. 點選 **[!UICONTROL 建立]** 在您建立的資料夾內。
-1. 在「挑選範本型別」區段中，選取 **[!UICONTROL 自適應表單範本]** 然後點選 **[!UICONTROL 下一個]**.
+1. 選取 **[!UICONTROL 建立]** 在您建立的資料夾內。
+1. 在「挑選範本型別」區段中，選取 **[!UICONTROL 自適應表單範本]** 並選取 **[!UICONTROL 下一個]**.
 
-1. 在「範本詳細資訊」區段中，提供範本標題並點選 **[!UICONTROL 建立]**.
+1. 在「範本詳細資訊」區段中，提供範本標題並選取 **[!UICONTROL 建立]**.
 您也可以提供說明。
 
-1. 點選 **[!UICONTROL 完成]** 以返回主控台，或點選 **[!UICONTROL 開啟]** 以在編輯器中開啟範本。
+1. 選取 **[!UICONTROL 完成]** 以返回主控台，或選取 **[!UICONTROL 開啟]** 以在編輯器中開啟範本。
 
 ### 範本編輯器UI {#template-editor-ui}
 
@@ -105,7 +105,7 @@ Experience Manager提供可組織範本的全域資料夾。 但預設不會啟�
 
 選取「初始內容」選項時，範本的「最適化表單」容器會像要編輯的最適化表單一樣開啟。 如同製作最適化表單，您可以指定初始設定，例如選取主題和提交動作。
 
-表單作者可將其用作建立表單的基礎。 內容流程結構是在範本的「初始內容」層中所指定。 若要切換到編輯表單範本的初始內容，在頁面工具列中的「預覽」之前，點選 ![畫佈下拉式清單](assets/canvas-drop-down.png) **>** **[!UICONTROL 初始內容]**.
+表單作者可將其用作建立表單的基礎。 內容流程結構是在範本的「初始內容」層中所指定。 若要切換到編輯表單範本的初始內容，在頁面工具列中的「預覽」之前，選取 ![畫佈下拉式清單](assets/canvas-drop-down.png) **>** **[!UICONTROL 初始內容]**.
 
 
 在初始內容層中，您建立作者用作基礎的最適化表單範本。 製作範本與製作表單類似，您會使用側邊欄中的可用選項。 側欄提供內容、屬性、資產和元件瀏覽器。
@@ -132,7 +132,7 @@ Experience Manager提供可組織範本的全域資料夾。 但預設不會啟�
 * 您可以從側邊欄中的元件瀏覽器拖放面板元件。
 * 您可以新增的子面板 `guideRootPanel` 元件工具列中的。
 
-若要建立「一般資訊」和「專業資訊」標籤，請在 `guideRootPanel`. 選取面板並點選 ![cmppr](assets/configure-icon.svg) 以開啟側邊欄中的屬性。 將元素名稱變更為 `general-info` 和 `professional-info`和標題分別作為「一般資訊」和「專業資訊」。 在側邊欄中，點選內容以開啟內容瀏覽器。 在「表單物件」標籤中，選取 `guideRootPanel`. 在編輯器中，選取guideRootPanel。 點選 ![cmppr](assets/configure-icon.svg) 以開啟其屬性。 在「面板配置」欄位中，選取 **[!UICONTROL 索引標籤在頂端]** 然後點選 **[!UICONTROL 完成]**. 標籤範本結構即會套用。
+若要建立「一般資訊」和「專業資訊」標籤，請在 `guideRootPanel`. 選取面板並選取 ![cmppr](assets/configure-icon.svg) 以開啟側邊欄中的屬性。 將元素名稱變更為 `general-info` 和 `professional-info`和標題分別作為「一般資訊」和「專業資訊」。 在側邊欄中，選取內容以開啟內容瀏覽器。 在「表單物件」標籤中，選取 `guideRootPanel`. 在編輯器中，選取guideRootPanel。 選取 ![cmppr](assets/configure-icon.svg) 以開啟其屬性。 在「面板配置」欄位中，選取 **[!UICONTROL 索引標籤在頂端]** 並選取 **[!UICONTROL 完成]**. 標籤範本結構即會套用。
 
 #### 在索引標籤中新增內容 {#adding-content-in-tabs}
 
@@ -151,7 +151,7 @@ Experience Manager提供可組織範本的全域資料夾。 但預設不會啟�
 1. 瀏覽至 **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL 工具]** > **[!UICONTROL 範本]**，然後開啟您已建立範本的資料夾。
 
 1. 您建立的範本會標示為「草稿」。
-1. 選取範本並點選 **[!UICONTROL 啟用]** （在工具列中）。
+1. 選取範本並選取 **[!UICONTROL 啟用]** （在工具列中）。
 建立最適化表單時，系統要求您選擇範本時，您會看到範本列出。
 
 ## 匯入或匯出範本 {#importing-or-exporting-a-template}
@@ -167,7 +167,7 @@ Experience Manager提供可組織範本的全域資料夾。 但預設不會啟�
 
 作者可關聯 [!UICONTROL 表單資料模型結構描述] 至範本編輯器中的自適應表單範本。 它可讓作者從範本編輯器選取結構。 當您將結構描述與範本建立關聯，且表單作者根據範本建立表單時，系統會為表單預先選取結構描述。 它有助於表單作者規範結構描述的使用，並節省表單作者的時間。 若要在範本編輯器中選取表單資料模型結構描述：
 
-1. 點選 **[!UICONTROL 內容瀏覽器]** 位於左側。
+1. 選取 **[!UICONTROL 內容瀏覽器]** 位於左側。
 1. 前往表單容器 **[!UICONTROL 設定]**.
 1. 選取 **[!UICONTROL 資料模型]**.
 1. 選擇您的表單資料模型，透過 **[!UICONTROL 選取表單資料模型]** 並儲存設定。

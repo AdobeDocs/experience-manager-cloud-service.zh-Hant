@@ -4,9 +4,9 @@ description: 瞭解Adobe工程和諮詢團隊編譯的最佳實務，協助啟�
 feature: Multi Site Manager
 role: Admin
 exl-id: 61b8ded8-3b9e-423f-85a9-7280e1a721cc
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1418'
+source-wordcount: '1413'
 ht-degree: 3%
 
 ---
@@ -119,7 +119,7 @@ MSM可以透過兩種方式協助建立多語言網站：
 
 ## 自訂轉出 {#customizing-rollouts}
 
-MSM轉出設定是高度可自訂的。 您應注意，自動化轉出可能會產生深遠的影響。 最佳實務是，在從事下列活動之前，請務必仔細規劃：
+MSM轉出設定是高度可自訂的。 自動化轉出可能會產生深遠的影響。 最佳實務是，在從事下列活動之前，請務必仔細規劃：
 
 * 自動化轉出，例如使用 [onModify觸發程式](#onmodify)
 * 自訂 [節點型別/屬性](#node-types-properties)

@@ -3,10 +3,10 @@ title: 如何根據核心元件建立最適化表單範本？
 description: 根據核心元件建立最適化表單範本，以使用範本編輯器定義基本結構和初始內容。
 Keywords: create adaptive form template, create adaptive form template based on core components, Use template to create adpative form.
 exl-id: c1c050d3-953e-4e56-a96b-d84f2ec05e5e
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1991'
-ht-degree: 2%
+source-wordcount: '1961'
+ht-degree: 1%
 
 ---
 
@@ -46,13 +46,13 @@ Experience Manager提供可組織範本的全域資料夾。 但預設不會啟�
 
 建立資料夾後，請開啟資料夾並執行以下步驟來建立範本：
 
-1. 點選 **[!UICONTROL 建立]** 在您建立的資料夾內。
-1. 在 **[!UICONTROL 挑選範本型別]** 區段，選取 **[!UICONTROL 最適化表單（核心元件）範本]** 然後點選 **[!UICONTROL 下一個]**.
+1. 選取 **[!UICONTROL 建立]** 在您建立的資料夾內。
+1. 在 **[!UICONTROL 挑選範本型別]** 區段，選取 **[!UICONTROL 最適化表單（核心元件）範本]** 並選取 **[!UICONTROL 下一個]**.
 
-1. 在 **[!UICONTROL 範本詳細資訊]** 部分，提供 **範本標題** 然後點選 **[!UICONTROL 建立]**.
+1. 在 **[!UICONTROL 範本詳細資訊]** 部分，提供 **範本標題** 並選取 **[!UICONTROL 建立]**.
 您也可以提供說明。
 
-1. 點選 **[!UICONTROL 完成]** 以返回主控台，或點選 **[!UICONTROL 開啟]** 以在編輯器中開啟範本。
+1. 選取 **[!UICONTROL 完成]** 以返回主控台，或選取 **[!UICONTROL 開啟]** 以在編輯器中開啟範本。
 
 ## 範本編輯器UI {#template-editor-ui}
 
@@ -119,7 +119,7 @@ Header and footer are added in the Initial Content layer.
 
 選取「初始內容」選項時，範本的「最適化表單」容器會像要編輯的最適化表單一樣開啟。 它可讓您建立預先定義的內容，此內容可在建立與範本關聯的最適化Forms時變更。 如同製作最適化表單，您可以指定初始設定，例如選取主題和提交動作。
 
-表單作者可將其用作建立表單的基礎。 內容流程結構是在範本的「初始內容」層中所指定。 若要切換到編輯表單範本的初始內容，在頁面工具列中的「預覽」之前，點選 ![畫佈下拉式清單](assets/canvas-drop-down.png) **>** **[!UICONTROL 初始內容]**.
+表單作者可將其用作建立表單的基礎。 內容流程結構是在範本的「初始內容」層中所指定。 若要切換到編輯表單範本的初始內容，在頁面工具列中的「預覽」之前，選取 ![畫佈下拉式清單](assets/canvas-drop-down.png) **>** **[!UICONTROL 初始內容]**.
 
 ![在初始內容層中新增的頁首與頁尾](assets/header-and-footer.png)
 
@@ -145,7 +145,7 @@ Header and footer are added in the Initial Content layer.
 
 1. 瀏覽至 **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL 工具]** > **[!UICONTROL 範本]**，然後開啟您已建立範本的資料夾。
 您建立的範本會標示為「草稿」。
-1. 選取範本並點選 **[!UICONTROL 啟用]** （在工具列中）。
+1. 選取範本並選取 **[!UICONTROL 啟用]** （在工具列中）。
 建立最適化表單時，系統要求您選擇範本時，您會看到範本列出。
 
 ## 匯入或匯出範本 {#importing-or-exporting-a-template}
@@ -160,7 +160,7 @@ Header and footer are added in the Initial Content layer.
 
 作者可關聯 [!UICONTROL 表單資料模型結構描述] 至範本編輯器中的自適應表單範本。 它可讓作者從範本編輯器選取結構。 當您將結構描述與範本建立關聯，且表單作者根據範本建立表單時，系統會為表單預先選取結構描述。 它有助於表單作者規範架構的使用，也可為表單作者節省時間。 若要在範本編輯器中選取表單資料模型結構描述：
 
-1. 點選 **[!UICONTROL 內容瀏覽器]** 位於左側。
+1. 選取 **[!UICONTROL 內容瀏覽器]** 位於左側。
 1. 前往表單容器 **[!UICONTROL 設定]**.
 1. 選取 **[!UICONTROL 資料模型]**.
 1. 選擇您的表單資料模型，透過 **[!UICONTROL 選取表單資料模型]** 並儲存設定。
@@ -185,7 +185,7 @@ Change the layer from **Structure** to **Initial Content**, and start adding con
 * You can drag-drop the panel component from the components browser in the sidebar.
 * You can add child panel of the `guideRootPanel` from the component toolbar.
 
-To create the General Information and Professional Information tabs, add two panels in the child panel of the `guideRootPanel`. Select the panels and tap ![cmppr](assets/configure-icon.svg) to open the properties in the sidebar. Change the element names as `general-info` and `professional-info`, and titles as General Information and Professional Information respectively. In the sidebar, tap content to open the content browser. In the Form Objects tab, select `guideRootPanel`. In the editor, the guideRootPanel is selected. Tap ![cmppr](assets/configure-icon.svg) in the component toolbar to open its properties. In the Panel Layout field, select **[!UICONTROL Tabs on Top]** and tap **[!UICONTROL Done]**. The tabbed template structure is applied.
+To create the General Information and Professional Information tabs, add two panels in the child panel of the `guideRootPanel`. Select the panels and select ![cmppr](assets/configure-icon.svg) to open the properties in the sidebar. Change the element names as `general-info` and `professional-info`, and titles as General Information and Professional Information respectively. In the sidebar, select content to open the content browser. In the Form Objects tab, select `guideRootPanel`. In the editor, the guideRootPanel is selected. Select ![cmppr](assets/configure-icon.svg) in the component toolbar to open its properties. In the Panel Layout field, select **[!UICONTROL Tabs on Top]** and select **[!UICONTROL Done]**. The tabbed template structure is applied.
 
 ### Adding content in tabs {#adding-content-in-tabs}
 
@@ -224,10 +224,10 @@ After you have added fields, you can add buttons such as Submit and Reset.
 #### 在核心元件的編輯對話方塊中選取自訂群組名稱 {#select-a-custom-group-name}
 
 1. 以編輯模式開啟最適化表單。
-1. 點選已在範本編輯器中定義自訂屬性的元件，然後點選 ![settings_icon](assets/configure-icon.svg) 以開啟元件的「編輯」對話方塊。
+1. 選取已在範本編輯器中定義自訂屬性的元件，然後選取 ![settings_icon](assets/configure-icon.svg) 以開啟元件的「編輯」對話方塊。
 1. 選取 **[!UICONTROL 進階]** 標籤。
 1. 從中選擇自訂屬性群組名稱 **[!UICONTROL 自訂屬性選取]** 下拉式清單。 下拉式清單會自動填入所有已定義的自訂群組名稱。
-1. 點選 **[!UICONTROL 完成]** 以儲存屬性。
+1. 選取 **[!UICONTROL 完成]** 以儲存屬性。
 
 ![選取自訂屬性群組名稱](/help/forms/assets/select-custom-properties-group-name.png)
 
@@ -278,7 +278,7 @@ You can also save an Adaptive Form as a template for future use. To save a Adapt
 
 ## 最佳做法 {#best-practices}
 
-* 使用以核心元件為基礎的元件建立範本，例如最適化表單文字、最適化表單容器等。 若要取得最適化Forms核心元件的資訊， [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html).
+* 使用根據核心元件的元件建立範本，例如最適化表單文字、最適化表單容器等。 若要取得最適化Forms核心元件的資訊， [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html).
 * 限制範本的數量，以符合網站上提供的根本不同的表單型別
 * 為範本中使用的自訂元件提供必要的彈性和設定功能。
 

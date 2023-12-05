@@ -2,9 +2,9 @@
 title: 一般Lucene索引移除
 description: 瞭解一般Lucene索引的計畫移除情況，以及您會受到哪些影響。
 exl-id: 3b966d4f-6897-406d-ad6e-cd5cda020076
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1335'
+source-wordcount: '1345'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ Adobe打算移除「一般Lucene」索引(`/oak:index/lucene-*`)從Adobe Experie
 
 若不使用索引，這類查詢就無法傳回結果。 與只包含路徑或屬性限制的查詢不同，如果查詢包含找不到索引的全文限制（因此執行周遊），則一律會傳回零結果。
 
-一般Lucene索引(`/oak:index/lucene-*`)自AEM 6.0 / Oak 1.0起就已存在，可在大部分的存放庫階層中提供全文搜尋，不過有些路徑會使用 `/jcr:system` 和 `/var` 已一律從此排除。 不過，此索引在很大程度上已被更特定節點型別上的索引取代(例如 `damAssetLucene-*` 針對 `dam:Asset` 節點型別)，支援全文檢索和屬性搜尋。
+一般Lucene索引(`/oak:index/lucene-*`)自AEM 6.0 / Oak 1.0起就已存在，可在大部分的存放庫階層中提供全文搜尋，不過有些路徑會使用 `/jcr:system` 和 `/var` 已一律從此排除。 不過，此索引在很大程度上已由更特定節點型別的索引取代(例如， `damAssetLucene-*` 針對 `dam:Asset` 節點型別)，支援全文檢索和屬性搜尋。
 
 在AEM 6.5中，一般Lucene索引被標籤為已過時，這表示它將在未來版本中遭到移除。 此後，當使用索引時，會記錄WARN，如下列記錄片段所示：
 

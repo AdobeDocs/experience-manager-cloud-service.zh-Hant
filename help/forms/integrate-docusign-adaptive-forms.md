@@ -2,10 +2,10 @@
 title: 如何將DocuSign與最適化表單整合？
 description: 瞭解如何搭配最適化表單使用DocuSign來收集電子簽章。
 exl-id: fb2e75d6-e454-4999-a079-f663af79051f
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1559'
-ht-degree: 9%
+source-wordcount: '1534'
+ht-degree: 7%
 
 ---
 
@@ -126,8 +126,8 @@ AEM Formsas a Cloud Service提供DocuSign的自訂提交動作。 提交動作�
 
 1. 瀏覽至 **[!UICONTROL 工具]** ![錘子](assets/hammer.png) > **[!UICONTROL Cloud Service]** > **[!UICONTROL DocuSign]** 並選取要託管設定的資料夾。
 
-1. 在設定頁面上，點選 **[!UICONTROL 建立]** 以建立 [!DNL DocuSign] AEM Forms中的設定。
-1. 在 **[!UICONTROL 一般]** 的標籤 **[!UICONTROL 建立DocuSign設定]** 頁面，指定 **[!UICONTROL 名稱]** 針對設定，然後點選 **[!UICONTROL 下一個]**. 您可以選擇指定 **[!UICONTROL 標題]**.
+1. 在設定頁面上，選取 **[!UICONTROL 建立]** 以建立 [!DNL DocuSign] AEM Forms中的設定。
+1. 在 **[!UICONTROL 一般]** 的標籤 **[!UICONTROL 建立DocuSign設定]** 頁面，指定 **[!UICONTROL 名稱]** ，然後選取 **[!UICONTROL 下一個]**. 您可以選擇指定 **[!UICONTROL 標題]**.
 
 1. 將您目前瀏覽器視窗中的 URL 複製到筆記本。在後續步驟中，需要使用此 URL 設定 [!DNL DocuSign] 應用程式和 [!DNL AEM Forms]。
 
@@ -146,15 +146,15 @@ AEM Formsas a Cloud Service提供DocuSign的自訂提交動作。 提交動作�
 
 1. 指定 **[!UICONTROL 使用者端ID]** （DocuSign整合索引鍵）和 **[!UICONTROL 使用者端密碼]** （DocuSign秘密金鑰）。
 
-1. 點選 **[!UICONTROL 連線到DocuSign]**. 出現認證提示時，請提供在建立 [!DNL DocuSign] 應用程式時使用的帳戶使用者名稱和密碼。當系統要求確認存取時 `your developer account`，按一下 **[!UICONTROL 允許存取]**. 如果認證正確，則會顯示成功訊息。
+1. 選取 **[!UICONTROL 連線到DocuSign]**. 出現認證提示時，請提供在建立 [!DNL DocuSign] 應用程式時使用的帳戶使用者名稱和密碼。當系統要求確認存取時 `your developer account`，按一下 **[!UICONTROL 允許存取]**. 如果認證正確，則會顯示成功訊息。
 
-1. 點選 **[!UICONTROL 建立]** 以建立 [!DNL DocuSign] 設定。
+1. 選取 **[!UICONTROL 建立]** 以建立 [!DNL DocuSign] 設定。
 
 1. 選取設定並按一下 **[!UICONTROL 發佈]**，選取設定，然後按一下 **[!UICONTROL 發佈]**. 這會將設定複寫至對應的發佈環境。
 
 1. 請對您的開發人員、中繼及生產執行個體 (無論是哪個) 重複上述步驟，以完成您環境的設定 [!DNL DocuSign] with [!DNL AEM Forms]。
 
-現在，您的AEM Forms環境已設定為使用DocuSign。 請確保您將用於 Cloud Service 的設定容器新增至 [!DNL DocuSign] 啟用的所有最適化表單。您可從最適化表單的屬性指定設定容器。
+現在，您的AEM Forms環境已設定為使用DocuSign。 請確保您將用於 Cloud Service 的設定容器新增至 [!DNL DocuSign] 啟用的所有最適化表單。您可以從最適化表單的屬性指定設定容器。
 
 ### 使用 [!DNL DocuSign] 在最適化表單中 {#enabledocusign}
 
@@ -168,7 +168,7 @@ AEM Formsas a Cloud Service提供DocuSign的自訂提交動作。 提交動作�
 若要建立可啟用簽名的最適化表單：
 
 1. 瀏覽至 **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms與檔案]**.
-1. 點選 **[!UICONTROL 建立]** 並選取 **[!UICONTROL 最適化表單]**. 範本清單隨即顯示。 選取範本並點選 **[!UICONTROL 下一個]**.
+1. 選取 **[!UICONTROL 建立]** 並選取 **[!UICONTROL 最適化表單]**. 範本清單隨即顯示。 選取範本並選取 **[!UICONTROL 下一個]**.
 1. 在 **[!UICONTROL 基本]** 標籤：
 
    1. 指定 **[!UICONTROL 名稱]** 和 **[!UICONTROL 標題]** 用於最適化表單。
@@ -183,23 +183,23 @@ AEM Formsas a Cloud Service提供DocuSign的自訂提交動作。 提交動作�
 
    - 如果您沒有自訂表格範本，請選取 **[!UICONTROL 產生記錄檔案]** 選項。 當您使用選項時，傳送以供簽署的檔案會顯示最適化表單的所有欄位。
 
-1. 點選「**[!UICONTROL 建立」。]** 系統隨即會建立可啟用簽名的最適化表單。 您可以新增 [!DNL DocuSign] 欄位至表單，並傳送以供簽署。
-1. 在編輯模式中開啟最適化表單。 在 **[!UICONTROL 內容]** 標籤，點選 **[!UICONTROL 表單容器]** 然後點選 ![設定](assets/configure-icon.svg).
+1. 選取 **[!UICONTROL 建立。]** 系統隨即會建立可啟用簽名的最適化表單。 您可以新增 [!DNL DocuSign] 欄位至表單，並傳送以供簽署。
+1. 在編輯模式中開啟最適化表單。 在 **[!UICONTROL 內容]** 索引標籤中，選取 **[!UICONTROL 表單容器]** 並選取 ![設定](assets/configure-icon.svg).
 
 1. 在 **[!UICONTROL 提交]** 區段，選取 **[!UICONTROL 使用DocuSign電子簽章提交]** 從 **[!UICONTROL 提交動作]** 下拉式清單。
 
-1. 在 **[!UICONTROL 動作設定]** 區段，點選 **[!UICONTROL 新增]** 新增收件者並指定收件者的電子郵件地址。 點選 **[!UICONTROL 新增]** 以新增更多收件者。
+1. 在 **[!UICONTROL 動作設定]** 區段，選取 **[!UICONTROL 新增]** 新增收件者並指定收件者的電子郵件地址。 選取 **[!UICONTROL 新增]** 以新增更多收件者。
 
 1. 在中指定電子郵件訊息的主旨 **[!UICONTROL 電子郵件主旨]** 欄位。 選取 **包含附件** 以在電子郵件訊息中包含附件。
 
-1. 點選![儲存](assets/save_icon.svg)以儲存屬性。
+1. 選取 ![儲存](assets/save_icon.svg) 以儲存屬性。
 
 #### 啟用 [!DNL DocuSign] 最適化表單 {#editafsign}
 
 使用 [!DNL DocuSign] 在現有的最適化表單中：
 
 1. 瀏覽至 **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms與檔案]**.
-1. 選取最適化表單並點選 **[!UICONTROL 屬性]**.
+1. 選取最適化表單，然後選取 **[!UICONTROL 屬性]**.
 1. 在 **[!UICONTROL 基本]** 索引標籤中，選取 [設定容器](adobe-sign-integration-adaptive-forms.md#configure-adobe-sign-with-aem-forms) 整合時建立 [!DNL DocuSign] 替換為 [!DNL AEM Forms].
 1. 在 **[!UICONTROL 表單模型]** 索引標籤中，選取下列其中一個選項：
 
@@ -207,14 +207,14 @@ AEM Formsas a Cloud Service提供DocuSign的自訂提交動作。 提交動作�
 
    - 如果您沒有自訂表格範本，請選取 **[!UICONTROL 產生記錄檔案]** 選項。 當您使用選項時，傳送以供簽署的檔案會顯示最適化表單的所有欄位。
 
-1. 點選 **[!UICONTROL 儲存並關閉]**. 已針對以下專案啟用最適化表單 [!DNL DocuSign]. 現在，您可以新增 [!DNL DocuSign] 欄位至表單，並傳送以供簽署。
+1. 選取 **[!UICONTROL 儲存並關閉]**. 已針對以下專案啟用最適化表單 [!DNL DocuSign]. 現在，您可以新增 [!DNL DocuSign] 欄位至表單，並傳送以供簽署。
 
-1. 在編輯模式中開啟最適化表單。 在 **[!UICONTROL 內容]** 標籤，點選 **[!UICONTROL 表單容器]** 然後點選 ![設定](assets/configure-icon.svg).
+1. 在編輯模式中開啟最適化表單。 在 **[!UICONTROL 內容]** 索引標籤中，選取 **[!UICONTROL 表單容器]** 並選取 ![設定](assets/configure-icon.svg).
 
 1. 在 **[!UICONTROL 提交]** 區段，選取 **[!UICONTROL 使用DocuSign電子簽章提交]** 從 **[!UICONTROL 提交動作]** 下拉式清單。
 
-1. 在 **[!UICONTROL 動作設定]** 區段，點選 **[!UICONTROL 新增]** 新增收件者並指定收件者的電子郵件地址。 點選 **[!UICONTROL 新增]** 以新增更多收件者。
+1. 在 **[!UICONTROL 動作設定]** 區段，選取 **[!UICONTROL 新增]** 新增收件者並指定收件者的電子郵件地址。 選取 **[!UICONTROL 新增]** 以新增更多收件者。
 
 1. 在中指定電子郵件訊息的主旨 **[!UICONTROL 電子郵件主旨]** 欄位。 選取 **包含附件** 以在電子郵件訊息中包含附件。
 
-1. 點選![儲存](assets/save_icon.svg)以儲存屬性。
+1. 選取 ![儲存](assets/save_icon.svg) 以儲存屬性。

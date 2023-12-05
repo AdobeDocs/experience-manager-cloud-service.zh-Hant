@@ -4,10 +4,10 @@ description: 瞭解如何設定 [!DNL Adobe Experience Manager] RTF編輯器外�
 contentOwner: AG
 mini-toc-levels: 1
 exl-id: 91619662-e865-47d1-8bec-0739f402353a
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '4298'
-ht-degree: 2%
+source-wordcount: '4303'
+ht-degree: 0%
 
 ---
 
@@ -95,7 +95,7 @@ RTE功能可透過一系列外掛程式使用，每個外掛程式都具備功�
 
 若要設定RTE以顯示必要的圖示，請按照下列步驟操作。
 
-1. 導覽至您的元件，例如 `/apps/<myProject>/components/text`.
+1. 導覽至您的元件，例如， `/apps/<myProject>/components/text`.
 1. 導覽至節點 `rtePlugins/edit`. 另請參閱 [啟動外掛程式](#activateplugin) 如果節點不存在。
 1. 建立 `features` 上的屬性 `edit` 節點並新增一或多個功能。 儲存所有變更。
 
@@ -228,7 +228,7 @@ RTE功能可透過一系列外掛程式使用，每個外掛程式都具備功�
 
 然後，指定要參照的樣式表位置：
 
-1. 導覽至文字元件的根節點，例如 `/apps/<myProject>/components/text`.
+1. 導覽至文字元件的根節點，例如， `/apps/<myProject>/components/text`.
 1. 新增屬性 `externalStyleSheets` 至的父節點 `<rtePlugins-node>`：
 
    * **名稱** `externalStyleSheets`
@@ -304,7 +304,7 @@ RTF編輯器使用容器DOM元素，其ID為 `CQrte` 提供不同的樣式來檢
 1. 將屬性文字新增至相同的節點。 值是作者在選取樣式時看到的樣式名稱。
    * 名稱： `text`
 *型別： `String`
-   * 值: `Japanese word-wrap`
+   * 值： `Japanese word-wrap`
 
 1. 建立樣式表並指定其路徑。 另請參閱 [指定樣式表的位置](#locationofstylesheet). 將下列內容加入樣式表。 視需要變更背景顏色。
 

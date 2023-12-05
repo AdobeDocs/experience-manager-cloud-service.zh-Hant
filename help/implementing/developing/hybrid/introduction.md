@@ -2,9 +2,9 @@
 title: SPA 簡介和逐步解說
 description: 本文章介紹 SPA 的概念，並逐步解說如何使用基本 SPA 應用程式進行編寫，說明它與基礎 AEM SPA 編輯器的關係。
 exl-id: 8dad48d5-fa90-467c-8bec-e4b76e057f80
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '2065'
+source-wordcount: '2045'
 ht-degree: 93%
 
 ---
@@ -38,7 +38,7 @@ SPA 編輯器提供了一個全面的解決方案來支援在 AEM 中使用 SPA�
 
 >[!CAUTION]
 >
->本文件使用 [WKND SPA 專案應用程式](https://github.com/adobe/aem-guides-wknd-spa)僅用於示範目的。它不應用於任何專案。
+>本文件使用 [WKND SPA 專案應用程式](https://github.com/adobe/aem-guides-wknd-spa)僅用於示範目的。請勿用於任何專案工作。
 
 >[!TIP]
 >

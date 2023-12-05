@@ -6,10 +6,10 @@ contentOwner: vishgupt
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: adaptive_forms, author
 exl-id: 3fdbe5a3-5c3c-474d-b701-e0182da4191a
-source-git-commit: 9e06c115af2a262859d39bcd5ee0016df2475591
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1825'
-ht-degree: 8%
+source-wordcount: '1747'
+ht-degree: 6%
 
 ---
 
@@ -54,21 +54,21 @@ CAPTCHA （完全自動化公用圖靈測試來區分電腦和人之間的差異
 
    1. 前往&#x200B;**[!UICONTROL 工具 > 一般 > 設定瀏覽器]**。
    1. 選取資料夾或建立資料夾，然後使用下列步驟啟用雲端設定的資料夾：
-      1. 在設定瀏覽器中，選取資料夾並點選 **[!UICONTROL 屬性]**.
+      1. 在組態瀏覽器中，選取資料夾並選取 **[!UICONTROL 屬性]**.
       1. 在組態內容對話方塊中，啟用 **[!UICONTROL 雲端設定]**.
-      1. 點選&#x200B;**[!UICONTROL 儲存並關閉]**&#x200B;以儲存設定並退出對話框。
+      1. 選取 **[!UICONTROL 儲存並關閉]** 以儲存組態並結束對話方塊。
 
 1. 設定雲端服務 [!DNL reCAPTCHA Enterprise].
 
    1. 在您的Experience Manager編寫執行個體上，前往 ![tools-1](assets/tools-1.png) > **[!UICONTROL Cloud Service]**.
-   1. 點選 **[!UICONTROL reCAPTCHA]**. 「組態」頁面隨即開啟。 選取您建立的設定容器並點選 **[!UICONTROL 建立]**.
+   1. 選取 **[!UICONTROL reCAPTCHA]**. 「組態」頁面隨即開啟。 選取您建立的設定容器，然後選取 **[!UICONTROL 建立]**.
    1. 選擇版本為 [!DNL reCAPTCHA Enterprise] 並指定reCAPTCHA Enterprise服務的名稱、專案ID、網站金鑰和API金鑰（在步驟2中取得）。
    1. 選取金鑰型別，金鑰型別應與您在下列位置設定的網站金鑰相同： [Google雲端專案](https://cloud.google.com/recaptcha-enterprise/docs/set-up-non-google-cloud-environments-api-keys#before-you-begin)例如， **核取方塊網站索引鍵** 或 **以分數為基礎的網站金鑰**.
    1. 指定 [臨界值分數在0到1的範圍內](https://cloud.google.com/recaptcha-enterprise/docs/interpret-assessment#interpret_scores). 分數大於或等於臨界值分數會識別人類互動，否則會被視為機器人互動。
-   1. 點選 **[!UICONTROL 建立]** 以建立雲端服務設定。
+   1. 選取 **[!UICONTROL 建立]** 以建立雲端服務設定。
 
 <!--
-    1. In the Edit Component dialog, specify the name, project ID, site key, API key (obtained in steps 2 and 3), select the key type, and enter the threshold score. Tap **[!UICONTROL Save Settings]** and then tap **[!UICONTROL OK]** to complete the configuration.
+    1. In the Edit Component dialog, specify the name, project ID, site key, API key (obtained in steps 2 and 3), select the key type, and enter the threshold score. Select **[!UICONTROL Save Settings]** and then select **[!UICONTROL OK]** to complete the configuration.
 -->
 
 reCAPTCHA Enterprise服務啟用後，就可在調適型表單中使用。 另請參閱 [在最適化表單中使用驗證碼](#using-reCAPTCHA).
@@ -83,16 +83,16 @@ reCAPTCHA Enterprise服務啟用後，就可在調適型表單中使用。 另�
 1. 建立雲端服務的設定容器。
    1. 前往&#x200B;**[!UICONTROL 工具 > 一般 > 設定瀏覽器]**。
    1. 選取資料夾或建立資料夾，然後使用下列步驟啟用雲端設定的資料夾：
-      1. 在設定瀏覽器中，選取資料夾並點選 **[!UICONTROL 屬性]**.
+      1. 在組態瀏覽器中，選取資料夾並選取 **[!UICONTROL 屬性]**.
       1. 在組態內容對話方塊中，啟用 **[!UICONTROL 雲端設定]**.
-      1. 點選&#x200B;**[!UICONTROL 儲存並關閉]**&#x200B;以儲存設定並退出對話框。
+      1. 選取 **[!UICONTROL 儲存並關閉]** 以儲存組態並結束對話方塊。
 
 1. 設定reCAPTCHA v2的雲端服務。
 
    1. 在您的AEM編寫執行個體上，前往 ![tools-1](assets/tools-1.png) > **Cloud Service**.
-   1. 點選 **[!UICONTROL reCAPTCHA]**. 「組態」頁面隨即開啟。 選取您建立的設定容器並點選 **[!UICONTROL 建立]**.
-   1. 選擇版本為 [!DNL reCAPTCHA v2] ，指定reCAPTCHA服務的名稱、網站金鑰和秘密金鑰（在步驟1中取得）並點選 **[!UICONTROL 建立]** 以建立雲端服務設定。
-   1. 在「編輯元件」對話方塊中，指定在步驟1中取得的網站和秘密金鑰。 點選 **[!UICONTROL 儲存設定]** 然後點選 **確定** 以完成設定。
+   1. 選取 **[!UICONTROL reCAPTCHA]**. 「組態」頁面隨即開啟。 選取您建立的設定容器，然後選取 **[!UICONTROL 建立]**.
+   1. 選擇版本為 [!DNL reCAPTCHA v2] ，指定reCAPTCHA服務的名稱、網站金鑰和秘密金鑰（在步驟1取得），然後選取 **[!UICONTROL 建立]** 以建立雲端服務設定。
+   1. 在「編輯元件」對話方塊中，指定在步驟1中取得的網站和秘密金鑰。 選取 **[!UICONTROL 儲存設定]** 然後選取 **確定** 以完成設定。
 
    在設定reCAPTCHA服務後，就可用於調適型表單。 如需詳細資訊，請參閱 [在最適化表單中使用驗證碼](#using-reCAPTCHA).
 
@@ -116,7 +116,7 @@ reCAPTCHA Enterprise服務啟用後，就可在調適型表單中使用。 另�
    >* 不支援在最適化表單中使用多個驗證碼元件。 此外，不建議在標示為延遲載入的面板或片段中使用驗證碼。
    >* reCaptcha有時效性，大約會在幾分鐘後過期。 因此，建議將驗證碼元件放在最適化表單中的提交按鈕之前。
 
-1. 選取您新增的驗證碼元件，然後點選 ![cmppr](assets/cmppr.png) 以編輯其屬性。
+1. 選取您新增的驗證碼元件，然後選取 ![cmppr](assets/cmppr.png) 以編輯其屬性。
 1. 指定驗證碼介面工具集的標題。 預設值為 **驗證碼**. 選取 **隱藏標題** 如果您不想顯示標題。
 1. 從 **驗證碼服務** 下拉式清單，選取 **reCAPTCHA** 以啟用reCAPTCHA服務（若您已依照中的說明進行設定） [Google的reCAPTCHA服務](#google-reCAPTCHA).
 1. 從「設定」下拉式清單中選取設定 **reCAPTCHA Enterprise** 或 **reCAPTCHA v2**
@@ -219,11 +219,11 @@ reCAPTCHA Enterprise服務啟用後，就可在調適型表單中使用。 另�
 
 ### 根據規則顯示或隱藏驗證碼元件 {#show-hide-captcha}
 
-您可以根據在最適化表單中元件套用的規則，選擇顯示或隱藏驗證碼元件。 點選元件，選取 ![編輯規則](assets/edit-rules-icon.svg)，然後點選 **[!UICONTROL 建立]** 以建立規則。 如需建立規則的詳細資訊，請參閱 [規則編輯器](rule-editor.md).
+您可以根據在最適化表單中元件套用的規則，選擇顯示或隱藏驗證碼元件。 選取元件，選取 ![編輯規則](assets/edit-rules-icon.svg)，並選取 **[!UICONTROL 建立]** 以建立規則。 如需建立規則的詳細資訊，請參閱 [規則編輯器](rule-editor.md).
 
 例如，只有在表單中的「貨幣值」欄位的值超過25000時，CAPTCHA元件才會顯示在調適型表單中。
 
-點選 **[!UICONTROL 貨幣值]** 欄位建立下列規則：
+選取 **[!UICONTROL 貨幣值]** 欄位建立下列規則：
 
 ![顯示或隱藏規則](assets/rules-show-hide-captcha.png)
 
@@ -239,17 +239,17 @@ reCAPTCHA Enterprise服務啟用後，就可在調適型表單中使用。 另�
 
 若要在提交最適化表單時自動驗證碼：
 
-1. 點選驗證碼元件並選取 ![cmppr](assets/configure-icon.svg) 以檢視元件屬性。
+1. 選取驗證碼元件並選取 ![cmppr](assets/configure-icon.svg) 以檢視元件屬性。
 1. 在 **[!UICONTROL 驗證碼驗證]** 區段，選取 **[!UICONTROL 在表單提交時進行驗證碼驗證]**.
-1. 點選 ![完成](assets/save_icon.svg) 以儲存元件屬性。
+1. 選取 ![完成](assets/save_icon.svg) 以儲存元件屬性。
 
 #### 驗證使用者動作和條件的驗證碼 {#validate-captcha-user-action}
 
 若要根據條件和使用者動作來驗證驗證碼：
 
-1. 點選驗證碼元件並選取 ![cmppr](assets/configure-icon.svg) 以檢視元件屬性。
+1. 選取驗證碼元件並選取 ![cmppr](assets/configure-icon.svg) 以檢視元件屬性。
 1. 在 **[!UICONTROL 驗證碼驗證]** 區段，選取 **[!UICONTROL 使用者動作時進行驗證碼驗證]**.
-1. 點選 ![完成](assets/save_icon.svg) 以儲存元件屬性。
+1. 選取 ![完成](assets/save_icon.svg) 以儲存元件屬性。
 
 [!DNL Experience Manager Forms] 提供 `ValidateCAPTCHA` 使用預先定義條件進行驗證碼驗證的API。 您可以使用自訂提交動作或在調適型表單中定義元件規則來叫用API。
 
@@ -275,7 +275,7 @@ if (slingRequest.getParameter("numericbox1614079614831").length() >= 5) {
 
 1. 新增指令碼，其中包括 `ValidateCAPTCHA` 自訂提交動作的API。 如需自訂提交動作的詳細資訊，請參閱 [建立最適化Forms的自訂提交動作](custom-submit-action-form.md).
 1. 從中選擇自訂提交動作的名稱 **[!UICONTROL 提交動作]** 中的下拉式清單 **[!UICONTROL 提交]** 最適化表單的屬性。
-1. 點選 **[!UICONTROL 提交]**. 系統會根據中定義的條件來驗證驗證碼 `ValidateCAPTCHA` 自訂提交動作的API。
+1. 選取 **[!UICONTROL 提交]**. 系統會根據中定義的條件來驗證驗證碼 `ValidateCAPTCHA` 自訂提交動作的API。
 
 **選項2：使用 [!DNL Experience Manager Forms] ValidateCAPTCHA API可在提交表單前，在使用者動作時驗證驗證碼**
 
@@ -285,7 +285,7 @@ if (slingRequest.getParameter("numericbox1614079614831").length() >= 5) {
 
 下圖說明如何在 **[!UICONTROL 驗證碼驗證]** 按鈕：
 
-![進行驗證碼驗證](assets/captcha-validation1.gif)
+![驗證碼驗證](assets/captcha-validation1.gif)
 
 您可以叫用包含的自訂servlet `ValidateCAPTCHA` API使用規則編輯器，並根據驗證結果啟用或停用最適化表單的提交按鈕。
 

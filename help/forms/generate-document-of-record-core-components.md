@@ -2,10 +2,10 @@
 title: 如何產生最適化Forms的記錄檔案？
 description: 瞭解如何為最適化Forms核心元件的記錄檔案(DoR)產生範本。
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '3106'
-ht-degree: 2%
+source-wordcount: '3108'
+ht-degree: 1%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 2%
 
 填寫或提交表單時，您可以以列印或檔案格式來保留表單的記錄。 此記錄稱為記錄檔案(DoR)。 這是一份容易列印的已提交表格。 您也可以參考記錄檔案以瞭解客戶在稍後日期填寫的資訊，或使用「記錄檔案」以「PDF格式」將表單與內容一起封存。
 
-![記錄文件](assets/document-of-record.png)
+![記錄檔案](assets/document-of-record.png)
 
 為了建立記錄檔案，會將XFA或Acroform型範本與透過最適化表單收集的資料合併。 您可以自動或依需求產生記錄檔案。 隨選選項可讓您指定自訂XFA或Acroform型範本，以提供記錄檔案的自訂外觀。
 
@@ -39,7 +39,7 @@ ht-degree: 2%
 
 1. 在Experience Manager編寫執行個體中，按一下 **[!UICONTROL Forms]** > **[!UICONTROL Forms與檔案].**
 1. 選取表單或建立最適化表單，然後按一下 **[!UICONTROL 屬性]**.
-1. 在「屬性」視窗中，點選「 」 **[!UICONTROL 表單模型]**.
+1. 在「屬性」視窗中，選取 **[!UICONTROL 表單模型]**.
 1. 在  **[!UICONTROL 表單模型]** 標籤，在 **[!UICONTROL 選取自]** 下拉式清單，選取 **[!UICONTROL 表單資料模型]**， **[!UICONTROL 結構描述]** 或 **[!UICONTROL 無]**. 您也可以在建立表單時選取表單模型。
 1. 在「表單模型」標籤的「記錄檔案範本組態」區段中，選取 **建立表單範本為記錄檔案範本的關聯**. 選取此選項時，會顯示電腦上可用的所有XFA範本（XDP檔案）。 選取適當的檔案。 此外，請確定最適化表單和選取的XFA範本（XDP檔案）使用的是相同結構描述（資料結構描述）。
 1. 按一下 **[!UICONTROL 完成。]**
@@ -52,7 +52,7 @@ ht-degree: 2%
 
 1. 在Experience Manager編寫執行個體中，按一下 **[!UICONTROL Forms]** > **[!UICONTROL Forms與檔案].**
 1. 選擇表單或 **[!UICONTROL 建立最適化表單]**，然後按一下 **[!UICONTROL 屬性]**.
-1. 在「屬性」視窗中，點選「 」 **[!UICONTROL 表單模型]**.
+1. 在「屬性」視窗中，選取 **[!UICONTROL 表單模型]**.
 1. 在  **[!UICONTROL 表單模型]** 標籤，在 **[!UICONTROL 選取自]** 下拉式清單，選取 **[!UICONTROL 表單資料模型]**， **[!UICONTROL 結構描述]** 或 **[!UICONTROL 無]**. 您也可以在建立表單時選取表單模型。
 1. 在「表單模型」標籤的「記錄檔案範本組態」區段中，選取 **建立表單範本為記錄檔案範本的關聯**. 選取此選項時，會顯示電腦上可用的所有AcrobatPDF(Acroform)。 選取您要使用的Acroform。
 1. 按一下 **[!UICONTROL 完成。]**
@@ -73,7 +73,7 @@ ht-degree: 2%
 
 1. 在Experience Manager編寫執行個體中，按一下 **[!UICONTROL Forms]** > **[!UICONTROL Forms與檔案].**
 1. 選取表單或建立最適化表單，然後按一下 **[!UICONTROL 屬性]**.
-1. 在「屬性」視窗中，點選「 」 **[!UICONTROL 表單模型]**.
+1. 在「屬性」視窗中，選取 **[!UICONTROL 表單模型]**.
 1. 在  **[!UICONTROL 表單模型]** 標籤，在 **[!UICONTROL 選取自]** 下拉式清單，選取 **[!UICONTROL 表單資料模型]**， **[!UICONTROL 結構描述]** 或 **[!UICONTROL 無]**. 您也可以在建立表單時選取表單模型。
 1. 在「表單模型」標籤的「記錄檔案範本組態」區段中，選取 **產生記錄檔案**.
 1. 按一下 **[!UICONTROL 完成。]**
@@ -130,7 +130,7 @@ The form developer binds Adaptive Forms fields with corresponding Document of Re
 
 現在，當提交最適化表單時，會產生更新的記錄檔案。
 
-![已更新-](assets/we-retail-new-invoice-sent-to-customer.png)
+![已更新 — ](assets/we-retail-new-invoice-sent-to-customer.png)
 
 ## 使用記錄檔案時的主要考量事項 {#key-considerations-when-working-with-document-of-record}
 
@@ -317,12 +317,12 @@ When you select a form model, configure Document of Record using options availab
 
 若要將您在「記錄檔案」標籤中輸入的品牌資訊當地語系化，請確定已正確設定瀏覽器的地區設定。 若要自訂記錄檔案的品牌資訊，請執行下列步驟：
 
-1. 在記錄檔案中選取面板（根面板），然後點選 ![設定](assets/configure.png).
-1. 點選 ![dortab](assets/dortab.png). 記錄檔案索引標籤隨即顯示。
+1. 在記錄檔案中選取面板（根面板），然後選取 ![設定](assets/configure.png).
+1. 選取 ![dortab](assets/dortab.png). 記錄檔案索引標籤隨即顯示。
 1. 選取呈現記錄檔案的預設範本或自訂範本。 如果您選取預設範本，記錄檔案的縮圖預覽會顯示在「範本」下拉式清單下方。
-1. 根據您選取預設或自訂範本，以下部分或全部屬性會出現在「記錄檔案」標籤中。 指定以下提及的屬性以定義記錄檔案的外觀：
+1. 根據您選取預設或自訂範本，以下某些屬性或所有屬性都會顯示在「記錄檔案」標籤中。 指定以下提及的屬性以定義記錄檔案的外觀：
 
-   1. **基本屬性**:
+   1. **基本屬性**：
       * **範本**：如果您想要選取自訂範本，請瀏覽並在上選取XDP [!DNL AEM Forms] 伺服器。 如果您想使用您未提供的範本 [!DNL AEM Forms] 伺服器，您應該先將XDP上傳至 [!DNL AEM Forms] 伺服器。
       * **輔色**：在記錄檔案PDF中呈現標頭文字和分隔線的色彩。
       * **字型系列**：記錄檔案PDF中的文字字型系列。
@@ -335,7 +335,7 @@ When you select a form model, configure Document of Record using options availab
 
 
 
-   1. **表單欄位屬性**:
+   1. **表單欄位屬性**：
       * **對於核取方塊與選項按鈕元件，僅顯示選取的值**：設定屬性時，只會顯示中核取方塊和選項按鈕的選取值 [!UICONTROL 記錄檔案].
       * **多個值的分隔符號**：您可以選擇任何分隔符號（例如逗號或分行符號）來顯示多個值。
       * **選項對齊方式**：您可以選取所需的對齊方式（水準、垂直、與調適型表單相同），以設定欄位的對齊方式，例如要顯示的核取方塊或選項按鈕 [!UICONTROL 記錄檔案]. 依預設，會為中的欄位設定垂直對齊方式 [!UICONTROL 記錄檔案]. 從設定屬性 [!UICONTROL 表單欄位屬性] 的URL會覆寫 [!UICONTROL 專案對齊方式] 最適化表單上的欄位。 如果是，您選取 [!UICONTROL 與自適應表單相同] 選項，最適化表單製作例項中所設定的對齊方式用於 [!UICONTROL 記錄檔案] 欄位。
@@ -343,7 +343,7 @@ When you select a form model, configure Document of Record using options availab
 
 
 
-   1. **主版頁面屬性**:
+   1. **主版頁面屬性**：
       * **標誌影像**：您可以選擇使用最適化表單中的標誌影像、從DAM中選擇影像，或從您的電腦上傳影像。
       * **表單標題**：記錄檔案的標題。
       * **頁首文字**：在記錄檔案標題區段顯示的文字。
@@ -369,7 +369,7 @@ When you select a form model, configure Document of Record using options availab
    </proto>
    ```
 
-1. 若要儲存品牌變更，請點選 **[!UICONTROL 完成]**.
+1. 若要儲存品牌變更，請選取 **[!UICONTROL 完成]**.
 
 
 

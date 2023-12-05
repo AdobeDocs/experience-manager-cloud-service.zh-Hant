@@ -3,10 +3,10 @@ title: 管理管道
 description: 了解如何管理現有管道，包括將其編輯、執行和刪除。
 index: true
 exl-id: 4aff5a84-134a-43fa-8de8-8d564f4edd16
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '938'
-ht-degree: 69%
+source-wordcount: '928'
+ht-degree: 66%
 
 ---
 
@@ -43,7 +43,7 @@ ht-degree: 69%
 
 1. 從 **計畫總覽** 頁面，選取 **管道** 標籤以切換至 **管道** 視窗。
 
-1. 在這裡，您可以看到方案所有管道的清單，以及啟動和停止管道執行，就像在&#x200B;**管道卡**&#x200B;中一樣。
+1. 在這裡，您可以看到計畫的所有管道清單，並像在中一樣開始和停止管道執行 **管道卡**.
 
 如果管道正在執行，將滑鼠懸停在其&#x200B;**狀態**&#x200B;欄上將顯示有關執行的詳細資訊。
 

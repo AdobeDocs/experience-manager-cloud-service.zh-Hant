@@ -2,9 +2,9 @@
 title: 如何在Experience Manager Sites頁面上建立Forms入口網站？
 description: 瞭解如何在AEM Sites頁面上建立Forms入口網站，並使用現成可用的核心元件。
 exl-id: 13cfe3ba-2e85-46bf-a029-2673de69c626
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1840'
+source-wordcount: '1785'
 ht-degree: 4%
 
 ---
@@ -89,7 +89,7 @@ AEM Forms提供下列立即可用的入口網站元件：
 在執行這些步驟之前，請確定您擁有Azure儲存體帳戶和存取金鑰，以授權存取 [!DNL Azure] 儲存體帳戶。
 
 1. 瀏覽至 **[!UICONTROL 工具]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Azure儲存體]**.
-1. 選取資料夾以建立設定並點選 **[!UICONTROL 建立]**.
+1. 選取資料夾以建立設定，然後選取 **[!UICONTROL 建立]**.
 1. 在中指定設定的標題 **[!UICONTROL 標題]** 欄位。
 1. 指定 [!DNL Azure] 中的儲存體帳戶 **[!UICONTROL Azure儲存體帳戶]** 欄位。
 
@@ -100,7 +100,7 @@ AEM Forms提供下列立即可用的入口網站元件：
 1. 瀏覽至 **[!UICONTROL 工具]** > **[!UICONTROL Forms]** > **[!UICONTROL 統一的儲存聯結器]**.
 1. 在 **[!UICONTROL Forms入口網站]** 區段，選取 **[!UICONTROL Azure]** 從 **[!UICONTROL 儲存]** 下拉式清單。
 1. 指定 [Azure儲存體設定的設定路徑](#create-azure-storage-configuration) 在 **[!UICONTROL 儲存設定路徑]** 欄位。
-1. 點選 **[!UICONTROL 發佈]** 然後點選 **[!UICONTROL 儲存]** 以儲存組態。
+1. 選取 **[!UICONTROL 發佈]** 然後選取 **[!UICONTROL 儲存]** 以儲存組態。
 
 ## 啟用Forms Portal元件 {#enable-forms-portal-components}
 
@@ -112,11 +112,11 @@ AEM Forms提供下列立即可用的入口網站元件：
 
 您可以透過新增和設定入口網站元件，在使用AEM編寫的網站上建立和自訂Forms入口網站。 確保 [元件已啟用](#enable-forms-portal-components) 在Forms入口網站中使用它們之前。
 
-若要新增元件，請將元件從「元件」窗格拖放至頁面上的版面容器中，或點選版面容器上的新增圖示，然後從新增元件 [!UICONTROL 插入新元件] 對話方塊。
+若要新增元件，請將元件從「元件」窗格拖放至頁面上的配置容器中，或選取配置容器上的新增圖示，然後從以下位置新增元件： [!UICONTROL 插入新元件] 對話方塊。
 
 ### 設定草稿和提交元件 {#configure-drafts-submissions-component}
 
-草稿和提交元件會顯示儲存為草稿以供稍後完成和提交表單的表單。 若要設定，請點選元件，然後點選 ![「設定」圖示](assets/configure_icon.png). 在 [!UICONTROL 草稿與提交] 對話方塊，指定標題以指示表單清單為草稿或已提交表單。 同時選取元件是否應該以卡片或清單格式列出草稿表單或已提交的表單。
+草稿和提交元件會顯示儲存為草稿以供稍後完成和提交表單的表單。 若要設定，請選取元件，然後選取 ![「設定」圖示](assets/configure_icon.png). 在 [!UICONTROL 草稿與提交] 對話方塊，指定標題以指示表單清單為草稿或已提交表單。 同時選取元件是否應該以卡片或清單格式列出草稿表單或已提交的表單。
 
 ![草稿圖示](assets/drafts-component.png)
 
@@ -128,7 +128,7 @@ AEM Forms提供下列立即可用的入口網站元件：
 
 ![「搜尋並製表器」圖示](assets/search-and-lister-component.png)
 
-若要設定，請點選元件，然後點選 ![「設定」圖示](assets/configure_icon.png). 此 [!UICONTROL 搜尋和製表人] 對話方塊開啟。
+若要設定，請選取元件，然後選取 ![「設定」圖示](assets/configure_icon.png). 此 [!UICONTROL 搜尋和製表人] 對話方塊開啟。
 
 1. 在 [!UICONTROL 顯示] 索引標籤中，設定下列專案：
    * 在 **[!UICONTROL 標題]**，指定「搜尋和清單程式」元件的標題。 指示性標題可讓使用者在表單清單中執行快速搜尋。
@@ -140,7 +140,7 @@ AEM Forms提供下列立即可用的入口網站元件：
 
 ### 設定連結元件 {#configure-link-component}
 
-連結元件可讓您在頁面上提供最適化表單的連結。 若要設定，請點選元件，然後點選 ![「設定」圖示](assets/configure_icon.png). 此 [!UICONTROL 編輯連結元件] 對話方塊開啟。
+連結元件可讓您在頁面上提供最適化表單的連結。 若要設定，請選取元件，然後選取 ![「設定」圖示](assets/configure_icon.png). 此 [!UICONTROL 編輯連結元件] 對話方塊開啟。
 
 1. 在 [!UICONTROL 顯示] 標籤中，提供連結標題和工具提示，以方便識別連結所代表的表單。
 1. 在 [!UICONTROL 資產資訊] 索引標籤，指定儲存資產的存放庫路徑。
@@ -151,13 +151,14 @@ AEM Forms提供下列立即可用的入口網站元件：
 您可以將設定為僅在所有收件者完成簽署儀式時提交最適化表單。 請依照下列步驟，使用Adobe Sign進行設定。
 
 1. 在作者執行個體中，以編輯模式開啟調適型表單。
-1. 從左窗格，點選「屬性」圖示並展開 **[!UICONTROL 電子簽章]** 選項。
+1. 從左窗格中，選取「屬性」圖示並展開 **[!UICONTROL 電子簽章]** 選項。
 1. 選取 **[!UICONTROL 啟用Adobe Sign]**. 會顯示各種組態選項。
 1. 在 [!UICONTROL 提交表單] 區段，選取 **[!UICONTROL 在每個收件者完成簽署儀式後]** 選項來設定提交表單動作，其中表單會先傳送給所有收件者以供簽署。 所有收件者簽署表單後，才提交表單。
 
 ## 將最適化Forms另存為草稿 {#save-adaptive-forms-as-drafts}
 
 您可以將表單儲存為草稿，以便稍後完成。 有兩種方式可將表單儲存為草稿：
+
 * 在表單元件上建立「儲存表單」規則，例如按鈕。 按一下按鈕時，規則會觸發，而表單會儲存草稿。
 * 啟用「自動儲存」功能，依指定的事件或設定的時間間隔儲存表單。
 
@@ -166,19 +167,19 @@ AEM Forms提供下列立即可用的入口網站元件：
 若要在表單元件（例如按鈕）上建立「儲存表單」規則，請遵循下列步驟：
 
 1. 在作者執行個體中，以編輯模式開啟調適型表單。
-1. 從左窗格，點選 ![元件圖示](assets/components_icon.png) 並拖曳 [!UICONTROL 按鈕] 元件至表單。
-1. 點選 [!UICONTROL 按鈕] 元件，然後點選 ![「設定」圖示](assets/configure_icon.png).
-1. 點選 [!UICONTROL 編輯規則] 圖示以開啟規則編輯器。
-1. 點選 **[!UICONTROL 建立]** 以設定及建立規則。
+1. 從左窗格中選取 ![元件圖示](assets/components_icon.png) 並拖曳 [!UICONTROL 按鈕] 元件至表單。
+1. 選取 [!UICONTROL 按鈕] 元件，然後選取 ![「設定」圖示](assets/configure_icon.png).
+1. 選取 [!UICONTROL 編輯規則] 圖示以開啟規則編輯器。
+1. 選取 **[!UICONTROL 建立]** 以設定及建立規則。
 1. 在 [!UICONTROL 時間] 區段中，選取「已點按」，然後在 [!UICONTROL 則] 選取「儲存表單」選項。
-1. 點選 **[!UICONTROL 完成]** 以儲存規則。
+1. 選取 **[!UICONTROL 完成]** 以儲存規則。
 
 ### 啟用自動儲存 {#enable-auto-save}
 
 您可以為最適化表單設定自動儲存功能，如下所示：
 
 1. 在作者執行個體中，以編輯模式開啟調適型表單。
-1. 從左窗格，點選 ![屬性圖示](assets/configure_icon.png) 並展開 [!UICONTROL 自動儲存] 選項。
+1. 從左窗格中，選取 ![屬性圖示](assets/configure_icon.png) 並展開 [!UICONTROL 自動儲存] 選項。
 1. 選取 **[!UICONTROL 啟用]** 核取方塊以啟用表單的自動儲存。 您可以設定下列專案：
 * 根據預設， [!UICONTROL 最適化表單事件] 設為「true」，表示表單會在每個事件後自動儲存。
 * 在 [!UICONTROL 觸發]，設定以根據事件發生或特定時間間隔後觸發自動儲存。

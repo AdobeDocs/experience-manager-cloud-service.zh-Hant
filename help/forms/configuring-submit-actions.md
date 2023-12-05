@@ -1,11 +1,11 @@
 ---
-title: 如何為最適化表單設定提交動作?
+title: 如何設定最適化表單的提交動作？
 description: 最適化表單提供多個提交動作。提交動作會定義提交之後處理最適化表單的方式。您可以使用內建的提交動作或建立自己的動作。
 exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
-source-git-commit: 0e6c4e6745a03e0d48c535e2e113d2a7e5ff4e78
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '3859'
-ht-degree: 79%
+source-wordcount: '3805'
+ht-degree: 78%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 79%
 | AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html) |
 | AEM as a Cloud Service  | 本文章 |
 
-**套用至**：✔️立最適化表單基礎元件。 ❌ [最適化表單核心元件](/help/forms/configure-submit-actions-core-components.md). Adobe 建議使用核心元件[將最適化表單新增到 AEM Sites 頁面](create-or-add-an-adaptive-form-to-aem-sites-page.md)或[建立獨立的最適化表單](creating-adaptive-form-core-components.md)。
+**套用至**：✔️立最適化表單基礎元件。 ❌ [最適化表單核心元件](/help/forms/configure-submit-actions-core-components.md). Adobe建議使用核心元件： [將最適化Forms新增至AEM Sites頁面](create-or-add-an-adaptive-form-to-aem-sites-page.md) 或至 [建立獨立的最適化Forms](creating-adaptive-form-core-components.md).
 
 當使用者按一下 **[!UICONTROL 提交]** 最適化表單上的按鈕。 Formsas a Cloud Service提供下列立即可用的提交動作。
 
@@ -170,7 +170,7 @@ For more information about the Forms Portal and Submit Action, see [Drafts and s
 
 ## 提交到 SharePoint {#submit-to-sharedrive}
 
-「**[!UICONTROL 提交到 SharePoint]**」提交動作會將最適化表單與 Microsoft® SharePoint 儲存空間建立連結。您可以將表單資料檔案、附件或記錄文件提交到連結的 Microsoft® Sharepoint 儲存空間。
+「**[!UICONTROL 提交到 SharePoint]**」提交動作會將最適化表單與 Microsoft® SharePoint 儲存空間建立連結。您可以將表單資料檔案、附件或記錄檔案提交至連線的Microsoft® Sharepoint儲存體。
 
 使用提交至SharePoint，您可以：
 * [將最適化表單連線至SharePoint檔案庫](#connect-af-sharepoint-doc-library)
@@ -264,7 +264,7 @@ For more information about the Forms Portal and Submit Action, see [Drafts and s
 
 1. 按一下「**[!UICONTROL 連結]**」。連結成功後，就會顯示 `Connection Successful` 訊息。
 1. 選取 **[!UICONTROL SharePoint網站]** 和 **[!UICONTROL SharePoint清單]** 下拉式清單中的。
-1. 點選 **[!UICONTROL 建立]** 以建立Microsoft® SharePointList的雲端設定。
+1. 選取 **[!UICONTROL 建立]** 以建立Microsoft® SharePointList的雲端設定。
 
 
 #### 在最適化表單中使用表單資料模型提交 {#use-submit-using-fdm}

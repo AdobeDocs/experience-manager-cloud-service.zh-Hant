@@ -3,10 +3,10 @@ title: 將 Dispatcher 設定從 AMS 移轉到 AEM as a Cloud Service
 description: 將 Dispatcher 設定從 AMS 移轉到 AEM as a Cloud Service
 feature: Dispatcher
 exl-id: ff7397dd-b6e1-4d08-8e2d-d613af6b81b3
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1455'
-ht-degree: 16%
+source-wordcount: '1459'
+ht-degree: 7%
 
 ---
 
@@ -52,8 +52,7 @@ Managed Services和AEMas a Cloud Service中的Dispatcher設定結構有所差異
 </VirtualHost>
 ```
 
-
-請移除或加上註解。系統將不會處理這些區段中的陳述式，但如果您保留這些陳述式，您最終可能仍會編輯，但將徒勞無功而倍感困惑。
+請移除或加上註解。 系統將不會處理這些區段中的陳述式，但如果您保留這些陳述式，您最終可能仍會編輯它們，但將徒勞無功而倍感困惑。
 
 ### 檢查重新寫入
 
@@ -131,7 +130,7 @@ $ validator httpd .
 $include "../cache/default_invalidate.any"
 ```
 
-### 檢查用戶端標頭
+### 檢查使用者端標頭
 
 輸入目錄 `conf.dispatcher.d/clientheaders`.
 
@@ -232,7 +231,7 @@ $ validator dispatcher .
 
 如果您看見有關未定義變數「`PUBLISH_DOCROOT`」的錯誤，請將其重新命名為「`DOCROOT`」。
 
-如果看見其他錯誤，請參考驗證器工具文件的疑難排解章節。
+如需其他每個錯誤的相關資訊，請參閱驗證器工具檔案的疑難排解一節。
 
 ### 使用本機部署測試您的設定（需要安裝Docker）
 
@@ -258,6 +257,6 @@ $ docker_run.sh out docker.for.mac.localhost:4503 8080
 
 ### 使用您的新Dispatcher設定
 
-恭喜！如果驗證器不再回報任何問題，且 Docker 容器啟動時未出現任何失敗情況或警告，即可將您的設定移至 Git 存放庫的 `dispatcher/src` 子目錄。
+恭喜！如果驗證器不再回報任何問題，且Docker容器啟動時未出現任何失敗情況或警告，即可將您的設定移至 `dispatcher/src` Git存放庫的子目錄。
 
 **使用AMS Dispatcher設定版本1的客戶應聯絡客戶支援，協助他們從版本1移轉至版本2，以便遵循上述指示。**

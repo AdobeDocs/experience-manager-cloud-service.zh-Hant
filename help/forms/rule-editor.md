@@ -5,9 +5,9 @@ feature: Adaptive Forms
 role: User
 level: Beginner, Intermediate
 exl-id: 6fd38e9e-435e-415f-83f6-3be177738c00
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '6439'
+source-wordcount: '6457'
 ht-degree: 1%
 
 ---
@@ -28,8 +28,8 @@ ht-degree: 1%
 規則編輯器提供直覺式且簡化的使用者介面來撰寫規則。 規則編輯器為所有使用者提供一個視覺化編輯器。<!-- In addition, only for forms power users, rule editor provides a code editor to write rules and scripts. --> 您可使用規則對最適化表單物件執行的部分關鍵動作如下：
 
 * 顯示或隱藏物件
-* 啟用或停用物件
-* 設定物件的值
+* 啟用或禁用物件
+* 設置物件的值
 * 驗證物件的值
 * 執行函數以計算物件的值
 * 啟動表單資料模型服務並執行操作
@@ -41,9 +41,9 @@ ht-degree: 1%
 
 ## 瞭解規則 {#understanding-a-rule}
 
-規則是動作和條件的組合。 在規則編輯器中，動作包括隱藏、顯示、啟用、停用或計算表單中物件值等活動。 條件是對表單物件的狀態、值或屬性執行檢查和作業來評估的Boolean運算式。 動作會根據值( `True` 或 `False`)傳回的結果。
+規則是動作和條件的組合。 在 規則 編輯者 中，操作包括隱藏、顯示、啟用、禁用或計算表單中物件的值等活動。 條件是對表單物件的狀態、值或屬性執行檢查和作業來評估的Boolean運算式。 根據評估條件返回的值 （ `True` 或 `False` ） 執行操作。
 
-規則編輯器提供一組預先定義的規則型別（例如「何時」、「顯示」、「隱藏」、「啟用」、「停用」、「設定值」和「驗證」）來協助您編寫規則。 每種規則類型可讓您定義規則的條件和動作。 本檔案將詳細說明每種規則型別。
+規則編輯器提供一組預先定義的規則型別（例如「何時」、「顯示」、「隱藏」、「啟用」、「停用」、「設定值」和「驗證」）來協助您編寫規則。 每種規則型別都可讓您定義規則中的條件和動作。 本檔案將詳細說明每種規則型別。
 
 規則通常會遵循下列其中一種建構：
 
@@ -53,11 +53,11 @@ ht-degree: 1%
 
 **操作條件** 在此構造中，規則首先定義要觸發的操作，然後是評估條件。 此構造的另一個變體是操作-條件-備用操作，它還定義了在條件返回 False 時要觸發的備用操作。
 
-顯示、隱藏、啟用、禁用、設置值和驗證規則類型規則 編輯者強制實施操作條件規則構造。 預設情況下，顯示的替代操作為「隱藏」，「啟用」的替代操作為「禁用」，反之亦然。 您無法更改預設的替代操作。
+規則編輯器中的「顯示」、「隱藏」、「啟用」、「停用」、「設定值」和「驗證」規則型別會強制實施動作條件規則結構。 依預設，「顯示」的替代動作是「隱藏」，而「啟用」的替代動作是「停用」，反之亦然。 您無法變更預設的替代動作。
 
 >[!NOTE]
 >
->可用的規則類型（包括您在規則 編輯者中定義的條件和操作）還取決於要在其上創建規則的表單物件的類型。 規則 編輯者僅顯示用於編寫特定表單物件類型的條件和動作陳述式的有效規則類型和選項。 例如，您看不到面板物件的「驗證」、「設置值」、「啟用」和「禁用」規則類型。
+>可用的規則型別（包括您在規則編輯器中定義的條件和動作）也取決於您建立規則的表單物件型別。 規則編輯器僅顯示有效的規則型別和選項，用於寫入特定表單物件型別的條件和動作陳述式。 例如，您看不到面板物件的驗證、設定值、啟用和停用規則型別。
 
 如需規則編輯器中可用規則型別的詳細資訊，請參閱 [規則編輯器中的可用規則型別](rule-editor.md#p-available-rule-types-in-rule-editor-p).
 
@@ -89,7 +89,7 @@ ht-degree: 1%
 * **結尾為**
 * **包含**
 * **為空**
-* **不為空**
+* **不是空的**
 * **已選取：** 當使用者為核取方塊、下拉式清單單選按鈕選取特定選項時，傳回true。
 * **已初始化（事件）：** 當表單物件在瀏覽器中呈現時傳回true。
 * **已變更（事件）：** 當使用者變更表單物件的輸入值或選取的選項時，傳回true。
@@ -106,7 +106,7 @@ ht-degree: 1%
 
 此 **[!UICONTROL 時間]** 規則型別會遵循 **condition-action-alternate action** 規則建構，或有時僅 **condition-action** 建構。 在此規則型別中，您必須先指定評估條件，接著在條件符合時觸發動作( `True`)。 使用When規則型別時，您可以使用多個AND和OR運運算元來建立 [巢狀運算式](#nestedexpressions).
 
-使用When規則型別，您可以評估表單物件的條件，並對一或多個物件執行動作。
+使用 When 規則 類型，您可以評估表單物件的條件並對一個或多個物件執行操作。
 
 簡而言之，典型的 When 規則 結構如下：
 
@@ -128,7 +128,7 @@ _
 
 ![多值顯示選項](assets/multivaluefcdisplaysoptions.png)
 
-撰寫When規則時，您可以觸發「清除值」動作。 清除值動作會清除指定物件的值。 在When陳述式中將的清除值作為選項可讓您建立具有多個欄位的複雜條件。
+撰寫When規則時，您可以觸發「清除值」動作。 清除值動作會清除指定物件的值。 在 When 語句中使用「清除值」選項可以創建具有多個欄位的複雜條件。
 
 ![清除值](assets/clearvalueof.png)
 
@@ -140,7 +140,7 @@ _
 
 **[!UICONTROL 停用]** 停用指定的物件。
 
-**[!UICONTROL 啟動服務]** 叫用表單資料模型中設定的服務。 選擇「啟動服務」作業時，會出現一個欄位。 點選欄位時，它會顯示您在上所有表單資料模型中設定的所有服務 [!DNL Experience Manager] 執行個體。 在選擇表單資料模型服務時，將顯示更多欄位，您可以在其中將表單物件與指定服務的輸入和輸出參數進行映射。 請參閱有關叫用表單資料模型服務的範例規則。
+**[!UICONTROL 啟動服務]** 叫用表單資料模型中設定的服務。 選擇「啟動服務」作業時，會出現一個欄位。 點選欄位時，它會顯示您在上所有表單資料模型中設定的所有服務 [!DNL Experience Manager] 執行個體。 選擇表單資料模型服務時，會出現更多欄位，您可在其中對應具有指定服務的輸入和輸出引數的表單物件。 請參閱有關叫用表單資料模型服務的範例規則。
 
 除了表單資料模型服務之外，您還可以指定直接的WSDL URL來叫用Web服務。 不過，表單資料模型服務有許多優點，且建議叫用服務的方法。
 
@@ -196,7 +196,7 @@ _
 
 **[!UICONTROL 瀏覽至]** 導覽至其他 <!--Interactive Communications,--> 最適化Forms、影像或檔案片段等其他資產或外部URL。 <!-- For more information, see [Add button to the Interactive Communication](create-interactive-communication.md#addbuttontothewebchannel). -->
 
-### [!UICONTROL 設定下列項目的值: ] {#set-value-of}
+### [!UICONTROL 設定值] {#set-value-of}
 
 此 **[!UICONTROL 設定值]** 規則型別可讓您根據是否滿足指定的條件來設定表單物件的值。 值可以設定為另一個物件的值、常值字串、衍生自數學運算式或函式的值、另一個物件的屬性值，或表單資料模型服務的輸出。 同樣地，您可以檢查元件、字串、屬性或衍生自函式或數學運算式的值的條件。
 
@@ -204,7 +204,11 @@ _
 
 將物件A的值設為：
 
-（字串ABC） OR （物件C的物件屬性X） OR （函式的值） OR （數學運算式的值） OR （資料模型服務或Web服務的輸出值）；
+（字串 ABC）或
+（物件 屬性 物件 C 的 X）或
+（來自函數的值）或
+（值來自數學運算式）或
+（資料模型服務或Web服務的輸出值）;
 
 時間（可選）：
 
@@ -328,13 +332,13 @@ _
 若要啟動規則編輯器使用者介面：
 
 1. 以撰寫模式開啟最適化表單。
-1. 點選您要為其編寫規則的表單物件，然後在「元件工具列」中點選 ![edit-rules](assets/edit-rules-icon.svg). 規則編輯器使用者介面隨即顯示。
+1. 選取您要為其編寫規則的表單物件，然後在元件工具列中選取 ![edit-rules](assets/edit-rules-icon.svg). 規則編輯器使用者介面隨即顯示。
 
    ![create-rules](assets/create-rules.png)
 
    此檢視中會列出所選表單物件上的任何現有規則。 如需有關管理現有規則的資訊，請參閱 [管理規則](rule-editor.md#p-manage-rules-p).
 
-1. 點選 **[!UICONTROL 建立]** 撰寫新規則。 第一次啟動規則編輯器時，規則編輯器使用者介面的視覺化編輯器預設會開啟。
+1. 選取 **[!UICONTROL 建立]** 撰寫新規則。 第一次啟動規則編輯器時，規則編輯器使用者介面的視覺化編輯器預設會開啟。
 
    ![規則編輯器UI](assets/rule-editor-ui.png)
 
@@ -360,7 +364,7 @@ _
 >
 >您可以在Forms「物件」和「函式」標籤中搜尋物件和函式的名稱及標題。
 
-在表單物件的左側樹狀結構中，您可以點選表單物件以顯示套用至每個物件的規則。 您不僅可以瀏覽各種表單物件的規則，也可以在表單物件之間複製 — 貼上規則。 如需詳細資訊，請參閱 [複製貼上規則](rule-editor.md#p-copy-paste-rules-p).
+在表單物件的左側樹狀結構中，您可以選取表單物件，以顯示套用到每個物件的規則。 您不僅可以瀏覽各種表單物件的規則，也可以在表單物件之間複製 — 貼上規則。 如需詳細資訊，請參閱 [複製貼上規則](rule-editor.md#p-copy-paste-rules-p).
 
 ### C.表單物件與功能切換 {#c-form-objects-and-functions-toggle-br}
 
@@ -412,15 +416,15 @@ Users in the forms-power-users group can access code editor. For other users, co
 
 1. 首先，根據使用者為「婚姻狀況」選項按鈕選取的選項，撰寫規則以控制「配偶薪資」欄位的可見度。
 
-   以編寫模式開啟貸款申請表單。 點選 **[!UICONTROL 婚姻狀況]** 元件並點選 ![edit-rules](assets/edit-rules-icon.svg). 下一步，點選 **[!UICONTROL 建立]** 以啟動規則編輯器。
+   以編寫模式開啟貸款申請表單。 選取 **[!UICONTROL 婚姻狀況]** 元件並選取 ![edit-rules](assets/edit-rules-icon.svg). 接下來，選取 **[!UICONTROL 建立]** 以啟動規則編輯器。
 
    ![write-rules-visual-editor-1](assets/write-rules-visual-editor-1.png)
 
    啟動規則編輯器時，預設會選取When規則。 此外，您啟動規則編輯器的表單物件（在此例中為「婚姻狀況」）會在When陳述式中指定。
 
-   雖然您無法變更或修改選取的物件，但可以使用規則下拉式清單（如下所示）來選取其他規則型別。 如果您想在另一個物件上建立規則，請點選「取消」以退出規則編輯器，然後從所需的表單物件再次啟動。
+   雖然您無法變更或修改選取的物件，但可以使用規則下拉式清單（如下所示）來選取其他規則型別。 如果您想在其他物件上建立規則，請選取「取消」結束規則編輯器，然後從想要的表單物件再次啟動它。
 
-1. 點選 **[!UICONTROL 選取狀態]** 下拉式清單並選取 **[!UICONTROL 等於]**. 此 **[!UICONTROL 輸入字串]** 欄位隨即顯示。
+1. 選取 **[!UICONTROL 選取狀態]** 下拉式清單並選取 **[!UICONTROL 等於]**. 此 **[!UICONTROL 輸入字串]** 欄位隨即顯示。
 
    ![write-rules-visual-editor-2](assets/write-rules-visual-editor-2.png)
 
@@ -438,7 +442,7 @@ Users in the forms-power-users group can access code editor. For other users, co
 
    ![write-rules-visual-editor-5](assets/write-rules-visual-editor-5.png)
 
-1. 拖放 **[!UICONTROL 配偶薪資]** 欄位。 **[!UICONTROL 將物件放下或選取這裡]** 欄位。 或者，點選 **[!UICONTROL 將物件放下或選取這裡]** 欄位並選取 **[!UICONTROL 配偶薪資]** 欄位，其中列出表單中的所有表單物件。
+1. 拖放 **[!UICONTROL 配偶薪資]** 欄位。 **[!UICONTROL 將物件放下或選取這裡]** 欄位。 或者，選取 **[!UICONTROL 將物件放下或選取這裡]** 欄位並選取 **[!UICONTROL 配偶薪資]** 欄位，其中列出表單中的所有表單物件。
 
    ![write-rules-visual-editor-6](assets/write-rules-visual-editor-6.png)
 
@@ -446,7 +450,7 @@ Users in the forms-power-users group can access code editor. For other users, co
 
    ![write-rules-visual-editor-7](assets/write-rules-visual-editor-7.png)
 
-1. 點選 **[!UICONTROL 完成]** 以儲存規則。
+1. 選取 **[!UICONTROL 完成]** 以儲存規則。
 
 1. 重複步驟1到5，定義另一個規則，以在「婚姻狀況」為「單身」時隱藏「配偶薪資」欄位。 規則在規則編輯器中會顯示如下。
 
@@ -460,13 +464,13 @@ Users in the forms-power-users group can access code editor. For other users, co
 
 1. 接著，撰寫規則以計算貸款資格金額（為薪資總額的50%），並在「貸款資格」欄位中顯示。 若要獲得此結果，請建立 **[!UICONTROL 設定值]** 貸款資格欄位上的規則。
 
-   在製作模式中，點選 **[!UICONTROL 貸款資格]** 欄位並點選 ![edit-rules](assets/edit-rules-icon.svg). 下一步，點選 **[!UICONTROL 建立]** 以啟動規則編輯器。
+   在製作模式中，選取 **[!UICONTROL 貸款資格]** 欄位並選取 ![edit-rules](assets/edit-rules-icon.svg). 接下來，選取 **[!UICONTROL 建立]** 以啟動規則編輯器。
 
 1. 選取 **[!UICONTROL 設定值]** 規則。
 
    ![write-rules-visual-editor-10](assets/write-rules-visual-editor-10.png)
 
-1. 點選 **[!UICONTROL 選取選項]** 並選取 **[!UICONTROL 數學運算式]**. 用於寫入數學運算式的欄位隨即開啟。
+1. 選取 **[!UICONTROL 選取選項]** 並選取 **[!UICONTROL 數學運算式]**. 用於寫入數學運算式的欄位隨即開啟。
 
    ![write-rules-visual-editor-11](assets/write-rules-visual-editor-11.png)
 
@@ -480,7 +484,7 @@ Users in the forms-power-users group can access code editor. For other users, co
 
    ![write-rules-visual-editor-12](assets/write-rules-visual-editor-12.png)
 
-1. 接下來，在運算式欄位周圍反白顯示的區域中點選，然後點選 **[!UICONTROL 延伸運算式]**.
+1. 接著，在運算式欄位周圍反白的區域中選取，然後選取 **[!UICONTROL 延伸運算式]**.
 
    ![write-rules-visual-editor-13](assets/write-rules-visual-editor-13.png)
 
@@ -494,7 +498,7 @@ Users in the forms-power-users group can access code editor. For other users, co
 
    接著，建立條件，當傳回True時，執行運算式。
 
-1. 點選 **[!UICONTROL 新增條件]** 新增When陳述式。
+1. 選取 **[!UICONTROL 新增條件]** 新增When陳述式。
 
    ![write-rules-visual-editor-15](assets/write-rules-visual-editor-15.png)
 
@@ -508,7 +512,7 @@ Users in the forms-power-users group can access code editor. For other users, co
 
    規則最後會顯示在規則編輯器中，如下所示。  ![write-rules-visual-editor-16](assets/write-rules-visual-editor-16.png)
 
-1. 點選 **[!UICONTROL 完成]**. 這會儲存規則。
+1. 選取 **[!UICONTROL 完成]**. 這會儲存規則。
 
 1. 重複步驟7到14，定義另一個規則，以計算婚姻狀況為「單身」時的貸款資格。 規則在規則編輯器中會顯示如下。
 
@@ -640,18 +644,18 @@ While writing JavaScript code in the rule editor, the following visual cues help
 在CRX存放庫中新增使用者端程式庫後，請將其用於最適化表單。 它可讓您使用自訂函式作為表單中的規則。 若要在最適化表單中新增使用者端程式庫，請執行下列步驟：
 
 1. 在編輯模式中開啟您的表單。
-若要以編輯模式開啟表單，請選取表單並點選 **[!UICONTROL 開啟]**.
-1. 在編輯模式中，選取元件，然後點選 ![欄位層級](assets/select_parent_icon.svg) > **[!UICONTROL 最適化表單容器]**，然後點選 ![cmppr](assets/configure-icon.svg).
+若要以編輯模式開啟表單，請選取表單並選取 **[!UICONTROL 開啟]**.
+1. 在編輯模式中，選取元件，然後選取 ![欄位層級](assets/select_parent_icon.svg) > **[!UICONTROL 最適化表單容器]**，然後選取 ![cmppr](assets/configure-icon.svg).
 1. 在側邊欄中的「使用者端資料庫名稱」下方，新增您的使用者端資料庫。 ( `customfunction` 在此範例中。)
 
    ![新增自訂函式使用者端程式庫](assets/clientlib.png)
 
-1. 選取輸入數字方塊，然後點選 ![edit-rules](assets/edit-rules-icon.svg) 以開啟規則編輯器。
-1. 點選 **[!UICONTROL 建立規則]**. 使用下列選項，建立規則以將輸入的平方值儲存在表單的「輸出」欄位中。
+1. 選取輸入數字方塊，然後選取 ![edit-rules](assets/edit-rules-icon.svg) 以開啟規則編輯器。
+1. 選取 **[!UICONTROL 建立規則]**. 使用下列選項，建立規則以將輸入的平方值儲存在表單的「輸出」欄位中。
 
    [![使用自訂函式建立規則](assets/add_custom_rule_new.png)](assets/add-custom-rule.png)
 
-1. 點選 **[!UICONTROL 完成]**. 您的自訂函式已新增。
+1. 選取 **[!UICONTROL 完成]**. 您的自訂函式已新增。
 
    >[!NOTE]
    >
@@ -722,22 +726,22 @@ var c = {
 
 ## 管理規則 {#manage-rules}
 
-當您點選物件並點選時，表格物件上的任何現有規則都會列出 ![edit-rules1](assets/edit-rules-icon.svg). 您可以檢視標題並預覽規則摘要。 此外，UI可讓您展開並檢視完整的規則摘要、變更規則順序、編輯規則及刪除規則。
+當您選取物件並選取時，會列出表單物件上的任何現有規則 ![edit-rules1](assets/edit-rules-icon.svg). 您可以檢視標題並預覽規則摘要。 此外，UI可讓您展開並檢視完整的規則摘要、變更規則順序、編輯規則及刪除規則。
 
 ![List-rules](assets/list-rules.png)
 
 您可以對規則執行下列動作：
 
-* **展開/摺疊**：規則清單中的「內容」欄會顯示規則內容。 如果預設檢視中看不到整個規則內容，請點選 ![expand-rule-content](assets/Smock_ChevronDown.svg) 以展開它。
+* **展開/摺疊**：規則清單中的「內容」欄會顯示規則內容。 如果預設檢視中看不到整個規則內容，請選取「 」 ![expand-rule-content](assets/Smock_ChevronDown.svg) 以展開它。
 
 * **重新排序**：您建立的任何新規則都會棧疊在規則清單底部。 規則會從上到下執行。 頂端的規則會先執行，接著執行相同型別的其他規則。 例如，如果您分別從頂端開始，在第一、第二、第三和第四個位置有When、Show、Enable和When規則，則頂端的規則會先執行，接著在第四個位置有When規則。 接著會執行「顯示」和「啟用」規則。
 您可以點選以變更規則的順序 ![sort-rules](assets/sort-rules.svg) 或將其拖放到清單中的所需順序。
 
-* **編輯**：若要編輯規則，請選取規則標題旁的核取方塊。 隨即顯示編輯和刪除規則的選項。 點選 **[!UICONTROL 編輯]** 在規則編輯器中開啟選取的規則 <!-- in visual  or code editor mode depending on the mode used to create the rule -->.
+* **編輯**：若要編輯規則，請選取規則標題旁的核取方塊。 隨即顯示編輯和刪除規則的選項。 選取 **[!UICONTROL 編輯]** 在規則編輯器中開啟選取的規則 <!-- in visual  or code editor mode depending on the mode used to create the rule -->.
 
-* **刪除**：若要刪除規則，請選取規則並點選 **[!UICONTROL 刪除]**.
+* **刪除**：若要刪除規則，請選取該規則並選取 **[!UICONTROL 刪除]**.
 
-* **啟用/停用**：您必須暫時暫停使用規則時，可以選取一或多個規則並點選 **[!UICONTROL 停用]** 以停用。 如果規則已停用，則不會在執行階段執行。 若要啟用已停用的規則，您可以選取該規則，然後點選動作工具列中的「啟用」 。 規則的狀態列顯示規則是啟用還是停用。
+* **啟用/停用**：您必須暫時暫停使用規則時，可以選取一或多個規則並選取 **[!UICONTROL 停用]** 以停用。 如果規則已停用，則不會在執行階段執行。 若要啟用已停用的規則，您可以選取該規則，然後選取動作工具列中的「啟用」 。 規則的狀態列顯示規則是啟用還是停用。
 
 ![停用規則](assets/disablerule.png)
 
@@ -747,23 +751,23 @@ var c = {
 
 若要複製貼上規則，請執行下列動作：
 
-1. 點選您要從中複製規則的表單物件，然後在元件工具列上點選 ![編輯規則](assets/edit-rules-icon.svg). 規則編輯器使用者介面會出現，並選取表單物件，而現有規則會出現。
+1. 選取您要從中複製規則的表單物件，然後在元件工具列中選取 ![編輯規則](assets/edit-rules-icon.svg). 規則編輯器使用者介面會出現，並選取表單物件，而現有規則會出現。
 
    ![複製規則](assets/copyrule.png)
 
    如需有關管理現有規則的資訊，請參閱 [管理規則](rule-editor.md#p-manage-rules-p).
 
-1. 選取規則標題旁的核取方塊，管理規則的選項就會出現。 點選「 **[!UICONTROL 複製]**」。
+1. 選取規則標題旁的核取方塊，管理規則的選項就會出現。 選取 **[!UICONTROL 複製]**.
 
    ![copyrule2](assets/copyrule2.png)
 
-1. 選取另一個要貼上規則的表單物件，然後點選 **[!UICONTROL 貼上]**. 此外，您可以編輯規則以對其進行變更。
+1. 選取另一個要貼上規則的表單物件，然後選取 **[!UICONTROL 貼上]**. 此外，您可以編輯規則以對其進行變更。
 
    >[!NOTE]
    >
    >只有當表單物件支援所複製規則的事件，您才能將規則貼到另一個表單物件。 例如，按鈕支援點選事件。 您可以將具有點選事件的規則貼到按鈕上，但無法貼到核取方塊上。
 
-1. 點選 **[!UICONTROL 完成]** 以儲存規則。
+1. 選取 **[!UICONTROL 完成]** 以儲存規則。
 
 ## 巢狀運算式 {#nestedexpressions}
 
@@ -773,7 +777,7 @@ var c = {
 
 ![複雜運算式](assets/complexexpression.png)
 
-您也可以拖放規則中的條件以進行編輯。 點選並將滑鼠懸停在控點上( ![控點](assets/drag-handle.svg))。 指標變成如下所示的手形符號後，請將條件拖放至規則內的任何位置。 規則結構會變更。
+您也可以拖放規則中的條件以進行編輯。 選取並將滑鼠懸停在控點上( ![控點](assets/drag-handle.svg))。 指標變成如下所示的手形符號後，請將條件拖放至規則內的任何位置。 規則結構會變更。
 
 ![拖放](assets/drag-and-drop.png)
 

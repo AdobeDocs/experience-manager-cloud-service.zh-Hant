@@ -2,14 +2,14 @@
 title: 如何設定Azure儲存空間？
 description: 瞭解如何將表單與Azure儲存伺服器整合。
 exl-id: 606383b3-293c-43d2-9ba0-5843c4e0caa8
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '581'
+source-wordcount: '583'
 ht-degree: 1%
 
 ---
 
-# 設定[!DNL Azure]儲存空間 {#configure-azure-storage}
+# 設定 [!DNL Azure] 儲存 {#configure-azure-storage}
 
 
 ![資料整合](assets/data-integeration.png)
@@ -26,10 +26,10 @@ ht-degree: 1%
 在執行這些步驟之前，請確定您已 [!DNL Azure] 儲存帳戶與存取金鑰，用於授權存取 [!DNL Azure] 儲存體帳戶。
 
 1. 瀏覽至 **[!UICONTROL 工具]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Azure儲存體]**.
-1. 選取資料夾以建立設定並點選 **[!UICONTROL 建立]**.
+1. 選取資料夾以建立設定，然後選取 **[!UICONTROL 建立]**.
 1. 在中指定設定的標題 **[!UICONTROL 標題]** 欄位。
 1. 指定 [!DNL Azure] 中的儲存體帳戶 **[!UICONTROL Azure儲存體帳戶]** 欄位。
-1. 指定金鑰以存取 **[!UICONTROL Azure存取金鑰]** 欄位並點選 **[!UICONTROL 儲存]**.
+1. 指定金鑰以存取 **[!UICONTROL Azure存取金鑰]** 欄位並選取 **[!UICONTROL 儲存]**.
 
 ## 建立表單資料模型 {#create-azure-form-data-model}
 
@@ -41,13 +41,13 @@ ht-degree: 1%
 
 新增 [!DNL Azure] 服務：
 
-1. 在「編輯」模式中，從 **[!UICONTROL 服務]** 區段並點選 **[!UICONTROL 新增選取專案]**. 選取的服務會顯示在 **[!UICONTROL 服務]** 表單資料模型的索引標籤。
+1. 在「編輯」模式中，從 **[!UICONTROL 服務]** 區段，然後選取 **[!UICONTROL 新增選取專案]**. 選取的服務會顯示在 **[!UICONTROL 服務]** 表單資料模型的索引標籤。
 
    ![新增選取的服務](assets/select-services.png)
 
 1. 在 **[!UICONTROL 服務]** 索引標籤中，選取服務並 **[!UICONTROL 編輯屬性]**. 根據服務，定義服務的輸入或輸出模型物件。
 
-1. 點選 **[!UICONTROL 儲存]** 以儲存表單資料模型。
+1. 選取 **[!UICONTROL 儲存]** 以儲存表單資料模型。
 
    下表說明可用的 [!DNL Azure] 服務：
 
@@ -92,9 +92,9 @@ ht-degree: 1%
 
 若要將資料模型物件屬性定義為搜尋索引鍵：
 
-1. 在 **[!UICONTROL 模型]** 索引標籤，選取資料模型物件屬性並點選 **[!UICONTROL 編輯屬性]**.
+1. 在 **[!UICONTROL 模型]** 索引標籤中，選取資料模型物件屬性，然後選取 **[!UICONTROL 編輯屬性]**.
 1. 切換 **[!UICONTROL 搜尋索引鍵]** 切換選項至「開啟」狀態。 此選項僅適用於主要資料型別。
-1. 點選 **[!UICONTROL 完成]** 然後點選 **[!UICONTROL 儲存]** 以儲存表單資料模型。
+1. 選取 **[!UICONTROL 完成]** 然後選取 **[!UICONTROL 儲存]** 以儲存表單資料模型。
 
 將資料模型物件屬性定義為搜尋索引鍵後，雜湊值會儲存在Azure索引標籤中，而Base64編碼值會儲存在Azure中繼資料中。
 

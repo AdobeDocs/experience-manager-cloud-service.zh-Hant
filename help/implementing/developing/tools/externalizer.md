@@ -2,9 +2,9 @@
 title: 外部化URL
 description: Externalizer是一項OSGi服務，可讓您以程式設計方式將資源路徑轉換為外部和絕對URL。
 exl-id: 06efb40f-6344-4831-8ed9-9fc49f2c7a3f
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '651'
+source-wordcount: '630'
 ht-degree: 0%
 
 ---
@@ -99,7 +99,7 @@ Externalizer服務可讓您集中定義網域，以程式設計方式為資源�
 
 >[!NOTE]
 >
->HTML內容中不應建立任何絕對連結。 因此，不應在此情況下使用此公用程式。
+>HTML內容中不應建立任何絕對連結。 因此，請勿在這種情況下使用此公用程式。
 
 * **若要外部化具有「發佈」網域的路徑：**
 

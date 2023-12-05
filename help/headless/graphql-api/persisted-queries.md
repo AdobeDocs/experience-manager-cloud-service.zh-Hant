@@ -3,10 +3,10 @@ title: 持續性 GraphQL 查詢
 description: 了解如何在 Adobe Experience Manager as a Cloud Service 中保留 GraphQL 查詢，以將效能最佳化。用戶端應用程式可以使用 HTTP GET 方法要求持續性查詢，回應可以在 Dispatcher 和 CDN 層快取，最終提高用戶端應用程式的效能。
 feature: Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1676'
-ht-degree: 98%
+source-wordcount: '1656'
+ht-degree: 97%
 
 ---
 
@@ -257,7 +257,7 @@ query getAdventuresByActivity($activity: String!) {
 <AEM_HOST>/graphql/execute.json/wknd/adventures-by-activity%3Bactivity%3DCamping
 ```
 
-請注意，`%3B` 是 `;` 的 UTF-8 編碼，`%3D` 是 `=` 的編碼。查詢變數和任何特殊字元必須[正確編碼](#encoding-query-url)才能執行持續性查詢。
+UTF-8編碼 `%3B` 為 `;` 和 `%3D` 是的編碼 `=`. 查詢變數和任何特殊字元必須[正確編碼](#encoding-query-url)才能執行持續性查詢。
 
 ## 快取持續性查詢 {#caching-persisted-queries}
 
@@ -442,8 +442,8 @@ URL 可以分解成以下幾個部分：
 1. 在套件定義對話框中，在 **一般**&#x200B;下輸入&#x200B;**名稱**，例如「wknd-persistent-queries」。
 1. 輸入版本號碼，例如「1.0」。
 1. 在&#x200B;**篩選器**&#x200B;下加入新&#x200B;**篩選器**。使用路徑尋找工具選取設定下方的 `persistentQueries` 資料夾。例如，對於 `wknd` 設定，完整路徑將為 `/conf/wknd/settings/graphql/persistentQueries`。
-1. 點選「**儲存**」以儲存新的套件定義並關閉對話框。
-1. 點選 **建置** 按鈕建立封裝。
+1. 選取 **儲存** 以儲存新的封裝定義並關閉對話方塊。
+1. 選取 **建置** 按鈕建立封裝。
 
 建置套件後，您可以：
 

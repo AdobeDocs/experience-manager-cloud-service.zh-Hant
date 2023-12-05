@@ -1,13 +1,13 @@
 ---
-title: 搜尋 Facet.
+title: 搜尋Facet。
 description: 本文說明如何在Experience Manager中建立、修改和使用搜尋Facet。
 feature: Search,Metadata
 role: User,Admin
 exl-id: f994c1bf-3f9d-4cb2-88f4-72a9ad6fa999
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2504'
-ht-degree: 21%
+source-wordcount: '2498'
+ht-degree: 19%
 
 ---
 
@@ -33,7 +33,7 @@ Adobe Experience Manager資產的企業範圍部署能儲存許多資產。 有�
 若要進行全文檢索搜尋，請新增 `Fulltext` 表單的述詞。 使用屬性述詞來搜尋符合您指定之單一屬性的資產。 使用「選項」述詞來搜尋符合特定屬性的一個或多個值的資產。 新增日期範圍述詞，以搜尋在指定日期範圍內建立的資產。
 
 1. 按一下Experience Manager標誌，然後前往 **[!UICONTROL 工具]** > **[!UICONTROL 一般]** > **[!UICONTROL 搜尋Forms]**.
-1. 在搜尋Forms頁面中，選取 **[!UICONTROL 資產管理搜尋邊欄]**，然後點選  **編輯** ![aemassets_edit](assets/aemassets_edit.png).
+1. 在搜尋Forms頁面中，選取 **[!UICONTROL 資產管理搜尋邊欄]**，然後選取  **編輯** ![aemassets_edit](assets/aemassets_edit.png).
 
    ![尋找並選取「資產管理搜尋邊欄」](assets/assets_admin_searchrail.png)
 
@@ -49,7 +49,7 @@ Adobe Experience Manager資產的企業範圍部署能儲存許多資產。 有�
 
    *圖：使用設定索引標籤提供述詞的必要選項。*
 
-1. 在「屬 **[!UICONTROL 性名稱]** 」欄位中，指定您要與謂語關聯的中繼資料屬性的有效名稱。它是根據其執行搜索的名稱。例如，輸入 `jcr:content/metadata/dc:description` 或 `./jcr:content/metadata/dc:description`。您也可以從選取對話方塊中選取現有節點。
+1. 在「屬 **[!UICONTROL 性名稱]** 」欄位中，指定您要與謂語關聯的中繼資料屬性的有效名稱。它是根據其執行搜索的名稱。例如，輸入 `jcr:content/metadata/dc:description` 或 `./jcr:content/metadata/dc:description`. 您也可以從選取對話方塊中選取現有節點。
 
    ![在「屬性名稱」欄位中將中繼資料屬性與述詞建立關聯](assets/property_settings.png)
 
@@ -63,7 +63,7 @@ Adobe Experience Manager資產的企業範圍部署能儲存許多資產。 有�
    在提交變更之前預覽搜尋表單
 
 1. 若要關閉預覽，請按一下 **[!UICONTROL 關閉]** ![關閉](assets/do-not-localize/close_icon.png) 在預覽的右上角。
-1. 點選 **[!UICONTROL 完成]** 以儲存設定。
+1. 選取 **[!UICONTROL 完成]** 以儲存設定。
 1. 導覽至「資產」使用者介面中的「搜尋」面板。 屬性述詞會新增至面板。
 1. 在文字方塊中輸入要搜尋之資產的說明。 例如，輸入「Adobe」。 執行搜尋時，說明符合「Adobe」的資產會列在搜尋結果中。
 
@@ -101,14 +101,14 @@ Adobe Experience Manager資產的企業範圍部署能儲存許多資產。 有�
 >
 >Options述詞是包含屬性述詞的自訂包裝函式，可示範所描述的行為。 目前沒有可用的REST端點可原生支援此功能。
 
-1. 點選Experience Manager標誌，然後前往 **[!UICONTROL 「工具>一般>搜尋Forms」]**.
-1. 從「搜 **[!UICONTROL 尋表單」頁面]** ，選取「資 ****&#x200B;產管理搜尋邊欄」，然後點選「編輯」圖示。
+1. 選取Experience Manager標誌，然後前往 **[!UICONTROL 「工具>一般>搜尋Forms」]**.
+1. 從 **[!UICONTROL 搜尋Forms]** 頁面，選取 **[!UICONTROL 資產管理搜尋邊欄]**，然後選取編輯圖示。
 1. 在「編 **[!UICONTROL 輯搜索表單]** 」頁中，將「選 **[!UICONTROL 項謂詞」從]** 「選擇謂詞 **** 」頁籤拖到主窗格。
-1. 在「設 **[!UICONTROL 定]** 」標籤中，輸入屬性的標籤和名稱。例如，若要根據資產的格式來搜尋資產，請為標籤指定好記的名稱，例如「檔案類 **[!UICONTROL 型」]**。指定在屬性欄位中根據其執行搜索的屬性，例如 `jcr:content/metadata/dc:format.`
+1. 在「設 **[!UICONTROL 定]** 」標籤中，輸入屬性的標籤和名稱。例如，若要根據資產的格式來搜尋資產，請為標籤指定好記的名稱，例如 **[!UICONTROL 檔案型別]**. 指定在屬性欄位中根據其執行搜尋的屬性，例如， `jcr:content/metadata/dc:format.`
 1. 執行下列任一項作業：
 
    * 在 **[!UICONTROL 屬性名稱]** 欄位，提及JSON檔案的路徑，您可在此定義選項的節點，並指定對應的索引鍵值配對。
-   * 點選 ![資產新增圖示](assets/do-not-localize/aem_assets_add_icon.png) 在「選項」欄位旁，指定您要在「濾鏡」面板中提供的選項之顯示文字和值。 若要新增其他選項，請選取 ![資產新增圖示](assets/do-not-localize/aem_assets_add_icon.png) 並重複該步驟。
+   * 選取 ![資產新增圖示](assets/do-not-localize/aem_assets_add_icon.png) 在「選項」欄位旁，指定您要在「濾鏡」面板中提供的選項之顯示文字和值。 若要新增其他選項，請選取 ![資產新增圖示](assets/do-not-localize/aem_assets_add_icon.png) 並重複該步驟。
 
 1. 確保清 **[!UICONTROL 除「單選]** 」，讓使用者一次為檔案類型選取多個選項 (例如影像、檔案、多媒體和封存)。如果您選 **[!UICONTROL 取「單選]**」，使用者一次只能為檔案類型選取一個選項。
 
@@ -124,11 +124,11 @@ Adobe Experience Manager資產的企業範圍部署能儲存許多資產。 有�
 此 `Multi Value Property` 述詞可讓您搜尋資產以取得多個值。 請考量您在中擁有多個產品影像的情況 [!DNL Assets] 且每個影像的中繼資料都包含與產品相關聯的SKU編號。 您可以使用此述詞來根據多個SKU編號搜尋產品影像。
 
 1. 按一下Experience Manager標誌，然後前往 **[!UICONTROL 工具]** > **[!UICONTROL 一般]** > **[!UICONTROL 搜尋Forms]**.
-1. 在「搜尋Forms」頁面上，選取 **[!UICONTROL 資產管理搜尋邊欄]**，點選 **編輯** ![aemassets_edit](assets/aemassets_edit.png).
+1. 在「搜尋Forms」頁面上，選取 **[!UICONTROL 資產管理搜尋邊欄]**，則選取 **編輯** ![aemassets_edit](assets/aemassets_edit.png).
 1. 在「編輯搜索表單」頁中，將「 **[!UICONTROL Multi Value Property Predicate]** 」從「 **[!UICONTROL Select Predicate]** 」頁籤拖動到主窗格。
-1. 在 **[!UICONTROL 設定]** 標籤，輸入述詞的標籤和預留位置文字。 指定在屬性欄位中根據其執行搜尋的屬性名稱，例如 `jcr:content/metadata/dc:value`. 您也可以使用選取對話方塊來選取節點。
+1. 在 **[!UICONTROL 設定]** 標籤，輸入述詞的標籤和預留位置文字。 指定在屬性欄位中根據其執行搜尋的屬性名稱，例如， `jcr:content/metadata/dc:value`. 您也可以使用選取對話方塊來選取節點。
 1. 請確定已 **[!UICONTROL 選取「分隔字元]** 」支援。在「輸入 **[!UICONTROL 分隔字元]** 」欄位中，指定分隔字元以分隔個別值。依預設，逗號會指定為分隔字元。您可以指定不同的分隔字元。
-1. 在 **說明** 欄位，輸入選填的說明，然後點選 **[!UICONTROL 完成]**.
+1. 在 **說明** 欄位，輸入選擇性說明，然後選取 **[!UICONTROL 完成]**.
 1. 導覽至「資產」使用者介面中的「篩選」面板。The **[!UICONTROL Multi Value Property]** predicate is added to the panel.
 1. 在「多值」欄位中指定多個值（以分隔符號分隔），然後執行搜尋。 述詞會針對您指定的值擷取完全相符的文字。
 
@@ -137,9 +137,9 @@ Adobe Experience Manager資產的企業範圍部署能儲存許多資產。 有�
 此 `Tags` 述詞可讓您對資產執行標籤式搜尋。 根據預設， [!DNL Assets] 根據您指定的標籤，在資產中搜尋一或多個相符標籤。 換言之，搜尋查詢會使用指定的標籤執行OR操作。 不過，您可以使用符合所有標籤選項來搜尋包含您所指定之所有標籤的資產。
 
 1. 按一下Experience Manager標誌，然後前往 **[!UICONTROL 工具]** > **[!UICONTROL 一般]** > **[!UICONTROL 搜尋Forms]**.
-1. 在搜尋Forms頁面中，選取 **[!UICONTROL 資產管理搜尋邊欄]** 然後點選 **編輯** ![aemassets_edit](assets/aemassets_edit.png).
+1. 在搜尋Forms頁面中，選取 **[!UICONTROL 資產管理搜尋邊欄]** 然後選取 **編輯** ![aemassets_edit](assets/aemassets_edit.png).
 1. 在「編輯搜尋表單」頁面中，拖曳 **[!UICONTROL 標籤述詞]** 從「選取述詞」標籤移至主窗格。
-1. 在「設定」標籤中，輸入述詞的預留位置文字。 指定在屬性欄位中根據其執行搜尋的屬性名稱，例如 `jcr:content/metadata/cq:tags`. 或者，您可以從選取對話方塊中選取CRXDE中的節點。
+1. 在「設定」標籤中，輸入述詞的預留位置文字。 指定在屬性欄位中根據其執行搜尋的屬性名稱，例如， `jcr:content/metadata/cq:tags`. 或者，您可以從選取對話方塊中選取CRXDE中的節點。
 1. 設定此述詞的根標籤路徑屬性，以填入標籤清單中的各種標籤。
 1. 選取 **[!UICONTROL 「顯示符合所有標籤」選項]** ，以搜尋包含您所指定之所有標籤的資產。
 
@@ -325,8 +325,8 @@ Adobe建議您在移除預設搜尋Facet時務必小心，以免出現效能問�
 若要還原預設的搜尋Facet，請執行下列步驟：
 
 1. 選取 **[!UICONTROL 資產管理搜尋邊欄]** 在 **[!UICONTROL 搜尋Forms]** 頁面。
-1. 點選 **[!UICONTROL 刪除]** ![刪除圖示](assets/do-not-localize/deleteoutline.png) （在工具列中）。
-1. 在確認對話方塊中，點選 **[!UICONTROL 刪除]** 以移除自訂變更。
+1. 選取 **[!UICONTROL 刪除]** ![刪除圖示](assets/do-not-localize/deleteoutline.png) （在工具列中）。
+1. 在確認對話方塊中，選取 **[!UICONTROL 刪除]** 以移除自訂變更。
 
    刪除搜尋Facet的自訂變更後，在「搜尋表單」頁面的「資產管 **[!UICONTROL 理搜尋邊欄]** 」前會重 **** 新顯示「鎖定」圖示。
 

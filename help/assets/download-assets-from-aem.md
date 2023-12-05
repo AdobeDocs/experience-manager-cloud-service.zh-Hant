@@ -5,10 +5,10 @@ contentOwner: Vishabh Gupta
 feature: Asset Management
 role: User
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: f2f81e2e3e7ff0b5bad4a5490f5cbec752c92578
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '1385'
-ht-degree: 5%
+source-wordcount: '1329'
+ht-degree: 3%
 
 ---
 
@@ -79,11 +79,11 @@ Experience Manager會根據資產數量和大小最佳化下載體驗。 從使�
 
    | 下載選項 | 說明 |
    |---|---|
-   | **[!UICONTROL 為每一個資產建立個別的資料夾]** | 選取此選項，為每個資產建立一個資料夾，其中包含資產的所有已下載轉譯。 如果取消選取，則每個資產（以及如果選取要下載的其轉譯）都會包含在所產生封存檔的父資料夾中。 |
+   | **[!UICONTROL 為每個資產建立個別的資料夾]** | 選取此選項，為每個資產建立一個資料夾，其中包含資產的所有已下載轉譯。 如果取消選取，則每個資產（以及如果選取要下載的其轉譯）都會包含在所產生封存檔的父資料夾中。 |
    | **[!UICONTROL 電子郵件]** | 選取此選項可將電子郵件通知（包含您下載的連結）傳送給其他使用者。 收件者使用者必須是 `dam-users` 群組。 標準電子郵件範本可在下列位置取得：<ul><li>`/libs/settings/dam/workflow/notification/email/downloadasset`。</li><li>`/libs/settings/dam/workflow/notification/email/transientworkflowcompleted`。</li></ul> 您部署期間自訂的範本可在下列位置使用： <ul><li>`/apps/settings/dam/workflow/notification/email/downloadasset`。</li><li>`/apps/settings/dam/workflow/notification/email/transientworkflowcompleted`。</li></ul>您可以將租使用者特定的自訂範本儲存在下列位置：<ul><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/downloadasset`。</li><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/transientworkflowcompleted`。</li></ul> |
    | **[!UICONTROL 資產]** | 選取此選項，即可以原始格式下載資產。<br>如果原始資產有子資產，則可以使用子資產選項。 |
    | **[!UICONTROL 轉譯]** | 轉譯是資產的二進位表示法。 資產具有主要表示方式，即上傳檔案的主要表示方式。 它們可以有任意數量的表示。 <br> 使用此選項，您可以選取要下載的轉譯。 可用的轉譯取決於您選取的資產。 |
-   | **[!UICONTROL 智慧裁切]** | 選取此選項即可從下載所選資產的所有智慧型裁切轉譯 [!DNL Experience Manager]. 已建立包含「智慧型裁切」轉譯的zip檔案，並下載至您的本機電腦。 |
+   | **[!UICONTROL 智慧型裁切]** | 選取此選項即可從下載所選資產的所有智慧型裁切轉譯 [!DNL Experience Manager]. 已建立包含「智慧型裁切」轉譯的zip檔案，並下載至您的本機電腦。 |
    | **[!UICONTROL 動態轉譯]** | 選取此選項可即時產生一系列替代轉譯。 選取此選項時，您也可以從以下專案選取，以動態選取要建立的轉譯： [影像預設集](/help/assets/dynamic-media/image-presets.md) 清單。 <br>此外，您可以選取大小與測量單位、格式、色域、解析度，以及任何選用的影像修飾元（例如反轉影像）。 只有當您具備以下條件時，才可使用選項 [!DNL Dynamic Media] 已啟用。 |
 
 1. 在對話方塊中，按一下 **[!UICONTROL 下載]**.
@@ -139,7 +139,7 @@ Experience Manager會根據資產數量和大小最佳化下載體驗。 從使�
 1. 在Git中的專案程式碼中，建立設定檔案： `/apps/system/config/com.day.cq.dam.core.impl.servlet.OnOffTimeAssetAccessFilter.cfg.json`. 檔案應包含 `{}` 作為其內容，表示對應OSGi元件的空OSGi設定。 此動作會啟用服務。
 1. 部署您的程式碼，包括這個新設定，透過 [!DNL Cloud Manager].
 1. 部署後，即可根據資產的開啟/關閉時間設定存取轉譯和中繼資料。 如果目前日期或時間落在開啟時間之前或關閉時間之後，則會顯示錯誤訊息。
-如需新增空OSGi設定的詳細資訊，您可以參閱此 [指南](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html?lang=en).
+如需新增空白OSGi設定的詳細資訊，請參閱此 [指南](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html?lang=en).
 
 ## 提示和限制 {#tips-limitations}
 

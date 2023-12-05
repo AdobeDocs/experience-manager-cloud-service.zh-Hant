@@ -9,10 +9,10 @@ role: User, Developer
 level: Intermediate
 topic: Migration
 exl-id: 090e77ff-62ec-40cb-8263-58720f3b7558
-source-git-commit: 397e7d4f23202b8ae7419b0ad5436a6a10e2efb8
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1583'
-ht-degree: 4%
+source-wordcount: '1430'
+ht-degree: 1%
 
 ---
 
@@ -64,7 +64,7 @@ ht-degree: 4%
 
   ![試執行結果](assets/enable-add-on.png)
 
-* 在Cloud Service環境中，Migration Utility可與使用者對應工具和內容轉移工具搭配使用。 移轉公用程式可讓 [!DNL AEM Forms] 資產與Cloud Service相容，內容轉移工具會將內容從您的 [!DNL AEM Forms] 環境至 [!DNL AEM] as a Cloud Service環境。 在使用移轉公用程式之前，請先瞭解以下程式 [移至AEMas a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/home.html?lang=zh-Hant). 此程式有兩個工具：
+* 在Cloud Service環境中，Migration Utility可與使用者對應工具和內容轉移工具搭配使用。 移轉公用程式可讓 [!DNL AEM Forms] 資產與Cloud Service相容，內容轉移工具會將內容從您的 [!DNL AEM Forms] 環境至 [!DNL AEM] as a Cloud Service環境。 在使用移轉公用程式之前，請先瞭解以下程式 [移至AEMas a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/home.html). 此程式有兩個工具：
    * [使用者對應工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#cloud-migration)：使用者對應工具可協助您將使用者與對應的Adobe IMS使用者帳戶對應。
    * [內容轉移工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?#cloud-migration)：內容轉移工具可協助您準備內容，並將內容從現有環境轉移到Cloud Service環境。 它可協助使用者輕鬆從AEM Forms升級至雲端環境。
 * 具有管理員許可權的帳號 [!DNL AEM Forms] as a Cloud Service與您的本機 [!DNL AEM Forms] 環境。
@@ -97,28 +97,28 @@ ht-degree: 4%
 1. 瀏覽至 **[!UICONTROL 工具]** > **[!UICONTROL 作業]** > **[!UICONTROL 內容移轉]**.
 
 1. 開啟 **[!UICONTROL 準備Forms進行移轉]** 卡片。 瀏覽器會顯示五個選項：
-   * **[!UICONTROL AEM Forms 資產移轉]**
+   * **[!UICONTROL AEM Forms資產移轉]**
    * **[!UICONTROL 最適化Forms自訂元件移轉]**
    * **[!UICONTROL 最適化Forms範本移轉]**
-   * **[!UICONTROL AEM 表單雲端組態移轉]**
+   * **[!UICONTROL AEM Forms雲端設定移轉]**
    * **[!UICONTROL 程式碼編輯器指令碼移轉]**
 
 1. 逐一使用選項來設定您的 [!DNL AEM Forms] 資產相容於 [!DNL AEM] as a Cloud Service：
 
-   1. 點選 **[!UICONTROL AEM Forms資產移轉]**，然後在下一個畫面中，點選 **[!UICONTROL 開始移轉]**. 它會將最適化Forms和主題製作在您的上 [!DNL AEM Forms] 環境相容於 [!DNL AEM] as a Cloud Service。
+   1. 選取 **[!UICONTROL AEM Forms資產移轉]**，然後在下一個畫面中選取 **[!UICONTROL 開始移轉]**. 它會將最適化Forms和主題製作在您的上 [!DNL AEM Forms] 環境相容於 [!DNL AEM] as a Cloud Service。
 
-   1. 點選 **[!UICONTROL 最適化Forms自訂元件移轉]** 在「自訂元件移轉」頁面中，點選 **[!UICONTROL 開始移轉]**. 它會讓您為最適化Forms開發的任何自訂元件，並在您的上完成元件覆蓋 [!DNL AEM Forms] 環境相容於 [!DNL AEM] as a Cloud Service。
+   1. 選取 **[!UICONTROL 最適化Forms自訂元件移轉]** 在「自訂元件移轉」頁面中，選取 **[!UICONTROL 開始移轉]**. 它會讓您為最適化Forms開發的任何自訂元件，並在您的上完成元件覆蓋 [!DNL AEM Forms] 環境相容於 [!DNL AEM] as a Cloud Service。
 
-   1. 點選 **[!UICONTROL 最適化Forms範本移轉]** 在「自訂元件移轉」頁面中，點選 **[!UICONTROL 開始移轉]**. 它於製作最適化表單範本 `/apps` 或 `/conf` 和使用AEM範本編輯器建立的，相容於 [!DNL AEM] as a Cloud Service。
+   1. 選取 **[!UICONTROL 最適化Forms範本移轉]** 在「自訂元件移轉」頁面中，選取 **[!UICONTROL 開始移轉]**. 它於製作最適化表單範本 `/apps` 或 `/conf` 和使用AEM範本編輯器建立的，相容於 [!DNL AEM] as a Cloud Service。
 
-   1. 點選 **[!UICONTROL AEM Forms雲端設定移轉]** 然後在「設定移轉」頁面上，點選「 」 **[!UICONTROL 開始移轉]**. 它會更新下列Cloud Service並將其移動到新位置：
+   1. 選取 **[!UICONTROL AEM Forms雲端設定移轉]** 然後在「組態移轉」頁面上，選取 **[!UICONTROL 開始移轉]**. 它會更新下列Cloud Service並將其移動到新位置：
 
       * 表單資料模型Cloud Service
       * Google reCAPTCHACloud Service
-      * [!DNL Adobe Sign] 雲端服務
+      * [!DNL Adobe Sign] Cloud Service
       * Adobe FontsCloud Service
 
-   1. 點選 **[!UICONTROL 程式碼編輯器指令碼移轉]**，指定儲存可重複使用函式的位置，然後點選「 **[!UICONTROL 開始移轉].
+   1. 選取 **[!UICONTROL 程式碼編輯器指令碼移轉]**，指定儲存可重複使用函式的位置，然後選取「 **[!UICONTROL 開始移轉].
 
    Cloud Service不支援規則編輯器指令碼。 此 **[!UICONTROL 程式碼編輯器指令碼移轉]** 工具會將您環境上的所有規則指令碼轉換為可重複使用的函式，並將可重複使用的函式套用至適當位置的視覺化編輯器。 這些可重複使用的功能會以使用者端程式庫的形式儲存，協助您保持現有功能不變。 此工具會自動將產生的可重複使用函式套用至對應的調適型Forms。
 

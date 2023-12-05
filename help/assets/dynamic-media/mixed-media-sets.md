@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Mixed Media Sets
 role: User
 exl-id: 7ccde741-38d2-44c9-9378-f2721384aab7
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1500'
+source-wordcount: '1507'
 ht-degree: 12%
 
 ---
@@ -158,7 +158,7 @@ ht-degree: 12%
 
    >[!NOTE]
    >
-   >* 若要編輯混合媒體集中的資產 — 導覽至混合媒體集。 點選（不要選取）該集，以便在「Experience Manager集預覽」頁面中將其開啟。 在左側邊欄中，選取向下插入符號以開啟下拉式清單，然後選取 **[!UICONTROL 設定成員]**. 在「設定成員」頁面中，暫留在資產上，然後選取「 」 **[!UICONTROL 編輯]** （鉛筆圖示）以開啟編輯頁面。
+   >* 若要編輯混合媒體集中的資產 — 導覽至混合媒體集。 選取（不要選取）該集，以便在「Experience Manager集預覽」頁面中將其開啟。 在左側邊欄中，選取向下插入符號以開啟下拉式清單，然後選取 **[!UICONTROL 設定成員]**. 在「設定成員」頁面中，暫留在資產上，然後選取「 」 **[!UICONTROL 編輯]** （鉛筆圖示）以開啟編輯頁面。
    >
    >* 要刪除整個混合媒體集 — 從任何檢視模式（例如卡片檢視或欄檢視），導覽至混合媒體集。 暫留在集合上，然後選取 **[!UICONTROL 選取]** （勾選圖示）。 按下 **[!UICONTROL 退格字元]** 或選取「 」 **[!UICONTROL 更多]** （三點列），然後選取「 」 **[!UICONTROL 刪除]**.
 

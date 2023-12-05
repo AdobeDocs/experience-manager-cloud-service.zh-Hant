@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2021.3.0 版發行說明。'
 description: '"[!DNL Adobe Experience Manager] 2021.3.0版as a Cloud Service發行說明。」'
 exl-id: 0c07364c-ba25-4081-8e35-3c1c84ed556f
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '1290'
-ht-degree: 35%
+source-wordcount: '1271'
+ht-degree: 32%
 
 ---
 
@@ -85,7 +85,8 @@ AEM Forms在多年來已幫助許多組織提供絕佳的上線和註冊體驗�
 
 ## 發行日期 {#release-date-cm-march}
 
-AEM as a Cloud Service 2021.3.0 中的 Cloud Manager 發行日期是 2021 年 3 月 11 日。下一版本計畫於 2021 年 4 月 08 日發行。
+AEMas a Cloud Service2021.3.0中Cloud Manager的發行日期為2021年3月11日。
+下一版本計畫於2021年4月8日發行。
 
 ### 新增功能 {#what-is-new-march}
 
@@ -93,7 +94,7 @@ AEM as a Cloud Service 2021.3.0 中的 Cloud Manager 發行日期是 2021 年 3 
 
 * 擁有必要權限的使用者現在可以編輯方案，好讓他們以自助方式執行以下作業：
 
-   * 使用 Assets 將 Sites 解決方案新增現有計畫中，反之亦然。
+   * 將網站解決方案新增到有資產的現有方案中，反之亦然。
    * 從包含 Sites 和 Assets 的現有計畫中移除 Sites 或 Assets。
    * 在現有計畫中新增第二個未使用的解決方案權利，或當做新的計畫。
 
@@ -146,7 +147,7 @@ AEM as a Cloud Service 2021.3.0 中的 Cloud Manager 發行日期是 2021 年 3 
 ### 內容轉移工具的新增功能 {#what-is-new-ctt-march}
 
 * CTT現在安裝至 `/apps` 而非 `/libs` 特定頁面的瀏覽器書籤可能已失效。
-* 安裝CTT時，使用者必須瀏覽其他層級，才能前往「內容轉移」頁面。 另請參閱 [使用內容轉移工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=zh-Hant) 以取得更多詳細資料。
+* 安裝CTT時，使用者必須瀏覽其他層級，才能前往「內容轉移」頁面。 另請參閱 [使用內容轉移工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html) 以取得更多詳細資料。
 
 ### 錯誤修正 {#bug-fixes-ctt-march}
 

@@ -1,18 +1,18 @@
 ---
-title: Dynamic Media 影像設定檔
+title: Dynamic Media影像設定檔
 description: 瞭解如何建立包含遮色片銳利化設定和/或智慧型裁切或智慧型色票設定的Dynamic Media影像設定檔。 然後，將設定檔套用至影像資產的資料夾。
 contentOwner: Rick Brough
 feature: Asset Management,Image Profiles,Renditions
 role: User
 exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '3528'
-ht-degree: 7%
+source-wordcount: '3555'
+ht-degree: 5%
 
 ---
 
-# Dynamic Media 影像設定檔 {#image-profiles}
+# Dynamic Media影像設定檔 {#image-profiles}
 
 上傳影像時，您可以套用影像設定檔至資料夾，在上傳時自動裁切影像。
 
@@ -42,7 +42,7 @@ ht-degree: 7%
   </tr>
   <tr>
    <td>半徑</td>
-   <td>決定邊緣像素周圍會影響銳利化的像素數量。若是高解析度影像，輸入介於 1 到 2 之間的值。低數值只會銳利化邊緣的像素；高數值會銳利化較寬的像素範圍。正確的值取決於影像大小。預設值為0.2。範圍為0到250。</td>
+   <td>決定邊緣畫素周圍影響銳利化的畫素數量。對於高解析度的影像，請輸入1到2。低值只會銳利化邊緣畫素；高值會銳利化較寬的畫素範圍。 正確的值取決於影像的大小。 預設值為0.2。範圍為0到250。</td>
   </tr>
   <tr>
    <td>臨界值</td>
@@ -88,10 +88,10 @@ ht-degree: 7%
 
 | 選項 | 使用時機 | 說明 |
 | --- | --- | --- |
-| **[!UICONTROL 像素裁切]** | 僅根據尺寸大量裁切影像。 | 從 **[!UICONTROL 裁切選項]** 下拉式清單，選取 **[!UICONTROL 畫素裁切]**.<br>若要從影像的側面裁切，請輸入要從影像任何側面或每一側面裁切的畫素數量。 裁切多少影像取決於影像檔案中的ppi （每英吋畫素）設定。<br>「影像設定檔」畫素裁切會以下列方式呈現：<br>·值包括「上」、「下」、「左」和「右」。<br>·考慮左上方 `0,0` 並從此處計算畫素裁切。<br>·裁切起點：左為X，上為Y<br>·水準計算：原始影像的水準畫素大小減去「左」，然後減去「右」。<br>·垂直計算：垂直畫素高度減去「頂端」，然後減去「底部」。<br>例如，假設您有4000 x 3000畫素影像。 您使用下列值：Top=250、Bottom=500、Left=300、Right=700。<br>從左上角(300,250)裁切，使用（4000-300-700、3000-250-500或3000,2250）的填色空間。 |
+| **[!UICONTROL 畫素裁切]** | 僅根據尺寸大量裁切影像。 | 從 **[!UICONTROL 裁切選項]** 下拉式清單，選取 **[!UICONTROL 畫素裁切]**.<br>若要從影像的側面裁切，請輸入要從影像任何側面或每一側面裁切的畫素數量。 裁切多少影像取決於影像檔案中的ppi （每英吋畫素）設定。<br>「影像設定檔」畫素裁切會以下列方式呈現：<br>·值包括「上」、「下」、「左」和「右」。<br>·考慮左上方 `0,0` 並從此處計算畫素裁切。<br>·裁切起點：左為X，上為Y<br>·水準計算：原始影像的水準畫素大小減去「左」，然後減去「右」。<br>·垂直計算：垂直畫素高度減去「頂端」，然後減去「底部」。<br>例如，假設您有4000 x 3000畫素影像。 您使用下列值：Top=250、Bottom=500、Left=300、Right=700。<br>從左上角(300,250)裁切，使用（4000-300-700、3000-250-500或3000,2250）的填色空間。 |
 | **[!UICONTROL 智慧型裁切]** | 根據視覺焦點批次裁切影像。 | 智慧型裁切利用Adobe Sensei中人工智慧的強大功能，快速大量自動裁切影像。 智慧型裁切會自動偵測並裁切至任何影像中的焦點，以取得預期的目標點，無論熒幕大小為何。<br>從 **[!UICONTROL 裁切選項]** 下拉式清單，選取 **[!UICONTROL 智慧型裁切]**，然後在的右側 **[!UICONTROL 回應式影像裁切]**，啟用（開啟）此功能。<br>預設中斷點大小(**[!UICONTROL 大]**， **[!UICONTROL Medium]**， **[!UICONTROL 小]**)涵蓋行動裝置和平板電腦裝置、桌上型電腦及橫幅上大部分影像所使用的各種尺寸。 如有需要，您可以編輯「大」、「中」和「小」的預設名稱。<br>若要新增更多中斷點，請選取 **[!UICONTROL 新增裁切]**；若要刪除裁切，請選取「垃圾桶」圖示。 |
-| **[!UICONTROL 顏色及影像樣本]** | 大量產生每個影像的影像色票。 | **注意**： Dynamic Media Classic不支援智慧型色票。<br>從顯示顏色或紋理的產品影像中自動尋找並產生高品質色票。<br>從 **[!UICONTROL 裁切選項]** 下拉式清單，選取 **[!UICONTROL 智慧型裁切]**. 然後在右側 **[!UICONTROL 顏色和影像色票]**，啟用（開啟）此功能。 輸入畫素值，在 **[!UICONTROL 寬度]** 和 **[!UICONTROL 高度]** 文字方塊。<br>雖然所有影像裁切都可從「轉譯」邊欄使用，但色票僅能透過 **[!UICONTROL 複製URL]** 功能。 使用您自己的檢視元件來呈現網站上的色票。 此規則的例外是輪播橫幅。 Dynamic Media為輪播橫幅中使用的色票提供檢視元件。<br><br>**使用影像色票**<br>&#x200B;影像色票的URL簡單明瞭：<br>`/is/image/company/&lt;asset_name&gt;:Swatch`<br>位置 `:Swatch` 會附加至資產請求。<br><br>**使用色票**<br>&#x200B;若要使用色票，請製作 `req=userdata` 以下列專案請求：<br>`/is/image/&lt;company_name&gt;/&lt;swatch_asset_name&gt;:Swatch?req=userdata`<br><br>例如，以下是Dynamic Media Classic中的色票資產：<br>`https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch`<br>以下是色票資產的對應 `req=userdata` URL：<br>`https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata`<br>此 `req=userdata` 回應如下：<br>`SmartCropDef=Swatch`<br>`SmartCropHeight=200.0`<br>`SmartCropRect=0.421671,0.389815,0.0848564,0.0592593,200,200`<br>`SmartCropType=Swatch`<br>`SmartCropWidth=200.0`<br>`SmartSwatchColor=0xA56DB2`<br>您也可以要求 `req=userdata` XML或JSON格式的回應，如下列個別URL範例所示：<br>·`https://my.company.com</code>:8080/is/image/DemoCo/Sleek:Swatch?req=userdata,json`<br>·`https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata,xml`<br><br>**注意**：您必須建立自己的WCM元件，以要求色票並剖析 `SmartSwatchColor` 屬性，以24位元RGB的十六進位值表示。<br>另請參閱 [`userdata`](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/req/r-userdata.html) 在檢視器參考指南中。 |
-| **[!UICONTROL 保留各種目標解析度的裁切內容]** | 若要維持相同外觀比例的裁切內容 | 當您建立智慧型裁切設定檔時使用。<br>若要針對不同解析度中的指定外觀比例產生新的裁切內容（同時仍維持焦點），請取消勾選此選項 <br>如果您決定取消核取此方塊，請確定原始影像解析度大於您為智慧型裁切描述檔定義的解析度。<br><br>例如，假設您已將外觀比例設定為600 x 600 （大）、400 x 400 （中）和300 x 300 （小）。<br>時間 **[!UICONTROL 保留所有目標解析度的裁切內容]** 選項為 *已核取*，您會在所有三個解析度中看到相同的裁切，類似於下列影像輸出範例（僅供說明用途）：<br>![已勾選選項](/help/assets/dynamic-media/assets/preserve-checked.png)<br><br>時間 **[!UICONTROL 保留所有目標解析度的裁切內容]** 選項為 *未勾選*，裁切內容在所有三種解析度中都是新的，類似於以下影像輸出範例（僅供說明用途）：<br>![已取消勾選選項](/help/assets/dynamic-media/assets/preserve-unchecked.png) |
+| **[!UICONTROL 顏色和影像色票]** | 大量產生每個影像的影像色票。 | **注意**： Dynamic Media Classic不支援智慧型色票。<br>從顯示顏色或紋理的產品影像中自動尋找並產生高品質色票。<br>從 **[!UICONTROL 裁切選項]** 下拉式清單，選取 **[!UICONTROL 智慧型裁切]**. 然後在右側 **[!UICONTROL 顏色和影像色票]**，啟用（開啟）此功能。 輸入畫素值，在 **[!UICONTROL 寬度]** 和 **[!UICONTROL 高度]** 文字方塊。<br>雖然所有影像裁切都可從「轉譯」邊欄使用，但色票僅能透過 **[!UICONTROL 複製URL]** 功能。 使用您自己的檢視元件來呈現網站上的色票。 此規則的例外是輪播橫幅。 Dynamic Media為輪播橫幅中使用的色票提供檢視元件。<br><br>**使用影像色票**<br>&#x200B;影像色票的URL簡單明瞭：<br>`/is/image/company/&lt;asset_name&gt;:Swatch`<br>位置 `:Swatch` 會附加至資產請求。<br><br>**使用色票**<br>&#x200B;若要使用色票，請製作 `req=userdata` 以下列專案請求：<br>`/is/image/&lt;company_name&gt;/&lt;swatch_asset_name&gt;:Swatch?req=userdata`<br><br>例如，以下是Dynamic Media Classic中的色票資產：<br>`https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch`<br>以下是色票資產的對應 `req=userdata` URL：<br>`https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata`<br>此 `req=userdata` 回應如下：<br>`SmartCropDef=Swatch`<br>`SmartCropHeight=200.0`<br>`SmartCropRect=0.421671,0.389815,0.0848564,0.0592593,200,200`<br>`SmartCropType=Swatch`<br>`SmartCropWidth=200.0`<br>`SmartSwatchColor=0xA56DB2`<br>您也可以要求 `req=userdata` XML或JSON格式的回應，如下列個別URL範例所示：<br>·`https://my.company.com</code>:8080/is/image/DemoCo/Sleek:Swatch?req=userdata,json`<br>·`https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata,xml`<br><br>**注意**：您必須建立自己的WCM元件，以要求色票並剖析 `SmartSwatchColor` 屬性，以24位元RGB的十六進位值表示。<br>另請參閱 [`userdata`](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/req/r-userdata.html) 在檢視器參考指南中。 |
+| **[!UICONTROL 保留所有目標解析度的裁切內容]** | 若要維持相同外觀比例的裁切內容 | 當您建立智慧型裁切設定檔時使用。<br>若要針對不同解析度中的指定外觀比例產生新的裁切內容（同時仍維持焦點），請取消勾選此選項 <br>如果您決定取消核取此方塊，請確定原始影像解析度大於您為智慧型裁切描述檔定義的解析度。<br><br>例如，假設您已將外觀比例設定為600 x 600 （大）、400 x 400 （中）和300 x 300 （小）。<br>時間 **[!UICONTROL 保留所有目標解析度的裁切內容]** 選項為 *已核取*，您會在所有三個解析度中看到相同的裁切，類似於下列影像輸出範例（僅供說明用途）：<br>![已勾選選項](/help/assets/dynamic-media/assets/preserve-checked.png)<br><br>時間 **[!UICONTROL 保留所有目標解析度的裁切內容]** 選項為 *未勾選*，裁切內容在所有三種解析度中都是新的，類似於以下影像輸出範例（僅供說明用途）：<br>![已取消勾選選項](/help/assets/dynamic-media/assets/preserve-unchecked.png) |
 
 ### 智慧型裁切和色票支援的影像檔案格式
 
@@ -178,7 +178,7 @@ ht-degree: 7%
 
 #### 從「屬性」將Dynamic Media影像設定檔套用至資料夾 {#applying-image-profiles-to-folders-from-properties}
 
-1. 點選Experience Manager標誌並導覽至 **[!UICONTROL 資產]**.
+1. 選取Experience Manager標誌並導覽至 **[!UICONTROL 資產]**.
 1. 導覽至 *資料夾* （非資產）以套用影像設定檔。
 1. 根據您所在的檢視，執行下列任一項作業：
    * 在「卡片檢視」中，將指標暫留在資料夾上，然後選取核取記號以選取它。

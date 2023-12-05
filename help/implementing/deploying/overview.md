@@ -3,10 +3,10 @@ title: 部署至 AEM as a Cloud Service
 description: 了解部署至 AEM as a Cloud Service 的基礎知識和最佳做法
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
-source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '3470'
-ht-degree: 100%
+source-wordcount: '3429'
+ht-degree: 98%
 
 ---
 
@@ -71,7 +71,7 @@ ht-degree: 100%
 
 對於擁有現有程式碼庫的客戶，至關重要的是完成 AEM 文件描述的存放庫重組練習，以確保將以前位於 /etc 下的內容移動到正確的位置。
 
-一些額外的限制適用於這些程式碼套件，例如不支援 [安裝 Hook](https://jackrabbit.apache.org/filevault/installhooks.html)。
+這些程式碼套件適用某些其他限制，例如， [安裝鉤點](https://jackrabbit.apache.org/filevault/installhooks.html) 不受支援。
 
 ## OSGI 設定 {#osgi-configuration}
 
@@ -134,7 +134,7 @@ ht-degree: 100%
   >
   >ACL 的定義要求已存在的節點結構。因此，前面必須要有建立路徑陳述式。
 
-* 新增路徑 (例如根資料夾結構)
+* 新增路徑（例如，根資料夾結構的路徑）
 * 新增 CND (節點類型定義)
 
 由於以下好處，repoinit 更適合這些受支援的內容修改使用案例：
@@ -295,7 +295,7 @@ above appears to be internal, to confirm with Brian -->
 
 另一方面，AEM as a Cloud Service 對於哪些執行模式可用，以及如何將 OSGI 套裝和 OSGI 設定對應到它們更有自己的做法：
 
-* OSGI 設定執行模式必須參照快速開發環境、開發、中繼、生產環境，或編寫、發佈服務。支援 `<service>.<environment_type>` 的組合，但必須按此特定順序 (例如 `author.dev` 或 `publish.prod`) 使用這些環境。應直接從程式碼中參考 OSGI 權杖，而不是使用 `getRunModes` 方法，後者在執行階段不再包含 `environment_type`。如需詳細資訊，請參閱[為 AEM as a Cloud Service 設定 OSGi](/help/implementing/deploying/configuring-osgi.md)。
+* OSGI 設定執行模式必須參照快速開發環境、開發、中繼、生產環境，或編寫、發佈服務。組合 `<service>.<environment_type>` 受支援，但這些環境必須以此特定順序使用(例如 `author.dev` 或 `publish.prod`)。 應直接從程式碼中參考 OSGI 權杖，而不是使用 `getRunModes` 方法，後者在執行階段不再包含 `environment_type`。如需詳細資訊，請參閱[為 AEM as a Cloud Service 設定 OSGi](/help/implementing/deploying/configuring-osgi.md)。
 * OSGI 套裝執行模式限制在服務 (編寫、發佈)。預執行模式 OSGI 套裝應安裝在 `install.author` 或 `install.publish` 下的內容套件中。
 
 AEM as a Cloud Service 不允許使用執行模式為特定環境或服務安裝內容。如果開發環境必須使用中繼或生產環境中不存在的資料或 HTML 進行植入，則可以使用封裝管理員。

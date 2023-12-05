@@ -5,10 +5,10 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 25adabfb-ff19-4cb2-aef5-0a8086d2e552
-source-git-commit: 397e7d4f23202b8ae7419b0ad5436a6a10e2efb8
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '771'
-ht-degree: 11%
+source-wordcount: '761'
+ht-degree: 10%
 
 ---
 
@@ -27,8 +27,8 @@ ht-degree: 11%
 
 若要將內嵌樣式新增至元件：
 
-1. 在表單編輯器中開啟您的表單，並將模式變更為樣式模式。 若要將模式變更為樣式模式，請在頁面工具列中，點選 ![畫佈下拉式清單](assets/Smock_ChevronDown.svg) > **[!UICONTROL 樣式]**.
-1. 在頁面中選取元件，然後點選編輯按鈕 ![編輯按鈕](assets/edit.svg). 在側邊欄中開啟樣式屬性。
+1. 在表單編輯器中開啟您的表單，並將模式變更為樣式模式。 若要將模式變更為樣式模式，請在頁面工具列中，選取 ![畫佈下拉式清單](assets/Smock_ChevronDown.svg) > **[!UICONTROL 樣式]**.
+1. 在頁面中選取元件，然後選取編輯按鈕 ![編輯按鈕](assets/edit.svg). 在側邊欄中開啟樣式屬性。
 
    您也可以從側欄中的表單階層樹狀結構中選取元件。 表單階層樹狀結構可在側邊欄中做為表單物件使用。
 
@@ -46,7 +46,7 @@ ht-degree: 11%
    * [!UICONTROL 進階] （可讓您為元件編寫自訂CSS）
 
 1. 同樣地，您也可以為元件的其他零件套用樣式，例如 [!UICONTROL Widget]， [!UICONTROL 註解]、和 [!UICONTROL 說明].
-1. 點選 **[!UICONTROL 完成]** 確認變更或 **[!UICONTROL 取消]** 以捨棄變更。
+1. 選取 **[!UICONTROL 完成]** 確認變更或 **[!UICONTROL 取消]** 以捨棄變更。
 
 ## 範例：欄位元件的內嵌樣式 {#example-inline-styles-for-a-field-component}
 
@@ -81,7 +81,7 @@ ht-degree: 11%
   <tr>
    <td><p>標籤</p> </td>
    <td><p>Dimension與位置&gt;寬度</p> </td>
-   <td><p>100px</p> </td>
+   <td><p>100畫素</p> </td>
    <td><p>修正標籤的寬度為100px</p> </td>
   </tr>
   <tr>
@@ -111,9 +111,9 @@ ht-degree: 11%
 
 ## 複製並貼上樣式 {#copy-paste-styles}
 
-您也可以在最適化表單中，將樣式從一個元件複製並貼到另一個元件。 在 **[!UICONTROL 樣式]** 模式，點選元件並點選「複製」圖示 ![複製](assets/property-copy-icon.svg).
+您也可以在最適化表單中，將樣式從一個元件複製並貼到另一個元件。 在 **[!UICONTROL 樣式]** 模式，選取元件並選取復製圖示 ![複製](assets/property-copy-icon.svg).
 
-點選相同型別的其他元件，然後點選「貼上」圖示 ![複製](assets/Smock_Paste_18_N.svg) 貼上複製的樣式。 您也可以點選「清除樣式」圖示 ![複製](assets/clear-style-icon.svg) 以清除套用的樣式。
+選取相同型別的其他元件，然後選取「貼上」圖示 ![複製](assets/Smock_Paste_18_N.svg) 貼上複製的樣式。 您也可以選取「清除樣式」圖示 ![複製](assets/clear-style-icon.svg) 以清除套用的樣式。
 
 ## 為元件的不同狀態設定樣式 {#set-styles-for-states}
 
@@ -121,15 +121,15 @@ ht-degree: 11%
 
 若要定義元件狀態的樣式：
 
-1. 在 **[!UICONTROL 樣式]** 模式，點選元件並點選「編輯」圖示 ![編輯](assets/Smock_Edit_18_N.svg).
+1. 在 **[!UICONTROL 樣式]** 模式，選取元件並選取編輯圖示 ![編輯](assets/Smock_Edit_18_N.svg).
 
 1. 使用選取元件狀態 **[!UICONTROL 狀態]** 下拉式清單。
 
    ![選取狀態](assets/select-state.png)
 
-1. 為元件的所選狀態定義樣式，然後點選 ![儲存](assets/save_icon.svg) 以儲存屬性。
+1. 為元件的所選狀態定義樣式，然後選取 ![儲存](assets/save_icon.svg) 以儲存屬性。
 
-您也可以模擬成功和錯誤狀態。 點選「展開」圖示以檢視 **[!UICONTROL 模擬成功]** 和 **[!UICONTROL 模擬錯誤]** 選項。
+您也可以模擬成功和錯誤狀態。 選取「展開」圖示以檢視 **[!UICONTROL 模擬成功]** 和 **[!UICONTROL 模擬錯誤]** 選項。
 
 ![模擬狀態](assets/simulate-states.png)
 

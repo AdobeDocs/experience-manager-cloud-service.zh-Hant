@@ -4,10 +4,10 @@ description: 使用Google reCAPTCHA服務輕鬆增強表單安全性。 內的�
 topic-tags: Adaptive Forms, author
 keywords: Google reCAPTCHA服務，最適化Forms， CAPTCHA挑戰，機器人預防，核心元件，表單提交安全性，表單垃圾郵件預防
 exl-id: d116f979-efb6-4fac-8202-89afd1037b2c
-source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '919'
-ht-degree: 4%
+source-wordcount: '918'
+ht-degree: 2%
 
 ---
 
@@ -34,7 +34,7 @@ CAPTCHA （完全自動化公用圖靈測試來區分電腦和人之間的差異
    ![建立Google網站的Google reCAPTCHA組態以取得reCAPTCHA金鑰](/help/forms/assets/google-captcha.gif)
 1. 在您的AEM Formsas a Cloud Service環境中建立設定容器。 設定容器內含用來將AEM連線至外部服務的雲端設定。 若要建立並設定設定設定容器，以透過Google將您的AEM Forms環境與reCAPTCHA服務連線：
    1. 開啟您的AEM Formsas a Cloud Service執行個體。
-   1. 前往&#x200B;**[!UICONTROL 工具 > 一般 > 設定瀏覽器]**。在設定瀏覽器中，您可以：
+   1. 前往 **[!UICONTROL 「工具」>「一般」>「設定瀏覽器」]**. 在設定瀏覽器中，您可以：
    1. 選取現有資料夾或建立資料夾。 您可以建立檔案夾並為其啟用Cloud Configurations選項，或為現有檔案夾啟用Cloud Configurations選項：
 
       * 若要建立資料夾並為其啟用雲端設定選項：
@@ -42,14 +42,14 @@ CAPTCHA （完全自動化公用圖靈測試來區分電腦和人之間的差異
          1. 在建立組態對話方塊中，指定名稱、標題，然後選取 **[!UICONTROL 雲端設定]** 選項。
          1. 按一下 **[!UICONTROL 建立]**
       * 若要啟用現有資料夾的「雲端設定」選項：
-         1. 在設定瀏覽器中，選取資料夾並點選 **[!UICONTROL 屬性]**.
+         1. 在組態瀏覽器中，選取資料夾並選取 **[!UICONTROL 屬性]**.
          1. 在組態內容對話方塊中，啟用 **[!UICONTROL 雲端設定]**.
-         1. 點選&#x200B;**[!UICONTROL 儲存並關閉]**&#x200B;以儲存設定並退出對話框。
+         1. 選取 **[!UICONTROL 儲存並關閉]** 以儲存組態並結束對話方塊。
 
 1. 設定Cloud Service：
-   1. 在您的AEM編寫執行個體上，前往 ![tools-1](assets/tools-1.png) > **[!UICONTROL Cloud Service]** 然後點選 **[!UICONTROL reCAPTCHA]**.
-   1. 選取在前一節中建立或更新的「設定容器」。 點選「**[!UICONTROL 建立]**」。
-   1. 指定 **[!UICONTROL 標題]**， **[!UICONTROL 名稱]**， **[!UICONTROL 網站金鑰]**、和 **[!UICONTROL 秘密金鑰]** reCAPTCHA服務（在步驟1取得）。 點選「**[!UICONTROL 建立]**」。
+   1. 在您的AEM編寫執行個體上，前往 ![tools-1](assets/tools-1.png) > **[!UICONTROL Cloud Service]** 並選取 **[!UICONTROL reCAPTCHA]**.
+   1. 選取在前一節中建立或更新的「設定容器」。 選擇 **[!UICONTROL 建立]**。
+   1. 指定 **[!UICONTROL 標題]**， **[!UICONTROL 名稱]**， **[!UICONTROL 網站金鑰]**、和 **[!UICONTROL 秘密金鑰]** reCAPTCHA服務（在步驟1取得）。 選擇 **[!UICONTROL 建立]**。
 
    ![設定Cloud Service以透過Google使用reCAPTCHA服務連線您的AEM Forms環境](/help/forms/assets/captcha-configuration.gif)
 
@@ -61,23 +61,23 @@ CAPTCHA （完全自動化公用圖靈測試來區分電腦和人之間的差異
 
 1. 開啟您的AEM Formsas a Cloud Service執行個體。
 1. 前往 **[!UICONTROL Forms]** > **[!UICONTROL Forms與檔案]**.
-1. 選取最適化Forms並點選 **[!UICONTROL 屬性]**. 對於 **[!UICONTROL 設定容器]** 選項，選取包含雲端設定的設定容器，此雲端設定會透過Google將AEM Forms與reCAPTCHA服務連線，然後點選 **[!UICONTROL 儲存並關閉]**.
+1. 選取最適化Forms並選取 **[!UICONTROL 屬性]**. 對於 **[!UICONTROL 設定容器]** 選項，選取包含雲端設定的設定容器，此雲端設定會透過Google將AEM Forms與reCAPTCHA服務連線，然後選取 **[!UICONTROL 儲存並關閉]**.
 
    如果您沒有這類設定容器，請參閱區段 [透過Google的reCAPTCHA服務連線您的AEM Forms環境](#connect-your-forms-environment-with-recaptcha-service-by-google) 以瞭解如何建立這類設定容器。
 
    ![選取設定容器](/help/forms/assets/captcha-properties.png)
 
-1. 選取最適化Forms並點選 **[!UICONTROL 編輯]**. 最適化表單會在最適化Forms編輯器中開啟。
+1. 選取最適化Forms並選取 **[!UICONTROL 編輯]**. 最適化表單會在最適化Forms編輯器中開啟。
 1. 在元件瀏覽器中，拖放 **[!UICONTROL 最適化表單reCAPTCHA]** 元件至最適化表單。
 
    Google reCAPTCHA驗證常有時效性，約幾分鐘後就會過期。 因此，Adobe建議將 **[!UICONTROL 最適化表單reCAPTCHA]** 元件位於 **[!UICONTROL 提交]** 按鈕。
 
-1. 選取 **[!UICONTROL 最適化表單reCAPTCHA]** 元件並點選屬性 ![屬性圖示](assets/configure-icon.svg) 圖示。 它會開啟屬性對話方塊。 指定下列強制屬性：
+1. 選取 **[!UICONTROL 最適化表單reCAPTCHA]** 元件並選取屬性 ![屬性圖示](assets/configure-icon.svg) 圖示。 它會開啟屬性對話方塊。 指定下列強制屬性：
    * **[!UICONTROL 名稱]：** 在表單和規則編輯器中，您可以使用表單元件的唯一名稱輕鬆識別表單元件，但名稱不得包含空格或特殊字元。
    * **[!UICONTROL 驗證碼組態]：** 選取雲端設定，設定為顯示表單的Google reCAPTCHA對話方塊。 基於類似目的，您的環境中可以有多個雲端設定。 因此，請謹慎選擇服務。 若未列出任何服務，請參閱 [透過Google的reCAPTCHA服務連線您的AEM Forms環境](#connect-your-forms-environment-with-recaptcha-service-by-google) 以瞭解如何建立一個Cloud Service，將您的AEM Forms環境與Google的reCAPTCHA服務連線起來。
    * **驗證碼大小：** 您可以選取Google reCAPTCHA挑戰對話方塊的顯示大小。 使用 **[!UICONTROL 精簡]** 顯示小尺寸和 **[!UICONTROL 一般]** 用於顯示相對較大的Google reCAPTCHA挑戰對話方塊的選項。
 
-1. 點選 **[!UICONTROL 完成]**.
+1. 選取 **[!UICONTROL 完成]**.
 
    現在， **受reCAPTCHA保護** 會顯示在您的Adaptive Form上。 它會顯示在所有設定為可使用Google reCAPTCHA服務的最適化Forms上。
 
@@ -87,11 +87,11 @@ CAPTCHA （完全自動化公用圖靈測試來區分電腦和人之間的差異
 <!--
 ### Show or hide CAPTCHA component based on rules {#show-hide-captcha}
 
-You can select to show or hide the CAPTCHA component based on rules that you apply on a component in an Adaptive Form. Tap the component, select ![edit rules](assets/edit-rules-icon.svg), and tap **[!UICONTROL Create]** to create a rule. For more information on creating rules, see [Rule Editor](rule-editor.md).
+You can select to show or hide the CAPTCHA component based on rules that you apply on a component in an Adaptive Form. Select the component, select ![edit rules](assets/edit-rules-icon.svg), and select **[!UICONTROL Create]** to create a rule. For more information on creating rules, see [Rule Editor](rule-editor.md).
 
 For example, the CAPTCHA component must display in an Adaptive Form only if the Currency Value field in the form has a value of more than 25000.
 
-Tap the **[!UICONTROL Currency Value]** field in the form and create the following rules:
+Select the **[!UICONTROL Currency Value]** field in the form and create the following rules:
 
 ![Show or hide rules](assets/rules-show-hide-captcha.png)
 

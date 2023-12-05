@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: Spin Sets
 role: User
 exl-id: ed470472-62d9-4684-971b-30df3919c180
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1926'
-ht-degree: 9%
+source-wordcount: '1956'
+ht-degree: 8%
 
 ---
 
@@ -38,7 +38,7 @@ ht-degree: 9%
 
 若要快速啟動並執行「迴轉集」，請遵循下列步驟：
 
-1. 選用. [建立批次集預設集](/help/assets/dynamic-media/batch-set-presets-dm.md) 並將其套用至新的資產資料夾。
+1. 選填。 [建立批次集預設集](/help/assets/dynamic-media/batch-set-presets-dm.md) 並將其套用至新的資產資料夾。
 
    批次集預設集可以幫助您自動建立迴轉集。
 
@@ -144,7 +144,7 @@ ht-degree: 9%
 
    * 在「迴轉集編輯器」頁面的左上角附近，選取 **[!UICONTROL 新增資產]**.
 
-   * 在「迴轉集編輯器」頁面中間附近，選取 **[!UICONTROL 點選以開啟資產選擇器]**.
+   * 在「迴轉集編輯器」頁面中間附近，選取 **[!UICONTROL 選取以開啟資產選擇器]**.
 
    選取您要納入迴轉集的資產。 選取的資產上面有核取標籤圖示。完成後，在頁面的右上角附近，選取 **[!UICONTROL 選取]**.
 

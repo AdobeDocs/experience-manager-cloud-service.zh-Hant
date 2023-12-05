@@ -2,17 +2,17 @@
 title: 編寫頁面的快速入門手冊
 description: 快速高階指南，協助您開始編寫頁面內容
 exl-id: d37c9b61-7382-4bf6-8b90-59726b871264
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '1541'
-ht-degree: 6%
+ht-degree: 5%
 
 ---
 
 
 # 編寫頁面的快速入門手冊 {#quick-guide-to-authoring-pages}
 
-本檔案旨在作為AEM中重要頁面製作動作的高層級快速入門手冊。 本文件:
+本檔案旨在作為AEM中重要頁面製作動作的高層級快速入門手冊。 本檔案：
 
 * 不是為了提供完整的涵蓋範圍。
 * 提供詳細檔案的連結。
@@ -91,19 +91,19 @@ ht-degree: 6%
 
 如何選取頁面取決於您在主控台中使用的檢視：
 
-1. 欄檢視:
+1. 欄檢視：
 
    * 選取所需資源的縮圖 — 縮圖上覆蓋有勾號，表示已選取該縮圖。
 
-1. 清單檢視:
+1. 清單檢視：
 
    * 選取所需資源的縮圖 — 縮圖上覆蓋有勾號，表示已選取該縮圖。
 
-1. 卡片檢視:
+1. 卡片檢視：
 
    * 進入選擇模式的方法有： [選取所需的資源](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources). 如何執行此動作取決於您的裝置：
 
-      * 在行動裝置上：點選並按住卡片
+      * 在行動裝置上：選取並按住卡片
       * 在案頭裝置上：使用 [快速動作](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions) 以勾號圖示表示：
 
    * 卡片上覆蓋有一個勾號，表示已選取頁面。
@@ -148,7 +148,7 @@ ht-degree: 6%
    * [編輯現有元件的內容](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) 在頁面上：
 
       * 選取「 」以開啟元件工具列。 使用 **編輯** （鉛筆）圖示以開啟對話方塊。
-      * 使用點選並按住或按兩下滑鼠鍵開啟元件的就地編輯器。 會顯示可用的動作（對於某些元件而言，為有限的選取範圍）。
+      * 使用select-and-hold或按兩下滑鼠鍵開啟元件的就地編輯器。 會顯示可用的動作（對於某些元件而言，為有限的選取範圍）。
       * 若要檢視所有可用動作，請使用以下方法進入全熒幕模式：
 
         ![全熒幕按鈕](/help/sites-cloud/authoring/assets/full-screen.png)
@@ -252,15 +252,15 @@ ht-degree: 6%
 
    接著，視您的動作而定：
 
-   * [複製](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#copying-and-pasting-a-page):
+   * [複製](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#copying-and-pasting-a-page)：
 
       * 然後，您需要導覽至新位置並貼上。
 
-   * [移動](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#moving-or-renaming-a-page):
+   * [移動](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#moving-or-renaming-a-page)：
 
       * 精靈會開啟，以收集移動頁面所需的資訊。 請依照熒幕上的指示操作。
 
-   * [刪除](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#deleting-a-page):
+   * [刪除](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#deleting-a-page)：
 
       * 系統會要求您確認動作。
 

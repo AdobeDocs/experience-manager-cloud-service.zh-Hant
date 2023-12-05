@@ -4,10 +4,10 @@ description: 瞭解翻譯規則如何識別需要翻譯的內容。
 feature: Language Copy
 role: Admin
 exl-id: 24cc6aa6-5b3c-462b-a10a-8b25277229dc
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '1288'
-ht-degree: 2%
+ht-degree: 1%
 
 ---
 
@@ -44,7 +44,7 @@ ht-degree: 2%
 * 規則套用的節點路徑
    * 此規則也會套用至節點的子代。
 * 包含要翻譯之內容的節點屬性名稱
-   * 該屬性可專屬於特定資源類型或所有資源類型.
+   * 屬性可特定於特定資源型別或所有資源型別。
 
 例如，您可以建立規則來轉譯作者新增至您頁面上所有文字元件的內容。 此規則可識別 `/content` 節點和 `text` 的屬性 `core/wcm/components/text/v2/text` 元件。
 

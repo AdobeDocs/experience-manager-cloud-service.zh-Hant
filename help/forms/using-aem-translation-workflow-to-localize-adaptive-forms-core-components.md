@@ -3,9 +3,9 @@ title: 如何翻譯以核心元件為基礎的最適化表單？
 description: 瞭解如何在AEM Forms中建立表單資料模型、使用範例資料和服務測試模型，並為模型設定各種選項。
 feature: Adaptive Forms
 exl-id: ad46bf0f-e6ec-4c52-9695-5768a9968e16
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '896'
+source-wordcount: '884'
 ht-degree: 4%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 4%
 
 機器翻譯服務會立即以最適化表單翻譯您的內容，並且 [記錄檔案](/help/forms/generate-document-of-record-core-components.md). AEM Formsas a Cloud Service已預先設定為使用機器翻譯適用的Microsoft Translator試用版。 執行以下步驟來啟用最適化Forms和記錄檔案的機器翻譯：
 
-1. 在AEM Forms UI上，選取表單，然後點選 **[!UICONTROL 新增字典]** 選項。
+1. 在AEM Forms UI上，選取表單，然後選取 **[!UICONTROL 新增字典]** 選項。
 1. 在「新增字典至翻譯專案」畫面中，針對 **[!UICONTROL 專案]** 選項
 
    * 若要建立翻譯專案，請選取 **[!UICONTROL 建立新的翻譯專案]** 選項和 **專案標題** 欄位中，指定標題。 例如 `Government Reference Site - German locale.`
@@ -49,7 +49,7 @@ ht-degree: 4%
    [Document of Record settings](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#p-document-of-record-settings-p)
 
 1. [Customize the branding information of the document of record](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md) and ensure that the browser locale is set to the same language to which you have localized the Adaptive Form using machine language. The browser locale helps localize the branding information in the document of record.
-1. To view the localized document of record, tap Generate Preview. The document of record PDF is generated and opened in a new tab in your browser.
+1. To view the localized document of record, select Generate Preview. The document of record PDF is generated and opened in a new tab in your browser.
 
 -->
 
@@ -61,7 +61,7 @@ ht-degree: 4%
 
 執行以下步驟，使用人工翻譯將表單及其記錄檔案本地化：
 
-1. 在AEM Forms UI上，選取表單，然後點選 **[!UICONTROL 新增字典]** 選項。
+1. 在AEM Forms UI上，選取表單，然後選取 **[!UICONTROL 新增字典]** 選項。
 1. 在「新增字典至翻譯專案」畫面中，針對 **[!UICONTROL 專案]** 選項
 
    * 若要建立翻譯專案，請選取 **[!UICONTROL 建立新的翻譯專案]** 選項和 **專案標題** 欄位中，指定標題。 例如 `Government Reference Site - German locale.`

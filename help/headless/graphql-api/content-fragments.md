@@ -3,10 +3,10 @@ title: 與內容片段搭配使用的 AEM GraphQL API
 description: 了解如何將 Adobe Experience Manager (AEM) as a Cloud Service 中的內容片段與 AEM GraphQL API 搭配使用，以實現 Headless 內容傳遞。
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '4923'
-ht-degree: 94%
+source-wordcount: '4863'
+ht-degree: 93%
 
 ---
 
@@ -115,7 +115,7 @@ AEM 提供將查詢 (兩種類型) 轉換為[持續性查詢的功能，可由 D
 
 不建議使用 POST 要求的 GraphQL 查詢，因為它們不會被快取，因此在預設執行個體上，Dispatcher 設定為阻擋此類查詢。
 
-雖然 GraphQL 也支援 GET 要求，但這些要求可能會達到限制 (例如 URL 的長度)，而使用持續性查詢可以避免此狀況。
+雖然GraphQL也支援GET要求，但這些要求可能會達到限制（例如URL的長度），而使用「持續查詢」可以避免這些限制。
 
 如需更多的詳細資訊，請參閱[啟用持續性查詢的快取](/help/headless/deployment/dispatcher-caching.md)。
 
@@ -519,7 +519,7 @@ query GetAdventureByType($includePrice: Boolean!) {
 * 每個子定義包含 `_expressions` 陣列，其提供運算式集，以及 `_logOp` 欄位，其定義應用來將運算式合併的邏輯運算子
 * 每個運算式由值 (`value` 欄位) 和運算子 (`_operator` 欄位) 定義，應比較欄位內容與
 
-請注意，如果要將項目與 `AND` 合併，則可以省略 `_logOp`；如果要檢查是否相等，則可以省略 `_operator`，因為這些是預設值。
+您可以省略 `_logOp` 如果您想要結合專案與 `AND` 和 `_operator` 如果您要檢查是否相等，因為這些是預設值。
 
 以下範例示範一個完整的查詢，該查詢會篩選所有 `lastName`為 `Provo` 或包含 `sjö` 的人，不受大小寫影響：
 

@@ -4,10 +4,10 @@ description: 將Adaptive Forms順暢地內嵌於AEM Sites頁面或AEM外部託�
 feature: Adaptive Forms
 Keywords: Forms AEM Sites, Embed Form to a Sites page, Adaptive Forms AEM Sites, Embed Adaptive Forms to AEM Page, Embed Forms in an AEM Sites page
 exl-id: 359b05e8-d8c1-4a77-9e70-6f6b6e668560
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '3164'
-ht-degree: 6%
+source-wordcount: '3145'
+ht-degree: 5%
 
 ---
 
@@ -51,7 +51,7 @@ In addition, Adaptive Forms in AEM Page Editor use [Adaptive Forms Core Componen
 
 您可以使用以下選項來充分利用此功能：
 
-* **[使用已核准的範本建立最適化表單，並將其內嵌至AEM Sites頁面](#embed-form-using-adaptive-form-wizzard-aem-sites)：** 您可以善用預先核准的範本，快速建立和內嵌符合您組織品牌指導方針和設計標準的最適化Forms。
+* **[使用已核准的範本建立最適化表單，並將其內嵌至AEM Sites頁面](#embed-form-using-adaptive-form-wizzard-aem-sites)：** 您可以使用預先核准的範本，快速建立並內嵌符合您組織品牌指導方針與設計標準的最適化Forms。
 
 * **[將現有表單內嵌至AEM Sites頁面](#embed-an-adaptive-form-in-sites-editor)：** 您可以輕鬆將已建立的表單整合至網站，讓訪客直接與表單互動。
 
@@ -201,7 +201,7 @@ In addition, Adaptive Forms in AEM Page Editor use [Adaptive Forms Core Componen
 
 1. 在編輯模式中開啟 AEM Sites 頁面。
 1. 拖放 **[!UICONTROL 最適化Forms — 內嵌(v2)]** 元件從元件瀏覽器移至Sites頁面。
-1. 點選 **[!UICONTROL 最適化Forms — 內嵌]** 元件於「網站」頁面中並點選 ![最適化表單容器屬性](/help/forms/assets/configure-icon.svg) 於動作列上。 此 **[!UICONTROL 編輯最適化Forms — 內嵌(v2)]** 對話方塊開啟。
+1. 選取 **[!UICONTROL 最適化Forms — 內嵌]** 元件並選取 ![最適化表單容器屬性](/help/forms/assets/configure-icon.svg) 於動作列上。 此 **[!UICONTROL 編輯最適化Forms — 內嵌(v2)]** 對話方塊開啟。
 1. 瀏覽並選取最適化表單，以內嵌於 **[!UICONTROL 資產路徑]**.
 1. 儲存設定。 最適化表單現在內嵌在頁面中。
 
@@ -215,7 +215,7 @@ In addition, Adaptive Forms in AEM Page Editor use [Adaptive Forms Core Componen
 
 1. 在編輯模式中開啟體驗片段。
 1. 拖放 **[!UICONTROL 最適化Forms — 內嵌(v2)]** 元件從元件瀏覽器移至體驗片段。
-1. 點選 **[!UICONTROL 最適化Forms — 內嵌]** 體驗片段中的元件並點選 ![最適化表單容器屬性](/help/forms/assets/configure-icon.svg) 於動作列上。 此 **[!UICONTROL 編輯最適化Forms — 內嵌(v2)]** 對話方塊開啟。
+1. 選取 **[!UICONTROL 最適化Forms — 內嵌]** 體驗片段中的元件並選取 ![最適化表單容器屬性](/help/forms/assets/configure-icon.svg) 於動作列上。 此 **[!UICONTROL 編輯最適化Forms — 內嵌(v2)]** 對話方塊開啟。
 1. 瀏覽並選取最適化表單，以內嵌於 **[!UICONTROL 資產路徑]**.
 1. 儲存設定。 最適化表單現在內嵌於體驗片段中。
 
@@ -310,9 +310,9 @@ To embed an Adaptive Form using the **[!UICONTROL Adaptive Forms - Embed]** comp
    >
    >Multiple Adaptive Forms - Embed components on a page are not supported.
 
-1. To create and embed a new form, on the component toolbar, tap the **Create Form** icon. A window to create the form opens. 
+1. To create and embed a new form, on the component toolbar, select the **Create Form** icon. A window to create the form opens. 
 
-1. Tap the embedded Adaptive Forms - Embed component in the sites page, and then tap ![settings_icon](assets/settings_icon.png) on the action bar. The **[!UICONTROL Edit Adaptive Forms - Embed]** dialog opens.
+1. Select the embedded Adaptive Forms - Embed component in the sites page, and then select ![settings_icon](assets/settings_icon.png) on the action bar. The **[!UICONTROL Edit Adaptive Forms - Embed]** dialog opens.
 1. In the Edit Adaptive Forms - Embed dialog, specify the following.
 
     **Asset Type:** Select the type of asset to embed. 
@@ -356,7 +356,7 @@ AEM site also lets you create an Adaptive Form on the fly using the Adaptive For
 若要修改內嵌調適型表單的任何設定或屬性，請執行下列任一項作業。
 
 * 在個別編輯器中以最適化表單開啟原始表單，並加以修改。
-* 在編輯模式中，從網站頁面內點選最適化表單，然後點選 **[!UICONTROL 在新視窗中編輯]**. 原始表單會以您可以修改的編輯模式開啟。
+* 在編輯模式下從網站頁面內選取最適化表單，然後選取「 」 **[!UICONTROL 在新視窗中編輯]**. 原始表單會以您可以修改的編輯模式開啟。
 
 >[!NOTE]
 >

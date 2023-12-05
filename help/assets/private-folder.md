@@ -5,9 +5,9 @@ contentOwner: Vishabh Gupta
 role: User
 feature: Collaboration
 exl-id: d48f6daf-af81-4024-bff2-e8bf6d683b0c
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '620'
+source-wordcount: '614'
 ht-degree: 7%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 7%
 | AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/private-folder.html?lang=en) |
 | AEM as a Cloud Service  | 本文章 |
 
-您可以在中建立私人資料夾 [!DNL Adobe Experience Manager Assets] 您獨家可用的使用者介面。 您可以與其他使用者共用此私人資料夾，並為他們指派各種許可權。 根據您指派的許可權層級，使用者可以在資料夾上執行各種工作，例如檢視資料夾內的資產或編輯資產。
+您可以在中建立私人資料夾 [!DNL Adobe Experience Manager Assets] 您獨家可用的使用者介面。 您可以與其他使用者共用此私人資料夾，並為他們指派各種許可權。 根據您指派的許可權層級，使用者可以在資料夾上執行各種工作，例如，檢視資料夾內的資產或編輯資產。
 
 >[!NOTE]
 >
@@ -55,7 +55,7 @@ ht-degree: 7%
    >
    >私人資料夾至少有一個成員具有 `Owner` 角色。 因此，管理員無法從私人資料夾中移除所有擁有者成員。 但是，若要從私人資料夾中移除現有的擁有者（以及管理員本身），管理員必須新增其他使用者作為擁有者。
 
-1. 按一下&#x200B;**[!UICONTROL 「儲存並關閉」]**。根據您指派的角色，當使用者登入時，會在您的私人資料夾中指派一組許可權 [!DNL Assets].
+1. 按一下 **[!UICONTROL 儲存並關閉]**. 根據您指派的角色，當使用者登入時，會在您的私人資料夾中指派一組許可權 [!DNL Assets].
 1. 按一下 **[!UICONTROL 確定]** 以關閉確認訊息。
 1. 共用資料夾的使用者會在使用者介面中收到共用通知。
 

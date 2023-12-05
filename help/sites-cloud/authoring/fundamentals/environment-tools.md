@@ -2,10 +2,10 @@
 title: 製作環境和工具
 description: AEM的製作環境提供各種機制來組織和編輯您的內容
 exl-id: cc3bd4cf-93bd-429d-9a2a-4a02a7b42f7c
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '2161'
-ht-degree: 10%
+ht-degree: 9%
 
 ---
 
@@ -171,7 +171,7 @@ AEM的製作環境提供各種機制來組織和編輯您的內容。 提供的�
 
 當您開啟側面板時，它將滑開（從左側）。 選取 **內容樹狀結構** 標籤（如有需要）。 開啟時，您可以看到頁面或範本的樹狀檢視表示法，因此更容易瞭解其內容如何階層架構。 此外，在複雜頁面上，它可讓您更輕鬆地在頁面元件之間跳轉。
 
-![內容樹](/help/sites-cloud/authoring/assets/content-tree-editor.png)
+![內容樹狀結構](/help/sites-cloud/authoring/assets/content-tree-editor.png)
 
 頁面可以輕鬆地由許多相同型別的元件組成，因此內容（元件）樹狀結構會在元件型別名稱（黑色）後面顯示描述性文字（灰色）。 描述性文字來自元件的常見屬性，例如標題或文字。
 
@@ -226,7 +226,7 @@ AEM的製作環境提供各種機制來組織和編輯您的內容。 提供的�
 
 * **傳入連結**，提供參照頁面的頁面清單，並可直接存取 **編輯** 其中一個頁面。
 
-   * 這只能顯示靜態連結，而不能顯示動態產生的連結；例如來自清單元件的連結。
+   * 這只能顯示靜態連結，而不能顯示動態產生的連結；例如，來自清單元件的連結。
 
 * 借入和借出內容的例項，使用 **參考** 元件，您可從此處導覽至參照/參照頁面
 * [啟動](/help/sites-cloud/authoring/launches/overview.md)，提供相關啟動項的存取權

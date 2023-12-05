@@ -2,10 +2,10 @@
 title: 體驗片段
 description: 使用Adobe Experience Manager as a Cloud Service體驗片段，讓您的體驗可重複使用且更靈活。
 exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2042'
-ht-degree: 5%
+source-wordcount: '2035'
+ht-degree: 3%
 
 ---
 
@@ -196,7 +196,7 @@ WKND專案會根據以下規則建構一些體驗片段 `Contributors`. 使用�
 
 1. 按一下&#x200B;**建立**。
 
-   此時會顯示訊息。 選取:
+   此時會顯示訊息。 選取：
 
    * **完成** 以返回主控台
    * **開啟** 以開啟片段編輯器
@@ -235,7 +235,7 @@ WKND專案會根據以下規則建構一些體驗片段 `Contributors`. 使用�
 1. **建立** 可讓您建立：
 
    * **變異**
-   * **變數為 live-copy**.
+   * **變數為live-copy**.
 
 1. 定義必要的屬性：
 
@@ -243,7 +243,7 @@ WKND專案會根據以下規則建構一些體驗片段 `Contributors`. 使用�
    * **標題**
    * **名稱**  — 如果留空，其衍生自標題
    * **說明**
-   * **變數標記**
+   * **變數標籤**
 
    例如：
 
@@ -357,7 +357,7 @@ WKND專案會根據以下規則建構一些體驗片段 `Contributors`. 使用�
    >
    >* 與為呈現片段的頁面設定的路徑相同
    >
-   >  或:
+   >  或：
    >
    >* 包含為頁面設定的ContextHub中所定義之存放區子集的路徑
    >
@@ -403,20 +403,20 @@ WKND專案會根據以下規則建構一些體驗片段 `Contributors`. 使用�
    * **基本**
       * **標題**  — 必要
       * **說明**
-      * **標記**
+      * **標籤**
       * **變數總數**  — 僅供參考
       * **網路變數的數量**  — 僅供參考
       * **非網路變數的數量**  — 僅供參考
       * **使用此片段的頁數**  — 僅供參考
-   * **雲端服務**
+   * **Cloud Service**
       * **雲端設定**
-      * **雲端服務設定**
-      * **Facebook 頁面 ID**
-      * **Pinterest Board**
-   * **參考**
+      * **Cloud Service設定**
+      * **facebook頁面ID**
+      * **pinterest展示板**
+   * **引用**
       * 引用清單
    * **個人化**
-      * **ContextHub 路徑**
+      * **ContextHub路徑**
       * **區段路徑**
       * **品牌**
 

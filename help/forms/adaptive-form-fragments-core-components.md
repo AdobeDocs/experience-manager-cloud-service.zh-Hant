@@ -5,14 +5,14 @@ topic-tags: author
 keywords: 新增最適化表單片段、最適化表單片段、建立表單片段、新增片段至最適化表單、管理片段
 feature: Adaptive Forms
 exl-id: 3a9ad1b7-2f6f-4ca9-a1c9-549c4238c59e
-source-git-commit: 1bdd9e323e74a3f2bb06bff52235742e9e22a136
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '1776'
+source-wordcount: '1768'
 ht-degree: 3%
 
 ---
 
-# 在基於核心元件的自我調整表單中建立和使用自我調整Forms片段 {#adaptive-form-fragments}
+# 根據核心元件在最適化表單中建立和使用最適化Forms片段 {#adaptive-form-fragments}
 
 
 | 版本 | 文章連結 |
@@ -34,7 +34,7 @@ ht-degree: 3%
 
 1. 在https://登入您的AEM Forms執行個體&#x200B;[*主機名稱*]：[*連線埠*]/aem/forms.html.
 1. 按一下 **建立>自適應表單片段**.
-1. 指定片段的標題、名稱、說明和標籤。 請確定您為片段指定唯一的名稱。 如果已經有另一個相同名稱的片段，則無法建立片段。
+1. 指定片段的標題、名稱、說明和標籤。 請確定您為片段指定唯一的名稱。 如果存在具有相同名稱的其他片段，則無法建立片段。
 1. 選取表單範本。 您可以為以核心元件為基礎的Adaptive Forms或基礎元件為基礎的Adaptive Forms建立表單片段。
    * 若要建立核心元件型表單的表單片段，請選取核心元件型範本。
    * 若要為以基礎元件為基礎的表單建立表單片段，請選取基礎元件範本。 例如，/libs/fd/af/templateForFragment/defaultFragmentTemplate。
@@ -49,12 +49,12 @@ ht-degree: 3%
 
      >[!NOTE]
      >
-     > 在Adaptive Forms中，您可以使用單一表單片段（根據核心元件）多次。 支援「無」和「綱要」表單片段。
+     > 在 Adaptive Forms 中，您可以多次使用單一表單片段 （基於核心元件）。 支援「無」和「綱要」表單片段。
 
    * **架構** ：指定使用上傳至 AEM Forms 的 XML 或 JSON 綱要建立片段。 您可以上傳或從可用的 XML 或 JSON 架構中選擇作為片段的表單模型。 選擇 XML 綱要時，還可以通過從 XML 架構複雜類型 ]**下拉清單中選擇**[!UICONTROL  所選綱要中存在的 complexType 來創建自我調整表單片段。選擇 JSON 綱要時，您還可以通過從 JSON 架構定義下拉清單中選擇 **[!UICONTROL 所選綱要中存在的綱要定義]** 來創建自我調整表單片段。
    * **表單資料模型：指定使用表單資料模型** 建立片段。 您僅可基於表單資料模型中的一個資料模型物件來建立自我調整表單片段。 展開表單資料模型定義下拉式清單。 它會列出指定表單資料模型中的所有資料模型物件。 從清單中選取資料模型物件。
 
-   ![表單資料模式](assets/create-af-3.png)
+   ![表單資料模型](assets/create-af-3.png)
 
 
 
@@ -109,7 +109,7 @@ Perform the following steps to show complete fragments in forms:
 
 ### 在最適化表單中多次使用表單片段 {#using-form-fragment-mutiple-times-in-af}
 
-您可以在調適型表單中多次使用無型及結構描述型表單片段，以唯一儲存每個表單片段欄位的資料。 例如，您可以使用地址表單片段來收集地址詳細資訊，以便永久性、通訊和在貸款申請表中呈現有效地址。
+您可以在調適型表單中多次使用無基礎和結構描述型表單片段，以唯一儲存每個表單片段欄位的資料。 例如，您可以使用地址表單片段來收集地址詳細資訊，以便永久性、通訊和在貸款申請表中呈現有效地址。
 
 ![在最適化表單中使用多個片段](/help/forms/assets/using-multiple-fragment-af.gif)
 
@@ -178,8 +178,8 @@ Perform the following steps to show complete fragments in forms:
 
 * 確保片段名稱是唯一的。 如果存在具有相同名稱的現有片段，則片段無法建立。
 * 在XDP型最適化表單中，如果您將面板儲存為包含其他XDP片段的片段，則產生的片段將自動與子XDP片段繫結。 如果是XSD型最適化表單，產生的片段將繫結至結構描述根。
-* 當您建立最適化表單片段時，會建立片段節點，這類似於CRXDe Lite中最適化表單的guideContainer節點。
-* 不支援使用不同表單資料模型的最適化表單中的片段。 例如，XSD型最適化表單不支援XDP型片段，反之亦然。
+* 當您建立最適化表單片段時，會建立片段節點，這類似於CRXDE Lite的最適化表單的guideContainer節點。
+* 不支援使用不同表單資料模型的最適化表單中的片段。 例如，XSD型最適化表單中不支援XDP型片段，反之亦然。
 * 最適化表單片段可透過AEM內容尋找器中的最適化表單片段標籤使用。
 * 透過參考插入或嵌入自適應表單時，獨立自適應表單片段中的任何運算式、指令碼或樣式都會保留。
 * 您無法從最適化表單中編輯透過參考插入的最適化表單片段。 若要編輯，請編輯獨立的調適型表單片段或將片段嵌入調適型表單中。

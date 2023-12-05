@@ -4,9 +4,9 @@ description: 瞭解在開發多語言網站時如何準備翻譯內容。
 feature: Language Copy
 role: Admin
 exl-id: afc577a2-2791-481a-ac77-468011e4302e
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '752'
+source-wordcount: '756'
 ht-degree: 1%
 
 ---
@@ -69,7 +69,7 @@ ht-degree: 1%
 若要建立語言根，請建立頁面並使用ISO語言代碼作為 **名稱** 屬性。 語言程式碼必須是下列其中一種格式：
 
 * `<language-code>`  — 支援的語言代碼是由ISO-639-1定義的兩字母代碼，例如 `en`.
-* `<language-code>_<country-code>` 或 `<language-code>-<country-code>`  — 支援的國家代碼是小寫或大寫的兩字母代碼，如ISO 3166所定義，例如 `en_US`， `en_us`， `en_GB`， `en-gb`.
+* `<language-code>_<country-code>` 或 `<language-code>-<country-code>`  — 支援的國家代碼是如ISO 3166定義的小寫或大寫兩字母代碼，例如 `en_US`， `en_us`， `en_GB`， `en-gb`.
 
 根據您為全域網站選擇的結構，您可以使用任一格式。 例如，WKND網站法文副本的根頁面具有 `fr` 作為 **名稱** 屬性。 此 **名稱** 屬性會用作存放庫中頁面節點的名稱，從而決定頁面的路徑(`http://<host>:<4502>/content/wknd/language-masters/fr.html`)。
 
@@ -80,7 +80,7 @@ ht-degree: 1%
    ![建立頁面](../assets/create-page.png)
 
 1. 選取頁面範本，然後選取 **下一個**.
-1. 在 **名稱** 欄位輸入國家/地區代碼，格式為 `<language-code>` 或 `<language-code>_<country-code>`，例如 `en`， `en_US`， `en_us`， `en_GB`， `en_gb`. 輸入頁面的標題。
+1. 在 **名稱** 欄位輸入國家/地區代碼，格式為 `<language-code>` 或 `<language-code>_<country-code>`例如， `en`， `en_US`， `en_us`， `en_GB`， `en_gb`. 輸入頁面的標題。
 
    ![建立語言根頁面](../assets/create-language-root.png)
 
@@ -102,7 +102,7 @@ AEM提供 **引用** 顯示已建立之語言根目錄的邊欄。
 
 ## 多個層級的語言副本 {#multiple-levels}
 
-語言根也可以在節點下分組（例如按區域），同時仍被識別為語言副本的根。
+語言根也可以在節點下分組（例如，按區域），同時仍被識別為語言副本的根。
 
 ```text
 /content

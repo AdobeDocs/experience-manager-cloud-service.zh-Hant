@@ -2,10 +2,10 @@
 title: 設定Workfront和Experience Manager Assets之間的資產中繼資料對應
 description: 在Adobe Workfront和Experience Manageras a Cloud Service應用程式之間對應資產中繼資料欄位。 對應中繼資料欄位後，當您從Workfront傳送資產至Experience Manager Assets時，可以在Experience Manager Assets中檢視對應的資產中繼資料。
 exl-id: 71400769-b2bc-4f5d-8b6b-a73598e837b4
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '1024'
-ht-degree: 4%
+source-wordcount: '1005'
+ht-degree: 3%
 
 ---
 
@@ -62,7 +62,7 @@ ht-degree: 4%
 
 1. 按一下 **[!UICONTROL 傳送至]**，然後選擇Experience Manager Assets Essentials整合名稱。
 
-   ![傳送到 AEM](assets/send-to-aem.png)
+   ![傳送至AEM](assets/send-to-aem.png)
 
 1. 選擇資產的目的地資料夾，然後按一下 **[!UICONTROL 選取資料夾]**.
 
@@ -95,7 +95,7 @@ ht-degree: 4%
 
       `wm` 是指名稱空間名稱和 `projectName` 是指屬性標題。 使用 `namespace:propertyTitle` 定義中繼資料欄位對應的格式。
 
-      ![傳送到 AEM](assets/metadata-schema-mapping.png)
+      ![傳送至AEM](assets/metadata-schema-mapping.png)
 
 1. 按一下 **[!UICONTROL 建置表單]** 定位並拖曳 **[!UICONTROL 單行文字]** 元件至表單。 按一下表單中的元件。 在 **[!UICONTROL 建置表單]** 標籤：
 

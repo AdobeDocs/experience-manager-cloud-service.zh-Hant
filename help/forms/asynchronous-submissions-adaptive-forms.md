@@ -5,10 +5,10 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 026f4920-f8f9-4b08-b1b0-af50229633d7
-source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '751'
-ht-degree: 6%
+source-wordcount: '746'
+ht-degree: 3%
 
 ---
 
@@ -31,18 +31,18 @@ ht-degree: 6%
 
 若要設定最適化表單的非同步提交：
 
-1. 在調適型表單製作模式中，選取「表單容器」物件，然後點選 ![cmppr1](assets/configure-icon.svg) 以開啟其屬性。
+1. 在調適型表單製作模式中，選取「表單容器」物件，然後選取 ![cmppr1](assets/configure-icon.svg) 以開啟其屬性。
 1. 在 **[!UICONTROL 提交]** 屬性區段，啟用 **[!UICONTROL 使用非同步提交]**.
 1. 在 **[!UICONTROL 提交時]** 區段，選取下列其中一個選項以在成功提交表單時執行。
 
    * **[!UICONTROL 重新導向至URL]**：在提交表單時重新導向至指定的URL或頁面。 您可以指定URL或瀏覽以選擇 **[!UICONTROL 重新導向URL/路徑]** 欄位。
    * **[!UICONTROL 顯示訊息]**：在提交表單時顯示訊息。 您可以在下方的文字欄位中撰寫訊息 **[!UICONTROL 顯示訊息]** 選項。 文字欄位支援RTF格式。
 
-1. 點選 ![check-button1](assets/save_icon.svg) 以儲存屬性。
+1. 選取 ![check-button1](assets/save_icon.svg) 以儲存屬性。
 
 ## 非同步提交的運作方式 {#how-asynchronous-submission-works}
 
-[!DNL Experience Manager Forms] 為表單提交提供現成可用的成功和錯誤處理常式。處理常式是根據伺服器回應執行的用戶端函數。提交表單時，資料會傳送至伺服器進行驗證，伺服器會傳回回應給使用者端，其中包含提交成功或錯誤事件的相關資訊。 這項資訊可以參數傳遞至相關處理常式以執行該函數。
+[!DNL Experience Manager Forms] 為表單提交提供現成可用的成功和錯誤處理常式。 處理常式是根據伺服器回應執行的用戶端函數。提交表單時，資料會傳送至伺服器進行驗證，伺服器會傳回回應給使用者端，其中包含提交成功或錯誤事件的相關資訊。 此資訊會以引數形式傳遞至相關處理常式，以執行函式。
 
 此外，表單作者和開發人員可在表單層級撰寫規則以覆寫預設處理常式。 如需詳細資訊，請參閱 [使用規則覆寫預設處理常式](#custom).
 
@@ -108,11 +108,11 @@ ht-degree: 6%
 
 執行以下步驟來撰寫規則以處理成功和錯誤事件。
 
-1. 在撰寫模式中開啟調適型表單，選取任何表單物件，然後點選 ![edit-rules1](assets/edit-rules-icon.svg) 以開啟規則編輯器。
-1. 選取 **[!UICONTROL 表單]** 在「表單物件」樹狀結構中，點選 **[!UICONTROL 建立]**.
+1. 在撰寫模式中開啟最適化表單，選取任何表單物件，然後選取 ![edit-rules1](assets/edit-rules-icon.svg) 以開啟規則編輯器。
+1. 選取 **[!UICONTROL 表單]** 在「表單物件」樹狀結構中，選取 **[!UICONTROL 建立]**.
 1. 選擇 **[!UICONTROL 已成功提交]** 或 **[!UICONTROL 提交失敗]** 從 **[!UICONTROL 選取狀態]** 下拉式清單。
 1. 定義 **[!UICONTROL 則]** 所選狀態的動作。 例如，選取 **[!UICONTROL 瀏覽至]** 然後輸入或貼上URL。 您也可以使用 **[!UICONTROL 函式]** 標籤移至規則。
 
    ![提交處理常式成功](assets/form-submission-handler.png)
 
-1. 點選 **[!UICONTROL 完成]** 以儲存規則。
+1. 選取 **[!UICONTROL 完成]** 以儲存規則。

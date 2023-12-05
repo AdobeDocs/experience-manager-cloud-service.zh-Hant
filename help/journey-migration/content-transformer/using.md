@@ -2,10 +2,10 @@
 title: 使用內容轉換器
 description: 瞭解如何轉換您的內容結構，為移轉至AEMas a Cloud Service做好準備。
 exl-id: 40516ff7-5686-42e6-bdd1-c9c6de432b09
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '638'
-ht-degree: 2%
+source-wordcount: '630'
+ht-degree: 1%
 
 ---
 
@@ -63,7 +63,7 @@ ht-degree: 2%
    >[!NOTE]
    > 任何可變更來源內容的操作(`move`/`remove`/`rename`)預設會建立「 」底下來源路徑的備份套件 `/etc/packages/content-transformation` 轉換之前。 雖然每個操作對話方塊都有一個選項可停用/啟用備份套件的建立，但嚴格建議您一律選取啟用套件的建立。
 
-1. 以下顯示為路徑移動作業所建立的備份封裝範例，按一下安裝以恢復來源路徑。 安裝作業只會讓來源路徑回到其原始位置，而不會刪除轉換期間移動它們的路徑。 若要刪除移動位置中的路徑，請按一下 **新增路徑** 按鈕以新增位置(例如 `/etc/packages/content-transformation/paths`)，選取位置並按一下 **移除**.
+1. 以下顯示為路徑移動作業所建立的備份封裝範例，按一下安裝以恢復來源路徑。 安裝作業只會讓來源路徑回到其原始位置，而不會刪除轉換期間移動它們的路徑。 若要刪除移動位置中的路徑，請按一下 **新增路徑** 按鈕以新增位置(例如， `/etc/packages/content-transformation/paths`)，選取位置並按一下 **移除**.
 
    >[!CAUTION]
    > 不要刪除 `/etc/packages/content-transformation` 因為這是備份封裝所在的位置。 只有在您確定不再需要這些套件時，才能刪除此位置以減少存放庫大小。

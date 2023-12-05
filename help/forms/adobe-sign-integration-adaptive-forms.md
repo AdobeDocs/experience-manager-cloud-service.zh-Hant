@@ -5,10 +5,10 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 609c3072-1c3d-43fa-898a-b4e62db8483b
-source-git-commit: 4d1e70c19caab23df13ed6fdc29b30e41106501f
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2092'
-ht-degree: 30%
+source-wordcount: '2001'
+ht-degree: 28%
 
 ---
 
@@ -44,16 +44,16 @@ ht-degree: 30%
 已具備下列先決條件後，請執行以下步驟，以在作者執行個體上設定 [!DNL Adobe Acrobat Sign] 和 [!DNL AEM Forms]。
 
 1. 在AEM Forms作者例項上，導覽至 **[!UICONTROL 工具]** ![錘子](assets/hammer.png) > **[!UICONTROL 一般]** > **[!UICONTROL 設定瀏覽器]**.
-1. 在 **[!UICONTROL 設定瀏覽器]** 頁面，點選 **[!UICONTROL 建立]**.
-1. 在 **[!UICONTROL 建立設定]** 對話方塊，指定 **[!UICONTROL 標題]** 對於設定，啟用 **[!UICONTROL 雲端設定]**，然後點選 **[!UICONTROL 建立]**. 這樣便會建立儲存 Cloud Services 的設定容器。請確保資料夾名稱未含任何空格。
+1. 在 **[!UICONTROL 設定瀏覽器]** 頁面，選取 **[!UICONTROL 建立]**.
+1. 在 **[!UICONTROL 建立設定]** 對話方塊，指定 **[!UICONTROL 標題]** 對於設定，啟用 **[!UICONTROL 雲端設定]**，並選取 **[!UICONTROL 建立]**. 這樣便會建立儲存 Cloud Services 的設定容器。請確保資料夾名稱未含任何空格。
 1. 瀏覽至 **[!UICONTROL 工具]** ![錘子](assets/hammer.png) > **[!UICONTROL Cloud Service]** > **[!UICONTROL Adobe Acrobat Sign]** 然後開啟您在上一步中建立的設定容器。
 
    >[!NOTE]
    >
    >建立最適化表單時，請在 **[!UICONTROL 設定容器]** 欄位。
 
-1. 在設定頁面上，點選 **[!UICONTROL 建立]** 以建立 [!DNL Adobe Acrobat Sign] AEM Forms中的設定。
-1. 在 **[!UICONTROL 一般]** 的標籤 **[!UICONTROL 建立Adobe Acrobat Sign設定]** 頁面，指定 **[!UICONTROL 名稱]** 針對設定，然後點選 **[!UICONTROL 下一個]**. 您可以選擇指定 **[!UICONTROL 標題]** 並瀏覽以選取 **[!UICONTROL 縮圖]** 用於設定。
+1. 在設定頁面上，選取 **[!UICONTROL 建立]** 以建立 [!DNL Adobe Acrobat Sign] AEM Forms中的設定。
+1. 在 **[!UICONTROL 一般]** 的標籤 **[!UICONTROL 建立Adobe Acrobat Sign設定]** 頁面，指定 **[!UICONTROL 名稱]** ，然後選取 **[!UICONTROL 下一個]**. 您可以選擇指定 **[!UICONTROL 標題]** 並瀏覽以選取 **[!UICONTROL 縮圖]** 用於設定。
 
 1. 現在您可以 **[!UICONTROL 選取解決方案]** 以選取 [!DNL Adobe Acrobat Sign].
 
@@ -64,7 +64,7 @@ ht-degree: 30%
 [create URL](#create-a-redirect-url-for-your-aem-instance)
  -->
 
-1. 將目前瀏覽器視窗中顯示的URL複製到記事本並移除部分 `/ui#/aem` 從URL. 接著需要修改過的URL才能進行設定 [!DNL Adobe Acrobat Sign] 應用程式搭配 [!DNL AEM Forms]，在稍後的步驟中。 點選 **[!UICONTROL 下一個]**.
+1. 將目前瀏覽器視窗中顯示的URL複製到記事本並移除部分 `/ui#/aem` 從URL. 接著需要修改過的URL才能進行設定 [!DNL Adobe Acrobat Sign] 應用程式搭配 [!DNL AEM Forms]，在稍後的步驟中。 選取 **[!UICONTROL 下一個]**.
 
 1. 在 **[!UICONTROL 設定]** 標籤，
    * 此 **[!UICONTROL OAuth URL]** 欄位包含預設URL，其中包含Adobe Sign資料庫分片。 URL 的格式是：
@@ -93,7 +93,7 @@ ht-degree: 30%
 1. 設定 [!DNL Adobe Acrobat Sign] 應用程式的 OAuth 設定：
 
    1. 開啟瀏覽器視窗並登入您的 [!DNL Adobe Acrobat Sign] 開發人員帳戶。
-   1. 選取為設定的應用程式 [!DNL AEM Forms]，然後點選 **[!UICONTROL 設定應用程式的OAuth]**.
+   1. 選取為設定的應用程式 [!DNL AEM Forms]，並選取 **[!UICONTROL 設定應用程式的OAuth]**.
    1. 在 **[!UICONTROL 重新導向URL]** 方塊，新增在上一步驟中複製的URL （步驟8）並按一下 **[!UICONTROL 儲存]**.
    1. 為以下專案啟用範圍： [!DNL Adobe Acrobat Sign] 應用程式並按一下 **[!UICONTROL 儲存]**.
 
@@ -112,11 +112,11 @@ ht-degree: 30%
 
 1. 選取 **[!UICONTROL 為附件啟用Adobe Acrobat Sign]** 將最適化表單附加的檔案附加至對應 [!DNL Adobe Acrobat Sign] 檔案已傳送供簽署。
 
-1. 點選 **[!UICONTROL 連線至Adobe Acrobat Sign]**. 在系統提示輸入認證時，請提供 **使用者名稱** 和 **密碼** 建立時所使用的帳戶 [!DNL Adobe Acrobat Sign] 應用程式。 在系統要求您確認時，請存取 `your developer account`，按一下 **[!UICONTROL 允許存取]**. 如果認證正確且您允許 [!DNL AEM Forms] 存取您的 [!DNL Adobe Acrobat Sign] 開發人員帳戶，則會出現與以下訊息相似的成功訊息。
+1. 選取 **[!UICONTROL 連線至Adobe Acrobat Sign]**. 在系統提示輸入認證時，請提供 **使用者名稱** 和 **密碼** 建立時所使用的帳戶 [!DNL Adobe Acrobat Sign] 應用程式。 在系統要求您確認時，請存取 `your developer account`，按一下 **[!UICONTROL 允許存取]**. 如果認證正確且您允許 [!DNL AEM Forms] 存取您的 [!DNL Adobe Acrobat Sign] 開發人員帳戶，則會出現與以下訊息相似的成功訊息。
 
    ![Adobe Acrobat Sign雲端設定成功](assets/adobe-sign-cloud-configuration-success.png)
 
-1. 點選 **[!UICONTROL 建立]** 以建立 [!DNL Adobe Acrobat Sign] 設定。
+1. 選取 **[!UICONTROL 建立]** 以建立 [!DNL Adobe Acrobat Sign] 設定。
 
 1. 選取設定並按一下 **[!UICONTROL 發佈]**，選取設定，然後按一下 **[!UICONTROL 發佈]**. 這會將設定複寫至對應的發佈環境。
 
@@ -152,10 +152,10 @@ AEM Formsas a Cloud Service提供開發、預備和生產環境。 您可以開�
 #### 為您的AEM執行個體建立重新導向URL
 
 1. 在Formsas a Cloud Service作者例項上，導覽至 **[!UICONTROL 工具]** ![錘子](assets/hammer.png) > **[!UICONTROL 一般]** > **[!UICONTROL 設定瀏覽器]**.
-1. 在 **[!UICONTROL 設定瀏覽器]** 頁面，點選 **[!UICONTROL 建立]**.
-1. 在 **[!UICONTROL 建立設定]** 對話方塊，指定 **[!UICONTROL 標題]** 對於設定，啟用 **[!UICONTROL 雲端設定]**，然後點選 **[!UICONTROL 建立]**. 這樣便會建立儲存 Cloud Services 的設定容器。請確保資料夾名稱未含任何空格。
+1. 在 **[!UICONTROL 設定瀏覽器]** 頁面，選取 **[!UICONTROL 建立]**.
+1. 在 **[!UICONTROL 建立設定]** 對話方塊，指定 **[!UICONTROL 標題]** 對於設定，啟用 **[!UICONTROL 雲端設定]**，並選取 **[!UICONTROL 建立]**. 這樣便會建立儲存Cloud Service的設定容器。 請確保資料夾名稱未含任何空格。
 1. 瀏覽至 **[!UICONTROL 工具]** ![錘子](assets/hammer.png) > **[!UICONTROL Cloud Service]** > **[!UICONTROL Adobe Acrobat Sign]** 然後開啟您在上一步中建立的設定容器。 建立最適化表單時，請在 **[!UICONTROL 設定容器]** 欄位。
-1. 在設定頁面上，點選 **[!UICONTROL 建立]** 以建立 [!DNL Adobe Acrobat Sign] AEM Forms中的設定。
+1. 在設定頁面上，選取 **[!UICONTROL 建立]** 以建立 [!DNL Adobe Acrobat Sign] AEM Forms中的設定。
 1. 將您目前瀏覽器視窗的URL複製到記事本並移除 `/ui#/aem` 從URL. 此URL稱為 `re-direct URL`.
 在下一個區段中，您共用 `re-direct URL` 和 `Scopes` Adobe Sign團隊並要求認證（使用者端ID和使用者端密碼）。
 
@@ -181,7 +181,7 @@ AEM Formsas a Cloud Service提供開發、預備和生產環境。 您可以開�
 
 1. 開啟 `re-direct URL` 在您的瀏覽器中。 您已建立並記下 `re-direct URL` 的最後一個步驟 [在您的AEM執行個體上建立重新導向URL](#create-a-redirect-url-for-your-aem-instance) 區段。
 
-1. 在 **[!UICONTROL 一般]** 的標籤 **[!UICONTROL 建立Adobe Sign設定]** 頁面，指定 **[!UICONTROL 名稱]** 針對設定，然後點選 **[!UICONTROL 下一個]**. 您可以選擇指定 **[!UICONTROL 標題]** 並瀏覽以選取 **[!UICONTROL 縮圖]** 用於設定。 按一下「**[!UICONTROL 下一步]**」。
+1. 在 **[!UICONTROL 一般]** 的標籤 **[!UICONTROL 建立Adobe Sign設定]** 頁面，指定 **[!UICONTROL 名稱]** ，然後選取 **[!UICONTROL 下一個]**. 您可以選擇指定 **[!UICONTROL 標題]** 並瀏覽以選取 **[!UICONTROL 縮圖]** 用於設定。 按一下「**[!UICONTROL 下一步]**」。
 
 1. 在 **[!UICONTROL 設定]** 的標籤 **[!UICONTROL 建立Adobe Sign設定]** 頁面，針對 **[!UICONTROL 選取解決方案]** 選項，選取 [!DNL Adobe Acrobat Sign Solutions for Government].
 
@@ -217,13 +217,13 @@ AEM Formsas a Cloud Service提供開發、預備和生產環境。 您可以開�
 
 1. 選取 **[!UICONTROL 為附件啟用Adobe Acrobat Sign]** 將最適化表單附加的檔案附加至對應 [!DNL Adobe Acrobat Sign] 檔案已傳送供簽署。
 
-1. 點選 **[!UICONTROL 連線至Adobe Sign]**. 出現認證提示時，請提供在建立 [!DNL Adobe Acrobat Sign] 應用程式時使用的帳戶使用者名稱和密碼。當系統要求確認存取時 `your developer account`，按一下 **[!UICONTROL 允許存取]**. 如果認證正確且您允許 [!DNL AEM Forms] 存取您的 [!DNL Adobe Acrobat Sign] 開發人員帳戶，則會出現與以下訊息相似的成功訊息。
+1. 選取 **[!UICONTROL 連線至Adobe Sign]**. 出現認證提示時，請提供在建立 [!DNL Adobe Acrobat Sign] 應用程式時使用的帳戶使用者名稱和密碼。當系統要求確認存取時 `your developer account`，按一下 **[!UICONTROL 允許存取]**. 如果認證正確且您允許 [!DNL AEM Forms] 存取您的 [!DNL Adobe Acrobat Sign] 開發人員帳戶，則會出現與以下訊息相似的成功訊息。
 
    ![Adobe Acrobat Sign雲端設定成功](assets/adobe-sign-cloud-configuration-success.png)
 
    <!-- > When prompted for credentials, provide username and password of the account used while creating [!DNL Adobe Acrobat Sign] application. When asked to confirm access for `your developer account`, Click **[!UICONTROL Allow Access]**. -->
 
-1. 點選 **[!UICONTROL 建立]** 以建立設定。
+1. 選取 **[!UICONTROL 建立]** 以建立設定。
 
 1. 選取設定並按一下 **[!UICONTROL 發佈]**，選取設定，然後按一下 **[!UICONTROL 發佈]**. 這會將設定復寫至對應的發佈環境。
 

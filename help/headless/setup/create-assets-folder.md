@@ -2,10 +2,10 @@
 title: 建立資產資料夾 - Headless 設定
 description: 使用 AEM 內容片段模型定義內容片段的結構，這是 Headless 內容的基礎。
 exl-id: 9a156a17-8403-40fc-9bd0-dd82fb7b2235
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '377'
-ht-degree: 88%
+source-wordcount: '375'
+ht-degree: 82%
 
 ---
 
@@ -34,7 +34,7 @@ ht-degree: 88%
       * 如有需要，可加以調整。
 
    ![建立資料夾](../assets/assets-folder-create.png)
-1. 透過將游標停留並點選核取記號來選擇剛建立的資料夾。然後從工具列中選取「**屬性**」(或使用 `p`[ 鍵盤快速鍵](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md))。
+1. 將滑鼠懸停並點選核取記號，以選取您建立的資料夾。 然後從工具列中選取「**屬性**」(或使用 `p`[ 鍵盤快速鍵](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md))。
 1. 在&#x200B;**屬性**&#x200B;視窗中，選擇&#x200B;**雲端服務**&#x200B;索引標籤。
 1. 對於&#x200B;**雲端設定**，選擇您之前建立的[設定。](create-configuration.md)
    ![設定資產資料夾](../assets/assets-folder-configure.png)
@@ -43,7 +43,7 @@ ht-degree: 88%
 
    ![確認視窗](../assets/assets-folder-confirmation.png)
 
-您可以在剛建立的資料夾中建立其他子資料夾。子資料夾將繼承父資料夾的&#x200B;**雲端設定**。不過，如果您要使用其他組態的模型，則可以覆寫此選項。
+您可以在建立的資料夾中建立其他子資料夾。 子資料夾將繼承父資料夾的&#x200B;**雲端設定**。不過，如果您要使用其他組態的模型，則可以覆寫此選項。
 
 如果您使用的是當地語系化網站結構，則可以在新資料夾下[建立語言根](/help/assets/translate-assets.md)。
 

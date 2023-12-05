@@ -2,10 +2,10 @@
 title: 設定 ContextHub
 description: 瞭解如何設定Context Hub，此架構用於儲存、操控和呈現內容資料。
 exl-id: 1fd7d41e-31ad-4838-8749-a5791edcfd63
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1629'
-ht-degree: 1%
+source-wordcount: '1609'
+ht-degree: 0%
 
 ---
 
@@ -53,10 +53,10 @@ UI模式會在工具列左側顯示為一系列圖示。 選取後，UI模式的
 1. 提供下列屬性的值：
 
    * UI模式標題：識別UI模式的標題
-   * 模式圖示：的選取器 [Coral UI圖示](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons) 以使用 `coral-Icon--user`
+   * 模式圖示：的選取器 [Coral UI圖示](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons) 例如，若要使用 `coral-Icon--user`
    * 啟用：選取此選項可在ContextHub工具列中顯示UI模式
 
-1. 選取儲存。
+1. 選取「儲存」。
 
 ### 新增使用者介面模組 {#adding-a-ui-module}
 
@@ -78,7 +78,7 @@ UI模組屬性包含詳細設定，您可以在其中提供模組特定屬性的
 
 1. 在Experience Manager邊欄中，選取「工具>網站> ContextHub」。
 1. 選取要新增UI模組的設定容器。
-1. 按一下或輸入您要新增UI模組的ContextHub組態。
+1. 選取或輸入您要新增UI模組的ContextHub組態。
 1. 選取要新增UI模組的UI模式。
 1. 選取「建立」按鈕，然後選取「ContextHub UI模組（一般）」。
 
@@ -91,7 +91,7 @@ UI模組屬性包含詳細設定，您可以在其中提供模組特定屬性的
    * 啟用：選取以在ContextHub工具列中顯示UI模組
 
 1. （選用）若要覆寫預設存放區設定，請輸入JSON物件以設定UI模組。
-1. 選取儲存。
+1. 選取「儲存」。
 
 ## 建立ContextHub存放區 {#creating-a-contexthub-store}
 
@@ -130,7 +130,7 @@ AEM提供下列範例商店候選者，您可以據以建立商店。
    * **已啟用：** 選取以啟用存放區
 
 1. （選用）若要覆寫預設存放區設定，請在「詳細資料設定(JSON)」方塊中輸入JSON物件。
-1. 選取儲存。
+1. 選取「儲存」。
 
 ## 範例：使用JSONP服務  {#example-using-a-jsonp-service}
 
@@ -157,7 +157,7 @@ contexthub.generic-jsonp範例存放區候選專案可讓您從JSONP服務或傳
 * **存放區型別：** contexthub.generic-jsonp
 * **必填：** 選取
 * **已啟用：** 選取
-* **詳細資料組態 (JSON):**
+* **詳細資料設定(JSON)：**
 
   ```javascript
   {
@@ -185,7 +185,7 @@ contexthub.generic-jsonp範例存放區候選專案可讓您從JSONP服務或傳
 
 * **UI模組標題：** MD5
 * **模組型別：** contexthub.base
-* **詳細資料組態 (JSON):**
+* **詳細資料設定(JSON)：**
 
   ```javascript
   {

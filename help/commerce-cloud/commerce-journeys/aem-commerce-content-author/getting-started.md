@@ -1,8 +1,8 @@
 ---
 title: CIF 編寫快速入門
-description: CIF 編寫快速入門.
+description: CIF製作快速入門。
 exl-id: 0bef4d8c-0ad3-4ec8-ab08-8c83203b3b68
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '778'
 ht-degree: 2%
@@ -57,7 +57,7 @@ CIF擴充了通用編輯器，讓您無需離開上下文即可存取即時產�
 
 ### 類別選取器
 
-像產品選擇器一樣運作。 按一下資料夾圖示會開啟選擇器強制回應UI （例如類別輪播）
+像產品選擇器一樣運作。 按一下資料夾圖示會開啟選擇器強制回應視窗UI （例如類別輪播）
 ![類別選取器](assets/category-picker-open.png)
 
 瀏覽左側的目錄結構並選取類別。

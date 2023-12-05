@@ -2,10 +2,10 @@
 title: 非同步作業
 description: Adobe Experience Manager會以非同步方式完成部分耗用大量資源的工作，作為背景作業，以最佳化效能。
 exl-id: 9c5c4604-1290-4dea-a14d-08f3ab3ef829
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '863'
-ht-degree: 70%
+source-wordcount: '856'
+ht-degree: 64%
 
 ---
 
@@ -29,7 +29,7 @@ ht-degree: 70%
 >
 >如需詳細資訊，請參閱[佇列設定](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#queue-configurations)。
 
-## 監控非同步操作狀態 {#monitor-the-status-of-asynchronous-operations}
+## 監控非同步操作的狀態 {#monitor-the-status-of-asynchronous-operations}
 
 AEM 以非同步方式處理操作時，您會透過[收件匣](/help/sites-cloud/authoring/getting-started/inbox.md)和電子郵件 (如果已啟用) 收到通知。
 
@@ -55,7 +55,7 @@ AEM 以非同步方式處理操作時，您會透過[收件匣](/help/sites-clou
 
    ![停止圖示](assets/async-stop-icon.png)
 
-1. 若要檢視額外詳細資訊 (例如說明和記錄)，請選取操作，然後按一下工具列中的&#x200B;**[!UICONTROL 「開啟」]**。
+1. 若要檢視額外詳細資訊（例如，說明和記錄），請選取操作，然後按一下 **[!UICONTROL 開啟]** 工具列中的。
 
    ![開啟圖示](assets/async-open-icon.png)
 
@@ -77,7 +77,7 @@ AEM 以非同步方式處理操作時，您會透過[收件匣](/help/sites-clou
 >
 >[OSGi設定](/help/implementing/deploying/configuring-osgi.md#creating-osgi-configurations) 會將視為可變內容，並且任何此類設定都必須部署為生產環境的內容套件。
 
-### 清除完成的作業 {#purging-completed-jobs}
+### 清除已完成的工作 {#purging-completed-jobs}
 
 AEM每天01:00會執行清除作業，將超過一天的已完成非同步作業刪除。
 
@@ -123,7 +123,7 @@ AEM每天01:00會執行清除作業，將超過一天的已完成非同步作業
 1. 勾選&#x200B;**「啟用電子郵件通知」**&#x200B;選項，接收此作業狀態的電子郵件通知，例如，成功、失敗。
 1. 儲存變更。
 
-### 設定非同步 MSM 操作 {#configuring-asynchronous-msm-operations}
+### 設定非同步MSM操作 {#configuring-asynchronous-msm-operations}
 
 1. 請在登入AEM SDK Quickstart Jar的AEM Web主控台 `https://<host>:<port>/system/console` 作為管理員使用者。
 1. 瀏覽至 **osgi** > **設定**

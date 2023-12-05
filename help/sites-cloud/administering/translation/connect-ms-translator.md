@@ -4,9 +4,9 @@ description: 瞭解如何將AEM連線至現成的Microsoft Translator，以自�
 feature: Language Copy
 role: Admin
 exl-id: ca3c50f9-005e-4871-8606-0cfd3ed21936
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '488'
+source-wordcount: '487'
 ht-degree: 4%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 4%
 | 屬性 | 說明 |
 |---|---|
 | 翻譯標籤 | 翻譯服務的顯示名稱 |
-| 翻譯歸因 | （選用）對於使用者產生的內容，為已翻譯文字旁邊顯示的屬性，例如 `Translations by Microsoft` |
+| 翻譯歸因 | （選用）對於使用者產生的內容，為已翻譯文字旁邊顯示的屬性，例如： `Translations by Microsoft` |
 | 工作區ID | （選用）要使用的自訂Microsoft Translator引擎識別碼 |
 | 訂閱金鑰 | 您的Microsoft Translator Microsoft訂閱金鑰 |
 

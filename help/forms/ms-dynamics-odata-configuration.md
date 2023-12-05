@@ -5,10 +5,10 @@ feature: Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb7b41f0-fd4f-4ba6-9f45-792a66ba6368
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '985'
-ht-degree: 4%
+source-wordcount: '957'
+ht-degree: 2%
 
 ---
 
@@ -122,11 +122,11 @@ OData服務由其服務根URL識別。 若要在中設定OData服務 [!DNL Exper
 >
 >如需設定的逐步指南 [!DNL Microsoft Dynamics 365]，線上或內部部署，請參閱 [[!DNL Microsoft Dynamics] OData設定](ms-dynamics-odata-configuration.md).
 
-1. 前往&#x200B;**[!UICONTROL 工具 > 雲端服務 > 資料來源]**。點選以選取您要建立雲端設定的資料夾。
+1. 前往 **[!UICONTROL 「工具>Cloud Service>資料來源」]**. 選取以選取您要建立雲端設定的資料夾。
 
    另請參閱 [設定雲端服務設定的資料夾](#cloud-folder) 以取得為雲端服務設定建立和設定資料夾的資訊。
 
-1. 點選 **[!UICONTROL 建立]** 以開啟 **[!UICONTROL 建立資料來源設定精靈]**. 指定設定的名稱及標題（選擇性），選取 **[!UICONTROL OData服務]** 從 **[!UICONTROL 服務型別]** 下拉式清單(可選擇瀏覽並選取設定的縮圖影像，然後點選 **[!UICONTROL 下一個]**.
+1. 選取 **[!UICONTROL 建立]** 以開啟 **[!UICONTROL 建立資料來源設定精靈]**. 指定設定的名稱及標題（選擇性），選取 **[!UICONTROL OData服務]** 從 **[!UICONTROL 服務型別]** 下拉式清單(可選擇瀏覽並選取設定的縮圖影像，然後選取 **[!UICONTROL 下一個]**.
 在 **[!UICONTROL 驗證設定]** 標籤：
 
    1. 輸入值 **[!UICONTROL 服務根目錄]** 欄位。 前往Dynamics執行個體並導覽至 **[!UICONTROL 開發人員資源]** 以檢視「服務根」欄位的值。 例如， https://&lt;tenant-name>/api/data/v9.1/

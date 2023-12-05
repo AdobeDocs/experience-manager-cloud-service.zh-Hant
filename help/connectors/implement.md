@@ -2,10 +2,10 @@
 title: 實作 AEM 連接器
 description: 瞭解如何建置、測試和實作AEM聯結器。 此外，您也可以瞭解常見的整合模式。
 exl-id: 70024424-8c52-493e-bbc9-03d238b8a5f5
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '980'
-ht-degree: 7%
+source-wordcount: '935'
+ht-degree: 6%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 7%
 
 以下提供建立 [AEM Connectors的實用參考](https://www.adobe.io/apis/experiencecloud/aem/aemconnectors.html) ，並應結合提交和維護連接器 [的指](submit.md) 南來閱讀 [](maintain.md) 。
 
-請注意，您可以透過取得AEM的開發人員授權 [Adobe交換程式](https://partners.adobe.com/exchangeprogram/experiencecloud).
+若需AEM的開發人員授權，請前往 [Adobe交換程式](https://partners.adobe.com/exchangeprogram/experiencecloud).
 
 常見整合模式
 ---------------------------
