@@ -2,9 +2,9 @@
 title: 移轉內容後建立索引
 description: 瞭解移轉程式如何在目的地Cloud Service例項上為擷取的內容建立索引。
 exl-id: a13d5df4-b351-410a-9336-1b34a8af21b6
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 58195fcb10312c89042f555665d4c8b3642f82ba
 workflow-type: tm+mt
-source-wordcount: '505'
+source-wordcount: '538'
 ht-degree: 9%
 
 ---
@@ -18,15 +18,13 @@ ht-degree: 9%
 >title="內容編製索引"
 >abstract="AEM 編製索引是指將內容移轉到 Cloud Service 例項後編製該內容索引。必須編製索引才能支援在該例項上搜尋內容。"
 
-一旦Cloud Acceleration Manager完成將內容擷取至您的Cloud Service例項中，即可使用。 一開始不會將內容編列索引，這可能會導致環境不穩定，發生無法搜尋的內容和效能降低等問題。
-為獲得執行個體上的最佳效能，移轉程式將自動開始編制內容索引。 除了監視索引進度外，沒有其他要做的事。
+一旦Cloud Acceleration Manager完成將內容擷取至您的Cloud Service例項中，即可使用。 一開始不會將內容編列索引，這可能會導致環境不穩定，發生無法搜尋的內容和效能降低等問題。 為獲得執行個體上的最佳效能，移轉程式將自動開始編制內容索引。 除了監視索引進度外，沒有其他要做的事。
 
 > 如需如何開始內嵌的詳細資訊，請參閱 [將內容擷取至Cloud Service](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md).
 
 下列步驟顯示編制索引期間可在UI中看到的一般流程。 有些標籤在工具提示中提供有用的內容，因此請務必將滑鼠移至專案上，以進一步瞭解目前的索引狀態。
 
-若要開始，請前往Cloud Acceleration Manager 。 按一下您的專案卡，然後按一下「內容轉移」卡。 瀏覽至 **內嵌工作**
-並檢視列出的工作。
+若要開始，請前往Cloud Acceleration Manager 。 按一下您的專案卡，然後按一下「內容轉移」卡。 瀏覽至 **內嵌工作** 並檢視列出的工作。
 
 >[!NOTE]
 >您可以使用內嵌工作的動作，透過……下拉式清單來檢視或下載索引記錄檔。 記錄檔將可在
@@ -53,6 +51,10 @@ ht-degree: 9%
 ### 錯誤次數
 
 建立目的地Cloud Service執行個體的索引很可能成功。 某些情況下，作業可能會失敗，而擷取工作列會顯示如下。 在所有情況下，將滑鼠懸停在失敗狀態上，可以找到失敗的一些詳細資訊，它可能會提供詳細資訊，幫助您決定後續步驟。 此時，索引工作記錄檔可供檢視或下載，以協助發現失敗的來源。 如果下一個步驟不清楚，請聯絡Adobe支援，提供擷取和索引記錄的詳細資訊。
+
+>[!TIP]
+>
+> 如果索引工作執行時間似乎太長，請確保 [尚未套用IP允許清單](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) Cloud Manager會封鎖Cloud Acceleration Manager，使其無法連線至移轉服務。
 
 ![影像](/help/journey-migration/content-transfer-tool/assets-indexing/failed.png)
 
