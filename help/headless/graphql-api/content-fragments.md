@@ -3,9 +3,9 @@ title: 與內容片段搭配使用的 AEM GraphQL API
 description: 了解如何將 Adobe Experience Manager (AEM) as a Cloud Service 中的內容片段與 AEM GraphQL API 搭配使用，以實現 Headless 內容傳遞。
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 7aeab6ab7dcd933a1d02514b6eea752527055c77
 workflow-type: tm+mt
-source-wordcount: '4863'
+source-wordcount: '4910'
 ht-degree: 93%
 
 ---
@@ -1035,6 +1035,15 @@ query ($seoName: String!, $format: AssetTransformFormat!) {
 ## 驗證 {#authentication}
 
 請參閱[針對內容片段之遠端 AEM GraphQL 查詢的驗證](/help/headless/security/authentication.md)。
+
+## 限制 {#limitations}
+
+為了防止潛在問題，您的查詢有預設限制：
+
+* 查詢不能包含超過1M (1024 * 1024)個字元
+* 查詢不能包含超過15000個權杖
+* 查詢不能包含超過200000個空白代號
+* 查詢深度不能超過500
 
 ## 常見問題 {#faqs}
 
