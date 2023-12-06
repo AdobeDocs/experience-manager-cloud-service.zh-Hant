@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2023.4.0 版發行�
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2023.4.0 版發行說明。'
 exl-id: c34aedee-e45a-4e2a-ae7f-930bc0cc026f
 source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1170'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -44,7 +44,7 @@ ht-degree: 99%
 
 * 內容片段及其參考資料現在可以發佈到 [AEM 預覽服務](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=zh-Hant#access-preview-service) (使用[內容片段主控台](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=zh-Hant))，讓使用者在上線前可在分離的預覽應用程式上先預覽最終體驗。
 * 現在可以使用 AEM GraphQL 在 Headless 情境下，動態最佳化影像以進行 Web 傳遞。[查詢變數](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/images.html?lang=zh-Hant#query-variables)可以在 GraphQL 查詢中定義，以允許分離的用戶端應用程式相應地要求 AEM 中的最佳化影像。
-* 現在可以使用 AEM GraphQL 內容傳遞 API 將[內容片段變化](https://experienceleague.adobe.com/docs/experience-manager-65/assets/content-fragments/content-fragments-variations.html?lang=en)上的標記輸出至 JSON。
+* 現在可以使用 AEM GraphQL 內容傳遞 API 將[內容片段變化](https://experienceleague.adobe.com/docs/experience-manager-65/assets/content-fragments/content-fragments-variations.html?lang=zh-Hant)上的標記輸出至 JSON。
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -63,7 +63,7 @@ ht-degree: 99%
 * 顏色搜尋面向的可用性改進 - 顏色值的輸入欄位現在為可編輯，搜尋結果只在您退出檢色器時才會更新。
 
 * 為 Dynamic Media 影片傳遞 (啟用 CMAF) 中的自適應串流推出新的通訊協定支援 (DASH - 基於 HTTP 的動態自適應串流)：
-   * 最適化串流(DASH/HLS)可確保更出色的視訊使用者觀看體驗
+   * 自適應串流 (DASH/HLS) 可確保使用者擁有更好的觀看影片體驗。
    * DASH 是自適應影片串流的國際標準通訊協定，在業界被廣泛採用
    * 「在所有區域提供」將透過支援票證啟用
 
@@ -97,7 +97,7 @@ ht-degree: 99%
 
   此功能有助於引進標準型錯誤回應來提高整體的錯誤處理能力；這些回應向後相容於 OOTB 錯誤處理常式，且具有更大的彈性和控制性。
 
-### Headless 最適化表單早期採用者計畫 {#forms-early-adopter}
+### Headless 最適化表單早期採用者方案 {#forms-early-adopter}
 
 使用 Headless 最適化表單讓您的開發人員能夠建立、發佈和管理可透過 API 存取和互動的互動式表單，而不是透過傳統的圖形使用者介面。Headless 最適化表單可協助您：
 
@@ -106,13 +106,13 @@ ht-degree: 99%
 * 在表單應用程式中重複使用您的專屬 UI 元件
 * 使用 Adobe Experience Manager Forms 的強大功能
 
-使用您的官方電子郵件 ID 寄送電子郵件至 `aem-forms-headless@adobe.com`，即可加入早期採用者計畫。
+使用您的官方電子郵件 ID 寄送電子郵件至 `aem-forms-headless@adobe.com`，即可加入早期採用者方案。
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
 ### 新增功能 {#what-is-new-foundation}
 
-* 額外發佈區域：除了主要區域外，Sites 客戶最多可授權三個發佈區域。流量會路由到其他發佈伺服器陣列，因此可降低某些要求的延遲，並增進發生區域性中斷時的復原能力。如需授權您的計畫[額外發佈區域](/help/operations/additional-publish-regions.md)的資訊，請和您的 Adob&#x200B;&#x200B;e 客戶經理聯絡。
+* 額外發佈區域：除了主要區域外，Sites 客戶最多可授權三個發佈區域。流量會路由到其他發佈伺服器陣列，因此可降低某些要求的延遲，並增進發生區域性中斷時的復原能力。如需授權您的方案[額外發佈區域](/help/operations/additional-publish-regions.md)的資訊，請和您的 Adobe 客戶經理聯絡。
 
 ## 維護版本發行說明 {#maintenance}
 

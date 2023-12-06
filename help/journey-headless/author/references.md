@@ -1,49 +1,49 @@
 ---
 title: 了解如何在內容片段中使用參考
-description: 了解如何在內容片段中使用內容、其他片段和其他資產 (媒體) 的參考。介紹巢狀片段對 Headless CMS 編寫的必要性和機制。
+description: 了解如何在內容片段中使用內容、其他片段和其他資產 (媒體) 的參考。介紹巢狀片段對 Headless CMS 製作的必要性和機制。
 exl-id: a65e8a5a-954b-4307-8027-ca8bac5f4261
 source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '705'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
 # 了解如何在內容片段中使用參考 {#author-headless-references}
 
-## 到目前為止 {#story-so-far}
+## 目前進度 {#story-so-far}
 
-在[AEM Headless 內容作者歷程](overview.md)的一開始，[簡介](introduction.md)部分介紹了和 Headless 內容編寫相關的基本概念和術語。
+在[AEM Headless 內容作者歷程](overview.md)的一開始，[簡介](introduction.md)部分介紹了和 Headless 內容製作相關的基本概念和術語。
 
-您已經了解 Headless CMS 編寫的基本知識，包含如何使用 AEMaaCS 編寫內容，尤其是編寫內容片段。
+您已經了解 Headless CMS 製作的基本知識，包含如何使用 AEMaaCS 製作內容，尤其是製作內容片段。
 
-本文以這些概念為基礎，以便您了解如何使用參考為您的 AEM Headless 專案編寫您自己的內容。
+本文以這些概念為基礎，以便您了解如何使用參考為您的 AEM Headless 專案製作您自己的內容。
 
 ## 目標 {#objective}
 
 * **對象**：進階
-* **目標**：介紹如何如何使用 Headless CMS 編寫的參考。有哪些類型參考可用，它們的作用為何：
+* **目標**：介紹如何如何使用 Headless CMS 製作的參考。有哪些類型參考可用，它們的作用為何：
 
    * 內容參考
    * 資產/媒體參考
    * 片段參考
-   * 文字區塊中的即興參考
+   * 文字區塊內的臨時參考
 
 ## 什麼是參考 {#what-are-references}
 
 參考只是一種連接資源 (無論是其他內容、資產 (如影像) 還是其他片段) 的機制。雖然非常相似，但還是有一些不同。
 
-有些參考資料具有專用的資料型別（例如「內容參考」和「片段參考」），而有些只是新增為文字區塊內的參考（資產參考和即興參考）。
+一些參考有專用資料類型 (例如內容參考和片段參考)，而其他參考只是新增至文字區塊內的參考 (資產參考和臨時參考)。
 
 ![內容片段 - 參考](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-overview.png)
 
 ## 內容參考 {#content-references}
 
-內容參考的作用就是可讓您參考任何其他內容。這樣會開啟一個瀏覽器，讓您選取內容專案。
+內容參考的作用就是可讓您參考任何其他內容。這會開啟讓您選取內容項目的瀏覽器。
 
 ## 資產/媒體參考 {#assets-media-references}
 
-可以使用&#x200B;**插入資產**&#x200B;選項，讓資產 (例如影像或媒體) 可在文字區塊內被參考。如此將可開啟瀏覽器，讓您選取資產。
+可以使用&#x200B;**插入資產**&#x200B;選項，讓資產 (例如影像或媒體) 可在文字區塊內被參考。這會開啟讓您選取資產的瀏覽器。
 
 ![內容片段 - 插入資產](/help/journey-headless/author/assets/headless-journey-author-references-02.png)
 
@@ -58,7 +58,7 @@ ht-degree: 88%
 * 人員
 * 獎項
 
-看似簡單明瞭，但公司同時有CEO和員工....這些都是人，每一個都被定義為人員。
+看起來很簡單，但一家公司既有執行長也有員工...這些都是人，每一個都被定義為人員。
 
 人員可以獲得一個獎項 (或兩個)。
 
@@ -77,9 +77,9 @@ ht-degree: 88%
 ![Content Modeling with Content Fragments](/help/journey-headless/developer/assets/headless-modeling-01.png "Content Modeling with Content Fragments")
 -->
 
-### 如何編寫巢狀片段 {#author-nested-fragment}
+### 如何製作巢狀片段 {#author-nested-fragment}
 
-編寫片段參考非常簡單 (儘管欄位通常不會被標記為&#x200B;**片段參考**)。您可以直接輸入參考，或者 (更有可能) 選取資料夾圖示以開啟瀏覽器，讓您可瀏覽和選取所需片段。
+製作片段參考非常簡單 (儘管欄位通常不會被標記為&#x200B;**片段參考**)。您可以直接輸入參考，或者 (更有可能) 選取資料夾圖示以開啟瀏覽器，讓您可瀏覽和選取所需片段。
 
 ![內容片段 - 參考](/help/journey-headless/author/assets/headless-journey-author-references-03.png)
 
@@ -96,7 +96,7 @@ ht-degree: 88%
 
 ## 臨時參考 {#adhoc-references}
 
-即興參考可以新增為文字區塊內的簡單連結：
+臨時參考可以簡單連結的形式新增到文字區塊內：
 
 ![內容片段 - 臨時參考](/help/journey-headless/author/assets/headless-journey-author-references-04.png)
 
@@ -114,7 +114,7 @@ ht-degree: 88%
 
       * [建立內容片段](/help/sites-cloud/administering/content-fragments/managing.md#creating-a-content-fragment)
 
-   * [編寫內容片段](/help/sites-cloud/administering/content-fragments/authoring.md)
+   * [製作內容片段](/help/sites-cloud/administering/content-fragments/authoring.md)
 
    * [內容片段模型](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
 

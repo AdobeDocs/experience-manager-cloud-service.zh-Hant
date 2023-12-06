@@ -4,9 +4,9 @@ description: 了解如何使用及管理 Experience Manager Content and Commerce
 landing-page-description: 了解如何使用及管理 Experience Manager Content and Commerce as a Cloud Service。
 exl-id: 7f7ece35-f78b-4c66-8a0b-38d248430d85
 source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '369'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ ht-degree: 94%
 
 | 使用手冊 | 說明 |
 |---|---|
-| [概觀](/help/overview/home.md) | 本指南提供Experience Manager as a Cloud Service概述，包括簡介、術語、架構等。 |
+| [概觀](/help/overview/home.md) | 本指南提供 Experience Manager as a Cloud Service 概觀，包括簡介、術語和架構等。 |
 | [發行說明](/help/release-notes/home.md) | 本指南提供 Experience Manager as a Cloud Service 最新版本的重要資訊，包括新增、過時和移除的功能，以及已知問題。 |
 | [安全性使用手冊](/help/security/home.md) | 了解 Experience Manager as a Cloud Service 與安全性相關的重要主題。 |
 | [入門歷程](/help/journey-onboarding/overview.md) | 本指南簡單扼要地說明如何開始使用 Experience Manager as a Cloud Service，包括如何取得存取權限和重要的資料保護資訊。 |
@@ -43,8 +43,8 @@ ht-degree: 94%
 ## 其他 Experience Manager 資源 {#other-resources}
 
 * [Dispatcher 文件](/help/implementing/dispatcher/overview.md)
-* [HTL 文件](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=zh-Hant)
-* [核心元件文件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hant)
+* [HTL 文件](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html)
+* [核心元件文件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
 * [Cloud Manager](/help/onboarding/cloud-manager-introduction.md)
 * [GDPR 整備](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md)
 * [Adobe Experience Manager as a Cloud Service 教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)

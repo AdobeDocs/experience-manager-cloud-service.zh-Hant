@@ -1,30 +1,30 @@
 ---
 title: Screens as a Cloud Service 常見問題集
-description: 本頁說明Screensas a Cloud Service的常見問題。
+description: 本頁面說明 Screens as a Cloud Service 的常見問題。
 exl-id: 93f2144c-0e64-4012-88c6-86972d8cad9f
 source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '454'
-ht-degree: 2%
+ht-degree: 100%
 
 ---
 
 # Screens as a Cloud Service 常見問題集 {#screens-cloud-faqs}
 
-以下章節提供與Screensas a Cloud Service專案相關的常見問題集(FAQ)解答。
+以下區段提供與 Screens as a Cloud Service 專案相關的常見問題 (FAQ) 的答案。
 
-## 如果指向Screensas a Cloud Service的AEM Screens Player沒有挑選具有/etc.clientlibs/xxx/clientlibs/clientlib-site.lc-813643788974b0f89d686d9591526d63-lc.min.css格式的自訂clientlibs，怎麼辦？
+## 如果指向 Screens as a Cloud Service 的 AEM Screens Player 未挑選採用 etc.clientlibs/xxx/clientlibs/clientlib-site.lc-813643788974b0f89d686d9591526d63-lc.min.css 格式的自訂 clientlibs。
 
-AEMas a Cloud Service會在每次部署時變更長快取金鑰。 AEM Screens會在內容修改時產生離線快取，而不是在Cloud Manager執行部署時產生。 資料清單中的這些長快取金鑰無效，因此播放器無法下載 *clientlibs*.
+AEM as a Cloud Service 在每次部署時變更長快取金鑰。AEM Screens 在內容修改時產生離線快取，而不是在 Cloud Manager 執行部署時產生。清單中的這些長快取金鑰無效，因此播放器無法下載 *clientlibs*。
 
-使用 `longCacheKey="none"` 在您的 `clientlib` 資料夾會完全移除以下專案的長快取金鑰： *clientlibs*.
+使用 `longCacheKey="none"`(在您的 `clientlib` 資料夾) 會完全刪除 *clientlibs* 的長快取金鑰。
 
 
-## 如果離線資訊清單未依預期包含所有資源，怎麼辦？ {#offline-manifest}
+## 如果離線清單未包含預期的所有資源，我該怎麼辦？ {#offline-manifest}
 
-離線快取產生方式： **bulk-offline-update-screens-service** 服務使用者。 某些路徑，無法由存取 `bulk-offline-update-screens-service`，導致離線資料中缺少內容。
+離線快取是使用 **bulk-offline-update-screens-service** 服務使用者產生的。某些 `bulk-offline-update-screens-service` 無法存取的路徑導致離線清單中缺少內容。
 
-在您的程式碼中， `ui.config or ui.apps`，在設定資料夾中建立OSGi設定，包含以下內容，並將檔案名稱命名為 `org.apache.sling.jcr.repoinit.RepositoryInitializer-serviceusersandacls-content.config`
+在您的程式碼中，`ui.config or ui.apps` 在設定資料夾中建立一個 OSGi 設定，其內容如下，且檔案名為 `org.apache.sling.jcr.repoinit.RepositoryInitializer-serviceusersandacls-content.config`
 
 ```
 scripts=[
@@ -36,19 +36,18 @@ scripts=[
         "] 
 ```
 
-## 在AEM Screensas a Cloud Service頻道中無縫轉譯影像時，建議使用哪些影像格式？{#screens-cloud-image-format}
+## 建議使用哪些影像格式在 AEM Screens as a Cloud Service 頻道中無縫轉譯影像？{#screens-cloud-image-format}
 
-Adobe建議在格式中使用影像 `.png` 和 `.jpeg` 在AEM Screensas a Cloud Service頻道中，享受最佳數位招牌體驗。
-格式的影像 `*.tif` （標籤影像檔案格式）在AEM Screensas a Cloud Service中不受支援。 如果色版具有此影像格式，在播放器側，則不會轉譯影像。
+Adobe 建議在 AEM Screens as a Cloud Service 頻道中以 `.png` 和 `.jpeg` 格式來使用影像，以獲得最佳的數位招牌體驗。AEM Screens as a Cloud Service 不支援採用 `*.tif` (Tag Image File format) 格式的影像。如果頻道具有此一格式的影像，則在播放器端不會呈現影像。
 
-## 如果處於開發人員模式（線上）的管道未在AEM Screens Player上呈現，怎麼辦？{#screens-cloud-online-channel-blank-iframe}
+## 如果處於開發人員模式 (線上) 的頻道在 AEM Screens Player 中未呈現影像，我該怎麼辦？{#screens-cloud-online-channel-blank-iframe}
 
-Adobe建議您使用AEM Screens快取功能。 不過，如果您必須在開發人員模式下執行頻道，且AEM Screens Player顯示空白熒幕，請檢查您的Player開發人員工具，並尋找 `X-Frame-Options` 或 `frame-ancestors` 錯誤。 解決方法是將Dispatcher設定為允許內容在iFrame中執行。 通常，下列設定可正常運作：
+Adobe 建議您使用 AEM Screens 快取功能。但是，如果您必須在開發者模式下執行頻道而且 AEM Screens Player 顯示空白畫面，請檢查播放器的開發者工具並尋找 `X-Frame-Options` 或 `frame-ancestors` 錯誤。解決方案是設定 Dispatcher，允許內容在 iFrame 中執行。通常，以下設定有效：
 
 ```
 Header set Content-Security-Policy "frame-ancestors 'self' file: localhost:*;"
 ```
 
-## 使用註冊代碼上限的意義為何？
+## 註冊代碼限制有什麼用處？
 
-最佳做法是限制註冊代碼的使用方式。 如果註冊碼遭到破壞，但限製為100個註冊，則攻擊者最多只能註冊該號碼，但不能註冊更多號碼。 建立註冊代碼並註冊部分客戶播放器後，您隨時都可以更新使用量限制。 如果客戶發現特定註冊代碼有異常註冊活動，他們可以在調查時即時降低限制。 若是假警報，他們可以增加數字，而不會影響已註冊的玩家。
+作為最佳實務，您可以限制註冊代碼的使用。如果註冊代碼被洩露，但註冊次數限制為 100 次，則攻擊者最多只能註冊該數量而不是更多。在建立註冊代碼並且部分客戶的播放器已經註冊後，您可以隨時更新使用限制。如果客戶發現特定註冊代碼發生異常的註冊活動，他們可以在調查時即時降低限制。如果是誤報，則他們可以增加數目，並不會影響已經註冊的播放器。

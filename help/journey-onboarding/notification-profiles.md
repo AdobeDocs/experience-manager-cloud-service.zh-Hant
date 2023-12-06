@@ -5,9 +5,9 @@ feature: Onboarding
 role: Admin, User, Developer
 exl-id: 4edecfcd-6301-4a46-98c7-eb5665f48995
 source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '982'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 94%
 
 ## 概觀 {#overview}
 
-Adobe有時會就AEMas a Cloud Service環境聯絡使用者。 除了產品內通知，Adobe 偶爾也會使用電子郵件進行通知。此類電子郵件通知有兩種類型：
+Adobe 不定時會就 AEM as a Cloud Service 環境相關情況聯絡使用者。除了產品內通知，Adobe 偶爾也會使用電子郵件進行通知。此類電子郵件通知有兩種類型：
 
 * **事件通知** - 這些通知是在事件期間或 Adobe 發現您的 AEM as a Cloud Service 環境存在潛在可用性問題時傳送的。
 * **主動通知** - 當 Adobe 支援團隊成員想要提供有關可使您的 AEM as a Cloud Service 環境受益的潛在最佳化或建議的指引時，將傳送這些通知。
@@ -38,7 +38,7 @@ Adobe有時會就AEMas a Cloud Service環境聯絡使用者。 除了產品內�
 
 ## 建立新的 Cloud Manager 產品設定檔 {#create-profiles}
 
-若要正確設定接收通知，請建立兩個使用者設定檔。 這些步驟只執行一次。
+要正確設定接收通知，您需要建立兩個使用者設定檔。這些步驟僅執行一次。
 
 1. 請上 [`https://adminconsole.adobe.com` 登入 Admin Console。](https://adminconsole.adobe.com)
 
@@ -52,7 +52,7 @@ Adobe有時會就AEMas a Cloud Service環境聯絡使用者。 除了產品內�
 
    ![Admin Console 中的執行個體清單](assets/cloud_manager_instance.png)
 
-1. 您可以檢視所有已設定的Cloud Manager產品設定檔清單。
+1. 您可以看到所有已設定的 Cloud Manager 產品設定檔清單。
 
    ![Admin Console 中的產品設定檔](assets/cloud_manager_profiles.png)
 
@@ -148,4 +148,4 @@ Adobe有時會就AEMas a Cloud Service環境聯絡使用者。 除了產品內�
 
 如果您想要此上線歷程以外的內容，以下是您可選擇的其他資源。
 
-* [動作中心](/help/operations/actions-center.md)  — 善用行動中心，方便處理事件和其他重要資訊。
+* [行動中心](/help/operations/actions-center.md) - 利用行動中心，方便針對事故和其他重要資訊採取行動。

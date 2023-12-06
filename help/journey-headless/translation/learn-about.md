@@ -3,9 +3,9 @@ title: 了解 Headless 內容以及如何在 AEM 中翻譯
 description: 了解 Headless 概念、它們如何對應到 AEM 以及 AEM 翻譯理論。
 exl-id: 72bb6646-e573-4576-8d17-49787d8c8c7f
 source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '742'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -26,12 +26,12 @@ ht-degree: 91%
 
 ![傳統的全堆疊 CMS](/help/journey-headless/developer/assets/full-stack.png)
 
-在全棧疊CMS中，操控內容的功能在CMS中。 系統的功能構成了 CMS 堆疊的不同元件。全堆疊解決方案有很多優點。
+在全堆疊 CMS 中，操控內容的功能都在 CMS 中。系統的功能構成了 CMS 堆疊的不同元件。全堆疊解決方案有很多優點。
 
 * 只需維護一個系統。
 * 內容集中管理。
 * 系統的所有服務都是整合在內的。
-* 內容編寫可完美無縫進行。
+* 內容製作可完美無縫進行。
 
 因此，如果必須加入新的管道，或需要支援新的體驗類型，可以將一個 (或多個) 新元件插入到堆疊，並且只有一個地方可以進行變更。
 
@@ -47,17 +47,17 @@ ht-degree: 91%
 
 ![ Headless CMS](/help/journey-headless/developer/assets/headless-cms.png)
 
-消費服務，不論是AR體驗、網路商店、行動體驗、漸進式網頁應用程式(PWA)等，都會從Headless CMS擷取內容，並提供專屬的轉譯。 它們負責為您的內容提供自己的頭。
+取用內容的服務，無論是 AR 體驗、網路商店、行動體驗、漸進式網頁應用程式 (PWA) 等，都從 Headless CMS 取用內容並提供自己的呈現操作。它們負責為您的內容提供自己的頭。
 
 省略頭可消除複雜性來簡化 CMS。這樣做也會將呈現內容的責任轉移到實際需要內容並且通常更適合執行呈現的服務。
 
 ## 在 AEM 翻譯 Headless 內容 {#translating-in-aem}
 
-除了提供強大的工具來以全堆疊方式建立、管理和傳遞傳統網頁外，AEM 還可讓您編寫獨立內容選集並以 Headless 方式提供該內容。
+除了提供強大的工具來以全堆疊方式建立、管理和傳遞傳統網頁外，AEM 還可讓您製作獨立內容選集並以 Headless 方式提供該內容。
 
 AEM 的強大功能使其能夠以 Headless 方式、全堆疊方式或同時以兩種模式傳遞內容。對於翻譯專家來說，同一套翻譯工具可以套用於兩種類型的內容，為您提供統一的內容翻譯方法。
 
-在此歷程中，您會進一步瞭解AEM如何翻譯內容的詳細資訊，但從高層面來看，概念很簡單：
+在接下來的歷程中，您會深入了解有關 AEM 如何翻譯內容的詳細資訊，其概念很簡單：
 
 1. 透過設定整合框架來定義對翻譯服務的連接。
 1. 使用翻譯規則定義應翻譯的內容。
@@ -66,7 +66,7 @@ AEM 的強大功能使其能夠以 Headless 方式、全堆疊方式或同時以
 
 ## 下一步 {#what-is-next}
 
-感謝您開始進行 AEM Headless 翻譯歷程！閱讀了本文件後，您應該：
+感謝您開始進行 AEM Headless 翻譯歷程！您現已閱讀本文件，應該：
 
 * 了解 Headless 內容傳遞的基本概念。
 * 熟悉 AEM 如何支援 Headless 和翻譯。

@@ -1,24 +1,24 @@
 ---
-title: 為 AEM as a Headless CMS 編寫內容 - 簡介
-description: 介紹使用 Adobe Experience Manager as a Cloud Service as a Headless CMS 的功能為您的專案編寫內容。
+title: 為 AEM as a Headless CMS 製作內容 - 簡介
+description: 介紹使用 Adobe Experience Manager as a Cloud Service as a Headless CMS 的功能為您的專案製作內容。
 exl-id: 065b00cb-a82d-4bcb-b2c9-44542cee6303
 source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '690'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
-# 為 AEM as a Headless CMS 編寫內容 - 簡介 {#author-headless-introduction}
+# 為 AEM as a Headless CMS 製作內容 - 簡介 {#author-headless-introduction}
 
-在 [AEM Headless 內容作者歷程](overview.md)的這一部分中，您可以學習必要的 (基本) 概念和術語，以了解如何使用 Adobe Experience Manager (AEM) as a Cloud Service as a Headless CMS 編寫內容。這涉及架構和建立內容以進行 Headless 內容傳遞。
+在 [AEM Headless 內容作者歷程](overview.md)的這一部分中，您可以學習必要的 (基本) 概念和術語，以了解如何使用 Adobe Experience Manager (AEM) as a Cloud Service as a Headless CMS 製作內容。這涉及架構和建立內容以進行 Headless 內容傳遞。
 
 {{headless-trials-promotion}}
 
 ## 目標 {#objective}
 
 * **對象**：初學者
-* **Objective**：介紹與 Headless 編寫相關的概念和術語。
+* **Objective**：介紹與 Headless 製作相關的概念和術語。
 
 ## 內容管理系統 (CMS) {#content-management-system}
 
@@ -49,19 +49,19 @@ Headless 是一個術語，用於描述能夠有效地將內容與內容在 Web 
 這表示它可以做為：
 
 * Headless CMS
-   * 若為 Headless ，可將內容編寫為&#x200B;**內容片段**。
+   * 若為 Headless ，可將內容製作為&#x200B;**內容片段**。
 這些是內容的獨立項目，可直接由各種應用程式存取，因為它們具有預先定義結構，以**內容片段模型**為基礎。
 這表示您的內容能以多種格式及內含多種功能呈現在多種裝置上。
 (作為一個雙重打擊，如果你想要的話，可以在建構 AEM 網頁時使用這些片段。)
 
 * 「傳統」CMS
-   * 內容是為網頁編寫的，使用一系列元件來定義內容如何在您的網站上呈現。即使在這裡，AEM 也非常靈活，因為您的專案團隊可以開發自訂元件。
+   * 內容是為網頁製作的，使用一系列元件來定義內容如何在您的網站上呈現。即使在這裡，AEM 也非常靈活，因為您的專案團隊可以開發自訂元件。
 
 ## 內容模型 {#content-modeling}
 
 所以內容模型 (也稱為資料模型) 是另一個技術性術語，您身為作者為什麼對它感興趣？
 
-若要讓Headless應用程式能夠存取您的內容並據以採取行動，您的內容必須具備預先定義的結構。 您的內容可以採用自由格式，但會使應用程式&#x200B;*十分*&#x200B;不便。
+為了讓 Headless 應用程式可以存取您的內容並進行一些操作，您的內容確實需要有預先定義的結構。您的內容可以採用自由格式，但會使應用程式&#x200B;*十分*&#x200B;不便。
 
 基本上，定義要遵循之內容結構的流程包含設計模型，這稱為資料模型。
 
@@ -73,7 +73,7 @@ Headless 是一個術語，用於描述能夠有效地將內容與內容在 Web 
 
 ## 下一步 {#whats-next}
 
-現在您已經了解了概念和術語，下一步是[學習編寫內容片段的基礎知識](basics.md)。這將介紹 AEM 的基本處理以及如何編寫內容片段。
+現在您已經了解了概念和術語，下一步是[學習製作內容片段的基礎知識](basics.md)。這將介紹 AEM 的基本處理以及如何製作內容片段。
 
 ## 其他資源 {#additional-resources}
 

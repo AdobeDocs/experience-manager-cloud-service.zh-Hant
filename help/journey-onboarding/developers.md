@@ -5,18 +5,18 @@ feature: Onboarding
 role: Admin, User, Developer
 exl-id: f57a856b-0932-4e8f-be59-a19fe692e2ab
 source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1411'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
 
 # 開發人員和部署管理員工作 {#developer-deployment-manager}
 
-在此選擇性部分中， [入門歷程，](overview.md) 您會瞭解開發人員和部署管理員如何存取Git來開發應用計畫，並使用管道來部署它們。
+在[上線歷程](overview.md)的這個選用部分中，您將了解開發人員和部署管理員如何存取 Git 來開發應用程式，並使用管道來部署它們。
 
-## 到目前為止 {#story-so-far}
+## 目前進度 {#story-so-far}
 
 您已在上線歷程中走了很長一段路！恭喜！系統管理員已透過設定必要的雲端資源，並在[指派 AEM 產品設定檔](assign-profiles-aem.md)文件中授與存取權，來完成上線歷程。
 
@@ -58,13 +58,13 @@ ht-degree: 95%
 
 您可以使用 Cloud Manager 中的自助服務 Git 帳戶管理存取和管理您的 Git 存放庫。
 
-1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織和計畫。
+1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織和方案。
 
-1. 從&#x200B;**計畫概觀**&#x200B;頁面瀏覽至&#x200B;**管道**&#x200B;卡，尋找&#x200B;**存取存放庫資訊**&#x200B;按鈕，以存取和管理您的 Git 存放庫。
+1. 從&#x200B;**方案概觀**&#x200B;頁面瀏覽至&#x200B;**管道**&#x200B;卡，尋找&#x200B;**存取存放庫資訊**&#x200B;按鈕，以存取和管理您的 Git 存放庫。
 
-   ![環境卡上的存取存放庫資訊按鈕](/help/implementing/cloud-manager/assets/repos/access-repo1.png)
+   ![環境卡片上的存取存放庫資訊按鈕](/help/implementing/cloud-manager/assets/repos/access-repo1.png)
 
-1. 按一下 **檢視存放庫資訊** 按鈕以開啟對話方塊進行檢視：
+1. 按一下「**檢視存放庫資訊**」按鈕來開啟對話框以檢視：
 
    * Cloud Manager Git 存放庫的 URL。
    * Git 使用者名稱。
@@ -80,7 +80,7 @@ ht-degree: 95%
 
 按照以下步驟建立您的第一個非生產部署管道。
 
-1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織和計畫。
+1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織和方案。
 
 1. 從 Cloud Manager 首頁畫面存取&#x200B;**管道**&#x200B;卡。按一下「**+新增**」並選取「**新增非生產管道**」。
 
@@ -92,7 +92,7 @@ ht-degree: 95%
 
 1. 在&#x200B;**非生產管道名稱**&#x200B;以識別您的管道以及以下附加資訊。
 
-1. 在&#x200B;**部署觸發計畫**&#x200B;選擇&#x200B;**手動**，以便管道僅在您啟動時執行。
+1. 在&#x200B;**部署觸發方案**&#x200B;選擇&#x200B;**手動**，以便管道僅在您啟動時執行。
 
 1. 按一下「**繼續**」。
 
@@ -117,9 +117,9 @@ ht-degree: 95%
 
 ![Cloud Manager 中的管道卡](/help/implementing/cloud-manager/assets/configure-pipeline/pipelines-card.png)
 
-1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織和計畫。
+1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織和方案。
 
-1. 導覽至 **管道** 卡來自 **計畫總覽** 頁面，並按一下您在前一節建立的管道旁的省略符號按鈕，然後選取 **執行** 功能表中。
+1. 瀏覽至「**管道**」卡 (位於「**方案概觀**」頁面)，並按一下您在前一節建立的管道旁邊的省略號按鈕，然後從選單中選取「**執行**」。
 
 1. 此管道執行開始，並由&#x200B;**狀態**&#x200B;欄顯示。
 
@@ -129,7 +129,7 @@ ht-degree: 95%
 
 ## 下一步 {#whats-next}
 
-閱讀了本文件後，您應該：
+閱讀本文件後，您應該：
 
 * 作為開發人員，了解如何存取和管理您的 Cloud Manager Git 存放庫。
 * 作為部署管理員，能夠在 Cloud Manager 中設定管道並部署您的程式碼。
@@ -148,8 +148,8 @@ ht-degree: 95%
 
 * [存取存放庫](/help/implementing/cloud-manager/managing-code/accessing-repos.md) - 了解如何使用 Cloud Manager 中的自助服務 Git 帳戶管理存取和管理您的 Git 存放庫。
 * [將 Git 與 Cloud Manager 搭配使用](/help/implementing/cloud-manager/managing-code/integrating-with-git.md) - 了解如何使用 Cloud Manager 的 Git 存放庫以及如何將您內部部署客戶管理的 Git 存放庫與 Cloud Manager 整合。
-* [本機開發環境設定](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=zh-Hant) - 本教程將引導您使用 AEM as a Cloud Service SDK 為 Adobe Experience Manager (AEM) 設定本機開發環境。
-* [開始使用 AEM Sites - WKND 教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=zh-Hant) - 這個多部分教學課程是專為 Adobe Experience Manager 的新手開發人員設計的。此教學課程會逐步引導您實作虛擬生活風格品牌 WKND 的 AEM 網站。此教學課程涵蓋基礎的主題，例如專案設定、核心元件、可編輯的範本、用戶端資料庫以及使用 Adobe Experience Manager Sites 的元件開發。
+* [本機開發環境設定](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html) - 本教程將引導您使用 AEM as a Cloud Service SDK 為 Adobe Experience Manager (AEM) 設定本機開發環境。
+* [開始使用 AEM Sites - WKND 教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) - 這個多部分教學課程是專為 Adobe Experience Manager 的新手開發人員設計的。此教學課程會逐步引導您實作虛擬生活風格品牌 WKND 的 AEM 網站。此教學課程涵蓋基礎的主題，例如專案設定、核心元件、可編輯的範本、用戶端資料庫以及使用 Adobe Experience Manager Sites 的元件開發。
 * [使用 React 在 AEM 中開始使用 SPA](/help/implementing/developing/hybrid/getting-started-react.md) - 本文會介紹一個 SPA 應用程式範例，說明其組合方式，並可讓您使用 React 架構快速啟動並執行您自己的 SPA。
 * [使用 Angular 在 AEM 中開始使用 SPA](/help/implementing/developing/hybrid/getting-started-angular.md) - 本文會介紹一個 SPA 應用程式範例，說明其組合方式，並可讓您使用 Angular 架構快速啟動並執行您自己的 SPA。
 * [ Headless 開發人員歷程](/help/journey-headless/developer/overview.md) - 開始學習使用 AEM 開發 Headless 應用程式的引導課程。

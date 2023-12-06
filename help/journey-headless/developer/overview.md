@@ -4,9 +4,9 @@ description: 了解如何使用 Adobe Experience Manager (AEM) as a Headless CMS
 landing-page-description: 了解 Headless 內容傳遞和實作。了解更多如何在制定您的業務策略。
 exl-id: d14a1e30-dd04-49a8-8cda-27c80a4bb0f5
 source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1095'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -28,11 +28,11 @@ ht-degree: 97%
 
 AEM Headless 實作使用內容片段模型和內容片段來專注於建位結構化、管道中立和可重複使用的內容片段及其跨管道傳遞。為了實現這一點，它放棄了全堆疊解決方案的頁面和元件管理傳統做法。它是實作數位體驗的現代動態開發模式。
 
-本指南將引導您瞭解AEM中的Headless實作主題，因此當您完成時，您可以：
+本指南將引導您完成 AEM Headless 實施主題，完成後您便可以：
 
 * 充分了解什麼是 Headless 內容傳遞及其優勢。
 * 了解 AEM 的 Headless 功能以及它們如何協同工作以傳遞 Headless 體驗。
-* 開始實作第一個AEM Headless專案。
+* 邁出實施第一個 AEM Headless 專案的第一步。
 
 >[!TIP]
 >
@@ -92,7 +92,7 @@ AEM Headless 實作使用內容片段模型和內容片段來專注於建位結�
 * [AEM 開發人員入口網站](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
 * [AEM Headless 教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html) - 如果您偏好做中學並具備 AEM 現有知識，請參閱我們的實作教學課程，其由 API 和框架所組織，其在探索如何建立並使用在 AEM Headless 建立的應用程式。
 * [AEM Headless 翻譯歷程](/help/journey-headless/translation/overview.md) - 此文件歷程讓您對 Headless 技術、AEM 如何提供 Headless 內容以及如何翻譯它，有廣泛的了解。
-* [Headless 編寫歷程](/help/journey-headless/author/overview.md) - 從這裡開始，此歷程會逐步引導您了解 AEM 強大且靈活的 Headless 特性、其功能，以及如何在您的第一個 Headless 專案中建立內容模型。
+* [Headless 製作歷程](/help/journey-headless/author/overview.md) - 從這裡開始，此歷程會逐步引導您了解 AEM 強大且靈活的 Headless 特性、其功能，以及如何在您的第一個 Headless 專案中建立內容模型。
 * [Headless 架構師歷程](/help/journey-headless/architect/overview.md) - 從這裡開始介紹 Adobe Experience Manager as a Cloud Service 的強大、靈活、 Headless 功能，以及如何為您的專案建立內容模型。
 * [AEM as a Cloud Service 技術文件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html) - 如果您已經對 AEM 和 Headless 技術有紮實的了解，請查看我們深入的技術文件。
    * [AEM as a Headless CMS 簡介](/help/headless/introduction.md)

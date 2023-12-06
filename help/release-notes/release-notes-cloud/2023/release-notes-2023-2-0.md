@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2023.2.0 版發行�
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2023.2.0 版發行說明。'
 exl-id: 671056e6-84cc-4c2c-bca3-fde68d5cc835
 source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '731'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -45,7 +45,7 @@ ht-degree: 98%
 ### [!DNL Assets] 中的新功能 {#assets-features}
 
 * 為 Dynamic Media 影片傳遞 (啟用 CMAF) 中的自適應串流推出的新通訊協定 (DASH - 基於 HTTP 的動態自適應串流) 支援：
-   * 最適化串流(DASH/HLS)可確保更出色的視訊使用者觀看體驗
+   * 自適應串流 (DASH/HLS) 可確保使用者擁有更好的觀看影片體驗。
    * DASH 是自適應影片串流的國際標準通訊協定，在業界被廣泛採用
    * 在 NA 可使用，透過支援票證啟用，即將在 APAC、EMEA 推出
 
@@ -79,7 +79,7 @@ ht-degree: 98%
 ![將最適化表單提交至 Microsoft SharePoint 和 Microsoft OneDrive](/help/forms/assets/onedrive-and-sharepoint.jpg)
 
 
-## Headless 最適化表單早期採用者計劃 {#forms-early-adopter}
+## Headless 最適化表單早期採用者方案 {#forms-early-adopter}
 
 使用 Headless 最適化表單讓您的開發人員能夠建立、發佈和管理可透過 API 存取和互動的互動式表單，而不是透過傳統的圖形使用者介面。Headless 最適化表單可協助您：
 
@@ -88,7 +88,7 @@ ht-degree: 98%
 * 在表單應用程式中重複使用您的專屬 UI 元件
 * 使用 Adobe Experience Manager Forms 的強大功能
 
-使用您的官方電子郵件 ID 寄送電子郵件至 aem-forms-headless@adobe.com，即可加入早期採用者計劃。
+使用您的官方電子郵件 ID 寄送電子郵件至 aem-forms-headless@adobe.com，即可加入早期採用者方案。
 
 ## 維護版本發行說明 {#maintenance}
 

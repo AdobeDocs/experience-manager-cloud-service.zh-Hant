@@ -1,18 +1,18 @@
 ---
 title: Adobe Experience Manager as a Cloud Service 之運作與維護
-description: 了解 Experience Manager as a Cloud Service 的後端作業，例如建立索引和維護工作，以及提出查詢並獲得回答。
-landing-page-description: 了解 Experience Manager as a Cloud Service 的後端作業，例如建立索引和維護工作，以及提出查詢並獲得回答。
+description: 了解 Experience Manager as a Cloud Service 的後端作業，例如建立索引和維護工作，以及回答您的查詢。
+landing-page-description: 了解 Experience Manager as a Cloud Service 的後端作業，例如建立索引和維護工作，以及回答您的查詢。
 exl-id: ad50434c-1b4c-4e04-be91-2556d773cfbd
 source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '400'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
 # Experience Manager as a Cloud Service 之運作與維護 {#aem-operations-guide}
 
-了解 Experience Manager as a Cloud Service 的後端作業，例如建立索引和維護工作，以及提出查詢並獲得回答。
+了解 Experience Manager as a Cloud Service 的後端作業，例如建立索引和維護工作，以及回答您的查詢。
 
 ## 重要運作文章 {#key-articles}
 
@@ -24,7 +24,7 @@ ht-degree: 95%
 
 | 使用手冊 | 說明 |
 |---|---|
-| [概觀](/help/overview/home.md) | 本指南提供Experience Manager as a Cloud Service概述，包括簡介、術語、架構等。 |
+| [概觀](/help/overview/home.md) | 本指南提供 Experience Manager as a Cloud Service 概觀，包括簡介、術語和架構等。 |
 | [發行說明](/help/release-notes/home.md) | 本指南提供 Experience Manager as a Cloud Service 最新版本的重要資訊，包括新增、過時和移除的功能，以及已知問題。 |
 | [安全性使用手冊](/help/security/home.md) | 了解 Experience Manager as a Cloud Service 與安全性相關的重要主題。 |
 | [入門歷程](/help/journey-onboarding/overview.md) | 本指南簡單扼要地說明如何開始使用 Experience Manager as a Cloud Service，包括如何取得存取權限和重要的資料保護資訊。 |
@@ -40,8 +40,8 @@ ht-degree: 95%
 
 * [近期文件更新](https://helpx.adobe.com/tw/experience-manager/documentation-updates.html#AEMasaCloudService)
 * [Dispatcher 文件](/help/implementing/dispatcher/overview.md)
-* [HTL 文件](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=zh-Hant)
-* [核心元件文件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hant)
+* [HTL 文件](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html)
+* [核心元件文件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
 * [Cloud Manager](/help/onboarding/cloud-manager-introduction.md)
 * [GDPR 整備](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md)
 * [Adobe Experience Manager as a Cloud Service 教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)

@@ -3,9 +3,9 @@ title: Adobe Experience Manager as a Cloud Service 簡介 - 術語
 description: Adobe Experience Manager as a Cloud Service 簡介 - 術語。
 exl-id: a76f68f1-4f84-4844-a099-0952707cd96d
 source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '364'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 97%
 
 | 產品 | 說明 |
 |---|---|
-| AEM as a Cloud Service  | 以雲端原生方式使用AEM應用程式 |
+| AEM as a Cloud Service  | 以雲端原生方式使用 AEM 應用程式 |
 | AEM Assets as a Cloud Service  | 將數位資產管理 (DAM) 功能作為雲端原生、可擴充的解決方案，可收集、處理及管理您的數位資產，同時擴大整合 Adobe Experience Cloud 和 Adobe Creative Cloud 生態系統。 |
 | AEM Sites as a Cloud Service  | 具 AEM Sites 應用程式的 AEM as a Cloud Service 執行個體。 |
 
@@ -26,7 +26,7 @@ ht-degree: 97%
 | 執行個體 | 說明 |
 |---|---|
 | Adobe Pipeline | 承接作者發佈的內容並進一步發佈的機制。 |
-| AEM 作者階層 | 說明 Sites 和 Assets 的編寫環境。 |
+| AEM 製作層 | 說明 Sites 和 Assets 的製作環境。 |
 | AEM 預覽階層 | 說明 Sites 的預覽環境。 |
 | AEM 發佈階層 | 說明 Sites 的發佈環境。 |
 

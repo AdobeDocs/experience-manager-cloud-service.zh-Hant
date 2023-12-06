@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2023.8.0 版發行�
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2023.8.0 版發行說明。'
 exl-id: a0ffa6cf-64ae-468c-93f4-ac6805ef907e
 source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1687'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 97%
 
 ## 發行日期 {#release-date}
 
-[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 最新功能版本 (2023.8.0) 的發行日期為 2023 年 8 月 31 日。下一個功能版本 (2023.9.0) 計畫於 2023 年 9 月 28 日發行。
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 最新功能版本 (2023.8.0) 的發行日期為 2023 年 8 月 31 日。下一個功能版本 (2023.9.0) 預計於 2023 年 9 月 28 日發行。
 
 ## 發行影片 {#release-video}
 
@@ -30,11 +30,11 @@ ht-degree: 97%
 * [內容片段主控台](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=zh-Hant)現在可讓使用者檢視標記，並依據作為中繼資料套用於內容片段的標記進行搜尋。使用者即不必再為了此功能而切換到資產 UI，減少了內容切換並提高了效率。
 
   ![在內容片段主控台中進行標記](/help/assets/content-fragments-console-tags.png)
-* 新的內容片段編輯器現已在 AEM as a Cloud Service 上提供。此編輯器可簡化內容作者的編寫工作，並減少他們編輯內容時在不同應用程式之間切換的需要，進而讓內容作者能夠提高工作效率。
+* 新的內容片段編輯器現已在 AEM as a Cloud Service 上提供。此編輯器可簡化內容作者的製作工作，並減少他們編輯內容時在不同應用程式之間切換的需要，進而讓內容作者能夠提高工作效率。
   ![最新內容片段編輯器](/help/release-notes/assets/newCFEditor.png)
 
 最新內容片段編輯器可提供原來編輯器所沒有的以下優點：
-* 可自動儲存並提高創作效率，以及防止編輯內容意外遺失。
+* 可自動儲存並提高製作效率，以及防止編輯內容意外遺失。
 * 內容片段及其引用的階層式檢視，可使用樹狀結構在深度結構化片段中快速導航。
   ![內容片段編輯器內的樹狀結構](/help/release-notes/assets/newCFEditor_StructureTree.png)
 
@@ -117,7 +117,7 @@ You can now assign metadata form to a specific folder within your Assets Essenti
 * **[以核心元件為主的最適化表單中的表單片段](/help/forms/adaptive-form-fragments-core-components.md)**：告別重複的資料、最佳化您的數位庫存，並可改善協作，同時還可使用表單片段提升表單建構體驗。這些可重複使用的元件無縫整合至到多種表單中，簡化了一致且具有專業外觀的表單建立。表單片段透過「一次變更，處處反映」功能確保可重複性、標準化和品牌一致性。由於在一處進行的更新會自動傳播到使用這些片段的所有表單，因此可體驗更高的可維護性和效率。
 
 * **[更佳的 Adobe Sign 工作流程步驟](/help/forms/aem-forms-workflow-step-reference.md#sign-document-step-sign-document-step)**：Adobe Sign 工作流程步驟經過改善，其中包括：
-   * **Adobe Sign 以政府核發 ID 為主的驗證**：Adobe Acrobat Sign 以政府核發 ID 為主的驗證允許使用者使用政府核發的 ID (駕&#x200B;&#x200B;駛執照、國民身份證、護照) 驗證其身份，進而提&#x200B;&#x200B;供更多的驗證防護層。此增強功能使用信任的身分識別檔案，為簽署程式增添額外的信賴等級，非常適合需要增強安全性、法規遵循及使用者驗證的情況。
+   * **Adobe Sign 以政府核發 ID 為主的驗證**：Adobe Acrobat Sign 以政府核發 ID 為主的驗證允許使用者使用政府核發的 ID (駕駛執照、國民身份證、護照) 驗證其身份，進而提供更多的驗證防護層。此增強功能利用受信任的身分識別文件為簽名過程額外增加一層可信度，使其成為需要增強安全性、合規性和使用者驗證等情境的理想選擇。
 
    * **Adobe Sign 文件的稽核軌跡**：使用稽核軌跡功能詳細了解 Adobe Sign 文件的生命週期。透過稽核軌跡，您現在可以保留與文件相關的所有動作和互動的全面記錄。其中包括查看、編輯或簽署文件等人員的詳細資訊，以及每個事件的時間戳記。此加強功能對於維持合規性、解決爭議和確保數位協議的完整性至關重要。
 
@@ -130,7 +130,7 @@ You can now assign metadata form to a specific folder within your Assets Essenti
 * **[使用規則編輯器中的自訂錯誤處理常式發生錯誤處理](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)**：您現在可以呼叫自訂函數來回應外部服務傳回的錯誤，並為一般使用者提供量身打造的回應。例如，您可以針對特定錯誤程式碼在後端叫用自訂的工作流程，或通知客戶服務已關閉。
 
 
-### Headless 最適化表單早期採用者計畫 {#forms-early-adopter}
+### Headless 最適化表單早期採用者方案 {#forms-early-adopter}
 
 使用 [Headless 最適化表單](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html)讓您的開發人員能夠建立、發佈和管理可透過 API 存取和互動的互動式表單，而不是透過傳統的圖形使用者介面。Headless 最適化表單可協助您：
 
@@ -139,7 +139,7 @@ You can now assign metadata form to a specific folder within your Assets Essenti
 * 在表單應用程式中重複使用您的專屬 UI 元件
 * 使用 Adobe Experience Manager Forms 的強大功能
 
-使用您的官方電子郵件 ID 寄送電子郵件至 `aem-forms-headless@adobe.com`，即可加入早期採用者計畫。
+使用您的官方電子郵件 ID 寄送電子郵件至 `aem-forms-headless@adobe.com`，即可加入早期採用者方案。
 
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
@@ -148,14 +148,14 @@ You can now assign metadata form to a specific folder within your Assets Essenti
 
 從 Cloud Manager 下載 CDN 記錄，這對於快取命中率最佳化和提高內容傳遞流程的可見性非常有用。[了解關於](/help/implementing/developing/introduction/logging.md#cdn-log) CDN 記錄格式。此功能將於 9 月初逐步向客戶推出。
 
-### CDN 和 WAF 規則早期採用者計劃 {#waf-early-adopter}
+### CDN 和 WAF 規則早期採用者方案 {#waf-early-adopter}
 
 在 CDN 篩選流量的根據：
 
-* 請求標頭和屬性（例如IP位址）
+* 要求的標頭和屬性 (例如 IP 位址)
 * 已知和惡意流量相關的流量模式
 
-有興趣嘗試該功能並分享回饋意見嗎？從您的官方電子郵件 ID 傳送電子郵件到 **aemcs-waf-adopter@adobe.com**，深入了解有關早期採用者計劃的資訊。名額有限。
+有興趣嘗試該功能並分享回饋意見嗎？從您的官方電子郵件 ID 傳送電子郵件到 **aemcs-waf-adopter@adobe.com**，深入了解有關早期採用者方案的資訊。名額有限。
 
 若要深入了解該功能，請點選[這裡](/help/security/traffic-filter-rules-including-waf.md)參閱文章。
 

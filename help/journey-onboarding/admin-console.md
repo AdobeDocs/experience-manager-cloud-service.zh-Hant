@@ -3,15 +3,15 @@ title: 存取 Admin Console
 description: 一旦您了解了上線所需的準備工作和 AEMaaCS 結構的基礎知識，您就可以首次登入 Admin Console 了。
 exl-id: 0ccce328-a356-4ba9-b7fe-f67abc25b924
 source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1097'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
 # 存取 Admin Console {#accessing-admin-console}
 
-在這部分中 [入門歷程，](overview.md) 瞭解首次登入系統之前所需的準備工作。
+透過這部分的[上線歷程](overview.md)，您會了解在首次登入系統之前所需的準備工作。
 
 ## 目標 {#objective}
 
@@ -30,7 +30,7 @@ Adobe Admin Console 是管理您的 Adobe 產品授權和使用者的中心位�
 
 ## Adobe ID {#adobe-id}
 
-若要登入Admin Console，您需要Adobe ID。 Adobe ID 是與特定電子郵件地址綁定的帳戶，需要登入和存取 AEM as a Cloud Service 或您的任何 Adobe 解決方案。透過使用您的 Adobe ID，您可以將所有 Adobe 計畫和產品與一個帳戶相關聯。
+您需要一個 Adobe ID 才能登入 Admin Console。Adobe ID 是與特定電子郵件地址綁定的帳戶，需要登入和存取 AEM as a Cloud Service 或您的任何 Adobe 解決方案。透過使用您的 Adobe ID，您可以將所有 Adobe 計畫和產品與一個帳戶相關聯。
 
 當您作為系統管理員在 Admin Console 中設定您的團隊時，您指定作為 Adobe ID 的電子郵件地址。
 
@@ -40,7 +40,7 @@ Adobe Admin Console 是管理您的 Adobe 產品授權和使用者的中心位�
 
 * **Enterprise ID**：組織通常希望增加對使用者帳戶的控制。只有系統管理員可以建立 Enterprise ID，並且組織擁有這些帳戶，Adobe 僅作為主機。
 
-* **Federated ID**：使用 Federated ID，組織可以完全擁有和控制帳戶。為此，您的組織必須將Adobe Experience Cloud與SAML2單一登入(SSO)系統整合。 這允許使用者根據其組織的 SSO 系統而不是 Adobe 託管的帳戶進行身份驗證。
+* **Federated ID**：使用 Federated ID，組織可以完全擁有和控制帳戶。為此，您的組織必須將 Adobe Experience Cloud 與您的 SAML2 單一登入 (SSO) 系統整合。這允許使用者根據其組織的 SSO 系統而不是 Adobe 託管的帳戶進行身份驗證。
 
 作為系統管理員，您可以決定在設定 Enterprise ID 或 Federated ID 之前使用個人 ID 將自己和您的團隊加入 AEM as a Cloud Service。設定 Enterprise ID 或 Federated ID 後，成員可以轉換為使用這些 ID。
 
@@ -50,11 +50,11 @@ Adobe Admin Console 是管理您的 Adobe 產品授權和使用者的中心位�
 
 1. 作為系統管理員，您將在上線流程中收到來自 Adobe 的多封電子郵件。查找提供有關您已被授予存取權限的組織名稱資訊的歡迎電子郵件。
 
-1. 按一下 **開始使用** 歡迎電子郵件中的連結，以導覽至Admin Console。 如果找不到電子郵件，請直接開啟瀏覽器存取 Admin Console，網址為 [`https://adminconsole.adobe.com`](https://adminconsole.adobe.com)。
+1. 按一下歡迎電子郵件中的&#x200B;**開始使用**&#x200B;連結，可瀏覽至 Admin Console。如果找不到電子郵件，請直接開啟瀏覽器存取 Admin Console，網址為 [`https://adminconsole.adobe.com`](https://adminconsole.adobe.com)。
 
    ![歡迎電子郵件](/help/journey-onboarding/assets/get-started-email.png)
 
-1. 使用 Adobe ID 登入。登入成功後，您會看到 **概觀** Adobe Admin Console頁面。
+1. 使用 Adobe ID 登入。登入成功後，您會看到 Adobe Admin Console 的「**概觀**」頁面。
 
    ![Admin Console](/help/journey-onboarding/assets/get-started1.png)
 
@@ -66,7 +66,7 @@ Adobe Admin Console 是管理您的 Adobe 產品授權和使用者的中心位�
 
    ![審視管理員](/help/journey-onboarding/assets/get-started2.png)
 
-1. 在您按一下 **管理員** 從 **使用者** 卡片，您可以透過輸入您的Adobe ID電子郵件、使用者名稱、名字或姓氏進行搜尋。
+1. 按一下「**管理員**」(位在「**使用者**」卡片) 之後，您可以輸入您的 Adobe ID 電子郵件、使用者名稱、名字或姓氏進行搜尋。
 
    ![搜尋使用者](/help/journey-onboarding/assets/get-started3.png)
 
@@ -82,7 +82,7 @@ AEM as a Cloud Service預配置了 Adobe Identity Management 系統 (也稱為 I
 
 透過使用 IMS，AEM as a Cloud Service整合了 AEM 與 Adobe Experience Cloud 其餘部分之間的登入體驗。擁有多個 Adobe 產品的組織尤其受益於在 Admin Console 中建立基於角色的組，然後透過 IMS 指派對多個產品 (包括 AEM as a Cloud Service) 的存取權限。
 
-在接下來的入門歷程中，您將瞭解有關產品設定檔和指派使用者的更多資訊。
+您可以透過此上線歷程的下一部分，了解有關產品設定檔和指派使用者的更多資訊。
 
 ## 連絡 Adobe 支援人員 {#support}
 
@@ -94,7 +94,7 @@ AEM as a Cloud Service預配置了 Adobe Identity Management 系統 (也稱為 I
 
 ## 下一步 {#whats-next}
 
-閱讀了本文件後，您應該：
+閱讀本文件後，您應該：
 
 * 了解什麼是 Adobe ID。
 * 能夠登入 Admin Console。
@@ -109,6 +109,6 @@ AEM as a Cloud Service預配置了 Adobe Identity Management 系統 (也稱為 I
 
 * [Admin Console 概觀](https://helpx.adobe.com/tw/enterprise/using/admin-console.html)- Admin Console 的全面概觀
 * [建立或更新您的 Adobe ID](https://helpx.adobe.com/tw/manage-account/using/create-update-adobe-id.html#HowtocreateorupdateyourAdobeID) - 了解如何建立、更改和管理多個 Adobe ID。
-* [SAML 2.0 身份驗證處理程序](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/saml-2-0-authenticationhandler.html?lang=zh-Hant)- AEM 附帶 SAML 身份驗證處理程序。此處理程序使用 HTTP POST 綁定提供對 SAML 2.0 身份驗證請求協議（Web-SSO 設定檔）的支援。
+* [SAML 2.0 身份驗證處理程序](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/saml-2-0-authenticationhandler.html)- AEM 附帶 SAML 身份驗證處理程序。此處理程序使用 HTTP POST 綁定提供對 SAML 2.0 身份驗證請求協議（Web-SSO 設定檔）的支援。
 * [管理職務](https://helpx.adobe.com/tw/enterprise/using/admin-roles.ug.html) - 使用 Adobe Admin Console，組織可以定義靈活的管理層次結構，以實現對 Adobe 產品存取和使用的精細管理。
 * [支援和專家工作階段](https://helpx.adobe.com/tw/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) - 了解如何存取 Admin Console 上的支援選項、管理您的支援案例、安排專家會議等。

@@ -1,120 +1,120 @@
 ---
-title: 擷取Git存放庫存取資訊
+title: 擷取 Git 存放庫存取資訊
 description: 了解前端開發人員如何使用 Cloud Manager 來存取 Git 存放庫資訊。
 exl-id: 3ef1cf86-6da4-4c09-9cfc-acafc8f6dd5c
 source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '880'
-ht-degree: 10%
+ht-degree: 100%
 
 ---
 
-# 擷取Git存放庫存取資訊 {#retrieve-access}
+# 擷取 Git 存放庫存取資訊 {#retrieve-access}
 
 了解前端開發人員如何使用 Cloud Manager 來存取 Git 存放庫資訊。
 
-## 到目前為止 {#story-so-far}
+## 目前進度 {#story-so-far}
 
-如果您是隻負責自訂網站主題的前端開發人員，則不需要瞭解AEM的設定方式，可以直接跳至 [目標](#objective) 小節。
+如果您是只負責自訂網站主題的前端開發人員，則不需要了解 AEM 的設定方式，可以跳到本文件的「[目標](#objective)」區段。
 
-如果您還擔任Cloud Manager或AEM管理員和前端開發人員的角色，您已在AEM快速網站建立歷程的上一個檔案中瞭解， [授予前端開發人員存取權，](grant-access.md) 如何入門前端開發人員，讓他們能存取git存放庫，您現在應該知道：
+如果您還擔任 Cloud Manager 或 AEM 管理員和前端開發人員的角色，您在 AEM 快速建立網站歷程的上一個文件「[授予前端開發人員存取權](grant-access.md)」中已了解如何讓前端開發人員上線，使他們能夠存取 Git 存放庫，您現在應該知道：
 
 * 如何將前端開發人員新增為使用者。
-* 如何將所需的角色授與前端開發人員。
+* 如何向前端開發人員授予所需的角色。
 
-本文接下來會說明前端開發人員如何使用Cloud Manager存取權來擷取認證，以存取AEM Git存放庫。
+本文章接著說明前端開發人員如何使用 Cloud Manager 存取權限來擷取存取 AEM Git 存放庫的認證。
 
-現在已根據範本建立網站，並設定管道，前端開發人員已上線並擁有他們所需的所有資訊，本文將從管理員的視角轉向前端開發人員角色的視角。
+現在已有根據範本建立的網站，已設定管道，前端開發人親上線並備妥需要的所有資訊，本文章將從管理員的角度轉移到專門從前端開發人員的角色出發。
 
 ## 目標 {#objective}
 
-本檔案說明您如何在前端開發人員角色中存取Cloud Manager並擷取AEM Git存放庫的存取認證。 閱讀本檔案後，您將：
+本文件說明您作為前端開發人員如何存取 Cloud Manager 並擷取存取 AEM Git 存放庫的認證。閱讀本文件後，您將會：
 
-* 從較高層面瞭解什麼是Cloud Manager。
-* 已擷取您的認證以存取AEM Git，因此您可以認可自訂。
+* 深入了解 Cloud Manager 是什麼。
+* 已擷取您的認證來存取 AEM Git，以便您可以提交自訂。
 
 ## 負責角色 {#responsible-role}
 
-此歷程的這一部分適用於前端開發人員。
+歷程的這個部分適用於前端開發人員。
 
 ## 要求 {#requirements}
 
-「快速網站建立」工具可讓前端開發人員獨立工作，而無須瞭解AEM或其設定方式。 但是，Cloud Manager管理員必須將前端開發人員載入專案團隊，並且AEM管理員必須為您提供一些必要的資訊。 在繼續之前，請確定您擁有下列資訊。
+快速建立網站工具讓前端開發人員獨立運作，無需了解 AEM 或其設定方式。但是，Cloud Manager 管理員必須讓前端開發人員上線並加入專案團隊，而 AEM 管理員必須向您提供一些必要資訊。在繼續之前，請確保您擁有以下資訊。
 
-* AEM管理員提供：
-   * 要自訂的主題來源檔案
-   * 用作參考基礎的範例頁面的路徑
-   * 根據即時AEM內容測試您自訂內容的Proxy使用者憑證
-   * 前端設計需求
-* 從Cloud Manager管理員：
-   * 來自Cloud Manager的歡迎電子郵件，通知您存取權
-   * Cloud Manager中的方案名稱或URL
+* 來自 AEM 管理員：
+   * 要自訂的主題來源文件
+   * 用作參考基礎的範例頁面路徑
+   * 用來測試您根據即時 AEM 內容所做的自訂內容的 Proxy 使用者認證
+   * 前端設計要求
+* 從 Cloud Manager 管理員：
+   * 來自 Cloud Manager 的歡迎電子郵件，通知您獲得存取權限
+   * 在 Cloud Manager 內方案的名稱或其 URL
 
-如果您缺少這些專案中的任何一項，請聯絡AEM管理員或Cloud Manager管理員。
+如果您缺少其中任何一項，請聯絡 AEM 管理員或 Cloud Manager 管理員。
 
-我們假設前端開發人員在前端開發工作流程以及安裝的通用工具方面擁有豐富的經驗，包括：
+我們預設前端開發人員對於前端開發工作流程和所安裝的常用工具擁有豐富經驗，包括：
 
-* git
+* Git
 * npm
 * webpack
-* 偏好的編輯器
+* 偏好編輯器
 
-## 瞭解Cloud Manager {#understanding-cloud-manager}
+## 了解 Cloud Manager {#understanding-cloud-manager}
 
-Cloud Manager可讓組織在雲端中自行管理AEM。 其內容包含持續整合與持續傳遞 (CI/CD) 架構，可讓 IT 團隊與實作合作夥伴加速自訂項目或更新的傳遞，而不會影響效能或安全性。
+Cloud Manager 讓組織可以在雲端中自行管理 AEM。其內容包含持續整合與持續傳遞 (CI/CD) 架構，可讓 IT 團隊與實作合作夥伴加速自訂項目或更新的傳遞，而不會影響效能或安全性。
 
-對於前端開發人員而言，它是進行以下操作的閘道：
+對於前端開發人員來說，它是提供以下功能的通道：
 
-* 存取AEM Git存放庫資訊，以便您可以認可前端自訂。
-* 啟動部署管道以部署您的自訂。
+* 存取 AEM Git 存放庫資訊，以便您可以提交前端自訂設定。
+* 啟動部署管道以部署您的自訂內容。
 
-Cloud Manager管理員會將您作為Cloud Manager使用者上線。 您應該已收到類似下列的歡迎電子郵件。
+Cloud Manager 管理員將讓您上線成為 Cloud Manager 使用者。您應該已收到類似以下內容的歡迎電子郵件。
 
 ![歡迎電子郵件](assets/welcome-email.png)
 
-如果您沒有收到此電子郵件，請聯絡Cloud Manager管理員。
+如果您沒有收到此電子郵件，請聯絡 Cloud Manager 管理員。
 
 ## 存取 Cloud Manager {#access-cloud-manager}
 
-1. 登入Adobe Experience Cloud於 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 或按一下歡迎電子郵件中提供的連結。
+1. 登入 Adobe Experience Cloud，網址為 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 或按一下歡迎電子郵件中提供的連結。
 
-1. Cloud Manager 列出了可用的各種計畫。選取您由Cloud Manager管理員提供的需要存取的專案。 如果這是您的第一個AEMaaCS前端專案，您可能只有一個可用計畫。
+1. Cloud Manager 列出可用的各種方案。選擇您需要存取的由 Cloud Manager 管理員提供的方案。如果這是您的第一個 AEMaaCS 前端專案，您可能只有一個方案可用。
 
-   ![在Cloud Manager中選取計畫](assets/cloud-manager-select-program.png)
+   ![選取 Cloud Manager 中一個方案](assets/cloud-manager-select-program.png)
 
-您現在可以看到方案的概觀。 您的頁面看起來會有所不同，但與此範例類似。
+現在您可以看到方案概觀。您的頁面與此範例會有所不同但相似。
 
-![Cloud Manager總覽](assets/cloud-manager-overview.png)
+![Cloud Manager 概觀](assets/cloud-manager-overview.png)
 
 ## 擷取存放庫存取資訊 {#repo-access}
 
-1. 在 **管道** 部分，選擇 **存取存放庫資訊** 按鈕。
+1. 在 Cloud Manager 頁面的「**管道**」區段，選取「**存取存放庫資訊**」按鈕。
 
    ![管道](assets/pipelines-repo-info.png)
 
-1. 此 **存放庫資訊** 對話方塊開啟。
+1. 「**存放庫資訊**」對話框開啟。
 
    ![存放庫資訊](assets/repo-info.png)
 
-1. 選取 **產生密碼** 按鈕為您建立密碼。
+1. 選取「**產生密碼**」按鈕為自己建立一個密碼。
 
-1. 將產生的密碼儲存到安全密碼管理員。 密碼將永不再顯示。
+1. 將產生的密碼儲存到安全的密碼管理器。密碼將永遠不會再次顯示。
 
-1. 同時複製 **使用者名稱** 和 **Git命令列** 欄位。 您稍後會使用此資訊來存取存放庫。
+1. 同時複製「**使用者名稱**」和&#x200B;**「Git 命令列**」欄位。您稍後將使用此資訊來存取存放庫。
 
-1. 選取 **關閉**.
+1. 選取「**「關閉」**」。
 
 ## 下一步 {#what-is-next}
 
-現在您已完成AEM快速網站建立歷程的這一部分，您應：
+現在您已完成 AEM 快速建立網站歷程的這個部分，您應該：
 
-* 從較高層面瞭解什麼是Cloud Manager。
-* 已擷取您的認證以存取AEM Git，因此您可以認可自訂。
+* 深入了解 Cloud Manager 是什麼。
+* 已擷取您的認證來存取 AEM Git，以便您可以提交自訂。
 
-在此基礎上繼續您的AEM快速網站建立歷程，接下來檢閱檔案 [自訂網站主題](customize-theme.md) 您可在其中瞭解如何使用即時AEM內容來建置網站主題、自訂及測試。
+以此知識為基礎並繼續您的 AEM 快速建立網站歷程，接著檢閱文件「[自訂網站主題](customize-theme.md)」，從中了解如何建置網站主題、如何自訂以及如何使用即時 AEM 內容進行測試。
 
 ## 其他資源 {#additional-resources}
 
-我們建議您檢閱檔案，繼續快速網站建立歷程的下一部分 [自訂網站主題](customize-theme.md) 以下是一些其他可選資源，這些資源對本文中提到的一些概念進行了更深入的探究，但並非繼續此歷程所必需的。
+因為我們建議您檢閱文件「[自訂網站主題](customize-theme.md)」並繼續快速建立網站歷程的下一部分，所以提供以下其他選用資源，協助深入瞭解本文件提及的一些概念，但是這些並非繼續執行歷程的必要條件。
 
-* [Adobe Experience Manager Cloud Manager檔案](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=zh-Hant)  — 探索Cloud Manager檔案以取得其功能的完整詳細資訊。
+* [Adobe Experience Manager Cloud Manager 文件](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) - 瀏覽 Cloud Manager 文件以了解其功能的完整詳細資訊。

@@ -1,27 +1,27 @@
 ---
-title: 了解編寫基本知識
-description: 了解使用內容片段為 Headless CMS 編寫內容的概念和機制。
+title: 了解製作基本知識
+description: 了解使用內容片段為 Headless CMS 製作內容的概念和機制。
 exl-id: 3eca973f-b210-41bb-98da-ecbd2bae9803
 source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1727'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
-# AEM Headless 編寫基本知識 {#author-headless-basics}
+# AEM Headless 製作基本知識 {#author-headless-basics}
 
-## 到目前為止 {#story-so-far}
+## 目前進度 {#story-so-far}
 
-在 [AEM Headless 內容作者歷程](overview.md)的一開始，[簡介](introduction.md)部分介紹了和 Headless 內容編寫相關的基本概念和術語。
+在 [AEM Headless 內容作者歷程](overview.md)的一開始，[簡介](introduction.md)部分介紹了和 Headless 內容製作相關的基本概念和術語。
 
-本文以這些內容為基礎，以便您了解如何為 AEM Headless 專案編寫您自己的內容。
+本文以這些內容為基礎，以便您了解如何為 AEM Headless 專案製作您自己的內容。
 
 ## 目標 {#objective}
 
 * **對象**：初學者
-* **目標**：介紹 Headless CMS 編寫的基本知識：
-   * 使用 AEMaaCS 編寫簡介
+* **目標**：介紹 Headless CMS 製作的基本知識：
+   * 使用 AEMaaCS 製作簡介
    * 內容片段簡介
 
 ## 基本處理 {#basic-handling}
@@ -36,9 +36,9 @@ AEM 安裝通常至少包含三個環境：
 * 發佈
 * 預覽
 
-登入並使用編寫環境來產生您的內容。準備好內容後，就可以發佈，使其普遍可用。對於 Headless ，這將針對其他應用程式，對於網頁，這將針對網路讀者。
+登入並使用製作環境來產生您的內容。準備好內容後，就可以發佈，使其普遍可用。對於 Headless ，這將針對其他應用程式，對於網頁，這將針對網路讀者。
 
-如需詳細資訊，請參閱編寫概念。
+如需詳細資訊，請參閱製作概念。
 
 在發佈之前，您還可以從&#x200B;**內容片段**&#x200B;主控台發佈至&#x200B;**預覽服務**，以進行測試和預覽。請參閱「發佈和預覽片段」。
 
@@ -119,7 +119,7 @@ You can view additional information about items using the Rail Selector. This al
 ![Left Rail](/help/journey-headless/author/assets/headless-journey-author-navigation-04.png)
 -->
 
-## 編寫內容片段 {#authoring-content-fragments}
+## 製作內容片段 {#authoring-content-fragments}
 
 所以，這是對 AEM 使用者介面 (UI) 的非常快速介紹，但希望您有機會嘗試一下。現在我們開始討論您真正感興趣的部分 - Headless 內容片段。
 
@@ -135,7 +135,7 @@ You can view additional information about items using the Rail Selector. This al
 
 ![建立資料夾選項](/help/journey-headless/author/assets/headless-journey-author-folder-01.png)
 
-對話方塊隨即開啟，您可以在其中輸入詳細資料，然後使用確認 **建立**：
+對話框隨即開啟，您可以在其中輸入詳細資料，然後使用「**建立**」來確認：
 
 ![建立資料夾對話框](/help/journey-headless/author/assets/headless-journey-author-folder-02.png)
 
@@ -191,7 +191,7 @@ You can view additional information about items using the Rail Selector. This al
 >
 >內容片段是 Sites 的一項功能，但儲存為&#x200B;**資產**。
 >
->有兩個編輯器用於編寫內容片段。
+>有兩個編輯器用於製作內容片段。
 >
 >* 新編輯器主要可從「**內容片段**」主控台存取。
 >* 原始編輯器主要可從「**資產**」主控台存取。
@@ -216,7 +216,7 @@ You can view additional information about items using the Rail Selector. This al
 
 例如，片段可以：
 
-* 需要多段資訊，其中有些是具有特定類型。針對Headless內容，參考是關鍵（您稍後會在歷程中瞭解這些內容）。
+* 需要多段資訊，其中有些是具有特定類型。對於 Headless 內容，參考是關鍵 (歷程的後續部分將會說明)。
 
 * 允許您撰寫一長段文字。這裡有用於管理和格式化文字的其他選項。您甚至可以在全螢幕編輯器中開啟各個文字欄位 (使用右側外觀像螢幕的小圖示)
 
@@ -232,7 +232,7 @@ You can view additional information about items using the Rail Selector. This al
 
 >[!NOTE]
 >
->如需更多詳細資訊，您可以閱讀「變化 - 編寫內容片段」。
+>如需更多詳細資訊，您可以閱讀「變化 - 製作內容片段」。
 
 #### 你 (可能) 不需要擔心的事情 {#what-you-probably-do-not-need-to-worry-about}
 
@@ -240,7 +240,7 @@ You can view additional information about items using the Rail Selector. This al
 
 * **內容片段模型**
 
-  您可以在編輯器的右側面板中看到內容片段模型的名稱。 這也是一個將您帶到模型編輯器的連結。
+  您可以在編輯器右側面板中看到內容片段模型的名稱。這也是一個將您帶到模型編輯器的連結。
 內容片段模型實際上對您的內容片段至關重要，因為它們定義了您使用的結構。然而，建立和編輯模型 (通常) 是另一個角色的責任，即內容架構師。
 
   >[!NOTE]
@@ -263,13 +263,13 @@ You can view additional information about items using the Rail Selector. This al
 
 ## 下一步 {#whats-next}
 
-現在您已經了解基本知識，下一步是[了解參考](references.md)。這將介紹和討論可用的各種參考，以及如何建立片段參考的結構階層，這是 Headless 內容編寫的關鍵部分。
+現在您已經了解基本知識，下一步是[了解參考](references.md)。這將介紹和討論可用的各種參考，以及如何建立片段參考的結構階層，這是 Headless 內容製作的關鍵部分。
 
 ## 其他資源 {#additional-resources}
 
-* [編寫概念](/help/sites-cloud/authoring/getting-started/concepts.md)
+* [製作概念](/help/sites-cloud/authoring/getting-started/concepts.md)
 
-* [基本處理](/help/sites-cloud/authoring/getting-started/basic-handling.md) - 此頁面主要根據&#x200B;**Sites** 主控台，但許多/大部分功能也和編寫 **Assets** 主控台下的&#x200B;**內容片段**&#x200B;相關。
+* [基本處理](/help/sites-cloud/authoring/getting-started/basic-handling.md) - 此頁面主要根據&#x200B;**Sites** 主控台，但許多/大部分功能也和製作 **Assets** 主控台下的&#x200B;**內容片段**&#x200B;相關。
 
    * [導覽面板](/help/sites-cloud/authoring/getting-started/basic-handling.md#navigation-panel)
 
@@ -291,7 +291,7 @@ You can view additional information about items using the Rail Selector. This al
 
    * [建立內容片段](/help/sites-cloud/administering/content-fragments/managing.md#creating-a-content-fragment)
 
-   * [編寫內容片段](/help/sites-cloud/administering/content-fragments/authoring.md)
+   * [製作內容片段](/help/sites-cloud/administering/content-fragments/authoring.md)
 
    * 發佈
 

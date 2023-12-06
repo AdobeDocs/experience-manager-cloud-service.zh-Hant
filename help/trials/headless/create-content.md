@@ -1,13 +1,13 @@
 ---
 title: 建立 Headless 內容
-description: 使用您先前建立的內容片段模式來建立可用來編寫頁面的內容，或作為 Headless 內容的依據。
+description: 使用您先前建立的內容片段模式來建立可用來製作頁面的內容，或作為 Headless 內容的依據。
 hidefromtoc: true
 index: false
 exl-id: d74cf5fb-4c4a-4363-a500-6e2ef6811e60
 source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '688'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 87%
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_create_content"
 >title="建立 Headless 內容"
->abstract="使用您在上一個單元中建立的模型，您將了解如何建立可用於編寫頁面或作為 Headless 內容基礎的內容。"
+>abstract="使用您在上一個單元中建立的模型，您將了解如何建立可用於製作頁面或作為 Headless 內容基礎的內容。"
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_create_content_guide"
@@ -26,28 +26,28 @@ ht-degree: 87%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_create_content_guide_footer"
->title="做得好！在本單元中，您已了解如何根據先前建立的模型將 Headless 內容編寫成內容片段。您現在瞭解內容團隊能如何建立和管理應用程式和網站的內容，不受開發週期的限制。"
+>title="做得好！在本單元中，您已了解如何根據先前建立的模型將 Headless 內容製作成內容片段。您現在瞭解內容團隊能如何建立和管理應用程式和網站的內容，不受開發週期的限制。"
 >abstract=""
 
 ## 建立內容片段 {#create-fragment}
 
 內容片段代表您的 Headless 內容，且以預先定義的結構為基礎，稱為內容片段模式。您已經在前面的單元建立模型。
 
-在本模式中，您會使用內容片段主控台，根據該模式建立內容片段。 將內容片段主控台視為您的 Headless 內容資料庫。使用該控制台來建立新的內容片段並管理現有片段。
+在本單元中，您會使用內容片段主控台根據該模型建立內容片段。將內容片段主控台視為您的 Headless 內容資料庫。使用該控制台來建立新的內容片段並管理現有片段。
 
-內容片段主控台可用於在不同的傳遞管道中建立和編輯 Headless 內容，不受內容影響，這在許多編寫案例中可能是最有效的方法。在後面的模組中，我們會探索在內容中和在原處編輯 Headless 內容。
+內容片段主控台可用於在不同的傳遞管道中建立和編輯 Headless 內容，不受內容影響，這在許多製作案例中可能是最有效的方法。在後面的模組中，我們會探索在內容中和在原處編輯 Headless 內容。
 
-1. 選取 **建立** 按鈕。
+1. 選取主控台右上方的「**建立**」按鈕。
 
-1. 此 **新內容片段** 對話方塊會開啟，您可在其中開始建立內容片段。 **位置**&#x200B;會自動填入新內容的儲存位置。
+1. 「**新內容片段**」對話框隨即開啟，您可以在這裡開始建立內容片段。**位置**&#x200B;會自動填入新內容的儲存位置。
 
 1. 在「**內容片段模型**」下拉式清單中，選取您先前建立的「**冒險**」內容片段模型。
 
 1. 新增 `Tuscany` 做為內容片段的描述性&#x200B;**標題**。這是為了在主控台中識別您的片段。
 
-1. 選取 **建立並開啟**.
+1. 選取「**建立並開啟**」。
 
-![正在建立新內容片段](assets/do-not-localize/create-content.png)
+![建立新內容片段](assets/do-not-localize/create-content.png)
 
 >[!TIP]
 >
@@ -71,7 +71,7 @@ ht-degree: 87%
 
 1. 在「**影像**」欄位中，點選或按一下「**新增資產**」，提供代表旅行的&#x200B;**影像**。
 
-1. 在資產快顯視窗中，選取 **瀏覽資產** 以從資產庫中的現有資產中選取。
+1. 在資產快顯視窗中，選取「**瀏覽資產**」，從資產庫中選取現有資產。
 
    ![新增資產](assets/do-not-localize/add-asset.png)
 
@@ -79,17 +79,17 @@ ht-degree: 87%
 
 1. **cycling-tuscany** 資料夾的內容顯示在右側。選取影像 `ADOBESTOCK_141786166.JPEG`。
 
-1. 選取 **選取**.
+1. 選取「**選取**」。
 
    ![選取資產](assets/do-not-localize/select-asset.png)
 
 1. 所選影像顯示在內容片段中。編輯器會自動儲存這些變更。
 
-1. 新增完內容後，選取 **發佈** 編輯器右上角的按鈕。 這可讓您的內容片段供外部應用程式使用。然後從下拉式清單中選取「**立即**」。您還可以安排在以後發佈。
+1. 內容新增完成後，選取編輯器右上角的「**發佈**」按鈕。這可讓您的內容片段供外部應用程式使用。然後從下拉式清單中選取「**立即**」。您還可以安排在以後發佈。
 
    ![發佈內容](assets/do-not-localize/publish.png)
 
-1. **發佈內容片段**&#x200B;對話框隨即出現。AEM 會自動執行參考檢查，以確保為您的內容片段發佈所有必要的資源。在這種情況下，您還需要發佈您建立的模式。選取 **發佈**.
+1. **發佈內容片段**&#x200B;對話框隨即出現。AEM 會自動執行參考檢查，以確保為您的內容片段發佈所有必要的資源。在這種情況下，您還需要發佈您建立的模式。選取「**發佈**」。
 
    ![發佈和參考檢查](assets/do-not-localize/publish-confirm.png)
 

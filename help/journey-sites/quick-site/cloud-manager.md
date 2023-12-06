@@ -1,56 +1,56 @@
 ---
-title: 了解 Cloud Manager 和快速網站建立工作流程
-description: 了解 Cloud Manager 以及它如何與新的快速網站建立流程繫結在一起。
+title: 了解 Cloud Manager 和快速建立網站工作流程
+description: 了解 Cloud Manager 以及它與快速建立網站的新流程如何連結在一起。
 exl-id: 5d264078-e552-48ca-8d82-294a646e6b1f
 source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1127'
-ht-degree: 22%
+ht-degree: 100%
 
 ---
 
-# 了解 Cloud Manager 和快速網站建立工作流程 {#understand-cloud-manager}
+# 了解 Cloud Manager 和快速建立網站工作流程 {#understand-cloud-manager}
 
-了解 Cloud Manager 以及它如何與新的快速網站建立流程繫結在一起。
+了解 Cloud Manager 以及它與快速建立網站的新流程如何連結在一起。
 
 >[!TIP]
 >
->如果您的角色僅是前端開發，您可以跳至文章 [擷取Git存放庫存取資訊](retrieve-access.md) 在此歷程中。
+>如果您的角色專門負責前端開發，您可以跳至本歷程中的文章「[擷取 Git 存放庫存取資訊](retrieve-access.md)」。
 >
->如果您是AEM管理員、Cloud Manager管理員、負責前端開發和管理員任務，或者只是想瞭解AEM中用於前端開發的端對端流程，請繼續閱讀當前檔案並繼續此歷程。
+>如果您是 AEM 管理員、Cloud Manager 管理員、同時負責前端開發和管理任務，或者只是想了解在 AEM 執行前端開發從開始到結束的流程，請繼續閱讀本文件並繼續這個歷程。
 
 ## 目標 {#objective}
 
-本檔案可協助您瞭解AEM快速網站建立工具的運作方式，並讓您概略瞭解端對端流程。 閱讀本文件後，您應該：
+本文件協助您了解 AEM 快速建立網站工具的工作原理，並概述從開始到結束的流程。閱讀本文件後，您應該：
 
-* 瞭解AEM Sites和Cloud Manager如何共同作業來促進前端開發
-* 瞭解前端自訂步驟如何與AEM完全分離且不需要AEM知識。
+* 了解 AEM Sites 和 Cloud Manager 如何搭配運作以促進前端開發
+* 了解前端自訂步驟如何與 AEM 完全分離並且不需要瞭解 AEM 亦可操作。
 
-在繼續此歷程的下一個步驟（您開始設定）之前，本檔案著重於瞭解快速網站建立解決方案的這些基本片段。
+本文件的重點在於先瞭解快速建立網站解決方案的這些基本部分，然後再繼續歷程的下一步，即開始設定。
 
-雖然我們建議您逐步完成此歷程，但如果您已瞭解AEM Sites和Cloud Manager的合作方式，並且想要直接從設定開始，您可以 [跳到歷程的下一步。](create-site.md)
+雖然我們建議您逐步完成此歷程，但如果您已經了解 AEM Sites 和 Cloud Manager 如何搭配運作並想直接開始設定，您可以[跳至歷程的下一步。](create-site.md)
 
 ## 負責角色 {#responsible-role}
 
-此歷程的這一部分適用於AEM管理員和Cloud Manager管理員。
+歷程的這個部分同時適用於 AEM 管理員和 Cloud Manager 管理員。
 
 ## 要求和先決條件 {#requirements-prerequisites}
 
-開始使用「快速網站建立」工具建立和自訂網站前，有幾項需求。
+在開始使用快速建立網站工具來建立和自訂網站之前，您必須先滿足數個要求。
 
-由於此歷程適用於前端開發人員、管理員和所有角色的組合，因此此處列出兩者的需求。
+因為此歷程適用於前端開發人員、管理員以及所有角色的組合，因此這裡列出兩者的要求。
 
-請務必瞭解，對於前端開發人員而言，AEM存取權或知識並非必要。
+請務必了解，前端開發人員並不需要 AEM 存取權或其相關知識。
 
 ### 知識 {#knowledge}
 
 | 知識 | 角色 |
 |---|---|
-| 瞭解前端開發的標準工具和流程 | 前端開發人員 |
-| 有關如何在AEM中建立和管理網站的基本知識 | AEM 管理員 |
-| Cloud Manager的基本知識 | Cloud Manager 管理員 |
+| 了解前端開發的標準工具與流程 | 前端開發人員 |
+| 有關如何在 AEM 中建立和管理網站的基本知識 | AEM 管理員 |
+| Cloud Manager 基本知識 | Cloud Manager 管理員 |
 
-對於前端開發人員而言，AEM知識不是必要的。
+前端開發人員並不需要關於 AEM 的知識。
 
 ### 工具 {#tools}
 
@@ -59,71 +59,71 @@ ht-degree: 22%
 | 偏好的前端開發環境 | 前端開發人員 |
 | npm | 前端開發人員 |
 | webpack | 前端開發人員 |
-| 存取Cloud Manager | Cloud Manager 管理員 |
-| 成為以下成員之一： **企業所有者** Cloud Manager中的角色 | Cloud Manager 管理員 |
-| 成為Cloud Manager中的系統管理員 | Cloud Manager 管理員 |
-| 存取Admin Console | Cloud Manager 管理員 |
-| 成為 **部署管理員** Cloud Manager中的角色 | Cloud Manager 管理員 |
-| 成為 **部署管理員** Cloud Manager中的角色 | 前端開發人員 |
+| 存取 Cloud Manager | Cloud Manager 管理員 |
+| 成為 Cloud Manager 中&#x200B;**業務負責人**&#x200B;角色的一員 | Cloud Manager 管理員 |
+| 成為 Cloud Manager 的系統管理員 | Cloud Manager 管理員 |
+| 存取 Admin Console | Cloud Manager 管理員 |
+| 成為 Cloud Manager 中&#x200B;**部署管理員**&#x200B;角色的一員 | Cloud Manager 管理員 |
+| 成為 Cloud Manager 中&#x200B;**部署管理員**&#x200B;角色的一員 | 前端開發人員 |
 
-對於前端開發人員而言，無需使用AEM。
+前端開發人員並不需要使用 AEM。
 
 >[!TIP]
 >
->如果您不熟悉Cloud Manager角色和角色管理，請參閱 [其他資源](#additional-resources) 區段。
+>如果您不熟悉 Cloud Manager 角色和角色管理，請參閱「[其他資源](#additional-resources)」區段中的「角色型權限」文件。
 
 ## Cloud Manager {#cloud-manager}
 
-Cloud Manager是AEMas a Cloud Service的必要元件，可作為平台的單一入口點。
+Cloud Manager 是 AEM as a Cloud Service 的重要元件，是使用平台的單一入口。
 
-為了支援具有企業開發設定的客戶，AEMas a Cloud Service與Cloud Manager及其專門建置的CI/CD管道完全整合。 「快速場地建立」工具延伸了這些功能，以支援專用的前端開發管道。
+若要支援客戶進行企業開發設定，AEM as a Cloud Service 與 Cloud Manager 及其專門建置的 CI/CD 管道完全整合。快速建立網站工具擴展這些功能以支援前端開發的專用管道。
 
-在此歷程中，不需要完全瞭解Cloud Manager。 從高層面來看，Cloud Manager的結構包含好幾個層級。
+針對本歷程的目的而言，您無需完全了解 Cloud Manager。從較高的層面來看，Cloud Manager 由多個層次的結構所組成。
 
 ![Cloud Manager 結構](assets/cloud-manager-structure.png)
 
-* **租使用者** - 每個客戶都佈建了一個租使用者。
-* **計畫** - 每個租使用者都有一個或多個計畫，這些計畫通常反映了客戶的授權解決方案。
-* **環境** - 每個計畫都有多種環境，例如用於即時內容的生產、一種用於測試、一種用於開發目的。
-* **存放庫**  — 這些環境有Git存放庫，可用於維護應用計畫和前端計畫碼。
-* **工具和工作流程** - 管道管理從存放庫到環境的計劃碼部署。
+* **租用戶** - 每個客戶都佈建了一個租用戶。
+* **方案** - 每個租用戶都有一個或多個方案，這些方案通常反映了客戶的授權解決方案。
+* **環境** - 每個方案都有多種環境，例如用於即時內容的生產、一種用於測試、一種用於開發目的。
+* **存放庫** - 環境有一個或多個 Git 存放庫，可用於維護應用程式和前端程式碼。
+* **工具和工作流程** - 管道管理從存放庫到環境的方案碼部署。
 
 範例通常有助於內容化此階層。
 
 * WKND Travel and Adventure Enterprises 可能是專注於旅遊相關媒體的&#x200B;**租用戶**。
-* WKND Travel and Adventure Enterprises 租用戶可能有兩個&#x200B;**計畫**：一個用於 WKND Magazine 的 Sites 計畫，和一個用於 WKND Media 的 Assets 計畫。
-* WKND Magazine 和 WKND Media 計畫都將有開發、測試和製作&#x200B;**環境**。
+* WKND Travel and Adventure Enterprises 租用戶可能有兩個&#x200B;**方案**：一個用於 WKND Magazine 的 Sites 方案，和一個用於 WKND Media 的 Assets 方案。
+* WKND Magazine 和 WKND Media 方案都將有開發、測試和製作&#x200B;**環境**。
 
-## 快速網站建立前端開發流程 {#flow}
+## 快速建立網站前端開發流程 {#flow}
 
-整體流程簡單直觀，即使您尚不具有豐富的Cloud Manager經驗也是如此。
+整體流程簡單且容易操作，即使您尚未具備 Cloud Manager 豐富經驗亦可操作。
 
-1. AEM管理員登入AEM環境，並使用網站範本建立新網站。
-1. Cloud Manager管理員會在Cloud Manager中建立前端管道。 此管道會協調將計畫碼從Git存放庫部署到AEM環境。
-1. AEM管理員會從計畫的AEM執行個體匯出網站主題，並將其提供給前端開發人員。
-1. Cloud Manager管理員會授予前端開發人員對可提交自訂的AEM Git存放庫的存取權。
-1. 前端開發人員會擷取存取認證以存取Git和管道。
-1. 前端開發人員自訂主題，並使用Proxy透過網站的實際內容進行測試，然後將變更提交到Git存放庫。
-1. 前端開發人員執行管道以將主題自訂部署到計畫的生產環境。
+1. AEM 管理員登入 AEM 環境，並使用網站範本建立新網站。
+1. Cloud Manager 管理員在 Cloud Manager 中建立前端管道。此管道會協調將程式碼從 git 存放庫部署到 AEM 環境的過程。
+1. AEM 管理員從方案的 AEM 執行個體中匯出網站主題並提供給前端開發人員。
+1. Cloud Manager 管理員授予前端開發人員存取 AEM Git 存放庫的權限，以便在其中提交自訂內容。
+1. 前端開發人員擷取存取權認證來存取 git 和管道。
+1. 前端開發人員自訂主題，利用使用 Proxy 的網站上的實際內容進行測試，然後將變更提交至 Git 存放庫。
+1. 前端開發人員執行管道將主題自訂內容部署到方案的生產環境。
 
-![快速網站建立流程](assets/qsc-flow.png)
+![快速建立網站流程](assets/qsc-flow.png)
 
-使用快速網站建立工具的主要優點在於，純前端開發人員只負責實際自訂。 前端開發人員不會與AEM互動，或需要任何AEM知識。
+使用快速建立網站工具的主要優點是前端開發人員只需要負責實際的自訂內容。前端開發人員與 AEM 沒有任何互動，也不需要任何 AEM 知識。
 
 ## 下一步 {#what-is-next}
 
-現在您已完成AEM快速網站建立歷程的這一部分，您應：
+現在您已完成 AEM 快速建立網站歷程的這個部分，您應該：
 
-* 瞭解AEM Sites和Cloud Manager如何共同作業來促進前端開發
-* 瞭解前端自訂步驟如何與AEM完全分離且不需要AEM知識。
+* 了解 AEM Sites 和 Cloud Manager 如何搭配運作以促進前端開發
+* 了解前端自訂步驟如何與 AEM 完全分離並且不需要瞭解 AEM 亦可操作。
 
-在此基礎上繼續您的AEM快速網站建立歷程，接下來檢閱檔案 [從範本建立網站，](create-site.md) 您可在其中瞭解如何使用範本快速建立新的AEM網站。
+以此知識為基礎並繼續您的 AEM 快速建立網站歷程，接著檢閱文件「[使用範本建立網站](create-site.md)」，從中了解如何使用範本快速建立新的 AEM 網站。
 
 ## 其他資源 {#additional-resources}
 
-我們建議您檢閱檔案，繼續快速網站建立歷程的下一部分 [從範本建立網站，](create-site.md) 以下是一些其他可選資源，這些資源對本文中提到的一些概念進行了更深入的探究，但並非繼續此歷程所必需的。
+因為我們建議您檢閱文件「[使用範本建立網站](create-site.md)」，繼續執行快速建立網站歷程的下個部分，所以提供下列一些其他選用資源，協助深入瞭解本文件提及的一些概念，但是這些並非繼續執行歷程的必要條件。
 
-* [Cloud Manager 文件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html) - 如果您想要 Cloud Manager 功能的更多詳細資訊，您可能想要直接查閱深入的技術文件。
-* [角色型許可權](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/role-based-permissions.html) - Cloud Manager已預先設定角色，賦予適當許可權。 請參閱本檔案以瞭解這些角色的詳細資訊及管理方法。
-* [npm](https://www.npmjs.com)  — 用來快速建立網站的AEM主題是以npm為基礎。
-* [webpack](https://webpack.js.org)  — 用於快速建立網站的AEM主題依賴webpack。
+* [Cloud Manager 文件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html) - 如果您想要 Cloud Manager 功能的更多詳細資訊，您可能想直接查閱深入的技術文件。
+* [角色型權限](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/role-based-permissions.html) - Cloud Manager 已預先設定角色並授予適當權限。有關這些角色以及如何管理它們的詳細資訊，請參閱本文件。
+* [npm](https://www.npmjs.com) - 用於快速建立網站的 AEM 主題以 npm 為基礎。
+* [webpack](https://webpack.js.org) - 用於快速建立網站的 AEM 主題以 webpack 為基礎。

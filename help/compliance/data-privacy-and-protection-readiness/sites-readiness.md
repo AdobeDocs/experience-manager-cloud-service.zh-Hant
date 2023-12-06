@@ -3,9 +3,9 @@ title: 資料保護和資料隱私權法規 - Adobe Experience Manager as a Clou
 description: 了解對各種資料保護和資料隱私權法規的 Adobe Experience Manager as a Cloud Service Sites 支援；包括歐盟一般資料保護規範 (GDPR)、加州消費者隱私法，以及在實作新的 AEM as a Cloud Service 專案時如何遵守。
 exl-id: fdcad111-0cdd-46cc-964c-3f8669ca2030
 source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1023'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ Adobe Experience Manager as a Cloud Service Sites 已準備好幫助客戶履行
 >
 >請參閱 [Adobe Experience Manager as a Cloud Service Sites 的資料保護和資料隱私權法規整備](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md)以取得更進一步的詳情。
 
-## AEM 作者階層 {#aem-author-tier}
+## AEM 製作層 {#aem-author-tier}
 
 作者伺服器上的使用者帳戶和 UGC 內容包含在 [AEM Foundation 文件](/help/compliance/data-privacy-and-protection-readiness/foundation-readiness.md)中。
 
@@ -50,7 +50,7 @@ Adobe Experience Manager 受用於管理使用者選擇加入/選擇退出的 co
 要選擇退出：
 
 1. 瀏覽到:
-   [ Adobe 隱私權中心 - 選擇退出](https://www.adobe.com/privacy/opt-out.html)
+   [ Adobe 隱私權中心 - 選擇退出](https://www.adobe.com/tw/privacy/opt-out.html)
 
 1. 向下捲動到「**服務**-**Experience Cloud 服務使用資料**」。
 
@@ -60,7 +60,7 @@ Adobe Experience Manager 受用於管理使用者選擇加入/選擇退出的 co
 
    * 要選擇退出有關您造訪本網站的資料的彙總和分析，必須在您的瀏覽器上安裝 cookie。此 cookie 表明您已選擇退出。
 
-     如果您刪除選擇退出Cookie，或者如果您變更電腦或網頁瀏覽器，則需要再次選擇退出。
+     如果您刪除選擇退出 cookie，或者如果您變更電腦或網頁瀏覽器，您必須再次選擇退出。
 
      選擇退出 - 將我從訪客工作階段彙總和分析中排除 (安裝`amcglobal.sc.omtrdc.net`選擇退出 cookie) - 按一下這裡。
 
@@ -96,7 +96,7 @@ AEM 透過 ContextHub 提供一個選用資料層。這會將訪客特定的資�
 
 ### 實作選擇加入/選擇退出 {#implementing-opt-in-opt-out}
 
-網站擁有者必須根據以下准則實作選擇退出元件。
+網站擁有者必須根據以下準則實施選擇退出元件。
 
 這些準則會將選擇加入實作為預設值。因此，網站訪客必須先明確同意，才會將任何個人資料儲存在瀏覽器 (用戶端) 的持續性中。
 

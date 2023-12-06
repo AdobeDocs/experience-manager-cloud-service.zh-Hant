@@ -3,9 +3,9 @@ title: 建立示範網站
 description: 根據預先設定的範本庫在 AEM 中建立示範網站。
 exl-id: e76fd283-12b2-4139-9e71-2e145b9620b1
 source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '815'
-ht-degree: 10%
+ht-degree: 100%
 
 ---
 
@@ -13,102 +13,102 @@ ht-degree: 10%
 
 根據預先設定的範本庫在 AEM 中建立示範網站。
 
-## 到目前為止 {#story-so-far}
+## 目前進度 {#story-so-far}
 
-在AEM參考示範附加元件歷程的上一個檔案中， [建立計畫，](create-program.md) 您執行了第一個設定步驟來建立方案以進行測試，並使用管道來部署附加內容。 您現在應該：
+在 AEM 參考示範附加元件歷程的上一個文件「[建立方案](create-program.md)」中，您已執行第一個設定步驟，建立測試用的方案，並使用管道來部署附加內容。您現在應該：
 
-* 瞭解如何使用Cloud Manager建立計畫。
-* 瞭解如何啟用新方案的參考示範附加元件。
-* 能夠執行管道以部署附加內容。
+* 了解如何使用 Cloud Manager 建立方案。
+* 了解如何啟動新方案的參考示範附加元件。
+* 能夠執行管道來部署附加內容。
 
-本文會根據參考示範附加元件的範本，在AEM中建立網站或AEM Screens專案，說明此流程的下一步。
+本文章說明流程的下一步，即根據參考示範附加元件的範本在 AEM 中建立網站或 AEM Screens 專案。
 
 ## 目標 {#objective}
 
-本檔案可協助您瞭解如何根據參考示範附加元件的範本建立網站。 閱讀本文件後，您應該：
+本文件協助您瞭解如何根據參考示範附加元件的範本建立網站。閱讀本文件後，您應該：
 
-* 瞭解如何存取AEM製作環境。
-* 瞭解如何根據範本建立網站。
-* 瞭解導覽網站結構和編輯頁面的基本概念。
+* 了解如何存取 AEM 製作環境。
+* 了解如何根據範本建立網站。
+* 了解導覽網站結構和編輯頁面的基礎知識。
 
-## 建立示範網站或Screens專案 {#create-site}
+## 建立示範網站或 Screens 專案 {#create-site}
 
-在管道部署參考示範附加元件後，您可以存取AEM製作環境，以根據附加元件內容建立示範網站。
+在參考示範附加元件部署管道後，便可以存取 AEM 製作環境並根據附加內容來建立示範網站。
 
-1. 從Cloud Manager中的計畫總覽頁面，選擇AEM創作環境的連結。
+1. 從 Cloud Manager 的方案概觀頁面中，選擇指向 AEM 製作環境的連結。
 
    ![存取製作環境](assets/access-author.png)
 
-1. 從AEM的主功能表選取 **網站**.
+1. 從 AEM 的主選單選擇「**Sites**」。
 
    ![存取網站](assets/access-sites.png)
 
-1. 在網站主控台中，選取 **建立** ，然後選取「 」 **從範本建立網站** 位於下拉式清單中。
+1. 從 Sites 主控台中，選取畫面右上角的「**建立**」並從下拉式清單選取「**來自範本的網站**」。
 
-   ![從範例建立網站](assets/create-site-from-template.png)
+   ![使用範本建立網站](assets/create-site-from-template.png)
 
-1. 網站建立精靈隨即啟動。 在左欄中，您可以看到管道部署至編寫執行個體的示範範本。 選取一個以將其選取，並在右欄中顯示詳細資訊。 如果您想要測試或示範AEM Screens，請務必選擇 **We.Cafe網站範本**. 選取 **下一個**.
+1. 網站建立精靈啟動。您可以在左欄看到管道部署到您的製作執行個體的示範範本。選取其中一個可在右欄看到其詳細資訊。如果您想測試或示範 AEM Screens，請務必選取「**We.Cafe 網站範本**」。選取「**下一步**」。
 
    ![網站建立精靈](assets/site-creation-wizard.png)
 
-1. 在下一個畫面中，為您的網站或Screens專案提供標題。 若省略，可提供網站名稱，或從標題產生。 選擇 **建立**。
+1. 在下一個畫面中，請提供您的網站或 Screens 專案的標題。如果省略的話，可以提供網站名稱或從標題產生。選取「**建立**」。
 
-   * 網站標題會顯示在瀏覽器標題列中。
-   * 網站名稱會成為URL的一部分。
-   * 網站名稱必須符合AEM頁面命名慣例，可參閱以下詳細資訊： [其他資源](#additional-resources) 區段。
+   * 網站標題顯示在瀏覽器標題列中。
+   * 網站名稱成為 URL 的一部分。
+   * 網站名稱必須符合 AEM 的頁面命名慣例，詳細資訊請參閱「[其他資源](#additional-resources)」區段。
 
-   ![網站詳細資料](assets/site-details.png)
+   ![網站詳細資訊](assets/site-details.png)
 
-1. 透過對話方塊確認場地建立。 選取 **完成**.
+1. 透過對話框確認建立網站。選取「**完成**」。
 
    ![網站建立完成](assets/site-creation-complete.png)
 
-您現在已建立自己的示範網站！
+現在您已建立自己的示範網站！
 
 ## 使用示範網站 {#use-site}
 
-現在您的示範網站已建立，您可以像在AEM中瀏覽及使用任何其他網站一樣導覽及使用示範網站。
+現在您已建立示範網站，即可如同 AEM 中任何其他網站一般進行導覽和使用。
 
-1. 網站現在會顯示在網站主控台中。
+1. 該網站現在顯示在 Sites 主控台中。
 
-   ![Sites主控台中的新示範網站](assets/new-demo-site.png)
+   ![在 Sites 主控台的新示範網站](assets/new-demo-site.png)
 
-1. 在畫面的右上角，確定主控台檢視已設為 **欄檢視**.
+1. 在畫面右上角，確認主控台檢視設定為「**欄視圖**」。
 
-   ![欄檢視](assets/column-view.png)
+   ![欄視圖](assets/column-view.png)
 
-1. 選取網站以探索其結構和內容。 當您導覽示範網站的內容樹狀結構時，欄檢視會持續展開。
+1. 選取該網站以探索其結構和內容。當您瀏覽示範網站的內容樹時，欄視圖會持續展開。
 
    ![網站結構](assets/site-structure.png)
 
-1. 選取要選取的頁面，然後選取 **編輯** （在工具列中）。
+1. 選取一個頁面，然後選取工具列的「**編輯**」。
 
    ![選取頁面](assets/select-page.png)
 
-1. 您可以像編輯任何其他AEM內容頁面一樣編輯頁面，例如新增或編輯元件或資產，以及測試AEM的功能。
+1. 您可以像其他 AEM 內容頁面一樣編輯該頁面，例如新增或編輯元件或資產並測試 AEM 的功能。
 
    ![編輯頁面](assets/edit-page.png)
 
-恭喜！您現在可以進一步探索示範網站的內容，並透過參考示範附加元件的最佳實務內容來探索AEM必須提供的一切。
+恭喜！現在您可以進一步探索示範網站的內容，並透過參考示範附加元件的最佳實務內容來瞭解 AEM 提供的所有功能。
 
-根據其他範本建立其他網站以探索更多AEM功能。
+根據其他範本建立其他網站以探索更多 AEM 功能。
 
 ## 下一步 {#what-is-next}
 
-現在您已完成AEM參考示範附加元件歷程的這一部分，您應：
+您已完成 AEM 參考示範附加元件歷程的這個部分，您應該：
 
-* 瞭解如何存取AEM製作環境。
-* 瞭解如何根據範本建立網站。
-* 瞭解導覽網站結構和編輯頁面的基本概念。
+* 了解如何存取 AEM 製作環境。
+* 了解如何根據範本建立網站。
+* 了解導覽網站結構和編輯頁面的基礎知識。
 
-您現在可以使用附加內容來測試AEM的功能。 您有兩個選項可以繼續您的歷程：
+現在您可以使用附加內容測試 AEM 的功能。要繼續進行歷程，您有兩個選項：
 
-* 如果您想要完整示範和測試AEM Screens內容，請確定您已根據 **We.Cafe網站範本** 如前所述，並繼續 [為您的示範網站啟用AEM Screens 。](screens.md)
-* 如果您只想要示範Sites內容，請繼續 [管理您的示範網站，](manage.md) 瞭解可用來協助您管理示範網站的工具，以及如何移除這些工具。
+* 如果您想要完整示範和測試 AEM Screens 內容，請確保您已按照前述內容根據「**We.Cafe 網站範本**」部署網站，並繼續「[為您的示範網站啟用 AEM Screens](screens.md)」。
+* 如果您只想示範網站內容，請繼續「[管理您的示範網站](manage.md)」，您可以從中了解可協助您管理示範網站的各項工具以及如何刪除它們。
 
 ## 其他資源 {#additional-resources}
 
-* [Cloud Manager 文件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html) - 如果您想要 Cloud Manager 功能的更多詳細資訊，您可能想要直接查閱深入的技術文件。
-* [建立網站](/help/sites-cloud/administering/site-creation/create-site.md)  — 瞭解如何使用AEM建立網站，使用網站範本定義網站的樣式和結構。
-* [AEM頁面命名慣例](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#page-name-restrictions-and-best-practices).  — 請參閱本頁面以瞭解組織AEM頁面的慣例。
-* [AEM基本處理](/help/sites-cloud/authoring/getting-started/basic-handling.md)  — 如果您不熟悉AEM，請參閱本檔案，瞭解導覽與主控台組織等基本概念。
+* [Cloud Manager 文件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html) - 如果您想要 Cloud Manager 功能的更多詳細資訊，您可能想直接查閱深入的技術文件。
+* [建立網站](/help/sites-cloud/administering/site-creation/create-site.md) - 了解如何在 AEM 中利用網站範本來定義網站的樣式與結構以便建立網站。
+* [AEM 的頁面命名慣例](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#page-name-restrictions-and-best-practices)- 請參閱此頁面以了解組織 AEM 頁面的慣例。
+* [AEM 基本處理](/help/sites-cloud/authoring/getting-started/basic-handling.md) - 如果您初次使用 AEM，請探索此文件以了解導覽和主控台組織等基本概念。
