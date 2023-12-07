@@ -5,7 +5,7 @@ exl-id: 93e7db8b-a8bf-4cc7-b7f0-cda481916ae9
 source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
 source-wordcount: '672'
-ht-degree: 93%
+ht-degree: 97%
 
 ---
 
@@ -32,7 +32,7 @@ AEM as a Cloud Service 為其整合的郵件服務提供 OAuth2 支援，以允�
 
    >[!NOTE]
    >
-   >許可權設定可能會隨著時間而改變。 如果上述功能無法如預期運作，請使用Microsoft 。
+   >權限設定可能會隨時間演變。如果上述功能無法如預期運作，請使用Microsoft 。
 
    * `https://outlook.office.com/SMTP.Send`
    * `openid`
@@ -139,15 +139,14 @@ AEM as a Cloud Service 為其整合的郵件服務提供 OAuth2 支援，以允�
 
    >[!NOTE]
    >
-   >範圍可能隨時間演變。 如果上述功能無法如預期運作，請使用Microsoft 。
+   >範圍可能會隨時間演變。如果上述功能無法如預期運作，請使用Microsoft 。
 
    * `https://outlook.office.com/SMTP.Send`
    * `openid`
    * `offline_access`
    * `email`
    * `profile`
-1. 建立OSGI屬性檔案 `called com.day.cq.mailer.DefaultMailService.cfg.json`
-在 `/apps/<my-project>/osgiconfig/config` 並使用下列語法。 `smtp.host` 和 `smtp.port` 值會反映出進階網路設定，如[電子郵件服務教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/email-service.html?lang=zh-Hant)中所述。
+1. 使用以下語法在 `/apps/<my-project>/osgiconfig/config` 下建立一個 OSGI 屬性檔案 `called com.day.cq.mailer.DefaultMailService.cfg.json`。`smtp.host` 和 `smtp.port` 值會反映出進階網路設定，如[電子郵件服務教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/email-service.html?lang=zh-Hant)中所述。
 
    ```
    {
