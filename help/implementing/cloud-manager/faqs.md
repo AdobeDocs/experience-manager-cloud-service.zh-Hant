@@ -5,7 +5,7 @@ exl-id: eed148a3-4a40-4dce-bc72-c7210e8fd550
 source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
 source-wordcount: '961'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -106,9 +106,9 @@ Caused by: javax.jcr.AccessDeniedException: OakAccess0000: Access denied [EventA
 
 * 在將內容套件 (Sling 指派) 從作者複製到發佈執行個體期間，部署可能會因某些其他錯誤而失敗。
    * 按照以下步驟在本機設定上模擬問題。
-      1. 使用最新的 AEM SDK jar 在本機安裝編寫和發佈執行個體。
-      1. 登入編寫執行個體。
-      1. 前往 **工具** > **部署** > **分佈**.
+      1. 使用最新的 AEM SDK jar 在本機安裝製作和發佈執行個體。
+      1. 登入製作執行個體。
+      1. 前往「**工具**」>「**部署**」>「**發佈**」。
       1. 指派作為程式碼庫 一部分的內容套件，並查看佇列是否因錯誤而阻塞。
 
 ## 我無法使用 aio 命令設定變數。該怎麼辦？ {#set-variable}

@@ -5,15 +5,15 @@ exl-id: fdfa79d3-fbed-4467-a898-c1b2678fc0cb
 source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
 source-wordcount: '686'
-ht-degree: 94%
+ht-degree: 98%
 
 ---
 
 # 了解如何在 AEM 中建立內容片段模型 {#architect-headless-content-fragment-models}
 
-## 到目前為止 {#story-so-far}
+## 目前進度 {#story-so-far}
 
-在[AEM Headless 內容作者歷程](overview.md)的一開始，[AEM Headless 內容模型基本知識](basics.md)介紹了和 Headless 內容編寫相關的基本概念和術語。
+在[AEM Headless 內容作者歷程](overview.md)的一開始，[AEM Headless 內容模型基本知識](basics.md)介紹了和 Headless 內容製作相關的基本概念和術語。
 
 本文以這些內容為基礎，以便您了解如何為 AEM Headless 專案建立您自己的內容片段模型。
 
@@ -53,7 +53,7 @@ At the very start you need to enable Content Fragment Models for your site, this
 
 ## 定義內容片段模型 {#defining-content-fragment-models}
 
-第一次開啟新模型時，您會看到 — 左邊有一個很大的空白區域，而且有一個長清單， **資料型別** 在右側：
+當您首次開啟新模型時，您會看到左側有一大片空白，右側有一長串「**資料類型**」：
 
 ![空白模型](/help/sites-cloud/administering/content-fragments/assets/cfm-models-03.png)
 
@@ -108,7 +108,7 @@ At the very start you need to enable Content Fragment Models for your site, this
 
 ## 其他資源 {#additional-resources}
 
-* [編寫概念](/help/sites-cloud/authoring/getting-started/concepts.md)
+* [製作概念](/help/sites-cloud/authoring/getting-started/concepts.md)
 
 * [基本處理](/help/sites-cloud/authoring/getting-started/basic-handling.md) - 此頁面主要基於 **Sites** 主控台，但許多/大多數功能也與導覽至&#x200B;**一般**&#x200B;主控台下&#x200B;**內容片段模型**&#x200B;及對其採取行動相關。
 

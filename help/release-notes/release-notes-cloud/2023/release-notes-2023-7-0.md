@@ -5,7 +5,7 @@ exl-id: 7866d94c-e54c-4bb2-aaa6-66c019e46336
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '896'
-ht-degree: 96%
+ht-degree: 97%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 96%
 
 ## 發行日期 {#release-date}
 
-[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 最新功能版本 (2023.7.0) 的發行日期為 2023 年 7 月 27 日。下一個功能版本 (2023.8.0) 計畫於 2023 年 8 月 31 日發行。
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 最新功能版本 (2023.7.0) 的發行日期為 2023 年 7 月 27 日。下一個功能版本 (2023.8.0) 預計於 2023 年 8 月 31 日發行。
 
 ## 發行影片 {#release-video}
 
@@ -78,11 +78,11 @@ Assets Essentials 現在會根據相關性 (依預設) 為搜尋結果進行排�
 
 ### [!DNL Forms] 中可用的新功能 {#new-features-available-in-forms-channel}
 
-* [**現成可用的主題**](/help/forms/using-themes-in-core-components.md)**和範本**：使用我們現成的 OOTB 主題和範本啟動您的表單建立流程，這些主題和範本都是專為支援經驗豐富的專業人士和新表單作者量身打造。使用調適型表單元核心元件無縫建置的這些精心策劃的主題和範本，可讓您迅速地開始針對常見使用案例建立表單。
+* [**現成可用的主題**](/help/forms/using-themes-in-core-components.md)**和範本**：使用我們現成的 OOTB 主題和範本啟動您的表單建立流程，這些主題和範本都是專為支援經驗豐富的專業人士和新表單作者量身打造。使用最適化表單元核心元件無縫建置的這些精心策劃的主題和範本，可讓您迅速地開始針對常見使用案例建立表單。
 
-* **[Headless 表單的 React 元件](https://github.com/adobe/aem-forms-headless-components/tree/main/packages/react-vanilla-components)**：您現在可以使用現成的 React 元件預覽和自訂 Headless 調適型表單轉譯。這些元件使用最適化Forms核心元件的BEM類別來設定樣式，讓您輕鬆根據特定需求自訂其外觀。
+* **[Headless 表單的 React 元件](https://github.com/adobe/aem-forms-headless-components/tree/main/packages/react-vanilla-components)**：您現在可以使用現成的 React 元件預覽和自訂 Headless 最適化表單轉譯。這些元件使用最適化Forms核心元件的BEM類別來設定樣式，讓您輕鬆根據特定需求自訂其外觀。
 
-* [**建立具有可重複區段的調適型表單**](/help/forms/create-forms-repeatable-sections.md)：您現在可製作可重複進行多筆資料紀錄擷取並以[折疊式](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html)、[精靈](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html)、[面板](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html)和[水平索引標籤](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html)元件為主的調適型表單。這些可重複的區段可讓您輕鬆提供多個資料條目。當無法事先知道需要多少份的資料時，這就非常有用。填表人可輕鬆新增或移除區段，使表單可依不同資料輸入情境進行調整，並簡化相同資料紀錄多次出現的收集作業。
+* [**建立具有可重複區段的最適化表單**](/help/forms/create-forms-repeatable-sections.md)：您現在可製作可重複進行多筆資料紀錄擷取並以[折疊式](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html)、[精靈](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html)、[面板](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html)和[水平索引標籤](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html)元件為主的最適化表單。這些可重複的區段可讓您輕鬆提供多個資料條目。當無法事先知道需要多少份的資料時，這就非常有用。填表人可輕鬆新增或移除區段，使表單可依不同資料輸入情境進行調整，並簡化相同資料紀錄多次出現的收集作業。
 
 
 ### [!DNL Forms] 中可用的搶鮮版功能 {#pre-release-features-available-in-forms-channel}
@@ -91,7 +91,7 @@ Assets Essentials 現在會根據相關性 (依預設) 為搜尋結果進行排�
 
   >[!VIDEO](https://video.tv.adobe.com/v/3422097/adaptive-forms-recaptcha-core-components-captcha/?quality=12&learn=on)
 
-### Headless 調適型表單早期採用者計畫 {#forms-early-adopter}
+### Headless 最適化表單早期採用者方案 {#forms-early-adopter}
 
 使用 [Headless 最適化表單](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html)讓您的開發人員能夠建立、發佈和管理可透過 API 存取和互動的互動式表單，而不是透過傳統的圖形使用者介面。Headless 最適化表單可協助您：
 
@@ -100,7 +100,7 @@ Assets Essentials 現在會根據相關性 (依預設) 為搜尋結果進行排�
 * 在表單應用程式中重複使用您的專屬 UI 元件
 * 使用 Adobe Experience Manager Forms 的強大功能
 
-使用您的官方電子郵件 ID 寄送電子郵件至 `aem-forms-headless@adobe.com`，即可加入早期採用者計畫。
+使用您的官方電子郵件 ID 寄送電子郵件至 `aem-forms-headless@adobe.com`，即可加入早期採用者方案。
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
@@ -110,13 +110,13 @@ Assets Essentials 現在會根據相關性 (依預設) 為搜尋結果進行排�
 
 ![行動中心螢幕擷圖](/help/assets/assets/actions-center.png)
 
-### CDN 和 WAF 規則早期採用者計劃 {#waf-early-adopter}
+### CDN 和 WAF 規則早期採用者方案 {#waf-early-adopter}
 
 在 CDN 篩選流量的根據：
-* 請求標頭和屬性（例如IP位址）
+* 要求的標頭和屬性 (例如 IP 位址)
 * 已知和惡意流量相關的流量模式
 
-有興趣嘗試該功能並分享回饋意見嗎？從您的官方電子郵件 ID 傳送電子郵件到 **aemcs-waf-adopter@adobe.com**，深入了解有關早期採用者計劃的資訊。名額有限。
+有興趣嘗試該功能並分享回饋意見嗎？從您的官方電子郵件 ID 傳送電子郵件到 **aemcs-waf-adopter@adobe.com**，深入了解有關早期採用者方案的資訊。名額有限。
 
 若要深入了解該功能，請點選[這裡](/help/security/traffic-filter-rules-including-waf.md)參閱文章。
 

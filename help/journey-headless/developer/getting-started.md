@@ -5,7 +5,7 @@ exl-id: 9661e17b-fa9f-4689-900c-412b068e942c
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '3057'
-ht-degree: 95%
+ht-degree: 99%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 95%
 
 在 [AEM Headless 開發人員歷程](overview.md)的這一部分中，了解需要滿足哪些條件才能使用 AEM Headless 開始您自己的專案。
 
-## 到目前為止 {#story-so-far}
+## 目前進度 {#story-so-far}
 
 在 AEM Headless 歷程的上一個文件「[了解 CMS Headless 開發](learn-about.md)」中，您已了解了 Headless CMS 的基本理論，現在您應該：
 
@@ -36,15 +36,15 @@ ht-degree: 95%
 
 在 AEM 中定義 Headless 專案之前，了解一些基本的 AEM 概念非常重要。
 
-### 編寫執行個體 {#author}
+### 製作執行個體 {#author}
 
-最簡單的情況是，AEM 由一個編寫執行個體和一個[發佈執行個體](#publish)組成，它們協同工作以建立、管理和發佈您的內容。
+最簡單的情況是，AEM 由一個製作執行個體和一個[發佈執行個體](#publish)組成，它們協同工作以建立、管理和發佈您的內容。
 
-內容從編寫執行個體開始。這是內容作者建立內容的地方。編寫環境為作者提供了各種工具來建立、組織和重複使用他們的內容。
+內容從製作執行個體開始。這是內容作者建立內容的地方。製作環境為作者提供了各種工具來建立、組織和重複使用他們的內容。
 
 ### 發佈執行個體 {#publish}
 
-在編寫執行個體中建立內容後，必須將其發佈以供其他服務取用。發佈執行個體包含所有已發佈的內容。
+在製作執行個體中建立內容後，必須將其發佈以供其他服務取用。發佈執行個體包含所有已發佈的內容。
 
 ### 預覽服務 {#preview}
 
@@ -52,13 +52,13 @@ ht-degree: 95%
 
 ### 複製 {#replication}
 
-複製是將內容從編寫執行個體轉移到發佈執行個體的動作。當作者或具有適當權限的其他使用者發佈內容時，AEM 會自動完成此操作。
+複製是將內容從製作執行個體轉移到發佈執行個體的動作。當作者或具有適當權限的其他使用者發佈內容時，AEM 會自動完成此操作。
 
 ### AEM 基本概念摘要 {#aem-basics-summary}
 
 在最簡單的層級上，在 AEM 中建立數位體驗需要以下步驟：
 
-1. 您的內容作者會在編寫執行個體中建立您的 Headless 內容。
+1. 您的內容作者會在製作執行個體中建立您的 Headless 內容。
 1. 當此內容準備就緒時，它會被複製到發佈執行個體。
 1. 然後可以呼叫 API 來擷取此內容。
 
@@ -85,13 +85,13 @@ AEM 的 Headless 功能以幾個關鍵功能為基礎。這些將在歷程的後
 * GraphQL API 可讓您建立存取和傳遞內容片段的要求。
 * Assets REST API 可讓您建立及修改內容片段 (和其他資產)。
 
-您會瞭解這些API，以及如何在AEM Headless歷程的稍後部分中使用它們。 或者，請參閱 [其他資源](#additional-resources) 區段以取得更多檔案。
+您將在 AEM Headless 歷程的後段會了解這些 API 以及如何使用它們。或者，參閱下面的「[其他資源](#additional-resources)」區段以取得更多文件。
 
 ## Headless 整合層級 {#integration-levels}
 
 AEM 支援 CMS 的全 Headless 模型和傳統的全堆疊或 Headful 模型。但是，AEM 不僅提供這兩種獨特的選擇，而且也支援結合了兩者優勢的混合模型，從而為您的 Headless 專案提供獨特的靈活性。
 
-為了確保您了解 Headless 概念，此 AEM Headless 開發人員歷程重點放在純 Headless 模型，讓您在 AEM 中無需編寫程式碼即可快速開始使用。
+為了確保您了解 Headless 概念，此 AEM Headless 開發人員歷程重點放在純 Headless 模型，讓您在 AEM 中無需製作程式碼即可快速開始使用。
 
 但是，一旦您了解 AEM Headless 功能，您就應明白混合模型帶來的額外可能性。下面列出了這些案例，以便您明白。在歷程結束時，您會更詳盡地了解這些概念，以防您的專案需要這種靈活性。
 
@@ -101,7 +101,7 @@ AEM 支援 CMS 的全 Headless 模型和傳統的全堆疊或 Headful 模型。�
 
 #### 層級 1：內容片段整合 - 傳統的 Headless 模型 {#level-1}
 
-此整合層級是傳統的 Headless 模型，允許您的內容作者在 AEM 中建立內容，並使用 GraphQL 將以 Headless 方式傳遞到任意數量的外部服務，或者使用資產 API 從外部服務編輯它們。AEM 中不需要編寫程式碼。
+此整合層級是傳統的 Headless 模型，允許您的內容作者在 AEM 中建立內容，並使用 GraphQL 將以 Headless 方式傳遞到任意數量的外部服務，或者使用資產 API 從外部服務編輯它們。AEM 中不需要製作程式碼。
 
 在此模型中，AEM 僅用於使用 AEM 內容片段建立和提供內容。內容的呈現和互動則委派給取用內容的外部應用程式，通常是單頁應用程式 (SPA)。
 
@@ -109,7 +109,7 @@ AEM 支援 CMS 的全 Headless 模型和傳統的全堆疊或 Headful 模型。�
 
 此整合層級是建置在層級 1 上，也允許將外部應用程式 (SPA) 嵌入到 AEM 中，以便內容作者可以在 AEM 內的外部應用程式情境中檢視內容。該應用程式也支援在 AEM 中對外部應用程式進行有限編輯。
 
-此層級的優勢是允許內容作者以 Headful 方式在 AEM 中靈活地編寫內容，他們的內容會在嵌入的外部 SPA 中依情境呈現，同時仍以 Headless 方式傳遞內容。
+此層級的優勢是允許內容作者以 Headful 方式在 AEM 中靈活地製作內容，他們的內容會在嵌入的外部 SPA 中依情境呈現，同時仍以 Headless 方式傳遞內容。
 
 #### 層級 3：在 AEM 中嵌入並完全啟用 SPA - 混合模型 {#level-3}
 
@@ -117,13 +117,13 @@ AEM 支援 CMS 的全 Headless 模型和傳統的全堆疊或 Headful 模型。�
 
 ### 您沒有 Headless 內容的外部取用者，例如單頁應用程式 (SPA)。 {#do-not-have-a-spa}
 
-如果您的目標是建立一個SPA以從AEM中無頭使用內容，您可以使用內容片段等功能來管理您的Headless內容，也可以使用AEM SPA Editor框架建置SPA。
+如果您的目標是建立一個新的 SPA 以 Headless 方式取用來自 AEM 的內容，您可以使用內容片段等功能來管理您的 Headless 內容，也可以使用 AEM 的 SPA 編輯器框架來建置 SPA。
 
 使用 SPA 編輯器，SPA 不僅可以取用來自 AEM 的內容，還可以由您的內容作者在 AEM 中進行完全編輯，從而為您提供在 AEM 中進行 Headless 傳遞和在情境中編輯的靈活性。
 
 ## 要求和先決條件 {#requirements-prerequisites}
 
-開始Headless AEM專案前，有幾項需求。
+您必須先滿足數個要求才能開始 Headless AEM 專案。
 
 ### 知識 {#knowledge}
 
@@ -196,10 +196,10 @@ AEM 允許靈活的內容結構，階層可以任意擴大。但是，重要的�
 
 資料夾也可以限制為只允許某些類型的內容 (根據內容片段模型)。建議一律明確指定階層中的所有資料夾允許哪些模型。為特定資料夾指定允許的內容：
 
-* 防止內容作者編寫不屬於該資料夾的內容。
+* 防止內容作者製作不屬於該資料夾的內容。
 * 在建立內容時篩選資料夾允許的內容類型以僅顯示有效的內容類型，藉此將內容建立流程最佳化。
 
-透過建立適當的內容結構，可以更輕鬆地跨管道協調 Headless 內容的編寫，以便能最大限度地重複使用內容。利用跨多個管道的內容大幅提升內容生產效率和變更管理。
+透過建立適當的內容結構，可以更輕鬆地跨管道協調 Headless 內容的製作，以便能最大限度地重複使用內容。利用跨多個管道的內容大幅提升內容生產效率和變更管理。
 
 ##### 建立良好的命名慣例 {#naming-conventions}
 
@@ -238,7 +238,7 @@ GraphQL 可作為 AEM 和 Headless 內容取用者之間的「黏著劑」。Gra
 * 為獲得最佳查詢效能，在 AEM 一律使用持續性查詢。這些將在歷程後續部分中討論。
 * GraphQL 以宣告方式遵循此座右銘「準確地詢問你需要什麼，並準確地得到它」。這表示在建立 GraphQL 查詢時，務必避免可能在關聯式資料庫建立的 `select *` 類型查詢。
 
-對於[使用 AEM 的典型 Headless 實作，](#level-1) 開發人員不需要 AEM 的編寫程式碼知識。
+對於[使用 AEM 的典型 Headless 實作，](#level-1) 開發人員不需要 AEM 的製作程式碼知識。
 
 ### 效能要求 {#performance-requirements}
 
@@ -273,7 +273,7 @@ GraphQL 可作為 AEM 和 Headless 內容取用者之間的「黏著劑」。Gra
 * 明白 AEM Headless 整合層級。
 * 能夠根據範圍定義您的專案。
 
-您應該透過下一次檢視檔案來繼續您的AEM Headless歷程 [踏上使用AEM Headless初體驗之路](path-to-first-experience.md) 您可在其中學習如何設定必要工具，以及如何開始考慮在AEM中建立資料的模型。
+您應該繼續您的 AEM Headless 歷程，接著檢閱「[首次使用 AEM Headless 的方法](path-to-first-experience.md)」，並從中學習如何設定必要的工具，以及如何開始思考在 AEM 中建立資料模型。
 
 ## 其他資源 {#additional-resources}
 
@@ -286,7 +286,7 @@ GraphQL 可作為 AEM 和 Headless 內容取用者之間的「黏著劑」。Gra
 * [AEM Headless 教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html) - 利用這些實作教學課程來探索如何運用各種不同方式使用 AEM 將內容傳遞到 Headless 端點，並選擇適合您的方式。
 * [使用 GraphQL API 進行 Headless 內容管理](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens&amp;Launch=ExperienceManager-D-1-2020.1.headless#courses) - 按照本課程說明對 AEM 中實作的 GraphQL API 有概略的了解。必須透過 AdobeID 進行驗證。
 * [AEM Guides WKND - GraphQL](https://github.com/adobe/aem-guides-wknd-graphql) - 此 GitHub 專案包含以 AEM GraphQL API 為重點的範例應用程式。
-* [編寫概念](/help/sites-cloud/authoring/getting-started/concepts.md) - 關於 AEM 編寫環境的技術文件，包含編寫-發佈設定的詳細說明。
+* [製作概念](/help/sites-cloud/authoring/getting-started/concepts.md) - 關於 AEM 製作環境的技術文件，包含製作-發佈設定的詳細說明。
 * [發佈頁面](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) - 關於在 AEM 發佈內容的技術文件。
 * [命名慣例](/help/implementing/developing/introduction/naming-conventions.md) - 關於 AEM 頁面命名限制的技術文件
 * [多網站管理員和翻譯](/help/sites-cloud/administering/msm-and-translation.md) - 關於 AEM 強大翻譯功能的技術文件

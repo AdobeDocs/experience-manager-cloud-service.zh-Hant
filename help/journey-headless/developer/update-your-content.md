@@ -5,7 +5,7 @@ exl-id: 84120856-fd1d-40f7-8df4-73d4cdfcc43b
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '1052'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -13,15 +13,15 @@ ht-degree: 97%
 
 在 [AEM Headless 開發人員歷程](overview.md)的這一部分中，了解如何使用 REST API 存取和更新內容片段的內容。
 
-## 到目前為止 {#story-so-far}
+## 目前進度 {#story-so-far}
 
-在 AEM 無周邊歷程的上一個文件「[如何透過 AEM Delivery API 存取您的內容](access-your-content.md)」中，您已了解如何透過 AEM GraphQL API 存取 AEM 中的無周邊內容，現在您應該：
+在 AEM Headless 歷程的上一個文件「[如何透過 AEM Delivery API 存取您的內容](access-your-content.md)」中，您已了解如何透過 AEM GraphQL API 存取 AEM 中的 Headless 內容，現在您應該：
 
 * 對 GraphQL 有概略的了解。
 * 了解 AEM GraphQL API 運作方式。
 * 了解一些實際的範例查詢。
 
-本文章以這些基本知識為基礎，以便您了解如何透過 REST API 在 AEM 更新您的現有無周邊內容。
+本文章以這些基本知識為基礎，以便您了解如何透過 REST API 在 AEM 更新您的現有 Headless 內容。
 
 ## 目標 {#objective}
 
@@ -180,7 +180,7 @@ Assets can have multiple renditions. These are typically exposed as child entiti
 
 ## Assets HTTP API 和內容片段 {#assets-http-api-content-fragments}
 
-內容片段用於無周邊傳遞，內容片段是一種特殊類型的資產。它們用於存取結構化資料，例如文字、數字、日期等。
+內容片段用於 Headless 傳遞，內容片段是一種特殊類型的資產。它們用於存取結構化資料，例如文字、數字、日期等。
 
 <!--
 As there are several differences to *standard* assets (such as images or audio), some additional rules apply to handling them.
@@ -254,7 +254,7 @@ API 參考文件中定義了受支援要求的確切格式。
 
 >[!NOTE]
 >
->請參閱API參考資料 [Adobe Experience Manager Assets API — 內容片段](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/assets-api-content-fragments/index.html).
+>請參閱 API 參考 [Adobe Experience Manager Assets API - 內容片段](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/assets-api-content-fragments/index.html)。
 
 ### 讀取/傳遞 {#read-delivery}
 
@@ -293,11 +293,11 @@ API 參考文件中定義了受支援要求的確切格式。
 
 ### 刪除 {#delete}
 
-使用方式如下：
+使用的方式包括：
 
 `DELETE /{cfParentPath}/{cfName}`
 
-如需使用AEM Assets REST API的詳細資訊，請參閱下列內容：
+有關使用 AEM Assets REST API 的更多詳細資訊，請參閱以下內容：
 
 * Adobe Experience Manager Assets HTTP API (其他資源)
 * AEM Assets HTTP API 支援內容片段 (其他資源)
@@ -317,7 +317,7 @@ API 參考文件中定義了受支援要求的確切格式。
 
 <!--You should continue your AEM headless journey by next reviewing the document [How to Put It All Together - Your App and Your Content in AEM Headless](put-it-all-together.md) where you learn how to take your AEM Headless project and prepare it for going live.-->
 
-您應該繼續您的 AEM 無周邊歷程，接下來查看文件[如何在 AEM Headless 中將您的應用程式和內容組合在一起](put-it-all-together.md)您將在其中熟悉 AEM 架構基本知識和將應用程式組合在一起所需的工具。
+您應該繼續您的 AEM Headless 歷程，接下來查看文件[如何在 AEM Headless 中將您的應用程式和內容組合在一起](put-it-all-together.md)您將在其中熟悉 AEM 架構基本知識和將應用程式組合在一起所需的工具。
 
 ## 其他資源 {#additional-resources}
 
