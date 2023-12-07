@@ -3,7 +3,7 @@ title: 已過時 API
 description: 特定於  [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 中已過時和已移除 API 的發行說明。
 exl-id: fbd8c60a-3e2b-4696-aaba-f4db97923184
 source-git-commit: d2c7e3d88b5545eee3e6f1c511088c0f6638cfe7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1116'
 ht-degree: 100%
 
