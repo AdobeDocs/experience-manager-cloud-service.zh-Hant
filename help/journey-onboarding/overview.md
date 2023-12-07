@@ -4,7 +4,7 @@ description: 從此處開始，逐步引導您了解 AEM as a Cloud Service 的�
 exl-id: 892577db-05dc-49ff-bb2c-203efdb89c8c
 source-git-commit: bba8310b9ba560ab9b6c2f9bea3e5c3cbec9228b
 workflow-type: ht
-source-wordcount: '1256'
+source-wordcount: '1247'
 ht-degree: 100%
 
 ---
