@@ -2,9 +2,9 @@
 title: 將內容引入雲端服務
 description: 瞭解如何使用Cloud Acceleration Manager將移轉集中的內容擷取到目標Cloud Service例項。
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 250682b96e2eaa2ed872e6f626c0a13dc19720f2
+source-git-commit: a66724cf76e4562710e458aeeea0d54ea9efb9aa
 workflow-type: tm+mt
-source-wordcount: '2313'
+source-wordcount: '2315'
 ht-degree: 5%
 
 ---
@@ -132,8 +132,8 @@ ht-degree: 5%
 
 * AEMas a Cloud Service會維護環境狀態，而且偶爾會因為各種正常原因而重新啟動移轉服務。 如果服務正在重新啟動，則無法連線到該服務，但最終會提供該服務。
 * 執行個體上可能正在執行另一個處理序。 例如，如果 [AEM版本更新](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates.html) 正在套用更新，系統可能忙碌中，且移轉服務定期無法使用。 完成該程式後，可以再次嘗試開始內嵌。
-* 如果 [已套用IP允許清單](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) 透過Cloud Manager，它會封鎖Cloud Acceleration Manager，使其無法連線至移轉服務。 無法新增用於內嵌的IP位址，因為其位址是動態的。 目前，唯一的解決方案是在內嵌執行期間停用IP允許清單。
-* 可能有其他原因需要調查。 如果內嵌仍持續失敗，請聯絡Adobe客戶服務。
+* 如果 [已套用IP允許清單](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) 透過Cloud Manager，它會封鎖Cloud Acceleration Manager，使其無法連線至移轉服務。 無法新增用於內嵌的IP位址，因為其位址是動態的。 目前，唯一的解決方案是在擷取和索引過程中停用IP允許清單。
+* 可能有其他原因需要調查。 如果內嵌或索引繼續失敗，請聯絡Adobe客戶服務。
 
 ### AEM版本更新與擷取
 
