@@ -1,10 +1,11 @@
 ---
 title: 如何取得AEM表單的參考主題和範本？
 description: AEM Forms提供範例調適型表單主題、範本和表單資料模型，以協助您快速建立表單。
+feature: Adaptive Forms, Foundation Components
 exl-id: 81588759-22da-4123-92fe-5ca97e97f1e4
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 6821856bd9f1a87a66ba296b3e315c0a4e78cea8
 workflow-type: tm+mt
-source-wordcount: '867'
+source-wordcount: '772'
 ht-degree: 9%
 
 ---

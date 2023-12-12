@@ -1,11 +1,12 @@
 ---
 title: 如何根據基礎元件為最適化表單新增對新區域設定的支援？
 description: 對於最適化Forms，除了現成可用的語言之外，您還可以新增更多語言的區域設定。
+feature: Adaptive Forms, Foundation Components
 exl-id: 4c7d6caa-1adb-4663-933f-b09129b9baef
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 6821856bd9f1a87a66ba296b3e315c0a4e78cea8
 workflow-type: tm+mt
-source-wordcount: '1266'
-ht-degree: 7%
+source-wordcount: '1220'
+ht-degree: 6%
 
 ---
 
@@ -18,7 +19,7 @@ ht-degree: 7%
 | -------- | ---------------------------- |
 | AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/manage-administer-aem-forms/supporting-new-language-localization.html) |
 | 核心元件 | [按一下這裡](supporting-new-language-localization-core-components.md) |
-| Foundation 元件 | 本文章 |
+| 基礎元件 | 本文章 |
 
 AEM Forms提供英文(en)、西班牙文(es)、法文(fr)、義大利文(it)、德文(de)、日文(ja)、葡萄牙文 — 巴西(pt-BR)、中文(zh-CN)、中文 — 台灣(zh-TW)和韓文(ko-KR)地區設定的立即可用支援。 您也可以新增對更多地區設定的支援，例如印地語(hi_IN)。
 

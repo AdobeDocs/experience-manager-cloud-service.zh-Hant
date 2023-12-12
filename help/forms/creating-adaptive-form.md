@@ -1,11 +1,11 @@
 ---
 title: 如何建立最適化Forms？
 description: 瞭解如何建立最適化表單，以簡化資訊收集和處理。 另外，瞭解如何根據表單資料模型建立最適化表單。
-feature: Adaptive Forms
+feature: Adaptive Forms, Foundation Components
 role: User, Developer
 level: Beginner
 exl-id: 38ca5eea-793b-420b-ae60-3a0bd83caf00
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
 workflow-type: tm+mt
 source-wordcount: '1493'
 ht-degree: 81%

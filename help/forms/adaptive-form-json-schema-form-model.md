@@ -1,11 +1,11 @@
 ---
 title: 如何為最適化表單設計JSON結構描述？
 description: 瞭解如何為最適化表單建立JSON結構描述，並根據該結構描述建立最適化表單，以產生結構描述投訴資料。
-feature: Adaptive Forms
+feature: Adaptive Forms, Foundation Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 8eeb9c5e-6866-4bfe-b922-1f028728ef0d
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
 workflow-type: tm+mt
 source-wordcount: '1333'
 ht-degree: 8%

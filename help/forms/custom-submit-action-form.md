@@ -1,13 +1,13 @@
 ---
 title: 如何建立最適化表單的自訂提交動作？
 description: 瞭解如何為最適化Forms建立自訂提交動作，以便在提交資料至Rest端點、儲存至資料存放區以及執行其他自訂函式之前延遲提交和處理資料。
-feature: Adaptive Forms
+feature: Adaptive Forms, Foundation Components
 role: User
 level: Intermediate
 exl-id: 77131cc2-9cb1-4a00-bbc4-65b1a66e76f5
-source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+source-git-commit: f419883d0e83b5d711e0f594a8e14a8f2133f4b1
 workflow-type: tm+mt
-source-wordcount: '1775'
+source-wordcount: '1670'
 ht-degree: 1%
 
 ---

@@ -2,10 +2,11 @@
 title: 如何重複使用最適化表單的中繼資料屬性？
 description: 探索以有效率地重新利用現有的最適化表單來建立新表單。
 seo-description: You can reuse an existing Adaptive Form to create new Adaptive Forms.
+feature: Adaptive Forms, Foundation Components
 exl-id: fb8cf3a9-fd19-46bf-b40e-2af76ca68b9f
-source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+source-git-commit: f419883d0e83b5d711e0f594a8e14a8f2133f4b1
 workflow-type: tm+mt
-source-wordcount: '617'
+source-wordcount: '601'
 ht-degree: 12%
 
 ---
@@ -68,7 +69,7 @@ ht-degree: 12%
 
    您可以變更最適化Forms中使用的XFA/XSD。 若要瞭解如何變更這些最適化Forms，請參閱 [管理表單中繼資料](manage-form-metadata.md)
 
-1. **重新發佈:**
+1. **重新發佈：**
 
    貼上的資產與複製的資產不同。 您可以將其發佈為新資產，以供一般使用者使用。 若要瞭解如何發佈資產， <!-- see [Publishing and unpublishing forms](publishing-unpublishing-forms.md) -->
 

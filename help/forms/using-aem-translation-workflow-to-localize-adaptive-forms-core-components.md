@@ -1,9 +1,9 @@
 ---
 title: 如何翻譯以核心元件為基礎的最適化表單？
 description: 瞭解如何在AEM Forms中建立表單資料模型、使用範例資料和服務測試模型，並為模型設定各種選項。
-feature: Adaptive Forms
+feature: Adaptive Forms, Core Components
 exl-id: ad46bf0f-e6ec-4c52-9695-5768a9968e16
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
 workflow-type: tm+mt
 source-wordcount: '884'
 ht-degree: 4%

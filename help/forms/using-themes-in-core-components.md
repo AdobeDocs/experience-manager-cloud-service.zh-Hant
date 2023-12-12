@@ -1,11 +1,12 @@
 ---
 title: 如何在Adaptive Forms中建立和使用主題？
 description: 您可以使用主題來設定樣式，並使用核心元件來將視覺身分提供給最適化表單。 您可以在任何數量的最適化Forms中共用主題。
+feature: Adaptive Forms, Core Components
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
 workflow-type: tm+mt
 source-wordcount: '2610'
-ht-degree: 4%
+ht-degree: 5%
 
 ---
 
@@ -341,7 +342,7 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
    git push canvascloudthemerepo 
    ```
 
-   ![變更已認可](/help/forms/assets/cmd_git_push.png)
+   ![已提交變更](/help/forms/assets/cmd_git_push.png)
 
 
 

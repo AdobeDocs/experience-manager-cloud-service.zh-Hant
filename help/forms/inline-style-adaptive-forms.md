@@ -1,11 +1,11 @@
 ---
 title: 如何將內嵌樣式套用至最適化表單元件？
 description: 瞭解如何在最適化表單上套用自訂樣式，您也可以在最適化表單的個別元件上套用內嵌CSS屬性。
-feature: Adaptive Forms
+feature: Adaptive Forms, Foundation Components
 role: User
 level: Intermediate
 exl-id: 25adabfb-ff19-4cb2-aef5-0a8086d2e552
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
 workflow-type: tm+mt
 source-wordcount: '761'
 ht-degree: 10%

@@ -1,8 +1,9 @@
 ---
 title: 如何建立最適化表單範本？
 description: 使用範本編輯器建立最適化表單範本，以定義基本結構和初始內容。
+feature: Adaptive Forms, Foundation Components
 exl-id: a882cba2-c621-4ff7-a972-c504641b5639
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
 workflow-type: tm+mt
 source-wordcount: '2059'
 ht-degree: 4%

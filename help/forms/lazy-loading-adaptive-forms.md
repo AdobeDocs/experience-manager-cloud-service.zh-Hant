@@ -1,11 +1,11 @@
 ---
 title: 如何透過延遲載入來改善大型表單的效能？
 description: 瞭解如何透過延遲載入來改善大型表單的效能。 延遲載入可大幅改善大型複雜最適化Forms的效能，延遲表單片段的初始化和載入，直到片段可見為止。
-feature: Adaptive Forms
+feature: Adaptive Forms, Foundation Components
 role: User
 level: Intermediate
 exl-id: 0cd38edb-2201-4ca6-8b84-6b5b7f76bd90
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
 workflow-type: tm+mt
 source-wordcount: '1063'
 ht-degree: 7%

@@ -1,8 +1,9 @@
 ---
 title: 如何建立並使用主題來設定最適化表單的樣式？
 description: 使用最適化表單主題來設定樣式並為最適化表單提供視覺身分。 您可以在任何數量的最適化Forms中共用主題。
+feature: Adaptive Forms, Foundation Components
 exl-id: 99c3d1f7-5756-49d2-98ee-72dd62063110
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
 workflow-type: tm+mt
 source-wordcount: '5558'
 ht-degree: 2%

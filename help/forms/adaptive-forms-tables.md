@@ -2,9 +2,9 @@
 title: 如何將表格新增至最適化表單？
 description: 使用表格元件將表格新增至最適化表單。 除了協助設定回應式版面，表格元件還允許新增XDP表格元素。
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
-feature: Adaptive Forms
+feature: Adaptive Forms, Foundation Components
 exl-id: 88ace1d4-b68d-40e6-a7b4-918ba25f2e91
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
 workflow-type: tm+mt
 source-wordcount: '2476'
 ht-degree: 2%

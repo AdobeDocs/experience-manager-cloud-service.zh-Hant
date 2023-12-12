@@ -1,14 +1,14 @@
 ---
 title: 如何設定重新導向頁面或感謝訊息？
 description: 瞭解使用者如何顯示感謝訊息或重新導向至表單作者在建立表單時可設定的網頁。
-feature: Adaptive Forms
+feature: Adaptive Forms, Core Components
 role: User
 level: Intermediate
 exl-id: 27decf88-a2ab-4b52-b6ae-babb1d3abdaa
-source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+source-git-commit: f419883d0e83b5d711e0f594a8e14a8f2133f4b1
 workflow-type: tm+mt
 source-wordcount: '239'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 

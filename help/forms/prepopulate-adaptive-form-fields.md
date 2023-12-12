@@ -2,11 +2,12 @@
 title: 如何預先填寫最適化表單欄位？
 description: 使用現有資料預先填寫最適化表單的欄位，使用者可以使用其社交設定檔登入，預先填寫表單中的基本資訊。
 topic-tags: develop
+feature: Adaptive Forms, Foundation Components
 exl-id: e2a87233-a0d5-48f0-b883-915fe56f105f
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 6821856bd9f1a87a66ba296b3e315c0a4e78cea8
 workflow-type: tm+mt
-source-wordcount: '2041'
-ht-degree: 4%
+source-wordcount: '2007'
+ht-degree: 3%
 
 ---
 
