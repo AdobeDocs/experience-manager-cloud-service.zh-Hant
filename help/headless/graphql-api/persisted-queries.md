@@ -3,14 +3,14 @@ title: 持續性 GraphQL 查詢
 description: 了解如何在 Adobe Experience Manager as a Cloud Service 中保留 GraphQL 查詢，以將效能最佳化。用戶端應用程式可以使用 HTTP GET 方法要求持續性查詢，回應可以在 Dispatcher 和 CDN 層快取，最終提高用戶端應用程式的效能。
 feature: Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: ef6138af1735dc7aecbc4210a3fe9983d73348dd
 workflow-type: tm+mt
 source-wordcount: '1656'
 ht-degree: 97%
 
 ---
 
-# 持續性 GraphQL 查詢 {#persisted-queries-caching}
+# 持續性 GraphQL 查詢 {#persisted-graphql-queries}
 
 持續性查詢是在 Adobe Experience Manager (AEM) as a Cloud Service 伺服器上建立和儲存的 GraphQL 查詢。用戶端應用程式可以透過 GET 要求來要求它們。GET 要求的回應可以在 Dispatcher 和 CDN 層快取，最終提高發出要求之用戶端應用程式的效能。這與標準的 GraphQL 查詢不同，後者使用 POST 要求執行，其回應無法輕鬆快取。
 
