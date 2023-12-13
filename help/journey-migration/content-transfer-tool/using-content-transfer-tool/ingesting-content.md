@@ -2,10 +2,10 @@
 title: 將內容引入雲端服務
 description: 瞭解如何使用Cloud Acceleration Manager將移轉集中的內容擷取到目標Cloud Service例項。
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: a66724cf76e4562710e458aeeea0d54ea9efb9aa
+source-git-commit: b674b3d8cd89675ed30c1611edec2281f0f1cb05
 workflow-type: tm+mt
-source-wordcount: '2315'
-ht-degree: 5%
+source-wordcount: '2392'
+ht-degree: 4%
 
 ---
 
@@ -35,7 +35,7 @@ ht-degree: 5%
       * 移轉集將在長時間不活動後過期，因此預期擷取會在執行擷取後不久進行。 檢閱 [移轉集到期](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry) 以取得詳細資訊。
 
    >[!TIP]
-   > 如果擷取目前正在執行，對話方塊將會指出該專案。 成功完成擷取後，內嵌會自動開始。 如果擷取失敗或停止，擷取工作將會撤銷。
+   > 如果擷取正在執行，對話方塊將會指出它。 擷取一旦成功完成，就會自動開始內嵌。 如果擷取失敗或停止，擷取工作將會撤銷。
 
    * **目的地：** 選取目標環境。 此環境是擷取移轉集內容的地方。
       * 內嵌不支援快速開發環境(RDE)目的地，即使使用者擁有存取權，也不會顯示為可能的目的地選擇。
@@ -49,7 +49,7 @@ ht-degree: 5%
 
    * **擦去：** 選擇 `Wipe` 值
       * 此 **擦去** 選項會設定目的地的擷取起點。 如果 **擦去** 已啟用，包含其所有內容的目的地會重設為Cloud Manager中指定的AEM版本。 如果未啟用，目的地會維持目前內容為起點。
-      * 此選項會 **NOT** 會影響執行內容內嵌的方式。 內嵌一律會使用內容取代策略，並 _非_ 內容合併策略，因此 **擦去** 和 **非擦去** 在這種情況下，擷取移轉集將會覆寫目的地上相同路徑的內容。 例如，如果移轉集包含 `/content/page1` 目的地已包含 `/content/page1/product1`，內嵌將會移除整個 `page1` 路徑及其子頁面，包括 `product1`，並以移轉集中的內容取代。 這表示執行時，必須仔細規劃 **非擦去** 內嵌至包含任何應維護之內容的目的地。
+      * 此選項會 **NOT** 會影響執行內容內嵌的方式。 內嵌一律會使用內容取代策略，並 _非_ 內容合併策略，因此 **擦去** 和 **非擦去** 在這種情況下，擷取移轉集將會覆寫目的地上相同路徑的內容。 例如，如果移轉集包含 `/content/page1` 目的地已包含 `/content/page1/product1`，內嵌會移除整個 `page1` 路徑及其子頁面，包括 `product1`，並以移轉集中的內容取代。 這表示執行時，必須仔細規劃 **非擦去** 內嵌至包含任何應維護之內容的目的地。
 
    >[!IMPORTANT]
    > 如果設定 **擦去** 會啟用擷取，並重設整個現有存放庫，包括目標Cloud Service例項的使用者許可權。 對於新增至的管理員使用者，此重設也是true **管理員** 群組，並且必須再次將該使用者新增到管理員群組，才能開始內嵌。
@@ -78,7 +78,7 @@ ht-degree: 5%
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_ingestion_topup"
 >title="填滿攝入"
->abstract="使用追加功能來移動自上次內容轉移活動以來修改的內容。 攝入完成後，檢查記錄檔中是否有任何錯誤/警告。如有任何錯誤應立即處理，方法是處理回報的問題或聯絡 Adobe 客戶服務。"
+>abstract="使用追加功能來移動自上次內容轉移活動以來修改的內容。 擷取完成後，請檢查記錄檔中是否有任何錯誤或警告。 如有任何錯誤應立即處理，方法是處理回報的問題或聯絡 Adobe 客戶服務。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/viewing-logs.html?lang=zh-Hant" text="檢視移轉集的"
 
 「內容轉移工具」具備可透過執行 *追加* 移轉集的。 如此可修改移轉集，使其僅包含自上次擷取以來已變更的內容，而無須再次擷取所有內容。
@@ -97,7 +97,7 @@ ht-degree: 5%
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_ingestion_troubleshooting"
 >title="內容擷取疑難排解"
->abstract="請參閱內嵌記錄檔和檔案，針對內嵌失敗的常見原因尋找解決方案，並尋找方法修正問題並重新執行內嵌。"
+>abstract="請參閱內嵌記錄檔和檔案，尋找內嵌失敗常見原因的解決方案，並尋找修正問題的方法。 在修正後，擷取可以再次執行。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers.html" text="驗證內容轉移"
 
 ### CAM無法擷取移轉權杖 {#cam-unable-to-retrieve-the-migration-token}
@@ -135,11 +135,11 @@ ht-degree: 5%
 * 如果 [已套用IP允許清單](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) 透過Cloud Manager，它會封鎖Cloud Acceleration Manager，使其無法連線至移轉服務。 無法新增用於內嵌的IP位址，因為其位址是動態的。 目前，唯一的解決方案是在擷取和索引過程中停用IP允許清單。
 * 可能有其他原因需要調查。 如果內嵌或索引繼續失敗，請聯絡Adobe客戶服務。
 
-### AEM版本更新與擷取
+### AEM版本更新與擷取 {#aem-version-updates-and-ingestions}
 
 [AEM版本更新](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates.html) 會自動套用至環境，以使用最新的AEMas a Cloud Service版本。 如果在執行內嵌時觸發更新，可能會導致無法預測的結果，包括環境損毀。
 
-如果「AEM版本更新」已上線到目的地程式，則擷取程式會嘗試在啟動之前停用其佇列。 內嵌完成時，版本更新程式狀態會傳回至內嵌開始前的狀態。
+如果「AEM版本更新」已上線到目的地程式，則擷取程式會嘗試在開始前停用其佇列。 擷取完成時，版本更新程式狀態會傳回至擷取開始前的狀態。
 
 >[!NOTE]
 >
@@ -149,11 +149,11 @@ ht-degree: 5%
 
 >[!NOTE]
 >
-> 「AEM版本更新」會在環境的管道中執行，並會等到管道清除為止。 如果更新排入佇列的時間比預期長，請確保自訂工作流程不會無意中鎖定管道。
+> 「AEM版本更新」會在環境的管道中執行，並等候管道清除。 如果更新排入佇列的時間比預期長，請確保自訂工作流程不會無意中鎖定管道。
 
 ![影像](/help/journey-migration/content-transfer-tool/assets-ctt/error_releaseorchestrator_active.png)
 
-### 由於違反唯一性限制，追加擷取失敗
+### 由於違反唯一性限制，追加擷取失敗 {#top-up-ingestion-failure-due-to-uniqueness-constraint-violation}
 
 造成問題的常見原因 [追加擷取](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) 失敗是節點id中的衝突。 若要識別此錯誤，請使用Cloud Acceleration Manager UI下載擷取記錄，並尋找類似以下的專案：
 
@@ -165,7 +165,7 @@ AEM中的每個節點都必須有唯一的uuid。 此錯誤指出正在內嵌的
 
 此衝突必須手動解決。 熟悉內容的人必須決定必須刪除兩個節點中的哪一個，同時留意參考該內容的其他內容。 解決方案可能要求再次執行追加擷取，而不需要違反規定的節點。
 
-### 由於無法刪除參照的節點，追加擷取失敗
+### 由於無法刪除參照的節點，追加擷取失敗 {#top-up-ingestion-failure-due-to-unable-to-delete-referenced-node}
 
 另一個常見原因 [追加擷取](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) 失敗是目的地執行個體上特定節點的版本衝突。 若要識別此錯誤，請使用Cloud Acceleration Manager UI下載擷取記錄，並尋找類似以下的專案：
 
@@ -175,11 +175,17 @@ AEM中的每個節點都必須有唯一的uuid。 此錯誤指出正在內嵌的
 
 解決方案可能要求再次執行追加擷取，而不需要違反規定的節點。 或者，建立違規節點的小型移轉集，但停用「包含版本」。
 
-最佳實務指出，如果 **非擦去** 內嵌必須使用包含版本的移轉集執行（亦即，以「包含版本」=true擷取），在移轉歷程完成之前，儘可能減少修改目的地上的內容至關重要。 否則，這些衝突可能會發生。
+最佳實務指出，如果 **非擦去** 內嵌必須使用包含版本的移轉集執行，儘可能減少修改目的地上的內容至關重要，直到移轉歷程完成。 否則，這些衝突可能會發生。
 
-### 內嵌已取消
+### 由於大型節點屬性值而導致擷取失敗 {#ingestion-failure-due-to-large-node-property-values}
 
-以執行中的擷取作為來源移轉集而建立的擷取作業將耐心等候，直到擷取成功，而且屆時會正常開始。 如果擷取失敗或停止，則擷取及其索引工作將不會開始，但將會取消。 在這種情況下，請檢查擷取以確定失敗的原因，修正問題並重新開始擷取。 執行固定擷取後，即可排程新的內嵌。
+儲存在MongoDB中的節點屬性值不能超過16 MB。 如果節點值超過支援的大小，擷取會失敗，且記錄會包含 `BSONObjectTooLarge` 錯誤並指定哪個節點超過最大值。 請注意，這是MongoDB限制。
+
+請參閱 `Node property value in MongoDB` 中的附註 [內容轉移工具的先決條件](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md) 以取得詳細資訊，以及可協助尋找所有大型節點的Oak工具連結。 修正所有大型節點後，請再次執行擷取和擷取。
+
+### 內嵌已取消 {#ingestion-rescinded}
+
+使用執行中的擷取作為來源移轉集而建立的擷取會耐心等待，直到擷取成功，而且在那一刻會正常開始。 如果擷取失敗或停止，則擷取及其索引工作將不會開始，但會取消。 在這種情況下，請檢查擷取以確定失敗的原因，修正問題並重新開始擷取。 執行固定擷取後，即可排程新的內嵌。
 
 ## 下一步 {#whats-next}
 
