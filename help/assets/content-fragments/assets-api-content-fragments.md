@@ -3,14 +3,14 @@ title: Assets HTTP API中的Adobe Experience Manager as a Cloud Service內容片
 description: 瞭解Assets HTTP API支援內容片段，這是Adobe Experience Manager的Headless傳送功能的重要一環。
 feature: Content Fragments,Assets HTTP API
 exl-id: d72cc0c0-0641-4fd6-9f87-745af5f2c232
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 38cb2605e2133e858c60644084cf515a03b54f60
 workflow-type: tm+mt
-source-wordcount: '1788'
-ht-degree: 13%
+source-wordcount: '1747'
+ht-degree: 11%
 
 ---
 
-# AEM Assets HTTP API 內容片段支援 {#content-fragments-support-in-aem-assets-http-api}
+# AEM Assets HTTP API中的內容片段支援 {#content-fragments-support-in-aem-assets-http-api}
 
 ## 概觀 {#overview}
 
@@ -30,9 +30,13 @@ ht-degree: 13%
 >
 >Assets HTTP API的目前實作是根據 [REST](https://en.wikipedia.org/wiki/Representational_state_transfer) 架構樣式。
 
+>[!NOTE]
+>
+>如需Experience Manager API的最新資訊，請造訪 [ADOBE EXPERIENCE MANAGER AS A CLOUD SERVICE API](https://developer.adobe.com/experience-cloud/experience-manager-apis/).
+
 此 [Assets REST API](/help/assets/mac-api-assets.md) 可讓Adobe Experience Manager as a Cloud Service開發人員透過CRUD （建立、讀取、更新、刪除）作業，直接透過HTTP API存取內容(儲存在AEM中)。
 
-此API可讓您藉由向JavaScript前端應用程式提供內容服務，將Adobe Experience Manager as a Cloud Service當作Headless CMS （內容管理系統）來運作。 或者任何其他可以執行 HTTP 要求並處理 JSON 回應的應用程式。
+此API可讓您藉由向JavaScript前端應用程式提供內容服務，將Adobe Experience Manager as a Cloud Service當作Headless CMS （內容管理系統）來運作。 或任何可執行HTTP要求及處理JSON回應的其他應用程式。
 
 例如， [單頁應用程式(SPA)](/help/implementing/developing/hybrid/introduction.md)、框架式或自訂)需要透過HTTP API提供的內容（通常為JSON格式）。
 
@@ -113,7 +117,7 @@ HTTP 方法決定要執行的操作：
   <tr>
    <td>支援的作業</td>
    <td><p>建立、讀取、更新、刪除。</p> <p>檢視元型別而定，包含其他操作。</p> </td>
-   <td>唯讀.</td>
+   <td>唯讀。</td>
   </tr>
   <tr>
    <td>存取</td>
@@ -149,7 +153,7 @@ HTTP 方法決定要執行的操作：
 >
 >如需詳細資訊，請參閱：
 >
->* [CORS/AEM 說明](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=zh-Hant)
+>* [CORS/AEM 說明](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=en)
 >* [影片 — 使用AEM開發CORS (04:06)](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/develop-for-cross-origin-resource-sharing.html?lang=en)
 >
 

@@ -2,10 +2,10 @@
 title: 如何透過 AEM Assets API 更新您的內容
 description: 在 AEM Headless 開發人員歷程的這一部分中，了解如何使用 REST API 存取和更新內容片段的內容。
 exl-id: 84120856-fd1d-40f7-8df4-73d4cdfcc43b
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 31b0eecd01ee319aaf700505293530fec129b00f
 workflow-type: tm+mt
-source-wordcount: '1052'
-ht-degree: 100%
+source-wordcount: '1061'
+ht-degree: 99%
 
 ---
 
@@ -321,6 +321,7 @@ API 參考文件中定義了受支援要求的確切格式。
 
 ## 其他資源 {#additional-resources}
 
+* [ADOBE EXPERIENCE MANAGER AS A CLOUD SERVICE API](https://developer.adobe.com/experience-cloud/experience-manager-apis/)
 * [Assets HTTP API](/help/assets/mac-api-assets.md)
 * [內容片段 REST API](/help/assets/content-fragments/assets-api-content-fragments.md)
    * [API 參考](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference)

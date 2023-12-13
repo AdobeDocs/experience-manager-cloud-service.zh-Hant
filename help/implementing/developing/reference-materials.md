@@ -2,10 +2,10 @@
 title: API 參考資料
 description: AEM具有廣泛而強大的API，您可用於數位體驗專案。
 exl-id: d4ef3040-5a0a-4149-9e99-09eda9605038
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 3434d51c9b0bad02b0c3f0836341f671c9405182
 workflow-type: tm+mt
-source-wordcount: '662'
-ht-degree: 8%
+source-wordcount: '594'
+ht-degree: 4%
 
 ---
 
@@ -19,13 +19,17 @@ Adobe Experience Manager (AEM)提供許多API來開發應用程式和擴充AEM�
 
 | API | 說明 |
 |---|---|
-| [Adobe Experience Manager as a Cloud Service ](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html) | 產品抽象概念，例如頁面、資產、工作流程等。 |
+| [Adobe Experience Manager as a Cloud Service](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html) | 產品抽象概念，例如頁面、資產、工作流程等。 |
 | [Granite UI](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html#) | Adobe的Open Web棧疊，提供各種基本元件（6.5 Granite資料適用於AEMaaCS） |
 | [Coral UI](https://opensource.adobe.com/coral-spectrum/documentation/) | 適用於雲端UI的Adobe視覺樣式，旨在提供一致的使用者體驗 |
 
 <!---
 |Editor core JavaScript API reference|Provides all the base objects and concepts to support authoring of content resources|
 --->
+
+>[!NOTE]
+>
+>如需Experience Manager API的最新資訊，請造訪 [ADOBE EXPERIENCE MANAGER AS A CLOUD SERVICE API](https://developer.adobe.com/experience-cloud/experience-manager-apis/).
 
 ## 其他的框架 {#additional-apis}
 
@@ -44,7 +48,7 @@ AEM是以下列四個主要Java API集為基礎，依偏好設定以遞減順序
 
 | 優先順序 | API | 說明 |
 |---|---|---|
-| 1 | [Adobe Experience Manager as a Cloud Service ](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html) | 產品抽象概念，例如頁面、資產、工作流程等。 |
+| 1 | [Adobe Experience Manager as a Cloud Service](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html) | 產品抽象概念，例如頁面、資產、工作流程等。 |
 | 2 | [Apache Sling](https://sling.apache.org/apidocs/sling11/) | REST和以資源為基礎的抽象，例如資源、值對應和HTTP要求。 |
 | 3 | [Apache Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/oak_api/overview.html) | 資料和內容抽象概念，例如，節點、屬性和工作階段。 |
 | 4 | [Apache Felix](https://felix.apache.org/) | OSGi應用程式容器抽象概念，例如服務和(OSGi)元件。 |
