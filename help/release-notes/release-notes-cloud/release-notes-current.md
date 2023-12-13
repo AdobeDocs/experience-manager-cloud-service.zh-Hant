@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 最新發行說明�
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 最新發行說明。'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: ac7af61751c3cf751a7370b454855c5361fabe02
 workflow-type: tm+mt
-source-wordcount: '1278'
-ht-degree: 23%
+source-wordcount: '1428'
+ht-degree: 85%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 23%
 
 ## 發行日期 {#release-date}
 
-的發行日期 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 目前功能版本(2023.11.0)為2023年11月30日。 下一個功能版本(2023.12.0)計畫於2023年12月14日發行。
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 目前功能版本 (2023.11.0) 的發行日期是 2023 年 11 月 30 日。下一個功能版本 (2023.12.0) 計畫於 2023 年 12 月 14 日發行。
 
 ## 維護版本發行說明 {#maintenance}
 
@@ -34,7 +34,7 @@ ht-degree: 23%
 
 ## 發行影片 {#release-video}
 
-請觀看2023年11月版本概觀影片，瞭解2023.11.0版本新增功能摘要：
+請觀看 2023 年 11 月發行概觀影片，了解 2023.11.0 版本新增功能摘要：
 
 >[!VIDEO](https://video.tv.adobe.com/v/3425864?quality=12)
 
@@ -42,17 +42,23 @@ ht-degree: 23%
 
 ### 早期採用計劃 {#sites-early-adopter}
 
-**[尋找和取代內容片段中的字串](/help/sites-cloud/administering/content-fragments/managing.md#find-and-replace-find-and-replace)**：內容片段控制檯為使用者提供簡單且直覺的方式，取代同時出現在多個內容片段中的字串，以加速內容速度。
+**您可以善用 [Real User Monitoring (RUM)資料服務](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)** 啟用AEMas a Cloud Service的使用者端集合。
 
-![尋找和取代](/help/sites-cloud/administering/content-fragments/assets/cf-managing-find-replace.png)
+Real User Monitoring (RUM) Data Service提供更精確的使用者互動反映，確保可靠衡量網站參與度。 這是取得頁面效能進階深入分析的絕佳機會。 這雖然對使用Adobe管理的CDN或非Adobe管理的CDN的客戶有益。 此外，對於使用非Adobe託管CDN的客戶，現在可為其啟用自動化流量報告，因此無需與Adobe共用任何流量報告。
 
-有興趣嘗試該功能並分享回饋意見嗎？傳送電子郵件至 **aemcs-headless-adopter@adobe.com** 從您的官方電子郵件ID瞭解有關早期採用者計畫的更多資訊。
+如果您有興趣測試這項新功能並分享您的回饋意見，請傳送電子郵件至 `aemcs-rum-adopter@adobe.com`，以及您與Adobe ID相關聯之電子郵件地址中的生產、測試和開發環境網域名稱。 接著Adobe的產品團隊將為您啟用Real User Monitoring (RUM)資料服務。
+
+**[尋找並取代內容片段中的字串](/help/sites-cloud/administering/content-fragments/managing.md#find-and-replace-find-and-replace)**：內容片段主控台為使用者提供了一種簡單直覺的方法，可一次取代出現在多個內容片段中的單一字串，以協助加快內容速度。
+
+![尋找並取代](/help/sites-cloud/administering/content-fragments/assets/cf-managing-find-replace.png)
+
+有興趣嘗試該功能並分享回饋意見嗎？從您的官方電子郵件 ID 傳送電子郵件到 **aemcs-headless-adopter@adobe.com**，深入了解有關早期採用者計劃的資訊。
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ### 資產檢視中的新功能 {#assets-view-features}
 
-* **AEM Assets中的內嵌Adobe Express編輯器**：具有Express存取許可權的使用者現在已整合影像編輯和建立工具，可直接在AEM Assets中使用Adobe Express和Adobe Firefly，以改進內容重複使用和加快內容速度。
+* **內嵌在 AEM Assets 中的 Adobe Express 編輯器**：可存取 Express 的使用者現在可以直接在 AEM Assets 中使用整合在內的 Adobe Express 和 Adobe Firefly 影像編輯和建立工具，以提升內容重複使用效能並加快內容速度。
 
   ![將中繼資料表單指派至資料夾](/help/assets/assets/adobe-express-aem-assets.png)
 
@@ -65,35 +71,35 @@ ht-degree: 23%
 -->
 
 
-* **Insights中的儲存使用情況報表**：管理員現在能夠檢視儲存空間使用量報表，這些報表是深入分析的一部分。
+* **Insights 中的儲存空間使用量報告**：管理員現在可以查看作為 Insights 一部分提供的儲存空間使用量報告。
 
-  ![儲存使用情況深入分析](/help/assets/assets/storage-usage-insights.png)
+  ![儲存空間使用量深入解析](/help/assets/assets/storage-usage-insights.png)
 
-* **搜尋第一個首頁設定**：Experience Manager Assets現在可讓您設定組織的首頁體驗。 如果您選取「搜尋優先」作為首頁，則可設定您組織的搜尋列對齊方式、背景影像和標誌。
+* **搜尋優先首頁設定**：Experience Manager Assets 現在可讓您為組織設定首頁體驗。如果您選取搜尋優先作為首頁，您可以為您的組織設定搜尋列對齊方式、背景影像和標誌。
 
-  ![搜尋第一個設定](/help/assets/assets/search-first-configuration.png)
+  ![搜尋優先設定](/help/assets/assets/search-first-configuration.png)
 
-### 管理檢視搶鮮版中的新功能 {#admin-view-features-prerelease}
+### 發行前版本的管理員檢視新功能 {#admin-view-features-prerelease}
 
-**視訊預視**：AEM Assets現在依預設會產生所有支援視訊格式的預覽轉譯，而不需要設定處理設定檔。
+**視訊預視**：AEM Assets 現在預設產生所有支援的視訊格式的預視呈現，無需設定處理設定檔。
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 ### [!DNL Experience Manager Forms] 中的新功能 {#forms-features}
 
-* **[核取方塊元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/checkbox.html)**：以核心元件為基礎的最適化Forms現在可以包含核取方塊元件。 它可讓使用者進行二進位選擇，選取或取消選取特定選項。 它通常會顯示為一個小方塊，可以按一下或點選以在兩個狀態之間切換：核取和未核取。 核取方塊是常見的表單元素，用於呈現是/否或真/假選擇。
+* **[核取方塊元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/checkbox.html)**：以核心元件為主的最適化表單現在可以包含核取方塊元件。可讓使用者二選一，選取或取消選取特定選項。它通常為一個小方塊，可以按一下或點選以在兩種狀態之間切換：選取和取消選取。核取方塊是一種常見的表單元素，用來表示選擇是/否或真/假。
 
-* **[條款與條件元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/terms-and-conditions.html)**：根據核心元件的最適化Forms現在可以包含條款與條件元件。 它可讓表單作者在表單中推出特定區段，向使用者呈現與使用服務、產品或平台相關的條款、條件或法律協定。 此元件的設計目的，是透過提交表單告知使用者其同意的規則、法規與義務。
+* **[條款與條件元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/terms-and-conditions.html)**：以核心元件為主的最適化表單現在可以包含條款與條件元件。它允許表單作者在表單中引入特定區段，向使用者顯示與使用服務、產品或平台相關的條款、條件或法律協議。此元件的設計用意是在告知使用者他們透過提交表單同意的規則、法規和義務。
 
-  ![核取方塊、條款與條件，以及垂直標籤元件](/help/forms/assets/forms-components.png)
+  ![核取方塊、條款與條件和垂直標籤元件](/help/forms/assets/forms-components.png)
 
-* **[垂直索引標籤元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs.html)**：以核心元件為基礎的最適化Forms現在可以將表單內容整理到垂直索引標籤清單中，提供結構化和可導覽的版面。 在表單中使用垂直標籤可簡化導覽並改善表單內容的組織，進而增強整體使用者體驗，尤其是在表單包含多個區段或複雜資訊的情況下。
+* **[垂直標籤元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs.html)**：以核心元件為主的最適化表單現在可以將表單內容組織成垂直的標籤清單，提供結構化、可導覽的版面。在表單中使用垂直標籤可以簡化導覽和改進表單內容組織，進而提升使用者整體體驗，特別是在表單包含多個部分或複雜資訊時。
 
 
 
 ### [!DNL Forms] 發行前版本的新功能 {#prerelease-features-forms}
 
-* **[連線最適化Forms與Microsoft® SharePoint清單](/help/forms/configure-submit-actions-core-components.md#submit-to-sharepoint)**： AEM Forms提供OOTB整合，可直接將表單資料提交至SharePoint清單，讓您使用SharePoint的清單功能。 您可以將Microsoft SharePoint清單設定為表單資料模型的資料來源，並使用 **使用表單資料模型提交** 提交動作以將最適化表單與SharePoint清單連線。
+* **[連線最適化Forms與Microsoft® SharePoint清單](/help/forms/configure-submit-actions-core-components.md#submit-to-sharepoint)**： AEM Forms提供OOTB整合，可直接將表單資料提交至SharePoint清單，讓您使用SharePoint的清單功能。 您可以將 Microsoft SharePoint 清單設定為表單資料模型的資料來源，並透過&#x200B;**使用表單資料模型提交**&#x200B;這個提交動作，將最適化表單與 SharePoint 清單連接。
 
 <!-- 
 
@@ -103,9 +109,9 @@ ht-degree: 23%
 
 ### 早期採用計劃 {#forms-early-adopter}
 
-* **[提交最適化表單至Adobe Workfront Fusion案例](/help/forms/submit-adaptive-form-to-workfront-fusion.md)**：Formsas a Cloud Service提供立即可用的選項，讓您輕鬆將最適化表單與Adobe Workfront連結。 這可簡化將最適化表單提交至Adobe Workfront情境的程式，讓您在提交最適化表單時觸發Workfront Fusion情境。
+* **[將最適化表單提交到 Adobe Workfront Fusion 情境](/help/forms/submit-adaptive-form-to-workfront-fusion.md)**：Forms as a Cloud Service 提供開箱即用的選項，可輕鬆將最適化表單與 Adobe Workfront 連接。這簡化了將最適化表單提交到 Adobe Workfront 情境的程序，讓您在提交最適化表單時觸發 Workfront Fusion 情境。
 
-* **[從右至左語言支援](/help/forms/supporting-new-language-localization-core-components.md)**：建置在核心元件上的調適型Forms現在能以從右至左(RTL)語言顯示，例如阿拉伯文、波斯文和烏都文。 全球超過20億人使用RTL語言。 使用RTL語言的表單可讓您延伸最適化表單的觸角，以迎合這些不同的受眾，並選取RTL市場。 在某些地區，提供當地語言的表格也是法律義務。 您可以因應當地語言，不僅為更廣大的受眾敞開大門，也確保符合相關法律法規。
+* **[從右至左語言支援](/help/forms/supporting-new-language-localization-core-components.md)**：以核心元件為主的最適化表單現在可以呈現從右至左 (RTL) 語言 (如阿拉伯文、波斯文和烏都文)。全球有超過 20 億人使用 RTL 語言。使用RTL語言的表單可讓您延伸最適化表單的觸角，以迎合這些不同的受眾，並選取RTL市場。 在某些地區，法律也強制要求以當地語言提供表單。透過適應當地語言，您不僅可以向更廣泛的受眾敞開大門，還可以確保遵守相關法律和法規。
 
   ![從右至左語言支援](/help/forms/assets/right-to-left-language-support.png)
 
@@ -115,26 +121,26 @@ ht-degree: 23%
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
-### 現在可以授權WAF流量篩選規則 {#cdn-waf-license}
+### WAF 流量篩選規則現在可獲得授權 {#cdn-waf-license}
 
-流量篩選規則已於10月發行，其中包括一項備註說明，說明特殊類別的Web應用程式防火牆(WAF)規則將於今年晚些時候推出，以補充Sites和Forms客戶已有的規則。 作為更新，現在可以授權WAF-DDoS Protection產品。
+流量篩選規則於 10 月發行，其中包含一項說明，即今年稍後將推出特殊類別的 Web 應用程式防火牆 (WAF) 規則，以補充 Sites 和 Forms 客戶已有的規則。作為更新，WAF-DDoS 保護產品現在可獲得授權。
 
-在授權後，這些進階WAF規則可以使用Cloud Manager設定管道部署到CDN以新增一層額外的保護來抵禦Web攻擊。
+獲得授權後，可以使用 Cloud Manager 設定管道將這些進階 WAF 規則部署到 CDN，多加一層保護來抵擋 Web 攻擊。
 
-閱讀關於 [流量篩選規則](/help/security/traffic-filter-rules-including-waf.md)，包括WAF。 與您的AEM客戶團隊討論授權WAF-DDoS保護或增強式安全性。
+閱讀[流量篩選規則](/help/security/traffic-filter-rules-including-waf.md)，包括 WAF。請與您的 AEM 客戶團隊聯繫，以了解授權 WAF-DDoS 保護或增強安全性的相關資訊。
 
-### CDN設定早期採用者計畫 {#cdn-config-early-adopter}
+### CDN 設定早期採用者計劃 {#cdn-config-early-adopter}
 
-除了最近發行的 [流量篩選規則（包括WAF）](/help/security/traffic-filter-rules-including-waf.md)，您有機會使用設定管道來宣告和部署其他型別的CDN設定。 我們很樂意瞭解您的使用案例，包括：
-* 301/302使用者端重新導向
-* 在邊緣將請求代理到任意來源
-* URL轉換
+除了最近發行的[流量篩選規則 (包括 WAF)](/help/security/traffic-filter-rules-including-waf.md)，還有機會使用設定管道來宣告和部署其他類型的 CDN 設定。我們很想聽聽您的使用案例，包括：
+* 301/302 用戶端重新導向
+* 將邊緣要求代理到任意來源
+* URL 轉換
 * 設定或修改要求或回應標頭
-* CDN無法連線AEM時的自訂錯誤頁面
-* 依使用者名稱/密碼驗證
-* 任何其他有用的CDN設定
+* CDN 無法連接 AEM 時的自訂錯誤頁面
+* 透過使用者名稱/密碼進行身份驗證
+* 任何其他有用的 CDN 設定
 
-傳送電子郵件至 **aemcs-cdn-config-adopter@adobe.com** 來自您的正式電子郵件ID以及您的意見回饋。
+使用您的官方電子郵件 ID 將您的回饋意見透過電子郵件寄送至：**aemcs-cdn-config-adopter@adobe.com**。
 
 ## Cloud Manager {#cloud-manager}
 
@@ -146,6 +152,6 @@ ht-degree: 23%
 
 ## 已知問題 {#known-issues}
 
-* 無法根據核心元件提交最適化Forms。 使用核心元件2.0.38 - 2.0.60版建置的最適化Forms會發生問題。
+* 無法根據核心元件提交最適化Forms。 使用核心元件版本 2.0.38 – 2.0.60 建立的最適化表單會出現此問題。
 
-  以解決問題。 您可以移至最適化表單核心元件2.0.62版或更新版本。 若要為您的環境設定最適化Forms核心元件版本， [設定core.forms.components.version、core.forms.components.af.version和core.wcm.components.version元件的版本](/help/forms/enable-adaptive-forms-core-components.md#2-add-adaptive-forms-core-components-dependencies-to-your-git-repository) 您的Formsas a Cloud Service存放庫或AEM原型專案和中的相依性 [將變更部署至您的Formsas a Cloud Service環境](/help/forms/enable-adaptive-forms-core-components.md#build-and-deploy-updated-code-on-an-aem-forms-as-a-cloud-service-environment). 您可以在下列位置找到最新版的最適化Forms核心元件相依性： [最適化Forms核心元件Git存放庫](https://github.com/adobe/aem-core-forms-components#system-requirements).
+  若要解決問題。您可以移轉到最適化表單核心元件版本 2.0.62 或更新版本。若要為您的環境設定最適化表單核心元件的版本，在 Forms as a Cloud Service 存放庫或 AEM 原型專案中[設定 core.forms.components.version、 core.forms.components.af.version 和 core.wcm.components.version 元件相依性的版本](/help/forms/enable-adaptive-forms-core-components.md#2-add-adaptive-forms-core-components-dependencies-to-your-git-repository)，以及[將變更部署到您的 Forms as a Cloud Service 環境](/help/forms/enable-adaptive-forms-core-components.md#build-and-deploy-updated-code-on-an-aem-forms-as-a-cloud-service-environment)。您可以在[最適化表單核心元件 Git 存放庫](https://github.com/adobe/aem-core-forms-components#system-requirements)找到最新版本的最適化表單核心元件相依性。

@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的運作方式以及該軟體可以為您做哪些事。
 breadcrumb-title: 使用手冊
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 97f08d3474ad395d3228fb848a546927e6431050
+source-git-commit: 475505fc8b5eb63c3563e8fabb28f515ff690393
 workflow-type: tm+mt
 source-wordcount: '4456'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -581,7 +581,7 @@ ht-degree: 98%
          + [將 AEM Forms as a Cloud Service 與 Adobe Analytics 整合](/help/forms/integrate-aem-forms-with-adobe-analytics.md)
          + [將最適化表單整合至 Adobe Analytics](/help/forms/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.md)
          + [檢視並了解 Adaptive Forms Analytics 報告](/help/forms/view-understand-aem-forms-analytics-reports.md)
-         + [提交最適化表單至Adobe Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
+         + [向 Adobe Workfront Fusion 提交調適型表單](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
          + [將最適化表單與 Microsoft Power Automate 整合](/help/forms/forms-microsoft-power-automate-integration.md)
          + [在 AEM Sites 頁面中內嵌最適化表單](/help/forms/embed-adaptive-form-aem-sites.md)
          + [將根據核心元件的最適化表單內嵌至外部網頁](/help/forms/embed-adaptive-form-core-components-external-web-page.md)
@@ -728,8 +728,8 @@ ht-degree: 98%
          + [建立產品體驗](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/product-experience-management.md)
    + 整合 {#integrations}
       + [Adobe Commerce](/help/commerce-cloud/integrating/magento.md)
-      + [Live Search CIF元件](/help/commerce-cloud/integrating/live-search-plp.md)
-      + [即時搜尋彈出視窗CIF元件](/help/commerce-cloud/integrating/live-search-popover.md)
+      + [即時搜尋 CIF 元件](/help/commerce-cloud/integrating/live-search-plp.md)
+      + [即時搜尋快顯視窗 CIF 元件](/help/commerce-cloud/integrating/live-search-popover.md)
       + [第三方 Commerce 解決方案](/help/commerce-cloud/integrating/third-party.md)
       + [Experience Platform](/help/commerce-cloud/integrating/aep.md)
    + AEM 店面{#storefront}
@@ -797,7 +797,7 @@ ht-degree: 98%
       + [驗證](/help/headless/security/authentication.md)
    + 部署 {#deployment}
       + [架構](/help/headless/deployment/architecture.md)
-      + [Dispatcher — 端點](/help/headless/deployment/dispatcher.md)
+      + [Dispatcher - 端點](/help/headless/deployment/dispatcher.md)
       + [Dispatcher - 啟用持續性查詢的快取](/help/headless/deployment/dispatcher-caching.md)
       + [CORS 組態](/help/headless/deployment/cross-origin-resource-sharing.md)
       + [推薦者篩選器](/help/headless/deployment/referrer-filter.md)
@@ -897,7 +897,7 @@ ht-degree: 98%
          + [套用和取消套用 IP 允許清單](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)
          + [管理 IP 允許清單](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md)
       + [授權儀表板](/help/implementing/cloud-manager/license-dashboard.md)
-      + [了解雲端服務內容請求](/help/implementing/cloud-manager/content-requests.md)
+      + [了解雲端服務內容要求](/help/implementing/cloud-manager/content-requests.md)
       + [Cloud Manager 常見問題集](/help/implementing/cloud-manager/faqs.md)
    + 為 AEM as a Cloud Service 開發 {#developing}
       + [AEM 專案結構](/help/implementing/developing/introduction/aem-project-content-package-structure.md)
@@ -1053,7 +1053,7 @@ ht-degree: 98%
    + [自助服務還原](/help/operations/restore.md)
    + [非同步作業](/help/operations/asynchronous-jobs.md)
    + [移除一般 lucene 索引](/help/operations/removal-generic-lucene-index.md)
-   + [查詢和編製索引最佳做法](/help/operations/query-and-indexing-best-practices.md)
+   + [查詢和建立索引最佳實務](/help/operations/query-and-indexing-best-practices.md)
 + 合規性 {#compliance}
    + [AEM as a Cloud Service 合規性](/help/compliance/home.md)
    + 資料隱私權和保護整備 {#data-privacy}
