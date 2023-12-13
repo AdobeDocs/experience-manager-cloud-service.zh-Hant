@@ -6,9 +6,9 @@ feature: Adaptive Forms, Foundation Components
 role: User
 level: Intermediate
 exl-id: cde9523e-5409-4edd-af0f-2c2575cc22ea
-source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
+source-git-commit: e81da7414335e00411942adeb41978d39f172b52
 workflow-type: tm+mt
-source-wordcount: '3131'
+source-wordcount: '3242'
 ht-degree: 2%
 
 ---
@@ -160,7 +160,7 @@ ht-degree: 2%
 
 若要選取Cloud Service和簽署順序：
 
-![雲端服務](assets/cloud-service.png)
+![雲端服務](/help/forms/assets/adobe-sign-cloud-service.png)
 
 1. 在內容瀏覽器中，選取 **[!UICONTROL 表單容器]**，然後選取 **[!UICONTROL 設定]** ![設定](assets/Smock_Wrench_18_N.svg) 圖示。 它會開啟屬性瀏覽器並顯示最適化表單容器屬性。
 1. 在屬性瀏覽器中，展開 **[!UICONTROL 電子簽章]** 摺疊式功能表，然後選取 **[!UICONTROL 啟用Adobe Sign]** 選項。 可啟用 [!DNL Adobe Sign] 最適化表單的開頭。
@@ -170,6 +170,10 @@ ht-degree: 2%
 
    下拉式清單會列出以下專案中存在的Cloud Service： `global` 「工具」 > **[!UICONTROL Cloud Service]** > **[!UICONTROL Adobe Sign]**. 此外，下拉式清單也會列出您在檔案夾中選取的Cloud Service。 **[!UICONTROL 設定容器]** 欄位建立最適化表單時。
 
+1. 選取選項，以使用設定提交動作 **[!UICONTROL 提交表單]**. 您可以從下列兩個選項中選取任一個：
+   * **提交表單（並傳送合約以供簽署）**：此選項會立即提交表單，然後傳送表單以供簽署給收件者。
+   * **提交表單（在每個收件者完成簽署儀式後）**：此選項只會在所有簽署者完成簽署程式後提交最適化Forms。 您可以設定間隔來檢查所有簽署者的簽署狀態。 如需詳細資訊，請參閱  [設定 [!DNL Adobe Acrobat Sign] 排程器](/help/forms/adobe-sign-integration-adaptive-forms.md#configure-dnl-adobe-acrobat-sign-scheduler-to-sync-the-signing-status).
+
 1. 從中選擇簽署順序 **[!UICONTROL 收件者可以完成]** 對話方塊。 收件者可以簽署最適化表單 **[!UICONTROL 循序方式]**  — 一個接一個的收件者，或 **[!UICONTROL 同時]**  — 使用任何順序。
 
    收件者會依序一次收到一個Adobe Sign合約。 收件者完成指派的動作後，協定會傳送給下一個收件者，依此類推。
@@ -177,6 +181,10 @@ ht-degree: 2%
    所有收件者都會同時收到Adobe Sign合約，且可互相平行動作。
 
 1. 使用「合約識別碼」欄位，將繫結與合約識別碼(agreementId)相關聯。 它會將合約ID新增至結構描述型表單提交資料的afBoundData區段。 合約ID也會新增至所有啟用Adobe Sign之表單的已提交資料中的afSubmissionInfo區段。 您可以使用協定ID來使用自訂程式碼追蹤協定狀態（需要自訂實施）。
+
+   >[!NOTE]
+   >
+   > 如果使用表單資料模型建立最適化表單，則對話方塊中會顯示「合約ID」欄位。
 
 1. [將收件者新增至最適化表單](working-with-adobe-sign.md#addsignerstoanadaptiveform) 並選取「完成」 ![儲存](assets/save_icon.svg) 圖示以儲存變更。
 

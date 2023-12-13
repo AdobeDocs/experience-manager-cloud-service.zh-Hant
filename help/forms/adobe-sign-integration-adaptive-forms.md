@@ -5,10 +5,10 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 609c3072-1c3d-43fa-898a-b4e62db8483b
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 821c243ab2d8ce1468c80c36d01b5c4c8f2bec76
 workflow-type: tm+mt
-source-wordcount: '2001'
-ht-degree: 28%
+source-wordcount: '2033'
+ht-degree: 24%
 
 ---
 
@@ -64,7 +64,7 @@ ht-degree: 28%
 [create URL](#create-a-redirect-url-for-your-aem-instance)
  -->
 
-1. 將目前瀏覽器視窗中顯示的URL複製到記事本並移除部分 `/ui#/aem` 從URL. 接著需要修改過的URL才能進行設定 [!DNL Adobe Acrobat Sign] 應用程式搭配 [!DNL AEM Forms]，在稍後的步驟中。 選取 **[!UICONTROL 下一個]**.
+1. 將目前瀏覽器視窗中顯示的URL複製到記事本並移除部分 `/ui#/aem` 從URL. 接著需要修改過的URL才能進行設定 [!DNL Adobe Acrobat Sign] 應用程式搭配 [!DNL AEM Forms]，在稍後的步驟中。 選取&#x200B;**[!UICONTROL 「下一步」]**。
 
 1. 在 **[!UICONTROL 設定]** 標籤，
    * 此 **[!UICONTROL OAuth URL]** 欄位包含預設URL，其中包含Adobe Sign資料庫分片。 URL 的格式是：
@@ -231,9 +231,12 @@ AEM Formsas a Cloud Service提供開發、預備和生產環境。 您可以開�
 
 現在，您可以 [在最適化表單中使用新增Adobe Acrobat Sign欄位](working-with-adobe-sign.md) 或 [AEM工作流程](/help/forms/aem-forms-workflow-step-reference.md#sign-document-step-sign-document-step). 請確定您將用於Cloud Service設定的設定容器新增至啟用的所有最適化Forms [!DNL Adobe Acrobat Sign]. 您可從最適化表單的屬性指定設定容器。
 
-## (僅適用於 AEM 工作流程) 設定 [!DNL Adobe Acrobat Sign] 排程器以同步簽名狀態 {#configure-adobe-sign-scheduler-to-sync-the-signing-status}
+## 設定 [!DNL Adobe Acrobat Sign] 同步簽名狀態的排程器 {#configure-adobe-sign-scheduler-to-sync-the-signing-status}
 
-當您使用 [!DNL Adobe Acrobat Sign] 工作流程步驟在最適化表單上簽名時，視工作流程設定步驟而定，此表單可以在簽名者之間逐一傳遞，或同時傳送給所有簽名者。啟用 [!DNL Adobe Acrobat Sign] 的最適化表單只會在所有簽名者完成簽名程序後提交給 Experience Manager Forms 伺服器。
+AEM Formsas a Cloud Service提供排程器服務，可依定義的間隔檢查簽署者的狀態。 設定排程器服務的情境：
+
+* 如果您使用 [提交表單（在每個收件者完成簽署儀式後）](/help/forms/working-with-adobe-sign.md#select-adobe-sign-cloud-service-and-signing-order) 若要簽署檔案，表格只會在所有簽署者簽署表格後才提交。
+* 如果您使用 [AEM工作流程中的登入步驟](/help/forms/aem-forms-workflow-step-reference.md#sign-document-step) 若要簽署檔案，在繼續工作流程的下一個步驟之前，簽署步驟會等待所有簽署者簽署檔案。
 
 [!DNL Adobe Acrobat Sign] 排程器服務預設為每 24 小時檢查 (輪詢) 簽名者回應。您可以為您的環境變更預設間隔。
 
