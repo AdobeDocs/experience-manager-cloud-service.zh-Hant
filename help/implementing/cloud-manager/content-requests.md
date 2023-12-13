@@ -2,7 +2,7 @@
 title: 了解雲端服務內容要求
 description: 如果您已向Adobe購買內容請求授權，請瞭解Adobe Experience Cloud as a Service測量的內容請求型別，以及組織與分析報告工具的差異。
 exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
-source-git-commit: 949f0ec1aa89fd05813bc9ffb02a75fb0ad84a32
+source-git-commit: e31b05f0cef6c5ca3a1c00b757eac013aa43bb90
 workflow-type: tm+mt
 source-wordcount: '2690'
 ht-degree: 4%
@@ -81,7 +81,7 @@ Real User Monitoring (RUM) Data Service是使用者端集合，可更準確地�
 
 ## 使用者端集合 {#cliendside-collection}
 
-## 適用於AEM的Real User Monitoring (RUM)as a Cloud Service {#real-user-monitoring-for-aem-as-a-cloud-service}
+### 適用於AEM的Real User Monitoring (RUM)as a Cloud Service {#real-user-monitoring-for-aem-as-a-cloud-service}
 
 >[!INFO]
 >
