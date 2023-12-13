@@ -2,9 +2,9 @@
 title: 針對Edge Delivery Services開發
 description: 瞭解如何開發區塊和自訂您的AEM專案以搭配Edge Delivery Services使用。
 feature: Edge Delivery Services
-source-git-commit: eca5126ca46a9b3b837739c31a6891471a16cfe3
+source-git-commit: 22a791311c618fcbd61f321b8efa79c3a52ec65d
 workflow-type: tm+mt
-source-wordcount: '259'
+source-wordcount: '257'
 ht-degree: 14%
 
 ---
@@ -20,7 +20,7 @@ Edge Delivery Services是以區塊的概念為基礎。 AEM隨附預先定義的
 
 AEM提供標準區塊，作為專案樣板中產品的一部分。 這類區塊包括標題、文字、影像、連結、清單等。
 
-請參閱 [建置區段](https://www.aem.live/docs/#build) Edge Delivery Services檔案，以取得區塊以及如何開發邊緣交付服務的詳細資訊。
+請參閱 [建置區段](/help/edge/developer/block-collection.md) Edge Delivery Services檔案，以取得區塊以及如何開發邊緣交付服務的詳細資訊。
 
 ## Edge Delivery Services 和 GitHub {#github-edge}
 
@@ -30,4 +30,4 @@ Edge Delivery運用GitHub，因此您可以直接從GitHub存放庫管理和部�
 
 系統會自動為您的每個分部建立網站，從內容預覽到生產都包括在內。您放入 GitHub 存放庫的每個資源都可以在您的網站上使用，無需任何建置程序。
 
-請參閱 [建置區段](https://www.aem.live/docs/#build) Edge Delivery Services檔案，以取得區塊以及如何開發邊緣交付服務的詳細資訊。
+請參閱 [建置區段](/help/edge/developer/block-collection.md) Edge Delivery Services檔案，以取得區塊以及如何開發邊緣交付服務的詳細資訊。

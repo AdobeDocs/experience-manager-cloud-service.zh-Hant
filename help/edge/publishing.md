@@ -2,9 +2,9 @@
 title: 發佈Edge Delivery Services內容
 description: 瞭解內容發佈如何與Edge Delivery Services搭配使用，以及如何使用Edge Delivery Services發佈AEM內容。
 feature: Edge Delivery Services
-source-git-commit: f6e1c5de57ee0297abdf6b03faf550a266dfac32
+source-git-commit: e3bbcfa3fcef1ed1e5b6cf2da5a17c7e636b9539
 workflow-type: tm+mt
-source-wordcount: '201'
+source-wordcount: '200'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 透過Edge Delivery Services，無論內容來源為何，發佈內容都能順暢無礙：
 
-* 檔案型內容 — 請參閱 [發佈區段](https://www.aem.live/docs/#publish) 的Edge Delivery Services檔案。
+* 檔案型內容 — 請參閱 [發佈區段](/help/edge/docs/authoring.md) 的Edge Delivery Services檔案。
 * AEM內容 — 請參閱下列詳細資料。
 
 ## 從AEM發佈流程 {#publishing-flow}

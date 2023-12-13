@@ -2,9 +2,9 @@
 title: 為Edge Delivery Services製作內容
 description: 瞭解內容製作如何與Edge Delivery Services搭配使用，以及如何使用Edge Delivery Services製作AEM內容。
 feature: Edge Delivery Services
-source-git-commit: f6e1c5de57ee0297abdf6b03faf550a266dfac32
+source-git-commit: 22a791311c618fcbd61f321b8efa79c3a52ec65d
 workflow-type: tm+mt
-source-wordcount: '463'
+source-wordcount: '461'
 ht-degree: 14%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 14%
 
 在以文件為主編寫情況中，您可以使用各種來源，例如 Microsoft Word 和 Google Docs。來自這些來源的文件會成為您網站上的頁面。標題、清單、影像、字體元素、影片都可以從初始來源傳輸到您的網站。您可以為 SEO 目的新增中繼資料，或者使用塊處理結構化內容並新增功能。
 
-如需檔案式撰寫的詳細資訊，請參閱 [此檔案位於Edge Delivery Services檔案中。](https://www.aem.live/docs/authoring)
+如需檔案式撰寫的詳細資訊，請參閱 [此檔案位於Edge Delivery Services檔案中。](/help/edge/docs/authoring.md)
 
 ## Universal Editor製作 {#universal-editor}
 
@@ -40,7 +40,7 @@ ht-degree: 14%
    * 內容仍會儲存在AEM中。
    * AEM會呈現內嵌所需的語意HTML。
    * 內容會發佈至Edge Delivery Services。
-1. [Edge Delivery Services](https://www.aem.live/home) 確定100%燈塔分數。
+1. [Edge Delivery Services](/help/edge/developer/keeping-it-100.md) 確定100%燈塔分數。
 
 區塊是Edge Delivery Services所提供頁面的基本元件。 作者可從由Adobe以標準形式提供的預設區塊，或來自開發人員為您的專案自訂的區塊，進行選擇。
 
