@@ -2,10 +2,10 @@
 title: 內容轉移工具快速入門
 description: 瞭解如何開始使用內容轉移工具
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 0161477e5248267224fe6d637a192f409161f6d3
 workflow-type: tm+mt
-source-wordcount: '1424'
-ht-degree: 21%
+source-wordcount: '1362'
+ht-degree: 16%
 
 ---
 
@@ -17,11 +17,11 @@ ht-degree: 21%
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_download"
 >title="下載"
->abstract="內容轉移工具可以從 Software Distribution 入口網站下載其 zip 檔。您可以透過「封裝管理程式」，在來源 Adobe Experience Manager AEM) 例項上安裝封裝。確保下載最新版本。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html" text="發行說明"
+>abstract="內容轉移工具可以從 Software Distribution 入口網站下載其 zip 檔。您可以透過封裝管理員在來源 Adobe Experience Manager (AEM) 執行個體上安裝套件。確保下載最新版本。"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current.html" text="發行說明"
 >additional-url="https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html" text="Software Distribution 入口網站"
 
-內容轉移工具可以從 Software Distribution 入口網站下載其 zip 檔。您可以透過以下方式安裝套件 [封裝管理員](/help/implementing/developing/tools/package-manager.md) 在您的來源Adobe Experience Manager (AEM)例項上。 確保下載最新版本。如需最新版本的詳細資訊，請參閱 [發行說明](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html).
+內容轉移工具可以從 Software Distribution 入口網站下載其 zip 檔。您可以透過以下方式安裝套件 [封裝管理員](/help/implementing/developing/tools/package-manager.md) 在您的來源Adobe Experience Manager (AEM)例項上。 請務必下載最新版本。 如需最新版本的詳細資訊，請參閱 [發行說明](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current.html).
 
 僅支援2.0.0版及更新版本，建議您使用最新版本。
 
@@ -45,7 +45,7 @@ ht-degree: 21%
 
 瞭解SSL/TLS連線問題有時很困難。 若要在擷取程式期間疑難排解連線問題，您可以透過來源AEM環境的「系統主控台」啟用SSL記錄，步驟如下：
 
-1. 導覽至來源執行個體上的Adobe Experience Manager Web Console，方法是前往 **工具 — 作業 — Web主控台** 或直接前往位於的URL *https://serveraddress:serverport/system/console/configMgr*
+1. 導覽至來源執行個體上的Adobe Experience Manager Web Console，方法是前往 **工具>作業> Web主控台** 或直接前往位於的URL *https://serveraddress:serverport/system/console/configMgr*
 1. 搜尋 **內容轉移工具提取服務設定**
 1. 使用鉛筆圖示按鈕來編輯其設定值
 1. 啟用 **為擷取啟用SSL記錄** 設定，然後按 **儲存**：
@@ -78,7 +78,7 @@ ht-degree: 21%
 
 1. 登入Cloud Acceleration Manager (CAM)，然後按一下您先前建立的CAM專案，以評估您移至AEMas a Cloud Service的準備程度。 如果尚未建立CAM專案，請參閱在CAM中建立和管理專案。
 
-1. 按一下 **內容轉移** 卡片。 這會將您帶往移轉集清單檢視。
+1. 按一下 **內容轉移** 卡片以開啟「移轉集清單」檢視。
 
    ![影像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam1.png)
 
@@ -90,7 +90,7 @@ ht-degree: 21%
 
    ![影像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam2.png)
 
-   下列對話方塊隨即顯示。 請注意，移轉集將在長時間不活動後過期。 在專案卡片和移轉工作表格列上顯示警告一段時間後，移轉集將過期，且將無法再使用它的資料。 檢閱 [移轉集到期](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry) 以取得詳細資訊。
+   下列對話方塊隨即顯示。 請注意，移轉集將在長時間不活動後過期。 在專案卡片和移轉工作表格列顯示一段時間的警告後，移轉集將會到期，其資料將不再可用。 檢閱 [移轉集到期](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry) 以取得詳細資訊。
 
    ![影像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam3.png)
 
@@ -114,11 +114,11 @@ ht-degree: 21%
 >abstract="建立移轉集後，需要填入來源執行個體中的內容，這些內容需要移至 AEM as a Cloud Service 環境。為此，內容轉移工具需要安裝在來源執行個體上。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/extracting-content.html?lang=zh-Hant" text="提取內容"
 
-若要填入您在Cloud Acceleration Manager中建立的移轉集，您必須在來源Adobe Experience Manager (AEM)例項上安裝最新版本的內容轉移工具。 請詳閱本節，瞭解如何填入移轉集。
+若要填入您在Cloud Acceleration Manager中建立的移轉集，請在來源Adobe Experience Manager (AEM)例項上安裝最新版本的內容轉移工具。 若要瞭解如何填入移轉集，請遵循本節。
 
 1. 在來源Adobe Experience Manager例項上安裝最新版的內容轉移工具後，請前往 **作業 — 內容移轉**
 
-1. 按一下 **建立移轉集**
+1. 按一下 **建立移轉集**.
 
    ![影像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam5.png)
 
@@ -126,13 +126,13 @@ ht-degree: 21%
 
    >[!NOTE]
    >
-   >請確定擷取金鑰有效且未接近其有效期。 您可於以下網址取得此資訊： **建立移轉集** 對話方塊。 如果您收到連線錯誤，請參閱 [來源環境連線能力](#source-environment-connectivity) 以取得詳細資訊。
+   >請確定擷取金鑰有效且不在到期日附近。 您可於以下網址取得此資訊： **建立移轉集** 對話方塊。 如果您收到連線錯誤，請參閱 [來源環境連線能力](#source-environment-connectivity) 以取得詳細資訊。
 
    ![影像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam6.png)
 
 1. 接著，選取下列引數以建立移轉集：
 
-   1. **包含版本**：視需要選取。包含版本時，路徑 `/var/audit` 會自動包含在內，以移轉稽核事件。
+   1. **包含版本**：視需要選取。 包含版本時，路徑 `/var/audit` 會自動包含在內，以移轉稽核事件。
 
       ![影像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam7.png)
 
@@ -140,7 +140,7 @@ ht-degree: 21%
       >如果您打算將版本納入移轉集，並使用執行增補 `wipe=false`，則由於「內容轉移工具」目前的限制，您必須停用版本清除功能。 如果您偏好啟用版本整個清除，並且要在移轉集中執行增補，則必須依照以下方式執行內嵌 `wipe=true`.
 
 
-   1. **欲包含的路徑**：使用路徑瀏覽器來選取需要移轉的路徑。路徑選擇器透過輸入或選取來接受輸入。
+   1. **要包含的路徑**：使用路徑瀏覽器來選取需要移轉的路徑。 路徑選擇器透過輸入或選取來接受輸入。
 
       >[!IMPORTANT]
       >建立移轉集時會限制下列路徑：

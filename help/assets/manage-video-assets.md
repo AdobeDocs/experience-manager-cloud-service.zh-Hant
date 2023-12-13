@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management,Publishing,Collaboration,Video
 role: User
 exl-id: 91edce4a-dfa0-4eca-aba7-d41ac907b81e
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 0d5f95cc2e7378f09c8f6c4bc3858e7b42c07924
 workflow-type: tm+mt
-source-wordcount: '4937'
+source-wordcount: '4905'
 ht-degree: 6%
 
 ---
@@ -73,8 +73,7 @@ Google會定期變更其使用者介面。 因此，將視訊發佈至YouTube的
 
 **若要設定Google雲端設定：**
 
-1. 建立Google帳戶。
-   [https://accounts.google.com/signup/v2?service=mail&amp;flowName=GlifWebSignIn&amp;flowEntry=SignUp](https://accounts.google.com/signup/v2?service=mail&amp;flowName=GlifWebSignIn&amp;flowEntry=SignUp)
+1. [建立Google帳戶](https://accounts.google.com/lifecycle/flows/signup?flowEntry=SignUp&amp;flowName=GlifWebSignIn&amp;service=mail&amp;dsh=S-1878016829%3A1702493284416645&amp;theme=glif).
 
    如果您已有Google帳戶，可跳至下一個步驟。
 
@@ -89,7 +88,7 @@ Google會定期變更其使用者介面。 因此，將視訊發佈至YouTube的
 
    您的專案ID是以專案名稱為基礎。 因此，請謹慎選擇專案名稱；專案建立後即無法變更。 此外，當您稍後在Experience Manager中設定YouTube時，必須再次輸入相同的專案ID。 因此，請寫下來。
 
-1. 選擇 **[!UICONTROL 建立]**。
+1. 選取「**[!UICONTROL 建立]**」。
 
 1. 執行下列任一項作業：
 
@@ -227,7 +226,7 @@ After you enable the YouTube Publish replication agent, if you want to test the 
 
    如有需要，您可以選擇新增說明。
 
-1. 選取 **[!UICONTROL 新增]**.
+1. 選取「**[!UICONTROL 新增]**」。
 1. 隨即顯示YouTube/Google驗證。 如果您尚未登入Google Cloud帳戶，請略過此步驟。
 
    * 輸入與Google專案ID及上述JSON文字相關聯的Google使用者名稱和密碼。
@@ -255,7 +254,7 @@ After you enable the YouTube Publish replication agent, if you want to test the 
 1. 在Experience Manager的左上角，選取Experience Manager標誌，然後在左側邊欄中導覽至 **[!UICONTROL 工具]** （槌子圖示） > **[!UICONTROL 部署]** > **[!UICONTROL Cloud Service]**.
 1. 在「協力廠商服務」標題下方的YouTube下方，選取「 」 **[!UICONTROL 立即設定]**.
 1. 在「建立組態」對話方塊的個別欄位中，輸入標題（必要）和名稱（選用）。
-1. 選擇 **[!UICONTROL 建立]**。
+1. 選取「**[!UICONTROL 建立]**」。
 1. 在「YouTube帳戶設定」對話方塊的「應用程式名 **[!UICONTROL 稱」欄位中]** ，輸入Google專案ID。
 
    您最初指定專案ID時 [已設定Google雲端設定](/help/assets/dynamic-media/video.md#configuring-google-cloud-settings) 較早。
