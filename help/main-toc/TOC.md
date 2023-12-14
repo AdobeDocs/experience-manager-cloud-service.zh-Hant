@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的運作方式以及該軟體可以為您做哪些事。
 breadcrumb-title: 使用手冊
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 475505fc8b5eb63c3563e8fabb28f515ff690393
+source-git-commit: a768eddbddb4b418b228839fdf5a9cdaf1488991
 workflow-type: tm+mt
-source-wordcount: '4456'
-ht-degree: 99%
+source-wordcount: '4545'
+ht-degree: 97%
 
 ---
 
@@ -761,6 +761,45 @@ ht-degree: 99%
    + [發佈Edge傳送的內容](/help/edge/publishing.md)
    + [為Edge Delivery開發](/help/edge/developing.md)
    + [現有專案和Edge傳送](/help/edge/existing-projects.md)
+   + 建置Edge Delivery應用程式 {#build}
+      + [快速入門 — 開發人員教學課程](/help/edge/developer/tutorial.md)
+      + [專案剖析](/help/edge/developer/anatomy-of-a-franklin-project.md)
+      + [封鎖集合](/help/edge/developer/block-collection.md)
+      + [試算表](/help/edge/developer/spreadsheets.md)
+      + [Forms](/help/edge/developer/forms.md)
+      + [索引](/help/edge/developer/indexing.md)
+      + [保持為100](/help/edge/developer/keeping-it-100.md)
+      + [標籤 — 區段](/help/edge/developer/markup-sections-blocks.md)
+      + [法維孔](/help/edge/developer/favicon.md)
+      + [自訂標頭](/help/edge/docs/custom-headers.md)
+      + [適用於開發人員的最佳實務](/help/edge/docs/dev-collab-and-good-practices.md)
+   + 發佈Edge Delivery應用程式 {#publish}
+      + [編寫](/help/edge/docs/authoring.md)
+      + [大量中繼資料](/help/edge/docs/bulk-metadata.md)
+      + [Slack機器人](/help/edge/docs/slack.md)
+      + [預留位置](/help/edge/docs/placeholders.md)
+      + [Sitemap](/help/edge/developer/sitemap.md)
+      + [SharePoint設定](/help/edge/docs/setup-customer-sharepoint.md)
+   + 啟動Edge Delivery Applications {#launch}
+      + [上線檢查清單](/help/edge/docs/go-live-checklist.md)
+      + [推送失效](/help/edge/docs/setup-byo-cdn-push-invalidation.md)
+      + [Cloudflare Worker設定](/help/edge/docs/byo-cdn-cloudflare-worker-setup.md)
+      + [Akamai設定](/help/edge/docs/byo-cdn-akamai-setup.md)
+      + [Fastly設定](/help/edge/docs/byo-cdn-fastly-setup.md)
+      + [重新導向](/help/edge/docs/redirects.md)
+   + Edge Delivery的資源 {#resources}
+      + Sidekick {#sidekick}
+         + [使用Sidekick](/help/edge/docs/sidekick.md)
+         + [安裝擴充功能](/help/edge/docs/sidekick-extension.md)
+         + [專案設定程式](https://www.aem.live/tools/sidekick/)
+         + [Sidekick庫](/help/edge/docs/sidekick-library.md)
+      + [常見問題集](/help/edge/docs/faq.md)
+      + [管理API](https://www.aem.live/docs/admin.html)
+      + [status.hlx.live](https://status.hlx.live/history)
+      + 工具 {#tools}
+         + [Sidekick Chrome擴充功能](https://chrome.google.com/webstore/detail/aem-sidekick/ccfggkjabjahcjoljmgmklhpaccedipo)
+         + [Github機器人](https://github.com/apps/aem-code-sync)
+         + [稽核記錄](/help/edge/docs/auditlog.md)
 + Headless {#headless}
    + [什麼是 Headless CMS？](/help/headless/what-is-headless.md)
    + [AEM Headless 簡介](/help/headless/introduction.md)
