@@ -2,20 +2,17 @@
 title: 自訂權限
 description: 瞭解如何使用自訂許可權建立具有可設定許可權的自訂許可權設定檔，以限制對Cloud Manager使用者的程式、管道和環境的存取權。
 exl-id: 167da985-7f19-45b3-90a3-884817907da2
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+source-git-commit: 3891a55ff48f48de4e55e0229e9f76e5bf500cb3
 workflow-type: tm+mt
-source-wordcount: '1525'
+source-wordcount: '1515'
 ht-degree: 38%
 
 ---
 
+
 # 自訂權限 {#custom-permissions}
 
 瞭解如何使用自訂許可權建立具有可設定許可權的自訂許可權設定檔，以限制對Cloud Manager使用者的程式、管道和環境的存取權。
-
->[!NOTE]
->
->此功能僅適用於[早期採用者方案。](/help/implementing/cloud-manager/release-notes/current.md#early-adoption)
 
 ## 簡介 {#introduction}
 

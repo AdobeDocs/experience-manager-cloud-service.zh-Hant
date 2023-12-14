@@ -2,10 +2,10 @@
 title: New Relic One
 description: 了解適用於 AEM as a Cloud Service 的 New Relic One 應用程式效能監控 (APM) 服務以及如何存取它。
 exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 3891a55ff48f48de4e55e0229e9f76e5bf500cb3
 workflow-type: tm+mt
-source-wordcount: '1726'
-ht-degree: 92%
+source-wordcount: '1843'
+ht-degree: 80%
 
 ---
 
@@ -20,7 +20,7 @@ Adobe 非常重視應用程式的監控、可用性和效能。AEM as a Cloud Se
 
 本文件介紹瞭如何管理對在 AEM as a Cloud Service環境中啟用的 New Relic One 應用程式效能監控 (APM) 功能的存取，以幫助支援效能並讓您充分利用 AEM as a Cloud Service。
 
-建立新的生產計畫時，會自動建立與您的 AEM as a Cloud Service Program 關聯的 New Relic One 子帳戶。
+建立新的生產計畫時，會自動建立與您的AEMas a Cloud Service計畫關聯的New Relic One子帳戶。 [必須啟用此子帳戶](#activate-sub-account) 以開始擷取資料。
 
 ## 功能 {#transaction-monitoring}
 
@@ -33,6 +33,28 @@ Adobe 非常重視應用程式的監控、可用性和效能。AEM as a Cloud Se
 * 透過結合來自基礎設施級監控和應用程式 (Adobe Experience Manager) 監控的關鍵指標來優化整體效能
 
 * 直接在 New Relic Insights 指標中公開 AEM as a Cloud Service JMX Mbean 和執行狀況檢查，從而可以深入檢查應用程式堆疊效能和執行狀況指標。
+
+## 啟用您的New Relic One子帳戶 {#activate-sub-account}
+
+若是新建立的方案，系統會為您建立New Relic One子帳戶。 但是您必須啟動它才能擷取資料。 這不會自動完成。 請依照下列步驟啟動您的子帳戶。
+
+>[!NOTE]
+>
+>中的使用者 **企業所有者** 或 **部署管理員** 角色必須登入才能管理New Relic One子帳戶。
+
+1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織。
+
+1. 按一下您要為其管理New Relic One使用者的計畫。
+
+1. 在底部 **環境** 卡片，在計畫總覽頁面，按一下省略符號按鈕並選擇 **啟動New Relic**.
+
+   ![管理使用者](assets/newrelic-activate-sub-account.png)
+
+   * 您還可以存取&#x200B;**管理使用者**&#x200B;透過頂部的省略符號按鈕選擇&#x200B;**環境**&#x200B;計畫的畫面。
+
+1. [執行管道](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#running-pipelines) ，以成功完成相同環境，進而完成子帳戶啟用。
+
+停用子帳戶時，不會擷取任何資料。
 
 ## 管理 New Relic One 使用者 {#manage-users}
 
@@ -66,7 +88,7 @@ Adobe 非常重視應用程式的監控、可用性和效能。AEM as a Cloud Se
 >
 >如果您正在管理 New Relic One 使用者，您還必須將自己新增為使用者才能獲得存取權限。作為&#x200B;**業務負責人**&#x200B;或者&#x200B;**部署管理員**&#x200B;不足以存取 New Relic One。您還必須將自己建立為使用者。
 
-## 激活您 New Relic One 使用者帳戶 {#activate-account}
+## 激活您 New Relic One 使用者帳戶 {#activate-user-account}
 
 一旦按照預覽部分中的說明建立了 New Relic One 使用者帳戶[管理 New Relic One 使用者](#manage-users), New Relic 向這些使用者發送一封確認電子郵件到提供的地址。要使用這些帳戶，使用者必須首先透過重置密碼來激活他們的 New Relic 帳戶。
 
@@ -118,7 +140,7 @@ Adobe 非常重視應用程式的監控、可用性和效能。AEM as a Cloud Se
 
 如需更多幫助，請透過 [AEM 支援入口網站](https://helpx.adobe.com/tw/enterprise/using/support-for-experience-cloud.html)開啟支援票證。
 
-## 偵錯 New Relic One Access {#troubleshooting}
+## 疑難排解New Relic One使用者存取 {#troubleshooting}
 
 如果您是依照一節所述新增為New Relic One使用者 [管理New Relic One使用者](#manage-users) 且無法依照下列步驟找到原始帳戶確認電子郵件。
 
@@ -152,11 +174,11 @@ Adobe 非常重視應用程式的監控、可用性和效能。AEM as a Cloud Se
 
 >[!NOTE]
 >
->如果您的 New Relic One 帳戶在 90 天或更長時間內沒有偵測到任何活動，APM 代理將會停止。
+>如果在您的New Relic One子帳戶中超過90天未偵測到任何活動，則APM代理程式將會停止。
 >
->透過以下方式開啟支援票證： [AEM支援入口網站](https://helpx.adobe.com/tw/enterprise/using/support-for-experience-cloud.html) 如果您想要為您的AEMaaCS環境重新啟用APM代理程式。
+>請遵循以下說明中的相同步驟： [啟用您的New Relic One子帳戶](#activate-sub-account) 區段來重新啟用您的New Relic One子帳戶。
 
-如需有關 AEM as a Cloud Service 計畫的 New Relic One 產品的更多說明或其他指導，請透過 [AEM 支援入口網站](https://helpx.adobe.com/tw/enterprise/using/support-for-experience-cloud.html)開啟支援票證
+如需更多有關AEMas a Cloud Service計畫New Relic One產品的說明或其他指引，請透過以下方式開啟支援票證： [AEM支援入口網站。](https://helpx.adobe.com/tw/enterprise/using/support-for-experience-cloud.html)
 
 ## 與 New Relic One 有關的常見問答 {#faqs}
 
@@ -202,4 +224,4 @@ New Relic One 使使用者能夠搜索他們有權存取的所有帳戶，並在
 
 ### 我 New Relic One 帳戶的 APM 代理已停止。發生了什麼事？ {#deactivated}
 
-如果 90 天或更久沒有偵測到任何活動，[APM 代理會停止](#limitations)。透過以下方式開啟支援票證： [AEM支援入口網站](https://helpx.adobe.com/tw/enterprise/using/support-for-experience-cloud.html) 如果您想要為您的AEMaaCS環境重新啟用APM代理程式。
+如果 90 天或更久沒有偵測到任何活動，[APM 代理會停止](#limitations)。請遵循以下說明中的相同步驟： [啟用您的New Relic One子帳戶](#activate-sub-account) 區段來重新啟用您的New Relic One子帳戶。

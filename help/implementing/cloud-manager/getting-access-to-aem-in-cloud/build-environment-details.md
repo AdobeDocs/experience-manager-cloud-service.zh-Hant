@@ -2,10 +2,10 @@
 title: 組建環境
 description: 了解 Cloud Manager 的構建環境以及它如何構建和測試您的程式碼。
 exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 3e7d3113b25e9b4058130bf3352a612f36ef5c63
 workflow-type: tm+mt
-source-wordcount: '1004'
-ht-degree: 94%
+source-wordcount: '1029'
+ht-degree: 92%
 
 ---
 
@@ -18,10 +18,10 @@ ht-degree: 94%
 
 Cloud Manager 使用專門的構建環境構建和測試您的程式碼。
 
-* 組建環境以 Linux 為基礎，衍生自 Ubuntu 18.04。
+* 組建環境以 Linux 為基礎，衍生自 Ubuntu 22.04。
 * 已安裝 Apache Maven 3.8.8。
 * 已安裝的 Java 版本為 Oracle JDK 8u371 和 Oracle JDK 11.0.20。
-* 預設的情況下，`JAVA_HOME` 環境變數設為 `/usr/lib/jvm/jdk1.8.0_371`，其中包含 Oracle JDK 8u371。請參閱 [備用Maven執行JDK版本](#alternate-maven-jdk-version) 區段以取得更多詳細資料。
+* 根據預設， `JAVA_HOME` 環境變數已設為 `/usr/lib/jvm/jdk1.8.0_371` 其中包含OracleJDK 8u371。 請參閱 [備用Maven執行JDK版本](#alternate-maven-jdk-version) 區段以取得更多詳細資料。
 * 安裝了一些必要的附加系統套件。
    * `bzip2`
    * `unzip`
@@ -35,6 +35,7 @@ Cloud Manager 使用專門的構建環境構建和測試您的程式碼。
    * `mvn --batch-mode org.apache.maven.plugins:maven-clean-plugin:3.1.0:clean -Dmaven.clean.failOnError=false`
    * `mvn --batch-mode org.jacoco:jacoco-maven-plugin:prepare-agent package`
 * 透過 `settings.xml` 檔案在系統層級設定 Maven，這會利用名為 `adobe-public` 的設定檔自動納入公共 Adobe 成品存放庫。如需更多詳細資訊，請參閱 [Adobe 公共 Maven 存放庫](https://repo1.maven.org/)。
+* Node.js 18可用於 [前端和完整棧疊管道。](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
 
 >[!NOTE]
 >
