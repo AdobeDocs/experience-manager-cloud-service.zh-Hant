@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Asset Management,Image Profiles,Video Profiles
 role: Admin,User
 exl-id: 8c8f0a57-13f5-4903-8d76-bfb6ee83323c
-source-git-commit: f9f82c144e6f919ed9b82caf9e1bc0408a352fd6
+source-git-commit: 34038d954802b7f8e31441d5c5e4ea90380e7a20
 workflow-type: tm+mt
 source-wordcount: '1391'
 ht-degree: 0%
@@ -44,7 +44,7 @@ ht-degree: 0%
 
 您可以對首次處理失敗的資產執行重新處理工作流程。 即使您尚未編輯「影像設定檔」或「視訊設定檔」，或您已套用「影像設定檔」或「視訊設定檔」，您仍可隨時對資產的資料夾執行重新處理工作流程。
 
-您可以選擇調整重新處理工作流程的批次大小，從預設的50個資產調整為1000個資產。 當您執行 _Scene7：重新處理資產_ 工作流程在資料夾中，資產會依批次分組，然後傳送至Dynamic Media伺服器以供處理。 處理之後，整個批次集中每個資產的中繼資料會更新於 [!DNL Adobe Experience Manager]. 如果批次大小很大，您可能會遇到處理延遲。 或者，如果批次大小太小，可能會導致Dynamic Media伺服器的往返次數過多。
+您可以選擇調整重新處理工作流程的批次大小，從預設的50個資產調整為1000個資產。 當您執行 _Dynamic Media重新處理_ 工作流程在資料夾中，資產會依批次分組，然後傳送至Dynamic Media伺服器以供處理。 處理之後，整個批次集中每個資產的中繼資料會更新於 [!DNL Adobe Experience Manager]. 如果批次大小很大，您可能會遇到處理延遲。 或者，如果批次大小太小，可能會導致Dynamic Media伺服器的往返次數過多。
 
 另請參閱 [調整重新處理工作流程的批次大小](#adjusting-load).
 
