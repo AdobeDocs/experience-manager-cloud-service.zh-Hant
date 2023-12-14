@@ -2,7 +2,7 @@
 title: 發佈Edge Delivery Services內容
 description: 瞭解內容發佈如何與Edge Delivery Services搭配使用，以及如何使用Edge Delivery Services發佈AEM內容。
 feature: Edge Delivery Services
-source-git-commit: e3bbcfa3fcef1ed1e5b6cf2da5a17c7e636b9539
+source-git-commit: 166525b6987215a64521d1ff63a222187376ba65
 workflow-type: tm+mt
 source-wordcount: '200'
 ht-degree: 0%
@@ -28,7 +28,7 @@ ht-degree: 0%
 1. 內容作者會在通用編輯器中發佈AEM內容。
 1. 發佈事件會推送至Adobe管道佇列。
 1. Edge Delivery Publish服務會將相關事件轉送至Edge Delivery Admin API。
-1. Edge傳送會從AEM作者中提取並擷取語意HTML。
+1. Edge傳送會從AEM Author提取及擷取語意HTML。
 1. AEM已更新發佈狀態。
 
 ## 如何開始使用 {#how-to-get-started}

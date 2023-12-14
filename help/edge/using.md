@@ -3,10 +3,10 @@ title: 使用 Edge Delivery Services
 description: 瞭解如何將AEMas a Cloud Service與Edge Delivery Services搭配使用。
 feature: Edge Delivery Services
 exl-id: 41999302-b4c9-4f5a-b659-6e7398a3c4f4
-source-git-commit: 5197a53b8aa763d7e1b2b2ce9097ee2bc8521dfa
+source-git-commit: 5b24b984ea738096ef67b72a3d96e9b5931d2200
 workflow-type: tm+mt
-source-wordcount: '389'
-ht-degree: 14%
+source-wordcount: '385'
+ht-degree: 15%
 
 ---
 
@@ -14,8 +14,6 @@ ht-degree: 14%
 # 使用 Edge Delivery Services {#usingedge}
 
 透過Edge Delivery Services，您可以建立快速開發環境，讓作者可以快速更新和發佈內容，並快速啟動新網站。 為此，您可以在同一網站上使用多個內容來源，並且無論您選擇何種來源，都可採用無縫且簡化的方式來發佈。因此，從編輯到在網路上查看內容只需幾秒鐘。
-
-## 尋找合適的工具 {#right-tool}
 
 Edge Delivery Services與內容來源是分離的，可擷取不同內容來源的內容。
 
