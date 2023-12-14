@@ -3,10 +3,10 @@ title: Adobe Experience Manager as a Cloud Service 中 Cloud Manager 2023.12.0 �
 description: 以下是 AEM as a Cloud Service 中 Cloud Manager 2023.12.0 的發行說明。
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: 3e7d3113b25e9b4058130bf3352a612f36ef5c63
+source-git-commit: b3a338f469ea04d2c31204149d619931a55f2b24
 workflow-type: tm+mt
-source-wordcount: '772'
-ht-degree: 55%
+source-wordcount: '766'
+ht-degree: 56%
 
 ---
 
@@ -36,7 +36,6 @@ AEMas a Cloud Service中的Cloud Manager版本2023.12.0發行日期是2023年12�
    * 為前端和完整棧疊管道新增了對節點18的支援。
    * Java 8次要版本已更新至 `jdk1.8.0_371`.
    * Java 11次要版本更新至 `jdk-11.0.20`.
-   * 新增對Java 17的支援。
    * Maven已更新至3.8.8版
    * 組建容器基礎影像已更新為Ubuntu 22.04。
 
