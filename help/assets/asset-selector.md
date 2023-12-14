@@ -4,20 +4,19 @@ description: 在應用程式內使用資產選擇器搜尋、查找和檢索資�
 contentOwner: KK
 role: Admin,User
 exl-id: 5f962162-ad6f-4888-8b39-bf5632f4f298
-source-git-commit: f18b8cf1922f05c0d7da2c58fb0a57bc5ff3d3b7
+source-git-commit: e882e89afa213f3423efe497585994eb91186fd7
 workflow-type: tm+mt
 source-wordcount: '2371'
 ht-degree: 91%
 
 ---
 
+# 微前端資產選擇器 {#Overview}
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service  | 本文章 |
 | AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/asset-selector.html?lang=en) |
-
-# 微前端資產選擇器 {#Overview}
+| AEM as a Cloud Service  | 本文章 |
 
 微前端資產選擇器提供一個輕鬆整合 [!DNL Experience Manager Assets as a Cloud Service] 存放庫的使用者介面，讓您可以瀏覽或搜尋存放庫中的可用數位資產，並用於您的應用程式編寫體驗。
 
