@@ -4,9 +4,9 @@ description: 最適化表單提供多個提交動作。提交動作會定義提�
 keywords: 如何選取最適化表單的提交動作、將最適化表單連線至sharepoint清單、將最適化表單連線至sharepoint檔案庫、將最適化表單連線至表單資料模型
 feature: Adaptive Forms, Core Components
 exl-id: 495948e8-30a7-4e7c-952f-c71de15520f0
-source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
+source-git-commit: c2bf362a9949b3d6d427a28821056a0cc9edfa85
 workflow-type: tm+mt
-source-wordcount: '4114'
+source-wordcount: '4102'
 ht-degree: 82%
 
 ---
@@ -171,8 +171,6 @@ ht-degree: 82%
 儲存資料的資料夾結構是 `/folder_name/form_name/year/month/date/submission_id/data`。
 
 ### 將最適化表單連線至Microsoft® SharePoint清單 {#connect-af-sharepoint-list}
-
-<span class="preview">這是一項預先發佈功能，可透過我們的[預先發佈管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features)存取。</span>
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424820/connect-aem-adaptive-form-to-sharepointlist/?quality=12&learn=on)
 
