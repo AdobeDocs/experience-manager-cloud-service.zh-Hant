@@ -2,9 +2,9 @@
 title: 入門
 description: 瞭解在程式碼和內容準備就緒後，如何執行移轉
 exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 75d702cf45e38da4b7259907e7f707b6f18bd428
 workflow-type: tm+mt
-source-wordcount: '1697'
+source-wordcount: '1721'
 ht-degree: 4%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 4%
 
 在這段歷程中，您將瞭解在程式碼和內容準備好移至AEMas a Cloud Service後，如何規劃及執行移轉。 此外，您也會瞭解執行移轉時的最佳實務和已知限制。
 
-## 到目前為止 {#story-so-far}
+## 目前進度 {#story-so-far}
 
 在歷程的前幾個階段中：
 
@@ -152,6 +152,8 @@ ht-degree: 4%
       * TTL是在要求伺服器更新之前DNS記錄保留在快取中的時間。
       * 如果您的TTL非常高，則傳播DNS記錄的更新將需要更長的時間。
 * 執行符合業務需求和目標的效能和安全測試。
+   * 在中繼環境中執行測試。  其大小與生產環境相同。
+   * 開發環境與中繼和生產環境的大小不同。
 * 請剪下資料，並確定實際上線是在沒有任何新部署或內容更新的情況下執行的。
 * 建立Admin Console使用者通知設定檔。 另請參閱 [通知設定檔](/help/journey-onboarding/notification-profiles.md)
 
