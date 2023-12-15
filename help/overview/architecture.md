@@ -2,9 +2,9 @@
 title: Adobe Experience Manager as a Cloud Service 架構簡介
 description: Adobe Experience Manager as a Cloud Service 架構簡介。
 exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 3e40832ee4351c92ffc4eb22540223e331323821
 workflow-type: tm+mt
-source-wordcount: '2658'
+source-wordcount: '2696'
 ht-degree: 98%
 
 ---
@@ -56,9 +56,11 @@ AEM as a Cloud Service 提供四種類型的[環境](/help/implementing/cloud-ma
       * 這與 Adobe 作為維護更新的一部分或透過您的程式碼部署發起的變更無關。
       * 您也可以在程式碼部署時進行手動測試。
    * 中繼環境的內容通常會透過自助內容複製功能與生產內容保持同步。
+   * 在中繼環境中執行效能和安全測試。  其大小與生產環境相同。
 * 開發環境：
    * 開發環境可讓您的開發人員在與中繼和生產環境相同的執行階段條件下，實作和測試 AEM 應用程式。
    * 這些變更是透過部署管道進行，以便具備與生產部署管道相同的程式碼品質和安全閘道。
+   * 開發環境的規模與中繼和生產環境不同，不應該用來進行效能和安全測試。
 * 快速開發環境 (RDE)：
    * 將新的或現有的程式碼部署到 RDE 執行個體時，RDE 環境可進行快速的開發疊代，而無需像一般開發環境那樣透過正式的部署管道。
 
@@ -130,12 +132,12 @@ AEM as a Cloud Service 中的高層級可組合服務清單可以用兩個區段
       * UI 測試 (例如以 Selenium 或 Cypress 指令碼為基礎)、
       * 體驗稽核測試 (例如 Lighthouse 分數)、
 
-     作為 AEM 環境部署管道的一部分，或作為 Edge Delivery 程式碼存放庫之 GitHub 提取請求的一部分。
+     作為 AEM 環境部署管道的一部分，或作為 Edge Delivery 程式碼存放庫之 GitHub 提取要求的一部分。
 * 資料服務：
-   * 負責公開客戶資料，例如授權指標 (例如內容請求、儲存、使用者) 或使用報告 (例如上傳、下載數量)。
+   * 負責公開客戶資料，例如授權指標 (例如內容要求、儲存、使用者) 或使用報告 (例如上傳、下載數量)。
    * 客戶資料可以透過 API 以及在產品使用者介面中 (例如 Cloud Manager) 公開。
 * 真實使用者指標 (RUM) 服務：
-   * 負責從客戶體驗中收集關鍵量度（例如頁面檢視、核心Web存取、轉換事件），以及回應相關查詢（例如過去7天內指定網域的最上層頁面檢視）。
+   * 負責從客戶體驗中收集關鍵量度 (例如頁面瀏覽次數、Core Web Vitals、轉換事件)，並回應相關聯查詢 (例如過去 7 天內指定網域的熱門頁面瀏覽次數)。
 * Assets Compute 服務：
    * 負責處理上傳的影像、影片和文件；例如 PDF 和 Adobe Photoshop 檔案。處理可以使用 Adobe Sensei 擷取影像和影片中繼資料 (例如描述性標籤或原色色調)，然後產生再現 (例如不同的尺寸或格式)，而且可存取 Adobe Photoshop 和 Adobe Lightroom API 等 API。
 * Identity Management Service (IMS)：
@@ -200,7 +202,7 @@ Cloud Manager 會管理 AEM as a Cloud Service 執行個體的所有更新。這
 
 * 由 Adobe 提供，以確保產品完整性
 * 客戶提供的測試
-   * 功能測試：透過向 AEM 製作或發佈層發出 http 請求
+   * 功能測試：透過向 AEM 製作或發佈層發出 http 要求
    * UI 測試：基於 Selenium 或 Cypress 技術
 
 這些自動化測試是在中繼環境中執行──這就是務必使中繼環境內容盡可能接近生產執行個體上之內容的原因。
