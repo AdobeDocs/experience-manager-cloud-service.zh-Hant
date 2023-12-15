@@ -2,10 +2,10 @@
 title: 組建環境
 description: 了解 Cloud Manager 的構建環境以及它如何構建和測試您的程式碼。
 exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
-source-git-commit: 3e7d3113b25e9b4058130bf3352a612f36ef5c63
+source-git-commit: f59959bc10e502d85d3f4797dcf4ad0490d233f4
 workflow-type: tm+mt
-source-wordcount: '1029'
-ht-degree: 92%
+source-wordcount: '1177'
+ht-degree: 80%
 
 ---
 
@@ -20,6 +20,7 @@ Cloud Manager 使用專門的構建環境構建和測試您的程式碼。
 
 * 組建環境以 Linux 為基礎，衍生自 Ubuntu 22.04。
 * 已安裝 Apache Maven 3.8.8。
+   * Adobe推薦使用者 [更新其Maven存放庫以使用HTTPS而不是HTTP。](#https-maven)
 * 已安裝的 Java 版本為 Oracle JDK 8u371 和 Oracle JDK 11.0.20。
 * 根據預設， `JAVA_HOME` 環境變數已設為 `/usr/lib/jvm/jdk1.8.0_371` 其中包含OracleJDK 8u371。 請參閱 [備用Maven執行JDK版本](#alternate-maven-jdk-version) 區段以取得更多詳細資料。
 * 安裝了一些必要的附加系統套件。
@@ -40,6 +41,14 @@ Cloud Manager 使用專門的構建環境構建和測試您的程式碼。
 >[!NOTE]
 >
 >雖然 Cloud Manager 並未定義 `jacoco-maven-plugin` 的特定版本，但使用的版本必須至少為 `0.7.5.201505241946`。
+
+## HTTPS Maven存放庫 {#https-maven}
+
+Cloud Manager [2023.10.0版](/help/implementing/cloud-manager/release-notes/2023/2023-10-0.md) 開始組建環境的滾動更新（完成於2023.12.0版），其中包括Maven 3.8.8的更新。Maven 3.8.1中推出的重大變更是安全性增強功能，旨在減少潛在的弱點。 具體來說，Maven現在會停用所有不安全的專案 `http://*` 預設為映象，如 [Maven發行說明。](http://maven.apache.org/docs/3.8.1/release-notes.html#cve-2021-26291)
+
+由於此安全性增強功能，某些使用者在建置步驟中可能會遇到問題，尤其是從使用不安全HTTP連線的Maven存放庫下載成品時。
+
+為了確保更新版本的順暢體驗，Adobe建議使用者更新其Maven存放庫，以使用HTTPS而非HTTP。 此調整符合業界日益轉向安全通訊協定，並有助於維持安全可靠的建置流程。
 
 ### 使用特定 Java 版本 {#using-java-support}
 
