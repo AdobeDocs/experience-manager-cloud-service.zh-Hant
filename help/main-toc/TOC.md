@@ -583,7 +583,7 @@ ht-degree: 97%
          + [將 AEM Forms as a Cloud Service 與 Adobe Analytics 整合](/help/forms/integrate-aem-forms-with-adobe-analytics.md)
          + [將最適化表單整合至 Adobe Analytics](/help/forms/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.md)
          + [檢視並了解 Adaptive Forms Analytics 報告](/help/forms/view-understand-aem-forms-analytics-reports.md)
-         + [向 Adobe Workfront Fusion 提交調適型表單](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
+         + [向 Adobe Workfront Fusion 提交最適化表單](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
          + [將最適化表單與 Microsoft Power Automate 整合](/help/forms/forms-microsoft-power-automate-integration.md)
          + [在 AEM Sites 頁面中內嵌最適化表單](/help/forms/embed-adaptive-form-aem-sites.md)
          + [將根據核心元件的最適化表單內嵌至外部網頁](/help/forms/embed-adaptive-form-core-components-external-web-page.md)
