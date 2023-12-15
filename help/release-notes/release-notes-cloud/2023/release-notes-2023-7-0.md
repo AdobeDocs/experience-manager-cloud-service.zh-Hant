@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2023.7.0 版發行�
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2023.7.0 版發行說明。'
 exl-id: 7866d94c-e54c-4bb2-aaa6-66c019e46336
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '896'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -80,7 +80,7 @@ Assets Essentials 現在會根據相關性 (依預設) 為搜尋結果進行排�
 
 * [**現成可用的主題**](/help/forms/using-themes-in-core-components.md)**和範本**：使用我們現成的 OOTB 主題和範本啟動您的表單建立流程，這些主題和範本都是專為支援經驗豐富的專業人士和新表單作者量身打造。使用最適化表單元核心元件無縫建置的這些精心策劃的主題和範本，可讓您迅速地開始針對常見使用案例建立表單。
 
-* **[Headless 表單的 React 元件](https://github.com/adobe/aem-forms-headless-components/tree/main/packages/react-vanilla-components)**：您現在可以使用現成的 React 元件預覽和自訂 Headless 最適化表單轉譯。這些元件使用最適化Forms核心元件的BEM類別來設定樣式，讓您輕鬆根據特定需求自訂其外觀。
+* **[Headless 表單的 React 元件](https://github.com/adobe/aem-forms-headless-components/tree/main/packages/react-vanilla-components)**：您現在可以使用現成的 React 元件預覽和自訂 Headless 最適化表單轉譯。這些元件會運用最適化表單核心元件中的 BEM 類別進行樣式設定，讓您能夠輕鬆地根據特定需求自訂其外觀。
 
 * [**建立具有可重複區段的最適化表單**](/help/forms/create-forms-repeatable-sections.md)：您現在可製作可重複進行多筆資料紀錄擷取並以[折疊式](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html)、[精靈](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html)、[面板](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html)和[水平索引標籤](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html)元件為主的最適化表單。這些可重複的區段可讓您輕鬆提供多個資料條目。當無法事先知道需要多少份的資料時，這就非常有用。填表人可輕鬆新增或移除區段，使表單可依不同資料輸入情境進行調整，並簡化相同資料紀錄多次出現的收集作業。
 
