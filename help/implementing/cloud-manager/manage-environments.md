@@ -2,10 +2,10 @@
 title: 管理環境
 description: 了解您可以建立的環境類型，以及如何為您的 Cloud Manager 專案建立環境類型。
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: efca024511b5d79553864fbcefda3649ab7af7b6
 workflow-type: tm+mt
-source-wordcount: '2585'
-ht-degree: 91%
+source-wordcount: '2607'
+ht-degree: 88%
 
 ---
 
@@ -18,9 +18,9 @@ ht-degree: 91%
 
 具有必要權限的使用者可以建立以下環境類型 (在特定租用戶可用的範圍內)。
 
-* **生產 + 測試** - 生產環境和中繼環境組成一組使用，分別用於生產和測試目的。
+* **生產+中繼**  — 生產環境和測試環境組成一組使用，分別用於生產和測試目的。 在中繼環境中執行效能和安全測試。 其大小與生產環境相同。
 
-* **開發** - 可以為開發和測試目的建立開發環境，也可以只與非生產管道相關聯。
+* **開發**  — 可以為開發和測試目的建立開發環境，並且只能與非生產管道相關聯。  開發環境的規模與中繼和生產環境不同，不應該用來進行效能和安全測試。
 
 * **快速開發** - 快速開發環境 (或簡稱 RDE) 可讓開發人員快速部署和查看變動情形，可大幅減少測試已證明可在本機開發環境中執行功能所需的時間。若要深入了解 RDE 的使用方法，請參閱[快速開發環境文件](/help/implementing/developing/introduction/rapid-development-environments.md)。
 
