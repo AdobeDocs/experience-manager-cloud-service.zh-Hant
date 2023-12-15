@@ -6,7 +6,7 @@ exl-id: 03a1aa93-d2e6-4175-9cf3-c7ae25c0d24e
 source-git-commit: 9d26a4835dc331f2ff8b741a4c14847ead611874
 workflow-type: tm+mt
 source-wordcount: '838'
-ht-degree: 48%
+ht-degree: 50%
 
 ---
 
@@ -51,7 +51,7 @@ Edge Delivery Services是Adobe Experience Manager的一部分，因此這些Edge
 
 ## 取得 Adobe 的協助 {#adobe-gethelp}
 
-您可以透過預先被分配的產品協作頻道 (請參閱下文取得存取詳情) 與 Adobe 產品團隊互動，回答有關產品使用或最佳實務的問題。沒有透過產品共同作業管道與交談相關聯的服務等級目標(SLT)。 如果產品問題需要額外的調查和疑難排解，並且必須符合回應SLT，您可以遵循以下內容提交支援票證 [支援程式。](https://experienceleague.adobe.com/?support-tab=home#support)
+您可以透過預先被分配的產品協作頻道 (請參閱下文取得存取詳情) 與 Adobe 產品團隊互動，回答有關產品使用或最佳實務的問題。沒有與透過產品協作頻道進行對話相關的服務層級目標 (SLTs)。如果產品問題需要額外的調查和疑難排解，並且必須符合回應SLT，您可以遵循以下內容提交支援票證 [支援程式。](https://experienceleague.adobe.com/?support-tab=home#support)
 
 Adobe 提供三個頻道來幫助您使用 Edge Delivery Services：
 
