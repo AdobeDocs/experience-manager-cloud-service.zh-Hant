@@ -3,9 +3,9 @@ title: Adobe Experience Manager as a Cloud Service 中 Cloud Manager 2023.12.0 �
 description: 以下是 AEM as a Cloud Service 中 Cloud Manager 2023.12.0 的發行說明。
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: 71ce915413cd968a78a33b7a52d02e09841e1707
+source-git-commit: c0fc4b2ced046a1e975aca99463cdfa03462f2f4
 workflow-type: tm+mt
-source-wordcount: '787'
+source-wordcount: '784'
 ht-degree: 54%
 
 ---
@@ -32,11 +32,11 @@ AEMas a Cloud Service中的Cloud Manager版本2023.12.0發行日期是2023年12�
 * 對於新建立的Cloud Manager計畫， [關聯的New Relic子帳戶](/help/implementing/cloud-manager/user-access-new-relic.md) 預設為未啟用。
    * 若現有方案的New Relic子帳戶超過90天未存取，則會將其停用。
    * 如果您想要使用New Relic子帳戶，則需要透過Cloud Manager選擇加入。
-* Java 8和11次要版本的推出以及maven的更新 [宣佈並從10月版本的Cloud Manager開始](/help/implementing/cloud-manager/release-notes/2023/2023-10-0.md) 已完成。
-   * 為前端和完整棧疊管道新增了對節點18的支援。
+* 將更新轉出到 [組建環境](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) 曾經是 [宣佈並從10月版本的Cloud Manager開始](/help/implementing/cloud-manager/release-notes/2023/2023-10-0.md) 已完成。
+   * 新增對節點18的支援 [前端和完整棧疊管道。](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
    * Java 8次要版本已更新至 `jdk1.8.0_371`.
    * Java 11次要版本更新至 `jdk-11.0.20`.
-   * Maven已更新至3.8.8版
+   * Maven已更新至3.8.8版。
       * Maven現在會停用所有不安全的專案 `http://*` 預設為映象。
       * [Adobe建議](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) 使用者更新其Maven存放庫以使用HTTPS而不是HTTP。
    * 組建容器基礎影像已更新為Ubuntu 22.04。
