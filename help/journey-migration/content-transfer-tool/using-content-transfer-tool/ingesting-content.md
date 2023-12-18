@@ -2,10 +2,10 @@
 title: 將內容引入雲端服務
 description: 瞭解如何使用Cloud Acceleration Manager將移轉集中的內容擷取到目標Cloud Service例項。
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: b674b3d8cd89675ed30c1611edec2281f0f1cb05
+source-git-commit: 4c8565d60ddcd9d0675822f37e77e70dd42c0c36
 workflow-type: tm+mt
-source-wordcount: '2392'
-ht-degree: 4%
+source-wordcount: '2407'
+ht-degree: 5%
 
 ---
 
@@ -78,8 +78,8 @@ ht-degree: 4%
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_ingestion_topup"
 >title="填滿攝入"
->abstract="使用追加功能來移動自上次內容轉移活動以來修改的內容。 擷取完成後，請檢查記錄檔中是否有任何錯誤或警告。 如有任何錯誤應立即處理，方法是處理回報的問題或聯絡 Adobe 客戶服務。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/viewing-logs.html?lang=zh-Hant" text="檢視移轉集的"
+>abstract="使用填滿功能來移動自上次內容轉移活動以來修改的內容。擷取完成後，請檢查記錄檔中是否有任何錯誤或警告。 如有任何錯誤應立即處理，方法是處理回報的問題或聯絡 Adobe 客戶服務。"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/viewing-logs.html?lang=zh-Hant" text="檢視記錄檔"
 
 「內容轉移工具」具備可透過執行 *追加* 移轉集的。 如此可修改移轉集，使其僅包含自上次擷取以來已變更的內容，而無須再次擷取所有內容。
 
@@ -96,8 +96,8 @@ ht-degree: 4%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_ingestion_troubleshooting"
->title="內容擷取疑難排解"
->abstract="請參閱內嵌記錄檔和檔案，尋找內嵌失敗常見原因的解決方案，並尋找修正問題的方法。 在修正後，擷取可以再次執行。"
+>title="內容攝取故障排除"
+>abstract="請參閱內嵌記錄檔和檔案，尋找內嵌失敗常見原因的解決方案，並尋找修正問題的方法。 在修正後，可再次執行內嵌。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers.html" text="驗證內容轉移"
 
 ### CAM無法擷取移轉權杖 {#cam-unable-to-retrieve-the-migration-token}
@@ -159,9 +159,11 @@ ht-degree: 4%
 
 >java.lang.RuntimeException： org.apache.jackrabbit.oak.api.CommitFailedException： OakConstraint0030：違反唯一性條件約束 [jcr：uuid] 具有值a1a1a1a1-b2b2-c3c3-d4d4-e5e5e5e5： /some/path/jcr：content， /some/other/path/jcr：content
 
-AEM中的每個節點都必須有唯一的uuid。 此錯誤指出正在內嵌的節點與目的地執行個體不同路徑的其他位置所具有的uuid相同。
-如果在擷取和後續作業之間在來源上移動節點，便會發生此情況 [追加提取](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process).
-如果目的地上的節點在擷取與後續追加擷取之間移動，也可能會發生這種情況。
+AEM中的每個節點都必須有唯一的uuid。 此錯誤指出正在擷取的節點與目的地執行個體上不同路徑中存在的節點具有相同的uuid。 發生此狀況有兩個原因：
+
+* 節點會在擷取和後續作業之間移動至來源上 [追加提取](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process)
+   * _記住_：針對追加提取，即使節點已不存在於來源中，該節點仍將存在於移轉集中。
+* 目的地上的節點會在擷取與後續追加擷取之間移動。
 
 此衝突必須手動解決。 熟悉內容的人必須決定必須刪除兩個節點中的哪一個，同時留意參考該內容的其他內容。 解決方案可能要求再次執行追加擷取，而不需要違反規定的節點。
 
@@ -171,7 +173,7 @@ AEM中的每個節點都必須有唯一的uuid。 此錯誤指出正在內嵌的
 
 >java.lang.RuntimeException： org.apache.jackrabbit.oak.api.CommitFailedException： OakIntegrity0001：無法刪除參照的節點： 8a2289f4-b904-4bd0-8410-15e41e0976a8
 
-如果目的地的節點在內嵌和後續內嵌之間被修改，就可能發生這種情況 **非擦去** 內嵌，使得已建立新版本。 如果在啟用「包含版本」的情況下擷取移轉集，則可能會發生衝突，因為目的地現在具有由版本記錄和其他內容參考的更新版本。 由於正在參考違規版本節點，擷取程式無法刪除該節點。
+如果目的地的節點在內嵌和後續內嵌之間被修改，就可能發生這種情況 **非擦去** 內嵌，使得已建立新版本。 如果在啟用「包含版本」的情況下擷取移轉集，則可能會發生衝突，因為目的地現在具有由版本記錄和其他內容參考的更新版本。 由於違規版本節點被引用，擷取程式無法刪除該節點。
 
 解決方案可能要求再次執行追加擷取，而不需要違反規定的節點。 或者，建立違規節點的小型移轉集，但停用「包含版本」。
 
@@ -179,7 +181,7 @@ AEM中的每個節點都必須有唯一的uuid。 此錯誤指出正在內嵌的
 
 ### 由於大型節點屬性值而導致擷取失敗 {#ingestion-failure-due-to-large-node-property-values}
 
-儲存在MongoDB中的節點屬性值不能超過16 MB。 如果節點值超過支援的大小，擷取會失敗，且記錄會包含 `BSONObjectTooLarge` 錯誤並指定哪個節點超過最大值。 請注意，這是MongoDB限制。
+儲存在MongoDB中的節點屬性值不能超過16 MB。 如果節點值超過支援的大小，擷取會失敗，且記錄會包含 `BSONObjectTooLarge` 錯誤並指定哪個節點超過最大值。 這是MongoDB限制。
 
 請參閱 `Node property value in MongoDB` 中的附註 [內容轉移工具的先決條件](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md) 以取得詳細資訊，以及可協助尋找所有大型節點的Oak工具連結。 修正所有大型節點後，請再次執行擷取和擷取。
 
