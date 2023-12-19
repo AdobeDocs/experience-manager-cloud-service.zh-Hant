@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的目前維護版本發行說明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的目前維護版本發行說明。'
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: db0f60537a65c426dae88b5440622c9034c736e2
+source-git-commit: 4fc676bd975e44234b478ba57f12cbf0f4f5ba45
 workflow-type: tm+mt
-source-wordcount: '355'
-ht-degree: 91%
+source-wordcount: '371'
+ht-degree: 87%
 
 ---
 
@@ -39,6 +39,7 @@ ht-degree: 91%
 * ASSETS-31297：阻止從動態媒體中刪除複製的資產。
 * ASSETS-30811：Blocktag 服務繫結的參考更新。
 * GRANITE-46418：更新 AEM 中的 Sling 事件：GaugeSupport 在 registerWithSuffix 中具有無限遞迴 (SLING-11918)。
+* GRANITE-48937：修正Omnisearch無法在aem/start.html頁面上運作的維護版本14538本回歸。
 
 ### 已知問題 {#known-issues-14697}
 
