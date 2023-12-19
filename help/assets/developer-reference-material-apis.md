@@ -5,10 +5,10 @@ contentOwner: AG
 feature: APIs,Assets HTTP API
 role: Developer,Architect,Admin
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: a63a237e8da9260fa5f88060304b8cf9f508da7f
+source-git-commit: 5acbd7a56f18ee4c3d8b8f04ab17ad44fe6f0647
 workflow-type: tm+mt
-source-wordcount: '1899'
-ht-degree: 6%
+source-wordcount: '1931'
+ht-degree: 7%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 6%
 | 支援等級 | 說明 |
 | ------------- | --------------------------- |
 | ✓ | 支援 |
-| × | 不支援. 請勿使用。 |
+| × | 不支援。 請勿使用。 |
 | - | 不可用 |
 
 | 使用案例 | [aem-upload](https://github.com/adobe/aem-upload) | [Experience Manager / Sling / JCR](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html) Java API | [asset compute服務](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html) | [[!DNL Assets] HTTP API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html#create-an-asset) | Sling [GET](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) / [POST](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html) servlet | [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) |
@@ -97,8 +97,8 @@ ht-degree: 6%
 
 請求內文的內容型別應為 `application/x-www-form-urlencoded` 表單資料，包含下列欄位：
 
-* `(string) fileName`: 必填. 資產在中出現的名稱 [!DNL Experience Manager].
-* `(number) fileSize`: 必填. 上傳資產的檔案大小（位元組）。
+* `(string) fileName`：必填。 資產在中出現的名稱 [!DNL Experience Manager].
+* `(number) fileSize`：必填。 上傳資產的檔案大小（位元組）。
 
 只要每個二進位檔案都包含必要欄位，就可以使用單一要求來起始多個二進位檔案的上傳。 如果成功，請求會回應 `201` 狀態代碼和包含下列格式JSON資料的內文：
 
@@ -165,7 +165,7 @@ CDN邊緣節點有助於加速要求的二進位檔上傳。
 
 上傳二進位檔案的所有部分後，將HTTPPOST請求提交至初始化資料提供的完整URI。 請求內文的內容型別應為 `application/x-www-form-urlencoded` 表單資料，包含下列欄位。
 
-| 欄位 | 類型 | 必要 或非 | 說明 |
+| 欄位 | 類型 | 必要與否 | 說明 |
 |---|---|---|---|
 | `fileName` | 字串 | 必填 | 由初始資料提供的資產名稱。 |
 | `mimeType` | 字串 | 必填 | 由起始資料提供的二進位檔的HTTP內容型別。 |
@@ -185,7 +185,244 @@ CDN邊緣節點有助於加速要求的二進位檔上傳。
 
 在呼叫檔案的完整URL之前，不會完成上傳二進位檔的程式。 資產會在上傳程式完成後處理。 即使資產的二進位檔案已完全上傳，但上傳程式未完成，處理作業也不會開始。 如果上傳成功，伺服器會以回應 `200` 狀態代碼。
 
-### 開放原始碼上傳庫 {#open-source-upload-library}
+### 將資產上傳至AEMas a Cloud Service的範例殼層指令碼 {#upload-assets-shell-script}
+
+以下範例shell-script說明在AEMas a Cloud Service中直接二進位存取的多步驟上傳程式 `aem-upload.sh`：
+
+```bash
+#!/bin/bash
+
+# Check if pv is installed
+if ! command -v pv &> /dev/null; then
+    echo "Error: 'pv' command not found. Please install it before running the script."
+    exit 1
+fi
+
+# Check if jq is installed
+if ! command -v jq &> /dev/null; then
+    echo "Error: 'jq' command not found. Please install it before running the script."
+    exit 1
+fi
+
+# Set DEBUG to true to enable debug statements
+DEBUG=true
+
+# Function for printing debug statements
+function debug() {
+    if [ "${DEBUG}" = true ]; then
+        echo "[DEBUG] $1"
+    fi
+}
+
+# Function to check if a file exists
+function file_exists() {
+    [ -e "$1" ]
+}
+
+# Function to check if a path is a directory
+function is_directory() {
+    [ -d "$1" ]
+}
+
+# Check if the required number of parameters are provided
+if [ "$#" -ne 4 ]; then
+    echo "Usage: $0 <aem-url> <asset-folder> <file-to-upload> <bearer-token>"
+    exit 1
+fi
+
+AEM_URL="$1"
+ASSET_FOLDER="$2"
+FILE_TO_UPLOAD="$3"
+BEARER_TOKEN="$4"
+
+# Extracting file name or folder name from the file path
+NAME=$(basename "${FILE_TO_UPLOAD}")
+
+# Step 1: Check if "file-to-upload" is a folder
+if is_directory "${FILE_TO_UPLOAD}"; then
+    echo "Uploading files from the folder recursively..."
+    
+    # Recursively upload files in the folder
+    find "${FILE_TO_UPLOAD}" -type f | while read -r FILE_PATH; do
+        FILE_NAME=$(basename "${FILE_PATH}")
+        debug "Uploading file: ${FILE_PATH}"
+        
+        # You can choose to initiate upload for each file here
+        # For simplicity, let's assume you use the same ASSET_FOLDER for all files
+        ./aem-upload.sh "${AEM_URL}" "${ASSET_FOLDER}" "${FILE_PATH}" "${BEARER_TOKEN}"
+    done
+else
+    # "file-to-upload" is a single file
+    FILE_NAME="${NAME}"
+
+    # Step 2: Calculate File Size
+    FILE_SIZE=$(stat -c %s "${FILE_TO_UPLOAD}")
+
+    # Step 3: Initiate Upload
+    INITIATE_UPLOAD_ENDPOINT="${AEM_URL}/content/dam/${ASSET_FOLDER}.initiateUpload.json"
+
+    debug "Initiating upload..."
+    debug "Initiate Upload Endpoint: ${INITIATE_UPLOAD_ENDPOINT}"
+    debug "File Name: ${FILE_NAME}"
+    debug "File Size: ${FILE_SIZE}"
+
+    INITIATE_UPLOAD_RESPONSE=$(curl -X POST \
+        -H "Authorization: Bearer ${BEARER_TOKEN}" \
+        -H "Content-Type: application/x-www-form-urlencoded; charset=UTF-8" \
+        -d "fileName=${FILE_NAME}" \
+        -d "fileSize=${FILE_SIZE}" \
+        ${INITIATE_UPLOAD_ENDPOINT})
+
+    # Continue with the rest of the script...
+fi
+
+
+# Check if the response body contains the specified HTML content for a 404 error
+if echo "${INITIATE_UPLOAD_RESPONSE}" | grep -q "<title>404 Specified folder not found</title>"; then
+    echo "Folder not found. Creating the folder..."
+
+    # Attempt to create the folder
+    CREATE_FOLDER_ENDPOINT="${AEM_URL}/api/assets/${ASSET_FOLDER}"
+
+    debug "Creating folder..."
+    debug "Create Folder Endpoint: ${CREATE_FOLDER_ENDPOINT}"
+
+    CREATE_FOLDER_RESPONSE=$(curl -X POST \
+        -H "Content-Type: application/json" \
+        -H "Authorization: Bearer ${BEARER_TOKEN}" \
+        -d '{"class":"'${ASSET_FOLDER}'","properties":{"title":"'${ASSET_FOLDER}'"}}' \
+        ${CREATE_FOLDER_ENDPOINT})
+
+    # Check the response code and inform the user accordingly
+    STATUS_CODE_CREATE_FOLDER=$(echo "${CREATE_FOLDER_RESPONSE}" | jq -r '.properties."status.code"')
+    case ${STATUS_CODE_CREATE_FOLDER} in
+        201)
+            echo "Folder created successfully. Initiating upload again..."
+
+            # Retry Initiate Upload after creating the folder
+            INITIATE_UPLOAD_RESPONSE=$(curl -X POST \
+                -H "Authorization: Bearer ${BEARER_TOKEN}" \
+                -H "Content-Type: application/x-www-form-urlencoded; charset=UTF-8" \
+                -d "fileName=${FILE_NAME}" \
+                -d "fileSize=${FILE_SIZE}" \
+                ${INITIATE_UPLOAD_ENDPOINT})
+            ;;
+        409)
+            echo "Error: Folder already exists."
+            ;;
+        412)
+            echo "Error: Precondition failed. Root collection cannot be found or accessed."
+            exit 1
+            ;;
+        500)
+            echo "Error: Internal Server Error. Something went wrong."
+            exit 1
+            ;;
+        *)
+            echo "Error: Unexpected response code ${STATUS_CODE_CREATE_FOLDER}"
+            exit 1
+            ;;
+    esac
+fi
+
+# Extracting values from the response
+FOLDER_PATH=$(echo "${INITIATE_UPLOAD_RESPONSE}" | jq -r '.folderPath')
+UPLOAD_URIS=($(echo "${INITIATE_UPLOAD_RESPONSE}" | jq -r '.files[0].uploadURIs[]'))
+UPLOAD_TOKEN=$(echo "${INITIATE_UPLOAD_RESPONSE}" | jq -r '.files[0].uploadToken')
+MIME_TYPE=$(echo "${INITIATE_UPLOAD_RESPONSE}" | jq -r '.files[0].mimeType')
+MIN_PART_SIZE=$(echo "${INITIATE_UPLOAD_RESPONSE}" | jq -r '.files[0].minPartSize')
+MAX_PART_SIZE=$(echo "${INITIATE_UPLOAD_RESPONSE}" | jq -r '.files[0].maxPartSize')
+COMPLETE_URI=$(echo "${INITIATE_UPLOAD_RESPONSE}" | jq -r '.completeURI')
+
+# Extracting "Affinity-cookie" from the response headers
+AFFINITY_COOKIE=$(echo "${INITIATE_UPLOAD_RESPONSE}" | grep -i 'Affinity-cookie' | awk '{print $2}')
+
+debug "Folder Path: ${FOLDER_PATH}"
+debug "Upload Token: ${UPLOAD_TOKEN}"
+debug "MIME Type: ${MIME_TYPE}"
+debug "Min Part Size: ${MIN_PART_SIZE}"
+debug "Max Part Size: ${MAX_PART_SIZE}"
+debug "Complete URI: ${COMPLETE_URI}"
+debug "Affinity Cookie: ${AFFINITY_COOKIE}"
+if $DEBUG; then
+    i=1
+    for UPLOAD_URI in "${UPLOAD_URIS[@]}"; do
+        debug "Upload URI $i: "$UPLOAD_URI
+        i=$((i+1))
+    done
+fi
+
+
+# Calculate the number of parts needed
+NUM_PARTS=$(( (FILE_SIZE + MAX_PART_SIZE - 1) / MAX_PART_SIZE ))
+debug "Number of Parts: $NUM_PARTS"
+
+# Calculate the part size for the last chunk
+LAST_PART_SIZE=$(( FILE_SIZE % MAX_PART_SIZE ))
+if [ "${LAST_PART_SIZE}" -eq 0 ]; then
+    LAST_PART_SIZE=${MAX_PART_SIZE}
+fi
+
+# Step 4: Upload binary to the blob store in parts
+PART_NUMBER=1
+for i in $(seq 1 $NUM_PARTS); do
+    PART_SIZE=${MAX_PART_SIZE}
+    if [ ${PART_NUMBER} -eq ${NUM_PARTS} ]; then
+        PART_SIZE=${LAST_PART_SIZE}
+        debug "Last part size: ${PART_SIZE}"
+    fi
+
+    PART_FILE="/tmp/${FILE_NAME}_part${PART_NUMBER}"
+
+    # Creating part file 
+    SKIP=$((PART_NUMBER - 1))
+    SKIP=$((MAX_PART_SIZE * SKIP))
+    dd if="${FILE_TO_UPLOAD}" of="${PART_FILE}"  bs="${PART_SIZE}" skip="${SKIP}" count="${PART_SIZE}" iflag=skip_bytes,count_bytes  > /dev/null 2>&1
+    debug "Creating part file: ${PART_FILE} with size ${PART_SIZE}, skipping first ${SKIP} bytes."
+
+    
+    UPLOAD_URI=${UPLOAD_URIS[$PART_NUMBER-1]}
+
+    debug "Uploading part ${PART_NUMBER}..."
+    debug "Part Size: $PART_SIZE"
+    debug "Part File: ${PART_FILE}"
+    debug "Part File Size: $(stat -c %s "${PART_FILE}")"
+    debug "Upload URI: ${UPLOAD_URI}"
+
+    # Upload the part in the background
+    if command -v pv &> /dev/null; then
+        pv "${PART_FILE}" | curl --progress-bar -X PUT --data-binary "@-" "${UPLOAD_URI}" &
+    else
+        curl -# -X PUT --data-binary "@${PART_FILE}" "${UPLOAD_URI}" &
+    fi
+
+    PART_NUMBER=$((PART_NUMBER + 1))
+done
+
+# Wait for all background processes to finish
+wait
+
+# Step 5: Complete the upload in AEM
+COMPLETE_UPLOAD_ENDPOINT="${AEM_URL}${COMPLETE_URI}"
+
+debug "Completing the upload..."
+debug "Complete Upload Endpoint: ${COMPLETE_UPLOAD_ENDPOINT}"
+
+RESPONSE=$(curl -X POST \
+    -H "Authorization: Bearer ${BEARER_TOKEN}" \
+    -H "Content-Type: application/x-www-form-urlencoded; charset=UTF-8" \
+    -H "Affinity-cookie: ${AFFINITY_COOKIE}" \
+    --data-urlencode "uploadToken=${UPLOAD_TOKEN}" \
+    --data-urlencode "fileName=${FILE_NAME}" \
+    --data-urlencode "mimeType=${MIME_TYPE}" \
+    "${COMPLETE_UPLOAD_ENDPOINT}")
+    
+debug $RESPONSE
+
+echo "File upload completed successfully."
+```
+
+### 開放原始碼上傳程式庫 {#open-source-upload-library}
 
 若要深入瞭解上傳演演算法，或若要建置您自己的上傳指令碼和工具，Adobe提供開放原始碼程式庫和工具：
 
