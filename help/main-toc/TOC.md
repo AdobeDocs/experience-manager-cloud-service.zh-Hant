@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的運作方式以及該軟體可以為您做哪些事。
 breadcrumb-title: 使用手冊
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 7734a0f476d6f5a4e8f15ee3c0e6a9d89797b2b9
+source-git-commit: c54ef4f80703497e9f26847be2fe99867b74c094
 workflow-type: tm+mt
-source-wordcount: '4557'
-ht-degree: 97%
+source-wordcount: '4556'
+ht-degree: 99%
 
 ---
 
@@ -486,7 +486,7 @@ ht-degree: 97%
       + [設定 Dynamic Media 別名帳戶](/help/assets/dynamic-media/dm-alias-account.md)
       + [Dynamic Media 無障礙內容](/help/assets/dynamic-media/accessibility-dm.md)
       + [管理 Dynamic Media 資產](/help/assets/dynamic-media/managing-assets.md)
-      + [影像品質最佳化的最佳作法](/help/assets/dynamic-media/best-practices-for-optimizing-the-quality-of-your-images.md)
+      + [影像品質最佳化的最佳做法](/help/assets/dynamic-media/best-practices-for-optimizing-the-quality-of-your-images.md)
       + [影像設定檔](/help/assets/dynamic-media/image-profiles.md)
       + [視訊設定檔](/help/assets/dynamic-media/video-profiles.md)
       + [管理 Dynamic Media 影像預設集](/help/assets/dynamic-media/managing-image-presets.md)
@@ -543,9 +543,9 @@ ht-degree: 97%
       + [查看資產、資料夾和集合](/help/assets/manage-notifications-assets-view.md)
       + [管理報告](/help/assets/manage-reports-assets-view.md)
       + [管理標記](/help/assets/tagging-management-assets-view.md)
-   + 最佳實務{#best-practices}
-      + [搜尋最佳實務](/help/assets/search-best-practices.md)
-      + [中繼資料管理和最佳實務](/help/assets/metadata-best-practices.md)
+   + 最佳做法{#best-practices}
+      + [搜尋最佳做法](/help/assets/search-best-practices.md)
+      + [中繼資料管理和最佳做法](/help/assets/metadata-best-practices.md)
    + 與 Adobe Workfront 整合 {#integrations}
       + [與  [!DNL Adobe Workfront] 整合](/help/assets/workfront-integrations.md)
       + [設定資產中繼資料對應](/help/assets/configure-asset-metadata-mapping.md)
@@ -757,56 +757,55 @@ ht-degree: 97%
    + [移轉](/help/commerce-cloud/migration.md)
    + [常見問題集](/help/commerce-cloud/faq.md)
 + Edge Delivery Services {#edge-delivery}
-   + [AEM與Edge Delivery Services](/help/edge/overview.md)
+   + [AEM 和 Edge Delivery Services](/help/edge/overview.md)
    + [使用 Edge Delivery](/help/edge/using.md)
-   + [為Edge Delivery製作內容](/help/edge/authoring.md)
-   + [發佈Edge傳送的內容](/help/edge/publishing.md)
-   + [為Edge Delivery開發](/help/edge/developing.md)
-   + [現有專案和Edge傳送](/help/edge/existing-projects.md)
-   + 建置Edge Delivery應用程式 {#build}
-      + [快速入門 — 開發人員教學課程](/help/edge/developer/tutorial.md)
+   + [為 Edge Delivery 編寫內容](/help/edge/authoring.md)
+   + [為 Edge Delivery 發佈內容](/help/edge/publishing.md)
+   + [為 Edge Delivery 開發](/help/edge/developing.md)
+   + [現有專案和 Edge Delivery](/help/edge/existing-projects.md)
+   + 建置 Edge Delivery 應用程式 {#build}
+      + [快速入門 - 開發人員教學課程](/help/edge/developer/tutorial.md)
       + [專案剖析](/help/edge/developer/anatomy-of-a-franklin-project.md)
-      + [封鎖集合](/help/edge/developer/block-collection.md)
+      + [區塊集合](/help/edge/developer/block-collection.md)
       + [試算表](/help/edge/developer/spreadsheets.md)
       + [Forms](/help/edge/developer/forms.md)
       + [索引](/help/edge/developer/indexing.md)
-      + [保持為100](/help/edge/developer/keeping-it-100.md)
-      + [標籤 — 區段](/help/edge/developer/markup-sections-blocks.md)
-      + [法維孔](/help/edge/developer/favicon.md)
+      + [保持 100](/help/edge/developer/keeping-it-100.md)
+      + [標記 - 區段](/help/edge/developer/markup-sections-blocks.md)
+      + [Favicon](/help/edge/developer/favicon.md)
       + [自訂標頭](/help/edge/docs/custom-headers.md)
-      + [適用於開發人員的最佳實務](/help/edge/docs/dev-collab-and-good-practices.md)
-   + 發佈Edge Delivery應用程式 {#publish}
+      + [開發人員最佳做法](/help/edge/docs/dev-collab-and-good-practices.md)
+   + 發佈 Edge Delivery 應用程式  {#publish}
       + [編寫](/help/edge/docs/authoring.md)
       + [大量中繼資料](/help/edge/docs/bulk-metadata.md)
-      + [Slack機器人](/help/edge/docs/slack.md)
       + [預留位置](/help/edge/docs/placeholders.md)
       + [Sitemap](/help/edge/developer/sitemap.md)
-      + [SharePoint設定](/help/edge/docs/setup-customer-sharepoint.md)
-   + 啟動Edge Delivery Applications {#launch}
+      + [SharePoint 設定](/help/edge/docs/setup-customer-sharepoint.md)
+   + 啟動 Edge Delivery 應用程式 {#launch}
       + [上線檢查清單](/help/edge/docs/go-live-checklist.md)
       + [推送失效](/help/edge/docs/setup-byo-cdn-push-invalidation.md)
-      + [Cloudflare Worker設定](/help/edge/docs/byo-cdn-cloudflare-worker-setup.md)
-      + [Akamai設定](/help/edge/docs/byo-cdn-akamai-setup.md)
-      + [Fastly設定](/help/edge/docs/byo-cdn-fastly-setup.md)
+      + [Cloudflare Worker 設定](/help/edge/docs/byo-cdn-cloudflare-worker-setup.md)
+      + [Akamai 設定](/help/edge/docs/byo-cdn-akamai-setup.md)
+      + [快速設定](/help/edge/docs/byo-cdn-fastly-setup.md)
       + [重新導向](/help/edge/docs/redirects.md)
-   + Edge Delivery的資源 {#resources}
+   + Edge Delivery 資源 {#resources}
       + Sidekick {#sidekick}
-         + [使用Sidekick](/help/edge/docs/sidekick.md)
+         + [使用 Sidekick](/help/edge/docs/sidekick.md)
          + [安裝擴充功能](/help/edge/docs/sidekick-extension.md)
-         + [專案設定程式](https://www.aem.live/tools/sidekick/)
-         + [Sidekick庫](/help/edge/docs/sidekick-library.md)
+         + [專案設定器](https://www.aem.live/tools/sidekick/)
+         + [Sidekick 庫](/help/edge/docs/sidekick-library.md)
       + [常見問題集](/help/edge/docs/faq.md)
-      + [管理API](https://www.aem.live/docs/admin.html)
-      + [status.hlx.live](https://status.hlx.live/history)
+      + [管理 API](https://www.aem.live/docs/admin.html)
+      + [AEM狀態](https://www.aemstatus.net)
       + 工具 {#tools}
-         + [Sidekick Chrome擴充功能](https://chrome.google.com/webstore/detail/aem-sidekick/ccfggkjabjahcjoljmgmklhpaccedipo)
-         + [Github機器人](https://github.com/apps/aem-code-sync)
+         + [Sidekick Chrome 擴充功能](https://chrome.google.com/webstore/detail/aem-sidekick/ccfggkjabjahcjoljmgmklhpaccedipo)
+         + [Github 機器人](https://github.com/apps/aem-code-sync)
          + [稽核記錄](/help/edge/docs/auditlog.md)
 + Headless {#headless}
    + [什麼是 Headless CMS？](/help/headless/what-is-headless.md)
    + [AEM Headless 簡介](/help/headless/introduction.md)
    + [開發人員入口網站 (其他資源)](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
-   + [最佳實務 - 設定和使用](/help/headless/best-practices-setup-use.md)
+   + [最佳做法 - 設定和使用](/help/headless/best-practices-setup-use.md)
    + 設定 {#setup}
       + [簡介](/help/headless/setup/introduction.md)
       + [設定](/help/headless/setup/create-configuration.md)
@@ -831,7 +830,7 @@ ht-degree: 97%
       + [最佳化 GraphQL 查詢](/help/headless/graphql-api/graphql-optimization.md)
       + [更新您的內容片段，以達到最佳化 GraphQL 篩選](/help/headless/graphql-api/graphql-optimized-filtering-content-update.md)
       + [範例 GraphQL 查詢](/help/headless/graphql-api/sample-queries.md)
-      + [疑難排解GraphQL查詢](/help/headless/graphql-api/persisted-queries-troubleshoot.md)
+      + [疑難排解 GraphQL 查詢](/help/headless/graphql-api/persisted-queries-troubleshoot.md)
    + [內容片段 REST API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/assets-api-content-fragments.html)
    + 安全性 {#security}
       + [權限](/help/headless/security/permissions.md)
@@ -1095,7 +1094,7 @@ ht-degree: 97%
    + [自助服務還原](/help/operations/restore.md)
    + [非同步作業](/help/operations/asynchronous-jobs.md)
    + [移除一般 lucene 索引](/help/operations/removal-generic-lucene-index.md)
-   + [查詢和建立索引最佳實務](/help/operations/query-and-indexing-best-practices.md)
+   + [查詢和編製索引最佳做法](/help/operations/query-and-indexing-best-practices.md)
 + 合規性 {#compliance}
    + [AEM as a Cloud Service 合規性](/help/compliance/home.md)
    + 資料隱私權和保護整備 {#data-privacy}
