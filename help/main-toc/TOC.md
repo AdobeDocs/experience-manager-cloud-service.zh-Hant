@@ -759,7 +759,7 @@ ht-degree: 99%
 + Edge Delivery Services {#edge-delivery}
    + [AEM 和 Edge Delivery Services](/help/edge/overview.md)
    + [使用 Edge Delivery](/help/edge/using.md)
-   + [為 Edge Delivery 編寫內容](/help/edge/authoring.md)
+   + [為 Edge Delivery 製作內容](/help/edge/authoring.md)
    + [為 Edge Delivery 發佈內容](/help/edge/publishing.md)
    + [為 Edge Delivery 開發](/help/edge/developing.md)
    + [現有專案和 Edge Delivery](/help/edge/existing-projects.md)
@@ -768,15 +768,15 @@ ht-degree: 99%
       + [專案剖析](/help/edge/developer/anatomy-of-a-franklin-project.md)
       + [區塊集合](/help/edge/developer/block-collection.md)
       + [試算表](/help/edge/developer/spreadsheets.md)
-      + [Forms](/help/edge/developer/forms.md)
-      + [索引](/help/edge/developer/indexing.md)
+      + [表單](/help/edge/developer/forms.md)
+      + [建立索引](/help/edge/developer/indexing.md)
       + [保持 100](/help/edge/developer/keeping-it-100.md)
       + [標記 - 區段](/help/edge/developer/markup-sections-blocks.md)
       + [Favicon](/help/edge/developer/favicon.md)
       + [自訂標頭](/help/edge/docs/custom-headers.md)
       + [開發人員最佳做法](/help/edge/docs/dev-collab-and-good-practices.md)
    + 發佈 Edge Delivery 應用程式  {#publish}
-      + [編寫](/help/edge/docs/authoring.md)
+      + [製作](/help/edge/docs/authoring.md)
       + [大量中繼資料](/help/edge/docs/bulk-metadata.md)
       + [預留位置](/help/edge/docs/placeholders.md)
       + [Sitemap](/help/edge/developer/sitemap.md)
@@ -1085,7 +1085,7 @@ ht-degree: 99%
 + 運作 {#operations}
    + [AEM as a Cloud Service 之運作與維護](/help/operations/home.md)
    + [行動中心](/help/operations/actions-center.md)
-   + [內容搜尋與索引](/help/operations/indexing.md)
+   + [內容搜尋與建立索引](/help/operations/indexing.md)
    + [內容複寫服務](/help/operations/replication.md)
    + [額外發佈區域](/help/operations/additional-publish-regions.md)
    + [AEM as a Cloud Service 中的基礎結構和服務監視](/help/operations/monitoring.md)
@@ -1094,7 +1094,7 @@ ht-degree: 99%
    + [自助服務還原](/help/operations/restore.md)
    + [非同步作業](/help/operations/asynchronous-jobs.md)
    + [移除一般 lucene 索引](/help/operations/removal-generic-lucene-index.md)
-   + [查詢和編製索引最佳做法](/help/operations/query-and-indexing-best-practices.md)
+   + [查詢和建立索引最佳做法](/help/operations/query-and-indexing-best-practices.md)
 + 合規性 {#compliance}
    + [AEM as a Cloud Service 合規性](/help/compliance/home.md)
    + 資料隱私權和保護整備 {#data-privacy}
