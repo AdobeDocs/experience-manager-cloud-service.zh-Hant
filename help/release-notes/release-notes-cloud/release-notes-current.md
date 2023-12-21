@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 最新發行說明�
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 最新發行說明。'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: a5121436b2e48302fcf14478764aede1495e089c
+source-git-commit: 17903c6e44afd1742d21b7fc7dbe4d7c63fe8b6b
 workflow-type: tm+mt
-source-wordcount: '769'
-ht-degree: 71%
+source-wordcount: '828'
+ht-degree: 93%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 71%
 
 ## 發行日期 {#release-date}
 
-的發行日期 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 目前功能版本(2023.12.0)為2023年12月14日。 下一個功能版本(2024.1.0)計畫於2023年1月25日發行。
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 目前功能版本 (2023.12.0) 的發行日期是 2023 年 12 月 14 日。下一個功能版本 (2024.1.0) 規劃於 2024 年 1 月 25 日發行。
 
 ## 維護版本發行說明 {#maintenance}
 
@@ -44,22 +44,30 @@ Have a look at the December 2023 Release Overview video for a summary of the fea
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
-### 早期採用者計畫 {#sites-early-adopter}
+### 早期採用者計劃 {#sites-early-adopter}
 
-**您可以善用 [Real User Monitoring (RUM)資料服務](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)** 啟用AEMas a Cloud Service的使用者端集合。
+**您可以利用[真實使用者監控 (RUM) 資料服務](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)**&#x200B;為 AEM as a Cloud Service 啟用用戶端彙集。
 
-Real User Monitoring (RUM) Data Service提供更精確的使用者互動反映，確保可靠衡量網站參與度。 這是取得頁面效能進階深入分析的絕佳機會。 這雖然對使用Adobe管理的CDN或非Adobe管理的CDN的客戶有益。 此外，對於使用非Adobe託管CDN的客戶，現在可為其啟用自動化流量報告，因此無需與Adobe共用任何流量報告。
+真實使用者監控 (RUM) 資料服務可以更準確地反映使用者互動，確保可靠地測量網站參與度。這是深入了解頁面效能的絕佳機會。這對於使用 Adobe 管理 CDN 或非 Adobe 管理 CDN 的客戶很有幫助。此外，對於使用非 Adobe 管理 CDN 的客戶，現在可以啟用自動流量報告，而無需與 Adobe 共享任何流量報告。
 
-如果您有興趣測試這項新功能並分享您的回饋意見，請傳送電子郵件至 `aemcs-rum-adopter@adobe.com`，以及您與Adobe ID相關聯之電子郵件地址中的生產、測試和開發環境網域名稱。 接著Adobe的產品團隊將為您啟用Real User Monitoring (RUM)資料服務。
+如果您有興趣測試此新功能並分享意見反應，請使用與您的 Adobe ID 相關聯的電子郵件地址傳送電子郵件至 `aemcs-rum-adopter@adobe.com`，並在電子郵件中附上生產、階段和開發環境的網域名稱。Adobe 的產品團隊隨後會為您啟用真實使用者監控 (RUM) 資料服務。
 
-
-<!--
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### New Features in Admin View {#admin-view-features}
+### Assets檢視中的新功能 {#assets-view-features}
 
+**使用Adobe Firefly建立GenAI影像**
 
+根據搜尋查詢建立新影像，並整合Adobe Firefly文字對影像功能(需要Adobe Firefly授權)。
+
+![資產Firefly整合](/help/assets/assets/assets-firefly-integration.png)
+
+**尋找類似影像**
+
+您現在可以選取影像並在Experience Manager Assets存放庫中檢視類似影像，輕鬆找到內容。
+
+<!--
 
 * **Smart tags blocklist**: Experience Manager Assets now enables you to define a list of blocked tags. These tags are automatically removed from the auto-generated smart tags when you upload assets to the repository. This capability performs tags governance and saves a lot of time as you can add a tag to the block list and AEM Assets automatically excludes it from the list of tags for any of the assets that are added to the repository.
 
@@ -72,7 +80,7 @@ Real User Monitoring (RUM) Data Service提供更精確的使用者互動反映�
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-### 中的新功能 [!DNL Experience Manager Forms] {#forms-features}
+### [!DNL Experience Manager Forms] 中的新功能 {#forms-features}
 
 * **[將最適化表單與 Microsoft® SharePoint 清單連接](/help/forms/configure-submit-actions-core-components.md#submit-to-sharepoint)**：AEM Forms 提供 OOTB 整合，可將表單資料直接提交到 SharePoint 清單，讓您使用 SharePoint 清單功能。您可以將 Microsoft SharePoint 清單設定為表單資料模型的資料來源，並透過&#x200B;**使用表單資料模型提交**&#x200B;這個提交動作，將最適化表單與 SharePoint 清單連接。
 
@@ -82,7 +90,7 @@ Real User Monitoring (RUM) Data Service提供更精確的使用者互動反映�
 
 -->
 
-### 早期採用者計畫 {#forms-early-adopter}
+### 早期採用者計劃 {#forms-early-adopter}
 
 * **[將最適化表單提交到 Adobe Workfront Fusion 情境](/help/forms/submit-adaptive-form-to-workfront-fusion.md)**：Forms as a Cloud Service 提供開箱即用的選項，可輕鬆將最適化表單與 Adobe Workfront 連接。這簡化了將最適化表單提交到 Adobe Workfront 情境的程序，讓您在提交最適化表單時觸發 Workfront Fusion 情境。
 
@@ -96,9 +104,9 @@ Real User Monitoring (RUM) Data Service提供更精確的使用者互動反映�
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
-### CDN設定早期採用者計畫 {#cdn-config-early-adopter}
+### CDN 設定早期採用者計劃 {#cdn-config-early-adopter}
 
-除了最近發行的 [流量篩選規則](/help/security/traffic-filter-rules-including-waf.md)，其中包含可選擇性授權的Web應用程式防火牆(WAF)規則，您可利用設定管道來宣告及部署其他型別的CDN設定。 我們很想聽聽您的使用案例，包括：
+除了最近發佈的[流量篩選規則](/help/security/traffic-filter-rules-including-waf.md) (其中包含可以選擇授權的 Web 應用程式防火牆 (WAF) 規則)，也可以使用設定管道來聲明及部署其他類型的 CDN 設定。我們很想聽聽您的使用案例，包括：
 * 301/302 用戶端重新導向
 * 將邊緣要求代理到任意來源
 * URL 轉換
