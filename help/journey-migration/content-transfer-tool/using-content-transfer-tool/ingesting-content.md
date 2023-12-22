@@ -5,7 +5,7 @@ exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 source-git-commit: 4c8565d60ddcd9d0675822f37e77e70dd42c0c36
 workflow-type: tm+mt
 source-wordcount: '2407'
-ht-degree: 5%
+ht-degree: 7%
 
 ---
 
@@ -78,7 +78,7 @@ ht-degree: 5%
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_ingestion_topup"
 >title="填滿攝入"
->abstract="使用填滿功能來移動自上次內容轉移活動以來修改的內容。擷取完成後，請檢查記錄檔中是否有任何錯誤或警告。 如有任何錯誤應立即處理，方法是處理回報的問題或聯絡 Adobe 客戶服務。"
+>abstract="使用填滿功能來移動自上次內容轉移活動以來修改的內容。攝入完成後，檢查記錄檔中是否有任何錯誤或警告。如有任何錯誤應立即處理，方法是處理回報的問題或聯絡 Adobe 客戶服務。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/viewing-logs.html?lang=zh-Hant" text="檢視記錄檔"
 
 「內容轉移工具」具備可透過執行 *追加* 移轉集的。 如此可修改移轉集，使其僅包含自上次擷取以來已變更的內容，而無須再次擷取所有內容。
@@ -97,7 +97,7 @@ ht-degree: 5%
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_ingestion_troubleshooting"
 >title="內容攝取故障排除"
->abstract="請參閱內嵌記錄檔和檔案，尋找內嵌失敗常見原因的解決方案，並尋找修正問題的方法。 在修正後，可再次執行內嵌。"
+>abstract="請參閱攝入記錄和文件，了解攝入失敗的常見原因，並尋找修正問題的解決方案。修正之後，就可以再次執行攝入。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers.html" text="驗證內容轉移"
 
 ### CAM無法擷取移轉權杖 {#cam-unable-to-retrieve-the-migration-token}
