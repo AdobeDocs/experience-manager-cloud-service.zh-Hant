@@ -2,9 +2,9 @@
 title: 使用 Universal Editor 進行本機 AEM 開發
 description: 了解 Universal Editor 如何支援為開發目的在本機 AEM 執行個體上進行編輯。
 exl-id: ba1bf015-7768-4129-8372-adfb86e5a120
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 0546f3cee8df3d7134021e32670b40030d56cd84
 workflow-type: tm+mt
-source-wordcount: '579'
+source-wordcount: '576'
 ht-degree: 92%
 
 ---
@@ -88,8 +88,8 @@ Universal Editor 會根據頁面的偵測方式，知道要使用哪個 Universa
 
 對於要使用您本機 Universal Editor 服務所編輯的頁面，您必須設定以下中繼標記：
 
-```
-<meta name="urn:adobe:aem:editor:endpoint" content="https://localhost:8000">
+```html
+<meta name="urn:adobe:aue:config:service" content="https://localhost:8000">
 ```
 
 設定完成後，您應該會看到每個內容更新呼叫都會前往 `https://localhost:8000`，而不是預設的 Universal Editor 服務。
