@@ -796,7 +796,7 @@ ht-degree: 99%
          + [Sidekick 庫](/help/edge/docs/sidekick-library.md)
       + [常見問題集](/help/edge/docs/faq.md)
       + [管理 API](https://www.aem.live/docs/admin.html)
-      + [AEM狀態](https://www.aemstatus.net)
+      + [AEM 狀態](https://www.aemstatus.net)
       + 工具 {#tools}
          + [Sidekick Chrome 擴充功能](https://chrome.google.com/webstore/detail/aem-sidekick/ccfggkjabjahcjoljmgmklhpaccedipo)
          + [Github 機器人](https://github.com/apps/aem-code-sync)
@@ -956,7 +956,7 @@ ht-degree: 99%
       + [使用前端管道開發網站](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md)
       + [自訂網站範本和主題](/help/implementing/developing/introduction/customizing-site-templates-themes.md)
       + [AEM Headful 和 Headless 技術](/help/implementing/developing/headful-headless.md)
-      + 全堆疊 AEM 開發 {#full-stack}
+      + 全端 AEM 開發 {#full-stack}
          + [開發 AEM Sites 快速入門 - WKND 教學課程](/help/implementing/developing/introduction/develop-wknd-tutorial.md)
          + [AEM UI 的結構](/help/implementing/developing/introduction/ui-structure.md)
          + [Sling 速查表](/help/implementing/developing/introduction/sling-cheatsheet.md)
