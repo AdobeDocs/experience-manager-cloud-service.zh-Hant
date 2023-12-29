@@ -2,10 +2,11 @@
 title: 如何下載和安裝Forms Designer以建立記錄檔案範本？
 description: 使用Forms Designer建立XDP和PDF表單範本，作為記錄檔案的範本。
 keywords: 安裝Designer、安裝Forms Designer、安裝Forms Designer的需求
+feature: Forms Designer
 exl-id: d6f1cb21-c48b-406d-8d47-482d7a1b4cc3
-source-git-commit: 397e7d4f23202b8ae7419b0ad5436a6a10e2efb8
+source-git-commit: b2769134c2e744f41cbb7e8a3cf08c622cdc07ca
 workflow-type: tm+mt
-source-wordcount: '410'
+source-wordcount: '409'
 ht-degree: 9%
 
 ---
@@ -40,7 +41,7 @@ Designer是一種點選式圖形化表單設計工具，可簡化XDP和PDF表單
 
 +++ 32位元設計工具
 
-* [!DNL Microsoft® Windows® 2016 Server], [!DNL Microsoft® Windows® 2019 Server], 或 [!DNL Microsoft® Windows® 10]
+* [!DNL Microsoft® Windows® 2016 Server]， [!DNL Microsoft® Windows® 2019 Server]，或 [!DNL Microsoft® Windows® 10]
 * 32位元作業系統的1 GB RAM或64位元作業系統的2 GB RAM
 * 32位元作業系統的16 GB磁碟空間或64位元作業系統的20 GB磁碟空間
 * 顯示卡記憶體 — 128 MB的GPU （建議使用256 MB）
