@@ -2,10 +2,10 @@
 title: 使用 Universal Editor 編寫內容
 description: 了解內容作者使用 Universal Editor 建立內容有多簡單和直覺。
 exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: e33cdaf9147fc0276920fad974984d5703dba530
 workflow-type: tm+mt
-source-wordcount: '2387'
-ht-degree: 55%
+source-wordcount: '2179'
+ht-degree: 57%
 
 ---
 
@@ -44,11 +44,10 @@ Universal Editor 支援在任意實作中編輯任何方面的內容，以便提
 
 ## 了解 UI {#ui}
 
-UI 分為五個主要區域。
+UI分為以下幾個主要區域。
 
 * [Experience Cloud 標頭](#experience-cloud-header)
-* [Universal Editor 標頭](#universal-editor-header)
-* [模式邊欄](#mode-rail)
+* [通用編輯器工具列](#universal-editor-toolbar)
 * [編輯器](#editor)
 * [屬性邊欄](#properties-rail)
 
@@ -96,11 +95,11 @@ Experience Cloud 標頭會始終顯示在畫面頂端。這是一個錨點，說
 
 ![使用者屬性](assets/user-properties.png)
 
-### Universal Editor 標頭 {#universal-editor-header}
+### 通用編輯器工具列 {#universal-editor-toolbar}
 
-Universal Editor 標頭始終顯示在畫面頂端，就在 [Experience Cloud 標頭下方。](#experience-cloud-header)它可讓您快速存取，以導覽到另一個頁面進行編輯和發佈目前的頁面。
+Universal Editor工具列一律會顯示在畫面頂端，緊接在底下 [Experience Cloud標頭。](#experience-cloud-header)它可讓您快速存取，以導覽到另一個頁面進行編輯和發佈目前的頁面。
 
-![Universal Editor 標頭](assets/universal-editor-header.png)
+![通用編輯器工具列](assets/universal-editor-toolbar.png)
 
 #### 首頁按鈕 {#home-button}
 
@@ -132,7 +131,7 @@ Universal Editor 標頭始終顯示在畫面頂端，就在 [Experience Cloud �
 
 #### 驗證標題設定 {#authentication-settings}
 
-如果您需要設定驗證密碼，請選取驗證標題設定圖示。
+如果您需要，請選取驗證標題設定圖示 [設定自訂驗證標頭，以供本機開發之用。](/help/implementing/universal-editor/developer-overview.md#auth-header)
 
 ![驗證標題設定按鈕](assets/authentication-header-settings.png)
 
@@ -154,6 +153,16 @@ Universal Editor 標頭始終顯示在畫面頂端，就在 [Experience Cloud �
 * 定義寬度和高度
 * 變更方向
 
+#### 預覽模式 {#preview-mode}
+
+在預覽模式下，在編輯器中呈現的頁面就是發佈服務所顯示的樣子。這可讓內容作者按一下連結等方式來導覽內容。
+
+![預覽模式](assets/preview-mode.png)
+
+>[!TIP]
+>
+>使用快速鍵 `P` 來切換至預覽模式，或是從預覽模式切換。
+
 #### 開啟應用程式預覽 {#open-app-preview}
 
 選取開啟應用程式預覽圖示，即可使用自己的瀏覽器標籤開啟您目前正在編輯的頁面，無須使用編輯器即可預覽您的內容。
@@ -174,47 +183,13 @@ Universal Editor 標頭始終顯示在畫面頂端，就在 [Experience Cloud �
 >
 >檢視檔案 [使用通用編輯器發佈內容](publishing.md) 以取得有關使用Universal Editor發佈的詳細資訊。
 
-### 模式邊欄 {#rail}
-
-模式邊欄就在home按鈕的下方，而且一律會沿著編輯器的左側顯示。 它可讓您在不同使用模式之間輕鬆切換編輯器。
-
-![模式邊欄](assets/mode-rail.png)
-
-#### 預覽模式 {#preview-mode}
-
-在預覽模式下，在編輯器中呈現的頁面就是發佈服務所顯示的樣子。這可讓內容作者按一下連結等方式來導覽內容。
-
-![預覽模式](assets/preview-mode.png)
-
->[!TIP]
->
->使用快速鍵 `P` 切換到預覽模式。
-
-#### 元件模式 {#component-mode}
-
-在元件模式中，內容作者可以選取要編輯的元件，包括：
-
-* 在原處[編輯純文字](#editing-content)。
-* [編輯RTF文字](#editing-rich-text) 「屬性」邊欄中顯示的其他格式選項。
-* [編輯媒體內容](#editing-media)
-* [編輯內容片段](#edit-content-fragment)
-
-![元件模式](assets/component-mode.png)
-
-選取元件時，其內容的詳細資訊會顯示在 [屬性邊欄。](#properties-rail) 根據內容型別，您可以在就地或屬性邊欄中編輯。
-
->[!TIP]
->
->使用快速鍵 `C` 以切換到元件模式。
-
 ### 編輯器 {#editor}
 
 編輯器會佔據大部分視窗，而且是[位置列](#location-bar)中指定之頁面的呈現位置。
 
-* 如果編輯器在 [元件模式，](#component-mode) 內容將可供編輯，但您無法關注連結。
-* 如果編輯器在[預覽模式，](#preview-mode)內容即為可瀏覽，而且您可以點選連結，但無法編輯內容。
-
 ![編輯器](assets/editor.png)
+
+如果編輯器在[預覽模式，](#preview-mode)內容即為可瀏覽，而且您可以點選連結，但無法編輯內容。
 
 ### 屬性邊欄 {#properties-rail}
 
@@ -254,7 +229,7 @@ Universal Editor 標頭始終顯示在畫面頂端，就在 [Experience Cloud �
 
 ##### 編輯 {#edit}
 
-當在 [元件模式，](#component-mode) 所選元件的編輯選項會顯示在「屬性」邊欄中。 在屬性邊欄中，您可以編輯選取的元件。 如果選取的元件是內容片段，您也可以選取「編輯」按鈕。
+編輯時，所選元件的選項會顯示在屬性邊欄中，您可在此編輯所選元件。 如果選取的元件是內容片段，您也可以選取「編輯」按鈕。
 
 ![「編輯」圖示](assets/edit.png)
 
@@ -294,19 +269,19 @@ Universal Editor 標頭始終顯示在畫面頂端，就在 [Experience Cloud �
 
 ## 編輯內容 {#editing-content}
 
-編輯內容很簡單又直覺。在 [元件模式](#component-mode)，當您將游標移至編輯器中的內容時，可編輯的內容會以藍色方塊醒目提示。
+編輯內容很簡單又直覺。當您將滑鼠移至編輯器中的內容時，可編輯的內容會以藍色方塊醒目提示。
 
 ![可編輯的內容會以藍色框醒目顯示](assets/editable-content.png)
 
 >[!TIP]
 >
->在元件模式中，點選或按一下內容會選取它以進行編輯。 如果您想透過以下連結導覽內容，請切換至 [預覽模式。](#preview-mode)
+>依預設，點選或按一下內容會選取內容以進行編輯。 如果您想透過以下連結導覽內容，請切換至 [預覽模式。](#preview-mode)
 
 根據您選取的內容，您可能有不同的就地編輯選項，而且您可能會為中的內容提供其他資訊和選項 [屬性邊欄。](#properties-rail)
 
 ### 編輯純文字 {#edit-plain-text}
 
-如果您在 [元件模式](#component-mode) 並選取純文字元件，則按兩下或點選該元件即可就地編輯文字。
+您可以按兩下或點兩下元件，就地編輯文字。
 
 ![編輯內容](assets/editing-content.png)
 
@@ -320,7 +295,7 @@ Universal Editor 標頭始終顯示在畫面頂端，就在 [Experience Cloud �
 
 ### 編輯 RTF 文字 {#edit-rich-text}
 
-如果您在 [元件模式](#component-mode) 並選取RTF文字元件，按兩下或點選該元件即可就地編輯文字。
+您可以按兩下或點兩下元件，就地編輯文字。
 
 按下Enter/Return或在文字方塊外選取，以儲存變更。
 
@@ -330,25 +305,20 @@ Universal Editor 標頭始終顯示在畫面頂端，就在 [Experience Cloud �
 
 ### 編輯媒體 {#edit-media}
 
-如果您在 [元件模式](#component-mode) 如果選取影像，即可在屬性邊欄中檢視其詳細資訊。
+您可以在屬性邊欄中檢視其詳細資訊。
 
 ![編輯媒體](assets/ue-edit-media.png)
 
-選取 **取代** 按鈕取代屬性邊欄中選取影像預覽下方的影像，以使用資產資料庫中的另一個影像取代。
-
+1. 在屬性邊欄中，點選或按一下所選影像的預覽。
 1. [資產選擇器](/help/assets/asset-selector.md#using-asset-selector)視窗會開啟，讓您可選取資產。
 1. 選取「 」以選取新資產。
 1. 選取 **選取** 以返回取代資產的屬性邊欄。
 
 變更會自動儲存到您的內容中。
 
->[!TIP]
->
->使用快速鍵`R`開啟資產選擇器以替換選取的影像。
-
 ### 編輯內容片段 {#edit-content-fragment}
 
-如果您在 [元件模式](#component-mode) 然後選取 [內容片段，](/help/sites-cloud/administering/content-fragments/overview.md) 您可以在「屬性」邊欄中編輯其詳細資料。
+如果您選取 [內容片段，](/help/sites-cloud/administering/content-fragments/overview.md) 您可以在「屬性」邊欄中編輯其詳細資料。
 
 ![編輯內容片段](assets/ue-edit-cf.png)
 
@@ -407,7 +377,7 @@ Universal Editor 標頭始終顯示在畫面頂端，就在 [Experience Cloud �
 
 內容編輯完成後，您通常會希望瀏覽其內容，以查看它在其他頁面內容中的樣子。在[預覽模式](#preview-mode)中，您可以點選連結，像讀者一樣瀏覽您的內容。內容在編輯器中呈現的樣子就是將會發佈的樣子。
 
-在預覽模式中，點選或按一下內容的反應就像對內容的讀者一樣。 如果您想要選取要編輯的內容，請切換至 [元件模式。](#component-mode)
+在預覽模式中，點選或按一下內容的反應就像對內容的讀者一樣。 如果您想要選取要編輯的內容，請切換退出 [預覽模式。](#preview-mode)
 
 ## 其他資源 {#additional-resources}
 
