@@ -2,9 +2,9 @@
 title: 發佈頁面
 description: 瞭解如何使用AEM中的各種機制來發佈和取消發佈頁面。
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
-source-git-commit: c05cf17749f63e713e4fb3fbf2a840a9f82877b3
+source-git-commit: 00520bff0f3b0d36610d8601077198856c8b71dd
 workflow-type: tm+mt
-source-wordcount: '1925'
+source-wordcount: '1927'
 ht-degree: 5%
 
 ---
@@ -52,7 +52,7 @@ ht-degree: 5%
 
 >[!NOTE]
 >
->如果要保留頁面順序，請使用 [管理發布](#manage-publication) 以單一動作同時發佈父頁面和任何子頁面。
+>如果要保留頁面順序，您必須使用 [管理發布](#manage-publication) 以單一動作同時發佈父頁面和任何子頁面。
 >
 >無法保證頁面順序：
 >* 若僅選取子頁面以供發佈（因為訂單資訊會保留在父頁面上）
@@ -128,7 +128,7 @@ ht-degree: 5%
 
 >[!NOTE]
 >
->如果要保留頁面順序，請使用 **管理發布** 以透過單一動作將父頁面與任何子頁面一起發佈。
+>如果要保留頁面順序，您必須使用 **管理發布** 以透過單一動作將父頁面與任何子頁面一起發佈。
 >
 >無法保證頁面順序：
 >* 若僅選取子頁面以供發佈（因為訂單資訊會保留在父頁面上）
