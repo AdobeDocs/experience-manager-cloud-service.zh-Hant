@@ -2,10 +2,10 @@
 title: 重新處理數位資產
 description: 瞭解重新處理數位資產的多種方法
 contentOwner: KK
-source-git-commit: 3fb72e0768c44506b0f20f99a48cea837d722387
+source-git-commit: cb8eb56d07163f46aec252c70a3ec3b0273d97cf
 workflow-type: tm+mt
-source-wordcount: '748'
-ht-degree: 1%
+source-wordcount: '685'
+ht-degree: 0%
 
 ---
 
@@ -33,21 +33,21 @@ ht-degree: 1%
 
    ![重新處理資產選項](assets/reprocessing-assets-options.png)
 
-* **[!UICONTROL 完整程式]：** 當您想要執行包括預設設定檔、自訂設定檔、動態處理（如果已設定）和後置處理工作流程的整個流程時，請選取此選項。
-* **[!UICONTROL 進階]：** 選取此選項以選擇進階重新處理。
+   * **[!UICONTROL 完整程式]：** 當您想要執行包括預設設定檔、自訂設定檔、動態處理（如果已設定）和後置處理工作流程的整個流程時，請選取此選項。
+   * **[!UICONTROL 進階]：** 選取此選項以選擇進階重新處理。
 
-  ![進階重新處理資產選項](assets/reprocessing-assets-options-advanced.png)
+     ![進階重新處理資產選項](assets/reprocessing-assets-options-advanced.png)
 
-從下列進階選項中選取：
+     從下列進階選項中選取：
 
-* **[!UICONTROL 預設預覽轉譯]：** 當您要重新處理預設檢視的轉譯時，請選擇此選項。
+      * **[!UICONTROL 預設預覽轉譯]：** 當您要重新處理預設檢視的轉譯時，請選擇此選項。
 
-* **[!UICONTROL 中繼資料]：** 當您想要擷取所選資產的中繼資料資訊和智慧標籤時，請選擇此選項。
+      * **[!UICONTROL 中繼資料]：** 當您想要擷取所選資產的中繼資料資訊和智慧標籤時，請選擇此選項。
 
-* **[!UICONTROL 處理設定檔]：** 當您要重新處理選取的設定檔時，請選擇此選項。 您可以選擇 **[!UICONTROL 完整程式]** 選項以包含在檔案夾層級指派的預設處理和自訂設定檔。
-  <!--When assets are uploaded to a folder, [!DNL Experience Manager] checks the containing folder's properties for a processing profile. If none is applied, a parent folder in the hierarchy is checked for a processing profile to apply.-->
+      * **[!UICONTROL 處理設定檔]：** 當您要重新處理選取的設定檔時，請選擇此選項。 您可以選擇 **[!UICONTROL 完整程式]** 選項以包含在檔案夾層級指派的預設處理和自訂設定檔。
+        <!--When assets are uploaded to a folder, [!DNL Experience Manager] checks the containing folder's properties for a processing profile. If none is applied, a parent folder in the hierarchy is checked for a processing profile to apply.-->
 
-* **[!UICONTROL 後處理工作流程]：** 若需要額外處理資產，且無法使用處理設定檔來完成，請選擇此選項。 可以將其他後處理工作流程新增到設定。 後處理可讓您在使用資產微服務的可設定處理之上新增完全自訂處理。
+      * **[!UICONTROL 後處理工作流程]：** 若需要額外處理資產，且無法使用處理設定檔來完成，請選擇此選項。 可以將其他後處理工作流程新增到設定。 後處理可讓您在使用資產微服務的可設定處理之上新增完全自訂處理。
 
 另請參閱 [使用資產微服務和處理設定檔](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use.html?lang=en) 以進一步瞭解處理設定檔與後處理工作流程。
 
@@ -59,7 +59,7 @@ ht-degree: 1%
 
 [!DNL Experience Manager] 允許重新處理以下元件的數位資產。
 
-### 智慧標記 {#reprocessing-smart-tags}
+### 智慧標籤 {#reprocessing-smart-tags}
 
 處理數位資產的組織越來越多地在資產中繼資料中使用分類控制的辭彙。 基本上，它包括員工、合作夥伴和客戶通常用來參照和搜尋特定類別數位資產的關鍵字清單。 使用分類控制的辭彙來標籤資產，可確保輕鬆識別和擷取資產。
 
@@ -71,7 +71,7 @@ ht-degree: 1%
 
 ### 智慧型裁切 {#reprocessing-smart-crop}
 
-深入瞭解 [Dynamic Media智慧型裁切](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles.html?lang=zh-Hant) 可讓您套用特定裁切(**[!UICONTROL 智慧型裁切]** 和畫素裁切)，以及針對上傳資產進行銳利化設定。
+深入瞭解 [Dynamic Media智慧型裁切](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles.html?lang=en) 可讓您套用特定裁切(**[!UICONTROL 智慧型裁切]** 和畫素裁切)，以及針對上傳資產進行銳利化設定。
 
 ### 中繼資料 {#reprocessing-metadata}
 
