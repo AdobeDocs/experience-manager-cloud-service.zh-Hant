@@ -2,10 +2,10 @@
 title: 行動中心
 description: 善用行動中心，方便處理事件和其他重要資訊
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: dca00a8913fb8fd159a69675b8f4ffa67441faa4
 workflow-type: tm+mt
-source-wordcount: '726'
-ht-degree: 83%
+source-wordcount: '734'
+ht-degree: 78%
 
 ---
 
@@ -63,14 +63,14 @@ AEM as a Cloud Service 有多種類型的通知，但只有一部分出現在行
 |---|---|---|---|
 | 操作事件 | 需要立即採取行動的嚴重事件 | 指派給「事件通知 - Cloud Service」產品設定檔的使用者 | X |
 | 主動建議 | 應該計畫的最佳化 | 指派給「主動通知 - Cloud Service」產品設定檔的使用者 | X |
-| Cloud Manager 管道狀態 | 有關管道狀態的資訊 | 具有業務負責人、計畫管理員或部署管理員角色的使用者，[Experience Cloud 偏好設定](https://experience.adobe.com/preferences)中的「其他」核取方塊已選取，如[這裡所描述](/help/implementing/cloud-manager/notifications.md)。 |   |
+| Cloud Manager 管道狀態 | 有關管道狀態的資訊 | 使用者具有企業所有者、方案管理員或部署管理員角色，已選取「其他」核取方塊 [Experience Cloud偏好設定](https://experience.adobe.com/preferences)， as [此處說明](/help/implementing/cloud-manager/notifications.md). |   |
 
 ## 支援的通知類型 {#supported-notification-types}
 
 下表列有行動中心目前支援的通知類型。目前僅限於生產環境可使用通知。
 
 | 通知類型 | 相關產品簡介 | 糾正措施 |
-|---|---|---|
+|---------------------------------|-------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 鎖定的複製佇列 | 事件 | 按照[複製文件](/help/operations/replication.md#troubleshooting)中的說明解鎖佇列 |
+| 無效的GraphQL查詢 | 事件 | 參考「 」以修正無效的GraphQL查詢 [持續的GraphQL查詢疑難排解檔案](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries-troubleshoot.html?lang=en) |
 | 即將到期的 S2S 認證 | 主動 | 在[為伺服器端 API 產生權杖文件](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md#refresh-credentials)中，了解如何重新整理認證 |
-
