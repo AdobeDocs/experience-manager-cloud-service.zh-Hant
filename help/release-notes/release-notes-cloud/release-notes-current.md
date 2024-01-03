@@ -6,7 +6,7 @@ exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 source-git-commit: 17903c6e44afd1742d21b7fc7dbe4d7c63fe8b6b
 workflow-type: tm+mt
 source-wordcount: '828'
-ht-degree: 93%
+ht-degree: 99%
 
 ---
 
@@ -57,15 +57,15 @@ Have a look at the December 2023 Release Overview video for a summary of the fea
 
 ### Assets檢視中的新功能 {#assets-view-features}
 
-**使用Adobe Firefly建立GenAI影像**
+**使用 Adobe Firefly 建立 GenAI 影像**
 
-根據搜尋查詢建立新影像，並整合Adobe Firefly文字對影像功能(需要Adobe Firefly授權)。
+透過整合 Adobe Firefly 以文字建立影像功能 (需要 Adobe Firefly 授權)，根據搜尋查詢建立新影像。
 
-![資產Firefly整合](/help/assets/assets/assets-firefly-integration.png)
+![Assets Firefly 整合](/help/assets/assets/assets-firefly-integration.png)
 
 **尋找類似影像**
 
-您現在可以選取影像並在Experience Manager Assets存放庫中檢視類似影像，輕鬆找到內容。
+現在，您可以透過選取影像並在 Experience Manager Assets 存放庫中查看類似影像來輕鬆找到內容。
 
 <!--
 
