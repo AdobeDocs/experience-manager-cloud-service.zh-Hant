@@ -2,10 +2,10 @@
 title: 使用 Universal Editor 進行本機 AEM 開發
 description: 了解 Universal Editor 如何支援為開發目的在本機 AEM 執行個體上進行編輯。
 exl-id: ba1bf015-7768-4129-8372-adfb86e5a120
-source-git-commit: 0546f3cee8df3d7134021e32670b40030d56cd84
+source-git-commit: 16f2922a3745f9eb72f7070c30134e5149eb78ce
 workflow-type: tm+mt
 source-wordcount: '576'
-ht-degree: 92%
+ht-degree: 87%
 
 ---
 
@@ -14,7 +14,11 @@ ht-degree: 92%
 
 了解 Universal Editor 如何支援為開發目的在本機 AEM 執行個體上進行編輯。
 
-本文件將說明如何在 HTTPS 中與 Universal Editor 服務的本機副本一起執行 AEM，以便您可以使用 Universal Editor Service 在 AEM 上進行本機開發。
+{{universal-editor-status}}
+
+## 概觀 {#overview}
+
+本檔案說明如何在HTTPS中連同通用編輯器服務的本機復本一起執行AEM，以便您可以使用通用編輯器在AEM上本機開發。
 
 ## 將 AEM 設定為在 HTTPS 上執行 {#aem-https}
 

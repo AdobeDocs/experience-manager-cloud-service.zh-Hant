@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的運作方式以及該軟體可以為您做哪些事。
 breadcrumb-title: 使用手冊
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 4968921cadcee7eb023d5761abfa0373a24c5ed2
-workflow-type: ht
-source-wordcount: '4560'
-ht-degree: 100%
+source-git-commit: cfae48067df75dae54822dc0c6f868cca75887d4
+workflow-type: tm+mt
+source-wordcount: '4565'
+ht-degree: 99%
 
 ---
 
@@ -1106,11 +1106,14 @@ ht-degree: 100%
       + [WCAG 2.1 快速指南](/help/compliance/accessibility/quick-guide-wcag.md)
 + Universal Editor {#universal-editor}
    + [Universal Editor 簡介](/help/implementing/universal-editor/introduction.md)
-   + [使用 Universal Editor 製作內容](/help/implementing/universal-editor/authoring.md)
-   + [使用 Universal Editor 發佈內容](/help/implementing/universal-editor/publishing.md)
-   + [AEM 中 Universal Editor 快速入門](/help/implementing/universal-editor/getting-started.md)
-   + [Universal Editor 開發人員概觀](/help/implementing/universal-editor/developer-overview.md)
    + [Universal Editor 架構](/help/implementing/universal-editor/architecture.md)
-   + [屬性和類型](/help/implementing/universal-editor/attributes-types.md)
-   + [Universal Editor 驗證](/help/implementing/universal-editor/authentication.md)
-   + [使用 Universal Editor 進行本機 AEM 開發](/help/implementing/universal-editor/local-dev.md)
+   + 製作 {#developing}
+      + [使用 Universal Editor 製作內容](/help/implementing/universal-editor/authoring.md)
+      + [使用 Universal Editor 發佈內容](/help/implementing/universal-editor/publishing.md)
+   + 開發 {#developing}
+      + [AEM 中 Universal Editor 快速入門](/help/implementing/universal-editor/getting-started.md)
+      + [Universal Editor 開發人員概觀](/help/implementing/universal-editor/developer-overview.md)
+      + [屬性和類型](/help/implementing/universal-editor/attributes-types.md)
+      + [Universal Editor 驗證](/help/implementing/universal-editor/authentication.md)
+      + [使用 Universal Editor 進行本機 AEM 開發](/help/implementing/universal-editor/local-dev.md)
+      + [通用編輯器呼叫](/help/implementing/universal-editor/calls.md)

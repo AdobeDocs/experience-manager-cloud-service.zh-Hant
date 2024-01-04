@@ -2,10 +2,10 @@
 title: Universal Editor 簡介
 description: 瞭解通用編輯器如何讓您看到即得(WYSIWYG)編輯任何Headless和Headful體驗。 了解它如何幫助內容作者提供卓越的體驗、提高其內容速度，以及如何提供最先進的開發人員體驗。
 exl-id: d4fc2384-a0f5-4a6f-9572-62749786be4c
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 16f2922a3745f9eb72f7070c30134e5149eb78ce
 workflow-type: tm+mt
 source-wordcount: '925'
-ht-degree: 89%
+ht-degree: 85%
 
 ---
 
@@ -13,6 +13,8 @@ ht-degree: 89%
 # Universal Editor 簡介 {#introduction}
 
 瞭解通用編輯器如何讓您看到即得(WYSIWYG)編輯任何Headless和Headful體驗。 了解它如何幫助內容作者提供卓越的體驗、提高其內容速度，以及如何提供最先進的開發人員體驗。
+
+{{universal-editor-status}}
 
 ## 背景 {#background}
 
@@ -43,7 +45,7 @@ Universal Editor 可以用於任何實作、任何內容和任何方面的內容
 內容作者也會擁有 AEM 頁面編輯器先前提供的強大編輯體驗。但是 Universal Editor 可讓內容作者在內容中視覺化編輯&#x200B;**任何**&#x200B;內容，並支援：
 
 * **AEM 頁面結構** - `cq:Pages` 的嵌套`cq:Components`，包括體驗片段
-* **AEM 內容片段** - 編輯出現在體驗內容中內容片段的內容.
+* **AEM內容片段**  — 編輯內容片段在體驗內容中出現的內容。
 * **文件** - 概念驗證表明 Word、Excel、Google 文件或 Markdown 文件也可以用相同的方式進行編輯 (這是 WIP)。
 
 ### 任何方面 {#any-aspect}
@@ -89,7 +91,7 @@ Universal Editor 可以用於任何實作、任何內容和任何方面的內容
 若要了解有關 Universal Editor 的詳細資訊，請參閱以下文件。
 
 * [使用 Universal Editor 編寫內容](authoring.md) - 了解內容作者使用 Universal Editor 建立內容有多簡單和直覺。
-* [使用 Universal Editor 發佈內容](publishing.md) - 了解 Universal Editor 如何發佈內容，和您的應用程式如何處理發佈的內容。
+* [使用通用編輯器發佈內容](publishing.md)  — 瞭解通用編輯器如何發佈內容，以及您的應用程式如何處理已發佈的內容。
 * [AEM 中 Universal Editor 快速入門](getting-started.md) - 了解如何存取 Universal Editor，以及如何開始檢測您的第一個 AEM 應用程式以使用它。
 * [Universal Editor 架構](architecture.md) - 了解 Universal Editor 的架構，以及資料如何在其服務和階層之間流動。
 * [屬性和類型](attributes-types.md) - 了解 Universal Editor 需要的資料屬性和類型。

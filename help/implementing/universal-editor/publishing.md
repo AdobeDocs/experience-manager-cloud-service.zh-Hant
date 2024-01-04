@@ -1,26 +1,28 @@
 ---
 title: 使用 Universal Editor 發佈內容
-description: 了解 Universal Editor 如何發佈內容，和您的應用程式如何處理發佈的內容。
+description: 瞭解Universal Editor如何發佈內容，以及您的應用程式如何處理發佈的內容。
 exl-id: aee34469-37c2-4571-806b-06c439a7524a
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 16f2922a3745f9eb72f7070c30134e5149eb78ce
 workflow-type: tm+mt
 source-wordcount: '360'
-ht-degree: 82%
+ht-degree: 55%
 
 ---
 
 
 # 使用 Universal Editor 發佈內容 {#publishing}
 
-了解 Universal Editor 如何發佈內容，和您的應用程式如何處理發佈的內容。
+瞭解Universal Editor如何發佈內容，以及您的應用程式如何處理發佈的內容。
+
+{{universal-editor-status}}
 
 ## 與 AEM 的相似之處 {#similarities}
 
-對於 AEM 使用者來說，使用 Universal Editor 發佈內容的流程您已經很熟悉：在 AEM 中發佈時，內容會從編寫層複製到發佈層。
+使用AEM時，使用Universal Editor發佈內容的程式會依您慣用的方式運作：在AEM中發佈時，內容會從製作層級複製到發佈層級。
 
 ## 差異 {#differences}
 
-使用 Universal Editor 進行發佈的差異不在於編輯器本身，而是 Universal Editor 可讓應用程式進行外部託管。
+是什麼讓使用通用編輯器發佈有些不同，與其說在於編輯器本身，不如說在於外部託管應用程式，讓通用編輯器成為可能。
 
 進行外部託管時，Web 應用程式需要確保當作者在編輯器中打開應用程式時，從編寫層載入內容，並在訪客存取應用程式時，從發佈層載入內容。
 

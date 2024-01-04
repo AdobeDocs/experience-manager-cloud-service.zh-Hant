@@ -2,9 +2,9 @@
 title: 使用 Universal Editor 編寫內容
 description: 了解內容作者使用 Universal Editor 建立內容有多簡單和直覺。
 exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
-source-git-commit: e33cdaf9147fc0276920fad974984d5703dba530
+source-git-commit: 16f2922a3745f9eb72f7070c30134e5149eb78ce
 workflow-type: tm+mt
-source-wordcount: '2179'
+source-wordcount: '2165'
 ht-degree: 57%
 
 ---
@@ -13,6 +13,8 @@ ht-degree: 57%
 # 使用 Universal Editor 編寫內容 {#authoring}
 
 了解內容作者使用 Universal Editor 建立內容有多簡單和直覺。
+
+{{universal-editor-status}}
 
 ## 簡介 {#introduction}
 
@@ -23,10 +25,6 @@ Universal Editor 支援在任意實作中編輯任何方面的內容，以便提
 >[!TIP]
 >
 >如需 Universal Editor 的更詳細介紹，請參閱 [Universal Editor 簡介](introduction.md)文件。
-
->[!NOTE]
->
->Universal Editor 仍處於開發階段。目前無法編輯所有的內容類型。
 
 ## 準備應用程式 {#prepare-app}
 

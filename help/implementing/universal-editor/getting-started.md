@@ -2,10 +2,10 @@
 title: AEM 中 Universal Editor 快速入門
 description: 了解如何存取 Universal Editor，以及如何開始檢測您的第一個 AEM 應用程式以使用它。
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 16f2922a3745f9eb72f7070c30134e5149eb78ce
 workflow-type: tm+mt
-source-wordcount: '920'
-ht-degree: 78%
+source-wordcount: '900'
+ht-degree: 76%
 
 ---
 
@@ -17,6 +17,8 @@ ht-degree: 78%
 >[!TIP]
 >
 >如果您想直接研究範例，可以查看 [GitHub 上的 Universal Editor 範例應用程式。](https://github.com/adobe/universal-editor-sample-editable-app)
+
+{{universal-editor-status}}
 
 ## 上線步驟 {#onboarding}
 
@@ -201,7 +203,7 @@ itemid="urn:<referenceName>:<resource>"
 
 * [Universal Editor 簡介](introduction.md) - 了解 Universal Editor 如何在任意實作中編輯任何方面的內容，以便提供卓越的體驗、提高內容速度並提供最先進的開發人員體驗。
 * [使用 Universal Editor 編寫內容](authoring.md) - 了解內容作者使用 Universal Editor 建立內容有多簡單和直覺。
-* [使用 Universal Editor 發佈內容](publishing.md) - 了解 Universal Editor 如何發佈內容，和您的應用程式如何處理發佈的內容。
+* [使用通用編輯器發佈內容](publishing.md)  — 瞭解通用編輯器如何發佈內容，以及您的應用程式如何處理已發佈的內容。
 * [Universal Editor 架構](architecture.md) - 了解 Universal Editor 的架構，以及資料如何在其服務和階層之間流動。
 * [屬性和類型](attributes-types.md) - 了解 Universal Editor 需要的資料屬性和類型。
 * [Universal Editor 驗證](authentication.md) - 了解 Universal Editor 如何進行驗證。
