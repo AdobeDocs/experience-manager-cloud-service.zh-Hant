@@ -1,17 +1,17 @@
 ---
-title: 編寫內容片段
-description: 瞭解如何為內容片段製作內容，然後根據用途建立該內容的變體。 這為Headless傳送和頁面製作增加了靈活性。
+title: 製作內容片段
+description: 瞭解如何為內容片段製作內容，並根據用途建立該內容的變體。 這為Headless傳送和頁面製作增加了靈活性。
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 19685cb952a890731bd7d75a2adf3cfd841a465f
 workflow-type: tm+mt
 source-wordcount: '2266'
 ht-degree: 6%
 
 ---
 
-# 編寫內容片段 {#authoring-content-fragments}
+# 製作內容片段 {#authoring-content-fragments}
 
 編寫您的內容片段時同時注重Headless傳送和頁面編寫。
 

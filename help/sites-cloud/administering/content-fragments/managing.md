@@ -1,12 +1,12 @@
 ---
 title: 管理內容片段
-description: 瞭解如何從主控台和編輯器管理您的AEM內容片段（作為Headless內容的基礎）或用於頁面編寫。
+description: 瞭解如何從主控台和編輯器管理AEM內容片段、建立內容作為Headless內容的基礎或用於頁面製作。
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 19685cb952a890731bd7d75a2adf3cfd841a465f
 workflow-type: tm+mt
-source-wordcount: '2617'
+source-wordcount: '2620'
 ht-degree: 2%
 
 ---
@@ -369,7 +369,7 @@ ht-degree: 2%
 
 此 **取代** 動作可用（在頂端工具列中）來尋找和取代所選內容片段中的指定文字。
 
-![尋找和取代](assets/cf-managing-find-replace.png)
+![尋找並取代](assets/cf-managing-find-replace.png)
 
 取代之前，會檢查驗證條件並通知您任何衝突，可讓您變更取代字串或僅取代已驗證的執行個體。
 

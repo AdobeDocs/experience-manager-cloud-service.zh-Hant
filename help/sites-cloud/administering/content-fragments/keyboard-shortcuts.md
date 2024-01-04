@@ -1,15 +1,15 @@
 ---
 title: 內容片段控制檯的鍵盤快速鍵
-description: AEM提供各種鍵盤快速鍵，包括管理內容片段的一些鍵盤快速鍵
+description: AEM提供各種鍵盤快速鍵，包括管理內容片段的選項。
 feature: Content Fragments
 role: User, Developer, Architect
-source-git-commit: 676173813b6ea4defeafe25c95be9668d32aac38
+exl-id: 24eefa31-4081-4b4a-af98-c6299b213cea
+source-git-commit: 19685cb952a890731bd7d75a2adf3cfd841a465f
 workflow-type: tm+mt
-source-wordcount: '222'
+source-wordcount: '223'
 ht-degree: 3%
 
 ---
-
 
 # 內容片段控制檯的鍵盤快速鍵 {#keyboard-shortcuts-content-fragments-console}
 

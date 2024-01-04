@@ -1,13 +1,13 @@
 ---
 title: 內容片段模型
-description: 瞭解內容片段模型如何作為您在AEM中內容片段的基礎。 這些片段可讓您建立結構化內容，以用於Headless傳送或頁面編寫。
+description: 瞭解內容片段模型如何作為您在AEM中內容片段的基礎，讓您建立結構化內容，以用於Headless傳送或頁面編寫。
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: 8ab5b15f-cefc-45bf-a388-928e8cc8c603
-source-git-commit: 3f934add7521586caf728c4bfa37f2d1a82b144a
+source-git-commit: 19685cb952a890731bd7d75a2adf3cfd841a465f
 workflow-type: tm+mt
-source-wordcount: '3121'
-ht-degree: 6%
+source-wordcount: '3125'
+ht-degree: 3%
 
 ---
 
@@ -32,8 +32,9 @@ Adobe Experience Manager (AEM)中的內容片段模型as a Cloud Service定義 [
    >
    >如果 [未啟用內容片段模型](/help/sites-cloud/administering/content-fragments/setup.md)，則 **建立** 選項將無法使用。
 
-1. 指定「模 **型標題」**。您也可以定義各種屬性；例如，新增 **標籤**， a **說明**，選取 **啟用模型** 至 [啟用模型](#enabling-disabling-a-content-fragment-model) 若有需要，並定義
-   **預設預覽 URL 模式**.
+1. 指定 **模型標題**.
+您也可以定義各種屬性；例如，新增 **標籤**， a **說明**，選取 **啟用模型** 至 [啟用模型](#enabling-disabling-a-content-fragment-model) 若有需要，並定義
+   **預設預覽URL模式**.
 
    >[!NOTE]
    >
@@ -49,7 +50,7 @@ Adobe Experience Manager (AEM)中的內容片段模型as a Cloud Service定義 [
 
 * **基本**
    * **模型標題**
-   * **標記**
+   * **標籤**
    * **說明**
    * **啟用模型**
    * **預設預覽URL模式**
@@ -159,24 +160,24 @@ Adobe Experience Manager (AEM)中的內容片段模型as a Cloud Service定義 [
    * 新增布林值核取方塊
 * **日期和時間**
    * 新增日期和/或時間
-* **列舉**
+* **分項清單**
    * 新增一組核取方塊、選項按鈕或下拉式清單欄位
-* **標記**
+* **標籤**
    * 允許片段作者存取及選取標籤區域
 * **內容參考**
    * 參考任何型別的其他內容；可用於 [建立巢狀內容](#using-references-to-form-nested-content)
    * 如果參照了影像，您可以選擇顯示縮圖
-* **片段參考**
+* **片段引用**
    * 參考其他內容片段；可用於 [建立巢狀內容](#using-references-to-form-nested-content)
    * 可以設定此資料類型以允許片段作者：
       * 直接編輯參考的片段。
       * 根據適當的模式建立新的內容片段
-* **JSON 物件**
+* **json物件**
    * 允許內容片段作者在片段的對應元素中輸入JSON語法。
       * 允許AEM儲存您從其他服務複製/貼上的直接JSON。
       * JSON會傳遞，並在GraphQL中輸出為JSON。
       * 在內容片段編輯器中包括JSON語法醒目提示、自動完成和錯誤醒目提示。
-* **標籤預留位置**
+* **索引標籤預留位置**
    * 允許引進索引標籤，以在編輯內容片段內容時使用。
       * 這些在模型編輯器中顯示為分隔線，分隔內容資料型別清單的區段。 每個例項代表新索引標籤的開始。
       * 在片段編輯器中，每個例項都會顯示為一個索引標籤。
@@ -209,7 +210,7 @@ Adobe Experience Manager (AEM)中的內容片段模型as a Cloud Service定義 [
 
 * 對於「多行」 **資料類型** ，可將「預設類型 **** 」定義為：
 
-   * **RTF**
+   * **RTF文字**
    * **Markdown**
    * **純文字**
 
@@ -255,14 +256,14 @@ Adobe Experience Manager (AEM)中的內容片段模型as a Cloud Service定義 [
    * 測試特定型別的內容。
    * 只能參考指定檔案大小或更小的資產。
    * 只能參考預先定義的寬度和/或高度範圍（以畫素為單位）內的影像。
-* **片段參考**
+* **片段引用**
    * 測試特定內容片段模型。
 * **專案最小數量** / **專案最大數量**
 
   已定義為 **多個欄位** (設定為 **呈現為**)擁有下列選項：
 
-   * **最小項目數量**
-   * **項目數量上限**
+   * **專案最小數量**
+   * **專案最大數量**
 
   這些將在中驗證 [內容片段編輯器](/help/sites-cloud/administering/content-fragments/authoring.md).
 
@@ -348,7 +349,7 @@ type CompanyModel {
 
 除了標準屬性之外，您還可以定義：
 
-* **呈現為**:
+* **呈現為**：
 
    * **多欄位**  — 片段作者可以建立多個個別參考
 
@@ -366,7 +367,7 @@ type CompanyModel {
 
    * **片段參考複合**  — 允許片段作者藉由選取多個片段來建置複合
 
-  ![片段參考](assets/cf-cfmodels-fragment-reference.png)
+  ![片段引用](assets/cf-cfmodels-fragment-reference.png)
 
 >[!NOTE]
 >
@@ -433,7 +434,7 @@ type CompanyModel {
 
      建立新的子資料夾時，會自動繼承原則；如果子資料夾需要允許與父資料夾不同的模型，則可以重新設定原則（並中斷繼承）。
 
-   * **允許的內容片段模型 (依路徑)**
+   * **允許的內容片段模型（依路徑）**
 
      可允許多個模型。
 

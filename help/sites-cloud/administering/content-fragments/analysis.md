@@ -1,15 +1,15 @@
 ---
 title: 分析內容片段
-description: 瞭解您的內容片段的結構和內容傳送。 如此可提供Headless傳送和頁面編寫的相關資訊。
+description: 瞭解用於內容傳送的內容片段結構。 如此可提供與Headless傳送和頁面製作相關的資訊。
 feature: Content Fragments
 role: User, Developer, Architect
-source-git-commit: 3d20f4bca566edcdb5f13eab581c33b7f3cf286d
+exl-id: d9268c1a-bfe6-4df7-bad9-6007dd79e0aa
+source-git-commit: 19685cb952a890731bd7d75a2adf3cfd841a465f
 workflow-type: tm+mt
-source-wordcount: '128'
+source-wordcount: '132'
 ht-degree: 2%
 
 ---
-
 
 # 分析內容片段結構 {#analyzing-content-fragments-structure}
 
@@ -19,7 +19,7 @@ Experience Manager (AEM)提供數種檢視和分析片段結構的方法。
 
 ## 參考 {#references}
 
-結構是使用「參照」建立的：
+多層結構是使用「參照」建立的：
 
 * [參考的資料型別在內容片段模型中定義](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#using-references-to-form-nested-content)
 * 編寫時，您可以：
