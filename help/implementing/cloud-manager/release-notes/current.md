@@ -4,9 +4,9 @@ description: 以下是 AEM as a Cloud Service 中 Cloud Manager 2023.12.0 的發
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
 source-git-commit: c0fc4b2ced046a1e975aca99463cdfa03462f2f4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '784'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -36,7 +36,7 @@ AEM as a Cloud Service 中的 Cloud Manager 版本 2023.12.0 發行日期是 202
    * [前端和全端管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)已新增對 Node 18 的支援。
    * Java 8 次要版本已更新為 `jdk1.8.0_371`。
    * Java 11 次要版本已更新為 `jdk-11.0.20`。
-   * Maven已更新至3.8.8版。
+   * Maven 已更新為版本 3.8.8。
       * Maven 現在預設為停用所有不安全的 `http://*` 鏡像。
       * [Adobe 建議](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)使用者更新其 Maven 存放庫以使用 HTTPS 而非 HTTP。
    * 建置容器基準影像已更新為 Ubuntu 22.04。

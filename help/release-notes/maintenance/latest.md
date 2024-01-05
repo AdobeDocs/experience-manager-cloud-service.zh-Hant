@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的目前維護版�
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的目前維護版本發行說明。'
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 source-git-commit: 4fc676bd975e44234b478ba57f12cbf0f4f5ba45
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '371'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 87%
 
 ## 14697 版 {#release-14697}
 
-以下摘要說明維護版本14697數的持續改善，該版本於2023年12月18日公開發佈。 它取代了發生問題的發行說14538。 先前的維護發行版本為發行說14227。
+下面是 14697 維護版本持續改善的內容摘要，該版本於 2023 年 12 月 18 日公開發行。它取代了有問題的版本 14538。之前的維護版本是版本 14227。
 
 2023.12.0 功能啟用可提供此維護版本的完整功能集。如需詳細資訊，請參閱 [Experience Manager 發行藍圖](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html)。
 
@@ -39,7 +39,7 @@ ht-degree: 87%
 * ASSETS-31297：阻止從動態媒體中刪除複製的資產。
 * ASSETS-30811：Blocktag 服務繫結的參考更新。
 * GRANITE-46418：更新 AEM 中的 Sling 事件：GaugeSupport 在 registerWithSuffix 中具有無限遞迴 (SLING-11918)。
-* GRANITE-48937：修正Omnisearch無法在aem/start.html頁面上運作的維護版本14538本回歸。
+* GRANITE-48937：修正了維護版本 14538 中的迴歸問題，其中 Omnisearch 在 aem/start.html 頁面失去作用。
 
 ### 已知問題 {#known-issues-14697}
 
