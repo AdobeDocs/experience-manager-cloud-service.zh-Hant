@@ -2,16 +2,16 @@
 title: Cloud Acceleration Manager 快速入門
 description: 本頁提供如何使用及開始使用Cloud Acceleration Manager的概觀。
 exl-id: e2fad21c-3de6-4186-97c6-ebc84780b2e8
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
-source-wordcount: '535'
-ht-degree: 18%
+source-wordcount: '514'
+ht-degree: 11%
 
 ---
 
 # Cloud Acceleration Manager 快速入門 {#get-started-cam}
 
-Cloud Acceleration Manager 是雲端型應用程式，旨在引導您的 IT 團隊進行從規劃到在 Cloud Service 上線的轉變歷程。透過Adobe建議的最佳實務、秘訣、檔案和工具，協助進行AEM as aCloud Service歷程的每個階段，讓您的團隊成功進行移轉。
+Cloud Acceleration Manager是雲端型應用程式，專為引導您的IT團隊進行從規劃到Cloud Service上線的轉換歷程所設計。 透過Adobe建議的最佳實務、秘訣、檔案和工具，協助進行AEM as aCloud Service歷程的每個階段，讓您的團隊成功進行移轉。
 
 ## 目標 {#objective}
 
@@ -20,7 +20,7 @@ Cloud Acceleration Manager 是雲端型應用程式，旨在引導您的 IT 團�
 * 瞭解如何登入CAM
 * 從CAM的UI建立專案
 
-## 使用 Cloud Acceleration Manager {#using-cam}
+## 使用Cloud Acceleration Manager {#using-cam}
 
 Cloud Acceleration Manager (CAM)提供遷移的一站式體驗。 它以引導式歷程的形式提供，提供初始評估，引導他們使用正確的工具、檔案和最佳實務，以確保在AEMas a Cloud Service上線成功。
 
@@ -97,4 +97,4 @@ Cloud Acceleration Manager (CAM)的登陸頁面可讓您建立和編輯多個專
 
 ## 下一步 {#whats-next}
 
-瞭解如何登入Cloud Acceleration Manager以及如何建立專案後，您就可以開始檢閱中的下一個步驟了 [整備階段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=en).
+瞭解如何登入Cloud Acceleration Manager以及如何建立專案後，您就可以開始檢閱中的下一個步驟了 [整備階段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-readiness-phase.html).

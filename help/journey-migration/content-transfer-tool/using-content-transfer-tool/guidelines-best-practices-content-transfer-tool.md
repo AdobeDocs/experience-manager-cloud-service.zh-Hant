@@ -2,16 +2,16 @@
 title: 使用「內容轉移工具」的准則與最佳作法
 description: 瞭解使用「內容轉移工具」的准則與最佳實務。
 exl-id: d1975c34-85d4-42e0-bb1a-968bdb3bf85d
-source-git-commit: 5f805122fb52d7f5268075bd7a6a0232e7e8d2ff
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
-source-wordcount: '1432'
+source-wordcount: '1401'
 ht-degree: 12%
 
 ---
 
 # 使用內容轉移工具的准則和最佳實務 {#guidelines}
 
-## 准則與最佳作法 {#best-practices}
+## 準則和最佳做法 {#best-practices}
 
 <!-- Alexandru: hiding for now
 
@@ -35,7 +35,7 @@ ht-degree: 12%
 
 下列准則和最佳實務適用於新版「內容轉移工具」：
 
-* 執行 [修訂清除](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/revision-cleanup.html) 和 [資料存放區一致性檢查](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16550.html?lang=en) 於 **來源** 存放庫，讓您可以找出潛在問題並降低存放庫大小。
+* 執行 [修訂清除](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/revision-cleanup.html) 和 [資料存放區一致性檢查](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16550.html) 於 **來源** 存放庫，讓您可以找出潛在問題並降低存放庫大小。
 
 * 在擷取階段中，Adobe建議您使用 *擦去* 已啟用模式，並刪除目標Adobe Experience Manager (AEM)Cloud Service環境中的現有存放庫（製作或發佈）。 然後，以移轉集資料更新。 此模式比非擦去模式更快，因為在非擦去模式中，移轉集會套用在目前內容的頂端。
 
@@ -45,7 +45,7 @@ ht-degree: 12%
   `data store size + node store size * 1.5`
 
    * *資料存放區大小*：「內容轉移工具」會使用 64GB，即使實際資料存放區較大亦然。
-   * *節點存放區大小*：區段存放區目錄大小或 MongoDB 資料庫大小。因此，若區段存放區的大小為 20GB，則需要的可用磁碟空間為 94GB。
+   * *節點存放區大小*：區段存放區目錄大小或 MongoDB 資料庫大小。因此，若區段存放區的大小為 20 GB，則需要的可用磁碟空間為 94 GB。
 
 * 必須在整個內容轉移活動中維護移轉集，以支援內容追加。 在內容轉移活動期間，Cloud Acceleration Manager中一次最多可以為每個專案建立20個移轉集。 如果需要超過20個移轉集，請在Cloud Acceleration Manager中建立第二個專案。 但是，這需要額外的專案管理和產品外控管，以避免多個使用者覆寫目標上的內容。
 

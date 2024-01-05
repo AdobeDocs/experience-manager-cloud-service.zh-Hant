@@ -2,7 +2,7 @@
 title: 為伺服器端API產生存取權杖
 description: 瞭解如何產生安全JWT權杖，以促進協力廠商伺服器與AEMas a Cloud Service之間的通訊
 exl-id: 20deaf8f-328e-4cbf-ac68-0a6dd4ebf0c9
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
 source-wordcount: '2089'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->In addition to this documentation, you can also consult the tutorials on [Token-based authentication for AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=en#authentication) and [Getting a Login Token for Integrations](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-getting-login-token-integrations.html). -->
+>In addition to this documentation, you can also consult the tutorials on [Token-based authentication for AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html#authentication) and [Getting a Login Token for Integrations](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-getting-login-token-integrations.html). -->
 
 ## 伺服器對伺服器流量 {#the-server-to-server-flow}
 
@@ -113,7 +113,7 @@ curl -H "Authorization: Bearer <your_ims_access_token>" https://author-p123123-e
 1. 選取 **AEMas a Cloud Service**.
 1. 按下 **新設定檔** 按鈕。
 
-   ![新建設定檔](/help/implementing/developing/introduction/assets/s2s-newproductprofile.png)
+   ![新設定檔](/help/implementing/developing/introduction/assets/s2s-newproductprofile.png)
 
 1. 為設定檔命名，然後按 **儲存**.
 
@@ -137,7 +137,7 @@ curl -H "Authorization: Bearer <your_ims_access_token>" https://author-p123123-e
 
 若要檢查此資訊，請執行下列動作：
 
-1. 登入編寫執行個體。
+1. 登入製作執行個體。
 1. 前往 **工具** > **安全性**，然後按一下 **群組** 卡片。
 1. 在群組清單中找出您建立的設定檔名稱，然後按一下該設定檔：
 
@@ -154,7 +154,7 @@ curl -H "Authorization: Bearer <your_ims_access_token>" https://author-p123123-e
 1. 檢查您的技術帳戶是否為使用者清單，然後選取它。
 1. 按一下 **群組** 標籤，以便您確認使用者屬於與產品設定檔相對應的群組。 此使用者也是少數其他群組的成員，包括「貢獻者」：
 
-   ![群組會籍](/help/implementing/developing/introduction/assets/s2s-groupmembership.png)
+   ![群組成員資格](/help/implementing/developing/introduction/assets/s2s-groupmembership.png)
 
 >[!NOTE]
 >
@@ -171,7 +171,7 @@ curl -H "Authorization: Bearer <your_ims_access_token>" https://author-p123123-e
 
 1. 在下列視窗中按一下「編輯」按鈕：
 
-   ![編輯權限](/help/implementing/developing/introduction/assets/s2s-editpermissions.png) 
+   ![編輯許可權](/help/implementing/developing/introduction/assets/s2s-editpermissions.png) 
 
 1. 適當修改許可權，然後按一下 **儲存**
 

@@ -3,9 +3,9 @@ title: 雲端中的 Dispatcher
 description: 了解 Dispatcher 工具、支援的 Apache 模組以及舊式和靈活模式。
 feature: Dispatcher
 exl-id: 6d78026b-687e-434e-b59d-9d101349a707
-source-git-commit: 127b79d766a4dfc33a2ed6016e191e771206d791
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
-source-wordcount: '993'
+source-wordcount: '716'
 ht-degree: 100%
 
 ---
@@ -50,7 +50,7 @@ Uncompressing aem-sdk-dispatcher-tools-<version>-unix.sh 100%
 
 Dispatcher 工具用於驗證和偵錯專案的 Dispatcher 設定。根據專案的 Dispatcher 設定是以靈活模式還是傳統模式建構的，在下面參考的頁面中進一步了解如何使用這些工具：
 
-* **靈活模式** - 建議使用的模式，也是 [AEM 原型 28](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hant) 及更高版本的預設模式，Cloud Manager 也將其用於 Cloud Manager 2021.7.0 版本之後建立的新環境。客戶可以透過新增資料夾和檔案 `opt-in/USE_SOURCES_DIRECTLY` 來啟動此模式。透過使用這種更靈活的模式，重寫資料夾下的檔案結構沒有限制，而在傳統模式下需要單一 `rewrite.rules` 檔案。此外，可以新增的規則數量也沒有限制。如需資料夾結構和本機驗證的詳細資訊，請參閱[使用 Dispatcher 工具進行驗證和偵錯](/help/implementing/dispatcher/validation-debug.md)。
+* **靈活模式** - 建議使用的模式，也是 [AEM 原型 28](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) 及更高版本的預設模式，Cloud Manager 也將其用於 Cloud Manager 2021.7.0 版本之後建立的新環境。客戶可以透過新增資料夾和檔案 `opt-in/USE_SOURCES_DIRECTLY` 來啟動此模式。透過使用這種更靈活的模式，重寫資料夾下的檔案結構沒有限制，而在傳統模式下需要單一 `rewrite.rules` 檔案。此外，可以新增的規則數量也沒有限制。如需資料夾結構和本機驗證的詳細資訊，請參閱[使用 Dispatcher 工具進行驗證和偵錯](/help/implementing/dispatcher/validation-debug.md)。
 
 * **傳統模式** - 如需詳細了解 Dispatcher 設定傳統模式的資料夾結構和本機驗證，請參閱[使用 Dispatcher 工具進行驗證和偵錯 (傳統)](/help/implementing/dispatcher/validation-debug-legacy.md)
 

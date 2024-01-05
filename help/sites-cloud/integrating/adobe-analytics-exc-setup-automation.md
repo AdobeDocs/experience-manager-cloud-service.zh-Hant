@@ -4,7 +4,7 @@ description: Experience Cloud設定自動化透過簡單的UI精靈介面，提�
 feature: Administering
 role: Admin
 exl-id: 351ead2c-7b0d-4bd9-a020-47516948d467
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
 source-wordcount: '719'
 ht-degree: 0%
@@ -50,7 +50,7 @@ Experience Cloud設定自動化透過簡單的UI精靈介面，提供簡單且�
 1. 選取 **整合Analytics** 按鈕。
 1. 在產生的對話方塊中，提供名稱， **報告套裝ID**.
 
-   此字串用於建立 [報告套裝ID](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html?lang=en) Adobe Analytics中作為所選AEM網站分析資料的資料存放區。 提供的字串會附加環境和層級識別碼以確保唯一性。
+   此字串用於建立 [報告套裝ID](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html) Adobe Analytics中作為所選AEM網站分析資料的資料存放區。 提供的字串會附加環境和層級識別碼以確保唯一性。
 
 1. 重新整理頁面和面板，然後選取 **檢查整合狀態** 以檢查自動化的狀態。
 

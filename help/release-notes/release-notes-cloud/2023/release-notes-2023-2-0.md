@@ -2,9 +2,9 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2023.2.0 版發行說明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2023.2.0 版發行說明。'
 exl-id: 671056e6-84cc-4c2c-bca3-fde68d5cc835
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
-workflow-type: ht
-source-wordcount: '731'
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
+workflow-type: tm+mt
+source-wordcount: '730'
 ht-degree: 100%
 
 ---
@@ -55,7 +55,7 @@ ht-degree: 100%
 
 ### [!DNL Forms] 中可用的新功能 {#new-features-available-in-channel}
 
-* **[使用資料擷取核心元件以建置最適化表單](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=zh-Hant)**：[使用最適化表單編輯器](/help/forms/creating-adaptive-form-core-components.md)根據標準化的資料擷取元件 (核心元件) 建立表單。這些元件為您的數位註冊體驗提供自訂功能、縮短的開發時間並降低維護成本。
+* **[使用資料擷取核心元件以建置最適化表單](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)**：[使用最適化表單編輯器](/help/forms/creating-adaptive-form-core-components.md)根據標準化的資料擷取元件 (核心元件) 建立表單。這些元件為您的數位註冊體驗提供自訂功能、縮短的開發時間並降低維護成本。
 
 * **[前端管道支援設計以核心元件為基礎之最適化表單的樣式](/help/forms/using-themes-in-core-components.md)**：通過使用前端部署管道部署，為以核心元件為基礎之最適化表單使用標準化的 BEM 型主題，以增強表單的外觀和風格並符合您組織認可的品牌設計方針。
 

@@ -2,10 +2,10 @@
 title: 內容轉移工具的先決條件
 description: 熟悉內容轉移工具的先決條件
 exl-id: 41a9cff1-4d89-480c-b9fc-5e8efc2a0705
-source-git-commit: 5964801192fc4a50b7f04852e3128f8218ca4cc5
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
-source-wordcount: '553'
-ht-degree: 17%
+source-wordcount: '500'
+ht-degree: 11%
 
 ---
 
@@ -15,8 +15,8 @@ ht-degree: 17%
 >id="aemcloud_ctt_prereqs"
 >title="內容轉移工具的重要使用注意事項"
 >abstract="查看容轉移工具的重要使用注意事項，包括 Java™ 和 AEM 版本、支援的資料存放區類型、使用者群組注意事項等。"
-additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html?lang=zh-Hant" text="使用內容轉移工具的重要考量"
-additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html?lang=zh-Hant#best-practices" text="最佳做法和準則"
+additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html?lang=zh-Hant" text="內容轉移工具的重要使用注意事項"
+additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html#best-practices" text="最佳做法和準則"
 
 下表摘要說明使用「內容轉移工具」的先決條件。
 

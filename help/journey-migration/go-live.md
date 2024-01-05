@@ -2,7 +2,7 @@
 title: 入門
 description: 瞭解在程式碼和內容準備就緒後，如何執行移轉
 exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
-source-git-commit: 75d702cf45e38da4b7259907e7f707b6f18bd428
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
 source-wordcount: '1721'
 ht-degree: 4%
@@ -126,7 +126,7 @@ ht-degree: 4%
 * 執行最終追加內容。
 * 驗證Dispatcher設定。
    * 使用本機Dispatcher驗證器，方便您在本機設定、驗證和模擬Dispatcher
-      * [設定本機Dispatcher工具](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools.html?lang=en#prerequisites)
+      * [設定本機Dispatcher工具](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools.html#prerequisites)
    * 請仔細檢閱虛擬主機組態。
       * 最簡單（也是預設）的解決方案是包含 `ServerAlias *` 虛擬主機檔案中的 `/dispatcher/src/conf.d/available_vhostsfolder`.
          * 如此一來，產品功能測試、Dispatcher快取失效和複製所使用的主機別名就能正常運作。
@@ -152,7 +152,7 @@ ht-degree: 4%
       * TTL是在要求伺服器更新之前DNS記錄保留在快取中的時間。
       * 如果您的TTL非常高，則傳播DNS記錄的更新將需要更長的時間。
 * 執行符合業務需求和目標的效能和安全測試。
-   * 在中繼環境中執行測試。  其大小與生產環境相同。
+   * 在中繼環境中執行測試。  它的大小與生產環境相同。
    * 開發環境與中繼和生產環境的大小不同。
 * 請剪下資料，並確定實際上線是在沒有任何新部署或內容更新的情況下執行的。
 * 建立Admin Console使用者通知設定檔。 另請參閱 [通知設定檔](/help/journey-onboarding/notification-profiles.md)

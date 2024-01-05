@@ -2,9 +2,9 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2023.1.0 版發行說明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2023.1.0 版發行說明。'
 exl-id: f134fdbc-224b-404c-b20f-44cae8bad681
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '976'
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
+workflow-type: tm+mt
+source-wordcount: '975'
 ht-degree: 100%
 
 ---
@@ -35,7 +35,7 @@ ht-degree: 100%
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
-### [!DNL Sites] 中的新功能 預先發佈 {#prerelease-features-sites}
+### [!DNL Sites] 發行前版本的新功能 {#prerelease-features-sites}
 
 * AEM GraphQL 內容傳遞 API 現在支援 GraphQL [分頁](/help/headless/graphql-api/content-fragments.md#paging)和[排序](/help/headless/graphql-api/content-fragments.md#sorting)，以提高擷取和呈現大型內容集的效率。GraphQL 分頁允許以子集傳回結果而非一次全部傳回來縮短查詢回應時間。GraphQL 排序允許按所需順序放置內容集，進而讓使用戶端應用程式更容易處理內容。AEM GraphQL 引擎中的混合篩選可進一步改進查詢回應時間。現在以與查詢篩選器相對應的較小集合的形式從 JCR 讀取內容。
 
@@ -64,7 +64,7 @@ ht-degree: 100%
 
 ### [!DNL Forms] 發行前版本的新功能 {#prerelease-features-forms}
 
-* **[使用資料擷取核心元件以建置最適化表單](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=zh-Hant)**：[使用最適化表單編輯器](/help/forms/creating-adaptive-form-core-components.md)根據標準化的資料擷取元件 (核心元件) 建立表單。這些元件為您的數位註冊體驗提供自訂功能、縮短的開發時間並降低維護成本。
+* **[使用資料擷取核心元件以建置最適化表單](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)**：[使用最適化表單編輯器](/help/forms/creating-adaptive-form-core-components.md)根據標準化的資料擷取元件 (核心元件) 建立表單。這些元件為您的數位註冊體驗提供自訂功能、縮短的開發時間並降低維護成本。
 * **[前端管道支援設計以核心元件為基礎之最適化表單的樣式](/help/forms/using-themes-in-core-components.md)**：通過使用前端部署管道部署，為以核心元件為基礎之最適化表單使用易於自訂的 BEM 型主題，以增強表單的外觀和風格。
 * **[為以核心元件為基礎之最適化表單產產生記錄文件](/help/forms/generate-document-of-record-core-components.md)**：為以核心元件為基礎之最適化表單建立記錄，以提交供長期封存，採列印或文件格式。
 
@@ -98,7 +98,7 @@ ht-degree: 100%
 
 ## 維護版本發行說明 {#maintenance}
 
-您可以在[此處](/help/release-notes/maintenance/latest.md)找到最新的維護版本發行說明。
+您可以在[這裡](/help/release-notes/maintenance/latest.md)找到最新的維護版本發行說明。
 
 ## Cloud Manager {#cloud-manager}
 
@@ -106,4 +106,4 @@ ht-degree: 100%
 
 ## 移轉工具 {#migration-tools}
 
-您可以在[此處](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)找到移轉工具版本的完整清單。
+您可以在[這裡](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)找到移轉工具版本的完整清單。

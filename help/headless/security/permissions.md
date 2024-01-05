@@ -3,9 +3,9 @@ title: Headless 內容的權限考量事項
 description: 了解使用 Adobe Experience Manager 進行 Headless 實作時涉及的不同權限和 ACL 考量事項。了解編寫和發佈環境所需的不同角色和可能權限層級。
 feature: Content Fragments,GraphQL API
 exl-id: 3fbee755-2fa4-471b-83fc-3f4bf056267a
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
-source-wordcount: '841'
+source-wordcount: '811'
 ht-degree: 96%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 96%
 
 作為最佳做法，應在 AEM 的群組上設定權限。也稱為本機群組，這些群組可以在 AEM 編寫環境中管理。
 
-管理群組成員身份最簡單方法是使用 Adobe Identity Management System (IMS) 群組，並將 [IMS 群組指派到本機 AEM 群組](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html?lang=zh-Hant#managing-permissions-in-aem)。
+管理群組成員身份最簡單方法是使用 Adobe Identity Management System (IMS) 群組，並將 [IMS 群組指派到本機 AEM 群組](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html#managing-permissions-in-aem)。
 
 ![Admin Console 權限流程](assets/admin-console-aem-group-permissions.png)
 

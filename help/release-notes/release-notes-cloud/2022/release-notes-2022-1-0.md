@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2022.1.0 版發行說明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2022.1.0 版發行說明。'
 exl-id: 1c40ab67-8fd7-4f29-b8c9-dd98b6d5b490
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
-source-wordcount: '1069'
-ht-degree: 29%
+source-wordcount: '1065'
+ht-degree: 28%
 
 ---
 
@@ -30,7 +30,7 @@ ht-degree: 29%
 
 請檢視 [2022年1月版本總覽](https://video.tv.adobe.com/v/340120) 2022.1.0版新增功能摘要影片。
 
-## Adobe Experience Manager Sites as a Cloud Service {#sites}
+## Adobe Experience Manager Sitesas a Cloud Service {#sites}
 
 * 此 **[啟用前端管道](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md)** 此按鈕位於 **網站** 使用v2頁面核心元件的網站的Sites主控台邊欄。 此按鈕設定網站以載入使用前端管道部署在現有使用者端資料庫之上的主題。
 
@@ -87,7 +87,7 @@ ht-degree: 29%
 
 * 增強的myAccount元件
 * 產品推薦元件支援其他頁面型別（首頁、購物車、訂單確認）
-* **希望清單**
+* **願望清單**
    * 登入的訪客可將產品新增至允許清單
    * 您可以透過myAccount管理願望清單及其產品
    * 可以透過原則（例如產品Teaser、產品詳細資訊）在元件層級上啟用/停用「新增到願望清單」按鈕
@@ -123,7 +123,7 @@ AEMas a Cloud Service2022.01.0中Cloud Manager的發行日期為2022年1月20日
 
 ### 新增功能 {#what-is-new-ctt}
 
-* 內容驗證 — 使用者可以可靠地判斷「內容轉移工具」擷取的所有內容是否已成功擷取至目標例項。 若要使用此功能，請在 `System Console` 來源AEM環境的。 另請參閱 [驗證內容轉移 — 快速入門](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers.html?lang=en#getting-started) 以取得更多詳細資料。
+* 內容驗證 — 使用者可以可靠地判斷「內容轉移工具」擷取的所有內容是否已成功擷取至目標例項。 若要使用此功能，請在 `System Console` 來源AEM環境的。 另請參閱 [驗證內容轉移 — 快速入門](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers.html#getting-started) 以取得更多詳細資料。
 
 ### 錯誤修正 {#bug-fixes-ctt}
 

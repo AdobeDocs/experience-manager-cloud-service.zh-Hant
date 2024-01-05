@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2022.3.0 版發行說明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2022.3.0 版發行說明。'
 exl-id: 761f1605-c421-4f3a-8f90-af23f4f047b1
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
-source-wordcount: '1152'
-ht-degree: 15%
+source-wordcount: '1158'
+ht-degree: 14%
 
 ---
 
@@ -62,9 +62,9 @@ ht-degree: 15%
 
 * **[!DNL Communications - Document Generation APIs]**： [Document Generation API](/help/forms/aem-forms-cloud-service-communications.md) 協助組合、重新排列和驗證PDF檔案。 此服務可讓您以同步模式產生文件。 這些 API 可讓您建立以下用途的應用程式：
 
-   * 組合 PDF 文件.
-   * 分解 PDF 文件.
-   * 轉換為 PDF/A 相容文件並進行驗證.
+   * 組合PDF檔案。
+   * 拆解PDF檔案。
+   * 轉換為並驗證符合PDF/A標準的檔案。
 
 * **自動將超過15頁的PDF forms轉換為最適化表單**：您現在可以使用automated forms conversion服務，將最多40頁的PDF forms轉換為最適化表單。 此服務現在提供將超過15頁的表單部分轉換為最適化表單片段的選項。 它有助於提高轉換表單的渲染速度，並使在自適應表單編輯器中載入大型表單變得更容易。
 
@@ -113,7 +113,7 @@ ht-degree: 15%
 
 ### 新增功能 {#what-is-new-ctt}
 
-* 檢查大小護欄 — 內容轉移工具檢查大小功能有助於減少失敗的內容轉移。  使用「檢查大小」功能，使用者可以1)判斷是否有足夠的磁碟空間 `crx-quickstart` 擷取前的子目錄，以及2)估計移轉集大小並驗證其是否受支援。 如果違反了其中一項或兩項檢查，使用者會在CTT UI中看到警告。 有了這道護欄，您可以避免內容轉移失敗，並主動與Adobe客戶服務討論移轉選項。 另請參閱 [正在決定移轉集大小和磁碟空間](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=en#migration-set-size) 以取得更多詳細資料。
+* 檢查大小護欄 — 內容轉移工具檢查大小功能有助於減少失敗的內容轉移。  使用「檢查大小」功能，使用者可以1)判斷是否有足夠的磁碟空間 `crx-quickstart` 擷取前的子目錄，以及2)估計移轉集大小並驗證其是否受支援。 如果違反了其中一項或兩項檢查，使用者會在CTT UI中看到警告。 有了這道護欄，您可以避免內容轉移失敗，並主動與Adobe客戶服務討論移轉選項。 另請參閱 [正在決定移轉集大小和磁碟空間](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html#migration-set-size) 以取得更多詳細資料。
 
 ## 最佳做法分析工具 {#bpa-release}
 

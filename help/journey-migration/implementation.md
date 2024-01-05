@@ -2,10 +2,10 @@
 title: 實作階段
 description: 確定您的程式碼和內容已準備好移轉至雲端
 exl-id: d124f9a5-a754-4ed0-a839-f2968c7c8faa
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
-source-wordcount: '2339'
-ht-degree: 10%
+source-wordcount: '2282'
+ht-degree: 9%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 10%
 
 在歷程的實作階段中，您將探索各種工具，透過這些工具，您可以讓程式碼和內容準備好移至AEMas a Cloud Service。
 
-## 到目前為止 {#story-so-far}
+## 目前進度 {#story-so-far}
 
 在歷程的上半部分，您已完成 [熟悉AEMas a Cloud Service中的變更](/help/journey-migration/getting-started.md)，並會判斷您的部署是否已準備好透過移至雲端。 [整備階段](/help/journey-migration/readiness.md).
 
@@ -27,7 +27,7 @@ ht-degree: 10%
 * 透過內容轉移工具，讓您快速上手
 * 說明您必須使用的程式碼重構工具，以便讓AEMas a Cloud Service的程式碼符合現代化要求
 
-## 使用 Cloud Manager {#using-cloud-manager}
+## 使用Cloud Manager {#using-cloud-manager}
 
 開始之前，您必須熟悉Cloud Manager，因為這是將程式碼部署至AEMas a Cloud Service的唯一機制。
 
@@ -71,8 +71,8 @@ Cloud Manager 可讓組織在雲端中自行管理 AEM。其內容包含持續�
 
 
 * 在規劃期間，建議您列出必須重構以便與AEMas a Cloud Service相容的區域。 您可以檢閱 [開發指導方針](/help/implementing/developing/introduction/development-guidelines.md) 如需有關如何重構和最佳化程式碼以進行Cloud Service的詳細資訊。
-* 詳閱如何 [管理設定](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/configurations.html?lang=en#what-is-a-configuration) 在AEMas a Cloud Service中。
-* 瞭解如何下載以下載來設定本機開發環境 [AEMAS A CLOUD SERVICESDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=en)
+* 詳閱如何 [管理設定](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/configurations.html#what-is-a-configuration) 在AEMas a Cloud Service中。
+* 瞭解如何下載以下載來設定本機開發環境 [AEMAS A CLOUD SERVICESDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-as-a-cloud-service-sdk.html)
 * 最後，請熟悉 [AEMas a Cloud ServiceJava API](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html).
 
 您也可以：
@@ -104,8 +104,8 @@ Adobe提供數種工具，可協助您加速部分程式碼重構任務。 瞭�
 
 * [資產工作流程移轉](/help/journey-migration/moving-to-aem-assets/asset-workflow-migration-tool.md)，此工具可用來自動移轉資產處理工作流程
 * [Dispatcher轉換工具](/help/journey-migration/refactoring-tools/dispatcher-transformation-utility-tools.md)，此工具會將您現有的Dispatcher設定轉換為可供AEMas a Cloud Service使用的格式。
-* [存放庫現代化工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/moving/refactoring-tools/repo-modernizer.html?lang=en)，此工具會將AEM多模式專案當作輸入，並將其轉換為AEMas a Cloud Service專案
-* [索引轉換器](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/moving/refactoring-tools/index-converter.html?lang=en)，此工具會將索引轉換為與AEMas a Cloud Service相容的表單
+* [存放庫現代化工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/moving/refactoring-tools/repo-modernizer.html)，此工具會將AEM多模式專案當作輸入，並將其轉換為AEMas a Cloud Service專案
+* [索引轉換器](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/moving/refactoring-tools/index-converter.html)，此工具會將索引轉換為與AEMas a Cloud Service相容的表單
 * [現代化工具](/help/journey-migration/refactoring-tools/aem-modernization-tools.md)，這是一套公用程式，可用來將舊版AEM功能轉換為AEMas a Cloud Service的現代化且受支援的功能。
 
 AEM as a Cloud Service設定本機開發環境後，請透過參閱 [檔案](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md).

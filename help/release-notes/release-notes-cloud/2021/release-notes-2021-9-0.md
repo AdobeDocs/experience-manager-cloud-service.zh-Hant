@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2021.9.0 版發行說明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2021.9.0 版發行說明。'
 exl-id: 8c12ff09-fbc8-42dd-87c0-46e509604f36
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
-source-wordcount: '1572'
-ht-degree: 20%
+source-wordcount: '1519'
+ht-degree: 19%
 
 ---
 
@@ -68,14 +68,14 @@ CQ-4328183 was not reported on CS so not documented here.
 
 * **Analytics for Adaptive Forms**  — 您現在可以透過Adobe Analytics for Adaptive Forms擷取及追蹤一般使用者行為，以收集一般使用者的深入解析。 它可幫助您根據資料來進行明智的決策，以改善一般使用者體驗。
 
-* **輕鬆將Adobe Experience Manager (AEM) Forms連線至Microsoft®Dynamics和Salesforce**  — 此服務提供適用於Microsoft® Dynamics和Salesforce的現成資料來源設定和資料模型。 這可讓它 [開發人員更快且更輕鬆地將Microsoft®Dynamics和Salesforce設定為最適化表單的資料來源](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-msdynamics-salesforce.html?lang=zh-Hant).
+* **輕鬆將Adobe Experience Manager (AEM) Forms連線至Microsoft®Dynamics和Salesforce**  — 此服務提供適用於Microsoft® Dynamics和Salesforce的現成資料來源設定和資料模型。 這可讓它 [開發人員更快且更輕鬆地將Microsoft®Dynamics和Salesforce設定為最適化表單的資料來源](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-msdynamics-salesforce.html).
 
-* **使用DocuSign在最適化表單上進行電子簽章**  — 您可以使用DocuSign在最適化表單上進行電子簽章。 此服務會提供自訂提供動作，以搭配最適化表單使用 DocuSign。您可以安裝Software Distribution上可用的套件，以匯入提交動作。
+* **使用DocuSign在最適化表單上進行電子簽章**  — 您可以使用DocuSign在最適化表單上進行電子簽章。 此服務提供自訂提交動作，可搭配最適化表單使用DocuSign。 您可以安裝Software Distribution上可用的套件，以匯入提交動作。
 
 ### [!DNL Forms] 的 Beta 版功能 {#sep-what-is-new-forms-prerelease}
 
 * **統一的儲存聯結器**  — 使用統一的儲存聯結器可將客戶管理的存放庫中的程式內資料外部化。 例如，您可以
-   * 啟用Forms入口網站的儲存並繼續功能，並將最適化表單草稿儲存在客戶管理的資料存放庫中。
+   * 啟用 Forms Portal 的儲存並繼續功能，並將最適化表單草稿儲存在客戶管理的資料存放庫中。
    * 將包含敏感個人資料 (SPD) 的程序內 AEM 工作流程資料 (AEM 工作流程變數資料) 儲存在客戶管理的存放庫中。
 
 * **[!DNL AEM Forms as a Cloud Service - Communications]** - [通訊API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications.html) 協助您合併XDP範本和XML資料，以產生多種格式的列印檔案。 此服務可讓您以同步模式產生文件。 這些 API 可讓您建立以下用途的應用程式：
@@ -112,7 +112,7 @@ CQ-4328183 was not reported on CS so not documented here.
 ### 新增功能 {#what-is-new-screens}
 
 * Screensas a Cloud Service現在可支援基本播放監控。 播放器現在會報告每次ping （預設為30秒鐘）的各種播放量度。 根據這些量度，它可以偵測各種邊緣情況（停滯體驗、空白熒幕、排程問題等）。 此功能可讓團隊在遠端監控播放器是否正確播放內容。 它改善了對於空白熒幕或現場中斷體驗的反應性，並降低向使用者顯示中斷體驗的風險。
-另請參閱 [基本播放監視](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/manage-player-registration/installing-screens-cloud-player.html?lang=en#playback-monitoring) 以取得更多詳細資料。
+另請參閱 [基本播放監視](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/manage-player-registration/installing-screens-cloud-player.html#playback-monitoring) 以取得更多詳細資料。
 
 * 現在Screensas a Cloud Service支援影片的縮圖。 內容作者可以定義影片的縮圖，好讓影像可以當做預留位置使用，並正確測試內容播放和目標定位，同時由適當的團隊完成實際影片。 如果影片播放失敗，也可以使用該影像。
 另請參閱 [影片的縮圖支援](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/core-product-features/thumbnail-support-videos.html) 以取得更多詳細資料。
@@ -153,7 +153,8 @@ CQ-4328183 was not reported on CS so not documented here.
 
 ## 發行日期 {#release-date-cm-sept}
 
-AEM as a Cloud Service 2021.9.0 中的 Cloud Manager 發行日期是 2021 年 9 月 09 日。下一版本計畫於2021年10月7日發行。
+AEMas a Cloud Service2021.9.0中Cloud Manager的發行日期為2021年9月09日。
+下一版本計畫於2021年10月7日發行。
 
 ### 新增功能 {#what-is-new-cm-sept}
 
@@ -181,7 +182,7 @@ Cloud Acceleration Manager的發行日期為2021年10月4日。
 
 ### 新增功能 {#what-is-new-cam}
 
-* Cloud Acceleration Manager現在可讓使用者在可列印的預覽中檢視BPA報告，以便進行簡易列印或列印PDF，以輕鬆共用。 請參閱中的步驟6和7 [使用Best Practices Analysis卡](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=en#best-practices-analysis).
+* Cloud Acceleration Manager現在可讓使用者在可列印的預覽中檢視BPA報告，以便進行簡易列印或列印PDF，以輕鬆共用。 請參閱中的步驟6和7 [使用Best Practices Analysis卡](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-readiness-phase.html#best-practices-analysis).
 
 ## 內容轉移工具 {#content-transfer-tool}
 
@@ -191,7 +192,7 @@ Cloud Acceleration Manager的發行日期為2021年10月4日。
 
 ### 新增功能 {#what-is-new-ctt}
 
-* 透過簡化的使用者體驗改善使用者對應，包括以下列出的功能。 如需詳細資訊，請參閱 [使用使用者對應工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/legacy-user-mapping-tool/using-user-mapping-tool-legacy.html?lang=en#using-user-mapping-tool).
+* 透過簡化的使用者體驗改善使用者對應，包括以下列出的功能。 如需詳細資訊，請參閱 [使用使用者對應工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/legacy-user-mapping-tool/using-user-mapping-tool-legacy.html#using-user-mapping-tool).
    * 在執行使用者對應之前測試與使用者管理API的連線
    * 正常略過錯誤，並繼續使用者對應活動
    * 如果存取Token過期（24小時後），使用者對應不再失敗。 可以從上次停止的位置重新執行使用者對應。

@@ -2,7 +2,7 @@
 title: AEM as a Cloud Service SDK
 description: AEMas a Cloud Service軟體開發套件概覽
 exl-id: 06f3d5ee-440e-4cc5-877a-5038f9bd44c6
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
 source-wordcount: '1213'
 ht-degree: 1%
@@ -25,7 +25,7 @@ AEMas a Cloud ServiceSDK由下列成品組成：
 
 ## 針對SDK進行建置 {#building-for-the-sdk}
 
-AEMas a Cloud ServiceSDK可用來建置和部署自訂程式碼。 請參閱 [AEM專案原型檔案](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=en). 基本上，會執行下列步驟：
+AEMas a Cloud ServiceSDK可用來建置和部署自訂程式碼。 請參閱 [AEM專案原型檔案](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html). 基本上，會執行下列步驟：
 
 * **編譯程式碼**. 如預期般編譯原始程式碼，產生結果內容套件
 * **建置成品**. 在此過程中會建立成品

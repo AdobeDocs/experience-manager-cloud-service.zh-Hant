@@ -2,10 +2,10 @@
 title: 在Cloud Manager中將Screens附加元件新增到新計畫
 description: 瞭解如何在Cloud Manager for Screensas a Cloud Service將Screens附加元件新增到新程式。
 exl-id: 36d1e1e9-5272-4138-9e0d-8476edc729f0
-source-git-commit: c31f43986e44099a3a36cc6c9c2f1a7251499ffb
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
-source-wordcount: '308'
-ht-degree: 6%
+source-wordcount: '288'
+ht-degree: 3%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 6%
 本節說明如何在Cloud Manager中將Screens作為附加元件新增到新計畫。
 
 >[!NOTE]
->另請參閱 [瞭解方案和方案型別](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/program-types.html?lang=en) 以進一步瞭解Cloud Manager計畫。
+>另請參閱 [瞭解方案和方案型別](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/program-types.html) 以進一步瞭解Cloud Manager計畫。
 
 ## 目標 {#objective}
 
@@ -27,7 +27,7 @@ ht-degree: 6%
 1. 瀏覽至 [Cloud Manager](https://my.cloudmanager.adobe.com/).
 
    >[!NOTE]
-   >另請參閱 [Cloud Manager簡介](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager.html?lang=zh-Hant) 以瞭解Cloud Manager。
+   >另請參閱 [Cloud Manager簡介](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager.html) 以瞭解Cloud Manager。
 
 1. 按一下 **新增計畫** 從Cloud Manager登陸頁面。
 

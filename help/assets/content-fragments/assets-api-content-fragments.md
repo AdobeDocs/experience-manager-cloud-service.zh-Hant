@@ -3,7 +3,7 @@ title: Assets HTTP API中的Adobe Experience Manager as a Cloud Service內容片
 description: 瞭解Assets HTTP API支援內容片段，這是Adobe Experience Manager的Headless傳送功能的重要一環。
 feature: Content Fragments,Assets HTTP API
 exl-id: d72cc0c0-0641-4fd6-9f87-745af5f2c232
-source-git-commit: 62ede258711d0cb8d0b72479559c37221509e23f
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
 source-wordcount: '1749'
 ht-degree: 11%
@@ -153,8 +153,8 @@ HTTP 方法決定要執行的操作：
 >
 >如需詳細資訊，請參閱：
 >
->* [CORS/AEM 說明](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=en)
->* [影片 — 使用AEM開發CORS (04:06)](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/develop-for-cross-origin-resource-sharing.html?lang=en)
+>* [CORS/AEM 說明](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html)
+>* [影片 — 使用AEM開發CORS (04:06)](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/develop-for-cross-origin-resource-sharing.html)
 >
 
 在有特定驗證需求的環境中，建議使用OAuth。
@@ -358,4 +358,4 @@ A [內容片段](/help/assets/content-fragments/content-fragments.md) 是一種�
 如需詳細資訊，請參閱：
 
 * [Assets HTTP API檔案](/help/assets/mac-api-assets.md)
-* [AEM Gem工作階段： OAuth](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2014/aem-oauth-server-functionality-in-aem.html?lang=en)
+* [AEM Gem工作階段： OAuth](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2014/aem-oauth-server-functionality-in-aem.html)

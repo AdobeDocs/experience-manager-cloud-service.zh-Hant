@@ -2,14 +2,14 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2020.11.0 版發行說明。'
 description: '"[!DNL Adobe Experience Manager] 2020.11.0版as a Cloud Service發行說明。」'
 exl-id: 8066c0fb-c2f5-4625-9448-b0c74ff4e192
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
-source-wordcount: '1262'
-ht-degree: 14%
+source-wordcount: '1223'
+ht-degree: 13%
 
 ---
 
-# [!DNL Adobe Experience Manager]as a Cloud Service 版發行說明 {#release-notes}
+# 版本注意事項 [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
 以下區段會概述以下的一般發行說明： [!DNL Experience Manager] as a Cloud Service。
 
@@ -34,7 +34,7 @@ ht-degree: 14%
 
 * **大量資產擷取**：為客戶提供可使用以下功能的可擴充雲端原生擷取服務： [!DNL Experience Manager] as a Cloud Service架構，包括資產微服務。 主要使用案例包括大規模內嵌與監控、報告和排程，同時允許使用通用雲端上傳工具將資產初始傳輸到雲端資料存放區。 另請參閱 [資產大量擷取器工具](/help/assets/add-assets.md#asset-bulk-ingestor).
 
-  此工具適用於系統管理員、顧問或實作合作夥伴角色。 此功能可進行大規模擷取，最好在初始擷取或偶爾大量擷取期間使用。 對於較小的內嵌工作，請使用 [[!DNL Experience Manager] 案頭應用程式](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=en) 或 [使用Assets使用者介面上傳](/help/assets/add-assets.md#upload-assets).
+  此工具適用於系統管理員、顧問或實作合作夥伴角色。 此功能可進行大規模擷取，最好在初始擷取或偶爾大量擷取期間使用。 對於較小的內嵌工作，請使用 [[!DNL Experience Manager] 案頭應用程式](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html) 或 [使用Assets使用者介面上傳](/help/assets/add-assets.md#upload-assets).
 
   ![大量匯入工具的設定](/help/assets/assets/bulk-import-config-low-res.png)
 
@@ -75,7 +75,7 @@ ht-degree: 14%
 
 * 已發行CIF Venia Reference Site - 2020.11.05，其中包含最新CIF核心元件1.5.0版。另請參閱 [CIF Venia參考網站](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.10.27) 以取得更多詳細資料。
 
-* 已發行CIF Core Components v1.5.0。另請參閱 [CIF核心元件](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.5.0) 以取得更多詳細資料。
+* 已發行CIF Core Components v1.5.0。另請參閱 [CIF Core Components](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.5.0) 以取得更多詳細資料。
 
 ### 錯誤修正 {#bug-fixes-commerce}
 
@@ -113,7 +113,7 @@ AEM as a Cloud Service 2020.11.0 中的 Cloud Manager 發行日期是 2020 年 1
 
 ### SDK建置分析器 {#analyzers}
 
-AEMas a Cloud ServiceSDK Build Analyzer Maven外掛程式會偵測Maven專案中的問題，包括遺漏的相依專案。 它讓開發人員有機會在本機開發期間以及使用Cloud Manager部署到雲端環境之前發現問題。 如需詳細資訊，請參閱檔案 [此處](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=en#developing) 和 [此處](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=en#building-for-the-sdk).
+AEMas a Cloud ServiceSDK Build Analyzer Maven外掛程式會偵測Maven專案中的問題，包括遺漏的相依專案。 它讓開發人員有機會在本機開發期間以及使用Cloud Manager部署到雲端環境之前發現問題。 如需詳細資訊，請參閱檔案 [此處](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html#developing) 和 [此處](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html#building-for-the-sdk).
 
 ### 其他 {#others-foundation}
 

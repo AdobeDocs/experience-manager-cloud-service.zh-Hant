@@ -2,9 +2,9 @@
 title: 在Screensas a Cloud Service中建立視訊轉譯
 description: 本頁面說明如何在Screensas a Cloud Service中建立視訊轉譯。
 exl-id: a9c46036-cd29-47fa-81d9-c865cf22c98a
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
-source-wordcount: '366'
+source-wordcount: '360'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 0%
 1. 在Screens內容提供者中導覽至您的頻道。
 
    >[!NOTE]
-   >另請參閱 [使用Screens內容提供者](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html?lang=en#screens-content-provider) 以取得更多詳細資料。
+   >另請參閱 [使用Screens內容提供者](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html#screens-content-provider) 以取得更多詳細資料。
 
 1. 從左側導覽列按一下「工具」區段，然後按一下 **資產** 然後按一下 **處理設定檔**.
 

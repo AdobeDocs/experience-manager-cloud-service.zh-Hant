@@ -2,7 +2,7 @@
 title: 註冊、登入和使用者個人資料
 description: 瞭解AEMas a Cloud Service的註冊、登入、使用者資料和群組同步
 exl-id: a991e710-a974-419f-8709-ad86c333dbf8
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
 source-wordcount: '1132'
 ht-degree: 1%
@@ -94,7 +94,7 @@ AEMas a Cloud Service已啟用Cookie型粘性工作階段，這可確保一般�
 使用者設定檔資訊的寫入和讀取方式有兩種：
 
 * 搭配使用的伺服器端 `com.adobe.granite.security.user` 介面UserPropertiesManager介面，可將資料放置在使用者節點下的中 `/home/users`. 確保不快取每位使用者不重複的頁面。
-* 使用ContextHub的使用者端，如所述 [說明檔案](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/personalization/contexthub.html?lang=en#personalization).
+* 使用ContextHub的使用者端，如所述 [說明檔案](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/personalization/contexthub.html#personalization).
 
 ### 協力廠商資料存放區 {#third-party-data-stores}
 
@@ -104,7 +104,7 @@ AEMas a Cloud Service已啟用Cookie型粘性工作階段，這可確保一般�
 
 ## 許可權（已關閉的使用者群組） {#permissions-closed-user-groups}
 
-發佈層存取原則(也稱為封閉式使用者群組(CUG))在AEM作者中定義為 [此處說明](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/cug.html?lang=en#applying-your-closed-user-group-to-content-pages). 若要限制某些使用者存取網站的某些區段或頁面，請視需要使用AEM作者套用CUG （如此處所述），並將它們復寫至發佈階層。
+發佈層存取原則(也稱為封閉式使用者群組(CUG))在AEM作者中定義為 [此處說明](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/cug.html#applying-your-closed-user-group-to-content-pages). 若要限制某些使用者存取網站的某些區段或頁面，請視需要使用AEM作者套用CUG （如此處所述），並將它們復寫至發佈階層。
 
 * 如果使用者透過使用SAML向身分提供者(IdP)進行驗證來登入，驗證處理常式將識別使用者的群組成員資格（應與發佈層上的CUG相符），並透過存放庫記錄保留使用者與群組之間的關聯
 * 如果在沒有IdP整合的情況下完成登入，則自訂程式碼可以套用相同的存放庫結構關係。

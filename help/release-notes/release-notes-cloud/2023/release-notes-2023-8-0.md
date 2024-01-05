@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2023.8.0 版發行說明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2023.8.0 版發行說明。'
 exl-id: a0ffa6cf-64ae-468c-93f4-ac6805ef907e
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
-workflow-type: ht
-source-wordcount: '1687'
-ht-degree: 100%
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
+workflow-type: tm+mt
+source-wordcount: '1691'
+ht-degree: 95%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 100%
 
 ### [!DNL Experience Manager Sites] 中的新功能 {#sites-features}
 
-* [內容片段主控台](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=zh-Hant)現在可讓使用者檢視標記，並依據作為中繼資料套用於內容片段的標記進行搜尋。使用者即不必再為了此功能而切換到資產 UI，減少了內容切換並提高了效率。
+* [內容片段主控台](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html)現在可讓使用者檢視標記，並依據作為中繼資料套用於內容片段的標記進行搜尋。使用者即不必再為了此功能而切換到資產 UI，減少了內容切換並提高了效率。
 
   ![在內容片段主控台中進行標記](/help/assets/content-fragments-console-tags.png)
 * 新的內容片段編輯器現已在 AEM as a Cloud Service 上提供。此編輯器可簡化內容作者的製作工作，並減少他們編輯內容時在不同應用程式之間切換的需要，進而讓內容作者能夠提高工作效率。
@@ -70,11 +70,11 @@ You can now assign metadata form to a specific folder within your Assets Essenti
 
   ![從資料來源大量匯入資產](/help/release-notes/assets/bulk-import.png)
 
-* **由 Adobe Express 提供支援的影像編輯工具**：簡單直觀的[影像編輯工具是由 Adobe Express](/help/assets/edit-images-assets-view.md) 提供支援，可直接在 AEM Assets 中使用；此工具可增加內容重複使用性並加快內容流通速度。
+* **Adobe Express支援的影像編輯工具**：簡單又直觀 [Adobe Express支援的影像編輯工具](/help/assets/edit-images-assets-view.md) 可直接在AEM Assets中使用，以提高內容重複使用率並加快內容速度。
 
   ![使用 Adobe Express 進行影像編輯](/help/release-notes/assets/edit-adobe-express.png)
 
-* **為「我的工作區快速存取」釘選項目時具備靈活性**：能夠為您自己、整個組織或群組清單選取和釘選項目，讓這些項目能夠根據您的選擇顯示在[「我的工作區」的「快速存取」區段](/help/assets/my-workspace-assets-view.md)中。
+* **為「我的工作區快速存取」釘選專案時的靈活性**：可選取並釘選您、整個組織或群組清單的專案，以便這些專案顯示在 [我的工作區的快速存取區段](/help/assets/my-workspace-assets-view.md) 根據您的選取。
 
   ![為群組釘選項目](/help/release-notes/assets/pin-items-for-groups.png)
 

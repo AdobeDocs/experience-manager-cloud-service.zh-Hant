@@ -3,10 +3,10 @@ title: AEM Screens as a Cloud Service
 description: 了解更多關於 AEM Screens，以及這項數位招牌解決方案如何運作。
 landing-page-description: 了解 AEM Screens as a Cloud Service。
 exl-id: 5acb8e90-f268-4b99-9b6f-e05ba0f3a482
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
-workflow-type: ht
-source-wordcount: '420'
-ht-degree: 100%
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
+workflow-type: tm+mt
+source-wordcount: '346'
+ht-degree: 98%
 
 ---
 
@@ -15,16 +15,16 @@ ht-degree: 100%
 此頁面可協助您了解更多關於 AEM Screens，以及這項數位招牌解決方案如何運作。取得自助資源並學習最新功能。
 
 >[!NOTE]
->對於 AEM 6.5 的 AEM Screens，請參閱 [AEM Screens 使用者指南](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html?lang=zh-Hant)。
+>對於 AEM 6.5 的 AEM Screens，請參閱 [AEM Screens 使用者指南](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html)。
 
 
 ## 重要內容和 AEM Screens as a Cloud Service 文章 {#key-articles}
 
-* [簡介](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/overview/introduction.html?lang=zh-Hant)
-* [入門](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/onboarding-screens-cloud/first-time-login-screens-cloud.html?lang=zh-Hant)
-* [設定 Screens 服務和內容提供者](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html?lang=zh-Hant)
-* [在 Screens as a Cloud Service 建立專案](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/creating-projects-screens-cloud.html?lang=zh-Hant)
-* [安裝 Screens 播放器](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/manage-player-registration/installing-screens-cloud-player.html?lang=zh-Hant)
+* [簡介](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/overview/introduction.html)
+* [入門](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/onboarding-screens-cloud/first-time-login-screens-cloud.html)
+* [設定 Screens 服務和內容提供者](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html)
+* [在 Screens as a Cloud Service 建立專案](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/creating-projects-screens-cloud.html)
+* [安裝 Screens 播放器](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/manage-player-registration/installing-screens-cloud-player.html)
 
 ## Experience Manager as a Cloud Service 指南 {#aem-guides}
 

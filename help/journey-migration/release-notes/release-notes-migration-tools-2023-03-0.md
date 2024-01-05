@@ -3,9 +3,9 @@ title: AEMas a Cloud Service版本2023.03.0中移轉工具的發行說明
 description: AEMas a Cloud Service版本2023.03.0中移轉工具的發行說明
 feature: Release Information
 exl-id: cdc57cca-e10a-4b0d-b803-910ccc9350a6
-source-git-commit: d7e5a14c2dfee41b4ab5af733218fe58d17871fa
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
-source-wordcount: '320'
+source-wordcount: '301'
 ht-degree: 5%
 
 ---
@@ -37,8 +37,8 @@ Best Practices Analyzer v2.1.40的發行日期為2023年3月3日。
 
 ### 新增功能 {#what-is-new-ctt}
 
-* 使用者對應已經過簡化，並整合至內容擷取步驟。 不需要任何設定，預設情況下，當使用者起始內容擷取時，會自動完成使用者對應。 如有需要，使用者可以選擇停用使用者對應。 瞭解更多 [此處。](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/user-mapping-and-migration.html?lang=en#user-mapping-detail)
-* 使用的預先複製步驟 [AzCopy](https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10) 已與內容轉移工具整合，以大幅加快內容擷取速度。 安裝此CTT版本時，會自動設定並安裝預先複製。 根據預設，在起始擷取作業時，將會對大於200 GB的移轉集自動執行預先複製。 使用者可以選擇視需要將其停用。 瞭解更多 [此處。](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en)
+* 使用者對應已經過簡化，並整合至內容擷取步驟。 不需要任何設定，預設情況下，當使用者起始內容擷取時，會自動完成使用者對應。 如有需要，使用者可以選擇停用使用者對應。 瞭解更多 [此處。](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/user-mapping-and-migration.html#user-mapping-detail)
+* 使用的預先複製步驟 [AzCopy](https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10) 已與內容轉移工具整合，以大幅加快內容擷取速度。 安裝此CTT版本時，會自動設定並安裝預先複製。 根據預設，在起始擷取作業時，將會對大於200 GB的移轉集自動執行預先複製。 使用者可以選擇視需要將其停用。 瞭解更多 [此處。](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/handling-large-content-repositories.html)
 * CTT現在可用於Windows伺服器。
 
 ### 錯誤修正 {#bug-fixes-ctt}

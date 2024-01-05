@@ -3,9 +3,9 @@ title: AEM as a Cloud Service 中的快取
 description: 瞭解AEMas a Cloud Service快取的基本概念
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
-source-wordcount: '2873'
+source-wordcount: '2775'
 ht-degree: 1%
 
 ---
@@ -42,7 +42,7 @@ Define DISABLE_DEFAULT_CACHING
   ```
 
   >[!NOTE]
-  >Surrogate-Control標頭會套用至Adobe管理的CDN。 若使用 [客戶管理的CDN](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html?lang=en#point-to-point-CDN)，視您的CDN提供者而定，可能需要不同的標頭。
+  >Surrogate-Control標頭會套用至Adobe管理的CDN。 若使用 [客戶管理的CDN](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html#point-to-point-CDN)，視您的CDN提供者而定，可能需要不同的標頭。
 
   設定全域快取控制標頭或符合寬範圍Regex的類似快取標頭時，請務必謹慎，以免套用至必須私人儲存的內容。 請考慮使用多個指示，以確保以微調的方式套用規則。 話雖如此，如果AEMas a Cloud Service偵測到快取標題已套用至偵測到Dispatcher無法快取的專案，則會移除快取標題，如Dispatcher檔案所述。 若要強制AEM一律套用快取標題，您可以新增 **`always`** 選項如下所示：
 
@@ -240,7 +240,7 @@ AEM層預設不會快取blob內容。
 
 如果您希望停用此行為，請提交支援票證。
 
-對於2023年10月之前建立的環境，建議設定Dispatcher設定的 `ignoreUrlParams` 屬性為 [在此處記錄](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#ignoring-url-parameters).
+對於2023年10月之前建立的環境，建議設定Dispatcher設定的 `ignoreUrlParams` 屬性為 [在此處記錄](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#ignoring-url-parameters).
 
 
 ## Dispatcher快取失效 {#disp}
@@ -513,5 +513,5 @@ clientlibs架構提供自動版本管理。 這表示開發人員可以在原始
 1. 尋找AdobeGraniteHTML庫管理員的OSGi設定：
    * 核取核取方塊，以啟用嚴格版本設定
    * 在標示為的欄位中 **長期使用者端快取金鑰**，輸入/的值。*；雜湊
-1. 儲存變更。不需要在原始檔控制中儲存此設定，因為AEMas a Cloud Service會自動在開發、中繼和生產環境中啟用此設定。
+1. 儲存變更。 不需要在原始檔控制中儲存此設定，因為AEMas a Cloud Service會自動在開發、中繼和生產環境中啟用此設定。
 1. 只要使用者端資料庫的內容有所變更，就會產生新的雜湊金鑰並更新HTML參考。

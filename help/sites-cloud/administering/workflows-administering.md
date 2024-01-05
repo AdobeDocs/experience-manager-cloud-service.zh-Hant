@@ -3,10 +3,11 @@ title: 管理工作流程例項
 description: 瞭解如何使用工作流程主控台管理工作流程例項
 feature: Administering
 role: Admin
-source-git-commit: d1da8559da856e028a5dcad1d0c0b2c00176af0c
+exl-id: d2adb5e8-3f0e-4a3b-b7d0-dbbc5450e45f
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
-source-wordcount: '1288'
-ht-degree: 1%
+source-wordcount: '1286'
+ht-degree: 0%
 
 ---
 
@@ -30,10 +31,10 @@ ht-degree: 1%
 1. 在頂端欄的右角，工作流程例項顯示 **執行中的工作流程**， **狀態**、和 **詳細資料**.
 1. **執行中的工作流程** 顯示執行中的工作流程數目及其狀態。 例如，在指定的影像中，顯示的數字為 **執行中的工作流程** 和 **狀態** 的AEM執行個體：
 
-   * **狀態：良好**
+   * **狀態：狀況良好**
      ![status-health](/help/sites-cloud/administering/assets/status-healthy.png)
 
-   * **狀態：不良**
+   * **狀態：狀況不良**
      ![status-unhealth](/help/sites-cloud/administering/assets/status-unhealthy.png)
 
 1. 的 **狀態詳細資料** 在工作流程例項中，按一下 **詳細資料**，以顯示 **執行中的工作流程例項數目**， **已完成的工作流程例項**， **中止的工作流程例項**， **失敗的工作流程例項**，以此類推。 例如，底下是顯示的指定影像 **狀態詳細資料** 替換為：
@@ -46,7 +47,7 @@ ht-degree: 1%
 
    >[!NOTE]
    >
-   > 若要維持工作流程例項正常運作，請遵循以下最佳實務 [定期清除工作流程例項](#regular-purging-of-workflow-instances) 或 [工作流程最佳實務](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-best-practices.html?lang=en).
+   > 若要維持工作流程例項正常運作，請遵循以下最佳實務 [定期清除工作流程例項](#regular-purging-of-workflow-instances) 或 [工作流程最佳實務](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-best-practices.html).
 
 ## 搜尋工作流程例項 {#search-workflow-instances}
 
@@ -264,5 +265,3 @@ public interface UserMetaDataPersistenceProvider {
  
 } 
 ```
-
-

@@ -2,14 +2,14 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2020.12.0 版發行說明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2020.12.0 版發行說明。'
 exl-id: 16875180-1f23-477d-9d4d-e220998c4983
-source-git-commit: c31f43986e44099a3a36cc6c9c2f1a7251499ffb
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
-source-wordcount: '700'
+source-wordcount: '652'
 ht-degree: 10%
 
 ---
 
-# [!DNL Adobe Experience Manager]as a Cloud Service 版發行說明 {#release-notes}
+# 版本注意事項 [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
 以下區段會概述以下的一般發行說明： [!DNL Experience Manager] as a Cloud Service。
 
@@ -38,7 +38,7 @@ ht-degree: 10%
 
 * 已發行CIF Venia參考網站 — 2020.12.01，其中包含最新CIF核心元件1.6.0版。另請參閱 [CIF Venia參考網站](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.12.01) 以取得更多詳細資料。
 
-* 已發行CIF Core Components v1.6.0。另請參閱 [CIF核心元件](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.6.0) 以取得更多詳細資料。
+* 已發行CIF Core Components v1.6.0。另請參閱 [CIF Core Components](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.6.0) 以取得更多詳細資料。
 
 ## Cloud Manager {#cloud-manager}
 
@@ -64,7 +64,7 @@ Adobe Experience Manager (AEM) as a Cloud Service2020.12.0中的Cloud Manager發
 
 ### [!DNL Code Refactoring Tools] 的新增功能 {#what-is-new-crt}
 
-* 新版AIO-CLI外掛程式已發行。 此增效模組的最新版本修正AEM Dispatcher Converter和Repository Modernizer的錯誤，並支援全新公用程式Index Converter。 另請參閱 [Unified Experience](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/refactoring-tools/unified-experience.html?lang=en#benefits) 您可在其中進一步瞭解此外掛程式。
+* 新版AIO-CLI外掛程式已發行。 此增效模組的最新版本修正AEM Dispatcher Converter和Repository Modernizer的錯誤，並支援全新公用程式Index Converter。 另請參閱 [Unified Experience](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/refactoring-tools/unified-experience.html#benefits) 您可在其中進一步瞭解此外掛程式。
 
 * Index Converter公用程式可將客戶的自訂Oak索引定義轉換成與AEMas a Cloud Service相容的Oak索引定義。 另請參閱 [索引轉換器](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/index-converter) 以取得更多詳細資料。
 

@@ -2,9 +2,9 @@
 title: 查詢產生器 API
 description: Asset Share Query Builder的功能透過Java&trade； API和REST API公開。
 exl-id: d5f22422-c9da-4c9d-b81c-ffa5ea7cdc87
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
-source-wordcount: '2008'
+source-wordcount: '1830'
 ht-degree: 0%
 
 ---
@@ -27,9 +27,9 @@ REST API透過HTTP提供相同功能的存取權，且回應會以JSON傳送。
 
 ## Gem講座 {#gem-session}
 
-[AEM Gems](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/overview.html?lang=en) 是Adobe專家提供的一系列深入探討Adobe Experience Manager的技術影片。
+[AEM Gems](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/overview.html) 是Adobe專家提供的一系列深入探討Adobe Experience Manager的技術影片。
 
-您可以 [檢閱查詢產生器專用的工作階段](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2017/aem-search-forms-using-querybuilder.html?lang=en) 以取得工具的概述和使用。
+您可以 [檢閱查詢產生器專用的工作階段](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2017/aem-search-forms-using-querybuilder.html) 以取得工具的概述和使用。
 
 ## 範例查詢 {#sample-queries}
 
@@ -458,7 +458,7 @@ Query loadedQuery = builder.loadQuery("/mypath/getfiles", session);
 說明 **全部** 在目標索引集的開發週期中進行查詢。
 
 1. 啟用QueryBuilder的DEBUG記錄檔以取得基礎的、可解釋的XPath查詢
-   * 導覽至 `https://<host>:<port>/system/console/slinglog`。建立記錄器 `com.day.cq.search.impl.builder.QueryImpl` 在 **偵錯**.
+   * 瀏覽至 `https://<host>:<port>/system/console/slinglog`. 建立記錄器 `com.day.cq.search.impl.builder.QueryImpl` 在 **偵錯**.
 1. 為上述類別啟用DEBUG之後，記錄會顯示查詢產生器產生的XPath。
 1. 從關聯的Query Builder查詢的記錄專案複製XPath查詢，例如：
    * `com.day.cq.search.impl.builder.QueryImpl XPath query: /jcr:root/content//element(*, cq:Page)[(jcr:contains(jcr:content, "WKND") or jcr:contains(jcr:content/@cq:tags, "WKND"))]`

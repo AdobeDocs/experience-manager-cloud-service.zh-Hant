@@ -2,7 +2,7 @@
 title: 使用最佳做法分析工具
 description: 瞭解如何使用Best Practices Analyzer以瞭解升級整備程度。
 exl-id: e8498e17-f55a-4600-87d7-60584d947897
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
 source-wordcount: '2418'
 ht-degree: 42%
@@ -126,7 +126,7 @@ For Adobe Experience Manager 6.1, the tool is not functional and only the HTTP i
 >id="aemcloud_bpa_interpreting"
 >title="解讀最佳做法分析工具的報表"
 >abstract="檢視 BPA 報表輸出有兩種選項：UI 和 CSV。在 AEM 執行個體中執行最佳做法分析工具時，UI 報表會在工具視窗中顯示為結果。CSV 格式的報表包含從「模式偵測器」輸出產生的資訊，且會依類別類型、子類型和重要性層級排序和編排。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=zh-Hant#analysis-report" text="檢閱最佳做法分析報表"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html#analysis-report" text="檢閱最佳做法分析報表"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html?lang=zh-Hant" text="了解最佳做法分析工具報表類別"
 
 在AEM例項中執行Best Practices Analyzer工具時，報表會在工具視窗中顯示為結果。

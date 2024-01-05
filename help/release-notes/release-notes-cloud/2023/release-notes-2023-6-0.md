@@ -1,13 +1,13 @@
 ---
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2023.6.0 版發行說明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2023.6.0 版發行說明。'
-source-git-commit: 7d09cafc4f8518fee185d3f9efc76c33ec20f9a3
-workflow-type: ht
-source-wordcount: '1409'
-ht-degree: 100%
+exl-id: 29cf9548-e413-4e4f-b233-d6bb04918b22
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
+workflow-type: tm+mt
+source-wordcount: '1357'
+ht-degree: 99%
 
 ---
-
 
 # [!DNL Adobe Experience Manager] as a Cloud Service 2023.6.0 版發行說明 {#release-notes}
 
@@ -41,8 +41,8 @@ ht-degree: 100%
 
 ![在內容片段主控台中的預覽](/help/assets/content-fragments-console-preview.png)
 
-* 現在可以使用 AEM GraphQL 在 Headless 情境下，動態最佳化影像以進行 Web 傳遞。[查詢變數](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/images.html?lang=zh-Hant#query-variables)可以在 GraphQL 查詢中定義，以允許分離的用戶端應用程式相應地要求 AEM 中的最佳化影像。
-* 現在可以使用 AEM GraphQL 內容傳遞 API 將[內容片段變化](https://experienceleague.adobe.com/docs/experience-manager-65/assets/content-fragments/content-fragments-variations.html?lang=zh-Hant)上的標記輸出至 JSON。
+* 現在可以使用 AEM GraphQL 在 Headless 情境下，動態最佳化影像以進行 Web 傳遞。[查詢變數](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/images.html#query-variables)可以在 GraphQL 查詢中定義，以允許分離的用戶端應用程式相應地要求 AEM 中的最佳化影像。
+* 現在可以使用 AEM GraphQL 內容傳遞 API 將[內容片段變化](https://experienceleague.adobe.com/docs/experience-manager-65/assets/content-fragments/content-fragments-variations.html)上的標記輸出至 JSON。
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -74,7 +74,7 @@ Experience Manager Assets 現在使您能夠透過搜尋結果使用者介面執
 
 **Dynamic Media：更新了影像設定檔中與智慧型裁切相關欄位**
 
-影像設定檔中一些與智慧型裁切相關之欄位的使用者介面現已更新，以反映定義智慧型裁切的最新指引。請參閱[裁切選項](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles.html?lang=zh-Hant#crop-options)。
+影像設定檔中一些與智慧型裁切相關之欄位的使用者介面現已更新，以反映定義智慧型裁切的最新指引。請參閱[裁切選項](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles.html#crop-options)。
 
 ### 資產檢視中的新功能 {#assets-view-features}
 
@@ -140,7 +140,7 @@ Experience Manager Assets 現在使您能夠透過搜尋結果使用者介面執
 
 * **[將最適化表單提交至 Microsoft® SharePoint 和 Microsoft® OneDrive](/help/forms/configuring-submit-actions.md)**：改善商業使用者的敏捷性，以便快速啟動新表單並將提交的資料儲存在日常使用的工具中，例如 Microsoft® SharePoint 網站或 OneDrive 資料夾。
 
-### Headless 最適化表單早期採用者計畫 {#forms-early-adopter}
+### Headless 最適化表單早期採用者方案 {#forms-early-adopter}
 
 使用 [Headless 最適化表單](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html)讓您的開發人員能夠建立、發佈和管理可透過 API 存取和互動的互動式表單，而不是透過傳統的圖形使用者介面。Headless 最適化表單可協助您：
 

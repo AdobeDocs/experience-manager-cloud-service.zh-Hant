@@ -2,10 +2,10 @@
 title: AEM Screens as a Cloud Service 簡介
 description: 此頁面在介紹 Adobe Experience Manager Screens as a Cloud Service。
 exl-id: b1cc0a63-ecd3-4d89-ac49-f384cc610cdc
-source-git-commit: 97a6a7865f696f4d61a1fb4e25619caac7b68b51
-workflow-type: ht
-source-wordcount: '391'
-ht-degree: 100%
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
+workflow-type: tm+mt
+source-wordcount: '373'
+ht-degree: 99%
 
 ---
 
@@ -19,9 +19,9 @@ AEM Screens as a Cloud Service 是數位招牌解決方案，可讓行銷人員�
 
 Screens as a Cloud Service 有兩個主要元件，即：
 
-* **[內容提供者](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html?lang=zh-Hant)**，這是在 AEM Cloud Service 或 Adobe Managed Services (AMS) 上執行的 Screens 附加元件。Screens 內容提供者可讓內容作者建立和管理管道。內容作者可以新增新內容、編輯內容，而無需擔心建立顯示器或播放器註冊的細節。內容提供者提取開發內容、顯示器或播放器註冊的基本細節。
+* **[內容提供者](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html)**，這是在 AEM Cloud Service 或 Adobe Managed Services (AMS) 上執行的 Screens 附加元件。Screens 內容提供者可讓內容作者建立和管理管道。內容作者可以新增新內容、編輯內容，而無需擔心建立顯示器或播放器註冊的細節。內容提供者提取開發內容、顯示器或播放器註冊的基本細節。
 
-* **[服務提供者](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html?lang=zh-Hant)**，這是在 Adobe I/O Runtime 上運作的數位招牌管理服務。Screens 服務提供者可讓內容作者、開發人員和管理員在內容新增到管道後，管理顯示器和播放器以播放內容。同時，Screens 服務提供者會通知協調器內容將在何處以及何時在高層級播放。
+* **[服務提供者](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html)**，這是在 Adobe I/O Runtime 上運作的數位招牌管理服務。Screens 服務提供者可讓內容作者、開發人員和管理員在內容新增到管道後，管理顯示器和播放器以播放內容。同時，Screens 服務提供者會通知協調器內容將在何處以及何時在高層級播放。
 
 
 ## 架構概述 {#architectural-overview}

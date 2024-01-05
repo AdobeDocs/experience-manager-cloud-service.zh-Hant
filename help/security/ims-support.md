@@ -2,7 +2,7 @@
 title: Adobe Experience Manager as a Cloud Service 的 IMS 支援
 description: Adobe Experience Manager as a Cloud Service 的影像管理系統支援
 exl-id: fb563dbd-a761-4d83-9da1-58f8e462b383
-source-git-commit: 0074f483bffa1cd7c2cc468a74730672511f0956
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
 source-wordcount: '1917'
 ht-degree: 99%
@@ -53,7 +53,7 @@ AEM 客戶應先佈建組織，而在 IMS 佈建過程中，客戶即可在 Admi
 ![IMS 上線](/help/security/assets/ims2.png)
 
 1. 指定的系統管理員會收到 Cloud Manager 的登入邀請函。登入 Cloud Manager 後，系統管理員可以選擇佈建 AEM 計畫和環境，或導覽至 Admin Console 執行管理任務。
-1. 系統管理員需先宣告網域，以確認個別網域的所有權(例如acme.com)
+1. 系統管理員需先宣告網域，以確認各別網域的所有權 (例如，acme.com)
 1. 系統管理員設定使用者目錄
 1. 系統管理員在 Admin Console 中執行 IDP 設定，以設定單一登入。
 1. AEM 管理員可照常管理本機群組和權限。
@@ -213,7 +213,7 @@ AEM 可繼續為管理員使用者支援本機登入。此登入畫面可讓您�
 請參閱角色定義深入了解使用者的角色，這些角色能控制使用者能否使用 Cloud Manager 的特定功能。
 
 >[!NOTE]
->Cloud Manager 已預先設定角色，賦予適當權限。若要了解各個具有特定權限的角色、預先設定的任務或每個角色的相關權限，請參閱[角色型權限](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/role-based-permissions.html?lang=zh-Hant)。
+>Cloud Manager 已預先設定角色，賦予適當權限。若要了解各個具有特定權限的角色、預先設定的任務或每個角色的相關權限，請參閱[角色型權限](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/role-based-permissions.html)。
 
 **使用者新增步驟**
 

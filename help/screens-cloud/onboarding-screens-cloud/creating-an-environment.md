@@ -2,10 +2,10 @@
 title: 建立環境
 description: 本頁面說明如何在Cloud Manager中為Screensas a Cloud Service建立環境。
 exl-id: 744a473c-edad-4bf2-ae87-0175f6451e32
-source-git-commit: c31f43986e44099a3a36cc6c9c2f1a7251499ffb
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
-source-wordcount: '203'
-ht-degree: 9%
+source-wordcount: '194'
+ht-degree: 4%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 9%
 本節說明如何在Cloud Manager中為您的方案建立環境。
 
 >[!NOTE]
->另請參閱 [在Cloud Manager中管理環境](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=zh-Hant) 以瞭解使用者如何建立環境。
+>另請參閱 [在Cloud Manager中管理環境](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html) 以瞭解使用者如何建立環境。
 
 ## 目標 {#objective}
 

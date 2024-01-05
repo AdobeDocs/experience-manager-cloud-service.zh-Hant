@@ -2,9 +2,9 @@
 title: 將體驗片段匯出到 Adobe Target
 description: 瞭解如何將您的體驗片段匯出至Adobe Target，以測試並個人化體驗。
 exl-id: 752d91f9-13a6-40c2-9425-7d18dafe9205
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
-source-wordcount: '2246'
+source-wordcount: '2184'
 ht-degree: 1%
 
 ---
@@ -52,7 +52,7 @@ ht-degree: 1%
 >
 >* [Adobe Target開發](https://developers.adobetarget.com/)
 >* [核心元件 — 體驗片段](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
->* [Adobe Target — 如何使用Adobe Experience Manager (AEM)體驗片段？](https://experienceleague.adobe.com/docs/target/using/experiences/offers/aem-experience-fragments.html?lang=en)
+>* [Adobe Target — 如何使用Adobe Experience Manager (AEM)體驗片段？](https://experienceleague.adobe.com/docs/target/using/experiences/offers/aem-experience-fragments.html)
 >* [AEM 6.5 — 手動設定與Adobe Target的整合 — 建立Target雲端設定](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/target-configuring.html#creating-a-target-cloud-configuration)
 
 ## 先決條件 {#prerequisites}
@@ -87,7 +87,7 @@ ht-degree: 1%
    >
    >如果您將雲端設定新增至體驗片段本身，該設定會由所有變體繼承。
 
-1. 選取 **Cloud Service** 標籤。
+1. 選取「**雲端服務**」標籤。
 
 1. 在 **Cloud Service設定**，選取 **Adobe Target** 下拉式清單中的。
 

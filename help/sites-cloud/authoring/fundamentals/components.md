@@ -2,10 +2,10 @@
 title: 元件
 description: 元件是AEM中內容頁面的基本製作建置組塊
 exl-id: a8118329-1330-49b0-a3f8-a27774f1c5df
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
-source-wordcount: '349'
-ht-degree: 2%
+source-wordcount: '335'
+ht-degree: 1%
 
 ---
 
@@ -43,7 +43,7 @@ AEM隨附多種現成可用的元件，可為網站作者提供全方位功能�
 
 它們是使用AEM最佳實務建置的，也是AEM編寫體驗的基礎。 開發人員可輕鬆擴充核心元件，以符合特定專案需求。
 
-除了WCM核心元件以外，您也可以使用 [最適化Forms核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en#features). 這些核心元件提供標準且簡單的方法來 [建立表單或新增表單至AEM Sites頁面](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md).
+除了WCM核心元件以外，您也可以使用 [最適化Forms核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html#features). 這些核心元件提供標準且簡單的方法來 [建立表單或新增表單至AEM Sites頁面](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md).
 
 ### 設定範本 {#configuring-templates}
 

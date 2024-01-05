@@ -4,7 +4,7 @@ description: 使用使用者對應工具（舊版）
 exl-id: dcb750c4-0f81-4d11-ac6c-0592162b683d
 hide: true
 hidefromtoc: true
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
 source-wordcount: '806'
 ht-degree: 1%
@@ -94,7 +94,7 @@ ht-degree: 1%
 
    >[!IMPORTANT]
    >
-   >* 使用者對應完成後，您可以使用階層連結導覽回「內容移轉」頁面。 「使用者對應」卡片會顯示狀態和時間戳記。 按一下 **內容轉移** 以便建立移轉集來執行擷取。 另請參閱 [執行內容轉移工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=en#running-tool) 以取得更多詳細資料。
+   >* 使用者對應完成後，您可以使用階層連結導覽回「內容移轉」頁面。 「使用者對應」卡片會顯示狀態和時間戳記。 按一下 **內容轉移** 以便建立移轉集來執行擷取。 另請參閱 [執行內容轉移工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html#running-tool) 以取得更多詳細資料。
 
 ### 繼續使用者對應程式 {#resume-user-mapping-process}
 

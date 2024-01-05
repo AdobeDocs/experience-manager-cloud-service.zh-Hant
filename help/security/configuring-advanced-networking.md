@@ -2,10 +2,10 @@
 title: 為 AEM as a Cloud Service 設定進階網路
 description: 了解如何為 AEM as a Cloud Service 設定進階網路功能，例如 VPN 或彈性或專用輸出 IP 地址等
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
 source-wordcount: '3526'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 98%
 
 >[!INFO]
 >
->您還可以在這個[位置](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html?lang=zh-Hant)找到一系列旨在向您逐步解釋每個進階網路選項的文章。
+>您還可以在這個[位置](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html)找到一系列旨在向您逐步解釋每個進階網路選項的文章。
 
 ## 概觀 {#overview}
 
@@ -365,7 +365,7 @@ VPN 允許從著作、發佈或預覽連線到內部部署基礎結構或資料�
 
 API 應該在幾秒鐘內做出回應，表明 `updating` 的狀態，大約 10 分鐘後，呼叫 Cloud Manager 的環境 GET 端點將顯示 `ready` 的狀態，表示已套用對環境的更新。
 
-即使沒有環境流量路由規則（主機或旁路）， `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` 仍然必須呼叫，只能使用空白裝載。
+即使沒有環境流量路由規則 (主機或旁路)，仍然必須用空白承載呼叫 `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking`。
 
 ### 更新 VPN {#updating-the-vpn}
 
@@ -555,7 +555,7 @@ Header always set Cache-Control private
 
 如果已在主要區域中啟用進階網路設定，請依照下列步驟進行：
 
-1. 如果您已鎖定基礎結構，以便將專用的 AEM IP 位址加入允許清單，則建議暫時停用該基礎結構中的任何否決規則。如果不這樣做，有一小段時間您自己的基礎結構會拒絕來自新區域的 IP 位址的請求。如果您已透過FullyQualified Domain Name (FQDN) (`p1234.external.adobeaemcloud.com`，例如)，因為所有AEM區域都會從相同的FQDN輸出進階網路流量
+1. 如果您已鎖定基礎結構，以便將專用的 AEM IP 位址加入允許清單，則建議暫時停用該基礎結構中的任何否決規則。如果不這樣做，有一小段時間您自己的基礎結構會拒絕來自新區域的 IP 位址的請求。如果您已經由完整網域名稱 (FQDN) 鎖定基礎結構 (例如 `p1234.external.adobeaemcloud.com`)，則沒有必要這麼做，因為所有 AEM 區域都會從相同的 FQDN 輸出進階網路流量
 1. 根據進階網路文件中的說明，可透過對 Cloud Manager Create Network Infrastructure API 的 POST 呼叫為次要區域建立計畫範圍的網路基礎結構。承載的 JSON 設定相對於主要區域的唯一差異是區域屬性
 1. 如果您的基礎結構必須由 IP 鎖定以允許 AEM 流量，請新增和 `p1234.external.adobeaemcloud.com` 相符的 IPS。每個區域都應該有一個。
 
@@ -565,7 +565,7 @@ Header always set Cache-Control private
 
 1. 透過對 [Cloud Manager Create Network Infrastructure API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Network-infrastructure/operation/createNetworkInfrastructure) 的 POST 呼叫建立所有區域的網路基礎結構。承載的 JSON 設定相對於主要區域的唯一差異是區域屬性
 1. 若是中繼環境，可透過執行 `PUT api/program/{programId}/environment/{environmentId}/advancedNetworking` 以啟用和設定環境範圍的進階網路。如需詳細資訊，請參閱[這裡](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Environment-Advanced-Networking-Configuration/operation/enableEnvironmentAdvancedNetworkingConfiguration)的 API 文件。
-1. 如有必要，最好使用FQDN來鎖定外部基礎架構(例如， `p1234.external.adobeaemcloud.com`)。 不然可透過 IP 位址進行
+1. 如有必要，可鎖定外部基礎結構，最好透過 FQDN (例如 `p1234.external.adobeaemcloud.com`)。不然可透過 IP 位址進行
 1. 如果中繼環境按預期運作，請啟用並設定環境範圍的進階網路設定以進行生產。
 
 #### VPN {#vpn-regions}

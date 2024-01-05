@@ -2,10 +2,10 @@
 title: 執行管道
 description: 本頁說明如何在Cloud Manager中以Cloud Service專案形式執行Screens管道。
 exl-id: 3203cff7-5668-4f50-a2c5-80ae474b439d
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
-source-wordcount: '309'
-ht-degree: 3%
+source-wordcount: '271'
+ht-degree: 4%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 3%
 本節說明如何在Cloud Manager中執行管道並為您的程式部署程式碼。
 
 >[!NOTE]
->另請參閱 [設定CI-CD管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/configuring-production-pipelines.html?lang=en) 和 [部署程式碼](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html?lang=en) 以瞭解如何在Cloud Manager中執行方案的管道。
+>另請參閱 [設定CI-CD管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/configuring-production-pipelines.html) 和 [部署程式碼](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html) 以瞭解如何在Cloud Manager中執行方案的管道。
 
 ## 目標 {#objective}
 
@@ -35,14 +35,14 @@ ht-degree: 3%
 1. 從以下位置選擇您的選項： **設定管道** 精靈。 按一下「**儲存**」。
 
    >[!NOTE]
-   >若要瞭解設定管道精靈中的選項，請參閱 [從Cloud Manager設定管道設定](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/configuring-production-pipelines.html?lang=en) 以取得更多詳細資料。
+   >若要瞭解設定管道精靈中的選項，請參閱 [從Cloud Manager設定管道設定](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/configuring-production-pipelines.html) 以取得更多詳細資料。
 
    ![影像](/help/screens-cloud/assets/onboarding/run-pipeline2-a.png)
 
 1. 設定管道完成後，會更新行動號召卡。
 
    >[!NOTE]
-   >若要瞭解Cloud Manager中的部署階段，請參閱 [部署程式碼](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html?lang=en) 以取得更多詳細資料。
+   >若要瞭解Cloud Manager中的部署階段，請參閱 [部署程式碼](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html) 以取得更多詳細資料。
 
    ![影像](/help/screens-cloud/assets/onboarding/run-pipeline3.png)
 

@@ -2,10 +2,10 @@
 title: Cloud Acceleration Manager的整備階段
 description: 本頁提供Cloud Acceleration Manager整備階段的概觀。
 exl-id: 2583985b-0358-433c-9d31-38e2c60dc3dc
-source-git-commit: 78ead5f15c2613d9c3bed3025b43423a66805c59
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
-source-wordcount: '981'
-ht-degree: 6%
+source-wordcount: '944'
+ht-degree: 4%
 
 ---
 
@@ -40,12 +40,12 @@ ht-degree: 6%
 1. 下載Best Practices Analyzer (BPA)。
 
    >[!NOTE]
-   >為避免對業務關鍵例項造成影響，Adobe建議您在Author環境中執行BPA。 在自訂、設定、內容和使用者應用程式方面，環境應儘可能接近生產環境。 或者，您可以在複製的生產製作環境中執行 CRA。
+   >為避免對業務關鍵例項造成影響，Adobe建議您在Author環境中執行BPA。 在自訂、設定、內容和使用者應用程式方面，環境應儘可能接近生產環境。 或者，您可以在複製的生產製作環境中執行CRA。
 
    1. 導覽至 [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) 入口網站，並以zip檔案格式下載Best Practices Analyzer。
 
       >[!NOTE]
-      >檢閱 [使用Best Practices Analyzer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html?lang=en#imp-considerations) 以瞭解如何執行BPA。
+      >檢閱 [使用Best Practices Analyzer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html#imp-considerations) 以瞭解如何執行BPA。
 
    1. 將報表匯出為CSV格式
 
@@ -159,7 +159,7 @@ ht-degree: 6%
 ![影像](/help/journey-migration/cloud-acceleration-manager/assets/report-overview3.png)
 
 >[!NOTE]
->另請參閱 [解譯Best Practices Analyzer報表](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html?lang=en) 以瞭解發現專案類別和重要性層級。
+>另請參閱 [解譯Best Practices Analyzer報表](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html) 以瞭解發現專案類別和重要性層級。
 
 #### 最佳實務評估 {#best-practices-assessment}
 
@@ -220,4 +220,4 @@ ht-degree: 6%
 
 ## 下一步 {#whats-next}
 
-瞭解如何登入Cloud Acceleration Manager以及如何建立專案後，您現在已準備好繼續檢閱中的下一個步驟 [實作階段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-implementation-phase.html?lang=en).
+瞭解如何登入Cloud Acceleration Manager以及如何建立專案後，您現在已準備好繼續檢閱中的下一個步驟 [實作階段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-implementation-phase.html).

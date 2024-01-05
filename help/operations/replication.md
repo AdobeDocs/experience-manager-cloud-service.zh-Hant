@@ -2,9 +2,9 @@
 title: 複製
 description: 瞭解AEMas a Cloud Service中的散佈和疑難排解復寫。
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
-source-wordcount: '1341'
+source-wordcount: '1312'
 ht-degree: 1%
 
 ---
@@ -57,7 +57,7 @@ Adobe Experience Manager as a Cloud Service使用 [Sling Content Distribution](h
 
 請勿叫用原始模型。 相反，請務必先複製模型並叫用該副本。
 
-如同所有工作流程，您也可以透過API叫用。 如需詳細資訊，請參閱 [以程式設計方式與工作流程互動](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-program-interaction.html?lang=en#extending-aem).
+如同所有工作流程，您也可以透過API叫用。 如需詳細資訊，請參閱 [以程式設計方式與工作流程互動](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-program-interaction.html#extending-aem).
 
 或者，您可以建立工作流程模型，此模型使用 `Publish Content Tree` 程式步驟：
 
@@ -67,7 +67,7 @@ Adobe Experience Manager as a Cloud Service使用 [Sling Content Distribution](h
 1. 從清單中選取已建立的模型，然後按下 **編輯**
 1. 在下列視窗中，將「處理步驟」拖放至目前的模型流程：
 
-   ![程序步驟](/help/operations/assets/processstep.png)
+   ![程式步驟](/help/operations/assets/processstep.png)
 
 1. 在流程中選取處理步驟，然後選取 **設定** 按一下扳手圖示。
 1. 選取 **程式** 標籤並選取 `Publish Content Tree` 從下拉式清單，然後檢查 **處理常式前進** 核取方塊
@@ -85,7 +85,7 @@ Adobe Experience Manager as a Cloud Service使用 [Sling Content Distribution](h
 
 1. 按下 **完成** 以儲存工作流程模型。
 
-**參數**
+**引數**
 
 * `includeChildren` (布林值，預設： `false`)。 值 `false` 表示只會發佈路徑； `true` 表示也會發佈子項。
 * `replicateAsParticipant` (布林值，預設： `false`)。 若已設定為 `true`，復寫使用 `userid` 執行參與者步驟的主參與者。

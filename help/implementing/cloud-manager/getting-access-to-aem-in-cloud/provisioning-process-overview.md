@@ -1,10 +1,10 @@
 ---
 title: 佈建程序 - 概觀
 description: 佈建程序 - 概觀
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '330'
-ht-degree: 100%
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
+workflow-type: tm+mt
+source-wordcount: '291'
+ht-degree: 98%
 
 ---
 
@@ -34,13 +34,13 @@ ht-degree: 100%
 ![processoverview.jpg](assets/processOverview.jpg)
 
 
-若要了解更多資訊，請參閱 [Experience League 上的 Experience Manager as a Cloud Service 入門](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/home.html?lang=zh-Hant)。
+若要了解更多資訊，請參閱 [Experience League 上的 Experience Manager as a Cloud Service 入門](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/home.html)。
 
 ### 資源和連結
 
-* [AEM as a Cloud Service 的 IMS 支援](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html?lang=zh-Hant)
-* [Cloud Manager 中基於角色的權限](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/what-is-required/role-based-permissions.html?lang=zh-Hant#what-is-required)
-* [存取 Experience Manager as a Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html?lang=zh-Hant#getting-access)
+* [AEM as a Cloud Service 的 IMS 支援](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html)
+* [Cloud Manager 中基於角色的權限](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/what-is-required/role-based-permissions.html#what-is-required)
+* [存取 Experience Manager as a Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html#getting-access)
 
 
 ## Adobe Experience Manager as a Cloud Service 上線程序
@@ -75,4 +75,4 @@ ht-degree: 100%
 ## 說明和資源
 
 * [首次登入 - 雲端服務](/help/journey-onboarding/sysadmin/learning-path-aem-users.md)
-* [設定存取權限至 AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/overview.html?lang=zh-Hant#accessing)
+* [設定存取權限至 AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/overview.html#accessing)
