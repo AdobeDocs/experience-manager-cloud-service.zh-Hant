@@ -1,24 +1,24 @@
 ---
-title: 屬性和類型
-description: 了解 Universal Editor 需要的資料屬性和類型。
+title: 屬性與料號型態
+description: 瞭解Universal Editor所需的資料屬性和專案型別。
 exl-id: 02795a31-244a-42b4-8297-2649125d7777
-source-git-commit: 16f2922a3745f9eb72f7070c30134e5149eb78ce
+source-git-commit: 7550491de94f1e2cbb28b07f8abbdaded5aa04ea
 workflow-type: tm+mt
-source-wordcount: '682'
-ht-degree: 87%
+source-wordcount: '686'
+ht-degree: 81%
 
 ---
 
 
 # 屬性和類型 {#attributes-types}
 
-了解 Universal Editor 需要的資料屬性和類型。
+瞭解Universal Editor所需的資料屬性和專案型別。
 
 {{universal-editor-status}}
 
 ## 簡介 {#introduction}
 
-為了讓 Universal Editor 可以編輯應用程式，必須對其進行適當的檢測。這包括包含適當的中繼資料，以便編輯器可以編輯應用程式的內容。本文件詳細說明了這些中繼資料的屬性和類型。
+為了讓 Universal Editor 可以編輯應用程式，必須對其進行適當的檢測。這包括包含適當的中繼資料，以便編輯器可以編輯應用程式的內容。本檔案詳細說明這些中繼資料的屬性和專案型別。
 
 >[!NOTE]
 >

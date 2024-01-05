@@ -1,29 +1,29 @@
 ---
-title: 通用編輯器的欄位型別
-description: 瞭解通用編輯器支援的不同欄位型別，以及您可為自己的應用程式檢測的專案。
-source-git-commit: 16f2922a3745f9eb72f7070c30134e5149eb78ce
+title: 欄位型別
+description: 透過如何檢測您自己的應用程式的範例，瞭解通用編輯器在元件邊欄中可以編輯的不同欄位型別。
+source-git-commit: b1a188d01371665b4375087847625d89e47d8927
 workflow-type: tm+mt
-source-wordcount: '269'
-ht-degree: 7%
+source-wordcount: '278'
+ht-degree: 6%
 
 ---
 
 
-# 通用編輯器的欄位型別 {#field-types}
+# 欄位型別 {#field-types}
 
-瞭解通用編輯器支援的不同欄位型別，以及您可為自己的應用程式檢測的專案。
+透過如何檢測您自己的應用程式的範例，瞭解通用編輯器在元件邊欄中可以編輯的不同欄位型別。
 
 {{universal-editor-status}}
 
 ## 概觀 {#overview}
 
-調整您的應用程式以搭配通用編輯器使用時，您必須檢測元件並定義元件可在編輯器中操作的資料型別。
+調整您自己的應用程式以搭配通用編輯器使用時，您必須檢測元件，並定義元件可在編輯器的元件邊欄中操作的資料型別。
 
-本檔案提供編輯器中可用欄位型別的概觀。
+本檔案提供您可以使用的欄位型別概覽以及設定範例。
 
 >[!TIP]
 >
->如果您不熟悉如何針對通用編輯器檢測您的應用程式，請參閱檔案 [適用於AEM開發人員的通用編輯器概觀。](help/implementing/universal-editor/developer-overview.md)
+>如果您不熟悉如何針對通用編輯器檢測您的應用程式，請參閱檔案 [適用於AEM開發人員的通用編輯器概觀。](/help/implementing/universal-editor/developer-overview.md)
 
 ## 布林值 {#boolean}
 
