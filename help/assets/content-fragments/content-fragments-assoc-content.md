@@ -1,17 +1,23 @@
 ---
 title: 關聯內容（資產 — 內容片段）
-description: 瞭解AEM關聯內容功能如何提供連線，以便可以選擇將資產與片段一起使用。
+description: 瞭解AEM內容片段的關聯內容功能如何提供連線，以便可以選擇將資產與片段搭配使用。
 exl-id: 8c8ad768-a210-4d34-bb47-2347599bcac9
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 62ede258711d0cb8d0b72479559c37221509e23f
 workflow-type: tm+mt
-source-wordcount: '230'
-ht-degree: 6%
+source-wordcount: '281'
+ht-degree: 9%
 
 ---
 
 # 相關聯的內容{#associated-content}
 
-AEM關聯內容功能提供連線，以便在將資產新增到內容頁面時，可以選擇將資產與片段一起使用。 這可透過以下方式為您的Headless內容傳遞提供靈活性 [提供在頁面上使用內容片段時可存取的資產範圍，](/help/sites-cloud/authoring/fundamentals/content-fragments.md#using-associated-content) 同時有助於縮短搜尋適當資產所需的時間。
+對於Adobe Experience Manager (AEM)as a Cloud Service的內容片段，相關聯的內容功能（可在原始編輯器中使用）提供連線，讓資產可選擇與片段搭配使用。 這透過以下方式提供彈性 [提供在使用內容片段時可存取的資產範圍](/help/assets/content-fragments/content-fragments.md#using-associated-content)，同時有助於減少搜尋適當資產所需的時間。 此功能可用於您的Headless內容傳送和頁面製作。
+
+>[!NOTE]
+>
+>內容片段是 Sites 的一項功能，但儲存為&#x200B;**資產**。
+>
+>編寫內容片段有兩個編輯器。 本節介紹原始編輯器，主要透過以下網址存取： **資產** 主控台。
 
 ## 新增關聯內容 {#adding-associated-content}
 

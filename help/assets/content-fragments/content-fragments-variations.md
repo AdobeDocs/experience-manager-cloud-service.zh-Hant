@@ -1,23 +1,23 @@
 ---
 title: 變化 — 編寫片段內容（資產 — 內容片段）
-description: 瞭解變數如何可讓您為片段編寫內容，然後根據用途建立該內容的變數，從而使您在AEM中的Headless內容更靈活。
+description: 瞭解內容片段變數如何讓您為片段製作內容，然後根據用途建立該內容的變數，從而增加彈性。
 exl-id: af05aae6-d535-4007-ba81-7f41213ff152
-source-git-commit: 3f934add7521586caf728c4bfa37f2d1a82b144a
+source-git-commit: 62ede258711d0cb8d0b72479559c37221509e23f
 workflow-type: tm+mt
-source-wordcount: '2546'
-ht-degree: 7%
+source-wordcount: '2474'
+ht-degree: 6%
 
 ---
 
-# 變化 - 編寫片段內容{#variations-authoring-fragment-content}
+# 變化 - 製作片段內容{#variations-authoring-fragment-content}
 
-[變數](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) 是AEM內容片段的重要功能。 原因是它們可讓您建立和編輯主要內容的副本，用於特定頻道和情境，使Headless內容傳送更加靈活。
+[變數](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) 是AdobeExperience Manager (AEM)as a Cloud Service中內容片段的重要功能。 這是因為它們可讓您建立和編輯 **主版** 用於特定管道和情境的內容。 尤其是，這可讓Headless內容傳送更靈活。
 
 >[!NOTE]
 >
 >內容片段是 Sites 的一項功能，但儲存為&#x200B;**資產**。
 >
->有兩個編輯器用於編寫內容片段。本節介紹原始編輯器，主要透過以下網址存取： **資產** 主控台。 請參閱網站檔案， [內容片段 — 製作](/help/sites-cloud/administering/content-fragments/authoring.md)，以取得新編輯器的詳細資訊(主要透過以下網址存取： **內容片段** 主控台)。
+>編寫內容片段有兩個編輯器。 本節介紹原始編輯器，主要透過以下網址存取： **資產** 主控台。 請參閱網站檔案， [內容片段 — 製作](/help/sites-cloud/administering/content-fragments/authoring.md)，以取得新編輯器的詳細資訊(主要透過以下網址存取： **內容片段** 主控台)。
 
 從 **變數** 標籤您可以執行下列動作：
 
@@ -205,10 +205,10 @@ RTF編輯可讓您設定格式：
 1. 指定屬性；例如， **標題**.
 1. 選取 **建立**.
 1. 最後：
-   1. **完成**:
+   1. **完成**：
       * 傳回（至原始片段）
       * 參考新片段
-   1. **開啟**:
+   1. **開啟**：
       * 參考新片段
       * 開啟新片段以在新的瀏覽器標籤中編輯
 
@@ -218,7 +218,7 @@ RTF編輯可讓您設定格式：
 
 例如：
 
-![statistics](assets/cfm-variations-04.png)
+![統計資料](assets/cfm-variations-04.png)
 
 ### 上傳內容 {#uploading-content}
 
@@ -246,10 +246,10 @@ RTF編輯可讓您設定格式：
 >
 Software Distribution提供其他語言作為語言模型套件：
 >
-* [French(fr)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-fr)
-* [German(de)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-de)
-* [Italian(it)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-it)
-* [Spanish(es)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-es)
+* [法文(fr)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-fr)
+* [德文(de)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-de)
+* [義大利文(it)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-it)
+* [西班牙文(es)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-es)
 >
 
 1. 選取 **主版** 或必要的變數。
@@ -304,7 +304,7 @@ Software Distribution提供其他語言作為語言模型套件：
 
 1. 關閉全熒幕編輯器時，註解仍會反白顯示。 如果選取，會開啟一個對話方塊，以便您進一步編輯註釋。
 
-1. 選取&#x200B;**儲存**。
+1. 選取「**儲存**」。
 
 1. 關閉全熒幕編輯器時，註解仍會反白顯示。 如果選取，會開啟一個對話方塊，以便您進一步編輯註釋。
 
@@ -312,7 +312,7 @@ Software Distribution提供其他語言作為語言模型套件：
 
 ### 檢視、編輯和刪除註解 {#viewing-editing-deleting-annotations}
 
-註解:
+註解：
 
 * 在編輯器的全熒幕和正常模式中，它們由文字上的反白顯示指示。 接著，您可以按一下反白文字，重新開啟對話方塊，以檢視、編輯和/或刪除註解的完整細節。
 

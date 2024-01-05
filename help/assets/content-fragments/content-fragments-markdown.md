@@ -4,22 +4,22 @@ description: 瞭解內容片段編輯器如何使用Markdown語法，讓您輕�
 feature: Content Fragments
 role: User
 exl-id: 7a6d4a63-faf8-4e1c-95da-90db2027a2dd
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 62ede258711d0cb8d0b72479559c37221509e23f
 workflow-type: tm+mt
-source-wordcount: '578'
-ht-degree: 7%
+source-wordcount: '586'
+ht-degree: 6%
 
 ---
 
 # Markdown {#markdown}
 
-當您 [製作](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content)，內容片段編輯器會使用 *markdown* 語法可讓您輕鬆撰寫Headless內容：
+當您 [製作](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content)，內容片段編輯器會使用 *markdown* 語法可讓您輕鬆撰寫內容以進行headless傳送或頁面編寫：
 
 >[!NOTE]
 >
 >內容片段是 Sites 的一項功能，但儲存為&#x200B;**資產**。
 >
->有兩個編輯器用於編寫內容片段。本節介紹原始編輯器，主要透過以下網址存取： **資產** 主控台。 請參閱網站檔案， [內容片段 — 製作](/help/sites-cloud/administering/content-fragments/authoring.md)，以取得新編輯器的詳細資訊(主要透過以下網址存取： **內容片段** 主控台)。
+>編寫內容片段有兩個編輯器。 本節介紹原始編輯器，主要透過以下網址存取： **資產** 主控台。 請參閱網站檔案， [內容片段 — 製作](/help/sites-cloud/administering/content-fragments/authoring.md)，以取得新編輯器的詳細資訊(主要透過以下網址存取： **內容片段** 主控台)。
 
 ![Markdown 編輯器](/help/assets/content-fragments/assets/cfm-markdown-01.png)
 

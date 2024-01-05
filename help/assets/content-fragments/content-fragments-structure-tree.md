@@ -2,22 +2,22 @@
 title: 內容片段結構樹（資產 — 內容片段）
 description: 使用AEM中內容片段編輯器的結構樹功能，更能瞭解您的Headless內容。
 exl-id: 4a134f04-e580-4f69-9d11-0a2fc83a4b3a
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: 62ede258711d0cb8d0b72479559c37221509e23f
 workflow-type: tm+mt
-source-wordcount: '169'
-ht-degree: 18%
+source-wordcount: '172'
+ht-degree: 11%
 
 ---
 
-# 內容片段樹狀結構 {#content-fragment-structure-tree}
+# 內容片段結構樹 {#content-fragment-structure-tree}
 
-使用AEM中內容片段編輯器的結構樹功能，更能瞭解您的Headless內容。
+使用AEM中內容片段編輯器的結構樹功能，更能瞭解您的內容，尤其是無頭式傳送。
 
 >[!NOTE]
 >
 >內容片段是 Sites 的一項功能，但儲存為&#x200B;**資產**。
 >
->有兩個編輯器用於編寫內容片段。本節介紹原始編輯器，主要透過以下網址存取： **資產** 主控台。 請參閱網站檔案， [內容片段 — 製作](/help/sites-cloud/administering/content-fragments/authoring.md)，以取得新編輯器的詳細資訊(主要透過以下網址存取： **內容片段** 主控台)。
+>編寫內容片段有兩個編輯器。 本節介紹原始編輯器，主要透過以下網址存取： **資產** 主控台。 請參閱網站檔案， [內容片段 — 製作](/help/sites-cloud/administering/content-fragments/authoring.md)，以取得新編輯器的詳細資訊(主要透過以下網址存取： **內容片段** 主控台)。
 
 在內容片段編輯器中，您可以選取「結構樹」圖示：
 
