@@ -2,10 +2,10 @@
 title: 合適的人，合適的角色
 description: 了解如何為專案選擇合適的人員，並將他們指派到合適的角色。
 exl-id: 9106ccf5-dc90-4ccb-95bd-7dd5392cd174
-source-git-commit: 31e6ec8e9977c8787e14481ee3a94df767262aec
+source-git-commit: aa032af2ed7ff877b4c9f9cb6d427c84e71c3874
 workflow-type: tm+mt
-source-wordcount: '860'
-ht-degree: 100%
+source-wordcount: '832'
+ht-degree: 99%
 
 ---
 
@@ -15,8 +15,8 @@ ht-degree: 100%
 >id="aemcloud_chooseteam"
 >title="選擇合適的團隊"
 >abstract="讓合適的人擔任合適的工作，促使您的 Adobe Experience Manager 部署成功。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/aligning-kpis.html?lang=zh-Hant" text="調整 KPI"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/assessing-kpis.html?lang=zh-Hant" text="評估 KPI"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/aligning-kpis.html" text="調整 KPI"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/assessing-kpis.html" text="評估 KPI"
 
 很可能在您的組織中，多個部門負責數位體驗的不同層面。若沒有管理，就會出現無止境的爭論、內鬥和混亂。
 

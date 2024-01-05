@@ -2,10 +2,10 @@
 title: 存取 KPI
 description: 了解如何存取您的 KPI 並定義報告流程
 exl-id: 8556e0e3-a557-4fd6-9b82-09cb1decff0a
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
-workflow-type: ht
-source-wordcount: '544'
-ht-degree: 100%
+source-git-commit: aa032af2ed7ff877b4c9f9cb6d427c84e71c3874
+workflow-type: tm+mt
+source-wordcount: '532'
+ht-degree: 99%
 
 ---
 
@@ -15,8 +15,8 @@ ht-degree: 100%
 >id="aemcloud_assesskpis"
 >title="評估 KPI"
 >abstract="在開始啟動 Adobe Experience Manager 之前，與專案有利害關係的每個人都應該知道您的前三大 KPI 是什麼以及它們為什麼重要。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/aligning-kpis.html?lang=zh-Hant" text="調整 KPI"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/choose-right-team.html?lang=zh-Hant" text="選擇合適的團隊"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/aligning-kpis.html" text="調整 KPI"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/choose-right-team.html" text="選擇合適的團隊"
 
 在開始啟動 Adobe Experience Manager 之前，與專案有利害關係的每個人都應該知道您的前三大 KPI 是什麼以及它們為什麼重要。
 

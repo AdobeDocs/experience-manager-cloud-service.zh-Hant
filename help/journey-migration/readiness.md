@@ -2,10 +2,10 @@
 title: 整備階段
 description: 瞭解您必須執行的步驟，以便確定AEM安裝已準備好移至雲端。
 exl-id: 3bc8c037-d82a-4455-bce6-3c80c359a4ae
-source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
+source-git-commit: aa032af2ed7ff877b4c9f9cb6d427c84e71c3874
 workflow-type: tm+mt
 source-wordcount: '1900'
-ht-degree: 5%
+ht-degree: 6%
 
 ---
 
@@ -49,7 +49,7 @@ AEMas a Cloud Service提供許多管理AEM專案的新功能，並帶來許多�
 <tbody>
   <tr>
     <td>將可變和不可變篩選器分隔到對應的套件中</td>
-    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/aem-cloud-changes.html?lang=en">AEMas a Cloud Service重大變更</a><br><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure.html#mutable-vs-immutable">AEMas a Cloud Service的AEM專案結構</a></td>
+    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/aem-cloud-changes.html">AEMas a Cloud Service重大變更</a><br><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure.html#mutable-vs-immutable">AEMas a Cloud Service的AEM專案結構</a></td>
     <td>可部署到AEMas a Cloud Service的單一套件可以具有子套件，主要用於包含分隔到其自身套件中的可變和不可變內容。</td>
   </tr>
   <tr>
@@ -104,7 +104,7 @@ AEMas a Cloud Service提供許多管理AEM專案的新功能，並帶來許多�
   </tr>
   <tr>
     <td>dam更新資產工作流程</td>
-    <td><a href="https://experienceleague.adobe.com/docs/asset-compute/using/introduction.html?lang=en">asset compute服務</a></td>
+    <td><a href="https://experienceleague.adobe.com/docs/asset-compute/using/introduction.html">asset compute服務</a></td>
     <td>屬於DAM更新資產工作流程一部分的媒體處理步驟現在由Asset compute服務取代</td>
   </tr>
   <tr>
@@ -119,17 +119,17 @@ AEMas a Cloud Service提供許多管理AEM專案的新功能，並帶來許多�
   </tr>
   <tr>
     <td>自訂轉譯步驟</td>
-    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use.html?lang=en">處理設定檔</a></td>
+    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use.html">處理設定檔</a></td>
     <td>任何自訂轉譯產生、影像轉換或視訊編碼都必須透過建立對應的處理設定檔，將解除安裝至資產處理服務。</td>
   </tr>
   <tr>
     <td>內容搜尋與索引</td>
-    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html?lang=en">內容搜尋和索引變更</a></td>
+    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html">內容搜尋和索引變更</a></td>
     <td>索引的基礎處理及其開始執行的時間有相當大變化。<br>在您部署的程式碼中管理Oak索引之前，請完全瞭解並重新調整。</td>
   </tr>
   <tr>
     <td>並非所有維護任務都是可設定的</td>
-    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/maintenance.html?lang=en">AEMas a Cloud Service維護任務</a></td>
+    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/maintenance.html">AEMas a Cloud Service維護任務</a></td>
     <td>您只能使用AEMas a Cloud Service設定某些維護任務。</td>
   </tr>
   <tr>
@@ -139,17 +139,17 @@ AEMas a Cloud Service提供許多管理AEM專案的新功能，並帶來許多�
   </tr>
   <tr>
     <td>Dispatcher設定和快取</td>
-    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/disp-overview.html?lang=en">雲端中的Dispatcher</a><br><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html#other-content">快取管理<br></td>
+    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/disp-overview.html">雲端中的Dispatcher</a><br><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html#other-content">快取管理<br></td>
     <td>Dispatcher設定必須遵循特定結構。<br>這些設定必須作為計畫碼的一部分進行管理，並透過Cloud Manager管道部署。</td>
   </tr>
   <tr>
     <td>備份和還原</td>
-    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/backup.html?lang=en">AEMas a Cloud Service備份與還原</a></td>
+    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/backup.html">AEMas a Cloud Service備份與還原</a></td>
     <td></td>
   </tr>
   <tr>
     <td>驗證變更</td>
-    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html?lang=en">AEM as a Cloud Service 的 IMS 支援</td>
+    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html">AEM as a Cloud Service 的 IMS 支援</td>
     <td>如果您先前在移至Cloud Service之前在作者和發佈上使用SAML 2.0整合，主要變更為AEMas a Cloud Service作者僅與Adobe IMS整合。 不過，AEMas a Cloud Service發佈層級仍可使用SAML或其他驗證整合。 AEM as a Cloud Service 僅針對「作者」、「管理員」和「開發」使用者提供 IMS 驗證支援。IMS驗證不支援客戶網站的外部一般使用者，例如網站訪客。</td>
   </tr>
 </tbody>

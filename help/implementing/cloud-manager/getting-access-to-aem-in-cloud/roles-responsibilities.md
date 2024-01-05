@@ -1,10 +1,10 @@
 ---
 title: 角色和責任
 description: 角色和責任
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: aa032af2ed7ff877b4c9f9cb6d427c84e71c3874
 workflow-type: tm+mt
-source-wordcount: '500'
-ht-degree: 100%
+source-wordcount: '484'
+ht-degree: 99%
 
 ---
 
@@ -15,8 +15,8 @@ ht-degree: 100%
 >id="aemcloud_raci"
 >title="角色和責任"
 >abstract="Adobe 圍繞 Experience Manager as a Cloud Service 的設定、開發、測試和生產提供了一組服務。為了以高效率開發和部署解決方案，客戶和自訂者必須理解並履行他們的職責，如以下所述。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/choose-right-team.html?lang=zh-Hant" text="選擇合適的人，合適的角色"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/aligning-kpis.html?lang=zh-Hant" text="調整 KPI"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/choose-right-team.html" text="選擇合適的人，合適的角色"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/aligning-kpis.html" text="調整 KPI"
 
 <br></br>Adobe 圍繞 Experience Manager as a Cloud Service 的設定、開發、測試和生產提供了一組服務。為了以高效率開發和部署解決方案，客戶和自訂者必須理解並履行他們的職責，如以下所述。
 

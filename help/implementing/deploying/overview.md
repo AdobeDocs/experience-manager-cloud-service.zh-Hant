@@ -3,7 +3,7 @@ title: 部署至 AEM as a Cloud Service
 description: 了解部署至 AEM as a Cloud Service 的基礎知識和最佳做法
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: aa032af2ed7ff877b4c9f9cb6d427c84e71c3874
 workflow-type: tm+mt
 source-wordcount: '3429'
 ht-degree: 98%
@@ -175,7 +175,7 @@ above appears to be internal, to confirm with Brian -->
 >id="aemcloud_packagemanager"
 >title="封裝管理員 - 移轉可變內容套件"
 >abstract="探索封裝管理員在使用案例中的使用情況，在這些案例中，內容套件的安裝應為「一次性」。此安裝包括將特定內容從生產環境匯入至中繼環境以偵錯生產問題，將小型內容套件從內部部署環境轉移至 AEM 雲端環境等。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=zh-Hant" text="內容轉移工具"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html" text="內容轉移工具"
 
 在某些使用案例中，內容套件應做為「一次性」安裝。例如，將特定內容從生產環境匯入至中繼環境以偵錯生產問題。對於這些情況，[封裝管理員](/help/implementing/developing/tools/package-manager.md) 可以用在 AEM as a Cloud Service 中的環境。
 
