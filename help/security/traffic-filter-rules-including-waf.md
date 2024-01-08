@@ -3,9 +3,9 @@ title: 流量篩選規則包括 WAF 規則
 description: 設定流量篩選規則，包括 Web 應用程式防火牆 (WAF) 規則
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3357'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
