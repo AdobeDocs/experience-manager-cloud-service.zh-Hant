@@ -3,10 +3,10 @@ title: AEM 6.5 Forms與AEMCloud Service之間有何差異？
 description: 比較AEM 6.5 Forms和AEMCloud Services，並在升級或移轉至Cloud Service之前瞭解最顯著的變更。
 exl-id: 46fcc1b4-8fd5-40e1-b0fc-d2bc9df3802e
 contentOwner: khsingh
-source-git-commit: 397e7d4f23202b8ae7419b0ad5436a6a10e2efb8
+source-git-commit: 0acaea02ad4ba647373eedecb444e9a7911d108d
 workflow-type: tm+mt
-source-wordcount: '1348'
-ht-degree: 2%
+source-wordcount: '1317'
+ht-degree: 1%
 
 ---
 
@@ -39,7 +39,7 @@ ht-degree: 2%
 
 * 電子郵件預設僅支援HTTP和HTTP通訊協定。 [聯絡支援團隊](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html#sending-email) 啟用連線埠以傳送電子郵件，並為您的環境啟用SMTP通訊協定。
 
-## 本地化
+## 本土化
 
 * 本地化的最適化Forms的URL慣例現在支援在URL中指定地區設定。 新的URL慣例可在Dispatcher或CDN上快取當地語系化的表單。 在Cloud Service環境中，使用URL格式 `http://host:port/content/forms/af/<afName>.<locale>.html` 請求最適化表單的本地化版本，而非 `http://host:port/content/forms/af/afName.html?afAcceptLang=<locale>`.
 
@@ -52,7 +52,9 @@ ht-degree: 2%
 
   此 [移轉公用程式](/help/forms/migrate-to-forms-as-a-cloud-service.md) 協助您移轉具有自訂規則（在程式碼編輯器中建立）的表單。 公用程式會將這些規則轉換為Formsas a Cloud Service支援的自訂函式。 您可以將可重複使用的函式搭配規則編輯器使用，以繼續取得搭配規則指令碼取得的結果。 此 `onSubmitError` 或 `onSubmitSuccess` 函式現在可作為規則編輯器中的動作。
 
-* **預填服務：** 預設情況下，預填服務會在使用者端將資料與最適化表單合併，而不是在AEM 6.5 Forms中合併伺服器上的資料。 此功能有助於改善預填最適化表單所需的時間。 您一律可以設定在Adobe Experience Manager Forms伺服器上執行合併動作。
+<!--* **Prefill Service:** By default, the prefill service merges data with an Adaptive Form at client as opposed to merging data on Server in AEM 6.5 Forms. The feature helps improve the time required to prefill an Adaptive Form. You can always configure to run the merge action on the Adobe Experience Manager Forms Server.-->
+
+* **預填服務：** 預填服務會從伺服器擷取資料，然後合併以在使用者端預填您的Adaptive Forms。 此功能有助於改善填寫最適化表單所需的時間。 您可以隨時設定 [預填服務](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/prefill-service-adaptive-forms-article-use.html) 以在Adobe Experience Manager Forms伺服器上執行合併動作。
 
 * **提交動作：** 此 **電子郵件** 提交動作提供傳送附件和將記錄檔案(DoR)附加於電子郵件的選項。 您可以使用它來取代 **以PDF傳送電子郵件** AEM 6.5 Forms中可用的動作。
 
@@ -64,11 +66,11 @@ ht-degree: 2%
 
 * **精靈介面：** 您可以使用 [精靈介面](/help/forms/creating-adaptive-form-core-components.md) 快速設定常用選項並輕鬆建立最適化表單。
 
-## 表單入口網站
+## Forms入口網站
 
 * 此服務沒有保留草稿和已提交的最適化Forms的中繼資料。
 
-## 文件服務:
+## 檔案服務：
 
 Formsas a Cloud Service提供Document Generation和Document Manipulation RESTful API。 您可以視需要使用這些API來依需求或批次產生或操控檔案：
 
