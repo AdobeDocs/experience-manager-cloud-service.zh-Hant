@@ -3,9 +3,9 @@ title: AEM as a Cloud Service 中的快取
 description: 瞭解AEMas a Cloud Service快取的基本概念
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
+source-git-commit: 8351e5e60c7ec823a399cbbdc0f08d2704f12ccf
 workflow-type: tm+mt
-source-wordcount: '2775'
+source-wordcount: '2865'
 ht-degree: 1%
 
 ---
@@ -241,6 +241,28 @@ AEM層預設不會快取blob內容。
 如果您希望停用此行為，請提交支援票證。
 
 對於2023年10月之前建立的環境，建議設定Dispatcher設定的 `ignoreUrlParams` 屬性為 [在此處記錄](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#ignoring-url-parameters).
+
+忽略行銷引數有兩種可能性。 （其中第一個偏好使用查詢引數來忽略防快取）：
+
+1. 忽略所有引數，並選擇性地允許使用的引數。
+僅限下列範例中 `page` 和 `product` 不會忽略引數，並將請求轉送給發佈者。
+
+```
+/ignoreUrlParams {
+   /0001 { /glob "*" /type "allow" }
+   /0002 { /glob "page" /type "deny" }
+   /0003 { /glob "product" /type "deny" }
+}
+```
+
+1. 允許行銷引數以外的所有引數。 檔案 [marketing_query_parameters.any](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/dispatcher.cloud/src/conf.dispatcher.d/cache/marketing_query_parameters.any) 會定義將忽略的常用行銷引數清單。 Adobe將不會更新此檔案。 使用者可依其行銷提供者來擴充。
+
+```
+/ignoreUrlParams {
+   /0001 { /glob "*" /type "deny" }
+   $include "../cache/marketing_query_parameters.any"
+}
+```
 
 
 ## Dispatcher快取失效 {#disp}
