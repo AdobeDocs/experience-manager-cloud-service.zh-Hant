@@ -4,9 +4,9 @@ description: 最適化表單提供多個提交動作。提交動作會定義提�
 keywords: 如何選取最適化表單的提交動作、將最適化表單連線至sharepoint清單、將最適化表單連線至sharepoint檔案庫、將最適化表單連線至表單資料模型
 feature: Adaptive Forms, Core Components
 exl-id: 495948e8-30a7-4e7c-952f-c71de15520f0
-source-git-commit: c2bf362a9949b3d6d427a28821056a0cc9edfa85
+source-git-commit: 3cd10760fa48f4aa1810877f79476be744f048d1
 workflow-type: tm+mt
-source-wordcount: '4102'
+source-wordcount: '4090'
 ht-degree: 82%
 
 ---
@@ -20,7 +20,8 @@ ht-degree: 82%
 | -------- | ---------------------------- |
 | AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html) |
 | AEM as a Cloud Service  | 本文章 |
-| 套用至 | ✅ 最適化表單核心元件，❎[最適化表單基礎元件](/help/forms/configuring-submit-actions.md) |
+
+<!--| Applies to     | ✅ Adaptive Form Core Components, ❎ [Adaptive Form Foundation Components](/help/forms/configuring-submit-actions.md)          |-->
 
 
 提交動作讓您可選擇透過最適化表單擷取的資料目標。使用者按一下最適化表單上的「**[!UICONTROL 提交]**」按鈕時，就會加以觸發。針對以核心元件為基礎的最適化表單，Forms as a Cloud Service 提供了一系列預先建立的提交動作。這些現成可用的提交動作可讓您：
