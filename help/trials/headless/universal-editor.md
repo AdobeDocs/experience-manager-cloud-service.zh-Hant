@@ -5,9 +5,9 @@ hidefromtoc: true
 index: false
 exl-id: a4854a56-9434-4d15-a56a-f1798f27263a
 source-git-commit: 46456903ee947c61d63508dc86cc5f72dc50ed82
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '886'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -39,7 +39,7 @@ ht-degree: 88%
 
 使用 Universal Editor 可讓您靈活地進行內容中和原處的文字編輯，實現簡單且直覺的內容製作。
 
-1. 按兩下以選取最新文章的標題進行編輯。
+1. 按兩下以選取最新文章的標題即可進行編輯。
 
    ![Universal Editor](assets/do-not-localize/ue-component-mode.png)
 
@@ -47,7 +47,7 @@ ht-degree: 88%
 
    ![在 Universal Editor 中編輯文字](assets/do-not-localize/ue-edit-text-2.png)
 
-1. 在文字元件外選取，您的變更便會自動儲存。
+1. 選取文字元件以外的地方，您的變更就會自動儲存。
 
 Universal Editor 在製作環境中會自動儲存您的變更。您仍然需要發佈變更內容，讀者才能看到，我們將在稍後的步驟中進行這部分。
 
@@ -55,7 +55,7 @@ Universal Editor 在製作環境中會自動儲存您的變更。您仍然需要
 
 使用 Universal Editor，您還可以在將影像交換出去的同時仍停留在內容中。
 
-1. 選取瀏覽者的影像以選取它。
+1. 選取衝浪者的影像將其選取。
 
 1. 在元件邊欄中，您可以查看資產的詳細資料。選擇「**精選影像**」縮圖。
 
@@ -73,7 +73,7 @@ Universal Editor 在製作環境中會自動儲存您的變更。您仍然需要
 
 Universal Editor 可讓您在其中與內容互動、查看傳遞到使用者裝置上的內容。
 
-1. 根據預設，編輯器會呈現內容的桌面版本。選取Universal Editor工具列右上角的模擬器按鈕，以變更目標裝置。
+1. 根據預設，編輯器會呈現內容的桌面版本。選取 Universal Editor 工具列右上角的模擬器按鈕，即可變更目標裝置。
 
    ![模擬器選單項目](assets/do-not-localize/ue-emulator-1.png)
 
@@ -89,9 +89,9 @@ Universal Editor 可讓您在其中與內容互動、查看傳遞到使用者裝
 
 ## 預覽和發佈 {#preview}
 
-由於您需要選取內容以在編輯器中修改內容，編輯器不允許您透過點選或按一下追蹤連結或與內容互動。 使用預覽模式的話，您可以在發佈之前使用內容中的連結，像使用者一樣進行體驗。
+由於您必須選取內容才能在編輯器進行修改，因此編輯器不允許透過點選或按一下來進入連結或與內容互動。使用預覽模式的話，您可以在發佈之前使用內容中的連結，像使用者一樣進行體驗。
 
-1. 在通用編輯器工具列中，選取 **預覽**.
+1. 在 Universal Editor 工具列中，選取「**預覽**」。
 
 1. 現在選取主要文章的「**閱讀更多**」連結。
 
@@ -111,7 +111,7 @@ Universal Editor 可讓您在其中與內容互動、查看傳遞到使用者裝
 
 當 Headless 內容的結構化編輯比原處編輯更具優勢時，為了加速您的內容製作體驗，Universal Editor 還會讓您快速存取內容片段編輯器。
 
-1. 點選「 」，關閉預覽模式 **預覽** 按鈕。
+1. 點選 Universal Editor 工具列上的「**預覽**」按鈕關閉預覽模式。
 
    ![關閉預覽模式](assets/do-not-localize/ue-toggle-off-preview.png)
 
