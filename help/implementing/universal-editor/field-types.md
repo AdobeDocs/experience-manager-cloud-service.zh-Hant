@@ -1,10 +1,10 @@
 ---
 title: 欄位型別
 description: 透過如何檢測您自己的應用程式的範例，瞭解通用編輯器在元件邊欄中可以編輯的不同欄位型別。
-source-git-commit: b1a188d01371665b4375087847625d89e47d8927
+source-git-commit: 44073e27ce7eb35bc0d71cb963c1bd0f14183f00
 workflow-type: tm+mt
-source-wordcount: '278'
-ht-degree: 6%
+source-wordcount: '358'
+ht-degree: 5%
 
 ---
 
@@ -281,3 +281,58 @@ ht-degree: 6%
 }
 ```
 
+## 標籤 {#tab}
+
+索引標籤可讓您將其他輸入欄位分組在多個索引標籤上，以改善作者的版面配置組織。
+
+A `tab` 可將定義視為陣列中的分隔符號 `fields`. 之後的一切 `tab` 將會放在該索引標籤上，直到新的 `tab` 之後，會將下列專案放置在新標籤上。
+
+如果您希望專案出現在所有標籤的上方，必須在任何標籤之前定義它們。
+
+### 範例 {#sample-tab}
+
+```json
+{
+  "id": "title",
+  "fields": [
+    {
+      "component": "tab",
+      "label": "Tab",
+      "name": "tab1"
+    },
+    {
+      "component": "text-input",
+      "name": "tab-response",
+      "value": "",
+      "placeholder": "Tab? I can't give you a tab unless you order something.",
+      "label": "Lou",
+      "valueType": "string"
+    },
+    {
+      "component": "tab",
+      "label": "Pepsi Free",
+      "name": "tab2"
+    },
+    {
+      "component": "text-input",
+      "name": "pepsi-free-response",
+      "value": "",
+      "placeholder": "You want a Pepsi, pal, you're gonna pay for it.",
+      "label": "Mr. Carruthers",
+      "valueType": "string"
+    },
+    {
+      "component": "select",
+      "name": "without-sugar",
+      "value": "coffee",
+      "label": "Something without sugar",
+      "valueType": "string",
+      "options": [
+        { "name": "Coffee", "value": "coffee" },
+        { "name": "Hot Coffee", "value": "hot-coffee" },
+        { "name": "Hotter Coffee", "value": "hotter-coffee" }
+      ]
+    }
+  ]
+}
+```
