@@ -2,9 +2,9 @@
 title: AEMas a Cloud Service記錄
 description: 瞭解如何使用AEM的記錄as a Cloud Service來設定中央記錄服務的全域引數、個別服務的特定設定，或如何請求資料記錄。
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+source-git-commit: 3d53f81bfe9b180f19590a70d72b6bf62a7ab732
 workflow-type: tm+mt
-source-wordcount: '2720'
+source-wordcount: '2755'
 ht-degree: 8%
 
 ---
@@ -397,7 +397,7 @@ Fri Jul 17 02:29:34.517189 2020 [mpm_worker:notice] [pid 1:tid 140293638175624] 
 
 mod_rewrite日誌層級由檔案中的變數REWRITE_LOG_LEVEL定義 `conf.d/variables/global.var`.
 
-可將其設為error、warn、info、debug和trace1 - trace8，預設值為warn。 若要偵錯RewriteRules，建議將記錄層級提升為trace2。
+可將其設為error、warn、info、debug和trace1 - trace8，預設值為warn。 若要偵錯RewriteRules，建議將記錄層級提升為trace2。 建議您使用針對重寫規則進行偵錯 [Dispatcher SDK](../../dispatcher/validation-debug.md). AEMas a Cloud Service的最大記錄層級為 `debug`. 因此，目前不可能有效地在雲端中偵錯重寫規則。
 
 請參閱 [mod_rewrite模組檔案](https://httpd.apache.org/docs/current/mod/mod_rewrite.html#logging) 以取得詳細資訊。
 
