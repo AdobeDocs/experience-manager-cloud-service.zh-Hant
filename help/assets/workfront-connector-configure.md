@@ -4,9 +4,9 @@ description: 設定 [!DNL Workfront for Experience Manager enhanced connector]
 role: Admin
 feature: Integrations
 exl-id: d4e1247a-342c-4bc4-83bf-4e4902468fb3
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: e49d536dc918861604f3e5d19608eb69d038c49a
 workflow-type: tm+mt
-source-wordcount: '1770'
+source-wordcount: '1760'
 ht-degree: 1%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 1%
 
 >[!IMPORTANT]
 >
-> 自2022年6月起，Adobe已發行新的原生整合，用於將Workfront與Adobe Experience Manager資產as a Cloud Service連線。 此整合已成為連線這兩個解決方案的必要方法。 日後任何新實施的增強型聯結器（1.9.8及更新版本）都會遭到封鎖，以便將Workfront與AEM Assetsas a Cloud Service連線。
+> 自2022年6月起，Adobe已發行新的原生整合，用於將Workfront與Adobe Experience Manager Assetsas a Cloud Service連線。 此整合已成為連線這兩個解決方案的必要方法。 日後任何新實施的增強型聯結器（1.9.8及更新版本）都會遭到封鎖，以便將Workfront與AEM Assetsas a Cloud Service連線。
 
 >[!IMPORTANT]
 >
@@ -63,6 +63,7 @@ ht-degree: 1%
 1. 前往雲端服務中的專案連結資料夾索引標籤。
 1. 連結資料夾父路徑：在DAM中選取您要建立連結資料夾的資料夾。 如果留空，其將預設為/content/dam。 請確定Workfront工具中繼資料結構和Workfront連結資料夾中繼資料結構已套用至選取的資料夾。
 1. 連結的資料夾結構：輸入逗號分隔值。 每個值都應 `DE:<some-project-custom-form-field>`、Portfolio、方案、年份、名稱或某些「常值字串值」（最後一項帶有引號）。 目前設為Portfolio、方案、年、DE：專案型別、名稱。
+1. 設定許可權：新增 `jcr:all permissions` 許可權： `/conf/workfront-tools/settings/cloudconfigs` 的 `wf-workfront-users` 群組。
 1. 如果Workfront中的資料夾標題應包含結構中的所有資料夾，則應核取使用資料夾結構名稱在Workfront中建立連結資料夾標題。 否則，這是最後一個資料夾的標題。
 1. 子資料夾多欄位可讓您指定應建立為連結資料夾的子資料夾的資料夾清單。
 1. 專案狀態：選取專案必須設定的狀態，才能建立連結的資料夾。
