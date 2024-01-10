@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的目前維護版本發行說明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的目前維護版本發行說明。'
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: 4fc676bd975e44234b478ba57f12cbf0f4f5ba45
-workflow-type: ht
-source-wordcount: '371'
-ht-degree: 100%
+source-git-commit: 0b4c820159f918cb9b3a93d9ab36dc26b1d8da47
+workflow-type: tm+mt
+source-wordcount: '381'
+ht-degree: 97%
 
 ---
 
@@ -43,7 +43,7 @@ ht-degree: 100%
 
 ### 已知問題 {#known-issues-14697}
 
-無。
+* GRANITE-49031：回歸結果 `@JsonIgnore` 暫時欄位上忽略的註解。
 
 ### 內嵌技術 {#embedded-tech-14697}
 
