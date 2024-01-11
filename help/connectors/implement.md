@@ -1,13 +1,14 @@
 ---
 title: 實作 AEM 連接器
-description: 瞭解如何建置、測試和實作AEM聯結器。 此外，您也可以瞭解常見的整合模式。
+description: 了解關於連接器、這類工具的功能，以及如何在 Experience Manager 中實作這些重要工具。
 exl-id: 70024424-8c52-493e-bbc9-03d238b8a5f5
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 07db10c4ee9cced7b6a697fe4f41c99eaba6a39f
 workflow-type: tm+mt
 source-wordcount: '935'
-ht-degree: 6%
+ht-degree: 8%
 
 ---
+
 
 實作 AEM 連接器
 =============================

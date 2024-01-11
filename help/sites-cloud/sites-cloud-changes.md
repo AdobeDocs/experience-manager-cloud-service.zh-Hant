@@ -1,11 +1,11 @@
 ---
 title: AEM Cloud Service 中 AEM Sites 的重大變更
-description: 了解更多關於 AEM Cloud Service 中 AEM Sites 的顯著變化
+description: 瞭解如何使用及管理AEM Sitesas a Cloud Service，以及有關AEM Cloud Service中AEM Sites的重大變更。
 exl-id: 60b1aec4-75a0-459f-bf77-8d8c1af757ce
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+source-git-commit: 07db10c4ee9cced7b6a697fe4f41c99eaba6a39f
 workflow-type: tm+mt
-source-wordcount: '513'
-ht-degree: 96%
+source-wordcount: '527'
+ht-degree: 95%
 
 ---
 
@@ -41,7 +41,7 @@ AEM Sites as a Cloud Service 中的變更與新增內容如下：
 
 >[!NOTE]
 >
->系統使用者不需變更即可使用此新功能。 這裡僅將其視為與先前內部部署的 AEM 版本相比的行為變更。
+>系統使用者無需進行任何變更即可使用此新功能。這裡僅將其視為與先前內部部署的 AEM 版本相比的行為變更。
 
 ## 新的參考網站和教學課程 {#new-reference-site-and-tutorial}
 
