@@ -2,10 +2,10 @@
 title: 管理環境
 description: 了解您可以建立的環境類型，以及如何為您的 Cloud Manager 專案建立環境類型。
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: efca024511b5d79553864fbcefda3649ab7af7b6
+source-git-commit: 1a49bcd5b76e6a3b0d5a3168cef445101dc8d149
 workflow-type: tm+mt
 source-wordcount: '2607'
-ht-degree: 88%
+ht-degree: 89%
 
 ---
 
@@ -18,18 +18,18 @@ ht-degree: 88%
 
 具有必要權限的使用者可以建立以下環境類型 (在特定租用戶可用的範圍內)。
 
-* **生產+中繼**  — 生產環境和測試環境組成一組使用，分別用於生產和測試目的。 在中繼環境中執行效能和安全測試。 其大小與生產環境相同。
+* **生產+中繼**  — 生產環境和測試環境組成一組使用，分別用於生產和測試目的。 在中繼環境中執行效能和安全測試。 它的大小與生產環境相同。
 
-* **開發**  — 可以為開發和測試目的建立開發環境，並且只能與非生產管道相關聯。  開發環境的規模與中繼和生產環境不同，不應該用來進行效能和安全測試。
+* **開發**  — 可以為開發和測試目的建立開發環境，並且只能與非生產管道相關聯。  開發環境的大小與中繼環境和生產環境不同，且不應用於進行效能和安全測試。
 
 * **快速開發** - 快速開發環境 (或簡稱 RDE) 可讓開發人員快速部署和查看變動情形，可大幅減少測試已證明可在本機開發環境中執行功能所需的時間。若要深入了解 RDE 的使用方法，請參閱[快速開發環境文件](/help/implementing/developing/introduction/rapid-development-environments.md)。
 
 各個環境的功能取決於環境[計畫](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)中啟用的解決方案。
 
-* [Sites](/help/sites-cloud/home.md)
-* [Assets](/help/assets/home.md)
+* [Sites](/help/overview/introduction.md)
+* [Assets](/help/assets/overview.md)
 * [Forms](/help/forms/home.md)
-* [Screens](/help/screens-cloud/home.md)
+* [Screens](/help/screens-cloud/introduction/introduction.md)
 
 >[!NOTE]
 >

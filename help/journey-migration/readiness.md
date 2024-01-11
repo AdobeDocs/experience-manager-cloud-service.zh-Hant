@@ -2,7 +2,7 @@
 title: 整備階段
 description: 瞭解您必須執行的步驟，以便確定AEM安裝已準備好移至雲端。
 exl-id: 3bc8c037-d82a-4455-bce6-3c80c359a4ae
-source-git-commit: aa032af2ed7ff877b4c9f9cb6d427c84e71c3874
+source-git-commit: 1a49bcd5b76e6a3b0d5a3168cef445101dc8d149
 workflow-type: tm+mt
 source-wordcount: '1900'
 ht-degree: 6%
@@ -218,6 +218,6 @@ Best Practices Analyzer報表完成之後，請與相關團隊共用，以便您
 
 * [Cloud Acceleration Manager快速入門](/help/journey-migration/cloud-acceleration-manager/using-cam/getting-started-cam.md)  — 有關如何使用Cloud Acceleration Manager加速您移轉至雲端的完整指南。
 * [AEMas a Cloud Service：簡介、架構和思維方式不同](https://experienceleague.adobe.com/?launch=ExperienceManager-D-1-2021.1.migration&amp;recommended=ExperienceManager-D-1-2021.1.migration&amp;lang=en#dashboard/learning)
-* [AEMCloud Service首頁](/help/overview/home.md)  — 如需Experience Manageras a Cloud Service檔案的概覽，請由此開始。
-* [AEMas a Cloud Service概述](/help/overview/home.md)  — 本指南提供Experience Manageras a Cloud Service概觀，包括簡介、術語和架構。
+* [AEMCloud Service首頁](/help/overview/introduction.md)  — 如需Experience Manageras a Cloud Service檔案的概覽，請由此開始。
+* [AEMas a Cloud Service概述](/help/overview/introduction.md)  — 本指南提供Experience Manageras a Cloud Service概觀，包括簡介、術語和架構。
 * [入門歷程](/help/journey-onboarding/overview.md) — 本指南提供如何開始使用Experience Manageras a Cloud Service的摘要，包括如何取得存取權和設定您的團隊。

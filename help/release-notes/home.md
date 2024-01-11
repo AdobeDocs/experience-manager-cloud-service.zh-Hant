@@ -2,12 +2,13 @@
 title: Adobe Experience Manager (AEM) as a Cloud Service 的發行說明。
 description: Adobe Experience Manager (AEM) as a Cloud Service 的發行說明。
 exl-id: 05b9e51f-467e-4c8e-baea-b1cf832597cd
-source-git-commit: 626f38141bafba8f5463c8793d52ea15448ed433
-workflow-type: ht
-source-wordcount: '599'
+source-git-commit: 1a49bcd5b76e6a3b0d5a3168cef445101dc8d149
+workflow-type: tm+mt
+source-wordcount: '345'
 ht-degree: 100%
 
 ---
+
 
 # 發行資訊 {#release-information}
 
@@ -44,31 +45,3 @@ ht-degree: 100%
 * [新增功能](what-is-new.md)
 * [重大變更](aem-cloud-changes.md)
 * [過時和移除的功能](deprecated-removed-features.md)
-
-## Experience Manager as a Cloud Service 指南 {#aem-guides}
-
-| 使用手冊 | 說明 |
-|---|---|
-| [概觀](/help/overview/home.md) | 本指南提供 Experience Manager as a Cloud Service 概觀，包括簡介、術語等。 |
-| [安全性使用手冊](/help/security/home.md) | 了解 Experience Manager as a Cloud Service 與安全性相關的重要主題。 |
-| [上線歷程](/help/journey-onboarding/overview.md) | 本指南簡單扼要地說明如何開始使用 Experience Manager as a Cloud Service，包括如何取得存取權限和重要的資料保護資訊。 |
-| [Sites 使用手冊](/help/sites-cloud/home.md) | 了解如何使用及管理 Experience Manager Sites as a Cloud Service。 |
-| [Assets 使用手冊](/help/assets/home.md) | 了解如何使用及管理 Experience Manager Assets as a Cloud Service。 |
-| [轉移至 AEM as a Cloud Service ](/help/journey-migration/getting-started.md) | 了解轉換至雲端服務的過程。 |
-| [實作使用手冊](/help/implementing/home.md) | 透過探索這些開發和部署主題，了解如何使用 AEM 的強大功能建置和自訂體驗。 |
-| [Headless 開發人員歷程](/help/journey-headless/developer/overview.md) | 探索這趟引導式歷程，了解 AEM 強大且靈活的 Headless 功能，為您的第一個 Headless 專案做好準備。 |
-| [連接器使用手冊](/help/connectors/home.md) | 了解如何將連接器與 Experience Manager as a Cloud Service 整合。 |
-| [操作使用手冊](/help/operations/home.md) | 了解 Experience Manager as a Cloud Service 後端的操作方式，例如製作索引和執行維護任務。 |
-| [Commerce 使用手冊](/help/commerce-cloud/home.md) | 了解 AEM as a Cloud Service 的商務整合框架。 |
-
-## 其他 Experience Manager 資源 {#other-resources}
-
-* [近期文件更新](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html)
-* [Dispatcher 文件](/help/implementing/dispatcher/overview.md)
-* [HTL 文件](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=zh-Hant)
-* [核心元件文件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hant)
-* [Cloud Manager 文件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/what-is-required/navigate-to-cloud-manager.html)
-* [GDPR 整備](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md)
-* [Adobe Experience Manager as a Cloud Service 教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
-* [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)
-* [AEM 社群論壇](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)

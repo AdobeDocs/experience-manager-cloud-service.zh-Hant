@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的運作方式以及該軟體可以為您做哪些事。
 breadcrumb-title: 使用手冊
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 65893c0c0dee37bed8ecfbb06a12e7c093c4397c
+source-git-commit: 1a49bcd5b76e6a3b0d5a3168cef445101dc8d149
 workflow-type: tm+mt
-source-wordcount: '4573'
+source-wordcount: '4538'
 ht-degree: 99%
 
 ---
@@ -16,7 +16,6 @@ ht-degree: 99%
 
 # Experience Manager as a Cloud Service 說明 {#content}
 
-+ [AEMaaCS 首頁](/help/overview/home.md)
 + 概觀 {#overview}
    + [AEM as a Cloud Service 簡介](/help/overview/introduction.md)
    + [新增功能與不同之處](/help/overview/what-is-new-and-different.md)
@@ -169,9 +168,8 @@ ht-degree: 99%
    + [已過時 API](/help/release-notes/deprecated-apis.md)
    + [發行前通道](/help/release-notes/prerelease.md)
 + 安全性 {#security}
-   + [AEM as a Cloud Service 安全性](/help/security/home.md)
-   + [為 AEM as a Cloud Service 設定進階網路](/help/security/configuring-advanced-networking.md)
    + [AEM as a Cloud Service 安全性概觀](/help/security/cloud-service-security-overview.md)
+   + [為 AEM as a Cloud Service 設定進階網路](/help/security/configuring-advanced-networking.md)
    + [AEM as a Cloud Service 的 IMS 支援](/help/security/ims-support.md)
    + [AEM as a Cloud Service 的相同網站 Cookie 支援](/help/security/same-site-cookie-support.md)
    + [郵件服務的 OAuth2 支援](/help/security/oauth2-support-for-mail-service.md)
@@ -261,7 +259,6 @@ ht-degree: 99%
       + [AEM Dispatcher 轉換工具](/help/journey-migration/refactoring-tools/dispatcher-transformation-utility-tools.md)
       + [AEM 現代化工具](/help/journey-migration/refactoring-tools/aem-modernization-tools.md)
 + Sites {#sites}
-   + [AEM Sites as a Cloud Service ](/help/sites-cloud/home.md)
    + [AEM Cloud Service 中 AEM Sites 的重大變更](/help/sites-cloud/sites-cloud-changes.md)
    + 製作 {#authoring}
       + 快速入門 {#getting-started}
@@ -396,7 +393,6 @@ ht-degree: 99%
       + [將體驗片段匯出到 Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
       + [與 Adobe Campaign 整合](/help/sites-cloud/integrating/campaign.md)
 + 資產 {#assets}
-   + [[!DNL Assets] as a [!DNL Cloud Service]](/help/assets/home.md)
    + [概觀與新增功能](/help/assets/overview.md)
    + [ [!DNL Assets] as a [!DNL Cloud Service] 重大變更](/help/assets/assets-cloud-changes.md)
    + [[!DNL Assets] 架構](/help/assets/architecture.md)
@@ -681,7 +677,6 @@ ht-degree: 99%
       + [安裝和設定](/help/forms/troubleshooting-installation-and-configuration.md)
       + [Dispatcher 和 CDN 快取](/help/forms/troubleshooting-caching-performance.md)
 + Screens {#screens-as-cloud-service}
-   + [AEM Screens as a Cloud Service](/help/screens-cloud/home.md)
    + Screens as a Cloud Service 概觀 {#overview}
       + [簡介](/help/screens-cloud/introduction/introduction.md)
       + [了解角色定義](/help/screens-cloud/introduction/personas-screens-cloud.md)
@@ -718,9 +713,8 @@ ht-degree: 99%
       + [為 Screens as a Cloud Service 開發自訂元件](/help/screens-cloud/developing/developing-custom-components-tutorial.md)
    + [Screens as a Cloud Service 常見問題集](/help/screens-cloud/screens-cloud-faqs.md)
 + Content and Commerce {#content-and-commerce}
-   + [AEM Content and Commerce](/help/commerce-cloud/home.md)
-   + [AEM Content and Commerce as a Cloud Service 重大變更](/help/commerce-cloud/changes.md)
    + [簡介和概觀](/help/commerce-cloud/introduction.md)
+   + [AEM Content and Commerce as a Cloud Service 重大變更](/help/commerce-cloud/changes.md)
    + Commerce 歷程{#journeys}
       + 內容作者歷程 {#author}
          + [AEM Content and Commerce 內容作者歷程](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/overview.md)
@@ -1079,7 +1073,6 @@ ht-degree: 99%
       + [AEM as a Cloud Service 中的 CDN](/help/implementing/dispatcher/cdn.md)
       + [AEM as a Cloud Service 中的快取](/help/implementing/dispatcher/caching.md)
 + 連接器 {#connectors}
-   + [為 AEM as a Cloud Service 實作連接器](/help/connectors/home.md)
    + [實作 AEM 連接器](/help/connectors/implement.md)
    + [提交 AEM 連接器](/help/connectors/submit.md)
    + [維護 AEM 連接器](/help/connectors/maintain.md)
