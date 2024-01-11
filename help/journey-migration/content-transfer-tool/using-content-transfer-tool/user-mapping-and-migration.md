@@ -5,7 +5,7 @@ exl-id: 4a35fc46-f641-46a4-b3ff-080d090c593b
 source-git-commit: bf1260f9a49012bbcb4138e0a5498d8dda451b6a
 workflow-type: tm+mt
 source-wordcount: '1060'
-ht-degree: 4%
+ht-degree: 5%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 4%
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_usermapping"
 >title="使用者移轉"
->abstract="內容轉移工具可協助您將使用者和群組從現有的 Adobe Experience Manager (AEM) 系統移至 AEM as a Cloud Service。現有使用者必須完成對應，才能透過其IMS ID登入。"
+>abstract="內容轉移工具可協助您將使用者和群組從現有的 Adobe Experience Manager (AEM) 系統移至 AEM as a Cloud Service。必須對應現有使用者，以便他們可以透過其 IMS ID 登入。"
 
 >[!NOTE]
 >如需舊版的使用者對應工具，請參閱 [舊版檔案](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/considerations-user-mapping-tool-legacy.md).
