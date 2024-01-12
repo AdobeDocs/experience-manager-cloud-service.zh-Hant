@@ -2,10 +2,10 @@
 title: 流量篩選規則包括 WAF 規則
 description: 設定流量篩選規則，包括 Web 應用程式防火牆 (WAF) 規則
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
-workflow-type: ht
-source-wordcount: '3357'
-ht-degree: 100%
+source-git-commit: 46e48b6bb8d2b926b55330024e145d608fcf3609
+workflow-type: tm+mt
+source-wordcount: '3350'
+ht-degree: 99%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 100%
 
 大多數流量篩選器規則可供所有 AEM as a Cloud Service 網站和表單客戶使用。它們主要是根據要求屬性和請求標頭進行操作，包括 IP、主機名稱、路徑和使用者代理程式。
 
-流量篩選規則的子類別需要增強的安全性授權或 WAF-DDoS 保護授權，並將於今年年底推出。這些強大的規則也稱為 WAF (Web 應用程式防火牆) 流量篩選規則 (或簡稱 WAF 規則)，且可以存取本文稍後將進行說明 [WAF 標幟](#waf-flags-list)。
+流量篩選規則的子類別需要增強式安全性授權或WAF-DDoS保護授權。 這些強大的規則也稱為 WAF (Web 應用程式防火牆) 流量篩選規則 (或簡稱 WAF 規則)，且可以存取本文稍後將進行說明 [WAF 標幟](#waf-flags-list)。
 
 流量篩選規則可以透過 Cloud Manager 設定管道部署到生產 (非沙箱) 程式中的開發、中繼和生產環境類型。未來將推出對 RDE 的支援。
 
