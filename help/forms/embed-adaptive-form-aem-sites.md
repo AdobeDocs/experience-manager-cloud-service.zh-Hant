@@ -2,9 +2,10 @@
 title: 如何將最適化表單新增至AEM Sites頁面？
 description: 將Adaptive Forms順暢地內嵌於AEM Sites頁面或AEM外部託管的網頁中。
 feature: Adaptive Forms
+role: Admin, User, Developer
 Keywords: Forms AEM Sites, Embed Form to a Sites page, Adaptive Forms AEM Sites, Embed Adaptive Forms to AEM Page, Embed Forms in an AEM Sites page
 exl-id: 359b05e8-d8c1-4a77-9e70-6f6b6e668560
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
 workflow-type: tm+mt
 source-wordcount: '3145'
 ht-degree: 5%

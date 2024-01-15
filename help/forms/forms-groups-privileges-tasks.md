@@ -1,11 +1,12 @@
 ---
 title: AEM Formsas a Cloud Service提供哪些立即可用的使用者群組？
 description: 現成可用的使用者群組清單以及指派給每個群組的許可權
-exl-id: bd66ce92-14d9-47fe-b5d3-022e3e468d25
-source-git-commit: a942e87a33775851631a1fe123fa3e8d2686bb30
+role: Admin, Developer, User
+feature: Adaptive Forms
+source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
 workflow-type: tm+mt
-source-wordcount: '185'
-ht-degree: 25%
+source-wordcount: '167'
+ht-degree: 23%
 
 ---
 
@@ -112,7 +113,7 @@ ht-degree: 25%
 * [設定本機開發環境](/help/forms/setup-local-development-environment.md)
 * [從 AEM 6.5 Forms 移轉到 Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
 * [建立獨立的最適化表單](/help/forms/creating-adaptive-form-core-components.md)
-* [新增 最適化表單至 AEM Sites 頁面](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+* [將最適化表單新增至AEM Sites頁面](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
 
 <!--
 

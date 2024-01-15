@@ -2,10 +2,12 @@
 title: ' [!DNL AEM Forms] as a Cloud Service 簡介'
 description: 探索 AEM Forms 以便產生業務可用表單、建立業務流程的工作流程，以及使用文件服務來產生和保護文件。
 landing-page-description: 了解如何在 AEM as a Cloud Service 中使用表單。
+role: Admin, Developer, User
+feature: Adaptive Forms
 exl-id: aa5ef10c-ba78-4a9d-8b2b-a72a7a306888
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
-workflow-type: ht
-source-wordcount: '1149'
+source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
+workflow-type: tm+mt
+source-wordcount: '972'
 ht-degree: 100%
 
 ---

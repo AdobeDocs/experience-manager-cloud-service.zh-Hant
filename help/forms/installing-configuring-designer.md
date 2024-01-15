@@ -2,9 +2,10 @@
 title: 如何下載和安裝Forms Designer以建立記錄檔案範本？
 description: 使用Forms Designer建立XDP和PDF表單範本，作為記錄檔案的範本。
 keywords: 安裝Designer、安裝Forms Designer、安裝Forms Designer的需求
-feature: Forms Designer
+feature: Adaptive Forms, Forms Designer
+role: Admin, Developer, User
 exl-id: d6f1cb21-c48b-406d-8d47-482d7a1b4cc3
-source-git-commit: b2769134c2e744f41cbb7e8a3cf08c622cdc07ca
+source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
 workflow-type: tm+mt
 source-wordcount: '409'
 ht-degree: 9%

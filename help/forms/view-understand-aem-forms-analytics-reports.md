@@ -1,18 +1,18 @@
 ---
 title: 檢視並了解 Adaptive Forms 分析報告
 description: 最適化表單可順暢地與 Adobe Analytics 整合，以擷取和追蹤已發佈表單和文件的效能量度。
-keywords: 檢視並了解 Adaptive Forms 分析報告，Adobe分析報表， Forms Analytics報表
+keywords: 檢視和瞭解Adaptive Forms Analytics報表、Adobe分析報表、Forms Analytics報表
 topic-tags: develop
 feature: Adaptive Forms
-role: User
+role: Admin, User
 level: Intermediate
-source-git-commit: 7c197be7819d6fcbf028237401d05236f90734d1
+exl-id: 756dee1f-4685-4783-961d-b172a5bd0692
+source-git-commit: 975f767e75a268a1638227ae20a533f82724c80a
 workflow-type: tm+mt
-source-wordcount: '988'
+source-wordcount: '976'
 ht-degree: 97%
 
 ---
-
 
 # 檢視並了解 Adaptive Forms 分析報告 {#viewing-and-understanding-aem-forms-analytics-reports}
 

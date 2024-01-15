@@ -1,10 +1,12 @@
 ---
 title: 輕鬆建立大量PDF — 掌握批次處理的藝術 — 您製作數百萬PDF檔案的自助指南！
 description: 如何建立品牌導向和個人化的通訊？
+feature: Adaptive Forms, APIs
+role: Admin, Developer, User
 exl-id: 542c8480-c1a7-492e-9265-11cb0288ce98
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 975f767e75a268a1638227ae20a533f82724c80a
 workflow-type: tm+mt
-source-wordcount: '1735'
+source-wordcount: '1706'
 ht-degree: 2%
 
 ---

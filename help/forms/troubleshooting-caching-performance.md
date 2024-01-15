@@ -2,11 +2,13 @@
 title: 如何針對AEM Formsas a Cloud Service的快取相關問題進行疑難排解？
 description: 疑難排解AEM Formsas a Cloud Service的快取相關問題。
 contentOwner: khsingh
+feature: Adaptive Forms, Troubleshooting
+role: User
 exl-id: eae44a6f-25b4-46e9-b38b-5cec57b6772c
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
 workflow-type: tm+mt
-source-wordcount: '378'
-ht-degree: 2%
+source-wordcount: '381'
+ht-degree: 1%
 
 ---
 
@@ -33,7 +35,7 @@ ht-degree: 2%
 執行以下步驟以解決問題：
 
 1. 開啟您的Experience Manager專案。
-1. 開啟 `dispatcher/scr/conf.d/rewrites/rewrite.rules` 進行編輯。 
+1. 開啟 `dispatcher/scr/conf.d/rewrites/rewrite.rules` 以進行編輯。
 1. 開啟 `conf.d/httpd-dispatcher.conf` 或任何其他設定為在執行階段載入的組態檔。
 1. 將下列程式碼新增至您的檔案並儲存。 此範常式式碼會加以修改以符合您的環境。
 

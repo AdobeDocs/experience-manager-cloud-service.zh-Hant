@@ -2,8 +2,10 @@
 title: 如何為最適化表單啟用Adobe Analytics？
 description: Experience Cloud Setup Automation 可協助將 Adobe Analytics 連接到最適化表單，以追蹤關於訪客互動和參與度的深入見解。
 keywords: 使用Experience Cloud設定自動化啟用最適化表單的Adobe Analytics、在Forms中啟用Adobe Analytics、在最適化Forms中啟用Adobe Analytics、Forms分析整合、Forms和Adobe Analytics
+feature: Adaptive Forms
+role: Admin, User
 exl-id: 0e1aa040-08b4-4c1a-b247-ad6fff410187
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 975f767e75a268a1638227ae20a533f82724c80a
 workflow-type: tm+mt
 source-wordcount: '1555'
 ht-degree: 58%

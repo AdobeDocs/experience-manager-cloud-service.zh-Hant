@@ -1,11 +1,13 @@
 ---
 title: 最適化Forms的AEM Formsas a Cloud Service架構和通訊API
 description: 瞭解 [!DNL AEM Forms] as a Cloud Service瞭解平台的可擴充性、可復原性和效能。
+role: Admin, Developer, User
+feature: Adaptive Forms
 exl-id: 9d677bee-50ca-460e-b503-6b7799900735
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
 workflow-type: tm+mt
-source-wordcount: '1093'
-ht-degree: 5%
+source-wordcount: '1033'
+ht-degree: 2%
 
 ---
 
@@ -67,7 +69,7 @@ AEMas a Cloud Service上無法使用反向復寫，無法將內容/資料從發�
 
 ### Adobe服務
 
-**自動化表單轉換服務**
+**automated forms conversion服務**
 
 [automated forms conversion服務](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html) 自動將您的PDF和XFA表單轉換為適合裝置、回應式且HTML5型的最適化表單。
 
@@ -96,14 +98,14 @@ Formsas a Cloud Service提供可將內容儲存在外部儲存系統（例如Blo
 
 ### Cloud Manager
 
-Cloud Manager是重要的元件， [AEMas a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/introduction.html?lang=zh-Hant). 這是我們客戶營運與開發人員角色的單一入口點。 這是可管理AEM計畫和環境的位置。 Cloud Manager已經演變成為自助服務入口網站，可以建立和設定AEMas a Cloud Service的主要元件：
+Cloud Manager是重要的元件， [AEMas a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/introduction.html). 這是我們客戶營運與開發人員角色的單一入口點。 這是可管理AEM計畫和環境的位置。 Cloud Manager已經演變成為自助服務入口網站，可以建立和設定AEMas a Cloud Service的主要元件：
 
 * 建立和管理方案
 * 在方案中建立和管理AEM環境
 * 建立和管理將客戶計畫碼和設定部署到特定環境的管道
-* 取得這些元件的重要生命週期事件的通知（例如產品更新）如需Cloud Manager的詳細資訊，請參閱 [瞭解Adobe Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/cloud-manager/understand-cloud-manager-for-aem.html) 和 [Cloud Manager簡介](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=zh-Hant).
+* 取得這些元件的重要生命週期事件的通知（例如產品更新）如需Cloud Manager的詳細資訊，請參閱 [瞭解Adobe Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/cloud-manager/understand-cloud-manager-for-aem.html) 和 [Cloud Manager簡介](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html).
 
-### 開發人員控制台
+### 開發人員主控台
 
 開發人員控制檯提供每個執行Forms as a Cloud Service環境的各種詳細資訊。 這些詳細資料有助於對環境進行偵錯。 如需詳細資訊，請參閱 [使用開發人員控制檯除錯AEMas a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html).
 

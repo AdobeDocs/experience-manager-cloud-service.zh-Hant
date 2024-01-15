@@ -1,11 +1,11 @@
 ---
 title: 在AEM Forms中使用表單資料模型的程式為何？
 description: 新增資料模型物件、服務、建立資料模型物件和子屬性、設定服務、使用OData服務的導覽屬性。
-feature: Form Data Model
-role: User
+feature: Adaptive Forms, Form Data Model
+role: Admin, User
 level: Beginner, Intermediate
 exl-id: c17c0443-d4dc-41f8-9315-6cc49e6c471f
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
 workflow-type: tm+mt
 source-wordcount: '4087'
 ht-degree: 0%

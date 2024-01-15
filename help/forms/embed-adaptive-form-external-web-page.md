@@ -2,11 +2,13 @@
 title: 如何將最適化表單內嵌到外部網頁？
 description: 瞭解如何將最適化Forms內嵌至網站。
 topic-tags: author
+role: Admin, Developer, User
 feature: Adaptive Forms
-source-git-commit: 2d4a81aa0d6755270d4d6efb8649782f4bde4537
+exl-id: 00b8cd79-bf2d-4001-b2d6-1b020c868008
+source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
 workflow-type: tm+mt
-source-wordcount: '1015'
-ht-degree: 51%
+source-wordcount: '1003'
+ht-degree: 50%
 
 ---
 
@@ -96,7 +98,7 @@ ht-degree: 51%
 
 1. 在嵌入代碼中：
 
-   * 變更 *options.路徑* 變數，搭配最適化表單的發佈URL路徑。 如果 AEM 伺服器在上下文路徑上執行，請確保 URL 包含上下文路徑。一定要提及調適型表單的完整名稱，包括副檔名。例如，上述程式碼和調適型來自位於同一個AEM Forms伺服器，因此此範例使用調適型表單的內容路徑 `/content/forms/af/locbasic.html`.
+   * 變更 *options.路徑* 變數，搭配最適化表單的發佈URL路徑。 如果 AEM 伺服器在上下文路徑上執行，請確保 URL 包含上下文路徑。一律提及最適化表單的完整名稱，包括擴充功能。 例如，上述程式碼和調適型來自位於同一個AEM Forms伺服器，因此此範例使用調適型表單的內容路徑 `/content/forms/af/locbasic.html`.
    * 取代 *options.dataRef* 要與URL一併傳遞的屬性。 您可以使用dataref變數來 [預填最適化表單](/help/forms/prepopulate-adaptive-form-fields.md).
    * 取代 *options.themePath* 非最適化表單中設定的主題路徑。 或者，您可以使用請求屬性指定主題路徑。
    * CSS_Selector 是所嵌入調適型表單的表單容器 CSS 選擇器。例如，.customafsection css 類是上面範例中的 CSS 選擇器。

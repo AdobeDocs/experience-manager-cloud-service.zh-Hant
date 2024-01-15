@@ -3,11 +3,12 @@ title: 如何將最適化表單內嵌到外部網頁中？
 description: 了解如何在外部網頁中嵌入調適型表單
 contentOwner: Khushwant Singh
 docset: CloudService
-role: Developer
+role: Admin, Developer, User
+feature: Adaptive Forms, Core Components
 exl-id: 198f6f76-1134-4818-89a0-6ddc84ff956c
-source-git-commit: a942e87a33775851631a1fe123fa3e8d2686bb30
+source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
 workflow-type: tm+mt
-source-wordcount: '982'
+source-wordcount: '972'
 ht-degree: 98%
 
 ---

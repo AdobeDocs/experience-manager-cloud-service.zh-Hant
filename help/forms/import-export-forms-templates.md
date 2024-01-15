@@ -2,8 +2,9 @@
 title: 如何在AEM Forms執行個體上匯入、匯出及組織最適化Forms或PDF forms？
 description: 瞭解如何從AEM執行個體移轉最適化Forms、PDF forms、主題和其他支援資產。
 topic-tags: forms-manager
-exl-id: f5105fb7-b8c0-4656-8095-b21d392746c0
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+role: Admin, User
+feature: Adaptive Forms
+source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
 workflow-type: tm+mt
 source-wordcount: '1193'
 ht-degree: 0%

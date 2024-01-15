@@ -1,11 +1,11 @@
 ---
 title: 如何建立表單資料模型？
 description: 瞭解如何使用自適應表單或AEM工作流程建立表單資料模型(FDM)，以及傳送或擷取資料至資料來源。
-feature: Form Data Model
+feature: Adaptive Forms, Form Data Model
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: b17b7441-912c-44c7-a835-809f014a8c86
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
 workflow-type: tm+mt
 source-wordcount: '1512'
 ht-degree: 1%
@@ -44,7 +44,7 @@ ht-degree: 1%
    * (**可選**)指定表單資料模型的標題、說明和標籤。
    * (**選填，且僅在已設定資料來源時適用**)選取「 」旁的勾選圖示 **[!UICONTROL 資料來源組態]** 欄位並選取您要使用之資料來源的雲端服務所在的設定節點。 它會將下一頁可供選取的資料來源清單，限制在所選設定節點中可供選取的資料來源。 但是，任何 [!DNL Experience Manager] 預設會列出使用者設定檔資料來源。 如果您未選取組態節點，則會列出所有組態節點的資料來源。
 
-1. 選取 **[!UICONTROL 下一個]**.
+1. 選取&#x200B;**[!UICONTROL 「下一步」]**。
 
 1. (**僅適用於已設定資料來源時**) **[!UICONTROL 選取資料來源]** 畫面會列出可用的資料來源（若有）。 選取您要在表單資料模型中使用的資料來源。
 1. 選取 **[!UICONTROL 建立]** 在確認對話方塊中，選取 **[!UICONTROL 開啟]** 以開啟表單資料模型編輯器。
@@ -122,7 +122,7 @@ ht-degree: 1%
       1. 選取 **[!UICONTROL 已啟用]**.
       1. 在覆寫下，根據sling覆寫語法中的環境，提供需要變更的欄位。 如需詳細資訊，請參閱 [Apache Sling內容感知設定 — 覆寫](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration-override.html#override-syntax). 例如， `cloudconfigs/fdm/{configName}/url="newURL"`.
 選取「 」，可新增多個覆寫 **[!UICONTROL +]**.
-      1. 選取&#x200B;**[!UICONTROL 儲存]**。
+      1. 選取「**[!UICONTROL 儲存]**」。
       1. 若要取得OSGi設定JSON，請遵循中的步驟 [使用AEM SDK快速入門產生OSGi設定](/help/implementing/deploying/configuring-osgi.md#generating-osgi-configurations-using-the-aem-sdk-quickstart).
       1. 將JSON放在上一步建立的OSGi Factory設定檔案中。
       1. 變更值 `newURL` 根據環境（或runmode）。

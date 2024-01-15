@@ -3,15 +3,17 @@ title: 整合Adobe Workfront Fusion與AEM Forms提交作業
 description: Adobe Workfront Fusion可讓您專注於新工作，而非重複工作。 您可以使用表單提交功能將Adobe Workfront Fusion連結至最適化表單。
 keywords: 提交最適化表單至Adobe Workfront Fusion、Adobe Workfront Fusion與AEM Forms提交的整合、Adobe Workfront Fusion與AEM Forms、Workfront Fusion與AEM Forms、連線Workfront Fusion至AEM Forms、AEM Forms及Workfront Fusion、如何連線Workfront Fusion與AEM Forms？，連線Workfront Fusion至表單
 topic-tags: author, developer
-source-git-commit: 68314ca09594d3c4c5639363326117b89b733a4d
+feature: Adaptive Forms
+role: Admin, User
+exl-id: d3efb450-a879-40ae-8958-0040f99bdafc
+source-git-commit: 975f767e75a268a1638227ae20a533f82724c80a
 workflow-type: tm+mt
 source-wordcount: '1240'
 ht-degree: 3%
 
 ---
 
-
-# 提交最適化表單至Adobe Workfront Fusion
+# 向 Adobe Workfront Fusion 提交最適化表單
 
 <span class="preview"> 此功能可在早期採用者計畫下取得。 您可以從您的官方電子郵件ID寫信到aem-forms-early-adopter-program@adobe.com ，以加入率先採用者計畫並請求存取該功能。 </span>
 
@@ -189,5 +191,3 @@ ht-degree: 3%
 - 一個案例可以有多個webhook連結，但一次只能有一個webhook連結處於作用中。 建議刪除未連結的webhook，使其不會出現在AEM Forms提交動作下拉式清單中。
 
 <!-- During testing or development of Workfront, add the Author URL to the instance URL. However, when deploying Workfront Fusion in a production environment, it is recommended to replicate the scenario URLs for the Publish instance. -->
-
-
