@@ -1,8 +1,8 @@
 ---
 source-git-commit: 6a370269317621f09f0dcdc7f701d7c8a4891ea4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '236'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 # 代碼片段 {#snippets}
@@ -17,13 +17,13 @@ ht-degree: 80%
 
 ## WAF 組態有限發佈 {#waf-limited-release}
 
-[!BADGE WAF-DDOS保護將於2023年底推出。]{type=Caution tooltip="WAF-DDOS保護將於2023年底推出。"}
+[!BADGE WAF-DDOS 保護將於 2023 年底推出。]{type=Caution tooltip="WAF-DDOS 保護將於 2023 年底推出。"}
 
-## 通用編輯器狀態 {#universal-editor-status}
+## Universal Editor 狀態 {#universal-editor-status}
 
 >[!NOTE]
 >
->Universal Editor仍在開發中，其功能可能會有所變更，並且可能與本檔案的詳細內容不同。
+>Universal Editor 仍在開發中，其功能可能會發生變化，並且可能與本文件詳述的內容有所不同。
 
 ## 另請參閱 {#see-also}
 

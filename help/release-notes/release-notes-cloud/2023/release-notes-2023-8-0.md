@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2023.8.0 版發行�
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2023.8.0 版發行說明。'
 exl-id: a0ffa6cf-64ae-468c-93f4-ac6805ef907e
 source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1691'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -70,11 +70,11 @@ You can now assign metadata form to a specific folder within your Assets Essenti
 
   ![從資料來源大量匯入資產](/help/release-notes/assets/bulk-import.png)
 
-* **Adobe Express支援的影像編輯工具**：簡單又直觀 [Adobe Express支援的影像編輯工具](/help/assets/edit-images-assets-view.md) 可直接在AEM Assets中使用，以提高內容重複使用率並加快內容速度。
+* **由 Adobe Express 提供技術支援的影像編輯工具**：簡單直覺的[影像編輯工具是由 Adobe Express 提供技術支援，](/help/assets/edit-images-assets-view.md)可直接在 AEM Assets 中使用，以增加內容重複使用性並加快內容流通速度。
 
   ![使用 Adobe Express 進行影像編輯](/help/release-notes/assets/edit-adobe-express.png)
 
-* **為「我的工作區快速存取」釘選專案時的靈活性**：可選取並釘選您、整個組織或群組清單的專案，以便這些專案顯示在 [我的工作區的快速存取區段](/help/assets/my-workspace-assets-view.md) 根據您的選取。
+* **為「我的工作區」的「快速存取」釘選項目時的靈活性**：能夠為您和您的組織或群組清單選擇和釘選項目，讓這些項目能夠根據您的選擇顯示在[「我的工作區」的「快速存取」區段](/help/assets/my-workspace-assets-view.md)中。
 
   ![為群組釘選項目](/help/release-notes/assets/pin-items-for-groups.png)
 

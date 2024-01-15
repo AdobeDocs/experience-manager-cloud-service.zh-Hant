@@ -3,9 +3,9 @@ title: 合適的人，合適的角色
 description: 了解如何為專案選擇合適的人員，並將他們指派到合適的角色。
 exl-id: 9106ccf5-dc90-4ccb-95bd-7dd5392cd174
 source-git-commit: aa032af2ed7ff877b4c9f9cb6d427c84e71c3874
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '832'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
