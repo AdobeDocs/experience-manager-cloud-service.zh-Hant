@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的運作方式以及該軟體可以為您做哪些事。
 breadcrumb-title: 使用手冊
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 1a49bcd5b76e6a3b0d5a3168cef445101dc8d149
+source-git-commit: 8a74f027c7fe16c3bd23a8627bc9c82e8840cb77
 workflow-type: tm+mt
-source-wordcount: '4538'
+source-wordcount: '4544'
 ht-degree: 99%
 
 ---
@@ -656,6 +656,8 @@ ht-degree: 99%
             + [建立無障礙的最適化表單](/help/forms/creating-accessible-adaptive-forms.md)
          + [設定表單入口網站](/help/forms/configure-forms-portal.md)
          + [建立和管理評論](/help/forms/create-reviews-forms.md)
+      + [最適化表單關鍵字](/help/forms/adaptive-forms-keywords.md)
+      + [預覽表單](/help/forms/previewing-forms.md)
    + 以 Forms 為中心的工作流程 {#create-form-centric-workflows}
       + [在工作流程中使用以 Forms 為中心的步驟 + 步驟參考](/help/forms/aem-forms-workflow-step-reference.md)
       + [在以 Forms 為中心的工作流程中使用變數](/help/forms/variable-in-aem-workflows.md)
@@ -1107,9 +1109,9 @@ ht-degree: 99%
    + 開發 {#developing}
       + [AEM 中 Universal Editor 快速入門](/help/implementing/universal-editor/getting-started.md)
       + [Universal Editor 開發人員概觀](/help/implementing/universal-editor/developer-overview.md)
-      + [屬性與料號型態](/help/implementing/universal-editor/attributes-types.md)
-      + [欄位型別](/help/implementing/universal-editor/field-types.md)
+      + [屬性和項目類型](/help/implementing/universal-editor/attributes-types.md)
+      + [欄位類型](/help/implementing/universal-editor/field-types.md)
       + [Universal Editor 驗證](/help/implementing/universal-editor/authentication.md)
       + [使用 Universal Editor 進行本機 AEM 開發](/help/implementing/universal-editor/local-dev.md)
-      + [通用編輯器呼叫](/help/implementing/universal-editor/calls.md)
+      + [Universal Editor 呼叫](/help/implementing/universal-editor/calls.md)
       + [自訂UI](/help/implementing/universal-editor/customizing.md)

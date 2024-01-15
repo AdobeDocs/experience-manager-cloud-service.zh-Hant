@@ -1,13 +1,13 @@
 ---
 title: 如何預覽最適化表單？
-description: 使用者可在發佈或啟用之前預覽表單，以確保表單符合預期。 預覽選項可能因支援的表單型別而異。
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
+description: 使用者可在發佈或啟用表單前預覽表單，以確保表單符合預期。 預覽選項可能因支援的表單型別而異。
 topic-tags: author
-discoiquuid: 377d804d-4a75-4c93-8125-d2660cf56418
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+role: Admin, Developer, User
+feature: Adaptive Forms
+source-git-commit: 6511c4273ca3d394d98a61e8acb4d3cb03c243d5
 workflow-type: tm+mt
-source-wordcount: '359'
-ht-degree: 3%
+source-wordcount: '336'
+ht-degree: 2%
 
 ---
 
@@ -28,10 +28,10 @@ ht-degree: 3%
    <td><strong>資產型別</strong><br /> </td>
    <td><strong>可用的預覽選項</strong><br /> </td>
   </tr>
-  <tr>
-   <td>文件</td>
-   <td>PDF預覽</td>
-  </tr>
+  <!--<tr>
+   <td>Document</td>
+   <td>PDF preview</td>
+  </tr>-->
   <tr>
    <td>PDF表單</td>
    <td>包含資料的PDF預覽和預覽<br /> </td>
@@ -40,10 +40,10 @@ ht-degree: 3%
    <td>最適化表單</td>
    <td>包含資料的HTML預覽和HTML預覽</td>
   </tr>
-  <tr>
-   <td>表單範本</td>
-   <td>PDF預覽、含資料的PDF預覽、HTML預覽、含資料的HTML預覽<br /> </td>
-  </tr>
+  <!--<tr>
+   <td>Form Template</td>
+   <td>PDF preview, PDF preview with Data, HTML preview, HTML preview with Data<br /> </td>
+  </tr>-->
  </tbody>
 </table>
 
@@ -61,7 +61,7 @@ ht-degree: 3%
 
    * 以HTML預覽
    * 以資料預覽
-   * 以PDF預覽（適用於表單範本）
+     <!--* Preview as PDF (available for form templates)-->
 
 ## 以資料預覽 {#preview-with-data}
 
