@@ -3,7 +3,7 @@ title: AEM Cloud Service 中 AEM Sites 的重大變更
 description: 了解如何使用 AEM Sites as a Cloud Service 進行編寫和管理，以及 AEM Cloud Service 中對 AEM Sites 的重要變更。
 exl-id: 60b1aec4-75a0-459f-bf77-8d8c1af757ce
 source-git-commit: 07db10c4ee9cced7b6a697fe4f41c99eaba6a39f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '527'
 ht-degree: 100%
 
