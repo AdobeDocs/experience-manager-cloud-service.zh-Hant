@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的運作方式以及該軟體可以為您做哪些事。
 breadcrumb-title: 使用手冊
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 8a74f027c7fe16c3bd23a8627bc9c82e8840cb77
+source-git-commit: e25f3e74fa7fa18b92ffe0c40a19f20442d4c7a0
 workflow-type: tm+mt
 source-wordcount: '4544'
 ht-degree: 99%
@@ -164,12 +164,11 @@ ht-degree: 99%
       + [Workfront for Experience Manager 加強連接器最新發行說明](/help/assets/release-notes-enhanced-connector-workfront.md)
    + [新增功能 ](/help/release-notes/what-is-new.md)
    + [AEM Cloud Service 的重大變更](/help/release-notes/aem-cloud-changes.md)
-   + [過時和移除的功能](/help/release-notes/deprecated-removed-features.md)
-   + [已過時 API](/help/release-notes/deprecated-apis.md)
+   + [過時和移除的功能和API](/help/release-notes/deprecated-removed-features.md)
    + [發行前通道](/help/release-notes/prerelease.md)
 + 安全性 {#security}
    + [AEM as a Cloud Service 安全性概觀](/help/security/cloud-service-security-overview.md)
-   + [為 AEM as a Cloud Service 設定進階網路](/help/security/configuring-advanced-networking.md)
+   + [設定 AEM as a Cloud Service 的進階網路](/help/security/configuring-advanced-networking.md)
    + [AEM as a Cloud Service 的 IMS 支援](/help/security/ims-support.md)
    + [AEM as a Cloud Service 的相同網站 Cookie 支援](/help/security/same-site-cookie-support.md)
    + [郵件服務的 OAuth2 支援](/help/security/oauth2-support-for-mail-service.md)
@@ -716,7 +715,7 @@ ht-degree: 99%
    + [Screens as a Cloud Service 常見問題集](/help/screens-cloud/screens-cloud-faqs.md)
 + Content and Commerce {#content-and-commerce}
    + [簡介和概觀](/help/commerce-cloud/introduction.md)
-   + [AEM Content and Commerce as a Cloud Service 重大變更](/help/commerce-cloud/changes.md)
+   + [AEM Content and Commerce as a Cloud Service 的重大變更](/help/commerce-cloud/changes.md)
    + Commerce 歷程{#journeys}
       + 內容作者歷程 {#author}
          + [AEM Content and Commerce 內容作者歷程](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/overview.md)
@@ -1114,4 +1113,4 @@ ht-degree: 99%
       + [Universal Editor 驗證](/help/implementing/universal-editor/authentication.md)
       + [使用 Universal Editor 進行本機 AEM 開發](/help/implementing/universal-editor/local-dev.md)
       + [Universal Editor 呼叫](/help/implementing/universal-editor/calls.md)
-      + [自訂UI](/help/implementing/universal-editor/customizing.md)
+      + [自訂 UI](/help/implementing/universal-editor/customizing.md)

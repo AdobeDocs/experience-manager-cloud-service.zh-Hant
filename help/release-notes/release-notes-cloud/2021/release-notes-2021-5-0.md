@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2021.5.0 版發行說明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2021.5.0 版發行說明。'
 exl-id: 3f9d7339-7e37-4702-821e-f2b03cd7e224
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 720430af374636878b42ce346ca9c61ab089709b
 workflow-type: tm+mt
-source-wordcount: '1352'
-ht-degree: 45%
+source-wordcount: '1355'
+ht-degree: 43%
 
 ---
 
@@ -31,19 +31,19 @@ ht-degree: 45%
 
 * [發行前通道](/help/release-notes/prerelease.md)：在即將上線的功能投入生產之前，先預覽整整一個月！
 
-* [API淘汰](/help/release-notes/deprecated-apis.md)：提供適用於AEMas a Cloud Service的最新已棄用API清單。
+* [API淘汰](/help/release-notes/deprecated-removed-features.md)：提供適用於AEMas a Cloud Service的最新已棄用API清單。
 
 * [AEMas a Cloud ServiceSDK建置分析器Maven外掛程式](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html)：將您的Maven專案更新至最新版本，其中包括已淘汰的Java API檢查和其他改善。
 
 ## [!DNL Adobe Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
-### [!DNL Sites]的新增功能 {#what-is-new-sites}
+### [!DNL Sites] 的新增功能 {#what-is-new-sites}
 
 * 您很快就會能夠驗證新版本的內容 [預覽層](/help/sites-cloud/authoring/fundamentals/previewing-content.md) 以模擬最終的體驗外觀，如同您在發佈層級上一樣。 這可透過AEM Sites Managed Publication精靈啟用，現在可讓您在發佈或預覽之間選擇發佈目的地。 接著，您就可以透過專用URL存取「預覽」上的體驗。 在「預覽」上進行驗證後，內容可以如常從「作者」發佈至「發佈」。 在AEMas a Cloud Service環境中啟用預覽服務將在未來幾週逐步推出。
 
 ## [!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### [!DNL Assets]的新增功能 {#what-is-new-assets}
+### [!DNL Assets] 的新增功能 {#what-is-new-assets}
 
 * 您可以使用「連結共用」功能下載共用的資產。 此下載專案現在使用非同步服務，提供更快速且無中斷的下載專案，即使是大型下載專案亦然。 另請參閱 [下載資產](/help/assets/download-assets-from-aem.md#link-share-download).
 
@@ -61,7 +61,7 @@ ht-degree: 45%
 
   ![介面上會顯示資料夾中的資產數量](/help/assets/assets/browse-folder-number-of-assets.png)
 
-### 修正在[!DNL Assets]中的錯誤 {#assets-bugs-fixed}
+### 修正在 [!DNL Assets] 中的錯誤 {#assets-bugs-fixed}
 
 * 上傳超大型檔案會當機 [!DNL Experience Manager desktop app]. (CQ-4320942)
 * 當從資料夾中選取相同的集合，以及從搜尋結果中選取集合時，工具列選項會不同。 (CQ-4321406)
@@ -73,14 +73,14 @@ ht-degree: 45%
 
 ## [!DNL Adobe Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-### [!DNL Forms]的新增功能 {#what-is-new-forms}
+### [!DNL Forms] 的新增功能 {#what-is-new-forms}
 
 * **關聯式說明**：新增最適化表單編輯器、範本編輯器和主題編輯器的關聯式說明，以協助作者更能了解編輯器的各種功能。
 * **屬性瀏覽器中的錯誤訊息**：新增最適化表單屬性瀏覽器中每種屬性的錯誤訊息。這些訊息有助於了解欄位允許的值。
 
-### [!DNL Forms]即將推出的 Beta 版功能 {#what-is-new-forms-prerelease}
+### [!DNL Forms] 即將推出的 Beta 版功能 {#what-is-new-forms-prerelease}
 
-Output as a Cloud service：Output 服務可幫助您合併 XDP 範本和 XML 資料，以產生多種格式的列印文件。 此服務可讓您以同步和非同步批次模式產生檔案。 Output 服務可讓您建立以下用途的應用程式：
+Output as a Cloud service：Output 服務可幫助您合併 XDP 範本和 XML 資料，以產生多種格式的列印文件。 此服務可讓您以同步和非同步的批次模式產生文件。 Output 服務可讓您建立以下用途的應用程式：
 
 * 使用 XML 資料填寫範本檔案來產生最終表單文件。
 * 產生多種格式的輸出表單，包括非互動式 PDF 列印資料流。
@@ -101,7 +101,8 @@ Output as a Cloud service：Output 服務可幫助您合併 XDP 範本和 XML �
 
 ### 發行日期 {#release-date-cm-may}
 
-AEM as a Cloud Service 2021.5.0 中的 Cloud Manager 發行日期是 2021 年 5 月 06 日。下一版本計畫於 2021 年 6 月 03 日發行。
+AEMas a Cloud Service2021.5.0中Cloud Manager的發行日期為2021年5月06日。
+下一個版本計畫於2021年6月3日發行。
 
 ### 新增功能 {#what-is-new-may}
 
