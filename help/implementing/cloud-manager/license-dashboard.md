@@ -2,10 +2,10 @@
 title: 授權儀表板
 description: Cloud Manager 提供了一個儀表板，用於輕鬆查看您的組織或租用戶可用的 AEMaaCS 產品權利。
 exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
-source-git-commit: fbfb5d3ee8dbc8bc4cbe118fd4ce97284f712bb4
+source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
 workflow-type: tm+mt
-source-wordcount: '665'
-ht-degree: 66%
+source-wordcount: '661'
+ht-degree: 58%
 
 ---
 
@@ -30,7 +30,7 @@ Cloud Manager 授權儀表板提供對以下資訊的輕鬆存取：
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織。
 
-1. 在產品概覽頁面上，切換到&#x200B;**執照**&#x200B;標籤。
+1. 在 **[我的計畫](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** 熒幕，切換至 **授權** 標籤。
 
 ![授權儀表板](assets/license-dashboard.png)
 
@@ -55,7 +55,7 @@ Cloud Manager 授權儀表板提供對以下資訊的輕鬆存取：
 
 ### 什麼是內容請求？ {#what-is-a-content-request}
 
-內容請求是進入 AEM Sites 或任何客戶提供的快取系統 (例如內容傳遞網路) 的請求，以 HTML 格式作為頁面檢視或 JSON 格式作為 API 呼叫以傳遞內容或資料。
+內容請求是進入AEM Sites或任何客戶提供的快取系統（例如內容傳遞網路）的請求，以HTML格式作為頁面檢視或JSON格式作為API呼叫傳遞內容或資料。
 
 每次頁面查看或每五個 API 調用計算一個內容請求，在接收內容請求的第一個緩存系統的入口處測量。內容請求僅計入生產環境。
 

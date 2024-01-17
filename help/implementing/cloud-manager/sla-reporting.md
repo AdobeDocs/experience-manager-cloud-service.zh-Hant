@@ -2,10 +2,10 @@
 title: SLA 報告
 description: 了解如何查看生產 AEM 環境相對於簽訂的服務水平協議 (SLA) 的效能。
 exl-id: 03932415-a029-4703-b44a-f86a87edb328
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
 workflow-type: tm+mt
-source-wordcount: '245'
-ht-degree: 91%
+source-wordcount: '250'
+ht-degree: 88%
 
 ---
 
@@ -18,7 +18,9 @@ ht-degree: 91%
 
 SLA 報告數據可透過&#x200B;**報告**&#x200B;標籤。請依照下列步驟進行存取。
 
-1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織和方案。
+1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織。
+
+1. 在 **[我的計畫](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** 畫面選取程式。
 
 1. 從&#x200B;**總覽**&#x200B;頁面瀏覽到&#x200B;**報告**&#x200B;索引標籤。
 

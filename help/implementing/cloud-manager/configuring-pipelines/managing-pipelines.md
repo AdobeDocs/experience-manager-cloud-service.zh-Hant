@@ -3,10 +3,10 @@ title: 管理管道
 description: 了解如何管理現有管道，包括將其編輯、執行和刪除。
 index: true
 exl-id: 4aff5a84-134a-43fa-8de8-8d564f4edd16
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
 workflow-type: tm+mt
-source-wordcount: '928'
-ht-degree: 66%
+source-wordcount: '934'
+ht-degree: 65%
 
 ---
 
@@ -39,7 +39,9 @@ ht-degree: 66%
 
 **管道**&#x200B;視窗顯示所選方案所有管道的完整清單。這很有用，因為它提供的資訊比[管道卡](#pipeline-card)提供的資訊更完整。
 
-1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織和方案。
+1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織。
+
+1. 在 **[我的計畫](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** 畫面，選取程式。
 
 1. 從 **計畫總覽** 頁面，選取 **管道** 標籤以切換至 **管道** 視窗。
 

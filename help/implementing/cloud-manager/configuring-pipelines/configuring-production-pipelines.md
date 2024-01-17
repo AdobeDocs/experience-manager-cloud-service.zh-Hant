@@ -3,17 +3,17 @@ title: 設定生產管道
 description: 了解如何設定生產管道以建置程式碼並將其部署到生產環境。
 index: true
 exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
 workflow-type: tm+mt
-source-wordcount: '1412'
-ht-degree: 77%
+source-wordcount: '1418'
+ht-degree: 72%
 
 ---
 
 
 # 設定生產管道 {#configure-production-pipeline}
 
-了解如何設定生產管道以建置程式碼並將其部署到生產環境。生產管道會先將計畫碼部署到中繼環境，並在獲得核准後將相同的計畫碼部署到生產環境。
+瞭解如何設定生產管道以建置計畫碼並將其部署到生產環境。 生產管道會先將計畫碼部署到中繼環境，並在獲得核准後將相同的計畫碼部署到生產環境。
 
 使用者必須擁有&#x200B;**[部署管理員](/help/onboarding/cloud-manager-introduction.md#role-based-permissions)**&#x200B;角色才能設定生產管道。
 
@@ -35,7 +35,9 @@ ht-degree: 77%
 >
 >在設定前端管道之前，請參閱 [AEM Quick Site 建立歷程](/help/journey-sites/quick-site/overview.md)，以透過易於使用的 AEM Quick Site 建立工具取得端到端指南。此歷程可幫助您簡化 AEM 網站的前端開發，讓您無需 AEM 後端知識即可快速自訂網站。
 
-1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織和計畫。
+1. 登入Cloud Manager於 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 並選取適當的組織
+
+1. 在 **[我的計畫](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** 畫面，選取程式。
 
 1. 導覽至 **管道** 卡來自 **計畫總覽** 頁面並按一下 **新增** 以選取 **新增生產管道**.
 
@@ -67,7 +69,7 @@ ht-degree: 77%
 
 ### 完整堆疊程式碼 {#full-stack-code}
 
-完整堆疊程式碼管道同時部署包含一個或多個 AEM 伺服器應用程序以及 HTTPD/Dispatcher 配置的後端和前端程式碼構建。
+完整棧疊計畫碼管道同時部署包含一個或多個AEM伺服器應用程式以及HTTPD/Dispatcher配置的後端和前端計畫碼構建。
 
 >[!NOTE]
 >
@@ -156,7 +158,7 @@ ht-degree: 77%
       * 輸入分支名稱的前幾個字元，該欄位的自動完成功能。會尋找相符的分支以幫助您進行選取。
    * **程式碼位置** - 此選項會定義管道應從所選存放庫的分支中擷取程式碼的路徑。
    * **在部署到生產之前暫停** - 此選項會在部署到生產之前暫停管道。
-   * **已排程** - 此選項可讓使用者啟用已排程的產生部署。僅適用於Web層目標部署。
+   * **已排程**  — 此選項可讓使用者啟用已排程的生產部署。 僅適用於Web層目標部署。
 
    ![設定管道](/help/implementing/cloud-manager/assets/configure-pipeline/prod-pipeline-config-deployment.png)
 

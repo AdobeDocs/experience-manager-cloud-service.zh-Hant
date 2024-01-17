@@ -3,10 +3,10 @@ title: 設定非生產管道
 description: 了解如何設定非生產管道以在部署到生產環境之前測試程式碼的品質。
 index: true
 exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
 workflow-type: tm+mt
-source-wordcount: '1285'
-ht-degree: 80%
+source-wordcount: '1290'
+ht-degree: 78%
 
 ---
 
@@ -34,7 +34,9 @@ ht-degree: 80%
 
 設定好方案並擁有至少一個使用 Cloud Manager UI 的環境後，您就可以依照以下步驟著手新增非生產管道了。
 
-1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織和計畫。
+1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織。
+
+在 **[我的計畫](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** 畫面，選取程式。
 
 1. 從 Cloud Manager 首頁畫面存取&#x200B;**管道**&#x200B;卡。按一下「**+新增**」並選取「**新增非生產管道**」。
 
@@ -73,7 +75,7 @@ ht-degree: 80%
 
 ### 完整堆疊程式碼 {#full-stack-code}
 
-完整堆疊程式碼管道同時部署包含一個或多個 AEM 伺服器應用程序以及 HTTPD/Dispatcher 配置的後端和前端程式碼構建。
+完整棧疊計畫碼管道同時部署包含一個或多個AEM伺服器應用程式以及HTTPD/Dispatcher配置的後端和前端計畫碼構建。
 
 >[!NOTE]
 >

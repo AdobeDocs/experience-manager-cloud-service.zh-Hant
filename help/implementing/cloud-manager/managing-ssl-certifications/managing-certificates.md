@@ -2,10 +2,10 @@
 title: 管理 SSL 憑證
 description: 了解如何使用 Cloud Manager 檢查 SSL 憑證的狀態以及如何編輯、取代、更新和刪除它們。
 exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
 workflow-type: tm+mt
-source-wordcount: '636'
-ht-degree: 78%
+source-wordcount: '644'
+ht-degree: 75%
 
 ---
 
@@ -30,7 +30,8 @@ ht-degree: 78%
 
 憑證過期後，與過期憑證一起使用的任何網域都將不再運作。透過以下步驟更新您的憑證可確保您的網域繼續如期運作。
 
-1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織和計畫。
+1. 登入Cloud Manager於 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 並選取適當的組織
+1. 在 **[我的計畫](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** 畫面，選取程式。
 1. 從&#x200B;**概觀**&#x200B;頁面瀏覽到&#x200B;**環境**&#x200B;畫面。
 1. 從&#x200B;**環境**&#x200B;畫面瀏覽到 **SSL** 憑證。
 1. 您可以看到一個表格，其中一列包含已成功安裝在計畫中的每個SSL憑證。 按一下要更新的憑證列最右側的省略符號按鈕，然後選取 **檢視和更新**.

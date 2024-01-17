@@ -2,10 +2,10 @@
 title: 新增 IP 允許清單
 description: 了解如何使用 Cloud Manager 新增您自己的 IP 允許清單。
 exl-id: 769be71f-5c11-4f98-8906-7a5667a25aee
-source-git-commit: 97a6a7865f696f4d61a1fb4e25619caac7b68b51
-workflow-type: ht
-source-wordcount: '193'
-ht-degree: 100%
+source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
+workflow-type: tm+mt
+source-wordcount: '198'
+ht-degree: 95%
 
 ---
 
@@ -16,7 +16,9 @@ ht-degree: 100%
 
 具有&#x200B;**業務負責人**&#x200B;或&#x200B;**部署管理員**&#x200B;角色的使用者可以按照以下步驟新增 IP 允許清單。
 
-1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織和計畫。
+1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織。
+
+1. 在 **[我的計畫](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** 畫面，選取程式。
 
 1. 從「**概觀**」頁面，瀏覽到「**環境**」畫面。
 

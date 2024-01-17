@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的運作方式以及該軟體可以為您做哪些事。
 breadcrumb-title: 使用手冊
 user-guide-title: AEM as a Cloud Service
-source-git-commit: e25f3e74fa7fa18b92ffe0c40a19f20442d4c7a0
+source-git-commit: 3bc71fe59e0b0c257e6747f93b3d76bc801a39b4
 workflow-type: tm+mt
-source-wordcount: '4544'
+source-wordcount: '4549'
 ht-degree: 99%
 
 ---
@@ -878,7 +878,7 @@ ht-degree: 99%
          + [建立生產方案](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
          + [沙箱方案](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)
          + [建立沙箱方案](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md)
-         + [編輯方案](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)
+         + [管理和編輯程式](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)
          + [休眠環境](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md)
       + 建立 AEM 應用程式專案 {#create-application-project}
          + [專案建立精靈](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md)
@@ -935,6 +935,7 @@ ht-degree: 99%
          + [管理 IP 允許清單](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md)
       + [授權儀表板](/help/implementing/cloud-manager/license-dashboard.md)
       + [了解雲端服務內容要求](/help/implementing/cloud-manager/content-requests.md)
+      + [CDN效能儀表板](/help/implementing/cloud-manager/cdn-performance.md)
       + [Cloud Manager 常見問題集](/help/implementing/cloud-manager/faqs.md)
    + 為 AEM as a Cloud Service 開發 {#developing}
       + [AEM 專案結構](/help/implementing/developing/introduction/aem-project-content-package-structure.md)

@@ -2,10 +2,10 @@
 title: 建立沙箱計畫
 description: 了解如何使用 Cloud Manager 建立您自己的沙箱計畫，用於訓練、展示、POC 或其他非生產目的。
 exl-id: 10011392-3059-4bb0-88db-0af1d390742e
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
 workflow-type: tm+mt
-source-wordcount: '442'
-ht-degree: 90%
+source-wordcount: '443'
+ht-degree: 86%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 90%
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織。
 
-1. 在 Cloud Manager 登陸頁面右上角附近，按一下「**新增計畫**」。
+1. 在 **[我的計畫](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** 熒幕，點選或按一下 **新增計畫** 靠近熒幕右上角。
 
    ![Cloud Manager 登陸頁面](assets/cloud-manager-my-programs.png)
 
@@ -27,7 +27,7 @@ ht-degree: 90%
 
    ![計畫類型建立](assets/create-sandbox.png)
 
-1. 或者，您可以將影像檔拖放到&#x200B;**新增計畫影像**&#x200B;目標或按一下它從檔案瀏覽器選取影像，藉此新增影像到計畫。選取 **繼續**.
+1. 或者，您可以將影像檔拖放到&#x200B;**新增計畫影像**&#x200B;目標或按一下它從檔案瀏覽器選取影像，藉此新增影像到計畫。選取「**繼續**」。
 
    * 該影像僅做為計畫概觀視窗的圖磚，有助於識別計畫。
 

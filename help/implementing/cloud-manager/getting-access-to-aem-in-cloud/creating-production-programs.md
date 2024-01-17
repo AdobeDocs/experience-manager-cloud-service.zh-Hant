@@ -2,10 +2,10 @@
 title: 建立生產計畫
 description: 了解如何使用 Cloud Manager 建立您自己的生產計畫來主持即時流量。
 exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 79d3ec7f5ede84fd989b7d5440739ec9560a547f
 workflow-type: tm+mt
-source-wordcount: '596'
-ht-degree: 73%
+source-wordcount: '599'
+ht-degree: 64%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 73%
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織。
 
-1. 按一下 **新增計畫** 從畫面的右上角。
+1. 在 **[我的計畫](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** 熒幕，點選或按一下 **新增計畫** 在畫面的右上角。
 
    ![Cloud Manager 登陸頁面](assets/log-in.png)
 
@@ -30,15 +30,13 @@ ht-degree: 73%
 
    ![建立計畫精靈](assets/create-production-program.png)
 
-1. 或者，您可以將影像檔拖放到&#x200B;**新增計畫影像**&#x200B;目標或按一下它從檔案瀏覽器選取影像，藉此新增影像到計畫。選取 **繼續**.
+1. 或者，您可以將影像檔拖放到&#x200B;**新增計畫影像**&#x200B;目標或按一下它從檔案瀏覽器選取影像，藉此新增影像到計畫。選取「**繼續**」。
 
 1. 如果您擁有必要的權益， **安全性** 標籤隨即顯示，並提供啟動選項 **HIPAA** 和/或 **WAF-DDOS保護** 用於您的生產計畫。 若您正在建立的程式有需要，請核取適用的選項，然後選取 **繼續**.
 
    * HIPAA無法在方案建立後啟用或停用。
       * [深入了解](https://www.adobe.com/go/hipaa-ready_tw) Adobe 的 HIPAA 就緒解決方案實作方式。
    * 一旦啟動，就可以設定WAF-DDOS保護 [非生產管道。](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
-
-   {{waf-limited-release}}
 
    ![安全性選項](assets/create-production-program-security.png)
 
@@ -60,7 +58,7 @@ ht-degree: 73%
    ![缺少規劃的上線日期](assets/setup-go-live.png)
 
    * 這個日期可以隨時修改。
-   * 此日期僅供參考，並會觸發計畫概觀頁面上的上線小工具，即時提供產品內連結至 AEM as a Cloud Service 最佳實務文件，以符合您的歷程，最終達成成功且順暢的上線體驗。
+   * 此日期僅供參考，並會在以下位置觸發上線Widget： [**計畫總覽** 頁面](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#program-overview) 及時提供AEMas a Cloud Service最佳實務檔案的產品內連結，以符合您的歷程，最終達成成功且順暢的上線體驗。
 
 1. 按一下&#x200B;**建立**。
 

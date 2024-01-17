@@ -2,10 +2,10 @@
 title: 管理客戶網域名稱
 description: 了解如何使用 Cloud Manager 查看、更新、取代和刪除自訂網域名稱。
 exl-id: 6cab8cf2-22c0-4f4b-9c54-a1425e74ddd0
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
 workflow-type: tm+mt
-source-wordcount: '336'
-ht-degree: 87%
+source-wordcount: '339'
+ht-degree: 84%
 
 ---
 
@@ -17,7 +17,9 @@ Cloud Manager 可讓您檢視、更新、取代和刪除自訂網域名稱。
 
 使用&#x200B;**檢視和更新**&#x200B;選單來檢視任何自訂網域名稱的詳細資訊。
 
-1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織和計畫。
+1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織。
+
+1. 在 **[我的計畫](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** 畫面，選取程式。
 
 1. 從&#x200B;**概觀**&#x200B;頁面，瀏覽到&#x200B;**環境**&#x200B;畫面。
 

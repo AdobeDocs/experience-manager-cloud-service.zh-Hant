@@ -2,10 +2,10 @@
 title: 休眠和去休眠沙箱環境
 description: 了解沙箱計畫的環境如何自動進入休眠模式以及如何解除休眠。
 exl-id: c0771078-ea68-4d0d-8d41-2d9be86408a4
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
 workflow-type: tm+mt
-source-wordcount: '683'
-ht-degree: 85%
+source-wordcount: '695'
+ht-degree: 84%
 
 ---
 
@@ -31,7 +31,7 @@ ht-degree: 85%
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織。
 
-1. 按一下要休眠的程式以顯示其詳細資訊。
+1. 在 **[我的計畫](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** 畫面，點選或按一下要休眠的程式以顯示其詳細資訊。
 
 1. 在&#x200B;**環境**&#x200B;卡，按一下省略符號按鈕並選擇&#x200B;**Developer Console**。
 
@@ -65,7 +65,7 @@ ht-degree: 85%
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織。
 
-1. 按一下要休眠的程式以顯示其詳細資訊。
+1. 在 **[我的計畫](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** 畫面，點選或按一下要解除休眠的程式以顯示其詳細資訊。
 
 1. 在&#x200B;**環境**&#x200B;卡，按一下省略符號按鈕並選擇&#x200B;**Developer Console**。
 

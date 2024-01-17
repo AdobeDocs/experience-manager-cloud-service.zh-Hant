@@ -2,10 +2,10 @@
 title: 管理環境
 description: 了解您可以建立的環境類型，以及如何為您的 Cloud Manager 專案建立環境類型。
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: 1a49bcd5b76e6a3b0d5a3168cef445101dc8d149
+source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
 workflow-type: tm+mt
-source-wordcount: '2607'
-ht-degree: 89%
+source-wordcount: '2614'
+ht-degree: 88%
 
 ---
 
@@ -41,9 +41,9 @@ ht-degree: 89%
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織。
 
-1. 按一下要新增環境的計畫。
+1. 在 **[我的計畫](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** 畫面、點選或按一下要新增環境的計畫。
 
-1. 在「**計畫概觀**」頁面，按一下「**環境**」卡上的「**新增環境**」以新增環境。
+1. 在「**[計畫概觀](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#program-overview)**」頁面，按一下「**環境**」卡上的「**新增環境**」以新增環境。
 
    ![環境卡](assets/no-environments.png)
 

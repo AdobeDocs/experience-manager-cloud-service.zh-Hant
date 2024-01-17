@@ -2,10 +2,10 @@
 title: 正在新增 SSL 憑證
 description: 了解如何使用 Cloud Manager 的自助服務工具新增您自己的 SSL 憑證。
 exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
 workflow-type: tm+mt
-source-wordcount: '551'
-ht-degree: 88%
+source-wordcount: '557'
+ht-degree: 84%
 
 ---
 
@@ -25,7 +25,9 @@ ht-degree: 88%
 
 依照以下步驟使用 Cloud Manager 新增憑證。
 
-1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選擇適當的組織和計畫。
+1. 登入Cloud Manager於 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 並選取適當的組織
+
+1. 在 **[我的計畫](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** 畫面，選取程式。
 
 1. 從&#x200B;**概觀**&#x200B;頁面瀏覽到&#x200B;**環境**&#x200B;畫面。
 
