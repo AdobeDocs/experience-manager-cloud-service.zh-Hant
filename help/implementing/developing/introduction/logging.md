@@ -2,9 +2,9 @@
 title: AEMas a Cloud Service記錄
 description: 瞭解如何使用AEM的記錄as a Cloud Service來設定中央記錄服務的全域引數、個別服務的特定設定，或如何請求資料記錄。
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: 3d53f81bfe9b180f19590a70d72b6bf62a7ab732
+source-git-commit: 35959a1cd47e9ea1b93aeddc3eb72cf03c44eda8
 workflow-type: tm+mt
-source-wordcount: '2755'
+source-wordcount: '2776'
 ht-degree: 8%
 
 ---
@@ -537,7 +537,7 @@ CDN記錄與其他記錄不同，因為它會遵循JSON格式。
 | *timestamp* | TLS 終止後要求開始的時間 |
 | *ttfb* | *首位元組時間 (Time To First Byte)* 的縮寫。發出要求開始到回應內文開始串流的時間之間的時間間隔。 |
 | *cli_ip* | 用戶端 IP 位址。 |
-| *cli_country* | 雙字母 [ISO 3166-1](https://en.wikipedia.org/wiki/ISO_3166-1) 用戶端國家/地區的 alpha-2 國家/地區代碼。 |
+| *cli_country* | 雙字母 [ISO 3166-1](https://en.wikipedia.org/wiki/tw/ISO_3166-1) 用戶端國家/地區的 alpha-2 國家/地區代碼。 |
 | *rid* | 用於唯一識別要求的要求標頭的值。 |
 | *req_ua* | 負責發出特定 HTTP 要求的使用者代理程式。 |
 | *主機* | 發送要求的目標機構。 |
@@ -611,7 +611,7 @@ Apache層記錄（包括Dispatcher）位於容納Dispatcher的Docker容器中。
 
 與傳送至Splunk的記錄檔相關聯的網路頻寬會視為客戶網路I/O使用量的一部分。
 
-Splunk轉送尚不支援CDN記錄檔。
+CDN記錄檔將轉送至Splunk以處理新的支援票證請求；已啟用Splunk轉送的客戶未來將能夠新增CDN記錄檔。
 
 ### 啟用Splunk轉送 {#enabling-splunk-forwarding}
 
