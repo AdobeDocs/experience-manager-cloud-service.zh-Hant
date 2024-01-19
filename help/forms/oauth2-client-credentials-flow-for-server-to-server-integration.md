@@ -5,9 +5,9 @@ Keywords: Integration of Salesforce using OAuth 2.0 client credential flow, sale
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
 exl-id: 2c2029ab-6fb4-41a6-846c-175c3a79d921
-source-git-commit: 6e01a5bfc4e8bf7cc9537c9c03af08cd253a1ade
+source-git-commit: 39d788854c086b7f4c45d77bfea42fa687e08769
 workflow-type: tm+mt
-source-wordcount: '482'
+source-wordcount: '484'
 ht-degree: 64%
 
 ---
@@ -75,5 +75,9 @@ AEMas a Cloud Service提供多種現成的提交動作，用於處理表單提�
 設定Salesforce應用程式後，您可以在建立表單資料模型時使用設定。 如需詳細資訊，請參閱 [建立表單資料模型](create-form-data-models.md). [設定表單資料模型提交動作](/help/forms/using-form-data-model.md) 最適化表單傳送資料至Salesforce應用程式的資訊。
 
 如需在業務工作流程中建立和使用表單資料模型的詳細資訊，請參閱 [資料整合](data-integration.md).
+
+## 相關文章
+
+{{af-submit-action}}
 
 

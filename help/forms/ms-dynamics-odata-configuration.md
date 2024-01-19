@@ -5,9 +5,9 @@ feature: Adaptive Forms, Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb7b41f0-fd4f-4ba6-9f45-792a66ba6368
-source-git-commit: 6e01a5bfc4e8bf7cc9537c9c03af08cd253a1ade
+source-git-commit: 39d788854c086b7f4c45d77bfea42fa687e08769
 workflow-type: tm+mt
-source-wordcount: '1000'
+source-wordcount: '1002'
 ht-degree: 2%
 
 ---
@@ -174,3 +174,7 @@ To review the form data model, go to **[!UICONTROL Form Data Model egrations]**.
 您可以 [設定表單資料模型提交動作](/help/forms/using-form-data-model.md) 最適化表單傳送資料至Microsoft Dynamics OData。
 
 如需在業務工作流程中建立和使用表單資料模型的詳細資訊，請參閱 [資料整合](data-integration.md).
+
+## 相關文章
+
+{{af-submit-action}}
