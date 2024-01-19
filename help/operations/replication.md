@@ -2,7 +2,7 @@
 title: 複製
 description: 瞭解AEMas a Cloud Service中的散佈和疑難排解復寫。
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
+source-git-commit: 3249f17e6ecb341880597577e1f2a48653a7a88a
 workflow-type: tm+mt
 source-wordcount: '1312'
 ht-degree: 1%
@@ -89,7 +89,7 @@ Adobe Experience Manager as a Cloud Service使用 [Sling Content Distribution](h
 
 * `includeChildren` (布林值，預設： `false`)。 值 `false` 表示只會發佈路徑； `true` 表示也會發佈子項。
 * `replicateAsParticipant` (布林值，預設： `false`)。 若已設定為 `true`，復寫使用 `userid` 執行參與者步驟的主參與者。
-* `enableVersion` (布林值，預設： `true`)。 此引數會決定複製時是否建立新版本。
+* `enableVersion` (布林值，預設： `false`)。 此引數會決定複製時是否建立新版本。
 * `agentId` （字串值，預設值表示僅使用發佈代理程式）。 建議您清楚說明agentId，例如設定值： publish。 將代理程式設定為 `preview` 發佈到預覽服務。
 * `filters` （字串值，預設值代表所有路徑都已啟動）。 可用的值包括：
    * `onlyActivated`  — 僅啟動已（已）啟動的頁面。 作為重新啟用的一種形式。
