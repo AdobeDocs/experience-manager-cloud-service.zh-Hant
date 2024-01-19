@@ -1,9 +1,10 @@
 ---
 title: 適用於AEM開發人員的通用編輯器總覽
 description: 如果您是AEM開發人員，且對Universal Editor的運作方式及如何在您的專案中使用它感興趣，本檔案將引導您檢測WKND專案以使用Universal Editor，為您提供端對端的簡介。
-source-git-commit: 16f2922a3745f9eb72f7070c30134e5149eb78ce
+exl-id: d6f9ed78-f63f-445a-b354-f10ea37b0e9b
+source-git-commit: d7154fcec9cf6e3cb00ce8e434e38544294df165
 workflow-type: tm+mt
-source-wordcount: '3082'
+source-wordcount: '3112'
 ht-degree: 1%
 
 ---
@@ -36,6 +37,7 @@ ht-degree: 1%
    * [必須安裝WKND示範網站。](https://github.com/adobe/aem-guides-wknd)
 * [存取通用編輯器](/help/implementing/universal-editor/getting-started.md#onboarding)
 * [本機通用編輯器服務](/help/implementing/universal-editor/local-dev.md) 執行以進行開發
+   * 請務必將您的瀏覽器導向 [接受本機服務自我簽署憑證。](/help/implementing/universal-editor/local-dev.md#editing)
 
 除了對Web開發的一般熟悉以外，本檔案假設您對AEM開發具有基本的熟悉。 如果您沒有開發AEM的經驗，請考慮檢閱 [wknd教學課程，然後再繼續。](/help/implementing/developing/introduction/develop-wknd-tutorial.md)
 
@@ -164,7 +166,7 @@ X-Frame選項 `sameorigin` 防止在框架中呈現AEM頁面。 您必須移除�
 
 WKND頁面現在會在通用編輯器中成功載入，且JavaScript程式庫會載入，以將編輯器連線至您的應用程式。
 
-不過，您可能會很快注意到，您無法與通用編輯器中的頁面互動。 通用編輯器無法實際編輯您的頁面。 為了讓Universal Editor能夠編輯您的內容，您需要定義連線，使其知道在哪裡寫入內容。 對於本機開發，您需要將寫回至您本機AEM開發執行個體，網址為 `https://localhost:8443`.
+不過，您可能會注意到您無法與通用編輯器中的頁面互動。 通用編輯器無法實際編輯您的頁面。 為了讓Universal Editor能夠編輯您的內容，您需要定義連線，使其知道在哪裡寫入內容。 對於本機開發，您需要將寫回至您本機AEM開發執行個體，網址為 `https://localhost:8443`.
 
 1. 開啟 CRXDE Lite。
 
@@ -227,10 +229,9 @@ WKND頁面現在會在通用編輯器中成功載入，且JavaScript程式庫會
 1. 在第一個 `div` 在第26行左右，新增元件的檢測詳細資料。
 
    ```text
-   itemscope
-   itemid="urn:aem:${resource.path}"
-   itemtype="component"
-   data-editor-itemlabel="Teaser"
+   data-aue-resource="urn:aem:${resource.path}"
+   data-aue-type="component"
+   data-aue-label="Teaser"
    ```
 
 1. 按一下 **全部儲存** 並重新載入通用編輯器。
@@ -262,9 +263,9 @@ WKND頁面現在會在通用編輯器中成功載入，且JavaScript程式庫會
 1. 在結尾處插入下列屬性 `h2` 標籤（在第17行附近）。
 
    ```text
-   itemprop="jcr:title"
-   itemtype="text"
-   data-editor-itemlabel="Title"
+   data-aue-prop="jcr:title"
+   data-aue-type="text"
+   data-aue-label="Title"
    ```
 
 1. 按一下 **全部儲存** 並重新載入通用編輯器。
@@ -281,15 +282,14 @@ WKND頁面現在會在通用編輯器中成功載入，且JavaScript程式庫會
 
 您已透過檢測來向通用編輯器識別Teaser元件。
 
-* `itemscope` 會將其識別為通用編輯器的專案。
-* `itemid` 會識別AEM中正在編輯的資源。
-* `itemtype` 定義應將專案視為頁面元件（而非容器）。
-* `data-editor-itemlabel` 在選定Teaser的UI中顯示使用者易記標籤。
+* `data-aue-resource` 會識別AEM中正在編輯的資源。
+* `data-aue-type` 定義應將專案視為頁面元件（而非容器）。
+* `data-aue-label` 在選定Teaser的UI中顯示使用者易記標籤。
 
 您也已在Teaser元件中檢測標題元件。
 
-* `itemprop` 是寫入的JCR屬性。
-* `itemtype` 是應如何編輯屬性的方式。 在這種情況下，請使用文字編輯器，因為它是標題（相對於RTF編輯器）。
+* `data-aue-prop` 是寫入的JCR屬性。
+* `data-aue-type` 是應如何編輯屬性的方式。 在這種情況下，請使用文字編輯器，因為它是標題（相對於RTF編輯器）。
 
 ## 定義驗證標頭 {#auth-header}
 
@@ -299,13 +299,13 @@ WKND頁面現在會在通用編輯器中成功載入，且JavaScript程式庫會
 
 但是，如果您重新載入瀏覽器，則會重新載入前一個標題。 這是因為，雖然通用編輯器知道如何連線到您的AEM執行個體，但它無法驗證您的AEM執行個體以回寫對JCR的變更。
 
-如果您顯示瀏覽器開發人員工具的網路標籤並搜尋 `update`，您會發現嘗試編輯標題時發生500錯誤。
+如果您顯示瀏覽器開發人員工具的網路標籤並搜尋 `update`，您會發現嘗試編輯標題時發生401錯誤。
 
 ![嘗試編輯標題時發生錯誤](assets/dev-edit-error.png)
 
 使用通用編輯器編輯您的生產AEM內容時，通用編輯器使用您用來登入編輯器的IMS權杖來驗證AEM，以方便回寫至JCR。
 
-當您在本機開發時，您無法使用AEM身分提供者，因此您需要透過明確設定驗證標頭，以手動方式提供驗證方法。
+當您在本機開發時，無法使用AEM身分提供者，因為IMS權杖只會傳遞給Adobe擁有的網域。 您需要透過明確設定驗證標題來手動提供驗證方法。
 
 1. 在通用編輯器介面中，按一下 **驗證標頭** 圖示加以儲存。
 
@@ -323,22 +323,24 @@ WKND頁面現在會在通用編輯器中成功載入，且JavaScript程式庫會
 
 ```json
 {
-  "op": "patch",
-  "connections": {
-    "aem": "aem:https://localhost:8443"
-  },
-  "path": {
-    "itemid": "urn:aem:/content/wknd/language-masters/en/jcr:content/root/container/carousel/item_1571954853062",
-    "itemtype": "text",
-    "itemprop": "jcr:title"
+  "connections": [
+    {
+      "name": "aem",
+      "protocol": "aem",
+      "uri": "https://localhost:8443"
+    }
+  ],
+  "target": {
+    "resource": "urn:aem:/content/wknd/language-masters/en/jcr:content/root/container/carousel/item_1571954853062",
+    "type": "text",
+    "prop": "jcr:title"
   },
   "value": "Tiny Toon Adventures"
 }
 ```
 
-* `op` 是操作，在此例中為已編輯欄位現有內容的修補程式。
 * `connections` 是與本機AEM執行個體的連線
-* `path` 是在JCR中更新的確切節點和屬性
+* `target` 是在JCR中更新的確切節點和屬性
 * `value` 是您所做的更新。
 
 您可以在JCR中看到持續存在的變更。
@@ -357,7 +359,7 @@ WKND頁面現在會在通用編輯器中成功載入，且JavaScript程式庫會
 
 編輯目前僅限於Teaser標題的內嵌編輯。 但是，在某些情況下，就地編輯並不足夠。 在鍵盤輸入所在的位置可以編輯Teaser標題等文字。 不過，更複雜的專案必須能夠顯示並允許編輯結構化資料，而不需將其呈現在瀏覽器中。 這是屬性邊欄的用途。
 
-現在請更新您的應用程式，以使用屬性邊欄進行編輯。 為此，請返回應用程式頁面元件的標頭檔案，其中您已建立與本機AEM開發執行個體和本機通用編輯器服務的連線。 您必須在此處定義可在應用程式中編輯的元件及其資料模型。
+若要更新應用程式以使用屬性邊欄進行編輯，請返回應用程式頁面元件的標題檔案。 這是您已建立與本機AEM開發執行個體和本機Universal Editor服務之連線的位置。 您必須在此處定義可在應用程式中編輯的元件及其資料模型。
 
 1. 開啟 CRXDE Lite。
 
@@ -369,10 +371,10 @@ WKND頁面現在會在通用編輯器中成功載入，且JavaScript程式庫會
 
    ![編輯customheaderlibs.html檔案](assets/dev-instrument-properties-rail.png)
 
-1. 新增必要的指令碼，將欄位對應至檔案結尾。
+1. 在檔案的結尾處新增定義元件所需的指令碼。
 
    ```html
-   <script type="application/vnd.adobe.aem.editor.component-definition+json">
+   <script type="application/vnd.adobe.aue.component+json">
    {
      "groups": [
        {
@@ -388,29 +390,69 @@ WKND頁面現在會在通用編輯器中成功載入，且JavaScript程式庫會
                    "resourceType": "wknd/components/teaser"
                  }
                }
-             },
-             "model": {
-               "id": "teaser",
-               "fields": [
-                 {
-                   "component": "text-input",
-                   "name": "jcr:title",
-                   "label": "Title",
-                   "valueType": "string"
-                 },
-                 {
-                   "component": "text-area",
-                   "name": "jcr:description",
-                   "label": "Description",
-                   "valueType": "string"
+             }
+           },
+           {
+             "title": "Title",
+             "id": "title",
+             "plugins": {
+               "aem": {
+                 "page": {
+                   "resourceType": "wknd/components/title"
                  }
-               ]
+               }
              }
            }
          ]
        }
      ]
    }
+   </script>
+   ```
+
+1. 在其下方，在檔案的結尾處新增定義模型所需的指令碼。
+
+   ```html
+   <script type="application/vnd.adobe.aue.model+json">
+   [
+     {
+       "id": "teaser",
+       "fields": [
+         {
+           "component": "text-input",
+           "name": "jcr:title",
+           "label": "Title",
+           "valueType": "string"
+         },
+         {
+           "component": "text-area",
+           "name": "jcr:description",
+           "label": "Description",
+           "valueType": "string"
+         }
+       ]
+     },
+     {
+       "id": "title",
+       "fields": [
+         {
+           "component": "select",
+           "name": "type",
+           "value": "h1",
+           "label": "Type",
+           "valueType": "string",
+           "options": [
+             { "name": "h1", "value": "h1" },
+             { "name": "h2", "value": "h2" },
+             { "name": "h3", "value": "h3" },
+             { "name": "h4", "value": "h4" },
+             { "name": "h5", "value": "h5" },
+             { "name": "h6", "value": "h6" }
+           ]
+         }
+       ]
+     }
+   ]
    </script>
    ```
 
@@ -457,15 +499,17 @@ WKND頁面現在會在通用編輯器中成功載入，且JavaScript程式庫會
 
    ![編輯teaser.html檔案](assets/dev-edit-teaser.png)
 
-1. 在第一個 `div` 大約在第32行，在 `itemscope` 您先前新增的屬性，新增Teaser元件將使用的模式的instrumentation詳細資訊。
+1. 在第一個 `div` 大約在第32行，在您先前新增的屬性之後，新增Teaser元件將使用的模型的instrumentation詳細資訊。
 
    ```text
-   data-editor-itemmodel="teaser"
+   data-aue-model="teaser"
    ```
 
 1. 按一下 **全部儲存** 並重新載入通用編輯器。
 
-1. 按一下Teaser的標題可再次編輯。
+現在您已準備好測試針對元件所檢測的屬性邊欄。
+
+1. 在通用編輯器中，按一下Teaser的標題以再次編輯。
 
 1. 按一下屬性邊欄以顯示屬性標籤，並檢視您剛才檢測的欄位。
 
@@ -489,7 +533,7 @@ WKND頁面現在會在通用編輯器中成功載入，且JavaScript程式庫會
 
    ![編輯customheaderlibs.html檔案](assets/dev-instrument-styles.png)
 
-1. 將其他專案新增至 `fields` 樣式欄位的陣列。 插入新欄位之前，請記得在最後一個欄位後面加上逗號。
+1. 在模型定義指令碼中，新增其他專案至 `fields` 樣式欄位的陣列。 插入新欄位之前，請記得在最後一個欄位後面加上逗號。
 
    ```json
    {

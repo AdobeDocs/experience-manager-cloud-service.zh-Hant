@@ -1,15 +1,16 @@
 ---
-title: 欄位型別
+title: 欄位類型
 description: 透過如何檢測您自己的應用程式的範例，瞭解通用編輯器在元件邊欄中可以編輯的不同欄位型別。
-source-git-commit: 44073e27ce7eb35bc0d71cb963c1bd0f14183f00
+exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
+source-git-commit: 7ef3efa6e074778b7b3e3a8159056200b2663b30
 workflow-type: tm+mt
 source-wordcount: '358'
-ht-degree: 5%
+ht-degree: 6%
 
 ---
 
 
-# 欄位型別 {#field-types}
+# 欄位類型 {#field-types}
 
 透過如何檢測您自己的應用程式的範例，瞭解通用編輯器在元件邊欄中可以編輯的不同欄位型別。
 

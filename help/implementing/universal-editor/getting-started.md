@@ -2,10 +2,10 @@
 title: AEM 中 Universal Editor 快速入門
 description: 了解如何存取 Universal Editor，以及如何開始檢測您的第一個 AEM 應用程式以使用它。
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
-source-git-commit: 16f2922a3745f9eb72f7070c30134e5149eb78ce
+source-git-commit: febaec244b4400b8d7fc5a5d8a4f75b4f4505d6f
 workflow-type: tm+mt
-source-wordcount: '900'
-ht-degree: 76%
+source-wordcount: '903'
+ht-degree: 71%
 
 ---
 
@@ -35,7 +35,7 @@ ht-degree: 76%
 
 ## 要求存取 Universal Editor {#request-access}
 
-您需要先要求存取 Universal Editor。請參閱 [https://experience.adobe.com/#/aem/editor](https://experience.adobe.com/#/aem/editor)、登入，然後驗證您是否有權存取 Universal Editor。
+您需要先要求存取 Universal Editor。開啟 [&#39;https://experience.adobe.com/#/aem/editor&#39;](https://experience.adobe.com/#/aem/editor)，登入並驗證您是否擁有通用編輯器的存取權。
 
 如果您沒有存取權，可以透過同一頁面上連結的表格提出要求。
 
@@ -59,7 +59,7 @@ import "@adobe/universal-editor-cors";
 
 ### Non-React 應用程式的替代方案 {#alternative}
 
-如果您沒有實作 React 應用程式和/或要求伺服器端呈現，則替代方案是將以下內容納入文件正文中。
+如果您未實作React應用程式和/或需要伺服器端轉譯，另一種方法是在檔案本文中納入以下內容。
 
 ```html
 <script src="https://cdn.jsdelivr.net/gh/adobe/universal-editor-cors/dist/universal-editor-embedded.js" async></script>
@@ -124,10 +124,10 @@ Universal Editor 服務需要[統一資源名稱 (URN)](https://en.wikipedia.org
 
 識別碼 `urn:adobe:aue:system` 表示 Adobe Universal Editor 連線。
 
-`itemid` 將使用 `urn` 首碼來縮短識別碼。
+`data-aue-resource` 將使用 `urn` 首碼來縮短識別碼。
 
 ```html
-itemid="urn:<referenceName>:<resource>"
+data-aue-resource="urn:<referenceName>:<resource>"
 ```
 
 * `<referenceName>` - 這是 `<meta>` 標記中提及的命名參考。例如 `aemconnection`

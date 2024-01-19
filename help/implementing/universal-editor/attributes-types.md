@@ -1,11 +1,11 @@
 ---
-title: 屬性與料號型態
+title: 屬性和項目類型
 description: 瞭解Universal Editor所需的資料屬性和專案型別。
 exl-id: 02795a31-244a-42b4-8297-2649125d7777
-source-git-commit: 7550491de94f1e2cbb28b07f8abbdaded5aa04ea
+source-git-commit: febaec244b4400b8d7fc5a5d8a4f75b4f4505d6f
 workflow-type: tm+mt
 source-wordcount: '686'
-ht-degree: 81%
+ht-degree: 82%
 
 ---
 
@@ -28,13 +28,13 @@ ht-degree: 81%
 
 | 資料屬性 | 說明 |
 |---|---|
-| `itemid` | 資源的 URN，請參閱 [AEM 中 Universal Editor 快速入門文件的檢測頁面](getting-started.md#instrument-thepage)章節 |
-| `itemprop` | 資源的屬性，請參閱 [AEM 中 Universal Editor 快速入門文件的檢測頁面](getting-started.md#instrument-thepage)章節 |
-| `itemtype` | 可編輯項目的類型 (例如文字、影像和參考) |
-| `data-editor-itemfilter` | 定義可以使用哪些參考 |
-| `data-editor-itemlabel` | 為編輯器中顯示的可選項目定義自訂標籤，<br>如果`itemmodel`已經設定了，會透過模型擷取標籤 |
-| `data-editor-itemmodel` | 定義模型，該模型用於屬性邊欄中的表單型編輯 |
-| `data-editor-behavior` | 定義檢測的行為，例如，獨立的文字或影像也可以模擬元件，使其可移動或可刪除 |
+| `data-aue-resource` | 資源的 URN，請參閱 [AEM 中 Universal Editor 快速入門文件的檢測頁面](getting-started.md#instrument-thepage)章節 |
+| `data-aue-prop` | 資源的屬性，請參閱 [AEM 中 Universal Editor 快速入門文件的檢測頁面](getting-started.md#instrument-thepage)章節 |
+| `data-aue-type` | 可編輯項目的類型 (例如文字、影像和參考) |
+| `data-aue-filter` | 定義可以使用哪些參考 |
+| `data-aue-label` | 為編輯器中顯示的可選項目定義自訂標籤，<br>如果`itemmodel`已經設定了，會透過模型擷取標籤 |
+| `data-aue-model` | 定義模型，該模型用於屬性邊欄中的表單型編輯 |
+| `data-aue-behavior` | 定義檢測的行為，例如，獨立的文字或影像也可以模擬元件，使其可移動或可刪除 |
 
 ## 項目類型 {#item-types}
 
@@ -47,14 +47,14 @@ ht-degree: 81%
 | `component` | 可編輯的是元件。它不會新增額外功能。需要它才能指明 DOM 的可移動/可刪除部分，以及開啟屬性邊欄及其欄位 | 必要 | N/A | N/A | 選用 | 選用 | N/A |
 | `reference` | 可編輯是參考資料，例如內容片段、體驗片段或產品 | 視情況而定 <br> (請參閱下文)。 | 視情況而定 <br> (請參閱下文)。 | 傳遞給參考選擇器的選擇性<br>內容片段、產品或體驗片段篩選條件清單 | 選用 | 選用 | N/A |
 
-根據使用案例 `itemprop` 或 `itemid`，可能需要也可能不需要。例如：
+根據使用案例 `data-aue-prop` 或 `data-aue-resource`，可能需要也可能不需要。例如：
 
-* `itemid`如果您透過 GraphQL 查詢內容片段，並且希望清單可在內容中編輯，則需要。
-* `itemprop`如果您有元件呈現參考內容片段的內容，並且您想要更新元件中的參考，則需要。
+* `data-aue-resource`如果您透過 GraphQL 查詢內容片段，並且希望清單可在內容中編輯，則需要。
+* `data-aue-prop`如果您有元件呈現參考內容片段的內容，並且您想要更新元件中的參考，則需要。
 
 ## 行為 {#behaviors}
 
-| `data-editor-behavior` | 說明 |
+| `data-aue-behavior` | 說明 |
 |---|---|
 | `component` | 用於讓獨立的文字、RTF 和媒體模仿元件，因此也可以在頁面上將其移動和刪除 |
 | `container` | 用於容許將容器視為自己的元件，因此可以在頁面上將其移動和刪除 |
