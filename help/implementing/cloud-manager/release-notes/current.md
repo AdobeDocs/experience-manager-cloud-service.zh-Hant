@@ -3,10 +3,10 @@ title: Adobe Experience Manager as a Cloud Service 中 Cloud Manager 2024.1.0 �
 description: 以下是 AEM as a Cloud Service 中 Cloud Manager 2024.1.0 的發行說明。
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: a00eb97859f679ade3a4a6d89a427735451ebd70
+source-git-commit: 06f534e6541bd04e005f3acf1edbb3e372c1cd0d
 workflow-type: tm+mt
-source-wordcount: '555'
-ht-degree: 96%
+source-wordcount: '673'
+ht-degree: 84%
 
 ---
 
@@ -21,7 +21,12 @@ ht-degree: 96%
 
 ## 發行日期 {#release-date}
 
-AEMas a Cloud Service中的Cloud Manager版本2024.1.0發行日期是2024年1月18日。
+AEM as a Cloud Service 中的 Cloud Manager 版本 2024.1.0 發行日期是 2024 年 1 月 18 日。下一版計畫於 2024 年 2 月 16 日發行。
+
+## 新增功能 {#what-is-new}
+
+* Cloud Manager現在不僅會驗證主要伺服器的 [憑證，](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md) 但也適用於中繼憑證。
+* CDN [記錄檔](/help/implementing/cloud-manager/manage-logs.md) 現在會以壓縮格式傳回。
 
 ## 早期採用計劃 {#early-adoption}
 
@@ -61,3 +66,8 @@ AEMas a Cloud Service中的Cloud Manager版本2024.1.0發行日期是2024年1月
 該儀表板使用 Google Lighthouse，這是一種開放原始碼自動化工具，可提升網頁應用程式的品質。您可以用於在任何網頁 (公用網頁或需要身份驗證的網頁) 上執行。可用於對效能、協助工具、漸進式網頁應用程式、SEO 等進行稽核。
 
 有興趣測試新儀表板嗎？若要開始，請使用和您的 Adobe ID 相關聯的電子郵件傳送電子郵件至 `aem-lighthouse-pilot@adobe.com`。
+
+## 錯誤修正 {#bug-fixes}
+
+* 已更正錯誤，如果設定檔案的位置未正確設定，則設定管道將在建置步驟失敗，並出現不明確的錯誤訊息。 錯誤訊息現在已清除，並指示使用者應檢查組態檔的位置是否正確。
+* 當建置步驟以狀態完成時 `FAILED` 由於 `BUILD_MAVEN_TRANSFER_ARTIFACT_ERROR`，現在會正確描述為由於與目的地分支合併衝突而導致的錯誤。
