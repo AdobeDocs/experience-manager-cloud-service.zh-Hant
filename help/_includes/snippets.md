@@ -1,8 +1,8 @@
 ---
-source-git-commit: 79d3ec7f5ede84fd989b7d5440739ec9560a547f
+source-git-commit: 2f567d45a6ba2dfb4dd3346e8510bcb04113eefb
 workflow-type: tm+mt
-source-wordcount: '212'
-ht-degree: 100%
+source-wordcount: '264'
+ht-degree: 91%
 
 ---
 # 代碼片段 {#snippets}
@@ -43,5 +43,16 @@ ht-degree: 100%
 * [將最適化表單資料傳送到 AEM 工作流程](/help/forms/configure-submit-actions-core-components.md#invoke-an-aem-workflow)
 * [使用 Forms 入口網站在 AEM 網站上列出 AEM 最適化 Forms](/help/forms/configure-forms-portal.md)
 
+## 最適化表單提交動作 {#af-submit-action}
 
-
+* [寄送電子郵件](/help/forms/configure-submit-action-send-email.md)
+* [提交到 SharePoint](/help/forms/configure-submit-action-sharepoint.md)
+* [使用表單資料模型提交](/help/forms/using-form-data-model.md#write-submitted-adaptive-form-data-into-data-sources-write-af)
+* [提交到 Azure Blob 儲存體](/help/forms/configure-submit-action-azure-blob-storage.md)
+* [提交到 REST 端點](/help/forms/configure-submit-action-restpoint.md)
+* [提交到 OneDrive](/help/forms/configure-submit-action-onedrive.md)
+* [叫用 AEM 工作流程](/help/forms/configure-submit-action-workflow.md)
+* [提交至 Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
+* [提交至Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
+* [將最適化表單連線至Salesforce應用程式](/help/forms/oauth2-client-credentials-flow-for-server-to-server-integration.md)
+* [將最適化表單連線至Microsoft® Dynamics OData](/help/forms/ms-dynamics-odata-configuration.md)

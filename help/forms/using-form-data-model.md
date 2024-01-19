@@ -5,10 +5,10 @@ feature: Adaptive Forms, Form Data Model
 role: Admin, User
 level: Beginner, Intermediate
 exl-id: 827ce457-6585-46fb-8e28-1d970a40d949
-source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
+source-git-commit: 6e01a5bfc4e8bf7cc9537c9c03af08cd253a1ade
 workflow-type: tm+mt
-source-wordcount: '1213'
-ht-degree: 1%
+source-wordcount: '1288'
+ht-degree: 6%
 
 ---
 
@@ -120,11 +120,25 @@ Edit Properties dialog for an interactive communication-->
 
 當使用者根據表單資料模型提交表單時，您可以設定表單以將資料模型物件的提交資料寫入其資料來源。 若要達成此使用案例， [!DNL Experience Manager Forms] 提供 [表單資料模型提交動作](configuring-submit-actions.md)，現成僅可用於根據表單資料模型的最適化Forms。 它將資料模型物件的已提交資料寫入其資料來源中。
 
-若要設定表單資料模型提交動作，請開啟最適化表單容器屬性，然後選取 **[!UICONTROL 使用表單資料模型提交]** 從「提交」摺疊式功能表下的「提交動作」下拉式清單。 然後，瀏覽並選取資料模型物件，從 **[!UICONTROL 要提交的資料模型物件的名稱]** 下拉式清單。 儲存屬性。
+若要設定表單資料模型提交動作：
 
-在提交表單時，會將已設定資料模型物件的資料寫入各自的資料來源。
+1. 開啟內容瀏覽器，然後選取最適化表單的「**[!UICONTROL 指引容器]**」元件。
+1. 按一下「指引容器」屬性 ![指引屬性](/help/forms/assets/configure-icon.svg) 圖示。此時會開啟「最適化表單容器」對話框。
+1. 按一下「**[!UICONTROL 提交]**」標籤。
+1. 從 **[!UICONTROL 提交動作]** 下拉式清單，選取 **[!UICONTROL 使用表單資料模型提交]**.
+
+   ![動作設定](/help/forms/assets/configure-submit-action-invoke-fdm.png)
+
+1. 指定 **[!UICONTROL 要提交的資料模型]**.
+1. 按一下 **[!UICONTROL 完成]**
+
+在提交表單時，會將已設定資料模型物件的資料寫入各自的資料來源。 此外，您可以使用表單資料模型和記錄文件 (DoR) 將表單附件提交到資料來源。如需有關表單資料模型的資訊，請參閱 [[!DNL AEM Forms] 資料整合](data-integration.md)。
 
 <!--![data-submission](assets/data-submission.png)-->
+
+>[!NOTE]
+>
+> AEMas a Cloud Service提供多種現成的提交動作，用於處理表單提交。 如需這些選項的詳細資訊，請參閱 [最適化表單提交動作](/help/forms/configure-submit-actions-core-components.md)  文章。
 
 您也可以使用二進位資料模型物件屬性，將表單附件提交至資料來源。 執行下列動作，將附件提交至JDBC資料來源：
 

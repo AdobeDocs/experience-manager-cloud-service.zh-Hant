@@ -6,9 +6,9 @@ topic-tags: author, developer
 feature: Adaptive Forms
 role: Admin, User
 exl-id: d3efb450-a879-40ae-8958-0040f99bdafc
-source-git-commit: 975f767e75a268a1638227ae20a533f82724c80a
+source-git-commit: 7cf7883e133d58145b5b3e1bb6ba8eb21ebad5d9
 workflow-type: tm+mt
-source-wordcount: '1240'
+source-wordcount: '1273'
 ht-degree: 3%
 
 ---
@@ -21,21 +21,23 @@ ht-degree: 3%
 
 例如，使用Workfront Fusion，您可以建立案例來透過Adaptive Form收集資料、處理資料，以及傳送資料至資料存放區進行封存。 一旦設定了案例，每當使用者填寫表單時，Workfront Fusion就會自動執行工作，順暢地更新資料存放區。
 
+AEMas a Cloud Service提供多種現成的提交動作，用於處理表單提交。 如需這些選項的詳細資訊，請參閱 [最適化表單提交動作](/help/forms/configure-submit-actions-core-components.md)  文章。
+
 ## 使用Adobe Workfront Fusion的優勢{#advatages-of-workfront-fusion}
 
 將Adobe Workfront Fusion與AEM Forms搭配使用的一些優點：
 
-- 將最適化Forms擷取的資料傳送到Workfront Fusion情境
-- 將容易發生錯誤的工作自動化。
-- 自訂組織的特定需求，這些需求未直接包含在Workfront中。
-- 處理簡單的邏輯和直接的決定，例如if/then陳述式。
+* 將最適化Forms擷取的資料傳送到Workfront Fusion情境
+* 將容易發生錯誤的工作自動化。
+* 自訂組織的特定需求，這些需求未直接包含在Workfront中。
+* 處理簡單的邏輯和直接的決定，例如if/then陳述式。
 
 ## 整合AEM Forms與Adobe Workfront Fusion的必要條件 {#prerequisites}
 
 將Workfront Fusion連線至AEM Forms所需的先決條件為：
 
-- 有效的 [Workfront Fusion授權](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/license-automation-vs-integration.html).
-- 具有存取許可權的AEM使用者 [開發主控台](https://my.cloudmanager.adobe.com/) 至 [擷取服務認證](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html).
+* 有效的 [Workfront Fusion授權](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/license-automation-vs-integration.html).
+* 具有存取許可權的AEM使用者 [開發主控台](https://my.cloudmanager.adobe.com/) 至 [擷取服務認證](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html).
 
 ## 將AEM Forms與Adobe Workfront Fusion整合
 
@@ -100,16 +102,16 @@ ht-degree: 3%
    > 保留 `https://` 在 **IMS端點** 文字方塊 `imsEndpoint` URL。
 
 1. 在 **[!UICONTROL 建立連線]** 對話方塊：
-   - 指定 **使用者端ID** 具有值 **clientId** 從開發人員控制檯中的服務認證。
-   - 指定 **使用者端密碼** 具有值 **使用者端密碼** 從開發人員控制檯中的服務認證。
-   - 指定 **技術帳戶ID**  具有值 **id** 從開發人員控制檯中的服務認證。
-   - 指定 **組織ID**  具有值 **org** 從開發人員控制檯中的服務認證。
-   - **中繼範圍**  具有值 **metascope** 從開發人員控制檯中的服務認證。
-   - **私密金鑰**  具有值 **privateKey** 從開發人員控制檯中的服務認證。
+   * 指定 **使用者端ID** 具有值 **clientId** 從開發人員控制檯中的服務認證。
+   * 指定 **使用者端密碼** 具有值 **使用者端密碼** 從開發人員控制檯中的服務認證。
+   * 指定 **技術帳戶ID**  具有值 **id** 從開發人員控制檯中的服務認證。
+   * 指定 **組織ID**  具有值 **org** 從開發人員控制檯中的服務認證。
+   * **中繼範圍**  具有值 **metascope** 從開發人員控制檯中的服務認證。
+   * **私密金鑰**  具有值 **privateKey** 從開發人員控制檯中的服務認證。
 
    >[!NOTE]
    >
-   >- 的 **私密金鑰**，移除 `\r\n` 從它的值開始。
+   >* 的 **私密金鑰**，移除 `\r\n` 從它的值開始。
    >  例如，如果私密金鑰值為：
    >`\r\nIJAVO8GDYAOZ9jMA0GCSqGSIb3DQEBCwUAMDAxL\r\nMy1lMTUxODMxLWNtc3RnLWludGVncmF0aW9uLTAw`，然後在移除 `\r\n` 從私密金鑰來看，金鑰看起來類似這樣，兩個值都出現在單獨的一行中：
    >
@@ -117,7 +119,7 @@ ht-degree: 3%
    >
    >   `My1lMTUxODMxLWNtc3RnLWludGVncmF0aW9uLTAw`
    > 
-   >- 您還可以選擇選取 **Extract** 按鈕。
+   >* 您還可以選擇選取 **Extract** 按鈕。
 
 1. 按一下&#x200B;**「繼續」**。
 
@@ -144,8 +146,8 @@ ht-degree: 3%
 ### 2.設定Workfront Fusion適用性表單的提交動作
 
 您可以為Workfont Fusion設定提交動作：
-- [全新最適化Forms](#new-af-submit-action)
-- [現有的最適化表單](#existing-af-submit-action)
+* [全新最適化Forms](#new-af-submit-action)
+* [現有的最適化表單](#existing-af-submit-action)
 
 #### 設定Workfront Fusion適用性表單的提交動作 {#new-af-submit-action}
 
@@ -187,7 +189,11 @@ ht-degree: 3%
 
 ## 最佳做法 {#best-practices}
 
-- 建議您謹慎選擇您的webhook名稱，因為在AEM執行個體無法取得案例名稱。 如果您日後變更webhook名稱，則不會反映在AEM Forms提交動作下拉式清單中。
-- 一個案例可以有多個webhook連結，但一次只能有一個webhook連結處於作用中。 建議刪除未連結的webhook，使其不會出現在AEM Forms提交動作下拉式清單中。
+* 建議您謹慎選擇您的webhook名稱，因為在AEM執行個體無法取得案例名稱。 如果您日後變更webhook名稱，則不會反映在AEM Forms提交動作下拉式清單中。
+* 一個案例可以有多個webhook連結，但一次只能有一個webhook連結處於作用中。 建議刪除未連結的webhook，使其不會出現在AEM Forms提交動作下拉式清單中。
 
 <!-- During testing or development of Workfront, add the Author URL to the instance URL. However, when deploying Workfront Fusion in a production environment, it is recommended to replicate the scenario URLs for the Publish instance. -->
+
+## 相關文章
+
+{{af-submit-action}}

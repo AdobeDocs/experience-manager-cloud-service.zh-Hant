@@ -6,9 +6,9 @@ contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms, Core Components
 exl-id: 4496c4cc-a5d7-4f34-91f9-13eded77b362
-source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
+source-git-commit: 95af49839d206f67ac02116730229f5b0531c5bb
 workflow-type: tm+mt
-source-wordcount: '2329'
+source-wordcount: '2309'
 ht-degree: 97%
 
 ---
@@ -251,13 +251,10 @@ AEM Forms 為表單提交提供現成可用的成功和錯誤處理常式。這�
            console.log("response:"+JSON.stringify(response));
            console.log("headers:"+JSON.stringify(headers));
            alert("CustomErrorHandler - Enter valid PetId.")
-           globals.invoke('defaultErrorHandler',response, headers)
+           globals.invoke('defaultErrorHandler',response, headers) 
            console.log("Custom Error Handler processing end...");
        }
    ```
-
-   若要從自訂錯誤處理常式調用預設的錯誤處理常式，請使用以下範例代碼行：
-   `globals.invoke('defaultErrorHandler',response, headers) `
 
    >[!NOTE]
    >

@@ -5,9 +5,9 @@ feature: Adaptive Forms, Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb7b41f0-fd4f-4ba6-9f45-792a66ba6368
-source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
+source-git-commit: 6e01a5bfc4e8bf7cc9537c9c03af08cd253a1ade
 workflow-type: tm+mt
-source-wordcount: '957'
+source-wordcount: '1000'
 ht-degree: 2%
 
 ---
@@ -35,6 +35,9 @@ ht-degree: 2%
 <!--* Form Data Model with preconfigured [!DNL Microsoft Dynamics] entities and services.-->
 
 <!-- Preconfigured [!DNL Microsoft Dynamics] entities and services in a Form Data Model are available on your [!DNL Experience Manager Forms] instance only if the run mode for the [!DNL Experience Manager] instance is set as `samplecontent` (default). -->  MS Dynamics ODataCloud Service（OData服務）適用於所有執行模式。 有關設定執行模式的詳細資訊 [!DNL Experience Manager] 例項，請參閱 [執行模式](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html#runmodes).
+
+AEMas a Cloud Service提供多種現成的提交動作，用於處理表單提交。 如需這些選項的詳細資訊，請參閱 [最適化表單提交動作](/help/forms/configure-submit-actions-core-components.md)  文章。
+
 
 ## 先決條件 {#prerequisites}
 
@@ -70,7 +73,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->請僅在整合時使用此程式 [!DNL Experience Manager Forms] 使用內部部署 [!DNL Microsoft Dynamics] 伺服器。
+> 請僅在整合時使用此程式 [!DNL Experience Manager Forms] 使用內部部署 [!DNL Microsoft Dynamics] 伺服器。
 
 1. 設定 [!DNL Microsoft Dynamics] IFD的內部部署執行個體，如中所述 [設定IFD [!DNL Microsoft Dynamics]](https://technet.microsoft.com/en-us/library/dn609803.aspx).
 1. 使用Windows PowerShell執行以下命令，在啟用IFD時設定宣告設定 [!DNL Microsoft Dynamics]：
@@ -158,14 +161,16 @@ To review the form data model, go to **[!UICONTROL Form Data Model egrations]**.
  Form Data Model 
 ![default-fdm-1](assets/default-fdm-1.png)-->
 
-設定MS Dynamics OData Cloud Ser Form Data Model ce)雲端服務後，您就可以在建立表單資料模型時使用此服務。 如需詳細資訊，請參閱 [建立表單資料模型](create-form-data-models.md).
+設定MS Dynamics OData雲端服務後，您可以在建立表單資料模型時使用此服務。 如需詳細資訊，請參閱 [建立表單資料模型](create-form-data-models.md).
 
-接下來，您可以根據表單資料模型模型建立最適化表單，並將其用於各種最適化表單使用案例，例如：
+接著，您可以建立最適化表單型表單資料模型，並用於各種最適化表單使用案例，例如：
 
 * 透過以下查詢資訊預填調適型表單： [!DNL Microsoft Dynamics] 實體和服務
 * 叫用 [!DNL Microsoft Dynamics] 使用最適化表單規則的表單資料模型中定義的伺服器作業
 * 將提交的表單資料寫入 [!DNL Microsoft Dynamics] 實體
 
 <!--It is recommended to create a copy of the Form Data Model provided with the [!DNL Experience Manager Forms] package and configure data models and services to suit your requirements. It will ensure that any future updates to the package do not override your form data model.-->
+
+您可以 [設定表單資料模型提交動作](/help/forms/using-form-data-model.md) 最適化表單傳送資料至Microsoft Dynamics OData。
 
 如需在業務工作流程中建立和使用表單資料模型的詳細資訊，請參閱 [資料整合](data-integration.md).

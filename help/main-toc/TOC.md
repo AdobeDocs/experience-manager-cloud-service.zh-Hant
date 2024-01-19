@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的運作方式以及該軟體可以為您做哪些事。
 breadcrumb-title: 使用手冊
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 104dfd255185816983674026a84337624a851d9a
+source-git-commit: cb817f2ce94a1618fd8dd73834f663e8aaed2b7f
 workflow-type: tm+mt
-source-wordcount: '4551'
-ht-degree: 99%
+source-wordcount: '4600'
+ht-degree: 98%
 
 ---
 
@@ -609,6 +609,12 @@ ht-degree: 99%
             + [設定重新導向頁面或感謝訊息](/help/forms/configure-redirect-page-or-thank-you-message.md)
             + [建立具有可重複區段的表單](/help/forms/create-forms-repeatable-sections.md)
             + [為最適化表單設定提交動作](/help/forms/configure-submit-actions-core-components.md)
+            + [提交最適化表單至Azure Blob儲存體](/help/forms/configure-submit-action-azure-blob-storage.md)
+            + [提交最適化表單至Microsoft® OneDrive](/help/forms/configure-submit-action-onedrive.md)
+            + [為最適化表單設定SharePoint儲存空間](/help/forms/configure-submit-action-sharepoint.md)
+            + [將AEM最適化表單與AEM Workflow整合](/help/forms/configure-submit-action-workflow.md)
+            + [設定最適化Forms的提交至REST端點提交動作](/help/forms/configure-submit-action-restpoint.md)
+            + [為最適化表單設定傳送電子郵件提交動作](/help/forms/configure-submit-action-send-email.md)
             + [在最適化表單中使用 Google reCAPTCHA](/help/forms/captcha-adaptive-forms-core-components.md)
             + [在最適化表單中新增自訂的錯誤處理常式](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
             + [為以核心元件為主的最適化表單新增地區設定](/help/forms/supporting-new-language-localization-core-components.md)
