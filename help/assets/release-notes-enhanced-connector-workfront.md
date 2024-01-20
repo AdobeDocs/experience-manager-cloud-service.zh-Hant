@@ -2,10 +2,10 @@
 title: ' [!DNL Workfront for Experience Manager enhanced connector] 版發行說明'
 description: ' [!DNL Workfront for Experience Manager enhanced connector] 版發行說明'
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
-source-git-commit: 16aa0241dd954b7f66523d746827d81b956578bd
-workflow-type: ht
-source-wordcount: '1379'
-ht-degree: 100%
+source-git-commit: b1c5df329e45128704ae82f49673c6a755a61a73
+workflow-type: tm+mt
+source-wordcount: '1573'
+ht-degree: 89%
 
 ---
 
@@ -15,14 +15,27 @@ ht-degree: 100%
 
 ## 發行日期 {#release-date}
 
-[!DNL Workfront for Experience Manager enhanced connector] 的最新版本 1.9.15 發布日期是 2023 年 11 月 17 日。
+最新版本1.9.16的發行日期 [!DNL Workfront for Experience Manager enhanced connector] 是2024年1月19日。
 
 ## 版本重點 {#release-highlights}
 
 [!DNL Workfront for Experience Manager enhanced connector] 的最新版本包括以下錯誤修復：
 
-* 查看 AEM 檔案夾清單時，對話框需要超過一分鐘才能載入。
-* 已獲授權的 [!DNL Workfront] 使用者正持續收到身份驗證失敗錯誤記錄。
+* 此 [!DNL Workfront] 中的設定 [!DNL CRX DE] 目前未儲存 `project ID`，導致套用唯讀許可權時發生錯誤。 進一步瞭解如何 [設定許可權](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/integrations/workfront-connector-configure.html#linked-folders).
+
+* 沒有公開檔案說明如何將自訂屬性新增到立即可用的索引定義。 進一步瞭解 [新增自訂屬性](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/integrations/workfront-connector-configure.html#metadata-schema-mapping).
+
+* 刪除增強型聯結器上的連線設定會大幅影響事件訂閱和其他儲存的設定，導致它們指向舊的URL。
+
+* 安裝Forms附加元件套件不會安裝 **[!UICONTROL 切換路由器]**，導致失敗 [!DNL WFEC AMS environment Toggle] 功能。
+
+* 在EWC設定上啟用事件訂閱會導致以下專案重複的API呼叫失敗： `HTTP 400` 設定時發生錯誤 [!DNL Workfront] 第1次增強型聯結器。
+
+* 在Workfront中刪除連結資料夾資產的評論時，無法在AEM上找到連結的資料夾路徑。
+
+* AEM對大型檔案資產的支援不足導致4位元組大小問題。
+
+* 已連結資料夾、檔案更新和附註更新中的關鍵流程沒有請求時間處理。
 
 >[!NOTE]
 >
@@ -31,7 +44,7 @@ ht-degree: 100%
 
 >[!IMPORTANT]
 >
->Adobe 推薦[升級到最新 1.9.15 版本 ](/help/assets/workfront-connector-install.md) 的 [!DNL Workfront for Experience Manager enhanced connector]。
+>Adobe 推薦[升級到最新 1.9.16 版本 ](/help/assets/workfront-connector-install.md) 的 [!DNL Workfront for Experience Manager enhanced connector]。
 
 ## 已知問題 {#known-issues}
 
@@ -40,6 +53,11 @@ ht-degree: 100%
 * 在使用傳統 Workfront 體驗時，「**[!UICONTROL 更多]**」下拉式清單中的「**[!UICONTROL 傳送至]**」選項不允許您在 Experience Manager 之內選取目標目的地。使用「**[!UICONTROL 文件動作]**」下拉式清單時，「**[!UICONTROL 傳送至]**」選項正常運作。在使用新的 Workfront 體驗時，「**[!UICONTROL 更多]**」下拉式清單和「**[!UICONTROL 文件動作]**」下拉式清單的「**[!UICONTROL 傳送至]**」選項正常運作。
 
 ## 舊版本 {#previous-releases}
+
+### 2023 年 11 月版 {#november-2023-release}
+
+* 查看 AEM 檔案夾清單時，對話框需要超過一分鐘才能載入。
+* 已獲授權的 [!DNL Workfront] 使用者正持續收到身份驗證失敗錯誤記錄。
 
 ### 2023 年 10 月版 {#october-2023-release}
 
