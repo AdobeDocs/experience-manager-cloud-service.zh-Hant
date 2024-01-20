@@ -3,9 +3,9 @@ title: AEM as a Cloud Service 中的快取
 description: 瞭解AEMas a Cloud Service快取的基本概念
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: 8351e5e60c7ec823a399cbbdc0f08d2704f12ccf
+source-git-commit: 28537409c5974ff8ade30207f16cc62b45c47616
 workflow-type: tm+mt
-source-wordcount: '2865'
+source-wordcount: '2894'
 ht-degree: 1%
 
 ---
@@ -223,6 +223,10 @@ AEM層預設不會快取blob內容。
         Header set Age 0
      </LocationMatch>
      ```
+
+### 分析CDN快取命中率 {#analyze-chr}
+
+請參閱 [快取命中率分析教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/caching/cdn-cache-hit-ratio-analysis.html) 如需有關下載CDN記錄檔及使用控制面板分析網站快取百分比的資訊。
 
 ### HEAD請求行為 {#request-behavior}
 
