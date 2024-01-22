@@ -2,12 +2,13 @@
 title: 新增自訂網域名稱
 description: 了解如何使用 Cloud Manager 新增自訂網域名稱。
 exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
-source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
+source-git-commit: 52466e091cf6e0ab1ac620e15568c04881a3b63a
 workflow-type: tm+mt
-source-wordcount: '636'
-ht-degree: 79%
+source-wordcount: '680'
+ht-degree: 73%
 
 ---
+
 
 # 新增自訂網域名稱 {#adding-cdn}
 
@@ -60,17 +61,21 @@ CDN 部署需要有效的 SSL 憑證和成功的 TXT 驗證。這由狀態指示
 
 請參閱[檢查自訂網域名稱狀態](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)，深入了解各種狀態以及如何解決潛在問題。
 
+>[!TIP]
+>
+>檢閱以下文章，瞭解需要 [接著新增CNAME或記錄](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md) 以避免在將DNS記錄新增到您的自訂網域時加倍努力。 TXT專案和CNAME或A記錄可以同時設定在管理DNS伺服器上。
+
+>[!TIP]
+>
+>請參閱[新增 TXT 記錄](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md)，深入了解 TXT 記錄。
+
 >[!NOTE]
 >
 >由於 DNS 傳播延遲，DNS 驗證可能需要幾個小時才能完成。
 >
 >Cloud Manager 將驗證所有權並更新可在域設定表中看到的狀態。如需更多詳細資訊，請參閱[檢查自訂網域名稱狀態](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)。
 
->[!TIP]
->
->請參閱[新增 TXT 記錄](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md)，深入了解 TXT 記錄。
-
-## 從環境頁面新增自訂網域名稱 {#adding-cdn-environments}
+## 從環境頁面新增自訂網域名 {#adding-cdn-environments}
 
 按照以下步驟從&#x200B;**環境**&#x200B;頁面。
 
