@@ -6,9 +6,9 @@ mini-toc-levels: 1
 feature: Asset Management,Metadata
 role: User,Architect,Admin
 exl-id: 73a82bc2-1dda-4090-b7ee-29d1a632ba25
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: fa57e0438a7570551785375c4e5a57fa38fd2f6f
 workflow-type: tm+mt
-source-wordcount: '2000'
+source-wordcount: '1953'
 ht-degree: 8%
 
 ---
@@ -60,18 +60,53 @@ ht-degree: 8%
 
 ## 中繼資料的型別 {#types-of-metadata}
 
-兩種基本的中繼資料型別是技術中繼資料和描述性中繼資料。
+中繼資料分為技術、資訊和管理中繼資料。
 
-技術中繼資料適用於處理數位資產的軟體應用程式，且不應手動維護。 [!DNL Experience Manager Assets] 和其他軟體會自動決定技術中繼資料，而中繼資料可能會在資產修改時變更。 資產可用的技術中繼資料主要取決於資產的檔案型別。 技術中繼資料的一些範例包括：
+### 技術中繼資料
 
-* 檔案的大小。
-* 影像的Dimension（高度和寬度）。
-* 音訊或視訊檔案的位元速率。
-* 影像的解析度（詳細程度）。
+技術中繼資料專注於數位資產的技術方面，提供與下列相關的重要資訊：
 
-描述性中繼資料是與應用程式網域相關的中繼資料，例如資產來自的業務。 描述性中繼資料無法自動判斷。 它是手動或半自動建立的。 例如，啟用GPS的相機可以自動追蹤經緯度，並在影像中新增地理標籤。
+* 檔案大小
+* 格式
+* 解決方法
+* 尺寸
+* 色彩模式
 
-手動建立描述性中繼資料資訊的成本很高。 因此，我們建立了各種標準，以便於在軟體系統和組織之間交換中繼資料。 [!DNL Experience Manager Assets] 支援中繼資料管理的所有相關標準。
+這類中繼資料可協助使用者瞭解並有效使用數位資產。
+
+### 資訊性中繼資料
+
+資訊性中繼資料提供描述性資訊，可增進內容瞭解、協助內容探索和可搜尋性。 其中包含關鍵字、註解及說明。 <br>例如，在Experience Manager Assets中管理視訊時，我們可以包含以下資訊性中繼資料：
+
+* **關鍵字**：行銷、產品推出、促銷
+* **註解**：向您介紹我們最新產品，以及令人興奮的功能
+* **說明**：影片內容的詳細概觀。
+
+### 管理中繼資料
+
+管理中繼資料會處理數位資產的管理方面。 它可確儲存取控制、法規遵循，以及管理數位資產管理系統中資產的整體生命週期。 其中包含下列相關資訊：
+
+* 資產所有權
+* 使用許可權
+* 權限
+* 其他管理詳細資料
+
+此中繼資料型別可確保有效的資產管理、存取控制和法規遵循。
+
+<!-- Learn more about [metadata best practices](metadata-best-practices.md) to manage your digital assets effectively. -->
+
+<!-- The two basic types of metadata are technical metadata and descriptive metadata.
+
+Technical metadata is useful for software applications that are dealing with digital assets and should not be maintained manually. [!DNL Experience Manager Assets] and other software automatically determine technical metadata and the metadata may change when the asset is modified. The available technical metadata of an asset depends largely on the file type of the asset. Some examples of technical metadata are:
+
+* Size of a file.
+* Dimensions (height and width) of an image.
+* Bit rate of an audio or video file.
+* Resolution (level of detail) of an image.
+
+Descriptive metadata is metadata concerned with the application domain, for example, the business that an asset is coming from. Descriptive metadata cannot be determined automatically. It is created manually or semi-automatically. For example, a GPS-enabled camera can automatically track the latitude and longitude and add geotag the image.
+
+The cost of manually creating descriptive metadata information is high. So, standards are established to ease the exchange of metadata across software systems and organizations. [!DNL Experience Manager Assets] supports all relevant standards for metadata management. -->
 
 ## 中繼資料和上次修改 {#last-modification}
 
@@ -212,7 +247,7 @@ To change the limit, access Web Console ( **[!UICONTROL Tools]** > **[!UICONTROL
 
 ### Digital Rights Management中繼資料 {#digital-rights-management-metadata}
 
-* CC - [!DNL Creative Commons].
+* 副本 —  [!DNL Creative Commons].
 * [!DNL XMPRights]。
 * 加 —  [圖片授權通用系統](https://www.useplus.com).
 * 稜鏡 —  [發佈產業標準中繼資料的需求](https://www.idealliance.org/prism-metadata).
