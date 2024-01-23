@@ -5,11 +5,11 @@ exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 source-git-commit: cb2c883fbadc5347dbe5fc50337abc41d4f5cec3
 workflow-type: tm+mt
 source-wordcount: '2068'
-ht-degree: 77%
+ht-degree: 78%
 
 ---
 
-# 過時和移除的功能和API {#deprecated-and-removed-features-apis}
+# 已過時和已移除的功能和 API {#deprecated-and-removed-features-apis}
 
 >[!CONTEXTUALHELP]
 >id="aem_cloud_deprecated_features"
@@ -37,7 +37,7 @@ Adobe 持續評估產品功能，以更新或替代的方式來改善或取代�
 | [!DNL Sites] | **社交媒體狀態**&#x200B;的體驗片段屬性。 | 該功能不久將移除。 |
 | [!DNL Sites] | 基於範例的簡單內容片段。 | 現在[基於模型的結構化內容片段](/help/assets/content-fragments/content-fragments-models.md)。 |
 | [!DNL Assets] | 處理所擷取影像的 `DAM Asset Update` 工作流程。 | 資產擷取現在使用[資產微服務](/help/assets/asset-microservices-overview.md)。 |
-| [!DNL Assets] | 將資產直接上傳至 [!DNL Experience Manager]. 另請參閱 [過時的資產上傳API](/help/assets/developer-reference-material-apis.md#deprecated-asset-upload-api). | 使用[直接二進位上傳](/help/assets/add-assets.md)。如需技術詳細資訊，請參閱[直接上傳 API](/help/assets/developer-reference-material-apis.md#upload-binary)。 |
+| [!DNL Assets] | 直接將資產上傳到 [!DNL Experience Manager]。請參閱[已過時的資產上傳 API](/help/assets/developer-reference-material-apis.md#deprecated-asset-upload-api)。 | 使用[直接二進位上傳](/help/assets/add-assets.md)。如需技術詳細資訊，請參閱[直接上傳 API](/help/assets/developer-reference-material-apis.md#upload-binary)。 |
 | [!DNL Assets] | 不支援 [ 工作流程中的](/help/assets/developer-reference-material-apis.md#post-processing-workflows-steps)某些工作流程步驟`DAM Asset Update`，包括呼叫命令列工具，例如 [!DNL ImageMagick]. | [資產微服務](/help/assets/asset-microservices-overview.md)可取代許多工作流程。若要自訂處理程序，請使用[後期處理工作流程](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows)。 |
 | [!DNL Assets] | FFmpeg 影片轉碼。 | 若要產生 FFmpeg 縮圖，請使用[資產微服務](/help/assets/asset-microservices-overview.md)。若是 FFmpeg 轉碼，請使用 [Dynamic Media](/help/assets/manage-video-assets.md)。 |
 | [!DNL Foundation] | 複寫代理程式的「散發」標籤下的樹狀結構複寫 UI (2021 年 9 月 30 日後移除) | [管理出版物](/help/operations/replication.md#manage-publication)或[發佈內容樹工作流程](/help/operations/replication.md#publish-content-tree-workflow)方法 |
@@ -54,8 +54,8 @@ Adobe 持續評估產品功能，以更新或替代的方式來改善或取代�
 | [!DNL Sites] | Portal Director 和 Portlet 元件 | 這些功能在 [!DNL Experience Manager] 6.4 中已過時，並已從 [!DNL Experience Manager] 中移除。 | 已移除 |
 | [!DNL Sites] | Design Importer | 此功能已移除，因為無法在執行階段存取 [!DNL Experience Manager] 存放庫的不可修改區段。 | 已移除 |
 | [!DNL Assets] | [!DNL Assets] 無法與 Marketing Cloud Assets 核心服務和 Creative Cloud 服務共用。 | 若要與 [!DNL Adobe Creative Cloud] 整合，請使用 [Adobe Asset Link](https://helpx.adobe.com/tw/enterprise/using/adobe-asset-link.html)。 | 已移除 |
-| [!DNL Foundation] | 支援 Apache Sling 資料來源 (OSGi 套件組合 org.apache.sling.datasource) | N/A | 已移除 |
-| [!DNL Foundation] | 支援 JST 指令碼範例 (OSGi 套件組合 org.apache.sling.scripting.jst) | N/A | 已移除 |
+| [!DNL Foundation] | 支援 Apache Sling 資料來源 (OSGi 套件組合 org.apache.sling.datasource) | 不適用 | 已移除 |
+| [!DNL Foundation] | 支援 JST 指令碼範例 (OSGi 套件組合 org.apache.sling.scripting.jst) | 不適用 | 已移除 |
 | [!DNL Foundation] | 支援 Apache Felix Http Whiteboard | OSGi Http Whiteboard | 2022 年 3 月 |
 | [!DNL Foundation] | 支援 com.adobe.granite.oauth.server | Adobe IMS 整合  | 2023 年 3 月 |
 
@@ -207,7 +207,7 @@ Adobe 持續評估產品功能，以更新或替代的方式來改善或取代�
 以下是已過時的 AEM API 及其預期移除日期的詳盡清單。客戶應在目標移除日期之前從他們的程式碼中移除 API。在移除日期之後使用 API 將在本機 SDK/開發環境和 Cloud Manager 組建過程中產生錯誤。
 
 <details>
-  <summary>展開以檢視已過時的API清單。</summary>
+  <summary>展開以查看已過時的 API 清單。</summary>
 <table style="table-layout:auto">
   <tr>
     <th>套件/類別</th>
