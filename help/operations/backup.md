@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service 中的備份和還原
 description: 瞭解AEMas a Cloud Service的備份和還原
 exl-id: 469fb1a1-7426-4379-9fe3-f5b0ebf64d74
-source-git-commit: 83b5d9a3ff0e9a3c69e36a97a3f733b05f827d3b
+source-git-commit: b77ee0697e8f6f4aeaa6651336588f1c5321abd1
 workflow-type: tm+mt
-source-wordcount: '514'
-ht-degree: 27%
+source-wordcount: '539'
+ht-degree: 24%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 27%
 
 >[!CAUTION]
 >
->只有在程式碼或內容發生嚴重問題時才應使用此功能。還原備份時間和目前時間之間的最新資料會遺失。暫存資料也會還原為舊版本。
+>只有在程式碼或內容發生嚴重問題時才應使用此功能。還原備份時間和目前時間之間的最新資料會遺失。測試功能也會還原至舊版本。 若要保留最近使用的資料，請先透過內容套件匯出再還原，然後再重新安裝至已還原的存放庫。
 
 ## 使用方式 {#how-to-use}
 
