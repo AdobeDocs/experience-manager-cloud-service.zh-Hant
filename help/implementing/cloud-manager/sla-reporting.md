@@ -2,10 +2,10 @@
 title: SLA 報告
 description: 了解如何查看生產 AEM 環境相對於簽訂的服務水平協議 (SLA) 的效能。
 exl-id: 03932415-a029-4703-b44a-f86a87edb328
-source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
+source-git-commit: f037f47f0b131c87301faf4458658224d1d62a43
 workflow-type: tm+mt
-source-wordcount: '250'
-ht-degree: 88%
+source-wordcount: '400'
+ht-degree: 55%
 
 ---
 
@@ -51,3 +51,14 @@ SLA 報告數據可透過&#x200B;**報告**&#x200B;標籤。請依照下列步�
 每個事故都有一個時間範圍、一個原因和一連串評論。
 
 ![事件分析範例](assets/sla-reporting-c.png)
+
+## 重新整理間隔 {#refresh}
+
+SLA報告可讓您深入瞭解AEM生產環境的效能，並且是最新狀態，但不是即時的。 SLA報告產生每月進行，並且為上個月標籤為生產的新計畫產生。 並非立即完成。 由於此延遲，當您檢視SLA報告時，請牢記以下事項：
+
+* 報告的SLA將是當月開始時存在的SLA，即使SLA在該月內有所變更。
+* 如果月初沒有SLA，因為當時沒有程式，則會套用建立程式之日存在的SLA。
+
+## 預覽環境 {#preview}
+
+預覽環境旨在作為內容作者在發佈之前驗證內容最終體驗的工具。 因此，預覽環境在設計上沒有高可用性，也沒有相關聯的SLA。
