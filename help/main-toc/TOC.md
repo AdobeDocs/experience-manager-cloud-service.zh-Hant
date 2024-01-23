@@ -165,7 +165,7 @@ ht-degree: 98%
       + [Workfront for Experience Manager 加強連接器最新發行說明](/help/assets/release-notes-enhanced-connector-workfront.md)
    + [新增功能 ](/help/release-notes/what-is-new.md)
    + [AEM Cloud Service 的重大變更](/help/release-notes/aem-cloud-changes.md)
-   + [過時和移除的功能和API](/help/release-notes/deprecated-removed-features.md)
+   + [已過時和已移除的功能和 API](/help/release-notes/deprecated-removed-features.md)
    + [發行前通道](/help/release-notes/prerelease.md)
 + 安全性 {#security}
    + [AEM as a Cloud Service 安全性概觀](/help/security/cloud-service-security-overview.md)
@@ -662,7 +662,7 @@ ht-degree: 98%
             + [建立無障礙的最適化表單](/help/forms/creating-accessible-adaptive-forms.md)
          + [設定表單入口網站](/help/forms/configure-forms-portal.md)
          + [建立和管理評論](/help/forms/create-reviews-forms.md)
-      + [最適化表單關鍵字](/help/forms/adaptive-forms-keywords.md)
+      + [調適型表單關鍵字](/help/forms/adaptive-forms-keywords.md)
       + [預覽表單](/help/forms/previewing-forms.md)
    + 以 Forms 為中心的工作流程 {#create-form-centric-workflows}
       + [在工作流程中使用以 Forms 為中心的步驟 + 步驟參考](/help/forms/aem-forms-workflow-step-reference.md)
