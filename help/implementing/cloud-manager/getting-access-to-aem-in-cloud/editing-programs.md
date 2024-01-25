@@ -2,10 +2,10 @@
 title: 管理和編輯程式
 description: 了解如何編輯您的生產和沙箱計畫，以在建立計畫後調整其選項。
 exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
-source-git-commit: 0d60c19638707262dab7f290f84fa873b694bc22
+source-git-commit: 2dfae31e32d375c82c4f690624e48f7f09feb4df
 workflow-type: tm+mt
-source-wordcount: '900'
-ht-degree: 43%
+source-wordcount: '773'
+ht-degree: 32%
 
 ---
 
@@ -99,38 +99,21 @@ ht-degree: 43%
 
    ![編輯計畫選項](assets/edit-program-overview.png)
 
-1. **編輯計畫**&#x200B;頁面隨即開啟。在&#x200B;**一般**&#x200B;索引標籤，編輯計畫名稱和描述。
-
-   * 必須為計畫選擇至少一種解決方案。
+1. 此 **編輯計畫** 頁面開啟至 **一般** 標籤。
 
    ![「一般」索引標籤](assets/edit-program-prod1.png)
 
-1. 在&#x200B;**解決方案和附加元件**&#x200B;索引標籤，修改計畫的解決方案。
-
-   ![選取解決方案](assets/edit-prg.png)
-
-1. 按一下解決方案名稱前的 > 形圖示，即可顯示選用的附加元件，例如選擇&#x200B;**商務**&#x200B;下的附加選項 **Sites**。
-
-   ![編輯附加元件](assets/edit-program-add-on.png)
-
-1. 在&#x200B;**上線設定**&#x200B;索引標籤，修改計畫的上線日期。
-
-   ![編輯上線設定](assets/edit-program-go-live.png)
-
-   * 此日期僅供參考。這會觸發計劃概述頁面上的上線小工具。然後，小工具會提供至 Adobe Experience Manager (AEM) as a Cloud Service 最佳實務的產品內連結，以便貼近您的歷程進而為您帶來成功的上線體驗。
-   * 沙箱計畫沒有此索引標籤。
-
-1. 如果方案有所需的權益，則 **安全性** 標籤會顯示您可以在何處修改程式的安全性選項。
-
-   ![編輯安全性設定](assets/edit-program-security.png)
-
-   * HIPAA無法在之後啟用或停用 [程式建立。](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
-      * [深入了解](https://www.adobe.com/go/hipaa-ready_tw) Adobe 的 HIPAA 就緒解決方案實作方式。
-   * 一旦啟動，就可以設定WAF-DDOS保護 [非生產管道。](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
+1. 可用於編輯方案的選項與建立方案時的選項相同。
+   * 請參閱檔案 [建立生產計畫](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) 和 [建立沙箱計畫](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md) 個別選項的詳細資訊。
+   * [其他選項](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#options) 根據您組織的權益，生產計畫可能適合使用。
 
 1. 按一下「**更新**」，儲存計畫的變更。
 
-只要編輯計畫 (包括新增或移除解決方案或附加元件)，這些變更就會在下次部署後生效。
+將會儲存對計畫的變更。
+
+>[!NOTE]
+>
+>只要編輯計畫 (包括新增或移除解決方案或附加元件)，這些變更就會在下次部署後生效。
 
 ## 刪除沙箱計畫 {#delete-sandbox-program}
 
