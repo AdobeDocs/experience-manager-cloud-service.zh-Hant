@@ -5,33 +5,33 @@ contentOwner: AG
 feature: Asset Management,Renditions
 role: User,Admin
 exl-id: e848aa77-7829-4adc-8b88-0279791a4525
-source-git-commit: d00e1f49438ad36339a09f8914496faeda3d4de6
+source-git-commit: 4c1525fd51956d3d788a91f58978a9c885e6daa5
 workflow-type: tm+mt
-source-wordcount: '1032'
-ht-degree: 9%
+source-wordcount: '1409'
+ht-degree: 32%
 
 ---
 
 # [!DNL Assets] 支援的檔案格式 {#supported-file-formats}
 
-[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 支援任何二進位檔案的基本內容管理功能 — 儲存、線上管理中繼資料、版本設定、上傳和下載等，不受檔案格式限制。 [!DNL Adobe Experience Manager Assets] 支援廣泛的檔案格式，而且每種產品功能對於不同的格式都有不同的支援。
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 支援任何二進位檔案的基本內容管理功能 — 儲存、線上管理中繼資料、版本設定、上傳和下載等，不受檔案格式限制。 [!DNL Adobe Experience Manager Assets] 支援各式各樣的檔案格式，而且每種產品功能對於不同的格式都有不同的支援。
 
-此外， [!DNL Experience Manager Assets] 提供延伸支援，可產生預覽和轉譯，以及擷取中繼資料和文字以用於全文索引。 此延伸支援是透過以下方式提供： [資產微服務](asset-microservices-configure-and-use.md).
+此外， [!DNL Experience Manager Assets] 提供延伸支援，可產生預覽和轉譯，以及擷取中繼資料和文字以供全文檢索索引。 這項延伸支援是透過以下方式提供： [資產微服務](asset-microservices-configure-and-use.md).
 
-使用資產微服務進行資產轉換的重點包括：
+使用資產微服務的資產轉換重點包括：
 
-* 金鑰 [Adobe檔案格式](#adobe-formats) 由Adobe應用程式和服務所產生，包括 [!DNL Adobe Photoshop]， [!DNL Adobe InDesign]， [!DNL Adobe Illustrator]， [!DNL Adobe XD]， [!DNL Adobe Dimension]、和 [!DNL Adobe Acrobat] 或PDF。
-* 金鑰 [影像檔案格式](#image-formats).
-* [Camera Raw檔案格式](#camera-raw-formats) 適用於多種相機，包括Canon、Nikon、Fujifilm、Olympus和其他製造商(由Adobe Camera Raw提供)。
-* 通用 [檔案格式](#document-formats)，包括Microsoft® Office和Open Document格式。
-* 各種視訊 [和音訊](#video-formats)[格式.](#audio-formats)
+* 索引鍵 [Adobe檔案格式](#adobe-formats) 由Adobe應用程式和服務所產生，包括 [!DNL Adobe Photoshop]， [!DNL Adobe InDesign]， [!DNL Adobe Illustrator]， [!DNL Adobe XD]， [!DNL Adobe Dimension]、和 [!DNL Adobe Acrobat] 或PDF。
+* 索引鍵 [影像檔案格式](#image-formats).
+* [Camera Raw檔案格式](#camera-raw-formats) 適用於各種相機，包括Canon、Nikon、Fujifilm、Olympus和其他製造商(由Adobe Camera Raw提供技術支援)。
+* 通用 [檔案格式](#document-formats)，包括Microsoft®Office和Open Document格式。
+* 範圍廣泛 [視訊](#video-formats) 和 [音訊](#audio-formats) 格式。
 
 下列圖例說明每種格式的支援等級。
 
 | 支援等級 | 說明 |
 | ------------- | --------------------------- |
 | ✓ | 支援 |
-| * | 請參閱表格下方的註解 |
+| * | 請參閱表格下方的備註 |
 | - | 不適用 |
 
 ## Adobe格式 {#adobe-formats}
@@ -46,12 +46,12 @@ ht-degree: 9%
 | INDD | ✓ | - | ✓ | ✓ * |
 | INDT | - | - | ✓ | - |
 | PDF | ✓ | ✓ | ✓ | ✓ |
-| PROTO | - | - | ✓ | - |
+| 原始 | - | - | ✓ | - |
 | PSB | ✓ | - | ✓ | ✓ |
 | PSD | ✓ | - | ✓ | ✓ |
 | XD | ✓ | - | ✓ | ✓ |
 
-\*用於 [!DNL Adobe InDesign] 檔案(INDD)，轉譯的大小由內嵌在INDD檔案中的預覽決定。 設定偏好設定於 [!DNL InDesign] (**[!UICONTROL 偏好設定>檔案處理>一律儲存包含檔案的預覽影像，預覽大小]**)以內嵌較大的轉譯。
+\*用於 [!DNL Adobe InDesign] 檔案(INDD)，轉譯的大小由內嵌在INDD檔案中的預覽決定。 設定中的偏好設定 [!DNL InDesign] (**[!UICONTROL 偏好設定>檔案處理>永遠儲存包含檔案的預覽影像，預覽大小]**)以內嵌較大的轉譯。
 
 ## 影像格式 {#image-formats}
 
@@ -69,7 +69,7 @@ ht-degree: 9%
 | TIFF | ✓ | ✓ | ✓ | - |
 | WebP | ✓ | ✓ | ✓ | ✓ |
 
-## 3D格式 {#support-3d-formats}
+## 三維格式 {#support-3d-formats}
 
 支援下列3D格式。
 
@@ -84,7 +84,7 @@ ht-degree: 9%
 | STL | ✓ | ✓ | ✓ | ✓ | ✓ | - | ✓ | ✓ |
 | FBX | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | - |
 | 3DS | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | - |
-| USDz | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | - | ✓ |
+| 美元z | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | - | ✓ |
 | SBSAR | ✓ | ✓ | ✓ | - | ✓ | ✓ | - | - |
 
 ## [!DNL Camera Raw] 格式 {#camera-raw-formats}
@@ -147,42 +147,42 @@ ht-degree: 9%
 
 ## 視訊格式 {#video-formats}
 
-| 檔案格式 | 產生縮圖 | 中繼資料擷取 | 寬度/高度 |
-| ----------- | -------------------- | ------------------- | ------------ |
-| 3G2 | - | ✓ | - |
-| 3GP | - | ✓ | - |
-| AVI | ✓ | ✓ | ✓ |
-| DIVX | ✓ | - | ✓ |
-| F4V | ✓ | ✓ | ✓ |
-| FLV | ✓ | ✓ | ✓ |
-| M2T | ✓ | - | ✓ |
-| M2TS | ✓ | - | ✓ |
-| M2V | ✓ | - | ✓ |
-| M4V | ✓ | ✓ | ✓ |
-| MKV | ✓ | - | ✓ |
-| MOV | ✓ | ✓ | ✓ |
-| MP4 | ✓ | ✓ | ✓ |
-| MPEG | ✓ | ✓ | ✓ |
-| MPG | ✓ | ✓ | ✓ |
-| MTS | ✓ | - | ✓ |
-| MXF | ✓ | - | ✓ |
-| OGV | ✓ | - | ✓ |
-| QT | ✓ | - | ✓ |
-| R3D | - | ✓ | ✓ |
-| SWF | ✓ | - | ✓ |
-| WebM | ✓ | - | ✓ |
-| WMV | ✓ | ✓ | ✓ |
+| 檔案格式 | 產生縮圖 | 中繼資料擷取 | 寬度/高度 | 預覽 |
+| ----------- | -------------------- | ------------------- | ------------ | ------- |
+| 3G2 | - | ✓ | - | - |
+| 3GP | - | ✓ | - | - |
+| AVI | ✓ | ✓ | ✓ | ✓ |
+| DIVX | ✓ | - | ✓ | ✓ |
+| F4V | ✓ | ✓ | ✓ | ✓ |
+| FLV | ✓ | ✓ | ✓ | ✓ |
+| M2T | ✓ | - | ✓ | ✓ |
+| M2TS | ✓ | - | ✓ | ✓ |
+| M2V | ✓ | - | ✓ | ✓ |
+| M4V | ✓ | ✓ | ✓ | ✓ |
+| MKV | ✓ | - | ✓ | ✓ |
+| MOV | ✓ | ✓ | ✓ | ✓ |
+| MP4 | ✓ | ✓ | ✓ | ✓ |
+| MPEG | ✓ | ✓ | ✓ | ✓ |
+| MPG | ✓ | ✓ | ✓ | ✓ |
+| MTS | ✓ | - | ✓ | ✓ |
+| MXF | ✓ | - | ✓ | ✓ |
+| OGV | ✓ | - | ✓ | ✓ |
+| QT | ✓ | - | ✓ | ✓ |
+| R3D | - | ✓ | ✓ | ✓ |
+| SWF | ✓ | - | ✓ | ✓ |
+| WebM | ✓ | - | ✓ | ✓ |
+| WMV | ✓ | ✓ | ✓ | ✓ |
 
 ## 音訊格式 {#audio-formats}
 
 [!DNL Assets] as a [!DNL Cloud Service] 為AIF、ASF、M4A、MP3、WAV和WMA音訊格式提供XMP中繼資料擷取支援。
 
-## 音訊和視訊轉錄支援的輸入格式 {#audio-video-transcription-formats}
+## 支援的音訊和視訊轉譯輸入格式 {#audio-video-transcription-formats}
 
 * FLV （含H.264和AAC轉碼器） (.flv)
 * MXF (.mxf)
 * MPEG2-PS、MPEG2-TS、3GP (.ts、.ps、.3gp、.3gpp、.mpg)
-* Windows Media Video (WMV)/ASF (.wmv、.asf)
+* Windows Media Video (WMV)/ASF (.wmv， .asf)
 * AVI （未壓縮8位元/10位元） (.avi)
 * MP4 (.mp4， .m4a， .m4v)
 * Microsoft®數位視訊錄製(DVR-MS) (.dvr-ms)
@@ -202,7 +202,7 @@ ht-degree: 9%
 | FLV、F4V | AdobeFlash | H264/AVC、Flix VP6、H263、Sorenson | SWF（向量動畫檔案） |
 | M4V | Apple iTunes | H264/AVC | − |
 | MKV | Matroska | H264/AVC | − |
-| MOV、QT | Apple QuickTime | H264/AVC、Apple ProRes422和HQ、Sony XDCAM、Sony DVCAM、HDV、Panasonic DVCPro、Apple DV (DV25)、Apple PhotoJPEG、Sorenson、Avid DNxHD、Avid AVR | Apple Intermediate， Apple動畫 |
+| MOV、QT | Apple QuickTime | H264/AVC、Apple ProRes422和HQ、Sony XDCAM、Sony DVCAM、HDV、Panasonic DVCPro、Apple DV (DV25)、Apple PhotoJPEG、Sorenson、Avid DNxHD、Avid AVR | Apple Intermediate， Apple Animation |
 | MP4 | MPEG-4 | H264/AVC （所有設定檔） | − |
 | MPG、VOB、M2V、MP2 | MPEG-2 | MPEG-2 | − |
 | MXF‡案 | MXF | Sony XDCAM、MPEG-2、MPEG-4、Panasonic DVCPro | − |
@@ -218,11 +218,11 @@ ht-degree: 9%
 | ------ | --------------------- | ----------------------------------- | ------------------------- | ------------------------- | -------------------------- |
 | AI | ✓ | - | - | - | - |
 | INDD | ✓ | - | - | - | - |
-| PDF（請見下方附註） | ✓ | ✓ | ✓ | ✓ | ✓ |
+| PDF（請參閱下方的注意事項） | ✓ | ✓ | ✓ | ✓ | ✓ |
 
 >[!NOTE]
 >
->對於安全PDF，僅支援上傳。
+>為了安全PDF，僅支援上傳。
 
 ## Dynamic Media — 支援的點陣影像格式 {#image-support-dynamic-media}
 
@@ -234,19 +234,19 @@ ht-degree: 9%
 | JPEG | ✓ | ✓ | ✓ | ✓ | ✓ | [影像](/help/assets/dynamic-media/image-sets.md)， [混合媒體](/help/assets/dynamic-media/mixed-media-sets.md)、和 [迴轉](/help/assets/dynamic-media/spin-sets.md) |
 | PICT | ✓ | - | - | - | - | - |
 | PNG | ✓ | ✓ | ✓ | ✓ | ✓ | [影像](/help/assets/dynamic-media/image-sets.md)， [混合媒體](/help/assets/dynamic-media/mixed-media-sets.md)、和 [迴轉](/help/assets/dynamic-media/spin-sets.md) |
-| PSD   ‡ | ✓ | - | - | - | - | - |
+| PSD‡ | ✓ | - | - | - | - | - |
 | TIFF | ✓ | ✓ | ✓ | ✓ | ✓ | [影像](/help/assets/dynamic-media/image-sets.md)， [混合媒體](/help/assets/dynamic-media/mixed-media-sets.md)、和 [迴轉](/help/assets/dynamic-media/spin-sets.md) |
 
 ‡合併的影像會從PSD檔案中擷取。 這是由產生的影像 [!DNL Adobe Photoshop] 和包含在PSD檔案中。 視設定而定，合併的影像不一定是實際影像。
 
 ## Dynamic Media — 不支援的點陣影像格式 {#unsupported-raster-image-formats-dm}
 
-下列點陣影像檔案格式的子型別 *not* 支援 [!DNL Dynamic Media]：
+下列點陣影像檔案格式的子型別 *非* 支援 [!DNL Dynamic Media]：
 
 * IDAT區塊大小大於100 MB的PNG檔案。
 * PSB檔案。
 * 不支援色彩空間不是CMYK、RGB、灰階或點陣圖的PSD檔案。 不支援DuoTone、Lab和索引色域。
-* 位元深度大於16的PSD檔案。
+* PSD位元深度大於16的檔案。
 * TIFF含有浮點資料的檔案。
 * TIFF具有Lab色域的檔案。
 
@@ -258,8 +258,8 @@ ht-degree: 9%
 |---|---|---|---|
 | GLB | 二進位GL傳輸 | model/gltf-binary | 將材質和紋理納入為單一資產。 |
 | 物件 | WaveFront 3D物件檔案 | application/x-tgif | |
-| STL | 立體光刻 | application/vnd.ms-pki.stl | |
-| USDZ | Universal Scene說明Zip封存 | model/vnd.usdz+zip | *支援擷取和縮圖產生；尚不支援3D預覽。* USDZ是3D格式，可由Safari或iOS以原生方式檢視。 |
+| STL | 立體成型 | application/vnd.ms-pki.stl | |
+| USDZ | Universal Scene說明Zip封存 | model/vnd.usdz+zip | *支援內嵌和縮圖產生；尚不支援3D預覽。* USDZ是一種3D格式，可供Safari或iOS以原生方式檢視。 |
 
 **另請參閱**
 
@@ -278,4 +278,4 @@ ht-degree: 9%
 >[!MORELIKETHIS]
 >
 >* [使用資產微服務進行資產處理](asset-microservices-overview.md)
->* [文字型資產的智慧型標籤支援的檔案格式](/help/assets/smart-tags.md#smart-tags-supported-file-formats)
+>* [文字型資產智慧標籤支援的檔案格式](/help/assets/smart-tags.md#smart-tags-supported-file-formats)

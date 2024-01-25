@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management,Publishing,Collaboration,Video
 role: User
 exl-id: 91edce4a-dfa0-4eca-aba7-d41ac907b81e
-source-git-commit: 517412d3f9d79a35bd1c25bd0eb09c0dee63c9af
+source-git-commit: fd1c3d1e524e5882ae04ca784b618ddba123bdd6
 workflow-type: tm+mt
-source-wordcount: '4904'
+source-wordcount: '4975'
 ht-degree: 6%
 
 ---
@@ -25,12 +25,34 @@ ht-degree: 6%
 
 ## 上傳和預覽視訊資產 {#upload-and-preview-video-assets}
 
-[!DNL Adobe Experience Manager Assets] 使用擴充功能MP4產生視訊資產的預覽。 您可以預覽轉譯，在 [!DNL Assets] 使用者介面。
+您可以上傳和預覽支援格式的視訊資產，並至 [!DNL Experience Manager Assets].
+<!-- It generates previews for video assets with the extension MP4. -->
 
-1. 在數位資產資料夾或子資料夾中，導覽至您要新增數位資產的位置。
-1. 若要上傳資產，請按一下 **[!UICONTROL 建立]** 從工具列中選擇 **[!UICONTROL 檔案]**. 或者，在使用者介面上拖曳檔案。 另請參閱 [上傳資產](manage-digital-assets.md#uploading-assets) 以取得詳細資訊。
-1. 若要在卡片檢視中預覽視訊，請按一下 **[!UICONTROL 播放]** ![播放選項](assets/do-not-localize/play.png) 視訊資產的選項。 您只能在卡片檢視中暫停或播放視訊。 此 [!UICONTROL 播放] 和 [!UICONTROL 暫停] 選項在清單檢視中無法使用。
-1. 若要在資產詳細資訊頁面中預覽視訊，請選取 **[!UICONTROL 編輯]** 在卡片上。 視訊會在瀏覽器的原生視訊播放器中播放。 您可以播放、暫停、控制音量，以及將視訊縮放至全熒幕。
+### 上傳視訊資產
+
+若要上傳視訊資產，請遵循下列步驟：
+
+1. 在數位資產資料夾或子資料夾中，導覽至您需要新增資產的位置。
+1. 按一下 **[!UICONTROL 建立]** 從工具列中選擇 **[!UICONTROL 檔案]**. <br>或者，在使用者介面上拖曳檔案。
+進一步瞭解 [上傳資產](manage-digital-assets.md#uploading-assets) 在 [!DNL Experience Manager Assets].
+
+<!-- 1. To preview a video in the card view, click the **[!UICONTROL Play]** ![play option](assets/do-not-localize/play.png) option on the video asset. You can pause or play video in the card view only. The [!UICONTROL Play] and [!UICONTROL Pause] options are not available in the list view.
+1. To preview the video in the asset details page, select **[!UICONTROL Edit]** on the card. The video plays in the native video player of the browser. You can play, pause, control the volume, and zoom the video to full screen. -->
+
+### 預覽視訊資產
+
+您可以預覽 [!DNL Assets] 使用者介面。 若要預覽視訊資產，請執行下列步驟：
+
+1. 將支援格式的視訊資產上傳至 [!DNL Experience Manager Assets]. 進一步瞭解 [支援的視訊格式](file-format-support.md#video-formats). <br>上傳後，系統會處理視訊資產，並產生預覽轉譯。
+1. 按一下資產，然後選取 ![詳細資料選項](assets/do-not-localize/details_icon.svg) **[!UICONTROL 詳細資料]**  從頂端工具列。 視訊資產會在視訊檢視器中開啟。
+1. 按一下 ![播放選項](assets/do-not-localize/play.png) 圖示加以識別。 <br>您可以播放、暫停、控制音量，以及將視訊縮放至全熒幕。
+
+針對中的現有視訊資產 [!DNL Experience Manager Assets]，您需要 **[!UICONTROL 重新處理]** 中的資產 [!DNL Experience Manager] 以啟用視訊預覽功能。 瞭解如何 [重新處理數位資產](reprocessing.md) 在 [!DNL Experience Manager].
+
+### 視訊預覽的限制
+
+* 即使產生轉譯，MXF檔案也不會顯示視訊預覽。
+* WebM檔案不會產生預覽轉譯，因為這些轉譯可由網頁瀏覽器以原生方式播放。
 
 ## 發佈視訊資產 {#publish-video-assets}
 
