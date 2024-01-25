@@ -3,9 +3,9 @@ title: 設定生產管道
 description: 了解如何設定生產管道以建置程式碼並將其部署到生產環境。
 index: true
 exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
-source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
+source-git-commit: 04c65018734f95e8245a6922d5a05c5486a4ffa4
 workflow-type: tm+mt
-source-wordcount: '1418'
+source-wordcount: '1422'
 ht-degree: 72%
 
 ---
@@ -123,18 +123,17 @@ ht-degree: 72%
 
 目標部署只會為AEM應用程式的選定部分部署程式碼。 在這樣的部署中，您可以選擇 **包含** 下列其中一種程式碼型別：
 
-* **[設定](#config)**  — 設定AEM環境、維護任務、CDN規則等的設定。
+* **設定**  — 在您的AEM環境中設定流量篩選規則的設定。
    * 檢視檔案 [包含WAF規則的流量篩選規則](/help/security/traffic-filter-rules-including-waf.md) 以瞭解如何管理存放庫中的設定，以便正確部署。
-* **[前端計畫碼](#front-end-code)**  — 為AEM應用程式的前端設定JavaScript和CSS。
+   * 執行目標部署管道時， [WAF設定](/help/security/traffic-filter-rules-including-waf.md) 將部署，前提是它們會儲存到您在管道中定義的環境、存放庫和分支。
+   * 在任何時候，每個環境只能有一個設定管道。
+* **前端計畫碼**  — 為AEM應用程式的前端設定JavaScript和CSS。
    * 有了前端流水線，給前端開發者更多的獨立性，可以加快開發進程。
    * 請參閱文件[使用前端管道開發網站](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) 了解此程序的工作原理以及需要注意的一些注意事項，以充分發揮此程序的潛力。
-* **[Web層設定](#web-tier-config)**  — 設定Dispatcher屬性以儲存、處理並傳送網頁給使用者端。
-
->[!NOTE]
->
->* 如果所選環境存在 Web 層程式碼管道，則此選項會停用。
->* 如果您將現有的完整堆疊管道部署到環境，則為同一環境建立 Web 層設定管道將忽略完整堆疊管道中的現有 Web 層設定。
-> * 在任何時候，每個環境只能有一個設定管道。
+* **Web層設定**  — 設定Dispatcher屬性以儲存、處理並傳送網頁給使用者端。
+   * 檢視檔案 [CI/CD管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipelines) 以取得更多詳細資料。
+   * 如果所選環境存在 Web 層程式碼管道，則此選項會停用。
+   * 如果您將現有的完整堆疊管道部署到環境，則為同一環境建立 Web 層設定管道將忽略完整堆疊管道中的現有 Web 層設定。
 
 選擇部署型別後，完成建立生產、目標部署管道的步驟相同。
 
@@ -166,9 +165,7 @@ ht-degree: 72%
 
 管道已儲存，您現在可以在&#x200B;**計畫概觀**&#x200B;頁面的&#x200B;**管道**&#x200B;卡上[管理您的管道](managing-pipelines.md)。
 
-執行目標部署管道時，需進行設定 [例如WAF組態](/help/security/traffic-filter-rules-including-waf.md) 將部署，前提是它們會儲存到您在管道中定義的環境、存放庫和分支。
-
-## 跳過 Dispatcher 套件 {#skip-dispatcher-packages}
+## 跳過發送器套件 {#skip-dispatcher-packages}
 
 如果您希望將 Dispatcher 套件建置為管道的一部分，但又不希望將它們發佈到建置儲存，您可以停用發佈它們，這可能會減少管道的執行時間。
 
