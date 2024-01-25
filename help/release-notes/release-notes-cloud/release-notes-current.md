@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 最新發行說明�
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 最新發行說明。'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 17903c6e44afd1742d21b7fc7dbe4d7c63fe8b6b
-workflow-type: ht
-source-wordcount: '828'
-ht-degree: 100%
+source-git-commit: fa106c2e3fec70971e2c54572199e35c24db0aa7
+workflow-type: tm+mt
+source-wordcount: '751'
+ht-degree: 63%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 100%
 
 ## 發行日期 {#release-date}
 
-[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 目前功能版本 (2023.12.0) 的發行日期是 2023 年 12 月 14 日。下一個功能版本 (2024.1.0) 規劃於 2024 年 1 月 25 日發行。
+的發行日期 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 目前功能版本(2024.1.0)為2024年1月25日。 下一個功能版本(2024.2.0)計畫於2024年2月29日發行。
 
 ## 維護版本發行說明 {#maintenance}
 
@@ -44,45 +44,41 @@ Have a look at the December 2023 Release Overview video for a summary of the fea
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
-### 早期採用者計劃 {#sites-early-adopter}
+### AEM Sites中的Extension Manager {#sites-extension-manager}
 
-**您可以利用[真實使用者監控 (RUM) 資料服務](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)**&#x200B;為 AEM as a Cloud Service 啟用用戶端彙集。
+**探索新的 [AEM Sites中的Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/)** 透過設定UI擴充功能來個人化AEM設定。
 
-真實使用者監控 (RUM) 資料服務可以更準確地反映使用者互動，確保可靠地測量網站參與度。這是深入了解頁面效能的絕佳機會。這對於使用 Adobe 管理 CDN 或非 Adobe 管理 CDN 的客戶很有幫助。此外，對於使用非 Adobe 管理 CDN 的客戶，現在可以啟用自動流量報告，而無需與 Adobe 共享任何流量報告。
+![AEM Sites中的Extension Manager](/help/assets/sites/extension-manager/homepage.png)
 
-如果您有興趣測試此新功能並分享意見反應，請使用與您的 Adobe ID 相關聯的電子郵件地址傳送電子郵件至 `aemcs-rum-adopter@adobe.com`，並在電子郵件中附上生產、階段和開發環境的網域名稱。Adobe 的產品團隊隨後會為您啟用真實使用者監控 (RUM) 資料服務。
+AEM Sites中的Extension Manager可讓開發人員和從業人員存取、管理和自訂UI擴充功能，這些擴充功能是用來增強AEM Sites的功能。
+使用Extension Manager，您可以：
 
+* 為每個執行個體啟用或停用擴充功能；
+* 設定擴充功能引數；
+* 預覽擴充功能並產生可共用的預覽連結；
+* 透過互動式示範探索UI擴充功能；
+* 透過第一方擴充功能存取Adobe的實驗性功能。
+
+我們正在積極搜尋UI擴充功能的意見與新使用案例。 如果您想要連線，請傳送電子郵件至 `uix@adobe.com`.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### 資產檢視中的新功能 {#assets-view-features}
+### 管理員檢視發行前功能 {#admin-view-prerelease}
 
-**使用 Adobe Firefly 建立 GenAI 影像**
+**預覽所有支援視訊型別的轉譯**
 
-透過整合 Adobe Firefly 以文字建立影像功能 (需要 Adobe Firefly 授權)，根據搜尋查詢建立新影像。
+Experience Manager Assets現在預設會產生所有支援視訊型別的預覽轉譯，不需要處理設定檔設定
 
-![Assets Firefly 整合](/help/assets/assets/assets-firefly-integration.png)
+### 資產檢視 {#assets-view-features}
 
-**尋找類似影像**
+**智慧標記封鎖清單**
 
-現在，您可以透過選取影像並在 Experience Manager Assets 存放庫中查看類似影像來輕鬆找到內容。
+Assets Essentials 現在允許您定義封鎖清單，其中包含上傳到存放庫時，不應當成智慧標記上傳到資產的單詞。此功能可協助您維持品牌合規性，並減少審核智慧標記的工作量。
 
-<!--
+![智慧標籤封鎖清單](/help/assets/assets/block-tags.png)
 
-* **Smart tags blocklist**: Experience Manager Assets now enables you to define a list of blocked tags. These tags are automatically removed from the auto-generated smart tags when you upload assets to the repository. This capability performs tags governance and saves a lot of time as you can add a tag to the block list and AEM Assets automatically excludes it from the list of tags for any of the assets that are added to the repository.
-
-  ![storage usage insights](/help/assets/assets/block-tags.png)
-
-
-**Video Preview**: AEM Assets now generates preview renditions of all supported video formats by default, without the need to configure a processing profile.
-
--->
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
-
-### [!DNL Experience Manager Forms] 中的新功能 {#forms-features}
-
-* **[將最適化表單與 Microsoft® SharePoint 清單連接](/help/forms/configure-submit-actions-core-components.md#submit-to-sharepoint)**：AEM Forms 提供 OOTB 整合，可將表單資料直接提交到 SharePoint 清單，讓您使用 SharePoint 清單功能。您可以將 Microsoft SharePoint 清單設定為表單資料模型的資料來源，並透過&#x200B;**使用表單資料模型提交**&#x200B;這個提交動作，將最適化表單與 SharePoint 清單連接。
 
 <!-- 
 
@@ -104,18 +100,13 @@ Have a look at the December 2023 Release Overview video for a summary of the fea
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
-### CDN 設定早期採用者計劃 {#cdn-config-early-adopter}
+### 支援Dynatrace {#dynatrace}
 
-除了最近發佈的[流量篩選規則](/help/security/traffic-filter-rules-including-waf.md) (其中包含可以選擇授權的 Web 應用程式防火牆 (WAF) 規則)，也可以使用設定管道來聲明及部署其他類型的 CDN 設定。我們很想聽聽您的使用案例，包括：
-* 301/302 用戶端重新導向
-* 將邊緣要求代理到任意來源
-* URL 轉換
-* 設定或修改要求或回應標頭
-* CDN 無法連接 AEM 時的自訂錯誤頁面
-* 透過使用者名稱/密碼進行身份驗證
-* 任何其他有用的 CDN 設定
+Dynatrace客戶可監控其AEM使用情況。 [瞭解如何](/help/implementing/cloud-manager/dynatrace.md) 請求與您的Dynatrace環境連線，以進行應用程式效能監控。 請注意，如果啟用Dynatrace，則可供所有客戶使用的New Relic APM將停止收集資料。
 
-使用您的官方電子郵件 ID 將您的回饋意見透過電子郵件寄送至：**aemcs-cdn-config-adopter@adobe.com**。
+### 使用網站主題和網站範本的前端計畫碼RDE支援：早期採用者計畫 {#rde-frontend-early-adopter}
+
+[快速開發環境(RDE)](/help/implementing/developing/introduction/rapid-development-environments.md) 現在支援的前端程式碼，根據 [網站主題](/help/sites-cloud/administering/site-creation/site-themes.md) 和 [網站範本](/help/sites-cloud/administering/site-creation/site-templates.md)，適用於早期採用者。 若使用RDE，這是使用命令列指示詞完成的，而非 [前端管道](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md). 請聯絡 **aemcs-rde-support@adobe.com** 進行試用並提供意見反應。
 
 ## Cloud Manager {#cloud-manager}
 

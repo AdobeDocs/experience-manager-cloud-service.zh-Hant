@@ -1,17 +1,17 @@
 ---
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2023.10.0 版發行說明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2023.10.0 版發行說明。'
-source-git-commit: d79335bde72a2517939e9bfc07a75ab7a8b6b0b9
+exl-id: 81a6cbd2-7101-429b-8572-2650c5bea963
+source-git-commit: 811a8f4d83a1034737c23b1707a24b52742fef55
 workflow-type: tm+mt
-source-wordcount: '921'
-ht-degree: 95%
+source-wordcount: '918'
+ht-degree: 93%
 
 ---
 
-
 # [!DNL Adobe Experience Manager] as a Cloud Service 2023.10.0 版發行說明 {#release-notes}
 
-以下章節概述 [!DNL Experience Manager] as a Cloud Service 目前 (最新) 版本的功能發行說明。
+以下章節概述 [!DNL Experience Manager] as a Cloud Service 2023.10.0 版的功能發行說明。
 
 >[!NOTE]
 >
@@ -55,7 +55,7 @@ ht-degree: 95%
 
   ![將中繼資料表單指派至資料夾](/help/assets/assets/bulk-import-source-details-onedrive.png)
 
-* **針對資料庫的跨組織權益支援**：Experience Manager Assets 現在可讓您設定在不同 IMS 組織中存取 Creative Cloud Libraries。這允許更輕鬆地在 Creative Cloud 和 Experience Manager 之間存取最新跨產品工作流程，減少創作者工作所需時間和精力。
+* **程式庫的跨組織權益支援**：Experience Manager Assets現在可讓您在其他IMS組織中設定Creative Cloud程式庫的存取權。 這允許更輕鬆地在 Creative Cloud 和 Experience Manager 之間存取最新跨產品工作流程，減少創作者工作所需時間和精力。
 
 ### [!DNL Experience Manager Assets] 中可用的搶鮮版功能 {#prerelease-features-assets}
 

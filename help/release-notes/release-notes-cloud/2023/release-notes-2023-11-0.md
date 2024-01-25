@@ -1,17 +1,17 @@
 ---
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2023.11.0 版發行說明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2023.11.0 版發行說明。'
-source-git-commit: c33874869bccae1e9837b30827a655e70636dd56
+exl-id: 19cff082-80aa-445c-9462-5e319b7fe0e9
+source-git-commit: 07a799cf374bbd1ce0fe5d85433bf12d1d5ee648
 workflow-type: tm+mt
 source-wordcount: '1286'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
-
 # [!DNL Adobe Experience Manager] as a Cloud Service 2023.11.0 版發行說明 {#release-notes}
 
-以下章節概述 [!DNL Experience Manager] as a Cloud Service 目前 (最新) 版本的功能發行說明。
+以下章節概述 [!DNL Experience Manager] as a Cloud Service 2023.11.0 版的功能發行說明。
 
 >[!NOTE]
 >
@@ -39,7 +39,7 @@ ht-degree: 97%
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
-### 早期採用者計畫 {#sites-early-adopter}
+### 早期採用者計劃 {#sites-early-adopter}
 
 **[尋找並取代內容片段中的字串](/help/sites-cloud/administering/content-fragments/managing.md#find-and-replace-find-and-replace)**：內容片段主控台為使用者提供了一種簡單直覺的方法，可一次取代出現在多個內容片段中的單一字串，以協助加快內容速度。
 
@@ -49,7 +49,7 @@ ht-degree: 97%
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### Assets檢視中的新功能 {#assets-view-features}
+### 資產檢視中的新功能 {#assets-view-features}
 
 * **內嵌在 AEM Assets 中的 Adobe Express 編輯器**：可存取 Express 的使用者現在可以直接在 AEM Assets 中使用整合在內的 Adobe Express 和 Adobe Firefly 影像編輯和建立工具，以提升內容重複使用效能並加快內容速度。
 
@@ -78,7 +78,7 @@ ht-degree: 97%
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-### 中的新功能 [!DNL Experience Manager Forms] {#forms-features}
+### [!DNL Experience Manager Forms] 中的新功能 {#forms-features}
 
 * **[核取方塊元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/checkbox.html)**：以核心元件為主的最適化表單現在可以包含核取方塊元件。可讓使用者二選一，選取或取消選取特定選項。它通常為一個小方塊，可以按一下或點選以在兩種狀態之間切換：選取和取消選取。核取方塊是一種常見的表單元素，用來表示選擇是/否或真/假。
 
@@ -100,7 +100,7 @@ ht-degree: 97%
 
 -->
 
-### 早期採用者計畫 {#forms-early-adopter}
+### 早期採用者計劃 {#forms-early-adopter}
 
 * **將最適化表單提交到 Adobe Workfront Fusion 情境**：Forms as a Cloud Service 提供開箱即用的選項，可輕鬆將最適化表單與 Adobe Workfront 連接。這簡化了將最適化表單提交到 Adobe Workfront 情境的程序，讓您在提交最適化表單時觸發 Workfront Fusion 情境。
 
@@ -122,7 +122,7 @@ ht-degree: 97%
 
 閱讀[流量篩選規則](/help/security/traffic-filter-rules-including-waf.md)，包括 WAF。請與您的 AEM 客戶團隊聯繫，以了解授權 WAF-DDoS 保護或增強安全性的相關資訊。
 
-### CDN設定早期採用者計畫 {#cdn-config-early-adopter}
+### CDN 設定早期採用者計劃 {#cdn-config-early-adopter}
 
 除了最近發行的[流量篩選規則 (包括 WAF)](/help/security/traffic-filter-rules-including-waf.md)，還有機會使用設定管道來宣告和部署其他類型的 CDN 設定。我們很想聽聽您的使用案例，包括：
 * 301/302 用戶端重新導向
