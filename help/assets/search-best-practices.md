@@ -3,10 +3,10 @@ title: 搜尋最佳實務 [!DNL Adobe Experience Manager] as a [!DNL Cloud Servi
 description: 搜尋、尋找及擷取應用程式中資產的中繼資料的最佳做法。
 contentOwner: KK
 exl-id: 446692de-5cea-4dbd-a98e-ec5177c7017e
-source-git-commit: 47003c9aa0faefc01a9935c53a5a78938c37cf66
+source-git-commit: 6397a300de13c5e4f6ee5828de1ba76a1677c227
 workflow-type: tm+mt
-source-wordcount: '2521'
-ht-degree: 3%
+source-wordcount: '2527'
+ht-degree: 2%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 3%
 
 [!DNL Adobe Experience Manager Assets] 提供強大的資產搜尋方法，協助您實現更高的內容速度。 有時候，尋找正確的資產可能會很困難且耗時。 因此，搜尋中的資產功能 [!DNL Adobe Experience Manager Assets] 是使用數位資產管理系統的關鍵所在 — 無論是供創意人員進一步使用、供業務使用者和行銷人員健全管理資產，還是DAM管理員管理。
 
-此說明檔案包含AEM搜尋的最佳實務，並搭配各種案例以協助AEM使用者執行基本到進階層級的搜尋。
+本說明檔案包含AEM搜尋最佳實務，並提供各種案例的協助，以協助AEM使用者執行基本到進階層級的搜尋。
 
 ## 存取Experience Manager搜尋 {#access-experience-manager-search}
 
@@ -251,11 +251,15 @@ When you are unsure about the title or meta description of an asset, you can use
 1. 將游標停留在資產上>按一下省略符號>選取 [!UICONTROL 尋找類似專案].
 或選取資產>導覽至右上方的省略符號>選取 [!UICONTROL 尋找類似專案].
 
-   ![尋找類似項目](assets/find-similar.png)
+   ![尋找類似專案](assets/find-similar.png)
 
 1. 請注意搜尋列。 選取資產的縮圖會出現在搜尋列上，指出您的搜尋需求。 因此，它會傳回具有類似智慧標籤的資產。
 
-**[!UICONTROL 資產檢視]** 不支援 [!UICONTROL 尋找類似專案] 選項。
+在中執行以下步驟 **[!UICONTROL 資產檢視]**：
+
+1. 依您的需求搜尋資產。
+1. 選取影像>導覽至 [!UICONTROL 尋找類似影像] 選項於頂端。
+它會帶您前往具有類似顏色和中繼資料的資產集合。
 
 ## 自訂搜尋多面向 {#custom-search-facets}
 
@@ -279,7 +283,7 @@ to be added later
 
 1. 從「資產」使用者介面，開啟資產的屬性頁面。按一下 [!UICONTROL 進階] 並按一下 [!UICONTROL 新增] 在 [!UICONTROL 針對搜尋關鍵字提升].
 2. 在「搜尋提升」方塊中，指定您要提升影像搜尋的關鍵字，然後按一下 [!UICONTROL 新增]. 您可以用相同方式指定多個關鍵字。
-3. 按一下[!UICONTROL 「儲存並關閉」]。您針對此關鍵字提升的資產會出現在最上層的搜尋結果中。
+3. 按一下 [!UICONTROL 儲存並關閉]. 您針對此關鍵字提升的資產會出現在最上層的搜尋結果中。
 
 ## 在Experience Manager中執行搜尋時的重大事項 {#notable-things}
 
@@ -415,11 +419,6 @@ The newly added assets are not indexed.
             <li> 內容片段模型
             </ul> 
         </td>
-        <td> 不支援 </td>
-    </tr>
-     <tr>
-        <td> 尋找類似項目 </td>
-        <td> 支援 </td>
         <td> 不支援 </td>
     </tr>
 </table>
