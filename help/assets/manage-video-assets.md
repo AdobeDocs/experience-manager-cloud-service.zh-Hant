@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management,Publishing,Collaboration,Video
 role: User
 exl-id: 91edce4a-dfa0-4eca-aba7-d41ac907b81e
-source-git-commit: fd1c3d1e524e5882ae04ca784b618ddba123bdd6
+source-git-commit: 4b05e8f8ae554e7c0881134ef24ca8ce35e3e2bf
 workflow-type: tm+mt
-source-wordcount: '4975'
+source-wordcount: '4976'
 ht-degree: 6%
 
 ---
@@ -41,7 +41,7 @@ ht-degree: 6%
 
 ### 預覽視訊資產
 
-您可以預覽 [!DNL Assets] 使用者介面。 若要預覽視訊資產，請執行下列步驟：
+您可以在中預覽受支援轉譯的影片 [!DNL Assets] 使用者介面。 若要預覽視訊資產，請執行下列步驟：
 
 1. 將支援格式的視訊資產上傳至 [!DNL Experience Manager Assets]. 進一步瞭解 [支援的視訊格式](file-format-support.md#video-formats). <br>上傳後，系統會處理視訊資產，並產生預覽轉譯。
 1. 按一下資產，然後選取 ![詳細資料選項](assets/do-not-localize/details_icon.svg) **[!UICONTROL 詳細資料]**  從頂端工具列。 視訊資產會在視訊檢視器中開啟。
