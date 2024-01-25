@@ -2,10 +2,10 @@
 title: 我的資產工作區檢視
 description: 「我的工作區」是一個頁面，提供可自訂的視覺化模組，以方便存取資產使用者介面的關鍵區域以及與使用者最相關的資訊。
 exl-id: 402dd3a6-44e5-4d13-97d8-1d7fa26a99e4
-source-git-commit: 701a7610780553731a6ac4c85fe3221ee3d98ae2
+source-git-commit: 2500322c5565314e84ee7989399b9130f5cd6f74
 workflow-type: tm+mt
-source-wordcount: '743'
-ht-degree: 93%
+source-wordcount: '745'
+ht-degree: 84%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 93%
 
 Assets 現在包含一個可自訂的工作區，提供 Widget 以方便存取資產使用者介面的關鍵區域以及與您最相關的資訊。此頁面可用作一站式解決方案，提供工作項目的概觀並讓您快速存取關鍵工作流程。更方便地存取這些選項可以提高您的效率和內容速度。
 
-您可以透過按一下左側導覽窗格中可用項目中的「**[!UICONTROL 我的工作區]**」來存取「我的工作區」。「我的工作區」包括各種 Widget，顯示快速存取、Insights、任務和內容 Widget。您可以根據自己的偏好設定這些 Widget 在 Workspace 中的顯示方式。
+您可以透過按一下左側導覽窗格中可用項目中的「**[!UICONTROL 我的工作區]**」來存取「我的工作區」。「我的工作區」包括各種 Widget，可顯示快速存取、Insights、任務和內容 Widget。 您可以根據自己的偏好設定這些 Widget 在 Workspace 中的顯示方式。
 
 >[!NOTE]
 >
@@ -44,7 +44,7 @@ Highlights upcoming features for Assets.
 
 1. 選取項目並按一下「**[!UICONTROL 釘選並快速存取]**」。
 
-1. 選取是否只是為了您自己、整個組織還是選定的群組而需要釘選項目。如果您選取「**[!UICONTROL 為了群組]**」，請在「**[!UICONTROL 為群組釘選]**」欄位中定義群組名稱。
+1. 選取是否只是為了您自己、整個組織還是選定的群組而需要釘選項目。如果您選取 **[!UICONTROL 針對群組]**，選擇中現有的群組名稱 **[!UICONTROL 釘選群組]** 欄位。
 
    ![為群組釘選項目](assets/pin-items-for-groups.png)
 1. 按一下「**[!UICONTROL 釘選]**」。
@@ -62,7 +62,7 @@ Highlights upcoming features for Assets.
 
 **任務**
 
-在「**[!UICONTROL 我的任務]**」標籤中顯示目前指派給您的任務清單，在「**[!UICONTROL 指派的任務]**」標籤中顯示您所建立的任務清單，以及在「**[!UICONTROL 已完成]**」標籤中顯示您已完成的任務清單。您可以選取一個任務並按一下「**[!UICONTROL 完成任務]**」來核准或拒絕任務。您也可以選取一個任務並按一下「**[!UICONTROL 開啟任務詳細資訊]**」以檢視該任務，以及核准、拒絕、編輯或刪除它。
+顯示目前指派給您的任務清單 **[!UICONTROL 我的任務]** 標籤，由您在 **[!UICONTROL 已指派任務]** 標籤，而您已在 **[!UICONTROL 已完成的任務]** 標籤。 您可以選取任務並按一下 **[!UICONTROL 完成詢問]** 核准或拒絕任務。 您也可以選取一個任務並按一下「**[!UICONTROL 開啟任務詳細資訊]**」以檢視該任務，以及核准、拒絕、編輯或刪除它。
 
 ![Workspace 中的任務](assets/tasks-workspace.png)
 

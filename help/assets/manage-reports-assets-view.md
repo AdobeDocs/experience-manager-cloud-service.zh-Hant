@@ -2,25 +2,34 @@
 title: 在資產檢視中管理報告
 description: 存取資產檢視之報告區段的資料，評估產品和功能使用情況，並得出關鍵成功量度的見解。
 exl-id: c7155459-05d9-4a95-a91f-a1fa6ae9d9a4
-source-git-commit: e6ff21ee705a1164fdf163ce4f49064d83f149d8
+source-git-commit: c9ec348d7e65f4bb69b93a39b9ad7192485d8db4
 workflow-type: tm+mt
-source-wordcount: '825'
-ht-degree: 97%
+source-wordcount: '814'
+ht-degree: 92%
 
 ---
 
 # 管理報告 {#manage-reports}
 
->[!CONTEXTUALHELP]
->id="assets_reports"
->title="報告"
->abstract="資產報告使管理員能夠查看 Adobe Experience Manager 資產檢視環境的活動。此資料提供有關使用者如何與內容和產品互動的有用資訊。指派至管理員產品設定檔的所有使用者可以存取 Insights 儀表板或建立使用者定義的報告。"
+資產報告使管理員能夠查看 Adobe Experience Manager 資產檢視環境的活動。此資料提供有關使用者如何與內容和產品互動的有用資訊。所有使用者可以存取「深入分析」儀表板，且獲指派至管理員產品設定檔的使用者可以建立使用者定義的報告。
 
-資產報告使管理員能夠查看 Adobe Experience Manager 資產檢視環境的活動。此資料提供有關使用者如何與內容和產品互動的有用資訊。
-
-## 訪問報告 {#access-reports}
+## 存取報告 {#access-reports}
 
 指派至資產檢視管理員產品設定檔的所有使用者可以在資產檢視中存取 Insights 儀表板或建立使用者定義的報告。
+
+若要存取報告，請導覽至「**[!UICONTROL 設定]**」下的「**[!UICONTROL 報告]**」。
+
+![報告](assets/reports.png)
+<!--
+In the **[!UICONTROL Reports]** screen, various components are shown in the tabular format which includes the following:
+
+* **Title**: Title of the report
+* **Type**: Determines whether the report is uploaded or downloaded to the repository
+* **Description**: Provide details of the report that was given during uploading/downloading the report
+* **Status**: Determines whether the report is completed, under progress, or deleted.
+* **Author**: Provides email of the author who has uploaded/downloaded the report.
+* **Created**: Gives information of the date when the report was generated.
+-->
 
 ## 檢視 Insights {#view-live-statistics}
 
@@ -30,11 +39,11 @@ ht-degree: 97%
 
 按一下左側導覽窗格中可用的「**[!UICONTROL 深入分析]**」以檢視以下自動產生的圖表：
 
-![Insights](assets/insights.png)
+![深入分析](assets/insights.png)
 
-* **下載**：使用折線圖表示過去 30 天或 12 個月內從資產檢視環境下載的資產數量。
+* **下載**：使用折線圖表示過去30天或12個月內從資產檢視環境下載的資產數量。
 
-* **上傳**：使用折線圖表示過去 30 天或 12 個月內上傳到資產檢視環境的資產數量。
+* **上傳**：使用折線圖表示過去30天或12個月內上傳至「資產」檢視環境的資產數量。
 
 <!--* **Asset Count by Size**: The division of count of assets based on their range of various sizes from 0 MB to 100 GB.-->
 
@@ -46,11 +55,10 @@ ht-degree: 97%
 
 * **熱門搜尋**：以表格格式檢視過去 30 天或 12 個月內，在資產檢視環境中熱門搜尋詞彙以及這些詞彙的搜尋次數。
 
-<!--
-
-* **Storage usage**: The storage usage, in gigabytes (GB), for the Assets view environment, for the last 30 days or 12 months represented using a bar chart.
-
--->
+  <!--
+   ![Insights](assets/insights1.png)
+   ![Insights](assets/insights2.png)
+   -->
 
 ## 建立下載報告 {#create-download-report}
 
@@ -62,15 +70,15 @@ ht-degree: 97%
 
 1. 指定報告的標題和說明 (選用)。
 
-1. 使用 **[!UICONTROL 選擇資料夾路徑]** 的子選單。
+1. 使用 **[!UICONTROL 選取資料夾路徑]** 的子選單。
 
-1. 選擇報告的日期間隔。
+1. 選取報告的日期間隔。
 
    >[!NOTE]
    >
    > 資產檢視會將所有本地時區轉換為世界協調時間 (UTC)。
 
-1. 在 [!UICONTROL 列] 頁籤，選擇需要在報告中顯示的列名。
+1. 在 [!UICONTROL 列] 頁籤，選取需要在報告中顯示的列名。
 
 1. 按一下&#x200B;**[!UICONTROL 建立]**。
 
@@ -106,7 +114,7 @@ ht-degree: 97%
      </tr>
      <tr>
       <td>下載日期</td>
-      <td>執行資產下載操作的日期。</td>
+      <td>執行資產下載動作的日期。</td>
      </tr>
      <tr>
       <td>作者</td>
@@ -141,11 +149,11 @@ ht-degree: 97%
 
 1. 指定報告的標題和說明 (選用)。
 
-1. 使用 **[!UICONTROL 選擇資料夾路徑]** 的子選單。
+1. 使用 **[!UICONTROL 選取資料夾路徑]** 的子選單。
 
-1. 選擇報告的日期間隔。
+1. 選取報告的日期間隔。
 
-1. 在 [!UICONTROL 列] 頁籤，選擇需要在報告中顯示的列名。
+1. 在 [!UICONTROL 列] 頁籤，選取需要在報告中顯示的列名。
 
 1. 按一下&#x200B;**[!UICONTROL 建立]**。
 
@@ -196,7 +204,7 @@ ht-degree: 97%
 
 ## 查看現有報告 {#view-report-list}
 
-[建立報告](#create-download-report)之後，您可以查看現有報告的清單並選擇以 CSV 格式下載或刪除它們。
+[建立報告](#create-download-report)之後，您可以查看現有報告的清單並選取以 CSV 格式下載或刪除它們。
 
 要查看報告清單，請瀏覽至 **[!UICONTROL 設定]** > **[!UICONTROL 報告]**。
 
@@ -213,9 +221,9 @@ ht-degree: 97%
 
 1. 瀏覽到 **[!UICONTROL 設定]** > **[!UICONTROL 報告]**。
 
-1. 選擇報告並按一下 **[!UICONTROL 下載 CSV]**。
+1. 選取報告並按一下 **[!UICONTROL 下載 CSV]**。
 
-所選報告以 CSV 格式下載。CSV 報告中顯示的列取決於您在選擇[建立報告](#create-download-report)時選擇的資料行。
+所選報告以 CSV 格式下載。CSV 報告中顯示的列取決於您在選取[建立報告](#create-download-report)時選取的資料行。
 
 ## 刪除報告 {#delete-report}
 
@@ -223,6 +231,6 @@ ht-degree: 97%
 
 1. 瀏覽到 **[!UICONTROL 設定]** > **[!UICONTROL 報告]**。
 
-1. 選擇報告並按一下 **[!UICONTROL 刪除]**。
+1. 選取報告並按一下 **[!UICONTROL 刪除]**。
 
 1. 再按一次「**[!UICONTROL 刪除]**」以進行確認。
