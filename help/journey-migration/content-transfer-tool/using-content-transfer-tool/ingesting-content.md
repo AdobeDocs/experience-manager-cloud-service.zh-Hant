@@ -2,9 +2,9 @@
 title: 將內容引入雲端服務
 description: 瞭解如何使用Cloud Acceleration Manager將移轉集中的內容擷取到目標Cloud Service例項。
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 4c8565d60ddcd9d0675822f37e77e70dd42c0c36
+source-git-commit: 281523183cecf1e74c33f58ca9ad038bba1a6363
 workflow-type: tm+mt
-source-wordcount: '2407'
+source-wordcount: '2410'
 ht-degree: 7%
 
 ---
@@ -38,7 +38,7 @@ ht-degree: 7%
    > 如果擷取正在執行，對話方塊將會指出它。 擷取一旦成功完成，就會自動開始內嵌。 如果擷取失敗或停止，擷取工作將會撤銷。
 
    * **目的地：** 選取目標環境。 此環境是擷取移轉集內容的地方。
-      * 內嵌不支援快速開發環境(RDE)目的地，即使使用者擁有存取權，也不會顯示為可能的目的地選擇。
+      * 內嵌不支援快速開發環境(RDE)或預覽型別的目的地，並且即使使用者有權存取，也不會顯示為可能的目的地選擇。
       * 雖然移轉集可同時內嵌至多個目的地，但目的地一次只能是一個執行或等待內嵌的目標。
 
    * **階層：** 選取階層。 （作者/發佈）。
