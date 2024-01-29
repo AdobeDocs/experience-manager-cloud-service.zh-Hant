@@ -1,8 +1,8 @@
 ---
 source-git-commit: 2f567d45a6ba2dfb4dd3346e8510bcb04113eefb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '264'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 # 代碼片段 {#snippets}
@@ -53,6 +53,6 @@ ht-degree: 91%
 * [提交到 OneDrive](/help/forms/configure-submit-action-onedrive.md)
 * [叫用 AEM 工作流程](/help/forms/configure-submit-action-workflow.md)
 * [提交至 Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
-* [提交至Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
-* [將最適化表單連線至Salesforce應用程式](/help/forms/oauth2-client-credentials-flow-for-server-to-server-integration.md)
-* [將最適化表單連線至Microsoft® Dynamics OData](/help/forms/ms-dynamics-odata-configuration.md)
+* [提交至 Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
+* [將最適化表單連接到 Salesforce 應用程式](/help/forms/oauth2-client-credentials-flow-for-server-to-server-integration.md)
+* [將最適化表單連接到 Microsoft® Dynamics OData](/help/forms/ms-dynamics-odata-configuration.md)
