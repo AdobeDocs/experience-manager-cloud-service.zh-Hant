@@ -3,9 +3,9 @@ title: ' [!DNL Workfront for Experience Manager enhanced connector] 版發行說
 description: ' [!DNL Workfront for Experience Manager enhanced connector] 版發行說明'
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
 source-git-commit: b1c5df329e45128704ae82f49673c6a755a61a73
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1573'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -15,27 +15,27 @@ ht-degree: 89%
 
 ## 發行日期 {#release-date}
 
-最新版本1.9.16的發行日期 [!DNL Workfront for Experience Manager enhanced connector] 是2024年1月19日。
+[!DNL Workfront for Experience Manager enhanced connector] 的最新版本 1.9.16 發布日期是 2024 年 1 月 19 日。
 
 ## 版本重點 {#release-highlights}
 
 [!DNL Workfront for Experience Manager enhanced connector] 的最新版本包括以下錯誤修復：
 
-* 此 [!DNL Workfront] 中的設定 [!DNL CRX DE] 目前未儲存 `project ID`，導致套用唯讀許可權時發生錯誤。 進一步瞭解如何 [設定許可權](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/integrations/workfront-connector-configure.html#linked-folders).
+* [!DNL CRX DE] 中的 [!DNL Workfront] 設定目前不儲存 `project ID`，導致套用唯讀權限時發生錯誤。詳細了解如何[設定權限](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/integrations/workfront-connector-configure.html#linked-folders)。
 
-* 沒有公開檔案說明如何將自訂屬性新增到立即可用的索引定義。 進一步瞭解 [新增自訂屬性](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/integrations/workfront-connector-configure.html#metadata-schema-mapping).
+* 沒有關於如何將自訂屬性新增至開箱即用索引定義的公開文件。深入瞭解[新增自訂屬性](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/integrations/workfront-connector-configure.html#metadata-schema-mapping)。
 
-* 刪除增強型聯結器上的連線設定會大幅影響事件訂閱和其他儲存的設定，導致它們指向舊的URL。
+* 刪除增強型連接器上的連線設定會明顯影響事件訂閱和其他已儲存的設定，導致它們指向舊 URL。
 
-* 安裝Forms附加元件套件不會安裝 **[!UICONTROL 切換路由器]**，導致失敗 [!DNL WFEC AMS environment Toggle] 功能。
+* 安裝表單附加套件不會安裝&#x200B;**[!UICONTROL 切換路由器]**，導致 [!DNL WFEC AMS environment Toggle] 功能失敗。
 
-* 在EWC設定上啟用事件訂閱會導致以下專案重複的API呼叫失敗： `HTTP 400` 設定時發生錯誤 [!DNL Workfront] 第1次增強型聯結器。
+* 在 EWC 設定上啟用事件訂閱會導致重複 API 呼叫失敗，並在第一次設定 [!DNL Workfront] 增強型連接器時出現 `HTTP 400` 錯誤。
 
-* 在Workfront中刪除連結資料夾資產的評論時，無法在AEM上找到連結的資料夾路徑。
+* 在 Workfront 中刪除連結資料夾資源上的註釋無法在 AEM 上找到連結資料夾路徑。
 
-* AEM對大型檔案資產的支援不足導致4位元組大小問題。
+* AEM 中對大檔案資源的支援不足會導致 4 位元組大小問題。
 
-* 已連結資料夾、檔案更新和附註更新中的關鍵流程沒有請求時間處理。
+* 連結資料夾、文件更新和註釋更新中的關鍵流程無需請求時間處理。
 
 >[!NOTE]
 >

@@ -3,9 +3,9 @@ title: 郵件服務的 OAuth2 支援
 description: Adobe Experience Manager as a Cloud Service 對郵件服務的 Oauth2 支援
 exl-id: 93e7db8b-a8bf-4cc7-b7f0-cda481916ae9
 source-git-commit: a230efaa58cb00e8a0c0e2b23f0cc07462cc658b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '680'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -164,8 +164,8 @@ AEM as a Cloud Service 為其整合的郵件服務提供 OAuth2 支援，以允�
    }
    ```
 
-1. 對於 outlook，`smtp.host` 設定值為 `smtp.office365.com`
-1. 在執行階段，傳入 `refreshToken values` 和 `clientSecret` 使用Cloud Manager變數API的秘密，如所述 [此處](/help/implementing/deploying/configuring-osgi.md#setting-values-via-api) 或透過使用 [Cloud Manager ，可新增變數。](/help/implementing/cloud-manager/environment-variables.md) 變數的值 `SECRET_SMTP_OAUTH_REFRESH_TOKEN`  和 `SECRET_SMTP_OAUTH_CLIENT_SECRET` 應加以定義。
+1. 對於 Outlook，`smtp.host` 設定值為 `smtp.office365.com`
+1. 在執行階段時，使用 Cloud Manager 變數 API (如[此處](/help/implementing/deploying/configuring-osgi.md#setting-values-via-api)所述) 或使用 [Cloud Manager 新增變數來傳入 `refreshToken values` 和 `clientSecret` 金鑰。](/help/implementing/cloud-manager/environment-variables.md)應該定義變數 `SECRET_SMTP_OAUTH_REFRESH_TOKEN` 和 `SECRET_SMTP_OAUTH_CLIENT_SECRET` 的值。
 
 ### 疑難排解 {#troubleshooting}
 

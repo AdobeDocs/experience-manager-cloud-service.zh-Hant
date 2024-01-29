@@ -4,9 +4,9 @@ description: 以下是 AEM as a Cloud Service 中 Cloud Manager 2024.1.0 的發�
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
 source-git-commit: 06f534e6541bd04e005f3acf1edbb3e372c1cd0d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '673'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -25,8 +25,8 @@ AEM as a Cloud Service 中的 Cloud Manager 版本 2024.1.0 發行日期是 2024
 
 ## 新增功能 {#what-is-new}
 
-* Cloud Manager現在不僅會驗證主要伺服器的 [憑證，](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md) 但也適用於中繼憑證。
-* CDN [記錄檔](/help/implementing/cloud-manager/manage-logs.md) 現在會以壓縮格式傳回。
+* Cloud Manager 現在不僅會驗證主[憑證](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)的到期日期，還會驗證中間憑證的到期日期。
+* CDN [記錄](/help/implementing/cloud-manager/manage-logs.md) 現在會以壓縮格式傳回。
 
 ## 早期採用計劃 {#early-adoption}
 
@@ -69,5 +69,5 @@ AEM as a Cloud Service 中的 Cloud Manager 版本 2024.1.0 發行日期是 2024
 
 ## 錯誤修正 {#bug-fixes}
 
-* 已更正錯誤，如果設定檔案的位置未正確設定，則設定管道將在建置步驟失敗，並出現不明確的錯誤訊息。 錯誤訊息現在已清除，並指示使用者應檢查組態檔的位置是否正確。
-* 當建置步驟以狀態完成時 `FAILED` 由於 `BUILD_MAVEN_TRANSFER_ARTIFACT_ERROR`，現在會正確描述為由於與目的地分支合併衝突而導致的錯誤。
+* 如果設定檔的位置設定不正確，設定管道將在建置步驟失敗並顯示不明確的錯誤訊息，這一錯誤已修正。錯誤訊息現在已清楚顯示，並指示使用者應檢查設定檔的位置是否正確。
+* 當建置步驟由於 `BUILD_MAVEN_TRANSFER_ARTIFACT_ERROR` 而以 `FAILED` 狀態完成時，現在可以正確地將其描述為由於與目標分支的合併衝突而導致的錯誤。
