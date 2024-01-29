@@ -2,10 +2,10 @@
 title: AEM 中 Universal Editor 快速入門
 description: 了解如何存取 Universal Editor，以及如何開始檢測您的第一個 AEM 應用程式以使用它。
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
-source-git-commit: 453cbaeabd28223cac5e732a551aa71f5a425839
+source-git-commit: f9d584d7b117c24224079f581802f5f126890304
 workflow-type: tm+mt
-source-wordcount: '903'
-ht-degree: 71%
+source-wordcount: '871'
+ht-degree: 73%
 
 ---
 
@@ -104,8 +104,6 @@ X-Frame-Options：SAMEORIGIN 禁止在 iframe 中呈現 AEM 頁面。移除標�
 ## 檢測頁面 {#instrument-page}
 
 Universal Editor 服務需要[統一資源名稱 (URN)](https://en.wikipedia.org/wiki/Uniform_Resource_Name) 來識別和使用正確的後端系統來處理應用程式中正在編輯的內容。因此，需要 URN 模式將內容對應回內容資源。
-
-新增至頁面的檢測屬性主要包含 [HTMLMicrodata，](https://developer.mozilla.org/en-US/docs/Web/HTML/Microdata) 產業標準，也可用來讓HTML更具語意、讓HTML檔案可建立索引等等。
 
 ### 建立連線 {#connections}
 
