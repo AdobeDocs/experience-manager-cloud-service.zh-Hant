@@ -9,7 +9,7 @@ user-guide-title: AEM as a Cloud Service
 source-git-commit: 796dbcfefc6ed5e1b937a0c45ec1b3987c3c2af3
 workflow-type: tm+mt
 source-wordcount: '4615'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -611,12 +611,12 @@ ht-degree: 98%
             + [設定重新導向頁面或感謝訊息](/help/forms/configure-redirect-page-or-thank-you-message.md)
             + [建立具有可重複區段的表單](/help/forms/create-forms-repeatable-sections.md)
             + [為最適化表單設定提交動作](/help/forms/configure-submit-actions-core-components.md)
-            + [提交最適化表單至Azure Blob儲存體](/help/forms/configure-submit-action-azure-blob-storage.md)
-            + [提交最適化表單至Microsoft® OneDrive](/help/forms/configure-submit-action-onedrive.md)
-            + [為最適化表單設定SharePoint儲存空間](/help/forms/configure-submit-action-sharepoint.md)
-            + [將AEM最適化表單與AEM Workflow整合](/help/forms/configure-submit-action-workflow.md)
-            + [設定最適化Forms的提交至REST端點提交動作](/help/forms/configure-submit-action-restpoint.md)
-            + [為最適化表單設定傳送電子郵件提交動作](/help/forms/configure-submit-action-send-email.md)
+            + [將最適化表單提交至 Azure Blob 儲存體](/help/forms/configure-submit-action-azure-blob-storage.md)
+            + [將最適化表單提交至 Microsoft® OneDrive](/help/forms/configure-submit-action-onedrive.md)
+            + [為最適化表單設定 SharePoint 儲存空間](/help/forms/configure-submit-action-sharepoint.md)
+            + [將 AEM 最適化表單與 AEM 工作流程整合](/help/forms/configure-submit-action-workflow.md)
+            + [設定提交到最適化表單的 REST 端點提交動作](/help/forms/configure-submit-action-restpoint.md)
+            + [設定最適化表單的傳送電子郵件提交動作](/help/forms/configure-submit-action-send-email.md)
             + [在最適化表單中使用 Google reCAPTCHA](/help/forms/captcha-adaptive-forms-core-components.md)
             + [在最適化表單中新增自訂的錯誤處理常式](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
             + [為以核心元件為主的最適化表單新增地區設定](/help/forms/supporting-new-language-localization-core-components.md)
@@ -887,7 +887,7 @@ ht-degree: 98%
          + [建立生產方案](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
          + [沙箱方案](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)
          + [建立沙箱方案](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md)
-         + [管理和編輯程式](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)
+         + [管理和編輯程序](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)
          + [休眠環境](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md)
       + 建立 AEM 應用程式專案 {#create-application-project}
          + [專案建立精靈](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md)
@@ -944,7 +944,7 @@ ht-degree: 98%
          + [管理 IP 允許清單](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md)
       + [授權儀表板](/help/implementing/cloud-manager/license-dashboard.md)
       + [了解雲端服務內容要求](/help/implementing/cloud-manager/content-requests.md)
-      + [CDN效能儀表板](/help/implementing/cloud-manager/cdn-performance.md)
+      + [CDN 效能儀表板](/help/implementing/cloud-manager/cdn-performance.md)
       + [Cloud Manager 常見問題集](/help/implementing/cloud-manager/faqs.md)
    + 為 AEM as a Cloud Service 開發 {#developing}
       + [AEM 專案結構](/help/implementing/developing/introduction/aem-project-content-package-structure.md)
@@ -1014,7 +1014,7 @@ ht-degree: 98%
          + [為元件啟用 JSON 匯出](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html)
          + [啟動整合](/help/implementing/developing/hybrid/launch-integration.md)
          + [SPA 參考文件](/help/implementing/developing/hybrid/reference-materials.md)
-         + [不允許透過Sling模型匯出工具來序列化ResourceResolvers](/help/implementing/developing/hybrid/disallow-the-serialization-of-resourceresolvers-via-sling-model-exporter.md)
+         + [禁止透過 Sling 模型匯出工具序列化 ResourceResolvers](/help/implementing/developing/hybrid/disallow-the-serialization-of-resourceresolvers-via-sling-model-exporter.md)
    + 開發人員工具 {#developer-tools}
       + [開發人員模式](/help/implementing/developing/tools/developer-mode.md)
       + [Eclipse 適用的 AEM 開發人員工具](/help/implementing/developing/tools/eclipse.md)
