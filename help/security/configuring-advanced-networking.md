@@ -2,10 +2,10 @@
 title: 為 AEM as a Cloud Service 設定進階網路
 description: 了解如何為 AEM as a Cloud Service 設定進階網路功能，例如 VPN 或彈性或專用輸出 IP 地址等
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
-source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
-workflow-type: ht
-source-wordcount: '3526'
-ht-degree: 100%
+source-git-commit: dfeeaca8341abec5d4fd518957baf6936a21aea3
+workflow-type: tm+mt
+source-wordcount: '3540'
+ht-degree: 99%
 
 ---
 
@@ -350,6 +350,7 @@ VPN 允許從著作、發佈或預覽連線到內部部署基礎結構或資料�
 
 * 支援僅限於單一 VPN 連線
 * Splunk 轉送功能無法透過 VPN 連線提供。
+* DNS解析器必須列在閘道位址空間中，才能解析私人主機名稱。
 
 ### 建立 {#vpn-creation}
 

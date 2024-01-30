@@ -4,17 +4,17 @@ description: 瞭解AEMas a Cloud Service支援與Adobe Campaign整合。
 feature: Administering
 role: Admin
 exl-id: 23874955-bdf3-41be-8a06-53d2afdd7f2b
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: c4daf04d5520da1e646f35ba72c9f53cb1d97d36
 workflow-type: tm+mt
-source-wordcount: '173'
-ht-degree: 1%
+source-wordcount: '159'
+ht-degree: 0%
 
 ---
 
 
 # 將AEMas a Cloud Service與Adobe Campaign整合 {#integrating-campaign}
 
-瞭解AEMas a Cloud Service支援與Adobe Campaign整合。
+瞭解AEMas a Cloud Service對Adobe Campaign整合的支援。
 
 >[!NOTE]
 >
