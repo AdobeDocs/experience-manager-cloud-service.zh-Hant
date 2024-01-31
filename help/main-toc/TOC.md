@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的運作方式以及該軟體可以為您做哪些事。
 breadcrumb-title: 使用手冊
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 796dbcfefc6ed5e1b937a0c45ec1b3987c3c2af3
+source-git-commit: b63dc036834210a6fdfe856c1972ede4888b9758
 workflow-type: tm+mt
-source-wordcount: '4615'
+source-wordcount: '4619'
 ht-degree: 99%
 
 ---
@@ -1119,7 +1119,7 @@ ht-degree: 99%
       + [AEM 中 Universal Editor 快速入門](/help/implementing/universal-editor/getting-started.md)
       + [Universal Editor 開發人員概觀](/help/implementing/universal-editor/developer-overview.md)
       + [屬性和項目類型](/help/implementing/universal-editor/attributes-types.md)
-      + [欄位類型](/help/implementing/universal-editor/field-types.md)
+      + [模型定義、欄位和元件型別](/help/implementing/universal-editor/field-types.md)
       + [Universal Editor 驗證](/help/implementing/universal-editor/authentication.md)
       + [使用 Universal Editor 進行本機 AEM 開發](/help/implementing/universal-editor/local-dev.md)
       + [Universal Editor 呼叫](/help/implementing/universal-editor/calls.md)

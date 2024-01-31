@@ -1,95 +1,298 @@
 ---
-title: 欄位類型
-description: 透過如何檢測您自己的應用程式的範例，瞭解通用編輯器在元件邊欄中可以編輯的不同欄位型別。
+title: 模型定義、欄位和元件型別
+description: 透過範例瞭解屬性邊欄中通用編輯器可編輯的欄位和元件型別。 瞭解如何建立模型定義並連結至元件，以裝備您自己的應用程式。
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
-source-git-commit: 7ef3efa6e074778b7b3e3a8159056200b2663b30
+source-git-commit: c721e2f5f14e9d1c069e1dd0a00609980db6bd9d
 workflow-type: tm+mt
-source-wordcount: '358'
-ht-degree: 6%
+source-wordcount: '1000'
+ht-degree: 11%
 
 ---
 
 
-# 欄位類型 {#field-types}
+# 模型定義、欄位和元件型別 {#field-types}
 
-透過如何檢測您自己的應用程式的範例，瞭解通用編輯器在元件邊欄中可以編輯的不同欄位型別。
+透過範例瞭解屬性邊欄中通用編輯器可編輯的欄位和元件型別。 瞭解如何建立模型定義並連結至元件，以裝備您自己的應用程式。
 
 {{universal-editor-status}}
 
 ## 概觀 {#overview}
 
-調整您自己的應用程式以搭配通用編輯器使用時，您必須檢測元件，並定義元件可在編輯器的元件邊欄中操作的資料型別。
+調整您自己的應用程式以與通用編輯器搭配使用時，您必須檢測元件，並定義元件可在編輯器的屬性邊欄中操作的欄位和元件型別。 若要這麼做，請建立模型並從元件連結至模型。
 
-本檔案提供您可以使用的欄位型別概覽以及設定範例。
+本檔案提供模型定義、欄位和可用元件型別的概觀，以及設定範例。
 
 >[!TIP]
 >
 >如果您不熟悉如何針對通用編輯器檢測您的應用程式，請參閱檔案 [適用於AEM開發人員的通用編輯器概觀。](/help/implementing/universal-editor/developer-overview.md)
 
-## 布林值 {#boolean}
+## 模型定義結構 {#model-structure}
 
-布林欄位會儲存轉譯為核取方塊的簡單true/false值。
+若要透過通用編輯器中的屬性邊欄設定元件，模型定義必須存在且連結至元件。
 
-### 範例 {#sample-boolean}
+模型定義是JSON結構，從模型的陣列開始。
+
+```json
+[
+  {
+    "id": "model-id",        // must be unique
+    "fields": []             // array of fields which shall be rendered in the properties rail
+  }
+]
+```
+
+請參閱 **[欄位](#fields)** 一節，以取得如何定義 `fields` 陣列。
+
+若要將模型定義與元件一起使用， `data-aue-model` 屬性可供使用。
+
+```html
+<div data-aue-resource="urn:datasource:/content/path" data-aue-type="component"  data-aue-model="model-id">Click me</div>
+```
+
+## 載入模型定義 {#loading-model}
+
+建立模型後，可作為外部檔案參照。
+
+```html
+<script type="application/vnd.adobe.aue.model+json" src="<url-of-model-definition>"></script>
+```
+
+或者，您也可以線上上定義模型。
+
+```html
+<script type="application/vnd.adobe.aue.model+json">
+  { ... model definition ... }
+</script>
+```
+
+## 欄位 {#fields}
+
+欄位物件具有下列型別定義。
+
+| 設定 | 數值類型 | 說明 | 必填 |
+|---|---|---|---|
+| `component` | `ComponentType` | 元件的轉譯器 | 是 |
+| `name` | `string` | 應儲存資料的屬性 | 是 |
+| `label` | `FieldLabel` | 欄位標籤 | 是 |
+| `description` | `FieldDescription` | 欄位說明 | 否 |
+| `placeholder` | `string` | 欄位預留位置 | 否 |
+| `value` | `FieldValue` | 預設值 | 否 |
+| `valueType` | `ValueType` | 標準驗證，可以是 `string`， `string[]`， `number`， `date`， `boolean` | 否 |
+| `required` | `boolean` | 欄位是否為必填欄位 | 否 |
+| `readOnly` | `boolean` | 欄位是否為唯讀 | 否 |
+| `hidden` | `boolean` | 預設為隱藏欄位 | 否 |
+| `condition` | `RulesLogic` | 顯示或隱藏欄位的規則 | 否 |
+| `multi` | `boolean` | 此欄位是否為多個欄位 | 否 |
+| `validation` | `ValidationType` | 欄位的驗證規則 | 否 |
+| `raw` | `unknown` | 元件可使用的原始資料 | 否 |
+
+### 元件型別 {#component-types}
+
+以下是可用於呈現欄位的元件型別。
+
+#### AEM標籤 {#aem-tag}
+
+AEM標籤元件型別會啟用AEM標籤選擇器，其可用來將標籤附加至元件。
+
+##### 範例 {#sample-aem-tag}
 
 ```json
 {
-  "fields": [   
-   {
+  "id": "aem-tag-picker",
+  "fields": [
+    {
+      "component": "aem-tag",
+      "label": "AEM Tag Picker",
+      "name": "cq:tags",
+      "valueType": "string"
+    }
+  ]
+}
+```
+
+##### 螢幕擷圖 {#screenshot-aem-tag}
+
+![AEM標籤元件型別的熒幕擷圖](assets/component-types/aem-tag-picker.png)
+
+#### AEM內容 {#aem-content}
+
+AEM內容元件型別會啟用AEM內容選擇器，其可用於設定內容參照。
+
+##### 範例 {#sample-aem-content}
+
+```json
+{
+  "id": "aem-content-picker",
+  "fields": [
+    {
+      "component": "aem-content",
+      "name": "reference",
+      "value": "",
+      "label": "AEM Content Picker",
+      "valueType": "string"
+    }
+  ]
+}
+```
+
+##### 螢幕擷圖 {#screenshot-aem-content}
+
+![AEM內容元件型別的熒幕擷圖](assets/component-types/aem-content-picker.png)
+
+#### 布林值 {#boolean}
+
+布林值元件型別會儲存簡單的true/false值，呈現為切換按鈕。 它提供額外的驗證型別。
+
+| 驗證類型 | 數值類型 | 說明 | 必填 |
+|---|---|---|---|
+| `customErrorMsg` | `string` | 如果輸入的值不是布林值，則會顯示的訊息 | 否 |
+
+##### 範例 {#sample-boolean}
+
+```json
+{
+  "id": "boolean",
+  "fields": [
+    {
       "component": "boolean",
+      "label": "Boolean",
+      "name": "boolean",
+      "valueType": "boolean"
+    }
+  ]
+}
+```
+
+```json
+{
+  "id": "another-boolean",
+  "fields": [
+    {
+      "component": "boolean",
+      "label": "Boolean",
+      "name": "boolean",
       "valueType": "boolean",
-      "name": "field1",
-      "label": "Boolean Field",
-      "description": "This is a boolean field.",
-      "required": true,
-      "placeholder": null,
       "validation": {
-        "customErrorMsg": "This is an error."
+        "customErrorMsg": "Think, McFly. Think!"
       }
     }
   ]
 }
 ```
 
-## 核取方塊群組 {#checkbox-group}
+##### 螢幕擷圖 {#screenshot-boolean}
 
-與布林值類似，核取方塊群組允許選取多個true/false專案。
+![布林值元件型別的熒幕擷圖](assets/component-types/boolean.png)
 
-### 範例 {#sample-checkbox-group}
+#### 核取方塊群組 {#checkbox-group}
+
+與布林值類似，核取方塊群組元件型別允許選取多個true/false專案，呈現為多個核取方塊。
+
+##### 範例 {#sample-checkbox-group}
 
 ```json
 {
-  "fields": [   
-   {
+  "id": "checkbox-group",
+  "fields": [
+    {
       "component": "checkbox-group",
-      "valueType": "string-array",
-      "name": "field1",
       "label": "Checkbox Group",
-      "description": "This is a checkbox group.",
-      "required": true,
-      "placeholder": null,
+      "name": "checkbox",
+      "valueType": "string[]",
       "options": [
-        { "name": "First option", "value": "one" },
-        { "name": "Second option", "value": "two" },
-        { "name": "Third option", "value": "three" }
+        { "name": "Option 1", "value": "option1" },
+        { "name": "Option 2", "value": "option2" }
       ]
     }
   ]
 }
 ```
 
-## 日期時間 {#date-time}
+#### 螢幕擷圖 {#screenshot-checkbox-group}
 
-日期時間欄位可指定日期或時間或是兩者的組合。
+![核取方塊群組元件型別的熒幕擷圖](assets/component-types/checkbox-group.png)
 
-### 範例 {#sample-date-time}
+#### 容器 {#container}
+
+容器元件型別允許將元件分組。 它提供額外設定。
+
+| 設定 | 數值類型 | 說明 | 必填 |
+|---|---|---|---|
+| `collapsible` | `boolean` | 容器是否可摺疊 | 否 |
+
+##### 範例 {#sample-container}
+
+```json
+ {
+  "id": "container",
+  "fields": [
+    {
+      "component": "container",
+      "label": "Container",
+      "name": "container",
+      "valueType": "string",
+      "collapsible": true,
+      "fields": [
+        {
+          "component": "text-input",
+          "label": "Simple Text 1",
+          "name": "text",
+          "valueType": "string"
+        },
+        {
+          "component": "text-input",
+          "label": "Simple Text 2",
+          "name": "text2",
+          "valueType": "string"
+        }
+      ]
+    }
+  ]
+}
+```
+
+##### 螢幕擷圖 {#screenshot-container}
+
+![容器元件型別的熒幕擷圖](assets/component-types/container.png)
+
+#### 日期時間 {#date-time}
+
+日期時間元件型別可指定日期、時間或其組合。 它提供其他設定。
+
+| 設定 | 數值類型 | 說明 | 必填 |
+|---|---|---|---|
+| `displayFormat` | `string` | 日期字串顯示格式 | 是 |
+| `valueFormat` | `string` | 儲存日期字串的格式 | 是 |
+
+此外，還提供其他驗證型別。
+
+| 驗證類型 | 數值類型 | 說明 | 必填 |
+|---|---|---|---|
+| `customErrorMsg` | `string` | 訊息將在發生以下情況時顯示 `valueFormat` 不符合 | 否 |
+
+##### 範例 {#sample-date-time}
 
 ```json
 {
-  "fields": [   
-      {
+  "id": "date-time",
+  "fields": [
+    {
       "component": "date-time",
-      "valueType": "date-time",
+      "label": "Date & Time",
+      "name": "date",
+      "valueType": "date"
+    }
+  ]
+}
+```
+
+```json
+{
+  "id": "another-date-time",
+  "fields": [
+    {
+      "component": "date-time",
+       "valueType": "date-time",
       "name": "field1",
       "label": "Date Time",
       "description": "This is a date time field that stores both date and time.",
@@ -133,15 +336,103 @@ ht-degree: 6%
 }
 ```
 
-## 數字 {#number}
+##### 螢幕擷圖 {#screenshot-date-time}
 
-數字欄位允許輸入數字。
+![日期時間元件型別的熒幕擷圖](assets/component-types/date-time.png)
 
-### 範例 {#sample-number}
+#### 多選 {#multiselect}
+
+多選元件型別會在下拉式選單中顯示多個可供選取的專案，包括將可選取元素分組的功能。
+
+##### 範例 {#sample-multiselect}
 
 ```json
 {
-  "fields": [   
+  "id": "multiselect",
+  "fields": [
+    {
+      "component": "multiselect",
+      "name": "multiselect",
+      "label": "Multi Select",
+      "valueType": "string",
+      "options": [
+        { "name": "Option 1", "value": "option1" },
+        { "name": "Option 2", "value": "option2" }
+      ]
+    }
+  ]
+}
+```
+
+```json
+{
+  "id": "multiselect-grouped",
+  "fields": [
+    {
+      "component": "multiselect",
+      "name": "property",
+      "label": "Multiselect field",
+      "valueType": "string",
+      "required": true,
+      "maxSize": 2,
+      "options": [
+        {
+          "name": "Theme",
+          "children": [
+            { "name": "Light", "value": "light" },
+            { "name": "Dark",  "value": "dark" }
+          ]
+        },
+        {
+          "name": "Type",
+          "children": [
+            { "name": "Alpha", "value": "alpha" },
+            { "name": "Beta", "value": "beta" },
+            { "name": "Gamma", "value": "gamma" }
+          ]
+        }
+      ]
+    }
+  ]
+}
+```
+
+##### 螢幕擷圖 {#screenshot-multiselect}
+
+![多選元件型別的熒幕擷圖](assets/component-types/multiselect.png)
+![包含群組的多重選取元件型別熒幕擷圖](assets/component-types/multiselect-group.png)
+
+#### 數字 {#number}
+
+數字元件型別允許輸入數字。 它提供額外的驗證型別。
+
+| 驗證類型 | 數值類型 | 說明 | 必填 |
+|---|---|---|---|
+| `numberMin` | `number` | 允許的最小數量 | 否 |
+| `numberMax` | `number` | 允許的最大數量 | 否 |
+| `customErrorMsg` | `string` | 訊息將在發生以下情況時顯示 `numberMin` 或 `numberMax` 不符合 | 否 |
+
+##### 範例 {#sample-number}
+
+```json
+{
+  "id": "number",
+  "fields": [
+    {
+      "component": "number",
+      "name": "number",
+      "label": "Number",
+      "valueType": "number",
+      "value": 0
+    }
+  ]
+}
+```
+
+```json
+{
+  "id": "another-number",
+  "fields": [
    {
       "component": "number",
       "valueType": "number",
@@ -151,189 +442,239 @@ ht-degree: 6%
       "required": true,
       "placeholder": null,
       "validation": {
-        "numberMin": null,
-        "numberMax": null,
-        "customErrorMsg": "Please don't do that."
+        "numberMin": 0,
+        "numberMax": 88,
+        "customErrorMsg": "You also need 1.21 gigawatts."
       }
     }
   ]
 }
 ```
 
-## 選項按鈕群組 {#radio-group}
+##### 螢幕擷圖 {#screenshot-number}
 
-單選按鈕群組允許從多個選項中進行互斥選取，這些選項呈現為類似於核取方塊群組的群組。
+![數字元件型別的熒幕擷圖](assets/component-types/number.png)
 
-### 範例 {#sample-radio-group}
+#### 選項按鈕群組 {#radio-group}
+
+單選按鈕群組元件型別允許從多個選項中進行互斥選取，這些選項呈現為類似於核取方塊群組的群組。
+
+##### 範例 {#sample-radio-group}
 
 ```json
 {
-  "fields": [   
-   {
+  "id": "radio-group",
+  "fields": [
+    {
       "component": "radio-group",
-      "valueType": "string",
-      "name": "field1",
       "label": "Radio Group",
-      "description": "This is a radio group.",
-      "required": true,
-      "placeholder": null,
+      "name": "radio",
+      "valueType": "string",
       "options": [
-        { "name": "Option One", "value": "one" },
-        { "name": "Option Two", "value": "two" },
-        { "name": "Option Three", "value": "three" }
+        { "name": "Option 1", "value": "option1" },
+        { "name": "Option 2", "value": "option2" }
       ]
     }
   ]
 }
 ```
 
-## 參考 {#reference}
+##### 螢幕擷圖 {#screenshot-radio-group}
 
-參照允許指定另一個資料物件作為目前物件的參照。
+![選項群組元件型別的熒幕擷圖](assets/component-types/radio.png)
 
-## 選擇 {#select}
+#### 參考 {#reference}
 
-選取「 」即可在下拉式選單中選取一或多個預先定義的選項。
+參照元件型別允許參照目前物件中的其他資料物件。
 
-### 範例 {#sample-select}
-
-```json
-{
-  "fields": [   
-   {
-      "component": "select",
-      "valueType": "string",
-      "name": "field1",
-      "label": "Select",
-      "description": "This is a select.",
-      "required": true,
-      "placeholder": null,
-      "options": [
-        { "name": "Option One", "value": "one" },
-        { "name": "Option Two", "value": "two" },
-        { "name": "Option Three", "value": "three" }
-      ],
-      "emptyOption": true
-    }
-  ]
-}
-```
-
-## 文字區域 {#text-area}
-
-文字區域允許多行文字輸入。
-
-### 範例 {#sample-text-area}
+##### 範例 {#sample-reference}
 
 ```json
 {
-  "fields": [   
-   {
-      "component": "text-area",
-      "valueType": "string",
-      "name": "field1",
-      "label": "Text Area",
-      "description": "This is a text area.",
-      "required": true,
-      "multi": true,
-      "placeholder": null,
-      "mimeType": "text/x-markdown"
-    }
-  ]
-}
-```
-
-## 文字輸入 {#text-input}
-
-文字輸入允許單行文字輸入。
-
-### 範例 {#sample-text-input}
-
-```json
-{
-  "fields": [   
-   {
-      "component": "text-input",
-      "valueType": "string",
-      "name": "field1",
-      "label": "Text Input",
-      "description": "This is a text input.",
-      "required": true,
-      "multi": true,
-      "placeholder": null
-    },
+  "id": "reference",
+  "fields": [
     {
-      "component": "text-input",
-      "valueType": "string",
-      "name": "field2",
-      "label": "Another Text Input",
-      "description": "This is a text input with validation.",
-      "required": true,
-      "multi": true,
-      "placeholder": null,
-      "validation": {
-        "minLength": 5,
-        "maxLength": 10,
-        "regExp": "^foo:.*",
-        "customErrorMsg": "I'm sorry, Dave. I can't do that."
-      }
+      "component": "reference",
+      "label": "Reference",
+      "name": "reference",
+      "valueType": "string"
     }
   ]
 }
 ```
 
-## 標籤 {#tab}
+##### 螢幕擷圖 {#screenshot-reference}
 
-索引標籤可讓您將其他輸入欄位分組在多個索引標籤上，以改善作者的版面配置組織。
+![參考元件型別的熒幕擷圖](assets/component-types/reference.png)
+
+#### 選取 {#select}
+
+選取元件型別可讓您從下拉式選單中的預先定義選項清單中選取單一選項。
+
+##### 範例 {#sample-select}
+
+```json
+{
+  "id": "select",
+  "fields": [
+    {
+      "component": "select",
+      "label": "Select",
+      "name": "select",
+      "valueType": "string",
+      "options": [
+        { "name": "Option 1", "value": "option1" },
+        { "name": "Option 2", "value": "option2" }
+      ]
+    }
+  ]
+}
+```
+
+##### 螢幕擷圖 {#screenshot-select}
+
+![選取元件型別的熒幕擷圖](assets/component-types/select.png)
+
+#### 標籤 {#tab}
+
+索引標籤元件型別可讓您將其他輸入欄位分組在多個索引標籤上，以改善作者的版面配置組織。
 
 A `tab` 可將定義視為陣列中的分隔符號 `fields`. 之後的一切 `tab` 將會放在該索引標籤上，直到新的 `tab` 之後，會將下列專案放置在新標籤上。
 
 如果您希望專案出現在所有標籤的上方，必須在任何標籤之前定義它們。
 
-### 範例 {#sample-tab}
+##### 範例 {#sample-tab}
 
 ```json
 {
-  "id": "title",
+  "id": "tab",
   "fields": [
     {
       "component": "tab",
-      "label": "Tab",
+      "label": "Tab 1",
       "name": "tab1"
     },
     {
       "component": "text-input",
-      "name": "tab-response",
-      "value": "",
-      "placeholder": "Tab? I can't give you a tab unless you order something.",
-      "label": "Lou",
+      "label": "Text 1",
+      "name": "text1",
       "valueType": "string"
     },
     {
       "component": "tab",
-      "label": "Pepsi Free",
+      "label": "Tab 2",
       "name": "tab2"
     },
     {
       "component": "text-input",
-      "name": "pepsi-free-response",
-      "value": "",
-      "placeholder": "You want a Pepsi, pal, you're gonna pay for it.",
-      "label": "Mr. Carruthers",
+      "label": "Text 2",
+      "name": "text2",
       "valueType": "string"
-    },
-    {
-      "component": "select",
-      "name": "without-sugar",
-      "value": "coffee",
-      "label": "Something without sugar",
-      "valueType": "string",
-      "options": [
-        { "name": "Coffee", "value": "coffee" },
-        { "name": "Hot Coffee", "value": "hot-coffee" },
-        { "name": "Hotter Coffee", "value": "hotter-coffee" }
-      ]
     }
   ]
 }
 ```
+
+##### 螢幕擷圖 {#screenshot-tab}
+
+![索引標籤元件型別的熒幕擷圖](assets/component-types/tab.png)
+
+#### 文字區域 {#text-area}
+
+文字區域允許多行RTF文字輸入。 它提供額外的驗證型別。
+
+| 驗證類型 | 數值類型 | 說明 | 必填 |
+|---|---|---|---|
+| `maxSize` | `number` | 允許的最大字元數 | 否 |
+| `customErrorMsg` | `string` | 訊息將在發生以下情況時顯示 `maxSize` 已超過 | 否 |
+
+##### 範例 {#sample-text-area}
+
+```json
+{
+  "id": "richtext",
+  "fields": [
+    {
+      "component": "text-area",
+      "name": "rte",
+      "label": "Rich Text",
+      "valueType": "string"
+    }
+  ]
+}
+```
+
+```json
+{
+  "id": "another-richtext",
+  "fields": [
+    {
+      "component": "text-area",
+      "name": "rte",
+      "label": "Rich Text",
+      "valueType": "string",
+      "validation": {
+        "maxSize": 1000,
+        "customErrorMsg": "That's about as funny as a screen door on a battleship."
+      }
+    }
+  ]
+}
+```
+
+##### 螢幕擷圖 {#screenshot-text-area}
+
+![文字區域元件型別的熒幕擷圖](assets/component-types/richtext.png)
+
+#### 文字輸入 {#text-input}
+
+文字輸入允許單行文字輸入。  它包含其他驗證型別。
+
+| 驗證類型 | 數值類型 | 說明 | 必填 |
+|---|---|---|---|
+| `minLength` | `number` | 允許的最小字元數 | 否 |
+| `maxLength` | `number` | 允許的最大字元數 | 否 |
+| `regExp` | `string` | 輸入文字必須符合的規則運算式 | 否 |
+| `customErrorMsg` | `string` | 訊息將在發生以下情況時顯示 `minLength`， `maxLength`、和/或 `regExp` 違反了 | 否 |
+
+##### 範例 {#sample-text-input}
+
+```json
+{
+  "id": "simpletext",
+  "fields": [
+    {
+      "component": "text-input",
+      "name": "text",
+      "label": "Simple Text",
+      "valueType": "string"
+    }
+  ]
+}
+```
+
+```json
+{
+  "id": "another simpletext",
+  "fields": [
+    {
+      "component": "text-input",
+      "name": "text",
+      "label": "Simple Text",
+      "valueType": "string",
+      "description": "This is a text input with validation.",
+      "required": true,
+      "validation": {
+        "minLength": 1955,
+        "maxLength": 1985,
+        "regExp": "^foo:.*",
+        "customErrorMsg": "Why don't you make like a tree and get outta here?"
+      }
+    }
+  ]
+}
+```
+
+##### 螢幕擷圖 {#screenshot-text-input}
+
+![文字輸入元件型別的熒幕擷圖](assets/component-types/simpletext.png)
