@@ -2,17 +2,17 @@
 title: 為Edge Delivery Services製作內容
 description: 瞭解內容製作如何與Edge Delivery Services搭配使用，以及如何使用Edge Delivery Services製作AEM內容。
 feature: Edge Delivery Services
-source-git-commit: 22a791311c618fcbd61f321b8efa79c3a52ec65d
+exl-id: 963ff71a-8176-4d9d-8240-dc429405d139
+source-git-commit: 7d28a3a8304d79ecc3143bdc9373134d312af49d
 workflow-type: tm+mt
-source-wordcount: '461'
-ht-degree: 14%
+source-wordcount: '491'
+ht-degree: 15%
 
 ---
 
-
 # 為Edge Delivery Services製作內容 {#authoring-edge}
 
-透過Edge Delivery Services，製作變得簡單、快速且靈活。 您有兩個選項可撰寫Edge Delivery Services的內容：
+透過 Edge Delivery Services，製作變得簡單、快速且靈活。您有兩個選項可撰寫Edge Delivery Services的內容：
 
 * [檔案式撰寫](#document-based)  — 例如Microsoft Word或Google檔案
 * [通用編輯器](#universal-editor)  — 在AEM內編寫內容的現代化UI
@@ -53,6 +53,8 @@ Universal Editor提供現代且直覺式的GUI，讓您透過拖放區塊來製�
 ![設定區塊屬性](assets/block-properties.png)
 
 如需有關如何使用通用編輯器編寫的詳細資訊，請參閱檔案 [使用通用編輯器製作內容。](/help/implementing/universal-editor/authoring.md)
+
+請參閱 [使用Edge Delivery Services進行AEM編寫的開發人員快速入門手冊](/help/edge/edge-dev-getting-started.md) 以瞭解如何開始您自己的專案，以便使用AEM和Edge Delivery Services進行創作。
 
 ## 如何開始使用 {#how-to-get-started}
 
