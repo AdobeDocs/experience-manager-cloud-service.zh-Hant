@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: fb70a068-3ba3-4459-952d-79155d286c42
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 52a6cb359bfe0d76bdceb3f517e92d78994872c8
 workflow-type: tm+mt
-source-wordcount: '686'
-ht-degree: 10%
+source-wordcount: '732'
+ht-degree: 9%
 
 ---
 
@@ -60,6 +60,10 @@ Adobe Experience Manager Assets可讓您使用CSV檔案大量匯入資產中繼�
 * 與更廣大的專案團隊共用資產中繼資料。
 * 測試或稽核中繼資料是否合規。
 * 將中繼資料外部化，以利個別本地化。
+
+>[!NOTE]
+>
+>中繼資料匯出限製為1,048,575個資產，這與Microsoft Excel中的工作表大小上限相對應。 如果匯出的階層包含超過此數量的資產，則CSV檔案中只會包含前1,048,575個資產的中繼資料。
 
 1. 選取包含您要匯出中繼資料之資產的資產資料夾。 從工具列中選取 **[!UICONTROL 匯出中繼資料]**.
 1. 在「中繼資料匯出」對話方塊中，指定CSV檔案的名稱。 若要匯出子資料夾中資產的中繼資料，請選取「 」 **[!UICONTROL 包含子資料夾中的資產]**.
