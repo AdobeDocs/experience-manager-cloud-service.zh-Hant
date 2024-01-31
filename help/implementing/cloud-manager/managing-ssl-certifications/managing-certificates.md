@@ -2,7 +2,7 @@
 title: 管理 SSL 憑證
 description: 了解如何使用 Cloud Manager 檢查 SSL 憑證的狀態以及如何編輯、取代、更新和刪除它們。
 exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
-source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
+source-git-commit: 7143ea8d36e26aa1674608ff7bd8ba22e2030b3c
 workflow-type: tm+mt
 source-wordcount: '644'
 ht-degree: 75%
@@ -18,9 +18,9 @@ ht-degree: 75%
 
 您的 SSL 憑證狀態可以從 SSL 憑證頁面一眼掌握。
 
-* **綠色** - 此狀態代表您的憑證從目前日期起至少 60 天有效。
+* **綠色** - 此狀態代表您的憑證從目前日期起至少 14 天有效。
 
-* **橘色** - 此狀態代表您的憑證將在 60 天內到期。
+* **橘色** - 此狀態代表您的憑證將在 14 天內到期。
    * 現在是時候確保您有計畫透過 Cloud Manager 使用者介面更新並取代憑證，以避免可能的網站存取或中斷。
    * Cloud Manager 將在 UI 中定期發送通知，提醒您憑證即將到期。
 
