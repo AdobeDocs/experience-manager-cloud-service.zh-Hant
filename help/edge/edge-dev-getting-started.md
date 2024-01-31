@@ -2,9 +2,9 @@
 title: 使用Edge Delivery Services進行AEM編寫的開發人員快速入門手冊
 description: 本指南將引導您開始使用新的Adobe Experience Manager網站(使用Edge Delivery Services和通用編輯器進行內容製作)
 feature: Edge Delivery Services
-source-git-commit: eae751441435949296eb76a7e9b4103393860a8d
+source-git-commit: 5967bd78b9c23cf3451ac3b0ec2118da5200ddc1
 workflow-type: tm+mt
-source-wordcount: '954'
+source-wordcount: '949'
 ht-degree: 0%
 
 ---
@@ -48,8 +48,6 @@ AEM提供兩種不同的內容編輯器，您會根據自己的情況選擇要�
    ![複製存放庫專案](assets/edge-dev-getting-started/use-template-project.png)
 
 1. 依預設，系統會將存放庫指派給您。 視需要變更此專案，並提供存放庫名稱和說明，然後按一下 **建立存放庫**.
-
-   * 存放庫應為 **公共**.
 
    ![建立存放庫](assets/edge-dev-getting-started/create-repo.png)
 
