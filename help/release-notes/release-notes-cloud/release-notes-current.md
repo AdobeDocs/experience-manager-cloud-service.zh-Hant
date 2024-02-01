@@ -6,7 +6,7 @@ exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 source-git-commit: 77d38f03f18eb6b0fdc2f2eec5b2dc4b608b8057
 workflow-type: tm+mt
 source-wordcount: '781'
-ht-degree: 64%
+ht-degree: 96%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 64%
 
 ## 發行日期 {#release-date}
 
-的發行日期 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 目前功能版本(2024.1.0)為2024年1月25日。 下一個功能版本(2024.2.0)計畫於2024年2月29日發行。
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 目前功能版本 (2024.1.0) 的發行日期是 2024 年 1 月 25 日。 下一個功能版本 (2024.2.0) 規劃於 2024 年 2 月 29 日發行。
 
 ## 維護版本發行說明 {#maintenance}
 
@@ -40,30 +40,30 @@ ht-degree: 64%
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
-### AEM Sites中的Extension Manager {#sites-extension-manager}
+### AEM Sites 的 Extension Manager {#sites-extension-manager}
 
-**探索新的 [AEM Sites中的Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/)** 透過設定UI擴充功能來個人化AEM設定。
+**探索 [ AEM Sites 的全新 Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/)** ，透過設定 UI 擴充功能為您的 AEM 設定進行個人化。
 
-![AEM Sites中的Extension Manager](/help/assets/sites/extension-manager/homepage.png)
+![AEM Sites 的 Extension Manager](/help/assets/sites/extension-manager/homepage.png)
 
 AEM Sites中的Extension Manager可讓開發人員和從業人員存取、管理和自訂 [UI擴充功能](https://developer.adobe.com/uix/docs/) 建置方式 [AdobeApp Builder](https://developer.adobe.com/app-builder/) 以增強AEM Sites的功能。
-使用Extension Manager，您可以：
+Extension Manager 可讓您：
 
-* 為每個執行個體啟用或停用擴充功能；
-* 設定擴充功能引數；
-* 預覽擴充功能並產生可共用的預覽連結；
-* 透過互動式示範探索UI擴充功能；
-* 透過第一方擴充功能存取Adobe的實驗性功能。
+* 根據每個實例啟用或停用擴充功能；
+* 設定擴充功能參數；
+* 預覽擴充功能並產生可分享的預覽連結；
+* 透過互動式示範，探索 UI 可擴充性功能；
+* 透過第一方擴充功能來存取 Adobe 的實驗性功能。
 
-我們正在積極搜尋UI擴充功能的意見與新使用案例。 如果您想要連線，請傳送電子郵件至 `uix@adobe.com`.
+我們現正積極尋求對於 UI 擴充功能的意見回饋和新使用案例。如果您想聯繫我們，請發送電子郵件至 `uix@adobe.com`。
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### 管理員檢視發行前功能 {#admin-view-prerelease}
+### 管理員檢視的發行前功能 {#admin-view-prerelease}
 
-**預覽所有支援視訊型別的轉譯**
+**預覽所有支援影片類型的轉譯版**
 
-Experience Manager Assets現在預設會產生所有支援視訊型別的預覽轉譯，不需要處理設定檔設定
+Experience Manager Assets 現在會依預設產生所有支援影片類型的預覽轉譯，而無需處理設定檔的設定
 
 ### 資產檢視 {#assets-view-features}
 
@@ -71,7 +71,7 @@ Experience Manager Assets現在預設會產生所有支援視訊型別的預覽�
 
 Assets Essentials 現在允許您定義封鎖清單，其中包含上傳到存放庫時，不應當成智慧標記上傳到資產的單詞。此功能可協助您維持品牌合規性，並減少審核智慧標記的工作量。
 
-![智慧標籤封鎖清單](/help/assets/assets/block-tags.png)
+![智慧標記封鎖清單](/help/assets/assets/block-tags.png)
 
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
@@ -96,13 +96,13 @@ Assets Essentials 現在允許您定義封鎖清單，其中包含上傳到存�
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
-### 支援Dynatrace {#dynatrace}
+### Dynatrace 的支援 {#dynatrace}
 
-Dynatrace客戶可監控其AEM使用情況。 [瞭解如何](/help/implementing/cloud-manager/dynatrace.md) 請求與您的Dynatrace環境連線，以進行應用程式效能監控。 請注意，如果啟用Dynatrace，則可供所有客戶使用的New Relic APM將停止收集資料。
+Dynatrace 客戶可以監控他們的 AEM 使用情況。[了解如何](/help/implementing/cloud-manager/dynatrace.md)請求與您  Dynatrace 環境的連接以進行應用程式效能監控。請注意，如果啟用 Dynatrace，可供所有客戶使用的 New Relic APM 將停止收集資料。
 
-### 使用網站主題和網站範本的前端計畫碼RDE支援：早期採用者計畫 {#rde-frontend-early-adopter}
+### 使用網站主題和網站範本對前端程式碼的 RDE 支援：早期採用者計劃 {#rde-frontend-early-adopter}
 
-[快速開發環境(RDE)](/help/implementing/developing/introduction/rapid-development-environments.md) 現在支援的前端程式碼，根據 [網站主題](/help/sites-cloud/administering/site-creation/site-themes.md) 和 [網站範本](/help/sites-cloud/administering/site-creation/site-templates.md)，適用於早期採用者。 若使用RDE，這是使用命令列指示詞完成的，而非 [前端管道](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md). 請聯絡 **aemcs-rde-support@adobe.com** 進行試用並提供意見反應。
+[快速開發環境 (RDE)](/help/implementing/developing/introduction/rapid-development-environments.md) 現在支援以[網站主題](/help/sites-cloud/administering/site-creation/site-themes.md)和[網站範本](/help/sites-cloud/administering/site-creation/site-templates.md)為主的前端程式碼 (適用於早期採用者)。對於 RDE，這是使用命令列指令完成，而不是使用 [前端管道](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md)來完成。請聯絡 **aemcs-rde-support@adobe.com**，可嘗試使用並提供意見回饋。
 
 ## Cloud Manager {#cloud-manager}
 
