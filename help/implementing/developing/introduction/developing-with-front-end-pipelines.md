@@ -2,9 +2,9 @@
 title: 使用前端管道開發網站
 description: 有了前端管道，前端開發人員可獲得更多獨立性，開發流程可以獲得大幅度的速度。 本檔案說明應提供的前端建置流程的一些特定考量事項。
 exl-id: 996fb39d-1bb1-4dda-a418-77cdf8b307c5
-source-git-commit: de2d4355894d166d47f49a22af773b9e2c19e67b
+source-git-commit: 74e4c4cc57dbdc78b6c93efe78c856bdafbae477
 workflow-type: tm+mt
-source-wordcount: '1156'
+source-wordcount: '1169'
 ht-degree: 1%
 
 ---
@@ -20,17 +20,22 @@ ht-degree: 1%
 
 ## 前端建置合約 {#front-end-build-contract}
 
-類似於 [完整棧疊組建環境，](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) 前端管道有自己的環境。 開發人員在此管道中有一些彈性，只要遵循以下前端建置合約。
+類似於 [完整棧疊組建環境，](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) 前端管道有自己的環境。 開發人員可使用此管道靈活運用，只要遵循以下前端建置合約。
 
-前端管道需要前端Node.js專案才能使用 `build` 指令碼指示詞，用於產生前端管道部署的組建。 即Cloud Manager使用命令 `npm run build` 將可部署的專案產生至 `dist` 資料夾。
+前端管道需要前端Node.js專案才能使用 `build` 指令碼指示詞，用於產生其所部署的組建。 這是因為Cloud Manager使用命令 `npm run build` 為前端組建產生可部署的專案。
 
-的內容 `dist` 資料夾是最終部署到AEM與Cloud Manager管道as a Cloud Service的部分。
+產生的內容 `dist` 資料夾是Cloud Manager最終部署的內容，可作為靜態檔案使用。 這些檔案由AEM外部託管，但可透過 `/content/...` 已部署環境上的URL。
 
-### 節點版本 {#node-versions}
+## 節點版本 {#node-versions}
 
-前端管道預設使用節點14，但也可使用12、16和18。
+前端建置環境支援下列Node.js版本。
 
-您可以使用 `NODE_VERSION` 環境變數來設定所要的版本。
+* 12
+* 14 （預設）
+* 16
+* 18
+
+您可以使用 `NODE_VERSION` [環境變數](/help/implementing/cloud-manager/environment-variables.md) 以設定所要的版本。
 
 ## 單一真實來源 {#single-source-of-truth}
 

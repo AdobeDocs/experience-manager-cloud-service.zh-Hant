@@ -2,9 +2,9 @@
 title: Adobe Experience Manager as a Cloud Service 架構簡介
 description: Adobe Experience Manager as a Cloud Service 架構簡介。
 exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
-source-git-commit: 3e40832ee4351c92ffc4eb22540223e331323821
-workflow-type: ht
-source-wordcount: '2696'
+source-git-commit: 25af074bcb32e47732b27bacf10c8d3435299440
+workflow-type: tm+mt
+source-wordcount: '2713'
 ht-degree: 100%
 
 ---
@@ -227,10 +227,14 @@ Cloud Manager 會透過滾動式更新模式來更新所有服務節點，藉此
 
 ## 更多資訊 {#further-information}
 
-另請參閱：
-
+* 方案設定
+   * [上線歷程](/help/journey-onboarding/overview.md)
+   * [方案和方案類型](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
+* 開發架構
+   * [Cloud Manager 存放庫](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md)
+   * [CI/CD 管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
+   * [程式碼品質測試](/help/implementing/cloud-manager/code-quality-testing.md)
 * Edge Delivery Services：
-
    * [AEM as a Cloud Service 概觀 - 含 Edge Delivery Services](/help/edge/overview.md)
    * [使用 Edge Delivery Services](/help/edge/using.md)
    * [探索 AEM as a Cloud Service 含 Edge Delivery Services 的基本架構和重要元件。](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/introduction/architecture.html)
