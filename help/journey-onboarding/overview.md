@@ -2,10 +2,11 @@
 title: AEM as a Cloud Service 上線歷程簡介
 description: 從此處開始，逐步引導您了解 AEM as a Cloud Service 的上線流程。
 exl-id: 892577db-05dc-49ff-bb2c-203efdb89c8c
-source-git-commit: bba8310b9ba560ab9b6c2f9bea3e5c3cbec9228b
-workflow-type: ht
-source-wordcount: '1247'
-ht-degree: 100%
+recommendations: noDisplay
+source-git-commit: 98618765b405316b18110182c221ddd968c70e96
+workflow-type: tm+mt
+source-wordcount: '1290'
+ht-degree: 98%
 
 ---
 
@@ -98,11 +99,8 @@ Adobe Experience Manager 是一套功能強大的可組合內容服務，可在�
 
 如果您想了解 Adobe 對如何讓團隊上線使用新 AEM as a Cloud Service 應用程式的建議，請從這裡開始！
 
-<!-- ERROR: Not Found (HTTP error 404)
-## Additional Resources {#additional-resources}
+## 其他資源 {#additional-resources}
 
-The following are additional, optional resources if you would like to go beyond the content of the onboarding journey.
+如果您想要此上線歷程以外的內容，以下是您可選擇的其他資源。
 
-* [AEM Champion Tips and Tricks - Cloud Manager Onboarding Playbook](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/expert-resources/aem-champions/onboarding-playbook.md) - Watch this video to learn Cloud Manager onboarding tips and trick from an AEM champion. -->
-
-
+* [AEMas a Cloud Service入門](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/moving-to-aem-as-a-cloud-service/onboarding.html)  — 這部簡短影片會概略介紹AEM的Cloud Service上線流程。
