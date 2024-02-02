@@ -6,10 +6,10 @@ mini-toc-levels: 1
 role: User, Admin, Architect
 feature: Asset Management,Multi Site Manager
 exl-id: a71aebdf-8e46-4c2d-8960-d188b14aaae9
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 9e0aefa096a493df22860d0194a0a76f3eaf2390
 workflow-type: tm+mt
-source-wordcount: '3403'
-ht-degree: 11%
+source-wordcount: '3400'
+ht-degree: 10%
 
 ---
 
@@ -166,7 +166,7 @@ MSM會維護來源資產與其即時副本之間的即時關係，以便：
 * 暫停特定即時副本的關係或變更轉出設定。
 * 存取即時副本概述主控台。
 
-選取來源資產或資料夾，開啟左側邊欄，然後按一下 **[!UICONTROL 引用]**. 或者，選取資產或檔案夾，然後使用鍵盤快速鍵 `Alt + 4`。
+選取來源資產或資料夾，開啟左側邊欄，然後按一下 **[!UICONTROL 引用]**. 或者，選取資產或資料夾，然後使用鍵盤快速鍵 `Alt + 4`.
 
 ![所選來源的「參考」邊欄中可用的動作和資訊](assets/referencerail_source.png)
 
@@ -186,7 +186,7 @@ MSM會維護來源資產與其即時副本之間的即時關係，以便：
 * 在中開啟或顯示特定即時副本 [!DNL Experience Manager] 使用者介面。
 * 推出更新。
 
-選取即時複製資產或資料夾，開啟左側導軌，然後按一下「參 **[!UICONTROL 考」]**。或者，選取資產或檔案夾，然後使用鍵盤快速鍵 `Alt + 4`。
+選取即時複製資產或資料夾，開啟左側導軌，然後按一下「參 **[!UICONTROL 考」]**。或者，選取資產或資料夾，然後使用鍵盤快速鍵 `Alt + 4`.
 
 ![在「參考」(References)邊欄中，所選即時副本的可用動作](assets/referencerail_livecopy.png)
 
@@ -248,12 +248,12 @@ MSM會維護來源資產與其即時副本之間的即時關係，以便：
 您可以取消的即時副本繼承：
 
 * 中繼資料欄位
-* 內容片段變數
-* 內容片段資料欄位
+* [內容片段變數](/help/assets/content-fragments/content-fragments-variations.md#inheritance)
+* [內容片段資料欄位](/help/assets/content-fragments/content-fragments-variations.md#inheritance)
 
 這表示該專案不再與來源元件同步。 如有需要，您可在稍後啟用繼承。
 
-### 取消繼承 {#cancel-inheritance}
+### 取消先前設定 {#cancel-inheritance}
 
 若要取消繼承，請執行下列動作：
 
@@ -319,7 +319,7 @@ MSM會維護來源資產與其即時副本之間的即時關係，以便：
 
 1. 選取來源資料夾。 按一下 **[!UICONTROL 屬性]** 工具列中的。 或者，使用鍵盤快速鍵 `p`.
 1. 按一下「 **[!UICONTROL 即時複製來源」]**。若要開啟主控台，請按一下「即 **[!UICONTROL 時複製概述」]**。
-1. 在此控制面板中，從即時複製資料夾選取即時複製資產。從工具列按一下所需的動作。可用的操作有 **[!UICONTROL 同步]**、重置 **[!UICONTROL 、]**&#x200B;掛起 ****&#x200B;和 ****&#x200B;分離。您可以在任何數量的即時副本資料夾中，對與所選來源資料夾處於即時關係的任何資產快速啟動這些動作。
+1. 在此控制面板中，從即時複製資料夾選取即時複製資產。從工具列按一下所需的動作。可用的動作包括 **[!UICONTROL 同步]**， **[!UICONTROL 重設]**， **[!UICONTROL 暫停]**、和 **[!UICONTROL 分離]**. 您可以在任何數量的即時副本資料夾中，對與所選來源資料夾處於即時關係的任何資產快速啟動這些動作。
 
    ![從即時副本概述控制檯輕鬆更新即時副本資料夾中的許多資產](assets/livecopyconsole_update_many_assets.png)
 
