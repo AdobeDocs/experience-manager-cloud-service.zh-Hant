@@ -2,10 +2,10 @@
 title: 使用 Universal Editor 編寫內容
 description: 了解內容作者使用 Universal Editor 建立內容有多簡單和直覺。
 exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
-source-git-commit: 16f2922a3745f9eb72f7070c30134e5149eb78ce
+source-git-commit: a616b27c5212b00d3b51778402ed52a68028fdaf
 workflow-type: tm+mt
-source-wordcount: '2165'
-ht-degree: 57%
+source-wordcount: '2189'
+ht-degree: 56%
 
 ---
 
@@ -295,11 +295,14 @@ Universal Editor工具列一律會顯示在畫面頂端，緊接在底下 [Exper
 
 您可以按兩下或點兩下元件，就地編輯文字。
 
-按下Enter/Return或在文字方塊外選取，以儲存變更。
-
 ![編輯 RTF 文字元件](assets/rich-text-editing.png)
 
-此外，屬性邊欄中也有格式化選項和文字的詳細資訊。 一旦焦點離開屬性邊欄中已編輯的欄位，變更就會自動儲存。
+為方便起見，您可在兩個位置找到文字的格式選項和詳細資訊。
+
+* 此 **內容功能表** 會在RTF區塊上方開啟，並在內容中提供基本的格式選項。 由於空間限制，某些選項可能會隱藏在省略符號按鈕後面。
+* 此 **屬性邊欄** 顯示所有可用的格式選項以及文字。
+
+一旦焦點離開已編輯的欄位，變更會自動儲存。
 
 ### 編輯媒體 {#edit-media}
 
