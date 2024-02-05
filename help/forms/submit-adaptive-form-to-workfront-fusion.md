@@ -6,7 +6,7 @@ topic-tags: author, developer
 feature: Adaptive Forms
 role: Admin, User
 exl-id: d3efb450-a879-40ae-8958-0040f99bdafc
-source-git-commit: 7cf7883e133d58145b5b3e1bb6ba8eb21ebad5d9
+source-git-commit: 52e1f57b82aec25ad61024f357016dbb5498ca1b
 workflow-type: tm+mt
 source-wordcount: '1273'
 ht-degree: 3%
@@ -22,6 +22,7 @@ ht-degree: 3%
 例如，使用Workfront Fusion，您可以建立案例來透過Adaptive Form收集資料、處理資料，以及傳送資料至資料存放區進行封存。 一旦設定了案例，每當使用者填寫表單時，Workfront Fusion就會自動執行工作，順暢地更新資料存放區。
 
 AEMas a Cloud Service提供多種現成的提交動作，用於處理表單提交。 如需這些選項的詳細資訊，請參閱 [最適化表單提交動作](/help/forms/configure-submit-actions-core-components.md)  文章。
+
 
 ## 使用Adobe Workfront Fusion的優勢{#advatages-of-workfront-fusion}
 
