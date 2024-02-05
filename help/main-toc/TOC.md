@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的運作方式以及該軟體可以為您做哪些事。
 breadcrumb-title: 使用手冊
 user-guide-title: AEM as a Cloud Service
-source-git-commit: a1a87a27d73d7472ec02de37621123bbdd3876b4
+source-git-commit: d2090fd8bee3ec3d25eb3a00925a61404d2f8b8d
 workflow-type: tm+mt
-source-wordcount: '4635'
+source-wordcount: '4630'
 ht-degree: 99%
 
 ---
@@ -521,7 +521,7 @@ ht-degree: 99%
       + [發佈 Dynamic Media 資產](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)
       + [在 Dynamic Media 中使用選擇性發佈](/help/assets/dynamic-media/selective-publishing.md)
       + [使用選取器](/help/assets/dynamic-media/working-with-selectors.md)
-      + [HTTP2 傳送內容常見問答集](/help/assets/dynamic-media/http2faq.md)
+      + [HTTP2 傳送內容常見問題集](/help/assets/dynamic-media/http2faq.md)
       + [Flash 檢視器產品壽命終止](/help/assets/dynamic-media/flash-viewers-eol.md)
       + [DHTML 檢視器產品壽命終止](/help/assets/dynamic-media/dhtml-viewer-endoflifefaqs.md)
    + 使用資產檢視{#assets-view}
@@ -1056,7 +1056,6 @@ ht-degree: 99%
       + [擴充體驗片段](/help/implementing/developing/extending/experience-fragments.md)
       + [自訂和擴充內容片段](/help/implementing/developing/extending/content-fragments-customizing.md)
       + [轉譯專用內容片段設定元件](/help/implementing/developing/extending/content-fragments-configuring-components-rendering.md)
-      + [自訂內容片段主控台](/help/implementing/developing/extending/content-fragment-console-customizing.md)
       + [自訂內容片段主控台和編輯器](/help/implementing/developing/extending/content-fragments-console-and-editor.md)
       + 管理搜尋表單 {#manage-search-forms}
          + [設定搜尋表單](/help/implementing/developing/extending/search-forms.md)
