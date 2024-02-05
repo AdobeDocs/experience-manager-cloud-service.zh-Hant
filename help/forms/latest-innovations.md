@@ -4,9 +4,9 @@ description: 探索的最新功能 [!DNL AEM Forms] as a Cloud Service建立、�
 role: Admin, Developer, User
 feature: Adaptive Forms
 exl-id: 3a90b0aa-369a-4350-9904-79ef656b0f9a
-source-git-commit: 52e1f57b82aec25ad61024f357016dbb5498ca1b
+source-git-commit: 62aae8647b25a91d12f8ceee8d1d982dce282098
 workflow-type: tm+mt
-source-wordcount: '1279'
+source-wordcount: '1209'
 ht-degree: 1%
 
 ---
@@ -29,7 +29,7 @@ Adobe Experience Manager Forms中的一些熱門創新包括：
 | 創新 | 詳細資料 |
 |---|---|
 | Edge Delivery | 有了Edge Delivery，企業的員工都可以在他們偏好的工具(例如Microsoft Excel和Google Sheets)中建立表單，而不需要有關新UI工作流程的廣泛培訓。 <br/> <br/> 此外，Edge Delivery是以無與倫比的速度載入表單，在即時頁面上獲得近乎完美的Google Lighthouse分數，確保最佳效能和使用者體驗。<br/> <br/> ![建立表單的新一代可組合性工具](/help/forms/assets/web-vitals.jpeg) 此外，由於Edge Delivery提供的簡單工具，部署表單變得前所未有的輕鬆或快速。 只需最少的開發時間，您就可以輕鬆簡化上線的路徑，並為客戶提供卓越的表單體驗。 |
-| Adobe Workfront Fusion聯結器 | AEM Forms Adobe Workfront Fusion聯結器可讓您整合Adobe Experience Manager (AEM) Forms與Adobe Workfront Fusion。 Adobe Workfront是工作管理應用程式，協助您在一個地方管理整個工作生命週期，而Workfront Fusion是整合平台，可讓您將Workfront連結至業務應用程式。 <br/> <br/> 使用Adobe Workfront Fusion Connector，您可以建立根據提交最適化表單而自動觸發的工作流程。 例如，您可以建立工作流程，在使用者提交表單時自動傳送電子郵件通知給特定人員，或在使用者完成表單時在Microsoft Planner中建立任務。  <br/> ![microsoft PowerAutomate聯結器圖示](https://powerusers.microsoft.com/t5/image/serverpage/image-id/182924i17C4BEA1C045D731/image-size/large/is-moderation-mode/true?v=1.0&amp;px=999) <br/> AEM Forms Power Automate聯結器是一款功能強大的工具，可讓您將最適化Forms與其他與Microsoft Power Automate連線的應用程式和服務自動化及整合，讓您使用更廣泛的工具。 您可以建立符合您特定需求的工作流程，並有能力新增自訂動作、條件和觸發器。 此外，Power Automate提供詳細的分析和報告，可讓您隨著時間監視和最佳化工作流程。 |
+| Adobe Workfront Fusion聯結器 | 此 [AEM Forms Adobe Workfront Fusion聯結器](/help/forms/submit-adaptive-form-to-workfront-fusion.md) 能夠緊密整合Adobe Experience Manager (AEM) Forms和Adobe Workfront Fusion。 Adobe Workfront作為工作管理應用程式，集中處理整個工作生命週期，而Workfront Fusion則作為整合平台，促進Workfront與各種業務應用程式之間的連線。 <br/> ![Adobe Workfront](/help/forms/assets/adobe-workfront.png) <br/> 使用Adobe Workfront Fusion Connector，您可以設計在提交最適化表單時自動觸發的工作流程。 例如，設想一個情境，其中初始工作流程以指派給特定個人審查提交的資料，從而允許根據透過最適化表單擷取的資訊核准或拒絕應用程式。 這項簡化的整合可提升效率，並將工作流程自動化提升到新的水準。 |
 | Headless最適化Forms | 建立和管理 [Headless最適化Forms](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html) 在Adobe Experience Manager平台內。 讓您的開發人員建立、發佈和管理互動式表單，這些表單可透過API （而非透過傳統的圖形使用者介面）存取和互動。 <br/> <br/> 這些表單的提交方式完全不需要傳統的HTML表單介面。 換言之，它們可讓您透過API或後端程式碼以程式設計方式提交表單資料，且前端沒有任何可見的表單元素。 <br/> <!-- ![Headless adaptive form working](https://experienceleagueadobe.com/docs/experience-manager-headless-adaptive-forms/assets/how-headless-adaprive-forms-work.png?) --><br/> Headless表單可用於各種情況，例如建置單頁應用程式、漸進式網頁應用程式或行動應用程式時，在這些情況下傳統HTML表單介面可能不是必要或不實用。 Headless表單可讓開發人員直接透過API或後端程式碼提交表單資料，有助於簡化工作流程，並改善網頁應用程式的整體效能。 |
 | 核心元件 | 此 [最適化Forms核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html#features) 是一組24個開放原始碼、符合BEM規範的元件，建立在Adobe Experience Manager WCM核心元件的基礎上。 這些表單是專為建立最適化Forms所設計，是適合使用者裝置、瀏覽器和熒幕大小的表單。 <br/> <br/> 這些元件可用來建立優異的資料擷取和註冊體驗，方法是提供各式各樣的表單欄位選項，包括文字欄位、核取方塊、下拉式功能表等。 此外也包含驗證、條件式邏輯和回應式設計等功能，可用來建立簡單易用的表單。 <br/> ![核心元件的功能](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/sample-core-components-based-adaptive-form.png?)<br/>  此外，由於這些元件是開放原始碼，開發人員可輕鬆自訂和擴充元件，以符合其組織的特定需求。 此外，這些元件建置於BEM方法上，可確保它們具有可擴充性和可維護性。 |
 | Microsoft PowerAutomate聯結器 | AEM Forms Power Automate聯結器可讓您整合Adobe Experience Manager (AEM) Forms與Microsoft Power Automate (先前稱為Microsoft流量)。 Power Automate是雲端型服務，可讓您在不同應用程式和服務之間建立自動化工作流程。  <br/> <br/> 使用AEM Form Power Automate聯結器，您可以建立根據提交最適化表單自動觸發的工作流程。 例如，您可以建立工作流程，在使用者提交表單時自動傳送電子郵件通知給特定人員，或在使用者完成表單時在Microsoft Planner中建立任務。  <br/> ![microsoft PowerAutomate聯結器圖示](https://powerusers.microsoft.com/t5/image/serverpage/image-id/182924i17C4BEA1C045D731/image-size/large/is-moderation-mode/true?v=1.0&amp;px=999) <br/> AEM Forms Power Automate聯結器是一款功能強大的工具，可讓您將最適化Forms與其他與Microsoft Power Automate連線的應用程式和服務自動化及整合，讓您使用更廣泛的工具。 您可以建立符合您特定需求的工作流程，並有能力新增自訂動作、條件和觸發器。 此外，Power Automate提供詳細的分析和報告，可讓您隨著時間監視和最佳化工作流程。 |
