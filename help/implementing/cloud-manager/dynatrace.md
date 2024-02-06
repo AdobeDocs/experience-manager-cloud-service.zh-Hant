@@ -2,9 +2,9 @@
 title: Dynatrace
 description: 瞭解如何搭配AEMas a Cloud Service使用Dynatrace
 exl-id: b58c8b82-a098-4d81-bc36-664e890c8f66
-source-git-commit: a234f2a00c51bcb23b0c52feac9971259d26b8c3
+source-git-commit: fec3aa6debec49014406ab241c3ce0338ec5a1d2
 workflow-type: tm+mt
-source-wordcount: '557'
+source-wordcount: '514'
 ht-degree: 0%
 
 ---
@@ -27,13 +27,13 @@ Dynatrace客戶可透過客戶支援票證請求連線，藉此監控其AEM環�
 
 | **欄位** | **說明** |
 |---|---|
-| Dynatrace環境URL | 您的Dynatrace環境URL。<br><br>對於Dynatrace SaaS客戶，格式為 `https://<your-environment-id>.live.dynatrace.com`.<br><br>若為Dynatrace管理的客戶，格式為 `https://<your-managed-url>/e/<environmentId>` |
-| Dynatrace環境ID | 您的Dynatrace環境ID。 請參閱 [取得Dynatrace環境資訊](#get-dynatrace-env-info) 以瞭解如何取得此內容。 |
-| Dynatrace環境權杖 | 您的Dynatrace環境權杖。 請參閱 [取得Dynatrace環境資訊](#get-dynatrace-env-info) 以瞭解如何取得此內容。<br><br>這應視為秘密，因此請使用適當的安全實務。 例如，密碼可在網站中加以保護，例如 **zerobin.net**，客戶支援票證可參考以及密碼。 |
-| Dynatrace API存取權杖 | Dynatrace環境的API存取Token。  請參閱 [建立Dynatrace API存取權杖](#create-dynatrace-access-token) 以瞭解如何建立此專案。<br><br>這應視為秘密，因此請使用適當的安全實務。 例如，密碼可在網站中加以保護，例如 **zerobin.net**，客戶支援票證可參考以及密碼。<br><br>注意：只有Dynatrace Managed才需要此專案。 |
-| Dynatrace ActiveGate連線埠 | AEM整合應連線至您的Dynatrace ActiveGate連線埠。<br><br>注意：只有Dynatrace Managed才需要此專案。 |
-| Dynatrace ActiveGate網路區域 | 您的 [Dynatrace ActiveGate網路區域](https://docs.dynatrace.com/docs/manage/network-zones) 在資料中心與網路區域間有效傳送AEM監控資料。<br><br>注意：Dynatrace ActiveGate網路區域是選用的。 |
-| AEM環境ID | Dynatrace要監控的AEM環境ID。 |
+| [!DNL Dynatrace Environment URL] | 您的Dynatrace環境URL。<br><br>對於Dynatrace SaaS客戶，格式為 `https://<your-environment-id>.live.dynatrace.com`.<br><br>若為Dynatrace管理的客戶，格式為 `https://<your-managed-url>/e/<environmentId>` |
+| [!DNL Dynatrace Environment ID] | 您的Dynatrace環境ID。 請參閱 [取得Dynatrace環境資訊](#get-dynatrace-env-info) 以瞭解如何取得此內容。 |
+| [!DNL Dynatrace Environment Token] | 您的Dynatrace環境權杖。 請參閱 [取得Dynatrace環境資訊](#get-dynatrace-env-info) 以瞭解如何取得此內容。<br><br>這應視為秘密，因此請使用適當的安全實務。 例如，密碼可在網站中加以保護，例如 **zerobin.net**，客戶支援票證可參考以及密碼。 |
+| [!DNL Dynatrace API access token] | Dynatrace環境的API存取Token。  請參閱 [建立Dynatrace API存取權杖](#create-dynatrace-access-token) 以瞭解如何建立此專案。<br><br>這應視為秘密，因此請使用適當的安全實務。 例如，密碼可在網站中加以保護，例如 **zerobin.net**，客戶支援票證可參考以及密碼。<br><br>注意：只有Dynatrace Managed才需要此專案。 |
+| [!DNL Dynatrace ActiveGate Port] | AEM整合應連線至您的Dynatrace ActiveGate連線埠。<br><br>注意：只有Dynatrace Managed才需要此專案。 |
+| [!DNL Dynatrace ActiveGate Network Zone] | 您的 [Dynatrace ActiveGate網路區域](https://docs.dynatrace.com/docs/manage/network-zones) 在資料中心與網路區域間有效傳送AEM監控資料。<br><br>注意：Dynatrace ActiveGate網路區域是選用的。 |
+| [!DNL AEM Environment ID(s)] | Dynatrace要監控的AEM環境ID。 |
 
 >[!NOTE]
 >
@@ -43,13 +43,13 @@ Dynatrace客戶可透過客戶支援票證請求連線，藉此監控其AEM環�
 ## 建立Dynatrace API存取權杖 {#create-dynatrace-access-token}
 
 1. 登入您的Dynatrace環境。
-1. 在Dynatrace功能表中，前往「管理>存取權杖」 。
-1. 選取「產生新Token」。
-1. 定義權杖名稱。
+1. 在 [!DNL Dynatrace] 選單，前往 [!DNL Manage] > [!DNL Access tokens].
+1. 選取 [!DNL Generate new token].
+1. 定義 [!DNL token name].
 
-1. 選用：設定到期日。 請務必在到期前產生新Token。
-1. 將權杖範圍設定為PaaS整合 — 安裝程式下載
-1. 選取「產生Token」。
+1. 可選：設定 [!DNL expiration date]. 請務必在到期前產生新Token。
+1. 設定 [!DNL token scope] 至 [!DNL PaaS integration - Installer download]
+1. 選取 [!DNL Generate token].
 1. 複製產生的存取權杖並將其儲存在安全位置。
 
 
