@@ -1,13 +1,14 @@
 ---
-description: 我們可以在專用的Slack頻道上Slack，Adobe團隊和Slack機器人都可用於回答您的問題。
+description: 我們可以透過專門的 Slack 管道在 Slack 上進行交流，Adobe 團隊和 Slack 機器人都可以回答您的問題。
 title: Slack 機器人
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: c04b9391059e66b343fe2ecab90e26179b2172ac
-workflow-type: tm+mt
+exl-id: 22633bb5-35e9-4d56-b7a4-ecf6128da5e0
+source-git-commit: 05548d56d791584781606b02839c5602b4469f7b
+workflow-type: ht
 source-wordcount: '28'
-ht-degree: 14%
+ht-degree: 100%
 
 ---
 

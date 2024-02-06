@@ -1,11 +1,12 @@
 ---
-description: 本檔案會從程式碼的角度說明典型專案的外觀。 閱讀本檔案之前，請先熟悉檔案：快速入門 — 開發人員教學課程。
+description: 本文件從程式碼的角度來說明一般項目的外觀。在閱讀本文件之前，請先熟悉一下文件《快速入門 - 開發人員教學課程》。
 title: 專案剖析
 feature: Edge Delivery Services
-source-git-commit: 80d974c23cb3dd7c0844b4d2cec2b608ff813438
-workflow-type: tm+mt
+exl-id: 7097fdda-d87f-4867-b58c-65b04be0fa96
+source-git-commit: 05548d56d791584781606b02839c5602b4469f7b
+workflow-type: ht
 source-wordcount: '38'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 

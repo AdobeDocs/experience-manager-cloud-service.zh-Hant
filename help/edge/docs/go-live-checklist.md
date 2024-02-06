@@ -1,14 +1,15 @@
 ---
-description: 上線檢查清單是啟動網站時可考慮的最佳實務摘要。 這些步驟通常是好的做法，但Adobe Experience Manager有一些特定的方面。
-title: 上線檢查清單
+description: 內容上線檢查清單是啟動網站時要考慮的最佳實務摘要。這些步驟通常是很好的做法，但有一些方面是 Adob​​e Experience Manager 專用。
+title: 內容上線檢查清單
 feature: Edge Delivery Services
-source-git-commit: 80d974c23cb3dd7c0844b4d2cec2b608ff813438
-workflow-type: tm+mt
+exl-id: 7f22d7f5-39b8-4b91-a1ef-24f89b5ded14
+source-git-commit: 05548d56d791584781606b02839c5602b4469f7b
+workflow-type: ht
 source-wordcount: '34'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# 上線檢查清單
+# 內容上線檢查清單
 
 {{$include 4060ebc0-13ed-439d-92c3-808c69275705}}

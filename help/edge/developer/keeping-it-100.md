@@ -1,14 +1,15 @@
 ---
-description: 網站體驗品質對於達成網站的業務目標及訪客的滿意度至關重要。
-title: 保持It 100、網頁效能
+description: 為了達到網站商業目標並提高網站訪客滿意度，了解網站體驗品質至關重要。
+title: 維持 100 分品質，Web 效能
 feature: Edge Delivery Services
-source-git-commit: 80d974c23cb3dd7c0844b4d2cec2b608ff813438
-workflow-type: tm+mt
+exl-id: f808ae16-15b7-48ce-a477-76268ba005ec
+source-git-commit: 05548d56d791584781606b02839c5602b4469f7b
+workflow-type: ht
 source-wordcount: '33'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# 保持It 100、網頁效能
+# 維持 100 分品質，Web 效能
 
 {{$include c8f9d9c3-0687-4d69-8f54-cf6e603747a8}}

@@ -1,14 +1,15 @@
 ---
-description: 「\u200B\u200BAEM sidekick為內容作者提供內容感知選項的工具列，讓他們可以直接從您網站的頁面編輯、預覽和發佈內容。」
-title: 使用AEM Sidekick
+description: AEM sidekick 為內容作者提供了一個提供內容感知選項的工具列，以便他們可以直接從您網站的頁面編輯、預覽和發佈其內容。
+title: 使用 AEM Sidekick
 feature: Edge Delivery Services
-source-git-commit: 80d974c23cb3dd7c0844b4d2cec2b608ff813438
-workflow-type: tm+mt
-source-wordcount: '38'
-ht-degree: 0%
+exl-id: 9a833adc-0b69-4f58-94d3-7a25cf774703
+source-git-commit: 05548d56d791584781606b02839c5602b4469f7b
+workflow-type: ht
+source-wordcount: '37'
+ht-degree: 100%
 
 ---
 
-# 使用AEM Sidekick
+# 使用 AEM Sidekick
 
 {{$include a9380838-78aa-49f7-afa3-85b8186a2194}}

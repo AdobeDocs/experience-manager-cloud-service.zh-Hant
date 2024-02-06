@@ -1,36 +1,36 @@
 ---
-title: 發佈Edge Delivery Services內容
-description: 瞭解內容發佈如何與Edge Delivery Services搭配使用，以及如何使用Edge Delivery Services發佈AEM內容。
+title: 為 Edge Delivery Services 發佈內容
+description: 了解內容發佈如何與 Edge Delivery Services 搭配使用，以及如何使用 Edge Delivery Services 發佈 AEM 內容。
 feature: Edge Delivery Services
-source-git-commit: 166525b6987215a64521d1ff63a222187376ba65
-workflow-type: tm+mt
+exl-id: 32fbb144-9175-47a9-bb5a-ca15f3fcd2d8
+source-git-commit: 05548d56d791584781606b02839c5602b4469f7b
+workflow-type: ht
 source-wordcount: '200'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
+# 為 Edge Delivery Services 發佈內容 {#publishing-edge}
 
-# 發佈Edge Delivery Services內容 {#publishing-edge}
+使用 Edge Delivery Services 時，無論內容來源為何，都可以流暢地發佈內容：
 
-透過Edge Delivery Services，無論內容來源為何，發佈內容都能順暢無礙：
+* 文件型內容 - 請參閱 Edge Delivery Services 文件的[「發佈」區段](/help/edge/docs/authoring.md) 。
+* AEM 內容 - 請參閱下面的詳細資訊。
 
-* 檔案型內容 — 請參閱 [發佈區段](/help/edge/docs/authoring.md) 的Edge Delivery Services檔案。
-* AEM內容 — 請參閱下列詳細資料。
+## AEM 的發佈流程 {#publishing-flow}
 
-## 從AEM發佈流程 {#publishing-flow}
+使用 Universal Editor 編輯 AEM 內容時，發佈內容如同在 Universal Editor 點擊「**發佈**」按鈕一樣簡單。請參閱文件：[使用 Universal Editor 發佈內容。](/help/implementing/universal-editor/publishing.md)
 
-使用通用編輯器來撰寫AEM內容時，發佈就像按一下 **發佈** 按鈕。 請參閱檔案 [使用通用編輯器發佈內容。](/help/implementing/universal-editor/publishing.md)
+在發佈時的資訊流程如下。一旦作者開始發佈，此流程就會自動進行，且此處有說明可供資訊參考。
 
-發佈時的資訊流程如下。 一旦作者開始發佈，此流程就會自動完成，此處說明以供參考。
+![從 AEM 發佈至 Edge Delivery Services 時的資訊流程](assets/publishing-flow.png)
 
-![從AEM發佈到Edge Delivery Services時的資訊流](assets/publishing-flow.png)
-
-1. 內容作者會在通用編輯器中發佈AEM內容。
-1. 發佈事件會推送至Adobe管道佇列。
-1. Edge Delivery Publish服務會將相關事件轉送至Edge Delivery Admin API。
-1. Edge傳送會從AEM Author提取及擷取語意HTML。
-1. AEM已更新發佈狀態。
+1. 內容作者在 Universal Editor 中發布 AEM 內容。
+1. 發布事件會被推送到 Adob&#x200B;&#x200B;e Pipeline 佇列。
+1. Edge Delivery 發佈服務會將相關事件轉送到 Edge Delivery 管理 API。
+1. Edge Delivery 會從 AEM Author 提取並擷取語義 HTML。
+1. AEM 已更新發佈狀態。
 
 ## 如何開始使用 {#how-to-get-started}
 
-請聯絡您的Adobe代表以取得此功能的存取權。
+請聯絡您的 Adob&#x200B;&#x200B;e 代表，要求使用此功能的存取權。

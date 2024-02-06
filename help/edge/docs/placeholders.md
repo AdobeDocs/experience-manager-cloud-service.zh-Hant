@@ -1,11 +1,12 @@
 ---
-description: 在大部分的網站中，會有字串或變數在整個網站中使用。 尤其是在需要支援多種語言的網站中，硬式編碼這類值是不好的。 您可以集中使用和管理預留位置。
+description: 大多數網站中都有會在整個網站使用的字串或變數。特別是在需要支援多種語言的網站中，對這些值進行硬編碼並不是好方法；相反地，可以集中使用和管理預留位置。
 title: 預留位置
 feature: Edge Delivery Services
-source-git-commit: 80d974c23cb3dd7c0844b4d2cec2b608ff813438
-workflow-type: tm+mt
+exl-id: 392e2323-8d6f-40eb-a68e-51baeee7fc2d
+source-git-commit: 05548d56d791584781606b02839c5602b4469f7b
+workflow-type: ht
 source-wordcount: '45'
-ht-degree: 4%
+ht-degree: 100%
 
 ---
 

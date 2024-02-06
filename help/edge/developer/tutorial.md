@@ -1,11 +1,12 @@
 ---
-description: 本教學課程將協助您啟動並執行新的Adobe Experience Manager (AEM)專案。 10到20分鐘後，您就會建立自己的網站，並能夠建立、預覽和發佈自己的內容、樣式和新增區塊。
+description: 本教學課程將協助您啟動並執行新的 Adob​​e Experience Manager (AEM) 專案。您將在十到二十分鐘內建立自己的網站，並能夠建立、預覽和發佈您自己的內容、樣式以及新增區塊。
 title: 快速入門 - 開發人員教學課程
 feature: Edge Delivery Services
-source-git-commit: 80d974c23cb3dd7c0844b4d2cec2b608ff813438
-workflow-type: tm+mt
+exl-id: f84a9584-0962-4d70-aedc-f7a130fd489b
+source-git-commit: 05548d56d791584781606b02839c5602b4469f7b
+workflow-type: ht
 source-wordcount: '50'
-ht-degree: 16%
+ht-degree: 100%
 
 ---
 

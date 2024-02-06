@@ -1,11 +1,12 @@
 ---
-description: 管理員和索引操作會記錄在稽核記錄中，而稽核記錄可透過管理員端點查詢。
+description: 管理和索引操作會列入審核記錄中，可以透過管理端點進行查詢。
 title: 稽核記錄
 feature: Edge Delivery Services
-source-git-commit: 80d974c23cb3dd7c0844b4d2cec2b608ff813438
-workflow-type: tm+mt
+exl-id: 18751843-d2c9-44d7-b354-4c551a1a634c
+source-git-commit: 05548d56d791584781606b02839c5602b4469f7b
+workflow-type: ht
 source-wordcount: '22'
-ht-degree: 18%
+ht-degree: 100%
 
 ---
 

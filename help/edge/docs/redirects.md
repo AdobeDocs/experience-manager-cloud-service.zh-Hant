@@ -1,11 +1,12 @@
 ---
-description: 每個網站都需要重新導向。 例如，如果您重新定位或刪除內容，您希望使用者仍然能夠找到內容或下一個最佳選擇。 如需刪除內容的詳細資訊，請參閱檔案：製作和發佈內容。
+description: 每個網站都有必要進行重新導向。例如，如果您重新定位或刪除內容，您希望使用者仍然能夠找到這個內容或下一個最好的內容。有關刪除內容的更多資訊，請參閱文件「製作和發佈內容」。
 title: 重新導向
 feature: Edge Delivery Services
-source-git-commit: 80d974c23cb3dd7c0844b4d2cec2b608ff813438
-workflow-type: tm+mt
+exl-id: a41e08bb-2488-494d-8abd-b271e0cd4c34
+source-git-commit: 05548d56d791584781606b02839c5602b4469f7b
+workflow-type: ht
 source-wordcount: '46'
-ht-degree: 4%
+ht-degree: 100%
 
 ---
 

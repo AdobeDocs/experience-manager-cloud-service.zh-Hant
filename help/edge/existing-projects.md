@@ -1,44 +1,44 @@
 ---
-title: 將Edge Delivery Services用於現有AEM專案
-description: 瞭解如何在現有AEM專案上善用Edge Delivery Services的優點
+title: 將 Edge Delivery Services 與現有 AEM 專案結合使用
+description: 了解如何在現有 AEM 專案中利用 Edge Delivery Services 的優勢
 feature: Edge Delivery Services
-source-git-commit: 22a791311c618fcbd61f321b8efa79c3a52ec65d
-workflow-type: tm+mt
+exl-id: f54aac3a-1d0c-4be0-9aa6-616217e0e458
+source-git-commit: 05548d56d791584781606b02839c5602b4469f7b
+workflow-type: ht
 source-wordcount: '339'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
+# 將 Edge Delivery Services 與現有 AEM 專案結合使用 {#existing-projects}
 
-# 將Edge Delivery Services用於現有AEM專案 {#existing-projects}
+您不需要等待新的 AEM 專案，即可取得 Edge Delivery Services 帶來的好處。Edge Delivery Services 可以整合到現有的 AEM 專案中，讓您可立即利用專案提升的效能。
 
-您不需要等待新的AEM專案就能從Edge Delivery Services中獲益。 Edge Delivery Services可以整合到您現有的AEM專案中，因此您可以立即運用其效能提升。
+## AEM 頁面編輯器限制 {#page-editor}
 
-## AEM頁面編輯器限制 {#page-editor}
+在有 Edge Delivery Services 之前，AEM 所管理的內容是使用 AEM 頁面編輯器進行編輯。如果您的專案是在 Edge Delivery Services 推出之前展開，幾乎可確定您目前是使用頁面編輯器。
 
-在Edge Delivery Services出現之前，已使用AEM頁面編輯器編輯在AEM中管理的內容。 如果您的專案在Edge Delivery Services推出之前就已開始了，則幾乎可以肯定您使用的是頁面編輯器。
+AEM 頁面編輯器僅適用於 [AEM 元件](/help/implementing/developing/components/overview.md)，例如[核心元件。](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 這些元件與 Edge Delivery Services 不相容&#x200B;&#x200B;。因此，需要兩個階段才能將 Edge Delivery Services 引入現有的 AEM 專案：
 
-AEM頁面編輯器僅適用於 [AEM元件](/help/implementing/developing/components/overview.md) 例如 [核心元件。](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 這些元件與Edge Delivery Services不相容。 因此，將Edge Delivery Services匯入現有AEM專案需要兩個階段：
+* [第 1 階段 - 取代前端](#replace-front-end)
+* [第 2 階段 - 切換至 Universal Editor](#switch-ue)
 
-* [階段1 — 更換前端](#replace-front-end)
-* [階段2 — 切換至通用編輯器](#switch-ue)
+## 第 1 階段 - 取代前端 {#replace-front-end}
 
-## 階段1 — 更換前端 {#replace-front-end}
+在第一階段，您可以繼續使用現有的 AEM 網站結構、元件和製作工具。網站轉譯將透過使用 JavaScript 和 CSS 的區塊進行重建，並將透過 Edge Delivery Services 進行交付。
 
-在第一階段中，您可以繼續使用現有的AEM網站結構、元件及撰寫工具。 使用JavaScript和CSS的區塊將重建網站呈現，並將透過Edge Delivery Services傳遞。
+請參閱 Edge Delivery Services 文件的[「建置」區段](/help/edge/developer/block-collection.md) ，了解有關區塊以及如何開發 Edge Delivery Services 更多詳細資訊。
 
-請參閱 [建置區段](/help/edge/developer/block-collection.md) Edge Delivery Services檔案，以取得區塊以及如何開發邊緣交付服務的詳細資訊。
-
-App Builder上的轉換工具必須轉換AEM轉譯的HTML輸出，並傳送給Edge Delivery Services。
+應用程式建立工具上的轉換器需要轉換 AEM 轉譯的 HTML 輸出，並將其傳送至 Edge Delivery Services。
 
 ![發佈流程中的內容轉換器](assets/content-converter.png)
 
-第二階段透過消除技術重疊來完成程式：AEM核心元件搭配AEM Author上的HTL和Java、Edge Delivery上的JS型區塊，以及nodeJS型轉換器。
+第二階段會透過消除技術重疊來完成流程：AEM Author 上有 HTL 和 Java 的 AEM 核心元件、Edge Delivery 上以 JS 為主的區塊，還有以 NodeJS 為主的轉換器。
 
-## 階段2 — 切換至通用編輯器 {#switch-ue}
+## 第 2 階段 - 切換至 Universal Editor {#switch-ue}
 
-在此階段中，AEM頁面編輯器將取代為通用編輯器。 由於通用編輯器可直接處理區塊，因此不再需要AEM核心元件和轉換工具。
+在這個階段中，AEM 頁面編輯器將會由 Universal Editor 取代。由於 Universal Editor 可以直接使用區塊，因此不再需要 AEM 核心元件和轉換器。
 
 ## 如何開始使用 {#how-to-get-started}
 
-請聯絡您的Adobe代表以取得此功能的存取權。
+請聯絡您的 Adob&#x200B;&#x200B;e 代表，要求使用此功能的存取權。

@@ -1,14 +1,15 @@
 ---
-description: 建立自動產生的Sitemap檔案，以從您的'robots.txt'參照。 這有助於SEO和新內容的探索。
-title: Sitemap
+description: 建立自動產生的 Sitemap 檔案，以便從 `robots.txt` 引用。這有助於 SEO 和發現新內容。
+title: Sitemaps
 feature: Edge Delivery Services
-source-git-commit: 80d974c23cb3dd7c0844b4d2cec2b608ff813438
-workflow-type: tm+mt
+exl-id: cdc12747-6003-4744-819e-d17e010901e7
+source-git-commit: 05548d56d791584781606b02839c5602b4469f7b
+workflow-type: ht
 source-wordcount: '23'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# Sitemap
+# Sitemaps
 
 {{$include 7eabcf2c-c92a-4be5-9ada-c1903f5c2116}}

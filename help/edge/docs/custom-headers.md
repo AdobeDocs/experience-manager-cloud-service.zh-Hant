@@ -1,14 +1,15 @@
 ---
-description: 在某些情況下，將自訂HTTP回應標頭套用至資源會很有用，例如允許CORS。 如果您想要指定標題，請在Sharepoint或Google Drive中，於網站的「/.helix」資料夾中建立Excel活頁簿或SharePoint中的Google Sheets活頁簿（名為「headers.xlsx」），或在Google Drive中建立「標題」。
-title: 自訂HTTP回應標題
+description: 在某些情況下，將自訂 HTTP 回應標題套用至資源很有用，例如允許 CORS。如果要指定標題，請在 Sharepoint 或 Google 磁碟機中您網站的 `/.helix` 資料夾內建立一個 Excel 活頁簿或 Google Sheets 活頁簿；在 SharePoint 名為 `headers.xlsx` 或在 Google 磁碟機中名為 `headers`。
+title: 自訂 HTTP 回應標題
 feature: Edge Delivery Services
-source-git-commit: 80d974c23cb3dd7c0844b4d2cec2b608ff813438
-workflow-type: tm+mt
+exl-id: ae386f02-05fd-4a6a-8285-58f207fed7bc
+source-git-commit: 05548d56d791584781606b02839c5602b4469f7b
+workflow-type: ht
 source-wordcount: '65'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# 自訂HTTP回應標題
+# 自訂 HTTP 回應標題
 
 {{$include b42d32e7-04c5-4afc-8085-7213e70db68a}}

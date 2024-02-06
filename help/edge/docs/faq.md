@@ -1,14 +1,15 @@
 ---
 description: '[image0]： https://www.aem.live/media_1eae7d48a2a73903d8c880cb8cf2dcfad47f73291.png#width=1600&height=1200'
-title: 常見問答
+title: 常見問題
 feature: Edge Delivery Services
-source-git-commit: 80d974c23cb3dd7c0844b4d2cec2b608ff813438
-workflow-type: tm+mt
+exl-id: 1fd0f7a2-dcc8-4600-8353-7750ed6a2937
+source-git-commit: 05548d56d791584781606b02839c5602b4469f7b
+workflow-type: ht
 source-wordcount: '8'
-ht-degree: 75%
+ht-degree: 100%
 
 ---
 
-# 常見問答
+# 常見問題
 
 {{$include ab7f08cb-3416-4730-a367-3bd7bde6901a}}
