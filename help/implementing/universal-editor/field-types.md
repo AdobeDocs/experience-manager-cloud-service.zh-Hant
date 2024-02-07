@@ -2,9 +2,9 @@
 title: 模型定義、欄位和元件型別
 description: 透過範例瞭解屬性邊欄中通用編輯器可編輯的欄位和元件型別。 瞭解如何建立模型定義並連結至元件，以裝備您自己的應用程式。
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
-source-git-commit: c721e2f5f14e9d1c069e1dd0a00609980db6bd9d
+source-git-commit: 550d26cde3d6b7be419bc9df70db8894851361c6
 workflow-type: tm+mt
-source-wordcount: '1000'
+source-wordcount: '1004'
 ht-degree: 11%
 
 ---
@@ -81,7 +81,7 @@ ht-degree: 11%
 | `required` | `boolean` | 欄位是否為必填欄位 | 否 |
 | `readOnly` | `boolean` | 欄位是否為唯讀 | 否 |
 | `hidden` | `boolean` | 預設為隱藏欄位 | 否 |
-| `condition` | `RulesLogic` | 顯示或隱藏欄位的規則 | 否 |
+| `condition` | `RulesLogic` | 顯示或隱藏欄位的規則，根據 [條件](/help/implementing/universal-editor/customizing.md#conditionally-hide) | 否 |
 | `multi` | `boolean` | 此欄位是否為多個欄位 | 否 |
 | `validation` | `ValidationType` | 欄位的驗證規則 | 否 |
 | `raw` | `unknown` | 元件可使用的原始資料 | 否 |

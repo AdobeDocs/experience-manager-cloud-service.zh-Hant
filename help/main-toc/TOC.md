@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的運作方式以及該軟體可以為您做哪些事。
 breadcrumb-title: 使用手冊
 user-guide-title: AEM as a Cloud Service
-source-git-commit: f04ab32093371ff425c4e196872738867d9ed528
+source-git-commit: 3d5901e6543b0b5d3214e69c5119367eeb71bf07
 workflow-type: tm+mt
-source-wordcount: '4631'
+source-wordcount: '4633'
 ht-degree: 99%
 
 ---
@@ -766,11 +766,12 @@ ht-degree: 99%
 + Edge Delivery Services {#edge-delivery}
    + [AEM 和 Edge Delivery Services](/help/edge/overview.md)
    + [使用 Edge Delivery](/help/edge/using.md)
+   + [開發人員快速入門手冊](/help/edge/edge-dev-getting-started.md)
    + [為 Edge Delivery 製作內容](/help/edge/authoring.md)
    + [為 Edge Delivery 發佈內容](/help/edge/publishing.md)
    + [為 Edge Delivery 開發](/help/edge/developing.md)
+   + [內容模型](/help/edge/content-modeling.md)
    + [現有專案和 Edge Delivery](/help/edge/existing-projects.md)
-   + [開發人員快速入門手冊](/help/edge/edge-dev-getting-started.md)
    + 建置 Edge Delivery 應用程式 {#build}
       + [快速入門 - 開發人員教學課程](/help/edge/developer/tutorial.md)
       + [專案剖析](/help/edge/developer/anatomy-of-a-franklin-project.md)
