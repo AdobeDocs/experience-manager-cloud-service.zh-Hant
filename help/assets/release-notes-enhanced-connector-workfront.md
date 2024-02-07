@@ -2,10 +2,10 @@
 title: ' [!DNL Workfront for Experience Manager enhanced connector] 版發行說明'
 description: ' [!DNL Workfront for Experience Manager enhanced connector] 版發行說明'
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
-source-git-commit: b1c5df329e45128704ae82f49673c6a755a61a73
-workflow-type: ht
-source-wordcount: '1573'
-ht-degree: 100%
+source-git-commit: 439ae08bb606d6d335fa189e99c1b483f636683e
+workflow-type: tm+mt
+source-wordcount: '1624'
+ht-degree: 96%
 
 ---
 
@@ -15,11 +15,34 @@ ht-degree: 100%
 
 ## 發行日期 {#release-date}
 
-[!DNL Workfront for Experience Manager enhanced connector] 的最新版本 1.9.16 發布日期是 2024 年 1 月 19 日。
+最新版本1.9.17的發行日期 [!DNL Workfront for Experience Manager enhanced connector] 是2024年2月7日。
 
 ## 版本重點 {#release-highlights}
 
 [!DNL Workfront for Experience Manager enhanced connector] 的最新版本包括以下錯誤修復：
+
+* 啟用切換功能以允許AEM Cloud客戶設定聯結器。
+
+* 關閉 `resourceResolver` 如果未明確關閉基礎工作階段，則會導致AEM例項的工作階段發生洩漏情形。 明確地關閉工作階段非常重要，因為自動關閉資源解析器不會以隱含的方式關閉工作階段。
+
+>[!NOTE]
+>
+>AEM 6.4 的延伸支援已結束。請參閱我們的[技術支援期](https://helpx.adobe.com/tw/support/programs/eol-matrix.html)。請到[這裡](https://experienceleague.adobe.com/docs/?lang=en)尋找支援的版本。
+
+
+>[!IMPORTANT]
+>
+>Adobe 推薦[升級到最新 1.9.17 版本 ](/help/assets/workfront-connector-install.md) 的 [!DNL Workfront for Experience Manager enhanced connector]。
+
+## 已知問題 {#known-issues}
+
+* 使用 AEM 6.4 設定專案連結的資料夾時，Experience Manager 並未儲存「**[!UICONTROL 子資料夾]**」和「**[!UICONTROL 在產品組合的專案中建立連結的資料夾]**」欄位的值。「**[!UICONTROL 子資料夾]**」欄位的值更新為&#x200B;**[!UICONTROL 未定義的]**，而「**[!UICONTROL 在產品組合的專案中建立連結的資料夾]**」欄位的值在儲存設定之後自動更新為&#x200B;**[!UICONTROL 預設產品組合]**。
+
+* 在使用傳統 Workfront 體驗時，「**[!UICONTROL 更多]**」下拉式清單中的「**[!UICONTROL 傳送至]**」選項不允許您在 Experience Manager 之內選取目標目的地。使用「**[!UICONTROL 文件動作]**」下拉式清單時，「**[!UICONTROL 傳送至]**」選項正常運作。在使用新的 Workfront 體驗時，「**[!UICONTROL 更多]**」下拉式清單和「**[!UICONTROL 文件動作]**」下拉式清單的「**[!UICONTROL 傳送至]**」選項正常運作。
+
+## 舊版本 {#previous-releases}
+
+### 2024 年 1 月版 {#january-2023-release}
 
 * [!DNL CRX DE] 中的 [!DNL Workfront] 設定目前不儲存 `project ID`，導致套用唯讀權限時發生錯誤。詳細了解如何[設定權限](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/integrations/workfront-connector-configure.html#linked-folders)。
 
@@ -36,23 +59,6 @@ ht-degree: 100%
 * AEM 中對大檔案資源的支援不足會導致 4 位元組大小問題。
 
 * 連結資料夾、文件更新和註釋更新中的關鍵流程無需請求時間處理。
-
->[!NOTE]
->
->AEM 6.4 的延伸支援已結束。請參閱我們的[技術支援期](https://helpx.adobe.com/tw/support/programs/eol-matrix.html)。請到[這裡](https://experienceleague.adobe.com/docs/?lang=en)尋找支援的版本。
-
-
->[!IMPORTANT]
->
->Adobe 推薦[升級到最新 1.9.16 版本 ](/help/assets/workfront-connector-install.md) 的 [!DNL Workfront for Experience Manager enhanced connector]。
-
-## 已知問題 {#known-issues}
-
-* 使用 AEM 6.4 設定專案連結的資料夾時，Experience Manager 並未儲存「**[!UICONTROL 子資料夾]**」和「**[!UICONTROL 在產品組合的專案中建立連結的資料夾]**」欄位的值。「**[!UICONTROL 子資料夾]**」欄位的值更新為&#x200B;**[!UICONTROL 未定義的]**，而「**[!UICONTROL 在產品組合的專案中建立連結的資料夾]**」欄位的值在儲存設定之後自動更新為&#x200B;**[!UICONTROL 預設產品組合]**。
-
-* 在使用傳統 Workfront 體驗時，「**[!UICONTROL 更多]**」下拉式清單中的「**[!UICONTROL 傳送至]**」選項不允許您在 Experience Manager 之內選取目標目的地。使用「**[!UICONTROL 文件動作]**」下拉式清單時，「**[!UICONTROL 傳送至]**」選項正常運作。在使用新的 Workfront 體驗時，「**[!UICONTROL 更多]**」下拉式清單和「**[!UICONTROL 文件動作]**」下拉式清單的「**[!UICONTROL 傳送至]**」選項正常運作。
-
-## 舊版本 {#previous-releases}
 
 ### 2023 年 11 月版 {#november-2023-release}
 
