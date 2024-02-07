@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的運作方式以及該軟體可以為您做哪些事。
 breadcrumb-title: 使用手冊
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 3d5901e6543b0b5d3214e69c5119367eeb71bf07
+source-git-commit: c986f817b2dc81e03b9c6f725d8754f017a585dd
 workflow-type: tm+mt
 source-wordcount: '4633'
 ht-degree: 99%
@@ -78,15 +78,15 @@ ht-degree: 99%
    + AEMaaCS 維護版本發行說明{#maintenance}
       + [目前維護版本發行說明](/help/release-notes/maintenance/latest.md)
       + 2023 {#2023}
-         + [2023.11.0 維護版本發行說明](/help/release-notes/maintenance/2023/2023.11.0.md)
-         + [2023.10.0 維護版本發行說明](/help/release-notes/maintenance/2023/2023.10.0.md)
-         + [2023.9.0 維護版本發行說明](/help/release-notes/maintenance/2023/2023.9.0.md)
-         + [2023.8.0 維護版本發行說明](/help/release-notes/maintenance/2023/2023.8.0.md)
-         + [2023.7.0 維護版本發行說明](/help/release-notes/maintenance/2023/2023.7.0.md)
-         + [2023.6.0 維護版本發行說明](/help/release-notes/maintenance/2023/2023.6.0.md)
-         + [2023.4.0 維護版本發行說明](/help/release-notes/maintenance/2023/2023.4.0.md)
-         + [2023.2.0 維護版本發行說明](/help/release-notes/maintenance/2023/2023.2.0.md)
-         + [2023.1.0 維護版本發行說明](/help/release-notes/maintenance/2023/2023.1.0.md)
+         + [2023.11.0 維護版本發行說明](/help/release-notes/maintenance/2023/2023-11-0.md)
+         + [2023.10.0 維護版本發行說明](/help/release-notes/maintenance/2023/2023-10-0.md)
+         + [2023.9.0 維護版本發行說明](/help/release-notes/maintenance/2023/2023-9-0.md)
+         + [2023.8.0 維護版本發行說明](/help/release-notes/maintenance/2023/2023-8-0.md)
+         + [2023.7.0 維護版本發行說明](/help/release-notes/maintenance/2023/2023-7-0.md)
+         + [2023.6.0 維護版本發行說明](/help/release-notes/maintenance/2023/2023-6-0.md)
+         + [2023.4.0 維護版本發行說明](/help/release-notes/maintenance/2023/2023-4-0.md)
+         + [2023.2.0 維護版本發行說明](/help/release-notes/maintenance/2023/2023-2-0.md)
+         + [2023.1.0 維護版本發行說明](/help/release-notes/maintenance/2023/2023-1-0.md)
    + Cloud Manager 發行說明 {#cloud-manager}
       + [最新發行說明](/help/implementing/cloud-manager/release-notes/current.md)
       + 2023 {#2023}
