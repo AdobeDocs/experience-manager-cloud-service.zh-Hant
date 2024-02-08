@@ -4,9 +4,9 @@ description: 了解 Edge Delivery Services 提供的效能和完善 Lighthouse �
 feature: Edge Delivery Services
 exl-id: 03a1aa93-d2e6-4175-9cf3-c7ae25c0d24e
 source-git-commit: 7d28a3a8304d79ecc3143bdc9373134d312af49d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '868'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -43,7 +43,7 @@ Edge Delivery Services 使用 GitHub，因此客戶可以直接從其 GitHub 存
 
 Edge Delivery Services 屬於 Adobe Experience Manager 的一部分，因此 Edge Delivery Services 和 AEM 網站可以在相同網域中共存。這是較大型網站的常見使用案例。最重要的是，可以在 AEM Sites 頁面中輕鬆使用來自 Edge Delivery Services 的內容，反之亦然。
 
-請參閱 [使用Edge Delivery Services進行AEM編寫的開發人員快速入門手冊](/help/edge/edge-dev-getting-started.md) 以瞭解如何開始您自己的專案，以便使用AEM和Edge Delivery Services進行創作。
+請參閱「[使用 Edge Delivery Services 進行 AEM 製作的開發人員入門指南](/help/edge/edge-dev-getting-started.md)」，了解如何展開您自己的專案並使用 AEM 和 Edge Delivery Services 進行製作。
 
 您也可以將 Edge Delivery Services 與 Adobe Target、Analytics 和 Launch 一起使用。
 

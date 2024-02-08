@@ -3,9 +3,9 @@ title: 為 AEM as a Cloud Service 設定進階網路
 description: 了解如何為 AEM as a Cloud Service 設定進階網路功能，例如 VPN 或彈性或專用輸出 IP 地址等
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
 source-git-commit: dfeeaca8341abec5d4fd518957baf6936a21aea3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3540'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -344,13 +344,13 @@ VPN 允許從著作、發佈或預覽連線到內部部署基礎結構或資料�
 
 它還允許連線到 SaaS 廠商，例如支援 VPN 的 CRM 廠商，或從公司網路連線到 AEM as a Cloud Service 著作、預覽或發佈。
 
-支援大多數採用 IPSec 技術的 VPN 裝置。請查閱[本頁](https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpn-devices#devicetable)的裝置清單，根據 **RouteBased 設定指示**&#x200B;欄中的資訊。按照表中所述設定裝置。
+支援大多數採用 IPSec 技術的 VPN 裝置。請查閱[本頁](https://docs.microsoft.com/zh-tw/azure/vpn-gateway/vpn-gateway-about-vpn-devices#devicetable)的裝置清單，根據 **RouteBased 設定指示**&#x200B;欄中的資訊。按照表中所述設定裝置。
 
 ### 一般考量 {#general-vpn-considerations}
 
 * 支援僅限於單一 VPN 連線
 * Splunk 轉送功能無法透過 VPN 連線提供。
-* DNS解析器必須列在閘道位址空間中，才能解析私人主機名稱。
+* DNS Resolver 必須列在閘道位址空間中才能解析私有主機名稱。
 
 ### 建立 {#vpn-creation}
 
@@ -491,7 +491,7 @@ API 應該在幾秒鐘內做出回應，表明 `updating` 的狀態，大約 10 
   </tr>
   <tr>
     <td><code>p{PROGRAM_ID}.{REGION}-gateway.external.adobeaemcloud.com</code></td>
-    <td>N/A</td>
+    <td>不適用</td>
     <td>AEM 端 VPN 閘道的 IP。客戶的網路工程團隊可以使用此項，僅允許從特定 IP 位址的 VPN 連線到他們的 VPN 閘道。 </td>
   </tr>
   <tr>

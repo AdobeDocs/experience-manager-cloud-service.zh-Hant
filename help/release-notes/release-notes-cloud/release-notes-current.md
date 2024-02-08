@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 最新發行�
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 source-git-commit: 77d38f03f18eb6b0fdc2f2eec5b2dc4b608b8057
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '781'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -46,7 +46,7 @@ ht-degree: 96%
 
 ![AEM Sites 的 Extension Manager](/help/assets/sites/extension-manager/homepage.png)
 
-AEM Sites中的Extension Manager可讓開發人員和從業人員存取、管理和自訂 [UI擴充功能](https://developer.adobe.com/uix/docs/) 建置方式 [AdobeApp Builder](https://developer.adobe.com/app-builder/) 以增強AEM Sites的功能。
+AEM Sites 中的 Extension Manager 可讓開發人員和從業人員存取、管理和自訂 [UI 擴充功能](https://developer.adobe.com/uix/docs/)；此功能是透過 [Adobe 應用程式建立工具](https://developer.adobe.com/app-builder/)所建立，可增強 AEM Sites 的功能。
 Extension Manager 可讓您：
 
 * 根據每個實例啟用或停用擴充功能；
