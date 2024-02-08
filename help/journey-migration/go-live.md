@@ -111,7 +111,7 @@ ht-degree: 4%
 
 以上兩個專案均可識別並回報 [Best Practice Analyzer](/help/journey-migration/best-practices-analyzer/overview-best-practices-analyzer.md) 報告。
 
-## 上線檢查清單 {#Go-Live-Checklist}
+## 內容上線檢查清單 {#Go-Live-Checklist}
 
 請檢閱此活動清單，以確保您順利且成功地執行移轉。
 

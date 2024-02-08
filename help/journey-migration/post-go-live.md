@@ -4,8 +4,8 @@ description: 瞭解如何監控問題並改善效能
 exl-id: 487f0b51-501b-48fc-a796-3cb8a6d64462
 source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '482'
-ht-degree: 29%
+source-wordcount: '459'
+ht-degree: 22%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 29%
 
 此歷程是最後一部分，因此您將瞭解如何監視問題，並在移轉完成後改善效能。 您應該確保清理暫存檔，並檢閱持續開發的最佳實務和管理記錄。
 
-## 到目前為止 {#story-so-far}
+## 目前進度 {#story-so-far}
 
 在此歷程的上一步中，您已瞭解如何執行移轉並 [上線](/help/journey-migration/go-live.md) 在程式碼和內容準備好移至AEMas a Cloud Service後。
 
@@ -32,7 +32,7 @@ ht-degree: 29%
 * **CRXDE Lite**
 * **管理記錄**
 
-## 開發人員控制台 {#developer-console}
+## 開發人員主控台 {#developer-console}
 
 在開發、預備和生產環境的開發人員控制檯中，提供對AEMas a Cloud Service開發人員環境進行偵錯的功能。
 
@@ -40,14 +40,14 @@ ht-degree: 29%
 
 ## CRXDE Lite {#crxde-lite}
 
-身為使用者，您可以在開發環境中存取 CRXDE Lite，但不能在預備或生產環境中存取。
+身為使用者，您可以在開發環境中存取CRXDE Lite，但不能在預備或生產環境中存取。
 
 >[!IMPORTANT]
 >寫入不可變的存放庫，例如 `/libs` 和 `/apps` 在執行階段導致錯誤。 此外，您也無法存取預備和生產環境的開發人員工具。
 
 另請參閱 [使用CRXDE Lite開發](/help/implementing/developing/tools/crxde.md) 有關如何使用CRXDE Lite開發您的AEM應用程式的詳細資訊。
 
-## 管理記錄 {#managing-logs}
+## 管理記錄檔 {#managing-logs}
 
 使用者可以存取所選環境的可用記錄檔清單。
 

@@ -60,7 +60,7 @@ Cloud Service結合了Adobe Experience Manager豐富的現成可用功能及擴�
 >[!TIP]
 > 請參閱教學課程，瞭解如何 [在本機Experience ManagerSDK上開發和部署WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
 
-### 部署
+### 部署中
 
 開發人員撰寫程式碼並在本機進行測試，然後推送至遠端AEMas a Cloud Service環境。
 
@@ -130,7 +130,7 @@ Cloud Service結合了Adobe Experience Manager豐富的現成可用功能及擴�
 <td><ul><li>另請參閱 <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/aem-cloud-changes.html">Experience Manageras a Cloud Service重大變更</a> 來瞭解Adobe Experience Manager as a Cloud Service和Experience Manager 6.x之間的重要差異。</li><li>另請參閱 <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/deprecated-removed-features.html">已棄用的功能</a> 以進一步瞭解已標示為過時的功能。</li><li>[僅適用於Cloud Service移轉]評估Cloud Service整備：執行 <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html?lang=zh-Hant">Best Practices Analyzer (BPA)</a> 在來源環境中 </li><li>針對Experience Manager CS中的重大變更和已棄用功能完成評估</li></ul></td>
 </tr>
 <tr>
-<td>評論</td>
+<td>檢閱</td>
 <td><ul><li>根據探索，執行工作量估計和資源配置練習</li></ul></td>
 </tr>
 <tr>

@@ -4,7 +4,7 @@ description: 瞭解AEMas a Cloud Service中的維護任務以及如何進行設�
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 source-git-commit: 35223fba365cf55fca51eb8420b7217ec3e95ccc
 workflow-type: tm+mt
-source-wordcount: '1111'
+source-wordcount: '1127'
 ht-degree: 12%
 
 ---
@@ -130,7 +130,7 @@ ht-degree: 12%
     </td>
   </tr>
   <tr>
-    <td>每月</td>
+    <td>依月</td>
     <td>客戶</td>
     <td>jcr節點定義</td>
     <td>
@@ -145,7 +145,7 @@ ht-degree: 12%
     </tbody>
 </table>
 
-**位置**:
+**位置**：
 
 * 每日 — /apps/settings/granite/operations/maintenance/granite_daily
 * 每週 — /apps/settings/granite/operations/maintenance/granite_weekly
