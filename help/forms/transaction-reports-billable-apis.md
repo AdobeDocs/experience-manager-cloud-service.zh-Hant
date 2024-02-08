@@ -4,10 +4,10 @@ description: 作為交易入帳的所有API清單
 feature: Adaptive Forms, Foundation Components
 hide: true
 hidefromtoc: true
-source-git-commit: a1a87a27d73d7472ec02de37621123bbdd3876b4
+source-git-commit: 7318c5e65fc03bfebbf5fb43e4edc30ffbb53909
 workflow-type: tm+mt
-source-wordcount: '1334'
-ht-degree: 4%
+source-wordcount: '1598'
+ht-degree: 3%
 
 ---
 
@@ -31,44 +31,42 @@ AEM Forms提供多個API來提交表單、處理檔案和轉譯檔案。 有些A
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_submission_graph_en"
 >title="表單提交追蹤器"
->abstract="透過整合檢視輕鬆追蹤表單提交的總計數，或深入瞭解執行個體特定的詳細資訊。 使用直覺式長條圖來識別趨勢、比較例項，並快速做出明智的決策。"
+>abstract="使用我們的直覺式追蹤控制面板，在AEM Forms Publish執行個體上輕鬆監控表單提交。 圖表提供目前執行個體特有的資料，可讓您快速分析趨勢並做出明智的決策。 對於其他執行個體的提交資料，僅需存取個別執行個體的控制面板。"
 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_conversions_graph_en"
 >title="表單轉換追蹤器"
->abstract="輕鬆掌握表單轉換的總數摘要，或探索每個AEM Forms執行個體的詳細資訊。 易讀的橫條圖有助於找出趨勢、比較例項，以及做出快速、明智的決策。"
+>abstract="透過轉換總數摘要掌握表單轉換的最新資訊。 圖表提供目前AEM Forms Publish例項的特定資料，讓您快速分析趨勢並做出明智的決策。 若要檢視其他執行個體的轉換資料，請存取個別執行個體的控制面板。"
 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_formCreationAvgDuration_graph_en"
 >title="表單產生的平均持續時間"
->abstract="圖表說明建立表單所用的平均時間。 圖表上的每個長條代表特定表單，長條的高度代表該時間範圍內建立表單所用的平均持續時間。 分析此圖表可協助使用者瞭解不同期間或不同內容中表單建立的效率和速度，進而瞭解可能的改善專案。"
+>abstract="圖表說明建立表單所用的平均時間。 圖表上的每個長條代表特定表單，長條的高度代表該時間範圍內建立表單所用的平均持續時間。 分析此圖表可協助使用者瞭解不同期間或不同內容中表單建立的效率和速度，進而瞭解可能的改善專案。 圖表提供目前AEM Forms製作例項的特定資料。 若要檢視其他執行個體的資料，請存取個別執行個體的控制面板。"
 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_formPublishAvgDuration_en"
 >title="建立表單的平均持續時間"
->abstract="圖形顯示建立和發佈表單所需的平均時間，從開啟表單進行編輯的初始日期開始計算。 每個長條會對應至表單的特定時間範圍，長條高度會指出從表單開發開始到最終完成及發佈所花費的平均時間。"
+>abstract="圖形顯示建立和發佈表單所需的平均時間，從開啟表單進行編輯的初始日期開始計算。 每個長條會對應至表單的特定時間範圍，長條高度會指出從表單開發開始到最終完成及發佈所花費的平均時間。 圖表提供目前AEM Forms製作例項的特定資料。 若要檢視其他執行個體的資料，請存取個別執行個體的控制面板。"
 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_newForms_graph_en"
 >title="新增Forms追蹤器"
->abstract="圖表會提供特定時段內新建立表單的數量或頻率的相關資訊。 圖表上的每個長條代表不同的測量單位，例如日、周或月。 每個長條的高度表示在該特定間隔內建立的新表單的數量或頻率。"
+>abstract="圖表會提供特定時段內新建立表單的數量或頻率的相關資訊。 圖表上的每個長條代表不同的測量單位，例如日、周或月。 每個長條的高度表示在該特定間隔內建立的新表單的數量或頻率。 圖表提供目前AEM Forms製作例項的特定資料。 若要檢視其他執行個體的資料，請存取個別執行個體的控制面板。"
 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_publishedForms_graph_en"
 >title="已發佈Forms追蹤器"
->abstract="圖表提供特定時段內已成功發佈之表單的數量或頻率的相關資訊。 這可讓您瞭解表單發佈在一段時間內的趨勢、模式或變數，有助於監控生產力、識別尖峰發佈期間，或評估表單發佈程式中變更的成功程度。"
+>abstract="圖表提供特定時段內已成功發佈之表單的數量或頻率的相關資訊。 這可讓您瞭解表單發佈在一段時間內的趨勢、模式或變數，有助於監控生產力、識別尖峰發佈期間，或評估表單發佈程式中變更的成功程度。 圖表提供目前AEM Forms發佈執行個體專屬的資料。 若要檢視其他執行個體的轉換資料，請存取個別執行個體的控制面板。"
 
-<!-- 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_formFragments_graph_en"
->title="Form Fragments Tracker"
->abstract="This graph helps you see how many form fragments people use in their forms. It gives you a sense of how popular or common these reusable parts are in form building."
+>title="已發佈Forms追蹤器"
+>abstract="此圖表可協助您檢視使用者在其表單中使用的表單片段數量。 它可讓您瞭解這些可重複使用零件在表單構建中的受歡迎程度或常見程度。 圖表提供目前AEM Forms發佈執行個體專屬的資料。 若要檢視其他執行個體的轉換資料，請存取個別執行個體的控制面板。"
 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_avgFormPerFragments_graph_en"
->title="Average Duration for Form Fragments Creation"
->abstract= "The graph displays the average time taken to create a form fragment, measured from the initial day the form fragment was opened for editing. Each bar corresponds to a specific time frame for a form fragment, with the bar height indicating the average time taken from the start of form fragment development to its finalization and publication."
-
+>title="已發佈Forms追蹤器"
+>abstract="圖形顯示建立表單片段的平均所用時間，從初始開啟表單片段進行編輯之日算起。 每個長條會對應至表單片段的特定時間範圍，而長條高度則表示從表單片段開發開始到其完成和發佈所花費的平均時間。 圖表提供目前AEM Forms發佈執行個體專屬的資料。 若要檢視其他執行個體的轉換資料，請存取個別執行個體的控制面板。"
 
 <!-- 
 
