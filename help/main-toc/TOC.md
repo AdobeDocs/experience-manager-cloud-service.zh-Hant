@@ -678,9 +678,9 @@ ht-degree: 99%
       + [使用 Forms Designer 建立範本](/help/forms/use-forms-designer.md)
       + [在 PDF 文件中使用自訂字型](/help/forms/use-custom-fonts.md)
       + [已知問題、最佳做法和常見問題集](/help/forms/communications-known-issues-limitations.md)
-   + 交易報告 {#using-communications}
-      + [交易報表可記帳API](/help/forms/transaction-reports-billable-apis.md)
-      + [記錄自訂實作的交易](/help/forms/record-transaction-custom-implementation.md)
+   + 交易報告{#using-communications}
+      + [交易報告計費 API](/help/forms/transaction-reports-billable-apis.md)
+      + [記錄自訂實施的交易](/help/forms/record-transaction-custom-implementation.md)
    + 開發人員 API 參考 {#aem-forms-developer-api-reference}
       + [最適化表單 API 參考](https://developer-stage.adobe.com/experience-cloud/experience-manager-apis/api/stable/forms/)
       + [AEM Forms as a Cloud Service 通訊 API 參考](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)
@@ -766,7 +766,7 @@ ht-degree: 99%
 + Edge Delivery Services {#edge-delivery}
    + [AEM 和 Edge Delivery Services](/help/edge/overview.md)
    + [使用 Edge Delivery](/help/edge/using.md)
-   + [開發人員快速入門手冊](/help/edge/edge-dev-getting-started.md)
+   + [開發人員快速入門指南](/help/edge/edge-dev-getting-started.md)
    + [為 Edge Delivery 製作內容](/help/edge/authoring.md)
    + [為 Edge Delivery 發佈內容](/help/edge/publishing.md)
    + [為 Edge Delivery 開發](/help/edge/developing.md)
@@ -1124,7 +1124,7 @@ ht-degree: 99%
       + [AEM 中 Universal Editor 快速入門](/help/implementing/universal-editor/getting-started.md)
       + [Universal Editor 開發人員概觀](/help/implementing/universal-editor/developer-overview.md)
       + [屬性和項目類型](/help/implementing/universal-editor/attributes-types.md)
-      + [模型定義、欄位和元件型別](/help/implementing/universal-editor/field-types.md)
+      + [模型定義、欄位和元件類型](/help/implementing/universal-editor/field-types.md)
       + [Universal Editor 驗證](/help/implementing/universal-editor/authentication.md)
       + [使用 Universal Editor 進行本機 AEM 開發](/help/implementing/universal-editor/local-dev.md)
       + [Universal Editor 呼叫](/help/implementing/universal-editor/calls.md)
