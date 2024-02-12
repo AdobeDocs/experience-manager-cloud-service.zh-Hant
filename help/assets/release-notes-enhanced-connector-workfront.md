@@ -3,9 +3,9 @@ title: ' [!DNL Workfront for Experience Manager enhanced connector] 版發行說
 description: ' [!DNL Workfront for Experience Manager enhanced connector] 版發行說明'
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
 source-git-commit: 439ae08bb606d6d335fa189e99c1b483f636683e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1624'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -15,15 +15,15 @@ ht-degree: 96%
 
 ## 發行日期 {#release-date}
 
-最新版本1.9.17的發行日期 [!DNL Workfront for Experience Manager enhanced connector] 是2024年2月7日。
+[!DNL Workfront for Experience Manager enhanced connector] 的最新版本 1.9.17 發行日期是 2024 年 2 月 7 日。
 
 ## 版本重點 {#release-highlights}
 
 [!DNL Workfront for Experience Manager enhanced connector] 的最新版本包括以下錯誤修復：
 
-* 啟用切換功能以允許AEM Cloud客戶設定聯結器。
+* 啟用切換功能以允許 AEM Cloud 客戶配置和設定連接器。
 
-* 關閉 `resourceResolver` 如果未明確關閉基礎工作階段，則會導致AEM例項的工作階段發生洩漏情形。 明確地關閉工作階段非常重要，因為自動關閉資源解析器不會以隱含的方式關閉工作階段。
+* 在未明確關閉基礎工作階段的情況下關閉 `resourceResolver` 會導致 AEM 執行個體發生工作階段洩漏。明確關閉工作階段至關重要，因為自動關閉 Resource Resolver 不會隱含地關閉工作階段。
 
 >[!NOTE]
 >
@@ -32,7 +32,7 @@ ht-degree: 96%
 
 >[!IMPORTANT]
 >
->Adobe 推薦[升級到最新 1.9.17 版本 ](/help/assets/workfront-connector-install.md) 的 [!DNL Workfront for Experience Manager enhanced connector]。
+>Adobe 建議[升級到最新 1.9.17 版本](/help/assets/workfront-connector-install.md)的 [!DNL Workfront for Experience Manager enhanced connector]。
 
 ## 已知問題 {#known-issues}
 
