@@ -2,9 +2,9 @@
 title: 適用於AEM開發人員的通用編輯器總覽
 description: 如果您是AEM開發人員，且對Universal Editor的運作方式及如何在您的專案中使用它感興趣，本檔案將引導您檢測WKND專案以使用Universal Editor，為您提供端對端的簡介。
 exl-id: d6f9ed78-f63f-445a-b354-f10ea37b0e9b
-source-git-commit: d7154fcec9cf6e3cb00ce8e434e38544294df165
+source-git-commit: 3dff6fa71c29da70daba80176d2fe51ef1e05200
 workflow-type: tm+mt
-source-wordcount: '3112'
+source-wordcount: '3139'
 ht-degree: 1%
 
 ---
@@ -150,7 +150,7 @@ X-Frame選項 `sameorigin` 防止在框架中呈現AEM頁面。 您必須移除�
 1. 將JavaScript程式庫新增至檔案結尾。
 
    ```html
-   <script src="https://cdn.jsdelivr.net/gh/adobe/universal-editor-cors/dist/universal-editor-embedded.js"></script>
+   <script src="https://universal-editor-service.experiencecloud.live/corslib/LATEST"></script>
    ```
 
 1. 按一下 **全部儲存** 然後重新載入通用編輯器。
@@ -183,6 +183,8 @@ WKND頁面現在會在通用編輯器中成功載入，且JavaScript程式庫會
    ```html
    <meta name="urn:adobe:aue:system:aem" content="aem:https://localhost:8443">
    ```
+
+   * 一律建議使用最新版本的程式庫。 如果您需要舊版，請參閱檔案 [AEM中的通用編輯器快速入門。](/help/implementing/universal-editor/getting-started.md#alternative)
 
 1. 將連線至本機Universal Editor服務的必要中繼資料新增至檔案結尾。
 

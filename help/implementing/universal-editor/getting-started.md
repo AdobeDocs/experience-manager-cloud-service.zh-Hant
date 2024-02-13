@@ -2,10 +2,10 @@
 title: AEM 中 Universal Editor 快速入門
 description: 了解如何存取 Universal Editor，以及如何開始檢測您的第一個 AEM 應用程式以使用它。
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
-source-git-commit: f9d584d7b117c24224079f581802f5f126890304
+source-git-commit: 3dff6fa71c29da70daba80176d2fe51ef1e05200
 workflow-type: tm+mt
-source-wordcount: '871'
-ht-degree: 73%
+source-wordcount: '921'
+ht-degree: 69%
 
 ---
 
@@ -62,8 +62,15 @@ import "@adobe/universal-editor-cors";
 如果您未實作React應用程式和/或需要伺服器端轉譯，另一種方法是在檔案本文中納入以下內容。
 
 ```html
-<script src="https://cdn.jsdelivr.net/gh/adobe/universal-editor-cors/dist/universal-editor-embedded.js" async></script>
+<script src="https://universal-editor-service.experiencecloud.live/corslib/LATEST" async></script>
 ```
+
+我們一律會建議使用最新版本，但若發生重大變更，可參考舊版服務。
+
+* `https://universal-editor-service.experiencecloud.live/corslib/LATEST`  — 最新UE CORS程式庫
+* `https://universal-editor-service.experiencecloud.live/corslib/2/LATEST` - 2.x版下最新的UE CORS程式庫
+* `https://universal-editor-service.experiencecloud.live/corslib/2.1/LATEST` - 2.1.x版底下最新的UE CORS程式庫
+* `https://universal-editor-service.experiencecloud.live/corslib/2.1.1` — 完全相同的UE CORS程式庫2.1.1版
 
 ## 新增必要的 OSGi 設定 {#osgi-configurations}
 
