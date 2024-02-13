@@ -5,10 +5,10 @@ keywords: 新增自訂函式、使用自訂函式、建立自訂函式，以及�
 contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms, Core Components
-source-git-commit: 28020b05e4aaaa3f066943e0504f05e307c7020b
+source-git-commit: 1fb7fece71eec28219ce36c72d628867a222b618
 workflow-type: tm+mt
-source-wordcount: '763'
-ht-degree: 8%
+source-wordcount: '779'
+ht-degree: 10%
 
 ---
 
@@ -43,9 +43,9 @@ function ValidateEmail(inputText)
 
 ### 使用自訂函式 {#uses-of-custom-function}
 
-在最適化Forms中使用自訂函式的部分優點包括：
+在最適化Forms中使用自訂函式的優點包括：
 
-* **資料操控**：自訂函式會操作及處理輸入至表單欄位中的資料。
+* **資料操控**：自訂函式會操控及處理輸入至表單欄位中的資料。
 * **資料驗證**：自訂函式可讓您對表單輸入執行自訂檢查，並提供指定的錯誤訊息。
 * **動態行為**：自訂函式可讓您根據特定條件控制表單的動態行為。 例如，您可以顯示/隱藏欄位、修改欄位值或動態調整表單邏輯。
 * **整合**：您可以使用自訂函式與外部API或服務整合。 它有助於從外部來源擷取資料、傳送資料至外部Rest端點，或根據外部事件執行自訂動作。
@@ -90,7 +90,7 @@ Some of the examples to create Arrow functions are:
 
 * **含有必要jsdoc註解的函式運算式**
 
-建立下列格式的自訂函式，以便在最適化表單的規則編輯器中列出它們。 例如：
+若要列出最適化表單的規則編輯器中的自訂函式，請以下列格式建立自訂函式：
 
 ```javascript
     /**
@@ -118,7 +118,7 @@ The functions that are not supported in the custom function list are:
 
 >[!NOTE]
 >
-> 您可以檢查 `error.log` 檔案來因應任何錯誤，例如自訂函式，並未列於規則編輯器中。
+> 您可以檢查 `error.log` 任何錯誤的檔案，例如未列在規則編輯器中的自訂函式。
 
 <!--The `error.log` file also displays the methods and parameters that are not supported for custom functions. -->
 
@@ -136,13 +136,13 @@ The functions that are not supported in the custom function list are:
 您可以透過新增使用者端資料庫來新增自訂函式。 若要建立使用者端程式庫，請執行下列步驟：
 
 1. [複製AEM Formsas a Cloud Service存放庫](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=zh-Hant#accessing-git).
-1. 在 `[AEM Forms as a Cloud Service repository folder]/apps/` 檔案夾中建立一個檔案夾。例如，建立一個名為 `experience-league` 的檔案夾
-1. 導覽至 `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/experience-league/` 並建立一個名為 `es6clientlibs` 的 `ClientLibraryFolder` 檔案夾。
-1. 新增屬性 `categories`字串型別值為 `es6customfunctions` 至 `es6clientlibs` 資料夾。
+1. 在 `[AEM Forms as a Cloud Service repository folder]/apps/` 檔案夾中建立一個檔案夾。例如，建立名為的資料夾 `experience-league`.
+1. 瀏覽至 `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/experience-league/` 並建立 `ClientLibraryFolder`. 例如，建立使用者端資源庫資料夾為 `es6clientlibs`.
+1. 新增屬性 `categories` 字串型別值的組合。 例如，指派值 `es6customfunctions` 至 `categories` 的屬性 `es6clientlibs` 資料夾。
 
    >[!NOTE]
    >
-   >`es6customfunctions`是範例類別。 您可以選擇類別的任何名稱。
+   > 您可以選擇任何名稱 `client library folder` 和 `categories` 屬性。
 
 1. 建立一個名為 `js` 的檔案夾。
 1. 導覽至 `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/es6clientlibs/js` 檔案夾。
@@ -150,7 +150,7 @@ The functions that are not supported in the custom function list are:
 
    >[!NOTE]
    >
-   >* 如果包含自訂函式程式碼的JavaScript檔案發生錯誤，則自訂函式不會列在調適型表單的規則編輯器中。 您也可以檢查 `error.log` 錯誤檔案。
+   > 如果包含自訂函式程式碼的JavaScript檔案發生錯誤，則自訂函式不會列在調適型表單的規則編輯器中。 您也可以檢查 `error.log` 錯誤檔案。
 
    <!-- 
     >* AEM Adaptive Form supports the caching of custom functions. If the JavaScript is modified, the caching becomes invalidated, and it is parsed. You can see a message as `Fetched following custom functions list from cache` in the `error.log` file.  -->
@@ -179,18 +179,22 @@ The functions that are not supported in the custom function list are:
 
 ### 在最適化表單中新增使用者端程式庫{#use-custom-function}
 
-新增使用者端程式庫後，請將其用於最適化表單中。 它可讓您使用 [自訂函式作為表單中的規則](/help/forms/rule-editor.md#custom-functions). 若要在最適化表單中新增使用者端程式庫，請執行下列步驟：
+將使用者端程式庫部署到Forms CS環境後，請在最適化表單中使用其功能。 若要在最適化表單中新增使用者端程式庫
 
-1. 在編輯模式中開啟您的表單。
-若要以編輯模式開啟表單，請選取表單並選取 **[!UICONTROL 開啟]**.
-1. 在編輯模式中，選取元件，然後選取 ![欄位層級](assets/select_parent_icon.svg) > **[!UICONTROL 最適化表單容器]**，然後選取 ![cmppr](assets/configure-icon.svg).
-1. 在側邊欄中的「使用者端資料庫名稱」下方，新增您的使用者端資料庫。 ( `es6customfunctions` 在此範例中。)
+1. 在編輯模式中開啟您的表單。 若要以編輯模式開啟表單，請選取表單並選取 **[!UICONTROL 編輯]**.
+1. 開啟內容瀏覽器，然後選取最適化表單的「**[!UICONTROL 指引容器]**」元件。
+1. 按一下「指引容器」屬性 ![指引屬性](/help/forms/assets/configure-icon.svg) 圖示。此時會開啟「最適化表單容器」對話框。
+1. 開啟 **[!UICONTROL 基本]** 標籤並選取 **[!UICONTROL 使用者端資料庫類別]** 從下拉式清單（在此例中為「選取」） `es6customfunctions`)。
 
    ![新增自訂函式使用者端程式庫](/help/forms/assets/clientlib-custom-function.png)
 
-建立規則以在規則編輯器中使用自訂函式。
+1. 按一下 **[!UICONTROL 完成]** .
+
+現在，您可以建立規則，以在規則編輯器中使用自訂函式。
 
 <!--
+
+Create a rule to use custom function in the rule editor. 
 
 ### Support for the optional parameters in custom functions{#support-for-optional-parameter}
 
