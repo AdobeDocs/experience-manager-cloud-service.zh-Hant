@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的運作方式以及該軟體可以為您做哪些事。
 breadcrumb-title: 使用手冊
 user-guide-title: AEM as a Cloud Service
-source-git-commit: dc89843609e54ddb93e09776f9eff64d13069bf7
+source-git-commit: 6966486b9bf919fecb8d625ddb92ce1bb1a98291
 workflow-type: tm+mt
-source-wordcount: '4635'
+source-wordcount: '4640'
 ht-degree: 99%
 
 ---
@@ -620,6 +620,7 @@ ht-degree: 99%
             + [在最適化表單中使用 Google reCAPTCHA](/help/forms/captcha-adaptive-forms-core-components.md)
             + [在最適化表單中新增自訂的錯誤處理常式](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
             + [為以核心元件為主的最適化表單新增地區設定](/help/forms/supporting-new-language-localization-core-components.md)
+            + [建立及使用自訂函式](/help/forms/create-and-use-custom-functions.md)
       + Foundation 元件 {#authoring-adaptive-forms-foundation-components}
          + 將您的 PDF forms 轉換為最適化表單 {#afcs}
             + [自動表單轉換服務簡介](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html)
