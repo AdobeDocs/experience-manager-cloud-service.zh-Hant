@@ -3,9 +3,9 @@ title: 使用 Dispatcher 工具進行驗證和偵錯
 description: 瞭解本機驗證、偵錯、彈性模式檔案結構，以及如何從舊版模式移轉至彈性模式。
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
+source-git-commit: 2cb57347856568da979b34832ce12cce295841dd
 workflow-type: tm+mt
-source-wordcount: '2971'
+source-wordcount: '3028'
 ht-degree: 1%
 
 ---
@@ -300,7 +300,7 @@ Phase 3 finished
 
 >[!NOTE]
 >
-請參閱 [自動重新載入及驗證](#automatic-loading) 區段以取得執行的替代方案 `validate.sh` 在每次設定修改後。
+>請參閱 [自動重新載入及驗證](#automatic-loading) 區段以取得執行的替代方案 `validate.sh` 在每次設定修改後。
 
 ### 階段1 {#first-phase}
 
@@ -439,8 +439,8 @@ Cloud manager validator 2.0.xx
 
 >[!NOTE]
 >
-Windows使用者必須使用支援Docker的Windows 10 Professional或其他發行版本。 此需求是在本機電腦上執行和偵錯Dispatcher的先決條件。
-對於Windows和macOS，Adobe建議使用Docker Desktop。
+>Windows使用者必須使用支援Docker的Windows 10 Professional或其他發行版本。 此需求是在本機電腦上執行和偵錯Dispatcher的先決條件。
+>對於Windows和macOS，Adobe建議使用Docker Desktop。
 
 此階段也可以獨立執行，透過 `bin/docker_run.sh src/dispatcher host.docker.internal:4503 8080`.
 
@@ -509,13 +509,13 @@ immutable file 'conf.dispatcher.d/clientheaders/default_clientheaders.any' has b
 
 >[!NOTE]
 >
-對於AEMas a Cloud Service上的環境，偵錯是最高詳細程度等級。 不支援追蹤記錄層級，因此您在雲端環境中工作時應該避免進行設定。
+>對於AEMas a Cloud Service上的環境，偵錯是最高詳細程度等級。 不支援追蹤記錄層級，因此您在雲端環境中工作時應該避免進行設定。
 
 ### 自動重新載入及驗證 {#automatic-reloading}
 
 >[!NOTE]
 >
-由於Windows作業系統的限制，此功能僅適用於macOS和Linux®使用者。
+>由於Windows作業系統的限制，此功能僅適用於macOS和Linux®使用者。
 
 不要執行本機驗證(`validate.sh`)並啟動Docker容器(`docker_run.sh`)每次修改設定時，您也可以執行 `docker_run_hot_reload.sh` 指令碼。 指令碼會監視設定的任何變更，並自動重新載入並重新執行驗證。 使用此選項，您便可在除錯時節省大量時間。
 
@@ -545,6 +545,25 @@ Cloud manager validator 2.0.43
 2022/07/04 09:53:55 No issues found
 INFO Mon Jul  4 09:53:55 UTC 2022: Testing with fresh base configuration files.
 INFO Mon Jul  4 09:53:55 UTC 2022: Apache httpd informationServer version: Apache/2.4.54 (Unix)
+```
+
+### 插入自訂環境變數 {#environment-variables}
+
+自訂環境變數可與Dispatcher SDK搭配使用，方法是將其設定在獨立的檔案中，並在以下位置參照： `ENV_FILE` 環境變數。
+
+包含自訂環境變數的檔案看起來像這樣：
+
+```
+COMMERCE_ENDPOINT=commerce-host
+AEM_HTTP_PROXY_HOST=host.docker.internal
+AEM_HTTP_PROXY_PORT=8000
+```
+
+而且可搭配下列命令用於本機Dispatcher SDK：
+
+```
+export ENV_FILE=custom.env
+./bin/docker_run.sh src/dispatcher docker.for.mac.localhost:4503 8080
 ```
 
 ## 每個環境不同的Dispatcher設定 {#different-dispatcher-configurations-per-environment}
@@ -620,7 +639,7 @@ $ docker exec d75fbd23b29 httpd-test
 
    >[!NOTE]
    >
-   在彈性模式中，您應該使用相對路徑，而非絕對路徑。
+   >在彈性模式中，您應該使用相對路徑，而非絕對路徑。
 1. **部署至生產環境：**
    * 提交檔案 `opt-in/USE_SOURCES_DIRECTLY` 至生產管道部署至雲端中繼和生產環境的Git分支。
    * 使用Cloud Manager部署至中繼環境。
