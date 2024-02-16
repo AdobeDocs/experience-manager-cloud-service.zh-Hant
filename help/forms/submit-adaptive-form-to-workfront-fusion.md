@@ -6,7 +6,7 @@ topic-tags: author, developer
 feature: Adaptive Forms
 role: Admin, User
 exl-id: d3efb450-a879-40ae-8958-0040f99bdafc
-source-git-commit: 3e1e1eba822bf3156ef563b88269cdef2298e951
+source-git-commit: 94519d3c7d2f927f046628d9ce057209556e847d
 workflow-type: tm+mt
 source-wordcount: '1241'
 ht-degree: 4%
@@ -35,7 +35,7 @@ AEM Formsas a Cloud Service提供OOTB聯結器，可連線最適化表單並將�
 
 若要在Workfront Fusion和AEM Forms之間建立連線，需具備下列條件：
 
-* 有效的 [Workfront和Workfront Fusion授權](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/license-automation-vs-integration.html).
+* 有效的 [Workfront與Workfront Fusion授權](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/license-automation-vs-integration.html).
 * 具有存取許可權的AEM使用者 [開發主控台](https://my.cloudmanager.adobe.com/) 至 [擷取服務認證](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html).
 
 ## 將AEM Forms與Adobe Workfront Fusion整合
@@ -135,7 +135,7 @@ AEM Formsas a Cloud Service提供OOTB聯結器，可連線最適化表單並將�
 
 ### 2.設定Workfront Fusion適用性表單的提交動作
 
-您可以為Workfont Fusion設定提交動作：
+您可以為Workfront Fusion設定提交動作：
 * [全新最適化Forms](#new-af-submit-action)
 * [現有的最適化表單](#existing-af-submit-action)
 
