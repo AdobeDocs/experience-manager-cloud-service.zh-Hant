@@ -6,9 +6,9 @@ topic-tags: author, developer
 feature: Adaptive Forms
 role: Admin, User
 exl-id: d3efb450-a879-40ae-8958-0040f99bdafc
-source-git-commit: 8546e6286bea5f603b1e011a76c206b178337ab7
+source-git-commit: 3e1e1eba822bf3156ef563b88269cdef2298e951
 workflow-type: tm+mt
-source-wordcount: '1238'
+source-wordcount: '1241'
 ht-degree: 4%
 
 ---
@@ -21,28 +21,24 @@ ht-degree: 4%
 
 例如，使用Workfront Fusion，您可以建立案例來透過Adaptive Form收集資料、處理資料，以及傳送資料至資料存放區進行封存。 一旦設定了案例，每當使用者填寫表單時，Workfront Fusion就會自動執行工作，順暢地更新資料存放區。
 
-AEMas a Cloud Service提供多種現成的提交動作，用於處理表單提交。 如需這些選項的詳細資訊，請參閱 [最適化表單提交動作](/help/forms/configure-submit-actions-core-components.md)  文章。
+AEM Formsas a Cloud Service提供OOTB聯結器，可連線最適化表單並將其提交至Adobe Workfront Fusion。 將表單提交至Adobe Workfront Fusion有幾項好處：
+* 它可讓表單提交資料順暢地傳輸至Workfront Fusion工作流程。
+* 它有助於自動執行由表單提交觸發的各種任務。 這可以包括起始專案、指派任務給特定團隊成員、傳送通知以及更新專案狀態 — 所有這一切都不需要手動介入。
+* 所有在Workfront Fusion中擷取的表單提交內容，都提供專案相關資訊的單一信任來源
 
 
-## 使用Adobe Workfront Fusion的優勢{#advatages-of-workfront-fusion}
+<!--  AEM as a Cloud Service offers various out of the box submit actions for handling form submissions. You can learn more about these options in the [Adaptive Form Submit Action](/help/forms/configure-submit-actions-core-components.md)  article.-->
 
-將Adobe Workfront Fusion與AEM Forms搭配使用的一些優點：
-
-* 將最適化Forms擷取的資料傳送到Workfront Fusion情境
-* 將容易發生錯誤的工作自動化。
-* 自訂組織的特定需求，這些需求未直接包含在Workfront中。
-* 處理簡單的邏輯和直接的決定，例如if/then陳述式。
+>[!VIDEO](https://video.tv.adobe.com/v/3427145/adaptive-forms-adobe-workfront-af-workfront-workfront-aem-forms/?quality=12&learn=on)
 
 ## 整合AEM Forms與Adobe Workfront Fusion的必要條件 {#prerequisites}
 
-將Workfront Fusion連線至AEM Forms所需的先決條件為：
+若要在Workfront Fusion和AEM Forms之間建立連線，需具備下列條件：
 
-* 有效的 [Workfront Fusion授權](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/license-automation-vs-integration.html).
+* 有效的 [Workfront和Workfront Fusion授權](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/license-automation-vs-integration.html).
 * 具有存取許可權的AEM使用者 [開發主控台](https://my.cloudmanager.adobe.com/) 至 [擷取服務認證](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html).
 
 ## 將AEM Forms與Adobe Workfront Fusion整合
-
->[!VIDEO](https://video.tv.adobe.com/v/3427145/adaptive-forms-adobe-workfront-af-workfront-workfront-aem-forms/?quality=12&learn=on)
 
 若要連線 [Workfront fusion](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/workfront-fusion-overview.html) 若要建立表單，請執行下列步驟：
 
