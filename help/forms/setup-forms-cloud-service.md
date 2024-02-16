@@ -3,10 +3,11 @@ title: 如何設定 [!DNL AEM Forms] as a cloud service環境？
 description: 瞭解如何設定和 [!DNL AEM Forms] as a Cloud Service環境。
 role: Admin, Developer, User
 feature: Adaptive Forms
-source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
+exl-id: 42f53662-fbcf-4676-9859-bf187ee9e4af
+source-git-commit: 7fe779602f52081dc785074bdc0f374665b908e6
 workflow-type: tm+mt
-source-wordcount: '602'
-ht-degree: 14%
+source-wordcount: '609'
+ht-degree: 6%
 
 ---
 
@@ -46,21 +47,24 @@ ht-degree: 14%
 
 * （僅適用於沙箱）服務上線後， [建立](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/pipelines/production-pipelines.html?lang=en) 和 [執行](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-deployment.html) 生產和非生產管道。 它可以啟用並引進以下專案的最新功能： [!DNL AEM Forms] 對您的環境as a Cloud Service。
 
-您可以使用Formsas a Cloud Service建立最適化表單（數位註冊）或產生客戶通訊。 完成之後 [入門](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html) 至 [!DNL Adobe Experience Manager] as a Cloud Service，執行下列其中一項動作以啟用數位註冊或客戶通訊功能。 您也可以啟用這兩項功能：
+您可以使用Formsas a Cloud Service建立最適化表單（數位註冊）或產生客戶通訊。 完成之後 [入門](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html) 至 [!DNL Adobe Experience Manager] as a Cloud Service，請執行以下動作以啟用Forms — 數位註冊或客戶通訊功能。 <!--You can also enable both the features-->：
 
 1. 登入 Cloud Manager 並開啟您的 AEM Forms as a Cloud Service 執行個體。
+1. 開啟編輯計畫選項，前往解決方案和附加元件索引標籤：
 
-1. 開啟「編輯方案」選項，前往「解決方案和附加元件」索引標籤，然後選擇&#x200B;**[!UICONTROL Forms - 通訊]**&#x200B;選項。
+   * 如果您有生產環境，請選取 **[!UICONTROL Forms — 通訊]** 可啟用Forms — 數位註冊和Forms — 通訊附加元件的選項。
 
-   ![通訊](assets/communications.png)
+     ![通訊](assets/communications.png)
 
-   如果您已經啟用&#x200B;**[!UICONTROL Forms - 數位註冊]**&#x200B;選項，則選擇&#x200B;**[!UICONTROL Forms - 通訊附加元件]**&#x200B;選項。
+   <!-- If you have already enabled the **[!UICONTROL Forms - Digital Enrollment]** option, then select the **[!UICONTROL Forms - Communications Add-On]** option. ![Addon](assets/add-on.png) -->
 
-   ![附加元件](assets/add-on.png)
+   * 如果您有沙箱環境，請選取 **[!UICONTROL Forms]** 以啟用Forms — 數位註冊和Forms — 通訊附加元件。
+
+     ![表單數位註冊選擇](assets/forms-digital-enrollment1.png)
+
 
 1. 按一下&#x200B;**[!UICONTROL 更新]**。
-
-1. 執行建置管道。建置管道成功後，將為您的環境啟用通訊 API。
+1. 執行建置管道。建置管道成功後，為您的環境啟用所選的解決方案。
 
 >[!NOTE]
 >
