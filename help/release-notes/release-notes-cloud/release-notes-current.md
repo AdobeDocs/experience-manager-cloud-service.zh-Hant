@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 最新發行說明�
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 最新發行說明。'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 03293f49e583d8b40bafd95bbc89c9ba5c024da8
-workflow-type: ht
+source-git-commit: e2c1d30c035fc1f664efbd15fee977f5488dc5f8
+workflow-type: tm+mt
 source-wordcount: '937'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 100%
 
 ## 發行日期 {#release-date}
 
-[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 目前功能版本 (2024.1.0) 的發行日期是 2024 年 1 月 25 日。 下一個功能版本 (2024.2.0) 規劃於 2024 年 2 月 29 日發行。
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 目前功能版本 (2024.1.0) 的發行日期是 2024 年 1 月 25 日。 下一個功能版本(2024.3.0)計畫於2024年3月28日發行。
 
 ## 維護版本發行說明 {#maintenance}
 
@@ -115,3 +115,4 @@ Dynatrace 客戶可以監控他們的 AEM 使用情況。[了解如何](/help/im
 ## 移轉工具 {#migration-tools}
 
 您可以在[這裡](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)找到移轉工具版本的完整清單。
+
