@@ -6,10 +6,10 @@ topic-tags: author, developer
 feature: Adaptive Forms
 role: Admin, User
 exl-id: d3efb450-a879-40ae-8958-0040f99bdafc
-source-git-commit: 52e1f57b82aec25ad61024f357016dbb5498ca1b
+source-git-commit: 8546e6286bea5f603b1e011a76c206b178337ab7
 workflow-type: tm+mt
-source-wordcount: '1273'
-ht-degree: 3%
+source-wordcount: '1238'
+ht-degree: 4%
 
 ---
 
@@ -41,6 +41,8 @@ AEMas a Cloud Service提供多種現成的提交動作，用於處理表單提�
 * 具有存取許可權的AEM使用者 [開發主控台](https://my.cloudmanager.adobe.com/) 至 [擷取服務認證](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html).
 
 ## 將AEM Forms與Adobe Workfront Fusion整合
+
+>[!VIDEO](https://video.tv.adobe.com/v/3427145/adaptive-forms-adobe-workfront-af-workfront-workfront-aem-forms/?quality=12&learn=on)
 
 若要連線 [Workfront fusion](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/workfront-fusion-overview.html) 若要建立表單，請執行下列步驟：
 
@@ -129,16 +131,7 @@ AEMas a Cloud Service提供多種現成的提交動作，用於處理表單提�
 1. 選取建立的連線 **[!UICONTROL 連線]** 下拉式清單中的。
 1. 按一下「**[!UICONTROL 儲存]**」。
 1. 按一下 **[!UICONTROL 確定]** 並儲存情境的變更。
-
-#### 1.3啟動Workfront情境 {#activate-scenario}
-
-若要啟動案例：
-
-1. 按一下 **[!UICONTROL 情境]** ![「共用」圖示](/help/forms/assets/Smock_ShareAndroid_18_N.svg) 在左側面板中。
-1. 按一下 **[!UICONTROL 非使用中案例]** 標籤。
-1. 按一下 **開啟/關閉** 適用於您的AEM Forms情境的切換按鈕。
-
-按一下切換按鈕後， Workfront案例就會開始出現在 **[!UICONTROL 作用中情境]** 標籤。
+1. 若要啟用情境，請按一下情境編輯器中的開啟/關閉切換按鈕。
 
 >[!NOTE]
 >
