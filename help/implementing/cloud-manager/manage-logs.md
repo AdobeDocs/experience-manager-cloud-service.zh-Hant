@@ -2,10 +2,10 @@
 title: 存取和管理記錄檔
 description: 了解如何存取和管理記錄檔以協助進行 AEM as a Cloud Service 中的開發流程。
 exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
-source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
+source-git-commit: 178af74512e74ff401588b68c73fa4661acec704
 workflow-type: tm+mt
-source-wordcount: '330'
-ht-degree: 71%
+source-wordcount: '346'
+ht-degree: 68%
 
 ---
 
@@ -43,8 +43,6 @@ ht-degree: 71%
 您也可以從&#x200B;**環境**&#x200B;頁面存取記錄檔。
 
 ![環境畫面的記錄檔](assets/download-logs.png)
-
-
 
 ## 透過 API 的記錄檔 {#logs-through-api}
 
@@ -86,6 +84,10 @@ Environment Id Service    Name
 ```
 
 ### 其他資源 {#resources}
+
+>[!TIP]
+>
+>簽出 [此視訊資源](https://app.frame.io/reviews/28cdf463-b7fc-443b-a54a-93cb7da6567e/dbf158f1-568b-4efc-8fbc-3b241561cbab) 以進一步瞭解AEMas a Cloud Service偵錯。
 
 請參閱以下更多資源，以深入了解如何使用 Cloud Manager API 和 Adobe I/O CLI：
 
