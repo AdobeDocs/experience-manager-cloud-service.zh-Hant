@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的運作方式以及該軟體可以為您做哪些事。
 breadcrumb-title: 使用手冊
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 6966486b9bf919fecb8d625ddb92ce1bb1a98291
+source-git-commit: d76273ddcbcf5013713e515e39dde8f42bbbf425
 workflow-type: tm+mt
-source-wordcount: '4640'
+source-wordcount: '4648'
 ht-degree: 99%
 
 ---
@@ -89,6 +89,8 @@ ht-degree: 99%
          + [2023.1.0 維護版本發行說明](/help/release-notes/maintenance/2023/2023-1-0.md)
    + Cloud Manager 發行說明 {#cloud-manager}
       + [最新發行說明](/help/implementing/cloud-manager/release-notes/current.md)
+      + 2024年 {#2024}
+         + [2024.1.0 版發行說明](/help/implementing/cloud-manager/release-notes/2024/2024-1-0.md)
       + 2023 {#2023}
          + [2023.12.0 版發行說明](/help/implementing/cloud-manager/release-notes/2023/2023-12-0.md)
          + [2023.11.0 版發行說明](/help/implementing/cloud-manager/release-notes/2023/2023-11-0.md)
@@ -915,6 +917,7 @@ ht-degree: 99%
          + [設定生產管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)
          + [設定非生產管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
          + [管理管道](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md)
+         + [管道變數](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md)
       + [部署您的程式碼](/help/implementing/cloud-manager/deploy-code.md)
       + 了解測試結果 {#test-results}
          + [概觀](/help/implementing/cloud-manager/overview-test-results.md)
