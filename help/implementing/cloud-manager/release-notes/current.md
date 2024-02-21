@@ -6,7 +6,7 @@ exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
 source-git-commit: 4a41de9da557be562bb2ff5773c7954f76a9acc7
 workflow-type: tm+mt
 source-wordcount: '725'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -21,16 +21,16 @@ ht-degree: 83%
 
 ## 發行日期 {#release-date}
 
-AEM as a Cloud Service 中的 Cloud Manager 版本 2024.2.0 發行日期是 2024 年 ２ 月 15 日。下一個版本計畫於 2024 年 3 月 16 日發行。
+AEM as a Cloud Service 中的 Cloud Manager 版本 2024.2.0 發行日期是 2024 年 2 月 15 日。下一個版本計畫於 2024 年 3 月 16 日發行。
 
 ## 新增功能 {#what-is-new}
 
-* Cloud Manager現在支援的自助服務管理 [管道變數](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md) 透過Cloud Manager UI。
-* [預覽服務](/help/implementing/cloud-manager/manage-environments.md#access-preview-sevice) 現在將會針對在預覽服務功能推出之前建立的環境啟用。
-* [Cloud Manager 自訂權限](/help/implementing/cloud-manager/custom-permissions.md)可讓您以可設定的權限建立自訂權限設定檔，以限制 Cloud Manager 使用者對方案、管道和環境的存取。
-   * 此功能開始以分階段方式推出 [2023年12月發行版本](/help/implementing/cloud-manager/release-notes/2023/2023-12-0.md) 並將於2024年2月20日完成。
-* 針對所有新環境， [環境產品設定檔](/help/onboarding/aem-cs-team-product-profiles.md) 根據設定檔說明、環境型別、數字和計畫編號的組合，名稱將是更方便使用的格式。
-* [組建環境](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) 已更新至Maven 3.9.4版和JDK jdk-11.0.22版和jdk1.8.0_401版。
+* Cloud Manager 現在支援透過 Cloud Manager UI 的[管道變數](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md)自助管理。
+* 現在將為預覽服務功能推出以前所建立的環境啟用[預覽服務](/help/implementing/cloud-manager/manage-environments.md#access-preview-sevice)。
+* [Cloud Manager 自訂權限](/help/implementing/cloud-manager/custom-permissions.md)讓您以可設定權限建立自訂權限設定檔，以限制 Cloud Manager 使用者對方案、管道和環境的存取。
+   * 此功能從 [2023 年 12 月版本](/help/implementing/cloud-manager/release-notes/2023/2023-12-0.md)開始分階段推出，並將於 2024 年 2 月 20 日完成。
+* 針對所有新環境，[環境產品設定檔](/help/onboarding/aem-cs-team-product-profiles.md)名稱將採用使用者易記格式，由設定檔描述、環境類型、編號和程式編號組成。
+* [建置環境](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) 已更新為 Maven 版本 3.9.4 和 JDK 版本 jdk-11.0.22 和 jdk1.8.0_401。
 
 ## 早期採用計劃 {#early-adoption}
 
@@ -73,4 +73,4 @@ AEM as a Cloud Service 中的 Cloud Manager 版本 2024.2.0 發行日期是 2024
 
 ## 錯誤修正 {#bug-fixes}
 
-* 組建容器的JDK已更新至可解決的版本 [JDK-8313765。](https://bugs.openjdk.org/browse/JDK-8313765)
+* 建置容器的 JDK 已更新至可解決 [JDK-8313765](https://bugs.openjdk.org/browse/JDK-8313765)的版本。
