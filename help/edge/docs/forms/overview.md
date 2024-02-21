@@ -4,9 +4,9 @@ description: AEM Forms Edge Delivery Service專為最佳效能而打造，可讓
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: b94bd6cd70af541444fda1d03f502b4588fd879b
+source-git-commit: 34ba430ae9b40fc3bc675af20bbee2534c44a0c3
 workflow-type: tm+mt
-source-wordcount: '393'
+source-wordcount: '389'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ AEM Forms Edge Delivery Service可幫助您：
 
 * **簡化撰寫和提交作業**：使用熟悉的工具(如Microsoft Excel或Google Sheets)建立表單，而非使用傳統的撰寫環境。 直接將表單提交至您的Microsoft Excel或Google工作表，並使用其生態系統來輕鬆處理提交的資料。
 
-## 開始使用AEM Forms Edge Delivery Service
+## 從基礎知識開始
 
 <div>
 
