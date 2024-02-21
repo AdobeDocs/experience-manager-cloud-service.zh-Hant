@@ -3,9 +3,9 @@ title: 如何設定最適化表單的提交動作？
 description: 最適化表單提供多個提交動作。提交動作會定義提交之後處理最適化表單的方式。您可以使用內建的提交動作或建立自己的動作。
 feature: Adaptive Forms, Foundation Components
 exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
-source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
+source-git-commit: 8923bfbb0e46961485ff360c0135ebdde6d8cab3
 workflow-type: tm+mt
-source-wordcount: '3913'
+source-wordcount: '3901'
 ht-degree: 76%
 
 ---
@@ -29,7 +29,7 @@ ht-degree: 76%
 * [提交到 OneDrive](#submit-to-onedrive)
 * [提交到 Azure Blob 儲存體](#azure-blob-storage)
 * [提交至 Power Automate](#microsoft-power-automate)
-* [提交至Workfront Fusion](#workfront-fusion)
+* [提交至 Workfront Fusion](#workfront-fusion)
 
 您也可以 [擴充預設提交動作](custom-submit-action-form.md) 以建立您自己的提交動作。
 
@@ -238,8 +238,6 @@ For more information about the Forms Portal and Submit Action, see [Drafts and s
 
 ### 將最適化表單連線至Microsoft® SharePoint清單 {#connect-af-sharepoint-list}
 
-<span class="preview">這是一項預先發佈功能，可透過我們的[預先發佈管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features)存取。</span>
-
 >[!VIDEO](https://video.tv.adobe.com/v/3424820/connect-aem-adaptive-form-to-sharepointlist/?quality=12&learn=on)
 
 若要使用 [!UICONTROL 提交至SharePoint清單] 以最適化表單提交動作：
@@ -407,7 +405,7 @@ For more information about the Forms Portal and Submit Action, see [Drafts and s
 
 在設定成功之後，使用[叫用 Microsoft® Power Automate 流程](forms-microsoft-power-automate-integration.md#use-the-invoke-a-microsoft&reg;-power-automate-flow-submit-action-to-send-data-to-a-power-automate-flow-use-the-invoke-microsoft-power-automate-flow-submit-action)提交動作，將資料傳送到 Power Automate Flow。
 
-## 提交至Workfront Fusion {#workfront-fusion}
+## 提交至 Workfront Fusion {#workfront-fusion}
 
 您可以設定最適化表單，在提交時提交資料給Workfront Fusion。 Workfront Fusion允許流程自動化，以便使用者可以專注於新任務，而不是一遍又一遍地重複相同的任務。 它可自動化簡單和複雜的工作，節省時間並確保一致的流程執行。
 

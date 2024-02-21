@@ -2,10 +2,10 @@
 title: Cloud Acceleration Manager的整備階段
 description: 本頁提供Cloud Acceleration Manager整備階段的概觀。
 exl-id: 2583985b-0358-433c-9d31-38e2c60dc3dc
-source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
+source-git-commit: f99395870d076d47ef53b01c9fc6579a9f8788a2
 workflow-type: tm+mt
-source-wordcount: '944'
-ht-degree: 4%
+source-wordcount: '984'
+ht-degree: 6%
 
 ---
 
@@ -60,10 +60,13 @@ ht-degree: 4%
 
    ![影像](/help/journey-migration/cloud-acceleration-manager/assets/cam-bpareport.png)
 
+   >[!NOTE]
+   >如果上傳了多個報告，則詳細顯示的報告總是具有最近的建立日期（不是上傳日期）的報告。
+
 1. 檢閱並探索CAM中的「最佳實務分析」儀表板。 另請參閱 [檢閱最佳實務分析報告](#analysis-report) 以取得更多詳細資料。
 
    >[!NOTE]
-   >上傳新報告會重設所有評估。
+   >如果新報告比先前載入的報告新，上傳新報告會重設所有評估。
 
 ### 使用列印預覽 {#print-preview-cam}
 
@@ -86,12 +89,12 @@ ht-degree: 4%
 
 ### 使用檢視趨勢線 {#trendline-view-cam}
 
-當您在專案中上傳多個Best Practices Analyzer (BPA)報告時，可以選取 **檢視趨勢線** 檢視及比較歷史BPA報表結果的選項。
+在專案中上傳多個不同的Best Practices Analyzer (BPA)報告時，您可以選取 **檢視趨勢線** 檢視及比較歷史BPA報表結果的選項。
 
 請依照下列步驟，從趨勢線選項檢視報表：
 
 >[!NOTE]
->當您在專案中上傳多個BPA報告時，您會看到 **...** 圖示。
+>在專案中上傳多個不同的BPA報告時，您會看到 **...** 圖示。 如果報表的主機和建立時間相同，則會將報表視為相同（非不同）。
 
 1. 導覽至您的專案，然後按一下 **檢閱** 從 **最佳實務分析** 卡在中 **整備程度** 階段。
 
@@ -100,9 +103,6 @@ ht-degree: 4%
 1. 按一下 **...**.
 
    ![影像](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1.png)
-
-   >[!IMPORTANT]
-   >顯示的報表一律為具有最新報表日期的報告。
 
 1. 從下拉式清單中，按一下 **檢視趨勢線**，如下圖所示。
 
@@ -138,13 +138,13 @@ ht-degree: 4%
 >* 將所有報表標籤（包括篩選）加入書籤，以便共用或未來擷取
 >* 使用詳細資訊圖示可檢視每個報告發現的詳細資訊
 
-#### 報表屬性 {#report-properties}
+#### 報告屬性 {#report-properties}
 
 此 **報表屬性** 卡片提供報表屬性的相關資訊，例如報表日期、持續時間、篩選器、上傳日期和Adobe Experience Manager (AEM)詳細資料。
 
 ![影像](/help/journey-migration/cloud-acceleration-manager/assets/report-properties.png)
 
-#### 報表概觀 {#report-overview}
+#### 報告總覽 {#report-overview}
 
 這個 **報表概觀** 卡片會提供報告發現專案和嚴重性層級，在評估移至AEMas a Cloud Service的整備程度時適用，如下圖所示。
 
@@ -165,10 +165,10 @@ ht-degree: 4%
 
 最佳實務評估選項可評估您目前的AEM執行個體，並提供採用AEM最佳實務之後續步驟的指引。 您可以從此標籤檢閱下列資訊：
 
-* AEM執行個體總覽
-* 自訂元件和範本
+* AEM 執行個體總覽
+* 自訂元件與範本
 * 其他發現
-* 查詢緩慢
+* 緩慢查詢
 * 維護任務
 
 #### 移轉複雜性評估 {#migration-complexity-assessment}
@@ -177,7 +177,7 @@ ht-degree: 4%
 
 您可以從此標籤檢閱下列資訊：
 
-* AEM執行個體總覽
+* AEM 執行個體總覽
 * 評估
 * 內容移轉考量事項
 

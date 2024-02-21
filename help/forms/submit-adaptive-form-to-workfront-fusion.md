@@ -6,10 +6,10 @@ topic-tags: author, developer
 feature: Adaptive Forms
 role: Admin, User
 exl-id: d3efb450-a879-40ae-8958-0040f99bdafc
-source-git-commit: 94519d3c7d2f927f046628d9ce057209556e847d
+source-git-commit: 8923bfbb0e46961485ff360c0135ebdde6d8cab3
 workflow-type: tm+mt
-source-wordcount: '1241'
-ht-degree: 4%
+source-wordcount: '1255'
+ht-degree: 3%
 
 ---
 
@@ -40,11 +40,17 @@ AEM Formsas a Cloud Service提供OOTB聯結器，可連線最適化表單並將�
 
 ## 將AEM Forms與Adobe Workfront Fusion整合
 
-若要連線 [Workfront fusion](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/workfront-fusion-overview.html) 若要建立表單，請執行下列步驟：
-
 ### 1.建立Workfront情境 {#workflow-scenario}
 
-若要建立Workfront情境：
+若要建立Workfront案例，請執行下列步驟：
+
+1. [建立情境](#create-scenario)
+1. [將Web勾點新增至情境](#add-webhook)
+1. [將連線新增至Web鉤點](#add-connection)
+
+#### 建立情境 {#create-scenario}
+
+若要建立情境：
 1. 登入您的 [Workfront Fusion帳戶](https://app-qa.workfrontfusion.com/).
 1. 按一下 **[!UICONTROL 情境]** ![「共用」圖示](/help/forms/assets/Smock_ShareAndroid_18_N.svg) 在左側面板中。
 1. 按一下 **[!UICONTROL 建立新情境]** 在頁面的右上角。 建立新情境的頁面會顯示在畫面上。
@@ -61,7 +67,7 @@ AEM Formsas a Cloud Service提供OOTB聯結器，可連線最適化表單並將�
 
 1. 選取 **[!UICONTROL 關注表單事件]** 對話方塊與新增webhook的視窗隨即出現。
 
-#### 1.1新增webhook {#add-webhook}
+#### 新增webhook {#add-webhook}
 
 ![新增webhook](/help/forms/assets/workfront-add-webhook.png)
 
@@ -76,7 +82,7 @@ AEM Formsas a Cloud Service提供OOTB聯結器，可連線最適化表單並將�
 
 1. 按一下 **[!UICONTROL 新增]** 以新增連線。 此 **[!UICONTROL 建立連線]** 對話方塊隨即顯示。
 
-#### 1.2將連線新增至webhook {#add-connection}
+#### 新增與webhook的連線 {#add-connection}
 
 ![新增連線](/help/forms/assets/workfront-add-connection.png)
 

@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的運作方式以及該軟體可以為您做哪些事。
 breadcrumb-title: 使用手冊
 user-guide-title: AEM as a Cloud Service
-source-git-commit: d76273ddcbcf5013713e515e39dde8f42bbbf425
+source-git-commit: 0604838311bb9ab195789fad755b0910e09519fd
 workflow-type: tm+mt
-source-wordcount: '4648'
-ht-degree: 99%
+source-wordcount: '4711'
+ht-degree: 98%
 
 ---
 
@@ -89,7 +89,7 @@ ht-degree: 99%
          + [2023.1.0 維護版本發行說明](/help/release-notes/maintenance/2023/2023-1-0.md)
    + Cloud Manager 發行說明 {#cloud-manager}
       + [最新發行說明](/help/implementing/cloud-manager/release-notes/current.md)
-      + 2024年 {#2024}
+      + 2024 {#2024}
          + [2024.1.0 版發行說明](/help/implementing/cloud-manager/release-notes/2024/2024-1-0.md)
       + 2023 {#2023}
          + [2023.12.0 版發行說明](/help/implementing/cloud-manager/release-notes/2023/2023-12-0.md)
@@ -614,8 +614,8 @@ ht-degree: 99%
             + [建立具有可重複區段的表單](/help/forms/create-forms-repeatable-sections.md)
             + [為最適化表單設定提交動作](/help/forms/configure-submit-actions-core-components.md)
             + [將最適化表單提交至 Azure Blob 儲存體](/help/forms/configure-submit-action-azure-blob-storage.md)
-            + [將最適化表單提交至 Microsoft® OneDrive](/help/forms/configure-submit-action-onedrive.md)
-            + [為最適化表單設定 SharePoint 儲存空間](/help/forms/configure-submit-action-sharepoint.md)
+            + [提交最適化表單至Microsoft](/help/forms/configure-submit-action-onedrive.md)
+            + [將最適化表單連線至Microsoft](/help/forms/configure-submit-action-sharepoint.md)
             + [將 AEM 最適化表單與 AEM 工作流程整合](/help/forms/configure-submit-action-workflow.md)
             + [設定提交到最適化表單的 REST 端點提交動作](/help/forms/configure-submit-action-restpoint.md)
             + [設定最適化表單的傳送電子郵件提交動作](/help/forms/configure-submit-action-send-email.md)
@@ -802,6 +802,21 @@ ht-degree: 99%
       + [Akamai 設定](/help/edge/docs/byo-cdn-akamai-setup.md)
       + [快速設定](/help/edge/docs/byo-cdn-fastly-setup.md)
       + [重新導向](/help/edge/docs/redirects.md)
+   + 建置Edge Delivery Forms {#build-forms}
+      + [總覽](/help/edge/docs/forms/overview.md)
+      + 快速入門 {#getting-started-eds-forms}
+         + [建立及預覽表單](/help/edge/docs/forms/create-forms.md)
+         + [啟用表單以傳送資料](/help/edge/docs/forms/submit-forms.md)
+         + [將表單發佈至網站頁面](/help/edge/docs/forms/publish-eds-forms.md)
+         + [新增驗證至表單欄位](/help/edge/docs/forms/validate-forms.md)
+         + [變更表單的主題和樣式](/help/edge/docs/forms/style-theme-forms.md)
+      + 進階功能 {#advanced-features-eds-forms}
+         + [建立表單片段並新增到表單中](/help/edge/docs/forms/form-fragments.md)
+         + [翻譯表單](/help/edge/docs/forms/translate-forms.md)
+         + [將可重複區段新增至表單](/help/edge/docs/forms/repeatable-forms.md)
+         + [套用reCAPTCHA至表單](/help/edge/docs/forms/recaptacha-forms.md)
+         + [建立自訂元件](/help/edge/docs/forms/custom-components-forms.md)
+         + [新增感謝頁面](/help/edge/docs/forms/thank-you-page-form.md)
    + Edge Delivery 資源 {#resources}
       + Sidekick {#sidekick}
          + [使用 Sidekick](/help/edge/docs/sidekick.md)
@@ -1132,4 +1147,4 @@ ht-degree: 99%
       + [Universal Editor 驗證](/help/implementing/universal-editor/authentication.md)
       + [使用 Universal Editor 進行本機 AEM 開發](/help/implementing/universal-editor/local-dev.md)
       + [Universal Editor 呼叫](/help/implementing/universal-editor/calls.md)
-      + [自訂通用編輯器](/help/implementing/universal-editor/customizing.md)
+      + [自訂 Universal Editor](/help/implementing/universal-editor/customizing.md)
