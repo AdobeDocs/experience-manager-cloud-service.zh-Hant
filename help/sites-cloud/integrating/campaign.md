@@ -4,10 +4,10 @@ description: 瞭解AEMas a Cloud Service支援與Adobe Campaign整合。
 feature: Administering
 role: Admin
 exl-id: 23874955-bdf3-41be-8a06-53d2afdd7f2b
-source-git-commit: c4daf04d5520da1e646f35ba72c9f53cb1d97d36
+source-git-commit: a9296bba5d1ad3f6eb2190de9c15a1083f2ac6d5
 workflow-type: tm+mt
-source-wordcount: '159'
-ht-degree: 0%
+source-wordcount: '148'
+ht-degree: 2%
 
 ---
 
@@ -22,17 +22,16 @@ ht-degree: 0%
 >
 >如需整合Adobe Campaign與AEM 6.5、內部部署或AMS託管的AEM解決方案的詳細資訊， [請參閱此檔案](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/campaign.html).
 
-## 與Adobe Campaign Classic整合 {#acc}
+## 與Adobe Campaign v7/v8整合 {#acc}
 
-有數個Adobe Campaign Classic (ACC)版本。 是否支援與AEMas a Cloud Service整合，端視您已實作的ACC版本而定。
+與AEMas a Cloud Service整合的支援取決於您實作的Campaign版本。
 
-| ACC版本 | 與AEMaaCS整合 |
+| Campaign版本 | 與AEMaaCS整合 |
 |---|---|
-| [v7](https://experienceleague.adobe.com/docs/campaign-classic.html) | 不支援 |
-| [v8](https://experienceleague.adobe.com/docs/campaign-v8.html) | 不支援 |
-| Web UI* | 支援 |
+| [Campaign Classicv7](https://experienceleague.adobe.com/docs/campaign-classic.html) | 不支援 |
+| [Campaign v8 （使用者端主控台）](https://experienceleague.adobe.com/docs/campaign-v8.html) | 不支援 |
+| Campaign Web 使用者介面 | 支援。 [瞭解更多](https://experienceleague.adobe.com/docs/campaign-web/v8/integrations/aem-assets.html) |
 
-*Adobe Campaign Classic的Web UI預計在2023年底前推出。
 
 ## 與Adobe Campaign Standard整合 {#acs}
 
