@@ -1,18 +1,18 @@
 ---
-title: 從試算表到Forms — 掌握表單區塊欄位驗證
-description: 使用試算表和表單區塊欄位，更快製作強大的表單！ 本指南可協助您建立EDS Forms區塊欄位的自訂驗證。
+title: 準備您的試算表以接受資料
+description: 使用試算表和表單區塊欄位，更快製作強大的表單！
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: c1a01dd256d39531c6091410e38a744688e71aaa
+source-git-commit: bd8c4fbfd7f740baa6abd7a91fb8d1dcdaff6c28
 workflow-type: tm+mt
-source-wordcount: '989'
+source-wordcount: '994'
 ht-degree: 0%
 
 ---
 
 
-# 啟用您的表單以傳送資料
+# 準備您的試算表以接受資料
 
 一旦您 [已建立和預覽表單](/help/edge/docs/forms/create-forms.md)，是時候啟用對應的試算表來開始接收資料了。
 
@@ -20,15 +20,15 @@ ht-degree: 0%
 
 若要啟用試算表：
 
-1. 開啟具有表單的試算表，並在其中新增工作表，然後將工作表名稱變更為 `incoming`.
+1. 開啟具有表單的試算表，然後附加新工作表，將其重新命名為 `incoming`.
 
    >[!WARNING]
    >
-   > 如果 `incoming` 工作表不存在，AEM不會將任何資料傳送至此活頁簿。
+   > 如果 `incoming` 工作表不存在，AEM不會將任何資料傳送至試算表。
 
-1. 在 `incoming` 工作表，將所有欄標題映象至 `Name` 欄（表單欄位名稱） `shared-default` 工作表。
+1. 映象表單欄位名稱，值 `Name` 中的欄`shared-default` 工作表，到中的標題 `incoming` 工作表。
 
-   以下範例會顯示「聯絡我們」表單的標題：
+   中的每一個值 `Name` 的欄 `shared-default` 工作表（不包括提交按鈕）會作為頁首 `incoming` 工作表。 例如，請考慮下圖說明「contact-us」表單的標題：
 
    ![聯絡人表單的欄位](/help/edge/assets/contact-us-form-excel-sheet-fields.png)
 
@@ -77,9 +77,9 @@ ht-degree: 0%
    >
    >即使您之前已預覽過工作表，您仍必須在建立工作表之後再次預覽 `incoming` 第一次使用工作表。
 
-1. 傳送POST請求以在中產生適當的標頭 `incoming` 工作表，然後新增 `shared-default` 工作表至您的試算表（如果尚未存在）。
+1. 傳送POST請求以在中產生適當的標頭 `incoming` 工作表，然後新增 `shared-default` 頁面至您的試算表（如果尚未存在）。
 
-   若要瞭解如何設定POST要求的格式，以設定您的工作表，請參閱 [管理API檔案](https://www.hlx.live/docs/admin.html#tag/form). 您可以檢視以下提供的範例：
+   若要瞭解如何設定POST要求的格式，以設定您的工作表，請參閱 [管理API檔案](https://www.aem.live/docs/admin.html#tag/authentication/operation/profile). 您可以檢視以下提供的範例：
 
    **請求**
 
