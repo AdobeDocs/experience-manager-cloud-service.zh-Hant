@@ -2,10 +2,10 @@
 title: 在Screensas a Cloud Service中建立和管理頻道
 description: 本頁面說明如何在Screens中以as a Cloud Service方式建立和管理頻道。
 exl-id: 3b0bae7a-4a45-485a-ab04-604510ff6578
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: f7ed7c63fd141c6a9817e4718edb31425b14a761
 workflow-type: tm+mt
-source-wordcount: '1086'
-ht-degree: 2%
+source-wordcount: '1103'
+ht-degree: 1%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 2%
 
 * 瞭解如何建立Screens內容提供者的管道
 * 管理和編輯您的頻道中的內容
-* 頻道的啟用排程
+* 在中管理頻道的指派和啟用排程 [Screens服務提供者](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html?lang=zh-Hant)
 
 ## 在Screensas a Cloud Service中建立新順序頻道的步驟 {#create-new-channel}
 
@@ -93,6 +93,8 @@ ht-degree: 2%
 
 此功能可讓您定義頻道的預設啟用排程，並預設用於顯示的每個指派。 此方法可讓繁瑣的排程定義不需要重複。
 
+1. 從瀏覽至Screens服務提供者 [此處](https://experience.adobe.com/screens).
+
 ### 建立管道的預設指派詳細資料 {#create-default}
 
 1. 導覽至您要設定之頻道的詳細資訊頁面。
@@ -119,7 +121,7 @@ ht-degree: 2%
 具有預設指派詳細資訊的管道可以指派給以與一般管道相同的顯示方式，新增選項以使用預設指派詳細資訊，而不是每次都手動定義自訂指派詳細資訊。
 
 1. 導覽至您要指派給頻道的顯示詳細資訊頁面，然後按一下 **指派管道**.
-或者，在「詳細目錄檢視」中選取所需的顯示，然後按一下 **指派管道**.
+或者，選取中所需的顯示 [詳細目錄](https://experience.adobe.com/screens/displays) 檢視並按一下 **指派管道**.
 1. 通道指定對話方塊隨即開啟。
 
    ![影像](/help/screens-cloud/assets/display/Assignments4.png)

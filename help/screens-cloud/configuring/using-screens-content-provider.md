@@ -2,9 +2,9 @@
 title: 使用Screens內容提供者
 description: 本頁面說明如何使用Screens Content Provider建立內容。
 exl-id: ed7de2c0-13cf-4ce0-8794-aef918cf8e71
-source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
+source-git-commit: f7ed7c63fd141c6a9817e4718edb31425b14a761
 workflow-type: tm+mt
-source-wordcount: '377'
+source-wordcount: '383'
 ht-degree: 15%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 15%
 
 ## 目標 {#objective}
 
-下節將說明設定完成後，如何使用Screens內容提供者 [Screens服務提供者](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html).
+下節將說明設定完成後，如何在Screens內容提供者中建立頻道 [Screens服務提供者](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html?lang=zh-Hant).
 
 ## 使用 Screens 內容提供者 {#screens-content-provider}
 
@@ -46,12 +46,12 @@ ht-degree: 15%
 
    ![環境卡中醒目提示的連結，可讓您存取Screens內容提供者。](/help/screens-cloud/assets/configure/screens-cp-2.png)
 
-   登入Screens Content Provider後，您現在已準備好在內容播放中建立內容。
+   登入Screens內容提供者後，請導覽至Screens >內容提供者。現在您已準備好建立內容播放的內容。
 
    使用Screens內容提供者來建立和管理以下內容：
 
    * 專案
-   * 頻道
+   * 管道
    * 位置
 
 ## 下一步 {#whats-next}
