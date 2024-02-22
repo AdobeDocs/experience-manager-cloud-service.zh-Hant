@@ -4,9 +4,9 @@ description: 製作完美的表單，快速！ ⚡ AEM Forms Edge Delivery檔案
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 34ba430ae9b40fc3bc675af20bbee2534c44a0c3
+source-git-commit: 7b497791c70fd588b7e8c9a94caa218189d3153a
 workflow-type: tm+mt
-source-wordcount: '932'
+source-wordcount: '891'
 ht-degree: 1%
 
 ---
@@ -28,43 +28,21 @@ ht-degree: 1%
 ## 開始之前
 
 * 設定並複製您的邊緣傳遞服務(EDS)專案。 另請參閱 [開發人員教學課程](https://www.aem.live/developer/tutorial) 以取得詳細資訊。
-* 原地複製 [Forms區塊存放庫](https://github.com/adobe/afb). 其中包含轉譯表單所需的表單區塊。
+* 原地複製 [Forms區塊存放庫](https://github.com/adobe/afb).
 
-![Edge Delivery Forms快速入門](/help/edge/assets/getting-started-with-eds-forms.png)
+  ![Edge Delivery Forms快速入門](/help/edge/assets/getting-started-with-eds-forms.png)
 
 
-## 步驟1：將表單區塊新增至您的Edge Delivery Service (EDS)專案 {#add-forms-block-to-an-eds-project}
+## 建立表單
+
+
++++ 步驟1：將表單區塊新增至您的邊緣傳遞服務(EDS)專案。
 
 AEM Forms Edge Delivery包含表單區塊，可協助您輕鬆建立表單，以擷取及儲存擷取的資料。 若要將表單區塊納入您的Edge Delivery Service專案：
 
-1. 導覽至 `blocks` 位於本機開發環境上Edge Delivery Service (EDS)專案資料夾中的資料夾。
+1. 瀏覽至 `[cloned Forms Block repository folder]`/blocks/。
 
-
-   ```Shell
-   cd [EDS Project folder]/blocks
-   ```
-
-1. 建立名為的資料夾 `form` 在 `blocks` 目錄。 例如，在目錄下，EDS專案的名稱為 `Portal`，建立名為的資料夾 `form`.
-
-   ```Shell
-   mkdir form
-   ```
-
-
-1. 新增 [Forms區塊](https://github.com/adobe/afb/tree/main/blocks/form) 檔案移至&#39;form&#39;資料夾。
-
-   ```shell
-   cp -R <source:path of the form block> <destination: path of the form folder created in the previous step>
-   ```
-
-   **例如，**
-
-
-   ```shell
-   cp -R ../../afb/blocks/form ../../fantastic-computing-machine/blocks 
-   ```
-
-
+1. 複製 `forms` 資料夾至 `[Cloned EDS Project repository folder]\blocks` 資料夾。
 
 1. 將「表單」資料夾和基礎檔案簽入GitHub上的Edge Delivery Service專案。
 
@@ -79,10 +57,13 @@ AEM Forms Edge Delivery包含表單區塊，可協助您輕鬆建立表單，以
 
    >[!NOTE]
    >
-   > * 如果您遇到「無法解析模組&#39;&#39;&#39;../../scripts/lib-franklin.js&#39;&#39;的路徑」錯誤，請開啟 `[EDS Project]/blocks/forms/form.js` 檔案。 在匯入陳述式中，將 `franklin-lib.js` 含下列專案的檔案： `aem.js` 檔案。
+   > * 如果您遇到「無法解析模組&#39;&#39;&#39;../../scripts/lib-franklin.js&#39;&#39;的路徑」錯誤，請開啟 `[EDS Project]/blocks/forms/form.js` 檔案。 在匯入陳述式中，將 `lib-franklin.js` 含下列專案的檔案： `aem.js` 檔案。
    > * 如果您遇到任何絨毛錯誤，請隨時忽略它們。 若要略過內嵌檢查，請開啟 `[EDS Project]\package.json` 檔案並更新「lint」指令碼，從 `"lint": "npm run lint:js && npm run lint:css"` 至 `"lint": "echo 'skipping linting for now'"`. 儲存檔案並將其提交至您的GitHub專案。
 
-## 步驟2：使用Microsoft Excel或Google工作表建立表單
++++
+
++++ 步驟2：使用Microsoft Excel或Google工作表建立表單
+
 
 您可以使用試算表輕鬆建立表單，而不是複雜的程式。 您可以先將列和欄標題新增至試算表，其中每一列定義一個表單欄位，每一欄標題定義對應表單欄位的屬性。
 
@@ -122,15 +103,16 @@ AEM Forms Edge Delivery包含表單區塊，可協助您輕鬆建立表單，以
    For example, https://main--portal--wkndforms.hlx.live/contact-us.json
    ```
 
++++
 
++++ 步驟3：使用Edge Delivery Service (EDS)頁面預覽表單
 
-## 步驟3：使用Edge Delivery Service (EDS)頁面預覽表單
 
 到目前為止，您已為EDS專案啟用表單區塊，並準備好表單的結構。 現在，若要預覽表單：
 
-1. 前往Microsoft SharePoint或Google Drive上的AEM Edge Delivery專案目錄。
+1. 前往Microsoft SharePoint或Google Drive帳戶，並開啟AEM Edge Delivery專案目錄。
 
-1. 建立或開啟doc檔案以託管表單。 例如，開啟索引檔案。
+1. 開啟doc檔案以將表單嵌入其中。 例如，開啟索引檔案。 您也可以建立新檔案。
 
 1. 導覽至檔案中您要新增表單的位置。
 
@@ -153,6 +135,9 @@ AEM Forms Edge Delivery包含表單區塊，可協助您輕鬆建立表單，以
    現在，填寫表單並按一下提交按鈕，您會遇到類似以下內容的錯誤，因為試算表尚未設定為接受資料。
 
    ![表單提交時發生錯誤](/help/edge/assets/form-error.png)
+
++++
+
 
 ## 下一步
 
