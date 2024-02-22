@@ -4,9 +4,9 @@ description: 使用試算表和表單區塊欄位，更快製作強大的表單�
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 0604838311bb9ab195789fad755b0910e09519fd
+source-git-commit: c1a01dd256d39531c6091410e38a744688e71aaa
 workflow-type: tm+mt
-source-wordcount: '964'
+source-wordcount: '989'
 ht-degree: 0%
 
 ---
@@ -14,65 +14,72 @@ ht-degree: 0%
 
 # 啟用您的表單以傳送資料
 
-建立及預覽表單後，請啟用對應的工作表以接受資料。 若要開始接受資料，請設定試算表以包含符合您要收集之資料的標題。 新增至「shared-default」工作表的所有標題也應該出現在表格下的「incoming」工作表中。
+一旦您 [已建立和預覽表單](/help/edge/docs/forms/create-forms.md)，是時候啟用對應的試算表來開始接收資料了。
 
-下列範例會顯示「聯絡我們」表單的欄位：
+>[!VIDEO](https://video.tv.adobe.com/v/3427489?quality=12&learn=on)
 
-![聯絡人表單的欄位](/help/edge/assets/contact-us-form-excel-sheet-fields.png)
+若要啟用試算表：
 
-
-完成此設定後，您的表單就準備好可以接受提交了。 您可以採用下列其中一種方法，讓試算表接受資料：
-
-* [手動設定試算表以接受資料](#manually-configure-a-spreadsheet-to-receive-data)
-
-* [使用Admin API啟用試算表以接受資料](#use-admin-apis-to-enable-a-spreadsheet-to-receive-data-use-admin-apis-to-enable-a-spreadsheet-to-recieve-data)
-
-## 手動設定試算表以接受資料
-
-若要手動設定試算表以接受資料：
-
-
-1. 開啟您建立的活頁簿，並將預設工作表名稱變更為「傳入」。
+1. 開啟具有表單的試算表，並在其中新增工作表，然後將工作表名稱變更為 `incoming`.
 
    >[!WARNING]
    >
-   > 如果「傳入」工作表不存在，AEM將不會傳送任何資料到此活頁簿。
+   > 如果 `incoming` 工作表不存在，AEM不會將任何資料傳送至此活頁簿。
 
-1. 新增符合您輸入資料的標題以準備工作表。 下列範例會顯示「聯絡我們」表單的欄位：
+1. 在 `incoming` 工作表，將所有欄標題映象至 `Name` 欄（表單欄位名稱） `shared-default` 工作表。
+
+   以下範例會顯示「聯絡我們」表單的標題：
 
    ![聯絡人表單的欄位](/help/edge/assets/contact-us-form-excel-sheet-fields.png)
 
-1. 在Sidekick中預覽工作表。
+1. 使用sidekick預覽工作表。
 
    >[!NOTE]
    >
-   >即使您之前已預覽過工作表，您也必須在第一次建立「傳入」工作表之後再次預覽它。
+   >即使您之前已預覽過工作表，您仍必須在建立工作表之後再次預覽 `incoming` 第一次使用工作表。
 
 
-## 使用Admin API啟用試算表以接受資料
+將欄位名稱新增至 `incoming` 工作表，您的表單就準備好可以接受提交了。 您可以預覽表單，並使用表單將資料提交至工作表。
 
-您可以在AEM管理服務內起始表單路由的POST請求。 收到POST內文資料後，Admin服務會加以分析，並自主產生資料擷取所需的必要標題、表格和工作表，進而最佳化Forms服務的功能。
+您也會在試算表中觀察到下列變更：
+
+名為「Slack」的工作表會新增至Excel活頁簿或Google工作表。 在此工作表中，每當新資料內嵌至試算表時，您都可以為指定的Slack頻道設定自動通知。 目前，AEM僅支援AEM工程Slack組織和Adobe企業支援組織的通知。
+
+1. 若要設定Slack通知，請輸入Slack工作區的「teamId」以及「頻道名稱」或「ID」。 您也可以向Slack-bot （使用偵錯命令）詢問「teamId」和「channel ID」。 建議改用「管道ID」而非「管道名稱」，因為這樣可在重新命名管道前使用。
+
+   >[!NOTE]
+   >
+   > 較舊的表單沒有「teamId」欄。 「teamId」包含在頻道欄中，以「#」或「/」分隔。
+
+1. 輸入任何您想要的標題，並在欄位底下輸入您要在Slack通知中看到的欄位名稱。 每個標題應以逗號分隔（例如名稱、電子郵件）。
+
+   >[!WARNING]
+   >
+   >  「shared-default」工作表不應包含您不喜歡公開存取的任何個人識別資訊或敏感資料。
+
+
+## （選用）使用Admin API啟用試算表以接受資料
+
+您也可以傳送POST要求至表單，讓其接受資料並設定標題 `incoming` 工作表。 在收到POST請求後，此服務會分析請求內文，並自主產生資料擷取所需的必要標題和工作表。
 
 若要使用Admin API讓試算表接受資料：
 
 
-1. 開啟您建立的活頁簿，並將預設工作表名稱變更為「傳入」。
+1. 開啟您已建立的活頁簿，並將預設工作表的名稱變更為 `incoming`.
 
    >[!WARNING]
    >
-   > 如果「傳入」工作表不存在，AEM將不會傳送任何資料到此活頁簿。
+   > 如果 `incoming` 工作表不存在，AEM不會將任何資料傳送至此活頁簿。
 
 1. 在Sidekick中預覽工作表。
 
    >[!NOTE]
    >
-   >即使您之前已預覽過工作表，您也必須在第一次建立「傳入」工作表之後再次預覽它。
+   >即使您之前已預覽過工作表，您仍必須在建立工作表之後再次預覽 `incoming` 第一次使用工作表。
 
-1. 新增符合您輸入資料的標題以準備工作表。
+1. 傳送POST請求以在中產生適當的標頭 `incoming` 工作表，然後新增 `shared-default` 工作表至您的試算表（如果尚未存在）。
 
-   若要這麼做，請傳送POST要求至AEM管理服務中的表單路由。 管理員服務會檢查POST內文中的資料，並產生所需的適當標題、表格和工作表，以有效擷取資料並充分利用Forms服務。
-
-   若要瞭解如何設定POST要求的格式，以設定您的工作表，請參閱 [管理API檔案](https://www.hlx.live/docs/admin.html#tag/form). 此外，請檢視以下提供的範例：
+   若要瞭解如何設定POST要求的格式，以設定您的工作表，請參閱 [管理API檔案](https://www.hlx.live/docs/admin.html#tag/form). 您可以檢視以下提供的範例：
 
    **請求**
 
@@ -135,27 +142,26 @@ ht-degree: 0%
    }'
    ```
 
-   前述的POST請求提供範例資料，包括表單欄位及其各自的範例值。 管理員服務會使用此資料來設定表單。
+   上述POST請求提供範例資料，包括表單欄位及其各自的範例值。 管理員服務會使用此資料來設定表單。
 
-   將POST請求提交至Admin Service後，您會在活頁簿中觀察到下列變更：
+   您的表單現在已啟用以接受資料。 您也會在試算表中觀察到下列變更：
 
-* 名為「shared-default」的新工作表會新增至Excel活頁簿或Google工作表。 當對工作表發出GET請求時，會擷取「shared-default」工作表中存在的資料。 此工作表是最佳位置，可供您使用試算表公式來彙總傳入的資料，使其有利於在其他情境中消耗。
+名為「Slack」的工作表會新增至Excel活頁簿或Google工作表。 在此工作表中，每當新資料內嵌至試算表時，您都可以為指定的Slack頻道設定自動通知。 目前，AEM僅支援AEM工程Slack組織和Adobe企業支援組織的通知。
 
-  「shared-default」工作表不應包含您不喜歡公開存取的任何個人識別資訊或敏感資料。
+1. 若要設定Slack通知，請輸入Slack工作區的「teamId」以及「頻道名稱」或「ID」。 您也可以向Slack-bot （使用偵錯命令）詢問「teamId」和「channel ID」。 建議改用「管道ID」而非「管道名稱」，因為這樣可在重新命名管道前使用。
 
-* 名為「Slack」的工作表會新增至Excel活頁簿或Google工作表。 在此工作表中，每當新資料內嵌至試算表時，您都可以為指定的Slack頻道設定自動通知。 目前，AEM僅支援AEM工程Slack組織和Adobe企業支援組織的通知。
+   >[!NOTE]
+   >
+   > 較舊的表單沒有「teamId」欄。 「teamId」包含在頻道欄中，以「#」或「/」分隔。
 
-   1. 若要設定Slack通知，請輸入Slack工作區的「teamId」以及「頻道名稱」或「ID」。 您也可以向Slack-bot （使用偵錯命令）詢問「teamId」和「channel ID」。 建議改用「管道ID」而非「管道名稱」，因為這樣可在重新命名管道前使用。
+1. 輸入任何您想要的標題，並在欄位底下輸入您要在Slack通知中看到的欄位名稱。 每個標題應以逗號分隔（例如名稱、電子郵件）。
 
-      >[!NOTE]
-      >
-      > 較舊的表單沒有「teamId」欄。 「teamId」包含在頻道欄中，以「#」或「/」分隔。
-
-   1. 輸入任何您想要的標題，並在欄位底下輸入您要在Slack通知中看到的欄位名稱。 每個標題應以逗號分隔（例如名稱、電子郵件）。
 
 工作表現在已設定為可接收資料，您可以 [使用forms區塊預覽表單](/help/edge/docs/forms/create-forms.md#preview-the-form-using-your-edge-delivery-service-eds-page) 或 [使用POST請求](#use-admin-apis-to-send-data-to-your-sheet) 以開始傳送資料至工作表。
 
-
+>[!WARNING]
+>
+>  「shared-default」工作表不應包含您不喜歡公開存取的任何個人識別資訊或敏感資料。
 
 ## 傳送資料至您的工作表 {#send-data-to-your-sheet}
 

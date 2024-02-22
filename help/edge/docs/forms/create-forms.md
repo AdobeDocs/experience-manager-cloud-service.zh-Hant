@@ -4,9 +4,9 @@ description: 製作完美的表單，快速！ ⚡ AEM Forms Edge Delivery檔案
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 7b497791c70fd588b7e8c9a94caa218189d3153a
+source-git-commit: c1a01dd256d39531c6091410e38a744688e71aaa
 workflow-type: tm+mt
-source-wordcount: '891'
+source-wordcount: '889'
 ht-degree: 1%
 
 ---
@@ -18,33 +18,31 @@ ht-degree: 1%
 
 這些表單會直接將資料提交至Microsoft Excel或Google Sheets檔案，讓您能夠使用生動的生態系統以及Google Sheets、Microsoft Excel和Microsoft Sharepoint的強大API，輕鬆處理提交的資料或啟動現有的業務工作流程。
 
+![Edge Delivery Forms快速入門](/help/edge/assets/getting-started-with-eds-forms.png)
+
+
 ## 先決條件
 
-* 您有GitHub帳戶。
-* 您可以存取Google工作表或Microsoft SharePoint。
-* 您瞭解Git、HTML、CSS和JavaScript的基本概念。
-* 您已安裝Node和NPM以進行本機開發。
-
-## 開始之前
+開始之前，請確定您已完成下列步驟：
 
 * 設定並複製您的邊緣傳遞服務(EDS)專案。 另請參閱 [開發人員教學課程](https://www.aem.live/developer/tutorial) 以取得詳細資訊。
-* 原地複製 [Forms區塊存放庫](https://github.com/adobe/afb).
-
-  ![Edge Delivery Forms快速入門](/help/edge/assets/getting-started-with-eds-forms.png)
+* 原地複製 [Forms區塊存放庫](https://github.com/adobe/afb). 它包含要在EDS Sites頁面上呈現表單的程式碼。
+* 確保您有權存取Google工作表或Microsoft SharePoint。
 
 
 ## 建立表單
-
 
 +++ 步驟1：將表單區塊新增至您的邊緣傳遞服務(EDS)專案。
 
 AEM Forms Edge Delivery包含表單區塊，可協助您輕鬆建立表單，以擷取及儲存擷取的資料。 若要將表單區塊納入您的Edge Delivery Service專案：
 
-1. 瀏覽至 `[cloned Forms Block repository folder]`/blocks/。
+1. 導覽至 `[cloned Forms Block repository folder]/blocks/`。
 
-1. 複製 `forms` 資料夾至 `[Cloned EDS Project repository folder]\blocks` 資料夾。
+1. 複製 `forms` 資料夾至 `[Cloned EDS Project repository folder]/blocks` 資料夾。
 
-1. 將「表單」資料夾和基礎檔案簽入GitHub上的Edge Delivery Service專案。
+   >[!VIDEO](https://video.tv.adobe.com/v/3427487?quality=12&learn=on)
+
+1. 存回 `form` 資料夾和基礎檔案新增至GitHub上的邊緣傳遞服務專案。
 
    ```Shell
    cd ..
@@ -112,7 +110,7 @@ AEM Forms Edge Delivery包含表單區塊，可協助您輕鬆建立表單，以
 
 1. 前往Microsoft SharePoint或Google Drive帳戶，並開啟AEM Edge Delivery專案目錄。
 
-1. 開啟doc檔案以將表單嵌入其中。 例如，開啟索引檔案。 您也可以建立新檔案。
+1. 開啟doc檔案以將表單嵌入其中。 例如，開啟索引檔案。 您也可以建立新的doc檔案。
 
 1. 導覽至檔案中您要新增表單的位置。
 
