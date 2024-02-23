@@ -2,10 +2,10 @@
 title: 流量篩選規則包括 WAF 規則
 description: 設定流量篩選規則，包括 Web 應用程式防火牆 (WAF) 規則
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: 46e48b6bb8d2b926b55330024e145d608fcf3609
-workflow-type: ht
-source-wordcount: '3350'
-ht-degree: 100%
+source-git-commit: 86a7815a1055b8ffaf57b802f3232f2c03ec06dc
+workflow-type: tm+mt
+source-wordcount: '3376'
+ht-degree: 99%
 
 ---
 
@@ -253,6 +253,7 @@ when:
 | USERAGENT | 攻擊工具 | 攻擊工具指使用自動化軟體識別安全漏洞或試圖惡意探索發現的漏洞。 |
 | LOG4J-JNDI | Log4J JNDI | Log4J JNDI 攻擊會試圖惡意探索出現在 2.16.0 之前的 Log4J 版本中的 [Log4Shell 漏洞](https://en.wikipedia.org/wiki/tw/Log4Shell) |
 | BHH | 錯誤跳躍標頭 | 錯誤跳躍標頭指透過格式錯誤的傳輸編碼 (TE) 或內容長度 (CL) 標頭或格式正確的 TE 和 CL 標頭進行的 HTTP 走私嘗試 |
+| 程式碼插入 | 程式碼插入 | 程式碼插入是指透過使用者輸入任意應用程式程式碼指令，試圖控制或破壞目標系統。 |
 | ABNORMALPATH | 異常路徑 | 異常路徑指原始路徑和標準化路徑不同 (例如：`/foo/./bar` 會標準化為 `/foo/bar`) |
 | DOUBLEENCODING | 雙重編碼 | 雙重編碼會檢查雙重編碼 html 字元的規避技術 |
 | NOTUTF8 | 無效的編碼 | 無效的編碼可能會導致伺服器將要求中的惡意字元翻譯為回應，進而導致拒絕服務或 XSS |
