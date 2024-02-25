@@ -5,10 +5,10 @@ contentOwner: AK
 feature: Asset Management
 role: User,Leader,Architect
 exl-id: 4437f214-d058-4975-8b8f-869a12c8103b
-source-git-commit: 07db10c4ee9cced7b6a697fe4f41c99eaba6a39f
-workflow-type: ht
-source-wordcount: '820'
-ht-degree: 100%
+source-git-commit: b3bfc841f0609e1e529c97dd1f11d16de561701c
+workflow-type: tm+mt
+source-wordcount: '892'
+ht-degree: 92%
 
 ---
 
@@ -59,6 +59,10 @@ DAM 圖書管理員、開發人員和超級使用者可以繼續使用管理員�
 Edge Delivery 讓您能夠建立快速、引人入勝的網站，作者可以在其中快速更新和發佈內容，並且可以快速啟動新網站。
 
 將 AEM Assets 與 Edge Delivery Services 文件型撰寫整合，讓網站作者能夠在 Microsoft Word 或 Google Docs 中撰寫文件時使用 AEM Assets 存放庫中提供的影像。如需詳細資訊，請參閱[將 AEM Assets 與文件型撰寫整合](/help/edge/using.md#integrate-assets-edge)。
+
+## 與Adobe Journey Optimizer整合 {#integration-with-ajo}
+
+[Adobe Journey Optimizer](https://business.adobe.com/products/journey-optimizer/adobe-journey-optimizer.html) 可為客戶簡化歷程管理，以為全通道行銷活動提供智慧型決策和見解。 使用Journey Optimizer設計訊息時，您可以直接從Journey Optimizer介面記憶體取Assetsas a Cloud Service存放庫。 使用者可透過Experience Manager Assets的內嵌使用者介面存取資產。 如需詳細資訊，請參閱 [使用Experience Manager Assets建立和管理資產](https://experienceleague.adobe.com/docs/journey-optimizer/using/content-management/assets-images/assets.html).
 
 ## 新資產功能 {#whats-new-assets}
 
