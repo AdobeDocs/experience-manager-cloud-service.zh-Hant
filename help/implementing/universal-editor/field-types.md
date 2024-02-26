@@ -2,9 +2,9 @@
 title: 模型定義、欄位和元件類型
 description: 透過範例瞭解屬性邊欄中通用編輯器可編輯的欄位和元件型別。 瞭解如何建立模型定義並連結至元件，以裝備您自己的應用程式。
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
-source-git-commit: bbe02f66b5bce3b919be4abd3b2de482a235b6ee
+source-git-commit: fcdba895510b0c428a4274092c8b314fd36f5c7d
 workflow-type: tm+mt
-source-wordcount: '1126'
+source-wordcount: '1144'
 ht-degree: 10%
 
 ---
@@ -89,6 +89,23 @@ ht-degree: 10%
 ### 元件型別 {#component-types}
 
 以下是可用於呈現欄位的元件型別。
+
+| 說明 | 元件類型 |
+|---|---|
+| [AEM標籤](#aem-tag) | `aem-tag` |
+| [AEM內容](#aem-content) | `aem-content` |
+| [布林值](#boolean) | `boolean` |
+| [核取方塊群組](#checkbox-group) | `checkbox-group` |
+| [容器](#container) | `container` |
+| [日期時間](#date-time) | `date-time` |
+| [多選](#multiselect) | `multiselect` |
+| [數字](#number) | `number` |
+| [選項按鈕群組](#radio-group) | `radio-group` |
+| [參考](#reference) | `reference` |
+| [RTF文字](#rich-text) | `rich-text` |
+| [選取](#select) | `select` |
+| [標籤](#tab) | `tab` |
+| [文字](#text) | `text` |
 
 #### AEM標籤 {#aem-tag}
 
@@ -624,6 +641,59 @@ AEM內容元件型別會啟用AEM內容選擇器，其可用於設定內容參�
 
 >[!ENDTABS]
 
+#### RTF {#rich-text}
+
+RTF允許多行RTF輸入。 它提供額外的驗證型別。
+
+| 驗證類型 | 數值類型 | 說明 | 必填 |
+|---|---|---|---|
+| `maxSize` | `number` | 允許的最大字元數 | 否 |
+| `customErrorMsg` | `string` | 訊息將在發生以下情況時顯示 `maxSize` 已超過 | 否 |
+
+>[!BEGINTABS]
+
+>[!TAB 範例1]
+
+```json
+{
+  "id": "richtext",
+  "fields": [
+    {
+      "component": "richtext",
+      "name": "rte",
+      "label": "Rich Text",
+      "valueType": "string"
+    }
+  ]
+}
+```
+
+>[!TAB 範例2]
+
+```json
+{
+  "id": "another-richtext",
+  "fields": [
+    {
+      "component": "richtext",
+      "name": "rte",
+      "label": "Rich Text",
+      "valueType": "string",
+      "validation": {
+        "maxSize": 1000,
+        "customErrorMsg": "That's about as funny as a screen door on a battleship."
+      }
+    }
+  ]
+}
+```
+
+>[!TAB 熒幕擷圖]
+
+![文字區域元件型別的熒幕擷圖](assets/component-types/richtext.png)
+
+>[!ENDTABS]
+
 #### 選取 {#select}
 
 選取元件型別可讓您從下拉式選單中的預先定義選項清單中選取單一選項。
@@ -704,62 +774,9 @@ A `tab` 可將定義視為陣列中的分隔符號 `fields`. 之後的一切 `ta
 
 >[!ENDTABS]
 
-#### 文字區域 {#text-area}
+#### 文字 {#text}
 
-文字區域允許多行RTF文字輸入。 它提供額外的驗證型別。
-
-| 驗證類型 | 數值類型 | 說明 | 必填 |
-|---|---|---|---|
-| `maxSize` | `number` | 允許的最大字元數 | 否 |
-| `customErrorMsg` | `string` | 訊息將在發生以下情況時顯示 `maxSize` 已超過 | 否 |
-
->[!BEGINTABS]
-
->[!TAB 範例1]
-
-```json
-{
-  "id": "richtext",
-  "fields": [
-    {
-      "component": "text-area",
-      "name": "rte",
-      "label": "Rich Text",
-      "valueType": "string"
-    }
-  ]
-}
-```
-
->[!TAB 範例2]
-
-```json
-{
-  "id": "another-richtext",
-  "fields": [
-    {
-      "component": "text-area",
-      "name": "rte",
-      "label": "Rich Text",
-      "valueType": "string",
-      "validation": {
-        "maxSize": 1000,
-        "customErrorMsg": "That's about as funny as a screen door on a battleship."
-      }
-    }
-  ]
-}
-```
-
->[!TAB 熒幕擷圖]
-
-![文字區域元件型別的熒幕擷圖](assets/component-types/richtext.png)
-
->[!ENDTABS]
-
-#### 文字輸入 {#text-input}
-
-文字輸入允許單行文字輸入。  它包含其他驗證型別。
+文字允許單行文字輸入。  它包含其他驗證型別。
 
 | 驗證類型 | 數值類型 | 說明 | 必填 |
 |---|---|---|---|
@@ -777,7 +794,7 @@ A `tab` 可將定義視為陣列中的分隔符號 `fields`. 之後的一切 `ta
   "id": "simpletext",
   "fields": [
     {
-      "component": "text-input",
+      "component": "text",
       "name": "text",
       "label": "Simple Text",
       "valueType": "string"
@@ -793,7 +810,7 @@ A `tab` 可將定義視為陣列中的分隔符號 `fields`. 之後的一切 `ta
   "id": "another simpletext",
   "fields": [
     {
-      "component": "text-input",
+      "component": "text",
       "name": "text",
       "label": "Simple Text",
       "valueType": "string",
@@ -812,6 +829,6 @@ A `tab` 可將定義視為陣列中的分隔符號 `fields`. 之後的一切 `ta
 
 >[!TAB 熒幕擷圖]
 
-![文字輸入元件型別的熒幕擷圖](assets/component-types/simpletext.png)
+![文字元件型別的熒幕擷圖](assets/component-types/simpletext.png)
 
 >[!ENDTABS]
