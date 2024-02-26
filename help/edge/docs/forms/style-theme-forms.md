@@ -4,9 +4,9 @@ description: 自訂AEM Forms Edge Delivery Service表單的主題和樣式
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 4a3ebcf7985253ebca24e90ab57ae7eaf3e924e9
+source-git-commit: 59ed012f10a20939c846c8fff088534c5638f3db
 workflow-type: tm+mt
-source-wordcount: '1285'
+source-wordcount: '1268'
 ht-degree: 0%
 
 ---
@@ -87,7 +87,7 @@ Forms對於使用者在網站上的互動至關重要，可讓他們輸入資料
 * 輸入： `input` 元素會定義要輸入的資料型別。 例如，文字、數字、電子郵件。
 * 說明（選用）： `div` 與類別 `field-description` 為使用者提供其他資訊或指示。
 
-**範例**
+**HTML結構範例**
 
 ```HTML
 <div class="form-text-wrapper form-first-name field-wrapper" data-required="true">
@@ -99,7 +99,7 @@ Forms對於使用者在網站上的互動至關重要，可讓他們輸入資料
 </div>
 ```
 
-#### 一般元件的CSS選取器
+**一般元件的CSS選取器**
 
 ```CSS
 .form-{Type}-wrapper input {
@@ -121,7 +121,7 @@ Forms對於使用者在網站上的互動至關重要，可讓他們輸入資料
 * `.form-{Type}-wrapper`：鎖定外部 `div` 欄位型別為基礎的元素。 例如， `.form-text-wrapper` 鎖定所有文字輸入欄位。
 * `.form-{Name}`：進一步根據特定欄位名稱選取元素。 例如， `.form-first-name` 定位「名字」文字欄位。
 
-**範例：**
+**一般元件的CSS選取器範例**
 
 ```CSS
 /*Target all text input fields */
@@ -159,7 +159,7 @@ Forms對於使用者在網站上的互動至關重要，可讓他們輸入資料
 </div>
 ```
 
-**範例**
+**範例HTML結構**
 
 ```HTML
     <div class="form-drop-down-wrapper form-country field-wrapper" data-required="true">
@@ -173,7 +173,7 @@ Forms對於使用者在網站上的互動至關重要，可讓他們輸入資料
    </div>
 ```
 
-#### 下拉式元件的CSS選取器
+#### 下拉式元件的CSS選取器範例
 
 ```CSS
 /* Target the outer wrapper */
@@ -265,98 +265,95 @@ Forms對於使用者在網站上的互動至關重要，可讓他們輸入資料
 </div>
 ```
 
-#### 選項和核取方塊群組的CSS選取器
+**選項和核取方塊群組的CSS選取器範例**
 
-**定位外部包裝函式**
-
-
-```CSS
-   /* Targets all radio group wrappers */
-.form-radio-group-wrapper {
-  margin-bottom: 20px; /* Adds space between radio groups */
-}
-
-/* Targets all checkbox group wrappers */
-.form-checkbox-group-wrapper {
-  margin-bottom: 20px; /* Adds space between checkbox groups */
-}
-```
-
-這些選取器會以選項和核取方塊群組最外側的容器為目標，讓您套用一般樣式至整個群組結構。 這對於設定間距、對齊方式或其他配置相關屬性非常有用。
-
-**目標群組標籤**
-
-```CSS
-.form-radio-group-wrapper .field-label,
-.form-checkbox-group-wrapper .field-label {
- font-weight: bold; /* Makes the group label bold */
-}
-```
-
-此選取器會鎖定 `.field-label` 選項和核取方塊群組包裝函式中的元素。 這可讓您設定這些群組專屬的標籤樣式，讓這些群組更加引人注目。
-
-**鎖定個別輸入和標籤**
-
-```CSS
-/* Styling radio buttons */
-.form-radio-group-wrapper input[type="radio"] {
-  margin-right: 5px; /* Adds space between the input and its label */
-} 
-
-/* Styling radio button labels */
-.form-radio-group-wrapper label {
-  font-size: 15px; /* Changes the label font size */
-}
-
-/* Styling checkboxes */
-.form-checkbox-group-wrapper input[type="checkbox"] {
-  margin-right: 5px;  /* Adds space between the input and its label */ 
-}
-
-/* Styling checkbox labels */
-.form-checkbox-group-wrapper label {
-  font-size: 15px; /* Changes the label font size */
-}
-```
-
-這些選取器可更精細地控制個別選項按鈕、核取方塊及其相關標籤。 您可以使用這些專案來調整大小、間距，或套用更多不同的視覺樣式。
+* 鎖定外部包裝函式：這些選取器會鎖定選項和核取方塊群組最外層的容器，讓您套用一般樣式至整個群組結構。 這對於設定間距、對齊方式或其他配置相關屬性非常有用。
 
 
-**自訂選項按鈕和核取方塊的外觀**
-
-```CSS
-/* Hide the default radio button or checkbox */
-.form-radio-group-wrapper input[type="radio"],
-.form-checkbox-group-wrapper input[type="checkbox"] {
-  opacity: 0; 
-  position: absolute; 
-}
-
-/* Create a custom radio button */
-.form-radio-group-wrapper input[type="radio"] + label::before { 
-  content: "";
-  display: inline-block;
-  width: 16px; 
-  height: 16px; 
-  border: 2px solid #ccc; 
-  border-radius: 50%;
-  margin-right: 5px;
-}
-
-.form-radio-group-wrapper input[type="radio"]:checked + label::before {
-  background-color: #007bff; 
-}
-
-/* Create a custom checkbox */
-/* Similar styling as above, with adjustments for a square shape */
-```
-
-此技巧會隱藏預設輸入，並使用：before和：after虛擬元素來建立自訂視覺效果，這些視覺效果會根據「已核取」狀態來變更外觀。
+  ```CSS
+     /* Targets all radio group wrappers */
+  .form-radio-group-wrapper {
+    margin-bottom: 20px; /* Adds space between radio groups */
+  }
+  
+  /* Targets all checkbox group wrappers */
+  .form-checkbox-group-wrapper {
+    margin-bottom: 20px; /* Adds space between checkbox groups */
+  }
+  ```
 
 
-## 樣式欄位
+* 目標群組標籤：此選取器會將 `.field-label` 選項和核取方塊群組包裝函式中的元素。 這可讓您設定這些群組專屬的標籤樣式，讓這些群組更加引人注目。
 
-除了前述的一般樣式技術，您也可以根據表單欄位的特定型別或個別名稱來設定其樣式。 這可讓您更精細地控制及自訂表單的外觀。
+  ```CSS
+  .form-radio-group-wrapper .field-label,
+  .form-checkbox-group-wrapper .field-label {
+   font-weight: bold; /* Makes the group label bold */
+  }
+  ```
+
+
+
+* 鎖定個別輸入和標籤：這些選取器可讓您更精細地控制個別選項按鈕、核取方塊及其相關標籤。 您可以使用這些專案來調整大小、間距，或套用更多不同的視覺樣式。
+
+  ```CSS
+  /* Styling radio buttons */
+  .form-radio-group-wrapper input[type="radio"] {
+    margin-right: 5px; /* Adds space between the input and its   label */
+  } 
+  
+  /* Styling radio button labels */
+  .form-radio-group-wrapper label {
+    font-size: 15px; /* Changes the label font size */
+  }
+  
+  /* Styling checkboxes */
+  .form-checkbox-group-wrapper input[type="checkbox"] {
+    margin-right: 5px;  /* Adds space between the input and its  label */ 
+  }
+  
+  /* Styling checkbox labels */
+  .form-checkbox-group-wrapper label {
+    font-size: 15px; /* Changes the label font size */
+  }
+  ```
+
+
+
+
+* 自訂選項按鈕和核取方塊的外觀：此技術會隱藏預設輸入，並使用：before和：after虛擬元素來建立自訂視覺效果，以根據「已核取」狀態變更外觀。
+
+  ```CSS
+  /* Hide the default radio button or checkbox */
+  .form-radio-group-wrapper input[type="radio"],
+  .form-checkbox-group-wrapper input[type="checkbox"] {
+    opacity: 0; 
+    position: absolute; 
+  }
+  
+  /* Create a custom radio button */
+  .form-radio-group-wrapper input[type="radio"] + label::before { 
+    content: "";
+    display: inline-block;
+    width: 16px; 
+    height: 16px; 
+    border: 2px solid #ccc; 
+    border-radius: 50%;
+    margin-right: 5px;
+  }
+  
+  .form-radio-group-wrapper input[type="radio"]:checked +  label::before {
+    background-color: #007bff; 
+  }
+  
+  /* Create a custom checkbox */
+  /* Similar styling as above, with adjustments for a square shape  */
+  ```
+
+
+## 樣式化元件
+
+您也可以根據表單欄位的特定型別或個別名稱來設定表單欄位的樣式。 這可讓您更精細地控制及自訂表單的外觀。
 
 ### 根據欄位型別設定樣式
 
@@ -388,7 +385,7 @@ Forms對於使用者在網站上的互動至關重要，可讓他們輸入資料
 * 此 `data-required` 屬性指出欄位是必要欄位還是選用欄位。
 * 每個欄位都有對應的標籤、輸入元素和潛在的其他元素，例如預留位置和說明。
 
-例如：
+**CSS選取器範例**
 
 ```CSS
 /* Target all text input fields */
@@ -403,7 +400,7 @@ Forms對於使用者在網站上的互動至關重要，可讓他們輸入資料
 }
 ```
 
-### 樣式特定欄位型別
+### 根據欄位名稱設定樣式
 
 您也可以依名稱鎖定個別欄位，以套用唯一樣式。
 
@@ -416,7 +413,7 @@ Forms對於使用者在網站上的互動至關重要，可讓他們輸入資料
 </div>
 ```
 
-**CSS選取器**
+**範例CSS選取器**
 
 ```CSS
 .form-otp input {
@@ -424,6 +421,6 @@ Forms對於使用者在網站上的互動至關重要，可讓他們輸入資料
 }
 ```
 
-* 選取器：此CSS會鎖定位於具有類別的元素中的所有輸入元素 `form-otp`. 您的HTML結構遵循表單區塊的慣例，這表示有一個標示為「form-otp」類別的容器儲存名為「otp」的欄位。
+此CSS會鎖定位於具有類別的元素中的所有輸入元素 `form-otp`. 您的表單HTML結構遵循表單區塊的慣例，這表示有一個標示為「form-otp」類別的容器儲存名為「otp」的欄位。
 
-* 屬性和值：程式碼適用 `letter-spacing: 2px`. 此CSS屬性可控制輸入欄位文字內容中個別字母之間的間距。
+
