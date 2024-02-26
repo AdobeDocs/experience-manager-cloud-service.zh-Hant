@@ -2,7 +2,7 @@
 title: 參與工作流程
 description: 工作流程通常包括需要人員在頁面或資產上執行活動的步驟。
 exl-id: 62192da9-0b5b-4997-9c2b-d1aee04b01f9
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
 workflow-type: tm+mt
 source-wordcount: '1507'
 ht-degree: 1%
@@ -24,11 +24,11 @@ ht-degree: 1%
 
 當您被指派工作項目時(例如「核准內 **容**」)，會出現各種警報和/或通知：
 
-* 您的 [通知](/help/sites-cloud/authoring/getting-started/inbox.md) 指示器（工具列）會遞增：
+* 您的 [通知](/help/sites-cloud/authoring/inbox.md) 指示器（工具列）會遞增：
 
   ![通知工具列](/help/sites-cloud/authoring/assets/workflows-notifications.png)
 
-* 專案會列在您的通知中 [收件匣](/help/sites-cloud/authoring/getting-started/inbox.md)：
+* 專案會列在您的通知中 [收件匣](/help/sites-cloud/authoring/inbox.md)：
 
   ![收件匣中的通知](/help/sites-cloud/authoring/assets/workflows-inbox.png)
 
@@ -72,7 +72,7 @@ ht-degree: 1%
 
 請使用下列步驟完成工作專案：
 
-1. 開啟 **[AEM收件匣](/help/sites-cloud/authoring/getting-started/inbox.md)**.
+1. 開啟 **[AEM收件匣](/help/sites-cloud/authoring/inbox.md)**.
 1. 選取您要對其執行動作的工作流程專案（選取縮圖）。
 1. 選取 **完成** 工具列中的。
 1. 此 **完成工作專案** 對話方塊開啟。 選取 **下一步** 從下拉式選擇器新增 **註解** 如有需要。
@@ -82,7 +82,7 @@ ht-degree: 1%
 
 請使用下列步驟完成工作專案：
 
-1. 開啟 [編輯頁面](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#opening-a-page-for-editing).
+1. 開啟 [編輯頁面](/help/sites-cloud/authoring/sites-console/managing-pages.md#opening-a-page-for-editing).
 1. 選取 **完成** 從頂部的狀態列開啟。
 1. 此 **完成工作專案** 對話方塊開啟。 選取 **下一步** 從下拉式選擇器新增 **註解** 如有需要。
 1. 使用 **確定** 完成步驟(或 **取消** 以中止動作)。
@@ -131,7 +131,7 @@ ht-degree: 1%
 
 請使用下列步驟委派工作專案：
 
-1. 開啟 **[AEM收件匣](/help/sites-cloud/authoring/getting-started/inbox.md)**.
+1. 開啟 **[AEM收件匣](/help/sites-cloud/authoring/inbox.md)**.
 1. 選取您要對其執行動作的工作流程專案（選取縮圖）。
 1. 選取 **委派** 工具列中的。
 1. 對話方塊隨即開啟。 指定 **使用者** 從下拉式選取器（也可以是群組）中新增 **註解** 如有需要。
@@ -141,7 +141,7 @@ ht-degree: 1%
 
 請使用下列步驟委派工作專案：
 
-1. 開啟 [編輯頁面](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#opening-a-page-for-editing).
+1. 開啟 [編輯頁面](/help/sites-cloud/authoring/sites-console/managing-pages.md#opening-a-page-for-editing).
 1. 選取 **委派** 從頂部的狀態列開啟。
 1. 對話方塊隨即開啟。 指定 **使用者** 從下拉式選取器（也可以是群組）中新增 **註解** 如有需要。
 1. 使用 **確定** 完成步驟(或 **取消** 以中止動作)。
@@ -181,7 +181,7 @@ ht-degree: 1%
 
 請使用下列步驟來後退：
 
-1. 開啟 **[AEM收件匣](/help/sites-cloud/authoring/getting-started/inbox.md)**.
+1. 開啟 **[AEM收件匣](/help/sites-cloud/authoring/inbox.md)**.
 1. 選取您要對其執行動作的工作流程專案（選取縮圖）。
 1. 選取 **後退** 以開啟對話方塊。
 1. 指定 **上一步** 並新增 **註解** 如有需要。
@@ -191,7 +191,7 @@ ht-degree: 1%
 
 請使用下列步驟來後退：
 
-1. 開啟 [編輯頁面](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#opening-a-page-for-editing).
+1. 開啟 [編輯頁面](/help/sites-cloud/authoring/sites-console/managing-pages.md#opening-a-page-for-editing).
 1. 選取 **後退** 從頂部的狀態列開啟。
 1. 指定 **上一步** 並新增 **註解** 如有需要。
 1. 使用 **確定** 完成步驟(或 **取消** 以中止動作)。
@@ -242,7 +242,7 @@ ht-degree: 1%
 
 若要開啟工作流程專案並檢視詳細資訊，請執行下列動作：
 
-1. 開啟 **[AEM收件匣](/help/sites-cloud/authoring/getting-started/inbox.md)**.
+1. 開啟 **[AEM收件匣](/help/sites-cloud/authoring/inbox.md)**.
 1. 選取您要對其執行動作的工作流程專案（選取縮圖）。
 1. 選取 **開啟** 以開啟資訊標籤。
 1. 如有必要，請選取適當的動作，提供任何詳細資訊，然後確認 **確定** (或 **取消**)。
@@ -252,7 +252,7 @@ ht-degree: 1%
 
 若要開啟工作流程專案並檢視詳細資訊，請執行下列動作：
 
-1. 開啟 [編輯頁面](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#opening-a-page-for-editing).
+1. 開啟 [編輯頁面](/help/sites-cloud/authoring/sites-console/managing-pages.md#opening-a-page-for-editing).
 1. 選取 **檢視詳細資料** 以開啟資訊標籤。
 1. 如有必要，請選取適當的動作，提供任何詳細資訊，然後確認 **確定** (或 **取消**)。
 1. 使用 **儲存** 或 **取消** 以結束。
@@ -263,7 +263,7 @@ ht-degree: 1%
 
 若要檢視工作流程例項的裝載和資源：
 
-1. 開啟 **[AEM收件匣](/help/sites-cloud/authoring/getting-started/inbox.md)**.
+1. 開啟 **[AEM收件匣](/help/sites-cloud/authoring/inbox.md)**.
 1. 選取您要對其執行動作的工作流程專案（選取縮圖）。
 1. 選取 **檢視裝載** 以開啟對話方塊。
    * 由於Workflow封裝只是存放庫內路徑的指標集合，因此您可以在此處新增/移除/修改專案，以調整Workflow封裝所參照的專案。 使用 **資源定義** 元件以新增專案。

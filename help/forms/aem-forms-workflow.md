@@ -4,7 +4,7 @@ seo-title: Rapidly build Adaptive Forms-based processes, automate document servi
 description: 使用AEM Forms工作流程自動化並快速建立業務流程工作流程。 例如，檢閱和核准、PDF產生、Adobe Sign工作流程。
 uuid: 797ba0f7-a378-45ac-9f82-fa9a952027be
 topic-tags: publish, document_services
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
 source-wordcount: '2373'
 ht-degree: 1%
@@ -65,7 +65,7 @@ AEM提供直覺式使用者介面，讓您使用提供的工作流程步驟建�
 
 1. 開啟「工作流程模型」主控台。 預設URL為 `https://[server]:[port]/libs/cq/workflow/admin/console/content/models.html/etc/workflow/models`
 1. 選取 **建立**，然後 **建立模型**. 「新增工作流程模型」對話方塊隨即顯示。
-1. 輸入 **標題** 和 **名稱** （選擇性）。 例如，抵押貸款應用程式。 選取 **完成**.
+1. 輸入 **標題** 和 **名稱** （選擇性）。 例如，抵押貸款應用程式。 選取「**完成**」。
 1. 選取已建立的工作流程模型，然後選取 **編輯**. 現在，您可以新增工作流程步驟以建立商業邏輯。 第一次建立工作流程模型時，模型會包含：
 
    * 步驟：流程開始與流程結束。 這些步驟代表工作流程的開始和結束。 這些步驟為必要步驟，無法編輯或移除。
@@ -197,7 +197,7 @@ AEM提供直覺式使用者介面，讓您使用提供的工作流程步驟建�
 
 ### 從AEM收件匣提交應用程式 {#inbox}
 
-您建立的工作流程應用程式可在「收件匣」中作為應用程式使用。 屬於下列成員的使用者： [!DNL workflow-users] 群組可以填寫並提交觸發相關工作流程的應用程式。 如需使用AEM收件匣提交應用程式和管理工作的相關資訊，請參閱 [管理AEM收件匣中的Forms應用程式和工作](manage-applications-inbox.md).
+您建立的工作流程應用程式可在「收件匣」中作為應用程式使用。 屬於下列成員的使用者： [!DNL workflow-users] 群組可以填寫並提交觸發相關工作流程的應用程式。 如需使用AEM收件匣提交應用程式和管理工作的相關資訊，請參閱 [管理AEM收件匣中的Forms應用程式和工作](manage-applications-/help/sites-cloud/authoring/inbox.md).
 
 <!-- ### Submitting an application from [!DNL AEM Forms] App {#afa}
 

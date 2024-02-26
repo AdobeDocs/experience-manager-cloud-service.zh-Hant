@@ -2,10 +2,10 @@
 title: 為元件啟用 JSON 匯出
 description: 元件可調整為根據模組化架構產生其內容的JSON匯出。
 exl-id: e9be5c0c-618e-4b56-a365-fcdd185ae808
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 89f23a590338561b4cfeb10b54a260a135ec2f08
 workflow-type: tm+mt
-source-wordcount: '462'
-ht-degree: 9%
+source-wordcount: '421'
+ht-degree: 6%
 
 ---
 
@@ -78,5 +78,5 @@ https://<server>:<port>/content/page.model.selector1.selector2.json
 
 * [內容片段](/help/sites-cloud/administering/content-fragments/overview.md)
 * [內容片段模型](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
-* [使用內容片段製作](/help/sites-cloud/authoring/fundamentals/content-fragments.md)
+* [使用內容片段製作](/help/sites-cloud/authoring/fragments/content-fragments.md)
 * [核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 和 [內容片段元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html)

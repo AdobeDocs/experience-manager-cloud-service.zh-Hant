@@ -2,9 +2,9 @@
 title: 元件參考指南
 description: 開發人員參考指南，瞭解元件及其結構的詳細資訊
 exl-id: 45e5265b-39d6-4a5c-be1a-e66bb7ea387d
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
 workflow-type: tm+mt
-source-wordcount: '3642'
+source-wordcount: '3481'
 ht-degree: 1%
 
 ---
@@ -103,7 +103,7 @@ AEM元件的結構既強大又靈活。 主要部分為：
 * **根節點**：
    * `<mycomponent> (cq:Component)`  — 元件的階層節點。
 * **重要屬性**：
-   * `jcr:title`  — 元件標題；例如，當元件列在 [元件瀏覽器](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser) 和 [元件主控台](/help/sites-cloud/authoring/features/components-console.md)
+   * `jcr:title`  — 元件標題；例如，當元件列在 [元件瀏覽器](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser) 和 [元件主控台](/help/sites-cloud/authoring/components-console.md)
    * `jcr:description`  — 元件的說明，在元件瀏覽器和元件主控台中作為滑鼠懸停的提示
    * 請參閱區段 [元件圖示](#component-icon) 以取得詳細資訊
 * **重要子節點**：
@@ -141,7 +141,7 @@ AEM元件的結構既強大又靈活。 主要部分為：
 
 若要取消從超級元件繼承圖示，請將設定為空白 `abbreviation` 元件上的屬性將還原為預設行為。
 
-此 [元件主控台](/help/sites-cloud/authoring/features/components-console.md#component-details) 顯示特定元件圖示的定義方式。
+此 [元件主控台](/help/sites-cloud/authoring/components-console.md#component-details) 顯示特定元件圖示的定義方式。
 
 #### SVG圖示範例 {#svg-icon-example}
 
@@ -166,7 +166,7 @@ AEM元件的結構既強大又靈活。 主要部分為：
 | 名稱 | 類型 | 說明 |
 |---|---|---|
 | `.` | `cq:Component` | 這表示目前的元件。 元件屬於節點型別 `cq:Component`. |
-| `componentGroup` | `String` | 這表示可在其中選取元件的群組 [元件瀏覽器](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser). 以開頭的值 `.` 用於無法從UI選取的元件，例如其他元件繼承自的基本元件。 |
+| `componentGroup` | `String` | 這表示可在其中選取元件的群組 [元件瀏覽器](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser). 以開頭的值 `.` 用於無法從UI選取的元件，例如其他元件繼承自的基本元件。 |
 | `cq:isContainer` | `Boolean` | 這表示元件是否為容器元件，因此可包含其他元件，例如段落系統。 |
 | `cq:dialog` | `nt:unstructured` | 這是元件之「編輯」對話方塊的定義。 |
 | `cq:design_dialog` | `nt:unstructured` | 這是元件之「設計」對話方塊的定義。 |
@@ -199,7 +199,7 @@ AEM元件的結構既強大又靈活。 主要部分為：
 
 ### 對話方塊 {#dialogs}
 
-對話方塊是元件的關鍵元素，因為對話方塊為作者提供介面，讓作者可在內容頁面上設定元件，並提供該元件的輸入。 請參閱 [製作檔案](/help/sites-cloud/authoring/fundamentals/editing-content.md) 以取得內容作者如何與元件互動的詳細資訊。
+對話方塊是元件的關鍵元素，因為對話方塊為作者提供介面，讓作者可在內容頁面上設定元件，並提供該元件的輸入。 請參閱 [製作檔案](/help/sites-cloud/authoring/page-editor/edit-content.md) 以取得內容作者如何與元件互動的詳細資訊。
 
 根據元件的複雜性，您的對話方塊可能需要一或多個標籤。
 
@@ -221,9 +221,9 @@ AEM元件的對話方塊：
 
 ### 設計對話方塊 {#design-dialogs}
 
-「設計」對話方塊類似於用來編輯和設定內容的對話方塊，但它們為範本作者提供了介面，讓他們可以預先設定，並為頁面範本上的該元件提供設計詳細資訊。 然後，內容作者會使用頁面範本來建立內容頁面。 請參閱 [範本檔案](/help/sites-cloud/authoring/features/templates.md) 有關如何建立範本的詳細資訊。
+「設計」對話方塊類似於用來編輯和設定內容的對話方塊，但它們為範本作者提供了介面，讓他們可以預先設定，並為頁面範本上的該元件提供設計詳細資訊。 然後，內容作者會使用頁面範本來建立內容頁面。 請參閱 [範本檔案](/help/sites-cloud/authoring/sites-console/templates.md) 有關如何建立範本的詳細資訊。
 
-[編輯頁面範本時會使用「設計」對話方塊](/help/sites-cloud/authoring/features/templates.md)，但並非所有元件都需要。 例如， **標題** 和 **影像元件** 兩者都有設計對話方塊，而 **社群媒體分享元件** 不會。
+[編輯頁面範本時會使用「設計」對話方塊](/help/sites-cloud/authoring/sites-console/templates.md)，但並非所有元件都需要。 例如， **標題** 和 **影像元件** 兩者都有設計對話方塊，而 **社群媒體分享元件** 不會。
 
 ### Coral UI和Granite UI {#coral-and-granite}
 
@@ -278,7 +278,7 @@ Content not found
 
 定義元件後，該元件必須可供使用。 若要讓元件可在範本中使用，您必須在範本的版面配置容器原則中啟用該元件。
 
-請參閱 [範本檔案](/help/sites-cloud/authoring/features/templates.md) 有關如何建立範本的詳細資訊。
+請參閱 [範本檔案](/help/sites-cloud/authoring/sites-console/templates.md) 有關如何建立範本的詳細資訊。
 
 ### 元件及其建立的內容 {#components-and-the-content-they-create}
 
@@ -469,7 +469,7 @@ Granite UI和Granite UI Widget中的欄位驗證已透過使用 `foundation-vali
 
 ![元件結構中的README.md](assets/components-documentation.png)
 
-然後，此Markdown會顯示在 [元件主控台](/help/sites-cloud/authoring/features/components-console.md).
+然後，此Markdown會顯示在 [元件主控台](/help/sites-cloud/authoring/components-console.md).
 
 ![元件主控台中的README.md可見專案](assets/components-documentation-console.png)
 

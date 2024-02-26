@@ -2,10 +2,10 @@
 title: 將工作流程套用至頁面
 description: 編寫時，您可以叫用工作流程以在頁面上動作；也可以套用多個工作流程。
 exl-id: 86e71f0e-e53e-40bc-901d-2a1ab347bd0a
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
 source-wordcount: '654'
-ht-degree: 15%
+ht-degree: 11%
 
 ---
 
@@ -70,7 +70,7 @@ ht-degree: 15%
 
 從 **時間表** 您可以啟動要套用至所選資源的工作流程。
 
-1. [選取資源](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources) 並開啟 [時間表](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline) （或開啟時間表，然後選取資源）。
+1. [選取資源](/help/sites-cloud/authoring/basic-handling.md#viewing-and-selecting-resources) 並開啟 [時間表](/help/sites-cloud/authoring/basic-handling.md#timeline) （或開啟時間表，然後選取資源）。
 1. 註解欄位旁的箭頭可用來顯現 **開始工作流程**：
 
    ![從時間表建立工作流程](/help/sites-cloud/authoring/assets/workflows-create-from-timeline.png)
@@ -116,16 +116,16 @@ ht-degree: 15%
 
 1. 在 **範圍** 您可以選取的步驟：
 
-   * **新增內容** 以開啟 [路徑瀏覽器](/help/sites-cloud/authoring/fundamentals/environment-tools.md#path-browser) 並選取其他資源；在瀏覽器中時，選取 **選取** 以將內容新增至工作流程例項。
+   * **新增內容** 以開啟 [路徑瀏覽器](/help/sites-cloud/authoring/path-selection.md) 並選取其他資源；在瀏覽器中時，選取 **選取** 以將內容新增至工作流程例項。
 
    * 檢視其他動作的現有資源：
 
       * **包含子項** 指定將該資源的子項包含在工作流程中。
 對話方塊開啟，可讓您根據下列條件調整選取範圍：
 
-         * 僅包含直接子項.
-         * 僅包含修改過的頁面.
-         * 僅包含已發佈的頁面.
+         * 僅包含直接子項。
+         * 僅包含已修改的頁面。
+         * 僅包含已發佈的頁面。
 
         任何指定的子項都會新增至將套用工作流程的資源清單中。
 

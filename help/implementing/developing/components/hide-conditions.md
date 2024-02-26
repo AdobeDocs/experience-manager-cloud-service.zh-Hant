@@ -2,16 +2,16 @@
 title: 使用隱藏條件
 description: 隱藏條件可用於判斷元件資源是否已轉譯。
 exl-id: 2a96f246-fb0f-4298-899e-ebbf9fc1c96f
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
-source-wordcount: '617'
-ht-degree: 2%
+source-wordcount: '584'
+ht-degree: 1%
 
 ---
 
 # 使用隱藏條件 {#using-hide-conditions}
 
-隱藏條件可用於判斷元件資源是否已轉譯。 範本作者設定核心元件即為此範例 [清單元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/list.html) 在 [範本編輯器](/help/sites-cloud/authoring/features/templates.md) 並決定停用根據子頁面建立清單的選項。 在「設計」對話方塊中停用此選項會設定屬性，以便在轉譯清單元件時，會評估隱藏條件，且不顯示顯示子頁面的選項。
+隱藏條件可用於判斷元件資源是否已轉譯。 範本作者設定核心元件即為此範例 [清單元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/list.html) 在 [範本編輯器](/help/sites-cloud/authoring/sites-console/templates.md) 並決定停用根據子頁面建立清單的選項。 在「設計」對話方塊中停用此選項會設定屬性，以便在轉譯清單元件時，會評估隱藏條件，且不顯示顯示子頁面的選項。
 
 ## 概觀 {#overview}
 
@@ -51,7 +51,7 @@ ${cqDesign.property1 == 'someText' && cqDesign.property2 || cqDesign.property3 !
 
 在整個AEM和 [核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 尤其是這個。 例如，請考慮 [列出核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/list.html) 在中實作 [wknd教學課程](/help/implementing/developing/introduction/develop-wknd-tutorial.md).
 
-[使用範本編輯器](/help/sites-cloud/authoring/features/templates.md)，範本作者可在「設計」對話方塊中定義頁面作者可用的清單元件選項。 您可以啟用或停用選項，例如是否允許清單成為靜態清單、子頁面清單、標籤頁面清單等。
+[使用範本編輯器](/help/sites-cloud/authoring/sites-console/templates.md)，範本作者可在「設計」對話方塊中定義頁面作者可用的清單元件選項。 您可以啟用或停用選項，例如是否允許清單成為靜態清單、子頁面清單、標籤頁面清單等。
 
 如果範本作者選擇停用子頁面選項，則會設定設計屬性，並評估其隱藏條件，導致該選項無法針對頁面作者呈現。
 

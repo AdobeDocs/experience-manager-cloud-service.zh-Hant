@@ -2,7 +2,7 @@
 title: 設定頁面屬性的大量編輯
 description: 了解如何設定大量編輯，以便您可以同時編輯多個頁面的屬性。
 exl-id: 0d10c6b9-8643-479d-adc1-4066d227e83d
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
 source-wordcount: '250'
 ht-degree: 94%
@@ -11,7 +11,7 @@ ht-degree: 94%
 
 # 設定頁面屬性的大量編輯 {#configuring-bulk-editing-of-page-properties}
 
-[頁面屬性的批次編輯](/help/sites-cloud/authoring/fundamentals/page-properties.md#from-the-sites-console-multiple-pages)可讓您同時編輯多個頁面的屬性。
+[頁面屬性的批次編輯](/help/sites-cloud/authoring/sites-console/page-properties.md#from-the-sites-console-multiple-pages)可讓您同時編輯多個頁面的屬性。
 
 ## 考量事項 {#considerations}
 

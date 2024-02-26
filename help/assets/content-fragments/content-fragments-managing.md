@@ -2,7 +2,7 @@
 title: 管理內容片段（資產 — 內容片段）
 description: 瞭解如何使用Assets主控台來管理您的AEM內容片段，作為Headless內容或頁面編寫的基礎。
 exl-id: 333ad877-db2f-454a-a3e5-59a936455932
-source-git-commit: 62ede258711d0cb8d0b72479559c37221509e23f
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
 source-wordcount: '1885'
 ht-degree: 7%
@@ -29,7 +29,7 @@ ht-degree: 7%
 >
 >可以使用內容片段：
 >
->* 編寫頁面時；請參閱 [使用內容片段編寫頁面](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
+>* 編寫頁面時；請參閱 [使用內容片段編寫頁面](/help/sites-cloud/authoring/fragments/content-fragments.md).
 >* 的 [搭配GraphQL使用內容片段的Headless內容傳送](/help/assets/content-fragments/content-fragments-graphql.md).
 
 >[!NOTE]
@@ -94,7 +94,7 @@ ht-degree: 7%
 在 **資產** 主控台您的內容片段可使用的一系列動作，包括：
 
 * 從工具列；選擇片段後，所有適當的動作都可使用。
-* 作為 [快速動作](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions)；可用於個別片段卡片之動作的子集。
+* 作為 [快速動作](/help/sites-cloud/authoring/basic-handling.md#quick-actions)；可用於個別片段卡片之動作的子集。
 
 ![工具列中的動作](assets/cfm-managing-02.png)
 
@@ -299,16 +299,16 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 
 >[!NOTE]
 >
-註解包括：
+>註解包括：
 >
-* 所有資產的標準功能
-* 在時間軸中製作
-* 與片段資產相關
+>* 所有資產的標準功能
+>* 在時間軸中製作
+>* 與片段資產相關
 >
-註解（適用於內容片段）包括：
+>註解（適用於內容片段）包括：
 >
-* 在片段編輯器中輸入
-* 特定於片段中選取的文字區段
+>* 在片段編輯器中輸入
+>* 特定於片段中選取的文字區段
 >
 
 例如：
@@ -339,7 +339,7 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 
 >[!NOTE]
 >
-比較片段時無法編輯片段內容。
+>比較片段時無法編輯片段內容。
 
 ![比較變數](assets/cfm-managing-06.png)
 
@@ -357,9 +357,9 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 
 >[!CAUTION]
 >
-如果您的片段以模型為基礎，則您應確保 [模型已發佈](/help/assets/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model).
+>如果您的片段以模型為基礎，則您應確保 [模型已發佈](/help/assets/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model).
 >
-如果您發佈的內容片段尚未發佈模型，選擇清單會指出這一點，模型會與片段一起發佈。
+>如果您發佈的內容片段尚未發佈模型，選擇清單會指出這一點，模型會與片段一起發佈。
 
 必須發佈內容片段才能在發佈環境中使用。 這是使用標準資產功能來完成：
 
@@ -371,11 +371,11 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 * 建立後；使用 [Assets控制檯中的可用動作](#actions-for-a-content-fragment-assets-console).
 * 從 [內容片段編輯器](#toolbar-actions-in-the-content-fragment-editor).
 
-此外，當您 [發佈使用片段的頁面](/help/sites-cloud/authoring/fundamentals/content-fragments.md#publishing)；片段會列在頁面參考中。
+此外，當您 [發佈使用片段的頁面](/help/sites-cloud/authoring/fragments/content-fragments.md#publishing)；片段會列在頁面參考中。
 
 >[!CAUTION]
 >
-片段發佈和/或參考後，當作者再次開啟片段進行編輯時，AEM會顯示警告。 這是為了警告，片段的變更也會影響參照的頁面。
+>片段發佈和/或參考後，當作者再次開啟片段進行編輯時，AEM會顯示警告。 這是為了警告，片段的變更也會影響參照的頁面。
 
 ## 刪除片段 {#deleting-a-fragment}
 
@@ -386,11 +386,11 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 
    >[!NOTE]
    >
-   此 **刪除** 動作無法當作快速動作使用。
+   >此 **刪除** 動作無法當作快速動作使用。
 
 3. 選取 **刪除** 工具列中的。
 4. 確認 **刪除** 動作。
 
    >[!CAUTION]
    >
-   如果片段已在頁面中參考，您會看到警告訊息，並需要確認您要繼續執行強制刪 **除**。片段及其內容片段元件會從任何內容頁面中刪除。
+   >如果片段已在頁面中參考，您會看到警告訊息，並需要確認您要繼續執行強制刪 **除**。片段及其內容片段元件會從任何內容頁面中刪除。

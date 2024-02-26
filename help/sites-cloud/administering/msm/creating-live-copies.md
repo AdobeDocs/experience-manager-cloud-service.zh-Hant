@@ -4,10 +4,10 @@ description: 瞭解如何建立並同步即時副本，以在您的網站上重�
 feature: Multi Site Manager
 role: Admin
 exl-id: 53ed574d-e20d-4e73-aaa2-27168b9d05fe
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
 source-wordcount: '4270'
-ht-degree: 3%
+ht-degree: 2%
 
 ---
 
@@ -53,12 +53,12 @@ Blueprint設定會視為不可變資料，因此在執行階段不可編輯。 �
 
 若要建立Blueprint設定：
 
-1. [導覽](/help/sites-cloud/authoring/getting-started/basic-handling.md#global-navigation) 至 **工具** 功能表，然後選取 **網站** 功能表。
+1. [導覽](/help/sites-cloud/authoring/basic-handling.md#global-navigation) 至 **工具** 功能表，然後選取 **網站** 功能表。
 1. 選取 **藍圖** 以開啟 **Blueprint設定** 主控台：
 
    ![Blueprint設定](../assets/blueprint-configurations.png)
 
-1. 選擇 **建立**。
+1. 選取「**建立**」。
 1. 選取Blueprint範本，然後 **下一個** 以繼續。
 1. 選取要用作Blueprint的來源頁面；然後 **下一個** 以繼續。
 1. 定義：
@@ -72,7 +72,7 @@ Blueprint設定會視為不可變資料，因此在執行階段不可編輯。 �
 
 您可以編輯或刪除現有的Blueprint設定：
 
-1. [導覽](/help/sites-cloud/authoring/getting-started/basic-handling.md#global-navigation) 至 **工具** 功能表，然後選取 **網站** 功能表。
+1. [導覽](/help/sites-cloud/authoring/basic-handling.md#global-navigation) 至 **工具** 功能表，然後選取 **網站** 功能表。
 1. 選取 **藍圖** 以開啟 **Blueprint設定** 主控台：
 
    ![Blueprint設定](../assets/blueprint-configurations.png)
@@ -192,7 +192,7 @@ Blueprint設定會視為不可變資料，因此在執行階段不可編輯。 �
 
 * **來源**：即時副本頁面的來源頁面
 * **狀態**：即時副本的同步狀態，包括即時副本是否與來源保持同步、上次同步時間以及同步的執行者
-* **設定**:
+* **設定**：
 
    * 頁面是否仍受即時副本繼承的約束
    * 設定是否繼承自父頁面
@@ -211,7 +211,7 @@ Blueprint設定會視為不可變資料，因此在執行階段不可編輯。 �
 
 ### 檢視Blueprint頁面的即時副本 {#seeing-the-live-copies-of-a-blueprint-page}
 
-Blueprint頁面（在Blueprint設定中參照）為您提供使用目前(Blueprint)頁面作為來源的即時副本頁面清單。 使用此清單來追蹤即時副本。 此清單會顯示在 **Blueprint** 的標籤 [頁面屬性](/help/sites-cloud/authoring/fundamentals/page-properties.md).
+Blueprint頁面（在Blueprint設定中參照）為您提供使用目前(Blueprint)頁面作為來源的即時副本頁面清單。 使用此清單來追蹤即時副本。 此清單會顯示在 **Blueprint** 的標籤 [頁面屬性](/help/sites-cloud/authoring/sites-console/page-properties.md).
 
 ![頁面屬性的Blueprint標籤](../assets/live-copy-blueprint-tab.png)
 
@@ -249,7 +249,7 @@ Blueprint頁面（在Blueprint設定中參照）為您提供使用目前(Bluepri
 
 #### 從參考邊欄轉出Blueprint {#roll-out-a-blueprint-from-the-reference-rail}
 
-1. 在 **網站** 控制檯中，選取即時副本中的頁面，然後開啟 **[引用](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)** 面板（從工具列）。
+1. 在 **網站** 控制檯中，選取即時副本中的頁面，然後開啟 **[引用](/help/sites-cloud/authoring/basic-handling.md#references)** 面板（從工具列）。
 1. 選取 **Blueprint** 選項，以顯示與此頁面關聯的Blueprint。
 1. 從清單中選取所需的Blueprint。
 1. 選取 **轉出**.
@@ -258,11 +258,11 @@ Blueprint頁面（在Blueprint設定中參照）為您提供使用目前(Bluepri
 
 1. 系統會要求您確認轉出的詳細資訊：
 
-   * **轉出範圍**:
+   * **轉出範圍**：
 
      指定範圍是僅針對所選頁面，還是應包含子頁面。
 
-   * **計劃**:
+   * **排程**：
 
      指定轉出工作是否應該立即執行(**現在**)或之後的日期/時間(**稍後**)。
 
@@ -361,7 +361,7 @@ Blueprint頁面（在Blueprint設定中參照）為您提供使用目前(Bluepri
 
 >[!TIP]
 >
->您也可以從其藍圖[分離 Live Copy](#detaching-a-live-copy) 以移除所有連接。與暫停繼承不同，分離動作是永久且不可逆的。
+>您也可以 [分離即時副本](#detaching-a-live-copy) 從其Blueprint移除所有連線。 與暫停繼承不同，分離動作是永久且不可逆的。
 
 #### 暫停來自頁面屬性的繼承 {#suspending-inheritance-from-page-properties}
 
@@ -385,9 +385,9 @@ Blueprint頁面（在Blueprint設定中參照）為您提供使用目前(Bluepri
 1. 從下列專案選取適當的選項：
 
    * **暫停**
-   * **暫停子項**
+   * **與子項一起暫停**
 
-   ![暫停子項](../assets/suspend-with-children.png)
+   ![與子項一起暫停](../assets/suspend-with-children.png)
 
 1. 確認 **暫停** 中的動作 **暫停即時副本** 對話方塊：
 
@@ -575,15 +575,15 @@ Blueprint頁面（在Blueprint設定中參照）為您提供使用目前(Bluepri
 
 若要追蹤您所做的變更，您可以在中檢視Blueprint頁面 **引用** 並與其即時副本頁面比較：
 
-1. 在 **網站** 主控台， [導覽至Blueprint或即時副本頁面並加以選取](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
-1. 開啟 **[引用](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)** 面板，並根據內容選取：
+1. 在 **網站** 主控台， [導覽至Blueprint或即時副本頁面並加以選取](/help/sites-cloud/authoring/basic-handling.md#viewing-and-selecting-resources).
+1. 開啟 **[引用](/help/sites-cloud/authoring/basic-handling.md#references)** 面板，並根據內容選取：
 
    * **藍圖**
-   * **Live Copy**
+   * **即時副本**
 
 1. 根據內容選取您特定的即時副本，請選取：
 
-   * **與 Blueprint 比較**
+   * **與Blueprint比較**
    * **與即時副本比較**
 
    例如：
@@ -592,7 +592,7 @@ Blueprint頁面（在Blueprint設定中參照）為您提供使用目前(Bluepri
 
 1. 即時副本和Blueprint頁面會並排開啟。
 
-   如需使用比較功能的完整資訊，請參閱 [頁面差異](/help/sites-cloud/authoring/features/page-diff.md).
+   如需使用比較功能的完整資訊，請參閱 [頁面差異](/help/sites-cloud/authoring/sites-console/page-diff.md).
 
 ## 分離 Live Copy {#detaching-a-live-copy}
 
@@ -651,4 +651,4 @@ Blueprint頁面（在Blueprint設定中參照）為您提供使用目前(Bluepri
 1. 選取 **分離** 工具列中的。
 1. 確認 **分離** 中的動作 **分離即時副本** 對話方塊：
 
-   ![分離 Live Copy](../assets/detach-live-copy.png)
+   ![分離即時副本](../assets/detach-live-copy.png)

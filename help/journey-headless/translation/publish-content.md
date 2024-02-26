@@ -2,8 +2,8 @@
 title: 發佈翻譯的 Headless 內容
 description: 了解如何發佈翻譯的內容，並在內容更新時更新翻譯。
 exl-id: eb8d1152-ed37-47ca-86a8-6a66c010ee62
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
-workflow-type: ht
+source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
+workflow-type: tm+mt
 source-wordcount: '1359'
 ht-degree: 100%
 
@@ -162,6 +162,6 @@ ht-degree: 100%
 ## 其他資源 {#additional-resources}
 
 * [管理翻譯專案](/help/sites-cloud/administering/translation/managing-projects.md) - 了解翻譯專案的詳細資料和其他功能，例如人工翻譯工作流程和多語言專案。
-* [製作概念](/help/sites-cloud/authoring/getting-started/concepts.md) - 詳細了解 AEM 的製作和發佈模型。本文件重點放在製作頁面而不是內容片段，但該理論仍然適用。
-* [發佈頁面](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) - 了解其他可用於發佈內容的功能。本文件重點放在製作頁面而不是內容片段，但該理論仍然適用。
-* [製作環境和工具](/help/sites-cloud/authoring/fundamentals/environment-tools.md##path-selection) - AEM 提供各種機制來組織和編輯您的內容，包括強大的路徑瀏覽器。
+* [製作概念](/help/sites-cloud/authoring/author-publish.md) - 詳細了解 AEM 的製作和發佈模型。本文件重點放在製作頁面而不是內容片段，但該理論仍然適用。
+* [發佈頁面](/help/sites-cloud/authoring/sites-console/publishing-pages.md) - 了解其他可用於發佈內容的功能。本文件重點放在製作頁面而不是內容片段，但該理論仍然適用。
+* [製作環境和工具](/help/sites-cloud/authoring/path-selection.md#path-selection) - AEM 提供各種機制來組織和編輯您的內容，包括強大的路徑瀏覽器。

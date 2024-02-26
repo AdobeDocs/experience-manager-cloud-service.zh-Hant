@@ -2,7 +2,7 @@
 title: 不同之處與新增功能 - Adobe Experience Manager as a Cloud Service
 description: 不同之處與新增功能 - Adobe Experience Manager (AEM) as a Cloud Service。
 exl-id: d1ce126e-960c-4367-b741-af709dd81010
-source-git-commit: d4502c7558fca7ecee89b2ce9429fd1c749d8e92
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
 source-wordcount: '1883'
 ht-degree: 100%
@@ -240,7 +240,7 @@ AEM as a Cloud Service 最重大的變更是完全整合使用 Adobe ID 以存�
 
 >[!NOTE]
 >
->如需更多詳細資訊，從[基本處理](/help/sites-cloud/authoring/getting-started/basic-handling.md)開始是最佳起點。
+>如需更多詳細資訊，從[基本處理](/help/sites-cloud/authoring/basic-handling.md)開始是最佳起點。
 
 使用過 AEM 的任何人都會非常熟悉 Sites 和 Assets 的編寫使用者介面 (UI) 的基本原理。
 

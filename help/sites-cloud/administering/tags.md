@@ -2,7 +2,7 @@
 title: 管理標記
 description: 了解如何在 AEM 中管理標記，以便整理您的內容。
 exl-id: 42480699-b7a7-4678-a763-569a9b7573e2
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
 source-wordcount: '2200'
 ht-degree: 73%
@@ -16,7 +16,7 @@ ht-degree: 73%
 在 Adob&#x200B;&#x200B;e Experience Manager (AEM) 中，標記可以是以下的屬性：
 
 * 頁面的內容節點
-   * 如需詳細資訊，請參閱文件「[使用標記](/help/sites-cloud/authoring/features/tags.md)」。
+   * 如需詳細資訊，請參閱文件「[使用標記](/help/sites-cloud/authoring/sites-console/tags.md)」。
 * 資產的中繼資料節點
    * 如需詳細資訊，請參閱文件「[管理數位資產的中繼資料](/help/assets/manage-metadata.md)」。
 
@@ -135,7 +135,7 @@ ht-degree: 73%
 
    ![在主控台中選取標記](assets/select-tags.png)
 
-1. **發佈標記**&#x200B;對話框會要求確認要發佈選取的標記。選取 **發佈**.
+1. **發佈標記**&#x200B;對話框會要求確認要發佈選取的標記。選取「**發佈**」。
 
    ![發佈標記確認模式](assets/publish-tag.png)
 
@@ -183,7 +183,7 @@ Be sure to [apply permissions](#setting-tag-permissions) to the namespace before
 
    ![檢視標記屬性](assets/tag-properties.png)
 
-如需有關選取檢視模式和邊欄的詳細資訊，請參閱 [基本處理](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector).
+如需有關選取檢視模式和邊欄的詳細資訊，請參閱 [基本處理](/help/sites-cloud/authoring/basic-handling.md#rail-selector).
 
 ### 編輯標記 {#editing-tags}
 
@@ -215,7 +215,7 @@ Be sure to [apply permissions](#setting-tag-permissions) to the namespace before
 
    ![在主控台中選取標記](assets/select-tags.png)
 
-1. **取消發佈標記**&#x200B;對話框會要求確認要發佈選取的標記。選取 **發佈**.
+1. **取消發佈標記**&#x200B;對話框會要求確認要發佈選取的標記。選取「**發佈**」。
 
    ![發佈標記確認模式](assets/unpublish-tag.png)
 
@@ -245,7 +245,7 @@ Be sure to [apply permissions](#setting-tag-permissions) to the namespace before
 
 將滑鼠停留在清單中或選取參照內容，以顯示內容的完整路徑。
 
-如需有關選取檢視模式和邊欄的詳細資訊，請參閱 [基本處理](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector).
+如需有關選取檢視模式和邊欄的詳細資訊，請參閱 [基本處理](/help/sites-cloud/authoring/basic-handling.md#rail-selector).
 
 ### 移動標記 {#moving-tags}
 

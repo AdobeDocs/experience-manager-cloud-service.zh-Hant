@@ -2,7 +2,7 @@
 title: 管理環境
 description: 了解您可以建立的環境類型，以及如何為您的 Cloud Manager 專案建立環境類型。
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
 source-wordcount: '2614'
 ht-degree: 88%
@@ -169,7 +169,7 @@ Cloud Manager 為每個 AEM as a Cloud Service 環境提供預覽服務 (作為�
 
 解鎖預覽服務的存取權後，預覽服務名稱前面的鎖定圖示不再顯示。
 
-啟動後，您可以使用 AEM 中的管理發佈 UI 將內容發佈到預覽服務。如需更多詳細資訊，請參閱[預覽內容](/help/sites-cloud/authoring/fundamentals/previewing-content.md)。
+啟動後，您可以使用 AEM 中的管理發佈 UI 將內容發佈到預覽服務。如需更多詳細資訊，請參閱[預覽內容](/help/sites-cloud/authoring/sites-console/previewing-content.md)。
 
 >[!NOTE]
 >

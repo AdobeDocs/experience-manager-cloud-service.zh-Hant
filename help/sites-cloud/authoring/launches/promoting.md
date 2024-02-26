@@ -2,10 +2,10 @@
 title: 提升啟動
 description: 您必須提升啟動頁面，才能在發佈前將內容移回來源（生產環境）。
 exl-id: 5f5ed17c-43db-4ef6-ab79-c491326fa01c
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
-source-wordcount: '811'
-ht-degree: 6%
+source-wordcount: '812'
+ht-degree: 1%
 
 ---
 
@@ -42,27 +42,27 @@ ht-degree: 6%
 
 您可以透過以下任一專案提升啟動： **網站** 主控台或 **啟動** 主控台：
 
-1. 開啟:
+1. 開啟：
    * 此 **網站** 主控台（導覽來源頁面時）：
-      1. 開啟 [引用邊欄](/help/sites-cloud/authoring/fundamentals/environment-tools.md#references) 並使用以下方式選取所需的來源頁面 [選擇模式](/help/sites-cloud/authoring/getting-started/basic-handling.md) （或是選取並開啟參照邊欄，順序並不重要）。 所有參照都會顯示。
+      1. 開啟 [引用邊欄](/help/sites-cloud/authoring/sites-console/console-side-panel.md#references) 並使用以下方式選取所需的來源頁面 [選擇模式](/help/sites-cloud/authoring/basic-handling.md) （或是選取並開啟參照邊欄，順序並不重要）。 所有參照都會顯示。
       1. 選取 **啟動** (例如，「啟動」(1))會顯示特定啟動的清單。
       1. 選取特定啟動項以顯示可用的動作。
       1. 選取 **提升啟動** 以開啟精靈。
    * 此 **網站** 主控台（導覽啟動頁面時）：
-      1. 選擇所需的啟動頁面，使用 [選擇模式](/help/sites-cloud/authoring/getting-started/basic-handling.md).
+      1. 選擇所需的啟動頁面，使用 [選擇模式](/help/sites-cloud/authoring/basic-handling.md).
       1. 此 **提升** 動作在工具列中可供使用。
    * 此 **啟動** 主控台：
       1. 選取您的啟動項（選取縮圖）。
       1. 選取 **提升**.
 1. 在第一個步驟中，您可以指定：
-   * **目標**
-      * **刪除促銷活動後啟動**
+   * **Target**
+      * **促銷活動後刪除啟動**
    * **範圍**
       * **提升完整啟動項**
-      * **提升已修改頁面**
+      * **提升已修改的頁面**
       * **推廣已核准的頁面**  — 取決於啟動核准工作流程
-      * **升級目前頁面**
-      * **升級目前頁面與子頁面**
+      * **提升目前頁面**
+      * **提升目前頁面和子頁面**
 
      例如，當選取僅提升已修改的頁面時：
 
@@ -97,19 +97,19 @@ ht-degree: 6%
 1. 如同建立巢狀啟動項，請導覽至並選取 **啟動** 主控台或 **引用** 邊欄。
 1. 選取 **提升啟動** 以開啟精靈。
 1. 輸入必要的明細：
-   * **目標**
+   * **Target**
       * **促銷活動目標**  — 您可以升級至任何來源。
       * **促銷活動後刪除啟動**  — 促銷活動後，選取的啟動項以及巢狀內嵌的任何啟動項都會被刪除。
    * **範圍**  — 您可在此選取是要提升整個啟動，還是僅提升已實際編輯的頁面。 如果是後者，您就可以選取包含/排除子頁面。 預設設定為僅提升目前頁面的頁面變更：
       * **提升完整啟動項**
-      * **提升已修改頁面**
+      * **提升已修改的頁面**
       * **推廣已核准的頁面**  — 取決於啟動核准工作流程
-      * **升級目前頁面**
-      * **升級目前頁面與子頁面**
+      * **提升目前頁面**
+      * **提升目前頁面和子頁面**
 
    ![提升啟動設定](/help/sites-cloud/authoring/assets/launches-promote-settings.png)
 
-1. 選取 **下一個**.
+1. 選取&#x200B;**「下一步」**。
 1. 請先檢閱促銷詳細資訊，再選取 **提升**：
 
    ![檢閱提升設定](/help/sites-cloud/authoring/assets/launches-promote-review-2.png)

@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Asset Management
 role: User
 exl-id: 2f2fd6cb-8b53-4167-a7e3-453f27549109
-source-git-commit: e2d79742c2097748d736bc4d2d2046711d978fc5
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
 source-wordcount: '3166'
 ht-degree: 5%
@@ -309,7 +309,7 @@ Dynamic Media元件可讓您新增動態影像，包括影像集、迴轉集及�
 全景媒體元件適用於是球面全景影像的資產。 這類影像可提供房間、屬性、位置或橫向的360度觀賞體驗。 若要讓影像符合球面全景的條件，它必須具備下列其中一項（或兩項）：
 
 * 外觀比例為2:1。
-* 以關鍵字標籤 `equirectangular` 或(`spherical` + `panorama`)或(`spherical` + `panoramic`)。 另請參閱 [使用標籤](/help/sites-cloud/authoring/features/tags.md).
+* 以關鍵字標籤 `equirectangular` 或(`spherical` + `panorama`)或(`spherical` + `panoramic`)。 另請參閱 [使用標籤](/help/sites-cloud/authoring/sites-console/tags.md).
 
 外觀比例和關鍵字條件都適用於資產詳細資料頁面和全景媒體 **** WCM元件的全景資產。
 

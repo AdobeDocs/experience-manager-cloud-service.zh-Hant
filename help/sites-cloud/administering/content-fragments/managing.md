@@ -4,7 +4,7 @@ description: 瞭解如何從主控台和編輯器管理AEM內容片段、建立�
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
-source-git-commit: 19685cb952a890731bd7d75a2adf3cfd841a465f
+source-git-commit: 89f23a590338561b4cfeb10b54a260a135ec2f08
 workflow-type: tm+mt
 source-wordcount: '2620'
 ht-degree: 2%
@@ -32,7 +32,7 @@ ht-degree: 2%
 >可以使用內容片段：
 >
 >* 的 [搭配GraphQL使用內容片段的Headless內容傳送](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md)，
->* 編寫頁面時；請參閱 [使用內容片段編寫頁面](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
+>* 編寫頁面時；請參閱 [使用內容片段編寫頁面](/help/sites-cloud/authoring/fragments/content-fragments.md).
 
 >[!NOTE]
 >
@@ -339,7 +339,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->此外，當您 [發佈使用片段的頁面](/help/sites-cloud/authoring/fundamentals/content-fragments.md#publishing)；片段將會列在頁面參考中。
+>此外，當您 [發佈使用片段的頁面](/help/sites-cloud/authoring/fragments/content-fragments.md#publishing)；片段將會列在頁面參考中。
 
 ## 取消發佈片段 {#unpublishing-a-fragment}
 
@@ -365,7 +365,7 @@ ht-degree: 2%
 >
 >如果片段已從其他片段或頁面引用，您將看到警告訊息，並需要確認您要繼續。
 
-## 尋找和取代 {#find-and-replace}
+## 尋找並取代 {#find-and-replace}
 
 此 **取代** 動作可用（在頂端工具列中）來尋找和取代所選內容片段中的指定文字。
 

@@ -2,8 +2,8 @@
 title: 了解內容模型的基本知識
 description: 了解使用內容片段進行 Headless CMS 內容模型的基本知識。
 exl-id: dc460490-dfc8-4a46-a468-3d03e593447d
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
-workflow-type: ht
+source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
+workflow-type: tm+mt
 source-wordcount: '900'
 ht-degree: 100%
 
@@ -153,8 +153,8 @@ AEM 提供以下資料類型用於建立內容模型：
 
    * [內容片段模型 - 資料類型](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)
 
-* [製作概念](/help/sites-cloud/authoring/getting-started/concepts.md)
+* [製作概念](/help/sites-cloud/authoring/author-publish.md)
 
-* [基本處理](/help/sites-cloud/authoring/getting-started/basic-handling.md) - 此頁面主要根據 **Sites** 主控台，但許多/大部分功能也和製作 **Assets** 主控台下的&#x200B;**內容片段**&#x200B;相關。
+* [基本處理](/help/sites-cloud/authoring/basic-handling.md) - 此頁面主要根據 **Sites** 主控台，但許多/大部分功能也和製作 **Assets** 主控台下的&#x200B;**內容片段**&#x200B;相關。
 
 * [使用內容片段](/help/sites-cloud/administering/content-fragments/overview.md)

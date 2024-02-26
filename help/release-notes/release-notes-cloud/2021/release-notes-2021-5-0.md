@@ -2,7 +2,7 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2021.5.0 版發行說明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2021.5.0 版發行說明。'
 exl-id: 3f9d7339-7e37-4702-821e-f2b03cd7e224
-source-git-commit: 720430af374636878b42ce346ca9c61ab089709b
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
 source-wordcount: '1355'
 ht-degree: 43%
@@ -39,7 +39,7 @@ ht-degree: 43%
 
 ### [!DNL Sites] 的新增功能 {#what-is-new-sites}
 
-* 您很快就會能夠驗證新版本的內容 [預覽層](/help/sites-cloud/authoring/fundamentals/previewing-content.md) 以模擬最終的體驗外觀，如同您在發佈層級上一樣。 這可透過AEM Sites Managed Publication精靈啟用，現在可讓您在發佈或預覽之間選擇發佈目的地。 接著，您就可以透過專用URL存取「預覽」上的體驗。 在「預覽」上進行驗證後，內容可以如常從「作者」發佈至「發佈」。 在AEMas a Cloud Service環境中啟用預覽服務將在未來幾週逐步推出。
+* 您很快就會能夠驗證新版本的內容 [預覽層](/help/sites-cloud/authoring/sites-console/previewing-content.md) 以模擬最終的體驗外觀，如同您在發佈層級上一樣。 這可透過AEM Sites Managed Publication精靈啟用，現在可讓您在發佈或預覽之間選擇發佈目的地。 接著，您就可以透過專用URL存取「預覽」上的體驗。 在「預覽」上進行驗證後，內容可以如常從「作者」發佈至「發佈」。 在AEMas a Cloud Service環境中啟用預覽服務將在未來幾週逐步推出。
 
 ## [!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 

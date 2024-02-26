@@ -2,10 +2,10 @@
 title: Adobe Experience Manager as a Cloud Service 的 SEO 和 URL 管理最佳作法
 description: Adobe Experience Manager as a Cloud Service 的 SEO 和 URL 管理最佳作法
 exl-id: abe3f088-95ff-4093-95a1-cfc610d4b9e9
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
 source-wordcount: '3539'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -70,7 +70,7 @@ URL 中有一些公認的最佳做法。
 
    * 建議內容作者遵循這項作法。
 
-* 支援在 URL 請求中不區分大小寫。
+* 支援在 URL 要求中不區分大小寫。
 
    * 將 Dispatcher 設定為將所有傳入要求重新寫入為小寫字母。
    * 請訓練內容作者使用小寫字母來建立所有網頁。
@@ -118,7 +118,7 @@ AEM 提供兩種編寫 servlet 的選項：
 
 #### Bin servlet (向下一個層級) {#bin-servlets-one-level-down}
 
-**Bin** servlet 符合許多開發人員在 J2EE 程式設計中慣用的模式。Servlet 會註冊於特定路徑，這種情況下 AEM 通常位於 `/bin` 下，而您必須從查詢字串擷取所需請求參數。
+**Bin** servlet 符合許多開發人員在 J2EE 程式設計中慣用的模式。Servlet 會註冊於特定路徑，這種情況下 AEM 通常位於 `/bin` 下，而您必須從查詢字串擷取所需要求參數。
 
 此類 servlet 的 SCR 注釋如下所示：
 
@@ -210,7 +210,7 @@ Resource myPage = req.getResource();
 
 >[!NOTE]
 >
->[在編輯網頁屬性時，您可使用別名屬性](/help/sites-cloud/authoring/fundamentals/page-properties.md#advanced)來設定 `sling:alias` 屬性。
+>[在編輯網頁屬性時，您可使用別名屬性](/help/sites-cloud/authoring/sites-console/page-properties.md#advanced)來設定 `sling:alias` 屬性。
 
 #### /etc/map {#etc-map}
 
@@ -225,7 +225,7 @@ Resource myPage = req.getResource();
 
 * 預設為 `/etc/map`。
 
-您可以在此位置新增對應定義，以便對應傳入請求、重新寫入 AEM 中的網頁 URL，或兩者皆執行。
+您可以在此位置新增對應定義，以便對應傳入要求、重新寫入 AEM 中的網頁 URL，或兩者皆執行。
 
 如要建立對應，則在此位置的 `sling:Mapping` 或 `/http` 之下建立 `/https` 節點。AEM 會根據設定在此節點上的 `sling:match` 和 `sling:internalRedirect` 屬性，將相符 URL 的所有流量重新導向至在 `internalRedirect` 屬性指定的值。
 
@@ -233,7 +233,7 @@ Resource myPage = req.getResource();
 
 以下是此問題發生的例子：
 
-1. 使用者造訪您的網站並請求 `https://www.mydomain.com/my-page.html`
+1. 使用者造訪您的網站並要求 `https://www.mydomain.com/my-page.html`
 1. Dispatcher 將此要求轉發到發佈伺服器。
 1. 發佈伺服器使用 `/etc/map` 將此要求解析到 `/content/my-brand/my-page`，並呈現網頁。
 
@@ -459,7 +459,7 @@ public class SitemapGeneratorImpl extends ResourceTreeSitemapGenerator {
 }
 ```
 
-此外，針對XML Sitemap實作的功能也可用於不同的使用案例，例如，將標準連結或語言替代專案新增至頁面標題。 如需詳細資訊，請參閱 [SEO 標記](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/SeoTags.html)介面。
+此外，為 XML Sitemap 實作的功能也可以用於不同的使用案例，例如將標準連結或語言替代項新增到頁面的頁首。如需詳細資訊，請參閱 [SEO 標記](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/SeoTags.html)介面。
 
 ### 為舊版 URL 建立 301 重新導向 {#creating-redirects-for-legacy-urls}
 

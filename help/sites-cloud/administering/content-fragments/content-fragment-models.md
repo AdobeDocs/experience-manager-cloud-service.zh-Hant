@@ -4,7 +4,7 @@ description: 瞭解內容片段模型如何作為您在AEM中內容片段的基�
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: 8ab5b15f-cefc-45bf-a388-928e8cc8c603
-source-git-commit: 19685cb952a890731bd7d75a2adf3cfd841a465f
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
 source-wordcount: '3125'
 ht-degree: 3%
@@ -119,9 +119,9 @@ Adobe Experience Manager (AEM)中的內容片段模型as a Cloud Service定義 [
 
         >[!CAUTION]
         >
-        >手動更新屬性時 **屬性名稱** 對於資料型別，名稱必須包含 *僅限* A-Z、a-z、0-9和下劃線「_」作為特殊字元。
+        手動更新屬性時 **屬性名稱** 對於資料型別，名稱必須包含 *僅限* A-Z、a-z、0-9和下劃線「_」作為特殊字元。
         >
-        >如果在舊版AEM中建立的模型包含非法字元，請移除或更新這些字元。
+        如果在舊版AEM中建立的模型包含非法字元，請移除或更新這些字元。
 
      例如：
 
@@ -150,9 +150,9 @@ Adobe Experience Manager (AEM)中的內容片段模型as a Cloud Service定義 [
 
   >[!NOTE]
   >
-  >文字區域是RTF、純文字還是Markdown，由屬性在模型中定義 **預設型別**.
+  文字區域是RTF、純文字還是Markdown，由屬性在模型中定義 **預設型別**.
   >
-  >此格式無法從 [內容片段編輯器](/help/sites-cloud/administering/content-fragments/authoring.md)，但僅從模型中進行。
+  此格式無法從 [內容片段編輯器](/help/sites-cloud/administering/content-fragments/authoring.md)，但僅從模型中進行。
 
 * **數字**
    * 新增一或多個數值欄位
@@ -184,7 +184,7 @@ Adobe Experience Manager (AEM)中的內容片段模型as a Cloud Service定義 [
 
      >[!NOTE]
      >
-     >此資料型別僅用於格式設定，AEM GraphQL結構描述會忽略此資料型別。
+     此資料型別僅用於格式設定，AEM GraphQL結構描述會忽略此資料型別。
 
 ## 屬性 {#properties}
 
@@ -196,7 +196,7 @@ Adobe Experience Manager (AEM)中的內容片段模型as a Cloud Service定義 [
 
   >[!CAUTION]
   >
-  >如果在舊版AEM中建立的模型包含非法字元，請移除或更新這些字元。
+  如果在舊版AEM中建立的模型包含非法字元，請移除或更新這些字元。
 
 * **呈現為**
 
@@ -227,11 +227,11 @@ Adobe Experience Manager (AEM)中的內容片段模型as a Cloud Service定義 [
 
   >[!NOTE]
   >
-  >確保每個語言根的唯一性。
+  確保每個語言根的唯一性。
 
   >[!NOTE]
   >
-  >變數可能具有相同的 *獨特* 值做為相同片段的變數，但與其他片段變數中使用的值不同。
+  變數可能具有相同的 *獨特* 值做為相同片段的變數，但與其他片段變數中使用的值不同。
 
 * 另請參閱 **[內容參考](#content-reference)** 以取得該特定資料型別及其屬性的詳細資訊。
 
@@ -280,18 +280,16 @@ Adobe Experience Manager (AEM)中的內容片段模型as a Cloud Service定義 [
    * 可讓您包含/擷取結構化資料。
      >[!NOTE]
      >
-     >當您使用時，此方法特別有趣 [搭配GraphQL使用內容片段的Headless內容傳送](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md).
+     當您使用時，此方法特別有趣 [搭配GraphQL使用內容片段的Headless內容傳送](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md).
    * 可以為一個或多個參考（在產生的片段中）設定。
 
 >[!NOTE]
 >
->AEM針對下列專案提供週期性保護：
+AEM針對下列專案提供週期性保護：
 >
->* 內容參考
->  這可防止使用者新增對目前片段的引用，並可能導致空白的片段引用選取器對話方塊。
+* 內容參考這可防止使用者新增對目前片段的參考，並可能導致空白的片段參考選擇器對話方塊。
 >
->* GraphQL中的片段參考
->  如果您建立深層查詢，且該查詢傳回多個互相參照的內容片段，則它會在第一次出現時傳回null。
+* GraphQL中的片段參考如果您建立深層查詢，並傳回互相參考的多個內容片段，則在第一次出現時就會傳回null。
 
 ### 內容參考 {#content-reference}
 
@@ -302,16 +300,16 @@ Adobe Experience Manager (AEM)中的內容片段模型as a Cloud Service定義 [
 * 此 **根路徑**，會指定儲存任何參考內容的位置
   >[!NOTE]
   >
-  >如果您想在使用內容片段編輯器時直接在此欄位上傳和參考影像，則必須使用此選項。
+  如果您想在使用內容片段編輯器時直接在此欄位上傳和參考影像，則必須使用此選項。
   >
-  >另請參閱 [參考影像](/help/sites-cloud/administering/content-fragments/authoring.md#reference-images) 以取得更多詳細資料。
+  另請參閱 [參考影像](/help/sites-cloud/administering/content-fragments/authoring.md#reference-images) 以取得更多詳細資料。
 
 * 可參考的內容型別
   >[!NOTE]
   >
-  >這些必須包括 **影像** 如果您想在使用內容片段編輯器時直接在此欄位上傳和參考影像。
+  這些必須包括 **影像** 如果您想在使用內容片段編輯器時直接在此欄位上傳和參考影像。
   >
-  >另請參閱 [參考影像](/help/sites-cloud/administering/content-fragments/authoring.md#reference-images) 以取得更多詳細資料。
+  另請參閱 [參考影像](/help/sites-cloud/administering/content-fragments/authoring.md#reference-images) 以取得更多詳細資料。
 
 * 檔案大小限制
 * 如果參照影像：
@@ -345,7 +343,7 @@ type CompanyModel {
 
 >[!NOTE]
 >
->片段參考對以下專案特別感興趣 [搭配GraphQL使用內容片段的Headless內容傳送](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md).
+片段參考對以下專案特別感興趣 [搭配GraphQL使用內容片段的Headless內容傳送](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md).
 
 除了標準屬性之外，您還可以定義：
 
@@ -371,9 +369,9 @@ type CompanyModel {
 
 >[!NOTE]
 >
->已建立重複保護機制。 它禁止使用者在片段參考中選取目前的內容片段，並可能導致空白的片段參考選擇器對話方塊。
+已建立重複保護機制。 它禁止使用者在片段參考中選取目前的內容片段，並可能導致空白的片段參考選擇器對話方塊。
 >
->GraphQL中也有片段參考的週期性保護。 如果您在兩個互相參照的內容片段間建立深層查詢，則會傳回null。
+GraphQL中也有片段參考的週期性保護。 如果您在兩個互相參照的內容片段間建立深層查詢，則會傳回null。
 
 ## 啟用或停用內容片段模型 {#enabling-disabling-a-content-fragment-model}
 
@@ -422,7 +420,7 @@ type CompanyModel {
 
 >[!NOTE]
 >
->其機制類似於 [允許頁面範本](/help/sites-cloud/authoring/features/templates.md#allowing-a-template-author) 頁面及其子頁面（在頁面的進階屬性中）。
+其機制類似於 [允許頁面範本](/help/sites-cloud/authoring/sites-console/templates.md#allowing-a-template-author) 頁面及其子頁面（在頁面的進階屬性中）。
 
 若要設定 **原則** 的 **允許的內容片段模型**：
 
@@ -456,7 +454,7 @@ type CompanyModel {
 
 >[!CAUTION]
 >
->刪除內容片段模型可能會影響相依片段。
+刪除內容片段模型可能會影響相依片段。
 
 若要刪除內容片段模型：
 
@@ -467,7 +465,7 @@ type CompanyModel {
 
    >[!NOTE]
    >
-   >如果參照了模型，系統會發出警告，以便您採取適當的動作。
+   如果參照了模型，系統會發出警告，以便您採取適當的動作。
 
 ## 發佈內容片段模型 {#publishing-a-content-fragment-model}
 
@@ -483,7 +481,7 @@ type CompanyModel {
 
    >[!NOTE]
    >
-   >如果您發佈的內容片段尚未發佈模式，選擇清單會指出這一點，模式會與片段一起發佈。
+   如果您發佈的內容片段尚未發佈模式，選擇清單會指出這一點，模式會與片段一起發佈。
 
 ## 取消發佈內容片段模型 {#unpublishing-a-content-fragment-model}
 
@@ -501,7 +499,7 @@ type CompanyModel {
 
 ![取消發佈使用中的模型時顯示內容片段模型錯誤訊息](assets/cf-cfmodels-unpublish-error.png)
 
-此訊息建議您檢查 [引用](/help/sites-cloud/authoring/getting-started/basic-handling.md#references) 面板以進一步調查：
+此訊息建議您檢查 [引用](/help/sites-cloud/authoring/basic-handling.md#references) 面板以進一步調查：
 
 ![參考中的內容片段模型](assets/cf-cfmodels-references.png)
 
@@ -571,6 +569,6 @@ type CompanyModel {
 
      >[!NOTE]
      >
-     >頂端可能仍會顯示警告，但此時模型已由現有內容片段使用。
+     頂端可能仍會顯示警告，但此時模型已由現有內容片段使用。
 
    * **取消** 將您帶回主控台。

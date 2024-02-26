@@ -2,16 +2,16 @@
 title: 自訂頁面屬性的檢視
 description: 了解作者如何檢視和編輯頁面屬性。
 exl-id: 363b3c2d-f965-485f-bdae-2ea5b4cecb83
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: d2352e66b380f5a3654e2fc99ce4204b32066683
 workflow-type: tm+mt
-source-wordcount: '361'
+source-wordcount: '352'
 ht-degree: 92%
 
 ---
 
 # 自訂頁面屬性的檢視{#customizing-views-of-page-properties}
 
-每個頁面都有一組使用者可以檢視和編輯的[屬性](/help/sites-cloud/authoring/fundamentals/page-properties.md)。有些是建立頁面 (建立檢視) 時的要求，其他的則可在稍後階段再檢視和編輯 (編輯檢視)。這些頁面屬性由適當頁面元件的對話框 (`cq:dialog`) 定義和提供。
+每個頁面都有一組使用者可以檢視和編輯的[屬性](/help/sites-cloud/authoring/sites-console/page-properties.md)。有些是建立頁面 (建立檢視) 時的要求，其他的則可在稍後階段再檢視和編輯 (編輯檢視)。這些頁面屬性由適當頁面元件的對話框 (`cq:dialog`) 定義和提供。
 
 每個頁面屬性的預設狀態為：
 
@@ -39,7 +39,7 @@ ht-degree: 92%
 
 設定頁面元件的對話框並套用適當的節點屬性，還可以設定可用的欄位。
 
-例如，預設情況下，[**建立頁面**&#x200B;精靈](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page)會顯示在&#x200B;**更多標題和說明**&#x200B;下面分組的欄位。若要隱藏這些，您可以設定：
+例如，預設情況下，[**建立頁面**&#x200B;精靈](/help/sites-cloud/authoring/sites-console/creating-pages.md#creating-a-new-page)會顯示在&#x200B;**更多標題和說明**&#x200B;下面分組的欄位。若要隱藏這些，您可以設定：
 
 1. 在 `/apps` 下面建立您的頁面元件。
 1. 針對頁面元件的 `basic` 區段建立覆寫 (使用由 [Sling 資源合併](/help/implementing/developing/introduction/sling-resource-merger.md)所提供的&#x200B;*對話框差異*)；例如：

@@ -2,8 +2,8 @@
 title: 了解製作基本知識
 description: 了解使用內容片段為 Headless CMS 製作內容的概念和機制。
 exl-id: 3eca973f-b210-41bb-98da-ecbd2bae9803
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
-workflow-type: ht
+source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
+workflow-type: tm+mt
 source-wordcount: '1727'
 ht-degree: 100%
 
@@ -267,21 +267,21 @@ You can view additional information about items using the Rail Selector. This al
 
 ## 其他資源 {#additional-resources}
 
-* [製作概念](/help/sites-cloud/authoring/getting-started/concepts.md)
+* [製作概念](/help/sites-cloud/authoring/author-publish.md)
 
-* [基本處理](/help/sites-cloud/authoring/getting-started/basic-handling.md) - 此頁面主要根據&#x200B;**Sites** 主控台，但許多/大部分功能也和製作 **Assets** 主控台下的&#x200B;**內容片段**&#x200B;相關。
+* [基本處理](/help/sites-cloud/authoring/basic-handling.md) - 此頁面主要根據&#x200B;**Sites** 主控台，但許多/大部分功能也和製作 **Assets** 主控台下的&#x200B;**內容片段**&#x200B;相關。
 
-   * [導覽面板](/help/sites-cloud/authoring/getting-started/basic-handling.md#navigation-panel)
+   * [導覽面板](/help/sites-cloud/authoring/basic-handling.md#navigation-panel)
 
-   * [標頭](/help/sites-cloud/authoring/getting-started/basic-handling.md#the-header)
+   * [標頭](/help/sites-cloud/authoring/basic-handling.md#the-header)
 
-   * [動作工具列](/help/sites-cloud/authoring/getting-started/basic-handling.md#actions-toolbar)
+   * [動作工具列](/help/sites-cloud/authoring/basic-handling.md#actions-toolbar)
 
-   * [快速動作](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions)
+   * [快速動作](/help/sites-cloud/authoring/basic-handling.md#quick-actions)
 
-   * [檢視和選擇資源](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)
+   * [檢視和選擇資源](/help/sites-cloud/authoring/basic-handling.md#viewing-and-selecting-resources)
 
-   * [邊欄選擇器](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector)
+   * [邊欄選擇器](/help/sites-cloud/authoring/basic-handling.md#rail-selector)
 
 * [使用內容片段](/help/sites-cloud/administering/content-fragments/overview.md)
 

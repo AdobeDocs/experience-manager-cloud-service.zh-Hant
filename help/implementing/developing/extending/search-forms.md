@@ -2,16 +2,16 @@
 title: 設定搜尋表單
 description: 設定Adobe Experience Manager as a Cloud Service的搜尋Forms 。
 exl-id: b06649c4-cc91-44e3-8699-00e90140b90d
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
 workflow-type: tm+mt
-source-wordcount: '2033'
-ht-degree: 16%
+source-wordcount: '2036'
+ht-degree: 9%
 
 ---
 
 # 設定搜尋表單 {#configuring-search-forms}
 
-Adobe Experience Manager as a Cloud Service隨附強大的功能 [搜尋](/help/sites-cloud/authoring/getting-started/search.md) 機制。
+Adobe Experience Manager as a Cloud Service隨附強大的功能 [搜尋](/help/sites-cloud/authoring/search.md) 機制。
 
 除此之外，還有一組預先定義的選項，可協助您篩選內容。 這些會保留預先定義的多面，例如 **修改日期**， **發佈狀態**，或 **即時副本狀態** 可協助您快速向下展開至您需要的資源。
 
@@ -19,9 +19,9 @@ Adobe Experience Manager as a Cloud Service隨附強大的功能 [搜尋](/help/
 
 這些目標可協助您從以下位置快速輕鬆地找到您的內容：
 
-* [搜尋和篩選](/help/sites-cloud/authoring/getting-started/search.md#search-and-filter)
-* [邊欄選擇器](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector)
-* 此 [資產瀏覽器](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser) （編輯頁面時）
+* [搜尋和篩選](/help/sites-cloud/authoring/search.md#search-and-filter)
+* [邊欄選擇器](/help/sites-cloud/authoring/basic-handling.md#rail-selector)
+* 此 [資產瀏覽器](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#assets-browser) （編輯頁面時）
 
 >[!NOTE]
 >
@@ -33,7 +33,7 @@ Adobe Experience Manager as a Cloud Service隨附強大的功能 [搜尋](/help/
 
 * **工具**
    * **一般**
-      * **搜尋表單**
+      * **搜尋Forms**
 
 ## 預設Forms {#default-forms}
 
@@ -44,20 +44,20 @@ Adobe Experience Manager as a Cloud Service隨附強大的功能 [搜尋](/help/
 可用的預設設定（依字母順序列出）為：
 
 * **資產管理搜尋邊欄**
-* **頁面編輯器 (文件搜尋)**
-* **頁面編輯器 (體驗片段搜尋)**
-* **頁面編輯器 (影像搜尋)**
-* **頁面編輯器 (手稿搜尋)**
-* **頁面編輯器 (頁面搜尋)**
-* **頁面編輯器 (段落搜尋)**
-* **頁面編輯器 (產品搜尋)**
-* **頁面編輯器 (Scene7 搜尋)**
-* **頁面編輯器 (視訊搜尋)**
+* **頁面編輯器（檔案搜尋）**
+* **頁面編輯器（體驗片段搜尋）**
+* **頁面編輯器（影像搜尋）**
+* **頁面編輯器（手稿搜尋）**
+* **頁面編輯器（頁面搜尋）**
+* **頁面編輯器（段落搜尋）**
+* **頁面編輯器（產品搜尋）**
+* **頁面編輯器(Scene7搜尋)**
+* **頁面編輯器（視訊搜尋）**
 * **專案管理搜尋邊欄**
 * **專案翻譯搜尋邊欄**
 * **網站管理搜尋邊欄**
 * **代碼片段管理搜尋邊欄**
-* **Stock 管理搜尋邊欄**
+* **Stock管理搜尋邊欄**
 * **內容片段模型搜尋邊欄**
 * **專案管理搜尋邊欄**
 * **專案翻譯搜尋邊欄**
@@ -248,7 +248,7 @@ Adobe Experience Manager as a Cloud Service隨附強大的功能 [搜尋](/help/
      <li>預留位置</li>
      <li>屬性名稱*</li>
      <li>分隔符號支援</li>
-     <li>輸入分隔字元</li>
+     <li>輸入分隔符號</li>
      <li>忽略大小寫</li>
      <li>說明</li>
     </ul> 
@@ -287,7 +287,7 @@ Adobe Experience Manager as a Cloud Service隨附強大的功能 [搜尋](/help/
     <ul>
      <li>欄位標籤</li>
      <li>發佈屬性名稱*</li>
-     <li>鎖定頁面屬性名稱*</li>
+     <li>鎖定的頁面屬性名稱*</li>
      <li>說明</li>
     </ul> </td>
   </tr>

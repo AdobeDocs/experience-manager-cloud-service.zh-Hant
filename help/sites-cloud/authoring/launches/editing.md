@@ -2,7 +2,7 @@
 title: 編輯啟動
 description: 為您的頁面（或一組頁面）建立啟動後，您可以在頁面的啟動副本中編輯內容。
 exl-id: d3cd3383-e0a0-4019-9f97-8baa3be99e6e
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
 source-wordcount: '551'
 ht-degree: 18%
@@ -48,15 +48,15 @@ livecopy可用來將來源 *分支的內容*** 同步到啟動分支 (以便讓�
 
 若要追蹤您所做的變更，您可以在「參考」中檢視啟動 **** ，並比較啟動頁面與其來源頁面：
 
-1. 在 **網站** 主控台， [導覽至啟動項的來源頁面，並選取一個來源頁面](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
-1. 開啟 **[引用](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)** 面板並選取 **啟動**.
+1. 在 **網站** 主控台， [導覽至啟動項的來源頁面，並選取一個來源頁面](/help/sites-cloud/authoring/basic-handling.md#viewing-and-selecting-resources).
+1. 開啟 **[引用](/help/sites-cloud/authoring/basic-handling.md#references)** 面板並選取 **啟動**.
 1. 選取您的特定啟動，然後 **與來源比較**：
 
    ![比較啟動項和來源](/help/sites-cloud/authoring/assets/launches-compare.png)
 
 1. 兩個頁面（啟動項和來源）會並排開啟。
 
-   如需有關使用此功能的完整資訊，請參閱 [頁面差異](/help/sites-cloud/authoring/features/page-diff.md).
+   如需有關使用此功能的完整資訊，請參閱 [頁面差異](/help/sites-cloud/authoring/sites-console/page-diff.md).
 
 ## 變更使用的來源頁面 {#changing-the-source-pages-used}
 

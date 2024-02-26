@@ -4,7 +4,7 @@ description: 瞭解如何在Adobe Experience Manager as a Cloud Service中設定
 contentOwner: Rick Brough
 role: Admin,User
 exl-id: 8e07bc85-ef26-4df4-8e64-3c69eae91e11
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
 workflow-type: tm+mt
 source-wordcount: '3811'
 ht-degree: 2%
@@ -115,7 +115,7 @@ To migrate any custom viewer presets and configurations that you have created fr
    >新的Dynamic Media組態完成設定時，您會在Experience Manageras a Cloud Service的收件匣內收到狀態通知。
    >
    >此收件匣通知會通知您設定是否成功。
-   > 另請參閱 [疑難排解新的Dynamic Media設定](#troubleshoot-dm-config) 和 [您的收件匣](/help/sites-cloud/authoring/getting-started/inbox.md) 以取得詳細資訊。
+   > 另請參閱 [疑難排解新的Dynamic Media設定](#troubleshoot-dm-config) 和 [您的收件匣](/help/sites-cloud/authoring/inbox.md) 以取得詳細資訊。
 
 1. 為了在發佈Dynamic Media內容之前安全地預覽內容，Experience Manageras a Cloud Service會使用權杖型驗證，因此Experience Manager作者預設會預覽Dynamic Media內容。 不過，您可以 *允許清單* 提供更多IP，讓使用者存取安全地預覽內容。 若要在Experience Manageras a Cloud Service中設定此動作，請參閱 [設定影像伺服器的Dynamic Media發佈設定 — 安全性索引標籤](/help/assets/dynamic-media/dm-publish-settings.md#security-tab). <!-- To securely preview Dynamic Media content before it gets published, you must "allowlist" the Experience Manager as a Cloud Service author instance to connect to Dynamic Media. To set up this action, do the following: -->
 
@@ -139,7 +139,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 
 ![Experience Manager收件匣失敗](/help/assets/dynamic-media/assets/dmconfig-inbox-failure.png)
 
-另請參閱 [您的收件匣](/help/sites-cloud/authoring/getting-started/inbox.md).
+另請參閱 [您的收件匣](/help/sites-cloud/authoring/inbox.md).
 
 **若要疑難排解新的Dynamic Media設定：**
 
@@ -272,7 +272,7 @@ Dynamic Media色彩管理可讓您校正資產的色彩。 透過色彩校正，
    | RGB預設色域 | 預設RGB色彩設定檔的名稱。 |
    | 色彩轉換色彩演算比對方式 | 指定演算色彩比對方式。 可接受的值為： **[!UICONTROL 可感知]**， **[!UICONTROL 相對色度]**， **[!UICONTROL 飽和度]**， **[!UICONTROL 絕對色度]**. Adobe建議 **[!UICONTROL 相對]** 作為預設值。 |
 
-1. 選取&#x200B;**[!UICONTROL 儲存]**。
+1. 選取「**[!UICONTROL 儲存]**」。
 
 例如，您可以將「 **[!UICONTROL RGB預設顏色空間]** 」設 *為sRGB*，將「 **[!UICONTROL CMYK預設顏色空間」設為]**** WebCobatedCholor。
 
@@ -433,7 +433,7 @@ Granite工作流程佇列用於非暫時性工作流程。 在Dynamic Media中�
 
    ![工作處理佇列的設定](assets/chlimage_1-1.jpeg)
 
-1. 選取&#x200B;**[!UICONTROL 儲存]**。
+1. 選取「**[!UICONTROL 儲存]**」。
 
 #### 更新預先定義的Granite暫時工作流程佇列工作者執行緒 {#update-granite-transient-workflow-queue-worker-threads-images}
 
@@ -462,7 +462,7 @@ Granite傳輸工作流程佇列用於 **[!UICONTROL DAM更新資產]** 工作流
 
 ![chlimage_1](assets/chlimage_1.jpeg)
 
-1. 選取&#x200B;**[!UICONTROL 儲存]**。
+1. 選取「**[!UICONTROL 儲存]**」。
 
 #### 更新與Dynamic Media Classic (Scene7)伺服器的最大上傳連線 {#update-max-s7-upload-connections}
 
@@ -485,7 +485,7 @@ Dynamic Media Classic (Scene7)上傳連線設定會將Experience Manager資產�
 
    ![Adobe Scene7上傳服務](assets/chlimage_1-2.jpeg)
 
-1. 選取&#x200B;**[!UICONTROL 儲存]**。
+1. 選取「**[!UICONTROL 儲存]**」。
 
 <!-- NOTE - OBSOLETE that customisations to replication agents to transform content are no longer used; the following content is obsolete now 
 

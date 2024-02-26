@@ -2,7 +2,7 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2021.3.0 版發行說明。'
 description: '"[!DNL Adobe Experience Manager] 2021.3.0版as a Cloud Service發行說明。」'
 exl-id: 0c07364c-ba25-4081-8e35-3c1c84ed556f
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
 source-wordcount: '1271'
 ht-degree: 32%
@@ -27,7 +27,7 @@ ht-degree: 32%
 
 ## [!DNL Adobe Experience Manager Sites] as a Cloud Service {#sites}
 
-* [網站的漸進式網頁應用程式(PWA)版本](/help/sites-cloud/authoring/features/enable-pwa.md) 現在可透過簡易設定在專案層級啟用。
+* [網站的漸進式網頁應用程式(PWA)版本](/help/sites-cloud/authoring/sites-console/enable-pwa.md) 現在可透過簡易設定在專案層級啟用。
 * 內容片段模型延伸功能 — 現在可將多行文字資料型別定義為多欄位清單。
 * 內容片段編輯器UX增強功能 — 巢狀子系片段現在顯示在階層連結中，並改善發佈、儲存和儲存並結束動作的檢視
 
@@ -76,7 +76,7 @@ AEM Forms在多年來已幫助許多組織提供絕佳的上線和註冊體驗�
 
 * 已發行CIF Venia參考網站 — 2021.03.25，其中包含最新CIF核心元件1.9.0版。另請參閱 [CIF Venia參考網站](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.03.25) 以取得更多詳細資料。
 
-* 已發行CIF Core Components v1.9.0。另請參閱 [CIF核心元件](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.9.0) 以取得更多詳細資料。
+* 已發行CIF Core Components v1.9.0。另請參閱 [CIF Core Components](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.9.0) 以取得更多詳細資料。
 
 
 ## Cloud Manager {#cloud-manager}

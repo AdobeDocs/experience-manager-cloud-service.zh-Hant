@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2022.10.0 版發行說明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2022.10.0 版發行說明。'
 exl-id: 8fce7c50-f322-4bcf-bd76-390faedfd5b7
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: 89f23a590338561b4cfeb10b54a260a135ec2f08
 workflow-type: tm+mt
-source-wordcount: '835'
-ht-degree: 78%
+source-wordcount: '833'
+ht-degree: 76%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 78%
 
 ## 發行日期 {#release-date}
 
-[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 目前每月發行 (2022.10.0) 的發行日期是 2022 年 11 月 10 日。 下一個每月發行 (2023.1.0) 計畫於 2023 年 9 月 2 日推出。
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 目前每月發行 (2022.10.0) 的發行日期是 2022 年 11 月 10 日。 下一個每月發行(2023.1.0)計畫於2023年2月9日發行。
 
 ## 發行影片 {#release-video}
 
@@ -36,7 +36,7 @@ ht-degree: 78%
 
 ### [!DNL Sites] 中的新功能 {#sites-features}
 
-* 此 [體驗片段的個人化標籤](/help/sites-cloud/authoring/fundamentals/experience-fragments.md#personalization-experience-fragment) 允許體驗片段編輯器的分段規格功能和建立巢狀體驗片段的靈活性，從而可以為多個片段建立各種不同的頁首和頁尾。 在此功能推出之前，AEM 提供的個人化僅適用於網站頁面，不適用於體驗片段
+* 此 [體驗片段的個人化標籤](/help/sites-cloud/authoring/fragments/content-fragments.md#personalization-experience-fragment) 允許體驗片段編輯器的分段規格功能和建立巢狀體驗片段的靈活性，從而可以為多個片段建立各種不同的頁首和頁尾。 在此功能推出之前，AEM 提供的個人化僅適用於網站頁面，不適用於體驗片段
 
 * [內容片段主控台](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console)現在可讓使用者有效地管理翻譯的內容片段。另外提供一鍵式存取，以便檢視所有語言版本。 使用者也可以依照他們感興趣的地區設定來篩選表格檢視。
 
@@ -63,7 +63,7 @@ ht-degree: 78%
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-### [!DNL Forms] 中可用的新功能 發行前通道 {#prerelease-features-forms}
+### [!DNL Forms] 發行前通道中可用的新功能 {#prerelease-features-forms}
 
 * **最適化Forms範本編輯器**：範本編輯器讓您為組織預先定義最適化Forms的基本結構和外觀。 此版本引進了下列對範本編輯器的改良：
    * **[範本編輯器中的表單資料模型](/help/forms/creating-adaptive-form.md#edit-form-model-properties-of-an-adaptive-form-edit-form-model)**：您可以在範本編輯器中將表單資料模型結構描述關聯到調適型表單範本。它有助於縮短建立調適型表單所需的時間。該選項也以新增至調適型表單編輯器中，讓使用者能夠選取或變更現有表單的表單資料模型。

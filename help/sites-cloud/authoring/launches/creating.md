@@ -2,7 +2,7 @@
 title: 建立啟動
 description: 您可以建立啟動項，以更新現有網頁的新版本，以供日後啟用。
 exl-id: 216ccb7a-1409-4f55-8be2-2b088f91a430
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
 source-wordcount: '1042'
 ht-degree: 13%
@@ -13,7 +13,7 @@ ht-degree: 13%
 
 建立啟動項，以更新現有網頁的新版本，以供日後啟用。 建立啟動項時，您可以指定標題和來源頁面：
 
-* 標題會顯示在 [引用](/help/sites-cloud/authoring/fundamentals/environment-tools.md#references) 邊欄，作者可從中存取縮圖，進而加以處理。
+* 標題會顯示在 [引用](/help/sites-cloud/authoring/sites-console/console-side-panel.md#references) 邊欄，作者可從中存取縮圖，進而加以處理。
 * 預設情況下，啟動會包含來源頁面的子頁面。 您可以視需要使用來源頁面。
 * 根據預設， [即時副本](/help/sites-cloud/administering/msm/overview.md) 當來源頁面變更時，會自動更新啟動頁面。 您可以指定建立靜態副本，以防止自動變更。
 
@@ -27,7 +27,7 @@ ht-degree: 13%
 >
 >無法編輯這些頁面。 您會看到訊息：
 >
->* **此頁面不是啟動項的一部分。前往生產頁面**
+>* **此頁面不是啟動項的一部分。 前往生產頁面**
 
 ## 建立啟動項 {#creating-a-launch}
 
@@ -40,15 +40,15 @@ ht-degree: 13%
    >使用時 **網站** console通常會導覽至來源頁面的位置，但這並非必要操作，因為當您選取 **啟動來源** 在精靈中。
 
 1. 根據您使用的主控台：
-   * **啟動**:
+   * **啟動**：
       1. 選取 **建立啟動項** 以開啟精靈。
-   * **Sites**:
+   * **網站**：
       1. 選取 **建立** 以開啟選取方塊。
       1. 從此選取 **建立啟動項** 以開啟精靈。
 
    >[!NOTE]
    >
-   >在Sites **** Console中，您也可以使用選 [擇模式](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources) ，在選擇「建立」之前選擇 **頁面**。
+   >在Sites **** Console中，您也可以使用選 [擇模式](/help/sites-cloud/authoring/basic-handling.md#viewing-and-selecting-resources) ，在選擇「建立」之前選擇 **頁面**。
    >
    >這會使用選取的頁面作為初始來源頁面。
 
@@ -68,7 +68,7 @@ ht-degree: 13%
 
 1. 對於每個專案，您可以指定是否：
 
-   * **包含子頁面**:
+   * **包含子頁面**：
 
       * 指定您是否要建立具有或不具有子頁面的啟動。  預設會包含此子頁面。
 
@@ -114,7 +114,7 @@ ht-degree: 13%
 >
 >當使用不同的範本時，新頁面會是空的。 由於頁面結構不同，因此不會複製任何內容。
 >
->此機制可用來變更的範本 [現有頁面](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page)  — 雖然必須考量內容遺失。
+>此機制可用來變更的範本 [現有頁面](/help/sites-cloud/authoring/sites-console/creating-pages.md#creating-a-new-page)  — 雖然必須考量內容遺失。
 
 ### 建立巢狀啟動 {#creating-a-nested-launch}
 

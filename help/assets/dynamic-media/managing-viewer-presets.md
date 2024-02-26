@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Viewer Presets,Viewers
 role: User
 exl-id: da2e1a10-f54b-440e-b70c-f04ad4caeac1
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
 source-wordcount: '4326'
 ht-degree: 8%
@@ -114,7 +114,7 @@ Dynamic Media隨附的所有現成可用的檢視器預設集都與下列系統�
    <td><p>「全景影像」和「全景VR」檢視器可呈現球狀全景影像，讓使用者沈浸在房間、屬性、位置或橫向的360度檢視體驗中。</p> <p>若要讓上傳的影像符合球面全景的條件，該影像必須具備下列其中一項或兩項：</p>
     <ul>
      <li>外觀比例為2:1。</li>
-     <li>以關鍵字標籤 <code>equirectangular</code>，或 <code>spherical</code> 和 <code>panorama</code>，或 <code>spherical </code>和 <code>panoramic</code>. 另請參閱 <a href="/help/sites-cloud/authoring/features/tags.md">使用標籤</a>.</li>
+     <li>以關鍵字標籤 <code>equirectangular</code>，或 <code>spherical</code> 和 <code>panorama</code>，或 <code>spherical </code>和 <code>panoramic</code>. 另請參閱 <a href="/help/sites-cloud/authoring/sites-console/tags.md">使用標籤</a>.</li>
     </ul> <p>外觀比例和關鍵字條件都適用於資產詳細資料頁面和「全景媒體」WCM元件的全景資產。</p></td>
   </tr>
     <tr>
@@ -330,7 +330,7 @@ Dynamic Media隨附的所有現成可用的檢視器預設集都與下列系統�
    <td><p>Pans</p> </td>
   </tr>
   <tr>
-   <td><p><strong>選擇</strong></p> </td>
+   <td><p><strong>選取</strong></p> </td>
    <td><p>顯示彈出式視窗</p> </td>
    <td><p>顯示或隱藏使用者介面</p> </td>
    <td><p>顯示或隱藏使用者介面</p> </td>

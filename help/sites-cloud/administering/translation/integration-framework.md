@@ -4,10 +4,10 @@ description: 瞭解如何設定翻譯整合框架以與協力廠商翻譯服務�
 feature: Language Copy
 role: Admin
 exl-id: 6e74cdee-7965-4087-a733-e9d81c4aa7c2
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
-source-wordcount: '1499'
-ht-degree: 8%
+source-wordcount: '1465'
+ht-degree: 10%
 
 ---
 
@@ -67,12 +67,12 @@ ht-degree: 8%
 >
 >如需AEM內容翻譯功能的總覽，請參閱 [翻譯多語言網站的內容](overview.md).
 
-架構的單一設定可控制頁面內容和資產的翻譯方式。 若要建立翻譯組態：
+架構的單一設定可控制頁面內容和資產的翻譯方式。 若要建立翻譯設定：
 
-1. 在 [全域導覽功能表、](/help/sites-cloud/authoring/getting-started/basic-handling.md#global-navigation) 選取 **「工具>Cloud Service與翻譯Cloud Service」**.
-1. 導覽至您要在內容結構中建立設定的位置。 這通常以特定網站為基礎，或可能是全域的。
+1. 在 [全域導覽功能表、](/help/sites-cloud/authoring/basic-handling.md#global-navigation) 選取 **「工具>Cloud Service與翻譯Cloud Service」**.
+1. 導覽至您要在內容結構中建立設定的位置。這通常以特定網站為基礎，或可能是全域的。
 1. 在欄位中提供下列資訊，然後選取 **建立**.：
-   1. 在下拉選單中選取&#x200B;**設定類型**。
+   1. 選取 **設定型別** 位於下拉式清單中。
    1. 輸入設定的&#x200B;**標題**。**標題**&#x200B;會識別&#x200B;**雲端服務**&#x200B;主控台和頁面屬性下拉清單中的設定。
    1. 或者，輸入&#x200B;**名稱**&#x200B;以用於儲存設定的存放庫節點。
 1. 在 **編輯設定** 視窗中，設定以下專案的屬性： **網站** 和 **資產** 索引標籤，然後選取 **儲存並關閉**.
@@ -129,15 +129,15 @@ ht-degree: 8%
 將頁面與您用來翻譯頁面和後代頁面的翻譯提供者建立關聯。
 
 1. 在網站主控台中，選取要設定的頁面，然後選取 **檢視屬性**.
-1. 選取 **Cloud Service** 標籤。
+1. 選取「**雲端服務**」標籤。
 1. 在 **新增設定** 從下拉式清單中選取組態。
-1. 選取 **儲存並關閉**.
+1. 選取「**儲存並關閉**」。
 
 ### 將頁面與翻譯整合框架建立關聯 {#associating-pages-with-a-translation-integration-framework}
 
 將頁面與定義您要如何執行頁面和後代頁面翻譯的翻譯整合框架建立關聯。
 
 1. 在網站主控台中，選取要設定的頁面，然後選取 **檢視屬性**.
-1. 選取 **Cloud Service** 標籤。
+1. 選取「**雲端服務**」標籤。
 1. 在 **新增設定** 從下拉式清單中選取組態。
-1. 選取 **儲存並關閉**.
+1. 選取「**儲存並關閉**」。

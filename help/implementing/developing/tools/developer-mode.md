@@ -4,16 +4,16 @@ seo-title: Developer Mode
 description: 開發人員模式會開啟一個側面板，其中包含數個標籤，為開發人員提供目前頁面的相關資訊
 seo-description: Developer mode opens a side panel with several tabs that provide a developer with information about the current page
 exl-id: fbf11c0f-dc6e-43f3-bcf2-080eacc6ba99
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
 workflow-type: tm+mt
 source-wordcount: '527'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
 # 開發人員模式 {#developer-mode}
 
-在AEM中編輯頁面時，有數個 [模式](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) 都可使用，包括開發人員模式。 開發人員模式會開啟一個側面板，其中包含數個標籤，為開發人員提供有關目前頁面的技術資訊。
+在AEM中編輯頁面時，有數個 [模式](/help/sites-cloud/authoring/sites-console/introduction.md#page-modes) 都可使用，包括開發人員模式。 開發人員模式會開啟一個側面板，其中包含數個標籤，為開發人員提供有關目前頁面的技術資訊。
 
 有兩個標籤：
 
@@ -27,7 +27,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->開發人員模式:
+>開發人員模式：
 >
 >* 在行動裝置或桌上型電腦的小型視窗上無法使用（由於空間限制）。
 >  * 當寬度小於1024畫素時，就會發生這種情況。
@@ -41,7 +41,7 @@ ht-degree: 1%
 
 面板分為兩個標籤：
 
-* **[元件](#components)**  — 這個選項會顯示元件樹，類似於 [內容樹狀結構](/help/sites-cloud/authoring/fundamentals/environment-tools.md#content-tree) 作者
+* **[元件](#components)**  — 這個選項會顯示元件樹，類似於 [內容樹狀結構](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#content-tree) 作者
 * **[錯誤](#errors)**  — 發生問題時，會顯示每個元件的詳細資料。
 
 ### 元件標籤 {#components}
@@ -55,7 +55,7 @@ ht-degree: 1%
 * 可讓您展開樹狀結構並選取樹狀結構中的特定元件。 選取範圍提供元件詳細資料的存取權，例如：
    * 存放庫路徑
    * 指令碼連結(在CRXDE Lite中存取)
-   * 元件詳細資訊，如 [元件主控台](/help/sites-cloud/authoring/features/components-console.md)
+   * 元件詳細資訊，如 [元件主控台](/help/sites-cloud/authoring/components-console.md)
 * 在編輯器中選取的元件會以藍色邊框表示。
 
 此元件標籤有助於：
@@ -72,11 +72,11 @@ ht-degree: 1%
    * 用於呈現元件的所有元件指令碼。
    * 此特定元件的存放庫內容路徑。
 
-     ![檢視詳情](assets/developer-mode-view-details.png)
+     ![檢視詳細資料](assets/developer-mode-view-details.png)
 
 * **編輯指令碼：** 以CRXDE Lite開啟元件指令碼的連結。
 
-* **檢視元件詳細資訊：** 在中開啟元件的詳細資訊。 [元件主控台](/help/sites-cloud/authoring/features/components-console.md).
+* **檢視元件詳細資訊：** 在中開啟元件的詳細資訊。 [元件主控台](/help/sites-cloud/authoring/components-console.md).
 
 點選或按一下>形箭號來展開元件專案也可顯示：
 

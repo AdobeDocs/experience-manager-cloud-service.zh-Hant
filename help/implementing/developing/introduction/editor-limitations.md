@@ -2,16 +2,16 @@
 title: 編輯器限制
 description: 觸控式UI中的編輯器會使用覆蓋來與受限於iframe中的內容互動。 這個互動會對編輯器的使用以及開發人員造成一些限制。
 exl-id: 6a4f0e43-1076-4da9-95dc-9c5bf83e30d0
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
-source-wordcount: '313'
-ht-degree: 10%
+source-wordcount: '315'
+ht-degree: 6%
 
 ---
 
 # 編輯器限制 {#editor-limitations}
 
-觸控式UI中的編輯器會使用覆蓋來與受限於iframe中的內容互動。 這個互動會對編輯器的使用以及開發人員造成一些限制。本頁面會概述這些限制，並儘可能提供解決方案或因應措施。
+觸控式UI中的編輯器會使用覆蓋來與受限於iframe中的內容互動。 此互動會對編輯器的使用以及開發人員造成一些限制。 本頁面會概述這些限制，並儘可能提供解決方案或因應措施。
 
 ## 功能限制 {#functional-limitations}
 
@@ -19,9 +19,9 @@ ht-degree: 10%
 
 ### 連結未啟用 {#links-not-active}
 
-時間 [編輯頁面](/help/sites-cloud/authoring/fundamentals/editing-content.md)，連結未啟用。
+時間 [編輯頁面](/help/sites-cloud/authoring/page-editor/edit-content.md)，連結未啟用。
 
-* [切換至 **預覽** 模式](/help/sites-cloud/authoring/fundamentals/editing-content.md#preview-mode) 以使用內容中的連結進行導覽。
+* [切換至 **預覽** 模式](/help/sites-cloud/authoring/page-editor/introduction.md#preview-mode) 以使用內容中的連結進行導覽。
 
 ### 結構頁面 {#structure-pages}
 

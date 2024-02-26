@@ -2,7 +2,7 @@
 title: 使用任務
 description: 任務表示在內容上要完成的工作專案，並用於專案中以決定目前任務的完整度等級
 exl-id: 66f95a1f-34d0-4e2e-aa8c-addc2029a1d9
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
 workflow-type: tm+mt
 source-wordcount: '573'
 ht-degree: 10%
@@ -45,7 +45,7 @@ ht-degree: 10%
 
 ![任務清單](/help/sites-cloud/authoring/assets/projects-task-list.png)
 
-#### 任務詳細資料 {#task-details}
+#### 工作詳細資訊 {#task-details}
 
 如需特定工作的詳細資訊，請在工作清單中選取工作並 **開啟**.
 
@@ -68,7 +68,7 @@ ht-degree: 10%
 
    ![新增任務](/help/sites-cloud/authoring/assets/projects-add-task.png)
 
-1. 選擇 **建立**。
+1. 選取「**建立**」。
 
 ## 使用收件匣中的任務 {#working-with-tasks-in-the-inbox}
 
@@ -76,6 +76,6 @@ ht-degree: 10%
 
 ![收件匣中的任務](/help/sites-cloud/authoring/assets/projects-task-inbox.png)
 
-若要完成任務，請選取任務並按一下 **完成**. 將資訊新增至工作，然後按一下 **完成**. 另請參閱 [您的收件匣](/help/sites-cloud/authoring/getting-started/inbox.md) 以取得詳細資訊。
+若要完成任務，請選取任務並按一下 **完成**. 將資訊新增至工作，然後按一下 **完成**. 另請參閱 [您的收件匣](/help/sites-cloud/authoring/inbox.md) 以取得詳細資訊。
 
 ![任務通知](/help/sites-cloud/authoring/assets/projects-task-notifications.png)

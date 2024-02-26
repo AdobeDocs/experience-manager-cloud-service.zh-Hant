@@ -2,10 +2,10 @@
 title: 中繼資料 — 片段屬性（資產 — 內容片段）
 description: 瞭解如何檢視和編輯內容片段的中繼資料屬性。
 exl-id: bc67480d-a1e4-4ef9-b811-8bd110f70369
-source-git-commit: ceab75d3592a461478da3250a41ce00b6d4f31ef
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
 source-wordcount: '274'
-ht-degree: 2%
+ht-degree: 6%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->內容片段是Sites功能，但儲存為 **資產**.
+>內容片段是 Sites 的一項功能，但儲存為&#x200B;**資產**。
 >
 >編寫內容片段有兩個編輯器。 本節介紹原始編輯器，主要透過以下網址存取： **資產** 主控台。 請參閱網站檔案， [內容片段 — 製作](/help/sites-cloud/administering/content-fragments/authoring.md)，以取得新編輯器的詳細資訊(主要透過以下網址存取： **內容片段** 主控台)。
 
@@ -37,8 +37,8 @@ ht-degree: 2%
    * **內容片段模型** 表示用於建立目前片段的模式
    * **標題**
    * **說明**
-   * **標記**
-      * [標籤](/help/sites-cloud/authoring/features/tags.md) 在組織片段時可發揮強大功能，因為其可用於內容分類和分類法。 標籤可用於尋找內容（依標籤）及套用大量作業。
+   * **標籤**
+      * [標籤](/help/sites-cloud/authoring/sites-console/tags.md) 在組織片段時可發揮強大功能，因為其可用於內容分類和分類法。 標籤可用於尋找內容（依標籤）及套用大量作業。
 例如，您可以將相關片段標籤為「聖誕節啟動」，以僅允許作為子集瀏覽這些片段，或複製這些片段以供日後在新資料夾中再次啟動時使用。
 
         >[!NOTE]

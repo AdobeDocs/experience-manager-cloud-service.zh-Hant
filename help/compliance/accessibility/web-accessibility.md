@@ -2,9 +2,9 @@
 title: Adobe Experience Manager as a Cloud Service 與網路無障礙指引
 description: Adobe Experience Manager as a Cloud Service 與網路無障礙指引簡介
 exl-id: ad7627cd-3c97-47b7-8a13-0aae39aa8169
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
-source-wordcount: '384'
+source-wordcount: '369'
 ht-degree: 100%
 
 ---
@@ -45,7 +45,7 @@ WCAG 2.1 提供的[指引 (及相關成功標準) 說明了無障礙環境等級
 
 * 我們的 [WCAG 2.1 快速指南](/help/compliance/accessibility/quick-guide-wcag.md)中會強調說明 WCAG 2.1 的特定層面。
 
-* [建立無障礙內容](/help/sites-cloud/authoring/fundamentals/accessible-content.md)會詳細說明這些層面與 AEM 的相關性。
+* [建立無障礙內容](/help/sites-cloud/authoring/page-editor/accessible-content.md)會詳細說明這些層面與 AEM 的相關性。
 
 >[!NOTE]
 >

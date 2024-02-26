@@ -2,10 +2,10 @@
 title: 了解如何在 AEM 中建立內容片段模型
 description: 了解使用內容片段模型建立 Headless CMS 內容模型的概念和機制。
 exl-id: fdfa79d3-fbed-4467-a898-c1b2678fc0cb
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
 workflow-type: tm+mt
 source-wordcount: '686'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -39,7 +39,7 @@ At the very start you need to enable Content Fragment Models for your site, this
 
 ## 建立內容片段模型 {#creating-content-fragment-models}
 
-然後可以建立內容片段模型並定義結構。您可以透過以下步驟完成這項操作： **工具** > **一般** > **內容片段模型**.
+然後可以建立內容片段模型並定義結構。此操作可以在「**工具** >**一般** > **內容片段模型**」下完成。
 
 ![工具中的內容片段模型](assets/cfm-tools.png)
 
@@ -108,9 +108,9 @@ At the very start you need to enable Content Fragment Models for your site, this
 
 ## 其他資源 {#additional-resources}
 
-* [製作概念](/help/sites-cloud/authoring/getting-started/concepts.md)
+* [製作概念](/help/sites-cloud/authoring/author-publish.md)
 
-* [基本處理](/help/sites-cloud/authoring/getting-started/basic-handling.md) - 此頁面主要基於 **Sites** 主控台，但許多/大多數功能也與導覽至&#x200B;**一般**&#x200B;主控台下&#x200B;**內容片段模型**&#x200B;及對其採取行動相關。
+* [基本處理](/help/sites-cloud/authoring/basic-handling.md) - 此頁面主要基於 **Sites** 主控台，但許多/大多數功能也與導覽至&#x200B;**一般**&#x200B;主控台下&#x200B;**內容片段模型**&#x200B;及對其採取行動相關。
 
 * [使用內容片段](/help/sites-cloud/administering/content-fragments/overview.md)
 

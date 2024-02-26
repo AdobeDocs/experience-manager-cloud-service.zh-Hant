@@ -4,7 +4,7 @@ description: 瞭解Live Copy概述主控台的基本知識，以便快速瞭解�
 feature: Multi Site Manager
 role: Admin
 exl-id: 3ef7fbce-10a1-4b21-8486-d3c3706e537c
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
 source-wordcount: '729'
 ht-degree: 88%
@@ -32,8 +32,8 @@ ht-degree: 88%
 
 **Live Copy 概觀**&#x200B;可以從 **Sites** 主控台的&#x200B;**參考**&#x200B;側面板開啟：
 
-1. 在 **網站** 主控台， [導覽至您的Blueprint頁面並加以選取](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
-1. 開啟&#x200B;**[參考](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)**&#x200B;邊欄並選擇 **Live Copy**。
+1. 在 **網站** 主控台， [導覽至您的Blueprint頁面並加以選取](/help/sites-cloud/authoring/basic-handling.md#viewing-and-selecting-resources).
+1. 開啟&#x200B;**[參考](/help/sites-cloud/authoring/basic-handling.md#references)**&#x200B;邊欄並選擇 **Live Copy**。
 
    ![來自參考邊欄的 Live Copy](../assets/live-copy-references.png)
 

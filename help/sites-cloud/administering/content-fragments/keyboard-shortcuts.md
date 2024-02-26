@@ -4,7 +4,7 @@ description: AEM提供各種鍵盤快速鍵，包括管理內容片段的選項�
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: 24eefa31-4081-4b4a-af98-c6299b213cea
-source-git-commit: 19685cb952a890731bd7d75a2adf3cfd841a465f
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
 source-wordcount: '223'
 ht-degree: 3%
@@ -15,7 +15,7 @@ ht-degree: 3%
 
 您可在內容片段主控台中使用一系列鍵盤快速鍵。
 
-AEM提供各種鍵盤快速鍵。 部分適用於以下情況 [編輯頁面](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md)，其他人員移至 [主控台的一般用途](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md).
+AEM提供各種鍵盤快速鍵。 部分適用於以下情況 [編輯頁面](/help/sites-cloud/authoring/page-editor/keyboard-shortcuts.md)，其他人員移至 [主控台的一般用途](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md).
 
 >[!NOTE]
 >
@@ -38,11 +38,11 @@ AEM提供各種鍵盤快速鍵。 部分適用於以下情況 [編輯頁面](/he
 | 選取一或多個內容片段 | `u` | 開啟「立即取消發佈」對話方塊 |
 | 任何開啟的對話方塊 | `esc` | 對話方塊已關閉 |
 
-案頭使用者也可以使用各種鍵盤快速鍵。 部分適用於以下情況 [編輯頁面](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md)，其他至一般 [使用主控台](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md).
+案頭使用者也可以使用各種鍵盤快速鍵。 部分適用於以下情況 [編輯頁面](/help/sites-cloud/authoring/page-editor/keyboard-shortcuts.md)，其他至一般 [使用主控台](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md).
 
 >[!NOTE]
 >
->編輯器鍵盤快速鍵一律為作用中 [主控台捷徑已停用](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md#deactivating-keyboard-shortcuts).
+>編輯器鍵盤快速鍵一律為作用中 [主控台捷徑已停用](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md#deactivating-keyboard-shortcuts).
 
 ## 作業系統特定修飾元鍵 {#os-specific-modifier-keys}
 

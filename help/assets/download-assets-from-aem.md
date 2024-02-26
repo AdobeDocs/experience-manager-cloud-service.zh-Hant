@@ -5,7 +5,7 @@ contentOwner: Vishabh Gupta
 feature: Asset Management
 role: User
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
 workflow-type: tm+mt
 source-wordcount: '1329'
 ht-degree: 3%
@@ -42,7 +42,7 @@ ht-degree: 3%
 
 Experience Manager會根據資產數量和大小最佳化下載體驗。 從使用者介面即時下載較小的檔案。 [!DNL Experience Manager] 直接下載原始檔案的單一資產請求，而非將單一資產封存在ZIP封存檔中，以便更快進行下載。 Experience Manager支援大量非同步要求的下載。 大於100 GB的下載請求會分割為多個ZIP封存檔，每個封存檔的大小上限為100 MB。
 
-根據預設， [!DNL Experience Manager] 在中觸發通知 [[!DNL Experience Manager] 收件匣](/help/sites-cloud/authoring/getting-started/inbox.md) 產生下載封存時。
+根據預設， [!DNL Experience Manager] 在中觸發通知 [[!DNL Experience Manager] 收件匣](/help/sites-cloud/authoring/inbox.md) 產生下載封存時。
 
 ![收件匣通知](assets/inbox-notification-for-large-downloads.png)
 

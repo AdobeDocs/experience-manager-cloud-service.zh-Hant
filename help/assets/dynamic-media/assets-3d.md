@@ -8,7 +8,7 @@ content-type: reference
 feature: 3D Assets
 role: User
 exl-id: 82084ba7-1302-4cbd-8626-d77b3aaa4ed1
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
 source-wordcount: '2252'
 ht-degree: 2%
@@ -247,7 +247,7 @@ Dynamic Media接受以下支援的各種3D檔案格式 *靜態內容* 在Dynamic
 
 另請參閱 [發佈Dynamic Media資產](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
 
-另請參閱 [發佈頁面](/help/sites-cloud/authoring/fundamentals/publishing-pages.md).
+另請參閱 [發佈頁面](/help/sites-cloud/authoring/sites-console/publishing-pages.md).
 
 **若要發佈靜態Dynamic Media 3D資產：**
 

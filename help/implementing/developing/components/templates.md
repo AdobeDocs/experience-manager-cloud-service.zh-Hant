@@ -2,7 +2,7 @@
 title: 頁面範本
 description: 建立作為新頁面基礎的頁面時，會使用頁面範本
 exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: a868bf4d4acf4fbae7ccaf55b03319ba0617f9a4
 workflow-type: tm+mt
 source-wordcount: '3267'
 ht-degree: 1%
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 建立頁面時，您需要選取範本。 頁面範本會用作新頁面的基礎。 範本會定義結果頁面的結構、任何初始內容以及可以使用的元件（設計屬性）。 這具備數個優點：
 
-* 頁面範本可讓專業作者執行以下作業 [建立和編輯範本](/help/sites-cloud/authoring/features/templates.md).
+* 頁面範本可讓專業作者執行以下作業 [建立和編輯範本](/help/sites-cloud/authoring/sites-console/templates.md).
    * 這類專業作者稱為 **範本作者**
    * 範本作者必須是 `template-authors` 群組。
 * 頁面範本會保留與任何由其建立之頁面的動態連線。 這可確保對範本所做的任何變更都會反映在頁面本身中。
@@ -30,7 +30,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->本檔案假設您已熟悉建立和編輯範本。 請參閱撰寫檔案 [建立頁面範本](/help/sites-cloud/authoring/features/templates.md)，其中會詳細說明向範本作者公開的可編輯範本的功能。
+>本檔案假設您已熟悉建立和編輯範本。 請參閱撰寫檔案 [建立頁面範本](/help/sites-cloud/authoring/sites-console/templates.md)，其中會詳細說明向範本作者公開的可編輯範本的功能。
 
 >[!TIP]
 >
@@ -38,7 +38,7 @@ ht-degree: 1%
 
 ## 建立新範本 {#creating-a-new-template}
 
-建立頁面範本主要使用 [範本主控台與範本編輯器](/help/sites-cloud/authoring/features/templates.md) 由範本作者執行。 本節提供此程式的概述，並接著說明在技術層級進行的工作。
+建立頁面範本主要使用 [範本主控台與範本編輯器](/help/sites-cloud/authoring/sites-console/templates.md) 由範本作者執行。 本節提供此程式的概述，並接著說明在技術層級進行的工作。
 
 建立可編輯的範本時，您可以：
 
@@ -58,7 +58,7 @@ ht-degree: 1%
    * 如果您希望頁面作者能夠新增和移除元件，請新增段落系統至範本。
    * 您可以解鎖元件，然後再將其鎖定，以便定義初始內容。
 
-   如需範本作者如何定義結構的詳細資訊，請參閱 [建立頁面範本](/help/sites-cloud/authoring/features/templates.md#editing-a-template-structure-template-author).
+   如需範本作者如何定義結構的詳細資訊，請參閱 [建立頁面範本](/help/sites-cloud/authoring/sites-console/templates.md#editing-a-template-structure-template-author).
 
    有關結構的技術細節，請參閱 [結構](#structure) （在此檔案中）。
 
@@ -70,7 +70,7 @@ ht-degree: 1%
 
    * 這些適用於範本（以及使用範本建立的頁面）。
 
-   如需範本作者如何定義原則的詳細資訊，請參閱 [建立頁面範本](/help/sites-cloud/authoring/features/templates.md#editing-a-template-structure-template-author).
+   如需範本作者如何定義原則的詳細資訊，請參閱 [建立頁面範本](/help/sites-cloud/authoring/sites-console/templates.md#editing-a-template-structure-template-author).
 
    如需原則的技術詳細資訊，請參閱 [內容原則](#content-policies) （在此檔案中）。
 
@@ -79,7 +79,7 @@ ht-degree: 1%
    * 初始內容定義首次根據範本建立頁面時顯示的內容。
    * 然後，頁面作者可以編輯初始內容。
 
-   如需範本作者如何定義結構的詳細資訊，請參閱 [建立頁面範本](/help/sites-cloud/authoring/features/templates.md#editing-a-template-initial-content-author).
+   如需範本作者如何定義結構的詳細資訊，請參閱 [建立頁面範本](/help/sites-cloud/authoring/sites-console/templates.md#editing-a-template-initial-content-author).
 
    如需初始內容的技術細節，請參閱 [初始內容](#initial-content) （在此檔案中）。
 
@@ -88,7 +88,7 @@ ht-degree: 1%
    * 您可以為一系列裝置定義範本配置。
    * 範本的回應式版面運作方式與頁面製作相同。
 
-   如需範本作者如何定義範本配置的詳細資訊，請參閱 [建立頁面範本](/help/sites-cloud/authoring/features/templates.md#editing-a-template-layout-template-author).
+   如需範本作者如何定義範本配置的詳細資訊，請參閱 [建立頁面範本](/help/sites-cloud/authoring/sites-console/templates.md#editing-a-template-layout-template-author).
 
    如需範本配置的技術詳細資訊，請參閱 [版面](#layout) （在此檔案中）。
 
@@ -97,7 +97,7 @@ ht-degree: 1%
    * 您可以啟用或停用範本，讓頁面作者可以使用或無法使用此範本。
    * 範本可以供某些頁面分支使用或無法使用。
 
-   如需範本作者如何啟用範本的詳細資訊，請參閱 [建立頁面範本](/help/sites-cloud/authoring/features/templates.md#enabling-and-allowing-a-template-template-author).
+   如需範本作者如何啟用範本的詳細資訊，請參閱 [建立頁面範本](/help/sites-cloud/authoring/sites-console/templates.md#enabling-and-allowing-a-template-template-author).
 
    如需啟用範本的技術詳細資訊，請參閱 [啟用和允許範本給我們](#enabling-and-allowing-a-template-for-use)e在此檔案中
 
@@ -106,7 +106,7 @@ ht-degree: 1%
    * 使用範本建立頁面時，靜態範本和可編輯範本之間沒有可見的差異和指示。
    * 對於頁面作者，程式是透明的。
 
-   如需頁面作者如何使用範本建立頁面的詳細資訊，請參閱 [建立及組織頁面](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#templates).
+   如需頁面作者如何使用範本建立頁面的詳細資訊，請參閱 [建立及組織頁面](/help/sites-cloud/authoring/sites-console/organizing-pages.md#templates).
 
    如需有關使用可編輯範本建立頁面的技術詳細資訊，請參閱 [產生的內容頁面](#resultant-content-pages) （在此檔案中）。
 
@@ -355,7 +355,7 @@ When creating an editable template, the value is copied from the template type t
 
 如果您已建立可作為其他範本基礎的範本，則可以複製此範本作為範本型別。
 
-1. 建立範本，就像建立任何頁面範本一樣 [如此處的紀錄](/help/sites-cloud/authoring/features/templates.md#creating-a-new-template-template-author)，這會作為範本型別的基礎。
+1. 建立範本，就像建立任何頁面範本一樣 [如此處的紀錄](/help/sites-cloud/authoring/sites-console/templates.md#creating-a-new-template-template-author)，這會作為範本型別的基礎。
 1. 使用CRXDE Lite，複製建立的範本，從 `templates` 節點至 `template-types` 下的節點 [範本資料夾](#template-folders).
 1. 從刪除範本 `templates` 下的節點 [範本資料夾](#template-folders).
 1. 在「 」下範本的副本中 `template-types` 節點，全部刪除 `cq:template` 和 `cq:templateType` 全部屬性 `jcr:content` 節點。
@@ -453,7 +453,7 @@ GITHUB上的程式碼
 
 ### 版面配置 {#layout}
 
-時間 [編輯範本您可以定義版面](/help/sites-cloud/authoring/features/templates.md)，此會使用 [標準回應式佈局](/help/sites-cloud/authoring/features/responsive-layout.md).
+時間 [編輯範本您可以定義版面](/help/sites-cloud/authoring/sites-console/templates.md)，此會使用 [標準回應式佈局](/help/sites-cloud/authoring/page-editor/responsive-layout.md).
 
 <!-- that can also be [configured](/help/sites-administering/configuring-responsive-layout.md). -->
 
@@ -484,7 +484,7 @@ GITHUB上的程式碼
 
    使用範本之前，必須透過以下任一方式啟用它：
 
-   * [啟用範本](/help/sites-cloud/authoring/features/templates.md) 從 **範本** 主控台。
+   * [啟用範本](/help/sites-cloud/authoring/sites-console/templates.md) 從 **範本** 主控台。
 
    * 在上設定狀態屬性 `jcr:content` 節點。
 
@@ -499,7 +499,7 @@ GITHUB上的程式碼
 
 1. **允許的範本**
 
-   * [在上定義允許的範本路徑 **頁面屬性**](/help/sites-cloud/authoring/features/templates.md#allowing-a-template-author) 子分支的適當頁面或根頁面的。
+   * [在上定義允許的範本路徑 **頁面屬性**](/help/sites-cloud/authoring/sites-console/templates.md#allowing-a-template-author) 子分支的適當頁面或根頁面的。
    * 設定屬性：
      `cq:allowedTemplates`
 在 `jcr:content` 必要分支的節點。

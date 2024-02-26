@@ -5,10 +5,10 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: 9bfc3995-ac8e-488e-b68f-9e1b5b4a3176
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
 source-wordcount: '1391'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -47,7 +47,7 @@ ht-degree: 99%
 
 >[!TIP]
 >
->如果您不熟悉使用 AEM 等大型 CMS，請考慮查閱[基本處理](/help/sites-cloud/authoring/getting-started/basic-handling.md)文件再繼續進行。「基本處理」文件不是歷程的一部分。因此，請在完成後返回此頁面。
+>如果您不熟悉使用 AEM 等大型 CMS，請考慮查閱[基本處理](/help/sites-cloud/authoring/basic-handling.md)文件再繼續進行。「基本處理」文件不是歷程的一部分。因此，請在完成後返回此頁面。
 
 ### 工具 {#tools}
 
@@ -101,7 +101,7 @@ Sites 主控台讓您導覽內容並提供其結構的概觀。要查看單一�
 
    ![選取要編輯的頁面](assets/sites-editor-select-page.png)
 
-1. 選取 **編輯** 工具列中的選項。
+1. 選取工具列中的「**編輯**」選項。
 1. 網站編輯器將開啟並載入選定的頁面，以便在新的瀏覽器分頁中進行編輯。
 1. 將滑鼠懸停在內容上方或點選內容會顯示各個組件的選擇器。元件是構成頁面的拖放式建構元件。
 
@@ -207,7 +207,7 @@ AEM 的內容由其結構驅動。AEM 對內容結構的要求很少，但在規
 
 雖然建議您查閱文件[設定翻譯連接器](configure-connector.md)來繼續翻譯歷程的下個部分，以下也有一些其他選擇性資源，協助深入瞭解本文件提及的一些概念，但是這些並非繼續執行歷程的必要條件。
 
-* [AEM 基本處理](/help/sites-cloud/authoring/getting-started/basic-handling.md) - 了解 AEM UI 的基本知識，以便能夠輕鬆導覽和執行基本任務，例如尋找您的內容。
+* [AEM 基本處理](/help/sites-cloud/authoring/basic-handling.md) - 了解 AEM UI 的基本知識，以便能夠輕鬆導覽和執行基本任務，例如尋找您的內容。
 * [識別要翻譯的內容](/help/sites-cloud/administering/translation/rules.md) - 了解翻譯規則如何識別需要翻譯的內容。
 * [設定翻譯整合框架](/help/sites-cloud/administering/translation/integration-framework.md) - 了解如何設定翻譯整合框架以與協力廠商翻譯服務整合。
 * [管理翻譯專案](/help/sites-cloud/administering/translation/managing-projects.md) - 了解如何在 AEM 中建立和管理機器和人工翻譯專案。

@@ -4,7 +4,7 @@ description: 瞭解如何使用工作流程主控台管理工作流程例項
 feature: Administering
 role: Admin
 exl-id: d2adb5e8-3f0e-4a3b-b7d0-dbbc5450e45f
-source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
 source-wordcount: '1286'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 工作流程主控台提供了幾個用於管理工作流程執行個體的工具，以確保它們按預期執行。
 
-有一系列的主控台可用來管理工作流程。 使用 [全域導覽](/help/sites-cloud/authoring/getting-started/basic-handling.md#global-navigation) 以開啟 **工具** 窗格，然後選取 **工作流程**：
+有一系列的主控台可用來管理工作流程。 使用 [全域導覽](/help/sites-cloud/authoring/basic-handling.md#global-navigation) 以開啟 **工具** 窗格，然後選取 **工作流程**：
 
 * **模型**：管理工作流程定義
 * **例項**：檢視及管理執行中的工作流程例項

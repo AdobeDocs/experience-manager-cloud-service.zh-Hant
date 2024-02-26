@@ -2,10 +2,10 @@
 title: 自訂和擴充內容片段
 description: 內容片段可擴充標準資產。 瞭解如何自訂。
 exl-id: 58152d6e-21b6-4f45-a45c-0f46ee58825e
-source-git-commit: 78ead5f15c2613d9c3bed3025b43423a66805c59
+source-git-commit: 89f23a590338561b4cfeb10b54a260a135ec2f08
 workflow-type: tm+mt
-source-wordcount: '1782'
-ht-degree: 2%
+source-wordcount: '1689'
+ht-degree: 1%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 2%
 
 在Adobe Experience Manager as a Cloud Service中，內容片段會擴充標準資產；請參閱：
 
-* [建立和管理內容片段](/help/sites-cloud/administering/content-fragments/overview.md) 和 [使用內容片段編寫頁面](/help/sites-cloud/authoring/fundamentals/content-fragments.md) 以取得有關內容片段的進一步資訊。
+* [建立和管理內容片段](/help/sites-cloud/administering/content-fragments/overview.md) 和 [使用內容片段編寫頁面](/help/sites-cloud/authoring/fragments/content-fragments.md) 以取得有關內容片段的進一步資訊。
 
 * [管理資產](/help/assets/manage-digital-assets.md) 以取得標準資產的詳細資訊。
 
@@ -96,7 +96,7 @@ ht-degree: 2%
 >
 >此 [內容片段元件是核心元件的一部分](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html). 另請參閱 [開發核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html) 以取得更多詳細資料。
 
-內容片段可以從AEM頁面引用，就像任何其他資產型別一樣。 AEM提供 **[內容片段核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html)** - a [可讓您在頁面上包含內容片段的元件](/help/sites-cloud/authoring/fundamentals/content-fragments.md#adding-a-content-fragment-to-your-page). 您也可以擴充此 **[內容片段](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html)** 核心元件。
+內容片段可以從AEM頁面引用，就像任何其他資產型別一樣。 AEM提供 **[內容片段核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html)** - a [可讓您在頁面上包含內容片段的元件](/help/sites-cloud/authoring/fragments/content-fragments.md#adding-a-content-fragment-to-your-page). 您也可以擴充此 **[內容片段](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html)** 核心元件。
 
 * 元件使用 `fragmentPath` 屬性以參考實際內容片段。 此 `fragmentPath` 屬性的處理方式與其他資產型別的類似屬性相同；例如，將內容片段移至其他位置時。
 
@@ -116,7 +116,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->**內容片段模型:**
+>**內容片段模型：**
 >
 >在頁面上使用內容片段時，會參考其所根據的內容片段模式。
 >
@@ -148,7 +148,7 @@ ht-degree: 2%
   >
   >* 當內容片段模型位於時 `/conf`，這些不會包含在這類翻譯中。 您可以國際化UI字串。
 
-* **中繼資料結構描述**
+* **中繼資料結構**
 
    * 內容片段使用並重複使用 [中繼資料結構](/help/assets/metadata-schemas.md) 可使用標準資產定義的屬性。
 
@@ -326,7 +326,7 @@ ContentFragment newFragment = tpl.createFragment(parentRsc, "A fragment name", "
 此 [自動儲存間隔](/help/sites-cloud/administering/content-fragments/managing.md#save-close-and-versions) （以秒為單位測量）可使用組態管理員(ConfMgr)定義：
 
 * 節點： `<conf-root>/settings/dam/cfm/jcr:content`
-* 屬性名稱: `autoSaveInterval`
+* 屬性名稱： `autoSaveInterval`
 * 類型：`Long`
 
 * 預設： `600` （10分鐘）；此定義的日期為 `/libs/settings/dam/cfm/jcr:content`
@@ -336,7 +336,7 @@ ContentFragment newFragment = tpl.createFragment(parentRsc, "A fragment name", "
 例如：
 
 * 節點： `/conf/global/settings/dam/cfm/jcr:content`
-* 屬性名稱: `autoSaveInterval`
+* 屬性名稱： `autoSaveInterval`
 
 * 類型：`Long`
 

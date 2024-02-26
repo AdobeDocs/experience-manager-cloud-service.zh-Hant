@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Asset Management,Publishing,Collaboration,Video
 role: User
 exl-id: 91edce4a-dfa0-4eca-aba7-d41ac907b81e
-source-git-commit: 4b05e8f8ae554e7c0881134ef24ca8ce35e3e2bf
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
 source-wordcount: '4976'
 ht-degree: 6%
@@ -197,7 +197,7 @@ Google會定期變更其使用者介面。 因此，將視訊發佈至YouTube的
 
 ### 新增標籤以供發佈 {#adding-tags-for-publishing}
 
-若要將影片發佈至YouTube，Experience Manager會將標籤與一個或多個YouTube管道建立關聯。 若要新增標籤以進行發佈，請參閱 [管理標籤](/help/sites-cloud/authoring/features/tags.md).
+若要將影片發佈至YouTube，Experience Manager會將標籤與一個或多個YouTube管道建立關聯。 若要新增標籤以進行發佈，請參閱 [管理標籤](/help/sites-cloud/authoring/sites-console/tags.md).
 
 或者，如果您想要在Experience Manager中使用預設標籤，您可以略過此工作並移至 [在Experience Manager中設定YouTube](#setting-up-youtube-in-aem).
 
@@ -390,11 +390,11 @@ After you enable the YouTube Publish replication agent, if you want to test the 
 
 >[!NOTE]
 >
-若要從YouTube發佈內容，Experience Manager會使用 **[!UICONTROL 發佈至YouTube]** 工作流程，可讓您監視進度並檢視任何失敗資訊。
+>若要從YouTube發佈內容，Experience Manager會使用 **[!UICONTROL 發佈至YouTube]** 工作流程，可讓您監視進度並檢視任何失敗資訊。
 >
-另請參閱 [監視視訊編碼和YouTube發佈進度](#monitoring-video-encoding-and-youtube-publishing-progress).
+>另請參閱 [監視視訊編碼和YouTube發佈進度](#monitoring-video-encoding-and-youtube-publishing-progress).
 >
-如需詳細進度資訊，您可以在復寫下監視YouTube記錄。 但是，請注意，此類監視需要管理員存取權。
+>如需詳細進度資訊，您可以在復寫下監視YouTube記錄。 但是，請注意，此類監視需要管理員存取權。
 
 **若要將視訊發佈至您的YouTube頻道：**
 
@@ -430,7 +430,7 @@ After you enable the YouTube Publish replication agent, if you want to test the 
 
 >[!NOTE]
 >
-您必須先將視訊資產發佈至YouTube，才能複製YouTube URL。
+>您必須先將視訊資產發佈至YouTube，才能複製YouTube URL。
 
 若要將YouTube URL連結至您的Web應用程式：
 
@@ -448,13 +448,13 @@ After you enable the YouTube Publish replication agent, if you want to test the 
 
 >[!CAUTION]
 >
-如果您直接從YouTube中移除視訊，Experience Manager會保持警覺，並繼續視訊發佈至YouTube。 一律透過Experience Manager從YouTube取消發佈視訊資產。
+>如果您直接從YouTube中移除視訊，Experience Manager會保持警覺，並繼續視訊發佈至YouTube。 一律透過Experience Manager從YouTube取消發佈視訊資產。
 
 >[!NOTE]
 >
-若要從YouTube移除內容，Experience Manager會使用 **[!UICONTROL 從YouTube取消發佈]** 工作流程，可讓您監視進度並檢視任何失敗資訊。
+>若要從YouTube移除內容，Experience Manager會使用 **[!UICONTROL 從YouTube取消發佈]** 工作流程，可讓您監視進度並檢視任何失敗資訊。
 >
-另請參閱 [監視視訊編碼和YouTube發佈進度](#monitoring-video-encoding-and-youtube-publishing-progress).
+>另請參閱 [監視視訊編碼和YouTube發佈進度](#monitoring-video-encoding-and-youtube-publishing-progress).
 
 **若要取消發佈視訊，並從YouTube中將其移除：**
 
@@ -495,19 +495,19 @@ After you enable the YouTube Publish replication agent, if you want to test the 
 
    >[!NOTE]
    >
-   由於上的多個工作流程設定，最終記錄失敗/錯誤訊息可能需要很長時間 **[!UICONTROL 重試]**， **[!UICONTROL 重試延遲]**、和 **[!UICONTROL 逾時]** 從 [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)例如：
+   >由於上的多個工作流程設定，最終記錄失敗/錯誤訊息可能需要很長時間 **[!UICONTROL 重試]**， **[!UICONTROL 重試延遲]**、和 **[!UICONTROL 逾時]** 從 [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)例如：
    >
-   * Apache Sling工作佇列設定
-   * AdobeGranite工作流程外部程式工作處理常式
-   * Granite工作流程逾時佇列
+   >* Apache Sling工作佇列設定
+   >* AdobeGranite工作流程外部程式工作處理常式
+   >* Granite工作流程逾時佇列
    >
-   您可以調整 **[!UICONTROL 重試]**， **[!UICONTROL 重試延遲]**、和 **[!UICONTROL 逾時]** 這些設定中的屬性。
+   >您可以調整 **[!UICONTROL 重試]**， **[!UICONTROL 重試延遲]**、和 **[!UICONTROL 逾時]** 這些設定中的屬性。
 
 1. 如需進行中的工作流程，請參閱「工具 **[!UICONTROL >工作流程]** >例項」中的「工作流程例 **[!UICONTROL 項」]******。
 
    >[!NOTE]
    >
-   您需要管理許可權才能存取 **[!UICONTROL 工具]** 功能表。
+   >您需要管理許可權才能存取 **[!UICONTROL 工具]** 功能表。
 
    ![chlimage_1-433](/help/assets/dynamic-media/assets/chlimage_1-433.png)
 
@@ -521,25 +521,25 @@ After you enable the YouTube Publish replication agent, if you want to test the 
 
    >[!NOTE]
    >
-   您需要管理許可權才能存取 **[!UICONTROL 工具]** 功能表。
+   >您需要管理許可權才能存取 **[!UICONTROL 工具]** 功能表。
 
    ![chlimage_1-435](/help/assets/dynamic-media/assets/chlimage_1-435.png)
 
    >[!NOTE]
    >
-   由於上的多個工作流程設定，最終記錄錯誤訊息可能需要很長時間 **[!UICONTROL 重試]**， **[!UICONTROL 重試延遲]**、和 **[!UICONTROL 逾時]** 從 [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)例如：
+   >由於上的多個工作流程設定，最終記錄錯誤訊息可能需要很長時間 **[!UICONTROL 重試]**， **[!UICONTROL 重試延遲]**、和 **[!UICONTROL 逾時]** 從 [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)例如：
    >
-   * Apache Sling工作佇列設定
-   * AdobeGranite工作流程外部程式工作處理常式
-   * Granite工作流程逾時佇列
+   >* Apache Sling工作佇列設定
+   >* AdobeGranite工作流程外部程式工作處理常式
+   >* Granite工作流程逾時佇列
    >
-   您可以調整 **[!UICONTROL 重試]**， **[!UICONTROL 重試延遲]**、和 **[!UICONTROL 逾時]** 這些設定中的屬性。
+   >您可以調整 **[!UICONTROL 重試]**， **[!UICONTROL 重試延遲]**、和 **[!UICONTROL 逾時]** 這些設定中的屬性。
 
 1. 如需完成的工作流程，請參閱「工具 **[!UICONTROL >工作流程]** >封存 **[!UICONTROL 」中的「工作流程封存]******」。「工作 **[!UICONTROL 流程存檔]** 」會列出所有已完成的工作流活動。
 
    >[!NOTE]
    >
-   您需要管理許可權才能存取 **[!UICONTROL 工具]** 功能表。
+   >您需要管理許可權才能存取 **[!UICONTROL 工具]** 功能表。
 
    ![chlimage_1-436](/help/assets/dynamic-media/assets/chlimage_1-436.png)
 
@@ -609,7 +609,7 @@ For YouTube publishing jobs, do the following:
 
 >[!NOTE]
 >
-視訊資產註解尚不支援MXF視訊格式。
+>視訊資產註解尚不支援MXF視訊格式。
 
 1. 從 [!DNL Assets] 主控台，選取 **[!UICONTROL 編輯]** 以顯示「資產詳細資訊」頁面。
 1. 若要播放視訊，請按一下 **[!UICONTROL 預覽]**.
@@ -649,5 +649,5 @@ For YouTube publishing jobs, do the following:
 
 >[!MORELIKETHIS]
 >
-* [Dynamic Media影片檔案](/help/assets/dynamic-media/video.md).
-* [進一步瞭解處理設定檔的使用、型別和設定](/help/assets/asset-microservices-configure-and-use.md).
+>* [Dynamic Media影片檔案](/help/assets/dynamic-media/video.md).
+>* [進一步瞭解處理設定檔的使用、型別和設定](/help/assets/asset-microservices-configure-and-use.md).

@@ -2,14 +2,14 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2020.8.0 版發行說明。'
 description: '"[!DNL Adobe Experience Manager] 2020.8.0版as a Cloud Service發行說明。」'
 exl-id: 83413130-ae90-4419-bcf7-42fdc740452b
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
-source-wordcount: '1036'
-ht-degree: 35%
+source-wordcount: '1031'
+ht-degree: 34%
 
 ---
 
-# [!DNL Adobe Experience Manager] as a Cloud Service 2020.8.0 版發行說明  {#release-notes}
+# 版本注意事項 [!DNL Adobe Experience Manager] as a Cloud Service2020.8.0 {#release-notes}
 
 以下章節概述 Experience Manager as a Cloud Service 2020.8.0 版的一般發行說明。
 
@@ -18,7 +18,7 @@ ht-degree: 35%
 
 ### [!DNL Sites] 的新增功能 {#what-is-new-sites}
 
-* 能夠 [將頁面和子頁面（頁面樹狀結構）還原為舊版](/help/sites-cloud/authoring/features/page-versions.md#reinstating-versions).
+* 能夠 [將頁面和子頁面（頁面樹狀結構）還原為舊版](/help/sites-cloud/authoring/sites-console/page-versions.md#reinstating-versions).
 
 * 能夠 [建立啟動](/help/sites-cloud/authoring/launches/overview.md) 在AEM中 [SPA編輯器](/help/implementing/developing/hybrid/introduction.md).
 

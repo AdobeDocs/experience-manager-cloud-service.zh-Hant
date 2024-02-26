@@ -2,16 +2,16 @@
 title: 元件概觀
 description: 元件是模組化單元，可實現特定功能以在您的網站上展示您的內容
 exl-id: 0fdc99e7-2103-448d-8217-d5d52c94acea
-source-git-commit: 78ead5f15c2613d9c3bed3025b43423a66805c59
-workflow-type: ht
-source-wordcount: '386'
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
+workflow-type: tm+mt
+source-wordcount: '376'
 ht-degree: 100%
 
 ---
 
 # 元件概觀 {#components-overview}
 
-此頁面概述了 Adobe Experience Manager (AEM) 元件，例如那些[用於頁面編寫](/help/sites-cloud/authoring/fundamentals/components.md)的元件。
+此頁面概述了 Adobe Experience Manager (AEM) 元件，例如那些[用於頁面編寫](/help/sites-cloud/authoring/page-editor/components.md)的元件。
 
 ## 元件有哪些？ {#what-are-components}
 
@@ -48,7 +48,7 @@ ht-degree: 100%
 
 ### 檢視可用元件 {#viewing-available-components}
 
-如需 AEM 執行個體中所有可用元件的概觀，請使用[元件主控台](/help/sites-cloud/authoring/features/components-console.md)。
+如需 AEM 執行個體中所有可用元件的概觀，請使用[元件主控台](/help/sites-cloud/authoring/components-console.md)。
 
 或者，您也可以使用 CRXDE Lite 取得存放庫中所有可用元件的清單。
 

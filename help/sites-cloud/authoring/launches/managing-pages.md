@@ -2,7 +2,7 @@
 title: 管理啟動項中的頁面
 description: 您可以在啟動項中建立新頁面。 您也可以刪除不要的頁面。
 exl-id: 214c8c2f-d09a-4ce9-b474-9505b76084f7
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: d2352e66b380f5a3654e2fc99ce4204b32066683
 workflow-type: tm+mt
 source-wordcount: '288'
 ht-degree: 1%
@@ -45,7 +45,7 @@ ht-degree: 1%
 
 所有這些入口點都會在Sites主控台中開啟啟動，您可以在其中：
 
-* 導覽,
+* 導覽，
 * **建立** 新頁面，
 * 選取現有頁面並採取行動；例如， **編輯**，開啟 **屬性**， **鎖定**， **複製**， **貼上** 和 **刪除**
   ![從「管理內容」導覽Sites Console中的啟動](/help/sites-cloud/authoring/assets/launches-navigate-manage-content.png)
@@ -58,7 +58,7 @@ ht-degree: 1%
 
 1. [導覽至啟動項中的所需位置](#navigate-structure-of-launch).
 
-1. 選取 **建立** 至 [建立頁面](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page) 一如既往。
+1. 選取 **建立** 至 [建立頁面](/help/sites-cloud/authoring/sites-console/creating-pages.md#creating-a-new-page) 一如既往。
 
 ## 從啟動項移除頁面 {#remove-pages-from-launch}
 
@@ -66,4 +66,4 @@ ht-degree: 1%
 
 1. [導覽至啟動項中的所需位置](#navigate-structure-of-launch).
 
-1. 選取 **刪除** 至 [刪除頁面](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#deleting-a-page) 一如既往。
+1. 選取 **刪除** 至 [刪除頁面](/help/sites-cloud/authoring/sites-console/managing-pages.md#deleting-a-page) 一如既往。

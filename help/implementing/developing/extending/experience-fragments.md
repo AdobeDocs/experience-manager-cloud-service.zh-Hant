@@ -2,9 +2,9 @@
 title: 體驗片段概觀
 description: 擴充Adobe Experience Manager as a Cloud Service體驗片段。
 exl-id: bd4ea763-d17c-40a6-9a86-a24d7600229e
-source-git-commit: 29d8d08899bb60b2bf3027ed32dbcdca3a73e671
+source-git-commit: 89f23a590338561b4cfeb10b54a260a135ec2f08
 workflow-type: tm+mt
-source-wordcount: '1646'
+source-wordcount: '1642'
 ht-degree: 0%
 
 ---
@@ -13,15 +13,15 @@ ht-degree: 0%
 
 ## 基本資訊 {#the-basics}
 
-一個 [體驗片段](/help/sites-cloud/authoring/fundamentals/experience-fragments.md) 是一組一或多個元件，包括可在頁面中參考的內容和版面。
+一個 [體驗片段](/help/sites-cloud/authoring/fragments/content-fragments.md) 是一組一或多個元件，包括可在頁面中參考的內容和版面。
 
 體驗片段主版、變體或兩者使用：
 
-* `sling:resourceType` : `/libs/cq/experience-fragments/components/xfpage`
+* `sling:resourceType` ： `/libs/cq/experience-fragments/components/xfpage`
 
 因為沒有 `/libs/cq/experience-fragments/components/xfpage/xfpage.html`，它還原為
 
-* `sling:resourceSuperType` : `wcm/foundation/components/page`
+* `sling:resourceSuperType` ： `wcm/foundation/components/page`
 
 ## 純HTML轉譯 {#the-plain-html-rendition}
 
@@ -80,7 +80,7 @@ Adobe建議使用覆蓋來設定重寫程式。 另請參閱 [AEMas a Cloud Serv
 
 建立由偵測到的體驗片段範本： **建立體驗片段** 精靈，您必須遵循下列其中一個規則集：
 
-1. 兩者:
+1. 兩者：
 
    1. 範本的資源型別（初始節點）必須繼承自：
       `cq/experience-fragments/components/xfpage`
@@ -89,7 +89,7 @@ Adobe建議使用覆蓋來設定重寫程式。 另請參閱 [AEMas a Cloud Serv
       `experience-fragments`
 此模式允許使用者在/content/experience-fragments中建立體驗片段，作為 `cq:allowedTemplates` 此資料夾的屬性包含名稱開頭為的所有範本 `experience-fragment`. 客戶可以更新此屬性以包含他們自己的命名配置或範本位置。
 
-1. [允許的範本](/help/sites-cloud/authoring/fundamentals/experience-fragments.md#configure-allowed-templates-folder) 可在體驗片段主控台中設定。
+1. [允許的範本](/help/sites-cloud/authoring/fragments/content-fragments.md#configure-allowed-templates-folder) 可在體驗片段主控台中設定。
 
 <!--
 1. Add the template details manually in `cq:allowedTemplates` on the `/content/experience-fragment` node.

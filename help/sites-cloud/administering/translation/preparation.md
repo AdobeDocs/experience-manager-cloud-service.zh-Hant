@@ -4,7 +4,7 @@ description: 瞭解在開發多語言網站時如何準備翻譯內容。
 feature: Language Copy
 role: Admin
 exl-id: afc577a2-2791-481a-ac77-468011e4302e
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
 source-wordcount: '756'
 ht-degree: 1%
@@ -92,7 +92,7 @@ AEM提供 **引用** 顯示已建立之語言根目錄的邊欄。
 
 ![語言根](../assets/language-roots.png)
 
-請使用下列程式檢視頁面的語言副本 [邊欄選擇器](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector).
+請使用下列程式檢視頁面的語言副本 [邊欄選擇器](/help/sites-cloud/authoring/basic-handling.md#rail-selector).
 
 1. 在網站主控台上，選取網站的頁面，然後選取 **引用**.
 

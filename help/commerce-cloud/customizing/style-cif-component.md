@@ -11,16 +11,16 @@ feature: Commerce Integration Framework
 kt: 3456
 thumbnail: 3456-style-cif.jpg
 exl-id: 521c1bb8-7326-4ee8-aba3-f386727e2b34
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: a868bf4d4acf4fbae7ccaf55b03319ba0617f9a4
 workflow-type: tm+mt
-source-wordcount: '2535'
-ht-degree: 2%
+source-wordcount: '2342'
+ht-degree: 0%
 
 ---
 
 # 建立AEM CIF核心元件的樣式 {#style-aem-cif-core-components}
 
-此 [CIF Venia專案](https://github.com/adobe/aem-cif-guides-venia) 是用於的參考程式碼基底 [CIF核心元件](https://github.com/adobe/aem-core-cif-components). 在本教學課程中，您需檢查Venia參考專案，瞭解AEM CIF核心元件所使用的CSS和JavaScript如何進行組織整理。 您也可以使用CSS建立樣式，以更新 **產品Teaser** 元件。
+此 [CIF Venia專案](https://github.com/adobe/aem-cif-guides-venia) 是用於的參考程式碼基底 [CIF Core Components](https://github.com/adobe/aem-core-cif-components). 在本教學課程中，您需檢查Venia參考專案，瞭解AEM CIF核心元件所使用的CSS和JavaScript如何進行組織整理。 您也可以使用CSS建立樣式，以更新 **產品Teaser** 元件。
 
 >[!TIP]
 >
@@ -180,9 +180,9 @@ ht-degree: 2%
 
    **clientlib-base**  — 空白的使用者端程式庫，僅從內嵌必要的相依性 [AEM Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html). 類別為 `venia.base`.
 
-   **clientlib-cif**  — 空白的使用者端程式庫，僅從內嵌必要的相依性 [AEM CIF Core Components](https://github.com/adobe/aem-core-cif-components). 類別為 `venia.cif`.
+   **clientlib-cif**  — 空白的使用者端程式庫，僅從內嵌必要的相依性 [AEM CIF核心元件](https://github.com/adobe/aem-core-cif-components). 類別為 `venia.cif`.
 
-   **clientlib-grid**  — 包含可啟用AEM回應式格線功能的CSS。 使用AEM格線可啟用 [版面模式](/help/sites-cloud/authoring/features/responsive-layout.md) AEM並賦予內容作者重新調整元件大小的能力。 類別為 `venia.grid` 並內嵌於 `venia.base` 資料庫。
+   **clientlib-grid**  — 包含可啟用AEM回應式格線功能的CSS。 使用AEM格線可啟用 [版面模式](/help/sites-cloud/authoring/page-editor/responsive-layout.md) AEM並賦予內容作者重新調整元件大小的能力。 類別為 `venia.grid` 並內嵌於 `venia.base` 資料庫。
 
 1. Inspect檔案 `customheaderlibs.html` 和 `customfooterlibs.html` 下 `ui.apps/src/main/content/jcr_root/apps/venia/components/page`：
 
@@ -225,7 +225,7 @@ ht-degree: 2%
 
 1. 選取 **頁面資訊** 功能表並按一下 **以發佈的形式檢視**：
 
-   ![以已發佈狀態檢視](../assets/style-cif-component/view-as-published.png)
+   ![以發佈的形式檢視](../assets/style-cif-component/view-as-published.png)
 
    此頁面會開啟，但不載入任何AEM作者JavaScript，如發佈網站中所示。 請注意，url具有查詢引數 `?wcmmode=disabled` 已附加。 開發CSS和JavaScript時，最好使用此引數來簡化頁面，而無需AEM作者提供任何內容。
 
@@ -473,15 +473,15 @@ AEM也會嘗試快取使用者端程式庫以提高效能。 在程式碼部署�
 
 ## 額外挑戰 {#bonus-challenge}
 
-使用 [AEM樣式系統](/help/sites-cloud/authoring/features/style-system.md) 以建立可由內容作者開啟或關閉的兩種樣式。 [使用樣式系統進行開發](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/style-system.html) 包括有關如何完成此工作的詳細步驟和資訊。
+使用 [AEM樣式系統](/help/sites-cloud/authoring/page-editor/style-system.md) 以建立可由內容作者開啟或關閉的兩種樣式。 [使用樣式系統進行開發](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/style-system.html) 包括有關如何完成此工作的詳細步驟和資訊。
 
 ![額外挑戰 — 樣式系統](../assets/style-cif-component/bonus-challenge.png)
 
 ## 其他資源 {#additional-resources}
 
-* [AEM 專案原型](https://github.com/adobe/aem-project-archetype)
-* [AEM CIF Core Components](https://github.com/adobe/aem-core-cif-components)
-* [設定本機AEM開發環境](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=zh-Hant)
+* [AEM專案原型](https://github.com/adobe/aem-project-archetype)
+* [AEM CIF核心元件](https://github.com/adobe/aem-core-cif-components)
+* [設定本機AEM開發環境](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html)
 * [用戶端資源庫](/help/implementing/developing/introduction/clientlibs.md)
-* [AEM Sites快速入門](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=zh-Hant)
+* [AEM Sites快速入門](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
 * [使用樣式系統進行開發](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/style-system.html)

@@ -4,9 +4,9 @@ description: 瞭解如何啟用現有網站的前端管道，以使用網站主�
 feature: Administering
 role: Admin
 exl-id: 55d54d72-f87b-47c9-955f-67ec5244dd6e
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
-source-wordcount: '560'
+source-wordcount: '554'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,7 @@ AEM可以自動調整您的現有網站以使用前端管道。 若要這麼做�
 
 1. 登入AEM並透過以下方式導覽至您的網站： **全域導覽** > **網站**.
 1. 在主控台中選取您的網站。 選取網站的根目錄，而非任何子頁面。
-1. 選取您的網站後，開啟 [邊欄選擇器](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector) 在左側，然後選擇 **網站**.
+1. 選取您的網站後，開啟 [邊欄選擇器](/help/sites-cloud/authoring/basic-handling.md#rail-selector) 在左側，然後選擇 **網站**.
 1. 在 **網站** 邊欄，按一下按鈕 **啟用前端管道**.
 
    ![啟用前端管道](/help/sites-cloud/administering/assets/enable-front-end-pipeline.png)

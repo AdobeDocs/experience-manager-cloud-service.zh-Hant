@@ -2,10 +2,10 @@
 title: 將內容片段匯出到 Adobe Target
 description: 瞭解如何將您的內容片段匯出至Adobe Target，以測試並個人化體驗。
 exl-id: 760e0a39-0805-498e-a2c9-038fd1e1058d
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
-source-wordcount: '2223'
-ht-degree: 1%
+source-wordcount: '2159'
+ht-degree: 0%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 1%
 >* AEM內容片段會匯出至Adobe Target的預設工作區。
 >* AEM必須依照下的指示與Adobe Target整合 [與Adobe Target整合](/help/sites-cloud/integrating/integrating-adobe-target.md).
 
-您可以匯出 [內容片段](/help/sites-cloud/authoring/fundamentals/content-fragments.md)，在Adobe Experience Manager as a Cloud Service (AEM)中建立並移至Adobe Target (Target)。 然後，它們可以當作Target活動中的選件，以大規模測試並個人化體驗。
+您可以匯出 [內容片段](/help/sites-cloud/authoring/fragments/content-fragments.md)，在Adobe Experience Manager as a Cloud Service (AEM)中建立並移至Adobe Target (Target)。 然後，它們可以當作Target活動中的選件，以大規模測試並個人化體驗。
 
 有一個選項可用於將內容片段匯出至Adobe Target：
 
@@ -81,7 +81,7 @@ ht-degree: 1%
    >
    >如果您將雲端設定新增至內容片段本身，該設定會由所有變數繼承。
 
-1. 選取 **Cloud Service** 標籤。
+1. 選取「**雲端服務**」標籤。
 
 1. 在 **Cloud Service設定**，選取 **Adobe Target** 下拉式清單中的。
 
@@ -286,7 +286,7 @@ After you create a Target framework in AEM, associate your web pages with the fr
 When you associate a page with the framework, the child pages inherit the association.
 
 1. In the **Sites** console, navigate to the site that you want to configure.
-1. Using either [quick actions](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions) or [selection mode](/help/sites-cloud/authoring/getting-started/basic-handling.md#selecting-resources), select **View Properties.**
+1. Using either [quick actions](/help/sites-cloud/authoring/basic-handling.md#quick-actions) or [selection mode](/help/sites-cloud/authoring/basic-handling.md#selecting-resources), select **View Properties.**
 1. Select the **Cloud Services** tab.
 1. Select **Edit**.
 1. Select **Add Configuration** under **Cloud Service Configurations** and select **Adobe Target**.
@@ -300,7 +300,7 @@ When you associate a page with the framework, the child pages inherit the associ
    >Make sure that you select the specific **framework** that you created and not the Target cloud configuration under which it was created.
 
 1. Select **Done**.
-1. Activate the root page of the website to replicate it to the publish server. (See [How To Publish Pages](/help/sites-cloud/authoring/fundamentals/publishing-pages.md).)
+1. Activate the root page of the website to replicate it to the publish server. (See [How To Publish Pages](/help/sites-cloud/authoring/sites-console/publishing-pages.md).)
 
    >[!NOTE]
    >
@@ -322,7 +322,7 @@ When you associate a page with the framework, the child pages inherit the associ
 
 1. 選取 **匯出至Adobe Target選件**.
 
-   ![匯出至 Adobe Target](assets/cfm-export-target-01.png)
+   ![匯出至Adobe Target](assets/cfm-export-target-01.png)
 
    <!-- this note does not seem to be accurate for CFs -->
 
@@ -352,7 +352,7 @@ When you associate a page with the framework, the child pages inherit the associ
 
    >[!NOTE]
    >
-   >[各種詳細資訊](/help/sites-cloud/authoring/fundamentals/content-fragments.md#details-of-your-content-fragment) 匯出的檔案可在下列位置檢視： **清單檢視** 主控台和 **屬性**.
+   >[各種詳細資訊](/help/sites-cloud/authoring/fragments/content-fragments.md#details-of-your-content-fragment) 匯出的檔案可在下列位置檢視： **清單檢視** 主控台和 **屬性**.
 
    >[!NOTE]
    >
@@ -360,7 +360,7 @@ When you associate a page with the framework, the child pages inherit the associ
 
 >[!NOTE]
 >
->或者，您也可以使用下列檔案中的類似命令，從頁面編輯器執行匯出 [頁面資訊](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-information) 功能表。
+>或者，您也可以使用下列檔案中的類似命令，從頁面編輯器執行匯出 [頁面資訊](/help/sites-cloud/authoring/page-editor/introduction.md#page-information) 功能表。
 
 ## 在Adobe Target中使用內容片段 {#using-your-content-fragments-in-adobe-target}
 
@@ -374,7 +374,7 @@ When you associate a page with the framework, the child pages inherit the associ
 
 和匯出一樣，您也可以從的頂端工具列選取從Adobe Target刪除內容片段 **資產** 選擇片段後主控台：
 
-![在 Adobe Target 刪除](assets/cfm-export-target-02.png)
+![在Adobe Target中刪除](assets/cfm-export-target-02.png)
 
 如果片段已用於Target的選件，刪除已匯出至Target的內容片段可能會導致問題。 刪除片段會導致選件無法使用，因為AEM正在傳遞片段內容。
 

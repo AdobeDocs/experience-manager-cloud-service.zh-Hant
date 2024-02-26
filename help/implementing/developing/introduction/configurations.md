@@ -2,9 +2,9 @@
 title: 設定和設定瀏覽器
 description: 瞭解Adobe Experience Manager (AEM)設定，以及這些設定如何在AEM中管理工作區設定。
 exl-id: 0ade04df-03a9-4976-a4b7-c01b4748474d
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
-source-wordcount: '1487'
+source-wordcount: '1482'
 ht-degree: 4%
 
 ---
@@ -35,7 +35,7 @@ AEM管理員和作者可以將設定視為工作區。 藉由實作這些功能�
 
 * [上下文中心區段](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
 * [內容片段模型](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
-* [可編輯的範本](/help/sites-cloud/authoring/features/templates.md)
+* [可編輯的範本](/help/sites-cloud/authoring/sites-console/templates.md)
 * 各種雲端設定
 
 ### 範例 {#administrator-example}
@@ -69,7 +69,7 @@ AEM管理員和作者可以將設定視為工作區。 藉由實作這些功能�
 使用設定瀏覽器，即可在AEM中輕鬆建立設定。
 
 1. 登入AEMas a Cloud Service，並從主功能表選取 **工具** > **一般** > **設定瀏覽器**.
-1. 選擇 **建立**。
+1. 選取「**建立**」。
 1. 提供設定的&#x200B;**標題**&#x200B;和&#x200B;**名稱**。
 
    ![建立設定](assets/configuration-create.png)
@@ -81,9 +81,9 @@ AEM管理員和作者可以將設定視為工作區。 藉由實作這些功能�
 1. 檢查您要允許的設定型別。
    * [上下文中心區段](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
    * [內容片段模型](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
-   * [可編輯的範本](/help/sites-cloud/authoring/features/templates.md)
+   * [可編輯的範本](/help/sites-cloud/authoring/sites-console/templates.md)
    * 各種雲端設定
-1. 選擇 **建立**。
+1. 選取「**建立**」。
 
 >[!TIP]
 >
@@ -209,7 +209,7 @@ AEM中的設定是根據Sling內容感知設定。 Sling套件組合提供的服
 只需提供：
 
 * **內容路徑**
-* **項目**
+* **專案**
 * **使用者**
 
 按一下 **解析** 因此，您可以檢視已解析哪些組態，並取得有助於解析這些組態的程式碼範例。

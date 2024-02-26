@@ -2,10 +2,10 @@
 title: AEM Headless as a Cloud Service 快速入門
 description: 在 AEM Headless 開發人員歷程的這一部分，了解 AEM Headless 先決條件。
 exl-id: 9661e17b-fa9f-4689-900c-412b068e942c
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
 workflow-type: tm+mt
 source-wordcount: '3057'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -177,11 +177,11 @@ AEM 支援 CMS 的全 Headless 模型和傳統的全堆疊或 Headful 模型。�
 根據您需要的內容翻譯擬訂計畫。
 
 * 您需要不同的語言還是需要不同的語言來適應地區的具體情況？
-* 您是否需要圖像或影片等多媒體內容依不同地區設定而有所不同？
+* 您是否需要影像或影片等多媒體內容依不同地區設定而有所不同？
 
 清楚您的內容更新工作流程。系統必須支援的核准流程是什麼？是否可以使用 AEM 工作流程來自動化此流程？
 
-您的 [內容階層](#content-hierarchy) 可用來讓翻譯更容易。
+可以使用您的「[內容階層](#content-hierarchy)」讓翻譯變輕鬆。
 
 請參閱[其他資源](#additional-resources)章節，了解有關 AEM 工作流程和翻譯工具的其他文件，包括指向 AEM Headless 翻譯歷程的連結。
 
@@ -286,8 +286,8 @@ GraphQL 可作為 AEM 和 Headless 內容取用者之間的「黏著劑」。Gra
 * [AEM Headless 教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html) - 利用這些實作教學課程來探索如何運用各種不同方式使用 AEM 將內容傳遞到 Headless 端點，並選擇適合您的方式。
 * [使用 GraphQL API 進行 Headless 內容管理](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens&amp;Launch=ExperienceManager-D-1-2020.1.headless#courses) - 按照本課程說明對 AEM 中實作的 GraphQL API 有概略的了解。必須透過 AdobeID 進行驗證。
 * [AEM Guides WKND - GraphQL](https://github.com/adobe/aem-guides-wknd-graphql) - 此 GitHub 專案包含以 AEM GraphQL API 為重點的範例應用程式。
-* [製作概念](/help/sites-cloud/authoring/getting-started/concepts.md) - 關於 AEM 製作環境的技術文件，包含製作-發佈設定的詳細說明。
-* [發佈頁面](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) - 關於在 AEM 發佈內容的技術文件。
+* [製作概念](/help/sites-cloud/authoring/author-publish.md) - 關於 AEM 製作環境的技術文件，包含製作-發佈設定的詳細說明。
+* [發佈頁面](/help/sites-cloud/authoring/sites-console/publishing-pages.md) - 關於在 AEM 發佈內容的技術文件。
 * [命名慣例](/help/implementing/developing/introduction/naming-conventions.md) - 關於 AEM 頁面命名限制的技術文件
 * [多網站管理員和翻譯](/help/sites-cloud/administering/msm-and-translation.md) - 關於 AEM 強大翻譯功能的技術文件
 * [AEM 工作流程](/help/sites-cloud/authoring/workflows/overview.md) - 關於如何在 AEM 中自動化工作流程的技術文件

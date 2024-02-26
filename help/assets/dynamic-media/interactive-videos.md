@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Interactive Videos
 role: User
 exl-id: e4859223-91de-47a1-a789-c2a9447e5f71
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+source-git-commit: 89f23a590338561b4cfeb10b54a260a135ec2f08
 workflow-type: tm+mt
 source-wordcount: '5863'
 ht-degree: 2%
@@ -102,7 +102,7 @@ There was a link here that showed the video frame of an interactive video and wh
 >* 您要透過觸發至快速檢視，將互動性新增至視訊。
 >* 您實作的Experience Manager會 *非* 使用電子商務整合架構，將產品資料從任何電子商務解決方案(例如IBM®WebSphere®Commerce、Elastic Path、SAP Hybris或Intershop)提取至Experience Manager。 <!-- See [eCommerce concepts in Experience Manager Assets](/help/sites-administering/concepts.md).-->
 >
-如果您的Experience Manager實作使用電子商務，您可以略過此任務並繼續下一個任務。
+>如果您的Experience Manager實作使用電子商務，您可以略過此任務並繼續下一個任務。
 
 首先，識別您現有Quickview實作所使用的動態變數，以便您可以在互動式視訊建立程式中將產品縮圖對應至其對應的產品Quickview。
 
@@ -243,7 +243,7 @@ There was a link here that showed the video frame of an interactive video and wh
 
 >[!NOTE]
 >
-Dynamic Media中的「互動式視訊」尚不支援MXF視訊格式。
+>Dynamic Media中的「互動式視訊」尚不支援MXF視訊格式。
 
 如果您上傳了錯誤的視訊或影像，或要刪除您不再需要的已上傳視訊或影像，請參閱 [刪除資產](/help/assets/manage-digital-assets.md#delete-assets).
 
@@ -262,15 +262,15 @@ Dynamic Media中的「互動式視訊」尚不支援MXF視訊格式。
 
 新增時間軸區段後，您即可在每個區段內新增縮圖影像。 對於您新增的每個縮圖，您都會對其套用動作。 例如，您可以將快速檢視套用至縮圖、指派超連結至縮圖或體驗片段。
 
-另請參閱 [體驗片段](/help/sites-cloud/authoring/fundamentals/experience-fragments.md).
+另請參閱 [體驗片段](/help/sites-cloud/authoring/fragments/content-fragments.md).
 
 >[!NOTE]
 >
-將檢視器內嵌在體驗片段中時，不支援互動視訊中的社群媒體分享工具。 反之，您可以使用或建立沒有社群媒體分享工具的檢視器預設集。 這類檢視器預設集可讓您成功將其嵌入體驗片段中。
+>將檢視器內嵌在體驗片段中時，不支援互動視訊中的社群媒體分享工具。 反之，您可以使用或建立沒有社群媒體分享工具的檢視器預設集。 這類檢視器預設集可讓您成功將其嵌入體驗片段中。
 
 >[!NOTE]
 >
-如果您的互動式內容有具有相對URL的連結，尤其是指向Experience Manager Sites頁面的連結，則無法採用URL型連結方法。
+>如果您的互動式內容有具有相對URL的連結，尤其是指向Experience Manager Sites頁面的連結，則無法採用URL型連結方法。
 
 在您目前的建立/編輯作業階段期間，支援頁面右上角附近的「復原」和「重做」選項。
 
@@ -432,7 +432,7 @@ Dynamic Media中的「互動式視訊」尚不支援MXF視訊格式。
       <td>若要將選取的縮圖影像與體驗片段建立關聯</td> 
       <td><p>在動作型別下，選取 <strong>體驗片段</strong>，然後執行下列動作：<p> 
        <ul> 
-       <li>如果您是Experience Manager Sites客戶，請選取「搜尋」圖示（放大鏡）以開啟「體驗片段」頁面。 選取您要使用的體驗片段，然後選取 <strong>若要返回上一頁的「動作」面板，請選取 </strong>在頁面的右上角。<br /> 另請參閱 <a href="/help/sites-cloud/authoring/fundamentals/experience-fragments.md">體驗片段</a>.</li> 
+       <li>如果您是Experience Manager Sites客戶，請選取「搜尋」圖示（放大鏡）以開啟「體驗片段」頁面。 選取您要使用的體驗片段，然後選取 <strong>若要返回上一頁的「動作」面板，請選取 </strong>在頁面的右上角。<br /> 另請參閱 <a href="/help/sites-cloud/authoring/fragments/content-fragments.md">體驗片段</a>.</li> 
       </ul> 
        <ul> 
        <li>指定體驗片段在視訊中顯示的寬度和高度。</li>
@@ -493,7 +493,7 @@ Dynamic Media中的「互動式視訊」尚不支援MXF視訊格式。
 
    >[!NOTE]
    >
-   當您儲存互動式視訊時，會自動 `.vtt` 儲存相關的檔案。此 `.vtt` 檔案會儲存至 `_VTT` 根目錄下的資料夾 **[!UICONTROL 資產]**. 您的互動式視訊必須有檔案和資料夾才能在網站上正確播放。因此，請勿移動、編輯或刪除資料夾 `_VTT` 或其內容。
+   >當您儲存互動式視訊時，會自動 `.vtt` 儲存相關的檔案。此 `.vtt` 檔案會儲存至 `_VTT` 根目錄下的資料夾 **[!UICONTROL 資產]**. 您的互動式視訊必須有檔案和資料夾才能在網站上正確播放。因此，請勿移動、編輯或刪除資料夾 `_VTT` 或其內容。
 
 1. 發佈互動式視訊。 發佈作業會建立內嵌程式碼或URL，您最後會將其複製並貼到您的網站體驗中。
 
@@ -503,7 +503,7 @@ Dynamic Media中的「互動式視訊」尚不支援MXF視訊格式。
 
    >[!NOTE]
    >
-   若要發佈具有快速檢視的可購物視訊，請務必另外從您的商務區域發佈視訊的每個相關影像資產。
+   >若要發佈具有快速檢視的可購物視訊，請務必另外從您的商務區域發佈視訊的每個相關影像資產。
 
    新增時間軸區段並發佈互動式視訊後，您就可以將其新增至您現有的網站登陸頁面。 另請參閱 [將互動式視訊與您的網站整合](#integrating-an-interactive-video-with-your-website).
 
@@ -529,9 +529,9 @@ Dynamic Media中的「互動式視訊」尚不支援MXF視訊格式。
 
 >[!NOTE]
 >
-此時，如果您只新增超連結網頁的互動功能，也就完成了。
+>此時，如果您只新增超連結網頁的互動功能，也就完成了。
 >
-不過，如果您新增任何互動來觸發快速檢視，互動視訊旁的縮圖僅供顯示，尚未與您現有的快速檢視整合。 在這種情況下，您必須將互動式視訊與網站上現有的快速檢視整合。
+>不過，如果您新增任何互動來觸發快速檢視，互動視訊旁的縮圖僅供顯示，尚未與您現有的快速檢視整合。 在這種情況下，您必須將互動式視訊與網站上現有的快速檢視整合。
 
 **範例**
 
@@ -574,7 +574,7 @@ Dynamic Media中的「互動式視訊」尚不支援MXF視訊格式。
 
 >[!NOTE]
 >
-此工作僅適用於獨立Experience Manager Assets客戶。
+>此工作僅適用於獨立Experience Manager Assets客戶。
 
 此程式的最後一步是將您的互動式視訊與網站上使用的現有Quickview實作整合。 整合沒有適用於所有情況的解決方案。 每個快速檢視實施都是獨一無二的。 因此，需要涉及前端IT人員協助的特定方法。
 

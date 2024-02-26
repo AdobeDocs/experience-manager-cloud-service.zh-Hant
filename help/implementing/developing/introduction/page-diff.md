@@ -2,7 +2,7 @@
 title: 開發和頁面差異
 description: 瞭解頁面差異功能的運作方式及其對開發人員的影響
 exl-id: 03c08616-2203-4b90-bed6-4836266e2507
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
 source-wordcount: '333'
 ht-degree: 1%
@@ -15,11 +15,11 @@ ht-degree: 1%
 
 內容建立是一個反複的過程。 以高效率撰寫需要能夠檢視反複專案之間的變更。 檢視一個頁面版本然後檢視另一個頁面版本會效率低下，並容易發生錯誤。 作者想要能夠並排比較目前頁面與先前版本，並醒目提示差異。
 
-頁面差異可讓使用者將目前頁面與啟動項、舊版等專案進行比較。 如需此使用者功能的詳細資訊，請參閱 [頁面差異](/help/sites-cloud/authoring/features/page-diff.md).
+頁面差異可讓使用者將目前頁面與啟動項、舊版等專案進行比較。 如需此使用者功能的詳細資訊，請參閱 [頁面差異](/help/sites-cloud/authoring/sites-console/page-diff.md).
 
 ## 作業詳細資料 {#operation-details}
 
-比較頁面的版本時，使用者想要比較的先前版本會由AEM在背景重新建立，以利進行差異。 轉譯內容需要此先前版本 [用於並排比較](/help/sites-cloud/authoring/features/page-diff.md).
+比較頁面的版本時，使用者想要比較的先前版本會由AEM在背景重新建立，以利進行差異。 轉譯內容需要此先前版本 [用於並排比較](/help/sites-cloud/authoring/sites-console/page-diff.md).
 
 此重新建立操作由AEM內部完成，對使用者而言是透明的，不需要任何干涉。 但是，管理員檢視存放庫(例如，在CRXDE Lite中)，會在內容結構中看到這些重新建立的版本。
 

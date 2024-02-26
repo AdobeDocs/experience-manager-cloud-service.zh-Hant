@@ -5,8 +5,8 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: 1e5e739a-1fbd-49cf-b529-335696d7e2f4
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
-workflow-type: ht
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
+workflow-type: tm+mt
 source-wordcount: '491'
 ht-degree: 100%
 
@@ -62,5 +62,5 @@ AEM 不僅使建立和管理內容變得簡單，而且還使您可以輕鬆地�
 
 因為我們建議您檢閱文件「[開始使用 AEM Sites 翻譯](getting-started.md)」並繼續快速建立網站歷程的下個部分，所以提供以下其他選用資源，協助深入瞭解本文件提及的一些概念，但是這些並非繼續執行歷程的必要條件。
 
-* [製作頁面快速入門指南](/help/sites-cloud/authoring/getting-started/quick-start.md) - 使用 AEM Sites 建立內容的最重要概念的簡易概觀
+* [製作頁面快速入門指南](/help/sites-cloud/authoring/quick-start.md) - 使用 AEM Sites 建立內容的最重要概念的簡易概觀
 * [MSM 和翻譯](/help/sites-cloud/administering/msm-and-translation.md) - 詳細說明 AEM 多網站管理員以及它如何與其翻譯工具一起工作

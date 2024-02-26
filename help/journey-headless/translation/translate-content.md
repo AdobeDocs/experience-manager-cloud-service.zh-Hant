@@ -2,9 +2,9 @@
 title: 翻譯 Headless 內容
 description: 使用翻譯連接器來翻譯您的 Headless 內容。
 exl-id: 3bfbf186-d684-4742-8c5c-34c34ff3adb5
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
-workflow-type: ht
-source-wordcount: '2119'
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
+workflow-type: tm+mt
+source-wordcount: '2120'
 ht-degree: 100%
 
 ---
@@ -184,7 +184,7 @@ AEM 現在與您的翻譯設定和連接器通訊，以將內容傳送到翻譯�
 >
 >路徑瀏覽器是功能強大的工具，可讓您搜尋、篩選和導覽您的內容。選取「**僅內容/篩選器**」按鈕以切換側面板並顯示進階篩選器，例如「**修改日期**」或「**翻譯狀態**」。
 >
->若要進一步了解路徑瀏覽器，請參閱[其他資源章節。](#additional-resources)
+>若要進一步了解路徑瀏覽器，請參閱[其他資源章節](#additional-resources)。
 
 您可以使用前述步驟將必要的內容新增至專案的所有語言 (工作) 中。選取所有內容後，您可以開始翻譯。
 
@@ -249,4 +249,4 @@ AEM 的翻譯框架從翻譯連接器接收翻譯，然後根據語言根並使�
 雖然建議您查閱文件[發佈已翻譯內容](publish-content.md)來繼續 Headless 翻譯歷程的下個部分，以下也有一些其他選擇性資源，在深入探究本文件提到的一些概念，但不是繼續 Headless 歷程的必要條件。
 
 * [管理翻譯專案](/help/sites-cloud/administering/translation/managing-projects.md) - 了解翻譯專案的詳細資料和其他功能，例如人工翻譯工作流程和多語言專案。
-* [製作環境和工具](/help/sites-cloud/authoring/fundamentals/environment-tools.md##path-selection) - AEM 提供各種機制來組織和編輯您的內容，包括強大的路徑瀏覽器。
+* [製作環境和工具](/help/sites-cloud/authoring/path-selection.md#path-selection) - AEM 提供各種機制來組織和編輯您的內容，包括強大的路徑瀏覽器。

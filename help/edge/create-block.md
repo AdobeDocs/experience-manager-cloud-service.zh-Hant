@@ -1,8 +1,8 @@
 ---
 title: 建立經檢測適用 Universal Editor 的區塊
 description: 了解如何在使用 Edge Delivery Services 專案進行的 AEM 製作環境中，建立經檢測適用 Universal Editor 的區塊。
-source-git-commit: 40e404c743102f1de8b3d959597836f04f0c0fef
-workflow-type: ht
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
+workflow-type: tm+mt
 source-wordcount: '1205'
 ht-degree: 100%
 
@@ -130,7 +130,7 @@ Adobe 建議您採用三階段方法來開發區塊：
 
 現在您的基本引述區塊已定義並提交給範例專案，您可以將引述區塊新增至現有頁面。
 
-1. 在瀏覽器中，登入 AEM as a Cloud Service。[使用 Sites 控制台，](/help/sites-cloud/authoring/getting-started/basic-handling.md) 導覽至您在「[使用 Edge Delivery Services 進行 AEM 製作的開發人員快速入門指南](/help/edge/edge-dev-getting-started.md)」指南中建立的網站，然後選擇一個頁面。
+1. 在瀏覽器中，登入 AEM as a Cloud Service。[使用 Sites 控制台，](/help/sites-cloud/authoring/basic-handling.md) 導覽至您在「[使用 Edge Delivery Services 進行 AEM 製作的開發人員快速入門指南](/help/edge/edge-dev-getting-started.md)」指南中建立的網站，然後選擇一個頁面。
 
    * 在本案例中，`index`是用於說明目的。
 

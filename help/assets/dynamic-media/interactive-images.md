@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Interactive Images
 role: User
 exl-id: 89eef5e6-d508-4f33-b54e-24d4df49f8c3
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 89f23a590338561b4cfeb10b54a260a135ec2f08
 workflow-type: tm+mt
 source-wordcount: '4072'
 ht-degree: 1%
@@ -28,7 +28,7 @@ ht-degree: 1%
 
 ## 快速入門：互動影像 {#quick-start-interactive-images}
 
-下列逐步工作流程說明可協助您在Adobe Experience Manager資產中快速啟動並執行互動式影像。
+下列逐步工作流程說明可協助您在Adobe Experience Manager Assets中快速啟動並執行互動式影像。
 
 尋找 **範例** 標題於部分快速入門任務中。 它包含一個簡短教學課程，其基礎為 [尚未新增互動影像的網頁範例](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html).
 
@@ -65,7 +65,7 @@ ht-degree: 1%
 >* 您想要透過觸發至快速檢視，將互動性新增至影像。
 >* 您實作的Experience Manager會 *非* 使用電子商務整合架構，將產品資料從任何電子商務解決方案提取至Experience Manager。 這類解決方案包括IBM®WebSphere® Commerce、Elastic Path、SAP Hybris或Intershop。
 >
-如果您的Experience Manager實作使用電子商務，您可以略過此任務並繼續下一個任務。
+>如果您的Experience Manager實作使用電子商務，您可以略過此任務並繼續下一個任務。
 
 首先，請識別您現有Quickview實作所使用的動態變數，以便您可以輸入熱點資料來建立互動式影像。
 
@@ -185,7 +185,7 @@ ht-degree: 1%
    儲存後，此標題會顯示在「檢視器預設集」清單頁面中。
 
 1. 在「豐富型媒體類型」下拉式功能表中，選取「互動 **[!UICONTROL 式影像」]**。
-1. 選擇 **[!UICONTROL 建立]**。
+1. 選取「**[!UICONTROL 建立]**」。
 1. 在「編輯檢視器預設集」頁面上，選取 **[!UICONTROL 外觀]** 標籤。
 1. 執行下列任一項作業：
 
@@ -218,11 +218,11 @@ ht-degree: 1%
 
 新增熱點時，您可以將熱點定義為「快速檢視」彈出式顯示、超連結或體驗片段。
 
-另請參閱 [體驗片段](/help/sites-cloud/authoring/fundamentals/experience-fragments.md).
+另請參閱 [體驗片段](/help/sites-cloud/authoring/fragments/content-fragments.md).
 
 >[!NOTE]
 >
-將檢視器內嵌在體驗片段中時，不支援互動影像中的社群媒體分享工具。 請改用或建立沒有社群媒體分享工具的檢視器預設集。 這類檢視器預設集可讓您成功將其嵌入體驗片段中。
+>將檢視器內嵌在體驗片段中時，不支援互動影像中的社群媒體分享工具。 請改用或建立沒有社群媒體分享工具的檢視器預設集。 這類檢視器預設集可讓您成功將其嵌入體驗片段中。
 
 在您目前的建立/編輯作業階段期間，支援頁面右上角附近的「復原」和「重做」選項。
 
@@ -232,15 +232,15 @@ ht-degree: 1%
 
 >[!NOTE]
 >
-當您將熱點新增至互動影像或轉盤橫幅中的影像時，熱點資訊會儲存在相同的中繼資料位置。 此位置是相對於影像的位置，無論其為互動影像或輪播橫幅。 這項功能表示您可以在任一檢視器中輕鬆重複使用相同的影像，以及其定義的熱點資料。
+>當您將熱點新增至互動影像或轉盤橫幅中的影像時，熱點資訊會儲存在相同的中繼資料位置。 此位置是相對於影像的位置，無論其為互動影像或輪播橫幅。 這項功能表示您可以在任一檢視器中輕鬆重複使用相同的影像，以及其定義的熱點資料。
 >
-但是請注意，轉盤橫幅支援也可能包含熱點的影像上的影像地圖，互動式影像則否。 如果您打算建立使用相同影像的互動式影像或轉盤橫幅，請記住這一點。 您可以改用相同影像的個別復本，建立互動影像和輪播橫幅。
+>但是請注意，轉盤橫幅支援也可能包含熱點的影像上的影像地圖，互動式影像則否。 如果您打算建立使用相同影像的互動式影像或轉盤橫幅，請記住這一點。 您可以改用相同影像的個別復本，建立互動影像和輪播橫幅。
 >
-另請參閱 [輪播橫幅](/help/assets/dynamic-media/carousel-banners.md).
+>另請參閱 [輪播橫幅](/help/assets/dynamic-media/carousel-banners.md).
 
 >[!NOTE]
 >
-如果您使用熱點編輯互動式影像並裁切影像，則會移除您的熱點。
+>如果您使用熱點編輯互動式影像並裁切影像，則會移除您的熱點。
 
 **若要將熱點新增至影像橫幅：**
 
@@ -285,13 +285,13 @@ ht-degree: 1%
    * 選取 **[!UICONTROL 體驗片段]**.
 
       * 如果您是Experience Manager Sites客戶，請選取「搜尋」圖示（放大鏡）以開啟「體驗片段」頁面。 選取您要使用的體驗片段。 然後選取 **[!UICONTROL 選取]** 在頁面的右上角。 您會返回「熱點」管理頁面。
-另請參閱 [體驗片段](/help/sites-cloud/authoring/fundamentals/experience-fragments.md).
+另請參閱 [體驗片段](/help/sites-cloud/authoring/fragments/content-fragments.md).
 
       * 指定您希望體驗片段在橫幅上顯示的寬度和高度。
 
         >[!NOTE]
         >
-        將檢視器內嵌在體驗片段中時，不支援互動影像中的社群媒體分享工具。 請改用或建立沒有社群媒體分享工具的檢視器預設集。 這類檢視器預設集可讓您成功將其嵌入體驗片段中。
+        >將檢視器內嵌在體驗片段中時，不支援互動影像中的社群媒體分享工具。 請改用或建立沒有社群媒體分享工具的檢視器預設集。 這類檢視器預設集可讓您成功將其嵌入體驗片段中。
 
 1. 選取 **[!UICONTROL 儲存]** 以儲存您的工作並返回「瀏覽」頁面。
 1. 發佈互動式影像。 發佈功能會透過雲端傳送橫幅，也會產生內嵌程式碼，讓您與協力廠商網站整合。
@@ -304,7 +304,7 @@ ht-degree: 1%
 
    >[!NOTE]
    >
-   如果您使用熱點編輯互動式影像並裁切影像，則會刪除您的熱點。
+   >如果您使用熱點編輯互動式影像並裁切影像，則會刪除您的熱點。
 
 ### （可選）預覽互動式影像 {#optional-previewing-interactive-images}
 
@@ -352,7 +352,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
-因此，示範網站可購物互動影像上的熱點僅供顯示之用。 它們尚未與現有的快速檢視整合。
+>因此，示範網站可購物互動影像上的熱點僅供顯示之用。 它們尚未與現有的快速檢視整合。
 
 若要針對回應式環境將「裁切」套用至可購物互動影像，請包含互動影像設定屬性 `ZoomView.iscommand` 至路徑。 在此案例中， `ZoomView` 元件名為和 `iscommand` 是您套用的「裁切」影像伺服命令。
 
@@ -366,7 +366,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
-此工作僅適用於獨立Experience Manager Assets客戶。
+>此工作僅適用於獨立Experience Manager Assets客戶。
 
 此程式的最後一步是將互動式影像與網站上現有的快速檢視實作整合。 整合沒有適用於所有情況的解決方案。 每個Quickview實作都是獨一無二，需要特定方法。 因此，前端IT人員的協助會很有幫助。
 

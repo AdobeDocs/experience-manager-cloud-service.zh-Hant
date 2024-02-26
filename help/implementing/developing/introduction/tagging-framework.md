@@ -2,7 +2,7 @@
 title: AEM 標記框架
 description: 標籤內容，並使用AEM標籤基礎結構來分類及組織內容。
 exl-id: 25418d44-aace-4e73-be1a-4b1902f40403
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
 source-wordcount: '1562'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 標籤可讓內容分類並整理。 標籤可以依名稱空間和分類法來分類。 如需使用標籤的詳細資訊：
 
-* 另請參閱 [使用標籤](/help/sites-cloud/authoring/features/tags.md) 有關將內容標籤為內容作者的資訊。
+* 另請參閱 [使用標籤](/help/sites-cloud/authoring/sites-console/tags.md) 有關將內容標籤為內容作者的資訊。
 * 請參閱管理標籤，以取得管理員對於建立和管理標籤以及已對哪些內容套用標籤的觀點。
 
 本文主要介紹在AEM中支援標籤的基本架構，以及如何作為開發人員使用它。
@@ -175,7 +175,7 @@ AEM中包含的「節點型別」的基本定義如下：
      >
      >此 `cq:movedTo` 只有在符合下列任一條件時，屬性才會新增至移動或合併的標籤：
      >
-     > 1. 標籤用於內容中（表示它有參考）。 或
+     > 1. 標籤用於內容中（表示它有參考）。 或者
      > 1. 標籤具有已移動的子系。
      >
 * 標籤B已建立（如果有移動）並接收 `cq:backlinks` 屬性。

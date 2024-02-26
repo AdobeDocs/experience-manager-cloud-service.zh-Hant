@@ -4,9 +4,9 @@ description: 了解如何使用 AEM 強大的 Live Copy 和多網站管理員功
 feature: Multi Site Manager
 role: Admin
 exl-id: 22b4041f-1df9-4189-8a09-cbc0c89fbf2e
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
-source-wordcount: '2698'
+source-wordcount: '2702'
 ht-degree: 96%
 
 ---
@@ -132,7 +132,7 @@ MSM 可以使用相關主控台的各種選項直接在 UI 中存取 MSM。
 
 * **參考** (**Sites**)
 
-   * [參考](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)邊欄提供關於 **Live Copy** 的資訊以及對適當動作的存取。
+   * [參考](/help/sites-cloud/authoring/basic-handling.md#references)邊欄提供關於 **Live Copy** 的資訊以及對適當動作的存取。
 
 * **Live Copy 概觀** (**Sites**)
 

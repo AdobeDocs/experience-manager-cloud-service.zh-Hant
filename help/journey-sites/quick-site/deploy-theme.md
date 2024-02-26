@@ -2,10 +2,10 @@
 title: 部署您的自訂主題
 description: 了解如何使用管道部署網站主題。
 exl-id: fe065972-39db-4074-a802-85895c701efd
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
-workflow-type: ht
-source-wordcount: '1014'
-ht-degree: 100%
+source-git-commit: d2352e66b380f5a3654e2fc99ce4204b32066683
+workflow-type: tm+mt
+source-wordcount: '1002'
+ht-degree: 95%
 
 ---
 
@@ -112,7 +112,9 @@ AEM 是一個強大的工具並有許多其他選項可用。查看[其他資源
 * [AEM 網站主題](https://github.com/adobe/aem-site-template-standard-theme-e2e)- 這是 AEM 網站主題的 GitHub 存放庫。
 * [npm](https://www.npmjs.com) - 用於快速建立網站的 AEM 主題以 npm 為基礎。
 * [webpack](https://webpack.js.org) - 用於快速建立網站的 AEM 主題以 webpack 為基礎。
-* [建立和組織頁面](/help/sites-cloud/authoring/fundamentals/organizing-pages.md) - 如果您使用範本建立 AEM 網站後想要進一步自訂，本指南詳細介紹如何管理 AEM 網站的頁面。
+* [組織頁面](/help/sites-cloud/authoring/sites-console/organizing-pages.md)  — 本指南詳細說明如何整理AEM網站的頁面。
+* [建立頁面](/help/sites-cloud/authoring/sites-console/creating-pages.md)  — 本指南詳細說明如何新增頁面至您的網站。
+* [管理頁面](/help/sites-cloud/authoring/sites-console/managing-pages.md)  — 本指南詳細說明如何管理您的網站頁面，包括移動、複製和刪除。
 * [如何使用套件](/help/implementing/developing/tools/package-manager.md) - 套件允許匯入和匯出存放庫內容。本文件說明如何使用 AEM 6.5 的套件，同樣適用於 AEMaaCS。
 * [上線歷程](/help/journey-onboarding/overview.md) - 本指南可作為您的起點，確保您的團隊已設定完成並可存取 AEM as a Cloud Service。
 * [Adobe Experience Manager Cloud Manager 文件](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) - 瀏覽 Cloud Manager 文件以了解其功能的完整詳細資訊。

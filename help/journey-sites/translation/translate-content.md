@@ -5,10 +5,10 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: b8ab2525-3f15-4844-866c-da47bfc7518c
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
 source-wordcount: '2526'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -57,7 +57,7 @@ ht-degree: 98%
 
 1. 導覽至「**導覽**」>「**網站**」並選擇您的專案。
 1. 找到您的專案的語言根。例如，如果您的語言根是英語，`/content/<your-project>/en`。
-   * 在第一次翻譯前，其他語言資料夾是空白的預留位置。 這些通常由內容架構者建立的。
+   * 在第一次翻譯之前，其他語言資料夾是空白預留位置。這些通常由內容架構者建立的。
 1. 找到您的專案的語言根。
 1. 選取邊欄選擇器並顯示「**參考**」面板。
 1. 選取「**語言副本**」。
@@ -123,7 +123,7 @@ ht-degree: 98%
 
 * **摘要** - 這張卡片顯示專案的基本標頭資訊，包括所有者、語言和翻譯提供者。
 * **翻譯工作** - 這張或這些卡片顯示實際翻譯工作的概觀，包括狀態、資產數量等。通常，每種語言都有一個工作，工作名稱後面附加了 ISO-2 語言代碼。
-   * 時間 [自動建立翻譯工作，](#automatically-creating) AEM會以非同步方式建立作業，且這些作業可能不會立即出現在專案中。
+   * 當[自動建立翻譯工作時，](#automatically-creating) AEM 以非同步方式建立工作，它們可能不會立即出現在專案中。
 * **團隊** - 這張卡片顯示協力執行此翻譯專案的使用者。此歷程不涵蓋此主題。
 * **任務** - 與翻譯內容相關的其他任務，例如待辦事項或工作流程項目。此歷程不涵蓋此主題。
 
@@ -285,4 +285,4 @@ AEM 的翻譯框架從翻譯連接器接收翻譯，然後根據語言根並使�
 因為我們建議您檢閱文件「[發佈翻譯內容](publish-content.md)」來繼續翻譯歷程的下個部分，所以提供以下其他選用資源，協助深入瞭解本文件提及的一些概念，但是這些並非繼續執行歷程的必要條件。
 
 * [管理翻譯專案](/help/sites-cloud/administering/translation/managing-projects.md) - 了解翻譯專案的詳細資料和其他功能，例如人工翻譯工作流程和多語言專案。
-* [製作環境和工具](/help/sites-cloud/authoring/fundamentals/environment-tools.md##path-selection) - AEM 提供各種機制來組織和編輯您的內容，包括強大的路徑瀏覽器。
+* [製作環境和工具](/help/sites-cloud/authoring/path-selection.md#path-selection) - AEM 提供各種機制來組織和編輯您的內容，包括強大的路徑瀏覽器。

@@ -2,7 +2,7 @@
 title: 內容片段模型（資產 — 內容片段）
 description: 瞭解內容片段模型如何作為AEM中Headless內容的基礎，讓您建立具有結構化內容的內容片段。
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
-source-git-commit: 62ede258711d0cb8d0b72479559c37221509e23f
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
 source-wordcount: '3011'
 ht-degree: 6%
@@ -78,9 +78,9 @@ AEM中的內容片段模型為您的定義了內容結構 [內容片段，](/hel
 
         >[!CAUTION]
         >
-        >手動更新屬性時 **屬性名稱** 對於資料型別，請注意，名稱必須僅包含A-Z、a-z、0-9和下劃線「_」作為特殊字元。
+        手動更新屬性時 **屬性名稱** 對於資料型別，請注意，名稱必須僅包含A-Z、a-z、0-9和下劃線「_」作為特殊字元。
         >
-        >如果在舊版AEM中建立的模型包含非法字元，請移除或更新這些字元。
+        如果在舊版AEM中建立的模型包含非法字元，請移除或更新這些字元。
 
      例如：
 
@@ -135,7 +135,7 @@ AEM中的內容片段模型為您的定義了內容結構 [內容片段，](/hel
 在片段編輯器中，每個例項都會顯示為一個索引標籤。
      >[!NOTE]
      >
-     >此資料型別僅用於格式設定，AEM GraphQL結構描述會忽略此資料型別。
+     此資料型別僅用於格式設定，AEM GraphQL結構描述會忽略此資料型別。
 
 ## 屬性 {#properties}
 
@@ -147,7 +147,7 @@ AEM中的內容片段模型為您的定義了內容結構 [內容片段，](/hel
 
   >[!CAUTION]
   >
-  >如果在舊版AEM中建立的模型包含非法字元，請移除或更新這些字元。
+  如果在舊版AEM中建立的模型包含非法字元，請移除或更新這些字元。
 
 * **呈現為**
 在片段中實現/轉譯欄位的各種選項。 通常，此屬性可讓您定義作者是否看到欄位的單一例項，或允許建立多個例項。 時間 **多個欄位** 用於定義專案的最小和最大數量 — 請參閱 [驗證](#validation) 以取得更多詳細資料。
@@ -177,15 +177,15 @@ AEM中的內容片段模型為您的定義了內容結構 [內容片段，](/hel
 
   >[!NOTE]
   >
-  >確保每個語言根的唯一性。
+  確保每個語言根的唯一性。
 
   >[!NOTE]
   >
-  >變數可能具有相同的 *獨特* 值做為相同片段的變數，但與其他片段變數中使用的值不同。
+  變數可能具有相同的 *獨特* 值做為相同片段的變數，但與其他片段變數中使用的值不同。
 
   >[!CAUTION]
   >
-  >如果您想使用MSM （這會建立內容片段的復本），則任何 **獨特** 應從在各自內容片段模式中使用的任何資料型別中移除限制。
+  如果您想使用MSM （這會建立內容片段的復本），則任何 **獨特** 應從在各自內容片段模式中使用的任何資料型別中移除限制。
 
 * 另請參閱 **[內容參考](#content-reference)** 以取得該特定資料型別及其屬性的詳細資訊。
 
@@ -237,18 +237,16 @@ AEM中的內容片段模型為您的定義了內容結構 [內容片段，](/hel
    * 可讓您包含/擷取結構化資料。
      >[!NOTE]
      >
-     >此方法與下列專案特別相關： [搭配GraphQL使用內容片段的Headless內容傳送](/help/assets/content-fragments/content-fragments-graphql.md).
+     此方法與下列專案特別相關： [搭配GraphQL使用內容片段的Headless內容傳送](/help/assets/content-fragments/content-fragments-graphql.md).
    * 可以為一個或多個參考（在產生的片段中）設定。
 
 >[!NOTE]
 >
->AEM對下列專案具有週期性保護：
+AEM對下列專案具有週期性保護：
 >
->* 內容參考
->  這可防止使用者新增對目前片段的引用。 這可能會導致空的片段參考選擇器對話方塊。
+* 內容參考這可防止使用者新增對目前片段的參考。 這可能會導致空的片段參考選擇器對話方塊。
 >
->* GraphQL中的片段參考
->  如果您建立深層查詢，且該查詢傳回多個互相參照的內容片段，則該查詢在第一次出現時會傳回null。
+* GraphQL中的片段參考如果您建立深層查詢，並傳回彼此參照的多個內容片段，則第一次出現時將會傳回null。
 
 ### 內容參考 {#content-reference}
 
@@ -290,7 +288,7 @@ type CompanyModel {
 
 >[!NOTE]
 >
->這與以下內容特別相關： [搭配GraphQL使用內容片段的Headless內容傳送](/help/assets/content-fragments/content-fragments-graphql.md).
+這與以下內容特別相關： [搭配GraphQL使用內容片段的Headless內容傳送](/help/assets/content-fragments/content-fragments-graphql.md).
 
 除了標準屬性之外，您還可以定義：
 
@@ -316,9 +314,9 @@ type CompanyModel {
 
 >[!NOTE]
 >
->已建立重複保護機制。 它禁止使用者在片段參考中選取目前的內容片段。 這可能會導致空的片段參考選擇器對話方塊。
+已建立重複保護機制。 它禁止使用者在片段參考中選取目前的內容片段。 這可能會導致空的片段參考選擇器對話方塊。
 >
->GraphQL中也有片段參考的週期性保護。 如果您在兩個相互參照的內容片段間建立深層查詢，則會傳回null。
+GraphQL中也有片段參考的週期性保護。 如果您在兩個相互參照的內容片段間建立深層查詢，則會傳回null。
 
 ## 內容片段模型 — 屬性 {#content-fragment-model-properties}
 
@@ -333,7 +331,7 @@ type CompanyModel {
 
      >[!NOTE]
      >
-     >這僅由 *新* 內容片段編輯器。 另請參閱 [內容片段模型](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#content-fragment-model-properties) 以取得進一步資訊。
+     這僅由 *新* 內容片段編輯器。 另請參閱 [內容片段模型](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#content-fragment-model-properties) 以取得進一步資訊。
 
 
 ## 啟用或停用內容片段模型 {#enabling-disabling-a-content-fragment-model}
@@ -383,7 +381,7 @@ type CompanyModel {
 
 >[!NOTE]
 >
->其機制類似於 [允許頁面範本](/help/sites-cloud/authoring/features/templates.md#allowing-a-template-author) 頁面及其子頁面（在頁面的進階屬性中）。
+其機制類似於 [允許頁面範本](/help/sites-cloud/authoring/sites-console/templates.md#allowing-a-template-author) 頁面及其子頁面（在頁面的進階屬性中）。
 
 若要設定 **原則** 的 **允許的內容片段模型**：
 
@@ -417,7 +415,7 @@ type CompanyModel {
 
 >[!CAUTION]
 >
->刪除內容片段模型可能會影響相依片段。
+刪除內容片段模型可能會影響相依片段。
 
 若要刪除內容片段模型：
 
@@ -428,7 +426,7 @@ type CompanyModel {
 
    >[!NOTE]
    >
-   >如果參照模型，則會發出警告。 採取適當行動。
+   如果參照模型，則會發出警告。 採取適當行動。
 
 ## 發佈內容片段模型 {#publishing-a-content-fragment-model}
 
@@ -444,7 +442,7 @@ type CompanyModel {
 
    >[!NOTE]
    >
-   >如果您發佈的內容片段尚未發佈模型，選擇清單會指出這一點，模型會與片段一起發佈。
+   如果您發佈的內容片段尚未發佈模型，選擇清單會指出這一點，模型會與片段一起發佈。
 
 ## 取消發佈內容片段模型 {#unpublishing-a-content-fragment-model}
 
@@ -462,7 +460,7 @@ type CompanyModel {
 
 ![取消發佈使用中的模型時顯示內容片段模型錯誤訊息](assets/cfm-model-unpublish-error.png)
 
-訊息會建議您檢查 [引用](/help/sites-cloud/authoring/getting-started/basic-handling.md#references) 面板以進一步調查：
+訊息會建議您檢查 [引用](/help/sites-cloud/authoring/basic-handling.md#references) 面板以進一步調查：
 
 ![參考中的內容片段模型](assets/cfm-model-references.png)
 
@@ -532,6 +530,6 @@ type CompanyModel {
 
      >[!NOTE]
      >
-     >頂端可能仍會顯示警告，但此時模型已由現有內容片段使用。
+     頂端可能仍會顯示警告，但此時模型已由現有內容片段使用。
 
    * **取消** 將帶您返回主控台。

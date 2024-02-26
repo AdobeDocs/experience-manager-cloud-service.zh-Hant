@@ -4,9 +4,9 @@ description: 系統管理員設定必要的雲端資源後，了解 AEM 使用�
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: 86700cce-139f-451e-9c21-b38b6332f773
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
-workflow-type: ht
-source-wordcount: '577'
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
+workflow-type: tm+mt
+source-wordcount: '576'
 ht-degree: 100%
 
 ---
@@ -83,5 +83,5 @@ ht-degree: 100%
 
 如果您想要此上線歷程以外的內容，以下是您可選擇的其他資源。
 
-[製作頁面的快速入門指南](/help/sites-cloud/authoring/getting-started/quick-start.md) - 從此處開始，快速了解 AEM 中的製作基礎知識。
+[製作頁面的快速入門指南](/help/sites-cloud/authoring/quick-start.md) - 從此處開始，快速了解 AEM 中的製作基礎知識。
 [Headless 製作之旅](/help/journey-headless/author/overview.md)- 如果您想製作 Headless 內容，請遵循此引導式介紹。

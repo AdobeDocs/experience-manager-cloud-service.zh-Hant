@@ -2,9 +2,9 @@
 title: 將標記內建至 AEM 應用程式中
 description: 以程式設計方式處理自訂AEM應用程式內的標籤或擴展標籤
 exl-id: a106dce1-5d51-406a-a563-4dea83987343
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
-source-wordcount: '758'
+source-wordcount: '717'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 1%
 
 有關標籤的相關資訊：
 
-* 另請參閱 [使用標籤](/help/sites-cloud/authoring/features/tags.md) 有關將內容標籤為內容作者的資訊。
+* 另請參閱 [使用標籤](/help/sites-cloud/authoring/sites-console/tags.md) 有關將內容標籤為內容作者的資訊。
 * 請參閱管理標籤，以取得管理員對於建立和管理標籤以及已對哪些內容套用標籤的觀點。
 
 ## 標籤API的總覽 {#overview-of-the-tagging-api}

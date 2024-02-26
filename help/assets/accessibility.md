@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Accessibility,Asset Management
 role: User,Architect,Leader
 exl-id: a6d24ba6-3cb1-42cb-9942-f78572c93358
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
-source-wordcount: '1943'
-ht-degree: 3%
+source-wordcount: '1916'
+ht-degree: 2%
 
 ---
 
@@ -36,7 +36,7 @@ Possible topics to cover in this article are below.
 
 [!DNL Experience Manager] 為下列標準提供不同等級的支援：
 
-* [網頁內容可及性指引 (WCAG) 2.1](https://www.w3.org/TR/WCAG/).
+* [網頁內容可及性指引(WCAG) 2.1](https://www.w3.org/TR/WCAG/).
 * [修訂《康復法》第508條](https://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh/final-rule/text-of-the-standards-and-guidelines).
 * [協助工具計畫 — 由W3C提供的協助工具多樣化網際網路應用程式(WAI-ARIA)](https://www.w3.org/WAI/standards-guidelines/aria/).
 * [EN 301 549](https://en.wikipedia.org/wiki/EN_301_549).
@@ -80,7 +80,7 @@ To know how [!DNL Dynamic Media] is accessible, see [accessibility in [!DNL Dyna
 
 ### 中的鍵盤快速鍵 [!DNL Assets] {#keyboard-shortcuts}
 
-中的下列動作 [!DNL Assets] 使用列出的鍵盤快速鍵。 大多數套用至的鍵盤快速鍵 [!DNL Experience Manager] 主控台也適用於 [!DNL Assets]. 另請參閱 [主控台的鍵盤快速鍵](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md). 瞭解如何 [啟用或停用鍵盤快速鍵](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md).
+中的下列動作 [!DNL Assets] 使用列出的鍵盤快速鍵。 大多數套用至的鍵盤快速鍵 [!DNL Experience Manager] 主控台也適用於 [!DNL Assets]. 另請參閱 [主控台的鍵盤快速鍵](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md). 瞭解如何 [啟用或停用鍵盤快速鍵](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md).
 
 | 使用者介面或情境 | 鍵盤快速鍵 | 動作 |
 |---|---|---|
@@ -93,7 +93,7 @@ To know how [!DNL Dynamic Media] is accessible, see [accessibility in [!DNL Dyna
 | [!DNL Assets] 主控台 | `Alt + 3` | 顯示 [!UICONTROL 時間表] 所選資產的ID。 |
 | [!DNL Assets] 主控台 | `Alt + 4` | 開啟所選資產的即時副本參考。 |
 | [!DNL Assets] 主控台 | `Alt + 5` | 叫用選取資料夾中的搜尋和搜尋。 |
-| 已選取資產或資料夾 | 退格字元 | 刪除選取的資產或資料夾。 |
+| 已選取資產或資料夾 | 退格鍵 | 刪除選取的資產或資料夾。 |
 | 已選取資產或資料夾 | `p` | 開啟所選資產的「屬性」頁面。 |
 | 已選取資產或資料夾 | `e` | 編輯選取的資產。 |
 | 已選取資產或資料夾 | `m` | 移動選取的資產。 |
@@ -232,7 +232,7 @@ Review CQ-4282133 before adding - Close button in a coral-dialog box was not acc
 * [管理收藏集](manage-collections.md)
 * [大量中繼資料匯入](metadata-import-export.md)
 
-## 提供意見回饋 {#a11y-feedback}
+## 提供回饋意見 {#a11y-feedback}
 
 若要提供與協助工具相關的意見回饋、詢問問題並請求產品增強功能，請使用下列方法：
 

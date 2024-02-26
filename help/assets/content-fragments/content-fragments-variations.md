@@ -2,7 +2,7 @@
 title: 變化 — 編寫片段內容（資產 — 內容片段）
 description: 瞭解內容片段變數如何讓您為片段製作內容，然後根據用途建立該內容的變數，從而增加彈性。
 exl-id: af05aae6-d535-4007-ba81-7f41213ff152
-source-git-commit: 62ede258711d0cb8d0b72479559c37221509e23f
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
 source-wordcount: '2474'
 ht-degree: 6%
@@ -64,7 +64,7 @@ ht-degree: 6%
 
 * 指派 **標籤** 變數；標籤可以新增、更新和移除。
 
-   * [標籤](/help/sites-cloud/authoring/features/tags.md) 在組織片段時功能強大，因為可用於內容分類和分類法。 標籤可用於尋找內容（依標籤）並套用大量作業。
+   * [標籤](/help/sites-cloud/authoring/sites-console/tags.md) 在組織片段時功能強大，因為可用於內容分類和分類法。 標籤可用於尋找內容（依標籤）並套用大量作業。
 
       * 搜尋標籤會傳回片段，並反白標籤變數。
       * 變數標籤也可用來將特定內容傳遞網路(CDN)設定檔（用於CDN快取）的變數分組，而不是使用變數名稱。
@@ -242,14 +242,14 @@ RTF編輯可讓您設定格式：
 
 >[!CAUTION]
 >
-英文是現成可用的。
+>英文是現成可用的。
 >
-Software Distribution提供其他語言作為語言模型套件：
+>Software Distribution提供其他語言作為語言模型套件：
 >
-* [法文(fr)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-fr)
-* [德文(de)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-de)
-* [義大利文(it)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-it)
-* [西班牙文(es)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-es)
+>* [法文(fr)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-fr)
+>* [德文(de)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-de)
+>* [義大利文(it)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-it)
+>* [西班牙文(es)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-es)
 >
 
 1. 選取 **主版** 或必要的變數。
@@ -318,7 +318,7 @@ Software Distribution提供其他語言作為語言模型套件：
 
   >[!NOTE]
   >
-  如果有一段文字套用了多個註解，系統便會提供下拉式選取器。
+  >如果有一段文字套用了多個註解，系統便會提供下拉式選取器。
 
 * 當您刪除套用了註解的整個文字時，註解也會一併刪除。
 
@@ -332,17 +332,17 @@ Software Distribution提供其他語言作為語言模型套件：
 
 若要簡化編寫內容片段的程式，您可以新增 [資產](/help/assets/manage-digital-assets.md) （影像）直接放入片段。
 
-它們被新增到片段的段落序列中，沒有任何格式；格式化可以在以下情況下完成 [在頁面上使用/參考片段](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
+它們被新增到片段的段落序列中，沒有任何格式；格式化可以在以下情況下完成 [在頁面上使用/參考片段](/help/sites-cloud/authoring/fragments/content-fragments.md).
 
 >[!CAUTION]
 >
-無法在引用頁面上移動或刪除這些資產，這必須在片段編輯器中完成。
+>無法在引用頁面上移動或刪除這些資產，這必須在片段編輯器中完成。
 >
-不過，資產的格式（例如大小）必須在以下位置完成： [頁面編輯器](/help/sites-cloud/authoring/fundamentals/content-fragments.md). 資產在片段編輯器中的呈現方式僅供編寫內容流程之用。
+>不過，資產的格式（例如大小）必須在以下位置完成： [頁面編輯器](/help/sites-cloud/authoring/fragments/content-fragments.md). 資產在片段編輯器中的呈現方式僅供編寫內容流程之用。
 
 >[!NOTE]
 >
-有多種方法可新增 [影像](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) 至片段和/或頁面。
+>有多種方法可新增 [影像](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) 至片段和/或頁面。
 
 1. 將游標放在您要新增影像的位置。
 1. 使用「插 **入資產** 」圖示開啟搜尋對話方塊。
@@ -357,10 +357,10 @@ Software Distribution提供其他語言作為語言模型套件：
 
    >[!CAUTION]
    >
-   新增資產後，如果您將格式變更為：
+   >新增資產後，如果您將格式變更為：
    >
-   * **純文字**：資產從片段中遺失。
-   * **Markdown**：資產不可見，但當您返回時仍會存在 **RTF文字**.
+   >* **純文字**：資產從片段中遺失。
+   >* **Markdown**：資產不可見，但當您返回時仍會存在 **RTF文字**.
 
 ### 將內容片段插入片段 {#inserting-content-fragment-into-your-fragment}
 
@@ -370,17 +370,17 @@ Software Distribution提供其他語言作為語言模型套件：
 
 >[!NOTE]
 >
-當您符合以下條件時，即可使用此選項： **多行文字** 已設定為 **允許片段參考**.
+>當您符合以下條件時，即可使用此選項： **多行文字** 已設定為 **允許片段參考**.
 
 >[!CAUTION]
 >
-無法在引用頁面上移動或刪除這些資產，這必須在片段編輯器中完成。
+>無法在引用頁面上移動或刪除這些資產，這必須在片段編輯器中完成。
 >
-不過，資產的格式（例如大小）必須在以下位置完成： [頁面編輯器](/help/sites-cloud/authoring/fundamentals/content-fragments.md). 資產在片段編輯器中的呈現方式僅供編寫內容流程之用。
+>不過，資產的格式（例如大小）必須在以下位置完成： [頁面編輯器](/help/sites-cloud/authoring/fragments/content-fragments.md). 資產在片段編輯器中的呈現方式僅供編寫內容流程之用。
 
 >[!NOTE]
 >
-有多種方法可新增 [影像](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) 至片段和/或頁面。
+>有多種方法可新增 [影像](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) 至片段和/或頁面。
 
 1. 將游標放在您要新增片段的位置。
 1. 使用 **插入內容片段** 圖示以開啟搜尋對話方塊。
@@ -395,10 +395,10 @@ Software Distribution提供其他語言作為語言模型套件：
 
    >[!CAUTION]
    >
-   新增對其他片段的參考後，如果您將格式變更為：
+   >新增對其他片段的參考後，如果您將格式變更為：
    >
-   * **純文字**：參考會從片段中遺失。
-   * **Markdown**：參考會保留。
+   >* **純文字**：參考會從片段中遺失。
+   >* **Markdown**：參考會保留。
 
 ## 繼承 {#inheritance}
 
@@ -410,7 +410,7 @@ Software Distribution提供其他語言作為語言模型套件：
 
 例如：
 
-* 取消繼承
+* 取消先前設定
 
   ![取消繼承按鈕](/help/assets/content-fragments/assets/editing-cancel-inheritance.png)
 
@@ -440,11 +440,11 @@ Software Distribution提供其他語言作為語言模型套件：
 
    >[!NOTE]
    >
-   建立變數時，一律為 **主版** 「 」是複製的，而非開啟的變數。
+   >建立變數時，一律為 **主版** 「 」是複製的，而非開啟的變數。
 
    >[!NOTE]
    >
-   當您建立變數時，所有 **標籤** 目前已指派給 **主版** 變數會複製到您的新變數。
+   >當您建立變數時，所有 **標籤** 目前已指派給 **主版** 變數會複製到您的新變數。
 
 ### 編輯變數 {#editing-a-variation}
 
@@ -467,7 +467,7 @@ Software Distribution提供其他語言作為語言模型套件：
 
 >[!NOTE]
 >
-這只會影響變數 **標題**.
+>這只會影響變數 **標題**.
 
 ### 刪除變數 {#deleting-a-variation}
 
@@ -479,7 +479,7 @@ Software Distribution提供其他語言作為語言模型套件：
 
 >[!NOTE]
 >
-您無法刪除 **主版**.
+>您無法刪除 **主版**.
 
 ### 與主版同步 {#synchronizing-with-master}
 
@@ -489,13 +489,13 @@ Software Distribution提供其他語言作為語言模型套件：
 
 >[!CAUTION]
 >
-同步僅可用於將更改從 *主&#x200B;**版複製**到變化*。
+>同步僅可用於將更改從 *主&#x200B;**版複製**到變化*。
 >
-只同步變數的目前元素。
+>只同步變數的目前元素。
 >
-同步僅適用於 **多行文字** 資料型別。
+>同步僅適用於 **多行文字** 資料型別。
 >
-將變 *更從變更傳輸&#x200B;**至Master*** ，不提供選項。
+>將變 *更從變更傳輸&#x200B;**至Master*** ，不提供選項。
 
 1. 在片段編輯器中開啟您的內容片段。 確保 **主版** 已編輯。
 

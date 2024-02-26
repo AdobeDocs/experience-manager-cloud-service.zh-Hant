@@ -4,10 +4,10 @@ description: 瞭解如何使用AEM網站範本來預先定義網站結構和初�
 feature: Administering
 role: Admin
 exl-id: 42eec922-b02e-4f2c-8107-7336192919c7
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
-source-wordcount: '566'
-ht-degree: 1%
+source-wordcount: '556'
+ht-degree: 19%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->不應混淆AEM網站範本 [頁面範本](/help/sites-cloud/authoring/features/templates.md). 網站範本定義網站的整體結構。 頁面範本會定義個別頁面的結構和初始內容。
+>不應混淆AEM網站範本 [頁面範本](/help/sites-cloud/authoring/sites-console/templates.md). 網站範本定義網站的整體結構。 頁面範本定義單一頁面的結構和初始內容。
 >
 >不應混淆AEM網站範本 [AEM網站主題](site-themes.md). AEM網站主題僅包含AEM網站的樣式資訊。 AEM網站範本定義網站結構和初始內容，並包含要允許的AEM網站主題 [快速網站建立](create-site.md).
 
@@ -33,15 +33,15 @@ ht-degree: 1%
 
 您可以將多個範本新增至AEM，然後將其用於 [建立網站](create-site.md).
 
-1. 登入您的AEM編寫環境並導覽至網站主控台
+1. 登入您的 AEM 製作環境並導覽至 Sites 主控台
 
    * `https://<your-author-environment>.adobeaemcloud.com/sites.html/content`
 
-1. 選取 **建立** 在畫面的右上方，從下拉式功能表中選取 **從範本建立網站**.
+1. 選取畫面右上角的「**建立**」並從下拉式清單選取「**來自範本的網站**」。
 
    ![從範本建立網站](../assets/create-site-from-template.png)
 
-1. 在「建立網站」精靈中，選取 **匯入** 左欄頂端的。
+1. 在「建立網站」精靈中，選取左欄頂端的「**匯入**」。
 
    ![網站建立精靈](../assets/site-creation-wizard.png)
 
@@ -59,9 +59,9 @@ ht-degree: 1%
 
 網站範本只是具有邏輯結構的套件，可清楚反映套件內容的用途。 網站範本具有下列結構。
 
-* `files`：包含UI套件、XD檔案和可能的其他檔案的資料夾
-* `previews`：包含網站範本熒幕擷圖的資料夾
-* `site`：針對從此範本建立之每個網站複製的內容套件，例如頁面範本、頁面等。
+* `files`：包含 UI 套件、XD 檔案及可能有其他檔案的資料夾
+* `previews`：包含網站範本螢幕擷圖的資料夾
+* `site`：使用這個範本建立的每個網站的複製內容之內容包，例如頁面範本、各個頁面等。
 * `theme`：的來源 [網站主題](site-themes.md) 修改網站外觀，包括CSS、JavaScript等。
 
 ## 標準網站範本 {#standard-site-template}
