@@ -4,9 +4,9 @@ description: 製作完美的表單，快速！ ⚡ AEM Forms Edge Delivery檔案
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 87ed5f0aed5554f56e28f317d1399429245a2d06
+source-git-commit: 4a3ebcf7985253ebca24e90ab57ae7eaf3e924e9
 workflow-type: tm+mt
-source-wordcount: '913'
+source-wordcount: '980'
 ht-degree: 1%
 
 ---
@@ -18,13 +18,15 @@ ht-degree: 1%
 
 這些表單會直接將資料提交至Microsoft Excel或Google Sheets檔案，讓您能夠使用生動的生態系統以及Google Sheets、Microsoft Excel和Microsoft Sharepoint的強大API，輕鬆處理提交的資料或啟動現有的業務工作流程。
 
+AEM Forms Edge Delivery提供表單區塊，協助您輕鬆建立表單，以擷取及儲存擷取的資料。 您可以在AEM EDS專案中加入Form區塊以開始建立表單。 讓我們開始吧：
+
 
 ## 先決條件
 
 開始之前，請確定您已完成下列步驟：
 
-* 設定並複製您的邊緣傳遞服務(EDS)專案。 另請參閱 [開發人員教學課程](https://www.aem.live/developer/tutorial) 以取得詳細資訊。 在本檔案中，Edge Delivery Service (EDS)專案的本機資料夾稱為 `[EDS Project repository]` .
-* 原地複製 [Forms區塊存放庫](https://github.com/adobe/afb). 它包含在EDS網頁上轉譯表單的程式碼。 在本檔案中，您的Forms Block存放庫的本機資料夾稱為 `[Forms Block repository]` （在此檔案中）。
+* 使用AEM範本設定Edge Delivery Service (EDS) Github專案，並在本機電腦上複製對應的Github存放庫。 另請參閱 [開發人員教學課程](https://www.aem.live/developer/tutorial) 以取得詳細資訊。 在本檔案中，Edge Delivery Service (EDS)專案的本機資料夾稱為 `[EDS Project repository]` .
+* 原地複製 [Forms區塊存放庫](https://github.com/adobe/afb) 本機電腦上。 它包含在EDS網頁上轉譯表單的程式碼。 在本檔案中，您的Forms Block存放庫的本機資料夾稱為 `[Forms Block repository]`.
 * 確保您有權存取Google工作表或Microsoft SharePoint。
 
 
@@ -32,13 +34,11 @@ ht-degree: 1%
 
 +++ 步驟1：將表單區塊新增至您的邊緣傳遞服務(EDS)專案。
 
-AEM Forms Edge Delivery包含表單區塊，可協助您輕鬆建立表單，以擷取及儲存擷取的資料。 若要將表單區塊納入您的Edge Delivery Service專案：
+此 `Form block` 包含新增表單至EDS網站的功能。 區塊不包含在使用AEM範本建立的專案中。 若要將表單區塊納入您的Edge Delivery Service專案：
 
-1. 瀏覽至 `[Forms Block repository]/blocks` 並複製 `forms` 資料夾。
+1. 導覽至 `[Forms Block repository]/blocks` 資料夾，並複製 `form` 資料夾。
 
-1. 瀏覽至 `[EDS Project repository]/blocks/` 並貼上 `forms` 資料夾。
-
-   >[!VIDEO](https://video.tv.adobe.com/v/3427487?quality=12&learn=on)
+1. 導覽至 `[EDS Project repository]/blocks/` 資料夾並貼上 `form` 資料夾。
 
 1. 存回 `form` 資料夾和基礎檔案新增至GitHub上的邊緣傳遞服務專案。
 

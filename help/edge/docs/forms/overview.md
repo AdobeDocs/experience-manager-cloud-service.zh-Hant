@@ -4,9 +4,9 @@ description: AEM Forms Edge Delivery Service專為最佳效能而打造，可讓
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 87ed5f0aed5554f56e28f317d1399429245a2d06
+source-git-commit: 4a3ebcf7985253ebca24e90ab57ae7eaf3e924e9
 workflow-type: tm+mt
-source-wordcount: '463'
+source-wordcount: '422'
 ht-degree: 0%
 
 ---
@@ -20,19 +20,14 @@ AEM Forms Edge Delivery Service是一項Adobe提供的可組合服務，可讓�
 
 * **使用完美的Lighthouse分數建置表單**：建立可快速載入和轉譯的表單，即使在網際網路連線速度緩慢時也是如此。 載入速度更快，使用者體驗最佳化，有助於提高表單完成率和轉換率。
 
-* **簡化撰寫和提交作業**：使用熟悉的工具(如Microsoft Excel或Google Sheets)建立表單，而非使用傳統的撰寫環境。 直接將表單提交至您的Microsoft Excel或Google工作表，並使用其生態系統來輕鬆處理提交的資料。
+* **簡化撰寫和提交作業**：運用您熟悉的製作工具，例如Microsoft Excel或Google Sheets （檔案式製作）、JSON檔案（Headless製作）或Adaptive Forms編輯器（WYSIWYG製作），來設計和建立其表單。 此服務與內容來源脫鉤，可讓您使用慣用的撰寫工具，提供內容建立的彈性。
 
+  ![Edge Delivery Forms編寫工具](/help/edge/assets/edge-delivery-forms-authoring-tools.png)
 
-此可撰寫服務與內容來源脫鉤，可讓使用者使用他們偏好的撰寫工具，提供內容建立的靈活性。
-
-![Edge Delivery Forms編寫工具](/help/edge/assets/edge-delivery-forms-authoring-tools.png)
-
-內容建立者可善用慣用的工具，例如Microsoft Excel或Google Sheets （檔案式製作）、JSON檔案（Headless製作）或AEM Forms最適化Forms編輯器（所見即所得），來設計和建立其表單。
-
->[!NOTE]
->
->
-> WYSIWYG編寫功能可在早期採用者計畫下取得。 您可以從您的官方電子郵件ID寫信到aem-forms-early-adopter-program@adobe.com ，以加入率先採用者計畫並請求存取該功能。
+  >[!NOTE]
+  >
+  >
+  > WYSIWYG編寫功能可在早期採用者計畫下取得。 您可以從您的官方電子郵件ID寫信到aem-forms-early-adopter-program@adobe.com ，以加入率先採用者計畫並請求存取該功能。
 
 ## 從基礎知識開始
 
