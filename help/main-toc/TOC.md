@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的運作方式以及該軟體可以為您做哪些事。
 breadcrumb-title: 使用手冊
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 87552743ef13d122864a676637138f72f87d8500
+source-git-commit: 784cf3600cec4f0bde72e6a1e491095f56d5e5b3
 workflow-type: tm+mt
-source-wordcount: '4721'
-ht-degree: 99%
+source-wordcount: '4730'
+ht-degree: 98%
 
 ---
 
@@ -723,6 +723,7 @@ ht-degree: 99%
       + [使用 Screens 內容提供者](/help/screens-cloud/configuring/using-screens-content-provider.md)
       + [建立 Screens 視訊轉譯](/help/screens-cloud/configuring/creating-screens-video-renditions-cloud-service.md)
       + [為 Screens as a Cloud Service 設定 Dispatcher](/help/screens-cloud/configuring/dispatcher-configurations-screens-cloud.md)
+      + [設定畫面as a Cloud Service的時間軸檢視](/help/screens-cloud/configuring/configuring-timeline-view-screens.md)
    + 建立內容 {#create-content}
       + [在 Screens 內容提供者中建立和管理專案](/help/screens-cloud/creating-content/creating-projects-screens-cloud.md)
       + [在 Screens 內容提供者中建立和管理頻道](/help/screens-cloud/creating-content/creating-channels-screens-cloud.md)
