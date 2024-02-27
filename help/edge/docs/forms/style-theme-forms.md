@@ -1,13 +1,13 @@
 ---
-title: 自訂AEM Forms Edge Delivery Service表單的主題和樣式
-description: 自訂AEM Forms Edge Delivery Service表單的主題和樣式
+title: 自訂 AEM Forms Edge Delivery Service Form 的主題和樣式
+description: 自訂 AEM Forms Edge Delivery Service Form 的主題和樣式
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 59ed012f10a20939c846c8fff088534c5638f3db
+source-git-commit: 78d40574e6fea8dde22414e43fd77215b9e7d2a1
 workflow-type: tm+mt
 source-wordcount: '1268'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -248,7 +248,7 @@ Forms對於使用者在網站上的互動至關重要，可讓他們輸入資料
 ```
 
 
-#### 選項群組HTML結構
+#### 核取方塊群組HTML結構
 
 ```HTML
 <div class="form-checkbox-group-wrapper form-{Name} field-wrapper" data-required={required}>
