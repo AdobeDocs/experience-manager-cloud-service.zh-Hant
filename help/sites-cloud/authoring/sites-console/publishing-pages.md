@@ -2,9 +2,9 @@
 title: 發佈頁面
 description: 瞭解如何使用AEM中的各種機制來發佈和取消發佈頁面。
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
-source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
+source-git-commit: faac7c803a5145f4207154bfb3c9aa06274bbb86
 workflow-type: tm+mt
-source-wordcount: '1927'
+source-wordcount: '1936'
 ht-degree: 5%
 
 ---
@@ -39,8 +39,9 @@ ht-degree: 5%
 
 根據您的位置，您可以發佈：
 
-* [從頁面編輯器](#publishing-from-the-editor)
-* [從網站主控台](#publishing-from-the-console)
+* [從頁面編輯器](#publishing-from-the-page-editor)
+* [從 ](#publishing-from-the-sites-console)
+* [從通用編輯器](/help/sites-cloud/authoring/universal-editor/publishing.md)
 
 >[!NOTE]
 >
@@ -62,9 +63,9 @@ ht-degree: 5%
 >
 > 如需其他可能性，請參閱 **準時** 和 **關閉時間** 在 [頁面屬性的基本索引標籤](/help/sites-cloud/authoring/sites-console/page-properties.md#basic)
 
-### 從編輯器發佈 {#publishing-from-the-editor}
+### 從頁面編輯器發佈 {#publishing-from-the-page-editor}
 
-如果您正在編輯頁面，可以直接從編輯器發佈頁面。
+如果您編輯的是 [頁面編輯器，](/help/sites-cloud/authoring/page-editor/introduction.md) 可以直接從編輯器發佈。
 
 1. 選取 **頁面資訊** 圖示以開啟功能表，然後 **發佈頁面** 選項。
 
@@ -89,15 +90,15 @@ ht-degree: 5%
 
 >[!NOTE]
 >
->從編輯器發佈是淺層發佈，也就是說，只會發佈選取的頁面，而不會發佈任何子頁面。
+>從頁面編輯器發佈是簡單的發佈，也就是說，只會發佈選取的頁面，而不會發佈任何子頁面。
 
 >[!NOTE]
 >
 >頁面存取者： [別名](/help/sites-cloud/authoring/sites-console/page-properties.md#advanced) 在編輯器中無法發佈。 編輯器中的發佈選項僅適用於透過實際路徑存取的頁面。
 
-### 從主控台發佈 {#publishing-from-the-console}
+### 從網站主控台發佈 {#publishing-from-the-sites-console}
 
-在網站主控台中，有兩個發佈選項：
+在 **網站** 主控台提供兩種發佈選項：
 
 * [快速發佈](#quick-publish)
 * [管理發佈](#manage-publication)

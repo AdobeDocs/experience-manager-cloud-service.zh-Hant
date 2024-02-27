@@ -1,9 +1,9 @@
 ---
 title: 建立頁面
 description: 瞭解如何使用Sites主控台為您的網站建立新頁面。
-source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
+source-git-commit: 0ba8faaa14d09d09fce5846bfff77287bfbd94c7
 workflow-type: tm+mt
-source-wordcount: '425'
+source-wordcount: '461'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 您的帳戶需要適當的存取許可權才能建立頁面。
 
-如果您遇到任何問題，我們建議您連絡系統管理員。
+如果您遇到任何問題，請聯絡您的系統管理員。
 
 ## 建立新頁面 {#creating-a-new-page}
 
@@ -41,7 +41,7 @@ ht-degree: 0%
 
    ![為新頁面選取範本](/help/sites-cloud/authoring/assets/organizing-create-page-template.png)
 
-1. 在精靈的最後階段，您可以：
+1. 從精靈的最後階段開始，您可以：
 
    * 使用三個索引標籤來輸入 [頁面屬性](/help/sites-cloud/authoring/sites-console/page-properties.md) 您想要指派給新頁面，然後選取 **建立** 以實際建立頁面。
 
@@ -57,7 +57,7 @@ ht-degree: 0%
 
       * 這會用來產生URI。 如果未指定，則會從標題衍生名稱。
       * 如果您提供頁面 **名稱** 建立頁面時，AEM [根據慣例驗證名稱](/help/implementing/developing/introduction/naming-conventions.md) 由AEM和JCR所強制。
-      * 您 **無法提交無效的字元** 在 **名稱** 欄位。 當AEM偵測到無效字元時，該欄位會醒目顯示，並顯示說明訊息，指出需要移除/取代的字元。
+      * 您 **無法提交無效的字元** 在 **名稱** 欄位。 當AEM偵測到無效字元時，該欄位會反白顯示，並顯示說明訊息，指出需要移除/取代的字元。
 
    >[!TIP]
    >
@@ -67,17 +67,21 @@ ht-degree: 0%
 
    ![提供頁面標題](/help/sites-cloud/authoring/assets/organizing-create-page-title.png)
 
-1. 使用 **建立** 以完成程式並建立您的新頁面。 確認對話方塊會詢問您是否要執行 **開啟** 立即頁面或返回主控台(**完成**)：
+1. 點選或按一下 **建立** 以完成程式並建立您的新頁面。 確認對話方塊會詢問您是否要 **開啟** 立即頁面或返回主控台(**完成**)。 選取一個以結束頁面建立程式。
 
    ![頁面建立成功](/help/sites-cloud/authoring/assets/organizing-create-page-success.png)
 
-   >[!NOTE]
-   >
-   >如果您使用該位置已存在的名稱來建立頁面，系統將藉由附加一個編號來自動產生名稱的變體。 例如，如果 `beach` 已存在，則新頁面會變成 `beach1`.
+   * 如果您選擇 **開啟**，則 **網站** console會根據新頁面的範本，開啟適當的編輯器：
+      * [頁面編輯器](/help/sites-cloud/authoring/page-editor/introduction.md)
+      * [通用編輯器](/help/sites-cloud/authoring/universal-editor/authoring.md)
 
-1. 如果您返回主控台，便可看到新頁面：
+如果您返回主控台，便可看到新頁面：
 
-   ![產生的新頁面](/help/sites-cloud/authoring/assets/organizing-create-page-result.png)
+![產生的新頁面](/help/sites-cloud/authoring/assets/organizing-create-page-result.png)
+
+>[!NOTE]
+>
+>如果您使用相同位置已存在的名稱來建立頁面，AEM會以附加編號所指定之名稱的變數來建立頁面。 例如，如果 `beach` 已存在，則新頁面會變成 `beach1`.
 
 >[!CAUTION]
 >

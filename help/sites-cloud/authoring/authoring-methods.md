@@ -2,7 +2,7 @@
 title: 在AEM中創作內容的方法
 description: 瞭解您可以在AEM中編寫內容的不同方式以及它們之間的差異。
 feature: Authoring
-source-git-commit: 85b99fc0b0eb20b24f27d06159a52d4339a3c962
+source-git-commit: faac7c803a5145f4207154bfb3c9aa06274bbb86
 workflow-type: tm+mt
 source-wordcount: '554'
 ht-degree: 1%
@@ -49,7 +49,7 @@ AEM內容片段編輯器提供用於建立和管理結構化內容的清晰介�
 
 >[!NOTE]
 >
->此 *新* 本節中醒目提示的編輯器僅適用於線上Adobe Experience Manager (AEM)as a Cloud Service。
+>此 *新* 針對AEMas a Cloud Service在本機開發時，無法使用本節醒目提示的編輯器。
 >
 >此 [*原始* 內容片段編輯器](/help/assets/content-fragments/content-fragments-variations.md) 也可供使用。
 
@@ -61,11 +61,11 @@ Universal Editor是現代化的UI，可讓您以不受內容限制的方式創�
 
 通用編輯器可透過AEM內的Sites主控台存取，但提供強大且與內容無關的靈活性，不僅可編寫您的AEM內容，還可編寫正確儀表化的外部內容。
 
-若要深入瞭解通用編輯器，請參閱本檔案 [使用通用編輯器製作內容。](/help/implementing/universal-editor/authoring.md)
+若要深入瞭解通用編輯器，請參閱本檔案 [使用通用編輯器製作內容。](/help/sites-cloud/authoring/universal-editor/authoring.md)
 
 ## 以文件為主的製作 {#document-based}
 
-如果您使用Edge Delivery服務，您可以選擇在AEM主控台之外將內容製作為傳統檔案，例如Microsoft Word或Google Docs。
+Microsoft Google如果您使用Edge Delivery Services，您可以選擇在 [AEM **網站** 主控台。](/help/sites-cloud/authoring/sites-console/introduction.md)
 
 ![編輯檔案型內容](assets/authoring-methods-document.jpg)
 

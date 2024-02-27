@@ -1,9 +1,9 @@
 ---
 title: 管理頁面
 description: 瞭解如何在AEM中管理您的網站頁面，包括移動、複製和刪除。
-source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
+source-git-commit: faac7c803a5145f4207154bfb3c9aa06274bbb86
 workflow-type: tm+mt
-source-wordcount: '1236'
+source-wordcount: '1271'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,9 @@ ht-degree: 0%
 
    ![編輯按鈕](/help/sites-cloud/authoring/assets/edit.png)
 
-1. 頁面隨即開啟，您可以 [編輯頁面](/help/sites-cloud/authoring/page-editor/edit-content.md) 視需要。
+1. 頁面隨即開啟，您可以視需要編輯頁面。 根據所選頁面的建立方式， **編輯** 動作會開啟適當的編輯器。
+   * [頁面編輯器](/help/sites-cloud/authoring/page-editor/introduction.md)  — 適用於使用AEM頁面編輯器建立的頁面
+   * [通用編輯器](/help/sites-cloud/authoring/universal-editor/authoring.md)  — 適用於使用通用編輯器建立的頁面
 
 ## 複製和貼上頁面 {#copying-and-pasting-a-page}
 

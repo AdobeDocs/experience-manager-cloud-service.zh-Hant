@@ -1,9 +1,9 @@
 ---
 title: AEM頁面編輯器
 description: AEM頁面編輯器是製作內容的強大工具。
-source-git-commit: f11635b799a9154ff3fcaac5faca429a12f7a62b
+source-git-commit: 91ce6a0c880436327f4dd333a2eb3d36a4e89a4d
 workflow-type: tm+mt
-source-wordcount: '1400'
+source-wordcount: '1431'
 ht-degree: 3%
 
 ---
@@ -11,7 +11,11 @@ ht-degree: 3%
 
 # AEM頁面編輯器 {#editing-page-content}
 
-一旦您的頁面在 **網站** 主控台，您可以使用AEM頁面編輯器來編輯頁面內容，這是製作內容的強大工具。
+一旦您的頁面在 [**網站** 主控台，](/help/sites-cloud/authoring/sites-console/introduction.md) 您可以使用AEM頁面編輯器來編輯頁面的內容，這是用於編寫內容的強大工具。
+
+>[!NOTE]
+>
+>在中編輯頁面時 [**網站** 主控台，](/help/sites-cloud/authoring/sites-console/introduction.md) 主控台將開啟適合頁面的編輯器 [範本：](/help/sites-cloud/authoring/sites-console/templates.md) 本檔案所述的頁面編輯器，或 [通用編輯器。](/help/sites-cloud/authoring/universal-editor/authoring.md)
 
 >[!NOTE]
 >

@@ -1,9 +1,9 @@
 ---
 title: Sites主控台
 description: 瞭解如何使用Sites主控台來管理和組織AEM頁面。
-source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
+source-git-commit: 91ce6a0c880436327f4dd333a2eb3d36a4e89a4d
 workflow-type: tm+mt
-source-wordcount: '1596'
+source-wordcount: '1628'
 ht-degree: 5%
 
 ---
@@ -231,16 +231,18 @@ ht-degree: 5%
 
 唯有在主控台中選取資源時，動作工具列才會出現。 動作工具列中的可用動作會變更，以反映您可對所選特定專案執行的動作。 最常見的動作包括：
 
-* [建立](#create-action)  — 建立新內容或內容相關動作
-* [編輯](/help/sites-cloud/authoring/page-editor/introduction.md)  — 編輯頁面
-* [屬性](/help/sites-cloud/authoring/sites-console/page-properties.md)  — 開啟頁面屬性視窗
-* [鎖定](/help/sites-cloud/authoring/sites-console/managing-pages.md#locking-a-page)  — 鎖定頁面以防止其他人變更它
-* [複製](/help/sites-cloud/authoring/sites-console/managing-pages.md#copying-and-pasting-a-page)  — 複製頁面
-* [移動](/help/sites-cloud/authoring/sites-console/managing-pages.md#moving-or-renaming-a-page)  — 移動或重新命名頁面
-* [快速發佈](/help/sites-cloud/authoring/sites-console/publishing-pages.md#quick-publish)  — 立即發佈一個或多個頁面
-* [管理發布](/help/sites-cloud/authoring/sites-console/publishing-pages.md#manage-publication)  — 排程要發佈的頁面
-* [還原](/help/sites-cloud/authoring/sites-console/page-versions.md#restore-version)  — 還原頁面或頁面樹狀結構的版本
-* [刪除](/help/sites-cloud/authoring/sites-console/managing-pages.md#deleting-a-page)  — 刪除一或多個頁面
+* [**建立**](#create-action)  — 建立新內容或內容相關動作
+* **編輯**  — 根據所選頁面的建立方式， **編輯** 動作會開啟適當的編輯器。
+   * [頁面編輯器](/help/sites-cloud/authoring/page-editor/introduction.md)  — 適用於使用AEM頁面編輯器建立的頁面
+   * [通用編輯器](/help/sites-cloud/authoring/universal-editor/authoring.md)  — 適用於使用通用編輯器建立的頁面
+* [**屬性**](/help/sites-cloud/authoring/sites-console/page-properties.md)  — 開啟頁面屬性視窗
+* [**鎖定**](/help/sites-cloud/authoring/sites-console/managing-pages.md#locking-a-page)  — 鎖定頁面以防止其他人變更它
+* [**複製**](/help/sites-cloud/authoring/sites-console/managing-pages.md#copying-and-pasting-a-page)  — 複製頁面
+* [**移動**](/help/sites-cloud/authoring/sites-console/managing-pages.md#moving-or-renaming-a-page)  — 移動或重新命名頁面
+* [**快速發佈**](/help/sites-cloud/authoring/sites-console/publishing-pages.md#quick-publish)  — 立即發佈一個或多個頁面
+* [**管理發布**](/help/sites-cloud/authoring/sites-console/publishing-pages.md#manage-publication)  — 排程要發佈的頁面
+* [**還原**](/help/sites-cloud/authoring/sites-console/page-versions.md#restore-version)  — 還原頁面或頁面樹狀結構的版本
+* [**刪除**](/help/sites-cloud/authoring/sites-console/managing-pages.md#deleting-a-page)  — 刪除一或多個頁面
 
 由於某些視窗的空間限制，工具列可能會很快變得比可用的空間長。發生此情況時，會出現其他選項。按一下或點選省略符號(三個點或 **...**)會開啟一個下拉式選取器，其中包含所有剩餘的動作。
 
@@ -248,13 +250,13 @@ ht-degree: 5%
 
 ### 建立動作 {#create-action}
 
-建立動作提供與建立新頁面和類似專案之建立工具列按鈕類似的選項。
+建立動作提供的選項與類似， [**建立** 工具列按鈕](#create-button) 用於建立新頁面和類似專案。
 
 此外，它提供建立頁面相關動作的功能。
 
-* [工作流程](/help/sites-cloud/authoring/workflows/overview.md)  — 將工作流程套用至頁面
-* [版本](/help/sites-cloud/authoring/sites-console/page-versions.md)  — 建立頁面的版本
+* [**工作流程**](/help/sites-cloud/authoring/workflows/overview.md)  — 將工作流程套用至頁面
+* [**版本**](/help/sites-cloud/authoring/sites-console/page-versions.md)  — 建立頁面的版本
 
 ## 範本
 
-在「欄檢視」或「清單檢視」中選取頁面時，您可輕鬆查看該頁 [面所依據](/help/sites-cloud/authoring/basic-handling.md#column-view)[的範本](/help/sites-cloud/authoring/basic-handling.md#list-view)。
+在「欄檢視」或「清單檢視」中選取頁面時，您可輕鬆查看該頁 [**面所依據**](/help/sites-cloud/authoring/basic-handling.md#column-view)[**的範本**](/help/sites-cloud/authoring/basic-handling.md#list-view)。

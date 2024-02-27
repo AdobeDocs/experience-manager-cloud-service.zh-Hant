@@ -3,7 +3,7 @@ title: 為 Edge Delivery Services 製作內容
 description: 了解內容製作如何與 Edge Delivery Services 搭配使用，以及如何使用 Edge Delivery Services 製作 AEM 內容。
 feature: Edge Delivery Services
 exl-id: 963ff71a-8176-4d9d-8240-dc429405d139
-source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
+source-git-commit: 58d85886ef04b548c09e3ef9308fe596dd3eda38
 workflow-type: tm+mt
 source-wordcount: '491'
 ht-degree: 100%
@@ -31,7 +31,7 @@ ht-degree: 100%
 
 1. [AEM 製作環境](/help/sites-cloud/authoring/quick-start.md)是用於內容管理，例如建立新頁面、體驗片段、內容片段等。
    * AEM 的所有功能均適用，例如工作流程、MSM、翻譯、啟動等。
-1. [Universal Editor](/help/implementing/universal-editor/authoring.md) 是用來製作 AEM 所管理的內容。
+1. [Universal Editor](/help/sites-cloud/authoring/universal-editor/authoring.md) 是用來製作 AEM 所管理的內容。
    * Universal Editor 為內容製作提供了全新且現代化的使用者介面。
    * 在內容製作方面，AEM 會轉譯 HTML，但包括來自 Edge Delivery Services 的指令碼、樣式、圖示和其他資源。
    * 儘管使用了 Universal Editor，但所有變更都會保留到 AEM。
@@ -52,7 +52,7 @@ Universal Editor 提供了一個現代且直觀的 GUI，可透過拖放區塊�
 
 ![設定區塊屬性](assets/block-properties.png)
 
-有關如何使用 Universal Editor 的詳細資訊，請參閱文件[「使用 Universal Editor 製作內容」。](/help/implementing/universal-editor/authoring.md)
+有關如何使用 Universal Editor 的詳細資訊，請參閱文件[「使用 Universal Editor 製作內容」。](/help/sites-cloud/authoring/universal-editor/authoring.md)
 
 請參閱「[使用 Edge Delivery Services 進行 AEM 製作的開發人員入門指南](/help/edge/edge-dev-getting-started.md)」，了解如何展開您自己的專案並使用 AEM 和 Edge Delivery Services 進行製作。
 

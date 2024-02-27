@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的運作方式以及該軟體可以為您做哪些事。
 breadcrumb-title: 使用手冊
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 5786283b75f28d594aea923a6d3490a9582a73a9
+source-git-commit: 87552743ef13d122864a676637138f72f87d8500
 workflow-type: tm+mt
 source-wordcount: '4721'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -305,6 +305,9 @@ ht-degree: 97%
          + [鍵盤快速鍵](/help/sites-cloud/authoring/page-editor/keyboard-shortcuts.md)
          + [樣式系統](/help/sites-cloud/authoring/page-editor/style-system.md)
          + [復原重做限制](/help/sites-cloud/authoring/page-editor/undo-redo.md)
+      + Universal Editor {#universal-editor}
+         + [使用 Universal Editor 製作內容](/help/sites-cloud/authoring/universal-editor/authoring.md)
+         + [使用 Universal Editor 發佈內容](/help/sites-cloud/authoring/universal-editor/publishing.md)
       + 片段 {#fragments}
          + [內容片段](/help/sites-cloud/authoring/fragments/content-fragments.md)
          + [體驗片段](/help/sites-cloud/authoring/fragments/experience-fragments.md)
@@ -624,15 +627,15 @@ ht-degree: 97%
             + [建立具有可重複區段的表單](/help/forms/create-forms-repeatable-sections.md)
             + [為最適化表單設定提交動作](/help/forms/configure-submit-actions-core-components.md)
             + [將最適化表單提交至 Azure Blob 儲存體](/help/forms/configure-submit-action-azure-blob-storage.md)
-            + [提交最適化表單至Microsoft](/help/forms/configure-submit-action-onedrive.md)
-            + [將最適化表單連線至Microsoft](/help/forms/configure-submit-action-sharepoint.md)
+            + [將最適化表單提交至 Microsoft](/help/forms/configure-submit-action-onedrive.md)
+            + [將最適化表單連接到 Microsoft](/help/forms/configure-submit-action-sharepoint.md)
             + [將 AEM 最適化表單與 AEM 工作流程整合](/help/forms/configure-submit-action-workflow.md)
             + [設定提交到最適化表單的 REST 端點提交動作](/help/forms/configure-submit-action-restpoint.md)
             + [設定最適化表單的傳送電子郵件提交動作](/help/forms/configure-submit-action-send-email.md)
             + [在最適化表單中使用 Google reCAPTCHA](/help/forms/captcha-adaptive-forms-core-components.md)
             + [在最適化表單中新增自訂的錯誤處理常式](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
             + [為以核心元件為主的最適化表單新增地區設定](/help/forms/supporting-new-language-localization-core-components.md)
-            + [建立及使用自訂函式](/help/forms/create-and-use-custom-functions.md)
+            + [建立和使用自訂功能](/help/forms/create-and-use-custom-functions.md)
       + Foundation 元件 {#authoring-adaptive-forms-foundation-components}
          + 將您的 PDF forms 轉換為最適化表單 {#afcs}
             + [自動表單轉換服務簡介](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html)
@@ -812,17 +815,17 @@ ht-degree: 97%
       + [Akamai 設定](/help/edge/docs/byo-cdn-akamai-setup.md)
       + [快速設定](/help/edge/docs/byo-cdn-fastly-setup.md)
       + [重新導向](/help/edge/docs/redirects.md)
-   + 建置Edge Delivery Forms {#build-forms}
+   + 建立 Edge Delivery Forms {#build-forms}
       + [概觀](/help/edge/docs/forms/overview.md)
       + 立即開始 {#getting-started-eds-forms}
-         + [建立及預覽表單](/help/edge/docs/forms/create-forms.md)
-         + [啟用表單以傳送資料](/help/edge/docs/forms/submit-forms.md)
-         + [將表單發佈至網站頁面](/help/edge/docs/forms/publish-eds-forms.md)
+         + [建立並預覽表單](/help/edge/docs/forms/create-forms.md)
+         + [啟用表單來傳送資料](/help/edge/docs/forms/submit-forms.md)
+         + [將表單發佈到網站頁面](/help/edge/docs/forms/publish-eds-forms.md)
          + [新增驗證至表單欄位](/help/edge/docs/forms/validate-forms.md)
-         + [變更表單的主題和樣式](/help/edge/docs/forms/style-theme-forms.md)
+         + [改變主題和樣式風格](/help/edge/docs/forms/style-theme-forms.md)
       + 功能 {#advanced-features-eds-forms}
          + [表單片段](/help/edge/docs/forms/form-fragments.md)
-         + [可重複區段](/help/edge/docs/forms/repeatable-forms.md)
+         + [可重複的部分](/help/edge/docs/forms/repeatable-forms.md)
          + [轉換](/help/edge/docs/forms/translate-forms.md)
          + [reCAPTCHA](/help/edge/docs/forms/recaptacha-forms.md)
          + [感謝頁面](/help/edge/docs/forms/thank-you-page-form.md)
@@ -1028,6 +1031,18 @@ ht-degree: 97%
             + [實作自訂述詞求值器](/help/implementing/developing/introduction/query-builder-custom-predicate.md)
          + [自訂錯誤頁面](/help/implementing/developing/introduction/custom-error-page.md)
          + [AEM 節點類型](/help/implementing/developing/introduction/node-types.md)
+      + Universal Editor {#universal-editor}
+         + [Universal Editor 簡介](/help/implementing/universal-editor/introduction.md)
+         + [Universal Editor 架構](/help/implementing/universal-editor/architecture.md)
+         + [AEM 中 Universal Editor 快速入門](/help/implementing/universal-editor/getting-started.md)
+         + [Universal Editor 開發人員概觀](/help/implementing/universal-editor/developer-overview.md)
+         + [屬性和項目類型](/help/implementing/universal-editor/attributes-types.md)
+         + [模型定義、欄位和元件類型](/help/implementing/universal-editor/field-types.md)
+         + [Universal Editor 驗證](/help/implementing/universal-editor/authentication.md)
+         + [使用 Universal Editor 進行本機 AEM 開發](/help/implementing/universal-editor/local-dev.md)
+         + [Universal Editor 呼叫](/help/implementing/universal-editor/calls.md)
+         + [事件](/help/implementing/universal-editor/events.md)
+         + [自訂 Universal Editor](/help/implementing/universal-editor/customizing.md)
       + [Headless 體驗管理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/introduction.html)
       + 混合式與 SPA 開發 {#hybrid}
          + [使用 AEM 的混合式和 SPA](https://business.adobe.com/content/dam/dx/us/en/products/experience-manager/sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
@@ -1144,19 +1159,3 @@ ht-degree: 97%
    + 協助工具 {#accessibility}
       + [AEM as a Cloud Service 與網頁協助工具準則](/help/compliance/accessibility/web-accessibility.md)
       + [WCAG 2.1 快速指南](/help/compliance/accessibility/quick-guide-wcag.md)
-+ Universal Editor {#universal-editor}
-   + [Universal Editor 簡介](/help/implementing/universal-editor/introduction.md)
-   + [Universal Editor 架構](/help/implementing/universal-editor/architecture.md)
-   + 製作 {#developing}
-      + [使用 Universal Editor 製作內容](/help/implementing/universal-editor/authoring.md)
-      + [使用 Universal Editor 發佈內容](/help/implementing/universal-editor/publishing.md)
-   + 開發 {#developing}
-      + [AEM 中 Universal Editor 快速入門](/help/implementing/universal-editor/getting-started.md)
-      + [Universal Editor 開發人員概觀](/help/implementing/universal-editor/developer-overview.md)
-      + [屬性和項目類型](/help/implementing/universal-editor/attributes-types.md)
-      + [模型定義、欄位和元件類型](/help/implementing/universal-editor/field-types.md)
-      + [Universal Editor 驗證](/help/implementing/universal-editor/authentication.md)
-      + [使用 Universal Editor 進行本機 AEM 開發](/help/implementing/universal-editor/local-dev.md)
-      + [Universal Editor 呼叫](/help/implementing/universal-editor/calls.md)
-      + [自訂 Universal Editor](/help/implementing/universal-editor/customizing.md)
-      + [事件](/help/implementing/universal-editor/events.md)

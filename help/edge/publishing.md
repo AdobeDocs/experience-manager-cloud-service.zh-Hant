@@ -3,10 +3,10 @@ title: 為 Edge Delivery Services 發佈內容
 description: 了解內容發佈如何與 Edge Delivery Services 搭配使用，以及如何使用 Edge Delivery Services 發佈 AEM 內容。
 feature: Edge Delivery Services
 exl-id: 32fbb144-9175-47a9-bb5a-ca15f3fcd2d8
-source-git-commit: daad30dd74d389c631131a77655c9fabf4ff2967
+source-git-commit: 58d85886ef04b548c09e3ef9308fe596dd3eda38
 workflow-type: tm+mt
 source-wordcount: '228'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -19,13 +19,13 @@ ht-degree: 87%
 
 ## AEM 的發佈流程 {#publishing-flow}
 
-使用 Universal Editor 編輯 AEM 內容時，發佈內容如同在 Universal Editor 點擊「**發佈**」按鈕一樣簡單。請參閱文件：[使用 Universal Editor 發佈內容。](/help/implementing/universal-editor/publishing.md)
+使用 Universal Editor 編輯 AEM 內容時，發佈內容如同在 Universal Editor 點擊「**發佈**」按鈕一樣簡單。請參閱文件：[使用 Universal Editor 發佈內容。](/help/sites-cloud/authoring/universal-editor/publishing.md)
 
 在發佈時的資訊流程如下。一旦作者開始發佈，此流程就會自動進行，且此處有說明可供資訊參考。
 
 >[!NOTE]
 >
->每天最多允許從編寫UI或工作流程發佈5000個路徑。 不支援建立大量發佈工作載入的整合。
+>每天最多允許從製作 UI 或按工作流程發佈 5000 個路徑。不支援建立大量發佈工作負載的整合。
 
 ![從 AEM 發佈至 Edge Delivery Services 時的資訊流程](assets/publishing-flow.png)
 
