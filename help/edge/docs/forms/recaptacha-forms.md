@@ -1,16 +1,16 @@
 ---
-title: 搭配AEM Forms Edge Delivery Service Forms使用reCAPTCHA
-description: 在EDS表單中使用reCAPTCHA
+title: 將 reCAPTCHA 與 AEM Forms Edge Delivery Service Forms 結合使用
+description: 使用 EDS Form 中的 reCAPTCHA
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 source-git-commit: f2752673dcaa0762bb55719cee23765aa8ecde96
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '24'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 
-# 搭配AEM Forms Edge Delivery Service Forms使用reCAPTCHA
+# 將 reCAPTCHA 與 AEM Forms Edge Delivery Service Forms 結合使用
 

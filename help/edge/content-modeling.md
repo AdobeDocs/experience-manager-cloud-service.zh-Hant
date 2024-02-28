@@ -2,9 +2,9 @@
 title: 使用 Edge Delivery Services 專案進行 AEM 製作的內容模式
 description: 了解使用 Edge Delivery Services 專案進行 AEM 製作的內容模式如何運作，以及如何對您自己的內容建立模式。
 source-git-commit: e9c882926baee001170bad2265a1085e03cdbedf
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2097'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -109,19 +109,19 @@ ht-degree: 86%
 
 * 必須使用 `core/franklin/components/block/v1/block` 資源類型，這是在 AEM 中通用的區塊邏輯實施。
 * 必須定義區塊名稱，該名稱將呈現在區塊標頭中。
-   * 區塊名稱可用來擷取正確的樣式和指令碼，以裝飾區塊。
+   * 區塊名稱是用來擷取正確的樣式和指令碼來裝飾區塊。
 * 可以定義一個[模式 ID。](/help/implementing/universal-editor/field-types.md#model-structure)
-   * 模型ID是元件模型的參考，其定義屬性邊欄中作者可用的欄位。
+   * 模式 ID 是元件模式的參考編號，旨在定義作者在屬性邊欄中可用的欄位。
 * 可以定義一個[篩選器 ID。](/help/implementing/universal-editor/customizing.md#filtering-components)
-   * 篩選器ID是元件篩選器的參考，可允許變更編寫行為，例如透過限制可將哪些子系新增到區塊或區段，或啟用哪些RTE功能。
+   * 篩選器 ID 是元件篩選器的參考編號，旨在允許變更製作行為，例如透過限制可以將哪些子系新增至區塊或區段，或啟用哪些 RTE 功能。
 
-將區塊新增至頁面時，所有這些資訊都會儲存在AEM中。 如果缺少資源型別或區塊名稱，該區塊將不會在頁面上呈現。
+當將區塊新增至頁面時，所有這些資訊都會儲存在 AEM 中。如果缺少資源類型或區塊名稱，該區塊將不會在頁面上呈現。
 
 >[!WARNING]
 >
->可能的話，不需要或建議實作自訂AEM元件。 AEM 提供的 Edge Delivery Services 元件已足夠，並提供了某些護欄以方便開發作業。
+>雖然有可能，但沒有必要或不建議實施自訂 AEM 元件。AEM 提供的 Edge Delivery Services 元件已足夠，並提供了某些護欄以方便開發作業。
 >
->AEM提供的元件會轉譯可由使用的標籤 [helix-html2md](https://github.com/adobe/helix-html2md) 發佈至Edge Delivery Services時由 [aem.js](https://github.com/adobe/aem-boilerplate/blob/main/scripts/aem.js) 在通用編輯器中載入頁面時。 標籤是AEM與系統其他部分之間的穩定合約，不允許自訂。 因此，專案不得變更元件，也不得使用自訂元件。
+>AEM 提供的元件會在發佈到 Edge Delivery Services 時，呈現可供 [helix-html2md](https://github.com/adobe/helix-html2md) 使用的標記；以及在 Universal Editor 載入頁面時，呈現可供 [aem.js](https://github.com/adobe/aem-boilerplate/blob/main/scripts/aem.js) 使用的標記。標記是 AEM 與系統其他部分之間的穩定契約，不允許進行自訂。因此，專案不得變更元件，也不得使用自訂元件。
 
 ### 區塊結構 {#block-structure}
 
@@ -147,7 +147,7 @@ ht-degree: 86%
 }
 ```
 
->[!TAB 標籤]
+>[!TAB 標記]
 
 ```html
 <div class="hero">
@@ -205,7 +205,7 @@ ht-degree: 86%
 }
 ```
 
->[!TAB 標籤]
+>[!TAB 標記]
 
 ```html
 <div class="featured-articles">
@@ -271,7 +271,7 @@ ht-degree: 86%
 }
 ```
 
->[!TAB 標籤]
+>[!TAB 標記]
 
 ```html
 <div class="our-partners">
@@ -366,7 +366,7 @@ ht-degree: 86%
 }
 ```
 
->[!TAB 標籤]
+>[!TAB 標記]
 
 ```html
 <picture>
@@ -397,7 +397,7 @@ ht-degree: 86%
 }
 ```
 
->[!TAB 標籤]
+>[!TAB 標記]
 
 不是 `linkType` 或 `linkType=default`
 
@@ -444,7 +444,7 @@ _[adobe.com](https://www.adobe.com "Navigate to adobe.com")_
 }
 ```
 
->[!TAB 標籤]
+>[!TAB 標記]
 
 ```html
 <h2>Getting started</h2>
@@ -462,9 +462,9 @@ _[adobe.com](https://www.adobe.com "Navigate to adobe.com")_
 
 [欄位摺疊](#field-collapse)是將多個屬性組合到單一語義元素中，而元素分組是將多個語義元素連接到單一儲存格中。這對於作者應該限制可以建立的元素類型和數量的使用案例特別有用。
 
-例如，Teaser元件可能允許作者僅建立子標題、標題和單一段落說明，以及最多兩個召喚行動按鈕的組合。 將這些元素組合在一起會產生語義標記語言，無需進一步操作即可對其進行樣式設定。
+例如，Teaser 元件可讓作者只建立副標題、標題和單一段落描述，並最多結合兩個召喚行動按鈕。將這些元素組合在一起會產生語義標記語言，無需進一步操作即可對其進行樣式設定。
 
-元素分組使用命名慣例，即群組名稱會以底線與群組中的每個屬性分開。 群組屬性的欄位摺疊如前所述。
+元素分組會使用命名慣例，其中群組名稱會以底線來區別群組中的每個屬性。群組中屬性的欄位摺疊使用方法如前所述。
 
 >[!BEGINTABS]
 
@@ -488,7 +488,7 @@ _[adobe.com](https://www.adobe.com "Navigate to adobe.com")_
 }
 ```
 
->[!TAB 標籤]
+>[!TAB 標記]
 
 ```html
 <div class="teaser">
@@ -609,7 +609,7 @@ Edge Delivery Services 內容模式本來就是只允許單一巢狀層級，這
 
 若要建立此類表，請建立頁面並使用 Sites 控制台中的中繼資料範本。
 
-在試算表的頁面屬性中，定義所需的中繼資料欄位以及 URL。然後為每個頁面路徑或頁面路徑模式新增中繼資料。
+在試算表的頁面屬性中，定義所需的中繼資料欄位以及 URL。然後新增每個頁面路徑或頁面路徑模式的中繼資料。
 
 在發布之前，請確保試算表也已新增至您的路徑對應中。
 
