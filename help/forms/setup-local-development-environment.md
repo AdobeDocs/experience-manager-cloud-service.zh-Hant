@@ -3,9 +3,10 @@ title: 如何設定AEM Forms的本機開發環境？
 description: 設定Adobe Experience Manager Formsas a Cloud Service的本機開發環境
 role: Admin, Developer, User
 feature: Adaptive Forms
-source-git-commit: 58325cccf218eb2176868879842a795d1c91d8a6
+exl-id: 12877a77-094f-492a-af58-cffafecf79ae
+source-git-commit: 1ec17aebe4eb003b24f5036288a8836aabddb77a
 workflow-type: tm+mt
-source-wordcount: '2682'
+source-wordcount: '2724'
 ht-degree: 2%
 
 ---
@@ -129,7 +130,12 @@ Adobe Experience Manager Formsas a Cloud Service功能封存提供在本機開�
 
 1. 導覽至crx-quickstart/install目錄。 如果資料夾不存在，請建立它。
 
-1. 停止您的AEM執行個體，將 [!DNL AEM Forms] 附加功能封存， `aem-forms-addon-<version>.far`，然後重新啟動執行個體。
+1. 停止您的AEM執行個體，將 [!DNL AEM Forms] 附加功能封存， `aem-forms-addon-<version>.far`，位於安裝資料夾中。
+1. 移至使用中命令視窗並按下 `Ctrl + C` 重新啟動SDK的命令。
+
+   >[!NOTE]
+   >
+   > 建議您使用&#39;Ctrl + C&#39;命令重新啟動SDK。 使用替代方法重新啟動AEM SDK （例如停止Java程式）可能會導致AEM開發環境不一致。
 
 ### 設定使用者和許可權 {#configure-users-and-permissions}
 
@@ -242,7 +248,7 @@ AEM Forms as aCloud Service提供以Docker為基礎的SDK環境，可更輕鬆�
 >[!NOTE]
 >
 > 設定AEM Archetype版本30或更新版本的專案，以取得並使用Microsoft®Dynamics 365和Salesforce表單資料模型搭配AEM Formsas a Cloud Service。
-設定AEM Archetype 32版或更新版本的專案，以AEM Formsas a Cloud Service取得並使用Tranquil、Urbane和Ultraminary主題。
+> 設定AEM Archetype 32版或更新版本的專案，以AEM Formsas a Cloud Service取得並使用Tranquil、Urbane和Ultraminary主題。
 
 若要設定專案：
 
@@ -269,7 +275,7 @@ After the repository is cloned, [integrate your Git repo with Cloud Manager](htt
 
      >[!WARNING]
      >
-     * 使用版本45建立Archetype專案時， [AEM原型專案資料夾]/pom.xml一開始將forms核心元件版本設定為2.0.64。在建立或部署Archetype專案之前，請將Forms核心元件版本更新為2.0.62。
+     >* 使用版本45建立Archetype專案時， [AEM原型專案資料夾]/pom.xml一開始將forms核心元件版本設定為2.0.64。在建立或部署Archetype專案之前，請將Forms核心元件版本更新為2.0.62。
 
 1. 將專案部署到您的本機開發環境。 您可以使用以下命令來部署到您的本機開發環境
 
