@@ -180,7 +180,7 @@ ht-degree: 98%
    + [AEM as a Cloud Service 安全性注意事項](/help/security/security-considerations.md)
    + [Adobe Developer主控台中的JWT憑證淘汰](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md)
 + 上線 {#onboarding}
-   + [從這裡開始](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html)
+   + [從這裡開始](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html?lang=zh-Hant)
    + 上線歷程 {#journey}
       + [上線歷程概觀](/help/journey-onboarding/overview.md)
       + [上線準備](/help/journey-onboarding/preparation.md)
@@ -311,7 +311,7 @@ ht-degree: 98%
       + 片段 {#fragments}
          + [內容片段](/help/sites-cloud/authoring/fragments/content-fragments.md)
          + [體驗片段](/help/sites-cloud/authoring/fragments/experience-fragments.md)
-         + [Headless 內容作者歷程](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/author/overview.html)
+         + [Headless 內容作者歷程](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/author/overview.html?lang=zh-Hant)
       + 專案 {#projects}
          + [使用專案](/help/sites-cloud/authoring/projects/overview.md)
          + [管理專案](/help/sites-cloud/authoring/projects/managing.md)
@@ -387,7 +387,7 @@ ht-degree: 98%
                + [設定翻譯規則](/help/journey-sites/translation/translation-rules.md)
                + [翻譯內容](/help/journey-sites/translation/translate-content.md)
                + [發佈翻譯內容](/help/journey-sites/translation/publish-content.md)
-            + [Headless 翻譯歷程](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/translation/overview.html)
+            + [Headless 翻譯歷程](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/translation/overview.html?lang=zh-Hant)
             + [翻譯多語言網站的內容](/help/sites-cloud/administering/translation/overview.md)
             + [準備翻譯內容](/help/sites-cloud/administering/translation/preparation.md)
             + [管理翻譯專案](/help/sites-cloud/administering/translation/managing-projects.md)
@@ -470,7 +470,7 @@ ht-degree: 98%
    + 共用與發佈資產 {#brand-portal}
       + [設定  [!DNL Assets]  和 [!DNL Brand Portal]](/help/assets/configure-aem-assets-with-brand-portal.md)
       + [將資產發佈至 [!DNL Brand Portal]](/help/assets/publish-to-brand-portal.md)
-      + [資產從  [!DNL Brand Portal] 發佈到 [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html)
+      + [資產從  [!DNL Brand Portal] 發佈到 [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=zh-Hant)
    + 內容片段 {#content-fragments}
       + [使用內容片段](/help/assets/content-fragments/content-fragments.md)
       + [使用內容片段和 GraphQL 的 Headless 傳遞](/help/assets/content-fragments/content-fragments-graphql.md)
@@ -484,7 +484,7 @@ ht-degree: 98%
       + [Markdown](/help/assets/content-fragments/content-fragments-markdown.md)
       + [樹狀結構](/help/assets/content-fragments/content-fragments-structure-tree.md)
       + [預覽 - JSON 代表](/help/assets/content-fragments/content-fragments-json-preview.md)
-      + [使用 MSM 重複使用資產的內容片段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/reuse-assets-using-msm.html)
+      + [使用 MSM 重複使用資產的內容片段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/reuse-assets-using-msm.html?lang=zh-Hant)
    + Dynamic Media {#dynamicmedia}
       + Dynamic Media 歷程：基礎知識{#dm-journey}
          + [第一部分：什麼是 Dynamic Media - 使用案例 - 資產如何流經系統](/help/assets/dynamic-media/dm-journey-part1.md)
@@ -638,9 +638,9 @@ ht-degree: 98%
             + [建立和使用自訂功能](/help/forms/create-and-use-custom-functions.md)
       + Foundation 元件 {#authoring-adaptive-forms-foundation-components}
          + 將您的 PDF forms 轉換為最適化表單 {#afcs}
-            + [自動表單轉換服務簡介](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html)
-            + [將現有 PDF 表單轉換為最適化表單](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html)
-            + [檢閱並修正轉換後的表單](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/review-correct-ui-edited.html#welcome-to-review-and-correct-editor)
+            + [自動表單轉換服務簡介](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=zh-Hant)
+            + [將現有 PDF 表單轉換為最適化表單](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html?lang=zh-Hant)
+            + [檢閱並修正轉換後的表單](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/review-correct-ui-edited.html?lang=zh-Hant#welcome-to-review-and-correct-editor)
          + 建立最適化表單{#create-an-adaptive-form-on-forms-cs}
             + [製作最適化表單簡介](/help/forms/introduction-forms-authoring.md)
             + [建立最適化表單](/help/forms/creating-adaptive-form.md)
@@ -651,7 +651,7 @@ ht-degree: 98%
             + [透過延遲載入改善大型表單的效能](/help/forms/lazy-loading-adaptive-forms.md)
          + 將元件新增至最適化表單{#add-components-to-an-adaptive-form}
             + [在最適化表單中使用驗證碼](/help/forms/captcha-adaptive-forms.md)
-            + [使用核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
+            + [使用核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hant)
             + [套用手寫簽名](/help/forms/signing-forms-using-scribble.md)
             + [將表格新增至最適化表單](/help/forms/adaptive-forms-tables.md)
             + [將註解支援新增至最適化表單](/help/forms/footnotes-richtextsupport.md)
@@ -827,7 +827,7 @@ ht-degree: 98%
          + [改變主題和樣式風格](/help/edge/docs/forms/style-theme-forms.md)
       + 功能 {#advanced-features-eds-forms}
          + [表單片段](/help/edge/docs/forms/form-fragments.md)
-         + [可重複的部分](/help/edge/docs/forms/repeatable-forms.md)
+         + [可重複區段](/help/edge/docs/forms/repeatable-forms.md)
          + [轉換](/help/edge/docs/forms/translate-forms.md)
          + [reCAPTCHA](/help/edge/docs/forms/recaptacha-forms.md)
          + [感謝頁面](/help/edge/docs/forms/thank-you-page-form.md)
@@ -848,7 +848,7 @@ ht-degree: 98%
 + Headless {#headless}
    + [什麼是 Headless CMS？](/help/headless/what-is-headless.md)
    + [AEM Headless 簡介](/help/headless/introduction.md)
-   + [開發人員入口網站 (其他資源)](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
+   + [開發人員入口網站 (其他資源)](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=zh-Hant)
    + [最佳做法 - 設定和使用](/help/headless/best-practices-setup-use.md)
    + 設定 {#setup}
       + [簡介](/help/headless/setup/introduction.md)
@@ -858,14 +858,14 @@ ht-degree: 98%
       + [內容片段](/help/headless/setup/create-content-fragment.md)
       + [GraphQL 端點](/help/headless/setup/create-api-request.md)
    + 內容片段 {#content-fragments}
-      + [概覽](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/overview.html)
-      + [內容片段模型](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragment-models.html)
-      + [管理內容片段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/managing.html)
+      + [概覽](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/overview.html?lang=zh-Hant)
+      + [內容片段模型](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragment-models.html?lang=zh-Hant)
+      + [管理內容片段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/managing.html?lang=zh-Hant)
       + 製作 {#authoring}
-         + [製作](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring.html)
-         + [Markdown 編輯器](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html)
-      + [樹狀結構](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html)
-      + [JSON 預覽](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-json-preview.html)
+         + [製作](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring.html?lang=zh-Hant)
+         + [Markdown 編輯器](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html?lang=zh-Hant)
+      + [樹狀結構](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html?lang=zh-Hant)
+      + [JSON 預覽](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-json-preview.html?lang=zh-Hant)
    + GraphQL API{#graphql-api}
       + [用於內容片段的 GraphQL API](/help/headless/graphql-api/content-fragments.md)
       + [管理 GraphQL 端點](/help/headless/graphql-api/graphql-endpoint.md)
@@ -875,7 +875,7 @@ ht-degree: 98%
       + [更新您的內容片段，以達到最佳化 GraphQL 篩選](/help/headless/graphql-api/graphql-optimized-filtering-content-update.md)
       + [範例 GraphQL 查詢](/help/headless/graphql-api/sample-queries.md)
       + [疑難排解 GraphQL 查詢](/help/headless/graphql-api/persisted-queries-troubleshoot.md)
-   + [內容片段 REST API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/assets-api-content-fragments.html)
+   + [內容片段 REST API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/assets-api-content-fragments.html?lang=zh-Hant)
    + 安全性 {#security}
       + [權限](/help/headless/security/permissions.md)
       + [驗證](/help/headless/security/authentication.md)
@@ -897,7 +897,7 @@ ht-degree: 98%
          + [如何整合一切](/help/journey-headless/developer/put-it-all-together.md)
          + [如何使用 Headless 應用程式](/help/journey-headless/developer/go-live.md)
          + [選擇性 - 如何使用 AEM 建立單頁應用程式](/help/journey-headless/developer/create-spa.md)
-         + [開發人員入口網站 (其他資源)](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
+         + [開發人員入口網站 (其他資源)](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=zh-Hant)
       + Headless 內容架構者歷程 {#architect}
          + [AEM Headless 內容架構者歷程概觀](/help/journey-headless/architect/overview.md)
          + [使用 AEM 建立 Headless 的內容模型 - 簡介](/help/journey-headless/architect/introduction.md)
@@ -1017,8 +1017,8 @@ ht-degree: 98%
          + 元件和範本 {#components-templates}
             + [元件概觀](/help/implementing/developing/components/overview.md)
             + [範本](/help/implementing/developing/components/templates.md)
-            + [核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
-            + [樣式系統](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/style-system.html)
+            + [核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hant)
+            + [樣式系統](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/style-system.html?lang=zh-Hant)
             + [內容服務的 JSON 匯出工具](/help/implementing/developing/components/json-exporter.md)
             + [為元件啟用 JSON 匯出](/help/implementing/developing/components/enabling-json-exporter.md)
             + [影像編輯器](/help/implementing/developing/components/image-editor.md)
@@ -1045,10 +1045,10 @@ ht-degree: 98%
          + [Universal Editor 呼叫](/help/implementing/universal-editor/calls.md)
          + [事件](/help/implementing/universal-editor/events.md)
          + [自訂 Universal Editor](/help/implementing/universal-editor/customizing.md)
-      + [Headless 體驗管理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/introduction.html)
+      + [Headless 體驗管理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/introduction.html?lang=zh-Hant)
       + 混合式與 SPA 開發 {#hybrid}
          + [使用 AEM 的混合式和 SPA](https://business.adobe.com/content/dam/dx/us/en/products/experience-manager/sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
-         + [為元件啟用 JSON 匯出](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html)
+         + [為元件啟用 JSON 匯出](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html?lang=zh-Hant)
          + [SPA 簡介和逐步解說](/help/implementing/developing/hybrid/introduction.md)
          + [SPA WKND 教學課程](/help/implementing/developing/hybrid/wknd-tutorial.md)
          + [使用 React 快速入門](/help/implementing/developing/hybrid/getting-started-react.md)
@@ -1064,7 +1064,7 @@ ht-degree: 98%
          + [在 AEM 中編輯外部 SPA](/help/implementing/developing/hybrid/editing-external-spa.md)
          + [SPA 中的複合元件](/help/implementing/developing/hybrid/composite-components.md)
          + [伺服器端轉譯](/help/implementing/developing/hybrid/ssr.md)
-         + [為元件啟用 JSON 匯出](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html)
+         + [為元件啟用 JSON 匯出](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html?lang=zh-Hant)
          + [啟動整合](/help/implementing/developing/hybrid/launch-integration.md)
          + [SPA 參考文件](/help/implementing/developing/hybrid/reference-materials.md)
          + [禁止透過 Sling 模型匯出工具序列化 ResourceResolvers](/help/implementing/developing/hybrid/disallow-the-serialization-of-resourceresolvers-via-sling-model-exporter.md)
@@ -1087,7 +1087,7 @@ ht-degree: 98%
       + [ContextHub 診斷](/help/implementing/developing/personalization/contexthub-diagnostics.md)
       + [延伸 ContextHub](/help/implementing/developing/personalization/extending-contexthub.md)
       + [ContextHub API](/help/implementing/developing/personalization/contexthub-api.md)
-      + [使用 ContextHub 設定分段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/personalization/contexthub-segmentation.html)
+      + [使用 ContextHub 設定分段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/personalization/contexthub-segmentation.html?lang=zh-Hant)
    + 設定和擴充 AEM as a Cloud Service {#configuring-and-extending}
       + 使用 App Builder 延伸 AEM{#app-builder}
          + [使用 Adobe Developer App Builder 延伸 AEM](/help/implementing/developing/extending/app-builder/extending-aem-with-app-builder.md)
