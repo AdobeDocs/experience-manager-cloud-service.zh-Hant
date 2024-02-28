@@ -1,13 +1,17 @@
 ---
-description: 本教學課程包含與EDS元件相關的所有資訊。
-title: 表單區塊支援的表單元件 — 開發人員教學課程
+title: AEM Forms Edge Delivery Service表單元件
+description: AEM Forms Edge Delivery Service專為最佳效能而打造，可讓您構想簡化資料收集和使用者參與的未來。 本文列出所有可用於EDD表單的現成可用表單元件。
 feature: Edge Delivery Services
-source-git-commit: 78d40574e6fea8dde22414e43fd77215b9e7d2a1
+hide: true
+hidefromtoc: true
+source-git-commit: 1dc4915f0b149ef67dfa22c8d4c6be7538170d38
 workflow-type: tm+mt
-source-wordcount: '845'
+source-wordcount: '871'
 ht-degree: 4%
 
 ---
+
+
 
 
 # Form Block Edge Delivery支援的HTML元件

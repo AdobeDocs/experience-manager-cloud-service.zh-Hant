@@ -4,7 +4,7 @@ description: 使用試算表和表單區塊欄位，更快製作強大的表單�
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: bd8c4fbfd7f740baa6abd7a91fb8d1dcdaff6c28
+source-git-commit: 1dc4915f0b149ef67dfa22c8d4c6be7538170d38
 workflow-type: tm+mt
 source-wordcount: '994'
 ht-degree: 61%
@@ -16,7 +16,10 @@ ht-degree: 61%
 
 一旦您 [已建立和預覽表單](/help/edge/docs/forms/create-forms.md)，是時候啟用對應的試算表來開始接收資料了。
 
+<!-- 
 >[!VIDEO](https://video.tv.adobe.com/v/3427489?quality=12&learn=on)
+
+-->
 
 若要啟用試算表：
 

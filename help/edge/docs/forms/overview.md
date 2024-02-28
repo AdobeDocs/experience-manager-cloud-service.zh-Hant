@@ -4,30 +4,53 @@ description: AEM Forms Edge Delivery Service 旨在為實現最佳效而建置�
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 78d40574e6fea8dde22414e43fd77215b9e7d2a1
+source-git-commit: 1dc4915f0b149ef67dfa22c8d4c6be7538170d38
 workflow-type: tm+mt
-source-wordcount: '413'
-ht-degree: 69%
+source-wordcount: '418'
+ht-degree: 65%
 
 ---
 
 
 # AEM Forms Edge Delivery Service {#aem-forms-edge-delivery-service-overview}
 
-AEM Forms Edge Delivery Service 是 Adob&#x200B;&#x200B;e 提供的一項可組合服務，可讓您建立和提供高影響力、快速執行的 Web 表單。您可以使用此服務來：
 
-* **使用令人驚豔的表單Captivate使用者**：使用預先建立的元件庫輕鬆建立複雜且吸引人的表單。 輕鬆整合reCAPTCHA、直接將表單提交至電子郵件，並允許順暢的檔案上傳至Sharepoint、Azure Storage和Amazon S3等安全儲存解決方案。 甚至可建立您自己的自訂表單元件，將您獨特的視覺效果生動呈現。
+<div>
+&lt;style="font-family: Arial, sans-serif; margin: 0; padding: 0;"&gt;
+    <main class="content">
+      <section class="content-section">
+        <p style="line-height: 1.5;">AEM Forms Edge Delivery Service 是 Adob​​e 提供的一項可組合服務，可讓您建立和提供高影響力、快速執行的 Web 表單。您可以使用此服務來：</p>
+        </section> <section class="content-section">
+        <h2 style="font-size: 20px; margin-bottom: 10px;">使用令人驚豔的表單Captivate使用者</h2>
+        <img src="/help/edge/assets/enrollment-form.png" alt="登錄檔單" style="float: left; margin: 0 20px 20px 0; width: 150px;">
+        <p style="line-height: 1.5;">使用預先建立的元件庫輕鬆建立複雜且吸引人的表單。 輕鬆整合reCAPTCHA、直接將表單提交至電子郵件，並允許順暢的檔案上傳至Sharepoint、Azure Storage和Amazon S3等安全儲存解決方案。 甚至可建立您自己的自訂表單元件，將您獨特的視覺效果生動呈現。</p>
+        </section> <section class="content-section">
+        <h2 style="font-size: 20px; margin-bottom: 10px;">使用完美的Lighthouse分數建置表單</h2>
+        <img src="/help/edge/assets/lighthouse-forms.png" alt="表單的完美燈塔分數" style="float: right; margin: 20px 0 0 20px; width: 150px;">
+        <p style="line-height: 1.5;"> 建置可快速載入及轉譯的表單，即使在網際網路連線速度緩慢時亦然。 更快的載入時間和最佳化使用者體驗有助於提高表單完成率和轉換率。</p>
+        </section>
+        <section class="content-section">
+        <h2 style="font-size: 20px; margin-bottom: 10px;">使用您選擇的工具建立數位註冊體驗</h2>
+        <img src="/help/edge/assets/edge-delivery-forms-authoring-tools.png" alt="登錄檔單" style="float: left; margin: 0 20px 20px 0; width: 150px;">
+        <p style="line-height: 1.5;">透過分離內容來源來提高編寫工作效率。您可以一開啟即使用 AEM 編寫和文件型編寫。因此，您可以在相同網站上使用多個內容來源，並使用您偏好的編寫工具，例如Microsoft Excel、Google Sheets或AEM編輯器。</p>
+        </section>
+</div>
 
-  ![登錄檔單](/help/edge/assets/enrollment-form.png)
 
-* **建立擁有 Lighthouse 分數的表單**：建立能快速載入和呈現的表單，即使網路連線慢也可行。更快的載入時間和最佳化使用者體驗有助於提高表單完成率和轉換率。
+<!-- >
+* **Captivate users with stunning forms**: 
+Build complex and engaging forms with ease using a library of pre-built components. Easily integrate reCAPTCHA, submit forms directly to email, and allow seamless file uploads to secure storage solutions like Sharepoint, Azure Storage, and Amazon S3. Even create your own custom forms components to bring your unique vision to life. 
 
-  ![表單的完美燈塔分數](/help/edge/assets/lighthouse-forms.png)
+    ![Enrollment forms](/help/edge/assets/enrollment-form.png)
 
-* **使用您選擇的工具建立數位註冊體驗**：透過分離內容來源來提高編寫效率。 您可以一開啟即使用 AEM 編寫和文件型編寫。因此，您可以在相同網站上使用多個內容來源，並使用您偏好的編寫工具，例如Microsoft Excel、Google Sheets或AEM編輯器。
+* **Build forms with perfect lighthouse score**: Build forms that load and render quickly, even on slow internet connections. Faster loading times and optimized user experience contribute to higher form completion rates and improved conversion rates.
 
-  ![Edge Delivery Forms編寫工具](/help/edge/assets/edge-delivery-forms-authoring-tools.png)
+    ![perfect lighthouse score for your forms](/help/edge/assets/lighthouse-forms.png)
 
+* **Create digital enrollment experiences with tools of your choice**: Increase authoring efficiency by decoupling content sources. Out of the box you can use both AEM authoring and document-based authoring. As such, you can work with multiple content sources on the same website and use your preferred authoring tools, such as Microsoft Excel, Google Sheets, or AEM Editors.
+
+    ![Edge Delivery forms authoring tools](/help/edge/assets/edge-delivery-forms-authoring-tools.png)
+    
 <!--
 * **Measure customer impact and deliver effective forms**: Use our RUM dashboards to visualize form performance and identify areas for improvement. Experiment with different versions and continuously optimize your forms for maximum effectiveness, ensuring you capture the data you need and drive better business outcomes.
 
