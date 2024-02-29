@@ -4,7 +4,7 @@ description: AEM Forms Edge Delivery Service 旨在為實現最佳效而建置�
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: e21b681b12e90110436c7319797809c8d6b75eea
+source-git-commit: 39bb45b285fcd938d44b9748aa8559b89a3636b2
 workflow-type: tm+mt
 source-wordcount: '445'
 ht-degree: 48%
@@ -16,8 +16,6 @@ ht-degree: 48%
 
 透過Adobe的AEM Forms Edge Delivery Service簡化表單建立作業，並提高完成率。 這項功能強大、可撰寫的服務可讓您建立具有卓越效能和視覺吸引力的企業級表單。 AEM會同時優先考慮使用者體驗和業務目標，確保超快的載入時間並增加表單完成次數。
 
-![EDS Forms主要功能](/help/edge/assets/eds-forms-key-features.png){width="70%"}
-
 您可以使用此服務來：
 
 * **使用令人驚豔的表單Captivate使用者**：使用預先建立的元件庫輕鬆建立複雜且吸引人的表單。 輕鬆整合reCAPTCHA、直接將表單提交至電子郵件，並允許順暢的檔案上傳至Sharepoint、Azure Storage和Amazon S3等安全儲存解決方案。 甚至可建立您自己的自訂表單元件，將您獨特的視覺效果生動呈現。
@@ -26,6 +24,7 @@ ht-degree: 48%
 
 * **使用完美的Lighthouse分數建置表單**：建立可快速載入和轉譯的表單，即使在網際網路連線速度緩慢時也是如此。 更快的載入時間和最佳化使用者體驗有助於提高表單完成率和轉換率。
 
+  <img src="/help/edge/assets/eds-forms-key-features.png" alt="EDS Forms主要功能" style = "width=`80%`; align=`center`; border: 1px solid;padding: 15px;">
 
 <!-- >
 * **Captivate users with stunning forms**: 

@@ -4,9 +4,9 @@ description: 快速製作完美表單！⚡ AEM Forms Edge Delivery 文件型製
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 3b24d0cd4099e0b8eb48c977f460b25c168af220
+source-git-commit: 39bb45b285fcd938d44b9748aa8559b89a3636b2
 workflow-type: tm+mt
-source-wordcount: '1118'
+source-wordcount: '1120'
 ht-degree: 17%
 
 ---
@@ -79,7 +79,7 @@ AEM Forms Edge Delivery提供表單區塊，協助您輕鬆建立表單，以擷
 
    ![將預設試算表重新命名為「共用預設」](/help/edge/assets/rename-sheet-to-shared-default.png)
 
-1. 若要新增表單欄位，請在「shared-default」工作表中插入列和欄標題。 每一列應代表一個表單欄位，欄標題定義對應欄位 [屬性](/help/edge/docs/forms/eds-form-field-properties).
+1. 若要新增表單欄位，請在「shared-default」工作表中插入列和欄標題。 每一列應代表 [表單欄位](/help/edge/docs/forms/form-components.md)，欄標題定義對應欄位 [屬性](/help/edge/docs/forms/eds-form-field-properties).
 
    為了快速起步，請考慮複製 [查詢試算表](https://docs.google.com/spreadsheets/d/196lukD028RDK_evBelkOonPxC7w0l_IiJ-Yx3DvMfNk/edit#gid=0) 放入您的試算表中。 複製內容後，請儲存試算表。
 
@@ -153,6 +153,7 @@ AEM Forms Edge Delivery提供表單區塊，協助您輕鬆建立表單，以擷
 
 ## 了解更多
 
+* [表單元件](/help/edge/docs/forms/form-components.md)
 * [表單欄位屬性](/help/edge/docs/forms/eds-form-field-properties)
 * [建立並預覽表單](/help/edge/docs/forms/create-forms.md)
 * [啟用表單來傳送資料](/help/edge/docs/forms/submit-forms.md)
