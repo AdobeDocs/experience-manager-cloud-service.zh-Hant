@@ -2,10 +2,10 @@
 title: 使用 Universal Editor 進行本機 AEM 開發
 description: 了解 Universal Editor 如何支援為開發目的在本機 AEM 執行個體上進行編輯。
 exl-id: ba1bf015-7768-4129-8372-adfb86e5a120
-source-git-commit: 16f2922a3745f9eb72f7070c30134e5149eb78ce
+source-git-commit: bbb7e7d9023f8326980196923bfab77c3968ead4
 workflow-type: tm+mt
-source-wordcount: '576'
-ht-degree: 87%
+source-wordcount: '699'
+ht-degree: 64%
 
 ---
 
@@ -18,7 +18,13 @@ ht-degree: 87%
 
 ## 概觀 {#overview}
 
-本檔案說明如何在HTTPS中連同通用編輯器服務的本機復本一起執行AEM，以便您可以使用通用編輯器在AEM上本機開發。
+Universal Editor 服務綁定 Universal Editor 和後端系統。若要能夠在本機開發Universal Editor，您必須執行Universal Editor服務的本機復本。 原因如下：
+
+* Adobe的官方Universal Editor服務託管於全球各地，而您的本機AEM執行個體必須向網際網路公開。
+* 使用本機AEM SDK進行開發時，無法從網際網路存取Adobe的通用編輯器服務。
+* 如果您的AEM執行個體有IP限制，而Adobe的Universal Editor服務不在定義的IP範圍內，則您可以自行託管。
+
+本檔案說明如何在HTTPS中搭配通用編輯器服務的本機復本執行AEM，以便您可以在AEM上本機開發以與通用編輯器搭配使用。
 
 ## 將 AEM 設定為在 HTTPS 上執行 {#aem-https}
 
@@ -26,13 +32,13 @@ ht-degree: 87%
 
 為此，您需要將 AEM 設定為在 HTTPS 上執行。出於開發目的，您可以使用自我簽署憑證。
 
-請參閱本檔案以瞭解如何設定在HTTPS上執行的AEM，包括您可使用的自我簽署憑證。
+[請參閱此檔案](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/use-the-ssl-wizard.html) 有關如何設定在HTTPS上執行的AEM，包括您可使用的自我簽署憑證。
 
 ## 安裝 Universal Editor 服務 {#install-ue-service}
 
-Universal Editor 服務綁定 Universal Editor 和後端系統。由於官方 Universal Editor 服務為全球託管，因此您的本機 AEM 執行個體需要暴露於網際網路。為了避免這種情況，您可以執行 Universal Editor 服務的本機副本。
+Universal Editor服務並非Universal Editor的完整復本，而是其功能的子集，以確保不會透過網際網路路由來自您本機AEM環境的呼叫，而是從您控制的已定義端點路由呼叫。
 
-[NodeJS 版本 16](https://nodejs.org/en/download/releases)需要執行 Universal Editor 服務的本機副本
+[NodeJS版本16](https://nodejs.org/en/download/releases) 執行Universal Editor服務的本機副本需要。
 
 Universal Editor 服務由 AEM Engineering 直接分發。請聯絡VIP程式中的工程師以取得本機復本。
 
@@ -98,6 +104,12 @@ Universal Editor 會根據頁面的偵測方式，知道要使用哪個 Universa
 
 設定完成後，您應該會看到每個內容更新呼叫都會前往 `https://localhost:8000`，而不是預設的 Universal Editor 服務。
 
+>[!NOTE]
+>
+>嘗試直接存取 `https://localhost:8000` 結果位於 `404` 錯誤。 這是預期行為。
+>
+>若要測試對您本機Universal Editor服務的存取，請使用 `https://localhost:8000/corslib/LATEST`. 請參閱 [下一節](#editing) 以取得詳細資訊。
+
 >[!TIP]
 >
 >有關如何偵測頁面以使用全域 Universal Editor 服務的更多詳情，請參閱文件[開始在 AEM 使用 Universal Editor](/help/implementing/universal-editor/getting-started.md#instrument-page)
@@ -106,6 +118,6 @@ Universal Editor 會根據頁面的偵測方式，知道要使用哪個 Universa
 
 有了[本機執行的 Universal Editor 服務](#running-ue)和[經檢測可使用本機服務的內容頁面](#using-loca-ue)，現在您可以啟動編輯器。
 
-1. 開啟您的瀏覽器，前往 `https://localhost:8000/`。
+1. 開啟您的瀏覽器，前往 `https://localhost:8000/corslib/LATEST`。
 1. 指示您的瀏覽器接受[您的自我簽署憑證。](#ue-https)
 1. 一旦自我簽署憑證受到信任，您就可以使用本機 Universal Editor 服務編輯頁面。
