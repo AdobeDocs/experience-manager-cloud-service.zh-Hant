@@ -4,9 +4,9 @@ description: AEM Forms Edge Delivery Service專為最佳效能而打造，可讓
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 1dc4915f0b149ef67dfa22c8d4c6be7538170d38
+source-git-commit: 3b24d0cd4099e0b8eb48c977f460b25c168af220
 workflow-type: tm+mt
-source-wordcount: '278'
+source-wordcount: '275'
 ht-degree: 4%
 
 ---
@@ -57,8 +57,8 @@ Form Block可協助您輕鬆建立表單，以擷取及儲存擷取的資料。 
    </td>
   </tr>
       <tr>
-   <td>預留位置</td>
-   <td>文字、搜尋、URL、電話、電子郵件、密碼和數字</td>
+   <td>說明</td>
+   <td>適用於所有欄位</td>
    <td> 預留位置屬性會向使用者提供欄位中預期資訊型別的簡短提示。
    </td>
   </tr>

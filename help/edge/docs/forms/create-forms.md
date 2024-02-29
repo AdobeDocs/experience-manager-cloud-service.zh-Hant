@@ -1,18 +1,18 @@
 ---
-title: 開始使用 AEM Forms Edge Delivery Service
+title: AEM Forms Edge Delivery Service快速入門。 建立表單。
 description: 快速製作完美表單！⚡ AEM Forms Edge Delivery 文件型製作 = 驚人的速度和 SEO 友善表單，讓使用者更滿意且適用於搜尋引擎。
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 78d40574e6fea8dde22414e43fd77215b9e7d2a1
+source-git-commit: 3b24d0cd4099e0b8eb48c977f460b25c168af220
 workflow-type: tm+mt
-source-wordcount: '994'
-ht-degree: 60%
+source-wordcount: '1118'
+ht-degree: 17%
 
 ---
 
 
-# 在 AEM Forms Edge Delivery Service 上建立表單
+# 為Edge Delivery Service (EDS)網站建立表單
 
 身處今日數位時代，任何組織都需要建立對使用者友善的表單。AEM Forms Edge Delivery 讓您可以使用 Word 或 Google Docs 等熟悉的工具來建立表單。
 
@@ -25,7 +25,7 @@ AEM Forms Edge Delivery提供表單區塊，協助您輕鬆建立表單，以擷
 
 開始之前，請確定您已完成下列步驟：
 
-* 使用AEM範本設定Edge Delivery Service (EDS) Github專案，並在本機電腦上複製對應的Github存放庫。 另請參閱 [開發人員教學課程](https://www.aem.live/developer/tutorial) 以取得詳細資訊。 在本檔案中，Edge Delivery Service (EDS)專案的本機資料夾稱為 `[EDS Project repository]` .
+* 使用AEM範本設定Edge Delivery Service (EDS) GitHub專案，並在本機電腦上複製對應的GitHub存放庫。 另請參閱 [開發人員教學課程](https://www.aem.live/developer/tutorial) 以取得詳細資訊。 在本檔案中，Edge Delivery Service (EDS)專案的本機資料夾稱為 `[EDS Project repository]` .
 * 原地複製 [Forms區塊存放庫](https://github.com/adobe/afb) 本機電腦上。 它包含在EDS網頁上轉譯表單的程式碼。 在本檔案中，您的Forms Block存放庫的本機資料夾稱為 `[Forms Block repository]`.
 * 確保您有權存取Google工作表或Microsoft SharePoint。 若要將Microsoft SharePoint設定為您的內容來源，請參閱 [如何使用Sharepoint](https://www.aem.live/docs/setup-customer-sharepoint)
 
@@ -35,63 +35,76 @@ AEM Forms Edge Delivery提供表單區塊，協助您輕鬆建立表單，以擷
 
 +++ 步驟1：將表單區塊新增至您的邊緣傳遞服務(EDS)專案。
 
-此 `Form block` 包含新增表單至EDS網站的功能。 區塊不包含在使用AEM範本建立的專案中。 若要將 Form 區塊加入您的 Edge Delivery Service 專案中：
+此Form區塊可讓使用者為Edge Delivery Service網站建立表單。 不過，此區塊不包含在預設的AEM樣板中（用來建立Edge Delivery Service專案）。 若要將表單區塊順暢地整合至您的Edge Delivery Service專案：
 
-1. 導覽至 `[Forms Block repository]/blocks` 資料夾，並複製 `form` 資料夾。
+1. **找到表單區塊存放庫：** 存取 [Forms區塊存放庫]/blocks資料夾並複製 `form` 資料夾。
+1. **將表單區塊貼入您的EDS專案：**
+導覽至 [EDS專案存放庫]/blocks/資料夾貼上表單資料夾。
+1. **將變更提交至GitHub：** 將表單資料夾及其基礎檔案簽入至GitHub上的邊緣傳遞服務專案。
 
-1. 導覽至 `[EDS Project repository]/blocks/` 資料夾並貼上 `form` 資料夾。
+完成這些步驟後，表單區塊已成功整合至GitHub上的邊緣傳遞服務(EDS)專案存放庫。
 
-1. 存回 `form` 資料夾和基礎檔案新增至GitHub上的邊緣傳遞服務專案。
 
-   表單區塊會新增至GitHub上的EDS專案存放庫。 請確定GitHub建置不會失敗：
+**疑難排解GitHub建置問題**
 
-   * 如果遇到「無法解析至「&#39;../../scripts/lib-franklin.js&#39;」路徑」錯誤，請開啟 `[EDS Project]/blocks/forms/form.js` 檔案。在匯入語句中，將 `lib-franklin.js` 檔案替換為 `aem.js` 檔案。
+解決下列潛在問題，確保GitHub建置流程順暢：
 
-   * 如果您遇到任何 linting 錯誤，可隨時忽略這些錯誤。若要繞過 linting 檢查，請開啟 `[EDS Project]\package.json` 檔案並將「lint」指令碼從 `"lint": "npm run lint:js && npm run lint:css"` 更新為 `"lint": "echo 'skipping linting for now'"`。儲存檔案並將其提交到您的 GitHub 專案。
+* **解決模組路徑錯誤：**
+如果您遇到「無法解析模組「&#39;../../scripts/lib-franklin.js&#39;」的路徑」錯誤，請導覽至 [EDS專案]/blocks/forms/form.js檔案。 將lib-franklin.js檔案取代為aem.js檔案，以更新匯入陳述式。
 
-現在您可以建立表單並將其新增至您的網站。
+* **處理Linting錯誤：**
+如果您遇到任何連結錯誤，可以略過這些錯誤。 開啟 [EDS專案]/package.json檔案並將「lint」指令碼從「lint」：「npm run lint：js &amp;&amp; npm run lint：css」修改為「lint」：「echo &#39;skipping linting for now&#39;」。 儲存檔案並將變更提交至您的GitHub專案。
+
+
 
 +++
 
 +++ 步驟2：使用Microsoft Excel或Google工作表製作表單。
 
-您可以使用試算表輕鬆建立表單，而不需要複雜的流程。您可以先將列和欄標題新增至試算表中，其中每個列會定義一個表單欄位，每個欄標題會定義對應表單欄位的屬性。
+您可以使用試算表輕鬆完成表單的製作作業，而不需透過複雜的程式進行瀏覽。 首先，您可以將列和欄標題新增至試算表，其中每一列代表一個表單欄位，而每一欄標題則定義對應欄位的屬性。
 
-例如，在下面的試算表中，列會定義`contact us`表單的欄位，欄標題會定義對應欄位的屬性。
+例如，考慮下列試算表，其中的列大綱欄位用於 `enquiry` 表單和欄標題定義其屬性：
 
-![聯絡我們試算表](/help/edge/assets/contact-us-form-spreadsheet.png)
+![查詢試算表](/help/edge/assets/enquiry-form-spreadsheet.png)
 
-若要建立表單：
+若要繼續建立表單：
 
-1. 在 Microsoft SharePoint 或 Google Drive 上，開啟 AEM Edge Delivery 專案資料夾。
+1. 在Microsoft SharePoint或Google Drive上存取AEM Edge Delivery專案資料夾。
 
-1. 在 AEM Edge Delivery 專案目錄下的任意位置，建立 Microsoft Excel 活頁簿或 Google Sheet。例如，在 Google Drive 上的 AEM Edge Delivery 專案目錄中，建立一個名為 `contact-us` 的試算表。
+1. 在AEM Edge Delivery專案目錄中的任何位置建立Microsoft Excel活頁簿或Google工作表。 例如，在 Google Drive 上的 AEM Edge Delivery 專案目錄中，建立一個名為 `enquiry` 的試算表。
 
-1. 確保該試算表可讓為您專案設定的 AEM 使用者 (例如 `helix@adobe.com`) [](https://www.aem.live/docs/setup-customer-sharepoint) 共用，並且該使用者擁有該試算表的編輯權限。
+1. 確定工作表已和適當的AEM使用者共用(例如 `helix@adobe.com`) [根據專案指定的設定](https://www.aem.live/docs/setup-customer-sharepoint). 授予使用者工作表編輯許可權。
 
-1. 開啟您所建立的試算表，並將預設試算表的名稱變更為「共用預設」。
+1. 開啟建立的試算表，並將預設工作表重新命名為「shared-default」。
 
    ![將預設試算表重新命名為「共用預設」](/help/edge/assets/rename-sheet-to-shared-default.png)
 
-1. 若要新增表單欄位，請新增列和欄標題至 `shared-default` 試算表中，其中每列會定義一個表單欄位，每個欄標題會定義對應表單欄位的[屬性](/help/edge/docs/forms/eds-form-field-properties)。
+1. 若要新增表單欄位，請在「shared-default」工作表中插入列和欄標題。 每一列應代表一個表單欄位，欄標題定義對應欄位 [屬性](/help/edge/docs/forms/eds-form-field-properties).
 
-   若要快速開始，您可以將[聯絡我們試算表](https://docs.google.com/spreadsheets/d/12jvYjo1a3GOV30IqPY6_7YaCQtUmzWpFhoiOHDcjB28/edit?usp=drive_link)的內容複製到您的試算表中。
+   為了快速起步，請考慮複製 [查詢試算表](https://docs.google.com/spreadsheets/d/196lukD028RDK_evBelkOonPxC7w0l_IiJ-Yx3DvMfNk/edit#gid=0) 放入您的試算表中。 複製內容後，請儲存試算表。
 
    >[!VIDEO](https://video.tv.adobe.com/v/3427468?quality=12&learn=on)
 
-1. 使用 [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) 預覽和發佈試算表。
 
-   ![使用 AEM Sidekick 預覽和發佈試算表](/help/edge/assets/preview-form.png)
+1. 使用 [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) 以預覽頁面。
 
-   預覽和發佈時，瀏覽器會開啟新標籤，以 JSON 格式顯示試算表內容。請務必記下即時 URL，因為稍後提交表單時需要用到。
+   ![使用AEM Sidekick預覽工作表](/help/edge/assets/preview-form.png)
 
-   URL 的格式是：
+   預覽和發佈後，新的瀏覽器標籤會以JSON格式顯示工作表內容。 請務必擷取預覽URL，因為這是呈現下一區段表單的必要條件。 URL格式如下：
+
 
    ```JSON
-   https://<branch>--<repository>--<owner>.hlx.live/<form>.json
-   
-   For example, https://main--portal--wkndforms.hlx.live/contact-us.json
+       https://<branch>--<repository>--<owner>.hlx.live/<form>.json
    ```
+
+   * `<branch>` 是指GitHub存放庫的分支。
+   * `<repository>` 代表您的GitHub存放庫。
+   * `<owner>` 是指代管GitHub存放庫的GitHub帳戶使用者名稱。
+
+   例如，如果您的專案存放庫命名為「入口網站」，它位在帳戶「wkandforms」底下，而您使用的是「主要」分支，則URL看起來如下所示：
+
+   `https://main--portal--wkndforms.hlx.page/enquiry.json`
+
 
 +++
 
@@ -100,30 +113,30 @@ AEM Forms Edge Delivery提供表單區塊，協助您輕鬆建立表單，以擷
 
 到目前為止，您已經將表單區塊新增至EDS專案，並準備好表單的結構。 現在，若要預覽表單：
 
-1. 前往Microsoft SharePoint或Google Drive帳戶，並開啟AEM Edge Delivery專案目錄。
+1. **存取您的專案目錄：** 開啟您的Microsoft SharePoint或Google Drive帳戶，並導覽至您的AEM Edge Delivery專案目錄。
 
-1. 開啟doc檔案以將表單嵌入其中。 例如，開啟索引檔案。 您也可以建立新的doc檔案。
+1. **將表單內嵌至檔案：** 開啟檔案檔案（例如，索引檔案）以內嵌表單。 或者，您也可以建立新檔案。
 
-1. 導覽至文件中要新增表單的所需位置。
+1. **導覽至所需位置：** 移至檔案中您想要新增表單的位置。
 
-1. 新增名為 &#39;Form&#39; 的區塊至檔案中，類似於下面顯示的區塊。
+1. **新增表單區塊：** 將名為&#39;Form&#39;的區塊插入檔案中，如下圖所示：
 
-   ![](/help/edge/assets/form-block-in-sites-page-example.png)
+   | 表單 |
+   |---|
+   | [https://main--portal--wkndforms.hlx.live/enquiry.json](https://main--portal--wkndforms.hlx.live/enquiry.json) |
 
-   在第二列中，加入您在前一節中錄製的URL作為超連結。 將預覽URL (.page URL)用於開發或測試目的，或將發佈URL (.live)用於生產。
+   此區塊可作為內嵌表單的預留位置。 在區塊的第二列中，新增您的預覽URL `<form>.json` 檔案做為超連結。
 
    >[!IMPORTANT]
    >
    >
-   > 請確定URL為超連結，而非以純文字顯示。
+   > 請確定URL的格式為超連結，而非顯示為純文字。
 
 
-1. 使用 [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) 來預覽頁面。頁面現在會顯示表單。
-
-   例如，這是以[聯絡我們試算表](https://docs.google.com/spreadsheets/d/12jvYjo1a3GOV30IqPY6_7YaCQtUmzWpFhoiOHDcjB28/edit?usp=drive_link)為主的表單：
+1. 使用 [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) 以預覽檔案。 頁面現在會顯示表單。例如，以下是根據 [查詢試算表](https://docs.google.com/spreadsheets/d/196lukD028RDK_evBelkOonPxC7w0l_IiJ-Yx3DvMfNk/edit#gid=0)：
 
 
-   ![EDS Forms 範本](/help/edge/assets/eds-form.png)
+   [![EDS表單範例](/help/edge/assets/eds-form.png)](https://main--portal--wkndforms.hlx.live/)
 
    現在，填寫表單並按一下提交按鈕，您會遇到類似於以下內容的錯誤，因為試算表尚未設定為接受資料。
 
