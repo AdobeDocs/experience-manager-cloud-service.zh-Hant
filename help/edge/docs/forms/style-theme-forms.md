@@ -4,9 +4,9 @@ description: 自訂 AEM Forms Edge Delivery Service Form 的主題和樣式
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 78d40574e6fea8dde22414e43fd77215b9e7d2a1
+source-git-commit: e2970c7a141025222c6b119787142e7c39d453af
 workflow-type: tm+mt
-source-wordcount: '1268'
+source-wordcount: '1271'
 ht-degree: 1%
 
 ---
@@ -14,11 +14,11 @@ ht-degree: 1%
 
 # 設定表單欄位樣式
 
-Forms對於使用者在網站上的互動至關重要，可讓他們輸入資料。 本指南說明在「 」中設定各種表單欄位樣式的基礎知識。 [表單區塊](/help/edge/docs/forms/create-forms.md)，協助您建立吸引人且方便使用的表單。
+Forms對於使用者在網站上的互動至關重要，可讓他們輸入資料。 本指南說明在「 」中設定各種表單欄位樣式的基礎知識。 [最適化表單區塊](/help/edge/docs/forms/create-forms.md)，協助您建立吸引人且方便使用的表單。
 
 ## 瞭解表單欄位型別
 
-在深入研究樣式之前，讓我們先檢閱表單區塊支援的常見表單欄位型別：
+開始研究樣式之前，請先檢閱最適化表單區塊支援的常見表單欄位型別：
 
 * 輸入欄位：包括文字輸入、電子郵件輸入、密碼輸入等。
 * 核取方塊群組：用於選取多個選項。
@@ -35,7 +35,7 @@ Forms對於使用者在網站上的互動至關重要，可讓他們輸入資料
 * 方塊模型： CSS方塊模型將HTML元素的結構描述為由邊框間距、邊框和邊界包圍的內容區域。
 * Flexbox/Grid： CSS Flexbox和Grid版面配置是建立回應式且彈性設計的強大工具。
 
-## 為表單區塊設定表單樣式
+## 為最適化表單區塊設定表單樣式
 
 「表單區塊」提供標準化的HTML結構，可簡化選取和樣式化表單元件的程式：
 

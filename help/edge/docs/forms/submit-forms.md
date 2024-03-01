@@ -4,10 +4,10 @@ description: 使用試算表和表單區塊欄位，更快製作強大的表單�
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 1dc4915f0b149ef67dfa22c8d4c6be7538170d38
+source-git-commit: e2970c7a141025222c6b119787142e7c39d453af
 workflow-type: tm+mt
-source-wordcount: '994'
-ht-degree: 61%
+source-wordcount: '996'
+ht-degree: 56%
 
 ---
 
@@ -160,7 +160,7 @@ ht-degree: 61%
 1. 輸入您想要的任何標題，然後在欄位下輸入您想要在 Slack 通知中看到的欄位名稱。每個標題應以逗號分隔 (例如姓名、電子郵件)。
 
 
-工作表現已設定可接受資料，您可以[使用 Forms 區塊預覽表單](/help/edge/docs/forms/create-forms.md#preview-the-form-using-your-edge-delivery-service-eds-page)或[使用 POST 請求](#use-admin-apis-to-send-data-to-your-sheet) 開始將資料傳送到工作表。
+工作表現在已設定為可接收資料，您可以 [使用最適化表單區塊預覽表單](/help/edge/docs/forms/create-forms.md#preview-the-form-using-your-edge-delivery-service-eds-page) 或 [使用POST請求](#use-admin-apis-to-send-data-to-your-sheet) 以開始傳送資料至工作表。
 
 >[!WARNING]
 >
@@ -168,7 +168,7 @@ ht-degree: 61%
 
 ## 將資料傳送到您的工作表 {#send-data-to-your-sheet}
 
-將工作表設定為接收資料後，您可以[使用 Forms 區塊預覽表單](/help/edge/docs/forms/create-forms.md#preview-the-form-using-your-edge-delivery-service-eds-page)或[使用 Admin API](#use-admin-apis-to-send-data-to-your-sheet) 開始傳送資料到工作表。
+將工作表設定為接收資料後，您可以 [使用最適化表單區塊預覽表單](/help/edge/docs/forms/create-forms.md#preview-the-form-using-your-edge-delivery-service-eds-page) 或 [使用管理API](#use-admin-apis-to-send-data-to-your-sheet) 以開始傳送資料至工作表。
 
 ### 使用 Admin API 將資料傳送到您的工作表
 

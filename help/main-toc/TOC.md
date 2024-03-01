@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的運作方式以及該軟體可以為您做哪些事。
 breadcrumb-title: 使用手冊
 user-guide-title: AEM as a Cloud Service
-source-git-commit: b7b9dbfa7f939828d66a785daecf84c917923c37
+source-git-commit: e2970c7a141025222c6b119787142e7c39d453af
 workflow-type: tm+mt
 source-wordcount: '4751'
 ht-degree: 98%
@@ -826,12 +826,12 @@ ht-degree: 98%
          + [新增驗證至表單欄位](/help/edge/docs/forms/validate-forms.md)
          + [改變主題和樣式風格](/help/edge/docs/forms/style-theme-forms.md)
          + [使用規則將動態行為新增至表單](/help/edge/docs/forms/rules-forms.md)
+         + [感謝頁面](/help/edge/docs/forms/thank-you-page-form.md)
       + 功能 {#advanced-features-eds-forms}
          + [表單片段](/help/edge/docs/forms/form-fragments.md)
          + [可重複區段](/help/edge/docs/forms/repeatable-forms.md)
          + [轉換](/help/edge/docs/forms/translate-forms.md)
          + [reCAPTCHA](/help/edge/docs/forms/recaptacha-forms.md)
-         + [感謝頁面](/help/edge/docs/forms/thank-you-page-form.md)
          + [自訂元件](/help/edge/docs/forms/custom-components-forms.md)
       + 引用 {#forms-references}
          + [表單區塊元件清單](/help/edge/docs/forms/form-components.md)
