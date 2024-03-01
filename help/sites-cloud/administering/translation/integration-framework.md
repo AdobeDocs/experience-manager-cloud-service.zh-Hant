@@ -4,9 +4,9 @@ description: 瞭解如何設定翻譯整合框架以與協力廠商翻譯服務�
 feature: Language Copy
 role: Admin
 exl-id: 6e74cdee-7965-4087-a733-e9d81c4aa7c2
-source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
+source-git-commit: 05e4adb0d7ada0f7cea98858229484bf8cca0d16
 workflow-type: tm+mt
-source-wordcount: '1465'
+source-wordcount: '1466'
 ht-degree: 10%
 
 ---
@@ -27,31 +27,31 @@ ht-degree: 10%
 
 ## 連接到翻譯服務提供者 {#connecting-to-a-translation-service-provider}
 
-建立雲端設定，將AEM連線至您的翻譯服務提供者。 AEM具備以下功能： [連線至Microsoft Translator](connect-ms-translator.md) 依預設。
+建立雲端設定，將AEM連線至您的翻譯服務提供者。 AEM具備以下功能： [連線至Microsoft® Translator](connect-ms-translator.md) 依預設。
 
-下列翻譯廠商提供用於翻譯專案的AEM API實作。
+以下翻譯供應商提供翻譯專案的AEM API 實施。
 
-* [Microsoft Translator](connect-ms-translator.md)
-* [Translations.com](https://exchange.adobe.com/experiencecloud.details.90104.globallink-connect-plus-for-aem.html) (AdobeExchange主要合作夥伴)
+* [微軟](connect-ms-translator.md)
+* [](https://exchange.adobe.com/experiencecloud.details.90104.globallink-connect-plus-for-aem.html) Translations.com（Adobe Systems交易所優秀合作夥伴）
 * [Clay平板電腦技術](https://exchange.adobe.com/experiencecloud.details.90064.clay-tablet-translation-for-experience-manager.html)
 * [Lionbridge](https://exchange.adobe.com/experiencecloud.details.100064.lionbridge-connector-for-experience-manager-63.html)
 * [Memsource](https://exchange.adobe.com/experiencecloud.details.103166.memsource-connector-for-adobe-experience-manager.html)
 * [Cloudwords](https://exchange.adobe.com/experiencecloud.details.90019.html)
 * [XTM Cloud](https://exchange.adobe.com/experiencecloud.details.105037.xtm-connect-for-adobe-experience-manager.html)
-* [Lingopek](https://exchange.adobe.com/experiencecloud.details.90088.lingotek-collaborative-translation-platform.html)
-* [RWS](https://partners.adobe.com/exchangeprogram/experiencecloud/exchange.details.108277.html)
-* [Smartling](https://www.smartling.com/software/integrations/adobe-experience-manager/)
-* [Systran](https://exchange.adobe.com/experiencecloud.details.90233.systran-for-adobe-experience-manager.html)
+* [Lingotek](https://exchange.adobe.com/experiencecloud.details.90088.lingotek-collaborative-translation-platform.html)
+<!-- THIS URL IS 404 * [RWS](https://partners.adobe.com/exchangeprogram/experiencecloud/exchange.details.108277.html) -->
+* [斯馬特林](https://www.smartling.com/software/integrations/adobe-experience-manager/)
+* [西斯特蘭](https://exchange.adobe.com/experiencecloud.details.90233.systran-for-adobe-experience-manager.html)
 
-安裝聯結器套件後，您可以為聯結器建立雲端設定。 通常您需要提供認證來向翻譯服務進行驗證。 如需為Microsoft Translator聯結器新增雲端設定的詳細資訊，請參閱 [與Microsoft Translator整合](connect-ms-translator.md).
+安裝聯結器套件後，您可以為聯結器建立雲端設定。 通常，您必須提供認證來向翻譯服務進行驗證。 有關為 Microsoft Translator 連接器添加雲端配置的資訊，請參閱 [與 Microsoft®® Translator](connect-ms-translator.md) 集成。
 
-您可以視需要為相同的聯結器建立多個雲端設定。 例如，為您在同一廠商的每個帳戶或專案建立一個設定。
+如有必要，您可以為同一連接器創建多個雲端配置。 例如，為您在同一供應商處擁有的每個帳戶或專案創建一個配置。
 
-設定連線後，您可以建立使用它的翻譯整合框架設定。
+配置連接后，您可以建立使用該連接的翻譯集成框架配置。
 
 ## 建立翻譯整合設定 {#creating-a-translation-integration-configuration}
 
-建立翻譯整合框架設定，以指定如何翻譯您的內容。 設定包括以下資訊：
+建立翻譯整合框架設定，讓您可以指定如何翻譯您的內容。 設定包括以下資訊：
 
 * 要使用哪個翻譯服務提供者
 * 是否進行人工翻譯或機器翻譯
@@ -67,12 +67,12 @@ ht-degree: 10%
 >
 >如需AEM內容翻譯功能的總覽，請參閱 [翻譯多語言網站的內容](overview.md).
 
-架構的單一設定可控制頁面內容和資產的翻譯方式。 若要建立翻譯設定：
+框架的單個配置控制頁面 內容和資產的轉換方式。 若要建立翻譯設定：
 
-1. 在 [全域導覽功能表、](/help/sites-cloud/authoring/basic-handling.md#global-navigation) 選取 **「工具>Cloud Service與翻譯Cloud Service」**.
-1. 導覽至您要在內容結構中建立設定的位置。這通常以特定網站為基礎，或可能是全域的。
-1. 在欄位中提供下列資訊，然後選取 **建立**.：
-   1. 選取 **設定型別** 位於下拉式清單中。
+1. 在 [全域導覽功能表中，](/help/sites-cloud/authoring/basic-handling.md#global-navigation) 選取「 **工具 > Cloud Services與翻譯Cloud Services**」。
+1. 導覽至您要在內容結構中建立設定的位置。這通常基於特定網站，也可以是全球性的。
+1. 在欄位中提供以下資訊，然後選擇建立&#x200B;****。
+   1. 在下拉清單中選擇 **配置類型** 。
    1. 輸入設定的&#x200B;**標題**。**標題**&#x200B;會識別&#x200B;**雲端服務**&#x200B;主控台和頁面屬性下拉清單中的設定。
    1. 或者，輸入&#x200B;**名稱**&#x200B;以用於儲存設定的存放庫節點。
 1. 在 **編輯設定** 視窗中，設定以下專案的屬性： **網站** 和 **資產** 索引標籤，然後選取 **儲存並關閉**.
@@ -85,44 +85,44 @@ ht-degree: 10%
 
 | 屬性 | 說明 |
 |---|---|
-| 翻譯方法 | 此屬性會定義框架為網站內容執行的翻譯方法：<br> — 機器翻譯：翻譯提供者會使用機器翻譯即時執行翻譯。<br> — 人工翻譯：內容會傳送給翻譯提供者，以供譯者翻譯。<br> — 不翻譯：不會傳送內容以供翻譯。 這是為了略過某些不會翻譯但可以用最新內容更新的內容分支。 |
-| 翻譯提供者 | 此屬性會定義執行翻譯的翻譯提供者。 安裝提供者的對應聯結器後，清單中就會顯示提供者。 |
-| 內容類別 | （僅限機器翻譯）此屬性是說明您要翻譯之內容的類別。 翻譯內容時，類別可能會影響術語和措辭的選擇。 |
+| 翻譯方法 | 此屬性會定義框架為網站內容執行的翻譯方法：<br> — 機器翻譯：翻譯提供者會使用機器翻譯即時執行翻譯。<br> — 人工翻譯：內容會傳送給翻譯提供者，以供譯者翻譯。<br>- 不翻譯：不發送內容進行翻譯。 這是為了跳過某些內容分支，這些分支不會被翻譯，但可以使用最新的內容進行更新。 |
+| 翻譯提供程式 | 此屬性定義執行翻譯的翻譯提供程序。 安裝相應的連接器時，提供程序將顯示在清單中。 |
+| 內容類別 | （僅限機器翻譯）此屬性是描述您正在翻譯內容的類別。 翻譯內容時，類別可能會影響術語和措辭的選擇。 |
 | 翻譯標記 | 此選項可讓您轉譯與頁面相關聯的標籤。 |
 | 翻譯頁面資產 | 此屬性會定義如何翻譯從檔案系統新增至元件或從資產參照的資產：<br> — 不翻譯：不翻譯頁面資產。<br> — 使用網站翻譯工作流程：根據上的設定屬性處理資產 **網站** 標籤。<br> — 使用資產翻譯工作流程：根據上設定的屬性處理資產 **資產** 標籤。 |
 | 自動執行翻譯 | 啟用此屬性可在建立翻譯專案後自動執行翻譯工作。 選擇此選項時，您沒有機會檢閱翻譯工作並設定其範圍。 |
-| 停用僅更新翻譯 | 核取此選項後，更新翻譯專案將會提交所有可翻譯的欄位以供翻譯，而不只是自上次翻譯以來變更的欄位。 |
+| 停用僅更新翻譯 | 核取此選項時，更新翻譯專案會提交所有可翻譯的欄位以供翻譯，而不只是自上次翻譯以來變更的欄位。 |
 
 ### 資產設定屬性 {#assets-configuration-properties}
 
-資產屬性可控制如何設定資產。 如需有關轉譯資產的詳細資訊，請參閱 [建立資產的語言副本](/help/assets/translate-assets.md).
+Assets属性控制如何配置資產。 有關翻譯資產的詳細信息，請参閱 [為Assets創建語言](/help/assets/translate-assets.md)副本。
 
-![網站的翻譯設定](../assets/translation-configuration-assets.png)
+![Sites翻譯設定](../assets/translation-configuration-assets.png)
 
 | 屬性 | 說明 |
 |---|---|
-| 翻譯方法 | 此屬性會選取框架為資產執行的翻譯型別：<br> — 機器翻譯：翻譯提供者會使用機器翻譯立即執行翻譯。<br> — 人工翻譯：自動傳送內容給翻譯提供者，以供手動翻譯。<br> — 不翻譯：不會傳送資產以供翻譯。 |
-| 翻譯提供者 | 此屬性會定義執行翻譯的翻譯提供者。 安裝提供者的對應聯結器後，清單中就會顯示提供者。 |
-| 內容類別 | （僅限機器翻譯）此屬性說明您要翻譯的內容。 翻譯內容時，類別可能會影響術語和措辭的選擇。 |
-| 翻譯資產 | 啟動此屬性以在翻譯專案中包含資產。 |
-| 翻譯中繼資料 | 啟動此屬性以翻譯資產中繼資料。 |
-| 翻譯標記 | 啟動此屬性以翻譯與資產關聯的標籤。 |
-| 自動執行翻譯 | 選取此屬性可在建立翻譯專案後自動執行翻譯工作。 選擇此選項時，您沒有機會檢閱翻譯工作或劃定其範圍。 |
-| 停用僅更新翻譯 | 核取此選項後，更新翻譯專案將會提交所有可翻譯的欄位以供翻譯，而不只是自上次翻譯以來變更的欄位。 |
-| 啟用內容模型欄位以進行翻譯 | 啟用此選項將使用 **可翻譯** 欄位於 [內容片段模型](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#properties) 以判斷欄位是否已轉譯並自動建立 [翻譯規則](rules.md) 視情況而定。 此選項會取代您可能已建立的任何翻譯規則。 |
+| 翻譯方法 | 此屬性選擇框架為資產執行的翻譯類型：<br>- 機器翻譯：翻譯提供程序使用機器翻譯立即執行翻譯。<br>- 人工翻譯：內容自動發送到翻譯供應商進行手動翻譯。<br>-請勿翻譯：Assets不送交翻譯。 |
+| 翻譯提供程式 | 此屬性定義執行翻譯的翻譯提供程序。 安裝相應的連接器時，提供程序將顯示在清單中。 |
+| 內容類別 | （僅限機器翻譯）此屬性說明您要翻譯的內容。 類別會影響翻譯內容時術語和措辭的選擇。 |
+| 翻譯資產 | 啟用此屬性，即可將資產納入翻譯專案。 |
+| 翻譯中繼資料 | 啟用此屬性以便翻譯資產 中繼資料。 |
+| 翻譯標記 | 激活此屬性，以便翻譯與資產關聯的標記。 |
+| 自動執行翻譯 | 選取此屬性可讓您在建立翻譯專案後自動執行翻譯工作。 選擇此選項時，您沒有機會檢閱翻譯工作或劃定其範圍。 |
+| 停用僅更新翻譯 | 選中此選項后，更新翻譯專案將提交所有可翻譯欄位進行翻譯，而不僅僅是自上次翻譯以來更改的欄位。 |
+| 啟用內容模型欄位以進行翻譯 | 啟用此選項將使用&#x200B;**內容片段模型](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#properties)上的[「可**&#x200B;翻譯」欄位來確定該欄位是否已翻譯，並相應地自動創建[翻譯規則](rules.md)。此選項將取代您可能已建立的任何翻譯規則。 |
 
-## 設定頁面以供翻譯 {#configuring-pages-for-translation}
+## 設定要翻譯的頁面 {#configuring-pages-for-translation}
 
-若要設定將來源頁面翻譯成其他語言的功能，請將這些頁面與下列雲端設定建立關聯：
+要設定將源頁面翻譯成其他語言，請將頁面與以下雲端配置相關聯：
 
 * 用於將AEM連線到您的翻譯提供商的雲端設定。
-* 可設定翻譯詳細資訊的翻譯整合架構。
+* 設定翻譯細節的翻譯整合框架。
 
-翻譯整合框架雲端設定會識別要用於連線至服務提供者的雲端設定。 將來源頁面與框架雲端設定建立關聯時，該頁面必須與框架雲端設定使用的服務提供者雲端設定建立關聯。
+翻譯集成框架雲端配置標識用于連接到服務提供者的雲端配置。 將源頁面與框架雲端配置關聯時，頁面必須與框架雲端配置使用的服務提供者 雲端配置相關聯。
 
-將頁面與雲端設定建立關聯時，該頁面的子系會繼承該關聯。 例如，如果您將 `/content/wknd/language-masters/en/magazine` 具翻譯整合架構的頁面， `magazine` 頁面及其下方的子頁面會根據框架翻譯。
+將頁面與雲端配置關聯時，頁面的後代將繼承該關聯。 例如，如果將頁面與翻譯集成框架相關聯 `/content/wknd/language-masters/en/magazine` ， `magazine` 則頁面和其下方的子頁面將根據該框架進行翻譯。
 
-必要時，您可以覆寫子代頁面上的關聯。 例如，網站的內容主要是關於旅行和生活方式， 不過，其中一個頁面分支會說明公司。 在這種情況下，網站的根頁面可能會與指定使用「生活方式」類別進行機器翻譯的翻譯整合架構相關聯，而說明公司情況的分支將使用按「一般」類別執行機器翻譯的架構。
+必要時，您可以覆寫子代頁面上的關聯。 例如，網站的內容主要是關於旅行和生活方式， 不過，其中一個頁面分支會說明公司。 在這種情況下，網站的根頁面可能會與指定使用「生活方式」類別進行機器翻譯的翻譯整合架構相關聯。 說明公司將使用「一般」類別執行機器翻譯之架構的分支。
 
 ### 將頁面與翻譯提供者建立關聯 {#associating-a-page-with-a-translation-provider}
 
@@ -137,7 +137,7 @@ ht-degree: 10%
 
 將頁面與定義您要如何執行頁面和後代頁面翻譯的翻譯整合框架建立關聯。
 
-1. 在網站主控台中，選取要設定的頁面，然後選取 **檢視屬性**.
+1. 在網站控制台中，選擇要配置的頁面，然後選擇檢視 屬性&#x200B;****。
 1. 選取「**雲端服務**」標籤。
-1. 在 **新增設定** 從下拉式清單中選取組態。
+1. 在“添加配置&#x200B;**”**&#x200B;下拉列表中清單，選擇配置。
 1. 選取「**儲存並關閉**」。

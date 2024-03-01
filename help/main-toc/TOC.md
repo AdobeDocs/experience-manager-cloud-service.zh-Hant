@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的運作方式以及該軟體可以為您做哪些事。
 breadcrumb-title: 使用手冊
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 3b24d0cd4099e0b8eb48c977f460b25c168af220
+source-git-commit: 05e4adb0d7ada0f7cea98858229484bf8cca0d16
 workflow-type: tm+mt
-source-wordcount: '4748'
+source-wordcount: '4749'
 ht-degree: 98%
 
 ---
@@ -845,7 +845,7 @@ ht-degree: 98%
       + [管理 API](https://www.aem.live/docs/admin.html)
       + [AEM 狀態](https://www.aemstatus.net)
       + 工具 {#tools}
-         + [Sidekick Chrome 擴充功能](https://chrome.google.com/webstore/detail/aem-sidekick/ccfggkjabjahcjoljmgmklhpaccedipo)
+         + [AEM Sidekick Chrome擴充功能](https://chrome.google.com/webstore/detail/aem-sidekick/ccfggkjabjahcjoljmgmklhpaccedipo)
          + [Github 機器人](https://github.com/apps/aem-code-sync)
          + [稽核記錄](/help/edge/docs/auditlog.md)
 + Headless {#headless}
