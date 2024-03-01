@@ -3,10 +3,10 @@ title: 與內容片段搭配使用的 AEM GraphQL API
 description: 了解如何將 Adobe Experience Manager (AEM) as a Cloud Service 中的內容片段與 AEM GraphQL API 搭配使用，以實現 Headless 內容傳遞。
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: fd0f0fdfc0aaf02d631b9bf909fcb1e1431f5401
+source-git-commit: a8fbf0a9a1f7e12b6a668544b1a67d8551abf1b7
 workflow-type: tm+mt
-source-wordcount: '4994'
-ht-degree: 89%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -1125,6 +1125,31 @@ query allTeams {
 * 查詢不能包含超過1M (1024 * 1024)個字元
 * 查詢不能包含超過15000個權杖
 * 查詢不能包含超過200000個空白代號
+
+您也需要注意：
+
+* 當您的GraphQL查詢包含兩個（或更多）模型中具有相同名稱的欄位時，將傳回欄位衝突錯誤：
+
+   * 因此，其中：
+
+      * 兩個（或多個模型）會作為可能的參照使用；當它們被定義為允許時 **模型型別** 在內容片段參考中。
+
+     和：
+
+      * 這兩個模型都有相同名稱的欄位；這表示兩個模型中有相同名稱。
+
+     和
+
+      * 這些欄位屬於不同的資料型別。
+
+   * 例如：
+
+      * 當兩個（或更多）片段具有不同模型(例如， `M1`， `M2`)作為其他片段的可能參考（內容參考或片段參考）使用；例如， `Fragment1` `MultiField/List`
+      * 而這兩個片段具有不同的模式(`M1`， `M2`)有相同名稱的欄位，但型別不同。
+舉例說明：
+         * `M1.Title` 作為 `Text`
+         * `M2.Title` 作為 `Text/MultiField`
+      * 如果GraphQL查詢包含 `Title` 欄位。
 
 ## 常見問題 {#faqs}
 
