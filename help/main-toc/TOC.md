@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的運作方式以及該軟體可以為您做哪些事。
 breadcrumb-title: 使用手冊
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 974650c0f268de8ecff7fdb693cdd1e32efb2e1c
+source-git-commit: b7b9dbfa7f939828d66a785daecf84c917923c37
 workflow-type: tm+mt
-source-wordcount: '4748'
+source-wordcount: '4751'
 ht-degree: 98%
 
 ---
@@ -178,7 +178,7 @@ ht-degree: 98%
    + [郵件服務的 OAuth2 支援](/help/security/oauth2-support-for-mail-service.md)
    + [流量篩選規則包括 WAF 規則](/help/security/traffic-filter-rules-including-waf.md)
    + [AEM as a Cloud Service 安全性注意事項](/help/security/security-considerations.md)
-   + [開發人員控制台Adobe Systems棄用 JWT 憑證](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md)
+   + [Adobe Developer主控台中的JWT憑證淘汰](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md)
 + 上線 {#onboarding}
    + [從這裡開始](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html?lang=zh-Hant)
    + 上線歷程 {#journey}
@@ -267,16 +267,16 @@ ht-degree: 98%
    + 製作 {#authoring}
       + [製作頁面的快速入門手冊](/help/sites-cloud/authoring/quick-start.md)
       + [基本處理](/help/sites-cloud/authoring/basic-handling.md)
-      + [製作和發佈](/help/sites-cloud/authoring/author-publish.md)
-      + [創作方法](/help/sites-cloud/authoring/authoring-methods.md)
+      + [製作與發佈](/help/sites-cloud/authoring/author-publish.md)
+      + [製作方法](/help/sites-cloud/authoring/authoring-methods.md)
       + [搜尋](/help/sites-cloud/authoring/search.md)
       + [設定帳戶環境](/help/sites-cloud/authoring/account-environment.md)
       + [您的收件匣](/help/sites-cloud/authoring/inbox.md)
       + [元件主控台](/help/sites-cloud/authoring/components-console.md)
       + [路徑選擇](/help/sites-cloud/authoring/path-selection.md)
       + [疑難排解](/help/sites-cloud/authoring/troubleshooting.md)
-      + Sites控制台 {#sites-console}
-         + [Sites控制台](/help/sites-cloud/authoring/sites-console/introduction.md)
+      + 網站主控台 {#sites-console}
+         + [Sites主控台](/help/sites-cloud/authoring/sites-console/introduction.md)
          + [主控台側面板](/help/sites-cloud/authoring/sites-console/console-side-panel.md)
          + [建立新網站](/help/sites-cloud/authoring/sites-console/create-site.md)
          + [組織頁面](/help/sites-cloud/authoring/sites-console/organizing-pages.md)
@@ -292,8 +292,8 @@ ht-degree: 98%
          + [啟用漸進式網頁應用程式功能](/help/sites-cloud/authoring/sites-console/enable-pwa.md)
          + [鍵盤快速鍵](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md)
          + [匯出為 CSV](/help/sites-cloud/authoring/sites-console/csv-export.md)
-      + 頁面编辑器 {#page-editor}
-         + [頁面编辑器](/help/sites-cloud/authoring/page-editor/introduction.md)
+      + 頁面編輯器 {#page-editor}
+         + [頁面編輯器](/help/sites-cloud/authoring/page-editor/introduction.md)
          + [編輯器側面板](/help/sites-cloud/authoring/page-editor/editor-side-panel.md)
          + [編輯頁面](/help/sites-cloud/authoring/page-editor/edit-content.md)
          + [新增頁面註解](/help/sites-cloud/authoring/page-editor/annotations.md)
@@ -304,11 +304,11 @@ ht-degree: 98%
          + [建立可存取的內容 (符合 WCAG 2.1)](/help/sites-cloud/authoring/page-editor/accessible-content.md)
          + [鍵盤快速鍵](/help/sites-cloud/authoring/page-editor/keyboard-shortcuts.md)
          + [樣式系統](/help/sites-cloud/authoring/page-editor/style-system.md)
-         + [還原 取消復原限制](/help/sites-cloud/authoring/page-editor/undo-redo.md)
+         + [復原重做限制](/help/sites-cloud/authoring/page-editor/undo-redo.md)
       + Universal Editor {#universal-editor}
          + [使用 Universal Editor 製作內容](/help/sites-cloud/authoring/universal-editor/authoring.md)
          + [使用 Universal Editor 發佈內容](/help/sites-cloud/authoring/universal-editor/publishing.md)
-      + 碎片 {#fragments}
+      + 片段 {#fragments}
          + [內容片段](/help/sites-cloud/authoring/fragments/content-fragments.md)
          + [體驗片段](/help/sites-cloud/authoring/fragments/experience-fragments.md)
          + [Headless 內容作者歷程](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/author/overview.html?lang=zh-Hant)
@@ -484,7 +484,7 @@ ht-degree: 98%
       + [Markdown](/help/assets/content-fragments/content-fragments-markdown.md)
       + [樹狀結構](/help/assets/content-fragments/content-fragments-structure-tree.md)
       + [預覽 - JSON 代表](/help/assets/content-fragments/content-fragments-json-preview.md)
-      + [使用 MSM 重複使用內容片段 （Assets用途）](/help/assets/content-fragments/content-fragments-msm.md)
+      + [使用MSM重複使用內容片段（適用於資產）](/help/assets/content-fragments/content-fragments-msm.md)
    + Dynamic Media {#dynamicmedia}
       + Dynamic Media 歷程：基礎知識{#dm-journey}
          + [第一部分：什麼是 Dynamic Media - 使用案例 - 資產如何流經系統](/help/assets/dynamic-media/dm-journey-part1.md)
@@ -705,7 +705,7 @@ ht-degree: 98%
    + 疑難排解 {#troubleshooting-aem-forms-cloud-service}
       + [安裝和設定](/help/forms/troubleshooting-installation-and-configuration.md)
       + [Dispatcher 和 CDN 快取](/help/forms/troubleshooting-caching-performance.md)
-      + [重新啟動 AEM SDK](/help/forms/restart-aem-sdk.md)
+      + [重新啟動AEM SDK](/help/forms/restart-aem-sdk.md)
 + Screens {#screens-as-cloud-service}
    + Screens as a Cloud Service 概觀 {#overview}
       + [簡介](/help/screens-cloud/introduction/introduction.md)
@@ -724,7 +724,7 @@ ht-degree: 98%
       + [使用 Screens 內容提供者](/help/screens-cloud/configuring/using-screens-content-provider.md)
       + [建立 Screens 視訊轉譯](/help/screens-cloud/configuring/creating-screens-video-renditions-cloud-service.md)
       + [為 Screens as a Cloud Service 設定 Dispatcher](/help/screens-cloud/configuring/dispatcher-configurations-screens-cloud.md)
-      + [設定時間軸檢視以供Screens作為Cloud Service](/help/screens-cloud/configuring/configuring-timeline-view-screens.md)
+      + [設定畫面as a Cloud Service的時間軸檢視](/help/screens-cloud/configuring/configuring-timeline-view-screens.md)
    + 建立內容 {#create-content}
       + [在 Screens 內容提供者中建立和管理專案](/help/screens-cloud/creating-content/creating-projects-screens-cloud.md)
       + [在 Screens 內容提供者中建立和管理頻道](/help/screens-cloud/creating-content/creating-channels-screens-cloud.md)
@@ -781,8 +781,8 @@ ht-degree: 98%
    + [Adobe Commerce PWA Studio](/help/commerce-cloud/pwa-studio/getting-started.md)
    + [移轉](/help/commerce-cloud/migration.md)
    + [常見問題集](/help/commerce-cloud/faq.md)
-+ Edge Delivery Services {#edge-delivery}
-   + [AEM 和 Edge Delivery Services](/help/edge/overview.md)
++ 具有Edge Delivery Services的AEM {#edge-delivery}
+   + [Edge Delivery Services快速入門](/help/edge/overview.md)
    + [使用 Edge Delivery](/help/edge/using.md)
    + [開發人員快速入門指南](/help/edge/edge-dev-getting-started.md)
    + [為 Edge Delivery 製作內容](/help/edge/authoring.md)
@@ -825,7 +825,7 @@ ht-degree: 98%
          + [將表單發佈到網站頁面](/help/edge/docs/forms/publish-eds-forms.md)
          + [新增驗證至表單欄位](/help/edge/docs/forms/validate-forms.md)
          + [改變主題和樣式風格](/help/edge/docs/forms/style-theme-forms.md)
-         + [使用規則向表單添加動態行為](/help/edge/docs/forms/rules-forms.md)
+         + [使用規則將動態行為新增至表單](/help/edge/docs/forms/rules-forms.md)
       + 功能 {#advanced-features-eds-forms}
          + [表單片段](/help/edge/docs/forms/form-fragments.md)
          + [可重複區段](/help/edge/docs/forms/repeatable-forms.md)
@@ -834,7 +834,7 @@ ht-degree: 98%
          + [感謝頁面](/help/edge/docs/forms/thank-you-page-form.md)
          + [自訂元件](/help/edge/docs/forms/custom-components-forms.md)
       + 引用 {#forms-references}
-         + [表單塊元件清單](/help/edge/docs/forms/form-components.md)
+         + [表單區塊元件清單](/help/edge/docs/forms/form-components.md)
    + Edge Delivery 資源 {#resources}
       + Sidekick {#sidekick}
          + [使用 Sidekick](/help/edge/docs/sidekick.md)
@@ -845,7 +845,7 @@ ht-degree: 98%
       + [管理 API](https://www.aem.live/docs/admin.html)
       + [AEM 狀態](https://www.aemstatus.net)
       + 工具 {#tools}
-         + [AEM 夥伴鉻黃擴展](https://chrome.google.com/webstore/detail/aem-sidekick/ccfggkjabjahcjoljmgmklhpaccedipo)
+         + [AEM Sidekick Chrome擴充功能](https://chrome.google.com/webstore/detail/aem-sidekick/ccfggkjabjahcjoljmgmklhpaccedipo)
          + [Github 機器人](https://github.com/apps/aem-code-sync)
          + [稽核記錄](/help/edge/docs/auditlog.md)
 + Headless {#headless}
