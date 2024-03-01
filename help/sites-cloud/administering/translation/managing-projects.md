@@ -4,9 +4,9 @@ description: 瞭解如何在AEM中建立和管理機器翻譯專案和人工翻�
 feature: Language Copy
 role: Admin
 exl-id: dc2f3958-72b5-4ae3-a224-93d8b258bc80
-source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
+source-git-commit: ae500923bac34689a28b9ff0bc78586f725829de
 workflow-type: tm+mt
-source-wordcount: '3960'
+source-wordcount: '4011'
 ht-degree: 1%
 
 ---
@@ -448,14 +448,26 @@ AEM中的翻譯專案使用標準 [AEM專案主控台](/help/sites-cloud/authori
 
 ## 移動或重新命名來源頁面 {#move-source}
 
-如果已經翻譯的來源頁面必須 [已重新命名或已移動](/help/sites-cloud/authoring/sites-console/managing-pages.md#moving-or-renaming-a-page)，在移動後再次翻譯頁面時，會根據新的頁面名稱/位置建立語言副本。 根據先前名稱/位置的舊語言副本仍會存在。
+如果需要已翻譯的來源頁面 [已重新命名或已移動](/help/sites-cloud/authoring/sites-console/managing-pages.md#moving-or-renaming-a-page)，在移動後再次翻譯頁面時，會根據新頁面名稱/位置建立語言副本。 根據先前名稱/位置的舊語言副本仍然存在。 為避免此問題，您可以在移動後使用更新語言複製功能：
 
-此情境中的最佳實務是遵循此程式：
+1. 移動有語言副本的頁面。
+1. 選取語言副本根目錄。
+1. 開啟 **引用** 面板。
+1. 選取 **語言副本**.
+1. 選取您要更新的目標語言。
+1. 選取 **更新語言副本**.
 
-1. 取消發佈與您要移動的來源頁面相關聯的語言副本。
-1. 刪除它們。
-1. 從新移動的來源頁面建立新的語言副本。
-1. 發佈已建立的語言副本。
+   ![updating-language-copies](../assets/translation-move-to.png)
+
+1. 按一下 **更新**. A [Launch](/help/sites-cloud/authoring/launches/promoting.md) 將會建立。
+1. 導覽至所需的語言根並加以選取。
+1. 使用 **引用** 面板，選取 **啟動**.
+
+   ![promote-launch-translation](../assets/promote-launch-translation.png)
+
+1. 按一下已建立的Launch，然後按一下 **提升啟動**.
+
+現在，來源頁面已移動，且相關的語言副本也已移動。
 
 ## 匯入和匯出翻譯工作 {#import-export}
 
