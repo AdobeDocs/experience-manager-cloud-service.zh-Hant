@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service 中的維護任務
 description: 瞭解AEMas a Cloud Service中的維護任務以及如何進行設定。
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
-source-git-commit: 4b6f1233b8b21c511b9495151d812e4ededfce11
+source-git-commit: af690ee4c1c0c13bffa179c68423993361385a45
 workflow-type: tm+mt
-source-wordcount: '1128'
+source-wordcount: '1123'
 ht-degree: 12%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 12%
 
 ## 設定維護任務 {#maintenance-tasks-configuring}
 
-在舊版AEM中，您可以使用維護卡（「工具>作業>維護」）來設定維護任務。 對於AEMas a Cloud Service，維護卡不再可用，因此設定應認可到原始檔控制並使用Cloud Manager部署。 Adobe會管理具有客戶無法設定之設定（例如資料存放區記憶體回收、稽核日誌清除、版本清除）的維護任務。 其他維護任務可由客戶設定，如下表所述。
+在舊版AEM中，您可以使用維護卡（「工具>作業>維護」）來設定維護任務。 對於AEMas a Cloud Service，維護卡不再可用，因此設定應認可到原始檔控制並使用Cloud Manager部署。 Adobe會管理具有客戶無法設定之設定（例如資料存放區記憶體回收）的維護任務。 其他維護任務可由客戶設定，如下表所述。
 
 >[!CAUTION]
 >
