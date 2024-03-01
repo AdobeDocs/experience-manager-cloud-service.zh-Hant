@@ -2,10 +2,10 @@
 title: 使用 Universal Editor 進行本機 AEM 開發
 description: 了解 Universal Editor 如何支援為開發目的在本機 AEM 執行個體上進行編輯。
 exl-id: ba1bf015-7768-4129-8372-adfb86e5a120
-source-git-commit: bbb7e7d9023f8326980196923bfab77c3968ead4
+source-git-commit: 422b4d98e2665e332ff65a3638a02282064b2bea
 workflow-type: tm+mt
-source-wordcount: '699'
-ht-degree: 64%
+source-wordcount: '698'
+ht-degree: 61%
 
 ---
 
@@ -40,9 +40,9 @@ Universal Editor服務並非Universal Editor的完整復本，而是其功能的
 
 [NodeJS版本16](https://nodejs.org/en/download/releases) 執行Universal Editor服務的本機副本需要。
 
-Universal Editor 服務由 AEM Engineering 直接分發。請聯絡VIP程式中的工程師以取得本機復本。
+Universal Editor服務可透過Software Distribution取得。 請參閱 [Software Distribution檔案](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html) 以取得存取它的詳細資訊。
 
-工程人員將為您提供 `universal-editor-service.cjs` 檔案。將其儲存至您的本機開發環境中。
+儲存 `universal-editor-service.cjs` 檔案從Software Distribution傳至您的本機開發環境。
 
 ## 建立憑證以透過 HTTPS 執行 Universal Editor 服務 {#ue-https}
 

@@ -4,10 +4,10 @@ description: 瞭解AE的基本概念；使用封裝管理員進行封裝管理�
 feature: Administering
 role: Admin
 exl-id: b5fef273-912d-41f6-a698-0231eedb2b92
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 422b4d98e2665e332ff65a3638a02282064b2bea
 workflow-type: tm+mt
-source-wordcount: '3774'
-ht-degree: 4%
+source-wordcount: '3769'
+ht-degree: 3%
 
 ---
 
@@ -143,7 +143,7 @@ MaxPackageSize (in MB) = ConnectionSpeed (in MB/s) * 60 s
 
 封裝清單中的每個專案都有一個狀態指示器，讓您一眼就知道封裝的狀態。 將游標暫留在狀態上會顯示工具提示，其中包含狀態的詳細資訊。
 
-![套件狀態](assets/package-status.png)
+![封裝狀態](assets/package-status.png)
 
 如果封裝已變更或從未建置，則狀態會以連結的形式顯示，以採取快速動作來重建或安裝封裝。
 
@@ -282,7 +282,7 @@ MaxPackageSize (in MB) = ConnectionSpeed (in MB/s) * 60 s
 
 1. 按一下 **建置**. 對話方塊會要求您確認是否要建置封裝，因為任何現有的封裝內容都會被覆寫。
 
-1. 按一下&#x200B;**「確定」**。AEM會建置套件，在活動清單中列出新增到套件的所有內容。 完成時，AEM會顯示已建置封裝的確認，並且（當您關閉對話方塊時）會更新封裝清單資訊。
+1. 按一下 **確定**. AEM會建置套件，在活動清單中列出新增到套件的所有內容。 完成時，AEM會顯示已建置封裝的確認，並且（當您關閉對話方塊時）會更新封裝清單資訊。
 
 >[!TIP]
 >
@@ -409,7 +409,7 @@ MaxPackageSize (in MB) = ConnectionSpeed (in MB/s) * 60 s
 
 如果不滿足相依性，則具有這些相依性的套件中的OSGi套件組合將不會啟動。 這會導致中斷的應用程式部署，因為依賴未啟動OSGi套件組合的任何專案都將無法正常運作。
 
-**錯誤解決方法**
+**錯誤解決**
 
 若要解決因未滿足的OSGi套件組合所導致的錯誤，必須調整包含未滿足之匯入的套件組合中的相依性版本。
 
@@ -433,7 +433,7 @@ MaxPackageSize (in MB) = ConnectionSpeed (in MB/s) * 60 s
 
 錯誤狀態表示套件正嘗試部署已覆蓋的檔案，因此套件中的變更將會被覆蓋覆寫（因此「隱藏」）且不會生效。
 
-**錯誤解決方法**
+**錯誤解決**
 
 若要解決此問題，中的覆蓋檔案維護者 `/apps` 必須檢閱中覆蓋檔案的變更 `/libs` 並視需要將變更合併至覆蓋圖( `/apps`)，並重新部署覆蓋的檔案。
 
@@ -455,7 +455,7 @@ MaxPackageSize (in MB) = ConnectionSpeed (in MB/s) * 60 s
 
 無法提供明確的錯誤。 驗證只會指出安裝套件是否會新增或影響任何新的ACL許可權。
 
-**錯誤解決方法**
+**錯誤解決**
 
 使用驗證提供的資訊，可以在CRXDE中檢閱受影響的節點，並且可以根據需要在套件中調整ACL。
 
@@ -612,4 +612,4 @@ AEM套件可用於在AEMaaCS環境中建立和共用內容。
 
 [Software Distribution](https://downloads.experiencecloud.adobe.com) 提供用於本機開發AEM SDK的AEM套件。 在Software Distribution中提供的AEM套件不得安裝在AEMaaCS雲端環境中，除非Adobe支援明確批准。
 
-如需詳細資訊，請檢視 [Software Distribution檔案](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html).
+如需詳細資訊，請參閱 [Software Distribution檔案。](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html)
