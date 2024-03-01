@@ -1,13 +1,13 @@
 ---
-title: 設定 EDS Forms 的感謝頁面
-description: 瞭解如何為EDS Forms設定感謝頁面和重新導向，以最佳化使用者體驗並簡化使用者歷程。
+title: 在提交後設定感謝頁面或重新導向表單
+description: 瞭解如何為Forms Block設定感謝頁面和重新導向，以最佳化使用者體驗並簡化使用者歷程。
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: cadeccd916884ca2437e2b2684771c181cc8281e
+source-git-commit: d6b1048c44022da47a9d7443f564a2ff9d1802cf
 workflow-type: tm+mt
-source-wordcount: '545'
-ht-degree: 7%
+source-wordcount: '608'
+ht-degree: 5%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 7%
 在最適化Forms區塊中，預設行為是顯示感謝頁面。 不過，您還是可以靈活地量身打造此體驗，以符合您的特定需求。 選項包括：
 
 * [設定感謝頁面和訊息，以符合您的品牌和溝通目標](#configuring-the-thank-you-page-and-message)
-* [提交後重新導向使用者至其他頁面](#redirect-users-to-another-page-post-submission)，進一步增強其歷程
+* [將使用者重新導向至提交後的另一個頁面，以供進一步動作](#redirect-users-to-another-page-post-submission)
 
 ## 設定感謝頁面和訊息
 
@@ -43,10 +43,10 @@ ht-degree: 7%
 
 依預設，最適化Forms區塊會將使用者重新導向至「感謝您」頁面。 若要將使用者重新導向至預設「感謝您」頁面以外的頁面，您有兩個選項：
 
-* 請以其他頁面取代現有的「感謝您」頁面，或
-* 將「感謝您」頁面重新導向至您選擇的另一個頁面。
+* [將「感謝您」頁面取代為其他頁面](#replace-the-existing-thankyou-page)
+* [使用網站重新導向，進行「感謝您」頁面重新導向](#use-website-redirects-for-thankyou-page-redirection)
 
-### 取代現有的「感謝您」頁面
+### 取代「感謝您」頁面
 
 1. 開啟&quot;[EDS專案]/blocks/form/form.js」檔案進行編輯。
 1. 變更 `thankyou` 下一行中的頁面放入您選擇的頁面：
@@ -70,9 +70,15 @@ ht-degree: 7%
 1. 確定頁面存在於您的EDS專案資料夾中並加以發佈。
 
 
-### 使用網站重新導向
+### 使用網站重新導向，進行「感謝您」頁面重新導向
 
-設定網站重新導向，將「感謝您」頁面導向其他頁面。 請參閱 [重新導向檔案](https://www.aem.live/docs/redirects) 以取得詳細指示。
+在提交表單後將使用者重新導向至另一個頁面，可提供相關資訊、確認動作並引導使用者獲得想要的結果，藉此提升使用者體驗。 例如，
+
+* 使用者完成購買表單後，系統會將他們重新導向至付款頁面，以安全地完成交易。
+* 在提交事件或網路研討會的登錄檔單時，會將使用者重新導向至顯示事件詳細資料的確認頁面，例如日期、時間和位置。
+
+若要將「感謝您」頁面重新導向至其他頁面，請使用 [網站重新導向](https://www.aem.live/docs/redirects) 試算表。
+
 
 ## 了解更多
 
