@@ -1,12 +1,12 @@
 ---
 title: 準備您的試算表以接受資料
-description: 使用試算表和表單區塊欄位，更快製作強大的表單！
+description: 使用試算表和最適化表單區塊欄位，更快製作強大的表單！
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: e2970c7a141025222c6b119787142e7c39d453af
+source-git-commit: e8fbe3efae7368c940cc2ed99cc9a352bbafbc22
 workflow-type: tm+mt
-source-wordcount: '996'
+source-wordcount: '997'
 ht-degree: 56%
 
 ---

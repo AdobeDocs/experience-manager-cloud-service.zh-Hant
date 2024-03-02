@@ -1,77 +1,74 @@
 ---
-title: AEM Forms Edge Delivery Service
-description: AEM Forms Edge Delivery Service專為最佳效能而打造，可讓您構想簡化資料收集和使用者參與的未來。 本文列出所有可用於EDD表單的現成可用表單元件。
+title: 表單元件和屬性
+description: 本檔案概述AEM Forms Edge Delivery Service中可用的表單元件及其屬性。
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 3b24d0cd4099e0b8eb48c977f460b25c168af220
+source-git-commit: e8fbe3efae7368c940cc2ed99cc9a352bbafbc22
 workflow-type: tm+mt
-source-wordcount: '275'
-ht-degree: 4%
+source-wordcount: '865'
+ht-degree: 2%
 
 ---
 
 
-
-
 # 表單元件
 
-Form Block可協助您輕鬆建立表單，以擷取及儲存擷取的資料。 支援基於所有HTML的元件5 [輸入型別](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types) 例如文字、電子郵件、數字、日期等。 它也支援 [文字區域](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea)， [選取](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select)、和 [欄位集](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset) 元素，並包含HTML5固有的輸入驗證功能。
+AEM Forms Edge Delivery Service可讓您使用各種元件建立好記且互動式的表單。 這些元件適用於不同型別的資料收集，並可輕鬆自訂以符合您的特定需求。
 
-「表單區塊」會為所有欄位型別和容器（面板）產生統一的HTML結構，以確保一致性。 此一致的結構可讓您更容易 [設定表單樣式](/help/edge/docs/forms/style-theme-forms.md).
+最適化表單區塊產生 [統一的HTML結構](/help/edge/docs/forms/style-theme-forms.md) 用於所有欄位型別和容器（面板），確保一致性。 此一致的結構可讓您更容易 [設定表單樣式](/help/edge/docs/forms/style-theme-forms.md).
+
+
+## 可用元件
+
+以下是可用元件的概觀：
+
+### 輸入欄位
+
+- 所有有效HTML5 [輸入型別](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types) 和 [文字區域](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea). 例如，按鈕、核取方塊、顏色、日期、日期時間 — 本機、電子郵件、檔案、隱藏、影像、月份、數字、密碼、無線電、範圍、重設、提交、電話、文字、時間、url和周。
+
+### 選取範圍控制項
+
+- [核取方塊群組](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox)：用於選取多個選項。
+- [選項按鈕群組](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/radio)：用於從群組選取單一選項。
+- [下拉式功能表](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select)：顯示選項功能表。 例如，下拉式方塊。
+
+### 容器
+
+- 面板/容器：將相關的表單元素分組在一起，以提升組織效能。 這是以下專案的組合： [欄位集](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset) 和 [圖例](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/legend).
 
 
 ## 元件屬性
 
-表單區塊的表單元件支援下列屬性：
+每個表單元件都隨附各種屬性，可讓您控制其行為和外觀。 最適化表單元件支援的屬性如下：
 
-<table>
- <tbody>
-  <tr>
-   <td><b>屬性</b> </td>
-   <td><b>表單元件（輸入型別）</b> </td>
-   <td><b>詳細資料</b></td>
-  </tr>
-  <tr>
-   <td>名稱</td>
-   <td>所有元件</td>
-   <td> 指定元件名稱的字串。 元件的資料會針對此名稱提交。
-   </td>
-  </tr>
-  <tr>
-   <td>標籤</td>
-   <td>所有元件</td>
-   <td> 標籤會作為欄位的標題。
-   </td>
-  </tr>
-  <tr>
-   <td>值</td>
-   <td>所有元件</td>
-   <td> 控制項的初始值。 對於選項和核取方塊元件，這是在選取它們時提交的值/資料。 value屬性一律為選用專案，不過核取方塊和選項應視為必要專案。
-   </td>
-  </tr>
-    <tr>
-   <td>預留位置</td>
-   <td>文字、搜尋、URL、電話、電子郵件、密碼和數字</td>
-   <td> 預留位置屬性會向使用者提供欄位中預期資訊型別的簡短提示。
-   </td>
-  </tr>
-      <tr>
-   <td>說明</td>
-   <td>適用於所有欄位</td>
-   <td> 預留位置屬性會向使用者提供欄位中預期資訊型別的簡短提示。
-   </td>
-  </tr>
-  </tbody>
-</table>
 
-<!-- 
-## Supported HTML 5 input types in Form Block
+| 屬性 | 適用的元件 | 詳細資料 |
+|--------------|------------------------------|----------------------------------------------------------------------|
+| 類型 | 全部 | 指定元件的型別。 此屬性決定輸入欄位的行為和外觀。 例如，對於文字輸入，型別可以是「text」、「email」用於電子郵件輸入、「password」用於密碼輸入。 最適化表單區塊支援所有有效HTML5 <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types">輸入型別</a>， <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea">文字區域</a>， <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select">選取</a>、和 <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset">欄位集</a> 作為型別。 |
+| 名稱 | 全部 | 識別表單提交的元件。 將表單資料提交至伺服器時，會使用name屬性，將使用者輸入與特定欄位建立關聯。 |
+| 標籤 | 全部 | 為使用者提供內容相關資訊。 標籤是元件旁邊顯示的文字，提供使用者要輸入哪些資訊的指引。 |
+| 值 | 文字，密碼，電子郵件，數字，範圍，日期及其變體（日期時間 — 當地，月，周，時間），核取方塊，單選，隱藏，提交，按鈕 | 指定元件的初始值。 對於文字輸入、文字區域和選取元素，這是顯示的預設文字或選項。 對於選項和核取方塊元件，這是選取時提交的值/資料。 value屬性是選用專案，但核取方塊和選項輸入應視為必要專案。 |
+| 預留位置 | 文字、電話、電子郵件、密碼、日期（及其變體，例如月、周、時間、日期時間 — 本機）、數字、範圍 | 提供預期輸入的提示。 預留位置屬性提供簡短的提示，說明輸入欄位的預期值。 當使用者開始輸入時，它就會消失。 |
+| 說明 | 全部 | 提供有關元件的其他資訊，並作為說明文字。 說明欄位可進一步說明填寫元件的用途或指示。 它可協助使用者瞭解輸入欄位的內容。 |
+| 可見 | 全部 | 控制初始可見性。 visible屬性是布林屬性，可決定表單載入時，元件最初是可見還是隱藏。 若設為true，會顯示欄位；否則會隱藏欄位。 |
+| 必要 | 文字、電話、電子郵件、密碼、日期及其變體（日期時間 — 當地、月、周、時間）、數字、核取方塊、無線電、檔案、選取（下拉式清單）、文字區域 | 指示在提交之前是否必須填寫欄位。 強制屬性是布林屬性，用於指定使用者在提交表單之前是否必須為欄位提供輸入。 |
+| 分鐘 | 日期（及其變數，例如月、周、時間、日期時間 — 本機）、數字、範圍 | 指定允許的最小值。 min屬性會設定使用者可輸入欄位的最小值。 例如，對於數字輸入，它定義了可接受的最低數字。 |
+| 最大值 | 日期（及其變數，例如月、周、時間、日期時間 — 本機）、數字、範圍 | 指定允許的最大值。 最大屬性可設定使用者可輸入欄位的最大值。 例如，日期輸入會定義可接受的最高日期。 |
+| 接受 | 檔案 | 定義允許的檔案型別。 accept屬性是以逗號分隔的不重複檔案型別說明符清單，可限制使用者可在檔案輸入欄位中選取的檔案型別。 |
+| 多個 | 檔案 | 允許多重選取。 multiple attribute是與檔案輸入欄位搭配使用的布林屬性。 若設為true，可讓使用者選取多個檔案。 |
+| 選項 | 下拉式清單 | 指定下拉式功能表的選項。 options屬性是下拉式功能表的逗號分隔選項清單，用於定義向使用者顯示的可選選項。 |
+| 已核取 | 核取方塊，單選按鈕 | 決定預設是否選取欄位。 checked屬性是搭配核取方塊和選項輸入使用的布林屬性。 若設為true，表示載入表單時，預設會選取欄位。 |
+| 欄位集 | 全部 | 將欄位分組，以在表單中建立視覺上不同的區段。 欄位集元素會將表單中的相關欄位分組，並以視覺化方式加以區隔，以改善組織和使用者體驗。 </br> 若要在欄位集中組織一組欄位，只需使用 `fieldset` 屬性並指定其名稱屬性。 在以下範例中，我們會示範如何將選項按鈕封裝在單一欄位集中，以提升組織效能。 ![欄位集範例](/help/edge/assets/fieldset-example.png) |
 
-The Form Block supports a range of HTML 5 input types, and it also seamlessly renders forms created with AEM core components.
 
+
+<!--
+
+## Supported HTML 5 input types in Adaptive Form Block
+
+The Adaptive Form Block supports a range of HTML 5 input types, and it also seamlessly renders forms created with AEM core components.
 Here is the table which outlines how core components correspond to their HTML-5 input types in Edge Delivery:
-
 <table>
  <tbody>
   <tr>
@@ -172,26 +169,26 @@ Here is the table which outlines how core components correspond to their HTML-5 
   </tr>
   <tr>
    <td><a href = "https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html">Accordion<a></td>
-   <td><i>Not yet supported in Form Block</i></td>
+   <td><i>Not yet supported in Adaptive Form Block</i></td>
    <td> Allows user to create expandable and collapsible sections in a form. </td>
   </tr>
   <tr>
    <td><a href ="https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html">Horizontal tabs</a></td>
-   <td><i>Not yet supported in Form Block</i></td>
+   <td><i>Not yet supported in Adaptive Form Block</i></td>
    <td>Organizes multiple sections of a form into separate tabs which are displayed horizontally.</td>
   </tr>
   <tr>
    <td><a href = "https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/image.html">Image</a></td>
-   <td><i>Not yet supported in Form Block</i></td>
+   <td><i>Not yet supported in Adaptive Form Block</i></td>
    <td> Allows user to include images in a form.</td>
   </tr><tr>
    <td><a href ="https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/title.html">Title</a></td>
-   <td><i>Not yet supported in Form Block</i></td>
+   <td><i>Not yet supported in Adaptive Form Block</i></td>
    <td> Refers to the text that appears at the top of the form. </td>
   </tr>
   <tr>
    <td><a href = "https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/submit-button.html">Switch</td>
-   <td><i>Not yet supported in Form Block</i></td>
+   <td><i>Not yet supported in Adaptive Form Block</i></td>
    <td> A two-state toggle that allows user to select between two states such as enabling or disabling a feature, setting, or functionality.</td>
   </tr>
  </tbody>

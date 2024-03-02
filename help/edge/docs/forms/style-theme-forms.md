@@ -4,9 +4,9 @@ description: 自訂 AEM Forms Edge Delivery Service Form 的主題和樣式
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: e2970c7a141025222c6b119787142e7c39d453af
+source-git-commit: e8fbe3efae7368c940cc2ed99cc9a352bbafbc22
 workflow-type: tm+mt
-source-wordcount: '1271'
+source-wordcount: '1275'
 ht-degree: 1%
 
 ---
@@ -37,9 +37,9 @@ Forms對於使用者在網站上的互動至關重要，可讓他們輸入資料
 
 ## 為最適化表單區塊設定表單樣式
 
-「表單區塊」提供標準化的HTML結構，可簡化選取和樣式化表單元件的程式：
+「最適化表單區塊」提供標準化的HTML結構，可簡化選擇與設定表單元件樣式的程式：
 
-* **更新預設樣式**：您可以編輯表單的預設樣式 `/blocks/form/form.css file`. 此檔案提供表單的完整樣式，支援多步驟精靈表單。 它強調使用自訂CSS變數來輕鬆進行自訂、維護以及跨表單的統一樣式。 如需將表單區塊新增至專案的指示，請參閱 [建立表單](/help/edge/docs/forms/create-forms.md).
+* **更新預設樣式**：您可以編輯表單的預設樣式 `/blocks/form/form.css file`. 此檔案提供表單的完整樣式，支援多步驟精靈表單。 它強調使用自訂CSS變數來輕鬆進行自訂、維護以及跨表單的統一樣式。 如需將最適化表單區塊新增至專案的指示，請參閱 [建立表單](/help/edge/docs/forms/create-forms.md).
 
 * **自訂**：使用預設值 `forms.css` 作為基礎，並進行自訂，以修改表單元件的外觀與風格，使其視覺上吸引人且方便使用。 檔案的結構會鼓勵組織並維護表單的樣式，促進整個網站的設計一致。
 
@@ -60,7 +60,7 @@ Forms對於使用者在網站上的互動至關重要，可讓他們輸入資料
 
 ## 元件結構
 
-「表單區塊」為各種表單元素提供一致的HTML結構，確保更輕鬆的樣式化和管理。 您可以針對樣式設定目的使用CSS來操作元件。
+最適化表單區塊為各種表單元素提供一致的HTML結構，確保更輕鬆的樣式化和管理。 您可以針對樣式設定目的使用CSS來操作元件。
 
 ### 一般元件（下拉選單、選項群組及核取方塊群組除外）：
 
@@ -421,6 +421,6 @@ Forms對於使用者在網站上的互動至關重要，可讓他們輸入資料
 }
 ```
 
-此CSS會鎖定位於具有類別的元素中的所有輸入元素 `form-otp`. 您的表單HTML結構遵循表單區塊的慣例，這表示有一個標示為「form-otp」類別的容器儲存名為「otp」的欄位。
+此CSS會鎖定位於具有類別的元素中的所有輸入元素 `form-otp`. 您的表單HTML結構遵循最適化表單區塊的慣例，這表示有一個標有「form-otp」類別的容器會儲存名為「otp」的欄位。
 
 

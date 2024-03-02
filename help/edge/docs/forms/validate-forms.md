@@ -1,24 +1,24 @@
 ---
-title: 從試算表到表單 - 掌握 Form 區塊欄位驗證
-description: 使用試算表和 Form 區塊欄位更快地製作強大的表單！本指南可協助您為 EDS Forms 區塊欄位建立自訂驗證。
+title: 從試算表到Forms — 掌握最適化表單區塊欄位驗證
+description: 使用試算表和最適化表單區塊欄位，更快製作強大的表單！ 本指南可協助您為 EDS Forms 區塊欄位建立自訂驗證。
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 78d40574e6fea8dde22414e43fd77215b9e7d2a1
+source-git-commit: e8fbe3efae7368c940cc2ed99cc9a352bbafbc22
 workflow-type: tm+mt
-source-wordcount: '262'
-ht-degree: 24%
+source-wordcount: '266'
+ht-degree: 17%
 
 ---
 
 
 # 新增驗證至表單欄位
 
-表單區塊內建驗證功能。 這些驗證會根據您選擇的欄位型別和其他屬性，自動套用至現代瀏覽器。
+最適化表單區塊有內建驗證功能。 這些驗證會根據您選擇的欄位型別和其他屬性，自動套用至現代瀏覽器。
 
 ## 瞭解欄位型別與驗證
 
-Form區塊支援各種功能 [HTML5輸入型別](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types)，包括文字、電子郵件、數字、日期等。 也可隨附 [文字區域](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea)、 select和fieldset，以及HTML-5固有的完整輸入驗證功能。
+最適化表單區塊支援多種方式 [HTML5輸入型別](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types)，包括文字、電子郵件、數字、日期等。 也可隨附 [文字區域](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea)、 select和fieldset，以及HTML-5固有的完整輸入驗證功能。
 
 使用HTML欄位型別來定義使用者可輸入的資料型別。 不同的欄位型別有不同的內建驗證規則：
 

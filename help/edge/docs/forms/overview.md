@@ -4,25 +4,25 @@ description: AEM Forms Edge Delivery Service 旨在為實現最佳效而建置�
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 1c6e44fd6652d93ba73bc2eb3604cd08eae7a33c
+source-git-commit: e8fbe3efae7368c940cc2ed99cc9a352bbafbc22
 workflow-type: tm+mt
-source-wordcount: '610'
-ht-degree: 43%
+source-wordcount: '866'
+ht-degree: 30%
 
 ---
 
 
 # AEM Forms Edge Delivery Service
 
-使用 Adobe Systems 的 AEM Forms 邊緣交付服務簡化表單創建並推動更高的完成率。 這項功能強大、可組合的服務使您能夠版本編號具有卓越性能和視覺吸引力的企業級表單。 AEM優先考慮使用者體驗和您的業務目標，確保閃電般的載入時間和更高的表單完成率。
+透過Adobe的AEM Forms Edge Delivery Service簡化表單建立作業，並提高完成率。 這項功能強大、可撰寫的服務可讓您建立具有卓越效能和視覺吸引力的企業級表單。 AEM會同時優先考慮使用者體驗和業務目標，確保超快的載入時間並增加表單完成次數。
 
-您可將該服務用於：
+您可以使用此服務來：
 
-* **以令人驚歎的表單吸引使用者：使用預先建立元件資料庫輕鬆構建複雜且引人入勝的表單**。 輕鬆集成 reCAPTCHA，將表單直接提交到電子郵件，並允許無縫上傳檔，以保護 Sharepoint、Azure 存儲和 Amazon S3 按讚儲存解決方案。 甚至可以創建您自己的自定義表單元件，將您的獨特願景變為現實。
+* **使用令人驚豔的表單Captivate使用者**：使用預先建立的元件庫輕鬆建立複雜且吸引人的表單。 輕鬆整合reCAPTCHA、直接將表單提交至電子郵件，並允許順暢的檔案上傳至Sharepoint、Azure Storage和Amazon S3等安全儲存解決方案。 甚至可建立您自己的自訂表單元件，將您獨特的視覺效果生動呈現。
 
-* **使用您選擇的**&#x200B;工具建立數字註冊體驗：通過分離內容源來提高創作效率。 開箱即用，您可以使用基於文件的創作（Microsoft 365 和 Google 工作環境）和AEM創作（AEM編輯器）。 因此，您可以在同一網站上使用多個內容源，並使用首選的創作工具，例如 Microsoft Excel、Google 表格或自適應Forms编辑器。
+* **使用您選擇的工具建立數位註冊體驗**：透過分離內容來源來提高編寫效率。 開箱即用地使用檔案式編寫(Microsoft 365和Google Workspace)和AEM編寫(AEM編輯器)。 因此，您可以在相同網站上使用多個內容來源，並使用您偏好的編寫工具，例如Microsoft Excel、Google Sheets或Adaptive Forms Editor。
 
-* **構建具有完美燈塔分數**&#x200B;的表單：構建快速載入和渲染的表單，平均在緩慢的互聯網連接下。 更快的載入時間和最佳化使用者體驗有助於提高表單完成率和轉換率。
+* **使用完美的Lighthouse分數建置表單**：建立可快速載入和轉譯的表單，即使在網際網路連線速度緩慢時也是如此。 更快的載入時間和最佳化使用者體驗有助於提高表單完成率和轉換率。
 
   <div>
     <style>
@@ -37,24 +37,22 @@ ht-degree: 43%
     }
 </style>
     <div class="image-container">
-    <img src="/help/edge/assets/eds-forms-key-features.png" alt="EDS Forms 主要功能">
+    <img src="/help/edge/assets/eds-forms-key-features.png" alt="EDS Forms主要功能">
     </div>
 
 
 </div>
-&lt;!-- &gt;
-* **用令人驚歎的表單吸引使用者**：
-使用預先建立元件資料庫輕鬆構建複雜且引人入勝的表單。 輕鬆集成 reCAPTCHA，將表單直接提交到電子郵件，並允許無縫上傳檔，以保護 Sharepoint、Azure 存儲和 Amazon S3 按讚儲存解決方案。 甚至可以創建您自己的自定義表單元件，將您的獨特願景變為現實。
+&lt;!— &gt; * **以令人驚豔的表單Captivate使用者**：使用預先建立的元件庫，輕鬆建立複雜且吸引人的表單。 輕鬆整合reCAPTCHA、直接將表單提交至電子郵件，並允許順暢的檔案上傳至Sharepoint、Azure Storage和Amazon S3等安全儲存解決方案。 甚至可建立您自己的自訂表單元件，將您獨特的視覺效果生動呈現。
 
-    ![報名錶]（/help/edge/資產/enrollment-form.png）
+    ！[登錄檔單](/help/edge/assets/enrollment-form.png)
 
 * **建立擁有 Lighthouse 分數的表單**：建立能快速載入和呈現的表單，即使網路連線慢也可行。更快的載入時間和最佳化使用者體驗有助於提高表單完成率和轉換率。
 
-  ![為您的表格提供完美的燈塔分數](/help/edge/assets/lighthouse-forms.png)
+  ![表單的完美燈塔分數](/help/edge/assets/lighthouse-forms.png)
 
-* **使用您選擇的**&#x200B;工具建立數字註冊體驗：通過分離內容源來提高創作效率。 您可以一開啟即使用 AEM 編寫和文件型編寫。因此，您可以在同一網站上使用多個內容源，並使用首選的創作工具，例如 Microsoft Excel、Google 表格或 AEM 编辑器。
+* **使用您選擇的工具建立數位註冊體驗**：透過分離內容來源來提高編寫效率。 您可以一開啟即使用 AEM 編寫和文件型編寫。因此，您可以在相同網站上使用多個內容來源，並使用您偏好的編寫工具，例如Microsoft Excel、Google Sheets或AEM編輯器。
 
-  ![邊緣交付表單創作工具](/help/edge/assets/edge-delivery-forms-authoring-tools.png)
+  ![Edge Delivery Forms編寫工具](/help/edge/assets/edge-delivery-forms-authoring-tools.png)
 
 <!--
 * **Measure customer impact and deliver effective forms**: Use our RUM dashboards to visualize form performance and identify areas for improvement. Experiment with different versions and continuously optimize your forms for maximum effectiveness, ensuring you capture the data you need and drive better business outcomes.
@@ -69,7 +67,22 @@ ht-degree: 43%
 
     -->
 
-## 開始建立窗體
+## 主要功能
+
+* **以HTML5為基礎的表單欄位元件**： AEM Forms Edge Delivery Service可讓您根據有效HTML，使用表單欄位建立使用者友善的互動式表單5 [輸入型別](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types)， <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea">文字區域</a>， <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select">選取</a>、和 <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset">欄位集</a>  元件。 這些元件適用於不同型別的資料收集，並可輕鬆自訂以符合您的特定需求。
+
+* **協助工具**：可存取表單區塊中的欄位。 每個標籤都與其各自的輸入元素連結，而且會自動產生ID以供連結。 與欄位相關的說明是透過aria-descripted by屬性連結。 支援使用標準Tab/Shift + Tab鍵的鍵盤導覽。
+
+* **表單規則**：建立邏輯，以根據使用者輸入或預先定義的條件調整欄位可見性、驗證和行為。 規則提供靈活且直覺的方式為您的表單新增智慧，確保它們能根據使用者輸入順暢地調整。
+
+* **檔案上傳**：透過順暢的檔案附件功能增強您的表單。 無論您需要向使用者收集檔案、影像或其他檔案，Adaptive Form Block都能讓您輕鬆整合檔案上傳功能。 透過可用的自訂處理選項，您可以量身打造檔案上傳程式，以符合您的特定需求。
+
+* **表單驗證**：提交前，系統會驗證表單，無效欄位會適當地標示為使用者顯示的錯誤訊息。 有各種模式可用來顯示這些錯誤。
+
+* **設定Forms樣式**：每個表單欄位都有固定的HTML結構，可使用自訂CSS或JavaScript檔案進一步裝飾。 CSS/JS中目標欄位的選取器是根據型別和名稱而提供。
+
+
+## 開始建立表單
 
 <div>
 
@@ -91,8 +104,8 @@ ht-degree: 43%
 <div style="display: flex; flex-wrap: wrap; justify-content: space-between; margin: -5px;">
     <div class="card-container">
         <a href="/help/edge/docs/forms/create-forms.md">
-            <img src="/help/edge/assets/smock_devices_18_n.svg" alt="使用 eds Forms 建立表單" style="border-radius: 5px;"></b><br><b style="margin-top: 5px;">使用Google表格或 Microsoft Excel 建立表單
-            </b>
+            <img src="/help/edge/assets/smock_devices_18_n.svg" alt="使用 eds Forms 建立表單" style="border-radius: 5px;"> </b>
+            <br><b style="margin-top: 5px;">使用Google工作表或Microsoft Excel建立表單</b>
         </a>
         <p>建立可在行動裝置上快速載入和呈現並自動重排的表單。</p>
     </div>
@@ -119,8 +132,8 @@ ht-degree: 43%
     </div> 
             <div class="card-container">
         <a href="/help/edge/docs/forms/rules-forms.md">
-            <img src="/help/edge/assets/smock_documentfragment_18_n.svg" alt="使用規則向表單添加動態行為" style="border-radius: 5px;"></b><br><b style="margin-top: 5px;">使用規則向表單添加動態行為
-            </b>
+            <img src="/help/edge/assets/smock_documentfragment_18_n.svg" alt="使用規則將動態行為新增至表單" style="border-radius: 5px;"> </b>
+            <br><b style="margin-top: 5px;">使用規則將動態行為新增至表單</b>
         </a>
         <p>跨多種表單重複使用預先設定的片段。</p>
     </div>
