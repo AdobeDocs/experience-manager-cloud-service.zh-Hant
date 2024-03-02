@@ -4,7 +4,7 @@ description: 快速製作完美表單！⚡ AEM Forms Edge Delivery 文件型製
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: e8fbe3efae7368c940cc2ed99cc9a352bbafbc22
+source-git-commit: d0c4f2f880ef7c11b11144502d30430336ac682e
 workflow-type: tm+mt
 source-wordcount: '1150'
 ht-degree: 16%
@@ -18,7 +18,7 @@ ht-degree: 16%
 
 這些表單可直接提交資料至 Microsoft Excel 或 Google Sheets 檔案，讓您能夠使用由 Google Sheets、Microsoft Excel 和 Microsoft Sharepoint 等強大 API 建構的活躍生態系統，以便輕鬆處理提交的資料或啟動現有的業務工作流程。
 
-![檔案式撰寫生態系統](/help/edge/assets/document-based-authoring-workflow.png)
+![檔案式撰寫生態系統](/help/edge/assets/document-based-authoring-workflow-create-form.png)
 
 AEM Forms Edge Delivery提供最適化表單區塊，協助您輕鬆建立表單，以擷取及儲存擷取的資料。 您可以在AEM EDS專案中加入最適化表單區塊，以開始建立表單。 讓我們開始吧：
 

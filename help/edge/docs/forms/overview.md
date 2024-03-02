@@ -4,9 +4,9 @@ description: AEM Forms Edge Delivery Service 旨在為實現最佳效而建置�
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: e8fbe3efae7368c940cc2ed99cc9a352bbafbc22
+source-git-commit: d0c4f2f880ef7c11b11144502d30430336ac682e
 workflow-type: tm+mt
-source-wordcount: '866'
+source-wordcount: '705'
 ht-degree: 30%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 30%
     text-align: center; 
     }
     .image-container img {
-        width: 70%; /* Set image width to 70% of the container */
+        width: 100%; /* Set image width to 100% of the container */
         border: .5px solid; /* Maintain the border style */
         padding: 15px; /* Maintain the padding */
     }
@@ -42,25 +42,26 @@ ht-degree: 30%
 
 
 </div>
-&lt;!— &gt; * **以令人驚豔的表單Captivate使用者**：使用預先建立的元件庫，輕鬆建立複雜且吸引人的表單。 輕鬆整合reCAPTCHA、直接將表單提交至電子郵件，並允許順暢的檔案上傳至Sharepoint、Azure Storage和Amazon S3等安全儲存解決方案。 甚至可建立您自己的自訂表單元件，將您獨特的視覺效果生動呈現。
 
-    ！[登錄檔單](/help/edge/assets/enrollment-form.png)
+<!--
 
-* **建立擁有 Lighthouse 分數的表單**：建立能快速載入和呈現的表單，即使網路連線慢也可行。更快的載入時間和最佳化使用者體驗有助於提高表單完成率和轉換率。
+    ![Enrollment forms](/help/edge/assets/enrollment-form.png)
 
-  ![表單的完美燈塔分數](/help/edge/assets/lighthouse-forms.png)
+* **Build forms with perfect lighthouse score**: Build forms that load and render quickly, even on slow internet connections. Faster loading times and optimized user experience contribute to higher form completion rates and improved conversion rates.
 
-* **使用您選擇的工具建立數位註冊體驗**：透過分離內容來源來提高編寫效率。 您可以一開啟即使用 AEM 編寫和文件型編寫。因此，您可以在相同網站上使用多個內容來源，並使用您偏好的編寫工具，例如Microsoft Excel、Google Sheets或AEM編輯器。
+    ![perfect lighthouse score for your forms](/help/edge/assets/lighthouse-forms.png)
 
-  ![Edge Delivery Forms編寫工具](/help/edge/assets/edge-delivery-forms-authoring-tools.png)
+* **Create digital enrollment experiences with tools of your choice**: Increase authoring efficiency by decoupling content sources. Out of the box you can use both AEM authoring and document-based authoring. As such, you can work with multiple content sources on the same website and use your preferred authoring tools, such as Microsoft Excel, Google Sheets, or AEM Editors.
 
+    ![Edge Delivery forms authoring tools](/help/edge/assets/edge-delivery-forms-authoring-tools.png)
+    
 <!--
 * **Measure customer impact and deliver effective forms**: Use our RUM dashboards to visualize form performance and identify areas for improvement. Experiment with different versions and continuously optimize your forms for maximum effectiveness, ensuring you capture the data you need and drive better business outcomes.
 
 * **Use Integrated services:** Use integrated services to streamline and empowers your users with a one-stop shop for managing their digital enrollment journeys. Use e-signatures, automated workflows, document of record (DoR), and seamless data integration, simplify the entire digital enrollment process, accelerate approvals, and optimizes your business workflows. 
 
     
->[!NOTE]
+    >[!NOTE]
     >
     >
     > WYSIWYG authoring capability, integrated services, and customer impact measuring features are available under early adopter program. You can write to aem-forms-early-adopter-program@adobe.com from your official email id to join the early adopter program and request access to the capability.
@@ -81,6 +82,9 @@ ht-degree: 30%
 
 * **設定Forms樣式**：每個表單欄位都有固定的HTML結構，可使用自訂CSS或JavaScript檔案進一步裝飾。 CSS/JS中目標欄位的選取器是根據型別和名稱而提供。
 
+## 工作流程
+
+![檔案式撰寫生態系統](/help/edge/assets/document-based-authoring-workflow.png)
 
 ## 開始建立表單
 

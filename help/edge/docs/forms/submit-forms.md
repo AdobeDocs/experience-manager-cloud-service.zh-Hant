@@ -4,9 +4,9 @@ description: 使用試算表和最適化表單區塊欄位，更快製作強大�
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: e8fbe3efae7368c940cc2ed99cc9a352bbafbc22
+source-git-commit: d0c4f2f880ef7c11b11144502d30430336ac682e
 workflow-type: tm+mt
-source-wordcount: '997'
+source-wordcount: '1000'
 ht-degree: 56%
 
 ---
@@ -14,7 +14,10 @@ ht-degree: 56%
 
 # 準備您的試算表以接受資料
 
+![檔案式撰寫生態系統](/help/edge/assets/document-based-authoring-workflow-enable-sheet-to-accept-data.png)
+
 一旦您 [已建立和預覽表單](/help/edge/docs/forms/create-forms.md)，是時候啟用對應的試算表來開始接收資料了。
+
 
 <!-- 
 >[!VIDEO](https://video.tv.adobe.com/v/3427489?quality=12&learn=on)
@@ -43,6 +46,7 @@ ht-degree: 56%
 
 
 將欄位名稱新增至 `incoming` 工作表，您的表單就準備好可以接受提交了。 您可以預覽表單，並使用表單將資料提交至工作表。
+
 
 您也會在試算表中觀察到下列變更：
 
