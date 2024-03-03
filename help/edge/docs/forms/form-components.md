@@ -4,17 +4,18 @@ description: 本檔案概述AEM Forms Edge Delivery Service中可用的表單元
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: d0c4f2f880ef7c11b11144502d30430336ac682e
+source-git-commit: fd2e5df72e965ea6f9ad09b37983f815954f915c
 workflow-type: tm+mt
-source-wordcount: '913'
+source-wordcount: '965'
 ht-degree: 5%
 
 ---
 
 
-# 表單元件和屬性的開發人員指南：AEM Forms Edge Delivery Service
+# 表單元件和屬性： AEM Forms Edge Delivery Service
 
 AEM Forms Edge Delivery Service可讓您使用各種元件建立好記且互動式的表單。 這些元件適用於不同型別的資料收集，並可輕鬆自訂以符合您的特定需求。
+
 
 ![包含某些元件和屬性的試算表範例](/help/edge/assets/sample-form-in-spreadsheet.png)
 
@@ -41,6 +42,8 @@ AEM Forms Edge Delivery Service可讓您使用各種元件建立好記且互動�
 
 
 
+
+
 ## 元件屬性
 
 每個表單元件都隨附各種屬性，可讓您控制其行為和外觀。 最適化表單元件支援的屬性如下：
@@ -48,6 +51,7 @@ AEM Forms Edge Delivery Service可讓您使用各種元件建立好記且互動�
 
 | 屬性 | 適用的元件 | 詳細資料 |
 |--------------|------------------------------|----------------------------------------------------------------------|
+| 類型 | 全部 | 指定元件的型別。 此屬性決定輸入欄位的行為和外觀。 例如，對於文字輸入，型別可以是「text」、「email」用於電子郵件輸入、「password」用於密碼輸入。 最適化表單區塊支援  <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types">所有有效的HTML5輸入型別</a>， <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea">文字區域</a>， <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select">選取</a>、和 <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset">欄位集</a> 作為型別。 |
 | 類型 | 全部 | 指定元件的型別。 此屬性決定輸入欄位的行為和外觀。 例如，對於文字輸入，型別可以是「text」、「email」用於電子郵件輸入、「password」用於密碼輸入。 最適化表單區塊支援  <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types">所有有效的HTML5輸入型別</a>， <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea">文字區域</a>， <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select">選取</a>、和 <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset">欄位集</a> 作為型別。 |
 | 名稱 | 全部 | 識別表單提交的元件。 將表單資料提交至伺服器時，會使用name屬性，將使用者輸入與特定欄位建立關聯。 |
 | 標籤 | 全部 | 為使用者提供內容相關資訊。 標籤是元件旁邊顯示的文字，提供使用者要輸入哪些資訊的指引。 |
@@ -201,6 +205,6 @@ Here is the table which outlines how core components correspond to their HTML-5 
 
 - [建立並預覽表單](/help/edge/docs/forms/create-forms.md)
 - [啟用表單來傳送資料](/help/edge/docs/forms/submit-forms.md)
-- [將表單發佈到網站頁面](/help/edge/docs/forms/publish-eds-forms.md)
+- [將表單發佈到網站頁面](/help/edge/docs/forms/publish-forms.md)
 - [新增驗證至表單欄位](/help/edge/docs/forms/validate-forms.md)
 - [改變主題和樣式風格](/help/edge/docs/forms/style-theme-forms.md)

@@ -4,10 +4,10 @@ description: 使用試算表和最適化表單區塊欄位，更快製作強大�
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: d0c4f2f880ef7c11b11144502d30430336ac682e
+source-git-commit: fd2e5df72e965ea6f9ad09b37983f815954f915c
 workflow-type: tm+mt
-source-wordcount: '1000'
-ht-degree: 56%
+source-wordcount: '1003'
+ht-degree: 55%
 
 ---
 
@@ -18,6 +18,7 @@ ht-degree: 56%
 
 一旦您 [已建立和預覽表單](/help/edge/docs/forms/create-forms.md)，是時候啟用對應的試算表來開始接收資料了。
 
+![檔案式撰寫生態系統](/help/edge/assets/document-based-authoring-workflow-enable-sheet-to-accept-data.png)
 
 <!-- 
 >[!VIDEO](https://video.tv.adobe.com/v/3427489?quality=12&learn=on)
@@ -46,6 +47,7 @@ ht-degree: 56%
 
 
 將欄位名稱新增至 `incoming` 工作表，您的表單就準備好可以接受提交了。 您可以預覽表單，並使用表單將資料提交至工作表。
+
 
 
 您也會在試算表中觀察到下列變更：
@@ -290,6 +292,6 @@ POST https://my-domain.com/email-form
 
 * [建立並預覽表單](/help/edge/docs/forms/create-forms.md)
 * [啟用表單來傳送資料](/help/edge/docs/forms/submit-forms.md)
-* [將表單發佈到網站頁面](/help/edge/docs/forms/publish-eds-forms.md)
+* [將表單發佈到網站頁面](/help/edge/docs/forms/publish-forms.md)
 * [新增驗證至表單欄位](/help/edge/docs/forms/validate-forms.md)
 * [改變主題和樣式風格](/help/edge/docs/forms/style-theme-forms.md)

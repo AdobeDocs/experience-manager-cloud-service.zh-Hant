@@ -4,10 +4,10 @@ description: AEM Forms Edge Delivery Service 旨在為實現最佳效而建置�
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: d0c4f2f880ef7c11b11144502d30430336ac682e
+source-git-commit: fd2e5df72e965ea6f9ad09b37983f815954f915c
 workflow-type: tm+mt
-source-wordcount: '705'
-ht-degree: 30%
+source-wordcount: '814'
+ht-degree: 26%
 
 ---
 
@@ -27,13 +27,10 @@ ht-degree: 30%
   <div>
     <style>
     .image-container {
-    width: 80%;
     text-align: center; 
     }
     .image-container img {
-        width: 100%; /* Set image width to 100% of the container */
-        border: .5px solid; /* Maintain the border style */
-        padding: 15px; /* Maintain the padding */
+        width: 100%; /* Set image width to 100% of the container 
     }
 </style>
     <div class="image-container">
@@ -42,6 +39,8 @@ ht-degree: 30%
 
 
 </div>
+
+<!--
 
 <!--
 
@@ -62,6 +61,7 @@ ht-degree: 30%
 
     
     >[!NOTE]
+    >[!NOTE]
     >
     >
     > WYSIWYG authoring capability, integrated services, and customer impact measuring features are available under early adopter program. You can write to aem-forms-early-adopter-program@adobe.com from your official email id to join the early adopter program and request access to the capability.
@@ -70,17 +70,24 @@ ht-degree: 30%
 
 ## 主要功能
 
-* **以HTML5為基礎的表單欄位元件**： AEM Forms Edge Delivery Service可讓您根據有效HTML，使用表單欄位建立使用者友善的互動式表單5 [輸入型別](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types)， <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea">文字區域</a>， <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select">選取</a>、和 <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset">欄位集</a>  元件。 這些元件適用於不同型別的資料收集，並可輕鬆自訂以符合您的特定需求。
+* **以HTML5為基礎的表單欄位元件**： AEM Forms Edge Delivery Service可讓您使用以HTML5為基礎的表單元件，建立使用者易記且互動式的表單 [輸入型別](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types)， <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea">文字區域</a>， <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select">選取</a>、和 <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset">欄位集</a>  元素。 這些元件適用於不同型別的資料收集，並可輕鬆自訂以符合您的特定需求。
 
 * **協助工具**：可存取表單區塊中的欄位。 每個標籤都與其各自的輸入元素連結，而且會自動產生ID以供連結。 與欄位相關的說明是透過aria-descripted by屬性連結。 支援使用標準Tab/Shift + Tab鍵的鍵盤導覽。
 
-* **表單規則**：建立邏輯，以根據使用者輸入或預先定義的條件調整欄位可見性、驗證和行為。 規則提供靈活且直覺的方式為您的表單新增智慧，確保它們能根據使用者輸入順暢地調整。
+* **樣式**：每個表單欄位都有固定的HTML結構，可以輕鬆使用自訂CSS或JavaScript檔案進行裝飾。 CSS和JS中目標欄位的選取器是根據型別和名稱而提供。 您可以因標準化結構而輕鬆建立新的選取器。
 
-* **檔案上傳**：透過順暢的檔案附件功能增強您的表單。 無論您需要向使用者收集檔案、影像或其他檔案，Adaptive Form Block都能讓您輕鬆整合檔案上傳功能。 透過可用的自訂處理選項，您可以量身打造檔案上傳程式，以符合您的特定需求。
+* **規則**：輕鬆建立邏輯，以根據使用者輸入或預先定義的條件調整欄位可見度、驗證和行為。 規則提供靈活且直覺的方式為您的表單新增智慧，確保它們能根據使用者輸入順暢地調整。
 
-* **表單驗證**：提交前，系統會驗證表單，無效欄位會適當地標示為使用者顯示的錯誤訊息。 有各種模式可用來顯示這些錯誤。
+* **驗證**：提交前，系統會驗證表單，無效欄位會適當地標示為使用者顯示的錯誤訊息。 有各種模式可用來顯示這些錯誤。
 
-* **設定Forms樣式**：每個表單欄位都有固定的HTML結構，可使用自訂CSS或JavaScript檔案進一步裝飾。 CSS/JS中目標欄位的選取器是根據型別和名稱而提供。
+有幾個進階功能可應要求提供：
+
+* **檔案上傳**：您可以將檔案附件功能新增至表單。 無論您需要向使用者收集檔案、影像或其他檔案，檔案上傳功能都能讓您輕鬆上手。 透過可用的自訂處理選項，您可以量身打造檔案上傳程式，以符合您的特定需求。
+
+* **reCAPTCHA**：透過我們的開箱即用(OOTB)支援，將Google reCAPTCHA無縫整合至您的表單中，受益匪淺。 保護您的表單免受詐騙活動、垃圾郵件和濫用，同時保持順暢且無中斷的使用者體驗。
+
+* **在表單提交時傳送電子郵件通知**：消除手動後續追蹤的麻煩，並確保利用我們內建的表單提交電子郵件自動化進行及時通訊。 此整合式解決方案可讓您在有人填寫您網站上的表單時，輕鬆通知相關人員，包括傳送表單資料。 無需複雜的設定或其他工具，開箱即用。
+
 
 ## 工作流程
 

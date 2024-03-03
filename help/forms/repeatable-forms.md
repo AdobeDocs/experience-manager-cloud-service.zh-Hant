@@ -2,9 +2,9 @@
 description: 本教學課程包含讓表單的某個區段可重複的指示
 title: Edge Delivery Services中的可重複區段
 feature: Edge Delivery Services
-source-git-commit: 3b24d0cd4099e0b8eb48c977f460b25c168af220
+source-git-commit: fd2e5df72e965ea6f9ad09b37983f815954f915c
 workflow-type: tm+mt
-source-wordcount: '476'
+source-wordcount: '475'
 ht-degree: 1%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 1%
 
 ## 先決條件
 
-使用AEM範本設定Edge Delivery Service (EDS) Github專案，並在本機電腦上複製對應的Github存放庫。 若需要詳細資訊，請參閱[開發人員教學課程](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/build/tutorial.html) 。
+使用AEM範本設定Edge Delivery Service (EDS) GitHub專案，並在本機電腦上複製對應的GitHub存放庫。 若需要詳細資訊，請參閱[開發人員教學課程](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/build/tutorial.html) 。
 
 ## 邊緣傳遞中的可重複區段
 

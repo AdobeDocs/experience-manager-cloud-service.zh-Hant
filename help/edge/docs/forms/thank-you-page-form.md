@@ -4,7 +4,7 @@ description: 瞭解如何為Forms Block設定感謝頁面和重新導向，以�
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: d6b1048c44022da47a9d7443f564a2ff9d1802cf
+source-git-commit: fd2e5df72e965ea6f9ad09b37983f815954f915c
 workflow-type: tm+mt
 source-wordcount: '608'
 ht-degree: 5%
@@ -86,6 +86,6 @@ ht-degree: 5%
 * [表單欄位屬性](/help/edge/docs/forms/eds-form-field-properties)
 * [建立並預覽表單](/help/edge/docs/forms/create-forms.md)
 * [啟用表單來傳送資料](/help/edge/docs/forms/submit-forms.md)
-* [將表單發佈到網站頁面](/help/edge/docs/forms/publish-eds-forms.md)
+* [將表單發佈到網站頁面](/help/edge/docs/forms/publish-forms.md)
 * [新增驗證至表單欄位](/help/edge/docs/forms/validate-forms.md)
 * [改變主題和樣式風格](/help/edge/docs/forms/style-theme-forms.md)
