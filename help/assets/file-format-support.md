@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Management,Renditions
 role: User,Admin
 exl-id: e848aa77-7829-4adc-8b88-0279791a4525
-source-git-commit: 4c1525fd51956d3d788a91f58978a9c885e6daa5
+source-git-commit: ea61a794788ee2a59e05727fa3c4fd4fc1ca9956
 workflow-type: tm+mt
-source-wordcount: '1409'
-ht-degree: 32%
+source-wordcount: '1427'
+ht-degree: 33%
 
 ---
 
@@ -227,15 +227,19 @@ ht-degree: 32%
 ## Dynamic Media — 支援的點陣影像格式 {#image-support-dynamic-media}
 
 | 格式 | 上傳（輸入格式） | 建立影像預設集（輸出格式） | 預覽動態轉譯 | 傳遞動態轉譯 | 下載動態轉譯 | 設定支援此格式的型別 |
-| ------- | --------------------- | ----------------------------------- | ------------------------- | ------------------------- | -------------------------- | ---------------------------------- |
-| BMP | ✓ | - | - | - | - | [影像](/help/assets/dynamic-media/image-sets.md)， [混合媒體](/help/assets/dynamic-media/mixed-media-sets.md)、和 [迴轉](/help/assets/dynamic-media/spin-sets.md) |
-| EPS | ✓ | ✓ | ✓ | ✓ | ✓ | - |
-| GIF | ✓ | ✓ | ✓ | ✓ | ✓ | - |
+|---|:---:|:---:|:---:|:---:|:---:| --- |
+| AVIF | ✓ | ✓ | ✓ | ✓ | ✓ |  |
+| BMP | ✓ | − | − | − | − | [影像](/help/assets/dynamic-media/image-sets.md)， [混合媒體](/help/assets/dynamic-media/mixed-media-sets.md)、和 [迴轉](/help/assets/dynamic-media/spin-sets.md) |
+| [EPS](/help/assets/dynamic-media/managing-image-presets.md#adobe-illustrator-ai-postscript&reg;-eps-and-pdf-file-formats-adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ | ✓ | − |
+| GIF | ✓ | ✓ | ✓ | ✓ | ✓ | − |
+| HEIC | ✓ | ✓ | ✓ | ✓ | ✓ |  |
 | JPEG | ✓ | ✓ | ✓ | ✓ | ✓ | [影像](/help/assets/dynamic-media/image-sets.md)， [混合媒體](/help/assets/dynamic-media/mixed-media-sets.md)、和 [迴轉](/help/assets/dynamic-media/spin-sets.md) |
-| PICT | ✓ | - | - | - | - | - |
+| PICT | ✓ | − | − | − | − | − |
 | PNG | ✓ | ✓ | ✓ | ✓ | ✓ | [影像](/help/assets/dynamic-media/image-sets.md)， [混合媒體](/help/assets/dynamic-media/mixed-media-sets.md)、和 [迴轉](/help/assets/dynamic-media/spin-sets.md) |
-| PSD‡ | ✓ | - | - | - | - | - |
+| PSD‡ | ✓ | − | − | − | − | − |
 | TIFF | ✓ | ✓ | ✓ | ✓ | ✓ | [影像](/help/assets/dynamic-media/image-sets.md)， [混合媒體](/help/assets/dynamic-media/mixed-media-sets.md)、和 [迴轉](/help/assets/dynamic-media/spin-sets.md) |
+| WEBP | ✓ | ✓ | ✓ | ✓ | ✓ |  |
+<!-- AVIF, HEIC, and WebP added to table above on March 4, 2024 based on CQDOC-21294 -->
 
 ‡合併的影像會從PSD檔案中擷取。 這是由產生的影像 [!DNL Adobe Photoshop] 和包含在PSD檔案中。 視設定而定，合併的影像不一定是實際影像。
 

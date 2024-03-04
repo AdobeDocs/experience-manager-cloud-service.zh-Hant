@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Asset Management
 role: User
 exl-id: 2f2fd6cb-8b53-4167-a7e3-453f27549109
-source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
+source-git-commit: 74254387de1761f25127180787453e681181d97a
 workflow-type: tm+mt
 source-wordcount: '3166'
 ht-degree: 5%
@@ -149,7 +149,7 @@ Dynamic Media元件可讓您新增動態影像，包括影像集、迴轉集及�
 
 * **[!UICONTROL 檢視器修飾元]**  — 檢視器修飾元採用名稱=值配對&amp;分隔符號的形式，可讓您依照《檢視器參考指南》中的概述變更檢視器。 檢視器修飾元的範例為 `posterimage=img.jpg&caption=text.vtt,1` 這會為視訊縮圖設定不同的影像，並將隱藏式字幕/字幕檔案與視訊建立關聯。
 
-* **[!UICONTROL 影像預設集]**  — 從下拉式清單中選取現有的影像預設集。 如果您要尋找的影像預設集不可見，您必須讓它可見。 請參閱管理影像預設集。 如果您使用影像預設集，則無法選取檢視器預設集，反之亦然。
+* **[!UICONTROL 影像預設集]**  — 從下拉式清單中選取現有的影像預設集。 如果您要尋找的影像預設集不可見，您必須讓它可見。 另請參閱 [管理影像預設集](/help/assets/dynamic-media/managing-image-presets.md). 如果您使用影像預設集，則無法選取檢視器預設集，反之亦然。
 
   如果您要檢視影像集、迴轉集或混合媒體集，則此選項無法使用。
 
