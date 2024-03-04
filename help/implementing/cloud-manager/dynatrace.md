@@ -2,7 +2,7 @@
 title: Dynatrace
 description: 瞭解如何搭配AEMas a Cloud Service使用Dynatrace
 exl-id: b58c8b82-a098-4d81-bc36-664e890c8f66
-source-git-commit: d6f5a365a48a8b20b69db6895f895c9d172d58a7
+source-git-commit: 4fe8ed9c3f7b6589878da3317d15fede819bad54
 workflow-type: tm+mt
 source-wordcount: '589'
 ht-degree: 0%
@@ -56,19 +56,22 @@ Dynatrace AEM監視需要Dynatrace授權。 Dynatrace AEM授權是根據 [Kubern
 
 1. 對您的Dynatrace環境執行以下API請求：
 
-`curl -X GET "<environmentUrl>/api/v1/deployment/installer/agent/connectioninfo" -H "accept: application/json" -H "Authorization: Api-Token <accessToken>"`
+   ```
+   curl -X GET "<environmentUrl>/api/v1/deployment/installer/agent/connectioninfo" -H "accept: application/json" -H "Authorization: Api-Token <accessToken>"
+   ```
 
-取代 `<environmentUrl>` 使用您的Dynatrace環境URL和 `<accessToken>` 以及您建立的API存取Token。
+
+   取代 `<environmentUrl>` 使用您的Dynatrace環境URL和 `<accessToken>` 以及您建立的API存取Token。
 
 1. 複製 `<environmentId>` 和 `<environmentToken>` 並將它們儲存在安全的地方。
 
-```
-{
-   "tenantUUID": "<environmentId>",
-   "tenantToken": "<environmentToken>",
-   "communicationEndpoints": [...]
-}
-```
+   ```
+   {
+      "tenantUUID": "<environmentId>",
+      "tenantToken": "<environmentToken>",
+      "communicationEndpoints": [...]
+   }
+   ```
 
 ### 建立Dynatrace API存取權杖 {#create-dynatrace-access-token}
 
