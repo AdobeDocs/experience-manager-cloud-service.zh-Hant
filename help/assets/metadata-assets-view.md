@@ -3,8 +3,7 @@ title: 如何在「資產」檢視中管理中繼資料？
 description: 瞭解如何在「資產」檢視中管理中繼資料。 更好的中繼資料管理讓資產更易於存取、更易於管理和完成。
 role: User,Leader,Admin,Architect,Developer
 contentOwner: AG
-exl-id: cfc105d1-41fc-4418-9905-b2a28a348682
-source-git-commit: ef2a883e99823b1109eba598e89ea25a661e389b
+source-git-commit: c3076ce35128c147ce2056d11d9305d9a9456636
 workflow-type: tm+mt
 source-wordcount: '1667'
 ht-degree: 87%

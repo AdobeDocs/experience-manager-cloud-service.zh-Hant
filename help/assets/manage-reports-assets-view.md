@@ -1,8 +1,7 @@
 ---
 title: 在資產檢視中管理報告
 description: 存取資產檢視之報告區段的資料，評估產品和功能使用情況，並得出關鍵成功量度的見解。
-exl-id: c7155459-05d9-4a95-a91f-a1fa6ae9d9a4
-source-git-commit: c9ec348d7e65f4bb69b93a39b9ad7192485d8db4
+source-git-commit: c3076ce35128c147ce2056d11d9305d9a9456636
 workflow-type: tm+mt
 source-wordcount: '814'
 ht-degree: 92%

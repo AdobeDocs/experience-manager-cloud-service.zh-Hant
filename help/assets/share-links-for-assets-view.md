@@ -1,10 +1,9 @@
 ---
 title: 如何共用資產的連結？
 description: 產生連結，然後和無法存取  [!DNL Assets view]  應用程式的其他人共用資產。
-exl-id: 6e05b06c-7436-40e3-acee-c8b1ed218f9e
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: c3076ce35128c147ce2056d11d9305d9a9456636
 workflow-type: tm+mt
-source-wordcount: '406'
+source-wordcount: '397'
 ht-degree: 93%
 
 ---

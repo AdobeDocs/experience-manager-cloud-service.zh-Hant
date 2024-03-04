@@ -2,10 +2,9 @@
 title: 將資產上傳到存放庫
 description: 上傳資產到  [!DNL Assets view]、檢視上傳狀態和解決上傳問題。
 role: User
-exl-id: a85a4455-4456-48af-aee9-f05300677605
-source-git-commit: df82681338f8ca1a34df6118cbddc6642aa8d4b5
+source-git-commit: c3076ce35128c147ce2056d11d9305d9a9456636
 workflow-type: tm+mt
-source-wordcount: '835'
+source-wordcount: '825'
 ht-degree: 91%
 
 ---
@@ -34,7 +33,7 @@ ht-degree: 91%
 
 >[!TIP]
 >
->如果您將資料夾結構上傳至「資產」檢視，則不需要建立具有該資料夾結構的.ZIP檔案，您可以直接上傳資料夾結構。 上傳至「資產」檢視的.ZIP檔案會儲存為一個ZIP資產，上傳後不會自動解壓縮。
+>如果您將資料夾結構上傳至「資產」檢視，則不需要建立具有該資料夾結構的.ZIP檔案，您可以直接上傳資料夾結構。 上傳至「資產」檢視的.ZIP檔案會儲存為一個ZIP資產，上傳後也不會自動解壓縮。
 
 ## 檢視上傳進度和狀態 {#upload-progress}
 
@@ -82,7 +81,7 @@ ht-degree: 91%
 
 >[!TIP]
 >
->您可以從您的 [!DNL Creative Cloud] 桌面應用程式內直接將資產上傳到 DAM 存放庫。
+>您可以從內直接將資產上傳到DAM存放庫 [!DNL Creative Cloud] 案頭應用程式。
 <!--TBD
 See how [[!DNL Assets view] integrates with [!DNL Adobe Asset Link]](/help/assets/integration-assets-view.md).
 -->
@@ -103,7 +102,7 @@ See how [[!DNL Assets view] integrates with [!DNL Adobe Asset Link]](/help/asset
 
 * [觀看在「資產」檢視中上傳資產的相關影片](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/creating.html)
 
-* 使用提供產品意見回饋 [!UICONTROL 意見反應] 「資產」檢視使用者介面中可用的選項
+* 使用資產檢視使用者介面所提供的[!UICONTROL 意見回饋]選項提供產品意見回饋
 
 * 若要提供文件意見回饋，請使用右側邊欄提供的[!UICONTROL 編輯此頁面]![來編輯頁面](assets/do-not-localize/edit-page.png)或[!UICONTROL 記錄問題]![來建立 GitHub 問題](assets/do-not-localize/github-issue.png)
 

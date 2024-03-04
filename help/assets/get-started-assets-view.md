@@ -2,10 +2,9 @@
 title: 開始使用  [!DNL Assets View]
 description: 如何存取， [!DNL Assets View] 的登入體驗、支援的使用案例和已知問題
 role: User, Leader
-exl-id: 7917b2a0-8340-4d94-aa6f-30ce986fa752
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: c3076ce35128c147ce2056d11d9305d9a9456636
 workflow-type: tm+mt
-source-wordcount: '344'
+source-wordcount: '334'
 ht-degree: 95%
 
 ---

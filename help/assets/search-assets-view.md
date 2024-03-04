@@ -2,11 +2,10 @@
 title: 瞭解如何搜尋和探索中的資產 [!DNL Assets view]？
 description: 瞭解如何在AEM Assets檢視中搜尋和探索資產。 強大的搜尋功能可讓您快速探索合適的資產，協助您改善內容速度。
 role: User
-exl-id: be9597a3-056c-436c-a09e-15a03567c85a
-source-git-commit: 7b815a83e4e93c024403fab02f9a9b4ba8685007
+source-git-commit: c3076ce35128c147ce2056d11d9305d9a9456636
 workflow-type: tm+mt
 source-wordcount: '1543'
-ht-degree: 78%
+ht-degree: 91%
 
 ---
 
@@ -120,37 +119,37 @@ ht-degree: 78%
 
 1. 按一下&#x200B;**[!UICONTROL 確認]**，即可將篩選器從使用者介面移除。
 
-## 搜尋資產，使用 [!DNL Adobe Firefly] {#search-firefly}
+## 使用 [!DNL Adobe Firefly] 搜尋資產 {#search-firefly}
 
-您可以利用 [!DNL Adobe Firefly] 內的資產搜尋功能 [!DNL Experience Manager Assets]. 這可讓您有效率地即時產生未儲存在資產資料夾中的資產。
+您可以利用 [!DNL Experience Manager Assets] 中的 [!DNL Adobe Firefly] 資產搜尋功能，搜尋任何資產資料夾中都找不到的資產。您就可以有效率且即時地產生未儲存在資產資料夾中的資產。
 
 ### 開始之前
 
-您必須擁有使用中 [!DNL Adobe Express] 訂閱。
+您必須擁有使用中的 [!DNL Adobe Express] 訂閱。
 
 ### 產生資產
 
-若要使用產生新資產 [!DNL Adobe Firefly]：
+如要使用 [!DNL Adobe Firefly] 來產生新資產：
 
-1. 導覽至 [!DNL AEM Assets] 工作區。
-1. 在頁面頂端的搜尋列中輸入資產名稱。<br>
-例如，您可以使用關鍵字搜尋資產 `Bugatti Type 57`. 搜尋資產時，由於資產不存在於任何資產資料夾中，因此找不到結果。
-1. 在頁面中間的搜尋列中鍵入資產名稱，然後按一下 **[!UICONTROL 產生]**.
+1. 瀏覽至 [!DNL AEM Assets] 工作區。
+1. 在頁面頂部的搜尋欄中，輸入資產名稱。<br>
+例如，您可以使用關鍵字 `Bugatti Type 57` 來搜尋資產。搜尋資產時，若找不到任何結果，是因為該資產不存在於任何資產資料夾中。
+1. 在頁面中間的搜尋欄中，輸入資產名稱，然後按一下 **[!UICONTROL 產生]**。
    ![Firefly 整合](assets/firefly-integration.jpg)
-   *圖：在資產資料夾中找不到Bugatti Type 57的結果。* <br>
+   *圖：未在資產資料夾中找到 Bugatti Type 57 的結果。* <br>
 新資產已成功產生。
    ![Firefly 整合](assets/bugatti-type-57.jpg)
-   *圖：參考資產搜尋方式 [!DNL Adobe Firefly] 資產搜尋功能。* <br>
-您可以將這些資產上傳到您偏好的資料夾，以方便存取。
+   *圖：使用 [!DNL Adobe Firefly] 資產搜尋功能，搜尋參照資產。* <br>
+您可以將這些資產上傳到您偏好的資料夾，以便存取。
 
 ### 上傳資產
 
-若要將產生的資產上傳至資產存放庫：
+若要將產生的資產上傳到資產存放庫：
 
-1. 按一下 **[!UICONTROL 上傳]**.
-1. 選取上傳資產所需的資產資料夾，然後按一下 **[!UICONTROL 選取資料夾]**.
+1. 按一下 **[!UICONTROL 上傳]**。
+1. 選取需要上傳資產的資產資料夾，然後按一下 **[!UICONTROL 選取資料夾]**。
    ![上傳資產](assets/upload-asset-firefly.jpg)
-   *圖：選取要上傳資產的檔案夾。*
+   *圖：選取要上傳資產的資料夾。*
 
 ## 已儲存搜尋 {#saved-search}
 
@@ -187,7 +186,7 @@ When userA is searching and userB add an asset that matches search results, will
 
 * **釘選到快速存取** :[釘選資產](my-workspace-assets-view.md) 以便以後需要時能更快地存取。所有釘選的項目都顯示在「我的工作區」的&#x200B;**快速存取**&#x200B;部分。
 
-* **以Adobe Express開啟**：從Experience Manager Assets畫面編輯整合Adobe Express中的影像。
+* **在 Adobe Express 中開啟**：到 Experience Manager Assets 畫面，在整合的 Adobe Express 中編輯影像。
 
 * **編輯**：使用 Adobe Express 編輯影像。
 

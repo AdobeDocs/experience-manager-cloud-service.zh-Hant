@@ -2,8 +2,7 @@
 title: 編輯影像
 description: 使用  [!DNL Adobe Photoshop Express]  支援的選項編輯影像，並將更新的影像另存新版。
 role: User
-exl-id: fc21a6ee-bf23-4dbf-86b0-74695a315b2a
-source-git-commit: e9092054062f01eac51bd79c680f4012653f88e7
+source-git-commit: c3076ce35128c147ce2056d11d9305d9a9456636
 workflow-type: tm+mt
 source-wordcount: '1251'
 ht-degree: 80%

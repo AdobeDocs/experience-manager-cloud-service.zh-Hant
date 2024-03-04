@@ -1,8 +1,7 @@
 ---
 title: 管理通知
-description: 使用Assets檢視通知，監視對存放庫中可用的資產或資料夾執行的操作。
-exl-id: 5c0039a2-caa2-4b55-b963-0e7e9e542c47
-source-git-commit: bdbe47a8f06d2ec1cd75103905677fcd3955632d
+description: 使用資產檢視通知，監視對存放庫中可用的資產或資料夾執行的操作。
+source-git-commit: c3076ce35128c147ce2056d11d9305d9a9456636
 workflow-type: tm+mt
 source-wordcount: '617'
 ht-degree: 70%
@@ -11,11 +10,11 @@ ht-degree: 70%
 
 # 查看資產、資料夾和集合 {#watch-assets-folders}
 
-資產檢視通知可讓您監視對存放庫中可用資產、資料夾或集合執行的操作。 您需要選擇並訂閱將通知傳送給您的內容。您還可以配置通知發送給您的類別。
+資產檢視通知可讓您監視對存放庫中可用的資產、資料夾或集合執行的操作。 您需要選取並訂閱將通知傳送給您的內容。您還可以配置通知發送給您的類別。
 
 ## 訂閱通知類別 {#subscribe-to-notification-categories}
 
-您可以從類別清單中選擇並訂閱要接收通知的類別。 「資產」檢視只會針對您從可用選項中選取的類別傳送通知給您：
+您可以從類別清單中選擇並訂閱要接收通知的類別。 「資產」檢視只會針對您從可用選項中選取的類別，傳送通知給您：
 
 <table>
     <tbody>
@@ -60,7 +59,7 @@ ht-degree: 70%
 
 要訂閱通知類別，請執行以下操作：
 
-1. 按一下 ![鈴鐺圖示](assets/bell-icon.svg) 位於「資產」檢視使用者介面之功能表列的右端。
+1. 按一下 ![鈴鐺圖示](assets/bell-icon.svg) 在「資產」檢視使用者介面的功能表列的右端。
 
 1. 按一下 ![設定表徵圖](assets/settings-icon.svg) 的 [!UICONTROL Experience Cloud首選項] 的子選單。
 
@@ -96,8 +95,8 @@ ht-degree: 70%
 
 ## 查看通知 {#view-notifications}
 
-通知會顯示在「資產」檢視使用者介面的功能表列右端。
+通知會顯示在「資產」檢視使用者介面的功能表列的右端。
 
 ![資產檢視中的通知](assets/notifications-assets-essentials.png)
 
-當您按一下通知時，「資產」檢視會將您導覽至通知中引用的適當資產或資料夾。
+當您按一下通知時，資產檢視會將您導覽至通知中參照的適當資產或資料夾。
