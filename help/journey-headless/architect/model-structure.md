@@ -3,7 +3,7 @@ title: 了解如何在 AEM 中建立內容片段模型
 description: 了解使用內容片段模型建立 Headless CMS 內容模型的概念和機制。
 exl-id: fdfa79d3-fbed-4467-a898-c1b2678fc0cb
 source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '686'
 ht-degree: 100%
 

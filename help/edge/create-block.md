@@ -2,7 +2,7 @@
 title: 建立經檢測適用 Universal Editor 的區塊
 description: 了解如何在使用 Edge Delivery Services 專案進行的 AEM 製作環境中，建立經檢測適用 Universal Editor 的區塊。
 source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1205'
 ht-degree: 100%
 

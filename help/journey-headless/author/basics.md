@@ -3,7 +3,7 @@ title: 了解製作基本知識
 description: 了解使用內容片段為 Headless CMS 製作內容的概念和機制。
 exl-id: 3eca973f-b210-41bb-98da-ecbd2bae9803
 source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1727'
 ht-degree: 100%
 

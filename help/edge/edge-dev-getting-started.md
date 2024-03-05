@@ -3,7 +3,7 @@ title: 使用 Edge Delivery Services 進行 AEM 製作的開發人員快速入�
 description: 本指南將協助您啟動並執行新的 Adobe Experience Manager 網站，以使用 Edge Delivery Services 和 Universal Editor 進行內容製作
 feature: Edge Delivery Services
 source-git-commit: 58d85886ef04b548c09e3ef9308fe596dd3eda38
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '989'
 ht-degree: 100%
 

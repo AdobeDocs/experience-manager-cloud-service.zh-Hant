@@ -4,7 +4,7 @@ description: 了解內容發佈如何與 Edge Delivery Services 搭配使用，�
 feature: Edge Delivery Services
 exl-id: 32fbb144-9175-47a9-bb5a-ca15f3fcd2d8
 source-git-commit: 58d85886ef04b548c09e3ef9308fe596dd3eda38
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '228'
 ht-degree: 100%
 

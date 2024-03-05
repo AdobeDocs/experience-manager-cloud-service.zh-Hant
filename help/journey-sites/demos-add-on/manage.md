@@ -3,7 +3,7 @@ title: 管理您的示範網站
 description: 了解可協助您管理示範網站的工具以及如何移除它們。
 exl-id: 988c6e09-c43e-415f-8d61-998c294c5a11
 source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '927'
 ht-degree: 100%
 

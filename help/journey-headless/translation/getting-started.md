@@ -3,7 +3,7 @@ title: AEM Headless 翻譯快速入門
 description: 了解如何組織 Headless 內容以及 AEM 翻譯工具的運作原理。
 exl-id: 04ae2cd6-aba3-4785-9099-2f6ef24e1daf
 source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1409'
 ht-degree: 100%
 
