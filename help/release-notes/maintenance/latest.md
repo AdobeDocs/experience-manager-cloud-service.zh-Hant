@@ -2,8 +2,8 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的目前維護版本發行說明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的目前維護版本發行說明。'
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: 0b4c820159f918cb9b3a93d9ab36dc26b1d8da47
-workflow-type: ht
+source-git-commit: b2bd6fc61b0d8b79d03ebf9eca7d994a622cc6f2
+workflow-type: tm+mt
 source-wordcount: '381'
 ht-degree: 100%
 
