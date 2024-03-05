@@ -4,9 +4,9 @@ description: 新增可重複區段至 EDS Form
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: fd2e5df72e965ea6f9ad09b37983f815954f915c
+source-git-commit: d63d0f1152d0a23623c197924a44bc6b1e69fb42
 workflow-type: tm+mt
-source-wordcount: '554'
+source-wordcount: '565'
 ht-degree: 8%
 
 ---
@@ -14,9 +14,7 @@ ht-degree: 8%
 
 # 將可重複區段新增至表單
 
-最適化表單區塊提供新增或讓表單的區段或元件可重複的功能。
-
-可重複區段是重複或多次複製的表單元件，用來收集多次出現類似資料的資訊。
+最適化表單區塊提供新增或讓表單的區段或元件可重複的功能。 這可讓使用者為相同型別的資料輸入多次資訊，更輕鬆地收集工作經驗或教育背景等資訊。
 
 例如，考慮用來收集個人工作體驗相關資訊的表單。 您可以有可重複的區段來擷取先前各工作的詳細資訊。 重複區段通常包含公司名稱、職稱、僱用日期和工作責任等欄位。 使用者可以新增多個可重複區段的執行個體，以輸入有關他們從事的每一個工作的資訊。
 
@@ -27,46 +25,51 @@ ht-degree: 8%
 * [在表單中建立可重複的區段](#add-repeatable-sections-to-a-form)
 * [設定表單中最小或最大重複次數](#set-minimum-or-maximum-number-of-repetitions-for-a-repeatable-section)
 
-## 在表單中建立可重複的區段
+## 建立可重複的區段
 
 在表單中建立可重複的區段，讓使用者能夠輸入同一組資料的多個例項，進而有效率地收集重複資訊。 若要在表單中建立可重複的區段：
 
-1. 前往Microsoft SharePoint或Google Workspace上的Edge Deliver專案資料夾，並開啟試算表。 例如，開啟名為 `job-application.xlsx`.
+1. 前往Microsoft SharePoint或Google Workspace上的Edge Deliver專案資料夾，並開啟試算表。
 
-1. 使用新增表單欄位 `type` 屬性設定為 `fieldset` 並透過設定啟用重複性 `repeatable` 至 `true`. 此外，請指定描述性 `label` 對於欄位，因為它用作可重複區段的標題。
+1. 使用新增表單欄位 `type` 屬性設定為 `fieldset`
+1. 指定 `Name` 欄位的。 name屬性用於建立可重複的區段。
+1. 透過設定啟用重複性 `repeatable` 至 `true`.
+1. 指定描述性 `label` 欄位的。 它用作可重複區段的標題。
 
    請參閱下圖，以取得工作申請表單中僱用歷史記錄區段的圖例。
 
    ![](/help/edge/assets/repeatable-section-example-job-application-form.png)
 
-1. 在 `Fieldset` 要包含在可重複區段的所有欄位的屬性，請指定 `Name` 的欄位集。
+1. 針對您想納入區段中的每個欄位，設定其 `Fieldset` 屬性的名稱與您在步驟3中選擇的名稱相同。
 
    例如，指定 `experience` Fieldset屬性中納入的所有相關欄位 `employment history` 區段。
 
-   ![](/help/edge/assets/repeatable-section--mention-fieldset-name-example-job-application-form.png)
+   ![重複區段欄位及其屬性的範例](/help/edge/assets/repeatable-section--mention-fieldset-name-example-job-application-form.png)
 
 1. 使用 [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) 以預覽和發佈工作表。 可重複區段會新增至表單。
 
    在可重複區段底下，使用者會找到直覺式的 **新增** 按鈕，方便您輕鬆新增多個區段。
 
-   ![重複區段，尋找直覺式的 **新增** 按鈕，以新增多個區段 ](/help/edge/assets/repeatable-section-example.png)
+   ![重複區段，「新增」按鈕，可新增多個區段 ](/help/edge/assets/repeatable-section-example.png)
 
 
-## 設定重複區段的最小或最大重複次數
+## 設定最小重複次數和最大重複次數
 
 在表單設計中，為可重複區段設定最小和最大重複次數會很有幫助。 如此一來，您就能夠建立控制並維持一致性，同時有效地引導使用者。 若要設定最小或最大重複次數：
 
 1. 前往Microsoft SharePoint或Google Workspace上的Edge Deliver專案資料夾，並開啟試算表。
 
-1. 設定 `min` 屬性來指定可重複該區段的最小次數。
+1. 針對欄位 `type` `fieldset` 和 `repeatable` 屬性設定為 `true`：
+
+   * 設定 `min` 屬性來指定可重複該區段的最小次數。
+
+   * 設定 `max` 屬性來指定可重複該區段的最大次數。
 
    ![設定min和max屬性，指定可重複區段的次數](/help/edge/assets/repeatable-section-set-min-max.png)
 
-1. 設定 `max` 屬性來指定可重複該區段的最大次數。
-
 1. 使用 [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) 預覽和發佈試算表。
 
-   現在，新增可重複區段時，使用者會發現直覺式的 **刪除** 圖示，簡化移除重複截面的程式。 新增後，這些區段無法減少到比指定的執行個體更少。 `min` 屬性。 這可確保遵守為表單完成設定的最低要求。
+   新增可重複區段時，使用者會發現 **刪除** 圖示，可讓您更輕鬆地移除重複區段。 新增後，這些區段無法減少到比指定的執行個體更少。 `min` 屬性。 這可確保遵守為表單完成設定的最低要求。
 
 <!--
 

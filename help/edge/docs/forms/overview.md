@@ -4,10 +4,10 @@ description: AEM Forms Edge Delivery Service 旨在為實現最佳效而建置�
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: fd2e5df72e965ea6f9ad09b37983f815954f915c
+source-git-commit: d63d0f1152d0a23623c197924a44bc6b1e69fb42
 workflow-type: tm+mt
-source-wordcount: '814'
-ht-degree: 26%
+source-wordcount: '1120'
+ht-degree: 25%
 
 ---
 
@@ -16,11 +16,11 @@ ht-degree: 26%
 
 透過Adobe的AEM Forms Edge Delivery Service簡化表單建立作業，並提高完成率。 這項功能強大、可撰寫的服務可讓您建立具有卓越效能和視覺吸引力的企業級表單。 AEM會同時優先考慮使用者體驗和業務目標，確保超快的載入時間並增加表單完成次數。
 
-您可以使用此服務來：
+您可以使用該服務來：
 
-* **使用令人驚豔的表單Captivate使用者**：使用預先建立的元件庫輕鬆建立複雜且吸引人的表單。 輕鬆整合reCAPTCHA、直接將表單提交至電子郵件，並允許順暢的檔案上傳至Sharepoint、Azure Storage和Amazon S3等安全儲存解決方案。 甚至可建立您自己的自訂表單元件，將您獨特的視覺效果生動呈現。
+* **使用令人驚豔的表單Captivate使用者**：使用預先建立的元件庫輕鬆建立複雜且吸引人的表單。 輕鬆整合 reCAPTCHA、直接將表單提交到電子郵件，並允許文件無縫上傳到安全儲存解決方案，例如 Sharepoint、Azure 儲存體和 Amazon S3。甚至建立您自己的自訂表單元件，將您獨特的願景變為現實。
 
-* **使用您選擇的工具建立數位註冊體驗**：透過分離內容來源來提高編寫效率。 開箱即用地使用檔案式編寫(Microsoft 365和Google Workspace)和AEM編寫(AEM編輯器)。 因此，您可以在相同網站上使用多個內容來源，並使用您偏好的編寫工具，例如Microsoft Excel、Google Sheets或Adaptive Forms Editor。
+* **使用您選擇的工具建立數位註冊體驗**：透過分離內容來源來提高製作效率。開箱即用地使用檔案式編寫(Microsoft 365和Google Workspace)和AEM編寫(AEM編輯器)。 因此，您可以在相同網站上使用多個內容來源，並使用您偏好的編寫工具，例如Microsoft Excel、Google Sheets或Adaptive Forms Editor。
 
 * **使用完美的Lighthouse分數建置表單**：建立可快速載入和轉譯的表單，即使在網際網路連線速度緩慢時也是如此。 更快的載入時間和最佳化使用者體驗有助於提高表單完成率和轉換率。
 
@@ -89,9 +89,36 @@ ht-degree: 26%
 * **在表單提交時傳送電子郵件通知**：消除手動後續追蹤的麻煩，並確保利用我們內建的表單提交電子郵件自動化進行及時通訊。 此整合式解決方案可讓您在有人填寫您網站上的表單時，輕鬆通知相關人員，包括傳送表單資料。 無需複雜的設定或其他工具，開箱即用。
 
 
-## 工作流程
+## 可用的Forms區塊
 
-![檔案式撰寫生態系統](/help/edge/assets/document-based-authoring-workflow.png)
+AEM Forms Edge Delivery Service提供兩種型別的表單區塊，以迎合不同需求：
+
+* **基本Forms區塊**：這是一個多功能選項，適合使用基本功能建立簡單的表單。 它可讓您整合各種輸入型別，例如文字欄位、下拉式選單和選項按鈕，讓您有效收集使用者資料。
+
+* **最適化Forms區塊**：此進階區塊會解鎖基本Forms區塊以外的其他功能，讓您能夠建立更複雜且互動式的表單。 其主要功能劃分如下：
+
+   * 規則：在表單中定義邏輯型動作。 您可以使用規則有條件地顯示或隱藏表單區段、根據使用者輸入預先填入欄位，以及執行各種驗證以確保資料完整性。
+
+   * 伺服器端擴充性：將表單與伺服器端邏輯整合，以擴充表單的功能。 這可讓您執行複雜的計算、與外部系統互動，以及根據表單內的使用者動作自動執行特定工作。
+
+   * Cross Walk：簡化工作流程和資料管理：運用AEM的強大功能：
+
+      * 使用AEM編輯器設計使用者友善的表單。
+
+      * 產生「記錄檔案」，用於提交資料的安全且防篡改的封存。
+
+      * 促進使用Adobe Sign進行電子簽章，以獲得流暢安全的簽名體驗。
+
+      * 透過AEM工作流程自動化業務流程，根據表單提交觸發動作。
+
+      * 輕鬆整合各種資料來源，實現順暢的資料流動與交換。
+
+  使用「最適化Forms區塊」需要額外的授權。
+
+### 選擇正確的Forms區塊
+
+基本和最適化Forms區塊之間的選擇取決於您的特定需求。 如果您需要簡單直接的解決方案來收集基本的使用者資訊，基本Forms區塊會是最合適的選擇。 不過，如果您的表單需要複雜的邏輯、資料操控、與外部系統整合，或使用AEM功能簡化工作流程，以及 **您擁有必要的授權**，最適化Forms區塊可提供達成目標所需的功能和彈性。
+
 
 ## 開始建立表單
 
@@ -116,7 +143,7 @@ ht-degree: 26%
     <div class="card-container">
         <a href="/help/edge/docs/forms/create-forms.md">
             <img src="/help/edge/assets/smock_devices_18_n.svg" alt="使用 eds Forms 建立表單" style="border-radius: 5px;"> </b>
-            <br><b style="margin-top: 5px;">使用Google工作表或Microsoft Excel建立表單</b>
+            <br><b style="margin-top: 5px;">使用 Google Sheets 或 Microsoft Excel 建立表單</b>
         </a>
         <p>建立可在行動裝置上快速載入和呈現並自動重排的表單。</p>
     </div>
