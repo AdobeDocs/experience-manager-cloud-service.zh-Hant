@@ -1,5 +1,5 @@
 ---
-title: 準備您的試算表以接受資料
+title: 準備試算表並接受資料
 description: 使用試算表和最適化表單區塊欄位，更快製作強大的表單！
 feature: Edge Delivery Services
 hide: true
@@ -7,16 +7,16 @@ hidefromtoc: true
 source-git-commit: fd2e5df72e965ea6f9ad09b37983f815954f915c
 workflow-type: tm+mt
 source-wordcount: '1003'
-ht-degree: 55%
+ht-degree: 92%
 
 ---
 
 
-# 準備您的試算表以接受資料
+# 準備試算表並接受資料
 
 ![檔案式撰寫生態系統](/help/edge/assets/document-based-authoring-workflow-enable-sheet-to-accept-data.png)
 
-一旦您 [已建立和預覽表單](/help/edge/docs/forms/create-forms.md)，是時候啟用對應的試算表來開始接收資料了。
+ [建立並預覽表單](/help/edge/docs/forms/create-forms.md)後，就可以啟用對應的試算表以開始接收資料。
 
 ![檔案式撰寫生態系統](/help/edge/assets/document-based-authoring-workflow-enable-sheet-to-accept-data.png)
 
@@ -27,30 +27,30 @@ ht-degree: 55%
 
 若要啟用試算表：
 
-1. 開啟具有表單的試算表，然後附加新工作表，將其重新命名為 `incoming`.
+1. 開啟包含您表單的試算表並附加一個新工作表，將其重新命名為 `incoming`。
 
    >[!WARNING]
    >
-   > 如果 `incoming` 工作表不存在，AEM不會將任何資料傳送至試算表。
+   > 如果 `incoming` 工作表不存在，AEM 不會向試算表傳送任何資料。
 
-1. 映象表單欄位名稱，值 `Name` 中的欄`shared-default` 工作表，到中的標題 `incoming` 工作表。
+1. 將表單欄位名稱、`shared-default` 工作表 `Name` 欄的值，鏡像到 `incoming` 工作表的標題。
 
-   中的每一個值 `Name` 的欄 `shared-default` 工作表（不包括提交按鈕）會作為頁首 `incoming` 工作表。 例如，請考慮下圖說明「contact-us」表單的標題：
+   `shared-default` 工作表 `Name` 欄的每個值 (不包含提交按鈕) 會成為 `incoming` 工作表的標題。例如，請參考下方說明「聯絡我們」表單標題的圖片：
 
    ![聯絡我們表單的欄位](/help/edge/assets/contact-us-form-excel-sheet-fields.png)
 
-1. 使用sidekick預覽工作表。
+1. 使用 Sidekick 來預覽工作表。
 
    >[!NOTE]
    >
-   >即使您之前已預覽過工作表，您仍必須在建立工作表之後再次預覽 `incoming` 第一次使用工作表。
+   >即使以前已預覽過該工作表，在第一次建立 `incoming` 工作表後也必須再次預覽。
 
 
-將欄位名稱新增至 `incoming` 工作表，您的表單就準備好可以接受提交了。 您可以預覽表單，並使用表單將資料提交至工作表。
+將欄位名稱新增至 `incoming` 工作表後，您的表單就可以接受提交了。您可以預覽表單並使用它向工作表提交資料。
 
 
 
-您也會在試算表中觀察到下列變更：
+您也可以觀察到試算表有以下變化：
 
 名為「Slack」的工作表會新增至您的 Excel 活頁簿或 Google Sheet 中。在此工作表中，當系統擷取新資料至試算表中時，您可以為指定的 Slack 頻道設定自動通知。目前，AEM 僅支援向 AEM Engineering Slack 組織和 Adob&#x200B;&#x200B;e Enterprise 支援組織發送通知。
 
@@ -67,28 +67,28 @@ ht-degree: 55%
    >  「共用預設」工作表絕不會包含您不願意開放存取的任何個人識別資料或敏感資料。
 
 
-## （選用）使用Admin API啟用試算表以接受資料
+## (選擇性) 使用 Admin API 讓試算表接受資料
 
-您也可以傳送POST要求至表單，讓其接受資料並設定標題 `incoming` 工作表。 在收到POST請求後，此服務會分析請求內文，並自主產生資料擷取所需的必要標題和工作表。
+您也可以向表單傳送 POST 請求，使其能夠接受資料並設定 `incoming` 工作表的標題。收到 POST 請求後，服務會分析請求內文並自動產生資料擷取所需的基本標題和工作表。
 
 若要使用 Admin API 讓試算表接受資料：
 
 
-1. 開啟您已建立的活頁簿，並將預設工作表的名稱變更為 `incoming`.
+1. 開啟您建立的活頁簿並將預設工作表的名稱變更為 `incoming`。
 
    >[!WARNING]
    >
-   > 如果 `incoming` 工作表不存在，AEM不會將任何資料傳送至此活頁簿。
+   > 如果 `incoming` 工作表不存在，AEM 不會向此活頁簿傳送任何資料。
 
 1. 在 Sidekick 中預覽工作表。
 
    >[!NOTE]
    >
-   >即使您之前已預覽過工作表，您仍必須在建立工作表之後再次預覽 `incoming` 第一次使用工作表。
+   >即使以前已預覽過該工作表，在第一次建立 `incoming` 工作表後也必須再次預覽。
 
-1. 傳送POST請求以在中產生適當的標頭 `incoming` 工作表，然後新增 `shared-default` 頁面至您的試算表（如果尚未存在）。
+1. 傳送 POST 請求以在 `incoming` 工作表中產生適當的標題，並將 `shared-default` 工作表新增至試算表 (如果尚未存在)。
 
-   若要了解如何制訂用來設定工作表的 POST 請求格式，請參閱「[Admin API 文件](https://www.aem.live/docs/admin.html#tag/authentication/operation/profile)」。您可以檢視以下提供的範例：
+   若要了解如何制訂用來設定工作表的 POST 請求格式，請參閱「[Admin API 文件](https://www.aem.live/docs/admin.html#tag/authentication/operation/profile)」。您可以查看下方提供的範例：
 
    **請求**
 
@@ -151,9 +151,9 @@ ht-degree: 55%
    }'
    ```
 
-   上述POST請求提供範例資料，包括表單欄位及其各自的範例值。 Admin 服務會使用此資料來設定表單。
+   上面提及的 POST 請求提供了範例資料，包括表單欄位及其個別的範例值。Admin 服務會使用此資料來設定表單。
 
-   您的表單現在已啟用以接受資料。 您也會在試算表中觀察到下列變更：
+   您的表單現在可以接受資料了。您也可以觀察到試算表有以下變化：
 
 名為「Slack」的工作表會新增至您的 Excel 活頁簿或 Google Sheet 中。在此工作表中，當系統擷取新資料至試算表中時，您可以為指定的 Slack 頻道設定自動通知。目前，AEM 僅支援向 AEM Engineering Slack 組織和 Adob&#x200B;&#x200B;e Enterprise 支援組織發送通知。
 
@@ -286,7 +286,7 @@ POST https://my-domain.com/email-form
     https://main--portal--wkndforms.hlx.live/contact-us
   ```
 
-接下來，您可以自訂感謝訊息， [設定感謝頁面](/help/edge/docs/forms/thank-you-page-form.md)，或 [設定重新導向](/help/edge/docs/forms/thank-you-page-form.md).
+接下來，您可以自訂感謝訊息、[設定感謝頁面](/help/edge/docs/forms/thank-you-page-form.md)或[設定重新導向](/help/edge/docs/forms/thank-you-page-form.md)。
 
 ## 了解更多
 

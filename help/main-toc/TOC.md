@@ -9,7 +9,7 @@ user-guide-title: AEM as a Cloud Service
 source-git-commit: 2359f66c961d7678d07af12aa8173ad9169dff9c
 workflow-type: tm+mt
 source-wordcount: '4761'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -178,7 +178,7 @@ ht-degree: 97%
    + [郵件服務的 OAuth2 支援](/help/security/oauth2-support-for-mail-service.md)
    + [流量篩選規則包括 WAF 規則](/help/security/traffic-filter-rules-including-waf.md)
    + [AEM as a Cloud Service 安全性注意事項](/help/security/security-considerations.md)
-   + [Adobe Developer主控台中的JWT憑證淘汰](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md)
+   + [Adobe Developer Console 中的 JWT 憑證已被取代](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md)
 + 上線 {#onboarding}
    + [從這裡開始](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html?lang=zh-Hant)
    + 上線歷程 {#journey}
@@ -267,22 +267,22 @@ ht-degree: 97%
    + 製作 {#authoring}
       + [製作頁面的快速入門手冊](/help/sites-cloud/authoring/quick-start.md)
       + [基本處理](/help/sites-cloud/authoring/basic-handling.md)
-      + [製作與發佈](/help/sites-cloud/authoring/author-publish.md)
+      + [製作和發佈](/help/sites-cloud/authoring/author-publish.md)
       + [製作方法](/help/sites-cloud/authoring/authoring-methods.md)
       + [搜尋](/help/sites-cloud/authoring/search.md)
       + [設定帳戶環境](/help/sites-cloud/authoring/account-environment.md)
       + [您的收件匣](/help/sites-cloud/authoring/inbox.md)
       + [元件主控台](/help/sites-cloud/authoring/components-console.md)
-      + [路徑選擇](/help/sites-cloud/authoring/path-selection.md)
+      + [路徑選取](/help/sites-cloud/authoring/path-selection.md)
       + [疑難排解](/help/sites-cloud/authoring/troubleshooting.md)
-      + 網站主控台 {#sites-console}
-         + [Sites主控台](/help/sites-cloud/authoring/sites-console/introduction.md)
+      + Sites 主控台 {#sites-console}
+         + [Sites 主控台](/help/sites-cloud/authoring/sites-console/introduction.md)
          + [主控台側面板](/help/sites-cloud/authoring/sites-console/console-side-panel.md)
          + [建立新網站](/help/sites-cloud/authoring/sites-console/create-site.md)
          + [組織頁面](/help/sites-cloud/authoring/sites-console/organizing-pages.md)
          + [建立頁面](/help/sites-cloud/authoring/sites-console/creating-pages.md)
          + [管理頁面](/help/sites-cloud/authoring/sites-console/managing-pages.md)
-         + [頁面內容](/help/sites-cloud/authoring/sites-console/page-properties.md)
+         + [頁面屬性](/help/sites-cloud/authoring/sites-console/page-properties.md)
          + [預覽頁面](/help/sites-cloud/authoring/sites-console/previewing-content.md)
          + [發佈頁面](/help/sites-cloud/authoring/sites-console/publishing-pages.md)
          + [頁面範本](/help/sites-cloud/authoring/sites-console/templates.md)
@@ -292,7 +292,7 @@ ht-degree: 97%
          + [啟用漸進式網頁應用程式功能](/help/sites-cloud/authoring/sites-console/enable-pwa.md)
          + [鍵盤快速鍵](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md)
          + [匯出為 CSV](/help/sites-cloud/authoring/sites-console/csv-export.md)
-      + 頁面編輯器 {#page-editor}
+      + 頁面編輯器{#page-editor}
          + [頁面編輯器](/help/sites-cloud/authoring/page-editor/introduction.md)
          + [編輯器側面板](/help/sites-cloud/authoring/page-editor/editor-side-panel.md)
          + [編輯頁面](/help/sites-cloud/authoring/page-editor/edit-content.md)
@@ -304,7 +304,7 @@ ht-degree: 97%
          + [建立可存取的內容 (符合 WCAG 2.1)](/help/sites-cloud/authoring/page-editor/accessible-content.md)
          + [鍵盤快速鍵](/help/sites-cloud/authoring/page-editor/keyboard-shortcuts.md)
          + [樣式系統](/help/sites-cloud/authoring/page-editor/style-system.md)
-         + [復原重做限制](/help/sites-cloud/authoring/page-editor/undo-redo.md)
+         + [取消復原還原限制](/help/sites-cloud/authoring/page-editor/undo-redo.md)
       + Universal Editor {#universal-editor}
          + [使用 Universal Editor 製作內容](/help/sites-cloud/authoring/universal-editor/authoring.md)
          + [使用 Universal Editor 發佈內容](/help/sites-cloud/authoring/universal-editor/publishing.md)
@@ -706,7 +706,7 @@ ht-degree: 97%
    + 疑難排解 {#troubleshooting-aem-forms-cloud-service}
       + [安裝和設定](/help/forms/troubleshooting-installation-and-configuration.md)
       + [Dispatcher 和 CDN 快取](/help/forms/troubleshooting-caching-performance.md)
-      + [重新啟動AEM SDK](/help/forms/restart-aem-sdk.md)
+      + [重新啟動 AEM SDK](/help/forms/restart-aem-sdk.md)
 + Screens {#screens-as-cloud-service}
    + Screens as a Cloud Service 概觀 {#overview}
       + [簡介](/help/screens-cloud/introduction/introduction.md)
@@ -725,7 +725,7 @@ ht-degree: 97%
       + [使用 Screens 內容提供者](/help/screens-cloud/configuring/using-screens-content-provider.md)
       + [建立 Screens 視訊轉譯](/help/screens-cloud/configuring/creating-screens-video-renditions-cloud-service.md)
       + [為 Screens as a Cloud Service 設定 Dispatcher](/help/screens-cloud/configuring/dispatcher-configurations-screens-cloud.md)
-      + [設定畫面as a Cloud Service的時間軸檢視](/help/screens-cloud/configuring/configuring-timeline-view-screens.md)
+      + [設定 Screens as a Cloud Service 時間表檢視](/help/screens-cloud/configuring/configuring-timeline-view-screens.md)
    + 建立內容 {#create-content}
       + [在 Screens 內容提供者中建立和管理專案](/help/screens-cloud/creating-content/creating-projects-screens-cloud.md)
       + [在 Screens 內容提供者中建立和管理頻道](/help/screens-cloud/creating-content/creating-channels-screens-cloud.md)

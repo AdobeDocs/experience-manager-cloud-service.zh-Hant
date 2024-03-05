@@ -7,7 +7,7 @@ hidefromtoc: true
 source-git-commit: fd2e5df72e965ea6f9ad09b37983f815954f915c
 workflow-type: tm+mt
 source-wordcount: '1150'
-ht-degree: 16%
+ht-degree: 26%
 
 ---
 
@@ -20,15 +20,15 @@ ht-degree: 16%
 
 ![檔案式撰寫生態系統](/help/edge/assets/document-based-authoring-workflow-create-form.png)
 
-AEM Forms Edge Delivery提供最適化表單區塊，協助您輕鬆建立表單，以擷取及儲存擷取的資料。 您可以在AEM EDS專案中加入最適化表單區塊，以開始建立表單。 讓我們開始吧：
+AEM Forms Edge Delivery提供最適化表單區塊，協助您輕鬆建立表單，以擷取及儲存擷取的資料。 您可以在AEM EDS專案中加入最適化表單區塊，以開始建立表單。 開始吧：
 
 
 ## 先決條件
 
-開始之前，請確定您已完成下列步驟：
+在開始之前，請確保您已完成以下步驟：
 
-* 使用AEM範本設定Edge Delivery Service (EDS) GitHub專案，並在本機電腦上複製對應的GitHub存放庫。 另請參閱 [開發人員教學課程](https://www.aem.live/developer/tutorial) 以取得詳細資訊。 在本檔案中，Edge Delivery Service (EDS)專案的本機資料夾稱為 `[EDS Project repository]` .
-* 確保您有權存取Google工作表或Microsoft SharePoint。 若要將Microsoft SharePoint設定為您的內容來源，請參閱 [如何使用Sharepoint](https://www.aem.live/docs/setup-customer-sharepoint)
+* 使用AEM範本設定Edge Delivery Service (EDS) GitHub專案，並在本機電腦上複製對應的GitHub存放庫。 若需要詳細資訊，請參閱[開發人員教學課程](https://www.aem.live/developer/tutorial)。在本文件中，Edge Delivery Service (EDS) 專案的本機資料夾稱為 `[EDS Project repository]`。
+* 確保您可以存取 Google Sheets 或 Microsoft SharePoint。若要將Microsoft SharePoint設定為您的內容來源，請參閱 [如何使用Sharepoint](https://www.aem.live/docs/setup-customer-sharepoint)
 
 
 
@@ -38,7 +38,7 @@ AEM Forms Edge Delivery提供最適化表單區塊，協助您輕鬆建立表單
 
 此Adaptive可讓使用者為Edge Delivery Service網站建立表單。 不過，此區塊不包含在預設的AEM樣板中（用來建立Edge Delivery Service專案）。 若要將最適化表單區塊無縫整合至您的Edge Delivery Service專案：
 
-1. **複製最適化表單區塊存放庫**：原地複製 [最適化表單區塊存放庫](https://github.com/adobe/afb) 本機電腦上。 它包含在EDS網頁上轉譯表單的程式碼。 在本檔案中，您的Forms Block存放庫的本機資料夾稱為 `[Adaptive Form Block repository]`.
+1. **複製最適化表單區塊存放庫**：原地複製 [最適化表單區塊存放庫](https://github.com/adobe/afb) 本機電腦上。 它包含會在 EDS 網頁上呈現表單的程式碼。在本文件中，Form 區塊存放庫的本機資料夾稱為 `[Adaptive Form Block repository]`。
 1. **找到最適化表單區塊存放庫：** 存取 [最適化表單區塊存放庫]/blocks資料夾並複製 `form` 資料夾。
 1. **將最適化表單區塊貼入您的EDS專案：**
 導覽至 [EDS專案存放庫]/blocks/資料夾貼上表單資料夾。
@@ -61,7 +61,7 @@ AEM Forms Edge Delivery提供最適化表單區塊，協助您輕鬆建立表單
 
 +++
 
-+++ 步驟2：使用Microsoft Excel或Google工作表製作表單。
++++ 步驟 2：使用 Microsoft Excel 或 Google Sheet 製作表單。
 
 您可以使用試算表輕鬆完成表單的製作作業，而不需透過複雜的程式進行瀏覽。 首先，您可以將列和欄標題新增至試算表，其中每一列代表一個表單欄位，而每一欄標題則定義對應欄位的屬性。
 
@@ -110,7 +110,7 @@ AEM Forms Edge Delivery提供最適化表單區塊，協助您輕鬆建立表單
 
 +++
 
-+++ 步驟3：使用Edge Delivery Service (EDS)頁面預覽表單。
++++ 步驟 3：使用 Edge Delivery Service (EDS) 頁面預覽表單。
 
 
 到目前為止，您已經將最適化表單區塊新增到您的EDS專案，並準備了表單的結構。 現在，若要預覽表單：
@@ -149,7 +149,7 @@ AEM Forms Edge Delivery提供最適化表單區塊，協助您輕鬆建立表單
 
 ## 下一步
 
-[準備您的試算表](/help/edge/docs/forms/submit-forms.md) 以在表單提交時開始接受資料。
+[準備您的試算表](/help/edge/docs/forms/submit-forms.md) 以在提交表單後開始接受資料。
 
 
 
