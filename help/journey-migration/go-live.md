@@ -2,9 +2,9 @@
 title: 入門
 description: 瞭解在程式碼和內容準備就緒後，如何執行移轉
 exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
-source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
+source-git-commit: 8baea95d57ce1e92e0e7083c161c9fee395fcb8e
 workflow-type: tm+mt
-source-wordcount: '1721'
+source-wordcount: '1771'
 ht-degree: 4%
 
 ---
@@ -156,6 +156,9 @@ ht-degree: 4%
    * 開發環境與中繼和生產環境的大小不同。
 * 請剪下資料，並確定實際上線是在沒有任何新部署或內容更新的情況下執行的。
 * 建立Admin Console使用者通知設定檔。 另請參閱 [通知設定檔](/help/journey-onboarding/notification-profiles.md)
+* 請考慮設定流量篩選規則來控制網站上不應允許哪些流量。
+   * 速率限制流量篩選規則是抵禦DDoS攻擊的有效工具。 流量篩選規則的一種特殊類別（稱為WAF規則）需要單獨的授權。
+   * 請參閱檔案以瞭解部分 [建議的入門者規則](/help/security/traffic-filter-rules-including-waf.md#recommended-starter-rules).
 
 您一律可以參考清單，以備在執行移轉時需重新校準工作時使用。
 

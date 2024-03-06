@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service 中的維護任務
 description: 瞭解AEMas a Cloud Service中的維護任務以及如何進行設定。
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
-source-git-commit: af690ee4c1c0c13bffa179c68423993361385a45
+source-git-commit: 4ac5ec2a2b8da90820734e4fc06c084c810c0724
 workflow-type: tm+mt
-source-wordcount: '1123'
+source-wordcount: '1129'
 ht-degree: 12%
 
 ---
@@ -44,7 +44,7 @@ ht-degree: 12%
   <tr>
     <td>版本清除</td>
     <td>Adobe</td>
-    <td>若為現有環境（2024年3月11日之前建立的環境），永久刪除功能會停用，且未來將不會啟用，除非客戶明確啟用，且客戶屆時也可使用自訂值加以設定。<br><br> <!--Alexandru: leave the two line breaks in place, otherwise spacing won't render properly-->新環境（自2024年3月11日起建立的環境）預設會啟用永久刪除，使用下列值，客戶可設定自訂值。
+    <td>對於現有環境（在2024年4月15日之前建立的環境），永久刪除功能已停用，且未來將啟用，預設為7年；客戶將可使用較低的自訂值（例如30天）進行設定。<br><br> <!--Alexandru: leave the two line breaks in place, otherwise spacing won't render properly-->新環境（自2024年4月15日起建立的環境）預設會啟用永久刪除，使用下列值，客戶可設定自訂值。
      <ol>
        <li>超過30天的版本會被移除</li>
        <li>會保留過去30天內最新的5個版本</li>
@@ -56,7 +56,7 @@ ht-degree: 12%
   <tr>
     <td>稽核記錄清除</td>
     <td>Adobe</td>
-    <td>若為現有環境（2024年3月11日之前建立的環境），永久刪除功能會停用，且未來將不會啟用，除非客戶明確啟用，且客戶屆時也可使用自訂值加以設定。<br><br> <!-- See above for the two line breaks -->新環境（自2024年3月起建立的環境）的底下預設會啟用清除 <code>/content</code> 存放庫節點中的屬性(S)：
+    <td>對於現有環境（在2024年4月15日之前建立的環境），永久刪除功能已停用，且未來將啟用，預設為7年；客戶將可使用較低的自訂值（例如30天）進行設定。<br><br> <!-- See above for the two line breaks -->新環境（自2024年4月起建立的環境）將預設啟用「 」下的清除 <code>/content</code> 存放庫節點中的屬性(S)：
      <ol>
        <li>針對復寫稽核，會移除超過3天的稽核記錄</li>
        <li>針對DAM (Assets)稽核，將移除超過30天的稽核記錄</li>
