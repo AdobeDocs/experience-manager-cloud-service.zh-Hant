@@ -1,11 +1,11 @@
 ---
 title: Java&trade; 功能測試
 description: 了解如何針對 AEM as a Cloud Service 編寫 Java&trade; 功能測試。
-exl-id: e449a62a-c8ad-4d39-a170-abacdda3f1b1
-source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
-workflow-type: ht
-source-wordcount: '844'
-ht-degree: 100%
+exl-id: e014b8ad-ac9f-446c-bee8-adf05a6b4d70
+source-git-commit: e463979df1f705283f29d954f9869d85f0a96465
+workflow-type: tm+mt
+source-wordcount: '877'
+ht-degree: 92%
 
 ---
 
@@ -111,6 +111,25 @@ Adobe 用於編寫產品功能測試的工具也可用於編寫您的自訂功�
 >
 > 如果您需要更多資源，請建立客戶服務案例並描述您的使用案例。Adobe 團隊會檢閱您的要求並提供適當的幫助。
 
+#### 相依性
+
+* aem-cloud-testing-clients：
+
+用於執行功能測試的容器化基礎架構即將發生的變更將要求資料庫 [aem-cloud-testing-clients](https://github.com/adobe/aem-testing-clients) 用於自訂功能測試，至少更新為版本 **1.2.1**
+確定您的相依性在 `it.tests/pom.xml` 已更新。
+
+```
+<dependency>
+   <groupId>com.adobe.cq</groupId>
+   <artifactId>aem-cloud-testing-clients</artifactId>
+   <version>1.2.1</version>
+</dependency>
+```
+
+>[!NOTE]
+>
+>2024年4月6日之後需要此變更。
+>如果未更新相依性程式庫，將會在「自訂功能測試」步驟導致管道失敗。
 
 ### 本機測試執行 {#local-test-execution}
 
@@ -153,3 +172,4 @@ mvn verify -Plocal \
     -Dit.publish.user=<user> \
     -Dit.publish.password=<password>
 ```
+
