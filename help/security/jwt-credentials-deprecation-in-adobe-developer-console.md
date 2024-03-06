@@ -1,10 +1,10 @@
 ---
 title: Adobe Developer Console 中的 JWT 憑證已被取代
 description: 了解 Adobe Developer Console 中已取代 JWT 憑證對 AEM 的影響
-source-git-commit: a354786f1ddfe50b01def85d3c83da09c6a35d2f
+source-git-commit: b684d39d53b1895b8e20e5c6aca084033cfcf4b9
 workflow-type: tm+mt
-source-wordcount: '558'
-ht-degree: 86%
+source-wordcount: '555'
+ht-degree: 87%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 86%
 
 >[!NOTE]
 >
->AEM as a Cloud Service客戶應參考 [本文](https://experienceleague.adobe.com/docs/experience-manager-65/content/security/jwt-credentials-deprecation-in-adobe-developer-console.html) 以取得詳細資訊。
+>AEM 6.5客戶應參考 [本文](https://experienceleague.adobe.com/docs/experience-manager-65/content/security/jwt-credentials-deprecation-in-adobe-developer-console.html) 以取得詳細資訊。
 
 Adobe 客戶使用 [Adobe Developer Console](https://developer.adobe.com/console) 來產生可存取各種 API 的憑證。客戶可以選擇各種憑證類型，包括 OAuth 伺服器到伺服器和單頁應用程式。其中一種憑證類型 (服務帳戶 (JWT) 憑證) 已被已取代，取而代之的是 OAuth 伺服器到伺服器憑證。2024 年 5 月 1 日或之後無法建立新的服務帳戶 (JWT) 憑證，現有的 JWT 憑證自 2025 年 1 月 1 日起將無法再使用。您可以[閱讀已取代項目的資訊](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/)。
 
