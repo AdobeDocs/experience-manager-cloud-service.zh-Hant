@@ -5,10 +5,10 @@ Keywords: How to generate document?, Generate PDF document, Manipulation PDF doc
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
 feature: Adaptive Forms, APIs
 role: Admin, Developer, User
-source-git-commit: 975f767e75a268a1638227ae20a533f82724c80a
+source-git-commit: 54fa7ae32fa2882d844fd1c0eb0962b6b01885a5
 workflow-type: tm+mt
-source-wordcount: '1429'
-ht-degree: 77%
+source-wordcount: '1452'
+ht-degree: 76%
 
 ---
 
@@ -134,6 +134,10 @@ When such an interactive PDF document is flattened using the Communications APIs
 ### 轉換為 PDF/A 相容文件並進行驗證
 
 您可以使用文件操控 API 將 PDF 文件轉換為 PDF/A 相容文件，並確定 PDF 文件是否 PDF/A 相容。PDF/A是一種用於長期儲存檔案內容的封存格式。 字體內嵌在文件中，檔案未壓縮。因此，PDF/A 文件通常比標準 PDF 文件大。此外，PDF/A 文件不包含音訊和視訊內容。
+
+>[!NOTE]
+>
+> AEM Forms提供多種內建字型，可與PDF檔案緊密整合。 若要檢視支援字型的清單， [按一下這裡](/help/forms/supported-out-of-the-box-fonts.md).
 
 <!-- 
 

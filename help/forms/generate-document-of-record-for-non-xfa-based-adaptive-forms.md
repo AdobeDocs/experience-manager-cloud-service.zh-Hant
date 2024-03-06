@@ -3,9 +3,9 @@ title: 如何產生AEM Forms的記錄檔案(DoR)？
 description: 瞭解如何產生最適化Forms的記錄檔案(DoR)範本。
 feature: Adaptive Forms, Foundation Components
 exl-id: 16d07932-3308-4b62-8fa4-88c4e42ca7b6
-source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
+source-git-commit: 51d72edcde18503e9e4d83eaf51e28658d9ee5e6
 workflow-type: tm+mt
-source-wordcount: '4124'
+source-wordcount: '4170'
 ht-degree: 3%
 
 ---
@@ -345,13 +345,18 @@ When you select a form model, configure Document of Record using options availab
       * **範本**：如果您選擇選取自訂範本，請瀏覽並選取 [!DNL AEM Forms] 伺服器。 如果您想使用尚未在您的 [!DNL AEM Forms] 伺服器，您應該先將XDP上傳至 [!DNL AEM Forms] 伺服器。
       * **輔色**：在檔案或記錄PDF中呈現標頭文字和分隔線的色彩。
       * **字型系列**：記錄檔案PDF中的文字字型系列。
+
+        >[!NOTE]
+        >
+        > AEM Forms提供多種內建字型，可與PDF檔案緊密整合。 若要檢視支援字型的清單， [按一下這裡](/help/forms/supported-out-of-the-box-fonts.md).
+
       * **包含未繫結至資料模型的表單物件**：設定屬性時，記錄檔案中會包含來自結構描述型最適化表單的未繫結欄位。
       * **從記錄檔案中排除隱藏的欄位**：設定屬性可識別從記錄檔案中排除的隱藏欄位。
       * **隱藏面板說明**：設定屬性會從記錄檔案中排除面板/表格的說明。 適用於面板和表格。
 
       ![基本屬性](/help/forms/assets/basicpropertiesdor.png)
 
-   1. **表單欄位屬性**：
+   2. **表單欄位屬性**：
       * **對於核取方塊與選項按鈕元件，僅顯示選取的值**：設定屬性時，只會顯示中核取方塊和選項按鈕的選取值 [!UICONTROL 記錄檔案].
       * **多個值的分隔符號**：您可以選擇任何分隔符號（例如逗號或分行符號）來顯示多個值。
       * **選項對齊方式**：您可以選取所需的對齊方式（水準、垂直、與調適型表單相同），以設定欄位的對齊方式，例如要顯示的核取方塊或選項按鈕 [!UICONTROL 記錄檔案]. 依預設，會為中的欄位設定垂直對齊方式 [!UICONTROL 記錄檔案]. 從設定屬性 [!UICONTROL 表單欄位屬性] 的URL會覆寫 [!UICONTROL 專案對齊方式] 最適化表單上的欄位。 如果是，您選取 [!UICONTROL 與自適應表單相同] 選項，最適化表單製作例項中所設定的對齊方式用於 [!UICONTROL 記錄檔案] 欄位。
@@ -359,7 +364,7 @@ When you select a form model, configure Document of Record using options availab
 
       ![表單欄位屬性](/help/forms/assets/formfieldpropertiesdor.png)
 
-   1. **主版頁面屬性**：
+   3. **主版頁面屬性**：
       * **標誌影像**：您可以選擇使用最適化表單中的標誌影像、從DAM中選擇影像，或從您的電腦上傳影像。
       * **表單標題**：記錄檔案的標題。
       * **頁首文字**：在記錄檔案標題區段顯示的文字。
@@ -476,6 +481,11 @@ XCI檔案可協助您設定檔案的各種屬性。 Formsas a Cloud Service有�
 | config/present/pdf/pdfa/conformance | 指定符合PDF/A規格的等級。 |
 | config/present/pdf/version | 指定要產生的PDF檔案版本 |
 | config/present/pdf/version/map | 指定檔案的回覆字型 |
+
+>[!NOTE]
+>
+> AEM Forms提供多種內建字型，可與PDF檔案緊密整合。 若要檢視支援字型的清單， [按一下這裡](/help/forms/supported-out-of-the-box-fonts.md).
+
 
 ### 在您的Formsas a Cloud Service環境中使用自訂XCI檔案
 

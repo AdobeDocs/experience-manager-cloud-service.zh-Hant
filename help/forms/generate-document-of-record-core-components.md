@@ -3,9 +3,9 @@ title: 如何產生最適化Forms的記錄檔案？
 description: 瞭解如何為最適化Forms核心元件的記錄檔案(DoR)產生範本。
 feature: Adaptive Forms, Core Components
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
-source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
+source-git-commit: 54fa7ae32fa2882d844fd1c0eb0962b6b01885a5
 workflow-type: tm+mt
-source-wordcount: '3108'
+source-wordcount: '3131'
 ht-degree: 1%
 
 ---
@@ -327,6 +327,10 @@ When you select a form model, configure Document of Record using options availab
       * **範本**：如果您想要選取自訂範本，請瀏覽並在上選取XDP [!DNL AEM Forms] 伺服器。 如果您想使用您未提供的範本 [!DNL AEM Forms] 伺服器，您應該先將XDP上傳至 [!DNL AEM Forms] 伺服器。
       * **輔色**：在記錄檔案PDF中呈現標頭文字和分隔線的色彩。
       * **字型系列**：記錄檔案PDF中的文字字型系列。
+
+        >[!NOTE]
+        >
+        > AEM Forms提供多種內建字型，可與PDF檔案緊密整合。 若要檢視支援字型的清單， [按一下這裡](/help/forms/supported-out-of-the-box-fonts.md).
 
       * **包含未繫結至資料模型的表單物件**：設定屬性時，記錄檔案中會包含來自結構描述型最適化表單的未繫結欄位。
 
