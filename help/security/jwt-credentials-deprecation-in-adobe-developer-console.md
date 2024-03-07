@@ -1,13 +1,13 @@
 ---
 title: Adobe Developer Console 中的 JWT 憑證已被取代
 description: 了解 Adobe Developer Console 中已取代 JWT 憑證對 AEM 的影響
-source-git-commit: b684d39d53b1895b8e20e5c6aca084033cfcf4b9
+exl-id: 7c811081-484c-41f7-a289-4e9a10a837b3
+source-git-commit: 62be3c6e98df9002cdfbeef50dd5475c4daa1576
 workflow-type: tm+mt
 source-wordcount: '555'
 ht-degree: 87%
 
 ---
-
 
 # Adobe Developer Console 中的 JWT 憑證已被取代 {#jwt-credentials-deprecation-in-adobe-developer-console}
 
@@ -57,4 +57,3 @@ AEM 客戶使用 AEM Author UI 設定所有與其他 Adobe 解決方案的整合
 當 Cloud Manager 佈建 AEM as a Cloud Service 環境時，它會自動產生具有 JWT 憑證的 Adobe Developer Console 專案。該專案會標記為唯讀，如以下螢幕截圖所示。客戶不能也不應該嘗試將這些專案移轉到 OAuth 伺服器到伺服器憑證; Adobe 會在憑證失效前自行移轉這些專案。
 
 ![自動產生的專案](/help/security/assets/jwt-deprecation-autogen-projects.png)
-
