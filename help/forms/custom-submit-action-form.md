@@ -5,9 +5,9 @@ feature: Adaptive Forms, Foundation Components
 role: User
 level: Intermediate
 exl-id: 77131cc2-9cb1-4a00-bbc4-65b1a66e76f5
-source-git-commit: f419883d0e83b5d711e0f594a8e14a8f2133f4b1
+source-git-commit: ddf9632c0aad1fd5a3c2fb02fe1c9673ae4eb029
 workflow-type: tm+mt
-source-wordcount: '1670'
+source-wordcount: '1669'
 ht-degree: 1%
 
 ---
@@ -73,7 +73,7 @@ for (Map.Entry<String, RequestParameter[]> param : requestParameterMap.entrySet(
 
 將檔案附加至最適化表單時，伺服器會在最適化表單提交後驗證檔案附件，並在下列情況下傳回錯誤訊息：
 
-* 檔案附件包含以(.)開頭的檔案名稱 字元，包含\ / ： * ？ 「 &lt; > | ； % $個字元，或包含保留給Windows作業系統的特殊檔案名稱，例如 `nul`， `prn`， `con`， `lpt`，或 `com`.
+* 檔案附件包含以(.)開頭的檔案名稱 字元，包含\ / ： * ？ 「 &lt; > | ； % $個字元，或包含為Windows作業系統保留的特殊檔案名稱，例如 `nul`， `prn`， `con`， `lpt`，或 `com`.
 
 * 檔案附件的大小為0位元組。
 
@@ -97,7 +97,7 @@ for (Map.Entry<String, RequestParameter[]> param : requestParameterMap.entrySet(
 
 * **addfields.jsp**：此指令碼提供在轉譯期間新增至HTML檔案中的動作欄位。 使用此指令碼，在post.post.jsp.jsp指令碼中新增提交期間所需的隱藏POST引數。
 * **dialog.xml**：此指令碼類似於CQ元件對話方塊。 它提供作者自訂的設定資訊。 當您選取提交動作時，欄位會顯示在「最適化表單編輯」對話方塊的「提交動作」索引標籤中。
-* **post.POST.jsp**：提交servlet會呼叫此指令碼，其中包含您提交的資料以及前幾節中的其他資料。 在此頁面中只要提到要執行動作，就表示要執行post.post.jspPOST檔。 若要向最適化Forms註冊提交動作以顯示最適化表單編輯對話方塊，請將這些屬性新增到Sling:Folder:
+* **post.POST.jsp**：提交servlet會呼叫此指令碼，其中包含您提交的資料以及前幾節中的其他資料。 在此頁面中只要提到要執行動作，就表示要執行post.post.jspPOST檔。 若要向最適化Forms註冊提交動作以顯示最適化表單編輯對話方塊，請將這些屬性新增到 `sling:Folder`：
 
    * **guideComponentType** 字串和值的型別 **fd/af/components/guidesubmittype**
    * **guideDataModel** 字串型別，指定適用於提交動作的最適化表單型別。 <!--**xfa** is supported for XFA-based Adaptive Forms while -->**xsd** 支援XSD式的最適化Forms。 **基本** 不使用XDP或XSD的最適化Forms支援。 若要顯示多種最適化Forms型別的動作，請新增對應的字串。 以逗號分隔每個字串。 例如，若要使動作顯示在 <!--XFA- and -->XSD式最適化Forms，請將值指定為 <!--**xfa** and--> **xsd**.
