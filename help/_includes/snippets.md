@@ -1,8 +1,8 @@
 ---
-source-git-commit: 45b263651f6139b1c7f83ff3485186b272ba1a4f
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
 workflow-type: tm+mt
-source-wordcount: '302'
-ht-degree: 87%
+source-wordcount: '331'
+ht-degree: 99%
 
 ---
 # 代碼片段 {#snippets}
@@ -11,9 +11,9 @@ ht-degree: 87%
 
 [![透過 30 天試用版了解我們的 headless CMS](./assets/aem-headless-trial-promo.png){align="left"}](https://commerce.adobe.com/business-trial/sign-up?items%5B0%5D%5Bid%5D=649A1AF5CBC5467A25E84F2561274821&amp;cli=headless_exl_banner_campaign&amp;co=US&amp;lang=en)
 
-## Edge Delivery Services 編寫 {#edge-delivery-authoring}
+## Edge Delivery Services 製作 {#edge-delivery-authoring}
 
-[!BADGE 若要為 Edge Delivery Services 編寫 AEM 內容，請按一下這裡。]{type=Positive url="/help/edge/overview.md" tooltip="為 Edge Delivery Services 編寫 AEM 內容"}
+[!BADGE 若要為 Edge Delivery Services 製作 AEM 內容，請按一下這裡。]{type=Positive url="/help/edge/overview.md" tooltip="為 Edge Delivery Services 製作 AEM 內容"}
 
 ## Universal Editor 狀態 {#universal-editor-status}
 
@@ -55,8 +55,17 @@ ht-degree: 87%
 * [提交至 Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
 * [提交至 Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
 * [將最適化表單連接到 Salesforce 應用程式](/help/forms/oauth2-client-credentials-flow-for-server-to-server-integration.md)
-* [將最適化表單連接到 Microsoft® Dynamics OData](/help/forms/ms-dynamics-odata-configuration.md)
+* [將最適化表單連接到 Microsoft](/help/forms/ms-dynamics-odata-configuration.md)
 
-## 具有Edge Delivery Services早期存取權的AEM製作 {#aem-authoring-edge-early-access}
+## 使用 Edge Delivery Services 進行 AEM 製作搶先體驗 {#aem-authoring-edge-early-access}
 
-[!BADGE 搶先體驗技術 — 從您Slack頻道上的AEM Sites實驗室詢問關於此功能的問題！]{type=Informative url="/help/edge/docs/slack.md" tooltip="使用Edge Delivery Services進行AEM製作是一項搶先使用的技術。"}
+[!BADGE 搶先體驗技術 - 在 Slack 頻道上的 AEM Sites 實驗室向我們洽詢這項功能！]{type=Informative url="/help/edge/docs/slack.md" tooltip="使用 Edge Delivery Services 進行 AEM 製作是一項搶先體驗技術。"}
+
+## 另請參閱 {#see-also-forms-eds}
+
+* [表單元件](/help/edge/docs/forms/form-components.md)
+* [建立並預覽表單](/help/edge/docs/forms/create-forms.md)
+* [啟用表單來傳送資料](/help/edge/docs/forms/submit-forms.md)
+* [將表單發佈到網站頁面](/help/edge/docs/forms/publish-forms.md)
+* [新增驗證至表單欄位](/help/edge/docs/forms/validate-forms.md)
+* [改變主題和樣式風格](/help/edge/docs/forms/style-theme-forms.md)

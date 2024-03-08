@@ -4,13 +4,13 @@ description: 使用試算表和最適化表單區塊欄位，更快製作強大�
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: fd2e5df72e965ea6f9ad09b37983f815954f915c
+exl-id: 16e1d42a-42d0-4335-ba81-feedea7ed7d7
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
 workflow-type: tm+mt
-source-wordcount: '266'
-ht-degree: 82%
+source-wordcount: '237'
+ht-degree: 80%
 
 ---
-
 
 # 新增驗證至表單欄位
 
@@ -29,10 +29,4 @@ URL：此欄位類型根據有效的 URL 格式驗證使用者輸入。輸入無
 電話：此欄位類型專為電話號碼而設計，可能會觸發系統根據特定國家/地區格式進行驗證 (未受到普遍支援)。
 
 
-## 了解更多
 
-* [建立並預覽表單](/help/edge/docs/forms/create-forms.md)
-* [啟用表單來傳送資料](/help/edge/docs/forms/submit-forms.md)
-* [將表單發佈到網站頁面](/help/edge/docs/forms/publish-forms.md)
-* [新增驗證至表單欄位](/help/edge/docs/forms/validate-forms.md)
-* [改變主題和樣式風格](/help/edge/docs/forms/style-theme-forms.md)

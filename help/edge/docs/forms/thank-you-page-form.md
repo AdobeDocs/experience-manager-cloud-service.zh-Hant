@@ -4,13 +4,13 @@ description: 瞭解如何為Forms Block設定感謝頁面和重新導向，以�
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: fd2e5df72e965ea6f9ad09b37983f815954f915c
+exl-id: e6c66b22-dc52-49e3-a920-059adb5be22f
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
 workflow-type: tm+mt
 source-wordcount: '608'
 ht-degree: 5%
 
 ---
-
 
 # 提交後顯示感謝頁面或重新導向表單
 
@@ -63,9 +63,9 @@ ht-degree: 5%
 
    >[!NOTE]
    >
-   > 在Microsoft SharePoint或Google Workspace上，確定您的Edge Delivery Service專案資料夾中存在同名頁面。 如果頁面不存在，請繼續建立並發佈。
+   > 在Microsoft SharePoint或Google Workspace上，確認Edge Delivery Services專案資料夾中存在相同名稱的頁面。 如果頁面不存在，請繼續建立並發佈。
 
-1. 繼續將更新的「form.js」資料夾及其基礎檔案簽入GitHub上的Edge Delivery Service專案。 此更新可確保表單現在會依指定重新導向至更新的頁面。
+1. 繼續將更新的「form.js」資料夾及其基礎檔案簽入GitHub上的Edge Delivery Services專案。 此更新可確保表單現在會依指定重新導向至更新的頁面。
 
 1. 確定頁面存在於您的EDS專案資料夾中並加以發佈。
 

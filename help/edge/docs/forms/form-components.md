@@ -4,17 +4,17 @@ description: 本檔案概述AEM Forms Edge Delivery Service中可用的表單元
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: fd2e5df72e965ea6f9ad09b37983f815954f915c
+exl-id: 7d087d41-9313-482a-a905-8955b0999781
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
 workflow-type: tm+mt
-source-wordcount: '965'
+source-wordcount: '964'
 ht-degree: 6%
 
 ---
 
-
 # 表單元件和屬性： AEM Forms Edge Delivery Service
 
-AEM Forms Edge Delivery Service可讓您使用各種元件建立好記且互動式的表單。 這些元件適用於不同型別的資料收集，並可輕鬆自訂以符合您的特定需求。
+AEM Forms Edge Delivery Services可讓您使用各種元件建立好記且互動式的表單。 這些元件適用於不同型別的資料收集，並可輕鬆自訂以符合您的特定需求。
 
 
 ![包含某些元件和屬性的試算表範例](/help/edge/assets/sample-form-in-spreadsheet.png)

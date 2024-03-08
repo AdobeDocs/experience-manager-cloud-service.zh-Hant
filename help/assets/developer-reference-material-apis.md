@@ -5,7 +5,7 @@ contentOwner: AG
 feature: APIs,Assets HTTP API
 role: Developer,Architect,Admin
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: 5acbd7a56f18ee4c3d8b8f04ab17ad44fe6f0647
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
 workflow-type: tm+mt
 source-wordcount: '1931'
 ht-degree: 7%
@@ -28,7 +28,7 @@ ht-degree: 7%
 | ------------- | --------------------------- |
 | ✓ | 支援 |
 | × | 不支援。 請勿使用。 |
-| - | 不可用 |
+| - | 無法使用 |
 
 | 使用案例 | [aem-upload](https://github.com/adobe/aem-upload) | [Experience Manager / Sling / JCR](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html) Java API | [asset compute服務](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html) | [[!DNL Assets] HTTP API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html#create-an-asset) | Sling [GET](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) / [POST](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html) servlet | [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) |
 | ----------------|:---:|:---:|:---:|:---:|:---:|:---:|
@@ -76,7 +76,7 @@ ht-degree: 7%
 
 >[!IMPORTANT]
 >
-在外部應用程式中而不是在 [!DNL Experience Manager] JVM。
+>在外部應用程式中而不是在 [!DNL Experience Manager] JVM。
 
 方法提供可擴充且效能更高的資產上傳處理方式。 相較於以下的差異： [!DNL Experience Manager] 6.5為：
 
@@ -85,11 +85,11 @@ ht-degree: 7%
 
 >[!NOTE]
 >
-請參閱使用者端代碼，以在開放原始碼中實施此方法 [aem-upload資料庫](https://github.com/adobe/aem-upload).
+>請參閱使用者端代碼，以在開放原始碼中實施此方法 [aem-upload資料庫](https://github.com/adobe/aem-upload).
 >
-[!IMPORTANT]
+>[!IMPORTANT]
 >
-在某些情況下，由於Experience Manager中儲存的最終一致性性質，變更可能不會在Cloud Service請求之間完全傳播。 這會導致404個起始或完成上傳呼叫的回應，因為必要的資料夾建立未傳播。 使用者端應該會收到404個回應，並透過實作附有後退策略的重試來處理這些回應。
+>在某些情況下，由於Experience Manager中儲存的最終一致性性質，變更可能不會在Cloud Service請求之間完全傳播。 這會導致404個起始或完成上傳呼叫的回應，因為必要的資料夾建立未傳播。 使用者端應該會收到404個回應，並透過實作附有後退策略的重試來處理這些回應。
 
 ### 啟動上傳 {#initiate-upload}
 
@@ -159,7 +159,7 @@ CDN邊緣節點有助於加速要求的二進位檔上傳。
 
 >[!NOTE]
 >
-如需上傳演演算法的詳細資訊，請參閱 [正式功能檔案](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html#Upload) 和 [API檔案](https://jackrabbit.apache.org/oak/docs/apidocs/org/apache/jackrabbit/api/binary/BinaryUpload.html) Apache Jackrabbit Oak專案中的。
+>如需上傳演演算法的詳細資訊，請參閱 [正式功能檔案](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html#Upload) 和 [API檔案](https://jackrabbit.apache.org/oak/docs/apidocs/org/apache/jackrabbit/api/binary/BinaryUpload.html) Apache Jackrabbit Oak專案中的。
 
 ### 完成上傳 {#complete-upload}
 
@@ -179,7 +179,7 @@ CDN邊緣節點有助於加速要求的二進位檔上傳。
 
 >[!NOTE]
 >
-如果資產存在，但兩者皆非 `createVersion` 也不 `replace` 已指定，則 [!DNL Experience Manager] 以新的二進位檔案更新資產的目前版本。
+>如果資產存在，但兩者皆非 `createVersion` 也不 `replace` 已指定，則 [!DNL Experience Manager] 以新的二進位檔案更新資產的目前版本。
 
 如同起始程式，完整的請求資料可能包含多個檔案的資訊。
 
@@ -215,7 +215,7 @@ function debug() {
 }
 
 # Function to check if a file exists
-function file_exists() {
+function file_exists () {
     [ -e "$1" ]
 }
 
@@ -431,7 +431,7 @@ echo "File upload completed successfully."
 
 >[!NOTE]
 >
-aem-upload程式庫和命令列工具都會使用 [node-httptransfer程式庫](https://github.com/adobe/node-httptransfer/)
+>aem-upload程式庫和命令列工具都會使用 [node-httptransfer程式庫](https://github.com/adobe/node-httptransfer/)
 
 ### 已棄用的資產上傳API {#deprecated-asset-upload-api}
 
@@ -444,9 +444,9 @@ aem-upload程式庫和命令列工具都會使用 [node-httptransfer程式庫](h
 
 >[!MORELIKETHIS]
 >
-* [開放原始碼aem-upload資料庫](https://github.com/adobe/aem-upload).
-* [開放原始碼命令列工具](https://github.com/adobe/aio-cli-plugin-aem).
-* [直接上傳的Apache Jackrabbit Oak檔案](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html#Upload).
+>* [開放原始碼aem-upload資料庫](https://github.com/adobe/aem-upload).
+>* [開放原始碼命令列工具](https://github.com/adobe/aio-cli-plugin-aem).
+>* [直接上傳的Apache Jackrabbit Oak檔案](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html#Upload).
 
 ## 資產處理和後續處理工作流程 {#post-processing-workflows}
 
@@ -551,4 +551,4 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 
 >[!MORELIKETHIS]
 >
-* [[!DNL Experience Cloud] as a [!DNL Cloud Service] SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md).
+>* [[!DNL Experience Cloud] as a [!DNL Cloud Service] SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md).

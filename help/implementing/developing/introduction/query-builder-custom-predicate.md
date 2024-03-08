@@ -2,9 +2,9 @@
 title: 為查詢產生器實作自訂述詞求值器
 description: AEM中的查詢產生器提供簡單且可自訂的方式來查詢內容存放庫
 exl-id: 8c2f8c22-1851-4313-a1c9-10d6d9b65824
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
 workflow-type: tm+mt
-source-wordcount: '667'
+source-wordcount: '627'
 ht-degree: 0%
 
 ---
@@ -157,7 +157,7 @@ replic.action=Activate
    >
    >的名稱 `PredicateEvaluator` 是建立查詢時使用的述詞名稱。
 
-1. 覆寫:
+1. 覆寫：
 
    ```java
    public String getXPathExpression(Predicate predicate, EvaluationContext context)
@@ -216,7 +216,7 @@ public class ReplicationPredicateEvaluator extends AbstractPredicateEvaluator {
     static final String PREDICATE_SINCE_OP = " >= ";
     static final String PREDICATE_ACTION = "action";
 
-    Logger log = LoggerFactory.getLogger(getClass());
+    Logger log = LoggerFactory.getLogger(getClass ());
 
     /**
      * Returns a XPath expression filtering by replication metadata.

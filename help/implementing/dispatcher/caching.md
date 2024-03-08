@@ -3,7 +3,7 @@ title: AEM as a Cloud Service 中的快取
 description: 瞭解AEMas a Cloud Service快取的基本概念
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: 28537409c5974ff8ade30207f16cc62b45c47616
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
 workflow-type: tm+mt
 source-wordcount: '2894'
 ht-degree: 1%
@@ -301,7 +301,7 @@ Adobe建議您仰賴標準快取標頭來控制內容傳送生命週期。 不�
 <table style="table-layout:auto">
  <tbody>
   <tr>
-    <th>N/A</th>
+    <th>不適用</th>
     <th>階層可用性</th>
     <th>去重複化 </th>
     <th>保證 </th>
@@ -434,7 +434,7 @@ public class InvalidatedHandler implements EventHandler {
 
         String distributionType = (String) event.getProperty(DISTRIBUTION_TYPE);
 
-        if (INVALIDATE.name().equals(distributionType)) {
+        if (INVALIDATE.name().equals (distributionType)) {
             boolean isLeader = discoveryService.getTopology().getLocalInstance().isLeader();
             // process the OSGi event on the leader author instance
             if (isLeader) {
@@ -472,11 +472,11 @@ public class InvalidatedHandler implements EventHandler {
 
 ```
 String[] paths = …
-ReplicationOptions options = new ReplicationOptions();
-options.setSynchronous(true);
+ReplicationOptions options = new ReplicationOptions ();
+options.setSynchronous (true);
 options.setFilter( new AgentFilter {
   public boolean isIncluded (Agent agent) {
-   return agent.getId().equals("flush");
+   return agent.getId().equals ("flush");
   }
 });
 

@@ -2,9 +2,9 @@
 title: 自訂程式碼品質規則
 description: 本頁說明了 Cloud Manager 在程式碼品質測試過程中執行的自訂程式碼品質規則。它們是根據 Adobe Experience Manager Engineering 的最佳實務。
 exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
 workflow-type: tm+mt
-source-wordcount: '4095'
+source-wordcount: '4167'
 ht-degree: 87%
 
 ---
@@ -101,7 +101,7 @@ public class DoThis implements Runnable {
 protected void doPost(SlingHttpServletRequest request, SlingHttpServletResponse response) {
   String messageFormat = request.getParameter("messageFormat");
   request.getResource().getValueMap().put("some property", String.format(messageFormat, "some text"));
-  response.sendStatus(HttpServletResponse.SC_OK);
+  response.sendStatus (HttpServletResponse.SC_OK);
 }
 ```
 
@@ -120,7 +120,7 @@ protected void doPost(SlingHttpServletRequest request, SlingHttpServletResponse 
 @Reference
 private HttpClientBuilderFactory httpClientBuilderFactory;
  
-public void dontDoThis() {
+public void dontDoThis () {
   HttpClientBuilder builder = httpClientBuilderFactory.newBuilder();
   HttpClient httpClient = builder.build();
 
@@ -149,7 +149,7 @@ public void dontDoThisEither() {
 @Reference
 private HttpClientBuilderFactory httpClientBuilderFactory;
  
-public void doThis() {
+public void doThis () {
   HttpClientBuilder builder = httpClientBuilderFactory.newBuilder();
   RequestConfig requestConfig = RequestConfig.custom()
     .setConnectTimeout(5000)
@@ -162,7 +162,7 @@ public void doThis() {
   // do something with the client
 }
 
-public void orDoThis() {
+public void orDoThis () {
   URL url = new URL("http://www.google.com");
   URLConnection urlConnection = url.openConnection();
   urlConnection.setConnectTimeout(5000);
@@ -194,7 +194,7 @@ public void orDoThis() {
 #### 不符合規範的程式碼 {#non-compliant-code-4}
 
 ```java
-public void dontDoThis(Session session) throws Exception {
+public void dontDoThis (Session session) throws Exception {
   ResourceResolver resolver = factory.getResourceResolver(Collections.singletonMap("user.jcr.session", (Object)session));
   // do some stuff with the resolver
 }
@@ -203,7 +203,7 @@ public void dontDoThis(Session session) throws Exception {
 #### 符合規範的程式碼 {#compliant-code-2}
 
 ```java
-public void doThis(Session session) throws Exception {
+public void doThis (Session session) throws Exception {
   ResourceResolver resolver = null;
   try {
     resolver = factory.getResourceResolver(Collections.singletonMap("user.jcr.session", (Object)session));
@@ -215,7 +215,7 @@ public void doThis(Session session) throws Exception {
   }
 }
 
-public void orDoThis(Session session) throws Exception {
+public void orDoThis (Session session) throws Exception {
   try (ResourceResolver resolver = factory.getResourceResolver(Collections.singletonMap("user.jcr.session", (Object) session))){
     // do something with the resolver
   }
@@ -254,7 +254,7 @@ public class DontDoThis extends SlingAllMethodsServlet {
 #### 不符合規範的程式碼 {#non-compliant-code-6}
 
 ```java
-public void dontDoThis() throws Exception {
+public void dontDoThis () throws Exception {
   try {
     someOperation();
   } catch (Exception e) {
@@ -267,7 +267,7 @@ public void dontDoThis() throws Exception {
 #### 符合規範的程式碼 {#compliant-code-3}
 
 ```java
-public void doThis() {
+public void doThis () {
   try {
     someOperation();
   } catch (Exception e) {
@@ -275,7 +275,7 @@ public void doThis() {
   }
 }
 
-public void orDoThis() throws MyCustomException {
+public void orDoThis () throws MyCustomException {
   try {
     someOperation();
   } catch (Exception e) {
@@ -296,7 +296,7 @@ public void orDoThis() throws MyCustomException {
 #### 不符合規範的程式碼 {#non-compliant-code-7}
 
 ```java
-public void dontDoThis() throws Exception {
+public void dontDoThis () throws Exception {
   logger.error("something went wrong");
   throw new RuntimeException("something went wrong");
 }
@@ -305,7 +305,7 @@ public void dontDoThis() throws Exception {
 #### 符合規範的程式碼 {#compliant-code-4}
 
 ```java
-public void doThis() throws Exception {
+public void doThis () throws Exception {
   throw new RuntimeException("something went wrong");
 }
 ```
@@ -350,7 +350,7 @@ public void doGet() throws Exception {
 #### 不符合規範的程式碼 {#non-compliant-code-9}
 
 ```java
-public void dontDoThis() {
+public void dontDoThis () {
   try {
     someMethodThrowingAnException();
   } catch (Exception e) {
@@ -362,7 +362,7 @@ public void dontDoThis() {
 #### 符合規範的程式碼 {#compliant-code-6}
 
 ```java
-public void doThis() {
+public void doThis () {
   try {
     someMethodThrowingAnException();
   } catch (Exception e) {
@@ -383,7 +383,7 @@ public void doThis() {
 #### 不符合規範的程式碼 {#non-compliant-code-10}
 
 ```java
-public void dontDoThis() {
+public void dontDoThis () {
   try {
     someMethodThrowingAnException();
   } catch (Exception e) {
@@ -395,7 +395,7 @@ public void dontDoThis() {
 #### 符合規範的程式碼 {#compliant-code-7}
 
 ```java
-public void doThis() {
+public void doThis () {
   try {
     someMethodThrowingAnException();
   } catch (Exception e) {
@@ -416,7 +416,7 @@ public void doThis() {
 #### 不符合規範的程式碼 {#non-compliant-code-11}
 
 ```java
-public void dontDoThis() {
+public void dontDoThis () {
   try {
     someMethodThrowingAnException();
   } catch (Exception e) {
@@ -428,7 +428,7 @@ public void dontDoThis() {
 #### 符合規範的程式碼 {#compliant-code-8}
 
 ```java
-public void doThis() {
+public void doThis () {
   try {
     someMethodThrowingAnException();
   } catch (Exception e) {
@@ -449,7 +449,7 @@ Experience Manager 中的記錄應該始終透過記錄架構 (SLF4J) 完成。�
 #### 不符合規範的程式碼 {#non-compliant-code-12}
 
 ```java
-public void dontDoThis() {
+public void dontDoThis () {
   try {
     someMethodThrowingAnException();
   } catch (Exception e) {
@@ -461,7 +461,7 @@ public void dontDoThis() {
 #### 符合規範的程式碼 {#compliant-code-9}
 
 ```java
-public void doThis() {
+public void doThis () {
   try {
     someMethodThrowingAnException();
   } catch (Exception e) {
@@ -482,7 +482,7 @@ public void doThis() {
 #### 不符合規範的程式碼 {#non-compliant-code-13}
 
 ```java
-public boolean dontDoThis(Resource resource) {
+public boolean dontDoThis (Resource resource) {
   return resource.isResourceType("/libs/foundation/components/text");
 }
 ```
@@ -490,7 +490,7 @@ public boolean dontDoThis(Resource resource) {
 #### 符合規範的程式碼 {#compliant-code-10}
 
 ```java
-public void doThis(Resource resource) {
+public void doThis (Resource resource) {
   return resource.isResourceType("foundation/components/text");
 }
 ```
@@ -524,7 +524,7 @@ Experience Manager API 表面經過不斷修正，以識別不鼓勵使用並因
 * **索引鍵**： InjectAnnotationWithOptionalInjectionCheck
 * **型別**：軟體品質
 * **嚴重度**：輕微
-* **始自**：2023.11 版本
+* **從**：2023.11版
 
 Apache Sling專案不鼓勵使用 `@Inject` Sling模型上下文中的註解，因為它在與 `DefaultInjectionStrategy.OPTIONAL` （在欄位或類別層級）。 而是更具體的注射(例如 `@ValueMapValue` 或 `@OsgiInjector` 註解)。
 
@@ -536,7 +536,7 @@ Apache Sling專案不鼓勵使用 `@Inject` Sling模型上下文中的註解，�
 * **索引鍵**： AEMSRE-870
 * **型別**：軟體品質
 * **嚴重度**：輕微
-* **始自**：2023.11 版本
+* **從**：2023.11版
 
 AEM應用程式經常使用HTTP通訊協定聯絡其他應用程式，而Apache HttpClient則是實現這一目標的常用程式庫。 但是建立這樣的HttpClient物件會產生一些額外負荷，因此這些物件應儘可能重複使用。
 
@@ -986,7 +986,7 @@ Experience Manager as a Cloud Service 禁止自訂搜尋索引定義 (即 `oak:Q
 * **嚴重度**：輕微
 * **始自**：2021.2.0 版本
 
-Experience Manager as a Cloud Service 禁止自訂搜尋索引定義 (即 `oak:QueryIndexDefinition` 類型的節點) 包含名為 `reindex` 的屬性。在移轉到 Experience Manager as a Cloud Service 之前，必須更新使用此屬性的索引。如需詳細資訊，請參閱[內容搜尋和索引](/help/operations/indexing.md#how-to-use)文件。
+Experience Manager as a Cloud Service 禁止自訂搜尋索引定義 (即 `oak:QueryIndexDefinition` 類型的節點) 包含名為 `reindex` 的屬性。在移轉到Experience Manageras a Cloud Service之前，必須更新使用此屬性的索引。 如需詳細資訊，請參閱[內容搜尋和索引](/help/operations/indexing.md#how-to-use)文件。
 
 ### 自訂DAM資產lucene節點不得指定「queryPaths」 {#oakpal-damAssetLucene-queryPaths}
 

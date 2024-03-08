@@ -2,7 +2,7 @@
 title: 為 Screens as a Cloud Service 開發自訂元件
 description: 下列教學課程將逐步說明為AEM Screens建立自訂元件的步驟。 AEM Screens會重複使用其他AEM產品的許多現有設計模式與技術。 本教學課程著重說明針對AEM Screens進行開發時的差異和特殊考量事項。
 exl-id: fe8e7bf2-6828-4a5a-b650-fb3d9c172b97
-source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
 workflow-type: tm+mt
 source-wordcount: '2042'
 ht-degree: 2%
@@ -368,7 +368,7 @@ AEM Screens元件在編輯模式與預覽/生產模式中的轉譯方式不同�
 
 第三種clientlibrary類別： `cq.screens.components.edit` 可用來將僅限編輯的特定樣式新增至元件。
 
-| Clientlib類別 | 使用狀況 |
+| Clientlib類別 | 使用情況 |
 |---|---|
 | `cq.screens.components` | 在編輯和生產模式之間共用的樣式和指令碼 |
 | `cq.screens.components.edit` | 僅用於編輯模式的樣式和指令碼 |
@@ -478,7 +478,7 @@ public class MyCustomHandler extends AbstractResourceHandler {
   */
  @Nonnull
  @Override
- public String[] getSupportedResourceTypes() {
+ public String[] getSupportedResourceTypes () {
      return new String[] { … };
  }
 

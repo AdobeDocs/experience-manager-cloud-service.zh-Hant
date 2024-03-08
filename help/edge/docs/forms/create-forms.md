@@ -4,13 +4,13 @@ description: 快速製作完美表單！⚡ AEM Forms Edge Delivery 文件型製
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: fd2e5df72e965ea6f9ad09b37983f815954f915c
+exl-id: 0cf881a2-3784-45eb-afe8-3435e5e95cf4
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
 workflow-type: tm+mt
-source-wordcount: '1150'
-ht-degree: 26%
+source-wordcount: '1165'
+ht-degree: 20%
 
 ---
-
 
 # 使用最適化表單區塊建立表單
 
@@ -27,24 +27,26 @@ AEM Forms Edge Delivery提供最適化表單區塊，協助您輕鬆建立表單
 
 在開始之前，請確保您已完成以下步驟：
 
-* 使用AEM範本設定Edge Delivery Service (EDS) GitHub專案，並在本機電腦上複製對應的GitHub存放庫。 若需要詳細資訊，請參閱[開發人員教學課程](https://www.aem.live/developer/tutorial)。在本文件中，Edge Delivery Service (EDS) 專案的本機資料夾稱為 `[EDS Project repository]`。
+* 使用AEM範本設定Edge Delivery Services (EDS) GitHub專案，並在本機電腦上複製對應的GitHub存放庫。 若需要詳細資訊，請參閱[開發人員教學課程](https://www.aem.live/developer/tutorial)。在本檔案中，您的Edge Delivery Services(EDS)專案的本機資料夾稱為 `[EDS Project repository]` .
 * 確保您可以存取 Google Sheets 或 Microsoft SharePoint。若要將Microsoft SharePoint設定為您的內容來源，請參閱 [如何使用Sharepoint](https://www.aem.live/docs/setup-customer-sharepoint)
 
 
 
 ## 建立表單
 
-+++ 步驟1：將最適化表單區塊新增至您的Edge Delivery Service (EDS)專案。
++++ 步驟1：將最適化表單區塊新增至您的Edge Delivery Services (EDS)專案。
 
-此Adaptive可讓使用者為Edge Delivery Service網站建立表單。 不過，此區塊不包含在預設的AEM樣板中（用來建立Edge Delivery Service專案）。 若要將最適化表單區塊無縫整合至您的Edge Delivery Service專案：
+最適化可讓使用者為Edge Delivery ServicesSite建立表單。 不過，此區塊不包含在預設的AEM樣板中(用來建立Edge Delivery Services專案)。 若要將最適化表單區塊無縫整合至您的Edge Delivery Services專案：
 
-1. **複製最適化表單區塊存放庫**：原地複製 [最適化表單區塊存放庫](https://github.com/adobe/afb) 本機電腦上。 它包含會在 EDS 網頁上呈現表單的程式碼。在本文件中，Form 區塊存放庫的本機資料夾稱為 `[Adaptive Form Block repository]`。
-1. **找到最適化表單區塊存放庫：** 存取 [最適化表單區塊存放庫]/blocks資料夾並複製 `form` 資料夾。
-1. **將最適化表單區塊貼入您的EDS專案：**
-導覽至 [EDS專案存放庫]/blocks/資料夾貼上表單資料夾。
-1. **將變更提交至GitHub：** 將表單資料夾及其基礎檔案簽入至GitHub上的邊緣傳遞服務專案。
+1. **複製最適化表單區塊存放庫**：原地複製 [最適化表單區塊存放庫](https://github.com/adobe-rnd/form-block) 本機電腦上。 它包含會在 EDS 網頁上呈現表單的程式碼。在本文件中，Form 區塊存放庫的本機資料夾稱為 `[Adaptive Form Block repository]`。
+1. **找到最適化表單區塊存放庫：** 存取 [最適化表單區塊存放庫]/blocks/src資料夾並複製其內容。
 
-完成這些步驟後，最適化表單區塊已成功新增到GitHub上的邊緣傳遞服務(EDS)專案存放庫。 您現在可以建立表單並新增至EDS Sites頁面。
+1. 並複製 `form` 資料夾。
+1. **將最適化表單區塊的程式碼貼入您的EDS專案：**
+導覽至 [EDS專案存放庫]/blocks/資料夾建立一個&#39;form&#39;資料夾。 貼上 `[Adaptive Form Block repository]/blocks/src content`，在上一個步驟中複製到 `[EDS Project repository]/blocks/form` 資料夾。
+1. **將變更提交至GitHub：** 存回 `[EDS Project repository]/blocks/form` 資料夾及其基礎檔案新增至GitHub上的Edge Delivery Services專案。
+
+完成這些步驟後，最適化表單區塊已成功新增到GitHub上的您的Edge Delivery Services (EDS)專案存放庫。 您現在可以建立表單並新增至EDS Sites頁面。
 
 
 **疑難排解GitHub建置問題**
@@ -57,13 +59,11 @@ AEM Forms Edge Delivery提供最適化表單區塊，協助您輕鬆建立表單
 * **處理Linting錯誤：**
 如果您遇到任何連結錯誤，可以略過這些錯誤。 開啟 [EDS專案]/package.json檔案並將「lint」指令碼從「lint」：「npm run lint：js &amp;&amp; npm run lint：css」修改為「lint」：「echo &#39;skipping linting for now&#39;」。 儲存檔案並將變更提交至您的GitHub專案。
 
-
-
 +++
 
 +++ 步驟 2：使用 Microsoft Excel 或 Google Sheet 製作表單。
 
-您可以使用試算表輕鬆完成表單的製作作業，而不需透過複雜的程式進行瀏覽。 首先，您可以將列和欄標題新增至試算表，其中每一列代表一個表單欄位，而每一欄標題則定義對應欄位的屬性。
+您可以使用試算表輕鬆完成表單的製作作業，而不需透過複雜的程式進行瀏覽。 您可以定義組成表單結構的列和欄。 每一列代表個人 [表單欄位](/help/edge/docs/forms/form-components.md#available-components) 而欄標題則會定義對應的 [欄位屬性](/help/edge/docs/forms/form-components.md#components-properties).
 
 例如，考慮下列試算表，其中的列大綱欄位用於 `enquiry` 表單和欄標題定義其屬性：
 
@@ -96,7 +96,7 @@ AEM Forms Edge Delivery提供最適化表單區塊，協助您輕鬆建立表單
 
 
    ```JSON
-       https://<branch>--<repository>--<owner>.hlx.live/<form>.json
+       https://<branch>--<repository>--<owner>.hlx.live/<form-path>/<form-file-name>.json
    ```
 
    * `<branch>` 是指GitHub存放庫的分支。
@@ -110,7 +110,7 @@ AEM Forms Edge Delivery提供最適化表單區塊，協助您輕鬆建立表單
 
 +++
 
-+++ 步驟 3：使用 Edge Delivery Service (EDS) 頁面預覽表單。
++++ 步驟3：使用您的Edge Delivery Services(EDS)頁面預覽表單。
 
 
 到目前為止，您已經將最適化表單區塊新增到您的EDS專案，並準備了表單的結構。 現在，若要預覽表單：
@@ -121,7 +121,7 @@ AEM Forms Edge Delivery提供最適化表單區塊，協助您輕鬆建立表單
 
 1. **導覽至所需位置：** 移至檔案中您想要新增表單的位置。
 
-1. **新增最適化表單區塊：** 將名為&#39;Form&#39;的區塊插入檔案中，如下圖所示：
+1. **新增最適化表單區塊：** 建立表單區塊以轉譯表單。 選取「插入」>「表格」，然後建立一欄、兩清單格。 將表格命名為「Form」，並將預覽URL貼到第二列。 請確定URL的格式為超連結，而非純文字，如下圖所示：
 
    | 表單 |
    |---|
@@ -153,12 +153,4 @@ AEM Forms Edge Delivery提供最適化表單區塊，協助您輕鬆建立表單
 
 
 
-## 了解更多
 
-* [表單元件](/help/edge/docs/forms/form-components.md)
-* [表單欄位屬性](/help/edge/docs/forms/eds-form-field-properties)
-* [建立並預覽表單](/help/edge/docs/forms/create-forms.md)
-* [啟用表單來傳送資料](/help/edge/docs/forms/submit-forms.md)
-* [將表單發佈到網站頁面](/help/edge/docs/forms/publish-forms.md)
-* [新增驗證至表單欄位](/help/edge/docs/forms/validate-forms.md)
-* [改變主題和樣式風格](/help/edge/docs/forms/style-theme-forms.md)

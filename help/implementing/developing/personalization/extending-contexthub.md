@@ -2,7 +2,7 @@
 title: 延伸 ContextHub
 description: 當提供的ContextHub存放區和模組不符合您的解決方案需求時，定義這些新的型別
 exl-id: ba817c18-f8bd-485d-b043-87593a6a93b5
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
 workflow-type: tm+mt
 source-wordcount: '625'
 ht-degree: 0%
@@ -76,7 +76,7 @@ ContextHub.Utils.storeCandidates.registerStoreCandidate(myStoreCandidate,
 ```javascript
 ;(function() {
 
-    var SurferinfoRenderer = new Class({
+    var SurferinfoRenderer = new Class ({
         extend: ContextHub.UI.BaseModuleRenderer,
 
         defaultConfig: {

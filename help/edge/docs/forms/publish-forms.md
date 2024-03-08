@@ -4,13 +4,13 @@ description: 發佈 AEM Forms Edge Delivery Services Form
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: fd2e5df72e965ea6f9ad09b37983f815954f915c
+exl-id: dcb16da1-dcc2-4529-8859-0716e727b54d
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
 workflow-type: tm+mt
-source-wordcount: '557'
-ht-degree: 10%
+source-wordcount: '530'
+ht-degree: 6%
 
 ---
-
 
 # 發佈您的表單
 
@@ -112,10 +112,6 @@ ht-degree: 10%
 +++
 
 
-## 了解更多
 
-* [建立並預覽表單](/help/edge/docs/forms/create-forms.md)
-* [啟用表單來傳送資料](/help/edge/docs/forms/submit-forms.md)
-* [將表單發佈到網站頁面](/help/edge/docs/forms/publish-forms.md)
-* [新增驗證至表單欄位](/help/edge/docs/forms/validate-forms.md)
-* [改變主題和樣式風格](/help/edge/docs/forms/style-theme-forms.md)
+
+## 了解更多

@@ -2,7 +2,7 @@
 title: 查詢產生器 API
 description: Asset Share Query Builder的功能透過Java&trade； API和REST API公開。
 exl-id: d5f22422-c9da-4c9d-b81c-ffa5ea7cdc87
-source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
 workflow-type: tm+mt
 source-wordcount: '1830'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 伺服器端查詢產生器([`QueryBuilder`](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/QueryBuilder.html))接受查詢說明、建立並執行XPath查詢、選擇性地篩選結果集，以及視需要擷取Facet。
 
-查詢說明只是一組述詞([`Predicate`](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/Predicate.html))。 範例包括全文檢索述詞，其對應至 `jcr:contains()` XPath中的函式。
+查詢說明只是一組述詞([`Predicate`](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/Predicate.html))。 範例包括全文檢索述詞，其對應至 `jcr:contains ()` XPath中的函式。
 
 對於每個述詞型別，都有一個計算器元件([`PredicateEvaluator`](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/eval/PredicateEvaluator.html))知道如何處理XPath、篩選和Facet擷取的特定述詞。 可輕鬆建立自訂評估器，並透過OSGi元件執行階段插入。
 
@@ -125,7 +125,7 @@ orderby=path
 
 例如，UI可以調整以下方法：
 
-* 取得並顯示點選總數精確計數([SearchResult.getTotalMatches()](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/result/SearchResult.html#getTotalMatches) 或中的總計 `querybuilder.json` 回應)小於或等於100；
+* 取得並顯示點選總數精確計數([SearchResult.getTotalMatches ()](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/result/SearchResult.html#getTotalMatches) 或中的總計 `querybuilder.json` 回應)小於或等於100；
 * 設定 `guessTotal` 以100呼叫查詢產生器。
 
 * 回應可能會產生下列結果：
@@ -381,8 +381,8 @@ p.nodedepth=5
     SearchResult result = query.getResult();
 
     // paging metadata
-    int hitsPerPage = result.getHits().size(); // 20 (set above) or lower
-    long totalMatches = result.getTotalMatches();
+    int hitsPerPage = result.getHits ().size(); // 20 (set above) or lower
+    long totalMatches = result.getTotalMatches ();
     long offset = result.getStartIndex();
     long numberOfPages = totalMatches / 20;
 
@@ -396,7 +396,7 @@ p.nodedepth=5
     doc.appendChild( root );
 
     // iterating over the results
-    for (Hit hit : result.getHits()) {
+    for (Hit hit : result.getHits ()) {
        String path = hit.getPath();
 
       //Create a result element
@@ -461,7 +461,7 @@ Query loadedQuery = builder.loadQuery("/mypath/getfiles", session);
    * 瀏覽至 `https://<host>:<port>/system/console/slinglog`. 建立記錄器 `com.day.cq.search.impl.builder.QueryImpl` 在 **偵錯**.
 1. 為上述類別啟用DEBUG之後，記錄會顯示查詢產生器產生的XPath。
 1. 從關聯的Query Builder查詢的記錄專案複製XPath查詢，例如：
-   * `com.day.cq.search.impl.builder.QueryImpl XPath query: /jcr:root/content//element(*, cq:Page)[(jcr:contains(jcr:content, "WKND") or jcr:contains(jcr:content/@cq:tags, "WKND"))]`
+   * `com.day.cq.search.impl.builder.QueryImpl XPath query: /jcr:root/content//element(*, cq:Page)[(jcr:contains (jcr:content, "WKND") or jcr:contains (jcr:content/@cq:tags, "WKND"))]`
 1. 將XPath查詢貼入Explain Query做為XPath，以便您可以取得查詢計畫。
 
 ### 透過Query Builder Debugger取得可說明的XPath {#obtain-explain-able-xpath-via-the-query-builder-debugger}
@@ -497,7 +497,7 @@ null=group: limit=20, offset=0[
     {path=path: path=/content}
     {type=type: type=cq:Page}
 ]
-com.day.cq.search.impl.builder.QueryImpl XPath query: /jcr:root/content//element(*, cq:Page)[(jcr:contains(jcr:content, "WKND") or jcr:contains(jcr:content/@cq:tags, "WKND"))]
+com.day.cq.search.impl.builder.QueryImpl XPath query: /jcr:root/content//element(*, cq:Page)[(jcr:contains (jcr:content, "WKND") or jcr:contains (jcr:content/@cq:tags, "WKND"))]
 com.day.cq.search.impl.builder.QueryImpl no filtering predicates
 com.day.cq.search.impl.builder.QueryImpl query execution took 69 ms
 ```

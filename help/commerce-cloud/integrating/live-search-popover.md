@@ -1,13 +1,13 @@
 ---
 title: 『[!DNL Live Search] 彈出式CIF元件
 description: 使用CIF元件來啟用 [!DNL Live Search] AEM網站上的彈出視窗元件
-source-git-commit: bf0dadb0300c56bd8fe46ea7318146d3b56e6e83
+exl-id: 9dac6693-fe87-4a47-a920-2cf788933499
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
 workflow-type: tm+mt
 source-wordcount: '175'
 ht-degree: 0%
 
 ---
-
 
 # [!DNL Live Search] 彈出式CIF元件 {#live-search-popover}
 
@@ -404,10 +404,10 @@ ht-degree: 0%
         `${dataServicesStorefrontInstanceContext.store_url}catalogsearch/result`
       );
       // initialize store event after live-search
-      this._initMetrics();
+      this._initMetrics ();
     }
   
-    async _initMetrics() {
+    async _initMetrics () {
       //  Magento Store event
   
       // wait until script is magentoStorefrontEvents is found

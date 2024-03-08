@@ -1,13 +1,13 @@
 ---
 title: 建立經檢測適用 Universal Editor 的區塊
 description: 了解如何在使用 Edge Delivery Services 專案進行的 AEM 製作環境中，建立經檢測適用 Universal Editor 的區塊。
-source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
-workflow-type: ht
-source-wordcount: '1205'
-ht-degree: 100%
+exl-id: 65a5600a-8d16-4943-b3cd-fe2eee1b4abf
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
+workflow-type: tm+mt
+source-wordcount: '1204'
+ht-degree: 99%
 
 ---
-
 
 # 建立經檢測適用 Universal Editor 的區塊 {#create-block}
 
@@ -21,7 +21,7 @@ ht-degree: 100%
 
 本指南需要具備使用 Edge Delivery Services 專案進行 AEM 製作及 Universal Editor 的知識。在開始執行本指南之前，您應該有 Edge Delivery Services 存取權並熟悉基本使用需知，包括：
 
-* 您已完成 [Edge Delivery Service 教學課程。](/help/edge/developer/tutorial.md)
+* 您已完成 [Edge Delivery Servicetorial.](/help/edge/developer/tutorial.md)
 * 您有權存取 [AEM Cloud Service 沙箱。](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)
 * 您已[在同一沙箱環境中啟用 Universal Editor。](/help/implementing/universal-editor/getting-started.md)
 * 您已完成「[使用 Edge Delivery Services 進行 AEM 製作的開發人員快速入門指南](/help/edge/edge-dev-getting-started.md)」指南。

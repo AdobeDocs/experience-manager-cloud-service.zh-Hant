@@ -1,123 +1,78 @@
 ---
-title: AEM Forms Edge Delivery Service 概觀
-description: AEM Forms Edge Delivery Service 旨在為實現最佳效而建置，讓您能夠暢想簡化資料收集和使用者參與的未來。
+title: AEM FormsEdge Delivery Services概觀
+description: AEM FormsEdge Delivery Services專為最佳效能而打造，可讓您構想簡化資料收集和使用者參與的未來。
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: d63d0f1152d0a23623c197924a44bc6b1e69fb42
+exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
 workflow-type: tm+mt
-source-wordcount: '1120'
-ht-degree: 25%
+source-wordcount: '1124'
+ht-degree: 17%
 
 ---
 
+# AEM FormsEdge Delivery Services
 
-# AEM Forms Edge Delivery Service
-
-透過Adobe的AEM Forms Edge Delivery Service簡化表單建立作業，並提高完成率。 這項功能強大、可撰寫的服務可讓您建立具有卓越效能和視覺吸引力的企業級表單。 AEM會同時優先考慮使用者體驗和業務目標，確保超快的載入時間並增加表單完成次數。
+透過Adobe的AEM FormsEdge Delivery Services，簡化表單建立流程並提高完成率。 這些功能強大、可撰寫的服務可讓您建立具有卓越效能和視覺吸引力的企業級表單。 AEM會同時優先考慮使用者體驗和業務目標，確保超快的載入時間和更高的表單轉換率。
 
 您可以使用該服務來：
 
-* **使用令人驚豔的表單Captivate使用者**：使用預先建立的元件庫輕鬆建立複雜且吸引人的表單。 輕鬆整合 reCAPTCHA、直接將表單提交到電子郵件，並允許文件無縫上傳到安全儲存解決方案，例如 Sharepoint、Azure 儲存體和 Amazon S3。甚至建立您自己的自訂表單元件，將您獨特的願景變為現實。
+* **建立卓越的註冊體驗**：建立可快速載入和轉譯的註冊體驗，即使在網際網路連線速度緩慢時亦然。 更快的載入時間和最佳化使用者體驗有助於提高表單完成率和轉換率。
 
-* **使用您選擇的工具建立數位註冊體驗**：透過分離內容來源來提高製作效率。開箱即用地使用檔案式編寫(Microsoft 365和Google Workspace)和AEM編寫(AEM編輯器)。 因此，您可以在相同網站上使用多個內容來源，並使用您偏好的編寫工具，例如Microsoft Excel、Google Sheets或Adaptive Forms Editor。
+* **使用您選擇的工具建立註冊體驗**：透過分離內容來源來提高編寫效率。 現成可用兩者 **document-based authoring** (Microsoft SharePoint或Google Drive)和 **AEM製作** (AEM編輯器)。 因此，您可以在相同表單上使用多個內容來源，並使用您偏好的編寫工具，例如Microsoft Excel、Google Sheets或Adaptive Forms Editor。
 
-* **使用完美的Lighthouse分數建置表單**：建立可快速載入和轉譯的表單，即使在網際網路連線速度緩慢時也是如此。 更快的載入時間和最佳化使用者體驗有助於提高表單完成率和轉換率。
-
-  <div>
-    <style>
-    .image-container {
-    text-align: center; 
-    }
-    .image-container img {
-        width: 100%; /* Set image width to 100% of the container 
-    }
-</style>
-    <div class="image-container">
-    <img src="/help/edge/assets/eds-forms-key-features.png" alt="EDS Forms主要功能">
-    </div>
+* **使用開發人員友善的工具集：** AEM Forms使用純HTML、新式CSS和vanilla JavaScript，建立卓越的體驗，免除平常的額外負荷。 任何具備HTML、CSS和JS基礎知識的開發人員都應該能夠建立自己的元件，而且不需要學習任何特定語言或架構。 無需任何管道或等待，將您的程式碼簽入Github中且您的變更已上線。 此外，無需任何管道或等待，您可以將程式碼簽入Github中，且您的變更已上線。
 
 
-</div>
+## 建立數位註冊體驗
 
-<!--
+AEM Forms提供兩者 **document-based authoring** (Microsoft SharePoint或Google Drive)和 **AEM製作** (AEM編輯器)。 您可以使用 [最適化Forms區塊](/help/edge/docs/forms/create-forms.md) 以新增表單至您的Edge Delivery Services網站。
 
-<!--
 
-    ![Enrollment forms](/help/edge/assets/enrollment-form.png)
+>[!BEGINTABS]
 
-* **Build forms with perfect lighthouse score**: Build forms that load and render quickly, even on slow internet connections. Faster loading times and optimized user experience contribute to higher form completion rates and improved conversion rates.
+>[!TAB 檔案式撰寫]
 
-    ![perfect lighthouse score for your forms](/help/edge/assets/lighthouse-forms.png)
+檔案式撰寫是適用於建立具備基本功能的簡單表單的多功能選項。 它可讓您整合各種輸入型別，例如文字欄位、下拉式選單和選項按鈕，讓您有效收集使用者資料。 它提供規則的基本版本，以將動態行為新增至表單。 檔案式製作的主要功能包括：
 
-* **Create digital enrollment experiences with tools of your choice**: Increase authoring efficiency by decoupling content sources. Out of the box you can use both AEM authoring and document-based authoring. As such, you can work with multiple content sources on the same website and use your preferred authoring tools, such as Microsoft Excel, Google Sheets, or AEM Editors.
-
-    ![Edge Delivery forms authoring tools](/help/edge/assets/edge-delivery-forms-authoring-tools.png)
-    
-<!--
-* **Measure customer impact and deliver effective forms**: Use our RUM dashboards to visualize form performance and identify areas for improvement. Experiment with different versions and continuously optimize your forms for maximum effectiveness, ensuring you capture the data you need and drive better business outcomes.
-
-* **Use Integrated services:** Use integrated services to streamline and empowers your users with a one-stop shop for managing their digital enrollment journeys. Use e-signatures, automated workflows, document of record (DoR), and seamless data integration, simplify the entire digital enrollment process, accelerate approvals, and optimizes your business workflows. 
-
-    
-    >[!NOTE]
-    >[!NOTE]
-    >
-    >
-    > WYSIWYG authoring capability, integrated services, and customer impact measuring features are available under early adopter program. You can write to aem-forms-early-adopter-program@adobe.com from your official email id to join the early adopter program and request access to the capability.
-
-    -->
-
-## 主要功能
-
-* **以HTML5為基礎的表單欄位元件**： AEM Forms Edge Delivery Service可讓您使用以HTML5為基礎的表單元件，建立使用者易記且互動式的表單 [輸入型別](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types)， <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea">文字區域</a>， <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select">選取</a>、和 <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset">欄位集</a>  元素。 這些元件適用於不同型別的資料收集，並可輕鬆自訂以符合您的特定需求。
+* **[以HTML5為基礎的表單欄位元件](/help/edge/docs/forms/form-components.md)**：AEM FormsEdge Delivery Services可讓您使用以HTML5為基礎的表單元件，建立使用者易記且互動式的表單 [輸入型別](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types)， <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea">文字區域</a>， <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select">選取</a>、和 <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset">欄位集</a>  元素。 這些元件適用於不同型別的資料收集，並可輕鬆自訂以符合您的特定需求。
 
 * **協助工具**：可存取表單區塊中的欄位。 每個標籤都與其各自的輸入元素連結，而且會自動產生ID以供連結。 與欄位相關的說明是透過aria-descripted by屬性連結。 支援使用標準Tab/Shift + Tab鍵的鍵盤導覽。
 
-* **樣式**：每個表單欄位都有固定的HTML結構，可以輕鬆使用自訂CSS或JavaScript檔案進行裝飾。 CSS和JS中目標欄位的選取器是根據型別和名稱而提供。 您可以因標準化結構而輕鬆建立新的選取器。
+* **[樣式](/help/edge/docs/forms/style-theme-forms.md)**：每個表單欄位都有固定的HTML結構，可以輕鬆使用自訂CSS或JavaScript檔案進行裝飾。 CSS和JS中目標欄位的選取器是根據型別和名稱而提供。 您可以依據標準化的結構和造型輕鬆地建立新的選取器。
 
-* **規則**：輕鬆建立邏輯，以根據使用者輸入或預先定義的條件調整欄位可見度、驗證和行為。 規則提供靈活且直覺的方式為您的表單新增智慧，確保它們能根據使用者輸入順暢地調整。
+* **基本規則**：輕鬆建立邏輯，以根據使用者輸入或預先定義的條件調整欄位可見度、驗證和行為。 規則提供靈活且直覺的方式為您的表單新增智慧，確保它們能根據使用者輸入順暢地調整。
 
-* **驗證**：提交前，系統會驗證表單，無效欄位會適當地標示為使用者顯示的錯誤訊息。 有各種模式可用來顯示這些錯誤。
-
-有幾個進階功能可應要求提供：
+* **驗證**：提交前，系統會驗證表單，無效欄位會適當地標示為使用者顯示的錯誤訊息。 最適化Forms區塊支援所有HTML表單驗證（由現代瀏覽器支援），並提供額外的驗證機制，例如驗證指令碼、檔案大小、檔案型別、整體檔案大小等。
 
 * **檔案上傳**：您可以將檔案附件功能新增至表單。 無論您需要向使用者收集檔案、影像或其他檔案，檔案上傳功能都能讓您輕鬆上手。 透過可用的自訂處理選項，您可以量身打造檔案上傳程式，以符合您的特定需求。
 
-* **reCAPTCHA**：透過我們的開箱即用(OOTB)支援，將Google reCAPTCHA無縫整合至您的表單中，受益匪淺。 保護您的表單免受詐騙活動、垃圾郵件和濫用，同時保持順暢且無中斷的使用者體驗。
+* **reCAPTCHA**：透過我們的開箱即用(OOTB)支援，將Google reCAPTCHA無縫整合至您的表單中，受益匪淺。 保護您的表單免受詐騙活動、垃圾郵件和濫用，同時保持順暢且無中斷的使用者體驗。 最適化Forms區塊支援reCaptcha V3和reCaptcha Enterprise。
 
 * **在表單提交時傳送電子郵件通知**：消除手動後續追蹤的麻煩，並確保利用我們內建的表單提交電子郵件自動化進行及時通訊。 此整合式解決方案可讓您在有人填寫您網站上的表單時，輕鬆通知相關人員，包括傳送表單資料。 無需複雜的設定或其他工具，開箱即用。
 
+>[!TAB AEM製作]
 
-## 可用的Forms區塊
+AEM Authoring開啟了檔案式製作以外的其他功能，讓您能夠建立更複雜且互動式的表單。 除了檔案式編寫功能外，AEM編寫還提供下列額外功能：
 
-AEM Forms Edge Delivery Service提供兩種型別的表單區塊，以迎合不同需求：
+* 進階規則：定義表單中的邏輯型動作。 您可以使用規則有條件地顯示或隱藏表單區段、根據使用者輸入預先填入欄位，以及執行各種驗證以確保資料完整性。
 
-* **基本Forms區塊**：這是一個多功能選項，適合使用基本功能建立簡單的表單。 它可讓您整合各種輸入型別，例如文字欄位、下拉式選單和選項按鈕，讓您有效收集使用者資料。
+* 伺服器端擴充性：將表單與伺服器端邏輯整合，以擴充表單的功能。 這可讓您執行複雜的計算、與外部系統互動，以及根據表單內的使用者動作自動執行特定工作。
+* 簡化工作流程和資料管理：運用AEM的強大功能，您可以：
+   * 使用AEM編輯器設計使用者友善的表單。
+   * 產生「記錄檔案」，用於提交資料的安全且防篡改的封存。
+   * 促進使用Adobe Sign進行電子簽章，以獲得流暢安全的簽名體驗。
+   * 透過AEM工作流程自動化業務流程，根據表單提交觸發動作。
+   * 輕鬆整合各種資料來源，實現順暢的資料流動與交換。
 
-* **最適化Forms區塊**：此進階區塊會解鎖基本Forms區塊以外的其他功能，讓您能夠建立更複雜且互動式的表單。 其主要功能劃分如下：
+>[!ENDTABS]
 
-   * 規則：在表單中定義邏輯型動作。 您可以使用規則有條件地顯示或隱藏表單區段、根據使用者輸入預先填入欄位，以及執行各種驗證以確保資料完整性。
 
-   * 伺服器端擴充性：將表單與伺服器端邏輯整合，以擴充表單的功能。 這可讓您執行複雜的計算、與外部系統互動，以及根據表單內的使用者動作自動執行特定工作。
 
-   * Cross Walk：簡化工作流程和資料管理：運用AEM的強大功能：
 
-      * 使用AEM編輯器設計使用者友善的表單。
 
-      * 產生「記錄檔案」，用於提交資料的安全且防篡改的封存。
 
-      * 促進使用Adobe Sign進行電子簽章，以獲得流暢安全的簽名體驗。
-
-      * 透過AEM工作流程自動化業務流程，根據表單提交觸發動作。
-
-      * 輕鬆整合各種資料來源，實現順暢的資料流動與交換。
-
-  使用「最適化Forms區塊」需要額外的授權。
-
-### 選擇正確的Forms區塊
-
-基本和最適化Forms區塊之間的選擇取決於您的特定需求。 如果您需要簡單直接的解決方案來收集基本的使用者資訊，基本Forms區塊會是最合適的選擇。 不過，如果您的表單需要複雜的邏輯、資料操控、與外部系統整合，或使用AEM功能簡化工作流程，以及 **您擁有必要的授權**，最適化Forms區塊可提供達成目標所需的功能和彈性。
 
 
 ## 開始建立表單
@@ -209,12 +164,3 @@ AEM Forms Edge Delivery Service提供兩種型別的表單區塊，以迎合不�
 
 
 </br>
-
-
-
-
-
-
-
-
-

@@ -3,9 +3,9 @@ title: 如何在AEM工作流程中選取使用者？
 description: 瞭解如何為以下專案選取使用者或群組： [!DNL AEM Forms] 工作流程在執行階段。
 content-type: troubleshooting
 topic-tags: publish
-source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
 workflow-type: tm+mt
-source-wordcount: '902'
+source-wordcount: '853'
 ht-degree: 1%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 1%
 
 ECMAScript是一種指令碼語言。 用於使用者端指令碼和伺服器應用程式。 執行下列步驟，使用ECMAScript動態選取使用者或群組：
 
-1. 開啟 CRXDE Lite。URL為 `https://'[server]:[port]'/crx/de/index.jsp`
+1. 開啟CRXDE Lite。 URL為 `https://'[server]:[port]'/crx/de/index.jsp`
 1. 在下列路徑建立副檔名為.ecma的檔案。 如果路徑（節點結構）不存在，請建立它：
 
    * （指派工作步驟的路徑） `/apps/fd/dashboard/scripts/participantChooser`
@@ -43,7 +43,7 @@ ECMAScript是一種指令碼語言。 用於使用者端指令碼和伺服器應
       |--- |--- |--- |
       | jcr:title | 字串 | 指定指令碼的名稱。 例如，選擇最近的欄位代理。 此名稱會顯示在指派任務和簽署檔案步驟中。 |
 
-   1. 按一下&#x200B;**「儲存全部」**。指令碼將可以在AEM Workflow的元件中選擇。
+   1. 按一下 **全部儲存**. 指令碼將可以在AEM Workflow的元件中選擇。
 
       ![指令碼](assets/script.png)
 
@@ -76,7 +76,7 @@ var path = workflowData.getPayload().toString();
 >使用ECMAScript進行時 [!DNL Adobe Sign]，此指令碼必須位於/apps/fd/workflow/scripts/adobesign/的crx-repository中，並且應該有一個名為getAdobeSignRecipients的函式以傳回使用者清單。
 
 ```javascript
-function getAdobeSignRecipients() {
+function getAdobeSignRecipients () {
 
     var recipientSetInfos = new Packages.java.util.ArrayList();
 
@@ -99,10 +99,10 @@ function getAdobeSignRecipients() {
     email = "example@example.com";
     
     recipientInfo.setEmail(email);
-    recipientInfo.setSecurityOptions(securityOptions);
+    recipientInfo.setSecurityOptions (securityOptions);
     
     recipientInfoList.add(recipientInfo);
-    recipientInfoSet.setMemberInfos(recipientInfoList);
+    recipientInfoSet.setMemberInfos (recipientInfoList);
     recipientSetInfos.add(recipientInfoSet);
 
     return recipientSetInfos;
@@ -279,7 +279,7 @@ import org.apache.felix.scr.annotations.Service;
 
 @Component(metatype = false)
 public class DummyRecipientChoser implements RecipientInfoSpecifier {
-    public List<RecipientSetInfo> getAdobeSignRecipients(WorkItem workItem, WorkflowSession workflowSession, MetaDataMap args) throws WorkflowException {
+    public List<RecipientSetInfo> getAdobeSignRecipients (WorkItem workItem, WorkflowSession workflowSession, MetaDataMap args) throws WorkflowException {
 
         List<RecipientSetInfo> recipientSetInfos = new ArrayList<RecipientSetInfo>();
 
@@ -303,11 +303,11 @@ public class DummyRecipientChoser implements RecipientInfoSpecifier {
                 email = "example@example.com";
 
                 recipientInfo1.setEmail(email);
-                recipientInfo1.setSecurityOptions(securityOptions);
+                recipientInfo1.setSecurityOptions (securityOptions);
 
                 recipientInfoList.add(recipientInfo1);  //Add member
 
-                recipientInfoSet1.setMemberInfos(recipientInfoList);
+                recipientInfoSet1.setMemberInfos (recipientInfoList);
 
                 //Second Recipient
 
@@ -328,11 +328,11 @@ public class DummyRecipientChoser implements RecipientInfoSpecifier {
 
                 RecipientInfo recipientInfo2  = new RecipientInfo();
                 recipientInfo2.setEmail(email);
-                recipientInfo2.setSecurityOptions(securityOptions);
+                recipientInfo2.setSecurityOptions (securityOptions);
 
                 recipientInfoList2.add(recipientInfo2);  //Add member
 
-                recipientInfoSet2.setMemberInfos(recipientInfoList2);
+                recipientInfoSet2.setMemberInfos (recipientInfoList2);
 
                 //*********************************
 
