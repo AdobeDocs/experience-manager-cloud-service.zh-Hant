@@ -2,10 +2,10 @@
 title: 組建環境
 description: 了解 Cloud Manager 的構建環境以及它如何構建和測試您的程式碼。
 exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
-source-git-commit: cb4c9711fc9c57546244b5b362027c255e5abc35
+source-git-commit: 54135244d7b33ba3682633b455a5538474d3146e
 workflow-type: tm+mt
-source-wordcount: '1023'
-ht-degree: 92%
+source-wordcount: '788'
+ht-degree: 77%
 
 ---
 
@@ -20,9 +20,9 @@ Cloud Manager 使用專門的構建環境構建和測試您的程式碼。
 
 * 組建環境以 Linux 為基礎，衍生自 Ubuntu 22.04。
 * 已安裝 Apache Maven 3.9.4。
-   * Adobe 建議用者[更新其 Maven 存放庫以使用 HTTPS 而非 HTTP](#https-maven)。
-* 安裝的Java版本為OracleJDK 8u401和OracleJDK 11.0.22。
-* 根據預設， `JAVA_HOME` 環境變數已設為 `/usr/lib/jvm/jdk1.8.0_401` 其中包含OracleJDK 8u401。 請參閱 [備用Maven執行JDK版本](#alternate-maven-jdk-version) 區段以取得更多詳細資料。
+   * Adobe 建議用者[更新其 Maven 存放庫以使用 HTTPS 而非 HTTP。](#https-maven)
+* 安裝的Java版本為OracleJDK 11.0.22和OracleJDK 8u401。
+* **重要**：根據預設， `JAVA_HOME` 環境變數已設為 `/usr/lib/jvm/jdk1.8.0_401` 其中包含OracleJDK 8u401。 *_AEM雲端專案應覆寫此預設值，才能使用JDK 11_*. 請參閱 [設定Maven JDK版本](#alternate-maven-jdk-version) 區段以取得更多詳細資料。
 * 安裝了一些必要的附加系統套件。
    * `bzip2`
    * `unzip`
@@ -51,76 +51,13 @@ Cloud Manager [2023.10.0 版](/help/implementing/cloud-manager/release-notes/202
 
 ### 使用特定 Java 版本 {#using-java-support}
 
-預設情況下，專案會由 Cloud Manager 建置流程使用 Oracle 8 JDK 來建置。想要使用替代JDK的客戶有兩個選項。
+預設情況下，專案會透過Cloud Manager建置流程使用Oracle8 JDK來建置，但強烈建議AEM Cloud Service客戶將用來執行Maven的JDK版本設定為 `11`.
 
-* [Maven 工具鏈](#maven-toolchains)
-* [如需全部 Maven 執行流程，可選取備用 JDK 版本。](#alternate-maven-jdk-version)
+#### 設定Maven JDK版本 {#alternate-maven-jdk-version}
 
-#### Maven 工具鏈 {#maven-toolchains}
+建議將整個Maven執行的JDK版本設為 `11` 在 `.cloudmanager/java-version` 檔案。
 
-此 [Maven 工具鏈外掛程式](https://maven.apache.org/plugins/maven-toolchains-plugin/)讓專案可選取特定 JDK (或工具鏈)，以用於工具鏈感知的 Maven 外掛程式內容中。這可透過指定廠商和版本值，在專案的 `pom.xml` 檔案中完成。
-
-此工具鏈外掛程式可新增為設定檔的一部分，如下所示。
-
-```xml
-<profile>
-    <id>cm-java-11</id>
-    <activation>
-        <property>
-            <name>env.CM_BUILD</name>
-        </property>
-    </activation>
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-toolchains-plugin</artifactId>
-                <version>1.1</version>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>toolchain</goal>
-                        </goals>
-                    </execution>
-                </executions>
-                <configuration>
-                    <toolchains>
-                        <jdk>
-                            <version>11</version>
-                            <vendor>oracle</vendor>
-                        </jdk>
-                    </toolchains>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
-</profile>
-```
-
-這將導致所有工具鏈感知的 Maven 外掛程式使用 Oracle JDK 版本 11。
-
-使用此方法時，Maven 本身仍使用預設的 JDK (Oracle 8) 執行，並且 `JAVA_HOME` 環境變數未受到變更。因此，透過 Apache Maven 強制器外掛程式之類的外掛程式來檢查或強制執行 Java 版本並不可行，且不得使用這類外掛程式。
-
-目前可提供的廠商/版本組合為：
-
-| 廠商 | 版本 |
-|---|---|
-| `oracle` | `8` |
-| `oracle` | `11` |
-| `sun` | `8` |
-| `sun` | `11` |
-
-此表是指產品版本號。Java 內部版本號或安裝路徑可能反映舊的 Java 版本約定，例如 Java 8 的 1.8。
-
->[!NOTE]
->
->從 2022 年 4 月開始，Oracle JDK 成為 AEM 應用程式開發和運作的預設 JDK。Cloud Manager 的建置流程自動切換成使用 Oracle JDK，即使在 Maven 工具鏈中明確選取了替代選項。請參閱 2022 年 4 月的發行說明。
-
-#### 備用 Maven 執行 JDK 版本 {#alternate-maven-jdk-version}
-
-也可以選取 Java 8 或 Java 11 作為整個 Maven 執行的 JDK。和工具鏈選項不同，這會變更用於所有外掛程式的 JDK，除非還設定了工具鏈設定，若是這種情況，則工具鏈設定仍適用於工具鏈感知的 Maven 外掛程式。結果，利用 [Apache Maven 強制器外掛程式](https://maven.apache.org/enforcer/maven-enforcer-plugin/)來檢查和強制執行 Java 版本將變得可行。
-
-為此，可在管道使用的 Git 存放庫分支中建立名為 `.cloudmanager/java-version` 的檔案。本檔案可能有的內容為 11 或 8。任何其他值會受到忽略。若指定 ，會使用 Oracle 11，而 `JAVA_HOME` 環境變數會設為 `/usr/lib/jvm/jdk-11.0.22`。若指定 ，會使用 Oracle 8，而 `JAVA_HOME` 環境變數會設為 `/usr/lib/jvm/jdk1.8.0_401`。
+為此，可在管道使用的 Git 存放庫分支中建立名為 `.cloudmanager/java-version` 的檔案。編輯檔案，使其僅包含文字， `11`. 同時Cloud Manager也接受值 `8`，AEM Cloud Service專案不再支援此版本。 任何其他值會受到忽略。時間 `11` 已指定，使用Oracle11，且 `JAVA_HOME` 環境變數已設為 `/usr/lib/jvm/jdk-11.0.22`.
 
 ## 環境變數 {#environment-variables}
 

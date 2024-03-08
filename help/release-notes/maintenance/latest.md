@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的目前維護版本發行說明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的目前維護版本發行說明。'
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: b51ee1ebffc63b56a5b758395427f5587bd165da
+source-git-commit: 87f76de41074debb2acc8ef4f71baf174d0d01ad
 workflow-type: tm+mt
-source-wordcount: '1097'
-ht-degree: 11%
+source-wordcount: '1168'
+ht-degree: 10%
 
 ---
 
@@ -102,7 +102,11 @@ ht-degree: 11%
 
 ### 已知問題 {#known-issues-15262}
 
-無。
+#### `UnsupportedClassVersionError` 升級後在CM管道建置步驟中 `aem-sdk-api` 版本至 `2024.2.15262.20240224T002940Z-231200`
+
+新版aem-sdk-api包含以Java 11目標編譯的類別，這與Cloud Manager組建環境預設JDK 1.8版不相容。此更新需要使用JDK 11執行Maven。
+
+建議客戶新增 `.cloudmanager/java-version` 檔案到其Git存放庫的根目錄下，其內容如下： `11`. [建置環境/設定Maven JDK版本](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/create-application-project/build-environment-details.html?lang=en#alternate-maven-jdk-version)
 
 ### 變更通知 {#change-notice-15262}
 
