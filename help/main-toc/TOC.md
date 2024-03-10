@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的運作方式以及該軟體可以為您做哪些事。
 breadcrumb-title: 使用手冊
 user-guide-title: AEM as a Cloud Service
-source-git-commit: ca65bb637c70e35ff7d7749ed7e1e66e11cdb315
+source-git-commit: 2b64cc8d2afb7d6064d1f60ba023448171862236
 workflow-type: tm+mt
-source-wordcount: '4774'
+source-wordcount: '4776'
 ht-degree: 98%
 
 ---
@@ -823,6 +823,7 @@ ht-degree: 98%
    + 建立 Edge Delivery Forms {#build-forms}
       + [概觀](/help/edge/docs/forms/overview.md)
       + 立即開始 {#getting-started-eds-forms}
+         + [快速入門](/help/edge/docs/forms/tutorial.md)
          + [建立並預覽表單](/help/edge/docs/forms/create-forms.md)
          + [啟用表單來傳送資料](/help/edge/docs/forms/submit-forms.md)
          + [將表單發佈到網站頁面](/help/edge/docs/forms/publish-forms.md)

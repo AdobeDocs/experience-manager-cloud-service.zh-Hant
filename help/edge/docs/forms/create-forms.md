@@ -5,10 +5,10 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: 0cf881a2-3784-45eb-afe8-3435e5e95cf4
-source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
+source-git-commit: 2b64cc8d2afb7d6064d1f60ba023448171862236
 workflow-type: tm+mt
-source-wordcount: '1165'
-ht-degree: 20%
+source-wordcount: '845'
+ht-degree: 24%
 
 ---
 
@@ -27,41 +27,46 @@ AEM Forms Edge Delivery提供最適化表單區塊，協助您輕鬆建立表單
 
 在開始之前，請確保您已完成以下步驟：
 
-* 使用AEM範本設定Edge Delivery Services (EDS) GitHub專案，並在本機電腦上複製對應的GitHub存放庫。 若需要詳細資訊，請參閱[開發人員教學課程](https://www.aem.live/developer/tutorial)。在本檔案中，您的Edge Delivery Services(EDS)專案的本機資料夾稱為 `[EDS Project repository]` .
+* 設定 [使用AEM Forms範本的AEM專案](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-equipped-with-adaptive-forms-block) 或 [新增最適化表單區塊至您現有的AEM專案](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project) 並複製本機電腦上對應的GitHub存放庫。
+在本檔案中，您的Edge Delivery Services(EDS)專案的本機資料夾稱為 `[EDS Project repository]` .
 * 確保您可以存取 Google Sheets 或 Microsoft SharePoint。若要將Microsoft SharePoint設定為您的內容來源，請參閱 [如何使用Sharepoint](https://www.aem.live/docs/setup-customer-sharepoint)
 
 
 
 ## 建立表單
 
-+++ 步驟1：將最適化表單區塊新增至您的Edge Delivery Services (EDS)專案。
+<!-- 
 
-最適化可讓使用者為Edge Delivery ServicesSite建立表單。 不過，此區塊不包含在預設的AEM樣板中(用來建立Edge Delivery Services專案)。 若要將最適化表單區塊無縫整合至您的Edge Delivery Services專案：
++++ Step 1: Add the Adaptive Form Block to your Edge Delivery Services (EDS) project.
 
-1. **複製最適化表單區塊存放庫**：原地複製 [最適化表單區塊存放庫](https://github.com/adobe-rnd/form-block) 本機電腦上。 它包含會在 EDS 網頁上呈現表單的程式碼。在本文件中，Form 區塊存放庫的本機資料夾稱為 `[Adaptive Form Block repository]`。
-1. **找到最適化表單區塊存放庫：** 存取 [最適化表單區塊存放庫]/blocks/src資料夾並複製其內容。
+The Adaptive  empowers users to create forms for an Edge Delivery ServicesSite. However, this block isn't included in the default AEM boilerplate (used to create an Edge Delivery Services project). To seamlessly integrate the Adaptive Form Block into your Edge Delivery Services project:
 
-1. 並複製 `form` 資料夾。
-1. **將最適化表單區塊的程式碼貼入您的EDS專案：**
-導覽至 [EDS專案存放庫]/blocks/資料夾建立一個&#39;form&#39;資料夾。 貼上 `[Adaptive Form Block repository]/blocks/src content`，在上一個步驟中複製到 `[EDS Project repository]/blocks/form` 資料夾。
-1. **將變更提交至GitHub：** 存回 `[EDS Project repository]/blocks/form` 資料夾及其基礎檔案新增至GitHub上的Edge Delivery Services專案。
+1. **Clone the Adaptive Form Block repository**: Clone the [Adaptive Form Block repository](https://github.com/adobe-rnd/form-block) on your local machine. It contains the code to render the form on an EDS webpage. In this document, the local folder of your Forms Block repository is referred as `[Adaptive Form Block repository]`.
+1. **Locate the Adaptive Form Block Repository:** Access the [Adaptive Form Block repository]/blocks/src folder and copy its content. 
 
-完成這些步驟後，最適化表單區塊已成功新增到GitHub上的您的Edge Delivery Services (EDS)專案存放庫。 您現在可以建立表單並新增至EDS Sites頁面。
+1. on your local machine and copy the `form` folder. 
+1. **Paste the Adaptive Form Block's code into your EDS Project:**
+Navigate to the [EDS Project repository]/blocks/ folder on your local machine and create a 'form' folder. Paste the `[Adaptive Form Block repository]/blocks/src content`, copied in perevious step to the `[EDS Project repository]/blocks/form` folder.
+1. **Commit Changes to GitHub:** Check in the `[EDS Project repository]/blocks/form` folder and its underlying files to your Edge Delivery Services project on GitHub.
 
+After completing these steps, the Adaptive Form Block is successfully added to your Edge Delivery Services (EDS) project repository on GitHub. You can now create and add forms to a EDS Sites page.
+ 
 
-**疑難排解GitHub建置問題**
+**Troubleshooting GitHub build issues**
 
-解決下列潛在問題，確保GitHub建置流程順暢：
+Ensure a smooth GitHub build process by addressing potential issues:
 
-* **解決模組路徑錯誤：**
-如果您遇到「無法解析模組「&#39;../../scripts/lib-franklin.js&#39;」的路徑」錯誤，請導覽至 [EDS專案]/blocks/forms/form.js檔案。 將lib-franklin.js檔案取代為aem.js檔案，以更新匯入陳述式。
+* **Resolve Module Path Error:**
+    If you encounter the error "Unable to resolve path to module "'../../scripts/lib-franklin.js'", navigate to the [EDS Project]/blocks/forms/form.js file. Update the import statement by replacing the lib-franklin.js file with the aem.js file.
 
-* **處理Linting錯誤：**
-如果您遇到任何連結錯誤，可以略過這些錯誤。 開啟 [EDS專案]/package.json檔案並將「lint」指令碼從「lint」：「npm run lint：js &amp;&amp; npm run lint：css」修改為「lint」：「echo &#39;skipping linting for now&#39;」。 儲存檔案並將變更提交至您的GitHub專案。
+* **Handle Linting Errors:**
+    Should you come across any linting errors, you can bypass them. Open the [EDS Project]/package.json file and modify the "lint" script from "lint": "npm run lint:js && npm run lint:css" to "lint": "echo 'skipping linting for now'". Save the file and commit the changes to your GitHub project.
 
 +++
 
-+++ 步驟 2：使用 Microsoft Excel 或 Google Sheet 製作表單。
+-->
+
++++ 步驟 1：使用 Microsoft Excel 或 Google Sheet 製作表單。
 
 您可以使用試算表輕鬆完成表單的製作作業，而不需透過複雜的程式進行瀏覽。 您可以定義組成表單結構的列和欄。 每一列代表個人 [表單欄位](/help/edge/docs/forms/form-components.md#available-components) 而欄標題則會定義對應的 [欄位屬性](/help/edge/docs/forms/form-components.md#components-properties).
 
@@ -110,7 +115,7 @@ AEM Forms Edge Delivery提供最適化表單區塊，協助您輕鬆建立表單
 
 +++
 
-+++ 步驟3：使用您的Edge Delivery Services(EDS)頁面預覽表單。
++++ 步驟2：使用您的Edge Delivery Services(EDS)頁面預覽表單。
 
 
 到目前為止，您已經將最適化表單區塊新增到您的EDS專案，並準備了表單的結構。 現在，若要預覽表單：
@@ -150,7 +155,6 @@ AEM Forms Edge Delivery提供最適化表單區塊，協助您輕鬆建立表單
 ## 下一步
 
 [準備您的試算表](/help/edge/docs/forms/submit-forms.md) 以在提交表單後開始接受資料。
-
 
 
 
