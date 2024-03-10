@@ -5,7 +5,7 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: 7d087d41-9313-482a-a905-8955b0999781
-source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
+source-git-commit: 2aa70e78764616f41fe64e324c017873cfba1d5b
 workflow-type: tm+mt
 source-wordcount: '964'
 ht-degree: 6%
@@ -19,7 +19,7 @@ AEM Forms Edge Delivery Services可讓您使用各種元件建立好記且互動
 
 ![包含某些元件和屬性的試算表範例](/help/edge/assets/sample-form-in-spreadsheet.png)
 
-最適化表單區塊產生 [統一的HTML結構](/help/edge/docs/forms/style-theme-forms.md) 用於所有欄位型別和容器（面板），確保一致性。 此一致的結構可讓您更容易 [設定表單樣式](/help/edge/docs/forms/style-theme-forms.md).
+最適化Forms區塊會產生 [統一的HTML結構](/help/edge/docs/forms/style-theme-forms.md) 用於所有欄位型別和容器（面板），確保一致性。 此一致的結構可讓您更容易 [設定表單樣式](/help/edge/docs/forms/style-theme-forms.md).
 
 ## 可用元件
 
@@ -46,13 +46,13 @@ AEM Forms Edge Delivery Services可讓您使用各種元件建立好記且互動
 
 ## 元件屬性
 
-每個表單元件都隨附各種屬性，可讓您控制其行為和外觀。 最適化表單元件支援的屬性如下：
+每個表單元件都隨附各種屬性，可讓您控制其行為和外觀。 最適化Forms區塊元件支援的屬性如下：
 
 
 | 屬性 | 適用的元件 | 詳細資料 |
 |--------------|------------------------------|----------------------------------------------------------------------|
-| 類型 | 全部 | 指定元件的型別。 此屬性決定輸入欄位的行為和外觀。 例如，對於文字輸入，型別可以是「text」、「email」用於電子郵件輸入、「password」用於密碼輸入。 最適化表單區塊支援  <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types">所有有效的HTML5輸入型別</a>， <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea">文字區域</a>， <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select">選取</a>、和 <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset">欄位集</a> 作為型別。 |
-| 類型 | 全部 | 指定元件的型別。 此屬性決定輸入欄位的行為和外觀。 例如，對於文字輸入，型別可以是「text」、「email」用於電子郵件輸入、「password」用於密碼輸入。 最適化表單區塊支援  <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types">所有有效的HTML5輸入型別</a>， <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea">文字區域</a>， <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select">選取</a>、和 <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset">欄位集</a> 作為型別。 |
+| 類型 | 全部 | 指定元件的型別。 此屬性決定輸入欄位的行為和外觀。 例如，對於文字輸入，型別可以是「text」、「email」用於電子郵件輸入、「password」用於密碼輸入。 最適化Forms區塊支援  <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types">所有有效的HTML5輸入型別</a>， <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea">文字區域</a>， <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select">選取</a>、和 <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset">欄位集</a> 作為型別。 |
+| 類型 | 全部 | 指定元件的型別。 此屬性決定輸入欄位的行為和外觀。 例如，對於文字輸入，型別可以是「text」、「email」用於電子郵件輸入、「password」用於密碼輸入。 最適化Forms區塊支援  <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types">所有有效的HTML5輸入型別</a>， <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea">文字區域</a>， <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select">選取</a>、和 <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset">欄位集</a> 作為型別。 |
 | 名稱 | 全部 | 識別表單提交的元件。 將表單資料提交至伺服器時，會使用name屬性，將使用者輸入與特定欄位建立關聯。 |
 | 標籤 | 全部 | 為使用者提供內容相關資訊。 標籤是元件旁邊顯示的文字，提供使用者要輸入哪些資訊的指引。 |
 | 值 | 文字，密碼，電子郵件，數字，範圍，日期及其變體（日期時間 — 當地，月，周，時間），核取方塊，單選，隱藏，提交，按鈕 | 指定元件的初始值。 對於文字輸入、文字區域和選取元素，這是顯示的預設文字或選項。 對於選項和核取方塊元件，這是選取時提交的值/資料。 value屬性是選用專案，但核取方塊和選項輸入應視為必要專案。 |
@@ -72,9 +72,9 @@ AEM Forms Edge Delivery Services可讓您使用各種元件建立好記且互動
 
 <!--
 
-## Supported HTML 5 input types in Adaptive Form Block
+## Supported HTML 5 input types in Adaptive Forms Block
 
-The Adaptive Form Block supports a range of HTML 5 input types, and it also seamlessly renders forms created with AEM core components.
+The Adaptive Forms Block supports a range of HTML 5 input types, and it also seamlessly renders forms created with AEM core components.
 Here is the table which outlines how core components correspond to their HTML-5 input types in Edge Delivery:
 <table>
  <tbody>
@@ -176,26 +176,26 @@ Here is the table which outlines how core components correspond to their HTML-5 
   </tr>
   <tr>
    <td><a href = "https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html">Accordion<a></td>
-   <td><i>Not yet supported in Adaptive Form Block</i></td>
+   <td><i>Not yet supported in Adaptive Forms Block</i></td>
    <td> Allows user to create expandable and collapsible sections in a form. </td>
   </tr>
   <tr>
    <td><a href ="https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html">Horizontal tabs</a></td>
-   <td><i>Not yet supported in Adaptive Form Block</i></td>
+   <td><i>Not yet supported in Adaptive Forms Block</i></td>
    <td>Organizes multiple sections of a form into separate tabs which are displayed horizontally.</td>
   </tr>
   <tr>
    <td><a href = "https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/image.html">Image</a></td>
-   <td><i>Not yet supported in Adaptive Form Block</i></td>
+   <td><i>Not yet supported in Adaptive Forms Block</i></td>
    <td> Allows user to include images in a form.</td>
   </tr><tr>
    <td><a href ="https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/title.html">Title</a></td>
-   <td><i>Not yet supported in Adaptive Form Block</i></td>
+   <td><i>Not yet supported in Adaptive Forms Block</i></td>
    <td> Refers to the text that appears at the top of the form. </td>
   </tr>
   <tr>
    <td><a href = "https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/submit-button.html">Switch</td>
-   <td><i>Not yet supported in Adaptive Form Block</i></td>
+   <td><i>Not yet supported in Adaptive Forms Block</i></td>
    <td> A two-state toggle that allows user to select between two states such as enabling or disabling a feature, setting, or functionality.</td>
   </tr>
  </tbody>

@@ -5,29 +5,29 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: 0cf881a2-3784-45eb-afe8-3435e5e95cf4
-source-git-commit: 2b64cc8d2afb7d6064d1f60ba023448171862236
+source-git-commit: 2aa70e78764616f41fe64e324c017873cfba1d5b
 workflow-type: tm+mt
-source-wordcount: '845'
-ht-degree: 24%
+source-wordcount: '821'
+ht-degree: 21%
 
 ---
 
-# 使用最適化表單區塊建立表單
+# 使用最適化Forms區塊建立表單
 
-身處今日數位時代，任何組織都需要建立對使用者友善的表單。AEM Forms Edge Delivery 讓您可以使用 Word 或 Google Docs 等熟悉的工具來建立表單。
+AEM Forms Edge Delivery提供稱為最適化Forms區塊的區塊，協助您輕鬆建立表單，以擷取及儲存擷取的資料。 您可以 [建立預先配備最適化Forms區塊的新AEM專案](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-equipped-with-adaptive-forms-block) 或 [將最適化Forms區塊新增至現有的AEM專案](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project).
 
 這些表單可直接提交資料至 Microsoft Excel 或 Google Sheets 檔案，讓您能夠使用由 Google Sheets、Microsoft Excel 和 Microsoft Sharepoint 等強大 API 建構的活躍生態系統，以便輕鬆處理提交的資料或啟動現有的業務工作流程。
 
 ![檔案式撰寫生態系統](/help/edge/assets/document-based-authoring-workflow-create-form.png)
 
-AEM Forms Edge Delivery提供最適化表單區塊，協助您輕鬆建立表單，以擷取及儲存擷取的資料。 您可以在AEM EDS專案中加入最適化表單區塊，以開始建立表單。 開始吧：
+
 
 
 ## 先決條件
 
 在開始之前，請確保您已完成以下步驟：
 
-* 設定 [使用AEM Forms範本的AEM專案](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-equipped-with-adaptive-forms-block) 或 [新增最適化表單區塊至您現有的AEM專案](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project) 並複製本機電腦上對應的GitHub存放庫。
+* 設定 [使用AEM Forms範本的AEM專案](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-equipped-with-adaptive-forms-block) 或 [已將最適化Forms區塊新增至您現有的AEM專案](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project) 並複製本機電腦上對應的GitHub存放庫。
 在本檔案中，您的Edge Delivery Services(EDS)專案的本機資料夾稱為 `[EDS Project repository]` .
 * 確保您可以存取 Google Sheets 或 Microsoft SharePoint。若要將Microsoft SharePoint設定為您的內容來源，請參閱 [如何使用Sharepoint](https://www.aem.live/docs/setup-customer-sharepoint)
 
@@ -37,19 +37,19 @@ AEM Forms Edge Delivery提供最適化表單區塊，協助您輕鬆建立表單
 
 <!-- 
 
-+++ Step 1: Add the Adaptive Form Block to your Edge Delivery Services (EDS) project.
++++ Step 1: Add the Adaptive Forms Block to your Edge Delivery Services (EDS) project.
 
-The Adaptive  empowers users to create forms for an Edge Delivery ServicesSite. However, this block isn't included in the default AEM boilerplate (used to create an Edge Delivery Services project). To seamlessly integrate the Adaptive Form Block into your Edge Delivery Services project:
+The Adaptive  empowers users to create forms for an Edge Delivery ServicesSite. However, this block isn't included in the default AEM boilerplate (used to create an Edge Delivery Services project). To seamlessly integrate the Adaptive Forms Block into your Edge Delivery Services project:
 
-1. **Clone the Adaptive Form Block repository**: Clone the [Adaptive Form Block repository](https://github.com/adobe-rnd/form-block) on your local machine. It contains the code to render the form on an EDS webpage. In this document, the local folder of your Forms Block repository is referred as `[Adaptive Form Block repository]`.
-1. **Locate the Adaptive Form Block Repository:** Access the [Adaptive Form Block repository]/blocks/src folder and copy its content. 
+1. **Clone the Adaptive Forms Block repository**: Clone the [Adaptive Forms Block repository](https://github.com/adobe-rnd/form-block) on your local machine. It contains the code to render the form on an EDS webpage. In this document, the local folder of your Forms Block repository is referred as `[Adaptive Forms Block repository]`.
+1. **Locate the Adaptive Forms Block Repository:** Access the [Adaptive Forms Block repository]/blocks/src folder and copy its content. 
 
 1. on your local machine and copy the `form` folder. 
-1. **Paste the Adaptive Form Block's code into your EDS Project:**
-Navigate to the [EDS Project repository]/blocks/ folder on your local machine and create a 'form' folder. Paste the `[Adaptive Form Block repository]/blocks/src content`, copied in perevious step to the `[EDS Project repository]/blocks/form` folder.
+1. **Paste the Adaptive Forms Block's code into your EDS Project:**
+Navigate to the [EDS Project repository]/blocks/ folder on your local machine and create a 'form' folder. Paste the `[Adaptive Forms Block repository]/blocks/src content`, copied in perevious step to the `[EDS Project repository]/blocks/form` folder.
 1. **Commit Changes to GitHub:** Check in the `[EDS Project repository]/blocks/form` folder and its underlying files to your Edge Delivery Services project on GitHub.
 
-After completing these steps, the Adaptive Form Block is successfully added to your Edge Delivery Services (EDS) project repository on GitHub. You can now create and add forms to a EDS Sites page.
+After completing these steps, the Adaptive Forms Block is successfully added to your Edge Delivery Services (EDS) project repository on GitHub. You can now create and add forms to a EDS Sites page.
  
 
 **Troubleshooting GitHub build issues**
@@ -118,7 +118,7 @@ Ensure a smooth GitHub build process by addressing potential issues:
 +++ 步驟2：使用您的Edge Delivery Services(EDS)頁面預覽表單。
 
 
-到目前為止，您已經將最適化表單區塊新增到您的EDS專案，並準備了表單的結構。 現在，若要預覽表單：
+到目前為止，您已經將最適化Forms區塊新增到EDS專案，並準備了表單的結構。 現在，若要預覽表單：
 
 1. **存取您的專案目錄：** 開啟Microsoft SharePoint或Google Drive帳戶，並導覽至AEM Edge Delivery專案目錄。
 
@@ -126,7 +126,7 @@ Ensure a smooth GitHub build process by addressing potential issues:
 
 1. **導覽至所需位置：** 移至檔案中您想要新增表單的位置。
 
-1. **新增最適化表單區塊：** 建立表單區塊以轉譯表單。 選取「插入」>「表格」，然後建立一欄、兩清單格。 將表格命名為「Form」，並將預覽URL貼到第二列。 請確定URL的格式為超連結，而非純文字，如下圖所示：
+1. **新增最適化Forms區塊：** 建立表單區塊以轉譯表單。 選取「插入」>「表格」，然後建立一欄、兩清單格。 將表格命名為「Form」，並將預覽URL貼到第二列。 請確定URL的格式為超連結，而非純文字，如下圖所示：
 
    | 表單 |
    |---|

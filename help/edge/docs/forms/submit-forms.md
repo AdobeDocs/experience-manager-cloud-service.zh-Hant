@@ -1,11 +1,11 @@
 ---
 title: 準備試算表並接受資料
-description: 使用試算表和最適化表單區塊欄位，更快製作強大的表單！
+description: 使用試算表及最適化Forms區塊欄位，更快製作強大的表單！
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: 0643aee5-3a7f-449f-b086-ed637ae53b5a
-source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
+source-git-commit: 2aa70e78764616f41fe64e324c017873cfba1d5b
 workflow-type: tm+mt
 source-wordcount: '971'
 ht-degree: 71%
@@ -55,7 +55,7 @@ ht-degree: 71%
 
 將欄位名稱新增至 `incoming` 工作表後，您的表單就可以接受提交了。您可以預覽表單並使用它向工作表提交資料。
 
-將工作表設定為接收資料後，您可以 [使用最適化表單區塊預覽表單](/help/edge/docs/forms/create-forms.md#preview-the-form-using-your-edge-delivery-service-eds-page) 或 [使用POST請求](#use-admin-apis-to-send-data-to-your-sheet) 以開始傳送資料至工作表。
+將工作表設定為接收資料後，您可以 [使用最適化Forms區塊預覽表單](/help/edge/docs/forms/create-forms.md#preview-the-form-using-your-edge-delivery-service-eds-page) 或 [使用POST請求](#use-admin-apis-to-send-data-to-your-sheet) 以開始傳送資料至工作表。
 
 >[!WARNING]
 >
@@ -172,7 +172,7 @@ ht-degree: 71%
 
 ## 將資料傳送到您的工作表 {#send-data-to-your-sheet}
 
-將工作表設定為接收資料後，您可以 [使用最適化表單區塊預覽表單](/help/edge/docs/forms/create-forms.md#preview-the-form-using-your-edge-delivery-service-eds-page) 或 [使用管理API](#use-admin-apis-to-send-data-to-your-sheet) 以開始傳送資料至工作表。
+將工作表設定為接收資料後，您可以 [使用最適化Forms區塊預覽表單](/help/edge/docs/forms/create-forms.md#preview-the-form-using-your-edge-delivery-service-eds-page) 或 [使用管理API](#use-admin-apis-to-send-data-to-your-sheet) 以開始傳送資料至工作表。
 
 ### 使用 Admin API 將資料傳送到您的工作表
 

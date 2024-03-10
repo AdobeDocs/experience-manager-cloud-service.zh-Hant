@@ -5,7 +5,7 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: dcb16da1-dcc2-4529-8859-0716e727b54d
-source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
+source-git-commit: 2aa70e78764616f41fe64e324c017873cfba1d5b
 workflow-type: tm+mt
 source-wordcount: '530'
 ht-degree: 6%
@@ -20,7 +20,7 @@ ht-degree: 6%
 
 ## 先決條件
 
-* 此 [已在GitHub上為您的EDS專案啟用最適化表單區塊](/help/edge/docs/forms/create-forms.md).
+* 此 [最適化Forms區塊已在GitHub上為您的EDS專案啟用](/help/edge/docs/forms/create-forms.md).
 * 您的表單已完整測試且可供使用。
 * 您的 [試算表已設定](/help/edge/docs/forms/submit-forms.md) 以接受資料。
 

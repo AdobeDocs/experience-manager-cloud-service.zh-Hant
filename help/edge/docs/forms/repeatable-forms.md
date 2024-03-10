@@ -5,7 +5,7 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: 062d5a88-48ca-421f-bf0d-1483e3cfee28
-source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
+source-git-commit: 2aa70e78764616f41fe64e324c017873cfba1d5b
 workflow-type: tm+mt
 source-wordcount: '565'
 ht-degree: 8%
@@ -14,7 +14,7 @@ ht-degree: 8%
 
 # 將可重複區段新增至表單
 
-最適化表單區塊提供新增或讓表單的區段或元件可重複的功能。 這可讓使用者為相同型別的資料輸入多次資訊，更輕鬆地收集工作經驗或教育背景等資訊。
+最適化Forms區塊提供新增或讓表單的區段或元件可重複的功能。 這可讓使用者為相同型別的資料輸入多次資訊，更輕鬆地收集工作經驗或教育背景等資訊。
 
 例如，考慮用來收集個人工作體驗相關資訊的表單。 您可以有可重複的區段來擷取先前各工作的詳細資訊。 重複區段通常包含公司名稱、職稱、僱用日期和工作責任等欄位。 使用者可以新增多個可重複區段的執行個體，以輸入有關他們從事的每一個工作的資訊。
 
@@ -81,7 +81,7 @@ The form allows users to provide personal information, including details of the 
 
 ## Prerequisites
 
-The [Adaptive Form block is enabled](/help/edge/docs/forms/create-forms.md) for your Edge Delivery Services project. 
+The [Adaptive Forms Block is enabled](/help/edge/docs/forms/create-forms.md) for your Edge Delivery Services project. 
 
 ## Add a repeatable section to a form 
 
