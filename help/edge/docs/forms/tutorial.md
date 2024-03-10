@@ -4,9 +4,9 @@ description: 本教學課程可協助您啟動並執行新的Adobe Experience Ma
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 30dfe0cfd7f845ba7a27699db22f8c4e61a0f7ed
+source-git-commit: 610f9ba3f342b37d0d20a91c337323bffe95d58d
 workflow-type: tm+mt
-source-wordcount: '1803'
+source-wordcount: '1786'
 ht-degree: 3%
 
 ---
@@ -43,7 +43,7 @@ AEM Forms樣板範本可讓您透過預先設定最適化Forms區塊的AEM專案
 
 ### 開始使用AEM Forms範本存放庫範本
 
-1. 為您的AEM專案建立Github存放庫。 若要建立存放庫：
+1. 為您的AEM專案建立GitHub存放庫。 若要建立存放庫：
    1. 前往 [https://github.com/adobe-rnd/aem-boilerplate-forms](https://github.com/adobe-rnd/aem-boilerplate-forms).
 
       ![AEM Forms樣板](/help/edge/assets/aem-forms-boilerplate.png)
@@ -65,7 +65,7 @@ AEM Forms樣板範本可讓您透過預先設定最適化Forms區塊的AEM專案
    >[!NOTE]
    >
    >
-   > 如果您正在使用具有IP篩選的Github Enterprise，您可以將下列IP新增至允許清單： 3.227.118.73
+   > 如果您正在使用具有IP篩選的GitHub Enterprise，您可以將下列IP新增至允許清單： 3.227.118.73
 
    恭喜！您有一個新網站在執行中 `https://<branch>--<repo>--<owner>.hlx.page/`.
 
@@ -79,11 +79,11 @@ AEM Forms樣板範本可讓您透過預先設定最適化Forms區塊的AEM專案
 
 ### 連結您自己的內容來源
 
-您新建立的Github存放庫指向 [儲存在Google Drive資料夾中的範例內容](https://drive.google.com/drive/folders/17LSiMZC77N8tCJRW45TnHHGcG8V3SLG_). 此唯讀內容是您表單的絕佳起點。 您可以隨意將檔案複製到自己的Google Drive，並根據自己的需求進行自訂。
+您新建立的GitHub存放庫指向 [儲存在Google Drive資料夾中的範例內容](https://drive.google.com/drive/folders/17LSiMZC77N8tCJRW45TnHHGcG8V3SLG_). 此唯讀內容是您表單的絕佳起點。 您可以隨意將檔案複製到自己的Google Drive，並根據自己的需求進行自訂。
 
 ![Google Drive上的範例內容](/help/edge/assets/folder-with-sample-content.png)
 
-若要將範例內容複製到您自己的內容資料夾，並將Github存放庫指向您自己的內容資料夾：
+若要將範例內容複製到您自己的內容資料夾，並將GitHub存放庫指向您自己的內容資料夾：
 
 1. 在Google Drive或Microsoft SharePoint中建立專為AEM內容的新資料夾。 本檔案使用在Microsoft SharePoint上建立的資料夾。
 
@@ -106,7 +106,7 @@ AEM Forms樣板範本可讓您透過預先設定最適化Forms區塊的AEM專案
 
       ![下載範例內容](/help/edge/assets/download-sample-content.png)
 
-      此 `index`， `nav`、和 `footer` 檔案會定義頁面的基本版面，且很少會在整個專案中變更。 這類檔案也具有與其他大多數內容檔案不同的特定結構。 透過檢查這些檔案，您將會瞭解AEM專案中內容的組織方式。
+      此 `index`， `nav`、和 `footer` 檔案會定義頁面的基本版面，且很少會在整個專案中變更。 這類檔案也具有與其他大多數內容檔案不同的特定結構。 透過檢查這些檔案，您將會體會到AEM專案中內容的組織方式。
 
 
    1. 將這些檔案上傳至Microsoft SharePoint或Google Drive資料夾。
@@ -168,7 +168,7 @@ AEM Forms樣板範本可讓您透過預先設定最適化Forms區塊的AEM專案
 
    ![AEM Sidekick — 新增專案](/help/edge/assets/aem-sidekick-add-a-project.png)
 
-   只要已安裝擴充功能並新增專案，您就可以從Google Drive預覽和發佈內容。
+   在安裝擴充功能並新增專案後，您就可以從Google Drive預覽並發佈內容。
 
 1. 選取Microsoft SharePoint或Google Drive資料夾中的所有檔案。 您可以按住Ctrl鍵(Windows/Linux)或Cmd鍵(Mac)，同時按一下以選擇多個檔案。
 
@@ -233,7 +233,7 @@ AEM Forms樣板範本可讓您透過預先設定最適化Forms區塊的AEM專案
        npm install -g @adobe/aem-cli
    ```
 
-1. 複製Github專案：使用下列命令從GitHub複製專案存放庫，取代 <owner> 與存放庫擁有者及 <repo> 存放庫名稱：
+1. 複製GitHub專案：使用下列命令從GitHub複製專案存放庫，取代 <owner> 與存放庫擁有者及 <repo> 存放庫名稱：
 
    ```
    git clone https://github.com/<owner>/<repo>
@@ -281,7 +281,7 @@ AEM Forms樣板範本可讓您透過預先設定最適化Forms區塊的AEM專案
 如果您遇到「無法解析模組「&#39;../../scripts/lib-franklin.js&#39;」的路徑」錯誤，請導覽至 [EDS專案]/blocks/forms/form.js檔案。 將lib-franklin.js檔案取代為aem.js檔案，以更新匯入陳述式。
 
 * **處理Linting錯誤：**
-如果您遇到任何連結錯誤，可以略過這些錯誤。 開啟 [EDS專案]/package.json檔案並將「lint」指令碼從「lint」：「npm run lint：js &amp;&amp; npm run lint：css」修改為「lint」：「echo &#39;skipping linting for now&#39;」。 儲存檔案並將變更提交至您的GitHub專案。
+如果您遇到任何連結錯誤，可以略過這些錯誤。 開啟 [EDS專案]/package.json檔案並修改「lint」指令碼，從 `"lint": "npm run lint:js && npm run lint:css"` 至 `"lint": "echo 'skipping linting for now'"`. 儲存檔案並將變更提交至您的GitHub專案。
 
 
 ## 另請參閱
@@ -289,9 +289,4 @@ AEM Forms樣板範本可讓您透過預先設定最適化Forms區塊的AEM專案
 * [使用Google工作表或Microsoft Excel建立表單](/help/edge/docs/forms/create-forms.md)
 * [直接將表單提交至您的Microsoft Excel或Google工作表](/help/edge/docs/forms/submit-forms.md)
 * [變更表單外觀](/help/edge/docs/forms/style-theme-forms.md)
-
-
-
-
-
 
