@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
-source-git-commit: 5cf8abe43987d145b302228877a38615f21ffd27
+source-git-commit: 67d9eaaf18725403f6a152b04e022cdca6902de0
 workflow-type: tm+mt
-source-wordcount: '823'
+source-wordcount: '932'
 ht-degree: 2%
 
 ---
@@ -41,6 +41,13 @@ Edge Delivery Services 使用 GitHub，因此客戶可以直接從其 GitHub 存
 ![安裝AEM Sidekick](/help/edge/assets/install-aem-sidekick.png)
 
 AEM FormsEdge Delivery Services提供forms區塊，稱為 [最適化Forms區塊](/help/edge/docs/forms/create-forms.md) 以新增表單至您的Edge Delivery Services網站。
+
+選擇 [document-based authoring](#document-based-authoring-features) 和 [AEM製作](#aem-authoring-features) 取決於您的特定需求。
+
+對於只收集基本資訊的簡單表單，例如姓名和電子郵件（可以考慮聯絡我們表單、潛在客戶產生表單或服務請求表單），以及您只需要將資料移至試算表的地方， [檔案式製作](/help/edge/docs/forms/create-forms.md) 非常適合。 您可以建立這些表單，就像在Google檔案中建立檔案一樣。
+
+如果您的表單變得更複雜，例如需要多個面板、複雜規則和商業邏輯、資料操控、與外部系統整合，或使用AEM功能簡化工作流程，則 [AEM製作](/help/forms/creating-adaptive-form-core-components.md) 是更好的選擇。
+
 
 ### 檔案式撰寫和AEM撰寫的主要功能
 
@@ -119,6 +126,13 @@ AEM Authoring (使用最適化Forms編輯器)提供用於建立表單的WYSIWYG�
 * 能夠設定多個提交動作以處理表單提交，包括提交資料至Microsoft SharePoint、Microsoft OneDrive、Adobe Workfront Fusion、Salesforce、Microsoft Dynamics以及其他許多資料來源。
 
 實質上，AEM Authoring是以「檔案式撰寫」為基礎，提供更進階的工具組來建立和管理複雜的表單。
+
+### 編寫工作流程
+
+![檔案式撰寫](/help/edge/assets/document-based-authoring-workflow.png)
+
+![AEM製作](/help/edge/assets/aem-authoring-workflow.png)
+
 
 ## 開始建立表單
 
