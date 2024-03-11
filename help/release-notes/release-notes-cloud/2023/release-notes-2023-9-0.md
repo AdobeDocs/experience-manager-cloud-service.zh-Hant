@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2023.9.0 版發行說明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2023.9.0 版發行說明。'
 exl-id: d747f58b-8d6c-418d-9d2b-ec3ae4b6dc03
-source-git-commit: 3bec7e0387a5e04a7748a3b7341c17a993c6feb9
+source-git-commit: d91254b52c257a3758da200a2c74b736ca457884
 workflow-type: tm+mt
 source-wordcount: '1440'
-ht-degree: 98%
+ht-degree: 95%
 
 ---
 
@@ -56,7 +56,7 @@ Edge Delivery 是一組可組合的新服務，著重在最大限度地發揮內
 
 ### 管理員檢視中的新功能 {#admin-view-features}
 
-* **整合 AEM Assets as a Cloud Service 與 Edge Delivery Services 文件型撰寫功能**：整合 AEM Assets as a Cloud Service 與 Edge Delivery Services 文件型撰寫功能，讓網站撰寫者能[在 Microsoft Word 或 Google 文件中撰寫文件時使用 AEM Assets 存放庫中提供的影像](/help/edge/using.md#integrate-assets-edge)。
+* **將AEM Assetsas a Cloud Service與Edge Delivery Services的檔案式製作整合**：整合AEM Assets與檔案式製作以供Edge Delivery Services使用，讓網站作者能夠 [在AEM Assets Word或Google檔案中編寫檔案時，使用Microsoft存放庫中的可用影像](/help/edge/using.md#integrate-assets-edge).
 
 * **擷取 ZIP 封存**：能夠選取在 Experience Manager 中管理的 ZIP 存檔，並可[將檔案直接擷取至 Experience Manager 中的檔案](/help/assets/manage-digital-assets.md#extract-zip-archives)無需下載。
 

@@ -5,22 +5,21 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
-source-git-commit: 67d9eaaf18725403f6a152b04e022cdca6902de0
+source-git-commit: d91254b52c257a3758da200a2c74b736ca457884
 workflow-type: tm+mt
-source-wordcount: '932'
-ht-degree: 2%
+source-wordcount: '937'
+ht-degree: 0%
 
 ---
 
 # AEM FormsEdge Delivery Services
 
-AEM Forms Edge Delivery Services是一組可撰寫的服務，可啟用快速開發環境，讓作者可以快速更新及發佈，並快速啟動新表單。
+AEM Forms Edge Delivery Services是一組可撰寫的服務，可啟用快速的開發環境，讓作者可以快速更新、發佈和啟動新表單。 這些服務提供卓越且高影響力的表單體驗，可促進參與和轉換。 這些表單體驗易於編寫和開發。
 
-AEM FormsEdge Delivery Services提供卓越的表單體驗，可促進參與和轉換，實現易於編寫和開發的高影響力體驗。
 
 這些服務可讓您：
 
-* **使用您選擇的工具建立註冊體驗：** 透過分離內容來源來提高撰寫效率。 開箱即用地使用檔案式編寫(Microsoft SharePoint或Google Drive)和AEM編寫(最適化Forms編輯器)。 因此，您可以在相同表單上使用多個內容來源，並使用您偏好的編寫工具，例如Microsoft Excel、Google Sheets或Adaptive Forms Editor。
+* **使用您選擇的工具建立註冊體驗：** 透過分離內容來源來提高撰寫效率。 開箱即用地使用檔案式編寫(Microsoft SharePoint或Google Drive)和AEM編寫(最適化Forms編輯器)。 您可以在相同的表單網站上使用多個內容來源，並使用您偏好的編寫工具，例如Microsoft Excel、Google Sheets或Adaptive Forms Editor。
 
 * **提供卓越的數位註冊體驗：** 提供可快速載入及轉譯的數位註冊體驗。 載入時間更快，使用者體驗最佳化，有助於提高表單完成率和轉換率。
 
@@ -28,38 +27,40 @@ AEM FormsEdge Delivery Services提供卓越的表單體驗，可促進參與和�
 
 ## AEM FormsEdge Delivery Services概觀 {#edge-overview}
 
-下圖說明如何在Microsoft Excel或Google Sheets中編輯表單（以檔案為基礎的編輯）並發佈至Edge Delivery Services。 此外也顯示使用最適化Forms編輯器的AEM發佈方法。
+下圖說明如何在Microsoft Excel或Google Sheets （檔案式製作）中編輯表單及發佈至Edge Delivery Services。 它也會顯示使用最適化Forms編輯器(AEM製作)的AEM發佈方法。
 
 ![Edge Delivery 架構](/help/edge/assets/AEM-forms-with-EDS-publishing.png)
 
-AEM Forms Edge Delivery Services是一組可撰寫的服務，可讓您在網站上撰寫表單時擁有高度彈性。 您可以使用兩種AEM內容管理 [AEM製作](/help/forms/creating-adaptive-form-core-components.md) 以及 [document-based authoring](/help/edge/docs/forms/create-forms.md).
+AEM Forms Edge Delivery Services是一組可撰寫的服務，可讓您在網站上撰寫表單時擁有高度彈性。 您可以使用兩種AEM內容管理 [AEM製作](/help/forms/creating-adaptive-form-core-components.md) 以及 [檔案式製作](/help/edge/docs/forms/create-forms.md).
 
-例如，您直接在Microsoft Excel或Google工作表中編寫表單，而這些試算表會轉換為您網站的表單。 任何新表單內容（例如新表單欄位）都可立即在您的網站上使用，而無需重新建置流程。
+例如，您直接在Microsoft Excel或Google工作表中編寫表單，而這些試算表會轉換為您網站的表單。 任何新表單或表單內容（例如新表單欄位）都可立即在您的網站上使用，而無需重新建置流程。
 
-Edge Delivery Services 使用 GitHub，因此客戶可以直接從其 GitHub 存放庫管理和部署程式碼。例如，您可以用下列方式撰寫表單： [Google Sheets或Microsoft Excel](/help/edge/docs/forms/create-forms.md) 且可在GitHub中使用CSS和JavaScript來開發表單的元件。 準備就緒後，您可以使用 [AEM Sidekick](/help/edge/docs/forms/tutorial.md#preview-and-publish-your-content) 用於預覽和發佈內容更新的瀏覽器擴充功能。
+AEM FormsEdge Delivery Services使用GitHub，因此客戶可以直接從其GitHub存放庫管理和部署程式碼。 例如，您可以用下列方式撰寫表單： [Google Sheets或Microsoft Excel](/help/edge/docs/forms/create-forms.md) 且可在GitHub中使用CSS和JavaScript來開發表單的元件。
+
+準備就緒後，您可以使用 [AEM Sidekick](/help/edge/docs/forms/tutorial.md#preview-and-publish-your-content)，一種chrome瀏覽器擴充功能，可預覽和發佈內容更新。
 
 ![安裝AEM Sidekick](/help/edge/assets/install-aem-sidekick.png)
 
 AEM FormsEdge Delivery Services提供forms區塊，稱為 [最適化Forms區塊](/help/edge/docs/forms/create-forms.md) 以新增表單至您的Edge Delivery Services網站。
 
-選擇 [document-based authoring](#document-based-authoring-features) 和 [AEM製作](#aem-authoring-features) 取決於您的特定需求。
+選擇 [檔案式製作](#document-based-authoring-features) 和 [AEM製作](#aem-authoring-features) 取決於您的特定需求。
 
-對於只收集基本資訊的簡單表單，例如姓名和電子郵件（可以考慮聯絡我們表單、潛在客戶產生表單或服務請求表單），以及您只需要將資料移至試算表的地方， [檔案式製作](/help/edge/docs/forms/create-forms.md) 非常適合。 您可以建立這些表單，就像在Google檔案中建立檔案一樣。
+對於只收集基本資訊的簡單表單，例如姓名和電子郵件（可以考慮聯絡我們表單、潛在客戶產生表單或服務請求表單），以及您只需要將資料移至試算表的地方， [檔案式製作](/help/edge/docs/forms/create-forms.md) 非常適合。 您可以建置這些表單，就像在Google Sheets或Microsoft Excel中建置檔案一樣。
 
 如果您的表單變得更複雜，例如需要多個面板、複雜規則和商業邏輯、資料操控、與外部系統整合，或使用AEM功能簡化工作流程，則 [AEM製作](/help/forms/creating-adaptive-form-core-components.md) 是更好的選擇。
 
 
 ### 檔案式撰寫和AEM撰寫的主要功能
 
-檔案式撰寫提供了一組基本功能，AEM撰寫開啟了檔案式撰寫以外的其他功能，讓您能夠建立更複雜且互動式的表單。 Document-based Authoring和AEM Authoring的主要功能包括：
+檔案式撰寫提供一組基本功能，AEM撰寫開啟了檔案式撰寫以外的其他功能，讓您能夠建立更複雜且互動式的表單。 Document-based Authoring和AEM Authoring的主要功能包括：
 
 <!-- 
 
 >[!BEGINTABS]
 
->[!TAB Document-based authoring]
+>[!TAB Document-based Authoring ]
 
-Document-based authoring is a versatile option suitable for creating simple forms with essential functionalities. It allows you to integrate various input types like text fields, dropdown menus, and radio buttons, enabling you to collect user data effectively. It offers a basic version of rules to add dynamic behaviour to forms. Key features of Document-based authoring are: 
+Document-based Authoring  is a versatile option suitable for creating simple forms with essential functionalities. It allows you to integrate various input types like text fields, dropdown menus, and radio buttons, enabling you to collect user data effectively. It offers a basic version of rules to add dynamic behaviour to forms. Key features of Document-based Authoring  are: 
 
 * **[HTML5-based Form Field components](/help/edge/docs/forms/form-components.md)**: AEM Forms Edge Delivery Services allow you to create user-friendly and interactive forms using form components based on HTML5 [input types](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types), <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea">textarea</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select">select</a>, and <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset">fieldset</a>  elements. These components cater to different types of data collection and can be easily customized to fit your specific needs.  
 
@@ -79,7 +80,7 @@ Document-based authoring is a versatile option suitable for creating simple form
 
 >[!TAB AEM Authoring]
 
-AEM Authoring unlocks additional capabilities beyond the document-based authoring, empowering you to build more complex and interactive forms. In additon to the features of Document-based authoring, AEM authoring offers the following additional features:  
+AEM Authoring unlocks additional capabilities beyond the Document-based Authoring , empowering you to build more complex and interactive forms. In additon to the features of Document-based Authoring , AEM authoring offers the following additional features:  
 
 * Advanced Rules: Define logic-based actions within your forms. You can use rules to conditionally show or hide form sections, pre-populate fields based on user input, and perform various validations to ensure data integrity.
 
@@ -113,7 +114,7 @@ AEM Authoring unlocks additional capabilities beyond the document-based authorin
 
 #### AEM編寫功能
 
-AEM Authoring (使用最適化Forms編輯器)提供用於建立表單的WYSIWYG介面，並提供檔案式製作的所有功能，以及各種其他功能：
+AEM Authoring提供用於建立表單的WYSIWYG介面(最適化Forms編輯器)，並提供檔案式製作的所有功能，以及各種其他功能：
 
 * 用於建立複雜邏輯的進階規則編輯器。
 * 自訂功能的伺服器端擴充性。
@@ -125,11 +126,11 @@ AEM Authoring (使用最適化Forms編輯器)提供用於建立表單的WYSIWYG�
 * 表單資料模型，用於定義資料結構以及與各種資料來源的互動。
 * 能夠設定多個提交動作以處理表單提交，包括提交資料至Microsoft SharePoint、Microsoft OneDrive、Adobe Workfront Fusion、Salesforce、Microsoft Dynamics以及其他許多資料來源。
 
-實質上，AEM Authoring是以「檔案式撰寫」為基礎，提供更進階的工具組來建立和管理複雜的表單。
+本質上，AEM Authoring是以Document-based Authoring為基礎，提供更進階的工具組來建立和管理複雜的表單。
 
 ### 編寫工作流程
 
-![檔案式撰寫](/help/edge/assets/document-based-authoring-workflow.png)
+![檔案式製作 ](/help/edge/assets/document-based-authoring-workflow.png)
 
 ![AEM製作](/help/edge/assets/aem-authoring-workflow.png)
 

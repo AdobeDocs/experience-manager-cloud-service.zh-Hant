@@ -5,10 +5,10 @@ contentOwner: AK
 feature: Asset Management
 role: User,Leader,Architect
 exl-id: 4437f214-d058-4975-8b8f-869a12c8103b
-source-git-commit: b3bfc841f0609e1e529c97dd1f11d16de561701c
-workflow-type: ht
+source-git-commit: d91254b52c257a3758da200a2c74b736ca457884
+workflow-type: tm+mt
 source-wordcount: '892'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 
@@ -54,11 +54,11 @@ DAM 圖書管理員、開發人員和超級使用者可以繼續使用管理員�
 
 如需了解如何存取資產檢視和管理員檢視帶來的一些簡化操作，請參閱[資產檢視簡介](/help/assets/assets-view-introduction.md)。
 
-## Edge Delivery Services 的文件型撰寫整合 {#integrate-doc-authoring-edge-and-assets}
+## 與Edge Delivery Services的檔案式製作整合 {#integrate-doc-authoring-edge-and-assets}
 
 Edge Delivery 讓您能夠建立快速、引人入勝的網站，作者可以在其中快速更新和發佈內容，並且可以快速啟動新網站。
 
-將 AEM Assets 與 Edge Delivery Services 文件型撰寫整合，讓網站作者能夠在 Microsoft Word 或 Google Docs 中撰寫文件時使用 AEM Assets 存放庫中提供的影像。如需詳細資訊，請參閱[將 AEM Assets 與文件型撰寫整合](/help/edge/using.md#integrate-assets-edge)。
+將AEM Assets與檔案式製作功能整合以供Edge Delivery Services使用，讓網站作者在AEM Assets Word或Google檔案中製作檔案時，能夠使用Microsoft存放庫中的可用影像。 如需詳細資訊，請參閱 [將AEM Assets與檔案式製作整合](/help/edge/using.md#integrate-assets-edge).
 
 ## 與 Adobe Journey Optimizer 整合 {#integration-with-ajo}
 

@@ -2,10 +2,10 @@
 title: Adobe Experience Manager as a Cloud Service 架構簡介
 description: Adobe Experience Manager as a Cloud Service 架構簡介。
 exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
-source-git-commit: 25af074bcb32e47732b27bacf10c8d3435299440
+source-git-commit: d91254b52c257a3758da200a2c74b736ca457884
 workflow-type: tm+mt
 source-wordcount: '2713'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -82,8 +82,7 @@ AEM as a Cloud Service 中的高層級可組合服務清單可以用兩個區段
 提供網頁型介面 (具備相關聯的 API) 來管理網頁內容。這適用於兩種方法：
    * 有周邊 - 透過頁面編輯器和 Universal Editor
    * Headless - 透過內容片段編輯器
-* 文件型製作層：
-可讓您使用標準應用程式製作內容，例如：
+* 檔案型編寫階層：可讓您使用標準應用程式來編寫內容，例如：
    * Microsoft Word 和 Excel - 透過 SharePoint
    * Google 文件和試算表 - 透過 Google 雲端硬碟
 
@@ -93,7 +92,7 @@ AEM as a Cloud Service 中的高層級可組合服務清單可以用兩個區段
    * 執行標準 AEM 發佈器和 Dispatcher 陣列，允許動態呈現網頁以及已集結發佈內容的 API 內容 (例如 GraphQL)。
    * 主要以伺服器端應用程式邏輯為基礎。
 * Edge Delivery 發佈層：
-   * 允許動態呈現來自各種內容來源 (例如 AEM 製作層或文件型製作層) 的網頁和 API 內容。
+   * 允許動態呈現來自各種內容來源(例如AEM作者層級或檔案型編寫層)的網頁和API內容。
    * 以用戶端應用程式邏輯為基礎，專門發揮最大效能。
 
 還有關鍵的相鄰服務：
@@ -160,9 +159,9 @@ AEM 預覽層是由單一 AEM 節點組成。在發佈至發佈層之前，這�
 
 Edge Delivery Services 是在 CDN 和無伺服器基礎結構上運作，以最高效的方式組合頁面。要求資源時，無伺服器基礎結構會負責將發佈的內容轉換為語義 HTML，並作為 CDN 的來源。
 
-對語義 HTML 的轉換發生自 AEM 製作層或文件型製作環境所提供的已發佈內容中。
+語意HTML的轉換從AEM製作層級或檔案式製作環境的已發佈內容進行。
 
-下圖說明如何在 Microsoft Word (文件型製作) 中編輯 Sites 內容並將其發佈到 Edge Delivery。圖中還展示了使用各種編輯器的傳統 AEM 發佈方法。
+下圖說明如何在Microsoft Word （檔案式製作）中編輯Sites內容，以及如何發佈至Edge Delivery。 圖中還展示了使用各種編輯器的傳統 AEM 發佈方法。
 
 ![AEM Sites as a Cloud Service - 使用 Edge Delivery Services](assets/architecture-aem-edge-author-publish.png "AEM Sites as a Cloud Service - 使用 Edge Delivery Services")
 

@@ -5,107 +5,111 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: dcb16da1-dcc2-4529-8859-0716e727b54d
-source-git-commit: 2aa70e78764616f41fe64e324c017873cfba1d5b
+source-git-commit: d91254b52c257a3758da200a2c74b736ca457884
 workflow-type: tm+mt
 source-wordcount: '530'
-ht-degree: 6%
+ht-degree: 97%
 
 ---
 
 # 發佈您的表單
 
-準備好與您的客戶共用表單以進行資料收集或提交後，您就可以發佈表單，讓客戶隨時可以使用表單。
+一旦您準備好與客戶分享表單以收集或提交資料，您只需發佈表單並供客戶隨時使用即可。
 
 ![檔案式撰寫生態系統](/help/edge/assets/document-based-authoring-workflow-publish-form.png)
 
-## 先決條件
+## 必要條件 
 
 * 此 [最適化Forms區塊已在GitHub上為您的EDS專案啟用](/help/edge/docs/forms/create-forms.md).
-* 您的表單已完整測試且可供使用。
-* 您的 [試算表已設定](/help/edge/docs/forms/submit-forms.md) 以接受資料。
+* 您的表單已經過全面測試並可供使用。
+* 您的[試算表已設定](/help/edge/docs/forms/submit-forms.md)可接受資料。
 
 ## 發佈您的表單
 
-+++ 1.發佈您的試算表
++++ 1. 發佈您的試算表
 
-1. 開啟Microsoft SharePoint或Google Drive帳戶，並導覽至AEM Edge Delivery專案目錄。
+1. 開啟 Microsoft SharePoint 或 Google Drive 帳戶，然後導覽至您的 AEM Edge Delivery 專案目錄。
 
-1. 開啟具有您的表單的試算表。 例如， `enquiry` 表單Microsoft Excel活頁簿。
+1. 開啟包含您表單的試算表。例如， `enquiry`表單 Microsoft Excel 工作簿。
 
-1. 使用 [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) 以預覽頁面。
+1. 使用 [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) 來預覽工作表。
 
-   ![使用AEM Sidekick預覽工作表](/help/edge/assets/preview-form.png)
+   ![使用 AEM Sidekick 來預覽工作表](/help/edge/assets/preview-form.png)
 
-   成功完成預覽作業後，試算表內容會轉換為JSON格式。 預覽頁面接著會以結構化表格格式顯示此內容。 例如，隨附的影像會說明「查詢」表單的內容。
+   成功完成預覽作業後，試算表內容將轉換為 JSON 格式。然後，預覽頁面以結構化表格格式呈現該內容。例如，附圖說明「查詢」表單的內容。
 
-   ![Forms預覽JSON格式](/help/edge/assets/forms-preview-json-format.png)
+   ![表單預覽 JSON 格式](/help/edge/assets/forms-preview-json-format.png)
 
-1. 使用AEM Sidekick發佈工作表。 請務必擷取發佈URL，因為這是呈現下一區段中的表單所需。 URL格式如下：
+1. 使用 AEM Sidekick 來發佈工作表。確保擷取發佈 URL，因為這是在下個區段中呈現表單必要的項目。URL 格式如下：
 
 
    ```JSON
        https://<branch>--<repository>--<owner>.hlx.live/<form>.json
    ```
 
-   * `<branch>` 是指GitHub存放庫的分支。
-   * `<repository>` 代表您的GitHub存放庫。
-   * `<owner>` 是指代管GitHub存放庫的GitHub帳戶使用者名稱。
+   * `<branch>`是指 GitHub 存放庫的分支。
+   * `<repository>`表示您的 GitHub 存放庫。
+   * `<owner>`是指託管 GitHub 存放庫的 GitHub 帳戶使用者名稱。
 
-   例如，如果您的專案存放庫命名為「入口網站」，它位在帳戶「wkandforms」底下，而您使用的是「主要」分支，則URL看起來如下所示：
+   例如，如果您的專案存放庫名為 “portal” (位於帳戶 “wkndforms” 下面)，並且您使用的是「主要」分支，則 URL 如下所示：
 
    `https://main--portal--wkndforms.hlx.page/enquiry.json`
 
 +++
 
-+++ 2.將表單新增至網頁
++++ 2. 新增表單至您的網頁
 
-新增 `<form>.json` 以方便客戶互動，讓表單填寫者輕鬆填寫及提交表單。
+將`<form>.json`新增至網頁以方便客戶互動，讓表單填寫者能夠輕鬆填寫並提交表單。
 
 
-若要將表單新增至網頁：
+若要新增表單至您的網頁：
 
-1. 存取您的Microsoft SharePoint或Google Drive帳戶，並導覽至 `[AEM Edge Delivery project directory]`.
+1. 存取您的 Microsoft SharePoint 或 Google Drive 帳戶並導覽到您的 `[AEM Edge Delivery project directory]`。
 
-1. 開啟您打算嵌入表單的檔案檔案。 例如，您可以開啟 `index.docx` 檔案，或建立新檔案。
+1. 開啟要嵌入表單的文件檔案。例如，您可以開啟 `index.docx` 檔案，或建立一個新文件。
 
-1. 識別檔案中要插入表單的所需區段，並據此導覽至該區段。
+1. 確定文件中要插入表單的所要區段，然後導覽至該區段。
 
-1. 將名為「Form」的區塊新增至檔案，類似於以下提供的範例：
+1. 新增名為 &#39;Form&#39; 的區塊至檔案中，類似於下面提供的範例。
 
    | 表單 |
    |---|
    | [https://main--portal--wkndforms.hlx.live/enquiry.json](https://main--portal--wkndforms.hlx.live/enquiry.json) |
 
-   此區塊可作為內嵌表單的預留位置。 在區塊的第二列中，新增 `<form>.json` 檔案做為超連結。
+   此區塊是用作嵌入表單的暫留位置。在該區塊的第二行中，新增 `<form>.json` 檔案的 URL 作為超連結。
 
    >[!IMPORTANT]
    >
    >
-   > 請確定URL的格式為超連結，而非顯示為純文字。
+   > 確保 URL 的格式為超連接，而不是顯示為純文字。
 
-   將預覽URL (.page URL)用於開發或測試目的，或將發佈URL (.live)用於生產。 以下是預覽和發佈URL的範例：
+   使用預覽 URL (.page URL) 進行開發或測試，或使用發佈 URL (.live) 進行生產。以下是帶有預覽和發佈 URL 的範例：
 
-   **預覽URL**
-| 表單 | |—| | [https://main--portal--wkndforms.hlx.page/enquiry.json](https://main--portal--wkndforms.hlx.page/enquiry.json)  |
-
-
-   **發佈URL**
-| 表單 | |—| | [https://main--portal--wkndforms.hlx.live/enquiry.json](https://main--portal--wkndforms.hlx.live/enquiry.json)  |
-
-1. 使用 [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) 以預覽網頁。 頁面現在會顯示表單。例如，以下是根據 [查詢試算表](https://docs.google.com/spreadsheets/d/196lukD028RDK_evBelkOonPxC7w0l_IiJ-Yx3DvMfNk/edit#gid=0)：
+   **預覽 URL**
+| Form  |
+|---|
+| [https://main--portal--wkndforms.hlx.page/enquiry.json](https://main--portal--wkndforms.hlx.page/enquiry.json)  |
 
 
-   [![EDS表單範例](/help/edge/assets/eds-form.png)](https://main--portal--wkndforms.hlx.live/)
+   **發佈 URL**
+| Form  |
+|---|
+| [https://main--portal--wkndforms.hlx.live/enquiry.json](https://main--portal--wkndforms.hlx.live/enquiry.json)  |
 
-1. 使用AEM Sidekick發佈表單。 現在，您的客戶可以填寫並提交表單。
+1. 使用 [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) 來預覽網頁。頁面現在會顯示表單。例如，這是以[查詢試算表](https://docs.google.com/spreadsheets/d/196lukD028RDK_evBelkOonPxC7w0l_IiJ-Yx3DvMfNk/edit#gid=0)為主的表單：
+
+
+   [![EDS Form 範本](/help/edge/assets/eds-form.png)](https://main--portal--wkndforms.hlx.live/)
+
+1. 使用 AEM Sidekick 來發佈表單。現在，您的客戶可以填寫表格並提交。
 
 +++
 
 ## 疑難排解
 
-+++ 無法提交資料至表單
++++ 無法向表單提交資料
 
-如果您遇到類似下列訊息的錯誤，表示試算表未設定為 [接受已提交的](/help/edge/docs/forms/submit-forms.md) 資料尚未完成。
+如果您遇到類似以下訊息的錯誤，則表示試算表尚未設定為[接受提交的](/help/edge/docs/forms/submit-forms.md)資料。
 
 ![在表單提交時的錯誤](/help/edge/assets/form-error.png)
 

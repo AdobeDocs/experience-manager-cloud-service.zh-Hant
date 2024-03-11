@@ -4,10 +4,10 @@ description: 本教學課程可協助您啟動並執行新的Adobe Experience Ma
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 14171647dce7d2f6ce985616035eefa62c6955db
+source-git-commit: d91254b52c257a3758da200a2c74b736ca457884
 workflow-type: tm+mt
 source-wordcount: '1878'
-ht-degree: 3%
+ht-degree: 10%
 
 ---
 
@@ -18,11 +18,11 @@ ht-degree: 3%
 
 這些表單可直接提交資料至 Microsoft Excel 或 Google Sheets 檔案，讓您能夠使用由 Google Sheets、Microsoft Excel 和 Microsoft Sharepoint 等強大 API 建構的活躍生態系統，以便輕鬆處理提交的資料或啟動現有的業務工作流程。
 
-AEM Forms提供稱為最適化Forms區塊的區塊，可協助您輕鬆建立表單，以擷取及儲存擷取的資料。 您可以建立已預先配備最適化Forms區塊的新AEM專案，或將最適化Forms區塊新增到現有AEM專案。
+AEM Forms提供稱為最適化Forms區塊的區塊，可協助您輕鬆建立表單，以擷取及儲存擷取的資料。 您可以建立已預先設定最適化Forms區塊的新AEM專案，或將最適化Forms區塊新增至現有AEM專案。
 
 此AEM Forms教學課程會引導您使用新的Adobe Experience Manager (AEM) Forms專案來建立、預覽和發佈您自己的自訂表單。 您還將瞭解如何將Adaptive Forms區塊新增至現有的AEM專案。
 
-* **[建立預先配備最適化Forms區塊的新AEM專案](#create-a-new-eds-project-pre-equipped-with-adaptive-forms-block)**
+* **[建立已預先設定最適化Forms區塊的新AEM專案](#create-a-new-eds-project-pre-configured-with-adaptive-forms-block)**
 * **[將最適化Forms區塊新增至現有的AEM專案](#add-adaptive-forms-block-to-an-existing-eds-project)**
 
 
@@ -37,7 +37,7 @@ AEM Forms提供稱為最適化Forms區塊的區塊，可協助您輕鬆建立表
 **抬頭！** 本教學課程使用macOS、Chrome和Visual Studio Code。 雖然這些步驟可以適應其他設定，但熒幕擷取畫面和特定UI元素可能會因您選擇的作業系統、瀏覽器和程式碼編輯器而有所不同。
 
 
-## 建立預先配備最適化Forms區塊的新AEM專案
+## 建立已預先設定最適化Forms區塊的新AEM專案
 
 AEM Forms樣板範本可讓您透過預先設定最適化Forms區塊的AEM專案快速入門。 這是遵循AEM最佳實務並直接開始建立您的表單的最快速、最簡單的方法。
 
@@ -69,9 +69,9 @@ AEM Forms樣板範本可讓您透過預先設定最適化Forms區塊的AEM專案
 
    恭喜！您有一個新網站在執行中 `https://<branch>--<repo>--<owner>.hlx.page/`.
 
-   * `<branch>` 是指GitHub存放庫的分支。
-   * `<repository>` 代表您的GitHub存放庫。
-   * `<owner>` 是指代管GitHub存放庫的GitHub帳戶使用者名稱。
+   * `<branch>`是指 GitHub 存放庫的分支。
+   * `<repository>`表示您的 GitHub 存放庫。
+   * `<owner>`是指託管 GitHub 存放庫的 GitHub 帳戶使用者名稱。
 
    例如，如果分支名稱為 `main`，存放庫為 `wefinance`，而擁有者為 `wkndforms`，網站將會在 [https://main--wefinance--wkndforms.hlx.page/](https://main--wefinance--wkndforms.hlx.page/).
 
@@ -185,9 +185,9 @@ AEM Forms樣板範本可讓您透過預先設定最適化Forms區塊的AEM專案
    https://<branch>--<repository>--<owner>.hlx.live
    ```
 
-   * `<branch>` 是指GitHub存放庫的分支。
-   * `<repository>` 代表您的GitHub存放庫。
-   * `<owner>` 是指代管GitHub存放庫的GitHub帳戶使用者名稱。
+   * `<branch>`是指 GitHub 存放庫的分支。
+   * `<repository>`表示您的 GitHub 存放庫。
+   * `<owner>`是指託管 GitHub 存放庫的 GitHub 帳戶使用者名稱。
 
 
    `https://<branch>--<repo>--<owner>.hlx.page/enquiry` URL。
@@ -288,13 +288,13 @@ AEM Forms樣板範本可讓您透過預先設定最適化Forms區塊的AEM專案
 
 ## 疑難排解GitHub建置問題
 
-解決下列潛在問題，確保GitHub建置流程順暢：
+解決潛在問題以確保 GitHub 建置過程順利進行：
 
 * **解決模組路徑錯誤：**
-如果您遇到「無法解析模組「&#39;../../scripts/lib-franklin.js&#39;」的路徑」錯誤，請導覽至 [EDS專案]/blocks/forms/form.js檔案。 將lib-franklin.js檔案取代為aem.js檔案，以更新匯入陳述式。
+如果遇到「無法解決 &quot;../../scripts/lib-franklin.js&quot; 模組的路徑」錯誤，請導覽至 [EDS Project]/blocks/forms/form.js 檔案。透過將 lib-franklin.js 檔案更換為 aem.js 檔案來更新匯入語句。
 
-* **處理Linting錯誤：**
-如果您遇到任何連結錯誤，可以略過這些錯誤。 開啟 [EDS專案]/package.json檔案並修改「lint」指令碼，從 `"lint": "npm run lint:js && npm run lint:css"` 至 `"lint": "echo 'skipping linting for now'"`. 儲存檔案並將變更提交至您的GitHub專案。
+* **處理 Linting 錯誤：**
+如果您遇到任何 linting 錯誤，您可以略過不予處理。開啟 [EDS專案]/package.json檔案並修改「lint」指令碼，從 `"lint": "npm run lint:js && npm run lint:css"` 至 `"lint": "echo 'skipping linting for now'"`. 儲存檔案並將變更提交至您的 GitHub 專案。
 
 
 ## 另請參閱

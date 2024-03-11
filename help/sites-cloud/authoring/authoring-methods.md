@@ -2,13 +2,13 @@
 title: 在AEM中創作內容的方法
 description: 瞭解您可以在AEM中編寫內容的不同方式以及它們之間的差異。
 feature: Authoring
-source-git-commit: faac7c803a5145f4207154bfb3c9aa06274bbb86
+exl-id: ef482843-451b-474e-a8d0-d0bfcc17221b
+source-git-commit: d91254b52c257a3758da200a2c74b736ca457884
 workflow-type: tm+mt
 source-wordcount: '554'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
-
 
 # 在AEM中創作內容的方法 {#authoring-methods}
 
@@ -63,12 +63,12 @@ Universal Editor是現代化的UI，可讓您以不受內容限制的方式創�
 
 若要深入瞭解通用編輯器，請參閱本檔案 [使用通用編輯器製作內容。](/help/sites-cloud/authoring/universal-editor/authoring.md)
 
-## 以文件為主的製作 {#document-based}
+## 檔案式製作  {#document-based}
 
 Microsoft Google如果您使用Edge Delivery Services，您可以選擇在 [AEM **網站** 主控台。](/help/sites-cloud/authoring/sites-console/introduction.md)
 
 ![編輯檔案型內容](assets/authoring-methods-document.jpg)
 
-透過檔案式撰寫，作者可以使用他們已有的工具，並且仍可受益於AEMEdge Delivery Services的速度和效能來發佈其內容。 檔案式撰寫不需要使用AEM主控台。
+有了檔案式撰寫，作者可以使用他們已經知道的工具，並且仍可受益於AEMEdge Delivery Services的速度和效能來發佈其內容。 檔案式製作不需要使用AEM主控台。
 
 若要深入瞭解檔案式撰寫，請參閱檔案 [為Edge Delivery Services製作內容。](/help/edge/authoring.md)
