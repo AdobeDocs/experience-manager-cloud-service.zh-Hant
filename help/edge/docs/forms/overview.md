@@ -5,43 +5,46 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
-source-git-commit: 610f9ba3f342b37d0d20a91c337323bffe95d58d
+source-git-commit: 5cf8abe43987d145b302228877a38615f21ffd27
 workflow-type: tm+mt
-source-wordcount: '652'
-ht-degree: 18%
+source-wordcount: '823'
+ht-degree: 2%
 
 ---
 
 # AEM FormsEdge Delivery Services
 
-透過Adobe的AEM FormsEdge Delivery Services，簡化表單建立流程並提高完成率。 這些功能強大、可撰寫的服務可讓您建立具有卓越效能和視覺吸引力的企業級表單。 AEM會同時優先考慮使用者體驗和業務目標，確保超快的載入時間和更高的表單轉換率。
+AEM Forms Edge Delivery Services是一組可撰寫的服務，可啟用快速開發環境，讓作者可以快速更新及發佈，並快速啟動新表單。
 
-您可以使用該服務來：
+AEM FormsEdge Delivery Services提供卓越的表單體驗，可促進參與和轉換，實現易於編寫和開發的高影響力體驗。
 
-* **建立卓越的註冊體驗**：建立可快速載入和轉譯的註冊體驗，即使在網際網路連線速度緩慢時亦然。 更快的載入時間和最佳化使用者體驗有助於提高表單完成率和轉換率。
+這些服務可讓您：
 
-* **使用您選擇的工具建立註冊體驗**：透過分離內容來源來提高編寫效率。 現成可用兩者 **document-based authoring** (Microsoft SharePoint或Google Drive)和 **AEM製作** (最適化Forms編輯器)。 因此，您可以在相同表單上使用多個內容來源，並使用您偏好的編寫工具，例如Microsoft Excel、Google Sheets或Adaptive Forms Editor。
+* **使用您選擇的工具建立註冊體驗：** 透過分離內容來源來提高撰寫效率。 開箱即用地使用檔案式編寫(Microsoft SharePoint或Google Drive)和AEM編寫(最適化Forms編輯器)。 因此，您可以在相同表單上使用多個內容來源，並使用您偏好的編寫工具，例如Microsoft Excel、Google Sheets或Adaptive Forms Editor。
 
-* **使用開發人員友善的工具集：** AEM Forms使用純HTML、新式CSS和vanilla JavaScript，建立卓越的體驗，免除平常的額外負荷。 任何具備HTML、CSS和JS基礎知識的開發人員都應該能夠建立自己的元件，而且不需要學習任何特定語言或架構。 無需任何管道或等待，將您的程式碼簽入Github中且您的變更已上線。 此外，無需任何管道或等待，您可以將程式碼簽入Github中，且您的變更已上線。
+* **提供卓越的數位註冊體驗：** 提供可快速載入及轉譯的數位註冊體驗。 載入時間更快，使用者體驗最佳化，有助於提高表單完成率和轉換率。
 
+* **使用開發人員友善的工具集：** AEM Forms使用純HTML、現代化CSS和vanilla JavaScript來建立卓越的體驗，避免特定架構的陡峭學習曲線。 具備基本Web開發技能的開發人員可以自訂並輕鬆建置表單元件和體驗。 您不需要等候管道執行，只要將您的程式碼簽入Github中，您的變更即時。
 
 ## AEM FormsEdge Delivery Services概觀 {#edge-overview}
 
-下圖說明如何在Microsoft Excel或Google Sheets中編輯內容（以檔案為基礎的編輯）以及發佈至Edge Delivery Services。 此外也顯示使用最適化Forms編輯器的AEM發佈方法。
+下圖說明如何在Microsoft Excel或Google Sheets中編輯表單（以檔案為基礎的編輯）並發佈至Edge Delivery Services。 此外也顯示使用最適化Forms編輯器的AEM發佈方法。
 
 ![Edge Delivery 架構](/help/edge/assets/AEM-forms-with-EDS-publishing.png)
 
-Edge Delivery Services 是一組可組合的服務，可讓您以高度靈活的方式在網站上製作內容。您可以使用兩種AEM內容管理 [AEM製作](/help/forms/creating-adaptive-form-core-components.md) 以及 [document-based authoring](/help/edge/docs/forms/create-forms.md)
+AEM Forms Edge Delivery Services是一組可撰寫的服務，可讓您在網站上撰寫表單時擁有高度彈性。 您可以使用兩種AEM內容管理 [AEM製作](/help/forms/creating-adaptive-form-core-components.md) 以及 [document-based authoring](/help/edge/docs/forms/create-forms.md).
 
-例如，您可以直接從Microsoft Excel或Google Sheets使用內容。 這表示來自這些來源的內容可以成為您網站上的表單。 新內容將立即加入，無需重建過程。
+例如，您直接在Microsoft Excel或Google工作表中編寫表單，而這些試算表會轉換為您網站的表單。 任何新表單內容（例如新表單欄位）都可立即在您的網站上使用，而無需重新建置流程。
 
-Edge Delivery Services 使用 GitHub，因此客戶可以直接從其 GitHub 存放庫管理和部署程式碼。例如，您可以在Google工作表或Microsoft Excel中撰寫表單，而您可以使用GitHub中的CSS和JavaScript來開發表單元件。 準備好後，您可以使用 Sidekick 瀏覽器擴充功能來預覽和發佈內容更新。
+Edge Delivery Services 使用 GitHub，因此客戶可以直接從其 GitHub 存放庫管理和部署程式碼。例如，您可以用下列方式撰寫表單： [Google Sheets或Microsoft Excel](/help/edge/docs/forms/create-forms.md) 且可在GitHub中使用CSS和JavaScript來開發表單的元件。 準備就緒後，您可以使用 [AEM Sidekick](/help/edge/docs/forms/tutorial.md#preview-and-publish-your-content) 用於預覽和發佈內容更新的瀏覽器擴充功能。
+
+![安裝AEM Sidekick](/help/edge/assets/install-aem-sidekick.png)
 
 AEM FormsEdge Delivery Services提供forms區塊，稱為 [最適化Forms區塊](/help/edge/docs/forms/create-forms.md) 以新增表單至您的Edge Delivery Services網站。
 
-### AEM FormsEdge Delivery Services的主要功能
+### 檔案式撰寫和AEM撰寫的主要功能
 
-檔案式製作是一組基本功能和AEM製作，除了檔案式製作之外，還能開啟其他功能，讓您能夠建立更複雜且互動式的表單。 下表重點說明兩者的主要功能：
+檔案式撰寫提供了一組基本功能，AEM撰寫開啟了檔案式撰寫以外的其他功能，讓您能夠建立更複雜且互動式的表單。 Document-based Authoring和AEM Authoring的主要功能包括：
 
 <!-- 
 
@@ -89,37 +92,45 @@ AEM Authoring unlocks additional capabilities beyond the document-based authorin
 
 -->
 
-|                                           | 檔案式撰寫 | AEM製作(最適化Forms編輯器) |
-| ----------------------------------------- | ------------------------ | ------------------------------------ |
-| **表單功能** |                          |                                      |
-| 可存取的元件 | ✓ | ✓ |
-| 標準化HTML結構 | ✓ | ✓ |
-| 規則和驗證 | ✓ | ✓ |
-| 檔案附件（檔案上傳） | ✓ | ✓ |
-| Google reCAPTCHA | ✓ | ✓ |
-| 自訂元件 | ✓ | ✓ |
-| 提交至電子郵件 | ✓ | ✓ |
-| **進階功能** |                          |                                      |
-| 使用視覺化規則編輯器的進階規則 |                          | ✓ |
-| 伺服器端擴充性 |                          | ✓ |
-| 多重提交動作 |                          | ✓ |
-| **表單設計與管理** |                          |                                      |
-| 所見即所得編輯的最適化Forms編輯器 |                          | ✓ |
-| **整合** |                          |                                      |
-| 記錄文件 |                          | ✓ |
-| 與Adobe Sign整合 |                          | ✓ |
-| 與Adobe Analytics整合 |                          | ✓ |
-| 與Marketo整合 |                          | ✓ |
-| 與多個資料來源整合 |                          | ✓ |
-| 多重提交動作 |                          | ✓ |
+#### 檔案式撰寫功能
 
+檔案式製作可讓您使用熟悉的工具(例如Microsoft Excel或Google Sheets)來建立表單。 這些表單提供下列功能：
+
+* 無障礙元件，提供使用者易用的體驗。
+* 標準化HTML結構以一致呈現。
+* 規則和驗證以確保資料的準確性。
+* 用於收集其他資訊的檔案附件選項。
+* Google reCAPTCHA整合可保護垃圾郵件。
+* 可針對特定需求建立自訂表單元件。
+* 直接將表單資料提交至Microsoft Excel或Google工作表或電子郵件地址。
+
+#### AEM編寫功能
+
+AEM Authoring (使用最適化Forms編輯器)提供用於建立表單的WYSIWYG介面，並提供檔案式製作的所有功能，以及各種其他功能：
+
+* 用於建立複雜邏輯的進階規則編輯器。
+* 自訂功能的伺服器端擴充性。
+* 所見即所得編輯體驗，可輕鬆建立表單和視覺化。
+* 記錄檔案功能，可針對提交的資料建立防竄改封存。
+* 與Adobe Sign整合以提供電子簽章。
+* 與Adobe Workfront Fusion整合，在提交表單時觸發Adobe Workfront Fusion案例。
+* 與各種資料來源整合，用於預先填入表單和提交資料。
+* 表單資料模型，用於定義資料結構以及與各種資料來源的互動。
+* 能夠設定多個提交動作以處理表單提交，包括提交資料至Microsoft SharePoint、Microsoft OneDrive、Adobe Workfront Fusion、Salesforce、Microsoft Dynamics以及其他許多資料來源。
+
+實質上，AEM Authoring是以「檔案式撰寫」為基礎，提供更進階的工具組來建立和管理複雜的表單。
 
 ## 開始建立表單
 
-* [快速入門 — 開發人員教學課程](/help/edge/docs/forms/tutorial.md)
+* [開始使用AEM FormsEdge Delivery Services](/help/edge/docs/forms/tutorial.md)
 * [使用Google工作表或Microsoft Excel建立表單](/help/edge/docs/forms/create-forms.md)
-* [直接將表單提交至您的Microsoft Excel或Google工作表](/help/edge/docs/forms/submit-forms.md)
-* [變更表單外觀](/help/edge/docs/forms/style-theme-forms.md)
+* [設定Google工作表或Microsoft Excel檔案以開始接受資料&#x200B;。](/help/edge/docs/forms/submit-forms.md)
+* [發佈您的表單並開始收集資料](/help/edge/docs/forms/publish-forms.md)
+* [自訂表單的外觀&#x200B;](/help/edge/docs/forms/style-theme-forms.md)
+* [將可重複的區段新增至表單&#x200B;。](/help/edge/docs/forms/repeatable-forms.md)
+* [提交表單後顯示自訂感謝訊息&#x200B;。](/help/edge/docs/forms/thank-you-page-form.md)
+* [最適化表單區塊元件及其屬性](/help/edge/docs/forms/form-components.md)
+
 
 
 <!-- 
