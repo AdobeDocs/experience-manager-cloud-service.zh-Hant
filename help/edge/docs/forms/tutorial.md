@@ -4,9 +4,9 @@ description: 本教學課程可協助您啟動並執行新的Adobe Experience Ma
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 610f9ba3f342b37d0d20a91c337323bffe95d58d
+source-git-commit: 14171647dce7d2f6ce985616035eefa62c6955db
 workflow-type: tm+mt
-source-wordcount: '1786'
+source-wordcount: '1878'
 ht-degree: 3%
 
 ---
@@ -106,7 +106,7 @@ AEM Forms樣板範本可讓您透過預先設定最適化Forms區塊的AEM專案
 
       ![下載範例內容](/help/edge/assets/download-sample-content.png)
 
-      此 `index`， `nav`、和 `footer` 檔案會定義頁面的基本版面，且很少會在整個專案中變更。 這類檔案也具有與其他大多數內容檔案不同的特定結構。 透過檢查這些檔案，您將會體會到AEM專案中內容的組織方式。
+      此 `nav` 和 `footer` 檔案會定義頁面的基本版面，且很少會在整個專案中變更。 這類檔案也具有與其他大多數內容檔案不同的特定結構。 透過檢查這些檔案，您將會體會到AEM專案中內容的組織方式。
 
 
    1. 將這些檔案上傳至Microsoft SharePoint或Google Drive資料夾。
@@ -148,7 +148,7 @@ AEM Forms樣板範本可讓您透過預先設定最適化Forms區塊的AEM專案
 
       這會將您的內容資料夾連線至您的網站。 更新參考後，您一開始可能會遇到「404 Not Found」錯誤。 這是因為您的內容尚未預覽。 下一節將說明如何開始編寫和預覽您的內容。
 
-      ![認可更新的fsatab.yaml檔案](/help/edge/assets/aem-forms-project-folder-error.png)
+
 
 ### 預覽和發佈您的內容
 
@@ -204,9 +204,22 @@ AEM Forms樣板範本可讓您透過預先設定最適化Forms區塊的AEM專案
 
 ![查詢表單](/help/edge/assets/enquiry-form-microsoft-sharepoint.png)
 
-讓我們從更新欄位標籤開始。 開啟「查詢」工作表進行編輯，將提交按鈕的標籤變更為 `Let's Chat`，並使用sidekick進行發佈。
+讓我們從更新欄位標籤開始。 開啟「查詢」工作表進行編輯，將提交按鈕的標籤變更為 `Let's Chat` 和使用AEM Sidekick來預覽及發佈檔案。
 
 ![查詢表單](/help/edge/assets/enquiry-form-preview-publish.png)
+
+預覽或發佈檔案時，新標籤中會顯示檔案的JSON版本。 複製檔案的預覽(.hlx.page)或發佈(.hlx.live) URL。
+
+![表單試算表的JSON](/help/edge/assets//preview-and-publish-enquiry-form.png)
+
+開啟 `enquiry` ，並將表單區塊中的URL取代為上一步中複製的檔案的URL。 確定URL為超連結。
+
+![使用試算表URL的.json URL查詢檔案](/help/edge/assets/enquiry-doc-to-embed-form.png)
+
+使用AEM Sidekick來預覽和發佈查詢檔案。
+
+![使用試算表URL的.json URL查詢檔案](/help/edge/assets/preview-and-publish-enquiry-document.png)
+
 
 若要預覽更新的查詢表單，請前往下列URL：
 
