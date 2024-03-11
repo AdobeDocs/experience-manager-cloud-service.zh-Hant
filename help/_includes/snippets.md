@@ -1,5 +1,5 @@
 ---
-source-git-commit: 5cf8abe43987d145b302228877a38615f21ffd27
+source-git-commit: 4144f9704aaf17ea684be147395adc3aa31641f2
 workflow-type: tm+mt
 source-wordcount: '367'
 ht-degree: 82%
@@ -61,7 +61,7 @@ ht-degree: 82%
 
 [!BADGE 搶先體驗技術 - 在 Slack 頻道上的 AEM Sites 實驗室向我們洽詢這項功能！]{type=Informative url="/help/edge/docs/slack.md" tooltip="使用 Edge Delivery Services 進行 AEM 製作是一項搶先體驗技術。"}
 
-## 了解更多 {#see-more-forms-eds}
+## 另請參閱 {#see-more-forms-eds}
 
 * [開始使用AEM FormsEdge Delivery Services](/help/edge/docs/forms/tutorial.md)
 * [使用Google工作表或Microsoft Excel建立表單](/help/edge/docs/forms/create-forms.md)

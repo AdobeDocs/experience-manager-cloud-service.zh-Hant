@@ -4,10 +4,10 @@ description: 本教學課程可協助您啟動並執行新的Adobe Experience Ma
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: d91254b52c257a3758da200a2c74b736ca457884
+source-git-commit: 4144f9704aaf17ea684be147395adc3aa31641f2
 workflow-type: tm+mt
-source-wordcount: '1878'
-ht-degree: 10%
+source-wordcount: '1854'
+ht-degree: 8%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 10%
 
 身處今日數位時代，任何組織都需要建立對使用者友善的表單。AEM FormsEdge Delivery Services(EDS)可讓您使用熟悉的工具(如Google檔案和Microsoft Office)來建立表單。
 
-這些表單可直接提交資料至 Microsoft Excel 或 Google Sheets 檔案，讓您能夠使用由 Google Sheets、Microsoft Excel 和 Microsoft Sharepoint 等強大 API 建構的活躍生態系統，以便輕鬆處理提交的資料或啟動現有的業務工作流程。
+這些表單會直接將資料提交至Microsoft Excel或Google Sheets檔案，讓您能夠使用生動的生態系統以及Google Sheets、Microsoft Excel和Microsoft SharePoint的強大API，輕鬆處理提交的資料或啟動現有的業務工作流程。
 
 AEM Forms提供稱為最適化Forms區塊的區塊，可協助您輕鬆建立表單，以擷取及儲存擷取的資料。 您可以建立已預先設定最適化Forms區塊的新AEM專案，或將最適化Forms區塊新增至現有AEM專案。
 
@@ -127,16 +127,16 @@ AEM Forms樣板範本可讓您透過預先設定最適化Forms區塊的AEM專案
       如果您使用Microsoft SharePoint，資料夾路徑會使用以下格式：
 
       ```HTML
-      https://<tenant>.sharepoint.com/sites/  <sp-site>/Shared%20Documents/<folder-name>
+      https://<tenant>.SharePoint.com/sites/  <sp-site>/Shared%20Documents/<folder-name>
       ```
 
       例如，
 
       ```HTML
-      https://adobe.sharepoint.com/sites/wkndforms/Shared%20Documents/wefinance
+      https://adobe.SharePoint.com/sites/wkndforms/Shared%20Documents/wefinance
       ```
 
-      如需在Microsoft SharePoint中使用管理檔案的詳細資訊，請參閱 [如何使用AdobeSharepoint](https://www.aem.live/docs/setup-customer-sharepoint).
+      如需在Microsoft SharePoint中使用管理檔案的詳細資訊，請參閱 [如何使用AdobeSharePoint](https://www.aem.live/docs/setup-customer-SharePoint).
 
 
 
@@ -299,7 +299,5 @@ AEM Forms樣板範本可讓您透過預先設定最適化Forms區塊的AEM專案
 
 ## 另請參閱
 
-* [使用Google工作表或Microsoft Excel建立表單](/help/edge/docs/forms/create-forms.md)
-* [直接將表單提交至您的Microsoft Excel或Google工作表](/help/edge/docs/forms/submit-forms.md)
-* [變更表單外觀](/help/edge/docs/forms/style-theme-forms.md)
+{{see-more-forms-eds}}
 

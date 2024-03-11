@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: c214711c-979b-4833-9541-8e35b2aa8e09
-source-git-commit: 2aa70e78764616f41fe64e324c017873cfba1d5b
+source-git-commit: 4144f9704aaf17ea684be147395adc3aa31641f2
 workflow-type: tm+mt
-source-wordcount: '1819'
+source-wordcount: '1821'
 ht-degree: 60%
 
 ---
@@ -823,3 +823,6 @@ first-name input {
 
 此 CSS 的目標是位於具有類別 `field-otp` 的元素內的所有輸入元素。您的表單HTML結構遵循最適化Forms區塊的慣例，這表示有一個標示為「field-otp」類別的容器會儲存名為「otp」的欄位。
 
+## 另請參閱
+
+{{see-more-forms-eds}}

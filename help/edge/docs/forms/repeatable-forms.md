@@ -1,75 +1,76 @@
 ---
-title: 將可重複區段新增至表單
+title: 將可重複區段新增到表單
 description: 新增可重複區段至 EDS Form
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: 062d5a88-48ca-421f-bf0d-1483e3cfee28
-source-git-commit: 2aa70e78764616f41fe64e324c017873cfba1d5b
+source-git-commit: 4144f9704aaf17ea684be147395adc3aa31641f2
 workflow-type: tm+mt
-source-wordcount: '565'
-ht-degree: 8%
+source-wordcount: '533'
+ht-degree: 96%
 
 ---
 
-# 將可重複區段新增至表單
+# 將可重複區段新增到表單
 
-最適化Forms區塊提供新增或讓表單的區段或元件可重複的功能。 這可讓使用者為相同型別的資料輸入多次資訊，更輕鬆地收集工作經驗或教育背景等資訊。
+最適化Forms區塊提供新增或讓表單的區段或元件可重複的功能。 這允許使用者針對同一類型的數據多次輸入訊息，從而更容易收集工作經驗或教育背景等資訊。
 
-例如，考慮用來收集個人工作體驗相關資訊的表單。 您可以有可重複的區段來擷取先前各工作的詳細資訊。 重複區段通常包含公司名稱、職稱、僱用日期和工作責任等欄位。 使用者可以新增多個可重複區段的執行個體，以輸入有關他們從事的每一個工作的資訊。
+例如，考慮一個用來收集有關個人工作經驗資訊的表單。您可能有一個可重複區段，用來擷取每項先前工作的詳細資訊。可重複區段通常包含公司名稱、職位、就業日期和工作職責等欄位。使用者可以新增可重複區段的多個實例，以輸入有關他們所做每項工作的資訊。
 
 
 
-到本文結束時，您將瞭解：
+閱讀完本文章後，您將學會：
 
-* [在表單中建立可重複的區段](#add-repeatable-sections-to-a-form)
-* [設定表單中最小或最大重複次數](#set-minimum-or-maximum-number-of-repetitions-for-a-repeatable-section)
+* [在表單中建立可重複區段](#add-repeatable-sections-to-a-form)
+* [設定表單中的最小或最大重複次數](#set-minimum-or-maximum-number-of-repetitions-for-a-repeatable-section)
 
-## 建立可重複的區段
+## 新增可重複區段
+        
 
-在表單中建立可重複的區段，讓使用者能夠輸入同一組資料的多個例項，進而有效率地收集重複資訊。 若要在表單中建立可重複的區段：
+在表單中建立可重複區段，可讓使用者輸入同一資料集的多個實例，進而有效收集重複資訊。若要在表單中建立可重複區段：
 
-1. 前往Microsoft SharePoint或Google Workspace上的Edge Deliver專案資料夾，並開啟試算表。
+1. 前往 Microsoft SharePoint 或 Google Workspace 的 Edge Deliver 專案資料夾，並開啟您的試算表。
 
-1. 使用新增表單欄位 `type` 屬性設定為 `fieldset`
-1. 指定 `Name` 欄位的。 name屬性用於建立可重複的區段。
-1. 透過設定啟用重複性 `repeatable` 至 `true`.
-1. 指定描述性 `label` 欄位的。 它用作可重複區段的標題。
+1. 新增一個表單欄位，且`type`屬性設定為`fieldset`
+1. 指定欄位的`Name`。名稱屬性是用來建立可重複區段。
+1. 透過將`repeatable`設為 `true` 來啟用重複性。
+1. 指定欄位的描述性`label`，用作可重複區段的標題。
 
-   請參閱下圖，以取得工作申請表單中僱用歷史記錄區段的圖例。
+   請參考以下影像，以了解工作申請表中工作經驗區段的實例。
 
    ![](/help/edge/assets/repeatable-section-example-job-application-form.png)
 
-1. 針對您想納入區段中的每個欄位，設定其 `Fieldset` 屬性的名稱與您在步驟3中選擇的名稱相同。
+1. 關於您想要含在該區段中的每個欄位，請將其`Fieldset`屬性設為與您在步驟 3 中所選的相同名稱。
 
-   例如，指定 `experience` Fieldset屬性中納入的所有相關欄位 `employment history` 區段。
+   例如，在所有相關欄位的欄位集屬性內，指定將`experience`列入`employment history`區段中。
 
-   ![重複區段欄位及其屬性的範例](/help/edge/assets/repeatable-section--mention-fieldset-name-example-job-application-form.png)
+   ![可重複區段欄位及其屬性的範例](/help/edge/assets/repeatable-section--mention-fieldset-name-example-job-application-form.png)
 
-1. 使用 [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) 以預覽和發佈工作表。 可重複區段會新增至表單。
+1. 使用 [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) 來預覽和發佈試算表。將可重複區段新增至表單。
 
-   在可重複區段底下，使用者會找到直覺式的 **新增** 按鈕，方便您輕鬆新增多個區段。
+   在可重複區段下方，使用者可以找到直覺式的「**新增**」按鈕，可方便使用者輕鬆新增多個區段。
 
-   ![重複區段，「新增」按鈕，可新增多個區段 ](/help/edge/assets/repeatable-section-example.png)
+   ![可重複區段、新增按鈕，用來新增多個區段 ](/help/edge/assets/repeatable-section-example.png)
 
 
-## 設定最小重複次數和最大重複次數
+## 設定最小和最大重複次數
 
-在表單設計中，為可重複區段設定最小和最大重複次數會很有幫助。 如此一來，您就能夠建立控制並維持一致性，同時有效地引導使用者。 若要設定最小或最大重複次數：
+在表單設計中，為可重複區段設定最小和最大重複次數很有用。這樣做可以在有效引導使用者的同時建立控制和一致性。若要設定最小或最大重複次數：
 
-1. 前往Microsoft SharePoint或Google Workspace上的Edge Deliver專案資料夾，並開啟試算表。
+1. 前往 Microsoft SharePoint 或 Google Workspace 的 Edge Deliver 專案資料夾，並開啟您的試算表。
 
-1. 針對欄位 `type` `fieldset` 和 `repeatable` 屬性設定為 `true`：
+1. 關於`type` `fieldset`的一個欄位，以及將`repeatable`屬性設定為 `true`：
 
-   * 設定 `min` 屬性來指定可重複該區段的最小次數。
+   * 設定`min`屬性來指定該區段可以重複的最小次數。
 
-   * 設定 `max` 屬性來指定可重複該區段的最大次數。
+   * 設定`max`屬性來指定該區段可以重複的最大次數。
 
-   ![設定min和max屬性，指定可重複區段的次數](/help/edge/assets/repeatable-section-set-min-max.png)
+   ![設定最小和最大屬性來指定該區段可以重複的次數](/help/edge/assets/repeatable-section-set-min-max.png)
 
-1. 使用 [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) 預覽和發佈試算表。
+1. 使用 [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) 來預覽和發佈試算表。
 
-   新增可重複區段時，使用者會發現 **刪除** 圖示，可讓您更輕鬆地移除重複區段。 新增後，這些區段無法減少到比指定的執行個體更少。 `min` 屬性。 這可確保遵守為表單完成設定的最低要求。
+   在新增可重複區段時，使用者可以找到直覺式「**刪除**」圖示，讓使用者更容易刪除可重複區段。新增以後，這些區段就不能減少至少於`min`屬性指定的實例。這可確保遵守為填寫表單而設定的最低要求。
 
 <!--
 
@@ -87,7 +88,7 @@ The [Adaptive Forms Block is enabled](/help/edge/docs/forms/create-forms.md) for
 
 Let's take an example of a loan application form. The form enables users to submit personal information. You can include co-applicant details using repeatable sections, with the option to add a minimum and maximum of three co-applicant sections.
 
-"_You can use a Microsoft Excel file on your SharePoint Site or Google Sheet file on Google Drive to develop a form. Examples in this document are based on a [Microsoft Excel file on your SharePoint Site](https://www.aem.live/docs/setup-customer-sharepoint)._" 
+"_You can use a Microsoft Excel file on your SharePoint Site or Google Sheet file on Google Drive to develop a form. Examples in this document are based on a [Microsoft Excel file on your SharePoint Site](https://www.aem.live/docs/setup-customer-SharePoint)._" 
 
 
 To add repeatable sections in Edge Delivery:
@@ -124,11 +125,6 @@ The form is accessible at `https://localhost:3000`, where clicking the `Add` but
 -->
 
 
-## 了解更多
+## 另請參閱
 
-* [建立並預覽表單](/help/edge/docs/forms/create-forms.md)
-* [啟用表單來傳送資料](/help/edge/docs/forms/submit-forms.md)
-* [將表單發佈到網站頁面](/help/edge/docs/forms/publish-forms.md)
-* [新增驗證至表單欄位](/help/edge/docs/forms/validate-forms.md)
-* [改變主題和樣式風格](/help/edge/docs/forms/style-theme-forms.md)
-* [表單元件及其屬性](/help/edge/docs/forms/form-components.md)
+{{see-more-forms-eds}}

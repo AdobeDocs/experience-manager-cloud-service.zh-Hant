@@ -5,10 +5,10 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: 0cf881a2-3784-45eb-afe8-3435e5e95cf4
-source-git-commit: d91254b52c257a3758da200a2c74b736ca457884
+source-git-commit: 4144f9704aaf17ea684be147395adc3aa31641f2
 workflow-type: tm+mt
-source-wordcount: '803'
-ht-degree: 67%
+source-wordcount: '805'
+ht-degree: 62%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 67%
 
 AEM Forms Edge Delivery提供稱為最適化Forms區塊的區塊，協助您輕鬆建立表單，以擷取及儲存擷取的資料。 您可以 [建立已預先設定最適化Forms區塊的新AEM專案](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) 或 [將最適化Forms區塊新增至現有的AEM專案](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project).
 
-這些表單可直接提交資料至 Microsoft Excel 或 Google Sheets 檔案，讓您能夠使用由 Google Sheets、Microsoft Excel 和 Microsoft Sharepoint 等強大 API 建構的活躍生態系統，以便輕鬆處理提交的資料或啟動現有的業務工作流程。
+這些表單會直接將資料提交至Microsoft Excel或Google Sheets檔案，讓您能夠使用生動的生態系統以及Google Sheets、Microsoft Excel和Microsoft SharePoint的強大API，輕鬆處理提交的資料或啟動現有的業務工作流程。
 
 ![檔案式撰寫生態系統](/help/edge/assets/document-based-authoring-workflow-create-form.png)
 
@@ -29,7 +29,7 @@ AEM Forms Edge Delivery提供稱為最適化Forms區塊的區塊，協助您輕�
 
 * 設定 [使用AEM Forms範本的AEM專案](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) 或 [已將最適化Forms區塊新增至您現有的AEM專案](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project) 並複製本機電腦上對應的GitHub存放庫。
 在本檔案中，您的Edge Delivery Services(EDS)專案的本機資料夾稱為 `[EDS Project repository]`.
-* 確保您可以存取 Google Sheets 或 Microsoft SharePoint。若要將Microsoft SharePoint設定為您的內容來源，請參閱 [如何使用Sharepoint](https://www.aem.live/docs/setup-customer-sharepoint).
+* 確保您可以存取 Google Sheets 或 Microsoft SharePoint。若要將Microsoft SharePoint設定為您的內容來源，請參閱 [如何使用SharePoint](https://www.aem.live/docs/setup-customer-SharePoint).
 
 
 
@@ -82,7 +82,7 @@ Ensure a smooth GitHub build process by addressing potential issues:
 
    ![Google Drive上的範例內容](/help/edge/assets/upload-sample-files-to-your-content-folder.png)
 
-1. [根據為您專案指定的設定](https://www.aem.live/docs/setup-customer-sharepoint)，確保讓相關 AEM 使用者 (例如 `helix@adobe.com`) 共用工作表。授予使用者關於工作表的編輯權限。
+1. [根據為您專案指定的設定](https://www.aem.live/docs/setup-customer-SharePoint)，確保讓相關 AEM 使用者 (例如 `helix@adobe.com`) 共用工作表。授予使用者關於工作表的編輯權限。
 
 1. 開啟建立的試算表並將預設工作表重新命名為「共享預設」。
 
@@ -165,4 +165,6 @@ Ensure a smooth GitHub build process by addressing potential issues:
 [準備您的試算表](/help/edge/docs/forms/submit-forms.md) 以在提交表單後開始接受資料。
 
 
+## 另請參閱
 
+{{see-more-forms-eds}}
