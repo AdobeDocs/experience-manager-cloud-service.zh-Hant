@@ -2,10 +2,10 @@
 title: ' [!DNL Workfront for Experience Manager enhanced connector] 版發行說明'
 description: ' [!DNL Workfront for Experience Manager enhanced connector] 版發行說明'
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
-source-git-commit: 439ae08bb606d6d335fa189e99c1b483f636683e
-workflow-type: ht
-source-wordcount: '1624'
-ht-degree: 100%
+source-git-commit: 411793f140a2a9cf482d820382d41de843a97e87
+workflow-type: tm+mt
+source-wordcount: '1648'
+ht-degree: 97%
 
 ---
 
@@ -13,17 +13,14 @@ ht-degree: 100%
 
 以下章節概述 [!DNL Workfront for Experience Manager enhanced connector] 版的一般發行說明。
 
-## 發行日期 {#release-date}
-
-[!DNL Workfront for Experience Manager enhanced connector] 的最新版本 1.9.17 發行日期是 2024 年 2 月 7 日。
+最新版本1.9.18的發行日期 [!DNL Workfront for Experience Manager enhanced connector] 為2024年3月8日。
 
 ## 版本重點 {#release-highlights}
 
-[!DNL Workfront for Experience Manager enhanced connector] 的最新版本包括以下錯誤修復：
+最新版本的 [!DNL Workfront for Experience Manager enhanced connector] 包含下列錯誤修正：
 
-* 啟用切換功能以允許 AEM Cloud 客戶配置和設定連接器。
-
-* 在未明確關閉基礎工作階段的情況下關閉 `resourceResolver` 會導致 AEM 執行個體發生工作階段洩漏。明確關閉工作階段至關重要，因為自動關閉 Resource Resolver 不會隱含地關閉工作階段。
+* 從Workfront處理多資產上傳時遇到問題。
+* 使用Workfront在Experience Manager中搜尋資料夾時未新增右引號 `SERVER_ERROR`.
 
 >[!NOTE]
 >
@@ -32,7 +29,7 @@ ht-degree: 100%
 
 >[!IMPORTANT]
 >
->Adobe 建議[升級到最新 1.9.17 版本](/help/assets/workfront-connector-install.md)的 [!DNL Workfront for Experience Manager enhanced connector]。
+>Adobe 建議[升級到最新 1.9.18 版本](/help/assets/workfront-connector-install.md)的 [!DNL Workfront for Experience Manager enhanced connector]。
 
 ## 已知問題 {#known-issues}
 
@@ -41,6 +38,12 @@ ht-degree: 100%
 * 在使用傳統 Workfront 體驗時，「**[!UICONTROL 更多]**」下拉式清單中的「**[!UICONTROL 傳送至]**」選項不允許您在 Experience Manager 之內選取目標目的地。使用「**[!UICONTROL 文件動作]**」下拉式清單時，「**[!UICONTROL 傳送至]**」選項正常運作。在使用新的 Workfront 體驗時，「**[!UICONTROL 更多]**」下拉式清單和「**[!UICONTROL 文件動作]**」下拉式清單的「**[!UICONTROL 傳送至]**」選項正常運作。
 
 ## 舊版本 {#previous-releases}
+
+### 2024年2月發行版本 {#february-2023-release}
+
+* 啟用切換功能以允許 AEM Cloud 客戶配置和設定連接器。
+
+* 在未明確關閉基礎工作階段的情況下關閉 `resourceResolver` 會導致 AEM 執行個體發生工作階段洩漏。明確關閉工作階段至關重要，因為自動關閉 Resource Resolver 不會隱含地關閉工作階段。
 
 ### 2024 年 1 月版 {#january-2023-release}
 
