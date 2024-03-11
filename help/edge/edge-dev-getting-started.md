@@ -3,10 +3,10 @@ title: 使用 Edge Delivery Services 進行 AEM 製作的開發人員快速入�
 description: 本指南將協助您啟動並執行新的 Adobe Experience Manager 網站，以使用 Edge Delivery Services 和 Universal Editor 進行內容製作
 feature: Edge Delivery Services
 exl-id: a71184a7-c954-442e-b276-99edc6d2acd8
-source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
+source-git-commit: d29e1c588937d18dea2fe851df3818b6438d41c4
 workflow-type: tm+mt
 source-wordcount: '988'
-ht-degree: 99%
+ht-degree: 98%
 
 ---
 
@@ -33,7 +33,7 @@ AEM 提供兩種不同的內容編輯器，請您根據情況選擇要使用的�
 
 本指南重點在於使用 Universal Editor 的 Edge Delivery Services 上的 AEM 專案。請參閱文件「[Edge Delivery Services 開發](/help/edge/developing.md)」，以進一步了解有關選擇正確編輯器以及將現有 AEM Sites 移轉到 Edge Delivery Services 的詳細資訊。
 
-## AEM Authoring 和 Edge Delivery Services 快速入門 {#getting-started}
+## AEM製作和Edge Delivery Services快速入門 {#getting-started}
 
 滿足[先決條件](#prerequisites)並選擇[使用Universal Editor](#editor-choice) 後，您就可以開始製作自己的專案。
 

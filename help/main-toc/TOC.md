@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的運作方式以及該軟體可以為您做哪些事。
 breadcrumb-title: 使用手冊
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 2b64cc8d2afb7d6064d1f60ba023448171862236
+source-git-commit: d29e1c588937d18dea2fe851df3818b6438d41c4
 workflow-type: tm+mt
-source-wordcount: '4776'
-ht-degree: 98%
+source-wordcount: '4780'
+ht-degree: 99%
 
 ---
 
@@ -485,7 +485,7 @@ ht-degree: 98%
       + [Markdown](/help/assets/content-fragments/content-fragments-markdown.md)
       + [樹狀結構](/help/assets/content-fragments/content-fragments-structure-tree.md)
       + [預覽 - JSON 代表](/help/assets/content-fragments/content-fragments-json-preview.md)
-      + [使用MSM重複使用內容片段（適用於資產）](/help/assets/content-fragments/content-fragments-msm.md)
+      + [使用 MSM 重複使用內容片段 (針對資產)](/help/assets/content-fragments/content-fragments-msm.md)
    + Dynamic Media {#dynamicmedia}
       + Dynamic Media 歷程：基礎知識{#dm-journey}
          + [第一部分：什麼是 Dynamic Media - 使用案例 - 資產如何流經系統](/help/assets/dynamic-media/dm-journey-part1.md)
@@ -637,7 +637,7 @@ ht-degree: 98%
             + [在最適化表單中新增自訂的錯誤處理常式](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
             + [為以核心元件為主的最適化表單新增地區設定](/help/forms/supporting-new-language-localization-core-components.md)
             + [建立和使用自訂功能](/help/forms/create-and-use-custom-functions.md)
-            + [根據核心元件將規則新增至最適化表單](/help/forms/rule-editor-core-components.md)
+            + [新增規則至以核心元件為基礎的最適化表單](/help/forms/rule-editor-core-components.md)
       + Foundation 元件 {#authoring-adaptive-forms-foundation-components}
          + 將您的 PDF forms 轉換為最適化表單 {#afcs}
             + [自動表單轉換服務簡介](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=zh-Hant)
@@ -784,8 +784,8 @@ ht-degree: 98%
    + [Adobe Commerce PWA Studio](/help/commerce-cloud/pwa-studio/getting-started.md)
    + [移轉](/help/commerce-cloud/migration.md)
    + [常見問題集](/help/commerce-cloud/faq.md)
-+ 具有Edge Delivery Services的AEM {#edge-delivery}
-   + [Edge Delivery Services快速入門](/help/edge/overview.md)
++ AEM 含 Edge Delivery Services {#edge-delivery}
+   + [開始使用 Edge Delivery Services](/help/edge/overview.md)
    + [使用 Edge Delivery](/help/edge/using.md)
    + [開發人員快速入門指南](/help/edge/edge-dev-getting-started.md)
    + [為 Edge Delivery 製作內容](/help/edge/authoring.md)
@@ -793,6 +793,7 @@ ht-degree: 98%
    + [為 Edge Delivery 開發](/help/edge/developing.md)
    + [內容模型](/help/edge/content-modeling.md)
    + [建立區塊](/help/edge/create-block.md)
+   + [表格資料和試算表](/help/edge/tabular-data.md)
    + [現有專案和 Edge Delivery](/help/edge/existing-projects.md)
    + 建置 Edge Delivery 應用程式 {#build}
       + [快速入門 - 開發人員教學課程](/help/edge/developer/tutorial.md)
@@ -829,7 +830,7 @@ ht-degree: 98%
          + [將表單發佈到網站頁面](/help/edge/docs/forms/publish-forms.md)
          + [新增驗證至表單欄位](/help/edge/docs/forms/validate-forms.md)
          + [改變主題和樣式風格](/help/edge/docs/forms/style-theme-forms.md)
-         + [使用規則將動態行為新增至表單](/help/edge/docs/forms/rules-forms.md)
+         + [使用規則為表單新增動態行為](/help/edge/docs/forms/rules-forms.md)
          + [感謝頁面](/help/edge/docs/forms/thank-you-page-form.md)
       + 功能 {#advanced-features-eds-forms}
          + [表單片段](/help/edge/docs/forms/form-fragments.md)
@@ -837,7 +838,7 @@ ht-degree: 98%
          + [轉換](/help/edge/docs/forms/translate-forms.md)
          + [reCAPTCHA](/help/edge/docs/forms/recaptacha-forms.md)
          + [自訂元件](/help/edge/docs/forms/custom-components-forms.md)
-      + 引用 {#forms-references}
+      + 參考資料 {#forms-references}
          + [表單區塊元件清單](/help/edge/docs/forms/form-components.md)
    + Edge Delivery 資源 {#resources}
       + Sidekick {#sidekick}
@@ -849,7 +850,7 @@ ht-degree: 98%
       + [管理 API](https://www.aem.live/docs/admin.html)
       + [AEM 狀態](https://www.aemstatus.net)
       + 工具 {#tools}
-         + [AEM Sidekick Chrome擴充功能](https://chrome.google.com/webstore/detail/aem-sidekick/ccfggkjabjahcjoljmgmklhpaccedipo)
+         + [AEM Sidekick Chrome 擴充功能](https://chrome.google.com/webstore/detail/aem-sidekick/ccfggkjabjahcjoljmgmklhpaccedipo)
          + [Github 機器人](https://github.com/apps/aem-code-sync)
          + [稽核記錄](/help/edge/docs/auditlog.md)
 + Headless {#headless}
