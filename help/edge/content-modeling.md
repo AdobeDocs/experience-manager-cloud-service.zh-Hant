@@ -1,13 +1,13 @@
 ---
 title: 使用 Edge Delivery Services 專案進行 AEM 製作的內容模式
 description: 了解使用 Edge Delivery Services 專案進行 AEM 製作的內容模式如何運作，以及如何對您自己的內容建立模式。
-source-git-commit: e9c882926baee001170bad2265a1085e03cdbedf
-workflow-type: ht
-source-wordcount: '2097'
-ht-degree: 100%
+exl-id: e68b09c5-4778-4932-8c40-84693db892fd
+source-git-commit: 22a631d394de1c0fb934d9703e966c8287aef391
+workflow-type: tm+mt
+source-wordcount: '2095'
+ht-degree: 94%
 
 ---
-
 
 # 使用 Edge Delivery Services 專案進行 AEM 製作的內容模式 {#content-modeling}
 
@@ -351,7 +351,7 @@ ht-degree: 100%
 
 #### 欄位摺疊 {#field-collapse}
 
-欄位摺疊是一種基於使用尾碼 (`Title`、`Type`、`Alt` 和`Text`；全部區分大小寫) 的命名慣例且將多個欄位值組合成單一語義元素的機制。任何以這些尾碼結尾的屬性都不會被視為值，而是被視為另一個屬性 (property) 的屬性 (attribute)。
+欄位收合是根據命名慣例，使用尾碼將多個欄位值合併為單一語意元素的機制 `Title`， `Type`， `MimeType`， `Alt`、和 `Text` （區分大小寫）。 任何以這些尾碼結尾的屬性都不會被視為值，而是被視為另一個屬性 (property) 的屬性 (attribute)。
 
 ##### 影像 {#image-collapse}
 
@@ -624,7 +624,13 @@ Edge Delivery Services 內容模式本來就是只允許單一巢狀層級，這
 
 ### 頁面內容 {#page-properties}
 
-也可以為頁面中繼資料定義元件模式，這可以讓作者用作 AEM Sites 頁面屬性對話方塊的標記。
+AEM中許多可用的預設頁面屬性都會對應至檔案中個別頁面的中繼資料。 例如，這包括 `title`， `description`， `robots`， `canonical url` 或 `keywords`. 您也可以使用部分AEM特定屬性：
+
+* `cq:lastModified` 作為 `modified-time` ISO8601格式
+* 檔案上次發佈為的時間 `published-time` ISO8601格式
+* `cq:tags` 作為 `cq-tags` 以逗號分隔的標籤ID清單。
+
+您也可以為自訂頁面中繼資料定義元件模型，以供作者做為AEM Sites頁面屬性對話方塊的索引標籤使用。
 
 若要如此做，請使用 ID `page-metadata` 建立元件模式。
 
@@ -633,15 +639,10 @@ Edge Delivery Services 內容模式本來就是只允許單一巢狀層級，這
   "id": "page-metadata",
   "fields": [
     {
-      "component": "text-input",
+      "component": "text",
       "name": "theme",
       "label": "Theme"
     }
   ]
 }
 ```
-
-有一些欄位名稱具有特殊意義，在提供製作對話方塊 UI 時將被省略：
-
-* **`cq:tags`** - 依預設，`cq:tags` 不會新增至中繼資料中。將這些新增至 `page-metadata` 模式中，即會將作為逗號分隔清單的標記 ID 作為 `tags` 中繼標記新增至標頭。
-* **`cq:lastModified`** - `cq:lastModified` 將其資料作為 `last-modified` 新增至標頭。
