@@ -1,18 +1,18 @@
 ---
-title: 提交後設定感謝頁面或重新導向表單
+title: 提交表單後顯示自訂感謝訊息
 description: 了解如何設定 Forms 區塊的感謝頁面和重新導向，以最佳化使用者體驗並簡化使用者歷程。
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: e6c66b22-dc52-49e3-a920-059adb5be22f
-source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
+source-git-commit: 6d4b194d17cc27a6a8596825401dc723bebe7b27
 workflow-type: tm+mt
-source-wordcount: '196'
-ht-degree: 22%
+source-wordcount: '195'
+ht-degree: 13%
 
 ---
 
-# 提交後顯示感謝頁面或重新導向表單
+# 提交表單後顯示自訂感謝訊息
 
 在使用者提交表單後，透過感謝訊息提供順暢的體驗至關重要。 這不僅可確認提交是否成功，也可提升使用者滿意度，並指引他們繼續前進。
 

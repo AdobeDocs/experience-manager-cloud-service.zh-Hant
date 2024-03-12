@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: 7d087d41-9313-482a-a905-8955b0999781
-source-git-commit: 4144f9704aaf17ea684be147395adc3aa31641f2
+source-git-commit: 6d4b194d17cc27a6a8596825401dc723bebe7b27
 workflow-type: tm+mt
-source-wordcount: '935'
+source-wordcount: '937'
 ht-degree: 92%
 
 ---
@@ -64,3 +64,6 @@ AEM Forms Edge Delivery Services可讓您使用各種元件建立好記且互動
 | 已核取 | 核取方塊、單選按鈕 | 確定依預設是否選取該欄位。已勾選屬性是與核取方塊和單選輸入一起使用的布林值屬性。當設定為 true 時，表示表單載入時依預設選取的欄位。 |
 | 欄位集 | 全部 | 將欄位分類以在表單中建立視覺效果不同的區段。欄位集元素是將表單中的相關欄位分類，主要是以視覺效果來區分欄位，以便改善組織和使用者的體驗。</br> 若要安排欄位集中的一組欄位，只需使用`fieldset`屬性並指定其名稱屬性。在下面的範例中，我們將示範如何將單選按鈕封裝在單一欄位集內，以更方便安排欄位。![欄位集範例](/help/edge/assets/fieldset-example.png) |
 
+## 另請參閱
+
+{{see-more-forms-eds}}

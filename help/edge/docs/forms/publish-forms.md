@@ -5,10 +5,10 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: dcb16da1-dcc2-4529-8859-0716e727b54d
-source-git-commit: 4144f9704aaf17ea684be147395adc3aa31641f2
+source-git-commit: 6d4b194d17cc27a6a8596825401dc723bebe7b27
 workflow-type: tm+mt
-source-wordcount: '530'
-ht-degree: 97%
+source-wordcount: '545'
+ht-degree: 92%
 
 ---
 
@@ -20,9 +20,10 @@ ht-degree: 97%
 
 ## 必要條件 
 
-* 此 [最適化Forms區塊已在GitHub上為您的EDS專案啟用](/help/edge/docs/forms/create-forms.md).
+* 您的AEM專案是根據 [AEM Forms範本](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) 或 [已將最適化Forms區塊新增至您現有的AEM專案](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project)
 * 您的表單已經過全面測試並可供使用。
 * 您的[試算表已設定](/help/edge/docs/forms/submit-forms.md)可接受資料。
+
 
 ## 發佈您的表單
 
@@ -74,7 +75,9 @@ ht-degree: 97%
 
    | 表單 |
    |---|
-   | [https://main--portal--wkndforms.hlx.live/enquiry.json](https://main--portal--wkndforms.hlx.live/enquiry.json) |
+   | [https://main--wefinance--wkndforms.hlx.live/enquiry.json](https://main--wefinance--wkndforms.hlx.live/enquiry.json) |
+
+   ![將名為&#39;Form&#39;的區塊新增至檔案](/help/edge/assets/enquiry-doc-to-embed-form.png)
 
    此區塊是用作嵌入表單的暫留位置。在該區塊的第二行中，新增 `<form>.json` 檔案的 URL 作為超連結。
 
@@ -85,21 +88,17 @@ ht-degree: 97%
 
    使用預覽 URL (.page URL) 進行開發或測試，或使用發佈 URL (.live) 進行生產。以下是帶有預覽和發佈 URL 的範例：
 
-   **預覽 URL**
-| Form  |
-|---|
-| [https://main--portal--wkndforms.hlx.page/enquiry.json](https://main--portal--wkndforms.hlx.page/enquiry.json)  |
+   **預覽URL**
+| 表單 | |—| | [https://main--wefinance--wkndforms.hlx.page/enquiry.json](https://main--wefinance--wkndforms.hlx.page/enquiry.json)  |
 
 
-   **發佈 URL**
-| Form  |
-|---|
-| [https://main--portal--wkndforms.hlx.live/enquiry.json](https://main--portal--wkndforms.hlx.live/enquiry.json)  |
+   **發佈URL**
+| 表單 | |—| | [https://main--wefinance--wkndforms.hlx.live/enquiry.json](https://main--wefinance--wkndforms.hlx.live/enquiry.json)  |
 
 1. 使用 [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) 來預覽網頁。頁面現在會顯示表單。例如，這是以[查詢試算表](https://docs.google.com/spreadsheets/d/196lukD028RDK_evBelkOonPxC7w0l_IiJ-Yx3DvMfNk/edit#gid=0)為主的表單：
 
 
-   [![EDS Form 範本](/help/edge/assets/eds-form.png)](https://main--portal--wkndforms.hlx.live/)
+   ![EDS Forms 範本](/help/edge/assets/eds-form.png)
 
 1. 使用 AEM Sidekick 來發佈表單。現在，您的客戶可以填寫表格並提交。
 

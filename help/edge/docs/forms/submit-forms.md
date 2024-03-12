@@ -5,17 +5,17 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: 0643aee5-3a7f-449f-b086-ed637ae53b5a
-source-git-commit: 4144f9704aaf17ea684be147395adc3aa31641f2
+source-git-commit: 6d4b194d17cc27a6a8596825401dc723bebe7b27
 workflow-type: tm+mt
-source-wordcount: '973'
-ht-degree: 71%
+source-wordcount: '994'
+ht-degree: 65%
 
 ---
 
 # 準備試算表並接受資料
 
 
- [建立並預覽表單](/help/edge/docs/forms/create-forms.md)後，就可以啟用對應的試算表以開始接收資料。
+一旦您 [已建立和預覽表單](/help/edge/docs/forms/create-forms.md)，是時候啟用對應的試算表來開始接收資料了。 您可以手動啟用試算表以接受資料，或使用管理員API啟用試算表以接受資料。
 
 ![檔案式撰寫生態系統](/help/edge/assets/document-based-authoring-workflow-enable-sheet-to-accept-data.png)
 
@@ -24,7 +24,10 @@ ht-degree: 71%
 
 -->
 
-若要啟用試算表：
+
+## 手動啟用試算表以接受資料
+
+啟用試算表以接受資料的方式
 
 1. 開啟包含您表單的試算表並附加一個新工作表，將其重新命名為 `incoming`。
 
@@ -61,8 +64,7 @@ ht-degree: 71%
 >
 >  「共用預設」工作表絕不會包含您不願意開放存取的任何個人識別資料或敏感資料。
 
-
-## (選擇性) 使用 Admin API 讓試算表接受資料
+### 使用 Admin API 讓試算表接受資料
 
 您也可以向表單傳送 POST 請求，使其能夠接受資料並設定 `incoming` 工作表的標題。收到 POST 請求後，服務會分析請求內文並自動產生資料擷取所需的基本標題和工作表。
 
@@ -151,7 +153,6 @@ ht-degree: 71%
    您的表單現在可以接受資料了。您也可以觀察到試算表有以下變化：
 
 ## 啟用以接受資料後，自動變更工作表。
-
 
 工作表設定為接收資料後，您會在試算表中觀察到下列變更：
 
@@ -284,7 +285,7 @@ POST https://my-domain.com/email-form
     https://main--portal--wkndforms.hlx.live/contact-us
   ```
 
-接下來，您可以自訂感謝訊息、[設定感謝頁面](/help/edge/docs/forms/thank-you-page-form.md)或[設定重新導向](/help/edge/docs/forms/thank-you-page-form.md)。
+接下來，您可以 [自訂感謝訊息](/help/edge/docs/forms/thank-you-page-form.md).
 
 ## 另請參閱
 
