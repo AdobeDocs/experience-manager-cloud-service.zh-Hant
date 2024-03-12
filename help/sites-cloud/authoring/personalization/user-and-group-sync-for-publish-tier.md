@@ -2,7 +2,7 @@
 title: 註冊、登入和使用者個人資料
 description: 瞭解AEMas a Cloud Service的註冊、登入、使用者資料和群組同步
 exl-id: a991e710-a974-419f-8709-ad86c333dbf8
-source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
+source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
 workflow-type: tm+mt
 source-wordcount: '1132'
 ht-degree: 1%
@@ -37,7 +37,7 @@ Web應用程式通常提供帳戶管理功能，讓使用者可在網站上註�
 
 1. 顯示收集註冊資訊的自訂AEM元件
 1. 提交後，系統會使用適當布建的服務使用者，
-   1. 使用UserManager API的其中一個，確認現有使用者不存在 `findAuthorizables ()` 方法
+   1. 使用UserManager API的其中一個，確認現有使用者不存在 `findAuthorizables()` 方法
    1. 使用使用者管理員API的其中一個 `createUser()` 方法
    1. 儲存使用可授權介面擷取的任何設定檔資料 `setProperty()` 方法
 1. 選擇性流程，例如要求使用者驗證其電子郵件。

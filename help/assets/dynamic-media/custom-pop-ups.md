@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Interactive Images,Interactive Videos,Carousel Banners
 role: Admin,User
 exl-id: c2bc6ec8-d46e-4681-ac3e-3337b9e6ae5c
-source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
+source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
 workflow-type: tm+mt
 source-wordcount: '944'
 ht-degree: 2%
@@ -85,12 +85,12 @@ Dynamic Media中的下列檢視器支援快速檢視：
 
    處理常式會使用載入檢視器 `setHandlers`：
 
-   `*viewerInstance*.setHandlers ({ *handler 1*, *handler 2*}, ...`
+   `*viewerInstance*.setHandlers({ *handler 1*, *handler 2*}, ...`
 
    **使用上述範例內嵌程式碼範例，您的程式碼如下：**
 
    ```xml {.line-numbers}
-   s7interactiveimageviewer.setHandlers ({
+   s7interactiveimageviewer.setHandlers({
        quickViewActivate": function(inData) {
            var sku=inData.sku;
            var genericVariable1=inData.genericVariable1;
@@ -100,7 +100,7 @@ Dynamic Media中的下列檢視器支援快速檢視：
    })
    ```
 
-   進一步瞭解 `setHandlers ()` 方法於下列位置：
+   進一步瞭解 `setHandlers()` 方法於下列位置：
 
    * 互動式影像檢視器 —  [Sethandlers](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-sethandlers.html)
    * 互動式視訊檢視器 —  [Sethandlers](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-sethandlers.html)
@@ -236,7 +236,7 @@ Dynamic Media中的下列檢視器支援快速檢視：
 1. 您的整個setHandlers程式碼類似於以下內容（使用了互動式視訊檢視器）：
 
    ```xml {.line-numbers}
-   s7interactivevideoviewer.setHandlers ({
+   s7interactivevideoviewer.setHandlers({
        "quickViewActivate": function(inData) {
            var sku=inData.sku;
            loadQuickView(sku);

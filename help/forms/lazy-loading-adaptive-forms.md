@@ -5,7 +5,7 @@ feature: Adaptive Forms, Foundation Components
 role: User
 level: Intermediate
 exl-id: 0cd38edb-2201-4ca6-8b84-6b5b7f76bd90
-source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
+source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
 workflow-type: tm+mt
 source-wordcount: '1063'
 ht-degree: 7%
@@ -89,7 +89,7 @@ Forms包含某些欄位和區段，不適用於所有使用者和所有條件。
 * 使用欄位全域可用的屬性，讓位於延遲載入面板中的欄位值可供表單的所有其他面板使用。
 * 無論欄位是否跨片段標示為全域，請勿轉寄延遲面板內欄位的參考值。
 * 使用面板重設功能，透過下列按一下運算式重設面板上的所有可見專案。\
-  guideBridge.resolveNode(guideBridge.getFocus ({&quot;focusOption&quot;： &quot;navigablePanel&quot;}))。resetData()
+  guideBridge.resolveNode(guideBridge.getFocus({&quot;focusOption&quot;： &quot;navigablePanel&quot;}))。resetData()
 
 
 ## 另請參閱 {#see-also}

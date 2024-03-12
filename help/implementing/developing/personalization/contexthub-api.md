@@ -2,7 +2,7 @@
 title: ContextHub JavaScript API參考
 description: 將ContextHub元件新增至頁面後，指令碼即可使用ContextHub JavaScript API
 exl-id: ec35bef5-610c-4e85-a43a-d4201b5eb03e
-source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
+source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
 workflow-type: tm+mt
 source-wordcount: '4602'
 ht-degree: 2%
@@ -68,7 +68,7 @@ ContextHub物件提供所有存放區的存取權。
 
 ### 函式(ContextHub) {#functions-contexthub}
 
-#### getAllStores () {#getallstores}
+#### getAllStores() {#getallstores}
 
 傳回所有已註冊的ContextHub存放區。
 
@@ -83,7 +83,7 @@ ContextHub物件提供所有存放區的存取權。
 下列範例會擷取所有存放區，然後擷取地理位置存放區：
 
 ```javascript
-var allStores = ContextHub.getAllStores ();
+var allStores = ContextHub.getAllStores();
 var geoloc = allStores.geolocation
 ```
 
@@ -127,7 +127,7 @@ var geoloc = ContextHub.getStore("geolocation");
 
 ### 函式(ContextHub.SegmentEngine.SegmentManager) {#functions-contexthub-segmentengine-segmentmanager}
 
-#### getResolvedSegments () {#getresolvedsegments}
+#### getResolvedSegments() {#getresolvedsegments}
 
 傳回在目前內容中解析的區段。 此函式沒有引數。
 
@@ -155,7 +155,7 @@ A `ContextHub.Utils.Persistence` 物件。 如需有關預設值和初始化的�
 
 ### 函式(ContextHub.Store.Core) {#functions-contexthub-store-core}
 
-#### addAllItems （樹狀結構，選項） {#addallitems-tree-options}
+#### addAllItems(tree， options) {#addallitems-tree-options}
 
 將資料物件或陣列與存放區資料合併。 物件或陣列中的每個索引鍵/值組都會新增到存放區(透過 `setItem` 函式)：
 
@@ -193,7 +193,7 @@ A `boolean` 值：
 * 值 `true` 表示已新增參照。
 * 值 `false` 表示未新增參照。
 
-#### nouncastReadiness () {#announcereadiness}
+#### announceReadiness() {#announcereadiness}
 
 觸發 `ready` 此商店的事件。 此函式沒有引數且未傳回任何值。
 
@@ -213,7 +213,7 @@ A `boolean` 值：
 
 代表索引鍵值的物件。
 
-#### getKeys (includeInternals) {#getkeys-includeinternals}
+#### getKeys(includeInternals) {#getkeys-includeinternals}
 
 從存放區擷取金鑰。 您可以選擇擷取ContextHub架構內部使用的金鑰。
 
@@ -225,7 +225,7 @@ A `boolean` 值：
 
 索引鍵名稱陣列( `string` 值)。
 
-#### getReferences () {#getreferences}
+#### getReferences() {#getreferences}
 
 從存放區擷取參考。
 
@@ -401,7 +401,7 @@ ContextHub.Store.JSONPStore擴展 [ContextHub.Store.Core](#contexthub-store-core
 
 代表原始回應的物件。
 
-#### getServiceDetails () {#getservicedetails}
+#### getServiceDetails() {#getservicedetails}
 
 擷取此ContextHub.Store.JSONPStore物件的服務物件。 服務物件包含建立服務URL所需的資訊。
 
@@ -521,7 +521,7 @@ ContextHub.UI.registerRenderer('contexthub.browserinfo', new SurferinfoRenderer(
 
 ### 函式(ContextHub.Utils.Cookie) {#functions-contexthub-utils-cookie}
 
-#### 存在（索引鍵） {#exists-key}
+#### exists（鍵） {#exists-key}
 
 判斷Cookie是否存在。
 
@@ -536,12 +536,12 @@ A `boolean` true值表示Cookie存在。
 ##### 範例 {#example-exists}
 
 ```javascript
-if (ContextHub.Utils.Cookie.exists ("name")) {
+if (ContextHub.Utils.Cookie.exists("name")) {
    // conditionally-executed code
 }
 ```
 
-#### getAllItems （篩選） {#getallitems-filter}
+#### getAllItems(filter) {#getallitems-filter}
 
 傳回索引鍵符合篩選器的所有Cookie。
 
@@ -560,7 +560,7 @@ Cookie的物件。 物件屬性是Cookie金鑰，金鑰值是Cookie值。
 ##### 範例 {#example-getallitems}
 
 ```javascript
-ContextHub.Utils.Cookie.getAllItems ([/^cq-authoring/, /^cq-editor/])
+ContextHub.Utils.Cookie.getAllItems([/^cq-authoring/, /^cq-editor/])
 ```
 
 #### getItem(key) {#getitem-key-1}
@@ -581,7 +581,7 @@ Cookie值，或 `null` 如果找不到索引鍵的Cookie。
 ContextHub.Utils.Cookie.getItem("name");
 ```
 
-#### getKeys （篩選） {#getkeys-filter}
+#### getKeys(filter) {#getkeys-filter}
 
 傳回符合篩選條件的現有Cookie索引鍵陣列。
 
@@ -600,7 +600,7 @@ ContextHub.Utils.Cookie.getItem("name");
 ##### 範例 {#example-getkeys-1}
 
 ```javascript
-ContextHub.Utils.Cookie.getKeys ([/^cq-authoring/, /^cq-editor/])
+ContextHub.Utils.Cookie.getKeys([/^cq-authoring/, /^cq-editor/])
 ```
 
 #### removeItem(key， options) {#removeitem-key-options-1}
@@ -829,7 +829,7 @@ ContextHub.Utils.JSON.stringify({
 
 ### 函式(ContextHub.Utils.JSON.tree) {#functions-contexthub-utils-json-tree}
 
-#### addAllItems () {#addallitems}
+#### addAllItems() {#addallitems}
 
 建立資料物件的復本，並從第二個物件將資料樹新增至該復本。 函式會傳回覆本，而不會修改任何原始物件。 當兩個物件的資料樹包含相同的索引鍵時，第二個物件的值會覆寫第一個物件的值。
 
@@ -911,7 +911,7 @@ Object {
 }
 ```
 
-#### getKeys () {#getkeys}
+#### getKeys() {#getkeys}
 
 從物件的資料樹狀結構中擷取所有索引鍵。 您可以選擇只擷取特定鍵的子系鍵。 您也可以選擇指定擷取之索引鍵的排序順序。
 
@@ -946,7 +946,7 @@ myObject {
 }
 ```
 
-此 `ContextHub.Utils.JSON.tree.getKeys (myObject);` 指令碼傳回下列陣列：
+此 `ContextHub.Utils.JSON.tree.getKeys(myObject);` 指令碼傳回下列陣列：
 
 ```javascript
 ["/location", "/location/city", "/location/country", "/location/latitude", "/location/longitude", "/location/weather", "/location/weather/humidity", "/location/weather/precipitation", "/location/weather/temperature", "/location/weather/wind"]
@@ -1072,7 +1072,7 @@ myObject = ContextHub.Utils.JSON.tree.setItem(myObject, myKey, myValue);
 
 ### 函式(ContextHub.Utils.storeCategors) {#functions-contexthub-utils-storecandidates}
 
-#### getRegisteredCandidates (storeType) {#getregisteredcandidates-storetype}
+#### getRegisteredCandidates(storeType) {#getregisteredcandidates-storetype}
 
 傳回註冊為候選商店的商店型別。 擷取特定存放區型別或所有存放區型別的已登入候選者。
 
@@ -1084,7 +1084,7 @@ myObject = ContextHub.Utils.JSON.tree.setItem(myObject, myKey, myValue);
 
 存放區型別的物件。 物件屬性是存放區型別名稱，而屬性值是已登入的存放區候選陣列。
 
-#### getStoreFromCandidates (storeType) {#getstorefromcandidates-storetype}
+#### getStoreFromCandidates(storeType) {#getstorefromcandidates-storetype}
 
 從註冊的候選者中傳回存放區型別。 如果註冊了多個相同名稱的存放區型別，此函式會傳回具有最高優先順序的存放區型別。
 
@@ -1096,7 +1096,7 @@ myObject = ContextHub.Utils.JSON.tree.setItem(myObject, myKey, myValue);
 
 代表已登入的存放區候選者的物件。 如果未登入要求的存放區型別，則會擲回錯誤。
 
-#### getSupportedStoreTypes () {#getsupportedstoretypes}
+#### getSupportedStoreTypes() {#getsupportedstoretypes}
 
 傳回註冊為候選商店的商店型別名稱。 此函式不需要引數。
 

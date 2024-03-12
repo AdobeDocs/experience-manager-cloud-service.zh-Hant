@@ -4,9 +4,9 @@ description: 本教學課程可協助您啟動並執行新的Adobe Experience Ma
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 4144f9704aaf17ea684be147395adc3aa31641f2
+source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
 workflow-type: tm+mt
-source-wordcount: '1854'
+source-wordcount: '1850'
 ht-degree: 8%
 
 ---
@@ -18,12 +18,9 @@ ht-degree: 8%
 
 這些表單會直接將資料提交至Microsoft Excel或Google Sheets檔案，讓您能夠使用生動的生態系統以及Google Sheets、Microsoft Excel和Microsoft SharePoint的強大API，輕鬆處理提交的資料或啟動現有的業務工作流程。
 
-AEM Forms提供稱為最適化Forms區塊的區塊，可協助您輕鬆建立表單，以擷取及儲存擷取的資料。 您可以建立已預先設定最適化Forms區塊的新AEM專案，或將最適化Forms區塊新增至現有AEM專案。
+AEM Forms提供稱為最適化Forms區塊的區塊，可協助您輕鬆建立表單，以擷取及儲存擷取的資料。 您可以 [建立已預先設定最適化Forms區塊的新AEM專案](#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) 或 [將最適化Forms區塊新增至現有的AEM專案](#add-adaptive-forms-block-to-your-existing-aem-project).
 
-此AEM Forms教學課程會引導您使用新的Adobe Experience Manager (AEM) Forms專案來建立、預覽和發佈您自己的自訂表單。 您還將瞭解如何將Adaptive Forms區塊新增至現有的AEM專案。
-
-* **[建立已預先設定最適化Forms區塊的新AEM專案](#create-a-new-eds-project-pre-configured-with-adaptive-forms-block)**
-* **[將最適化Forms區塊新增至現有的AEM專案](#add-adaptive-forms-block-to-an-existing-eds-project)**
+此AEM Forms教學課程會引導您使用新的Adobe Experience Manager (AEM) Forms專案來建立、預覽和發佈您自己的自訂表單。
 
 
 
@@ -79,7 +76,7 @@ AEM Forms樣板範本可讓您透過預先設定最適化Forms區塊的AEM專案
 
 ### 連結您自己的內容來源
 
-您新建立的GitHub存放庫指向 [儲存在Google Drive資料夾中的範例內容](https://drive.google.com/drive/folders/17LSiMZC77N8tCJRW45TnHHGcG8V3SLG_). 此唯讀內容是您表單的絕佳起點。 您可以隨意將檔案複製到自己的Google Drive，並根據自己的需求進行自訂。
+您新建立的GitHub存放庫指向 [儲存在Google Drive資料夾中的範例內容](https://drive.google.com/drive/folders/1bvjfi6TqpYA7DvbX6kKc-m7FgHuJ4RUQ). 此唯讀內容是您表單的絕佳起點。 您可以隨意將檔案複製到自己的Google Drive，並根據自己的需求進行自訂。
 
 ![Google Drive上的範例內容](/help/edge/assets/folder-with-sample-content.png)
 
@@ -194,8 +191,6 @@ AEM Forms樣板範本可讓您透過預先設定最適化Forms區塊的AEM專案
 
    例如，如果您的專案存放庫命名為「wefinance」，它位於帳戶擁有者「wkandforms」下方，而您使用的是「主要」分支，則URL為：
 
-
-
    [https://main--wefinance--wkndforms.hlx.page](https://main--wefinance--wkndforms.hlx.page).
 
 ### 建立表單
@@ -274,9 +269,16 @@ AEM Forms樣板範本可讓您透過預先設定最適化Forms區塊的AEM專案
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427789)
 
-如果您有現有的AEM專案，可以整合Adaptive Forms區塊至您目前的專案，以開始建立表單。 若要整合：
+如果您有現有的AEM專案，可以整合Adaptive Forms區塊至您目前的專案，以開始建立表單。
 
-1. 將最適化Forms區塊存放庫： https://github.com/adobe-rnd/aem-boilerplate-forms複製至您的電腦。
+>
+>
+>
+> 此步驟適用於使用建立的專案 [AEM樣板](https://github.com/adobe/aem-boilerplate). 如果您使用建立AEM專案 [AEM Forms樣板](https://github.com/adobe-rnd/aem-boilerplate-forms)，您可以略過此步驟。
+
+若要整合：
+
+1. 複製最適化Forms區塊存放庫： [https://github.com/adobe-rnd/aem-boilerplate-forms](https://github.com/adobe-rnd/aem-boilerplate-forms) 到您的電腦。
 
 1. 在下載的資料夾中，找到 `blocks/form` 資料夾。 複製此資料夾。 現在，導覽至您AEM專案的本機 `blocks` 並將複製的表單資料夾貼到這裡。
 

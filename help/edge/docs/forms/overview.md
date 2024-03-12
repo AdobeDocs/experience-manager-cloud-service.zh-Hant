@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
-source-git-commit: 8ff0363fbb97aac85733fc9444819fa4d6f12805
+source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
 workflow-type: tm+mt
-source-wordcount: '959'
+source-wordcount: '989'
 ht-degree: 0%
 
 ---
@@ -79,16 +79,20 @@ AEM Authoring提供用於建立表單的WYSIWYG介面(最適化Forms編輯器)�
 
 本質上， [AEM製作](/help/forms/creating-adaptive-form-core-components.md) 建立在 [檔案式製作](/help/edge/docs/forms/create-forms.md)，提供更進階的工具組，用於建立和管理複雜的表單。
 
+>[!NOTE]
+>
+>
+> AEM編寫功能可在率先採用者程式中取得。 如果您有興趣，請從您的工作地址快速傳送電子郵件至aem-forms-ea@adobe.com，以請求存取功能。
+
 ### AEM FormsEdge Delivery Services：製作。 Forms的發佈與提交
 
 下列圖表說明使用檔案式製作和AEM製作來建立、發佈和提交表單的程式。
 
-
-
-
 ![檔案式製作 ](/help/edge/assets/document-based-authoring-workflow.png)
 
 ![AEM製作](/help/edge/assets/aem-authoring-workflow.png)
+
+
 
 
 ## 開始建立表單
@@ -101,6 +105,17 @@ AEM Authoring提供用於建立表單的WYSIWYG介面(最適化Forms編輯器)�
 * [將可重複的區段新增至表單&#x200B;。](/help/edge/docs/forms/repeatable-forms.md)
 * [提交表單後顯示自訂感謝訊息&#x200B;。](/help/edge/docs/forms/thank-you-page-form.md)
 * [最適化表單區塊元件及其屬性](/help/edge/docs/forms/form-components.md)
+
+
+
+
+
+
+
+
+
+
+
 
 
 

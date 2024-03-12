@@ -1,9 +1,9 @@
 ---
 title: 什麼是調適型表單運算式？
 description: 使用最適化Forms運算式來新增自動驗證、計算，並開啟或關閉區段的可見度。
-source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
+source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
 workflow-type: tm+mt
-source-wordcount: '2683'
+source-wordcount: '2686'
 ht-degree: 0%
 
 ---
@@ -215,7 +215,7 @@ GuideBridge是API的集合，可用來在瀏覽器的記憶體模型中與Adapti
 
 * 若要重設表單欄位，您可以觸發 `guideBridge.reset()` 按鈕點選運算式上的API。 同樣地，有一個提交API可以按一下運算式來呼叫 `guideBridge.submit()`**.**
 
-* 您可以使用 `setFocus ()` 用於跨不同欄位或面板設定焦點的API （面板焦點會自動設定為第一個欄位）。 `setFocus ()`提供多種導覽選項，例如跨面板導覽、上一個/下一個周遊、將焦點設定為特定欄位等等。 例如，若要移至下一個面板，您可以使用： `guideBridge.setFocus (this.panel.somExpression, 'nextItem').`
+* 您可以使用 `setFocus()` 用於跨不同欄位或面板設定焦點的API （面板焦點會自動設定為第一個欄位）。 `setFocus()`提供多種導覽選項，例如跨面板導覽、上一個/下一個周遊、將焦點設定為特定欄位等等。 例如，若要移至下一個面板，您可以使用： &#39;guideBridge.setFocus(this.panel.somExpression， &#39;nextItem&#39;)。
 
 * 若要驗證最適化表單或其特定面板，請使用 `guideBridge.validate(errorList, somExpression).`
 

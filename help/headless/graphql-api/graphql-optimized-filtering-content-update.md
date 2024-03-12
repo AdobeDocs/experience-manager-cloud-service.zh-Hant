@@ -2,10 +2,10 @@
 title: 更新您的內容片段，以達到最佳化 GraphQL 篩選
 description: 了解如何更新您的內容片段，以便在 Adobe Experience Manager as a Cloud Service 中達到最佳化 GraphQL 篩選，並實現 Headless 內容傳遞。
 exl-id: 211f079e-d129-4905-a56a-4fddc11551cc
-source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
+source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
 workflow-type: tm+mt
 source-wordcount: '886'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -57,7 +57,7 @@ ht-degree: 98%
       <td>全部 </td>
       <td> </td>
       <td>變數 </td>
-      <td>啟用(！=0)或停用(0)觸發內容片段移轉工作。 </td>
+      <td>啟用(!=0) 或停用 (0) 觸發內容片段遷移作業。 </td>
      </tr>
      <tr>
       <td>2</td>
@@ -211,7 +211,7 @@ ht-degree: 98%
       <td>全部 </td>
       <td> </td>
       <td>變數 </td>
-      <td>停用(0) (或啟用(！=0)) 觸發內容片段遷移作業。 </td>
+      <td>停用(0) (或啟用(!=0)) 觸發內容片段遷移作業。 </td>
      </tr>
     </tbody>
    </table>
