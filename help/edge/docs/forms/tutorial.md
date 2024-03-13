@@ -4,7 +4,7 @@ description: 本教學課程可協助您啟動並執行新的Adobe Experience Ma
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
+source-git-commit: d0298f3c15264bfa7421ccf0cde752f164829c02
 workflow-type: tm+mt
 source-wordcount: '1850'
 ht-degree: 8%
@@ -124,7 +124,7 @@ AEM Forms樣板範本可讓您透過預先設定最適化Forms區塊的AEM專案
       如果您使用Microsoft SharePoint，資料夾路徑會使用以下格式：
 
       ```HTML
-      https://<tenant>.SharePoint.com/sites/  <sp-site>/Shared%20Documents/<folder-name>
+      https://<tenant>.SharePoint.com/sites/<sp-site>/Shared%20Documents/<folder-name>
       ```
 
       例如，
@@ -271,7 +271,7 @@ AEM Forms樣板範本可讓您透過預先設定最適化Forms區塊的AEM專案
 
 如果您有現有的AEM專案，可以整合Adaptive Forms區塊至您目前的專案，以開始建立表單。
 
->
+>[!NOTE]
 >
 >
 > 此步驟適用於使用建立的專案 [AEM樣板](https://github.com/adobe/aem-boilerplate). 如果您使用建立AEM專案 [AEM Forms樣板](https://github.com/adobe-rnd/aem-boilerplate-forms)，您可以略過此步驟。
