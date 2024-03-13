@@ -6,10 +6,10 @@ contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms, Core Components
 exl-id: 4496c4cc-a5d7-4f34-91f9-13eded77b362
-source-git-commit: e0607ff37572a586f5a83f2974054ebfb4b7d98f
+source-git-commit: d75d448d631da7af3a37192f0890a38c760ab09b
 workflow-type: tm+mt
-source-wordcount: '2309'
-ht-degree: 97%
+source-wordcount: '2331'
+ht-degree: 96%
 
 ---
 
@@ -255,6 +255,7 @@ AEM Forms 為表單提交提供現成可用的成功和錯誤處理常式。這�
        return true; // true - call default error handler, false - don't call default error handler.
    }
    ```
+   在上面的程式碼中， `return true` 自動叫用預設的錯誤處理常式。 若要防止預設呼叫預設錯誤處理常式，請包括 `return false`.
 
    >[!NOTE]
    >
