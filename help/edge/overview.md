@@ -1,17 +1,17 @@
 ---
-title: AEM和Edge Delivery Services快速入門
+title: 開始使用 AEM 和 Edge Delivery Services
 description: 了解 Edge Delivery Services 提供的效能和完善 Lighthouse 分數功能對 AEM as a Cloud Service 有什麼好處。
 feature: Edge Delivery Services
 exl-id: 03a1aa93-d2e6-4175-9cf3-c7ae25c0d24e
 source-git-commit: d91254b52c257a3758da200a2c74b736ca457884
 workflow-type: tm+mt
 source-wordcount: '874'
-ht-degree: 92%
+ht-degree: 94%
 
 ---
 
 
-# AEM和Edge Delivery Services快速入門 {#aem-edge}
+# 開始使用 AEM 和 Edge Delivery Services {#aem-edge}
 
 透過 Edge Delivery Services，AEM 可提供促進參與度和轉換率的卓越體驗。AEM 會透過提供快速編寫和開發的高影響力體驗來實現這一目標。這是一組可組合的服務，有助建立快速開發環境；編寫作者可在其中快速更新和發佈，並且能快速推出新網站。因此，透過 Edge Delivery Services，您可以提高轉換率、降低成本並提供極高的內容速度。
 

@@ -33,7 +33,7 @@ ht-degree: 88%
 * GUIDES-14948：改善翻譯面板中的使用者體驗
 * GUIDES-8782：改善「插入元素」對話框中的搜尋邏輯
 * GUIDES-14681：有能力發佈具備動態基準的多個輸出預設
-* 有關 AEM Guides 增強功能的完整清單，請參閱： [AEM Guides 中的新增功能](https://experienceleague.adobe.com/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2402-release/whats-new-2024-2-0.html?lang=zh-Hant#release-info)
+* 有關 AEM Guides 增強功能的完整清單，請參閱：[AEM Guides 中的新增功能](https://experienceleague.adobe.com/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2402-release/whats-new-2024-2-0.html?lang=zh-Hant#release-info)
 
 ### 已修正的問題 {#fixed-issues-15262}
 
@@ -41,8 +41,8 @@ ht-degree: 88%
 * ASSETS-18088：將 batik 資料庫相依性升級至 1.17。
 * ASSETS-21965：中繼資料回寫工作流程必須僅在資產中繼資料變更時啟動。
 * ASSETS-26368：如果作業設定不存在，預計的批次匯入作業就不會移除。
-* ASSETS-26549：具備 &quot;jcr:lastModifiedBy&quot; 的資產/節點：&quot;workflow-process-service&quot; 在清單檢視中顯示為「外部使用者」。
-* ASSETS-26842：更新 &quot;Firefly&quot; 文字，以便閱讀處理設定檔中的「應用程式建立工具」。
+* ASSETS-26549：具備「jcr:lastModifiedBy」的資產/節點：「workflow-process-service」在清單檢視中顯示為「外部使用者」。
+* ASSETS-26842：更新「Firefly」文字，以便閱讀處理設定檔中的「應用程式建立工具」。
 * ASSETS-28708：某些 IMS 權杖請求的回應非常慢。
 * ASSETS-28767：如果是含有已發佈資產較大編號的資料夾，表示資產的發佈狀態不一致。
 * ASSETS-29011：智慧型裁切可供唯讀使用者看見。
@@ -57,10 +57,10 @@ ht-degree: 88%
 * ASSETS-31015：無法上傳檔案副檔名為 .msg 的資產。
 * ASSETS-31038：接收到通知服務的任務事件未經處理。
 * ASSETS-31097：停用 WCM 內容的非同步複製，以避免出現周遊查詢警告。
-* ASSETS-31256：具備 &quot;jcr:lastModifiedBy&quot; 的資產/節點：&quot;workflow-process-service&quot; 在清單檢視中顯示為「外部使用者」。
+* ASSETS-31256：具備「jcr:lastModifiedBy」的資產/節點：「workflow-process-service」在清單檢視中顯示為「外部使用者」。
 * ASSETS-31260：當下拉式 JSON 具備較大筆清單時，資產中繼資料表單下拉式欄位無法正常運作。
 * ASSETS-31280：將資產新增至集合時，以扁平結構下進行資產下載。
-* ASSETS-31301： `dynamicmedia_sly.js` 無法透過 Use API 正確實例化。
+* ASSETS-31301：`dynamicmedia_sly.js` 無法透過 Use API 正確實例化。
 * ASSETS-31330：ko_KR：字幕和音軌中未本地化的字串。
 * ASSETS-31405：InDesign 伺服器處理大型 InDesign 版面配置時失敗。
 * ASSETS-31570：Unified Shell - 「儲存並關閉」、「取消」按鈕的資產詳細資料需要按下多次才能運作。
@@ -79,13 +79,13 @@ ht-degree: 88%
 * ASSETS-34684：處理內容樹中的多值 dc:title。
 * ASSETS-34789：修正檔案名稱衝突檢查中的標準化問題。
 * DXML-13276：AEM Guides - 將索引整合到 GraniteContent 中並將其從資料庫中移除。
-* GRANITE-47995：由於與 &quot;cq:isDelivered&quot; 屬性衝突，移除操作可能會失敗。
+* GRANITE-47995：由於與「cq:isDelivered」屬性衝突，移除操作可能會失敗。
 * GRANITE-48079：啟用 OAuth 線上權杖驗證的 POST 請求。
 * GRANITE-48143：將 org.apache.sling.resourcemerger 升級至 1.4.4。
 * GRANITE-49031：更新至 Jackson 2.16.1。
 * SCRNS-3961：螢幕 - 序列管道：在淡化轉變中使用的 Jquery 動畫會造成螢幕變黑。
 * SITES-15868：改善清單片段的效用。
-* SITES-16079： `/fragments/{id}/references` 開始返回重複項目。
+* SITES-16079：`/fragments/{id}/references` 開始返回重複項目。
 * SITES-16118：如果修補片段且模型中缺少片段欄位，則會引發異常。
 * SITES-16121：檢索模型日期欄位會引發異常。
 * SITES-16207：POST /adobe/sites/cf/models 操作傳回兩個不同的 OK 狀態碼。
@@ -97,8 +97,8 @@ ht-degree: 88%
 * GUIDES-14968：全域導覽按鈕無法使用，儀表板無法載入。
 * GUIDES-14943：在原生 PDF 發佈中，條件預設中的自訂屬性不適用於原生 PDF 發佈。
 * GUIDES-15085：在原生 PDF 發佈中，2023 年 12 月版 Adobe Experience Manager Guides 的關鍵引用未獲得解決。
-* GUIDES-13486： **基準線篩選器** 檔案無法與 Web 編輯器中的檔案名稱一起使用。
-* 有關 AEM Guides 中已修正問題的完整清單，請參閱： [AEM Guides 已修正問題](https://experienceleague.adobe.com/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2402-release/fixed-issues-2024-2-0.html?lang=zh-Hant#release-info)
+* GUIDES-13486：**基準線篩選器** 檔案無法與 Web 編輯器中的檔案名稱一起使用。
+* 有關 AEM Guides 中已修正問題的完整清單，請參閱：[AEM Guides 已修正問題](https://experienceleague.adobe.com/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2402-release/fixed-issues-2024-2-0.html?lang=zh-Hant#release-info)
 
 ### 已知問題 {#known-issues-15262}
 
