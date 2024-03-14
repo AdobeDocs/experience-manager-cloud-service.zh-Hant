@@ -2,10 +2,8 @@
 title: 將可重複區段新增到表單
 description: 新增可重複區段至 EDS Form
 feature: Edge Delivery Services
-hide: true
-hidefromtoc: true
 exl-id: 062d5a88-48ca-421f-bf0d-1483e3cfee28
-source-git-commit: 4144f9704aaf17ea684be147395adc3aa31641f2
+source-git-commit: b32e04dec83992ebfcea7874932a5ab77a1eaa70
 workflow-type: tm+mt
 source-wordcount: '533'
 ht-degree: 96%
@@ -17,8 +15,6 @@ ht-degree: 96%
 最適化Forms區塊提供新增或讓表單的區段或元件可重複的功能。 這允許使用者針對同一類型的數據多次輸入訊息，從而更容易收集工作經驗或教育背景等資訊。
 
 例如，考慮一個用來收集有關個人工作經驗資訊的表單。您可能有一個可重複區段，用來擷取每項先前工作的詳細資訊。可重複區段通常包含公司名稱、職位、就業日期和工作職責等欄位。使用者可以新增可重複區段的多個實例，以輸入有關他們所做每項工作的資訊。
-
-
 
 閱讀完本文章後，您將學會：
 
