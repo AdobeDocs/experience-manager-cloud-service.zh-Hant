@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
-source-git-commit: 6d4b194d17cc27a6a8596825401dc723bebe7b27
+source-git-commit: f4cf79e2cd71a390741987cfcf034e6eed02432d
 workflow-type: tm+mt
-source-wordcount: '989'
+source-wordcount: '993'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ AEM Forms Edge Delivery Services可讓您在網站上撰寫表單的方式上擁
 
 下圖說明如何在Microsoft Excel或Google Sheets （檔案式製作）中編輯表單及發佈至Edge Delivery Services。 它也會顯示使用最適化Forms編輯器(AEM製作)的AEM發佈方法。
 
-![Edge Delivery 架構](/help/edge/assets/AEM-forms-with-EDS-publishing.png)
+![發佈至Edge Delivery Services和AEM](/help/edge/assets/AEM-forms-with-EDS-publishing.png)
 
 AEM FormsEdge Delivery Services使用GitHub，因此客戶可以直接從其GitHub存放庫管理和部署程式碼。 例如，您可以用下列方式撰寫表單： [Google工作表](/help/edge/docs/forms/create-forms.md) 或 [Microsoft Excel](/help/edge/docs/forms/create-forms.md) 且可在GitHub存放庫中使用CSS和JavaScript來開發表單的元件。
 

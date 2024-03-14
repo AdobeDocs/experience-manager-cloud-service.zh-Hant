@@ -5,12 +5,22 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: 58042016-e655-446f-a2bf-83f1811525e3
-source-git-commit: 14171647dce7d2f6ce985616035eefa62c6955db
+source-git-commit: f4cf79e2cd71a390741987cfcf034e6eed02432d
 workflow-type: tm+mt
-source-wordcount: '48'
-ht-degree: 56%
+source-wordcount: '165'
+ht-degree: 10%
 
 ---
 
-# 使用規則為表單新增動態行為
+# 使用最適化表單區塊中的規則來新增動態行為至表單
+
+在試算表中製作表單的一項重要優點是，可以使用函式來建立規則，這些規則可用於條件式顯示欄位以及根據使用者輸入進行自動值計算。 在本教學課程中，我們將增強使用製作表單文章建立的基本表單，以示範兩個主要功能：
+
+在本教學課程中，我們將擴充使用製作表單文章建立的基本表單，以展示兩項基本功能：
+
+可見性運算式：僅在使用者選取訂閱核取方塊時顯示「電子郵件」欄位。
+
+值運算式：根據指定的天數（開始與結束日期）與房間預算，自動計算運送航程的估計金額。
+
+
 

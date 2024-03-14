@@ -5,24 +5,22 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: 0cf881a2-3784-45eb-afe8-3435e5e95cf4
-source-git-commit: d0298f3c15264bfa7421ccf0cde752f164829c02
+source-git-commit: f4cf79e2cd71a390741987cfcf034e6eed02432d
 workflow-type: tm+mt
-source-wordcount: '806'
+source-wordcount: '805'
 ht-degree: 62%
 
 ---
 
 # 使用最適化Forms區塊建立表單
 
+>[!VIDEO](https://video.tv.adobe.com/v/3427881?quality=12&learn=on)
+
 AEM Forms Edge Delivery提供稱為最適化Forms區塊的區塊，協助您輕鬆建立表單，以擷取及儲存擷取的資料。 您可以 [建立已預先設定最適化Forms區塊的新AEM專案](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) 或 [將最適化Forms區塊新增至現有的AEM專案](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project).
 
 這些表單會直接將資料提交至Microsoft Excel或Google Sheets檔案，讓您能夠使用生動的生態系統以及Google Sheets、Microsoft Excel和Microsoft SharePoint的強大API，輕鬆處理提交的資料或啟動現有的業務工作流程。
 
 ![檔案式撰寫生態系統](/help/edge/assets/document-based-authoring-workflow-create-form.png)
-
-
-![視訊](https://video.tv.adobe.com/v/3427881?quality=12&learn=on)
-
 
 
 ## 先決條件
