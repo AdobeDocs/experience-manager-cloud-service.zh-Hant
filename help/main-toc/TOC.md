@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的運作方式以及該軟體可以為您做哪些事。
 breadcrumb-title: 使用手冊
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 80896cd5e4bbdb04754b249e6002b057b7375b03
+source-git-commit: 1104afb8a990c04e7d6bc2f5690a887218598f4b
 workflow-type: tm+mt
-source-wordcount: '4791'
+source-wordcount: '4794'
 ht-degree: 99%
 
 ---
@@ -974,6 +974,7 @@ ht-degree: 99%
       + [New Relic One](/help/implementing/cloud-manager/user-access-new-relic.md)
       + [Dynatrace](/help/implementing/cloud-manager/dynatrace.md)
       + [通知](/help/implementing/cloud-manager/notifications.md)
+      + [進階網路](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking.html)
       + SSL 憑證 {#manage-ssl-certificates}
          + [簡介](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
          + [正在新增 SSL 憑證](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)
