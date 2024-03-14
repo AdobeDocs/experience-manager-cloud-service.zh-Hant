@@ -4,9 +4,9 @@ description: 設定Adobe Experience Manager Formsas a Cloud Service的本機開�
 role: Admin, Developer, User
 feature: Adaptive Forms
 exl-id: 12877a77-094f-492a-af58-cffafecf79ae
-source-git-commit: 1ec17aebe4eb003b24f5036288a8836aabddb77a
+source-git-commit: e84d3ad2d7b549092ab7c616bead2f14f59be8c9
 workflow-type: tm+mt
-source-wordcount: '2724'
+source-wordcount: '2723'
 ht-degree: 2%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 2%
 您可以使用本機開發環境執行以下動作，而無需登入雲端開發環境：
 
 * [建立表單](creating-adaptive-form.md) 和相關資產（主題、範本、自訂提交動作等）
-* [將 PDF 表單轉換為最適化表單](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html)
+* [將 PDF 表單轉換為最適化表單](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html?lang=zh-Hant)
 * 建置要產生的應用程式 [客戶通訊](aem-forms-cloud-service-communications-introduction.md) 隨選或批次模式。
 
 在本機開發執行個體或應用程式準備就緒要產生的最適化表單或相關資產後 [客戶通訊] 準備就緒，您可以從本機開發環境將調適型表單或客戶通訊應用程式匯出至Cloud Service環境，以進行進一步測試或移至生產環境。
@@ -222,8 +222,19 @@ AEM Forms as aCloud Service提供以Docker為基礎的SDK環境，可更輕鬆�
 
 1. 確定您的本機AEM Author執行個體已啟動且在執行中。 執行以下命令以啟動SDK：
 
-   * (在Microsoft® Windows上) `sdk.bat start`
-   * (在Linux®或Apple macOS上) `AEM_HOME=[local AEM Author installation] ./sdk.sh start`
+   * 在Microsoft® Windows上
+
+     ```shell
+     sdk.bat start
+     ```
+
+
+   * Linux®或Apple macOS
+
+   ```Shell
+       export AEM_HOME=[local AEM Author installation]
+       ./sdk.sh start
+   ```
 
    >[!NOTE]
    >
