@@ -3,18 +3,19 @@ title: 自訂AEM Forms Edge Delivery Services表單的主題和樣式
 description: 自訂AEM Forms Edge Delivery Services表單的主題和樣式
 feature: Edge Delivery Services
 exl-id: c214711c-979b-4833-9541-8e35b2aa8e09
-source-git-commit: b32e04dec83992ebfcea7874932a5ab77a1eaa70
+source-git-commit: 5eee563a9a425ef187afed69a8159d8b1298dad7
 workflow-type: tm+mt
-source-wordcount: '2012'
-ht-degree: 44%
+source-wordcount: '2014'
+ht-degree: 41%
 
 ---
 
-# 設定表單欄位的樣式
+
+# 自訂表單外觀
 
 表單對於網站上的使用者互動至關重要，可讓使用者輸入資料。您可以使用階層式樣式表(CSS)來設定表單欄位的樣式、增強表單的視覺呈現方式，並改善使用者體驗。
 
-最適化Forms區塊會對所有表單欄位產生一致的結構。 一致的結構使得開發CSS選取器更容易根據欄位型別和欄位名稱來選取和設定表單欄位的樣式。
+最適化Forms區塊會對所有表單欄位產生一致的結構。 一致的結構使得開發CSS選擇器更容易根據欄位型別和欄位名稱來選擇和設定表單欄位的樣式。
 
 本檔案概述各種表單元件的HTML結構，協助您瞭解如何為各種表單欄位建立CSS選取器，以設定最適化Forms區塊的表單欄位樣式。
 
@@ -22,7 +23,7 @@ ht-degree: 44%
 
 * 您對Adaptive Forms區塊隨附的預設CSS檔案結構已有瞭解。
 * 您可以建置瞭解Adaptive Forms區塊所提供之表單元件的HTML結構，包括一般元件和特定元件，例如下拉式清單、選項群組及核取方塊群組。
-* 您會瞭解如何使用CSS選取器根據欄位型別和欄位名稱來設定表單欄位的樣式，從而根據需求允許一致或唯一的樣式。
+* 您將瞭解如何使用CSS選取器根據欄位型別和欄位名稱來設定表單欄位的樣式，以根據要求允許一致或唯一的樣式。
 
 
 ## 了解表單欄位類型
@@ -39,7 +40,7 @@ ht-degree: 44%
 
 瞭解 [基本CSS概念](https://www.w3schools.com/css/css_intro.asp) 在樣式化特定表單欄位之前相當重要：
 
-* [選擇器](https://www.w3schools.com/css/css_selectors.asp)：CSS選取器可讓您鎖定特定的HTML元素作為樣式設定目標。 您可以使用元素選取器、類別選取器或 ID 選取器。
+* [選擇器](https://www.w3schools.com/css/css_selectors.asp)： CSS選取器可讓您鎖定特定的HTML元素作為樣式設定目標。 您可以使用元素選取器、類別選取器或 ID 選取器。
 * [屬性](https://www.w3schools.com/css/css_syntax.asp)： CSS屬性會定義元素的視覺外觀。 用於設定表單欄位樣式的常見屬性包括顏色、背景顏色、邊框、邊框間距、邊界等。
 * [方塊模型](https://www.w3schools.com/css/css_boxmodel.asp)： CSS方塊模型將HTML元素的結構描述為由邊框間距、邊框和邊界包圍的內容區域。
 * Flexbox/格線： CSS [Flexbox](https://www.w3schools.com/css/css3_flexbox.asp) 和 [格線版面配置](https://www.w3schools.com/css/css_grid.asp) 是建立回應式且彈性設計的強大工具。
@@ -87,7 +88,7 @@ ht-degree: 44%
 </div>
 ```
 
-* 類別：div 元素有幾個目標為特定元素和樣式的類別。您需要 `{Type}-wrapper` 或 `field-{Name}` 類別以開發 CSS 選取器來設定表單欄位樣式：
+* 類別：div 元素有幾個目標為特定元素和樣式的類別。您需要 `{Type}-wrapper` 或 `field-{Name}` 用來開發CSS選擇器以設定表單欄位樣式的類別：
    * {Type}：根據欄位類型識別元件。例如，文字（文字包裝函式）、數字（數字包裝函式）、日期（日期包裝函式）。
    * {Name}：根據名稱識別元件。欄位名稱只能包含英數字元，名稱中的多個連續破折號將替換為單個破折號 `(-)`，並且欄位名稱中的開頭和結尾破折號將被刪除。例如，名字(field-first-name field-wrapper)。
    * {FieldId}：欄位的唯一識別碼，是自動產生的。
@@ -144,7 +145,7 @@ ht-degree: 44%
 
 
 
-**一般元件的 CSS 選取器範例**
+**一般元件的CSS選取器範例**
 
 ```CSS
 /*Target all text input fields */
@@ -203,7 +204,7 @@ first-name input {
 
 +++ 下拉式元件的CSS選取器
 
-下列CSS列出一些下拉式元件的CSS選取器範例。
+下列CSS列出下拉式元件的一些範例CSS選取器。
 
 ```CSS
 /* Target the outer wrapper */
@@ -262,7 +263,7 @@ first-name input {
 
 與下拉式元件類似，選項群組也有自己的HTML結構和CSS結構：
 
-+++ 單選按鈕群組 HTML 結構
++++ 無線電群組的HTML結構
 
 ```HTML
 <fieldset class="radio-group-wrapper field-{Name} field-wrapper" id="{FieldId}" name="{Name}" data-required="{Required}">
@@ -300,7 +301,7 @@ first-name input {
 
 +++
 
-+++ 下拉式元件的CSS選取器
++++ 無線電群組的CSS選取器
 
 * 定位欄位集
 
@@ -334,7 +335,7 @@ first-name input {
 
 ### 核取方塊群組
 
-+++ 核取方塊群組 HTML 結構
++++ 核取方塊群組的HTML結構
 
 ```HTML
 <fieldset class="checkbox-group-wrapper field-{Name} field-wrapper" id="{FieldId}" name="{Name}" data-required="{Required}">
@@ -370,7 +371,7 @@ first-name input {
 
 +++
 
-+++ 選項和核取方塊群組的CSS選取器範例**
++++ 核取方塊群組的CSS選取器
 
 * 以外部包裝函式為目標：這些選取器的目標為單選按鈕和核取方塊群組的最外層容器，可讓您將一般樣式套用至整個群組結構。這對於設定間距、對齊方式或其他版面相關的屬性非常有用。
 
@@ -796,9 +797,9 @@ first-name input {
 
 ### 根據欄位類型設定樣式
 
-您可以使用 CSS 選取器來以特定欄位類型為目標並一致地套用樣式。
+您可以使用CSS選取器來鎖定特定欄位型別，並一致地套用樣式。
 
-**HTML結構**
++++ HTML結構
 
 ```HTML
 <div class="{Type}-wrapper field-{Name} field-wrapper" data-required={Required}>
@@ -837,8 +838,10 @@ first-name input {
 * 每個欄位都有對應的標籤、輸入元素和潛在的附加元素 (例如預留位置和描述)。
 
 
++++
 
-**CSS 選取器範例**
+
++++ CSS選取器範例
 
 ```CSS
 /* Target all text input fields */
@@ -853,13 +856,13 @@ first-name input {
 }
 ```
 
-
++++
 
 ### 根據欄位名稱設定樣式
 
 您也可以根據名稱以個別欄位為目標來套用獨特的樣式。
 
-**HTML結構**
++++ HTML結構
 
 ```HTML
 <div class="{Type}-wrapper field-{Name} field-wrapper" data-required={Required}>
@@ -883,7 +886,9 @@ first-name input {
 </div>
 ```
 
-**CSS 選取器範例**
++++
+
++++ 範例CSS選取器
 
 ```CSS
 .field-otp input {
@@ -891,7 +896,11 @@ first-name input {
 }
 ```
 
+
+
 此 CSS 的目標是位於具有類別 `field-otp` 的元素內的所有輸入元素。您的表單HTML結構遵循最適化Forms區塊的慣例，這表示有一個標示為「field-otp」類別的容器會儲存名為「otp」的欄位。
+
++++
 
 ## 另請參閱
 

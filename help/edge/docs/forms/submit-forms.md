@@ -3,14 +3,14 @@ title: 準備試算表並接受資料
 description: 使用試算表及最適化Forms區塊欄位，更快製作強大的表單！
 feature: Edge Delivery Services
 exl-id: 0643aee5-3a7f-449f-b086-ed637ae53b5a
-source-git-commit: b32e04dec83992ebfcea7874932a5ab77a1eaa70
+source-git-commit: 5eee563a9a425ef187afed69a8159d8b1298dad7
 workflow-type: tm+mt
-source-wordcount: '994'
-ht-degree: 65%
+source-wordcount: '1001'
+ht-degree: 64%
 
 ---
 
-# 準備試算表並接受資料
+# 設定您的Google工作表或Microsoft Excel檔案以開始接受資料
 
 
 一旦您 [已建立和預覽表單](/help/edge/docs/forms/create-forms.md)，是時候啟用對應的試算表來開始接收資料了。 您可以手動啟用試算表以接受資料，或使用管理員API啟用試算表以接受資料。

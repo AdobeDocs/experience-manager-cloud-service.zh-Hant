@@ -3,14 +3,14 @@ title: 發佈 AEM Forms Edge Delivery Services Form
 description: 發佈 AEM Forms Edge Delivery Services Form
 feature: Edge Delivery Services
 exl-id: dcb16da1-dcc2-4529-8859-0716e727b54d
-source-git-commit: b32e04dec83992ebfcea7874932a5ab77a1eaa70
+source-git-commit: 5eee563a9a425ef187afed69a8159d8b1298dad7
 workflow-type: tm+mt
-source-wordcount: '545'
-ht-degree: 92%
+source-wordcount: '549'
+ht-degree: 90%
 
 ---
 
-# 發佈您的表單
+# 發佈您的表單並開始收集資料
 
 一旦您準備好與客戶分享表單以收集或提交資料，您只需發佈表單並供客戶隨時使用即可。
 

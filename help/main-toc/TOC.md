@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的運作方式以及該軟體可以為您做哪些事。
 breadcrumb-title: 使用手冊
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 1104afb8a990c04e7d6bc2f5690a887218598f4b
+source-git-commit: 5eee563a9a425ef187afed69a8159d8b1298dad7
 workflow-type: tm+mt
-source-wordcount: '4794'
-ht-degree: 99%
+source-wordcount: '4813'
+ht-degree: 98%
 
 ---
 
@@ -826,21 +826,21 @@ ht-degree: 99%
       + [概觀](/help/edge/docs/forms/overview.md)
       + 立即開始 {#getting-started-eds-forms}
          + [快速入門](/help/edge/docs/forms/tutorial.md)
-         + [建立並預覽表單](/help/edge/docs/forms/create-forms.md)
-         + [啟用表單來傳送資料](/help/edge/docs/forms/submit-forms.md)
-         + [將表單發佈到網站頁面](/help/edge/docs/forms/publish-forms.md)
+         + [使用Google工作表或Microsoft Excel建立表單](/help/edge/docs/forms/create-forms.md)
+         + [設定Google工作表或Microsoft Excel檔案以開始接受資料&#x200B;。](/help/edge/docs/forms/submit-forms.md)
+         + [發佈您的表單並開始收集資料](/help/edge/docs/forms/publish-forms.md)
          + [新增驗證至表單欄位](/help/edge/docs/forms/validate-forms.md)
-         + [改變主題和樣式風格](/help/edge/docs/forms/style-theme-forms.md)
+         + [自訂表單的外觀&#x200B;](/help/edge/docs/forms/style-theme-forms.md)
          + [使用規則為表單新增動態行為](/help/edge/docs/forms/rules-forms.md)
          + [提交表單後顯示自訂感謝訊息](/help/edge/docs/forms/thank-you-page-form.md)
       + 功能 {#advanced-features-eds-forms}
          + [表單片段](/help/edge/docs/forms/form-fragments.md)
-         + [可重複區段](/help/edge/docs/forms/repeatable-forms.md)
+         + [將可重複的區段新增至表單&#x200B;。](/help/edge/docs/forms/repeatable-forms.md)
          + [轉換](/help/edge/docs/forms/translate-forms.md)
          + [reCAPTCHA](/help/edge/docs/forms/recaptacha-forms.md)
          + [自訂元件](/help/edge/docs/forms/custom-components-forms.md)
       + 參考資料 {#forms-references}
-         + [表單區塊元件清單](/help/edge/docs/forms/form-components.md)
+         + [最適化表單區塊元件及其屬性](/help/edge/docs/forms/form-components.md)
    + Edge Delivery 資源 {#resources}
       + Sidekick {#sidekick}
          + [使用 Sidekick](/help/edge/docs/sidekick.md)
