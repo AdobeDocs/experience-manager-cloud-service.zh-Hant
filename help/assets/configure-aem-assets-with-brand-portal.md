@@ -5,21 +5,21 @@ contentOwner: AK
 feature: Brand Portal,Asset Distribution,Configuration
 role: Admin
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 0411da1113c6bddfa1adcc583b4e53c5daa9bd41
 workflow-type: tm+mt
-source-wordcount: '2584'
-ht-degree: 8%
+source-wordcount: '2568'
+ht-degree: 6%
 
 ---
 
-# 透過 Brand Portal 設定 Experience Manager Assets {#configure-aem-assets-with-brand-portal}
+# 使用Brand Portal設定Experience Manager Assets {#configure-aem-assets-with-brand-portal}
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
 | AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/assets/brandportal/configure-aem-assets-with-brand-portal.html?lang=zh-Hant) |
 | AEM as a Cloud Service  | 本文章 |
 
-設定Adobe Experience Manager Assets Brand Portal可讓您從Adobe Experience Manager Assets as a發佈核准的品牌資產 [!DNL Cloud Service] 執行個體傳送至Brand Portal，並分發給Brand Portal使用者。
+設定Adobe Experience Manager Assets Brand Portal可讓您從Adobe Experience Manager Assets as a發佈已核准的品牌資產 [!DNL Cloud Service] 執行個體傳送至Brand Portal，並分發給Brand Portal使用者。
 
 ## 使用Cloud Manager啟動Brand Portal {#activate-brand-portal}
 
@@ -67,7 +67,7 @@ Cloud Manager使用者為Experience Manager Assets as a啟用Brand Portal [!DNL 
 >
 >請勿修改任何自動產生的設定。
 
-**另請參閱**:
+**另請參閱**：
 
 * [在Experience Manager Assetsas a Cloud Service中新增使用者和角色](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html)
 
@@ -140,7 +140,7 @@ Brand Portal租使用者的預設URL為： `https://<tenant-id>.brand-portal.ado
 * [從Experience Manager Assets發佈資產到Brand Portal](publish-to-brand-portal.md)
 * [從Experience Manager Assets發佈資料夾到Brand Portal](publish-to-brand-portal.md#publish-folders-to-brand-portal)
 * [從Experience Manager Assets發佈集合到Brand Portal](publish-to-brand-portal.md#publish-collections-to-brand-portal)
-* [從Brand Portal發佈資產到Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html) - Brand Portal中的Asset Sourcing
+* [從Brand Portal發佈資產到Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=zh-Hant) - Brand Portal中的Asset Sourcing
 * [將預設集、結構和 Facet 發佈至 Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/publish-schema-search-facets-presets.html)
 * [將標記發佈至 Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/brand-portal-publish-tags.html)
 
@@ -221,7 +221,7 @@ Brand Portal租使用者的預設URL為： `https://<tenant-id>.brand-portal.ado
 1. [設定IMS帳戶](#create-ims-account-configuration)
 1. [設定雲端服務](#configure-the-cloud-service)
 
-### 建立 IMS 設定 {#create-ims-configuration}
+### 建立IMS設定 {#create-ims-configuration}
 
 IMS設定會驗證您的Experience Manager Assets as a [!DNL Cloud Service] Brand Portal租使用者的例項。
 
@@ -294,7 +294,8 @@ IMS 設定包括兩個步驟：
 
    >[!NOTE]
    >
-   >您可以檢視認證並執行產生JWT權杖、複製認證詳細資料、擷取使用者端密碼等動作。
+   >* 您可以檢視認證並執行產生JWT權杖、複製認證詳細資料、擷取使用者端密碼等動作。
+   >* 目前，僅支援Adobe的開發人員控制檯服務帳戶(JWT)認證型別。 在4月中旬支援之前，請勿使用OAuth伺服器對伺服器認證型別。 如需詳細資訊，請參閱 [Adobe Developer主控台中的JWT憑證淘汰](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/jwt-credentials-deprecation-in-adobe-developer-console.html).
 
 1. 從 **[!UICONTROL 使用者端認證]** 標籤，複製 **[!UICONTROL 使用者端ID]**.
 
@@ -397,7 +398,7 @@ IMS 設定包括兩個步驟：
 
    ![Brand Portal設定對話方塊。](assets/create-cloud-service.png)
 
-1. 按一下&#x200B;**[!UICONTROL 「儲存並關閉」]**。雲端設定此時已建立。
+1. 按一下 **[!UICONTROL 儲存並關閉]**. 雲端設定已建立。
 
    您的Experience Manager Assets as a [!DNL Cloud Service] 執行個體現在已透過Brand Portal租使用者完成設定。
 
@@ -407,10 +408,10 @@ IMS 設定包括兩個步驟：
 如果搭配使用Dynamic Media-Scene7 [已啟用安全預覽](#https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html?lang=en) 若為公司)，則建議Scene7公司管理員 [允許列出公開輸出IP](#https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html?lang=en#testing-the-secure-testing-service) 適用於使用SPS (Scene7 Publishing System) Flash UI的個別地區。
 輸出IP如下：
 
-| **區域** | **輸出IP** |
+| **地區** | **輸出IP** |
 |--- |--- |
-| 不適用 | 130.248.160.68, 20.94.203.130 |
-| EMEA | 51.132.146.75, 130.248.244.202, 130.248.244.203, 130.248.244.204, 130.248.244.210, 130.248.244.211, 130.248.244.212 |
+| 不適用 | 130.248.160.68， 20.94.203.130 |
+| EMEA | 51.132.146.75， 130.248.244.202， 130.248.244.203， 130.248.244.204， 130.248.244.210， 130.248.244.211， 130.248.244 12 |
 | APAC | 63.140.44.54 |
 
 <!--
