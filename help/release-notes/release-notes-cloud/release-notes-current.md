@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 最新發行說明�
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 最新發行說明。'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 3a86639d9203fff3c72e63baa8d1499b18a4539f
-workflow-type: ht
-source-wordcount: '937'
-ht-degree: 100%
+source-git-commit: 4fdca70b3a711f747e44ac2a6c1d117ac990d49b
+workflow-type: tm+mt
+source-wordcount: '1020'
+ht-degree: 98%
 
 ---
 
@@ -107,6 +107,15 @@ Dynatrace 客戶可以監控他們的 AEM 使用情況。[了解如何](/help/im
 ### 使用網站主題和網站範本對前端程式碼的 RDE 支援：早期採用者計劃 {#rde-frontend-early-adopter}
 
 [快速開發環境 (RDE)](/help/implementing/developing/introduction/rapid-development-environments.md) 現在支援以[網站主題](/help/sites-cloud/administering/site-creation/site-themes.md)和[網站範本](/help/sites-cloud/administering/site-creation/site-templates.md)為主的前端程式碼 (適用於早期採用者)。對於 RDE，這是使用命令列指令完成，而不是使用 [前端管道](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md)來完成。請聯絡 **aemcs-rde-support@adobe.com**，可嘗試使用並提供意見回饋。
+
+### CDN 設定早期採用者計劃 {#cdn-config-early-adopter}
+
+除了最近發佈的[流量篩選規則](/help/security/traffic-filter-rules-including-waf.md) (其中包含可以選擇授權的 Web 應用程式防火牆 (WAF) 規則)，也可以使用設定管道來聲明及部署其他類型的 CDN 設定。透過電子郵件加入率先採用者計畫 **aemcs-cdn-config-adopter@adobe.com** 若要存取以下專案：
+* 301/302 用戶端重新導向
+* 將邊緣要求代理到任意來源
+* URL 轉換
+* 設定或修改要求或回應標頭
+* CDN 無法連接 AEM 時的自訂錯誤頁面
 
 ## Cloud Manager {#cloud-manager}
 
