@@ -2,9 +2,9 @@
 title: 體驗稽核儀表板
 description: 瞭解體驗稽核如何驗證您的部署流程，並透過清晰、資訊豐富的儀表板介面，協助確保部署的變更符合效能、協助工具、最佳實務和SEO的基準標準。
 exl-id: 6d33c3c5-258c-4c9c-90c2-d566eaeb14c0
-source-git-commit: 390faed91889e16d06c5024eaf1b4b1ad1427444
+source-git-commit: 3ba5184275e539027728ed134c47f66fa4746d9a
 workflow-type: tm+mt
-source-wordcount: '1957'
+source-wordcount: '1958'
 ht-degree: 8%
 
 ---
@@ -40,7 +40,7 @@ Cloud Manager中的體驗稽核可確保使用者在網站上的體驗達到最�
 
 * 網站生產管道，預設為
 * 開發完整棧疊管道（可選）
-* 前端管道（可選）
+* 開發前端管道（可選）
 
 請參閱 [設定區段](#configuration) 有關如何為選用環境設定稽核的詳細資訊。
 

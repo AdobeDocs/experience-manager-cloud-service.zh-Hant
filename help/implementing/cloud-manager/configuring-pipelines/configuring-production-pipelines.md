@@ -3,10 +3,10 @@ title: 設定生產管道
 description: 了解如何設定生產管道以建置程式碼並將其部署到生產環境。
 index: true
 exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
-source-git-commit: 04c65018734f95e8245a6922d5a05c5486a4ffa4
+source-git-commit: 3ba5184275e539027728ed134c47f66fa4746d9a
 workflow-type: tm+mt
-source-wordcount: '1422'
-ht-degree: 72%
+source-wordcount: '1338'
+ht-degree: 67%
 
 ---
 
@@ -93,25 +93,13 @@ ht-degree: 72%
 
    ![完整堆疊程式碼](/help/implementing/cloud-manager/assets/configure-pipeline/production-pipeline-fullstack.png)
 
-1. 按一下&#x200B;**繼續**&#x200B;進入&#x200B;**體驗稽核**&#x200B;索引標籤，您可以在其中定義應一律包含在體驗稽核中的路徑。
+1. 點選或按一下 **繼續** 以前進到 **體驗稽核** 索引標籤，您可在其中定義應一律包含在體驗稽核中的路徑。
 
    ![新增體驗稽核](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-audit.png)
 
 1. 提供要包含在體驗稽核中的路徑。
 
-   * 路徑的開頭必須是 `/`。
-   * 例如，如果您想將 `https://wknd.site/us/en/about-us.html` 納入體驗稽核中，請輸入路徑 `/us/en/about-us.html`。
-
-   ![定義體驗稽核的路徑](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-audit3.png)
-
-1. 按一下「**新增頁面**」，路徑會使用您的環境地址自動完成並新增到路徑表中。
-
-   ![儲存表格的路徑](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-audit4.png)
-
-1. 重複前兩個步驟根據需要繼續新增路徑。
-
-   * 您最多可以新增 25 個路徑。
-   * 如果您未定義任何路徑，則預設情況下該網站的首頁會包含在體驗稽核中。
+   * 檢視檔案 [體驗稽核測試](/help/implementing/cloud-manager/experience-audit-testing.md#configuration) 以取得詳細資訊。
 
 1. 按一下&#x200B;**儲存**，即可儲存您的管道。
 

@@ -3,10 +3,10 @@ title: 設定非生產管道
 description: 了解如何設定非生產管道以在部署到生產環境之前測試程式碼的品質。
 index: true
 exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
-source-git-commit: 04c65018734f95e8245a6922d5a05c5486a4ffa4
+source-git-commit: 3ba5184275e539027728ed134c47f66fa4746d9a
 workflow-type: tm+mt
-source-wordcount: '1297'
-ht-degree: 77%
+source-wordcount: '1371'
+ht-degree: 73%
 
 ---
 
@@ -145,12 +145,18 @@ ht-degree: 77%
    * **Git 分支** - 此選項會定義管道應該選取哪個分支來擷取程式碼。
       * 輸入分支名稱的前幾個字元，該欄位的自動完成功能。會尋找相符的分支以幫助您進行選取。
    * **程式碼位置** - 此選項會定義管道應從所選存放庫的分支中擷取程式碼的路徑。
+   * **管道**  — 對於前端非生產管道，您可以選擇啟用 **[體驗稽核。](/help/implementing/cloud-manager/experience-audit-testing.md)**
 
-   ![設定管道](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-config-deployment.png)
+   ![設定管道](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-config-deployment-experience-audit.png)
 
-1. 按一下「**儲存**」。
+1. 如果您已啟用體驗稽核，請點選或按一下 **繼續** 以前進到 **體驗稽核** 索引標籤，您可在其中定義應一律包含在體驗稽核中的路徑。
 
-管道已儲存，您現在可以在&#x200B;**計畫概觀**&#x200B;頁面的&#x200B;**管道**&#x200B;卡上[管理您的管道](managing-pipelines.md)。
+   * 如果您已啟用 **體驗稽核**，請參閱檔案 [體驗稽核](/help/implementing/cloud-manager/experience-audit-testing.md#configuration) 以取得如何設定的詳細資訊。
+   * 如果您沒有這麼做，請略過此步驟。
+
+1. 點選或按一下 **儲存** 以儲存管道。
+
+管道已儲存，您現在可以在&#x200B;**計劃總覽**&#x200B;頁面的&#x200B;**管道**&#x200B;卡上[管理您的管道](managing-pipelines.md)。
 
 ## 跳過 Dispatcher 套件 {#skip-dispatcher-packages}
 
