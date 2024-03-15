@@ -3,10 +3,10 @@ title: 最適化表單區塊元件及其屬性
 description: 本文件旨在概述 AEM Forms Edge Delivery Service 表單適用的元件及其屬性。
 feature: Edge Delivery Services
 exl-id: 7d087d41-9313-482a-a905-8955b0999781
-source-git-commit: 5eee563a9a425ef187afed69a8159d8b1298dad7
+source-git-commit: 703a48903c44678f6fe311de740b7c767c886ba5
 workflow-type: tm+mt
-source-wordcount: '938'
-ht-degree: 90%
+source-wordcount: '1006'
+ht-degree: 80%
 
 ---
 
@@ -46,7 +46,6 @@ AEM Forms Edge Delivery Services可讓您使用各種元件建立好記且互動
 | 屬性 | 適用元件 | 詳細資料 |
 |--------------|------------------------------|----------------------------------------------------------------------|
 | 類型 | 全部 | 指定元件的類型。此屬性決定輸入欄位的行為和外觀。例如，關於文字輸入，類型可以是「文字」、電子郵件輸入是「電子郵件」、密碼輸入是「密碼」。最適化Forms區塊支援  <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types">所有有效的HTML5輸入型別</a>， <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea">文字區域</a>， <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select">選取</a>、和 <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset">欄位集</a> 作為型別。 |
-| 類型 | 全部 | 指定元件的類型。此屬性決定輸入欄位的行為和外觀。例如，關於文字輸入，類型可以是「文字」、電子郵件輸入是「電子郵件」、密碼輸入是「密碼」。最適化Forms區塊支援  <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types">所有有效的HTML5輸入型別</a>， <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea">文字區域</a>， <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select">選取</a>、和 <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset">欄位集</a> 作為型別。 |
 | 名稱 | 全部 | 識別表單提交的元件。名稱屬性是將表單資料提交到伺服器時使用，主要是將使用者輸入與特定欄位建立關聯。 |
 | 標籤 | 全部 | 向使用者提供內容資訊。標籤是顯示在元件旁邊的文件，主要是指引使用者輸入哪些資訊。 |
 | 值 | 文字、密碼、電子郵件、數字、範圍、日期及其變體 (本地日期時間、月、週、時間)、核取方塊、單選、隱藏、提交、按鈕 | 指定元件的初始值。關於文字輸入、textarea 和選取元素，這是顯示的預設文字或選項。關於單選和核取方塊元件，這是選取這些元件時提交的值/資料。值屬性是選項，但核取塊方和單選輸入應被視為強制屬性。 |
@@ -61,6 +60,10 @@ AEM Forms Edge Delivery Services可讓您使用各種元件建立好記且互動
 | 選項 | 下拉式清單 | 指定下拉式選單的選項。選項屬性是一個以逗號分隔的下拉式選單選項列表，主要是定義向使用者顯示的可選取選項。 |
 | 已核取 | 核取方塊、單選按鈕 | 確定依預設是否選取該欄位。已勾選屬性是與核取方塊和單選輸入一起使用的布林值屬性。當設定為 true 時，表示表單載入時依預設選取的欄位。 |
 | 欄位集 | 全部 | 將欄位分類以在表單中建立視覺效果不同的區段。欄位集元素是將表單中的相關欄位分類，主要是以視覺效果來區分欄位，以便改善組織和使用者的體驗。</br> 若要安排欄位集中的一組欄位，只需使用`fieldset`屬性並指定其名稱屬性。在下面的範例中，我們將示範如何將單選按鈕封裝在單一欄位集內，以更方便安排欄位。![欄位集範例](/help/edge/assets/fieldset-example.png) |
+| 可重複 | 全部 | 的布林值屬性 `fieldset` 表示特定的欄位集可以針對指定的重複 `Min` 和 `Max` 次數。 此 `Min` 屬性應設為1或更大，請勿設定 `Min` 屬性變更為0。 |
+| 可見運算式 | 全部 | 可見運算式是指試算表公式，以「=」標籤表示，用來控制欄位的可見度。 在此公式中，只能使用其他欄位的value屬性，以直接管理系統中的欄位可見性。 |
+| 值運算式 | 全部 | 值運算式是指試算表公式，以&#39;=&#39;標籤表示，用來控制欄位的值。 在此公式中，只能使用其他欄位的value屬性，以便直接管理系統內的欄位值。 |
+
 
 ## 另請參閱
 
