@@ -2,10 +2,10 @@
 title: 流量篩選規則包括 WAF 規則
 description: 設定流量篩選規則，包括 Web 應用程式防火牆 (WAF) 規則
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: 86a7815a1055b8ffaf57b802f3232f2c03ec06dc
-workflow-type: ht
-source-wordcount: '3376'
-ht-degree: 100%
+source-git-commit: 043c87330bca37529c0cc614596599bea1e41def
+workflow-type: tm+mt
+source-wordcount: '3382'
+ht-degree: 98%
 
 ---
 
@@ -287,7 +287,7 @@ when:
 
 **範例 1**
 
-此規則會封鎖來自 IP 192.168.1.1 的要求：
+此規則會封鎖來自的請求 **IP 192.168.1.1**：
 
 ```
 kind: "CDN"
@@ -426,7 +426,7 @@ data:
 
 **範例 1**
 
-當在過去 60 秒內超過 100 個要求/秒時 (per CDN POP)，此規則將封鎖用戶端 5m：
+在過去10秒內，當使用者端超過每秒60個請求（每個CDN POP）的平均值時，此規則會封鎖5百萬使用者端：
 
 ```
 kind: "CDN"
@@ -451,7 +451,7 @@ data:
 
 **範例 2**
 
-當過去 60 秒內超過 100 個要求/秒時 (per CDN POP)，就會封鎖路徑 /重要/資源上的要求 60 秒：
+當路徑/critical/resource在過去60秒內超過平均每秒100個要求（每個CDN POP）時，封鎖請求60秒：
 
 ```
 kind: "CDN"
