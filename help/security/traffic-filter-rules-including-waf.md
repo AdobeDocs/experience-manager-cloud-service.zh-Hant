@@ -2,10 +2,10 @@
 title: 流量篩選規則包括 WAF 規則
 description: 設定流量篩選規則，包括 Web 應用程式防火牆 (WAF) 規則
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: 043c87330bca37529c0cc614596599bea1e41def
+source-git-commit: 9a535f7fa0a1e7b6f508e887787dd421bfffe8df
 workflow-type: tm+mt
-source-wordcount: '3382'
-ht-degree: 98%
+source-wordcount: '3634'
+ht-degree: 90%
 
 ---
 
@@ -235,9 +235,9 @@ when:
 
 | **名稱** | **允許的屬性** | **含義** |
 |---|---|---|
-| **允許** | `wafFlags` (可選) | 如果沒有 wafFlags，則停止進一步處理規則並繼續提供回應。如果有 wafFlags，它將停用指定的 WAF 保護並繼續進一步處理規則。 |
-| **封鎖** | `status, wafFlags` (可選且互斥) | 如果沒有 wafFlags，則繞過所有其他屬性傳回 HTTP 錯誤，錯誤代碼由狀態屬性定義或預設為 406。如果有 wafFlags，它將啟用指定的 WAF 保護並繼續進一步處理規則。 |
-| **記錄** | `wafFlags` (可選) | 記錄規則已觸發的事實，否則不影響處理作業。wafFlags 沒有影響 |
+| **允許** | `wafFlags` （選擇性）， `alert` （選用，尚未發行） | 如果沒有 wafFlags，則停止進一步處理規則並繼續提供回應。如果wafFlags存在，它會停用指定的WAF保護並繼續進一步的規則處理。 <br>如果指定警示，則在5分鐘視窗內10次觸發規則時，會傳送「動作中心」通知。 此功能尚未發行；請參閱 [流量篩選規則警報](#traffic-filter-rules-alerts) 區段，以瞭解如何加入率先採用者的方案。 |
+| **封鎖** | `status, wafFlags` （選擇性和互斥）， `alert` （選用，尚未發行） | 如果沒有 wafFlags，則繞過所有其他屬性傳回 HTTP 錯誤，錯誤代碼由狀態屬性定義或預設為 406。如果wafFlags存在，它會啟用指定的WAF保護並繼續進一步的規則處理。 <br>如果指定警示，則在5分鐘視窗內10次觸發規則時，會傳送「動作中心」通知。 此功能尚未發行；請參閱 [流量篩選規則警報](#traffic-filter-rules-alerts) 區段，以瞭解如何加入率先採用者的方案。 |
+| **記錄** | `wafFlags` （選擇性）， `alert` （選用，尚未發行） | 記錄規則已觸發的事實，否則不影響處理作業。wafFlags沒有作用。 <br>如果指定警示，則在5分鐘視窗內10次觸發規則時，會傳送「動作中心」通知。 此功能尚未發行；請參閱 [流量篩選規則警報](#traffic-filter-rules-alerts) 區段，以瞭解如何加入率先採用者的方案。 |
 
 ### WAF 標幟清單 {#waf-flags-list}
 
@@ -466,6 +466,34 @@ data:
         action:
           type: block
         rateLimit: { limit: 100, window: 60, penalty: 60 }
+```
+
+## 流量篩選規則警報 {#traffic-filter-rules-alerts}
+
+>[!NOTE]
+>
+>此功能尚未發行。 若要透過早期採用者計畫取得存取權，請傳送電子郵件至 **aemcs-waf-adopter@adobe.com**.
+
+您可以將規則設定為在5分鐘範圍內觸發10次動作中心通知時傳送，以在發生特定流量模式時提醒您，以便採取任何必要措施。 進一步瞭解 [動作中心](/help/operations/actions-center.md)，包括如何設定接收電子郵件所需的通知設定檔。
+
+![動作中心通知](/help/security/assets/traffic-filter-rules-actions-center-alert.png)
+
+
+警報屬性(目前有前置詞 *實驗性* 功能尚未發行)可套用至所有動作型別（允許、封鎖、記錄）的動作節點。
+
+```
+kind: "CDN"
+version: "1"
+metadata:
+  envTypes: ["dev"]
+data:
+  trafficFilters:
+    rules:
+      - name: "path-rule"
+        when: { reqProperty: path, equals: /block-me }
+        action:
+          type: block
+          experimental_alert: true
 ```
 
 ## CDN 記錄 {#cdn-logs}
