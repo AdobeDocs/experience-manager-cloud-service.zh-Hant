@@ -3,9 +3,9 @@ title: ' [!DNL Workfront for Experience Manager enhanced connector] 版發行說
 description: ' [!DNL Workfront for Experience Manager enhanced connector] 版發行說明'
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
 source-git-commit: 411793f140a2a9cf482d820382d41de843a97e87
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1648'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -13,23 +13,23 @@ ht-degree: 97%
 
 以下章節概述 [!DNL Workfront for Experience Manager enhanced connector] 版的一般發行說明。
 
-最新版本1.9.18的發行日期 [!DNL Workfront for Experience Manager enhanced connector] 為2024年3月8日。
+[!DNL Workfront for Experience Manager enhanced connector] 的最新版本 1.9.18 發布日期是 2024 年 3 月 8 日。
 
 ## 版本重點 {#release-highlights}
 
-最新版本的 [!DNL Workfront for Experience Manager enhanced connector] 包含下列錯誤修正：
+[!DNL Workfront for Experience Manager enhanced connector] 的最新版本包括以下錯誤修復：
 
-* 從Workfront處理多資產上傳時遇到問題。
-* 使用Workfront在Experience Manager中搜尋資料夾時未新增右引號 `SERVER_ERROR`.
+* 處理從 Workfront 上傳的多資產時遇到問題。
+* 使用 Workfront 在 Experience Manager 搜尋資料夾時，不加入結束引號將會導致 `SERVER_ERROR`。
 
 >[!NOTE]
 >
->AEM 6.4 的延伸支援已結束。請參閱我們的[技術支援期](https://helpx.adobe.com/tw/support/programs/eol-matrix.html)。請到[這裡](https://experienceleague.adobe.com/docs/?lang=en)尋找支援的版本。
+>AEM 6.4 的延伸支援已結束。請參閱我們的[技術支援期](https://helpx.adobe.com/tw/support/programs/eol-matrix.html)。請到[這裡](https://experienceleague.adobe.com/docs/?lang=zh-Hant)尋找支援的版本。
 
 
 >[!IMPORTANT]
 >
->Adobe 建議[升級到最新 1.9.18 版本](/help/assets/workfront-connector-install.md)的 [!DNL Workfront for Experience Manager enhanced connector]。
+>Adobe 建議[升級到 [!DNL Workfront for Experience Manager enhanced connector] 的最新 1.9.18 版本](/help/assets/workfront-connector-install.md)。
 
 ## 已知問題 {#known-issues}
 
@@ -39,7 +39,7 @@ ht-degree: 97%
 
 ## 舊版本 {#previous-releases}
 
-### 2024年2月發行版本 {#february-2023-release}
+### 2024 年 2 月發行版本 {#february-2023-release}
 
 * 啟用切換功能以允許 AEM Cloud 客戶配置和設定連接器。
 

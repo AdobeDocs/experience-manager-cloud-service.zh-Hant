@@ -4,9 +4,9 @@ description: 了解 Edge Delivery Services 提供的效能和完善 Lighthouse �
 feature: Edge Delivery Services
 exl-id: 03a1aa93-d2e6-4175-9cf3-c7ae25c0d24e
 source-git-commit: d91254b52c257a3758da200a2c74b736ca457884
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '874'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 94%
 透過 Edge Delivery Services，您可以：
 
 * 建立具有完善 Lighthouse 分數功能的快速網站，並透過真實使用者監控 (RUM) 持續監控您的網站效能。
-* 透過分離內容來源來提高編寫工作效率。開箱即用地使用AEM編寫和檔案式編寫。 因此，您可以在同一網站上使用多個內容來源。
+* 透過分離內容來源來提高編寫工作效率。您可以一開啟即使用 AEM 製作功能和文件型製作功能。因此，您可以在同一網站上使用多個內容來源。
 * 使用內建的實驗框架，允許快速建立、執行測試而不影響效能，並快速發布測試獲勝者的生產。
 
 ## Edge Delivery Services 概觀 {#edge-overview}
@@ -27,7 +27,7 @@ ht-degree: 94%
 
 ![Edge Delivery 架構](assets/AEM-with-EDS-publishing-simple2.png)
 
-Edge Delivery Services 是一組可組合的服務，可讓您以高度靈活的方式在網站上製作內容。如前所述，您可以使用兩者 [AEM內容管理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/getting-started/concepts.html) 替換為 [Universal Editor製作](/help/implementing/universal-editor/introduction.md) 以及 [檔案式製作。](https://www.aem.live/docs/authoring)
+Edge Delivery Services 是一組可組合的服務，可讓您以高度靈活的方式在網站上製作內容。如前所述，您可以將 [AEM 內容管理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/getting-started/concepts.html)搭配 [Universal Editor 製作](/help/implementing/universal-editor/introduction.md)以及[文件型製作](https://www.aem.live/docs/authoring)一起使用。
 
 例如，您可以直接使用 Microsoft Word 或 Google Docs 中的內容。這表示這些來源的文件可以成為您網站上的頁面。此外，標題、清單、影像、字體元素、都可以從初始來源傳輸到網站。新內容將立即加入，無需重建過程。
 
@@ -63,7 +63,7 @@ Adobe 提供三個頻道來幫助您使用 Edge Delivery Services：
 
 ### 存取社群資源 {#community-resource}
 
-Adobe致力於為您提供最佳社群參與度，以及對Edge Delivery Services和檔案式編寫的支援。
+Adobe 致力為您提供 Edge Delivery Services 和文件型製作的最佳社群參與和支援服務。
 
 * 參與 [Experience League 社群](https://adobe.ly/3Q6kTKl)，提出問題、分享意見、發起討論、尋求 Adobe 專家和 AEM 顧問/達人的協助，以及與志趣相投的人即時聯繫。
 * 加入我們的[探索頻道](https://discord.gg/aem-live)，一個更輕鬆的即時互動和靈感想法交流平台。
