@@ -2,9 +2,9 @@
 title: AEMas a Cloud Service記錄
 description: 瞭解如何使用AEM的記錄as a Cloud Service來設定中央記錄服務的全域引數、個別服務的特定設定，或如何請求資料記錄。
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: 35959a1cd47e9ea1b93aeddc3eb72cf03c44eda8
+source-git-commit: 97a1781f0a2d59d2bed7b03c7d4f045c81784f60
 workflow-type: tm+mt
-source-wordcount: '2776'
+source-wordcount: '2797'
 ht-degree: 8%
 
 ---
@@ -504,7 +504,7 @@ Define DISP_LOG_LEVEL debug
 
 AEMas a Cloud Service提供對CDN記錄的存取權，這對使用案例（包括快取命中比率最佳化）很有用。 無法自訂CDN記錄格式，且沒有將其設定為不同模式（例如info、warn或error）的概念。
 
-Splunk轉送功能尚不支援CDN記錄。
+CDN記錄檔將轉送至Splunk，以處理新的Splunk轉送支援票證請求；已啟用Splunk轉送的客戶未來可以新增CDN記錄檔。
 
 **範例**
 
