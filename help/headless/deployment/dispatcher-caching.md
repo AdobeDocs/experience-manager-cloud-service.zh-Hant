@@ -3,10 +3,10 @@ title: GraphQL 持續性查詢 - 在 Dispatcher 中啟用快取
 description: Dispatcher 是 Adobe Experience Manager 發佈環境前面的快取和安全層。您可以在 AEM Headless 中啟用持續性查詢的快取。
 feature: Dispatcher, GraphQL API
 exl-id: 30a97e56-6699-41c4-a4eb-fc6236667f8f
-source-git-commit: 6bcbef1695b291c36e19e70db203a114a7e40e67
+source-git-commit: 859ea382cce6822da1da7d11213c3f44a25edef3
 workflow-type: tm+mt
-source-wordcount: '359'
-ht-degree: 84%
+source-wordcount: '339'
+ht-degree: 89%
 
 ---
 
@@ -39,8 +39,6 @@ ht-degree: 84%
    ```
 
 >[!NOTE]
->
->當使用以下專案為持續查詢啟用Dispatcher快取時 `Define CACHE_GRAPHQL_PERSISTED_QUERIES` 一個 `ETag` 標頭會新增到Dispatcher的回應。
 >
 >若要取得個人 `ETag` 快取持續查詢上的標題計算(針對 *每個* 不重複回應) `FileETag Digest` 必須在dispatcher設定虛擬主機設定中使用設定（如果尚未存在）：
 >
