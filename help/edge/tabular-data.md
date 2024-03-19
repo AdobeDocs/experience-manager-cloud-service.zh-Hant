@@ -2,10 +2,10 @@
 title: 使用試算表管理表格資料
 description: 瞭解如何使用試算表來管理各種值的表格資料，例如使用Edge Delivery Services網站的AEM的中繼資料和重新導向。
 feature: Edge Delivery Services
-source-git-commit: 0fa88453a7d7c58a3ccb2a4baf7d2b143acf7ad5
+source-git-commit: f872ab4eb891ab4aa634e88c76eedeb0f13cb285
 workflow-type: tm+mt
-source-wordcount: '943'
-ht-degree: 2%
+source-wordcount: '958'
+ht-degree: 1%
 
 ---
 
@@ -81,25 +81,9 @@ ht-degree: 2%
    * 編輯器會視需求將新列新增至試算表。
    * 若要刪除或移動列，請使用 **刪除** 圖示和拖曳操作框分別位於每一列結尾和每一列開頭。
 
-1. 當您完成重新導向的定義時，請關閉標籤並返回 **網站** 主控台。
+## 發佈試算表路徑.json {#paths-json}
 
-1. 點選或按一下以選取您在主控台中建立的重新導向試算表，然後點選或按一下 **快速發佈** 以發佈試算表。
-
-   ![在Sites主控台中選取試算表](assets/tabular-data/tabular-data-select-publish.png)
-
-1. 在 **快速發佈** 對話方塊，點選或按一下 **發佈**.
-
-   ![確認發佈](assets/tabular-data/tabular-data-quick-publish.png)
-
-1. 橫幅會確認發佈。
-
-   ![發佈的橫幅確認](assets/tabular-data/tabular-data-publish-banner.png)
-
-重新導向試算表現已發佈並可公開存取。
-
-## 更新paths.json {#paths-json}
-
-為了讓AEM能在試算表中使用資料，您另外還需要更新 `paths.json` 您的專案的檔案。
+為了讓AEM能在試算表中發佈資料，您另外還需要更新 `paths.json` 您的專案的檔案。
 
 1. 在GitHub中開啟專案的根目錄。
 
@@ -122,7 +106,21 @@ ht-degree: 2%
 
    * 認可至 `main` 或根據您的流程建立提取請求。
 
-一旦將變更為 `paths.json` 合併後，您的網站會即時重新導向。
+1. 當您完成重新導向的定義並更新路徑對應時，請返回 **網站** 主控台。
+
+1. 點選或按一下以選取您在主控台中建立的重新導向試算表，然後點選或按一下 **快速發佈** 以發佈試算表。
+
+   ![在Sites主控台中選取試算表](assets/tabular-data/tabular-data-select-publish.png)
+
+1. 在 **快速發佈** 對話方塊，點選或按一下 **發佈**.
+
+   ![確認發佈](assets/tabular-data/tabular-data-quick-publish.png)
+
+1. 橫幅會確認發佈。
+
+   ![發佈的橫幅確認](assets/tabular-data/tabular-data-publish-banner.png)
+
+重新導向試算表現已發佈並可公開存取。
 
 ## 其他試算表型別 {#other}
 
@@ -134,6 +132,12 @@ ht-degree: 2%
 * 設定
 
 請遵循各節中的相同步驟 [建立試算表](#spreadsheet) 和 [更新paths.json](#paths-json) 並選擇適當的範本並更新 `paths.json` 檔案。
+
+的 [設定](https://www.aem.live/docs/configuration)， [標頭](https://www.aem.live/docs/custom-headers) 和 [中繼資料](https://www.aem.live/docs/bulk-metadata) 請務必新增對應，以發佈至其預設位置：
+
+* 設定： `/.helix/config.json`
+* 標頭： `/.helix/headers.json`
+* 中繼資料： `/metadata.json`
 
 此外，您可以 [建立您自己的試算表](#own-spreadsheet) 任意欄位供您自行使用。
 
