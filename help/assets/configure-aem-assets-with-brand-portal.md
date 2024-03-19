@@ -5,9 +5,9 @@ contentOwner: AK
 feature: Brand Portal,Asset Distribution,Configuration
 role: Admin
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: 0411da1113c6bddfa1adcc583b4e53c5daa9bd41
+source-git-commit: 2cb630203b818ae338fe6b7c2ff341c76e3a3958
 workflow-type: tm+mt
-source-wordcount: '2568'
+source-wordcount: '2566'
 ht-degree: 6%
 
 ---
@@ -295,7 +295,7 @@ IMS 設定包括兩個步驟：
    >[!NOTE]
    >
    >* 您可以檢視認證並執行產生JWT權杖、複製認證詳細資料、擷取使用者端密碼等動作。
-   >* 目前，僅支援Adobe的開發人員控制檯服務帳戶(JWT)認證型別。 在4月中旬支援之前，請勿使用OAuth伺服器對伺服器認證型別。 如需詳細資訊，請參閱 [Adobe Developer主控台中的JWT憑證淘汰](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/jwt-credentials-deprecation-in-adobe-developer-console.html).
+   >* 目前，僅支援Adobe的開發人員控制檯服務帳戶(JWT)認證型別。 請勿使用 `OAuth Server-to-Server` 認證型別，直到4月中旬才受到支援。 如需詳細資訊，請參閱 [Adobe Developer主控台中的JWT憑證淘汰](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/jwt-credentials-deprecation-in-adobe-developer-console.html).
 
 1. 從 **[!UICONTROL 使用者端認證]** 標籤，複製 **[!UICONTROL 使用者端ID]**.
 
