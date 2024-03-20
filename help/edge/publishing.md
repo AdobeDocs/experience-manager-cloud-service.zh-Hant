@@ -4,9 +4,9 @@ description: 了解內容發佈如何與 Edge Delivery Services 搭配使用，�
 feature: Edge Delivery Services
 exl-id: 32fbb144-9175-47a9-bb5a-ca15f3fcd2d8
 source-git-commit: 3ee1ba83518c3d4fba59b0c98b31e5c63a2eb6ab
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '295'
-ht-degree: 66%
+ht-degree: 100%
 
 ---
 
@@ -31,14 +31,14 @@ ht-degree: 66%
 ![從 AEM 發佈至 Edge Delivery Services 時的資訊流程](assets/publishing-flow.png)
 
 1. 內容作者在 Universal Editor 中發布 AEM 內容。
-1. 發佈事件會推送至Adobe管道佇列。
-1. Edge Delivery Services發佈服務會將相關事件轉送至Edge Delivery Services管理員API。
-1. Edge傳送從AEM作者提取及擷取語意HTML。
+1. 發佈事件會被推送到 Adob&#x200B;&#x200B;e 管道佇列。
+1. Edge Delivery 發佈服務會將相關事件轉送到 Edge Delivery Services 管理 API。
+1. Edge Delivery 會從 AEM 作者提取並擷取語義 HTML。
 1. AEM 已更新發佈狀態。
 
 >[!NOTE]
 >
->依預設，Edge Delivery Services管理員API不受保護，並且可用於發佈或取消發佈檔案而無需驗證。 為了設定管理員API的驗證，如中所述： [設定作者的驗證](https://www.aem.live/docs/authentication-setup-authoring)，您的專案必須布建API_KEY，以授與發佈服務的存取權。 [請聯絡Adobe團隊以瞭解Slack](/help/edge/docs/slack.md) 以取得指引。
+>依預設，Edge Delivery Services 管理 API 未受保護，可用於在未經驗證的情況下發佈或取消發佈文件。為了設定管理 API 的驗證 (如「[設定作者的身份驗證](https://www.aem.live/docs/authentication-setup-authoring)」中的文件所述)，您的專案必須配置 API_KEY 以授予發佈服務的存取權。[請聯絡 Slack 上的 Adob&#x200B;&#x200B;e 團隊](/help/edge/docs/slack.md)以要求指導。
 
 ## 如何開始使用 {#how-to-get-started}
 

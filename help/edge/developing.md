@@ -4,9 +4,9 @@ description: 了解如何開發區塊並自訂 AEM 專案，以利搭配 Edge De
 feature: Edge Delivery Services
 exl-id: c356c03c-af43-43a1-a14e-45f94ccb3970
 source-git-commit: d91254b52c257a3758da200a2c74b736ca457884
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '257'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ AEM 會提供標準區塊，作為本產品在專案範本中的一部分。這�
 
 Edge Delivery 運用 GitHub，可讓您直接從自己的 GitHub 存放庫管理和部署程式碼。
 
-您的作者可使用「檔案式製作」或AEM中的內容與通用編輯器建立內容。 無論作者如何建立他們的內容，開發人員都可以使用 GitHub 中的 CSS 和 JavaScript 來自訂網站的功能。
+您的作者可以使用以文件為主的製作來建立內容，或使用 Universal Editor 在 AEM 中建立內容。無論作者如何建立他們的內容，開發人員都可以使用 GitHub 中的 CSS 和 JavaScript 來自訂網站的功能。
 
 系統會自動為您的每個分部建立網站，從內容預覽到生產都包括在內。您放入 GitHub 存放庫的每個資源都可以在您的網站上使用，無需任何建置程序。
 

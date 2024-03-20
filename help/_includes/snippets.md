@@ -1,8 +1,8 @@
 ---
 source-git-commit: 4144f9704aaf17ea684be147395adc3aa31641f2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '367'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 # 代碼片段 {#snippets}
@@ -63,11 +63,12 @@ ht-degree: 82%
 
 ## 另請參閱 {#see-more-forms-eds}
 
-* [開始使用AEM FormsEdge Delivery Services](/help/edge/docs/forms/tutorial.md)
-* [使用Google工作表或Microsoft Excel建立表單](/help/edge/docs/forms/create-forms.md)
-* [設定Google工作表或Microsoft Excel檔案以開始接受資料&#x200B;。](/help/edge/docs/forms/submit-forms.md)
+* [開始使用 AEM Forms Edge Delivery Services。](/help/edge/docs/forms/tutorial.md)
+* [使用 Google Sheets 或 Microsoft Excel 建立表單
+        ](/help/edge/docs/forms/create-forms.md)
+* [設定您的 Google 表單或 Microsoft Excel 檔案以開始接受資料](/help/edge/docs/forms/submit-forms.md)
 * [發佈您的表單並開始收集資料](/help/edge/docs/forms/publish-forms.md)
-* [自訂表單的外觀&#x200B;](/help/edge/docs/forms/style-theme-forms.md)
-* [將可重複的區段新增至表單&#x200B;。](/help/edge/docs/forms/repeatable-forms.md)
-* [提交表單後顯示自訂感謝訊息&#x200B;。](/help/edge/docs/forms/thank-you-page-form.md)
+* [自訂表單的外觀](/help/edge/docs/forms/style-theme-forms.md)
+* [將可重複區段新增到表單](/help/edge/docs/forms/repeatable-forms.md)
+* [提交表單後顯示自訂感謝訊息](/help/edge/docs/forms/thank-you-page-form.md)
 * [最適化表單區塊元件及其屬性](/help/edge/docs/forms/form-components.md)

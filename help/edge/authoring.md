@@ -4,9 +4,9 @@ description: 了解內容製作如何與 Edge Delivery Services 搭配使用，�
 feature: Edge Delivery Services
 exl-id: 963ff71a-8176-4d9d-8240-dc429405d139
 source-git-commit: d91254b52c257a3758da200a2c74b736ca457884
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '491'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -14,14 +14,14 @@ ht-degree: 90%
 
 使用 Edge Delivery Services 時，製作很簡單、快速且靈活。您有兩種選擇來為 Edge Delivery Services 製作內容：
 
-* [檔案式製作](#document-based)  — 例如Microsoft Word或Google檔案
+* [文件型製作](#document-based) - 例如 Microsoft Word 或 Google Docs
 * [Universal Editor](#universal-editor) - 用來在 AEM 製作內容的現代 UI
 
-## 檔案式製作  {#document-based}
+## 文件型製作  {#document-based}
 
-若是檔案式製作，您可以使用各種來源，例如Microsoft Word和Google Docs。 來自這些來源的文件會成為您網站上的頁面。標題、清單、影像、字體元素、影片都可以從初始來源傳輸到您的網站。您可以為 SEO 目的新增中繼資料，或者使用塊處理結構化內容並新增功能。
+在文件型製作情況中，您可以使用各種來源，例如 Microsoft Word 和 Google Docs。來自這些來源的文件會成為您網站上的頁面。標題、清單、影像、字體元素、影片都可以從初始來源傳輸到您的網站。您可以為 SEO 目的新增中繼資料，或者使用塊處理結構化內容並新增功能。
 
-如需Document-based Authoring的詳細資訊，請參閱 [此檔案位於Edge Delivery Services檔案中。](/help/edge/docs/authoring.md)
+有關更多文件型製作詳細資訊，請參閱「[Edge Delivery Services 文件中的本文件](/help/edge/docs/authoring.md)」。
 
 ## Universal Editor 製作 {#universal-editor}
 
