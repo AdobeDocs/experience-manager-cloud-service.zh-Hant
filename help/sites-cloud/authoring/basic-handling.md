@@ -2,9 +2,9 @@
 title: 基本處理
 description: 輕鬆瀏覽AEM及其基本用法
 exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
-source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
+source-git-commit: 7e0ca5dad5cd53c2304e2eba48a5131d587967ef
 workflow-type: tm+mt
-source-wordcount: '915'
+source-wordcount: '926'
 ht-degree: 2%
 
 ---
@@ -36,7 +36,7 @@ AEM使用者介面已啟用觸控功能。 觸控式介面可讓您使用觸控�
 
 每當使用者首次存取主控台時，就會啟動產品導覽教學課程。 請花上一分鐘時間選取，以取得AEM基本處理的良好概觀。
 
-![導覽教學課程](assets/tutorial.png)
+![導覽教學課程](assets/basic-handling-tutorial.png)
 
 選取 **下一個** 以進入概覽的下一頁。 選取 **關閉** 或在「概述」對話方塊外部選取以關閉。
 
@@ -48,7 +48,7 @@ AEM使用者介面已啟用觸控功能。 觸控式介面可讓您使用觸控�
 
 您可以按一下或點選以關閉全域導覽面板 **關閉** 以返回您之前的位置。
 
-![導覽面板頂列](assets/basic-handling-navigation-bar.png)
+![導覽面板頂列](assets/basic-handling-navigation-options.png)
 
 全域導覽有兩個面板，由畫面左側的圖示表示：
 
@@ -86,31 +86,37 @@ AEM使用者介面已啟用觸控功能。 觸控式介面可讓您使用觸控�
 
 標題一律會顯示在畫面頂端。 雖然無論您在系統中的何處，標題中的大部分選項都保持不變，但有些選項是上下文特定的。
 
-![導覽標頭](/help/sites-cloud/authoring/assets/navigation-bar.png)
+![導覽標頭](/help/sites-cloud/authoring/assets/basic-handling-navigation-bar.png)
 
 * [全域導覽](#global-navigation)  — 選取 **Adobe Experience Manager** 連結可在主控台之間導覽。
 
-  ![全域導覽](/help/sites-cloud/authoring/assets/global-navigation.png)
+  ![全域導覽](/help/sites-cloud/authoring/assets/basic-handling-global-navigation.png)
 
-* [搜尋](/help/sites-cloud/authoring/search.md)  — 您也可以使用 [快速鍵](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md) `/` （正斜線）從任何主控台叫用搜尋。
+* 意見回饋
 
-  ![搜尋圖示](/help/sites-cloud/authoring/assets/search-icon.png)
+  ![意見回饋按鈕](/help/sites-cloud/authoring/assets/basic-handling-feedback.png)
+
+* 您的IMS組織 — 視需要選取以變更。
 
 * [解決方案](https://www.adobe.com/experience-cloud.html)  — 選取此項以存取您的其他Adobe解決方案。
 
-  ![「解決方案」按鈕](/help/sites-cloud/authoring/assets/solutions.png)
+  ![「解決方案」按鈕](/help/sites-cloud/authoring/assets/basic-handling-solutions.png)
+
+* [搜尋](/help/sites-cloud/authoring/search.md)  — 您也可以使用 [快速鍵](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md) `/` （正斜線）從任何主控台叫用搜尋。
+
+  ![搜尋圖示](/help/sites-cloud/authoring/assets/basic-handling-search-icon.png)
 
 * [說明](#accessing-help)
 
-  ![說明按鈕](/help/sites-cloud/authoring/assets/help.png)
+  ![說明按鈕](/help/sites-cloud/authoring/assets/basic-handling-help-icon.png)
 
 * [通知](/help/sites-cloud/authoring/inbox.md)  — 此圖示會標籤目前指派的未完成通知數目。
 
-  ![「通知」按鈕](/help/sites-cloud/authoring/assets/notifications.png)
+  ![「通知」按鈕](/help/sites-cloud/authoring/assets/basic-handling-notifications.png)
 
 * [使用者屬性](/help/sites-cloud/authoring/account-environment.md)  — 選取此項以變更您的使用者設定。
 
-  ![使用者屬性按鈕](/help/sites-cloud/authoring/assets/user-properties.png)
+  ![使用者屬性按鈕](/help/sites-cloud/authoring/assets/basic-handling-user-properties.png)
 
 ## 存取說明 {#accessing-help}
 
