@@ -6,28 +6,28 @@ exl-id: 0cf881a2-3784-45eb-afe8-3435e5e95cf4
 source-git-commit: b32e04dec83992ebfcea7874932a5ab77a1eaa70
 workflow-type: tm+mt
 source-wordcount: '805'
-ht-degree: 62%
+ht-degree: 100%
 
 ---
 
-# 使用最適化Forms區塊建立表單
+# 使用最適化表單區塊建立表單
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427881?quality=12&learn=on)
 
-AEM Forms Edge Delivery提供稱為最適化Forms區塊的區塊，協助您輕鬆建立表單，以擷取及儲存擷取的資料。 您可以 [建立已預先設定最適化Forms區塊的新AEM專案](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) 或 [將最適化Forms區塊新增至現有的AEM專案](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project).
+AEM Forms Edge Delivery 會提供一個區塊 (名為最適化表單區塊)，可協助您輕鬆建立表單來擷取和儲存擷取的資料。您可以[建立預先設定最適化表單區塊的新 AEM 專案](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block)，或可以[將最適化表單區塊新增至現有 AEM 專案](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project)。
 
-這些表單會直接將資料提交至Microsoft Excel或Google Sheets檔案，讓您能夠使用生動的生態系統以及Google Sheets、Microsoft Excel和Microsoft SharePoint的強大API，輕鬆處理提交的資料或啟動現有的業務工作流程。
+這些表單可直接提交資料至 Microsoft Excel 或 Google Sheets 檔案，讓您能夠使用由 Google Sheets、Microsoft Excel 和 Microsoft SharePoint 等強大 API 建構的活躍生態系統，以便輕鬆處理提交的資料或啟動現有的業務工作流程。
 
-![檔案式撰寫生態系統](/help/edge/assets/document-based-authoring-workflow-create-form.png)
+![文件型製作生態系統](/help/edge/assets/document-based-authoring-workflow-create-form.png)
 
 
 ## 先決條件
 
 在開始之前，請確保您已完成以下步驟：
 
-* 設定 [使用AEM Forms範本的AEM專案](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) 或 [已將最適化Forms區塊新增至您現有的AEM專案](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project) 並複製本機電腦上對應的GitHub存放庫。
-在本檔案中，您的Edge Delivery Services(EDS)專案的本機資料夾稱為 `[EDS Project repository]`.
-* 確保您可以存取 Google Sheets 或 Microsoft SharePoint。若要將Microsoft SharePoint設定為您的內容來源，請參閱 [如何使用SharePoint](https://www.aem.live/docs/setup-customer-SharePoint).
+* [使用 AEM Forms 範本設定 AEM 專案](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block)，或[將最適化表單區塊新增至您現有的 AEM 專案](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project)，並原地複製本機電腦上的對應 GitHub 存放庫。
+在本文件中，Edge Delivery Services (EDS) 專案的本機資料夾稱為 `[EDS Project repository]`。
+* 確保您可以存取 Google Sheets 或 Microsoft SharePoint。若要將 Microsoft SharePoint 設定為您的內容來源，請參閱[「如何使用 SharePoint」](https://www.aem.live/docs/setup-customer-SharePoint)。
 
 
 
@@ -66,7 +66,7 @@ Ensure a smooth GitHub build process by addressing potential issues:
 
 +++ 步驟 1：使用 Microsoft Excel 或 Google Sheet 製作表單。
 
-使用試算表可輕鬆地製作表單，而無需瀏覽複雜的流程。您可以定義組成表單結構的列和欄。 每一列代表個人 [表單欄位](/help/edge/docs/forms/form-components.md#available-components) 而欄標題則會定義對應的 [欄位屬性](/help/edge/docs/forms/form-components.md#components-properties).
+使用試算表可輕鬆地製作表單，而無需瀏覽複雜的流程。您可以定義構成表單結構的列和欄。每列代表一個單獨的[表單欄位](/help/edge/docs/forms/form-components.md#available-components)，欄標題定義對應的[欄位屬性](/help/edge/docs/forms/form-components.md#components-properties)。
 
 例如，考慮以下試算表，其中的列是概述`enquiry`表單和欄標題是定義其屬性：
 
@@ -78,7 +78,7 @@ Ensure a smooth GitHub build process by addressing potential issues:
 
 1. 在 AEM Edge Delivery 專案目錄內的任意位置，建立 Microsoft Excel 活頁簿或 Google Sheet。例如，在 Google Drive 上的 AEM Edge Delivery 專案目錄中，建立一個名為 `enquiry` 的試算表。
 
-   ![Google Drive上的範例內容](/help/edge/assets/upload-sample-files-to-your-content-folder.png)
+   ![Google Drive 上的範例內容](/help/edge/assets/upload-sample-files-to-your-content-folder.png)
 
 1. [根據為您專案指定的設定](https://www.aem.live/docs/setup-customer-SharePoint)，確保讓相關 AEM 使用者 (例如 `helix@adobe.com`) 共用工作表。授予使用者關於工作表的編輯權限。
 
@@ -116,27 +116,27 @@ Ensure a smooth GitHub build process by addressing potential issues:
 
 +++
 
-+++ 步驟2：使用您的Edge Delivery Services(EDS)頁面預覽表單。
++++ 步驟 2：使用 Edge Delivery Services (EDS) 頁面預覽表單。
 
 
-到目前為止，您已準備表單的結構。 現在，若要預覽表單：
+到目前為止，您已經準備好表單的結構。現在，若要預覽表單：
 
 1. 開啟 Microsoft SharePoint 或 Google Drive 帳戶，然後導覽至您的 AEM Edge Delivery 專案目錄。
 
 
 
-1. 開啟檔案檔案（例如，索引檔案）以內嵌表單。 或者，您可以建立一個新文件。
+1. 開啟文件檔案 (例如索引檔案) 以嵌入表單。或者，您可以建立一個新文件。
 
-1. 移至檔案中您想要新增表單的位置。
+1. 移動至文件中要新增表單的預期位置。
 
-1. 建立表單區塊以轉譯表單。 選取「插入」>「表格」，然後建立一欄、兩清單格。 將表格命名為「Form」，並將預覽URL貼到第二列。 請確定URL的格式為超連結，而非純文字，如下圖所示：
+1. 若要建立表單區塊來呈現表單。選取「插入 > 表格」，然後建立一個含一欄、兩列的表格。將表命名為「表單」，並將預覽 URL 貼至第二列。確保 URL 的格式為超連結，而不是純文字，如下所示：
 
    | 表單 |
    |---|
    | [https://main--wefinance--wkndforms.hlx.live/enquiry.json](https://main--wefinance--wkndforms.hlx.live/enquiry.json) |
 
 
-   ![將Adaptive Forms區塊新增至您的網頁](/help/edge/assets/add-adaptive-forms-block.png)
+   ![將最適化表單區塊新增至您的網頁](/help/edge/assets/add-adaptive-forms-block.png)
 
    此區塊是用作嵌入表單的暫留位置。在該區塊的第二行中，新增 `<form>.json` 檔案的預覽 URL 作為超連結。
 

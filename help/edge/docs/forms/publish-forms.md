@@ -1,12 +1,12 @@
 ---
-title: 發佈 AEM Forms Edge Delivery Services Form
-description: 發佈 AEM Forms Edge Delivery Services Form
+title: 發佈 AEM Forms Edge Delivery Servicess Form
+description: 發佈 AEM Forms Edge Delivery Servicess Form
 feature: Edge Delivery Services
 exl-id: dcb16da1-dcc2-4529-8859-0716e727b54d
 source-git-commit: 5eee563a9a425ef187afed69a8159d8b1298dad7
 workflow-type: tm+mt
 source-wordcount: '549'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -14,11 +14,11 @@ ht-degree: 90%
 
 一旦您準備好與客戶分享表單以收集或提交資料，您只需發佈表單並供客戶隨時使用即可。
 
-![檔案式撰寫生態系統](/help/edge/assets/document-based-authoring-workflow-publish-form.png)
+![以文件為主的製作生態系統](/help/edge/assets/document-based-authoring-workflow-publish-form.png)
 
 ## 必要條件 
 
-* 您的AEM專案是根據 [AEM Forms範本](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) 或 [已將最適化Forms區塊新增至您現有的AEM專案](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project)
+* 您擁有以 [AEM Forms 範本](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block)為主的 AEM 專案，或您[已將最適化表單區塊新增至現有 AEM 專案](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project)
 * 您的表單已經過全面測試並可供使用。
 * 您的[試算表已設定](/help/edge/docs/forms/submit-forms.md)可接受資料。
 
@@ -75,7 +75,7 @@ ht-degree: 90%
    |---|
    | [https://main--wefinance--wkndforms.hlx.live/enquiry.json](https://main--wefinance--wkndforms.hlx.live/enquiry.json) |
 
-   ![將名為&#39;Form&#39;的區塊新增至檔案](/help/edge/assets/enquiry-doc-to-embed-form.png)
+   ![將名為「表單」的區塊新增至檔案中](/help/edge/assets/enquiry-doc-to-embed-form.png)
 
    此區塊是用作嵌入表單的暫留位置。在該區塊的第二行中，新增 `<form>.json` 檔案的 URL 作為超連結。
 
@@ -86,12 +86,16 @@ ht-degree: 90%
 
    使用預覽 URL (.page URL) 進行開發或測試，或使用發佈 URL (.live) 進行生產。以下是帶有預覽和發佈 URL 的範例：
 
-   **預覽URL**
-| 表單 | |—| | [https://main--wefinance--wkndforms.hlx.page/enquiry.json](https://main--wefinance--wkndforms.hlx.page/enquiry.json)  |
+   **預覽 URL**
+| 表單  |
+|---|
+| [https://main--wefinance--wkndforms.hlx.page/enquiry.json](https://main--wefinance--wkndforms.hlx.page/enquiry.json)  |
 
 
-   **發佈URL**
-| 表單 | |—| | [https://main--wefinance--wkndforms.hlx.live/enquiry.json](https://main--wefinance--wkndforms.hlx.live/enquiry.json)  |
+   **發佈 URL**
+| 表單  |
+|---|
+| [https://main--wefinance--wkndforms.hlx.live/enquiry.json](https://main--wefinance--wkndforms.hlx.live/enquiry.json)  |
 
 1. 使用 [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) 來預覽網頁。頁面現在會顯示表單。例如，這是以[查詢試算表](https://docs.google.com/spreadsheets/d/196lukD028RDK_evBelkOonPxC7w0l_IiJ-Yx3DvMfNk/edit#gid=0)為主的表單：
 

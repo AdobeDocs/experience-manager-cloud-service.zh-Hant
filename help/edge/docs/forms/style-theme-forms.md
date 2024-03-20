@@ -1,12 +1,12 @@
 ---
-title: 自訂AEM Forms Edge Delivery Services表單的主題和樣式
-description: 自訂AEM Forms Edge Delivery Services表單的主題和樣式
+title: 自訂 AEM Forms Edge Delivery Services Form 的主題和樣式
+description: 自訂 AEM Forms Edge Delivery Services Form 的主題和樣式
 feature: Edge Delivery Services
 exl-id: c214711c-979b-4833-9541-8e35b2aa8e09
 source-git-commit: 5eee563a9a425ef187afed69a8159d8b1298dad7
 workflow-type: tm+mt
 source-wordcount: '2014'
-ht-degree: 41%
+ht-degree: 68%
 
 ---
 
@@ -45,11 +45,11 @@ ht-degree: 41%
 * [方塊模型](https://www.w3schools.com/css/css_boxmodel.asp)： CSS方塊模型將HTML元素的結構描述為由邊框間距、邊框和邊界包圍的內容區域。
 * Flexbox/格線： CSS [Flexbox](https://www.w3schools.com/css/css3_flexbox.asp) 和 [格線版面配置](https://www.w3schools.com/css/css_grid.asp) 是建立回應式且彈性設計的強大工具。
 
-## 為最適化Forms區塊設定表單樣式
+## 為最適化表單區塊設定表單樣式
 
-最適化Forms區塊提供標準化的HTML結構，可簡化選擇與設定表單元件樣式的程式：
+最適化區塊提供了標準化的 HTML 結構，簡化了選取表單元件和設定表單元件樣式的程序：
 
-* **更新預設樣式**：您可以透過編輯 `/blocks/form/form.css file` 來修改表單的預設樣式。此檔案提供了表單的全面樣式，支援多步驟精靈表單。它著重在使用自訂 CSS 變數來輕鬆自訂、維護和跨表單的統一樣式。如需將最適化Forms區塊新增至專案的指示，請參閱 [建立表單](/help/edge/docs/forms/create-forms.md).
+* **更新預設樣式**：您可以透過編輯 `/blocks/form/form.css file` 來修改表單的預設樣式。此檔案提供了表單的全面樣式，支援多步驟精靈表單。它著重在使用自訂 CSS 變數來輕鬆自訂、維護和跨表單的統一樣式。有關如何將最適化表單區塊新增至專案的說明，請參閱「[建立表單](/help/edge/docs/forms/create-forms.md)」。
 
 * **自訂**：以預設 `forms.css` 為基礎，然後進行自訂以修改表單元件的外觀，使其具有視覺吸引力且方便使用。此檔案的結構鼓勵組織並維護表單的樣式，從而促進整個網站的設計一致。
 
@@ -70,7 +70,7 @@ ht-degree: 41%
 
 ## 元件結構
 
-最適化Forms區塊為各種表單元素提供一致的HTML結構，確保更輕鬆的樣式化和管理。 您可以使用 CSS 進行樣式設定，藉此操控元件。
+最適化表單區塊為各種表單元素提供一致的 HTML 結構，確保輕鬆進行樣式設定和管理。您可以使用 CSS 進行樣式設定，藉此操控元件。
 
 ### 一般元件 (不包含下拉式選單、單選按鈕群組和核取方塊群組)：
 
@@ -89,8 +89,8 @@ ht-degree: 41%
 ```
 
 * 類別：div 元素有幾個目標為特定元素和樣式的類別。您需要 `{Type}-wrapper` 或 `field-{Name}` 用來開發CSS選擇器以設定表單欄位樣式的類別：
-   * {Type}：根據欄位類型識別元件。例如，文字（文字包裝函式）、數字（數字包裝函式）、日期（日期包裝函式）。
-   * {Name}：根據名稱識別元件。欄位名稱只能包含英數字元，名稱中的多個連續破折號將替換為單個破折號 `(-)`，並且欄位名稱中的開頭和結尾破折號將被刪除。例如，名字(field-first-name field-wrapper)。
+   * {Type}：根據欄位類型識別元件。例如，文字 (text-wrapper)、數字 (number-wrapper)、日期 (date-wrapper)。
+   * {Name}：根據名稱識別元件。欄位名稱只能包含英數字元，名稱中的多個連續破折號將替換為單個破折號 `(-)`，並且欄位名稱中的開頭和結尾破折號將被刪除。例如，名字 (field-first-name field-wrapper)。
    * {FieldId}：欄位的唯一識別碼，是自動產生的。
    * {Required}：它是一個布林值，表示該欄位是否為必填欄位。
 * 標籤：的 `label` 元素提供欄位的描述性文字，並使用 `for` 屬性將其與輸入元素相關聯。
@@ -259,9 +259,9 @@ first-name input {
 
 +++
 
-### 選項按鈕群組
+### 單選按鈕群組
 
-與下拉式元件類似，選項群組也有自己的HTML結構和CSS結構：
+與下拉元件類似，單選按鈕群組也有自己的 HTML 結構和 CSS 結構：
 
 +++ 無線電群組的HTML結構
 
@@ -277,7 +277,7 @@ first-name input {
 </fieldset>
 ```
 
-#### HTML結構範例
+#### HTML 結構範例
 
 ```HTML
 <fieldset class="radio-group-wrapper field-color field-wrapper" id="color_preference" name="color_preference" data-required="true">
@@ -303,7 +303,7 @@ first-name input {
 
 +++ 無線電群組的CSS選取器
 
-* 定位欄位集
+* 為欄位集進行目標定位
 
 ```CSS
   .radio-group-wrapper {
@@ -312,9 +312,9 @@ first-name input {
   }
 ```
 
-此選取器會鎖定類別為radio-group-wrapper的任何欄位集。 這對於套用一般樣式至整個選項群組非常有用。
+此選擇器針對具有 radio-group-wrapper 類別的任何欄位集。這對於將通用樣式應用於整個單選按鈕群組非常有用。
 
-* 目標定位選項按鈕標籤
+* 為單選按鈕標籤進行目標定位
 
 ```CSS
 .radio-wrapper label {
@@ -323,7 +323,7 @@ first-name input {
   }
 ```
 
-* 根據名稱定位特定欄位集內的所有選項按鈕標籤
+* 根據名稱定位來針對欄位集中的所有單選按鈕標籤
 
 ```CSS
 .field-color .radio-wrapper label {
@@ -349,7 +349,7 @@ first-name input {
 </fieldset>
 ```
 
-#### HTML結構範例
+#### HTML 結構範例
 
 ```HTML
 <fieldset class="checkbox-group-wrapper field-topping field-wrapper" id="topping_preference" name="topping_preference" data-required="false">
@@ -498,16 +498,16 @@ first-name input {
 </fieldset>
 ```
 
-* fieldset元素會以類別panel-wrapper和根據面板名稱(field-login)建立樣式的其他類別當作面板容器。
-* 圖例元素(<legend>)做為面板標題，包含「登入資訊」文字和類別field-label。 data-visible=&quot;false&quot;屬性可搭配JavaScript使用，以控制標題的可見度。
-* 在欄位集內，多個。{Type}-wrapper元素（在此例中為.text-wrapper和.password-wrapper）代表面板中的個別表單欄位。
-* 每個包裝函式都包含標籤、輸入欄位和說明，類似於前面的範例。
+* Fieldset 元素可用作含有 panel-wrapper 類別和其他類別的面板容器，以便根據面板名稱 (field-login) 設定樣式。
+* 圖例元素 (<legend>) 可用作面板標題，其中包含文字「登入資訊」和 field-label 類別。data-visible=&quot;false&quot; 屬性可以與 JavaScript 一起用來控制標題的可見性。
+* 在欄位集中，多個。{Type}-wrapper 元素 (在本例中為 .text-wrapper 和 .password-wrapper) 代表面板中的個別表單欄位。
+* 每個包裝函式都包含一個標籤、輸入欄位和說明，與前面的範例類似。
 
 +++
 
 +++ 面板/容器元件的CSS選取器範例
 
-1. 鎖定面板目標：
+1. 為面板進行目標定位：
 
 ```CSS
   /* Target the entire panel container */
@@ -520,9 +520,9 @@ first-name input {
  }
 ```
 
-* 此 `.panel-wrapper` 選取器會使用類別panel-wrapper來設定所有元素的樣式，為所有面板建立一致的外觀。
+* `.panel-wrapper` 選擇器使用 panel-wrapper 類別來設定所有元素的樣式，為所有面板建立一致的外觀。
 
-1. 鎖定面板標題為目標：
+1. 為面板標題進行目標定位：
 
 ```CSS
   /* Target the legend element (panel title) */
@@ -536,10 +536,10 @@ first-name input {
   }
 ```
 
-* 此 `.panel-wrapper legend` 選取器可設定面板中圖例元素的樣式，讓標題在視覺上脫穎而出。
+* `.panel-wrapper legend` 選擇器設定面板內圖例元素的樣式，讓標題在視覺上脫穎而出。
 
 
-1. 定位面板中的個別欄位：
+1. 為面板中個別欄位進行目標定位：
 
 ```CSS
 /* Target all form field wrappers within a panel */
@@ -549,9 +549,9 @@ first-name input {
 }
 ```
 
-* 此 `.panel-wrapper .{Type}-wrapper` 選取器會鎖定所有具有 `.{Type}-wrapper` 類別，讓您設定表單欄位之間間距的樣式。
+* `.panel-wrapper .{Type}-wrapper` 選擇器為面板中含有 `.{Type}-wrapper` 類別的所有包裝函式進行目標定位，可讓您設定表單欄位之間的間距樣式。
 
-1. 目標定位特定欄位（選擇性）：
+1. 為特定欄位 (選項) 進行目標定位：
 
 ```CSS
   /* Target the username field wrapper */
@@ -565,7 +565,7 @@ first-name input {
   }
 ```
 
-* 這些選用的選取器可讓您鎖定面板中的特定欄位包裝函式，以獲得唯一樣式，例如反白顯示使用者名稱欄位。
+* 這些屬於選項的選擇器可讓您在面板中為特定欄位包裝函式進行獨特樣式的目標定位，例如醒目顯示使用者名稱欄位。
 
 +++
 
@@ -625,17 +625,17 @@ first-name input {
 </fieldset>
 ```
 
-每個面板的結構與單一面板範例相同，但具有其他屬性：
+每個面板都有與單一面板範例相同的結構，並含有附加屬性：
 
-* data-repeatable=&quot;true&quot;：此屬性指出面板可使用JavaScript或架構動態重複。
+* data-repeatable=&quot;true&quot;：此屬性表示可使用 JavaScript 或框架以機動方式重複面板。
 
-* 唯一ID和名稱：面板中的每個元素都有唯一的ID （例如name-1、email-1）和根據面板索引的名稱屬性（例如name=&quot;contacts）[0].name」)。 這允許在提交多個面板時進行正確的資料收集。
+* 唯一ID和名稱：面板中的每個元素都有唯一的ID （例如name-1、email-1）和根據面板索引的名稱屬性（例如name=&quot;contacts）[0].name」)。 這樣可以在提交多個面板時進行正確的資料收集。
 
 +++
 
 +++ 可重複面板的CSS選取器
 
-* 鎖定所有可重複面板：
+* 為所有可重複面板進行目標定位：
 
 ```CSS
   /* Target all panels with the repeatable attribute */
@@ -648,10 +648,10 @@ first-name input {
   }
 ```
 
-選取器會為所有可重複的面板設定樣式，以確保一致的外觀和風格。
+選擇器會為所有可重複的面板進行樣式設定，確保有一致的外觀和感覺。
 
 
-* 鎖定面板中的個別欄位為目標：
+* 為面板中個別欄位進行目標定位：
 
 ```CSS
 /* Target all form field wrappers within a repeatable panel */
@@ -660,9 +660,9 @@ first-name input {
   margin-bottom: 10px;
 }
 ```
-此選取器會設定可重複面板中所有欄位包裝函式的樣式，以維持欄位之間的間距一致。
+此選擇器可為可重複面板中所有欄位包裝函式進行樣式設定，讓欄位之間的間距維持一致。
 
-* 目標定位特定欄位（面板內）：
+* 為特定欄位 (在面板內) 進行目標定位：
 
 ```CSS
 /* Target the name field wrapper within the first panel */
@@ -716,15 +716,15 @@ first-name input {
 </div>
 ```
 
-* class屬性使用檔案附件(claim_form)所提供的名稱。
-* 輸入元素的識別碼和名稱屬性與檔案附件名稱(claim_form)相符。
-* files-list區段最初是空的。 檔案上傳時，會使用JavaScript動態填入。
+* 類別屬性使用為檔案附件提供的名稱 (claim_form)。
+* 輸入元素的 id 和名稱屬性與檔案附件名稱 (claim_form) 相符。
+* 檔案清單區段一開始是空值。檔案上傳時，會使用JavaScript動態填入。
 
 +++
 
 +++ 檔案附件元件的CSS選取器
 
-* 目標定位整個檔案附件元件：
+* 為全部檔案附件元件進行目標定位：
 
 ```CSS
 /* Target the entire file attachment component */
@@ -737,9 +737,9 @@ first-name input {
 }
 ```
 
-此選取器會設定整個檔案附件元件的樣式，包括圖例、拖曳區域、輸入欄位和清單。
+此選擇器為全部檔案附件元件設定樣式，包括圖例、拖曳區域、輸入欄位和清單。
 
-* 目標定位特定元素：
+* 為特定元素進行目標定位：
 
 ```CSS
 /* Target the drag and drop area */
@@ -786,7 +786,7 @@ first-name input {
 }
 ```
 
-這些選取器可讓您分別設定檔案附件元件的不同部分的樣式。 您可以根據您的設計偏好調整樣式。
+這些選擇器可讓您為檔案附件元件的不同部分個別設定樣式。您可以調整樣式以符合您的設計偏好。
 
 +++
 
@@ -898,7 +898,7 @@ first-name input {
 
 
 
-此 CSS 的目標是位於具有類別 `field-otp` 的元素內的所有輸入元素。您的表單HTML結構遵循最適化Forms區塊的慣例，這表示有一個標示為「field-otp」類別的容器會儲存名為「otp」的欄位。
+此 CSS 的目標是位於具有類別 `field-otp` 的元素內的所有輸入元素。您表單的 HTML 結構遵循最適化表單區塊的慣例，這表示有一個標有「field-otp」類別的容器包含名為「otp」的欄位。
 
 +++
 

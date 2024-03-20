@@ -6,18 +6,18 @@ exl-id: 7d087d41-9313-482a-a905-8955b0999781
 source-git-commit: 703a48903c44678f6fe311de740b7c767c886ba5
 workflow-type: tm+mt
 source-wordcount: '1006'
-ht-degree: 80%
+ht-degree: 87%
 
 ---
 
 # 最適化表單區塊元件及其屬性
 
-AEM Forms Edge Delivery Services可讓您使用各種元件建立好記且互動式的表單。 這些元件符合不同類型資料收集的需求，還可供您輕鬆自訂以滿足您的特定需求。
+AEM Forms Edge Delivery Services 可讓您使用各種元件建立便利使用者的互動式表單。這些元件符合不同類型資料收集的需求，還可供您輕鬆自訂以滿足您的特定需求。
 
 
 ![含有部份元件和屬性的試算表範本](/help/edge/assets/sample-form-in-spreadsheet.png)
 
-最適化Forms區塊會產生 [統一的HTML結構](/help/edge/docs/forms/style-theme-forms.md) 用於所有欄位型別和容器（面板），確保一致性。 這種維持一致的結構可更易[設計表單樣式](/help/edge/docs/forms/style-theme-forms.md)。
+最適化表單區塊可為所有欄位類型和容器 (面板) 產生[統一的 HTML 結構](/help/edge/docs/forms/style-theme-forms.md)以確保一致性。這種維持一致的結構可更易[設計表單樣式](/help/edge/docs/forms/style-theme-forms.md)。
 
 ## 可用元件
 
@@ -40,12 +40,12 @@ AEM Forms Edge Delivery Services可讓您使用各種元件建立好記且互動
 
 ## 元件屬性
 
-每個表單元件都有不同的屬性，可讓您控制表單的行為和外觀。最適化Forms區塊元件支援的屬性如下：
+每個表單元件都有不同的屬性，可讓您控制表單的行為和外觀。這裡是最適化表單區塊元件支援的屬性：
 
 
 | 屬性 | 適用元件 | 詳細資料 |
 |--------------|------------------------------|----------------------------------------------------------------------|
-| 類型 | 全部 | 指定元件的類型。此屬性決定輸入欄位的行為和外觀。例如，關於文字輸入，類型可以是「文字」、電子郵件輸入是「電子郵件」、密碼輸入是「密碼」。最適化Forms區塊支援  <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types">所有有效的HTML5輸入型別</a>， <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea">文字區域</a>， <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select">選取</a>、和 <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset">欄位集</a> 作為型別。 |
+| 類型 | 全部 | 指定元件的類型。此屬性決定輸入欄位的行為和外觀。例如，關於文字輸入，類型可以是「文字」、電子郵件輸入是「電子郵件」、密碼輸入是「密碼」。最適化表單區塊支援<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types">所有有效的 HTML5 輸入類型</a>、 <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea">textarea</a>、 <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select">選取</a>和<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset">欄位集</a>作為類型。 |
 | 名稱 | 全部 | 識別表單提交的元件。名稱屬性是將表單資料提交到伺服器時使用，主要是將使用者輸入與特定欄位建立關聯。 |
 | 標籤 | 全部 | 向使用者提供內容資訊。標籤是顯示在元件旁邊的文件，主要是指引使用者輸入哪些資訊。 |
 | 值 | 文字、密碼、電子郵件、數字、範圍、日期及其變體 (本地日期時間、月、週、時間)、核取方塊、單選、隱藏、提交、按鈕 | 指定元件的初始值。關於文字輸入、textarea 和選取元素，這是顯示的預設文字或選項。關於單選和核取方塊元件，這是選取這些元件時提交的值/資料。值屬性是選項，但核取塊方和單選輸入應被視為強制屬性。 |

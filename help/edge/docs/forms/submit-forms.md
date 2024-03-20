@@ -1,21 +1,21 @@
 ---
 title: 準備試算表並接受資料
-description: 使用試算表及最適化Forms區塊欄位，更快製作強大的表單！
+description: 使用試算表和最適化表單區塊欄位更快地製作強大的表單！
 feature: Edge Delivery Services
 exl-id: 0643aee5-3a7f-449f-b086-ed637ae53b5a
 source-git-commit: 5eee563a9a425ef187afed69a8159d8b1298dad7
 workflow-type: tm+mt
 source-wordcount: '1001'
-ht-degree: 64%
+ht-degree: 98%
 
 ---
 
 # 設定您的Google工作表或Microsoft Excel檔案以開始接受資料
 
 
-一旦您 [已建立和預覽表單](/help/edge/docs/forms/create-forms.md)，是時候啟用對應的試算表來開始接收資料了。 您可以手動啟用試算表以接受資料，或使用管理員API啟用試算表以接受資料。
+ [建立並預覽表單](/help/edge/docs/forms/create-forms.md)後，就可以啟用對應的試算表以開始接收資料。您可以手動啟用試算表以接受資料，或使用管理 API 啟用試算表以接受資料。
 
-![檔案式撰寫生態系統](/help/edge/assets/document-based-authoring-workflow-enable-sheet-to-accept-data.png)
+![文件型製作生態系統](/help/edge/assets/document-based-authoring-workflow-enable-sheet-to-accept-data.png)
 
 <!-- 
 >[!VIDEO](https://video.tv.adobe.com/v/3427489?quality=12&learn=on)
@@ -25,7 +25,7 @@ ht-degree: 64%
 
 ## 手動啟用試算表以接受資料
 
-啟用試算表以接受資料的方式
+若要啟用試算表以接受資料
 
 1. 開啟包含您表單的試算表並附加一個新工作表，將其重新命名為 `incoming`。
 
@@ -33,21 +33,21 @@ ht-degree: 64%
    >
    > 如果 `incoming` 工作表不存在，AEM 不會向試算表傳送任何資料。
 
-1. 在此工作表中，插入名為「intrain_form」的表格。 選取符合表單欄位名稱所需的欄數。 然後，在工具列中移至「插入」>「表格」，然後按一下「確定」。
+1. 在此工作表中，插入一個名為 &quot;intake_form&quot; 的表。選取與表單欄位名稱相符所需的欄數。然後，在工具列中前往「插入 > 表格」，並按一下「確定」。
 
-1. 將表格的名稱變更為&quot;intract_form&quot;。 在Microsoft Excel中，若要變更表格名稱，請選取表格並按一下「表格設計」。
+1. 將表格的名稱更改為 “intake_form”。在 Microsoft Excel 中，若要變更表格的名稱，請選取該表格並按一下「表格設計」。
 
-1. 接下來，將表單欄位名稱新增為表格標題。 若要確定欄位完全相同，您可以從「shared-default」工作表複製並貼上它們。  在「shared-default」工作表中，選取並複製「名稱」欄下列出的表單ID （除了提交欄位）。
+1. 接下來，新增表單欄位名稱作為表格標題。為了確保這些欄位完全相同，您可以從「共用預設」工作表中複製並貼上名稱。在「共用預設」工作表中，選取並複製「名稱」欄下所列的表單 ID (提交欄位除外)。
 
-1. 在「傳入」工作表中，選取「選擇性貼上>轉置列至欄」，將欄位ID復製為此新工作表的欄標題。 僅保留需要擷取其他資料的欄位可以忽略。
+1. 在「傳入」工作表中，選取「選擇性貼上 > 將列調換為欄」，以便將欄位 ID 複製為該新工作表中的欄標題。只保留需要擷取資料的欄位，其他可以忽略。
 
-   中的每一個值 `Name` 的欄 `shared-default` 工作表（不包括提交按鈕）可作為頁首 `incoming` 工作表。 例如，請參考下方說明「聯絡我們」表單標題的圖片：
+   `shared-default` 工作表 `Name` 欄的每個值 (不包含提交按鈕) 可以成為  `incoming` 工作表的標題。例如，請參考下方說明「聯絡我們」表單標題的圖片：
 
    ![聯絡我們表單的欄位](/help/edge/assets/contact-us-form-excel-sheet-fields.png)
 
 
 
-1. 使用AEM Sidekick擴充功能來預覽表單更新。 您的工作表現在已準備好接受傳入的表單提交。
+1. 使用 AEM Sidekick 擴充功能預覽表單更新。您的工作表已準備好接受傳入的表單提交。
 
    >[!NOTE]
    >
@@ -56,7 +56,7 @@ ht-degree: 64%
 
 將欄位名稱新增至 `incoming` 工作表後，您的表單就可以接受提交了。您可以預覽表單並使用它向工作表提交資料。
 
-將工作表設定為接收資料後，您可以 [使用最適化Forms區塊預覽表單](/help/edge/docs/forms/create-forms.md#preview-the-form-using-your-edge-delivery-service-eds-page) 或 [使用POST請求](#use-admin-apis-to-send-data-to-your-sheet) 以開始傳送資料至工作表。
+只要工作表已設定可接受資料，您可以[使用最適化表單區塊預覽表單](/help/edge/docs/forms/create-forms.md#preview-the-form-using-your-edge-delivery-service-eds-page)或[使用 POST 請求](#use-admin-apis-to-send-data-to-your-sheet)開始將資料傳送到工作表。
 
 >[!WARNING]
 >
@@ -150,9 +150,9 @@ ht-degree: 64%
 
    您的表單現在可以接受資料了。您也可以觀察到試算表有以下變化：
 
-## 啟用以接受資料後，自動變更工作表。
+## 一旦啟用接受資料，工作表就會自動變更
 
-工作表設定為接收資料後，您會在試算表中觀察到下列變更：
+將工作表設定為接收資料後，您會在試算表中觀察到以下變更：
 
 名為「Slack」的工作表會新增至您的 Excel 活頁簿或 Google Sheet 中。在此工作表中，當系統擷取新資料至試算表中時，您可以為指定的 Slack 頻道設定自動通知。目前，AEM 僅支援向 AEM Engineering Slack 組織和 Adob&#x200B;&#x200B;e Enterprise 支援組織發送通知。
 
@@ -171,7 +171,7 @@ ht-degree: 64%
 
 ## 將資料傳送到您的工作表 {#send-data-to-your-sheet}
 
-將工作表設定為接收資料後，您可以 [使用最適化Forms區塊預覽表單](/help/edge/docs/forms/create-forms.md#preview-the-form-using-your-edge-delivery-service-eds-page) 或 [使用管理API](#use-admin-apis-to-send-data-to-your-sheet) 以開始傳送資料至工作表。
+將工作表設定為接收資料後，您可以[使用最適化表單區塊預覽表單](/help/edge/docs/forms/create-forms.md#preview-the-form-using-your-edge-delivery-service-eds-page)或[使用 Admin API](#use-admin-apis-to-send-data-to-your-sheet) 開始傳送資料到工作表。
 
 ### 使用 Admin API 將資料傳送到您的工作表
 
@@ -283,7 +283,7 @@ POST https://my-domain.com/email-form
     https://main--portal--wkndforms.hlx.live/contact-us
   ```
 
-接下來，您可以 [自訂感謝訊息](/help/edge/docs/forms/thank-you-page-form.md).
+接下來，您可以[自訂感謝訊息](/help/edge/docs/forms/thank-you-page-form.md)。
 
 ## 另請參閱
 

@@ -9,7 +9,7 @@ user-guide-title: AEM as a Cloud Service
 source-git-commit: 2c3be4b60396c5cf57c327fd5b858a3af65397f2
 workflow-type: tm+mt
 source-wordcount: '4829'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -698,7 +698,7 @@ ht-degree: 98%
       + [安裝及設定 Forms Designer](/help/forms/installing-configuring-designer.md)
       + [使用 Forms Designer 建立範本](/help/forms/use-forms-designer.md)
       + [在 PDF 文件中使用自訂字型](/help/forms/use-custom-fonts.md)
-      + [PDF檔案中支援的字型清單](/help/forms/supported-out-of-the-box-fonts.md)
+      + [PDF 文件中支援的字體清單](/help/forms/supported-out-of-the-box-fonts.md)
       + [已知問題、最佳做法和常見問題集](/help/forms/communications-known-issues-limitations.md)
    + 交易報告{#using-communications}
       + [交易報告計費 API](/help/forms/transaction-reports-billable-apis.md)
@@ -787,7 +787,7 @@ ht-degree: 98%
    + [Adobe Commerce PWA Studio](/help/commerce-cloud/pwa-studio/getting-started.md)
    + [移轉](/help/commerce-cloud/migration.md)
    + [常見問題集](/help/commerce-cloud/faq.md)
-+ AEM 含 Edge Delivery Services {#edge-delivery}
++ 使用 Edge Delivery Services 的 AEM {#edge-delivery}
    + [開始使用 Edge Delivery Services](/help/edge/overview.md)
    + [使用 Edge Delivery](/help/edge/using.md)
    + [開發人員快速入門指南](/help/edge/edge-dev-getting-started.md)
@@ -828,16 +828,16 @@ ht-degree: 98%
       + [概觀](/help/edge/docs/forms/overview.md)
       + 立即開始 {#getting-started-eds-forms}
          + [快速入門](/help/edge/docs/forms/tutorial.md)
-         + [使用Google工作表或Microsoft Excel建立表單](/help/edge/docs/forms/create-forms.md)
-         + [設定Google工作表或Microsoft Excel檔案以開始接受資料&#x200B;。](/help/edge/docs/forms/submit-forms.md)
+         + [使用 Google Sheets 或 Microsoft Excel 建立表單](/help/edge/docs/forms/create-forms.md)
+         + [設定您的 Google 表單或 Microsoft Excel 檔案以開始接受資料](/help/edge/docs/forms/submit-forms.md)
          + [發佈您的表單並開始收集資料](/help/edge/docs/forms/publish-forms.md)
          + [新增驗證至表單欄位](/help/edge/docs/forms/validate-forms.md)
-         + [自訂表單的外觀&#x200B;](/help/edge/docs/forms/style-theme-forms.md)
+         + [自訂表單的外觀](/help/edge/docs/forms/style-theme-forms.md)
          + [使用規則為表單新增動態行為](/help/edge/docs/forms/rules-forms.md)
          + [提交表單後顯示自訂感謝訊息](/help/edge/docs/forms/thank-you-page-form.md)
       + 功能 {#advanced-features-eds-forms}
          + [表單片段](/help/edge/docs/forms/form-fragments.md)
-         + [將可重複的區段新增至表單&#x200B;。](/help/edge/docs/forms/repeatable-forms.md)
+         + [將可重複區段新增到表單](/help/edge/docs/forms/repeatable-forms.md)
          + [轉換](/help/edge/docs/forms/translate-forms.md)
          + [reCAPTCHA](/help/edge/docs/forms/recaptacha-forms.md)
          + [自訂元件](/help/edge/docs/forms/custom-components-forms.md)

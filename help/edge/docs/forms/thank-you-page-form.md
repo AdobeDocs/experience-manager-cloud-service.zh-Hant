@@ -6,34 +6,34 @@ exl-id: e6c66b22-dc52-49e3-a920-059adb5be22f
 source-git-commit: b32e04dec83992ebfcea7874932a5ab77a1eaa70
 workflow-type: tm+mt
 source-wordcount: '195'
-ht-degree: 13%
+ht-degree: 100%
 
 ---
 
 # 提交表單後顯示自訂感謝訊息
 
-在使用者提交表單後，透過感謝訊息提供順暢的體驗至關重要。 這不僅可確認提交是否成功，也可提升使用者滿意度，並指引他們繼續前進。
+在使用者提交表單後，透過感謝訊息提供無縫體驗至關重要。這不僅可以向使用者確認成功提交，還可以提高使用者滿意度並引導他們進行更深入的歷程。
 
 ## 設定自訂感謝訊息
 
-最適化Forms區塊的預設行為是在提交時顯示以下感謝訊息。 訊息會顯示在表單上方。
+最適化表單區塊的預設行為是在提交時顯示以下的感謝訊息。該訊息顯示在表單最上方。
 
 ![預設感謝訊息](/help/edge/assets/thank-you-message.png)
 
 
-請依照下列步驟，為您的最適化Forms區塊設定自訂感謝訊息：
+請依照以下步驟為您的最適化表單區塊設定自訂感謝訊息：
 
-1. 在本機電腦或GitHub存放庫上存取您的AEM專案。
+1. 在您的本機電腦或 GitHub 存放庫上存取 AEM 專案。
 
-1. 瀏覽至 [AEM專案資料夾]\blocks\form\submit.js檔案進行編輯。
+1. 導覽至 [AEM Project Folder]\blocks\form\submit.js 檔案進行編輯。
 
-1. 找出下列程式碼
+1. 找到以下程式碼
 
    ```JavaScript
        thankYouMessage.innerHTML = payload?.body?.thankYouMessage || 'Thanks for your submission';
    ```
 
-1. 將預設訊息取代為您的自訂訊息。 例如，
+1. 將預設訊息更換為您的自訂訊息。例如，
 
 
    ```JavaScript
@@ -41,7 +41,7 @@ ht-degree: 13%
    ```
 
 
-1. 儲存檔案。 將更新後的檔案提交至您的GitHub存放庫。 現在，當您提交表單時，會顯示自訂感謝訊息。 例如，
+1. 儲存檔案。將更新的檔案提交到您的 GitHub 存放庫。現在，您提交表單時會顯示自訂感謝訊息。例如，
 
 ![自訂感謝訊息](/help/edge/assets/custom-thank-you-message.png)
 
