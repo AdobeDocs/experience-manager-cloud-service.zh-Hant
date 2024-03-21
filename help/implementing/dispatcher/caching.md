@@ -3,7 +3,7 @@ title: AEM as a Cloud Service 中的快取
 description: 瞭解AEMas a Cloud Service快取的基本概念
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: d6e522cc18441a642e3434b6e5eff893d8f69952
+source-git-commit: 8215686031de1bc37ce37bfdce252b3997646042
 workflow-type: tm+mt
 source-wordcount: '2894'
 ht-degree: 1%
@@ -278,7 +278,7 @@ AEM層預設不會快取blob內容。
 和舊版AEM一樣，發佈或取消發佈頁面會從Dispatcher快取中清除內容。 如果懷疑有快取問題，您應重新發佈有問題的頁面，並確保有符合的虛擬主機可用 `ServerAlias` Dispatcher快取失效所需的localhost。
 
 >[!NOTE]
->為了讓Dispatcher正確失效，請確定來自「127.0.0.1」、「localhost」、「.local」、「\*.adobeaemcloud.com」和「\*.adobeaemcloud.net」的請求都符合，並由vhost設定進行處理，以便提供請求。 您可以依照參照中的模式，在全域比對所有vhost組態中的「*」來執行此工作 [AEM原型](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/dispatcher.cloud/src/conf.d/available_vhosts/default.vhost). 或者，您也可以確保前述清單是由其中一個主機擷取。
+>為了讓Dispatcher正確失效，請確定來自「127.0.0.1」、「localhost」、「\*.local」、「\*.adobeaemcloud.com」和「\*.adobeaemcloud.net」的請求都符合，並由vhost設定進行處理，以便提供請求。 您可以依照參照中的模式，在全域比對所有vhost組態中的「*」來執行此工作 [AEM原型](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/dispatcher.cloud/src/conf.d/available_vhosts/default.vhost). 或者，您也可以確保前述清單是由其中一個主機擷取。
 
 當發佈執行個體收到來自作者的新版本頁面或資產時，它會使用排清代理程式來使其Dispatcher上的適當路徑失效。 更新的路徑會與其父項一起從Dispatcher快取中移除，直到某個層級為止(您可以使用 [statfileslevel](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#invalidating-files-by-folder-level))。
 
