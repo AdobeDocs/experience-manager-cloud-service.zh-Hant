@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 最新發行說明�
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 最新發行說明。'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 5f780f5e8fa9289b35eefbbd4c3a71d37a7f465a
+source-git-commit: 8a64e2ca1dc3987558c36346422ee43d202d9ecc
 workflow-type: tm+mt
 source-wordcount: '1020'
-ht-degree: 98%
+ht-degree: 96%
 
 ---
 
@@ -110,7 +110,7 @@ Dynatrace 客戶可以監控他們的 AEM 使用情況。[了解如何](/help/im
 
 ### CDN 設定早期採用者計劃 {#cdn-config-early-adopter}
 
-除了最近發佈的[流量篩選規則](/help/security/traffic-filter-rules-including-waf.md) (其中包含可以選擇授權的 Web 應用程式防火牆 (WAF) 規則)，也可以使用設定管道來聲明及部署其他類型的 CDN 設定。透過電子郵件加入率先採用者計畫 **aemcs-cdn-config-adopter@adobe.com** 若要存取以下專案：
+除了最近發行的 [流量篩選規則](/help/security/traffic-filter-rules-including-waf.md)，其中包含可選擇性授權的Web應用程式防火牆(WAF)規則，您可利用設定管道來宣告和部署 [其他型別的CDN設定](/help/implementing/dispatcher/cdn-configuring-traffic.md). 發送電子郵件至 **aemcs-cdn-config-adopter@adobe.com** 加入早期採用者計劃，即可存取：
 * 301/302 用戶端重新導向
 * 將邊緣要求代理到任意來源
 * URL 轉換

@@ -2,10 +2,10 @@
 title: 流量篩選規則包括 WAF 規則
 description: 設定流量篩選規則，包括 Web 應用程式防火牆 (WAF) 規則
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: 9a535f7fa0a1e7b6f508e887787dd421bfffe8df
+source-git-commit: 9f23b91df3139115ca442de03457bb50a1e1cb71
 workflow-type: tm+mt
-source-wordcount: '3634'
-ht-degree: 90%
+source-wordcount: '3669'
+ht-degree: 91%
 
 ---
 
@@ -25,6 +25,10 @@ ht-degree: 90%
 流量篩選規則可以透過 Cloud Manager 設定管道部署到生產 (非沙箱) 程式中的開發、中繼和生產環境類型。未來將推出對 RDE 的支援。
 
 [按照教學課程進行操作](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview.html)，快速建立有關此功能的具體專業知識。
+
+>[!NOTE]
+>有興趣使用其他選項在CDN設定流量，包括修改要求/回應、宣告重新導向，以及代理至非AEM來源？ [瞭解如何並試用它](/help/implementing/dispatcher/cdn-configuring-traffic.md) 加入率先採用者計畫。
+
 
 ## 本文的結構方式 {#how-organized}
 
@@ -287,7 +291,7 @@ when:
 
 **範例 1**
 
-此規則會封鎖來自的請求 **IP 192.168.1.1**：
+此規則會封鎖來自 **IP 192.168.1.1** 的要求：
 
 ```
 kind: "CDN"
@@ -426,7 +430,7 @@ data:
 
 **範例 1**
 
-在過去10秒內，當使用者端超過每秒60個請求（每個CDN POP）的平均值時，此規則會封鎖5百萬使用者端：
+當在過去 10 秒內超過平均 60 個要求/秒時 (per CDN POP)，此規則將封鎖用戶端 5m：
 
 ```
 kind: "CDN"
@@ -451,7 +455,7 @@ data:
 
 **範例 2**
 
-當路徑/critical/resource在過去60秒內超過平均每秒100個要求（每個CDN POP）時，封鎖請求60秒：
+當過去 60 秒內超過平均 100 個要求/秒時 (per CDN POP)，就會封鎖路徑 /重要/資源上的要求 60 秒：
 
 ```
 kind: "CDN"
