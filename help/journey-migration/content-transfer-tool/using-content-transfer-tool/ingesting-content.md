@@ -2,10 +2,10 @@
 title: 將內容引入雲端服務
 description: 瞭解如何使用Cloud Acceleration Manager將移轉集中的內容擷取到目標Cloud Service例項。
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 281523183cecf1e74c33f58ca9ad038bba1a6363
+source-git-commit: 8795d9d2078d9f49699ffa77b1661dbe5451a4a2
 workflow-type: tm+mt
-source-wordcount: '2410'
-ht-degree: 7%
+source-wordcount: '2534'
+ht-degree: 6%
 
 ---
 
@@ -155,6 +155,12 @@ ht-degree: 7%
 
 ### 由於違反唯一性限制，追加擷取失敗 {#top-up-ingestion-failure-due-to-uniqueness-constraint-violation}
 
+>[!CONTEXTUALHELP]
+>id="aemcloud_cam_ingestion_troubleshooting_uuid"
+>title="唯一性限制違規"
+>abstract="非擦去擷取失敗的常見原因是節點ID發生衝突。 只有一個衝突節點可以存在。"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html#top-up-ingestion-process" text="追加擷取"
+
 造成問題的常見原因 [追加擷取](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) 失敗是節點id中的衝突。 若要識別此錯誤，請使用Cloud Acceleration Manager UI下載擷取記錄，並尋找類似以下的專案：
 
 >java.lang.RuntimeException： org.apache.jackrabbit.oak.api.CommitFailedException： OakConstraint0030：違反唯一性條件約束 [jcr：uuid] 具有值a1a1a1a1-b2b2-c3c3-d4d4-e5e5e5e5： /some/path/jcr：content， /some/other/path/jcr：content
@@ -169,6 +175,12 @@ AEM中的每個節點都必須有唯一的uuid。 此錯誤指出正在擷取的
 
 ### 由於無法刪除參照的節點，追加擷取失敗 {#top-up-ingestion-failure-due-to-unable-to-delete-referenced-node}
 
+>[!CONTEXTUALHELP]
+>id="aemcloud_cam_ingestion_troubleshooting_referenced_node"
+>title="無法刪除參考的節點"
+>abstract="非擦去擷取失敗的常見原因是目的地執行個體上特定節點的版本衝突。 必須修正節點的版本。"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html#top-up-ingestion-process" text="追加擷取"
+
 另一個常見原因 [追加擷取](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) 失敗是目的地執行個體上特定節點的版本衝突。 若要識別此錯誤，請使用Cloud Acceleration Manager UI下載擷取記錄，並尋找類似以下的專案：
 
 >java.lang.RuntimeException： org.apache.jackrabbit.oak.api.CommitFailedException： OakIntegrity0001：無法刪除參照的節點： 8a2289f4-b904-4bd0-8410-15e41e0976a8
@@ -181,11 +193,22 @@ AEM中的每個節點都必須有唯一的uuid。 此錯誤指出正在擷取的
 
 ### 由於大型節點屬性值而導致擷取失敗 {#ingestion-failure-due-to-large-node-property-values}
 
+>[!CONTEXTUALHELP]
+>id="aemcloud_cam_ingestion_troubleshooting_bson"
+>title="大型節點屬性"
+>abstract="擷取失敗的常見原因是超過節點屬性值的大小上限。 請依照檔案（包括與BPA報告相關的檔案）來補救這種情況。"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html" text="移轉必要條件"
+
 儲存在MongoDB中的節點屬性值不能超過16 MB。 如果節點值超過支援的大小，擷取會失敗，且記錄會包含 `BSONObjectTooLarge` 錯誤並指定哪個節點超過最大值。 這是MongoDB限制。
 
 請參閱 `Node property value in MongoDB` 中的附註 [內容轉移工具的先決條件](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md) 以取得詳細資訊，以及可協助尋找所有大型節點的Oak工具連結。 修正所有大型節點後，請再次執行擷取和擷取。
 
 ### 內嵌已取消 {#ingestion-rescinded}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_cam_ingestion_troubleshooting_rescinded"
+>title="內嵌已取消"
+>abstract="內嵌正在等候的擷取未成功完成。 內嵌已取消，因為無法執行。"
 
 使用執行中的擷取作為來源移轉集而建立的擷取會耐心等待，直到擷取成功，而且在那一刻會正常開始。 如果擷取失敗或停止，則擷取及其索引工作將不會開始，但會取消。 在這種情況下，請檢查擷取以確定失敗的原因，修正問題並重新開始擷取。 執行固定擷取後，即可排程新的內嵌。
 
