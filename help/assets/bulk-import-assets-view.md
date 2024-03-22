@@ -2,10 +2,10 @@
 title: 使用 Assets 檢視大量匯入資產
 description: 了解如何使用新的 Assets UI (Assets 檢視) 大量匯入資產。此功能可讓管理員將大量資產從資料來源匯入到 AEM Assets。
 exl-id: 10f9d679-7579-4650-9379-bc8287cb2ff1
-source-git-commit: 88198e9333a7f706fc99e487d8cde84647fa111f
+source-git-commit: cd4435247505e5067d09631b29a29e26d60eb09a
 workflow-type: tm+mt
-source-wordcount: '1747'
-ht-degree: 87%
+source-wordcount: '1761'
+ht-degree: 69%
 
 ---
 
@@ -32,7 +32,7 @@ AEM Assets 檢視中的大量匯入能讓管理員將大量資產從資料來源
 | Azure | <ul> <li>Azure 儲存體帳戶 </li> <li> Azure Blob 容器 <li> 根據驗證模式的 Azure 存取金鑰或 SAS 權杖 </li></ul> |
 | AWS | <ul> <li>AWS 區域 </li> <li> AWS 儲存貯體 <li> AWS 存取金鑰 </li><li> AWS 存取密碼 </li></ul> |
 | Google 雲端 | <ul> <li>GCP 貯體 </li> <li> GCP 服務帳戶電子郵件 <li> GCP 服務帳戶私密金鑰</li></ul> |
-| Dropbox | <ul> <li>Dropbox 用戶端 ID （應用程式鍵） </li> <li> Dropbox使用者端密碼（應用程式密碼）</li></ul> |
+| Dropbox | <ul> <li>Dropbox的使用者端ID （應用程式金鑰） </li> <li> Dropbox使用者端密碼（應用程式密碼）</li></ul> |
 | OneDrive | <ul> <li>OneDrive 租用戶 ID  </li> <li> OneDrive 用戶端 ID</li><li> OneDrive 用戶端密碼</li></ul> |
 
 除了這些根據資料來源的先決條件之外，您也必須了解資料來源中可用的來源資料夾名稱，其中包含需要匯入到 AEM Assets 的所有資產。
@@ -43,7 +43,7 @@ AEM Assets 檢視中的大量匯入能讓管理員將大量資產從資料來源
 
 執行以下步驟：
 
-1. 登入您的 [Dropbox 帳戶](https://www.dropbox.com/developers)並按一下「**[!UICONTROL 建立應用程式]**」。
+1. 登入您的 [Dropbox帳戶](https://www.dropbox.com/developers) 並按一下 **[!UICONTROL 建立應用程式]**. <br>如果您使用企業Dropbox帳戶，您必須擁有內容管理員角色的存取權。
 
 1. 在「**[!UICONTROL 選擇 API]**」區段中，選取唯一可用的選項按鈕。
 
@@ -55,11 +55,7 @@ AEM Assets 檢視中的大量匯入能讓管理員將大量資產從資料來源
 
 1. 指定應用程式的名稱，然後按一下「**[!UICONTROL 建立應用程式]**」。
 
-1. 在應用程式的「**[!UICONTROL 設定]**」索引標籤中，將以下內容新增至「**[!UICONTROL 重新導向 URI]**」區段：
-
-   * https://exc-unifiedcontent.experience.adobe.net
-
-   * https://exc-unifiedcontent.experience-stage.adobe.net (僅對中繼環境有效)
+1. 在 **[!UICONTROL 設定]** 索引標籤中，將https://experience.adobe.com新增至 **[!UICONTROL 重新導向URI]** 區段。
 
 1. 複製「**[!UICONTROL 應用程式金鑰]**」和「**[!UICONTROL 應用程式密碼]**」欄位的值。在 AEM Assets 中設定大量匯入工具時需要這些值。
 
@@ -79,47 +75,47 @@ AEM Assets 檢視中的大量匯入能讓管理員將大量資產從資料來源
 
 在將 OneDrive 帳戶中的資產匯入到 AEM Assets 之前，請先建立並設定 OneDrive 開發人員應用程式。
 
-執行以下步驟：
+### 建立應用程式
 
-1. 登入您的 [OneDrive 帳戶](https://portal.azure.com/#view/Microsoft_AAD_RegisteredApps/ApplicationsListBlade)，然後按一下「**[!UICONTROL 新註冊]**」。
+1. 登入您的 [OneDrive帳戶](https://portal.azure.com/#view/Microsoft_AAD_RegisteredApps/ApplicationsListBlade) 並按一下 **[!UICONTROL 新註冊]**.
 
-1. 指定應用程式的名稱，從「**[!UICONTROL 支援的帳戶類型]**」中選取「**[!UICONTROL 僅此組織目錄中的帳戶 (僅限 Adobe - 單一租用戶)]**」，然後按一下「**[!UICONTROL 註冊]**」。應用程式建立成功。
-
-1. 複製應用程式用戶端 ID 和租用戶 ID 欄位的值。在 AEM Assets 中設定大量匯入工具時需要這些值。
-
-1. 請執行下列步驟以新增憑證：
-   1. 在應用程式概觀頁面上，按一下「**[!UICONTROL 新增憑證或密碼]**」，然後按一下「**[!UICONTROL 新用戶端密碼]**」。
-   1. 指定用戶端密碼描述和有效期，然後按一下「**[!UICONTROL 新增]**」。
-   1. 建立用戶端密碼後，複製「**[!UICONTROL 值]**」欄位 (不要複製「密碼 ID」欄位)。在 AEM Assets 中設定大量匯入工具時需要此值。
+1. 指定應用程式的名稱，選取 **[!UICONTROL 僅此組織目錄中的帳戶(僅Adobe — 單一租使用者)]** 從 **[!UICONTROL 支援的帳戶型別]**.
 
 1. 執行下列步驟以新增重新導向 URI：
-   1. 在應用程式概觀頁面上，按一下「**[!UICONTROL 新增重新導向 URI]** > **[!UICONTROL 新增平台]** > **[!UICONTROL Web]**」。
-   1. 將以下內容新增至「**[!UICONTROL 重新導向 URI]**」區段：
 
-      * https://exc-unifiedcontent.experience.adobe.net
+   1. 在 **[!UICONTROL 選取平台]** 下拉式功能表，選取 **[!UICONTROL Web]**.
 
-      * https://exc-unifiedcontent.experience-stage.adobe.net (僅對中繼環境有效)
+   1. 將https://experience.adobe.com新增至 **[!UICONTROL 重新導向URI]** 區段。
+   <!-- Add the first URI and click **[!UICONTROL Configure]** to add it. You can add more by clicking **[!UICONTROL Add URI]** option available in the **[!UICONTROL Web]** section on the **[!UICONTROL Authentication]** page. -->
 
-      新增第一個 URI 並按一下「**[!UICONTROL 設定]**」完成新增。您可以按一下「**[!UICONTROL 驗證]**」頁面「**[!UICONTROL Web]**」區段中的「**[!UICONTROL 新增 URI]**」選項來新增更多。
+1. 按一下「**[!UICONTROL 註冊]**」。應用程式建立成功。
 
-1. 執行下列步驟以新增應用程式的 API 權限：
-   1. 按一下左窗格中的「**[!UICONTROL API 權限]**」，然後按一下「**[!UICONTROL 新增權限]**」。
-   1. 按一下「**[!UICONTROL Microsoft Graph]** > **[!UICONTROL 委派的權限]**」。「**[!UICONTROL 選取權限]**」區段會顯示可用權限。
-   1. 從 `OpenId permissions` 選取 `offline_access` 權限，從 `Files` 選取 `Files.ReadWrite.All` 權限。
-   1. 按一下「**[!UICONTROL 新增權限]**」以儲存更新。
+1. 複製 **[!UICONTROL 應用程式（使用者端） ID]** 和 **[!UICONTROL 目錄（租使用者） ID]** 欄位。 在 AEM Assets 中設定大量匯入工具時需要這些值。
 
+1. 按一下 **[!UICONTROL 新增憑證或密碼]** 對應至 **[!UICONTROL 使用者端認證]** 選項。
 
+1. 按一下 **[!UICONTROL 新使用者端密碼]**，提供使用者端密碼說明，到期日並按一下 **[!UICONTROL 新增]**.
 
+1. 建立用戶端密碼後，複製「**[!UICONTROL 值]**」欄位 (不要複製「密碼 ID」欄位)。在 AEM Assets 中設定大量匯入工具時需要此值。
+
+### 新增API許可權
+
+執行下列步驟以新增應用程式的 API 權限：
+
+1. 按一下左窗格中的「**[!UICONTROL API 權限]**」，然後按一下「**[!UICONTROL 新增權限]**」。
+1. 按一下「**[!UICONTROL Microsoft Graph]** > **[!UICONTROL 委派的權限]**」。「**[!UICONTROL 選取權限]**」區段會顯示可用權限。
+1. 從 `OpenId permissions` 選取 `offline_access` 權限，從 `Files` 選取 `Files.ReadWrite.All` 權限。
+1. 按一下「**[!UICONTROL 新增權限]**」以儲存更新。
 
 ## 建立大量匯入設定 {#create-bulk-import-configuration}
 
-執行以下步驟以建立大量匯入設定：
+執行以下步驟，在中建立大量匯入設定 [!DNL Experience Manager Assets]：
 
-1. 瀏覽到「**[!UICONTROL 設定]** > **[!UICONTROL 大量匯入]**」，並按一下「**[!UICONTROL 建立匯入]**」。
-1. 選取資料來源。可用選項包括 Azure、AWS、Google 雲端和 Dropbox。
+1. 按一下 **[!UICONTROL 大量匯入]** 在左窗格中並按一下 **[!UICONTROL 建立匯入]**.
+1. 選取資料來源。可用的選項包括 **[!UICONTROL Azure]**， **[!UICONTROL AWS]**， **[!UICONTROL Google Cloud]**， **[!UICONTROL Dropbox]** 和 **[!UICONTROL OneDrive]**.
 1. 在「**[!UICONTROL 名稱]**」欄位中為大量匯入設定指定名稱。
 1. 指定資料來源特定的認證，如[先決條件](#prerequisites)中所述。
-1. 提供資料夾的名稱，該資料夾包含資料來源中的資產。 **[!UICONTROL 來源資料夾]** 欄位。
+1. 提供根資料夾的名稱，該資料夾包含資料來源中的資產，位於 **[!UICONTROL 來源資料夾]** 欄位。
 
    >[!NOTE]
    >
@@ -131,7 +127,7 @@ AEM Assets 檢視中的大量匯入能讓管理員將大量資產從資料來源
 1. 選取「**[!UICONTROL 匯入模式]**」。選取「**[!UICONTROL 跳過]**」、「**[!UICONTROL 取代]**」或「**[!UICONTROL 建立版本]**」。跳過模式是預設值，在此模式下，擷取工具會跳過匯入資產 (如果已存在)。
    ![匯入來源詳細資訊](/help/assets/assets/bulk-import-source-details.png)
 
-1. (可選) 在中繼資料檔案欄位中指定要匯入的中繼資料檔案 (以 CSV 格式提供)，然後按一下「**[!UICONTROL 下一步]**」，瀏覽至「**[!UICONTROL 位置和篩選器]**」。
+1. （選用）指定要匯入的中繼資料檔案（以CSV格式提供），請 **[!UICONTROL 中繼資料檔案]** 欄位。 中繼資料來源檔案必須位於來源資料夾中。 按一下 **[!UICONTROL 下一個]** 導覽至 **[!UICONTROL 位置和篩選器]**.
 1. 要使用「**[!UICONTROL 資產目標資料夾]**」欄位在所要匯入資產的 DAM 中定義位置，請指定路徑。 例如，`/content/dam/imported_assets`。
 1. (可選) 在「**[!UICONTROL 選擇篩選器]**」區段中，提供資產的檔案大小下限 (以 MB 為單位)，以便將它們包含在「**[!UICONTROL 按大小下限篩選]**」欄位中的擷取程序中。
 1. (可選) 提供資產的檔案大小上限 (以 MB 為單位)，以納入「**[!UICONTROL 按大小上限篩選]**」欄位的擷取程序。
@@ -141,9 +137,13 @@ AEM Assets 檢視中的大量匯入能讓管理員將大量資產從資料來源
 
    ![大量匯入篩選器](assets/bulk-import-location.png)
 
-1. 按一下「**[!UICONTROL 下一步]**」。選取「**[!UICONTROL 儲存並執行匯入]**」以儲存設定並執行大量匯入。選取「**[!UICONTROL 儲存匯入]**」暫時儲存設定，以便稍後執行。
+1. 按一下「**[!UICONTROL 下一步]**」。根據您的偏好設定選取下列其中一個選項：
 
-   ![執行大量匯入](assets/bulk-import-run.png)
+   * **[!UICONTROL 儲存匯入]** 儲存設定，以便稍後執行。
+   * **[!UICONTROL 儲存並執行匯入]** 以儲存組態並執行大量匯入。
+   * **[!UICONTROL 儲存並排程匯入]** 以儲存組態並排程稍後的大量匯入。 您可以選擇大量匯入的頻率，並設定匯入的日期和時間。 大量匯入將在設定的日期和時間以選取的頻率執行。
+
+   ![執行大量匯入](assets/save-run.png)
 
 1. 按一下「**[!UICONTROL 儲存]**」執行所選選項。
 
@@ -157,27 +157,22 @@ AEM Assets 檢視中的大量匯入能讓管理員將大量資產從資料來源
 
 ## 檢視現有的大量匯入設定 {#view-import-configuration}
 
-如果您在建立設定後選擇儲存設定，則該設定會顯示在「**[!UICONTROL 已儲存的匯入]**」標籤中。
+若要檢視現有的大量匯入，請選取 **[!UICONTROL 大量匯入]** 選項。 大量匯入頁面隨即顯示，其中包含 **[!UICONTROL 已執行的匯入]**. <br>
+您也可以檢視 **[!UICONTROL 儲存的匯入]** 和 **[!UICONTROL 已排程的匯入]** 從下拉式清單選項中選取。
 
-![儲存大量匯入設定](assets/bulk-import-save.png)
-
-如果您選擇儲存並執行匯入，則匯入設定會顯示在「**[!UICONTROL 已執行的匯入]**」標籤中。
-
-![儲存大量匯入設定](assets/bulk-import-executed.png)
-
-如果您安排了匯入的排程，它會顯示在「**[!UICONTROL 已排定的匯入]**」標籤中。
+![儲存大量匯入設定](assets/bulk-import-options.png)
 
 ## 編輯大量匯入設定 {#edit-import-configuration}
 
-若要編輯組態詳細資訊，請按一下與組態名稱相對應的「更多選項(...)」，然後按一下 **[!UICONTROL 編輯]**. 執行編輯操作時無法編輯設定的標題和匯入資料來源。您可以使用「已執行」、「已排定」或「已儲存的匯入」標籤來編輯設定。
+若要編輯組態詳細資訊，請按一下 ![「更多」圖示](assets/do-not-localize/more-icon.svg) 與設定名稱相對應，然後按一下 **[!UICONTROL 編輯]**. 執行編輯操作時無法編輯設定的標題和匯入資料來源。您可以使用「已執行」、「已排定」或「已儲存的匯入」標籤來編輯設定。
 
-![編輯大量匯入設定](assets/bulk-import-edit.png)
+![編輯大量匯入設定](assets/edit-bulk-import.png)
 
 ## 安排單次或定期匯入的排程 {#schedule-imports}
 
 要安排單次或定期大量匯入的排程，請執行以下步驟：
 
-1. 按一下「更多選項(...)」(More Options (...))，其對應至 **[!UICONTROL 已執行的匯入]** 或 **[!UICONTROL 儲存的匯入]** 標籤並按一下 **[!UICONTROL 排程]**. 您也可以透過瀏覽到「**[!UICONTROL 已排定的匯入]**」標籤並按一下「**[!UICONTROL 排程]**」重新排程現有已排定的匯入。
+1. 按一下 ![「更多」圖示](assets/do-not-localize/more-icon.svg) 與中可用的設定名稱相對應 **[!UICONTROL 已執行的匯入]** 或 **[!UICONTROL 儲存的匯入]** 標籤並按一下 **[!UICONTROL 排程]**. 您也可以透過瀏覽到「**[!UICONTROL 已排定的匯入]**」標籤並按一下「**[!UICONTROL 排程]**」重新排程現有已排定的匯入。
 
 1. 設定單次擷取或排定每小時、每天或每週排程。按一下「**[!UICONTROL 提交]**」。
 
@@ -185,21 +180,21 @@ AEM Assets 檢視中的大量匯入能讓管理員將大量資產從資料來源
 
 ## 執行匯入健康情況檢查 {#import-health-check}
 
-若要驗證與資料來源的連線，請按一下與組態名稱相對應的[更多選項] (...)，然後按一下 **[!UICONTROL 檢查]**. 如果連線成功，Experience Manager Assets 會顯示以下訊息：
+若要驗證與資料來源的連線，請按一下 ![「更多」圖示](assets/do-not-localize/more-icon.svg) 與設定名稱相對應，然後按一下 **[!UICONTROL 檢查]**. 如果連線成功，Experience Manager Assets 會顯示以下訊息：
 
 ![大量匯入健全檢查](assets/bulk-import-health-check.png)
 
 ## 在執行匯入之前執行試執行 {#dry-run-bulk-import}
 
-按一下與組態名稱相對應的「更多選項(...)」，然後按一下 **[!UICONTROL 練習]** 以叫用大量匯入工作的測試回合。 Experience Manager Assets 會顯示以下有關該大量匯入作業的詳細資訊：
+按一下 ![「更多」圖示](assets/do-not-localize/more-icon.svg) 與設定名稱相對應，然後按一下 **[!UICONTROL 練習]** 以叫用大量匯入工作的測試回合。 Experience Manager Assets 會顯示以下有關該大量匯入作業的詳細資訊：
 
 ![大量匯入健康情況檢查](assets/bulk-import-dry-run.png)
 
 ## 執行大量匯入 {#run-bulk-import}
 
-如果您在建立組態時已儲存匯入，您可以瀏覽至「已儲存的匯入」標籤，按一下與組態相對應的「更多選項(...)」，然後按一下 **[!UICONTROL 執行]**.
+如果您在建立組態時已儲存匯入，您可以瀏覽至「已儲存的匯入」標籤，按一下 ![「更多」圖示](assets/do-not-localize/more-icon.svg) 圖示與設定相對應，然後按一下 **[!UICONTROL 執行]**.
 
-同樣地，如果您需要執行已執行的匯入，請瀏覽至「已執行的匯入」標籤，按一下與組態名稱對應的「更多選項(...)」，然後按一下 **[!UICONTROL 執行]**.
+同樣地，如果您需要執行已執行的匯入，請導覽至已執行的匯入索引標籤，按一下 ![「更多」圖示](assets/do-not-localize/more-icon.svg) 與設定名稱相對應，然後按一下 **[!UICONTROL 執行]**.
 
 ## 停止或排程進行中的匯入 {#schedule-stop-ongoing-report}
 
@@ -209,11 +204,14 @@ AEM Assets 檢視中的大量匯入能讓管理員將大量資產從資料來源
 
 您也可以透過按一下「**[!UICONTROL 檢視資產]**」檢視目標資料夾中已匯入的資產。
 
-
 ## 刪除大量匯入設定 {#delete-bulk-import-configuration}
 
-按一下「更多選項(...)」(More Options (...))，這些選項與中現有的組態名稱相對應 **[!UICONTROL 已執行的匯入]**， **[!UICONTROL 已排程的匯入]**，或 **[!UICONTROL 儲存的匯入]** 標籤並按一下 **[!UICONTROL 刪除]** 刪除大量匯入組態。
+按一下 ![「更多」圖示](assets/do-not-localize/more-icon.svg) 對應至中現有的設定名稱 **[!UICONTROL 已執行的匯入]**， **[!UICONTROL 已排程的匯入]**，或 **[!UICONTROL 儲存的匯入]** 標籤並按一下 **[!UICONTROL 刪除]** 刪除大量匯入組態。
 
 ## 執行大量匯入後瀏覽至資產 {#view-assets-after-bulk-import}
 
-若要檢視執行「大量匯入」工作後匯入資產的「資產」目標位置，請按一下與組態名稱相對應的「更多選項(...)」，然後按一下 **[!UICONTROL 檢視資產]**.
+若要檢視執行「大量匯入」工作後匯入資產的資產目標位置，請按一下 ![「更多」圖示](assets/do-not-localize/more-icon.svg) 與設定名稱相對應，然後按一下 **[!UICONTROL 檢視資產]**.
+
+## 影片：使用資產檢視大量匯入資產
+
+>[!VIDEO](https://video.tv.adobe.com/v/3428012)
