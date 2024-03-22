@@ -3,7 +3,7 @@ title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 最新發行說明�
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 最新發行說明。'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 8a64e2ca1dc3987558c36346422ee43d202d9ecc
+source-git-commit: d0b7ec258a7a2c1d83f4d9a8983945a81c83aa2f
 workflow-type: tm+mt
 source-wordcount: '1020'
 ht-degree: 96%
@@ -124,4 +124,3 @@ Dynatrace 客戶可以監控他們的 AEM 使用情況。[了解如何](/help/im
 ## 移轉工具 {#migration-tools}
 
 您可以在[這裡](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)找到移轉工具版本的完整清單。
-

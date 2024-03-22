@@ -2,7 +2,7 @@
 title: 流量篩選規則包括 WAF 規則
 description: 設定流量篩選規則，包括 Web 應用程式防火牆 (WAF) 規則
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: 9f23b91df3139115ca442de03457bb50a1e1cb71
+source-git-commit: 38a16251372ee6ba77687f524e5057e00f16f58e
 workflow-type: tm+mt
 source-wordcount: '3669'
 ht-degree: 91%
@@ -24,7 +24,7 @@ ht-degree: 91%
 
 流量篩選規則可以透過 Cloud Manager 設定管道部署到生產 (非沙箱) 程式中的開發、中繼和生產環境類型。未來將推出對 RDE 的支援。
 
-[按照教學課程進行操作](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview.html)，快速建立有關此功能的具體專業知識。
+[按照教學課程進行操作](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview)，快速建立有關此功能的具體專業知識。
 
 >[!NOTE]
 >有興趣使用其他選項在CDN設定流量，包括修改要求/回應、宣告重新導向，以及代理至非AEM來源？ [瞭解如何並試用它](/help/implementing/dispatcher/cdn-configuring-traffic.md) 加入率先採用者計畫。
