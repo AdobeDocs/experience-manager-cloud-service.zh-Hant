@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的運作方式以及該軟體可以為您做哪些事。
 breadcrumb-title: 使用手冊
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 2c3be4b60396c5cf57c327fd5b858a3af65397f2
+source-git-commit: 96ec736b5774fc48d006264b316e390bf022c0e9
 workflow-type: tm+mt
-source-wordcount: '4829'
+source-wordcount: '4828'
 ht-degree: 99%
 
 ---
@@ -572,7 +572,7 @@ ht-degree: 99%
       + [更新 [!DNL Workfront for Experience Manager enhanced connector]](/help/assets/update-workfront-enhanced-connector.md)
 
    + 整合 Adobe Express{#integration-adobe-express}
-      + [適用於 Adobe Express 的 AEM Assets 附加元件](/help/assets/addon-adobe-express.md)
+      + [與Adobe Express原生整合](/help/assets/native-integration-adobe-express.md)
 
    + 與 Creative Cloud {#integration-creative-cloud} 整合
       + [將 AEM Assets 連接到 Creative Cloud](/help/assets/connect-assets-with-creative-cloud.md)

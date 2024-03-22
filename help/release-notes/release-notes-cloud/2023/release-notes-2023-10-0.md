@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2023.10.0 版發行說明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2023.10.0 版發行說明。'
 exl-id: 81a6cbd2-7101-429b-8572-2650c5bea963
-source-git-commit: 811a8f4d83a1034737c23b1707a24b52742fef55
+source-git-commit: b323fbe3a09de220c61c9b409d8754e43fe0a8d3
 workflow-type: tm+mt
 source-wordcount: '918'
-ht-degree: 93%
+ht-degree: 91%
 
 ---
 
@@ -41,7 +41,7 @@ ht-degree: 93%
 
 ### 新功能 {#assets-features}
 
-**適用於 Adob&#x200B;&#x200B;e Express 的 AEM Assets 附加元件**：Experience Manager Assets 現在提供[適用於 Adobe Express 的附加元件](/help/assets/addon-adobe-express.md)。此附加元件可讓您從 Adobe Express 使用者介面直接存取儲存在 Experience Manager Assets 的資源。您可以將 AEM Assets 中管理的內容放置在 Express 畫布中，然後將新的或編輯的內容儲存在 AEM Assets 存放庫中。此附加元件提供以下主要優點：
+**適用於Adobe Express的AEM Assets附加元件**：Experience Manager Assets現在提供Adobe Express的附加元件。 此附加元件可讓您從 Adobe Express 使用者介面直接存取儲存在 Experience Manager Assets 的資源。您可以將 AEM Assets 中管理的內容放置在 Express 畫布中，然後將新的或編輯的內容儲存在 AEM Assets 存放庫中。此附加元件提供以下主要優點：
 
 * 透過在 AEM 中編輯和儲存新資源來提高內容重複使用率
 
