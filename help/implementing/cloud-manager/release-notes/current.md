@@ -4,9 +4,9 @@ description: 以下是 AEM as a Cloud Service 中 Cloud Manager 2024.3.0 的發�
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
 source-git-commit: 4bae300f653ae6b84cf798f4fe9e8c9326963718
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '648'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -25,8 +25,8 @@ AEM as a Cloud Service 中的 Cloud Manager 版本 2024.3.0 發行日期是 2024
 
 ## 新增功能 {#what-is-new}
 
-* [您現在可以建立進階網路基礎結構](/help/security/configuring-advanced-networking.md) 在您的Cloud Manager方案中，並使用Cloud Manager UI以自助方式設定您的環境。
-* [管道執行步驟詳細資料](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#view-details) 將包括目前的部署步驟以及預計要遵循的步驟。
+* [您現在可以建立進階網路基礎設施](/help/security/configuring-advanced-networking.md) (在您的 Cloud Manager 程式中)，並使用 Cloud Manager UI 以自助服務方式設定您的環境。
+* [管道執行步驟詳細資訊](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#view-details)將包括目前的部署步驟以及預期的後續步驟。
 
 ## 早期採用計劃 {#early-adoption}
 
@@ -69,4 +69,4 @@ AEM as a Cloud Service 中的 Cloud Manager 版本 2024.3.0 發行日期是 2024
 
 ## 錯誤修正 {#bug-fixes}
 
-* 已修正使用者定義 `COMMERCE_ENDPOINT` 變數，結尾有空格，則Dispatcher無法載入。
+* 修復使用者定義結尾帶有空格的 `COMMERCE_ENDPOINT` 變數而使調度程序無法載入的錯誤。
