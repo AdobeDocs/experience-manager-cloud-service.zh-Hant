@@ -4,13 +4,13 @@ description: 使用試算表和最適化表單區塊欄位更快地製作強大�
 feature: Edge Delivery Services
 exl-id: 0643aee5-3a7f-449f-b086-ed637ae53b5a
 source-git-commit: 5eee563a9a425ef187afed69a8159d8b1298dad7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1001'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
-# 設定您的Google工作表或Microsoft Excel檔案以開始接受資料
+# 設定您的 Google 表單或 Microsoft Excel 檔案以開始接受資料
 
 
  [建立並預覽表單](/help/edge/docs/forms/create-forms.md)後，就可以啟用對應的試算表以開始接收資料。您可以手動啟用試算表以接受資料，或使用管理 API 啟用試算表以接受資料。
