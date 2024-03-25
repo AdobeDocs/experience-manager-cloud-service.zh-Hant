@@ -685,7 +685,7 @@ ht-degree: 99%
             + [建立無障礙的最適化表單](/help/forms/creating-accessible-adaptive-forms.md)
          + [設定表單入口網站](/help/forms/configure-forms-portal.md)
          + [建立和管理評論](/help/forms/create-reviews-forms.md)
-      + [調適型表單關鍵字](/help/forms/adaptive-forms-keywords.md)
+      + [最適化表單關鍵字](/help/forms/adaptive-forms-keywords.md)
       + [預覽表單](/help/forms/previewing-forms.md)
    + 以 Forms 為中心的工作流程 {#create-form-centric-workflows}
       + [在工作流程中使用以 Forms 為中心的步驟 + 步驟參考](/help/forms/aem-forms-workflow-step-reference.md)
@@ -1146,8 +1146,8 @@ ht-degree: 99%
       + [將 Dispatcher 設定從 AMS 移轉到 AEM as a Cloud Service](/help/implementing/dispatcher/ams-aem.md)
       + [使用 Dispatcher 工具舊版進行驗證和偵錯](/help/implementing/dispatcher/validation-debug-legacy.md)
       + [AEM as a Cloud Service 中的 CDN](/help/implementing/dispatcher/cdn.md)
-      + [在CDN設定流量](/help/implementing/dispatcher/cdn-configuring-traffic.md)
-      + [設定CDN錯誤頁面](/help/implementing/dispatcher/cdn-error-pages.md)
+      + [設定 CDN 上的流量](/help/implementing/dispatcher/cdn-configuring-traffic.md)
+      + [設定 CDN 錯誤頁面](/help/implementing/dispatcher/cdn-error-pages.md)
       + [AEM as a Cloud Service 中的快取](/help/implementing/dispatcher/caching.md)
 + 連接器 {#connectors}
    + [實作 AEM 連接器](/help/connectors/implement.md)
