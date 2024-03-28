@@ -5,7 +5,7 @@ exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 source-git-commit: de05abac3620b254343196a283cef198f434cfca
 workflow-type: tm+mt
 source-wordcount: '2752'
-ht-degree: 6%
+ht-degree: 11%
 
 ---
 
@@ -153,13 +153,13 @@ ht-degree: 6%
 
 ![影像](/help/journey-migration/content-transfer-tool/assets-ctt/error_releaseorchestrator_active.png)
 
-### 由於違反唯一性限制，追加擷取失敗 {#top-up-ingestion-failure-due-to-uniqueness-constraint-violation}
+### 由於違反唯一條件限制而導致填滿擷取失敗 {#top-up-ingestion-failure-due-to-uniqueness-constraint-violation}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_cam_ingestion_troubleshooting_uuid"
->title="唯一性限制違規"
->abstract="非擦去擷取失敗的常見原因是節點ID發生衝突。 只有一個衝突節點可以存在。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html#top-up-ingestion-process" text="追加擷取"
+>title="違反唯一條件限制"
+>abstract="非擦除擷取失敗的常見原因是節點 ID 衝突。只能存在一個衝突節點。"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html#top-up-ingestion-process" text="填滿擷取"
 
 造成問題的常見原因 [追加擷取](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) 失敗是節點id中的衝突。 若要識別此錯誤，請使用Cloud Acceleration Manager UI下載擷取記錄，並尋找類似以下的專案：
 
@@ -173,13 +173,13 @@ AEM中的每個節點都必須有唯一的uuid。 此錯誤指出正在擷取的
 
 此衝突必須手動解決。 熟悉內容的人必須決定必須刪除兩個節點中的哪一個，同時留意參考該內容的其他內容。 解決方案可能要求再次執行追加擷取，而不需要違反規定的節點。
 
-### 由於無法刪除參照的節點，追加擷取失敗 {#top-up-ingestion-failure-due-to-unable-to-delete-referenced-node}
+### 無法刪除引用節點而導致填滿擷取失敗 {#top-up-ingestion-failure-due-to-unable-to-delete-referenced-node}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_cam_ingestion_troubleshooting_referenced_node"
->title="無法刪除參考的節點"
->abstract="非擦去擷取失敗的常見原因是目的地執行個體上特定節點的版本衝突。 必須修正節點的版本。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html#top-up-ingestion-process" text="追加擷取"
+>title="無法刪除引用的節點"
+>abstract="非擦除擷取失敗的常見原因是目標實例上特定節點的版本衝突。必須修復節點的版本。"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html#top-up-ingestion-process" text="填滿擷取"
 
 另一個常見原因 [追加擷取](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) 失敗是目的地執行個體上特定節點的版本衝突。 若要識別此錯誤，請使用Cloud Acceleration Manager UI下載擷取記錄，並尋找類似以下的專案：
 
@@ -191,24 +191,24 @@ AEM中的每個節點都必須有唯一的uuid。 此錯誤指出正在擷取的
 
 最佳實務指出，如果 **非擦去** 內嵌必須使用包含版本的移轉集執行，儘可能減少修改目的地上的內容至關重要，直到移轉歷程完成。 否則，這些衝突可能會發生。
 
-### 由於大型節點屬性值而導致擷取失敗 {#ingestion-failure-due-to-large-node-property-values}
+### 由於節點屬性值過大而導致擷取失敗 {#ingestion-failure-due-to-large-node-property-values}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_cam_ingestion_troubleshooting_bson"
->title="大型節點屬性"
->abstract="擷取失敗的常見原因是超過節點屬性值的大小上限。 請依照檔案（包括與BPA報告相關的檔案）來補救這種情況。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html" text="移轉必要條件"
+>title="大節點屬性"
+>abstract="擷取失敗的常見原因是超過節點屬性值的大小上限。請遵依文件 (包括與 BPA 報告相關的文件) 說明來修復這種情況。"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html" text="移轉先決條件"
 
 儲存在MongoDB中的節點屬性值不能超過16 MB。 如果節點值超過支援的大小，擷取會失敗，且記錄會包含 `BSONObjectTooLarge` 錯誤並指定哪個節點超過最大值。 這是MongoDB限制。
 
 請參閱 `Node property value in MongoDB` 中的附註 [內容轉移工具的先決條件](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md) 以取得詳細資訊，以及可協助尋找所有大型節點的Oak工具連結。 修正所有大型節點後，請再次執行擷取和擷取。
 
-### 內嵌已取消 {#ingestion-rescinded}
+### 擷取已撤銷 {#ingestion-rescinded}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_cam_ingestion_troubleshooting_rescinded"
->title="內嵌已取消"
->abstract="內嵌正在等候的擷取未成功完成。 內嵌已取消，因為無法執行。"
+>title="擷取已撤銷"
+>abstract="擷取等待的摘取未成功完成。由於無法執行，擷取已被撤銷。"
 
 使用執行中的擷取作為來源移轉集而建立的擷取會耐心等待，直到擷取成功，而且在那一刻會正常開始。 如果擷取失敗或停止，則擷取及其索引工作將不會開始，但會取消。 在這種情況下，請檢查擷取以確定失敗的原因，修正問題並重新開始擷取。 執行固定擷取後，即可排程新的內嵌。
 
