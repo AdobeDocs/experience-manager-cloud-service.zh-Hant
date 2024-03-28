@@ -3,9 +3,9 @@ title: 過時和移除的功能
 description: 特定於  [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 中已過時和已移除功能的版本注意事項。
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 source-git-commit: b675ff42eeaeb124e8789480a51684d359429d15
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2146'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -42,7 +42,7 @@ Adobe 持續評估產品功能，以更新或替代的方式來改善或取代�
 | [!DNL Assets] | FFmpeg 影片轉碼。 | 若要產生 FFmpeg 縮圖，請使用[資產微服務](/help/assets/asset-microservices-overview.md)。若是 FFmpeg 轉碼，請使用 [Dynamic Media](/help/assets/manage-video-assets.md)。 |
 | [!DNL Foundation] | 複寫代理程式的「散發」標籤下的樹狀結構複寫 UI (2021 年 9 月 30 日後移除) | [管理出版物](/help/operations/replication.md#manage-publication)或[發佈內容樹工作流程](/help/operations/replication.md#publish-content-tree-workflow)方法 |
 | [!DNL Foundation] | 複寫代理程式管理員畫面的「散發」標籤和複寫 API 都不能用於複寫超過 10MB 的內容套件。請改用[管理出版物](/help/operations/replication.md#manage-publication)或[發佈內容樹工作流程](/help/operations/replication.md#publish-content-tree-workflow) |
-| [!DNL Foundation] | 使用從Adobe Developer主控台專案產生的認證進行整合，將逐漸失去對服務帳戶(JWT)認證的支援。 在2024年5月1日或之後，無法在Adobe Developer主控台中建立新的服務帳戶(JWT)憑證，不過現有服務帳戶(JWT)憑證在2025年1月1日之前仍可用於已設定的整合，屆時現有的服務帳戶(JWT)憑證將不再有效，客戶必須移轉至OAuth伺服器對伺服器憑證。 [深入了解](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/jwt-credentials-deprecation-in-adobe-developer-console)。 | [移轉](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#migration-overview) 至OAuth伺服器對伺服器認證。 |
+| [!DNL Foundation] | 使用從 Adob&#x200B;&#x200B;e Developer Console 專案產生的憑證來整合，將逐漸失去對服務帳戶 (JWT) 憑證的支援。2024 年 5 月 1 日或之後，無法在 Adobe Developer Console 中建立新的服務帳戶(JWT) 憑證，但在 2025 年 1 月 1 日之前，現有服務帳戶 (JWT) 憑證仍可用於已設定的整合，到那時候，現有服務帳戶 (JWT) 憑證將不再有效，且客戶必須移轉到 OAuth Server-to-Server 憑證。[了解更多](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/jwt-credentials-deprecation-in-adobe-developer-console)。 | [移轉](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#migration-overview)至 OAuth Server-to-Server 憑證。 |
 
 ## 移除的功能 {#removed-features}
 

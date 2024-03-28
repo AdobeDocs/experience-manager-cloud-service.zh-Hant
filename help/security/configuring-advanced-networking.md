@@ -3,9 +3,9 @@ title: 為 AEM as a Cloud Service 設定進階網路
 description: 了解如何為 AEM as a Cloud Service 設定進階網路功能，例如 VPN 或彈性或專用輸出 IP 位址等
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
 source-git-commit: 01b55f2ff06d3886724dbb2c25d0c109a5ab6aec
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '5142'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -53,7 +53,7 @@ AEM as a Cloud Service 提供以下進階網路選項：
 使用進階網路功能需要兩個步驟：
 
 1. 設定進階網路選項必須先在程式層級完成，無論是 [彈性連接埠輸出、](#flexible-port-egress) [專用輸出 IP 位址](#dedicated-egress-ip-address)或 [VPN](#vpn) 都一樣 。
-1. 若要使用，進階網路選項必須 [已在環境層級啟用。](#enabling)
+1. 若要使用進階網路選項，必須[在環境層級啟用。](#enabling)
 
 這兩個步驟都可以使用 Cloud Manager UI 或 Cloud Manager API 來完成。
 
@@ -212,7 +212,7 @@ ProxyPassReverse "/somepath" "https://example.com:8443"
 
 ## 專用輸出 IP 位址 {#dedicated-egress-ip-address}
 
-在與 SaaS 廠商 (如 CRM 廠商) 整合或在 AEM as a Cloud Service 之外有提供 IP 位址允許清單的其他整合時，專用的 IP 位址可以增強安全性。透過將專用IP位址新增至允許清單，可確保只允許來自AEM Cloud Service的流量流入外部服務。 這是在來自任何其他 IPS 允許的流量之外的補充。
+在與 SaaS 廠商 (如 CRM 廠商) 整合或在 AEM as a Cloud Service 之外有提供 IP 位址允許清單的其他整合時，專用的 IP 位址可以增強安全性。新增專用的 IP 位址新增至允許清單，可確保只允許來自您的 AEM Cloud Service 的流量流向外部服務。這是在任何其他 IPS 所允許以外的流量。
 
 相同的專用 IP 適用於您的 Adobe 組織中所有程式以及您所用程式中的全部環境。專用 IP 位址適用於編寫和發佈服務。
 
@@ -425,7 +425,7 @@ VPN 允許從製作、發佈或預覽執行個體連線到內部部署基礎結�
 1. 在啟動的「**新增網路基礎設施**」精靈中，選取「**虛擬私人網路**」並提供必要的資訊，然後點選或按一下「**繼續**」。
 
    * **區域**  - 這是應建立基礎設施的區域。
-   * **位址空間**  — 位址空間只能是您自己的空間中的一個/26 CIDR （64個IP位址）或更大的IP範圍。
+   * **位址空間** - 位址空間只能是您自己空間中的 1/26 CIDR (64 IP 位址) 或更大的 IP 範圍。
       * 該值以後便無法變更。
    * **DNS 資訊** - 這是遠端 DNS 解析器的清單。
       * 輸入 DNS 伺服器位址後，按下`Enter`再新增另一個位址。
@@ -462,7 +462,7 @@ VPN 允許從製作、發佈或預覽執行個體連線到內部部署基礎結�
 
 ### API 設定 {#configuring-vpn-api}
 
-每個方案一次，POST `/program/<programId>/networkInfrastructures` 叫用端點，傳遞設定資訊的承載，包括： **vpn** 針對 `kind` 引數、區域、位址空間（CIDR清單 — 請注意，這之後無法修改）、DNS解析器（用於解析網路中的名稱）以及VPN連線資訊，例如閘道設定、共用VPN金鑰以及IP安全性原則。 端點會以 `network_id` 及其他資訊回應，包括狀態。
+對每個程式會叫用一次 POST `/program/<programId>/networkInfrastructures` 端點，傳遞設定資訊的承載，包括：`kind` 參數的值 **vpn**、區域、位址空間 (CIDR 清單 - 請注意，這之後不能修改)、DNS 解析器 (用於解析您網路中的名稱) 和 VPN 連線資訊，例如閘道設定、共用 VPN 金鑰和 IP 安全性原則。端點會以 `network_id` 及其他資訊回應，包括狀態。
 
 呼叫後，通常需要 45 到 60 分鐘的時間來佈建網路基礎結構。可以呼叫 API 的 GET 方法傳回目前狀態，這最終會從 `creating` 轉成 `ready`。請參閱 API 文件以了解各種狀態。
 
@@ -582,12 +582,12 @@ VPN 允許從製作、發佈或預覽執行個體連線到內部部署基礎結�
   <tr>
     <td><code>p{PROGRAM_ID}.{REGION}-gateway.external.adobeaemcloud.com</code></td>
     <td>不適用</td>
-    <td>AEM 端 VPN 閘道的 IP。您的網路工程團隊可以使用此項來僅允許從特定IP位址到您的VPN閘道的VPN連線。 </td>
+    <td>AEM 端 VPN 閘道的 IP。您的網路工程團隊可以使用此項，允許只有從特定 IP 位址的 VPN 連線到您的 VPN 閘道。 </td>
   </tr>
   <tr>
     <td><code>p{PROGRAM_ID}.{REGION}.inner.adobeaemcloud.net</code></td>
-    <td>來自VPN的AEM端到您端的流量IP。 這可以在您的設定中加入允許清單，以確保只能從AEM建立連線。</td>
-    <td>如果您想要允許VPN存取AEM，您應該設定CNAME DNS專案以對應您的自訂網域和/或 <code>author-p{PROGRAM_ID}-e{ENVIRONMENT_ID}.adobeaemcloud.com</code> 和/或 <code>publish-p{PROGRAM_ID}-e{ENVIRONMENT_ID}.adobeaemcloud.com</code> 至此。</td>
+    <td>流量從 VPN 的 AEM 端流向您所在端使用的 IP。這可以在您的設定中加入允許清單，以確保只能從 AEM 建立連線。</td>
+    <td>如果您想要允許透過 VPN 存取 AEM，您應該設定 CNAME DNS 項目，將您的自訂網域和/或 <code>author-p{PROGRAM_ID}-e{ENVIRONMENT_ID}.adobeaemcloud.com</code> 和/或 <code>publish-p{PROGRAM_ID}-e{ENVIRONMENT_ID}.adobeaemcloud.com</code> 對應至此。</td>
   </tr>
 </tbody>
 </table>
@@ -614,9 +614,9 @@ Header always set Cache-Control private
 當您為環境啟用進階網路設定時，您可以啟用選用的連接埠轉送和非代理主機。 參數可根據環境設定，以提供靈活性。
 
 * **連接埠轉送** - 應為除 80/443 以外的任何目標連接埠宣布連接埠轉送規則，但前提是不使用 http 或 https 協定。
-   * 連線埠轉送規則是透過指定目標主機集（名稱或IP和連線埠）來定義。
+   * 連接埠轉送規則是透過指定目標主機集 (名稱或 IP 和連接埠) 來定義。
    * 透過 http/https 使用連接埠 80/443 的用戶端連線仍然必須在其連線中使用 Proxy 設定，並將進階網路的屬性套用至該連線。
-   * 對於每個目標主機，您必須將預期的目標連線埠對應到30000到30999之間的連線埠。
+   * 對於每個目標主機，您必須將預期的目標連接埠對應到 30000 到 30999 之間的連接埠。
    * 連接埠轉送規則適用於所有進階網路類型。
 
 * **非代理主機** - 非代理主機可讓您宣告一組主機，這些主機應透過共用 IP 位址範圍 (而非專用 IP) 進行路由。
@@ -648,7 +648,7 @@ Header always set Cache-Control private
 
    ![新增非代理主機](assets/advanced-networking-ui-enable-non-proxy-hosts.png)
 
-1. 在 **連線埠轉送** 索引標籤上，您可以選擇性地為80/443以外的任何目的地連線埠定義連線埠轉送規則（如果未使用HTTP或HTTPS）。 提供&#x200B;**名稱**、 **連接埠來源**&#x200B;和&#x200B;**連接埠目標**，然後點選或按一下「**新增**」。
+1. 在「**連接埠轉送**」標籤上，如果不使用 HTTP 或 HTTPS，您可以選擇為除 80/443 以外的任何目標連接埠定義連接埠轉送規則。提供&#x200B;**名稱**、 **連接埠來源**&#x200B;和&#x200B;**連接埠目標**，然後點選或按一下「**新增**」。
 
    * 該規則將會新增至標籤上的規則清單中。
    * 重複此步驟以新增多個規則。
