@@ -1,18 +1,18 @@
 ---
 title: 將資產、資料夾和集合發佈至 Brand Portal
 description: 將資產、資料夾和集合發佈至 Brand Portal。
-contentOwner: Vishabh Gupta
+contentOwner: Adobe
 feature: Brand Portal,Asset Distribution,Configuration
 role: User
 exl-id: 1cc438bc-8cad-4421-af03-c1f6d750e0a8
-source-git-commit: 7f806c457f7bef1c5309bbc6f69d3989af1b06d3
+source-git-commit: 56a1c18f4ad700305d3b32f1b24d87ec6321325f
 workflow-type: tm+mt
-source-wordcount: '1301'
-ht-degree: 90%
+source-wordcount: '1280'
+ht-degree: 85%
 
 ---
 
-# 將資產發佈至 Brand Portal {#publish-assets-to-brand-portal}
+# 將資產發佈至Brand Portal {#publish-assets-to-brand-portal}
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
@@ -25,9 +25,9 @@ ht-degree: 90%
 
 如果您對 AEM Assets 的原始資產、資料夾或集合進行後續修改，您必須從 AEM Assets 重新發佈，這些變更才會反映在 Brand Portal 中。這項功能可確保對進行中工作所作的變更不會出現在 Brand Portal 中。Brand Portal 僅提供管理員發佈的已核准變更。
 
-* [將資產發佈至 Brand Portal](#publish-assets-to-bp)
-* [將資料夾發佈至 Brand Portal](#publish-folders-to-brand-portal)
-* [將集合發佈至 Brand Portal](#publish-collections-to-brand-portal)
+* [將資產發佈至Brand Portal](#publish-assets-to-bp)
+* [將資料夾發佈至Brand Portal](#publish-folders-to-brand-portal)
+* [將集合發佈至Brand Portal](#publish-collections-to-brand-portal)
 
 >[!NOTE]
 >
@@ -35,7 +35,7 @@ ht-degree: 90%
 >資產應批次發佈。 批次大小的建議為15K。
 > 的 [!DNL Experience Manager Assets] as a [!DNL Cloud Service]，在實驗室條件下觀察到的傳輸速率為每小時1000個資產。 觀察到此速率，平均大小為10 MB資產。
 
-## 將資產發佈至 Brand Portal {#publish-assets-to-bp}
+## 將資產發佈至Brand Portal {#publish-assets-to-bp}
 
 以下是從 AEM Assets 發佈資產到 Brand Portal 的步驟：
 
@@ -47,7 +47,7 @@ ht-degree: 90%
    * [現在發佈](#publish-to-bp-now) (立即發佈資產)
    * [稍後發佈](#publish-to-bp-later) (安排資產發佈時段)
 
-### 現在發佈資產 {#publish-to-bp-now}
+### 立即發佈資產 {#publish-to-bp-now}
 
 若要將所選資產發佈至 Brand Portal，請執行下列其中一項操作：
 
@@ -75,7 +75,9 @@ ht-degree: 90%
 
    在&#x200B;**[!UICONTROL 排程]**&#x200B;中選取&#x200B;**[!UICONTROL 稍後]**。
 
-   ![publishlaterbp-1](assets/publishlaterbp-1.png)
+   <!--![publishlaterbp-1](assets/publishlaterbp-1.png)-->
+
+   ![稍後發佈](assets/publish-later.png)
 
 1. 選取&#x200B;**[!UICONTROL 啟用日期]**&#x200B;並指定時間。按一下&#x200B;**[!UICONTROL 下一步]**。
 
@@ -83,28 +85,26 @@ ht-degree: 90%
 
 1. 在&#x200B;**[!UICONTROL 工作流程]**&#x200B;中指定&#x200B;**[!UICONTROL 工作流程標題]**。按一下&#x200B;**[!UICONTROL 稍後發佈]**。
 
-   ![publishworkflow](assets/publishworkflow.png)
+   <!--![publishworkflow](assets/publishworkflow.png)-->
 
-登入 Brand Portal 介面可查看已發佈的資產 (視您安排的日期或時間而定)。
-
-![bp_landingpage](assets/bp_landingpage.png)
+   ![發佈工作流程](assets/publish-workflow.png)
 
 >[!NOTE]
 >
 > * DAM-Users群組的現有使用者擁有路徑&quot;/conf/global/settings/cloudconfigs/mediaportal&quot;的讀取存取權
->* 新使用者（或非管理員使用者）需要下列許可權，才能在Brand Portal上發佈。
-> 路徑:
-> &quot;/conf/global/settings/cloudconfigs/mediaportal&quot; ： jcr：read
->/libs ： jcr：read
->/conf ： jcr：read
->/content ： jcr：read， crx：replicate
->/content/dam/ ： jcr：read，modify， crx：replicate
+> * 新使用者（或非管理員使用者）需要下列許可權，才能在Brand Portal上發佈。
+> 路徑：
+> `"/conf/global/settings/cloudconfigs/mediaportal" : jcr:read `
+>`/libs : jcr:read`
+>`/conf : jcr:read`
+>`/content : jcr:read, crx:replicate`
+>`/content/dam/ : jcr:read,modify, crx:replicate`
 
-## 將資料夾發佈至 Brand Portal {#publish-folders-to-brand-portal}
+## 將資料夾發佈至Brand Portal {#publish-folders-to-brand-portal}
 
 您可以立即發佈或取消發佈資產資料夾，或安排至之後的日期或時間。
 
-### 將資料夾發佈至 Brand Portal {#publish-folders-to-bp}
+### 將資料夾發佈至Brand Portal {#publish-folders-to-bp}
 
 1. 從 Assets 控制台選取您要發佈的資料夾，然後在工具列按一下&#x200B;**[!UICONTROL 快速發佈]**&#x200B;選項。
 
@@ -131,8 +131,7 @@ ht-degree: 90%
    系統會顯示訊息，指出資料夾已排入佇列，等候發佈至 Brand Portal。登入 Brand Portal 介面可查看已發佈的資料夾。
 
 1. **稍後發佈資料夾**
-
-   若要將資產資料夾的發佈動作安排在之後的日期或時間：
+若要將資產資料夾的發佈動作安排在之後的日期或時間：
 
    1. 選取您要排程發佈的資料夾，然後在頂端的工具列選取&#x200B;**[!UICONTROL 管理出版物]**。
    1. 在&#x200B;**[!UICONTROL 動作]**&#x200B;中選取&#x200B;**[!UICONTROL 發佈至 Brand Portal]**。
@@ -141,15 +140,31 @@ ht-degree: 90%
 
    1. 選取&#x200B;**[!UICONTROL 啟用日期]**&#x200B;並指定時間。按一下&#x200B;**[!UICONTROL 下一步]**。
 
-      ![publishlaterbp](assets/publishlaterbp.png)
+      <!--![publishlaterbp](assets/publishlaterbp.png)-->
+
+   ![稍後發佈資料夾](assets/publish-later-folder.png)
 
    1. 在&#x200B;**[!UICONTROL 範圍]**&#x200B;中確認您的選取項目。按一下&#x200B;**[!UICONTROL 下一步]**。
 
    1. 在&#x200B;**[!UICONTROL 工作流程]**&#x200B;底下指定「工作流程標題」。按一下&#x200B;**[!UICONTROL 稍後發佈]**。
 
-      ![managerchedulepub](assets/manageschedulepub.png)
+      <!--![manageschedulepub](assets/manageschedulepub.png)-->
 
-### 從 Brand Portal 取消發佈資料夾 {#unpublish-folders-from-brand-portal}
+   ![發佈工作流程](assets/publish-workflow.png)
+
+### 檢視已發佈至Brand Portal的檔案或資料夾 {#view-published-file-folder}
+
+1. 登入 Brand Portal 介面可查看已發佈的資產 (視您安排的日期或時間而定)。
+
+   ![bp_landingpage](assets/bp_landingpage.png)
+
+1. 切換到清單檢視 ![清單檢視](assets/list-view.svg) 以檢視資產的目前發佈狀態。
+
+<!--2. On the [Asset Reports page](#https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/admin/asset-reports), you can see the current state of the report job, for example, Success, Failed, Queued, or Scheduled.-->
+
+![產生的報告狀態](assets/report-status.JPG)
+
+### 從Brand Portal取消發佈資料夾 {#unpublish-folders-from-brand-portal}
 
 您可以從 AEM Assets 例項中透過取消發佈來移除任何已發佈至 Brand Portal 的資產資料夾。取消發佈原始資料夾後，Brand Portal 使用者將無法再取用資料夾副本。
 
@@ -195,7 +210,7 @@ ht-degree: 90%
 
       ![unpublishworkflows](assets/unpublishworkflows.png)
 
-## 將集合發佈至 Brand Portal {#publish-collections-to-brand-portal}
+## 將集合發佈至Brand Portal {#publish-collections-to-brand-portal}
 
 您可以從 AEM Assets 雲端例項發佈或取消發佈集合。
 
