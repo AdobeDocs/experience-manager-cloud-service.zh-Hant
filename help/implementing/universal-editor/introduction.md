@@ -2,9 +2,9 @@
 title: Universal Editor 簡介
 description: 瞭解通用編輯器如何讓您看到即得(WYSIWYG)編輯任何Headless和Headful體驗。 了解它如何幫助內容作者提供卓越的體驗、提高其內容速度，以及如何提供最先進的開發人員體驗。
 exl-id: d4fc2384-a0f5-4a6f-9572-62749786be4c
-source-git-commit: 9d88d9b6d3315f34ca6819820b4b4306ba901390
+source-git-commit: b6548d39ce02006d91f1953c878e08a1c0903563
 workflow-type: tm+mt
-source-wordcount: '925'
+source-wordcount: '868'
 ht-degree: 85%
 
 ---
@@ -13,8 +13,6 @@ ht-degree: 85%
 # Universal Editor 簡介 {#introduction}
 
 瞭解通用編輯器如何讓您看到即得(WYSIWYG)編輯任何Headless和Headful體驗。 了解它如何幫助內容作者提供卓越的體驗、提高其內容速度，以及如何提供最先進的開發人員體驗。
-
-{{universal-editor-status}}
 
 ## 背景 {#background}
 
@@ -79,12 +77,6 @@ Universal Editor 可以用於任何實作、任何內容和任何方面的內容
 行銷從業人員會想建立根據指定內容版面量身定制的內容，以提供卓越的體驗。
 
 * 要達成的基本工作是與讀者建立可靠的聯繫。
-
-## 藍圖 {#road-map}
-
-請務必注意，Universal Editor 還在開發中，本文件中列出的部分功能是最終編輯器的設想，不一定是目前擁有的功能。
-
-請聯絡您的 Adobe 聯絡人，了解 Universal Editor 規劃即將推出功能的詳細資訊。
 
 ## 其他資源 {#additional-resources}
 

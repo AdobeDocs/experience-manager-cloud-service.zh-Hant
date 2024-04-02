@@ -2,7 +2,7 @@
 title: 使用 Universal Editor 進行本機 AEM 開發
 description: 了解 Universal Editor 如何支援為開發目的在本機 AEM 執行個體上進行編輯。
 exl-id: ba1bf015-7768-4129-8372-adfb86e5a120
-source-git-commit: 422b4d98e2665e332ff65a3638a02282064b2bea
+source-git-commit: 0bb649b91c42f43b852d7fdd54b367c0c5df2c99
 workflow-type: tm+mt
 source-wordcount: '698'
 ht-degree: 61%
@@ -13,8 +13,6 @@ ht-degree: 61%
 # 使用 Universal Editor 進行本機 AEM 開發 {#local-dev-ue}
 
 了解 Universal Editor 如何支援為開發目的在本機 AEM 執行個體上進行編輯。
-
-{{universal-editor-status}}
 
 ## 概觀 {#overview}
 

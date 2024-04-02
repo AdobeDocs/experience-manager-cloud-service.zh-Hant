@@ -2,7 +2,7 @@
 title: 模型定義、欄位和元件類型
 description: 透過範例瞭解屬性邊欄中通用編輯器可編輯的欄位和元件型別。 瞭解如何建立模型定義並連結至元件，以裝備您自己的應用程式。
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
-source-git-commit: fcdba895510b0c428a4274092c8b314fd36f5c7d
+source-git-commit: 0bb649b91c42f43b852d7fdd54b367c0c5df2c99
 workflow-type: tm+mt
 source-wordcount: '1144'
 ht-degree: 10%
@@ -13,8 +13,6 @@ ht-degree: 10%
 # 模型定義、欄位和元件類型 {#field-types}
 
 透過範例瞭解屬性邊欄中通用編輯器可編輯的欄位和元件型別。 瞭解如何建立模型定義並連結至元件，以裝備您自己的應用程式。
-
-{{universal-editor-status}}
 
 ## 概觀 {#overview}
 

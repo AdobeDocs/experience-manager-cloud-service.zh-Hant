@@ -1,7 +1,7 @@
 ---
-source-git-commit: 4144f9704aaf17ea684be147395adc3aa31641f2
-workflow-type: ht
-source-wordcount: '367'
+source-git-commit: 0bb649b91c42f43b852d7fdd54b367c0c5df2c99
+workflow-type: tm+mt
+source-wordcount: '340'
 ht-degree: 100%
 
 ---
@@ -14,12 +14,6 @@ ht-degree: 100%
 ## Edge Delivery Services 製作 {#edge-delivery-authoring}
 
 [!BADGE 若要為 Edge Delivery Services 製作 AEM 內容，請按一下這裡。]{type=Positive url="/help/edge/overview.md" tooltip="為 Edge Delivery Services 製作 AEM 內容"}
-
-## Universal Editor 狀態 {#universal-editor-status}
-
->[!NOTE]
->
->Universal Editor 仍在開發中，其功能可能會發生變化，並且可能與本文件詳述的內容有所不同。
 
 ## 另請參閱 {#see-also}
 
@@ -64,8 +58,7 @@ ht-degree: 100%
 ## 另請參閱 {#see-more-forms-eds}
 
 * [開始使用 AEM Forms Edge Delivery Services。](/help/edge/docs/forms/tutorial.md)
-* [使用 Google Sheets 或 Microsoft Excel 建立表單
-        ](/help/edge/docs/forms/create-forms.md)
+* [使用 Google Sheets 或 Microsoft Excel 建立表單](/help/edge/docs/forms/create-forms.md)
 * [設定您的 Google 表單或 Microsoft Excel 檔案以開始接受資料](/help/edge/docs/forms/submit-forms.md)
 * [發佈您的表單並開始收集資料](/help/edge/docs/forms/publish-forms.md)
 * [自訂表單的外觀](/help/edge/docs/forms/style-theme-forms.md)

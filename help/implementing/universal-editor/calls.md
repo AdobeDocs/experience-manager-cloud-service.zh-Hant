@@ -2,7 +2,7 @@
 title: Universal Editor 呼叫
 description: 瞭解通用編輯器對您的應用程式進行的不同型別呼叫，以協助您進行偵錯。
 exl-id: 00d66e59-e445-4b5c-a5b1-c0a9f032ebd9
-source-git-commit: 1fc53e726f3a15c9ac7d772b4c181a7877e417af
+source-git-commit: 0bb649b91c42f43b852d7fdd54b367c0c5df2c99
 workflow-type: tm+mt
 source-wordcount: '615'
 ht-degree: 2%
@@ -13,8 +13,6 @@ ht-degree: 2%
 # Universal Editor 呼叫 {#calls}
 
 瞭解通用編輯器對您的應用程式進行的不同型別呼叫，以協助您進行偵錯。
-
-{{universal-editor-status}}
 
 ## 概觀 {#overview}
 
