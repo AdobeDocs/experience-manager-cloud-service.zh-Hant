@@ -3,8 +3,8 @@ title: 開始使用 AEM Forms Edge Delivery Service。建立表單。
 description: 快速製作完美表單！⚡ AEM Forms Edge Delivery 文件型製作 = 驚人的速度和 SEO 友善表單，讓使用者更滿意且適用於搜尋引擎。
 feature: Edge Delivery Services
 exl-id: 0cf881a2-3784-45eb-afe8-3435e5e95cf4
-source-git-commit: b32e04dec83992ebfcea7874932a5ab77a1eaa70
-workflow-type: ht
+source-git-commit: 984ead39ef8c20f06ac63c88380323e403a08712
+workflow-type: tm+mt
 source-wordcount: '805'
 ht-degree: 100%
 
@@ -27,7 +27,7 @@ AEM Forms Edge Delivery 會提供一個區塊 (名為最適化表單區塊)，�
 
 * [使用 AEM Forms 範本設定 AEM 專案](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block)，或[將最適化表單區塊新增至您現有的 AEM 專案](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project)，並原地複製本機電腦上的對應 GitHub 存放庫。
 在本文件中，Edge Delivery Services (EDS) 專案的本機資料夾稱為 `[EDS Project repository]`。
-* 確保您可以存取 Google Sheets 或 Microsoft SharePoint。若要將 Microsoft SharePoint 設定為您的內容來源，請參閱[「如何使用 SharePoint」](https://www.aem.live/docs/setup-customer-SharePoint)。
+* 確保您可以存取 Google Sheets 或 Microsoft SharePoint。若要將 Microsoft SharePoint 設定為您的內容來源，請參閱[「如何使用 SharePoint」](https://www.aem.live/docs/setup-customer-sharepoint)。
 
 
 
@@ -80,7 +80,7 @@ Ensure a smooth GitHub build process by addressing potential issues:
 
    ![Google Drive 上的範例內容](/help/edge/assets/upload-sample-files-to-your-content-folder.png)
 
-1. [根據為您專案指定的設定](https://www.aem.live/docs/setup-customer-SharePoint)，確保讓相關 AEM 使用者 (例如 `helix@adobe.com`) 共用工作表。授予使用者關於工作表的編輯權限。
+1. [根據為您專案指定的設定](https://www.aem.live/docs/setup-customer-sharepoint)，確保讓相關 AEM 使用者 (例如 `helix@adobe.com`) 共用工作表。授予使用者關於工作表的編輯權限。
 
 1. 開啟建立的試算表並將預設工作表重新命名為「共享預設」。
 

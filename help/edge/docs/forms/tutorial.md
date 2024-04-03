@@ -2,13 +2,13 @@
 title: 開始使用 AEM Forms Edge Delivery Services - 開發人員教學課程
 description: 本教學課程可協助您啟動並執行新的 Adob​​e Experience Manager (AEM) Forms 專案。您將在 10 到 20 分鐘內建立好自己的表單。
 feature: Edge Delivery Services
-source-git-commit: b32e04dec83992ebfcea7874932a5ab77a1eaa70
-workflow-type: ht
-source-wordcount: '1850'
-ht-degree: 100%
+exl-id: bb7e93ee-0575-44e1-9c5e-023284c19490
+source-git-commit: 984ead39ef8c20f06ac63c88380323e403a08712
+workflow-type: tm+mt
+source-wordcount: '1848'
+ht-degree: 99%
 
 ---
-
 
 # 快速入門 - 開發人員教學課程
 
@@ -19,8 +19,6 @@ ht-degree: 100%
 AEM Forms 會提供一個區塊 (名為最適化表單區塊)，協助您輕鬆建立表單來擷取和儲存擷取的資料。您可以[建立預先設定最適化表單區塊的新 AEM 專案](#create-a-new-aem-project-pre-configured-with-adaptive-forms-block)，或可以[將最適化表單區塊新增至現有 AEM 專案](#add-adaptive-forms-block-to-your-existing-aem-project)。
 
 此 AEM Forms 教學課程將引導您使用新的 Adob&#x200B;&#x200B;e Experience Manager (AEM) Forms 專案建立、預覽和發佈您自己的自訂表單。
-
-
 
 ## 先決條件
 
@@ -131,8 +129,7 @@ AEM Forms 範本可協助您很快開始使用預先設定最適化表單區塊�
       https://adobe.SharePoint.com/sites/wkndforms/Shared%20Documents/wefinance
       ```
 
-      若要了解更多在 Microsoft SharePoint 中管理檔案，請參閱「[如何使用 Adob&#x200B;&#x200B;e SharePoint](https://www.aem.live/docs/setup-customer-SharePoint)」。
-
+      如需使用Microsoft SharePoint管理檔案的詳細資訊，請參閱 [如何使用AdobeSharePoint](https://www.aem.live/docs/setup-customer-sharepoint).
 
 
    1. 您更新參照且一切看起來沒問題，就可提交更新的 `fsatb.yaml` 檔案。 如果您遇到任何建置問題，請參閱「[解決 GitHub 建置問題](#troubleshooting-github-build-issues)」。
@@ -300,4 +297,3 @@ AEM Forms 範本可協助您很快開始使用預先設定最適化表單區塊�
 ## 另請參閱
 
 {{see-more-forms-eds}}
-

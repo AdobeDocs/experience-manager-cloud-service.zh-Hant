@@ -1,15 +1,15 @@
 ---
-title: 產生變數
+title: 產生變化版本
 description: 瞭解如何從Edge Delivery ServicesSidekick存取產生變數
-source-git-commit: 88d0b0a6dc2dacdf907ab46c804087772ab2e030
+exl-id: 9114037f-37b9-4b2f-a714-10933f69b2c3
+source-git-commit: 984ead39ef8c20f06ac63c88380323e403a08712
 workflow-type: tm+mt
 source-wordcount: '3338'
 ht-degree: 0%
 
 ---
 
-
-# 產生變數 {#generate-variations}
+# 產生變化版本 {#generate-variations}
 
 如果您正在尋找最佳化數位頻道和加速內容建立的方法，則可以使用「產生變化」。 「產生變化」會使用產生式人工智慧(AI)根據提示建立內容變化；這些提示是由Adobe提供，或由使用者建立和管理。 建立變化後，您可以使用網站上的內容，也可以使用測量其成功程度 [實驗](https://www.aem.live/docs/experimentation) 的功能 [Edge Delivery Services](/help/edge/overview.md).
 
@@ -343,7 +343,7 @@ Generative AI和Generate Variations for AEM是強大的工具，但是 **您** �
 
    >[!NOTE]
    >
-   >若要使用 **Adobe Target** 對象必須填寫說明欄位。 如果不適用，下拉式清單中的對象會顯示為無法使用。 若要新增說明，請前往Target並 [新增對象說明](https://experienceleague.adobe.com/docs/target-learn/tutorials/audiences/create-audiences).
+   >若要使用 **Adobe Target** 對象必須填寫說明欄位。 如果不適用，下拉式清單中的對象會顯示為無法使用。 若要新增說明，請前往Target並 [新增對象說明](https://experienceleague.adobe.com/en/docs/target-learn/tutorials/audiences/create-audiences).
 
    ![產生變數 — 對象來源 — Adobe Target](assets/generate-variations-audiences-adobe-target.png)
 
@@ -458,7 +458,7 @@ Adobe提供一些要使用的對象。
 
 使用方式管理取決於採取的動作：
 
-* 產生變數
+* 產生變化版本
 
   複製變體的一代等於一個產生動作。 身為客戶，您的AEM授權會隨附特定數量的產生式動作。 消耗基本權利後，您就可以購買其他動作。
 

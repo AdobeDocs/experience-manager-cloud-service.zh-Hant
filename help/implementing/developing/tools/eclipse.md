@@ -1,8 +1,8 @@
 ---
 title: Eclipse 適用的 AEM 開發人員工具
-description: 瞭解如何使用適用於Eclipse的AEM開發人員工具（一個以Apache Sling的Eclipse外掛程式為基礎的Eclipse外掛程式）。
+description: 瞭解如何使用適用於Eclipse的AEM開發人員工具，這是以適用於Apache Sling的Eclipse外掛程式為基礎的Eclipse外掛程式。
 exl-id: 7f9c0f99-e230-440a-8bc9-a0ab7465e3bf
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 984ead39ef8c20f06ac63c88380323e403a08712
 workflow-type: tm+mt
 source-wordcount: '1138'
 ht-degree: 2%
@@ -222,6 +222,6 @@ Eclipse網站的官方Apache Sling IDE工具提供您實用資訊：
 
 下列官方 [Eclipse](https://www.eclipse.org/) 說明檔案有助於設定您的環境：
 
-* [Eclipse快速入門](https://www.eclipse.org/getting-started/)
+* [Eclipse快速入門](https://eclipseide.org/getting-started/)
 * [Eclipse Luna說明系統](https://help.eclipse.org/latest/index.jsp)
 * [Maven整合(m2eclipse)](https://www.eclipse.org/m2e/)
