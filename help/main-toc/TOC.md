@@ -930,8 +930,8 @@ ht-degree: 99%
          + [使用 AEM 製作 Headless 的基礎知識](/help/journey-headless/author/basics.md)
          + [了解如何在內容片段中使用參照](/help/journey-headless/author/references.md)
          + [了解如何為內容片段定義中繼資料和標記](/help/journey-headless/author/metadata-tagging.md)
-+ Generative AI {#generative-ai}
-   + [產生變數](/help/generative-ai/generate-variations.md)
++ 生成式 AI {#generative-ai}
+   + [產生變化版本](/help/generative-ai/generate-variations.md)
 + 實作 {#implementing}
    + [為 AEM as a Cloud Service 實作應用程式](/help/implementing/home.md)
    + 使用 Cloud Manager {#using-cloud-manager}
