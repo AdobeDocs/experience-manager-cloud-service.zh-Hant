@@ -3,9 +3,9 @@ title: 持續性 GraphQL 查詢
 description: 了解如何在 Adobe Experience Manager as a Cloud Service 中保留 GraphQL 查詢，以將效能最佳化。用戶端應用程式可以使用 HTTP GET 方法要求持續性查詢，回應可以在 Dispatcher 和 CDN 層快取，最終提高用戶端應用程式的效能。
 feature: Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
-source-git-commit: 2fa76dbe93bcf31901ec0422470b05dadfe4f43f
+source-git-commit: 8b03da83c7f669d9295f7c8a82ce5c97fafe67c8
 workflow-type: tm+mt
-source-wordcount: '1870'
+source-wordcount: '1869'
 ht-degree: 86%
 
 ---
@@ -264,22 +264,28 @@ UTF-8編碼 `%3B` 為 `;` 和 `%3D` 是的編碼 `=`. 查詢變數和任何特�
 在查詢中使用變數時，有一些最佳實務需要遵循：
 
 * 編碼一般而言，建議您一律編碼所有特殊字元，例如 `;`， `=`， `?`， `&`，以及其他專案。
+
 * 使用多個變數（以分號分隔）的分號持續性查詢必須具備下列其中一項：
-   * 分號已編碼(`%3B`)；並對URL進行編碼也可達到此目的
+   * 分號已編碼(`%3B`)；對URL編碼也可達到此目的
    * 或在查詢結尾加上分號
+
 * `CACHE_GRAPHQL_PERSISTED_QUERIES`
 時間 `CACHE_GRAPHQL_PERSISTED_QUERIES` 會為Dispatcher啟用，然後是包含 `/` 或 `\` 值中的字元會在Dispatcher層級編碼兩次。
 若要避免此情況：
+
    * 啟用 `DispatcherNoCanonURL` 在Dispatcher上。
 這會指示Dispatcher將原始URL轉送至AEM，以避免重複的編碼。
 不過，此設定目前僅適用於 `vhost` 層級，因此如果您已有Dispatcher設定來重新寫入URL （例如使用縮短的URL時），您可能需要個別的 `vhost` 用於持續查詢URL。
+
    * 傳送 `/` 或 `\` 未編碼的字元。
 呼叫持續查詢URL時，請確定 `/` 或 `\` 持續查詢變數的值中，字元會維持未編碼狀態。
      >[!NOTE]
      >
      >只有當 `DispatcherNoCanonURL` 無法實作解決方案，原因不明。
+
 * `CACHE_GRAPHQL_PERSISTED_QUERIES`
-時間 `CACHE_GRAPHQL_PERSISTED_QUERIES` 會為Dispatcher啟用，然後 `;` 字元無法用於變數的值中。
+
+  時間 `CACHE_GRAPHQL_PERSISTED_QUERIES` 會為Dispatcher啟用，然後 `;` 字元無法用於變數的值中。
 
 ## 快取持續性查詢 {#caching-persisted-queries}
 
