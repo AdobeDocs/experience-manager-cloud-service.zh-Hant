@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的運作方式以及該軟體可以為您做哪些事。
 breadcrumb-title: 使用手冊
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 4e60d7315fe7a92d608f0858a7108f7590e9aefa
+source-git-commit: becba7698afe4aa0629bf54fa0d0d26156784b5f
 workflow-type: tm+mt
-source-wordcount: '4844'
-ht-degree: 99%
+source-wordcount: '4842'
+ht-degree: 100%
 
 ---
 
@@ -641,8 +641,8 @@ ht-degree: 99%
             + [為以核心元件為主的最適化表單新增地區設定](/help/forms/supporting-new-language-localization-core-components.md)
             + [建立和使用自訂功能](/help/forms/create-and-use-custom-functions.md)
             + [新增規則至以核心元件為基礎的最適化表單](/help/forms/rule-editor-core-components.md)
-            + [將版本設定、註解及註解新增至最適化表單](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md)
-            + [比較最適化Forms](/help/forms/compare-forms.md)
+            + [在最適化表單中新增版本設定、評論和附註](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md)
+            + [比較最適化表單](/help/forms/compare-forms.md)
       + Foundation 元件 {#authoring-adaptive-forms-foundation-components}
          + 將您的 PDF forms 轉換為最適化表單 {#afcs}
             + [自動表單轉換服務簡介](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=zh-Hant)
@@ -803,7 +803,6 @@ ht-degree: 99%
    + 建置 Edge Delivery 應用程式 {#build}
       + [快速入門 - 開發人員教學課程](/help/edge/developer/tutorial.md)
       + [專案剖析](/help/edge/developer/anatomy-of-a-franklin-project.md)
-      + [區塊集合](/help/edge/developer/block-collection.md)
       + [試算表](/help/edge/developer/spreadsheets.md)
       + [表單](/help/edge/developer/forms.md)
       + [建立索引](/help/edge/developer/indexing.md)
@@ -1179,3 +1178,9 @@ ht-degree: 99%
    + 協助工具 {#accessibility}
       + [AEM as a Cloud Service 與網頁協助工具準則](/help/compliance/accessibility/web-accessibility.md)
       + [WCAG 2.1 快速指南](/help/compliance/accessibility/quick-guide-wcag.md)
+
+
+<!--
+Temporarily remove:
+    + [Block Collection](/help/edge/developer/block-collection.md)
+-->
