@@ -2,7 +2,7 @@
 title: 使用 Universal Editor 進行本機 AEM 開發
 description: 了解 Universal Editor 如何支援為開發目的在本機 AEM 執行個體上進行編輯。
 exl-id: ba1bf015-7768-4129-8372-adfb86e5a120
-source-git-commit: 0bb649b91c42f43b852d7fdd54b367c0c5df2c99
+source-git-commit: 11a244b7dd4810fbfec92b3effc362102e7322dc
 workflow-type: tm+mt
 source-wordcount: '698'
 ht-degree: 61%
@@ -119,3 +119,4 @@ Universal Editor 會根據頁面的偵測方式，知道要使用哪個 Universa
 1. 開啟您的瀏覽器，前往 `https://localhost:8000/corslib/LATEST`。
 1. 指示您的瀏覽器接受[您的自我簽署憑證。](#ue-https)
 1. 一旦自我簽署憑證受到信任，您就可以使用本機 Universal Editor 服務編輯頁面。
+

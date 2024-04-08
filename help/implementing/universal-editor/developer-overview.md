@@ -2,7 +2,7 @@
 title: 適用於AEM開發人員的通用編輯器總覽
 description: 如果您是AEM開發人員，且對Universal Editor的運作方式及如何在您的專案中使用它感興趣，本檔案將引導您檢測WKND專案以使用Universal Editor，為您提供端對端的簡介。
 exl-id: d6f9ed78-f63f-445a-b354-f10ea37b0e9b
-source-git-commit: 0bb649b91c42f43b852d7fdd54b367c0c5df2c99
+source-git-commit: 11a244b7dd4810fbfec92b3effc362102e7322dc
 workflow-type: tm+mt
 source-wordcount: '3139'
 ht-degree: 1%
@@ -593,3 +593,4 @@ WKND頁面現在會在通用編輯器中成功載入，且JavaScript程式庫會
 * 檢視檔案 [Universal Editor架構](/help/implementing/universal-editor/architecture.md#service) 以取得通用編輯器結構的詳細資訊。
 * 檢視檔案 [使用通用編輯器的本機AEM開發](/help/implementing/universal-editor/local-dev.md) 以取得有關如何連線至自行託管Universal Editor版本的詳細資訊。
 * 檢視檔案 [在Adobe Experience Manager as a Cloud Service中使用Sling Resource Merger](/help/implementing/developing/introduction/sling-resource-merger.md) 以取得重疊節點的詳細資訊。
+

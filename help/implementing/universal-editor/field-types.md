@@ -2,7 +2,7 @@
 title: 模型定義、欄位和元件類型
 description: 透過範例瞭解屬性邊欄中通用編輯器可編輯的欄位和元件型別。 瞭解如何建立模型定義並連結至元件，以裝備您自己的應用程式。
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
-source-git-commit: 0bb649b91c42f43b852d7fdd54b367c0c5df2c99
+source-git-commit: 11a244b7dd4810fbfec92b3effc362102e7322dc
 workflow-type: tm+mt
 source-wordcount: '1144'
 ht-degree: 10%
@@ -830,3 +830,4 @@ A `tab` 可將定義視為陣列中的分隔符號 `fields`. 之後的一切 `ta
 ![文字元件型別的熒幕擷圖](assets/component-types/simpletext.png)
 
 >[!ENDTABS]
+

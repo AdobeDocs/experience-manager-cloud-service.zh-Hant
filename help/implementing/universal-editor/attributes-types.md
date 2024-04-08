@@ -2,7 +2,7 @@
 title: 屬性和項目類型
 description: 瞭解Universal Editor所需的資料屬性和專案型別。
 exl-id: 02795a31-244a-42b4-8297-2649125d7777
-source-git-commit: 0bb649b91c42f43b852d7fdd54b367c0c5df2c99
+source-git-commit: 11a244b7dd4810fbfec92b3effc362102e7322dc
 workflow-type: tm+mt
 source-wordcount: '686'
 ht-degree: 80%
@@ -67,3 +67,4 @@ ht-degree: 80%
 * [AEM 中 Universal Editor 快速入門](getting-started.md) - 了解如何存取 Universal Editor，以及如何開始檢測您的第一個 AEM 應用程式以使用它。
 * [Universal Editor 架構](architecture.md) - 了解 Universal Editor 的架構，以及資料如何在其服務和階層之間流動。
 * [Universal Editor 驗證](authentication.md) - 了解 Universal Editor 如何進行驗證。
+

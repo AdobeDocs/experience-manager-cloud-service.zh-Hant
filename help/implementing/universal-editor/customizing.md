@@ -2,7 +2,7 @@
 title: 自訂通用編輯器編寫體驗
 description: 瞭解不同的擴充點和其他功能，這些功能可讓您自訂Universal Editor的UI，以支援內容作者的需求。
 exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
-source-git-commit: f04ab32093371ff425c4e196872738867d9ed528
+source-git-commit: 11a244b7dd4810fbfec92b3effc362102e7322dc
 workflow-type: tm+mt
 source-wordcount: '302'
 ht-degree: 0%
@@ -96,3 +96,4 @@ data-aue-filter="container-filter"
 #### 條件True {#true}
 
 ![顯示的文字欄位](assets/shown.png)
+

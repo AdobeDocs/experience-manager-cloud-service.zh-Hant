@@ -2,7 +2,7 @@
 title: Universal Editor 簡介
 description: 瞭解通用編輯器如何讓您看到即得(WYSIWYG)編輯任何Headless和Headful體驗。 了解它如何幫助內容作者提供卓越的體驗、提高其內容速度，以及如何提供最先進的開發人員體驗。
 exl-id: d4fc2384-a0f5-4a6f-9572-62749786be4c
-source-git-commit: b6548d39ce02006d91f1953c878e08a1c0903563
+source-git-commit: 11a244b7dd4810fbfec92b3effc362102e7322dc
 workflow-type: tm+mt
 source-wordcount: '868'
 ht-degree: 85%
@@ -88,3 +88,4 @@ Universal Editor 可以用於任何實作、任何內容和任何方面的內容
 * [Universal Editor 架構](architecture.md) - 了解 Universal Editor 的架構，以及資料如何在其服務和階層之間流動。
 * [屬性和類型](attributes-types.md) - 了解 Universal Editor 需要的資料屬性和類型。
 * [Universal Editor 驗證](authentication.md) - 了解 Universal Editor 如何進行驗證。
+
