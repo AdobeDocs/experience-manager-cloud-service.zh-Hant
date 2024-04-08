@@ -2,7 +2,7 @@
 title: 使用 Universal Editor 發佈內容
 description: 了解 Universal Editor 如何發佈內容以及您的應用程式如何處理已發佈的內容。
 exl-id: aee34469-37c2-4571-806b-06c439a7524a
-source-git-commit: 11a244b7dd4810fbfec92b3effc362102e7322dc
+source-git-commit: 785a0db1ba302b8730480651802f98e802abc6d4
 workflow-type: tm+mt
 source-wordcount: '521'
 ht-degree: 69%
@@ -49,4 +49,3 @@ Universal Editor 的目標是不強加任何特定模式，以完全低耦合的
 * [Universal Editor 架構](/help/implementing/universal-editor/architecture.md) - 了解 Universal Editor 的架構，以及資料如何在其服務和階層之間流動。
 * [屬性和類型](/help/implementing/universal-editor/attributes-types.md) - 了解 Universal Editor 需要的資料屬性和類型。
 * [Universal Editor 驗證](/help/implementing/universal-editor/authentication.md) - 了解 Universal Editor 如何進行驗證。
-
