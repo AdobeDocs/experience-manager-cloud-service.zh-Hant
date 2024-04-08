@@ -2,7 +2,7 @@
 title: 複製
 description: 瞭解AEMas a Cloud Service中的散佈和疑難排解復寫。
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
+source-git-commit: 9ab6ac5588b6ca5135e3635cc886ec51207e89d7
 workflow-type: tm+mt
 source-wordcount: '1312'
 ht-degree: 1%
@@ -196,14 +196,17 @@ ReplicationStatus previewStatus = afterStatus.getStatusForAgent(PREVIEW_AGENT); 
 
 若要疑難排解復寫問題，請導覽至AEM作者服務Web UI中的復寫佇列：
 
-1. 從AEM「開始」功能表，導覽至 **工具>部署>發佈**
-2. 選取卡片 **發佈**
+1. 從AEM「開始」功能表，導覽至 **工具** > **部署** > **分佈**
+1. 選取卡片 **發佈**
+
    ![狀態](assets/publish-status.png "狀態")
-3. 檢查應為綠色的佇列狀態
-4. 您可以測試復寫服務的連線
-5. 選取 **記錄檔** 標籤中，顯示內容出版物的歷史記錄
+
+1. 檢查應為綠色的佇列狀態
+1. 您可以測試復寫服務的連線
+1. 選取 **記錄檔** 標籤中，顯示內容出版物的歷史記錄
 
 ![記錄檔](assets/publish-logs.png "記錄檔")
 
 如果內容無法發佈，則整個發佈將從AEM發佈服務中恢復。
+
 在這種情況下，可編輯的主要佇列會顯示紅色狀態，應該加以檢閱以識別哪些專案導致取消發佈。 按一下該佇列，會顯示其暫止專案，如有需要，可從中清除單一專案或所有專案。
