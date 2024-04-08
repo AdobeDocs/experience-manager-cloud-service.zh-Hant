@@ -2,7 +2,7 @@
 title: 屬性和項目類型
 description: 瞭解Universal Editor所需的資料屬性和專案型別。
 exl-id: 02795a31-244a-42b4-8297-2649125d7777
-source-git-commit: 11a244b7dd4810fbfec92b3effc362102e7322dc
+source-git-commit: 36be262a7949bc66f97f5483ff463d755f5f78e5
 workflow-type: tm+mt
 source-wordcount: '686'
 ht-degree: 80%
@@ -32,7 +32,7 @@ ht-degree: 80%
 | `data-aue-filter` | 定義可以使用哪些參考 |
 | `data-aue-label` | 為編輯器中顯示的可選項目定義自訂標籤，<br>如果`data-aue-model`已經設定了，會透過模型擷取標籤 |
 | `data-aue-model` | 定義模型，該模型用於屬性邊欄中的表單型編輯 |
-| `data-aue-behavior` | 定義 [檢測的行為，](#behaviors) 例如，獨立的文字或影像也可以模擬元件，使其可移動或可刪除 |
+| `data-aue-behavior` | 定義 [檢測的行為](#behaviors)例如，獨立文字或影像也可以模擬元件，使其可移動或刪除 |
 
 ## 項目類型 {#item-types}
 
@@ -67,4 +67,3 @@ ht-degree: 80%
 * [AEM 中 Universal Editor 快速入門](getting-started.md) - 了解如何存取 Universal Editor，以及如何開始檢測您的第一個 AEM 應用程式以使用它。
 * [Universal Editor 架構](architecture.md) - 了解 Universal Editor 的架構，以及資料如何在其服務和階層之間流動。
 * [Universal Editor 驗證](authentication.md) - 了解 Universal Editor 如何進行驗證。
-
