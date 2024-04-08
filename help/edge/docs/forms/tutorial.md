@@ -4,9 +4,9 @@ description: 本教學課程可協助您啟動並執行新的 Adob​​e Experi
 feature: Edge Delivery Services
 exl-id: bb7e93ee-0575-44e1-9c5e-023284c19490
 source-git-commit: 984ead39ef8c20f06ac63c88380323e403a08712
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1848'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -129,7 +129,7 @@ AEM Forms 範本可協助您很快開始使用預先設定最適化表單區塊�
       https://adobe.SharePoint.com/sites/wkndforms/Shared%20Documents/wefinance
       ```
 
-      如需使用Microsoft SharePoint管理檔案的詳細資訊，請參閱 [如何使用AdobeSharePoint](https://www.aem.live/docs/setup-customer-sharepoint).
+      如需更多有關在 Microsoft SharePoint 中管理檔案的資訊，請參閱「[如何使用 Adobe SharePoint](https://www.aem.live/docs/setup-customer-sharepoint)」。
 
 
    1. 您更新參照且一切看起來沒問題，就可提交更新的 `fsatb.yaml` 檔案。 如果您遇到任何建置問題，請參閱「[解決 GitHub 建置問題](#troubleshooting-github-build-issues)」。
