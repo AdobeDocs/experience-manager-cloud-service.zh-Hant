@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的運作方式以及該軟體可以為您做哪些事。
 breadcrumb-title: 使用手冊
 user-guide-title: AEM as a Cloud Service
-source-git-commit: becba7698afe4aa0629bf54fa0d0d26156784b5f
+source-git-commit: 89f2cd02e8318bd5900bffca752ffab4421c7fdc
 workflow-type: tm+mt
-source-wordcount: '4842'
-ht-degree: 100%
+source-wordcount: '4855'
+ht-degree: 99%
 
 ---
 
@@ -833,6 +833,7 @@ ht-degree: 100%
          + [設定您的 Google 表單或 Microsoft Excel 檔案以開始接受資料](/help/edge/docs/forms/submit-forms.md)
          + [發佈您的表單並開始收集資料](/help/edge/docs/forms/publish-forms.md)
          + [新增驗證至表單欄位](/help/edge/docs/forms/validate-forms.md)
+         + [將選項從URL載入至表單](/help/edge/docs/forms/load-options-from-url.md)
          + [自訂表單的外觀](/help/edge/docs/forms/style-theme-forms.md)
          + [使用規則為表單新增動態行為](/help/edge/docs/forms/rules-forms.md)
          + [提交表單後顯示自訂感謝訊息](/help/edge/docs/forms/thank-you-page-form.md)
@@ -842,6 +843,7 @@ ht-degree: 100%
          + [轉換](/help/edge/docs/forms/translate-forms.md)
          + [reCAPTCHA](/help/edge/docs/forms/recaptacha-forms.md)
          + [自訂元件](/help/edge/docs/forms/custom-components-forms.md)
+         + [對表單進行即時使用者監控](/help/edge/docs/forms/real-time-user-monitoring-for-forms.md)
       + 參考資料 {#forms-references}
          + [最適化表單區塊元件及其屬性](/help/edge/docs/forms/form-components.md)
    + Edge Delivery 資源 {#resources}
