@@ -1,16 +1,16 @@
 ---
-title: 在CDN設定流量
+title: 設定 CDN 上的流量
 description: 瞭解如何在設定檔案中宣告規則和篩選器，並使用Cloud Manager設定管道將它們部署到CDN，以設定CDN流量。
 feature: Dispatcher
-source-git-commit: 0a0c9aa68b192e8e2a612f50a58ba5f9057c862d
+exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
+source-git-commit: 1e2d147aec53fc0f5be53571078ccebdda63c819
 workflow-type: tm+mt
-source-wordcount: '974'
+source-wordcount: '1109'
 ht-degree: 2%
 
 ---
 
-
-# 在CDN設定流量 {#cdn-configuring-cloud}
+# 設定 CDN 上的流量 {#cdn-configuring-cloud}
 
 >[!NOTE]
 >此功能尚未正式推出。若要加入率先採用者計畫，請傳送電子郵件至 `aemcs-cdn-config-adopter@adobe.com` 並說明您的使用案例。
@@ -47,6 +47,16 @@ config/
 
 * 其次， `cdn.yaml` 設定檔案應同時包含中繼資料和下列範例所述的規則。
 
+## 語法 {#configuration-syntax}
+
+以下各節中的規則型別會共用相同語法。
+
+規則由名稱、條件「when子句」和動作參考。
+
+when子句會根據包括網域、路徑、查詢字串、標頭和Cookie在內的屬性，決定是否評估規則。 各種規則型別的語法相同；如需詳細資訊，請參閱 [條件結構區段](/help/security/traffic-filter-rules-including-waf.md#condition-structure) 在流量篩選規則文章中。
+
+動作節點的詳細資訊因規則型別而異，以下各節將概述這些詳細資訊。
+
 ## 要求轉換 {#request-transformations}
 
 請求轉換規則可讓您修改傳入的請求。 規則支援根據各種相符條件（包括規則運算式）來設定、取消設定和變更路徑、查詢引數和標頭（包括Cookie）。 您也可以設定變數，以便稍後在評估序列中參照。
@@ -61,7 +71,7 @@ config/
 kind: "CDN"
 version: "1"
 metadata:
-  envTypes: ["prod", "dev"]
+  envTypes: ["dev", "stage", "prod"]
 data:  
   experimental_requestTransformations:
     removeMarketingParams: true
@@ -74,7 +84,7 @@ data:
           - type: set
             reqHeader: x-some-header
             value: some value
- 
+            
       - name: unset-header-rule
         when:
           reqProperty: path
@@ -82,24 +92,7 @@ data:
         actions:
           - type: unset
             reqHeader: x-some-header
- 
-      - name: set-query-param-rule
-        when:
-          reqProperty: path
-          equals: /set-query-param
-        actions:
-          - type: set
-            queryParam: someParam
-            value: someValue
- 
-      - name: unset-query-param-rule
-        when:
-          reqProperty: path
-          equals: /unset-query-param
-        actions:
-          - type: unset
-            queryParam: someParam
- 
+            
       - name: unset-matching-query-params-rule
         when:
           reqProperty: path
@@ -107,7 +100,7 @@ data:
         actions:
           - type: unset
             queryParamMatch: ^removeMe_.*$
- 
+            
       - name: unset-all-query-params-except-exact-two-rule
         when:
           reqProperty: path
@@ -115,61 +108,7 @@ data:
         actions:
           - type: unset
             queryParamMatch: ^(?!leaveMe$|leaveMeToo$).*$
- 
-      - name: set-req-cookie-rule
-        when:
-          reqProperty: path
-          equals: /set-req-cookie
-        actions:
-          - type: set
-            reqCookie: someParam
-            value: someValue
- 
-      - name: unset-req-cookie-rule
-        when:
-          reqProperty: path
-          equals: /unset-req-cookie
-        actions:
-          - type: unset
-            reqCookie: someParam
- 
-      - name: set-variable-rule
-        when:
-          reqProperty: path
-          equals: /set-variable
-        actions:
-          - type: set
-            var: some_var_name
-            value: some value
- 
-      - name: unset-variable-rule
-        when:
-          reqProperty: path
-          equals: /unset-variable
-        actions:
-          - type: unset
-            var: some_var_name
- 
-      - name: replace-segment
-        when:
-          reqProperty: path
-          like: /replace-segment/*
-        actions:
-          - type: replace
-            reqProperty: path
-            match: /replace-segment/
-            value: /segment-was-replaced/
- 
-      - name: replace-extension
-        when:
-          reqProperty: path
-          like: /replace-extension/*.html
-        actions:
-          - type: replace
-            reqProperty: path
-            match: \.html
-            value: ''
- 
+            
       - name: multi-action
         when:
           reqProperty: path
@@ -181,6 +120,17 @@ data:
           - type: set
             reqHeader: x-header2
             value: '201'
+            
+      - name: replace-html
+        when:
+          reqProperty: path
+          like: /mypath
+        actions:
+          - type: transform
+           reqProperty: path
+           op: replace
+           match: \.html$
+           replacement: ""
 ```
 
 **動作**
@@ -189,16 +139,27 @@ data:
 
 | 名稱 | 屬性 | 含義 |
 |-----------|--------------------------|-------------|
-| **設定** | reqHeader，值 | 將指定的標頭設定為給定的值。 |
-|     | queryParam，值 | 將指定的查詢引數設定為指定值。 |
-|     | reqCookie，值 | 將指定的Cookie設定為指定的值。 |
-|     | 變數，值 | 將指定的變數設為指定值。 |
-| **未設定** | reqHeader | 移除指定的標頭。 |
-|         | queryParam | 移除指定的查詢引數。 |
-|         | reqCookie | 移除指定的Cookie。 |
+| **設定** | （reqProperty、reqHeader、queryParam或reqCookie），值 | 將指定的請求引數（僅支援「path」屬性）或請求標頭、查詢引數或Cookie設定為給定值。 |
+|     | 變數，值 | 將指定的要求屬性設定為指定的值。 |
+| **未設定** | reqProperty | 移除指定值的指定請求引數（僅支援「path」屬性），或請求標頭、查詢引數或Cookie。 |
 |         | 變數 | 移除指定的變數。 |
 |         | queryParamMatch | 移除符合指定規則運算式的所有查詢引數。 |
-| **replace** | reqProperty，符合，值 | 以新值取代部分請求屬性。 目前僅支援「path」屬性。 |
+| **轉換** | op：replace， （reqProperty或reqHeader、queryParam或reqCookie），match，replacement | 以新值取代部分請求引數（僅支援「path」屬性），或請求標頭、查詢引數或Cookie。 |
+|              | op：tolower， （reqProperty、reqHeader、queryParam或reqCookie） | 將請求引數（僅支援「path」屬性）或請求標頭、查詢引數或Cookie設定為小寫值。 |
+
+動作可以鏈結在一起。 例如：
+
+```
+actions:
+    - type: transform
+      reqProperty: path
+      op: replace
+      match: \.html$
+      replacement: ""
+    - type: transform
+      reqProperty: path
+      op: tolower
+```
 
 ### 變數 {#variables}
 
