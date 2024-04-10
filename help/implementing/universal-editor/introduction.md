@@ -2,23 +2,25 @@
 title: Universal Editor 簡介
 description: 瞭解通用編輯器如何讓您看到即得(WYSIWYG)編輯任何Headless和Headful體驗。 了解它如何幫助內容作者提供卓越的體驗、提高其內容速度，以及如何提供最先進的開發人員體驗。
 exl-id: d4fc2384-a0f5-4a6f-9572-62749786be4c
-source-git-commit: 11a244b7dd4810fbfec92b3effc362102e7322dc
+source-git-commit: 24496f81313bd58f60aa6d251c46f11fb24d1dbd
 workflow-type: tm+mt
-source-wordcount: '868'
-ht-degree: 85%
+source-wordcount: '983'
+ht-degree: 64%
 
 ---
 
 
 # Universal Editor 簡介 {#introduction}
 
-瞭解通用編輯器如何讓您看到即得(WYSIWYG)編輯任何Headless和Headful體驗。 了解它如何幫助內容作者提供卓越的體驗、提高其內容速度，以及如何提供最先進的開發人員體驗。
+通用編輯器是多功能的視覺化編輯器，屬於Adobe Experience Manager Sites的一部分。 它可讓作者對任何Headless或Headful體驗進行「所見即所得」(WYSIWYG)編輯。 瞭解它如何協助內容作者提供卓越的體驗，以及如何為開發人員提供無與倫比的自由。
 
 ## 背景 {#background}
 
-AEM 內容作者最強大的工具就是頁面編輯器。頁面編輯器提供直覺、視覺化且與內容相關的 WYSIWYG 編寫體驗，只需一點培訓即可讓作者看見內容將如何顯示。
+Universal Editor提供有效率且直覺的內容撰寫體驗，只需最少的訓練。 有了它，作者可以直接在網頁體驗的內容中管理其內容，以及它給訪客呈現的確切外觀。 作為一個真正的編輯器服務和整體上更靈活，它打算最終取代頁面編輯器。
 
-但是，頁面編輯器只能編輯 AEM 頁面內容、結構和其中包含的元件。但在現在，內容很少只來自同一個地方。Universal Editor 提供與頁面編輯器相同的就地編輯體驗，但適用於任意實作中任何方面的內容。
+由於通用編輯器支援對所有形式的AEM內容進行相同一致的視覺編輯，因此作者可受益於通用編輯器的彈性：內容片段和頁面元件同樣可以進行就地編輯和版面配置。 當在網路體驗中並排顯示時，甚至可以編輯這兩種形式的內容，作者不必切換內容。 相較於AEM先前的編輯者，這是大幅度的改善，僅支援一種型別的內容。
+
+開發人員可受益於Universal Editor的多功能性，因為它也支援實作的真正分離。 它可讓開發人員運用幾乎任何他們選擇的架構或架構，而不需要施加任何SDK或技術限制。 此彈性甚至可讓您輕鬆針對通用編輯器檢測現有的網頁應用程式，而無需重新架構。
 
 ## 真正通用 {#universal}
 
