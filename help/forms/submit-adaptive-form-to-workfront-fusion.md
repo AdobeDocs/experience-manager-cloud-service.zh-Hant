@@ -6,7 +6,7 @@ topic-tags: author, developer
 feature: Adaptive Forms
 role: Admin, User
 exl-id: d3efb450-a879-40ae-8958-0040f99bdafc
-source-git-commit: 8923bfbb0e46961485ff360c0135ebdde6d8cab3
+source-git-commit: 559b4afa975dcd2204cd06c95f19ed38da00033e
 workflow-type: tm+mt
 source-wordcount: '1255'
 ht-degree: 3%
@@ -15,7 +15,7 @@ ht-degree: 3%
 
 # 向 Adobe Workfront Fusion 提交最適化表單
 
-<span class="preview"> 此功能可在早期採用者計畫下取得。 您可以從您的官方電子郵件ID寫信到aem-forms-early-adopter-program@adobe.com ，以加入率先採用者計畫並請求存取該功能。 </span>
+<span class="preview"> 此功能可在早期採用者計畫下取得。 您可以從您的官方電子郵件ID寫信到aem-forms-ea@adobe.com ，以加入率先採用者計畫並請求存取該功能。 </span>
 
 [Adobe Workfront Fusion](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/workfront-fusion-overview.html) 自動化重複相同工作的程式，例如檔案核准工作流程、電子郵件篩選和排序，讓您專注在新工作上，而非重複工作。 Adobe Workfront Fusion包含多個情境。 案例由一系列模組組成，這些模組會在應用程式和Web服務之間執行資料傳輸。 在案例中，您會新增各種步驟（模組）來自動化工作。
 

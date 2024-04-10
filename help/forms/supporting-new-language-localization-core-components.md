@@ -3,10 +3,10 @@ title: 如何根據核心元件為最適化表單新增對新區域設定的支�
 description: 瞭解如何為最適化表單新增地區設定。
 feature: Adaptive Forms, Core Components
 exl-id: bc06542b-84c8-4c6a-a305-effbd16d5630
-source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
+source-git-commit: 559b4afa975dcd2204cd06c95f19ed38da00033e
 workflow-type: tm+mt
 source-wordcount: '1333'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 3%
 | 基礎元件 | [按一下這裡](supporting-new-language-localization.md) |
 | 核心元件 | 本文章 |
 
-<span class="preview"> 由右至左語言支援功能在早期採用者計畫下提供。 您可以從您的官方電子郵件ID寫信到aem-forms-early-adopter-program@adobe.com ，以加入率先採用者計畫並請求存取該功能。 </span>
+<span class="preview"> 由右至左語言支援功能在早期採用者計畫下提供。 您可以從您的官方電子郵件ID寫信到aem-forms-ea@adobe.com ，以加入率先採用者計畫並請求存取該功能。 </span>
 
 AEM Forms提供英文(en)、西班牙文(es)、法文(fr)、義大利文(it)、德文(de)、日文(ja)、葡萄牙文 — 巴西(pt-BR)、中文(zh-CN)、中文 — 台灣(zh-TW)和韓文(ko-KR)地區設定的立即可用支援。 您也可以新增對更多地區設定的支援，例如印地語(hi_IN)。 您也可以新增這些地區設定，以從右至左(RTL)語言呈現最適化Forms，例如阿拉伯文、波斯文和烏爾都文。
 
@@ -177,7 +177,7 @@ AEM Forms提供範例使用者端資料庫，協助您輕鬆新增地區設定�
    * **針對機器翻譯**：重新建立字典及 [執行翻譯專案](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md). 建立翻譯專案後新增至最適化表單的欄位仍維持未翻譯狀態。
    * **針對人工翻譯**：使用位於的UI匯出字典 `[AEM Forms Server]/libs/cq/i18n/gui/translator.html`. 更新新新增欄位的字典並上傳。
 
-## 檢視更多
+## 了解更多
 
 * [產生最適化Forms的記錄檔案](/help/forms/generate-document-of-record-core-components.md)
 * [新增最適化表單至 AEM Sites 頁面或體驗片段](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
