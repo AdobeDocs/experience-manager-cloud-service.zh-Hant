@@ -2,10 +2,10 @@
 title: 使用 Edge Delivery Services 專案進行 AEM 製作的內容模式
 description: 了解使用 Edge Delivery Services 專案進行 AEM 製作的內容模式如何運作，以及如何對您自己的內容建立模式。
 exl-id: e68b09c5-4778-4932-8c40-84693db892fd
-source-git-commit: becba7698afe4aa0629bf54fa0d0d26156784b5f
+source-git-commit: eef58b59cd528743702e3d436acec02dbba58211
 workflow-type: tm+mt
-source-wordcount: '2072'
-ht-degree: 99%
+source-wordcount: '2095'
+ht-degree: 100%
 
 ---
 
@@ -22,8 +22,8 @@ ht-degree: 99%
 在開始為專案的內容建立模式之前，請確保先閱讀以下文件。
 
 * [快速入門 - 開發人員教學課程](/help/edge/developer/tutorial.md)
-* [標示、區段、區塊和自動封鎖](/help/edge/developer/markup-sections-blocks.md)
-  <!--* [Block Collection](/help/edge/developer/block-collection.md)-->
+* [標記語言、區段、區塊和自動進行區塊](/help/edge/developer/markup-sections-blocks.md)
+* [區塊集合](/help/edge/developer/block-collection.md)
 
 為了提出一個引人注目的內容模型 (採用與內容來源無關的方式)，了解這些概念至關重要。本文件提供有關於專為 AEM 製作所實施機制的詳細資訊。
 
@@ -323,7 +323,7 @@ ht-degree: 99%
 
 使用[所說明的區塊結構機制，](#block-structure)有可能建立一個內容模式，將 AEM 持續擁有的內容一對一對應到傳遞層。
 
-在每項專案早期，必須仔細考慮每個區塊的內容模式。模式必須與內容來源和製作體驗無關，以便允許作者在重複使用區塊實施和樣式時切換或組合這些實施。如需詳細資訊和一般指引，請參閱 [David模型（取兩塊）。](https://www.aem.live/docs/davidsmodel) <!--More specifically, the [block collection](/help/edge/developer/block-collection.md) contains a extensive set of content models for specific use cases of common user interface patterns.-->
+在每項專案早期，必須仔細考慮每個區塊的內容模式。模式必須與內容來源和製作體驗無關，以便允許作者在重複使用區塊實施和樣式時切換或組合這些實施。更多詳細資訊和一般指導可以在 [David 模式 (第 2 步) 中找到。](https://www.aem.live/docs/davidsmodel) 更具體地說，[區塊集合](/help/edge/developer/block-collection.md)包含廣泛的內容模式組，用於常見使用者介面模式的特定使用案例。
 
 使用 Edge Delivery Services 進行 AEM 製作時，會有一個問題：當資訊是以由多個欄位組成的表單所製作，而不是在上下文中編輯語義標記語言 (如 RTF 文字) 時，如何提供令人信服的語義內容模式。
 

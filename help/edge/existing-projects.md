@@ -3,9 +3,9 @@ title: 將 Edge Delivery Services 與現有 AEM 專案結合使用
 description: 了解如何在現有 AEM 專案中利用 Edge Delivery Services 的優勢
 feature: Edge Delivery Services
 exl-id: f54aac3a-1d0c-4be0-9aa6-616217e0e458
-source-git-commit: becba7698afe4aa0629bf54fa0d0d26156784b5f
+source-git-commit: eef58b59cd528743702e3d436acec02dbba58211
 workflow-type: tm+mt
-source-wordcount: '315'
+source-wordcount: '339'
 ht-degree: 100%
 
 ---
@@ -27,7 +27,7 @@ AEM 頁面編輯器僅適用於 [AEM 元件](/help/implementing/developing/compo
 
 在第一階段，您可以繼續使用現有的 AEM 網站結構、元件和製作工具。網站轉譯將透過使用 JavaScript 和 CSS 的區塊進行重建，並將透過 Edge Delivery Services 進行交付。
 
-<!--Please see the [Build section](/help/edge/developer/block-collection.md) of the Edge Delivery Services documentation for more details on blocks and how to develop for Edge Delivery services.-->
+請參閱 Edge Delivery Services 文件的[「建置」區段](/help/edge/developer/block-collection.md) ，了解有關區塊以及如何開發 Edge Delivery Services 更多詳細資訊。
 
 應用程式建立工具上的轉換器需要轉換 AEM 轉譯的 HTML 輸出，並將其傳送至 Edge Delivery Services。
 
