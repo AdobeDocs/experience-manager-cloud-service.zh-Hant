@@ -3,9 +3,9 @@ title: AEM Headless as a Cloud Service 快速入門
 description: 在 AEM Headless 開發人員歷程的這一部分，了解 AEM Headless 先決條件。
 exl-id: 9661e17b-fa9f-4689-900c-412b068e942c
 source-git-commit: 998651bf0529d6a8aab0cd340a1c171974c405f6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3057'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -95,7 +95,7 @@ AEM 支援 CMS 的全 Headless 模型和傳統的全堆疊或 Headful 模型。�
 
 但是，一旦您了解 AEM Headless 功能，您就應明白混合模型帶來的額外可能性。下面列出了這些案例，以便您明白。在歷程結束時，您會更詳盡地了解這些概念，以防您的專案需要這種靈活性。
 
-### 您已經擁有無周邊內容的外部使用，例如單頁應用程式(SPA)。 {#already-have-a-spa}
+### 您有 Headless 內容的外部取用者，例如單次頁面應用程式 (SPA)。 {#already-have-a-spa}
 
 讓我們假設您的基本要求至少是將內容從 AEM 傳遞到現有的外部服務。
 
