@@ -3,8 +3,8 @@ title: 開始使用 AEM Forms Edge Delivery Services - 開發人員教學課程
 description: 本教學課程可協助您啟動並執行新的 Adob​​e Experience Manager (AEM) Forms 專案。您將在 10 到 20 分鐘內建立好自己的表單。
 feature: Edge Delivery Services
 exl-id: bb7e93ee-0575-44e1-9c5e-023284c19490
-source-git-commit: 984ead39ef8c20f06ac63c88380323e403a08712
-workflow-type: ht
+source-git-commit: 74e3bc79a734bd2c686e28cdcbbda96a58268c77
+workflow-type: tm+mt
 source-wordcount: '1848'
 ht-degree: 100%
 
@@ -192,7 +192,7 @@ AEM Forms 範本可協助您很快開始使用預先設定最適化表單區塊�
 
 範例內容包含一個「查詢」工作表，這是「查詢」表單的範本。 工作表的每一列代表一個[表單欄位](/help/edge/docs/forms/form-components.md#available-components)，且欄標題定義[欄位屬性](/help/edge/docs/forms/form-components.md#available-components)。 使用此範例表單，讓您在建立表單上佔有優勢。
 
-![查詢表單](/help/edge/assets/enquiry-form-microsoft-sharepoint.png)
+![查詢表單](/help/edge/docs/forms/assets/enquiry-form-microsoft-sharepoint.png)
 
 讓我們從更新欄位標籤開始。 開啟「查詢」表進行編輯，將提交按鈕的標籤變更為`Let's Chat`，並使用 AEM Sidekick 預覽和發佈檔案。
 

@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的運作方式以及該軟體可以為您做哪些事。
 breadcrumb-title: 使用手冊
 user-guide-title: AEM as a Cloud Service
-source-git-commit: aaae2986d0b807b34055a48c810c32167d3715d0
+source-git-commit: b940877abff45e2a9ee046aec74af067007f41c3
 workflow-type: tm+mt
-source-wordcount: '4862'
+source-wordcount: '4850'
 ht-degree: 99%
 
 ---
@@ -790,18 +790,25 @@ ht-degree: 99%
    + [Adobe Commerce PWA Studio](/help/commerce-cloud/pwa-studio/getting-started.md)
    + [移轉](/help/commerce-cloud/migration.md)
    + [常見問題集](/help/commerce-cloud/faq.md)
-+ 使用 Edge Delivery Services 的 AEM {#edge-delivery}
-   + [開始使用 Edge Delivery Services](/help/edge/overview.md)
-   + [使用 Edge Delivery](/help/edge/using.md)
-   + [開發人員快速入門指南](/help/edge/edge-dev-getting-started.md)
-   + [為 Edge Delivery 製作內容](/help/edge/authoring.md)
-   + [為 Edge Delivery 發佈內容](/help/edge/publishing.md)
-   + [為 Edge Delivery 開發](/help/edge/developing.md)
-   + [內容模型](/help/edge/content-modeling.md)
-   + [建立區塊](/help/edge/create-block.md)
-   + [表格資料和試算表](/help/edge/tabular-data.md)
-   + [現有專案和 Edge Delivery](/help/edge/existing-projects.md)
-   + 建置 Edge Delivery 應用程式 {#build}
++ Edge Delivery Services {#edge-delivery}
+   + [Edge Delivery Services 概觀](/help/edge/overview.md)
+   + [搭配AEM使用Edge Delivery Services](/help/edge/using.md)
+   + AEM式製作 {#aem-authoring}
+      + [為 Edge Delivery 製作內容](/help/edge/aem-authoring/authoring.md)
+      + [為 Edge Delivery 發佈內容](/help/edge/aem-authoring/publishing.md)
+      + [開發人員快速入門指南](/help/edge/aem-authoring/edge-dev-getting-started.md)
+      + [建立區塊](/help/edge/aem-authoring/create-block.md)
+      + [內容模型](/help/edge/aem-authoring/content-modeling.md)
+      + [表格資料和試算表](/help/edge/aem-authoring/tabular-data.md)
+      + [現有專案和 Edge Delivery](/help/edge/aem-authoring/existing-projects.md)
+   + 檔案式製作 {#document-authoring}
+      + [製作](/help/edge/docs/authoring.md)
+      + [大量中繼資料](/help/edge/docs/bulk-metadata.md)
+      + [預留位置](/help/edge/docs/placeholders.md)
+      + [Sitemap](/help/edge/developer/sitemap.md)
+      + [SharePoint 設定](/help/edge/docs/setup-customer-sharepoint.md)
+      + [Slack 機器人](/help/edge/docs/slack.md)
+   + 建立應用程式 {#build}
       + [快速入門 - 開發人員教學課程](/help/edge/developer/tutorial.md)
       + [專案剖析](/help/edge/developer/anatomy-of-a-franklin-project.md)
       + [區塊集合](/help/edge/developer/block-collection.md)
@@ -813,21 +820,14 @@ ht-degree: 99%
       + [Favicon](/help/edge/developer/favicon.md)
       + [自訂標頭](/help/edge/docs/custom-headers.md)
       + [開發人員最佳做法](/help/edge/docs/dev-collab-and-good-practices.md)
-   + 發佈 Edge Delivery 應用程式  {#publish}
-      + [製作](/help/edge/docs/authoring.md)
-      + [大量中繼資料](/help/edge/docs/bulk-metadata.md)
-      + [預留位置](/help/edge/docs/placeholders.md)
-      + [Sitemap](/help/edge/developer/sitemap.md)
-      + [SharePoint 設定](/help/edge/docs/setup-customer-sharepoint.md)
-      + [Slack 機器人](/help/edge/docs/slack.md)
-   + 啟動 Edge Delivery 應用程式 {#launch}
+   + 啟動應用程式 {#launch}
       + [上線檢查清單](/help/edge/docs/go-live-checklist.md)
       + [推送失效](/help/edge/docs/setup-byo-cdn-push-invalidation.md)
       + [Cloudflare Worker 設定](/help/edge/docs/byo-cdn-cloudflare-worker-setup.md)
       + [Akamai 設定](/help/edge/docs/byo-cdn-akamai-setup.md)
       + [快速設定](/help/edge/docs/byo-cdn-fastly-setup.md)
       + [重新導向](/help/edge/docs/redirects.md)
-   + 建立 Edge Delivery Forms {#build-forms}
+   + 建立Forms {#build-forms}
       + [概觀](/help/edge/docs/forms/overview.md)
       + 立即開始 {#getting-started-eds-forms}
          + [快速入門](/help/edge/docs/forms/tutorial.md)
@@ -848,7 +848,7 @@ ht-degree: 99%
          + [對表單進行即時使用者監控](/help/edge/docs/forms/real-time-user-monitoring-for-forms.md)
       + 參考資料 {#forms-references}
          + [最適化表單區塊元件及其屬性](/help/edge/docs/forms/form-components.md)
-   + Edge Delivery 資源 {#resources}
+   + Edge傳遞資源 {#resources}
       + Sidekick {#sidekick}
          + [使用 Sidekick](/help/edge/docs/sidekick.md)
          + [安裝擴充功能](/help/edge/docs/sidekick-extension.md)
