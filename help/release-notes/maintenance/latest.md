@@ -5,7 +5,7 @@ exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 source-git-commit: 1dd2eae9201c86d2cdac78ff99634eff8ca57a05
 workflow-type: tm+mt
 source-wordcount: '272'
-ht-degree: 77%
+ht-degree: 88%
 
 ---
 
@@ -13,11 +13,11 @@ ht-degree: 77%
 
 下節是 Experience Manager as a Cloud Service 目前維護版本的技術版本發行說明。
 
-## 15860 版 {#release-15860}
+## 15860 版本 {#release-15860}
 
-以下摘要說明維護版本15860數的持續改善，該版本於2024年4月10日公開發佈。 之前的維護版本是版本 15787。
+以下摘要說明維護版本15860數的持續改善，該版本於2024年4月10日公開發佈。 上一個維護版本是版本 15787。
 
-2024.3.0 功能啟用將為此維護版本提供完整功能集。如需詳細資訊，請參閱 [Experience Manager 發行藍圖](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html)。
+2024.3.0 功能啟用將為此維護版本提供完整功能集。如需詳細資訊，請參閱 [Experience Manager 發行藍圖](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=zh-Hant)。
 
 ### 增強功能 {#enhancements-15860}
 
@@ -31,11 +31,11 @@ ht-degree: 77%
 
 無。
 
-### 已棄用的功能和API {#deprecated-15860}
+### 已過時的功能和 API {#deprecated-15860}
 
 * [Adobe Developer Console 中的 JWT 憑證已被取代](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md)
 
-請檢視 [過時和移除的功能和API](/help/release-notes/deprecated-removed-features.md) 以瞭解AEMas a Cloud Service中已過時或移除的內容。
+查看「[已過時和已移除的功能和 API](/help/release-notes/deprecated-removed-features.md)」，了解 AEM as a Cloud Service 中已過時或已移除的功能。
 
 ### 變更通知 {#change-notice-15860}
 
@@ -55,4 +55,4 @@ ht-degree: 77%
 | AEM OAK | 1.60-T20240131102219-0cde853 | [Oak API 1.60.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.60.0/index.html) |
 | AEM SLING API | 2.27.2 版 | [Apache Sling API 2.27.2 API](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html) |
 | AEM HTL | 1.4.20-1.4.0 版本 | [HTML 範本語言規格](https://github.com/adobe/htl-spec) |
-| AEM 核心元件 | 2.24.4 版 | [AEM WCM 核心元件](https://github.com/adobe/aem-core-wcm-components) |
+| AEM 核心元件 | 2.24.4 版本 | [AEM WCM 核心元件](https://github.com/adobe/aem-core-wcm-components) |
