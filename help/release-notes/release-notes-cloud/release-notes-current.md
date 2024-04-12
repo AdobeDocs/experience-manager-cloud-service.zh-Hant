@@ -3,7 +3,7 @@ title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 最新發行說明�
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 最新發行說明。'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 0ef1e1915f2fdbe44cff209851eb43cc9d69958e
+source-git-commit: af9e30ffb585619d1581db94d3961f561e12df2b
 workflow-type: tm+mt
 source-wordcount: '2261'
 ht-degree: 31%
@@ -240,3 +240,4 @@ Adobe Managed CDN現在支援Edge Side Include (ESI)，這是邊緣層級動態�
 ## 移轉工具 {#migration-tools}
 
 您可以在[這裡](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)找到移轉工具版本的完整清單。
+
