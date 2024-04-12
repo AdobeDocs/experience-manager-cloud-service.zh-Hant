@@ -3,10 +3,10 @@ title: 使用 Edge Delivery Services 進行 AEM 製作的開發人員快速入�
 description: 本指南將協助您啟動並執行新的 Adobe Experience Manager 網站，以使用 Edge Delivery Services 和 Universal Editor 進行內容製作。
 feature: Edge Delivery Services
 exl-id: a71184a7-c954-442e-b276-99edc6d2acd8
-source-git-commit: 11f721b4a617c99e30329d7196f42d7b48067f1b
+source-git-commit: 7cd19f674d3eae2bcbe2b40402e135d4db6e3035
 workflow-type: tm+mt
-source-wordcount: '1284'
-ht-degree: 90%
+source-wordcount: '1297'
+ht-degree: 88%
 
 ---
 
@@ -130,7 +130,7 @@ Edge Delivery 運用 GitHub，可讓您直接從自己的 GitHub 存放庫管理
 >
 >若要使用 Universal Editor 編輯您的網站，您必須使用 Chromium 式瀏覽器。
 
-1. 透過您的「[專案 Slack 管道](/help/edge/docs/slack.md)」向 Adobe Engineering 要求最新的「使用 Edge Delivery Services 進行 AEM 製作」網站範本。
+1. 請前往GitHub，下載最新的「使用Edge Delivery Services進行AEM編寫」網站範本： [`https://github.com/adobe-rnd/aem-boilerplate-xwalk`](https://github.com/adobe-rnd/aem-boilerplate-xwalk).
 
 1. 登入您的 AEM as a Cloud Service 製作執行個體，並瀏覽至 Sites 主控台，然後點選或按一下「**建立** -> **根據範本的網站**」。
 
@@ -141,6 +141,8 @@ Edge Delivery 運用 GitHub，可讓您直接從自己的 GitHub 存放庫管理
    ![匯入範本](assets/edge-dev-getting-started/site-templates.png)
 
 1. 上傳 Adobe Engineering 為您提供的「使用 Edge Delivery Services 進行 AEM 製作」網站範本。
+
+   * 範本只能上傳一次。 上傳後，即可重複使用它來建立其他網站。
 
 1. 匯入範本後，該範本將出現在精靈中。點選或按一下以選取該範本，然後點選或按一下「**下一步**」。
 
