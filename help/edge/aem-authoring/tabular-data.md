@@ -3,7 +3,7 @@ title: 使用試算表管理表格資料
 description: 了解如何使用試算表管理各種值的表格資料，例如使用「使用 Edge Delivery Services 的 AEM」網站的中繼資料和重新導向。
 feature: Edge Delivery Services
 exl-id: 26d4db90-3e4b-4957-bf21-343c76322cdc
-source-git-commit: 61d65c37d263edef641db42589fc0f28a8eb9078
+source-git-commit: 11f721b4a617c99e30329d7196f42d7b48067f1b
 workflow-type: tm+mt
 source-wordcount: '958'
 ht-degree: 100%
@@ -163,3 +163,4 @@ ht-degree: 100%
 1. 請依照重新導向試算表的說明，建立試算表並發佈。
 
 1. 請依照重新導向試算表的說明，將對應新增至 `paths.json` 檔案。
+

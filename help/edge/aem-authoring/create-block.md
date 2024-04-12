@@ -2,7 +2,7 @@
 title: 建立經檢測適用 Universal Editor 的區塊
 description: 了解如何在使用 Edge Delivery Services 專案進行的 AEM 製作環境中，建立經檢測適用 Universal Editor 的區塊。
 exl-id: 65a5600a-8d16-4943-b3cd-fe2eee1b4abf
-source-git-commit: cc41ff626f6fc6d72785401e3ba38b189945bf74
+source-git-commit: 11f721b4a617c99e30329d7196f42d7b48067f1b
 workflow-type: tm+mt
 source-wordcount: '1297'
 ht-degree: 93%
@@ -255,3 +255,4 @@ Adobe 建議您採用三階段方法來開發區塊：
 >[!TIP]
 >
 >如需以AEMas a Cloud Service作為內容來源來建立啟用AEM編寫的新Edge Delivery Services專案的端對端逐步解說，請檢視 [此AEM GEM網路研討會。](https://experienceleague.adobe.com/en/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)
+

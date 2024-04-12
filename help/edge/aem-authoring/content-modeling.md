@@ -2,7 +2,7 @@
 title: 使用 Edge Delivery Services 專案進行 AEM 製作的內容模式
 description: 了解使用 Edge Delivery Services 專案進行 AEM 製作的內容模式如何運作，以及如何對您自己的內容建立模式。
 exl-id: e68b09c5-4778-4932-8c40-84693db892fd
-source-git-commit: bf6d0ff2f4aebb6620be46704072743578b096d2
+source-git-commit: 11f721b4a617c99e30329d7196f42d7b48067f1b
 workflow-type: tm+mt
 source-wordcount: '2233'
 ht-degree: 93%
@@ -657,3 +657,4 @@ AEM 中提供的許多預設頁面屬性都會對應到文件中各別的頁面�
 >[!TIP]
 >
 >如需以AEMas a Cloud Service作為內容來源來建立啟用AEM編寫的新Edge Delivery Services專案的端對端逐步解說，請檢視 [此AEM GEM網路研討會。](https://experienceleague.adobe.com/en/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)
+

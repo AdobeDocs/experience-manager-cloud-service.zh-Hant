@@ -3,7 +3,7 @@ title: 將 Edge Delivery Services 與現有 AEM 專案結合使用
 description: 了解如何在現有 AEM 專案中利用 Edge Delivery Services 的優勢
 feature: Edge Delivery Services
 exl-id: f54aac3a-1d0c-4be0-9aa6-616217e0e458
-source-git-commit: b940877abff45e2a9ee046aec74af067007f41c3
+source-git-commit: 11f721b4a617c99e30329d7196f42d7b48067f1b
 workflow-type: tm+mt
 source-wordcount: '324'
 ht-degree: 100%
@@ -39,3 +39,4 @@ AEM 頁面編輯器僅適用於 [AEM 元件](/help/implementing/developing/compo
 ## 第 2 階段 - 切換至 Universal Editor {#switch-ue}
 
 在這個階段中，AEM 頁面編輯器將會由 Universal Editor 取代。由於 Universal Editor 可以直接使用區塊，因此不再需要 AEM 核心元件和轉換器。
+

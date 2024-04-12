@@ -3,7 +3,7 @@ title: 為 Edge Delivery Services 發佈內容
 description: 了解內容發佈如何與 Edge Delivery Services 搭配使用，以及如何使用 Edge Delivery Services 發佈 AEM 內容。
 feature: Edge Delivery Services
 exl-id: 32fbb144-9175-47a9-bb5a-ca15f3fcd2d8
-source-git-commit: b940877abff45e2a9ee046aec74af067007f41c3
+source-git-commit: 11f721b4a617c99e30329d7196f42d7b48067f1b
 workflow-type: tm+mt
 source-wordcount: '280'
 ht-degree: 100%
@@ -39,3 +39,4 @@ ht-degree: 100%
 >[!NOTE]
 >
 >依預設，Edge Delivery Services 管理 API 未受保護，可用於在未經驗證的情況下發佈或取消發佈文件。為了設定管理 API 的驗證 (如「[設定作者的身份驗證](https://www.aem.live/docs/authentication-setup-authoring)」中的文件所述)，您的專案必須配置 API_KEY 以授予發佈服務的存取權。[請聯絡 Slack 上的 Adob&#x200B;&#x200B;e 團隊](/help/edge/docs/slack.md)以要求指導。
+
