@@ -4,10 +4,11 @@ description: 根據欄位、內容和表單元件比較兩個不同的表單。
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Adaptive Forms, Core Components
 hidefromtoc: true
-source-git-commit: 4e60d7315fe7a92d608f0858a7108f7590e9aefa
+exl-id: ce4ad231-a766-4ab0-8649-20cf16bf54ce
+source-git-commit: e71e247f5b6de806b36c5c759b29e7273511f94e
 workflow-type: tm+mt
-source-wordcount: '113'
-ht-degree: 10%
+source-wordcount: '153'
+ht-degree: 9%
 
 ---
 
@@ -21,6 +22,11 @@ ht-degree: 10%
 
    ![比較最適化表單](compare-two-forms.png)
 
-1. 按一下使用者，就會在預覽模式中看到兩個表單，如影像所示。
+1. 按一下後，您會在預覽模式中看到兩個表單。 它會選取第一個表單作為基本表單，與第二個表單進行比較，然後比較兩個表單之間的內容（相似和有差別）。 第一個表單的差異化內容會標示為綠色，如影像所示。
 
    ![比較的表單](compared-forms.png)
+
+## 另請參閱 {#see-also}
+
+{{see-also}}
+

@@ -3,7 +3,7 @@ title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 最新發行說明�
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 最新發行說明。'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: af9e30ffb585619d1581db94d3961f561e12df2b
+source-git-commit: e71e247f5b6de806b36c5c759b29e7273511f94e
 workflow-type: tm+mt
 source-wordcount: '2261'
 ht-degree: 31%
@@ -134,22 +134,22 @@ Assets Essentials可讓管理員管理存放庫中私有集合的存取層級。
 
   您現在可以透過以下方式簡化自訂功能互動：
 
-   * 運用新註解以提供更清楚的函式定義。
-   * 針對自訂函式使用快取機制，以提高表單效能。
-   * 可順暢地使用自訂函式中的全域物件。
-   * 在自訂函式中定義及使用選用引數。
+   * [運用新註解以提供更清楚的函式定義](/help/forms/create-and-use-custom-functions.md#supported-javascript-annotations-for-custom-function).
+   * [針對自訂函式使用快取機制，以提高表單效能](/help/forms/create-and-use-custom-functions.md#caching-support-for-custom-function).
+   * [在自訂函式內無縫使用全域物件](/help/forms/create-and-use-custom-functions.md#field-and-global-scope-objects-in-custom-functions).
+   * [在自訂函式中定義及使用選用引數](/help/forms/create-and-use-custom-functions.md#parameter).
 
   此更新也會對規則編輯器功能帶來下列增強功能。 您可以：
 
-   * 針對條件式執行實作強大的「when-then-else」邏輯。
+   * 實作功能強大 [&quot;when-then-else&quot;](/help/forms/rule-editor-core-components.md#when) 條件執行的邏輯。
    * 利用現代JavaScript功能，例如左鍵和箭頭函式（ES10支援）。
    * 不僅驗證或重設欄位，而且驗證或重設整個面板和表單，擴大對使用者互動的控制。
 
   這些改進在視覺規則編輯器中提供更直覺且功能強大的撰寫規則和自訂函式體驗。
 
-* **建立最適化表單的多個版本**：您現在可以輕鬆管理現有表單的變體。 這可簡化版本控制，並協助進行表單最佳化的比較，全都透過單一、簡化的工作流程完成。
+* **[建立最適化表單的多個版本](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md)**：您現在可以輕鬆管理現有表單的變體。 這可簡化版本控制，並協助進行表單最佳化的比較，全都透過單一、簡化的工作流程完成。
 
-* **比較最適化表單**：您現在可以輕鬆比較兩個表單，以識別兩個表單之間的差異。 它可讓團隊成員有效率地比較修訂版本和討論變更，以利順暢的協同合作。
+* **[比較最適化表單](/help/forms/compare-forms.md)**：您現在可以輕鬆比較兩個表單，以識別兩個表單之間的差異。 它可讓團隊成員有效率地比較修訂版本和討論變更，以利順暢的協同合作。
 
 * **手寫簽名元件的協助工具增強功能**：此更新大幅改善塗鴉簽名元件的協助工具：
 
@@ -179,7 +179,7 @@ Assets Essentials可讓管理員管理存放庫中私有集合的存取層級。
 
   <br/> ![Adobe Workfront](/help/forms/assets/adobe-workfront.png) <br/> 使用Adobe Workfront Fusion Connector，您可以設計在提交最適化表單時自動觸發的工作流程。 例如，設想一個情境，其中初始工作流程以指派給特定個人審查提交的資料，從而允許根據透過最適化表單擷取的資訊核准或拒絕應用程式。 這項簡化的整合可提升效率，並將工作流程自動化提升到新的水準。|
 
-* **Reader延伸服務**： AEM Forms Communication API已推出Reader擴充功能，可讓您新增表單填寫和註解等功能至一般PDF，讓使用者能透過免費Adobe Reader互動。
+* **[Reader延伸服務](/help/forms/aem-forms-cloud-service-communications-introduction.md#reader-extension-service)**： AEM Forms Communication API已推出Reader擴充功能，可讓您新增表單填寫和註解等功能至一般PDF，讓使用者能透過免費Adobe Reader互動。
 
 * [從右至左語言支援](/help/forms/supporting-new-language-localization-core-components.md)：以核心元件為主的最適化表單現在可以呈現從右至左 (RTL) 語言 (如阿拉伯文、波斯文和烏都文)。全球有超過 20 億人使用 RTL 語言。使用 RTL 語言的表單可讓您擴展最適化表單的範圍，以滿足這些不同的受眾並選擇進入 RTL 市場。在某些地區，法律也強制要求以當地語言提供表單。透過適應當地語言，您不僅可以向更廣泛的受眾敞開大門，還可以確保遵守相關法律和法規。
 

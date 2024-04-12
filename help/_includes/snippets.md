@@ -1,8 +1,8 @@
 ---
-source-git-commit: 61d65c37d263edef641db42589fc0f28a8eb9078
+source-git-commit: e71e247f5b6de806b36c5c759b29e7273511f94e
 workflow-type: tm+mt
-source-wordcount: '302'
-ht-degree: 100%
+source-wordcount: '314'
+ht-degree: 99%
 
 ---
 # 代碼片段 {#snippets}
@@ -36,6 +36,9 @@ ht-degree: 100%
 * [將最適化表單資料傳送到 REST 端點](/help/forms/configure-submit-actions-core-components.md#submit-to-rest-endpoint)
 * [將最適化表單資料傳送到 AEM 工作流程](/help/forms/configure-submit-actions-core-components.md#invoke-an-aem-workflow)
 * [使用 Forms 入口網站在 AEM 網站上列出 AEM 最適化 Forms](/help/forms/configure-forms-portal.md)
+* [在最適化表單中新增版本設定、評論和附註](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md)
+* [比較最適化Forms](/help/forms/compare-forms.md)
+
 
 ## 最適化表單提交動作 {#af-submit-action}
 

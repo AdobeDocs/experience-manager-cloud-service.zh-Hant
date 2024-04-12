@@ -5,10 +5,10 @@ Keywords: How to generate document?, Generate PDF document, Manipulation PDF doc
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
 feature: Adaptive Forms, APIs
 role: Admin, Developer, User
-source-git-commit: a22ecddf7c97c5894cb03eb44296e0562ac46ddb
+source-git-commit: e71e247f5b6de806b36c5c759b29e7273511f94e
 workflow-type: tm+mt
-source-wordcount: '1409'
-ht-degree: 78%
+source-wordcount: '1964'
+ht-degree: 56%
 
 ---
 
@@ -186,10 +186,63 @@ DocAssurance服務包含簽名和加密API：
 
 * 使用密碼加密PDF檔案。
 * 從PDF檔案中移除密碼式加密。
+* 擷取套用至PDF檔案的安全性型別。
 * 傳回套用至PDF檔案的安全性型別。
 
 簽名API和加密API都是 [同步API](#types-of-communications-apis-types).
 
+### Reader延伸服務
+
+<span class="preview"> Reader擴充功能屬於早期採用者計畫。 您可以寫信到 `aem-forms-ea@adobe.com` 從您的正式電子郵件id加入率先採用者計畫並請求存取功能。 </span>
+
+Reader擴充功能服務可擴充具有其他使用許可權的Adobe Reader功能，讓貴組織輕鬆共用互動式PDF檔案。 Reader擴充功能服務可與Adobe Reader搭配使用。 此服務會將使用許可權新增至PDF檔案。 此動作會啟動在使用Adobe Reader開啟PDF檔案時通常無法使用的功能，例如新增註釋至檔案、填寫表單和儲存檔案。
+
+
+當PDF檔案新增了適當的使用許可權時，收件者可以在Adobe Reader中執行下列活動：
+
+* 線上上或離線完成PDF檔案和表單，讓收件者可在本機儲存復本以做為記錄，同時仍完整保留新增的資訊。
+* 將PDF檔案儲存至本機硬碟，以保留原始檔案及任何其他註解、資料或附件。
+* 將檔案和媒體剪輯附加至PDF檔案。
+* 使用業界標準的公開金鑰基礎結構(PKI)技術套用數位簽名，簽署、認證和驗證PDF檔案。
+* 以電子方式提交已完成或附註的PDF檔案。
+* 使用PDF檔案和表單作為內部資料庫和Web服務的直覺式開發前端。
+* 與其他人共用PDF檔案，讓檢閱者可以使用直覺式的標籤工具來新增註解。 這些工具包括電子註解、印章、醒目提示和文字刪除線。 Acrobat提供相同功能。
+* 支援條碼式表單解碼。
+
+在Adobe Reader中開啟版權啟用的PDF檔案時，這些特殊的使用許可權功能會自動啟用。 當使用者完成使用已啟用許可權的檔案時，這些功能在Adobe Reader中會再次停用。 除非使用者收到其他已啟用許可權的PDF檔案，否則這些功能會維持停用狀態。
+
+Reader Extension Services的各種使用許可權功能包括：
+
+* **條碼解碼**：解碼PDF檔案中的條碼。
+
+* **註解**：若要在PDF檔案上離線註解。
+
+* **線上註解**：若要在PDF檔案上線上上加上註解。
+
+* **數位簽名**：將數位簽名新增至PDF檔案。
+
+* **動態表單欄位**：新增表單欄位至PDF檔案的方式。
+
+* **動態表單頁面**：將表單頁面新增至PDF檔案。
+
+* **內嵌檔案**：在PDF檔案中內嵌檔案。
+
+* **表單資料匯入**：將表單資料匯入PDF檔案。
+
+* **表單資料匯出**：將表單資料匯入PDF檔案。
+
+* **表單填寫**：在PDF檔案中填寫表單欄位。
+
+* **線上Forms**：從PDF檔案存取Web服務或資料庫。
+
+* **獨立提交**：從PDF檔案離線提交表單資料。
+
+**Reader Extension Services的其他功能**
+
+* **訊息**：開啟PDF檔案並套用一或多個使用許可權時，Adobe Acrobat Reader中顯示的訊息。
+* **解鎖密碼**：開啟加密的PDF檔案所需的密碼。 通常這是檔案開啟密碼，但如果PDF檔案受到許可權密碼的額外保護，則其中之一可能用於開啟檔案。
+
+此 [API參考檔案](https://adobe-aem-document-experimental.redoc.ly/) 提供API提供的所有引數、驗證方法和各種服務的詳細資訊。 API參考檔案也以.yaml格式提供。 您可以下載.yaml並將其上傳到Postman以檢查API的功能。
 
 ## 通訊 API 類型 {#types}
 

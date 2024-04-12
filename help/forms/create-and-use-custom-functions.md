@@ -6,9 +6,9 @@ contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms, Core Components
 exl-id: 24607dd1-2d65-480b-a831-9071e20c473d
-source-git-commit: a22ecddf7c97c5894cb03eb44296e0562ac46ddb
+source-git-commit: e71e247f5b6de806b36c5c759b29e7273511f94e
 workflow-type: tm+mt
-source-wordcount: '3039'
+source-wordcount: '3108'
 ht-degree: 2%
 
 ---
@@ -42,102 +42,112 @@ AEM Forms支援自訂函式，可讓使用者定義JavaScript函式以實作複�
 
 JavaScript註解是用來提供JavaScript程式碼的中繼資料。 其中包含以特定符號(例如/**和@)開頭的註解。 註解提供關於程式碼中函式、變數和其他元素的重要資訊。 最適化表單支援自訂函式的下列JavaScript註解：
 
-* **名稱**
+#### 名稱
+
 此名稱用於識別最適化表單的規則編輯器中的自訂函式。 下列語法可用來命名自訂函式：
-   * `@name [functionName] <Function Name>`
-   * `@function [functionName] <Function Name>`
-   * `@func [functionName] <Function Name>`。
-     `functionName` 是函式的名稱。 不允許空格。
-     `<Function Name>` 是函式在最適化表單的規則編輯器中的顯示名稱。
+
+* `@name [functionName] <Function Name>`
+* `@function [functionName] <Function Name>`
+* `@func [functionName] <Function Name>`。
+  `functionName` 是函式的名稱。 不允許空格。
+  `<Function Name>` 是函式在最適化表單的規則編輯器中的顯示名稱。
 如果函式名稱與函式本身的名稱相同，則可以省略 `[functionName]` 語法中的。 <!-- For example,  in the `calculateAge` custom function, the name is defined as:
 `* @name calculateAge` -->
 
-* **引數**
+#### 參數
+
 引數是自訂函式使用的引數清單。 函式可支援多個引數。 下列語法可用來定義自訂函式中的引數：
-   * `@param {type} name <Parameter Description>`
-   * `@argument` `{type} name <Parameter Description>`
-   * `@arg` `{type}` `name <Parameter Description>`.
-     `{type}` 代表引數型別。  允許的引數型別包括：
-      * string：代表單一字串值。
-      * 數字：代表單一數值。
-      * 布林值：代表單一布林值（true或false）。
-      * 字串[]：代表字串值的陣列。
-      * 數字[]：代表數值陣列。
-      * 布林值[]：代表布林值的陣列。
-      * date：代表單一日期值。
-      * 日期[]：代表日期值的陣列。
-      * array：代表包含各種型別值的泛型陣列。
-      * object：代表傳遞至自訂函式的表單物件，而非直接傳遞其值。
-      * scope：代表自訂函式在執行階段所使用的全域物件。 這會宣告為JavaScript註解中的最後一個引數，且不會顯示在調適型表單的規則編輯器中。 scope引數可存取表單或元件的物件，以觸發表單處理所需的規則或事件。
 
-  引數型別不區分大小寫，而且引數名稱中不允許使用空格。
+* `@param {type} name <Parameter Description>`
+* `@argument` `{type} name <Parameter Description>`
+* `@arg` `{type}` `name <Parameter Description>`.
+  `{type}` 代表引數型別。  允許的引數型別包括：
+   * string：代表單一字串值。
+   * 數字：代表單一數值。
+   * 布林值：代表單一布林值（true或false）。
+   * 字串[]：代表字串值的陣列。
+   * 數字[]：代表數值陣列。
+   * 布林值[]：代表布林值的陣列。
+   * date：代表單一日期值。
+   * 日期[]：代表日期值的陣列。
+   * array：代表包含各種型別值的泛型陣列。
+   * object：代表傳遞至自訂函式的表單物件，而非直接傳遞其值。
+   * scope：代表自訂函式在執行階段所使用的全域物件。 這會宣告為JavaScript註解中的最後一個引數，且不會顯示在調適型表單的規則編輯器中。 scope引數可存取表單或元件的物件，以觸發表單處理所需的規則或事件。
 
-  `<Parameter Description>` 包含有關引數用途的詳細資訊。 它可以有多個字詞。
+    引數型別不區分大小寫，而且引數名稱中不允許使用空格。
+    
+    『&lt;parameter description=&quot;&quot;>&#39;包含有關引數用途的詳細資訊。 它可以有多個字詞。
+    
+    依預設，所有引數都是必要引數。 您可以在引數型別後面新增「=」，或在「[]」中加上引數名稱，將引數定義為選用引數。 在JavaScript註解中定義為選用引數的規則編輯器會顯示為選用引數。
+    若要將變數定義為選用引數，您可以使用下列任一語法：
+    
+    * &#39;@param {type=} Input1&#39;
+    
+    在上一行程式碼中，&#39;Input1&#39;是選用引數，沒有任何預設值。 以預設值宣告選用引數：
+    &#39;@param {string=&lt;value>} input1&#39;
+    
+    &#39;input1&#39;作為選用引數，預設值設為&#39;value&#39;。
+    
+    * &#39;@param {type} [Input1]&#39;
+    
+    在上一行程式碼中，&#39;Input1&#39;是選用引數，沒有任何預設值。 以預設值宣告選用引數：
+    &#39;@param {array} [input1=&lt;value>]`
+    &#39;input1&#39;是陣列型別的選用引數，其預設值設為&#39;value&#39;。
+    請確定引數型別括在大括弧中 {} 且引數名稱會括在方括弧[]中。
+    
+    請考慮下列程式碼片段，其中input2定義為選用引數：
+    
+    ```javascript
+    
+    /**
+    *選用引數函式
+    * @name OptionalParameterFunction
+    * @param {string} input1
+    * @param {string=}輸入2
+    * @return {string}
+    */
+    函式OptionalParameterFunction(input1， input2) {
+    let result = &quot;Result： &quot;；
+    結果+= input1；
+    若為(輸入2！== null) {
+    結果+=「 」+輸入2；
+    }
+    傳回結果；
+    }
+    ```
+    
+    下圖顯示在規則編輯器中使用&#39;OptionalParameterFunction&#39;自訂函式：
+    
+    &lt;!>— ！[選用或必要的引數](/help/forms/assets/optional-default-params.png) —>
+    
+    您可以儲存規則而不指定所需引數的值，但規則不會執行，且會顯示警告訊息如下：
+    
+    &lt;!>— ！[不完整的規則警告](/help/forms/assets/incomplete-rule.png) —>
+    
+    當使用者將選用引數留空時，則會將「未定義」值傳遞給選用引數的自訂函式。
 
-  依預設，所有引數都是必要引數。 您可以透過新增引數將引數定義為選用的 `=` 在引數型別之後或將引數名稱括在  `[]`. 在JavaScript註解中定義為選用引數的規則編輯器會顯示為選用引數。
-若要將變數定義為選用引數，您可以使用下列任一語法：
+#### 傳回型別
 
-   * `@param {type=} Input1`
-在上一行程式碼中， `Input1` 是不含任何預設值的選用引數。 以預設值宣告選用引數：
-     `@param {string=<value>} input1`
-
-     `input1` 作為選用引數，預設值設為 `value`.
-
-   * `@param {type} [Input1]`
-在上一行程式碼中， `Input1` 是不含任何預設值的選用引數。 以預設值宣告選用引數：
-     `@param {array} [input1=<value>]`
-     `input1` 是陣列型別的選用引數，其預設值設定為 `value`.
-請確定引數型別括在大括弧中 {} 且引數名稱會括在方括弧中 [].
-
-     請考慮下列程式碼片段，其中input2定義為選用引數：
-
-     ```javascript
-          /**
-          * optional parameter function
-          * @name OptionalParameterFunction
-          * @param {string} input1 
-          * @param {string=} input2 
-          * @return {string}
-         */
-         function OptionalParameterFunction(input1, input2) {
-         let result = "Result: ";
-         result += input1;
-         if (input2 !== null) {
-             result += " " + input2;
-         }
-         return result;
-         }
-     ```
-
-     下圖使用 `OptionalParameterFunction` 規則編輯器中的自訂函式：
-
-     ![選用或必要的引數](/help/forms/assets/optional-default-params.png)
-
-     您可以儲存規則而不指定所需引數的值，但規則不會執行，且會顯示警告訊息如下：
-
-     ![不完整的規則警告訊息](/help/forms/assets/incomplete-rule.png)
-
-     當使用者將選用引數留空時，則會將「未定義」值傳遞給選用引數的自訂函式。
-
-* **傳回型別**
 傳回型別會指定自訂函式在執行後傳回的值型別。 下列語法可用來定義自訂函式中的傳回型別：
-   * `@return {type}`
-   * `@returns {type}`
-     `{type}` 代表函式的傳回型別。 允許的傳回型別為：
-      * string：代表單一字串值。
-      * 數字：代表單一數值。
-      * 布林值：代表單一布林值（true或false）。
-      * 字串[]：代表字串值的陣列。
-      * 數字[]：代表數值陣列。
-      * 布林值[]：代表布林值的陣列。
-      * date：代表單一日期值。
-      * 日期[]：代表日期值的陣列。
-      * array：代表包含各種型別值的泛型陣列。
-      * object：代表表單物件，而非直接代表其值。
 
-     傳回型別不區分大小寫。
+* `@return {type}`
+* `@returns {type}`
+  `{type}` 代表函式的傳回型別。 允許的傳回型別為：
+   * string：代表單一字串值。
+   * 數字：代表單一數值。
+   * 布林值：代表單一布林值（true或false）。
+   * 字串[]：代表字串值的陣列。
+   * 數字[]：代表數值陣列。
+   * 布林值[]：代表布林值的陣列。
+   * date：代表單一日期值。
+   * 日期[]：代表日期值的陣列。
+   * array：代表包含各種型別值的泛型陣列。
+   * object：代表表單物件，而非直接代表其值。
 
-* **私人**
+  傳回型別不區分大小寫。
+
+#### 私人
+
 宣告為私用的自訂函式不會出現在最適化表單的規則編輯器中的自訂函式清單中。 自訂函式預設為公用。 宣告自訂函式為private的語法為 `@private`.
 
 若要進一步瞭解如何在JSDocs中定義選用引數， [按一下這裡](https://jsdoc.app/tags-param).
@@ -390,7 +400,7 @@ JavaScript註解是用來提供JavaScript程式碼的中繼資料。 其中包�
 
 ```javascript
     
-	/**
+    /**
     * enablePanel
     * @name enablePanel
     * @param {object} field1

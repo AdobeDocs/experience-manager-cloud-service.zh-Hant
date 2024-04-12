@@ -4,9 +4,9 @@ description: 使用最適化表單核心元件，為最適化表單新增註釋�
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Adaptive Forms, Core Components
 hidefromtoc: true
-source-git-commit: 4e60d7315fe7a92d608f0858a7108f7590e9aefa
+source-git-commit: e71e247f5b6de806b36c5c759b29e7273511f94e
 workflow-type: tm+mt
-source-wordcount: '591'
+source-wordcount: '593'
 ht-degree: 2%
 
 ---
@@ -37,7 +37,7 @@ https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/cont
 1. 在左側面板上的選取下拉式清單中，選取 **[!UICONTROL 版本]**.
    ![選取表單](select-a-form.png)
 1. 按一下 **三點** 按一下左下方面板上的「 」 **[!UICONTROL 另存為版本]**.
-1. 現在為表單版本提供標籤，而您可以透過註解提供表單的相關資訊。
+1. 現在，為表單版本提供標籤，而您可以透過註解提供表單的相關資訊。
    ![建立表單版本](create-a-form-version.png)
 
 ### 更新表單版本 {#update-a-form-version}
@@ -77,22 +77,15 @@ https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/cont
 1. 按一下 **新增圖示** 位於右上邊欄中（如影像所示）。
    ![註解](annotation.png)
 
-1. 按一下 **新增圖示** 位於左上邊欄中（如影像所指定），以新增標籤法。
+1. 按一下 **新增圖示** 位於左上邊欄的影像中，用來新增附註。
    ![新增註解](add-annotation.png)
 
-1. 現在，您可以新增註釋、繪製具有多種顏色的草圖來形成元件。
+1. 現在，您可以新增註解，用多種顏色繪製草圖以形成元件。
 
-1. 若要檢視您在表單中新增的所有註解，請選取您的表單，您就會看到在左側面板上新增的註解，如影像所示。
+1. 若要檢視您在表單中新增的所有註解，請選取您的表單，然後您會看到在左側面板上新增的註解，如影像所示。
 
    ![檢視新增的註解](see-annotations.png)
 
+## 另請參閱 {#see-also}
 
-
-
-
-
-
-
-
-
-
+{{see-also}}
