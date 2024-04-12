@@ -4,12 +4,20 @@ description: 最適化Forms規則編輯器可讓您新增動態行為並將複�
 feature: Adaptive Forms, Core Components
 role: User
 level: Beginner, Intermediate
-source-git-commit: 78b3b11caf143ed147079ef2b3b3ebe5c1beafd7
+exl-id: 1292f729-c6eb-4e1b-b84c-c66c89dc53ae
+source-git-commit: a22ecddf7c97c5894cb03eb44296e0562ac46ddb
 workflow-type: tm+mt
-source-wordcount: '5755'
+source-wordcount: '5444'
 ht-degree: 0%
 
 ---
+
+
+<span class="preview"> 本文包含部分搶鮮版功能的內容。 這些搶鮮版功能只能透過我們的 [發行前通道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). 搶鮮版計畫下的功能包括：
+* 支援使用When-then-else功能實作巢狀條件
+* 驗證或重設面板和表單，包括欄位
+* 支援現代JavaScript功能，例如自訂函式中的let和箭頭函式（ES10支援）。
+</span>
 
 # 將規則新增至最適化表單（核心元件） {#adaptive-forms-rule-editor}
 
@@ -19,21 +27,21 @@ ht-degree: 0%
 
 * 顯示或隱藏物件
 * 啟用或停用物件
-* 設置物件的值
+* 設定物件的值
 * 驗證物件的值
-* 執行函式以計算物件的值
-* 啟動表單資料模型服務並執行作業
+* 執行函數以計算物件的值
+* 啟動表單數據模型服務並執行操作
 * 設定物件的屬性
 
 <!-- Rule editor replaces the scripting capabilities in [!DNL Experience Manager 6.1 Forms] and earlier releases. However, your existing scripts are preserved in the new rule editor. For more information about working with existing scripts in the rule editor, see [Impact of rule editor on existing scripts](rule-editor.md#p-impact-of-rule-editor-on-existing-scripts-p). -->
 
-新增至表單超級使用者群組的使用者可以建立指令碼並編輯現有指令碼。 中的使用者 [!DNL forms-users] 群組可以使用指令碼，但不能建立或編輯指令碼。
+添加到 forms-power-users 群組 的使用者可以建立腳本和編輯現有腳本。 群組中的 [!DNL forms-users] 使用者可以使用腳本，但不能創建或編輯腳本。
 
 ## 瞭解規則 {#understanding-a-rule}
 
-規則是動作和條件的組合。 在 規則 編輯者 中，操作包括隱藏、显示、啟用、禁用或計算窗體中物件的值等活動。 條件是通過對表單物件的狀態、值或屬性執行檢查和操作來計算的布爾運算式。 根據評估條件返回的值 （ `True` 或 `False`） 執行操作。
+規則是動作和條件的組合。 在規則編輯器中，動作包括隱藏、顯示、啟用、停用或計算表單中物件值等活動。 條件是對表單物件的狀態、值或屬性執行檢查和作業來評估的Boolean運算式。 動作會根據值( `True` 或 `False`)傳回的結果。
 
-該規則 編輯者提供了一組預定義的規則類型，例如“何時”、“顯示”、“隱藏”、“啟用”、“禁用”、“設置值”和“驗證”，以説明您編寫規則。 每種規則類型可讓您定義規則的條件和動作。 本檔案將詳細說明每種規則型別。
+規則編輯器提供一組預先定義的規則型別（例如「何時」、「顯示」、「隱藏」、「啟用」、「停用」、「設定值」和「驗證」）來協助您編寫規則。 每種規則型別都可讓您定義規則中的條件和動作。 本檔案將詳細說明每種規則型別。
 
 規則通常會遵循下列其中一種建構：
 
@@ -99,7 +107,7 @@ ht-degree: 0%
 
 此 **[!UICONTROL 時間]** 規則型別會遵循 **condition-action-alternate action** 規則建構，或有時僅 **condition-action** 建構。 在此規則型別中，您必須先指定評估條件，接著在條件符合時觸發動作( `True`)。 使用When規則型別時，您可以使用多個AND和OR運運算元來建立 [巢狀運算式](#nestedexpressions).
 
-使用When規則型別，您可以評估表單物件的條件，並對一或多個物件執行動作。
+使用 When 規則 類型，您可以評估表單對象的條件並對一個或多個物件執行操作。
 
 簡單地說，典型的When規則結構如下：
 
@@ -115,13 +123,13 @@ ht-degree: 0%
 
 物件C； _上的動作2
 
-當您有多值元件（如單選按鈕或清單）時，為該元件建立規則時，會自動擷取選項，並讓規則建立者可以使用這些選項。 您無需再次鍵入選項值。
+當您有多值元件（如單選按鈕或清單）時，為該元件建立規則時，會自動擷取選項，並讓規則建立者可以使用這些選項。 您不需要再次輸入選項值。
 
 例如，一個清單有四個選項：「紅色」、「藍色」、」綠色“和”黃色“。 創建規則時，將自動檢索選項（單選按鈕）並提供給規則建立者，如下所示：
 
 ![多值顯示選項](assets/multivaluefcdisplaysoptions.png)
 
-撰寫When規則時，您可以觸發「清除值」動作。 清除值動作會清除指定物件的值。 在When陳述式中將的清除值作為選項可讓您建立具有多個欄位的複雜條件。 您可以新增Else陳述式以進一步新增條件
+編寫 When 規則時，可以觸發清除值操作。 清除值操作將清除指定物件的值。 在 When 語句中使用「清除值」選項可以創建具有多個字段的複雜條件。 您可以添加 Else 語句以添加其他條件
 
 ![清除值](assets/clearvalueof.png)
 
@@ -129,11 +137,11 @@ ht-degree: 0%
 >
 > 當規則型別僅支援單一層級then-else陳述式時。
 
-**[!UICONTROL 隱藏 隱藏]** 指定的物件。
+**[!UICONTROL 隱藏]** 隱藏指定的物件。
 
-****&#x200B;顯示 顯示指定的物件。
+**[!UICONTROL 顯示]** 顯示指定的物件。
 
-**[!UICONTROL 啟用 啟用]** 指定的物件。
+**[!UICONTROL 啟用]** 啟用指定的物件。
 
 **[!UICONTROL 停用]** 停用指定的物件。
 
@@ -186,7 +194,7 @@ ht-degree: 0%
 
 **[!UICONTROL 驗證]** 驗證表單或指定的物件。
 
-**[!UICONTROL 新增例項]** 新增指定之可重複面板或表格列的例項。
+**[!UICONTROL 新增實例]** 新增指定重複面板或表格列的執行個體。
 
 **[!UICONTROL 移除例項]** 移除指定之可重複面板或表格列的例項。
 
@@ -199,7 +207,7 @@ ht-degree: 0%
 
 ### [!UICONTROL 設定值] {#set-value-of}
 
-此 **[!UICONTROL 設定值]** 規則型別可讓您根據是否滿足指定的條件來設定表單物件的值。 值可以設定為另一個物件的值、常值字串、衍生自數學運算式或函式的值、另一個物件的屬性值，或表單資料模型服務的輸出。 同樣地，您可以檢查元件、字串、屬性或衍生自函式或數學運算式的值的條件。
+此 **[!UICONTROL 設定值]** 規則型別可讓您根據是否滿足指定的條件來設定表單物件的值。 值可以設定為另一個物件的值、常值字串、衍生自數學運算式或函式的值、另一個物件的屬性值，或表單資料模型服務的輸出。 同樣，您可以檢查元件、字串、屬性或從函數或數學運算式派生的值的條件。
 
 此 **設定值** 規則型別不適用於所有表單物件，例如面板和工具列按鈕。 標準的「設定值」規則具有以下結構：
 
@@ -207,21 +215,21 @@ ht-degree: 0%
 
 （字串ABC） OR （物件C的物件屬性X） OR （函式的值） OR （數學運算式的值） OR （資料模型服務的輸出值）；
 
-時間（選擇）：
+當（選擇性）：
 
 （條件 1 和條件 2 和條件 3） 為 TRUE;
 
-下列範例會選取 `Question2` 作為 `True` 並設定 `Result` 作為 `correct`.
+下面的示例選擇 as `True` 的值`Question2`並設置 as `correct`的值`Result`。
 
 ![Set-value-web-service](assets/set-value-web-service.png)
 
-使用表單資料模型服務的設定值規則範例。
+使用表單數據模型服務設定值 規則的範例。
 
 ### [!UICONTROL 顯示] {#show}
 
-使用 **[!UICONTROL 顯示]** 規則型別，您可以撰寫規則來根據是否滿足條件來顯示或隱藏表單物件。 顯示 規則類型還會在條件不滿足或返回 `False`時觸發隱藏操作。
+使用 **[!UICONTROL 顯示]** 規則型別，您可以撰寫規則來根據是否滿足條件來顯示或隱藏表單物件。 若條件未滿足或傳回，Show rule型別也會觸發Hide動作 `False`.
 
-典型的顯示 規則結構如下：
+典型的Show規則結構如下：
 
 `Show Object A;`
 
@@ -235,7 +243,7 @@ ht-degree: 0%
 
 ### [!UICONTROL 隱藏] {#hide}
 
-與顯示 規則類型類似，您可以使用隱藏&#x200B;]**規則類型根據**[!UICONTROL &#x200B;是否滿足條件來显示或隱藏表單物件。隱藏規則類型也會在條件不滿足或返回 `False`時觸發顯示操作。
+與顯示規則型別類似，您可以使用 **[!UICONTROL 隱藏]** 規則型別，根據是否滿足條件來顯示或隱藏表單物件。 若條件未滿足或傳回，隱藏規則型別也會觸發「顯示」動作 `False`.
 
 典型的「隱藏」規則結構如下：
 
@@ -368,7 +376,7 @@ To define a rule based on a form data model:
 
 ### D.視覺規則編輯器 {#visual-rule-editor}
 
-視覺化規則編輯器是規則編輯器使用者介面的視覺化編輯器模式中您編寫規則的區域。 它可讓您選取規則型別，並據此定義條件和動作。 在規則中定義條件和動作時，您可以從「表單物件與函式」窗格中拖放表單物件與函式。
+視覺化規則編輯器是規則編輯器使用者介面的視覺化編輯器模式中您編寫規則的區域。 它允許您選擇規則類型並據此定義條件和操作。 在規則中定義條件和動作時，您可以從「表單物件與函式」窗格中拖放表單物件與函式。
 
 如需使用視覺化規則編輯器的詳細資訊，請參閱 [寫入規則](rule-editor.md#p-write-rules-p).
 <!-- 
@@ -387,7 +395,7 @@ Users in the forms-power-users group can access code editor. For other users, co
 
 ### E.完成和取消按鈕 {#done-and-cancel-buttons}
 
-此 **[!UICONTROL 完成]** 按鈕可用來儲存規則。 您可以儲存不完整的規則。 但是，不完整無效並且不會運行。 當您下次從同一表單物件啟動規則 編輯者時，會列出表單物件上已保存的規則。 您可以在該檢視中管理現有規則。 具體操作，請參見 [管理規則](rule-editor.md#p-manage-rules-p)。
+此 **[!UICONTROL 完成]** 按鈕可用來儲存規則。 您可以儲存不完整的規則。 但是，不完整內容無效，因此不會執行。 當您下次從同一表單物件啟動規則 編輯者時，會列出表單物件上已保存的規則。 您可以管理該視圖中的現有規則。 具體操作，請參見 [管理規則](rule-editor.md#p-manage-rules-p)。
 
 此 **[!UICONTROL 取消]** 按鈕會放棄您對規則所做的任何變更並關閉規則編輯器。
 
@@ -397,7 +405,7 @@ Users in the forms-power-users group can access code editor. For other users, co
 
 讓我們先來看看如何使用視覺化編輯器來撰寫規則。
 
-### 使用視覺編輯者 {#using-visual-editor}
+### 使用視覺化編輯器 {#using-visual-editor}
 
 讓我們瞭解如何使用下列範例表單在視覺化編輯器中建立規則。
 
@@ -561,83 +569,83 @@ While writing JavaScript code in the rule editor, the following visual cues help
 
 #### 規則編輯器中的自訂函式 {#custom-functions}
 
-您也可以在規則編輯器中使用自訂函式。 如需建立自訂函式的指示，請參閱文章 [最適化Forms中的自訂函式](/help/forms/create-and-use-custom-functions.md).
-
-除了開箱即用的功能，例如 *總和* 列在函式輸出下的自訂函式，您可以編寫經常需要的自訂函式。 請確認您撰寫的函式是否隨附 `jsdoc` 高於它。
-
-隨附 `jsdoc` 為必填：
-
-* 如果您想要自訂設定和說明
-* 因為有多種方式可以在中宣告函式 `JavaScript,` 和註解可讓您追蹤函式。
-
-規則編輯器支援指令碼和自訂函式的JavaScript ES2015語法。
-如需詳細資訊，請參閱 [jsdoc.app](https://jsdoc.app/).
-
-支援 `jsdoc` 標籤：
-
-* **私人**
-語法： `@private`
-私人函式不會納入為自訂函式。
-
-* **名稱**
-語法： `@name funcName <Function Name>`
-或者 `,` 您可以使用： `@function funcName <Function Name>` **或** `@func` `funcName <Function Name>`.
-  `funcName` 是函式的名稱（不允許空格）。
-  `<Function Name>` 是函式的顯示名稱。
-
-* **引數**
-語法： `@param {type} name <Parameter Description>`
-或者，您可以使用： `@argument` `{type} name <Parameter Description>` **或** `@arg` `{type}` `name <Parameter Description>`.
-顯示函式使用的引數。 一個函式可以有多個引數標籤，每個引數會依發生順序各一個標籤。
-  `{type}` 代表引數型別。 允許的引數型別為：
-
-   1. 字串
-   1. 數字
-   1. 布林值
-   1. 範圍
-   1. 字串[]
-   1. 數字[]
-   1. 布林值[]
-   1. 日期
-   1. 日期[]
-   1. 陣列
-   1. 物件
-
-  `scope` 是指表單執行階段提供的特殊全域物件。 這必須是最後一個引數，使用者在規則編輯器中看不到它。 您可以使用範圍來存取可讀取的表單和欄位Proxy物件，以讀取屬性、觸發規則的事件，以及控制表單的一組函式。
-
-  `object` type是用來將引數中的可讀欄位物件傳遞至自訂函式，而非傳遞值。
-
-  所有引數型別都會歸類到上述其中一種型別下。 不支援任何專案。 請確定您選取以上任一型別。 型別不區分大小寫。 引數名稱中不允許空格。  引數說明可以包含多個字詞。
-
-* **選擇性引數**
-語法： `@param {type=} name <Parameter Description>`
-或者，您可以使用： `@param {type} [name] <Parameter Description>`
-依預設，所有引數都是強制性的。 您可以新增引數來將引數標示為選用 `=` 輸入引數型別或將引數名稱放在方括弧中。
-
-  例如，讓我們宣告 `Input1` 作為選用引數：
-   * `@param {type=} Input1`
-   * `@param {type} [Input1]`
-
-* **傳回型別**
-語法： `@return {type}`
-或者，您可以使用 `@returns {type}`.
-新增函式的相關資訊，例如其目標。
-{type} 代表函式的傳回型別。 允許的傳回型別為：
-
-   1. 字串
-   2. 數字
-   3. 布林值
-   4. 字串[]
-   5. 數字[]
-   6. 布林值[]
-   7. 日期
-   8. 日期[]
-   9. 陣列
-   10. 物件
-
-  所有其他回訪型別則會歸類到上述任一型別下。 不支援任何專案。 請確定您選取以上任一型別。 傳回型別不區分大小寫。
+除了開箱即用的功能，例如 *總和* 列於 **函式輸出**，您也可以在規則編輯器中使用自訂函式。 規則編輯器支援指令碼和自訂函式的JavaScript ECMAScript 2019語法。 如需建立自訂函式的指示，請參閱文章 [最適化Forms中的自訂函式](/help/forms/create-and-use-custom-functions.md).
 
 <!--
+
+Ensure that the function you write is accompanied by the `jsdoc` above it. Adaptive Form supports the various [JavaScript annotations for custom functions](/help/forms/create-and-use-custom-functions.md#js-annotations).
+
+For more information, see [jsdoc.app](https://jsdoc.app/).
+
+Accompanying `jsdoc` is required:
+
+* If you want custom configuration and description
+* Because there are multiple ways to declare a function in `JavaScript,` and comments let you keep a track of the functions.
+
+Supported `jsdoc` tags:
+
+* **Private**
+  Syntax: `@private`
+  A private function is not included as a custom function.
+
+* **Name**
+  Syntax: `@name funcName <Function Name>`
+  Alternatively `,` you can use: `@function funcName <Function Name>` **or** `@func` `funcName <Function Name>`.
+  `funcName` is the name of the function (no spaces allowed).
+  `<Function Name>` is the display name of the function.
+
+* **Parameter**
+  Syntax: `@param {type} name <Parameter Description>`
+  Alternatively, you can use: `@argument` `{type} name <Parameter Description>` **or** `@arg` `{type}` `name <Parameter Description>`.
+  Shows parameters used by the function. A function can have multiple parameter tags, one tag for each parameter in the order of occurrence.
+  `{type}` represents parameter type. Allowed parameter types are:
+
+    1. string
+    2. number
+    3. boolean
+    4. scope
+    5. string[]
+    6. number[]
+    7. boolean[]
+    8. date
+    9. date[]
+    10. array
+    11. object
+
+   `scope` refers to a special globals object which is provided by forms runtime. It must be the last parameter and is not be visible to the user in the rule editor. You can use scope to access readable form and field proxy object to read properties, event which triggered the rule and a set of functions to manipulate the form.
+
+   `object` type is used to pass readable field object in parameter to a custom function instead of passing the value.
+
+   All parameter types are categorized under one of the above. None is not supported. Ensure that you select one of the types above. Types are not case-sensitive. Spaces are not allowed in the parameter name.  Parameter description can have multiple words.
+
+* **Optional Parameter**
+Syntax: `@param {type=} name <Parameter Description>` 
+Alternatively, you can use: `@param {type} [name] <Parameter Description>`
+By default all parameters are mandatory. You can mark a parameter optional by adding `=` in type of the parameter or by putting param name in square brackets.
+   
+   For example, let us declare `Input1` as optional parameter:
+    * `@param {type=} Input1`
+    * `@param {type} [Input1]`
+
+* **Return Type**
+  Syntax: `@return {type}`
+  Alternatively, you can use `@returns {type}`.
+  Adds information about the function, such as its objective.
+  {type} represents the return type of the function. Allowed return types are:
+
+    1. string
+    2. number
+    3. boolean
+    4. string[]
+    5. number[]
+    6. boolean[]
+    7. date
+    8. date[]
+    9. array
+    10. object
+
+  All other return types are categorized under one of the above. None is not supported. Ensure that you select one of the types above. Return types are not case-sensitive.
+
 **Adding a custom function**
 
 For example, you want to add a custom function which calculates area of a square. Side length is the user input to the custom function, which is accepted using a numeric box in your form. The calculated output is displayed in another numeric box in your form. To add a custom function, you have to first create a client library, and then add it to the CRX repository.
@@ -645,7 +653,7 @@ For example, you want to add a custom function which calculates area of a square
 To create a client library and add it in the CRX repository, perform the following steps:
 
 1. Create a client library. For more information, see [Using Client-Side Libraries](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html#developing).
-1. In CRXDE, add a property `categories`with string type value as `customfunction` to the `clientlib` folder.
+2. In CRXDE, add a property `categories`with string type value as `customfunction` to the `clientlib` folder.
 
    >[!NOTE]
    >
