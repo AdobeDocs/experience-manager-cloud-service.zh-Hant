@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 最新發行說明�
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 最新發行說明。'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: e71e247f5b6de806b36c5c759b29e7273511f94e
+source-git-commit: f3d3bc92eb47bf5008167f660f26dfede2700540
 workflow-type: tm+mt
-source-wordcount: '2261'
-ht-degree: 31%
+source-wordcount: '2285'
+ht-degree: 30%
 
 ---
 
@@ -32,13 +32,11 @@ ht-degree: 31%
 
 您可以在[這裡](/help/release-notes/maintenance/latest.md)找到最新的維護版本發行說明。
 
-<!-- ## Release Video {#release-video}
+## 發行影片 {#release-video}
 
-Have a look at the March 2024 Release Overview video for a summary of the features added in the 2024.3.0 release:
+請觀看2024年3月版本概觀影片，瞭解2024.3.0版本新增功能摘要：
 
->[!VIDEO](https://video.tv.adobe.com/v/3425864?quality=12)
-
--->
+>[!VIDEO](https://video.tv.adobe.com/v/3428342?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
