@@ -2,9 +2,9 @@
 title: 將內容引入雲端服務
 description: 瞭解如何使用Cloud Acceleration Manager將移轉集中的內容擷取到目標Cloud Service例項。
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: de05abac3620b254343196a283cef198f434cfca
+source-git-commit: 727fbc49657de752ac6daeb38b5a9d7aba331a5c
 workflow-type: tm+mt
-source-wordcount: '2752'
+source-wordcount: '2876'
 ht-degree: 11%
 
 ---
@@ -60,6 +60,19 @@ ht-degree: 11%
 
    >[!IMPORTANT]
    > 只有當您屬於本機時，才能起始對目的地環境的內嵌 **AEM管理員** 目的地Cloud Service作者服務上的群組 如果您無法開始內嵌，請參閱 [無法開始內嵌](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#unable-to-start-ingestion) 以取得更多詳細資料。
+
+1. 選取擷取選擇後，將會顯示預估的持續時間。 這是根據類似擷取之歷史資料盡力估計的結果。
+
+   * 只有在擷取的「檢查大小」值已收集到並且可供使用時，才會計算並顯示此預估值。
+   * 此值是預估值，雖然計算方式很聰明，但不應視為精確。 不同的因素可能會改變實際持續時間。
+   * 在執行內嵌期間，此值也可在持續時間對話方塊中使用，可透過&quot;**檢視持續時間**「內嵌的動作。
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_cam_ingestion_estimate"
+>title="擷取持續時間預估"
+>abstract="可以顯示特定內嵌的大約持續時間，以提供有關所需時間的一般概念。 其準確性確實存在限制。"
+
+![影像](/help/journey-migration/content-transfer-tool/assets/estimate.png)
 
 1. 按一下 **擷取**.
 
