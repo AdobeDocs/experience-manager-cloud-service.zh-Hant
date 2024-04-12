@@ -2,9 +2,9 @@
 title: 基本處理
 description: 輕鬆瀏覽AEM及其基本用法
 exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
-source-git-commit: 7e0ca5dad5cd53c2304e2eba48a5131d587967ef
+source-git-commit: 40759b8c07833b0927fa374b906d4202bf258249
 workflow-type: tm+mt
-source-wordcount: '926'
+source-wordcount: '954'
 ht-degree: 2%
 
 ---
@@ -75,10 +75,11 @@ AEM使用者介面已啟用觸控功能。 觸控式介面可讓您使用觸控�
 | Assets | 「資產」主控台可讓您匯入及管理 [數位資產，例如影像、影片、檔案和音訊檔案](/help/assets/overview.md). 這些資產隨後便可由同一AEM例項上執行的任何網站使用。 您也可以建立和管理 [內容片段](/help/assets/content-fragments/content-fragments.md) 從「資產」主控台。 |
 | 個人化 | 此主控台提供工具的架構，適用於 [編寫鎖定內容及呈現個人化體驗](/help/sites-cloud/authoring/personalization/overview.md). |
 | 內容片段 | [內容片段](/help/sites-cloud/administering/content-fragments/overview.md) 可讓您設計、建立、策劃和發佈不受頁面影響的內容。 它們可讓您準備結構化內容，以準備用於多個位置/多個管道，並適用於頁面製作和headless傳送。 |
+| 產生變化版本 | [產生變數](/help/generative-ai/generate-variations.md) 使用創新型人工智慧(AI)根據提示建立內容變體；這些提示是由Adobe提供，或由使用者建立和管理。 |
 
 ## 「工具」面板 {#tools-panel}
 
-在 **工具** 面板有一個側面板，其中包含一系列類別，這些類別將類似的控制檯群組在一起。 此 **工具** 主控台可讓您存取多種特殊工具和控制檯，協助您管理網站、數位資產和內容存放庫的其他方面。 <!--The [Tools consoles](/help/sites-administering/tools-consoles.md) provide access to several specialized tools and consoles that help you administer your websites, digital assets, and other aspects of your content repository.-->
+此 **工具** 面板有一個側面板，其中包含一系列類別，這些類別將類似的控制檯群組在一起。 此 **工具** 主控台可讓您存取多種特殊工具和控制檯，協助您管理網站、數位資產和內容存放庫的其他方面。
 
 ![「工具」面板](assets/basic-handling-tools.png)
 

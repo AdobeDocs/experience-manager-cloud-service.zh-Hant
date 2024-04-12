@@ -4,9 +4,9 @@ description: 瞭解如何從主控台和編輯器管理AEM內容片段、建立�
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
-source-git-commit: 89f23a590338561b4cfeb10b54a260a135ec2f08
+source-git-commit: 3c550a08983ce198a6718d0c2120f1f5001fb28d
 workflow-type: tm+mt
-source-wordcount: '2620'
+source-wordcount: '2629'
 ht-degree: 2%
 
 ---
@@ -72,6 +72,8 @@ ht-degree: 2%
 
 選取 **內容片段** 在新標籤中開啟主控台。
 
+<!-- CQDOC-21349: screenshot -->
+
 ![內容片段主控台 — 概觀](assets/cf-managing-console-overview.png)
 
 您可以看到有三個主要區域：
@@ -84,6 +86,7 @@ ht-degree: 2%
    * 您可以在此隱藏或顯示資料夾樹狀結構
    * 您可以選取樹的特定分支
    * 這可以調整大小以顯示巢狀資料夾
+   * 您可以選擇檢視內容片段或 [資產](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md)
 * 主要/右側面板 — 從這裡，您可以：
    * 檢視樹狀結構所選分支中的所有內容片段清單：
       * 所選資料夾的內容片段，以及所有子資料夾都會顯示：
@@ -131,6 +134,8 @@ ht-degree: 2%
 #### （所選）內容片段的動作 {#actions-selected-content-fragment}
 
 選取特定片段會開啟工具列，其焦點為該片段可用的動作。 您也可以選取多個片段 — 動作的選擇將據此調整。
+
+<!-- CQDOC-21349: screenshot -->
 
 ![內容片段控制檯 — 所選片段的工具列](assets/cf-managing-console-fragment-toolbar.png)
 
@@ -367,6 +372,8 @@ ht-degree: 2%
 
 ## 尋找並取代 {#find-and-replace}
 
+<!-- CQDOC-21349: screenshot -->
+
 此 **取代** 動作可用（在頂端工具列中）來尋找和取代所選內容片段中的指定文字。
 
 ![尋找並取代](assets/cf-managing-find-replace.png)
@@ -379,8 +386,9 @@ ht-degree: 2%
 >
 >如果您選取20個以上的內容片段，您會看到訊息 **找不到和取代**.
 
-![確認取代](assets/cf-managing-confirm-replace.png)
+<!-- CQDOC-21349: screenshot -->
 
+![確認取代](assets/cf-managing-confirm-replace.png)
 
 ## 刪除片段 {#deleting-a-fragment}
 
@@ -445,6 +453,8 @@ ht-degree: 2%
 
 選取後， **篩選依據** 選項隨即顯示（在「搜尋」方塊下）。 可以從那裡取消選取它們。 例如：
 
+<!-- CQDOC-21349: screenshot -->
+
 ![內容片段主控台 — 篩選](assets/cf-managing-console-filter.png)
 
 ### 快速篩選 {#fast-filtering}
@@ -467,9 +477,13 @@ ht-degree: 2%
 
 搜尋方塊支援全文檢索搜尋。 在搜尋方塊中輸入搜尋字詞：
 
+<!-- CQDOC-21349: screenshot -->
+
 ![內容片段主控台 — 搜尋](assets/cf-managing-console-search-specification.png)
 
 將提供選取的結果：
+
+<!-- CQDOC-21349: screenshot -->
 
 ![內容片段主控台 — 搜尋結果](assets/cf-managing-console-search-results.png)
 

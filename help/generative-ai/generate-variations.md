@@ -1,13 +1,14 @@
 ---
 title: 產生變化版本
-description: 瞭解如何從Edge Delivery ServicesSidekick存取產生變數
+description: 瞭解如何從AEMas a Cloud Service和Edge Delivery ServicesSidekick存取產生變數
 exl-id: 9114037f-37b9-4b2f-a714-10933f69b2c3
-source-git-commit: 984ead39ef8c20f06ac63c88380323e403a08712
+source-git-commit: 58a91e0e5d6267caac8210f001f6f963870eb7dd
 workflow-type: tm+mt
-source-wordcount: '3338'
+source-wordcount: '3257'
 ht-degree: 0%
 
 ---
+
 
 # 產生變化版本 {#generate-variations}
 
@@ -15,11 +16,12 @@ ht-degree: 0%
 
 您可以 [存取權產生變數](#access-generate-variations) 從：
 
-<!-- 
-* [within Adobe Experience Manager (AEM) as a Cloud Service](#access-aemaacs)
--->
-
+* [在Adobe Experience Manager (AEM)as a Cloud Service中](#access-aemaacs)
 * [AEMEdge Delivery Services的Sidekick](#access-aem-sidekick)
+
+>[!NOTE]
+>
+>在所有情況下，若要使用「產生變數」，您必須確保 [存取必要條件](#access-prerequisites) 已完成。
 
 然後，您可以：
 
@@ -245,18 +247,19 @@ Generative AI和Generate Variations for AEM是強大的工具，但是 **您** �
 
 ![產生變化 — 使用音調編輯提示](assets/generate-variations-prompt-edited.png)
 
-#### 範例：新增下拉式欄位 — 頁面型別 {#example-add-new-dropdown-field-page-type}
+<!--
+#### Example: Add new dropdown field - Page Type {#example-add-new-dropdown-field-page-type}
 
-若要建立輸入欄位「頁面型別」 ，提供下拉式選項：
+To create an input field Page Type providing a dropdown selection:
 
-1. 建立名為的試算表 `pagetype.xls` 在檔案夾結構的最上層目錄中。
-1. 編輯試算表：
+1. Create a spreadsheet named `pagetype.xls` in the top-level directory of your folder structure.
+1. Edit the spreadsheet:
 
-   1. 建立兩欄： **索引鍵** 和 **值**.
-   1. 在 **索引鍵** 欄中，輸入將顯示在下拉式清單中的標籤。
-   1. 在 **值** 欄，說明索引鍵值，讓產生式AI具有上下文。
+   1. Create two columns: **Key** and **Value**.
+   1. In the **Key** column, enter labels that will appear in the dropdown.
+   1. In the **Value** column, describe the key value so the generative AI has context.
 
-1. 在提示中，參考試算表的標題以及適當的型別。
+1. In your prompt, refer to the title of the spreadsheet along with the appropriate type. 
 
    ```prompt
    {{@page_type, 
@@ -265,6 +268,7 @@ Generative AI和Generate Variations for AEM是強大的工具，但是 **您** �
      spreadsheet=pagetype
    }}
    ```
+-->
 
 ## 建立提示 {#create-prompt}
 
@@ -390,6 +394,95 @@ Adobe提供一些要使用的對象。
 
    ![產生變數 — 新增對象CSV檔案](assets/generate-variations-audiences-csv-save.png)
 
+## 產生式動作使用 {#generative-action-usage}
+
+使用管理取決於採取的動作：
+
+* 產生變化版本
+
+  複製變體的一代等於一個產生動作。 身為客戶，您的AEM授權會隨附特定數量的產生式動作。 消耗基本權利後，您就可以購買其他動作。
+
+  >[!NOTE]
+  >
+  >另請參閱 [Adobe Experience Manager：Cloud Service | 產品說明](https://helpx.adobe.com/legal/product-descriptions/aem-cloud-service.html) 如需基本權益的詳細資訊，以及如果您想要購買更具創造性的動作，請洽詢您的客戶團隊。
+
+* Adobe Express
+
+  影像產生使用情況是透過Adobe Express許可權和屬性來處理 [產生式積分](https://helpx.adobe.com/firefly/using/generative-credits-faq.html).
+
+## 存取權產生變數 {#access-generate-variations}
+
+先決條件達成後，您就可以存取「從AEMas a Cloud Service產生變數」或Edge Delivery ServicesSidekick。
+
+### 存取必要條件 {#access-prerequisites}
+
+若要使用「產生變化」，您必須確保先決條件已達成：
+
+* [使用Edge Delivery Services存取Experience Manageras a Cloud Service](#access-to-aemaacs-with-edge-delivery-services)
+
+#### 使用Edge Delivery Services存取Experience Manageras a Cloud Service{#access-to-aemaacs-with-edge-delivery-services}
+
+需要存取「產生變數」的使用者必須有權使用Edge Delivery Services的Experience Manageras a Cloud Service環境。
+
+>[!NOTE]
+>
+>如果您的AEM Sitesas a Cloud Service合約不包含Edge Delivery Services，您將需要簽署新合約才能取得存取權。
+>
+>您應該聯絡您的客戶團隊，討論如何與Edge Delivery Servicesas a Cloud Service改用AEM Sites。
+
+若要授與特定使用者的存取權，請將其使用者帳戶指派給個別產品設定檔。 另請參閱 [指派AEM產品設定檔以取得更多詳細資料](/help/journey-onboarding/assign-profiles-cloud-manager.md).
+
+### 從AEMas a Cloud Service存取 {#access-aemaacs}
+
+產生變數可從以下位置存取： [導覽面板](/help/sites-cloud/authoring/basic-handling.md#navigation-panel) 的AEMas a Cloud Service：
+
+![導覽面板](/help/sites-cloud/authoring/assets/basic-handling-navigation.png)
+
+### 從AEM Sidekick存取 {#access-aem-sidekick}
+
+在您可以從Edge Delivery ServicesSidekick存取產生變數之前，需要一些設定。
+
+1. 檢視檔案 [安裝AEM Sidekick](https://www.aem.live/docs/sidekick-extension) 瞭解如何安裝和設定Sidekick。
+
+1. 若要使用(Edge Delivery Services)Sidekick中的「產生變數」，請在下的Edge Delivery Services專案中納入下列設定：
+
+   * `tools/sidekick/config.json`
+
+   這必須合併到您現有的設定中，然後部署。
+
+   例如：
+
+   ```prompt
+   {
+     // ...
+     "plugins": [
+       // ...
+       {
+         "id": "generate-variations",
+         "title": "Generate Variations",
+         "url": "https://experience.adobe.com/aem/generate-variations",
+         "passConfig": true,
+         "environments": ["preview","live", "edit"],
+         "includePaths": ["**.docx**"]
+       }
+       // ...
+     ]
+   }
+   ```
+
+1. 之後，您可能需要確保使用者擁有 [使用Edge Delivery Services存取Experience Manageras a Cloud Service](#access-to-aemaacs-with-edge-delivery-services).
+
+1. 然後，您可以選取「 」以存取該功能 **產生變數** 從Sidekick的工具列：
+
+   ![產生變數 — 從AEM Sidekicj存取](assets/generate-variations-sidekick-toolbar.png)
+
+## 更多資訊 {#further-information}
+
+如需詳細資訊，您也可以閱讀：
+
+* [GenAI在GitHub上產生變數](https://github.com/adobe/aem-genai-assistant#setting-up-aem-genai-assistant)
+* [Edge Delivery Services實驗](https://www.aem.live/docs/experimentation)
+
 ## 常見問題 {#faqs}
 
 ### 格式化輸出 {#formatted-outpu}
@@ -452,106 +545,7 @@ Adobe提供一些要使用的對象。
 
 移動至v2.0.0版本會導致自訂提示範本中斷，因此無法使用。
 
-請參閱 [v2.0.0發行說明，以瞭解如何擷取發行說明](#release-notes-2-0-0-retrieve-prompt-templates).
-
-## 產生式動作使用 {#generative-action-usage}
-
-使用方式管理取決於採取的動作：
-
-* 產生變化版本
-
-  複製變體的一代等於一個產生動作。 身為客戶，您的AEM授權會隨附特定數量的產生式動作。 消耗基本權利後，您就可以購買其他動作。
-
-  >[!NOTE]
-  >
-  >另請參閱 [Adobe Experience Manager：Cloud Service | 產品說明](https://helpx.adobe.com/legal/product-descriptions/aem-cloud-service.html) 如需基本權益的詳細資訊，以及如果您想要購買更具創造性的動作，請洽詢您的客戶團隊。
-
-* Adobe Express
-
-  影像產生使用情況是透過Adobe Express許可權和屬性來處理 [產生式積分](https://helpx.adobe.com/firefly/using/generative-credits-faq.html).
-
-## 存取權產生變數 {#access-generate-variations}
-
-<!--
-### Access from AEM as a Cloud Service {#access-aemaacs}
-
-Generate Variations can be accessed from the [Navigation Panel](/help/sites-cloud/authoring/basic-handling.md#navigation-panel) of AEM as a Cloud Service:
-
-![Navigation panel](/help/sites-cloud/authoring/assets/basic-handling-navigation.png)
--->
-
-### 從AEM Sidekick存取 {#access-aem-sidekick}
-
-在您可以從Edge Delivery ServicesSidekick存取產生變數之前，需要一些設定。
-
-1. 檢視檔案 [安裝AEM Sidekick](https://www.aem.live/docs/sidekick-extension) 瞭解如何安裝和設定Sidekick。
-
-1. 若要使用(Edge Delivery Services)Sidekick中的「產生變數」，請在下的Edge Delivery Services專案中納入下列設定：
-
-   * `tools/sidekick/config.json`
-
-   這必須合併到您現有的設定中，然後部署。
-
-   例如：
-
-   ```prompt
-   {
-     // ...
-     "plugins": [
-       // ...
-       {
-         "id": "generate-variations",
-         "title": "Generate Variations",
-         "url": "https://experience.adobe.com/aem/generate-variations",
-         "passConfig": true,
-         "environments": ["preview","live", "edit"],
-         "includePaths": ["**.docx**"]
-       }
-       // ...
-     ]
-   }
-   ```
-
-1. 之後，您可能需要確保使用者擁有 [使用Edge Delivery Services存取Experience Manageras a Cloud Service](#access-to-aemaacs-with-edge-delivery-services).
-
-1. 然後，您可以選取「 」以存取該功能 **產生變數** 從Sidekick的工具列：
-
-   ![產生變數 — 從AEM Sidekicj存取](assets/generate-variations-sidekick-toolbar.png)
-
-## 使用Edge Delivery Services存取Experience Manageras a Cloud Service{#access-to-aemaacs-with-edge-delivery-services}
-
-需要存取「產生變數」的使用者必須有權使用Edge Delivery Services的Experience Manageras a Cloud Service環境。
-
->[!NOTE]
->
->如果您的AEM Sitesas a Cloud Service合約不包含Edge Delivery Services，您將需要簽署新合約才能取得存取權。
->
->您應該聯絡您的客戶團隊，討論如何與Edge Delivery Servicesas a Cloud Service改用AEM Sites。
-
-若要授與特定使用者的存取權，請將其使用者帳戶指派給個別產品設定檔。 另請參閱 [指派AEM產品設定檔以取得更多詳細資料](/help/journey-onboarding/assign-profiles-cloud-manager.md).
-
-## 延伸閱讀 {#further-reading}
-
-另請閱讀：
-
-* [GenAI在GitHub上產生變數](https://github.com/adobe/aem-genai-assistant#setting-up-aem-genai-assistant)
-* [Edge Delivery Services實驗](https://www.aem.live/docs/experimentation)
-
-## 發行說明 {#release-notes}
-
-### 2.0.0  {#release-notes-2-0-0}
-
-* 引入提示範本的通用永久儲存體。
-* Audiences的新功能
-   * 您可以直接從Adobe Target讀取對象
-   * 更新新增CSV檔案的方法
-* 具有儲存提示選項的對話方塊
-* 產生影像時，會預先填入Adobe Express中的提示
-* 提示卡（在首頁上）顯示額外的資訊，可以刪除
-
-#### 2.0.0 — 如何擷取自訂提示範本 {#release-notes-2-0-0-retrieve-prompt-templates}
-
-移動至v2.0.0版本會導致自訂提示範本中斷，因此無法使用。 若要擷取它們：
+若要擷取它們：
 
 1. 移至Sharepoint中的提示範本資料夾。
 1. 複製提示。
@@ -561,20 +555,6 @@ Generate Variations can be accessed from the [Navigation Panel](/help/sites-clou
 1. 驗證提示是否有效。
 1. 儲存提示。
 
-### 1.0.5 {#release-notes-1-0-5}
+## 發行版記錄 {#release-history}
 
-* 與Adobe Express整合
-* 將編輯提示移至側邊欄
-
-### 1.0.4 {#release-notes-1-0-4}
-
-* 內部改善
-
-### 1.0.3 {#release-notes-1-0-3}
-
-* 展開或隱藏左側導覽面板
-* 小幅改善
-
-### 1.0.0 - 1.0.2 {#release-notes-1-0-0-1-0-2}
-
-* 內部改善
+如需目前和先前版本的詳細資訊，請參閱 [產生變數的發行說明](/help/generative-ai/release-notes-generate-variations.md)

@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Assets HTTP API,APIs
 role: Developer,Architect,Admin
 exl-id: a3b7374d-f24b-4d6f-b6db-b9c9c962bb8d
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 674db680f46a4fd4772cb10fe7cb396652354dfe
 workflow-type: tm+mt
-source-wordcount: '1587'
+source-wordcount: '1631'
 ht-degree: 3%
 
 ---
@@ -22,6 +22,10 @@ ht-degree: 3%
 ## 概觀 {#overview}
 
 此 [!DNL Assets] HTTP API允許對數位資產進行建立 — 讀取 — 更新 — 刪除(CRUD)操作，包括對中繼資料、轉譯和評論的操作，以及結構化內容使用 [!DNL Experience Manager] 內容片段。 它公開於 `/api/assets` 和實作為REST API。 內容包括 [支援內容片段](/help/assets/content-fragments/assets-api-content-fragments.md).
+
+>[!NOTE]
+>
+>此 [內容片段和內容片段模型OpenAPI](/help/headless/content-fragment-openapis.md) 也可供使用。
 
 若要存取API：
 
@@ -40,9 +44,17 @@ A [內容片段](/help/assets/content-fragments/content-fragments.md) 是一種�
 
 如需詳細資訊，請參閱 [中的內容片段支援 [!DNL Experience Manager Assets] HTTP API](/help/assets/content-fragments/assets-api-content-fragments.md).
 
+>[!NOTE]
+>
+>此 [內容片段和內容片段模型OpenAPI](/help/headless/content-fragment-openapis.md) 也可供使用。
+
 ## 資料模型 {#data-model}
 
 此 [!DNL Assets] HTTP API會顯示兩個主要元素：資料夾和資產（適用於標準資產）。 此外，它會公開自訂資料模型的更詳細元素，這些模型說明內容片段中的結構化內容。 另請參閱 [內容片段資料模型](/help/assets/content-fragments/assets-api-content-fragments.md#content-models-and-content-fragments) 以取得進一步資訊。
+
+>[!NOTE]
+>
+>此 [內容片段和內容片段模型OpenAPI](/help/headless/content-fragment-openapis.md) 也可供使用。
 
 ### 資料夾 {#folders}
 
@@ -75,6 +87,10 @@ A [內容片段](/help/assets/content-fragments/content-fragments.md) 是一種�
 * 選擇性註解。
 
 如需內容片段中元素的相關資訊，請參閱 [Experience Manager Assets HTTP API中的內容片段支援](/help/assets/content-fragments/assets-api-content-fragments.md).
+
+>[!NOTE]
+>
+>此 [內容片段和內容片段模型OpenAPI](/help/headless/content-fragment-openapis.md) 也可供使用。
 
 在 [!DNL Experience Manager] 資料夾包含下列元件：
 

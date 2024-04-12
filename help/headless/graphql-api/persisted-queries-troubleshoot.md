@@ -2,13 +2,13 @@
 title: 疑難排解持續的GraphQL查詢
 description: 瞭解如何疑難排解Adobe Experience Manager as a Cloud Service中的持續性GraphQL查詢問題。
 feature: Content Fragments,GraphQL API
-source-git-commit: c8ea9846600d1773e6f269973635f5338f31906f
+exl-id: 71bd1f68-ca96-4c78-a936-abed250ecec1
+source-git-commit: 220e86f18e4a61304764753d8daecb68503e9fd0
 workflow-type: tm+mt
-source-wordcount: '353'
+source-wordcount: '351'
 ht-degree: 0%
 
 ---
-
 
 # 疑難排解持續的GraphQL查詢 {#troubleshoot-persisted-graphql-queries}
 
@@ -34,13 +34,13 @@ GraphQL持續查詢如果以過時的GraphQL型別為基礎，則可能會失敗
 
 ## 未設定GraphQL端點 {#graphql-endpoint-not-configured}
 
-當持續查詢傳回 `400` 或 `500` 錯誤代碼，以及資訊 `No suitable endpoint found`，這表示在AEM環境中未設定任何GraphQL端點。
+當持續查詢傳回 `404` 錯誤代碼，以及資訊 `No suitable endpoint found`，這表示在AEM環境中未設定任何GraphQL端點。
 
 若要修正此問題，請依照啟用和發佈端點的步驟操作 [在AEM中管理GraphQL端點](/help/headless/graphql-api/graphql-endpoint.md).
 
 ## GraphQL持續查詢URL中缺少路徑 {#missing-path-query-url}
 
-如果持續查詢傳回 `400` 或 `500` 含資訊的錯誤碼 `Suffix: '/' does not contain a path`，則呼叫GraphQL servlet時不含路徑尾碼。
+如果持續查詢傳回 `400` 含資訊的錯誤碼 `Suffix: '/' does not contain a path`，則呼叫GraphQL servlet時不含路徑尾碼。
 
 模式應為 `/graphql/execute.json/thePath`.
 

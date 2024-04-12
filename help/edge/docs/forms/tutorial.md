@@ -3,10 +3,10 @@ title: 開始使用 AEM Forms Edge Delivery Services - 開發人員教學課程
 description: 本教學課程可協助您啟動並執行新的 Adob​​e Experience Manager (AEM) Forms 專案。您將在 10 到 20 分鐘內建立好自己的表單。
 feature: Edge Delivery Services
 exl-id: bb7e93ee-0575-44e1-9c5e-023284c19490
-source-git-commit: 74e3bc79a734bd2c686e28cdcbbda96a58268c77
+source-git-commit: ff8d04878da521b55121c9460a9d4b159ec617a4
 workflow-type: tm+mt
 source-wordcount: '1848'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -255,6 +255,7 @@ AEM Forms 範本可協助您很快開始使用預先設定最適化表單區塊�
 
 預覽： `https://<branch>--<repo>--<owner>.hlx.page/`
 生產： `https://<branch>--<repo>--<owner>.hlx.live/`
+
 恭喜！您已成功設定本機開發環境並部署好您的變更。
 
 

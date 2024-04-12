@@ -2,9 +2,9 @@
 title: 體驗片段
 description: 使用Adobe Experience Manager as a Cloud Service體驗片段，讓您的體驗可重複使用且更靈活。
 exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
-source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
+source-git-commit: 0784bfc2928b218a566fdd252fee045ca5ae6b9c
 workflow-type: tm+mt
-source-wordcount: '2035'
+source-wordcount: '2083'
 ht-degree: 3%
 
 ---
@@ -38,6 +38,7 @@ ht-degree: 3%
 體驗片段不需要複製/貼上。
 * 支援Headless CMS使用案例。
 作者只想將AEM用於製作，而不是用於提供給客戶。 協力廠商系統/接觸點會取用該體驗，然後傳送給使用者。
+* 替換為 [多網站管理(MSM)](/help/sites-cloud/administering/msm/overview.md)；作為體驗片段屬於頁面。 這同時適用於個別片段及其所在的資料夾。
 
 >[!NOTE]
 >
@@ -236,6 +237,10 @@ WKND專案會根據以下規則建構一些體驗片段 `Contributors`. 使用�
 
    * **變異**
    * **變數為live-copy**.
+
+     >[!NOTE]
+     >
+     >將初始變數建立為Live Copy時，將會使用Live Copy來源做為主要變數來繼承標題。
 
 1. 定義必要的屬性：
 

@@ -3,10 +3,10 @@ title: 持續性 GraphQL 查詢
 description: 了解如何在 Adobe Experience Manager as a Cloud Service 中保留 GraphQL 查詢，以將效能最佳化。用戶端應用程式可以使用 HTTP GET 方法要求持續性查詢，回應可以在 Dispatcher 和 CDN 層快取，最終提高用戶端應用程式的效能。
 feature: Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
-source-git-commit: 8b03da83c7f669d9295f7c8a82ce5c97fafe67c8
+source-git-commit: 58a91e0e5d6267caac8210f001f6f963870eb7dd
 workflow-type: tm+mt
-source-wordcount: '1869'
-ht-degree: 86%
+source-wordcount: '1952'
+ht-degree: 79%
 
 ---
 
@@ -408,7 +408,7 @@ curl -u admin:admin -X POST \
 
 預設情況下，`PersistedQueryServlet` 執行查詢時，會傳送 `200` 回應，無論實際結果如何。
 
-您可以[設定 OSGi 設定](/help/implementing/deploying/configuring-osgi.md) (針對&#x200B;**持續性查詢服務設定)**，以控制持續性查詢中出現錯誤時 `/execute.json/persisted-query` 端點會傳回哪個狀態代碼。
+您可以 [設定OSGi設定](/help/implementing/deploying/configuring-osgi.md) 針對 **持久查詢服務設定** 控制是否傳回更詳細的狀態代碼 `/execute.json/persisted-query` 端點，當持續查詢中發生錯誤時。
 
 >[!NOTE]
 >
@@ -416,14 +416,20 @@ curl -u admin:admin -X POST \
 
 欄位 `Respond with application/graphql-response+json`(`responseContentTypeGraphQLResponseJson`) 可依要求定義：
 
-* `false` (預設值)：持續性查詢成功與否並不重要。此 `/execute.json/persisted-query` 會傳回狀態代碼 `200`，而傳回的 `Content-Type` 標頭會是 `application/json`。
+* `false` (預設值)：持續性查詢成功與否並不重要。此 `Content-Type` 傳回的標頭為 `application/json`，以及 `/execute.json/persisted-query` *一直* 傳回狀態代碼 `200`.
 
-* `true`：
-在執行持續性查詢時若出現任何形式的錯誤，此端點會傳回 `400` 或 `500` (視情況而定)。同時，傳回的 `Content-Type` 為 `application/graphql-response+json`。
+* `true`：傳回的 `Content-Type` 是 `application/graphql-response+json`，而端點會在執行持續查詢時發生任何形式的錯誤時，傳回適當的回應代碼：
+
+  | 程式碼 | 說明 |
+  |--- |--- |
+  | 200 | 成功的回應 |
+  | 400 | 表示缺少標頭，或持續查詢路徑有問題。 例如，未指定組態名稱、未指定尾碼及其他。<br>另請參閱 [疑難排解 — 未設定GraphQL端點](/help/headless/graphql-api/persisted-queries-troubleshoot.md#missing-path-query-url). |
+  | 404 | 找不到請求的資源。 例如，伺服器上無法使用Graphql端點。<br>另請參閱 [疑難排解 — GraphQL持續查詢URL中缺少路徑](/help/headless/graphql-api/persisted-queries-troubleshoot.md#graphql-endpoint-not-configured). |
+  | 500 | 內部伺服器錯誤。 例如，驗證錯誤、持續性錯誤和其他。 |
 
   >[!NOTE]
   >
-  >請參閱https://graphql.github.io/graphql-over-http/draft/#sec-Status-Codes
+  >另請參閱https://graphql.github.io/graphql-over-http/draft/#sec-Status-Codes
 
 ## 編碼查詢 URL 以供應用程式使用 {#encoding-query-url}
 

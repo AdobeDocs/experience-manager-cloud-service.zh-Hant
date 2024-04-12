@@ -3,10 +3,10 @@ title: 與內容片段搭配使用的 AEM GraphQL API
 description: 了解如何將 Adobe Experience Manager (AEM) as a Cloud Service 中的內容片段與 AEM GraphQL API 搭配使用，以實現 Headless 內容傳遞。
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: a8fbf0a9a1f7e12b6a668544b1a67d8551abf1b7
+source-git-commit: 5771a6afedeb85188e89700d439a9bac18e01fdc
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '5359'
+ht-degree: 84%
 
 ---
 
@@ -739,15 +739,13 @@ GraphQL 中的解決方案代表您可以：
 
 * 傳遞引數：新增 `_assetTransform` 至定義篩選器的清單標題
 
-<!-- 
 >[!NOTE]
 >
->A **Content Reference** can be used for both DAM assets and Dynamic Media assets. Retrieving the appropriate URL uses different parameters:
->* `_dynamicUrl` : a DAM asset
->* `_dmS7Url` : a Dynamic Media asset
+>A **內容參考** 可同時用於DAM資產和Dynamic Media資產。 擷取適當的URL時會使用不同的引數：
+>* `_dynamicUrl` ：DAM資產
+>* `_dmS7Url` ：Dynamic Media資產
 > 
->If the image referenced is a DAM asset then the value for `_dmS7Url` will be `null`. See [Dynamic Media asset delivery by URL in GraphQL queries](#dynamic-media-asset-delivery-by-url).
--->
+>如果參照的影像是DAM資產，則值 `_dmS7Url` 將為 `null`. 另請參閱 [GraphQL查詢中依URL的Dynamic Media資產傳送](#dynamic-media-asset-delivery-by-url).
 
 ### 轉換要求結構 {#structure-transformation-request}
 
@@ -923,34 +921,37 @@ query ($seoName: String!, $format: AssetTransformFormat!) {
    * 編寫時不可快取
    * 發佈時可快取 - 最長 10 分鐘 (用戶端無法變更)
 
-<!--
-## Dynamic Media asset delivery by URL in GraphQL queries{#dynamic-media-asset-delivery-by-url}
+## GraphQL查詢中依URL的Dynamic Media資產傳送{#dynamic-media-asset-delivery-by-url}
 
-GraphQL for AEM Content Fragments allows you to request a URL to an AEM Dynamic Media (Scene7) asset (referenced by a **Content Reference**).
+適用於AEM內容片段的GraphQL可讓您要求AEM Dynamic Media (Scene7)資產的URL （由參照） **內容參考**)。
 
-The solution in GraphQL means you can:
+>[!CAUTION]
+>
+>僅限 *影像* 可參考來自Dynamic Media的資產。
 
-* use `_dmS7Url` on the `ImageRef` reference
+GraphQL 中的解決方案代表您可以：
+
+* 在 `ImageRef` 參考中使用 `_dmS7Url`
 
 >[!NOTE]
 >
->For this you need to have a [Dynamic Media Cloud Configuration](/help/assets/dynamic-media/config-dm.md). 
+>為此，您需要擁有 [Dynamic Media雲端設定](/help/assets/dynamic-media/config-dm.md).
 >
->This adds the `dam:scene7File` and `dam:scene7Domain` attributes on the asset's metadata when it is created.
+>這會新增 `dam:scene7File` 和 `dam:scene7Domain` 屬性位於資產的中繼資料上。
 
 >[!NOTE]
 >
->A **Content Reference** can be used for both DAM assets and Dynamic Media assets. Retrieving the appropriate URL uses different parameters:
+>A **內容參考** 可同時用於DAM資產和Dynamic Media資產。 擷取適當的URL時會使用不同的引數：
 >
->* `_dmS7Url` : a Dynamic Media asset
->* `_dynamicUrl` : a DAM asset
+>* `_dmS7Url` ：Dynamic Media資產
+>* `_dynamicUrl` ：DAM資產
 > 
->If the image referenced is a Dynamic Media asset then the value for `_dynamicURL` will be `null`. See [web-optimized image delivery in GraphQL queries](#web-optimized-image-delivery-in-graphql-queries).
+>如果參照的影像是Dynamic Media資產，則值 `_dynamicURL` 將為 `null`. 另請參閱 [GraphQL查詢中的網頁最佳化影像傳送](#web-optimized-image-delivery-in-graphql-queries).
 
-### Sample query for Dynamic Media asset delivery by URL {#sample-query-dynamic-media-asset-delivery-by-url}
+### 依URL的Dynamic Media資產傳遞的範例查詢 {#sample-query-dynamic-media-asset-delivery-by-url}
 
-The following is a sample query:
-* for multiple Content Fragments of type `team` and `person`
+以下是範例查詢：
+* 型別為的多個內容片段 `team` 和 `person`
 
 ```graphql
 query allTeams {
@@ -973,7 +974,6 @@ query allTeams {
   }
 } 
 ```
--->
 
 ## GraphQL for AEM - 擴充功能摘要 {#graphql-extensions}
 
@@ -1068,6 +1068,10 @@ query allTeams {
 
             * [使用單一指定引數進行Web最佳化影像傳送的範例查詢](#web-optimized-image-delivery-single-query-variable)
 
+      * `_dmS7Url`：在 `ImageRef` 將URL傳遞至的參考 [Dynamic Media資產](#dynamic-media-asset-delivery-by-url)
+
+         * 另請參閱 [依URL的Dynamic Media資產傳遞的範例查詢](#sample-query-dynamic-media-asset-delivery-by-url)
+
    * `_tags`：用於顯示包含標籤的內容片段或變體ID；這是陣列 `cq:tags` 識別碼。
 
       * 請參閱[範例查詢 - 所有標記為 City Breaks 的城市名稱](/help/headless/graphql-api/sample-queries.md#sample-names-all-cities-tagged-city-breaks)
@@ -1099,13 +1103,6 @@ query allTeams {
 * 查詢巢狀片段時的備援：
 
    * 如果巢狀片段不存在特定變化，則將傳回&#x200B;**主版**&#x200B;變化。
-
-<!-- between dynamicURL and tags -->
-<!--
-    * `_dmS7Url`: on the `ImageRef` reference for the delivery of the URL to a [Dynamic Media asset](#dynamic-media-asset-delivery-by-url)
-
-      * See [Sample query for Dynamic Media asset delivery by URL](#sample-query-dynamic-media-asset-delivery-by-url)
--->
 
 ## 從外部網站查詢 GraphQL 端點 {#query-graphql-endpoint-from-external-website}
 

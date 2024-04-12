@@ -3,9 +3,9 @@ title: Assets HTTP API中的Adobe Experience Manager as a Cloud Service內容片
 description: 瞭解Assets HTTP API支援內容片段，這是Adobe Experience Manager的Headless傳送功能的重要一環。
 feature: Content Fragments,Assets HTTP API
 exl-id: d72cc0c0-0641-4fd6-9f87-745af5f2c232
-source-git-commit: 47666e87b1cb87577291304336e0219481b7b4e2
+source-git-commit: 674db680f46a4fd4772cb10fe7cb396652354dfe
 workflow-type: tm+mt
-source-wordcount: '1749'
+source-wordcount: '1804'
 ht-degree: 11%
 
 ---
@@ -20,6 +20,10 @@ ht-degree: 11%
 | AEM as a Cloud Service  | 本文章 |
 
 瞭解資產HTTP API支援內容片段，這是Adobe Experience Manager (AEM) Headless傳送功能的重要一環。
+
+>[!NOTE]
+>
+>此 [內容片段和內容片段模型OpenAPI](/help/headless/content-fragment-openapis.md) 也可供使用。
 
 >[!NOTE]
 >
@@ -40,7 +44,7 @@ ht-degree: 11%
 
 例如， [單頁應用程式(SPA)](/help/implementing/developing/hybrid/introduction.md)、框架式或自訂)需要透過HTTP API提供的內容（通常為JSON格式）。
 
-當 [AEM Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 提供可自訂的API，該API可提供此用途的必要讀取作業，且其JSON輸出可自訂，這些實作需要AEM WCM （Web內容管理）專門技術。 這是因為它們必須託管在基於專用AEM範本的頁面中。 並非每個SPA開發組織都能直接存取這些知識。
+當 [AEM Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hant) 提供可自訂的API，該API可提供此用途的必要讀取作業，且其JSON輸出可自訂，這些實作需要AEM WCM （Web內容管理）專門技術。 這是因為它們必須託管在基於專用AEM範本的頁面中。 並非每個SPA開發組織都能直接存取這些知識。
 
 此時可使用Assets REST API。 它可讓開發人員直接存取資產（例如影像和內容片段），而不需要先將資產內嵌在頁面中，並以序列化JSON格式傳送其內容。
 
@@ -91,6 +95,10 @@ HTTP 方法決定要執行的操作：
 >要求內文和/或 URL 參數可用於設定其中一些操作；例如，定義資料夾或資產應由 **POST** 要求建立。
 
 受支援請求的確切格式定義於 [API參考](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference) 檔案。
+
+>[!NOTE]
+>
+>此 [內容片段和內容片段模型OpenAPI](/help/headless/content-fragment-openapis.md) 也可供使用。
 
 ### 異動行為 {#transactional-behavior}
 
@@ -167,6 +175,10 @@ HTTP 方法決定要執行的操作：
 
 * 此 [Assets REST API](/help/assets/mac-api-assets.md)
 * [實體型別](/help/assets/content-fragments/assets-api-content-fragments.md#entity-types)，其中說明每種支援型別的特定功能（與內容片段相關）
+
+>[!NOTE]
+>
+>此 [內容片段和內容片段模型OpenAPI](/help/headless/content-fragment-openapis.md) 也可供使用。
 
 ### 分頁 {#paging}
 
@@ -262,6 +274,8 @@ A [內容片段](/help/assets/content-fragments/content-fragments.md) 是一種�
 >[!NOTE]
 >
 >請參閱 [API參考](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference). 特別是 [Adobe Experience Manager Assets API - 內容片段](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/assets-api-content-fragments/index.html)。
+>
+>此 [內容片段和內容片段模型OpenAPI](/help/headless/content-fragment-openapis.md) 也可供使用。
 
 ## 限制 {#limitations}
 
@@ -352,6 +366,8 @@ A [內容片段](/help/assets/content-fragments/content-fragments.md) 是一種�
 * [Assets HTTP API](/help/assets/mac-api-assets.md)
 
    * [可用功能](/help/assets/mac-api-assets.md#available-features)
+
+* 此 [內容片段和內容片段模型OpenAPI](/help/headless/content-fragment-openapis.md) 也可供使用。
 
 ## 其他資源 {#additional-resources}
 
