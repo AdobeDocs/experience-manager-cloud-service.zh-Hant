@@ -4,9 +4,9 @@ description: 瞭解如何為內容片段製作內容，並根據用途建立該�
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
-source-git-commit: 19685cb952a890731bd7d75a2adf3cfd841a465f
+source-git-commit: 6353bd50c1df43d9ce11616f71a69d8bfb5ab338
 workflow-type: tm+mt
-source-wordcount: '2266'
+source-wordcount: '2381'
 ht-degree: 6%
 
 ---
@@ -96,7 +96,7 @@ ht-degree: 6%
 
 ![內容片段編輯器 — 連結圖示](assets/cf-authoring-link-icon.png)
 
-### 樹狀結構 {#structure-tree}
+### 結構樹 {#structure-tree}
 
 開啟 **樹狀結構** 標籤以顯示內容片段的階層結構及其參考。 使用連結圖示導覽至參照。
 
@@ -370,6 +370,27 @@ ht-degree: 6%
 >發佈內容片段時會建立新版本。
 
 ![內容片段編輯器 — 版本記錄概觀](assets/cf-authoring-version-history-overview.png)
+
+### 比較版本 {#compare-version}
+
+對於內容片段，您可以比較先前版本與目前版本。
+
+若要比較上一個版本與目前版本：
+
+1. 選取版本旁的三點圖示。
+
+1. 選取 **比較**.
+
+![內容片段編輯器 — 版本記錄比較](assets/cf-authoring-version-history-compare.png)
+
+這會開啟一個檢視，其中顯示內容目前版本與所選內容片段先前版本之間的差異。 從 **有變更的變數** 從下拉式清單中，您可以選取來檢視與主要內容的差異，和/或來自變數的內容。
+
+差異以顏色表示：
+
+* 綠色：表示已新增內容（至目前版本）
+* 紅色：表示內容已移除（從目前版本）
+
+![內容片段編輯器 — 版本記錄比較版本](assets/cf-authoring-version-history-compare-versions.png)
 
 ### 還原為版本 {#revert-version}
 
