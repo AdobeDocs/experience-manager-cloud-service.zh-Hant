@@ -3,10 +3,11 @@ title: 管理您的數位資產
 description: 在  [!DNL Assets view] 中移動、刪除、複製、重新命名、更新您的資產，並進行版本設定。
 role: User,Leader
 contentOwner: AG
-source-git-commit: c3076ce35128c147ce2056d11d9305d9a9456636
+exl-id: 2459d482-828b-4410-810c-ac55ef0a2119
+source-git-commit: e2a0e93a4ff01d9a180fcf1ad097ccbfb354fc0f
 workflow-type: tm+mt
-source-wordcount: '1024'
-ht-degree: 92%
+source-wordcount: '1062'
+ht-degree: 88%
 
 ---
 
@@ -27,7 +28,8 @@ ht-degree: 92%
 * ![簽出圖示](assets/do-not-localize/checkout-icon.png) 簽出選取的資產。
 * ![複製圖示](assets/do-not-localize/copy-icon.png) 複製選取的檔案或資料夾。
 * ![移動圖示](assets/do-not-localize/move-icon.png) 將選取的資產或資料夾移至存放庫階層中不同的位置。
-* ![重新命名圖示](assets/do-not-localize/rename-icon.png) 重新命名選取的資產或資料夾。請使用唯一名稱，否則重新命名動作會失敗並出現警告。您可以使用新的名稱再試。
+* ![重新命名圖示](assets/do-not-localize/rename-icon.png) 重新命名選取的資產或資料夾。請使用唯一名稱，否則重新命名動作會失敗並出現警告。您可以使用新名稱再試一次。
+此外，您可以按一下資產或資料夾的標題來重新命名。 提及新文字於 **重新命名資產** 文字方塊並按一下 **儲存**. 此功能適用於「格點」、「相簿」、「瀑布」和「清單」檢視。 <!--in-place rename-->
 * ![指派任務圖示](assets/do-not-localize/review-delegate-icon.png) 指派任務給其他使用者，以在資產上共同作業。
 
 您可以在資產縮圖上檢視相同選項。
