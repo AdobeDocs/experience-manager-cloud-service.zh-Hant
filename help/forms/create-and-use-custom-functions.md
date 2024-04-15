@@ -6,7 +6,7 @@ contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms, Core Components
 exl-id: 24607dd1-2d65-480b-a831-9071e20c473d
-source-git-commit: bc040f29a8912c5901ddb71bd32ee2d2a97d3eec
+source-git-commit: ee6072b3fc6786905a6610081acb22c708f1eae4
 workflow-type: tm+mt
 source-wordcount: '3104'
 ht-degree: 2%
@@ -155,7 +155,7 @@ JavaScript註解是用來提供JavaScript程式碼的中繼資料。 其中包�
 
 若要在規則編輯器中列出自訂函式，您可以使用下列任一格式：
 
-### **包含或不包含jsdoc註解的函式陳述式**
+### 包含或不包含jsdoc註解的函式陳述式
 
 您可以建立包含或不包含jsdoc註解的自訂函式。
 
@@ -167,7 +167,7 @@ JavaScript註解是用來提供JavaScript程式碼的中繼資料。 其中包�
 ```
 如果使用者未將任何JavaScript註解新增至自訂函式，則會依函式名稱在規則編輯器中列出。 不過，建議您加入JavaScript註解，以提升自訂函式的可讀性。
 
-### **具有強制JavaScript註解或註解的Arrow函式**
+### 具有強制JavaScript註解或註解的Arrow函式
 
 您可以使用箭頭函式語法來建立自訂函式：
 
@@ -191,7 +191,7 @@ JavaScript註解是用來提供JavaScript程式碼的中繼資料。 其中包�
 
 如果使用者沒有將任何JavaScript註解新增到自訂函式，則自訂函式不會列在最適化表單的規則編輯器中。
 
-### **含有必要JavaScript註解或註解的函式運算式**
+### 含有必要JavaScript註解或註解的函式運算式
 
 若要列出最適化表單的規則編輯器中的自訂函式，請以下列格式建立自訂函式：
 
