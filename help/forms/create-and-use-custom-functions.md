@@ -6,7 +6,7 @@ contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms, Core Components
 exl-id: 24607dd1-2d65-480b-a831-9071e20c473d
-source-git-commit: 593a2b2930093d29a22f6c1ff391c11db9bda7dc
+source-git-commit: 9582cd8c7777544fde5d13fcd79cfec318e3f780
 workflow-type: tm+mt
 source-wordcount: '3104'
 ht-degree: 2%
@@ -50,8 +50,7 @@ JavaScript註解是用來提供JavaScript程式碼的中繼資料。 其中包�
 * `@func [functionName] <Function Name>`。
   `functionName` 是函式的名稱。 不允許空格。
   `<Function Name>` 是函式在最適化表單的規則編輯器中的顯示名稱。
-如果函式名稱與函式本身的名稱相同，則可以省略 `[functionName]` 語法中的。 <!-- For example,  in the `calculateAge` custom function, the name is defined as:
-`* @name calculateAge` -->
+如果函式名稱與函式本身的名稱相同，則可以省略 `[functionName]` 語法中的。
 
 #### 參數
 
