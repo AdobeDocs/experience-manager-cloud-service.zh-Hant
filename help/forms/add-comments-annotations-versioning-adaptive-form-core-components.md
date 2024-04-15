@@ -3,8 +3,7 @@ title: 將版本設定、註解及註解新增至表單。
 description: 使用最適化表單核心元件，為最適化表單新增註釋、註解及版本設定。
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Adaptive Forms, Core Components
-hidefromtoc: true
-source-git-commit: e71e247f5b6de806b36c5c759b29e7273511f94e
+source-git-commit: 31896ce21aa8a6e63657cd3099900803c98657b2
 workflow-type: tm+mt
 source-wordcount: '593'
 ht-degree: 2%

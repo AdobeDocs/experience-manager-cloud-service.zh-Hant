@@ -2,12 +2,11 @@
 title: 什麼是Formsas a Cloud Service通訊API？
 description: 使用通訊API來簽署、認證或保護您的檔案、自動化PDF產生流程，以及將PDF檔案轉換為另一種格式。
 Keywords: How to generate document?, Generate PDF document, Manipulation PDF documents, Assembling PDF documents, Validating PDF document, APIs used in encrypting or decrypting PDFs
-exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
 feature: Adaptive Forms, APIs
 role: Admin, Developer, User
-source-git-commit: e71e247f5b6de806b36c5c759b29e7273511f94e
+source-git-commit: 31896ce21aa8a6e63657cd3099900803c98657b2
 workflow-type: tm+mt
-source-wordcount: '1964'
+source-wordcount: '1982'
 ht-degree: 56%
 
 ---
@@ -193,10 +192,12 @@ DocAssurance服務包含簽名和加密API：
 
 ### Reader延伸服務
 
-<span class="preview"> Reader擴充功能屬於早期採用者計畫。 您可以寫信到 `aem-forms-ea@adobe.com` 從您的正式電子郵件id加入率先採用者計畫並請求存取功能。 </span>
+<span class="preview"> Reader擴充功能屬於早期採用者計畫。 您可以從您的官方電子郵件ID寫信到aem-forms-ea@adobe.com ，以加入率先採用者計畫並請求存取該功能。 </span>
 
-Reader擴充功能服務可擴充具有其他使用許可權的Adobe Reader功能，讓貴組織輕鬆共用互動式PDF檔案。 Reader擴充功能服務可與Adobe Reader搭配使用。 此服務會將使用許可權新增至PDF檔案。 此動作會啟動在使用Adobe Reader開啟PDF檔案時通常無法使用的功能，例如新增註釋至檔案、填寫表單和儲存檔案。
+Reader擴充功能服務可擴充具有其他使用許可權的Adobe Reader功能，讓貴組織輕鬆共用互動式PDF檔案。 Reader擴充功能服務可與Adobe Reader 7.0或更新版本搭配使用。 此服務會將使用許可權新增至PDF檔案。 此動作會啟動在使用Adobe Reader開啟PDF檔案時通常無法使用的功能，例如新增註釋至檔案、填寫表單和儲存檔案。
 
+>[!NOTE]
+>協力廠商使用者不需要其他軟體或外掛程式即可使用啟用許可權的檔案。
 
 當PDF檔案新增了適當的使用許可權時，收件者可以在Adobe Reader中執行下列活動：
 
@@ -242,7 +243,7 @@ Reader Extension Services的各種使用許可權功能包括：
 * **訊息**：開啟PDF檔案並套用一或多個使用許可權時，Adobe Acrobat Reader中顯示的訊息。
 * **解鎖密碼**：開啟加密的PDF檔案所需的密碼。 通常這是檔案開啟密碼，但如果PDF檔案受到許可權密碼的額外保護，則其中之一可能用於開啟檔案。
 
-此 [API參考檔案](https://adobe-aem-document-experimental.redoc.ly/) 提供API提供的所有引數、驗證方法和各種服務的詳細資訊。 API參考檔案也以.yaml格式提供。 您可以下載.yaml並將其上傳到Postman以檢查API的功能。
+此 [API參考檔案](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/) 提供API提供的所有引數、驗證方法和各種服務的詳細資訊。 API參考檔案也以.yaml格式提供。 您可以下載.yaml並將其上傳到Postman以檢查API的功能。
 
 ## 通訊 API 類型 {#types}
 
