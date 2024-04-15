@@ -6,9 +6,9 @@ contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms, Core Components
 exl-id: 24607dd1-2d65-480b-a831-9071e20c473d
-source-git-commit: e71e247f5b6de806b36c5c759b29e7273511f94e
+source-git-commit: 3ed500d0c7a9a445e3417043da3d52632760ccdb
 workflow-type: tm+mt
-source-wordcount: '3108'
+source-wordcount: '3104'
 ht-degree: 2%
 
 ---
@@ -72,59 +72,61 @@ JavaScript註解是用來提供JavaScript程式碼的中繼資料。 其中包�
    * 日期[]：代表日期值的陣列。
    * array：代表包含各種型別值的泛型陣列。
    * object：代表傳遞至自訂函式的表單物件，而非直接傳遞其值。
-   * scope：代表自訂函式在執行階段所使用的全域物件。 這會宣告為JavaScript註解中的最後一個引數，且不會顯示在調適型表單的規則編輯器中。 scope引數可存取表單或元件的物件，以觸發表單處理所需的規則或事件。
+   * 範圍：代表全域物件，其中包含唯讀變數，例如表單例項、目標欄位例項，以及在自訂函式內執行表單修改的方法。 這會宣告為JavaScript註解中的最後一個引數，且不會顯示在調適型表單的規則編輯器中。 scope引數可存取表單或元件的物件，以觸發表單處理所需的規則或事件。 如需關於Globals物件及其使用方式的詳細資訊， [按一下這裡](/help/forms/create-and-use-custom-functions.md#support-field-and-global-objects).
 
-    引數型別不區分大小寫，而且引數名稱中不允許使用空格。
-    
-    『&lt;parameter description=&quot;&quot;>&#39;包含有關引數用途的詳細資訊。 它可以有多個字詞。
-    
-    依預設，所有引數都是必要引數。 您可以在引數型別後面新增「=」，或在「[]」中加上引數名稱，將引數定義為選用引數。 在JavaScript註解中定義為選用引數的規則編輯器會顯示為選用引數。
-    若要將變數定義為選用引數，您可以使用下列任一語法：
-    
-    * &#39;@param {type=} Input1&#39;
-    
-    在上一行程式碼中，&#39;Input1&#39;是選用引數，沒有任何預設值。 以預設值宣告選用引數：
-    &#39;@param {string=&lt;value>} input1&#39;
-    
-    &#39;input1&#39;作為選用引數，預設值設為&#39;value&#39;。
-    
-    * &#39;@param {type} [Input1]&#39;
-    
-    在上一行程式碼中，&#39;Input1&#39;是選用引數，沒有任何預設值。 以預設值宣告選用引數：
-    &#39;@param {array} [input1=&lt;value>]`
-    &#39;input1&#39;是陣列型別的選用引數，其預設值設為&#39;value&#39;。
-    請確定引數型別括在大括弧中 {} 且引數名稱會括在方括弧[]中。
-    
-    請考慮下列程式碼片段，其中input2定義為選用引數：
-    
-    ```javascript
-    
-    /**
-    *選用引數函式
-    * @name OptionalParameterFunction
-    * @param {string} input1
-    * @param {string=}輸入2
-    * @return {string}
-    */
-    函式OptionalParameterFunction(input1， input2) {
-    let result = &quot;Result： &quot;；
-    結果+= input1；
-    若為(輸入2！== null) {
-    結果+=「 」+輸入2；
-    }
-    傳回結果；
-    }
-    ```
-    
-    下圖顯示在規則編輯器中使用&#39;OptionalParameterFunction&#39;自訂函式：
-    
-    &lt;!>— ！[選用或必要的引數](/help/forms/assets/optional-default-params.png) —>
-    
-    您可以儲存規則而不指定所需引數的值，但規則不會執行，且會顯示警告訊息如下：
-    
-    &lt;!>— ！[不完整的規則警告](/help/forms/assets/incomplete-rule.png) —>
-    
-    當使用者將選用引數留空時，則會將「未定義」值傳遞給選用引數的自訂函式。
+引數型別不區分大小寫，而且引數名稱中不允許使用空格。
+
+`<Parameter Description>` 包含有關引數用途的詳細資訊。 它可以有多個字詞。
+
+**選用引數**
+依預設，所有引數都是必要引數。 您可以透過新增引數將引數定義為選用的 `=` 在引數型別之後或將引數名稱括在  `[]`. 在JavaScript註解中定義為選用引數的規則編輯器會顯示為選用引數。
+若要將變數定義為選用引數，您可以使用下列任一語法：
+
+* `@param {type=} Input1`
+
+在上一行程式碼中， `Input1` 是不含任何預設值的選用引數。 以預設值宣告選用引數：
+`@param {string=<value>} input1`
+
+`input1` 作為選用引數，預設值設為 `value`.
+
+* `@param {type} [Input1]`
+
+在上一行程式碼中， `Input1` 是不含任何預設值的選用引數。 以預設值宣告選用引數：
+`@param {array} [input1=<value>]`
+`input1` 是陣列型別的選用引數，其預設值設定為 `value`.
+請確定引數型別括在大括弧中 {} 且引數名稱會括在方括弧中 [].
+
+請考慮下列程式碼片段，其中input2定義為選用引數：
+
+```javascript
+        /**
+         * optional parameter function
+         * @name OptionalParameterFunction
+         * @param {string} input1 
+         * @param {string=} input2 
+         * @return {string}
+        */
+        function OptionalParameterFunction(input1, input2) {
+        let result = "Result: ";
+        result += input1;
+        if (input2 !== null) {
+            result += " " + input2;
+        }
+        return result;
+        }
+```
+
+下圖使用 `OptionalParameterFunction` 規則編輯器中的自訂函式：
+
+![選用或必要的引數 ](/help/forms/assets/optional-default-params.png)
+
+您可以儲存規則而不指定所需引數的值，但規則不會執行，且會顯示警告訊息如下：
+
+![不完整的規則警告](/help/forms/assets/incomplete-rule.png)
+
+當使用者將選用引數留空時，則會將「未定義」值傳遞給選用引數的自訂函式。
+
+若要進一步瞭解如何在JSDocs中定義選用引數， [按一下這裡](https://jsdoc.app/tags-param).
 
 #### 傳回型別
 
@@ -150,7 +152,6 @@ JavaScript註解是用來提供JavaScript程式碼的中繼資料。 其中包�
 
 宣告為私用的自訂函式不會出現在最適化表單的規則編輯器中的自訂函式清單中。 自訂函式預設為公用。 宣告自訂函式為private的語法為 `@private`.
 
-若要進一步瞭解如何在JSDocs中定義選用引數， [按一下這裡](https://jsdoc.app/tags-param).
 
 ## 建立自訂函式時的准則 {#considerations}
 
@@ -190,6 +191,8 @@ JavaScript註解是用來提供JavaScript程式碼的中繼資料。 其中包�
     
 ```
 
+如果使用者沒有將任何JavaScript註解新增到自訂函式，則自訂函式不會列在最適化表單的規則編輯器中。
+
 * **含有必要JavaScript註解或註解的函式運算式**
 
 若要列出最適化表單的規則編輯器中的自訂函式，請以下列格式建立自訂函式：
@@ -207,6 +210,8 @@ JavaScript註解是用來提供JavaScript程式碼的中繼資料。 其中包�
             // code to be executed
         }
 ```
+
+如果使用者沒有將任何JavaScript註解新增到自訂函式，則自訂函式不會列在最適化表單的規則編輯器中。
 
 ## 建立自訂函式 {#create-custom-function}
 
@@ -365,30 +370,33 @@ JavaScript註解是用來提供JavaScript程式碼的中繼資料。 其中包�
 
 ### 自訂函式中的欄位和全域範圍物件 {#support-field-and-global-objects}
 
-欄位物件是指表單中的個別元件或元素，例如文字欄位、核取方塊。 全域範圍物件是指在整個表單中可存取的全域變數或設定。 讓我們檢視下列程式碼片段：
+欄位物件是指表單中的個別元件或元素，例如文字欄位、核取方塊。 全域物件包含唯讀變數，例如表單例項、目標欄位例項，以及在自訂函式內進行表單修改的方法。
+
+>[!NOTE]
+>
+> 此 `param {scope} globals` 必須是最後一個引數，且不會顯示在最適化表單的規則編輯器中。
+
+<!-- Let us look at the following code snippet:
 
 ```JavaScript
+   
     /**
     * updateDateTime
     * @name updateDateTime
     * @param {object} field
-    * @param {scope} globals 
+    * @param {scope} globals
     */
     function updateDateTime(field, globals) {
     // Accessing the Date object from the global scope
     var currentDate = new Date();
     // Formatting the date and time
     var formattedDateTime = currentDate.toLocaleString();
-    // Updating the field value with the formatted date and time
-    field.value = formattedDateTime;
+    // Updating the field value with the formatted date and time using setProperty.
+    globals.functions.setProperty(field, {value: formattedDateTime});
     }
 ```
 
->[!NOTE]
->
-> 此 `param {scope} globals` 必須是最後一個引數，且不會顯示在最適化表單的規則編輯器中。
-
-在上述程式碼片段中，名為的自訂函式 `updateDateTime` 會採用欄位物件和全域物件等引數。 使用全域範圍存取物件的日期和時間。 欄位代表在表單中顯示格式化日期與時間值的文字方塊物件。
+In the above code snippet, a custom function named `updateDateTime` takes parameters such as a field object and a global object. The field represents the textbox object where the formatted date and time value is displayed within the form. -->
 
 讓我們瞭解自訂函式如何透過使用欄位和全域物件 `Contact Us` 使用不同使用案例的表單。
 
@@ -419,7 +427,8 @@ JavaScript註解是用來提供JavaScript程式碼的中繼資料。 其中包�
 
 >[!NOTE]
 >
-> 您可以使用中的可用屬性來設定欄位屬性 `[form-path]/jcr:content/guideContainer.model.json`.
+> * 您可以使用中的可用屬性來設定欄位屬性 `[form-path]/jcr:content/guideContainer.model.json`.
+> * 使用對表單進行的修改 `setProperty` globals物件方法本質上不同步，且在自訂函式執行期間不會反映出來。
 
 在此範例中，驗證 `personaldetails` 面板會在按一下按鈕時發生。 如果在面板、另一個面板、 `feedback` 面板，在按一下按鈕時就會顯示。
 
@@ -554,7 +563,7 @@ JavaScript註解是用來提供JavaScript程式碼的中繼資料。 其中包�
 `globals.functions.submitForm(globals.functions.exportData(), false);` 用於在操作後提交表單資料。
 * 第一個引數是要提交的資料。
 * 第二個引數代表是否要在提交前驗證表單。 它是 `optional` 並設為 `true` 依預設。
-* 第三個引數為 `contentType` 提交的，也就是 `optional` 預設值為 `multipart/form-data`.
+* 第三個引數為 `contentType` 提交的「 」欄位，此欄位也是選用的，預設值為 `multipart/form-data`. 其他值可以是 `application/json` 和 `application/x-www-form-urlencoded`.
 
 在自訂函式中新增下列程式碼，如 [create-custom-function](#create-custom-function) 區段，若要在伺服器上提交操作過的資料：
 
@@ -565,7 +574,6 @@ JavaScript註解是用來提供JavaScript程式碼的中繼資料。 其中包�
     * @param {object} field
     * @param {scope} globals 
     */
-
     function submitData(globals)
     {
     
