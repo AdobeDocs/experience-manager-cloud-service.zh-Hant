@@ -4,10 +4,10 @@ description: 在  [!DNL Assets view] 中移動、刪除、複製、重新命名�
 role: User,Leader
 contentOwner: AG
 exl-id: 2459d482-828b-4410-810c-ac55ef0a2119
-source-git-commit: f7d3e356e4e43d5838a6319f5ead750c149a9b3b
+source-git-commit: 3912f52112b3d9dcb568e477c33d3f4b28064b66
 workflow-type: tm+mt
-source-wordcount: '1062'
-ht-degree: 88%
+source-wordcount: '1177'
+ht-degree: 89%
 
 ---
 
@@ -22,15 +22,39 @@ ht-degree: 88%
 *圖：在選取影像的工具列中可用的選項。*
 
 * ![取消選取圖示](assets/do-not-localize/close-icon.png) 取消選取。
+
+* ![尋找類似圖示](assets/do-not-localize/find-similar.svg)：根據中繼資料和智慧標記在 Assets UI 中尋找類似影像資產。
+
 * ![詳細資料圖示](assets/do-not-localize/edit-in-icon.png) 按一下以預覽資產和檢視詳細的中繼資料。預覽時，您可以檢視版本和編輯影像。
+
 * ![下載圖示](assets/do-not-localize/download-icon.png) 將選取的資產下載到您的本機檔案系統。
+
+* ![新增集合圖示](assets/do-not-localize/add-collection.svg)：將所選資產新增到集合中。
+
+* ![釘選資產圖示](assets/do-not-localize/pin-quick-access.svg) 將資產釘選到快速存取，以便需要時能快速存取。所有釘選的項目都顯示在「我的工作區」的&#x200B;**快速存取**&#x200B;部分。
+
+* ![在 Express 圖示中編輯](assets/do-not-localize/edit-e.svg) 到 Adobe Experience Manager Assets 畫面的整合 Adobe Express 中編輯影像。
+
+* ![編輯資產圖示](assets/do-not-localize/edit-e.svg) 使用 Adobe Express 編輯影像。
+
+* ![共用資產連結圖示](assets/do-not-localize/share-link.svg)，與其他使用者共用資產，以便他們存取和下載。
+
 * ![刪除圖示](assets/do-not-localize/delete-icon.png) 刪除選取的資產或檔案夾。
-* ![簽出圖示](assets/do-not-localize/checkout-icon.png) 簽出選取的資產。
+
 * ![複製圖示](assets/do-not-localize/copy-icon.png) 複製選取的檔案或資料夾。
+
 * ![移動圖示](assets/do-not-localize/move-icon.png) 將選取的資產或資料夾移至存放庫階層中不同的位置。
+
 * ![重新命名圖示](assets/do-not-localize/rename-icon.png) 重新命名選取的資產或資料夾。請使用唯一名稱，否則重新命名動作會失敗並出現警告。您可以使用新名稱再試一次。
-此外，您可以按一下資產或資料夾的標題來重新命名。 提及新文字於 **重新命名資產** 文字方塊並按一下 **儲存**. 此功能適用於「格點」、「相簿」、「瀑布」和「清單」檢視。 <!--in-place rename-->
+此外，您可以按一下資產或資料夾的標題來重新命名。 提及新文字於 **重新命名資產** 文字方塊並按一下 **儲存**. 此功能適用於「格點」、「相簿」、「瀑布」和「清單」檢視。
+
+* ![瀑布圖檢檢視示](assets/do-not-localize/waterfall-view.png) [!UICONTROL 瀑布檢視].
+
+* ![複製資料庫圖示](assets/do-not-localize/copy-icon.png) 將資產新增至資料庫。
+
 * ![指派任務圖示](assets/do-not-localize/review-delegate-icon.png) 指派任務給其他使用者，以在資產上共同作業。
+
+* ![指派任務圖示](assets/do-not-localize/watch-asset.svg) 監控對資產執行的操作。
 
 您可以在資產縮圖上檢視相同選項。
 
