@@ -5,7 +5,7 @@ exl-id: 65a5600a-8d16-4943-b3cd-fe2eee1b4abf
 source-git-commit: 11f721b4a617c99e30329d7196f42d7b48067f1b
 workflow-type: tm+mt
 source-wordcount: '1297'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -248,11 +248,11 @@ Adobe 建議您採用三階段方法來開發區塊：
 
 ## 後續步驟 {#next-steps}
 
-現在您已經知道如何建立區塊，瞭解如何以語意方式模型化內容以實現精益開發人員體驗至關重要。
+既然您已經知道如何建立區塊，那麼了解如何以語義方式建立內容模式並實現精益開發人員體驗就很重要。
 
-請參閱檔案 [使用Edge Delivery Services專案進行AEM製作的內容模型](/help/edge/aem-authoring/content-modeling.md) 瞭解內容模型如何用於AEM與Edge Delivery Services專案的共同製作。
+請參閱文件「[使用 Edge Delivery Services 專案為 AEM 製作建立內容模式](/help/edge/aem-authoring/content-modeling.md)」，了解建立內容模式如何用來使用 Edge Delivery Services 專案進行 AEM 製作。
 
 >[!TIP]
 >
->如需以AEMas a Cloud Service作為內容來源來建立啟用AEM編寫的新Edge Delivery Services專案的端對端逐步解說，請檢視 [此AEM GEM網路研討會。](https://experienceleague.adobe.com/en/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)
+>有關建立新的 Edge Delivery Services 專案的端對端操作示範，該專案支援使用 AEM as a Cloud Service 作為內容來源進行 AEM 製作，請觀看[「AEM GEM 網路研討會」。](https://experienceleague.adobe.com/en/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)
 

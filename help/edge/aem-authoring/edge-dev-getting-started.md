@@ -6,7 +6,7 @@ exl-id: a71184a7-c954-442e-b276-99edc6d2acd8
 source-git-commit: 8bdca5357666841c4471170ab3b97476b6be63b6
 workflow-type: tm+mt
 source-wordcount: '1296'
-ht-degree: 87%
+ht-degree: 96%
 
 ---
 
@@ -30,9 +30,9 @@ AEM 提供兩種不同的內容編輯器，請您根據情況選擇要使用的�
 * **Universal Editor** - 這是新網站的預設選項。
 * **AEM 頁面編輯器** - 應選擇此編輯器將現有 AEM Sites 移轉到 Edge Delivery Services。
 
-本指南重點在於使用 Universal Editor 的 Edge Delivery Services 上的 AEM 專案。檢視檔案 [搭配AEM使用Edge Delivery Services](/help/edge/using.md) 深入瞭解如何選擇正確的編輯器，以及如何將現有的AEM網站移轉至Edge Delivery Services。
+本指南重點在於使用 Universal Editor 的 Edge Delivery Services 上的 AEM 專案。請參閱文件「[透過 AEM 使用 Edge Delivery Services](/help/edge/using.md)」，以進一步了解有關選擇正確編輯器以及將現有 AEM Sites 移轉到 Edge Delivery Services 的詳細資訊。
 
-## 為Edge Delivery Services開發時的核心概念 {#core-concepts}
+## 開發 Edge Delivery Services 時的核心概念 {#core-concepts}
 
 Edge Delivery Services 以區塊概念為基礎。AEM 包含完整的預先定義區塊資料庫，您可以擴充該資料庫來專案需求。Edge Delivery Services 專案的程式碼是在 GitHub 中管理。
 
@@ -111,12 +111,12 @@ Edge Delivery 運用 GitHub，可讓您直接從自己的 GitHub 存放庫管理
 
    ![paths.json](assets/edge-dev-getting-started/paths.png)
 
-1. 預設對應將使用存放庫的名稱。 視需要更新專案的預設對應，使用 `/content/<site-name>/:/` 並按一下 **提交變更……**.
+1. 預設對應將使用存放庫的名稱。使用 `/content/<site-name>/:/` 依您的專案需求更新預設對應，然後按一下「**提交變更...**」。
 
    * 提供您自己的 `<site-name>`。後續步驟中還會需要它。
    * 對應會告訴 Edge Delivery Services 如何將 AEM 存放庫中的內容對應到網站 URL。
 
-   ![正在更新paths.json](assets/edge-dev-getting-started/paths-update.png)
+   ![更新 paths.json](assets/edge-dev-getting-started/paths-update.png)
 
 1. 根據需要新增提交訊息，然後按一下「**提交變更**」，將其直接提交到 `main` 分支。
 
@@ -192,11 +192,11 @@ Edge Delivery 運用 GitHub，可讓您直接從自己的 GitHub 存放庫管理
 
 ## 後續步驟 {#next-steps}
 
-現在您已可使用Edge Delivery Services專案進行AEM編寫，您可以開始建立自己的區塊並設定其樣式。
+現在您已經有使用 Edge Delivery Services 專案進行的 AEM 製作環境，您可以開始建立自己的區塊並設計其樣式。
 
 請參閱指南「[建立經檢測適用 Universal Editor 的區塊](/help/edge/aem-authoring/create-block.md)」，了解更多資訊。
 
 >[!TIP]
 >
->如需以AEMas a Cloud Service作為內容來源來建立啟用AEM編寫的新Edge Delivery Services專案的端對端逐步解說，請檢視 [此AEM GEM網路研討會。](https://experienceleague.adobe.com/en/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)
+>有關建立新的 Edge Delivery Services 專案的端對端操作示範，該專案支援使用 AEM as a Cloud Service 作為內容來源進行 AEM 製作，請觀看[「AEM GEM 網路研討會」。](https://experienceleague.adobe.com/en/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)
 

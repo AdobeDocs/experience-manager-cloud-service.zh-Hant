@@ -9,7 +9,7 @@ user-guide-title: AEM as a Cloud Service
 source-git-commit: ff8d04878da521b55121c9460a9d4b159ec617a4
 workflow-type: tm+mt
 source-wordcount: '4881'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -797,16 +797,16 @@ ht-degree: 98%
    + [常見問題集](/help/commerce-cloud/faq.md)
 + Edge Delivery Services {#edge-delivery}
    + [Edge Delivery Services 概觀](/help/edge/overview.md)
-   + [搭配AEM使用Edge Delivery Services](/help/edge/using.md)
-   + AEM式製作 {#aem-authoring}
+   + [透過 AEM 使用 Edge Delivery Services](/help/edge/using.md)
+   + 以 AEM 為主的製作 {#aem-authoring}
       + [為 Edge Delivery 製作內容](/help/edge/aem-authoring/authoring.md)
       + [為 Edge Delivery 發佈內容](/help/edge/aem-authoring/publishing.md)
       + [開發人員快速入門指南](/help/edge/aem-authoring/edge-dev-getting-started.md)
       + [建立區塊](/help/edge/aem-authoring/create-block.md)
-      + [內容模型](/help/edge/aem-authoring/content-modeling.md)
+      + [建立內容模式](/help/edge/aem-authoring/content-modeling.md)
       + [表格資料和試算表](/help/edge/aem-authoring/tabular-data.md)
       + [現有專案和 Edge Delivery](/help/edge/aem-authoring/existing-projects.md)
-   + 檔案式製作 {#document-authoring}
+   + 文件型的製作 {#document-authoring}
       + [製作](/help/edge/docs/authoring.md)
       + [大量中繼資料](/help/edge/docs/bulk-metadata.md)
       + [預留位置](/help/edge/docs/placeholders.md)
@@ -832,7 +832,7 @@ ht-degree: 98%
       + [Akamai 設定](/help/edge/docs/byo-cdn-akamai-setup.md)
       + [快速設定](/help/edge/docs/byo-cdn-fastly-setup.md)
       + [重新導向](/help/edge/docs/redirects.md)
-   + 建立Forms {#build-forms}
+   + 建立表單 {#build-forms}
       + [概觀](/help/edge/docs/forms/overview.md)
       + 立即開始 {#getting-started-eds-forms}
          + [快速入門](/help/edge/docs/forms/tutorial.md)
@@ -840,7 +840,7 @@ ht-degree: 98%
          + [設定您的 Google 表單或 Microsoft Excel 檔案以開始接受資料](/help/edge/docs/forms/submit-forms.md)
          + [發佈您的表單並開始收集資料](/help/edge/docs/forms/publish-forms.md)
          + [新增驗證至表單欄位](/help/edge/docs/forms/validate-forms.md)
-         + [將選項從URL載入至表單](/help/edge/docs/forms/load-options-from-url.md)
+         + [從 URL 將選項載入表單](/help/edge/docs/forms/load-options-from-url.md)
          + [自訂表單的外觀](/help/edge/docs/forms/style-theme-forms.md)
          + [使用規則為表單新增動態行為](/help/edge/docs/forms/rules-forms.md)
          + [提交表單後顯示自訂感謝訊息](/help/edge/docs/forms/thank-you-page-form.md)
@@ -850,10 +850,10 @@ ht-degree: 98%
          + [轉換](/help/edge/docs/forms/translate-forms.md)
          + [reCAPTCHA](/help/edge/docs/forms/recaptacha-forms.md)
          + [自訂元件](/help/edge/docs/forms/custom-components-forms.md)
-         + [對表單進行即時使用者監控](/help/edge/docs/forms/real-time-user-monitoring-for-forms.md)
+         + [表單的即時使用者監控](/help/edge/docs/forms/real-time-user-monitoring-for-forms.md)
       + 參考資料 {#forms-references}
          + [最適化表單區塊元件及其屬性](/help/edge/docs/forms/form-components.md)
-   + Edge傳遞資源 {#resources}
+   + Edge Delivery 資源 {#resources}
       + Sidekick {#sidekick}
          + [使用 Sidekick](/help/edge/docs/sidekick.md)
          + [安裝擴充功能](/help/edge/docs/sidekick-extension.md)

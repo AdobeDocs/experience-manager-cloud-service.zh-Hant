@@ -5,7 +5,7 @@ exl-id: e68b09c5-4778-4932-8c40-84693db892fd
 source-git-commit: 11f721b4a617c99e30329d7196f42d7b48067f1b
 workflow-type: tm+mt
 source-wordcount: '2233'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -627,7 +627,7 @@ AEM 中提供的許多預設頁面屬性都會對應到文件中各別的頁面�
 
 * 以 `modified-time` (ISO8601 格式) 顯示的 `cq:lastModified`
 * 文件最後發佈的時間為 `published-time` (ISO8601 格式)
-* `cq:tags` 作為 `cq-tags` 以逗號分隔的標籤ID清單。
+* `cq:tags` 作為 `cq-tags` 以逗號分隔的標記 ID 清單。
 
 也可以為自訂頁面中繼資料定義元件模式，這可以讓作者用作 AEM Sites 頁面屬性對話方塊的標記。
 
@@ -648,13 +648,13 @@ AEM 中提供的許多預設頁面屬性都會對應到文件中各別的頁面�
 
 ## 後續步驟 {#next-steps}
 
-現在您知道了如何模型化內容，您可以使用AEM編寫專案為自己的Edge Delivery Services建立區塊。
+現在您已了解如何內建立內容模式，接下來可以使用 AEM 製作專案為您自己的 Edge Delivery Services 建立區塊。
 
-檢視檔案 [建立可搭配通用編輯器使用的區塊](/help/edge/aem-authoring/create-block.md) 瞭解如何在AEM編寫和Edge Delivery Services專案中建立可搭配通用編輯器使用的區塊。
+請參閱文件「[建立可供 Universal Editor 使用的區塊](/help/edge/aem-authoring/create-block.md)」，了解在使用 Edge Delivery Services 專案的 AEM 製作中如何建立可供 Universal Editor 使用的區塊。
 
-如果您已熟悉建立區塊，請參閱檔案 [使用Edge Delivery Services進行AEM編寫的開發人員快速入門手冊](/help/edge/aem-authoring/edge-dev-getting-started.md) 讓您使用Edge Delivery Services和通用編輯器來編寫內容，進而使用新的Adobe Experience Manager網站。
+如果您已經熟悉如何建立區塊，請參閱文件「[使用 Edge Delivery Services 進行 AEM 製作的開發人員快速入門指南](/help/edge/aem-authoring/edge-dev-getting-started.md)」，協助您快速開始使用新的 Adobe Experience Manager 網站，使用 Edge Delivery Services 和 Universal Editor 進行內容製作。
 
 >[!TIP]
 >
->如需以AEMas a Cloud Service作為內容來源來建立啟用AEM編寫的新Edge Delivery Services專案的端對端逐步解說，請檢視 [此AEM GEM網路研討會。](https://experienceleague.adobe.com/en/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)
+>有關建立新的 Edge Delivery Services 專案的端對端操作示範，該專案支援使用 AEM as a Cloud Service 作為內容來源進行 AEM 製作，請觀看[「AEM GEM 網路研討會」。](https://experienceleague.adobe.com/en/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)
 
