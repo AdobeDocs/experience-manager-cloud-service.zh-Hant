@@ -2,9 +2,9 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2023.6.0 版發行說明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2023.6.0 版發行說明。'
 exl-id: 29cf9548-e413-4e4f-b233-d6bb04918b22
-source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
-workflow-type: ht
-source-wordcount: '1357'
+source-git-commit: 18f07bab308b707952b8df6b980dd3a6a9e024e9
+workflow-type: tm+mt
+source-wordcount: '1322'
 ht-degree: 100%
 
 ---
@@ -65,12 +65,6 @@ Experience Manager Assets 現在使您能夠透過搜尋結果使用者介面執
 **3D 資產的縮圖預覽**
 
 [!DNL Experience Manager Assets] 現在可以產生[常見 3D 檔案格式的縮圖預覽](/help/assets/file-format-support.md)，包括 gLB、USDz、FBX、3DS、OBJ 和 SBSAR。當這些檔案上傳時，縮圖會依預設自動產生。
-
-**連結共用設定**
-
-新改進的[建立連結共用](/help/assets/share-assets.md)使用者體驗，加上一組全新設定，使管理員可以為使用者自訂此功能的預設行為。
-
-![標記管理](/help/assets/assets/config-email-service.png)
 
 **Dynamic Media：更新了影像設定檔中與智慧型裁切相關欄位**
 

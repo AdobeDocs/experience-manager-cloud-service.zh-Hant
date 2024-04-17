@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 最新發行說明�
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 最新發行說明。'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: f3d3bc92eb47bf5008167f660f26dfede2700540
+source-git-commit: 18f07bab308b707952b8df6b980dd3a6a9e024e9
 workflow-type: tm+mt
-source-wordcount: '2285'
-ht-degree: 30%
+source-wordcount: '2321'
+ht-degree: 31%
 
 ---
 
@@ -97,6 +97,12 @@ AEM Assets與Adobe Express原生整合，可讓您從Adobe Express使用者介�
 **預覽所有支援影片類型的轉譯版**
 
 Experience Manager Assets現在依預設會產生所有支援視訊型別的預覽轉譯，不需要處理設定檔設定。
+
+**連結共用設定**
+
+新改進的[建立連結共用](/help/assets/share-assets.md)使用者體驗，加上一組全新設定，使管理員可以為使用者自訂此功能的預設行為。
+
+![設定電子郵件服務](/help/assets/assets/config-email-service.png)
 
 ### 資產檢視中的新功能 {#assets-view}
 
