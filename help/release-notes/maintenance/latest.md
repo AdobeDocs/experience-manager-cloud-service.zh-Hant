@@ -2,9 +2,9 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的目前維護版本發行說明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的目前維護版本發行說明。'
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: 5e216e45a1400299efcc418007ddbe93f0c571a1
+source-git-commit: 36fefbf74a288d60a9529f0c7273dd6b0557177b
 workflow-type: tm+mt
-source-wordcount: '427'
+source-wordcount: '424'
 ht-degree: 35%
 
 ---
@@ -45,7 +45,7 @@ ht-degree: 35%
 * GRANITE-49638：修正RUM轉換器工廠的錯誤內容型別設定。
 * GRANITE-50141： IMSProviderImpl正在傳送記錄檔。
 * SITES-20949： Youtube新增referrerpolicy=&quot;strict-origin-when-cross-origin&quot;後，ComponentsIT.testEmbed失敗。
-* SITES-21233：核心元件更新 — 升級至15860後，修正GS1US的Accordion。
+* SITES-21233：核心元件更新 — 升級至15860後修正Accordion。
 * SKYOPS-74819： Apache Commons中重複金鑰的向後相容性中斷。
 * SKYOPS-67087：Clientlib彙總在某些情況下無法運作。
 * CQ-4355415： AEM通知連結在6.5 SP18中無法運作。
