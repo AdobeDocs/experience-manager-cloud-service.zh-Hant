@@ -6,10 +6,10 @@ contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms, Core Components
 exl-id: 24607dd1-2d65-480b-a831-9071e20c473d
-source-git-commit: ee6072b3fc6786905a6610081acb22c708f1eae4
+source-git-commit: ff4f8416284c8491a252b725dfa5224e0c0d9fd5
 workflow-type: tm+mt
-source-wordcount: '3104'
-ht-degree: 2%
+source-wordcount: '3119'
+ht-degree: 3%
 
 ---
 
@@ -22,6 +22,11 @@ ht-degree: 2%
 確保 [核心元件已設定為3.0.8版](https://github.com/adobe/aem-core-forms-components) 在自訂功能中使用發行前功能。 </span>
 
 # 最適化Forms中的自訂函式（核心元件）
+
+| 版本 | 文章連結 |
+| -------- | ---------------------------- |
+| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/adaptive-forms-core-components/create-and-use-custom-functions) |
+| AEM as a Cloud Service  | 本文章 |
 
 ## 簡介
 
