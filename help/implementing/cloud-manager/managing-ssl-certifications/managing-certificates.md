@@ -2,10 +2,10 @@
 title: 管理 SSL 憑證
 description: 了解如何使用 Cloud Manager 檢查 SSL 憑證的狀態以及如何編輯、取代、更新和刪除它們。
 exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
-source-git-commit: 7143ea8d36e26aa1674608ff7bd8ba22e2030b3c
+source-git-commit: 65aaa732d08cee541153f1b2fb4ea7b44f1f3029
 workflow-type: tm+mt
-source-wordcount: '644'
-ht-degree: 75%
+source-wordcount: '645'
+ht-degree: 76%
 
 ---
 
@@ -30,8 +30,8 @@ ht-degree: 75%
 
 憑證過期後，與過期憑證一起使用的任何網域都將不再運作。透過以下步驟更新您的憑證可確保您的網域繼續如期運作。
 
-1. 登入Cloud Manager於 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 並選取適當的組織
-1. 在 **[我的計畫](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** 畫面，選取程式。
+1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager，並選取適當的組織。
+1. 在「**[我的程式](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)**」畫面中，選取程式。
 1. 從&#x200B;**概觀**&#x200B;頁面瀏覽到&#x200B;**環境**&#x200B;畫面。
 1. 從&#x200B;**環境**&#x200B;畫面瀏覽到 **SSL** 憑證。
 1. 您可以看到一個表格，其中一列包含已成功安裝在計畫中的每個SSL憑證。 按一下要更新的憑證列最右側的省略符號按鈕，然後選取 **檢視和更新**.
@@ -48,7 +48,7 @@ ht-degree: 75%
 
 ## 刪除 SSL 憑證 {#deleting-an-ssl-certificate}
 
-從 Cloud Manager 中移除憑證是無法復原的永久性動作。作為最佳實務，Adobe 建議先在本機儲存 SSL 檔案，然後才從 Cloud Manager 中刪除它們。
+從Cloud Manager中移除憑證是無法復原的永久性動作。 作為最佳實務，Adobe 建議先在本機儲存 SSL 檔案，然後才從 Cloud Manager 中刪除它們。
 
 Cloud Manager 不允許您刪除與一個或多個網域相關聯的 SSL 憑證。在刪除 SSL 憑證之前，必須刪除所有關聯的網域。如需更多資訊，請參閱[管理自訂網域名稱](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md)。
 

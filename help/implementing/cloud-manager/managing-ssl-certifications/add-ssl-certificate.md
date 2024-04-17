@@ -2,10 +2,10 @@
 title: 正在新增 SSL 憑證
 description: 了解如何使用 Cloud Manager 的自助服務工具新增您自己的 SSL 憑證。
 exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
-source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
+source-git-commit: 65aaa732d08cee541153f1b2fb4ea7b44f1f3029
 workflow-type: tm+mt
-source-wordcount: '557'
-ht-degree: 84%
+source-wordcount: '612'
+ht-degree: 80%
 
 ---
 
@@ -25,9 +25,9 @@ ht-degree: 84%
 
 依照以下步驟使用 Cloud Manager 新增憑證。
 
-1. 登入Cloud Manager於 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 並選取適當的組織
+1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager，並選取適當的組織。
 
-1. 在 **[我的計畫](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** 畫面，選取程式。
+1. 在「**[我的程式](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)**」畫面中，選取程式。
 
 1. 從&#x200B;**概觀**&#x200B;頁面瀏覽到&#x200B;**環境**&#x200B;畫面。
 
@@ -40,6 +40,7 @@ ht-degree: 84%
    * 在&#x200B;**憑證名稱**&#x200B;中輸入憑證名稱。
       * 這僅供參考，可以是任何有助於您輕鬆引用憑證的名稱。
    * 在對應欄位中貼上&#x200B;**憑證**、**私人金鑰**&#x200B;和&#x200B;**憑證鏈**&#x200B;值。所有三個欄位都是必填項目。
+   * 在某些情況下，終端使用者證書可能會包含在鏈中，並且必須在將鏈貼上到欄位之前將其清除。
 
    ![新增憑證對話方塊](/help/implementing/cloud-manager/assets/ssl/ssl-cert-02.png)
 
@@ -56,6 +57,10 @@ ht-degree: 84%
 >[!NOTE]
 >
 >使用者必須具有&#x200B;**業務負責人**&#x200B;或&#x200B;**部署管理員**&#x200B;角色，才能在 Cloud Manager 中安裝 SSL 憑證。
+
+>[!NOTE]
+>
+>如果您收到類似以下的錯誤 `The Subject of an intermediate certificate must match the issuer in the previous certificate. The SKI of an intermediate certificate must match the AKI of the previous certificate.`，您可能會將使用者端憑證納入憑證鏈中。 請確定該鏈結不包含使用者端憑證，然後再試一次。
 
 ## 憑證錯誤 {#certificate-errors}
 
