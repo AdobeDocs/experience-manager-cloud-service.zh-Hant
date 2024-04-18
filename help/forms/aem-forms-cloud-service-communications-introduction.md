@@ -1,13 +1,14 @@
 ---
 title: 什麼是Formsas a Cloud Service通訊API？
 description: 使用通訊API來簽署、認證或保護您的檔案、自動化PDF產生流程，以及將PDF檔案轉換為另一種格式。
-Keywords: How to generate document?, Generate PDF document, Manipulation PDF documents, Assembling PDF documents, Validating PDF document, APIs used in encrypting or decrypting PDFs
+Keywords: How to generate document?, Generate PDF document, Manipulation PDF documents, Assembling PDF documents, Validating PDF document, APIs used in encrypting or decrypting PDFs.
 feature: Adaptive Forms, APIs
 role: Admin, Developer, User
-source-git-commit: 31896ce21aa8a6e63657cd3099900803c98657b2
+exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
+source-git-commit: 126af719cfd2c9361d0e7768b3b65e1149b6a989
 workflow-type: tm+mt
-source-wordcount: '1982'
-ht-degree: 56%
+source-wordcount: '1988'
+ht-degree: 55%
 
 ---
 
@@ -190,14 +191,11 @@ DocAssurance服務包含簽名和加密API：
 
 簽名API和加密API都是 [同步API](#types-of-communications-apis-types).
 
-### Reader延伸服務
+### 使用許可權API
 
-<span class="preview"> Reader擴充功能屬於早期採用者計畫。 您可以從您的官方電子郵件ID寫信到aem-forms-ea@adobe.com ，以加入率先採用者計畫並請求存取該功能。 </span>
+<span class="preview"> 使用許可權功能屬於早期採用者計畫。 您可以從您的官方電子郵件ID寫信到aem-forms-ea@adobe.com ，以加入率先採用者計畫並請求存取該功能。 </span>
 
-Reader擴充功能服務可擴充具有其他使用許可權的Adobe Reader功能，讓貴組織輕鬆共用互動式PDF檔案。 Reader擴充功能服務可與Adobe Reader 7.0或更新版本搭配使用。 此服務會將使用許可權新增至PDF檔案。 此動作會啟動在使用Adobe Reader開啟PDF檔案時通常無法使用的功能，例如新增註釋至檔案、填寫表單和儲存檔案。
-
->[!NOTE]
->協力廠商使用者不需要其他軟體或外掛程式即可使用啟用許可權的檔案。
+使用許可權功能可透過擴充具有其他使用許可權的Adobe Reader功能，讓您的組織輕鬆共用互動式PDF檔案。 此服務可與Adobe Reader 7.0或更新版本搭配使用，且會將使用許可權新增至PDF檔案。 此動作會啟動在使用Adobe Reader開啟PDF檔案時通常無法使用的功能，例如新增註釋至檔案、填寫表單和儲存檔案。
 
 當PDF檔案新增了適當的使用許可權時，收件者可以在Adobe Reader中執行下列活動：
 
@@ -208,11 +206,13 @@ Reader擴充功能服務可擴充具有其他使用許可權的Adobe Reader功�
 * 以電子方式提交已完成或附註的PDF檔案。
 * 使用PDF檔案和表單作為內部資料庫和Web服務的直覺式開發前端。
 * 與其他人共用PDF檔案，讓檢閱者可以使用直覺式的標籤工具來新增註解。 這些工具包括電子註解、印章、醒目提示和文字刪除線。 Acrobat提供相同功能。
-* 支援條碼式表單解碼。
+* 支援條碼Forms解碼。
 
 在Adobe Reader中開啟版權啟用的PDF檔案時，這些特殊的使用許可權功能會自動啟用。 當使用者完成使用已啟用許可權的檔案時，這些功能在Adobe Reader中會再次停用。 除非使用者收到其他已啟用許可權的PDF檔案，否則這些功能會維持停用狀態。
 
-Reader Extension Services的各種使用許可權功能包括：
+#### 啟用或停用使用許可權
+
+擴充PDFReader服務的各種使用許可權功能包括：
 
 * **條碼解碼**：解碼PDF檔案中的條碼。
 
@@ -238,7 +238,11 @@ Reader Extension Services的各種使用許可權功能包括：
 
 * **獨立提交**：從PDF檔案離線提交表單資料。
 
-**Reader Extension Services的其他功能**
+#### 擷取使用許可權
+
+為了Adobe Acrobat Reader的擴充性，它有助於擷取在PDF檔案中啟用或停用的使用許可權。
+
+#### 其他功能
 
 * **訊息**：開啟PDF檔案並套用一或多個使用許可權時，Adobe Acrobat Reader中顯示的訊息。
 * **解鎖密碼**：開啟加密的PDF檔案所需的密碼。 通常這是檔案開啟密碼，但如果PDF檔案受到許可權密碼的額外保護，則其中之一可能用於開啟檔案。
