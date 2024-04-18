@@ -6,7 +6,7 @@ contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms, Core Components
 exl-id: 24607dd1-2d65-480b-a831-9071e20c473d
-source-git-commit: ff4f8416284c8491a252b725dfa5224e0c0d9fd5
+source-git-commit: c1c170e1cae148c53662cd49850e2a33754fbafc
 workflow-type: tm+mt
 source-wordcount: '3119'
 ht-degree: 3%
@@ -65,6 +65,7 @@ JavaScript註解是用來提供JavaScript程式碼的中繼資料。 其中包�
 * `@argument` `{type} name <Parameter Description>`
 * `@arg` `{type}` `name <Parameter Description>`.
   `{type}` 代表引數型別。  允許的引數型別包括：
+
    * string：代表單一字串值。
    * 數字：代表單一數值。
    * 布林值：代表單一布林值（true或false）。
