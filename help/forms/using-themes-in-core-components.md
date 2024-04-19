@@ -3,10 +3,10 @@ title: 如何在Adaptive Forms中建立和使用主題？
 description: 您可以使用主題來設定樣式，並使用核心元件來將視覺身分提供給最適化表單。 您可以在任何數量的最適化Forms中共用主題。
 feature: Adaptive Forms, Core Components
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: a868bf4d4acf4fbae7ccaf55b03319ba0617f9a4
+source-git-commit: 159407dfaa5d17caddca2953a5732f0e91eb474c
 workflow-type: tm+mt
-source-wordcount: '2610'
-ht-degree: 5%
+source-wordcount: '2754'
+ht-degree: 4%
 
 ---
 
@@ -128,23 +128,40 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 1. 執行以下命令：
 
    ```
-         code .
+      code .
    ```
 
    ![以純文字編輯器開啟主題資料夾](/help/forms/assets/aem-forms-theme-folder-in-vs-code.png)
 
    資料夾會在Visual Studio Code中開啟。
 
-1. 閇啟 `package.json` 檔案進行編輯。
+1. 開啟 `package.json` 檔案進行編輯。
 
-1. 設定 `name` 和 `description` 屬性。
+1. 設定 `name` 和 `version` 屬性。
 
-   name屬性用於唯一識別主題，例如&quot;aem-forms-wknd-theme&quot;，並顯示在 **樣式** 標籤之 **表單建立精靈**. description屬性提供有關主題的其他詳細資訊，包括其用途和設計適用的情境。 您也可以指定主題的版本、說明和授權。
+   ![畫布布主題名稱變更影像](/help/forms/assets/changename_canvastheme.png)
+
+   >[!NOTE]
+   >
+   > * name屬性用於唯一識別主題，而指定的名稱會顯示在 **樣式** 的標籤 **表單建立精靈**.
+   > * 您可以選擇根據您的選擇為您的主題選取名稱，例如， `mytheme` 或 `customtheme`. 不過，在此案例中，我們已將名稱指定為 `aem-forms-wknd-theme`.
+
+1. 開啟 `package-lock.json` 檔案進行編輯。
+1. 設定 `name` 和 `version` 屬性。 確定 `name` 和 `version` 中的屬性 `Package-lock`.json檔案與 `Package.json` 檔案。
+
+   ![畫布布主題名稱變更影像](/help/forms/assets/changename_canvastheme-package-lock.png)
+
+1. （可選）開啟 `ReadMe` 用於編輯和更新主題名稱的檔案。
+
+   ![畫布布主題名稱變更影像](/help/forms/assets/changename_canvastheme-readme-file.png)
 
 1. 儲存並關閉檔案。
 
-![畫布布主題名稱變更影像](/help/forms/assets/changename_canvastheme.png)
+**設定主題名稱時的注意事項**
 
+* 強制移除 `@aemforms` 從主題名稱 `Package.json` 檔案和 `Package-lock.json` 檔案。 如果無法移除 `@aemforms` 從您的自訂主題名稱，這會導致在主題部署期間前端管道失敗。
+* 建議更新主題 `version` 在 `Package.json` 檔案和 `Package-lock.json` 檔案來準確反映主題隨時間的變更和增強功能。
+* 如需有關使用、安裝指示和其他相關詳細資訊的重要資訊，建議更新 `ReadMe` 檔案。
 
 #### 3.自訂主題 {#customize-the-theme}
 
@@ -158,7 +175,7 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 
 此 `variable.scss` 檔案包含佈景主題的全域變數。 透過更新這些變數，您可以在主題層級進行樣式相關的變更。 若要套用佈景主題層級樣式，請依照下列步驟進行：
 
-1. 閇啟 `<your-theme-sources>/src/site/_variables.scss` 檔案進行編輯。
+1. 開啟 `<your-theme-sources>/src/site/_variables.scss` 檔案進行編輯。
 1. 變更任何屬性的值。 例如，預設的錯誤顏色為 `red`. 若要變更錯誤顏色 `red` 至 `blue`，變更的顏色十六進位代碼 `$errorvariable`. 例如，`$error: #196ee5`。
 1. 儲存並關閉檔案。
 
