@@ -1,7 +1,8 @@
 ---
 title: 在Experience Manager Assets中檢視及管理轉譯
 description: 瞭解AEM Assets和Dynamic Media如何運用靜態和動態影像轉譯，簡化有效的影像管理。
-source-git-commit: 5c1e2d5388b94243f668f07b1f338f035f00de85
+exl-id: 006dc493-c400-4d0f-b314-c1978582b7fb
+source-git-commit: 4627eb00ba910d1ad2920db15a87761bd7e4a0c0
 workflow-type: tm+mt
 source-wordcount: '435'
 ht-degree: 0%
@@ -13,7 +14,8 @@ ht-degree: 0%
 Adobe Experience Manager (AEM)中的轉譯是數位資產（例如影像）的自訂版本，專為不同裝置和平台而設計，以確保最佳效能。 AEM可協助您輕鬆建立和管理這些轉譯，進而提升使用者體驗。 您可以建立縮圖、針對網頁或行動裝置最佳化影像、新增浮水印、檢視及下載動態轉譯或智慧型裁切轉譯，以及執行更多工作。
 
 Dynamic Media影像預設集和智慧型裁切轉譯可根據品牌標準，促進系統化的影像管理，進而實現品牌凝聚力的最大化。 這可簡化快速找到及視需要使用動態影像轉譯的程式，而且不需要任何管理員存取。
-<br>轉譯分為靜態與動態兩類，每種型別各有獨特功能，本節將對此進行詳細討論。
+
+轉譯分為靜態與動態兩類，每種型別各有獨特功能，本節將對此進行詳細討論。
 
 ## 靜態轉譯 {#static-renditions}
 
