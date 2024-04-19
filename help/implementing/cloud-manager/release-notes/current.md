@@ -1,12 +1,12 @@
 ---
 title: Adobe Experience Manager as a Cloud Service 中 Cloud Manager 2024.4.0 的發行說明
-description: 以下是AEMas a Cloud Service中Cloud Manager 2024.4.0的發行說明。
+description: 以下是 AEM as a Cloud Service 中 Cloud Manager 2024.4.0 的發行說明。
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
 source-git-commit: f1d8778f3cfb6868740141d008fd0217839e9103
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '706'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
@@ -25,12 +25,12 @@ AEM as a Cloud Service 中的 Cloud Manager 版本 2024.4.0 發行日期是 2024
 
 ## 新增功能 {#what-is-new}
 
-* 刪除操作已改善 [Edge傳遞](/help/edge/overview.md) 從與該網站相關的程式更新網域對應，以建立網站。
-   * 如果不再對應網站，對應就會被刪除。
-* 在AEM執行個體的關鍵啟動階段提供即時狀態更新，藉此加強部署追蹤。
-   * 此功能可確保您完全掌握部署進度，進而提高決策和營運效率。
-* 此 [網路基礎結構](/help/security/configuring-advanced-networking.md) 清單已增強，可顯示所有連線的環境，而不使用以區域為根據的篩選，以提供更完整的檢視。
-* 增強程式碼建置問題的錯誤訊息，可更輕鬆識別根本原因，以及後續的可操作步驟。
+* 透過更新與該網站相關的程式網域對應，已改善 [Edge Delivery](/help/edge/overview.md) 網站的刪除操作。
+   * 如果沒有更多網站受到對應，則對應將被刪除。
+* 在 AEM 實例的關鍵啟動階段提供即時狀態更新，增強部署追蹤功能。
+   * 此功能可確保您完全了解部署進度，進而得到更好的決策和營運效率。
+*  [網路基礎設施](/help/security/configuring-advanced-networking.md)清單已增強，可顯示所有連接的環境，無需根據區域進行篩選，進而提供更全面的視圖。
+* 已增強程式碼建置問題的錯誤訊息，可以更輕鬆地識別根本原因和後續可操作的步驟。
 
 ## 早期採用計劃 {#early-adoption}
 
@@ -73,4 +73,4 @@ AEM as a Cloud Service 中的 Cloud Manager 版本 2024.4.0 發行日期是 2024
 
 ## 錯誤修正 {#bug-fixes}
 
-* 已解決Cloud Manager重複使用具有錯誤認可雜湊的成品錯誤。
+* 已解決此問題：Cloud Manager 重複使用具有錯誤認可雜湊的成品。
