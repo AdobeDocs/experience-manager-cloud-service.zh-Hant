@@ -2,9 +2,9 @@
 title: 體驗片段
 description: 使用Adobe Experience Manager as a Cloud Service體驗片段，讓您的體驗可重複使用且更靈活。
 exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
-source-git-commit: 0784bfc2928b218a566fdd252fee045ca5ae6b9c
+source-git-commit: e9b9ab2dfd5e1a5b204cbec70ec0a46ebb46f9e9
 workflow-type: tm+mt
-source-wordcount: '2083'
+source-wordcount: '2098'
 ht-degree: 3%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 3%
 體驗片段：
 
 * 是體驗（頁面）的一部分。
-* 可以跨多個頁面使用。
+* 可用於多個頁面（以可編輯的範本為基礎）。
 * 以範本為基礎（僅可編輯）以定義結構和元件。
 * 此範本用於建立 *根頁面* 體驗片段的URL。
 * 由段落系統中一或多個元件組成，具有版面。
@@ -262,6 +262,10 @@ WKND專案會根據以下規則建構一些體驗片段 `Contributors`. 使用�
 您現在可以在編寫頁面時使用您的體驗片段：
 
 1. 開啟任何頁面進行編輯。
+
+   >[!NOTE]
+   >
+   >頁面必須以可編輯的範本為基礎。
 
 1. 在頁面段落系統中建立體驗片段元件的例項：
 
