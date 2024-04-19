@@ -2,10 +2,11 @@
 title: 瞭解如何搜尋和探索中的資產 [!DNL Assets view]？
 description: 瞭解如何在AEM Assets檢視中搜尋和探索資產。 強大的搜尋功能可讓您快速探索合適的資產，協助您改善內容速度。
 role: User
-source-git-commit: c3076ce35128c147ce2056d11d9305d9a9456636
+exl-id: abfe6a91-1699-436f-8bf4-0d0bf2369f46
+source-git-commit: bd3835980fcada20fbfe2551a5c15cc7c69a5c37
 workflow-type: tm+mt
-source-wordcount: '1543'
-ht-degree: 91%
+source-wordcount: '1908'
+ht-degree: 74%
 
 ---
 
@@ -238,6 +239,91 @@ Experience Manager Assets可讓您為組織選取預設登陸頁面。 使用「
 1. 按一下「**[!UICONTROL 關閉]**」即可關閉預覽畫面。
 
    ![搜尋優先首頁預覽](assets/search-first-preview.gif)
+
+## 內容搜尋 {#contextual-search}
+
+您也可以定義文字提示，以搜尋存放庫中的可用資產。 Experience Manager Assets會自動將這些文字提示轉換為搜尋篩選器，並顯示搜尋結果。 您可以使用「篩選窗格」來檢視及修改自動篩選，以進一步縮小搜尋結果的範圍。
+
+### 存取內容搜尋 {#access-contextual-search}
+
+若要在Experience Manager Assets中存取內容搜尋：
+
+1. 按一下 **[!UICONTROL 搜尋]** 在左窗格中。
+
+   ![內容搜尋](assets/access-contextual-search.png)
+
+1. 在搜尋文字方塊中定義文字提示，然後按一下 **[!UICONTROL 內容搜尋]**.
+
+   ![內容搜尋文字提示](assets/contextual-search-text-prompt.png)
+
+   [!DNL Experience Manager Assets] 顯示搜尋結果。
+
+
+### 支援的篩選器 {#supported-filters}
+
+內容搜尋支援下列立即可用的篩選器。 讓文字提示以這些篩選器為基礎，以檢視適當的搜尋結果。
+
+* 影像高度
+
+* 影像寬度
+
+* 檔案型別：影像、檔案、視訊或資料夾。
+
+* MIME型別：JPG、PNG、TIFF、GIF、MP4、PDF、PPTX、DOCX或XLSX
+
+* 建立日期
+
+* 修改日期
+
+* 到期日
+
+* 資產狀態：已核准、已拒絕或全部
+
+* 過期的資產
+
+### 文字提示範例 {#text-prompts-examples}
+
+**範例 1**
+
+**文字提示**：本月建立的影像。
+
+[!DNL Experience Manager Assets] 自動套用下列篩選器並顯示搜尋結果：
+
+![內容搜尋範例1](assets/contextual-search-example1.png)
+
+**範例 2**
+
+**文字提示**：高至少200px、寬至少100px的影像，搭配沙灘與晴天。
+
+[!DNL Experience Manager Assets] 自動套用下列篩選器並顯示搜尋結果：
+
+![內容搜尋範例2](assets/contextual-search-example2.png)
+
+**範例 3**
+
+**文字提示**：我需要藍天高度為1500和2500畫素的影像，而且這些影像是在過去一個月內建立的，而且尚未過期及獲得核准。
+
+[!DNL Experience Manager Assets] 自動套用下列篩選器並顯示搜尋結果：
+
+![內容搜尋範例3](assets/contextual-search-example3.png)
+
+下列影片說明從存取內容式搜尋使用者介面到定義文字提示和檢視搜尋結果的端對端程式。
+
+>[!VIDEO](https://video.tv.adobe.com/v/3428407)
+
+### 停用內容搜尋 {#disable-contextual-search}
+
+管理員也可以選擇停用組織中使用者的內容搜尋。 若要這麼做，請執行下列步驟：
+
+1. 瀏覽至「**[!UICONTROL 設定]**」>「**[!UICONTROL 一般設定]**」。
+
+1. 在 [!UICONTROL 內容搜尋] 部分，關閉 **[!UICONTROL 為您的組織啟用內容搜尋]** 切換即可停用組織中所有使用者的內容搜尋功能。
+
+### 內容搜尋意見回饋 {#contextual-search-feedback}
+
+如果您需要提供內容搜尋功能的意見回饋，請按一下 ![「關聯式搜尋」圖示](assets/do-not-localize/contextual-search-icon.png)  並按一下「意見回饋」圖示。 選取意見型別、指定主旨和說明，然後按一下 **[!UICONTROL 提交]**.
+
+![內容搜尋意見回饋](assets/contextual-search-feedback.png)
 
 ## 後續步驟 {#next-steps}
 
