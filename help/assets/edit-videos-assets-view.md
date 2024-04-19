@@ -2,9 +2,9 @@
 title: 編輯影片
 description: 編輯視訊，使用 [!DNL Adobe Express] 功能選項，並將更新的視訊另存新版。
 role: User
-source-git-commit: dd67ce6fd8d0626db5518a39dd5ed472ddfeff93
+source-git-commit: ed5303bab864e21100cf6e52e130b4bd17bfcb45
 workflow-type: tm+mt
-source-wordcount: '759'
+source-wordcount: '753'
 ht-degree: 19%
 
 ---
@@ -14,8 +14,6 @@ ht-degree: 19%
 使用內嵌技術，輕鬆將視訊轉換為完美大小 [!DNL Adobe Express] 快速動作。 中的快速動作 [!DNL Assets Essentials] 提供者 [!DNL Adobe Express] 提供方便使用的視訊編輯選項，包括裁切視訊、調整視訊大小、修剪視訊，以及將視訊轉換為GIF。
 
 編輯視訊後，您可以將新視訊儲存為新版本。 版本設定功能有助於您稍後在必要時還原成原始資產。若要編輯視訊，請前往視訊的詳細資訊，然後按一下 **[!UICONTROL 編輯視訊]**. 或者，選取資產並按一下詳細資訊，然後按一下 ![剪刀](assets/do-not-localize/cut.svg) 圖示可在右側窗格中使用。
-
-進一步瞭解 [預覽介面](navigate-assets-view.md).
 
 ## 先決條件 {#prerequisites}
 

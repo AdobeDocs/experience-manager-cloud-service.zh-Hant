@@ -4,10 +4,10 @@ description: 瞭解如何在「資產」檢視中管理中繼資料。 更好的
 role: User,Leader,Admin,Architect,Developer
 contentOwner: AG
 exl-id: 7264e8d1-fc8f-4eb3-93a9-a6066ca3f851
-source-git-commit: 9823bd8af9fce93c8f21495f720673d8b41595ed
+source-git-commit: ed5303bab864e21100cf6e52e130b4bd17bfcb45
 workflow-type: tm+mt
 source-wordcount: '1783'
-ht-degree: 82%
+ht-degree: 81%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 82%
 
 中繼資料有助於您進一步將資產分類，而且隨著數位資訊量成長，將相當實用。您可以僅根據檔案名稱、縮圖和記憶體體來管理數百個檔案。然而，此方法並不能調整規模。隨著相關人數和管理的資產數增加，此方法尚嫌不足。
 
-隨著中繼資料增加，數位資產的價值也會成長，這是因為資產會變得
+隨著中繼資料增加，數位資產的價值也會成長，因為資產會變成：
 
 * 更易於存取 - 系統和使用者可以更輕鬆找到資產。
 * 更易於管理 - 您可以更容易找到具有同一組屬性的資產，並將變更套用到這些資產。
