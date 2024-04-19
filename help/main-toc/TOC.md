@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的運作方式以及該軟體可以為您做哪些事。
 breadcrumb-title: 使用手冊
 user-guide-title: AEM as a Cloud Service
-source-git-commit: ff8d04878da521b55121c9460a9d4b159ec617a4
+source-git-commit: f2a3dd21edc2a3b3f4689c1c09184b3cd4268af1
 workflow-type: tm+mt
-source-wordcount: '4881'
+source-wordcount: '4885'
 ht-degree: 99%
 
 ---
@@ -560,6 +560,7 @@ ht-degree: 99%
       + [搜尋和探索資產](/help/assets/search-assets-view.md)
       + [資產管理任務](/help/assets/manage-organize-assets-view.md)
       + [編輯影像](/help/assets/edit-images-assets-view.md)
+      + [檢視和管理轉譯](/help/assets/renditions.md)
       + [管理資產中繼資料](/help/assets/metadata-assets-view.md)
       + [共用資產](/help/assets/share-links-for-assets-view.md)
       + [管理收藏集](/help/assets/manage-collections-assets-view.md)
