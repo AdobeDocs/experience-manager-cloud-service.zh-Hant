@@ -6,7 +6,7 @@ exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 source-git-commit: 18f07bab308b707952b8df6b980dd3a6a9e024e9
 workflow-type: tm+mt
 source-wordcount: '2321'
-ht-degree: 31%
+ht-degree: 99%
 
 ---
 
@@ -18,15 +18,15 @@ ht-degree: 31%
 >
 >從這裡，您可以導覽至先前版本的發行說明，例如 2021 或 2022。
 >
->查看 [Experience Manager 發行藍圖](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)，了解關於 [!DNL Experience Manager] as a Cloud Service 未來功能的啟用。
+>查看 [Experience Manager 發行藍圖](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)，了解關於 [!DNL Experience Manager] as a Cloud Service 未來功能的啟用。
 
 >[!NOTE]
 >
->請參閱[近期文件更新](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates)瞭解與版本不直接相關的文件更新的詳細資料。
+>請參閱[近期文件更新](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates)瞭解與版本不直接相關的文件更新的詳細資料。
 
 ## 發行日期 {#release-date}
 
-的發行日期 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 目前功能版本(2024.3.0)為2024年4月11日。 下一個功能版本(2024.4.0)計畫於2024年4月25日發行。
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 目前功能版本 (2024.3.0) 的發行日期是 2024 年 4 月 11 日。下一個功能版本 (2024.4.0) 預計於 2024 年 4 月 25 日發行。
 
 ## 維護版本發行說明 {#maintenance}
 
@@ -34,7 +34,7 @@ ht-degree: 31%
 
 ## 發行影片 {#release-video}
 
-請觀看2024年3月版本概觀影片，瞭解2024.3.0版本新增功能摘要：
+請觀看 2024 年 3 月發行概觀影片，以了解 2024.3.0 版本新增功能摘要：
 
 >[!VIDEO](https://video.tv.adobe.com/v/3428342?quality=12)
 
@@ -42,47 +42,47 @@ ht-degree: 31%
 
 ### [!DNL Experience Manager Sites] 中的新功能 {#sites-features}
 
-**Edge Delivery Services的AEM製作**
+**Edge Delivery Services 的 AEM 製作**
 
-AEM Sites現在可作為Edge Delivery Services的內容來源。 作者使用新的通用編輯器在AEM中管理其網站，並搭配上下文中的wysiwyg撰寫功能。 如此一來，企業便能利用Edge Delivery Services快速建立高效能網頁，同時利用AEM強大的內容管理功能。
+AEM Sites 現在可以用作 Edge Delivery Services 的內容來源。作者可使用內容 WYSIWYG 製作中的新 Universal Editor，在 AEM 中管理他們的網站。這樣做可讓公司能夠利用 Edge Delivery Services 來建立快速的高效能網頁，同時利用 AEM 強大的內容管理功能。
 
 ![AEM 製作](/help/edge/assets/universal_editor_edge_delivery_services.png)
 
-如需詳細資訊，請參閱 [檔案](/help/edge/overview.md) 並觀看 [AEM Gems - AEM製作和Edge Delivery Services快速入門](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/aem-gems-getting-started-with-aem-authoring-and-edge-delivery/m-p/652694#M43905)
+若要了解更多資訊，請參閱[文件](/help/edge/overview.md)並觀看 [AEM Gems - 開始使用 AEM Authoring 和 Edge Delivery Services](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/aem-gems-getting-started-with-aem-authoring-and-edge-delivery/m-p/652694#M43905)
 
-**Headless實作的通用編輯器**
+**Headless 實作的 Universal Editor**
 
-Universal Editor也讓分離的Web應用程式能夠運用傳統網站獨有的相同直覺式內容內WYSIWYG製作。 內容建立者現在可以使用內容片段，以與頁面內元件相同的簡易方式，以視覺化方式撰寫版面。
+Universal Editor 還可讓分離的 Web 應用程式利用直觀內容 WYSIWYG 製作，這在以前僅適用於傳統網站。內容建立者現在可以使用內容片段以直觀方式建立版面配置，就如同在頁面中使用元件一樣輕鬆。
 
-Universal Editor與眾不同之處在於它可適應不同的Web架構、同時容納伺服器端和使用者端轉譯、保持框架無關性，並消除了託管AEM的必要性。 將現有Web應用程式與通用編輯器整合以進行內容編輯相當簡單明瞭，這主要需要開發人員將特定資料屬性整合到其標籤中。
+Universal Editor 與眾不同之處在於此工具適用於各種不同的 Web 架構，可容納伺服器端和用戶端的呈現、保持無框架狀態，且無需 AEM 託管。將現有 Web 應用程式與 Universal Editor 整合並進行內容編輯非常簡單，主要是需要開發人員將特定的資料屬性合併到其標記中。
 
-透過上述功能，Universal Editor可確保提供一致的編輯體驗，無論內容結構或基礎技術棧疊為何。 如需詳細資訊，請參閱 [通用編輯器簡介](/help/implementing/universal-editor/introduction.md).
+這樣，無論內容結構或底層技術堆疊如何，Universal Editor 都可以確保一致的編輯體驗。若要了解更多資訊，請參閱「[Universal Editor 簡介](/help/implementing/universal-editor/introduction.md)」。
 
-**內容片段和模型的內容管理OpenAPI**
+**適用於內容片段和模式的內容管理 OpenAPI**
 
-開發人員現在能以程式設計方式與內容片段和內容片段模型互動，並使用Content Management OpenAPI對其執行CruD操作。 如需詳細資訊，請參閱 [API檔案](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/)
+開發人員現在可以編程方式與內容片段和內容片段模式互動，並可使用內容管理 OpenAPI 對他們執行 CruD 操作。如需詳細資訊，請參閱「[API 文件](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/)」。
 
-**體驗片段的多網站管理支援**
+**對體驗片段的多網站管理支援**
 
-已針對儲存體驗片段的資料夾結構擴充多網站管理支援，讓使用者推出包含體驗片段的完整內容結構。
+多網站管理支援已擴展到儲存體驗片段的資料夾結構，允許使用者推出包含體驗片段的完整內容結構。
 
 **比較內容片段版本**
 
-新的內容片段編輯器現在可讓內容作者比較及檢視內容片段的目前版本與先前版本之間的差異。
+新的內容片段編輯器現在允許內容作者比較和查看內容片段現有版本與先前版本之間的差異。
 
 ### 早期採用者計劃 {#sites-early-adopter}
 
-**產生變數**
+**產生變化版本**
 
-透過AEM新功能利用GenAI， [產生變數](/help/generative-ai/generate-variations.md)，現在可在Cloud Service中存取。 產生變體可協助您透過使用產生式AI來產生和擴展內容建立。 請洽詢您的Adobe客戶團隊，以考慮加入方案。
+透過 AEM 新功能「[產生變化版本](/help/generative-ai/generate-variations.md)」運用 GenAI；此功能現在可於雲端服務中存取。產生變化版本可協助您透過使用生成式 AI 來產生和擴展內容建立。請聯絡您的 Adob&#x200B;&#x200B;e 客戶團隊以考慮參與該計劃。
 
-**在內容片段控制檯中瀏覽資產**
+**在內容片段控制台中瀏覽資產**
 
-內容作者現在可以瀏覽、檢視影像，以及對其他「資產」採取動作，而不需要離開內容片段主控台。
+內容作者現在可以瀏覽、查看影像，並對影像執行動作，而無需離開內容片段控制台。
 
 ![資產瀏覽](/help/sites-cloud/administering/content-fragments/assets/cf-console-assets-browse.png)
 
-有興趣嘗試該功能並分享回饋意見嗎？使用您的正式電子郵件ID傳送電子郵件至aemcs-headless-adopter@adobe.com ，以進一步瞭解早期採用者計畫。
+有興趣嘗試該功能並分享回饋意見嗎？從您的官方電子郵件 ID 傳送電子郵件到 aemcs-headless-adopter@adobe.com，深入了解有關早期採用者計劃的資訊。
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -90,13 +90,13 @@ Universal Editor與眾不同之處在於它可適應不同的Web架構、同時�
 
 **與 Adobe Express 原生整合**
 
-AEM Assets與Adobe Express原生整合，可讓您從Adobe Express使用者介面直接存取AEM Assets中儲存的資產。 您可以將AEM Assets中管理的內容放在快速畫布中，然後將新內容或編輯過的內容儲存在AEM Assets存放庫中。
+AEM Assets 可與 Adobe Express 自然整合，讓您從 Adobe Express 使用者介面直接存取 AEM Assets 儲存的資源。您可以將 AEM Assets 中管理的內容放置在 Express 畫布中，然後將新的或編輯的內容儲存在 AEM Assets 存放庫中。
 
 ![包括資產附加元件中的資產](/help/assets/assets/adobe-express-native-integration.png)
 
 **預覽所有支援影片類型的轉譯版**
 
-Experience Manager Assets現在依預設會產生所有支援視訊型別的預覽轉譯，不需要處理設定檔設定。
+Experience Manager Assets 現在會依預設產生所有支援影片類型的預覽轉譯，而無需處理設定檔的設定。
 
 **連結共用設定**
 
@@ -106,9 +106,9 @@ Experience Manager Assets現在依預設會產生所有支援視訊型別的預�
 
 ### 資產檢視中的新功能 {#assets-view}
 
-**管理集合的許可權**
+**管理集合權限**
 
-Assets Essentials可讓管理員管理存放庫中私有集合的存取層級。 身為管理員，您可建立使用者群組並指派權限給這些群組，以管理存取層級。您也可以將許可權管理許可權委派給使用者群組。
+Assets Essentials 可讓管理員管理存放庫中專用集合的存取層級。身為管理員，您可建立使用者群組並指派權限給這些群組，以管理存取層級。您還可以將權限管理權委派給使用者群組。
 
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
@@ -119,71 +119,71 @@ Assets Essentials可讓管理員管理存放庫中私有集合的存取層級。
 
 -->
 
-### AEM Forms的新功能 {#forms-new-features}
+### AEM Forms 的新功能 {#forms-new-features}
 
-* **[Adobe Experience Manager FormsEdge Delivery Services](/help/edge/docs/forms/overview.md)**：AEM Forms Edge Delivery Services是一組可撰寫的服務，可啟用快速的開發環境，讓作者可以快速更新、發佈和啟動新表單。 這些服務提供卓越且高影響力的表單體驗，進而促進使用者的參與度和轉換率。這些表單體驗易於製作和開發。
+* **[Adobe Experience Manager Forms Edge Delivery Services](/help/edge/docs/forms/overview.md)**：AEM Forms Edge Delivery Services 是一組可組合服務，讓環境可以快速進行開發，以利作者迅速更新、發佈並推出新表單。這些服務提供卓越且高影響力的表單體驗，進而促進使用者的參與度和轉換率。這些表單體驗易於製作和開發。
 
-  ![EDS Forms功能](/help/edge/assets/eds-forms-features.png)
+  ![EDS 表單功能](/help/edge/assets/eds-forms-features.png)
 
 這些服務可讓您：
 
-* 在相同的表單網站上使用多個內容來源，並使用您偏好的撰寫工具，例如Microsoft Excel、Google Sheets或Adaptive Forms Editor。
-* 提供數位註冊體驗，透過真實使用者監控(RUM)快速且持續地載入及轉譯您的表單效能。
-* 使用純HTML、新式CSS和vanilla JavaScript建立卓越的體驗，避免特定架構的陡峭學習曲線。
+* 在同一個表單網站上使用多個內容來源，並使用您偏好的製作工具，例如 Microsoft Excel、Google Sheets 或最適化表單編輯器。
+* 提供可迅速載入和呈現的數位註冊體驗，並透過真實使用者監控 (RUM) 持續監控您的表單效能。
+* 使用純 HTML、現代 CSS 和普通 JavaScript 來建立卓越的體驗，避免特定框架出現陡峭學習曲線。
 
 
-### AEM Forms搶鮮版中的新功能 {#forms-pre-release}
+### 發行前版本的 AEM Forms 新功能 {#forms-pre-release}
 
-* **核心元件型最適化Forms的增強視覺規則編輯器**：此版本大幅升級基於核心元件之適用性表單的視覺規則編輯器。 此版本大幅升級基於核心元件之適用性表單的視覺規則編輯器。 本次更新著重於簡化與自訂函式的互動，讓您能夠建立更強大且有效的表單。
+* **核心元件式最適化表單的增強型視覺規則編輯器**：此版本針核心元件式最適化表單的視覺規則編輯器進行重大升級。此版本對核心元件式最適化表單的視覺規則編輯器進行重大升級。此更新著重於簡化與自訂函數的互動，讓您能夠建立更強大、更有效率的表單。
 
-  您現在可以透過以下方式簡化自訂功能互動：
+  現在您可以透過以下方式簡化自訂函數互動：
 
-   * [運用新註解以提供更清楚的函式定義](/help/forms/create-and-use-custom-functions.md#supported-javascript-annotations-for-custom-function).
-   * [針對自訂函式使用快取機制，以提高表單效能](/help/forms/create-and-use-custom-functions.md#caching-support-for-custom-function).
-   * [在自訂函式內無縫使用全域物件](/help/forms/create-and-use-custom-functions.md#field-and-global-scope-objects-in-custom-functions).
-   * [在自訂函式中定義及使用選用引數](/help/forms/create-and-use-custom-functions.md#parameter).
+   * [利用新附註提供更清晰的函數定義](/help/forms/create-and-use-custom-functions.md#supported-javascript-annotations-for-custom-function)。
+   * [為自訂函數使用快取機制，提高表單效能](/help/forms/create-and-use-custom-functions.md#caching-support-for-custom-function)。
+   * [無縫地使用自訂函數中的全域物件](/help/forms/create-and-use-custom-functions.md#field-and-global-scope-objects-in-custom-functions)。
+   * [在自訂函數中定義和使用可選參數](/help/forms/create-and-use-custom-functions.md#parameter)。
 
-  此更新也會對規則編輯器功能帶來下列增強功能。 您可以：
+  此更新還增強以下規則編輯器功能。您可以：
 
-   * 實作功能強大 [&quot;when-then-else&quot;](/help/forms/rule-editor-core-components.md#when) 條件執行的邏輯。
-   * 利用現代JavaScript功能，例如左鍵和箭頭函式（ES10支援）。
-   * 不僅驗證或重設欄位，而且驗證或重設整個面板和表單，擴大對使用者互動的控制。
+   * 為條件執行實施功能強大的 [“when-then-else”](/help/forms/rule-editor-core-components.md#when) 邏輯。
+   * 利用現代 JavaScript 功能，如 let 和箭頭函數 (ES10 支援)。
+   * 不僅可驗證或重設欄位，還可驗證或重設整個面板和表單，以擴大對使用者互動的控制。
 
-  這些改進在視覺規則編輯器中提供更直覺且功能強大的撰寫規則和自訂函式體驗。
+  在視覺規則編輯器中建立規則和自訂函數時，這方面的進步可提供更直觀、更強大的體驗。
 
-* **[建立最適化表單的多個版本](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md)**：您現在可以輕鬆管理現有表單的變體。 這可簡化版本控制，並協助進行表單最佳化的比較，全都透過單一、簡化的工作流程完成。
+* **[建立多版本的最適化表單](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md)**：您現在可以輕鬆管理現有表單的變化版本。這簡化了版本控制並可促進表單最佳化的比較，所有都可在一個簡化的工作流程中進行。
 
-* **[比較最適化表單](/help/forms/compare-forms.md)**：您現在可以輕鬆比較兩個表單，以識別兩個表單之間的差異。 它可讓團隊成員有效率地比較修訂版本和討論變更，以利順暢的協同合作。
+* **[比較最適化表單](/help/forms/compare-forms.md)**：您現在可以輕鬆比較兩個表單，識別兩個表單之間的差異。這可方便團隊成員有效地比較修訂版本並討論變更，進而讓成員可順利協作。
 
-* **手寫簽名元件的協助工具增強功能**：此更新大幅改善塗鴉簽名元件的協助工具：
+* **手寫簽名元件的協助工具功能增強**：這項更新為手寫簽名元件提供顯著的協助工具功能改善：
 
-  **改良的鍵盤導覽：**
-   * 按下Tab鍵可讓使用者瀏覽簽名對話方塊中的所有互動式元素。
-   * 使用筆刷或鍵盤簽署並按Enter鍵會關閉對話方塊。
-   * 簽署並按一下[確定]後，焦點仍會留在簽章控制項上。
+  **經改善的鍵盤導覽：**
+   * 按 Tab 鍵允許使用者瀏覽簽章對話方塊中的所有互動元素。
+   * 使用筆刷或鍵盤來簽名，並按 Enter 鍵關閉對話方塊。
+   * 簽名並按一下「確定」後，仍然要著重簽署控制。
 
-  **清除簽章功能：**
+  **清除簽名功能：**
 
-   * 可透過Tab鍵存取清除簽名的清除十字圖示。
-   * 您也可以透過索引標籤導覽存取「清除簽名確認」對話方塊。
+   * 可透過 Tab 鍵存取用來擦拭簽名的清除十字圖示。
+   * 還可透過標籤導覽來存取「清除簽名確認」對話方塊。
 
   **增強的標籤和控制項：**
-   * 鍵盤簽名按鈕的標籤現在更清楚，使用「aria-label」來宣告功能（例如「aria-label=&#39;Sign using Keyboard&#39;」）。
-   * 改善的對比可確保手寫簽名中的所有控制項都能輕鬆區分。
-   * 現在，「確定/核取記號」按鈕會以視覺化方式指出它何時處於非使用中狀態。
+   * 鍵盤簽名按鈕的標籤現在更加清晰，使用「aria-label」來宣布功能 (例如「aria-label=&#39;Sign using Keyboard&#39;」)。
+   * 改善的對比度可確保手寫簽名中的所有控制都項都易於區分。
+   * 確定/勾選標記按鈕現在可以視覺方式表明功能為非使用狀態。
 
-  **熒幕Reader的簽名意見反應：**
-   * 輸入簽名時，熒幕助讀程式的使用者可以聽到用來建立簽名的文字。
+  **螢幕閱讀器的簽名意見回饋：**
+   * 輸入簽名時，螢幕閱讀器使用者可以聽到用來建立簽名的文字。
 
-此更新透過改善塗鴉簽名元件的導覽、清晰度和意見回饋，確保殘障使用者獲得更包容的體驗。
+此更新改善了手寫簽名元件的導覽、清晰度和意見回饋，可確保為殘障使用者提供更具包容性的體驗。
 
 ### 早期採用者計劃 {#forms-early-adopter}
 
-* **[提交最適化表單至Adobe Workfront Fusion案例](/help/forms/submit-adaptive-form-to-workfront-fusion.md)**：Formsas a Cloud Service提供立即可用的選項，讓您輕鬆將最適化表單與Adobe Workfront連線。 這簡化了將最適化表單提交到 Adobe Workfront 情境的程序，讓您在提交最適化表單時觸發 Workfront Fusion 情境。
+* **[將最適化表單提交到 Adobe Workfront Fusion 情境](/help/forms/submit-adaptive-form-to-workfront-fusion.md)**：Forms as a Cloud Service 提供開箱即用的選項，可輕鬆將最適化表單與 Adobe Workfront 連接。這簡化了將最適化表單提交到 Adobe Workfront 情境的程序，讓您在提交最適化表單時觸發 Workfront Fusion 情境。
 
-  <br/> ![Adobe Workfront](/help/forms/assets/adobe-workfront.png) <br/> 使用Adobe Workfront Fusion Connector，您可以設計在提交最適化表單時自動觸發的工作流程。 例如，設想一個情境，其中初始工作流程以指派給特定個人審查提交的資料，從而允許根據透過最適化表單擷取的資訊核准或拒絕應用程式。 這項簡化的整合可提升效率，並將工作流程自動化提升到新的水準。|
+  <br/> ![Adobe Workfront](/help/forms/assets/adobe-workfront.png) <br/> 使用 Adob&#x200B;&#x200B;e Workfront Fusion Connector，您可以設計在提交最適化表單時自動觸發的工作流程。例如，設想這樣一個場景：啟動工作流程以便將審查提交資料的任務分配給特定個人，進而允許根據透過最適化表單擷取的資訊來核准或拒絕申請。這種簡化的整合方式提高了效率，並為您的工作流程帶來了全新的自動化層級。
 
-* **[Reader延伸服務](/help/forms/aem-forms-cloud-service-communications-introduction.md#reader-extension-service)**： AEM Forms Communication API已推出Reader擴充功能，可讓您新增表單填寫和註解等功能至一般PDF，讓使用者能透過免費Adobe Reader互動。
+* **[Reader 延伸模組服務](/help/forms/aem-forms-cloud-service-communications-introduction.md#reader-extension-service)**：AEM Forms Communication API 引入了 Reader 延伸模組服務，讓您可以為一般的 PDF 新增表單填寫和評論等功能，讓免費 Adob&#x200B;&#x200B;e Reader 的使用者可使用這些功能。
 
 * [從右至左語言支援](/help/forms/supporting-new-language-localization-core-components.md)：以核心元件為主的最適化表單現在可以呈現從右至左 (RTL) 語言 (如阿拉伯文、波斯文和烏都文)。全球有超過 20 億人使用 RTL 語言。使用 RTL 語言的表單可讓您擴展最適化表單的範圍，以滿足這些不同的受眾並選擇進入 RTL 市場。在某些地區，法律也強制要求以當地語言提供表單。透過適應當地語言，您不僅可以向更廣泛的受眾敞開大門，還可以確保遵守相關法律和法規。
 
@@ -197,45 +197,45 @@ Assets Essentials可讓管理員管理存放庫中私有集合的存取層級。
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] 基礎 {#foundation}
 
-### 早期採用者計畫 {#foundation-early-adopter}
+### 早期採用者計劃 {#foundation-early-adopter}
 
-#### 流量篩選器規則警報（早期採用者計畫） {#traffic-filter-rules-alerts-early-adopter}
+#### 流量篩選規則警報 (早期採用者計畫) {#traffic-filter-rules-alerts-early-adopter}
 
-最近發行的 [流量篩選規則](/help/security/traffic-filter-rules-including-waf.md)，其中包含可選擇性授權的Web應用程式防火牆(WAF)規則，可讓您設定允許或拒絕的流量。
+最近發佈的[流量篩選規則](/help/security/traffic-filter-rules-including-waf.md) (其中包括可授權選項的 Web 應用程式防火牆 (WAF) 規則) 可讓您設定應該允許或拒絕哪些流量。
 
-現在您可以傳送電子郵件至 **<aemcs-cdn-config-adopter@adobe.com>** 以加入率先採用者計畫，這樣就能在流量篩選規則觸發時收到警報。 動作中心電子郵件通知會在發生某些流量狀況時隨時通知您，以便您採取適當的措施。
+現在您可以發送電子郵件 **<aemcs-cdn-config-adopter@adobe.com>** 加入早期採用者計劃，以便您在流量篩選規則被觸發時收到提醒。當發生某些流量狀況時，行動中心電子郵件通知將通知您，以便您採取適當的措施。
 
-#### CDN設定（早期採用者計畫） {#cdn-config-early-adopter}
+#### CDN 設定 (早期採用者計劃) {#cdn-config-early-adopter}
 
-除了最近發行的 [流量篩選規則](/help/security/traffic-filter-rules-including-waf.md)，其中包含可選擇性授權的Web應用程式防火牆(WAF)規則，您可利用設定管道來宣告及部署其他型別的CDN設定。 [瞭解更多](/help/implementing/dispatcher/cdn-configuring-traffic.md) 並透過電子郵件加入率先採用者計畫 **<aemcs-cdn-config-adopter@adobe.com>** 若要存取以下專案：
+除了最近發佈的[流量篩選規則](/help/security/traffic-filter-rules-including-waf.md) (其中包含可以選擇授權的 Web 應用程式防火牆 (WAF) 規則)，也可以使用設定管道來聲明及部署其他類型的 CDN 設定。[了解更多](/help/implementing/dispatcher/cdn-configuring-traffic.md)並加入早期採用者計劃，可發送電子郵件 **<aemcs-cdn-config-adopter@adobe.com>** 取得存取權限：
 
 * 301/302 用戶端重新導向
-* 在邊緣將請求代理到任意來源(例如非AEM應用程式)
+* 將邊緣要求代理到任意來源 (例如非 AEM 應用程式)
 * URL 轉換
 * 設定或修改要求或回應標頭
 * CDN 無法連接 AEM 時的自訂錯誤頁面
 
-#### Apache/Dispatcher執行階段擷取重寫對應（早期採用者程式） {#apache-rewritemaps-early-adopter}
+#### 重新寫入對應的 Apache/Dispatcher 執行時間擷取 (早期採用者計畫) {#apache-rewritemaps-early-adopter}
 
-與AEM 6.5類似，Apache/Dispatcher將擷取重新寫入放置在發佈存放庫中的特定位置的對應，並載入這些對應，無需Web層管道執行。 這開啟了商業使用者使用UI宣告重新導向的機會，例如ACS Commons重新導向地圖管理員提供的UI。 請聯絡 **<aemcs-cdn-config-adopter@adobe.com>** 以取得詳細資訊。
+與 AEM 6.5 類似，Apache/Dispatcher 將擷取放在發佈存放庫中特定位置的重新寫入對應並將其載入，而不需要 Web 層級的管道執行。這讓商業使用者有機會使用 UI 來聲明重新導向，例如 ACS Commons Redirect Map Manager 提供的 UI。請聯絡 **<aemcs-cdn-config-adopter@adobe.com>** 了解更多。
 
-#### 用於載入動態內容的Edge Side Include (ESI) （早期採用者計畫） {#esi-early-adopter}
+#### 用來載入動態內容的 Edge Side Includes (ESI) (早期採用者計畫) {#esi-early-adopter}
 
-Adobe Managed CDN現在支援Edge Side Include (ESI)，這是邊緣層級動態網頁內容組合的標籤語言。 加入ESI程式碼片段，您就能快取CDN的整體HTML頁面，其中包含較高TTL，同時更頻繁地從來源擷取需要較高步調更新（較低TTL）的較小區段。 請聯絡 **<aemcs-cdn-config-adopter@adobe.com>** 以取得詳細資訊。
+Adobe Managed CDN 現在支援 Edge Side Includes (ESI)，這是一種用於邊緣層級動態 Web 內容組合的標記語言。透過包含 ESI 程式碼段，您可以在具有較高 TTL 的 CDN 上快取整個 HTML 頁面，同時更頻繁地從來源取得需要較高節奏更新 (較低 TTL) 的較小區段。請聯絡 **<aemcs-cdn-config-adopter@adobe.com>** 了解更多。
 
-#### RDE支援使用網站主題和網站範本的前端計畫碼（早期採用計畫） {#rde-frontend-early-adopter}
+#### 使用網站主題和網站範本對前端程式碼的 RDE 支援 (早期採用者計劃) {#rde-frontend-early-adopter}
 
-[快速開發環境 (RDE)](/help/implementing/developing/introduction/rapid-development-environments.md) 現在支援以[網站主題](/help/sites-cloud/administering/site-creation/site-themes.md)和[網站範本](/help/sites-cloud/administering/site-creation/site-templates.md)為主的前端程式碼 (適用於早期採用者)。對於 RDE，這是使用命令列指令完成，而不是使用 [前端管道](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md)來完成。請聯絡 **<aemcs-rde-support@adobe.com>** 進行試用並提供意見反應。
+[快速開發環境 (RDE)](/help/implementing/developing/introduction/rapid-development-environments.md) 現在支援以[網站主題](/help/sites-cloud/administering/site-creation/site-themes.md)和[網站範本](/help/sites-cloud/administering/site-creation/site-templates.md)為主的前端程式碼 (適用於早期採用者)。對於 RDE，這是使用命令列指令完成，而不是使用 [前端管道](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md)來完成。請聯絡 **<aemcs-rde-support@adobe.com>**，要求嘗試並提供意見回饋。
 
-#### 增強RDE的記錄功能（早期採用者計畫） {#rde-logging-early-adopter}
+#### 增強的 RDE 記錄 (早期採用者計劃) {#rde-logging-early-adopter}
 
-在中偵錯程式碼時 [快速開發環境(RDE)](/help/implementing/developing/introduction/rapid-development-environments.md)，開發人員現在可以使用命令列，且無需修改版本控制中的OSGI屬性，更有效率地設定和串流記錄檔。 功能包括：
+在[快速開發環境 (RDE)](/help/implementing/developing/introduction/rapid-development-environments.md) 中進行程式碼除錯時，開發人員現在可以使用命令列更有效設定和串流記錄，而無需修改版本控制中的 OSGI 屬性。功能包含：
 
-* 在每個套件或類別層級上宣告記錄層級
-* 自訂日誌輸出格式
-* 並行串流多個記錄檔
+* 在每個套件或類別層級聲明記錄層級
+* 自訂記錄輸出格式
+* 並行串流多個記錄
 
-請聯絡 **<aemcs-rde-support@adobe.com>** 進行試用並提供意見反應。
+請聯絡 **<aemcs-rde-support@adobe.com>**，要求嘗試並提供意見回饋。
 
 ## Cloud Manager {#cloud-manager}
 
