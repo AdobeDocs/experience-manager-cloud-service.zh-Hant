@@ -2,18 +2,19 @@
 title: 編輯影片
 description: 編輯視訊，使用 [!DNL Adobe Express] 功能選項，並將更新的視訊另存新版。
 role: User
-source-git-commit: ed5303bab864e21100cf6e52e130b4bd17bfcb45
+exl-id: 42b25935-e2ff-444f-97c8-b4ed56f3ef9e
+source-git-commit: 6eb9cfbb463fc976c9101acb434b3b39131c8067
 workflow-type: tm+mt
-source-wordcount: '753'
-ht-degree: 19%
+source-wordcount: '779'
+ht-degree: 16%
 
 ---
 
 # 在中編輯視訊 [!DNL Assets Essentials] {#edit-videos}
 
-使用內嵌技術，輕鬆將視訊轉換為完美大小 [!DNL Adobe Express] 快速動作。 中的快速動作 [!DNL Assets Essentials] 提供者 [!DNL Adobe Express] 提供方便使用的視訊編輯選項，包括裁切視訊、調整視訊大小、修剪視訊，以及將視訊轉換為GIF。
+使用內嵌式功能的Assets使用者，可輕鬆建立視訊內容的變體 [!DNL Adobe Express] 視訊的快速動作。 中的快速動作 [!DNL Assets Essentials] 提供者 [!DNL Adobe Express] 提供方便使用的視訊編輯選項，包括裁切視訊、調整視訊大小、修剪視訊，以及將視訊轉換為GIF。
 
-編輯視訊後，您可以將新視訊儲存為新版本。 版本設定功能有助於您稍後在必要時還原成原始資產。若要編輯視訊，請前往視訊的詳細資訊，然後按一下 **[!UICONTROL 編輯視訊]**. 或者，選取資產並按一下詳細資訊，然後按一下 ![剪刀](assets/do-not-localize/cut.svg) 圖示可在右側窗格中使用。
+若要編輯視訊，請前往視訊的詳細資訊，然後按一下 [!UICONTROL 編輯視訊]. 或者，選取資產並按一下詳細資訊，然後按一下 ![剪刀](assets/do-not-localize/cut.svg) 圖示可在右側窗格中使用。 編輯視訊後，您可以將新視訊儲存為新版本或新資產。
 
 ## 先決條件 {#prerequisites}
 
@@ -38,7 +39,7 @@ ht-degree: 19%
 
 ### 調整視訊大小 {#resize-video-using-express}
 
-熱門的使用案例是將視訊調整為特定大小。 [!DNL Assets Essentials] 可讓您快速調整視訊大小，為特定大小提供預先計算好的新解析度，以符合常見的維度。 若要使用調整視訊大小 [!DNL Assets Essentials]，請遵循下列步驟：
+DAM中的最終視訊內容通常需要調整大小，才能發佈到特定管道。 [!DNL Assets Essentials] 可讓您輕鬆調整視訊大小以符合常見社交頻道所需的維度，您也可以根據自訂解析度調整大小。 若要使用調整視訊大小 [!DNL Assets Essentials]，請執行以下步驟：
 
 1. 選取視訊並按一下 **[!UICONTROL 編輯]**.
 2. 按一下 **[!UICONTROL 調整視訊大小]** 從左側窗格中可用的快速動作。
@@ -52,7 +53,7 @@ ht-degree: 19%
 
 ### 修剪視訊 {#trim-video-using-express}
 
-中的快速視訊修剪 [!DNL Assets Essentials] 提供者 [!DNL Adobe Express] 讓您輕鬆修剪視訊。 執行以下步驟：
+如果您需要使用較大視訊的剪輯，可以使用 **[!UICONTROL 修剪視訊]** 函式來選取及修剪視訊的區段。 執行以下步驟：
 
 1. 選取視訊並按一下 **[!UICONTROL 編輯]**.
 2. 按一下 **[!UICONTROL 修剪視訊]** 從左側窗格中可用的快速動作。
@@ -80,11 +81,11 @@ ht-degree: 19%
 
 ## 限制 {#limitations-video-adobe-express}
 
-* 僅支援MP4視訊型別。
+* 僅支援MP4格式的視訊進行編輯。
 
-* 支援的檔案大小上限：200 MB
+* 支援的最大來源檔案大小為200 MB。
 
-* 視訊的最小和最大尺寸分別為46畫素和3840畫素。
+* 支援的視訊在任何一側都大於46畫素且小於3840畫素。
 
 * 支援的網頁瀏覽器為Google Chrome、Firefox、Safari和Edge。
 
