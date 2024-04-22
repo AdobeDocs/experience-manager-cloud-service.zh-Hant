@@ -4,9 +4,9 @@ description: 本教學課程可協助您啟動並執行新的 Adob​​e Experi
 feature: Edge Delivery Services
 exl-id: bb7e93ee-0575-44e1-9c5e-023284c19490
 source-git-commit: ff8d04878da521b55121c9460a9d4b159ec617a4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1848'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -253,8 +253,8 @@ AEM Forms 範本可協助您很快開始使用預先設定最適化表單區塊�
 
 準備好展示您的創作了嗎？使用 Git 提交並推播您的變更。這將更新可在這些 URL 存取的預覽和生產環境 (將預留位置更換為您的專案詳細資訊)：
 
-預覽： `https://<branch>--<repo>--<owner>.hlx.page/`
-生產： `https://<branch>--<repo>--<owner>.hlx.live/`
+預覽：`https://<branch>--<repo>--<owner>.hlx.page/`
+生產：`https://<branch>--<repo>--<owner>.hlx.live/`
 
 恭喜！您已成功設定本機開發環境並部署好您的變更。
 
