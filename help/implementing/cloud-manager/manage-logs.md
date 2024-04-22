@@ -2,10 +2,10 @@
 title: 存取和管理記錄檔
 description: 了解如何存取和管理記錄檔以協助進行 AEM as a Cloud Service 中的開發流程。
 exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
-source-git-commit: 178af74512e74ff401588b68c73fa4661acec704
+source-git-commit: fa28d2fa83fb35fe80692c5f94661fa4c32a02a9
 workflow-type: tm+mt
-source-wordcount: '346'
-ht-degree: 68%
+source-wordcount: '352'
+ht-degree: 69%
 
 ---
 
@@ -16,13 +16,15 @@ ht-degree: 68%
 
 您可以從&#x200B;**概觀**&#x200B;頁面或環境詳細資訊頁面使用&#x200B;**環境**&#x200B;卡，存取所選環境的可用記錄檔清單。
 
+記錄檔會保留七天。
+
 ## 正在下載記錄檔 {#download-logs}
 
 若要下載記錄檔，請執行下列動作：
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織。
 
-1. 在 **[我的計畫](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** 畫面，選取程式。
+1. 在「**[我的程式](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)**」畫面中，選取程式。
 
 1. 從&#x200B;**概觀**&#x200B;頁面瀏覽到&#x200B;**環境**&#x200B;卡。
 
