@@ -174,8 +174,8 @@ ht-degree: 99%
          + [2021.10.0 版發行說明](/help/journey-migration/release-notes/release-notes-migration-tools-2021-10-0.md)
    + Workfront for Experience Manager 加強連接器發行說明{#workfront}
       + [Workfront for Experience Manager 加強連接器最新發行說明](/help/assets/release-notes-enhanced-connector-workfront.md)
-   + 產生變數的發行說明 {#generate-variations}
-      + [產生變數的最新發行說明](/help/generative-ai/release-notes-generate-variations.md)
+   + 產生變化版本的發行說明 {#generate-variations}
+      + [產生變化版本的最新發行說明](/help/generative-ai/release-notes-generate-variations.md)
    + [新增功能 ](/help/release-notes/what-is-new.md)
    + [AEM Cloud Service 的重大變更](/help/release-notes/aem-cloud-changes.md)
    + [已過時和已移除的功能和 API](/help/release-notes/deprecated-removed-features.md)
@@ -361,7 +361,7 @@ ht-degree: 99%
          + [Markdown](/help/sites-cloud/administering/content-fragments/markdown.md)
          + [刪除考量事項](/help/sites-cloud/administering/content-fragments/delete-considerations.md)
          + [分析結構](/help/sites-cloud/administering/content-fragments/analysis.md)
-         + [內容片段控制檯中的資產](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md)
+         + [內容片段主控台中的資產](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md)
          + [鍵盤快速鍵](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md)
       + 建立網站 {#site-creation}
          + [建立新網站](/help/sites-cloud/administering/site-creation/create-site.md)
@@ -899,8 +899,8 @@ ht-degree: 99%
       + [更新您的內容片段，以達到最佳化 GraphQL 篩選](/help/headless/graphql-api/graphql-optimized-filtering-content-update.md)
       + [範例 GraphQL 查詢](/help/headless/graphql-api/sample-queries.md)
       + [疑難排解 GraphQL 查詢](/help/headless/graphql-api/persisted-queries-troubleshoot.md)
-   + [內容片段和模型OpenAPI](/help/headless/content-fragment-openapis.md)
-   + [Assets HTTP API中的內容片段支援](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/assets-api-content-fragments.html?lang=zh-Hant)
+   + [容片段和模型 OpenAPI](/help/headless/content-fragment-openapis.md)
+   + [Assets HTTP API 中的內容片段支援](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/assets-api-content-fragments.html?lang=zh-Hant)
    + 安全性 {#security}
       + [權限](/help/headless/security/permissions.md)
       + [驗證](/help/headless/security/authentication.md)
