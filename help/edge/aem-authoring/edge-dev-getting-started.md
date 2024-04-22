@@ -3,10 +3,10 @@ title: 使用 Edge Delivery Services 進行 AEM 製作的開發人員快速入�
 description: 本指南將協助您啟動並執行新的 Adobe Experience Manager 網站，以使用 Edge Delivery Services 和 Universal Editor 進行內容製作。
 feature: Edge Delivery Services
 exl-id: a71184a7-c954-442e-b276-99edc6d2acd8
-source-git-commit: 8bdca5357666841c4471170ab3b97476b6be63b6
+source-git-commit: fc5ffe334873b7b98565f38d5664313b26d5f635
 workflow-type: tm+mt
 source-wordcount: '1296'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -34,7 +34,7 @@ AEM 提供兩種不同的內容編輯器，請您根據情況選擇要使用的�
 
 ## 開發 Edge Delivery Services 時的核心概念 {#core-concepts}
 
-Edge Delivery Services 以區塊概念為基礎。AEM 包含完整的預先定義區塊資料庫，您可以擴充該資料庫來專案需求。Edge Delivery Services 專案的程式碼是在 GitHub 中管理。
+Edge Delivery Services 以區塊概念為基礎。AEM 包含完整的預先定義區塊資料庫，您可以擴充該資料庫來符合專案需求。Edge Delivery Services 專案的程式碼是在 GitHub 中管理。
 
 ### 區塊 {#blocks}
 
@@ -130,7 +130,7 @@ Edge Delivery 運用 GitHub，可讓您直接從自己的 GitHub 存放庫管理
 >
 >若要使用 Universal Editor 編輯您的網站，您必須使用 Chromium 式瀏覽器。
 
-1. 請前往GitHub，下載最新的「使用Edge Delivery Services進行AEM編寫」網站範本： [`https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases`](https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases).
+1. 從 GitHub 下載最新的「使用 Edge Delivery Services 進行 AEM 製作」網站範本：[`https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases`](https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases)
 
 1. 登入您的 AEM as a Cloud Service 製作執行個體，並瀏覽至 Sites 主控台，然後點選或按一下「**建立** -> **根據範本的網站**」。
 
@@ -140,9 +140,9 @@ Edge Delivery 運用 GitHub，可讓您直接從自己的 GitHub 存放庫管理
 
    ![匯入範本](assets/edge-dev-getting-started/site-templates.png)
 
-1. 上傳您從GitHub下載的AEM Authoring with Edge Delivery Services網站範本。
+1. 上傳您從 GitHub 下載的「使用 Edge Delivery Services 進行 AEM 製作」網站範本。
 
-   * 範本只能上傳一次。 上傳後，即可重複使用它來建立其他網站。
+   * 該範本只能上傳一次。上傳後，可以重複使用它來建立其他網站。
 
 1. 匯入範本後，該範本將出現在精靈中。點選或按一下以選取該範本，然後點選或按一下「**下一步**」。
 
@@ -184,7 +184,7 @@ Edge Delivery 運用 GitHub，可讓您直接從自己的 GitHub 存放庫管理
 
 1. 在同一瀏覽器中開啟一個新標籤並瀏覽到新網站的 URL。
 
-   * `https://main--<site-name>--<owner>.hlx.page`
+   * `https://main--<repository-name>--<owner>.hlx.page`
 
 1. 查看您發佈的內容。
 
@@ -198,5 +198,5 @@ Edge Delivery 運用 GitHub，可讓您直接從自己的 GitHub 存放庫管理
 
 >[!TIP]
 >
->有關建立新的 Edge Delivery Services 專案的端對端操作示範，該專案支援使用 AEM as a Cloud Service 作為內容來源進行 AEM 製作，請觀看[「AEM GEM 網路研討會」。](https://experienceleague.adobe.com/en/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)
+>有關建立新的 Edge Delivery Services 專案的端對端操作示範，該專案支援使用 AEM as a Cloud Service 作為內容來源進行 AEM 製作，請觀看[「AEM GEM 網路研討會」。](https://experienceleague.adobe.com/zh-hant/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)
 
