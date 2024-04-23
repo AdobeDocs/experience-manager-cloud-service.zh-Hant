@@ -3,9 +3,9 @@ title: 與內容片段搭配使用的 AEM GraphQL API
 description: 了解如何將 Adobe Experience Manager (AEM) as a Cloud Service 中的內容片段與 AEM GraphQL API 搭配使用，以實現 Headless 內容傳遞。
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: 5771a6afedeb85188e89700d439a9bac18e01fdc
+source-git-commit: d0814d3feb9ad14ddd3372851a7b2df4b0c81125
 workflow-type: tm+mt
-source-wordcount: '5359'
+source-wordcount: '5365'
 ht-degree: 84%
 
 ---
@@ -1125,7 +1125,7 @@ query allTeams {
 
 您也需要注意：
 
-* 當您的GraphQL查詢包含兩個（或更多）模型中具有相同名稱的欄位時，將傳回欄位衝突錯誤：
+* 當您的GraphQL查詢包含兩個（或更多）模型中具有相同名稱的欄位，並且符合以下條件時，將傳回欄位衝突錯誤：
 
    * 因此，其中：
 
