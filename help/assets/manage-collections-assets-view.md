@@ -1,68 +1,68 @@
 ---
-title: 管理收藏集
-description: 集合是Experience Manager Assets檢視中的一組資產。 使用收藏集在使用者之間共用資產。
+title: 管理集合
+description: 集合是Experience Manager Assets檢視中的一組資產。 使用集合在使用者之間共用資產。
 exl-id: 540dc1d9-eaf4-4e08-8087-dc58da23a6e8
 source-git-commit: b2144820ad549332e8a921744717a77824f9e099
 workflow-type: tm+mt
 source-wordcount: '910'
-ht-degree: 77%
+ht-degree: 90%
 
 ---
 
-# 管理收藏集 {#manage-collections}
+# 管理集合 {#manage-collections}
 
 >[!CONTEXTUALHELP]
 >id="assets_collections"
->title="管理收藏集"
->abstract="收藏集是 Assets 檢視中的一組資產、檔案夾或其他集合。使用收藏集在使用者之間共用資產。和檔案夾不同，收藏集可包含來自不同位置的資產。您可以和使用者共用多個收藏集。每個收藏集都包含資產的參考資料。資產的參考完整性會跨越收藏集來維護。"
+>title="管理集合"
+>abstract="收藏集是 Assets 檢視中的一組資產、檔案夾或其他集合。使用集合在使用者之間共用資產。和檔案夾不同，集合可包含來自不同位置的資產。您可以和使用者共用多個集合。每個集合都包含資產的參考資料。資產的參考完整性會跨越集合來維護。"
 
-收藏集是Adobe Experience Manager Assets檢視中的一組資產、資料夾或其他收藏集。 使用收藏集在使用者之間共用資產。
+收藏集是Adobe Experience Manager Assets檢視中的一組資產、資料夾或其他收藏集。 使用集合在使用者之間共用資產。
 
-和檔案夾不同，收藏集可包含來自不同位置的資產。
+和檔案夾不同，集合可包含來自不同位置的資產。
 
 <!--
 You can share collections with various users that are assigned different levels of privileges, including viewing, editing, and so on.
 -->
 
-您可以和使用者共用多個收藏集。每個收藏集都包含資產的參考資料。資產的參考完整性會跨越收藏集來維護。
+您可以和使用者共用多個集合。每個集合都包含資產的參考資料。資產的參考完整性會跨越集合來維護。
 
-![收藏集](assets/collections.png)
+![集合](assets/collections.png)
 
-您可以執行下列任務以管理和使用收藏集：
+您可以執行下列任務以管理和使用集合：
 
-* [建立收藏集](#create-collection)
+* [建立集合](#create-collection)
 
-* [將資產新增至收藏集](#add-assets-to-collection)
+* [將資產新增至集合](#add-assets-to-collection)
 
-* [從收藏集移除資產](#remove-assets-from-collection)
+* [從集合移除資產](#remove-assets-from-collection)
 
 * [建立智慧型集合](#create-smart-collection)
 
 * [編輯智慧型集合](#edit-smart-collection)
 
-* [檢視和編輯收藏集中繼資料](#view-edit-collection-metadata)
+* [檢視和編輯集合中繼資料](#view-edit-collection-metadata)
 
-* [共用收藏集的連結](#share-collection-links)
+* [共用集合的連結](#share-collection-links)
 
-* [下載收藏集](#download-collection)
+* [下載集合](#download-collection)
 
-* [刪除收藏集](#delete-collection)
+* [刪除集合](#delete-collection)
 
-* [管理私人集合的許可權](#manage-permissions-to-a-private-collection)
+* [管理私有集合的權限](#manage-permissions-to-a-private-collection)
 
-## 建立收藏集 {#create-collection}
+## 建立集合 {#create-collection}
 
-若要建立收藏集：
+若要建立集合：
 
-1. 請按一下左側邊欄中的&#x200B;**[!UICONTROL 收藏集]**，然後按一下&#x200B;**[!UICONTROL 建立收藏集]**。
+1. 請按一下左側邊欄中的&#x200B;**[!UICONTROL 集合]**，然後按一下&#x200B;**[!UICONTROL 建立集合]**。
 
-1. 指定收藏集的標題和說明 (選用)。
+1. 指定集合的標題和說明 (選用)。
 
 1. 如果需要建立私有集合或公共集合，請選擇。 公共集合可用於查看和編輯所有用戶。 但是，具有管理員權限的建立者和用戶可以使用專用集合。
 
 1. 按一下以&#x200B;**[!UICONTROL 建立]**&#x200B;下一個色標。
 
-![建立收藏集](assets/create-collection.png)
+![建立集合](assets/create-collection.png)
 
 <!--
    
@@ -70,31 +70,31 @@ You can share collections with various users that are assigned different levels 
 
 -->
 
-## 將資產新增至收藏集 {#add-assets-to-collection}
+## 將資產新增至集合 {#add-assets-to-collection}
 
-若要將資產新增至收藏集：
+若要將資產新增至集合：
 
-1. 按一下左側邊欄中的&#x200B;**[!UICONTROL 資產]**，然後選取您需要新增到收藏集的資產。
+1. 按一下左側邊欄中的&#x200B;**[!UICONTROL 資產]**，然後選取您需要新增到集合的資產。
 
-1. 按一下&#x200B;**[!UICONTROL 新增至收藏集]**。
+1. 按一下&#x200B;**[!UICONTROL 新增至集合]**。
 
-1. 在[!UICONTROL 收藏集]對話框中，選取收藏集以新增所選取的資產。
+1. 在[!UICONTROL 集合]對話框中，選取集合以新增所選取的資產。
 
-1. 按一下&#x200B;**[!UICONTROL 新增]**，以將資產新增到所選取的收藏集。
+1. 按一下&#x200B;**[!UICONTROL 新增]**，以將資產新增到所選取的集合。
 
-## 從收藏集移除資產 {#remove-assets-from-collection}
+## 從集合移除資產 {#remove-assets-from-collection}
 
-若要從收藏集移除資產：
+若要從集合移除資產：
 
-1. 請按一下左側邊欄中的&#x200B;**[!UICONTROL 收藏集]**，以檢視收藏集清單。
+1. 請按一下左側邊欄中的&#x200B;**[!UICONTROL 集合]**，以檢視集合清單。
 
-1. 按一下收藏集，然後選取您需要從收藏集移除的項目。
+1. 按一下集合，然後選取您需要從集合移除的項目。
 
 1. 按一下&#x200B;**[!UICONTROL 移除]**。
 
 ## 管理智慧型集合 {#manage-smart-collection}
 
-將搜尋結果另存為 Smart Collection 以動態更新收藏集內容。 如果新增到「資產」檢視存放庫的資產符合建立Smart Collection時定義的搜尋條件，則開啟Smart Collection時，Smart Collection的內容會自動更新。
+將搜尋結果另存為 Smart Collection 以動態更新集合內容。 如果新增到「資產」檢視存放庫的資產符合建立Smart Collection時定義的搜尋條件，則開啟Smart Collection時，Smart Collection的內容會自動更新。
 
 ### 建立智慧型集合 {#create-smart-collection}
 
@@ -146,59 +146,59 @@ Click **[!UICONTROL Collections]** in the left rail and use the Search box to sp
 
 -->
 
-## 檢視和編輯收藏集中繼資料 {#view-edit-collection-metadata}
+## 檢視和編輯集合中繼資料 {#view-edit-collection-metadata}
 
-收藏集中繼資料包含有關收藏集的資料，例如標題和說明。
+集合中繼資料包含有關集合的資料，例如標題和說明。
 
-若要檢視和編輯收藏集中繼資料：
+若要檢視和編輯集合中繼資料：
 
-1. 請按一下左側邊欄中的&#x200B;**[!UICONTROL 收藏集]**，選一個收藏集，然後按一下&#x200B;**[!UICONTROL 詳細資訊]**。
-1. 使用&#x200B;**[!UICONTROL 基本]**&#x200B;索引標籤來檢視收藏集中繼資料。
+1. 請按一下左側邊欄中的&#x200B;**[!UICONTROL 集合]**，選一個集合，然後按一下&#x200B;**[!UICONTROL 詳細資訊]**。
+1. 使用&#x200B;**[!UICONTROL 基本]**&#x200B;索引標籤來檢視集合中繼資料。
 1. 修改中繼資料欄位 (如有必要)。您可以修改[!UICONTROL 標題]和[!UICONTROL 說明]欄位。
 
-![收藏集中繼資料](assets/collection-metadata.png)
+![集合中繼資料](assets/collection-metadata.png)
 
-## 共用收藏集的連結 {#share-collection-links}
+## 共用集合的連結 {#share-collection-links}
 
-[!DNL Assets view] 可讓您產生連結，並和無法存取 [!DNL Assets view] 應用程式的外部利益關係人共用收藏集和收藏集中的資產。您可以定義連結的到期日，然後使用您喜歡的通訊方式 (如電子郵件或簡訊服務) 與他人共用。連結的收件者可預覽和下載資產。
+[!DNL Assets view] 可讓您產生連結，並和無法存取 [!DNL Assets view] 應用程式的外部利益關係人共用集合和集合中的資產。您可以定義連結的到期日，然後使用您喜歡的通訊方式 (如電子郵件或簡訊服務) 與他人共用。連結的收件者可預覽和下載資產。
 
 ![共用資產連結](assets/share-link-collections.png)
 
 如需有關如何與外部利益關係人共用收藏集連結的詳細資訊，請參閱 [共用資產連結](/help/assets/share-links-for-assets-view.md).
 
-## 下載收藏集 {#download-collection}
+## 下載集合 {#download-collection}
 
-若要下載收藏集：
+若要下載集合：
 
-1. 按一下左側邊欄中的&#x200B;**[!UICONTROL 收藏集]**。
+1. 按一下左側邊欄中的&#x200B;**[!UICONTROL 集合]**。
 
-1. 選取您需要下載的收藏集，然後按一下&#x200B;**[!UICONTROL 下載]**。
+1. 選取您需要下載的集合，然後按一下&#x200B;**[!UICONTROL 下載]**。
 
 1. 在[!UICONTROL 下載資產]對話框中，按一下&#x200B;**[!UICONTROL 確定]**。
 
-收藏集會下載成您本機電腦的 .ZIP 檔案。
+集合會下載成您本機電腦的 .ZIP 檔案。
 
-## 刪除收藏集 {#delete-collection}
+## 刪除集合 {#delete-collection}
 
-若要刪除收藏集：
+若要刪除集合：
 
-1. 按一下左側邊欄中的&#x200B;**[!UICONTROL 收藏集]**。
+1. 按一下左側邊欄中的&#x200B;**[!UICONTROL 集合]**。
 
-1. 選取您需要刪除的收藏集。
+1. 選取您需要刪除的集合。
 
 1. 按一下&#x200B;**[!UICONTROL 刪除]**。
 
-## 管理私人集合的許可權{#manage-permissions-private-collection}
+## 管理私有集合的權限{#manage-permissions-private-collection}
 
-您可以允許管理員管理 [存取層級](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions) 存放庫中可用的私人集合。 您可以指派許可權，例如 `Can View` 和 `Can Edit` 至使用者群組或使用者。 您也可以將許可權管理許可權委派給使用者群組。 建立私人收藏集的使用者即是這些收藏集的所有者。 他們可以使用 [!UICONTROL 管理許可權] 將存取權授與其他使用者的動作。 此外，管理員可以在以下位置檢視和管理私人集合的許可權： [!DNL Experience Manager] 存放庫。
+您可以允許管理員管理存放庫中可用私有集合的[存取層級](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions)。您可以將權限指派給使用者群組或使用者，例如 `Can View` 和 `Can Edit`。您還可以將權限管理權委派給使用者群組。建立私有集合的使用者即為集合的擁有者。他們可以使用「[!UICONTROL 管理權限]」動作向其他使用者授予存取權。此外，管理員還可以檢視及管理 [!DNL Experience Manager] 存放庫中私有集合的權限。
 <!--
 >[!NOTE]
 >
 >Adobe does not recommend to assign permissions to users.
 -->
-有關如何將可用許可權指派給使用者群組的資訊，請參閱 [新增許可權至使用者群組](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions).
+如需如何為使用者群組指派可用權限的相關資訊，請參閱「[對使用者群組新增權限](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions)」。
 
-如需端對端工作流程的詳細資訊，請參閱 [管理許可權](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions).
+如要進一步了解端對端工作流程，請參閱「[管理權限](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions)」。
 
 ## 後續步驟 {#next-steps}
 
