@@ -1,10 +1,10 @@
 ---
-title: CIF 編寫快速入門
+title: CIF 製作快速入門
 description: CIF製作快速入門。
 exl-id: 0bef4d8c-0ad3-4ec8-ab08-8c83203b3b68
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 6f27c968c347e6b2be8c9bfcf9bb69e531d10ff9
 workflow-type: tm+mt
-source-wordcount: '778'
+source-wordcount: '781'
 ht-degree: 2%
 
 ---
@@ -13,23 +13,23 @@ ht-degree: 2%
 
 深入瞭解Adobe Experience Manager (AEM) CIF Authoring。
 
-## 到目前為止 {#story-so-far}
+## 目前進度 {#story-so-far}
 
-在此AEM Content and Commerce歷程的上一個檔案中， [瞭解AEM內容與商務](/help/commerce-cloud/introduction.md)您已瞭解Headless CMS和AEM內容與商務的基本理論和概念。
+在此AEM內容和Commerce歷程的上一個檔案中， [瞭解AEM內容和Commerce](/help/commerce-cloud/introduction.md)，您已瞭解Headless CMS和AEM Content及Commerce的基本理論和概念。
 
 本文基於這些基礎之上。
 
 ## 目標 {#objective}
 
-本檔案可協助您瞭解如何使用CIF for Content and Commerce特定撰寫作業。 閱讀本檔案後，您應該：
+本檔案可協助您瞭解如何使用CIF進行內容及Commerce特定撰寫。 閱讀文件後，您應該：
 
-* 瞭解使用通用編輯器編寫CIF的概念
+* 瞭解在AEM中使用頁面編輯器進行CIF編寫的概念
 * 如何使用產品和類別選擇器存取AEM中的產品目錄資料
 * 如何使用產品駕駛艙和AEM Omnisearch存取內容和商務資料
 
-## 在通用編輯器中編寫CIF {#cif-authoring}
+## AEM頁面編輯器中的CIF編寫 {#cif-authoring}
 
-CIF擴充了通用編輯器，讓您無需離開上下文即可存取即時產品資料：
+CIF擴充AEM中的頁面編輯器，提供存取即時產品資料的功能，而不需離開內容：
 
 開啟側面板，然後從下拉式清單中選取「產品」。
 ![選取產品型別](assets/asset-finder-overview.png)
@@ -95,7 +95,7 @@ Omnisearch會在商務後端執行全文檢索搜尋，以尋找所有相關產�
 
 現在您已完成歷程的這一部分，您應該：
 
-* 瞭解使用通用編輯器編寫CIF的概念
+* 瞭解使用頁面編輯器編寫CIF的概念
 * 如何使用產品和類別選擇器存取AEM中的產品目錄
 * 如何使用產品駕駛艙和AEM Omnisearch存取內容和商務資料
 

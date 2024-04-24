@@ -2,10 +2,10 @@
 title: 編寫Commerce體驗
 description: 瞭解如何在不離開上下文的情況下存取產品資料和內容，以有效率地撰寫和建置商務相關體驗。
 exl-id: 45d697b7-ec96-4c26-be2a-3395b731d52d
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 77350822c261371e6eda1fd10d02dcd905a5dd6e
 workflow-type: tm+mt
-source-wordcount: '718'
-ht-degree: 1%
+source-wordcount: '721'
+ht-degree: 0%
 
 ---
 
@@ -51,9 +51,9 @@ CIF附加元件以特定於commerce的功能擴充AEM編寫功能。 這可讓�
 
 ![具有選取範圍的轉盤元件](../assets/authoring/carousel_component_with_selection.png)
 
-## Universal Editor {#universal-editor}
+## 頁面編輯器 {#page-editor}
 
-Universal Editor已擴充功能，可存取即時產品資料和相關產品內容。
+AEM中的頁面編輯器已擴充功能，可存取即時產品資料和相關產品內容。
 
 ### 存取產品資料 {#access-product-data}
 
@@ -77,7 +77,7 @@ CIF產品目錄頁面是即時轉譯的虛擬頁面。 因此，不可能內嵌�
 
 ### 存取關聯產品內容 {#associated-content}
 
-如果通用編輯器辨識出頁面上的1：n產品，側面板會自動顯示「關聯的商務內容」索引標籤。 此索引標籤可讓作者快速存取已使用產品標籤的AEM內容(請參閱 [利用關聯AEM內容豐富產品資料](./enrich-product-associated-content.md) 以取得詳細資訊)。 如果頁面上有多個產品，此索引標籤會提供下拉式清單，以篩選內容型別和特定產品。 使用內容的運作方式與使用「資產」標籤中的內容完全相同。
+如果編輯器辨識出頁面上的1：n產品，側面板會自動顯示「關聯的Commerce內容」索引標籤。 此索引標籤可讓作者快速存取已使用產品標籤的AEM內容(請參閱 [利用關聯AEM內容豐富產品資料](./enrich-product-associated-content.md) 以取得詳細資訊)。 如果頁面上有多個產品，此索引標籤會提供下拉式清單，以篩選內容型別和特定產品。 使用內容的運作方式與使用「資產」標籤中的內容完全相同。
 
 ![產品資料側面板](../assets/authoring/associated-commerce-content-tab.png)
 
@@ -85,7 +85,7 @@ CIF產品目錄頁面是即時轉譯的虛擬頁面。 因此，不可能內嵌�
 
 編輯器中的時間扭曲模式可讓作者根據時間扭曲日期，使用分階段產品目錄資料來預覽和瀏覽AEM體驗。
 
-![Timewarp](../assets/authoring/timewarp.png)
+![時間扭曲](../assets/authoring/timewarp.png)
 
 如果使用的日期已分段，元件會顯示視覺指示器。
 
