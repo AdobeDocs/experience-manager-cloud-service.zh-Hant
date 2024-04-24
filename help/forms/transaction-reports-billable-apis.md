@@ -2,17 +2,22 @@
 title: 交易報告計費 API
 description: 作為交易入帳的所有API清單
 feature: Adaptive Forms, Foundation Components
-hide: true
-hidefromtoc: true
 exl-id: 6dfcac3e-5654-4b4f-9134-0cd8be24332e
-source-git-commit: 62be3c6e98df9002cdfbeef50dd5475c4daa1576
+source-git-commit: 539f4bf86f0e32057b2228dc44c86120d6e8457b
 workflow-type: tm+mt
-source-wordcount: '1598'
-ht-degree: 40%
+source-wordcount: '1411'
+ht-degree: 28%
 
 ---
 
+
 # 交易報告計費 API {#transaction-reports-billable-apis}
+
+| 版本 | 文章連結 |
+| -------- | ---------------------------- |
+| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/transaction-reports/transaction-reports-billable-apis) |
+| AEM as a Cloud Service  | 本文章 |
+
 
 AEM Forms提供多個API來提交表單、處理檔案和轉譯檔案。 有些API是以交易入帳，其他則可供自由使用。 本檔案提供在交易報表中作為交易入帳的所有API清單。 以下是一些使用計費API的常見案例：
 
@@ -42,32 +47,32 @@ AEM Forms提供多個API來提交表單、處理檔案和轉譯檔案。 有些A
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_formCreationAvgDuration_graph_en"
 >title="表單產生的平均持續時間"
->abstract="此圖顯示了建立表單所需的平均時間。圖表上的每個長條都代表一個特定的表單，長條的高度則表示在該時間段內建立表單所需的平均持續時間。分析此圖表可幫助使用者了解不同時期或不同背景下表單建立的效率和速度，進而深入了解潛在的改進。這份圖表提供了目前 AEM Forms 作者例項的專屬資料。若要查看其他例項的資料，請存取對應例項的儀表板。"
+>abstract="此圖顯示了建立表單所需的平均時間。圖表上的每個長條代表特定表單，長條的高度代表該時間範圍內建立表單所用的平均持續時間。"
 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_formPublishAvgDuration_en"
 >title="表單建立的平均持續時間"
->abstract="此圖表顯示建立和發佈表單所需的平均時間，從開啟表單進行編輯的第一天開始測量。每個長條都對應至表單的特定時間段，長條高度則表示從表單開發開始到最終確定和發佈所需的平均時間。這份圖表提供了目前 AEM Forms 作者例項的專屬資料。若要查看其他例項的資料，請存取對應例項的儀表板。"
+>abstract="圖形顯示建立和發佈表單所需的平均時間，從開啟表單進行編輯的初始日期開始計算。圖形提供目前AEM Forms Author例項的特定資料。 若要查看其他例項的資料，請存取對應例項的儀表板。"
 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_newForms_graph_en"
 >title="新表單追蹤器"
->abstract="此圖表提供有關特定時段內新建立表單之數量或頻率的資訊。圖表上的每個長條都代表一個不同的測量單位，例如天、週或月。每個長條的高度都表示在該特定時間間隔內建立之新表單的數量或頻率。這份圖表提供了目前 AEM Forms 作者例項的專屬資料。若要查看其他例項的資料，請存取對應例項的儀表板。"
+>abstract="此圖表提供有關特定時段內新建立表單之數量或頻率的資訊。這份圖表提供了目前 AEM Forms 作者例項的專屬資料。若要查看其他例項的資料，請存取對應例項的儀表板。"
 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_publishedForms_graph_en"
 >title="已發佈表單追蹤器"
->abstract="此圖表提供特定時段內成功發佈之表單的數量或頻率相關資訊。這可讓您了解表單發佈的長期趨勢、模式或變化，有助於監控生產力、識別發佈高峰期，或是評估表單發佈過程中的變更成功與否。這份圖表提供了目前 AEM Forms 發佈例項的專屬資料。若要查看其他例項的轉換資料，請存取對應例項的儀表板。"
+>abstract="此圖表提供特定時段內成功發佈之表單的數量或頻率相關資訊。這份圖表提供了目前 AEM Forms 發佈例項的專屬資料。若要查看其他例項的轉換資料，請存取對應例項的儀表板。"
 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_formFragments_graph_en"
 >title="已發佈表單追蹤器"
->abstract="此圖表可協助您了解人們在表單中使用了多少表單片段。它可讓您了解這些可重複使用的部分在表單建置中的熱門或常見程度。這份圖表提供了目前 AEM Forms 發佈例項的專屬資料。若要查看其他例項的轉換資料，請存取對應例項的儀表板。"
+>abstract="此圖表可協助您了解人們在表單中使用了多少表單片段。這份圖表提供了目前 AEM Forms 發佈例項的專屬資料。若要查看其他例項的轉換資料，請存取對應例項的儀表板。"
 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_avgFormPerFragments_graph_en"
 >title="已發佈表單追蹤器"
->abstract="此圖表顯示建立表單片段所需的平均時間，從開啟片段進行編輯的第一天開始測量。每個長條都對應至表單片段的特定時間段，長條高度則表示從表單片段開發開始到最終確定和發佈所需的平均時間。這份圖表提供了目前 AEM Forms 發佈例項的專屬資料。若要查看其他例項的轉換資料，請存取對應例項的儀表板。"
+>abstract="此圖表顯示建立表單片段所需的平均時間，從開啟片段進行編輯的第一天開始測量。這份圖表提供了目前 AEM Forms 發佈例項的專屬資料。若要查看其他例項的轉換資料，請存取對應例項的儀表板。"
 
 <!-- 
 
