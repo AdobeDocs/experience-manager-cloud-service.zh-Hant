@@ -1,11 +1,11 @@
 ---
 title: Adobe Developer Console 中的 JWT 憑證已被取代
-description: 了解 Adobe Developer Console 中已取代 JWT 憑證對 AEM 的影響
+description: 瞭解Adobe Developer主控台中JWT憑證淘汰對AEM的影響。
 exl-id: 7c811081-484c-41f7-a289-4e9a10a837b3
-source-git-commit: b8749f7b907e098d23c1cda57930b835f03e3580
-workflow-type: ht
-source-wordcount: '576'
-ht-degree: 100%
+source-git-commit: b52da0a604d2c320d046136f5e526e2b244fa6cb
+workflow-type: tm+mt
+source-wordcount: '571'
+ht-degree: 72%
 
 ---
 
@@ -19,9 +19,9 @@ Adobe 客戶使用 [Adobe Developer Console](https://developer.adobe.com/console
 
 本文說明 AEM as a Cloud Service 應如何處理已取代項目的其他背景資訊。
 
-目前的主要要點是 AEM 功能尚未支援新的 OAuth 伺服器到伺服器憑證。支援即將推出 - 在 2024 年 4 月下旬，透過 AEM as a Cloud Service 的 AEM 版本。您可能已收到說明移轉 JWT 憑證的電子郵件，但請放心，您可以而且應該推遲憑證移轉，直到 AEM 支援新的 OAuth 伺服器到伺服器憑證類型。
+目前，主要成果是AEM功能尚不支援新的OAuth伺服器對伺服器憑證。 即將透過AEMas a Cloud Service的AEM版本於2024年4月中旬提供支援。 您可能已收到說明移轉 JWT 憑證的電子郵件，但請放心，您可以而且應該推遲憑證移轉，直到 AEM 支援新的 OAuth 伺服器到伺服器憑證類型。
 
-以下區段列出了 AEM 在 4 月下旬支援憑證後，客戶必須 (或在某些情況下不得) 將其服務帳戶 (JWT) 憑證替換為 OAuth 伺服器到伺服器憑證的情境。[了解](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#migration-overview)將來更換憑證的方法。
+以下各節列出客戶在4月中旬獲得AEM支援後，必須（或有時不得）使用OAuth伺服器對伺服器憑證取代其服務帳戶(JWT)憑證的案例。 [了解](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#migration-overview)將來更換憑證的方法。
 
 >[!NOTE]
 >
@@ -38,7 +38,7 @@ AEM 客戶使用 AEM Author UI 設定所有與其他 Adobe 解決方案的整合
 
 ![將 AEM 與其他解決方案整合](/help/security/assets/jwt-deprecation.png)
 
-例如，以下是設定與 Adobe Target 整合的[說明](https://docs.mktossl.com/docs/experience-manager-cloud-service/content/sites/integrations/integration-adobe-target-ims.html?lang=zh-Hant)。4 月下旬 AEM 支援這些憑證後，「[在 AEM 中完成 IMS 設定](https://docs.mktossl.com/docs/experience-manager-cloud-service/content/sites/integrations/integration-adobe-target-ims.html#completing-the-ims-configuration-in-aem)」區段中的 API 金鑰就應移轉到 OAuth 伺服器到伺服器憑證類型。這些說明將在 4 月下旬進行更新，以協助您套用新的 OAuth 伺服器到伺服器憑證。
+例如，以下是設定與 Adobe Target 整合的[說明](https://docs.mktossl.com/docs/experience-manager-cloud-service/content/sites/integrations/integration-adobe-target-ims.html?lang=zh-Hant)。4 月中旬 AEM 支援這些憑證後，[在 AEM 中完成 IMS 設定](https://docs.mktossl.com/docs/experience-manager-cloud-service/content/sites/integrations/integration-adobe-target-ims.html#completing-the-ims-configuration-in-aem)區段中的 API 金鑰就應移轉到 OAuth 伺服器到伺服器憑證類型。這些指示將於4月中旬更新，以幫助您套用新的OAuth伺服器對伺服器認證。
 
 ## Cloud Manager API {#cloud-manager-apis}
 
@@ -50,10 +50,10 @@ AEM 客戶使用 AEM Author UI 設定所有與其他 Adobe 解決方案的整合
 
 ## 自動產生的專案 {#autogen-projects}
 
-**動作**：請勿移轉，因為 Adobe 將代您進行移轉。
+**動作**：請勿移轉，因為Adobe會代表您移轉。
 
 **相關 AEM 版本**：AEM as a Cloud Service。
 
-當 Cloud Manager 佈建 AEM as a Cloud Service 環境時，它會自動產生具有 JWT 憑證的 Adobe Developer Console 專案。該專案會標記為唯讀，如以下螢幕截圖所示。客戶不能也不應該嘗試將這些專案移轉到 OAuth 伺服器到伺服器憑證; Adobe 會在憑證失效前自行移轉這些專案。
+Cloud Manager布建AEMas a Cloud Service環境時，會自動產生具有JWT憑證的Adobe Developer主控台專案。 該專案會標記為唯讀，如以下螢幕截圖所示。客戶不能也不應嘗試將這些專案移轉至OAuth伺服器對伺服器認證；相反地，Adobe將會在認證不再可用之前自行移轉這些專案。
 
 ![自動產生的專案](/help/security/assets/jwt-deprecation-autogen-projects.png)

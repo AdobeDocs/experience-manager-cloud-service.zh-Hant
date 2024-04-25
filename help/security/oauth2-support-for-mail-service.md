@@ -1,11 +1,11 @@
 ---
 title: 郵件服務的 OAuth2 支援
-description: Adobe Experience Manager as a Cloud Service 對郵件服務的 Oauth2 支援
+description: Adobe Experience Manager as a Cloud.Service對郵件服務的OAuth2支援。
 exl-id: 93e7db8b-a8bf-4cc7-b7f0-cda481916ae9
-source-git-commit: a230efaa58cb00e8a0c0e2b23f0cc07462cc658b
-workflow-type: ht
-source-wordcount: '680'
-ht-degree: 100%
+source-git-commit: 678e81eb22cc1d7c239ac7a2594b39a3a60c51e2
+workflow-type: tm+mt
+source-wordcount: '679'
+ht-degree: 94%
 
 ---
 
@@ -33,7 +33,7 @@ AEM as a Cloud Service 為其整合的郵件服務提供 OAuth2 支援，以允�
 
    >[!NOTE]
    >
-   >權限設定可能會隨時間演變。如果未如預期運作，則搭配 Microsoft 使用。
+   >權限設定可能會隨時間演變。如果上述功能無法如®運作，請使用Microsoft。
 
    * `https://outlook.office.com/SMTP.Send`
    * `openid`
@@ -111,7 +111,7 @@ AEM as a Cloud Service 為其整合的郵件服務提供 OAuth2 支援，以允�
 
 >[!NOTE]
 >
-> 您可以從[此位置](https://learn.microsoft.com/en-us/azure/active-directory/develop/v2-oauth2-auth-code-flow)取得 Postman API 集合。
+> 您可以從[此位置](https://learn.microsoft.com/en-us/entra/identity-platform/v2-oauth2-auth-code-flow)取得 Postman API 集合。
 >
 > 請在[此處](https://learn.microsoft.com/zh-tw/exchange/client-developer/legacy-protocols/how-to-authenticate-an-imap-pop-smtp-application-by-using-oauth)參閱 MSFT OAuth 文件以獲取更多詳細資訊。
 
@@ -140,14 +140,14 @@ AEM as a Cloud Service 為其整合的郵件服務提供 OAuth2 支援，以允�
 
    >[!NOTE]
    >
-   >範圍可能會隨時間演變。如果未如預期運作，則搭配 Microsoft 使用。
+   >範圍可能會隨時間演變。如果上述功能無法如®運作，請使用Microsoft。
 
    * `https://outlook.office.com/SMTP.Send`
    * `openid`
    * `offline_access`
    * `email`
    * `profile`
-1. 使用以下語法在 `/apps/<my-project>/osgiconfig/config` 下建立一個 OSGI 屬性檔案 `called com.day.cq.mailer.DefaultMailService.cfg.json`。`smtp.host` 和 `smtp.port` 值會反映出進階網路設定，如[電子郵件服務教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/email-service.html)中所述。
+1. 使用以下語法在 `/apps/<my-project>/osgiconfig/config` 下建立一個 OSGI 屬性檔案 `called com.day.cq.mailer.DefaultMailService.cfg.json`。`smtp.host` 和 `smtp.port` 值會反映出進階網路設定，如[電子郵件服務教學課程](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/networking/examples/email-service)中所述。
 
    ```
    {
