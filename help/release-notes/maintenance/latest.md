@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的目前維護版本發行說明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的目前維護版本發行說明。'
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: f15b42e4012385c461b5440b92f53c4e58fb8ac2
+source-git-commit: 61a3d334e7187dcbf047d1b464d918ddf2cf9444
 workflow-type: tm+mt
-source-wordcount: '213'
-ht-degree: 71%
+source-wordcount: '268'
+ht-degree: 79%
 
 ---
 
@@ -15,22 +15,22 @@ ht-degree: 71%
 
 ## 15977 版本 {#release-15977}
 
-以下摘要說明維護版本15977數的持續改善，該版本於2024年4月19日公開發佈。 上一個維護版本是版本 15939。
+下面是 15977 維護版本持續改善內容的摘要；該版本於 2024 年 4 月 19 日公開發行。上一個維護版本是版本 15939。
 
 2024.4.0 功能啟用將為此維護版本提供完整功能集。如需詳細資訊，請參閱 [Experience Manager 發行藍圖](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=zh-Hant)。
 
 ### 增強功能 {#enhancements-15977}
 
-* GRANITE-51335：最佳化AEM健康情況檢查，以提高執行個體穩定性。
+* GRANITE-51335：最佳化 AEM 健康情況檢查以提高執行個體穩定性。
 
 ### 已修正的問題 {#fixed-issues-15977}
 
-* CQ-4357226：修正OAuth憑證之IMS設定支援中的回歸。
-* GRANITE-51335： Ratelimit升級至5.0.4已修正Felix健康情況檢查登入。
+* CQ-4357226：已修正 IMS 設定對 OAuth 憑證的支援中的迴歸問題。
+* GRANITE-51335：速率限制升級到 5.0.4 已修正 Felix 健康情況檢查註冊。
 
 ### 已知問題 {#known-issues-15977}
 
-無。
+* **(僅適用於AEM Forms)** 安裝AEM Cloud Foundation維護發行說15977後，在表單製作期間和針對發佈的表單，最適化表單欄位的呈現順序不正確。 如果您使用AEM Forms，為避免任何不便，建議在即將推出的維護版本中解決問題前不要升級至此版本。
 
 ### 已過時的功能和 API {#deprecated-15977}
 
@@ -44,5 +44,5 @@ ht-degree: 71%
 |---|---|---|
 | AEM OAK | 1.62.0 | [Oak API 1.62.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.62.0/index.html) |
 | AEM SLING API | 2.27.2 | [Apache Sling API 2.27.2 API](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html) |
-| AEM HTL | 1.4.20 - 1.4.0 | [HTML 範本語言規格](https://github.com/adobe/htl-spec) |
+| AEM HTL | 1.4.20-1.4.0 | [HTML 範本語言規格](https://github.com/adobe/htl-spec) |
 | AEM 核心元件 | 2.24.6 | [AEM WCM 核心元件](https://github.com/adobe/aem-core-wcm-components) |
