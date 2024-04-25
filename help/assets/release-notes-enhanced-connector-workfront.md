@@ -3,9 +3,9 @@ title: ' [!DNL Workfront for Experience Manager enhanced connector] 版發行說
 description: ' [!DNL Workfront for Experience Manager enhanced connector] 版發行說明'
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
 source-git-commit: fdac9b4152c61f775769d7ed30be1097db119e2a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1660'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -13,13 +13,13 @@ ht-degree: 98%
 
 以下章節概述 [!DNL Workfront for Experience Manager enhanced connector] 版的一般發行說明。
 
-最新版本1.9.19的發行日期 [!DNL Workfront for Experience Manager enhanced connector] 為2024年4月12日。
+[!DNL Workfront for Experience Manager enhanced connector] 的最新版本 1.9.19 發行日期是 2024 年 4 月 12 日。
 
 ## 版本重點 {#release-highlights}
 
 [!DNL Workfront for Experience Manager enhanced connector] 的最新版本包括以下錯誤修復：
 
-* 無法關閉HTTP使用者端會導致記憶體不足問題。
+* 無法關閉 HTTP 用戶端會導致記憶體不足問題。
 
 >[!NOTE]
 >
@@ -27,7 +27,7 @@ ht-degree: 98%
 
 >[!IMPORTANT]
 >
->Adobe 建議[升級到 [!DNL Workfront for Experience Manager enhanced connector] 的最新 1.9.19 版本](/help/assets/workfront-connector-install.md)。
+>Adobe 建議[升級到 [!DNL Workfront for Experience Manager enhanced connector] 的最新版本 1.9.19](/help/assets/workfront-connector-install.md)。
 
 ## 已知問題 {#known-issues}
 
