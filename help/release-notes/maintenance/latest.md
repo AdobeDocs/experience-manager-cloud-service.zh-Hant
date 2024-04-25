@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的目前維護版本發行說明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的目前維護版本發行說明。'
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: 61a3d334e7187dcbf047d1b464d918ddf2cf9444
+source-git-commit: b7e7bc7546b836667fff9db0ea5419e751f492cb
 workflow-type: tm+mt
-source-wordcount: '268'
-ht-degree: 79%
+source-wordcount: '269'
+ht-degree: 78%
 
 ---
 
@@ -30,7 +30,8 @@ ht-degree: 79%
 
 ### 已知問題 {#known-issues-15977}
 
-* **(僅適用於AEM Forms)** 安裝AEM Cloud Foundation維護發行說15977後，在表單製作期間和針對發佈的表單，最適化表單欄位的呈現順序不正確。 如果您使用AEM Forms，為避免任何不便，建議在即將推出的維護版本中解決問題前不要升級至此版本。
+* **(僅適用於AEM Forms)** 安裝AEM Cloud Foundation維護發行說15977後，在表單製作期間和針對發佈的表單，最適化表單欄位的呈現順序不正確。 如果您使用AEM Forms，為避免任何不便，建議在即將推出的維護版本中解決問題前不要升級至15977版本。
+
 
 ### 已過時的功能和 API {#deprecated-15977}
 
