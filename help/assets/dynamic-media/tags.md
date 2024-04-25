@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Asset Reports
 role: Admin,User
 exl-id: a71fef45-c9a4-4091-8af1-c3c173324b7a
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 3312aa270c05e506d12ed8a5c1360154bb02b350
 workflow-type: tm+mt
-source-wordcount: '6701'
+source-wordcount: '6700'
 ht-degree: 6%
 
 ---
@@ -517,7 +517,7 @@ Experience Platform標籤中的屬性是具名設定，可讓所有設定保持�
 
    ![image2019-7-8_16-3-47](assets/image2019-7-8_16-3-47.png)
 
-1. 選取&#x200B;**[!UICONTROL 儲存]**。
+1. 選取「**[!UICONTROL 儲存]**」。
 
    選取建立的屬性，然後繼續前往 *擴充功能的安裝和設定*.
 
@@ -551,7 +551,7 @@ Experience Platform標籤中的屬性是具名設定，可讓所有設定保持�
 
 在 **[!UICONTROL 安裝擴充功能]** 頁面，展開 **[!UICONTROL 一般]**，然後指定追蹤伺服器。 追蹤伺服器會遵循範本 `<trackingNamespace>.sc.omtrdc.net`，其中 `<trackingNamespace>` 是在布建電子郵件中取得的資訊。
 
-選取&#x200B;**[!UICONTROL 儲存]**。
+選取「**[!UICONTROL 儲存]**」。
 
 另請參閱 [Adobe Analytics擴充功能](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/analytics/overview.html).
 
@@ -694,7 +694,7 @@ Experience Manager設定包含下列兩個主要步驟：
 
 1. 在新的瀏覽器標籤中，瀏覽至 [Adobe Developer Console](https://developer.adobe.com/console/integrations).
 
-1. 從 **[!UICONTROL Adobe I/O控制檯整合]** 頁面，右上角附近，選取 **[!UICONTROL 新整合]**.
+1. 從 **[!UICONTROL Adobe Developer主控台整合]** 頁面，右上角附近，選取 **[!UICONTROL 新整合]**.
 1. 在 **[!UICONTROL 建立新的整合]** 對話方塊，確認 **[!UICONTROL 存取API]** 已選取選項按鈕，然後選取 **[!UICONTROL 繼續]**.
 
 ![2019-07-25_13-04-20](assets/2019-07-25_13-04-20.png)
