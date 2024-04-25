@@ -25,7 +25,7 @@ ht-degree: 78%
 
 ### 已修正的問題 {#fixed-issues-15977}
 
-* CQ-4357226：已修正 IMS 設定對 OAuth 憑證的支援中的迴歸問題。
+* CQ-4357226：已修正 IMS 設定對 OAuth 憑證的支援迴歸問題。
 * GRANITE-51335：速率限制升級到 5.0.4 已修正 Felix 健康情況檢查註冊。
 
 ### 已知問題 {#known-issues-15977}
