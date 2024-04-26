@@ -1,46 +1,74 @@
 ---
-title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 最新發行說明。'
-description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 最新發行說明。'
-mini-toc-levels: 1
-exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 5817cc38aab00380256537c9d4a6fe3d431c7591
+title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2024.3.0 版發行說明。'
+description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2024.3.0 版發行說明。'
+source-git-commit: 5b7ae48ad9f11bb43ab32569dd3e5243f2abfb8e
 workflow-type: tm+mt
-source-wordcount: '1989'
-ht-degree: 80%
+source-wordcount: '2268'
+ht-degree: 98%
 
 ---
 
-# [!DNL Adobe Experience Manager] as a Cloud Service 最新發行說明 {#release-notes}
+# [!DNL Adobe Experience Manager] as a Cloud Service 2024.3.0 版發行說明 {#release-notes}
 
-以下章節概述 [!DNL Experience Manager] as a Cloud Service 目前 (最新) 版本的功能發行說明。
+以下章節概述 [!DNL Experience Manager] as a Cloud Service 2024.3.0 版的功能發行說明。
 
 >[!NOTE]
 >
 >從這裡，您可以導覽至先前版本的發行說明，例如 2021 或 2022。
 >
->查看 [Experience Manager 發行藍圖](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)，了解關於 [!DNL Experience Manager] as a Cloud Service 未來功能的啟用。
+>查看 [Experience Manager 發行藍圖](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html)，了解關於 [!DNL Experience Manager] as a Cloud Service 未來功能的啟用。
 
 >[!NOTE]
 >
->請參閱[近期文件更新](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates)瞭解與版本不直接相關的文件更新的詳細資料。
+>請參閱[近期文件更新](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html)瞭解與版本不直接相關的文件更新的詳細資料。
 
 ## 發行日期 {#release-date}
 
-的發行日期 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 目前功能版本(2024.4.0)為2024年4月25日。 下一個功能版本(2024.5.0)計畫於2024年5月30日發行。
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 目前功能版本 (2024.3.0) 的發行日期是 2024 年 4 月 11 日。下一個功能版本 (2024.4.0) 預計於 2024 年 4 月 25 日發行。
 
 ## 維護版本發行說明 {#maintenance}
 
 您可以在[這裡](/help/release-notes/maintenance/latest.md)找到最新的維護版本發行說明。
 
-&lt;— ##發行影片 {#release-video}
+<!-- ## Release Video {#release-video}
 
-請觀看 2024 年 4 月發行概觀影片，以了解 2024.4.0 版本新增功能摘要：
+Have a look at the March 2024 Release Overview video for a summary of the features added in the 2024.3.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3428342?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3425864?quality=12)
 
-—>
+-->
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
+
+### [!DNL Experience Manager Sites] 中的新功能 {#sites-features}
+
+**Edge Delivery Services 的 AEM 製作**
+
+AEM Sites 現在可以用作 Edge Delivery Services 的內容來源。作者可使用內容 WYSIWYG 製作中的新 Universal Editor，在 AEM 中管理他們的網站。這樣做可讓公司能夠利用 Edge Delivery Services 來建立快速的高效能網頁，同時利用 AEM 強大的內容管理功能。
+
+![AEM 製作](/help/edge/assets/universal_editor_edge_delivery_services.png)
+
+若要了解更多資訊，請參閱[文件](/help/edge/overview.md)並觀看 [AEM Gems - 開始使用 AEM Authoring 和 Edge Delivery Services](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/aem-gems-getting-started-with-aem-authoring-and-edge-delivery/m-p/652694#M43905)
+
+**Headless 實作的 Universal Editor**
+
+Universal Editor 還可讓分離的 Web 應用程式利用直觀內容 WYSIWYG 製作，這在以前僅適用於傳統網站。內容建立者現在可以使用內容片段以直觀方式建立版面配置，就如同在頁面中使用元件一樣輕鬆。
+
+Universal Editor 與眾不同之處在於此工具適用於各種不同的 Web 架構，可容納伺服器端和用戶端的呈現、保持無框架狀態，且無需 AEM 託管。將現有 Web 應用程式與 Universal Editor 整合並進行內容編輯非常簡單，主要是需要開發人員將特定的資料屬性合併到其標記中。
+
+這樣，無論內容結構或底層技術堆疊如何，Universal Editor 都可以確保一致的編輯體驗。若要了解更多資訊，請參閱「[Universal Editor 簡介](/help/implementing/universal-editor/introduction.md)」。
+
+**適用於內容片段和模式的內容管理 OpenAPI**
+
+開發人員現在可以編程方式與內容片段和內容片段模式互動，並可使用內容管理 OpenAPI 對他們執行 CruD 操作。如需詳細資訊，請參閱「[API 文件](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/)」。
+
+**對體驗片段的多網站管理支援**
+
+多網站管理支援已擴展到儲存體驗片段的資料夾結構，允許使用者推出包含體驗片段的完整內容結構。
+
+**比較內容片段版本**
+
+新的內容片段編輯器現在允許內容作者比較和查看內容片段現有版本與先前版本之間的差異。
 
 ### 早期採用者計劃 {#sites-early-adopter}
 
@@ -58,35 +86,23 @@ ht-degree: 80%
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### 資產檢視中的新功能 {#assets-view-new-features}
+### 管理員檢視中的新功能 {#admin-view}
 
+**與 Adobe Express 原生整合**
 
-**內容搜尋**
+AEM Assets 可與 Adobe Express 自然整合，讓您從 Adobe Express 使用者介面直接存取 AEM Assets 儲存的資源。您可以將 AEM Assets 中管理的內容放置在 Express 畫布中，然後將新的或編輯的內容儲存在 AEM Assets 存放庫中。
 
-您現在也可以 [定義文字提示以搜尋存放庫中的可用資產](/help/assets/search-assets-view.md#contextual-search). Experience Manager Assets會自動將這些文字提示轉換為搜尋篩選器，並顯示搜尋結果。 您可以使用「篩選窗格」來檢視及修改自動篩選，以進一步縮小搜尋結果的範圍。
+![包括資產附加元件中的資產](/help/assets/assets/adobe-express-native-integration.png)
 
-![內容搜尋](/help/assets/assets/contextual-search-text-prompt1.png)
+**預覽所有支援影片類型的轉譯版**
 
-**快速視訊快速動作**
+Experience Manager Assets 現在會依預設產生所有支援影片類型的預覽轉譯，而無需處理設定檔的設定。
 
-Experience Manager Assets現在包含 [由Adobe Express提供支援的簡單直覺式視訊編輯工具](/help/assets/edit-videos-assets-view.md) 提升內容重複使用率並加快內容速度。 編輯選項包括裁剪、裁切、調整視訊大小，以及將MP4轉換為GIF檔案。
+### 資產檢視中的新功能 {#assets-view}
 
-![使用Adobe Express裁切視訊](/help/assets/assets/adobe-express-crop-video.png)
+**管理集合權限**
 
-**動態轉譯**
-
-您現在可以 [檢視和下載動態轉譯（包括智慧型裁切）](/help/assets/renditions.md) 在Experience Manager Assets中。 動態轉譯是即時建立的影像資產的自訂版本，可滿足特定需求，例如根據裝置解析度調整影像大小或裁切以符合不同的外觀比例。 這些轉譯可讓組織提供個人化和最佳化的體驗，以滿足不同的受眾需求。
-
-![動態轉譯](/help/assets/assets/preset_smart_crop.png)
-
-**就地重新命名資產和資料夾**
-
-Experience Manager Assets現在提供簡化的使用者體驗 [按一下即可重新命名資產或資料夾](/help/assets/manage-organize-assets-view.md).
-
-**將中繼資料表單指派或移除至多個資料夾**
-
-您現在可以 [將中繼資料表單指派或移除至多個資料夾](/help/assets/metadata-assets-view.md#assign-metadata-form-to-a-folder).
-
+Assets Essentials 可讓管理員管理存放庫中專用集合的存取層級。身為管理員，您可建立使用者群組並指派權限給這些群組，以管理存取層級。您還可以將權限管理權委派給使用者群組。
 
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
@@ -97,28 +113,41 @@ Experience Manager Assets現在提供簡化的使用者體驗 [按一下即可�
 
 -->
 
+### AEM Forms 的新功能 {#forms-new-features}
+
+* **[Adobe Experience Manager Forms Edge Delivery Services](/help/edge/docs/forms/overview.md)**：AEM Forms Edge Delivery Services 是一組可組合服務，讓環境可以快速進行開發，以利作者迅速更新、發佈並推出新表單。這些服務提供卓越且高影響力的表單體驗，進而促進使用者的參與度和轉換率。這些表單體驗易於製作和開發。
+
+  ![EDS 表單功能](/help/edge/assets/eds-forms-features.png)
+
+這些服務可讓您：
+
+* 在同一個表單網站上使用多個內容來源，並使用您偏好的製作工具，例如 Microsoft Excel、Google Sheets 或最適化表單編輯器。
+* 提供可迅速載入和呈現的數位註冊體驗，並透過真實使用者監控 (RUM) 持續監控您的表單效能。
+* 使用純 HTML、現代 CSS 和普通 JavaScript 來建立卓越的體驗，避免特定框架出現陡峭學習曲線。
+
+
 ### 發行前版本的 AEM Forms 新功能 {#forms-pre-release}
 
 * **核心元件式最適化表單的增強型視覺規則編輯器**：此版本針核心元件式最適化表單的視覺規則編輯器進行重大升級。此版本對核心元件式最適化表單的視覺規則編輯器進行重大升級。此更新著重於簡化與自訂函數的互動，讓您能夠建立更強大、更有效率的表單。
 
   現在您可以透過以下方式簡化自訂函數互動：
 
-   * [利用新附註提供更清晰的函數定義](/help/forms/create-and-use-custom-functions.md#supported-javascript-annotations-for-custom-function)。
-   * [為自訂函數使用快取機制，提高表單效能](/help/forms/create-and-use-custom-functions.md#caching-support-for-custom-function)。
-   * [無縫地使用自訂函數中的全域物件](/help/forms/create-and-use-custom-functions.md#field-and-global-scope-objects-in-custom-functions)。
-   * [在自訂函數中定義和使用可選參數](/help/forms/create-and-use-custom-functions.md#parameter)。
+   * 運用新註解以提供更清楚的函式定義。
+   * 針對自訂函式使用快取機制，以提高表單效能。
+   * 可順暢地使用自訂函式中的全域物件。
+   * 在自訂函式中定義及使用選用引數。
 
   此更新還增強以下規則編輯器功能。您可以：
 
-   * 為條件執行實施功能強大的 [“when-then-else”](/help/forms/rule-editor-core-components.md#when) 邏輯。
+   * 針對條件式執行實作強大的「when-then-else」邏輯。
    * 利用現代 JavaScript 功能，如 let 和箭頭函數 (ES10 支援)。
    * 不僅可驗證或重設欄位，還可驗證或重設整個面板和表單，以擴大對使用者互動的控制。
 
   在視覺規則編輯器中建立規則和自訂函數時，這方面的進步可提供更直觀、更強大的體驗。
 
-* **[建立多版本的最適化表單](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md)**：您現在可以輕鬆管理現有表單的變化版本。這簡化了版本控制並可促進表單最佳化的比較，所有都可在一個簡化的工作流程中進行。
+* **建立多版本的最適化表單**：您現在可以輕鬆管理現有表單的變化版本。這簡化了版本控制並可促進表單最佳化的比較，所有都可在一個簡化的工作流程中進行。
 
-* **[比較最適化表單](/help/forms/compare-forms.md)**：您現在可以輕鬆比較兩個表單，識別兩個表單之間的差異。這可方便團隊成員有效地比較修訂版本並討論變更，進而讓成員可順利協作。
+* **比較最適化表單**：您現在可以輕鬆比較兩個表單，識別兩個表單之間的差異。這可方便團隊成員有效地比較修訂版本並討論變更，進而讓成員可順利協作。
 
 * **手寫簽名元件的協助工具功能增強**：這項更新為手寫簽名元件提供顯著的協助工具功能改善：
 
@@ -148,7 +177,7 @@ Experience Manager Assets現在提供簡化的使用者體驗 [按一下即可�
 
   <br/> ![Adobe Workfront](/help/forms/assets/adobe-workfront.png) <br/> 使用 Adob&#x200B;&#x200B;e Workfront Fusion Connector，您可以設計在提交最適化表單時自動觸發的工作流程。例如，設想這樣一個場景：啟動工作流程以便將審查提交資料的任務分配給特定個人，進而允許根據透過最適化表單擷取的資訊來核准或拒絕申請。這種簡化的整合方式提高了效率，並為您的工作流程帶來了全新的自動化層級。
 
-* **[Reader 延伸模組服務](/help/forms/aem-forms-cloud-service-communications-introduction.md#reader-extension-service)**：AEM Forms Communication API 引入了 Reader 延伸模組服務，讓您可以為一般的 PDF 新增表單填寫和評論等功能，讓免費 Adob&#x200B;&#x200B;e Reader 的使用者可使用這些功能。
+* **Reader 延伸模組服務**：AEM Forms Communication API 引入了 Reader 延伸模組服務，讓您可以為一般的 PDF 新增表單填寫和評論等功能，讓免費 Adob&#x200B;&#x200B;e Reader 的使用者可使用這些功能。
 
 * [從右至左語言支援](/help/forms/supporting-new-language-localization-core-components.md)：以核心元件為主的最適化表單現在可以呈現從右至左 (RTL) 語言 (如阿拉伯文、波斯文和烏都文)。全球有超過 20 億人使用 RTL 語言。使用 RTL 語言的表單可讓您擴展最適化表單的範圍，以滿足這些不同的受眾並選擇進入 RTL 市場。在某些地區，法律也強制要求以當地語言提供表單。透過適應當地語言，您不僅可以向更廣泛的受眾敞開大門，還可以確保遵守相關法律和法規。
 
@@ -162,31 +191,23 @@ Experience Manager Assets現在提供簡化的使用者體驗 [按一下即可�
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] 基礎 {#foundation}
 
-### CDN 設定 {#cdn-config}
-
-透過以下方式設定AdobeCDN的流量：
-
-* [要求轉換](/help/implementing/dispatcher/cdn-configuring-traffic.md#request-transformations)  — 修改傳入請求的方面，包括路徑、查詢引數和HTTP標頭，然後再路由至AEM。
-* [回應轉換](/help/implementing/dispatcher/cdn-configuring-traffic.md#response-transformations)  — 先變更傳出回應的HTTP標頭，再提供給瀏覽器。
-* [來源選取器](/help/implementing/dispatcher/cdn-configuring-traffic.md#response-transformations#origin-selectors)  — 透過CDN將流量路由至AEM以外的網站和應用程式。
-
-在原始檔控制(git)中宣告這些規則後，您就可以使用Cloud Manager設定管道將它們部署到CDN。 另請參閱下方早期採用者章節中的使用者端重新導向功能。
-
-### 自訂CDN錯誤頁面 {#cdn-error-pages}
-
-萬一發生CDN無法將流量路由到AEM來源的可能情況，可以宣告自訂錯誤頁面，取代通用版本。 [瞭解更多](/help/implementing/dispatcher/cdn-error-pages.md) 關於如何提供品牌錯誤頁面。
-
 ### 早期採用者計劃 {#foundation-early-adopter}
-
-#### 使用者端重新導向（早期採用者計畫） {#client-side-redirects-early-adopter}
-
-在原始檔控制中設定301/302使用者端重新導向，並部署至CDN。 [瞭解更多](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors) 並透過電子郵件加入率先採用者計畫 **<aemcs-cdn-config-adopter@adobe.com>**.
 
 #### 流量篩選規則警報 (早期採用者計畫) {#traffic-filter-rules-alerts-early-adopter}
 
 最近發佈的[流量篩選規則](/help/security/traffic-filter-rules-including-waf.md) (其中包括可授權選項的 Web 應用程式防火牆 (WAF) 規則) 可讓您設定應該允許或拒絕哪些流量。
 
 現在您可以發送電子郵件 **<aemcs-cdn-config-adopter@adobe.com>** 加入早期採用者計劃，以便您在流量篩選規則被觸發時收到提醒。當發生某些流量狀況時，行動中心電子郵件通知將通知您，以便您採取適當的措施。
+
+#### CDN 設定 (早期採用者計劃) {#cdn-config-early-adopter}
+
+除了最近發佈的[流量篩選規則](/help/security/traffic-filter-rules-including-waf.md) (其中包含可以選擇授權的 Web 應用程式防火牆 (WAF) 規則)，也可以使用設定管道來聲明及部署其他類型的 CDN 設定。[了解更多](/help/implementing/dispatcher/cdn-configuring-traffic.md)並加入早期採用者計劃，可發送電子郵件 **<aemcs-cdn-config-adopter@adobe.com>** 取得存取權限：
+
+* 301/302 用戶端重新導向
+* 將邊緣要求代理到任意來源 (例如非 AEM 應用程式)
+* URL 轉換
+* 設定或修改要求或回應標頭
+* CDN 無法連接 AEM 時的自訂錯誤頁面
 
 #### 重新寫入對應的 Apache/Dispatcher 執行時間擷取 (早期採用者計畫) {#apache-rewritemaps-early-adopter}
 

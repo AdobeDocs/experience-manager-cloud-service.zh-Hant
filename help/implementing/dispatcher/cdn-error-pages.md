@@ -2,18 +2,15 @@
 title: 設定CDN錯誤頁面
 description: 瞭解如何在自行託管的儲存體(例如Amazon S3或Azure Blob儲存體)中託管靜態檔案，並在使用Cloud Manager設定管道部署的設定檔案中參照這些檔案，以覆寫預設錯誤頁面。
 feature: Dispatcher
-source-git-commit: 11036c3e95f0444fc5d865232a7dccab5b7f26ae
+exl-id: 1ecc374c-b8ee-41f5-a565-5b36445d3c7c
+source-git-commit: 8489b40f45e6cbeb98288969bc9f6bd42815e2a6
 workflow-type: tm+mt
-source-wordcount: '335'
-ht-degree: 3%
+source-wordcount: '318'
+ht-degree: 1%
 
 ---
 
-
 # 設定CDN錯誤頁面 {#cdn-error-pages}
-
->[!NOTE]
->此功能尚未正式推出。若要加入率先採用者計畫，請傳送電子郵件至 `aemcs-cdn-config-adopter@adobe.com` 並說明您的使用案例。
 
 萬一發生下列罕見情況 [Adobe管理的CDN](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) 無法連線至AEM來源，CDN預設會提供不具品牌的一般錯誤頁面，指出無法連線至伺服器。 您可以將靜態檔案託管於自行託管的儲存體(例如Amazon S3或Azure Blob儲存體)中，並在使用部署的設定檔案中參照這些檔案，藉此覆寫預設錯誤頁面。 [Cloud Manager設定管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline).
 
