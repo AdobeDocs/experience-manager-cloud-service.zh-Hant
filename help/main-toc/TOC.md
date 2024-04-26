@@ -226,7 +226,7 @@ ht-degree: 99%
 + AEM as a Cloud Service 移轉歷程 {#migration-journey}
    + [移動 AEM as a Cloud Service 快速入門](/help/journey-migration/getting-started.md)
    + [整備階段](/help/journey-migration/readiness.md)
-   + [實作階段](/help/journey-migration/implementation.md)
+   + [實施階段](/help/journey-migration/implementation.md)
    + [上線](/help/journey-migration/go-live.md)
    + [上線後](/help/journey-migration/post-go-live.md)
    + [Experience Manager as a Cloud Service 合作夥伴移轉指南](/help/journey-migration/getting-started-partners.md)
@@ -237,7 +237,7 @@ ht-degree: 99%
       + 使用 Cloud Acceleration Manager {#using-cam}
          + [Cloud Acceleration Manager 快速入門](/help/journey-migration/cloud-acceleration-manager/using-cam/getting-started-cam.md)
          + [整備階段](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-readiness-phase.md)
-         + [實作階段](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-implementation-phase.md)
+         + [實施階段](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-implementation-phase.md)
          + [上線階段](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-golive-phase.md)
    + 雲端轉換工具 {#cloud-migration}
       + 最佳做法分析工具 {#best-practices-analyzer}
@@ -563,7 +563,7 @@ ht-degree: 99%
       + [資產管理任務](/help/assets/manage-organize-assets-view.md)
       + [編輯影像](/help/assets/edit-images-assets-view.md)
       + [編輯影片](/help/assets/edit-videos-assets-view.md)
-      + [檢視和管理轉譯](/help/assets/renditions.md)
+      + [檢視和管理轉譯版](/help/assets/renditions.md)
       + [管理資產中繼資料](/help/assets/metadata-assets-view.md)
       + [共用資產](/help/assets/share-links-for-assets-view.md)
       + [管理收藏集](/help/assets/manage-collections-assets-view.md)
@@ -945,8 +945,8 @@ ht-degree: 99%
          + [了解如何為內容片段定義中繼資料和標記](/help/journey-headless/author/metadata-tagging.md)
 + 生成式 AI {#generative-ai}
    + [產生變化版本](/help/generative-ai/generate-variations.md)
-+ 實作 {#implementing}
-   + [為 AEM as a Cloud Service 實作應用程式](/help/implementing/home.md)
++ 實施 {#implementing}
+   + [為 AEM as a Cloud Service 實施應用程式](/help/implementing/home.md)
    + 使用 Cloud Manager {#using-cloud-manager}
       + 方案 {#programs}
          + [方案和方案類型](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
@@ -1059,7 +1059,7 @@ ht-degree: 99%
          + 搜尋 {#search}
             + [查詢產生器 API](/help/implementing/developing/introduction/query-builder-api.md)
             + [查詢產生器述詞參考](/help/implementing/developing/introduction/query-builder-predicates.md)
-            + [實作自訂述詞求值器](/help/implementing/developing/introduction/query-builder-custom-predicate.md)
+            + [實施自訂述詞求值器](/help/implementing/developing/introduction/query-builder-custom-predicate.md)
          + [自訂錯誤頁面](/help/implementing/developing/introduction/custom-error-page.md)
          + [AEM 節點類型](/help/implementing/developing/introduction/node-types.md)
       + Universal Editor {#universal-editor}
@@ -1167,7 +1167,7 @@ ht-degree: 99%
       + [設定 CDN 錯誤頁面](/help/implementing/dispatcher/cdn-error-pages.md)
       + [AEM as a Cloud Service 中的快取](/help/implementing/dispatcher/caching.md)
 + 連接器 {#connectors}
-   + [實作 AEM 連接器](/help/connectors/implement.md)
+   + [實施 AEM 連接器](/help/connectors/implement.md)
    + [提交 AEM 連接器](/help/connectors/submit.md)
    + [維護 AEM 連接器](/help/connectors/maintain.md)
 + 運作 {#operations}
