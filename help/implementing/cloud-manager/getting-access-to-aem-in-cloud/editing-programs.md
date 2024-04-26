@@ -1,18 +1,18 @@
 ---
-title: 管理和編輯程式
+title: 編輯計畫
 description: 了解如何編輯您的生產和沙箱計畫，以在建立計畫後調整其選項。
 exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
-source-git-commit: 2dfae31e32d375c82c4f690624e48f7f09feb4df
+source-git-commit: 401f853b197e67a6c54e4bf168081dc8165bd505
 workflow-type: tm+mt
-source-wordcount: '773'
-ht-degree: 32%
+source-wordcount: '439'
+ht-degree: 53%
 
 ---
 
 
-# 管理和編輯程式 {#editing-programs}
+# 編輯計畫 {#editing-programs}
 
-此 **我的計畫** 頁面提供您有權存取之所有程式的概觀。 選取個別方案時， **計畫總覽** 頁面提供一目瞭然的方案詳細資訊。
+若要管理和編輯程式，請從 [**我的計畫** 主控台。](/help/implementing/cloud-manager/navigation.md) 此 **我的計畫** 頁面提供您有權存取之所有程式的概觀。 選取個別方案時， **計畫總覽** 頁面提供一目瞭然的方案詳細資訊。
 
 從 **計畫總覽**，具有必要許可權的使用者可以編輯 [在您的組織中建立的生產計畫](creating-production-programs.md) 和 [在您的組織中建立的沙箱計畫。](creating-sandbox-programs.md)透過編輯計畫，您可以：
 
@@ -24,70 +24,6 @@ ht-degree: 32%
 ## 權限 {#permissions}
 
 您必須是 **企業所有者** 編輯計畫或刪除沙箱計畫以及存取授權儀表板的角色。
-
-## 我的計畫 {#my-programs}
-
-1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織。
-
-1. 此 **我的計畫** 頁面顯示您以圖磚方式存取的所有程式清單。
-
-![我的程式頁面](/help/implementing/cloud-manager/assets/my-programs.png)
-
-### 行動號召 {#cta}
-
-頁面頂端是與組織狀態相關的行動號召。 例如，如果您已成功設定方案，您過去90天的活動統計資料可能會顯示，包括：
-
-* 數量 [部署](/help/implementing/cloud-manager/deploy-code.md)
-* 數量 [程式碼品質問題](/help/implementing/cloud-manager/code-quality-testing.md) 已識別
-* 組建數目
-
-或者，如果您正開始進行組織的設定，可能會有後續步驟或檔案資源的提示。
-
-### 程式標籤 {#programs-tab}
-
-此 **計畫** 標籤會列出代表您有權存取之每個程式的卡片。 點選或按一下卡片以存取 **計畫總覽** 計畫的頁面，以取得計畫的詳細資訊。
-
-使用排序選項以更好地尋找您需要的程式。
-
-![排序選項](/help/implementing/cloud-manager/assets/my-programs-sorting.png)
-
-* 排序方式
-   * 建立日期（預設）
-   * 計畫名稱
-   * 狀態
-* 遞增（預設） /遞減
-* 格點檢視（預設）
-* 清單檢視
-
-### 授權標籤 {#license-tab}
-
-此 **授權** 索引標籤可讓您快速存取 [授權儀表板。](/help/implementing/cloud-manager/license-dashboard.md)
-
-## 計畫總覽 {#program-overview}
-
-一旦您從 **[我的計畫](#my-programs)** 頁面，Cloud Manager會開啟 **計畫總覽** 所選方案的頁面。
-
-![計畫總覽頁面](/help/implementing/cloud-manager/assets/program-overview.png)
-
-點選或按一下頁面左上角的計畫名稱，以快速切換到另一個計畫或返回 **[我的計畫](#my-programs)** 頁面。 您也可以 [編輯選取的方案](#editing) 或 [新增程式。](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
-
-![計劃切換器](/help/implementing/cloud-manager/assets/program-switcher.png)
-
-頂端的號召性用語會根據您的方案狀態，為您提供有用的資訊。 若為新計畫，您可能會看到後續步驟以及上線日期提醒， [在建立程式期間設定。](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)
-
-![新方案的行動號召](/help/implementing/cloud-manager/assets/info-banner-new-program.png)
-
-對於即時計畫，您上次部署的狀態，包含詳細資訊的連結和開始新的部署。
-
-![行動號召](/help/implementing/cloud-manager/assets/info-banner.png)
-
-**環境** 和 **管道** 卡片可讓您快速概覽所選方案中的這兩者。
-
-![卡片](/help/implementing/cloud-manager/assets/environments-pipelines.png)
-
-此 **效能** 卡片提供 **[CDN控制面板。](/help/implementing/cloud-manager/cdn-performance.md)**
-
-![效能卡](/help/implementing/cloud-manager/assets/cdn-performance-dashboard.png)
 
 ## 編輯方案 {#editing}
 

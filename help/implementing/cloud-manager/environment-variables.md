@@ -2,10 +2,10 @@
 title: Cloud Manager 環境變數
 description: 標準環境變數可以透過 Cloud Manager 進行設定和管理，並提供給執行階段環境，用於 OSGi 設定。
 exl-id: 5cdd5532-11fe-47a3-beb2-21967b0e43c6
-source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
+source-git-commit: a0f80a363cb47be9e3d8f7fa96ea3068eb077d42
 workflow-type: tm+mt
-source-wordcount: '992'
-ht-degree: 85%
+source-wordcount: '986'
+ht-degree: 80%
 
 ---
 
@@ -37,8 +37,8 @@ ht-degree: 85%
 >您必須是 [**Deployment Manager** 角色](/help/onboarding/cloud-manager-introduction.md#role-based-premissions)的成員才能新增或修改環境變數。
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Adobe Cloud Manager。
-1. 在 **[我的計畫](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** 畫面，選取您要管理的畫面。
-1. 選擇所選計畫的&#x200B;**環境**&#x200B;索引標籤，然後在左側瀏覽面板中選擇要建立環境變數的環境。
+1. 在 **[我的計畫](/help/implementing/cloud-manager/navigation.md#my-programs)** 控制檯中，選取您要管理的專案。
+1. 從側面導覽列中選取 **環境** 視窗，然後選取您要為其建立環境變數的環境。
 1. 在環境的詳細資訊中，選擇&#x200B;**設定**&#x200B;索引標籤，然後選擇&#x200B;**新增**&#x200B;以打開&#x200B;**環境設定**&#x200B;對話框。
    * 如果您是第一次新增環境變數，可以看到 **新增設定** 按鈕來切換頁面。 您可以使用此按鈕或&#x200B;**新增**&#x200B;來打開&#x200B;**環境設定**&#x200B;對話框。
 
@@ -73,11 +73,8 @@ ht-degree: 85%
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Adobe Cloud Manager。
 1. Cloud Manager 列出可用的各種方案。選取您要管理的專案。
-1. 選擇&#x200B;**環境**&#x200B;所選計畫的索引標籤，然後在左側瀏覽面板中選擇要為其建立環境變數的環境。
+1. 在導覽面板中，選取 **環境** 視窗中，然後選取要修改環境變數的環境。
 1. 在環境的詳細資訊中，選擇&#x200B;**設定**&#x200B;索引標籤，然後在右上角選擇&#x200B;**新增更新**&#x200B;以打開&#x200B;**環境設定**&#x200B;對話框。
-
-   ![變數的新增/更新按鈕](assets/add-update-variables.png)
-
 1. 使用要修改之變數列最後一欄中的省略符號按鈕，選取 **編輯** 或 **刪除**.
 
    ![編輯或刪除變數](assets/edit-delete-variable.png)

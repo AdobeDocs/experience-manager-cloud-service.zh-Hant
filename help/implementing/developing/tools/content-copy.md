@@ -2,10 +2,10 @@
 title: 內容複製工具
 description: 內容複製工具可讓使用者隨選從AEMas a Cloud Service的生產環境複製可變內容，以降低環境等級以進行測試。
 exl-id: 5883e4bc-9861-498e-bd35-32ff03d901cc
-source-git-commit: 8bc20c66aad7bf4befdd28db2c628a1535ae375b
+source-git-commit: a0f80a363cb47be9e3d8f7fa96ea3068eb077d42
 workflow-type: tm+mt
-source-wordcount: '1290'
-ht-degree: 34%
+source-wordcount: '1286'
+ht-degree: 33%
 
 ---
 
@@ -49,9 +49,7 @@ ht-degree: 34%
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織和計畫。
 
-1. 從&#x200B;**概觀**&#x200B;頁面，瀏覽到&#x200B;**環境**&#x200B;畫面。
-
-1. 從&#x200B;**環境**&#x200B;畫面瀏覽&#x200B;**內容集**&#x200B;頁面。
+1. 使用側邊導覽面板，導覽至 **內容集** 標籤從 **概觀** 頁面。
 
 1. 在熒幕的右上方，按一下 **新增內容集**.
 

@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的運作方式以及該軟體可以為您做哪些事。
 breadcrumb-title: 使用手冊
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 81b4455bf922ec0f4eb46046b82193ff822b4695
+source-git-commit: 3c0185c1a108f16ce3230aa8e949de3cf436d427
 workflow-type: tm+mt
-source-wordcount: '4902'
+source-wordcount: '4901'
 ht-degree: 99%
 
 ---
@@ -948,13 +948,14 @@ ht-degree: 99%
 + 實施 {#implementing}
    + [為 AEM as a Cloud Service 實施應用程式](/help/implementing/home.md)
    + 使用 Cloud Manager {#using-cloud-manager}
+      + [導覽](/help/implementing/cloud-manager/navigation.md)
       + 方案 {#programs}
          + [方案和方案類型](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
          + [生產方案](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md)
          + [建立生產方案](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
          + [沙箱方案](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)
          + [建立沙箱方案](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md)
-         + [管理和編輯程序](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)
+         + [編輯方案](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)
          + [休眠環境](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md)
       + 建立 AEM 應用程式專案 {#create-application-project}
          + [專案建立精靈](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md)

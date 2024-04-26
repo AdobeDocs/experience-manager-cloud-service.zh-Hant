@@ -2,10 +2,10 @@
 title: 設定 AEM as a Cloud Service 的進階網路
 description: 瞭解如何為AEMas a Cloud Service設定進階網路功能，例如VPN或彈性或專用輸出IP位址。
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
-source-git-commit: 678e81eb22cc1d7c239ac7a2594b39a3a60c51e2
+source-git-commit: 3c0185c1a108f16ce3230aa8e949de3cf436d427
 workflow-type: tm+mt
 source-wordcount: '5093'
-ht-degree: 60%
+ht-degree: 59%
 
 ---
 
@@ -77,7 +77,7 @@ AEM as a Cloud Service 提供以下進階網路選項：
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織。
 
-1. 在「**[我的程式](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)**」畫面中，選取程式。
+1. 在 **[我的計畫](/help/implementing/cloud-manager/navigation.md#my-programs)** 主控台，選取程式。
 
 1. 從「**程式概覽**」頁面，導覽至「**環境**」標籤，然後在左側面板選取「**網路基礎設施**」。
 
@@ -242,7 +242,7 @@ ProxyPassReverse "/somepath" "https://example.com:8443"
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織。
 
-1. 在「**[我的程式](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)**」畫面中，選取程式。
+1. 在 **[我的計畫](/help/implementing/cloud-manager/navigation.md#my-programs)** 主控台，選取程式。
 
 1. 從「**程式概覽**」頁面，導覽至「**環境**」標籤，然後在左側面板選取「**網路基礎設施**」。
 
@@ -416,7 +416,7 @@ VPN 允許從製作、發佈或預覽執行個體連線到內部部署基礎結�
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織。
 
-1. 在「**[我的程式](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)**」畫面中，選取程式。
+1. 在 **[我的計畫](/help/implementing/cloud-manager/navigation.md#my-programs)** 主控台，選取程式。
 
 1. 從「**程式概覽**」頁面，導覽至「**環境**」標籤，然後在左側面板選取「**網路基礎設施**」。
 
@@ -631,7 +631,7 @@ Header always set Cache-Control private
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織。
 
-1. 在「**[我的程式](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)**」畫面中，選取程式。
+1. 在 **[我的計畫](/help/implementing/cloud-manager/navigation.md#my-programs)** 主控台，選取程式。
 
 1. 從 **計畫總覽** 頁面，導覽至 **環境** 標籤並選取您要在其中啟用進階網路設定的環境，在 **環境** 標題中。 然後選取 **進階網路設定** 標籤中，然後按一下 **啟用網路基礎結構**.
 
@@ -690,7 +690,7 @@ API應該在幾秒鐘內回應，指示 `updating`. 大約10分鐘後，呼叫Cl
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織。
 
-1. 在「**[我的程式](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)**」畫面中，選取程式。
+1. 在 **[我的計畫](/help/implementing/cloud-manager/navigation.md#my-programs)** 主控台，選取程式。
 
 1. 從 **計畫總覽** 頁面，導覽至 **環境** 標籤並選取您要在其中啟用進階網路設定的環境，在 **環境** 標題中。 然後選取 **進階網路設定** 標籤中，然後按一下省略符號按鈕。
 
@@ -728,7 +728,7 @@ API應該在幾秒鐘內回應，指示 `updating`. 大約10分鐘後，呼叫Cl
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager，並選取適當的組織。
 
-1. 在「**[我的程式](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)**」畫面中，選取程式。
+1. 在 **[我的計畫](/help/implementing/cloud-manager/navigation.md#my-programs)** 主控台，選取程式。
 
 1. 從「**程式概覽**」頁面，導覽至「**環境**」標籤，然後在左側面板選取「**網路基礎設施**」標題。然後按一下要刪除之基礎結構旁邊的省略符號按鈕。
 

@@ -2,7 +2,7 @@
 title: 套用和取消套用 IP 允許清單
 description: 了解如何對環境套用和取消套用 IP 允許清單。
 exl-id: 7158496c-b0c4-4228-a306-71dc51003c57
-source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
+source-git-commit: d1b2226a1deec2e71056c43c84672cb4a358bc8c
 workflow-type: tm+mt
 source-wordcount: '275'
 ht-degree: 81%
@@ -20,7 +20,7 @@ ht-degree: 81%
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織。
 
-1. 在 **[我的計畫](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** 畫面，選取程式。
+1. 在 **[我的計畫](/help/implementing/cloud-manager/navigation.md#my-programs)** 主控台，選取程式。
 1. 從&#x200B;**概觀**&#x200B;頁面瀏覽到&#x200B;**環境**&#x200B;畫面。
 1. 從計畫概觀畫面的&#x200B;**環境**&#x200B;瀏覽到特定環境，然後瀏覽到 **IP 允許清單**&#x200B;資料表。
 1. 使用表格頂端的輸入欄位，以便您可以選取IP允許清單以及要套用清單的作者或發佈服務。

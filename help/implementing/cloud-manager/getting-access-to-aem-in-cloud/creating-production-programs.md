@@ -2,10 +2,10 @@
 title: 建立生產計畫
 description: 了解如何使用 Cloud Manager 建立您自己的生產計畫來主持即時流量。
 exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
-source-git-commit: a25f1c674534792353cb9b34d4f88a5e32230bc1
+source-git-commit: 418aff3f8519bba4bf5e2459175983633eb664b8
 workflow-type: tm+mt
-source-wordcount: '1047'
-ht-degree: 33%
+source-wordcount: '1031'
+ht-degree: 34%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 33%
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織。
 
-1. 在 **[我的計畫](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** 熒幕，點選或按一下 **新增計畫** 在畫面的右上角。
+1. 在 **[我的計畫](/help/implementing/cloud-manager/navigation.md#my-programs)** 主控台，點選或按一下 **新增計畫** 在畫面的右上角。
 
    ![Cloud Manager 登陸頁面](assets/log-in.png)
 
@@ -48,7 +48,7 @@ ht-degree: 33%
 
 1. 在&#x200B;**上線日期**&#x200B;索引標籤，輸入您計畫上線的生產計畫的日期。
 
-   ![缺少規劃的上線日期](assets/setup-go-live.png)
+   ![缺少規劃的上線日期](assets/set-up-go-live.png)
 
    * 這個日期可以隨時修改。
    * 此日期僅供參考，並會在以下位置觸發上線Widget： [**計畫總覽** 頁面](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#program-overview) 及時提供AEMas a Cloud Service最佳實務檔案的產品內連結，以符合您的歷程，最終達成成功且順暢的上線體驗。
@@ -117,9 +117,9 @@ AEM Sites提供標準的99.9%服務等級協定(SLA)。 此 **99.99%服務等級
 
    ![計畫概觀](assets/set-up-prod5.png)
 
-如果您在任何時候需要切換到另一個計畫或返回概覽頁面來建立另一個計畫，請按一下畫面左上角的計畫名稱以顯示 **瀏覽至** 選項。
-
-![瀏覽到](assets/create-program-a1.png)
+>[!TIP]
+>
+>請參閱檔案 [瀏覽Cloud Manager UI](/help/implementing/cloud-manager/navigation.md) 如需有關如何導覽Cloud Manager以及瞭解 **我的計畫** 主控台。
 
 >[!NOTE]
 >

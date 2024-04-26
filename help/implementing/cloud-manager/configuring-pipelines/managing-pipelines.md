@@ -3,10 +3,10 @@ title: 管理管道
 description: 了解如何管理現有管道，包括將其編輯、執行和刪除。
 index: true
 exl-id: 4aff5a84-134a-43fa-8de8-8d564f4edd16
-source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
+source-git-commit: 71ece3b084c3a262cacc62019396138a88a340b9
 workflow-type: tm+mt
-source-wordcount: '934'
-ht-degree: 65%
+source-wordcount: '1018'
+ht-degree: 54%
 
 ---
 
@@ -41,21 +41,25 @@ ht-degree: 65%
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織。
 
-1. 在 **[我的計畫](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** 畫面，選取程式。
+1. 在 **[我的計畫](/help/implementing/cloud-manager/navigation.md#my-programs)** 主控台，選取程式。
 
 1. 從 **計畫總覽** 頁面，選取 **管道** 標籤以切換至 **管道** 視窗。
 
 1. 在這裡，您可以看到計畫的所有管道清單，並像在中一樣開始和停止管道執行 **管道卡**.
 
-如果管道正在執行，將滑鼠懸停在其&#x200B;**狀態**&#x200B;欄上將顯示有關執行的詳細資訊。
+如果管道正在執行，請點選 **狀態** 欄會顯示執行的詳細資訊。
 
 ![管道執行詳細資訊](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-status.png)
 
 點選或按一下&#x200B;**檢視詳細資訊**&#x200B;將帶您前往[管道執行詳細資訊](#view-details)
 
+您還可以點選或按一下管道的省略符號按鈕，以採取適用於管道狀態的其他操作，例如 [編輯](#editing-pipelines) 它或 [正在取消執行。](#cancel)
+
+![管道動作](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-actions.png)
+
 ## 活動視窗 {#activity}
 
-這&#x200B;**活動**&#x200B;視窗顯示所選方案所有管道執行的完整清單。
+此 **活動** 視窗顯示所選方案的所有管道執行以及其他重要方案事件的完整清單。
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織和方案。
 
@@ -63,11 +67,15 @@ ht-degree: 65%
 
 1. 在這裡，您可以看到方案所有管道執行的清單，包括目前和歷史執行。
 
-如果管道正在執行，將滑鼠懸停在其&#x200B;**狀態**&#x200B;欄上將顯示有關執行的詳細資訊。
+如果管道正在執行，請點選 **狀態** 欄會顯示執行的詳細資訊。
 
 ![管道執行詳細資訊](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-activity.png)
 
-點選或按一下&#x200B;**檢視詳細資訊**&#x200B;將帶您前往[管道執行詳細資訊](#view-details)
+點選或按一下代表管道執行的列將帶您前往 [管道執行的詳細資訊。](#view-details)
+
+您也可以點選或按一下省略符號按鈕，以針對管道執行採取進一步的動作，例如檢視其詳細資料或下載記錄，這會帶您前往 [管道詳細資訊頁面。](#view-details)
+
+![管道執行動作](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-execution-actions.png)
 
 ## 執行管道 {#running-pipelines}
 

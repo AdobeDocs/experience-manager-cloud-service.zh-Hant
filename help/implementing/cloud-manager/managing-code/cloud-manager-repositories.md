@@ -2,10 +2,10 @@
 title: Cloud Manager 存放庫
 description: 了解如何在 Cloud Manager 中建立、檢視和刪除 Git 存放庫。
 exl-id: 6e1cf636-78f5-4270-9a21-38b4d5e5a0b0
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 4bf1d961705ce07c5ae5d33a546a276192f10178
 workflow-type: tm+mt
-source-wordcount: '582'
-ht-degree: 85%
+source-wordcount: '575'
+ht-degree: 84%
 
 ---
 
@@ -61,8 +61,6 @@ ht-degree: 85%
 1. 從 **計畫總覽** 頁面，按一下 **存放庫** 標籤並導覽至 **存放庫** 頁面。
 
 1. 選取存放庫，然後按一下省略符號按鈕並選取 **刪除** 以刪除存放庫。
-
-   ![刪除存放庫](/help/implementing/cloud-manager/assets/repos/delete-repo.png)
 
 ## Git 子模組支援 {#git-submodule-support}
 

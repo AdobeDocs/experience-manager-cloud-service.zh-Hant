@@ -1,15 +1,15 @@
 ---
-title: CDN效能儀表板
+title: CDN 效能儀表板
 description: 瞭解Cloud Manager如何評估內容傳遞網路(CDN)效能，以及您可以從儀表板瞭解什麼。
-source-git-commit: 0d60c19638707262dab7f290f84fa873b694bc22
+exl-id: ecd8c1ca-873f-4e73-ad73-b5f7561eb109
+source-git-commit: d1b2226a1deec2e71056c43c84672cb4a358bc8c
 workflow-type: tm+mt
 source-wordcount: '383'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
-
-# CDN效能儀表板 {#cdn-performance}
+# CDN 效能儀表板 {#cdn-performance}
 
 瞭解Cloud Manager如何評估內容傳遞網路(CDN)效能，以及您可以從儀表板瞭解什麼。
 
@@ -25,7 +25,7 @@ CDN控制面板可在每個計畫的概觀頁面上取得。
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織。
 
-1. 在 **[我的計畫](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** 頁面，點選或按一下您要檢視其CDN控制面板的程式。
+1. 在 **[我的計畫](/help/implementing/cloud-manager/navigation.md#my-programs)** 主控台，點選或按一下您要檢視其CDN控制面板的程式。
 
    ![我的程式頁面](assets/my-programs.png)
 

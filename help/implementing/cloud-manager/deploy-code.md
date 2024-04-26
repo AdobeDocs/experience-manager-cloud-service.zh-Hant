@@ -2,7 +2,7 @@
 title: 部署您的程式碼
 description: 了解如何在 AEM as a Cloud Service 中使用 Cloud Manager 管道來將程式碼部署。
 exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
-source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
+source-git-commit: d1b2226a1deec2e71056c43c84672cb4a358bc8c
 workflow-type: tm+mt
 source-wordcount: '1197'
 ht-degree: 93%
@@ -31,7 +31,7 @@ _只有 Full Stack Code 流水線類型支援程式碼掃描、功能測試、UI
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織。
 
-1. 在 **[我的計畫](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** 畫面，點選或按一下您要部署程式碼的程式。
+1. 在 **[我的計畫](/help/implementing/cloud-manager/navigation.md#my-programs)** 主控台，點選或按一下您要部署程式碼的程式。
 
 1. 按一下&#x200B;**部署**&#x200B;從號召性用語&#x200B;**概觀**&#x200B;畫面開始部署過程。
 

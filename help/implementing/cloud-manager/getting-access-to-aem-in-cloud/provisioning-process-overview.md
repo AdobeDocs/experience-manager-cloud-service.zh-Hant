@@ -1,10 +1,10 @@
 ---
 title: 佈建程序 - 概觀
 description: 佈建程序 - 概觀
-source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
+source-git-commit: eec64a5dc211dc72712989bf6dc81de8004e2a85
 workflow-type: tm+mt
-source-wordcount: '291'
-ht-degree: 98%
+source-wordcount: '288'
+ht-degree: 93%
 
 ---
 
@@ -26,13 +26,10 @@ ht-degree: 98%
 
 自動配置完成後：
 
-* Access 已授予權利–Adobe 將在 Adobe Identity Management System (IMS) 中建立一個組織
+* 已授予存取權 — Adobe將在Adobe Identity Management System (IMS)中建立組織
 * 指定管理員預設擁有管理員權限
 * 管理員可以透過 Admin Console 為其他團隊成員新增使用者和角色
 * 查看使用者基於角色的權限以確定 Cloud Manager 中的權限指派
-
-![processoverview.jpg](assets/processOverview.jpg)
-
 
 若要了解更多資訊，請參閱 [Experience League 上的 Experience Manager as a Cloud Service 入門](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/home.html)。
 
@@ -49,8 +46,6 @@ ht-degree: 98%
 
 ### 2. 在 Adobe Admin Console 中佈建組織：
 
-![processoverview2.jpg](assets/processOverview2.jpg)
-
 * 系統管理員：
    * 配置 AEM 計畫和環境。
    * 瀏覽到 Admin Console 以執行管理任務。
@@ -61,8 +56,6 @@ ht-degree: 98%
    * 管理本機組、權限和特權。
 
 ### 3. 在 Admin Console 中加入使用者並管理存取：
-
-![processoverview3.jpg](assets/processOverview3.jpg)
 
 根據規模和偏好，三種方法來吸引使用者：
 * 在 Admin Console 中手動建立使用者

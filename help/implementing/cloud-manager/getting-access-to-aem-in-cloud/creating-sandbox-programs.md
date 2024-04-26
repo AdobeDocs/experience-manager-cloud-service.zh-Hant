@@ -2,10 +2,10 @@
 title: 建立沙箱計畫
 description: 了解如何使用 Cloud Manager 建立您自己的沙箱計畫，用於訓練、展示、POC 或其他非生產目的。
 exl-id: 10011392-3059-4bb0-88db-0af1d390742e
-source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
+source-git-commit: 558b46f58491dbd6845003827dcf2a0ae1b1d074
 workflow-type: tm+mt
-source-wordcount: '443'
-ht-degree: 86%
+source-wordcount: '434'
+ht-degree: 74%
 
 ---
 
@@ -19,9 +19,9 @@ ht-degree: 86%
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織。
 
-1. 在 **[我的計畫](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** 熒幕，點選或按一下 **新增計畫** 靠近熒幕右上角。
+1. 在 **[我的計畫](/help/implementing/cloud-manager/navigation.md#my-programs)** 主控台，點選或按一下 **新增計畫** 靠近熒幕右上角。
 
-   ![Cloud Manager 登陸頁面](assets/cloud-manager-my-programs.png)
+   ![Cloud Manager 登陸頁面](assets/log-in.png)
 
 1. 從建立計畫精靈中，選取&#x200B;**設定沙箱**，並提供計畫名稱。
 
@@ -63,12 +63,12 @@ ht-degree: 86%
 
 1. 建立開發環境後，您可以使用&#x200B;**存取 AEM**&#x200B;連結來登入 AEM。
 
-   ![存取 AEM 連結](assets/create-program-5.png)
+   ![存取 AEM 連結](assets/create-program5.png)
 
-1. 部署到開發的非生產管道完成後，安裝精靈將引導您存取 AEM 開發環境或將程式碼部署到開發環境。
+1. 部署到開發的非生產管道完成後，行動號召中的精靈將引導您存取AEM開發環境或將計畫碼部署到開發環境。
 
    ![部署沙箱](assets/create-program-setup-deploy.png)
 
-如果必須切換到另一個計畫或返回概覽頁面來建立另一個計畫，請按一下畫面左上角的計畫名稱以顯示「**瀏覽**」選項。
-
-![瀏覽到](assets/create-program-a1.png)
+>[!TIP]
+>
+>請參閱檔案 [瀏覽Cloud Manager UI](/help/implementing/cloud-manager/navigation.md) 如需有關如何導覽Cloud Manager以及瞭解 **我的計畫** 主控台。

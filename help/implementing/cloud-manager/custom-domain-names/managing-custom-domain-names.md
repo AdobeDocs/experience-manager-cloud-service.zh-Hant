@@ -2,10 +2,10 @@
 title: 管理客戶網域名稱
 description: 了解如何使用 Cloud Manager 查看、更新、取代和刪除自訂網域名稱。
 exl-id: 6cab8cf2-22c0-4f4b-9c54-a1425e74ddd0
-source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
+source-git-commit: fcb6dd8ec74446643aaef1870685d26bc138bbd7
 workflow-type: tm+mt
-source-wordcount: '339'
-ht-degree: 84%
+source-wordcount: '326'
+ht-degree: 81%
 
 ---
 
@@ -19,7 +19,7 @@ Cloud Manager 可讓您檢視、更新、取代和刪除自訂網域名稱。
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織。
 
-1. 在 **[我的計畫](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** 畫面，選取程式。
+1. 在 **[我的計畫](/help/implementing/cloud-manager/navigation.md#my-programs)** 主控台，選取程式。
 
 1. 從&#x200B;**概觀**&#x200B;頁面，瀏覽到&#x200B;**環境**&#x200B;畫面。
 
@@ -45,17 +45,13 @@ Cloud Manager 可讓您檢視、更新、取代和刪除自訂網域名稱。
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織和計畫。
 
-1. 從&#x200B;**概觀**&#x200B;頁面瀏覽到&#x200B;**環境**&#x200B;畫面。
-
-1. 從&#x200B;**環境**&#x200B;畫面瀏覽到&#x200B;**網域設定**&#x200B;頁面。
+1. 導覽至 **網域設定** 頁面來自 **概觀** 畫面。
 
 1. 識別要刪除自訂網域名稱的列。
 
 1. 按一下該列最右端的省略符號按鈕。
 
 1. 選取&#x200B;**刪除**。
-
-   ![刪除自訂網域名稱](/help/implementing/cloud-manager/assets/cdn/cdn-delete.png)
 
 1. 確認您的提交。
 
