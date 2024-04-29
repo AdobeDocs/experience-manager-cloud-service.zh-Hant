@@ -6,7 +6,7 @@ exl-id: 6dfcac3e-5654-4b4f-9134-0cd8be24332e
 source-git-commit: 539f4bf86f0e32057b2228dc44c86120d6e8457b
 workflow-type: tm+mt
 source-wordcount: '1411'
-ht-degree: 28%
+ht-degree: 32%
 
 ---
 
@@ -47,12 +47,12 @@ AEM Forms提供多個API來提交表單、處理檔案和轉譯檔案。 有些A
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_formCreationAvgDuration_graph_en"
 >title="表單產生的平均持續時間"
->abstract="此圖顯示了建立表單所需的平均時間。圖表上的每個長條代表特定表單，長條的高度代表該時間範圍內建立表單所用的平均持續時間。"
+>abstract="此圖顯示了建立表單所需的平均時間。圖表上的每個長條都代表一個特定的表單，長條的高度則表示在該時間段內建立表單所需的平均持續時間。"
 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_formPublishAvgDuration_en"
 >title="表單建立的平均持續時間"
->abstract="圖形顯示建立和發佈表單所需的平均時間，從開啟表單進行編輯的初始日期開始計算。圖形提供目前AEM Forms Author例項的特定資料。 若要查看其他例項的資料，請存取對應例項的儀表板。"
+>abstract="此圖表顯示建立和發佈表單所需的平均時間，從開啟表單進行編輯的第一天開始測量。這份圖表提供了目前 AEM Forms 作者例項的專屬資料。若要查看其他例項的資料，請存取對應例項的儀表板。"
 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_newForms_graph_en"

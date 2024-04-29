@@ -14,7 +14,7 @@ ht-degree: 100%
 >[!CONTEXTUALHELP]
 >id="aemcloud_alignkpis"
 >title="調整 KPI"
->abstract="在數位世界中，幾乎一切都可以測量。為您的 Adobe Experience Manager 實作選擇正確的 KPI 將有助於您的團隊專注於最重要的事情。"
+>abstract="在數位世界中，幾乎一切都可以測量。為您的 Adobe Experience Manager 實施選擇正確的 KPI 將有助於您的團隊專注於最重要的事情。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/assessing-kpis.html" text="評估 KPI"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/choose-right-team.html" text="選擇合適的團隊"
 
