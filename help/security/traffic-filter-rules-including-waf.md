@@ -5,7 +5,7 @@ exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 source-git-commit: b52da0a604d2c320d046136f5e526e2b244fa6cb
 workflow-type: tm+mt
 source-wordcount: '3790'
-ht-degree: 75%
+ht-degree: 80%
 
 ---
 
@@ -255,7 +255,7 @@ when:
 | SQLI | SQL 注入 | SQL 注入指試圖透過執行任意資料庫查詢以取得對應用程式的存取權或獲取特權資訊。 |
 | BACKDOOR | 後門 | 後門訊號指試圖決定系統是否存在常見後門檔案的要求。 |
 | CMDEXE | 命令執行 | 命令執行指試圖透過由使用者輸入的任意系統命令獲取控制或毀損目標系統。 |
-| CMDEXE-NO-BIN | 命令執行，但不在 `/bin/` | 提供與相同層級的保護 `CMDEXE` 在上停用誤判時 `/bin` 得益於AEM架構。 |
+| CMDEXE-NO-BIN | 命令執行 (除`/bin/`以外) | 由於 AEM 架構，提供同 `CMDEXE` 等級的保護，但停用 `/bin` 的誤報。 |
 | XSS | 跨網站指令碼 | 跨網站指令碼指試圖透過惡意 JavaScript 程式碼劫持使用者的帳戶或 Web 瀏覽工作階段。 |
 | 周遊 | 目錄周遊 | 目錄周遊指試圖瀏覽整個系統中的特權檔案，期望能獲取敏感資訊。 |
 | USERAGENT | 攻擊工具 | 攻擊工具指使用自動化軟體識別安全漏洞或試圖惡意探索發現的漏洞。 |
@@ -335,7 +335,7 @@ data:
 
 **範例 3**
 
-此規則會封鎖發佈上包含查詢引數的請求 `foo`，但允許來自IP 192.168.1.1的每個請求：
+此規則會封鎖含有查詢參數 `foo` 的發佈要求，但會允許來自 IP 192.168.1.1 的每個要求：
 
 ```
 kind: "CDN"
@@ -360,7 +360,7 @@ data:
 
 **範例 4**
 
-此規則會封鎖路徑請求 `/block-me` 發佈時，並封鎖符合 `SQLI` 或 `XSS` 模式。 此範例包含 WAF 流量篩選規則，其參考了 `SQLI` 和 `XSS`[WAF 標幟](#waf-flags-list)，因此需要單獨的授權。
+此規則會封鎖發佈時對路徑 `/block-me` 的要求，並封鎖和 `SQLI` 或 `XSS` 模式相符的每個要求。此範例包含 WAF 流量篩選規則，其參考了 `SQLI` 和 `XSS`[WAF 標幟](#waf-flags-list)，因此需要單獨的授權。
 
 ```
 kind: "CDN"
@@ -426,7 +426,7 @@ data:
 
 速率限制是根據 CDN POP 計算的。例如，假設Montreal、Miami和Dublin的POP每秒的流量率分別為80、90和120個請求。 而且，速率限制規則設為100的限制。 在這種情況下，只有到都柏林的流量會受到速率限制。
 
-會根據到達邊緣的流量、到達原點的流量或錯誤次數來評估速率限制。
+速率限制是根據到達邊緣的流量、到達來源的流量或錯誤數量進行評估。
 
 ### rateLimit 結構 {#ratelimit-structure}
 
@@ -435,7 +435,7 @@ data:
 | 限制 | 10 到 10000 之間的整數 | 必要 | 觸發規則的要求速率是以每秒要求數為單位 (per CDN POP)。 |
 | 視窗 | 整數列舉：1、10 或 60 | 10 | 計算要求速率的取樣期間 (秒數)。計數器的準確度取決於視窗的大小（視窗越大，準確度越高）。 例如，1秒視窗的精確度可能為50%，60秒視窗的精確度可能為90%。 |
 | 懲罰 | 60 到 3600 之間的整數 | 300 (5 分鐘) | 封鎖相符要求時間的秒數 (四捨五入到最接近的分鐘)。 |
-| 計數 | 全部、擷取、錯誤 | 全部 | 根據邊緣流量（全部）、來源流量（擷取）或錯誤數（錯誤）進行評估。 |
+| 計數 | 所有、擷取、錯誤 | 全部 | 根據邊緣流量 (全部)、來源流量 (擷取) 或錯誤數量 (錯誤) 進行評估。 |
 | groupBy | array[Getter] | 無 | 速率限制器計數器將由一組要求屬性 (例如 clientIp) 彙總。 |
 
 ### 範例 {#ratelimiting-examples}
@@ -635,7 +635,7 @@ Adobe 提供了將儀表板工具下載到您電腦上的機制，以擷取透�
 
 控制面板工具可直接從 [AEMCS-CDN-Log-Analysis-ELK-Tool](https://github.com/adobe/AEMCS-CDN-Log-Analysis-ELK-Tool) GitHub存放庫。
 
-[Tutorials](#tutorial) 適用於如何使用儀表板工具的具體指示。
+[教學課程](#tutorial)可供了解何使用儀表板工具的具體說明。
 
 ## 推薦的入門規則 {#recommended-starter-rules}
 
@@ -720,11 +720,11 @@ data:
 
 ## 教學課程 {#tutorial}
 
-提供兩個教學課程。
+有兩個教學課程可供使用。
 
-### 使用流量篩選規則（包括WAF規則）保護網站
+### 使用流量篩選規則 (包括 WAF 規則) 保護網站
 
-[完成教學課程](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview) 以取得有關流量篩選規則（包括WAF規則）的一般實用知識和經驗。
+[完成教學課程](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview)以獲得有關流量篩選器規則 (包含 WAF 規則) 的實用知識和經驗。
 
 本教學課程將引導您完成：
 
@@ -734,15 +734,15 @@ data:
 * 使用儀表板工具分析結果
 * 最佳做法
 
-### 使用流量篩選規則封鎖DoS和DDoS攻擊
+### 使用流量篩選器規則封鎖 DoS 和 DDoS 攻擊
 
-[深入瞭解如何封鎖](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/security/blocking-dos-attack-using-traffic-filter-rules) 使用速率限制流量篩選規則和其他策略的阻斷服務(DoS)和分散式阻斷服務(DDoS)攻擊。
+[深入探討如何使用速率限制流量篩選器規則和其他策略來封鎖](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/cloud-service/security/blocking-dos-attack-using-traffic-filter-rules)阻斷服務 (DoS) 和分散式阻斷服務 (DDoS) 攻擊。
 
 本教學課程將引導您完成：
 
-* 瞭解保護
-* 在超過速率限制時接收警示
-* 使用儀表板工具來設定速率限制流量篩選規則的臨界值，以分析流量模式
+* 了解保護措施
+* 當超出速率限制時接收提醒
+* 使用儀表板工具分析流量模式，以便設定速率限制流量篩選器規則的臨界值
 
 
 
