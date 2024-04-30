@@ -2,10 +2,10 @@
 title: 預覽內容
 description: 瞭解如何使用AEM預覽服務在內容上線前進行預覽。
 exl-id: 6b4b57f6-2e66-4c83-94d9-bc1e0daab0f3
-source-git-commit: 0ad9f349c997c35862e4f571b4741ed4c0c947e2
+source-git-commit: a9a2362903e8eec25393e2ceb307814e1a21f142
 workflow-type: tm+mt
-source-wordcount: '315'
-ht-degree: 9%
+source-wordcount: '298'
+ht-degree: 4%
 
 ---
 
@@ -54,11 +54,3 @@ https://preview-p<programID>-e>environmentID>.adobeaemcloud.com/<pathtopage>.htm
 正在取消發佈您的內容 **預覽** 環境基本上與相同的流程 [取消發佈頁面](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#unpublishing-pages) 從 **發佈** 環境。
 
 唯一的區別是您可以選取 **目的地** 成為 **預覽**.
-
-## 更多資訊 {#further-information}
-
-另請參閱：
-
-* [設定預覽階層的 OSGi 設定](/help/implementing/preview-tier/preview-tier-configuring-osgi.md#configuring-osgi-settings-for-the-preview-tier)
-
-* [使用 Developer Console 偵錯預覽](/help/implementing/preview-tier/preview-tier-configuring-osgi.md#debugging-preview-using-the-developer-console)

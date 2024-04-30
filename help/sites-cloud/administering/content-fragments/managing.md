@@ -4,9 +4,9 @@ description: 瞭解如何從主控台和編輯器管理AEM內容片段、建立�
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
-source-git-commit: 404eb317562f974f72820c6e3aa019fbe043d7f7
+source-git-commit: a9a2362903e8eec25393e2ceb307814e1a21f142
 workflow-type: tm+mt
-source-wordcount: '2643'
+source-wordcount: '2628'
 ht-degree: 2%
 
 ---
@@ -301,11 +301,7 @@ ht-degree: 2%
 
   >[!NOTE]
   >
-  >如需預覽環境的詳細資訊，請參閱下列內容：
-  >
-  >* [管理環境](/help/implementing/cloud-manager/manage-environments.md#access-preview-service)
-  >* [配置預覽層級的OSGi設定](/help/implementing/preview-tier/preview-tier-configuring-osgi.md#configuring-osgi-settings-for-the-preview-tier)
-  >* [使用Developer Console除錯預覽](/help/implementing/preview-tier/preview-tier-configuring-osgi.md#debugging-preview-using-the-developer-console)
+  >如需有關預覽環境的詳細資訊，請參閱 [管理環境](/help/implementing/cloud-manager/manage-environments.md#access-preview-service).
 
 >[!CAUTION]
 >
