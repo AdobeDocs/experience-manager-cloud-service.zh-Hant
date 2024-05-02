@@ -3,10 +3,10 @@ title: 設定CDN錯誤頁面
 description: 瞭解如何在自行託管的儲存體(例如Amazon S3或Azure Blob儲存體)中託管靜態檔案，並在使用Cloud Manager設定管道部署的設定檔案中參照這些檔案，以覆寫預設錯誤頁面。
 feature: Dispatcher
 exl-id: 1ecc374c-b8ee-41f5-a565-5b36445d3c7c
-source-git-commit: 8489b40f45e6cbeb98288969bc9f6bd42815e2a6
+source-git-commit: 69ffcccae150a5e49c6344973890733f3e5b74ae
 workflow-type: tm+mt
-source-wordcount: '318'
-ht-degree: 1%
+source-wordcount: '376'
+ht-degree: 5%
 
 ---
 
@@ -18,14 +18,21 @@ ht-degree: 1%
 
 您必須先執行下列操作，才能覆寫預設錯誤頁面：
 
-* 首先，在Git專案的頂層資料夾中建立此資料夾和檔案結構：
+* 在您的Git專案的頂層資料夾中建立此資料夾和檔案結構：
 
 ```
 config/
      cdn.yaml
 ```
 
-* 其次， `cdn.yaml` 設定檔案應包含中繼資料和錯誤頁面參照，如下所述。
+* 此 `cdn.yaml` 設定檔案應同時包含中繼資料和下列範例所述的規則。 此 `kind` 引數應設為 `CDN` 而版本應設為結構描述版本，目前為 `1`.
+
+* 在Cloud Manager中建立目標部署設定管道。 另請參閱 [設定生產管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) 和 [設定非生產管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md).
+
+**附註**
+
+* RDE目前不支援設定管道。
+* 您可以使用 `yq` 在本機驗證設定檔的 YAML 格式 (例如 `yq cdn.yaml`)。
 
 ### 設定 {#configuration}
 
