@@ -3,10 +3,10 @@ title: 如何管理AEM Forms的中繼資料？
 description: 中繼資料可讓您更輕鬆地分類及組織資產，並幫助尋找特定資產的使用者。
 feature: Adaptive Forms, Foundation Components
 exl-id: 8527246a-37f0-4d43-a49e-1c76c265514e
-source-git-commit: 6821856bd9f1a87a66ba296b3e315c0a4e78cea8
+source-git-commit: 7b31a2ea016567979288c7a8e55ed5bf8dfc181d
 workflow-type: tm+mt
-source-wordcount: '1733'
-ht-degree: 6%
+source-wordcount: '1735'
+ht-degree: 5%
 
 ---
 
@@ -71,12 +71,12 @@ ht-degree: 6%
      <li>PDF表單、PDF表單(Acroform)或PDF表單（已簽署）</li> 
      <li>檔案，檔案（已簽署）</li> 
      <li>最適化表單</li> 
-     <li>表單資料模型</li>
+     <li>表單資料模型(FDM)</li>
      <li>資源</li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td>建立日期</td> 
+   <td>已建立</td> 
    <td>全部</td> 
    <td>指定資產建立時間的唯讀值。</td> 
   </tr> 
@@ -162,7 +162,7 @@ ht-degree: 6%
    <td>最適化表單</td> 
    <td><p>指定製作最適化表單時使用的表單模型。 此屬性可以有下列值：</p> 
     <ul> 
-      <li>表單資料模型 </li>
+      <li>表單資料模型(FDM)</li>
       <li>結構描述： JSON結構描述的XML</li>
      <!-- <li>Form template: A form template is selected from the ones existing in the repository. This value can be updated.</li> 
      <li>XML schema: An XSD file is uploaded. This value can be updated.</li> -->

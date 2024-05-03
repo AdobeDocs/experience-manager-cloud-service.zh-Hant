@@ -4,9 +4,9 @@ description: 瞭解如何建立最適化表單或將其新增到您的AEM Sites�
 feature: Adaptive Forms, Foundation Components, Page Editor, Authoring
 Keywords: AF in Sites editor, af in aem sites, aem sites af, add af to a sites page, af aem sites, af sites, create af in a sites page, adaptive form in aem sites, forms aem sites, add form to a sites page, adaptive forms aem sites, add adaptive forms to aem page, create forms in an aem sites page
 exl-id: a1846c5d-7b0f-4f48-9d15-96b2a8836a9d
-source-git-commit: a868bf4d4acf4fbae7ccaf55b03319ba0617f9a4
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
-source-wordcount: '3177'
+source-wordcount: '3184'
 ht-degree: 18%
 
 ---
@@ -40,7 +40,7 @@ AEM FormsCloud Service提供最適化表單容器和Adaptive Forms — 內嵌元
 * **標籤：** AEM Sites頁面可讓您 [將標籤或標籤指派給頁面、資產或其他內容](/help/implementing/developing/introduction/tagging-framework.md). 標籤是關鍵字或中繼資料標籤，提供根據特定條件分類及組織內容的方式。 您可以指派一或多個標籤給AEM內的頁面、資產或任何其他內容專案，以改善搜尋並將資產分類。
 * **鎖定和解鎖內容：** AEM Sites允許使用者 [控制對頁面的存取與修改](/help/sites-cloud/authoring/page-editor/edit-content.md) 在AEM Sites環境中。 頁面鎖定時，即表示頁面可免受其他使用者未經授權的變更或編輯作業。 只有已鎖定內容的使用者或指定的管理員可以解除鎖定內容以允許修改。
 
-此外，AEM頁面編輯器中的最適化Forms使用 [最適化Forms核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html#features). 這些核心元件提供標準且更簡單的方法來樣式化和自訂元件，完全等同於 [AEM Sites WCM元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html).
+此外，AEM頁面編輯器中的最適化Forms使用 [最適化Forms核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html#features). 這些核心元件提供標準且更簡單的方法來樣式化和自訂元件，完全等同於 [AEM Sites WCM元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hant).
 
 
 ## 如何在AEM Sites頁面或AEM體驗片段中建立或新增最適化表單？ {#various-options-to-creat-or-add-an-adaptive-form-in-aem-sites-page-or-aem-experience-fragment}
@@ -204,22 +204,22 @@ AEM FormsCloud Service提供最適化表單容器和Adaptive Forms — 內嵌元
 1. 根據您的要求，選取並設定提交動作。 如需「提交動作」的詳細資訊，請參閱 [最適化表單提交動作](/help/forms/configuring-submit-actions.md)
 
 
-## 為AEM Sites頁面或體驗片段中的表單設定結構描述或表單資料模型 {#configure-schema-or-data-model-for-form}
+## 為AEM Sites頁面或體驗片段中的表單設定結構描述或表單資料模型(FDM) {#configure-schema-or-data-model-for-form}
 
-您可以使用表單資料模型將表單連線至資料來源，以根據使用者動作傳送及接收資料。 您也可以將表單連線至JSON結構描述，以預先定義的格式接收提交的資料。 根據需求，將您的表單連結至JSON結構描述或表單資料模型：
+您可以使用表單資料模型(FDM)將表單連線至資料來源，以根據使用者動作傳送及接收資料。 您也可以將表單連線至JSON結構描述，以預先定義的格式接收提交的資料。 根據需求，將表單連線到JSON結構描述或表單資料模型(FDM)：
 
 * [建立JSON結構描述並上傳至您的環境](/help/forms/adaptive-form-json-schema-form-model.md)  或，
-* [建立表單資料模型](/help/forms/create-form-data-models.md)
+* [建立表單資料模型(FDM)](/help/forms/create-form-data-models.md)
 
-若要設定表單的JSON結構描述或表單資料模型：
+若要設定表單的JSON結構描述或表單資料模型(FDM)：
 
 1. 開啟包含最適化表單的AEM頁面編輯器或體驗片段。
 1. 開啟「內容樹」，然後選取 **[!UICONTROL 最適化Forms容器]** 託管您的最適化表單。 一個AEM Sites頁面可以託管多個最適化Forms。 因此，請仔細選取正確的最適化Forms容器。
 1. 按一下最適化表單容器屬性 ![最適化表單容器屬性](/help/forms/assets/configure-icon.svg) 圖示。 用來設定資料模型的最適化表單容器對話方塊隨即開啟。
    ![按一下扳手圖示，為最適化表單設定資料模型](/help/forms/assets/form-data-model-adaptive-forms-container.png)
-1. 根據您的要求，選取並設定JSON結構描述或表單資料模型。 如需「提交動作」的詳細資訊，請參閱 [最適化表單提交動作](/help/forms/configuring-submit-actions.md).
+1. 根據您的要求，選取並設定JSON結構描述或表單資料模型(FDM)。 如需「提交動作」的詳細資訊，請參閱 [最適化表單提交動作](/help/forms/configuring-submit-actions.md).
 
-   * 當您選取 **[!UICONTROL 表單模型]** 選項，使用 **[!UICONTROL 選取表單資料模型]** 選項以選取預先設定的表單資料模型。
+   * 當您選取 **[!UICONTROL 表單模型]** 選項，使用 **[!UICONTROL 選取表單資料模型]** 選項以選取預先設定的表單資料模型(FDM)。
    * 當您選取 **[!UICONTROL 結構描述]** 選項，使用 **[!UICONTROL 結構描述]** 選項來為您的表單選取JSON結構描述。
 
 1. 按一下&#x200B;**[!UICONTROL 「完成」]**。

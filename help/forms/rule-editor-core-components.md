@@ -5,9 +5,9 @@ feature: Adaptive Forms, Core Components
 role: User
 level: Beginner, Intermediate
 exl-id: 1292f729-c6eb-4e1b-b84c-c66c89dc53ae
-source-git-commit: a22ecddf7c97c5894cb03eb44296e0562ac46ddb
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
-source-wordcount: '5444'
+source-wordcount: '5453'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ ht-degree: 0%
 * 設定物件的值
 * 驗證物件的值
 * 執行函數以計算物件的值
-* 啟動表單數據模型服務並執行操作
+* 啟動表單資料模型 （FDM） 服務並執行操作
 * 設定物件的屬性
 
 <!-- Rule editor replaces the scripting capabilities in [!DNL Experience Manager 6.1 Forms] and earlier releases. However, your existing scripts are preserved in the new rule editor. For more information about working with existing scripts in the rule editor, see [Impact of rule editor on existing scripts](rule-editor.md#p-impact-of-rule-editor-on-existing-scripts-p). -->
@@ -145,15 +145,15 @@ ht-degree: 0%
 
 **[!UICONTROL 停用]** 停用指定的物件。
 
-**[!UICONTROL 啟動服務]** 叫用表單資料模型中設定的服務。 選擇「啟動服務」作業時，會出現一個欄位。 點選欄位時，它會顯示您在上所有表單資料模型中設定的所有服務 [!DNL Experience Manager] 執行個體。 選擇表單資料模型服務時，會出現更多欄位，您可在其中對應具有指定服務的輸入和輸出引數的表單物件。 請參閱呼叫表單資料模型服務的規則範例。
+**[!UICONTROL 啟動服務]** 叫用表單資料模型(FDM)中設定的服務。 選擇「啟動服務」作業時，會出現一個欄位。 點選欄位時，它會顯示您的頁面上所有表單資料模型(FDM)中設定的所有服務 [!DNL Experience Manager] 執行個體。 選擇表單資料模型服務時，會出現更多欄位，您可在其中對應具有指定服務的輸入和輸出引數的表單物件。 請參閱叫用表單資料模型(FDM)服務的規則範例。
 
 除了表單資料模型服務之外，您還可以指定直接的WSDL URL來叫用Web服務。 不過，表單資料模型服務有許多優點，且建議叫用服務的方法。
 
-如需在表單資料模型中設定服務的詳細資訊，請參閱 [[!DNL Experience Manager Forms] 資料整合](data-integration.md).
+如需有關在表單資料模型(FDM)中設定服務的詳細資訊，請參閱 [[!DNL Experience Manager Forms] 資料整合](data-integration.md).
 
-**[!UICONTROL 設定值]** 計算並設定指定物件的值。 您可以將物件值設為字串、其他物件的值、使用數學運算式或函式的計算值、物件屬性的值，或來自已設定表單資料模型服務的輸出值。 當您選擇Web服務選項時，它會顯示在您電腦上所有表單資料模型中設定的所有服務 [!DNL Experience Manager] 執行個體。 選擇表單資料模型服務時，會出現更多欄位，您可在其中對應具有指定服務的輸入和輸出引數的表單物件。
+**[!UICONTROL 設定值]** 計算並設定指定物件的值。 您可以將物件值設為字串、其他物件的值、使用數學運算式或函式的計算值、物件屬性的值，或來自已設定表單資料模型服務的輸出值。 當您選擇Web服務選項時，它會顯示您的頁面上所有表單資料模型(FDM)中設定的所有服務 [!DNL Experience Manager] 執行個體。 選擇表單資料模型服務時，會出現更多欄位，您可在其中對應具有指定服務的輸入和輸出引數的表單物件。
 
-如需在表單資料模型中設定服務的詳細資訊，請參閱 [[!DNL Experience Manager Forms] 資料整合](data-integration.md).
+如需有關在表單資料模型(FDM)中設定服務的詳細資訊，請參閱 [[!DNL Experience Manager Forms] 資料整合](data-integration.md).
 
 此 **[!UICONTROL 設定屬性]** 規則型別可讓您根據條件動作來設定指定物件的屬性值。 您可以將屬性設定為下列其中一項：
 * 可見（布林值）
@@ -836,7 +836,7 @@ Any scripts or expressions that you must have written in the Scripts tab are ava
 
 ### 啟動表單資料模型服務 {#invoke}
 
-考慮使用Web服務 `GetInterestRates` 以貸款金額、保有權及申請者的信用評分作為輸入，並傳回包含EMI金額和利率的貸款計畫。 您可以使用Web服務作為資料來源來建立表單資料模型。 您新增資料模型物件和 `get` 表單模型的服務。 此服務會出現在表單資料模型的「服務」標籤中。 接著，建立包含資料模型物件欄位的最適化表單，以擷取貸款金額、使用期限和信用評分的使用者輸入。 新增觸發Web服務擷取計畫詳細資料的按鈕。 輸出會填入適當的欄位中。
+考慮使用Web服務 `GetInterestRates` 以貸款金額、保有權及申請者的信用評分作為輸入，並傳回包含EMI金額和利率的貸款計畫。 您可以使用Web服務作為資料來源來建立表單資料模型(FDM)。 您新增資料模型物件和 `get` 表單模型的服務。 服務會出現在表單資料模型(FDM)的「服務」標籤中。 接著，建立包含資料模型物件欄位的最適化表單，以擷取貸款金額、使用期限和信用評分的使用者輸入。 新增觸發Web服務擷取計畫詳細資料的按鈕。 輸出會填入適當的欄位中。
 
 下列規則顯示如何設定叫用服務動作來完成範例案例。
 

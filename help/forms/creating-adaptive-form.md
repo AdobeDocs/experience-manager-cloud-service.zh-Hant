@@ -1,14 +1,14 @@
 ---
 title: 如何建立最適化Forms？
-description: 瞭解如何建立最適化表單，以簡化資訊收集和處理。 另外，瞭解如何根據表單資料模型建立最適化表單。
+description: 瞭解如何建立最適化表單，以簡化資訊收集和處理。 另外，瞭解如何根據表單資料模型(FDM)建立最適化表單。
 feature: Adaptive Forms, Foundation Components
 role: User, Developer
 level: Beginner
 exl-id: 38ca5eea-793b-420b-ae60-3a0bd83caf00
-source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
-source-wordcount: '1493'
-ht-degree: 81%
+source-wordcount: '1500'
+ht-degree: 70%
 
 ---
 
@@ -56,7 +56,7 @@ Adaptive Forms allow you to create forms that are engaging, responsive, dynamic,
 * **Using none or without a form model**
    Adaptive Forms created with this option do not use any form model. The data XML generated from such forms has flat structure with fields and corresponding values. -->
 
-## 先決條件
+## 必要條件 
 
 您必須符合以下條件才能建立最適化表單：
 
@@ -98,7 +98,7 @@ Adaptive Forms allow you to create forms that are engaging, responsive, dynamic,
 
 1. (選用) 在「**[!UICONTROL 資料]**」標籤中，選取一個資料模型：
 
-   * **表單資料模型**：[表單資料模型](data-integration.md)可讓您將來自分散資料來源的實體和服務整合到最適化表單。如果您建立的最適化表單是對多個資料來源擷取和寫入資料，請選擇「表單資料模型」。
+   * **表單資料模型**：[表單資料模型](data-integration.md)可讓您將來自分散資料來源的實體和服務整合到最適化表單。如果您要建立的最適化表單涉及從多個資料來源擷取及寫入資料，請選擇表單資料模型(FDM)。
 
    * **JSON 結構描述**：[JSON 結構描述](adaptive-form-json-schema-form-model.md)代表組織內後端系統產生或使用之資料的結構。您可以將結構描述與最適化表單建立關聯，並使用其元素將動態內容新增到最適化表單。編寫Adaptive Forms時，可在內容瀏覽器的「資料模型物件」索引標籤中使用結構描述的元素，所有欄位也會新增到已建立的Adaptive Form。
 
@@ -126,7 +126,7 @@ Adaptive Forms allow you to create forms that are engaging, responsive, dynamic,
 
 1. 選擇 **[!UICONTROL 建立]**。此時已建立最適化表單，並在最適化表單編輯器中開啟。編輯器會顯示範本中可用的內容，它也會顯示側邊欄，以根據需求自訂建立的表單。
 
-   視最適化表單的類型而定，出現在相關聯 <!--XFA form template, XML schema or -->JSON 結構描述或表單資料模型中的表單元素，會顯示在側邊欄「**[!UICONTROL 內容瀏覽器]**」的「**[!UICONTROL 資料模型物件]**」標籤中。您也可以拖放這些元素以建置自己的最適化表單。
+   根據最適化表單的型別，關聯中的表單元素 <!--XFA form template, XML schema or --> JSON結構描述或表單資料模型(FDM)會顯示在 **[!UICONTROL 資料模型物件]** 的標籤 **[!UICONTROL 內容瀏覽器]** 在側邊欄中。 您也可以拖放這些元素以建置自己的最適化表單。
 
 <!-- ## Create an Adaptive Form based on a Form Data Model {#fdm}
 
@@ -184,8 +184,8 @@ Do the following to use XML or JSON schema as form model for an Adaptive Form:
 1. 選取最適化表單，然後選取 **屬性** 圖示。
 1. 開啟「**[!UICONTROL 表單模型]**」標籤，並執行以下其中一項操作。
 
-   * 如果最適化表單沒有表單模型，您可以選擇另一個表單模型，並依此選取 <!-- a form template, -->XML 或 JSON 結構描述，或表單資料模型。
-   * 如果最適化表單是以表單模型為基礎，您可以選擇另一個 <!-- form template, -->XML 或 JSON 結構描述，或相同表單模型的表單資料模型。
+   * 如果最適化表單沒有表單模型，您可以選擇另一個表單模型，並相應地選擇 <!-- a form template, --> XML或JSON結構描述，或表單資料模型(FDM)。
+   * 如果最適化表單是以表單模型為基礎，您可以選擇其他模型 <!-- form template, --> XML或JSON結構描述，或相同表單模型的表單資料模型(FDM)。
 
 1. 選取 **[!UICONTROL 儲存]** 以儲存屬性。
 
@@ -195,8 +195,8 @@ Do the following to use XML or JSON schema as form model for an Adaptive Form:
 1. 按一下 ![設定圖示](/help/forms/assets/configure-icon.svg) 圖示以開啟最適化表單容器的「**[!UICONTROL 屬性]**」。
 1. 選取「**[!UICONTROL 資料模型]**」標籤，並執行以下其中一項操作：
 
-   * 如果最適化表單沒有表單模型，您可以選擇一個表單模型，並依此選取 <!-- a form template, -->XML 或 JSON 結構描述，或表單資料模型。
-   * 如果最適化表單是以表單模型為主，則無法變更表單模型。您可以選擇另一個 <!-- form template, -->XML 或 JSON 結構描述，或依適用情況選擇相同表單模型的表單資料模型。
+   * 如果最適化表單沒有表單模型，您可以選擇表單模型，並相應地選擇 <!-- a form template, --> XML或JSON結構描述，或表單資料模型(FDM)。
+   * 如果最適化表單是以表單模型為主，則無法變更表單模型。您可以選擇其他 <!-- form template, --> 適用時，為相同表單模型使用XML或JSON結構描述，或表單資料模型(FDM)。
 1. 選取 ![儲存](/help/forms/assets/check-button.png) 以儲存屬性。
 
 ![FDM-Schema-Support](/help/forms/assets/fdmsupport.png)

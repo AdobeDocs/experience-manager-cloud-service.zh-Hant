@@ -4,10 +4,10 @@ description: 瞭解如何建立變數、設定變數的值，以及將其用於 
 exl-id: d9139ea9-2f86-476c-8767-b36766790f2c
 feature: Adaptive Forms, Workflow
 role: Admin, User
-source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
-source-wordcount: '1928'
-ht-degree: 1%
+source-wordcount: '1930'
+ht-degree: 0%
 
 ---
 
@@ -58,7 +58,7 @@ ht-degree: 1%
 
    * 基本資料型別 — 指定變數的選擇性預設值。
    * JSON或XML — 指定選用的JSON或XML結構描述路徑。 將這個結構描述中可用的屬性對應並儲存到另一個變數時，系統會驗證結構描述路徑。
-   * 表單資料模型 — 指定表單資料模型路徑。
+   * 表單資料模型(FDM) — 指定表單資料模型路徑。
    * ArrayList — 指定集合的子型別。
 
 1. 指定變數的說明（選擇性），然後選取 ![完成圖示](assets/Smock_Checkmark_18_N.svg) 以儲存變更。 變數會顯示在左窗格中可用的清單中。
@@ -198,7 +198,7 @@ ht-degree: 1%
 | 原始（長、雙、布林、日期和字串） | workItem.getWorkflowData()。getMetaDataMap()。get(variableName， type) |
 | 文件 | Packages.com.adobe.aemfd.docmanager.Document doc = workItem.getWorkflowData()。getMetaDataMap()。get(&quot;docVar&quot;， Packages.com.adobe.aemfd.docmanager.Document.class)； |
 | XML | Packages.org.w3c.dom.Document xmlObject = workItem.getWorkflowData()。getMetaDataMap()。get(variableName， Packages.org.w3c.dom.Document.class)； |
-| 表單資料模型 | Packages.com.adobe.aem.dermis.api.FormDataModelInstance fdmObject = workItem.getWorkflowData()。getMetaDataMap()。get(variableName， Packages.com.adobe.aem.dermis.api.FormDataModelInstance.class)； |
+| 表單資料模型(FDM) | Packages.com.adobe.aem.dermis.api.FormDataModelInstance fdmObject = workItem.getWorkflowData()。getMetaDataMap()。get(variableName， Packages.com.adobe.aem.dermis.api.FormDataModelInstance.class)； |
 | JSON | Packages.com.google.gson.JsonObject jsonObject = workItem.getWorkflowData()。getMetaDataMap()。get(variableName， Packages.com.google.gson.JsonObject.class)； |
 
 

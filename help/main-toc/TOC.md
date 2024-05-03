@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的運作方式以及該軟體可以為您做哪些事。
 breadcrumb-title: 使用手冊
 user-guide-title: AEM as a Cloud Service
-source-git-commit: a5fc1f7e42edc8d41cac687a348dad7fc98742c1
+source-git-commit: 1b5dec707eb63a43a3e6240c785ed9ef00a3a3c4
 workflow-type: tm+mt
-source-wordcount: '4892'
+source-wordcount: '4901'
 ht-degree: 99%
 
 ---
@@ -619,7 +619,7 @@ ht-degree: 99%
          + [將 AEM Forms 連接到資料庫或資料來源](/help/forms/data-integration.md)
          + [設定資料來源](/help/forms/configure-data-sources.md)
          + [設定 [!DNL Microsoft Dynamics] OData](/help/forms/ms-dynamics-odata-configuration.md)
-         + [使用 OAuth 2.0 用戶端憑證流將最適化表單連接到 Salesforce 應用程式](/help/forms/oauth2-client-credentials-flow-for-server-to-server-integration.md)
+         + [使用 OAuth 2.0 用戶端憑證流將最適化表單連接到 Salesforce 應用程式](/help/forms/aem-forms-salesforce-integration.md)
          + [設定 [!DNL Azure] 儲存空間](/help/forms/configure-azure-storage.md)
          + [設定 [!DNL Microsoft Dynamics 365] 和 [!DNL Salesforce] 雲端服務](/help/forms/configure-msdynamics-salesforce.md)
          + [建立表單資料模型](/help/forms/create-form-data-models.md)
@@ -651,6 +651,7 @@ ht-degree: 99%
             + [為以核心元件為主的最適化表單新增地區設定](/help/forms/supporting-new-language-localization-core-components.md)
             + [建立和使用自訂功能](/help/forms/create-and-use-custom-functions.md)
             + [新增規則至以核心元件為基礎的最適化表單](/help/forms/rule-editor-core-components.md)
+            + [為最適化表單設計JSON結構描述（核心元件）](/help/forms/adaptive-form-core-components-json-schema-form-model.md)
             + [在最適化表單中新增版本設定、評論和附註](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md)
             + [比較最適化表單](/help/forms/compare-forms.md)
       + Foundation 元件 {#authoring-adaptive-forms-foundation-components}

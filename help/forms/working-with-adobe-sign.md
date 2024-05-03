@@ -6,9 +6,9 @@ feature: Adaptive Forms, Foundation Components
 role: User
 level: Intermediate
 exl-id: cde9523e-5409-4edd-af0f-2c2575cc22ea
-source-git-commit: e81da7414335e00411942adeb41978d39f172b52
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
-source-wordcount: '3242'
+source-wordcount: '3243'
 ht-degree: 2%
 
 ---
@@ -184,7 +184,7 @@ ht-degree: 2%
 
    >[!NOTE]
    >
-   > 如果使用表單資料模型建立最適化表單，則對話方塊中會顯示「合約ID」欄位。
+   > 如果使用表單資料模型(FDM)建立最適化表單，則對話方塊中會顯示「合約ID」欄位。
 
 1. [將收件者新增至最適化表單](working-with-adobe-sign.md#addsignerstoanadaptiveform) 並選取「完成」 ![儲存](assets/save_icon.svg) 圖示以儲存變更。
 

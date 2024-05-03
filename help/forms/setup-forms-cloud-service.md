@@ -4,10 +4,10 @@ description: 瞭解如何設定和 [!DNL AEM Forms] as a Cloud Service環境。
 role: Admin, Developer, User
 feature: Adaptive Forms
 exl-id: 42f53662-fbcf-4676-9859-bf187ee9e4af
-source-git-commit: 7fe779602f52081dc785074bdc0f374665b908e6
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
-source-wordcount: '609'
-ht-degree: 6%
+source-wordcount: '610'
+ht-degree: 7%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 6%
 
 * **使用者體驗(UX)設計工具**：使用者體驗(UX)設計工具定義 [!DNL AEM Forms] 資產。
 
-* **Forms從業人員**：Forms從業者會根據UX設計工具提供的樣式、版面和品牌建立最適化Forms、主題和範本。 從業人員也會建立最適化表單，並將其與表單資料模型和AEM工作流程整合。 Forms從業人員通常從事前端相關工作。
+* **Forms從業人員**：Forms從業者會根據UX設計工具提供的樣式、版面和品牌建立最適化Forms、主題和範本。 從業者也會建立最適化表單並將其與表單資料模型(FDM)和AEM工作流程整合。 Forms從業人員通常從事前端相關工作。
 
 * **Forms開發人員**：Forms開發人員開發自訂表單解決方案。 Forms開發人員通常會進行後端開發，例如開發自訂元件、AEM工作流程、預填服務等。
 
@@ -43,11 +43,11 @@ ht-degree: 6%
 
 ## 服務入門 {#onboarding}
 
-* [上線](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html) 至 [!DNL Adobe Experience Manager] as a Cloud Service。
+* [上線](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html?lang=zh-Hant) 至 [!DNL Adobe Experience Manager] as a Cloud Service。
 
 * （僅適用於沙箱）服務上線後， [建立](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/pipelines/production-pipelines.html?lang=en) 和 [執行](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-deployment.html) 生產和非生產管道。 它可以啟用並引進以下專案的最新功能： [!DNL AEM Forms] 對您的環境as a Cloud Service。
 
-您可以使用Formsas a Cloud Service建立最適化表單（數位註冊）或產生客戶通訊。 完成之後 [入門](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html) 至 [!DNL Adobe Experience Manager] as a Cloud Service，請執行以下動作以啟用Forms — 數位註冊或客戶通訊功能。 <!--You can also enable both the features-->：
+您可以使用Formsas a Cloud Service建立最適化表單（數位註冊）或產生客戶通訊。 完成之後 [入門](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html?lang=zh-Hant) 至 [!DNL Adobe Experience Manager] as a Cloud Service，請執行以下動作以啟用Forms — 數位註冊或客戶通訊功能。 <!--You can also enable both the features-->：
 
 1. 登入 Cloud Manager 並開啟您的 AEM Forms as a Cloud Service 執行個體。
 1. 開啟編輯計畫選項，前往解決方案和附加元件索引標籤：
@@ -90,7 +90,7 @@ ht-degree: 6%
 
 ## 下一步 {#next-steps}
 
-[設定本機開發環境](setup-local-development-environment.md). 您可以使用本機開發環境來建立最適化表單和相關資產（主題、範本、自訂提交動作、預填服務等）。 和 [將PDF forms轉換為最適化Forms](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html) 無需登入雲端開發環境。
+[設定本機開發環境](setup-local-development-environment.md). 您可以使用本機開發環境來建立最適化表單和相關資產（主題、範本、自訂提交動作、預填服務等）。 和 [將PDF forms轉換為最適化Forms](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=zh-Hant) 無需登入雲端開發環境。
 
 <!-- ### Business unit and end-users {#business-unit-and-end-users}
 

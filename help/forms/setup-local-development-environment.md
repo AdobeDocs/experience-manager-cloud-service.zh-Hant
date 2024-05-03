@@ -4,9 +4,9 @@ description: 設定Adobe Experience Manager Formsas a Cloud Service的本機開�
 role: Admin, Developer, User
 feature: Adaptive Forms
 exl-id: 12877a77-094f-492a-af58-cffafecf79ae
-source-git-commit: a86e68f9dd195512a689943b303225a48b5f8a23
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
-source-wordcount: '2723'
+source-wordcount: '2726'
 ht-degree: 2%
 
 ---
@@ -249,7 +249,7 @@ AEM Forms as aCloud Service提供以Docker為基礎的SDK環境，可更輕鬆�
 
 使用此專案在本機建立最適化Forms、部署設定更新、覆蓋、建立自訂最適化表單元件、測試和自訂程式碼 [!DNL Experience Manager Forms] SDK. 在本機測試後，您可以將專案部署至  [!DNL Experience Manager Forms] as a Cloud Service的生產和非生產環境。 部署專案時，也會部署下列AEM Forms資產：
 
-| 主題 | 範本 | 表單資料模型 |
+| 主題 | 範本 | 表單資料模型(FDM) |
 ---------|----------|---------
 | Canvas 3.0 | 基本 | Microsoft® Dynamics 365 |
 | 寧靜 | 空白 | Salesforce |
@@ -259,7 +259,7 @@ AEM Forms as aCloud Service提供以Docker為基礎的SDK環境，可更輕鬆�
 
 >[!NOTE]
 >
-> 設定AEM Archetype版本30或更新版本的專案，以取得並使用Microsoft®Dynamics 365和Salesforce表單資料模型搭配AEM Formsas a Cloud Service。
+> 設定AEM Archetype 30或更新版本專案，以取得並使用Microsoft®Dynamics 365和Salesforce表單資料模型(FDM)搭配AEM Formsas a Cloud Service。
 > 設定AEM Archetype 32版或更新版本的專案，以AEM Formsas a Cloud Service取得並使用Tranquil、Urbane和Ultraminary主題。
 
 若要設定專案：
@@ -399,7 +399,7 @@ For information about troubleshooting, stopping local AEM environment, run modes
 
 ### 建立現有內容的備份 {#create-backup-of-your-existing-content}
 
-備份您的Adaptive Forms、範本、表單資料模型、主題、設定和自訂程式碼。 您可以執行下列動作來建立備份：
+備份您的Adaptive Forms、範本、表單資料模型(FDM)、主題、設定和自訂程式碼。 您可以執行下列動作來建立備份：
 
 1. [下載](import-export-forms-templates.md#manage-forms-and-related-assets) 最適化Forms、主題和PDF forms。
 1. 匯出自適應表單範本。

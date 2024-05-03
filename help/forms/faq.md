@@ -5,10 +5,11 @@ contentOwner: khsingh
 role: User
 feature: Adaptive Forms, FAQ
 index: false
-source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
-workflow-type: ht
-source-wordcount: '986'
-ht-degree: 100%
+exl-id: 0b14b680-7da5-4e0b-bd6a-c379d148f9d7
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+workflow-type: tm+mt
+source-wordcount: '992'
+ht-degree: 89%
 
 ---
 
@@ -74,15 +75,15 @@ Custom parameters are planned for an upcoming release. -->
 * **我可以將圖表新增到最適化表單嗎？**
 是，您可以將圖表新增到最適化表單中。最適化表單提供一個圖表元件。您可以使用該元件將圖表新增到最適化表單。
 
-* **我可以將表單資料模型連接到關聯式資料庫模型嗎？**
-您可以將表單資料模型連接到 [!DNL RESTful web services]、[!DNL SOAP-based web services]、[!DNL OData services] 和 Experience Manager 使用者設定檔作為資料來源。不支援將表單資料模型與關聯式資料庫連接。
+* **我可以將表單資料模型(FDM)連線到關聯式資料庫模型嗎？**
+您可以將表單資料模型(FDM)連線至 [!DNL RESTful web services]， [!DNL SOAP-based web services]， [!DNL OData services]，並將使用者設定檔Experience Manager為資料來源。 不支援將表單資料模型(FDM)與關聯式資料庫連線。
 
-* **我可以使用自訂憑證搭配表單資料模型進行驗證嗎？**
-表單資料模型不提供使用自訂憑證進行驗證的方法。因此，不支援 x509 和雙向 SSL 等自訂憑證。
+* **我可以搭配Form Data Model (FDM)使用自訂憑證來進行驗證嗎？**
+表單資料模型(FDM)不提供使用自訂憑證進行驗證的方法。 因此，不支援 x509 和雙向 SSL 等自訂憑證。
 
 * **我可以使用表單入口網站提交動作最適化表單嗎？**
 
-  您可以修改現有的最適化表單以使用[提交至 REST 端點](configuring-submit-actions.md#submit-to-rest-endpoint)、[傳送電子郵件](configuring-submit-actions.md#send-email)、[使用表單資料模型提交](configuring-submit-actions.md#submit-using-form-data-model)和[叫用 AEM 工作流程](configuring-submit-actions.md#invoke-an-aem-workflow)提交動作。尚未提供表單入口網站與表單入口網站提交動作。各項功能的可用情況請留意每月發行說明。
+  您可以修改現有的最適化Forms以使用 [提交至REST端點](configuring-submit-actions.md#submit-to-rest-endpoint)， [傳送電子郵件](configuring-submit-actions.md#send-email)， [使用表單資料模型(FDM)提交](configuring-submit-actions.md#submit-using-form-data-model)、和 [叫用AEM工作流程](configuring-submit-actions.md#invoke-an-aem-workflow) 提交動作。 尚未提供表單入口網站與表單入口網站提交動作。各項功能的可用情況請留意每月發行說明。
 
 * **我可以將 [!DNL AEM Forms] 應用程式與 [!DNL AEM Forms] as a Cloud Service 一起使用嗎？**
 
@@ -122,5 +123,3 @@ Custom parameters are planned for an upcoming release. -->
     A sample Service Credential JSON file fields mapped to Adobe Experience Manager connector for Microsoft Power Automate.
 
     -->
-
-

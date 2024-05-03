@@ -4,9 +4,9 @@ description: 從調適型表單或AEM工作流程擷取資料並儲存至RESTful
 feature: Adaptive Forms, Form Data Model
 role: Admin, User
 exl-id: 9d146275-de0a-4861-b060-d205ed6305f3
-source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
+source-git-commit: 7b31a2ea016567979288c7a8e55ed5bf8dfc181d
 workflow-type: tm+mt
-source-wordcount: '537'
+source-wordcount: '550'
 ht-degree: 3%
 
 ---
@@ -32,32 +32,32 @@ ht-degree: 3%
 
 ![aem-forms-data-integration](assets/aem-forms-data-integeration.png)
 
-[!DNL AEM Forms] 資料整合可讓您設定並連線不同的資料來源，使用 [!DNL AEM Forms]. 它提供直覺式使用者介面，可跨連線的資料來源建立商業實體和服務的統一資料呈現結構描述。 統一表示法稱為表單資料模型，是JSON結構描述的延伸。 表單資料模型中的圖元稱為資料模型物件。 表單資料模型可讓您：
+[!DNL AEM Forms] 資料整合可讓您設定並連線不同的資料來源，使用 [!DNL AEM Forms]. 它提供直覺式使用者介面，可跨連線的資料來源建立商業實體和服務的統一資料呈現結構描述。 此統一表示法稱為表單資料模型(FDM)，是JSON結構描述的延伸。 表單資料模型(FDM)中的實體稱為資料模型物件。 表單資料模型(FDM)可讓您：
 
 * 從連線的資料來源存取資料模型物件、屬性和服務。
 * 建立自訂資料模型物件和屬性
 * 在資料來源內和跨資料來源建立資料模型物件之間的關聯。
 * 啟動資料模型物件服務，以查詢或寫入資料來源中的資料，以及從資料來源寫入資料。
 
-建立表單資料模型後，您就可以用它來：
+建立表單資料模型(FDM)後，您就可以用它來：
 
-* 根據表單資料模型建立最適化Forms
+* 根據表單資料模型(FDM)建立最適化Forms
 * 從已設定的資料來源預先填入最適化Forms
 * 使用最適化表單規則叫用資料來源服務/作業
 * 將提交的最適化表單資料寫入資料來源
 
 ## 開始使用資料整合 {#get-started-with-data-integration}
 
-實施資料整合以將最適化表單傳送到資料庫的第一個步驟是，識別並設定資料來源，該資料來源儲存您要用於最適化Forms中的資訊。 接著，您建立表單資料模型，此模型會使用一或多個資料來源的資料模型物件、屬性和服務。 您可以根據最適化表單欄位繫結至個別資料來源屬性的表單資料模型建立最適化Forms。
+實施資料整合以將最適化表單傳送到資料庫的第一個步驟是，識別並設定資料來源，該資料來源儲存您要用於最適化Forms中的資訊。 接下來，您會建立表單資料模型(FDM)，此模型會使用一或多個資料來源的資料模型物件、屬性及服務。 您可以根據表單資料模型(FDM)建立最適化Forms，其中最適化表單欄位會繫結至各自的資料來源屬性。
 
-[!DNL AEM Forms] 也可讓您建立與資料來源無關的表單資料模型，並在稍後將表單資料模型中的資料模型物件和屬性與資料來源建立關聯或繫結。 當您處理表單資料模型時，它可消除對資料來源的任何相依性。
+[!DNL AEM Forms] 也可讓您建立與資料來源無關的表單資料模型(FDM)，並在稍後將表單資料模型(FDM)中的資料模型物件和屬性與資料來源建立關聯或繫結。 它可消除您在處理表單資料模型(FDM)時對資料來源的任何依賴性。
 
 檢閱下列內容以開始、瞭解並實作資料整合：
 
 * [設定資料來源](configure-data-sources.md)
-* [建立表單資料模型](create-form-data-models.md)
-* [使用表單資料模型](work-with-form-data-model.md)
-* [使用表單資料模型](using-form-data-model.md)
+* [建立表單資料模型(FDM)](create-form-data-models.md)
+* [使用表單資料模型(FDM)](work-with-form-data-model.md)
+* [使用表單資料模型(FDM)](using-form-data-model.md)
 
 >[!NOTE]
 >

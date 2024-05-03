@@ -3,10 +3,10 @@ title: 如何設定最適化表單的提交動作？
 description: 最適化表單提供多個提交動作。提交動作會定義提交之後處理最適化表單的方式。您可以使用內建的提交動作或建立自己的動作。
 feature: Adaptive Forms, Foundation Components
 exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
-source-git-commit: 8923bfbb0e46961485ff360c0135ebdde6d8cab3
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
-source-wordcount: '3901'
-ht-degree: 76%
+source-wordcount: '3914'
+ht-degree: 72%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 76%
 
 * [提交到 REST 端點](#submit-to-rest-endpoint)
 * [寄送電子郵件](#send-email)
-* [使用表單資料模型提交](#submit-using-form-data-model)
+* [使用表單資料模式(FDM)l提交](#submit-using-form-data-model)
 * [叫用 AEM 工作流程](#invoke-an-aem-workflow)
 * [提交到 SharePoint](#submit-to-sharedrive)
 * [提交到 OneDrive](#submit-to-onedrive)
@@ -137,11 +137,11 @@ The **Submit to Forms workflow** submit option sends a data xml and file attachm
 
 For information about how to configure the Submit to forms workflow Submit Action, see [Submitting and processing your form data using forms workflows](submit-form-data-livecycle-process.md). -->
 
-## 使用表單資料模型提交 {#submit-using-form-data-model}
+## 使用表單資料模型(FDM)提交 {#submit-using-form-data-model}
 
-「**[!UICONTROL 使用表單資料模型提交]**」提交動作，會將表單資料模型中指定資料模型物件的已提交最適化表單資料寫入其資料來源。設定提交動作時，您可以選擇要將其提交資料寫回其資料來源的資料模型物件。
+此 **[!UICONTROL 使用表單資料模型提交]** 提交動作會將表單資料模型(FDM)中指定資料模型物件的已提交調適型表單資料寫入其資料來源。 設定提交動作時，您可以選擇要將其提交資料寫回其資料來源的資料模型物件。
 
-此外，您可以使用表單資料模型和記錄文件 (DoR) 將表單附件提交到資料來源。如需有關表單資料模型的資訊，請參閱 [[!DNL AEM Forms] 資料整合](data-integration.md)。
+此外，您可以使用表單資料模型(FDM)和記錄檔案(DoR)將表單附件提交至資料來源。 如需有關表單資料模型(FDM)的資訊，請參閱 [[!DNL AEM Forms] 資料整合](data-integration.md).
 
 <!--
 ## Forms Portal Submit Action {#forms-portal-submit-action}
@@ -243,7 +243,7 @@ For more information about the Forms Portal and Submit Action, see [Drafts and s
 若要使用 [!UICONTROL 提交至SharePoint清單] 以最適化表單提交動作：
 
 1. [建立SharePoint清單設定](#create-sharepoint-list-configuration)：它會將AEM Forms連線至您的Microsoft® Sharepoint清單儲存空間。
-1. [在最適化表單中使用表單資料模型提交](#use-submit-using-fdm)：此動作會將您的最適化表單連線至設定的Microsoft® SharePoint。
+1. [在最適化表單中使用表單資料模型提交(FDM)](#use-submit-using-fdm)：此動作會將您的最適化表單連線至設定的Microsoft® SharePoint。
 
 #### 建立SharePoint清單設定 {#create-sharepoint-list-configuration}
 
@@ -267,14 +267,14 @@ For more information about the Forms Portal and Submit Action, see [Drafts and s
 1. 選取 **[!UICONTROL 建立]** 以建立Microsoft® SharePointList的雲端設定。
 
 
-#### 在最適化表單中使用表單資料模型提交 {#use-submit-using-fdm}
+#### 在最適化表單中使用表單資料模型提交(FDM) {#use-submit-using-fdm}
 
 您可以在調適型表單中使用已建立的SharePoint清單設定，以在SharePoint清單中儲存資料或產生的記錄檔案。 執行以下步驟，在最適化表單中使用SharePoint清單儲存體設定：
 
-1. [使用Microsoft® SharePoint清單設定建立表單資料模型](/help/forms/create-form-data-models.md)
-1. [設定表單資料模型以擷取及傳送資料](/help/forms/work-with-form-data-model.md#configure-services)
+1. [使用Microsoft® SharePoint清單設定建立表單資料模型(FDM)](/help/forms/create-form-data-models.md)
+1. [設定表單資料模型(FDM)以擷取及傳送資料](/help/forms/work-with-form-data-model.md#configure-services)
 1. [建立最適化表單](/help/forms/creating-adaptive-form.md)
-1. [使用表單資料模型設定提交動作](/help/forms/configuring-submit-actions.md#submit-using-form-data-model)
+1. [使用表單資料模型(FDM)設定提交動作](/help/forms/configuring-submit-actions.md#submit-using-form-data-model)
 
 提交表單時，資料會儲存在指定的Microsoft® Sharepoint清單儲存空間中。
 
@@ -463,7 +463,7 @@ For more information about the Forms Portal and Submit Action, see [Drafts and s
 
 為了 AEM 安全性和強化準則，請設定自訂錯誤頁面，例如 400.jsp、404.jsp 和 500.jsp。提交表單時，如果出現 400、404 或 500 錯誤，就會呼叫這些處理常式。在發佈節點上觸發這些錯誤代碼時，也會呼叫處理常式。您也可以為其他 HTTP 錯誤代碼建立 JSP 頁面。
 
-您使用符合結構描述 (其資料不含 `<afData>`、`<afBoundData>` 和 `</afUnboundData>` 標記) 的 XML 或 JSON 資料，預先填入表單資料模型或以結構描述為主的最適化表單的綱要時，最適化表單的未繫結欄位資料會遺失。該結構描述可以是 XML 結構描述、JSON 結構描述或表單資料模型。未繫結欄位是最適化表單欄位，但沒有 `bindref` 屬性。
+當您將表單資料模型(FDM)或結構描述型調適型表單以XML或JSON資料投訴預先填寫到資料不包含的結構描述時 `<afData>`， `<afBoundData>`、和 `</afUnboundData>` 標籤中，則最適化表單之無限制欄位的資料會遺失。 結構描述可以是XML結構描述、JSON結構描述或表單資料模型(FDM)。 未繫結欄位是最適化表單欄位，但沒有 `bindref` 屬性。
 
 <!-- For more information, see [Customizing Pages shown by the Error Handler](/help/sites-developing/customizing-errorhandler-pages.md). -->
 

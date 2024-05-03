@@ -4,9 +4,9 @@ description: 瞭解如何將表單與Azure儲存伺服器整合。
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
 exl-id: 606383b3-293c-43d2-9ba0-5843c4e0caa8
-source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
+source-git-commit: 7b31a2ea016567979288c7a8e55ed5bf8dfc181d
 workflow-type: tm+mt
-source-wordcount: '583'
+source-wordcount: '591'
 ht-degree: 1%
 
 ---
@@ -16,10 +16,10 @@ ht-degree: 1%
 
 ![資料整合](assets/data-integeration.png)
 
-[[!DNL Experience Manager Forms] 資料整合](data-integration.md) 提供 [!DNL Azure] 整合表單與的儲存體設定 [!DNL Azure] 儲存服務。 表單資料模型可用來建立最適化Forms，以與互動 [!DNL Azure] 伺服器以啟用業務工作流程。 例如：
+[[!DNL Experience Manager Forms] 資料整合](data-integration.md) 提供 [!DNL Azure] 整合表單與的儲存體設定 [!DNL Azure] 儲存服務。 表單資料模型(FDM)可用來建立與互動的最適化Forms [!DNL Azure] 伺服器以啟用業務工作流程。 例如：
 
 * 將資料寫入 [!DNL Azure] 於最適化表單提交時。
-* 將資料寫入 [!DNL Azure] 透過「表單資料模型」中定義的自訂實體，反之亦然。
+* 將資料寫入 [!DNL Azure] 透過表單資料模型(FDM)中定義的自訂實體，反之亦然。
 * 查詢 [!DNL Azure] 資料及預先填入Adaptive Forms的伺服器。
 * 從讀取資料 [!DNL Azure] 伺服器。
 
@@ -35,21 +35,21 @@ ht-degree: 1%
 
 ## 建立表單資料模型 {#create-azure-form-data-model}
 
-建立 [!DNL Azure] 儲存設定，您可以 [建立表單資料模型](create-form-data-models.md). 指定包含 [!DNL Azure] 中的設定 **[!UICONTROL 資料來源組態]** 欄位建立表單資料模型時。 然後，您可以從指定資料夾名稱中存在的設定清單中選取設定。
+建立 [!DNL Azure] 儲存設定，您可以 [建立表單資料模型](create-form-data-models.md). 指定包含 [!DNL Azure] 中的設定 **[!UICONTROL 資料來源組態]** 建立表單資料模型(FDM)時的欄位。 然後，您可以從指定資料夾名稱中存在的設定清單中選取設定。
 
 ### 新增 [!DNL Azure] 表單資料模型的服務 {#add-azure-services}
 
-建立表單資料模型和資料模型物件後，您可以新增 [!DNL Azure] 表單資料模型的服務。
+建立表單資料模型(FDM)和資料模型物件後，您可以新增 [!DNL Azure] 表單資料模型(FDM)的服務。
 
 新增 [!DNL Azure] 服務：
 
-1. 在「編輯」模式中，從 **[!UICONTROL 服務]** 區段，然後選取 **[!UICONTROL 新增選取專案]**. 選取的服務會顯示在 **[!UICONTROL 服務]** 表單資料模型的索引標籤。
+1. 在「編輯」模式中，從 **[!UICONTROL 服務]** 區段，然後選取 **[!UICONTROL 新增選取專案]**. 選取的服務會顯示在 **[!UICONTROL 服務]** 表單資料模型(FDM)的索引標籤。
 
    ![新增選取的服務](assets/select-services.png)
 
 1. 在 **[!UICONTROL 服務]** 索引標籤中，選取服務並 **[!UICONTROL 編輯屬性]**. 根據服務，定義服務的輸入或輸出模型物件。
 
-1. 選取 **[!UICONTROL 儲存]** 以儲存表單資料模型。
+1. 選取 **[!UICONTROL 儲存]** 以儲存表單資料模型(FDM)。
 
    下表說明可用的 [!DNL Azure] 服務：
 
@@ -96,7 +96,7 @@ ht-degree: 1%
 
 1. 在 **[!UICONTROL 模型]** 索引標籤中，選取資料模型物件屬性，然後選取 **[!UICONTROL 編輯屬性]**.
 1. 切換 **[!UICONTROL 搜尋索引鍵]** 切換選項至「開啟」狀態。 此選項僅適用於主要資料型別。
-1. 選取 **[!UICONTROL 完成]** 然後選取 **[!UICONTROL 儲存]** 以儲存表單資料模型。
+1. 選取 **[!UICONTROL 完成]** 然後選取 **[!UICONTROL 儲存]** 以儲存表單資料模型(FDM)。
 
 將資料模型物件屬性定義為搜尋索引鍵後，雜湊值會儲存在Azure索引標籤中，而Base64編碼值會儲存在Azure中繼資料中。
 

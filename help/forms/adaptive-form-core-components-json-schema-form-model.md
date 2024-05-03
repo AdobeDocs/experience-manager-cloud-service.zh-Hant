@@ -1,47 +1,39 @@
 ---
-title: 如何為最適化表單設計JSON結構描述？
-description: 瞭解如何為最適化表單建立JSON結構描述，並根據該結構描述建立最適化表單，以產生結構描述投訴資料。
-feature: Adaptive Forms, Foundation Components
+title: 如何為最適化表單核心元件設計JSON結構描述？
+description: 瞭解如何為最適化表單核心元件建立JSON結構描述，並根據此結構描述建立最適化表單（核心元件），以產生結構描述投訴資料。
+feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
-exl-id: 8eeb9c5e-6866-4bfe-b922-1f028728ef0d
 source-git-commit: 10389af2bce06f95d4d841371b7111340d40edaa
 workflow-type: tm+mt
-source-wordcount: '1343'
-ht-degree: 9%
+source-wordcount: '1301'
+ht-degree: 4%
 
 ---
 
-# 為最適化表單設計 JSON 綱要 {#creating-adaptive-forms-using-json-schema}
+# 為最適化表單設計JSON結構描述（核心元件）{#creating-adaptive-forms-using-json-schema}
 
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
-| 核心元件 | [按一下這裡](/help/forms/adaptive-form-core-components-json-schema-form-model.md) |
-| Foundation | 本文章 |
-
-<span class="preview">Adobe 建議使用新式且可擴充的資料擷取[核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)，用來[建立新的最適化表單](/help/forms/creating-adaptive-form-core-components.md)或[將最適化表單新增到 AEM Sites 頁面](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)。這些元件代表最適化表單建立方面的重大進步，可確保令人印象深刻的使用者體驗。本文會介紹使用基礎元件編寫最適化表單的舊方法。</span>
-
-| 版本 | 文章連結 |
-| -------- | ---------------------------- |
-| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/adaptive-form-json-schema-form-model.html) |
-| AEM as a Cloud Service  | 本文章 |
+| Foundation | [按一下這裡](/help/forms/adaptive-form-json-schema-form-model.md) |
+| 核心元件 | 本文章 |
 
 
 ## 先決條件 {#prerequisites}
 
-使用JSON結構描述作為自適應表單的表單模型編寫時，需要基本瞭解JSON結構描述。 建議您先閱讀下列內容，再閱讀本文。
+使用JSON結構描述作為表單模型，根據核心元件製作調適型表單需要基本瞭解JSON結構描述。 建議您先閱讀下列內容，再閱讀本文。
 
-* [建立最適化表單](creating-adaptive-form.md)
+* [根據核心元件建立最適化表單](/help/forms/creating-adaptive-form-core-components.md)
 * [JSON結構描述](https://json-schema.org/)
 
 ## 使用JSON結構描述作為表單模型  {#using-a-json-schema-as-form-model}
 
-Adobe Experience Manager表單支援使用現有JSON結構描述作為表單模型來建立調適型表單。 此JSON結構描述代表組織中後端系統產生或使用資料的結構。 您使用的JSON結構描述應符合 [v4規格](https://json-schema.org/draft-04/schema).
+Adobe Experience Manager Forms支援以現有JSON結構描述作為表單模型，根據核心元件建立最適化表單。 此JSON結構描述代表組織中後端系統產生或使用資料的結構。 您使用的JSON結構描述應符合 [v4規格](https://json-schema.org/draft-04/schema).
 
 使用JSON結構描述的主要功能包括：
 
-* JSON的結構在最適化表單的製作模式中，會以樹狀結構顯示在「內容尋找器」標籤中。 您可以從JSON階層拖曳元素並新增至最適化表單。
+* JSON的結構在最適化表單的製作模式中，會以樹狀結構顯示在「內容尋找器」標籤中。 您可以根據核心元件，將元素從JSON階層拖曳並新增至調適型表單。
 * 您可以使用與關聯結構描述相容的JSON預先填入表單。
 * 在提交時，使用者輸入的資料會以JSON格式提交，且符合相關聯的結構描述。
 
@@ -59,12 +51,6 @@ JSON元素與最適化表單元件的對應如下：
                 "Date of Birth"
               ],
               "description": "Date of birth in DD MMMM, YYYY",
-              "aem:afProperties": {
-                "displayPictureClause": "date{DD MMMM, YYYY}",
-                "displayPatternType": "date{DD MMMM, YYYY}",
-                "validationPatternType": "date{DD MMMM, YYYY}",
-                "validatePictureClause": "date{DD MMMM, YYYY}",
-                "validatePictureClauseMessage": "Date must be in DD MMMM, YYYY format."
               }
 ```
 
@@ -246,11 +232,7 @@ JSON元素與最適化表單元件的對應如下：
      "type": "boolean"
     },
     "phone": {
-     "type": "number",
-     "aem:afProperties": {
-      "sling:resourceType": "/libs/fd/af/components/guidetelephone",
-      "guideNodeClass": "guideTelephone"
-     }
+     "type": "number"
     },
     "address": {
      "type": "string"
@@ -346,9 +328,10 @@ JSON元素與最適化表單元件的對應如下：
 
 上述範例會定義客戶記錄，其中每個客戶都有送貨和帳單地址。 兩個地址的結構相同（地址有街道地址、城市和州/省），因此最好不要重複這些地址。 它也會讓您日後在變更欄位時輕鬆新增和刪除欄位。
 
-## 在JSON結構描述定義中預先設定欄位 {#pre-configuring-fields-in-json-schema-definition}
+<!--
+## Pre-Configuring fields in JSON Schema Definition {#pre-configuring-fields-in-json-schema-definition}
 
-您可以使用 **aem：afProperties** 屬性來預先設定JSON結構描述欄位，以對應至自訂最適化表單元件。 範例如下：
+You can use the **aem:afProperties** property to preconfigure JSON Schema field to map to a custom Adaptive Form component. An example is listed below:
 
 ```json
 {
@@ -356,16 +339,13 @@ JSON元素與最適化表單元件的對應如下：
         "sizeInMB": {
             "type": "integer",
             "minimum": 16,
-            "maximum": 512,
-            "aem:afProperties" : {
-                 "sling:resourceType" : "/apps/fd/af/components/guideTextBox",
-                 "guideNodeClass" : "guideTextBox"
-             }
+            "maximum": 512
         }
     },
     "required": [ "sizeInMB" ],
     "additionalProperties": false
 }
+
 ```
 
 <!--- ## Configure scripts or expressions for form objects  {#configure-scripts-or-expressions-for-form-objects}
@@ -641,7 +621,7 @@ Here is the sample JSON code for previously mentioned examples.
 
 ## 限制最適化表單元件的可接受值 {#limit-acceptable-values-for-an-adaptive-form-component}
 
-您可以將下列限制新增至JSON結構元素，以限制最適化表單元件可接受的值：
+您可以將下列限制新增至JSON結構元素，以限制最適化表單核心元件可接受的值：
 
 <table>
  <tbody>
@@ -776,6 +756,10 @@ Here is the sample JSON code for previously mentioned examples.
 **JSON結構描述檔案的副檔名應該為何？**
 
 JSON結構描述檔案的副檔名必須是.schema.json。 例如， &lt;filename>.schema.json。
+
+**是 `aem:afProperties` 在基於核心元件的最適化Forms中，要當作JSON結構的一部分提供支援嗎？**
+
+否， `aem:afProperties` 不支援核心元件。 此屬性僅支援用於基礎元件。
 
 ## 另請參閱 {#see-also}
 

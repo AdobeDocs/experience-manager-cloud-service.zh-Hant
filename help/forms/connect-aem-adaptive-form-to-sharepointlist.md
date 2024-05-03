@@ -1,14 +1,14 @@
 ---
 title: 如何將AEM最適化表單連結至Microsoft&reg； SharePoint清單？
-description: 將最適化表單連線至Microsoft&reg； SharePoint清單。 瞭解如何設定Microsoft&reg； SharePoint清單，並使用設定建立表單資料模型。 此外，您也會瞭解如何將FDM與最適化表單整合。
+description: 將最適化表單連線至Microsoft&reg； SharePoint清單。 瞭解如何設定Microsoft&reg； SharePoint清單，並使用設定建立表單資料模型(FDM)。 此外，您也會瞭解如何將FDM與最適化表單整合。
 role: User, Developer
 keywords: 將AEM最適化表單連線至Microsoft SharePoint清單、將最適化表單連線至Microsoft SharePoint清單、將AEM最適化表單整合至Microsoft SharePoint清單、將最適化表單整合至Microsoft SharePoint清單、將最適化表單的資料提交至SharePoint清單、將AEM工作流程提交至SharePoint清單。
 hide: true
 hidefromToC: true
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
-source-wordcount: '539'
-ht-degree: 5%
+source-wordcount: '525'
+ht-degree: 4%
 
 ---
 
@@ -31,8 +31,8 @@ ht-degree: 5%
 將最適化表單連線至Microsoft® SharePoint清單之前，請執行以下步驟：
 
 1. [設定Microsoft](/help/forms/configure-data-sources.md#configure-microsoft-sharepoint-list)
-1. [使用Microsoft建立表單資料模型](/help/forms/create-form-data-models.md)
-1. [設定表單資料模型以擷取及傳送資料](/help/forms/work-with-form-data-model.md#configure-services)
+1. [使用Microsoft建立表單資料模型(FDM)](/help/forms/create-form-data-models.md)
+1. [設定表單資料模型(FDM)以擷取及傳送資料](/help/forms/work-with-form-data-model.md#configure-services)
 1. [建立最適化表單](/help/forms/creating-adaptive-form-core-components.md)
 
 現在，您可以：
@@ -42,18 +42,18 @@ ht-degree: 5%
 
 ## 將最適化表單連線至Microsoft® SharePoint清單 {#connect-af-sharepoint-list}
 
-若要將Microsoft® SharePoint清單整合至最適化表單 [設定最適化表單以使用表單資料模型](/help/forms/creating-adaptive-form-core-components.md#configure-a-schema-or-form-data-model-for-an-adaptive-formconfigure-schema-or-data-model-for-form)
+若要將Microsoft® SharePoint清單整合至最適化表單 [設定最適化表單以使用表單資料模型(FDM)](/help/forms/creating-adaptive-form-core-components.md#configure-a-schema-or-form-data-model-for-an-adaptive-formconfigure-schema-or-data-model-for-form)
 
-設定最適化表單以使用表單資料模型後，您可以：
+設定最適化表單以使用表單資料模型(FDM)後，您可以：
 
-* [使用表單資料模型設定提交動作](/help/forms/configuring-submit-actions.md#submit-using-form-data-model)
-* [設定規則編輯器以叫用表單資料模型](/help/forms/rule-editor.md#invoke-form-data-model-service-invoke)
+* [使用表單資料模型(FDM)設定提交動作](/help/forms/configuring-submit-actions.md#submit-using-form-data-model)
+* [設定規則編輯器以叫用表單資料模型(FDM)](/help/forms/rule-editor.md#invoke-form-data-model-service-invoke)
 
 ## 將Microsoft® SharePoint清單連線至AEM工作流程 {#connect-sharepoint-list-workflow}
 
 若要將Microsoft® SharePoint清單整合至AEM工作流程：
 
-1. [建立工作流程以叫用表單資料模型](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html)
+1. [建立工作流程以叫用表單資料模型(FDM)](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html)
 
    <!--
     To create a workflow with the editor:
@@ -84,7 +84,7 @@ ht-degree: 5%
 
 * [建立以核心元件為基礎的最適化表單](/help/forms/creating-adaptive-form-core-components.md)
 * [設定資料來源](/help/forms/configuring-submit-actions.md)
-* [建立表單資料模型](/help/forms/create-form-data-models.md)
+* [建立表單資料模型(FDM)](/help/forms/create-form-data-models.md)
 * [使用以Forms為中心的AEM Workflows — 步驟參考來自動化業務流程](/help/forms/aem-forms-workflow-step-reference.md)
 * [建立最適化Forms的自訂提交動作](/help/forms/custom-submit-action-form.md)
 * [建立最適化表單或新增至AEM Sites頁面](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)

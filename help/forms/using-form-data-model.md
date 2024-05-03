@@ -1,18 +1,18 @@
 ---
-title: 如何為最適化表單建立表單資料模型？
+title: 如何為最適化表單建立表單資料模型(FDM)？
 description: 瞭解如何根據表單資料模型(FDM)建立最適化Forms和片段。 產生並編輯FDM中資料模型物件的範例資料。
 feature: Adaptive Forms, Form Data Model
 role: Admin, User
 level: Beginner, Intermediate
 exl-id: 827ce457-6585-46fb-8e28-1d970a40d949
-source-git-commit: 39d788854c086b7f4c45d77bfea42fa687e08769
+source-git-commit: 7b31a2ea016567979288c7a8e55ed5bf8dfc181d
 workflow-type: tm+mt
-source-wordcount: '1290'
-ht-degree: 6%
+source-wordcount: '1321'
+ht-degree: 3%
 
 ---
 
-# 使用表單資料模型 {#use-form-data-model}
+# 使用表單資料模型(FDM) {#use-form-data-model}
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
@@ -22,14 +22,14 @@ ht-degree: 6%
 
 ![資料整合](do-not-localize/data-integeration.png)
 
-[!DNL Experience Manager Forms] 資料整合可讓您使用不同的後端資料來源，建立可作為各種最適化Forms中的結構描述的表單資料模型 <!--and interactive communications--> 工作流程。 它需要設定資料來源，並根據資料來源中可用的資料模型物件和服務來建立表單資料模型。 如需詳細資訊，請參閱下列內容：
+[!DNL Experience Manager Forms] 資料整合可讓您使用不同的後端資料來源，建立可作為各種最適化Forms中的結構描述的表單資料模型(FDM) <!--and interactive communications--> 工作流程。 它需要設定資料來源，並根據資料來源中可用的資料模型物件和服務來建立表單資料模型(FDM)。 如需詳細資訊，請參閱下列內容：
 
 * [[!DNL Experience Manager Forms] 資料整合](data-integration.md)
 * [設定資料來源](configure-data-sources.md)
-* [建立表單資料模型](create-form-data-models.md)
-* [使用表單資料模型](work-with-form-data-model.md)
+* [建立表單資料模型(FDM)](create-form-data-models.md)
+* [使用表單資料模型(FDM)](work-with-form-data-model.md)
 
-表單資料模型是JSON結構描述的擴充功能，可用來執行以下操作：
+表單資料模型(FDM)是JSON架構的擴充功能，可用來執行以下操作：
 
 * [建立Adaptive Forms和片段](#create-af)
   <!--* [Create interactive communications and building blocks like text, list, and condition fragments](#create-ic)-->
@@ -40,23 +40,23 @@ ht-degree: 6%
 
 ## 建立Adaptive Forms和片段 {#create-af}
 
-您可以建立 [最適化Forms](creating-adaptive-form.md) 和自適應表單片段 <!-- [Adaptive Form Fragments](adaptive-form-fragments.md) --> 根據表單資料模型。 執行下列動作，以便在建立最適化表單或最適化表單片段時使用表單資料模型：
+您可以建立 [最適化Forms](creating-adaptive-form.md) 和自適應表單片段 <!-- [Adaptive Form Fragments](adaptive-form-fragments.md) --> 根據表單資料模型(FDM)。 執行下列動作，以便在建立最適化表單或最適化表單片段時使用表單資料模型(FDM)：
 
 1. 在新增屬性畫面的表單模型索引標籤中，選取 **[!UICONTROL 表單資料模型]** 在 **[!UICONTROL 選取自]** 下拉式清單。
 
    ![create-af-1-1](assets/create-af-1-1.png)
 
-1. 選取以展開 **[!UICONTROL 選取表單資料模型]**. 列出所有可用的表單資料模型。
+2. 選取以展開 **[!UICONTROL 選取表單資料模型]**. 列出所有可用的表單資料模型(FDM)。
 
    從資料模型中選取。
 
    ![create-af-2-1](assets/create-af-2-1.png)
 
-1. (**僅最適化表單片段**)您可以根據表單資料模型中只有一個資料模型物件來建立最適化表單片段。 展開 **[!UICONTROL 表單資料模型定義]** 下拉式清單。 它會列出指定表單資料模型中的所有資料模型物件。 從清單中選取資料模型物件。
+3. (**僅最適化表單片段**)您只能根據表單資料模型(FDM)中的一個資料模型物件來建立最適化表單片段。 展開 **[!UICONTROL 表單資料模型定義]** 下拉式清單。 它會列出指定表單資料模型(FDM)中的所有資料模型物件。 從清單中選取資料模型物件。
 
    ![create-af-3](assets/create-af-3.png)
 
-   根據表單資料模型的最適化表單或最適化表單片段建立後，表單資料模型物件會出現在 **[!UICONTROL 資料來源]** 最適化表單編輯器中內容瀏覽器的索引標籤。
+   根據表單資料模型(FDM)的最適化表單或最適化表單片段建立後，表單資料模型物件會出現在 **[!UICONTROL 資料來源]** 最適化表單編輯器中內容瀏覽器的索引標籤。
 
    >[!NOTE]
    >
@@ -88,7 +88,7 @@ For more information, see:
 
 ## 使用範例資料預覽 {#preview-ic}
 
-表單資料模型編輯器可讓您為表單資料模型中的資料模型物件產生和編輯範例資料。 您可以使用此資料來預覽和測試 <!--interactive communications and--> 最適化Forms。 您必須在預覽之前產生範例資料，如所述 [使用表單資料模型](work-with-form-data-model.md#sample).
+表單資料模型編輯器可讓您為表單資料模型(FDM)中的資料模型物件產生和編輯範例資料。 您可以使用此資料來預覽和測試 <!--interactive communications and--> 最適化Forms。 您必須在預覽之前產生範例資料，如所述 [使用表單資料模型](work-with-form-data-model.md#sample).
 
 <!--To preview an interactive communication with sample Form Data Model data:
 
@@ -104,7 +104,7 @@ The interactive communication opens with prefilled sample data.
 
 ## 使用表單資料模型服務預填 {#prefill}
 
-[!DNL Experience Manager Forms] 提供現成可用的表單資料模型預填服務，讓您為最適化Forms啟用 <!--and interactive communications--> 根據表單資料模型。 預填服務會查詢最適化表單中資料模型物件的資料來源 <!--and interactive communication--> 並因此在呈現表單或通訊時預先填入資料。
+[!DNL Experience Manager Forms] 提供現成可用的表單資料模型預填服務，讓您為最適化Forms啟用 <!--and interactive communications--> 根據表單資料模型(FDM)。 預填服務會查詢最適化表單中資料模型物件的資料來源 <!--and interactive communication--> 並因此在呈現表單或通訊時預先填入資料。
 
 若要為最適化表單啟用表單資料模型預填服務，請開啟最適化表單容器屬性，然後選取「 」 **[!UICONTROL 表單資料模型預填服務]** 從 **[!UICONTROL 預填服務]** 基本摺疊式功能表中的下拉式清單。 然後，儲存屬性。
 
@@ -118,7 +118,7 @@ Edit Properties dialog for an interactive communication-->
 
 ## 將提交的最適化表單資料寫入資料來源 {#write-af}
 
-當使用者根據表單資料模型提交表單時，您可以設定表單以將資料模型物件的提交資料寫入其資料來源。 若要達成此使用案例， [!DNL Experience Manager Forms] 提供 [表單資料模型提交動作](configuring-submit-actions.md)，現成僅可用於根據表單資料模型的最適化Forms。 它將資料模型物件的已提交資料寫入其資料來源中。
+當使用者根據表單資料模型(FDM)提交表單時，您可以設定表單以將資料模型物件的已提交資料寫入其資料來源。 若要達成此使用案例， [!DNL Experience Manager Forms] 提供 [表單資料模型提交動作](configuring-submit-actions.md)，現成僅可用於根據表單資料模型(FDM)的最適化Forms。 它將資料模型物件的已提交資料寫入其資料來源中。
 
 若要設定表單資料模型提交動作：
 
@@ -132,7 +132,7 @@ Edit Properties dialog for an interactive communication-->
 1. 指定 **[!UICONTROL 要提交的資料模型]**.
 1. 按一下 **[!UICONTROL 完成]**
 
-在提交表單時，會將已設定資料模型物件的資料寫入各自的資料來源。 此外，您可以使用表單資料模型和記錄文件 (DoR) 將表單附件提交到資料來源。如需有關表單資料模型的資訊，請參閱 [[!DNL AEM Forms] 資料整合](data-integration.md)。
+在提交表單時，會將已設定資料模型物件的資料寫入各自的資料來源。 此外，您可以使用表單資料模型(FDM)和記錄檔案(DoR)將表單附件提交至資料來源。 如需有關表單資料模型(FDM)的資訊，請參閱 [[!DNL AEM Forms] 資料整合](data-integration.md).
 
 <!--![data-submission](assets/data-submission.png)-->
 
@@ -142,18 +142,18 @@ Edit Properties dialog for an interactive communication-->
 
 您也可以使用二進位資料模型物件屬性，將表單附件提交至資料來源。 執行下列動作，將附件提交至JDBC資料來源：
 
-1. 將包含二進位屬性的資料模型物件新增至表單資料模型。
+1. 將包含二進位屬性的資料模型物件新增至表單資料模型(FDM)。
 1. 在最適化表單中，拖放 **[!UICONTROL 檔案附件]** 元件從元件瀏覽器移至最適化表單。
 1. 選取以選取新增的元件，然後選取 ![settings_icon](assets/configure-icon.svg) 以開啟元件的「屬性」瀏覽器。
-1. 在「繫結參考」欄位中，選取 ![foldersearch_18](assets/folder-search-icon.svg) 並導覽以選取您在表單資料模型中新增的二進位屬性。 視需要設定其他屬性。
+1. 在「繫結參考」欄位中，選取 ![foldersearch_18](assets/folder-search-icon.svg) 並導覽以選取您在表單資料模型(FDM)中新增的二進位屬性。 視需要設定其他屬性。
 
-   選取 ![勾選按鈕](assets/save_icon.svg) 以儲存屬性。 附件欄位現在已繫結至表單資料模型的二進位屬性。
+   選取 ![勾選按鈕](assets/save_icon.svg) 以儲存屬性。 附件欄位現在已繫結至表單資料模型(FDM)的二進位屬性。
 
 1. 在最適化表單容器屬性的提交區段中，啟用 **[!UICONTROL 提交表單附件]**. 它會在表單提交時，將二進位屬性欄位中的附件提交至資料來源。
 
 ## 使用規則在Adaptive Forms中叫用服務 {#invoke-services}
 
-在基於表單資料模型的最適化表單中，您可以 [建立規則](rule-editor.md) 以叫用表單資料模型中設定的服務。 此 **[!UICONTROL 啟動服務]** 規則中的操作會列出表單資料模型中的所有可用服務，並讓您選取服務的輸入和輸出欄位。 您也可以使用 **[!UICONTROL 設定值]** 用於叫用表單資料模型服務並將欄位值設定為服務傳回的輸出的規則型別。
+在基於表單資料模型(FDM)的最適化表單中，您可以 [建立規則](rule-editor.md) 以叫用表單資料模型(FDM)中設定的服務。 此 **[!UICONTROL 啟動服務]** 規則中的操作會列出表單資料模型(FDM)中所有可用的服務，並讓您選取服務的輸入和輸出欄位。 您也可以使用 **[!UICONTROL 設定值]** 用於叫用表單資料模型服務並將欄位值設定為服務傳回的輸出的規則型別。
 
 例如，下列規則會叫用以Employee Id作為輸入的get服務，而傳回的值會填入表單中對應的Dependent Id、Last Name、First Name和Gender欄位。
 
@@ -161,15 +161,15 @@ Edit Properties dialog for an interactive communication-->
 
 此外，您可以使用 `guidelib.dataIntegrationUtils.executeOperation` API可在規則編輯器的程式碼編輯器中寫入JavaScript。 <!-- For API details, see [API to invoke Form Data Model service](invoke-form-data-model-services.md).-->
 
-### 使用自訂函式叫用表單資料模型 {#invoke-form-data-model-using-custom-functions}
+### 使用自訂函式叫用表單資料模型(FDM) {#invoke-form-data-model-using-custom-functions}
 
-您可以 [使用自訂函式從規則編輯器叫用表單資料模型](/help/forms/rule-editor.md#custom-functions-in-rule-editor-custom-functions). 若要叫用表單資料模型，請將表單資料模型新增至允許清單。 若要將表單資料模型新增至允許清單：
+您可以 [使用自訂函式從規則編輯器叫用表單資料模型](/help/forms/rule-editor.md#custom-functions-in-rule-editor-custom-functions). 若要叫用表單資料模型(FDM)，請將表單資料模型新增至允許清單。 若要將表單資料模型新增至允許清單：
 
 1. 前往Experience Manager網頁主控台，位於 `https://server:host/system/console/configMgr`.
 1. 尋找 **[!UICONTROL 針對服務叫用的表單資料模型最適化表單層級白名單 — 設定工廠]**.
 1. 按一下 ![加號圖示](/help/forms/assets/Smock_Add_18_N.svg) 圖示以新增設定……
 1. 新增 **[!UICONTROL 內容路徑模式]** 以指定最適化Forms的位置。  預設值為 `/content/forms/af/(.*)` 包含所有最適化Forms。 您也可以指定特定最適化表單的路徑。
-1. 新增 **[!UICONTROL 表單資料模型路徑模式]** 以指定表單資料模型的位置。 預設值為 `/content/dams/formsanddocuments-fdm/(.*)` 其中包含所有表單資料模型。 您也可以指定特定表單資料模型的路徑。
+1. 新增 **[!UICONTROL 表單資料模型路徑模式]** 以指定表單資料模型(FDM)的位置。 預設值為 `/content/dams/formsanddocuments-fdm/(.*)` 其中包含所有表單資料模型(FDM)。 您也可以指定特定表單資料模型(FDM)的路徑。
 1. 儲存設定。
 
 新增的設定會儲存在 **[!UICONTROL 針對服務叫用的表單資料模型最適化表單層級白名單 — 設定工廠]** 選項。
@@ -178,7 +178,7 @@ Edit Properties dialog for an interactive communication-->
 
 >[!NOTE]
 >
-> 若要透過AEM原型專案使用自訂函式，從規則編輯器叫用表單資料模型：
+> 若要透過AEM原型專案使用自訂函式，從規則編輯器叫用表單資料模型(FDM)：
 >
 >1. [建立組態檔](https://github.com/adobe/aem-core-forms-components/blob/master/it/config/src/main/content/jcr_root/apps/system/config/com.adobe.aemds.guide.factory.impl.AdaptiveFormFDMConfigurationFactoryImpl~core-components-it.cfg.json).
 >1. 設定getContentPathPattern和getFormDataModelPathPattern的屬性。

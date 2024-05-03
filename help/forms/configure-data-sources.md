@@ -1,13 +1,13 @@
 ---
 title: 如何設定資料來源？
-description: 瞭解如何將RESTful Web服務、以SOAP為基礎的Web服務和OData服務設定為表單資料模型的資料來源。
+description: 瞭解如何將RESTful Web服務、以SOAP為基礎的Web服務和OData服務設定為表單資料模型(FDM)的資料來源。
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
-source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
+source-git-commit: 7b31a2ea016567979288c7a8e55ed5bf8dfc181d
 workflow-type: tm+mt
-source-wordcount: '2121'
+source-wordcount: '2129'
 ht-degree: 2%
 
 ---
@@ -76,7 +76,7 @@ ht-degree: 2%
 
 1. 選取 **[!UICONTROL 儲存]** 以儲存組態。
 
-現在，您可以將已設定的關聯式資料庫與表單資料模型搭配使用。
+現在，您可以將已設定的關聯式資料庫與表單資料模型(FDM)搭配使用。
 
 <!-- ## Configure [!DNL Experience Manager] user profile {#configure-aem-user-profile}
 
@@ -84,7 +84,7 @@ You can configure [!DNL Experience Manager] user profile using User Profile Conn
 
 1. Go to [!DNL Experience Manager] web console at `https://[server]:[port]/system/console/configMgr`.
 1. Look for **[!UICONTROL AEM Forms Data Integrations - User Profile Connector Configuration]** and select to open the configuration in edit mode.
-1. In the User Profile Connector Configuration dialog, you can add, remove, or update user profile properties. The specified properties are available for use in form data model. Use the following format to specify user profile properties:
+1. In the User Profile Connector Configuration dialog, you can add, remove, or update user profile properties. The specified properties are available for use in form data model (FDM). Use the following format to specify user profile properties:
 
    `name=[property_name_with_location_in_user_profile],type=[property_type]`
 
@@ -95,7 +95,7 @@ You can configure [!DNL Experience Manager] user profile using User Profile Conn
 
    >[!NOTE]
    >
-   >The **&#42;** in the above example denotes all nodes under the `profile/empLocation/` node in [!DNL Experience Manager] user profile in CRXDE structure. It means that the Form Data Model can access the `city` property of type `string` present in any node under the `profile/empLocation/` node. However, the nodes that contain the specified property must follow a consistent structure.
+   >The **&#42;** in the above example denotes all nodes under the `profile/empLocation/` node in [!DNL Experience Manager] user profile in CRXDE structure. It means that the Form Data Model (FDM) can access the `city` property of type `string` present in any node under the `profile/empLocation/` node. However, the nodes that contain the specified property must follow a consistent structure.
 
 1. Select **[!UICONTROL Save]** to save the configuration. -->
 
@@ -178,13 +178,13 @@ RESTful Services Open API Specification 3.0版不支援的作業包括：
 
 另請參閱 [OpenAPI 3.0規格](https://swagger.io/specification/v3/) 以取得詳細資訊。
 
-### 表單資料模型HTTP使用者端設定可最佳化效能 {#fdm-http-client-configuration}
+### 表單資料模型(FDM) HTTP使用者端設定可最佳化效能 {#fdm-http-client-configuration}
 
 [!DNL Experience Manager Forms] 在與RESTful Web服務整合時形成資料模型，因為資料來源包括用於效能最佳化的HTTP使用者端設定。
 
 設定以下屬性 **[!UICONTROL REST資料來源的表單資料模型HTTP使用者端設定]** 用於指定規則運算式的設定：
 
-* 使用 `http.connection.max.per.route` 屬性來設定表單資料模型與RESTful Web服務之間允許的最大連線數目。 預設值為20個連線。
+* 使用 `http.connection.max.per.route` 屬性來設定表單資料模型(FDM)與RESTful Web服務之間允許的最大連線數目。 預設值為20個連線。
 
 * 使用 `http.connection.max` 屬性，指定每個路由允許的連線數目上限。 預設值為40個連線。
 
@@ -212,7 +212,7 @@ RESTful Services Open API Specification 3.0版不支援的作業包括：
 
 1. 在 [!UICONTROL REST資料來源的表單資料模型HTTP使用者端設定] 對話方塊：
 
-   * 指定表單資料模型與RESTful Web服務之間允許的最大連線數。 **[!UICONTROL 連線總數限制]** 欄位。 預設值為20個連線。
+   * 在中指定表單資料模型(FDM)與RESTful Web服務之間允許的最大連線數 **[!UICONTROL 連線總數限制]** 欄位。 預設值為20個連線。
 
    * 指定中每個路由的允許連線數目上限。 **[!UICONTROL 每個路由的連線限制]** 欄位。 預設值是兩個連線。
 
@@ -266,7 +266,7 @@ OData服務由其服務根URL識別。 若要在中設定OData服務 [!DNL Exper
 
 >[!NOTE]
 >
-> 表單資料模型支援 [OData版本4](https://www.odata.org/documentation/).
+> 表單資料模型(FDM)支援 [OData版本4](https://www.odata.org/documentation/).
 >如需設定的逐步指南 [!DNL Microsoft®® Dynamics 365]，線上或內部部署，請參閱 [[!DNL Microsoft® Dynamics] OData設定](ms-dynamics-odata-configuration.md).
 
 1. 前往 **[!UICONTROL 「工具>Cloud Service>資料來源」]**. 選取以選取您要建立雲端設定的資料夾。
@@ -283,7 +283,7 @@ OData服務由其服務根URL識別。 若要在中設定OData服務 [!DNL Exper
 
    >[!NOTE]
    >
-   選取要連線的OAuth 2.0驗證型別 [!DNL Microsoft®® Dynamics] 使用OData端點做為服務根目錄的服務。
+   >選取要連線的OAuth 2.0驗證型別 [!DNL Microsoft®® Dynamics] 使用OData端點做為服務根目錄的服務。
 
 1. 選取 **[!UICONTROL 建立]** 以建立OData服務的雲端設定。
 
@@ -315,7 +315,7 @@ To save data in a tabular form use, Microsoft® SharePoint List. To configure a 
 
 <!--## Certificate-based mutual authentication for RESTful and SOAP web services {#mutual-authentication}
 
-When you enable mutual authentication for form data model, both the data source and [!DNL Experience Manager] Server running Form Data Model authenticate each other's identity before sharing any data. You can use mutual authentication for REST and SOAP-based connections (data sources). To configure mutual authentication for a Form Data Model on your [!DNL Experience Manager Forms] environment:
+When you enable mutual authentication for form data model (FDM), both the data source and [!DNL Experience Manager] Server running Form Data Model (FDM) authenticate each other's identity before sharing any data. You can use mutual authentication for REST and SOAP-based connections (data sources). To configure mutual authentication for a Form Data Model (FDM) on your [!DNL Experience Manager Forms] environment:
 
 1. Upload the private key (certificate) to [!DNL Experience Manager Forms] server. To upload the private key:
    1. Log in to your [!DNL Experience Manager Forms] server as an administrator.
@@ -328,7 +328,7 @@ When you enable mutual authentication for form data model, both the data source 
 
 ## 後續步驟 {#next-steps}
 
-您已設定資料來源。 接下來，您可以建立表單資料模型，或者，如果您已建立不含資料來源的表單資料模型，則可以將其與您設定的資料來源建立關聯。 另請參閱 [建立表單資料模型](create-form-data-models.md) 以取得詳細資訊。
+您已設定資料來源。 接下來，您可以建立表單資料模型(FDM)，或者，如果您已建立不含資料來源的表單資料模型(FDM)，則可以將其與您設定的資料來源建立關聯。 另請參閱 [建立表單資料模型](create-form-data-models.md) 以取得詳細資訊。
 
 
 <!--

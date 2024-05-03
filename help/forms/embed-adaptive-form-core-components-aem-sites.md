@@ -4,9 +4,9 @@ description: 在AEM Sites頁面中使用最適化表單核心元件，填寫並�
 feature: Adaptive Forms
 hide: true
 hidefromtoc: true
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
-source-wordcount: '2067'
+source-wordcount: '2071'
 ht-degree: 4%
 
 ---
@@ -110,12 +110,12 @@ ht-degree: 4%
    * **預填服務**：您可以使用預填服務，使用現有資料自動填寫最適化表單的欄位。 當使用者開啟表單時，這些欄位的值將被預填。 如需預填服務的詳細資訊，請參閱 [預填自適應表單欄位](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/prepopulate-adaptive-form-fields.html#configuring-prefill-service-using-configuration-manager)
    * **使用者端資料庫類別**：指定 [JavaScript函式](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-rules-and-use-expressions-in-an-adaptive-form/rule-editor.html?lang=en#custom-functions) 在運算式中使用且由最適化Forms支援的欄位。
 * **資料模型**：資料模型可讓您將實體和服務從不同的資料來源整合到最適化表單中。 選擇 **[!UICONTROL 表單資料模型]** 如果您建立的最適化表單涉及從和向多個資料來源擷取及寫入資料。
-   * **表單資料模型**：表單資料模型可讓最適化表單與不同的資料來源通訊。 如需有關設定資料來源的資訊，請參閱 [設定資料來源](/help/forms/configure-data-sources.md).
+   * **表單資料模型**：表單資料模型(FDM)可讓最適化表單與不同的資料來源通訊。 如需有關設定資料來源的資訊，請參閱 [設定資料來源](/help/forms/configure-data-sources.md).
    * **結構描述**：結構描述代表組織中後端系統產生或使用資料的結構。 您可以 [將結構描述關聯至最適化表單](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/adaptive-form-json-schema-form-model.html) 並使用其元素將動態內容新增至最適化表單。
 
      >[!NOTE]
      >
-     > 設定表單資料模型後，您無法變更關聯的表單模型。 不過，您可以修改與表單資料模型相關聯的結構描述。
+     > 設定表單資料模型(FDM)後，您無法變更關聯的表單模型。 但是，可以修改與表單資料模型(FDM)關聯的架構。
 
 * **提交索引標籤**
 
@@ -125,7 +125,7 @@ ht-degree: 4%
       * **提交動作**：當使用者按一下最適化表單上的提交按鈕時，就會觸發提交動作。 您可以 [在最適化表單上設定提交動作](/help/forms/configuring-submit-actions.md). 調適型表單提供下列立即可用的提交動作：
          * 提交到 REST 端點
          * 寄送電子郵件
-         * 使用表單資料模型提交
+         * 使用表單資料模型(FDM)提交
          * 叫用 AEM 工作流程
          * 提交到 SharePoint
          * 提交到 OneDrive

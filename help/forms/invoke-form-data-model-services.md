@@ -1,22 +1,22 @@
 ---
-title: 如何使用API從最適化Forms叫用表單資料模型服務？
+title: 如何使用API從最適化Forms叫用表單資料模型(FDM)服務？
 description: 說明可用於從最適化表單欄位中叫用以WSDL撰寫的網頁服務的invokeWebServices API。
 uuid: 40561086-e69d-4e6a-9543-1eb2f54cd836
 topic-tags: develop
 discoiquuid: aa3e50f1-8f5a-489d-a42e-a928e437ab79
-source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
-source-wordcount: '482'
+source-wordcount: '488'
 ht-degree: 0%
 
 ---
 
 
-# 從最適化Forms叫用表單資料模型服務的API {#api-to-invoke-form-data-model-service-from-adaptive-forms}
+# 從最適化Forms叫用表單資料模型(FDM)服務的API {#api-to-invoke-form-data-model-service-from-adaptive-forms}
 
 ## 概觀 {#overview}
 
-[!DNL AEM Forms] 可讓表單作者從調適型表單欄位叫用表單資料模型中設定的服務，進一步簡化及增強表單填寫體驗。 若要叫用資料模型服務，您可以在視覺化編輯器中建立規則，或使用 `guidelib.dataIntegrationUtils.executeOperation` 的程式碼編輯器中的API [規則編輯器](rule-editor.md).
+[!DNL AEM Forms] 可讓表單作者從調適型表單欄位叫用表單資料模型(FDM)中設定的服務，進一步簡化及增強表單填寫體驗。 若要叫用資料模型服務，您可以在視覺化編輯器中建立規則，或使用 `guidelib.dataIntegrationUtils.executeOperation` 的程式碼編輯器中的API [規則編輯器](rule-editor.md).
 
 本檔案著重於使用編寫JavaScript `guidelib.dataIntegrationUtils.executeOperation` 用於叫用服務的API。
 
@@ -60,7 +60,7 @@ API結構會指定下列有關服務操作的詳細資訊。
   </tr>
   <tr>
    <td><code>formDataModelId</code></td>
-   <td>指定表單資料模型的存放庫路徑，包括其名稱</td>
+   <td>指定表單資料模型(FDM)的存放庫路徑，包括其名稱</td>
   </tr>
   <tr>
    <td><code>operationName</code></td>
@@ -87,7 +87,7 @@ API結構會指定下列有關服務操作的詳細資訊。
 
 ## 用於叫用服務的範例指令碼 {#sample-script-to-invoke-a-service}
 
-以下範例指令碼使用 `guidelib.dataIntegrationUtils.executeOperation` 用於叫用的API `getAccountById` 服務作業設定於 `employeeAccount` 表單資料模型。
+以下範例指令碼使用 `guidelib.dataIntegrationUtils.executeOperation` 用於叫用的API `getAccountById` 服務作業設定於 `employeeAccount` 表單資料模型(FDM)。
 
 此 `getAccountById` 操作取得的值位於 `employeeID` 表單欄位作為 `empId` 引數並傳回對應員工的員工名稱、帳號及帳戶餘額。 輸出值會填入指定的表單欄位中。 例如，中的值 `name` 引數會填入 `fullName` 表單元素和值 `accountNumber` 中的引數 `account` 表單元素。
 
@@ -119,7 +119,7 @@ guidelib.dataIntegrationUtils.executeOperation(operationInfo, inputs, outputs, c
 
 ### 包含成功和失敗回呼函式的範例指令碼 {#callback-function-success-failure}
 
-以下範例指令碼使用 `guidelib.dataIntegrationUtils.executeOperation` 用於叫用的API `GETOrder` 服務作業設定於 `employeeOrder` 表單資料模型。
+以下範例指令碼使用 `guidelib.dataIntegrationUtils.executeOperation` 用於叫用的API `GETOrder` 服務作業設定於 `employeeOrder` 表單資料模型(FDM)。
 
 此 `GETOrder` 操作取得的值位於 `Order ID` 表單欄位作為 `orderId` 引數並傳回訂單數量值 `success` 回呼函式。  如果 `success` 回撥函式不會傳回訂單數量，而 `failure` 回呼函式會顯示 `Error occured` 訊息。
 

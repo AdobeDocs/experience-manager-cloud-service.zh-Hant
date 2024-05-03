@@ -6,10 +6,11 @@ topic-tags: author, introduction
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 feature: Adaptive Forms, Foundation Components
 docset: aem65
-source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
+exl-id: 16f86dae-86fb-481b-8978-b8898705ed7e
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
-source-wordcount: '2465'
-ht-degree: 97%
+source-wordcount: '2468'
+ht-degree: 95%
 
 ---
 
@@ -26,8 +27,8 @@ ht-degree: 97%
 
 最適化表單可讓您建立吸引人、回應式、動態且最適化的表單。[!DNL AEM Forms] 提供直覺的使用者介面和立即可用的元件，用於建立和使用最適化表單。您可以選擇根據表單模型或結構描述或不使用表單模型來建立最適化表單。仔細選擇表單模型非常重要，它不僅要滿足您的要求，還要擴展您現有的基礎設施投資和資產。您可以從以下選項中進行選擇來建立最適化表單：
 
-* **使用表單資料模型**
-  [資料整合](data-integration.md)可讓您將不同資料來源的實體和服務整合到表單資料模型，其可用來建立最適化表單。如果您建立的最適化表單會從多個資料來源擷取資料，以及將資料寫入多個資料來源，請選擇表單資料模型。
+* **使用表單資料模型(FDM)**
+  [資料整合](data-integration.md) 可讓您將實體和服務從不同的資料來源整合到可用於建立最適化Forms的表單資料模型(FDM)中。 如果您要建立的最適化表單涉及從多個資料來源擷取及寫入資料，請選擇表單資料模型(FDM)。
 
 * **使用 XDP 表單範本**
 如果您投資 XFA 型或 XDP 表單，那麼它是理想的表單模型。它提供一種直接將 XFA 型表單轉換為最適化表單的方法。任何現有的 XFA 規則都保留在關聯的最適化表單中。產生的最適化表單支援 XFA 結構，例如驗證、事件、屬性和模式。

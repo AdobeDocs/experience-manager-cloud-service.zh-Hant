@@ -5,9 +5,9 @@ content-type: reference
 topic-tags: publish
 discoiquuid: 32a7a50c-74f4-49bc-a0bd-a9ec142527cb
 docset: aem65s
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
-source-wordcount: '1327'
+source-wordcount: '1328'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ ht-degree: 0%
 您的Adaptive Forms可能會使用一些不會自動發佈的設定、設定和自訂。 建議您先發佈或啟用這些資源，然後再發佈最適化表單。
 
 * 可編輯的最適化表單範本
-* Adobe Sign、Typekit、reCAPTCHA和表單資料模型的Cloud Service設定
+* Adobe Sign、Typekit、reCAPTCHA和表單資料模型(FDM)的Cloud Service設定
 * 只有當使用者擁有管理員許可權時，才會啟用其他雲端服務設定。
 * 自訂。 這些包括但不限於：
 

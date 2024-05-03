@@ -1,6 +1,6 @@
 ---
 title: 如何從AEM 6.5 Forms移轉至AEM Formsas a Cloud Service？
-description: AEMas a Cloud Service移轉歷程快速入門 |Adobe Experience Manager。 從移轉 [!DNL AEM Forms] （內部部署和AMS環境）至 [!DNL AEM Forms] as a Cloud Service環境。
+description: AEMas a Cloud Service移轉歷程快速入門 | Adobe Experience Manager。 從移轉 [!DNL AEM Forms] （內部部署和AMS環境）至 [!DNL AEM Forms] as a Cloud Service環境。
 Keywords: 6.5 forms to cloud service, 6.5 forms to cs, migrate 6.5 forms to CS, migrate 6.5 forms to cloud service, upgrade 6.5 forms to CS, move 6.5 forms to CS, upgrade AEM 6.5 to CS, AEM Forms 6.5 to Cloud Service, AEM form migration to cloud service, Migration Journey to AEM as a Cloud Service | Adobe Experience Manager.
 contentOwner: khsingh
 feature: Adaptive Forms
@@ -9,9 +9,9 @@ role: User, Developer
 level: Intermediate
 topic: Migration
 exl-id: 090e77ff-62ec-40cb-8263-58720f3b7558
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
-source-wordcount: '1430'
+source-wordcount: '1433'
 ht-degree: 1%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 1%
 | AEM as a Cloud Service  | 本文章 |
 
 您可以移轉或升級最適化Forms、主題、範本和雲端設定，從 <!-- AEM 6.3 Forms AEM 6.4 Forms on OSGi and --> OSGi上的AEM 6.5 Forms至 [!DNL AEM] as a Cloud Service。 在移轉這些資產之前，請使用移轉公用程式，將舊版所使用的格式轉換為中使用的格式 [!DNL AEM] as a Cloud Service。
-讓我們開始移轉至AEMas a Cloud Service的歷程 |Adobe Experience Manager。 當您執行Migration Utility時，下列資產會更新：
+讓我們開始移轉至AEMas a Cloud Service的歷程 | Adobe Experience Manager。 當您執行Migration Utility時，下列資產會更新：
 
 * 最適化Forms的自訂元件
 * 最適化Forms範本和主題
@@ -128,14 +128,14 @@ ht-degree: 1%
 
    <!-- 1. Install the latest [Compatibility Package](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?#cloud-migration) to your cloned [!DNL AEM Forms] environment. -->
 
-1. 執行 [內容轉移工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?#cloud-migration). 在上指定引數時 **[!UICONTROL 建立移轉集]** 畫面，指定最適化Forms、主題、範本、表單資料模型、Cloud Service、自訂元件和其他AEM Forms特定資產的路徑， **[!UICONTROL 要包含的路徑]** 選項。 它會新增指定的 [!DNL AEM Forms] 資產移轉至移轉集。
+1. 執行 [內容轉移工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?#cloud-migration). 在上指定引數時 **[!UICONTROL 建立移轉集]** 畫面，指定最適化Forms、主題、範本、表單資料模型(FDM)、Cloud Service、自訂元件和其他AEM Forms特定資產的路徑， **[!UICONTROL 要包含的路徑]** 選項。 它會新增指定的 [!DNL AEM Forms] 資產移轉至移轉集。
 
 ## 各種AEM Forms專屬資產的路徑
 
 從AEM Forms 6.5移轉至Cloud Service時，您可在以下位置找到AEM Forms專屬資產：
 
 * **最適化Forms**：您可在以下網址找到最適化表單： `/content/dam/formsanddocuments/`和 `/content/forms/af`. 例如，對於標題為WKND註冊的最適化表單，請新增路徑 `/content/dam/formsanddocuments/wknd-registration` 和 `/content/forms/af/wknd-registration`.
-* **表單資料模型**：您可以在以下位置找到所有表單資料模型： `/content/dam/formsanddocuments-fdm`. 例如，`/content/dam/formsanddocuments-fdm/ms-dynamics-fdm`。
+* **表單資料模型**：您可以在以下位置找到所有表單資料模型(FDM)： `/content/dam/formsanddocuments-fdm`. 例如，`/content/dam/formsanddocuments-fdm/ms-dynamics-fdm`。
 
 * **使用者端資料庫**：使用者端程式庫的預設路徑為 `/etc/clientlibs/fd/theme`.
 
@@ -143,7 +143,7 @@ ht-degree: 1%
 
 * **最適化表單主題和使用者端資料庫**：主題的預設路徑為 ` /content/dam/formsanddocuments-themes/` 而使用者端程式庫的預設路徑為 `/etc/clientlibs/fd/theme`. 例如，對於名為WKND佈景主題範本，請新增路徑 ` /content/dam/formsanddocuments-themes/wkndtheme` 和使用者端資料庫中的主題 `/etc/clientlibs/reference-themes/wkndtheme-3-0`. 您也可以在其他自訂路徑上擁有主題和使用者端資料庫。
 
-* **雲端設定**：您可以在下列位置找到雲端設定： `/conf/`. 例如，表單資料模型雲端設定為 `/conf/global/settings/cloudconfigs/fdm`.
+* **雲端設定**：您可以在下列位置找到雲端設定： `/conf/`. 例如，表單資料模型(FDM)雲端組態為 `/conf/global/settings/cloudconfigs/fdm`.
 
 * **工作流程模型**：您可以在下列位置找到AEM工作流程模型： `/conf/global/settings/workflow/models/`. 例如，對於標題為「WKND註冊」的工作流程模型，請新增路徑 `/conf/global/settings/workflow/models/wknd-registration`
 

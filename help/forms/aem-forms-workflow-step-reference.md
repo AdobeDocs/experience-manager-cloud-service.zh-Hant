@@ -6,9 +6,9 @@ google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
 keywords: 使用AEM工作流程、使用指派工作步驟、轉換為PDF/A步驟、產生記錄步驟的檔案、使用工作流程、簽署檔案步驟、產生列印輸出步驟、產生非互動式PDF輸出
 feature: Adaptive Forms, Workflow
 role: Admin, User
-source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
-source-wordcount: '7367'
+source-wordcount: '7379'
 ht-degree: 0%
 
 ---
@@ -85,12 +85,12 @@ ht-degree: 0%
 * **[!UICONTROL 對於已完成的工作，將調適型表單轉譯為]**：當任務標示為完成時，您可以將最適化表單轉譯為唯讀最適化表單或PDF檔案。 您需要啟用記錄檔案選項或表單範本式的最適化Forms，才能將最適化表單呈現為記錄檔案。
 * **[!UICONTROL 預先填入]**：下列欄位會作為任務的輸入專案：
 
-   * **[!UICONTROL 選擇輸入資料檔案使用]**：輸入資料檔案的路徑（.json、.xml、.doc或表單資料模型）。 您可以使用相對於承載的路徑來擷取輸入資料檔案，或擷取儲存在Document、XML或JSON資料型別變數中的檔案。 例如，檔案包含透過AEM收件匣應用程式為表單提交的資料。 範例路徑為 [Payload_Directory]/workflow/data.
+   * **[!UICONTROL 選擇輸入資料檔案使用]**：輸入資料檔案的路徑(.json、.xml、.doc或表單資料模型(FDM))。 您可以使用相對於承載的路徑來擷取輸入資料檔案，或擷取儲存在Document、XML或JSON資料型別變數中的檔案。 例如，檔案包含透過AEM收件匣應用程式為表單提交的資料。 範例路徑為 [Payload_Directory]/workflow/data.
    * **[!UICONTROL 選擇輸入附件，使用]**：此位置可用的附件會附加至與任務相關聯的表單。 路徑可以是相對於承載或擷取儲存在檔案變數中的附件。 範例路徑為 [Payload_Directory]/attachments/。 您可以指定相對於承載放置的附件，或使用檔案型別（「陣列清單」>「檔案」）變數來指定最適化表單的輸入附件。
 
   <!-- 
     
-    * **[!UICONTROL Choose input JSON]**: Select an input JSON file using a path that is relative to payload or stored in a variable of Document, JSON, or Form Data Model data type. This option is available if you select Interactive Communication Agent UI or Interactive Communication Web Channel Document from the Type drop-down list.
+    * **[!UICONTROL Choose input JSON]**: Select an input JSON file using a path that is relative to payload or stored in a variable of Document, JSON, or Form Data Model (FDM) data type. This option is available if you select Interactive Communication Agent UI or Interactive Communication Web Channel Document from the Type drop-down list.
 
     * **[!UICONTROL Choose a custom prefill service]**: Select the prefill service to retrieve the data and prefill the Interactive Communication Web channel document or the Agent UI.  
     
@@ -108,13 +108,13 @@ ht-degree: 0%
 
 * **[!UICONTROL 提交的資訊]**：下列欄位可作為工作的輸出位置：
 
-   * **[!UICONTROL 儲存輸出資料檔案，使用]**：儲存資料檔案（.json、.xml、.doc或表單資料模型）。 資料檔案包含透過相關表單提交的資訊。 您可以使用相對於承載的路徑來儲存輸出資料檔案，或將其儲存在Document、XML或JSON資料型別的變數中。 例如， [Payload_Directory]/Workflow/data，其中資料是檔案。
+   * **[!UICONTROL 儲存輸出資料檔案，使用]**：儲存資料檔案(.json、.xml、.doc或表單資料模型(FDM))。 資料檔案包含透過相關表單提交的資訊。 您可以使用相對於承載的路徑來儲存輸出資料檔案，或將其儲存在Document、XML或JSON資料型別的變數中。 例如， [Payload_Directory]/Workflow/data，其中資料是檔案。
    * **[!UICONTROL 儲存附件，使用]**：儲存任務中提供的表單附件。 您可以使用相對於承載的路徑來儲存附件，或將其儲存在Document資料型別的陣列清單中。
    * **[!UICONTROL 儲存記錄檔案，使用]**：儲存記錄檔案檔案的路徑。 例如， [Payload_Directory]/DocumentofRecord/credit-card.pdf. 您可以使用相對於承載的路徑來儲存記錄檔案，或將其儲存在Document資料型別的變數中。 如果您選取 **[!UICONTROL 相對於承載]** 選項，如果路徑欄位留空，則不會產生記錄檔案。 只有在從「型別」下拉式清單中選取「最適化表單」時，才能使用此選項。
 
   <!-- 
     
-    * **[!UICONTROL Save Web Channel data using]**: Save the Web Channel data file using a path that is relative to the payload or store it in a variable of Document, JSON, or Form Data Model data type. This option is available only if you select Interactive Communication Agent UI from the Type drop-down list. c
+    * **[!UICONTROL Save Web Channel data using]**: Save the Web Channel data file using a path that is relative to the payload or store it in a variable of Document, JSON, or Form Data Model (FDM) data type. This option is available only if you select Interactive Communication Agent UI from the Type drop-down list. c
     * **[!UICONTROL Save PDF document using]**: Save the PDF document using a path that is relative to the payload or store it in a variable of Document data type. This option is available only if you select Interactive Communication Agent UI from the Type drop-down list.
     <!-- * **[!UICONTROL Save layout template using]**: Save the layout template using a path that is relative to the payload or store it in a variable of Document data type. The [layout template](layout-design-details.md) refers to an XDP file that you create using Forms Designer. This option is available only if you select Interactive Communication Agent UI from the Type drop-down list. 
     
@@ -273,9 +273,9 @@ PDF/A是一種用於長期儲存檔案內容的封存格式，透過嵌入字型
 * **[!UICONTROL 將輸出儲存在承載中]**：將輸出檔案儲存在承載資料夾下，或覆寫承載，以防承載是檔案。
 * **[!UICONTROL 輸出檔案的地圖]**：指定每個檔案新增一個專案，以明確儲存每個檔案檔案的位置。 每個專案代表檔案以及儲存檔案的位置。 如果有多個輸出檔案，則使用此選項。
 
-## 啟動表單資料模型服務步驟 {#invoke-form-data-model-service-step}
+## 啟動表單資料模型(FDM)服務步驟 {#invoke-form-data-model-service-step}
 
-您可以使用 [[!DNL AEM Forms] 資料整合](data-integration.md) 以設定並連線至不同的資料來源。 這些資料來源可以是Web服務、REST服務、OData服務和CRM解決方案。 [!DNL AEM Forms] 資料整合可讓您建立包含各種服務的表單資料模型，以在已設定的資料庫上執行資料擷取、新增、更新操作。 您可以使用 **[!UICONTROL 啟動資料模型服務步驟]** 以選取表單資料模型(FDM)，並使用FDM的服務來擷取、更新或新增資料至不同的資料來源。
+您可以使用 [[!DNL AEM Forms] 資料整合](data-integration.md) 以設定並連線至不同的資料來源。 這些資料來源可以是Web服務、REST服務、OData服務和CRM解決方案。 [!DNL AEM Forms] 資料整合可讓您建立包含各種服務的表單資料模型(FDM)，以在已設定的資料庫上執行資料擷取、新增、更新操作。 您可以使用 **[!UICONTROL 啟動資料模型服務步驟]** 以選取表單資料模型(FDM)，並使用FDM的服務來擷取、更新或新增資料至不同的資料來源。
 
 為說明步驟欄位的輸入，以下資料庫表格和JSON檔案為範例：
 
@@ -330,14 +330,14 @@ PDF/A是一種用於長期儲存檔案內容的封存格式，透過嵌入字型
   }
 ```
 
-啟動表單資料模型服務步驟包含下列欄位，以方便表單資料模型操作：
+啟動表單資料模型(FDM)服務步驟包含下列欄位，以利表單資料模型(FDM)作業：
 
 * **[!UICONTROL 標題]**：步驟的標題。 它有助於識別工作流程編輯器中的步驟。
 * **[!UICONTROL 說明]**：說明適用於在共用開發環境中工作的其他程式開發人員。
 
-* **[!UICONTROL 表單資料模型路徑]**：瀏覽並選取伺服器上顯示的表單資料模型。
+* **[!UICONTROL 表單資料模型路徑]**：瀏覽並選取伺服器上存在的表單資料模型(FDM)。
 
-* **[!UICONTROL 錯誤與驗證]**：選項可讓您擷取錯誤訊息，並針對擷取及傳送至資料來源的資料指定驗證選項。 透過這些變更，您可以確保傳遞至「啟動表單資料模型服務」步驟的資料會遵守資料來源定義的資料限制。 如需詳細資訊，請參閱 [自動驗證輸入資料](work-with-form-data-model.md#automated-validation-of-input-data)
+* **[!UICONTROL 錯誤與驗證]**：選項可讓您擷取錯誤訊息，並針對擷取及傳送至資料來源的資料指定驗證選項。 透過這些變更，您可以確保傳遞至啟動表單資料模型(FDM)服務步驟的資料會遵守資料來源所定義的資料限制。 如需詳細資訊，請參閱 [自動驗證輸入資料](work-with-form-data-model.md#automated-validation-of-input-data)
 
 * **[!UICONTROL 驗證層級]**：驗證分為三類：基本、完整和關閉：
 
@@ -353,7 +353,7 @@ PDF/A是一種用於長期儲存檔案內容的封存格式，透過嵌入字型
 
 * **[!UICONTROL 在變數中儲存錯誤詳細資料]**：您可以將錯誤詳細資料儲存在 [json型別變數](variable-in-aem-workflows.md).
 
-* **[!UICONTROL 服務]**：所選表單資料模型提供的服務清單。
+* **[!UICONTROL 服務]**：所選表單資料模型(FDM)提供的服務清單。
 * **[!UICONTROL 服務輸入]** > **[!UICONTROL 提供使用常值、變數或工作流程中繼資料的輸入資料，以及JSON檔案]**：服務可以有多個引數。 選取選項，從工作流程中繼資料屬性、JSON物件、變數取得服務引數的值，或直接在提供的文字方塊中輸入值：
 
    * **[!UICONTROL 常值]**：當您知道要指定的確切值時，請使用選項。 例如， srose@we.info。
@@ -365,16 +365,16 @@ PDF/A是一種用於長期儲存檔案內容的封存格式，透過嵌入字型
      例如，如果CRX存放庫中的「相對於裝載」資料夾在 `attachment\attachment-folder` 位置，指定 `attachment\attachment-folder` 在文字方塊中選取 **[!UICONTROL 相對於承載]** 選項。
 
    * **[!UICONTROL JSON點標籤法]**：使用的值位於JSON檔案中時，請使用選項。 例如，insurance.customerDetails.emailAddress。 JSON Dot Notation選項僅在選取「從輸入JSON選項對應輸入欄位」時可用。
-   * **[!UICONTROL 從輸入JSON對應輸入欄位]**：指定JSON檔案的路徑，以從JSON檔案取得某些服務引數的輸入值。 JSON檔案的路徑可以是相對於裝載、絕對路徑，或者您可以使用JSON或表單資料模型型別的變數來選取輸入JSON檔案。
+   * **[!UICONTROL 從輸入JSON對應輸入欄位]**：指定JSON檔案的路徑，以從JSON檔案取得某些服務引數的輸入值。 JSON檔案的路徑可以是相對於裝載、絕對路徑，也可以使用JSON或表單資料模型(FDM)型別的變數來選取輸入JSON檔案。
 
 * **[!UICONTROL 服務輸入]** > **[!UICONTROL 提供使用變數或JSON檔案的輸入資料]**：選取選項，以從儲存在絕對路徑、相對於承載的路徑或變數中的JSON檔案取得所有引數的值。
-* **[!UICONTROL 選擇輸入JSON檔案，使用]**：包含所有服務引數值的JSON檔案。 JSON檔案的路徑可以是 **[!UICONTROL 相對於裝載]** 或 **[!UICONTROL 絕對路徑]**. 您也可以使用JSON或表單資料模型資料型別的變數來擷取輸入JSON檔案。
+* **[!UICONTROL 選擇輸入JSON檔案，使用]**：包含所有服務引數值的JSON檔案。 JSON檔案的路徑可以是 **[!UICONTROL 相對於裝載]** 或 **[!UICONTROL 絕對路徑]**. 您也可以使用JSON或表單資料模型(FDM)資料型別的變數來擷取輸入JSON檔案。
 
 * **[!UICONTROL JSON點標籤法]**：將欄位保留空白可使用指定JSON檔案的所有物件作為服務引數的輸入。 若要從指定的JSON檔案讀取特定JSON物件作為服務引數的輸入，請為JSON物件指定點標籤法。例如，如果您有和區段開頭所列出的JSON類似的JSON，請指定insurance.customerDetails以提供客戶的所有詳細資料作為服務的輸入。
 * **[!UICONTROL 服務的輸出]** > **[!UICONTROL 對映並寫入輸出值至變數或中繼資料]**：選取選項以將輸出值儲存為crx-repository中工作流程執行個體中繼資料節點的屬性。 指定中繼資料屬性的名稱，並選取對應的服務輸出屬性，以與中繼資料屬性對應，例如，將輸出服務傳回的phone_number與工作流程中繼資料的phone_number屬性對應。 同樣地，您可以將輸出儲存在Long資料型別的變數中。 當您為選取屬性時 **[!UICONTROL 要對應的服務輸出屬性]** 選項，只會填入能夠儲存所選屬性資料的變數 **[!UICONTROL 將輸出儲存至]** 選項。
 
 * **[!UICONTROL 服務的輸出]** > **[!UICONTROL 將輸出儲存至變數或JSON檔案]**：選取選項，將輸出值儲存在JSON檔案中的絕對路徑、相對承載的路徑或變數中。
-* **[!UICONTROL 使用以下選項儲存輸出JSON檔案]**：儲存輸出JSON檔案。 輸出JSON檔案的路徑可以是相對於承載或絕對路徑。 您也可以使用JSON或表單資料模型資料型別的變數儲存輸出JSON檔案。
+* **[!UICONTROL 使用以下選項儲存輸出JSON檔案]**：儲存輸出JSON檔案。 輸出JSON檔案的路徑可以是相對於承載或絕對路徑。 您也可以使用JSON或表單資料模型(FDM)資料型別的變數來儲存輸出JSON檔案。
 
 
 

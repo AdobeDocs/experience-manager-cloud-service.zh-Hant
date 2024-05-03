@@ -1,6 +1,6 @@
 ---
-source-git-commit: e71e247f5b6de806b36c5c759b29e7273511f94e
-workflow-type: ht
+source-git-commit: 8c60b02c1759fc4d0cf66d6c8f1c2edf294fc1ce
+workflow-type: tm+mt
 source-wordcount: '314'
 ht-degree: 100%
 
@@ -29,7 +29,7 @@ ht-degree: 100%
 * [將最適化表單連接到 Microsoft Power Automate](/help/forms/configure-submit-actions-core-components.md#microsoft-power-automate)
 * [將最適化表單連接到 Microsoft OneDrive](/help/forms/configure-submit-actions-core-components.md#create-a-onedrive-configuration)
 * [將最適化表單連接至 Microsoft® Azure Blob 儲存體](/help/forms/configure-submit-actions-core-components.md#azure-blob-storage)
-* [將最適化表單連接到 Salesforce](/help/forms/oauth2-client-credentials-flow-for-server-to-server-integration.md)
+* [將最適化表單連接到 Salesforce](/help/forms/aem-forms-salesforce-integration.md)
 * [在 AEM 最適化表單中使用 Adobe Sign in](/help/forms/working-with-adobe-sign.md)
 * [為最適化表單新增地區設定](/help/forms/supporting-new-language-localization-core-components.md)
 * [將最適化表單資料傳送到資料庫](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/data-integration.html)
@@ -51,7 +51,7 @@ ht-degree: 100%
 * [叫用 AEM 工作流程](/help/forms/configure-submit-action-workflow.md)
 * [提交至 Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
 * [提交至 Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
-* [將最適化表單連接到 Salesforce 應用程式](/help/forms/oauth2-client-credentials-flow-for-server-to-server-integration.md)
+* [將最適化表單連接到 Salesforce 應用程式](/help/forms/aem-forms-salesforce-integration.md)
 * [將最適化表單連接到 Microsoft](/help/forms/ms-dynamics-odata-configuration.md)
 
 ## 另請參閱 {#see-more-forms-eds}

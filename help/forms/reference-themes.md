@@ -3,16 +3,16 @@ title: 如何根據基礎元件取得最適化表單的參考主題？
 description: 使用提供的參考最適化表單主題、範本和表單資料模型快速入門。
 discoiquuid: a1229970-5a5a-4f76-a880-278f972587cc
 exl-id: 03305b4a-d82d-4b8d-8804-249b10bdd358
-source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
-source-wordcount: '521'
-ht-degree: 3%
+source-wordcount: '504'
+ht-degree: 1%
 
 ---
 
 # Formsas a Cloud Service參考資產 {#reference-themes}
 
-您可以透過安裝取得參考主題、範本和表單資料模型 [參考資產套件](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.0.0.zip). 它有助於快速啟動和加速您的Adaptive Forms開發。 您可以使用 [封裝管理員](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager.html) 將此套件部署至您的AEM Formsas a Cloud Service環境。
+您可以透過安裝參考主題、範本和表單資料模型(FDM) [參考資產套件](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.0.0.zip). 它有助於快速啟動和加速您的Adaptive Forms開發。 您可以使用 [封裝管理員](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager.html) 將此套件部署至您的AEM Formsas a Cloud Service環境。
 
 套件中包含的參考資產包括：
 
@@ -115,7 +115,7 @@ U.S. Web Design Standards theme, as the name suggests, uses typefaces and styles
 
 基本範本會提供空白畫布，讓您為組織的調適型表單建立初始結構。
 
-## 表單資料模型
+## 表單資料模型(FDM)
 
 ### Microsoft® Dynamics 365
 

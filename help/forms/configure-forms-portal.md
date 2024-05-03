@@ -3,9 +3,9 @@ title: 如何在Experience Manager Sites頁面上建立Forms入口網站？
 description: 瞭解如何在AEM Sites頁面上建立Forms入口網站，並使用現成可用的核心元件。
 feature: Adaptive Forms, Foundation Components
 exl-id: 13cfe3ba-2e85-46bf-a029-2673de69c626
-source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
-source-wordcount: '1785'
+source-wordcount: '1786'
 ht-degree: 4%
 
 ---
@@ -83,7 +83,7 @@ AEM Forms提供下列立即可用的入口網站元件：
 
 ## 為最適化Forms設定Azure儲存體 {#configure-azure-storage-adaptive-forms}
 
-[[!DNL Experience Manager Forms] 資料整合](data-integration.md) 提供 [!DNL Azure] 整合表單與的儲存體設定 [!DNL Azure] 儲存服務。 表單資料模型可用來建立最適化Forms，以與互動 [!DNL Azure] 伺服器以啟用業務工作流程。
+[[!DNL Experience Manager Forms] 資料整合](data-integration.md) 提供 [!DNL Azure] 整合表單與的儲存體設定 [!DNL Azure] 儲存服務。 表單資料模型(FDM)可用來建立與互動的最適化Forms [!DNL Azure] 伺服器以啟用業務工作流程。
 
 ### 建立 Azure 儲存體設定 {#create-azure-storage-configuration}
 

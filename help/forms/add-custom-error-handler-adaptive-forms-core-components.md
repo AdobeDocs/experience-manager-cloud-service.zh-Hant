@@ -6,10 +6,10 @@ contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms, Core Components
 exl-id: 4496c4cc-a5d7-4f34-91f9-13eded77b362
-source-git-commit: d75d448d631da7af3a37192f0890a38c760ab09b
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
-source-wordcount: '2331'
-ht-degree: 96%
+source-wordcount: '2332'
+ht-degree: 95%
 
 ---
 
@@ -180,7 +180,7 @@ AEM Forms 為表單提交提供現成可用的成功和錯誤處理常式。這�
 
 >[!NOTE]
 >
-> * 若要透過規則編輯器的調用服務動作來使用錯誤處理常式，請使用表單資料模型來設定調適型自表單。
+> * 若要使用錯誤處理常式搭配規則編輯器的「叫用」服務動作，請使用表單資料模型(FDM)來設定Adaptive Forms 。
 > * 如果錯誤回應是在標準結構描述中，則系統會提供預設的錯誤處理常式以顯示欄位的錯誤訊息。您還可以從自訂錯誤處理常式函數來呼叫預設的錯誤處理常式。
 
 使用規則編輯器可以：

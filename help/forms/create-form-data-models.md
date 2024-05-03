@@ -1,18 +1,18 @@
 ---
-title: 如何建立表單資料模型？
+title: 如何建立表單資料模型(FDM)？
 description: 瞭解如何使用自適應表單或AEM工作流程建立表單資料模型(FDM)，以及傳送或擷取資料至資料來源。
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: b17b7441-912c-44c7-a835-809f014a8c86
-source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
+source-git-commit: 7b31a2ea016567979288c7a8e55ed5bf8dfc181d
 workflow-type: tm+mt
-source-wordcount: '1512'
+source-wordcount: '1543'
 ht-degree: 1%
 
 ---
 
-# 建立表單資料模型 {#create-form-data-model}
+# 建立表單資料模型(FDM) {#create-form-data-model}
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
@@ -22,26 +22,26 @@ ht-degree: 1%
 
 ![資料整合](do-not-localize/data-integeration.png)
 
-[!DNL Experience Manager Forms] 資料整合提供直覺式使用者介面，用於建立和使用表單資料模型。 表單資料模型仰賴資料來源交換資料；不過，您可以建立具有或不具有資料來源的表單資料模型。 根據您是否已設定資料來源，從資料模型建立有兩個方法：
+[!DNL Experience Manager Forms] 資料整合提供直覺式使用者介面，用於建立和使用表單資料模型。 表單資料模型(FDM)依賴資料來源交換資料；但是，您可以建立具有或不具有資料來源的表單資料模型(FDM)。 根據您是否已設定資料來源，從資料模型建立有兩個方法：
 
-* **使用預先設定的資料來源**：如果您已如所述設定資料來源 [設定資料來源](configure-data-sources.md)，您可在建立表單資料模型時選取它們。 它會從選定的資料來源帶入所有資料模型物件、屬性和服務，以供表單資料模型使用。
+* **使用預先設定的資料來源**：如果您已如所述設定資料來源 [設定資料來源](configure-data-sources.md)，您可在建立表單資料模型(FDM)時選取它們。 它會從選定的資料來源帶入所有資料模型物件、屬性和服務，以供表單資料模型(FDM)使用。
 
-* **沒有資料來源**：如果您尚未設定表單資料模型的資料來源，仍可建立而不使用資料來源。 您可以使用表單資料模型來撰寫最適化Forms <!--and interactive communication--> 並使用範例資料加以測試。 當資料來源可用時，您可以將表單資料模型與資料來源繫結，這會自動反映在關聯的調適型Forms中<!--and interactive communications-->.
+* **沒有資料來源**：如果您尚未設定表單資料模型(FDM)的資料來源，您仍可建立而不使用資料來源。 您可以使用表單資料模型(FDM)來撰寫最適化Forms <!--and interactive communication--> 並使用範例資料加以測試。 當資料來源可用時，您可以將表單資料模型(FDM)與資料來源繫結，這會自動反映在關聯的調適型Forms中<!--and interactive communications-->.
 
 >[!NOTE]
 >
->您必須同時是兩者 **fdm-author** 和 **forms-user** 群組，以便能夠建立和使用表單資料模型。 連絡您的 [!DNL Experience Manager] 管理員，成為群組的成員。
+>您必須同時是兩者 **fdm-author** 和 **forms-user** 群組，以便能夠建立和使用表單資料模型(FDM)。 連絡您的 [!DNL Experience Manager] 管理員，成為群組的成員。
 
-## 建立表單資料模型 {#data-sources}
+## 建立表單資料模型(FDM) {#data-sources}
 
-請確定您已依照中的說明，設定您要用於表單資料模型中的資料來源 [設定資料來源](configure-data-sources.md). 執行下列作業，根據已設定的資料來源建立表單資料模型：
+請確定您已依照中的說明，設定您要用於表單資料模型(FDM)的資料來源 [設定資料來源](configure-data-sources.md). 執行下列作業，根據已設定的資料來源建立表單資料模型(FDM)：
 
 1. 在 [!DNL Experience Manager] 作者例項，瀏覽至 **[!UICONTROL Forms >資料整合]**.
 1. 選取 **[!UICONTROL 建立>表單資料模型]**.
 1. 在建立表單資料模型對話方塊中：
 
-   * 指定表單資料模型的名稱。
-   * (**可選**)指定表單資料模型的標題、說明和標籤。
+   * 指定表單資料模型(FDM)的名稱。
+   * (**可選**)指定表單資料模型(FDM)的標題、說明和標籤。
    * (**選填，且僅在已設定資料來源時適用**)選取「 」旁的勾選圖示 **[!UICONTROL 資料來源組態]** 欄位並選取您要使用之資料來源的雲端服務所在的設定節點。 它會將下一頁可供選取的資料來源清單，限制在所選設定節點中可供選取的資料來源。 但是，任何 [!DNL Experience Manager] 預設會列出使用者設定檔資料來源。 如果您未選取組態節點，則會列出所有組態節點的資料來源。
 
 1. 選取&#x200B;**[!UICONTROL 「下一步」]**。
@@ -61,27 +61,27 @@ ht-degree: 1%
 
    D. **[!UICONTROL 服務]** 新增的資料來源作業或服務出現的內容區域。
 
-   E. **[!UICONTROL 工具列]** 使用表單資料模型的工具。 工具列會根據表單資料模型中選取的物件顯示更多選項。
+   E. **[!UICONTROL 工具列]** 使用表單資料模型(FDM)的工具。 工具列會根據表單資料模型(FDM)中選取的物件顯示更多選項。
 
    F. **[!UICONTROL 新增選取專案]** 將選取的資料模型物件和服務新增至表單資料模型。
 
-如需有關表單資料模型編輯器以及如何使用它來編輯和設定表單資料模型的詳細資訊，請參閱 [使用表單資料模型](work-with-form-data-model.md).
+有關表單資料模型編輯器以及如何使用它來編輯和配置表單資料模型(FDM)的詳細資訊，請參閱 [使用表單資料模型](work-with-form-data-model.md).
 
 ## 更新資料來源 {#update}
 
-執行下列動作，將資料來源新增或更新至現有的表單資料模型。
+執行下列動作，將資料來源新增或更新至現有的表單資料模型(FDM)。
 
-1. 前往 **[!UICONTROL Forms >資料整合]**，選取您要新增或更新資料來源的表單資料模型，然後選取 **[!UICONTROL 屬性]**.
+1. 前往 **[!UICONTROL Forms >資料整合]**，選取您要新增或更新資料來源的表單資料模型(FDM)，然後選取 **[!UICONTROL 屬性]**.
 1. 在表單資料模型屬性中，前往 **[!UICONTROL 更新來源]** 標籤。
 
    在 **[!UICONTROL 更新來源]** 標籤：
 
    * 選取中的瀏覽圖示 **[!UICONTROL 內容感知設定]** 欄位並選取您要新增之資料來源的雲端設定所在的設定節點。 如果您未選取節點，則雲端設定只會位於 `global` 當您選取時，節點會列出 **[!UICONTROL 新增來源]**.
 
-   * 若要新增資料來源，請選取 **[!UICONTROL 新增來源]** 並選取要新增至表單資料模型的資料來源。 所有資料來源皆於中設定 `global` 和選取的組態節點（如果有的話）會顯示出來。
+   * 若要新增資料來源，請選取 **[!UICONTROL 新增來源]** 並選取要新增至表單資料模型(FDM)的資料來源。 所有資料來源皆於中設定 `global` 和選取的組態節點（如果有的話）會顯示出來。
 
    * 若要以相同型別的另一個資料來源取代現有的資料來源，請選取 **[!UICONTROL 編輯]** 圖示並選取可用資料來源清單中的「 」。
-   * 若要刪除現有的資料來源，請選取 **[!UICONTROL 刪除]** 資料來源的圖示。 如果將資料來源中的資料模型物件新增至表單資料模型，則會停用「刪除」圖示。
+   * 若要刪除現有的資料來源，請選取 **[!UICONTROL 刪除]** 資料來源的圖示。 如果將資料來源中的資料模型物件加入表單資料模型(FDM)，則「刪除」圖示會停用。
 
      ![fdm-properties](assets/fdm-properties.png)
 
@@ -89,17 +89,17 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->在表單資料模型中新增資料來源或更新現有資料來源後，請務必視需要在Adaptive Forms中更新繫結參考<!--and interactive communications--> 使用更新後表單資料模型的使用者。
+>在表單資料模型(FDM)中新增資料來源或更新現有資料來源後，請務必視需要在Adaptive Forms中更新繫結參考<!--and interactive communications--> 使用更新後的表單資料模型(FDM)的客戶。
 
 ## 特定執行模式的內容感知設定 {#runmode-specific-context-aware-config}
 
-[!UICONTROL 表單資料模型] 利用 [Sling內容感知設定](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/context-aware-configs.html) 以支援不同的資料來源引數來連線不同的資料來源 [!DNL Experience Manager] 執行模式。
+[!UICONTROL 表單資料模型(FDM)] 利用 [Sling內容感知設定](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/context-aware-configs.html) 以支援不同的資料來源引數來連線不同的資料來源 [!DNL Experience Manager] 執行模式。
 
-時間 [!UICONTROL 表單資料模型] 使用雲端設定來儲存引數，這些引數在登入時透過原始檔控制（Cloud-Manager GIT存放庫）部署，會使用所有執行模式（開發、預備和生產）的相同引數來建立雲端設定。 不過，若是測試和生產環境需要不同資料集的使用案例，我們會針對不同使用資料來源引數（例如資料來源URL） [!DNL Experience Manager] 執行模式。
+時間 [!UICONTROL 表單資料模型(FDM)] 使用雲端設定來儲存引數，這些引數在登入時透過原始檔控制（Cloud-Manager GIT存放庫）部署，會使用所有執行模式（開發、預備和生產）的相同引數來建立雲端設定。 不過，若是測試和生產環境需要不同資料集的使用案例，我們會針對不同使用資料來源引數（例如資料來源URL） [!DNL Experience Manager] 執行模式。
 
-為此，您需要建立包含資料來源引數 — 值組的OSGi設定。 這會覆寫來自的相同配對 [!UICONTROL 表單資料模型] 在執行階段的雲端設定。 由於OSGi設定預設支援這些執行模式，因此您可以根據執行模式將資料來源引數覆寫為不同的值。
+為此，您需要建立包含資料來源引數 — 值組的OSGi設定。 這會覆寫來自的相同配對 [!UICONTROL 表單資料模型(FDM)] 在執行階段的雲端設定。 由於OSGi設定預設支援這些執行模式，因此您可以根據執行模式將資料來源引數覆寫為不同的值。
 
-若要在中啟用部署專用雲端設定 [!UICONTROL 表單資料模型]：
+若要在中啟用部署專用雲端設定 [!UICONTROL 表單資料模型(FDM)]：
 
 1. 在本機開發執行個體上建立雲端設定。 如需詳細步驟，請參閱 [如何設定資料來源](/help/forms/configure-data-sources.md).
 
@@ -136,11 +136,11 @@ ht-degree: 1%
 
 ## 後續步驟 {#next-steps}
 
-您現在擁有已新增資料來源的表單資料模型。 接下來，您可以編輯表單資料模型以新增及設定資料模型物件與服務、新增資料模型物件之間的關聯、編輯屬性、新增自訂資料模型物件與屬性、產生範例資料等。
+您現在擁有已新增資料來源的表單資料模型(FDM)。 接下來，您可以編輯表單資料模型(FDM)，以新增及設定資料模型物件與服務、新增資料模型物件之間的關聯、編輯屬性、新增自訂資料模型物件與屬性、產生範例資料等。
 
 如需詳細資訊，請參閱 [使用表單資料模型](work-with-form-data-model.md).
 
 
 >[!MORELIKETHIS]
 >
->* [使用表單資料模型](/help/forms/using-form-data-model.md)
+>* [使用表單資料模型(FDM)](/help/forms/using-form-data-model.md)

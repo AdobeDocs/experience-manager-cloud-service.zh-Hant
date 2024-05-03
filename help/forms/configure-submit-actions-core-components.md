@@ -1,13 +1,13 @@
 ---
 title: 如何設定最適化表單的提交動作？
 description: 最適化表單提供多個提交動作。提交動作會定義提交之後處理最適化表單的方式。您可以使用內建的提交動作或建立您自己的提交動作
-keywords: 如何選取最適化表單的提交動作、將最適化表單連線至sharepoint清單、將最適化表單連線至sharepoint檔案庫、將最適化表單連線至表單資料模型
+keywords: 如何選取最適化表單的提交動作、將最適化表單連線至sharepoint清單、將最適化表單連線至sharepoint檔案庫、將最適化表單連線至表單資料模型(FDM)
 feature: Adaptive Forms, Core Components
 exl-id: 495948e8-30a7-4e7c-952f-c71de15520f0
-source-git-commit: 2f567d45a6ba2dfb4dd3346e8510bcb04113eefb
+source-git-commit: 520d07cbb4566f9d39a95ac890a9cd572114d710
 workflow-type: tm+mt
-source-wordcount: '673'
-ht-degree: 55%
+source-wordcount: '678'
+ht-degree: 46%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 55%
 * 透過電子郵件輕鬆傳送表單資料。
 * 在傳輸資料時啟動Microsoft®Power Automate流程或AEM Workflow。
 * 直接將表單資料傳輸至Microsoft®SharePoint Server、Microsoft®Azure Blob Storage或Microsoft® OneDrive。
-* 使用表單資料模型將資料順暢地傳送到已設定的資料來源。
+* 使用表單資料模型(FDM)，順暢地將資料傳送至已設定的資料來源。
 * 方便地將資料提交到 REST 端點。
 
 您可以 [擴充預設提交動作](custom-submit-action-form.md). 您也可以針對組織的特定需求自訂「提交動作」。
@@ -62,7 +62,7 @@ ht-degree: 55%
 * [叫用 Power Automate 流程](/help/forms/forms-microsoft-power-automate-integration.md)
 * [提交到 SharePoint](/help/forms/configure-submit-action-sharepoint.md)
 * [叫用Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
-* [使用表單資料模型提交](/help/forms/using-form-data-model.md)
+* [使用表單資料模型(FDM)提交](/help/forms/using-form-data-model.md)
 * [提交到 Azure Blob 儲存體](/help/forms/configure-submit-action-azure-blob-storage.md)
 * [提交到 REST 端點](/help/forms/configure-submit-action-restpoint.md)
 * [提交到 OneDrive](/help/forms/configure-submit-action-onedrive.md)
@@ -70,8 +70,8 @@ ht-degree: 55%
 
 您也可以將最適化表單提交至其他儲存設定：
 
-* [將最適化表單連線至Salesforce應用程式](/help/forms/oauth2-client-credentials-flow-for-server-to-server-integration.md)
-* [將最適化表單連線至Microsoft® Dynamics OData](/help/forms/ms-dynamics-odata-configuration.md)
+* [將最適化表單連接到 Salesforce 應用程式](/help/forms/aem-forms-salesforce-integration.md)
+* [將最適化表單連接到 Microsoft® Dynamics OData](/help/forms/ms-dynamics-odata-configuration.md)
 
 您可以 [自訂預設提交動作](custom-submit-action-form.md). 此外，您可以自訂「提交動作」以符合特定的組織需求。
 
@@ -94,11 +94,11 @@ Refer to [configure the send email submit action for an Adaptive Form](/help/for
 
 >[!CAUTION]
 >
->If you  [prefill](prepopulate-adaptive-form-fields.md) a form template,  a Form Data Model or schema based Adaptive Form with XML or JSON data complaint to a schema (XML schema, JSON schema , form template, or form data model) that is data does not contain &lt;afData&gt;, &lt;afBoundData&gt;, and &lt;/afUnboundData&gt; tags, then the data of unbounded fields (Unbounded fields are Adaptive Form fields without [bindref](prepopulate-adaptive-form-fields.md) property) of the Adaptive Form is lost. 
+>If you  [prefill](prepopulate-adaptive-form-fields.md) a form template,  a Form Data Model (FDM) or schema based Adaptive Form with XML or JSON data complaint to a schema (XML schema, JSON schema , form template, or form data model (FDM)) that is data does not contain &lt;afData&gt;, &lt;afBoundData&gt;, and &lt;/afUnboundData&gt; tags, then the data of unbounded fields (Unbounded fields are Adaptive Form fields without [bindref](prepopulate-adaptive-form-fields.md) property) of the Adaptive Form is lost. 
 
 >[!CAUTION]
 >
->If you [prefill](prepopulate-adaptive-form-fields.md) a form template, a Form Data Model or schema based Adaptive Form with XML or JSON data complaint to a schema (XML schema, JSON schema, or form data model) that does not contain &lt;afData&gt;, &lt;afBoundData&gt;, and &lt;/afUnboundData&gt; tags, then the data of unbounded fields (Unbounded fields are Adaptive Form fields without [bindref](prepopulate-adaptive-form-fields.md) property) of the Adaptive Form is lost.
+>If you [prefill](prepopulate-adaptive-form-fields.md) a form template, a Form Data Model (FDM) or schema based Adaptive Form with XML or JSON data complaint to a schema (XML schema, JSON schema, or form data model(FDM)) that does not contain &lt;afData&gt;, &lt;afBoundData&gt;, and &lt;/afUnboundData&gt; tags, then the data of unbounded fields (Unbounded fields are Adaptive Form fields without [bindref](prepopulate-adaptive-form-fields.md) property) of the Adaptive Form is lost.
 
 ## Submit to Microsoft® SharePoint {#submit-to-sharedrive}
 
@@ -106,11 +106,11 @@ The **[!UICONTROL Submit to SharePoint]** Submit Action connects an Adaptive For
 
 Integration of AEM Adaptive Form with Microsoft® SharePoint enables the submission, retrieval, or storage of data, files, and other relevant information within the SharePoint storage. To learn how to configure submit to SharePoint submit action for an Adaptive Form, [click here.](/help/forms/configure-submit-action-sharepoint.md) 
 
-## Submit using Form Data Model {#submit-using-form-data-model}
+## Submit using Form Data Model (FDM) {#submit-using-form-data-model}
 
-The **[!UICONTROL Submit using Form Data Model]** Submit Action writes submitted Adaptive Form data for the specified data model object in a Form Data Model to its data source. When configuring the Submit Action, you can choose a data model object whose submitted data you want to write back to its data source.
+The **[!UICONTROL Submit using Form Data Model (FDM)]** Submit Action writes submitted Adaptive Form data for the specified data model object in a Form Data Model (FDM) to its data source. When configuring the Submit Action, you can choose a data model object whose submitted data you want to write back to its data source.
 
-When a user submits a form based on a form data model, you can [configure the form to write the submitted data to the data sources associated with the data model object.](/help/forms/using-form-data-model.md#write-submitted-adaptive-form-data-into-data-sources-write-af)
+When a user submits a form based on a form data model (FDM), you can [configure the form to write the submitted data to the data sources associated with the data model object.](/help/forms/using-form-data-model.md#write-submitted-adaptive-form-data-into-data-sources-write-af)
 
 ## Submit to REST endpoint {#submit-to-rest-endpoint}
 
@@ -212,7 +212,7 @@ If end-user bypass those validations and submit the forms, the server again perf
 
 為了 AEM 安全性和強化準則，請設定自訂錯誤頁面，例如 400.jsp、404.jsp 和 500.jsp。提交表單時，如果出現 400、404 或 500 錯誤，就會呼叫這些處理常式。在發佈節點上觸發這些錯誤代碼時，也會呼叫處理常式。您也可以為其他 HTTP 錯誤代碼建立 JSP 頁面。
 
-您使用符合結構描述 (其資料不含 `<afData>`、`<afBoundData>` 和 `</afUnboundData>` 標記) 的 XML 或 JSON 資料，預先填入表單資料模型或以結構描述為主的最適化表單的綱要時，最適化表單的未繫結欄位資料會遺失。該結構描述可以是 XML 結構描述、JSON 結構描述或表單資料模型。未繫結欄位是最適化表單欄位，但沒有 `bindref` 屬性。
+當您將表單資料模型(FDM)或結構描述型調適型表單以XML或JSON資料投訴預先填寫到資料不包含的結構描述時 `<afData>`， `<afBoundData>`、和 `</afUnboundData>` 標籤中，則最適化表單之無限制欄位的資料會遺失。 結構描述可以是XML結構描述、JSON結構描述或表單資料模型(FDM)。 未繫結欄位是最適化表單欄位，但沒有 `bindref` 屬性。
 
 <!-- For more information, see [Customizing Pages shown by the Error Handler](/help/sites-developing/customizing-errorhandler-pages.md). -->
 

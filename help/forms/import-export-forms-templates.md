@@ -4,16 +4,17 @@ description: 瞭解如何從AEM執行個體移轉最適化Forms、PDF forms、�
 topic-tags: forms-manager
 role: Admin, User
 feature: Adaptive Forms
-source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
+exl-id: f5105fb7-b8c0-4656-8095-b21d392746c0
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
-source-wordcount: '1193'
+source-wordcount: '1195'
 ht-degree: 0%
 
 ---
 
 # 匯入或匯出最適化Forms和AEM Forms資產 {#importing-and-exporting-assets-to-aem-forms}
 
-您可以移動最適化Forms和相關資產，例如最適化表單主題、表單資料模型、最適化表單範本、檔案片段和PDF forms，在 [!DNL AEM Forms] 執行個體。 您可以匯入和匯出CRX封裝或二進位檔案格式的資產。
+您可以移動最適化Forms和相關資產，例如最適化表單主題、表單資料模型(FDM)、最適化表單範本、檔案片段和PDF forms等 [!DNL AEM Forms] 執行個體。 您可以匯入和匯出CRX封裝或二進位檔案格式的資產。
 
 匯出最適化表單時，不會匯出內容原則和範本。 使用 [封裝管理員](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=en#how-rolling-deployments-work) 以匯出這類資產。
 
@@ -26,7 +27,7 @@ ht-degree: 0%
 1. 選取資產並選取 **[!UICONTROL 下載]** 圖示。
 1. 在下載資產中，選擇下列其中一個選項，然後選取 **[!UICONTROL 下載]**.
 
-   * **下載為CRX套件：** 使用選項從下載並移動所有選取的資產和相關相依性 [!DNL AEM Forms] 執行個體到另一個。 它會下載所有資產和資料夾作為CRX套件，包括在AEM (最適化Forms和最適化表單片段)中編寫的表單、表單集、表單資料模型、表單範本、PDF檔案和參考資源（XSD和影像）。
+   * **下載為CRX套件：** 使用選項從下載並移動所有選取的資產和相關相依性 [!DNL AEM Forms] 執行個體到另一個。 它會下載所有資產和資料夾作為CRX套件，包括在AEM (最適化Forms和最適化表單片段)中編寫的表單、表單集、表單資料模型(FDM)、表單範本、PDF檔案和參照的資源（XSD和影像）。
 以套件形式下載資產的好處是也可下載所選資產所參考的資產。 例如，如果您有使用表單範本、XSD和影像的最適化表單。 當您選取此最適化表單並將其下載為套件時，下載的套件也包含表單範本、XSD和影像。 也會下載與資產相關聯的所有中繼資料屬性（包括自訂屬性）。
 
    * **將資產下載為二進位檔案：** 使用選項僅下載表單範本(XDP)、PDF forms(PDF)、檔案(PDF)和資源（影像、結構描述、樣式表）。 您可以使用外部應用程式編輯這些資產。 它會下載具有二進位檔的資產(例如影像、PDF和其他支援的格式)為.zip檔案。

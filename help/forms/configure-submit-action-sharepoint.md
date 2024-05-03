@@ -3,13 +3,13 @@ Title: How to send data to a SharePoint storage on submission of an Adaptive For
 Description: Learn how to send data from your Adaptive Form to a SharePoint storage like a SharePoint list or Document library when you submit the form.
 keywords: 如何連線SharePoint清單以取得最適化表單？、如何連線SharePoint檔案庫取得最適化表單、提交至SharePoint、建立SharePoint檔案庫組態、在最適化表單中使用提交至SharePoint提交動作、將最適化表單連線至Microsoft&reg； SharePoint清單。
 feature: Adaptive Forms, Core Components
-source-git-commit: 8784c0bcd05eeae41a472faa5ecad03cbdd8a9b6
+exl-id: e925a750-5fb5-4950-afd3-78551eec985d
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
-source-wordcount: '1037'
+source-wordcount: '1042'
 ht-degree: 34%
 
 ---
-
 
 # 將最適化表單連線至Microsoft® SharePoint
 
@@ -93,7 +93,7 @@ AEMas a Cloud Service提供多種現成的提交動作，用於處理表單提�
 若要使用 [!UICONTROL 提交至SharePoint清單] 以最適化表單提交動作：
 
 1. [建立SharePoint清單設定](#create-sharepoint-list-configuration)：它會將AEM Forms連線至您的Microsoft® Sharepoint清單儲存空間。
-1. [在最適化表單中使用表單資料模型提交](#use-submit-using-fdm)：此動作會將您的最適化表單連線至設定的Microsoft® SharePoint。
+1. [在最適化表單中使用表單資料模型提交(FDM)](#use-submit-using-fdm)：此動作會將您的最適化表單連線至設定的Microsoft® SharePoint。
 
 ### 建立SharePoint清單設定 {#create-sharepoint-list-configuration}
 
@@ -117,24 +117,24 @@ AEMas a Cloud Service提供多種現成的提交動作，用於處理表單提�
 1. 選取 **[!UICONTROL 建立]** 以建立Microsoft® SharePointList的雲端設定。
 
 
-### 在最適化表單中使用表單資料模型提交 {#use-submit-using-fdm}
+### 在最適化表單中使用表單資料模型提交(FDM) {#use-submit-using-fdm}
 
 您可以在調適型表單中使用已建立的SharePoint清單設定，以在SharePoint清單中儲存資料或產生的記錄檔案。 執行以下步驟，在最適化表單中使用SharePoint清單：
 
-1. [使用Microsoft建立表單資料模型](/help/forms/create-form-data-models.md)
-1. [設定表單資料模型以擷取及傳送資料](/help/forms/work-with-form-data-model.md#configure-services)
+1. [使用Microsoft建立表單資料模型(FDM)](/help/forms/create-form-data-models.md)
+1. [設定表單資料模型(FDM)以擷取及傳送資料](/help/forms/work-with-form-data-model.md#configure-services)
 1. [建立最適化表單](/help/forms/creating-adaptive-form-core-components.md)
-1. [使用表單資料模型設定提交動作](/help/forms/using-form-data-model.md)
+1. [使用表單資料模型(FDM)設定提交動作](/help/forms/using-form-data-model.md)
 
 提交表單時，資料會儲存在指定的Microsoft® Sharepoint清單儲存空間中。
 
 >[!NOTE]
 >
 > Microsoft® SharePoint清單不支援下列欄型別：
-* 影像欄
-* 中繼資料欄
-* 人員欄
-* 外部資料欄
+> * 影像欄
+> * 中繼資料欄
+> * 人員欄
+> * 外部資料欄
 
 ## 相關文章
 

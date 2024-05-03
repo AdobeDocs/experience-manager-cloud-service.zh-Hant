@@ -6,10 +6,10 @@ contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms, Foundation Components
 exl-id: 198a26a9-d6bb-457d-aab8-0a5d15177c48
-source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
-source-wordcount: '2377'
-ht-degree: 91%
+source-wordcount: '2378'
+ht-degree: 90%
 
 ---
 
@@ -179,7 +179,7 @@ AEM Forms 為表單提交提供現成可用的成功和錯誤處理常式。這�
 
 >[!NOTE]
 >
-> * 若要透過規則編輯器的調用服務動作來使用錯誤處理常式，請使用表單資料模型來設定調適型自表單。
+> * 若要使用錯誤處理常式搭配規則編輯器的「叫用」服務動作，請使用表單資料模型(FDM)來設定Adaptive Forms 。
 > * 如果錯誤回應是在標準結構描述中，則系統會提供預設的錯誤處理常式以顯示欄位的錯誤訊息。您還可以從自訂錯誤處理常式函數來呼叫預設的錯誤處理常式。
 
 使用規則編輯器可以：
@@ -338,7 +338,7 @@ Before adding custom handler, you must configure the adaptive form for asynchron
 1. Select **[!UICONTROL Revalidate on server]** to validate the input field values on server before submission.
 1. Select the Submit Action:
 
-    * Select **[!UICONTROL Submit using Form Data Model]** and select the appropriate data model, if you are using RESTful web service based [form data model](work-with-form-data-model.md) as the data source.
+    * Select **[!UICONTROL Submit using Form Data Model (FDM)]** and select the appropriate data model, if you are using RESTful web service based [form data model (FDM)](work-with-form-data-model.md) as the data source.
     * Select **[!UICONTROL Submit to REST Service endpoint]** and specify the **[!UICONTROL Redirect URL/Path]**, if you are using RESTful web services as the data source.
 
     ![adaptive form submission properties](assets/af_submission_properties.png)
