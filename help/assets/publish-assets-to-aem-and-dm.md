@@ -1,13 +1,13 @@
 ---
 title: 快速發佈至AEM和Dynamic Media
 description: 資產檢視中的快速發佈可讓您同時或個別將資產發佈到AEM和Dynamic Media。 您可以選取資產和資料夾，然後選擇發佈至Dynamic Media或AEM。
-source-git-commit: d80d794d739a476a937a8e71d114b1e255103b67
+exl-id: 147c1c35-0d81-4458-b4ed-7541d2b0dd54
+source-git-commit: 0891d58e10e8be746c0be5f55d554174567fcd64
 workflow-type: tm+mt
-source-wordcount: '1182'
+source-wordcount: '1188'
 ht-degree: 0%
 
 ---
-
 
 # 將資產發佈到AEM和Dynamic Media{#Publish-Assets-to-AEM-and-Dynamic-Media}
 
@@ -124,4 +124,5 @@ Experience Manager Assets檢視可讓您靈活地將資產同時發佈至AEM或D
 * 可在資產層級複製或貼上Dynamic Media URL (如果資產已發佈至Dynamic Media)。
 * 可在發佈至AEM時發佈參考（資產、標籤等）。
 * 能夠覆寫檔案夾層級的Dynamic Media同步狀態。
-* 可在檔案夾層級覆寫Dynamic Media發佈模式。
+* 可在檔案夾層級覆寫Dynamic Media發佈模式
+* 尚不支援管理發布。
