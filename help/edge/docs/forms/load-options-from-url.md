@@ -3,12 +3,13 @@ title: 從 URL 載入下拉式清單選項
 description: 下拉式清單選項是包含在不同的試算表中，然後可透過提供的 URL 匯入到主要試算表中。
 feature: Edge Delivery Services
 exl-id: 5b0bc1b6-6e33-41f3-b7c1-4d997787b6cd
-source-git-commit: e61ef529dc562862bd02d7767e45de3e2ec4983b
-workflow-type: ht
+source-git-commit: 4a534f4335376673c362ef91a877e67a523be560
+workflow-type: tm+mt
 source-wordcount: '442'
 ht-degree: 100%
 
 ---
+
 
 # 從 URL 載入下拉式清單選項
 
@@ -88,3 +89,5 @@ https://main--wefinance--wkndforms.hlx.live/enquiry-form
 ## 另請參閱
 
 {{see-more-forms-eds}}
+
+

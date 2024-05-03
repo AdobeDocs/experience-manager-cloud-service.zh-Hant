@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的運作方式以及該軟體可以為您做哪些事。
 breadcrumb-title: 使用手冊
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 695389430e3be4cef107aefad44fd7453cc9d36d
+source-git-commit: 4a534f4335376673c362ef91a877e67a523be560
 workflow-type: tm+mt
 source-wordcount: '4908'
 ht-degree: 99%
@@ -716,7 +716,7 @@ ht-degree: 99%
       + [已知問題、最佳做法和常見問題集](/help/forms/communications-known-issues-limitations.md)
    + 交易報告{#using-communications}
       + [交易報告計費 API](/help/forms/transaction-reports-billable-apis.md)
-      + [記錄自訂實作的交易](/help/forms/record-transaction-custom-implementation.md)
+      + [記錄自訂實施的交易](/help/forms/record-transaction-custom-implementation.md)
    + 開發人員 API 參考 {#aem-forms-developer-api-reference}
       + [最適化表單 API 參考](https://developer-stage.adobe.com/experience-cloud/experience-manager-apis/api/stable/forms/)
       + [AEM Forms as a Cloud Service 通訊 API 參考](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)
@@ -840,7 +840,7 @@ ht-degree: 99%
       + [重新導向](/help/edge/docs/redirects.md)
    + 建立表單 {#build-forms}
       + [概觀](/help/edge/docs/forms/overview.md)
-      + 立即開始 {#getting-started-eds-forms}
+      + 立即開始 {#getting-started-edge-delivery-services-forms}
          + [快速入門](/help/edge/docs/forms/tutorial.md)
          + [使用 Google Sheets 或 Microsoft Excel 建立表單](/help/edge/docs/forms/create-forms.md)
          + [設定您的 Google 表單或 Microsoft Excel 檔案以開始接受資料](/help/edge/docs/forms/submit-forms.md)
@@ -850,13 +850,13 @@ ht-degree: 99%
          + [自訂表單的外觀](/help/edge/docs/forms/style-theme-forms.md)
          + [使用規則為表單新增動態行為](/help/edge/docs/forms/rules-forms.md)
          + [提交表單後顯示自訂感謝訊息](/help/edge/docs/forms/thank-you-page-form.md)
-      + 功能 {#advanced-features-eds-forms}
+      + 功能 {#advanced-features-edge-delivery-services-forms}
          + [表單片段](/help/edge/docs/forms/form-fragments.md)
          + [將可重複區段新增到表單](/help/edge/docs/forms/repeatable-forms.md)
          + [轉換](/help/edge/docs/forms/translate-forms.md)
          + [reCAPTCHA](/help/edge/docs/forms/recaptacha-forms.md)
          + [自訂元件](/help/edge/docs/forms/custom-components-forms.md)
-         + [表單的即時使用者監控](/help/edge/docs/forms/real-time-user-monitoring-for-forms.md)
+         + [表單的即時使用者監控](/help/edge/docs/forms/real-user-monitoring-for-forms.md)
       + 參考資料 {#forms-references}
          + [最適化表單區塊元件及其屬性](/help/edge/docs/forms/form-components.md)
    + Edge Delivery 資源 {#resources}
