@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 最新發行說明�
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 最新發行說明。'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 00d91be618cd7ce1fb9e78115fbe3d431b20cd34
+source-git-commit: ee16d3a0fe1fc93c215d31f7dea0e9c21e051350
 workflow-type: tm+mt
-source-wordcount: '1965'
-ht-degree: 80%
+source-wordcount: '1963'
+ht-degree: 83%
 
 ---
 
@@ -61,17 +61,17 @@ Have a look at the April 2024 Release Overview video for a summary of the featur
 ### 資產檢視中的新功能 {#assets-view-new-features}
 
 
-**內容搜尋**
+**內容相關搜尋**
 
-您現在也可以 [定義文字提示以搜尋存放庫中的可用資產](/help/assets/search-assets-view.md#contextual-search). Experience Manager Assets會自動將這些文字提示轉換為搜尋篩選器，並顯示搜尋結果。 您可以使用「篩選窗格」來檢視及修改自動篩選，以進一步縮小搜尋結果的範圍。
+您現在也可以 [定義文字提示以搜尋存放庫中的可用資產](/help/assets/search-assets-view.md#contextual-search). Experience Manager Assets 會自動轉換這些文字提示，以便搜尋篩選器並顯示搜尋結果。您可以使用篩選器窗格查看和修改自動篩選器，以進一步縮小搜尋結果範圍。
 
-![內容搜尋](/help/assets/assets/contextual-search-text-prompt1.png)
+![內容相關搜尋](/help/assets/assets/contextual-search-text-prompt1.png)
 
-**快速視訊快速動作**
+**表達影片快速動作**
 
-Experience Manager Assets現在包含 [由Adobe Express提供支援的簡單直覺式視訊編輯工具](/help/assets/edit-videos-assets-view.md) 提升內容重複使用率並加快內容速度。 編輯選項包括裁剪、裁切、調整視訊大小，以及將MP4轉換為GIF檔案。
+Experience Manager Assets現在包含 [由Adobe Express提供支援的簡單直覺式視訊編輯工具](/help/assets/edit-videos-assets-view.md) 提升內容重複使用率並加快內容速度。 此編輯選項包括修剪、裁切、調整影片大小以及將 MP4 轉換為 GIF 檔案。
 
-![使用Adobe Express裁切視訊](/help/assets/assets/adobe-express-crop-video.png)
+![使用 Adob&#x200B;&#x200B;e Express 裁切影片](/help/assets/assets/adobe-express-crop-video.png)
 
 **動態轉譯**
 
@@ -79,11 +79,11 @@ Experience Manager Assets現在包含 [由Adobe Express提供支援的簡單直�
 
 ![動態轉譯](/help/assets/assets/preset_smart_crop.png)
 
-**就地重新命名資產和資料夾**
+**就地重命名資產和資料夾**
 
 Experience Manager Assets現在提供簡化的使用者體驗 [按一下即可重新命名資產或資料夾](/help/assets/manage-organize-assets-view.md).
 
-**將中繼資料表單指派或移除至多個資料夾**
+**指派或刪除中繼資料表單至多個資料夾**
 
 您現在可以 [將中繼資料表單指派或移除至多個資料夾](/help/assets/metadata-assets-view.md#assign-metadata-form-to-a-folder).
 
@@ -97,7 +97,7 @@ Experience Manager Assets現在提供簡化的使用者體驗 [按一下即可�
 
 -->
 
-### 發行前版本的 AEM Forms 新功能 {#forms-pre-release}
+### AEM Forms中的新功能 {#forms-new-features}
 
 * **核心元件式最適化表單的增強型視覺規則編輯器**：此版本針核心元件式最適化表單的視覺規則編輯器進行重大升級。此版本對核心元件式最適化表單的視覺規則編輯器進行重大升級。此更新著重於簡化與自訂函數的互動，讓您能夠建立更強大、更有效率的表單。
 
