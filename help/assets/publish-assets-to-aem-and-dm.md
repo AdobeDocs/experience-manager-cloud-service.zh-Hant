@@ -1,9 +1,9 @@
 ---
 title: 快速發佈至AEM和Dynamic Media
 description: 快速發佈是新UI或資產檢視中的功能。 此功能讓使用者能夠靈活地同時或個別快速發佈至AEM和Dynamic Media 。 這表示在選取資產和資料夾後，使用者可以選擇發佈至Dynamic Media或發佈至AEM。 快速發佈功能可讓新UI將資產和資料夾發佈到Dynamic Media和AEM。
-source-git-commit: a1069ec278143665c1e17ea1a482589763dd153f
+source-git-commit: f3b600fc3d9c519158b6b90bd9a9f881724934de
 workflow-type: tm+mt
-source-wordcount: '1219'
+source-wordcount: '1216'
 ht-degree: 0%
 
 ---
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # 將資產發佈到AEM和Dynamic Media{#Publish-Assets-to-AEM-and-Dynamic-Media}
 
-Experience Manager Assets可讓您使用「資產」檢視快速將資產發佈到Experience Manager和Dynamic Media。 這可確保您管理資產，然後使用發佈它們 [未切換至「管理員」檢視的「資產」檢視](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/overview#persona-based-experiences).
+Experience Manager Assets可讓您使用「資產」檢視快速將資產發佈到Experience Manager和Dynamic Media。 這可確保您管理資產，然後使用發佈它們 [未切換至「管理員」檢視的「資產」檢視](/help/assets/overview.md##persona-based-experiences).
 
 Experience Manager Assets檢視可讓您靈活地將資產同時發佈至AEM或Dynamic Media （或兩者）。 您可以在上傳、瀏覽和搜尋資產時發佈資產。 本文會詳細說明發佈資產的所有選項。
 
@@ -21,8 +21,8 @@ Experience Manager Assets檢視可讓您靈活地將資產同時發佈至AEM或D
 
 * 若要檢視Dynamic Media的發佈選項，請使用「管理員檢視」設定下列設定：
 
-   * [建立Dynamic Media雲端設定](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/config-dm#configuring-dynamic-media-cloud-services).
-   * 在資料夾層級設定Dynamic Media發佈模式。 您也可以在建立Dynamic Media雲端設定時進行這些設定。 若要覆寫資料夾層級的這些設定，請參閱 [在Dynamic Media中設定資料夾層級的選取發佈](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/selective-publishing).
+   * [建立Dynamic Media雲端設定](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services).
+   * 在資料夾層級設定Dynamic Media發佈模式。 您也可以在建立Dynamic Media雲端設定時進行這些設定。 若要覆寫資料夾層級的這些設定，請參閱 [在Dynamic Media中設定資料夾層級的選取發佈](/help/assets/dynamic-media/selective-publishing.md).
 
 * 若要檢視AEM的發佈選項，您必須為環境設定AEM發佈端點。
 
@@ -99,7 +99,7 @@ Experience Manager Assets檢視可讓您靈活地將資產同時發佈至AEM或D
 
 若要檢查資產或資料夾的發佈狀態：
 
-1. 按一下 **資產** 在 **資產管理** 區段可在左窗格中使用。
+1. 按一下 **[!UICONTROL 資產]** 在 **[!UICONTROL 資產管理]** 區段可在左窗格中使用。
 2. 使用檢視切換器切換至清單檢視。 您可以檢視資產屬性，例如AEM Publish、Dynamic Media Publish、標題、大小、維度等。\
    如果資產或資料夾未發佈，則狀態 **AEM發佈** 和 **Dynamic Media發佈** 欄會顯示為 **不適用**
    ![檢查發佈狀態1](/help/assets/assets/check-publish-status1.png)
