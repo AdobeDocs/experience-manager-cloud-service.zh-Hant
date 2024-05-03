@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的運作方式以及該軟體可以為您做哪些事。
 breadcrumb-title: 使用手冊
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 6f78b43e857ca496465c315e8812bb67aff8c627
+source-git-commit: 6c56f753d2a32de6fe11fd47843cee5bcb8cac4e
 workflow-type: tm+mt
-source-wordcount: '4907'
+source-wordcount: '4915'
 ht-degree: 99%
 
 ---
@@ -851,12 +851,12 @@ ht-degree: 99%
          + [使用規則為表單新增動態行為](/help/edge/docs/forms/rules-forms.md)
          + [提交表單後顯示自訂感謝訊息](/help/edge/docs/forms/thank-you-page-form.md)
       + 功能 {#advanced-features-edge-delivery-services-forms}
-         + [表單片段](/help/edge/docs/forms/form-fragments.md)
+         + [使用表單片段](/help/edge/docs/forms/form-fragments.md)
          + [將可重複區段新增到表單](/help/edge/docs/forms/repeatable-forms.md)
-         + [轉換](/help/edge/docs/forms/translate-forms.md)
-         + [reCAPTCHA](/help/edge/docs/forms/recaptacha-forms.md)
+         + [翻譯您的表單](/help/edge/docs/forms/translate-forms.md)
+         + [使用reCAPTCHA來保護您的表單](/help/edge/docs/forms/recaptacha-forms.md)
          + [自訂元件](/help/edge/docs/forms/custom-components-forms.md)
-         + [表單的即時監控](/help/edge/docs/forms/real-use-monitoring-for-forms.md)
+         + [表單的即時使用監控](/help/edge/docs/forms/real-use-monitoring-for-forms.md)
       + 參考資料 {#forms-references}
          + [最適化表單區塊元件及其屬性](/help/edge/docs/forms/form-components.md)
    + Edge Delivery 資源 {#resources}
