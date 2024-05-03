@@ -1,9 +1,9 @@
 ---
 title: 快速發佈至AEM和Dynamic Media
-description: 快速發佈是新UI或資產檢視中的功能。 此功能讓使用者能夠靈活地同時或個別快速發佈至AEM和Dynamic Media 。 這表示在選取資產和資料夾後，使用者可以選擇發佈至Dynamic Media或發佈至AEM。 快速發佈功能可讓新UI將資產和資料夾發佈到Dynamic Media和AEM。
-source-git-commit: f3b600fc3d9c519158b6b90bd9a9f881724934de
+description: 資產檢視中的快速發佈可讓您同時或個別將資產發佈到AEM和Dynamic Media。 您可以選取資產和資料夾，然後選擇發佈至Dynamic Media或AEM。
+source-git-commit: d80d794d739a476a937a8e71d114b1e255103b67
 workflow-type: tm+mt
-source-wordcount: '1216'
+source-wordcount: '1182'
 ht-degree: 0%
 
 ---
