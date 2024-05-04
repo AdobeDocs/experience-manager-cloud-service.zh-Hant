@@ -5,10 +5,10 @@ contentOwner: khsingh
 feature: Adaptive Forms, Troubleshooting
 role: User
 exl-id: 249ec8f2-4176-428a-bfcf-80b381ec7263
-source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
+source-git-commit: a19a3d81652cb17fcd6b11e6047d2ea697bf3041
 workflow-type: tm+mt
-source-wordcount: '167'
-ht-degree: 1%
+source-wordcount: '213'
+ht-degree: 0%
 
 ---
 
@@ -53,3 +53,13 @@ If the profile exists and issues still persist, contact Adobe Support. -->
 使用者無法執行建置管道。 管道執行一段時間後就會失敗。
 
 若要解決此問題，請開啟Cloud Manager，選取 **[!UICONTROL 更新]** 選項，然後執行管道。
+
+
+## 套件組合未處於作用中狀態 {#bundles-inactive-state}
+
+若要解決此問題，請執行以下步驟：
+
+1. 啟動AEM，並等待它完全啟動，直到所有套件組合都啟動為止。
+1. 停止AEM (Ctrl + C)。
+1. 放置Forms `.far` 檔案中新增的程式碼。
+1. 重新啟動AEM伺服器。

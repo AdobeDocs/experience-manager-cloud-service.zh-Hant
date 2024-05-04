@@ -5,10 +5,10 @@ feature: Adaptive Forms, Foundation Components
 role: User, Developer
 level: Beginner
 exl-id: 38ca5eea-793b-420b-ae60-3a0bd83caf00
-source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+source-git-commit: 619cf91e3d1cc5504d8de0e70eb88e9ae7285af9
 workflow-type: tm+mt
-source-wordcount: '1500'
-ht-degree: 70%
+source-wordcount: '1560'
+ht-degree: 68%
 
 ---
 
@@ -205,6 +205,16 @@ Do the following to use XML or JSON schema as form model for an Adaptive Form:
 >
 > 您也可以將自適應表單另存為範本。 如需更多資訊，請參閱[使用最適化表單建立範本](/help/forms/template-editor.md#saving-an-adaptive-form-as-template-saving-adaptive-form-as-template)。
 
+## 如何重新命名AEM最適化表單？ {#rename-an-AEM-Adaptive-Form}
+
+若要重新命名最適化表單，請執行下列步驟：
+
+1. 在您的AEM Forms使用者介面中選取最適化表單。
+1. 按一下 **屬性** 位於上方邊欄上。
+1. 變更表單名稱，在 **標題** 標籤，如下圖所示。
+1. 按一下 **儲存並關閉**.
+
+![重新命名AEM最適化表單](/help/forms/assets/change-af-name.png)
 
 ## 另請參閱 {#see-also}
 
