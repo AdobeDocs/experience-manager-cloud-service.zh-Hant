@@ -1,19 +1,19 @@
 ---
-title: 使用AEM的Adobe數位資產管理(DAM)
-description: 瞭解如何使用Experience Manager Assetsas a Cloud Service來使用和管理Adobe的數位資產管理(DAM)。
+title: 使用 AEM 進行 Adobe 數位資產管理 (DAM)
+description: 了解如何使用 Experience Manager Assets as a Cloud Service 來使用和管理 Adobe 數位資產管理 (DAM)。
 contentOwner: AK
 feature: Asset Management
 role: User,Leader,Architect
 exl-id: 4437f214-d058-4975-8b8f-869a12c8103b
 source-git-commit: 4844d736d3791b376b7ad9cafa005c856c114837
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '920'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
 
-# Assets as a簡介 [!DNL Cloud Service] 適用於AEM的數位資產管理 {#assets-cloud-service-introduction}
+# 在 AEM 中為數位資產管理引入 Assets as a [!DNL Cloud Service] {#assets-cloud-service-introduction}
 
 <!-- Need review information from gklebus -->
 
@@ -23,13 +23,13 @@ Adobe Experience Manager Assets as a [!DNL Cloud Service] 為企業提供一種�
 
 企業需要支援各種檔案格式和內容解析度，以適用於多設備、跨地理位置和多語言的使用案例。資產處理和儲存要求所需要的資源和功能可能會使傳統解決方案負擔過重。有時，資產處理的技術限制不會產生預期的結果，而在其他時候，儲存成本不利於營利。
 
-首先，瞭解 [雲端原生產品的優點](#solution-benefits) 適用於數位資產管理。 查看值得注意的 [Experience Manager as a  [!DNL Cloud Service]](/help/release-notes/aem-cloud-changes.md) 幾項變更，這些變更也會影響 Experience Manager Assets，接者是值得注意的 [Assets 變更](/help/assets/assets-cloud-changes.md)。
+首先，了解對於數位資產管理而言，[雲端原生產品帶來的優勢](#solution-benefits)。查看值得注意的 [Experience Manager as a  [!DNL Cloud Service]](/help/release-notes/aem-cloud-changes.md) 幾項變更，這些變更也會影響 Experience Manager Assets，接者是值得注意的 [Assets 變更](/help/assets/assets-cloud-changes.md)。
 
 繼續閱讀以了解[新 Assets 功能的詳細資訊](#whats-new-assets)和[已知問題](/help/release-notes/maintenance/latest.md)。查看[已過時或移除的功能](/help/release-notes/deprecated-removed-features.md)清單以了解此版本已刪除的功能。最後，借助此[術語表](/help/overview/terminology.md)了解 Experience Manager 術語。
 
 ## 解決方案優勢 {#solution-benefits}
 
-以下是Assets as a的主要優點 [!DNL Cloud Service] 適用於數位資產管理。 如需更多資訊，請參閱 [Experience Manager as a  [!DNL Cloud Service]](/help/overview/introduction.md) 概述。
+以下是對於數位資產管理而言，Assets as a [!DNL Cloud Service] 帶來的重要優勢。如需更多資訊，請參閱 [Experience Manager as a  [!DNL Cloud Service]](/help/overview/introduction.md) 概述。
 
 * **用於資產處理的現代雲端服務**：新的資產微服務是一種雲端型、可擴展、可靠且簡單易用的資產處理服務。
 * **高度可擴展**：具擴展性、跨所有部署類型。隨時按需求提供實際上不限數量的資源。與傳統系統相比，節省了過度設計的成本。
@@ -38,13 +38,13 @@ Adobe Experience Manager Assets as a [!DNL Cloud Service] 為企業提供一種�
 * **持續監控**：系統監控是自動化的，內建的檢查和觸發機制有助於維護效能、可用性和整體穩健性。
 * **輕鬆部署**：Experience Manager 在雲端中的操作完全自動化，無需人工介入。對於自動化部署，Cloud Manager (CM) 元件會自動建置包含您自訂程式碼的可部署 Docker 影像。
 
-## 適用於數位資產管理的可用角色型體驗 {#persona-based-experiences}
+## 適用於數位資產管理以角色為主的體驗 {#persona-based-experiences}
 
 Adobe 為您提供健全的數位資產管理 (DAM) 解決方案，可供您善加利用您的數位資產。Adobe Experience Manager Assets 具有兩種使用同一雲端服務存放庫的獨立體驗：
 
-* **管理員檢視**：現有的 Assets as a Cloud Service 使用者介面。使用「管理員檢視」即可檢視所有進階數位資產管理功能，包括整合、工作流程、內容自動化、發佈等。
+* **管理員檢視**：現有的 Assets as a Cloud Service 使用者介面。
 
-* **資產檢視**：Adobe 的輕量型資產管理體驗，可儲存、管理、探索和使用數位資產。精簡的使用者介面，包含基本的數位資產管理功能。 專為輕量型 DAM 使用者設計，重點在上傳、中繼資料管理、搜尋、下載和共享。
+* **資產檢視**：Adobe 的輕量型資產管理體驗，可儲存、管理、探索和使用數位資產。簡化的使用者介面包含基本的數位資產管理功能。專為輕量型 DAM 使用者設計，重點在上傳、中繼資料管理、搜尋、下載和共享。
 
 可存取管理員檢視的使用者也可以存取資產檢視。資產檢視提供簡化的使用者介面，使您可輕鬆管理、探索和分發數位資產。來自不同職能部門 (包括創意、行銷和業務線團隊) 的廣泛使用者可以進行資產共同作業，並視需要隨時地存取正確的已核准資產。許多臨時 DAM 使用者偏好使用資產檢視，因為它只包含功能的子集。該體驗的目標對象是唯讀創意資產的取用者以及輕量型 DAM 使用者。
 
