@@ -3,9 +3,9 @@ title: 存取 Cloud Manager
 description: 了解如何存取 Cloud Manager，以便您可以設定專案資源。
 role: Admin, User, Developer
 exl-id: c9476ac9-8318-493e-a48d-94ff5a6433a7
-source-git-commit: 5c9dbaa25f0142afdae8b09dc18d1e1aaaf4c1fb
+source-git-commit: 0e0337f6e14aa2f5b616ebc0a4b3c95089637369
 workflow-type: tm+mt
-source-wordcount: '1044'
+source-wordcount: '1040'
 ht-degree: 100%
 
 ---
@@ -109,8 +109,6 @@ Cloud Manager 是 AEM as a Cloud Service 的重要元件，可作為您團隊的
 成功登入 Cloud Manager 後，您可以驗證您是否已被指派&#x200B;**業務所有者**&#x200B;產品簡介。
 
 1. 從窗口的右上角選擇您的個人資料。
-
-   ![使用者設定檔](/help/journey-onboarding/assets/setup-resources5.png)
 
 1. 若要顯示指派給您使用者的角色，請選取&#x200B;**使用者角色**。
 
