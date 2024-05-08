@@ -6,7 +6,7 @@ exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 source-git-commit: 1a01a18008316c4d02553316020ec0c2a3f3cd57
 workflow-type: tm+mt
 source-wordcount: '2655'
-ht-degree: 61%
+ht-degree: 73%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 61%
 
 ## 發行日期 {#release-date}
 
-的發行日期 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 目前功能版本(2024.4.0)為2024年4月25日。 下一個功能版本(2024.5.0)計畫於2024年5月30日發行。
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 目前功能版本 (2024.4.0) 的發行日期是 2024 年 4 月 25 日。下一個功能版本 (2024.5.0) 計畫於 2024 年 5 月 30 日發行。
 
 ## 維護版本發行說明 {#maintenance}
 
@@ -63,29 +63,29 @@ Have a look at the April 2024 Release Overview video for a summary of the featur
 
 **內容相關搜尋**
 
-您現在也可以 [定義文字提示以搜尋存放庫中的可用資產](/help/assets/search-assets-view.md#contextual-search). Experience Manager Assets 會自動轉換這些文字提示，以便搜尋篩選器並顯示搜尋結果。您可以使用篩選器窗格查看和修改自動篩選器，以進一步縮小搜尋結果範圍。
+現在您也可以[透過定義文字提示來搜尋存放庫中可用的資產](/help/assets/search-assets-view.md#contextual-search)。Experience Manager Assets 會自動轉換這些文字提示，以便搜尋篩選器並顯示搜尋結果。您可以使用篩選器窗格查看和修改自動篩選器，以進一步縮小搜尋結果範圍。
 
 ![內容相關搜尋](/help/assets/assets/contextual-search-text-prompt1.png)
 
-**表達影片快速動作**
+**Express 影片快速動作**
 
-Experience Manager Assets現在包含 [由Adobe Express提供支援的簡單直覺式視訊編輯工具](/help/assets/edit-videos-assets-view.md) 提升內容重複使用率並加快內容速度。 此編輯選項包括修剪、裁切、調整影片大小以及將 MP4 轉換為 GIF 檔案。
+Experience Manager Assets 現在包含[簡單直觀的影片編輯工具 (由 Adobe Express 提供支援)](/help/assets/edit-videos-assets-view.md)，可增加內容重複使用性並加快內容流通速度。此編輯選項包括修剪、裁切、調整影片大小以及將 MP4 轉換為 GIF 檔案。
 
 ![使用 Adob&#x200B;&#x200B;e Express 裁切影片](/help/assets/assets/adobe-express-crop-video.png)
 
 **動態轉譯**
 
-您現在可以 [檢視和下載動態轉譯（包括智慧型裁切）](/help/assets/renditions.md) 在Experience Manager Assets中。 動態轉譯是即時建立的影像資產的自訂版本，可滿足特定需求，例如根據裝置解析度調整影像大小或裁切以符合不同的外觀比例。 這些轉譯可讓組織提供個人化和最佳化的體驗，以滿足不同的受眾需求。
+現在，您可以在 Experience Manager Assets 中[檢視和下載動態轉譯版 (包括智慧型裁切)](/help/assets/renditions.md) 。動態轉譯版是即時建立的影像資產自訂版本，可滿足特定需求，例如根據裝置解析度調整影像大小或裁切以適應不同的外觀比例。這些轉譯版使組織能夠根據不同對象的需求提供個人化和最佳化體驗。
 
 ![動態轉譯](/help/assets/assets/preset_smart_crop.png)
 
 **就地重命名資產和資料夾**
 
-Experience Manager Assets現在提供簡化的使用者體驗 [按一下即可重新命名資產或資料夾](/help/assets/manage-organize-assets-view.md).
+Experience Manager Assets 現在有項功能[讓您按一下即可重新命名資產或資料夾](/help/assets/manage-organize-assets-view.md)，為您簡化使用者體驗。
 
 **指派或刪除中繼資料表單至多個資料夾**
 
-您現在可以 [將中繼資料表單指派或移除至多個資料夾](/help/assets/metadata-assets-view.md#assign-metadata-form-to-a-folder).
+現在您可以[指派或刪除中繼資料表單至多個資料夾](/help/assets/metadata-assets-view.md#assign-metadata-form-to-a-folder)。
 
 
 
@@ -164,23 +164,23 @@ Experience Manager Assets現在提供簡化的使用者體驗 [按一下即可�
 
 ### CDN 設定 {#cdn-config}
 
-透過以下方式設定AdobeCDN的流量：
+透過以下方式設定 Adob&#x200B;&#x200B;e CDN 流量：
 
-* [要求轉換](/help/implementing/dispatcher/cdn-configuring-traffic.md#request-transformations)  — 修改傳入請求的方面，包括路徑、查詢引數和HTTP標頭，然後再路由至AEM。
-* [回應轉換](/help/implementing/dispatcher/cdn-configuring-traffic.md#response-transformations)  — 先變更傳出回應的HTTP標頭，再提供給瀏覽器。
-* [來源選取器](/help/implementing/dispatcher/cdn-configuring-traffic.md#response-transformations#origin-selectors)  — 透過CDN將流量路由至AEM以外的網站和應用程式。
+* [請求轉換](/help/implementing/dispatcher/cdn-configuring-traffic.md#request-transformations)  - 在傳入請求路由到 AEM 之前要先修改各方面的傳入請求，包括路徑、查詢參數和 HTTP 標頭。
+* [回應轉換](/help/implementing/dispatcher/cdn-configuring-traffic.md#response-transformations)  - 在將傳出回應提供給瀏覽器之前，先變更這些回應的 HTTP 標頭。
+* [來源選擇器](/help/implementing/dispatcher/cdn-configuring-traffic.md#response-transformations#origin-selectors)  - 透過 CDN 將流量路由到 AEM Sites 以外的網站和應用程式。
 
-在原始檔控制(git)中宣告這些規則後，您就可以使用Cloud Manager設定管道將它們部署到CDN。 另請參閱下方早期採用者章節中的使用者端重新導向功能。
+在原始碼管理 (git) 中聲明這些規則後，您可以使用 Cloud Manager 設定管道將規則部署到 CDN。另請參閱下面的早期採用者區段中的用戶端重新導向功能。
 
-### 自訂CDN錯誤頁面 {#cdn-error-pages}
+### 自訂 CDN 錯誤頁面 {#cdn-error-pages}
 
-萬一發生CDN無法將流量路由到AEM來源的可能情況，可以宣告自訂錯誤頁面，取代通用版本。 [瞭解更多](/help/implementing/dispatcher/cdn-error-pages.md) 關於如何提供品牌錯誤頁面。
+雖不太可能發生，但萬一 CDN 無法將流量路由到 AEM 來源，可以聲明自訂錯誤頁面，以取代通用版本。[了解更多](/help/implementing/dispatcher/cdn-error-pages.md)關於如何提供品牌錯誤頁面。
 
 ### 早期採用者計劃 {#foundation-early-adopter}
 
-#### 使用者端重新導向（早期採用者計畫） {#client-side-redirects-early-adopter}
+#### 用戶端重新導向 (早期採用者計畫) {#client-side-redirects-early-adopter}
 
-在原始檔控制中設定301/302使用者端重新導向，並部署至CDN。 [瞭解更多](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors) 並透過電子郵件加入率先採用者計畫 **<aemcs-cdn-config-adopter@adobe.com>**.
+在原始碼控制系統中設定 301/302 用戶端重新導向，並部署到 CDN。[了解更多](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors)，並透過寄送電子郵件至 **<aemcs-cdn-config-adopter@adobe.com>** 來加入早期採用者計劃。
 
 #### 流量篩選規則警報 (早期採用者計畫) {#traffic-filter-rules-alerts-early-adopter}
 

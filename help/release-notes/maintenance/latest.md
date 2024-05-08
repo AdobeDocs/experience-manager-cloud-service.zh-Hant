@@ -5,7 +5,7 @@ exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 source-git-commit: 79dcf8a4e9834beeb466ed9270a3f5c6aa67aa9a
 workflow-type: tm+mt
 source-wordcount: '723'
-ht-degree: 22%
+ht-degree: 29%
 
 ---
 
@@ -79,12 +79,12 @@ ht-degree: 22%
 
 * [Adobe Developer Console 中的 JWT 憑證已被取代](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md)
 
-* 自2024年5月1日起，Adobe Dynamic Media將停止支援下列專案：
+* 從 2024 年 5 月 1 日起，Adobe Dynamic Media 將終止對以下項目的支援：
 
-   * SSL （安全通訊端層） 2.0
+   * SSL (安全通訊端層) 2.0
    * SSL 3.0
-   * TLS （傳輸層安全性） 1.0和1.1
-   * TLS 1.2中的下列弱加密：
+   * TLS (傳輸層安全性) 1.0 和 1.1
+   * TLS 1.2 中的以下弱密碼：
       * `TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384`
       * `TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA`
       * `TLS_RSA_WITH_AES_256_GCM_SHA384`
@@ -101,7 +101,7 @@ ht-degree: 22%
       * `TLS_RSA_WITH_SDES_EDE_CBC_SHA`
 
 
-若要瞭解AEMas a Cloud Service已棄用或移除的內容，請參閱 [過時和移除的功能和API](/help/release-notes/deprecated-removed-features.md).
+若要了解 AEM as a Cloud Service 中已過時或已移除的功能，請查看「[已過時和已移除的功能和 API](/help/release-notes/deprecated-removed-features.md)」。
 
 ### 內嵌技術 {#embedded-tech-16145}
 
