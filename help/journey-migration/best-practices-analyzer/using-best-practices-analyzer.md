@@ -2,10 +2,10 @@
 title: 使用最佳做法分析工具
 description: 瞭解如何使用Best Practices Analyzer以瞭解升級整備程度。
 exl-id: e8498e17-f55a-4600-87d7-60584d947897
-source-git-commit: aa032af2ed7ff877b4c9f9cb6d427c84e71c3874
+source-git-commit: 077be031da7a610810d398b163676a98fc036f30
 workflow-type: tm+mt
-source-wordcount: '2418'
-ht-degree: 42%
+source-wordcount: '2661'
+ht-degree: 38%
 
 ---
 
@@ -51,6 +51,13 @@ ht-degree: 42%
 >[!NOTE]
 >從下載Best Practices Analyzer [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) 入口網站。
 
+## 來源環境連線能力 {#source-environment-connectivity}
+
+來源AEM執行個體可能正在防火牆後面執行，而它只能連線至已新增至允許清單的特定主機。 若要成功將BPA產生的報表自動上傳至Cloud Acceleration Manager，以下端點必須可從執行AEM的執行個體存取：
+
+* Azure Blob儲存服務： `casstorageprod.blob.core.windows.net`
+
+
 ## 檢視Best Practices Analyzer報表 {#viewing-report}
 
 ### Adobe Experience Manager 6.3.0和更新版本 {#aem-later-versions}
@@ -65,31 +72,40 @@ ht-degree: 42%
 
    ![影像](/help/journey-migration/best-practices-analyzer/assets/BPA_pic2.png)
 
-1. 在BPA產生報表時，您可以在畫面上看到工具執行的進度。 它會顯示已分析的專案數，也會顯示找到的結果數。
+1. 提供BPA上傳金鑰，以便自動將產生的BPA報告上傳至 [Cloud Acceleration Manager (CAM)](/help/journey-migration/cloud-acceleration-manager/introduction/benefits-cam.md). 若要取得上傳金鑰，請導覽至 [CAM的最佳實務分析](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-readiness-phase.md#best-practices-analysis)
 
-   ![影像](/help/journey-migration/best-practices-analyzer/assets/BPA_pic3.png)
+   ![影像](/help/journey-migration/best-practices-analyzer/assets/BPA_upload_key.png)
+
+>[!NOTE]
+>您可選擇略過自動上傳至CAM，方法是選取 **跳過報告自動上傳到CAM**. 如果您選擇略過，則需要以逗號分隔的值檔案手動下載BPA報表，然後以CAM上傳該檔案。 建議您使用上傳金鑰選項，因為這可簡化作業。
+
+1. 此 **產生** 提供有效鍵時，按鈕會變成使用中。 按一下 **產生** 以開始產生報表。
+
+   ![影像](/help/journey-migration/best-practices-analyzer/assets/BPA_upload_key1.png)
+
+
+1. 在BPA產生報表時，您可以在畫面上看到工具執行的進度。 它以完成百分比顯示進度。 它也會顯示已分析的專案數，也會顯示找到的結果數。
+
+   ![影像](/help/journey-migration/best-practices-analyzer/assets/BPA_generate_upload.png)
+
+>[!NOTE]
+>BPA上傳金鑰到期時間戳記會顯示在右上角。 您應該在BPA上傳金鑰接近到期時進行更新。 若要更新金鑰，您可以按一下 **續約** 瀏覽至CAM以更新金鑰。
 
 1. 產生BPA報告後，會以表格格式顯示結果的摘要和數目，並依據結果型別和重要性層級加以整理。 若要取得特定發現專案的詳細資訊，您可以按一下與表格中的發現專案型別相對應的數字。
 
-   ![影像](/help/journey-migration/best-practices-analyzer/assets/BPA_pic4.png)
+   ![影像](/help/journey-migration/best-practices-analyzer/assets/BPA_report_upload.png)
 
-   上述動作會自動捲動至該結果在報表中的位置。
+1. 您可以按一下「 」，選擇下載逗點分隔值(CSV)格式的報表 **匯出至CSV**. 您也可以選擇按一下，在CAM中檢視報表 **移至CAM**. 這會將您帶至 [最佳實務分析](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-readiness-phase.md#best-practices-analysis) CAM中的頁面。
 
-   ![影像](/help/journey-migration/best-practices-analyzer/assets/BPA_pic5.png)
+您可以按一下「 」，強制BPA清除其快取並重新產生報表 **重新整理報告**.
 
-1. 您可以按一下「 」，選擇下載逗點分隔值(CSV)格式的報表 **匯出至CSV**，如下圖所示。
+![影像](/help/journey-migration/best-practices-analyzer/assets/BPA_report_upload.png)
 
-   ![影像](/help/journey-migration/best-practices-analyzer/assets/BPA_pic6.png)
 
-   >[!NOTE]
-   >您可以按一下「 」，強制BPA清除其快取並重新產生報表 **重新整理報告**.
+1. 如果快取過期，您可以選擇按一下，檢視CAM中最後產生的報告 **在CAM中檢視上次產生的報表** 或按一下「 」，開始產生新的報表 **產生新報告**.
 
-   ![影像](/help/journey-migration/best-practices-analyzer/assets/BPA_pic7.png)
+![影像](/help/journey-migration/best-practices-analyzer/assets/BPA_regeneratereport.png)
 
-   >[!NOTE]
-   >報表在重新產生期間，會以完成百分比顯示進度，如下圖所示。
-
-   ![影像](/help/journey-migration/best-practices-analyzer/assets/BPA_pic8.png)
 
 #### 在Best Practices Analyzer報告中使用篩選器 {#bpa-filters}
 
