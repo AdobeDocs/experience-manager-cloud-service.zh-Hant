@@ -5,10 +5,10 @@ contentOwner: AK
 feature: Brand Portal,Asset Distribution,Configuration
 role: Admin
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: 2cb630203b818ae338fe6b7c2ff341c76e3a3958
+source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
 workflow-type: tm+mt
-source-wordcount: '2566'
-ht-degree: 6%
+source-wordcount: '2573'
+ht-degree: 7%
 
 ---
 
@@ -545,3 +545,4 @@ Go to `/system/console/slingmetrics` for statistics related to the distributed c
 * [搜尋 Facet](search-facets.md)
 * [管理收藏集](manage-collections.md)
 * [大量中繼資料匯入](metadata-import-export.md)
+* [發佈資產至 AEM 和 Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

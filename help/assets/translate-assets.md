@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management,Translation
 role: Admin,User
 exl-id: 98df1412-a957-48a3-81c2-7dfe1d5e6d31
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
 workflow-type: tm+mt
-source-wordcount: '2603'
+source-wordcount: '2615'
 ht-degree: 17%
 
 ---
@@ -168,7 +168,7 @@ Also see, [Creating translation projects for content fragments](creating-transla
 1. 選取 **[!UICONTROL 更新語言副本]** 在底部。
 1. 從 **[!UICONTROL 專案]** 清單，選擇 **[!UICONTROL 新增至現有翻譯專案]**.
 1. 從 **[!UICONTROL 現有翻譯專案]** 清單中，選取專案以新增要翻譯的資產。
-1. 選取 **[!UICONTROL 開始]**.
+1. 選取「**[!UICONTROL 開始]**」。
 1. 請參閱步驟9-14 / [新增至現有翻譯專案](#add-to-existing-translation-project) 以完成其餘程式。
 
 ### 建立暫存語言副本 {#creating-temporary-language-copies}
@@ -294,3 +294,4 @@ Adobe Experience Manager可讓您從所選的翻譯提供者取得雲端型翻�
 * [搜尋 Facet](search-facets.md)
 * [管理收藏集](manage-collections.md)
 * [大量中繼資料匯入](metadata-import-export.md)
+* [發佈資產至 AEM 和 Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

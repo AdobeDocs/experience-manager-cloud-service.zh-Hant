@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Compute Microservices,Workflow,Release Information,Asset Processing
 role: Architect,Admin
 exl-id: 1e069b95-a018-40ec-be01-9a74ed883b77
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
-workflow-type: ht
-source-wordcount: '850'
+source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
+workflow-type: tm+mt
+source-wordcount: '837'
 ht-degree: 100%
 
 ---
@@ -90,6 +90,7 @@ Adobe Experience Manager 可以設定成在資產處理完成後自動觸發後�
 * [搜尋 Facet](search-facets.md)
 * [管理收藏集](manage-collections.md)
 * [大量中繼資料匯入](metadata-import-export.md)
+* [發佈資產至 AEM 和 Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 
 >[!MORELIKETHIS]
 >

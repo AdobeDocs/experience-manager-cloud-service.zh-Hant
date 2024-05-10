@@ -4,10 +4,10 @@ description: 在中管理PDF檔案 [!DNL Adobe Experience Manager] as a [!DNL Cl
 feature: Asset Management
 role: User,Admin
 exl-id: 29660869-6902-4093-845b-cd629be59d4d
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
 workflow-type: tm+mt
-source-wordcount: '849'
-ht-degree: 4%
+source-wordcount: '838'
+ht-degree: 5%
 
 ---
 
@@ -44,7 +44,7 @@ Document CloudPDF檢視器可透過下列方式為AEM Assets提供好處：
 
 ## 支援PDF資產的多頁預覽和註解 {#multi-page}
 
-Adobe Experience Manager資產可讓您預覽包含數個頁面的PDF檔案。 若要預覽PDF檔案的多個頁面，請考量下列步驟：
+Adobe Experience Manager Assets可讓您預覽包含數個頁面的PDF檔案。 若要預覽PDF檔案的多個頁面，請考量下列步驟：
 
 1. 請依照以下步驟操作 [在AEM中上傳資產](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/add-assets.html?lang=en).
 1. 瀏覽您要上傳和預覽的PDF檔案。
@@ -75,11 +75,11 @@ Experience Manager Assets可讓您將註解新增至PDF檔案。 一個PDF檔案
 
 <table>
         <tr>
-             <th> 附註 </th>
+             <th> 註解 </th>
             <th> 說明 </th>
         </tr>
         <tr>
-           <td> <img src="/help/assets/assets/Comment.svg"> 評論 </td>
+           <td> <img src="/help/assets/assets/Comment.svg"> 註解 </td>
             <td> 選取「註解」以表示觀察。 </td>
         </tr>
         <tr>
@@ -147,3 +147,4 @@ Experience Manager Assets可讓您將註解新增至PDF檔案。 一個PDF檔案
 * [搜尋 Facet](search-facets.md)
 * [管理收藏集](manage-collections.md)
 * [大量中繼資料匯入](metadata-import-export.md)
+* [發佈資產至 AEM 和 Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

@@ -6,9 +6,9 @@ mini-toc-levels: 1
 role: User, Admin, Architect
 feature: Asset Management,Multi Site Manager
 exl-id: a71aebdf-8e46-4c2d-8960-d188b14aaae9
-source-git-commit: 9e0aefa096a493df22860d0194a0a76f3eaf2390
+source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
 workflow-type: tm+mt
-source-wordcount: '3400'
+source-wordcount: '3407'
 ht-degree: 10%
 
 ---
@@ -386,3 +386,4 @@ MSM會維護來源資產與其即時副本之間的即時關係，以便：
 * [管理收藏集](manage-collections.md)
 * [大量中繼資料匯入](metadata-import-export.md)
 * [使用內容片段](/help/assets/content-fragments/content-fragments.md)
+* [發佈資產至 AEM 和 Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

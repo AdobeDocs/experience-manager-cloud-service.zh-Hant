@@ -4,10 +4,10 @@ description: 將您的數位資產新增至 [!DNL Adobe Experience Manager] as a
 feature: Asset Management,Upload
 role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
 workflow-type: tm+mt
-source-wordcount: '3137'
-ht-degree: 8%
+source-wordcount: '3144'
+ht-degree: 9%
 
 ---
 
@@ -197,7 +197,7 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 
 1. 要使用「**[!UICONTROL 資產目標資料夾]**」欄位在所要匯入資產的 DAM 中定義位置，請指定路徑。 例如，`/content/dam/imported_assets`。
 
-1. （選用）指定要匯入的中繼資料檔案（以CSV格式提供），請 **[!UICONTROL 中繼資料檔案]** 欄位。 在來源Blob位置中指定CSV檔案，並在設定「大量匯入」工具時參照路徑。 此欄位中參照的CSV檔案格式與以下情況的CSV檔案格式相同： [大量匯入和匯出資產的中繼資料](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/metadata-import-export.html). 如果您選取 **匯入後刪除來源檔案** 選項，使用篩選CSV檔案 **排除** 或 **包括MIME型別** 或 **依路徑/檔案篩選** 欄位。 您可以使用規則運算式來篩選這些欄位中的CSV檔案。
+1. (選用) 在「**[!UICONTROL 中繼資料檔案]**」欄位中指定要匯入的中繼資料檔案 (以 CSV 格式提供)。在來源Blob位置中指定CSV檔案，並在設定「大量匯入」工具時參照路徑。 此欄位中參照的CSV檔案格式與以下情況的CSV檔案格式相同： [大量匯入和匯出資產的中繼資料](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/metadata-import-export.html). 如果您選取 **匯入後刪除來源檔案** 選項，使用篩選CSV檔案 **排除** 或 **包括MIME型別** 或 **依路徑/檔案篩選** 欄位。 您可以使用規則運算式來篩選這些欄位中的CSV檔案。
 
 1. 按一下 **[!UICONTROL 儲存]** 以儲存組態。
 
@@ -412,6 +412,7 @@ Experience Manager會顯示工作歷史記錄。 在「大量匯入工作歷史�
 * [搜尋 Facet](search-facets.md)
 * [管理收藏集](manage-collections.md)
 * [大量中繼資料匯入](metadata-import-export.md)
+* [發佈資產至 AEM 和 Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 
 >[!MORELIKETHIS]
 >

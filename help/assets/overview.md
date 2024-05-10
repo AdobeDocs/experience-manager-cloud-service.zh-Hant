@@ -5,9 +5,9 @@ contentOwner: AK
 feature: Asset Management
 role: User,Leader,Architect
 exl-id: 4437f214-d058-4975-8b8f-869a12c8103b
-source-git-commit: 4844d736d3791b376b7ad9cafa005c856c114837
+source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
 workflow-type: tm+mt
-source-wordcount: '920'
+source-wordcount: '927'
 ht-degree: 100%
 
 ---
@@ -85,3 +85,4 @@ Edge Delivery 讓您能夠建立快速、引人入勝的網站，作者可以在
 * [搜尋 Facet](search-facets.md)
 * [管理收藏集](manage-collections.md)
 * [大量中繼資料匯入](metadata-import-export.md)
+* [發佈資產至 AEM 和 Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

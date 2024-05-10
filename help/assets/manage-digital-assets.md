@@ -6,10 +6,10 @@ mini-toc-levels: 3
 feature: Asset Management,Publishing,Collaboration,Asset Processing
 role: User,Architect,Admin
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
 workflow-type: tm+mt
-source-wordcount: '4270'
-ht-degree: 9%
+source-wordcount: '4277'
+ht-degree: 10%
 
 ---
 
@@ -106,7 +106,7 @@ ht-degree: 9%
    >
    > 若要建立標籤，您必須具備寫入許可權： `/content/cq:tags/default` CRX存放庫中的路徑。
 
-1. 選取 **[!UICONTROL 儲存並關閉]**.
+1. 選取「**[!UICONTROL 儲存並關閉]**」。
 
 1. 導覽至「資產」使用者介面。 編輯的中繼資料屬性（包括標題、說明和標籤）會顯示在「卡片」檢視的資產卡片上，以及「清單」檢視的相關欄下。
 
@@ -634,7 +634,7 @@ The editing tools in the [!DNL Experience Manager Assets] interface let you perf
 
 ## 集合 {#collections}
 
-集合是一組經過排序的資產。 使用收藏集在使用者之間共用資產。
+集合是一組經過排序的資產。 使用集合在使用者之間共用資產。
 
 * 收藏集可以包含來自不同位置的資產，因為它們僅包含這些資產的參考。 每個收藏集都會維護資產的參考完整性。
 * 您可以與具有不同許可權層級的多個使用者共用集合，包括編輯、檢視等等。
@@ -675,3 +675,4 @@ curl -v -u admin:admin --location --request POST 'http://localhost:4502/conf/glo
 * [搜尋 Facet](search-facets.md)
 * [管理收藏集](manage-collections.md)
 * [大量中繼資料匯入](metadata-import-export.md)
+* [發佈資產至 AEM 和 Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

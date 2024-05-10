@@ -1,6 +1,6 @@
 ---
 title: 設定轉錄服務
-description: Adobe Experience Manager資產已設定為 [!DNL Azure Media Services] 會以WebVTT (vtt)格式自動在支援的音訊或視訊檔案中產生口語文字記錄。
+description: Adobe Experience Manager Assets已設定 [!DNL Azure Media Services] 會以WebVTT (vtt)格式自動在支援的音訊或視訊檔案中產生口語文字記錄。
 products: SG_EXPERIENCEMANAGER/ASSETS and Experience Manager as a Cloud Service
 sub-product: assets
 content-type: reference
@@ -9,9 +9,9 @@ topic-tags: Configuration
 feature: Asset Management, Configuration
 role: Admin
 exl-id: e96c8d68-74a6-4d61-82dc-20e619338d4b
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
 workflow-type: tm+mt
-source-wordcount: '1663'
+source-wordcount: '1670'
 ht-degree: 2%
 
 ---
@@ -179,3 +179,4 @@ ht-degree: 2%
 * [搜尋 Facet](search-facets.md)
 * [管理收藏集](manage-collections.md)
 * [大量中繼資料匯入](metadata-import-export.md)
+* [發佈資產至 AEM 和 Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

@@ -4,9 +4,9 @@ description: Experience Manager會使用自動將內容與描述性智慧標籤�
 feature: Smart Tags,Tagging
 role: Admin,User
 exl-id: b59043c5-5df3-49a7-b4fc-da34c03649d7
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
 workflow-type: tm+mt
-source-wordcount: '1212'
+source-wordcount: '1225'
 ht-degree: 3%
 
 ---
@@ -148,6 +148,7 @@ DAM中現有的視訊資產不會自動加上智慧標籤。 您需要 [!UICONTR
 * [搜尋 Facet](search-facets.md)
 * [管理收藏集](manage-collections.md)
 * [大量中繼資料匯入](metadata-import-export.md)
+* [發佈資產至 AEM 和 Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 
 >[!MORELIKETHIS]
 >

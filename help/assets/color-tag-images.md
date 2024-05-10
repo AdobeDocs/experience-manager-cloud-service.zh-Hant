@@ -2,9 +2,9 @@
 title: 影像的顏色標記
 description: Adobe Experience Manager Assets可讓您區分影像中的顏色，並自動將這些差異套用為標籤。 然後，您可以使用這些標籤來搜尋和篩選影像。
 exl-id: 3afa949b-ea1b-4b8e-ac94-06566e2c7147
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
 workflow-type: tm+mt
-source-wordcount: '1220'
+source-wordcount: '1244'
 ht-degree: 6%
 
 ---
@@ -19,14 +19,14 @@ Adobe Experience Manager (AEM) Assets使用Adobe Sensei AI功能來區分影像�
 
 下圖說明在Experience Manager Assets中設定和管理影像的顏色標籤時所執行的工作順序：
 
-![顏色標記](assets/color-tagging-dfd.gif)
+![顏色標籤](assets/color-tagging-dfd.gif)
 
 ## 支援的檔案格式 {#supported-file-formats-color-tags}
 
-| 檔案格式 | 副檔名 | MIME型別 | 輸入色域 | 支援的來源檔案大小上限 | 支援的最大檔案大小解析度 |
+| 檔案格式 | 擴充功能 | MIME型別 | 輸入色域 | 支援的來源檔案大小上限 | 支援的最大檔案大小解析度 |
 |---|---|---|---|---|---|
 | JPEG | .jpg和.jpeg | image/jpeg | sRGB | 15 GB | 20000 × 20000畫素 |
-| PNG | .PNG | image/png | sRGB | 15 GB | 20000 × 20000畫素 |
+| PNG | .png | image/png | sRGB | 15 GB | 20000 × 20000畫素 |
 | TIFF | .tif和.tiff | image/tiff | sRGB | 4 GB （受格式規格限制） | 20000 × 20000畫素 |
 | PSD | .psd | image/vnd.adobe.photoshop | sRGB | 2 GB （受格式規格限制） | 20000 × 20000畫素 |
 | GIF | .gif | image/gif | sRGB | 15 GB | 20000 × 20000畫素 |
@@ -196,3 +196,4 @@ DAM中的現有影像不會自動加上顏色標籤。 [!UICONTROL 重新處理�
 * [搜尋 Facet](search-facets.md)
 * [管理收藏集](manage-collections.md)
 * [大量中繼資料匯入](metadata-import-export.md)
+* [發佈資產至 AEM 和 Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

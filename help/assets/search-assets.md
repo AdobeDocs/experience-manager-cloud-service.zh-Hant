@@ -6,9 +6,9 @@ mini-toc-levels: 1
 feature: Search,Metadata,Asset Distribution
 role: User,Admin
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
 workflow-type: tm+mt
-source-wordcount: '5496'
+source-wordcount: '5503'
 ht-degree: 6%
 
 ---
@@ -211,7 +211,7 @@ Using Smart Tags adds an extra `OR` clause to find any of the search terms as th
 | 版權擁有者 | 版權擁有者：「Adobe Systems」 |
 | 參與者 | 貢獻者：John |
 | 使用條款 | usageterms：&quot;CopyRights Reserved&quot; |
-| 建立日期 | created：YYYY-MM-DDTHH |
+| 已建立 | created：YYYY-MM-DDTHH |
 | 到期日期 | expires：YYYY-MM-DDTHH |
 | 準時 | ontime：YYYY-MM-DDTHH |
 | 關閉時間 | offtime：YYYY-MM-DDTHH |
@@ -551,6 +551,7 @@ You can configure [!DNL Experience Manager] to extract the text from the assets 
 * [搜尋 Facet](search-facets.md)
 * [管理收藏集](manage-collections.md)
 * [大量中繼資料匯入](metadata-import-export.md)
+* [發佈資產至 AEM 和 Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 
 >[!MORELIKETHIS]
 >

@@ -4,9 +4,9 @@ description: 本文說明如何在Experience Manager中建立、修改和使用�
 feature: Search,Metadata
 role: User,Admin
 exl-id: f994c1bf-3f9d-4cb2-88f4-72a9ad6fa999
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
 workflow-type: tm+mt
-source-wordcount: '2498'
+source-wordcount: '2505'
 ht-degree: 19%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 19%
 | AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/search-facets.html) |
 | AEM as a Cloud Service  | 本文章 |
 
-Adobe Experience Manager資產的企業範圍部署能儲存許多資產。 有時候，如果您只使用Experience Manager的一般搜尋功能，尋找正確的資產可能會很困難且耗時。
+Adobe Experience Manager Assets的企業範圍部署可儲存許多資產。 有時候，如果您只使用Experience Manager的一般搜尋功能，尋找正確的資產可能會很困難且耗時。
 
 使用「篩選器」面板中的搜尋Facet為您的搜尋體驗新增更多精細度，並讓搜尋功能更有效率且更通用。 搜尋Facet會新增多個維度（述詞），讓您執行更複雜的搜尋。 「篩選器」面板包含幾個標準Facet。 您也可以新增自訂搜尋多面向。
 
@@ -354,6 +354,7 @@ Adobe建議您在移除預設搜尋Facet時務必小心，以免出現效能問�
 * [管理中繼資料](manage-metadata.md)
 * [管理收藏集](manage-collections.md)
 * [大量中繼資料匯入](metadata-import-export.md)
+* [發佈資產至 AEM 和 Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 
 >[!MORELIKETHIS]
 >

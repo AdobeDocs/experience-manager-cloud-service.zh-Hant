@@ -1,29 +1,29 @@
 ---
-title: 為Adobe InDesign產生僅供放置的轉譯
+title: 產生Adobe InDesign的「僅供刊登」轉譯
 description: 使用Experience Manager Assets工作流程和ImageMagick產生新資產和現有資產的FPO轉譯。
 contentOwner: Vishabh Gupta
 role: Admin
 feature: Renditions
 exl-id: 869c1c34-6287-4d62-bb7a-aa4df580ac0e
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
 workflow-type: tm+mt
-source-wordcount: '507'
-ht-degree: 7%
+source-wordcount: '502'
+ht-degree: 10%
 
 ---
 
-# 為Adobe InDesign產生僅供放置的轉譯 {#fpo-renditions}
+# 產生Adobe InDesign的「僅供刊登」轉譯 {#fpo-renditions}
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
 | AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/configure-fpo-renditions.html?lang=en) |
-| AEM as a Cloud Service  | 本文 |
+| AEM as a Cloud Service  | 本文章 |
 
-將大型資產從Experience Manager放入Adobe InDesign檔案時，創意專業人士必須等待相當長的時間 [放置資產](https://helpx.adobe.com/indesign/using/placing-graphics.html). 同時，使用者會被封鎖而無法使用InDesign。 這會中斷創意流程，並對使用者體驗產生負面影響。 Adobe功能可讓您從InDesign檔案開始暫時放置小型轉譯。 當需要最終輸出時（例如對於列印和發佈工作流程），原始的全解析度資產會在背景中取代暫時轉譯。 這種背景的非同步更新可加快設計流程以提高生產力，且不會阻礙創作流程。
+從Experience Manager將大型資產放入Adobe InDesign檔案時，創意專業人士必須等待相當長的時間 [放置資產](https://helpx.adobe.com/indesign/using/placing-graphics.html). 同時，使用者會被封鎖而無法使用InDesign。 這會中斷創意流程，並對使用者體驗產生負面影響。 Adobe功能可暫時將小型轉譯置於InDesign檔案中。 需要最終輸出時（例如針對列印及發佈工作流程），原始的完整解析度資產會在背景取代暫時轉譯。 這種背景的非同步更新可加快設計流程以提高生產力，且不會影響創作流程。
 
-Assets提供僅用於放置的轉譯(FPO)。 這些FPO轉譯檔案大小雖小，但外觀比例相同。 如果資產無法使用FPO轉譯，Adobe InDesign會改用原始資產。 此遞補機制可確保創意工作流程順利進行，而不會出現任何中斷情形。
+Assets提供僅用於放置的轉譯(FPO)。 這些FPO轉譯的檔案大小較小，但外觀比例相同。 如果資產無法使用FPO轉譯，Adobe InDesign會改用原始資產。 此遞補機制可確保創意工作流程無任何中斷地進行。
 
-Experience Manageras a Cloud Service提供雲端原生資產處理功能，可產生FPO轉譯。 使用資產微服務來產生轉譯。 您可以設定新上傳資產及Experience Manager中現有資產的轉譯產生。
+Experience Manageras a Cloud Service提供雲端原生資產處理功能，可產生FPO轉譯。 使用資產微服務來產生轉譯。 您可以設定產生新上傳的資產以及Experience Manager中存在的資產的轉譯。
 
 以下是產生FPO轉譯的步驟：
 
@@ -49,14 +49,14 @@ Experience Manageras a Cloud Service提供雲端原生資產處理功能，可�
 
 ## 產生現有資產的轉譯 {#generate-renditions-of-existing-assets}
 
-若要產生轉譯，請選取資產並依照下列步驟操作。
+若要產生轉譯，請選取資產，然後依照下列步驟進行。
 
 ![fpo-existing-asset-reprocess](assets/fpo-existing-asset-reprocess.gif)
 
 
 ## 檢視FPO轉譯 {#view-fpo-renditions}
 
-您可以在工作流程完成後檢查產生的FPO轉譯。 在Experience Manager Assets使用者介面中，按一下資產以開啟大型預覽。 開啟左側邊欄並選取 **[!UICONTROL 轉譯]**. 或者，使用鍵盤快速鍵 `Alt + 3` 開啟預覽時。
+您可以在工作流程完成後，檢查產生的FPO轉譯。 在Experience Manager Assets使用者介面中，按一下資產以開啟大型預覽。 開啟左側邊欄並選取 **[!UICONTROL 轉譯]**. 或者，使用鍵盤快速鍵 `Alt + 3` 開啟預覽時。
 
 按一下 **[!UICONTROL FPO轉譯]** 以載入其預覽。 或者，您也可以用滑鼠右鍵按一下轉譯，並將其儲存至您的檔案系統。 檢查左側邊欄中是否有可用的轉譯。
 
@@ -76,3 +76,4 @@ Experience Manageras a Cloud Service提供雲端原生資產處理功能，可�
 * [搜尋 Facet](search-facets.md)
 * [管理收藏集](manage-collections.md)
 * [大量中繼資料匯入](metadata-import-export.md)
+* [發佈資產至 AEM 和 Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

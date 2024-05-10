@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: c86760ed-169d-40f7-91a4-8aee449b286c
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
 workflow-type: tm+mt
-source-wordcount: '1059'
-ht-degree: 9%
+source-wordcount: '1066'
+ht-degree: 10%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 9%
 
 您可以編輯新新增或現有的中繼資料結構表單，其中包括：
 
-* 索引標籤
+* 標籤
 * 索引標籤中的表單專案。
 
 您可以將這些表單專案對應/設定到CRX存放庫中中繼資料節點內的欄位。 您可以將新的索引標籤或表單專案新增到中繼資料結構表單。
@@ -85,7 +85,7 @@ ht-degree: 9%
    <td><p> 新增日期元件。</p> </td>
   </tr>
   <tr>
-   <td><p>下拉式</p> </td>
+   <td><p>下拉式清單</p> </td>
    <td><p> 新增下拉式清單。</p> </td>
   </tr>
   <tr>
@@ -187,3 +187,4 @@ ht-degree: 9%
 * [搜尋 Facet](search-facets.md)
 * [管理收藏集](manage-collections.md)
 * [大量中繼資料匯入](metadata-import-export.md)
+* [發佈資產至 AEM 和 Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

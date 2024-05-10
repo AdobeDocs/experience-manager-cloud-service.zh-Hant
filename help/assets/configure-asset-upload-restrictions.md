@@ -1,31 +1,31 @@
 ---
 title: 設定資產上傳限制
-description: 設定Adobe Experience Manager資產，根據MIME型別限制使用者可上傳的資產型別。 它有助於防止意外上傳不需要的格式和惡意檔案。
+description: 設定Adobe Experience Manager Assets以根據MIME型別限制使用者可以上傳的資產型別。 它有助於防止意外上傳不需要的格式和惡意檔案。
 exl-id: 094c31f3-f2e9-4b44-9995-c76fb78ca458
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
 workflow-type: tm+mt
-source-wordcount: '363'
-ht-degree: 11%
+source-wordcount: '372'
+ht-degree: 12%
 
 ---
 
 # 設定資產上傳限制 {#configure-asset-upload-restrictions}
 
-您可以設定Adobe Experience Manager資產，根據MIME型別限制使用者可上傳的資產型別。
+您可以設定Adobe Experience Manager Assets根據MIME型別限制使用者可以上傳的資產型別。
 
 >[!IMPORTANT]
 >
->依預設，Experience Manager Assets可讓使用者上傳所有MIME型別的資產。 不過，您可以配置設定以限制使用者僅上傳特定MIME型別的檔案。
+>依預設，Experience Manager Assets允許使用者上傳所有MIME型別的資產。 不過，您可以進行設定，限制使用者只能上傳特定MIME型別的檔案。
 
-## 必備條件 {#prerequisites-asset-upload-restrictions}
+## 先決條件 {#prerequisites-asset-upload-restrictions}
 
-您必須擁有管理員許可權才能設定資產上傳限制。
+您必須有管理員許可權才能設定資產上傳限制。
 
 ## 套用資產上傳限制 {#apply-restrictions-asset-uploadsssssss}
 
 進行設定 [!DNL Experience Manager] 若要限制使用者上傳特定MIME型別的檔案：
 
-1. 導覽至 **[!UICONTROL 「工具>資產>資產設定」]**.
+1. 瀏覽至 **[!UICONTROL 「工具>資產>資產設定」]**.
 
 1. 按一下 **[!UICONTROL 上傳限制]**.
 
@@ -37,13 +37,13 @@ ht-degree: 11%
 
 **範例1：允許將所有影像和PDF檔案上傳至Experience Manager Assets**
 
-若要允許將所有格式的影像和PDF檔案上傳至Experience Manager Assets，請執行下列設定：
+若要允許將所有格式的影像和PDF檔案上傳到Experience Manager Assets，請執行下列設定：
 
 ![資產上傳限制](assets/asset-upload-restrictions.png)
 
-`image/*` 因為MIME型別允許上傳所有格式的影像。 `application/pdf` 因為MIME型別允許將PDF檔案上傳到Experience Manager Assets。
+`image/*` 因為MIME型別允許上傳所有格式的影像。 `application/pdf` 因為MIME型別允許將PDF檔案上傳至Experience Manager Assets。
 
-如果您嘗試上傳未包含在允許的MIME型別清單中的檔案，Experience Manager Assets會顯示下列錯誤訊息：
+如果您嘗試上傳未包含在允許MIME型別清單中的檔案，Experience Manager Assets會顯示下列錯誤訊息：
 
 ![受限制的檔案](assets/asset-upload-restricted-files.png)
 
@@ -51,11 +51,11 @@ ht-degree: 11%
 
 **範例2：允許將特定影像格式上傳至Experience Manager Assets**
 
-若要將特定影像格式新增至允許的MIME型別並限制上傳所有其他資產格式，請執行下列設定：
+若要將特定影像格式新增至允許的MIME型別，並限制上傳所有其他資產格式，請執行下列設定：
 
 ![資產限制](assets/asset-restrictions.png)
 
-根據影像中描述的設定，您可以將。JPG、.PNG和。GIF格式的影像上傳至Experience Manager Assets。
+根據影像中描述的設定，您可以將.PNG、.JPG和。GIF格式的影像上傳至Experience Manager Assets。
 
 **另請參閱**
 
@@ -71,3 +71,4 @@ ht-degree: 11%
 * [搜尋 Facet](search-facets.md)
 * [管理收藏集](manage-collections.md)
 * [大量中繼資料匯入](metadata-import-export.md)
+* [發佈資產至 AEM 和 Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

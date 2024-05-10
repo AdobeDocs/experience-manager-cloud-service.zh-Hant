@@ -5,10 +5,10 @@ contentOwner: Vishabh Gupta
 feature: Search,Adobe Stock
 role: Admin,User
 exl-id: 13f21d79-2a8d-4cb1-959e-c10cc44950ea
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
 workflow-type: tm+mt
-source-wordcount: '2490'
-ht-degree: 8%
+source-wordcount: '2460'
+ht-degree: 5%
 
 ---
 
@@ -248,8 +248,8 @@ IMS 設定包括兩個步驟：
 以下是使用者搜尋和授權Adobe Stock資產所需的許可權：
 
 * 設定路徑： `/conf/global/settings/stock`
-* 權限: `jcr:read`
-* 權限類型: `Allow`
+* 許可權： `jcr:read`
+* 許可權型別： `Allow`
 
 您可以建立使用者群組或指派許可權給現有的使用者群組。 許可權可指派自 [!DNL Experience Manager Assets] 介面或從 [!DNL User Admin] 主控台。
 
@@ -262,10 +262,10 @@ IMS 設定包括兩個步驟：
 1. 在左側面板中搜尋使用者群組並新增 **[!UICONTROL 存取控制專案(ACE)]** 適用於Adobe Stock。
 
    * 設定路徑： `/conf/global/settings/stock`
-   * 權限: `jcr:read`
-   * 權限類型: `Allow`
+   * 許可權： `jcr:read`
+   * 許可權型別： `Allow`
 
-   按一下&#x200B;**[!UICONTROL 「新增」]**。
+   按一下 **[!UICONTROL 新增]**.
 
    ![user-permissions](assets/aem-stock-user-permissions.png)
 
@@ -318,7 +318,7 @@ IMS 設定包括兩個步驟：
 
 | 使用者 | 群組 | 權限 | 接受使用者偏好設定中的Stock設定 | 存取資產 | 存取Adobe Stock |
 | --- | --- | --- | --- | --- | --- |
-| 管理員 | N/A | 全部 | N/A | 是 | 是 |
+| 管理員 | 不適用 | 全部 | 不適用 | 是 | 是 |
 | test-doc1 | DAM 使用者 | /conf/global/settings/stock/cloud-config | 是 | 是 | 是 |
 | test-doc1 | DAM 使用者 | /conf/global/settings/stock/cloud-config | 否 | 錯誤：無法載入資料 | 否 |
 | test-doc1 | DAM 使用者 | **允許**： /conf/global/settings/stock **拒絕**： /cloud-config | Stock設定不可見 | 是 | 否 |
@@ -331,7 +331,7 @@ IMS 設定包括兩個步驟：
 
 ![搜尋 [!DNL Adobe Stock] 資產和篩選結果 [!DNL Adobe Experience Manager] 工作區](assets/adobe-stock-search-results-workspace.png)
 
-**A.**[!DNL Adobe Stock] 搜尋與已提供 ID 之資產的類似資產。**B.** 搜尋與您選取的型態或方向相符的資產。**C.** 搜尋一或多個支援的資產類型 **D.** 開啟或收合篩選器窗格 **E.** 在 中為選取的資產授權並加以儲存 [!DNL Experience Manager]**F.**[!DNL Experience Manager] 將資產儲存在 中並加上浮水印 **G.**[!DNL Adobe Stock] 在 網站上探索與選取的資產類似的資產 **H.**[!DNL Adobe Stock] 在 網站上檢視選取的資產 **I.** 搜尋結果中選取的資產數目 **J.** 在卡片檢視與清單檢視之間切換
+**答：** 搜尋與下列資產類似的資產： [!DNL Adobe Stock] 已提供ID。 **B.** 搜尋與您選取的型態或方向相符的資產。**C.** 搜尋一種或多種支援的資產型別 **D.** 開啟或收合篩選器窗格 **E.** 授權並儲存選取的資產於 [!DNL Experience Manager] **F.** 將資產儲存在 [!DNL Experience Manager] 含浮水印 **G.** 探索資產，於 [!DNL Adobe Stock] 與所選資產類似的網站 **高。** 檢視上選取的資產 [!DNL Adobe Stock] 網站 **I.** 從搜尋結果中選取的資產數目 **J.** 在卡片檢視和清單檢視之間切換
 
 ### 尋找資產 {#find-assets}
 
@@ -471,6 +471,7 @@ Users can see the properties for both, licensed and unlicensed assets.
 * [搜尋 Facet](search-facets.md)
 * [管理收藏集](manage-collections.md)
 * [大量中繼資料匯入](metadata-import-export.md)
+* [發佈資產至 AEM 和 Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 
 >[!MORELIKETHIS]
 >

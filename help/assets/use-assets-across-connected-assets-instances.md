@@ -1,20 +1,20 @@
 ---
-title: 使用「連線資產」在 中共用 DAM 資產 [!DNL Sites]
+title: 使用「連線資產」在中共用DAM資產 [!DNL Sites]
 description: 使用遠端上可用的資產 [!DNL Adobe Experience Manager Assets] 在另一個網頁上建立您的網頁時部署 [!DNL Adobe Experience Manager Sites] 部署。
 contentOwner: AK
 mini-toc-levels: 2
 feature: Asset Management,Connected Assets,Asset Distribution,User and Groups
 role: Admin,User,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
 workflow-type: tm+mt
-source-wordcount: '3869'
-ht-degree: 16%
+source-wordcount: '3842'
+ht-degree: 13%
 
 ---
 
 
-# 使用「連線資產」在 中共用 DAM 資產 [!DNL Experience Manager Sites] {#use-connected-assets-to-share-dam-assets-in-aem-sites}
+# 使用「連線資產」在中共用DAM資產 [!DNL Experience Manager Sites] {#use-connected-assets-to-share-dam-assets-in-aem-sites}
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
@@ -65,7 +65,7 @@ ht-degree: 16%
 | DAM 使用者 | 本機 | `Authors` | 用於檢視及複製 `/content/DAM/connectedassets/` 中擷取的資產。 |
 | [!DNL Sites] 作者 | 本機 | <ul><li>`Authors` （在遠端DAM上擁有讀取存取權，並在本機上擁有作者存取權） [!DNL Sites]) </li> <li>`dam-users` 在本機 [!DNL Sites]</li></ul> | 一般使用者為 [!DNL Sites] 使用此整合來提高內容速度的作者。 作者可以使用在遠端DAM中搜尋和瀏覽資產 [!UICONTROL 內容尋找器] 並在本機網頁中使用所需的影像。 |
 | [!DNL Assets] 管理員 | 遠端 | [!DNL Experience Manager] `administrators` | 設定跨原始資源共用 (CORS)。 |
-| DAM 使用者 | 遠端 | `Authors` | 作者 遠端上的角色 [!DNL Experience Manager] 部署。 在「連線資產」中使用搜尋和瀏覽資產 [!UICONTROL 內容尋找器]. |
+| DAM 使用者 | 遠端 | `Authors` | 遠端上的作者角色 [!DNL Experience Manager] 部署。 在「連線資產」中使用搜尋和瀏覽資產 [!UICONTROL 內容尋找器]. |
 | DAM 經銷商 (技術使用者) | 遠端 | <ul> <li> [!DNL Sites] `Authors`</li> <li> `connectedassets-assets-techaccts` </li> </ul> | 遠端部署上的這個使用者是由 [!DNL Experience Manager] 本機伺服器(非 [!DNL Sites] 作者角色)，以代表取得遠端資產 [!DNL Sites] 作者。 |
 | [!DNL Sites] 技術使用者 | 本機 | `connectedassets-sites-techaccts` | 允許 [!DNL Assets] 部署以搜尋中資產的參考 [!DNL Sites] 網頁。 |
 
@@ -100,7 +100,7 @@ Experience Manager可讓您將遠端DAM部署作為來源連線到多個Experien
    1. A **[!UICONTROL 標題]** 設定的。
    1. **[!UICONTROL 遠端DAM URL]** 為的URL [!DNL Assets] 格式中的位置 `https://[assets_servername]:[port]`.
    1. DAM 經銷商 (技術使用者) 的認證。
-   1. 在 **[!UICONTROL 掛接點]** 欄位，輸入本機 [!DNL Experience Manager] 路徑，其中 [!DNL Experience Manager] 擷取資產。 例如，`connectedassets` 資料夾。從DAM擷取的資產會儲存在上的此資料夾中， [!DNL Sites] 部署。
+   1. 在 **[!UICONTROL 掛接點]** 欄位，輸入本機 [!DNL Experience Manager] 路徑，其中 [!DNL Experience Manager] 擷取資產。 例如， `connectedassets` 資料夾。 從DAM擷取的資產會儲存在上的此資料夾中， [!DNL Sites] 部署。
    1. **[!UICONTROL 本機站台URL]** 是的位置 [!DNL Sites] 部署。 [!DNL Assets] 部署使用此值來維護由此擷取的數位資產的參考 [!DNL Sites] 部署。
    1. 的認證 [!DNL Sites] 技術使用者。
    1. 的值 **[!UICONTROL 原始二進位傳輸最佳化臨界值]** 欄位會指定是否同步傳輸原始資產（包括轉譯）。 檔案大小較小的資產可隨時擷取，而檔案大小相對較大的資產則最適合非同步處理。 該值取決於您的網路功能。
@@ -128,7 +128,7 @@ Experience Manager可讓您將遠端DAM部署作為來源連線到多個Experien
 
    >[!NOTE]
    >
-   >作者擷取資產時，會擷取遠端 部署上可用的所有轉譯項目。若要針對所擷取的資產建立更多轉譯項目，請略過此設定步驟。此 [!UICONTROL DAM更新資產] 工作流程會觸發，並建立更多轉譯。 這些轉譯專案僅在本機提供 [!DNL Sites] 而不是在遠端DAM部署上。
+   >作者擷取資產時，會擷取遠端部署上可用的所有轉譯。 若要針對所擷取的資產建立更多轉譯項目，請略過此設定步驟。此 [!UICONTROL DAM更新資產] 工作流程會觸發，並建立更多轉譯。 這些轉譯專案僅在本機提供 [!DNL Sites] 而不是在遠端DAM部署上。
 
 1. 新增 [!DNL Sites] 部署為CORS設定中允許的原始項，在 [!DNL Assets] 部署。 如需詳細資訊，請參閱 [瞭解CORS](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html).
 
@@ -201,7 +201,7 @@ Experience Manager可讓您將遠端DAM部署作為來源連線到多個Experien
 
    ![在遠端 DAM 上搜尋資產時，篩選文件類型和影像的選項](assets/filetypes_filter_connected_assets.png)
 
-   *圖：在遠端 DAM 上搜尋資產時，篩選文件類型和影像的選項.*
+   *圖：在遠端DAM上搜尋資產時，篩選檔案型別和影像的選項。*
 
 1. 如果資產的原始檔案是以非同步方式擷取，且擷取任務失敗，網站作者會收到通知。 編寫過程中或甚至在完成編寫之後，作者都能在「 」中檢視擷取任務和錯誤的詳細資訊 [非同步作業](/help/operations/asynchronous-jobs.md) 使用者介面。
 
@@ -250,7 +250,7 @@ Sites作者可以預覽Sites部署上可用的更新，然後重新發佈變更�
 
 Experience Manager顯示 `expired` 遠端「資產內容尋找器」中的資產狀態視覺指示器，可阻止網站作者在Sites頁面上使用資產。 如果您使用資產搭配 `expired` 在Sites頁面上的狀態中，資產無法顯示在Experience Manager發佈執行個體上。
 
-## 常見問答 {#frequently-asked-questions}
+## 常見問題 {#frequently-asked-questions}
 
 +++**若您需要使用上可用的資產，您應設定「連線資產」。 [!DNL Sites] 部署？**
 
@@ -322,7 +322,7 @@ Experience Manager顯示 `expired` 遠端「資產內容尋找器」中的資產
 
 ### 許可權與資產管理 {#permissions-and-managing-assets}
 
-* 本機資產為唯讀副本。[!DNL Experience Manager] 元件會對資產執行非破壞性的編輯作業。不允許執行其他編輯作業。
+* 本機資產為唯讀副本。[!DNL Experience Manager] 元件會對資產執行非破壞性編輯。 不允許執行其他編輯作業。
 * 本機擷取的資產僅適用於編寫用途。無法套用資產更新工作流程，也無法編輯中繼資料。
 * 使用時 [!DNL Dynamic Media] 在 [!DNL Sites] 頁面不會擷取原始資產，並將其儲存在本機部署中。 此 `dam:Asset` 節點、中繼資料和產生的轉譯 [!DNL Assets] 全部部署均擷取於 [!DNL Sites] 部署。
 * 僅支援影像和列出的文件格式。[!DNL Content Fragments] 和 [!DNL Experience Fragments] 不受支援。
@@ -339,11 +339,11 @@ Experience Manager顯示 `expired` 遠端「資產內容尋找器」中的資產
 * 的授權 [!DNL Assets] 必須使用遠端存放庫。
 * 的一或多個授權 [!DNL Sites] 需要以本機編寫部署方式運作。
 
-### 使用狀況 {#usage}
+### 使用情況 {#usage}
 
 * 使用者可在編寫時搜尋遠端資產，並將這些資產拖曳至本機頁面。 不支援其他功能。
 * 擷取作業會於 5 秒後逾時。如果有網路或其他方面的問題，作者擷取資產時就可能遇到問題。作者可從拖曳遠端資產重新嘗試 [!UICONTROL 內容尋找器] 至 [!UICONTROL 頁面編輯器].
-* 您可以對擷取的資產執行非破壞性的簡單編輯作業，也能執行透過 `Image` 元件支援的編輯工作。資產僅供唯讀。
+* 非破壞性的簡單編輯作業，以及透過支援的編輯工作 `Image` 元件時，才能對擷取的資產執行此操作。 資產僅供唯讀。
 * 重新擷取資產的唯一方法是將其拖曳至頁面上。 沒有API支援或其他方法可重新擷取資產以進行更新。
 * 如果資產從DAM解除委任，這些資產將繼續用於 [!DNL Sites] 頁面。
 * 系統會非同步擷取資產的遠端參考專案。 參考與總計數並非即時，如果 [!DNL Sites] 作者在DAM使用者檢視參考時使用資產。 DAM使用者可以重新整理頁面，並在幾分鐘後重試以取得總計數。
@@ -377,3 +377,4 @@ Experience Manager顯示 `expired` 遠端「資產內容尋找器」中的資產
 * [搜尋 Facet](search-facets.md)
 * [管理收藏集](manage-collections.md)
 * [大量中繼資料匯入](metadata-import-export.md)
+* [發佈資產至 AEM 和 Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

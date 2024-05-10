@@ -4,10 +4,10 @@ description: 重大變更 [!DNL Adobe Experience Manager Assets] 在 [!DNL Exper
 feature: Release Information
 role: User,Leader,Architect,Admin
 exl-id: 93e7dbcd-016e-4ef2-a1cd-c554efb5ad34
-source-git-commit: bd0981b262f645653723f1b35d871808506d47ba
+source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
 workflow-type: tm+mt
-source-wordcount: '1038'
-ht-degree: 11%
+source-wordcount: '998'
+ht-degree: 9%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 11%
 
 * [資產擷取、上傳和處理](#asset-ingestion).
 * [用於雲端原生處理的資產微服務](#asset-microservices).
-* [移除傳統 UI](#classic-ui).
+* [移除傳統UI](#classic-ui).
 
 ## 資產擷取、處理和分發 {#asset-ingestion-distribution}
 
@@ -29,7 +29,7 @@ ht-degree: 11%
    * 資產上傳 [直接二進位存取](/help/assets/asset-microservices-overview.md#asset-upload-with-direct-binary-access).
    * 如需技術詳細資訊，請參閱 [直接二進位上傳通訊協定和API](/help/assets/developer-reference-material-apis.md#upload-binary).
    * 如需基本CRUD作業可用API方法的比較，請參閱 [API和資產作業](/help/assets/developer-reference-material-apis.md#use-cases-and-apis).
-* 舊版 已不提供預設的工作流程 **[!UICONTROL DAM Asset Update]**。[!DNL Experience Manager]相反，資產微服務提供可擴充、隨時可用的服務，涵蓋大部分的預設資產處理（轉譯、中繼資料擷取和索引文字擷取）。
+* 預設工作流程 **[!UICONTROL DAM資產更新]** 在舊版中 [!DNL Experience Manager] 不再提供。 相反，資產微服務提供可擴充、隨時可用的服務，涵蓋大部分的預設資產處理（轉譯、中繼資料擷取和索引文字擷取）。
    * 另請參閱 [設定和使用資產微服務](/help/assets/asset-microservices-configure-and-use.md)
    * 若要在處理中有自訂的工作流程步驟， [後處理工作流程](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows) 可使用。
 
@@ -53,10 +53,10 @@ ht-degree: 11%
 |-----|-----|-----|
 | [重複資產偵測](/help/assets/detect-duplicate-assets.md) | 運作方式不同 | 另請參閱 [如何在中運作 [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/duplicate-detection.html). |
 | [For Placement Only (FPO)轉譯](/help/assets/configure-fpo-renditions.md) | 運作方式不同 | 處理設定檔時會使用資產微服務來產生FPO轉譯。 在Experience Manager 6.5中，協力廠商解決方案如 [!DNL ImageMagick] 可用於產生轉譯。 |
-| 中繼資料回寫 | 運作方式不同 | 預設為停用. 如有需要，請啟用對應的工作流程啟動器。 回寫是由資產微服務處理。 |
+| 中繼資料回寫 | 運作方式不同 | 預設為停用。 如有需要，請啟用對應的工作流程啟動器。 回寫是由資產微服務處理。 |
 | 處理使用封裝管理員上傳的資產 | 需要手動介入 | 使用手動重新處理 **[!UICONTROL 重新處理資產]** 動作。 |
-| mime型別偵測 | 不支援. | 如果您上傳沒有副檔名或副檔名不正確的數位資產，系統可能不會依需求處理該資產。 使用者仍然可以在DAM中儲存不帶副檔名的二進位檔案。 另請參閱 [MIME型別偵測於 [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/detect-asset-mime-type-with-tika.html). |
-| 複合資產的子資產產生 | 不支援. | 可能不會滿足註解等相依使用案例。 另請參閱 [在中建立子資產 [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/managing-linked-subassets.html#generate-subassets). 某些檔案型別的PDF預覽可從 [2021.7.0版本](/help/release-notes/release-notes-cloud/release-notes-current.md). |
+| mime型別偵測 | 不支援。 | 如果您上傳沒有副檔名或副檔名不正確的數位資產，系統可能不會依需求處理該資產。 使用者仍然可以在DAM中儲存不帶副檔名的二進位檔案。 另請參閱 [MIME型別偵測於 [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/detect-asset-mime-type-with-tika.html). |
+| 複合資產的子資產產生 | 不支援。 | 可能不會滿足註解等相依使用案例。 另請參閱 [在中建立子資產 [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/managing-linked-subassets.html#generate-subassets). 某些檔案型別的PDF預覽可從 [2021.7.0版本](/help/release-notes/release-notes-cloud/release-notes-current.md). |
 | 編輯影像 | 不支援 | Experience Manageras a Cloud Service不支援編輯資產。 另請參閱 [在Experience Manager 6.5中如何運作](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html#editing-images). |
 | 首頁 | 不支援 | 另請參閱 [[!DNL Assets] 中的首頁體驗 [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-home-page.html) |
 | 從ZIP封存擷取資產 | 不支援 | 另請參閱 [中的壓縮解壓縮 [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html#extractzip). |
@@ -81,6 +81,7 @@ ht-degree: 11%
 * [搜尋 Facet](search-facets.md)
 * [管理收藏集](manage-collections.md)
 * [大量中繼資料匯入](metadata-import-export.md)
+* [發佈資產至 AEM 和 Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 
 >[!MORELIKETHIS]
 >
