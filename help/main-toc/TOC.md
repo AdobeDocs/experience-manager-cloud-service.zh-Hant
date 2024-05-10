@@ -9,7 +9,7 @@ user-guide-title: AEM as a Cloud Service
 source-git-commit: bf7afba2376b12b8d4f513db07c178209447e343
 workflow-type: tm+mt
 source-wordcount: '4917'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -571,7 +571,7 @@ ht-degree: 99%
       + [查看資產、資料夾和集合](/help/assets/manage-notifications-assets-view.md)
       + [管理報告](/help/assets/manage-reports-assets-view.md)
       + [管理標記](/help/assets/tagging-management-assets-view.md)
-      + [將資產發佈到AEM和Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+      + [發佈資產至 AEM 和 Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
    + 最佳做法{#best-practices}
       + [搜尋最佳做法](/help/assets/search-best-practices.md)
       + [中繼資料管理和最佳做法](/help/assets/metadata-best-practices.md)
@@ -653,7 +653,7 @@ ht-degree: 99%
             + [為以核心元件為主的最適化表單新增地區設定](/help/forms/supporting-new-language-localization-core-components.md)
             + [建立和使用自訂功能](/help/forms/create-and-use-custom-functions.md)
             + [新增規則至以核心元件為基礎的最適化表單](/help/forms/rule-editor-core-components.md)
-            + [為最適化表單設計JSON結構描述（核心元件）](/help/forms/adaptive-form-core-components-json-schema-form-model.md)
+            + [設計自適應表單的 JSON 綱要 (核心元件)](/help/forms/adaptive-form-core-components-json-schema-form-model.md)
             + [在最適化表單中新增版本設定、評論和附註](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md)
             + [比較最適化表單](/help/forms/compare-forms.md)
       + Foundation 元件 {#authoring-adaptive-forms-foundation-components}
@@ -855,9 +855,9 @@ ht-degree: 99%
          + [使用表單片段](/help/edge/docs/forms/form-fragments.md)
          + [將可重複區段新增到表單](/help/edge/docs/forms/repeatable-forms.md)
          + [翻譯您的表單](/help/edge/docs/forms/translate-forms.md)
-         + [使用reCAPTCHA來保護您的表單](/help/edge/docs/forms/recaptacha-forms.md)
+         + [使用 reCAPTCHA 保護您的表單](/help/edge/docs/forms/recaptacha-forms.md)
          + [自訂元件](/help/edge/docs/forms/custom-components-forms.md)
-         + [表單的即時使用監控](/help/edge/docs/forms/real-use-monitoring-for-forms.md)
+         + [表單的實際使用監視](/help/edge/docs/forms/real-use-monitoring-for-forms.md)
       + 參考資料 {#forms-references}
          + [最適化表單區塊元件及其屬性](/help/edge/docs/forms/form-components.md)
    + Edge Delivery 資源 {#resources}
@@ -1069,7 +1069,7 @@ ht-degree: 99%
       + Universal Editor {#universal-editor}
          + [Universal Editor 簡介](/help/implementing/universal-editor/introduction.md)
          + [Universal Editor 架構](/help/implementing/universal-editor/architecture.md)
-         + [SecurBank範例應用程式](/help/implementing/universal-editor/securbank.md)
+         + [SecurBank 範例應用程式](/help/implementing/universal-editor/securbank.md)
          + [AEM 中 Universal Editor 快速入門](/help/implementing/universal-editor/getting-started.md)
          + [Universal Editor 開發人員概觀](/help/implementing/universal-editor/developer-overview.md)
          + [屬性和項目類型](/help/implementing/universal-editor/attributes-types.md)
