@@ -2,9 +2,9 @@
 title: 使用最佳做法分析工具
 description: 瞭解如何使用Best Practices Analyzer以瞭解升級整備程度。
 exl-id: e8498e17-f55a-4600-87d7-60584d947897
-source-git-commit: 077be031da7a610810d398b163676a98fc036f30
+source-git-commit: 0c7e38d1973458ef3212e816ced867423bd62e86
 workflow-type: tm+mt
-source-wordcount: '2661'
+source-wordcount: '2686'
 ht-degree: 38%
 
 ---
@@ -61,6 +61,11 @@ ht-degree: 38%
 ## 檢視Best Practices Analyzer報表 {#viewing-report}
 
 ### Adobe Experience Manager 6.3.0和更新版本 {#aem-later-versions}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_cam_bpa_upload_setup"
+>title="自動將Best Practices Analyzer報告上傳至CAM"
+>abstract="提供BPA上傳金鑰，以便自動將產生的BPA報告上傳至Cloud Acceleration Manager (CAM)。"
 
 請詳閱本節，瞭解如何檢視Best Practices Analyzer報告：
 
