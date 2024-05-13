@@ -2,9 +2,9 @@
 title: 模型定義、欄位和元件類型
 description: 透過範例瞭解屬性邊欄中通用編輯器可編輯的欄位和元件型別。 瞭解如何建立模型定義並連結至元件，以裝備您自己的應用程式。
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
-source-git-commit: c2dd0ed800739c2194ab20267f72b85461f3c5b8
+source-git-commit: 111ce0c692432d1d0c25f416282bf2dbd655679b
 workflow-type: tm+mt
-source-wordcount: '1144'
+source-wordcount: '1146'
 ht-degree: 10%
 
 ---
@@ -95,6 +95,7 @@ ht-degree: 10%
 | [布林值](#boolean) | `boolean` |
 | [核取方塊群組](#checkbox-group) | `checkbox-group` |
 | [容器](#container) | `container` |
+| [內容片段](#content-fragment) | `aem-content-fragment` |
 | [日期時間](#date-time) | `date-time` |
 | [多選](#multiselect) | `multiselect` |
 | [數字](#number) | `number` |
