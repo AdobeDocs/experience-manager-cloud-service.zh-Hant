@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的運作方式以及該軟體可以為您做哪些事。
 breadcrumb-title: 使用手冊
 user-guide-title: AEM as a Cloud Service
-source-git-commit: bf7afba2376b12b8d4f513db07c178209447e343
+source-git-commit: 3eb2a7ce311f9e738a95ea5fcf6876f4df1fa648
 workflow-type: tm+mt
-source-wordcount: '4917'
-ht-degree: 100%
+source-wordcount: '4930'
+ht-degree: 99%
 
 ---
 
@@ -605,6 +605,9 @@ ht-degree: 100%
       + [從  [!DNL AEM 6.5 Forms]  或更早版本移轉至  [!DNL AEM Forms] as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
       + [群組與權限](/help/forms/forms-groups-privileges-tasks.md)
       + [匯入、匯出及組織最適化表單、PDF 表單和其他資產](/help/forms/import-export-forms-templates.md)
+   + 快速入門 {#getting-started-forms}
+      + [使用案例和設定開發環境](/help/forms/create-adaptive-form-tutorial-getting-started.md)
+      + [建立貸款申請表單](/help/forms/create-adaptive-form-tutorial.md)
    + 整合 {#integrate}
       + 服務 {#services}
          + [將 AEM Forms as a Cloud Service 與 Adobe Sign 整合](/help/forms/adobe-sign-integration-adaptive-forms.md)
