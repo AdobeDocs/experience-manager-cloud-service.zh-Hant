@@ -7,9 +7,9 @@ role: User, Developer
 level: Beginner
 hide: true
 hidefromtoc: true
-source-git-commit: 3eb2a7ce311f9e738a95ea5fcf6876f4df1fa648
+source-git-commit: e6c58c835798b16158ab4aca26e381ab8f36afd3
 workflow-type: tm+mt
-source-wordcount: '916'
+source-wordcount: '918'
 ht-degree: 2%
 
 ---
@@ -39,7 +39,7 @@ ht-degree: 2%
 
 AEM Forms提供基礎元件和核心元件，以建立表單體驗。 核心元件是建立任何新表單體驗的現代建議方法。 為何使用核心元件？ 這些元件輕量且開放原始碼（可在github上取得）、提供優異的Google Lighthouse和Web重要分數、相容於協助工具，並提供AEM Sites所有熟悉的功能（例如版本設定和本地化）。 此外，這些元件樣式更簡單，您可以根據組織的品牌指導方針輕鬆自訂其外觀。 這些元件沒有協力廠商相依性，任何瞭解JavaScript和CSS的開發人員都可以輕鬆自訂這些元件。
 
-![為何要建立以核心元件為基礎的最適化Forms？ 這些元件輕量級、更易於風格、提供Lighthouse分數、支援協助工具標準、輕鬆自訂、開放原始碼、可在github上取得、不依賴第三方程式庫，並且幾乎對AEM開發人員和AEM作者沒有學習曲線。最重要的是，AEM Forms核心元件擁有AEM WCM核心元件的所有功能。](/help/forms/assets/cc-core-components-benefits.png)
+![為何要建立以核心元件為基礎的最適化Forms？ 這些元件輕量級、更易於風格、提供Lighthouse分數、支援協助工具標準、輕鬆自訂、開放原始碼、可在github上取得、不依賴第三方程式庫，並且幾乎對AEM開發人員和AEM作者沒有學習曲線。最重要的是，AEM Forms核心元件擁有AEM WCM核心元件的所有功能。](/help/forms/assets/cc-core-components-benefits.png){width="50%"}
 
 ## 使用案例：透過最適化Forms簡化首頁貸款資格預審
 
@@ -79,10 +79,14 @@ AEM Forms提供基礎元件和核心元件，以建立表單體驗。 核心元�
 1. [新增AEM Forms附加元件](/help/forms/setup-local-development-environment.md#add-forms-archive-to-local-author-and-publish-instances-and-configure-forms-specific-users)：從下載並安裝與您的AEM SDK版本相符的AEM Forms附加元件 [Software Distribution](https://experience.adobe.com/#/downloads) 入口網站。
    ![install-aem-forms-add-on](/help/forms/assets/install-aem-forms-add-on.png)
 
-   +++安裝AEM Forms附加元件
+   +++安裝AEM Forms附加元件：
 
-       若要安裝AEM Forms附加元件，請停止AEM SDK，將AEM Forms附加元件(.far)檔案新增至「AEM SDK/crx-quickstart/install」資料夾，然後重新啟動AEM SDK。
-   
+   若要安裝AEM Forms附加元件：
+
+   1. 停止AEM SDK。
+   1. 將AEM Forms附加元件(.far)檔案新增至 `AEM SDK/crx-quickstart/install` 資料夾，
+   1. 重新啟動AEM SDK。
+
 +++
 
 1. [設定使用者許可權](/help/forms/setup-local-development-environment.md#configure-users-and-permissions)：建立具有開發、製作和其他許可權的使用者，並將這些使用者新增至預先定義的表單群組。
@@ -90,7 +94,9 @@ AEM Forms提供基礎元件和核心元件，以建立表單體驗。 核心元�
 
 1. [新增最適化Forms範本](/help/forms/setup-local-development-environment.md#set-up-a-development-project-for-forms-based-on-experience-manager-archetype)：使用AEM Archetypes 48或更新版本建立新的AEM專案，並將其部署至您的AEM SDK。 專案會將最適化Forms範本新增至您的AEM SDK。
 
-   +++新增最適化Forms範本
+   ![最適化表單範本](/help/forms/assets/adaptive-forms-templates.png)
+
+   +++將最適化Forms範本新增至您的AEM SDK：
 
    1. 執行以下命令以建立AEM專案。
 
@@ -108,13 +114,12 @@ AEM Forms提供基礎元件和核心元件，以建立表單體驗。 核心元�
       mvn -PautoInstallPackage clean install
       ```
 
-+++
-
    部署AEM專案後，您可以在環境中檢視最適化Forms範本。
 
-   ![最適化表單範本](/help/forms/assets/adaptive-forms-templates.png)
++++
 
-如需設定本機AEM Forms開發環境的逐步指南，請參閱 [設定AEM Forms的本機開發環境](/help/forms/setup-local-development-environment.md)
+
+如需設定本機AEM Forms開發環境的詳細指示和逐步指南，請參閱 [設定AEM Forms的本機開發環境](/help/forms/setup-local-development-environment.md) 文章。
 
 
 
