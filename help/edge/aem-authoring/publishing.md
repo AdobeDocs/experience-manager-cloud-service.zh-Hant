@@ -3,10 +3,10 @@ title: 為 Edge Delivery Services 發佈內容
 description: 了解內容發佈如何與 Edge Delivery Services 搭配使用，以及如何使用 Edge Delivery Services 發佈 AEM 內容。
 feature: Edge Delivery Services
 exl-id: 32fbb144-9175-47a9-bb5a-ca15f3fcd2d8
-source-git-commit: 11f721b4a617c99e30329d7196f42d7b48067f1b
-workflow-type: ht
-source-wordcount: '280'
-ht-degree: 100%
+source-git-commit: c85a82161a7594588290793c89ecbe1f0f60a56d
+workflow-type: tm+mt
+source-wordcount: '294'
+ht-degree: 92%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->每天最多允許從製作 UI 或按工作流程發佈 5000 個路徑。不支援建立大量發佈工作負載的整合。
+>每天最多允許從製作 UI 或按工作流程發佈 5000 個路徑。不支援建立大量發佈工作載入的整合。 如果您專案需要更高的容量，請將它用於 [VIP程式](https://www.aem.live/vip/intake).
 
 ![從 AEM 發佈至 Edge Delivery Services 時的資訊流程](assets/publishing-flow.png)
 
