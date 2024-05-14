@@ -1,17 +1,18 @@
 ---
-title: HTTP2 傳送內容常見問答集
+title: HTTP2 傳送內容常見問題集
 description: 瞭解HTTP2內容傳遞，以及它如何改善瀏覽器和伺服器之間的通訊，以加快資訊傳輸。
 contentOwner: Rick Brough
+feature: Dynamic Media,Configuration,FAQ
 role: Admin,User
 exl-id: 0a8a5fd8-a341-4e7f-84a5-409e2de97efe
-source-git-commit: 0e452bd94d75609ecc3c20ab6b56ded968ed0a70
+source-git-commit: 26afff3a39a2a80c1f730287b99f3fb33bff0673
 workflow-type: tm+mt
-source-wordcount: '807'
+source-wordcount: '798'
 ht-degree: 1%
 
 ---
 
-# HTTP2 傳送內容常見問答集{#http-delivery-of-content-faq}
+# HTTP2 傳送內容常見問題集{#http-delivery-of-content-faq}
 
 Adobe很高興宣佈推出HTTP/2內容傳送。 使用HTTP/2時，整體效能會提高。
 
@@ -65,7 +66,7 @@ Adobe自己的測試產生以下結果：
 
    * 確認您使用安全HTTPS處理多媒體請求。
    * 確認您是透過Adobe使用CDN，且不受直接關係管理。
-   * 確認您使用的是專用網域。 也就是說， `images.company.com` 或 `mycompany.scene7.com`，不是一般Dynamic Media網域，例如 `s7d1.scene7.com`， `s7d2.scene7.com`， `s7d13.scene7.com`.
+   * 確認您使用專用網域。 也就是說， `images.company.com` 或 `mycompany.scene7.com`，不是一般Dynamic Media網域，例如 `s7d1.scene7.com`， `s7d2.scene7.com`， `s7d13.scene7.com`.
 
    若要尋找您的網域，請開啟 [Dynamic Media Classic案頭應用程式](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)，然後登入您的帳戶。
 

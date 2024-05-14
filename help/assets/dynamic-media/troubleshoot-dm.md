@@ -2,11 +2,12 @@
 title: Dynamic Media 疑難排解
 description: 瞭解當您在Dynamic Media中處理影像、集合和檢視器時，可以嘗試的疑難排解提示。
 contentOwner: Rick Brough
+feature: Troubleshooting,Image Sets,Viewers
 role: Admin,User
 exl-id: 3e8a085f-57eb-4009-a5e8-1080b4835ae2
-source-git-commit: 0e452bd94d75609ecc3c20ab6b56ded968ed0a70
+source-git-commit: 26afff3a39a2a80c1f730287b99f3fb33bff0673
 workflow-type: tm+mt
-source-wordcount: '1146'
+source-wordcount: '1141'
 ht-degree: 1%
 
 ---
@@ -138,7 +139,7 @@ ht-degree: 1%
     </ul> </td>
    <td>
     <ol>
-     <li>檢查Cloud Services底下的「Dynamic Media設定」是否已正確設定。</li>
+     <li>檢查Cloud Service底下的「Dynamic Media設定」是否已正確設定。</li>
      <li>檢查資料夾是否有視訊設定檔。 此外，檢查視訊設定檔。</li>
     </ol> </td>
   </tr>
@@ -204,7 +205,7 @@ ht-degree: 1%
    * `"is/content"`
    * `dam:scene7Folder`
    * `<asset-name>`
-範例: `https://<server>/is/content/myfolder/_CSS/_OOTB/CarouselDotsLeftButton_dark_sprite.png`
+範例： `https://<server>/is/content/myfolder/_CSS/_OOTB/CarouselDotsLeftButton_dark_sprite.png`
 
 **解決方案**
 
@@ -215,7 +216,7 @@ ht-degree: 1%
 1. 導覽至CRX封裝管理員： `https://localhost:4502/crx/packmgr/`.
 1. 在清單中搜尋檢視器套件；其開頭為 `cq-dam-scene7-viewers-content`.
 1. 選取 **重新安裝**.
-1. 在Cloud Services底下，導覽至Dynamic Media設定頁面，然後開啟Dynamic Media - S7設定的設定對話方塊。
+1. 在Cloud Service底下，導覽至Dynamic Media設定頁面，然後開啟Dynamic Media - S7設定的設定對話方塊。
 1. 不做變更，選取 **儲存**.
 這個儲存動作會再次觸發邏輯，以建立並同步範例資產、檢視器預設集CSS和圖稿。
 
@@ -236,4 +237,4 @@ ht-degree: 1%
 1. 刪除 `viewer` 資料夾。
 1. 在CRXDE Lite頁面的左上角附近，選取 **[!UICONTROL 全部儲存]**.
 1. 在CRXDE Lite頁面的左上角，選取 **返回首頁** 圖示。
-1. 重新建立 [Cloud Services中的Dynamic Media設定](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services).
+1. 重新建立 [Cloud Service中的Dynamic Media設定](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services).
