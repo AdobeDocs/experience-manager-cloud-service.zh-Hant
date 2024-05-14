@@ -239,7 +239,7 @@ Experience Manager Guides 現在允許您建立語言群組並輕鬆將您的內
 整體而言，建立語言群組可以提高翻譯專案的效率和生產力，最終改善跨多種語言的本地化流程。
 
 
-了解如何[透過網頁編輯器翻譯文件](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/user-guide/author-content/create-preview-topics/author-content-aem-guides/work-with-web-editor/translate-documents-web-editor)
+了解如何[透過網頁編輯器翻譯文件](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-guides/using/user-guide/author-content/create-preview-topics/author-content-aem-guides/work-with-web-editor/translate-documents-web-editor)
 
 ### 提升在存放庫視圖中搜尋和篩選檔案的體驗
 
@@ -255,7 +255,7 @@ Experience Manager Guides 現在允許您建立語言群組並輕鬆將您的內
 
 *使用快速篩選器搜尋 DITA 和非 DITA 檔案。*
 
-進一步了解[左面板](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/user-guide/author-content/create-preview-topics/author-content-aem-guides/work-with-web-editor/web-editor-features#id2051EA0M0HS)區段中的&#x200B;**篩選器搜尋**&#x200B;功能。
+進一步了解[左面板](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-guides/using/user-guide/author-content/create-preview-topics/author-content-aem-guides/work-with-web-editor/web-editor-features#id2051EA0M0HS)區段中的&#x200B;**篩選器搜尋**&#x200B;功能。
 
 ### 資料來源連接器的增強功能
 
@@ -283,11 +283,11 @@ Experience Manager Guides 現在允許您建立語言群組並輕鬆將您的內
 #### 為連接器設定多個資源 URL 以建立內容片段或主題
 
 身為管理員，您可以為某些連接器 (例如通用 REST 用戶端、Salsify、Akeneo 和 Microsoft Azure DevOps Boards (ADO)) 設定多個資源 URL。
-然後，作為作者，連接資料來源以使用產生器建立內容片段或主題。此功能很方便，因為您不必為每個 URL 建立資料來源。它可以幫助您快速從單一內容片段或主題中特定資料來源的任何資源中擷取資料。檢視有關資料來源連接器的詳細資訊，以及如何[從使用者介面設定資料來源連接器](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/install-guide/cs-ig/web-editor-configs-cs/conf-data-source-connector-tools)。了解如何 [使用資料來源中的資料](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/user-guide/author-content/create-preview-topics/author-content-aem-guides/work-with-web-editor/web-editor-content-snippet)。
+然後，作為作者，連接資料來源以使用產生器建立內容片段或主題。此功能很方便，因為您不必為每個 URL 建立資料來源。它可以幫助您快速從單一內容片段或主題中特定資料來源的任何資源中擷取資料。檢視有關資料來源連接器的詳細資訊，以及如何[從使用者介面設定資料來源連接器](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-guides/using/install-guide/cs-ig/web-editor-configs-cs/conf-data-source-connector-tools)。了解如何 [使用資料來源中的資料](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-guides/using/user-guide/author-content/create-preview-topics/author-content-aem-guides/work-with-web-editor/web-editor-content-snippet)。
 
-如需新功能和增強功能的詳細資訊，請參閱 [2024.04.0 版本中的新增功能](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2404-release/whats-new-2024-04-0)。
+如需新功能和增強功能的詳細資訊，請參閱 [2024.04.0 版本中的新增功能](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2404-release/whats-new-2024-04-0)。
 
-有關此版本中的問題修正清單，請查看 [2024.4.0 版本中修正的問題](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2404-release/fixed-issues-2024-04-0)。
+有關此版本中的問題修正清單，請查看 [2024.4.0 版本中修正的問題](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2404-release/fixed-issues-2024-04-0)。
 
 ## Cloud Manager {#cloud-manager}
 

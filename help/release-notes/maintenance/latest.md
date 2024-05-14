@@ -5,7 +5,7 @@ exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 source-git-commit: 3be366e5fa0a7625203a052426be6a2fd2412cf6
 workflow-type: tm+mt
 source-wordcount: '723'
-ht-degree: 29%
+ht-degree: 100%
 
 ---
 
@@ -15,61 +15,61 @@ ht-degree: 29%
 
 ## 16145 版本 {#release-16145}
 
-以下摘要說明維護版本16145數的持續改善，該版本於2024年5月1日公開發佈。 上一個維護版本是版本 15977。
+下面是 16145 維護版的持續改善內容，該版本於 2024 年 5 月 1 日公開發佈。上一個維護版本是版本 15977。
 
 2024.5.0 功能啟用可提供此維護版本的完整功能集。如需詳細資訊，請參閱 [Experience Manager 發行藍圖](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)。
 
 ### 增強功能 {#enhancements-16145}
 
-* ASSETS-23489：儲存庫深入分析增強功能。
-* ASSETS-26926： Dynamic Media上傳輪詢改善。
-* ASSETS-30351：「下載」對話方塊應以非同步方式載入Dynamic Media轉譯大小。
-* ASSETS-30379：改善下載中DRM授權解析度。
-* ASSETS-31058：在轉譯索引標籤的AEM Assets UI中顯示智慧型裁切轉譯，並在使用者按一下這些轉譯時產生智慧型裁切影像。
-* ASSETS-31218：在資產傳送api中新增對已命名smartcrop的支援。
-* ASSETS-31979：在非同步資產操作期間新增視覺指示器並停用UI函式。
-* ASSETS-32735：改善資產中繼資料更新事件。
-* ASSETS-34661：適用於DM預覽和/或來自AEMaaCS Publish的傳送URL的API。
-* ASSETS-37259：XMP剖析改善。
-* ASSETS-37263：允許取消失敗的資產非同步作業。
-* CNTBF-114：改善內容回流。
-* CNTBF-148：改善內容回流。
-* CQ-4356992：最新的AEM和Granite翻譯。
+* ASSETS-23489：存放庫深入解析增強。
+* ASSETS-26926：Dynamic Media 上傳輪詢改進。
+* ASSETS-30351：下載對話方塊應非同步載入 Dynamic Media 呈現大小。
+* ASSETS-30379：提高下載的 DRM 授權的解析度。
+* ASSETS-31058：在「呈現」標籤的 AEM 資產 UI 中顯示智慧型裁切呈現，並在使用者點擊這些呈現時產生智慧型裁切影像。
+* ASSETS-31218：在資產傳遞 API 中新增對名為 smartcrop 的支援。
+* ASSETS-31979：在非同步資產操作期間新增視覺指示器並停用 UI 功能。
+* ASSETS-32735：資產中繼資料更新事件改進。
+* ASSETS-34661：用於 DM 預覽的 API 和/或來自 AEMaaCS Publish 的傳遞 URL。
+* ASSETS-37259：XMP 剖析改進。
+* ASSETS-37263：允許取消失敗的資產非同步工作。
+* CNTBF-114：內容回流改進。
+* CNTBF-148：內容回流改進。
+* CQ-4356992：最新的 AEM 和 Granite 翻譯。
 * SITES-19326：更新 Assets UI 中的連結，以便在新的 CF 編輯器中開啟 CF。
-* SITES-20686： GraphQL — 透過_dmS7Url公開Dynamic Media URL （適用於非影像資產）。
-* SKYOPS-68091：更新至Java 11.0.20。
+* SITES-20686：GraphQL - 透過 _dmS7Url 公開 Dynamic Media URL (適用於非影像資產)。
+* SKYOPS-68091：更新至 Java 11.0.20。
 
 ### 已修正的問題 {#fixed-issues-16145}
 
-* ASSETS-32321：如果上級資料夾缺少「jcr：content」子節點，後處理工作流程解析會失敗。
-* ASSETS-33856：JPEG影像預設集會以TXT格式下載檔案。
-* ASSETS-34096：修正非同步下載報表的觸控式UI檢視。
-* ASSETS-34493：啟用多公司功能切換後，載入下載對話方塊失敗。
-* ASSETS-34824：DM停用資料夾的複製URL會顯示為空白。
-* ASSETS-35226：如果在DAM根上指定，則後處理工作流程未解析。
-* ASSETS-35559：將DM批次上傳失敗記錄檔減少為WARN。
+* ASSETS-32321：如果上階資料夾缺少「jcr:content」子節點，後處理工作流程解析將會失敗。
+* ASSETS-33856：JPEG 影像預設將檔案下載為 TXT。
+* ASSETS-34096：修正非同步下載報告的觸控式 UI 視圖。
+* ASSETS-34493：啟用多公司功能切換後載入下載對話方塊失敗。
+* ASSETS-34824：對於 DM 停用資料夾，複製 url 顯示為空。
+* ASSETS-35226：如果在 DAM 根目錄上指定，則後處理工作流程無法解析。
+* ASSETS-35559：將 DM 批次上傳失敗記錄降為「警告」。
 * ASSETS-35860：AEM Assets 欄視圖中的時區轉換不正確。
-* ASSETS-35935：關閉裝載檢閱後檔案夾導覽不正確。
-* ASSETS-35961：在影像設定檔下新增裁切按鈕無法運作。
-* ASSETS-36227：停用發佈上的FolderPreviewUpdaterImpl服務。
-* ASSETS-36943：當CF和其他非CF專案出現在清單檢視的資料夾中時，遺漏對齊的欄。
-* ASSETS-36990：匯出的中繼資料作業失敗/速度變慢，並出現大量屬性。
-* ASSETS-37113：如果查詢只傳回CF結果，則重新處理資產作業會立即終止。
-* ASSETS-37260：AEM中的中繼資料匯出可能會產生無效的CSV。
-* ASSETS-37261：AEM Assets上的PPTx和PDF附註問題。
-* ASSETS-37282：開啟大型資料夾的請求速度可能變慢。
-* ASSETS-37330：從OneDrive大量匯入會建立不正確的AEM資料夾結構。
-* ASSETS-37609：移除舊版scene7 conf查閱。
-* ASSETS-38016：事件中未正確追蹤部分中繼資料更新。
-* CQ-4357161： AEM收件匣裝載畫面傳回404訊息。
-* GRANITE-50041：當下拉式清單選項中只有「新增轉譯」選項時，如果解析度大於1440px寬度，則新增轉譯無法運作。
-* GRANITE-50279：Coral日期選取器元件中的周名稱無序。
-* SCRNS-3949： Screens頻道擷取要求時間太長。
-* SCRNS-3981： [順序頻道] 當元素載入/解除安裝事件的順序扭曲時，會產生黑色熒幕。
-* SCRNS-4180： [順序頻道] 當頻道從遞補縮圖復原時，畫面會以空白畫面停止顯示持續時間–1的影片。
-* SCRNS-4245： [順序頻道] 載入和從遞補縮圖切換視訊時，有限的「空白熒幕」持續時間。
-* SITES-16055：修正各個屬性頁面中的即時副本和即時副本來源連結。
-* SCRNS-4243：非管理員使用者的內容提供者中缺少按鈕。
+* ASSETS-35935：關閉承載檢閱後資料夾導覽不正確。
+* ASSETS-35961：新增裁切按鈕在影像設定檔中無法運作。
+* ASSETS-36227：發佈時停用 FolderPreviewUpdaterImpl 服務。
+* ASSETS-36943：當清單視圖中的資料夾中出現 CF 和其他非 CF 項目時，會遺失對齊的欄。
+* ASSETS-36990：匯出的中繼資料工作因大量屬性而失敗/緩慢。
+* ASSETS-37113：如果查詢僅傳回 CF 結果，重新處理資產工作將立即終止。
+* ASSETS-37260：AEM 中的中繼資料匯出可能會產生無效的 CSV。
+* ASSETS-37261：AEM Assets 上的 PPTx 和 PDF 註解問題。
+* ASSETS-37282：開啟大型資料夾的請求可能會很慢。
+* ASSETS-37330：從 OneDrive 大量匯入會建立不正確的 AEM 資料夾結構。
+* ASSETS-37609：刪除舊版 scene7 conf 查詢。
+* ASSETS-38016：事件中未正確追蹤某些中繼資料更新。
+* CQ-4357161：AEM 收件匣承載畫面傳回 404。
+* GRANITE-50041：當解析度大於 1440px 寬度且下拉選項中只有「新增呈現」選項時，新增呈現無法運作。
+* GRANITE-50279：Coral Datepicker 元件中的周名稱順序錯誤。
+* SCRNS-3949：Screens 頻道擷取請求時間太長。
+* SCRNS-3981：[序列管道]當元素載入/卸載事件序列被扭曲時會造成螢幕變黑。
+* SCRNS-4180：[序列頻道]從備援影片縮圖復原後，影片長度為 -1 的頻道序列會停止並顯示空白畫面。
+* SCRNS-4245：[序列頻道]載入影片和從備援影片縮圖切換時，空白畫面持續時間有限。
+* SITES-16055：修正對應屬性頁面中的 Live Copy 和 Live Copy 來源連結。
+* SCRNS-4243：內容提供者中缺少針對非管理員使用者的按鈕。
 
 ### 已知問題 {#known-issues-16145}
 
