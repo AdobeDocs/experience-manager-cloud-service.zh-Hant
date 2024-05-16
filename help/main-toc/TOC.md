@@ -204,7 +204,7 @@ ht-degree: 99%
       + [指派 AEM 產品設定檔](/help/journey-onboarding/assign-profiles-aem.md)
       + [開發人員和部署管理員工作](/help/journey-onboarding/developers.md)
       + [AEM 使用者工作](/help/journey-onboarding/aem-users.md)
-      + [內容上線檢查清單](/help/journey-onboarding/go-live-checklist.md)
+      + [上線檢查清單](/help/journey-onboarding/go-live-checklist.md)
    + AEM 參考示範附加元件歷程{#demo-add-on}
       + [概觀](/help/journey-sites/demos-add-on/overview.md)
       + [安裝](/help/journey-sites/demos-add-on/installation.md)
