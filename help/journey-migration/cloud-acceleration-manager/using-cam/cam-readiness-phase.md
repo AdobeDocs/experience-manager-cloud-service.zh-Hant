@@ -5,7 +5,7 @@ exl-id: 2583985b-0358-433c-9d31-38e2c60dc3dc
 source-git-commit: 0c56cfdd2c18d3bc77edafdbda3f99fbc43f12cf
 workflow-type: tm+mt
 source-wordcount: '1045'
-ht-degree: 6%
+ht-degree: 9%
 
 ---
 
@@ -31,12 +31,12 @@ ht-degree: 6%
    >[!NOTE]
    >請參閱在Cloud Acceleration Manager中建立和管理專案以瞭解更多資訊。
 
-## 使用最佳做法分析卡 {#best-practices-analysis}
+## 使用最佳做法分析工具卡 {#best-practices-analysis}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_cam_bpa"
->title="最佳實務分析報告"
->abstract="BPA報告可上傳至CAM，以提供關於移轉至AEMas a Cloud Service的分析。"
+>title="最佳做法分析工具報告"
+>abstract="BPA 報告可以上傳到 CAM，以提供有關移轉到 AEM as a Cloud Service 的分析。"
 >additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer" text="使用最佳做法分析工具"
 
 1. 按一下 **檢閱** 從 **最佳實務分析** 卡片。

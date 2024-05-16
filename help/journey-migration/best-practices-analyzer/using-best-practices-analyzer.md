@@ -5,7 +5,7 @@ exl-id: e8498e17-f55a-4600-87d7-60584d947897
 source-git-commit: 0c7e38d1973458ef3212e816ced867423bd62e86
 workflow-type: tm+mt
 source-wordcount: '2686'
-ht-degree: 38%
+ht-degree: 39%
 
 ---
 
@@ -60,12 +60,12 @@ ht-degree: 38%
 
 ## 檢視Best Practices Analyzer報表 {#viewing-report}
 
-### Adobe Experience Manager 6.3.0和更新版本 {#aem-later-versions}
+### Adobe Experience Manager 6.3.0 和以上 {#aem-later-versions}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_cam_bpa_upload_setup"
->title="自動將Best Practices Analyzer報告上傳至CAM"
->abstract="提供BPA上傳金鑰，以便自動將產生的BPA報告上傳至Cloud Acceleration Manager (CAM)。"
+>title="自動將最佳做法分析工具報告上傳至 CAM"
+>abstract="提供 BPA 上傳金鑰，將所產生的 BPA 報告自動上傳到 Cloud Acceleration Manager (CAM)。"
 
 請詳閱本節，瞭解如何檢視Best Practices Analyzer報告：
 
@@ -141,11 +141,11 @@ For Adobe Experience Manager 6.1, the tool is not functional and only the HTTP i
 >In all versions, the included Pattern Detector may run independently.
 -->
 
-## 解讀最佳做法分析工具的報表 {#cra-report}
+## 最佳做法分析工具報告解讀 {#cra-report}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_bpa_interpreting"
->title="解讀最佳做法分析工具的報表"
+>title="最佳做法分析工具報告解讀"
 >abstract="檢視 BPA 報表輸出有兩種選項：UI 和 CSV。在 AEM 執行個體中執行最佳做法分析工具時，UI 報表會在工具視窗中顯示為結果。CSV 格式的報表包含從「模式偵測器」輸出產生的資訊，且會依類別類型、子類型和重要性層級排序和編排。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html#analysis-report" text="檢閱最佳做法分析報表"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html" text="了解最佳做法分析工具報表類別"
