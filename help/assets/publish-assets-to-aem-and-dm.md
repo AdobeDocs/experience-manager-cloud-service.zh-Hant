@@ -2,7 +2,7 @@
 title: 快速發佈至AEM和Dynamic Media
 description: 資產檢視中的快速發佈可讓您同時或個別將資產發佈到AEM和Dynamic Media。 您可以選取資產和資料夾，然後選擇發佈至Dynamic Media或AEM。
 exl-id: 147c1c35-0d81-4458-b4ed-7541d2b0dd54
-source-git-commit: a9a94e948ad7d038f28a046c950f2158871ddbb3
+source-git-commit: 9ad74a9c7ecd193446506cb883fff723c806f0a7
 workflow-type: tm+mt
 source-wordcount: '1188'
 ht-degree: 0%
@@ -40,7 +40,7 @@ Experience Manager Assets檢視可讓您靈活地將資產同時發佈至AEM或D
 若要在上傳至資料夾期間發佈資產，且Dynamic Media發佈模式設定為 **啟動時**：
 
 1. 按一下 **新增資產** > **瀏覽** > **瀏覽檔案** 導覽至適當的資料夾以上傳資產。 此 **發佈選項** 區段顯示 **DM發佈模式** 作為 **啟動時**.
-   ![啟動時上傳影像](/help/assets/assets/upload-upon-activation1.png)
+   ![啟動時上傳影像](/help/assets/assets/upload-uactivation.svg)
 2. 選取 **發佈至AEM和Dynamic Media** 並按一下 **上傳**. 資產會同時發佈至AEM和Dynamic Media。 若要檢視這些資產的更新發佈狀態，請參閱 [檢查發佈狀態](#check-publish-status).
 
 ### Dynamic Media發佈模式設定為立即 {#dynamic-media-publish-mode-set-to-immediate}
@@ -48,8 +48,10 @@ Experience Manager Assets檢視可讓您靈活地將資產同時發佈至AEM或D
 若要在上傳至資料夾期間發佈資產，且Dynamic Media發佈模式設定為 **立即**：
 
 1. 按一下 **新增資產** > **瀏覽** > **瀏覽檔案** 導覽至適當的資料夾以上傳資產。 「發佈選項」段落會顯示 **DM發佈模式** 作為 **立即**.
-   ![檔案上傳影像 — 立即模式](/help/assets/assets/upload-immediate-mode.png)
-由於Dynamic Media發佈模式為 **立即**，則上傳的資產會在您按一下時自動發佈至Dynamic Media **上傳**.
+   ![檔案上傳影像 — 立即模式](/help/assets/assets/resized-image-pdf-svg-new.svg)
+
+
+   由於Dynamic Media發佈模式為 **立即**，則上傳的資產會在您按一下時自動發佈至Dynamic Media **上傳**.
 
 2. 選取發佈至 **要發佈的AEM** 已將資產上傳到AEM，然後按一下「上傳」。
 
@@ -62,7 +64,7 @@ Experience Manager Assets檢視可讓您靈活地將資產同時發佈至AEM或D
 若要在上傳至資料夾期間發佈資產，且Dynamic Media發佈模式設定為 **選擇性發佈**：
 
 1. 按一下 **新增資產** > **瀏覽** > **瀏覽檔案** 導覽至適當的資料夾以上傳資產。 發佈選項區段會顯示 **DM發佈模式** 作為 **選擇性發佈**.
-   ![上傳影像選擇性印刷模式](/help/assets/assets/upload-image-selective-publish-mode.png)
+   ![上傳影像選擇性印刷模式](/help/assets/assets/upload-selective.svg)
 
 2. 選取 **發佈至AEM**， **發佈至Dynamic Media**，或根據您的需求選擇兩者，然後按一下 **上傳**.
 
@@ -77,9 +79,9 @@ Experience Manager Assets檢視可讓您靈活地將資產同時發佈至AEM或D
 1. 按一下 **資產** 在 **資產管理** 區段可在左窗格中使用。
 2. 選取您需要發佈的資產或資料夾，然後按一下 **發佈**.
 3. 選取 **AEM** 並按一下 **發佈** 將資產發佈至AEM和Dynamic Media。
-   ![資產瀏覽](/help/assets/assets/assets-browse-1.png)
+   ![資產瀏覽](/help/assets/assets/browse-uactivation-immediate.svg)
 您無法發佈Dynamic Media發佈模式設定為的資料夾 **選擇性發佈。** 所有其他選取的資料夾或資產在選取AEM後會發佈至AEM和Dynamic Media。
-   ![資產瀏覽](/help/assets/assets/assets-browse-2.png)
+   ![資產瀏覽](/help/assets/assets/browse-selective123.svg)
 
 ## 使用搜尋結果頁面發佈資產 {#publish-assets-using-search-results-page}
 
@@ -88,7 +90,7 @@ Experience Manager Assets檢視可讓您靈活地將資產同時發佈至AEM或D
 1. 在搜尋列中指定條件，然後按一下搜尋圖示以檢視結果。
 2. 選取您需要發佈的資產，然後按一下 **發佈。**
 3. 根據您的需求選取AEM、Dynamic Media或兩者，然後按一下 **發佈。**
-   ![搜尋影像](/help/assets/assets/search-image1.png)
+   ![搜尋影像](/help/assets/assets/search-mode.svg)
 在搜尋結果頁面上發佈至Dynamic Media的選項取決於在存放庫中可使用該資產的資料夾上設定的Dynamic Media發佈模式。
 
    >[!NOTE]
