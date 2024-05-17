@@ -2,7 +2,7 @@
 title: 快速發佈至AEM和Dynamic Media
 description: 資產檢視中的快速發佈可讓您同時或個別將資產發佈到AEM和Dynamic Media。 您可以選取資產和資料夾，然後選擇發佈至Dynamic Media或AEM。
 exl-id: 147c1c35-0d81-4458-b4ed-7541d2b0dd54
-source-git-commit: 9ad74a9c7ecd193446506cb883fff723c806f0a7
+source-git-commit: 8d360b9d3382350c8f78247919c3e3810fe9e58b
 workflow-type: tm+mt
 source-wordcount: '1188'
 ht-degree: 0%
