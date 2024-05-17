@@ -3,14 +3,13 @@ title: 適用於  [!DNL Adobe Experience Manager]  as a  [!DNL Cloud Service] �
 description: 在應用程式內使用資產選擇器搜尋、查找和檢索資產的中繼資料和轉譯。
 contentOwner: KK
 role: Admin,User
-exl-id: b968f63d-99df-4ec6-a9c9-ddb77610e258
-source-git-commit: b9fe6f4c2f74d5725575f225f8d9eb2e5fbfceb7
+exl-id: 5f962162-ad6f-4888-8b39-bf5632f4f298
+source-git-commit: 2ce64892cd5bf414d328a9112c47092b762d3668
 workflow-type: tm+mt
 source-wordcount: '3908'
 ht-degree: 45%
 
 ---
-
 
 # 微前端資產選擇器 {#Overview}
 
@@ -599,7 +598,7 @@ interface SelectedAsset {
     'repo:state': string;
     computedMetadata: Record<string, any>;
     _links: {
-        'http://ns.adobe.com/adobecloud/rel/rendition': Array<{
+        'https://ns.adobe.com/adobecloud/rel/rendition': Array<{
             href: string;
             type: string;
             'repo:size': number;
@@ -632,12 +631,12 @@ interface SelectedAsset {
 | *tiff:imageLength* | 數字 | 資產的高度。 |
 | *computedMetadata* | `Record<string, any>` | 代表貯體的一個物件，可存放各種類型之所有資產中繼資料 (存放庫、應用程式或嵌入式中繼資料)。 |
 | *_links* | `Record<string, any>` | 相關資產的超媒體連結。包括中繼資料和轉譯等資源的連結。 |
-| *連結(_L)。<http://ns.adobe.com/adobecloud/rel/rendition>* | `Array<Object>` | 包含有關資產轉譯資訊的物件陣列。 |
-| *連結(_L)。<http://ns.adobe.com/adobecloud/rel/rendition[].href>* | 字串 | 轉譯的 URI。 |
-| *連結(_L)。<http://ns.adobe.com/adobecloud/rel/rendition[].type>* | 字串 | 轉譯的 MIME 類型。 |
-| *連結(_L)。<http://ns.adobe.com/adobecloud/rel/rendition[].'repo:size>『* | 數字 | 轉譯的大小，以位元組計。 |
-| *連結(_L)。<http://ns.adobe.com/adobecloud/rel/rendition[].width>* | 數字 | 轉譯的寬度。 |
-| *連結(_L)。<http://ns.adobe.com/adobecloud/rel/rendition[].height>* | 數字 | 轉譯的高度。 |
+| *連結(_L)。<https://ns.adobe.com/adobecloud/rel/rendition>* | `Array<Object>` | 包含有關資產轉譯資訊的物件陣列。 |
+| *連結(_L)。<https://ns.adobe.com/adobecloud/rel/rendition[].href>* | 字串 | 轉譯的 URI。 |
+| *連結(_L)。<https://ns.adobe.com/adobecloud/rel/rendition[].type>* | 字串 | 轉譯的 MIME 類型。 |
+| *連結(_L)。<https://ns.adobe.com/adobecloud/rel/rendition[].'repo:size>『* | 數字 | 轉譯的大小，以位元組計。 |
+| *連結(_L)。<https://ns.adobe.com/adobecloud/rel/rendition[].width>* | 數字 | 轉譯的寬度。 |
+| *連結(_L)。<https://ns.adobe.com/adobecloud/rel/rendition[].height>* | 數字 | 轉譯的高度。 |
 
 如需完整的屬性清單和詳細範例，請造訪[資產選擇器代碼範例 ](https://github.com/adobe/aem-assets-selectors-mfe-examples)。
 
