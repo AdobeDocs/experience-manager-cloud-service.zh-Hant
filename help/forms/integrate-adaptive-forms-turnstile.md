@@ -5,27 +5,34 @@ topic-tags: Adaptive Forms, author
 feature: Adaptive Forms, Foundation Components
 hide: true
 hidefromtoc: true
-source-git-commit: 54914728ee892f14ab8d669051504a52942a6c01
+source-git-commit: d2c6514eb1f38b06dfa58daa03b781920b8928f6
 workflow-type: tm+mt
-source-wordcount: '856'
+source-wordcount: '950'
 ht-degree: 2%
 
 ---
 
-# 使用Turnstile連線您的AEM Forms環境 {#connect-your-forms-environment-with-turnstile-service}
-
 <span class="preview"> 此功能在早期採用者計畫下。 您可以從您的官方電子郵件ID寫信到aem-forms-ea@adobe.com ，以加入率先採用者計畫並請求存取該功能。 </span>
 
+CAPTCHA （完全自動化公用圖靈測試來區分電腦和人之間的差異）是一種常用於線上交易的程式，以區分人和自動化程式或機器人。 這會帶來挑戰，並評估使用者的回應，以判斷其是否為人類或機器人與網站互動。 它可防止使用者在測試失敗時繼續進行，並透過防止機器人張貼垃圾郵件或惡意目的來確保線上交易的安全。
 
-Cloudflare的Turnstile驗證碼是一種安全性措施，旨在保護表單和網站免受自動化機器人、惡意攻擊、垃圾郵件和不需要的自動化流量的傷害。 在允許提交表單前，它會在表單提交上顯示核取方塊，以驗證使用者是否為人類。 AEM Formsas a Cloud Service支援最適化Forms中的Turnstile驗證碼。
+AEM Formsas a Cloud Service支援下列CAPTCHA解決方案：
+
+* [Cloudflare Turnstile](#integrate-aem-forms-environment-with-turnstile-captcha)
+* [Google reCAPTCHA](/help/forms/captcha-adaptive-forms.md)
+* [驗證碼](/help/forms/integrate-adaptive-forms-hcaptcha.md)
+
+## 將AEM Forms環境與Turnstile驗證碼整合
+
+Cloudflare的Turnstile驗證碼是一種安全性措施，旨在保護表單和網站免受自動化機器人、惡意攻擊、垃圾郵件和不需要的自動化流量的傷害。 在允許提交表單前，它會在表單提交上顯示核取方塊，以驗證使用者是否為人類。 AEM Formsas a Cloud Service支援Adaptive Forms核心元件中的Turnstile驗證碼。
 
 <!-- ![Turnstile](assets/Turnstile-challenge.png)-->
 
-## 整合AEM Forms環境與Turnstile的先決條件 {#prerequisite}
+### 整合AEM Forms環境與Turnstile驗證碼的必要條件 {#prerequisite}
 
 若要設定AEM Forms核心元件的Turnstile，您必須取得 [轉門式網站金鑰與秘密金鑰](https://developers.cloudflare.com/turnstile/get-started/) 來自Turnstile網站。
 
-## 為AEM Forms設定Turnstile的步驟{#steps-to-configure-turnstile}
+### 為AEM Forms設定Turnstile的步驟{#steps-to-configure-turnstile}
 
 1. 在您的AEM Formsas a Cloud Service環境中建立設定容器。 設定容器內含用來將AEM連線至外部服務的雲端設定。 若要建立並設定設定設定容器，以將您的AEM Forms環境與Turnstile連線：
    1. 開啟您的AEM Formsas a Cloud Service執行個體。

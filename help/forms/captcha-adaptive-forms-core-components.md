@@ -5,9 +5,9 @@ topic-tags: Adaptive Forms, author
 keywords: Google reCAPTCHA服務，最適化Forms， CAPTCHA挑戰，機器人預防，核心元件，表單提交安全性，表單垃圾郵件預防
 feature: Adaptive Forms, Core Components
 exl-id: d116f979-efb6-4fac-8202-89afd1037b2c
-source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
+source-git-commit: d2c6514eb1f38b06dfa58daa03b781920b8928f6
 workflow-type: tm+mt
-source-wordcount: '918'
+source-wordcount: '939'
 ht-degree: 2%
 
 ---
@@ -21,14 +21,16 @@ ht-degree: 2%
 
 CAPTCHA （完全自動化公用圖靈測試來區分電腦和人之間的差異）是一種常用於線上交易的程式，以區分人和自動化程式或機器人。 這會帶來挑戰，並評估使用者的回應，以判斷其是否為人類或機器人與網站互動。 它可防止使用者在測試失敗時繼續進行，並透過防止機器人張貼垃圾郵件或惡意目的來確保線上交易的安全。
 
-[!DNL AEM Forms] as a [!DNL Cloud Service] 在最適化Forms中支援Google reCAPTCHA v2。 您可以用它來在表單提交時提出驗證碼質詢。 在最適化表單中使用reCAPTCHA：
+AEM Formsas a Cloud Service支援下列CAPTCHA解決方案：
 
-1. [透過Google的reCAPTCHA服務連線您的AEM Forms環境](#connect-your-forms-environment-with-recaptcha-service-by-google)
-1. [設定最適化表單，以在表單提交時顯示驗證碼質詢](#using-reCAPTCHA)
+* [Google reCAPTCHA](#connect-your-aem-forms-environment-with-recaptcha-service-by-google)
+* [Cloudflare Turnstile](/help/forms/integrate-adaptive-forms-turnstile-core-components.md)
+* [驗證碼](/help/forms/integrate-adaptive-forms-hcaptcha-core-components.md)
+
 
 ## 透過Google的reCAPTCHA服務連線您的AEM Forms環境 {#connect-your-forms-environment-with-recaptcha-service-by-google}
 
-若要使用Google的reCAPTCHA服務連線您的AEM Forms環境
+表單作者可使用Google的reCAPTCHA服務，在最適化Forms中實作reCAPTCHA。 它提供進階驗證碼功能以保護您的網站。 如需reCAPTCHA運作方式的詳細資訊，請參閱 [Google reCAPTCHA](https://developers.google.com/recaptcha/). [!DNL AEM Forms] as a [!DNL Cloud Service] 在最適化Forms中支援Google reCAPTCHA v2。 您可以用它來在表單提交時提出驗證碼質詢。 若要使用Google的reCAPTCHA服務連線您的AEM Forms環境
 
 1. 取得 [reCAPTCHA API金鑰組](https://www.google.com/recaptcha/admin) 來自Google。 它包含 **網站金鑰** 和 **秘密金鑰**.
 
@@ -102,7 +104,7 @@ Select the **[!UICONTROL Currency Value]** field in the form and create the foll
 
    -->
 
-## 常見問答
+## 常見問題
 
 **問：我可以在最適化表單中使用多個驗證碼元件嗎？**
 **Ans：** 不支援在最適化表單中使用多個驗證碼元件。 此外，不建議在標籤為延遲載入的片段或面板中使用驗證碼元件。

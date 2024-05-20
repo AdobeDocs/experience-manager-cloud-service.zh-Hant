@@ -1,15 +1,15 @@
 ---
-title: 如何在AEM最適化表單中使用hCaptcha®？
-description: 使用hCaptcha®服務輕鬆增強表單安全性。 內的逐步指南！
+title: 如何在AEM最適化表單中使用hCaptcha&reg；？
+description: 使用hCaptcha&reg；服務輕鬆增強表單安全性。 內的逐步指南！
 topic-tags: Adaptive Forms, author
-keywords: 驗證碼®服務，最適化Forms， CAPTCHA挑戰，機器人預防，表單提交安全性，表單垃圾郵件預防
+keywords: 驗證碼&reg；服務，最適化Forms， CAPTCHA挑戰，機器人預防，表單提交安全性，表單垃圾郵件預防
 feature: Adaptive Forms, Foundation Components
 hide: true
 hidefromtoc: true
-source-git-commit: a8a31bae0f937aa8941d258af648d6be030a9fac
+source-git-commit: d2c6514eb1f38b06dfa58daa03b781920b8928f6
 workflow-type: tm+mt
-source-wordcount: '883'
-ht-degree: 2%
+source-wordcount: '983'
+ht-degree: 1%
 
 ---
 
@@ -18,11 +18,21 @@ ht-degree: 2%
 
 <span class="preview"> 此功能在早期採用者計畫下。 您可以從您的官方電子郵件ID寫信到aem-forms-ea@adobe.com ，以加入率先採用者計畫並請求存取該功能。 </span>
 
+CAPTCHA （完全自動化公用圖靈測試來區分電腦和人之間的差異）是一種常用於線上交易的程式，以區分人和自動化程式或機器人。 這會帶來挑戰，並評估使用者的回應，以判斷其是否為人類或機器人與網站互動。 它可防止使用者在測試失敗時繼續進行，並透過防止機器人張貼垃圾郵件或惡意目的來確保線上交易的安全。
+
+AEM Formsas a Cloud Service支援下列CAPTCHA解決方案：
+
+* [驗證碼](#integrate-aem-forms-environment-with-hcaptcha-captcha)
+* [Cloudflare Turnstile](/help/forms/integrate-adaptive-forms-turnstile.md)
+* [Google reCAPTCHA](/help/forms/captcha-adaptive-forms.md)
+
+## 將AEM Forms環境與hCaptcha驗證碼整合
+
 hCaptcha®服務可保護您的表單免受機器人、垃圾郵件和自動濫用的侵擾。 這會提出核取方塊Widget質詢，並評估使用者回應，以判斷它是人類還是機器人與表單互動。 它可防止使用者在測試失敗時繼續進行，並透過防止機器人張貼垃圾郵件或惡意活動來確保線上交易的安全。
 
-<!-- ![hCaptcha®](assets/hCaptcha®-challenge.png)-->
+AEM Formsas a Cloud Service支援Adaptive Forms核心元件中的hCaptcha®。 您可以用它來在表單提交時顯示核取方塊Widget挑戰。
 
-AEM Formsas a Cloud Service支援最適化Forms中的hCaptcha®。 您可以用它向提交表單的使用者顯示核取方塊Widget挑戰。
+<!-- ![hCaptcha&reg;](assets/hCaptcha&reg;-challenge.png)-->
 
 ## 將AEM Forms環境與hCaptcha整合的必要條件® {#prerequisite}
 

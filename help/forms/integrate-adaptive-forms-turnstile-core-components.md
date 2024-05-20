@@ -5,9 +5,9 @@ topic-tags: Adaptive Forms, author
 feature: Adaptive Forms, Core Components
 hide: true
 hidefromtoc: true
-source-git-commit: a8a31bae0f937aa8941d258af648d6be030a9fac
+source-git-commit: d2c6514eb1f38b06dfa58daa03b781920b8928f6
 workflow-type: tm+mt
-source-wordcount: '797'
+source-wordcount: '891'
 ht-degree: 2%
 
 ---
@@ -16,15 +16,28 @@ ht-degree: 2%
 
 <span class="preview"> 此功能在早期採用者計畫下。 您可以從您的官方電子郵件ID寫信到aem-forms-ea@adobe.com ，以加入率先採用者計畫並請求存取該功能。 </span>
 
-Cloudflare的Turnstile驗證碼是一種安全性措施，旨在保護表單和網站免受自動化機器人、惡意攻擊、垃圾郵件和不需要的自動化流量的傷害。 在允許提交表單前，它會在表單提交上顯示核取方塊，以驗證使用者是否為人類。 AEM Formsas a Cloud Service支援Adaptive Forms核心元件中的Turnstile驗證碼。
+CAPTCHA （完全自動化公用圖靈測試來區分電腦和人之間的差異）是一種常用於線上交易的程式，以區分人和自動化程式或機器人。 這會帶來挑戰，並評估使用者的回應，以判斷其是否為人類或機器人與網站互動。 它可防止使用者在測試失敗時繼續進行，並透過防止機器人張貼垃圾郵件或惡意目的來確保線上交易的安全。
+
+AEM Formsas a Cloud Service支援下列CAPTCHA解決方案：
+
+
+* [Cloudflare Turnstile](#integrate-aem-forms-environment-with-turnstile-captcha)
+* [Google reCAPTCHA](/help/forms/captcha-adaptive-forms-core-components.md)
+* [驗證碼](/help/forms/integrate-adaptive-forms-hcaptcha-core-components.md)
+
+
 
 <!-- ![Turnstile](assets/Turnstile-challenge.png)-->
 
-## 整合AEM Forms環境與Turnstile驗證碼的必要條件 {#prerequisite}
+## 將AEM Forms環境與Turnstile驗證碼整合
+
+Cloudflare的Turnstile驗證碼是一種安全性措施，旨在保護表單和網站免受自動化機器人、惡意攻擊、垃圾郵件和不需要的自動化流量的傷害。 在允許提交表單前，它會在表單提交上顯示核取方塊，以驗證使用者是否為人類。 AEM Formsas a Cloud Service支援Adaptive Forms核心元件中的Turnstile驗證碼。
+
+### 整合AEM Forms環境與Turnstile驗證碼的必要條件 {#prerequisite}
 
 若要設定AEM Forms核心元件的Turnstile，您必須取得 [轉門式網站金鑰與秘密金鑰](https://developers.cloudflare.com/turnstile/get-started/) 來自Turnstile網站。
 
-## 設定Turnstile的步驟 {#steps-to-configure-hcaptcha}
+### 設定Turnstile {#steps-to-configure-hcaptcha}
 
 若要將AEM Forms與Turnstile服務整合，請執行下列步驟：
 
@@ -57,7 +70,7 @@ Cloudflare的Turnstile驗證碼是一種安全性措施，旨在保護表單和�
 
    設定Turnstile Captcha服務後，便可用於以下專案： [根據核心元件的最適化表單](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction).
 
-## 在最適化Forms核心元件中使用Turnstile {#using-turnstile-core-components}
+## 在最適化表單中使用Turnstile {#using-turnstile-core-components}
 
 1. 開啟您的AEM Formsas a Cloud Service執行個體。
 1. 前往 **[!UICONTROL Forms]** > **[!UICONTROL Forms與檔案]**.

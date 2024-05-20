@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: adaptive_forms, author
 feature: Adaptive Forms, Foundation Components
 exl-id: 3fdbe5a3-5c3c-474d-b701-e0182da4191a
-source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
+source-git-commit: d2c6514eb1f38b06dfa58daa03b781920b8928f6
 workflow-type: tm+mt
-source-wordcount: '1747'
+source-wordcount: '1742'
 ht-degree: 6%
 
 ---
@@ -29,17 +29,15 @@ ht-degree: 6%
 
 CAPTCHA （完全自動化公用圖靈測試來區分電腦和人之間的差異）是一種常用於線上交易的程式，以區分人和自動化程式或機器人。 這會帶來挑戰，並評估使用者的回應，以判斷其是否為人類或機器人與網站互動。 它可防止使用者在測試失敗時繼續進行，並透過防止機器人張貼垃圾郵件或惡意目的來確保線上交易的安全。
 
-[!DNL AEM Forms] 在最適化Forms中支援reCAPTCHA。 您可以使用Google的reCAPTCHA服務來實作CAPTCHA。
+AEM Formsas a Cloud Service支援下列CAPTCHA解決方案：
 
->[!NOTE]
->
->* [!DNL AEM Forms] 支援reCaptcha v2和reCaptcha Enterprise。 不支援任何其他版本。
->* 上離線模式不支援最適化Forms中的reCAPTCHA [!DNL AEM Forms] 應用程式。
->
+* [Google reCAPTCHA](#configure-recaptcha-service-by-google)
+* [Cloudflare Turnstile](/help/forms/integrate-adaptive-forms-turnstile.md)
+* [驗證碼](/help/forms/integrate-adaptive-forms-hcaptcha.md)
 
 ## 透過Google設定reCAPTCHA服務 {#google-reCAPTCHA}
 
-表單作者可使用Google的reCAPTCHA服務，在最適化Forms中實作reCAPTCHA。 它提供進階驗證碼功能以保護您的網站。 如需reCAPTCHA運作方式的詳細資訊，請參閱 [Google reCAPTCHA](https://developers.google.com/recaptcha/). reCAPTCHA服務包括 [!DNL reCAPTCHA v2] 和 [!DNL reCAPTCHA Enterprise] 您可以將其中整合至 [!DNL AEM Forms]. 您可以根據自己的需求，設定reCAPTCHA服務以啟用：
+表單作者可使用Google的reCAPTCHA服務，在最適化Forms中實作reCAPTCHA。 它提供進階驗證碼功能以保護您的網站。 如需reCAPTCHA運作方式的詳細資訊，請參閱 [Google reCAPTCHA](https://developers.google.com/recaptcha/). AEM Forms支援 [!DNL reCAPTCHA v2] 和 [!DNL reCAPTCHA Enterprise]. 不支援任何其他版本。 另請注意，上離線模式不支援最適化Forms中的reCAPTCHA [!DNL AEM Forms] 應用程式。 您可以根據自己的需求，設定reCAPTCHA服務以啟用：
 
 ![reCAPTCHA](/help/forms/assets/recaptcha_new.png)
 
@@ -100,9 +98,9 @@ reCAPTCHA Enterprise服務啟用後，就可在調適型表單中使用。 另�
 <!--![reCAPTCHA v2](/help/forms/assets/recaptcha-v2.png)-->
 
 
-## 在最適化表單中使用reCAPTCHA {#using-reCAPTCHA}
+## 在最適化表單中使用Google reCAPTCHA {#using-reCAPTCHA}
 
-若要在最適化表單中使用reCAPTCHA：
+在最適化表單中使用Google reCAPTCHA：
 
 1. 在編輯模式中開啟最適化表單。
 
