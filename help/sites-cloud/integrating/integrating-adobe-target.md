@@ -4,9 +4,9 @@ description: 瞭解如何使用觸控式UI和Adobe Launch將Adobe Target與AEMas
 feature: Administering
 role: Admin
 exl-id: cf243fb6-5563-427f-a715-8b14fa0b0fc2
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 3ac17f1a67f4d952a0206b124d70762b65e1f354
 workflow-type: tm+mt
-source-wordcount: '1034'
+source-wordcount: '1065'
 ht-degree: 1%
 
 ---
@@ -20,7 +20,7 @@ Adobe Target是Adobe Experience Cloud的一部分，可讓您透過針對所有�
 
 管理AEM頁面（JS資料庫/標籤）中Analytics和Target的使用者端屬性時，需要Adobe Launch。 也就是說，「體驗鎖定目標」需要與Launch整合。
 
-若要將體驗片段和/或內容片段匯出至Target，您只需要 [Adobe Target設定和IMS](/help/sites-cloud/integrating/integration-adobe-target-ims.md).
+若要將體驗片段和/或內容片段匯出至Target，您需要 [Adobe Target設定](#create-configuration)，包括 [IMS整合](#ims-configuration).
 
 >[!NOTE]
 >
@@ -38,7 +38,20 @@ Adobe Target是Adobe Experience Cloud的一部分，可讓您透過針對所有�
 
 ### IMS 設定 {#ims-configuration}
 
-需要適用於Launch和Target的IMS設定，才能將Target與AEM和Launch正確整合。 雖然已在AEMas a Cloud Service中預先設定Launch的IMS設定，但必須建立Target IMS設定（在布建Target後）。 另請參閱 [與Adobe Target整合時使用的IMS設定](/help/sites-cloud/integrating/integration-adobe-target-ims.md) 和視訊 [整合Experience Platform Launch和AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html) 以瞭解如何建立Target IMS設定。
+透過Target Standard API整合AEM與Adobe Target需要設定Adobe IMS (Identity Management系統)。 必須建立Target IMS設定（布建Target後）。 另請參閱 [為AEMas a Cloud Service設定IMS整合](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md) 和視訊 [整合Experience Platform Launch和AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html) 以瞭解如何建立Target IMS設定。
+
+>[!NOTE]
+>
+>[IMS整合現在已透過S2S OAuth完成設定](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md).
+>
+>先前的設定是使用 [Adobe Developer Console中現在會淘汰的JWT憑證](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md).
+
+>[!NOTE]
+>
+>在設定專案時，與一起顯示的產品設定檔取決於您是否擁有：
+>
+>* Adobe Target Standard — 僅限 **預設工作區** 可用
+>* Adobe Target Premium — 列出所有可用的工作區，如下所示
 
 ### Adobe Target租使用者ID和Adobe Target使用者端代碼 {#tenant-client}
 
@@ -121,7 +134,7 @@ AEM提供與Experience Platform Launch的現成整合。 將Adobe Target擴充�
 1. 選取 **資料元素**.
 2. 選取 **新增資料元素**.
 3. 提供資料元素的名稱，並將其對應至內容中心引數。
-4. 選取&#x200B;**儲存**。
+4. 選取「**儲存**」。
    ![資料元素](assets/data_elem1.png "資料元素")
 
 ### 建立頁面規則 {#page-rule}

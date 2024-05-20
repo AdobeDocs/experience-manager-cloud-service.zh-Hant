@@ -2,9 +2,12 @@
 title: 與 Adobe Target 整合時使用的 IMS 設定
 description: 瞭解與Adobe Target整合時使用的IMS設定
 exl-id: b5474b70-bedc-4cc9-ad47-89dcb2415e3a
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+hide: true
+hidefromtoc: true
+index: false
+source-git-commit: 43c820996af947fab2bacdec7646211f4104ae4d
 workflow-type: tm+mt
-source-wordcount: '854'
+source-wordcount: '901'
 ht-degree: 4%
 
 ---
@@ -12,6 +15,14 @@ ht-degree: 4%
 # 與 Adobe Target 整合時使用的 IMS 設定{#ims-configuration-for-integration-with-adobe-target}
 
 透過Target Standard API整合AEM與Adobe Target需要設定Adobe IMS (Identity Management系統)。 此設定是透過Adobe Developer Console實現。
+
+>[!CAUTION]
+>
+>本頁所述的設定無法再用於新的或更新的整合。
+>
+>[IMS整合現在已透過S2S OAuth完成設定](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md).
+>
+>如本頁所述，先前的設定是使用 [Adobe Developer Console中現在會淘汰的JWT憑證](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md).
 
 >[!NOTE]
 >
@@ -161,7 +172,7 @@ Adobe Developer Console專案（整合），與AEM將使用的Adobe Target搭配
 返回至AEM後，您可以從Target的IMS整合新增必要值來完成IMS設定：
 
 1. 返回 [在AEM中開啟的IMS設定](#configuring-an-ims-configuration-generating-a-public-key).
-1. 選取 **下一個**.
+1. 選取&#x200B;**「下一步」**。
 
 1. 在這裡，您可以使用 [Adobe Developer Console中專案設定的詳細資料](#details-stored-for-the-ims-integration-project)：
 

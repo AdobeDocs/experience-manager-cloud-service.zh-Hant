@@ -4,9 +4,9 @@ description: 瞭解如何使用觸控式UI和Adobe Launch將Adobe Analytics與AE
 feature: Administering
 role: Admin
 exl-id: e353a1fa-3e99-4d79-a0d1-40851bc55506
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 3ac17f1a67f4d952a0206b124d70762b65e1f354
 workflow-type: tm+mt
-source-wordcount: '573'
+source-wordcount: '588'
 ht-degree: 2%
 
 ---
@@ -47,7 +47,15 @@ ht-degree: 2%
 
 ### 具有IMS驗證的Adobe Analytics {#configuration-parameters-ims}
 
-需要IMS設定，才能將Adobe Analytics與AEMas a Cloud Service正確整合。 必須建立此設定，請參閱 [頁面](/help/sites-cloud/integrating/integration-adobe-analytics-ims.md) 以瞭解如何建立Analytics IMS設定。
+透過Analytics Standard API將Adobe Experience Manager as a Cloud Service (AEMaaCS)與Adobe Analytics整合需要設定Adobe IMS (Identity Management系統)。
+
+另請參閱 [為AEMas a Cloud Service設定IMS整合](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md) 以瞭解如何建立IMS設定。
+
+>[!NOTE]
+>
+>[IMS整合現在已透過S2S OAuth完成設定](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md).
+>
+>先前的設定是使用 [Adobe Developer Console中現在會淘汰的JWT憑證](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md).
 
 ### 將設定新增至站台 {#add-configuration}
 
