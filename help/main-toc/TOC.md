@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的運作方式以及該軟體可以為您做哪些事。
 breadcrumb-title: 使用手冊
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 300bbbf0af0f0d896bf39f2a4e1fe4ed3d41f09a
+source-git-commit: 02388518f10d5c4bd34ad7d20a24877b468bff72
 workflow-type: tm+mt
-source-wordcount: '4946'
+source-wordcount: '4964'
 ht-degree: 99%
 
 ---
@@ -654,6 +654,8 @@ ht-degree: 99%
             + [設定提交到最適化表單的 REST 端點提交動作](/help/forms/configure-submit-action-restpoint.md)
             + [設定最適化表單的傳送電子郵件提交動作](/help/forms/configure-submit-action-send-email.md)
             + [在最適化表單中使用 Google reCAPTCHA](/help/forms/captcha-adaptive-forms-core-components.md)
+            + [在最適化表單中使用驗證碼](/help/forms/integrate-adaptive-forms-hcaptcha-core-components.md)
+            + [在最適化表單中使用Turnstile](/help/forms/integrate-adaptive-forms-turnstile-core-components.md)
             + [在最適化表單中新增自訂的錯誤處理常式](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
             + [為以核心元件為主的最適化表單新增地區設定](/help/forms/supporting-new-language-localization-core-components.md)
             + [建立和使用自訂功能](/help/forms/create-and-use-custom-functions.md)
@@ -676,6 +678,7 @@ ht-degree: 99%
             + [透過延遲載入改善大型表單的效能](/help/forms/lazy-loading-adaptive-forms.md)
          + 將元件新增至最適化表單{#add-components-to-an-adaptive-form}
             + [在最適化表單中使用驗證碼](/help/forms/captcha-adaptive-forms.md)
+            + [在最適化表單中使用驗證碼](/help/forms/integrate-adaptive-forms-hcaptcha.md)
             + [使用核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hant)
             + [套用手寫簽名](/help/forms/signing-forms-using-scribble.md)
             + [將表格新增至最適化表單](/help/forms/adaptive-forms-tables.md)
