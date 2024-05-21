@@ -2,7 +2,7 @@
 title: Edge Side包含
 description: Adobe Managed CDN現在支援Edge Side Include (ESI)，這是邊緣層級動態網頁內容組合的標籤語言。
 feature: Dispatcher
-source-git-commit: fb7c793a975fd725ef1cebcab545e057de78fa9d
+source-git-commit: 4523efa659ea2aef28e16d5df39f9793cd35d969
 workflow-type: tm+mt
 source-wordcount: '543'
 ht-degree: 1%
