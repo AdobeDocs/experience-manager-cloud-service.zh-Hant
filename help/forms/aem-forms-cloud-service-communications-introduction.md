@@ -4,15 +4,16 @@ description: 使用通訊API來簽署、認證或保護您的檔案、自動化P
 Keywords: How to generate document?, Generate PDF document, Manipulation PDF documents, Assembling PDF documents, Validating PDF document, APIs used in encrypting or decrypting PDFs.
 feature: Adaptive Forms, APIs
 role: Admin, Developer, User
-exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: 126af719cfd2c9361d0e7768b3b65e1149b6a989
+source-git-commit: 92811662e1ef9b6cbd5cb66c67f774109745bc68
 workflow-type: tm+mt
-source-wordcount: '1988'
-ht-degree: 55%
+source-wordcount: '2290'
+ht-degree: 40%
 
 ---
 
-# AEM Formsas a Cloud Service通訊簡介 {#frequently-asked-questions}
+# AEM Formsas a Cloud Service通訊API {#frequently-asked-questions}
+
+![主圖影像](assets/cloud-communication-apis-hero-image.jpeg)
 
 
 | 版本 | 文章連結 |
@@ -32,10 +33,13 @@ ht-degree: 55%
 
 * 安全存取資料。通訊 API 僅連接到客戶指定的資料存放庫並從中存取資料，從而使通訊高度安全。
 
-![信用卡對帳單範例](assets/statement.png)
-可以使用通訊 API 建立信用卡對帳單。此對帳單範例使用相同的範本，但根據每個客戶的信用卡使用情況為每個客戶提供個別的資料。
+<!-- 
+![A sample credit card statement](assets/statement.png)
+A credit card statement can be created using Communications APIs. This sample statement uses same template but separate data for each customer depending on their usage of credit card.
 
-## 文件產生
+-->
+
+## 檔案產生
 
 通訊文件產生 API 可協助將範本 (XFA 或 PDF) 與客戶資料 (XML) 相結合，以產生 PDF 和列印格式 (例如 PS、PCL、DPL、IPL 和 ZPL 格式) 的文件。這些 API 使用 PDF 和 XFA 範本搭配 [XML 資料](communications-known-issues-limitations.md#form-data)以產生單一隨需文件或使用批次作業產生多個文件。
 
@@ -56,7 +60,7 @@ ht-degree: 55%
 
 ### 建立 PostScript (PS)、印表機命令語言 (PCL)、Zebra 列印語言 (ZPL) 文件 {#create-PS-PCL-ZPL-documents}
 
-您可以使用文件產生 API 建立根據 XDP 表單設計或 PDF 文件的 PostScript (PS)、印表機命令語言 (PCL)、Zebra 列印語言 (ZPL) 文件。這些 API 可協助將表單設計與表單資料合併以產生文件。您可以將文件儲存到檔案和開發自訂流程將其傳送到印表機。
+您可以使用檔案產生API來建立以XDP表單設計或PDF檔案為基礎的PostScript (PS)、印表機命令語言(PCL)和Zebra列印語言(ZPL)檔案。 這些 API 可協助將表單設計與表單資料合併以產生文件。您可以將文件儲存到檔案和開發自訂流程將其傳送到印表機。
 
 <!-- ### Processing batch data to create multiple documents
 
@@ -104,13 +108,13 @@ An interactive PDF document contains various elements that constitute a form. Th
 
 When such an interactive PDF document is flattened using the Communications APIs, the state of the form is not retained. To ensure that the state of the form is retained even after the form is flattened, set the Boolean value _retainFormState_ to True to save and retain the state of the form. -->
 
-## 文件操控
+## 檔案操作
 
-通訊文件操控 API 可協助合併、重新排列和驗證 PDF 文件。通常，您會建立一個 DDX 並將其提交給文件操控 API 以組合或重新排列文件。[DDX 文件](https://helpx.adobe.com/content/dam/help/en/experience-manager/forms-cloud-service/ddxRef.pdf)提供了有關如何使用來源文件產生一組所需文件的說明。DDX 參考文件提供關於所有支援之作業的詳細資訊。部分文件操控範例：
+通訊檔案操作（檔案轉換） API有助於組合、重新排列PDF檔案。 通常，您會建立一個 DDX 並將其提交給文件操控 API 以組合或重新排列文件。[DDX 文件](https://helpx.adobe.com/content/dam/help/en/experience-manager/forms-cloud-service/ddxRef.pdf)提供了有關如何使用來源文件產生一組所需文件的說明。DDX 參考文件提供關於所有支援之作業的詳細資訊。部分文件操控範例：
 
 ### 組合 PDF 文件
 
-您可以使用文件操控 API 將兩個或更多 PDF 或 XDP 文件組成單一 PDF 文件或 PDF 組合。以下是一些組合 PDF 文件的方法：
+您可以使用文件操控 API 將兩個或更多 PDF 或 XDP 文件組成單一 PDF 文件或 PDF 組合。以下是組裝PDF檔案的一些方法：
 
 * 組合一個簡單 PDF 文件
 * 建立 PDF 組合
@@ -131,10 +135,6 @@ When such an interactive PDF document is flattened using the Communications APIs
 ![根據書籤將一個來源文件分隔成多個文件](assets/as_intro_pdfsfrombookmarks.png)
 圖：根據書籤將一個來源文件分隔成多個文件
 
-### 轉換為 PDF/A 相容文件並進行驗證
-
-您可以使用文件操控 API 將 PDF 文件轉換為 PDF/A 相容文件，並確定 PDF 文件是否 PDF/A 相容。PDF/A是一種用於長期儲存檔案內容的封存格式。 字體內嵌在文件中，檔案未壓縮。因此，PDF/A 文件通常比標準 PDF 文件大。此外，PDF/A 文件不包含音訊和視訊內容。
-
 >[!NOTE]
 >
 > AEM Forms提供多種內建字型，可與PDF檔案緊密整合。 若要檢視支援字型的清單， [按一下這裡](/help/forms/supported-out-of-the-box-fonts.md).
@@ -143,7 +143,7 @@ When such an interactive PDF document is flattened using the Communications APIs
 
 ## Document utilities
 
-Document utilities synchronous APIs helps you convert documents between PDF and XDP file formats, and query information about a PDF document. For example, you can determine whether a PDF document contains comments or attachments. 
+Document utilities synchronous APIs helps you convert documents between PDF and XDP file formats, and query information about a PDF document. For example, you can determine whether a PDF document contains comments or attachments.
 
 ### Retrieve PDF document properties
 
@@ -164,6 +164,42 @@ You can [query a PDF document](https://developer.adobe.com/experience-manager-fo
 ### Convert PDF Documents into XDP Documents
 
 The [PDF to XDP API](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/references/pdf-utility-sync/#tag/Document-Conversion) converts a PDF document to an XDP file. For a PDF document to be successfully converted to an XDP file, the PDF document must contain an XFA stream in the dictionary. -->
+
+## 檔案擷取
+
+<span class="preview"> 檔案擷取功能屬於早期採用者計畫。 您可以從您的官方電子郵件ID寫信到aem-forms-ea@adobe.com ，以加入率先採用者計畫並請求存取該功能。 </span>
+
+檔案擷取服務可讓您取得PDF檔案的屬性，例如使用許可權、PDF屬性和中繼資料。 檔案擷取功能包括：
+
+* 取得PDF檔案的屬性，例如PDF是否具有附件、註解、Acrobat版本等等。
+* 擷取PDF檔案中啟用的使用許可權，使用者會擷取在PDF檔案中啟用或停用的使用許可權，以利進行Adobe Acrobat Reader擴充。
+* 取得PDF檔案中出現的中繼資料資訊，中繼資料是檔案的相關資訊(與檔案的內容（例如文字和圖形）有所區別)。 Adobe可延伸中繼資料平台(XMP)是處理檔案中繼資料的標準。 「XMP公用程式」服務可以從PDF檔案中擷取XMP中繼資料，並將XMP中繼資料匯出到PDF檔案中。
+
+此 [API參考檔案](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/) 會提供API提供之所有引數、驗證方法和服務之相關詳細資訊。 API參考檔案也以.yaml格式提供。 您可以下載.yaml並將其上傳到Postman以檢查API的功能。
+
+<!--
+
+<span class="preview"> The XMP Utilities Service capability is under Early Adopter Program. You can write to aem-forms-ea@adobe.com from your official email id to join the early adopter program and request access to the capability. </span>
+
+### XMP Utilities {#XMP-utilities}
+
+<span class="preview"> The XMP Utilities Service capability is under Early Adopter Program. You can write to aem-forms-ea@adobe.com from your official email id to join the early adopter program and request access to the capability. </span>
+
+PDF documents contain metadata, which is information about the document (as distinguished from the contents of the document, such as text and graphics). The Adobe Extensible Metadata Platform (XMP) is a standard for handling document metadata. The XMP Utilities service can retrieve and save XMP metadata from PDF documents and import XMP metadata into PDF documents.
+
+-->
+
+## 檔案轉換
+
+### 轉換為 PDF/A 相容文件並進行驗證
+
+通訊檔案轉換API有助於將PDF檔案轉換為PDF/A。您可以使用這些API將PDF檔案轉換為符合PDF/A的檔案，也可以判斷PDF檔案是否符合PDF/A。 PDF/A是一種用於長期儲存檔案內容的封存格式。 字體內嵌在文件中，檔案未壓縮。因此，PDF/A 文件通常比標準 PDF 文件大。此外，PDF/A 文件不包含音訊和視訊內容。
+
+### 將PDF轉換為XDP {#convert-pdf-to-xdp}
+
+<span class="preview"> 轉換PDF為XDP的功能屬於早期採用者計畫。 您可以從您的官方電子郵件ID寫信到aem-forms-ea@adobe.com ，以加入率先採用者計畫並請求存取該功能。 </span>
+
+將PDF檔案轉換為XDP檔案。 若要將PDF檔案成功轉換成XDP檔案，PDF檔案必須在字典中包含XFA資料流。
 
 ## 檔案保證 {#doc-assurance}
 
@@ -191,9 +227,15 @@ DocAssurance服務包含簽名和加密API：
 
 簽名API和加密API都是 [同步API](#types-of-communications-apis-types).
 
-### 使用許可權API
 
-<span class="preview"> 使用許可權功能屬於早期採用者計畫。 您可以從您的官方電子郵件ID寫信到aem-forms-ea@adobe.com ，以加入率先採用者計畫並請求存取該功能。 </span>
+### 檔案公用程式 {#doc-utility}
+
+具有同步API的檔案公用程式可協助您在PDF和XDP檔案格式之間轉換檔案。 將使用許可權套用至檔案，並從檔案中擷取啟用的使用許可權。 查詢PDF檔案的相關資訊。 <!-- determines whether a PDF document contains comments or attachments and more, and use document transformation services for XMP utilities--> 使用許可權API的詳細資訊如下：
+
+
+#### 使用許可權API (Reader擴充功能)
+
+<span class="preview"> 使用許可權(Reader擴充功能)功能受限於早期採用者計畫。 您可以從您的官方電子郵件ID寫信到aem-forms-ea@adobe.com ，以加入率先採用者計畫並請求存取該功能。 </span>
 
 使用許可權功能可透過擴充具有其他使用許可權的Adobe Reader功能，讓您的組織輕鬆共用互動式PDF檔案。 此服務可與Adobe Reader 7.0或更新版本搭配使用，且會將使用許可權新增至PDF檔案。 此動作會啟動在使用Adobe Reader開啟PDF檔案時通常無法使用的功能，例如新增註釋至檔案、填寫表單和儲存檔案。
 
@@ -238,9 +280,6 @@ DocAssurance服務包含簽名和加密API：
 
 * **獨立提交**：從PDF檔案離線提交表單資料。
 
-#### 擷取使用許可權
-
-為了Adobe Acrobat Reader的擴充性，它有助於擷取在PDF檔案中啟用或停用的使用許可權。
 
 #### 其他功能
 
@@ -255,13 +294,13 @@ DocAssurance服務包含簽名和加密API：
 
 * **[同步 API](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)** 適用於隨需、低延遲和單筆記錄文件產生案例。這些 API 更適合根據使用者動作的使用案例。例如，在使用者填寫完表單後產生文件。
 
-* **[批次 API (非同步 API)](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)** 適用於已排程、高輸出量和多文件產生案例。這些 API 批次產生文件。例如，每月產生的電話帳單、信用卡報表和福利報表。
+* **[批次 API (非同步 API)](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)** 適用於已排程、高輸出量和多文件產生案例。這些 API 批次產生文件。例如，每個月都會產生電話帳單、信用卡對帳單和福利對帳單。
 
 ## 上線
 
-通訊功能可作為獨立和附加模組供 Forms as a Cloud Service 使用者使用。您可以聯絡 Adobe Sales 團隊或您的 Adobe 代表，要求存取權。Adobe 為您的組織啟用存取權，並向您指定的組織管理員提供所需的權限。管理員可以將存取權授予您組織的 Forms as a Cloud Service 開發人員 (使用者) 以使用 API。
+通訊功能可作為獨立和附加模組供 Forms as a Cloud Service 使用者使用。您可以聯絡Adobe銷售團隊或您的Adobe代表以要求存取權。 Adobe 為您的組織啟用存取權，並向您指定的組織管理員提供所需的權限。管理員可以授與您as a Cloud Service的Forms開發人員（使用者）存取權以使用這些API。
 
-加入後，為您的 Forms as a Cloud Service 環境啟用通訊功能：
+上線後，若要為您的Formsas a Cloud Service環境啟用通訊功能：
 
 1. 登入 Cloud Manager 並開啟您的 AEM Forms as a Cloud Service 執行個體。
 
@@ -279,7 +318,7 @@ DocAssurance服務包含簽名和加密API：
 
 >[!NOTE]
 >
-> 若要啟用和設定文件操控 API，請將以下規則新增至[Dispatcher 設定](setup-local-development-environment.md#forms-specific-rules-to-dispatcher)：
+> 若要啟用及設定檔案操作API，請將下列規則新增至 [Dispatcher設定](setup-local-development-environment.md#forms-specific-rules-to-dispatcher)：
 >
 > `# Allow Forms Doc Generation requests`
 > `/0062 { /type "allow" /method "POST" /url "/adobe/forms/assembler/*" }`
