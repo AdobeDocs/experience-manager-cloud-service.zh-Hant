@@ -2,10 +2,11 @@
 title: 編輯影像
 description: 使用  [!DNL Adobe Photoshop Express]  支援的選項編輯影像，並將更新的影像另存新版。
 role: User
-source-git-commit: c3076ce35128c147ce2056d11d9305d9a9456636
+exl-id: cfc4c7b7-da8c-4902-9935-0e3d4388b975
+source-git-commit: 89d13f278fdaddbcf6b07a2f3edfc1fda1092aa2
 workflow-type: tm+mt
-source-wordcount: '1251'
-ht-degree: 80%
+source-wordcount: '901'
+ht-degree: 72%
 
 ---
 
@@ -117,7 +118,8 @@ ht-degree: 80%
 >* 資產大小必須小於 17 MB。
 >* 您可以將影像儲存在 `PDF`， `JPEG`，或 `PNG` 格式；而如果有多個頁面，您可以將其儲存為 `PDF`.
 
-## 使用 [!DNL Adobe Photoshop Express] 編輯影像 {#edit-using-photoshop-express}
+<!-- 
+## Edit images using [!DNL Adobe Photoshop Express] {#edit-using-photoshop-express}
 
 <!--
 After editing an image, you can save the new image as a new version. Versioning helps you to revert to the original asset later, if needed. To edit an image, [open its preview](navigate-assets-view.md#preview-assets) and click **[!UICONTROL Edit Image]** ![edit icon](assets/do-not-localize/edit-icon.png) from the rail on the right.
@@ -126,49 +128,49 @@ After editing an image, you can save the new image as a new version. Versioning 
 
 *Figure: The options to edit images are powered by [!DNL Adobe Photoshop Express].*
 -->
+<!-- 
+### Touch up images {#spot-heal-images-using-photoshop-express}
 
-### 修飾影像 {#spot-heal-images-using-photoshop-express}
+If there are minor spots or small objects on an image, you can edit and remove the spots using the spot healing feature provided by Adobe Photoshop.
 
-如果影像上出現細微污點或小型物件，您可以使用 Adobe Photoshop 提供的污點修復功能編輯和移除污點。
+The brush samples the retouched area and makes the repaired pixels blend seamlessly into the rest of the image. Use a brush size that is only slightly larger than the spot you want to fix.
 
-筆刷會取樣修飾過的區域，然後將修復的像素完美融入影像的其餘部份。請使用只比您要修復的污點稍大的筆刷大小。
-
-![污點修復編輯選項](assets/edit-spot-healing.png)
+![Spot healing edit option](assets/edit-spot-healing.png)
 
 <!-- 
 TBD: See if we should give backlinks to PS docs for these concepts.
 For more information about how Spot Healing works in Photoshop, see [retouching and repairing photos](https://helpx.adobe.com/photoshop/using/retouching-repairing-images.html). 
 -->
+<!-- 
+### Crop and straighten images {#crop-straighten-images-using-photoshop-express}
 
-### 裁切和拉直影像 {#crop-straighten-images-using-photoshop-express}
+Using the crop and straighten option that you can do basic cropping, rotate image, flip it horizontally or vertically, and crop it to dimensions suitable for popular social media websites.
 
-您可以使用裁切和拉直選項進行基本的裁切、旋轉影像、水平或垂直翻轉影像，以及將影像裁切成適用於熱門社交媒體網站的尺寸。
+To save your edits, click **[!UICONTROL Crop Image]**. After editing, you can save the new image as a version.
 
-若要儲存您的編輯，請按一下&#x200B;**[!UICONTROL 裁切影像]**。編輯後，即可將新影像另存新版。
+![Option to crop and straighten](assets/edit-crop-straighten.png)
 
-![裁切和拉直影像的選項](assets/edit-crop-straighten.png)
+Many default options let you crop your image to the best proportions that fit various social media profiles and posts.
 
-許多預設選項可讓您將影像裁切成適合各種社交媒體基本資料的最佳比例。
+### Resize image {#resize-image-using-photoshop-express}
 
-### 調整影像大小 {#resize-image-using-photoshop-express}
+You can view the common photo sizes in centimeters or inches to know the dimensions. By default, the resizing method retains the aspect ratio. To manually override the aspect ratio, click ![](assets/do-not-localize/lock-closed-icon.png).
 
-您可以用公分或英吋檢視常見的相片大小，以知道尺寸大小。依照預設，調整大小方法仍會保持長寬比。若要手動覆寫長寬比，請按一下「![](assets/do-not-localize/lock-closed-icon.png)」。
+Enter the dimensions and click **[!UICONTROL Resize Image]** to resize the image. Before you save the changes as a version, you can either undo all the changes done before saving by clicking [!UICONTROL Undo] or you can change the specific step in the editing process by clicking [!UICONTROL Revert].
 
-請輸入尺寸，然後按一下&#x200B;**[!UICONTROL 調整影像大小]**&#x200B;即可調整影像大小。將變更另存為新版本前，您可以按一下[!UICONTROL 還原]以在儲存前復原所有變更，或按一下[!UICONTROL  回復]以變更編輯流程中的特定步驟。
+![Options when resizing an image](assets/resize-image.png)
 
-![調整影像大小時的選項](assets/resize-image.png)
+### Adjust image {#adjust-image-using-photoshop-express}
 
-### 調整影像 {#adjust-image-using-photoshop-express}
+[!DNL Assets view] lets you adjust the color, tone, contrast, and more, with just a few clicks. Click **[!UICONTROL Adjust image]** in the edit window. The following options are available in the right sidebar:
 
-[!DNL Assets view] 可讓您按幾下滑鼠，即可調整顏色、色調、對比等等。在編輯視窗中，按一下&#x200B;**[!UICONTROL 調整影像]**。在右側邊欄中有以下選項：
+* **Popular**: [!UICONTROL High Contrast & Detail], [!UICONTROL Desaturated Contrast], [!UICONTROL Aged Photo], [!UICONTROL B&W Soft], and [!UICONTROL B&W Sepia Tone].
+* **Color**: [!UICONTROL Natural], [!UICONTROL Bright], [!UICONTROL High Contrast], [!UICONTROL High Contrast & Detail], [!UICONTROL Vivid], and [!UICONTROL Matte].
+* **Creative**: [!UICONTROL Desaturated Contrast], [!UICONTROL Cool Light], [!UICONTROL Turquoise & Red], [!UICONTROL Soft Mist], [!UICONTROL Vintage Instant], [!UICONTROL Warm Contrast], [!UICONTROL Flat & Green], [!UICONTROL Red Lift Matte], [!UICONTROL Warm Shadows], and [!UICONTROL Aged Photo].
+* **B&W**: [!UICONTROL B&W Landscape], [!UICONTROL B&W High Contrast], [!UICONTROL B&W Punch], [!UICONTROL B&W Low Contrast], [!UICONTROL B&W Flat], [!UICONTROL B&W Soft], [!UICONTROL B&W Infrared], [!UICONTROL B&W Selenium Tone], [!UICONTROL B&W Sepia Tone], and [!UICONTROL B&W Split Tone].
+* **Vignetting**: [!UICONTROL None], [!UICONTROL Light], [!UICONTROL Medium], and [!UICONTROL Heavy].
 
-* **熱門**：[!UICONTROL 高對比度和細節]、[!UICONTROL 減少飽和對比度]、[!UICONTROL 陳年相片]、[!UICONTROL 黑白柔焦]以及[!UICONTROL 黑白墨色調]。
-* **顏色**：[!UICONTROL 自然]、[!UICONTROL 明亮]、[!UICONTROL 高對比度]、[!UICONTROL 高對比度和細節]、[!UICONTROL 鮮豔]以及[!UICONTROL 霧面]。
-* **創意**：[!UICONTROL 減少飽和對比度]、[!UICONTROL 冷光]、[!UICONTROL 藍綠色和紅色]、[!UICONTROL 柔霧]、[!UICONTROL 復古即時]、[!UICONTROL 暖對比度]、[!UICONTROL 單調和綠色]、[!UICONTROL 紅色霧面]、[!UICONTROL 溫暖陰影]以及[!UICONTROL 陳年相片]。
-* **黑白**：[!UICONTROL 黑白景觀]、[!UICONTROL 黑白高對比度]、[!UICONTROL 黑白力量]、[!UICONTROL 黑白低對比度]、[!UICONTROL 黑白單調]、[!UICONTROL 黑白柔焦]、[!UICONTROL 黑白紅外線]、[!UICONTROL 黑白硒色調]、[!UICONTROL 黑白墨色調]以及[!UICONTROL 黑白分割色調]。
-* **周邊暗角**：[!UICONTROL 無]、[!UICONTROL 輕度]、[!UICONTROL 中度]以及[!UICONTROL 重度]。
-
-![透過編輯調整影像](assets/adjust-image.png)
+![Adjust image by editing](assets/adjust-image.png)
 
 <!--
 TBD: Insert a video of the available social media options.
