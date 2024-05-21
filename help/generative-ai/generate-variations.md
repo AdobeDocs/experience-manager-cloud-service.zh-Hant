@@ -2,10 +2,10 @@
 title: 產生變化版本
 description: 瞭解如何從AEMas a Cloud Service和Edge Delivery ServicesSidekick存取產生變數
 exl-id: 9114037f-37b9-4b2f-a714-10933f69b2c3
-source-git-commit: 58a91e0e5d6267caac8210f001f6f963870eb7dd
+source-git-commit: 1d4c6512a3414db901d289557f9704699c8b6222
 workflow-type: tm+mt
-source-wordcount: '3257'
-ht-degree: 0%
+source-wordcount: '3262'
+ht-degree: 1%
 
 ---
 
@@ -18,6 +18,7 @@ ht-degree: 0%
 
 * [在Adobe Experience Manager (AEM)as a Cloud Service中](#access-aemaacs)
 * [AEMEdge Delivery Services的Sidekick](#access-aem-sidekick)
+* [在內容片段編輯器內](#authoring-content-fragments)
 
 >[!NOTE]
 >

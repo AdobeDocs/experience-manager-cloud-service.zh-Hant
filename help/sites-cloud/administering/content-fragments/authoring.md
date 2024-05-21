@@ -4,10 +4,10 @@ description: 瞭解如何為內容片段製作內容，並根據用途建立該�
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
-source-git-commit: 6353bd50c1df43d9ce11616f71a69d8bfb5ab338
+source-git-commit: 36fa580b017ab10097512165a35a9198a6d331d3
 workflow-type: tm+mt
-source-wordcount: '2381'
-ht-degree: 6%
+source-wordcount: '2670'
+ht-degree: 5%
 
 ---
 
@@ -24,6 +24,7 @@ ht-degree: 6%
 
 * [自動儲存](#saving-autosaving)，以防止編輯意外遺失。
 * [以內容參考的方式內嵌上傳資產](#reference-images)，無需先將它們上傳至資產DAM。
+* [產生變數](#generate-variations-ai) 使用Generative AI根據提示加速內容建立。
 * [預覽](#preview-content-fragment) 內容片段提供的呈現體驗數量。
 * 能夠 [發佈](#publish-content-fragment) 和 [取消發佈](#unpublish-content-fragment) 從編輯器中。
 * 能夠 [檢視並開啟相關的語言副本](#view-language-copies) 在編輯器中。
@@ -83,7 +84,7 @@ ht-degree: 6%
 
 * 清單 **[變數](#variations)** 已針對此片段建立的：
    * **主要** 是最初建立內容片段時顯示的變數，您稍後可以新增其他變數
-   * 您可以選取並開啟變數進行編輯
+   * 您可以使用「產生變數」(Generate Variations(#generate-variations))來使用Adobe針對特定使用案例建立的提示型範本。
    * 您也可以 [建立變數](#create-variation)
 * 此 **欄位** 在片段及其變數內：
    * 圖示會指出 [資料型別](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)
@@ -119,6 +120,8 @@ ht-degree: 6%
 從編輯器中，您可以：
 
 * [建立變數](#create-variation) 的 **主要** 內容
+
+* [使用產生變數AI](#generate-variations-ai) 使用Generative AI來使用Adobe為特定使用案例建立的提示型範本。
 
 * 選取編輯內容所需的變數
 
@@ -156,14 +159,52 @@ ht-degree: 6%
 
 1. 按下 **傳回** 或移至另一個欄位以自動儲存變更。 標題會在 **變數** 面板顯示。
 
+### 使用GenAI建立變化並產生變化 {#generate-variations-ai}
+
+使用Generative Variations來利用Generative AI加速內容建立。
+
+在內容片段編輯器中使用產生式變數：
+
+1. 開啟內容片段編輯器。 在標題中，您會找到「產生變數」的進入點：
+
+![在內容片段編輯器中產生變體](assets/cfm-generate-variations1.png)
+
+1. 產生變數會在新標籤中開啟。 在左側欄中，您可以看到AEM Cloud例項以及您正在建立內容的內容片段。 選取您要使用的提示，或建立新提示。
+
+   >[!NOTE]
+   >
+   >目前可用的Adobe提示範本有限，但未來版本將會新增更多範本。
+
+![匯出以產生內容片段中的變數](assets/cfm-generate-variations2.png)
+
+1. 透過填寫提示產生內容。 片段中的內容模型將會使用GenAI自動用來產生內容。
+
+   >[!NOTE]
+   >
+   >我們目前僅支援文字欄位。
+
+![匯出以產生內容片段中的變數](assets/cfm-generate-variations3.png)
+
+1. 選取您喜歡的產生變體，然後選取「匯出變數」。 確認內容片段變數的名稱，並選取：
+
+   * **匯出**：將變數匯出至內容片段，並停留在產生變數應用程式中。
+   * **匯出並開啟**：將變數匯出至內容片段，並開啟新標籤，顯示具有GenAI新變數的內容片段。
+
+   ![匯出以產生內容片段中的變數](assets/cfm-generate-variations4.png)
+
+1. 產生的變化會顯示在主要內容片段編輯器中。
+
+   ![檢視內容片段中的產生變數](assets/cfm-generate-variations5.png)
+
+您可以進一步瞭解產生變數 [此處]{generative-ai/generate-variations.md}。
 
 ### 刪除變數 {#delete-variation}
 
 若要刪除內容片段的變數：
 
->[!NOTE]
->
->您無法刪除 **主要**.
+    >[！NOTE]
+    >
+    >您無法刪除**Main**。
 
 1. 選取變數。
 
