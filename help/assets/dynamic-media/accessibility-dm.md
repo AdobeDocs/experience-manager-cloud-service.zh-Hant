@@ -1,15 +1,15 @@
 ---
 title: Dynamic Media 無障礙內容
-description: 瞭解如何在Dynamic Media中使用視訊，例如編碼視訊、將視訊發佈至YouTube以及檢視視訊報表的最佳作法。 也學習如何新增隱藏式字幕、字幕或章節標籤至影片。
+description: 瞭解如何在Dynamic Media中使用視訊，例如編碼視訊、將視訊發佈至YouTube以及檢視視訊報表的最佳作法。 也學習如何新增隱藏式字幕、註解或章節標籤至影片。
 contentOwner: Rick Brough
 topic-tags: introduction
 content-type: reference
 feature: Accessibility
 role: Admin,User
 exl-id: f8d2dcbf-f61a-4b27-a3fc-406e3662adcb
-source-git-commit: 483a72f67f361023ebeefa3d74ec9f35a5f4f765
+source-git-commit: 02ad83eb9fa9ed3bf06cf7fe0ef10fd9577f66a9
 workflow-type: tm+mt
-source-wordcount: '665'
+source-wordcount: '638'
 ht-degree: 1%
 
 ---
@@ -64,7 +64,7 @@ Dynamic Media使用者介面元素可與熒幕助讀程式等輔助技術搭配�
 
 Dynamic Media支援以隱藏式字幕傳送視訊與最適化視訊集。 註解必須顯示在視訊內容的最上方。
 
-另請參閱 [Dynamic Media中的影片 — 新增隱藏式字幕或字幕至影片](/help/assets/dynamic-media/video.md#adding-captions-to-video).
+另請參閱 [Dynamic Media中的影片 — 新增隱藏式字幕至影片](/help/assets/dynamic-media/video.md#adding-captions-to-video).
 
 
 >[!MORELIKETHIS]

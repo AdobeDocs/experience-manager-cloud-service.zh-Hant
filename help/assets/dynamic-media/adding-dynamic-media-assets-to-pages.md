@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Asset Management
 role: User
 exl-id: 2f2fd6cb-8b53-4167-a7e3-453f27549109
-source-git-commit: 74254387de1761f25127180787453e681181d97a
+source-git-commit: 02ad83eb9fa9ed3bf06cf7fe0ef10fd9577f66a9
 workflow-type: tm+mt
-source-wordcount: '3166'
+source-wordcount: '3165'
 ht-degree: 5%
 
 ---
@@ -147,7 +147,7 @@ Dynamic Media元件可讓您新增動態影像，包括影像集、迴轉集及�
 
   只有當您檢視影像集、迴轉集或混合媒體集時，才能使用此選項。 顯示的檢視器預設集也是智慧型相關檢視器預設集出現。
 
-* **[!UICONTROL 檢視器修飾元]**  — 檢視器修飾元採用名稱=值配對&amp;分隔符號的形式，可讓您依照《檢視器參考指南》中的概述變更檢視器。 檢視器修飾元的範例為 `posterimage=img.jpg&caption=text.vtt,1` 這會為視訊縮圖設定不同的影像，並將隱藏式字幕/字幕檔案與視訊建立關聯。
+* **[!UICONTROL 檢視器修飾元]**  — 檢視器修飾元採用名稱=值配對&amp;分隔符號的形式，可讓您依照《檢視器參考指南》中的概述變更檢視器。 檢視器修飾元的範例為 `posterimage=img.jpg&caption=text.vtt,1` 這會為視訊縮圖設定不同的影像，並將隱藏式字幕檔案與視訊建立關聯。
 
 * **[!UICONTROL 影像預設集]**  — 從下拉式清單中選取現有的影像預設集。 如果您要尋找的影像預設集不可見，您必須讓它可見。 另請參閱 [管理影像預設集](/help/assets/dynamic-media/managing-image-presets.md). 如果您使用影像預設集，則無法選取檢視器預設集，反之亦然。
 
@@ -298,9 +298,9 @@ Dynamic Media元件可讓您新增動態影像，包括影像集、迴轉集及�
 
   您可以編輯下列 **[!UICONTROL 加入購物車]** 設定，方法是選取 **[!UICONTROL 編輯]** 在元件中。
 
-* **[!UICONTROL 顯示產品資產]**  — 預設會選取此值。 產品資產會顯示產品影像，如商務模組中所定義。 清除核取記號即可不顯示產品資產。
+* **[!UICONTROL 顯示產品資產]**  — 預設會選取此值。 產品資產會顯示產品影像，如Commerce模組中所定義。 清除核取記號即可不顯示產品資產。
 
-* **[!UICONTROL 顯示產品價格]**  — 預設會選取此值。 產品價格會顯示在商務模組中定義的專案價格。 清除核取記號即可不顯示產品價格。
+* **[!UICONTROL 顯示產品價格]**  — 預設會選取此值。 產品價格會顯示Commerce模組中定義的專案價格。 清除核取記號即可不顯示產品價格。
 
 * **[!UICONTROL 顯示產品表單]**  — 預設不會選取此值。 產品表單包含任何產品變體，例如大小和顏色。 清除核取記號即可不顯示產品變體。
 

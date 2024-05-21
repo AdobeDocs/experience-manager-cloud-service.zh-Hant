@@ -2,7 +2,7 @@
 title: 編輯頁面屬性
 description: 瞭解如何定義在AEM中管理頁面所需的屬性。
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
+source-git-commit: 02ad83eb9fa9ed3bf06cf7fe0ef10fd9577f66a9
 workflow-type: tm+mt
 source-wordcount: '2268'
 ht-degree: 3%
@@ -13,7 +13,7 @@ ht-degree: 3%
 
 您可以定義頁面的必要屬性。 這些值可能會因頁面性質而異。 例如，有些頁面可能已連線至即時副本，有些頁面則未連線，因此即時副本資訊可供適當使用。
 
-## 頁面內容 {#page-properties}
+## 頁面屬性 {#page-properties}
 
 屬性分佈於數個索引標籤中。
 
@@ -35,7 +35,7 @@ ht-degree: 3%
 
 * **品牌化**
 
-  藉由將品牌概要附加至每個頁面標題，跨頁面套用一致的品牌識別。 此功能需使用2.14.0版或更新版本的頁面元件， [核心元件。](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
+  藉由將品牌概要附加至每個頁面標題，跨頁面套用一致的品牌識別。 此功能需使用2.14.0版或更新版本的頁面元件， [核心元件。](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hant)
 
    * **品牌概要**
 
@@ -52,7 +52,7 @@ ht-degree: 3%
 
    * **頁面標題**  — 頁面上使用的標題。 通常由標題元件使用。 如果為空， **標題** 已使用。
    * **導覽標題**  — 您可以指定個別標題以用於導覽（例如，如果您想要更精簡的內容）。 如果為空， **標題** 已使用。
-   * **子標題**  — 頁面上使用的子標題。
+   * **註解**  — 頁面上使用的子標題。
    * **說明**  — 頁面的說明、用途或您要新增的任何其他詳細資訊。
 
 * **開啟/關閉時間**

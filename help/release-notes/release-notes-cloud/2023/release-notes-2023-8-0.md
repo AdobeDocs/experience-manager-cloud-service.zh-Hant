@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2023.8.0 版發行說明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2023.8.0 版發行說明。'
 exl-id: a0ffa6cf-64ae-468c-93f4-ac6805ef907e
-source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
-workflow-type: ht
+source-git-commit: 02ad83eb9fa9ed3bf06cf7fe0ef10fd9577f66a9
+workflow-type: tm+mt
 source-wordcount: '1691'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -90,9 +90,9 @@ You can now assign metadata form to a specific folder within your Assets Essenti
 
 ### [!DNL Experience Manager Assets] 中可用的搶鮮版功能 {#prerelease-features-assets}
 
-* **Dynamic Media**：[對 Dynamic Media 影片的多語言字幕和多語言音訊支援](/help/assets/dynamic-media/video.md#about-msma) - 您現在可以輕鬆地將多語字幕和多語言音訊新增至主要影片中。此功能表示全球對象都可以存取您的影片。您可以以多種語言向全球對象自訂單一已發佈的主要影片，並遵守不同地理區域的輔助功能指南。作者還可以從使用者介面中的單個標籤管理字幕和音訊。
+* **Dynamic Media**： [Dynamic Media中的視訊支援多重註解與多重音訊曲目](/help/assets/dynamic-media/video.md#about-msma) — 您現在可以輕鬆地將多個字幕和多個音軌新增到主要視訊中。 此功能表示全球對象都可以存取您的影片。您可以以多種語言向全球對象自訂單一已發佈的主要影片，並遵守不同地理區域的輔助功能指南。作者也可以從使用者介面的單一標籤管理註解和音訊曲目。
 
-  ![所選視頻資產「屬性」頁面上「字幕和音訊」標籤。](/help/release-notes/assets/msma-aem-cs.png)*所選視頻資產「屬性」頁面上「字幕和音訊」標籤。*
+  ![在選取的視訊資產的「屬性」頁面上，使用註解和音訊曲目索引標籤。](/help/release-notes/assets/msma-aem-cs.png)*在選取的視訊資產的「屬性」頁面上，使用註解和音訊曲目索引標籤。*
 
 * **資產**：能夠選取在 Experience Manager 中管理的 ZIP 存檔，並可[將檔案直接擷取至 Experience Manager 中的檔案](/help/assets/manage-digital-assets.md#extract-zip-archives)無需下載。
 
