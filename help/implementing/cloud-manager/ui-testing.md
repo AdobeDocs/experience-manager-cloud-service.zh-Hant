@@ -2,10 +2,10 @@
 title: UI 測試
 description: 自訂 UI 測試是一項選擇性功能，可讓您為自訂應用程式建立和自動執行 UI 測試。
 exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 305098c7ebcb6145129b146d60538b5177b4f26d
 workflow-type: tm+mt
-source-wordcount: '2385'
-ht-degree: 98%
+source-wordcount: '2610'
+ht-degree: 79%
 
 ---
 
@@ -45,7 +45,7 @@ UI 測試是每個 Cloud Manager 管道特定品質把關程序的一環，在[�
 
    * 若為 Cypress，請使用 [AEM 測試範例存放庫](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-cypress)中的範例程式碼。
 
-   * 若為 JavaScript 和 WDIO，請使用在 Cloud Manager 存放庫 `ui.tests` 資料夾中自動產生的範例程式碼。
+   * 若為JavaScript和WDIO，請使用中自動產生的範常式式碼 `ui.tests` Cloud Manager存放庫中的資料夾。
 
      >[!NOTE]
      >
@@ -146,7 +146,7 @@ UI 測試是每個 Cloud Manager 管道特定品質把關程序的一環，在[�
 </assembly>
 ```
 
-程序集描述符指示插件建立類型的封存`.tar.gz`並指派`ui-test-docker-context`分類器。此外，它列出了必須包含在封存中的文件，包括以下內容。
+程序集描述符指示插件建立類型的封存`.tar.gz`並指派`ui-test-docker-context`分類器。此外，它列出了必須包含在封存中的檔案，包括以下內容：
 
 * 一個 `Dockerfile`，構建 Docker 鏡像所必需的
 * `wait-for-grid.sh` 腳本，其用途如下所述
@@ -199,7 +199,7 @@ UI 測試是每個 Cloud Manager 管道特定品質把關程序的一環，在[�
   fi
   ```
 
-* Adobe 所提供的 Cypress 與 Java Selenium 測試範例已經設定好選擇加入的標幟。
+* Adobe提供的Cypress和Java Selenium測試範例已設定選擇加入旗標。
 
 ## 編寫 UI 測試 {#writing-ui-tests}
 
@@ -210,7 +210,7 @@ UI 測試是每個 Cloud Manager 管道特定品質把關程序的一環，在[�
 以下環境變數會在執行階段傳遞給您的 Docker 映像，視您的架構而定。
 
 | 變數 | 範例 | 說明 | 測試架構 |
-|---|---|---|---|
+|----------------------------|----------------------------------|---------------------------------------------------------------------------------------------------|---------------------|
 | `SELENIUM_BASE_URL` | `http://my-ip:4444` | Selenium 伺服器的 URL | 僅限 Selenium |
 | `SELENIUM_BROWSER` | `chrome` | Selenium 伺服器使用的瀏覽器實作 | 僅限 Selenium |
 | `AEM_AUTHOR_URL` | `http://my-ip:4502/context-path` | AEM 編寫執行個體的 URL | 全部 |
@@ -218,15 +218,22 @@ UI 測試是每個 Cloud Manager 管道特定品質把關程序的一環，在[�
 | `AEM_AUTHOR_PASSWORD` | `admin` | 用於登入 AEM 編寫執行個體的密碼 | 全部 |
 | `AEM_PUBLISH_URL` | `http://my-ip:4503/context-path` | AEM 發佈執行個體的 URL | 全部 |
 | `AEM_PUBLISH_USERNAME` | `admin` | 用於登入 AEM 發佈執行個體的使用者名稱 | 全部 |
-| `AEM_PUBLISH_PASSWORD` | `admin` | 用於登入 AEM 發佈執行個體的密碼 | 全部 |
+| `AEM_PUBLISH_PASSWORD` | `admin` | 登入AEM發佈執行個體的密碼 | 全部 |
 | `REPORTS_PATH` | `/usr/src/app/reports` | 測試結果 XML 報告必須儲存的路徑 | 全部 |
 | `UPLOAD_URL` | `http://upload-host:9090/upload` | 必須將檔案上傳到的 URL，以便測試架構可以存取 | 全部 |
+| `PROXY_HOST` | `proxy-host` | 測試架構要使用的內部HTTP Proxy的主機名稱 | 除Selenium外的所有專案 |
+| `PROXY_HTTPS_PORT` | `8071` | HTTPS連線的Proxy伺服器接聽連線埠（可為空白） | 除Selenium外的所有專案 |
+| `PROXY_HTTP_PORT` | `8070` | HTTP連線的Proxy伺服器接聽連線埠（可以空白） | 除Selenium外的所有專案 |
+| `PROXY_CA_PATH` | `/path/to/root_ca.pem` | 測試架構所使用CA憑證的路徑 | 除Selenium外的所有專案 |
+| `PROXY_OBSERVABILITY_PORT` | `8081` | Proxy伺服器的HTTP健康情況檢查連線埠 | 除Selenium外的所有專案 |
+| `PROXY_RETRY_ATTEMPTS` | `12` | 等待Proxy伺服器準備就緒時的建議重試次數 | 除Selenium外的所有專案 |
+| `PROXY_RETRY_DELAY` | `5` | 等待Proxy伺服器整備時重試嘗試之間的建議延遲 | 除Selenium外的所有專案 |
 
 Adobe 測試範例提供輔助函數以存取設定參數：
 
 * Cypress: 使用標準函數 `Cypress.env('VARIABLE_NAME')`
-* JavaScript：參閱 [lib/config.js](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests/test-module/lib/config.js) 模組
-* Java：參閱 [Config](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/Config.java) 類別
+* JavaScript：請參閱 [`lib/config.js`](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests.wdio/test-module/lib/config.js) 模組
+* Java：請參閱 [`Config`](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/Config.java) 類別
 
 ### 產生測試報告 {#generate-test-reports}
 
@@ -239,6 +246,8 @@ Docker 鏡像必須產生 JUnit XML 格式的測試報告，並保存在環境�
 >UI 測試步驟的結果僅根據測試報告進行評估。確保為您的測試執行產生相應的報告。
 >
 >使用斷言而不是僅將錯誤記錄到 STDERR 或返回非零退出程式碼，否則您的部署管道可能會正常進行。
+>
+>如果在測試執行期間使用了HTTP Proxy，則結果將包含 `request.log` 檔案。
 
 ### 必備條件 {#prerequisites}
 
@@ -306,6 +315,113 @@ Adobe 提供的測試範例依預設為任何失敗的測試建立螢幕擷圖�
 1. 如果上傳成功，請求傳回一個`200 OK`類型響應 `text/plain`。
    * 回應的內容是一個不透明的檔案。
    * 您可以使用此句柄代替文件路徑`<input>`在您的應用程序中測試文件上傳的元素。
+
+## Cypress專屬詳細資料
+
+>[!NOTE]
+>
+>此節僅適用於Cypress為選取的測試基礎結構。
+
+### 設定HTTP Proxy
+
+Docker容器的入口點需要檢查 `PROXY_HOST` 環境變數。
+
+如果此值為空，則不需要其他步驟，且測試應在不使用HTTP Proxy的情況下執行。
+
+如果不是空白，entrypoint指令碼需要：
+
+1. 設定HTTP Proxy連線以執行UI測試。 這可透過匯出 `HTTP_PROXY` 使用下列值建置的環境變數：
+   * Proxy主機，由 `PROXY_HOST` 變數
+   * Proxy連線埠，由 `PROXY_HTTPS_PORT` 或 `PROXY_HTTP_PORT` 變數（將會使用具有非空白值的變數）
+2. 設定連線到HTTP Proxy時將使用的CA憑證。 其位置由提供 `PROXY_CA_PATH` 變數中。
+   * 這可透過匯出來達成 `NODE_EXTRA_CA_CERTS` 環境變數。
+3. 等候HTTP Proxy準備就緒。
+   * 若要檢查整備情況，請考量環境變數 `PROXY_HOST`， `PROXY_OBSERVABILITY_PORT`， `PROXY_RETRY_ATTEMPTS` 和 `PROXY_RETRY_DELAY` 可使用。
+   * 您可以使用cURL請求檢查，確保將cURL安裝在您的 `Dockerfile`.
+
+您可以在Cypress範例測試模組的Entrypoint on找到實作範例 [GitHub。](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-cypress/test-module/run.sh)
+
+## 播放權特定的詳細資料
+
+>[!NOTE]
+>
+> 本節僅適用於選擇以Playwright作為測試基礎架構時。
+
+### 設定HTTP Proxy
+
+>[!NOTE]
+>
+> 在顯示的範例中，我們假設使用Chrome作為專案瀏覽器。
+
+與Cypress類似，若為非空白，測試需要使用HTTP Proxy `PROXY_HOST` 已提供環境變數。
+
+若要這麼做，必須進行下列修改。
+
+#### Dockerfile
+
+安裝cURL和 `libnss3-tools`，可提供 `certutil.`
+
+```dockerfile
+RUN apt -y update \
+    && apt -y --no-install-recommends install curl libnss3-tools \
+    && rm -rf /var/lib/apt/lists/*
+```
+
+#### Entrypoint指令碼
+
+加入bash指令碼，以便 `PROXY_HOST` 提供的環境變數，會執行以下操作：
+
+1. 匯出Proxy相關的變數，例如 `HTTP_PROXY` 和 `NODE_EXTRA_CA_CERTS`
+2. 使用 `certutil` 若要為chromium安裝Proxy CA憑證
+3. 等候HTTP Proxy準備就緒（或失敗時結束）。
+
+實作範例：
+
+```bash
+# setup proxy environment variables and CA certificate
+if [ -n "${PROXY_HOST:-}" ]; then
+  if [ -n "${PROXY_HTTPS_PORT:-}" ]; then
+    export HTTP_PROXY="https://${PROXY_HOST}:${PROXY_HTTPS_PORT}"
+  elif [ -n "${PROXY_HTTP_PORT:-}" ]; then
+    export HTTP_PROXY="http://${PROXY_HOST}:${PROXY_HTTP_PORT}"
+  fi
+  if [ -n "${PROXY_CA_PATH:-}" ]; then
+    echo "installing certificate"
+    mkdir -p $HOME/.pki/nssdb
+    certutil -d sql:$HOME/.pki/nssdb -A -t "CT,c,c" -n "EaaS Client Proxy Root" -i $PROXY_CA_PATH
+    export NODE_EXTRA_CA_CERTS=${PROXY_CA_PATH}
+  fi
+  if [ -n "${PROXY_OBSERVABILITY_PORT:-}" ] && [ -n "${HTTP_PROXY:-}" ]; then
+    echo "waiting for proxy"
+    curl --silent  --retry ${PROXY_RETRY_ATTEMPTS:-3} --retry-connrefused --retry-delay ${PROXY_RETRY_DELAY:-10} \
+      --proxy ${HTTP_PROXY} --proxy-cacert ${PROXY_CA_PATH:-""} \
+      ${PROXY_HOST}:${PROXY_OBSERVABILITY_PORT}
+    if [ $? -ne 0 ]; then
+      echo "proxy is not ready"
+      exit 1
+    fi
+  fi
+fi
+```
+
+#### 播放器設定
+
+修改播放器設定(例如 `playwright.config.js`)來使用Proxy，以便 `HTTP_PROXY` 環境變數已設定。
+
+實作範例：
+
+```javascript
+const proxyServer = process.env.HTTP_PROXY || ''
+```
+
+```javascript
+// enable proxy if set
+if (proxyServer !== '') {
+ cfg.use.proxy = {
+  server: proxyServer,
+ }
+}
+```
 
 ## 在本機執行 UI 測試 {#run-ui-tests-locally}
 

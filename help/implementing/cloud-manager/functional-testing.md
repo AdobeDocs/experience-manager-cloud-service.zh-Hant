@@ -2,10 +2,10 @@
 title: 功能測試
 description: 了解內建在 AEM as a Cloud Service 部署流程中的三種不同類型的功能測試，以確保程式碼的品質和可靠性。
 exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
-source-git-commit: b85d43a05c8bb8a6438ab44bd184b7624456ab6a
+source-git-commit: 305098c7ebcb6145129b146d60538b5177b4f26d
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1373'
+ht-degree: 9%
 
 ---
 
@@ -92,6 +92,8 @@ Adobe提供數個內建品質閘道，而其他閘道則需要您的介入以進
 >[!NOTE]
 >
 >自訂UI測試會在生產和非生產（選擇加入）管道中執行，您的AEM應用程式會使用這些管道變更部署和AEM產品推播更新，因此是協助確保應用程式正常運作並提高發行安全性的重要貢獻。 客戶UI測試也會在每個客戶的內部發行前驗證管道中執行，這有助於提供早期意見反應。
+>
+>非Selenium容器應該根據 [UI測試區段。](/help/implementing/cloud-manager/ui-testing.md#custom-ui-testing)
 
 為了保持管道執行效率，我們建議專注於關鍵功能和主要使用者互動流程。 建議在客戶開發流程期間，作為一般客戶驗證管道的一部分執行不符合此品質閘道的完整UI測試套裝。
 
