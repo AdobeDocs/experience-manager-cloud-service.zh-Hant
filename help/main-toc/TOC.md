@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的運作方式以及該軟體可以為您做哪些事。
 breadcrumb-title: 使用手冊
 user-guide-title: AEM as a Cloud Service
-source-git-commit: d2c6514eb1f38b06dfa58daa03b781920b8928f6
+source-git-commit: 3aab5d3beb7bedf7a61bc557be349f2aa5ed8a7b
 workflow-type: tm+mt
-source-wordcount: '4962'
-ht-degree: 98%
+source-wordcount: '4965'
+ht-degree: 99%
 
 ---
 
@@ -608,7 +608,7 @@ ht-degree: 98%
       + [匯入、匯出及組織最適化表單、PDF 表單和其他資產](/help/forms/import-export-forms-templates.md)
    + 快速入門 {#getting-started-forms}
       + [使用案例和設定開發環境](/help/forms/create-adaptive-form-tutorial-getting-started.md)
-      + [建立貸款申請表單](/help/forms/create-adaptive-form-tutorial.md)
+      + [建立貸款申請表](/help/forms/create-adaptive-form-tutorial.md)
    + 整合 {#integrate}
       + 服務 {#services}
          + [將 AEM Forms as a Cloud Service 與 Adobe Sign 整合](/help/forms/adobe-sign-integration-adaptive-forms.md)
@@ -1175,6 +1175,7 @@ ht-degree: 98%
       + [使用 Dispatcher 工具舊版進行驗證和偵錯](/help/implementing/dispatcher/validation-debug-legacy.md)
       + [AEM as a Cloud Service 中的 CDN](/help/implementing/dispatcher/cdn.md)
       + [設定 CDN 上的流量](/help/implementing/dispatcher/cdn-configuring-traffic.md)
+      + [Edge Side包含](/help/implementing/dispatcher/edge-side-includes.md)
       + [設定 CDN 錯誤頁面](/help/implementing/dispatcher/cdn-error-pages.md)
       + [AEM as a Cloud Service 中的快取](/help/implementing/dispatcher/caching.md)
 + 連接器 {#connectors}
