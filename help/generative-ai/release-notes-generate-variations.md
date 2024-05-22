@@ -2,9 +2,9 @@
 title: 產生變數的發行說明
 description: 產生變數的發行說明，可從AEMas a Cloud Service和Edge Delivery ServicesSidekick存取
 exl-id: caf85bae-3cce-4083-ab6e-e2637ff5afce
-source-git-commit: 28df3ace2933d0fc00742ced9496645fc3dc15da
+source-git-commit: 92b11666a0e5a52f633416090b2bb51bf059c70b
 workflow-type: tm+mt
-source-wordcount: '225'
+source-wordcount: '218'
 ht-degree: 8%
 
 ---
@@ -27,8 +27,6 @@ ht-degree: 8%
 * 引入從我的最愛下載結果為CSV檔案的功能
 * 使用時間分組增強最近使用清單
 * 已新增多種語言的本地化支援
-
-目前的版本為2.0.0版。
 
 ### 2.0.0 {#release-notes-2-0-0}
 
