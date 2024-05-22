@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的運作方式以及該軟體可以為您做哪些事。
 breadcrumb-title: 使用手冊
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 3aab5d3beb7bedf7a61bc557be349f2aa5ed8a7b
+source-git-commit: 37afa8f8233154999bf3e332fb91d8e19f5c0f56
 workflow-type: tm+mt
-source-wordcount: '4965'
+source-wordcount: '4971'
 ht-degree: 99%
 
 ---
@@ -81,6 +81,7 @@ ht-degree: 99%
    + AEMaaCS 維護版本發行說明{#maintenance}
       + [目前維護版本發行說明](/help/release-notes/maintenance/latest.md)
       + 2024 {#2024}
+         + [2024.5.0 維護版本發行說明](/help/release-notes/maintenance/2024/2024-5-0.md)
          + [2024.4.0 維護版本發行說明](/help/release-notes/maintenance/2024/2024-4-0.md)
          + [2024.3.0 維護版本發行說明](/help/release-notes/maintenance/2024/2024-3-0.md)
       + 2023 {#2023}
@@ -192,7 +193,7 @@ ht-degree: 99%
    + [AEM as a Cloud Service 安全性注意事項](/help/security/security-considerations.md)
    + [Adobe Developer Console 中的 JWT 憑證已被取代](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md)
    + [為AEMas a Cloud Service設定IMS整合](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md)
-   + [Sling服務使用者對應和服務使用者定義的最佳實務](/help/security/best-practices-for-sling-service-user-mapping-and-service-user-definition.md)
+   + [Sling Service 使用者對應和服務使用者定義的最佳實務](/help/security/best-practices-for-sling-service-user-mapping-and-service-user-definition.md)
 + 上線 {#onboarding}
    + [從這裡開始](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html?lang=zh-Hant)
    + 上線歷程 {#journey}
