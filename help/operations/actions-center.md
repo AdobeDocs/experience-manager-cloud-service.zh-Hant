@@ -2,10 +2,10 @@
 title: 行動中心
 description: 善用行動中心，方便處理事件和其他重要資訊
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
-source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
+source-git-commit: ddf94262c047ea0210b0759176f51d1220ac9c67
 workflow-type: tm+mt
-source-wordcount: '734'
-ht-degree: 78%
+source-wordcount: '783'
+ht-degree: 74%
 
 ---
 
@@ -74,3 +74,4 @@ AEM as a Cloud Service 有多種類型的通知，但只有一部分出現在行
 | 鎖定的複製佇列 | 事件 | 按照[複製文件](/help/operations/replication.md#troubleshooting)中的說明解鎖佇列 |
 | 無效的GraphQL查詢 | 事件 | 參考「 」以修正無效的GraphQL查詢 [持續的GraphQL查詢疑難排解檔案](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries-troubleshoot.html) |
 | 即將到期的 S2S 認證 | 主動 | 在[為伺服器端 API 產生權杖文件](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md#refresh-credentials)中，了解如何重新整理認證 |
+| 來源處的流量尖峰 | 事件 | 透過設定在低於來源預設流量尖峰警報的臨界值處觸發的速率限制流量篩選規則，Protect您的來源。  請參閱 [使用流量規則封鎖DoS和DDoS攻擊](/help/security/traffic-filter-rules-including-waf.md#blocking-dos-and-ddos-attacks-using-traffic-filter-rules) 流量篩選規則檔案的區段，其中會參考教學課程。 |
