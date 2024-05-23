@@ -2,9 +2,9 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的目前維護版本發行說明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的目前維護版本發行說明。'
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: b6fe2a58bb16c70cef48426ec49dda474195c023
+source-git-commit: d107f40c4bc43837db9d8fab3d06627d9e930620
 workflow-type: tm+mt
-source-wordcount: '1612'
+source-wordcount: '1574'
 ht-degree: 9%
 
 ---
@@ -68,7 +68,6 @@ ht-degree: 9%
 * SITES-20238： [RTC] Pfizer MVP — 新增CF API以解析CF路徑至ID，反之亦然。
 * SITES-21043： [CF][launches] Cloud Service的側連線埠效能改善。
 * SITES-21044： [CF][launches] 將側連線埠非同步編輯裝載實作至Cloud Service。
-* Forms-9606：之前，在最適化Forms編輯器中，只有欄位值可以對應至叫用服務的回應。 現在，作者能夠將欄位的任何屬性對應到叫用服務回應。
 * Forms-7483： AEM Forms JSON結構描述剖析器現在支援JSON結構描述(2020-12)。
 * Forms-13209：包含處理常式，可覆寫最適化Forms預設提交成功和提交失敗處理常式。 您可以透過最適化Forms規則編輯器設定這些處理常式。
 * Forms-13612：熒幕助讀程式現在會閱讀錯誤訊息、簡短說明，以及核心元件型Adaptive Forms中欄位的完整說明。 此外，已新增支援，以在表單包含錯誤且無法提交時，使最適化表單輸入失效。
