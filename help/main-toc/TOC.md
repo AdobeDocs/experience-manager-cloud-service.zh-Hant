@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的運作方式以及該軟體可以為您做哪些事。
 breadcrumb-title: 使用手冊
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 37afa8f8233154999bf3e332fb91d8e19f5c0f56
+source-git-commit: 543e9b78b4bdc11c49f79c6baec79615c5f7f91b
 workflow-type: tm+mt
-source-wordcount: '4971'
+source-wordcount: '4976'
 ht-degree: 99%
 
 ---
@@ -192,7 +192,7 @@ ht-degree: 99%
    + [流量篩選規則包括 WAF 規則](/help/security/traffic-filter-rules-including-waf.md)
    + [AEM as a Cloud Service 安全性注意事項](/help/security/security-considerations.md)
    + [Adobe Developer Console 中的 JWT 憑證已被取代](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md)
-   + [為AEMas a Cloud Service設定IMS整合](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md)
+   + [為 AEM as a Cloud Service 設定 IMS 整合](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md)
    + [Sling Service 使用者對應和服務使用者定義的最佳實務](/help/security/best-practices-for-sling-service-user-mapping-and-service-user-definition.md)
 + 上線 {#onboarding}
    + [從這裡開始](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html?lang=zh-Hant)
@@ -654,8 +654,8 @@ ht-degree: 99%
             + [設定提交到最適化表單的 REST 端點提交動作](/help/forms/configure-submit-action-restpoint.md)
             + [設定最適化表單的傳送電子郵件提交動作](/help/forms/configure-submit-action-send-email.md)
             + [在最適化表單中使用 Google reCAPTCHA](/help/forms/captcha-adaptive-forms-core-components.md)
-            + [在最適化表單中使用驗證碼](/help/forms/integrate-adaptive-forms-hcaptcha-core-components.md)
-            + [在最適化表單中使用Turnstile](/help/forms/integrate-adaptive-forms-turnstile-core-components.md)
+            + [在最適化表單中使用 hCAPTCHA](/help/forms/integrate-adaptive-forms-hcaptcha-core-components.md)
+            + [在最適化表單中使用 Turnstile](/help/forms/integrate-adaptive-forms-turnstile-core-components.md)
             + [在最適化表單中新增自訂的錯誤處理常式](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
             + [為以核心元件為主的最適化表單新增地區設定](/help/forms/supporting-new-language-localization-core-components.md)
             + [建立和使用自訂功能](/help/forms/create-and-use-custom-functions.md)
@@ -678,8 +678,8 @@ ht-degree: 99%
             + [透過延遲載入改善大型表單的效能](/help/forms/lazy-loading-adaptive-forms.md)
          + 將元件新增至最適化表單{#add-components-to-an-adaptive-form}
             + [在最適化表單中使用驗證碼](/help/forms/captcha-adaptive-forms.md)
-            + [在最適化表單中使用驗證碼](/help/forms/integrate-adaptive-forms-hcaptcha.md)
-            + [在最適化表單中使用Turnstile](/help/forms/integrate-adaptive-forms-turnstile.md)
+            + [在最適化表單中使用 hCaptcha](/help/forms/integrate-adaptive-forms-hcaptcha.md)
+            + [在最適化表單中使用 Turnstile](/help/forms/integrate-adaptive-forms-turnstile.md)
             + [使用核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hant)
             + [套用手寫簽名](/help/forms/signing-forms-using-scribble.md)
             + [將表格新增至最適化表單](/help/forms/adaptive-forms-tables.md)
@@ -727,6 +727,7 @@ ht-degree: 99%
    + 交易報告{#using-communications}
       + [交易報告計費 API](/help/forms/transaction-reports-billable-apis.md)
       + [記錄自訂實施的交易](/help/forms/record-transaction-custom-implementation.md)
+      + [瞭解您的價值實現儀表板](/help/forms/aem-forms-value-realization-dashboard.md)
    + 開發人員 API 參考 {#aem-forms-developer-api-reference}
       + [最適化表單 API 參考](https://developer-stage.adobe.com/experience-cloud/experience-manager-apis/api/stable/forms/)
       + [AEM Forms as a Cloud Service 通訊 API 參考](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)
@@ -1176,7 +1177,7 @@ ht-degree: 99%
       + [使用 Dispatcher 工具舊版進行驗證和偵錯](/help/implementing/dispatcher/validation-debug-legacy.md)
       + [AEM as a Cloud Service 中的 CDN](/help/implementing/dispatcher/cdn.md)
       + [設定 CDN 上的流量](/help/implementing/dispatcher/cdn-configuring-traffic.md)
-      + [Edge Side包含](/help/implementing/dispatcher/edge-side-includes.md)
+      + [Edge Side 包括](/help/implementing/dispatcher/edge-side-includes.md)
       + [設定 CDN 錯誤頁面](/help/implementing/dispatcher/cdn-error-pages.md)
       + [AEM as a Cloud Service 中的快取](/help/implementing/dispatcher/caching.md)
 + 連接器 {#connectors}
