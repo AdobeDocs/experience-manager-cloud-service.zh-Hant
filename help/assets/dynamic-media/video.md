@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 02ad83eb9fa9ed3bf06cf7fe0ef10fd9577f66a9
+source-git-commit: ea2e82f02e9b5ee1ef64d186516c786d8c264c52
 workflow-type: tm+mt
-source-wordcount: '9340'
+source-wordcount: '9357'
 ht-degree: 2%
 
 ---
@@ -537,13 +537,13 @@ DASH (Digital Adaptive Streaming over HTTP)是視訊串流的國際標準，被�
 
 在您的帳戶上啟用DASH支援，是透過您建立和提交的Adobe客戶支援案例來完成。
 
-**關於在您的帳戶上啟用多重註解與多重音訊追蹤支援**
+**關於在您的帳戶上啟用多重註解和音訊追蹤支援**
 
-在您建立Adobe支援案例以在帳戶上啟用DASH的同時，您還可以從自動啟用多註解和多音訊追蹤支援中受益。 啟用後，您上傳的所有後續視訊都會透過新的後端架構進行處理，支援在視訊中新增多註解和多音訊曲目。
+在您建立Adobe支援案例以在帳戶上啟用DASH的同時，您還可以從自動啟用多個註解和音訊追蹤支援中受益。 啟用後，您上傳的所有後續視訊都會透過新的後端架構進行處理，包括支援在視訊中新增多個註解和音訊曲目。
 
 >[!IMPORTANT]
 >
->您上傳的任何影片 *早於* 在您的Dynamic Media帳戶上啟用多重註解與多重音訊追蹤支援， [必須重新處理](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets). 這個視訊重新處理步驟是必要的，這樣他們才能使用多註解和多音訊追蹤功能。 重新處理之後，視訊URL仍可繼續如常運作和播放。
+>您上傳的任何影片 *早於* 在您的Dynamic Media帳戶上啟用多重註解和音訊追蹤支援， [必須重新處理](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets). 此視訊重新處理步驟是必要的，這樣使用者才能使用多個註解和音訊追蹤功能。 重新處理之後，視訊URL仍可繼續如常運作和播放。
 
 **若要在您的Dynamic Media帳戶上啟用DASH、多註解和多音訊曲目支援：**
 
@@ -562,16 +562,16 @@ DASH (Digital Adaptive Streaming over HTTP)是視訊串流的國際標準，被�
 1. 現在您可以執行下列任一項作業：
 
    * 建立您的 [視訊檢視器預設集](/help/assets/dynamic-media/managing-viewer-presets.md#creating-a-new-viewer-preset) 一如既往。
-   * [新增多重註解與多重音訊曲目](#add-msma) 到您的視訊。
+   * [新增多個字幕和音軌](#add-msma) 到您的視訊。
 
 
-## 關於Dynamic Media中視訊的多重註解和多音訊曲目支援{#about-msma}
+## 關於Dynamic Media中視訊的多重註解和音訊追蹤支援{#about-msma}
 
-透過Dynamic Media中的多字幕和多音訊曲目功能，您可以輕鬆將多個字幕和音訊曲目新增至主要視訊。 此功能表示全球對象都可以存取您的影片。您可以以多種語言向全球對象自訂單一已發佈的主要影片，並遵守不同地理區域的輔助功能指南。作者也可以從使用者介面的單一標籤管理註解和音訊曲目。
+透過Dynamic Media中的多重字幕與音訊追蹤功能，您可以輕鬆將多重字幕與音訊追蹤新增至主要視訊。 此功能表示全球對象都可以存取您的影片。您可以以多種語言向全球對象自訂單一已發佈的主要影片，並遵守不同地理區域的輔助功能指南。作者也可以從使用者介面的單一標籤管理字幕和音軌。
 
 ![Dynamic Media中的註解與音訊曲目標籤，以及顯示已上傳視訊的.VTT註解檔案與已上傳的.MP3音訊曲目檔案的表格。](/help/assets/dynamic-media/assets/msma-subtitle-audiotracks-tab.png)
 
-在主要視訊中新增多字幕和多音訊曲目時，需要考量的部分使用案例包括：
+在主要視訊中新增多個字幕和音訊曲目時，需要考量的部分使用案例包括：
 
 | 類型 | 使用案例 |
 |--- |--- |
@@ -581,13 +581,13 @@ DASH (Digital Adaptive Streaming over HTTP)是視訊串流的國際標準，被�
 |  | 註解追蹤 |
 |  | 描述性音訊 |
 
-全部 [Dynamic Media支援的視訊格式](/help/assets/file-format-support.md) 和所有Dynamic Media視訊檢視器(Dynamic Media除外) *Video_360* 檢視器 — 支援搭配多字幕和多音訊曲目使用。
+全部 [Dynamic Media支援的視訊格式](/help/assets/file-format-support.md) 和所有Dynamic Media視訊檢視器(Dynamic Media除外) *Video_360* 檢視器 — 支援與多個字幕和音軌搭配使用。
 
 您的Dynamic Media帳戶可使用多註解和多音訊追蹤功能，其方式為必須由Adobe客戶支援啟用（開啟）的功能切換。
 
-### 在視訊中新增多重註解與多重音訊曲目 {#add-msma}
+### 在視訊中新增多個註解和音訊曲目 {#add-msma}
 
-在視訊中新增多重註解與多重音訊曲目之前，請確定您已具備下列專案：
+在將多個註解和音訊曲目加入視訊之前，請確定您已具備下列內容：
 
 * Dynamic Media是在AEM環境中設定的。
 * A [Dynamic Media視訊設定檔已套用至您擷取視訊的資料夾](/help/assets/dynamic-media/video-profiles.md#applying-a-video-profile-to-folders).
@@ -597,12 +597,12 @@ DASH (Digital Adaptive Streaming over HTTP)是視訊串流的國際標準，被�
 
 >[!IMPORTANT]
 >
->您上傳的任何影片 *早於* 在您的Dynamic Media帳戶上啟用多重註解與多重音訊追蹤支援， [必須重新處理](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets). 這個視訊重新處理步驟是必要的，這樣他們才能使用多註解和多音訊追蹤功能。 重新處理之後，視訊URL仍可繼續如常運作和播放。
+>您上傳的任何影片 *早於* 在您的Dynamic Media帳戶上啟用多重註解和音訊追蹤支援， [必須重新處理](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets). 此視訊重新處理步驟是必要的，這樣使用者才能使用多個註解和音訊追蹤功能。 重新處理之後，視訊URL仍可繼續如常運作和播放。
 
-**若要在視訊中新增多重註解與多重音訊曲目：**
+**若要在視訊中新增多個註解和音軌：**
 
 1. [將主要視訊上傳至資料夾](/help/assets/manage-video-assets.md#upload-and-preview-video-assets) 已為其指派視訊設定檔。
-1. 導覽至您要新增多註解和多音訊曲目的上傳視訊資產。
+1. 導覽至您要新增多個標題和音訊曲目的上傳視訊資產。
 1. 在資產選取模式中，從「清單檢視」或「卡片檢視」中選取視訊資產。
 1. 在工具列上，選取「屬性」圖示（內有「i」的圓形）。
    ![在視訊縮圖影像上選取有核取記號的視訊資產，並在工具列上反白顯示「檢視屬性」 。](/help/assets/dynamic-media/assets/msma-selectedasset-propertiesbutton.png)*在卡片檢視中選取的視訊資產。*
@@ -825,7 +825,7 @@ Dynamic Media支援透過URL修飾元在視訊中新增單一標題。 另請參
 
 >[!IMPORTANT]
 >
->Adobe建議您 [啟用多重註解與多重音訊追蹤功能](#enable-dash) (在您的Dynamic Media帳戶上)。 如此一來，您便可運用最新的Dynamic Media後端架構和簡化的工作流程，在視訊中新增註解、字幕和音訊曲目。
+>Adobe建議您 [啟用多重註解和音訊追蹤功能](#enable-dash) (在您的Dynamic Media帳戶上)。 如此一來，您便可運用最新的Dynamic Media後端架構和簡化的工作流程，在視訊中新增註解、字幕和音訊曲目。
 
 您可以將隱藏式字幕新增至單一視訊或最適化視訊集，以將視訊觸及全球市場。 透過新增隱藏式字幕，您就不需要對音訊進行配音，或是使用母語者重新錄製每種語言的音訊。 視訊會以錄製的語言播放。 出現外語註解時，不同語言的人仍可瞭解音訊部分。
 
