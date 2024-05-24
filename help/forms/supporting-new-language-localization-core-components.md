@@ -4,9 +4,9 @@ description: 瞭解如何為最適化表單新增地區設定。
 feature: Adaptive Forms, Core Components
 Role: Developer, Author
 exl-id: bc06542b-84c8-4c6a-a305-effbd16d5630
-source-git-commit: 2658d844036d8ac5759d819f9d19c4528cc4df61
+source-git-commit: 9cb3b52d0cf172c16777eadbc4d78b267c3db513
 workflow-type: tm+mt
-source-wordcount: '2152'
+source-wordcount: '2028'
 ht-degree: 2%
 
 ---
@@ -270,7 +270,7 @@ git clone https://github.com/adobe/aem-core-forms-components.git
 
 
 
-### 5.新增地區設定支援至字典
+### 新增地區設定支援至字典
 
 此步驟僅適用於下列常用支援的語言環境以外的語言環境：英文(en)、德文(de)、西班牙文(es)、法文(fr)、義大利文(it)、巴西葡萄牙文(pt-br)、中文（簡體 — zh_cn）、中文（繁體 — zh_tw）、日文(ja)和韓文(ko_kr)。
 
@@ -350,7 +350,7 @@ git clone https://github.com/adobe/aem-core-forms-components.git
 
       透過，觸發程式碼的部署 [現有的完整棧疊管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=zh-Hant#setup-pipeline). 這會透過新的地區設定支援自動建置和部署更新的程式碼。
 
-      如果您尚未設定管道，請參閱上的指南 [如何設定AEM Formsas a Cloud Service的管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=zh-Hant#setup-pipeline)..
+      如果您尚未設定管道，請參閱上的指南 [如何設定AEM Formsas a Cloud Service的管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=zh-Hant#setup-pipeline).
 
 
 ## 預覽具有新增地區設定的最適化表單
@@ -358,8 +358,6 @@ git clone https://github.com/adobe/aem-core-forms-components.git
 以下步驟將引導您預覽具有新新增地區設定的最適化表單：
 
 1. 登入您的AEM Formsas a Cloud Service執行個體。
-
-1. 找出「Forms」區段，並導覽至「Forms和檔案」。
 1. 前往 **Forms** >  **Forms與檔案**.
 1. 選取最適化表單並按一下 **新增字典** 和 **新增字典至翻譯專案** 精靈出現。
 1. 指定 **專案標題** 並選取 **目標語言** 從「 」的下拉式功能表 **新增字典至翻譯專案** 精靈。
@@ -367,20 +365,6 @@ git clone https://github.com/adobe/aem-core-forms-components.git
 1. 前往 **Forms** >  **Forms與檔案**.
 1. 選取最適化表單，然後選擇 **以HTML預覽** 選項。
 1. 附加 `&afAcceptLang=<locale-name>` 前往預覽URL並按Return鍵。 取代 `<locale-name>` 和您的實際地區代碼。 最適化表單會以指定的地區設定顯示。
-
-
-## 預覽具有新增地區設定的最適化表單 {#use-added-locale-in-af}
-
-執行以下步驟，以預覽具有新新增地區設定的最適化：
-
-1. 登入您的AEM Formsas a Cloud Service執行個體。
-1. 前往 **Forms** >  **Forms與檔案**.
-1. 選取最適化表單並按一下 **新增字典** 和 **新增字典至翻譯專案** 精靈出現。
-1. 指定 **專案標題** 並選取 **目標語言** 從「 」的下拉式功能表 **新增字典至翻譯專案** 精靈。
-1. 按一下 **完成** 並執行已建立的翻譯專案。
-1. 選取最適化表單並按一下 **以HTML預覽**.
-1. 新增 `&afAcceptLang=<locale-name>` 在最適化表單的URL中。
-1. 重新整理頁面，最適化表單會以指定的地區設定呈現。
 
 ## 支援新本地化的最佳實務 {#best-practices}
 
@@ -393,12 +377,11 @@ git clone https://github.com/adobe/aem-core-forms-components.git
 
    * **人工翻譯**：針對人工翻譯工作流程，請使用位於的UI匯出字典 `[AEM Forms Server]/libs/cq/i18n/gui/translator.html`. 更新新欄位的字典並上傳修訂版本。
 
-## 了解更多
-
-* [產生最適化Forms的記錄檔案](/help/forms/generate-document-of-record-core-components.md)
-* [新增最適化表單至 AEM Sites 頁面或體驗片段](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
-
 
 ## 另請參閱 {#see-also}
 
 {{see-also}}
+
+* [產生最適化Forms的記錄檔案](/help/forms/generate-document-of-record-core-components.md)
+* [新增最適化表單至 AEM Sites 頁面或體驗片段](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+
