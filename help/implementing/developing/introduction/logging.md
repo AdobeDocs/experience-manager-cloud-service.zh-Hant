@@ -2,7 +2,7 @@
 title: AEMas a Cloud Service記錄
 description: 瞭解如何使用AEM的記錄as a Cloud Service來設定中央記錄服務的全域引數、個別服務的特定設定，或如何請求資料記錄。
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: 97a1781f0a2d59d2bed7b03c7d4f045c81784f60
+source-git-commit: 0ed0178c2490919cefb46256e07c5b316c5f97ae
 workflow-type: tm+mt
 source-wordcount: '2797'
 ht-degree: 8%

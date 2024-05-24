@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的運作方式以及該軟體可以為您做哪些事。
 breadcrumb-title: 使用手冊
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 543e9b78b4bdc11c49f79c6baec79615c5f7f91b
+source-git-commit: 5369806730639afa2cee916a44639a0f138d46d2
 workflow-type: tm+mt
-source-wordcount: '4976'
+source-wordcount: '4978'
 ht-degree: 99%
 
 ---
@@ -1036,6 +1036,7 @@ ht-degree: 99%
       + [AEM 快速開發環境](/help/implementing/developing/introduction/rapid-development-environments.md)
       + [AEM as a Cloud Service 開發指導方針](/help/implementing/developing/introduction/development-guidelines.md)
       + [記錄](/help/implementing/developing/introduction/logging.md)
+      + [記錄轉送](/help/implementing/developing/introduction/log-forwarding.md)
       + [設定和設定瀏覽器](/help/implementing/developing/introduction/configurations.md)
       + [AEM 技術基礎](/help/implementing/developing/introduction/aem-technologies.md)
       + [API 參考資料](/help/implementing/developing/reference-materials.md)
