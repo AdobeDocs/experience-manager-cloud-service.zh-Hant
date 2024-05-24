@@ -3,10 +3,10 @@ title: 交易報告計費 API
 description: 作為交易入帳的所有API清單
 feature: Adaptive Forms, Foundation Components
 exl-id: 6dfcac3e-5654-4b4f-9134-0cd8be24332e
-source-git-commit: 543e9b78b4bdc11c49f79c6baec79615c5f7f91b
+source-git-commit: df4fbe8552ad61df3a8e8b44dcd1427b8f6e9240
 workflow-type: tm+mt
-source-wordcount: '1033'
-ht-degree: 8%
+source-wordcount: '1438'
+ht-degree: 19%
 
 ---
 
@@ -34,6 +34,46 @@ AEM Forms提供多個API來提交表單、處理檔案和轉譯檔案。 有些A
 
 * **已轉譯的檔案：** 透過結合範本和資料來產生檔案、以數位方式簽署或認證檔案、使用檔案服務的計費檔案服務API，或將檔案從一種格式轉換為另一種格式，均被視為檔案已呈現。
 
+>[!CONTEXTUALHELP]
+>id="aemforms_cs_transaction_reporting_submission_graph_en"
+>title="表單提交追蹤器"
+>abstract="此圖表代表特定時段內最適化表單提交的計數。 提交量增加可能表示表單越來越受歡迎，或需要從使用者收集更多資料。 **注意：** 圖表提供目前執行個體特有的資料，可讓您快速分析趨勢並做出明智的決策。 對於其他例項的提交資料，您只需存取相應例項的儀表板即可。"
+
+>[!CONTEXTUALHELP]
+>id="aemforms_cs_transaction_reporting_conversions_graph_en"
+>title="檔案轉譯追蹤器"
+>abstract="此圖表代表特定時段內的檔案轉譯計數。 **注意：** 圖表提供目前執行個體特有的資料，可讓您快速分析趨勢並做出明智的決策。 對於其他例項的提交資料，您只需存取相應例項的儀表板即可。"
+
+>[!CONTEXTUALHELP]
+>id="aemforms_cs_transaction_reporting_newForms_graph_en"
+>title="新表單追蹤器"
+>abstract="圖表會提供特定時段內新建立表單的數目資訊。 **注意：** 圖表提供目前AEM Forms製作例項的特定資料。 若要查看其他例項的資料，請存取對應例項的儀表板。"
+
+>[!CONTEXTUALHELP]
+>id="aemforms_cs_transaction_reporting_publishedForms_graph_en"
+>title="已發佈表單追蹤器"
+>abstract="圖表提供特定時段內已成功發佈的表單數量資訊。 **注意：** 圖表提供目前AEM Forms發佈執行個體專屬的資料。 若要查看其他例項的轉換資料，請存取對應例項的儀表板。"
+
+>[!CONTEXTUALHELP]
+>id="aemforms_cs_transaction_reporting_formCreationAvgDuration_graph_en"
+>title="表單產生的平均持續時間"
+>abstract="此圖顯示了建立表單所需的平均時間。圖表上的每個長條都代表一個特定的表單，長條的高度則表示在該時間段內建立表單所需的平均持續時間。"
+
+>[!CONTEXTUALHELP]
+>id="aemforms_cs_transaction_reporting_formPublishAvgDuration_en"
+>title="表單建立的平均持續時間"
+>abstract="此圖表顯示建立和發佈表單所需的平均時間，從開啟表單進行編輯的第一天開始測量。**注意：** 圖表提供目前AEM Forms製作例項的特定資料。 若要查看其他例項的資料，請存取對應例項的儀表板。"
+
+
+>[!CONTEXTUALHELP]
+>id="aemforms_cs_transaction_reporting_formFragments_graph_en"
+>title="Forms片段追蹤器"
+>abstract="此圖表可協助您檢視您在表單中使用的表單片段數目。 **注意：** 圖表提供目前AEM Forms發佈執行個體專屬的資料。 若要查看其他例項的轉換資料，請存取對應例項的儀表板。"
+
+>[!CONTEXTUALHELP]
+>id="aemforms_cs_transaction_reporting_avgFormPerFragments_graph_en"
+>title="表單片段平均時間追蹤器"
+>abstract="此圖表顯示建立表單片段所需的平均時間，從開啟片段進行編輯的第一天開始測量。**注意：** 圖表提供目前AEM Forms發佈執行個體專屬的資料。 若要查看其他例項的轉換資料，請存取對應例項的儀表板。"
 
 
 <!-- 
