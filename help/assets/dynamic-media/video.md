@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: ea2e82f02e9b5ee1ef64d186516c786d8c264c52
+source-git-commit: 7a80f68f71475b2bdb6b5559354d7248208a3819
 workflow-type: tm+mt
 source-wordcount: '9357'
 ht-degree: 2%
@@ -567,7 +567,7 @@ DASH (Digital Adaptive Streaming over HTTP)是視訊串流的國際標準，被�
 
 ## 關於Dynamic Media中視訊的多重註解和音訊追蹤支援{#about-msma}
 
-透過Dynamic Media中的多重字幕與音訊追蹤功能，您可以輕鬆將多重字幕與音訊追蹤新增至主要視訊。 此功能表示全球對象都可以存取您的影片。您可以以多種語言向全球對象自訂單一已發佈的主要影片，並遵守不同地理區域的輔助功能指南。作者也可以從使用者介面的單一標籤管理字幕和音軌。
+透過Dynamic Media中的多重字幕與音訊追蹤功能，您可以輕鬆將多重字幕與音訊追蹤新增至主要視訊。 此功能表示全球對象都可以存取您的影片。您可以以多種語言向全球對象自訂單一已發佈的主要影片，並遵守不同地理區域的輔助功能指南。此外，作者還可以在使用者介面的單一標籤管理字幕和音軌。
 
 ![Dynamic Media中的註解與音訊曲目標籤，以及顯示已上傳視訊的.VTT註解檔案與已上傳的.MP3音訊曲目檔案的表格。](/help/assets/dynamic-media/assets/msma-subtitle-audiotracks-tab.png)
 
@@ -642,7 +642,7 @@ DASH (Digital Adaptive Streaming over HTTP)是視訊串流的國際標準，被�
      | 檔案名稱 | 預設檔案名稱衍生自原始檔案名稱。 檔案名稱只能在上傳時變更，以後無法變更。 檔案名稱字元需求與AEM Assets相同。<br>其他音訊曲目檔案或註解檔案不能使用相同的檔案名稱。 |
      | 語言 | 選取音訊曲目的語言。 |
      | 類型 | 選取您正在使用的音軌型別。<br>**原始**  — 原本附加至視訊的音軌，表示為 `[Original]` 在標籤中帶有 `English` 預設選取的語言。 當 **[!UICONTROL 標籤]** 和 **[!UICONTROL 語言]** 可以在以下位置變更： **[!UICONTROL 編輯音訊曲目]** 對話方塊中，如果重新處理主要視訊，則預設為原始值。<br>**標準**  — 非原始語言的附加音軌。<br>**音訊說明**  — 音訊曲軌也包含視訊中非語言動作和手勢的描述性旁白，讓視障人士更容易存取內容。 |
-     | 標籤 | 在中顯示為音軌名稱的文字 **[!UICONTROL 選取音訊或標題]** 媒體播放器中的快顯清單。 客戶看到的標籤與音訊軌相對應。 例如 `English [Original]`。附加至視訊的音訊標籤已設為 `[Original|` 依預設。 |
+     | 標籤 | 在中顯示為音軌名稱的文字 **[!UICONTROL 選取音訊或標題]** 媒體播放器中的快顯清單。 客戶看到的標籤與音訊軌相對應。 例如 `English [Original]`。附加至視訊的音訊標籤已設為 `[Original]` 依預設。 |
 
      如有需要，您可以稍後變更或編輯此音訊曲目中繼資料。 發佈影片時，這些詳細資料會反映在已發佈影片中的公開URL上。
 
@@ -815,8 +815,6 @@ Dynamic Media支援透過URL修飾元在視訊中新增單一標題。 另請參
    | Assets | 指定正在下載的檔案數以及所有選取檔案的組合總大小。 取消選取此選項會變暗（關閉） **[!UICONTROL 下載]** 按鈕，防止您下載任何檔案。 |
 1. 選取 **[!UICONTROL 下載]**.
 1. 發佈視訊。 另請參閱 [發佈資產](publishing-dynamicmedia-assets.md).
-
-
 
 
 
