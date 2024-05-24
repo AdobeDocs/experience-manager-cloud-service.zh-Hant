@@ -2,10 +2,10 @@
 title: 在資產檢視中管理報告
 description: 存取資產檢視之報告區段的資料，評估產品和功能使用情況，並得出關鍵成功量度的見解。
 exl-id: 26d0289e-445a-4b8e-a5a1-b02beedbc3f1
-source-git-commit: 6dc6b3e4ec9d6a816d92152cb535cd9a5d56a3b0
+source-git-commit: f4944cdb9f4ec51af6169c5cbf1890f469d91781
 workflow-type: tm+mt
-source-wordcount: '884'
-ht-degree: 80%
+source-wordcount: '817'
+ht-degree: 89%
 
 ---
 
@@ -59,11 +59,6 @@ In the **[!UICONTROL Reports]** screen, various components are shown in the tabu
    ![Insights](assets/insights2.png)
    -->
 
-* **資產計數（依大小）：** 將您的「資產檢視」環境中的資產總數細分為不同的大小範圍，以各個大小範圍中的資產計數和百分比強調顯示，並使用環形圖表示。
-  ![insights-assets-count-by-size](/help/assets/assets/insights-assets-count-by-size.svg)
-* **依資產型別的資產計數：** 區段「資產檢視」環境中的資產總計數，根據資產的檔案型別突出顯示資產的計數和百分比，由環形圖表示。
-  ![insights-assets-count-by-size](/help/assets/assets/insights-assest-count-by-asset-type1.svg)
-
 ## 建立下載報告 {#create-download-report}
 
 若要建立下載報告：
@@ -82,7 +77,7 @@ In the **[!UICONTROL Reports]** screen, various components are shown in the tabu
    >
    > 資產檢視會將所有本地時區轉換為世界協調時間 (UTC)。
 
-1. 在 [!UICONTROL 欄] 標籤中，選取需要在報告中顯示的欄名稱。
+1. 在 [!UICONTROL 列] 頁籤，選取需要在報告中顯示的列名。
 
 1. 按一下&#x200B;**[!UICONTROL 建立]**。
 
