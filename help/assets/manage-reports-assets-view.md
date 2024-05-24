@@ -1,16 +1,17 @@
 ---
 title: 在資產檢視中管理報告
 description: 存取資產檢視之報告區段的資料，評估產品和功能使用情況，並得出關鍵成功量度的見解。
-source-git-commit: c3076ce35128c147ce2056d11d9305d9a9456636
+exl-id: 26d0289e-445a-4b8e-a5a1-b02beedbc3f1
+source-git-commit: 6dc6b3e4ec9d6a816d92152cb535cd9a5d56a3b0
 workflow-type: tm+mt
-source-wordcount: '814'
-ht-degree: 92%
+source-wordcount: '884'
+ht-degree: 80%
 
 ---
 
 # 管理報告 {#manage-reports}
 
-資產報告使管理員能夠查看 Adobe Experience Manager 資產檢視環境的活動。此資料提供有關使用者如何與內容和產品互動的有用資訊。所有使用者可以存取「深入分析」儀表板，且獲指派至管理員產品設定檔的使用者可以建立使用者定義的報告。
+資產報告可讓管理員檢視Adobe Experience Manager Assets檢視環境的活動。 此資料提供有關使用者如何與內容和產品互動的有用資訊。所有使用者可以存取「深入分析」儀表板，且獲指派至管理員產品設定檔的使用者可以建立使用者定義的報告。
 
 ## 存取報告 {#access-reports}
 
@@ -38,26 +39,30 @@ In the **[!UICONTROL Reports]** screen, various components are shown in the tabu
 
 按一下左側導覽窗格中可用的「**[!UICONTROL 深入分析]**」以檢視以下自動產生的圖表：
 
-![深入分析](assets/insights.png)
-
 * **下載**：使用折線圖表示過去30天或12個月內從資產檢視環境下載的資產數量。
+  ![深入分析 — 下載](/help/assets/assets/insights-downloads2341.svg)
 
 * **上傳**：使用折線圖表示過去30天或12個月內上傳至「資產」檢視環境的資產數量。
-
-<!--* **Asset Count by Size**: The division of count of assets based on their range of various sizes from 0 MB to 100 GB.-->
+  ![insights-uploads](/help/assets/assets/insights-uplods2.svg)
+  <!--* **Asset Count by Size**: The division of count of assets based on their range of various sizes from 0 MB to 100 GB.-->
 
 * **儲存空間使用量**：使用長條圖表示的Assets檢視環境的儲存空間使用量（位元組）。
-
-<!--* **Delivery**: The graph depicts the count of assets as the delivery dates.-->
+  ![insights-uploads](/help/assets/assets/insights-storage-usage1.svg)
+  <!--* **Delivery**: The graph depicts the count of assets as the delivery dates.-->
 
 <!--* **Asset Count by Asset Type**: Represents count of various MIME types of the available assets. For example, application/zip, image/png, video/mp4, application/postscripte.-->
 
 * **熱門搜尋**：以表格格式檢視過去 30 天或 12 個月內，在資產檢視環境中熱門搜尋詞彙以及這些詞彙的搜尋次數。
-
+  ![insights-uploads](/help/assets/assets/insights-top-search.svg)
   <!--
    ![Insights](assets/insights1.png)
    ![Insights](assets/insights2.png)
    -->
+
+* **資產計數（依大小）：** 將您的「資產檢視」環境中的資產總數細分為不同的大小範圍，以各個大小範圍中的資產計數和百分比強調顯示，並使用環形圖表示。
+  ![insights-assets-count-by-size](/help/assets/assets/insights-assets-count-by-size.svg)
+* **依資產型別的資產計數：** 區段「資產檢視」環境中的資產總計數，根據資產的檔案型別突出顯示資產的計數和百分比，由環形圖表示。
+  ![insights-assets-count-by-size](/help/assets/assets/insights-assest-count-by-asset-type1.svg)
 
 ## 建立下載報告 {#create-download-report}
 
@@ -77,7 +82,7 @@ In the **[!UICONTROL Reports]** screen, various components are shown in the tabu
    >
    > 資產檢視會將所有本地時區轉換為世界協調時間 (UTC)。
 
-1. 在 [!UICONTROL 列] 頁籤，選取需要在報告中顯示的列名。
+1. 在 [!UICONTROL 欄] 標籤中，選取需要在報告中顯示的欄名稱。
 
 1. 按一下&#x200B;**[!UICONTROL 建立]**。
 
