@@ -728,7 +728,7 @@ ht-degree: 99%
    + 交易報告{#using-communications}
       + [交易報告計費 API](/help/forms/transaction-reports-billable-apis.md)
       + [記錄自訂實施的交易](/help/forms/record-transaction-custom-implementation.md)
-      + [瞭解您的價值實現儀表板](/help/forms/aem-forms-value-realization-dashboard.md)
+      + [了解您的價值實現儀表板](/help/forms/aem-forms-value-realization-dashboard.md)
    + 開發人員 API 參考 {#aem-forms-developer-api-reference}
       + [最適化表單 API 參考](https://developer-stage.adobe.com/experience-cloud/experience-manager-apis/api/stable/forms/)
       + [AEM Forms as a Cloud Service 通訊 API 參考](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)
