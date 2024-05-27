@@ -1,12 +1,10 @@
 ---
 title: AEMas a Cloud Service的記錄轉送
 description: 瞭解如何在AEMas a Cloud Service將記錄轉送給Splunk和其他記錄廠商
-hide: true
-hidefromtoc: true
-source-git-commit: d41390696383f8e430bb31bd8d56a5e8843f1257
+source-git-commit: 13696ffde99114e5265e5c2818cb3257dd09ee8c
 workflow-type: tm+mt
-source-wordcount: '583'
-ht-degree: 3%
+source-wordcount: '718'
+ht-degree: 2%
 
 ---
 
@@ -64,11 +62,47 @@ ht-degree: 3%
          index: "AEMaaCS"
    ```
 
-   基於未來的相容性原因，必須包含預設節點。
+   此 **種類** 引數應設為LogForwarding，而版本應設為1的結構描述版本。
 
-   kind引數應該設定為LogForwarding，而版本應該設定為結構描述版本，即1。
+   設定中的權杖(例如 `${{SPLUNK_TOKEN}}`)代表不應儲存在Git中的秘密。 請改為宣告他們為Cloud Manager  [環境變數](/help/implementing/cloud-manager/environment-variables.md) 型別 **密碼**. 請務必選取 **全部** 作為「已套用服務」欄位的下拉式清單值，因此可將記錄檔轉送至作者、發佈和預覽層級。
 
-   設定中的權杖(例如 `${{SPLUNK_TOKEN}}`)代表不應儲存在Git中的秘密。 請改為宣告他們為Cloud Manager  [環境變數](/help/implementing/cloud-manager/environment-variables.md) 型別為「機密」。 請務必選取 **全部** 作為「已套用服務」欄位的下拉式清單值，因此可將記錄檔轉送至作者、發佈和預覽層級。
+   您可以在cdn記錄檔和其他所有專案(AEM和apache記錄檔)之間設定不同的值，方法是加入額外的 **cdn** 和/或 **aem** 封鎖晚於 **預設** 區塊，其中屬性可覆寫以下位置中定義的屬性： **預設** 區塊；只需要enabled屬性。 一個可能的使用案例是對CDN記錄使用不同的Splunk索引，如以下範例所示。
+
+   ```
+      kind: "LogForwarding"
+      version: "1"
+      metadata:
+        envTypes: ["dev"]
+      data:
+        splunk:
+          default:
+            enabled: true
+            host: "splunk-host.example.com"
+            token: "${{SPLUNK_TOKEN}}"
+            index: "AEMaaCS"
+          cdn:
+            enabled: true
+            token: "${{SPLUNK_TOKEN_CDN}}"
+            index: "AEMaaCS_CDN"   
+   ```
+
+   另一種情況是停用CDN記錄或其他所有專案(AEM和apache記錄)的轉送。 例如，若只要轉送CDN記錄檔，即可設定下列專案：
+
+   ```
+      kind: "LogForwarding"
+      version: "1"
+      metadata:
+        envTypes: ["dev"]
+      data:
+        splunk:
+          default:
+            enabled: true
+            host: "splunk-host.example.com"
+            token: "${{SPLUNK_TOKEN}}"
+            index: "AEMaaCS"
+          aem:
+            enabled: false
+   ```
 
 1. 對於RDE以外的環境型別（目前不支援），請在Cloud Manager中建立目標部署設定管道。
 
@@ -96,10 +130,17 @@ data:
       
 ```
 
-考量事項：
+SAS權杖應該用於驗證。 應從共用存取權杖頁面而非共用存取權杖頁面中建立，並應使用下列設定進行設定：
 
-* 使用SAS權杖進行驗證，該權杖應具有最小驗證期。
-* SAS權杖應在帳戶頁面上建立，而不是在容器頁面上建立。
+* 允許的服務：必須選取Blob
+* 允許的資源：必須選取物件
+* 允許的許可權：必須選取「寫入」、「新增」、「建立」
+* 有效的開始和到期日期/時間。
+
+以下是範例SAS權杖設定的熒幕擷圖：
+
+![Azure Blob SAS權杖設定](/help/implementing/developing/introduction/assets/azureblob-sas-token-config.png)
+
 
 ### Datadog {#datadog}
 
