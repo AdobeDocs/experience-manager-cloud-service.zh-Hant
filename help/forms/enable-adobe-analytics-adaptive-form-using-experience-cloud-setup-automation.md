@@ -1,14 +1,14 @@
 ---
-title: 如何為最適化表單啟用Adobe Analytics？
-description: Experience Cloud Setup Automation 可協助將 Adobe Analytics 連接到最適化表單，以追蹤關於訪客互動和參與度的深入見解。
+title: 如何啟用Adobe Analytics以快速追蹤分析最適化表單？
+description: Experience Cloud設定自動化協助將Adobe Analytics連結至最適化表單，以快速追蹤訪客互動和參與的分析及深入分析。
 keywords: 使用Experience Cloud設定自動化啟用最適化表單的Adobe Analytics、在Forms中啟用Adobe Analytics、在最適化Forms中啟用Adobe Analytics、Forms分析整合、Forms和Adobe Analytics
 feature: Adaptive Forms
 role: Admin, User
 exl-id: 0e1aa040-08b4-4c1a-b247-ad6fff410187
-source-git-commit: 975f767e75a268a1638227ae20a533f82724c80a
+source-git-commit: a23576b5dc6d78a29fe19cd23f3c4788f2bee23e
 workflow-type: tm+mt
-source-wordcount: '1555'
-ht-degree: 58%
+source-wordcount: '1588'
+ht-degree: 50%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 58%
 | AEM as a Cloud Service  | 本文章 |
 | AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/integrate-aem-forms-with-experience-cloud-solutions/configure-analytics-forms-documents.html) |
 
-Experience Cloud Setup Automation 可協助將 Adobe Analytics 連接到最適化表單，這有助於追蹤和分析使用者與表單的互動，並提供關於訪客互動和參與度的深入見解。Experience Cloud Setup Automation 也可協助監控表單效能，其中涉及評估像是完成時間和退出點等量度。此分析有助於優化表單以提供更好的使用者體驗，同時根據登入狀態 (例如匿名使用者) 區分使用者行為，以識別整體趨勢和模式。
+Experience Cloud設定自動化有助於將Adobe Analytics連結到Adaptive Forms，這有助於快速追蹤分析使用者與您的表單的互動，並提供訪客互動和參與情況的深入分析。 Experience Cloud Setup Automation 也可協助監控表單效能，其中涉及評估像是完成時間和退出點等量度。此分析有助於優化表單以提供更好的使用者體驗，同時根據登入狀態 (例如匿名使用者) 區分使用者行為，以識別整體趨勢和模式。
 
 ## 將 Adobe Analytics 整合至最適化表單的優勢 {#advantages-of-integrating-adobe-analytics-with-aem-forms}
 
@@ -29,7 +29,7 @@ Experience Cloud Setup Automation 可協助將 Adobe Analytics 連接到最適�
 
 ## 最適化表單使用情況量度的範圍 {#scope-of-adaptive-forms-usage-metrics}
 
-Adobe Analytics 提供了一系列全面的最適化表單效能量度，旨在提供表單使用情況的寶貴深入見解。這些量度為：
+Adobe Analytics提供全方位的Adaptive Forms效能量度，旨在提供表單使用的寶貴見解，並提供快速追蹤分析。 這些量度為：
 
 * **表單轉譯、表單提交、驗證錯誤、不重複訪客**，可讓您評估表單的使用情況和有效性。
 
@@ -62,7 +62,7 @@ Experience Cloud設定自動化需要 **Adobe Analytics授權**， **資料收�
 
 如果您擁有的有效授權 **Adobe Analytics** 和 **Experience Manager Forms**，而且您已與整合 **資料收集(先前稱為Adobe Launch)**，您應該在開發人員主控台中驗證其可用性。
 
-若要確認上述功能是否適用於您的Formsas a Cloud Service環境，請造訪 [開發人員主控台](https://developer.adobe.com/console/projects)，瀏覽至專案並使用方案id — 環境id搜尋您的專案，例如，使用URL的環境 `https://author-p45913-e175111-cmstg.adobeaemcloud.com/index.html`，方案id — 環境id為 `p45913-e175111`. 確保有列出 Experience Cloud Setup Automation、Adobe Analytics 和 Experience Platform Launch API。如果都有列出，您可以為您的最適化表單啟用 Adobe Analytics。
+若要確認上述功能是否適用於您的Formsas a Cloud Service環境，請造訪 [開發人員主控台](https://developer.adobe.com/console/projects)，瀏覽至專案並使用方案id — 環境id搜尋您的專案，例如，使用URL的環境 `https://author-p45913-e175111-cmstg.adobeaemcloud.com/index.html`，方案id — 環境id為 `p45913-e175111`. 確保有列出 Experience Cloud Setup Automation、Adobe Analytics 和 Experience Platform Launch API。如果列出了這些專案，您可以啟用Adobe Analytics，以快速追蹤分析您的最適化Forms。
 
 ![先決條件表單分析整合](assets/analytics-aem.png){width="100%"}
 
@@ -76,7 +76,7 @@ Experience Cloud設定自動化需要 **Adobe Analytics授權**， **資料收�
 
 ## 設定 Adobe Analytics {#configure-adobe-analytics}
 
-執行下列步驟，為您的最適化表單啟用和設定 Adobe Analytics：
+執行以下列出的步驟，啟用和設定Adobe Analytics以快速追蹤分析您的最適化Forms：
 
 * [為以基礎元件為主的最適化表單啟用 Adobe Analytics](#integrate-adobe-analytics-with-aem-forms-for-foundation-component)
 * [為以核心元件為主的最適化表單啟用 Adobe Analytics](#integrate-adobe-analytics-with-aem-forms-for-core-components)
@@ -139,7 +139,7 @@ Experience Cloud設定自動化需要 **Adobe Analytics授權**， **資料收�
 
 ## 啟用Analytics以在Sites中自適應Forms {#Connect-Analytics-to-Adaptive-Forms-in-Sites}
 
-在AEM Sites中為您的Adaptive Form設定Analytics可協助您追蹤使用者互動以及您在Sites頁面中的Form上提交的表單。 透過在您的Sites Forms中緊密整合分析，您可獲得有關使用者行為、轉換率和表單中需改善領域的寶貴見解。
+在AEM Sites中為您的Adaptive Form設定Fast Track Analytics，以協助您追蹤使用者互動以及您在Sites頁面中的Form上提交的表單。 透過在您的Sites Forms中緊密整合分析，您可獲得有關使用者行為、轉換率和表單中需改善領域的寶貴見解。
 
 ### 先決條件 {#Prerequisites-to-connect-forms-analytics-to-sites}
 
@@ -147,7 +147,7 @@ Experience Cloud設定自動化需要 **Adobe Analytics授權**， **資料收�
 
 ### 在Sites中連線最適化Forms以啟用Analytics {#Connect-analytics-to-adaptive-forms}
 
-若要在AEM Sites頁面中連線最適化表單以啟用Analytics，請包含 `customfooterlibs` 使用AEM原型/Git存放庫和部署管道將使用者端程式庫移至AEM Sites頁面。
+若要在AEM Sites頁面中連線最適化表單以啟用Analytics的快速通道分析，請包含 `customfooterlibs` 使用AEM原型/Git存放庫和部署管道將使用者端程式庫移至AEM Sites頁面。
 
 1. 開啟您的 [AEM Forms原型或複製的Git存放庫](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) 在文字編輯器中專案。 例如，Visual Studio Code。
 
