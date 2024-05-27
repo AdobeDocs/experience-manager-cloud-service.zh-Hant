@@ -5,14 +5,14 @@ exl-id: 46fcc1b4-8fd5-40e1-b0fc-d2bc9df3802e
 role: Admin, Developer, User
 feature: Adaptive Forms
 contentOwner: khsingh
-source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
+source-git-commit: 9d1594e61a3ec79c0e773cac5753885684ac8a21
 workflow-type: tm+mt
-source-wordcount: '1317'
+source-wordcount: '1325'
 ht-degree: 1%
 
 ---
 
-# 針對現有Adobe Experience Manager 6.5 Forms使用者的重大變更  {#notable-changes-for-existing-AEM-Forms-users}
+# AEM 6.5 Forms （AMS和內部部署）與AEM Forms as a Cloud Service (AEM CS Forms)的差異 {#notable-changes-for-existing-AEM-Forms-users}
 
 與Adobe Experience Manager Forms On-Premise和Adobe Experience Manager Forms相比，as a Cloud Service對現有功能進行了一些重大變更 [!DNL Adobe-Managed Service] 環境。 主要差異列示如下：
 
@@ -41,7 +41,7 @@ ht-degree: 1%
 
 * 電子郵件預設僅支援HTTP和HTTP通訊協定。 [聯絡支援團隊](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html#sending-email) 啟用連線埠以傳送電子郵件，並為您的環境啟用SMTP通訊協定。
 
-## 本土化
+## 本地化
 
 * 本地化的最適化Forms的URL慣例現在支援在URL中指定地區設定。 新的URL慣例可在Dispatcher或CDN上快取當地語系化的表單。 在Cloud Service環境中，使用URL格式 `http://host:port/content/forms/af/<afName>.<locale>.html` 請求最適化表單的本地化版本，而非 `http://host:port/content/forms/af/afName.html?afAcceptLang=<locale>`.
 

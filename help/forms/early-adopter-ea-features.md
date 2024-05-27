@@ -1,30 +1,30 @@
 ---
 title: 目前的早期採用者功能 [!DNL Adobe Experience Manager Forms] as a Cloud Service。
 description: 目前的早期採用者功能 [!DNL Adobe Experience Manager Forms] as a Cloud Service。
-hide: true
-hidefromtoc: true
 Feature: Introduction
 Role: developer, user
-source-git-commit: 6d0297f3ab0efd82f994b532e78f8f4d8ee864b3
+source-git-commit: 9d1594e61a3ec79c0e773cac5753885684ac8a21
 workflow-type: tm+mt
-source-wordcount: '988'
-ht-degree: 10%
+source-wordcount: '1600'
+ht-degree: 6%
 
 ---
 
-# 早期採用者(EA)計畫
+# AEM Forms早期採用者計畫
 
 
-率先採用者計畫為您提供獨一無二的機會，讓您搶在別人之前取得尖端功能的獨家存取權，並幫助打造他們的開發成果。 率先採用者計畫提供以下獨特機會：
+AEM Forms早期採用者計畫為您提供獨一無二的機會，讓您搶在其他人之前取得尖端功能的獨家存取權，並幫助打造他們的開發。 此計畫提供您：
 
-* 提供有價值的意見回饋，並影響未來功能的開發。
-* 率先體驗尖端技術，再打入主流市場。
-* 協助找出並解決錯誤，讓使用者在完整發行時獲得更流暢的使用體驗。
+* 成為搶先體驗尖端技術的企業之一。
+* 與產品團隊共同創新，共同塑造產品的未來。 使用您的使用案例來指導開發，確保創新成熟並解決現實世界的挑戰。
+* 提供意見回饋，並協助我們在發行前解決問題，以便在完整發行時提供更流暢的使用者體驗。
 
-[立即加入我們的早期採用者社群](#how-to-join-the-early-adopter-program). 您可以要求存取所有或任何即將推出的特定功能。
+## 如何加入早期採用者計畫？
+
+如果您有興趣加入我們的早期採用者計畫，以進行任何早期採用者創新，只要將您的官方地址傳送電子郵件至aem-forms-ea@adobe.com請求存取即可。 您可以要求存取所有或任何特定的創新。
 
 
-## 早期採用者(EA)功能
+## 早期採用者創新
 
 ### AEM Forms Generative AI (Gen AI)
 
@@ -46,17 +46,19 @@ ht-degree: 10%
 * **使用產生AI提示建立表單規則**：使用Generative AI提示來取得協助，以建立回應使用者輸入的智慧規則。 我們的Generative AI可以根據您的表單目的建議甚至產生條件式規則。
 
 
-### Workfront Fusion
+### AEM Forms Workfront Fusion聯結器
 
-此 [AEM Forms Adobe Workfront Fusion聯結器](/help/forms/submit-adaptive-form-to-workfront-fusion.md) 能夠緊密整合Adobe Experience Manager (AEM) Forms和Adobe Workfront Fusion。 Adobe Workfront作為工作管理應用程式，集中處理整個工作生命週期，而Workfront Fusion則作為整合平台，促進Workfront與各種業務應用程式之間的連線。
+AEM Forms Workfront Fusion聯結器可緊密整合Adobe Experience Manager (AEM) Forms與Adobe Workfront Fusion。 Adobe Workfront作為工作管理應用程式，集中處理整個工作生命週期，而Workfront Fusion則作為整合平台，促進Workfront與各種業務應用程式之間的連線。
 
-使用AEM Forms Adobe Workfront Fusion Connector，您可以設計在提交最適化表單時自動觸發的工作流程。 例如，設想這樣一個場景：啟動工作流程以便將審查提交資料的任務分配給特定個人，進而允許根據透過最適化表單擷取的資訊來核准或拒絕申請。這項簡化的整合可提升效率，並將工作流程自動化提升到新的水準。
+使用AEM Forms Workfront Fusion Connector，您可以設計在提交最適化表單時自動觸發的工作流程。 例如，設想這樣一個場景：啟動工作流程以便將審查提交資料的任務分配給特定個人，進而允許根據透過最適化表單擷取的資訊來核准或拒絕申請。這項簡化的整合可提升效率，並將工作流程自動化提升到新的水準。
+
+準備好開始了嗎？ 此 [提交最適化表單至Adobe Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md) 檔案提供創新功能的使用逐步指南。
 
 <!-- <br/> ![Adobe Workfront](/help/forms/assets/adobe-workfront.png) <br/> -->
 
 ### 對話式Forms
 
-對話式Forms功能可讓您與表單互動，例如在任何AEM Sites頁面上的友好聊天機器人。
+對話式Forms創新功能可讓您與表單互動，就像任何AEM Sites頁面上的友好聊天機器人。
 
 您可以直接將Conversational Forms元件拖放至AEM Sites頁面並開始使用。 不需要程式碼，因此任何人都能快速建立吸引人且方便使用的對話Forms體驗。
 
@@ -72,20 +74,15 @@ Forms帶來的更多對話功能如下：
 對話式Forms不僅是一種新外觀 — 它還能改變使用者體驗的遊戲規則。  提升參與度、減少表單放棄率，並讓每個人都能更愉快地與您的網站互動。
 
 
-### Edge Delivery Services的AEM製作
+### 適用於Edge Delivery Services的AEM式製作
 
-AEM Authoring提供WYSIWYG介面(最適化Forms編輯器)，可建置這些表單並發佈至Edge Delivery Services，以實現無與倫比的載入速度，並在即時表單上獲得近乎完美的Google Lighthouse分數，從而保證最佳效能和使用者體驗。
-
-![建立表單的新一代可組合性工具](/help/forms/assets/web-vitals.jpeg)
-
-AEM Authoring提供以下所有功能 [檔案式製作](/help/edge/docs/forms/overview.md#document-based-authoring-features)，外加各式各樣的其他功能：
+AEM式製作提供WYSIWYG介面(最適化Forms編輯器)，用以建置這些表單並發佈至Edge Delivery Services。 AEM式撰寫提供以下所有功能： [檔案式製作](/help/edge/docs/forms/overview.md#document-based-authoring-features)，外加各式各樣的其他功能：
 
 * 用來建立複雜邏輯的進階規則編輯器。
 * 提供自訂功能的伺服器端可擴充性。
 * 可輕鬆建立表單和視覺效果的 WYSIWYG 編輯體驗。
 * 記錄文件功能可建立提交資料的防篡改檔案。
 * 與 Adob&#x200B;&#x200B;e Sign 整合以進行電子簽名。
-* 與Adobe Workfront Fusion整合，在提交表單時觸發Adobe Workfront Fusion案例。
 * 與各種資料來源整合，以預先填入表單和提交資料。
 * 用來定義資料結構並與各種資料來源互動的表單資料模型 (FDM)。
 * 能夠選擇多個提交動作以處理表單提交，包括提交資料至Microsoft SharePoint、Microsoft OneDrive、Adobe Workfront Fusion、Salesforce、Microsoft Dynamics和更多資料來源。
@@ -104,6 +101,65 @@ AEM Forms至Marketo聯結器橋接了使用Adobe Experience Manager (AEM)建立�
 本質上，AEM Forms至Marketo Connector可協助您運用兩個平台的優勢，建立更有效率的行銷漏斗。
 
 
-## 如何加入早期採用者計畫？
+## 其他早期採用者創新功能
 
-如果您有興趣加入我們的早期採用者計畫以獲得任何功能，只要從您的官方地址傳送電子郵件至aem-forms-ea@adobe.com請求存取即可。
+### 由右至左(RTL)語言支援
+
+最適化Forms現在能以由右至左(RTL)語言顯示，提供更具包容性的使用者體驗並方便使用。
+
+此功能適用於阿拉伯文、希伯來文和烏爾都文等語言，這些語言是從右至左(RTL)書寫和閱讀的，有助於提高表單的理解和完成率。
+
+![從右至左(RTL)語言支援](mobile-responsive.png)
+
+Adaptive Forms中支援的由右至左(RTL)語言可協助您：
+
+* **擴展使用者基礎**：現在，全球有超過20億人對RTL語言更熟悉，因此企業可以觸及這些人。
+
+* **提供增強的使用者體驗**：Forms能以完美的方式呈現，自然文字從右到左排列、正確的UI元素對齊方式，以及直覺式的版面配置反映了使用者的閱讀習慣。 這能減少混淆，並提高完成率。
+
+* **提供行動回應式體驗**：由於固有的行動回應能力，Forms在任何裝置上皆可存取，確保桌上型電腦、平板電腦和智慧型手機間的順暢體驗。
+
+整體而言，最適化Forms中的RTL語言支援讓企業能夠設計真正的全球性表單，擴大觸及率、參與度和包容性。
+
+準備好開始了嗎？ [最適化Forms RTL檔案](/help/forms/supporting-new-language-localization-core-components.md) 提供使用RTL創新的逐步指南。
+
+### 增強的機器人保護方法
+
+AEM Forms已新增兩個熱門驗證碼解決方案的支援，以加強其安全性功能：Cloudflare Turnstile和hCaptcha。 這為現有的Google reCAPTCHA增添了功能，讓使用者在保護表單免受機器人和垃圾郵件提交影響時，擁有更多選擇和靈活性。
+
+* **Cloudflare Turnstile**：此順暢的驗證碼可透過不需要明確互動的簡單挑戰來驗證使用者。 它可順暢地整合至您的表單中，進而改善使用者體驗。
+* **驗證碼**：此針對隱私權的驗證碼提供使用者易用的替代方案，著重於資料隱私權。 其目標是在安全性與使用者體驗之間取得平衡。
+* **Google reCAPTCHA**： AEM Forms持續支援reCAPTCHA v2和reCAPTCHA Enterprise，提供穩定可靠的成熟解決方案。
+
+透過提供多個驗證碼選項，AEM Forms可讓您選擇最符合您特定需求的解決方案。
+
+準備好將任何這些驗證碼解決方案與您的Adaptive Forms整合了嗎？ 本檔案提供各項的詳細指示： [Cloudflare Turnstile](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-turnstile-core-components)， [驗證碼](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-hcaptcha-core-components)、和 [Google reCAPTCHA](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/captcha-adaptive-forms-core-components).
+
+### 檔案保證API
+
+
+AEM Forms檔案保證API是AEM FormsCloud Service通訊API中的一組工具，可讓您管理PDF檔案的安全性和使用者互動。
+
+以下為Doc Assurance API功能劃分：
+
+* **加密和解密檔案**：使用加密讓檔案內容無法讀取，從而Protect您的檔案。 您可以控制PDF的加密部分，包括整個檔案、特定內容、中繼資料或附件。
+
+* **數位簽署檔案**：將數位簽名新增至您的檔案，以進行驗證和防篡改驗證。 這可用於認證目的或確保檔案完整性
+
+* **Reader擴充檔案(套用或編輯PDF檔案的使用許可權)**：透過擴充具有其他使用許可權的Adobe Reader功能，讓您的組織可輕鬆共用互動式PDF檔案。
+
+  Reader擴充功能（使用許可權） API將使用許可權新增至PDF檔案。 此動作會啟動在使用Adobe Reader開啟PDF檔案時通常無法使用的功能，例如新增註釋至檔案、填寫表單和儲存檔案。 協力廠商使用者不需要其他軟體或外掛程式即可使用啟用許可權的檔案。
+
+  當PDF檔案新增了適當的使用許可權時，收件者可以從Adobe Reader中執行啟用的活動。
+
+整體而言， [檔案保證API](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/references/docassurance/) 透過新增一層額外的控制來協助您改善檔案安全性和合規性。
+
+
+
+## 另請參閱
+
+* [AEM Forms的最新創新](/help/forms/latest-innovations.md)
+
+* [AEM Forms as a Cloud Service的功能](/help/forms/home.md)
+
+* [AEM 6.5 Forms （AMS和內部部署）與AEM Forms as a Cloud Service (AEM CS Forms)的差異](/help/forms/notable-changes.md)
