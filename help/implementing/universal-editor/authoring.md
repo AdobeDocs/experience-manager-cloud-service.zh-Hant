@@ -2,10 +2,10 @@
 title: 使用 Universal Editor 編寫內容
 description: 了解內容作者使用 Universal Editor 建立內容有多簡單和直覺。
 exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
-source-git-commit: 0ad9f349c997c35862e4f571b4741ed4c0c947e2
+source-git-commit: b42390dcecb546853380d64808bcf009680c89a3
 workflow-type: tm+mt
-source-wordcount: '2189'
-ht-degree: 56%
+source-wordcount: '2083'
+ht-degree: 54%
 
 ---
 
@@ -89,7 +89,7 @@ Experience Cloud 標頭會始終顯示在畫面頂端。這是一個錨點，說
 
 #### 使用者屬性 {#user-properties}
 
-選取代表您的使用者的圖示，以存取您的使用者設定。 如果您沒有設定使用者圖片，則會隨機分配圖示。
+選取代表您使用者的圖示以存取您的使用者設定。如果您沒有設定使用者圖片，則會隨機分配圖示。
 
 ![使用者屬性](assets/user-properties.png)
 
@@ -384,9 +384,4 @@ Universal Editor工具列一律會顯示在畫面頂端，緊接在底下 [Exper
 
 若要了解有關 Universal Editor 的詳細資訊，請參閱以下文件。
 
-* [Universal Editor 簡介](introduction.md) - 了解 Universal Editor 如何在任意實作中編輯任何方面的內容，以便提供卓越的體驗、提高內容速度並提供最先進的開發人員體驗。
 * [使用通用編輯器發佈內容](publishing.md)  — 瞭解通用編輯器如何發佈內容，以及您的應用程式如何處理已發佈的內容。
-* [AEM 中 Universal Editor 快速入門](getting-started.md) - 了解如何存取 Universal Editor，以及如何開始檢測您的第一個 AEM 應用程式以使用它。
-* [Universal Editor 架構](architecture.md) - 了解 Universal Editor 的架構，以及資料如何在其服務和階層之間流動。
-* [屬性和類型](attributes-types.md) - 了解 Universal Editor 需要的資料屬性和類型。
-* [Universal Editor 驗證](authentication.md) - 了解 Universal Editor 如何進行驗證。

@@ -2,10 +2,10 @@
 title: AEM 中 Universal Editor 快速入門
 description: 了解如何存取 Universal Editor，以及如何開始檢測您的第一個 AEM 應用程式以使用它。
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
-source-git-commit: 11a244b7dd4810fbfec92b3effc362102e7322dc
+source-git-commit: a9a428eb5329bc2aa3d86ac5e0c91f633516446c
 workflow-type: tm+mt
-source-wordcount: '921'
-ht-degree: 69%
+source-wordcount: '828'
+ht-degree: 68%
 
 ---
 
@@ -24,22 +24,11 @@ ht-degree: 69%
 
 入門使用AEM應用程式並檢測其是否使用通用編輯器有數個步驟。
 
-1. [要求存取 Universal Editor。](#request-access)
 1. [包括 Universal Editor 核心庫。](#core-library)
 1. [新增必要的 OSGi 設定。](#osgi-configurations)
 1. [檢測頁面。](#instrument-page)
 
 本文件將引導您完成這些步驟。
-
-## 要求存取 Universal Editor {#request-access}
-
-您需要先要求存取 Universal Editor。開啟 [&#39;https://experience.adobe.com/#/aem/editor&#39;](https://experience.adobe.com/#/aem/editor)，登入並驗證您是否擁有通用編輯器的存取權。
-
-如果您沒有存取權，可以透過同一頁面上連結的表格提出要求。
-
-![要求存取 Universal Editor](assets/request-access.png)
-
-按一下&#x200B;**要求存取**&#x200B;並按照指示填寫表格以要求存取。Adobe 代表將審查您的要求並與您聯絡以討論您的使用案例。
 
 ## 包括 Universal Editor 核心庫。 {#core-library}
 

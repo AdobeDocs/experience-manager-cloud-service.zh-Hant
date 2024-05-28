@@ -2,10 +2,10 @@
 title: 屬性和項目類型
 description: 瞭解Universal Editor所需的資料屬性和專案型別。
 exl-id: 02795a31-244a-42b4-8297-2649125d7777
-source-git-commit: 36be262a7949bc66f97f5483ff463d755f5f78e5
+source-git-commit: b42390dcecb546853380d64808bcf009680c89a3
 workflow-type: tm+mt
-source-wordcount: '686'
-ht-degree: 80%
+source-wordcount: '538'
+ht-degree: 79%
 
 ---
 
@@ -56,14 +56,3 @@ ht-degree: 80%
 |---|---|
 | `component` | 用於讓獨立的文字、RTF 和媒體模仿元件，因此也可以在頁面上將其移動和刪除 |
 | `container` | 用於容許將容器視為自己的元件，因此可以在頁面上將其移動和刪除 |
-
-## 其他資源 {#additional-resources}
-
-若要了解有關 Universal Editor 的詳細資訊，請參閱以下文件。
-
-* [Universal Editor 簡介](introduction.md) - 了解 Universal Editor 如何在任意實作中編輯任何方面的內容，以便提供卓越的體驗、提高內容速度並提供最先進的開發人員體驗。
-* [使用 Universal Editor 編寫內容](/help/sites-cloud/authoring/universal-editor/authoring.md) - 了解內容作者使用 Universal Editor 建立內容有多簡單和直覺。
-* [使用通用編輯器發佈內容](/help/sites-cloud/authoring/universal-editor/publishing.md)  — 瞭解通用編輯器如何發佈內容，以及您的應用程式如何處理已發佈的內容。
-* [AEM 中 Universal Editor 快速入門](getting-started.md) - 了解如何存取 Universal Editor，以及如何開始檢測您的第一個 AEM 應用程式以使用它。
-* [Universal Editor 架構](architecture.md) - 了解 Universal Editor 的架構，以及資料如何在其服務和階層之間流動。
-* [Universal Editor 驗證](authentication.md) - 了解 Universal Editor 如何進行驗證。

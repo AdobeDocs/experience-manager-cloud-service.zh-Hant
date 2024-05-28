@@ -2,10 +2,10 @@
 title: Universal Editor 簡介
 description: 瞭解通用編輯器如何讓您看到即得(WYSIWYG)編輯任何Headless和Headful體驗。 了解它如何幫助內容作者提供卓越的體驗、提高其內容速度，以及如何提供最先進的開發人員體驗。
 exl-id: d4fc2384-a0f5-4a6f-9572-62749786be4c
-source-git-commit: 2ad5920d0b3d8a3ad780a2cb0f28b7e6f9e596ab
+source-git-commit: b42390dcecb546853380d64808bcf009680c89a3
 workflow-type: tm+mt
-source-wordcount: '1066'
-ht-degree: 59%
+source-wordcount: '973'
+ht-degree: 54%
 
 ---
 
@@ -90,13 +90,6 @@ Universal Editor 可以用於任何實作、任何內容和任何方面的內容
 * 內容作者必須擁有自己的個別Experience Cloud帳戶。
 * 支援的瀏覽器為Chrome和Edge
 
-## 其他資源 {#additional-resources}
+## 後續步驟 {#next-steps}
 
-若要了解有關 Universal Editor 的詳細資訊，請參閱以下文件。
-
-* [使用 Universal Editor 編寫內容](/help/sites-cloud/authoring/universal-editor/authoring.md) - 了解內容作者使用 Universal Editor 建立內容有多簡單和直覺。
-* [使用通用編輯器發佈內容](/help/sites-cloud/authoring/universal-editor/publishing.md)  — 瞭解通用編輯器如何發佈內容，以及您的應用程式如何處理已發佈的內容。
-* [AEM 中 Universal Editor 快速入門](getting-started.md) - 了解如何存取 Universal Editor，以及如何開始檢測您的第一個 AEM 應用程式以使用它。
-* [Universal Editor 架構](architecture.md) - 了解 Universal Editor 的架構，以及資料如何在其服務和階層之間流動。
-* [屬性和類型](attributes-types.md) - 了解 Universal Editor 需要的資料屬性和類型。
-* [Universal Editor 驗證](authentication.md) - 了解 Universal Editor 如何進行驗證。
+請參閱檔案 [通用編輯器使用案例和學習路徑](/help/implementing/universal-editor/use-cases.md) 進一步瞭解通用編輯器的常見使用案例，並探索可在專案中為您提供支援的正確檔案資源。
