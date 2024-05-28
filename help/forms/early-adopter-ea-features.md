@@ -3,15 +3,14 @@ title: 目前的早期採用者功能 [!DNL Adobe Experience Manager Forms] as a
 description: 目前的早期採用者功能 [!DNL Adobe Experience Manager Forms] as a Cloud Service。
 Feature: Introduction
 Role: developer, user
-source-git-commit: 9d1594e61a3ec79c0e773cac5753885684ac8a21
+source-git-commit: 2b035e9597518ff64a2b4ce8c18ae31e5deef6f3
 workflow-type: tm+mt
-source-wordcount: '1600'
+source-wordcount: '1599'
 ht-degree: 6%
 
 ---
 
 # AEM Forms早期採用者計畫
-
 
 AEM Forms早期採用者計畫為您提供獨一無二的機會，讓您搶在其他人之前取得尖端功能的獨家存取權，並幫助打造他們的開發。 此計畫提供您：
 
@@ -21,7 +20,7 @@ AEM Forms早期採用者計畫為您提供獨一無二的機會，讓您搶在�
 
 ## 如何加入早期採用者計畫？
 
-如果您有興趣加入我們的早期採用者計畫，以進行任何早期採用者創新，只要將您的官方地址傳送電子郵件至aem-forms-ea@adobe.com請求存取即可。 您可以要求存取所有或任何特定的創新。
+如果您有興趣加入我們的早期採用者計畫，以進行任何早期採用者創新，只要將您的官方地址中的電子郵件傳送至 `aem-forms-ea@adobe.com` 以要求存取權。 您可以要求存取所有或任何特定的創新。
 
 
 ## 早期採用者創新
