@@ -2,10 +2,10 @@
 title: 行動中心
 description: 善用行動中心，方便處理事件和其他重要資訊
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
-source-git-commit: 383d56ccd1e523082c21e58252a7c03a9807c582
+source-git-commit: ae8c5e832134caf4ff6799c601810e9a735f4195
 workflow-type: tm+mt
-source-wordcount: '829'
-ht-degree: 70%
+source-wordcount: '842'
+ht-degree: 69%
 
 ---
 
@@ -76,3 +76,4 @@ AEM as a Cloud Service 有多種類型的通知，但只有一部分出現在行
 | 來源處的流量尖峰 | 事件 | 透過設定在低於來源預設流量尖峰警報的臨界值處觸發的速率限制流量篩選規則，Protect您的來源。  請參閱 [使用流量規則封鎖DoS和DDoS攻擊](/help/security/traffic-filter-rules-including-waf.md#blocking-dos-and-ddos-attacks-using-traffic-filter-rules) 流量篩選規則檔案的區段，其中會參考教學課程。 |
 | 即將到期的 S2S 認證 | 主動 | 在[為伺服器端 API 產生權杖文件](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md#refresh-credentials)中，了解如何重新整理認證 | 高連線計數 | 主動 | 瞭解中的連線集區 [連線集區以及進階網路檔案](/help/security/configuring-advanced-networking.md#connection-pooling-advanced-networking) |
 | 已棄用的服務使用者對應 | 主動 | 瞭解如何使用較新的Sling服務使用者對應格式，如中所述 [Sling服務使用者對應和服務使用者定義的最佳實務](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/best-practices-for-sling-service-user-mapping-and-service-user-definition) |
+| 高連線計數 | 主動 | 瞭解中的連線集區 [進階網路檔案](/help/security/configuring-advanced-networking.md#connection-pooling-advanced-networking) |
