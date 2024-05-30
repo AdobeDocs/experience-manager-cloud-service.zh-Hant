@@ -2,7 +2,7 @@
 title: 清除CDN快取
 description: 瞭解如何設定清除API權杖（其可用於API呼叫），從AdobeCDN快取中移除快取物件。
 feature: CDN Cache
-source-git-commit: a10faaecf8f6dcaf53e7c72504b927125b32c0d4
+source-git-commit: bd8f534642848a656e5e54c425049c95cdb413f7
 workflow-type: tm+mt
 source-wordcount: '449'
 ht-degree: 1%
