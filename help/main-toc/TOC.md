@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的運作方式以及該軟體可以為您做哪些事。
 breadcrumb-title: 使用手冊
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 2b035e9597518ff64a2b4ce8c18ae31e5deef6f3
+source-git-commit: 88bfb13f52a807a4cca5566633e2a07cfa6ce7b2
 workflow-type: tm+mt
-source-wordcount: '4961'
+source-wordcount: '4966'
 ht-degree: 99%
 
 ---
@@ -1181,6 +1181,7 @@ ht-degree: 99%
       + [AEM as a Cloud Service 中的 CDN](/help/implementing/dispatcher/cdn.md)
       + [設定 CDN 上的流量](/help/implementing/dispatcher/cdn-configuring-traffic.md)
       + [Edge Side 包括](/help/implementing/dispatcher/edge-side-includes.md)
+      + [設定CDN認證和驗證](/help/implementing/dispatcher/cdn-credentials-authentication.md)
       + [設定 CDN 錯誤頁面](/help/implementing/dispatcher/cdn-error-pages.md)
       + [AEM as a Cloud Service 中的快取](/help/implementing/dispatcher/caching.md)
 + 連接器 {#connectors}
