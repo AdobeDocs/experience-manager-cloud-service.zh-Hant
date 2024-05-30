@@ -2,9 +2,9 @@
 title: 清除CDN快取
 description: 瞭解如何設定清除API權杖（其可用於API呼叫），從AdobeCDN快取中移除快取物件。
 feature: Dispatcher
-source-git-commit: 7224db99c29c90fb5e93ac07d7d501e2e9aaf74e
+source-git-commit: 114098a75d84a3da4cc582288ffa162cd960a0e6
 workflow-type: tm+mt
-source-wordcount: '443'
+source-wordcount: '449'
 ht-degree: 1%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 1%
 >此功能尚未正式推出。若要加入率先採用者計畫，請傳送電子郵件至 `aemcs-cdn-config-adopter@adobe.com`.
 
 整個清除會從AdobeCDN快取中移除物件，導致未來的請求以快取遺失的形式繼續前往來源，而不是從快取提供服務。
-AEMas a Cloud Service可讓您設定清除API Token，然後將其用於API呼叫。 閱讀 <!--[Configuring CDN Credentials and Authentication article](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token)--> 瞭解如何使用Cloud Manager設定管道驗證指示來設定此Token。
+AEMas a Cloud Service可讓您設定清除API Token，然後將其用於API呼叫。 閱讀 [設定CDN認證和驗證文章](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token) 瞭解如何使用Cloud Manager設定管道驗證指示來設定此Token。
 
 有三個支援的清除變數：
 
