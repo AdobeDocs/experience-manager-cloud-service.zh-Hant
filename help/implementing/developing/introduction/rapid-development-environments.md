@@ -2,10 +2,10 @@
 title: 快速開發環境
 description: 瞭解如何使用快速開發環境在雲端環境中進行快速開發反複專案。
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
-source-git-commit: cd74240f59cb3139e425f568828ba9ab1b59147f
+source-git-commit: 4a5b7c671a149d61c60fc86f93a41d52fb4b5468
 workflow-type: tm+mt
-source-wordcount: '4345'
-ht-degree: 4%
+source-wordcount: '4294'
+ht-degree: 3%
 
 ---
 
@@ -408,11 +408,12 @@ The analyser found the following errors for publish :
 
 上述程式碼範例說明套件無法解析時的行為。 在此情況下，會將其設為「暫存」，且僅當透過安裝其他程式碼滿足其需求（在此情況下為缺少匯入）時才會安裝。
 
-<u>根據網站主題和網站範本部署前端計畫碼</u>
+### 根據網站主題和網站範本部署前端計畫碼 {#deploying-themes-to-rde}
 
 >[!NOTE]
 >
->此功能尚未正式發行，但可供早期採用者使用。 請聯絡 **aemcs-rde-support@adobe.com**，可嘗試使用並提供意見回饋。
+> 此功能尚無法使用。 它將在六月的某個時候推出。
+>
 
 RDE支援的前端程式碼，根據 [網站主題](/help/sites-cloud/administering/site-creation/site-themes.md) 和 [網站範本](/help/sites-cloud/administering/site-creation/site-templates.md). 使用RDE時，這是使用命令列指令來部署前端套件完成的，而不是使用Cloud Manager [前端管道](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md) 用於其他環境型別。
 
@@ -1011,8 +1012,6 @@ RDE與其他環境不同，因為其內容可安裝在/apps下的install.rde資�
 
 * RDE不包含預覽層
 * RDE目前不支援發行前通道。
-* 而RDE支援檢視和偵錯的前端程式碼，根據 [網站主題](/help/sites-cloud/administering/site-creation/site-themes.md) 和 [網站範本](/help/sites-cloud/administering/site-creation/site-templates.md) 已部署尚未正式上市，可由率先採用者使用。 請聯絡 **aemcs-rde-support@adobe.com**，可嘗試使用並提供意見回饋。
-
 
 
 ## 我需要多少RDE？ {#how-many-rds-do-i-need}
