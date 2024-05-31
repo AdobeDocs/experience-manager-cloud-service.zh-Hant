@@ -5,19 +5,18 @@ feature: Adaptive Forms, Core Components
 role: User
 level: Beginner, Intermediate
 exl-id: 1292f729-c6eb-4e1b-b84c-c66c89dc53ae
-source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+source-git-commit: 494e90bd5822495f0619e8ebf55f373a26a3ffe6
 workflow-type: tm+mt
-source-wordcount: '5453'
+source-wordcount: '5612'
 ht-degree: 0%
 
 ---
 
 
-<span class="preview"> 本文包含部分搶鮮版功能的內容。 這些搶鮮版功能只能透過我們的 [發行前通道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). 搶鮮版計畫下的功能包括：
-* 支援使用When-then-else功能實作巢狀條件
-* 驗證或重設面板和表單，包括欄位
-* 支援現代JavaScript功能，例如自訂函式中的let和箭頭函式（ES10支援）。
-</span>
+| 版本 | 文章連結 |
+| -------- | ---------------------------- |
+| 基礎元件 | [按一下這裡](/help/forms/rule-editor.md) |
+| 核心元件 | 本文章 |
 
 # 將規則新增至最適化表單（核心元件） {#adaptive-forms-rule-editor}
 
@@ -29,13 +28,21 @@ ht-degree: 0%
 * 啟用或停用物件
 * 設定物件的值
 * 驗證物件的值
-* 執行函數以計算物件的值
-* 啟動表單資料模型 （FDM） 服務並執行操作
+* 執行函式以計算物件的值
+* 啟動表單資料模型(FDM)服務並執行作業
 * 設定物件的屬性
 
 <!-- Rule editor replaces the scripting capabilities in [!DNL Experience Manager 6.1 Forms] and earlier releases. However, your existing scripts are preserved in the new rule editor. For more information about working with existing scripts in the rule editor, see [Impact of rule editor on existing scripts](rule-editor.md#p-impact-of-rule-editor-on-existing-scripts-p). -->
 
-添加到 forms-power-users 群組 的使用者可以建立腳本和編輯現有腳本。 群組中的 [!DNL forms-users] 使用者可以使用腳本，但不能創建或編輯腳本。
+新增至表單超級使用者群組的使用者可以建立指令碼並編輯現有指令碼。 中的使用者 [!DNL forms-users] 群組可以使用指令碼，但不能建立或編輯指令碼。
+
+## 核心元件中的規則編輯器與基礎元件中的規則編輯器之間的差異
+
+{{rule-editor-diff}}
+
+>[!NOTE]
+>
+> 若要檢視如何建立和使用自訂函式的詳細資訊，請參閱 [最適化Forms中的自訂函式（核心元件）](/help/forms/create-and-use-custom-functions.md) 文章。
 
 ## 瞭解規則 {#understanding-a-rule}
 
@@ -107,7 +114,7 @@ ht-degree: 0%
 
 此 **[!UICONTROL 時間]** 規則型別會遵循 **condition-action-alternate action** 規則建構，或有時僅 **condition-action** 建構。 在此規則型別中，您必須先指定評估條件，接著在條件符合時觸發動作( `True`)。 使用When規則型別時，您可以使用多個AND和OR運運算元來建立 [巢狀運算式](#nestedexpressions).
 
-使用 When 規則 類型，您可以評估表單對象的條件並對一個或多個物件執行操作。
+使用When規則型別，您可以評估表單物件的條件，並對一或多個物件執行動作。
 
 簡單地說，典型的When規則結構如下：
 
@@ -117,25 +124,80 @@ ht-degree: 0%
 
 `Then, do the following:`
 
-物件B上的動作2；以及物件C上的動作3；
+`Action 2 on Object B;`
+`AND`
+&#39;物件C上的動作3；
 
 `Else, do the following:`
 
-物件C； _上的動作2
+`Action 2 on Object C;`
+_
 
 當您有多值元件（如單選按鈕或清單）時，為該元件建立規則時，會自動擷取選項，並讓規則建立者可以使用這些選項。 您不需要再次輸入選項值。
 
-例如，一個清單有四個選項：「紅色」、「藍色」、」綠色“和”黃色“。 創建規則時，將自動檢索選項（單選按鈕）並提供給規則建立者，如下所示：
+例如，清單有四個選項：紅色、藍色、綠色和黃色。 建立規則時，會自動擷取選項（選項按鈕），以供規則建立者使用，如下所示：
 
 ![多值顯示選項](assets/multivaluefcdisplaysoptions.png)
 
-編寫 When 規則時，可以觸發清除值操作。 清除值操作將清除指定物件的值。 在 When 語句中使用「清除值」選項可以創建具有多個字段的複雜條件。 您可以添加 Else 語句以添加其他條件
+撰寫When規則時，您可以觸發「清除值」動作。 清除值動作會清除指定物件的值。 在When陳述式中將的清除值作為選項可讓您建立具有多個欄位的複雜條件。 您可以新增Else陳述式以進一步新增條件
 
 ![清除值](assets/clearvalueof.png)
 
 >[!NOTE]
 >
 > 當規則型別僅支援單一層級then-else陳述式時。
+
+#### 允許的多重欄位 [!UICONTROL 時間] {#allowed-multiple-fields}
+
+在 **時間** 條件，您可以選擇新增其他欄位，但不包括套用規則的欄位。
+
+例如，使用When規則型別，您可以評估不同表單物件的條件並執行動作：
+
+時間：
+
+（物件A條件1）
+
+和/或
+
+（物件B條件2）
+
+接著，執行下列動作：
+
+物件A上的動作1
+
+_
+
+![何時允許多個欄位](/help/forms/assets/allowed-multiple-field-when.png)
+
+##### 在When條件功能中使用允許多個欄位時的注意事項
+
+* 確保 [核心元件設定為3.0.14版或更新版本](https://github.com/adobe/aem-core-forms-components) 在規則編輯器中使用此功能。
+* 如果將規則應用於 When 條件中的不同欄位，則僅更改其中一個字段時，規則觸發平均。
+
+
+<!--
+* It is not possible to add multiple fields in the When condition while applying rules to a button.
+
+##### To enable Allowed Multiple fields in When condition feature
+
+Allowed Multiple fields in When condition feature is disabled by default. To enable this feature, add a custom property at the template policy:
+
+1. Open the corresponding template associated with an Adaptive Form in the template editor.
+1. Select the existing policy as **formcontainer-policy**.
+1. Navigate to the **[!UICONTROL Structure]**  view and, from the **[!UICONTROL Allowed Components]** list, open the **[!UICONTROL Adaptive Forms Container]** policy.
+1. Go to the **[!UICONTROL Custom Properties]** tab and to add a custom property, click **[!UICONTROL Add]**.
+1. Specify the **Group Name** of your choice. For example, in our case, we added the group name as **allowedfeature**.
+1. Add the **key** and **value** pair as follows:
+   * key: fd:changeEventBehaviour
+   * value: deps
+1. Click **[!UICONTROL Done]**. -->
+
+如果「當條件」功能中允許的多個字段遇到任何問題，請將故障排除步驟追隨為：
+
+1. 在編輯模式下打開表單。
+1. 開啟「內容」瀏覽器，然後選擇 **[!UICONTROL 最適化表單的「引導容器]** 」元件。
+1. 按一下「指引容器」屬性 ![指引屬性](/help/forms/assets/configure-icon.svg) 圖示。此時會開啟「最適化表單容器」對話框。
+1. 按一下完成，然後再次儲存對話方塊。
 
 **[!UICONTROL 隱藏]** 隱藏指定的物件。
 
@@ -194,7 +256,7 @@ ht-degree: 0%
 
 **[!UICONTROL 驗證]** 驗證表單或指定的物件。
 
-**[!UICONTROL 新增實例]** 新增指定重複面板或表格列的執行個體。
+**[!UICONTROL 新增例項]** 新增指定之可重複面板或表格列的例項。
 
 **[!UICONTROL 移除例項]** 移除指定之可重複面板或表格列的例項。
 
@@ -207,7 +269,7 @@ ht-degree: 0%
 
 ### [!UICONTROL 設定值] {#set-value-of}
 
-此 **[!UICONTROL 設定值]** 規則型別可讓您根據是否滿足指定的條件來設定表單物件的值。 值可以設定為另一個物件的值、常值字串、衍生自數學運算式或函式的值、另一個物件的屬性值，或表單資料模型服務的輸出。 同樣，您可以檢查元件、字串、屬性或從函數或數學運算式派生的值的條件。
+此 **[!UICONTROL 設定值]** 規則型別可讓您根據是否滿足指定的條件來設定表單物件的值。 值可以設定為另一個物件的值、常值字串、衍生自數學運算式或函式的值、另一個物件的屬性值，或表單資料模型服務的輸出。 同樣地，您可以檢查元件、字串、屬性或衍生自函式或數學運算式的值的條件。
 
 此 **設定值** 規則型別不適用於所有表單物件，例如面板和工具列按鈕。 標準的「設定值」規則具有以下結構：
 
@@ -376,7 +438,7 @@ To define a rule based on a form data model:
 
 ### D.視覺規則編輯器 {#visual-rule-editor}
 
-視覺化規則編輯器是規則編輯器使用者介面的視覺化編輯器模式中您編寫規則的區域。 它允許您選擇規則類型並據此定義條件和操作。 在規則中定義條件和動作時，您可以從「表單物件與函式」窗格中拖放表單物件與函式。
+視覺化規則編輯器是規則編輯器使用者介面的視覺化編輯器模式中您編寫規則的區域。 它可讓您選取規則型別，並據此定義條件和動作。 在規則中定義條件和動作時，您可以從「表單物件與函式」窗格中拖放表單物件與函式。
 
 如需使用視覺化規則編輯器的詳細資訊，請參閱 [寫入規則](rule-editor.md#p-write-rules-p).
 <!-- 
@@ -395,13 +457,13 @@ Users in the forms-power-users group can access code editor. For other users, co
 
 ### E.完成和取消按鈕 {#done-and-cancel-buttons}
 
-此 **[!UICONTROL 完成]** 按鈕可用來儲存規則。 您可以儲存不完整的規則。 但是，不完整內容無效，因此不會執行。 當您下次從同一表單物件啟動規則 編輯者時，會列出表單物件上已保存的規則。 您可以管理該視圖中的現有規則。 具體操作，請參見 [管理規則](rule-editor.md#p-manage-rules-p)。
+此 **[!UICONTROL 完成]** 按鈕可用來儲存規則。 您可以儲存不完整的規則。 但是，不完整無效並且不會運行。 當您下次從同一表單物件啟動規則 編輯者時，會列出表單物件上已保存的規則。 您可以管理該視圖中的現有規則。 具體操作，請參見 [管理規則](rule-editor.md#p-manage-rules-p)。
 
-此 **[!UICONTROL 取消]** 按鈕會放棄您對規則所做的任何變更並關閉規則編輯器。
+**[!UICONTROL 取消]**&#x200B;按鈕會放棄您對規則所做的任何更改並關閉規則 編輯者。
 
-## 寫入規則 {#write-rules}
+## 編寫規則 {#write-rules}
 
-您可以使用視覺化規則編輯器來撰寫規則 <!-- or the code editor. When you launch the rule editor the first time, it opens in the visual editor mode. You can switch to the code editor mode and write rules. However, if you write or modify a rule in code editor, you cannot switch to the visual editor for that rule unless you clear the code editor. When you launch the rule editor next time, it opens in the mode that you used last to create rule. -->
+您可以使用可視化規則 編輯者編寫規則 <!-- or the code editor. When you launch the rule editor the first time, it opens in the visual editor mode. You can switch to the code editor mode and write rules. However, if you write or modify a rule in code editor, you cannot switch to the visual editor for that rule unless you clear the code editor. When you launch the rule editor next time, it opens in the mode that you used last to create rule. -->
 
 讓我們先來看看如何使用視覺化編輯器來撰寫規則。
 
@@ -411,7 +473,7 @@ Users in the forms-power-users group can access code editor. For other users, co
 
 ![Create-rule-example](assets/create-rule-example.png)
 
-範例貸款申請表單中的「貸款需求」區段要求申請人指定其婚姻狀況、薪資，如果已婚，則指定其配偶的薪資。 規則會根據使用者輸入來計算貸款資格金額，並顯示在「貸款資格」欄位中。 套用下列規則以實施情境：
+範例貸款申請表單中的「貸款需求」區段要求申請人指定其婚姻狀況、薪資，如果已婚，則指定其配偶的薪資。 根據用戶輸入，規則將計算貸款資格金額並顯示在「貸款資格」欄位中。 套用下列規則以實施情境：
 
 * 配偶的「薪資」欄位僅在「婚姻狀況」為「已婚」時顯示。
 * 貸款資格金額為薪資總額的50%。
@@ -509,17 +571,17 @@ Users in the forms-power-users group can access code editor. For other users, co
 
    在延伸運算式欄位中，選取 **[!UICONTROL 除以]** 從 **[!UICONTROL 選取運運算元]** 欄位和 **[!UICONTROL 數字]** 從 **[!UICONTROL 選取選項]** 欄位。 然後，指定 **[!UICONTROL 2]** 在數字欄位中。
 
-   ![write-rules-visual-editor-14](assets/write-rules-visual-editor-14-cc.png)
+   ![write-rules-visual-編輯者-14](assets/write-rules-visual-editor-14-cc.png)
 
    >[!NOTE]
    >
-   >您可以在「選取選項」欄位中使用元件、函式、數學運算式和屬性值來建立複雜運算式。
+   >您可以使用“選擇選項”字段中的元件、函數、數學表達式和屬性值來創建複雜表達式。
 
-   接著，建立條件，當傳回True時，執行運算式。
+   下一個，創建一個條件，當返回 True 時，運算式將執行該條件。
 
-1. 選取 **[!UICONTROL 新增條件]** 新增When陳述式。
+1. 選擇「 **[!UICONTROL 添加條件]** 」以添加 When 語句。
 
-   ![write-rules-visual-editor-15](assets/write-rules-visual-editor-15-cc.png)
+   ![write-rules-visual-編輯者-15](assets/write-rules-visual-editor-15-cc.png)
 
    在When陳述式中：
 
@@ -802,11 +864,11 @@ var c = {
 
 ## 日期運算式條件 {#dateexpression}
 
-規則編輯器可讓您使用日期比較來建立條件。
+規則 編輯者 可讓您使用日期比較來建立條件。
 
-以下是一個範例條件，會在房屋抵押貸款已辦理時顯示靜態文字物件，使用者填寫日期欄位即表示該條件。
+下面是一個示例條件，如果房屋的抵押已經獲得，則顯示靜態文本物件，用戶通過填寫日期字段來表示。
 
-當使用者填寫的屬性按揭日期為過去時，最適化表單會顯示收入計算的相關備註。 下列規則會比較使用者填寫的日期與目前日期，如果使用者填寫的日期早於目前日期，則表單會顯示文字訊息（名為「收入」）。
+當用戶填寫的屬性的抵押日期是過去的日期時，自適應表格會顯示有關收入計算的註釋。 以下規則將用戶填寫的日期與當前日期進行比較，如果用戶填寫的日期早於當前日期，則表單將顯示文本消息（名為“收入”）。
 
 ![日期運算式條件](assets/dateexpressioncondition.png)
 
@@ -897,8 +959,6 @@ Rule in the code editor -->
 在上一個範例中說明的採購單表單中，您想要限制使用者訂購超過一10000數量的產品。 若要執行此驗證，您可以編寫驗證規則，如下所示。
 
 ![Example-validate](assets/example-validate.png)
-
-視覺化編輯器中的規則
 
 <!-- The rule appears as follows in the code editor.
 

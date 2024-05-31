@@ -3,10 +3,10 @@ title: 目前的早期採用者功能 [!DNL Adobe Experience Manager Forms] as a
 description: 目前的早期採用者功能 [!DNL Adobe Experience Manager Forms] as a Cloud Service。
 Feature: Introduction
 Role: developer, user
-source-git-commit: 2b035e9597518ff64a2b4ce8c18ae31e5deef6f3
+source-git-commit: e6ceb53ee821a1fde5e79c687a4445d6c18faf54
 workflow-type: tm+mt
-source-wordcount: '1599'
-ht-degree: 6%
+source-wordcount: '1731'
+ht-degree: 5%
 
 ---
 
@@ -20,8 +20,7 @@ AEM Forms早期採用者計畫為您提供獨一無二的機會，讓您搶在�
 
 ## 如何加入早期採用者計畫？
 
-如果您有興趣加入我們的早期採用者計畫，以進行任何早期採用者創新，只要將您的官方地址中的電子郵件傳送至 `aem-forms-ea@adobe.com` 以要求存取權。 您可以要求存取所有或任何特定的創新。
-
+如果您有興趣加入我們的早期採用者計畫，以進行任何早期採用者創新，只要將您的官方地址中的電子郵件傳送至 [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)  以要求存取權。 您可以要求存取所有或任何特定的創新。
 
 ## 早期採用者創新
 
@@ -154,6 +153,15 @@ AEM Forms檔案保證API是AEM FormsCloud Service通訊API中的一組工具，�
 整體而言， [檔案保證API](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/references/docassurance/) 透過新增一層額外的控制來協助您改善檔案安全性和合規性。
 
 
+### Forms服務API
+
+Forms服務會產生互動式PDF forms以進行資料擷取。 它也可以用來匯入/匯出資料至現有的互動式PDF表單，以及驗證提交的資料。 其功能劃分如下：
+
+* **呈現Forms**：從使用AEM Forms Designer建立的範本產生互動式PDF表單，並可選擇產生XML資料。 這基本上會產生一個可填寫的PDF表單，可選擇預先填入資料。
+
+* **資料擷取和匯入**：將資料匯入現有的PDF表單，並從已填寫的PDF表單中擷取資料。 支援XDP和XML資料格式，並且匯入到非XFAPDF forms（也稱為AcroForms）還支援FDF和XFDF資料。
+
+* **資料驗證**： ：根據使用AEM Forms Designer建立的範本，驗證XDP或XML格式的已提交資料。
 
 ## 另請參閱
 

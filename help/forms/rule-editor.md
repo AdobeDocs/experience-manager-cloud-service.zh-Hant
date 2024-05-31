@@ -5,9 +5,9 @@ feature: Adaptive Forms, Foundation Components
 role: User
 level: Beginner, Intermediate
 exl-id: 6fd38e9e-435e-415f-83f6-3be177738c00
-source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+source-git-commit: 494e90bd5822495f0619e8ebf55f373a26a3ffe6
 workflow-type: tm+mt
-source-wordcount: '6468'
+source-wordcount: '6492'
 ht-degree: 1%
 
 ---
@@ -21,6 +21,12 @@ ht-degree: 1%
 | AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html) |
 | AEM as a Cloud Service  | 本文章 |
 
+
+| 版本 | 文章連結 |
+| -------- | ---------------------------- |
+| 核心元件 | [按一下這裡](/help/forms/rule-editor-core-components.md) |
+| 基礎元件 | 本文章 |
+
 ## 概觀 {#overview}
 
 規則編輯器功能可讓表單業務使用者和開發人員在調適型表單物件上編寫規則。 這些規則會根據預設條件、使用者輸入及使用者對表單的動作，定義要在表單物件上觸發的動作。 它有助於進一步簡化表單填寫體驗，確保準確性和速度。
@@ -32,16 +38,20 @@ ht-degree: 1%
 * 設置物件的值
 * 驗證物件的值
 * 執行函數以計算物件的值
-* 啟動表單數據模型服務並執行操作
+* 啟動表單資料模型服務並執行作業
 * 設定物件的屬性
 
 <!-- Rule editor replaces the scripting capabilities in [!DNL Experience Manager 6.1 Forms] and earlier releases. However, your existing scripts are preserved in the new rule editor. For more information about working with existing scripts in the rule editor, see [Impact of rule editor on existing scripts](rule-editor.md#p-impact-of-rule-editor-on-existing-scripts-p). -->
 
 新增至表單超級使用者群組的使用者可以建立指令碼並編輯現有指令碼。 中的使用者 [!DNL forms-users] 群組可以使用指令碼，但不能建立或編輯指令碼。
 
+## 核心元件中的規則編輯器與基礎元件中的規則編輯器之間的差異
+
+{{rule-editor-diff}}
+
 ## 瞭解規則 {#understanding-a-rule}
 
-規則是動作和條件的組合。 在 規則 編輯者 中，操作包括隱藏、显示、啟用、禁用或計算窗體中物件的值等活動。 條件是對表單物件的狀態、值或屬性執行檢查和作業來評估的Boolean運算式。 根據評估條件返回的值 （ `True` 或 `False`） 執行操作。
+規則是動作和條件的組合。 在規則編輯器中，動作包括隱藏、顯示、啟用、停用或計算表單中物件值等活動。 條件是對表單物件的狀態、值或屬性執行檢查和作業來評估的Boolean運算式。 動作會根據值( `True` 或 `False`)傳回的結果。
 
 規則編輯器提供一組預先定義的規則型別（例如「何時」、「顯示」、「隱藏」、「啟用」、「停用」、「設定值」和「驗證」）來協助您編寫規則。 每種規則型別都可讓您定義規則中的條件和動作。 本檔案將詳細說明每種規則型別。
 
@@ -51,7 +61,7 @@ ht-degree: 1%
 
 在規則編輯器中， **時間** 規則型別會強制執行condition-action結構。
 
-**操作條件** 在此構造中，規則首先定義要觸發的操作，然後是評估條件。 此構造的另一個變體是操作-條件-備用操作，它還定義了在條件返回 False 時要觸發的備用操作。
+**Action-Condition** 在此建構中，規則會先定義要觸發的動作，接著定義評估條件。 此建構的另一個變數為action-condition-alternate action，這也會定義在條件傳回False時要觸發的替代動作。
 
 規則編輯器中的「顯示」、「隱藏」、「啟用」、「停用」、「設定值」和「驗證」規則型別會強制實施動作條件規則結構。 依預設，「顯示」的替代動作是「隱藏」，而「啟用」的替代動作是「停用」，反之亦然。 您無法變更預設的替代動作。
 
@@ -104,7 +114,7 @@ ht-degree: 1%
 
 ### [!UICONTROL 時間] {#whenruletype}
 
-此 **[!UICONTROL 時間]** 規則型別會遵循 **condition-action-alternate action** 規則建構，或有時僅 **condition-action** 建構。 在此規則型別中，您必須先指定評估條件，接著在條件符合時觸發動作( `True`)。 使用When規則型別時，您可以使用多個AND和OR運運算元來建立 [巢狀運算式](#nestedexpressions).
+此 **[!UICONTROL 時間]** 規則型別會遵循 **condition-action-alternate action** 規則建構，或有時僅 **condition-action** 建構。 在此規則類型中，首先指定評估條件，然後在滿足條件時觸發操作 （ `True`）。 使用 When 規則 類型時，可以使用多個 AND 和 OR 運算符來創建 [嵌套表達式](#nestedexpressions)。
 
 使用 When 規則 類型，您可以評估表單對象的條件並對一個或多個物件執行操作。
 
@@ -116,19 +126,17 @@ ht-degree: 1%
 
 `Then, do the following:`
 
-關於物件B的行動2;
-和
-關於物件C的行動3;
+物件B上的動作2；以及物件C上的動作3；
 
 _
 
-當您具有多值元件（如單選按鈕或清單）時，在為該元件創建規則時，將自動檢索選項並提供給規則建立者。 您無需再次鍵入選項值。
+當您有多值元件（如單選按鈕或清單）時，為該元件建立規則時，會自動擷取選項，並讓規則建立者可以使用這些選項。 您不需要再次輸入選項值。
 
 例如，清單有四個選項：紅色、藍色、綠色和黃色。 建立規則時，會自動擷取選項（選項按鈕），以供規則建立者使用，如下所示：
 
 ![多值顯示選項](assets/multivaluefcdisplaysoptions1.png)
 
-撰寫When規則時，您可以觸發「清除值」動作。 清除值動作會清除指定物件的值。 在 When 語句中使用「清除值」選項可以創建具有多個字段的複雜條件。
+撰寫When規則時，您可以觸發「清除值」動作。 清除值動作會清除指定物件的值。 在When陳述式中將的清除值作為選項可讓您建立具有多個欄位的複雜條件。
 
 ![清除值](assets/clearvalueof1.png)
 
@@ -140,7 +148,7 @@ _
 
 **[!UICONTROL 停用]** 停用指定的物件。
 
-**[!UICONTROL 啟動服務]** 叫用表單資料模型(FDM)中設定的服務。 選擇「啟動服務」作業時，會出現一個欄位。 點選欄位時，它會顯示您的頁面上所有表單資料模型(FDM)中設定的所有服務 [!DNL Experience Manager] 執行個體。 選擇表單資料模型(FDM)服務時，會出現更多欄位，您可在其中對應具有指定服務的輸入和輸出引數的表單物件。 請參閱有關叫用窗體數據模型服務的範例規則。
+**[!UICONTROL 啟動服務]** 叫用表單資料模型(FDM)中設定的服務。 選擇「啟動服務」作業時，會出現一個欄位。 點選欄位時，它會顯示您的頁面上所有表單資料模型(FDM)中設定的所有服務 [!DNL Experience Manager] 執行個體。 選擇表單資料模型(FDM)服務時，會出現更多欄位，您可在其中對應具有指定服務的輸入和輸出引數的表單物件。 請參閱呼叫表單資料模型服務的規則範例。
 
 除了表單資料模型服務之外，您還可以指定直接的WSDL URL來叫用Web服務。 不過，表單資料模型服務有許多優點，且建議叫用服務的方法。
 
@@ -202,15 +210,11 @@ _
 
 此 **設定值** 規則型別不適用於所有表單物件，例如面板和工具列按鈕。 標準的「設定值」規則具有以下結構：
 
-將物件A的值設為：
+將物件 A 的值設定為：
 
-（字串 ABC）或
-（物件 屬性 物件 C 的 X）或
-（來自函數的值）或
-（值來自數學運算式）或
-（數據模型服務或Web服務的輸出值）;
+（字串ABC） OR （物件C的物件屬性X） OR （函式的值） OR （數學運算式的值） OR （資料模型服務或Web服務的輸出值）；
 
-時間（選擇）：
+當（選擇性）：
 
 （條件 1 和條件 2 和條件 3） 為 TRUE;
 
@@ -218,7 +222,7 @@ _
 
 ![Set-value-web-service](assets/set-value-web-service1.png)
 
-使用表單數據模型服務設定值 規則範例
+使用表單資料模型服務的設定值規則範例
 
 >[!NOTE]
 >
@@ -356,13 +360,13 @@ _
 
 已套用一或多個有效規則的表單物件會以綠色圓點標示。 如果套用至表單物件的任何規則無效，則表單物件會標示為黃點。
 
-函式索引標籤包含一組內建函式，例如Sum Of、Min Of、Max Of、Average Of、Number Of和Validate表單。 您可以使用這些函式計算可重複面板和表格列中的值，並在撰寫規則時在動作和條件陳述式中使用它們。 不過，您可以建立 [自訂函式](#custom-functions) 也是。
+函式索引標籤包含一組內建函式，例如Sum Of、Min Of、Max Of、Average Of、Number Of和Validate表單。 您可以使用這些函式計算可重複面板和表格列中的值，並在撰寫規則時在動作和條件陳述式中使用它們。 不過，您也可以建立 [自定義函數](#custom-functions) 。
 
-![函式標籤](assets/functions1.png)
+![函数標籤](assets/functions1.png)
 
 >[!NOTE]
 >
->您可以在Forms「物件」和「函式」標籤中搜尋物件和函式的名稱及標題。
+>可以在「物件Forms函數」選項卡中對物件和函數名稱和標題執行文本搜尋。
 
 在表單物件的左側樹狀結構中，您可以選取表單物件，以顯示套用到每個物件的規則。 您不僅可以瀏覽各種表單物件的規則，也可以在表單物件之間複製 — 貼上規則。 如需詳細資訊，請參閱 [複製貼上規則](rule-editor.md#p-copy-paste-rules-p).
 
@@ -464,13 +468,13 @@ Users in the forms-power-users group can access code editor. For other users, co
 
 1. 接著，撰寫規則以計算貸款資格金額（為薪資總額的50%），並在「貸款資格」欄位中顯示。 若要獲得此結果，請建立 **[!UICONTROL 設定值]** 貸款資格欄位上的規則。
 
-   在製作模式中，選取 **[!UICONTROL 貸款資格]** 欄位並選取 ![edit-rules](assets/edit-rules-icon.svg). 接下來，選取 **[!UICONTROL 建立]** 以啟動規則編輯器。
+   在製作模式中，選取 **[!UICONTROL 貸款資格]** 欄位並選取 ![edit-rules](assets/edit-rules-icon.svg). 下一個，選擇 **[!UICONTROL “建立]** ”以啟動規則 編輯者。
 
-1. 選取 **[!UICONTROL 設定值]** 規則。
+1. 從規則下拉列表中選擇 **[!UICONTROL 設置值]** 規則。
 
-   ![write-rules-visual-editor-10](assets/write-rules-visual-editor-10.png)
+   ![write-rules-visual-編輯者-10](assets/write-rules-visual-editor-10.png)
 
-1. 選取 **[!UICONTROL 選取選項]** 並選取 **[!UICONTROL 數學運算式]**. 用於寫入數學運算式的欄位隨即開啟。
+1. 選擇 **[!UICONTROL 「選擇選項]** 」，然後選擇 **[!UICONTROL 「數學運算式]**」。。 用於寫入數學運算式的欄位隨即開啟。
 
    ![write-rules-visual-editor-11](assets/write-rules-visual-editor-11.png)
 
@@ -600,7 +604,7 @@ While writing JavaScript code in the rule editor, the following visual cues help
    1. 數字
    1. 布林值
 
-  所有其他回訪型別則會歸類到上述任一型別下。 不支援任何專案。 請確定您選取以上任一型別。 傳回型別不區分大小寫。
+  所有其他返回類型都歸入上述類型之一。 不支援「無」。 請確定您選取以上任一型別。 傳回型別不區分大小寫。
 
    * **這個**
 語法： `@this currentComponent`
@@ -747,11 +751,11 @@ var c = {
 
 ## 複製貼上規則 {#copy-paste-rules}
 
-您可以將規則從一個欄位複製並貼上到其他類似欄位，以節省時間。
+您可以將規則從一個字段複製並粘貼到其他類似欄位以節省時間。
 
-若要複製貼上規則，請執行下列動作：
+要複製貼上規則，請執行以下操作：
 
-1. 選取您要從中複製規則的表單物件，然後在元件工具列中選取 ![編輯規則](assets/edit-rules-icon.svg). 規則編輯器使用者介面會出現，並選取表單物件，而現有規則會出現。
+1. 選擇要從中複製規則的表單對象，然後在元件工具列 ![中選擇編輯規則](assets/edit-rules-icon.svg)。 此時將顯示規則 編輯者 用戶介面，其中選擇了表單物件，並顯示現有規則。
 
    ![複製規則](assets/copyrule.png)
 

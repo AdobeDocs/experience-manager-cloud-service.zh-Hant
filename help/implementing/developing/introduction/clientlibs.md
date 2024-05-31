@@ -2,9 +2,9 @@
 title: 在AEMas a Cloud Service上使用使用者端資料庫
 description: AEM提供使用者端程式庫資料夾，可讓您將使用者端程式碼(clientlibs)儲存在存放庫中、將其組織成類別，以及定義何時及如何將每個類別的程式碼提供給使用者端
 exl-id: 370db625-09bf-43fb-919d-4699edaac7c8
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 494e90bd5822495f0619e8ebf55f373a26a3ffe6
 workflow-type: tm+mt
-source-wordcount: '2551'
+source-wordcount: '2497'
 ht-degree: 1%
 
 ---
@@ -86,7 +86,7 @@ AEM會在中央位置將網站的CSS和JavaScript收集至單一檔案，以確�
 1. 若要透過下方的Proxy存取使用者端程式庫 `/etc.clientlibs`，選取 `cq:ClientLibraryFolder` 節點，新增以下屬性，然後按一下 **全部儲存**：
    * 名稱：`allowProxy`
    * 型別：布林值
-   * 值: `true`
+   * 值： `true`
 1. 如果您需要管理靜態資源，請建立名為的子資料夾 `resources` 位於使用者端資料庫資料夾下方。
    * 如果您將靜態資源儲存在資料夾下以外的任何位置 `resources`，則無法在發佈執行個體上參考它們。
 1. 將來源檔案新增至程式庫資料夾。
@@ -292,7 +292,7 @@ AEM支援可插拔的前處理器，並隨附以下支援： [YUI壓縮程式](h
 >
 >請勿將縮制的程式庫放入使用者端程式庫中。 改為提供原始程式庫，如果需要縮制，請使用前置處理器的選項。
 
-#### 使用狀況 {#usage}
+#### 使用情況 {#usage}
 
 您可以選擇為每個使用者端程式庫或系統範圍設定前置處理器組態。
 
@@ -345,7 +345,7 @@ compilationLevel (defaults to "simple") (can be "whitespace", "simple", "advance
 
 YUI已設定為AEM中的預設縮制器。 若要將此變更為GCC，請按照以下步驟操作。
 
-1. 前往Apache Felix設定管理員，網址為(`http://<host>:<portY/system/console/configMgr`)
+1. 前往Apache Felix設定管理員，網址為(`http://<host>:<port/system/console/configMgr`)
 1. 尋找並編輯 **AdobeGraniteHTML庫管理員**.
 1. 啟用 **最小化** 選項（如果尚未啟用）。
 1. 設定值 **JS處理器預設設定** 至 `min:gcc`.

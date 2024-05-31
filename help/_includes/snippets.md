@@ -1,8 +1,8 @@
 ---
-source-git-commit: 8c60b02c1759fc4d0cf66d6c8f1c2edf294fc1ce
+source-git-commit: 494e90bd5822495f0619e8ebf55f373a26a3ffe6
 workflow-type: tm+mt
-source-wordcount: '314'
-ht-degree: 100%
+source-wordcount: '516'
+ht-degree: 61%
 
 ---
 # 代碼片段 {#snippets}
@@ -64,4 +64,56 @@ ht-degree: 100%
 * [將可重複區段新增到表單](/help/edge/docs/forms/repeatable-forms.md)
 * [提交表單後顯示自訂感謝訊息](/help/edge/docs/forms/thank-you-page-form.md)
 * [最適化表單區塊元件及其屬性](/help/edge/docs/forms/form-components.md)
+
+
+## 核心元件中的規則編輯器與基礎元件中的規則編輯器之間的差異  {#rule-editor-diff}
+
+下表說明規則編輯器核心元件與規則編輯器基礎元件中可用功能之間的差異：
+
+<table>
+  <tbody>
+  <tr>
+    <td><strong>功能</strong></td>
+    <td><strong>最適化表單基礎元件</strong></td>
+    <td><strong>自適應表單核心元件</strong></td>   
+    </tr>
+  </tr>
+  <tr>
+    <td>設定下拉式清單選項 </td>
+    <td>下拉式清單選項是使用規則編輯器的 <b>設定選項</b> 屬性。</td>
+    <td>下拉式清單選項是使用自訂函式設定的。 
+   </td>
+   </tr>
+     </tr>
+   <tr>
+    <td>在可重複面板欄位上執行數學運算 </td>
+    <td>OOTB Math函式可套用至可重複的面板欄位，以執行sum、average等函式。 </td>
+    <td>重複面板欄位的數學運算可使用自訂函式來執行。
+   </td>
+   </tr>
+      <tr>
+    <td>驗證/重設'Then'中的欄位/面板/表單規則 </td>
+    <td>驗證和重設功能僅支援規則編輯器中的表單物件。 
+   </td>
+    <td>驗證和重設功能支援規則編輯器中的表單/面板/欄位物件。 
+   </td>
+   </tr>
+   <tr>
+    <td>ES10支援 </td>
+    <td>尚未支援ES10。 </td>
+    <td>支援現代JavaScript功能，例如自訂函式中的let和箭頭函式（ES10支援）。 
+   </td>
+   </tr>
+   </tr>
+   <tr>
+   <td>服務輸出屬性</td>
+   <td> 服務輸出屬性受到支援 <b>設定值</b> 規則編輯器的選項。 </td>
+   <td>此 <b>設定值</b> 選項不支援 <b>服務輸出</b> 在規則編輯器中叫用API的屬性。
+   </td>
+   </tr>
+   </tr>
+   </tr>
+  </tbody>
+  <table>
+  </tbody>
 

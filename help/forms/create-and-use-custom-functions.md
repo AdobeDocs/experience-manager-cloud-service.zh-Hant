@@ -6,20 +6,15 @@ contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms, Core Components
 exl-id: 24607dd1-2d65-480b-a831-9071e20c473d
-source-git-commit: c1c170e1cae148c53662cd49850e2a33754fbafc
+source-git-commit: 494e90bd5822495f0619e8ebf55f373a26a3ffe6
 workflow-type: tm+mt
-source-wordcount: '3119'
+source-wordcount: '3521'
 ht-degree: 3%
 
 ---
 
 
-<span class="preview"> 本文包含部分搶鮮版功能的內容。 這些搶鮮版功能只能透過我們的 [發行前通道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). 搶鮮版計畫下的功能包括：
-* 自訂函式中的選用引數支援
-* 自訂函式的快取功能
-* 自訂函式的全域範圍物件和欄位物件支援
-* 支援現代JavaScript功能，例如let和arrow函式（ES10支援）。
-確保 [核心元件已設定為3.0.8版](https://github.com/adobe/aem-core-forms-components) 在自訂功能中使用發行前功能。 </span>
+<span class="preview"> 本文包含 `Override form submission success and error handlers` 作為發行前功能。 搶鮮版功能只能透過我們的 [發行前通道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features).
 
 # 最適化Forms中的自訂函式（核心元件）
 
@@ -31,6 +26,10 @@ ht-degree: 3%
 ## 簡介
 
 AEM Forms支援自訂函式，可讓使用者定義JavaScript函式以實作複雜的商業規則。 這些自訂功能可協助您根據指定需求操控和處理輸入的資料，進而擴充表單的功能。 它們還可以根據預先定義的條件來啟用表單行為的動態變更。
+
+>[!NOTE]
+>
+> 確保 [核心元件](https://github.com/adobe/aem-core-forms-components) 設為最新版本以使用最新功能。
 
 ### 使用自訂函式 {#uses-of-custom-function}
 
@@ -157,7 +156,7 @@ JavaScript註解是用來提供JavaScript程式碼的中繼資料。 其中包�
 宣告為私用的自訂函式不會出現在最適化表單的規則編輯器中的自訂函式清單中。 自訂函式預設為公用。 宣告自訂函式為private的語法為 `@private`.
 
 
-## 建立自訂函式時的准則 {#considerations}
+## 建立自訂函式時的准則
 
 若要在規則編輯器中列出自訂函式，您可以使用下列任一格式：
 
@@ -217,7 +216,7 @@ JavaScript註解是用來提供JavaScript程式碼的中繼資料。 其中包�
 
 如果使用者沒有將任何JavaScript註解新增到自訂函式，則自訂函式不會列在最適化表單的規則編輯器中。
 
-## 建立自訂函式 {#create-custom-function}
+## 建立自訂函數 {#create-custom-function}
 
 建立使用者端程式庫以呼叫規則編輯器中的自訂函式。 如需詳細資訊，請參閱 [使用使用者端資料庫](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html#developing).
 
@@ -240,7 +239,7 @@ JavaScript註解是用來提供JavaScript程式碼的中繼資料。 其中包�
 
 1. 建立一個名為 `js` 的檔案夾。
 1. 導覽至 `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/customclientlibs/js` 檔案夾。
-1. 新增JavaScript檔案，例如 `function.js`. 此檔案包含自訂函式的程式碼。
+1. 新增JavaScript檔案，例如 `function.js`. 檔案包含自訂函式的程式碼。
 1. 儲存 `function.js` 檔案。
 1. 導覽至 `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/customclientlibs/js` 檔案夾。
 1. 新增文字檔案為`js.txt`。該檔案包含：
@@ -280,7 +279,7 @@ JavaScript註解是用來提供JavaScript程式碼的中繼資料。 其中包�
 
 1. 按一下&#x200B;**[!UICONTROL 「完成」]**。
 
-您可在以下位置使用自訂函式： [最適化表單的規則編輯器](/help/forms/rule-editor-core-components.md) 使用 [Javascript註解](##js-annotations).
+您可在以下位置使用自訂函式： [最適化表單的規則編輯器](/help/forms/rule-editor-core-components.md) 使用 [JavaScript附註](##js-annotations).
 
 ## 在最適化表單中使用自訂函式
 
@@ -320,6 +319,43 @@ JavaScript註解是用來提供JavaScript程式碼的中繼資料。 其中包�
 >[!NOTE]
 >
 > 您可參考以下內容 [自訂函式](/help/forms/assets//customfunctions.zip) 資料夾。 使用下載此資料夾並將其安裝在您的AEM執行個體中 [封裝管理員](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager).
+
+
+### 使用自訂函式設定下拉式清單選項
+
+核心元件中的規則編輯器不支援 **設定選項** 屬性來在執行階段設定下拉式清單選項。 不過，您可以使用自訂函式來設定下拉式清單選項。
+
+檢視以下程式碼，瞭解如何使用自訂函式來設定下拉式清單選項：
+
+```javascript
+    /**
+    * @name setEnums
+    * @returns {string[]}
+    **/
+    function setEnums() {
+    return ["0","1","2","3","4","5","6"];   
+    }
+
+    /**
+    * @name setEnumNames
+    * @returns {string[]}
+    **/
+    function setEnumNames() {
+    return ["Sunday","Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    }
+```
+
+在上述程式碼中， `setEnums` 用於設定 `enum` 屬性和 `setEnumNames` 用於設定 `enumNames` 下拉式清單的屬性。
+
+讓我們為「 」建立一個規則 `Next` 按鈕，當使用者按一下 `Next` 按鈕：
+
+![下拉式清單選項](/help/forms/assets/drop-down-list-options.png)
+
+請參考下圖，示範按一下「顯示」按鈕時，下拉式清單的選項設定位置：
+
+![規則編輯器中的下拉式清單選項](/help/forms/assets/drop-down-option-rule-editor.png)
+
+
 
 ### 支援自訂函式中的非同步函式 {#support-of-async-functions}
 
@@ -362,7 +398,7 @@ JavaScript註解是用來提供JavaScript程式碼的中繼資料。 其中包�
 
 ![建立非同步函式的規則](/help/forms/assets/rule-for-async-funct.png)
 
-請參考下方主控台視窗的圖例，以示範當使用者按一下 `Fetch` 按鈕，自訂函式 `callAsyncFunction` 會叫用，進而呼叫非同步函式 `asyncFunction`. Inspect主控台視窗中，檢視按下按鈕時的回應：
+請參考下方主控台視窗的圖例，以示範當使用者按一下 `Fetch` 按鈕，自訂函式 `callAsyncFunction` 會叫用，進而呼叫非同步函式 `asyncFunction`. Inspect主控台視窗中，檢視對按鈕點按的回應：
 
 ![主控台視窗](/help/forms/assets/async-custom-funct-console.png)
 
@@ -406,7 +442,7 @@ In the above code snippet, a custom function named `updateDateTime` takes parame
 
 ![聯絡我們表單](/help/forms/assets/contact-us-form.png)
 
-#### **使用案例**：使用顯示面板 `SetProperty` 規則
++++ **使用案例**：使用顯示面板 `SetProperty` 規則
 
 在自訂函式中新增下列程式碼，如 [create-custom-function](#create-custom-function) 區段，將表單欄位設為 `Required`.
 
@@ -448,7 +484,9 @@ In the above code snippet, a custom function named `updateDateTime` takes parame
 
 ![設定屬性表單預覽](/help/forms/assets/set-property-panel.png)
 
-#### **使用案例**：驗證欄位。
++++
+
++++ **使用案例**：驗證欄位。
 
 在自訂函式中新增下列程式碼，如 [create-custom-function](#create-custom-function) 區段，以驗證欄位。
 
@@ -487,7 +525,9 @@ In the above code snippet, a custom function named `updateDateTime` takes parame
 
 ![電子郵件地址驗證模式](/help/forms/assets/validate-form-preview-form.png)
 
-#### **使用案例**：重設面板
++++
+
++++ **使用案例**：重設面板
 
 在自訂函式中新增下列程式碼，如 [create-custom-function](#create-custom-function) 區段，以重設面板。
 
@@ -519,7 +559,9 @@ In the above code snippet, a custom function named `updateDateTime` takes parame
 
 ![重設表單](/help/forms/assets/custom-function-reset-form.png)
 
-#### **使用案例**：在欄位層級顯示自訂訊息並將欄位標籤為無效的方式
++++
+
++++ **使用案例**：在欄位層級顯示自訂訊息，並將欄位標籤為無效
 
 您可以使用 `markFieldAsInvalid()` 函式將欄位定義為無效，並在欄位層級設定自訂錯誤訊息。 此 `fieldIdentifier` 值可以是 `fieldId`，或 `field qualifiedName`，或 `field dataRef`. 物件的值，命名為 `option` 可以是 `{useId: true}`， `{useQualifiedName: true}`，或 `{useDataRef: true}`.
 用於將欄位標示為無效並設定自訂訊息的語法如下：
@@ -556,12 +598,13 @@ In the above code snippet, a custom function named `updateDateTime` takes parame
 
 ![將欄位標示為無效的預覽表單](/help/forms/assets/custom-function-invalidfield-form.png)
 
-如果使用者在評論文字方塊中輸入超過15個字元，則欄位會通過驗證並提交表單：
+如果使用者在評論文字方塊中輸入超過15個字元，該欄位將會驗證並提交表單：
 
 ![將欄位標示為有效的預覽表單](/help/forms/assets/custom-function-validfield-form.png)
 
++++
 
-#### **使用案例**：將變更後的資料提交至伺服器
++++ **使用案例**：將變更後的資料提交至伺服器
 
 下列程式碼行：
 `globals.functions.submitForm(globals.functions.exportData(), false);` 用於在操作後提交表單資料。
@@ -592,7 +635,7 @@ In the above code snippet, a custom function named `updateDateTime` takes parame
 
 在此範例中，如果使用者離開 `comments` 文字方塊空白， `NA` 在提交表單時提交至伺服器。
 
-現在為以下專案建立規則 `Submit` 提交資料的按鈕：
+現在，為 `Submit` 提交資料的按鈕：
 
 ![提交資料](/help/forms/assets/custom-function-submit-data.png)
 
@@ -604,6 +647,262 @@ In the above code snippet, a custom function named `updateDateTime` takes parame
 
 ![控制檯視窗中的Inspect資料](/help/forms/assets/custom-function-submit-data-console-data.png)
 
++++
+
++++ **使用案例**：覆寫表單提交成功和錯誤處理常式
+
+新增下列程式碼行，如中所述 [create-custom-function](#create-custom-function) 區段，若要自訂表單提交的提交或失敗訊息，並在強制回應方塊中顯示表單提交訊息：
+
+```javascript
+/**
+ * Handles the success response after a form submission.
+ *
+ * @param {scope} globals - This object contains a read-only form instance, target field instance, triggered event, and methods for performing form modifications within custom functions.
+ * @returns {void}
+ */
+function customSubmitSuccessHandler(globals) {
+    var event = globals.event;
+    var submitSuccessResponse = event.payload.body;
+    var form = globals.form;
+
+    if (submitSuccessResponse) {
+        if (submitSuccessResponse.redirectUrl) {
+            window.location.href = encodeURI(submitSuccessResponse.redirectUrl);
+        } else if (submitSuccessResponse.thankYouMessage) {
+            showModal("success", submitSuccessResponse.thankYouMessage);
+        }
+    }
+}
+
+/**
+ * Handles the error response after a form submission.
+ *
+ * @param {string} customSubmitErrorMessage - The custom error message.
+ * @param {scope} globals - This object contains a read-only form instance, target field instance, triggered event, and methods for performing form modifications within custom functions.
+ * @returns {void}
+ */
+function customSubmitErrorHandler(customSubmitErrorMessage, globals) {
+    showModal("error", customSubmitErrorMessage);
+}
+function showModal(type, message) {
+    // Remove any existing modals
+    var existingModal = document.getElementById("modal");
+    if (existingModal) {
+        existingModal.remove();
+    }
+
+    // Create the modal dialog
+    var modal = document.createElement("div");
+    modal.setAttribute("id", "modal");
+    modal.setAttribute("class", "modal");
+
+    // Create the modal content
+    var modalContent = document.createElement("div");
+    modalContent.setAttribute("class", "modal-content");
+
+    // Create the modal header
+    var modalHeader = document.createElement("div");
+    modalHeader.setAttribute("class", "modal-header");
+    modalHeader.innerHTML = "<h2>" + (type === "success" ? "Thank You" : "Error") + "</h2>";
+
+    // Create the modal body
+    var modalBody = document.createElement("div");
+    modalBody.setAttribute("class", "modal-body");
+    modalBody.innerHTML = "<p class='" + type + "-message'>" + message + "</p>";
+
+    // Create the modal footer
+    var modalFooter = document.createElement("div");
+    modalFooter.setAttribute("class", "modal-footer");
+
+    // Create the close button
+    var closeButton = document.createElement("button");
+    closeButton.setAttribute("class", "close-button");
+    closeButton.innerHTML = "Close";
+    closeButton.onclick = function() {
+        modal.remove();
+    };
+
+    // Append the elements to the modal content
+    modalFooter.appendChild(closeButton);
+    modalContent.appendChild(modalHeader);
+    modalContent.appendChild(modalBody);
+    modalContent.appendChild(modalFooter);
+
+    // Append the modal content to the modal
+    modal.appendChild(modalContent);
+
+    // Append the modal to the document body
+    document.body.appendChild(modal);
+}
+```
+
+在此範例中，當使用者使用 `customSubmitSuccessHandler` 和 `customSubmitErrorHandler` 自訂函式，成功和失敗訊息會顯示在強制回應視窗中。 JavaScript函式 `showModal(type, message)` 可用來在熒幕上動態建立及顯示模型對話方塊。
+
+現在，為成功的表單提交建立規則：
+
+![表單提交成功](/help/forms/assets/form-submission-success.png)
+
+請參考下圖以示範，成功提交表單時，成功訊息會顯示於強制回應視窗中：
+
+![表單提交成功訊息](/help/forms/assets/form-submission-success-message.png)
+
+同樣地，讓我們為失敗的表單提交建立規則：
+
+![表單提交失敗](/help/forms/assets/form-submission-fail.png)
+
+請參考下圖以示範，當表單提交失敗時，強制回應視窗中會顯示錯誤訊息：
+
+![表單提交失敗訊息](/help/forms/assets/form-submission-fail-message.png)
+
+若要以預設方式顯示表單提交成功與失敗，請 `Default submit Form Success Handler` 和 `Default submit Form Error Handler` 函式為現成可用。
+
+如果自訂提交處理常式無法在現有AEM專案或表單中如預期般執行，請參閱 [疑難排解](#troubleshooting) 區段。
+
+<!--
+
++++
+
++++ **Use Case**:  Perform actions in a specific instance of the repeatable panel 
+
+Rules created using the visual rule editor on a repeatable panel apply to the last instance of the repeatable panel. To write a rule for a specific instance of the repeatable panel, we can use a custom function.
+
+Let's create a form to collect information about travelers heading to a destination. A traveler panel is added as a repeatable panel, where the user can add details for 5 travelers using the Add button.
+
+Add the following line of code as explained in the [create-custom-function](#create-custom-function) section, to perform actions in a specific instance of the repeatable panel, other than the last one:
+
+```javascript
+
+/**
+* @name hidePanelInRepeatablePanel
+* @param {scope} globals
+*/
+function hidePanelInRepeatablePanel(globals)
+{    
+    var repeatablePanel = globals.form.travelerinfo;
+    // hides a panel inside second instance of repeatable panel
+    globals.functions.setProperty(repeatablePanel[1].traveler, {visible : false});
+}  
+
+```
+ 
+In this example, the `hidePanelInRepeatablePanel` custom function performs action in a specific instance of the repeatable panel. In the above code, `travelerinfo` represents the repeatable panel. The `repeatablePanel[1].traveler, {visible: false}` code hides the panel in the second instance of the repeatable panel. 
+Let us add a button labeled `Hide` to add a rule to hide a specific panel.
+
+![Hide Panel rule](/help/forms/assets/custom-function-hidepanel-rule.png)
+
+Refer to the video below to demonstrate that when the `Hide` is clicked, the panel in the second repeatable instance hides:
+
+
++++
+
++++ **Usecase**: Pre-fill the field with a value when the form loads
+
+Add the following line of code, as explained in the [create-custom-function](#create-custom-function) section, to load the pre-filled value in a field when the form is initialized:
+
+```javascript
+/**
+ * @name importData
+ * @param {scope} globals
+ */
+function importData(globals)
+{
+    globals.functions.importData(Object.fromEntries([['amount',200000]]));
+} 
+```
+
+In the aforementioned code, the `importData` function updates the value in the `amount` textbox field when the form loads.
+
+Let us create a rule for the `Submit` button, where the value in the `amount` textbox field changes to specified value when the form loads:
+
+![Import Data Rule](/help/forms/assets/custom-function-import-data.png)
+
+Refer to the screenshot below, which demonstrates that when the form loads, the value in the amount textbox is pre-filled with a specified value:
+
+![Import Data Rule](/help/forms/assets/cg)
+
++++
+
++++ **Usecase**: Set focus on the specific field
+
+Add the following line of code, as explained in the [create-custom-function](#create-custom-function) section, to set focus on the specified field when the `Submit` button is clicked.:
+
+```javascript
+/**
+ * @name setFocus
+ * @param {object} field
+ * @param {scope} globals
+ */
+function setFocus(field, globals)
+{
+    globals.functions.setFocus(field);
+}
+```
+
+Let us add a rule to the `Submit` button to set focus on the `email` field when it is clicked:
+
+![Set Focus Rule](/help/forms/assets/custom-function-set-focus.png)
+
+Refer to the screenshot below, which demonstrates that when the `Submit` button is clicked, the focus is set on the `email` field:
+
+![Set Focus Rule](/help/forms/assets/custom-function-set-focus-form.png)
+
+>[!NOTE]
+>
+> You can use the optional `$focusOption` parameter, if you want to focus on the next or previous field relative to the `email` field.
+
++++
+
++++ **Usecase**: Add or delete repeatable panel using the `dispatchEvent` property
+
+Add the following line of code, as explained in the [create-custom-function](#create-custom-function) section, to add a panel when the `Add Traveler` button is clicked using the `dispatchEvent` property:
+
+```javascript
+/**
+ 
+ * @name addInstance
+ * @param {scope} globals
+ */
+function addInstance(globals)
+{
+    var repeatablePanel = globals.form.traveler;
+    globals.functions.dispatchEvent(repeatablePanel, 'addInstance');
+} 
+
+```
+
+Let us add a rule to the `Add Traveler` button to add the repeatable panel when it is clicked:
+
+![Add Panel Rule](/help/forms/assets/custom-function-add-panel.png)
+
+Refer to the screenshot below, which demonstrates that when the `Add Traveler` button is clicked, the traveler panel is added using the `dispatchEvent` property:
+
+![Add Panel](/help/forms/assets/customg)
+
+Similarly, add a button labeled `Delete Traveler` to delete a panel. Add the following line of code, as explained in the [create-custom-function](#create-custom-function) section, to delete a panel when the `Delete Traveler` button is clicked using the `dispatchEvent` property:
+
+```javascript
+
+/**
+ 
+ * @name removeInstance
+ * @param {scope} globals
+ */
+function removeInstance(globals)
+{
+    var repeatablePanel = globals.form.traveler;
+    globals.functions.dispatchEvent(repeatablePanel, 'removeInstance');
+} 
+
+```
+Let us add a rule to the `Delete Traveler` button to delete the repeatable panel when it is clicked:
+
+![Delete Panel Rule](/help/forms/assets/custom-function-delete-panel.png)
+
+Refer to the screenshot below, which demonstrates that when the `Delete Traveler` button is clicked, the traveler panel is deleted using the `dispatchEvent` property:
+
+![Delete Panel](/help/forms/assets/customg)
+-->
+
 ## 自訂函式的快取支援
 
 Adaptive Forms會在規則編輯器中擷取自訂函式清單時，實作自訂函式的快取，以增強回應時間。 訊息為 `Fetched following custom functions list from cache` 顯示在 `error.log` 檔案。
@@ -612,15 +911,23 @@ Adaptive Forms會在規則編輯器中擷取自訂函式清單時，實作自訂
 
 如果修改自訂函式，快取會失效，並加以剖析。
 
-## 疑難排解
+## 疑難排解 {#troubleshooting}
 
-如果包含自訂函式程式碼的JavaScript檔案發生錯誤，則自訂函式不會列在調適型表單的規則編輯器中。 若要檢查自訂函式清單，您可以導覽至 `error.log` 錯誤檔案。 發生錯誤時，自訂函式清單會顯示為空白：
+* 如果自訂提交處理常式無法在現有AEM專案或表單中如預期般執行，請執行下列步驟：
+   * 確保 [核心元件版本更新至3.0.18版及更新版本](https://github.com/adobe/aem-core-forms-components). 不過，對於現有的AEM專案和表單，還有其他要遵循的步驟：
 
-![錯誤記錄檔](/help/forms/assets/custom-function-list-error-file.png)
+   * 對於AEM專案，使用者應取代所有例項 `submitForm('custom:submitSuccess', 'custom:submitError')` 替換為 `submitForm()` 和透過Cloud Manager管道部署專案。
 
-如果沒有錯誤，則會擷取自訂函式並出現在 `error.log` 檔案。 訊息為 `Fetched following custom functions list` 顯示在 `error.log` 檔案：
+   * 針對現有表單，如果自訂提交處理常式無法正常運作，使用者需要開啟並儲存 `submitForm` 上的規則 **提交** 按鈕來編輯規則。 此動作會取代中的現有規則 `submitForm('custom:submitSuccess', 'custom:submitError')` 替換為 `submitForm()` 在表單中。
 
-![具有適當自訂函式的錯誤記錄檔](/help/forms/assets/custom-function-list-fetched-in-error.png)
+
+* 如果包含自訂函式程式碼的JavaScript檔案發生錯誤，則自訂函式不會列在調適型表單的規則編輯器中。 若要檢查自訂函式清單，您可以導覽至 `error.log` 錯誤檔案。 發生錯誤時，自訂函式清單會顯示為空白：
+
+  ![錯誤記錄檔](/help/forms/assets/custom-function-list-error-file.png)
+
+  如果沒有錯誤，則會擷取自訂函式並出現在 `error.log` 檔案。 訊息為 `Fetched following custom functions list` 顯示在 `error.log` 檔案：
+
+  ![具有適當自訂函式的錯誤記錄檔](/help/forms/assets/custom-function-list-fetched-in-error.png)
 
 ## 考量事項
 
