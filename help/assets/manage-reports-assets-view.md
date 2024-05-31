@@ -2,10 +2,10 @@
 title: 在資產檢視中管理報告
 description: 存取資產檢視之報告區段的資料，評估產品和功能使用情況，並得出關鍵成功量度的見解。
 exl-id: 26d0289e-445a-4b8e-a5a1-b02beedbc3f1
-source-git-commit: 0eea9b83d437c7e91daae08c33d94a83ba1db3f9
+source-git-commit: 7e8d4487ec545b5625d6401513df00d5c6240ee2
 workflow-type: tm+mt
-source-wordcount: '884'
-ht-degree: 82%
+source-wordcount: '817'
+ht-degree: 89%
 
 ---
 
@@ -58,11 +58,6 @@ In the **[!UICONTROL Reports]** screen, various components are shown in the tabu
    ![Insights](assets/insights1.png)
    ![Insights](assets/insights2.png)
    -->
-* **資產計數（依大小）：** 將您的「資產檢視」環境中的資產總數細分為不同的大小範圍，醒目顯示每個大小範圍內的資產計數和百分比，並以環形圖表示。
-  ![insights-assets-count-by-size](/help/assets/assets/insights-assets-count-by-size.svg)
-* **依資產型別的資產計數：** 區段「資產檢視」環境中的資產總計數，根據資產的檔案型別突出顯示資產的計數和百分比，由環形圖表示。
-  ![insights-assets-count-by-size](/help/assets/assets/insights-assest-count-by-asset-type1.svg)
-
 
 ## 建立下載報告 {#create-download-report}
 
