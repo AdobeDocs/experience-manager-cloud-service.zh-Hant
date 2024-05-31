@@ -2,10 +2,10 @@
 title: 過時和移除的功能
 description: 特定於  [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 中已過時和已移除功能的版本注意事項。
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
-source-git-commit: b675ff42eeaeb124e8789480a51684d359429d15
-workflow-type: ht
-source-wordcount: '2146'
-ht-degree: 100%
+source-git-commit: b071cf1d88e702dfdf38c18dc94488e94fc4bc21
+workflow-type: tm+mt
+source-wordcount: '2193'
+ht-degree: 98%
 
 ---
 
@@ -59,6 +59,8 @@ Adobe 持續評估產品功能，以更新或替代的方式來改善或取代�
 | [!DNL Foundation] | 支援 JST 指令碼範例 (OSGi 套件組合 org.apache.sling.scripting.jst) | 不適用 | 已移除 |
 | [!DNL Foundation] | 支援 Apache Felix Http Whiteboard | OSGi Http Whiteboard | 2022 年 3 月 |
 | [!DNL Foundation] | 支援 com.adobe.granite.oauth.server | Adobe IMS 整合  | 2023 年 3 月 |
+| [!DNL Foundation] | 支援org.apache.sling.serviceusermapping功能至 [取得服務使用者id](https://sling.apache.org/apidocs/sling12/org/apache/sling/serviceusermapping/ServiceUserMapper.html#getServiceUserID-org.osgi.framework.Bundle-java.lang.String-) | 不適用 | 8/30/24 |
+
 
 ## AEM API {#aem-apis}
 
@@ -268,6 +270,17 @@ Adobe 持續評估產品功能，以更新或替代的方式來改善或取代�
     <td>5/15/2023</td>
     <td>6/15/2023</td>
   </tr>
+  <tr>
+    <td>org.slf4j.event	</td>
+    <td>AEMas a Cloud Service不支援此內部slf4j API</td>
+    <td>4/11/2022</td>
+    <td>8/30/2024</td>
+  </tr>
+    <td>org.apache.sling.repoinit.jcr<br>org.apache.sling.repoinit.parser.operations</td>
+    <td>AEM as a Cloud Service 不支持使用此 API。</td>
+    <td>5/17/2024</td>
+    <td>6/30/2024</td>
+  </tr>  
 </tbody>
 </table>
 </details>
