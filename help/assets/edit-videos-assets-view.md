@@ -3,7 +3,7 @@ title: 編輯影片
 description: 編輯視訊，使用 [!DNL Adobe Express] 功能選項，並將更新的視訊另存新版。
 role: User
 exl-id: 42b25935-e2ff-444f-97c8-b4ed56f3ef9e
-source-git-commit: 952a4e03b6d636e37366fcab2dbb9c2309795995
+source-git-commit: ff201051a70862e7597cf36f70a0e7225178f1fa
 workflow-type: tm+mt
 source-wordcount: '779'
 ht-degree: 18%
@@ -83,7 +83,7 @@ DAM中的最終視訊內容通常需要調整大小，才能發佈到特定管�
 
 * 僅支援MP4格式的視訊進行編輯。
 
-* 支援的最大來源檔案大小為1GB。
+* 支援的最大來源檔案大小為200 MB。
 
 * 支援的視訊在任何一側都大於46畫素且小於3840畫素。
 
