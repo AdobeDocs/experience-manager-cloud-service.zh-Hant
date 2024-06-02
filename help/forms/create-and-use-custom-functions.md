@@ -6,7 +6,7 @@ contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms, Core Components
 exl-id: 24607dd1-2d65-480b-a831-9071e20c473d
-source-git-commit: 494e90bd5822495f0619e8ebf55f373a26a3ffe6
+source-git-commit: b6061690fa278ccb883656cefd065d06ab924499
 workflow-type: tm+mt
 source-wordcount: '3521'
 ht-degree: 3%
@@ -442,7 +442,7 @@ In the above code snippet, a custom function named `updateDateTime` takes parame
 
 ![聯絡我們表單](/help/forms/assets/contact-us-form.png)
 
-+++ **使用案例**：使用顯示面板 `SetProperty` 規則
++++ 使用案例：使用顯示面板 `SetProperty` 規則
 
 在自訂函式中新增下列程式碼，如 [create-custom-function](#create-custom-function) 區段，將表單欄位設為 `Required`.
 
@@ -484,9 +484,8 @@ In the above code snippet, a custom function named `updateDateTime` takes parame
 
 ![設定屬性表單預覽](/help/forms/assets/set-property-panel.png)
 
-+++
 
-+++ **使用案例**：驗證欄位。
+#### 使用案例：驗證欄位。
 
 在自訂函式中新增下列程式碼，如 [create-custom-function](#create-custom-function) 區段，以驗證欄位。
 
@@ -525,9 +524,9 @@ In the above code snippet, a custom function named `updateDateTime` takes parame
 
 ![電子郵件地址驗證模式](/help/forms/assets/validate-form-preview-form.png)
 
-+++
 
-+++ **使用案例**：重設面板
+
+#### 使用案例：重設面板
 
 在自訂函式中新增下列程式碼，如 [create-custom-function](#create-custom-function) 區段，以重設面板。
 
@@ -559,9 +558,9 @@ In the above code snippet, a custom function named `updateDateTime` takes parame
 
 ![重設表單](/help/forms/assets/custom-function-reset-form.png)
 
-+++
 
-+++ **使用案例**：在欄位層級顯示自訂訊息，並將欄位標籤為無效
+
+#### 使用案例：在欄位層級顯示自訂訊息並將欄位標籤為無效的方式
 
 您可以使用 `markFieldAsInvalid()` 函式將欄位定義為無效，並在欄位層級設定自訂錯誤訊息。 此 `fieldIdentifier` 值可以是 `fieldId`，或 `field qualifiedName`，或 `field dataRef`. 物件的值，命名為 `option` 可以是 `{useId: true}`， `{useQualifiedName: true}`，或 `{useDataRef: true}`.
 用於將欄位標示為無效並設定自訂訊息的語法如下：
@@ -602,9 +601,9 @@ In the above code snippet, a custom function named `updateDateTime` takes parame
 
 ![將欄位標示為有效的預覽表單](/help/forms/assets/custom-function-validfield-form.png)
 
-+++
 
-+++ **使用案例**：將變更後的資料提交至伺服器
+
+#### 使用案例：將變更後的資料提交至伺服器
 
 下列程式碼行：
 `globals.functions.submitForm(globals.functions.exportData(), false);` 用於在操作後提交表單資料。
@@ -647,9 +646,9 @@ In the above code snippet, a custom function named `updateDateTime` takes parame
 
 ![控制檯視窗中的Inspect資料](/help/forms/assets/custom-function-submit-data-console-data.png)
 
-+++
 
-+++ **使用案例**：覆寫表單提交成功和錯誤處理常式
+
+#### 使用案例：覆寫表單提交成功和錯誤處理常式
 
 新增下列程式碼行，如中所述 [create-custom-function](#create-custom-function) 區段，若要自訂表單提交的提交或失敗訊息，並在強制回應方塊中顯示表單提交訊息：
 
@@ -760,9 +759,8 @@ function showModal(type, message) {
 
 <!--
 
-+++
 
-+++ **Use Case**:  Perform actions in a specific instance of the repeatable panel 
+#### Use Case:  Perform actions in a specific instance of the repeatable panel 
 
 Rules created using the visual rule editor on a repeatable panel apply to the last instance of the repeatable panel. To write a rule for a specific instance of the repeatable panel, we can use a custom function.
 
@@ -793,9 +791,9 @@ Let us add a button labeled `Hide` to add a rule to hide a specific panel.
 Refer to the video below to demonstrate that when the `Hide` is clicked, the panel in the second repeatable instance hides:
 
 
-+++
 
-+++ **Usecase**: Pre-fill the field with a value when the form loads
+
+#### **Usecase**: Pre-fill the field with a value when the form loads
 
 Add the following line of code, as explained in the [create-custom-function](#create-custom-function) section, to load the pre-filled value in a field when the form is initialized:
 
@@ -820,9 +818,9 @@ Refer to the screenshot below, which demonstrates that when the form loads, the 
 
 ![Import Data Rule](/help/forms/assets/cg)
 
-+++
 
-+++ **Usecase**: Set focus on the specific field
+
+#### **Usecase**: Set focus on the specific field
 
 Add the following line of code, as explained in the [create-custom-function](#create-custom-function) section, to set focus on the specified field when the `Submit` button is clicked.:
 
