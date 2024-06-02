@@ -7,9 +7,9 @@ content-type: reference
 feature: Adaptive Forms, Core Components
 mini-toc-levels: 4
 exl-id: 24607dd1-2d65-480b-a831-9071e20c473d
-source-git-commit: 4cd7924e99809146e111f6b3309db0a8292e61b1
+source-git-commit: 6f50bdf2a826654e0d5b35de5bd50e66981fb56a
 workflow-type: tm+mt
-source-wordcount: '3510'
+source-wordcount: '3513'
 ht-degree: 3%
 
 ---
@@ -649,7 +649,7 @@ In the above code snippet, a custom function named `updateDateTime` takes parame
 
 
 
-#### 覆寫表單提交成功和錯誤訊息
+#### 覆寫最適化表單的提交成功和錯誤訊息
 
 新增下列程式碼行，如中所述 [create-custom-function](#create-custom-function) 區段，若要自訂表單提交的提交或失敗訊息，並在強制回應方塊中顯示表單提交訊息：
 
