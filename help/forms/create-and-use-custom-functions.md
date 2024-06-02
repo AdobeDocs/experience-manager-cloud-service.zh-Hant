@@ -7,9 +7,9 @@ content-type: reference
 feature: Adaptive Forms, Core Components
 mini-toc-levels: 4
 exl-id: 24607dd1-2d65-480b-a831-9071e20c473d
-source-git-commit: 8f33174ac6b699af34ca8af14387eaca5cae969c
+source-git-commit: 4cd7924e99809146e111f6b3309db0a8292e61b1
 workflow-type: tm+mt
-source-wordcount: '3522'
+source-wordcount: '3510'
 ht-degree: 3%
 
 ---
@@ -443,7 +443,7 @@ In the above code snippet, a custom function named `updateDateTime` takes parame
 
 ![聯絡我們表單](/help/forms/assets/contact-us-form.png)
 
-#### 使用案例：使用SetProperty規則顯示面板
+#### 使用SetProperty規則顯示面板
 
 在自訂函式中新增下列程式碼，如 [create-custom-function](#create-custom-function) 區段，將表單欄位設為 `Required`.
 
@@ -486,7 +486,7 @@ In the above code snippet, a custom function named `updateDateTime` takes parame
 ![設定屬性表單預覽](/help/forms/assets/set-property-panel.png)
 
 
-#### 使用案例：驗證欄位。
+#### 驗證欄位。
 
 在自訂函式中新增下列程式碼，如 [create-custom-function](#create-custom-function) 區段，以驗證欄位。
 
@@ -527,7 +527,7 @@ In the above code snippet, a custom function named `updateDateTime` takes parame
 
 
 
-#### 使用案例：重設面板
+#### 重設面板
 
 在自訂函式中新增下列程式碼，如 [create-custom-function](#create-custom-function) 區段，以重設面板。
 
@@ -561,7 +561,7 @@ In the above code snippet, a custom function named `updateDateTime` takes parame
 
 
 
-#### 使用案例：在欄位層級顯示自訂訊息並將欄位標籤為無效的方式
+#### 在欄位層級顯示自訂訊息並將欄位標籤為無效的方式
 
 您可以使用 `markFieldAsInvalid()` 函式將欄位定義為無效，並在欄位層級設定自訂錯誤訊息。 此 `fieldIdentifier` 值可以是 `fieldId`，或 `field qualifiedName`，或 `field dataRef`. 物件的值，命名為 `option` 可以是 `{useId: true}`， `{useQualifiedName: true}`，或 `{useDataRef: true}`.
 用於將欄位標示為無效並設定自訂訊息的語法如下：
@@ -604,7 +604,7 @@ In the above code snippet, a custom function named `updateDateTime` takes parame
 
 
 
-#### 使用案例：將變更後的資料提交至伺服器
+#### 在提交之前變更擷取的資料
 
 下列程式碼行：
 `globals.functions.submitForm(globals.functions.exportData(), false);` 用於在操作後提交表單資料。
@@ -649,7 +649,7 @@ In the above code snippet, a custom function named `updateDateTime` takes parame
 
 
 
-#### 使用案例：覆寫表單提交成功和錯誤處理常式
+#### 覆寫表單提交成功和錯誤訊息
 
 新增下列程式碼行，如中所述 [create-custom-function](#create-custom-function) 區段，若要自訂表單提交的提交或失敗訊息，並在強制回應方塊中顯示表單提交訊息：
 
