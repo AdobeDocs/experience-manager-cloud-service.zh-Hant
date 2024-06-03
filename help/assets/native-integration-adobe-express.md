@@ -2,10 +2,10 @@
 title: AEM Assets與Adobe Express的原生整合
 description: AEM Assets與Adobe Express的原生整合可讓您從Adobe Express使用者介面直接存取AEM Assets中儲存的資產。
 exl-id: d43e4451-da2a-444d-9aa4-4282130ee44f
-source-git-commit: 69d890eaae30468db89b9aff975a2a421f53fcff
+source-git-commit: 9044d5cefe7064a015c18c988e29b8c2e8088bae
 workflow-type: tm+mt
-source-wordcount: '597'
-ht-degree: 22%
+source-wordcount: '598'
+ht-degree: 21%
 
 ---
 
@@ -65,7 +65,7 @@ AEM Assets 可與 Adobe Express 自然整合，讓您從 Adobe Express 使用者
 
 6. 同樣地，定義 **[!UICONTROL 關鍵字]** 和 **[!UICONTROL 頻道]** 欄位。
 
-7. 按一下「**[!UICONTROL 上傳]**」，將資產上傳到 AEM Assets。
+7. 按一下 **[!UICONTROL 上傳]** 將資產上傳至AEM Assets。
 
 
 
