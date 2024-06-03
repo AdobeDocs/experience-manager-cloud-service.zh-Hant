@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的運作方式以及該軟體可以為您做哪些事。
 breadcrumb-title: 使用手冊
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 494e90bd5822495f0619e8ebf55f373a26a3ffe6
+source-git-commit: 8123d5c9e3343361baab651d2c1eb72779b952ab
 workflow-type: tm+mt
-source-wordcount: '4997'
+source-wordcount: '5001'
 ht-degree: 99%
 
 ---
@@ -741,6 +741,7 @@ ht-degree: 99%
       + [安裝和設定](/help/forms/troubleshooting-installation-and-configuration.md)
       + [Dispatcher 和 CDN 快取](/help/forms/troubleshooting-caching-performance.md)
       + [重新啟動 AEM SDK](/help/forms/restart-aem-sdk.md)
+      + [解決Forms建立失敗的問題](/help/forms/form-creation-failing.md)
 + Screens {#screens-as-cloud-service}
    + Screens as a Cloud Service 概觀 {#overview}
       + [簡介](/help/screens-cloud/introduction/introduction.md)
