@@ -2,7 +2,7 @@
 title: AEM Assets與Adobe Express的原生整合
 description: AEM Assets與Adobe Express的原生整合可讓您從Adobe Express使用者介面直接存取AEM Assets中儲存的資產。
 exl-id: d43e4451-da2a-444d-9aa4-4282130ee44f
-source-git-commit: 9044d5cefe7064a015c18c988e29b8c2e8088bae
+source-git-commit: c6cde0a3f5a1513f8158c654167ec0332e4c42a7
 workflow-type: tm+mt
 source-wordcount: '598'
 ht-degree: 21%
@@ -58,7 +58,7 @@ AEM Assets 可與 Adobe Express 自然整合，讓您從 Adobe Express 使用者
 
 4. 按一下底下的文字區域 **目的地資料夾** 以選取位置並儲存資產。
 
-   ![將資產儲存在 AEM 中](/help/assets/assets/page-selection-and-destination-folder.png)
+   ![將資產儲存在 AEM 中](/help/assets/assets/page-selection-and-destination-folder.svg)
 
 5. 可選：您可以使用為上傳新增行銷活動中繼資料 **專案或行銷活動名稱** 欄位。 您可以使用現有的名稱或建立新名稱。 您可以為上傳定義多個專案或行銷活動名稱。 若要註冊名稱，只需輸入名稱並按Enter即可。
 作為最佳實務，Adobe建議您在其餘欄位中指定值，並為您上傳的資產建立增強的搜尋體驗。
@@ -82,5 +82,5 @@ c)不支援具有透明背景（Alpha色版）的視訊。
 
 3. 針對MP4視訊匯出：
 
-   a)支援的檔案大小上限為200 MB。 如果超過此限制，則會出現警告訊息，並提供暫時替代建議，如下圖所示
-   ![含因應措施的警報](/help/assets/assets/alert-with-workaround.png).
+   a)支援的檔案大小上限為200 MB。 如果超過此限制，則會出現警告訊息，並提供暫時替代建議，如下圖所示。
+   ![含因應措施的警報](/help/assets/assets/alert-with-workaround.png)
