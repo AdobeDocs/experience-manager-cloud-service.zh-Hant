@@ -3,14 +3,14 @@ title: 如何疑難排解表單建立失敗？
 description: 疑難排解AEM Formsas a Cloud Service環境中表單建立的失敗。
 feature: Adaptive Forms, Troubleshooting
 role: User
-source-git-commit: 5e7cd7015d68cc634fcf6a99dd552289abbaedcf
+source-git-commit: 23491130b44147753c5b98f316be5a9e5937afea
 workflow-type: tm+mt
-source-wordcount: '180'
-ht-degree: 1%
+source-wordcount: '183'
+ht-degree: 0%
 
 ---
 
-# 問題 {#form-creation-fails}
+# 發佈表單時出現問題{#form-creation-fails}
 
 使用者更新至AEM Formsas a Cloud Service版本後 `2024.5.16461`：
 
