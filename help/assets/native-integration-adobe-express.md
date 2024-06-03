@@ -2,10 +2,10 @@
 title: AEM Assets與Adobe Express的原生整合
 description: AEM Assets與Adobe Express的原生整合可讓您從Adobe Express使用者介面直接存取AEM Assets中儲存的資產。
 exl-id: d43e4451-da2a-444d-9aa4-4282130ee44f
-source-git-commit: c6cde0a3f5a1513f8158c654167ec0332e4c42a7
+source-git-commit: 4e33782dd8db0c1185b9a7733e7bcccfbcf3c3ba
 workflow-type: tm+mt
-source-wordcount: '598'
-ht-degree: 21%
+source-wordcount: '612'
+ht-degree: 17%
 
 ---
 
@@ -43,32 +43,25 @@ AEM Assets 可與 Adobe Express 自然整合，讓您從 Adobe Express 使用者
 
 ## 將 Adobe Express 專案儲存在 AEM Assets 中 {#save-express-projects-in-assets}
 
-將適當的修改加入 Express 畫布後，您可以將其儲存在 AEM Assets 存放庫中。
+在Express畫布中加入適當的修改後，您可以將其儲存至AEM Assets存放庫。
 
 1. 按一下 **[!UICONTROL 共用]** 以開啟 **[!UICONTROL 共用]** 對話方塊。
 
    ![將資產儲存在 AEM 中](assets/adobe-express-share.png)
 
-2. 從右窗格的「儲存」區段中選取， **AEM Assets**. Adobe Express會顯示上傳對話方塊。
-3. 指定資產的名稱和格式。您可以以PNG、JPEG、PDF、MP4、MP4+PNG或MP4+JPEG格式儲存畫布內容。 格式會根據資產自動調整。
-
-   >[!NOTE]
-   >
-   >選取「目前頁面」會將檔案儲存在您的目的地資料夾中。 選取「所有頁面」會在目的地中為所有非PDF檔案建立一個新資料夾，並將它們儲存在那裡，而PDF檔案會儲存為目的地資料夾中的單一檔案。
-
-4. 按一下底下的文字區域 **目的地資料夾** 以選取位置並儲存資產。
+2. 從右窗格的「儲存」區段中，選取 **AEM Assets**. Adobe Express會顯示上傳對話方塊。
+3. 選取 **目前頁面** 或 **所有頁面** 儲存選項。 選取 **目前頁面** 將檔案儲存在您的目的地資料夾中，但是，選取 **所有頁面** 會在目的地中為所有非PDF檔案建立新資料夾，並將它們儲存為個別檔案，而PDF檔案會儲存為目的地資料夾中的單一檔案。
+4. 指定資產的名稱和格式。您可以以PNG、JPEG、PDF、MP4、MP4+PNG或MP4+JPEG格式儲存畫布內容。 格式會根據資產自動調整。
+5. 按一下下方的資料夾圖示 **目的地資料夾** 以選取位置並儲存資產。
 
    ![將資產儲存在 AEM 中](/help/assets/assets/page-selection-and-destination-folder.svg)
 
-5. 可選：您可以使用為上傳新增行銷活動中繼資料 **專案或行銷活動名稱** 欄位。 您可以使用現有的名稱或建立新名稱。 您可以為上傳定義多個專案或行銷活動名稱。 若要註冊名稱，只需輸入名稱並按Enter即可。
-作為最佳實務，Adobe建議您在其餘欄位中指定值，並為您上傳的資產建立增強的搜尋體驗。
+6. 可選：您可以使用為上傳新增行銷活動中繼資料 **專案或行銷活動名稱** 欄位。 您可以使用現有的名稱或建立新名稱。 您可以為上傳定義多個專案或行銷活動名稱。 若要註冊名稱，只需輸入名稱並按Enter即可。
+Adobe建議的最佳作法是在其餘欄位中指定值，並為您上傳的資產建立增強的搜尋體驗。
 
-6. 同樣地，定義 **[!UICONTROL 關鍵字]** 和 **[!UICONTROL 頻道]** 欄位。
+7. 同樣地，定義 **[!UICONTROL 關鍵字]** 和 **[!UICONTROL 頻道]** 欄位。
 
-7. 按一下 **[!UICONTROL 上傳]** 將資產上傳至AEM Assets。
-
-
-
+8. 按一下 **[!UICONTROL 上傳]** 將資產上傳至AEM Assets。
 
 ## 限制 {#limitations}
 
@@ -76,11 +69,13 @@ AEM Assets 可與 Adobe Express 自然整合，讓您從 Adobe Express 使用者
 
 2. 針對MP4視訊匯入：
 
-   a)支援的檔案大小上限為200 MB。 如果超過此限制，會出現警告訊息。
-b)支援的最大解析度是3840 X 3840畫素。
-c)不支援具有透明背景（Alpha色版）的視訊。
+   1. 支援的檔案大小上限為200 MB。 如果超過此限制，便會顯示警告訊息。
+   2. 支援的最大解析度是3840 X 3840畫素。
+   3. 不支援具有透明背景（Alpha色版）的視訊。
 
 3. 針對MP4視訊匯出：
 
-   a)支援的檔案大小上限為200 MB。 如果超過此限制，則會出現警告訊息，並提供暫時替代建議，如下圖所示。
-   ![含因應措施的警報](/help/assets/assets/alert-with-workaround.png)
+   1. 支援的檔案大小上限為200 MB。 如果超過此限制，警報會建議將視訊縮減至200 MB以下，或在下載視訊後手動上傳至AEM Assets目的地資料夾。
+
+
+
