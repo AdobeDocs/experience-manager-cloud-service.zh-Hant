@@ -3,10 +3,10 @@ title: 瞭解如何搜尋和探索中的資產 [!DNL Assets view]？
 description: 瞭解如何在AEM Assets檢視中搜尋和探索資產。 強大的搜尋功能可讓您快速探索合適的資產，協助您改善內容速度。
 role: User
 exl-id: abfe6a91-1699-436f-8bf4-0d0bf2369f46
-source-git-commit: e706ee7228aeb08c99567f607a3435d9f687ef34
+source-git-commit: 4313f2bdfe78457204e26069f3af4bda3f5902e7
 workflow-type: tm+mt
-source-wordcount: '1852'
-ht-degree: 91%
+source-wordcount: '1908'
+ht-degree: 92%
 
 ---
 
@@ -275,7 +275,7 @@ Experience Manager Assets可讓您為組織選取預設登陸頁面。 使用「
 
 * 修改日期
 
-* 到期日
+* 到期日期
 
 * 資產狀態：已核准、已拒絕或全部
 
@@ -311,15 +311,13 @@ Experience Manager Assets可讓您為組織選取預設登陸頁面。 使用「
 
 >[!VIDEO](https://video.tv.adobe.com/v/3428407)
 
-<!--
-### Disable Contextual Search {#disable-contextual-search}
+### 停用內容搜尋 {#disable-contextual-search}
 
-Administrators also have the option to disable Contextual Search for users in your organization. To do so, execute the following steps:
+管理員也可以選擇停用組織中使用者的內容搜尋。若要如此做，請執行以下步驟：
 
-1. Navigate to **[!UICONTROL Settings]** > **[!UICONTROL General Settings]**.
+1. 瀏覽至「**[!UICONTROL 設定]**」>「**[!UICONTROL 一般設定]**」。
 
-1. In the [!UICONTROL Contextual Search] section, turn off the **[!UICONTROL Enable Contextual Search for your organization]** toggle to disable the Contextual Search feature for all users in your organization.  
--->
+1. 在「[!UICONTROL 內容搜尋]」區段中，關閉「**[!UICONTROL 為您的組織啟用內容搜尋]**」切換開關，以停用您組織中所有使用者的內容搜尋功能。
 
 ### 內容搜尋意見回饋 {#contextual-search-feedback}
 
