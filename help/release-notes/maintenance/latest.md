@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的目前維護版本發行說明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的目前維護版本發行說明。'
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: 558babc0124a8ee8c1337b91c5ef016ed238c935
+source-git-commit: 624ba716cb2ec2a45b0ed70516d0b2ad1db94912
 workflow-type: tm+mt
-source-wordcount: '337'
-ht-degree: 46%
+source-wordcount: '353'
+ht-degree: 44%
 
 ---
 
@@ -31,11 +31,13 @@ ht-degree: 46%
 
 ### 已修正的問題 {#fixed-issues-16544}
 
-* DXML-17171： AEM Guides：超過15KB之主題的複製和貼上作業失敗，出現非預期的錯誤。
-* DXML-17088： AEM Guides：將檔案狀態從 **檔案屬性** 面板無法正常運作，且變更為 *草稿* 州別。
-* DXML-16931： AEM Guides：建立版本後，主題中的連結影像無法顯示在基準線中。
-* DXML-16896： AEM Guides：可重複使用的內容面板在 **使用者偏好設定** 設定為檢視檔案 **檔案名稱**.
 * GRANITE-51375：如果未指定中間路徑，idp-sync會擲回NPE。
+* GUIDES-17171：超過15KB之主題的複製和貼上作業失敗，出現非預期的錯誤。
+* GUIDES-17088：變更檔案狀態的功能 **檔案屬性** 面板無法正常運作，且變更為 *草稿* 州別。
+* GUIDES-16931：建立版本後，主題中的連結影像無法顯示在基準線中。
+* GUIDES-16896：可重複使用的內容面板在 **使用者偏好設定** 設定為檢視檔案 **檔案名稱**.
+
+如需Experience Manager指南新功能和增強功能以及已修正問題的詳細資訊，請檢視 [Experience Manager指南發行藍圖](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
 ### 已知問題 {#known-issues-16544}
 
