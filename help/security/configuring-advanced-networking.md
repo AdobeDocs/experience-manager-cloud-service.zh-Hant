@@ -396,7 +396,7 @@ public JSONObject getJsonObject(String relativePath, String queryString) throws 
 
 ### 偵錯考量 {#debugging-considerations}
 
-若要驗證流量確實在預期的專用 IP 位址上傳出，請檢查目標服務中的記錄 (如果可用)。否則，呼叫偵錯服務可能會有幫助，例如 [https://ifconfig.me/ip](https://ifconfig.me/ip)，會傳回呼叫的IP位址。
+若要驗證流量確實在預期的專用 IP 位址上傳出，請檢查目標服務中的記錄 (如果可用)。否則，呼叫偵錯服務可能會有幫助，例如 [https://ifconfig.me/ip](https://ifconfig.me/ip) 會傳回呼叫的 IP 位址。
 
 ## 虛擬私人網路 (VPN) {#vpn}
 
@@ -441,7 +441,7 @@ VPN 允許從製作、發佈或預覽執行個體連線到內部部署基礎結�
 
 1. 在「**新增連線**」對話框中，定義您的 VPN 連線，然後按一下「**儲存**」。
 
-   * **連線名稱** - 這是您的 VPN 連線的說明性名稱；您在&#x200B;&#x200B;上一個步驟中提供了名稱，且您可以在此處更新。
+   * **連線名稱** - 這是您的 VPN 連線的說明性名稱；您在上一個步驟中提供了名稱，且您可以在此處更新。
    * **位址** - 這是 VPN 裝置的 IP 位址。
    * **位址空間** - 這些是透過 VPN 進行路由的 IP 位址範圍。
       * 輸入一個範圍後，按下`Enter`再新增另一個範圍。
