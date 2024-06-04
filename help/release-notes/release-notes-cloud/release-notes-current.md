@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 最新發行說明�
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 最新發行說明。'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 5247a06f15a3edd34a419f9d64aa0590b43c1612
+source-git-commit: fae92c9a41d866fd89ffb6fa10191fae4033037c
 workflow-type: tm+mt
-source-wordcount: '1763'
-ht-degree: 23%
+source-wordcount: '1865'
+ht-degree: 21%
 
 ---
 
@@ -218,7 +218,12 @@ Real Use Monitoring服務（使用者端集合）可更精確地反映互動情�
 
 ## [!DNL Experience Manager] Guides {#guides}
 
-您可以找到最新版Adobe Experience Manager Guides完整的新功能與增強功能清單 [此處](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2404-release/whats-new-2024-04-0).
+* **發佈主題或其元素至體驗片段**
+現在，Experience Manager指南可讓您將主題或其元素發佈到體驗片段。 體驗片段是整合了內容和配置的模組化內容單位。  體驗片段十分實用，可協助您建立一致且吸引人的體驗。
+* **能夠將主題資產中繼資料傳遞至原生PDF輸出**
+您可以在產生原生PDF輸出時新增主題資產中繼資料。 此功能可協助您將不同主題（例如主題標題和作者）的特定中繼資料新增至主題頁首和頁尾。
+
+如需新功能和增強功能以及版本中修正問題的詳細資訊，請檢視 [Experience Manager指南發行藍圖](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
 ## Cloud Manager {#cloud-manager}
 
