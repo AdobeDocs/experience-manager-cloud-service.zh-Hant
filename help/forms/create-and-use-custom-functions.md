@@ -5,12 +5,11 @@ keywords: 新增自訂函式、使用自訂函式、建立自訂函式，以及�
 contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms, Core Components
-mini-toc-levels: 4
 exl-id: 24607dd1-2d65-480b-a831-9071e20c473d
-source-git-commit: 6f50bdf2a826654e0d5b35de5bd50e66981fb56a
+source-git-commit: d42728bb3eb81c032723db8467957d2e01c5cbed
 workflow-type: tm+mt
-source-wordcount: '3513'
-ht-degree: 3%
+source-wordcount: '4351'
+ht-degree: 1%
 
 ---
 
@@ -98,7 +97,7 @@ JavaScript註解是用來提供JavaScript程式碼的中繼資料。 其中包�
 在上一行程式碼中， `Input1` 是不含任何預設值的選用引數。 以預設值宣告選用引數：
 `@param {array} [input1=<value>]`
 `input1` 是陣列型別的選用引數，其預設值設定為 `value`.
-請確定引數型別括在大括弧中 {} 且引數名稱會括在方括弧中 [].
+請確定引數型別括在大括弧中 {} 且引數名稱會括在方括弧中。
 
 請考慮下列程式碼片段，其中input2定義為選用引數：
 
@@ -225,33 +224,124 @@ JavaScript註解是用來提供JavaScript程式碼的中繼資料。 其中包�
 1. [建立使用者端資源庫](#create-client-library)
 1. [將使用者端程式庫新增至最適化表單](#use-custom-function)
 
+
+### 建立自訂函式的先決條件
+
+開始將自訂函式新增至最適化Forms之前，請確定您具備下列條件：
+
+**軟體：**
+
+* **純文字編輯器(IDE)**：雖然任何純文字編輯器都可以運作，但Microsoft Visual Studio Code之類的整合式開發環境(IDE)提供進階功能，讓編輯更輕鬆。
+
+* **Git：** 管理程式碼變更需要此版本控制系統。 如果您尚未安裝，請從https://git-scm.com下載。
+
 ### 建立使用者端資源庫 {#create-client-library}
 
 您可以透過新增使用者端資料庫來新增自訂函式。 若要建立使用者端程式庫，請執行下列步驟：
 
-1. [複製AEM Formsas a Cloud Service存放庫](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=zh-Hant#accessing-git).
-1. 在 `[AEM Forms as a Cloud Service repository folder]/apps/` 檔案夾中建立一個檔案夾。例如，建立名為的資料夾 `experience-league`.
-1. 瀏覽至 `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/experience-league/` 並建立 `ClientLibraryFolder`. 例如，建立使用者端資源庫資料夾為 `customclientlibs`.
-1. 新增屬性 `categories` 字串型別值的組合。 例如，指派值 `customfunctionscategory` 至 `categories` 的屬性 `customclientlibs` 資料夾。
+**複製存放庫**
+
+原地複製您的 [AEM Formsas a Cloud Service存放庫](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=zh-Hant#accessing-git)：
+
+1. 開啟命令列或終端機視窗。
+
+1. 導覽至您電腦上要儲存存放庫的位置。
+
+1. 執行以下命令以複製存放庫：
+
+   `git clone [Git Repository URL]`
+
+這個命令會下載存放庫並在您的電腦上建立複製存放庫的本機資料夾。 在本指南中，我們將此資料夾稱為 [AemCS專案目錄].
+
+**新增使用者端資源庫資料夾**
+
+若要將新的使用者端資源庫資料夾新增至 [AemCS專案目錄]，請遵循下列步驟：
+
+1. 開啟 [AemCS專案目錄] 在編輯器中。
+
+   ![自訂函式資料夾結構](/help/forms/assets/custom-library-folder-structure.png)
+
+1. 尋找 `ui.apps`.
+1. 新增資料夾。 例如，新增名為的資料夾 `experience-league`.
+1. 瀏覽至 `/experience-league/` 資料夾並新增 `ClientLibraryFolder`. 例如，建立名為的使用者端資料庫資料夾 `customclientlibs`.
+
+   `Location is: [AEMaaCS project directory]/ui.apps/src/main/content/jcr_root/apps/`
+
+**將檔案和資料夾新增至「使用者端資源庫」資料夾**
+
+將下列專案新增至新增的使用者端程式庫資料夾：
+
+* .content.xml檔案
+* js.txt檔案
+* js資料夾
+
+`Location is: [AEMaaCS project directory]/ui.apps/src/main/content/jcr_root/apps/experience-league/customclientlibs/`
+
+1. 在 `.content.xml` 新增下列幾行程式碼：
+
+   ```javascript
+   <?xml version="1.0" encoding="UTF-8"?>
+   <jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+   jcr:primaryType="cq:ClientLibraryFolder"
+   categories="[customfunctionscategory]"/>
+   ```
 
    >[!NOTE]
    >
    > 您可以選擇任何名稱 `client library folder` 和 `categories` 屬性。
 
-1. 建立一個名為 `js` 的檔案夾。
-1. 導覽至 `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/customclientlibs/js` 檔案夾。
-1. 新增JavaScript檔案，例如 `function.js`. 檔案包含自訂函式的程式碼。
-1. 儲存 `function.js` 檔案。
-1. 導覽至 `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/customclientlibs/js` 檔案夾。
-1. 新增文字檔案為`js.txt`。該檔案包含：
+1. 在 `js.txt` 新增下列幾行程式碼：
 
    ```javascript
-       #base=js
-       functions.js
+         #base=js
+       function.js
    ```
+1. 在 `js` 資料夾，將javascript檔案新增為 `function.js` 其中包含自訂函式：
 
-1. 儲存 `js.txt` 檔案。
-1. 使用以下命令在存放庫中新增、提交和推播變更：
+   ```javascript
+    /**
+        * Calculates Age
+        * @name calculateAge
+        * @param {object} field
+        * @return {string} 
+    */
+   
+    function calculateAge(field) {
+    var dob = new Date(field);
+    var now = new Date();
+   
+    var age = now.getFullYear() - dob.getFullYear();
+    var monthDiff = now.getMonth() - dob.getMonth();
+   
+    if (monthDiff < 0 || (monthDiff === 0 && now.getDate() < dob.getDate())) {
+    age--;
+    }
+   
+    return age;
+    }
+   ```
+1. 儲存檔案。
+
+![自訂函式資料夾結構](/help/forms/assets/custom-function-added-files.png)
+
+**在filter.xml中包含新資料夾**：
+
+1. 導覽至 `/ui.apps/src/main/content/META-INF/vault/filter.xml` 中的檔案 [AemCS專案目錄].
+
+1. 開啟檔案，並在結尾新增下列行：
+
+   `<filter root="/apps/experience-league" />`
+1. 儲存檔案。
+
+![自訂函式篩選器xml](/help/forms/assets/custom-function-filterxml.png)
+
+**將新建立的使用者端程式庫資料夾部署至您的AEM環境**
+
+部署AEMas a Cloud Service、 [AemCS專案目錄]，前往您的Cloud Service環境。 若要部署至您的Cloud Service環境：
+
+1. 提交變更
+
+   1. 使用以下命令在存放庫中新增、提交和推播變更：
 
    ```javascript
        git add .
@@ -259,7 +349,11 @@ JavaScript註解是用來提供JavaScript程式碼的中繼資料。 其中包�
        git push
    ```
 
-1. [執行管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=zh-Hant#setup-pipeline) 以部署自訂函式。
+1. 部署更新的程式碼：
+
+   1. 透過現有的完整棧疊管道觸發計畫碼部署。 這會自動建置及部署更新的程式碼。
+
+如果您尚未設定管道，請參閱上的指南 [如何設定AEM Formsas a Cloud Service的管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=zh-Hant#setup-pipeline).
 
 管道執行成功後，使用者端資料庫中新增的自訂函式即可在中使用 [最適化表單規則編輯器](/help/forms/rule-editor-core-components.md).
 
@@ -443,7 +537,7 @@ In the above code snippet, a custom function named `updateDateTime` takes parame
 
 ![聯絡我們表單](/help/forms/assets/contact-us-form.png)
 
-#### 使用SetProperty規則顯示面板
++++ **使用案例**：使用顯示面板 `SetProperty` 規則
 
 在自訂函式中新增下列程式碼，如 [create-custom-function](#create-custom-function) 區段，將表單欄位設為 `Required`.
 
@@ -485,8 +579,9 @@ In the above code snippet, a custom function named `updateDateTime` takes parame
 
 ![設定屬性表單預覽](/help/forms/assets/set-property-panel.png)
 
++++
 
-#### 驗證欄位。
++++ **使用案例**：驗證欄位。
 
 在自訂函式中新增下列程式碼，如 [create-custom-function](#create-custom-function) 區段，以驗證欄位。
 
@@ -525,9 +620,9 @@ In the above code snippet, a custom function named `updateDateTime` takes parame
 
 ![電子郵件地址驗證模式](/help/forms/assets/validate-form-preview-form.png)
 
++++
 
-
-#### 重設面板
++++ **使用案例**：重設面板
 
 在自訂函式中新增下列程式碼，如 [create-custom-function](#create-custom-function) 區段，以重設面板。
 
@@ -559,9 +654,9 @@ In the above code snippet, a custom function named `updateDateTime` takes parame
 
 ![重設表單](/help/forms/assets/custom-function-reset-form.png)
 
++++
 
-
-#### 在欄位層級顯示自訂訊息並將欄位標籤為無效的方式
++++ **使用案例**：在欄位層級顯示自訂訊息，並將欄位標籤為無效
 
 您可以使用 `markFieldAsInvalid()` 函式將欄位定義為無效，並在欄位層級設定自訂錯誤訊息。 此 `fieldIdentifier` 值可以是 `fieldId`，或 `field qualifiedName`，或 `field dataRef`. 物件的值，命名為 `option` 可以是 `{useId: true}`， `{useQualifiedName: true}`，或 `{useDataRef: true}`.
 用於將欄位標示為無效並設定自訂訊息的語法如下：
@@ -602,9 +697,9 @@ In the above code snippet, a custom function named `updateDateTime` takes parame
 
 ![將欄位標示為有效的預覽表單](/help/forms/assets/custom-function-validfield-form.png)
 
++++
 
-
-#### 在提交之前變更擷取的資料
++++ **使用案例**：將變更後的資料提交至伺服器
 
 下列程式碼行：
 `globals.functions.submitForm(globals.functions.exportData(), false);` 用於在操作後提交表單資料。
@@ -647,9 +742,9 @@ In the above code snippet, a custom function named `updateDateTime` takes parame
 
 ![控制檯視窗中的Inspect資料](/help/forms/assets/custom-function-submit-data-console-data.png)
 
++++
 
-
-#### 覆寫最適化表單的提交成功和錯誤訊息
++++ **使用案例**：覆寫表單提交成功和錯誤處理常式
 
 新增下列程式碼行，如中所述 [create-custom-function](#create-custom-function) 區段，若要自訂表單提交的提交或失敗訊息，並在強制回應方塊中顯示表單提交訊息：
 
@@ -758,19 +853,19 @@ function showModal(type, message) {
 
 如果自訂提交處理常式無法在現有AEM專案或表單中如預期般執行，請參閱 [疑難排解](#troubleshooting) 區段。
 
-<!--
++++
 
++++ **使用案例**：在重複面板的特定執行個體中執行動作
 
-#### Use Case:  Perform actions in a specific instance of the repeatable panel 
+使用可重複面板上的視覺化規則編輯器建立的規則會套用至可重複面板的最後一個例項。 若要為可重複面板的特定執行個體編寫規則，我們可以使用自訂函式。
 
-Rules created using the visual rule editor on a repeatable panel apply to the last instance of the repeatable panel. To write a rule for a specific instance of the repeatable panel, we can use a custom function.
+讓我們建立另一個表格，以收集前往目的地的旅行者相關資訊。 旅行者面板會新增為可重複的面板，使用者可在其中使用 `Add Traveler` 按鈕。
 
-Let's create a form to collect information about travelers heading to a destination. A traveler panel is added as a repeatable panel, where the user can add details for 5 travelers using the Add button.
+![旅行者資訊](/help/forms/assets/traveler-info-form.png)
 
-Add the following line of code as explained in the [create-custom-function](#create-custom-function) section, to perform actions in a specific instance of the repeatable panel, other than the last one:
+新增下列程式碼行，如中所述 [create-custom-function](#create-custom-function) 區段，若要在重複面板的特定執行個體中執行動作（最後一個執行個體除外）：
 
 ```javascript
-
 /**
 * @name hidePanelInRepeatablePanel
 * @param {scope} globals
@@ -781,126 +876,126 @@ function hidePanelInRepeatablePanel(globals)
     // hides a panel inside second instance of repeatable panel
     globals.functions.setProperty(repeatablePanel[1].traveler, {visible : false});
 }  
-
-```
- 
-In this example, the `hidePanelInRepeatablePanel` custom function performs action in a specific instance of the repeatable panel. In the above code, `travelerinfo` represents the repeatable panel. The `repeatablePanel[1].traveler, {visible: false}` code hides the panel in the second instance of the repeatable panel. 
-Let us add a button labeled `Hide` to add a rule to hide a specific panel.
-
-![Hide Panel rule](/help/forms/assets/custom-function-hidepanel-rule.png)
-
-Refer to the video below to demonstrate that when the `Hide` is clicked, the panel in the second repeatable instance hides:
-
-
-
-
-#### **Usecase**: Pre-fill the field with a value when the form loads
-
-Add the following line of code, as explained in the [create-custom-function](#create-custom-function) section, to load the pre-filled value in a field when the form is initialized:
-
-```javascript
-/**
- * @name importData
- * @param {scope} globals
- */
-function importData(globals)
-{
-    globals.functions.importData(Object.fromEntries([['amount',200000]]));
-} 
 ```
 
-In the aforementioned code, the `importData` function updates the value in the `amount` textbox field when the form loads.
+在此範例中， `hidePanelInRepeatablePanel` 自訂函式會在可重複面板的特定執行個體中執行動作。 在上述程式碼中， `travelerinfo` 代表可重複面板。 此 `repeatablePanel[1].traveler, {visible: false}` 程式碼會在可重複面板的第二個例項中隱藏面板。
 
-Let us create a rule for the `Submit` button, where the value in the `amount` textbox field changes to specified value when the form loads:
+讓我們新增一個標籤為的按鈕 `Hide` 並新增規則以隱藏可重複面板的第二個執行個體。
 
-![Import Data Rule](/help/forms/assets/custom-function-import-data.png)
+![隱藏面板規則](/help/forms/assets/custom-function-hidepanel-rule.png)
 
-Refer to the screenshot below, which demonstrates that when the form loads, the value in the amount textbox is pre-filled with a specified value:
+請參考以下影片，以示範 `Hide` 按一下，第二個可重複執行個體中的面板會隱藏：
 
-![Import Data Rule](/help/forms/assets/cg)
-
-
-
-#### **Usecase**: Set focus on the specific field
-
-Add the following line of code, as explained in the [create-custom-function](#create-custom-function) section, to set focus on the specified field when the `Submit` button is clicked.:
-
-```javascript
-/**
- * @name setFocus
- * @param {object} field
- * @param {scope} globals
- */
-function setFocus(field, globals)
-{
-    globals.functions.setFocus(field);
-}
-```
-
-Let us add a rule to the `Submit` button to set focus on the `email` field when it is clicked:
-
-![Set Focus Rule](/help/forms/assets/custom-function-set-focus.png)
-
-Refer to the screenshot below, which demonstrates that when the `Submit` button is clicked, the focus is set on the `email` field:
-
-![Set Focus Rule](/help/forms/assets/custom-function-set-focus-form.png)
-
->[!NOTE]
->
-> You can use the optional `$focusOption` parameter, if you want to focus on the next or previous field relative to the `email` field.
+>[!VIDEO](https://video.tv.adobe.com/v/3429554?quality=12&learn=on)
 
 +++
 
-+++ **Usecase**: Add or delete repeatable panel using the `dispatchEvent` property
++++ **使用案例**：表單載入時使用值預先填入欄位
 
-Add the following line of code, as explained in the [create-custom-function](#create-custom-function) section, to add a panel when the `Add Traveler` button is clicked using the `dispatchEvent` property:
+新增下列程式碼行，如中所述 [create-custom-function](#create-custom-function) 區段，若要在初始化表單時載入欄位中的預先填入值：
 
 ```javascript
 /**
- 
- * @name addInstance
+ * Tests import data
+ * @name testImportData
  * @param {scope} globals
  */
-function addInstance(globals)
+function testImportData(globals)
 {
-    var repeatablePanel = globals.form.traveler;
-    globals.functions.dispatchEvent(repeatablePanel, 'addInstance');
+    globals.functions.importData(Object.fromEntries([['amount','10000']]));
 } 
-
 ```
 
-Let us add a rule to the `Add Traveler` button to add the repeatable panel when it is clicked:
+在上述程式碼中， `testImportData` 函式預填 `Booking Amount` 文字方塊欄位。 我們假設預訂表單要求最低預訂量是 `10,000`.
 
-![Add Panel Rule](/help/forms/assets/custom-function-add-panel.png)
+讓我們在表單初始化時建立規則，其中 `Booking Amount` 當表單載入時，文字方塊欄位會預先填入指定的值：
 
-Refer to the screenshot below, which demonstrates that when the `Add Traveler` button is clicked, the traveler panel is added using the `dispatchEvent` property:
+![匯入資料規則](/help/forms/assets/custom-function-import-data.png)
 
-![Add Panel](/help/forms/assets/customg)
+請參閱下方的熒幕擷圖，示範當表單載入時， `Booking Amount` textbox已預先填入指定的值：
 
-Similarly, add a button labeled `Delete Traveler` to delete a panel. Add the following line of code, as explained in the [create-custom-function](#create-custom-function) section, to delete a panel when the `Delete Traveler` button is clicked using the `dispatchEvent` property:
+![匯入資料規則表單](/help/forms/assets/custom-function-prefill-form.png)
+
++++
+
++++ **使用案例**：將焦點設定在特定欄位
+
+新增下列程式碼行，如中所述 [create-custom-function](#create-custom-function) 區段，將焦點設定在指定的欄位 `Submit` 已按一下按鈕：
 
 ```javascript
-
 /**
- 
- * @name removeInstance
+ * @name testSetFocus
+ * @param {object} emailField
  * @param {scope} globals
  */
-function removeInstance(globals)
+    function testSetFocus(field, globals)
+    {
+        globals.functions.setFocus(field);
+    }
+```
+
+讓我們將規則新增至 `Submit` 按鈕來設定焦點 `Email ID` 文字方塊欄位：
+
+![設定焦點規則](/help/forms/assets/custom-function-set-focus.png)
+
+請參閱下方的熒幕擷圖，其示範當 `Submit` 按一下按鈕後，焦點會設定在 `Email ID` 欄位：
+
+![設定焦點規則](/help/forms/assets/custom-function-set-focus-form.png)
+
+>[!NOTE]
+>
+> 您可以使用選填的 `$focusOption` 引數，如果要聚焦於相對於的下一個或上一個欄位 `email` 欄位。
+
++++
+
++++ **使用案例**：使用新增或刪除可重複面板 `dispatchEvent` 屬性
+
+新增下列程式碼行，如中所述 [create-custom-function](#create-custom-function) 區段，新增面板，當 `Add Traveler` 使用按一下按鈕 `dispatchEvent` 屬性：
+
+```javascript
+/**
+ * Tests add instance with dispatchEvent
+ * @name testAddInstance
+ * @param {scope} globals
+ */
+function testAddInstance(globals)
+{
+    var repeatablePanel = globals.form.traveler;
+    globals.functions.dispatchEvent(repeatablePanel,'addInstance');
+}
+```
+
+讓我們將規則新增至 `Add Traveler` 按鈕來新增重複面板（按一下時）：
+
+![新增面板規則](/help/forms/assets/custom-function-add-panel.png)
+
+請參閱下列gif，其示範當 `Add Traveler` 按一下按鈕後，面板會使用 `dispatchEvent` 屬性：
+
+![新增面板](/help/forms/assets/custom-function-add-panel.gif)
+
+同樣地，新增下列程式碼行，如 [create-custom-function](#create-custom-function) 區段，若要在 `Delete Traveler` 使用按一下按鈕 `dispatchEvent` 屬性：
+
+```javascript
+/**
+ 
+ * @name testRemoveInstance
+ * @param {scope} globals
+ */
+function testRemoveInstance(globals)
 {
     var repeatablePanel = globals.form.traveler;
     globals.functions.dispatchEvent(repeatablePanel, 'removeInstance');
 } 
-
 ```
-Let us add a rule to the `Delete Traveler` button to delete the repeatable panel when it is clicked:
 
-![Delete Panel Rule](/help/forms/assets/custom-function-delete-panel.png)
+讓我們將規則新增至 `Delete Traveler` 按一下按鈕以刪除可重複面板：
 
-Refer to the screenshot below, which demonstrates that when the `Delete Traveler` button is clicked, the traveler panel is deleted using the `dispatchEvent` property:
+![刪除面板規則](/help/forms/assets/custom-function-delete-panel.png)
 
-![Delete Panel](/help/forms/assets/customg)
--->
+請參閱下列gif，其示範當 `Delete Traveler` 按一下按鈕後，則會使用 `dispatchEvent` 屬性：
+
+![刪除面板](/help/forms/assets/custom-function-delete-panel.gif)
+
 
 ## 自訂函式的快取支援
 
