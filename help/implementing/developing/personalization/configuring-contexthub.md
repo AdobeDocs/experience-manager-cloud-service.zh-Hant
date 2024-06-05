@@ -2,7 +2,9 @@
 title: 設定 ContextHub
 description: 瞭解如何設定Context Hub，此架構用於儲存、操控和呈現內容資料。
 exl-id: 1fd7d41e-31ad-4838-8749-a5791edcfd63
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '1609'
 ht-degree: 0%

@@ -2,7 +2,10 @@
 title: 頁面差異
 description: 頁面差異功能可方便的對兩個頁面進行並排比較，並反白顯示其差異。
 exl-id: 6e5c7f14-c980-48e3-8bdd-a7ec10a9e680
-source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '609'
 ht-degree: 1%

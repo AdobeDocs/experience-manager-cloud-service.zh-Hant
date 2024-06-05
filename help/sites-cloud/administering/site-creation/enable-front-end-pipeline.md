@@ -4,10 +4,11 @@ description: 瞭解如何啟用現有網站的前端管道，以使用網站主�
 feature: Administering
 role: Admin
 exl-id: 55d54d72-f87b-47c9-955f-67ec5244dd6e
-source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
+solution: Experience Manager Sites
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '554'
-ht-degree: 0%
+ht-degree: 6%
 
 ---
 
@@ -34,7 +35,7 @@ ht-degree: 0%
 當您啟動網站的前端管道時，AEM會對您的網站結構做出以下變更。
 
 * 網站的所有頁面都將包含一個額外的CSS和JS檔案，您可以透過專用的Cloud Manager前端管道部署更新來修改這些檔案。
-* 新增的CSS和JS檔案最初是空的，但可以下載「主題來源」資料夾以啟動資料夾結構，從而允許透過該管道部署CSS和JS程式碼更新。
+* 新增的 CSS 和 JS 檔案最初是空的，但可以下載「主題來源」資料夾來引導資料夾結構，從而允許透過該管道部署 CSS 和 JS 程式碼更新。
 * 此變更只能由開發人員透過刪除 `SiteConfig` 和 `HtmlPageItemsConfig` 此操作建立的節點如下 `/conf/<site-name>/sling:configs`.
 
 >[!NOTE]

@@ -2,7 +2,9 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2021.3.0 版發行說明。'
 description: '"[!DNL Adobe Experience Manager] 2021.3.0版as a Cloud Service發行說明。」'
 exl-id: 0c07364c-ba25-4081-8e35-3c1c84ed556f
-source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
+feature: Release Information
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '1271'
 ht-degree: 32%
@@ -66,7 +68,7 @@ AEM Forms在多年來已幫助許多組織提供絕佳的上線和註冊體驗�
 
 您可以聯絡您的Adobe代表來要求示範或註冊此服務。
 
-## Adobe Experience Manager商務as a Cloud Service {#cloud-services-commerce}
+## Adobe Experience Manager Commerceas a Cloud Service {#cloud-services-commerce}
 
 ### 新增功能 {#what-is-new-commerce}
 

@@ -2,14 +2,16 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2020.7.0 版發行說明。'
 description: '"[!DNL Adobe Experience Manager] 2020.7.0版as a Cloud Service發行說明。」'
 exl-id: 75d354a3-6987-4de0-aec8-24043461c516
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+feature: Release Information
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '1032'
-ht-degree: 71%
+source-wordcount: '1012'
+ht-degree: 72%
 
 ---
 
-# [!DNL Adobe Experience Manager] as a Cloud Service 2020.7.0 版發行說明  {#release-notes}
+# 版本注意事項 [!DNL Adobe Experience Manager] as a Cloud Service2020.7.0 {#release-notes}
 
 以下章節概述 Experience Manager as a Cloud Service 2020.7.0 版的一般發行說明。
 
@@ -17,7 +19,7 @@ ht-degree: 71%
 
 [!DNL Experience Manager] as a Cloud Service 2020.7.0 版的發行日期為 2020 年 7 月 30 日。
 
-## Adobe Experience Manager Sites as a Cloud Service {#cloud-services-sites}
+## Adobe Experience Manager Sitesas a Cloud Service {#cloud-services-sites}
 
 ### 新增功能 {#what-is-new-sites}
 
@@ -49,7 +51,7 @@ ht-degree: 71%
 * 下列專案的值 `dam:size` 和 `dam:sha1` 會從XMP回寫中排除。 (CQ-4237355)
 * 大量取消發佈資產時， [!DNL Brand Portal] 會產生錯誤，指出請求URI太長。 (CQ-4299474)
 
-## Adobe Experience Manager商務as a Cloud Service {#cloud-services-commerce}
+## Adobe Experience Manager Commerceas a Cloud Service {#cloud-services-commerce}
 
 ### 新增功能 {#what-is-new-commerce}
 
@@ -61,7 +63,7 @@ AEM Commerce現在可在Cloud Service上使用。
 
 ### 新增功能 {#what-is-new-core-components}
 
-[AEM 核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 2.11.0 版現在隨附於 AEM Sites，其中包含：
+[AEM 核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hant) 2.11.0 版現在隨附於 AEM Sites，其中包含：
 
 * 導入最新 [PDF 檢視器元件](https://www.aemcomponents.dev/content/core-components-examples/library/core-content/pdf-viewer.html)。
 

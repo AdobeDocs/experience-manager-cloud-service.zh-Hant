@@ -2,7 +2,9 @@
 title: Eclipse 適用的 AEM 開發人員工具
 description: 瞭解如何使用適用於Eclipse的AEM開發人員工具，這是以適用於Apache Sling的Eclipse外掛程式為基礎的Eclipse外掛程式。
 exl-id: 7f9c0f99-e230-440a-8bc9-a0ab7465e3bf
-source-git-commit: 984ead39ef8c20f06ac63c88380323e403a08712
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '1138'
 ht-degree: 2%

@@ -2,7 +2,9 @@
 title: AEM 標記框架
 description: 標籤內容，並使用AEM標籤基礎結構來分類及組織內容。
 exl-id: 25418d44-aace-4e73-be1a-4b1902f40403
-source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '1562'
 ht-degree: 0%

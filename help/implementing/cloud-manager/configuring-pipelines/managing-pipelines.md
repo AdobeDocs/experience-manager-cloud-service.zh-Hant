@@ -3,7 +3,10 @@ title: 管理管道
 description: 了解如何管理現有管道，包括將其編輯、執行和刪除。
 index: true
 exl-id: 4aff5a84-134a-43fa-8de8-8d564f4edd16
-source-git-commit: 71ece3b084c3a262cacc62019396138a88a340b9
+solution: Experience Manager
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '1018'
 ht-degree: 54%
@@ -41,7 +44,7 @@ ht-degree: 54%
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織。
 
-1. 在 **[我的計畫](/help/implementing/cloud-manager/navigation.md#my-programs)** 主控台，選取程式。
+1. 在「**[我的程式](/help/implementing/cloud-manager/navigation.md#my-programs)**」控制台中，選取程式。
 
 1. 從 **計畫總覽** 頁面，選取 **管道** 標籤以切換至 **管道** 視窗。
 

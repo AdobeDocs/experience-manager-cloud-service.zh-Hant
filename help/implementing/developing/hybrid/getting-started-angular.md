@@ -2,7 +2,9 @@
 title: 使用Angular在AEM中開始使用SPA
 description: 本文介紹SPA應用程式範例，說明其如何組合，並可讓您使用Angular架構快速啟動並執行您自己的SPA。
 exl-id: 8013ac2c-d1a7-4940-bb65-15e3ed7652d6
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '981'
 ht-degree: 6%

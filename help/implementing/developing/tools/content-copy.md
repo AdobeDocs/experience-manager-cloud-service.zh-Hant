@@ -2,7 +2,9 @@
 title: 內容複製工具
 description: 內容複製工具可讓使用者隨選從AEMas a Cloud Service的生產環境複製可變內容，以降低環境等級以進行測試。
 exl-id: 5883e4bc-9861-498e-bd35-32ff03d901cc
-source-git-commit: a0f80a363cb47be9e3d8f7fa96ea3068eb077d42
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '1286'
 ht-degree: 33%

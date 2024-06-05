@@ -2,7 +2,10 @@
 title: 在多個網站中使用目標內容
 description: 如果您需要管理目標內容，例如網站之間的活動、體驗和選件，您可以利用AEM針對目標內容的內建多網站支援
 exl-id: 03d2d640-8de8-4c4c-8a1d-756bb2dc8457
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '2844'
 ht-degree: 4%
@@ -155,7 +158,7 @@ ht-degree: 4%
 
 1. 按一下 **區域** 圖示並按一下 **下一個**.
 1. 在 **標題** 欄位，輸入新區域的名稱。 選擇性地選取標籤。
-1. 選擇 **建立**。
+1. 選取「**建立**」。
 
    AEM會重新導向至品牌視窗，其中列出所有已建立的區域。 如果「主版區域」之外還有其他區域，您可以直接在「品牌主控台」中建立區域。
 
@@ -190,7 +193,7 @@ ht-degree: 4%
    >
    >將頁面轉出至即時副本，且為Blueprint頁面設定的區域也是為頁面Live Copy設定的區域的Blueprint時，LiveAction **personalizationContentRollout** 觸發同步的subRollout，這屬於 **標準轉出設定**.
 
-1. 選擇 **建立**。
+1. 選取「**建立**」。
 
    AEM會重新導向至品牌視窗，其中列出所有已建立的區域。 如果「主版區域」之外還有其他區域，則可直接從品牌視窗建立區域。
 

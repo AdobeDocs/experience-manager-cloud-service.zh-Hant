@@ -2,7 +2,9 @@
 title: 將標記內建至 AEM 應用程式中
 description: 以程式設計方式處理自訂AEM應用程式內的標籤或擴展標籤
 exl-id: a106dce1-5d51-406a-a563-4dea83987343
-source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '717'
 ht-degree: 1%

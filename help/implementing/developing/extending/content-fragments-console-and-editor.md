@@ -1,14 +1,17 @@
 ---
 title: 自訂和擴充內容片段主控台和編輯器
 description: 瞭解如何自訂內容片段主控台和編輯器
-source-git-commit: 7eeb4fc7f6d5c74a0d3352f1b16f98617945cd88
+exl-id: a837f09f-9d07-4430-839a-7cf0f200d2df
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
-source-wordcount: '107'
-ht-degree: 0%
+source-wordcount: '87'
+ht-degree: 9%
 
 ---
 
-# 自訂內容片段控制檯和編輯器 {#customizing-content-fragment-console-and-editor}
+# 自訂內容片段主控台和編輯器 {#customizing-content-fragment-console-and-editor}
 
 內容片段控制檯和編輯器皆可擴充，並可使用AdobeApp Builder根據您的需求自訂。
 

@@ -2,14 +2,16 @@
 title: Adobe Experience Manager as a Cloud Service 2020.6.0 版發行說明
 description: '"[!DNL Adobe Experience Manager] 2020.6.0版as a Cloud Service發行說明。」'
 exl-id: fd6ebe2b-6d98-498c-a45d-b9a9c34e6be7
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+feature: Release Information
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '1932'
-ht-degree: 94%
+source-wordcount: '1939'
+ht-degree: 92%
 
 ---
 
-# AEM as a Cloud Service 2020.6.0 版發行說明 {#release-notes}
+# AEMas a Cloud Service2020.6.0版發行說明 {#release-notes}
 
 此頁面概述 Experience Manager as a Cloud Service 2020.6.0 版的一般發行說明。
 
@@ -17,13 +19,13 @@ ht-degree: 94%
 
 [!DNL Experience Manager] as a Cloud Service 2020.6.0 版的發行日期為 2020 年 6 月 4 日。
 
-## AEM Sites 新增功能 {#aem-sites}
+## AEM Sites的新增功能 {#aem-sites}
 
 請詳閱本節，了解 AEM as a Cloud Service 2020.6.0 版中 AEM Sites 的新增功能和更新。
 
 ### 新功能 {#whats-new-2020.6.0}
 
-[核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 2.9.0 版現已隨附於 AEM Sites，其中包含：
+[核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hant) 2.9.0 版現已隨附於 AEM Sites，其中包含：
 
 * [Adobe 用戶端資料層](https://github.com/adobe/adobe-client-data-layer)與核心元件的整合
 * 所有元件可設定的 HTML ID 屬性
@@ -38,7 +40,7 @@ ht-degree: 94%
 
 * 已新增僅限 Angular 頁面和 AEM/Angular 頁面的路由管理功能。
 
-### 協助工具 {#accessibility}
+### 親和力 {#accessibility}
 
 * 現在，使用向下箭頭在瀏覽模式中導覽時，可以針對&#x200B;**建立頁面**&#x200B;對話方塊中的「石造」項目提供角色和狀態旁白。
 
@@ -46,13 +48,13 @@ ht-degree: 94%
 
 * 螢幕助讀程式的改良。
 
-## AEM as a Cloud Service 基礎的新增功能 {#foundations}
+## AEMas a Cloud Service基礎的新增功能 {#foundations}
 
 AEM專案的pom.xml中所有的參照移至遠端存放庫之後，AEM專案建置時間將有所改善 `https://downloads.experiencecloud.adobe.com/content/maven/public`.
 
 AEMas a Cloud ServiceSDK API Jar （先前託管於該位置）現在位於Maven的預設成品存放庫Maven Central中。
 
-## Cloud Manager 新增功能 {#cloud-manager}
+## Cloud Manager新增功能 {#cloud-manager}
 
 請詳閱本節，了解 AEM as a Cloud Service 2020.6.0 版中 Cloud Manager 的新增功能和更新。
 
@@ -102,7 +104,7 @@ AEMas a Cloud ServiceSDK API Jar （先前託管於該位置）現在位於Maven
 
 * 直接從 Cloud Manager 連結至開發人員控制台時，不會顯示將沙箱方案的環境解除休眠/休眠的選項。若要解決此問題，請於開發人員控制台中，在 URL 的結尾處加上 `#release-cm-p1234-e5678` 模式，其中，*1234* 是方案 ID，*5678* 是環境 ID。此問題將在即將發行的版本中解決。
 
-## [!DNL Adobe Experience Manager Assets] 新增功能  {#aem-assets}
+## 的新增功能 [!DNL Adobe Experience Manager Assets] {#aem-assets}
 
 **增強型智慧標記的引導式使用者體驗 (由 Adobe Sensei 提供技術支援)**
 

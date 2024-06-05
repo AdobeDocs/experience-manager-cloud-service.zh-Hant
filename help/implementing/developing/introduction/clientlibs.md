@@ -2,7 +2,9 @@
 title: 在AEMas a Cloud Service上使用使用者端資料庫
 description: AEM提供使用者端程式庫資料夾，可讓您將使用者端程式碼(clientlibs)儲存在存放庫中、將其組織成類別，以及定義何時及如何將每個類別的程式碼提供給使用者端
 exl-id: 370db625-09bf-43fb-919d-4699edaac7c8
-source-git-commit: 494e90bd5822495f0619e8ebf55f373a26a3ffe6
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '2497'
 ht-degree: 1%

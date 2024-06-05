@@ -2,7 +2,9 @@
 title: SPA模型路由
 description: 若為AEM中的單頁應用程式，則由應用程式負責路由。 本檔案說明路由機制、合約及可用的選項。
 exl-id: 1186b64e-11f8-43a6-bc75-450c4d7587ec
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '438'
 ht-degree: 0%

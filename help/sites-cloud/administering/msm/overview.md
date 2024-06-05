@@ -4,7 +4,8 @@ description: 了解如何使用 AEM 強大的 Live Copy 和多網站管理員功
 feature: Multi Site Manager
 role: Admin
 exl-id: 22b4041f-1df9-4189-8a09-cbc0c89fbf2e
-source-git-commit: 0a4f9edba00e65439a306024c604e6935c8bac47
+solution: Experience Manager Sites
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '2721'
 ht-degree: 95%

@@ -2,7 +2,9 @@
 title: 元件參考指南
 description: 開發人員參考指南，瞭解元件及其結構的詳細資訊
 exl-id: 45e5265b-39d6-4a5c-be1a-e66bb7ea387d
-source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '3481'
 ht-degree: 1%
@@ -11,7 +13,7 @@ ht-degree: 1%
 
 # 元件參考指南 {#components-reference-guide}
 
-元件是在AEM中建立體驗的核心。 此 [核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 和 [AEM專案原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hant) 以一組現成的強大元件輕鬆開始使用。 此 [WKND教學課程](/help/implementing/developing/introduction/develop-wknd-tutorial.md) 帶領開發人員瞭解如何使用這些工具，以及如何建置自訂元件以建立AEM網站。
+元件是在AEM中建立體驗的核心。 此 [核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hant) 和 [AEM專案原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hant) 以一組現成的強大元件輕鬆開始使用。 此 [WKND教學課程](/help/implementing/developing/introduction/develop-wknd-tutorial.md) 帶領開發人員瞭解如何使用這些工具，以及如何建置自訂元件以建立AEM網站。
 
 >[!TIP]
 >

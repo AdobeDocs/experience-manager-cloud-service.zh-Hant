@@ -2,7 +2,9 @@
 title: 設定和設定瀏覽器
 description: 瞭解Adobe Experience Manager (AEM)設定，以及這些設定如何在AEM中管理工作區設定。
 exl-id: 0ade04df-03a9-4976-a4b7-c01b4748474d
-source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '1482'
 ht-degree: 4%

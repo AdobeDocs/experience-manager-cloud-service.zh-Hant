@@ -2,10 +2,12 @@
 title: 使用 Sling 介面卡
 description: Sling提供轉接器模式，可方便翻譯實作轉接器介面的物件
 exl-id: 8ffe3bbd-01fe-44c2-bf60-7a4d25a6ba2b
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
-source-wordcount: '2213'
-ht-degree: 5%
+source-wordcount: '1324'
+ht-degree: 3%
 
 ---
 
@@ -96,7 +98,7 @@ null傳回有多種原因，包括：
    <td>如果是JCR節點型資源（或其他支援值的資源對應），則傳回屬性的對應</td>
   </tr>
   <tr>
-   <td><a href="https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/org/apache/sling/api/resource/ValueMap.html">ValueMap</a></td>
+   <td><a href="https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/org/apache/sling/api/resource/ValueMap.html">值圖</a></td>
    <td>如果屬性是以JCR節點為基礎的資源（或其他支援值的資源對應），則傳回方便使用的屬性對應。 也可使用（更簡單）達成<br /> <code><a href="https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/org/apache/sling/api/resource/ResourceUtil.html">ResourceUtil.getValueMap(Resource)</a></code> （處理null大小寫等）</td>
   </tr>
   <tr>
@@ -136,7 +138,7 @@ null傳回有多種原因，包括：
    <td>如果是JCR節點型資源</td>
   </tr>
   <tr>
-   <td><a href="https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/wcm/api/Page.html">Page</a></td>
+   <td><a href="https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/wcm/api/Page.html">頁面</a></td>
    <td>如果它是JCR節點型資源，且節點是 <code>cq:Page</code> (或 <code>cq:PseudoPage</code>)</td>
   </tr>
   <tr>
@@ -223,7 +225,7 @@ null傳回有多種原因，包括：
    <td> </td>
   </tr>
   <tr>
-   <td><a href="https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/wcm/api/designer/Designer.html">Designer</a></td>
+   <td><a href="https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/wcm/api/designer/Designer.html">設計工具</a></td>
    <td> </td>
   </tr>
   <tr>
@@ -240,7 +242,7 @@ null傳回有多種原因，包括：
    </td>
   </tr>
   <tr>
-   <td><a href="https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/org/apache/jackrabbit/api/security/user/Authorizable.html">可授權項目</a> </td>
+   <td><a href="https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/org/apache/jackrabbit/api/security/user/Authorizable.html">可授權</a> </td>
    <td>目前使用者</td>
   </tr>
   <tr>
@@ -311,7 +313,7 @@ null傳回有多種原因，包括：
 <table>
  <tbody>
   <tr>
-   <td><a href="https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/org/apache/sling/api/resource/Resource.html">Resource</a><a href="https://developer.adobe.com/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html"><br /> </a></td>
+   <td><a href="https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/org/apache/sling/api/resource/Resource.html">資源</a><a href="https://developer.adobe.com/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html"><br /> </a></td>
    <td>範本的資源。</td>
   </tr>
   <tr>

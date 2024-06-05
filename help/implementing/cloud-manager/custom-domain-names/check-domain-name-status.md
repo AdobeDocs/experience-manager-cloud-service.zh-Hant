@@ -2,10 +2,13 @@
 title: 檢查網域名稱狀態
 description: 了解如何確定您的自訂網域名稱是否已透過 Cloud Manager 成功驗證。
 exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
-source-git-commit: d1b2226a1deec2e71056c43c84672cb4a358bc8c
+solution: Experience Manager
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '651'
-ht-degree: 87%
+ht-degree: 88%
 
 ---
 
@@ -16,7 +19,7 @@ ht-degree: 87%
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織。
 
-1. 在 **[我的計畫](/help/implementing/cloud-manager/navigation.md#my-programs)** 主控台，選取程式。
+1. 在「**[我的程式](/help/implementing/cloud-manager/navigation.md#my-programs)**」控制台中，選取程式。
 
 1. 從&#x200B;**概觀**&#x200B;頁面，瀏覽到&#x200B;**環境**&#x200B;畫面。
 

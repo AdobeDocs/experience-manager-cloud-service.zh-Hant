@@ -2,10 +2,13 @@
 title: 元件
 description: 元件是AEM中內容頁面的基本製作建置組塊
 exl-id: a8118329-1330-49b0-a3f8-a27774f1c5df
-source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '335'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -39,7 +42,7 @@ AEM隨附多種現成可用的元件，可為網站作者提供全方位功能�
 
 ## 核心元件 {#core-components}
 
-此 [核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 提供有彈性且功能豐富的製作功能，可提供建立頁面所需的基本內容型別。
+此 [核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hant) 提供有彈性且功能豐富的製作功能，可提供建立頁面所需的基本內容型別。
 
 它們是使用AEM最佳實務建置的，也是AEM編寫體驗的基礎。 開發人員可輕鬆擴充核心元件，以符合特定專案需求。
 

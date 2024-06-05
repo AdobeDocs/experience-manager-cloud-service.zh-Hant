@@ -2,7 +2,9 @@
 title: 元件概觀
 description: 元件是模組化單元，可實現特定功能以在您的網站上展示您的內容
 exl-id: 0fdc99e7-2103-448d-8217-d5d52c94acea
-source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '376'
 ht-degree: 100%

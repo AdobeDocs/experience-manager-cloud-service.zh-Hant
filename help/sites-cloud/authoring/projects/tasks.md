@@ -2,7 +2,10 @@
 title: 使用任務
 description: 任務表示在內容上要完成的工作專案，並用於專案中以決定目前任務的完整度等級
 exl-id: 66f95a1f-34d0-4e2e-aa8c-addc2029a1d9
-source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '573'
 ht-degree: 10%

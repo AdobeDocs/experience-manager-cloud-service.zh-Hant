@@ -2,7 +2,9 @@
 title: AEM as a Cloud Service 開發指導方針
 description: 了解在 AEM as a Cloud Service 上進行開發的準則，以及它和內部部署的 AEM 以及 AMS 中的 AEM 的重要區別。
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '2745'
 ht-degree: 4%
@@ -105,7 +107,7 @@ AEMas a Cloud Service不支援從發佈到作者的反向復寫。 如果需要�
 
 ## 監視和偵錯 {#monitoring-and-debugging}
 
-### 記錄檔 {#logs}
+### 記錄 {#logs}
 
 對於本機開發，記錄專案會寫入本機檔案中的 `/crx-quickstart/logs` 資料夾。
 

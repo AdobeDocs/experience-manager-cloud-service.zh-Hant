@@ -2,10 +2,12 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2022.6.0 版發行說明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2022.6.0 版發行說明。'
 exl-id: cf2133dc-56cd-4a07-ab11-72e16f015ff5
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+feature: Release Information
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '637'
-ht-degree: 31%
+source-wordcount: '633'
+ht-degree: 27%
 
 ---
 
@@ -53,7 +55,7 @@ Experience Manager Assets現在使用Adobe Sensei AI功能 [區分影像中的�
 
 ### [!DNL Forms] 中的新功能 {#forms-features}
 
-* **[整合Adaptive Forms與Microsoft® Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)**：您現在可以設定最適化表單，在提交時執行Microsoft® Power Automate Cloud Flow。 設定的最適化表單會將擷取的資料、附件和記錄文件傳送到 Power Automate Cloud Flow 進行處理。那有助於建置自訂資料擷取體驗，同時利用 Microsoft® Power Automate 的強大功能，根據擷取的資料建置商業邏輯，並將客戶工作流程自動化。
+* **[整合Adaptive Forms與Microsoft® Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)**：您現在可以設定最適化表單，在提交時執行Microsoft® Power Automate Cloud Flow。 設定的最適化表單會將擷取的資料、附件和記錄文件傳送到 Power Automate Cloud Flow 進行處理。它可幫助您建立自訂資料擷取體驗，同時利用Microsoft® Power Automate的強大功能，圍繞擷取的資料建立商業邏輯，並自動化客戶工作流程。
 
 * **用於建立最適化表單的精靈**：您可以使用業務使用者友善的精靈來快速撰寫最適化Forms。 精靈提供快速索引標籤導覽，以便輕鬆選取用於建立最適化表單的預先設定範本、樣式、欄位和提交選項。
 
@@ -84,7 +86,7 @@ Experience Manager Assets現在使用Adobe Sensei AI功能 [區分影像中的�
 
 ### 新增功能 {#what-is-new-demos}
 
-* 新的WKND內容和商務範本透過E2E購物體驗擴充WKND，包含產品目錄、購物車、結帳和myAccount。 此範本使用CIF及其CIF核心元件，因此您也需要安裝CIF附加元件。 您可以在CIF部落格中找到詳細資訊 [此處](https://medium.com/adobetech/learn-how-to-create-a-shoppable-experience-with-the-new-wknd-reference-site-and-cif-b3b2c161f67e).
+* 全新WKND內容與Commerce範本，可擴充WKND的E2E購物體驗，包含產品目錄、購物車、結帳和myAccount。 此範本使用CIF及其CIF核心元件，因此您也需要安裝CIF附加元件。 您可以在CIF部落格中找到詳細資訊 [此處](https://medium.com/adobetech/learn-how-to-create-a-shoppable-experience-with-the-new-wknd-reference-site-and-cif-b3b2c161f67e).
 
 ![WKND商店](/help/assets/CIF/wknd_shop.png)
 

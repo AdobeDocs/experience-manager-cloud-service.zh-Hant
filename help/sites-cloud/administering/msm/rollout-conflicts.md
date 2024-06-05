@@ -4,10 +4,11 @@ description: 瞭解如何管理和解決多網站管理員轉出衝突。
 feature: Multi Site Manager
 role: Admin
 exl-id: 733e9411-50a7-42a5-a5a8-4629f6153f10
-source-git-commit: 78ead5f15c2613d9c3bed3025b43423a66805c59
+solution: Experience Manager Sites
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '920'
-ht-degree: 3%
+source-wordcount: '919'
+ht-degree: 2%
 
 ---
 
@@ -37,7 +38,7 @@ Adobe Experience Manager (AEM)的預設現成行為是發佈內容不受影響�
 
   具有一個子頁面的主版頁面， `bp-level-1`
 
-* Live Copy: `/b`
+* 即時副本： `/b`
 
   在即時副本分支中手動建立的頁面，具有一個子頁面， `lc-level-1`
 
@@ -81,13 +82,13 @@ AEM提供：
 
 此衝突處理常式會賦予Blueprint優先權。 例如，即時副本頁面 `/b` 在即時副本分支中移至 `/b_msm_moved`.
 
-* Live Copy: `/b`
+* 即時副本： `/b`
 
   在即時副本中移至 `/b_msm_moved`. 這會作為備份，並確保不會遺失任何內容。
 
    * `lc-level-1` 不會移動。
 
-* 藍圖: `/b`
+* 藍圖： `/b`
 
   轉出至即時副本頁面 `/b`.
 
@@ -125,11 +126,11 @@ AEM提供：
 
 在此情況下，即時副本會有效取得優先權。 Blueprint頁面 `/b` 不會複製且即時副本頁面 `/b` 保持不變。
 
-* 藍圖: `/b`
+* 藍圖： `/b`
 
   它根本不會複製，而是被忽略。
 
-* Live Copy: `/b`
+* 即時副本： `/b`
 
   維持不變。
 

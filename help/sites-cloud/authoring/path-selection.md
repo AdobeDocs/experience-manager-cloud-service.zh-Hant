@@ -1,15 +1,18 @@
 ---
 title: 使用路徑瀏覽器選取路徑
 description: 瞭解如何使用路徑瀏覽器在AEM中選取資源。
-source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
+exl-id: 8eb52793-b709-4e66-832d-533ef06bc0e1
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '322'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
-
-# 路徑選擇 {#path-selection}
+# 路徑選取 {#path-selection}
 
 通常在製作時，必須選取其他資源，例如定義另一個頁面的連結或選取影像時。 若要輕鬆選取路徑， [路徑欄位](#path-fields) 優惠自動完成和 [路徑瀏覽器](#path-browser) 允許更強大的選取範圍。
 

@@ -2,14 +2,14 @@
 title: 建立應用程式建立器應用程式
 description: 瞭解如何建立和啟動新的App Builder應用程式。
 version: Cloud Service
-feature: App Builder
+feature: App Builder, Developing
 topic: Integrations, Development
 role: Developer, Architect
 level: Beginner
 kt: 9455, 9471, 9472, 9473
 thumbnail: 339168.jpg
 exl-id: 6e080945-8789-4dfa-b093-9df10c278e11
-source-git-commit: a14ee350b3fdc3ac197b703aa36957d1d1dd7355
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '83'
 ht-degree: 0%
@@ -32,7 +32,7 @@ ht-degree: 0%
 
 ## 初始化您的第一個專案
 
-瞭解如何初始化App Builder專案。
+瞭解如何初始化應用程式產生器專案。
 
 >[!VIDEO](https://video.tv.adobe.com/v/339170/?quality=12&learn=on)
 

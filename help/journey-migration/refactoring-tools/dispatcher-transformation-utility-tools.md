@@ -2,7 +2,9 @@
 title: AEM Dispatcher 轉換工具
 description: 瞭解如何將AEM Dispatcher上的現有設定轉換為AEMas a Cloud ServiceDispatcher上的設定。
 exl-id: 2e95ff7b-cc94-477d-99ab-816a58998287
-source-git-commit: f7ffe727ecc7f1331c1c72229a5d7f940070c011
+feature: Migration
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '330'
 ht-degree: 28%

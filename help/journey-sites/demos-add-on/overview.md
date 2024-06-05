@@ -2,9 +2,11 @@
 title: AEM 參考示範附加元件歷程
 description: 從這裡開始，此歷程會逐步引導您了解如何以最少的 AEM 設定將 AEM 參考示範附加元件新增到沙箱環境中。並且，透過基於最佳做法的豐富範例來測試 AEM 的強大功能。
 exl-id: 8a6d4abf-0832-40e8-9ba6-1ad4ba794ffa
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '826'
+feature: Onboarding
+role: Admin, User, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+workflow-type: tm+mt
+source-wordcount: '816'
 ht-degree: 100%
 
 ---

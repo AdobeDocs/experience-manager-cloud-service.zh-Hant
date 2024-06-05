@@ -3,8 +3,9 @@ description: 大多數網站中都有會在整個網站使用的字串或變數�
 title: 預留位置
 feature: Edge Delivery Services
 exl-id: 392e2323-8d6f-40eb-a68e-51baeee7fc2d
-source-git-commit: 11f721b4a617c99e30329d7196f42d7b48067f1b
-workflow-type: ht
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+workflow-type: tm+mt
 source-wordcount: '45'
 ht-degree: 100%
 

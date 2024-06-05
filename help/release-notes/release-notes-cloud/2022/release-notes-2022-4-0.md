@@ -2,9 +2,11 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2022.4.0 版發行說明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2022.4.0 版發行說明。'
 exl-id: 6c86838a-cabf-4770-b1ae-618af70193a2
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+feature: Release Information
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '569'
+source-wordcount: '580'
 ht-degree: 20%
 
 ---
@@ -56,7 +58,7 @@ ht-degree: 20%
 * **表單資料模型設定**：您現在可以 [跨環境重複使用表單資料模型設定](/help/forms/create-form-data-models.md#runmode-specific-context-aware-config)，簡化資料整合，並降低IT成本。
 
 
-## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
+## [!DNL Experience Manager] as a [!DNL Cloud Service] 基礎 {#foundation}
 
 ### SDK建置分析器 {#sdk-build-analyzers}
 

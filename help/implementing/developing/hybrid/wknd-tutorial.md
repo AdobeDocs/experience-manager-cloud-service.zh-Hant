@@ -2,7 +2,9 @@
 title: wknd SPA專案
 description: 使用此多部分教學課程來讓自己沈浸在SPA開發中，引導您完成專案設定、元件對應、前端開發工具和應用程式路由，以使用React和Angular實施您自己的SPA。
 exl-id: 3e4445b7-6215-4126-aefa-bdba1ee1398d
-source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '137'
 ht-degree: 0%

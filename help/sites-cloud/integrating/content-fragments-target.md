@@ -2,7 +2,10 @@
 title: 將內容片段匯出到 Adobe Target
 description: 瞭解如何將您的內容片段匯出至Adobe Target，以測試並個人化體驗。
 exl-id: 760e0a39-0805-498e-a2c9-038fd1e1058d
-source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
+solution: Experience Manager Sites
+feature: Integration
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '2159'
 ht-degree: 0%

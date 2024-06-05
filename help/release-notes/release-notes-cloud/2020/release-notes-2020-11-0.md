@@ -2,7 +2,9 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2020.11.0 版發行說明。'
 description: '"[!DNL Adobe Experience Manager] 2020.11.0版as a Cloud Service發行說明。」'
 exl-id: 8066c0fb-c2f5-4625-9448-b0c74ff4e192
-source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
+feature: Release Information
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '1223'
 ht-degree: 13%
@@ -69,7 +71,7 @@ ht-degree: 13%
 
   另請參閱 [中的協助工具 [!DNL Dynamic Media]](/help/assets/dynamic-media/accessibility-dm.md).
 
-## Adobe Experience Manager商務as a Cloud Service {#cloud-services-commerce}
+## Adobe Experience Manager Commerceas a Cloud Service {#cloud-services-commerce}
 
 ### 新增功能 {#what-is-new-commerce}
 

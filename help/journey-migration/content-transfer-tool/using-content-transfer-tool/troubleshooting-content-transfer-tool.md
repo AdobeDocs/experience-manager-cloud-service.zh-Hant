@@ -2,17 +2,19 @@
 title: 內容轉移工具疑難排解
 description: 瞭解如何疑難排解內容轉移工具
 exl-id: 01bc9be7-a576-45eb-90a0-386ea951040d
-source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
+feature: Migration
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '183'
-ht-degree: 91%
+source-wordcount: '179'
+ht-degree: 88%
 
 ---
 
 # 內容轉移工具疑難排解 {#troubleshoot-content-transfer-tool}
 
 
-## 遺失 Blob ID {#missing-blobs}
+## 遺失Blob ID {#missing-blobs}
 
 如有回報指出遺失 Blob ID (如下所述)，則需要在現有存放庫中執行一致性檢查，並還原遺失的 Blob。
 `ERROR o.a.j.o.p.b.AbstractSharedCachingDataStore - Error retrieving record [ba45c53f8b687e7056c85dceebf8156a0e6abc7e]`
@@ -40,7 +42,7 @@ java -jar oak-run.jar datastore --check-consistency [<SEGMENT_STORE_PATH>|<MONGO
 接著，即可針對上述在 *OUT_DIR* 中建立、有一致性問題的檔案，檢查是否有路徑遺失二進位檔案，以及是否有採取適當操作如透過備份還原、刪除路徑、重新索引等等。
 
 
-## UI 行為 {#ui-behavior}
+## UI行為 {#ui-behavior}
 
 身為使用者，您可能會在「內容轉移工具」的使用者介面 (UI) 中看到下列行為變更：
 

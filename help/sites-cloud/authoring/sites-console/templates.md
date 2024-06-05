@@ -2,7 +2,10 @@
 title: 建立頁面範本
 description: 範本會定義結果頁面的結構，且使用範本編輯器，建立和維護範本不再是開發人員專屬的工作
 exl-id: 4c9dbf26-5852-45ab-b521-9f051c153b2e
-source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '4524'
 ht-degree: 9%
@@ -585,7 +588,7 @@ ht-degree: 9%
 
   ![原則使用情況](/help/sites-cloud/authoring/assets/templates-policy-use.png)
 
-#### 頁面內容 {#page-properties}
+#### 頁面屬性 {#page-properties}
 
 使用頁面屬性，您可以使用來定義所需的使用者端程式庫 **頁面設計** 對話方塊。 這些使用者端程式庫包含要與範本及使用該範本建立的頁面一起載入的樣式表和JavaScript。
 

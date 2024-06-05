@@ -3,10 +3,12 @@ title: AEM as a Cloud Service 上線歷程簡介
 description: 從此處開始，逐步引導您了解 AEM as a Cloud Service 的上線流程。
 exl-id: 892577db-05dc-49ff-bb2c-203efdb89c8c
 recommendations: noDisplay
-source-git-commit: 98618765b405316b18110182c221ddd968c70e96
+feature: Onboarding
+role: Admin, User, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '1290'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +28,7 @@ Adobe Experience Manager 是一套功能強大的可組合內容服務，可在�
 本指南將引導您了解最重要的上線主題，完成後您將會：
 
 * 充分了解上線流程中涉及的不同條款、服務和使用者。
-* 使您的團隊能夠啟動和執行，並邁出學習如何為您的 AEM as a Cloud Service 應用程式編寫和開發內容的第一步。
+* 使您的團隊能夠啟動和執行，並邁出學習如何為您的 AEM as a Cloud Service 應用程式製作和開發內容的第一步。
 
 因此：
 
@@ -46,13 +48,13 @@ Adobe Experience Manager 是一套功能強大的可組合內容服務，可在�
 
 * 已授與必要的使用者對 AEM as a Cloud Service 的存取權
 * 已為您的專案設定了第一個雲端資源。
-* 知道如何部署您的第一個程式碼並編寫您的第一個內容。
+* 知道如何部署您的第一個程式碼並製作您的第一個內容。
 
 您將開始使用新的 AEM as a Cloud Service 專案！
 
 ## 對象 {#audience}
 
-上線歷程是專門為剛接觸 AEM as a Cloud Service 和一般 AEM 客戶的&#x200B;**系統管理員**&#x200B;編寫的。系統管理員是在您的 AEM as a Cloud Service 合約簽署後，Adobe 第一個接觸的個人。他們通常是第一個在 AEM as a Cloud Service 存取和設定資源的人。如果您正在閱讀本主題，您很可能是系統管理員。
+上線歷程是專門為剛接觸 AEM as a Cloud Service 和一般 AEM 客戶的&#x200B;**系統管理員**&#x200B;製作的。系統管理員是在您的 AEM as a Cloud Service 合約簽署後，Adobe 第一個接觸的個人。他們通常是第一個在 AEM as a Cloud Service 存取和設定資源的人。如果您正在閱讀本主題，您很可能是系統管理員。
 
 系統管理員會管理其組織 AEMaaCS 使用者的各個方面，從存取權到權限都是。但是，系統管理員必須在此過程中與其他角色進行互動。
 
@@ -85,7 +87,7 @@ Adobe Experience Manager 是一套功能強大的可組合內容服務，可在�
 | 7 | [建立環境](create-environments.md) | 了解如何使用 Cloud Manager 建立環境。 | 系統管理員 |
 | 8 | [指派 AEM 產品設定檔](assign-profiles-aem.md) | 了解系統管理員如何將您的團隊成員指派到 AEM as a Cloud Service 產品設定檔。 | 系統管理員 |
 | 9 | [開發人員和部署管理員工作](developers.md) | 選擇性 - 了解作為開發人員如何存取和管理 Cloud Manager Git，以及作為部署管理員如何在 Cloud Manager 中設定管道和部署程式碼。 | 開發人員和部署管理員 |
-| 10 | [AEM 使用者工作](aem-users.md) | 選擇性 - 了解作為 AEM 作者如何存取 AEM as a Cloud Service 執行個體，並熟悉為 AEM as a Cloud Service 編寫內容。 | AEM 使用者 |
+| 10 | [AEM 使用者工作](aem-users.md) | 選擇性 - 了解作為 AEM 作者如何存取 AEM as a Cloud Service 執行個體，並熟悉為 AEM as a Cloud Service 製作內容。 | AEM 使用者 |
 
 ## 下一步 {#what-is-next}
 
@@ -103,4 +105,4 @@ Adobe Experience Manager 是一套功能強大的可組合內容服務，可在�
 
 如果您想要此上線歷程以外的內容，以下是您可選擇的其他資源。
 
-* [AEMas a Cloud Service入門](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/moving-to-aem-as-a-cloud-service/onboarding.html)  — 這部簡短影片會概略介紹AEM的Cloud Service上線流程。
+* [開始使用 AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/moving-to-aem-as-a-cloud-service/onboarding.html) - 本簡短影片將概述 AEM Cloud Service 的入門流程。

@@ -2,10 +2,12 @@
 title: SPA 藍圖
 description: 本檔案說明任何SPA架構都應該履行的一般且獨立於架構的合約，以便您在AEM中實作可編輯的SPA元件。
 exl-id: 9d47c0e9-600c-4f45-9169-b3c9bbee9152
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
-source-wordcount: '2055'
-ht-degree: 1%
+source-wordcount: '2022'
+ht-degree: 0%
 
 ---
 
@@ -94,7 +96,7 @@ SPA元件必須和頁面模型同步，並更新以相應地變更其內容。 �
 
 npm模組： [@adobe/aem-react-editable-components](https://www.npmjs.com/package/@adobe/aem-react-editable-components)
 
-#### Angular {#angular}
+#### angular {#angular}
 
 npm模組： [@adobe/aem-angular-editable-components](https://www.npmjs.com/package/@adobe/aem-angular-editable-components)
 
@@ -140,7 +142,7 @@ npm模組： [@adobe/aem-angular-editable-components](https://www.npmjs.com/pack
 
 容器會動態地從的存放區取得子元件 [`ComponentMapping`](#componentmapping) 資料庫。 容器接著會使用「模型提供者」功能擴充子元件，最後例項化它。
 
-### Page {#page}
+### 頁面 {#page}
 
 此 `Page` 元件延伸 `Container` 元件。 容器是用來包含和轉譯子元件（包括子頁面）的元件。 若要這麼做，容器會在 `:itemsOrder`， `:items`、和 `:children` 模型屬性。 此 `Page` 元件會從的存放區動態取得子元件 [`ComponentMapping`](#componentmapping) 資料庫。 此 `Page` 負責具現化子元件。
 
@@ -271,7 +273,7 @@ ComponentMapping.map = function map (resourceTypes, clazz, editConfig) {};
 
 繼續下列檔案，自行瞭解簡單SPA的運作和實驗SPA：
 
-* [開始在 AEM 中使用 React 建立 SPA](getting-started-react.md).
+* [使用React在AEM中開始使用SPA](getting-started-react.md).
 * [使用Angular在AEM中開始使用SPA](getting-started-angular.md).
 
 ## 延伸閱讀 {#further-reading}

@@ -2,9 +2,11 @@
 title: 驗證內容轉移
 description: 使用內容轉移工具來驗證內容轉移
 exl-id: a12059c3-c15a-4b6d-b2f4-df128ed0eea5
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+feature: Migration
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '1073'
+source-wordcount: '1074'
 ht-degree: 2%
 
 ---
@@ -56,7 +58,7 @@ ht-degree: 2%
 
 ### 範例 2 {#example-2}
 
-* **擷取**
+* **摘取**
 
   ![影像](/help/journey-migration/content-transfer-tool/assets-ctt/validation-03.png)
 
@@ -152,7 +154,7 @@ Migration validation took 0 minutes
 
 ## 疑難排解 {#troubleshooting}
 
-### 驗證失敗. 現在該怎麼辦？ {#validation-fail}
+### 驗證失敗。 現在該怎麼辦？ {#validation-fail}
 
 第一步是判斷擷取是否真的失敗，或擷取的內容是否已存在於目標環境中。 如果內嵌重複出現 **在內嵌之前擦除雲端例項上的現有內容** 選項已停用。
 

@@ -2,9 +2,12 @@
 title: 如何在 AEM Headless 中將您的應用程式和內容組合在一起
 description: 在 AEM Headless 開發人員歷程的這一部分中，了解如何使用您的 AEM 專案 (包含內容片段)、GraphQL 呼叫、REST API 呼叫和您的應用程式，並為上線做好準備。
 exl-id: bece84ad-4c8c-410c-847e-9ef3f79970cb
-source-git-commit: 94e5d0e84d5c55d0ff61a705e079b4dc8e32a777
-workflow-type: ht
-source-wordcount: '1092'
+solution: Experience Manager
+feature: Headless
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+workflow-type: tm+mt
+source-wordcount: '1061'
 ht-degree: 100%
 
 ---

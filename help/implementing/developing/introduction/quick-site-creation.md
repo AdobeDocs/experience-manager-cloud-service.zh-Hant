@@ -2,10 +2,12 @@
 title: 快速網站建立和前端自訂
 description: 瞭解快速網站建立工具如何使用網站範本、主題和前端管道，以快速部署新網站並使前端開發脫鉤。
 exl-id: 9ec5126b-bee4-445a-a4bb-0c27c1a93d3f
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '324'
-ht-degree: 5%
+ht-degree: 4%
 
 ---
 

@@ -2,7 +2,9 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2020.8.0 版發行說明。'
 description: '"[!DNL Adobe Experience Manager] 2020.8.0版as a Cloud Service發行說明。」'
 exl-id: 83413130-ae90-4419-bcf7-42fdc740452b
-source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
+feature: Release Information
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '1031'
 ht-degree: 34%
@@ -60,7 +62,7 @@ ht-degree: 34%
 * 第一次按一下「建立關聯及取消關聯」選項時，該選項沒有回應。 (CQ-4299022)
 * 下載資產時，如果您選取透過電子郵件接收資產的選項，則不會傳送電子郵件。 (CQ-4299146)
 
-## Adobe Experience Manager商務as a Cloud Service {#cloud-services-commerce}
+## Adobe Experience Manager Commerceas a Cloud Service {#cloud-services-commerce}
 
 ### 新增功能 {#what-is-new-commerce}
 

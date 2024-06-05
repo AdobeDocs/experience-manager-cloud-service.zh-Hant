@@ -2,10 +2,12 @@
 title: Adobe內容套件Maven外掛程式
 description: 使用Content Package Maven外掛程式來部署AEM應用程式
 exl-id: d631d6df-7507-4752-862b-9094af9759a0
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
-source-wordcount: '1832'
-ht-degree: 6%
+source-wordcount: '1802'
+ht-degree: 5%
 
 ---
 
@@ -87,7 +89,7 @@ mvn content-package:install -Dvault.targetURL="https://192.168.1.100:4502/crx/pa
 
 下表中的引數是所有目標的共同引數，除非在 **目標** 欄。
 
-| 名稱 | 類型 | 必要 | 預設 值 | 說明 | 目標 |
+| 名稱 | 類型 | 必要 | 預設值 | 說明 | 目標 |
 |---|---|---|---|---|---|
 | `failOnError` | `boolean` | 否 | `false` | 值 `true` 導致建置在錯誤發生時失敗。 值 `false` 導致建置忽略錯誤。 | 所有目標，除了 `package` |
 | `name` | `String` | `build`：是， `install`：否， `rm`：是 | `build`：無預設值， `install`：的值 `artifactId` Maven專案的屬性 | 要對其採取動作的套件的名稱 | 所有目標，除了 `ls` |
@@ -119,7 +121,7 @@ mvn content-package:install -Dvault.targetURL="https://192.168.1.100:4502/crx/pa
 
 除了下列引數外，請參閱 [通用引數](#common-parameters) 區段。
 
-| 名稱 | 類型 | 必要 | 預設 值 | 說明 |
+| 名稱 | 類型 | 必要 | 預設值 | 說明 |
 |---|---|---|---|---|
 | `artifact` | `String` | 否 | 的值 `artifactId` Maven專案的屬性 | 格式的字串 `groupId:artifactId:version[:packaging]` |
 | `artifactId` | `String` | 否 | 無 | 要安裝的成品的ID |
@@ -166,7 +168,7 @@ rm目標的所有引數都說明於 [通用引數](#common-parameters) 區段。
 
 除了下列引數外，請參閱 `name` 中的引數 [通用引數](#common-parameters) 區段。
 
-| 名稱 | 類型 | 必要 | 預設 值 | 說明 |
+| 名稱 | 類型 | 必要 | 預設值 | 說明 |
 |---|---|---|---|---|
 | `archive` | `org.apache.maven.archiver.MavenArchiveConfiguration` | 否 | 無 | 要使用的封存設定 |
 | `builtContentDirectory` | `java.io.File` | 是 | Maven組建的輸出目錄值 | 包含要包含在封裝中的內容的目錄 |
@@ -221,7 +223,7 @@ rm目標的所有引數都說明於 [通用引數](#common-parameters) 區段。
 
 #### 參數 {#parameters-6}
 
-| 名稱 | 類型 | 必要 | 預設 值 | 說明 |
+| 名稱 | 類型 | 必要 | 預設值 | 說明 |
 |---|---|---|---|---|
 | `detail` | `boolean` | 否 | `false` | 決定是否顯示每個目標的所有可設定屬性 |
 | `goal` | `String` | 否 | 無 | 此引數會定義要顯示其說明的目標名稱。 如果未指定任何值，則會顯示所有目標的說明。 |

@@ -2,7 +2,10 @@
 title: CDN 效能儀表板
 description: 瞭解Cloud Manager如何評估內容傳遞網路(CDN)效能，以及您可以從儀表板瞭解什麼。
 exl-id: ecd8c1ca-873f-4e73-ad73-b5f7561eb109
-source-git-commit: d1b2226a1deec2e71056c43c84672cb4a358bc8c
+solution: Experience Manager
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '383'
 ht-degree: 4%

@@ -2,10 +2,12 @@
 title: 在Adobe Experience Manager as a Cloud Service中使用Sling Resource Merger
 description: Sling Resource Merger提供存取及合併資源的服務
 exl-id: 5b6e5cb5-4c6c-4246-ba67-6b9f752867f5
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
-source-wordcount: '1157'
-ht-degree: 2%
+source-wordcount: '1158'
+ht-degree: 1%
 
 ---
 
@@ -183,8 +185,8 @@ Sling Resource Merger提供存取及合併資源的服務。 它為兩者提供�
    1. 在/apps下建立對應的節點
    1. 建立屬性 `sling:hideResource`
 
-      * 類型: `Boolean`
-      * 值: `true`
+      * 型別： `Boolean`
+      * 值： `true`
 
 * **隱藏節點的子系（同時保留節點的屬性）**
 
@@ -193,7 +195,7 @@ Sling Resource Merger提供存取及合併資源的服務。 它為兩者提供�
    1. 在下建立對應的節點 `/apps`
    1. 建立屬性 `sling:hideChildren`：
 
-      * 類型: `String[]`
+      * 型別： `String[]`
       * 值：子節點的清單（如中所定義） `/libs`)以隱藏/忽略
 
       您可以使用萬用字元&amp;ast；來隱藏/忽略所有子節點。
@@ -209,8 +211,8 @@ Sling Resource Merger提供存取及合併資源的服務。 它為兩者提供�
 
          這會指定節點(如 `/libs`)讓目前節點位於下列位置之前：
 
-         * 類型: `String`
-         * 值: `<before-SiblingName>`
+         * 型別： `String`
+         * 值： `<before-SiblingName>`
 
 ### 從您的程式碼叫用Sling Resource Merger {#invoking-the-sling-resource-merger-from-your-code}
 
@@ -222,7 +224,7 @@ Sling Resource Merger包含兩個自訂資源提供者，一個用於覆蓋，�
 >
 >這可確保叫用Sling資源合併器並傳回完全合併的資源（減少必須從以下來源復寫的結構） `/libs`)。
 
-* 覆蓋:
+* 覆蓋：
 
    * 用途：根據搜尋路徑合併資源
    * 掛接點： `/mnt/overlay`
@@ -231,7 +233,7 @@ Sling Resource Merger包含兩個自訂資源提供者，一個用於覆蓋，�
 
       * `getResource('/mnt/overlay' + '<relative-path-to-resource>');`
 
-* 覆寫:
+* 覆寫：
 
    * 用途：根據資源的超級型別合併資源
    * 掛接點： `/mnt/overide`

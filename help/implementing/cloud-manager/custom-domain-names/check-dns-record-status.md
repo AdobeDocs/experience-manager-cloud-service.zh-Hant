@@ -2,9 +2,12 @@
 title: 檢查 DNS 記錄狀態
 description: 了解如何使用 Cloud Manager 確定您的 DNS 設定是否正確解析。
 exl-id: 76ca1584-e21d-4e3a-a08a-82b2779167cf
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+solution: Experience Manager
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
-source-wordcount: '249'
+source-wordcount: '248'
 ht-degree: 96%
 
 ---

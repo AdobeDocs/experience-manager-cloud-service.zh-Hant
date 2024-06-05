@@ -2,10 +2,12 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2021.10.0 版發行說明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2021.10.0 版發行說明。'
 exl-id: ab584923-5f06-4b54-941b-e00bc1158b81
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+feature: Release Information
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '1436'
-ht-degree: 67%
+ht-degree: 66%
 
 ---
 
@@ -58,7 +60,7 @@ No customer-reported bugs fixed in Oct release. Details in CQDOC-18404.
 
 ### [!DNL Forms] 的新增功能 {#what-is-new-forms-oct-2021}
 
-* **Analytics for Adaptive Forms**：您現在可以透過Adobe Analytics for Adaptive Forms擷取及追蹤已登入和未登入（匿名）的行為，以收集使用者深入解析。 它可幫助您根據資料來進行明智的決策，以改善使用者體驗。
+* **Analytics for Adaptive Forms**：您現在可以透過Adobe Analytics for Adaptive Forms擷取及追蹤已登入和未登入（匿名）的行為，以收集使用者深入解析。 這可幫助您根據資料來進行明智的決策，以改善使用者體驗。
 
 ### [!DNL Forms] 搶鮮版頻道中可用的新功能 {#prerelease-features-forms-oct-2021}
 
@@ -77,13 +79,13 @@ No customer-reported bugs fixed in Oct release. Details in CQDOC-18404.
 
 ### 新增功能 {#what-is-new-cif}
 
-* CIF附加元件支援具有新GraphQL API和結構描述的最新Commerce v2.4.3
+* CIF附加元件支援具有新Commerce API和結構描述的最新GraphQL v2.4.3
 
 * 作者可使用RTF編輯器(RTE)，在文字欄位中新增產品與目錄頁面的連結。 RTE工具列中新增了CIF圖示，可開啟選擇器，以便快速搜尋和選取產品或類別，而不需離開內容。
 
 * 現有的彈出式購物車和結帳頁面已替換為專用的AEM購物車和結帳頁面。 這些頁面上的元件是使用Adobe Commerce的可擴充Peregrine元件所建置
 
-* 商家可以使用Commerce後端隱藏導覽中的特定產品目錄類別。 CIF導覽核心元件依照商務後端設定「包含在功能表中」以在導覽中顯示/隱藏類別
+* 商家可使用Commerce後端，在導覽中隱藏特定產品目錄類別。 CIF導覽核心元件依照商務後端設定「包含在功能表中」以在導覽中顯示/隱藏類別
 
 * 如果找不到類別或產品頁面，AEM Storefront Venia會傳回HTTP 404錯誤
 
@@ -93,7 +95,8 @@ No customer-reported bugs fixed in Oct release. Details in CQDOC-18404.
 
 ### 發行日期 {#release-date-cm-nov}
 
-AEM as a Cloud Service 2021.11.0 中的 Cloud Manager 發行日期是 2021 年 11 月 04 日。下一個版本計畫於 2021 年 12 月 09 日發行。
+AEMas a Cloud Service2021.11.0中Cloud Manager的發行日期為2021年11月04日。
+下一版本計畫於2021年12月9日發行。
 
 ### 新增功能 {#what-is-new-cm-nov}
 

@@ -2,7 +2,10 @@
 title: 使用標記
 description: 標籤是一種將網站內容分類的快速輕鬆方法
 exl-id: d2a9f578-fe0a-48ea-851c-2c84463661e0
-source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '560'
 ht-degree: 7%

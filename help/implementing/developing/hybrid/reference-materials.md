@@ -1,10 +1,12 @@
 ---
 title: SPA參考資料
-description: 單頁應用程式API參照和原始程式碼存放庫的概觀
+description: 單一頁面應用程式API參照和原始程式碼存放庫的概觀
 exl-id: c1cc2bd8-8ff1-406c-a0ce-0af001d66b53
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
-source-wordcount: '138'
+source-wordcount: '107'
 ht-degree: 0%
 
 ---
@@ -22,7 +24,7 @@ ht-degree: 0%
 
 ## 開放原始碼GitHub存放庫 {#github-repositories}
 
-以下是GitHub上適用於SPA程式庫的開放原始碼存放庫。
+以下是GitHub上SPA程式庫的開放原始碼存放庫。
 
 * [元件對應](https://github.com/adobe/aem-spa-component-mapping)
 * [頁面模型管理員](https://github.com/adobe/aem-spa-page-model-manager)

@@ -2,14 +2,16 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2022.7.0 版發行說明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2022.7.0 版發行說明。'
 exl-id: b339ab48-e836-4589-a573-9c50917b9280
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+feature: Release Information
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '949'
-ht-degree: 18%
+source-wordcount: '935'
+ht-degree: 16%
 
 ---
 
-# [!DNL Adobe Experience Manager] as a Cloud Service 202278.0 版發行說明 {#release-notes}
+# 202278.0版本注意事項 [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
 以下章節概述2022.7.0版的功能發行說明 [!DNL Experience Manager] as a Cloud Service。
 
@@ -114,9 +116,9 @@ ht-degree: 18%
 
 * AEMas a Cloud Service現在與Unified Shell整合，以改進使用者體驗，並將其與所有其他Experience Cloud應用程式統一。 另請參閱 [統一命令介面上的AEMas a Cloud Service](/help/overview/aem-cloud-service-on-unified-shell.md) 以取得更多詳細資料。
 
-## AdobeLearning Manager聯結器 {#learn-manage}
+## Adobe Learning Manager聯結器 {#learn-manage}
 
-* 全新Adobe Learning Manager內建Adobe Experience Manager Sites、Marketo Engage和Adobe Commerce的聯結器。 若要深入瞭解，請參閱： [AdobeLearning Manager使用手冊](https://helpx.adobe.com/learning-manager/user-guide.html).
+* 新的Adobe Learning Manager具有連線至Adobe Experience Manager Sites、Marketo Engage和Adobe Commerce的聯結器。 若要深入瞭解，請參閱： [Adobe Learning Manager使用手冊](https://helpx.adobe.com/learning-manager/user-guide.html).
 
 ## Cloud Manager {#cloud-manager}
 

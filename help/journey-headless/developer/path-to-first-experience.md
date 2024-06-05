@@ -2,9 +2,12 @@
 title: 踏上首次使用 AEM Headless 之路
 description: 在 AEM Headless 開發人員歷程的這一部分中，您將了解在 AEM 中實作您的第一個 Headless 體驗的步驟 (包括規劃考量事項)，並學習最佳做法以使您的操作過程盡可能順利。
 exl-id: 172ad8d8-5067-4452-bf91-1eea9a39a7bc
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
-workflow-type: ht
-source-wordcount: '1996'
+solution: Experience Manager
+feature: Headless
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+workflow-type: tm+mt
+source-wordcount: '1956'
 ht-degree: 100%
 
 ---

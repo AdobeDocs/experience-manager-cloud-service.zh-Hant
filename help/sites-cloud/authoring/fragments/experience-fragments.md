@@ -2,7 +2,10 @@
 title: 體驗片段
 description: 在Adobe Experience Manager as a Cloud Service中使用體驗片段，讓您的體驗可重複使用且具有彈性。
 exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
-source-git-commit: 2fff51075dd1cd2c7e93f61c02615075ae0ffac2
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '2099'
 ht-degree: 3%
@@ -70,7 +73,7 @@ ht-degree: 3%
 * 如果您有具有不同變數或轉譯的體驗。
    * 管道或內容特定變數。
    * 對群組有意義的體驗，例如跨頻道具有不同體驗的行銷活動。
-* 當您使用全通路商務時。
+* 當您使用全通道Commerce時。
    * 讓接觸點成為異動。
 
 ## 組織您的體驗片段 {#organizing-your-experience-fragments}

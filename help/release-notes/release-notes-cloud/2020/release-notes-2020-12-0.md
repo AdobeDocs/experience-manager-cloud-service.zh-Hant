@@ -2,7 +2,9 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2020.12.0 版發行說明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2020.12.0 版發行說明。'
 exl-id: 16875180-1f23-477d-9d4d-e220998c4983
-source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
+feature: Release Information
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '652'
 ht-degree: 10%
@@ -32,7 +34,7 @@ ht-degree: 10%
 
 * 此 [!DNL Experience Manager] 案頭應用程式可讓使用者在案頭應用程式介面上，從Windows檔案總管或Mac Finder拖放檔案，輕鬆上傳檔案和資料夾。 另請參閱 [使用案頭應用程式新增資產](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem).
 
-## Adobe Experience Manager商務as a Cloud Service {#cloud-services-commerce}
+## Adobe Experience Manager Commerceas a Cloud Service {#cloud-services-commerce}
 
 ### 新增功能 {#what-is-new-commerce}
 

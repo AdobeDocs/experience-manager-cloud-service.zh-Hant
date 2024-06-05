@@ -1,18 +1,19 @@
 ---
-title: AEMas a Cloud Service2022.12.0版中移轉工具的發行說明
-description: AEMas a Cloud Service2022.12.0版中移轉工具的發行說明
+title: AEMas a Cloud Service版本2022.12.0中移轉工具的發行說明
+description: AEMas a Cloud Service版本2022.12.0中移轉工具的發行說明
 feature: Release Information
 exl-id: e4b6795b-6999-451b-b51f-056a9d2ea652
-source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '74'
-ht-degree: 9%
+source-wordcount: '82'
+ht-degree: 8%
 
 ---
 
-# AEMas a Cloud Service2022.12.0版中移轉工具的發行說明 {#release-notes}
+# AEMas a Cloud Service版本2022.12.0中移轉工具的發行說明 {#release-notes}
 
-本頁面總覽AEMas a Cloud Service2022.12.0中移轉工具發行說明。
+本頁面總覽AEMas a Cloud Service2022.12.0中移轉工具的發行說明。
 
 ## 最佳做法分析工具 {#bpa-release}
 

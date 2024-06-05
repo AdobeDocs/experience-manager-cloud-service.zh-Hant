@@ -2,10 +2,12 @@
 title: 流量篩選規則包括 WAF 規則
 description: 設定流量篩選規則，包括 Web 應用程式防火牆 (WAF) 規則。
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: c914ae4a0ad3486feb54cbcf91f6659afa1372b8
+feature: Security
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '3947'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -27,7 +29,7 @@ ht-degree: 94%
 [按照教學課程進行操作](#tutorial)，快速建立有關此功能的具體專業知識。
 
 >[!NOTE]
->如需與在CDN設定流量相關的其他選項，包括編輯請求/回應、宣告重新導向以及代理至非AEM來源，請參閱 [在CDN設定流量](/help/implementing/dispatcher/cdn-configuring-traffic.md) 文章。
+>如需其他有關在內容傳遞網路設定流量的選項，包括編輯請求/回應、宣告重新導向和代理到非 AEM 來源，請參閱[在內容傳遞網路上設定流量](/help/implementing/dispatcher/cdn-configuring-traffic.md)文章。
 
 
 ## 本文的結構方式 {#how-organized}
@@ -40,8 +42,8 @@ ht-degree: 94%
 * **規則語法：**&#x200B;閱讀有關如何在 `cdn.yaml` 設定檔案宣告流量篩選規則。此包括可供所有 Sites 和 Forms 客戶使用的流量篩選規則，以及針對那些授權該功能者所提供的 WAF 規則子類別。
 * **規則範例：**&#x200B;查看已宣告的規則範例以協助您進行。
 * **速率限制規則：**&#x200B;了解如何使用速率限制規則保護您的網站避免受到大量的攻擊。
-* **流量篩選規則警報** 設定觸發規則時通知的警示。
-* **來源處的預設流量尖峰警報** 當來源出現提示DDoS攻擊的流量激增時，系統會收到通知。
+* **流量篩選規則警報**：設定警報，以便在觸發規則時收到通知。
+* **來源流量尖峰預設警報**：來源出現暗示可能發生 DDoS 攻擊的流量尖峰時收到通知。
 * **CDN 日誌：**&#x200B;查看哪些宣告的規則和 WAF 標幟與您的流量相符。
 * **儀表板工具：**&#x200B;分析您的 CDN 日誌以提出新的流量篩選規則。
 * **推薦的入門規則：**&#x200B;一組可以開始使用的入門規則。
@@ -269,7 +271,7 @@ when:
 | NOTUTF8 | 無效的編碼 | 無效的編碼可能會導致伺服器將要求中的惡意字元翻譯為回應，進而導致拒絕服務或 XSS |
 | JSON-ERROR | JSON 編碼錯誤 | 指定為在「Content-Type」要求標頭中包含 JSON 但包含 JSON 剖析錯誤的 POST、PUT 或 PATCH 要求內文。這經常和程式設計錯誤或自動化亦或惡意要求有關。 |
 | MALFORMED-DATA | 要求內文中格式錯誤的資料 | 根據「Content-Type」要求標頭，格式錯誤的 POST、PUT 或 PATCH 要求內文。例如，如果指定了「Content-Type: application/x-www-form-urlencoded」要求標頭並包含 json 的 POST 內文。這經常是程式設計錯誤、自動化或惡意要求。需要代理程式 3.2 或更高版本。 |
-| SANS | 惡意的 IP 流量 | [SANS 網際網路風暴中心](https://isc.sans.edu/)進行惡意活動的被舉報  IP 位址清單 |
+| SANS | 惡意的 IP 流量 | [SANS 網際網路風暴中心](https://isc.sans.edu/)進行惡意活動的被舉報 IP 位址清單 |
 | NO-CONTENT-TYPE | 缺少「Content-Type」要求標頭 | 沒有「Content-Type」要求標頭的 POST、PUT 或 PATCH 要求。在此案例中，預設情況下應用程式伺服器應假設「Content-Type: text/plain; charset=us-ascii」。許多自動化和惡意要求可能會缺少「內容類型」。 |
 | NOUA | 沒有使用者代理程式 | 許多自動化和惡意要求會使用偽造的使用者代理程式或缺少使用者代理程式，這使得難以識別發出要求的裝置類型。 |
 | TORNODE | Tor 流量 | Tor 是可隱藏使用者身份的軟體。Tor 流量激增可能表示有攻擊者試圖掩飾其位置。 |
@@ -521,17 +523,17 @@ data:
           experimental_alert: true
 ```
 
-## 來源處的預設流量尖峰警報 {#traffic-spike-at-origin-alert}
+## 來源流量尖峰預設警報 {#traffic-spike-at-origin-alert}
 
 >[!NOTE]
 >
 >此功能正在逐步推出。
 
-一個 [動作中心](/help/operations/actions-center.md) 當有大量的流量傳送到來源時，會傳送電子郵件通知，其中高臨界值的請求來自相同的IP位址，因此暗示DDoS攻擊。
+有大量流量傳送到來源，且其中來自相同 IP 位址的請求臨界值相當高，因而暗示可能發生 DDoS 攻擊時，將傳送[行動中心](/help/operations/actions-center.md)電子郵件通知。
 
-如果符合此臨界值，Adobe將會封鎖來自該IP位址的流量，但建議您採取其他措施來保護您的來源，包括設定速率限制流量篩選規則以封鎖較低臨界值的流量尖峰。 請參閱 [使用流量規則教學課程封鎖DoS和DDoS攻擊](#tutorial-blocking-DDoS-with-rules) 進行引導式逐步說明。
+如果達到此臨界值，Adobe 將阻止來自該 IP 位址的流量，但建議採取其他措施來保護您的來源，包括設定速率限制流量篩選規則，以便在臨界值較低時阻擋流量尖峰。請參閱[「使用流量篩選器規則封鎖 DoS 和 DDoS 攻擊」教學課程](#tutorial-blocking-DDoS-with-rules)以瞭解引導式逐步說明。
 
-此警報預設為啟用，但您可使用 *enable_ddos_alerts* 屬性，設為false。
+此警報預設為啟用，但可以將 *enable_ddos_alerts* 屬性設定為 false 來加以停用。
 
 ```
 kind: "CDN"
@@ -657,7 +659,7 @@ data:
 
 Adobe 提供了將儀表板工具下載到您電腦上的機制，以擷取透過 Cloud Manager 下載的 CDN 日誌。使用此工具，您可以分析流量，以協助制定要宣告的適當流量篩選規則，包括 WAF 規則。
 
-控制面板工具可直接從 [AEMCS-CDN-Log-Analysis-Tooling](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling) GitHub存放庫。
+儀表板工具可以直接從 [AEMCS-CDN-Log-Analysis-Tooling](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling) GitHub 存放庫原地複製。
 
 [教學課程](#tutorial)可供了解何使用儀表板工具的具體說明。
 

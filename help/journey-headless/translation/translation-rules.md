@@ -2,10 +2,13 @@
 title: 設定 Headless 內容的翻譯規則
 description: 了解如何定義翻譯規則以識別要翻譯的內容。
 exl-id: 878ffd5d-0f10-4990-9779-bdf55cd95fac
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+solution: Experience Manager
+feature: Headless
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '912'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -73,7 +76,7 @@ ht-degree: 99%
    ![新增內容](assets/add-translation-context.png)
 1. 使用路徑瀏覽器選擇所需的路徑並選取「**確認**」來儲存。請記住，內容片段 (其包含 Headless 內容) 通常位於 `/content/dam/<your-project>` 下。
    ![選取路徑](assets/select-context.png)
-1. 選取您建立的前後關聯，然後選取 **編輯**. 這將開啟&#x200B;**翻譯規則編輯器** 以設定屬性。
+1. 選取您剛剛建立的內容，然後選取「**編輯**」。這將開啟&#x200B;**翻譯規則編輯器** 以設定屬性。
    ![翻譯規則編輯器](assets/translation-rules-editor.png)
 1. 依預設，所有設定都繼承自父路徑，在此案例中為 `/content/dam`。取消勾選&#x200B;**繼承自`/content/dam`** 選項，以新增其他欄位至設定。
 1. 取消勾選後，在清單的「**一般**」區段下，新增您[先前確認為翻譯欄位](getting-started.md#content-models)之內容片段模型的屬性名稱。

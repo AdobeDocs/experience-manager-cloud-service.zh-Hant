@@ -2,7 +2,10 @@
 title: 樣式系統
 description: 樣式系統可讓範本作者在元件的內容原則中定義樣式類別，讓內容作者在編輯頁面上的元件時能夠選取這些類別。 這些樣式可作為元件的替代視覺變體，使其更靈活。
 exl-id: 224928dd-e365-4f3e-91af-4d8d9f47efdd
-source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '1305'
 ht-degree: 1%

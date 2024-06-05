@@ -2,7 +2,10 @@
 title: 將體驗片段匯出到 Adobe Target
 description: 瞭解如何將您的體驗片段匯出至Adobe Target，以測試並個人化體驗。
 exl-id: 752d91f9-13a6-40c2-9425-7d18dafe9205
-source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
+solution: Experience Manager Sites
+feature: Integration
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '2184'
 ht-degree: 1%
@@ -51,7 +54,7 @@ ht-degree: 1%
 >如需詳細資訊，請參閱下列內容：
 >
 >* [Adobe Target開發](https://developers.adobetarget.com/)
->* [核心元件 — 體驗片段](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
+>* [核心元件 — 體驗片段](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hant)
 >* [Adobe Target — 如何使用Adobe Experience Manager (AEM)體驗片段？](https://experienceleague.adobe.com/docs/target/using/experiences/offers/aem-experience-fragments.html)
 >* [AEM 6.5 — 手動設定與Adobe Target的整合 — 建立Target雲端設定](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/target-configuring.html#creating-a-target-cloud-configuration)
 

@@ -1,11 +1,13 @@
 ---
 title: Adobe Experience Manager as a Cloud Service 的同網站 Cookie 支援
-description: Adobe Experience Manager as a Cloud Service的同網站Cookie支援。
+description: Adobe Experience Manager as a Cloud Service 的同網站 Cookie 支援。
 exl-id: 2cec7202-4450-456f-8e62-b7ed3791505c
-source-git-commit: 678e81eb22cc1d7c239ac7a2594b39a3a60c51e2
+feature: Security
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '278'
-ht-degree: 74%
+ht-degree: 100%
 
 ---
 
@@ -15,13 +17,13 @@ ht-degree: 74%
 
 此設定的預設值 (`SameSite=Lax`) 可能會導致 AEM 執行個體或服務之間的驗證無法運作。這是因為這些服務的網域或 URL 結構可能不受此 cookie 原則的約束。
 
-若要解決此問題，請將SameSite Cookie屬性設為 `None` 用於登入權杖。
+若要解決這個問題，可針對登入權杖將 SameSite cookie 屬性設為 `None`。
 
 >[!CAUTION]
 >
 >`SameSite=None` 設定僅在通訊協定安全 (HTTPS) 時套用。
 >
->如果通訊協定不安全(HTTP)，則會忽略設定，而伺服器會顯示此警告訊息：
+>如果通訊協定不安全 (HTTP)，則系統會忽略該設定且伺服器會顯示此警告訊息：
 >
 >`WARN com.day.crx.security.token.TokenCookie Skip 'SameSite=None'`
 
@@ -36,4 +38,4 @@ ht-degree: 74%
 1. 按照[使用 AEM SDK 快速入門產生 OSGi 設定](/help/implementing/deploying/configuring-osgi.md#generating-osgi-configurations-using-the-aem-sdk-quickstart)中概述的步驟為此特定設定產生 JSON 格式設定
 1. 按照[用於設定屬性的 Cloud Manager API 格式](/help/implementing/deploying/configuring-osgi.md#cloud-manager-api-format-for-setting-properties) OSGi 文件中步驟來套用設定。
 
-更新此設定且使用者登出並再次登入後， `login-token` Cookie具有 `None` 屬性集並包含在跨網站請求中。
+此設定一更新且使用者登出並再次登入後，`login-token` cookie 就會有 `None` 屬性集，並將包含在跨網站請求中。

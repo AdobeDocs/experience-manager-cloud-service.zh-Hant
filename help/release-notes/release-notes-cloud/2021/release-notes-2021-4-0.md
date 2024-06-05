@@ -2,10 +2,12 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2021.4.0 版發行說明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2021.4.0 版發行說明。'
 exl-id: 775332b5-24ce-430e-97a2-6eeb80877c64
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+feature: Release Information
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '1533'
-ht-degree: 40%
+source-wordcount: '1545'
+ht-degree: 43%
 
 ---
 
@@ -95,9 +97,9 @@ ht-degree: 40%
 
 * **在啟用 Adobe Sign 的最適化表格中使用政府機關身分證件驗證方法**
 
-  在先進的機器學習演演算法的支援下，Adobe Sign的政府機關身分證件流程讓全球的公司能夠確保對其接收者身分進行高品質的驗證。 現在，您可以在啟用 Adobe Sign 的最適化表格中使用政府機關身分證件驗證方法。
+  在先進的機器學習演算法的支援下，Adobe Sign 的政府機關身分證件流程讓全球的公司能夠確保對其接收者身分進行高品質的驗證。 現在，您可以在啟用 Adobe Sign 的最適化表格中使用政府機關身分證件驗證方法。
 
-  政府機關身分證件是優質的身分驗證方法，會指示收件者 [上傳政府機構簽發的身分證件（駕照、國民身分證、護照）的影像](https://helpx.adobe.com/tw/sign/using/adobesign-authentication-government-id.html)，然後評估該檔案以確保其真實性。
+  政府機關身分證件是優質的身分驗證方法，會指示接收者[上傳政府機構簽發的身分證件 (駕照、國民身分證、護照) 的影像](https://helpx.adobe.com/tw/sign/using/adobesign-authentication-government-id.html)，然後評估該證件以確保其真實性。
 
 * **支援使用表格中的簽名體驗來提交非同步的最適化表格**
 
@@ -124,7 +126,7 @@ ht-degree: 40%
 * 為了更方便辨識內容，該服務現在會為XDP、動態PDF和結構描述檔案產生即時縮圖。
 * 新增將PDF檔案移動到放置在AEM Forms UI上的資料夾的功能。
 
-## Adobe Experience Manager商務as a Cloud Service {#cloud-services-commerce}
+## Adobe Experience Manager Commerceas a Cloud Service {#cloud-services-commerce}
 
 ### 新增功能 {#what-is-new-commerce}
 
@@ -136,7 +138,7 @@ ht-degree: 40%
 
 * AEM店面中暫存目錄資料的視覺指示器
 
-* 現在可透過Cloud Manager UI設定商務端點
+* Commerce端點現在可透過Cloud Manager UI設定
 
 ### 錯誤修正 {#bug-fixes-commerce}
 

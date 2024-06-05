@@ -2,10 +2,12 @@
 title: Adobe Experience Manager as a Cloud Service 發行前通道
 description: 了解如何使用發行前通道來取得即將推出的 AEM as a Cloud Service 功能預覽。
 exl-id: cfc91699-0087-40fa-a76c-0e5e1e03a5bd
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+feature: Release Information
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '1304'
-ht-degree: 100%
+source-wordcount: '1264'
+ht-degree: 99%
 
 ---
 
@@ -177,7 +179,7 @@ Javadoc 會發佈到 Maven Central。
 
    如同往常，個別專案可以使用相依性。
 
-1. 部署到您的本機伺服器.
+1. 部署至您的本機伺服器。
 
 1. 如果您滿意它在本機有如預期般運作，請將程式碼提交到開發分支並使用 Cloud Manager 非生產管道，以部署到有訂閱發行前通道的環境。
 

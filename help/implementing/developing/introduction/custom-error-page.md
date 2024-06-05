@@ -2,10 +2,12 @@
 title: 自訂錯誤頁面
 description: AEM隨附處理HTTP錯誤的標準錯誤處理常式，且可加以自訂。
 exl-id: b74c65d1-8ef5-4ad4-8255-8187f3b1d84c
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
-source-wordcount: '571'
-ht-degree: 2%
+source-wordcount: '569'
+ht-degree: 0%
 
 ---
 
@@ -38,7 +40,7 @@ AEM隨附處理HTTP錯誤的標準錯誤處理常式；例如，顯示：
 
    預設不存在目的地路徑，因此您必須在首次執行此動作時建立該路徑。
 
-1. 導覽至 `/apps/sling/servlet/errorhandler`。您可以在這裡執行下列任一操作：
+1. 瀏覽至 `/apps/sling/servlet/errorhandler`. 您可以在這裡執行下列任一操作：
 
    * 編輯適當的現有指令碼，以提供所需的資訊。 或
    * 建立和編輯所需程式碼的新指令碼。

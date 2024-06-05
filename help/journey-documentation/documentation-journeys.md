@@ -3,8 +3,10 @@ title: AEM 文件歷程
 description: 文件歷程透過將複雜和不同的功能繫結在一起，在 AEM 文件中提供敘述結構，以便以最佳實務的方式解決業務目標。專為 AEM 初學者而設計，該歷程介紹了從頭到尾實現目標的概念和功能。
 exl-id: aab346b8-26dc-4d5b-88bb-720cf634e0a2
 hidefromtoc: true
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
-workflow-type: ht
+feature: Release Information
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+workflow-type: tm+mt
 source-wordcount: '1347'
 ht-degree: 100%
 

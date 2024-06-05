@@ -2,7 +2,9 @@
 title: 使用隱藏條件
 description: 隱藏條件可用於判斷元件資源是否已轉譯。
 exl-id: 2a96f246-fb0f-4298-899e-ebbf9fc1c96f
-source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '584'
 ht-degree: 1%
@@ -49,7 +51,7 @@ ${cqDesign.property1 == 'someText' && cqDesign.property2 || cqDesign.property3 !
 
 ## 範例 {#example}
 
-在整個AEM和 [核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 尤其是這個。 例如，請考慮 [列出核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/list.html) 在中實作 [wknd教學課程](/help/implementing/developing/introduction/develop-wknd-tutorial.md).
+在整個AEM和 [核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hant) 尤其是這個。 例如，請考慮 [列出核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/list.html) 在中實作 [wknd教學課程](/help/implementing/developing/introduction/develop-wknd-tutorial.md).
 
 [使用範本編輯器](/help/sites-cloud/authoring/sites-console/templates.md)，範本作者可在「設計」對話方塊中定義頁面作者可用的清單元件選項。 您可以啟用或停用選項，例如是否允許清單成為靜態清單、子頁面清單、標籤頁面清單等。
 

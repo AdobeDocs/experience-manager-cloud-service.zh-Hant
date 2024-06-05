@@ -2,7 +2,9 @@
 title: 為元件啟用 JSON 匯出
 description: 元件可調整為根據模組化架構產生其內容的JSON匯出。
 exl-id: e9be5c0c-618e-4b56-a365-fcdd185ae808
-source-git-commit: 89f23a590338561b4cfeb10b54a260a135ec2f08
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '421'
 ht-degree: 6%
@@ -70,7 +72,7 @@ https://<server>:<port>/content/page.model.selector1.selector2.json
 
 ## 範例 {#example}
 
-[核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 支援JSON匯出，可作為參考使用。
+[核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hant) 支援JSON匯出，可作為參考使用。
 
 如需範例，請參閱影像核心元件的Sling模型實作及其附註介面。
 
@@ -79,4 +81,4 @@ https://<server>:<port>/content/page.model.selector1.selector2.json
 * [內容片段](/help/sites-cloud/administering/content-fragments/overview.md)
 * [內容片段模型](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
 * [使用內容片段製作](/help/sites-cloud/authoring/fragments/content-fragments.md)
-* [核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 和 [內容片段元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html)
+* [核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hant) 和 [內容片段元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html)

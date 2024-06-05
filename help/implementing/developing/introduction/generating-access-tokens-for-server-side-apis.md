@@ -2,7 +2,9 @@
 title: 為伺服器端API產生存取權杖
 description: 瞭解如何產生安全JWT權杖，以促進協力廠商伺服器與AEMas a Cloud Service之間的通訊
 exl-id: 20deaf8f-328e-4cbf-ac68-0a6dd4ebf0c9
-source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '2089'
 ht-degree: 0%

@@ -1,15 +1,18 @@
 ---
-title: 使用定位模式編寫目標內容
+title: 使用定位模式製作目標內容
 description: 目標定位模式和Target元件提供建立體驗內容的工具
 exl-id: 8d80d867-2d0f-4ddb-8a06-f9441e6d85ce
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '5302'
+source-wordcount: '5282'
 ht-degree: 5%
 
 ---
 
-# 使用定位模式編寫目標內容 {#authoring-targeted-content-using-targeting-mode}
+# 使用定位模式製作目標內容 {#authoring-targeted-content-using-targeting-mode}
 
 使用AEM的鎖定模式製作鎖定內容。 目標定位模式和Target元件提供建立體驗內容的工具：
 
@@ -106,7 +109,7 @@ ht-degree: 5%
 
 1. 在 **目標定位** engine下拉式功能表，選取您的目標定位引擎。
 
-   * 如果您選取 **ContextHub AEM**，其餘欄位會變暗且無法使用。 選擇 **建立**。
+   * 如果您選取 **ContextHub AEM**，其餘欄位會變暗且無法使用。 選取「**建立**」。
 
    * 如果您選取 **Adobe Target**，您可以選取設定（預設為您設定帳戶時提供的設定）和活動型別。 <!--If you select **Adobe Target**, you can select a configuration (by default, it is the configuration you provided when you [configured the account](/help/sites-administering/opt-in.md)) and Activity Type.-->
 
@@ -378,7 +381,7 @@ ht-degree: 5%
 1. 選取體驗以顯示自訂選件。
 1. 選取自訂選件以顯示選件功能表，然後選取 **將選件儲存至選件資料庫** 圖示。
 
-   ![將選件儲存至選件程式庫](../assets/targeted-save-offer-library-button.png)
+   ![將選件儲存至選件資料庫](../assets/targeted-save-offer-library-button.png)
 
 1. 輸入選件的名稱，並選取您要新增選件的程式庫，然後選取核取記號圖示。
 

@@ -2,9 +2,11 @@
 title: 在 AEM 中編輯外部 SPA
 description: 本檔案說明將獨立SPA上傳到AEM執行個體、新增內容的可編輯區段及啟用編寫的建議步驟。
 exl-id: 7978208d-4a6e-4b3a-9f51-56d159ead385
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
-source-wordcount: '2418'
+source-wordcount: '2374'
 ht-degree: 1%
 
 ---
@@ -369,7 +371,7 @@ RemotePage元件預期實作會提供如下的資產資訊清單 [可在此處�
 * [AEM Headful 和 Headless 技術](/help/implementing/developing/headful-headless.md)
 * [AEM專案原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)
 * [wknd SPA專案](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html)
-* [開始在 AEM 中使用 React 建立 SPA](/help/implementing/developing/hybrid/getting-started-react.md)
+* [使用React在AEM中開始使用SPA](/help/implementing/developing/hybrid/getting-started-react.md)
 * [SPA參考資料（API參考）](/help/implementing/developing/hybrid/reference-materials.md)
 * [SPA Blueprint和PageModelManager](/help/implementing/developing/hybrid/blueprint.md#pagemodelmanager)
 * [SPA模型路由](/help/implementing/developing/hybrid/routing.md)

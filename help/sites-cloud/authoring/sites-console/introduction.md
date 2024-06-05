@@ -1,15 +1,18 @@
 ---
-title: Sites主控台
+title: Sites 主控台
 description: 瞭解如何使用Sites主控台來管理和組織AEM頁面。
-source-git-commit: 91ce6a0c880436327f4dd333a2eb3d36a4e89a4d
+exl-id: b666e62a-c3dc-4be3-8932-d5fe67b178d6
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '1628'
-ht-degree: 5%
+ht-degree: 6%
 
 ---
 
-
-# Sites主控台 {#sites-console}
+# Sites 主控台 {#sites-console}
 
 瞭解如何使用 **網站** 主控台以管理和組織您的AEM頁面。
 
@@ -55,7 +58,7 @@ ht-degree: 5%
 
 ![展開的階層連結範例](assets/sites-console-breadcrumbs-example.png)
 
-### 請全選 {#select-all}
+### 全選 {#select-all}
 
 點選或按一下 **全選** button會選取主控台目前檢視中的所有專案。
 

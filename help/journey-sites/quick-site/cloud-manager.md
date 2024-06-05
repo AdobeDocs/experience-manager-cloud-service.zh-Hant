@@ -2,9 +2,12 @@
 title: 了解 Cloud Manager 和快速建立網站工作流程
 description: 了解 Cloud Manager 以及它與快速建立網站的新流程如何連結在一起。
 exl-id: 5d264078-e552-48ca-8d82-294a646e6b1f
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
-workflow-type: ht
-source-wordcount: '1127'
+solution: Experience Manager Sites
+feature: Developing
+role: Admin, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+workflow-type: tm+mt
+source-wordcount: '1113'
 ht-degree: 100%
 
 ---

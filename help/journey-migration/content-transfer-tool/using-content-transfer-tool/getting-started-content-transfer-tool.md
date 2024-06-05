@@ -2,7 +2,9 @@
 title: 內容轉移工具快速入門
 description: 瞭解如何開始使用內容轉移工具
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
-source-git-commit: 0161477e5248267224fe6d637a192f409161f6d3
+feature: Migration
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '1362'
 ht-degree: 16%

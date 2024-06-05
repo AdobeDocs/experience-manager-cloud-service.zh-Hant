@@ -2,10 +2,12 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2021.11.0 版發行說明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2021.11.0 版發行說明。'
 exl-id: 86f8ddd1-af51-4874-9111-0935b5a162c1
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+feature: Release Information
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '1053'
-ht-degree: 57%
+source-wordcount: '1058'
+ht-degree: 55%
 
 ---
 
@@ -46,13 +48,13 @@ ht-degree: 57%
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-### [!DNL Forms]的新增功能 {#what-is-new-forms}
+### [!DNL Forms] 的新增功能 {#what-is-new-forms}
 
 * **外部化 AEM Workflow 資料以進行安全處理**：您可以將包含敏感個人資料 (SPD) 元素的程序內 AEM 工作流程資料 (AEM 工作流程變數資料) 儲存在客戶管理的存放庫中，以進行安全處理。資料元素和工作流程變數未儲存在 AEM 存放庫，並在處理工作流程時隨選從客戶管理的存放庫擷取。
 
 ### [!DNL Forms] 發行前通道中可用的新功能 {#prerelease-features-forms}
 
-* **[!DNL AEM Forms as a Cloud Service - Communications]**：[通訊 API](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/using-communications/aem-forms-cloud-service-communications.html) 可幫助您合併範本和 XML 資料，以產生多種格式的列印文件。 此服務可讓您以同步和批次模式產生檔案。 這些 API 可讓您建立以下用途的應用程式：
+* **[!DNL AEM Forms as a Cloud Service - Communications]**：[通訊 API](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/using-communications/aem-forms-cloud-service-communications.html) 可幫助您合併範本和 XML 資料，以產生多種格式的列印文件。 此服務可讓您以同步和批次模式產生文件。這些 API 可讓您建立以下用途的應用程式：
 
    * 使用 XML 資料填寫範本檔案 (PDF 和 XDP) 來產生文件。
    * 產生多種格式的輸出表單，包括非互動式 PDF 列印資料流。
@@ -79,7 +81,8 @@ ht-degree: 57%
 
 ### 發行日期 {#release-date-cm-nov}
 
-AEM as a Cloud Service 2021.11.0 中的 Cloud Manager 發行日期是 2021 年 11 月 04 日。下一個版本計畫於 2021 年 12 月 09 日發行。
+AEMas a Cloud Service2021.11.0中Cloud Manager的發行日期為2021年11月04日。
+下一版本計畫於2021年12月9日發行。
 
 ### 新增功能 {#what-is-new-cm-nov}
 

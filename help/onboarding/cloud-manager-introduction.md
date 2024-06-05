@@ -2,10 +2,12 @@
 title: Cloud Manager 簡介
 description: 了解 Cloud Manager 如何透過其方案、環境和管道支援您的 AEM 專案。
 exl-id: b743f126-b34e-4f48-a3f0-5dbd4e1ac34e
-source-git-commit: 6181b066742357169b67f605ac3970685537bb5e
+feature: Onboarding
+role: Admin, User, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '864'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -61,7 +63,7 @@ Cloud Manager 是 AEM as a Cloud Service 的重要元件，可作為您團隊的
 
 >[!TIP]
 >
->也可使用具有可設定許可權的自訂許可權設定檔。 請參閱檔案 [自訂許可權](/help/implementing/cloud-manager/custom-permissions.md) 以取得更多詳細資料。
+>也可以使用具有可設定設權限的自訂權限設定檔。如需更多詳細資訊，請參閱文件[自訂權限](/help/implementing/cloud-manager/custom-permissions.md)。
 
 ## Cloud Manager 方案 {#cloud-manager-programs}
 

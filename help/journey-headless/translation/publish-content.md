@@ -2,8 +2,11 @@
 title: 發佈翻譯的 Headless 內容
 description: 了解如何發佈翻譯的內容，並在內容更新時更新翻譯。
 exl-id: eb8d1152-ed37-47ca-86a8-6a66c010ee62
-source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
-workflow-type: ht
+solution: Experience Manager
+feature: Headless
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+workflow-type: tm+mt
 source-wordcount: '1359'
 ht-degree: 100%
 

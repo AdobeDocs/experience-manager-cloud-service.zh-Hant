@@ -1,11 +1,13 @@
 ---
 title: Adobe Experience Manager as a Cloud Service 的 IMS 支援
-description: Adobe Experience Manager as a Cloud Service的影像管理系統支援。
+description: Adobe Experience Manager as a Cloud Service 的影像管理系統支援。
 exl-id: fb563dbd-a761-4d83-9da1-58f8e462b383
-source-git-commit: 678e81eb22cc1d7c239ac7a2594b39a3a60c51e2
+feature: Security
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '1922'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -44,23 +46,23 @@ IMS 驗證採用 OAuth 通訊協定，能在 AEM 和 Adobe IMS 端點之間運�
 
 若要使用 Adobe IMS 進行 AEM 驗證，客戶必須先開始使用 Adobe Admin Console。
 
-首先，客戶必須擁有已在Adobe IMS中布建的組織。 Adobe 企業客戶在 [Adobe Admin Console](https://helpx.adobe.com/tw/enterprise/using/admin-console.html) 中會顯示為 IMS 組織。此區域是 Adobe 客戶用來管理使用者和群組之產品權益的門戶。
+首先，客戶必須有佈建在 Adobe IMS 的組織。Adobe 企業客戶在 [Adobe Admin Console](https://helpx.adobe.com/tw/enterprise/using/admin-console.html) 中會顯示為 IMS 組織。此區域是 Adobe 客戶用來管理使用者和群組之產品權益的門戶。
 
-AEM客戶應先布建組織，而在IMS布建過程中，客戶即可在Admin Console中使用客戶例項，管理使用者權益和存取許可權。
+AEM 客戶應先有已佈建的組織，而在 IMS 佈建過程中，客戶即可在 Admin Console 中使用客戶執行個體，管理使用者權益和存取權限。
 
 客戶成為 IMS 組織後，即可依以下摘要內容設定其系統：
 
 ![IMS 上線](/help/security/assets/ims2.png)
 
-1. 指定的系統管理員會收到登入Cloud Manager的邀請。 登入Cloud Manager後，系統管理員可以選擇布建AEM程式和環境，或導覽至Admin Console以執行管理任務。
+1. 指定的系統管理員會收到 Cloud Manager 的登入邀請函。登入 Cloud Manager 後，系統管理員可以選擇佈建 AEM 程序和環境，或導覽至 Admin Console 執行管理任務。
 1. 系統管理員需先宣告網域，以確認各別網域的所有權 (例如，acme.com)
 1. 系統管理員設定使用者目錄
-1. 系統管理員在Admin Console中執行IDP設定以設定單一登入。
+1. 系統管理員在 Admin Console 中執行 IDP 設定，以設定單一登入。
 1. AEM 管理員可照常管理本機群組和權限。
 
 [此文件](https://helpx.adobe.com/tw/enterprise/using/set-up-identity.html)說明 Adobe 身分管理基本知識，包括 IDP 設定。
 
-涵蓋企業管理及Admin Console使用情形 [此處](https://helpx.adobe.com/tw/enterprise/admin-guide.html).
+[此文件](https://helpx.adobe.com/tw/enterprise/admin-guide.html)說明企業管理和 Admin Console 使用方式。
 
 ### 在 Admin Console 中建立使用者 {#onboarding-users-in-admin-console}
 
@@ -158,7 +160,7 @@ AEM 可繼續為管理員使用者支援本機登入。此登入畫面可讓您�
 
 <!-- the above image must be updated for skyline -->
 
-**IMS登入**
+**IMS 登入**
 
 若是其他使用者，在執行個體上設定 IMS 後，即可使用 IMS 登入。使用者按一下「使用 Adobe 登入」按鈕，如下所示：
 
@@ -210,10 +212,10 @@ AEM 可繼續為管理員使用者支援本機登入。此登入畫面可讓您�
 
 若要能夠存取 Cloud Manager 或 AEM as a Cloud Service 環境，系統必須將您指派到 Cloud Manager 產品的設定檔。
 
-如果您想深入瞭解使用者的角色，這些角色能控制使用者能否使用Cloud Manager的特定功能，請參閱角色定義。
+如果您想深入了解使用者的角色 (能控制使用者能否使用 Cloud Manager 的特定功能)，請參閱角色定義。
 
 >[!NOTE]
->Cloud Manager 已預先設定角色，賦予適當權限。若要了解各個具有特定權限的角色、預先設定的任務或每個角色的相關權限，請參閱[角色型權限](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/role-based-permissions)。
+>Cloud Manager 已預先設定角色，賦予適當權限。若要了解各個具有特定權限的角色、預先設定的任務或每個角色的相關權限，請參閱[角色型權限](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-manager/content/requirements/role-based-permissions)。
 
 **使用者新增步驟**
 

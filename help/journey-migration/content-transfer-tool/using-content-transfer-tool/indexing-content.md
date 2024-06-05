@@ -2,7 +2,9 @@
 title: 移轉內容後建立索引
 description: 瞭解移轉程式如何在目的地Cloud Service例項上為擷取的內容建立索引。
 exl-id: a13d5df4-b351-410a-9336-1b34a8af21b6
-source-git-commit: 58195fcb10312c89042f555665d4c8b3642f82ba
+feature: Migration
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '538'
 ht-degree: 9%
@@ -30,13 +32,13 @@ ht-degree: 9%
 >您可以使用內嵌工作的動作，透過……下拉式清單來檢視或下載索引記錄檔。 記錄檔將可在
 > 索引工作完成後，「索引記錄」動作區段
 
-### 擱置中
+### 待處理
 
 這是內嵌執行時、索引工作開始之前，內嵌工作列的顯示方式。 使用者無需採取任何動作。 如果擷取因任何原因而失敗，則會取消索引工作的佇列，而不會啟動。
 
 ![影像](/help/journey-migration/content-transfer-tool/assets-indexing/pending.png)
 
-### 正在執行
+### 執行中
 
 擷取成功時，索引工作會自動啟動。 擷取工作列將會顯示AEM索引狀態的進度圖示。 您可以開啟持續時間對話方塊以檢視工作進度。
 

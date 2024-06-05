@@ -2,10 +2,13 @@
 title: 組織頁面
 description: 瞭解如何使用AEM組織您的網站。
 exl-id: c57096ca-34fe-4b19-98e0-8f3cd43cf24e
-source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '799'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
@@ -56,7 +59,7 @@ ht-degree: 3%
 
 * **[標題](#title)**：
    * 主控台會向使用者顯示這項資訊，並在編輯時顯示在頁面內容的頂端。
-   * 此欄位為必填。
+   * 此字段是必填字段。
 * **[名稱](#name)**：
    * 這會用來產生URI。
    * 此欄位的使用者輸入為選用。 如果未指定，則會從標題衍生名稱。 請參閱下節 [頁面名稱限制和最佳實務](#page-name-restrictions-and-best-practices) 以取得詳細資訊。

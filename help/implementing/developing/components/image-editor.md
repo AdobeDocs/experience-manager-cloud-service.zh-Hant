@@ -1,8 +1,10 @@
 ---
 title: 影像編輯器
-description: 影像編輯器是AEM的一項核心功能，元件可使用它來協助內容作者操作影像。
+description: 影像編輯器是AEM的一項核心功能，元件可使用它來協助內容作者操控影像。
 exl-id: c8ae4f59-75b1-49b4-8dd4-957d2e33000b
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '273'
 ht-degree: 2%
@@ -11,17 +13,17 @@ ht-degree: 2%
 
 # 影像編輯器 {#image-editor}
 
-影像編輯器是AEM的一項核心功能，元件可使用它來協助內容作者操作影像。
+影像編輯器是AEM的一項核心功能，元件可使用它來協助內容作者操控影像。
 
 ## 影像地圖的相對單位 {#relative-units-for-image-map}
 
-「影像編輯器」會將影像地圖區域以絕對和相對單位持續儲存。 當提供相對單位作為資料屬性以動態調整回應式影像元件中使用者端影像地圖（相對於影像大小）的大小時，相對單位會很有用。
+「影像編輯器」會以絕對和相對單位保留影像地圖區域。 在回應式影像元件的使用者端上，當提供相對單位作為資料屬性以動態調整影像地圖（相對於影像大小）的大小時，這些單位就相當實用。
 
 ### imageMap屬性 {#imagemap-property}
 
-影像地圖座標會持續儲存至JCR做為 `imageMap` 屬性。 其格式如下。
+影像地圖座標會保留在JCR中，做為 `imageMap` 屬性。 其格式如下。
 
-屬性會將地圖區域儲存如下：
+屬性會依下列方式儲存地圖區域：
 
 `[area1][area2][...]`
 
@@ -44,13 +46,13 @@ ht-degree: 2%
 
 在某些情況下，由於伺服器端處理缺乏支援，因此必須限制特定MIME型別的編寫動作。 例如，可能不允許編輯SVG影像。
 
-MIME型別可以設定影像編輯器中的外掛程式，選擇性地啟用 `supportedMimeTypes` 屬性（在個別外掛程式的設定節點上）。
+MIME型別可以透過設定 `supportedMimeTypes` 屬性（在個別外掛程式的設定節點上）。
 
 ### 範例 {#example}
 
-例如，我們假設僅允許裁切功能用於GIF、JPEG、PNG、WEBP和TIFF影像。
+舉例來說，我們假設只有GIF、JPEG、PNG、WEBP和TIFF影像才允許裁切功能。
 
-此 `supportedMimeTypes` 然後，屬性必須設定為外掛程式之設定節點上允許的MIME型別字串， `cq:editConfig` 影像元件的節點。
+此 `supportedMimeTypes` 然後，屬性必須設定為 `cq:editConfig` 影像元件的節點。
 
 `/apps/core/wcm/components/image/v2/image/cq:editConfig`
 

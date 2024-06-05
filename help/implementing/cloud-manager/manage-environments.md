@@ -2,7 +2,10 @@
 title: 管理環境
 description: 了解您可以建立的環境類型，以及如何為您的 Cloud Manager 專案建立環境類型。
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: a0f80a363cb47be9e3d8f7fa96ea3068eb077d42
+solution: Experience Manager
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '2365'
 ht-degree: 78%
@@ -18,7 +21,7 @@ ht-degree: 78%
 
 具有必要權限的使用者可以建立以下環境類型 (在特定租用戶可用的範圍內)。
 
-* **生產+中繼**  — 生產環境和測試環境組成一組使用，分別用於生產和測試目的。 在中繼環境中執行效能和安全測試。 它的大小與生產環境相同。
+* **生產+中繼**  — 生產環境和測試環境組成一組使用，分別用於生產和測試目的。 在中繼環境中執行效能和安全測試。 它的規模與生產環境相同。
 
 * **開發**  — 可以為開發和測試目的建立開發環境，並且只能與非生產管道相關聯。  開發環境的大小與中繼環境和生產環境不同，且不應用於進行效能和安全測試。
 

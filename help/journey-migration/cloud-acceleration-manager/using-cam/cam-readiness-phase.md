@@ -2,7 +2,9 @@
 title: Cloud Acceleration Manager的整備階段
 description: 本頁提供Cloud Acceleration Manager整備階段的概觀。
 exl-id: 2583985b-0358-433c-9d31-38e2c60dc3dc
-source-git-commit: 0c56cfdd2c18d3bc77edafdbda3f99fbc43f12cf
+feature: Migration
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '1045'
 ht-degree: 9%

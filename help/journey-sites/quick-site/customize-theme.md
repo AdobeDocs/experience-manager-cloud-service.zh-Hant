@@ -2,9 +2,12 @@
 title: 自訂網站主題
 description: 了解如何建置網站主題、如何自訂網站主題，以及如何使用即時 AEM 內容測試網站主題。
 exl-id: b561bee0-3a64-4dd3-acb8-996f0ca5bfab
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
-workflow-type: ht
-source-wordcount: '960'
+solution: Experience Manager Sites
+feature: Developing
+role: Admin, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+workflow-type: tm+mt
+source-wordcount: '954'
 ht-degree: 100%
 
 ---

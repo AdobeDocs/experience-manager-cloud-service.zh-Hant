@@ -2,10 +2,12 @@
 title: 自來源擷取內容
 description: 瞭解如何從來源Adobe Experience Manager (AEM)例項擷取內容，以便稍後將其傳輸至Cloud ServiceAEM例項。
 exl-id: c5c08c4e-d5c3-4a66-873e-96986e094fd3
-source-git-commit: 858e10f99e2015a1488bb9e1d0990a553c5f6d04
+feature: Migration
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '735'
-ht-degree: 28%
+source-wordcount: '728'
+ht-degree: 19%
 
 ---
 
@@ -16,7 +18,7 @@ ht-degree: 28%
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_extraction"
 >title="內容摘取"
->abstract="提取是指將來源 Adobe Experience Manager (AEM) 執行個體中的內容提取到稱為移轉集的暫時區域中。移轉集是 Adobe 提供的雲端儲存空間，可供暫時儲存在來源 AEM 例項與雲端服務 AEM 例項間轉移的內容。"
+>abstract="提取是指將來源 Adobe Experience Manager (AEM) 執行個體中的內容提取到稱為移轉集的暫時區域中。移轉集是 Adobe 提供的雲端儲存區，用於暫時儲存在來源 AEM 執行個體和 Cloud Service AEM 執行個體之間轉移的內容。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=zh-Hant#top-up-extraction-process" text="填滿提取"
 
 
@@ -66,10 +68,10 @@ ht-degree: 28%
 「內容轉移工具」具備支援追加差異內容的功能，可以只轉移在上一次內容轉移活動後所進行的變更。
 
 >[!NOTE]
->初始轉移內容後，建議您先頻繁地執行追加差異內容，以縮短最終差異化內容轉移的內容凍結時間，然後再於雲端服務上線。如果您已在第一次完整擷取中使用預先複製步驟，您可以略過後續追加擷取的預先複製（如果追加移轉集大小小於200 GB）。 原因是它可能會增加整個程式的時間。
+>初始轉移內容後，建議您先頻繁地執行追加差異內容，以縮短最終差異化內容轉移的內容凍結時間，然後再於Cloud Service上線。 如果您已在第一次完整擷取中使用預先複製步驟，您可以略過後續追加擷取的預先複製（如果追加移轉集大小小於200 GB）。 原因是它可能會增加整個程式的時間。
 >此外，進行初始擷取到執行追加擷取期間，必須保持現有內容的內容結構不變。 追加無法針對自初始擷取以來結構已變更的內容執行。 請務必在移轉程式期間限制此專案。
 
-提取程序一旦完成，您即可使用追加提取方法來轉移差異內容。
+提取程式一旦完成，您即可使用追加提取方法來轉移差異內容。
 
 請遵循下列步驟：
 
@@ -77,7 +79,7 @@ ht-degree: 28%
 
    ![影像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam19.png)
 
-1. **移轉集提取**&#x200B;對話框隨即顯示。按一下 **Extract**.
+1. 此 **移轉集擷取** 對話方塊隨即顯示。 按一下 **Extract**.
 
    >[!IMPORTANT]
    >您必須停用&#x200B;**在提取期間覆寫預備容器**選項。

@@ -2,14 +2,16 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2020.10.0 版發行說明。'
 description: '"[!DNL Adobe Experience Manager] 2020.10.0版as a Cloud Service發行說明。」'
 exl-id: ac741744-5b47-47a4-b5af-e1089e92c3f0
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+feature: Release Information
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '1194'
+source-wordcount: '1103'
 ht-degree: 24%
 
 ---
 
-# [!DNL Adobe Experience Manager] as a Cloud Service 2020.10.0 版發行說明  {#release-notes}
+# 版本注意事項 [!DNL Adobe Experience Manager] as a Cloud Service2020.10.0 {#release-notes}
 
 以下區段會概述以下的一般發行說明： [!DNL Experience Manager] as a Cloud Service2020.10.0。
 
@@ -22,7 +24,7 @@ ht-degree: 24%
 
 ### [!DNL Sites] 的新增功能 {#what-is-new-sites}
 
-* **[核心元件2.12.0](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)**：Adobe Experience Manager as a Cloud Service受益於最新版本核心元件的自動更新。 版本2.12.0包含社群貢獻的最新改善。 改善專案包括 [新的POST表單處理常式；](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/forms/form-container.html#post-data) 包括自訂CSS、JavaScript和中繼資料的功能 [透過內容感知設定標籤；](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/including-clientlibs.html#context-aware-loading) 和 [`DataLayerBuilder`](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/integrations.html#enabling-custom-components) 可簡化自訂元件中Adobe資料層整合的公用程式。 請參閱 [變更清單](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.12.0) 2.12.0版。
+* **[核心元件2.12.0](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hant)**：Adobe Experience Manager as a Cloud Service受益於最新版本核心元件的自動更新。 版本2.12.0包含社群貢獻的最新改善。 改善專案包括 [新的POST表單處理常式；](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/forms/form-container.html#post-data) 包括自訂CSS、JavaScript和中繼資料的功能 [透過內容感知設定標籤；](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/including-clientlibs.html#context-aware-loading) 和 [`DataLayerBuilder`](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/integrations.html#enabling-custom-components) 可簡化自訂元件中Adobe資料層整合的公用程式。 請參閱 [變更清單](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.12.0) 2.12.0版。
 
 * **[專案原型24](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)**：開始新Experience Manager專案的建議基礎已有所改善。 現在包含新的 [Adobe使用者端資料層](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html)，的選項 [以AMP傳遞網站，](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/amp.html) 和新的 [擴充功能點以新增專案CSS/JS。](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/including-clientlibs.html#context-aware-loading)
 
@@ -59,13 +61,13 @@ ht-degree: 24%
 
 您可以寫信寄到 [!DNL formscsbeta@adobe.com] 來註冊 beta 版計劃。
 
-## Adobe Experience Manager商務as a Cloud Service {#cloud-services-commerce}
+## Adobe Experience Manager Commerceas a Cloud Service {#cloud-services-commerce}
 
 ### 新增功能 {#what-is-new-commerce}
 
 * 已發行CIF Venia參考網站 — 2020.10.2，其中包含最新CIF核心元件1.4.0版。另請參閱 [CIF Venia參考網站](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.10.2) 以取得更多詳細資料。
 
-* 已發行CIF Core Components v1.4.0。另請參閱 [CIF核心元件](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.4.0) 以取得更多詳細資料。
+* 已發行CIF Core Components v1.4.0。另請參閱 [CIF Core Components](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.4.0) 以取得更多詳細資料。
 
 ### 錯誤修正 {#bug-fixes-commerce}
 

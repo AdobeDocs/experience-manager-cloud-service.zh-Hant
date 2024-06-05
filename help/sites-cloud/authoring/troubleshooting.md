@@ -2,7 +2,10 @@
 title: 疑難排解製作時的AEM
 description: 使用AEM時可能會遇到的一些問題
 exl-id: b9c0584d-255e-486d-b829-09e07499ecd2
-source-git-commit: 89f23a590338561b4cfeb10b54a260a135ec2f08
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '235'
 ht-degree: 0%

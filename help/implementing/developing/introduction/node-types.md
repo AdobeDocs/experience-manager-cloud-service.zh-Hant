@@ -1,11 +1,13 @@
 ---
 title: AEM 節點類型
-description: AEM以Sling為基礎，並使用JCR存放庫以及兩者都提供的節點型別，但AEM也提供自己的一系列節點型別。
+description: AEM以Sling為基礎，並使用JCR存放庫以及兩者都提供的節點型別，但AEM也提供它自己的節點型別範圍。
 exl-id: 82cc28ca-37e2-4ca3-b3e4-cc03bbc5bdf5
-source-git-commit: 08559417c8047c592f2db54321afe68836b75bd1
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
-source-wordcount: '113'
-ht-degree: 5%
+source-wordcount: '98'
+ht-degree: 6%
 
 ---
 
@@ -16,6 +18,6 @@ ht-degree: 5%
 * [JCR節點型別](https://www.adobe.io/experience-manager/reference-materials/spec/jcr/2.0/3_Repository_Model.html#3.1.7-Node-Types)
 * [Sling節點型別](https://cwiki.apache.org/confluence/display/SLING/Sling+Node+Types)
 
-除此之外， AEM提供一系列自訂節點型別。 對於具有所有關聯屬性的最新清單， [使用CRXDE](/help/implementing/developing/tools/crxde.md) 若要瀏覽AEM存放庫中的下列路徑：
+除此之外。 AEM提供一系列自訂節點型別。 對於具有所有關聯屬性的最新清單， [使用CRXDE](/help/implementing/developing/tools/crxde.md) 若要瀏覽AEM存放庫中的下列路徑：
 
 `/jcr:system/jcr:nodeTypes`

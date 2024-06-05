@@ -2,7 +2,9 @@
 title: SPA 中的複合元件
 description: 瞭解如何建立自己的複合元件，也就是由AEM單頁應用程式(SPA)編輯器運作的其他元件所組成的元件。
 exl-id: fa1ab1dd-9e8e-4e2c-aa9a-5b46ed8a02cb
-source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '782'
 ht-degree: 1%

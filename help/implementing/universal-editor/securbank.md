@@ -1,13 +1,15 @@
 ---
 title: 通用編輯器的SecurBank範例應用程式
 description: 透過使用SecurBank應用程式來瞭解具有實作體驗的通用編輯器，該應用程式旨在展示Universal Editor加速內容建立的強大功能、靈活性和可用性。
-source-git-commit: 4b7612f423e4e728911920793e9e0a03757c7c9d
+exl-id: 97e1395f-b51e-4cee-b1d0-2466a08f96af
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '902'
 ht-degree: 1%
 
 ---
-
 
 # 通用編輯器的SecurBank範例應用程式 {#securbank}
 

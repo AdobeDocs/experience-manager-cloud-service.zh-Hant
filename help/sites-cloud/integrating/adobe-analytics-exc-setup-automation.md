@@ -1,10 +1,11 @@
 ---
 title: 將Adobe Analytics與Experience Cloud設定自動化整合
 description: Experience Cloud設定自動化透過簡單的UI精靈介面，提供簡單且自動化的方法來整合和檢測Experience Manager Sites與Experience Platform標籤和Adobe Analytics。 瞭解如何對您自己的網站使用自動化設定。
-feature: Administering
+feature: Integration
 role: Admin
 exl-id: 351ead2c-7b0d-4bd9-a020-47516948d467
-source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
+solution: Experience Manager Sites
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '719'
 ht-degree: 0%
@@ -23,7 +24,7 @@ Experience Cloud設定自動化透過簡單的UI精靈介面，提供簡單且�
 
 ## 要求
 
-自動化設定可立即使用建置的AEM網站運作 [AEM Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 使用 [Adobe使用者端資料層](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html) 已啟用。 您可以使用產生已自動啟用這些功能的新網站 [AEM專案原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) 或透過使用建立網站 [網站範本](/help/journey-sites/quick-site/create-site.md).
+自動化設定可立即使用建置的AEM網站運作 [AEM Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hant) 使用 [Adobe使用者端資料層](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html) 已啟用。 您可以使用產生已自動啟用這些功能的新網站 [AEM專案原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) 或透過使用建立網站 [網站範本](/help/journey-sites/quick-site/create-site.md).
 
 ## 先決條件 {#prerequisites}
 

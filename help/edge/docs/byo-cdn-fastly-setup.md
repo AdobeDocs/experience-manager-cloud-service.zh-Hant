@@ -3,8 +3,9 @@ description: 以下螢幕擷圖說明如何設定 Fastly 來提供內容。基�
 title: 快速設定
 feature: Edge Delivery Services
 exl-id: 90986139-9c7f-4b63-b24d-c199b4d4dff0
-source-git-commit: 05548d56d791584781606b02839c5602b4469f7b
-workflow-type: ht
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+workflow-type: tm+mt
 source-wordcount: '23'
 ht-degree: 100%
 

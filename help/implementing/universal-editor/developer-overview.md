@@ -2,7 +2,9 @@
 title: 適用於AEM開發人員的通用編輯器總覽
 description: 如果您是AEM開發人員，且對Universal Editor的運作方式及如何在您的專案中使用它感興趣，本檔案將引導您檢測WKND專案以使用Universal Editor，為您提供端對端的簡介。
 exl-id: d6f9ed78-f63f-445a-b354-f10ea37b0e9b
-source-git-commit: 11a244b7dd4810fbfec92b3effc362102e7322dc
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '3139'
 ht-degree: 1%

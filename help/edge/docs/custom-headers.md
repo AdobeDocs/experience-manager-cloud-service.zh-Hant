@@ -3,8 +3,9 @@ description: 在某些情況下，將自訂 HTTP 回應標題套用至資源很�
 title: 自訂 HTTP 回應標題
 feature: Edge Delivery Services
 exl-id: ae386f02-05fd-4a6a-8285-58f207fed7bc
-source-git-commit: 05548d56d791584781606b02839c5602b4469f7b
-workflow-type: ht
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+workflow-type: tm+mt
 source-wordcount: '65'
 ht-degree: 100%
 

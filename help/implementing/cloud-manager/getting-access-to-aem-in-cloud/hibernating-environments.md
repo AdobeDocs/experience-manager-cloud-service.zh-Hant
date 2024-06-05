@@ -2,7 +2,10 @@
 title: 休眠和去休眠沙箱環境
 description: 了解沙箱計畫的環境如何自動進入休眠模式以及如何解除休眠。
 exl-id: c0771078-ea68-4d0d-8d41-2d9be86408a4
-source-git-commit: d1b2226a1deec2e71056c43c84672cb4a358bc8c
+solution: Experience Manager
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '695'
 ht-degree: 84%

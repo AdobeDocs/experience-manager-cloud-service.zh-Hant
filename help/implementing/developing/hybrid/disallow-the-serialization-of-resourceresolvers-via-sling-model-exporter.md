@@ -1,15 +1,17 @@
 ---
-title: 不允許透過Sling模型匯出工具來序列化ResourceResolvers
-description: 不允許透過Sling模型匯出工具來序列化ResourceResolvers
-source-git-commit: 4543a4646719f8433df7589b21344433c43ab432
+title: 禁止透過 Sling 模型匯出工具序列化 ResourceResolvers
+description: 禁止透過 Sling 模型匯出工具序列化 ResourceResolvers
+exl-id: 63972c1e-04bd-4eae-bb65-73361b676687
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '521'
-ht-degree: 0%
+ht-degree: 5%
 
 ---
 
-
-# 不允許透過Sling模型匯出工具來序列化ResourceResolvers {#disallow-the-serialization-of-resourceresolvers-via-sling-model-exporter}
+# 禁止透過 Sling 模型匯出工具序列化 ResourceResolvers {#disallow-the-serialization-of-resourceresolvers-via-sling-model-exporter}
 
 Sling模型匯出工具功能允許將Sling模型物件序列化為JSON格式。 此功能廣泛使用，因為它可讓SPA （單頁應用程式）輕鬆從AEM存取資料。 在實施端，會使用Jacson資料庫資料庫來序列化這些物件。
 
@@ -28,7 +30,7 @@ Adobe計畫停用序列化 `ResourceResolvers` 採用兩步驟方法：
 1. 從AEMas a Cloud Service發行說14697開始，每當 `ResourceResolver` 序列化AEM會記錄警告訊息。 建議所有客戶檢查其應用程式記錄檔中是否有這些記錄陳述式，並據此調整程式碼基底。
 1. 稍後，Adobe會停用JSON格式的ResourceResolvers序列化。
 
-## 實施 {#implementation}
+## 實作 {#implementation}
 
 警告訊息同時記錄在AEMas a Cloud Service和本機AEM SDK執行個體中，看起來像這樣：
 
@@ -50,6 +52,3 @@ Adobe要求其所有客戶檢查其應用程式記錄和程式碼庫，以檢視
 我們假設在大多數情況下，這些必要的變更是直接進行的，例如 `ResourceResolver` json輸出中完全不需要物件，因為前端應用程式通常不需要其中包含的資訊。 這表示在大多數情況下，應該足以排除 `ResourceResolver` 物件，不被Jackson考慮(請參閱 [規則](https://www.baeldung.com/jackson-field-serializable-deserializable-or-not))。
 
 如果Sling模型受到此問題影響但未變更，會明確停用的 `ResourceResolver` 物件(由當作第2個步驟的Adobe執行)將強制執行JSON輸出中的變更。
-
-
-

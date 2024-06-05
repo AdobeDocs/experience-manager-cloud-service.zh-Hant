@@ -1,13 +1,16 @@
 ---
 title: 網站主控台側面板
 description: 瞭解如何使用AEM Sites主控台中的側邊面板，以更加瞭解並導覽您的內容。
-source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
+exl-id: 7f2571d6-b847-4cce-8e94-94ba0d2e04a5
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '827'
 ht-degree: 5%
 
 ---
-
 
 # 網站主控台側面板 {#side-panel}
 
@@ -21,7 +24,7 @@ ht-degree: 5%
 
 * [僅限內容](#content-only)
 * [內容樹狀結構](#content-tree)
-* [時間軸](#timeline)
+* [時間表](#timeline)
 * [參考](#references)
 * [網站](#site)
 * [篩選條件](#filter)
@@ -57,7 +60,7 @@ ht-degree: 5%
 >* 選取階層檢視中的專案後，可使用方向鍵來快速瀏覽階層。
 >* 另請參閱 [鍵盤快速鍵](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md) 以取得詳細資訊。
 
-## 時間軸 {#timeline}
+## 時間表 {#timeline}
 
 時間軸可用於檢視影響所選資源的事件。 您也可以用它來啟動某些事件，例如工作流程或版本。
 

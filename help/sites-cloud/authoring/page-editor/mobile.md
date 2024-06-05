@@ -2,7 +2,10 @@
 title: 為行動裝置編寫頁面
 description: 為行動裝置製作時，您可以在數個模擬器之間切換，以檢視一般使用者看到的內容
 exl-id: fabd4468-3304-402f-9522-342da3bbae94
-source-git-commit: a868bf4d4acf4fbae7ccaf55b03319ba0617f9a4
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '267'
 ht-degree: 0%

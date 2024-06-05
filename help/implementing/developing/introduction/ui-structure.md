@@ -2,10 +2,12 @@
 title: AEM UI 的結構
 description: AEM UI具有幾項基礎原則，並由數種關鍵元素組成
 exl-id: ac211716-d699-4fdb-a286-a0a1122c86c5
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
-source-wordcount: '892'
-ht-degree: 4%
+source-wordcount: '887'
+ht-degree: 2%
 
 ---
 
@@ -59,14 +61,14 @@ UI同時適用於行動裝置和桌上型裝置，不過AEM不但不建立兩種
 您可以視需要開啟/隱藏左側邊欄，以顯示：
 
 * **僅限內容**
-* **內容樹**
-* **時間軸**
-* **參考**
+* **內容樹狀結構**
+* **時間表**
+* **引用**
 * **篩選**
 
 預設值為 **僅限內容** （邊欄已隱藏）。
 
-![左側邊欄](assets/ui-left-rail.png)
+![左側欄](assets/ui-left-rail.png)
 
 ## 頁面製作 {#page-authoring}
 

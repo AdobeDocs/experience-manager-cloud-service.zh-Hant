@@ -2,10 +2,12 @@
 title: Cloud Acceleration Manager中的實作階段
 description: 本頁提供Cloud Acceleration Manager實作階段的概觀。
 exl-id: e6ac88f0-4b3f-43a1-98bc-8c6608713784
-source-git-commit: c8739388ac21dd40d6757815af6f2732991d216b
+feature: Migration
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '652'
-ht-degree: 7%
+source-wordcount: '620'
+ht-degree: 5%
 
 ---
 
@@ -15,7 +17,7 @@ ht-degree: 7%
 
 * [本機開發](#local-development)
 * [程式碼重構](#code-refactoring)
-* [AEMas a Cloud Service部署](#aem-as-a-cloud-service-deployment)
+* [AEM as a Cloud Service 部署](#aem-as-a-cloud-service-deployment)
 * [內容轉移](#content-transfer)
 
 
@@ -105,7 +107,7 @@ AEMas a Cloud Service部署卡會提供所有相關內容，協助您將程式�
    >移轉集會在長時間不活動後過期。 另請參閱 [移轉集到期](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry) 以取得詳細資訊。
 
    >[!NOTE]
-   >另請參閱 [必備條件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html?lang=zh-Hant) 和 [最佳作法和准則](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html) 開始使用「內容轉移工具」。
+   >另請參閱 [必備條件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html) 和 [最佳作法和准則](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html) 開始使用「內容轉移工具」。
 
 1. 下載並安裝內容轉移工具以填入移轉集並完成內容轉移的提取階段。 檢閱 [內容轉移工具快速入門](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=zh-Hant) 以瞭解如何使用內容轉移工具。
 

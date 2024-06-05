@@ -4,7 +4,8 @@ description: 瞭解翻譯規則如何識別需要翻譯的內容。
 feature: Language Copy
 role: Admin
 exl-id: 24cc6aa6-5b3c-462b-a10a-8b25277229dc
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+solution: Experience Manager Sites
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '1288'
 ht-degree: 1%
@@ -159,7 +160,7 @@ ht-degree: 1%
 
 1. 瀏覽至 **工具** 然後 **一般**.
 
-1. 選取 **翻譯設定**.
+1. 選取「**翻譯設定**」。
 
 在翻譯規則UI中，您可以：
 

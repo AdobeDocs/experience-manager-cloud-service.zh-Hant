@@ -2,7 +2,10 @@
 title: 計畫和計畫類型
 description: 了解 Cloud Manager 的階層以及不同類型的計畫如何適應其結構以及它們之間的差異。
 exl-id: 507df619-a5b5-419a-9e38-db77541425a2
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+solution: Experience Manager
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '519'
 ht-degree: 93%
@@ -26,7 +29,7 @@ Cloud Manager 是圍繞實體階層建置的。這方面的詳細資訊對您在
 範例通常有助於內容化此階層。
 
 * WKND Travel and Adventure Enterprises 可能是專注於旅遊相關媒體的&#x200B;**租用戶**。
-* WKND Travel and Adventure Enterprises 租用戶可能有兩個&#x200B;**計畫**：一個用於 WKND Magazine 的 Sites 計畫，和一個用於 WKND Media 的 Assets 計畫。
+* WKND Travel and Adventure Enterprises 租用戶可能有兩個&#x200B;**方案**：一個用於 WKND Magazine 的 Sites 方案，和一個用於 WKND Media 的 Assets 方案。
 * WKND Magazine 和 WKND Media 計畫都將有開發、測試和製作&#x200B;**環境**。
 
 ## 原始碼存放庫 {#source-code-repository}

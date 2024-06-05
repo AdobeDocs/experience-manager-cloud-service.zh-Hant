@@ -2,7 +2,10 @@
 title: 管理活動
 description: 「活動」主控台可讓您建立、組織和管理品牌的行銷活動
 exl-id: e7cab16d-7678-472d-b75f-7f67b303ba8d
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '1958'
 ht-degree: 15%
@@ -110,7 +113,7 @@ ht-degree: 15%
    1. 在「對象」方塊中選取鉛筆，以選取對象。
    1. 選取 **新增體驗**，輸入名稱，然後選取 **確定**.
    1. 輸入顯示每個體驗的流量百分比。
-   1. 選取 **下一個**.
+   1. 選取&#x200B;**「下一步」**。
 1. 若要指定活動何時開始，請使用 **開始** 下拉式功能表以選取下列其中一個值：
    * **啟用時：** 活動從包含目標內容的頁面啟動時開始。
    * **指定的日期和時間：** 特定時間。 選取此選項時，請選取日曆圖示，選取日期，並指定活動開始的時間。
@@ -119,7 +122,7 @@ ht-degree: 15%
    * **指定的日期和時間**：特定時間。 選取此選項時，請選取日曆圖示，選取日期，並指定活動結束時間。
 1. 若要指定活動的優先順序，請使用滑桿來選取 **低**， **一般**，或 **高**.
 1. 如果您使用Adobe Target作為目標定位引擎，請選取您要透過此活動測量的內容。 另請參閱 [設定活動和設定目標](/help/sites-cloud/authoring/personalization/targeted-content.md) 以取得可用成功量度的詳細資訊。 請至少選取一個目標。
-1. 選取&#x200B;**儲存**。
+1. 選取「**儲存**」。
 
    >[!NOTE]
    >

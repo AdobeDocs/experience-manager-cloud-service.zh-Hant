@@ -2,7 +2,10 @@
 title: 發佈頁面
 description: 瞭解如何使用AEM中的各種機制來發佈和取消發佈頁面。
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
-source-git-commit: faac7c803a5145f4207154bfb3c9aa06274bbb86
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '1936'
 ht-degree: 5%

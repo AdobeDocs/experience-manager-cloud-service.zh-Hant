@@ -2,9 +2,11 @@
 title: SPA和伺服器端轉譯
 description: 在SPA中使用伺服器端轉譯(SSR)可以加速頁面的初始載入，然後將進一步的轉譯傳遞給使用者端。
 exl-id: be409559-c7ce-4bc2-87cf-77132d7c2da1
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
-source-wordcount: '1517'
+source-wordcount: '1492'
 ht-degree: 0%
 
 ---
@@ -67,7 +69,7 @@ AEM必須知道可在何處擷取遠端呈現的內容。 不論 [您選擇為SS
 * **遠端端點URL**  — 負責產生內容的端點URL
    * 若不在本機網路中，請使用安全的HTTPS通訊協定。
 * **其他請求標頭**  — 要新增至傳送至遠端端點之要求的其他標頭
-   * 模式: `key=value`
+   * 模式： `key=value`
 * **請求逾時**  — 遠端主機要求逾時（毫秒）
 
 >[!NOTE]

@@ -2,8 +2,11 @@
 title: 使用範本建立網站
 description: 了解如何使用網站範本快速建立新的 AEM 網站。
 exl-id: 31bb04c2-b3cc-44ca-b517-5b0d66d9b1fa
-source-git-commit: d2352e66b380f5a3654e2fc99ce4204b32066683
-workflow-type: ht
+solution: Experience Manager Sites
+feature: Developing
+role: Admin, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+workflow-type: tm+mt
 source-wordcount: '1485'
 ht-degree: 100%
 
@@ -183,7 +186,7 @@ ht-degree: 100%
 * [AEM 標準網站範本](https://github.com/adobe/aem-site-template-standard) - 這是 AEM 標準網站範本的 GitHub 存放庫。
 * [組織頁面](/help/sites-cloud/authoring/sites-console/organizing-pages.md)  - 本指南詳細介紹如何組織 AEM 網站的頁面。
 * [建立頁面](/help/sites-cloud/authoring/sites-console/creating-pages.md)  - 本指南詳細介紹如何為您的網站新增頁面。
-* [管理頁面](/help/sites-cloud/authoring/sites-console/managing-pages.md)  - 本指南詳細介紹如何管理網站頁面，包括移動、複製和刪除。
+* [管理頁面](/help/sites-cloud/authoring/sites-console/managing-pages.md) - 本指南詳細介紹如何管理網站頁面，包括移動、複製和刪除。
 * [如何使用套件](/help/implementing/developing/tools/package-manager.md) - 套件允許匯入和匯出存放庫內容。本文件說明如何使用 AEM 6.5 的套件，同樣適用於 AEMaaCS。
 * [網站管理文件](/help/sites-cloud/administering/site-creation/create-site.md) - 查看關於建立網站的技術文件，了解快速建立網站工具功能的更多詳細資訊。
 * [建立或新增表單至 AEM Sites 頁面](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md) - 學習將表單與網站整合的逐步操作技巧和最佳實務，最佳化您的數位體驗以發揮最大影響。

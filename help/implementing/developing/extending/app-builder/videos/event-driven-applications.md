@@ -1,15 +1,15 @@
 ---
 title: 事件導向的App Builder應用程式
-description: 瞭解如何建立事件導向的應用程式建立器應用程式。
+description: 瞭解如何建立事件導向的App Builder應用程式。
 version: Cloud Service
-feature: App Builder
+feature: App Builder, Developing
 topic: Integrations, Development
 role: Developer, Architect
 level: Beginner
 kt: 9458,9479
 thumbnail: 339244.jpg
 exl-id: 6cd06ddc-2ce3-4e59-bd62-baee44763591
-source-git-commit: a14ee350b3fdc3ac197b703aa36957d1d1dd7355
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '52'
 ht-degree: 0%
@@ -24,8 +24,8 @@ ht-degree: 0%
 
 >[!VIDEO](https://video.tv.adobe.com/v/339244/?quality=12&learn=on)
 
-## 建立事件導向的應用程式建立器應用程式
+## 建立事件導向的App Builder應用程式
 
 >[!VIDEO](https://video.tv.adobe.com/v/339245/?quality=12&learn=on)
 
-瞭解如何建置發佈可以在App Builder應用程式中使用事件。
+瞭解如何建置發佈可透過App Builder應用程式使用事件。

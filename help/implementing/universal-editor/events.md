@@ -2,7 +2,9 @@
 title: 通用編輯器事件
 description: 瞭解通用編輯器傳送的不同事件，您可用這些事件對遠端應用程式中的內容或UI變更做出反應。
 exl-id: c9f7c284-f378-4725-a4e6-e4799f0f8175
-source-git-commit: 11a244b7dd4810fbfec92b3effc362102e7322dc
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '575'
 ht-degree: 2%

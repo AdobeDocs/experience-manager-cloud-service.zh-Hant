@@ -2,7 +2,10 @@
 title: 啟動
 description: 啟動可讓您有效率地開發未來版本的內容。可讓您完成變更以供未來發佈，同時維護目前的頁面
 exl-id: 3e410120-d08f-4d05-932f-07bc4440af2b
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '898'
 ht-degree: 94%

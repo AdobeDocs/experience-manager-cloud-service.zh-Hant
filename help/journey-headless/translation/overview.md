@@ -2,9 +2,12 @@
 title: AEM Headless 翻譯歷程
 description: 從這裡開始，此歷程會逐步引導您了解如何使用 AEM 強大的翻譯工具來翻譯您的 Headless 內容。
 exl-id: b677f691-5257-43c3-a4b9-c34932577b31
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
-workflow-type: ht
-source-wordcount: '1037'
+solution: Experience Manager
+feature: Headless
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+workflow-type: tm+mt
+source-wordcount: '1024'
 ht-degree: 100%
 
 ---

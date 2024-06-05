@@ -2,7 +2,9 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2021.6.0 版發行說明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2021.6.0 版發行說明。'
 exl-id: 2c72973b-5a51-4744-bf88-50da0013ba31
-source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
+feature: Release Information
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '1432'
 ht-degree: 47%
@@ -168,7 +170,7 @@ AEM Screensas a Cloud Service的發行日期為2021年6月24日。
 ### 新增功能 {#what-is-new-cif}
 
 * 內容片段的新增CIF產品和類別參考資料型別(包括 產品/類別選擇器UI支援)
-* 新Commerce內容片段核心元件
+* 全新Commerce內容片段核心元件
 * AEM後端支援全文檢索商務搜尋
 * Commerce核心元件支援Adobe Commerce Sensei Recs資料收集
 * 改善類別頁面的SEO易記URL

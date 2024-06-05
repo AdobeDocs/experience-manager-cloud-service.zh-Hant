@@ -3,7 +3,9 @@ title: 設定RTE以建立無障礙的網頁和網站。
 description: 瞭解如何設定RTF編輯器以在中建立無障礙網站 [!DNL Adobe Experience Manager].
 contentOwner: AG
 exl-id: 54050fc9-0348-4033-8e2b-b3897588cb62
-source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '509'
 ht-degree: 1%

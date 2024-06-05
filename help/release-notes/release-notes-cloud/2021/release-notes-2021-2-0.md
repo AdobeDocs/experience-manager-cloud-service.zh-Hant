@@ -2,7 +2,9 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2021.2.0 版發行說明。'
 description: '"[!DNL Adobe Experience Manager] 2021.2.0版as a Cloud Service發行說明。」'
 exl-id: 88dac54b-cc12-44a0-b429-6e691221f806
-source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
+feature: Release Information
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '1185'
 ht-degree: 31%
@@ -57,7 +59,7 @@ ht-degree: 31%
 
 * [!DNL Experience Manager Assets] as a [!DNL Cloud Service] 有權預先設定 [!DNL Brand Portal] 執行個體。 此 [!DNL Cloud Manager] 使用者可以啟用 [!DNL Brand Portal] 於 [!DNL Experience Manager Assets] as a [!DNL Cloud Service]. 另請參閱 [啟動Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/brand-portal/configure-aem-assets-with-brand-portal.html).
 
-* 企業現在可以使用以下專案取得資產： [!DNL Brand Portal]. 資產來源功能使用 [!DNL Brand Portal] 協助客戶與機構使用者互動，以取得新行銷活動、攝影和專案的資產。 另請參閱 [中的資產來源 [!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html).
+* 企業現在可以使用以下專案取得資產： [!DNL Brand Portal]. 資產來源功能使用 [!DNL Brand Portal] 協助客戶與機構使用者互動，以取得新行銷活動、攝影和專案的資產。 另請參閱 [中的資產來源 [!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=zh-Hant).
 
 * 此 [!DNL Brand Portal] 使用報告現在只會顯示作用中的使用者。 現在不會顯示非作用中的使用者。 作用中的使用者是指其帳戶已指派給中某個產品設定檔的使用者。 [!DNL Admin Console]. 另請參閱 [[!DNL Brand Portal] 報表](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/admin-tools/brand-portal-reports.html).
 
@@ -70,7 +72,7 @@ ht-degree: 31%
 * 解決命名衝突後建立現有資產的新版本時，原始資產的中繼資料會被覆寫。 (CQ-4313594)
 * 列印具有長註釋文字的資產時，即使有可用空間，註釋文字也會被裁剪。 (CQ-4314101)
 
-## Adobe Experience Manager商務as a Cloud Service {#cloud-services-commerce}
+## Adobe Experience Manager Commerceas a Cloud Service {#cloud-services-commerce}
 
 ### 新增功能 {#what-is-new-commerce}
 

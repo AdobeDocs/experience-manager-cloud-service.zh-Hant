@@ -3,8 +3,9 @@ title: 為 Edge Delivery Services 製作內容
 description: 了解內容製作如何與 Edge Delivery Services 搭配使用，以及如何使用 Edge Delivery Services 製作 AEM 內容。
 feature: Edge Delivery Services
 exl-id: 963ff71a-8176-4d9d-8240-dc429405d139
-source-git-commit: 11f721b4a617c99e30329d7196f42d7b48067f1b
-workflow-type: ht
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+workflow-type: tm+mt
 source-wordcount: '475'
 ht-degree: 100%
 

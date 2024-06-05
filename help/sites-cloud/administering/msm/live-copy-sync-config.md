@@ -4,7 +4,8 @@ description: 瞭解可用的強大Live Copy同步選項，以及如何根據專�
 feature: Multi Site Manager
 role: Admin
 exl-id: 0c97652c-edac-436e-9b5b-58000bccf534
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+solution: Experience Manager Sites
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '2414'
 ht-degree: 2%
@@ -47,7 +48,7 @@ Adobe Experience Manager提供數種立即可用的同步設定。 在使用即�
 
 如果安裝的轉出組態動作不符合您的需求，您可以 [建立轉出設定。](#creating-a-rollout-configuration)
 
-| 名稱 | 說明 | 觸發器 | [同步化動作](#synchronization-actions) |
+| 名稱 | 說明 | 觸發程序 | [同步化動作](#synchronization-actions) |
 |---|---|---|---|
 | 標準轉出設定 | 標準轉出設定，允許在轉出觸發時開始轉出程式，並執行下列動作：建立、更新、刪除內容以及排序子節點 | 於轉出 | `contentUpdate`<br>`contentCopy`<br>`contentDelete`<br>`referencesUpdate`<br>`productUpdate`<br>`orderChildren` |
 | 在 Blueprint 啟動時啟動 | 在發佈來源時發佈即時副本 | 啟動時 | `targetActivate` |
@@ -182,7 +183,7 @@ MSM可讓您指定一般使用的轉出設定集，並視需要覆寫特定即�
 
    ![覆寫即時副本設定繼承](../assets/live-copy-inherit-override.png)
 
-1. 選取 **儲存並關閉**.
+1. 選取「**儲存並關閉**」。
 
 ### 設定Blueprint頁面的轉出設定 {#setting-the-rollout-configuration-for-a-blueprint-page}
 

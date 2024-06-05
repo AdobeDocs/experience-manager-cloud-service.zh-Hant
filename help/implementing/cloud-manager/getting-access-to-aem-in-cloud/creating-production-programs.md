@@ -2,7 +2,10 @@
 title: 建立生產計畫
 description: 了解如何使用 Cloud Manager 建立您自己的生產計畫來主持即時流量。
 exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
-source-git-commit: 418aff3f8519bba4bf5e2459175983633eb664b8
+solution: Experience Manager
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '1031'
 ht-degree: 34%

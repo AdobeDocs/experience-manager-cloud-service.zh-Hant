@@ -1,15 +1,17 @@
 ---
-title: 實作階段
+title: 實施階段
 description: 確定您的程式碼和內容已準備好移轉至雲端
 exl-id: d124f9a5-a754-4ed0-a839-f2968c7c8faa
-source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
+feature: Migration
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '2282'
 ht-degree: 9%
 
 ---
 
-# 實作階段 {#implementation-phase}
+# 實施階段 {#implementation-phase}
 
 在歷程的實作階段中，您將探索各種工具，透過這些工具，您可以讓程式碼和內容準備好移至AEMas a Cloud Service。
 

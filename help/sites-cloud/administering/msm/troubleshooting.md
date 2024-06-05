@@ -4,9 +4,10 @@ description: 瞭解如何疑難排解最常見的MSM相關問題，並取得最�
 feature: Multi Site Manager
 role: Admin
 exl-id: 50f02f4f-a347-4619-ac90-b3136a7b1782
-source-git-commit: c31f43986e44099a3a36cc6c9c2f1a7251499ffb
+solution: Experience Manager Sites
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '767'
+source-wordcount: '766'
 ht-degree: 0%
 
 ---

@@ -2,10 +2,13 @@
 title: 存取和管理記錄檔
 description: 了解如何存取和管理記錄檔以協助進行 AEM as a Cloud Service 中的開發流程。
 exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
-source-git-commit: d1b2226a1deec2e71056c43c84672cb4a358bc8c
+solution: Experience Manager
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '352'
-ht-degree: 67%
+ht-degree: 69%
 
 ---
 
@@ -24,7 +27,7 @@ ht-degree: 67%
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織。
 
-1. 在 **[我的計畫](/help/implementing/cloud-manager/navigation.md#my-programs)** 主控台，選取程式。
+1. 在「**[我的程式](/help/implementing/cloud-manager/navigation.md#my-programs)**」控制台中，選取程式。
 
 1. 從&#x200B;**概觀**&#x200B;頁面瀏覽到&#x200B;**環境**&#x200B;卡。
 

@@ -3,9 +3,10 @@ title: 建立環境
 description: 了解如何使用 Cloud Manager 來建立您的首個環境。
 role: Admin, User, Developer
 exl-id: 31940e1e-fe27-4c5f-b67f-41affebea63a
-source-git-commit: 98eff568686c72c626d2bf77d82e8c3f224eda42
+feature: Onboarding
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '732'
+source-wordcount: '725'
 ht-degree: 100%
 
 ---
@@ -50,7 +51,7 @@ ht-degree: 100%
 
    * **新增環境**&#x200B;選項也可在&#x200B;**環境**&#x200B;索引標籤上找到。
 
-      ![「環境」索引標籤](/help/implementing/cloud-manager/assets/environments-tab.png)
+     ![「環境」索引標籤](/help/implementing/cloud-manager/assets/environments-tab.png)
 
    * 由於缺少權限或根據授權的資源，**新增環境**&#x200B;選項可能會停用。
 
@@ -87,6 +88,5 @@ ht-degree: 100%
 * [管理環境](/help/implementing/cloud-manager/manage-environments.md) - 了解您可以建立的環境類型，以及如何為您的 Cloud Manager 專案建立環境。
 * [使用 Adobe Cloud Manager - 環境](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/environments.html?lang=zh-Hant)- Cloud Manager 環境由 AEM 編寫、發佈和 Dispatcher 服務組成。了解不同的環境可支援角色，並使用不同的 CI/CD 管道與其互動。
 * [快速開發環境](/help/implementing/developing/introduction/rapid-development-environments.md) - 請參閱此文件以詳細了解如何使用 RDE
-
 <!-- ERROR: Not Found (HTTP error 404) * [AEM Champion Tips and Tricks - Cloud Manager Environment Types](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/expert-resources/aem-champions/environment-types.md) - Watch this video for an overview of Cloud Manager environment types from an AEM champion. -->
 

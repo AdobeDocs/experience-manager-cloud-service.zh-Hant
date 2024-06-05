@@ -2,7 +2,9 @@
 title: AEM Repo Tool
 description: AEM Repo Tool是簡單的解決方案，可透過類似FTP的命令列，在本機檔案系統與AEM伺服器之間傳輸JCR內容。
 exl-id: fb887ba3-e40b-4ab1-b142-0748c6d9f18e
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '245'
 ht-degree: 2%

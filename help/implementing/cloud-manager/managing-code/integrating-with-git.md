@@ -2,9 +2,12 @@
 title: 將 Git 與 Cloud Manager 一起使用
 description: 了解如何使用 Cloud Manager 的 Git 存放庫以及如何將您內部部署客戶管理的 Git 存放庫與 Cloud Manager 整合。
 exl-id: 57e71b8a-4546-4d7f-825c-a1637d08e608
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
-workflow-type: ht
-source-wordcount: '316'
+solution: Experience Manager
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+workflow-type: tm+mt
+source-wordcount: '309'
 ht-degree: 100%
 
 ---

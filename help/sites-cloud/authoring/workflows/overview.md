@@ -2,8 +2,11 @@
 title: 使用工作流程
 description: AEM 工作流程可使要在頁面或資產上執行的一系列步驟自動化。
 exl-id: ed157646-abb3-45c6-bafd-7889bd93fdf3
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: ht
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+workflow-type: tm+mt
 source-wordcount: '177'
 ht-degree: 100%
 

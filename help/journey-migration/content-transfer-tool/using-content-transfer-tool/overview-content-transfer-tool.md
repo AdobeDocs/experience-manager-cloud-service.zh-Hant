@@ -2,10 +2,12 @@
 title: 內容轉移工具綜覽
 description: 瞭解如何使用內容轉移工具將內容從內部部署AEM例項轉移到AEMas a Cloud Service
 exl-id: cfc0366a-2139-4d9d-b5bc-0b65bef4013c
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+feature: Migration
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '662'
-ht-degree: 41%
+source-wordcount: '655'
+ht-degree: 38%
 
 ---
 
@@ -15,11 +17,11 @@ ht-degree: 41%
 >id="aemcloud_ctt_overview"
 >title="概觀"
 >abstract="「內容轉移工具」是 Adobe 開發的工具，可用來起始將現有內容從來源 AEM 執行個體 (內部部署或 AMS) 移轉至目標 AEM Cloud Service 執行個體的作業。此工具也會自動轉移主體 (使用者或群組)。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html?lang=zh-Hant" text="准則與最佳作法"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html?lang=zh-Hant" text="準則和最佳做法"
 
 「內容轉移工具」是Adobe開發的工具，可用來起始將現有內容從來源AEM例項（內部部署或AMS）移轉至目標AEM Cloud Service例項的作業。
 
-此工具也會自動轉移主體 (使用者或群組)。另請參閱 [使用者對應和主體移轉](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md) 以取得詳細資訊。
+此工具也會自動轉移主體（使用者或群組）。  另請參閱 [使用者對應和主體移轉](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md) 以取得詳細資訊。
 
 「內容轉移工具」整合了內容轉移程式與Cloud Acceleration Manager。 這可讓使用者享有其提供的所有優點：
 

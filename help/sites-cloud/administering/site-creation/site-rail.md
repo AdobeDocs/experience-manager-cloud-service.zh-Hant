@@ -4,7 +4,8 @@ description: 瞭解網站面板的強大功能，協助您輕鬆自訂和管理�
 feature: Administering
 role: Admin
 exl-id: 45785e5a-4fa2-4cf2-a300-f1865f6f5807
-source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
+solution: Experience Manager Sites
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '583'
 ht-degree: 1%
