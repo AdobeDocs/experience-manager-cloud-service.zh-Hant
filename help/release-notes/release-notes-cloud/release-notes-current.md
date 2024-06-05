@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: b7e8fd902bb2fe98e183b7d987b87fee69e48337
+source-git-commit: 3e63cfc65ea28a481b50f431483a13c2fd80853c
 workflow-type: tm+mt
-source-wordcount: '1865'
+source-wordcount: '1903'
 ht-degree: 21%
 
 ---
@@ -234,3 +234,9 @@ Real Use Monitoring服務（使用者端集合）可更精確地反映互動情�
 ## 移轉工具 {#migration-tools}
 
 您可以在[這裡](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)找到移轉工具版本的完整清單。
+
+## Experience Cloud 版本注意事項 {#experience-cloud}
+
+您可以找到其他Experience Cloud應用程式發行版本的相關資訊 [此處](https://experienceleague.adobe.com/en/docs/release-notes/experience-cloud/current).
+若要收到有關Experience Cloud發行說明更新的每月電子郵件通知，請訂閱 [Adobe優先順序產品更新](https://www.adobe.com/tw/subscription/priority-product-update.html).
+
