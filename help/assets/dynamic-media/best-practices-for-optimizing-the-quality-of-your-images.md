@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Asset Management
 role: User
 exl-id: 2efc4a27-01d7-427f-9701-393497314402
-source-git-commit: f2701b35c2bc64e7bb049dc49632b7127923970d
+source-git-commit: 7820492f462d2b5824e408429332b5adf2e67aab
 workflow-type: tm+mt
 source-wordcount: '1648'
 ht-degree: 1%
@@ -25,9 +25,9 @@ Adobe Experience Manager包含100多項Dynamic Media影像傳送命令，用於�
 **智慧型影像：**
 
 * 在Dynamic Media中啟用「智慧型影像」，可依據使用者端瀏覽器功能自動最佳化影像格式、大小和品質。
-想要進一步瞭解嗎？ 前往 [智慧型影像](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/imaging-faq)
+想要進一步瞭解嗎？ 前往 [智慧型影像](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/imaging-faq).
 * 它可動態調整這些引數，藉以強化影像傳送效能。
-* 您可以使用自我評估工具來評估智慧型影像 [快照](https://snapshot.scene7.com/)
+* 您可以使用自我評估工具來評估智慧型影像 [快照](https://snapshot.scene7.com/).
 
 **影像格式：**
 
