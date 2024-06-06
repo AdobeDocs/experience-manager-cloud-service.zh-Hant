@@ -1,14 +1,14 @@
 ---
-title: Edge Delivery Services for AEM Forms as a Cloud Service 的實際使用監視 (RUM)
+title: 適用於AEM Formsas a Cloud ServiceEdge Delivery Services的即時使用者監控(RUM)
 description: Edge Delivery Services for AEM Forms as a Cloud Service 的實際使用監視 (RUM) 包含持續追蹤和分析使用者與表單的互動情形。
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: 184fc7dc-d583-4a63-9e30-80d324ec9d7e
-source-git-commit: 6c56f753d2a32de6fe11fd47843cee5bcb8cac4e
-workflow-type: ht
+source-git-commit: 8730383d26c6f4fbe31a25a43d33bf314251d267
+workflow-type: tm+mt
 source-wordcount: '792'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 

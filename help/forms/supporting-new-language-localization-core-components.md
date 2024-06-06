@@ -4,9 +4,9 @@ description: 瞭解如何為最適化表單新增地區設定。
 feature: Adaptive Forms, Core Components
 Role: Developer, Author
 exl-id: bc06542b-84c8-4c6a-a305-effbd16d5630
-source-git-commit: 9cb3b52d0cf172c16777eadbc4d78b267c3db513
+source-git-commit: 8730383d26c6f4fbe31a25a43d33bf314251d267
 workflow-type: tm+mt
-source-wordcount: '2028'
+source-wordcount: '2068'
 ht-degree: 2%
 
 ---
@@ -369,6 +369,7 @@ git clone https://github.com/adobe/aem-core-forms-components.git
 ## 支援新本地化的最佳實務 {#best-practices}
 
 * Adobe建議您在建立最適化表單之後建立翻譯專案。 這能簡化本地化程式。
+* 當數值方塊和日期選擇器元件轉換為特定地區設定時，可能會出現格式問題。 若要減少此問題， **語言** 選項已納入的「設定」對話方塊 [日期選擇器元件](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/number-input#formats-configure-tab) 和 [Numerc Box元件](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/numeric-box#formats-configure-tab).
 
 
 * 處理新欄位：
