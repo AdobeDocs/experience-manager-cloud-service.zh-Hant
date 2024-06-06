@@ -8,9 +8,9 @@ feature: Adaptive Forms, Foundation Components
 discoiquuid: 1a32eb24-db3b-4fad-b1c7-6326b5af4e5e
 docset: aem65
 exl-id: e4d8bcb9-ce1f-425e-b35c-d0a79fa771f3
-source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+source-git-commit: 46cd7d689c6cbc453720b5798ffb552da58f66e7
 workflow-type: tm+mt
-source-wordcount: '2139'
+source-wordcount: '2150'
 ht-degree: 1%
 
 ---
@@ -20,10 +20,11 @@ ht-degree: 1%
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
+| AEMas a Cloud Service（基礎元件） | 本文章 |
+| AEMas a Cloud Service（核心元件） | [按一下這裡](/help/forms/adaptive-form-fragments-core-components.md) |
 | AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/adaptive-form-fragments.html?lang=en) |
-| AEM as a Cloud Service  | 本文章 |
 
-雖然每個表單都是為特定目的而設計，但大多數表單中都有一些常見的區段，例如提供個人詳細資訊，例如姓名和地址、家庭詳細資訊、收入詳細資訊等。 每次建立新表單時，表單開發人員都必須建立這些通用區段。 最適化Forms提供一種便利的機制，讓您只需建立一次表單區段（例如面板或欄位群組），即可在最適化Forms中重複使用。 這些可重複使用的獨立區段稱為「最適化表單片段」。
+雖然每個表單都是為特定目的而設計的，但大多數表單中有一些常見的部分，例如提供個人詳細資訊按讚姓名和位址、家庭詳細資訊、收入詳細資訊等。 每次建立新表單時，表單開發人員都必須建立這些通用區段。 自適應Forms提供了一種方便的機制，只需區段 按讚面板或字段群組創建表單一次，並在自適應Forms中重複使用它們。 這些可重複使用的獨立區段稱為「最適化表單片段」。
 
 
 ## 建立片段 {#create-a-fragment}
@@ -32,9 +33,9 @@ ht-degree: 1%
 
 ### 從頭開始建立片段 {#create-fragment-from-scratch}
 
-1. 登入 [!DNL AEM Forms] 在https://的作者執行個體&#x200B;[*主機名稱*]：[*連線埠*]/aem/forms.html.
-1. 按一下 **建立>自適應表單片段**.
-1. 指定片段的標題、名稱、說明和標籤。
+1. 登入 [!DNL AEM Forms] 作者執行個體 https://[*hostname*]：[*連接埠*]/aem/forms.html。
+1. 按兩下 **建立 >最適化表單片段**。
+1. 指定片段的標題、名稱、描述和標籤。
 
    >[!NOTE]
    >
@@ -46,11 +47,11 @@ ht-degree: 1%
 
      >[!NOTE]
      >
-     > 在Adaptive Forms中，您可以在表單中多次使用單一表單片段（根據核心元件）。 支援「無」和「綱要」表單片段。
+     > 在Adaptive Forms中，您可以在表單中多次使用單一表單片段（根據核心元件）。 它支援無型和結構描述型表單片段。
 
-   * **表單範本**：指定使用上傳至 [!DNL AEM Forms]的 XDP 範本建立片段。 選擇適當的 XDP 範本作為片段的表單模型。
+   * **表單範本**：指定使用上傳至的XDP範本建立片段 [!DNL AEM Forms]. 選取適當的XDP範本作為片段的表單模型。
 
-   ![以窗體範本作為模型建立自適應表單](assets/form-template-model.png)
+   ![使用表單範本作為模型建立調適型表單](assets/form-template-model.png)
 
    也會顯示所選表單範本中標籤為片段的子表單。 您可以從下拉式清單中選取最適化表單片段的子表單。
 
@@ -70,9 +71,9 @@ ht-degree: 1%
 
 在編輯模式中，您可以將任何最適化表單元件從AEM sidekick拖放至片段上。 <!-- For information about Adaptive Form components, see Introduction to authoring Adaptive Forms. -->
 
-此外，如果您選取XML結構描述或XDP表單範本作為片段的表單模型，內容尋找器中會出現一個顯示表單模型階層的新索引標籤。 它可讓您將表單模型元素拖放至片段上。 添加的表單模型元素將轉換為表單元件，同時保留來自關聯 XDP 或 XSD 的原始屬性。
+此外，如果您選取XML結構描述或XDP表單範本作為片段的表單模型，內容尋找器中會出現一個顯示表單模型階層的新索引標籤。 它可讓您將表單模型元素拖放至片段上。 新增的表單模型元素會轉換為表單元件，同時保留關聯XDP或XSD的原始屬性。
 
-### 儲存面板作為片段 {#save-panel-as-a-fragment}
+### 將面板另存為片段 {#save-panel-as-a-fragment}
 
 1. 開啟包含您要另存為最適化表單片段的面板的最適化表單。
 1. 在面板工具列中，按一下 **[!UICONTROL 另存為片段]**. 另存為片段對話方塊隨即開啟。
@@ -99,7 +100,7 @@ ht-degree: 1%
 
    * **表單模型**：根據最適化表單的表單模型，此欄位會顯示 **XML結構描述**， **表單範本**，或 **無**. 這是不可編輯的欄位。
 
-   * **片段模型根**：僅出現在基於 XSD 的最適化Forms中。 它指定片段模型的根。 您可以從下拉清單中選擇 **/** 或 XSD 複雜類型。 只有在您選取複雜型別作為片段模型根時，才能在另一個Adaptive Form中重複使用片段。
+   * **片段模型根**：僅顯示在XSD型最適化Forms中。 它會指定片段模型的根。 您可以選擇 **/** 或下拉式清單中的XSD複雜型別。 只有在您選取複雜型別作為片段模型根時，才能在另一個Adaptive Form中重複使用片段。
 如果您選擇 **/** 作為片段模型根，根的完整XSD樹狀結構顯示在Adaptive Form Data Model標籤中。 對於複雜型別片段模型根，在「最適化表單資料模型」索引標籤中只會顯示所選複雜型別的子系。
 
    * **XSD參照**：僅顯示在XSD型最適化Forms中。 它顯示XML綱要的位置。
@@ -122,20 +123,20 @@ ht-degree: 1%
 
 ### 設定片段外觀 {#configure-fragment-appearance}
 
-您在Adaptive Forms中插入的任何片段都會顯示為預留位置影像。 預留位置最多可在片段中顯示十個子面板的標題。 您可以設定 [!DNL AEM Forms] 顯示完整片段而非預留位置影像。
+您在 Adaptive Forms 中插入的任何片段都會顯示為佔位元影像。 佔位元顯示片段中最多十個子面板的標題。 您可以設定 [!DNL AEM Forms] 顯示完整片段而非預留位置影像。
 
 執行以下步驟，在表單中顯示完整的片段：
 
 1. 前往AEM Web主控台設定頁面，網址為https：[*主機*]：[*連線埠*]/system/console/configMgr。
 
 1. 搜尋並按一下 **[!UICONTROL 最適化表單設定服務]** 以編輯模式開啟。
-1. 停用 **[!UICONTROL 啟用預留位置來取代片段]** 核取方塊以顯示完整的片段，而非預留位置影像。
+1. 禁用 **[!UICONTROL 啟用佔位元代替片段]** 複選框以顯示完整片段而不是佔位元圖像。
 
 ### 在自適應表單中插入片段 {#insert-a-fragment-in-an-adaptive-form}
 
-您建立的自適應表單片段會顯示在AEM內容尋找器的「自適應表單片段」標籤中。 若要以最適化表單插入最適化表單片段：
+您建立的最適化窗体片段會显示在 AEM 內容 Finder 的「最適化窗体片段」標籤中。 要在最適化表單插入最適化表單片段：
 
-1. 以編輯模式開啟最適化表單，您要在其中插入最適化表單片段。
+1. 在編輯模式中開啟您要插入最適化表單片段的最適化表單。
 1. 按一下 **資產** ![資產 — 瀏覽器](assets/assets-browser.png) 在側邊欄中。 在資產瀏覽器中，選取 **最適化表單片段** 從下拉式清單。
 
    您也可以選擇顯示所有最適化表單片段，或根據其表單模型（表單範本、XML結構描述或基本）進行篩選。
@@ -144,11 +145,11 @@ ht-degree: 1%
 
    >[!NOTE]
    >
-   >最適化表單片段未啟用於從最適化窗體內創作的功能。 此外，您不能在基於 JSON 的自適應表單中使用基於 XSD 的片段，反之亦然。
+   >未啟用最適化表單片段來從最適化表單內進行製作。 此外，您無法在JSON型最適化表單中使用XSD型片段，反之亦然。
 
-最適化表單片段通過引用插入至最適化表單中，並與獨立的最適化表單片段同步。 這意味著當您更新自適應表單片段時，更改會反映在使用片段的所有自適應Forms中。
+最適化表單片段會以參考方式插入最適化表單片段中，並與獨立的最適化表單片段同步。 這表示當您更新最適化表單片段時，變更會反映在使用片段的所有Adaptive Forms中。
 
-### 在最適化表單中嵌入片段 {#embed-a-fragment-in-adaptive-form}
+### 在自適應表單中嵌入片段 {#embed-a-fragment-in-adaptive-form}
 
 您可以按一下「 」，選擇將最適化表單片段嵌入最適化表格中 **內嵌資產： &lt;*片段名稱*>** 按鈕時，按鈕會在已新增片段的面板工具列上，如下列範例影像所示。
 
@@ -174,17 +175,17 @@ ht-degree: 1%
 
 >[!NOTE]
 >
-> 如果在自適應表單中多次使用基於非基礎的表單片段，則片段欄位之間會出現數據同步問題。 您可以在表單中多次使用 [未綁定到任何表單數據模型 （FDM） 的基於核心元件的表單片段](/help/forms/adaptive-form-fragments-core-components.md) ，而不會遇到數據同步問題。
+> 如果您在適用性表單中多次使用無架構表單片段，則會發生片段欄位之間的資料同步問題。 您可以使用 [基於核心元件的表單片段](/help/forms/adaptive-form-fragments-core-components.md) 未繫結到任何表單資料模型(FDM)，在表單中多次沒有遇到資料同步問題。
 
-## 自動數據綁定的片段映射 {#auto-mapping-of-fragments-for-data-binding}
+## 自動對應資料繫結的片段 {#auto-mapping-of-fragments-for-data-binding}
 
-當您使用 XFA 表單 範本 或 XSD 複雜類型創建自適應表單片段並將片段拖放到自適應表單時，XFA 片段或 XSD 複雜類型將自動替換為相應的自適應表單片段，其片段模型根映射到 XFA 片段或 XSD 複雜類型。
+當您使用XFA表單範本或XSD複雜型別建立最適化表單片段，並將片段拖放至最適化表單時，XFA片段或XSD複雜型別會自動由對應的最適化表單片段取代，其片段模型根會對應至XFA片段或XSD複雜型別。
 
-您可以從編輯元件對話框中更改片段資產及其綁定。
+您可以從「編輯元件」對話方塊變更片段資產及其連結。
 
 >[!NOTE]
 >
->您還可以從 Finder 中的「最適化表體片段」資料庫中拖放綁定AEM 內容最適化表單片段，並從「最適化表單片段」面板的編輯元件對話框中提供正確的綁定引用。
+>您也可以從AEM內容尋找器中的最適化表單片段資料庫拖放已繫結的最適化表單片段，並從Adaptive Form片段面板的「編輯」元件對話方塊提供正確的繫結參考。
 
 ## 管理片段 {#manage-fragments}
 
@@ -206,7 +207,7 @@ ht-degree: 1%
   </tr>
   <tr>
    <td><p>檢視屬性</p> </td>
-   <td><p>開啟屬性面板。 從「屬性」面板中，您可以檢視和編輯屬性、產生預覽，以及上傳所選片段的縮圖影像。 有關詳細信息，請參閱 <a href="manage-form-metadata.md" target="_blank">管理中繼資料</a>。<br /> <br /> </p> </td>
+   <td><p>開啟屬性面板。 從「屬性」面板中，您可以檢視和編輯屬性、產生預覽，以及上傳所選片段的縮圖影像。 如需詳細資訊，請參閱 <a href="manage-form-metadata.md" target="_blank">管理中繼資料</a>.<br /> <br /> </p> </td>
   </tr>
   <tr>
    <td><p>複製</p> </td>
@@ -239,9 +240,9 @@ ht-degree: 1%
  </tbody>
 </table>
 
-## 將包含片段的最適化表單當地語系化 {#localizing-adaptive-form-containing-fragments}
+## 當地語系化包含片段的最適化表單 {#localizing-adaptive-form-containing-fragments}
 
-若要將包含最適化表單片段的自適應表單本地化，您需要分別將片段和表單本地化。 其構想是將片段本地化一次，並在多個最適化Forms中重複使用。
+要本地化包含自適應表單片段的最適化表單，您需要分別當地語系化片段和表單。 這個想法是將片段當地語系化一次，然後在多個自適應Forms中重複使用。
 
 >[!NOTE]
 >
@@ -250,17 +251,17 @@ ht-degree: 1%
 ## 使用片段時要記住的關鍵點 {#key-points-to-remember-when-working-with-fragments}
 
 * 確保片段名稱是唯一的。 如果存在具有相同名稱的現有片段，則片段無法建立。
-* 在XDP型最適化表單中，如果您將面板儲存為包含其他XDP片段的片段，則產生的片段會自動與子XDP片段繫結。 如果是XSD型最適化表單，產生的片段會與結構描述根繫結。
-* 建立最適化表單片段時，會建立片段節點，這類似於CRXDe Lite中最適化表單的guideContainer節點。
-* 不支援使用不同表單資料模型(FDM)的Adaptive Form片段。 例如，XSD型最適化表單中不支援XDP型片段，反之亦然。
+* 在基於 XDP 的自適應表單中，如果將面板另存為包含另一個 XDP 片段的片段，則生成的片段將自動綁定到子 XDP 片段。 如果是基於 XSD 的最適化表單，則生成的片段將綁定到綱要根目錄。
+* 當您建立最適化窗體片段時，會建立片段節點，類似於CRXDe Lite中最適化窗體的 guideContainer 節點。
+* 不支援使用不同表單資料模型 （FDM） 的自適應表單片段。 例如，基於 XDP 的自適應表單不支援基於 XDP 的片段，反之亦然。
 * 最適化表單片段可透過AEM內容尋找器中的最適化表單片段標籤使用。
 * 透過參考插入或嵌入自適應表單時，獨立自適應表單片段中的任何運算式、指令碼或樣式都會保留。
 * 您無法從最適化表單中編輯透過參考插入的最適化表單片段。 若要編輯，請編輯獨立的Adaptive Form片段或將片段嵌入到Adaptive Form中。
 * 發佈最適化表單時，您需要發佈在最適化表單中透過參考插入的獨立最適化表單片段。
-* 當您重新發佈更新的最適化表單片段時，更改會反映在使用片段的最適化表單的已發佈實例中。
-* 包含驗證元件的最適化表單不支援匿名使用者。 此外，不建議在最適化窗體片段中使用驗證元件。
+* 當您重新發佈更新的Adaptive Form片段時，變更會反映在使用片段的Adaptive Form的已發佈例項中。
+* 包含Verify元件的調適型表單不支援匿名使用者。 此外，不建議在自適應表單片段中使用驗證元件。
 * （**僅限** Mac）為了確保表單片段功能在所有場景中都能完美運行，請將以下內容添加到 /private/etc/hosts 檔中：
-  `127.0.0.1 <Host machine>` **主機**：使用的Apple Mac電腦 [!DNL AEM Forms] 已部署。
+  `127.0.0.1 <Host machine>`**主機：**&#x200B;部署的 [!DNL AEM Forms] Apple Mac 電腦。
 
 <!--
 ## Reference Fragments {#reference-fragments}
