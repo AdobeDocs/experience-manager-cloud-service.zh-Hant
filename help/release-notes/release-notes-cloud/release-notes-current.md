@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 3e63cfc65ea28a481b50f431483a13c2fd80853c
+source-git-commit: 05144cc11c3a3e99e4e76aa6c8720592e9ca7a9f
 workflow-type: tm+mt
-source-wordcount: '1903'
+source-wordcount: '1900'
 ht-degree: 21%
 
 ---
@@ -44,7 +44,12 @@ ht-degree: 21%
 
 ### 網站中的新功能 {#sites-new-features}
 
-**Edge Delivery Services 的 AEM 製作**
+#### Real Use Monitoring (RUM)資料服務 {#real-use-monitoring}
+
+* **[Real Use Monitoring (RUM) Data Service現已正式推出](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)** 啟用AEMas a Cloud Service的使用者端資料收集。
+Real Use Monitoring服務（使用者端集合）可更精確地反映互動情形，確保可靠地評估網站參與度。 它可讓客戶對其頁面流量和效能擁有進階深入分析。 這是進一步瞭解您的頁面效能並獲得改善的深入分析的絕佳機會。
+
+### Edge Delivery Services的AEM製作
 
 增強的穩定性及各種改良功能，提供更出色的撰寫體驗。
 
@@ -212,11 +217,6 @@ RDE命令列介面有一些新功能，可改善開發人員體驗：
 #### 用來載入動態內容的 Edge Side Includes (ESI) (早期採用者計畫) {#esi-early-adopter}
 
 Adobe Managed CDN現在支援 [Edge Side Include (ESI)](/help/implementing/dispatcher/edge-side-includes.md)，邊緣層級動態網頁內容元件的標籤語言。 加入ESI程式碼片段，您就能快取CDN的整體HTML頁面，其中包含較高TTL，同時更頻繁地從來源擷取需要較高步調更新（較低TTL）的較小區段。 <!--Please reach out to **<aemcs-cdn-config-adopter@adobe.com>** for more information.-->
-
-#### Real User Monitoring (RUM) Data Service (Early Adopter Program)
-
-* **[Real Use Monitoring (RUM) Data Service現已正式推出](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)** 啟用AEMas a Cloud Service的使用者端資料收集。
-Real Use Monitoring服務（使用者端集合）可更精確地反映互動情形，確保可靠地評估網站參與度。 它可讓客戶對其頁面流量和效能擁有進階深入分析。 這是進一步瞭解您的頁面效能並獲得改善的深入分析的絕佳機會。
 
 ## [!DNL Experience Manager] Guides {#guides}
 
