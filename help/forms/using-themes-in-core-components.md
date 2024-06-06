@@ -1,16 +1,18 @@
 ---
 title: 如何在Adaptive Forms中建立和使用主題？
 description: 您可以使用主題來設定樣式，並使用核心元件來將視覺身分提供給最適化表單。 您可以在任何數量的最適化Forms中共用主題。
+keywords: 最適化表單樣式化核心元件。 在核心元件中使用主題、設計最適化表單的樣式、自訂主題
 feature: Adaptive Forms, Core Components
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: 159407dfaa5d17caddca2953a5732f0e91eb474c
+source-git-commit: aca3508d85a0382f679a8fa0ca986cfd13ee793b
 workflow-type: tm+mt
-source-wordcount: '2754'
+source-wordcount: '2879'
 ht-degree: 4%
 
 ---
 
-# Adaptive Forms中的主題 {#themes-for-af-using-core-components}
+
+# 使用主題來設定以核心元件為基礎的最適化Forms的樣式{#themes-for-af-using-core-components}
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
@@ -19,7 +21,9 @@ ht-degree: 4%
 
 您可以建立並套用主題來設定最適化表單的樣式。 主題包含元件和面板的樣式詳細資訊。 樣式包括背景顏色、狀態顏色、透明度、對齊方式和大小等屬性。套用主題時，指定的樣式會反映在對應的元件上。主題是獨立管理，不需參照最適化表單，且可在多個最適化Forms中重複使用。
 
-## 可用主題
+在本文中，我們瞭解如何使用主題來設計核心元件型最適化Forms的自訂外觀。
+
+## 設定核心元件樣式的可用主題
 
 Forms (如Cloud Service所提供)下列核心元件型最適化Forms的主題：
 
@@ -27,9 +31,9 @@ Forms (如Cloud Service所提供)下列核心元件型最適化Forms的主題：
 * [WKND主題](https://github.com/adobe/aem-forms-theme-wknd)
 * [畫架佈景主題](https://github.com/adobe/aem-forms-theme-easel)
 
-## 瞭解主題的結構
+## 瞭解主題結構
 
-主題是一個套件，其中包含定義最適化Forms樣式的CSS檔案、JavaScript檔案和資源（如圖示）。 最適化表單主題會依循特定組織，包含下列元件：
+主題是包含樣式元件的套件，例如CSS檔案、JavaScript檔案和定義最適化Forms樣式的資源（如圖示）。 最適化表單主題會依循特定組織，包含下列元件：
 
 * `src/theme.scss`：此資料夾包含對整個主題有廣泛影響的CSS檔案。 它是定義和管理佈景主題樣式和行為的集中位置。 透過編輯此檔案，您可以進行在整個主題中普遍套用的變更，這會影響最適化Forms和AEM Sites頁面的外觀和功能。
 
@@ -43,7 +47,7 @@ Forms (如Cloud Service所提供)下列核心元件型最適化Forms的主題：
 
 ## 建立主題
 
-Forms如Cloud Service所提供，以下是核心元件型最適化Forms的主題。
+Forms如Cloud Service所提供，以下列出核心元件型最適化Forms的最適化表單樣式主題。
 
 * [畫布主題](https://github.com/adobe/aem-forms-theme-canvas)
 * [WKND主題](https://github.com/adobe/aem-forms-theme-wknd)
@@ -55,7 +59,7 @@ Forms如Cloud Service所提供，以下是核心元件型最適化Forms的主題
 
 ## 自訂主題 {#customize-a-theme-core-components}
 
-自訂主題是指修改及個人化主題外觀的程式。 自訂主題時，您可以變更其設計元素、版面、顏色、印刷樣式，有時也會變更基礎程式碼。 它可讓您為網站或應用程式建立獨一無二且量身打造的外觀，同時維持主題提供的基本結構和功能。
+自訂主題是指修改、樣式化和個人化主題外觀的程式。 自訂主題時，您可以變更其設計元素、版面、顏色、印刷樣式，有時也會變更基礎程式碼。 它可讓您為網站或應用程式建立獨一無二且量身打造的外觀，同時維持主題提供的基本結構和功能。
 
 ### 先決條件 {#prerequisites-to-customize}
 
@@ -76,7 +80,7 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 
 -->
 
-瞭解先決條件並設定開發環境後，您就可以開始根據特定需求自訂主題。
+瞭解先決條件並設定開發環境後，您就可以開始根據特定需求自訂主題或設定主題樣式。
 
 ### 自訂主題 {#steps-to-customize-a-theme-core-components}
 
@@ -89,6 +93,8 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 1. [部署主題](#deploy-the-theme)
 
 檔案中提供的範例是根據 **畫布** 佈景主題，但請務必注意，您可以複製任何佈景主題，並使用相同的指示加以自訂。 這些指示適用於任何主題，可讓您根據特定需求修改主題。
+
+讓我們從使用主題為您的核心元件型最適化Forms建立品牌體驗的程式開始？
 
 #### 1.原地複製主題 {#download-a-theme-core-components}
 
@@ -121,7 +127,7 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 
 #### 2.設定佈景主題的名稱 {#set-name-of-theme}
 
-1. 以純文字編輯器開啟主題資料夾。 例如，若要開啟 `aem-forms-theme-canvas` Visual Studio程式碼編輯器中的資料夾。
+1. 在IDE中開啟主題資料夾。 例如，若要開啟 `aem-forms-theme-canvas` Visual Studio程式碼編輯器中的資料夾。
 
 1. 導覽至 `aem-forms-theme-canvas` 檔案夾。
 
@@ -214,7 +220,7 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 
 ##### 4.1.設定本機環境以進行測試 {#rename-env-file-theme-folder}
 
-1. 以純文字編輯器開啟主題資料夾。 例如，開啟 `aem-forms-theme-canvas` Visual Studio程式碼編輯器中的資料夾。
+1. 在IDE中開啟主題資料夾。 例如，開啟 `aem-forms-theme-canvas` Visual Studio程式碼編輯器中的資料夾。
 1. 重新命名 `env_template` 檔案到 `.env` 檔案並新增下列引數：
 
    ```
@@ -255,7 +261,7 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 
 ![Proxy browsersync](/help/forms/assets/browser_sync.png)
 
-在遵循主題層級和元件層級提供的範例進行主題自訂後，最適化表單的錯誤訊息將變更為 `blue` 顏色，而按鈕元件的標籤顏色會變更為 `green` 游標停留時。
+在主題層級和元件層級遵循用於自訂主題的最適化表單（核心元件）的樣式設定範例後，最適化表單的錯誤訊息將變更為 `blue` 顏色，而按鈕元件的標籤顏色會變更為 `green` 游標停留時。
 
 **預覽主題層級樣式**
 
@@ -265,11 +271,13 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 
 ![範例：將游標停留顏色設定為綠色](/help/forms/assets/button-customization.png)
 
+自訂主題有助於根據組織需求，設計核心元件型最適化Forms的自訂外觀。
+
 ###### 測試Cloud Service環境中託管的表單主題
 
 您也可以測試AEM Formsas a Cloud Service執行個體上託管的最適化表單主題。 若要使用雲端例項上託管的Adaptive Forms來設定和設定本機環境以測試主題，請執行以下步驟：
 
-1. 以純文字編輯器開啟主題資料夾。 例如，開啟 `aem-forms-theme-canvas` Visual Studio程式碼編輯器中的資料夾。
+1. 在IDE中開啟主題資料夾。 例如，開啟 `aem-forms-theme-canvas` Visual Studio程式碼編輯器中的資料夾。
 1. 重新命名 `env_template` 檔案到 `.env` 檔案並新增下列引數：
 
    ```
@@ -389,6 +397,8 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 
 ![樣式標籤下可用的自訂主題](/help/forms/assets/custom-theme-style-tab.png)
 
+自訂主題有助於建立核心元件型Adaptive Forms的品牌體驗。
+
 ## 將主題套用至最適化表單 {#using-theme-in-adaptive-form}
 
 將主題套用至最適化表單的步驟如下：
@@ -420,7 +430,7 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 * **使用表單編輯器或主題編輯器來處理頁首和頁尾**
 
   如果要使用字型樣式、背景和透明度等樣式選項來設定頁首和頁尾的樣式，請使用主題編輯器。
-如果您想在頁尾中提供標誌影像、公司名稱和版權資訊等資訊，請使用表單編輯器選項。
+如果您想在頁首中提供標誌影像、公司名稱以及頁尾的版權資訊等資訊，請使用表單編輯器選項。
 
 ## 常見問題 {#faq}
 
