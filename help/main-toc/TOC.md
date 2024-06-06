@@ -486,7 +486,7 @@ ht-degree: 99%
    + 共用與發佈資產 {#brand-portal}
       + [設定  [!DNL Assets]  和 [!DNL Brand Portal]](/help/assets/configure-aem-assets-with-brand-portal.md)
       + [將資產發佈至 [!DNL Brand Portal]](/help/assets/publish-to-brand-portal.md)
-      + [資產從  [!DNL Brand Portal] 發佈到 [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html)
+      + [資產從  [!DNL Brand Portal] 發佈到 [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=zh-Hant)
    + 內容片段 {#content-fragments}
       + [使用內容片段](/help/assets/content-fragments/content-fragments.md)
       + [使用內容片段和 GraphQL 的 Headless 傳遞](/help/assets/content-fragments/content-fragments-graphql.md)
@@ -596,7 +596,7 @@ ht-degree: 99%
    + 概觀 {#forms-overview}
       + [簡介](/help/forms/home.md)
       + [重要 Adobe Experience Manager Forms 創新](/help/forms/latest-innovations.md)
-      + [早期採用者(EA)功能](/help/forms/early-adopter-ea-features.md)
+      + [早期採用者 (EA) 功能](/help/forms/early-adopter-ea-features.md)
       + [重大變更](/help/forms/notable-changes.md)
       + [架構](/help/forms/aem-forms-cloud-service-architecture.md)
       + [常見問題](/help/forms/faq.md)
@@ -1012,7 +1012,7 @@ ht-degree: 99%
       + [New Relic One](/help/implementing/cloud-manager/user-access-new-relic.md)
       + [Dynatrace](/help/implementing/cloud-manager/dynatrace.md)
       + [通知](/help/implementing/cloud-manager/notifications.md)
-      + [進階網路](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking.html)
+      + [進階網路](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking.html?lang=zh-Hant)
       + SSL 憑證 {#manage-ssl-certificates}
          + [簡介](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
          + [正在新增 SSL 憑證](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)
@@ -1093,8 +1093,8 @@ ht-degree: 99%
          + [架構](/help/implementing/universal-editor/architecture.md)
          + [驗證](/help/implementing/universal-editor/authentication.md)
          + [快速入門](/help/implementing/universal-editor/getting-started.md)
-         + [開發人員概觀](/help/implementing/universal-editor/developer-overview.md)
-         + [本機AEM開發](/help/implementing/universal-editor/local-dev.md)
+         + [開發者概觀](/help/implementing/universal-editor/developer-overview.md)
+         + [本機 AEM 開發](/help/implementing/universal-editor/local-dev.md)
          + [呼叫](/help/implementing/universal-editor/calls.md)
       + [Headless 體驗管理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/introduction.html?lang=zh-Hant)
       + 混合式與 SPA 開發 {#hybrid}
@@ -1185,9 +1185,9 @@ ht-degree: 99%
       + [AEM as a Cloud Service 中的 CDN](/help/implementing/dispatcher/cdn.md)
       + [設定 CDN 上的流量](/help/implementing/dispatcher/cdn-configuring-traffic.md)
       + [Edge Side 包括](/help/implementing/dispatcher/edge-side-includes.md)
-      + [設定CDN認證和驗證](/help/implementing/dispatcher/cdn-credentials-authentication.md)
-      + [設定 CDN 錯誤頁面](/help/implementing/dispatcher/cdn-error-pages.md)
-      + [清除CDN快取](/help/implementing/dispatcher/cdn-cache-purge.md)
+      + [設定內容傳遞網路憑證和身份驗證](/help/implementing/dispatcher/cdn-credentials-authentication.md)
+      + [設定內容傳遞網路錯誤頁面](/help/implementing/dispatcher/cdn-error-pages.md)
+      + [清除內容傳遞網路快取](/help/implementing/dispatcher/cdn-cache-purge.md)
       + [AEM as a Cloud Service 中的快取](/help/implementing/dispatcher/caching.md)
 + 連接器 {#connectors}
    + [實施 AEM 連接器](/help/connectors/implement.md)
