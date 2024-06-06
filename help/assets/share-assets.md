@@ -1,13 +1,12 @@
 ---
 title: 分發和共用資產、資料夾和集合
 description: 使用共用作為連結、下載和透過等方法散發您的數位資產 [!DNL Brand Portal]， [!DNL desktop app]、和 [!DNL Asset Link].
-contentOwner: Vishabh Gupta
 feature: Asset Management, Collaboration, Asset Distribution
 role: User, Admin
 exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
-source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
+source-git-commit: 1b4c5d985c71a84449a13b79fc00adea0443a631
 workflow-type: tm+mt
-source-wordcount: '1647'
+source-wordcount: '1847'
 ht-degree: 3%
 
 ---
@@ -107,9 +106,45 @@ Users with administrator privileges or with read permissions at `/var/dam/share`
 
    ![連結共用電子郵件](assets/link-sharing-email-notification.png)
 
-### 使用資產連結下載資產
+### 自訂電子郵件範本 {#customize-email-template}
 
-任何有權存取共用資產連結的使用者都可以下載zip資料夾中隨附的資產。 不論使用者是存取複製的資產連結，或使用透過電子郵件共用的資產連結，下載程式都相同。
+精心設計的範本可傳達專業精神與能力，提升訊息與組織的信譽。 此 [!DNL Adobe Experience Manager] 可讓您自訂電子郵件範本，此範本會傳送給收到包含共用連結之電子郵件的收件者。 此外，自訂的電子郵件範本可讓您透過提供收件者名稱並參考與他們相關的特定詳細資訊，來個人化您的電子郵件內容。 這種個人接觸可能會讓收件者感受到價值，並提升參與度。 不僅如此，自訂範本還可確保您的電子郵件與品牌身分一致，包括標誌、顏色和字型。 一致性可加強品牌認知度，以及收件者之間的信任。
+
+#### 自訂電子郵件範本的格式 {#format-of-custom-email-template}
+
+可使用純文字或HTML來自訂電子郵件範本。 預設的可編輯範本連結可在以下位置找到： `/libs/settings/dam/adhocassetshare/en.txt`. 您可以透過建立檔案來覆寫範本 `/apps/settings/dam/adhocassetshare/en.txt`. 您可以視需要多次修改電子郵件範本。
+
+| 預留位置 | 說明 |
+|---|-----|
+| ${emailSubject} | 電子郵件的主旨 |
+| ${emailInitiator} | 建立電子郵件的使用者的電子郵件ID |
+| ${emailMessage} | 電子郵件內文 |
+| ${pagePath} | 共用連結的URL |
+| ${linkExpiry} | 共用連結到期日 |
+| ${host.prefix} | 來源 [!DNL Experience Manager] 例如 `http://www.adobe.com"` |
+
+#### 自訂電子郵件範本範例 {#custom-email-template-example}
+
+```
+subject: ${emailSubject}
+
+<!DOCTYPE html>
+<html><body>
+<p><strong>${emailInitiator}</strong> invited you to review assets.</p>
+<p>${emailMessage}</p>
+<p>The shared link will be available until ${linkExpiry}.
+<p>
+    <a href="${pagePath}" target="_blank"><strong>Open</strong></a>
+</p>
+
+Sent from instance: ${host.prefix}
+
+</body></html>
+```
+
+### 使用資產連結下載資產 {#download-assets-using-asset-link}
+
+任何有權存取共用資產連結的使用者都可以下載zip資料夾中隨附的資產。 無論使用者是存取複製的資產連結，或使用透過電子郵件共用的資產連結，下載程式都相同。
 
 * 按一下資產連結，或將URL貼到瀏覽器中。 此 [!UICONTROL 連結共用] 介面會開啟，您可在其中切換至 [!UICONTROL 卡片檢視] 或 [!UICONTROL 清單檢視].
 
@@ -266,7 +301,7 @@ Add content or link about how to configure sharing via BP, DA, AAL, etc.
 
 ### 要使用的設定 [!DNL Adobe Asset Link] {#configure-asset-link}
 
-「Adobe資產連結」可簡化創意人員與行銷人員在內容建立過程中的合作流程。 它會連線 [!DNL Adobe Experience Manager Assets] 替換為 [!DNL Creative Cloud] 案頭應用程式 [!DNL Adobe InDesign]， [!DNL Adobe Photoshop]、和 [!DNL Adobe Illustrator]. 此 [!DNL Adobe Asset Link] 面板可讓創意人員存取及修改中儲存的內容 [!DNL Assets] 而不用離開他們最熟悉的創意應用程式。
+「Adobe資產連結」可簡化創意人員與行銷人員在內容建立過程中的合作流程。 它會連線 [!DNL Adobe Experience Manager Assets] 替換為 [!DNL Creative Cloud] 案頭應用程式， [!DNL Adobe InDesign]， [!DNL Adobe Photoshop]、和 [!DNL Adobe Illustrator]. 此 [!DNL Adobe Asset Link] 面板可讓創意人員存取及修改中儲存的內容 [!DNL Assets] 而不用離開他們最熟悉的創意應用程式。
 
 另請參閱 [如何設定 [!DNL Assets] 以搭配使用 [!DNL Adobe Asset Link]](https://helpx.adobe.com/tw/enterprise/using/configure-aem-assets-for-asset-link.html).
 
@@ -300,3 +335,4 @@ Add content or link about how to configure sharing via BP, DA, AAL, etc.
 * [管理收藏集](manage-collections.md)
 * [大量中繼資料匯入](metadata-import-export.md)
 * [發佈資產至 AEM 和 Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+
