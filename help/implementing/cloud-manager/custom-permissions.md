@@ -3,9 +3,9 @@ title: 自訂權限
 description: 瞭解如何使用自訂許可權建立具有可設定許可權的自訂許可權設定檔，以限制對Cloud Manager使用者的程式、管道和環境的存取權。
 exl-id: 167da985-7f19-45b3-90a3-884817907da2
 solution: Experience Manager
-feature: Cloud Manager, Developing
+feature: Security, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: bc92ed7acefbbd906b0986ea0b6b96fa6d8422de
 workflow-type: tm+mt
 source-wordcount: '1515'
 ht-degree: 41%
