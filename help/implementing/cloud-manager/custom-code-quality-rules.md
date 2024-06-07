@@ -5,10 +5,10 @@ exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: ceaa3b075953e9bdbcc0ae8c47106150be9a52d7
 workflow-type: tm+mt
-source-wordcount: '4167'
-ht-degree: 87%
+source-wordcount: '4482'
+ht-degree: 82%
 
 ---
 
@@ -1134,7 +1134,6 @@ Experience Manager as a Cloud Service 禁止自訂搜尋索引定義 (即 `oak:Q
 
 完整自訂索引名稱的預期模式為： `[prefix].[indexName]-custom-[version]`. 如需詳細資訊，請參閱檔案 [內容搜尋與索引](/help/operations/indexing.md).
 
-
 ### 具有相同索引定義中不同分析值的相同屬性 {#oakpal-same-property-different-analyzed-values}
 
 #### 不符合規範的程式碼 {#non-compliant-code-same-property-different-analyzed-values}
@@ -1187,7 +1186,7 @@ Experience Manager as a Cloud Service 禁止自訂搜尋索引定義 (即 `oak:Q
 
 如果未明確設定分析的屬性，其預設值為false。
 
-### 標籤屬性
+### 標籤屬性 {#tags-property}
 
 * **索引鍵**： IndexHasValidTagsProperty
 * **類型**：程式碼異味
@@ -1195,3 +1194,75 @@ Experience Manager as a Cloud Service 禁止自訂搜尋索引定義 (即 `oak:Q
 * **始自**：2023.1.0 版本
 
 對於特定索引，請確定您保留標籤屬性及其目前值。 雖然可以將新值新增到標籤屬性，但刪除任何現有值（或完全刪除屬性）可能會導致意外結果。
+
+### 索引定義節點不得部署在UI內容套件中 {#oakpal-ui-content-package}
+
+* **索引鍵**： IndexNotUnderUIContent
+* **型別**：改進
+* **嚴重度**：輕微
+* **始自**：2024.6.0 版本
+
+AEM Cloud Service禁止自訂搜尋索引定義（型別的節點） `oak:QueryIndexDefinition`)，不會部署在UI內容套件中。
+
+>[!WARNING]
+>
+>強烈建議您儘快解決此問題，因為這會從開始導致管道失敗 [Cloud Manager 2024年8月發行。](/help/implementing/cloud-manager/release-notes/current.md)
+
+### 型別damAssetLucene的自訂全文檢索索引定義必須正確加上前置詞「damAssetLucene」 {#oakpal-dam-asset-lucene}
+
+* **索引鍵**： CustomFulltextIndexesOfTheDamAssetCheck
+* **型別**：改進
+* **嚴重度**：輕微
+* **始自**：2024.6.0 版本
+
+AEM Cloud Service禁止型別的自訂全文檢索索引定義 `damAssetLucene` ，以免前面加上 `damAssetLucene`.
+
+>[!WARNING]
+>
+>強烈建議您儘快解決此問題，因為這會從開始導致管道失敗 [Cloud Manager 2024年8月發行。](/help/implementing/cloud-manager/release-notes/current.md)
+
+### 索引定義節點不得包含相同名稱的屬性 {#oakpal-index-property-name}
+
+* **索引鍵**： DuplicateNameProperty
+* **型別**：改進
+* **嚴重度**：輕微
+* **始自**：2024.6.0 版本
+
+AEM Cloud Service禁止自訂搜尋索引定義（即型別的節點） `oak:QueryIndexDefinition`)以包含相同名稱的屬性
+
+>[!WARNING]
+>
+>強烈建議您儘快解決此問題，因為這會從開始導致管道失敗 [Cloud Manager 2024年8月發行。](/help/implementing/cloud-manager/release-notes/current.md)
+
+### 禁止自訂某些OOTB索引定義 {#oakpal-customizing-ootb-index}
+
+* **索引鍵**： RestrictIndexCustomization
+* **型別**：改進
+* **嚴重度**：輕微
+* **始自**：2024.6.0 版本
+
+AEM Cloud Service禁止未經授權修改下列OOTB索引：
+
+* `nodetypeLucene`
+* `slingResourceResolver`
+* `socialLucene`
+* `appsLibsLucene`
+* `authorizables`
+* `pathReference`
+
+>[!WARNING]
+>
+>強烈建議您儘快解決此問題，因為這會從開始導致管道失敗 [Cloud Manager 2024年8月發行。](/help/implementing/cloud-manager/release-notes/current.md)
+
+### 分析器中代碼器的設定應以「tokenizer」名稱建立 {#oakpal-tokenizer}
+
+* **索引鍵**： AnalyzerTokenizerConfigCheck
+* **型別**：改進
+* **嚴重度**：輕微
+* **始自**：2024.6.0 版本
+
+AEM Cloud Service禁止在分析器中建立名稱不正確的代碼器。 代號器應一律定義為 `tokenizer`.
+
+>[!WARNING]
+>
+>強烈建議您儘快解決此問題，因為這會從開始導致管道失敗 [Cloud Manager 2024年8月發行。](/help/implementing/cloud-manager/release-notes/current.md)

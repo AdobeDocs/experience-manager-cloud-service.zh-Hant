@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service 中的內容還原
 description: 瞭解如何使用 Cloud Manager 從備份中還原 AEM as a Cloud Service 內容。
 exl-id: 921d0c5d-5c29-4614-ad4b-187b96518d1f
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 5baeb4012e5aa82a8cd8710b18d9164583ede0bd
 workflow-type: tm+mt
-source-wordcount: '1157'
-ht-degree: 77%
+source-wordcount: '1339'
+ht-degree: 64%
 
 ---
 
@@ -13,15 +13,6 @@ ht-degree: 77%
 # AEM as a Cloud Service 中的內容還原 {#content-restore}
 
 瞭解如何使用 Cloud Manager 從備份中還原 AEM as a Cloud Service 內容。
-
->[!NOTE]
->
->此功能僅適用於[率先採用者計畫](/help/implementing/cloud-manager/release-notes/current.md#early-adoption)，且有某些限制超出本文所述範圍。 在早期採用階段：
->
->* 此功能僅適用於開發環境。
->* 每個計畫的內容還原限制為每月兩次。
->
->如需AEMas a Cloud Service現有備份與還原系統的詳細資訊，請參閱 [AEMas a Cloud Service的備份和還原](/help/operations/backup.md).
 
 ## 概觀 {#overview}
 
@@ -40,13 +31,41 @@ Cloud Manager 提供兩種型別的備份，您可以從中還原內容。
 >
 >也可以[使用公用 API 還原備份](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/)
 
+>[!WARNING]
+>
+>* 只有在程式碼或內容發生嚴重問題時，才應使用此功能。
+>* 還原備份將導致從備份到目前之間的最近資料遺失。 暫存資料也會還原為舊版本。
+>* 在起始內容還原作業之前，請先考慮其他選擇性內容還原選項。
+
+## 選擇性內容還原選項 {#selective-options}
+
+在還原至完整內容還原之前，請考慮以下選項以更輕鬆地還原您的內容。
+
+* 如果已刪除路徑的套件可用，請使用再次安裝套件 [封裝管理員。](/help/implementing/developing/tools/package-manager.md)
+* 如果刪除的路徑是Sites中的頁面，請使用 [還原樹狀結構功能。](/help/sites-cloud/authoring/sites-console/page-versions.md)
+* 如果刪除的路徑是資產資料夾，且原始檔案可供使用，請透過重新上傳它們 [資產主控台。](/help/assets/add-assets.md)
+* 如果刪除內容為資產，請考慮以下事項 [還原資產的舊版本。](/help/assets/manage-digital-assets.md)
+
+如果上述選項都無法運作，且已刪除路徑的內容很重要，請依下列各節所述執行內容還原。
+
+## 建立使用者角色 {#user-role}
+
+依預設，沒有任何使用者擁有在開發、生產或中繼環境中執行內容還原的許可權。 若要將此許可權委派給特定使用者或群組，請遵循這些一般步驟。
+
+1. 以表示式名稱建立產品描述檔，該名稱是指內容復原。
+1. 提供 **計畫存取** 必要程式的許可權。
+1. 提供 **內容還原** 必要環境或計畫所有環境的許可權，取決於您的使用案例。
+1. 將使用者指派給該設定檔。
+
+如需管理許可權的詳細資訊，請參閱 [自訂許可權](/help/implementing/cloud-manager/custom-permissions.md) 檔案。
+
 ## 還原內容 {#restoring-content}
 
 首先，決定您要還原之內容的時間範圍。 然後，若要從備份中還原環境的內容，請執行這些步驟。
 
 >[!NOTE]
 >
->使用者具有 **企業所有者** 或 **部署管理員** 必須登入角色才能啟動還原操作。
+>使用者必須具備 [適當的許可權](#user-role) 以啟動還原作業。
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織。
 

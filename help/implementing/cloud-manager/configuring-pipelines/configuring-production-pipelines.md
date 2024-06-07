@@ -6,10 +6,10 @@ exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: a5179851af8ec88e23d79a74265b10cbce2d50f1
 workflow-type: tm+mt
-source-wordcount: '1338'
-ht-degree: 68%
+source-wordcount: '1367'
+ht-degree: 67%
 
 ---
 
@@ -86,7 +86,7 @@ ht-degree: 68%
 
    >[!TIP]
    > 
-   >如要了解如何在 Cloud Manager 中新增和管理存放庫，請參閱文件：[新增和管理存放庫](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md)。
+   >如要了解如何在 Cloud Manager 中新增和管理存放庫，請參閱文件：[新增和管理存放庫](/help/implementing/cloud-manager/managing-code/managing-repositories.md)。
 
    * **Git 分支** - 此選項會定義管道應該選取哪個分支來擷取程式碼。
       * 輸入分支名稱的前幾個字元，該欄位的自動完成功能將會尋找相符的分支以幫助您進行選擇。
@@ -126,6 +126,10 @@ ht-degree: 68%
    * 如果所選環境存在 Web 層程式碼管道，則此選項會停用。
    * 如果您將現有的完整堆疊管道部署到環境，則為同一環境建立 Web 層設定管道將忽略完整堆疊管道中的現有 Web 層設定。
 
+>[!NOTE]
+>
+>私有存放庫不支援Web層和設定管道。 請參閱檔案 [在Cloud Manager中新增私有存放庫](/help/implementing/cloud-manager/managing-code/private-repositories.md) 以取得詳細資料和完整的限制清單。
+
 選擇部署型別後，完成建立生產、目標部署管道的步驟相同。
 
 1. 選擇所需的部署型別。
@@ -142,7 +146,7 @@ ht-degree: 68%
 
    >[!TIP]
    > 
-   >請參閱[新增和管理存放庫](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md)，以便了解如何在 Cloud Manager 中新增和管理存放庫，
+   >請參閱[新增和管理存放庫](/help/implementing/cloud-manager/managing-code/managing-repositories.md)，以便了解如何在 Cloud Manager 中新增和管理存放庫，
 
    * **Git 分支** - 此選項會定義管道應該選取哪個分支來擷取程式碼。
       * 輸入分支名稱的前幾個字元，該欄位的自動完成功能。會尋找相符的分支以幫助您進行選取。

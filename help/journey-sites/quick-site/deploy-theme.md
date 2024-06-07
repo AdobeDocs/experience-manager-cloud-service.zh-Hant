@@ -5,7 +5,7 @@ exl-id: fe065972-39db-4074-a802-85895c701efd
 solution: Experience Manager Sites
 feature: Developing
 role: Admin, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: a5179851af8ec88e23d79a74265b10cbce2d50f1
 workflow-type: tm+mt
 source-wordcount: '1002'
 ht-degree: 100%
@@ -109,7 +109,7 @@ AEM 是一個強大的工具並有許多其他選項可用。查看[其他資源
 * [AEM as a Cloud Service 技術文件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html) - 如果您已經對 AEM 有深入的了解，您可能想直接查閱深入的技術文件。
 * [Cloud Manager 文件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html) - 如果您想要 Cloud Manager 功能的更多詳細資訊，您可能想直接查閱深入的技術文件。
 * [角色型權限](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/role-based-permissions.html) - Cloud Manager 已預先設定角色並授予適當權限。有關這些角色以及如何管理它們的詳細資訊，請參閱本文件。
-* [Cloud Manager 存放庫](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) - 如果您需要有關如何為 AEMaaCS 專案設定和管理 Git 存放庫的更多資訊，請參閱此文件。
+* [Cloud Manager 存放庫](/help/implementing/cloud-manager/managing-code/managing-repositories.md) - 如果您需要有關如何為 AEMaaCS 專案設定和管理 Git 存放庫的更多資訊，請參閱此文件。
 * [設定 CI/CD 管道 - 雲端服務](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) - 在本文件中了解更多關於設定全堆疊管道與前端管道的詳細資訊。
 * [AEM 標準網站範本](https://github.com/adobe/aem-site-template-standard) - 這是 AEM 標準網站範本的 GitHub 存放庫。
 * [AEM 網站主題](https://github.com/adobe/aem-site-template-standard-theme-e2e)- 這是 AEM 網站主題的 GitHub 存放庫。

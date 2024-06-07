@@ -5,7 +5,7 @@ exl-id: 3f3d7631-2bc9-440b-9888-50f6529bcd42
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: a5179851af8ec88e23d79a74265b10cbce2d50f1
 workflow-type: tm+mt
 source-wordcount: '1381'
 ht-degree: 89%
@@ -198,7 +198,7 @@ Cloud Manager 標頭有一個漢堡選單，會自動開啟以顯示程式概觀
 * 概觀 - 目前文件中所述的程式概觀
 * [活動](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#activity) - 程式的管道執行歷史記錄
 * [管道](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#pipelines) - 為程式設定的所有管道
-* [存放庫](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) - 為程式設定的所有存放庫
+* [存放庫](/help/implementing/cloud-manager/managing-code/managing-repositories.md) - 為程式設定的所有存放庫
 * [報告](/help/implementing/cloud-manager/sla-reporting.md) - SLA 資料等量度
 * [環境](/help/implementing/cloud-manager/manage-environments.md) - 為程式設定的所有環境
 * [內容集](/help/implementing/developing/tools/content-copy.md) - 為複製目的而建立的內容集合

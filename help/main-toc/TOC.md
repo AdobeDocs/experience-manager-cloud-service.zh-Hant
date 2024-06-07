@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的運作方式以及該軟體可以為您做哪些事。
 breadcrumb-title: 使用手冊
 user-guide-title: AEM as a Cloud Service
-source-git-commit: d4ada5f15a587d54f46a475ca574134988b463d8
+source-git-commit: 0b39fc4dcaf86d436547d3941b1f12bca8c5bc9b
 workflow-type: tm+mt
-source-wordcount: '5010'
-ht-degree: 99%
+source-wordcount: '5030'
+ht-degree: 98%
 
 ---
 
@@ -99,6 +99,7 @@ ht-degree: 99%
    + Cloud Manager 發行說明 {#cloud-manager}
       + [最新發行說明](/help/implementing/cloud-manager/release-notes/current.md)
       + 2024 {#2024}
+         + [2024.5.0 版發行說明](/help/implementing/cloud-manager/release-notes/2024/2024-5-0.md)
          + [2024.4.0 版發行說明](/help/implementing/cloud-manager/release-notes/2024/2024-4-0.md)
          + [2024.3.0 版發行說明](/help/implementing/cloud-manager/release-notes/2024/2024-3-0.md)
          + [2024.2.0 版發行說明](/help/implementing/cloud-manager/release-notes/2024/2024-2-0.md)
@@ -976,6 +977,7 @@ ht-degree: 99%
          + [建立沙箱方案](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md)
          + [編輯方案](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)
          + [休眠環境](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md)
+         + [Edge Delivery Services支援](/help/implementing/cloud-manager/edge-delivery-services.md)
       + 建立 AEM 應用程式專案 {#create-application-project}
          + [專案建立精靈](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md)
          + [專案設定](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md)
@@ -983,12 +985,16 @@ ht-degree: 99%
       + [管理環境](/help/implementing/cloud-manager/manage-environments.md)
       + 管理程式碼 {#managing-code}
          + [Maven 專案版本處理](/help/implementing/cloud-manager/managing-code/project-version-handling.md)
-         + [Cloud Manager 中的存放庫](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md)
+         + [在Cloud Manager中管理存放庫](/help/implementing/cloud-manager/managing-code/managing-repositories.md)
+         + [新增Adobe存放庫](/help/implementing/cloud-manager/managing-code/adobe-repositories.md)
+         + [新增私人存放庫](/help/implementing/cloud-manager/managing-code/private-repositories.md)
          + [存取存放庫](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
+         + [Git 子模組支援](/help/implementing/cloud-manager/managing-code/git-submodules.md)
          + [將 Git 與 Cloud Manager 一起使用](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)
          + [使用多個存放庫](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md)
          + [企業開發團隊設定](/help/implementing/cloud-manager/managing-code/enterprise-team-dev-setup.md)
-         + [使用您自己的 GitHub 存放庫](/help/implementing/cloud-manager/managing-code/byo-github.md)
+         + [GitHub檢查設定](/help/implementing/cloud-manager/managing-code/github-check-config.md)
+         + [GitHub檢查附註](/help/implementing/cloud-manager/managing-code/github-annotations.md)
       + [環境變數](/help/implementing/cloud-manager/environment-variables.md)
       + Cloud Manager CI-CD 管道 {#cicd-pipelines}
          + [簡介](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
@@ -1026,6 +1032,7 @@ ht-degree: 99%
          + [正在設定 DNS 設定](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md)
          + [檢查 DNS 記錄狀態](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md)
          + [管理客戶網域名稱](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md)
+         + [網域驗證(DV)憑證](/help/implementing/cloud-manager/managing-ssl-certifications/domain-validated-certificates.md)
       + IP 允許清單 {#ip-allow-lists}
          + [簡介](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
          + [新增 IP 允許清單](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)
@@ -1202,7 +1209,6 @@ ht-degree: 99%
    + [額外發佈區域](/help/operations/additional-publish-regions.md)
    + [AEM as a Cloud Service 中的基礎結構和服務監視](/help/operations/monitoring.md)
    + [維護任務](/help/operations/maintenance.md)
-   + [備份和還原](/help/operations/backup.md)
    + [自助服務還原](/help/operations/restore.md)
    + [非同步作業](/help/operations/asynchronous-jobs.md)
    + [移除一般 lucene 索引](/help/operations/removal-generic-lucene-index.md)

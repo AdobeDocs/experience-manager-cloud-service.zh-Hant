@@ -6,10 +6,10 @@ exl-id: 4aff5a84-134a-43fa-8de8-8d564f4edd16
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 0b39fc4dcaf86d436547d3941b1f12bca8c5bc9b
 workflow-type: tm+mt
-source-wordcount: '1018'
-ht-degree: 54%
+source-wordcount: '1119'
+ht-degree: 49%
 
 ---
 
@@ -110,6 +110,10 @@ ht-degree: 54%
 >
 >您無法編輯執行中的管道。
 
+>[!NOTE]
+>
+>私有存放庫不支援Web層和設定管道。 請參閱檔案 [在Cloud Manager中新增私有存放庫](/help/implementing/cloud-manager/managing-code/private-repositories.md) 以取得詳細資料和完整的限制清單。
+
 ## 刪除管道 {#deleting-pipelines}
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織和方案。
@@ -143,6 +147,14 @@ ht-degree: 54%
 選取 **檢視詳細資料** 顯示連結 **持續時間** 區段。 這包括基於該方案歷史趨勢的管道平均持續時間。
 
 ![持續時間](/help/implementing/cloud-manager/assets/configure-pipeline/duration.png)
+
+如果您的管道包含 **程式碼掃描** 步驟會造成問題，您可以點選或按一下 **下載詳細資料** 按鈕以檢視清單 [程式碼品質測試](/help/implementing/cloud-manager/code-quality-testing.md) 未通過。
+
+![程式碼品質問題](assets/managing-pipelines-code-quality-issues.png)
+
+A **專案檔案位置** 欄可在CSV檔案中使用，以指出違規代碼的位置。 此欄是專案相對路徑，而 **檔案位置** 欄是由Maven產生。
+
+![專案程式碼掃描問題詳細資料](assets/managing-pipelines-code-quality-details.png)
 
 >[!NOTE]
 >

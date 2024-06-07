@@ -5,7 +5,7 @@ exl-id: 0d77d1a6-98f3-4961-9283-f52c1b5b2a7b
 solution: Experience Manager Sites
 feature: Developing
 role: Admin, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: a5179851af8ec88e23d79a74265b10cbce2d50f1
 workflow-type: tm+mt
 source-wordcount: '949'
 ht-degree: 100%
@@ -121,5 +121,5 @@ ht-degree: 100%
 因為我們建議您檢閱文件「[自訂網站主題](customize-theme.md)」並繼續快速建立網站歷程的下一部分，所以提供以下其他選用資源，協助深入瞭解本文件提及的一些概念，但是這些並非繼續執行歷程的必要條件。
 
 * [Cloud Manager 文件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html) - 如果您想要 Cloud Manager 功能的更多詳細資訊，您可能想直接查閱深入的技術文件。
-* [Cloud Manager 存放庫](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) - 如果您需要有關如何為 AEMaaCS 專案設定和管理 Git 存放庫的更多資訊，請參閱此文件。
+* [Cloud Manager 存放庫](/help/implementing/cloud-manager/managing-code/managing-repositories.md) - 如果您需要有關如何為 AEMaaCS 專案設定和管理 Git 存放庫的更多資訊，請參閱此文件。
 * [設定 CI/CD 管道 - 雲端服務](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) - 在本文件中了解更多關於設定全堆疊管道與前端管道的詳細資訊。
