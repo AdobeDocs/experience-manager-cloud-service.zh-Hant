@@ -2,10 +2,10 @@
 title: Dynamic Media影像設定檔
 description: 瞭解如何建立包含遮色片銳利化設定和/或智慧型裁切或智慧型色票設定的Dynamic Media影像設定檔。 然後，將設定檔套用至影像資產的資料夾。
 contentOwner: Rick Brough
-feature: Asset Management,Image Profiles,Renditions
+feature: Asset Management,Image Profiles,Renditions,Best Practices
 role: User
 exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 35f31c95e92148ff5f3472f26ea9c40fa5a17947
 workflow-type: tm+mt
 source-wordcount: '3555'
 ht-degree: 5%

@@ -2,10 +2,10 @@
 title: Dynamic Media 中的視訊
 description: 瞭解如何在Dynamic Media中使用影片。 檢閱編碼視訊、將視訊發佈至YouTube、檢視視訊報表，以及將隱藏式字幕或章節標籤新增至視訊的最佳作法。
 contentOwner: Rick Brough
-feature: Video Profiles
+feature: Video Profiles,Best Practices
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 7a80f68f71475b2bdb6b5559354d7248208a3819
+source-git-commit: 35f31c95e92148ff5f3472f26ea9c40fa5a17947
 workflow-type: tm+mt
 source-wordcount: '9357'
 ht-degree: 2%
