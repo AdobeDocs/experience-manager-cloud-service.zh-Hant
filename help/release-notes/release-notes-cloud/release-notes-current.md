@@ -5,7 +5,7 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: e6de1fc47eb2b9c3ba5b115c74b874016449bc20
+source-git-commit: 68e2f6867a2cbcaf52fa6de259fe118e31ee7573
 workflow-type: tm+mt
 source-wordcount: '1942'
 ht-degree: 21%
@@ -62,7 +62,7 @@ ht-degree: 21%
 
 #### Real Use Monitoring (RUM)資料服務 {#real-use-monitoring}
 
-* **[Real Use Monitoring (RUM) Data Service現已正式推出](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)** 啟用AEMas a Cloud Service的使用者端資料收集。
+* **[Real Use Monitoring (RUM) Data Service現已正式推出](/help/sites-cloud/administering/real-use-monitoring-for-aem-as-a-cloud-service.md)** 啟用AEMas a Cloud Service的使用者端資料收集。
 Real Use Monitoring服務是使用者端系列，可更精確地反映互動情形，確保可靠地評估網站互動情形。 它可讓客戶對其頁面流量和效能擁有進階深入分析。 這是進一步瞭解您的頁面效能並獲得改善的深入分析的絕佳機會。
 
 #### Edge Delivery Services的AEM製作 {#edge-enhancements}
