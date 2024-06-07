@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的目前維�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: de06178f66c95baef15de19296a654f1ed4a0387
+source-git-commit: 8f7c2fc175a542df5725693cfc332802d54e1e88
 workflow-type: tm+mt
-source-wordcount: '383'
-ht-degree: 41%
+source-wordcount: '400'
+ht-degree: 39%
 
 ---
 
@@ -20,6 +20,11 @@ ht-degree: 41%
 以下摘要說明維護版本16544數的持續改善，該版本於2024年6月4日公開發佈。 上一個維護版本是版本 16461。
 
 2024.6.0 功能啟用將為此維護版本提供完整功能集。如需詳細資訊，請參閱 [Experience Manager 發行藍圖](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)。
+
+>[!CAUTION]
+>
+>請使用下方參考的SDK，因為先前的SDK已確認回歸：
+>`AEM SDK v2024.06.16647.20240607T103723Z-240500`
 
 ### 增強功能 {#enhancements-16544}
 
