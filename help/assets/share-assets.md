@@ -4,9 +4,9 @@ description: 使用共用作為連結、下載和透過等方法散發您的數�
 feature: Asset Management, Collaboration, Asset Distribution
 role: User, Admin
 exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
-source-git-commit: 90da6851240add93de73dd6da46e54ffbf80a1d3
+source-git-commit: ec01a1b383160014918ee8c9b81e15f0cc855d02
 workflow-type: tm+mt
-source-wordcount: '1835'
+source-wordcount: '1829'
 ht-degree: 3%
 
 ---
@@ -121,7 +121,7 @@ Users with administrator privileges or with read permissions at `/var/dam/share`
 | `${emailMessage}` | 電子郵件內文 |
 | `${pagePath}` | 共用連結的URL |
 | `${linkExpiry}` | 共用連結到期日 |
-| `${host.prefix}` | 來源 [!DNL Experience Manager] 例如 `http://www.adobe.com"` |
+<!--| `${host.prefix}` | Origin of the [!DNL Experience Manager] instance, for example `http://www.adobe.com"` |-->
 
 #### 自訂電子郵件範本範例 {#custom-email-template-example}
 
@@ -137,10 +137,10 @@ subject: ${emailSubject}
     <a href="${pagePath}" target="_blank"><strong>Open</strong></a>
 </p>
 
-Sent from instance: ${host.prefix}
-
 </body></html>
 ```
+
+<!--Sent from instance: ${host.prefix}-->
 
 ### 使用資產連結下載資產 {#download-assets-using-asset-link}
 
