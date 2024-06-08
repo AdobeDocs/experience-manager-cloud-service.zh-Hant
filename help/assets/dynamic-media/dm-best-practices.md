@@ -5,14 +5,14 @@ contentOwner: Rick Brough
 products: Experience Manager as a Cloud Service
 topic-tags: introduction,administering
 content-type: reference
-feature: Video,Renditions,Configuration,Asset Management,Best Practices
+feature: Video,Renditions, Configuration, Asset Management, Best Practices
 role: User, Admin
 mini-toc-levels: 4
 hide: false
 hidefromtoc: false
-source-git-commit: a92d55a4b9368d92d41d0156d8aa2b24f619fc54
+source-git-commit: 62af768370ee0affa4003a7ae0c520ad1a065e8c
 workflow-type: tm+mt
-source-wordcount: '3614'
+source-wordcount: '3619'
 ht-degree: 0%
 
 ---
@@ -66,7 +66,9 @@ Dynamic Media的部分主要原則包括：
 * **選擇性發佈：**
 同步您的資產後，選擇性發佈可讓您控制哪些資產可向客戶顯示。 此功能表示您可以控管哪些已核准資產是實際透過您的管道傳送，確保您的客戶只會看到最佳且最相關的內容。
 
-這兩個最佳實務可協助您對多媒體內容進行更好的控制、控管和生產力。 想要進一步瞭解嗎？ 前往 [在Dynamic Media中設定資料夾層級的選擇性發佈](/help/assets/dynamic-media/selective-publishing.md).
+這兩個最佳實務可協助您對多媒體內容進行更好的控制、控管和生產力。
+
+想要進一步瞭解嗎？ 前往 [在Dynamic Media中設定資料夾層級的選擇性發佈](/help/assets/dynamic-media/selective-publishing.md).
 
 
 ## 準備資產以進行傳送
@@ -135,7 +137,7 @@ Dynamic Media搭配Experience Manager Assets可讓使用者之間有效率地建
    * 使用 `myCompany-Silver-Wrist-Watch`
    * *避免* `myCompany_Silver_Wrist_Watch` 或 `myCompanySilverWristWatch`
 
-  這麼做有助於搜尋引擎瞭解影像內容並改善SEO。 此外，針對分詞，Google偏好使用連字型大小而非底線或串連字詞。
+  這麼做有助於搜尋引擎瞭解影像內容並改善SEO。 在檔案名稱中，Google偏好使用連字型大小而非底線或空格。 此外，請避免在檔案名稱中串連字詞。
 * **自訂網域：**
 實作包含您公司或品牌名稱的自訂網域，以強化品牌認知度和信任。 例如，
 
@@ -167,7 +169,7 @@ Dynamic Media提供一套命令，用於增強影像以及動態建立視覺效�
 | --- | --- |
 | **上傳並發佈原始影像** | ·首先，將原始影像上傳至Dynamic Media。<br>·請確定已發佈並可透過URL存取。<br>·在此範例中，具有白色背景的手錶的庫存影像（我們將其稱為「影像X」）會上傳至Dynamic Media。<br>[https://s7g10.scene7.com/is/image/genaibeta/original_stockimage](https://s7g10.scene7.com/is/image/genaibeta/original_stockimage) |
 | **建立遮色片** | ·開發定義主旨（要套用效果的區域）和背景（要變更的區域）的遮色片。<br>[https://s7g10.scene7.com/is/image/genaibeta/original_stockimage_maskps](https://s7g10.scene7.com/is/image/genaibeta/original_stockimage_maskps)<br>·遮色片通常是灰階影像，其中白色代表主題，黑色代表背景。 您可以使用Adobe Photoshop等工具建立遮色片。<br>想要進一步瞭解嗎？ 前往 [在Photoshop中建立和編輯快速遮色片](https://helpx.adobe.com/in/photoshop/using/create-temporary-quick-mask.html).<br>·對於「影像X」，請建立精確勾勒出您要增強之主題的遮色片。 例如，人員、物件等。 |
-| **套用Dynamic Media URL命令以取得效果** | 在您擁有遮色片之後，請使用URL命令套用陰影等效果，或將背景顏色變更為「影像X」。 以下是兩個範例：<br><br> · **陰影效果：**<br>&#x200B;若要沿著主體邊界加入陰影效果，請編輯URL，如下所示：<br>[https://s7g10.scene7.com/is/image/genaibeta/original_stockimage?mask=original_stockimage_maskps&amp;maskUse=invert&amp;effect=-1&amp;pos=100,100&amp;op_blur=75&amp;op_grow=1&amp;opac=25](https://s7g10.scene7.com/is/image/genaibeta/original_stockimage?mask=original_stockimage_maskps&amp;maskUse=invert&amp;effect=-1&amp;pos=100,100&amp;op_blur=75&amp;op_grow=1&amp;opac=25)<br>在此URL中， `$shadow$` 引數會建立陰影效果，並且 `color=0,0,0` 將陰影顏色設定為黑色。<br>· **背景色彩變更：**<br>&#x200B;若要變更背景顏色，請使用具有不同背景顏色值的URL：<br>[https://s7g10.scene7.com/is/image/genaibeta/original_stockimage?mask=original_stockimage_maskps&amp;maskUse=invert&amp;maskUse=invert&amp;color=255,255,0](https://s7g10.scene7.com/is/image/genaibeta/original_stockimage?mask=original_stockimage_maskps&amp;maskUse=invert&amp;maskUse=invert&amp;color=255,255,0)<br> 在此範例中， `color=255,255,255` 將背景顏色設定為白色。 將背景編輯成特定顏色，以符合視覺效果。 |
+| **套用Dynamic Media URL命令以取得效果** | 在您擁有遮色片之後，請使用URL命令套用陰影等效果，或將背景顏色變更為「影像X」。 以下是兩個範例：<br><br> · **投影效果：**<br>&#x200B;若要沿著主體邊界加入陰影效果，請編輯URL，如下所示：<br>[https://s7g10.scene7.com/is/image/genaibeta/original_stockimage?mask=original_stockimage_maskps&amp;maskUse=invert&amp;effect=-1&amp;pos=100,100&amp;op_blur=75&amp;op_grow=1&amp;opac=25](https://s7g10.scene7.com/is/image/genaibeta/original_stockimage?mask=original_stockimage_maskps&amp;maskUse=invert&amp;effect=-1&amp;pos=100,100&amp;op_blur=75&amp;op_grow=1&amp;opac=25)<br>在此URL中， `$shadow$` 引數會建立陰影效果，並且 `color=0,0,0` 將陰影顏色設定為黑色。<br>· **背景色彩變更：**<br>&#x200B;若要變更背景顏色，請使用具有不同背景顏色值的URL：<br>[https://s7g10.scene7.com/is/image/genaibeta/original_stockimage?mask=original_stockimage_maskps&amp;maskUse=invert&amp;maskUse=invert&amp;color=255,255,0](https://s7g10.scene7.com/is/image/genaibeta/original_stockimage?mask=original_stockimage_maskps&amp;maskUse=invert&amp;maskUse=invert&amp;color=255,255,0)<br> 在此範例中， `color=255,255,0` 將背景顏色設定為黃色。 將背景編輯成特定顏色，以符合視覺效果。 |
 
 #### 新增影像邊框
 
@@ -191,7 +193,7 @@ Dynamic Media可讓您直接透過URL操作影像，使其成為建立動態數�
 | **上傳並發佈標誌或圖示影像** | 接著，上傳並發佈您要重疊在基本影像上的影像。 此影像應是透明的PNG，並應包含您要覆蓋的標誌或圖示。<br>以下是即將重疊的具有透明度效果的星形物件透明PNG影像：<br>https://s7g10.scene7.com/is/image/genaibeta/starxp |
 | **套用Dynamic Media URL** | 現在，請建立結合基本影像與標誌或圖示影像的Dynamic Media URL。 您可以使用URL命令來達到此效果。<br>URL結構看起來像這樣：<br>[https://s7g10.scene7.com/is/image/genaibeta/hotspotRetailBaseImage?layer=1&amp;src=starxp&amp;scale=1.25&amp;posN=0.33,-.25&amp;fmt=png](https://s7g10.scene7.com/is/image/genaibeta/hotspotRetailBaseImage?layer=1&amp;src=starxp&amp;scale=1.25&amp;posN=0.33,-.25&amp;fmt=png)<br>位置<br>· `hotspotRetailBaseImage` 是基本影像。<br>· `starxp` 是標誌/圖示影像。<br>· `layer=1` 指定標誌或圖示應分層在基本影像上。<br>· `scale=1.25` 會調整標誌/圖示的大小。<br>· `posN=0.33,-.25` 決定相對於基本影像的標誌/圖示位置。<br>· `fmt=png` 確保輸出為PNG格式。 |
 
-要進一步瞭解什麼？ 前往 [src](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-src) 以取得更多關於 `src` 命令和其他Dynamic Media命令。
+要進一步瞭解什麼？ 前往 [src](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-src) 以取得更多關於 `src` 命令和其他Dynamic Media URL命令。
 
 
 #### 重疊促銷文字
@@ -213,12 +215,12 @@ Dynamic Media可讓您直接透過URL操作影像，使其成為建立動態數�
 數位影像是由稱為畫素的小點所組成。 建立影像時，它具有特定數目的畫素。 調整大小包括增加或減少畫素，以變更影像的尺寸、解析度和檔案大小。
 * **外觀比例：**
 維持外觀比例（寬度和高度之間的關係）對於防止扭曲至關重要。 不論您是要讓影像變大（放大）還是變小（縮小），保留外觀比例可確保視覺的一致性。
-* **品質考量：**
+* **品質考量事項：**
 調整大小可能會影響影像品質。 避免大幅放大，因為這可能會導致畫素化。 請考慮以較大的大小和解析度重新產生影像。 對於較小的影像，請使用適當的工具來維持解析度。
 
 ##### 裁切與調整大小
 
-調整大小和裁切是Dynamic Media中的技術，可讓您變形影像以符合各種使用案例，無論是建立縮圖、橫幅或產品顯示影像。
+裁切和調整大小是Dynamic Media中的技術，可讓您變形影像以符合各種使用案例，無論是建立縮圖、產品顯示影像或橫幅。
 
 * **裁切：**
 涉及移除影像的一部分以改變其構成和框架。 它不會變更整體維度，但會聚焦於特定區域。
@@ -235,7 +237,7 @@ Dynamic Media可讓您直接透過URL操作影像，使其成為建立動態數�
 * **裁切的縮圖（200畫素x 200畫素）：**
 已裁剪以聚焦於沙發區域。
   [https://s7g10.scene7.com/is/image/genaibeta/hotspotRetailBaseImage?wid=200&amp;hei=200&amp;cropN=.24,.24,.6,.72&amp;fit=crop](https://s7g10.scene7.com/is/image/genaibeta/hotspotRetailBaseImage?wid=200&amp;hei=200&amp;cropN=.24,.24,.6,.72&amp;fit=crop)
-* **產品顯示影像(800 px x 600 px)：**
+* **產品顯示影像（800畫素x 600畫素）：**
 為了展示沙發而裁切和調整大小。
   [https://s7g10.scene7.com/is/image/genaibeta/hotspotRetailBaseImage?wid=800&amp;hei=600&amp;cropN=.24,.24,.6,.72&amp;fit=crop](https://s7g10.scene7.com/is/image/genaibeta/hotspotRetailBaseImage?wid=800&amp;hei=600&amp;cropN=.24,.24,.6,.72&amp;fit=crop)
 * **橫幅(1720 px x 820 px)：**
@@ -272,7 +274,7 @@ Dynamic Media可讓您直接透過URL操作影像，使其成為建立動態數�
 
 為確保影片的最佳品質和參與度，請考慮實作下列最佳實務策略的組合：
 
-* **使用內建HTML5視訊檢視器：**
+* **使用內建的HTML5視訊檢視器：**
 Dynamic Media HTML5視訊檢視器預設集是強大的視訊播放器。 使用它們可避免HTML5視訊播放和行動裝置相關的常見問題。
 這些預設集可解決適應性位元速率串流傳送及有限的案頭瀏覽器觸及範圍等挑戰。
 想要進一步瞭解嗎？ 前往 [最佳實務：使用HTML 5視訊檢視器](/help/assets/dynamic-media/video.md#best-practice-using-the-html-video-viewer).
@@ -285,7 +287,7 @@ Dynamic Media中的視訊設定檔有助於有效率的視訊管理、一致的�
 套用視訊編碼設定檔，以維持原始視訊品質，並在編碼期間不會過度縮放。
 想要進一步瞭解嗎？ 前往 [視訊編碼最佳作法](/help/assets/dynamic-media/video.md#best-practices-for-encoding-videos).
 
-* **採用最適化串流，而非漸進式串流：**
+* **採用最適化串流而非漸進式串流：**
 最適化串流會根據檢視者的網際網路連線速度和裝置功能來調整視訊品質。
 它使用HLS （HTTP即時資料流）或DASH (`Dynamic Adaptive Streaming over HTTP`)以確保最佳播放品質。
 與以線性方式提供視訊的漸進式串流不同，適應性串流可儘量減少緩衝，並提供順暢的觀看體驗。
@@ -346,5 +348,5 @@ Adobe建議您使用智慧型影像的功能，而非手動將影像格式設為
 
 仰賴智慧型影像處理，您可以確保影像以最有效率的方式傳送，並因應每位使用者的瀏覽環境量身打造。 此方法可簡化程式，並可改善影像載入時間和整體使用者體驗方面的效能。
 
-想要進一步瞭解嗎？ 前往 [智慧型影像](/help/assets/dynamic-media/imaging-faq.md)
+想要進一步瞭解嗎？ 前往 [智慧型影像](/help/assets/dynamic-media/imaging-faq.md).
 
