@@ -4,10 +4,10 @@ description: 瞭解如何使用快速開發環境在雲端環境中進行快速�
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 1c157af3f7ed4ab3ae4a67d7db200e772cf8b565
 workflow-type: tm+mt
-source-wordcount: '4294'
-ht-degree: 3%
+source-wordcount: '4312'
+ht-degree: 4%
 
 ---
 
@@ -412,11 +412,6 @@ The analyser found the following errors for publish :
 
 ### 根據網站主題和網站範本部署前端計畫碼 {#deploying-themes-to-rde}
 
->[!NOTE]
->
-> 此功能尚無法使用。 它將在六月的某個時候推出。
->
-
 RDE支援的前端程式碼，根據 [網站主題](/help/sites-cloud/administering/site-creation/site-themes.md) 和 [網站範本](/help/sites-cloud/administering/site-creation/site-templates.md). 使用RDE時，這是使用命令列指令來部署前端套件完成的，而不是使用Cloud Manager [前端管道](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md) 用於其他環境型別。
 
 照常使用npm建立您的前端套件：
@@ -460,6 +455,10 @@ Logs:
 >前端套件中檔案的命名必須符合下列命名慣例：
 > * 「dist」資料夾，用於npm build輸出封裝資料夾
 > * 「package.json」檔案，用於npm相依性套件
+
+>[!TIP]
+>
+> 如果您在2023年4月之前建立RDE，並在首次嘗試前端功能時遇到「UNEXPECTED_API_ERROR」錯誤，請嘗試刪除您的環境，然後再次建立。
 
 ### 檢查RDE的狀態 {#checking-rde-status}
 
@@ -533,8 +532,8 @@ RDE CLI也有自己的記錄命令，可用來快速設定應該記錄哪些類�
 
 功能包含：
 
-* 在每個套件或類別層級上宣告記錄層級
-* 自訂日誌輸出格式
+* 根據每個套件或類別層級聲明記錄層級
+* 自訂記錄輸出格式
 * 最多追蹤四個目前的記錄設定，每個設定都在自己的終端機中
 * 醒目提示特定記錄
 
