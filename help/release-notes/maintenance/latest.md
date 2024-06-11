@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: 8f7c2fc175a542df5725693cfc332802d54e1e88
 workflow-type: tm+mt
 source-wordcount: '400'
-ht-degree: 39%
+ht-degree: 88%
 
 ---
 
@@ -17,9 +17,9 @@ ht-degree: 39%
 
 ## 版本 16544 {#release-16544}
 
-以下摘要說明維護版本16544數的持續改善，該版本於2024年6月4日公開發佈。 上一個維護版本是版本 16461。
+以下摘要說明 16544 維護版本的持續改善內容，該版本於 2024 年 6 月 4 日公開發佈。上一個維護版本是版本 16461。
 
-2024.6.0 功能啟用將為此維護版本提供完整功能集。如需詳細資訊，請參閱 [Experience Manager 發行藍圖](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)。
+2024.6.0 功能啟用將提供此維護版本的完整功能集。如需詳細資訊，請參閱 [Experience Manager 發行藍圖](https://experienceleague.adobe.com/tw/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)。
 
 >[!CAUTION]
 >
@@ -28,23 +28,23 @@ ht-degree: 39%
 
 ### 增強功能 {#enhancements-16544}
 
-* GRANITE-41133：支援Jakarta Servlet API 5和OSGi Servlet Whiteboard API。
-* GRANITE-51355：棄用org.slf4j.event。
-* GRANITE-51565：從AEM發佈本機群組時，AEM會失去與外部群組的本機群組關係。
-* GRANITE-51707：在http重新導向期間設定Cookie saml_request_path以進行驗證。
+* GRANITE-41133：支援 Jakarta Servlet API 5 和 OSGi Servlet Whiteboard API。
+* GRANITE-51355：停止支援 org.slf4j.event。
+* GRANITE-51565：從 AEM 發佈本機群組時，AEM 會遺失與外部群組的本機群組關係。
+* GRANITE-51707：在 http 重新導向期間設定 cookie saml_request_path 以進行驗證。
 * GRANITE-52010：將 Jackrabbit 版本更新至 2.20.16。
-* GRANITE-52057：將Filevault更新為3.7.3-T20240514105118-694f6aea，以修正JCRVLT-745。
+* GRANITE-52057：將 Filevault 更新至 3.7.3-T20240514105118-694f6aea，以修正 JCRVLT-745。
 * SKYOPS-35998：更新「Sling RepoInit」相依性：Repoinit Parser 1.9.0、Repoinit JCR 1.1.46。
 
 ### 已修正的問題 {#fixed-issues-16544}
 
-* GRANITE-51375：如果未指定中間路徑，idp-sync會擲回NPE。
-* GUIDES-17171：超過15KB之主題的複製和貼上作業失敗，出現非預期的錯誤。
-* GUIDES-17088：變更檔案狀態的功能 **檔案屬性** 面板無法正常運作，且變更為 *草稿* 州別。
-* GUIDES-16931：建立版本後，主題中的連結影像無法顯示在基準線中。
-* GUIDES-16896：可重複使用的內容面板在 **使用者偏好設定** 設定為檢視檔案 **檔案名稱**.
+* GRANITE-51375：如果未指定中繼路徑，idp-sync 會擲回 NPE。
+* GUIDES-17171：複製和貼上超過 15 KB 的主題的作業執行失敗，並顯示非預期錯誤。
+* GUIDES-17088：從「**檔案屬性**」面板變更文件狀態的功能無法正常運作，且變更為「*草稿*」狀態。
+* GUIDES-16931：建立版本後，主題中的連結影像無法出現在基準線中。
+* GUIDES-16896：「**使用者偏好設定**」設定為依照「**檔案名稱**」檢視檔案時，可重複使用的內容面板不會列出元素。
 
-如需Experience Manager指南新功能和增強功能以及已修正問題的詳細資訊，請檢視 [Experience Manager指南發行藍圖](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
+如需更多有關 Experience Manager Guides 中新增功能和增強功能以及已修復問題的資訊，請查看 [Experience Manager Guides 版本藍圖](https://experienceleague.adobe.com/tw/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap)。
 
 ### 已知問題 {#known-issues-16544}
 

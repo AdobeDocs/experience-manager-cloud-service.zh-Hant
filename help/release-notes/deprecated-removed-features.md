@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '2193'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -44,7 +44,7 @@ Adobe 持續評估產品功能，以更新或替代的方式來改善或取代�
 | [!DNL Assets] | FFmpeg 影片轉碼。 | 若要產生 FFmpeg 縮圖，請使用[資產微服務](/help/assets/asset-microservices-overview.md)。若是 FFmpeg 轉碼，請使用 [Dynamic Media](/help/assets/manage-video-assets.md)。 |
 | [!DNL Foundation] | 複寫代理程式的「散發」標籤下的樹狀結構複寫 UI (2021 年 9 月 30 日後移除) | [管理出版物](/help/operations/replication.md#manage-publication)或[發佈內容樹工作流程](/help/operations/replication.md#publish-content-tree-workflow)方法 |
 | [!DNL Foundation] | 複寫代理程式管理員畫面的「散發」標籤和複寫 API 都不能用於複寫超過 10MB 的內容套件。請改用[管理出版物](/help/operations/replication.md#manage-publication)或[發佈內容樹工作流程](/help/operations/replication.md#publish-content-tree-workflow) |
-| [!DNL Foundation] | 使用從 Adob&#x200B;&#x200B;e Developer Console 專案產生的憑證來整合，將逐漸失去對服務帳戶 (JWT) 憑證的支援。2024 年 5 月 1 日或之後，無法在 Adobe Developer Console 中建立新的服務帳戶(JWT) 憑證，但在 2025 年 1 月 1 日之前，現有服務帳戶 (JWT) 憑證仍可用於已設定的整合，到那時候，現有服務帳戶 (JWT) 憑證將不再有效，且客戶必須移轉到 OAuth Server-to-Server 憑證。[了解更多](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/jwt-credentials-deprecation-in-adobe-developer-console)。 | [移轉](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#migration-overview)至 OAuth Server-to-Server 憑證。 |
+| [!DNL Foundation] | 使用從 Adob&#x200B;&#x200B;e Developer Console 專案產生的憑證來整合，將逐漸失去對服務帳戶 (JWT) 憑證的支援。2024 年 5 月 1 日或之後，無法在 Adobe Developer Console 中建立新的服務帳戶(JWT) 憑證，但在 2025 年 1 月 1 日之前，現有服務帳戶 (JWT) 憑證仍可用於已設定的整合，到那時候，現有服務帳戶 (JWT) 憑證將不再有效，且客戶必須移轉到 OAuth Server-to-Server 憑證。[了解更多](https://experienceleague.adobe.com/tw/docs/experience-manager-cloud-service/content/security/jwt-credentials-deprecation-in-adobe-developer-console)。 | [移轉](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#migration-overview)至 OAuth Server-to-Server 憑證。 |
 
 ## 移除的功能 {#removed-features}
 
@@ -61,7 +61,7 @@ Adobe 持續評估產品功能，以更新或替代的方式來改善或取代�
 | [!DNL Foundation] | 支援 JST 指令碼範例 (OSGi 套件組合 org.apache.sling.scripting.jst) | 不適用 | 已移除 |
 | [!DNL Foundation] | 支援 Apache Felix Http Whiteboard | OSGi Http Whiteboard | 2022 年 3 月 |
 | [!DNL Foundation] | 支援 com.adobe.granite.oauth.server | Adobe IMS 整合  | 2023 年 3 月 |
-| [!DNL Foundation] | 支援org.apache.sling.serviceusermapping功能至 [取得服務使用者id](https://sling.apache.org/apidocs/sling12/org/apache/sling/serviceusermapping/ServiceUserMapper.html#getServiceUserID-org.osgi.framework.Bundle-java.lang.String-) | 不適用 | 8/30/24 |
+| [!DNL Foundation] | 支援 org.apache.sling.serviceusermapping 功能以[取得服務使用者 ID](https://sling.apache.org/apidocs/sling12/org/apache/sling/serviceusermapping/ServiceUserMapper.html#getServiceUserID-org.osgi.framework.Bundle-java.lang.String-) | 不適用 | 2024 年 8 月 30 日 |
 
 
 ## AEM API {#aem-apis}
@@ -158,7 +158,7 @@ Adobe 持續評估產品功能，以更新或替代的方式來改善或取代�
   </tr>
   <tr>
     <td>com.mongodb<br>com.mongodb.annotations<br>com.mongodb.assertions<br>com.mongodb.async<br>com.mongodb.binding<br>com.mongodb.bulk<br>com.mongodb.client<br>com.mongodb.client.gridfs<br>com.mongodb.client.gridfs.codecs<br>com.mongodb.client.gridfs.model<br>com.mongodb.client.jndi<br>com.mongodb.client.model<br>com.mongodb.client.model.changestream<br>com.mongodb.client.model.geojson<br>com.mongodb.client.model.geojson.codecs<br>com.mongodb.client.result<br>com.mongodb.connection<br>com.mongodb.connection.netty<br>com.mongodb.diagnostics.logging<br>com.mongodb.event<br>com.mongodb.gridfs<br>com.mongodb.internal<br>com.mongodb.internal.async<br>com.mongodb.internal.authentication<br>com.mongodb.internal.connection<br>com.mongodb.internal.dns<br>com.mongodb.internal.event<br>com.mongodb.internal.management.jmx<br>com.mongodb.internal.session<br>com.mongodb.internal.thread<br>com.mongodb.internal.validator<br>com.mongodb.management<br>com.mongodb.operation<br>com.mongodb.selector<br>com.mongodb.session<br>com.mongodb.util</td>
-    <td>AEM as a Cloud Service 不支持使用此 API。</td>
+    <td>AEM as a Cloud Service 不支援使用此 API。</td>
     <td>5/27/21</td>
     <td>7/30/21</td>
   </tr>
@@ -274,14 +274,14 @@ Adobe 持續評估產品功能，以更新或替代的方式來改善或取代�
   </tr>
   <tr>
     <td>org.slf4j.event	</td>
-    <td>AEMas a Cloud Service不支援此內部slf4j API</td>
-    <td>4/11/2022</td>
-    <td>8/30/2024</td>
+    <td>AEM as a Cloud Service 不支援此內部 slf4j API</td>
+    <td>2022 年 4 月 11 日</td>
+    <td>2024 年 8 月 30 日</td>
   </tr>
     <td>org.apache.sling.repoinit.jcr<br>org.apache.sling.repoinit.parser.operations</td>
-    <td>AEM as a Cloud Service 不支持使用此 API。</td>
-    <td>5/17/2024</td>
-    <td>6/30/2024</td>
+    <td>AEM as a Cloud Service 不支援使用此 API。</td>
+    <td>2024 年 5 月 17 日</td>
+    <td>2024 年 6 月 30 日</td>
   </tr>  
 </tbody>
 </table>

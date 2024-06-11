@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '479'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ Adobe 客戶使用 [Adobe Developer Console](https://developer.adobe.com/console
 
 本文說明 AEM as a Cloud Service 應如何處理已取代項目的其他背景資訊。
 
-主要要點是，AEM 現在支援 AEM as a Cloud Service 全新的 OAuth 伺服器對伺服器認證。您可能已收到一封電子郵件，提供移轉JWT憑證的說明，此移轉現在可以完成。
+主要要點是，AEM 現在支援 AEM as a Cloud Service 全新的 OAuth 伺服器對伺服器認證。您可能已收到一封電子郵件，內含要求您移轉 JWT 認證的指示，而現在可以完成這項移轉作業。
 
 以下區段列出客戶必須 (或在某些情況下不得) 將其服務帳戶 (JWT) 認證取代為 OAuth 伺服器對伺服器認證的情境，目前 AEM 支援這些情境。[了解如何](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#migration-overview)移轉認證。
 
@@ -44,7 +44,7 @@ AEM 客戶使用 AEM 來設定所有與許多其他 Adobe 解決方案的整合�
 
 ## Cloud Manager API {#cloud-manager-apis}
 
-**動作**：將您的JWT憑證移轉至Cloud Manager現在支援的OAuth憑證。
+**動作**：將 JWT 認證移轉到 Cloud Manager 現在支援的 OAuth 認證。
 
 **相關 AEM 版本**：AEM as a Cloud Service
 
