@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的目前維�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 8f7c2fc175a542df5725693cfc332802d54e1e88
+source-git-commit: c969b78f5e93e15d1f8f57dd409e58a6275069ce
 workflow-type: tm+mt
-source-wordcount: '400'
-ht-degree: 88%
+source-wordcount: '422'
+ht-degree: 83%
 
 ---
 
@@ -48,7 +48,7 @@ ht-degree: 88%
 
 ### 已知問題 {#known-issues-16544}
 
-無。
+* GRANITE-52573：包含雙斜線的請求 `//` 已拒絕，狀態碼為400。 此行為將在後續維護版本中恢復。
 
 ### 變更通知 {#change-notice-16544}
 
