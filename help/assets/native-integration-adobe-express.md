@@ -2,10 +2,10 @@
 title: AEM Assets與Adobe Express的原生整合
 description: AEM Assets與Adobe Express的原生整合可讓您從Adobe Express使用者介面直接存取AEM Assets中儲存的資產。
 exl-id: d43e4451-da2a-444d-9aa4-4282130ee44f
-source-git-commit: 4e33782dd8db0c1185b9a7733e7bcccfbcf3c3ba
+source-git-commit: d7e144d7f7722d4de96b3f85d44432863b350f92
 workflow-type: tm+mt
-source-wordcount: '612'
-ht-degree: 17%
+source-wordcount: '635'
+ht-degree: 16%
 
 ---
 
@@ -50,18 +50,19 @@ AEM Assets 可與 Adobe Express 自然整合，讓您從 Adobe Express 使用者
    ![將資產儲存在 AEM 中](assets/adobe-express-share.png)
 
 2. 從右窗格的「儲存」區段中，選取 **AEM Assets**. Adobe Express會顯示上傳對話方塊。
-3. 選取 **目前頁面** 或 **所有頁面** 儲存選項。 選取 **目前頁面** 將檔案儲存在您的目的地資料夾中，但是，選取 **所有頁面** 會在目的地中為所有非PDF檔案建立新資料夾，並將它們儲存為個別檔案，而PDF檔案會儲存為目的地資料夾中的單一檔案。
-4. 指定資產的名稱和格式。您可以以PNG、JPEG、PDF、MP4、MP4+PNG或MP4+JPEG格式儲存畫布內容。 格式會根據資產自動調整。
-5. 按一下下方的資料夾圖示 **目的地資料夾** 以選取位置並儲存資產。
+3. 選取 **目前頁面** 或 **所有頁面**. 指定要匯出的資產的名稱和格式。 您可以匯出PNG、JPEG、PDF、MP4、MP4+PNG或MP4+JPEG格式的畫布內容。 格式會根據畫布頁面上的資產自動調整。
+選取 **目前頁面** 將目前頁面上的資產儲存至目的地資料夾。 如果您選取 **所有頁面** 而且匯出格式不是PDF，所有畫布頁面都會以個別檔案的形式儲存在目的地資料夾中的新資料夾中。 如果匯出格式為PDF，則所有畫布頁面都會儲存為目的地資料夾中的單一PDF檔案。
+
+4. 按一下下方的資料夾圖示 **目的地資料夾** 以選取位置並儲存資產。
 
    ![將資產儲存在 AEM 中](/help/assets/assets/page-selection-and-destination-folder.svg)
 
-6. 可選：您可以使用為上傳新增行銷活動中繼資料 **專案或行銷活動名稱** 欄位。 您可以使用現有的名稱或建立新名稱。 您可以為上傳定義多個專案或行銷活動名稱。 若要註冊名稱，只需輸入名稱並按Enter即可。
+5. 可選：您可以使用為上傳新增行銷活動中繼資料 **專案或行銷活動名稱** 欄位。 您可以使用現有的名稱或建立新名稱。 您可以為上傳定義多個專案或行銷活動名稱。 若要註冊名稱，只需輸入名稱並按Enter即可。
 Adobe建議的最佳作法是在其餘欄位中指定值，並為您上傳的資產建立增強的搜尋體驗。
 
-7. 同樣地，定義 **[!UICONTROL 關鍵字]** 和 **[!UICONTROL 頻道]** 欄位。
+6. 同樣地，定義 **[!UICONTROL 關鍵字]** 和 **[!UICONTROL 頻道]** 欄位。
 
-8. 按一下 **[!UICONTROL 上傳]** 將資產上傳至AEM Assets。
+7. 按一下 **[!UICONTROL 上傳]** 將資產上傳至AEM Assets。
 
 ## 限制 {#limitations}
 
