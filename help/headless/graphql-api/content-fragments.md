@@ -3,10 +3,10 @@ title: 與內容片段搭配使用的 AEM GraphQL API
 description: 了解如何將 Adobe Experience Manager (AEM) as a Cloud Service 中的內容片段與 AEM GraphQL API 搭配使用，以實現 Headless 內容傳遞。
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: d0814d3feb9ad14ddd3372851a7b2df4b0c81125
+source-git-commit: 07670a532294a4ae8afb9636a206d2a8cbdce2b9
 workflow-type: tm+mt
-source-wordcount: '5365'
-ht-degree: 84%
+source-wordcount: '5400'
+ht-degree: 83%
 
 ---
 
@@ -745,7 +745,7 @@ GraphQL 中的解決方案代表您可以：
 >* `_dynamicUrl` ：DAM資產
 >* `_dmS7Url` ：Dynamic Media資產
 > 
->如果參照的影像是DAM資產，則值 `_dmS7Url` 將為 `null`. 另請參閱 [GraphQL查詢中依URL的Dynamic Media資產傳送](#dynamic-media-asset-delivery-by-url).
+>如果引用的資產是DAM資產，則值 `_dmS7Url` 將為 `null`. 另請參閱 [GraphQL查詢中依URL的Dynamic Media資產傳送](#dynamic-media-asset-delivery-by-url).
 
 ### 轉換要求結構 {#structure-transformation-request}
 
@@ -925,10 +925,6 @@ query ($seoName: String!, $format: AssetTransformFormat!) {
 
 適用於AEM內容片段的GraphQL可讓您要求AEM Dynamic Media (Scene7)資產的URL （由參照） **內容參考**)。
 
->[!CAUTION]
->
->僅限 *影像* 可參考來自Dynamic Media的資產。
-
 GraphQL 中的解決方案代表您可以：
 
 * 在 `ImageRef` 參考中使用 `_dmS7Url`
@@ -946,12 +942,12 @@ GraphQL 中的解決方案代表您可以：
 >* `_dmS7Url` ：Dynamic Media資產
 >* `_dynamicUrl` ：DAM資產
 > 
->如果參照的影像是Dynamic Media資產，則值 `_dynamicURL` 將為 `null`. 另請參閱 [GraphQL查詢中的網頁最佳化影像傳送](#web-optimized-image-delivery-in-graphql-queries).
+>如果引用的資產是Dynamic Media資產，則值 `_dynamicURL` 將為 `null`. 另請參閱 [GraphQL查詢中的網頁最佳化影像傳送](#web-optimized-image-delivery-in-graphql-queries).
 
-### 依URL的Dynamic Media資產傳遞的範例查詢 {#sample-query-dynamic-media-asset-delivery-by-url}
+### 依URL的Dynamic Media資產傳遞的範例查詢 — 影像參考{#sample-query-dynamic-media-asset-delivery-by-url-imageref}
 
 以下是範例查詢：
-* 型別為的多個內容片段 `team` 和 `person`
+* 型別為的多個內容片段 `team` 和 `person`，傳回 `ImageRef`
 
 ```graphql
 query allTeams {
@@ -973,6 +969,47 @@ query allTeams {
     }
   }
 } 
+```
+
+### 依URL的Dynamic Media資產傳遞的範例查詢 — 多個參考{#sample-query-dynamic-media-asset-delivery-by-url-multiple-refs}
+
+以下是範例查詢：
+* 型別為的多個內容片段 `team` 和 `person`，傳回 `ImageRef`， `MultimediaRef` 和 `DocumentRef`：
+
+```graphql
+query allTeams {
+  teamList {
+    items {
+      _path
+      title
+      teamMembers {
+        fullName
+        profilePicture {
+          __typename
+          ... on ImageRef{
+            _dmS7Url
+            height
+            width
+          }
+        }
+       featureVideo {
+          __typename
+          ... on MultimediaRef{
+            _dmS7Url
+            size
+          }
+        }
+      about-me {
+          __typename
+          ... on DocumentRef{
+            _dmS7Url
+            _path
+          }
+        }
+      }
+    }
+  }
+}
 ```
 
 ## GraphQL for AEM - 擴充功能摘要 {#graphql-extensions}
@@ -1070,7 +1107,9 @@ query allTeams {
 
       * `_dmS7Url`：在 `ImageRef` 將URL傳遞至的參考 [Dynamic Media資產](#dynamic-media-asset-delivery-by-url)
 
-         * 另請參閱 [依URL的Dynamic Media資產傳遞的範例查詢](#sample-query-dynamic-media-asset-delivery-by-url)
+         * 另請參閱 [依URL的Dynamic Media資產傳遞的範例查詢 — ImageRef](#sample-query-dynamic-media-asset-delivery-by-url-imageref)
+
+         * 另請參閱 [依URL的Dynamic Media資產傳遞的範例查詢 — 多個參考](#sample-query-dynamic-media-asset-delivery-by-url-multiple-refs)
 
    * `_tags`：用於顯示包含標籤的內容片段或變體ID；這是陣列 `cq:tags` 識別碼。
 
