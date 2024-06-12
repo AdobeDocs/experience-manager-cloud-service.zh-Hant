@@ -1,15 +1,16 @@
 ---
-title: 設定CDN認證和驗證
+title: 設定內容傳遞網路憑證和身份驗證
 description: 瞭解如何在設定檔案中宣告規則，再使用Cloud Manager設定管道來部署，以設定CDN憑證和驗證。
 feature: Dispatcher
-source-git-commit: ee993798739232da794dbf7ff0a643ca93effa7d
+exl-id: a5a18c41-17bf-4683-9a10-f0387762889b
+source-git-commit: 7a53f936aacfb3e5aa431f26e5346c1809f9c76f
 workflow-type: tm+mt
 source-wordcount: '1143'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
-# 設定CDN認證和驗證 {#cdn-credentials-authentication}
+# 設定內容傳遞網路憑證和身份驗證 {#cdn-credentials-authentication}
 
 >[!NOTE]
 >此功能尚未正式推出。若要加入率先採用者計畫，請傳送電子郵件至 `aemcs-cdn-config-adopter@adobe.com`.
@@ -71,7 +72,7 @@ data:
 
 ## 清除API Token {#purge-API-token}
 
-客戶可以使用宣告的清除API權杖來清除CDN快取。 使用下列語法來宣告權杖。  請參閱 [通用設定](#common-setup) 一節以瞭解如何部署它。
+客戶可以 [清除CDN快取](/help/implementing/dispatcher/cdn-cache-purge.md) 使用宣告的清除API權杖。 使用下列語法來宣告權杖。  請參閱 [通用設定](#common-setup) 一節以瞭解如何部署它。
 
 ```
 kind: "CDN"
