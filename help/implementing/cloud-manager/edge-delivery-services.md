@@ -1,7 +1,7 @@
 ---
 title: Cloud Manager中的Edge Delivery Services支援
 description: 瞭解如何使用Edge Delivery Services傳遞Cloud Manager專案。
-source-git-commit: 73bd693d47f37b453209208816dfed15d65e9e09
+source-git-commit: 8d5d8910a906e2adf17fa9c75f17634602c2e0b9
 workflow-type: tm+mt
 source-wordcount: '283'
 ht-degree: 14%
@@ -21,7 +21,7 @@ ht-degree: 14%
 
 Edge Delivery Services 是一組可組合的服務，可讓您以高度靈活的方式在網站上製作內容。這可讓您：
 
-* 以完美的Lighthouse分數建立快速網站，並透過真實使用者監控(RUM)持續監控效能。
+* 以完美的Lighthouse分數建立快速網站，並透過實際使用監控(RUM)持續監控效能。
 * 透過分離內容來源來提高撰寫效率。
 
 您可以使用通用編輯器來使用AEM內容管理和AEM式撰寫功能，也可以使用檔案式撰寫功能。

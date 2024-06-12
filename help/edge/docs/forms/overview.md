@@ -4,10 +4,10 @@ description: AEM Forms Edge Delivery Services 旨在為實現最佳效而建置�
 feature: Edge Delivery Services
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 8d5d8910a906e2adf17fa9c75f17634602c2e0b9
 workflow-type: tm+mt
 source-wordcount: '1018'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -19,7 +19,7 @@ AEM Forms Edge Delivery Services 是一組可組合服務，讓環境可以快�
 
 * **使用您選擇的工具建立註冊體驗**：透過分離內容來源來提高製作效率。您可以開啟立即使用文件型製作 (Microsoft SharePoint 或 Google Drive) 和 AEM 製作 (最適化表單編輯器)。您可以在同一個表單網站上使用多個內容來源，並使用您偏好的製作工具，例如 Microsoft Excel、Google Sheets 或最適化表單編輯器。
 
-* **提供卓越的數位註冊體驗：**&#x200B;提供可迅速載入和呈現的數位註冊體驗，並透過真實使用者監控 (RUM) 持續監控您的表單效能。更快的載入時間和最佳化使用者體驗有助於提高表單完成率和轉換率。
+* **提供卓越的數位註冊體驗：** 提供數位註冊體驗，透過實際使用監控(RUM)快速且持續地載入及轉譯您的表單效能。 更快的載入時間和最佳化使用者體驗有助於提高表單完成率和轉換率。
 
 * **使用開發人員易用的工具集：**  AEM Forms Edge Delivery Services 使用純 HTML、現代 CSS 和普通 JavaScript來建立卓越的體驗，避免特定框架出現陡峭學習曲線。只要具備基本 Web 開發技能的開發人員，即可自訂並輕鬆建立表單元件和體驗。無需等待管道開始運作，只需將程式碼簽入 GitHub，您進行的變更就會生效。
 
@@ -61,7 +61,7 @@ AEM Forms Edge Delivery Services 使用 GitHub，因此客戶可以直接從其 
 * 防止垃圾郵件的 Google reCAPTCHA 整合。
 * 具備能力以依據特定需求建立自訂表單元件。
 * 直接將表單資料提交到 Microsoft Excel 或 Google Sheets 或電子郵件地址。
-* 透過真實使用者監控 (RUM) 持續監控您的表單效能
+* 透過實際使用監控(RUM)監控您的表單效能
 
 #### AEM 製作功能 
 

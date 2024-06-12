@@ -5,7 +5,7 @@ exl-id: b58c8b82-a098-4d81-bc36-664e890c8f66
 solution: Experience Manager
 feature: Log Files, Developing
 role: Admin, Architect, Developer
-source-git-commit: bc92ed7acefbbd906b0986ea0b6b96fa6d8422de
+source-git-commit: 8d5d8910a906e2adf17fa9c75f17634602c2e0b9
 workflow-type: tm+mt
 source-wordcount: '589'
 ht-degree: 0%
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 Adobe可讓您在企業部署過程中使用Dynatrace來監控AEMas a Cloud Service，找出任何潛在問題的原因，並視需要採取行動加以修正。
 
-有了Dynatrace，您就可以順暢地觀察所有AEM應用程式。 Dynatrace可自動偵測您的AEM應用程式，並將其從網站到容器再到雲端服務的相依性視覺化，進而全面掌握一般使用者體驗。 結合所有階層的端對端追蹤及「即時使用者監控」，將您的AEM內容導向體驗提升到全新的境界，不會出現空白或盲點。 如果有任何異常狀況發生，Dynatrace會使用Davis AI引擎即時診斷它們，並在客戶受到影響之前將根源歸結為程式碼中斷，藉此將平均修復時間縮到最短。
+有了Dynatrace，您就可以順暢地觀察所有AEM應用程式。 Dynatrace可自動偵測您的AEM應用程式，並將其從網站到容器再到雲端服務的相依性視覺化，進而全面掌握一般使用者體驗。 與所有層級的端對端追蹤和即時監控相結合，將您的AEM內容導向體驗提升到全新境界，不會出現空白或盲點。 如果有任何異常狀況發生，Dynatrace會使用Davis AI引擎即時診斷它們，並在客戶受到影響之前將根源歸結為程式碼中斷，藉此將平均修復時間縮到最短。
 
 若要進一步瞭解Dynatrace，請參閱 [AdobeAEM Cloud Service整合](https://www.dynatrace.com/hub/detail/adobe-experience-manager-1/).
 

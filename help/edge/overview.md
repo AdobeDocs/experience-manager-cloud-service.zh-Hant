@@ -4,10 +4,10 @@ description: 了解 Edge Delivery Services 提供的效能和完善 Lighthouse �
 feature: Edge Delivery Services
 exl-id: 03a1aa93-d2e6-4175-9cf3-c7ae25c0d24e
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 8d5d8910a906e2adf17fa9c75f17634602c2e0b9
 workflow-type: tm+mt
 source-wordcount: '862'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 
 透過 Edge Delivery Services，您可以：
 
-* 建立具有完善 Lighthouse 分數功能的快速網站，並透過真實使用者監控 (RUM) 持續監控您的網站效能。
+* 以完美的Lighthouse分數建立快速網站，並透過實際使用監控(RUM)持續監控網站效能。
 * 透過分離內容來源來提高編寫工作效率。您可以一開啟即使用 AEM 製作功能和文件型製作功能。因此，您可以在同一網站上使用多個內容來源。
 * 使用內建的實驗框架，允許快速建立、執行測試而不影響效能，並快速發布測試獲勝者的生產。
 
@@ -46,7 +46,7 @@ Edge Delivery Services 屬於 Adobe Experience Manager 的一部分，因此 Edg
 
 請參閱「[使用 Edge Delivery Services 進行 AEM 製作的開發人員入門指南](/help/edge/aem-authoring/edge-dev-getting-started.md)」，了解如何展開您自己的專案並使用 AEM 和 Edge Delivery Services 進行製作。
 
-您也可以將 Edge Delivery Services 與 [Adobe Target、](https://www.aem.live/developer/target-integration) [真實使用者監控 (RUM)](https://www.aem.live/developer/rum) 結合使用，用來診斷網站的使用情況和效能，並且[啟動。](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/tags/home)
+您也可以搭配使用Edge Delivery Services [Adobe Target，](https://www.aem.live/developer/target-integration) [Real Use Monitoring (RUM) — 實際使用監控(RUM)](https://www.aem.live/developer/rum) 診斷網站的使用情況和效能，以及 [Launch。](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/tags/home)
 
 ## 開始使用 Edge Delivery Services {#getting-started}
 
