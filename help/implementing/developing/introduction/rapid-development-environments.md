@@ -4,9 +4,9 @@ description: 瞭解如何使用快速開發環境在雲端環境中進行快速�
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 1c157af3f7ed4ab3ae4a67d7db200e772cf8b565
+source-git-commit: c3d16e82702efd73accd1fffdfc4957ceb4509ec
 workflow-type: tm+mt
-source-wordcount: '4312'
+source-wordcount: '4220'
 ht-degree: 4%
 
 ---
@@ -83,81 +83,7 @@ RDE可用於程式碼、內容以及Apache或Dispatcher設定。 不像一般的
 
 >[!IMPORTANT]
 >
->請確定您擁有最新版本的 [已安裝節點和NPM](https://nodejs.org/en/download/) 以讓Adobe I/OCLI和相關外掛程式正常運作。
-
-
-1. 依照以下程式安裝Adobe I/OCLI工具 [此處](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/).
-1. 安裝Adobe I/OCLI工具Cloud Manager外掛程式，並依照說明進行設定 [此處](https://github.com/adobe/aio-cli-plugin-cloudmanager).
-1. 執行下列命令，安裝Adobe I/OCLI工具AEM RDE外掛程式：
-
-   ```
-   aio plugins:install @adobe/aio-cli-plugin-aem-rde
-   aio plugins:update
-   ```
-
-1. 為您的組織ID設定Cloud Manager外掛程式：
-
-   `aio config:set cloudmanager_orgid 4E03EQC05D34GL1A0B49421C@AdobeOrg`
-
-   並將英數字串取代為您自己的組織ID，您可利用策略查詢此組織ID [此處](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html#concept_EA8AEE5B02CF46ACBDAD6A8508646255).
-
-1. 接下來，設定您的程式ID：
-
-   `aio config:set cloudmanager_programid 12345`
-
-1. 然後，設定要附加RDE的環境ID：
-
-   `aio config:set cloudmanager_environmentid 123456`
-
-1. 完成外掛程式的設定後，請透過執行
-
-   `aio login`
-
-   成功登入時的回應應與下面的輸出類似，但您可以忽略顯示的值。
-
-   ```
-   ...
-   You are currently in:
-   1. Org: <no org selected>
-   2. Project: <no project selected>
-   3. Workspace: <no workspace selected>
-   ```
-
-   此步驟需要您是Cloud Manager的成員 **開發人員 — Cloud Service** 產品設定檔。 另請參閱 [此頁面](/help/journey-onboarding/assign-profiles-cloud-manager.md#assign-developer) 以取得更多詳細資料。
-
-   或者，如果您可以透過執行此命令登入開發人員主控台，則可以確認您擁有此開發人員角色：
-
-   `aio cloudmanager:environment:open-developer-console`
-
-   >[!TIP]
-   >
-   >如果您看到 `Warning: cloudmanager:list-programs is not a aio command.` 錯誤，您必須安裝 [aio-cli-plugin-cloudmanager](https://github.com/adobe/aio-cli-plugin-cloudmanager) 透過執行以下命令：
-   >
-   >```
-   >aio plugins:install @adobe/aio-cli-plugin-cloudmanager
-   >```
-
-1. 執行以驗證登入是否成功完成
-
-   `aio cloudmanager:list-programs`
-
-   這應該會列出您設定之組織下的所有程式。
-
-
-如需詳細資訊和示範，請觀看教學課程影片 [如何設定RDE (06:24)](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup.html).
-
-## 安裝RDE命令列工具（使用互動模式） {#installing-the-rde-command-line-tools-interactive}
-
->[!NOTE]
->
-> 此設定程式尚無法使用。 它將在6月的某個時候取代先前的程式。
-> 
-
-使用Cloud Manager為程式新增RDE後，您可以透過設定命令列工具與其互動，如以下步驟所述：
-
->[!IMPORTANT]
->
->請確定您擁有最新版本的 [已安裝節點和NPM](https://nodejs.org/en/download/) 以讓Adobe I/OCLI和相關外掛程式正常運作。
+>請確定您有 [已安裝節點和NPM](https://nodejs.org/en/download/) 以讓Adobe I/OCLI和相關外掛程式正常運作。
 
 
 1. 依照以下說明安裝Adobe I/OCLI工具 [程式](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/).
@@ -177,7 +103,7 @@ RDE可用於程式碼、內容以及Apache或Dispatcher設定。 不像一般的
 
    如果目的是使用指令碼式環境，則可以跳過設定步驟，在這種情況下，組織、程式和環境值可以包含在每個命令中。 [如需詳細資訊，請參閱下方的rde命令](#rde-cli-commands).
 
-### 互動式設定
+### 互動式設定 {#installing-the-rde-command-line-tools-interactive}
 
 setup命令會詢問所提供的組態應該儲存在本機還是全域。
 
@@ -211,9 +137,40 @@ Setup the CLI configuration necessary to use the RDE commands.
 
 ```aio aem rde setup --show```
 
-其他指令會以類似下列的結果回應：
+指令會以類似下列的結果回應：
 
 ```Current configuration: cm-p1-e1: programName - environmentName (organization: ...@AdobeOrg)```
+
+### 在非互動式環境中手動設定程式 {#manual-setup}
+
+對於沒有使用者可以互動方式執行上述設定命令的環境（例如CI/CD或指令碼），可以依照以下步驟手動設定組織、程式和環境的三個引數。
+
+
+<details>
+  <summary>展開以尋找有關如何手動設定的詳細資訊</summary>
+
+1. 設定組織ID，並將英數字串取代為您自己的組織ID。
+
+   `aio config:set cloudmanager_orgid 4E03EQC05D34GL1A0B49421C@AdobeOrg`
+
+   * 您自己的組織ID可以使用方法查詢 [記錄在此處。](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html#concept_EA8AEE5B02CF46ACBDAD6A8508646255)
+
+1. 接下來，設定您的程式ID：
+
+   `aio config:set cloudmanager_programid 12345`
+
+1. 然後，設定要附加RDE的環境ID：
+
+   `aio config:set cloudmanager_environmentid 123456`
+
+1. 完成外掛程式的設定後，請透過執行
+
+   `aio login`
+
+   這些步驟需要您成為Cloud Manager的成員 **開發人員 — Cloud Service** 產品設定檔。 另請參閱 [此頁面](/help/journey-onboarding/assign-profiles-cloud-manager.md#assign-developer) 以取得更多詳細資料。
+
+如需詳細資訊和示範，請觀看教學課程影片 [如何設定RDE (06:24)](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup.html).
+</details>
 
 ## 開發新功能時使用RDE {#using-rde-while-developing-a-new-feature}
 
@@ -613,12 +570,12 @@ RDE重設程式啟動後，通常需要幾分鐘才能完成並將環境恢復�
 
 大部分的命令都支援全域 ```--json``` 此旗標會隱藏主控台輸出，並傳回要在指令碼中處理的有效json。 以下是一些支援的命令，以及json輸出的範例。
 
-### 狀態
+### 狀態 {#status}
 
 <details>
   <summary>展開以檢視狀態範例</summary>
 
-#### 乾淨的RDE
+#### 乾淨的RDE {#clean-rde}
 
 ```$ aio aem rde status --json```
 
@@ -638,7 +595,7 @@ RDE重設程式啟動後，通常需要幾分鐘才能完成並將環境恢復�
 }
 ```
 
-#### 具有某些已安裝套件組合的RDE
+#### 具有某些已安裝套件組合的RDE {#rde-installed-bundles}
 
 ```$ aio aem rde status --json```
 
@@ -707,7 +664,7 @@ RDE重設程式啟動後，通常需要幾分鐘才能完成並將環境恢復�
 ```
 </details>
 
-### 安裝
+### 安裝 {#install}
 
 <details>
   <summary>展開以檢視安裝範例</summary>
@@ -747,7 +704,7 @@ RDE重設程式啟動後，通常需要幾分鐘才能完成並將環境恢復�
 ```
 </details>
 
-### 刪除
+### 刪除 {#delete}
 
 <details>
   <summary>展開以檢視刪除範例</summary>
@@ -829,7 +786,7 @@ RDE重設程式啟動後，通常需要幾分鐘才能完成並將環境恢復�
 
 </details>
 
-### 記錄
+### 記錄 {#history}
 
 <details>
   <summary>展開以檢視歷史記錄範例</summary>
@@ -925,12 +882,12 @@ RDE重設程式啟動後，通常需要幾分鐘才能完成並將環境恢復�
 ```
 </details>
 
-### 重設
+### 重設 {#reset}
 
 <details>
   <summary>展開以檢視重設範例</summary>
 
-#### 開火，忘記，不等待
+#### 開火，忘記，不等待 {#fire-no-wait}
 
 ```$ aio aem rde reset --no-wait --json```
 
@@ -942,7 +899,7 @@ RDE重設程式啟動後，通常需要幾分鐘才能完成並將環境恢復�
 }
 ```
 
-#### 等待完成
+#### 等待完成 {#wait}
 
 ```$ aio aem rde reset --json```
 
@@ -955,7 +912,7 @@ RDE重設程式啟動後，通常需要幾分鐘才能完成並將環境恢復�
 ```
 </details>
 
-### 重新啟動
+### 重新啟動 {#restart}
 
 <details>
   <summary>展開以檢視重新啟動範例</summary>
@@ -1043,11 +1000,17 @@ Forms開發人員可以使用AEM FormsCloud Service快速開發環境來快速�
 
 若要瞭解AEMas a Cloud Service中的RDE，請參閱示範的教學影片 [如何設定、使用及開發生命週期(01:25)](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/overview.html).
 
-# 疑難排解
+# 疑難排解 {#troubleshooting}
 
-## aio RDE外掛程式 {#aio-rde-plugin}
+## RDE疑難排解(#rde-troublehooting)
 
-### 有關許可權不足的錯誤
+### 如何取得現有RDE的最新AEM版本 {#get-latest-aem-version}
+
+建立後，RDE會設定為最新可用的Adobe Experience Manager (AEM)版本。 一個 [RDE重設，](#reset-rde) ，這可以使用Cloud Manager或 `aio aem:rde:reset` 指令，循環RDE並將其設定為最新可用的AEM版本。
+
+## aio RDE外掛程式疑難排解 {#aio-rde-plugin-troubleshooting}
+
+### 有關許可權不足的錯誤 {#insufficient-permissions}
 
 若要使用RDE外掛程式，您必須是Cloud Manager的成員 **開發人員 — Cloud Service** 產品設定檔。 另請參閱 [此頁面](/help/journey-onboarding/assign-profiles-cloud-manager.md#assign-developer) 以取得更多詳細資料。
 
