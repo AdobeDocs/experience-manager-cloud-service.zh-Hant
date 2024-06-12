@@ -10,7 +10,7 @@ role: User, Admin
 mini-toc-levels: 4
 hide: false
 hidefromtoc: false
-source-git-commit: e2d9823575f75e4cd38a61a35569cbbe14b30fc6
+source-git-commit: c24b017e60363b3b6d79105122bdbaab138c701d
 workflow-type: tm+mt
 source-wordcount: '3574'
 ht-degree: 0%
@@ -91,6 +91,8 @@ Dynamic Media搭配Experience Manager Assets可讓使用者之間有效率地建
 * **使用設定檔組織資產：**
 處理設定檔可自動處理指定資料夾中的資產，精簡組織。 隨著數位資產集合的擴展，標準化中繼資料、檔案名稱和檔案夾結構可讓您一致且精確地應用這些設定檔。
 想要進一步瞭解嗎？ 前往 [使用設定檔組織資產](/help/assets/organize-assets.md#organize-to-use-profiles).
+
+
 
 ### 最佳化影像品質
 
