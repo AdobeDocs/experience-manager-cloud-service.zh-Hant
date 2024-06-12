@@ -4,10 +4,10 @@ description: 以下是AEMas a Cloud Service中Cloud Manager 2024.6.0的發行說
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
 role: Admin
-source-git-commit: 8d5d8910a906e2adf17fa9c75f17634602c2e0b9
+source-git-commit: 958d8fb3526bafeb5a3be9828bddfa3330c05fec
 workflow-type: tm+mt
-source-wordcount: '702'
-ht-degree: 47%
+source-wordcount: '548'
+ht-degree: 41%
 
 ---
 
@@ -54,13 +54,13 @@ Cloud Manager現在可讓您 [自助服務會產生並管理網域已驗證(DV) 
 
 如果您有興趣測試這項新功能並分享您的回饋意見，請傳送電子郵件至 `Grp-aemcs-dv-dert-adopter@adobe.com` 來自與您的Adobe ID相關聯的電子郵件地址。
 
-### 透過實際使用監控(RUM)進行使用者端收集 {#rum}
+<!-- RICK: REMOVED THIS SECTION AS PER EMAIL REQUEST TO DL-AEM-DOCS FROM SHWETA DUA, WEDNESDAY, JUNE 12, 2024 ### Client-Side Collection via Real Use Monitoring (RUM) {#rum}
 
-您可以善用 [Real Use Monitoring (RUM)資料服務](/help/implementing/cloud-manager/content-requests.md#cliendside-collection) 啟用AEMas a Cloud Service的使用者端集合。
+You can leverage the [Real Use Monitoring (RUM) Data Service](/help/implementing/cloud-manager/content-requests.md#cliendside-collection) to enable client-side collection for AEM as a Cloud Service.
 
-Real Use Monitoring (RUM) Data Service提供使用者互動的更精確反映，確保網站參與的可靠測量。 這是深入了解頁面效能的絕佳機會。這對於使用 Adobe 管理 CDN 或非 Adobe 管理 CDN 的客戶很有幫助。對於使用非 Adobe 管理 CDN 的客戶，現在可以啟用自動流量報告，而無需與 Adobe 共享任何流量報告。
+Real Use Monitoring (RUM) Data Service offers a more precise reflection of user interactions, ensuring a reliable measure of website engagement. It is a great opportunity to gain advanced insights into your page performance. This is beneficial for customers who use either Adobe-managed CDN or non-Adobe managed CDN. For customers using a non-Adobe managed CDN, automated traffic reporting can now be enabled for them, thus removing the need to share any traffic report with Adobe.
 
-如果您有興趣測試此新功能並分享意見反應，請使用與您的 Adobe ID 相關聯的電子郵件地址傳送電子郵件至 `aemcs-rum-adopter@adobe.com`。請在電子郵件中附上生產、階段和開發環境的網域名稱。此功能可使用的早期採用者計劃有限。
+If you are interested in testing this new feature and sharing your feedback, please send an email to `aemcs-rum-adopter@adobe.com` from the email address associated with your Adobe ID. Please include the domain name for production, stage, and dev environments in your email.  Availability of the early adopter program of this feature is limited. -->
 
 ### 體驗稽核儀表板 {#experience-audit-dashboard}
 
