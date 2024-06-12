@@ -2,9 +2,9 @@
 title: 整合 Adobe Target
 description: 整合 Adobe Target
 exl-id: 2b4cf35e-2b75-4303-8d09-f6644ad99274
-source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
+source-git-commit: 876de632163c4a0952e238ac89577fa9f064b900
 workflow-type: tm+mt
-source-wordcount: '615'
+source-wordcount: '606'
 ht-degree: 2%
 
 ---
@@ -31,10 +31,13 @@ ht-degree: 2%
 
 * Launch by Adobe是用於使用Target功能（JS資料庫）檢測AEM網站的工具。 因此，將AEMas a Cloud Service與Launch和Adobe Target整合是密切相關的（請參閱以下連結）。
 
-   * [使用Adobe I/O與Adobe Target整合](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/integration-target-ims.html)
-   * [整合Launch by Adobe](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html)
-   * [透過Adobe I/O整合AEM與AdobeLaunch](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html)
-   * [瞭解AEM與Launch by Adobe、Analytics和Target的整合](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html)
+<!--   
+  * [Integration with Adobe Target using Adobe I/O](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/integration-target-ims.html)
+-->
+
+* [整合Launch by Adobe](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html)
+* [透過Adobe I/O整合AEM與AdobeLaunch](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html)
+* [瞭解AEM與Launch by Adobe、Analytics和Target的整合](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html)
 
 >[!NOTE]
 >
