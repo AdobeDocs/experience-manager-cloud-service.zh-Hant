@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management,Publishing
 role: User,Admin
 exl-id: 210f8925-bd15-4b4a-8714-5a1486eeb49e
-source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
+source-git-commit: f1cae81b80f9871bffc683dcd230f4569dd05fa4
 workflow-type: tm+mt
-source-wordcount: '323'
+source-wordcount: '325'
 ht-degree: 16%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 16%
 | AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/watermarking.html) |
 | AEM as a Cloud Service  | 本文章 |
 
-[!DNL Adobe Experience Manager Assets] 可讓您新增數位浮水印至影像。 [!DNL Assets] 支援將影像作為浮水印套用至其他影像檔案。 浮水印可協助使用者驗證資產的真實性和版權所有權。 此外，浮水印可用於表示檔案的狀態，如機密、草稿、有效性等。
+[!DNL Adobe Experience Manager Assets] 可讓您新增數位浮水印至影像和視訊。 [!DNL Assets] 支援將影像作為浮水印套用至其他影像檔案。 浮水印可協助使用者驗證資產的真實性和版權所有權。 此外，浮水印可用於表示檔案的狀態，如機密、草稿、有效性等。
 
 進行設定 [!DNL Experience Manager] 若要為資產加上浮水印：
 
