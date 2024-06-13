@@ -4,9 +4,9 @@ description: 瞭解如何使用快速開發環境在雲端環境中進行快速�
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: c3d16e82702efd73accd1fffdfc4957ceb4509ec
+source-git-commit: 3577db15a276bed253c8fa51cbd100e90ec5ef45
 workflow-type: tm+mt
-source-wordcount: '4220'
+source-wordcount: '4244'
 ht-degree: 4%
 
 ---
@@ -472,11 +472,6 @@ aio aem:rde:delete com.adobe.granite.csrf.impl.CSRFFilter
 
 ## 記錄 {#rde-logging}
 
->[!NOTE]
->
-> 此功能尚無法使用。 它將在六月的某個時候推出。
-> 
-
 與其他環境型別類似，記錄層級可以透過修改OSGi設定來設定，儘管如上所述，RDE的部署模型涉及命令列而不是Cloud Manager部署。 檢查 [記錄檔案](/help/implementing/developing/introduction/logging.md) 如需如何檢視、下載和解讀記錄檔的詳細資訊。
 
 RDE CLI也有自己的記錄命令，可用來快速設定應該記錄哪些類別和套裝軟體，以及記錄層級。 這些設定可以視為短暫，因為它們不會修改版本控制中的OSGI屬性。 此功能著重於即時追蹤記錄，而非查詢遙遠的過去記錄。
@@ -484,6 +479,14 @@ RDE CLI也有自己的記錄命令，可用來快速設定應該記錄哪些類�
 以下範例說明如何追蹤製作層，其中一個套件設定為偵錯記錄層級，而兩個套件（以空格分隔）設定為資訊偵錯層級。 包含 **驗證** 套件會醒目提示。
 
 `aio aem:rde:logs --target=author --debug=org.apache.sling --info=org.apache.sling.commons.threads.impl org.apache.sling.jcr.resource.internal.helper.jcr -H .auth.`
+
+>[!TIP]
+>
+>如果您看到錯誤 `RDECLI:UNEXPECTED_API_ERROR` 為author服務播放logs命令時，請重設您的環境並重試。 如果您的最新重設作業是在2024年5月底之前，則會擲回此錯誤。
+>
+```
+>aio aem:rde:reset
+>```
 
 另請參閱 `aio aem:rde:logs --help` 以取得完整的命令列選項。
 
