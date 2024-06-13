@@ -1,15 +1,15 @@
 ---
 source-git-commit: 494e90bd5822495f0619e8ebf55f373a26a3ffe6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '516'
-ht-degree: 61%
+ht-degree: 100%
 
 ---
 # 代碼片段 {#snippets}
 
 ## Headless 試用版促銷 {#headless-trials-promotion}
 
-[![透過 30 天試用版了解我們的 headless CMS](./assets/aem-headless-trial-promo.png){align="left"}](https://commerce.adobe.com/business-trial/sign-up?items%5B0%5D%5Bid%5D=649A1AF5CBC5467A25E84F2561274821&amp;cli=headless_exl_banner_campaign&amp;co=US&amp;lang=en)
+[![透過 30 天試用版了解我們的 Headless CMS](./assets/aem-headless-trial-promo.png){align="left"}](https://commerce.adobe.com/business-trial/sign-up?items%5B0%5D%5Bid%5D=649A1AF5CBC5467A25E84F2561274821&amp;cli=headless_exl_banner_campaign&amp;co=US&amp;lang=en)
 
 ## Edge Delivery Services 製作 {#edge-delivery-authoring}
 
@@ -35,7 +35,7 @@ ht-degree: 61%
 * [將最適化表單資料傳送到資料庫](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/data-integration.html)
 * [將最適化表單資料傳送到 REST 端點](/help/forms/configure-submit-actions-core-components.md#submit-to-rest-endpoint)
 * [將最適化表單資料傳送到 AEM 工作流程](/help/forms/configure-submit-actions-core-components.md#invoke-an-aem-workflow)
-* [使用 Forms 入口網站在 AEM 網站上列出 AEM 最適化 Forms](/help/forms/configure-forms-portal.md)
+* [使用 Forms 入口網站在 AEM 網站上列出 AEM 最適化表單](/help/forms/configure-forms-portal.md)
 * [在最適化表單中新增版本設定、評論和附註](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md)
 * [比較最適化表單](/help/forms/compare-forms.md)
 
@@ -56,7 +56,7 @@ ht-degree: 61%
 
 ## 另請參閱 {#see-more-forms-eds}
 
-* [開始使用 AEM Forms Edge Delivery Services。](/help/edge/docs/forms/tutorial.md)
+* [開始使用 AEM Forms Edge Delivery Services](/help/edge/docs/forms/tutorial.md)
 * [使用 Google Sheets 或 Microsoft Excel 建立表單](/help/edge/docs/forms/create-forms.md)
 * [設定您的 Google 表單或 Microsoft Excel 檔案以開始接受資料](/help/edge/docs/forms/submit-forms.md)
 * [發佈您的表單並開始收集資料](/help/edge/docs/forms/publish-forms.md)
@@ -66,49 +66,49 @@ ht-degree: 61%
 * [最適化表單區塊元件及其屬性](/help/edge/docs/forms/form-components.md)
 
 
-## 核心元件中的規則編輯器與基礎元件中的規則編輯器之間的差異  {#rule-editor-diff}
+## 核心元件中的規則編輯器和基礎元件中的規則編輯器之間的差異  {#rule-editor-diff}
 
-下表說明規則編輯器核心元件與規則編輯器基礎元件中可用功能之間的差異：
+下表示範了規則編輯器的核心元件和規則編輯器的基礎元件中可用功能之間的差異：
 
 <table>
   <tbody>
   <tr>
     <td><strong>功能</strong></td>
     <td><strong>最適化表單基礎元件</strong></td>
-    <td><strong>自適應表單核心元件</strong></td>   
+    <td><strong>最適化表單核心元件</strong></td>   
     </tr>
   </tr>
   <tr>
     <td>設定下拉式清單選項 </td>
-    <td>下拉式清單選項是使用規則編輯器的 <b>設定選項</b> 屬性。</td>
-    <td>下拉式清單選項是使用自訂函式設定的。 
+    <td>下拉式清單選項是使用規則編輯器的<b>設定選項</b>屬性設定的。</td>
+    <td>下拉式選項是使用自訂函數設定的。 
    </td>
    </tr>
      </tr>
    <tr>
     <td>在可重複面板欄位上執行數學運算 </td>
-    <td>OOTB Math函式可套用至可重複的面板欄位，以執行sum、average等函式。 </td>
-    <td>重複面板欄位的數學運算可使用自訂函式來執行。
+    <td>OOTB 數學函數可套用在可重複面板欄位以執行加總、平均值等函數。 </td>
+    <td>可以使用自訂函數對可重複面板欄位執行數學運算。
    </td>
    </tr>
       <tr>
-    <td>驗證/重設'Then'中的欄位/面板/表單規則 </td>
-    <td>驗證和重設功能僅支援規則編輯器中的表單物件。 
+    <td>‘Then’ 中的驗證/重設欄位/面板/表單規則 </td>
+    <td>驗證和重設函數僅支援規則編輯器中的表單物件。 
    </td>
-    <td>驗證和重設功能支援規則編輯器中的表單/面板/欄位物件。 
+    <td>驗證和重設函數支援規則編輯器中的表單/面板/欄位物件。 
    </td>
    </tr>
    <tr>
-    <td>ES10支援 </td>
-    <td>尚未支援ES10。 </td>
-    <td>支援現代JavaScript功能，例如自訂函式中的let和箭頭函式（ES10支援）。 
+    <td>ES10 支援 </td>
+    <td>尚不支援 ES10。 </td>
+    <td>支援現代 JavaScript 功能，例如自訂函數中的 let 和 arrow 函數 (ES10 支援)。 
    </td>
    </tr>
    </tr>
    <tr>
    <td>服務輸出屬性</td>
-   <td> 服務輸出屬性受到支援 <b>設定值</b> 規則編輯器的選項。 </td>
-   <td>此 <b>設定值</b> 選項不支援 <b>服務輸出</b> 在規則編輯器中叫用API的屬性。
+   <td> 規則編輯器的<b>設定值</b>選項支援服務輸出屬性。 </td>
+   <td><b>設定值</b>選項不支援在規則編輯器中叫用 API 的<b>服務輸出</b>屬性。
    </td>
    </tr>
    </tr>
