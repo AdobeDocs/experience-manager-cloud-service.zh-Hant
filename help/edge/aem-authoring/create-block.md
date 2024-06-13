@@ -4,10 +4,10 @@ description: 了解如何在使用 Edge Delivery Services 專案進行的 AEM �
 exl-id: 65a5600a-8d16-4943-b3cd-fe2eee1b4abf
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
-workflow-type: ht
-source-wordcount: '1297'
-ht-degree: 100%
+source-git-commit: 72949b36e7e7f8689365e7cb76a8c491edf23825
+workflow-type: tm+mt
+source-wordcount: '1375'
+ht-degree: 94%
 
 ---
 
@@ -53,75 +53,99 @@ Adobe 建議您採用三階段方法來開發區塊：
 
 1. 編輯專案根目錄下的 `component-definition.json` 檔案，為新引述區塊新增以下定義並儲存檔案。
 
-   ```json
-   {
-     "title": "Quote",
-     "id": "quote",
-     "plugins": {
-       "xwalk": {
-         "page": {
-           "resourceType": "core/franklin/components/block/v1/block",
-           "template": {
-             "name": "Quote",
-             "model": "quote",
-             "quote": "<p>Think, McFly! Think!</p>",
-             "author": "Biff Tannen"
-           }
-         }
-       }
-     }
-   }
-   ```
+>[!BEGINTABS]
 
-   ![編輯 component-definitions.json 檔案以定義引述區塊](assets/create-block/component-definitions.png)
+>[!TAB JSON範例]
+
+```json
+{
+  "title": "Quote",
+  "id": "quote",
+  "plugins": {
+    "xwalk": {
+      "page": {
+        "resourceType": "core/franklin/components/block/v1/block",
+        "template": {
+          "name": "Quote",
+          "model": "quote",
+          "quote": "<p>Think, McFly! Think!</p>",
+          "author": "Biff Tannen"
+        }
+      }
+    }
+  }
+}
+```
+
+>[!TAB 熒幕擷圖]
+
+![編輯 component-definitions.json 檔案以定義引述區塊](assets/create-block/component-definitions.png)
+
+>[!ENDTABS]
 
 1. 編輯專案根目錄下的 `component-models.json` 檔案，為新引述區塊新增以下[模式定義](/help/implementing/universal-editor/field-types.md#model-structure)並儲存檔案。
 
    * 請參閱文件「[使用 Edge Delivery Services 專案進行 AEM 製作的內容模式](/help/edge/aem-authoring/content-modeling.md)」，了解有關建立內容模式時需要考慮的重要事項詳細資訊。
 
-   ```json
-   {
-     "id": "quote",
-     "fields": [
-        {
-          "component": "text-area",
-          "name": "quote",
-          "value": "",
-          "label": "Quote",
-          "valueType": "string"
-        },
-        {
-          "component": "text-input",
-          "valueType": "string",
-          "name": "author",
-          "label": "Author",
-          "value": ""
-        }
-      ]
-   }
-   ```
+>[!BEGINTABS]
 
-   ![編輯 component-models.json 檔案以定義引述區塊的模式](assets/create-block/component-models.png)
+>[!TAB JSON範例]
+
+```json
+{
+  "id": "quote",
+  "fields": [
+     {
+       "component": "text-area",
+       "name": "quote",
+       "value": "",
+       "label": "Quote",
+       "valueType": "string"
+     },
+     {
+       "component": "text-input",
+       "valueType": "string",
+       "name": "author",
+       "label": "Author",
+       "value": ""
+     }
+   ]
+}
+```
+
+>[!TAB 熒幕擷圖]
+
+![編輯 component-models.json 檔案以定義引述區塊的模式](assets/create-block/component-models.png)
+
+>[!ENDTABS]
 
 1. 編輯專案根目錄下的 `component-filters.json` 檔案，並將引述區塊新增至[篩選器定義](/help/implementing/universal-editor/customizing.md#filtering-components)中，以允許將該區塊新增至任何區段並且儲存檔案。
 
-   ```json
-   {
-     "id": "section",
-     "components": [
-       "text",
-       "image",
-       "button",
-       "title",
-       "hero",
-       "cards",
-       "columns",
-       "quote"
-      ]
-   }
-   ```
+>[!BEGINTABS]
 
-   ![編輯 component-filters.json 檔案以定義引述區塊的篩選器](assets/create-block/component-filters.png)
+>[!TAB JSON範例]
+
+```json
+{
+  "id": "section",
+  "components": [
+    "text",
+    "image",
+    "button",
+    "title",
+    "hero",
+    "cards",
+    "columns",
+    "quote"
+   ]
+}
+```
+
+>[!TAB 熒幕擷圖]
+
+![編輯 component-filters.json 檔案以定義引述區塊的篩選器](assets/create-block/component-filters.png)
+
+>[!ENDTABS]
 
 1. 使用 git，將這些變更提交到您的 `main` 分支。
 
@@ -174,55 +198,70 @@ Adobe 建議您採用三階段方法來開發區塊：
 
 1. 在新的`quote`檔案夾中，透過新增以下 JavaScript，新增一個 `quote.js` 檔案以實施區塊裝飾，然後儲存檔案。
 
-   ```javascript
-   export default function decorate(block) {
-     const [quoteWrapper] = block.children;
-   
-     const blockquote = document.createElement('blockquote');
-     blockquote.textContent = quoteWrapper.textContent.trim();
-     quoteWrapper.replaceChildren(blockquote);
-   }
-   ```
+>[!BEGINTABS]
 
-   ![新增 JavaScript 以裝飾區塊](assets/create-block/quote-js.png)
+>[!TAB JavaScript範例]
 
+```javascript
+export default function decorate(block) {
+  const [quoteWrapper] = block.children;
+
+  const blockquote = document.createElement('blockquote');
+  blockquote.textContent = quoteWrapper.textContent.trim();
+  quoteWrapper.replaceChildren(blockquote);
+}
+```
+
+>[!TAB 熒幕擷圖]
+
+![新增 JavaScript 以裝飾區塊](assets/create-block/quote-js.png)
+
+>[!ENDTABS]
 
 1. 在`quote`檔案夾中，透過新增以下 CSS 程式碼，新增一個 `quote.css` 檔案以定義區塊樣式，然後儲存檔案。
 
-   ```css
-   .block.quote {
-       background-color: #ccc;
-       padding: 0 0 24px;
-       display: flex;
-       flex-direction: column;
-       margin: 1rem 0;
-   }
-   
-   .block.quote blockquote {
-       margin: 16px;
-       text-indent: 0;
-   }
-   
-   .block.quote > div:last-child > div {
-       margin: 0 16px;
-       font-size: small;
-       font-style: italic;
-       position: relative;
-   }
-   
-   .block.quote > div:last-child > div::after {
-       content: "";
-       display: block;
-       position: absolute;
-       left: 0;
-       bottom: -8px;
-       height: 5px;
-       width: 30px;
-       background-color: darkgray;
-   }
-   ```
+>[!BEGINTABS]
 
-   ![新增 CSS 以定義區塊樣式](assets/create-block/quote-css.png)
+>[!TAB CSS範例]
+
+```css
+.block.quote {
+    background-color: #ccc;
+    padding: 0 0 24px;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+}
+
+.block.quote blockquote {
+    margin: 16px;
+    text-indent: 0;
+}
+
+.block.quote > div:last-child > div {
+    margin: 0 16px;
+    font-size: small;
+    font-style: italic;
+    position: relative;
+}
+
+.block.quote > div:last-child > div::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    height: 5px;
+    width: 30px;
+    background-color: darkgray;
+}
+```
+
+>[!TAB 熒幕擷圖]
+
+![新增 CSS 以定義區塊樣式](assets/create-block/quote-css.png)
+
+>[!ENDTABS]
 
 1. 使用 git，將這些變更提交到您的 `main` 分支。
 
@@ -239,6 +278,50 @@ Adobe 建議您採用三階段方法來開發區塊：
    ![已發布且附樣式的引述區塊](assets/create-block/quote-styled-published.png)
 
 恭喜！您現在擁有一個完全可使用且附樣式的引述區塊。您可以此範例為基礎，用來設計您自己專案的特定區塊。
+
+### 區塊選項 {#block-options}
+
+如果您需要區塊的外觀或行為根據特定情況稍有不同，但不足以成為新的區塊，您可以讓作者選擇 [區塊選項。](content-modeling.md#type-inference)
+
+藉由新增 `classes` 屬性呈現至區塊、在簡單區塊的表格標頭中呈現的屬性，或當做容器區塊中專案的值清單。
+
+```json
+{
+  "id": "simpleMarquee",
+  "fields": [
+    {
+      "component": "text",
+      "valueType": "string",
+      "name": "marqueeText",
+      "value": "",
+      "label": "Marquee text",
+      "description": "The text you want shown in your marquee"
+    },
+    {
+      "component": "select",
+      "name": "classes",
+      "value": "",
+      "label": "Background Color",
+      "description": "The marquee background color",
+      "valueType": "string",
+      "options": [
+        {
+          "name": "Red",
+          "value": "bg-red"
+        },
+        {
+          "name": "Green",
+          "value": "bg-green"
+        },
+        {
+          "name": "Blue",
+          "value": "bg-blue"
+        }
+      ]
+    }
+  ]
+}
+```
 
 ## 使用其他工作分支 {#other-branches}
 
