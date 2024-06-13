@@ -9,7 +9,7 @@ user-guide-title: AEM as a Cloud Service
 source-git-commit: 5b3bc9a8ef1cf1769afcd31935d321ef13bb77cd
 workflow-type: tm+mt
 source-wordcount: '5034'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -450,7 +450,7 @@ ht-degree: 98%
       + [如何組織資產](/help/assets/organize-assets.md)
       + [使用 [!DNL Adobe Stock] 資產](/help/assets/aem-assets-adobe-stock.md)
       + [管理收藏集](/help/assets/manage-collections.md)
-      + [中繼資料概覽](/help/assets/manage-metadata.md)
+      + [中繼資料概觀](/help/assets/manage-metadata.md)
       + [與  [!DNL Adobe Creative Cloud] 整合](/help/assets/aem-cc-integration-best-practices.md)
       + [如何新增或編輯中繼資料](/help/assets/meta-edit.md)
       + [查看資料夾資產和集合](/help/assets/bulk-approval.md)
@@ -668,10 +668,10 @@ ht-degree: 98%
             + [設計自適應表單的 JSON 綱要 (核心元件)](/help/forms/adaptive-form-core-components-json-schema-form-model.md)
             + [在最適化表單中新增版本設定、評論和附註](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md)
             + [比較最適化表單](/help/forms/compare-forms.md)
-            + [使用移轉公用程式工具，將以基礎元件為基礎的最適化Forms轉換為以核心元件為基礎的表單](/help/forms/migration-utility-tool-for-af-core-components.md)
-            + [將最適化表單儲存為草稿](/help/forms/save-core-component-based-form-as-draft.md)
+            + [使用移轉公用程式將基礎元件型最適化表單轉換為核心元件型表單。](/help/forms/migration-utility-tool-for-af-core-components.md)
+            + [將最適化表單另存為草稿](/help/forms/save-core-component-based-form-as-draft.md)
       + Foundation 元件 {#authoring-adaptive-forms-foundation-components}
-         + 將您的 PDF forms 轉換為最適化表單 {#afcs}
+         + 將您的 PDF 表單轉換為最適化表單 {#afcs}
             + [自動表單轉換服務簡介](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=zh-Hant)
             + [將現有 PDF 表單轉換為最適化表單](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html?lang=zh-Hant)
             + [檢閱並修正轉換後的表單](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/review-correct-ui-edited.html?lang=zh-Hant#welcome-to-review-and-correct-editor)
@@ -744,7 +744,7 @@ ht-degree: 98%
       + [安裝和設定](/help/forms/troubleshooting-installation-and-configuration.md)
       + [Dispatcher 和 CDN 快取](/help/forms/troubleshooting-caching-performance.md)
       + [重新啟動 AEM SDK](/help/forms/restart-aem-sdk.md)
-      + [解決Forms建立失敗的問題](/help/forms/form-creation-failing.md)
+      + [解決表單建立失敗的問題](/help/forms/form-creation-failing.md)
 + Screens {#screens-as-cloud-service}
    + Screens as a Cloud Service 概觀 {#overview}
       + [簡介](/help/screens-cloud/introduction/introduction.md)
@@ -859,7 +859,7 @@ ht-degree: 98%
       + [重新導向](/help/edge/docs/redirects.md)
    + 建立表單 {#build-forms}
       + [概觀](/help/edge/docs/forms/overview.md)
-      + 立即開始 {#getting-started-edge-delivery-services-forms}
+      + 開始使用 {#getting-started-edge-delivery-services-forms}
          + [快速入門](/help/edge/docs/forms/tutorial.md)
          + [使用 Google Sheets 或 Microsoft Excel 建立表單](/help/edge/docs/forms/create-forms.md)
          + [設定您的 Google 表單或 Microsoft Excel 檔案以開始接受資料](/help/edge/docs/forms/submit-forms.md)
@@ -904,7 +904,7 @@ ht-degree: 98%
       + [內容片段](/help/headless/setup/create-content-fragment.md)
       + [GraphQL 端點](/help/headless/setup/create-api-request.md)
    + 內容片段 {#content-fragments}
-      + [概覽](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/overview.html?lang=zh-Hant)
+      + [概觀](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/overview.html?lang=zh-Hant)
       + [內容片段模型](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragment-models.html?lang=zh-Hant)
       + [管理內容片段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/managing.html?lang=zh-Hant)
       + 製作 {#authoring}
@@ -921,7 +921,7 @@ ht-degree: 98%
       + [更新您的內容片段，以達到最佳化 GraphQL 篩選](/help/headless/graphql-api/graphql-optimized-filtering-content-update.md)
       + [範例 GraphQL 查詢](/help/headless/graphql-api/sample-queries.md)
       + [疑難排解 GraphQL 查詢](/help/headless/graphql-api/persisted-queries-troubleshoot.md)
-   + [容片段和模型 OpenAPI](/help/headless/content-fragment-openapis.md)
+   + [內容片段和模型 OpenAPI](/help/headless/content-fragment-openapis.md)
    + [Assets HTTP API 中的內容片段支援](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/assets-api-content-fragments.html?lang=zh-Hant)
    + 安全性 {#security}
       + [權限](/help/headless/security/permissions.md)
@@ -1033,7 +1033,7 @@ ht-degree: 98%
          + [正在設定 DNS 設定](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md)
          + [檢查 DNS 記錄狀態](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md)
          + [管理客戶網域名稱](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md)
-         + [網域驗證(DV)憑證](/help/implementing/cloud-manager/managing-ssl-certifications/domain-validated-certificates.md)
+         + [網域驗證 (DV) 憑證](/help/implementing/cloud-manager/managing-ssl-certifications/domain-validated-certificates.md)
       + IP 允許清單 {#ip-allow-lists}
          + [簡介](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
          + [新增 IP 允許清單](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)
@@ -1185,7 +1185,7 @@ ht-degree: 98%
    + 製作層 {#author-tier}
       + [存取製作層](/help/implementing/author-tier/accessing-the-author-tier.md)
       + [保護編寫階層](/help/implementing/author-tier/securing-the-author-tier.md)
-   + 內容傳遞概覽 {#content-delivery}
+   + 內容傳遞概觀 {#content-delivery}
       + [內容傳遞流程](/help/implementing/dispatcher/overview.md)
       + [雲端中的 Dispatcher](/help/implementing/dispatcher/disp-overview.md)
       + [使用 Dispatcher 工具進行驗證和偵錯](/help/implementing/dispatcher/validation-debug.md)
