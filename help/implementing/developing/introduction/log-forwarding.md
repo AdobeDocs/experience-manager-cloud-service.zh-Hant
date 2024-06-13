@@ -4,9 +4,9 @@ description: 瞭解如何在AEMas a Cloud Service將記錄轉送給Splunk和其�
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 0e166e8549febcf5939e4e6025519d8387231880
+source-git-commit: e007f2e3713d334787446305872020367169e6a2
 workflow-type: tm+mt
-source-wordcount: '1163'
+source-wordcount: '1209'
 ht-degree: 1%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 1%
 >
 >此功能尚未發行，並且某些記錄目的地在發行時可能不可用。 同時，您可以開啟支援票證以將記錄轉送到 **Splunk**，如 [記錄文章](/help/implementing/developing/introduction/logging.md).
 
-擁有記錄廠商的授權或託管記錄產品的客戶可以將AEM、Apache/Dispatcher和CDN記錄轉送至關聯的記錄目的地。 AEMas a Cloud Service支援下列記錄目的地：
+擁有記錄廠商授權或託管記錄產品的客戶可以將AEM記錄（包括Apache/Dispatcher）和CDN記錄轉送至關聯的記錄目的地。 AEMas a Cloud Service支援下列記錄目的地：
 
 * Azure Blob儲存體
 * DataDog
@@ -71,7 +71,7 @@ AEM和Apache/Dispatcher記錄檔可選擇透過AEM進階網路基礎結構（例
 
    設定中的權杖(例如 `${{SPLUNK_TOKEN}}`)代表不應儲存在Git中的秘密。 請改為宣告他們為Cloud Manager  [環境變數](/help/implementing/cloud-manager/environment-variables.md) 型別 **密碼**. 請務必選取 **全部** 作為「已套用服務」欄位的下拉式清單值，因此可將記錄檔轉送至作者、發佈和預覽層級。
 
-   您可以在cdn記錄檔和其他所有專案(AEM和apache記錄檔)之間設定不同的值，方法是加入額外的 **cdn** 和/或 **aem** 封鎖晚於 **預設** 區塊，其中屬性可覆寫以下位置中定義的屬性： **預設** 區塊；只需要enabled屬性。 一個可能的使用案例是對CDN記錄使用不同的Splunk索引，如以下範例所示。
+   您可以透過包含其他選項，在CDN記錄和AEM記錄（包括Apache/Dispatcher）之間設定不同的值 **cdn** 和/或 **aem** 封鎖晚於 **預設** 區塊，其中屬性可覆寫以下位置中定義的屬性： **預設** 區塊；只需要enabled屬性。 一個可能的使用案例是對CDN記錄使用不同的Splunk索引，如以下範例所示。
 
    ```
       kind: "LogForwarding"
@@ -91,7 +91,7 @@ AEM和Apache/Dispatcher記錄檔可選擇透過AEM進階網路基礎結構（例
             index: "AEMaaCS_CDN"   
    ```
 
-   另一種情況是停用CDN記錄或其他所有專案(AEM和apache記錄)的轉送。 例如，若只要轉送CDN記錄檔，即可設定下列專案：
+   另一種情況是停用CDN記錄或AEM記錄（包括Apache/Dispatcher）的轉送。 例如，若只要轉送CDN記錄檔，即可設定下列專案：
 
    ```
       kind: "LogForwarding"
@@ -171,9 +171,9 @@ aemcdn/
 
 每個檔案包含多個json記錄專案，每個專案位於一行中。 有關記錄專案格式的說明，請參閱 [記錄文章](/help/implementing/developing/introduction/logging.md)，每個記錄專案也包含 [記錄專案格式](#log-format) 一節。
 
-#### 其他Azure Blob儲存體記錄檔 {#azureblob-other}
+#### Azure Blob儲存體AEM記錄檔 {#azureblob-aem}
 
-CDN記錄以外的記錄會顯示在具有以下命名慣例的資料夾下方：
+AEM記錄（包括Apache/Dispatcher）會顯示在具有以下命名慣例的資料夾下方：
 
 * aemaccess
 * aemerror
@@ -250,9 +250,14 @@ Web請求(POST)將會持續傳送，其json裝載為一系列記錄專案，記�
 
 此外還有名為的屬性 `sourcetype`，此值會設定為 `aemcdn`.
 
-#### 其他HTTPS記錄檔 {#https-other}
+>[!NOTE]
+>
+> 在傳送第一個CDN記錄專案之前，您的HTTP伺服器必須成功完成一次性挑戰：傳送至路徑的要求 ``wellknownpath`` 必須回應為 ``*``.
 
-系統會為每個記錄專案傳送個別的網路要求(POST)，記錄專案格式請見 [記錄文章](/help/implementing/developing/introduction/logging.md). 有關其他屬性的詳情，請參閱 [記錄專案格式](#log-format) 一節。
+
+#### HTTPS AEM記錄 {#https-aem}
+
+對於AEM記錄（包括apache/dispacher），網路請求(POST)將持續傳送，其json裝載為記錄專案陣列，具有各種記錄專案格式，如 [記錄文章](/help/implementing/developing/introduction/logging.md). 有關其他屬性的詳情，請參閱 [記錄專案格式](#log-format) 一節。
 
 此外還有名為的屬性 `sourcetype`，會設定為下列其中一個值：
 
@@ -299,7 +304,7 @@ data:
 
 ## 記錄專案格式 {#log-formats}
 
-檢視一般 [記錄文章](/help/implementing/developing/introduction/logging.md) （Dispatcher記錄檔、CDN記錄檔等）的格式。
+檢視一般 [記錄文章](/help/implementing/developing/introduction/logging.md) 用於每個相應記錄型別的格式(CDN記錄和AEM記錄，包括Apache/Dispatcher)。
 
 由於來自多個程式和環境的記錄可能會轉發到相同的記錄目標，除了記錄文章中所述的輸出之外，以下屬性將包含在每個記錄專案中：
 
@@ -328,7 +333,7 @@ aem_tier: author
 
 對於CDN記錄，您可以將IP位址加入允許清單，如中所述 [本文](https://www.fastly.com/documentation/reference/api/utils/public-ip-list/). 如果共用IP位址清單太大，請考慮傳送流量至(非Adobe) Azure Blob存放區，其中可寫入邏輯，以將專用IP的記錄傳送至其最終目的地。
 
-對於其他記錄檔，您可以設定記錄檔轉送來進行 [進階網路](/help/security/configuring-advanced-networking.md). 檢視以下三種進階網路型別的模式，它們使用選購的 `port` 引數，以及 `host` 引數。
+對於AEM記錄（包括Apache/Dispatcher），您可以設定記錄轉送以通過 [進階網路](/help/security/configuring-advanced-networking.md). 檢視以下三種進階網路型別的模式，它們使用選購的 `port` 引數，以及 `host` 引數。
 
 ### 彈性連接埠輸出 {#flex-port}
 
