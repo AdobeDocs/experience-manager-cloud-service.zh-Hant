@@ -3,10 +3,10 @@ title: 編輯影片
 description: 編輯視訊，使用 [!DNL Adobe Express] 功能選項，並將更新的視訊另存新版。
 role: User
 exl-id: 42b25935-e2ff-444f-97c8-b4ed56f3ef9e
-source-git-commit: ff201051a70862e7597cf36f70a0e7225178f1fa
+source-git-commit: afdab9a7b449673ecf15bc9ab31307388da7b64e
 workflow-type: tm+mt
 source-wordcount: '779'
-ht-degree: 18%
+ht-degree: 17%
 
 ---
 
@@ -83,7 +83,7 @@ DAM中的最終視訊內容通常需要調整大小，才能發佈到特定管�
 
 * 僅支援MP4格式的視訊進行編輯。
 
-* 支援的最大來源檔案大小為200 MB。
+* 支援的最大來源檔案大小為1GB。
 
 * 支援的視訊在任何一側都大於46畫素且小於3840畫素。
 
@@ -93,11 +93,11 @@ DAM中的最終視訊內容通常需要調整大小，才能發佈到特定管�
 
 ### 後續步驟 {#next-steps}
 
-* 使用資產檢視使用者介面所提供的[!UICONTROL 意見回饋]選項提供產品意見回饋
+* 使用提供產品意見回饋 [!UICONTROL 意見反應] 「資產」檢視使用者介面上可用的選項。
 
-* 若要提供文件意見回饋，請使用右側邊欄提供的[!UICONTROL 編輯此頁面]![來編輯頁面](assets/do-not-localize/edit-page.png)或[!UICONTROL 記錄問題]![來建立 GitHub 問題](assets/do-not-localize/github-issue.png)
+* 若要提供文件意見回饋，請使用右側邊欄提供的[!UICONTROL 編輯此頁面]![來編輯頁面](assets/do-not-localize/edit-page.png)或[!UICONTROL 記錄問題]![來建立 GitHub 問題](assets/do-not-localize/github-issue.png)。
 
-* 聯絡[客戶服務](https://experienceleague.adobe.com/?support-solution=General#support)
+* 請聯絡[客戶服務](https://experienceleague.adobe.com/?support-solution=General#support)。
 
 >[!MORELIKETHIS]
 >
