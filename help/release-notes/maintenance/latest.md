@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: c969b78f5e93e15d1f8f57dd409e58a6275069ce
 workflow-type: tm+mt
 source-wordcount: '422'
-ht-degree: 83%
+ht-degree: 94%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 83%
 
 >[!CAUTION]
 >
->請使用下方參考的SDK，因為先前的SDK已確認回歸：
+>請使用下方參照的 SDK，因為已確認先前的 SDK 有迴歸問題：
 >`AEM SDK v2024.06.16647.20240607T103723Z-240500`
 
 ### 增強功能 {#enhancements-16544}
@@ -52,7 +52,7 @@ ht-degree: 83%
 
 ### 變更通知 {#change-notice-16544}
 
-從2024年9月開始，AEMas a Cloud Service將透過Sling模型匯出工具架構停用資源解析器的序列化。 另請參閱 [說明檔案](/help/implementing/developing/hybrid/disallow-the-serialization-of-resourceresolvers-via-sling-model-exporter.md) 以取得更多詳細資料。
+從 2024 年 9 月開始，AEM as a Cloud Service 將透過 Sling 模型匯出工具框架，停用 Resource Resolver 的序列化。如需詳細資訊，請參閱[文件](/help/implementing/developing/hybrid/disallow-the-serialization-of-resourceresolvers-via-sling-model-exporter.md)。
 
 ### 已過時的功能和 API {#deprecated-16544}
 
