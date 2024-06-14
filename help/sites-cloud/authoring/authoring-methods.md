@@ -5,7 +5,7 @@ feature: Authoring
 exl-id: ef482843-451b-474e-a8d0-d0bfcc17221b
 solution: Experience Manager Sites
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 7ad9a959592f1e8cebbcad9a67d280d5b2119866
 workflow-type: tm+mt
 source-wordcount: '570'
 ht-degree: 0%
@@ -20,8 +20,8 @@ ht-degree: 0%
 
 AEMas a Cloud Service提供數種不同的編輯器，可編輯不同型別的內容並支援不同的編寫使用案例。
 
-* [使用頁面編輯器進行AEM式製作](#page-editor)  — 頁面編輯器是在AEM中編寫內容的傳統編輯器，已嘗試並在數千個網站上受到信任。
-* [使用通用編輯器進行AEM式製作](#universal-editor)  — 通用編輯器是現代化的UI，可讓您以不受內容限制的方式編寫AEM內容，可用於利用Edge Delivery Services的AEM專案。
+* [使用頁面編輯器進行WYSIWYG製作](#page-editor)  — 頁面編輯器是在AEM中編寫內容的傳統編輯器，已嘗試並在數千個網站上受到信任。
+* [使用通用編輯器進行WYSIWYG製作](#universal-editor)  — 通用編輯器是現代化的UI，可讓您以不受內容限制的方式編寫AEM內容，可用於利用Edge Delivery Services的AEM專案。
 * [檔案式製作](#document-based)  — 如果您使用Edge Delivery服務，您可以選擇在AEM主控台之外將內容製作為傳統檔案，例如Microsoft Word或Google Docs。
 * [AEM內容片段編輯器](#cf-editor)  — 這是建立Headless內容的首選編輯器。
 
@@ -29,7 +29,7 @@ AEMas a Cloud Service提供數種不同的編輯器，可編輯不同型別的�
 
 如果您不確定哪些撰寫選項可供您使用，或您想要探索新的內容撰寫選項，請洽詢您的系統管理員或專案經理。
 
-## 使用頁面編輯器進行AEM式製作 {#page-editor}
+## 使用頁面編輯器進行WYSIWYG製作 {#page-editor}
 
 這是在AEM中編寫內容的傳統編輯器，在數千個網站上受到成千上萬人的嘗試和信任。
 
@@ -39,7 +39,7 @@ AEM頁面編輯器提供整合式環境，讓您可使用「所見即所得」(W
 
 若要瞭解有關AEM頁面編輯器的詳細資訊，請參閱檔案 [AEM頁面編輯器。](/help/sites-cloud/authoring/page-editor/introduction.md)
 
-## 使用通用編輯器進行AEM式製作 {#universal-editor}
+## 使用通用編輯器進行WYSIWYG製作 {#universal-editor}
 
 Universal Editor是現代化的UI，可讓您以不受內容限制的方式創作AEM內容，並且是利用Edge Delivery Services的AEM專案的第一個選擇。
 

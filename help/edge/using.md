@@ -4,10 +4,10 @@ description: 了解如何搭配使用 AEM as a Cloud Service 和 Edge Delivery S
 feature: Edge Delivery Services
 exl-id: 41999302-b4c9-4f5a-b659-6e7398a3c4f4
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 7ad9a959592f1e8cebbcad9a67d280d5b2119866
 workflow-type: tm+mt
 source-wordcount: '389'
-ht-degree: 100%
+ht-degree: 91%
 
 ---
 
@@ -30,24 +30,24 @@ Adobe 的指引原則很簡單。從文件型製作開始，並在需要時增�
 
 ## 製作 {#authoring-edge}
 
-透過 Edge Delivery Services，製作變得簡單、快速且靈活。您可以選擇使用文件型製作或使用 Universal Editor 的 AEM 型製作功能來進行製作。
+透過 Edge Delivery Services，製作變得簡單、快速且靈活。您可以選擇使用檔案式製作或WYSIWYG製作（使用通用編輯器）來製作。
 
-若需更多資訊，請參閱文件「[為 Edge Delivery Services 製作內容](/help/edge/aem-authoring/authoring.md)」。
+若需更多資訊，請參閱文件「[為 Edge Delivery Services 製作內容](/help/edge/wysiwyg-authoring/authoring.md)」。
 
 ## 發佈 {#publishing-edge}
 
 使用 Edge Delivery Services 時，無論內容來源為何，都可以流暢地發佈內容。
 
-若需更多資訊，請參閱文件「[為 Edge Delivery Services 發佈內容](/help/edge/aem-authoring/publishing.md)」。
+若需更多資訊，請參閱文件「[為 Edge Delivery Services 發佈內容](/help/edge/wysiwyg-authoring/publishing.md)」。
 
 ## 開發 {#developing-edge}
 
 Edge Delivery Services 以區塊概念為基礎。AEM 包含完整的預先定義區塊資料庫，您可以擴充該資料庫來符合專案需求。Edge Delivery Services 專案的程式碼是在 GitHub 中管理。
 
-請參閱文件「[使用 Edge Delivery Services 進行 AEM 製作的開發人員入門指南](/help/edge/aem-authoring/edge-dev-getting-started.md)」，了解更多資訊。
+請參閱檔案 [使用Edge Delivery Services進行WYSIWYG編寫的開發人員快速入門手冊](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) 以取得詳細資訊。
 
 ## 現有 AEM 專案 {#existing-projects}
 
 您不需要等待新的 AEM 專案，即可取得 Edge Delivery Services 帶來的好處。Edge Delivery Services 可以整合到現有的 AEM 專案中，讓您可立即利用專案提升的效能。
 
-若需更多資訊，請參閱文件「[在現有 AEM 專案中使用 Edge Delivery Services](/help/edge/aem-authoring/existing-projects.md)」。
+若需更多資訊，請參閱文件「[在現有 AEM 專案中使用 Edge Delivery Services](/help/edge/wysiwyg-authoring/existing-projects.md)」。

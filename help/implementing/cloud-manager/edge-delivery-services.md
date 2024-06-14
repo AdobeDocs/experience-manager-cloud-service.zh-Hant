@@ -1,15 +1,15 @@
 ---
-title: Cloud Manager中的Edge Delivery Services支援
+title: Cloud Manager 中的 Edge Delivery Services Support
 description: 瞭解如何使用Edge Delivery Services傳遞Cloud Manager專案。
-source-git-commit: 8d5d8910a906e2adf17fa9c75f17634602c2e0b9
+source-git-commit: 7ad9a959592f1e8cebbcad9a67d280d5b2119866
 workflow-type: tm+mt
 source-wordcount: '283'
-ht-degree: 14%
+ht-degree: 28%
 
 ---
 
 
-# Cloud Manager中的Edge Delivery Services支援 {#edge-delivery-services}
+# Cloud Manager 中的 Edge Delivery Services Support {#edge-delivery-services}
 
 瞭解如何使用Edge Delivery Services傳遞Cloud Manager專案。
 
@@ -24,7 +24,7 @@ Edge Delivery Services 是一組可組合的服務，可讓您以高度靈活的
 * 以完美的Lighthouse分數建立快速網站，並透過實際使用監控(RUM)持續監控效能。
 * 透過分離內容來源來提高撰寫效率。
 
-您可以使用通用編輯器來使用AEM內容管理和AEM式撰寫功能，也可以使用檔案式撰寫功能。
+您可以使用通用編輯器來使用AEM內容管理和WYSIWYG製作，也可以使用檔案式製作。
 
 AEMas a Cloud Service中的Cloud Manager可讓您為專案啟用邊緣傳送服務。
 
@@ -36,7 +36,7 @@ AEMas a Cloud Service中的Cloud Manager可讓您為專案啟用邊緣傳送服�
 
 如果您已將授權Edge Delivery Services作為Adobe Experience Manager Sites的一部分，您可以直接在Cloud Manager中使用Edge Delivery Services來啟動您的網站並上線 [使用引導式自助服務體驗。](/help/implementing/cloud-manager/managing-code/private-repositories.md)
 
-這可讓您的所有AEM屬性獲得統一的體驗，確保所有關鍵工作流程的一致性，包括網域名稱管理、SSL憑證管理和CDN對應。
+這樣一來，所有 AEM 屬性均能提供統一的體驗，確保與所有關鍵工作流程 (包括網域名稱管理、SSL 憑證管理和內容傳遞網路對應) 保持一致。
 
 Edge Delivery Services可供兩者使用 [生產和沙箱計畫。](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
 

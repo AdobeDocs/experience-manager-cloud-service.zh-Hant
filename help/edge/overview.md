@@ -4,10 +4,10 @@ description: 了解 Edge Delivery Services 提供的效能和完善 Lighthouse �
 feature: Edge Delivery Services
 exl-id: 03a1aa93-d2e6-4175-9cf3-c7ae25c0d24e
 role: Admin, Architect, Developer
-source-git-commit: 8d5d8910a906e2adf17fa9c75f17634602c2e0b9
+source-git-commit: 7ad9a959592f1e8cebbcad9a67d280d5b2119866
 workflow-type: tm+mt
-source-wordcount: '862'
-ht-degree: 95%
+source-wordcount: '860'
+ht-degree: 84%
 
 ---
 
@@ -19,14 +19,14 @@ ht-degree: 95%
 透過 Edge Delivery Services，您可以：
 
 * 以完美的Lighthouse分數建立快速網站，並透過實際使用監控(RUM)持續監控網站效能。
-* 透過分離內容來源來提高編寫工作效率。您可以一開啟即使用 AEM 製作功能和文件型製作功能。因此，您可以在同一網站上使用多個內容來源。
+* 透過分離內容來源來提高編寫工作效率。開箱即用地使用WYSIWYG和Document-based Authoring 。 因此，您可以在同一網站上使用多個內容來源。
 * 使用內建的實驗框架，允許快速建立、執行測試而不影響效能，並快速發布測試獲勝者的生產。
 
 ## 概觀 {#overview}
 
-Edge Delivery Services 是一組可組合的服務，可讓您以高度靈活的方式在網站上製作內容。您可以使用 [AEM 內容管理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/getting-started/concepts.html?lang=zh-Hant)和 AEM 型製作 (使用 [Universal Editor](/help/sites-cloud/authoring/universal-editor/authoring.md) 以及[文件型製作)。](https://www.aem.live/docs/authoring)
+Edge Delivery Services 是一組可組合的服務，可讓您以高度靈活的方式在網站上製作內容。您可以使用兩者 [AEM內容管理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/getting-started/concepts.html?lang=zh-Hant) 和WYSIWYG製作，使用 [通用編輯器](/help/sites-cloud/authoring/universal-editor/authoring.md) 以及 [檔案式製作。](https://www.aem.live/docs/authoring)
 
-下圖說明如何在 Microsoft Word (文件型製作) 中編輯內容並將其發佈到 Edge Delivery Services。圖表也展示使用 Universal Editor 的 AEM 型編輯。
+下圖說明如何在 Microsoft Word (文件型製作) 中編輯內容並將其發佈到 Edge Delivery Services。它也會顯示使用通用編輯器所編輯的WYSIWYG。
 
 ![Edge Delivery 架構](assets/AEM-with-EDS-publishing-simple2.png)
 
@@ -44,7 +44,7 @@ Edge Delivery Services 會使用 GitHub，可讓您直接從自己的 GitHub 存
 
 Edge Delivery Services 屬於 Adobe Experience Manager 的一部分，因此 Edge Delivery Services 和 AEM Sites 可以在相同網域中共存 (較大型網站的常見使用案例)。此外，您可在 AEM Sites 頁面中輕鬆使用來自 Edge Delivery Services 的內容，反之亦然。
 
-請參閱「[使用 Edge Delivery Services 進行 AEM 製作的開發人員入門指南](/help/edge/aem-authoring/edge-dev-getting-started.md)」，了解如何展開您自己的專案並使用 AEM 和 Edge Delivery Services 進行製作。
+請參閱 [WYSIWYG開發人員快速入門手冊(含Edge Delivery Services)](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) 以瞭解如何開始您自己的專案，以便使用AEM和Edge Delivery Services進行創作。
 
 您也可以搭配使用Edge Delivery Services [Adobe Target，](https://www.aem.live/developer/target-integration) [Real Use Monitoring (RUM) — 實際使用監控(RUM)](https://www.aem.live/developer/rum) 診斷網站的使用情況和效能，以及 [Launch。](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/tags/home)
 
@@ -62,7 +62,7 @@ Adobe 提供三個頻道來幫助您使用 Edge Delivery Services：
 
 ### 存取社群資源 {#community-resources}
 
-Adobe 致力為您提供 Edge Delivery Services、AEM 型和文件型製作的最佳社群參與和支援服務。
+Adobe致力於為您提供最佳社群參與度，以及對Edge Delivery Services、所見即所得(WYSIWYG)和檔案式撰寫的支援。
 
 * 參與 [Experience League 社群](https://adobe.ly/3Q6kTKl)，提出問題、分享意見、發起討論、尋求 Adobe 專家和 AEM 顧問/達人的協助，以及與志趣相投的人即時聯繫。
 * 加入我們的[探索頻道](https://discord.gg/aem-live)，一個更輕鬆的即時互動和靈感想法交流平台。
