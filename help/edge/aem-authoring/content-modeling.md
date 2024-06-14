@@ -4,10 +4,10 @@ description: 了解使用 Edge Delivery Services 專案進行 AEM 製作的內�
 exl-id: e68b09c5-4778-4932-8c40-84693db892fd
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: ff4a8caf1f4d32bae4e8c776bfcad21a665936d4
+source-git-commit: 39ac520de1d9e93b0025315005219352d4e87575
 workflow-type: tm+mt
-source-wordcount: '2233'
-ht-degree: 98%
+source-wordcount: '2253'
+ht-degree: 97%
 
 ---
 
@@ -345,7 +345,7 @@ ht-degree: 98%
 * **影像** - 如果 AEM 中的資源參照是 MIME 類型並且是以 `image/` 為開頭的資產，參照會呈現為 `<picture><img src="${reference}"></picture>`。
 * **連結** - 如果參照存在於 AEM 中且不是影像，或該值是以 `https?://` 或者 `#` 為開頭，則參照呈現為 `<a href="${reference}">${reference}</a>`。
 * **RTF 文字** - 如果裁剪後的值以段落 (`p`, `ul`、`ol`、`h1` -`h6` 等) 為開頭，則該值呈現為 RTF 文字。
-* **類別名稱** - `classes` 會將屬性視為 [區塊選項](/help/edge/developer/markup-sections-blocks.md#block-options) 並在表格標題中針對下列專案轉譯： [簡單區塊，](#simple) 或當做中專案的值清單 [容器區塊。](#container)
+* **類別名稱** - `classes` 會將屬性視為 [區塊選項](/help/edge/developer/markup-sections-blocks.md#block-options) 並在表格標題中針對下列專案轉譯： [簡單區塊，](#simple) 或當做中專案的值清單 [容器區塊。](#container) 如果您想，這個功能會很有用 [以不同方式設定區塊的樣式，](/help/edge/aem-authoring/create-block.md#block-options) 但是不需要建立全新的區塊。
 * **值清單** - 如果某個值是多值屬性，且第一個值不是前面的任何一個值，則所有值將連接為逗號分隔清單。
 
 其他所有內容都將呈現為純文字。
