@@ -1,13 +1,13 @@
 ---
 title: Adobe Experience Manager (AEM) as a Cloud Service 重大變更
-description: Adobe Experience Manager (AEM) as a Cloud Service重大變更。
+description: Adobe Experience Manager (AEM) as a Cloud Service 重大變更。
 exl-id: fe11d779-66cd-45aa-aa6b-c819b88d2405
 feature: Release Information
 role: Admin
 source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '862'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -87,8 +87,8 @@ AEM Cloud Service 無法使用其他或自訂的執行模式。有關為 AEM Clo
 
 在 AEM Cloud Service 中，內容是使用 [Sling Content Distribution](https://sling.apache.org/documentation/bundles/content-distribution.html) 發佈。舊版 AEM 不再使用或提供複寫代理，這可能會影響現有 AEM 專案的下列作業：
 
-* 例如，將內容推送至預覽伺服器複寫代理的自訂工作流程。
-* 自訂復寫代理以轉換內容。
+* 例如，將內容推送至預覽伺服器複寫代理程式的自訂工作流程。
+* 自訂複寫代理程式以轉換內容。
 * 使用「反向複寫」將內容從發佈階段撤回給作者.
 
 此外，暫停和停用按鈕已從複寫代理程式管理主控台中移除。

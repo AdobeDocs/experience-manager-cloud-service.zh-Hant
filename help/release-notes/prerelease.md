@@ -5,9 +5,9 @@ exl-id: cfc91699-0087-40fa-a76c-0e5e1e03a5bd
 feature: Release Information
 role: Admin
 source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1264'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -179,7 +179,7 @@ Javadoc 會發佈到 Maven Central。
 
    如同往常，個別專案可以使用相依性。
 
-1. 部署至您的本機伺服器。
+1. 部署到您的本機伺服器。
 
 1. 如果您滿意它在本機有如預期般運作，請將程式碼提交到開發分支並使用 Cloud Manager 非生產管道，以部署到有訂閱發行前通道的環境。
 

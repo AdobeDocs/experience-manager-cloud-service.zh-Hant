@@ -6,9 +6,9 @@ exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
 source-git-commit: 68e2f6867a2cbcaf52fa6de259fe118e31ee7573
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1942'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -44,9 +44,9 @@ ht-degree: 92%
 
 ### Sites 的新功能 {#sites-new-features}
 
-#### AEM翻譯整合 {#translation-integration}
+#### AEM 翻譯整合 {#translation-integration}
 
-內容翻譯動作和工作流程現在會觸發事件，允許追蹤來自外部應用程式的相關程式步驟和狀態。 正在產生下列事件。 使用者將能使用Adobe Developer Console訂閱事件。
+內容翻譯動作和工作流程現在會觸發事件，允許從外部應用程式追蹤相關流程步驟和狀態。所產生的事件如下所示。使用者將能夠使用 Adobe Developer Console 來訂閱事件。
 
 * `TRANSLATION_JOB_CREATED`
 * `TRANSLATION_JOB_CONTENT_ADDITION_STARTED`
@@ -60,11 +60,11 @@ ht-degree: 92%
 * `TRANSLATION_JOB_CANCELLED`
 * `TRANSLATION_JOB_ERROR`
 
-#### Real Use Monitoring (RUM)資料服務 {#real-use-monitoring}
+#### 實際使用監控 (RUM) 資料服務 {#real-use-monitoring}
 
-* **[真實使用者監控 (RUM) 資料服務現在已正式推出](/help/sites-cloud/administering/real-use-monitoring-for-aem-as-a-cloud-service.md)**，為 AEM as a Cloud Service 啟用用戶端資料彙集。Real Use Monitoring服務是使用者端系列，可更精確地反映互動情形，確保可靠地評估網站互動情形。 它為客戶提供有關頁面流量和效能的進階深入分析。這是深入了解您的頁面效能並透過深入分析進行改善的絕佳機會。
+* **[實際使用監控 (RUM) 資料服務現在已正式推出](/help/sites-cloud/administering/real-use-monitoring-for-aem-as-a-cloud-service.md)**，讓 AEM as a Cloud Service 能夠收集用戶端的資料。實際使用監控服務，即用戶端資料收集，可以更準確地反映互動情形，確保網站參與度的測量結果可信。它為客戶提供有關頁面流量和效能的進階深入分析。這是深入了解您的頁面效能並透過深入分析進行改善的絕佳機會。
 
-#### Edge Delivery Services的AEM製作 {#edge-enhancements}
+#### Edge Delivery Services 的 AEM 製作 {#edge-enhancements}
 
 加強穩定性和各種不同的改良功能，提供更好的編寫體驗。
 
@@ -143,11 +143,11 @@ AEM Forms 新增對於 Cloudflare Turnstile 和 hCaptcha 兩種熱門驗證碼�
 
 ### Forms 服務
 
-Forms 服務會產生用於資料擷取的互動式 PDF forms。它也可以用來匯入或匯出現有互動式PDF表單的資料，以及驗證提交的資料。 以下是其功能的詳細介紹：
+Forms 服務會產生用於資料擷取的互動式 PDF forms。也可以利用此表單把資料匯入至現有的互動式 PDF 表單或將其中的資料匯出，並驗證提交的資料。以下是其功能的詳細介紹：
 
 * **轉譯表單**：從使用 AEM Forms Designer 建立的範本，並可以選擇搭配 XML 資料，產生互動式 PDF 表單。這實質上會產生一個可填寫的 PDF 表單，可選擇預先填入資料。
 * **資料擷取和匯入**：將資料匯入現有 PDF 表單，以及從已填妥的 PDF 表單中擷取資料。支援 XDP 和 XML 資料格式，而匯入至非 XFA PDF forms (又稱為 AcroForms) 可額外支援 FDF 和 XFDF 資料。
-* **資料驗證**：根據使用AEM Forms Designer建立的範本，驗證XDP或XML格式的已提交資料。
+* **資料驗證**：根據使用 AEM Forms Designer 建立的範本驗證以 XDP 或 XML 格式提交的資料。
 
 >[!IMPORTANT]
 >
@@ -189,7 +189,7 @@ RDE 命令列介面有一些新功能，可改善開發人員體驗：
 
 * [設定命令是互動式的](/help/implementing/developing/introduction/rapid-development-environments.md#installing-the-rde-command-line-tools-interactive)，可以更輕鬆在組織、計劃和環境之間進行選擇。現在也可以在命令列中覆寫這些值。
 * [靜音模式](/help/implementing/developing/introduction/rapid-development-environments.md#global-flags)提供較簡潔的輸出。
-* [json模式](/help/implementing/developing/introduction/rapid-development-environments.md#global-flags) 以程式呼叫時用於有用的輸出。
+* [json 模式](/help/implementing/developing/introduction/rapid-development-environments.md#global-flags)可在以程式設計方式呼叫時，提供實用的輸出。
 
 ### 新的行動中心通知 {#actions-center-notifications}
 
@@ -250,7 +250,6 @@ Adobe 管理的內容傳遞網路現在支援 [Edge Side Includes (ESI)](/help/i
 
 您可以在[這裡](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)找到移轉工具版本的完整清單。
 
-## Experience Cloud 版本注意事項 {#experience-cloud}
+## Experience Cloud 發行說明 {#experience-cloud}
 
-您可以找到其他Experience Cloud應用程式發行版本的相關資訊 [此處](https://experienceleague.adobe.com/en/docs/release-notes/experience-cloud/current).
-若要收到有關Experience Cloud發行說明更新的每月電子郵件通知，請訂閱 [Adobe優先順序產品更新](https://www.adobe.com/tw/subscription/priority-product-update.html).
+您可以在[這裡](https://experienceleague.adobe.com/tw/docs/release-notes/experience-cloud/current)查看其他 Experience Cloud 應用程式版本的相關資訊。若要透過每月電子郵件通知，了解 Experience Cloud 發行說明的最新消息，請訂閱 [Adobe 優先產品更新](https://www.adobe.com/tw/subscription/priority-product-update.html)。
