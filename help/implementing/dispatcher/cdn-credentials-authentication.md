@@ -3,10 +3,10 @@ title: 設定內容傳遞網路憑證和身份驗證
 description: 瞭解如何在設定檔案中宣告規則，再使用Cloud Manager設定管道來部署，以設定CDN憑證和驗證。
 feature: Dispatcher
 exl-id: a5a18c41-17bf-4683-9a10-f0387762889b
-source-git-commit: 7a53f936aacfb3e5aa431f26e5346c1809f9c76f
+source-git-commit: e6059a1109ca93452f80440744338b809279db9b
 workflow-type: tm+mt
-source-wordcount: '1143'
-ht-degree: 2%
+source-wordcount: '1065'
+ht-degree: 3%
 
 ---
 
@@ -42,7 +42,6 @@ data:
         type: edge
         edgeKey1: ${{CDN_EDGEKEY_052824}}
         edgeKey2: ${{CDN_EDGEKEY_041425}}
-        onFailure: log # optional, default: log, enum: log/block
     rules:
       - name: edge-auth-rule
         when: { reqProperty: tier, equals: "publish" }
@@ -61,7 +60,7 @@ data:
    * 型別 — 必須為edge。
    * edgeKey1 — 其值必須參考秘密權杖，該權杖不應儲存在git中，而是宣告為 [Cloud Manager環境變數](/help/implementing/cloud-manager/environment-variables.md) 型別密碼的。 在「已套用服務」欄位中，選取全部。 建議使用的值(例如`${{CDN_EDGEKEY_052824}}`)反映新增日期。
    * edgeKey2 — 用於輪換秘密，相關說明請參閱 [旋轉秘密區段](#rotating-secrets) 底下。 至少一個 `edgeKey1` 和 `edgeKey2` 必須宣告。
-   * OnFailure — 定義動作，可以 `log` 或 `block`，當請求不符合以下任一值時： `edgeKey1` 或 `edgeKey2`. 的 `log`，將會繼續處理請求，而 `block` 將產生403錯誤。 此 `log` 在即時網站上測試新Token時，值相當實用，因為您可以先確認CDN可正確接受新Token，然後再變更為 `block` 模式；也能減少客戶CDN與AdobeCDN之間因設定錯誤而中斷連線的機會。
+<!--   * OnFailure - defines the action, either `log` or `block`, when a request doesn't match either `edgeKey1` or `edgeKey2`. For `log`, request processing will continue, while `block` will serve a 403 error. The `log` value is useful when testing a new token on a live site since you can first confirm that the CDN is correctly accepting the new token before changing to `block` mode; it also reduces the chance of lost connectivity between the customer CDN and the Adobe CDN, as a result of an incorrect configuration. -->
 * 規則：可讓您宣告應該使用哪一個驗證器，以及它是否用於發佈和/或預覽層。  內容包括：
    * name — 描述性字串。
    * when — 根據 [流量篩選規則](/help/security/traffic-filter-rules-including-waf.md) 文章。 通常會包含目前階層的比較（例如publish），以便驗證所有即時流量為透過客戶CDN的路由。
