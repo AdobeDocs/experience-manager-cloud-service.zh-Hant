@@ -3,9 +3,9 @@ title: 疑難排解持續的GraphQL查詢
 description: 瞭解如何疑難排解Adobe Experience Manager as a Cloud Service中的持續性GraphQL查詢問題。
 feature: Content Fragments,GraphQL API
 exl-id: 71bd1f68-ca96-4c78-a936-abed250ecec1
-source-git-commit: 220e86f18e4a61304764753d8daecb68503e9fd0
+source-git-commit: 09ef5fb49ba638f888c9c101760ffa3c7d258fda
 workflow-type: tm+mt
-source-wordcount: '351'
+source-wordcount: '363'
 ht-degree: 0%
 
 ---
@@ -14,23 +14,22 @@ ht-degree: 0%
 
 此 [動作中心](/help/operations/actions-center.md) 包含 **GraphQL持續查詢錯誤** 警報。 這表示只要您的其中一個GraphQL持續查詢擲回錯誤，就會通知您。
 
-為協助您疑難排解並解決這類問題，我們將 *最常見* 失敗的原因，以及如何修正的步驟。
+為協助您疑難排解及解決這類問題，本頁涵蓋 *最常見* 失敗的原因，以及如何修正的步驟。
 
 ## 內容片段模式的變更 {#changes-to-content-fragment-model}
 
 GraphQL持續查詢如果以過時的GraphQL型別為基礎，則可能會失敗，通常是因為基礎內容片段模式發生變更。
 
-發生此狀況可能有各種原因。 例如，當內容模型作者時：
+發生這類錯誤的原因有很多。 例如，當內容片段模型的作者（清單並非詳盡無遺）時：
 
 * 移除或重新命名欄位
-* 更新為片段參考定義的允許模型
+* 更新 **模型型別** 會定義片段參考所允許的模型
 * 取消發佈由其他模型參考的模型
-* 其他動作和原因
 
-若要解決此問題，請執行下列其中一個動作：
+若要解決這類錯誤，您應該：
 
-* 失敗的持續查詢應更新以容納內容片段模型的變更
-* 或導致問題的模型變更應恢復
+* 更新無法容納對內容片段模型所做的變更的持久查詢
+* 還原導致問題的模型變更
 
 ## 未設定GraphQL端點 {#graphql-endpoint-not-configured}
 
@@ -48,7 +47,7 @@ GraphQL持續查詢如果以過時的GraphQL型別為基礎，則可能會失敗
 
 在這種情況下，查詢會傳回 `405` 錯誤碼。
 
-這不是GraphQL專屬的行為。 請參閱知識庫文章 [405不允許錯誤](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-20824.html).
+這類錯誤並非GraphQL特有的錯誤。 請參閱知識庫文章 [405不允許錯誤](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-20824).
 
 ## 已被Dispatcher封鎖 {#blocked-dispatcher}
 
