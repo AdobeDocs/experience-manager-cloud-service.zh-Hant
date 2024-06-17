@@ -2,10 +2,12 @@
 title: 預覽 — JSON呈現（資產 — 內容片段）
 description: 瞭解如何在實作AEM Headless解決方案時輕鬆預覽內容片段的JSON表示法。
 exl-id: e5f3f3ee-c191-4b7b-8a29-67524bb68a8e
-source-git-commit: 87630d9530194fd0c6d88e05a17db108b765ccb6
+feature: Content Fragments
+role: User
+source-git-commit: 1e206a33ef03edfa1af3c0d95f3665b5604f22f3
 workflow-type: tm+mt
 source-wordcount: '168'
-ht-degree: 2%
+ht-degree: 9%
 
 ---
 
@@ -15,7 +17,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->內容片段是Sites功能，但儲存為 **資產**.
+>內容片段是 Sites 的一項功能，但儲存為&#x200B;**資產**。
 >
 >編寫內容片段有兩個編輯器。 本節介紹原始編輯器，主要透過以下網址存取： **資產** 主控台。 請參閱網站檔案， [內容片段 — 製作](/help/sites-cloud/administering/content-fragments/authoring.md)，以取得新編輯器的詳細資訊(主要透過以下網址存取： **內容片段** 主控台)。
 

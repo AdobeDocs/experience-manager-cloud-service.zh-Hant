@@ -2,7 +2,9 @@
 title: 將資產上傳到存放庫
 description: 上傳資產到  [!DNL Assets view]、檢視上傳狀態和解決上傳問題。
 role: User
-source-git-commit: c3076ce35128c147ce2056d11d9305d9a9456636
+exl-id: 01af3b66-dba8-4b09-aadf-ba4ae09b824f
+feature: Asset Management, Publishing, Collaboration, Asset Processing
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
 workflow-type: tm+mt
 source-wordcount: '825'
 ht-degree: 91%

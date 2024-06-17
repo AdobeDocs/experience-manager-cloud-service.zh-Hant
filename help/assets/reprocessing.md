@@ -2,7 +2,10 @@
 title: 重新處理數位資產
 description: 瞭解重新處理數位資產的多種方法
 contentOwner: KK
-source-git-commit: cb8eb56d07163f46aec252c70a3ec3b0273d97cf
+exl-id: 4759fa8c-10c7-4446-a135-3104b9beaee8
+feature: Asset Processing
+role: User, Leader, Developer
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
 workflow-type: tm+mt
 source-wordcount: '685'
 ht-degree: 0%
@@ -59,7 +62,7 @@ ht-degree: 0%
 
 [!DNL Experience Manager] 允許重新處理以下元件的數位資產。
 
-### 智慧標籤 {#reprocessing-smart-tags}
+### 智慧標記 {#reprocessing-smart-tags}
 
 處理數位資產的組織越來越多地在資產中繼資料中使用分類控制的辭彙。 基本上，它包括員工、合作夥伴和客戶通常用來參照和搜尋特定類別數位資產的關鍵字清單。 使用分類控制的辭彙來標籤資產，可確保輕鬆識別和擷取資產。
 
@@ -91,4 +94,3 @@ ht-degree: 0%
 ### 工作流程
 
 深入瞭解 [處理設定檔與後處理工作流程](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use.html?lang=en).
-

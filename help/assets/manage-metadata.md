@@ -3,10 +3,10 @@ title: 管理數位資產的中繼資料
 description: 瞭解中繼資料的型別和方式 [!DNL Adobe Experience Manager Assets] 協助管理資產的中繼資料，讓資產更輕鬆分類及組織。 [!DNL Experience Manager] 可讓您根據資產的中繼資料自動整理和處理資產。
 contentOwner: AG
 mini-toc-levels: 1
-feature: Asset Management,Metadata
-role: User,Architect,Admin
+feature: Asset Management, Metadata
+role: User, Architect, Admin
 exl-id: 73a82bc2-1dda-4090-b7ee-29d1a632ba25
-source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
 workflow-type: tm+mt
 source-wordcount: '1944'
 ht-degree: 9%

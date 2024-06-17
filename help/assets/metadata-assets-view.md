@@ -1,13 +1,14 @@
 ---
 title: 如何在「資產」檢視中管理中繼資料？
 description: 瞭解如何在「資產」檢視中管理中繼資料。 更好的中繼資料管理讓資產更易於存取、更易於管理和完成。
-role: User,Leader,Admin,Architect,Developer
+role: User, Leader, Admin, Architect, Developer
 contentOwner: AG
 exl-id: 7264e8d1-fc8f-4eb3-93a9-a6066ca3f851
-source-git-commit: ed5303bab864e21100cf6e52e130b4bd17bfcb45
+feature: Metadata
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
 workflow-type: tm+mt
 source-wordcount: '1783'
-ht-degree: 81%
+ht-degree: 87%
 
 ---
 
@@ -144,7 +145,7 @@ MIME 子類型 > MIME 類型 > `default` 表單 > 現成可用的表單
 
 2. 按一下「**[!UICONTROL 指派至資料夾]**」。
 
-3. 選取資料夾並按一下 **[!UICONTROL 指派]**. 您可以按一下資料夾名稱來選取資料夾。
+3. 選取資料夾並按一下 **[!UICONTROL 指派]**. 您可以透過按一下資料夾名稱來選取資料夾。
 
    ![將中繼資料表單指派至資料夾](assets/assign-to-folder.png)
 
@@ -152,19 +153,19 @@ MIME 子類型 > MIME 類型 > `default` 表單 > 現成可用的表單
 
    ![資料夾屬性中的中繼資料表單](assets/metadata-from-folder-props.png)
 
-### 從資料夾中移除中繼資料表單 {#remove-metadata-form-folder}
+### 從資料夾中刪除中繼資料表單 {#remove-metadata-form-folder}
 
-將中繼資料表單指派給一或多個資料夾後，Experience Manager Assets也可讓您從選取的資料夾中移除中繼資料表單。
+將中繼資料表單指派到一個或多個資料夾後，Experience Manager Assets 還可讓您從所選資料夾中刪除中繼資料表單。
 
-若要從資料夾中移除中繼資料表單：
+若要從資料夾移除中繼資料表單：
 
 1. 瀏覽至「**[!UICONTROL 設定]** > **[!UICONTROL 中繼資料表單]**」並選取中繼資料表單。
 
-1. 按一下 **[!UICONTROL 從資料夾中移除]**. 中繼資料表單顯示的指派資料夾清單。
+1. 按一下「**[!UICONTROL 從資料夾中移除]**」用來顯示中繼資料表單的已指派資料夾清單。
 
-1. 選取資料夾並按一下 **[!UICONTROL 移除]**. 您也可以從清單中選取多個資料夾。
+1. 選取資料夾並按一下「**[!UICONTROL 移除]**」。您也可以從清單中選取多個資料夾。
 
-您也可以導覽至資料夾詳細資訊頁面，然後選取 **[!UICONTROL 系統對應的中繼資料表單]** 從 **[!UICONTROL 中繼資料Forms]** 欄位以從資料夾中移除指派的中繼資料表單。
+您也可以導覽至資料夾詳細資料頁面，然後從「**[!UICONTROL 中繼資料表單]**」欄位中選取「**[!UICONTROL 系統對應中繼資料表單]**」，即可從資料夾中刪除已指派的中繼資料表單。
 
 ## 後續步驟 {#next-steps}
 

@@ -1,22 +1,23 @@
 ---
 title: 移除現有安裝的外部相依性
 description: 移除現有安裝的外部相依性
-feature: Integrations
+feature: Workfront Integrations and Apps
 exl-id: 5b28ce97-2719-47b8-a386-77d4aaddbe81
-source-git-commit: b71a78696d4b347c97b077d84b455f53a1747a07
+role: Admin
+source-git-commit: 257930bc2633a0d31ad3bd28305b8159597befa5
 workflow-type: tm+mt
-source-wordcount: '102'
+source-wordcount: '104'
 ht-degree: 17%
 
 ---
 
 # 移除現有安裝的外部相依性 {#remove-external-depedencies}
 
-Adobe建議您針對Workfront的現有增強型聯結器安裝執行設定步驟，移除對Hoodoo散發點的相依性。
+Adobe建議您針對Workfront的現有增強型聯結器安裝執行設定步驟，以移除Hoodoo散發點上的相依性。
 
 >[!NOTE]
 >
->僅當您在2022年3月之前安裝Workfront的增強型聯結器時，才執行設定步驟。 自2022年3月起，Workfront新的增強型聯結器安裝不會依賴Hoodoo發佈點。
+>僅當您在2022年3月之前安裝適用於Workfront的增強型聯結器時，才執行設定步驟。 自2022年3月起，Workfront新的增強型聯結器安裝不會依賴Hoodoo發佈點。
 
 若要移除外部相依性：
 
@@ -30,7 +31,7 @@ Adobe建議您針對Workfront的現有增強型聯結器安裝執行設定步驟
      </repository>
    ```
 
-1. 從移除下列伺服器設定 `settings.xml` 檔案，位於 `./cloudmanager/maven/settings.xml`：
+1. 從移除下列伺服器組態 `settings.xml` 檔案，位於 `./cloudmanager/maven/settings.xml`：
 
    ```XML
          <server>

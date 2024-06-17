@@ -1,12 +1,13 @@
 ---
 title: Assets HTTP API中的Adobe Experience Manager as a Cloud Service內容片段支援
 description: 瞭解Assets HTTP API支援內容片段，這是Adobe Experience Manager的Headless傳送功能的重要一環。
-feature: Content Fragments,Assets HTTP API
+feature: Content Fragments, Assets HTTP API
 exl-id: d72cc0c0-0641-4fd6-9f87-745af5f2c232
-source-git-commit: 674db680f46a4fd4772cb10fe7cb396652354dfe
+role: User, Admin
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
 workflow-type: tm+mt
 source-wordcount: '1804'
-ht-degree: 11%
+ht-degree: 14%
 
 ---
 
@@ -23,7 +24,7 @@ ht-degree: 11%
 
 >[!NOTE]
 >
->此 [內容片段和內容片段模型OpenAPI](/help/headless/content-fragment-openapis.md) 也可供使用。
+>也提供[內容片段和內容片段模型 OpenAPI](/help/headless/content-fragment-openapis.md)。
 
 >[!NOTE]
 >
@@ -98,7 +99,7 @@ HTTP 方法決定要執行的操作：
 
 >[!NOTE]
 >
->此 [內容片段和內容片段模型OpenAPI](/help/headless/content-fragment-openapis.md) 也可供使用。
+>也提供[內容片段和內容片段模型 OpenAPI](/help/headless/content-fragment-openapis.md)。
 
 ### 異動行為 {#transactional-behavior}
 
@@ -178,7 +179,7 @@ HTTP 方法決定要執行的操作：
 
 >[!NOTE]
 >
->此 [內容片段和內容片段模型OpenAPI](/help/headless/content-fragment-openapis.md) 也可供使用。
+>也提供[內容片段和內容片段模型 OpenAPI](/help/headless/content-fragment-openapis.md)。
 
 ### 分頁 {#paging}
 
@@ -275,7 +276,7 @@ A [內容片段](/help/assets/content-fragments/content-fragments.md) 是一種�
 >
 >請參閱 [API參考](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference). 特別是 [Adobe Experience Manager Assets API - 內容片段](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/assets-api-content-fragments/index.html)。
 >
->此 [內容片段和內容片段模型OpenAPI](/help/headless/content-fragment-openapis.md) 也可供使用。
+>也提供[內容片段和內容片段模型 OpenAPI](/help/headless/content-fragment-openapis.md)。
 
 ## 限制 {#limitations}
 
@@ -367,7 +368,7 @@ A [內容片段](/help/assets/content-fragments/content-fragments.md) 是一種�
 
    * [可用功能](/help/assets/mac-api-assets.md#available-features)
 
-* 此 [內容片段和內容片段模型OpenAPI](/help/headless/content-fragment-openapis.md) 也可供使用。
+* 也提供[內容片段和內容片段模型 OpenAPI](/help/headless/content-fragment-openapis.md)。
 
 ## 其他資源 {#additional-resources}
 

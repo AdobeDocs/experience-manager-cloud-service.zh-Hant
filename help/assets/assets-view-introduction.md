@@ -3,10 +3,12 @@ title: AEM中的「資產」檢視如何協助您？
 description: 進一步瞭解AEM中「資產」檢視的主要優點。 Adobe運用其在增強行銷和創意專業人士能力方面的專業知識，引進了改變遊戲規則的新使用者體驗。
 mini-toc-levels: 3
 exl-id: c27134f5-178c-4db1-a8e6-ec45d020f2b5
-source-git-commit: 408a691de8a6fe2801a9907308db43f2050528c3
+feature: Asset Management, Publishing, Collaboration, Asset Processing
+role: User
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
 workflow-type: tm+mt
-source-wordcount: '1079'
-ht-degree: 74%
+source-wordcount: '972'
+ht-degree: 69%
 
 ---
 
@@ -121,7 +123,7 @@ Assets 檢視中的垃圾桶資料夾列出了從根 Assets 資料夾刪除的�
 
 * 重新命名存放庫中可用的資產和資料夾。
 
-「資產」檢視是量身打造而成，可簡化工作流程、促進共同作業並加速資產交付。 透過擁抱內容速度，行銷人員可以發揮數位資產的全部潛力，並以前所未有的方式釋放創造力。
+「資產」檢視是量身打造而成，可簡化工作流程、促進共同作業並加速資產交付。 透過採用內容速度，行銷人員可以釋放其數位資產的全部潛力，並釋放前所未有的創造力。
 
 
 使用這些連結來快速開始使用資產檢視：

@@ -2,12 +2,12 @@
 title: 時間軸中的活動資料流
 description: 本文說明如何在時間軸上顯示資產的活動記錄。
 contentOwner: AG
-feature: Asset Reports,Asset Management
-role: Admin,User
+feature: Asset Reports, Asset Management
+role: Admin, User
 exl-id: 8dd82c31-f88e-4407-9b6d-c87033d7a823
 hide: true
 hidefromtoc: true
-source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
 workflow-type: tm+mt
 source-wordcount: '235'
 ht-degree: 35%

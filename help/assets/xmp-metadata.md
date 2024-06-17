@@ -3,9 +3,9 @@ title: XMP 中繼資料
 description: 瞭解用於中繼資料管理的XMP （可延伸中繼資料平台）中繼資料標準。 Experience Manager會將其用作建立、處理和交換中繼資料的標準化格式。
 contentOwner: AG
 feature: Metadata
-role: User,Admin
+role: Admin, User
 exl-id: fd9af408-d2a3-4c7a-9423-c4b69166f873
-source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
 workflow-type: tm+mt
 source-wordcount: '1033'
 ht-degree: 17%

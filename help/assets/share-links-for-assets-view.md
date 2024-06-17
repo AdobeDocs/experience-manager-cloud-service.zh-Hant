@@ -1,7 +1,10 @@
 ---
 title: 如何共用資產的連結？
 description: 產生連結，然後和無法存取  [!DNL Assets view]  應用程式的其他人共用資產。
-source-git-commit: c3076ce35128c147ce2056d11d9305d9a9456636
+exl-id: 7d7d488b-410b-4e90-bd10-4ffbb5fcec49
+feature: Adobe Asset Link, Link Sharing
+role: Admin
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
 workflow-type: tm+mt
 source-wordcount: '397'
 ht-degree: 93%

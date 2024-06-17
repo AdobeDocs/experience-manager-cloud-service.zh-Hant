@@ -2,10 +2,12 @@
 title: 如何在資產視圖中管理標記？
 description: 了解如何在資產視圖中管理標記。標記可協助您將資產分類，以便更有效地瀏覽和搜尋。
 exl-id: 7c5e1212-054f-46ca-9982-30e40b0482e1
-source-git-commit: cadf0e383608a39200d716cc698ad1979f24fd1d
+feature: Smart Tags
+role: User, Admin, Developer
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
 workflow-type: tm+mt
 source-wordcount: '1739'
-ht-degree: 70%
+ht-degree: 98%
 
 ---
 
@@ -45,7 +47,7 @@ ht-degree: 70%
 
 除了本文提到的之外，管理員視圖中還提供了包括合併、重新命名、本地化和發佈標記等其他功能。
 
-## 建立名稱空間 {#create-a-namespace}
+## 建立命名空間 {#create-a-namespace}
 
 命名空間是只能存在於根級別的標記容器。您可以透過先為命名空間定義邏輯名稱，開始設定標記的階層式結構。如果您未將標記新增到任何現有的命名空間，該標記將自動移至標準標記。
 
@@ -59,11 +61,11 @@ ht-degree: 70%
 
 1. 按一下 `Save`。
 
-## 將標籤新增至名稱空間 {#add-tags-to-namespace}
+## 將標記新增到命名空間 {#add-tags-to-namespace}
 
 請執行下列步驟以新增標記到一個命名空間：
 
-1. 前往 **[!UICONTROL 分類法管理]**.
+1. 前往&#x200B;**[!UICONTROL Taxonomy Management]**。
 1. 選取命名空間並按一下 `Create`，在命名空間下方的頂端層級建立標記。如果您需要在命名空間存在的標記下建立子標記，請選取該標記，然後按一下 `Create`。
    ![標記的階層式結構](assets/hierarchy-of-tags.png)
 
@@ -77,7 +79,7 @@ ht-degree: 70%
    >* 預設情況下，該工具會複製您在「標題」欄位中鍵入的文字，移除空格或特殊字元 (.&amp; / \ : * ? [ ]| &quot; %)，並將其儲存為名稱。
    >* 之後可以更新 `Title` 欄位，但 `Name` 欄位是唯讀的。
 
-## 新增標籤至標準標籤 {#add-tags-to-standard-tags}
+## 將標記新增到標準標記 {#add-tags-to-standard-tags}
 
 非結構化標記或沒有任何階層的標記儲在`Standard Tags`命名空間。再者，當您想要新增其他描述性詞彙而不影響管控的分類法時，可以將該值儲存在 `Standard Tags`。您可以隨著時間的推移，將這些值移到結構化的命名空間之下。此外，您也可以使用`Standard Tags`命名空間做為關鍵字的自由形式項目。
 
@@ -89,7 +91,7 @@ ht-degree: 70%
 >
 >如果使用 Assets as a Cloud Service 刪除 `Standard Tags` 命名空間，在根級別建立的標記不會顯示在可用標記的清單中。
 
-## 移動標籤 {#move-tags}
+## 移動標記 {#move-tags}
 
 如果您將標記儲存在錯誤的階層之下，或者分類法隨著時間的推移而改變，您可以移動選取的標記以保持資料完整性。移動標記時必須考慮以下條件：
 
@@ -103,7 +105,7 @@ ht-degree: 70%
 1. 在「移動」對話框中，使用 `Select Tag` 部分選取新的目標標記或命名空間。
 1. 按一下 `Save`。標記顯示在其新的位置。
 
-## 編輯標籤 {#edit-tags}
+## 編輯標記 {#edit-tags}
 
 若要編輯標記的標題，請選取該標記並按一下`Edit`。指定新的標題並按一下 `Save`。
 
@@ -112,7 +114,7 @@ ht-degree: 70%
 >* 無法更新標記的 `Name`。標記的根路徑也根據標記的名稱。即使更新了 `Title` 欄位，該路徑也維持不變。
 >* Assets as a Cloud Service 中提供了其他操作，例如合併、本地化和發佈。
 
-## 刪除標籤 {#delete-tags}
+## 刪除標記 {#delete-tags}
 
 您可以同時刪除多個命名空間或標記。刪除操作無法復原。
 
@@ -127,16 +129,16 @@ ht-degree: 70%
 >* 刪除標記也會從資產中刪除其所有的參考。
 >* 您無法刪除存在於根級別的標準標記。
 
-## 將標籤元件新增至中繼資料表單 {#add-tags-to-metadata-form}
+## 將標記元件新增到中繼資料表單 {#add-tags-to-metadata-form}
 
-標記元件自動被新增到`default`中繼資料表單。您可以透過使用範本或從零開始，設計一個 [中繼資料表單](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/metadata.html?lang=en#metadata-forms)。如果您沒有使用現有的中繼資料表單範本，則可以修改中繼資料表單並新增標記元件。中繼資料屬性對應是自動填入的，此時無法修改。[!DNL Assets as a Cloud Service] 使用者可以使用自訂名稱空間更新對應以儲存標籤值，並使用根路徑只公開階層的子集。
+標記元件自動被新增到`default`中繼資料表單。您可以透過使用範本或從零開始，設計一個 [中繼資料表單](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/metadata.html?lang=en#metadata-forms)。如果您沒有使用現有的中繼資料表單範本，則可以修改中繼資料表單並新增標記元件。中繼資料屬性對應是自動填入的，此時無法修改。[!DNL Assets as a Cloud Service]使用者可以更新對應，以使用自訂命名空間儲存標記值，並使用根路徑僅公開階層的子集。
 
 觀看此簡短影片，了解如何將標記元件新增到中繼資料表單中：
 
 >[!VIDEO](https://video.tv.adobe.com/v/3420452)
 
 
-### 新增標籤至資產 {#add-tags-to-assets}
+### 將標記新增到資產 {#add-tags-to-assets}
 
 1. 前往資產詳細資訊頁面並瀏覽至`Tags`中繼資料表單的部分。
 1. 選取「標記」欄位旁邊的標記選取器圖示，或開始輸入標記名稱以查看建議的結果。
@@ -146,61 +148,61 @@ ht-degree: 70%
 1. 選取一個或多個標記。子標記與父系標記或命名空間一起自動選取。
 在 Assets Essentials 中修改的標記會套用在 Assets as a Cloud Service。
 
-## 新增標籤至封鎖清單 {#blocklist-essentials}
+## 將標記新增至封鎖清單 {#blocklist-essentials}
 
-[!DNL Assets view] 可讓您設定封鎖清單，其中包含不應在上傳至存放庫時作為智慧標籤新增至資產的字詞。 此功能可協助您維持品牌合規性，並減少審核智慧標記的工作量。
+[!DNL Assets view] 可讓您設定封鎖清單，其中包含上傳到存放庫時，不應當成智慧標記上傳到資產的單詞。此功能可協助您維持品牌合規性，並減少審核智慧標記的工作量。
 <!--
 ### Block smart tags for single asset {#block-smart-tags-for-single-asset}
 ![block smart tags](assets/block-smart-tags.png)
 -->
 
-### 封鎖所有資產的智慧標籤 {#block-smart-tags-for-all-assets}
+### 封鎖所有資產的智慧標記 {#block-smart-tags-for-all-assets}
 
-[!DNL Assets view] 可讓管理員封鎖現有和新新增資產的智慧標籤。 若要封鎖標籤，請執行下列步驟：
+[!DNL Assets view] 可讓管理員封鎖現有和新新增資產的智慧標記。若要封鎖標記，請執行以下步驟：
 
-1. 瀏覽至 **[!UICONTROL 已封鎖的標籤]** 在 **[!UICONTROL 設定]**.
-1. 按一下 **[!UICONTROL 新增已封鎖的標籤]**.
-1. 在文字方塊中輸入您需要封鎖的標籤，然後按一下 **[!UICONTROL 輸入]**.
-1. 新增完標籤後，請按一下 **[!UICONTROL 新增]**. 輸入的標籤會列在封鎖的標籤清單中。
+1. 瀏覽到「**[!UICONTROL 設定]**」底下的「**[!UICONTROL 已封鎖標記]**」。
+1. 按一下「**[!UICONTROL 新增已封鎖標記]**」。
+1. 在文字方塊中輸入您要封鎖的標記，然後按一下「**[!UICONTROL Enter]**」。
+1. 新增完標記後，按一下「**[!UICONTROL 新增]**」。輸入的標記將列在封鎖的標記清單中。
 
    >[!NOTE]
    >
-   >您一次最多可以新增25個標籤至清單。 重複這些步驟，將更多標籤新增至封鎖清單中。
+   >一次最多可以將 25 個標記新增至清單。重複這些步驟以將更多標記新增到封鎖清單中。
 
-您也可以封鎖單一資產的智慧標籤。 導覽至資產的詳細資訊。 在 **[!UICONTROL 標籤]** 標籤，移除不要的智慧標籤，然後按一下 **[!UICONTROL 儲存]**. 標籤會列在所選資產的封鎖清單中。
+您也可以封鎖單一資產的智慧標記。瀏覽至資產的詳細資料。在「**[!UICONTROL 標記]**」標籤下移除不需要的智慧標記，然後按一下「**[!UICONTROL 儲存]**」。標記列在所選資產的封鎖清單中。
 
 ### 對封鎖清單執行的動作 {#blocklist-actions}
 
-* **移除標籤：** 您也可以從封鎖清單中移除標籤。 若要這麼做，請選取一或多個要移除的標籤。 按一下 **[!UICONTROL 移除]**. 您一次最多可以從清單中移除25個標籤。
-* **全選：** 選取旁邊的核取方塊 **標籤名稱** 以選取封鎖清單中的所有標籤。
-* **排序：** 您可以依遞增或遞減順序排序封鎖清單。 若要這麼做，請按一下旁的箭頭 **標籤名稱**.
+* **移除標記：**&#x200B;您也可以從封鎖清單中移除標記。為此，請選擇一個或多個要移除的標記。按一下「**[!UICONTROL 移除]**」。一次最多可以從清單中移除 25 個標記。
+* **全選：**&#x200B;選取「**標記名稱**」旁的核取方塊以選取封鎖清單中的所有標記。
+* **排序：**&#x200B;您可以按升序或降序對封鎖清單進行排序。若要這樣做，請按一下「**標記名稱**」旁邊的箭頭。
 
-  ![區塊標籤](assets/blocklist.gif)
+  ![區塊標記](assets/blocklist.gif)
 
   >[!NOTE]
   >
-  >在封鎖清單中新增標籤時，請勿使用特殊字元。 可以使用a-z、A-Z、0-9和 — 等字元。
+  >在封鎖清單中新增標記時請勿使用特殊字元。可使用 a-z、A-Z、0-9 和 - 等字元。
 
 ### 匯出封鎖清單{#export-blocklist}
 
-「資產」檢視可讓您將列出的封鎖標籤匯出為CSV格式。 若要匯出封鎖清單，請執行下列步驟：
+「資產」檢視可讓您將列出的封鎖標籤匯出為CSV格式。 若要匯出封鎖清單，請執行以下步驟：
 
-1. 按一下 **[!UICONTROL 匯出為CSV]**.
-1. 選擇適當的位置以儲存CSV檔案。 您也可以視需求重新命名檔案。
-1. 按一下「**[!UICONTROL 儲存]**」。匯出的CSV格式清單會在選取的位置下載。
+1. 按一下「**[!UICONTROL 以 CSV 匯出]**」。
+1. 選擇適當的位置來儲存 CSV 檔案。您也可以根據要求重新命名該檔案。
+1. 按一下「**[!UICONTROL 儲存]**」。CSV 格式的匯出清單將下載到所選位置。
 
 ### 匯入封鎖清單{#import-blocklist}
 
-「資產」檢視可讓您從資料來源(CSV)匯入封鎖的標籤。 若要匯入封鎖清單，請執行下列步驟：
+「資產」檢視可讓您從資料來源(CSV)匯入封鎖的標籤。 若要匯入封鎖清單，請執行以下步驟：
 
-1. 按一下 **[!UICONTROL 匯入為CSV]**.
-1. 從裝置中選擇CSV檔案。 按一下 **[!UICONTROL 選取檔案]** 以從裝置導覽至檔案。 或者，您也可以從裝置拖放CSV檔案。
-1. 按一下 **[!UICONTROL 上傳]**. CSV檔案中的標籤會列在封鎖的標籤清單中。
+1. 按一下「**[!UICONTROL 以 CSV 匯入]**」。
+1. 從您的裝置中選擇 CSV 檔案。按一下「**[!UICONTROL 選取檔案]**」以瀏覽到裝置上的檔案。或者，您可以從裝置拖放 CSV 檔案。
+1. 按一下「**[!UICONTROL 上傳]**」。CSV 檔案中的標記列在已封鎖標記清單中。
 
-   ![匯入封鎖的標籤清單](assets/import-blocked-tags.png)
+   ![匯入已封鎖標記清單](assets/import-blocked-tags.png)
 
-如果您想要下載封鎖的標籤範本，請遵循下列步驟：
+如果要下載已封鎖標記範本，請按照以下步驟執行：
 
-1. 按一下 **[!UICONTROL 下載範本]**.
-1. 選擇適當的位置以儲存CSV檔案。 您也可以視需求重新命名檔案。
-1. 按一下「**[!UICONTROL 儲存]**」。CSV格式的封鎖標籤範本會下載到選取的位置。
+1. 按一下「**[!UICONTROL 下載範本]**」。
+1. 選擇適當的位置來儲存 CSV 檔案。您也可以根據要求重新命名該檔案。
+1. 按一下「**[!UICONTROL 儲存]**」。CSV 格式的區塊標記範本將下載到所選位置。

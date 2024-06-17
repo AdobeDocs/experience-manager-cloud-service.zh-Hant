@@ -3,7 +3,8 @@ title: 瞭解如何搜尋和探索中的資產 [!DNL Assets view]？
 description: 瞭解如何在AEM Assets檢視中搜尋和探索資產。 強大的搜尋功能可讓您快速探索合適的資產，協助您改善內容速度。
 role: User
 exl-id: abfe6a91-1699-436f-8bf4-0d0bf2369f46
-source-git-commit: f476088e13466e1c41368112fb161bcbeee2c5cd
+feature: Asset Management, Publishing, Collaboration, Asset Processing
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
 workflow-type: tm+mt
 source-wordcount: '1908'
 ht-degree: 92%

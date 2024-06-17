@@ -2,7 +2,9 @@
 title: 管理集合
 description: 集合是Experience Manager Assets檢視中的一組資產。 使用集合在使用者之間共用資產。
 exl-id: 540dc1d9-eaf4-4e08-8087-dc58da23a6e8
-source-git-commit: b2144820ad549332e8a921744717a77824f9e099
+feature: Collections, Asset Management
+role: User
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
 workflow-type: tm+mt
 source-wordcount: '910'
 ht-degree: 90%

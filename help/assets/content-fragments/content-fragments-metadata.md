@@ -2,7 +2,9 @@
 title: 中繼資料 — 片段屬性（資產 — 內容片段）
 description: 瞭解如何檢視和編輯內容片段的中繼資料屬性。
 exl-id: bc67480d-a1e4-4ef9-b811-8bd110f70369
-source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
+feature: Content Fragments
+role: User
+source-git-commit: 763ef950ffa7642a345977485f56c1187f6ecc0a
 workflow-type: tm+mt
 source-wordcount: '274'
 ht-degree: 6%

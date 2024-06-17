@@ -2,7 +2,9 @@
 title: AEM Assets與Adobe Express的原生整合
 description: AEM Assets與Adobe Express的原生整合可讓您從Adobe Express使用者介面直接存取AEM Assets中儲存的資產。
 exl-id: d43e4451-da2a-444d-9aa4-4282130ee44f
-source-git-commit: d7e144d7f7722d4de96b3f85d44432863b350f92
+feature: Collaboration
+role: User
+source-git-commit: 257930bc2633a0d31ad3bd28305b8159597befa5
 workflow-type: tm+mt
 source-wordcount: '635'
 ht-degree: 16%

@@ -2,7 +2,9 @@
 title: 變化 — 編寫片段內容（資產 — 內容片段）
 description: 瞭解內容片段變數如何讓您為片段製作內容，然後根據用途建立該內容的變數，從而增加彈性。
 exl-id: af05aae6-d535-4007-ba81-7f41213ff152
-source-git-commit: a213d94b6c5bd4eaaf78b8384b96e1d99104874d
+feature: Content Fragments
+role: User
+source-git-commit: 763ef950ffa7642a345977485f56c1187f6ecc0a
 workflow-type: tm+mt
 source-wordcount: '2474'
 ht-degree: 6%
@@ -79,7 +81,7 @@ ht-degree: 6%
 
 >[!NOTE]
 >
->根據基礎模型中的定義，欄位可能需要進行某些類型的 [驗證](/help/assets/content-fragments/content-fragments-models.md#validation)。
+>根據基礎模型中的定義，欄位可能會受限於特定型別 [驗證](/help/assets/content-fragments/content-fragments-models.md#validation).
 
 ### 全熒幕編輯器 {#full-screen-editor}
 
@@ -94,11 +96,11 @@ ht-degree: 6%
 全熒幕文字編輯器提供：
 
 * 存取各種 [動作](#actions)
-* 視格式](#formats)而定[，其他格式選項 （[RTF](#rich-text) 格式）
+* 依據 [格式](#formats)，其他格式選項([RTF文字](#rich-text))
 
 ### 動作 {#actions}
 
-當全屏編輯者（即多行文本）打開時，以下操作也可用（適用於所有 [格式](#formats)）：
+以下動作也可供使用(針對所有 [格式](#formats))全熒幕編輯器（即多行文字）開啟時：
 
 * 選取 [格式](#formats) ([RTF文字](#rich-text)， [純文字，](#plain-text) [Markdown](#markdown))
 
@@ -167,11 +169,11 @@ RTF編輯可讓您設定格式：
 * 影像
 * 區塊引號
 * 清單
-* 重點
-* Code塊
-* 反斜杠轉義
+* 強調
+* 程式碼片段
+* 反斜線逸出
 
-您還可以打開全屏編輯者以進行進一步 [操作](#actions)。
+您也可以開啟全熒幕編輯器以進一步瞭解 [動作](#actions).
 
 >[!CAUTION]
 >
@@ -179,24 +181,24 @@ RTF編輯可讓您設定格式：
 
 ### 片段參考 {#fragment-references}
 
-如果內容片段模型包含片段引用，您的片段作者可能有其他選項：
+如果內容片段模型包含片段參考，您的片段作者可能有其他選項：
 
 * [編輯內容片段](#fragment-references-edit-content-fragment)
 * [新內容片段](#fragment-references-new-content-fragment)
 
-![片段引用](assets/cfm-variations-12.png)
+![片段參考](assets/cfm-variations-12.png)
 
 #### 編輯內容片段 {#fragment-references-edit-content-fragment}
 
-編輯内容片段&#x200B;**」選項**&#x200B;可在新編輯者 標籤中（在同一瀏覽器 標籤内）開啟該片段。
+選項 **編輯內容片段** 在新編輯器標籤中開啟該片段（在相同瀏覽器標籤中）。
 
-再次選取原始標籤 （例如， **Little Pony Inc.）** 會關閉此次要標籤 （在此例中為 **Adam Smith**）。
+再次選取原始索引標籤(例如， **小馬公司**)關閉此次要索引標籤(在此案例中， **Adam Smith**)。
 
-![片段引用](assets/cfm-variations-editreference.png)
+![片段參考](assets/cfm-variations-editreference.png)
 
 #### 新內容片段 {#fragment-references-new-content-fragment}
 
-**新內容片段**&#x200B;選項可讓您建立片段。為此，建立內容片段精靈的變數會在編輯器中開啟。
+選項 **新內容片段** 可讓您建立片段。 為此，建立內容片段精靈的變數會在編輯器中開啟。
 
 **若要建立內容片段：**
 
@@ -273,32 +275,32 @@ RTF編輯可讓您設定格式：
    * 任何要刪除的句子都會以紅色醒目提示，並加上刪除線。
    * 按一下任何醒目提示的句子，以便將其保留在摘要內容中。
    * 按一下任何未醒目提示的句子，以便將其刪除。
-   * 匯總統計信息顯示： **實際** 和 **Target**-
+   * 會顯示摘要統計資料： **實際** 和 **Target**-
    * 您可以 **預覽** 變更。
 
    ![摘要比較](assets/cfm-variations-06.png)
 
-### 批註內容片段 {#annotating-a-content-fragment}
+### 為內容片段加上註釋 {#annotating-a-content-fragment}
 
-要註出片段：
+若要為片段加上註釋：
 
 1. 選取 **主版** 或必要的變數。
 
-1. 打開全屏編輯者。
+1. 開啟全熒幕編輯器。
 
-1. **備註**&#x200B;圖示位於頂部工具列中。如有必要，可以選擇一些文本。
+1. 此 **註解** 圖示在頂端工具列中提供。 您可以視需要選取一些文字。
 
    ![註釋](assets/cfm-variations-07.png)
 
-1. 將開啟一個對話框。 您可以在此處輸入註解。
+1. 對話方塊開啟。 您可以在此處輸入註解。
 
    ![註釋](assets/cfm-variations-07a.png)
 
-1. 在對話框中選擇 **套用** 。
+1. 選取 **套用** 在對話方塊上。
 
    ![註釋](assets/cfm-variations-annotations-apply-icon.png)
 
-   如果註解已套用到所選取文字，則該文字將保持反白顯示狀態。
+   如果註解已套用到選取的文字，則該文字會保持反白狀態。
 
    ![註釋](assets/cfm-variations-07b.png)
 
@@ -362,19 +364,19 @@ RTF編輯可讓您設定格式：
    >* **純文字**：資產從片段中遺失。
    >* **Markdown**：資產不可見，但當您返回時仍會存在 **RTF文字**.
 
-### 將內容片段插入您的片段 {#inserting-content-fragment-into-your-fragment}
+### 將內容片段插入片段 {#inserting-content-fragment-into-your-fragment}
 
-為了簡化創作內容片段的過程，您還可以在片段中添加其他內容片段。
+為了簡化編寫內容片段的流程，您也可以將另一個內容片段新增到片段中。
 
-它們將作為參考添加到片段的當前位置。
+它們會新增為片段中目前位置的參考。
 
 >[!NOTE]
 >
->當您 **的多行文字** 設定了 **允許片段引用**&#x200B;時，此選項可用。
+>當您符合以下條件時，即可使用此選項： **多行文字** 已設定為 **允許片段參考**.
 
 >[!CAUTION]
 >
->這些資產無法在引用頁面上移動或刪除，必須在片段編輯者中完成。
+>無法在引用頁面上移動或刪除這些資產，這必須在片段編輯器中完成。
 >
 >不過，資產的格式（例如大小）必須在以下位置完成： [頁面編輯器](/help/sites-cloud/authoring/fragments/content-fragments.md). 資產在片段編輯器中的呈現方式僅供編寫內容流程之用。
 
@@ -397,14 +399,14 @@ RTF編輯可讓您設定格式：
    >
    >新增對其他片段的參考後，如果您將格式變更為：
    >
-   >* **純文本**：片段中的引用丟失。
-   >* **Markdown**： 保留參考。
+   >* **純文字**：參考會從片段中遺失。
+   >* **Markdown**：參考會保留。
 
 ## 繼承 {#inheritance}
 
-繼承是一種機制，內容可以自動從一個片段推送到另一個片段。 繼承的欄位和變數可能是多網站管理的](/help/assets/content-fragments/content-fragments-msm.md)產物[。
+繼承是可自動將內容從一個片段推送到另一個片段的機制。 繼承的欄位和變數可能是以下專案的產物： [多網站管理](/help/assets/content-fragments/content-fragments-msm.md).
 
-您可以取消 （然後重新啟用） 繼承。 根據內容，這可用於變數，或單個欄位，如果片段是即時副本的一部分。
+您可以取消（然後重新啟用）繼承。 根據內容，這可用於變數，或單個欄位，如果片段是即時副本的一部分。
 
 ![顯示繼承關係的內容片段](/help/assets/content-fragments/assets/cfm-variations-inheritance.png)
 
@@ -414,7 +416,7 @@ RTF編輯可讓您設定格式：
 
   ![取消繼承按鈕](/help/assets/content-fragments/assets/editing-cancel-inheritance.png)
 
-* 重新開啟繼承（如果繼承已被取消）
+* 重新啟用繼承（如果繼承已取消）
 
   ![「重新啟用繼承」按鈕](/help/assets/content-fragments/assets/editing-reenable-inheritance.png)
 
@@ -424,15 +426,15 @@ RTF編輯可讓您設定格式：
   ![Rollout button](/help/assets/content-fragments/assets/editing-rollout.png)
 -->
 
-## 管理變體 {#managing-variations}
+## 管理變數 {#managing-variations}
 
 ### 建立變數 {#creating-a-variation}
 
-變體可讓您獲取 **主** 內容並根據用途（如有必要）對其進行更改。
+變數可讓您取得 **主版** 內容並根據不同目的（如有需要）加以改動。
 
 **若要建立變數：**
 
-1. 打開片段並確保側面板可見。
+1. 開啟片段並確保側面板可見。
 1. 選取 **變數** 從側面板的圖示列開啟。
 1. 選取 **建立變數**.
 1. 對話方塊隨即開啟，您可以在此指定 **標題** 和 **說明** 以取得新的變數。
@@ -491,13 +493,13 @@ RTF編輯可讓您設定格式：
 >
 >同步僅可用於將更改從 *主&#x200B;**版複製**到變化*。
 >
->只會同步變數的目前元素。
+>只同步變數的目前元素。
 >
->同步僅適用於 **多行文本** 數據類型。
+>同步僅適用於 **多行文字** 資料型別。
 >
 >將變 *更從變更傳輸&#x200B;**至Master*** ，不提供選項。
 
-1. 在片段編輯者中開啟您的內容片段。 確保 **主版** 已編輯。
+1. 在片段編輯器中開啟您的內容片段。 確保 **主版** 已編輯。
 
 1. 選取特定變數，然後從下列任一專案選取適當的同步化動作：
 
@@ -517,4 +519,4 @@ RTF編輯可讓您設定格式：
 
    ![與主版同步](assets/cfm-variations-11c.png)
 
-1. 選擇 **同步**，變數將更新並顯示。
+1. 選取 **同步**，則會更新並顯示變數。

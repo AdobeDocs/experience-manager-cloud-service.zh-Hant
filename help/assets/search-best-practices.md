@@ -3,7 +3,9 @@ title: 搜尋最佳實務 [!DNL Adobe Experience Manager] as a [!DNL Cloud Servi
 description: 搜尋、尋找及擷取應用程式中資產的中繼資料的最佳做法。
 contentOwner: KK
 exl-id: 446692de-5cea-4dbd-a98e-ec5177c7017e
-source-git-commit: 6397a300de13c5e4f6ee5828de1ba76a1677c227
+feature: Best Practices
+role: User
+source-git-commit: 257930bc2633a0d31ad3bd28305b8159597befa5
 workflow-type: tm+mt
 source-wordcount: '2527'
 ht-degree: 2%
@@ -357,7 +359,7 @@ The newly added assets are not indexed.
             <li> 上次發佈者
             <li> 核准 
             <li> 結帳
-            <li> 到期
+            <li> 到期日
             <li> Dynamic Media
             </ul>
         </td>

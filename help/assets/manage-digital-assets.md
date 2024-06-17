@@ -3,10 +3,10 @@ title: 管理數位資產
 description: 瞭解各種資產管理和編輯方法
 contentOwner: AG
 mini-toc-levels: 3
-feature: Asset Management,Publishing,Collaboration,Asset Processing
-role: User,Architect,Admin
+feature: Asset Management, Publishing,Collaboration, Asset Processing
+role: User, Architect, Admin
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
 workflow-type: tm+mt
 source-wordcount: '4277'
 ht-degree: 10%
@@ -399,7 +399,7 @@ The editing tools in the [!DNL Experience Manager Assets] interface let you perf
 >To edit a TXT file, set **Day CQ Link Externalizer** from Configuration Manager.
 -->
 
-## 時間軸 {#timeline}
+## 時間表 {#timeline}
 
 時間軸可讓您檢視所選專案的各種事件，例如資產的使用中工作流程、註解/註解、活動記錄及版本。
 

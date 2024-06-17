@@ -2,12 +2,12 @@
 title: 安裝 [!DNL Workfront for Experience Manager enhanced connector]
 description: 安裝 [!DNL Workfront for Experience Manager enhanced connector]
 role: Admin
-feature: Integrations
+feature: Workfront Integrations and Apps
 exl-id: 2907a3b2-e28c-4194-afa8-47eadec6e39a
-source-git-commit: 393ec79e820632e879a377e697ecd09f4571c0b7
+source-git-commit: 257930bc2633a0d31ad3bd28305b8159597befa5
 workflow-type: tm+mt
-source-wordcount: '854'
-ht-degree: 2%
+source-wordcount: '765'
+ht-degree: 1%
 
 ---
 
@@ -16,35 +16,35 @@ ht-degree: 2%
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
 | AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/assets/integrations/workfront-connector-install.html) |
-| AEM as a Cloud Service  | 本文 |
+| AEM as a Cloud Service  | 本文章 |
 
-在中擁有管理員存取許可權的使用者 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 安裝增強型聯結器。 安裝之前，請先檢閱平台支援及其他 [聯結器的先決條件](https://one.workfront.com/s/csh?context=2467&amp;pubname=the-new-workfront-experience).
+在中具有管理員存取許可權的使用者 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 安裝增強型聯結器。 安裝之前，請先檢閱平台支援及其他 [聯結器的先決條件](https://one.workfront.com/s/csh?context=2467&amp;pubname=the-new-workfront-experience).
 
 >[!IMPORTANT]
 >
->自2022年6月起，Adobe已發行新的原生整合，用於將Workfront與Adobe Experience Manager Assetsas a Cloud Service連線。 此整合已成為連線這兩個解決方案的必要方法。 日後任何新實施的增強型聯結器（1.9.8及更新版本）都會遭到封鎖，而無法連線Workfront與AEM Assetsas a Cloud Service。 如需如何設定此整合的詳細資訊，請參閱 [設定Experience Manager Assetsas a Cloud Service整合](workfront-connector-configure.md).
+>自2022年6月起，Adobe已發行新的原生整合，用於將Workfront與Adobe Experience Manager Assetsas a Cloud Service連線。 此整合已成為連線這兩個解決方案的必要方法。 日後任何新實施的增強型聯結器（1.9.8及更新版本）都會遭到封鎖，以便將Workfront與AEM Assetsas a Cloud Service連線。 如需如何設定此整合的詳細資訊，請參閱 [設定Experience Manager Assetsas a Cloud Service整合](workfront-connector-configure.md).
 
 >[!IMPORTANT]
 >
 >* Adobe需要部署和設定 [!DNL Adobe Workfront for Experience Manager enhanced connector] 僅透過認證合作夥伴或 [!DNL Adobe Professional Services]. 如果部署與設定沒有認證合作夥伴或 [!DNL Adobe Professional Services]，Adobe不支援。
 >
->* Adobe可能會將更新發行至 [!DNL Adobe Workfront] 和 [!DNL Adobe Experience Manager] 讓此聯結器成為備援；如果發生這種情況，客戶可能需要從使用此聯結器進行轉換。
+>* Adobe可能會將更新發行至 [!DNL Adobe Workfront] 和 [!DNL Adobe Experience Manager] 讓此聯結器成為多餘的；如果發生這種情況，客戶可能需要從使用此聯結器進行轉換。
 >
 >* Adobe支援增強型聯結器1.7.4版及更新版本。 不支援舊版發行前版本和自訂版本。 若要檢查增強型聯結器版本，請參閱的步驟5(a) [增強型聯結器安裝指示](workfront-connector-install.md).
 >
->* 另請參閱 [適用於Experience Manager Assets增強型聯結器的Workfront合作夥伴認證考試](https://solutionpartners.adobe.com/solution-partners/home/applications/experience_cloud/workfront/journey/dev_core.html). 如需有關考試的資訊，請參閱 [考試指南](https://express.adobe.com/page/Tc7Mq6zLbPFy8/).
+>* 另請參閱 [適用於Experience Manager Assets增強型聯結器的Workfront合作夥伴認證考試](https://solutionpartners.adobe.com/solution-partners/home/applications/experience_cloud/workfront/journey/dev_core.html). 有關考試的資訊，請參閱 [考試指南](https://express.adobe.com/page/Tc7Mq6zLbPFy8/).
 
 在安裝聯結器之前，請遵循下列預先安裝步驟：
 
 1. 如果您的AEMas a Cloud Service程式已設定進階網路並啟用IP允許清單，則您需要將Workfront IP新增至此允許清單，以允許事件訂閱和各種API呼叫傳遞到AEM。
 
-   * [Workfront叢集IP](https://experienceleague.adobe.com/docs/workfront/using/administration-and-setup/get-started-administration/configure-your-firewall.html?lang=en#ip-addresses-to-allow-for-clusters-1-2-3-5-7-8-and-9). 若要瞭解中的IP叢集 [!DNL Workfront]，導覽至 **[!UICONTROL 設定]** > **[!UICONTROL 系統]** > **[!UICONTROL 客戶資訊]**.
+   * [Workfront叢集IP](https://experienceleague.adobe.com/docs/workfront/using/administration-and-setup/get-started-administration/configure-your-firewall.html?lang=en#ip-addresses-to-allow-for-clusters-1-2-3-5-7-8-and-9). 瞭解中的IP叢集 [!DNL Workfront]，導覽至 **[!UICONTROL 設定]** > **[!UICONTROL 系統]** > **[!UICONTROL 客戶資訊]**.
 
    * [Workfront事件訂閱API IP](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-api.html)
 
    >[!IMPORTANT]
    >
-   >* 如果您已為方案設定進階網路，且正在使用IP允許清單，則由於增強Workfront聯結器架構的限制，您還需要將方案輸出IP新增到Cloud Manager中的允許清單。
+   >* 如果您已為方案設定進階網路，並且正在使用IP允許清單，則由於增強型Workfront聯結器架構的限制，您還需要將方案輸出IP新增到Cloud Manager中的允許清單。
    >
    >* p{PROGRAM_ID}.external.adobeaemcloud.com
    >
@@ -55,7 +55,7 @@ ht-degree: 2%
    >
    >    ```
 
-1. 確定下列覆蓋圖不存在於 [!DNL Experience Manager] 存放庫。 如果您在這些路徑上預先存在覆蓋圖，則需要移除覆蓋圖，或合併兩者之間的變更差異：
+1. 請確認下列覆蓋圖不存在於 [!DNL Experience Manager] 存放庫。 如果您在這些路徑上預先存在覆蓋圖，則需要移除覆蓋圖，或合併兩者之間的變更差異：
 
    * `/apps/dam/gui/coral/components/admin/schemaforms/formbuilder`
    * `/apps/dam/gui/coral/components/admin/folderschemaforms/formbuilder`
@@ -71,13 +71,13 @@ ht-degree: 2%
 
 若要在中安裝附加元件 [!DNL Experience Manager] as a [!DNL Cloud Service]，請遵循下列步驟：
 
-1. 從下載增強型聯結器 [Adobe軟體發佈](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/product/assets/workfront-tools.ui.apps.zip).
+1. 從下載增強型聯結器 [AdobeSoftware Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/product/assets/workfront-tools.ui.apps.zip).
 
 1. [存取](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/accessing-repos.html?lang=en) 並從Cloud Manager複製您的AEMas a Cloud Service存放庫。
 
 1. 使用您選擇的IDE開啟複製的AEMas a Cloud Service存放庫。
 
-1. 將步驟1中下載的增強型聯結器zip檔案放在下列路徑中：
+1. 將步驟1中所下載的增強型聯結器zip檔案放在下列路徑中：
 
    ```TXT
       /ui.apps/src/main/resources/<zip file>
@@ -85,7 +85,7 @@ ht-degree: 2%
 
    >[!NOTE]
    >
-   >如果 `resources` 資料夾不存在，請建立資料夾。
+   >如果 `resources` 資料夾不存在，請建立該資料夾。
 
 
 1. 新增 `pom.xml` 相依性：
@@ -105,7 +105,7 @@ ht-degree: 2%
 
       >[!NOTE]
       >
-      >在將相依性複製到父項之前，請務必更新增強型聯結器版本號碼 `pom.xml`.
+      >在將相依性複製到父項之前，請務必更新增強型聯結器的版本號碼 `pom.xml`.
 
    1. 在中新增相依性 `all module pom.xml`.
 
@@ -120,7 +120,7 @@ ht-degree: 2%
       ```
 
 
-1. 新增 `pom.xml` 內嵌。 新增 [!DNL Workfront for Experience Manager enhanced connector] 封裝到 `embeddeds` 部分 `pom.xml` 您的所有子專案的。 需要將其內嵌於所有模組中 `pom.xml`.
+1. 新增 `pom.xml` 內嵌。 新增 [!DNL Workfront for Experience Manager enhanced connector] 封裝到 `embeddeds` 的區段 `pom.xml` 您的所有子專案的。 需要將其內嵌於所有模組中 `pom.xml`.
 
    ```XML
    <!-- Workfront Tools -->
@@ -132,7 +132,7 @@ ht-degree: 2%
    </embedded>
    ```
 
-   內嵌區段的目標設定為 `/apps/<path-to-project-install-folder>/install`. 此JCR路徑 `/apps/<path-to-project-install-folder>` 必須包含在的篩選規則中 `all/src/main/content/META-INF/vault/filter.xml` 檔案。 存放庫的篩選規則通常衍生自方案名稱。 使用資料夾名稱作為現有規則中的目標。
+   內嵌區段的目標設為 `/apps/<path-to-project-install-folder>/install`. 此JCR路徑 `/apps/<path-to-project-install-folder>` 必須包含在中的篩選規則 `all/src/main/content/META-INF/vault/filter.xml` 檔案。 存放庫的篩選規則通常衍生自方案名稱。 使用資料夾名稱作為現有規則中的目標。
 
 1. 將變更推送至存放庫。
 
@@ -144,14 +144,14 @@ ht-degree: 2%
 
 ## 設定之間的連線 [!DNL Experience Manager] as a [!DNL Cloud Service] 和 [!DNL Workfront] {#configure-connection}
 
-若要建立連線，使用 [!DNL Workfront]，請遵循下列步驟：
+建立連線： [!DNL Workfront]，請遵循下列步驟：
 
-1. 在 [!DNL Experience Manager]，選取 **[!UICONTROL 工具]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Workfront工具設定]**.
+1. 在 [!DNL Experience Manager]，選取 **[!UICONTROL 工具]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Workfront工具設定]**.
 
-1. 選取 `workfront-tools` 在左側面板中並選取 **[!UICONTROL 建立]** 選項。
+1. 選取 `workfront-tools` 在左側面板中並選取「 」 **[!UICONTROL 建立]** 選項。
 
-1. 在 **[!UICONTROL Workfront連線]** 對話方塊，提供您所需的詳細資料 [!DNL Workfront] 部署，並選取 **[!UICONTROL 連線至Workfront]** 選項。 成功連線後， [!DNL Workfront] 檔案自訂整合會自動建立於 [!DNL Workfront] 環境。
+1. 在 **[!UICONTROL Workfront連線]** 對話方塊，提供您所需的詳細資料 [!DNL Workfront] 部署，然後選取 **[!UICONTROL 連線至Workfront]** 選項。 成功連線後， [!DNL Workfront] 檔案自訂整合會在 [!DNL Workfront] 環境。
 
-   ![Connect [!DNL Experience Manager] 和 [!DNL Workfront]](/help/assets/assets/wf-connection-config.png)
+   ![連線 [!DNL Experience Manager] 和 [!DNL Workfront]](/help/assets/assets/wf-connection-config.png)
 
-1. 導覽至 **[!UICONTROL 進階]** 標籤並選取選項 **[!UICONTROL 伺服器AEM是as a Cloud Service的]**.
+1. 導覽至 **[!UICONTROL 進階]** 標籤並選取選項 **[!UICONTROL 伺服器AEM是as a Cloud Service]**.

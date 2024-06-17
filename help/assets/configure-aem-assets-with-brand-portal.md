@@ -2,10 +2,10 @@
 title: 設定AEM Assets as a [!DNL Cloud Service] 使用Brand Portal
 description: 瞭解如何使用Brand Portal設定AEM Assets。 此設定可讓您從AEM例項將核准的品牌資產發佈到Brand Portal，並將它們發佈給Brand Portal使用者。
 contentOwner: AK
-feature: Brand Portal,Asset Distribution,Configuration
+feature: Brand Portal, Asset Distribution, Configuration
 role: Admin
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: 5fd488a6d5272ac71208e5645facc04b3d9ac51a
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
 workflow-type: tm+mt
 source-wordcount: '1766'
 ht-degree: 7%

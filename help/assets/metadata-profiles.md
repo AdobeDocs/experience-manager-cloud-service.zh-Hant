@@ -3,9 +3,9 @@ title: 中繼資料設定檔
 description: 瞭解資產的中繼資料設定檔。 瞭解如何建立中繼資料設定檔，並將其套用至資料夾資產。
 contentOwner: AG
 feature: Metadata
-role: User,Admin
+role: User, Admin
 exl-id: eef90c6a-b354-4342-8b97-21d067ae2979
-source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
 workflow-type: tm+mt
 source-wordcount: '1403'
 ht-degree: 21%

@@ -3,10 +3,11 @@ title: 編輯影像
 description: 使用  [!DNL Adobe Express]  支援的選項編輯影像，並將更新的影像另存新版。
 role: User
 exl-id: cfc4c7b7-da8c-4902-9935-0e3d4388b975
-source-git-commit: 42d3751a4a29149f3b31dbc28555b81aa7ed43cc
+feature: Best Practices, Interactive Images, Smart Crop, Smart Imaging
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
 workflow-type: tm+mt
 source-wordcount: '900'
-ht-degree: 70%
+ht-degree: 72%
 
 ---
 
@@ -84,9 +85,9 @@ ht-degree: 70%
 
 ### 限制 {#limitations-adobe-express}
 
-* 支援的影像解析度：最小 — 50畫素，最大 — 6000畫素/維度。
+* 支援的影像解析度：最小 - 每維度 50 像素，最大 - 每維度 6000 像素。
 
-* 支援的檔案大小上限： 17 MB。
+* 支援的檔案大小上限：17 MB。
 
 ## 使用 Adobe Express 嵌入式編輯器編輯影像 {#edit-using-embedded-editor}
 

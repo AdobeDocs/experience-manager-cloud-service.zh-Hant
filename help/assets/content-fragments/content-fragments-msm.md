@@ -1,7 +1,10 @@
 ---
 title: 使用MSM和即時副本重複使用內容片段
 description: 瞭解如何使用MSM的即時副本功能，以便在多個位置使用相同或類似的內容片段內容，同時與來源內容同步。
-source-git-commit: 3ce1a982055c2f9c900edbd88e079deb6d3a036a
+exl-id: f050b2d1-856c-4cdb-ac74-bc78016f144a
+feature: Content Fragments
+role: User
+source-git-commit: 257930bc2633a0d31ad3bd28305b8159597befa5
 workflow-type: tm+mt
 source-wordcount: '432'
 ht-degree: 10%

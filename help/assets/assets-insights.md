@@ -2,10 +2,10 @@
 title: 資產分析
 description: 追蹤用於協力廠商網站、行銷活動和Adobe創意解決方案之影像的使用者評級和使用情況統計資料。
 contentOwner: AG
-feature: Asset Insights,Asset Reports
-role: User,Leader
+feature: Asset Insights, Asset Reports
+role: User, Leader
 exl-id: e268453b-e7c0-4aa4-bd29-2686edb5f99a
-source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
 workflow-type: tm+mt
 source-wordcount: '901'
 ht-degree: 13%

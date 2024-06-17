@@ -1,13 +1,13 @@
 ---
 title: 『[!DNL Experience Manager Assets] 與整合 [!DNL Adobe Workfront]『
 description: 以下專案之間的整合簡介： [!DNL Assets] 和 [!DNL Workfront]
-role: Admin,Leader,Architect
-feature: Integrations
+role: Admin, Leader, Architect
+feature: Workfront Integrations and Apps
 exl-id: 365de3dc-51db-4dcf-94e2-104b5a5d33a8
-source-git-commit: f295eead13bcdeed910ae6b8c82373e2b70f1224
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
 workflow-type: tm+mt
-source-wordcount: '411'
-ht-degree: 7%
+source-wordcount: '390'
+ht-degree: 3%
 
 ---
 
@@ -18,9 +18,9 @@ ht-degree: 7%
 | AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/assets/integrations/workfront-integrations.html) |
 | AEM as a Cloud Service  | 本文章 |
 
-[!DNL Adobe Workfront] 是工作管理應用程式，協助您在一個地方管理整個工作生命週期。以下兩者的整合： [!DNL Workfront] 和 [!DNL Adobe Experience Manager Assets] 可讓組織在本質上連線工作和數位資產管理，藉以改善內容速度和上市時間。 在Workfront中管理其工作的情況下，使用者可以存取所需的檔案和影像。
+[!DNL Adobe Workfront] 是工作管理應用程式，協助您在一個地方管理整個工作生命週期。 以下兩者的整合： [!DNL Workfront] 和 [!DNL Adobe Experience Manager Assets] 可讓組織在本質上連線工作和數位資產管理，藉以改善內容速度和上市時間。 在Workfront中管理其工作的情況下，使用者可以存取所需的檔案和影像。
 
-Adobe優惠至 [整合 [!DNL Workfront] 和 [!DNL Adobe Experience Manager Assets] 原生(as a Cloud Service支援Assets Essentials和Assets)](https://experienceleague.adobe.com/docs/workfront/using/documents/wf-aem-integrations/wf-aem-essentials/aem-asset-integrations.html).
+Adobe優惠至 [整合 [!DNL Workfront] 和 [!DNL Adobe Experience Manager Assets] 原生(as a Cloud Service支援Assets Essentials和資產)](https://experienceleague.adobe.com/docs/workfront/using/documents/wf-aem-integrations/wf-aem-essentials/aem-asset-integrations.html).
 
 透過原生Experience Manager整合，您可以：
 
@@ -32,13 +32,13 @@ Adobe優惠至 [整合 [!DNL Workfront] 和 [!DNL Adobe Experience Manager Asset
 
 * 在Workfront中變更專案中繼資料時自動更新。
 
-* 將多個Experience Manager Assets存放庫順利連線到一個Workfront環境，或將多個Workfront環境連線到跨組織ID的一個Experience Manager Assets存放庫。
+* 將多個Experience Manager Assets存放庫順利連線到一個Workfront環境，或多個Workfront環境連線到跨組織ID的一個Experience Manager Assets存放庫。
 
 
 ## Experience Manager增強型聯結器的Adobe Workfront {#enhanced-connector-information}
 
 
-自2022年6月起，Adobe已發行新的原生整合，用於將Workfront與Adobe Experience Manager資產as a Cloud Service連線。 此整合已成為連線這兩個解決方案的必要方法。 日後任何新實施的增強型聯結器（1.9.8及更新版本）都會遭到封鎖，以便將Workfront與AEM Assetsas a Cloud Service連線。 如需如何設定此整合的詳細資訊，請參閱 [設定Experience Manager Assetsas a Cloud Service整合](workfront-connector-configure.md).
+自2022年6月起，Adobe已發行新的原生整合，用於將Workfront與Adobe Experience Manager Assetsas a Cloud Service連線。 此整合已成為連線這兩個解決方案的必要方法。 日後任何新實施的增強型聯結器（1.9.8及更新版本）都會遭到封鎖，以便將Workfront與AEM Assetsas a Cloud Service連線。 如需如何設定此整合的詳細資訊，請參閱 [設定Experience Manager Assetsas a Cloud Service整合](workfront-connector-configure.md).
 
 >[!NOTE]
 >

@@ -1,7 +1,10 @@
 ---
 title: 我的資產工作區檢視
 description: 「我的工作區」是一個頁面，提供可自訂的視覺化模組，以方便存取資產使用者介面的關鍵區域以及與使用者最相關的資訊。
-source-git-commit: c3076ce35128c147ce2056d11d9305d9a9456636
+exl-id: 4ffba974-6e8e-48e2-aa57-7d4041032226
+feature: Asset Management, Publishing, Collaboration, Asset Processing
+role: User
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
 workflow-type: tm+mt
 source-wordcount: '745'
 ht-degree: 84%

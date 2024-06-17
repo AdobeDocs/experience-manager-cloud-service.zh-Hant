@@ -2,9 +2,10 @@
 title: 適用於  [!DNL Adobe Experience Manager]  as a  [!DNL Cloud Service] 的資產選擇器
 description: 在應用程式內使用資產選擇器搜尋、查找和檢索資產的中繼資料和轉譯。
 contentOwner: KK
-role: Admin,User
+role: Admin, User
 exl-id: 5f962162-ad6f-4888-8b39-bf5632f4f298
-source-git-commit: 2ce64892cd5bf414d328a9112c47092b762d3668
+feature: Collaboration
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
 workflow-type: tm+mt
 source-wordcount: '3908'
 ht-degree: 45%

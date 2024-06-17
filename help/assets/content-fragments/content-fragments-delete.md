@@ -2,10 +2,12 @@
 title: 內容片段 — 刪除考量事項（資產 — 內容片段）
 description: 在AEM中定義內容片段刪除原則之前，請檢閱這些重要考量。 內容片段是傳送Headless內容的強大工具，必須仔細考慮刪除這些片段的影響。
 exl-id: 69c08f2f-4d51-4aea-957e-ee81c4604377
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+feature: Content Fragments
+role: User
+source-git-commit: 763ef950ffa7642a345977485f56c1187f6ecc0a
 workflow-type: tm+mt
 source-wordcount: '470'
-ht-degree: 9%
+ht-degree: 8%
 
 ---
 
@@ -73,7 +75,7 @@ ht-degree: 9%
 
 * 對於 `jcr:content`所有內容片段的節點：
 
-   * `jcr:addChildNodes`, `jcr:modifyProperties` 和 `jcr:removeChildNodes`
+   * `jcr:addChildNodes`， `jcr:modifyProperties` 和 `jcr:removeChildNodes`
 
 * 適用於以下所有節點 `jcr:content` 所有內容片段的：
 

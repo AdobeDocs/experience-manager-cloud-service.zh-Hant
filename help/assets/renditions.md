@@ -2,7 +2,9 @@
 title: 在Experience Manager Assets中檢視及管理轉譯
 description: 瞭解AEM Assets和Dynamic Media如何運用靜態和動態影像轉譯，簡化有效的影像管理。
 exl-id: 006dc493-c400-4d0f-b314-c1978582b7fb
-source-git-commit: 4627eb00ba910d1ad2920db15a87761bd7e4a0c0
+feature: Renditions
+role: User
+source-git-commit: 257930bc2633a0d31ad3bd28305b8159597befa5
 workflow-type: tm+mt
 source-wordcount: '435'
 ht-degree: 0%

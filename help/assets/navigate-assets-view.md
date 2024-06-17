@@ -1,11 +1,13 @@
 ---
-title: 「[!DNL Assets view]使用者介面」
+title: 『[!DNL Assets view] 使用者介面'
 description: 了解  [!DNL Assets view] 中的使用者介面和導覽
 role: User
-source-git-commit: c3076ce35128c147ce2056d11d9305d9a9456636
+exl-id: 1e71ea7d-fee7-4ed0-bb80-d537b57fc823
+feature: Asset Management, Publishing, Collaboration, Asset Processing
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
 workflow-type: tm+mt
 source-wordcount: '912'
-ht-degree: 89%
+ht-degree: 88%
 
 ---
 
@@ -35,7 +37,7 @@ ht-degree: 89%
 * [任務](/help/assets/my-workspace-assets-view.md)：您可以在&#x200B;**我的任務**&#x200B;標籤下檢視指派給您的任務。而您建立的任務則顯示在&#x200B;**指派的任務**&#x200B;標籤下。 此外，您完成的工作位於 **已完成的任務** 標籤。
 * [資產](/help/assets/manage-organize-assets-view.md)：在樹狀目錄檢視中您可以存取的所有資料夾清單。
 * **最近檢視的項目**：您最近預覽的資產清單。[!DNL Assets view] 只會顯示您預覽的資產。在瀏覽存放庫檔案或資料夾時，不會顯示捲動過去的資產。
-* [集合](/help/assets/manage-collections-assets-view.md)：收藏集是Adobe Experience Manager Assets檢視中的一組資產、資料夾或其他收藏集。 使用收藏集在使用者之間共用資產。和檔案夾不同，收藏集可包含來自不同位置的資產。您可以和使用者共用多個收藏集。每個收藏集都包含資產的參考資料。資產的參考完整性會跨越收藏集來維護。
+* [集合](/help/assets/manage-collections-assets-view.md)：收藏集是Adobe Experience Manager Assets檢視中的一組資產、資料夾或其他收藏集。 使用集合在使用者之間共用資產。和檔案夾不同，集合可包含來自不同位置的資產。您可以和使用者共用多個集合。每個集合都包含資產的參考資料。資產的參考完整性會跨越集合來維護。
 
 * [Insights](/help/assets/manage-reports-assets-view.md#view-live-statistics)：在[!DNL Assets view]，您可以在儀表板上檢視即時深入分析。資產檢視使您能夠使用 Insights 儀表板查看資產檢視環境的即時資料。您可以查看過去 30 天或過去 12 個月的即時事件度量。
 * **垃圾桶**：列出從 **[!UICONTROL Assets]** 根資料夾刪除的資產。 您可以在「垃圾桶」資料夾中選取資產，將其還原到原來的位置或永久刪除。您可以指定關鍵字或套用篩選條件，例如資產狀態、檔案類型、MIME 類型、影像大小、資產建立、修改和到期日期，以及按目前使用者捨棄的資產進行篩選。您也可以套用自訂篩選條件，以搜尋「垃圾桶」資料夾中的適當資產。如需使用標準和自訂篩選器的詳細資訊，請參閱如何 [在「資產」檢視中搜尋資產](/help/assets/search-assets-view.md).

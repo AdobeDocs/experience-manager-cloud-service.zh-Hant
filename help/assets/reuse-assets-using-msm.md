@@ -4,9 +4,9 @@ description: 跨衍生自父資產並連結至該資產的多個頁面/資料夾
 contentOwner: AG
 mini-toc-levels: 1
 role: User, Admin, Architect
-feature: Asset Management,Multi Site Manager
+feature: Asset Management
 exl-id: a71aebdf-8e46-4c2d-8960-d188b14aaae9
-source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
+source-git-commit: 257930bc2633a0d31ad3bd28305b8159597befa5
 workflow-type: tm+mt
 source-wordcount: '3407'
 ht-degree: 10%

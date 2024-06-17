@@ -3,10 +3,10 @@ title: 如何在AEM中搜尋資產？
 description: 瞭解如何使用篩選器面板在AEM中搜尋資產，以及如何使用資產搜尋中顯示的結果。
 contentOwner: AG
 mini-toc-levels: 1
-feature: Search,Metadata,Asset Distribution
-role: User,Admin
+feature: Selectors, Adobe Stock, Asset Distribution, Asset Management, Asset Processing
+role: User, Admin
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
 workflow-type: tm+mt
 source-wordcount: '5503'
 ht-degree: 6%

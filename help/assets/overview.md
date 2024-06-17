@@ -3,9 +3,9 @@ title: 使用 AEM 進行 Adobe 數位資產管理 (DAM)
 description: 了解如何使用 Experience Manager Assets as a Cloud Service 來使用和管理 Adobe 數位資產管理 (DAM)。
 contentOwner: AK
 feature: Asset Management
-role: User,Leader,Architect
+role: User, Leader, Architect
 exl-id: 4437f214-d058-4975-8b8f-869a12c8103b
-source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
 workflow-type: tm+mt
 source-wordcount: '927'
 ht-degree: 100%
@@ -42,7 +42,7 @@ Adobe Experience Manager Assets as a [!DNL Cloud Service] 為企業提供一種�
 
 Adobe 為您提供健全的數位資產管理 (DAM) 解決方案，可供您善加利用您的數位資產。Adobe Experience Manager Assets 具有兩種使用同一雲端服務存放庫的獨立體驗：
 
-* **管理員檢視**：現有的 Assets as a Cloud Service 使用者介面。Use the Admin View for all advanced Digital Asset Management capabilities including integrations, workflows, content automation, publishing and more.
+* **管理員檢視**：現有的 Assets as a Cloud Service 使用者介面。使用管理視圖來實現所有高階數位資產管理功能，包括整合、工作流程、內容自動化、發布等。
 
 * **資產檢視**：Adobe 的輕量型資產管理體驗，可儲存、管理、探索和使用數位資產。簡化的使用者介面包含基本的數位資產管理功能。專為輕量型 DAM 使用者設計，重點在上傳、中繼資料管理、搜尋、下載和共享。
 
