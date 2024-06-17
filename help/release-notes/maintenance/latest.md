@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的目前維�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: c969b78f5e93e15d1f8f57dd409e58a6275069ce
+source-git-commit: 339dd64c602b2eed163f36f70089a50dd0d4a11c
 workflow-type: tm+mt
-source-wordcount: '422'
-ht-degree: 94%
+source-wordcount: '521'
+ht-degree: 76%
 
 ---
 
@@ -49,6 +49,11 @@ ht-degree: 94%
 ### 已知問題 {#known-issues-16544}
 
 * GRANITE-52573：包含雙斜線的請求 `//` 已拒絕，狀態碼為400。 此行為將在後續維護版本中恢復。
+
+>[!NOTE]
+> AEM工程部門已針對Launches功能找出回歸，而這會影響目前從16461開始的AEM版本。 由於此回歸，包含非深層頁面的新啟動（在套用新版本後建立）由於遺失設定，將無法正常提升。
+> 如果您的環境受到影響，可透過客戶支援使用殼層指令碼來識別和更新缺少的設定(內部參考SITES-22457)。
+> 我們將提供更長期的修正，以確保使用所有正確的設定來建立新的啟動。 在此之前，您也可依需求使用內部修補程式版本。
 
 ### 變更通知 {#change-notice-16544}
 
