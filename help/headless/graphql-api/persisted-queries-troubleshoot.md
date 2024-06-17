@@ -3,7 +3,7 @@ title: 疑難排解持續的GraphQL查詢
 description: 瞭解如何疑難排解Adobe Experience Manager as a Cloud Service中的持續性GraphQL查詢問題。
 feature: Content Fragments,GraphQL API
 exl-id: 71bd1f68-ca96-4c78-a936-abed250ecec1
-source-git-commit: 09ef5fb49ba638f888c9c101760ffa3c7d258fda
+source-git-commit: 736fbc28c800c1c181721df7e0d7feed143642d9
 workflow-type: tm+mt
 source-wordcount: '363'
 ht-degree: 0%
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 GraphQL持續查詢如果以過時的GraphQL型別為基礎，則可能會失敗，通常是因為基礎內容片段模式發生變更。
 
-發生這類錯誤的原因有很多。 例如，當內容片段模型的作者（清單並非詳盡無遺）時：
+發生這類錯誤的原因有很多。 範例包括（此清單並非詳盡無遺），當內容片段模型的作者時：
 
 * 移除或重新命名欄位
 * 更新 **模型型別** 會定義片段參考所允許的模型
