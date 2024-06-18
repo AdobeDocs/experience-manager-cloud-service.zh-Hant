@@ -4,10 +4,10 @@ description: 了解如何為 AEM as a Cloud Service 設定進階網路功能，�
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
 feature: Security
 role: Admin
-source-git-commit: 6ae2738bcde05ef546c98cddd23d11f033b2a170
+source-git-commit: a21a0cda116077a3752f33aaff6dc6c180b855aa
 workflow-type: tm+mt
-source-wordcount: '5729'
-ht-degree: 93%
+source-wordcount: '5744'
+ht-degree: 92%
 
 ---
 
@@ -238,7 +238,7 @@ ProxyPassReverse "/somepath" "https://example.com:8443"
 
 >[!INFO]
 >
->專用輸出 IP 位址無法提供 Splunk 轉送功能。
+>如果已設定專用輸出IP，Splunk轉送將繼續使用動態輸出範圍。 無法將Splunk轉送設定為使用專用輸出IP。
 
 ### UI 設定 {#configuring-dedicated-egress-provision-ui}
 
