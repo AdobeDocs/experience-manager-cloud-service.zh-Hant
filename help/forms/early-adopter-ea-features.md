@@ -2,11 +2,12 @@
 title: 目前的早期採用者功能 [!DNL Adobe Experience Manager Forms] as a Cloud Service。
 description: 目前的早期採用者功能 [!DNL Adobe Experience Manager Forms] as a Cloud Service。
 Feature: Introduction
-Role: developer, user
-source-git-commit: e6ceb53ee821a1fde5e79c687a4445d6c18faf54
+Role: developer, user, author
+exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
+source-git-commit: f1ab365377af7a327dddcb9228b1a2f8610d49de
 workflow-type: tm+mt
-source-wordcount: '1731'
-ht-degree: 5%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -121,17 +122,17 @@ Adaptive Forms中支援的由右至左(RTL)語言可協助您：
 
 準備好開始了嗎？ [最適化Forms RTL檔案](/help/forms/supporting-new-language-localization-core-components.md) 提供使用RTL創新的逐步指南。
 
-### 增強的機器人保護方法
+### 強化機器人保護方法
 
-AEM Forms已新增兩個熱門驗證碼解決方案的支援，以加強其安全性功能：Cloudflare Turnstile和hCaptcha。 這為現有的Google reCAPTCHA增添了功能，讓使用者在保護表單免受機器人和垃圾郵件提交影響時，擁有更多選擇和靈活性。
+AEM Forms 新增對於 Cloudflare Turnstile 和 hCaptcha 兩種熱門驗證碼解決方案的支援，藉此強化其安全性功能。這是在既有的 Google reCAPTCHA 以外新增的解決方案，讓使用者擁有更多保護表單的選擇和彈性，避免發生機器人和垃圾郵件提交資料的情況。
 
-* **Cloudflare Turnstile**：此順暢的驗證碼可透過不需要明確互動的簡單挑戰來驗證使用者。 它可順暢地整合至您的表單中，進而改善使用者體驗。
-* **驗證碼**：此針對隱私權的驗證碼提供使用者易用的替代方案，著重於資料隱私權。 其目標是在安全性與使用者體驗之間取得平衡。
-* **Google reCAPTCHA**： AEM Forms持續支援reCAPTCHA v2和reCAPTCHA Enterprise，提供穩定可靠的成熟解決方案。
+* **Cloudflare Turnstile**：這種無摩擦的驗證碼利用不需要明確互動的簡易挑戰來驗證使用者。它與您的表單無縫整合，可提升使用者體驗。
+* **hCaptcha**：這種重視隱私的驗證碼提供簡單易用且著重資料隱私權的替代方案。其目的是在安全性和使用者體驗之間取得平衡。
+* **Google reCAPTCHA**：AEM Forms 繼續支援 reCAPTCHA v2 和 reCAPTCHA Enterprise，提供可靠且完善的解決方案。
 
-透過提供多個驗證碼選項，AEM Forms可讓您選擇最符合您特定需求的解決方案。
+透過提供多個驗證碼選項，AEM Forms 讓您根據自己的具體需求選擇最合適的解決方案。
 
-準備好將任何這些驗證碼解決方案與您的Adaptive Forms整合了嗎？ 本檔案提供各項的詳細指示： [Cloudflare Turnstile](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-turnstile-core-components)， [驗證碼](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-hcaptcha-core-components)、和 [Google reCAPTCHA](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/captcha-adaptive-forms-core-components).
+是否準備好將上述任一驗證碼解決方案與您的最適化表單整合？我們的文件提供各個解決方案的詳細操作指示，包括 [Cloudflare Turnstile](https://experienceleague.adobe.com/tw/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-turnstile-core-components)、[hCaptcha](https://experienceleague.adobe.com/tw/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-hcaptcha-core-components) 和 [Google reCAPTCHA](https://experienceleague.adobe.com/tw/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/captcha-adaptive-forms-core-components)。
 
 ### 檔案保證API
 
@@ -155,13 +156,13 @@ AEM Forms檔案保證API是AEM FormsCloud Service通訊API中的一組工具，�
 
 ### Forms服務API
 
-Forms服務會產生互動式PDF forms以進行資料擷取。 它也可以用來匯入/匯出資料至現有的互動式PDF表單，以及驗證提交的資料。 其功能劃分如下：
+Forms 服務會產生用於資料擷取的互動式 PDF forms。它也可以用來匯入/匯出資料至現有的互動式PDF表單，以及驗證提交的資料。 以下是其功能的詳細介紹：
 
-* **呈現Forms**：從使用AEM Forms Designer建立的範本產生互動式PDF表單，並可選擇產生XML資料。 這基本上會產生一個可填寫的PDF表單，可選擇預先填入資料。
+* **轉譯表單**：從使用 AEM Forms Designer 建立的範本，並可以選擇搭配 XML 資料，產生互動式 PDF 表單。這實質上會產生一個可填寫的 PDF 表單，可選擇預先填入資料。
 
-* **資料擷取和匯入**：將資料匯入現有的PDF表單，並從已填寫的PDF表單中擷取資料。 支援XDP和XML資料格式，並且匯入到非XFAPDF forms（也稱為AcroForms）還支援FDF和XFDF資料。
+* **資料擷取和匯入**：將資料匯入現有 PDF 表單，以及從已填妥的 PDF 表單中擷取資料。支援 XDP 和 XML 資料格式，而匯入至非 XFA PDF forms (又稱為 AcroForms) 可額外支援 FDF 和 XFDF 資料。
 
-* **資料驗證**： ：根據使用AEM Forms Designer建立的範本，驗證XDP或XML格式的已提交資料。
+* **資料驗證**：根據使用 AEM Forms Designer 建立的範本驗證以 XDP 或 XML 格式提交的資料。
 
 ## 另請參閱
 
