@@ -3,9 +3,9 @@ title: 為Adobe Experience Manager as a Cloud Service設定OSGi
 description: 具有機密值和環境特定值的OSGi設定
 feature: Deploying
 exl-id: f31bff80-2565-4cd8-8978-d0fd75446e15
-source-git-commit: a230efaa58cb00e8a0c0e2b23f0cc07462cc658b
+source-git-commit: b4c87b79c714c408daea08e81fbe719bc9f5adf0
 workflow-type: tm+mt
-source-wordcount: '3269'
+source-wordcount: '3302'
 ht-degree: 1%
 
 ---
@@ -25,7 +25,7 @@ OSGi提供標準化的原語，允許使用小型、可重複使用的合作元�
 
 ## OSGi組態檔 {#osgi-configuration-files}
 
-設定變更是在AEM專案的程式碼套件中定義(`ui.apps`)作為組態檔(`.cfg.json`)在runmode特定設定資料夾下：
+設定變更是在AEM專案的程式碼套件中定義(`ui.config`)作為組態檔(`.cfg.json`)在runmode特定設定資料夾下：
 
 `/apps/example/config.<runmode>`
 
@@ -44,6 +44,10 @@ OSGi設定檔案定義於：
 >[!NOTE]
 >
 >AEM使用不同檔案格式(例如 `.cfg`， `.config` 和XML `sling:OsgiConfig` 資源定義。 這些格式會由 `.cfg.json` OSGi設定格式。
+
+>[!NOTE]
+>
+>OSGi設定不會像雲端中的典型AEM例項那樣儲存在外部位置中的/apps底下。 存回Cloud Manager [開發人員主控台](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console#configurations) 以檢視OSGi設定。
 
 ## 執行模式解析度 {#runmode-resolution}
 
