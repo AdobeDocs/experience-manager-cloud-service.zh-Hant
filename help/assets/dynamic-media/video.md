@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Video Profiles,Best Practices
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 35f31c95e92148ff5f3472f26ea9c40fa5a17947
+source-git-commit: 03799545e29489a20e71e588f0a9bfac92e753db
 workflow-type: tm+mt
 source-wordcount: '9357'
 ht-degree: 2%
@@ -569,7 +569,7 @@ DASH (Digital Adaptive Streaming over HTTP)是視訊串流的國際標準，被�
 
 透過Dynamic Media中的多重字幕與音訊追蹤功能，您可以輕鬆將多重字幕與音訊追蹤新增至主要視訊。 此功能表示全球對象都可以存取您的影片。您可以以多種語言向全球對象自訂單一已發佈的主要影片，並遵守不同地理區域的輔助功能指南。此外，作者還可以在使用者介面的單一標籤管理字幕和音軌。
 
-![Dynamic Media中的註解與音訊曲目標籤，以及顯示已上傳視訊的.VTT註解檔案與已上傳的.MP3音訊曲目檔案的表格。](/help/assets/dynamic-media/assets/msma-subtitle-audiotracks-tab.png)
+![Dynamic Media中的註解與音訊曲目標籤，以及顯示已上傳視訊的.VTT註解檔案與已上傳的.MP3音訊曲目檔案的表格。](/help/assets/dynamic-media/assets/msma-subtitle-audiotracks-tab2.png)
 
 在主要視訊中新增多個字幕和音訊曲目時，需要考量的部分使用案例包括：
 
@@ -616,7 +616,7 @@ DASH (Digital Adaptive Streaming over HTTP)是視訊串流的國際標準，被�
    >
    >完成上述任一項工作後，請回到這些步驟。
 
-   ![屬性頁面上的註解和音訊曲目索引標籤。](/help/assets/dynamic-media/assets/msma-audiotracks.png)*視訊屬性頁面上的註解和音訊曲目索引標籤。*
+   ![屬性頁面上的註解和音訊曲目索引標籤。](/help/assets/dynamic-media/assets/msma-audiotracks2.png)*視訊屬性頁面上的註解和音訊曲目索引標籤。*
 
 1. （可選）若要新增一或多個註解檔案至視訊，請執行下列動作：
    * 選取 **[!UICONTROL 上傳註解]**.
@@ -627,8 +627,8 @@ DASH (Digital Adaptive Streaming over HTTP)是視訊串流的國際標準，被�
      |--- |--- |
      | 檔案名稱 | 預設檔案名稱衍生自原始檔案名稱。 檔案名稱只能在上傳時變更，以後無法變更。 檔案名稱字元需求與AEM Assets相同。<br>其他註解檔案和音訊曲目檔案不能使用相同的檔案名稱。 |
      | 語言 | 選取註解的語言。 |
-     | 類型 | 選取您使用的註解型別。<br>**註解**  — 與視訊一起顯示的註解文字，該視訊會轉譯或轉譯對話方塊。<br>**註解**  — 註解文字也包含背景噪音、演講者辨別與其他相關資訊，以及對話的翻譯或轉錄，讓耳聾或聽力缺佳的人更容易存取內容。 |
-     | 標籤 | 在中針對註解名稱顯示的文字 **[!UICONTROL 選取音訊或標題]** 媒體播放器中的快顯清單。 客戶看到的標籤與註解或標題追蹤相對應。 例如，`English (CC)`。 |
+     | 類型 | 選取您使用的註解型別。<br>**子標題**  — 與視訊一起顯示的註解文字，該視訊會轉譯或轉譯對話方塊。<br>**註解**  — 註解文字也包含背景噪音、演講者辨別與其他相關資訊，以及對話的翻譯或轉錄，讓耳聾或聽力缺佳的人更容易存取內容。 |
+     | 標籤 | 在中針對註解名稱顯示的文字 **[!UICONTROL 選取音訊或標題]** 媒體播放器中的快顯清單。 客戶看到的標籤與副標題或標題追蹤相對應。 例如，`English (CC)`。 |
 
      如有需要，您可以稍後變更或編輯註解中繼資料。 發佈影片時，這些詳細資料會反映在已發佈影片中的公開URL上。
 
@@ -704,7 +704,7 @@ Dynamic Media支援透過URL修飾元在視訊中新增單一標題。 另請參
 | 已失敗 | 「失敗」狀態表示字幕或音訊曲目檔案的處理未完成。 請刪除註解或音訊曲目檔案，然後重新上傳。 |
 | 已取消發佈 | 明確取消發佈已發佈的主要視訊時，您新增至視訊的任何註解或音訊追蹤檔案也會取消發佈。 |
 
-![註解和音軌欄位中反白顯示的狀態列。](/help/assets/dynamic-media/assets/msma-lifecycle-status.png)*每個上傳的標題和音訊曲目檔案的生命週期狀態。*
+![註解和音軌欄位中反白顯示的狀態列。](/help/assets/dynamic-media/assets/msma-lifecycle-status2.png)*每個上傳的標題和音訊曲目檔案的生命週期狀態。*
 
 ### 為具有多個音軌的視訊設定預設音訊
 
@@ -729,7 +729,7 @@ Dynamic Media支援透過URL修飾元在視訊中新增單一標題。 另請參
 1. 選取 **[!UICONTROL 設定為預設]**.
 在 **設定為預設** 對話方塊，選取 **[!UICONTROL 取代]**.
 
-   ![音訊曲目標題具有選取的音訊曲目檔案名稱，並反白顯示「設定為預設」按鈕。](/help/assets/dynamic-media/assets/msma-defaultaudiotrack.png)*設定視訊的預設音軌。*
+   ![音訊曲目標題具有選取的音訊曲目檔案名稱，並反白顯示「設定為預設」按鈕。](/help/assets/dynamic-media/assets/msma-defaultaudiotrack2.png)*設定視訊的預設音軌。*
 
 1. 在右上角，選取 **[!UICONTROL 儲存並關閉]**.
 1. 發佈視訊。 另請參閱 [發佈資產](publishing-dynamicmedia-assets.md).
