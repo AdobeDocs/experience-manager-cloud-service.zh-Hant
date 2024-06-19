@@ -10,7 +10,8 @@ role: User, Admin
 mini-toc-levels: 4
 hide: false
 hidefromtoc: false
-source-git-commit: c24b017e60363b3b6d79105122bdbaab138c701d
+exl-id: 39e491bb-367d-4c72-b4ca-aab38d513ac5
+source-git-commit: 3375ffbb18c312e5df0050050ae16d75a12243e6
 workflow-type: tm+mt
 source-wordcount: '3574'
 ht-degree: 0%
@@ -142,7 +143,6 @@ Dynamic Media搭配Experience Manager Assets可讓使用者之間有效率地建
   這麼做有助於搜尋引擎瞭解影像內容並改善SEO。 在檔案名稱中，Google偏好使用連字型大小而非底線或空格。 此外，請避免在檔案名稱中串連字詞。
 * **自訂網域：**
 實作包含您公司或品牌名稱的自訂網域，以強化品牌認知度和信任。 例如，
-
    * 使用 `http://images.mycompany.com/is/image/companyname/`
    * *避免* `https://s7d1.scene7.com/is/image/folder/AdobeStock_28563982`
 * **SEO友善的資料夾結構：**
@@ -351,4 +351,3 @@ Adobe建議您使用智慧型影像的功能，而非手動將影像格式設為
 仰賴智慧型影像處理，您可以確保影像以最有效率的方式傳送，並因應每位使用者的瀏覽環境量身打造。 此方法可簡化程式，並可改善影像載入時間和整體使用者體驗方面的效能。
 
 想要進一步瞭解嗎？ 前往 [智慧型影像](/help/assets/dynamic-media/imaging-faq.md).
-
