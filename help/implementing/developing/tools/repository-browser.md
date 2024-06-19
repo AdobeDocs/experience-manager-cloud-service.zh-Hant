@@ -6,9 +6,9 @@ seo-description: The repository browser provides a read-only view into the repos
 exl-id: 22473a97-8f7b-4014-b885-1233116aeda6
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 9d1b51b465a148551de93f8180b056b8e7752db5
 workflow-type: tm+mt
-source-wordcount: '854'
+source-wordcount: '871'
 ht-degree: 1%
 
 ---
@@ -33,15 +33,13 @@ ht-degree: 1%
 
 若要存取AEMas a Cloud Service開發人員控制檯或存放庫瀏覽器，下列條件必須滿足
 
-若要存取AEMas a Cloud Service開發人員主控台：
+若要存取AEMas a Cloud Service開發人員主控台，請參閱 [開發人員控制檯存取](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console#developer-console-access).
 
-* 對於生產計畫，使用者必須具有 **Cloud Manager — 開發人員角色** 在Adobe Admin Console中
-* 對於沙箱計畫，它可供任何具有產品設定檔的使用者使用，以讓他們存取AEMas a Cloud Service。
+若要存取「存放庫瀏覽器」，其需求與AEMas a Cloud Service開發人員主控台（以上指定）的需求相同。 檢視特定執行處理的「儲存區域瀏覽器」內容：
 
-若要存取存放庫瀏覽器：
+* 作者執行個體：具有適用於的AEM使用者產品設定檔的使用者 **作者執行個體** 能夠以最低的讀取存取權檢視存放庫瀏覽器；瀏覽存放庫時會考量使用者的許可權。 具有AEM管理員產品設定檔的使用者可以檢視具有完整讀取存取權的存放庫瀏覽器。
 
-* 使用者必須擁有 **Cloud Manager — 開發人員** 在AEMas a Cloud Service開發人員控制檯中擔任檢視作者和發佈執行個體的角色。
-* 此外，對於作者，具有AEM使用者產品設定檔的使用者可以以最低的讀取存取權檢視存放庫瀏覽器；瀏覽存放庫時會考量使用者的許可權。 具有AEM管理員產品設定檔的使用者可以檢視具有完整讀取存取權的存放庫瀏覽器。
+* 發佈執行個體：具有AEM使用者產品設定檔的使用者 **發佈執行個體** 能以最低的讀取存取權檢視存放庫瀏覽器。 若沒有該產品設定檔集，使用者將以匿名使用者身分導覽，且由於許可權有限，部分路徑將不會顯示。
 
 如需關於設定使用者許可權的詳細資訊，請參閱 [Cloud Manager檔案](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/users-and-roles.html).
 

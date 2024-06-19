@@ -4,7 +4,7 @@ description: Adobe Experience Manager as a Cloud Service上的Maven專案需要�
 exl-id: dec08410-d109-493d-bf9d-90e5556d18f0
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 520ab0229b4f00a1de981209bf26059b0d00c3da
 workflow-type: tm+mt
 source-wordcount: '533'
 ht-degree: 2%
@@ -164,7 +164,7 @@ Adobe Experience Manager as a Cloud Service的Maven專案需要存放庫結構�
 + 程式碼套件A部署至 `/apps/a`
 + 程式碼套件B部署至 `/apps/a/b`
 
-如果程式碼套件A上的程式碼套件B未建立套件層級的相依性，程式碼套件B可能會先部署到 `/apps/a`. 接著會是程式碼套件B，這會部署至 `/apps/a`. 如此將會移除先前安裝的 `/apps/a/b`.
+如果程式碼套件A上的程式碼套件B未建立套件層級的相依性，程式碼套件B可能會先部署到 `/apps/a`. 如果接著是程式碼套件A，則會部署至 `/apps/a`，因此會移除先前安裝的 `/apps/a/b`.
 
 在此案例中：
 
