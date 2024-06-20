@@ -6,9 +6,9 @@ Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: 2766a351938062127babb01d5ed35bd37b705c21
 workflow-type: tm+mt
-source-wordcount: '1731'
+source-wordcount: '1733'
 ht-degree: 22%
 
 ---
@@ -75,9 +75,9 @@ Forms帶來的更多對話功能如下：
 對話式Forms不僅是一種新外觀 — 它還能改變使用者體驗的遊戲規則。  提升參與度、減少表單放棄率，並讓每個人都能更愉快地與您的網站互動。
 
 
-### 適用於Edge Delivery Services的AEM式製作
+### WYSIWYGEdge Delivery Services製作
 
-AEM式製作提供WYSIWYG介面(最適化Forms編輯器)，用以建置這些表單並發佈至Edge Delivery Services。 AEM式撰寫提供以下所有功能： [檔案式製作](/help/edge/docs/forms/overview.md#document-based-authoring-features)，外加各式各樣的其他功能：
+WYSIWYG製作提供WYSIWYG介面(通用編輯器和調適型Forms編輯器)，用於建置調適型表單並發佈到Edge Delivery Services。 所見即所得，提供所有功能 [檔案式製作](/help/edge/docs/forms/overview.md#document-based-authoring-features)，外加各式各樣的其他功能：
 
 * 用來建立複雜邏輯的進階規則編輯器。
 * 提供自訂功能的伺服器端可擴充性。
