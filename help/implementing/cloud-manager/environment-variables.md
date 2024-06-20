@@ -5,10 +5,10 @@ exl-id: 5cdd5532-11fe-47a3-beb2-21967b0e43c6
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: ed166aa753d4fb5c6fb1573032186e3e14f375df
 workflow-type: tm+mt
 source-wordcount: '986'
-ht-degree: 80%
+ht-degree: 78%
 
 ---
 
@@ -50,7 +50,7 @@ ht-degree: 80%
 1. 輸入變數詳細資訊。
    * **名稱**
    * **值**
-   * **已套用服務** - 定義變數適用於哪個服務 (作者/發佈/預覽)，或適用於所有服務
+   * **已套用服務**  — 定義變數適用於哪個服務(作者/Publish/預覽)，或適用於所有服務
    * **類型** - 定義變數是普通變數還是密碼
 
    ![新增變數](assets/add-variable.png)
