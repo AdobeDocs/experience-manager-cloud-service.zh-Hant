@@ -4,9 +4,9 @@ description: 瞭解AEMas a Cloud Service中的內容搜尋和索引。
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
 feature: Operations
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+source-git-commit: 65e67225a6a91d871218c12c4696dd281787cd58
 workflow-type: tm+mt
-source-wordcount: '2442'
+source-wordcount: '2449'
 ht-degree: 1%
 
 ---
@@ -85,7 +85,7 @@ The package from the above sample is built as `com.adobe.granite:new-index-conte
 
 >[!NOTE]
 >
->任何包含索引定義的內容封裝，都應在位於的內容封裝屬性檔案中設定下列屬性 `<package_name>/META-INF/vault/properties.xml`：
+>任何包含索引定義的內容套件都應該在 `properties.xml` 內容封裝的檔案。 `properties.xml` 預設會在新封裝中建立，並位於 `<package_name>/META-INF/vault/properties.xml`：
 >
 > * `noIntermediateSaves=true`
 >
