@@ -988,7 +988,7 @@ ht-degree: 99%
       + 管理程式碼 {#managing-code}
          + [Maven 專案版本處理](/help/implementing/cloud-manager/managing-code/project-version-handling.md)
          + [管理 Cloud Manager 中的存放庫](/help/implementing/cloud-manager/managing-code/managing-repositories.md)
-         + [新增 Adob&#x200B;&#x200B;e 存放庫](/help/implementing/cloud-manager/managing-code/adobe-repositories.md)
+         + [新增 Adobe 存放庫](/help/implementing/cloud-manager/managing-code/adobe-repositories.md)
          + [新增私人存放庫](/help/implementing/cloud-manager/managing-code/private-repositories.md)
          + [存取存放庫](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
          + [Git 子模組支援](/help/implementing/cloud-manager/managing-code/git-submodules.md)
