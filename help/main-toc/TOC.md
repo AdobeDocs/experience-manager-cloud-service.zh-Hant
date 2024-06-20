@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的運作方式以及該軟體可以為您做哪些事。
 breadcrumb-title: 使用手冊
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 7ad9a959592f1e8cebbcad9a67d280d5b2119866
+source-git-commit: 639f1a35369bfe20931e2bbf08009a72696964d6
 workflow-type: tm+mt
-source-wordcount: '5034'
+source-wordcount: '5040'
 ht-degree: 99%
 
 ---
@@ -82,6 +82,7 @@ ht-degree: 99%
    + AEMaaCS 維護版本發行說明{#maintenance}
       + [目前維護版本發行說明](/help/release-notes/maintenance/latest.md)
       + 2024 {#2024}
+         + [2024.6.0 維護版本發行說明](/help/release-notes/maintenance/2024/2024-6-0.md)
          + [2024.5.0 維護版本發行說明](/help/release-notes/maintenance/2024/2024-5-0.md)
          + [2024.4.0 維護版本發行說明](/help/release-notes/maintenance/2024/2024-4-0.md)
          + [2024.3.0 維護版本發行說明](/help/release-notes/maintenance/2024/2024-3-0.md)
@@ -425,7 +426,7 @@ ht-degree: 99%
       + [將內容片段匯出到 Adobe Target](/help/sites-cloud/integrating/content-fragments-target.md)
       + [將體驗片段匯出到 Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
       + [與 Adobe Campaign 整合](/help/sites-cloud/integrating/campaign.md)
-   + [AEM的Real Use Monitoringas a Cloud Service](/help/sites-cloud/administering/real-use-monitoring-for-aem-as-a-cloud-service.md)
+   + [AEM as a Cloud Service 的真實使用監控](/help/sites-cloud/administering/real-use-monitoring-for-aem-as-a-cloud-service.md)
 + 資產 {#assets}
    + [概觀與新增功能](/help/assets/overview.md)
    + [ [!DNL Assets] as a [!DNL Cloud Service] 重大變更](/help/assets/assets-cloud-changes.md)
@@ -507,7 +508,7 @@ ht-degree: 99%
       + Dynamic Media 歷程：基礎知識{#dm-journey}
          + [第一部分：什麼是 Dynamic Media - 使用案例 - 資產如何流經系統](/help/assets/dynamic-media/dm-journey-part1.md)
          + [第二部分：Dynamic Media URL 剖析 - 影像預設集基礎 - 關於影像集、迴轉集和混合媒體集](/help/assets/dynamic-media/dm-journey-part2.md)
-         + [Dynamic Media最佳作法](/help/assets/dynamic-media/dm-best-practices.md)
+         + [Dynamic Media 最佳實務](/help/assets/dynamic-media/dm-best-practices.md)
       + [Experience League 的 Dynamic Media 電子報](/help/assets/dynamic-media/dynamic-media-newsletter.md)
       + [設定 Dynamic Media](/help/assets/dynamic-media/administering-dynamic-media.md)
       + [使用 Dynamic Media](/help/assets/dynamic-media/dynamic-media.md)
@@ -978,7 +979,7 @@ ht-degree: 99%
          + [建立沙箱方案](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md)
          + [編輯方案](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)
          + [休眠環境](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md)
-         + [Edge Delivery Services支援](/help/implementing/cloud-manager/edge-delivery-services.md)
+         + [Edge Delivery Services 支援](/help/implementing/cloud-manager/edge-delivery-services.md)
       + 建立 AEM 應用程式專案 {#create-application-project}
          + [專案建立精靈](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md)
          + [專案設定](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md)
@@ -986,16 +987,16 @@ ht-degree: 99%
       + [管理環境](/help/implementing/cloud-manager/manage-environments.md)
       + 管理程式碼 {#managing-code}
          + [Maven 專案版本處理](/help/implementing/cloud-manager/managing-code/project-version-handling.md)
-         + [在Cloud Manager中管理存放庫](/help/implementing/cloud-manager/managing-code/managing-repositories.md)
-         + [新增Adobe存放庫](/help/implementing/cloud-manager/managing-code/adobe-repositories.md)
+         + [管理 Cloud Manager 中的存放庫](/help/implementing/cloud-manager/managing-code/managing-repositories.md)
+         + [新增 Adob&#x200B;&#x200B;e 存放庫](/help/implementing/cloud-manager/managing-code/adobe-repositories.md)
          + [新增私人存放庫](/help/implementing/cloud-manager/managing-code/private-repositories.md)
          + [存取存放庫](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
          + [Git 子模組支援](/help/implementing/cloud-manager/managing-code/git-submodules.md)
          + [將 Git 與 Cloud Manager 一起使用](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)
          + [使用多個存放庫](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md)
          + [企業開發團隊設定](/help/implementing/cloud-manager/managing-code/enterprise-team-dev-setup.md)
-         + [GitHub檢查設定](/help/implementing/cloud-manager/managing-code/github-check-config.md)
-         + [GitHub檢查附註](/help/implementing/cloud-manager/managing-code/github-annotations.md)
+         + [GitHub 檢查設定](/help/implementing/cloud-manager/managing-code/github-check-config.md)
+         + [GitHub 檢查附註](/help/implementing/cloud-manager/managing-code/github-annotations.md)
       + [環境變數](/help/implementing/cloud-manager/environment-variables.md)
       + Cloud Manager CI-CD 管道 {#cicd-pipelines}
          + [簡介](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)

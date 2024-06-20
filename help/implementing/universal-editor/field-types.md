@@ -4,7 +4,7 @@ description: 透過範例瞭解屬性邊欄中通用編輯器可編輯的欄位�
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 6886d3e669b06b63d2225348e95e00806db1b8f5
 workflow-type: tm+mt
 source-wordcount: '1146'
 ht-degree: 10%
@@ -103,7 +103,7 @@ ht-degree: 10%
 | [數字](#number) | `number` |
 | [選項按鈕群組](#radio-group) | `radio-group` |
 | [參考](#reference) | `reference` |
-| [RTF文字](#rich-text) | `rich-text` |
+| [RTF文字](#rich-text) | `richtext` |
 | [選取](#select) | `select` |
 | [標籤](#tab) | `tab` |
 | [文字](#text) | `text` |
