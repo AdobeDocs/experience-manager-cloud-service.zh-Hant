@@ -4,10 +4,10 @@ description: 本頁提供如何使用及開始使用Cloud Acceleration Manager�
 exl-id: e2fad21c-3de6-4186-97c6-ebc84780b2e8
 feature: Migration
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: d840e0beb8036ed8e543ac85850290e778371bbe
 workflow-type: tm+mt
-source-wordcount: '514'
-ht-degree: 11%
+source-wordcount: '555'
+ht-degree: 10%
 
 ---
 
@@ -96,6 +96,10 @@ Cloud Acceleration Manager (CAM)的登陸頁面可讓您建立和編輯多個專
    ![影像](/help/journey-migration/cloud-acceleration-manager/assets/cam-4.png)
 
 1. 按一下 **刪除** 以確認步驟。
+
+   >[!NOTE]
+   >專案將在移轉閒置1年後自動過期和刪除。 透過編輯專案名稱或說明、上傳BPA報告、建立或編輯移轉集、執行擷取或執行內嵌，專案將保持作用中。
+
 
 ## 下一步 {#whats-next}
 
