@@ -3,7 +3,9 @@ title: 使用Commerce integration framework整合AEM和Adobe Commerce
 description: 使用Commerce integration framework (CIF)將AEM與Adobe Commerce緊密整合。 CIF可讓AEM存取Adobe Commerce執行個體，並透過GraphQL與Adobe Commerce通訊。 它也可讓AEM作者使用產品和類別選擇器及產品主控台，來瀏覽隨選從Adobe Commerce擷取的產品和類別資料。 此外，CIF提供立即可用的店面，可加速商業專案。
 thumbnail: aem-magento-architecture.jpg
 exl-id: 110ceef5-2c35-4b81-8e89-26929c0da91b
-source-git-commit: 6d63328ca17a00e0369c57714409f3f448cb311f
+feature: Commerce Integration Framework
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
 workflow-type: tm+mt
 source-wordcount: '439'
 ht-degree: 5%
@@ -40,7 +42,7 @@ CIF支援伺服器端和使用者端通訊模式。
 
 ![AEM CIF核心元件架構](../assets/cif-component-architecture.jpg)
 
-[AEM CIF Core Components](https://github.com/adobe/aem-core-cif-components) 遵循非常類似的設計模式和最佳實務作為 [AEM WCM核心元件](https://github.com/adobe/aem-core-wcm-components).
+[AEM CIF核心元件](https://github.com/adobe/aem-core-cif-components) 遵循非常類似的設計模式和最佳實務作為 [AEM WCM核心元件](https://github.com/adobe/aem-core-wcm-components).
 
 在Sling模型中實作用於AEM CIF核心元件的商業邏輯和與Adobe Commerce的後端通訊。 萬一需要自訂此邏輯以滿足專案特定的要求，可以使用Sling模型的委派模式。
 
@@ -52,5 +54,5 @@ CIF支援伺服器端和使用者端通訊模式。
 
 ## 搜尋 {#search}
 
-CIF提供立即可用的 [搜尋核心元件](https://www.aemcomponents.dev/content/core-components-examples/library/commerce/search.html) 這是伺服器端轉譯的搜尋體驗，根據 [Commerce GraphQL API](https://developer.adobe.com/commerce/webapi/graphql/). Commerce客戶可以選擇使用 [即時搜尋](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/guide-overview.html?lang=en) 而非。 關注此 [連結](/help/commerce-cloud/integrating/live-search-plp.md) 以進一步瞭解CIF - Live Search整合。
+CIF提供立即可用的 [搜尋核心元件](https://www.aemcomponents.dev/content/core-components-examples/library/commerce/search.html) 這是伺服器端轉譯的搜尋體驗，根據 [COMMERCE GRAPHQL API](https://developer.adobe.com/commerce/webapi/graphql/). Commerce客戶可以選擇使用 [即時搜尋](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/guide-overview.html?lang=en) 而非。 關注此 [連結](/help/commerce-cloud/integrating/live-search-plp.md) 以進一步瞭解CIF - Live Search整合。
 

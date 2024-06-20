@@ -2,7 +2,9 @@
 title: 提交 AEM 連接器
 description: 瞭解如何在Adobe Experience Manager (AEM)as a Cloud Service正確參照和部署聯結器。
 exl-id: 9be1f00e-3666-411c-9001-c047e90b6ee5
-source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
+feature: Operations
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
 workflow-type: tm+mt
 source-wordcount: '296'
 ht-degree: 2%
@@ -13,7 +15,7 @@ ht-degree: 2%
 
 以下提供有用的Adobe Experience Manager (AEM)聯結器提交資訊，並應連同相關文章一起閱讀 [實施](implement.md) 和  [維護](maintain.md) 聯結器。
 
-AEM聯結器列於 [Adobe交換](https://partners.adobe.com/technologyprogram/experiencecloud.html).
+AEM聯結器列於 [Adobe Exchange](https://partners.adobe.com/technologyprogram/experiencecloud.html).
 
 在舊版AEM解決方案中， [封裝管理員](/help/implementing/developing/tools/package-manager.md) 可用來在各種AEM執行個體上安裝聯結器。 不過，透過AEMas a Cloud Service，聯結器是在Cloud Manager中的CI/CD流程期間部署。 對於要部署的聯結器，必須在maven專案的pom.xml中引用聯結器。
 

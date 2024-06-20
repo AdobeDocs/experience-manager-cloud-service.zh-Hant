@@ -1,15 +1,17 @@
 ---
-title: 網域驗證(DV)憑證
+title: 網域驗證 (DV) 憑證
 description: 瞭解如何在Cloud Manager中管理網域驗證(DV)憑證。
-source-git-commit: 5baeb4012e5aa82a8cd8710b18d9164583ede0bd
+exl-id: 7f2c71b6-15c3-4919-9f51-a3e26d0d48d4
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
+source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
 workflow-type: tm+mt
 source-wordcount: '443'
-ht-degree: 6%
+ht-degree: 7%
 
 ---
 
-
-# 網域驗證(DV)憑證 {#domain-validated-certificates}
+# 網域驗證 (DV) 憑證 {#domain-validated-certificates}
 
 瞭解如何在Cloud Manager中管理網域驗證(DV)憑證。
 

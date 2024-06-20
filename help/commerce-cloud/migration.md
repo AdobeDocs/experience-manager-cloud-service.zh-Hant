@@ -1,11 +1,13 @@
 ---
-title: 移轉至AEM Commerce Integration Framework (CIF)附加元件
-description: 如何從舊版本移轉至AEM Commerce Integration Framework (CIF)附加元件
+title: 移轉至AEMCommerce integration framework(CIF)附加元件
+description: 如何從舊版移轉至AEMCommerce integration framework(CIF)附加元件
 exl-id: 0db03a05-f527-4853-b52f-f113bce929cf
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+feature: Commerce Integration Framework
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
 workflow-type: tm+mt
-source-wordcount: '490'
-ht-degree: 23%
+source-wordcount: '470'
+ht-degree: 20%
 
 ---
 
@@ -15,22 +17,22 @@ ht-degree: 23%
 
 ## CIF附加元件
 
-針對Experience Manageras a Cloud Service，CIF附加元件是Adobe Commerce和協力廠商商務解決方案唯一支援的商務整合解決方案。 Experience Manager as a Cloud Service 上會自動部署 CIF 附加元件，客戶不需手動部署。請參閱 [AEM Commerce as a Cloud Service 快速入門](getting-started.md)。
+對於Experience Manageras a Cloud Service，CIF附加元件是Adobe Commerce和協力廠商商務解決方案唯一支援的商務整合解決方案。 Experience Manager as a Cloud Service 上會自動部署 CIF 附加元件，客戶不需手動部署。請參閱 [AEM Commerce as a Cloud Service 快速入門](getting-started.md)。
 
-若要支援部署CIFAdobe的專案，請提供 [AEM CIF Core Components](https://github.com/adobe/aem-core-cif-components).
+若要支援部署CIFAdobe的專案，請提供 [AEM CIF核心元件](https://github.com/adobe/aem-core-cif-components).
 
 [軟體發佈入口網站](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html)也提供了適用於 AEM 6.5 的 CIF 附加元件。它是相容的，提供和適用於 Experience Manager as a Cloud Service 的 CIF 附加元件相同的功能，不需調整。
 
 Classic CIF 及其相依性已不再可用。依賴此CIF版本的程式碼，使用 `com.adobe.cq.commerce.api` Java API必須調整為CIF附加元件及其原則。
 
-無法再安裝先前可用的CIF聯結器。 依賴此聯結器的程式碼需要調整為CIF附加元件及其原則。
+先前可用的CIF聯結器無法再安裝。 依賴此聯結器的程式碼需要調整為CIF附加元件及其原則。
 
 ## 專案結構
 
-瞭解 [AEM專案結構](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) 以及AEMas a Cloud Service的特性。 將專案設定調整為AEMas a Cloud Service版面。
+瞭解 [AEM專案結構](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) 以及AEMas a Cloud Service的特性。 將您的專案設定調整為AEMas a Cloud Service版面。
 與AEM 6.5部署相比，以下有兩個主要差異：
 
-* GraphQL使用者端OSGI套件組合 **不得** 會透過CIF附加元件部署AEM專案
+* GraphQL使用者端OSGI套件組合 **不得** 會透過AEM附加元件部署，使其繼續包含在CIF專案中
 * GraphQL使用者端和Graphql資料服務的OSGI設定 **不得** 已包含在AEM專案中
 
 >[!TIP]
@@ -39,7 +41,7 @@ Classic CIF 及其相依性已不再可用。依賴此CIF版本的程式碼，�
 
 ## 產品目錄
 
-不再支援匯入產品目錄資料。 使用CIF附加元件主參與者產品和目錄請求是透過對外部商務解決方案的即時呼叫隨選的。 前往整合一章，進一步瞭解整合商務解決方案。
+不再支援匯入產品目錄資料。 透過對外部商務解決方案的即時呼叫，您可隨選使用CIF附加元件主參與者產品和目錄請求。 前往整合一章以進一步瞭解整合商務解決方案。
 
 >[!TIP]
 >
@@ -51,4 +53,4 @@ Classic CIF 及其相依性已不再可用。依賴此CIF版本的程式碼，�
 
 ## 無法快取的資料和購物互動
 
-不可快取資料和互動的使用者端請求（例如加入購物車、搜尋）應透過CDN / Dispatcher直接前往商務端點（商務解決方案或整合層）。 移除AEM只是Proxy的任何呼叫。
+對不可快取的資料和互動（例如，加入購物車、搜尋）的使用者端請求應透過CDN / Dispatcher直接進入商務端點（商務解決方案或整合層）。 移除AEM只是Proxy的任何呼叫。

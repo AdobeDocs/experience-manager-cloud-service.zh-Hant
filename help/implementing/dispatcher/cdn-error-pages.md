@@ -3,7 +3,8 @@ title: 設定CDN錯誤頁面
 description: 瞭解如何在自行託管的儲存體(例如Amazon S3或Azure Blob儲存體)中託管靜態檔案，並在使用Cloud Manager設定管道部署的設定檔案中參照這些檔案，以覆寫預設錯誤頁面。
 feature: Dispatcher
 exl-id: 1ecc374c-b8ee-41f5-a565-5b36445d3c7c
-source-git-commit: 395e2faa6cd2a3430ce00208a4d904fe8e0c2333
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
 workflow-type: tm+mt
 source-wordcount: '376'
 ht-degree: 5%

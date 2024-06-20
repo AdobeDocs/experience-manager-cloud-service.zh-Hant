@@ -2,9 +2,11 @@
 title: 建立產品體驗
 description: 瞭解如何建立隨後可用於各種管道的產品內容，以打造沈浸式購物體驗。
 exl-id: 4ae70e40-fdf1-4a37-b4dd-0c4882d77908
-source-git-commit: 78ead5f15c2613d9c3bed3025b43423a66805c59
+feature: Commerce Integration Framework
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
 workflow-type: tm+mt
-source-wordcount: '1165'
+source-wordcount: '1157'
 ht-degree: 2%
 
 ---
@@ -13,9 +15,9 @@ ht-degree: 2%
 
 瞭解如何管理產品體驗。
 
-## 到目前為止 {#story-so-far}
+## 目前進度 {#story-so-far}
 
-在Adobe Experience Manager (AEM) Content and Commerce歷程的上一個檔案中， [管理分階段產品目錄體驗](staged-catalog.md)，您已瞭解如何管理分階段的產品目錄體驗。
+在Adobe Experience Manager (AEM)內容和Commerce歷程的上一個檔案中， [管理分階段產品目錄體驗](staged-catalog.md)，您已瞭解如何管理分階段的產品目錄體驗。
 
 ## 目標 {#objective}
 
@@ -97,19 +99,19 @@ ht-degree: 2%
 
 ![pem產品頁面](assets/pem-page-product.png)
 
-如果您已為該產品建立關聯內容，請在資產側邊欄中切換為 **關聯的商務內容**. 此索引標籤會顯示與此產品相關聯的所有AEM內容。 這可讓您現在使用任何關聯內容來快速修飾頁面。
+如果您已為該產品建立關聯內容，請在資產側邊欄中切換為 **關聯的Commerce內容**. 此索引標籤會顯示與此產品相關聯的所有AEM內容。 這可讓您現在使用任何關聯內容來快速修飾頁面。
 
 ![擴充內容頁面](assets/pem-page-enriched.png)
 
 ## 歷程結尾？ {#end-of-journey}
 
-恭喜！您已完成AEM Content and Commerce開發人員歷程！ 您現在應該：
+恭喜！您已完成AEM內容和Commerce開發人員歷程！ 您現在應該：
 
 * 瞭解如何將任何AEM內容與產品目錄物件建立關聯
 * 使用預留位置來個別豐富產品和類別頁面
 * 瞭解如何讓內容可供購買，並使用關聯內容標籤
 
-您現在已準備好使用AEM Content and Commerce管理產品體驗。 不過，「AEM內容和商務」有許多其他可用選項。 檢視中可用的其他資源 [其他資源區段](#additional-resources) 您可在其中進一步瞭解在此歷程中看到的功能。
+您現在已準備好使用AEM內容和Commerce來管理產品體驗。 不過，「AEM內容」和Commerce有許多其他可用選項。 檢視中可用的其他資源 [其他資源區段](#additional-resources) 您可在其中進一步瞭解在此歷程中看到的功能。
 
 ## 其他資源 {#additional-resources}
 

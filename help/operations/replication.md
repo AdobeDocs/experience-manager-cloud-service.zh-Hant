@@ -2,7 +2,9 @@
 title: 複製
 description: 瞭解AEMas a Cloud Service中的散佈和疑難排解復寫。
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 9ab6ac5588b6ca5135e3635cc886ec51207e89d7
+feature: Operations
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
 workflow-type: tm+mt
 source-wordcount: '1312'
 ht-degree: 1%
@@ -21,13 +23,13 @@ Adobe Experience Manager as a Cloud Service使用 [Sling Content Distribution](h
 
 >[!NOTE]
 >
->如果您想要大量發佈內容，請使用 [發佈內容樹狀工作流程](#publish-content-tree-workflow).
+>如果您想要大量發佈內容，請使用 [Publish內容樹工作流程](#publish-content-tree-workflow).
 >此工作流程步驟是專為Cloud Service建置的，可有效處理大型負載。
 >不建議建置您自己的大量發佈自訂程式碼。
 >如果您因任何原因必須自訂，則可使用現有的工作流程API來觸發此工作流程/工作流程步驟。
->只發佈必須發佈的內容永遠是好的做法。 如果不需要的話，也請謹慎行事，不要嘗試發佈大量內容。 不過，您可以透過發佈內容樹狀工作流程傳送的內容數量並無限制。
+>只發佈必須發佈的內容永遠是好的做法。 如果不需要的話，也請謹慎行事，不要嘗試發佈大量內容。 不過，您可以透過Publish內容樹工作流程傳送的內容數量沒有限制。
 
-### 快速取消/發佈 — 計畫取消/發佈 {#publish-unpublish}
+### 快速取消/Publish — 計畫取消/Publish {#publish-unpublish}
 
 此功能可讓您立即發佈所選頁面，無需透過「管理發布」方法選擇其他選項。
 
@@ -43,9 +45,9 @@ Adobe Experience Manager as a Cloud Service使用 [Sling Content Distribution](h
 
 ### 管理發佈 {#manage-publication}
 
-管理發布提供比「快速發佈」更多的選項，允許包含子頁面、自訂參照和啟動任何適用的工作流程，並提供稍後發佈的選項。
+管理發布提供的選項比快速Publish更多，允許包含子頁面、自訂引用，以及啟動任何適用的工作流程，並提供稍後發佈的選項。
 
-為「稍後發佈」選項包含資料夾的子項時，會叫用發佈內容樹狀工作流程，如本文所述。
+針對「稍後發佈」選項包含資料夾的子項時，會叫用Publish內容樹工作流程，如本文所述。
 
 您可在以下網址找到有關管理發布的詳細資訊： [出版基礎檔案](/help/sites-cloud/authoring/sites-console/publishing-pages.md#manage-publication).
 
@@ -53,7 +55,7 @@ Adobe Experience Manager as a Cloud Service使用 [Sling Content Distribution](h
 
 您可以透過選擇來觸發樹狀結構復寫 **工具 — 工作流程 — 模型** 並複製 **發佈內容樹狀結構** 現成的工作流程模型，如下所示：
 
-![發佈內容樹狀工作流程卡片](/help/operations/assets/publishcontenttreeworkflow.png)
+![Publish內容樹工作流程卡片](/help/operations/assets/publishcontenttreeworkflow.png)
 
 請勿叫用原始模型。 相反，請務必先複製模型並叫用該副本。
 
@@ -207,6 +209,6 @@ ReplicationStatus previewStatus = afterStatus.getStatusForAgent(PREVIEW_AGENT); 
 
 ![記錄檔](assets/publish-logs.png "記錄檔")
 
-如果內容無法發佈，則整個發佈將從AEM發佈服務中恢復。
+如果內容無法發佈，則整個發佈將從AEM Publish Service還原。
 
 在這種情況下，可編輯的主要佇列會顯示紅色狀態，應該加以檢閱以識別哪些專案導致取消發佈。 按一下該佇列，會顯示其暫止專案，如有需要，可從中清除單一專案或所有專案。

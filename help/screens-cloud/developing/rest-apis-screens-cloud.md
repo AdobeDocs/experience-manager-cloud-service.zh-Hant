@@ -1,23 +1,25 @@
 ---
 title: REST API
-description: Screensas a Cloud Service提供遵循Siren規格的簡單RESTful API。 請依照本頁面的說明操作，瞭解如何導覽內容結構並傳送命令至環境中的裝置。
+description: Screensas a Cloud Service提供遵循Siren規格的簡單RESTful API。 請依照本頁面瞭解如何導覽內容結構並傳送命令至環境中的裝置。
 exl-id: 2c52583f-0dd9-4fa3-880b-7671442989ae
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+feature: Developing Screens
+role: Admin, Developer
+source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
 workflow-type: tm+mt
-source-wordcount: '209'
+source-wordcount: '200'
 ht-degree: 2%
 
 ---
 
 # REST API {#rest-apis}
 
-AEM Screens提供簡單的RESTful API，其會遵循 [警笛](https://github.com/kevinswiber/siren) 規格。 它可讓您導覽內容結構並傳送命令至環境中的裝置。
+AEM Screens提供簡單的RESTful API，其會遵循 [警笛](https://github.com/kevinswiber/siren) 規格。 它可讓您導覽內容結構並向環境中的裝置傳送命令。
 
-此API的存取網址為 [*http://localhost:4502/api/screens.json*](http://localhost:4502/api/screens.json).
+API的存取位置為 [*http://localhost:4502/api/screens.json*](http://localhost:4502/api/screens.json).
 
 ## 導覽內容結構 {#navigating-content-structure}
 
-API呼叫傳回的JSON會列出與目前資源相關的實體。 在所列出的自我連結後，這些實體中的每一個都可作為REST資源再次存取。
+API呼叫傳回的JSON會列出與目前資源相關的實體。 在列示的自我連結後，這些實體中的每一個都可以再次當作REST資源存取。
 
 例如，若要存取示範旗艦位置中的顯示區，您可以呼叫：
 
@@ -110,7 +112,7 @@ Host: http://localhost:4502
 curl -u admin:admin http://localhost:4502/api/screens/content/screens/we-retail/locations/demo/flagship/single.json
 ```
 
-***結果:***
+***結果：***
 
 ```xml
 {

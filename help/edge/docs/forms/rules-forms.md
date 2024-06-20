@@ -3,8 +3,9 @@ title: 使用規則為表單新增動態行為
 description: AEM Forms Edge Delivery Services 旨在為實現最佳效而建置，讓您能夠暢想簡化資料收集和使用者參與的未來。使用規則為您的表單新增動態行為。
 feature: Edge Delivery Services
 exl-id: 58042016-e655-446f-a2bf-83f1811525e3
-source-git-commit: 2affe155b285986128487043fcc4f2938fc15842
-workflow-type: ht
+role: Admin, Architect, Developer
+source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+workflow-type: tm+mt
 source-wordcount: '2216'
 ht-degree: 100%
 
@@ -144,7 +145,7 @@ ht-degree: 100%
 
 1. 將`amount`欄位的`Value`屬性設定為 `=F6*DAYS(F3,F2)`。此公式會根據 `Start Date`和 `End Date`來計算天數，將天數乘以房間預算，並將結果顯示在`Estimated Trip Cost`欄位。
 
-1. 將`Estimated Trip Cost`欄位的`Value Expression`屬性設定為 `=FORMULATEXT ((address of value property of the amount field))`。例如 `=FORMULATEXT(F7)`。FORMULATEXT() 函數將公式作為輸入，並將公式本身作為文字字串傳回。這有助於使用表單中的公式。
+1. 將`Estimated Trip Cost`欄位的`Value Expression`屬性設定為 `=FORMULATEXT ((address of value property of the amount field))`。例如 `=FORMULATEXT(F7)`。FORMULATEXT() 函數會將公式作為輸入，並將公式本身作為文字字串傳回。這有助於使用表單中的公式。
 
 1. 預覽和發佈您的表單。現在，指定`Start Date`、`End Date` 和房間預算。系統會自動計算 `Estimated Trip Cost`。
 

@@ -1,78 +1,80 @@
 ---
-title: AEM — 使用Commerce integration framework常見問答集進行Commerce整合
-description: AEM — 使用Commerce integration framework常見問答集進行Commerce整合
+title: AEM - 使用 Commerce Integration Framework 進行商務整合常見問題集
+description: AEM - 使用 Commerce Integration Framework 進行商務整合常見問題集
 exl-id: 0a946d98-22c7-445d-984a-9e09c306ce45
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+feature: Commerce Integration Framework
+role: Admin, Architect, User
+source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
 workflow-type: tm+mt
 source-wordcount: '963'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# AEM — 使用Commerce integration framework常見問答集進行Commerce整合
+# AEM - 使用 Commerce Integration Framework 進行商務整合常見問題集
 
-## 1. CIF GraphQL是否僅用於商務，或是否可用於查詢在AEM JCR上編寫的內容？
+## 1. CIF GraphQL 僅可用於商業，還是可用於查詢在 AEM JCR 上創作的內容？
 
-Adobe已採用Adobe Commerce的GraphQL API作為適用於所有商務相關資料的官方Commerce API。 因此，AEM會使用GraphQL透過I/O Runtime與Adobe Commerce及任何商務引擎交換商務資料。 此GraphQL API獨立於AEM GraphQL API，可存取內容片段。
+Adobe 已採用 Adobe Commerce 的 GraphQL API 作為其所有商務相關資料的官方商務 API。因此，AEM 會使用 GraphQL 與 Adobe Commerce 以及透過 I/O 執行階段的任何商務引擎交換商務資料。此 GraphQL API 獨立於 AEM 的 GraphQL API 來存取內容片段。
 
-## 2.能否透過Adobe Commerce管理員從AEM儲存及參考產品資產（影像）？ 如何使用Dynamic Media中的資產？
+## 2. 產品資產 (影像) 是否可以透過 Adobe Commerce 管理員從 AEM 儲存和參考？如何使用 Dynamic Media 中的資產？
 
-沒有官方的AEM Assets — 提供Adobe Commerce整合。 上有可用的合作夥伴聯結器 [marketplace](https://marketplace.magento.com) <!-- THIS IS THE OLD URL THAT WAS USED. IT WAS 404 (https://marketplace.magento.com/bounteous-dam.html) -->
+沒有可用的官方 AEM Assets - Adobe Commerce 整合。[Marketplace](https://marketplace.magento.com) 上提供了合作夥伴連接器<!-- THIS IS THE OLD URL THAT WAS USED. IT WAS 404 (https://marketplace.magento.com/bounteous-dam.html) -->
 
-或者，作為因應措施，您可以在AEM Assets中儲存產品資產（影像），但您必須在Adobe Commerce中手動儲存資產URL。 Dynamic Media現在是AEM Assets的一部分，且運作方式相同。
+或者您可以使用因應措施，將產品資產 (影像) 儲存在 AEM Assets 中，但必須手動將資產 URL 儲存在 Adobe Commerce 中。Dynamic Media 現在屬於 AEM Assets 的一部分，其運作方式也一樣。
 
-## 3.商業解決方案的部署位置重要嗎？ （內部部署或雲端）
+## 3. 商務解決方案部署的位置重要嗎？(內部部署或在雲端中)
 
-不，您的商務解決方案部署在哪裡並不重要。 無論部署模式為何，CIF和AEM店面都能運作。 不過，如果解決方案是使用建議的E2E參考架構進行部署，則E2E測試可以根據代表典型企業客戶設定檔的效能KPI執行。 此方法提供可當作基準的其他資訊。
+不重要，商務解決方案部署在哪裡都可以。無論部署模型如何，CIF 和 AEM 店面都可以正常運作。但是，如果使用建議的 E2E 參考架構部署解決方案，則可以針對代表典型企業客戶概況的效能 KPI 執行 E2E 測試。此方法提供了可當作基準的附加資訊。
 
-## 4.如何在AEM中建立目錄頁面或產品頁面？ 它們如何在AEM中持續存在？
+## 4. 如何在 AEM 中建立目錄頁面或產品頁面？它們如何留存在 AEM 中？
 
-目錄頁面和產品頁面是根據通用目錄和產品頁面範本，在AEM中動態建立及快取。 AEM中不會匯入及儲存任何產品或目錄資料。
+目錄頁面和產品頁面是根據一般目錄和產品頁面範本，在 AEM 中動態建立和快取的。產品或目錄資料不會匯入和儲存在 AEM 中。
 
-## 5.當您更新商務解決方案中的產品資料時，這是否為對AEM的即時推送？ 還是批次流程？
+## 5. 當您在商務解決方案中更新產品資料時，會即時推送到 AEM 嗎？或者是採用批次處理？
 
-搭配AEM Cloud Service使用的CIF附加元件可讓資料從商務解決方案依需求傳輸至AEM。 因此，當您的商務解決方案中有更新時，這不是即時推送或批次流程。
+與 AEM Cloud Service 結合使用的 CIF 附加元件可讓資料按照需求從商務解決方案流向 AEM。因此，當您的商務解決方案更新了內容時，不會即時推送或批次處理。
 
-## 6. AEM支援CIF的目錄大小多大？
+## 6. 具有 CIF 的 AEM 支援多大的目錄大小？
 
-這取決於您必須考慮的其他幾個方面。 您的目錄資料和頁面的快取比率是多少？ 您預期在高峰時段會有多少同時請求？ 您的商務解決方案API的擴充性如何？
+這還需要將其他方面納入考慮。您的目錄資料和頁面的快取比率是多少？您預計高峰時段有多少並行要求？您商務解決方案 API 的可擴充性如何？
 
-## 7. PIM如何在這個架構中運作？
+## 7. PIM 如何在該框架中發揮作用？
 
-PIM資料會透過GraphQL要求向AEM和使用者端公開。 我們的建議是將PIM與商務引擎(Adobe Commerce或其他)整合，以便之後可以從商務引擎擷取PIM資料。
+PIM 資料透過 GraphQL 要求公開給 AEM 和用戶端。建議將 PIM 與商務引擎 (Adobe Commerce 或其他) 整合，以便從商務引擎擷取 PIM 資料。
 
-## 8.您也透過Dispatcher快取定價和其他資料嗎？ 這是否會造成頻繁的快取失效挑戰？
+## 8. 您是否也透過 Dispatcher 快取定價和其他資料？這是否會引發頻繁的快取失效挑戰？
 
-Dispatcher上不會快取價格或詳細目錄等動態資料。 直接透過GraphQL API，使用網頁元件在使用者端擷取動態資料。 Dispatcher上只會快取靜態資料（例如產品或類別資料）。 如果產品資料變更，則需要讓快取失效。
+價格或庫存等動態資料不會在 Dispatcher 上快取。動態資料是透過 GraphQL API 在用戶端直接使用 Web 元件擷取的。僅靜態資料 (例如產品或類別資料) 可在 Dispatcher 上快取。如果產品資料發生變化，就需要快取失效。
 
-## 9. AEM Dispatcher的快取失效如何與AEM和商務搭配運作？
+## 9. AEM Dispatcher 的快取失效如何與 AEM 和 Commerce 搭配使用？
 
-Adobe建議針對Dispatcher上快取的頁面設定TTL型快取失效。 若是價格或庫存等動態資訊，Adobe建議在使用者端轉譯資料。 如需有關TTL型快取失效的詳細資訊，請參閱 [最佳化Dispatcher快取](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17458.html) 和 [AEM效能最佳化](https://experienceleague.adobe.com/docs/commerce-operations/deliver-commerce-at-scale/performance.html).
+Adobe 建議為 Dispatcher 上快取的頁面設定 TTL 型快取失效。對於價格或庫存等動態訊息，Adobe 建議在用戶端呈現資料。有關 TTL 型快取失效的詳細資訊，請參閱「[最佳化 Dispatcher 快取](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17458.html)」和「[AEM 效能最佳化](https://experienceleague.adobe.com/docs/commerce-operations/deliver-commerce-at-scale/performance.html)」。
 
-## 10.對於使用Commerce跨AEM內容進行整合式搜尋是否有任何建議？
+## 10. 對於使用 Commerce 跨 AEM 內容進行整合搜尋有什麼建議嗎？
 
-已提供產品搜尋參考實作，但未提供具有內容的整合式搜尋。 此功能因客戶而異，專案專屬層級也能提供更好的解決方案。
+提供了產品搜尋參考實施，但沒有與內容進行整合搜尋。此功能是特定於客戶的，且最好在特定專案層級上解決。
 
-## 11. Search如何使用CIF與AEM及商務搭配運作？
+## 11.「搜尋」在 AEM 和使用 CIF 的商務上的運作方式為何？
 
-CIF提供「搜尋列」和「搜尋結果」元件。 搜尋列元件會將具有搜尋字詞的GraphQL要求傳送至商業解決方案，然後傳回包含產品名稱、價格、SLUG等的產品清單。 「搜尋結果」元件接著會在以AEM建立的搜尋結果頁面上的相簿檢視中顯示搜尋結果。 「搜尋」支援基本的全文檢索搜尋。 我們使用SLUG/url鍵來建置PDP的參考。
+CIF 可提供搜尋列和搜尋結果元件。搜尋列元件會將包含搜尋字詞的 GraphQL 要求傳送至商務解決方案，然後商務解決方案會傳回包含產品名稱、價格、SLUG 等的產品清單。然後，搜尋結果元件會將搜尋結果顯示在於 AEM 中所建立搜尋結果頁面的程式庫檢視中。搜尋支援基本的全文搜尋。我們可使用 SLUG/url 鍵來建置對 PDP 的參考。
 
-## 12.如何在MSM或翻譯中使用產品資料？
+## 12. 如何將產品資料用於 MSM 或翻譯？
 
-產品資料已在PIM或Adobe Commerce中轉譯。 AEM - Adobe Commerce整合支援連線至多個Adobe Commerce商店和商店檢視。 在MSM設定中，通常一個AEM網站會連結至一個Adobe Commerce商店檢視。
+產品資料已在 PIM 或 Adobe Commerce 中進行翻譯。AEM - Adobe Commerce 整合支援連接到多個 Adobe Commerce 商店和商店檢視。在 MSM 設定中，通常會將一個 AEM 網站連結到一個 Adobe Commerce 商店檢視。
 
-## 13.是否有辦法以商業文字來增強產品資料？ 您會在哪裡執行此動作？ 在AEM中還是在商業解決方案中？
+## 13. 是否能夠使用商務文字來增強產品資料？要在哪裡進行？在 AEM 還是在商務解決方案中？
 
-Adobe建議管理AEM中的行銷相關資料和內容。 使用內容片段的其他屬性裝飾您的商業解決方案的產品資料，或建立非結構化內容的體驗片段並將其與您的產品連結。
+Adobe 建議在 AEM 中管理行銷相關資料和內容。使用內容片段透過附加屬性修飾商務解決方案中的產品資料，或為非結構化內容建立體驗片段，並將其連結到您的產品。
 
-## 14.在整個展示層使用AEM時，如何確保PCI法規遵循？
+## 14. 在整個表示層使用 AEM 時，如何確保 PCI 合規性？
 
-Adobe建議使用抽象的付款方法。 這樣一來，瀏覽器使用者端就會與支付閘道提供者直接通訊，因此Adobe或商業解決方案都不會保留或傳遞持卡人資料。 此方法只需要第3級PCI相容性。 不過，還有其他完全符合PCI規範的事項需要考慮，例如員工如何與系統和資料互動。 如需Adobe Commerce PCI法規遵循的詳細資訊，請參閱 [PCI法規遵循需求](https://business.adobe.com/products/magento/pci-compliance.html).
+Adobe 建議使用抽象的付款方式。這可讓瀏覽器用戶端與支付閘道提供者直接通訊，如此 Adobe 或商務解決方案都不會儲存或傳遞持卡人資料。此方法僅需要 3 級 PCI 合規性。然而，要完全符合 PCI 標準還需要考慮其他事項，例如員工如何與系統和資料互動。有關 Adobe Commerce PCI 合規性的詳細資訊，請參閱「[PCI 合規性要求](https://business.adobe.com/products/magento/pci-compliance.html)」。
 
-## 15.如果我使用AEM和Adobe Commerce雲端版本，此聯合解決方案是否符合PCI規範？
+## 15. 如果我使用 AEM 和 Adobe Commerce 雲端版本，此聯合解決方案是否符合 PCI 要求？
 
-可以，您可以依要求取得自我評估問卷D和合規證明。
+是的，可根據要求提供自我評估問卷 D 和合規性證明。
 
-## 16.如何要求I/O Runtime試用版授權？
+## 16. 如何申請 I/O 執行階段試用版授權？
 
-您可以要求試用授權以使用I/O Runtime [此處](https://developer.adobe.com/app-builder/trial/).
+您可以在「[這裡](https://developer.adobe.com/app-builder/trial/)」申請使用 I/O 執行階段的試用版授權。

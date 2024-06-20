@@ -1,17 +1,18 @@
 ---
-title: 從URL或其他工作表載入下拉式清單選項，以供AEM Formsas a Cloud ServiceEdge Delivery Services
-description: 下拉式清單選項是包含在不同的試算表中，然後可透過提供的 URL 匯入到主要試算表中。
+title: 從一個 URL 或另一份工作表載入 Edge Delivery Services for AEM Forms as a Cloud Service 的下拉式清單選項
+description: 下拉式清單選項包含在不同的試算表中，然後透過所提供的 URL 匯入到主要試算表。
 feature: Edge Delivery Services
 exl-id: 5b0bc1b6-6e33-41f3-b7c1-4d997787b6cd
-source-git-commit: 8730383d26c6f4fbe31a25a43d33bf314251d267
+role: Admin, Architect, Developer
+source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
 workflow-type: tm+mt
 source-wordcount: '469'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
 
-# URL或其他工作表的選項，用於AEM Forms的as a Cloud ServiceEdge Delivery Services
+# 來自一個 URL 或另一份工作表的 Edge Delivery Services for AEM Forms as a Cloud Service 選項
 
 表單通常包含下拉式選單，供使用者選取預先定義的選項。這些選項通常在表單本身內定義，但清單很長管理起來會很麻煩。本指南概述如何透過 URL 從單獨的試算表載入下拉式清單選項來提升表單製作效率。
 

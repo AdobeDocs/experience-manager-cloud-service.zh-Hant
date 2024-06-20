@@ -11,7 +11,8 @@ feature: Commerce Integration Framework
 kt: 4279
 thumbnail: customize-aem-cif-core-component.jpg
 exl-id: 4933fc37-5890-47f5-aa09-425c999f0c91
-source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
 workflow-type: tm+mt
 source-wordcount: '2298'
 ht-degree: 0%
@@ -352,7 +353,7 @@ AEM元件的常見擴充功能是修改元件產生的標籤。 此編輯透過�
        componentGroup="Venia - Commerce"/>
    ```
 
-   以上元件定義適用於專案中的產品Teaser元件。 注意屬性 `sling:resourceSuperType="core/cif/components/commerce/productteaser/v1/productteaser"`. 此屬性是建立 [Proxy元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/using.html#create-proxy-components). 除了從AEM CIF核心元件複製和貼上產品Teaser HTL指令碼之外，您還可以使用 `sling:resourceSuperType` 以繼承所有功能。
+   以上元件定義適用於專案中的產品Teaser元件。 注意屬性 `sling:resourceSuperType="core/cif/components/commerce/productteaser/v1/productteaser"`. 此屬性是建立 [Proxy元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/using.html#create-proxy-components). 您可以使用「 」，而不是從AEM CIF核心元件複製和貼上Product Teaser HTL指令碼 `sling:resourceSuperType` 以繼承所有功能。
 
 1. 開啟檔案 `productteaser.html`. 此檔案是 `productteaser.html` 來自的檔案 [CIF產品Teaser](https://github.com/adobe/aem-core-cif-components/blob/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser/productteaser.html).
 

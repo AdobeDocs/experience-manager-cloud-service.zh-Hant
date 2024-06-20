@@ -2,7 +2,9 @@
 title: 在Cloud Manager中將Screens附加元件新增到現有計畫
 description: 瞭解如何在Cloud Manager for Screensas a Cloud Service將Screens附加元件新增到現有程式。
 exl-id: 0f9a2c21-2d45-470e-a096-443741f9f2ab
-source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
+feature: Screens Deployments
+role: Admin, Developer, User
+source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
 workflow-type: tm+mt
 source-wordcount: '244'
 ht-degree: 3%

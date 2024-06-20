@@ -1,8 +1,10 @@
 ---
-title: 實作 AEM 連接器
+title: 實施 AEM 連接器
 description: 了解關於連接器、這類工具的功能，以及如何在 Experience Manager 中實作這些重要工具。
 exl-id: 70024424-8c52-493e-bbc9-03d238b8a5f5
-source-git-commit: 07db10c4ee9cced7b6a697fe4f41c99eaba6a39f
+feature: Operations
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
 workflow-type: tm+mt
 source-wordcount: '935'
 ht-degree: 8%
@@ -10,12 +12,12 @@ ht-degree: 8%
 ---
 
 
-實作 AEM 連接器
+實施 AEM 連接器
 =============================
 
 以下提供建立 [AEM Connectors的實用參考](https://www.adobe.io/apis/experiencecloud/aem/aemconnectors.html) ，並應結合提交和維護連接器 [的指](submit.md) 南來閱讀 [](maintain.md) 。
 
-若需AEM的開發人員授權，請前往 [Adobe交換程式](https://partners.adobe.com/exchangeprogram/experiencecloud).
+若需AEM的開發人員授權，請前往 [Adobe Exchange計畫](https://partners.adobe.com/exchangeprogram/experiencecloud).
 
 常見整合模式
 ---------------------------
@@ -47,7 +49,7 @@ Experience Manageras a Cloud Service [檔案](../overview/introduction.md) 提�
 除了上述靜態檔案之外，Adobe和AEM社群還提供資源，協助將聯結器推向市場：
 
 * Adobe社群的 [AEM論壇](https://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.html) 是同儕提出和回應問題的作用中網站
-* 為特定合作夥伴層級提供其他Adobe技術資源。 進一步瞭解 [Adobe交換程式](https://partners.adobe.com/exchangeprogram/experiencecloud).
+* 為特定合作夥伴層級提供其他Adobe技術資源。 進一步瞭解 [Adobe Exchange計畫](https://partners.adobe.com/exchangeprogram/experiencecloud).
 * 如果貴組織想要實作協助，請考慮選擇Adobe的 [Professional Services](https://www.adobe.com/marketing-cloud/service-support/professional-consulting-training.html) team，或參閱 [Solution Partner Finder](https://solutionpartners.adobe.com/home/partnerFinder.html) ，以取得Adobe全球合作夥伴的清單
 
 套件結構規則

@@ -1,11 +1,12 @@
 ---
 title: 開始使用PWA Studio的AEM擴充功能
-description: 瞭解如何使用PWA Studio部署AEM Headless Content and Commerce專案。
+description: 瞭解如何使用PWA Studio部署AEM Headless內容和Commerce專案。
 topics: Commerce
 feature: Commerce Integration Framework
 thumbnail: 37843.jpg
 exl-id: a7c187ba-885e-45bf-a538-3c235b09a0f1
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
 workflow-type: tm+mt
 source-wordcount: '719'
 ht-degree: 0%

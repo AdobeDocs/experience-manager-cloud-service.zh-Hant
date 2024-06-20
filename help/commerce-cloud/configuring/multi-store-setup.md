@@ -10,7 +10,8 @@ feature: Commerce Integration Framework
 kt: 3046
 thumbnail: 28952.jpg
 exl-id: 4385c9e5-2b25-4f95-952f-72349431cf94
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
 workflow-type: tm+mt
 source-wordcount: '364'
 ht-degree: 3%
@@ -47,7 +48,7 @@ Adobe Experience Manager (AEM) CIF核心元件可用於多個AEM網站結構，�
 
    >[!TIP]
    >
-   > 商業目錄可使用ID或UID來處理。 Adobe Commerce 2.4.2匯入了UID。只有在您的Commerce後端支援2.4.2版或更新版本的GraphQL結構描述時，才會啟用此功能。
+   > Commerce目錄可使用ID或UID來處理。 Adobe Commerce 2.4.2匯入了UID。只有在您的Commerce後端支援2.4.2版或更新版本的GraphQL結構描述時，才會啟用此功能。
 
 4. 將子組態指派至AEM站台
 

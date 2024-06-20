@@ -2,9 +2,11 @@
 title: 建立元件
 description: AEM元件可用來保留、格式化及轉譯可在網頁上使用的內容。 請依照本頁面的說明了解如何編寫管道和轉譯元件。
 exl-id: a81e812e-29ed-45de-b2d0-1fb0a8c5ce1a
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+feature: Developing Screens
+role: Admin, Developer
+source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
 workflow-type: tm+mt
-source-wordcount: '287'
+source-wordcount: '284'
 ht-degree: 3%
 
 ---

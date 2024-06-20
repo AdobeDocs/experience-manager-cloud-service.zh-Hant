@@ -8,7 +8,8 @@ doc-type: tutorial
 kt: 4947
 thumbnail: 37843.jpg
 exl-id: 73ba707e-5e2d-459a-8cc8-846d1a5f2fd7
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
 workflow-type: tm+mt
 source-wordcount: '1066'
 ht-degree: 1%
@@ -23,7 +24,7 @@ ht-degree: 1%
 
 AEM Commerceas a Cloud Service入門有兩個步驟：
 
-1. 啟用AEM Commerceas a Cloud Service並布建CIF附加元件
+1. 啟用AEM Commerceas a Cloud Service，並布建CIF附加元件
 2. 將AEM Commerceas a Cloud Service與您的商務解決方案連線
 
 第一個入門步驟透過Adobe完成。 如需有關定價和布建的詳細資訊，請洽詢您的銷售代表。
@@ -32,9 +33,9 @@ AEM Commerceas a Cloud Service入門有兩個步驟：
 
 第二步是每個AEMas a Cloud Service環境的自助服務。 在CIF附加元件初始布建後，您必須進行一些其他設定。
 
-## 將AEM與商務解決方案連線 {#solution}
+## 將AEM與Commerce解決方案連線 {#solution}
 
-若要連線CIF附加元件和 [AEM CIF Core Components](https://github.com/adobe/aem-core-cif-components) 使用商務解決方案時，您必須透過GraphQL環境變數提供Cloud Manager端點URL。 變數名稱為 `COMMERCE_ENDPOINT`. 必須設定透過HTTPS的安全連線。
+若要連線CIF附加元件和 [AEM CIF核心元件](https://github.com/adobe/aem-core-cif-components) 使用商務解決方案時，您必須透過GraphQL環境變數提供Cloud Manager端點URL。 變數名稱為 `COMMERCE_ENDPOINT`. 必須設定透過HTTPS的安全連線。
 
 此環境變數用於兩個位置：
 
@@ -57,7 +58,7 @@ CIF附加元件可選擇性支援AEM作者使用分階段目錄資料，且僅�
 
 按一下此按鈕會開啟對話方塊：
 
-![CM商務端點](/help/commerce-cloud/assets/commerce-cm-endpoint.png)
+![CM Commerce端點](/help/commerce-cloud/assets/commerce-cm-endpoint.png)
 
 在設定分段目錄支援的端點及授權標頭（可選）後，端點會顯示在詳細資訊頁面上。 按一下「編輯」圖示，開啟相同的對話方塊，您可在其中編輯端點（如有必要）。
 
@@ -99,11 +100,11 @@ CIF附加元件可選擇性支援AEM作者使用分階段目錄資料，且僅�
 >
 >您可以使用以下命令列出所有Cloud Manager變數以仔細檢查： `aio cloudmanager:list-environment-variables ENVIRONMENT_ID`
 
-您已準備好使用AEM Commerceas a Cloud Service，並可透過Cloud Manager部署您的專案。
+您已準備好使用AEM Commerceas a Cloud Service，可以透過Cloud Manager部署您的專案。
 
 ## 設定存放區和目錄 {#catalog}
 
-CIF附加元件和 [CIF核心元件](https://github.com/adobe/aem-core-cif-components) 可用於連線至不同商業商店（或商店檢視等）的多個AEM網站結構。 根據預設，CIF附加元件會以連線到Adobe Commerce預設存放區和目錄的預設設定進行部署。
+CIF附加元件和 [CIF Core Components](https://github.com/adobe/aem-core-cif-components) 可用於連線至不同商業商店（或商店檢視等）的多個AEM網站結構。 根據預設，CIF附加元件會以連線到Adobe Commerce預設存放區和目錄的預設設定進行部署。
 
 您可以透過以下步驟中的CIFCloud Service設定，針對專案調整此設定：
 

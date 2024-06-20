@@ -2,9 +2,11 @@
 title: 產品駕駛艙
 description: 瞭解如何使用產品駕駛艙，提供連結產品目錄和相關內容的統一總覽。
 exl-id: 6dbf039c-e040-48f1-88f3-ebbd70cdf94d
-source-git-commit: ba0c1e13f311f48ac138f2c3ca582835a4a83bf6
+feature: Commerce Integration Framework
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
 workflow-type: tm+mt
-source-wordcount: '448'
+source-wordcount: '433'
 ht-degree: 1%
 
 ---
@@ -33,7 +35,7 @@ ht-degree: 1%
 
 ## 開啟產品駕駛艙 {#opening-product-cockpit}
 
-存取產品駕駛艙的最簡單方式是透過AEM主功能表中的「商務」功能表。 也可以使用Omnisearch （搜尋Commerce）或oping `https://<yourAEMInstance>/commerce.html`.
+存取產品駕駛艙最簡單的方式是透過AEM主功能表中的「Commerce」功能表。 您也可以使用Omnisearch (搜尋Commerce)或oping `https://<yourAEMInstance>/commerce.html`.
 
 ![AEM功能表](../assets/aem-menu.png)
 
@@ -71,7 +73,7 @@ ht-degree: 1%
 
 按一下產品或類別的屬性圖示會開啟所選物件的屬性檢視。 產品變體的開啟屬性等於開啟主要產品屬性。
 
-### 商務標籤 {#tabs}
+### Commerce標籤 {#tabs}
 
 一般和變體標籤會顯示來自商務後端的預先定義商務屬性。 此資料(包括 變體)是AEM中的唯讀資料，因為記錄系統是商務後端。 變體索引標籤只會針對具有變體的產品顯示，並顯示所有變體的清單。
 

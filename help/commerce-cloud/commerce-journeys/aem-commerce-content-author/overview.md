@@ -2,10 +2,12 @@
 title: AEM Commerce 內容作者歷程
 description: 從這裡開始，此歷程會逐步引導您了解 AEM Commerce 編寫
 exl-id: 155a2534-746d-4237-b7e2-9212c36fac7f
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+feature: Commerce Integration Framework
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
 workflow-type: tm+mt
 source-wordcount: '453'
-ht-degree: 81%
+ht-degree: 95%
 
 ---
 
@@ -25,7 +27,7 @@ ht-degree: 81%
 
 ## AEM 文件歷程 {#documentation-journeys}
 
-[檔案歷程](/help/journey-documentation/documentation-journeys.md) 藉由提供敘述來協助剛開始使用AEM的讀者，讓他們能從頭到尾理解和解決業務問題，同時將採用的先前主題或AEM知識降至最低，藉以連結許多不同、複雜的主題和功能。
+[文件歷程](/help/journey-documentation/documentation-journeys.md)連結許多不同的複雜主題和功能，提供相關敘述來協助剛開始使用 AEM 的讀者，讓他們能從頭到尾理解和解決業務問題，但是事前不需要知道太多主題資訊或 AEM 知識。
 
 文件歷程根據最佳實務原則而設計，其中包含 Adobe 的最新研究、Adobe 顧問的成熟實作經驗以及客戶專案的意見回饋。
 
@@ -35,13 +37,13 @@ ht-degree: 81%
 
 此歷程專為 AEM Commerce 內容作者所設計。此歷程闡述開始使用及管理目錄頁面、範本和完全產品體驗的要求、步驟和方法。
 
-此歷程中的資訊對其他角色可能有用，但有些資訊對特定角色來說是多餘的。 請密切注意即將到來、涵蓋其他角色的歷程。
+此歷程提供的資訊可能對其他角色有用，但某些資訊對某些角色來說是多餘的。請密切注意即將到來、涵蓋其他角色的歷程。
 
 ## 歷程 {#the-journey}
 
 您將在此歷程中探索許多主題。以下文章為您提供基本知識和外部詳細技術文件的連結。
 
-儘管您可以直接進入歷程的特定部分，但許多概念都是以先前文章中的概念為基礎。因此，如果您是AEM內容和商務的新手，Adobe建議您從頭開始，然後循序漸進。
+儘管您可以直接進入歷程的特定部分，但許多概念都是以先前文章中的概念為基礎。因此，如果您是AEM內容和Commerce的新手，Adobe建議您從頭開始，然後循序漸進。
 
 | # | 文章 | 說明 |
 |---|---|---|

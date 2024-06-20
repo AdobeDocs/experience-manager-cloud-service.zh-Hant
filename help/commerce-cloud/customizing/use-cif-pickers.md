@@ -8,14 +8,15 @@ activity: develop
 audience: developer
 feature: Commerce Integration Framework
 exl-id: 30f1f263-1b78-46ae-99ed-61861c488b2a
-source-git-commit: ddf9632c0aad1fd5a3c2fb02fe1c9673ae4eb029
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
 workflow-type: tm+mt
 source-wordcount: '560'
 ht-degree: 0%
 
 ---
 
-# AEM Content &amp; Commerce編寫選擇器 {#cif-pickers}
+# AEM內容與Commerce編寫選擇器 {#cif-pickers}
 
 AEM Content &amp; Commerce Authoring提供一套製作工具，可協助AEM作者和行銷人員有效使用商務產品資料和目錄。 產品選擇器和類別選擇器是CIF附加元件的一部分，由CIF核心元件使用。 專案可以在任何元件對話方塊中使用這些選擇器來選取產品或類別。
 

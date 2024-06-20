@@ -2,7 +2,9 @@
 title: 瀏覽至 Screens 服務提供者
 description: 本頁面說明如何導覽至Screens服務提供者。
 exl-id: 9eff6fe8-41d4-4cf3-b412-847850c4e09c
-source-git-commit: aa032af2ed7ff877b4c9f9cb6d427c84e71c3874
+feature: Administering Screens
+role: Admin, Developer, User
+source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
 workflow-type: tm+mt
 source-wordcount: '280'
 ht-degree: 6%
@@ -36,7 +38,7 @@ ht-degree: 6%
    ![影像](/help/screens-cloud/assets/configure/configure-screens0.png)
 
 3. 在「編輯設定」對話方塊中輸入下列詳細資料。
-   * **發佈Url** - AEM發佈URL (例如， `https://publish-p12345-e12345.adobeaemcloud.com`)
+   * **Publish Url** - AEM發佈URL (例如， `https://publish-p12345-e12345.adobeaemcloud.com`)
    * **作者Url** - AEM作者URL (例如， `https://author-p12345-e12345.adobeaemcloud.com`)
 
    >[!NOTE]

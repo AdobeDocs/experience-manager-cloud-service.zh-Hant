@@ -2,10 +2,12 @@
 title: 在Screensas a Cloud Service註冊播放器
 description: 本頁面說明如何在Screensas a Cloud Service中註冊播放器。
 exl-id: 1a0d6b22-71b1-4f3c-acaa-82d8d9c0f81a
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+feature: Developing Screens
+role: Admin, Developer, User
+source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
 workflow-type: tm+mt
-source-wordcount: '499'
-ht-degree: 1%
+source-wordcount: '500'
+ht-degree: 13%
 
 ---
 
@@ -65,7 +67,7 @@ ht-degree: 1%
 
    >[!IMPORTANT]
    >**使用註冊代碼時的安全性最佳實務建議**
-   >最佳做法是限制註冊代碼的使用方式。 如果註冊碼遭到破壞，但限製為100個註冊，則攻擊者最多只能註冊該號碼，但不能註冊更多號碼。 建立註冊代碼並註冊部分客戶播放器後，您隨時都可以更新使用量限制。 如果客戶發現特定註冊代碼有異常註冊活動，他們可以在調查時即時降低限制，並且如果這是誤報，還可以增加數量，而不會影響已註冊的玩家。
+   >作為最佳實務，您可以限制註冊代碼的使用。如果註冊代碼被洩露，但註冊次數限制為 100 次，則攻擊者最多只能註冊該數量而不是更多。在建立註冊代碼並且部分客戶的播放器已經註冊後，您可以隨時更新使用限制。如果客戶發現特定註冊代碼有異常註冊活動，他們可以在調查時即時降低限制，並且如果這是誤報，還可以增加數量，而不會影響已註冊的玩家。
 
 
 ## 下一步 {#whats-next}

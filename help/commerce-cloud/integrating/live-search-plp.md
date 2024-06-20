@@ -1,13 +1,15 @@
 ---
 title: 『[!DNL Live Search] 產品清單頁面CIF元件
 description: 使用CIF元件來啟用 [!DNL Live Search] AEM網站上的產品清單頁面元件
-source-git-commit: eaec541c191fc8f68d78662f2b6ab9140460aa9f
+exl-id: 7f2d9a43-a7cb-4d9d-a108-b016cd1ff81e
+feature: Commerce Integration Framework
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
 workflow-type: tm+mt
 source-wordcount: '433'
 ht-degree: 0%
 
 ---
-
 
 # [!DNL Live Search] CIF元件 {#live-search-cif-component}
 

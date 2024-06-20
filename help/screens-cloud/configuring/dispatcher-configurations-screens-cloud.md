@@ -1,8 +1,10 @@
 ---
 title: Screens中的Dispatcher設定as a Cloud Service
-description: 本頁面說明Screensas a Cloud Service中的Dispatcher設定。
+description: 本頁說明Screensas a Cloud Service中的Dispatcher設定。
 exl-id: cc04b480-9310-4975-a7c2-20682c567fa4
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+feature: Administering Screens
+role: Admin, Developer, User
+source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
 workflow-type: tm+mt
 source-wordcount: '140'
 ht-degree: 0%
@@ -35,7 +37,7 @@ ht-degree: 0%
 * 新增 `/statfileslevel "10"` 至 `/cache` 中的區段 `publish_farm.any`/.
 
   >[!NOTE]
-  >此快取規則支援從快取docroot快取最多10個層級，並在內容發佈時讓內容失效而不是讓所有內容失效。 您可以根據內容結構的設定深度來變更此層級。
+  >此快取規則支援快取docroot中的最多10個層級，且在內容發佈時失效，而不是使所有內容失效。 您可以根據內容結構的設定深度來變更此層級。
 
 * 將下列專案新增至 `/invalidate` 中的區段 `publish_farm.any`.
 

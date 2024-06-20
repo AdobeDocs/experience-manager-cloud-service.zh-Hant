@@ -2,9 +2,11 @@
 title: 資料保護和資料隱私權法規 - Adobe Experience Manager as a Cloud Service 整備
 description: 了解 Adobe Experience Manager as a Cloud Service 對各種資料保護和資料隱私權法規的支援，以及在實作新的 AEM as a Cloud Service 專案時如何遵守。這些法規包括歐盟一般資料保護規範 (GDPR)、加州消費者隱私法。
 exl-id: 5dfa353b-84c5-4b07-bfcd-b03c2d361553
-source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
+feature: Compliance
+role: Admin, Architect, Developer, Leader
+source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
 workflow-type: tm+mt
-source-wordcount: '734'
+source-wordcount: '717'
 ht-degree: 100%
 
 ---

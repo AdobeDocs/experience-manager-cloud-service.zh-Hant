@@ -3,7 +3,8 @@ title: 設定 CDN 上的流量
 description: 瞭解如何在設定檔案中宣告規則和篩選器，並使用Cloud Manager設定管道將它們部署到CDN，以設定CDN流量。
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
-source-git-commit: f9eeafbf128b4581c983e19bcd5ad2294a5e3a9a
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
 workflow-type: tm+mt
 source-wordcount: '1199'
 ht-degree: 4%

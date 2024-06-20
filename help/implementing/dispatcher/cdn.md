@@ -3,7 +3,8 @@ title: AEM as a Cloud Service 中的 CDN
 description: 瞭解如何使用AEM管理的CDN以及如何將您自己的CDN指向AEM管理的CDN。
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
-source-git-commit: 43fdf17ab09fd7a974c32cfd716f65072b678726
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
 workflow-type: tm+mt
 source-wordcount: '1118'
 ht-degree: 23%
@@ -40,7 +41,7 @@ AEM管理的CDN符合大部分客戶的效能與安全性需求。 對於發佈�
 >
 >AEM受管理的CDN只會處理來自允許IP的請求。 如果您將自己的CDN指向AEM管理的CDN，則請確定CDN的IP包含在允許清單中。
 
-### 在CDN設定流量 {#cdn-configuring-cloud}
+### 設定 CDN 上的流量 {#cdn-configuring-cloud}
 
 設定CDN流量和篩選器的規則可在設定檔案中宣告，並部署至CDN，方法是使用 [Cloud Manager的設定管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline). 如需詳細資訊，請參閱 [在CDN設定流量](/help/implementing/dispatcher/cdn-configuring-traffic.md) 和 [包含WAF規則的流量篩選規則](/help/security/traffic-filter-rules-including-waf.md).
 

@@ -3,7 +3,8 @@ title: 設定內容傳遞網路憑證和身份驗證
 description: 瞭解如何在設定檔案中宣告規則，再使用Cloud Manager設定管道來部署，以設定CDN憑證和驗證。
 feature: Dispatcher
 exl-id: a5a18c41-17bf-4683-9a10-f0387762889b
-source-git-commit: e6059a1109ca93452f80440744338b809279db9b
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
 workflow-type: tm+mt
 source-wordcount: '1065'
 ht-degree: 3%

@@ -2,7 +2,9 @@
 title: 非同步作業
 description: Adobe Experience Manager會以非同步方式完成部分耗用大量資源的工作，作為背景作業，以最佳化效能。
 exl-id: 9c5c4604-1290-4dea-a14d-08f3ab3ef829
-source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
+feature: Operations
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
 workflow-type: tm+mt
 source-wordcount: '854'
 ht-degree: 64%

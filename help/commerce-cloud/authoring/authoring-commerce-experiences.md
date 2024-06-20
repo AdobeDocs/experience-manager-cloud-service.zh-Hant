@@ -2,7 +2,9 @@
 title: 編寫Commerce體驗
 description: 瞭解如何在不離開上下文的情況下存取產品資料和內容，以有效率地撰寫和建置商務相關體驗。
 exl-id: 45d697b7-ec96-4c26-be2a-3395b731d52d
-source-git-commit: 77350822c261371e6eda1fd10d02dcd905a5dd6e
+feature: Commerce Integration Framework
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
 workflow-type: tm+mt
 source-wordcount: '721'
 ht-degree: 0%
@@ -65,7 +67,7 @@ AEM中的頁面編輯器已擴充功能，可存取即時產品資料和相關�
 
 ### 使用RTE在文字欄位中新增連結 {#rte}
 
-CIF產品目錄頁面是即時轉譯的虛擬頁面。 因此，不可能內嵌一般AEM頁面之類的超連結。 CIF將動作「商務連結」新增至RTE （RTF編輯器）。 此動作的運作方式與一般的「超連結」動作完全相同，但可讓作者使用選擇器選取產品或類別。
+CIF產品目錄頁面是即時轉譯的虛擬頁面。 因此，不可能內嵌一般AEM頁面之類的超連結。 CIF將動作「Commerce連結」新增至RTE （RTF編輯器）。 此動作的運作方式與一般的「超連結」動作完全相同，但可讓作者使用選擇器選取產品或類別。
 
 ![RTE](../assets/authoring/RTE.png)
 

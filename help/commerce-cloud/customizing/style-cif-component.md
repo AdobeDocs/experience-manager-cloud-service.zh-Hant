@@ -11,7 +11,8 @@ feature: Commerce Integration Framework
 kt: 3456
 thumbnail: 3456-style-cif.jpg
 exl-id: 521c1bb8-7326-4ee8-aba3-f386727e2b34
-source-git-commit: a868bf4d4acf4fbae7ccaf55b03319ba0617f9a4
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
 workflow-type: tm+mt
 source-wordcount: '2342'
 ht-degree: 0%
@@ -178,7 +179,7 @@ ht-degree: 0%
 
    這些使用者端程式庫並非由管理 `ui.frontend` 模組。 這些使用者端資料庫會包含Adobe所提供的CSS和JavaScript相依性。 這些使用者端資料庫的定義位於 `.content.xml` 每個資料夾下方的檔案。
 
-   **clientlib-base**  — 空白的使用者端程式庫，僅從內嵌必要的相依性 [AEM Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html). 類別為 `venia.base`.
+   **clientlib-base**  — 空白的使用者端程式庫，僅從內嵌必要的相依性 [AEM Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hant). 類別為 `venia.base`.
 
    **clientlib-cif**  — 空白的使用者端程式庫，僅從內嵌必要的相依性 [AEM CIF核心元件](https://github.com/adobe/aem-core-cif-components). 類別為 `venia.cif`.
 
