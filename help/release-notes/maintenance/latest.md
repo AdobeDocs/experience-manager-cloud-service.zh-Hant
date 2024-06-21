@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的目前維�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: d2f92869204dc0157dcc1f41d9fe88cdf5875965
+source-git-commit: 53b692b9f668387c889c28498bb20c67149e36be
 workflow-type: tm+mt
-source-wordcount: '595'
-ht-degree: 30%
+source-wordcount: '647'
+ht-degree: 28%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 30%
 
 * ASSETS-31977：增強資產移動、複製和刪除作業。
 * ASSETS-33618： Dynamic Media中視訊的自動轉寫和翻譯功能。
-* ASSETS-33618：ContentHub和DM的核准動作，並新增屬性至damAssetLucene屬性。
+* ASSETS-35185：ContentHub和DM的核准動作，並新增屬性至damAssetLucene屬性。
 * ASSETS-35533：將DRM和CAI屬性新增至damAssetLucene索引。
 * ASSETS-37280：當來源子標題(vtt)仍在處理時，翻譯的循序工作處理。
 * ASSETS-37559：改善資產已刪除事件。
@@ -59,6 +59,13 @@ ht-degree: 30%
 > AEM工程部門已針對Launches功能找出回歸，而這會影響目前從16461開始的AEM版本。 由於此回歸，包含非深層頁面的新啟動（在套用新版本後建立）由於遺失設定，將無法正常提升。
 > 如果您的環境受到影響，可透過客戶支援使用殼層指令碼來識別和更新缺少的設定(內部參考SITES-22457)。
 > 我們將提供更長期的修正，以確保使用所有正確的設定來建立新的啟動。 在此之前，您也可依需求使用內部修補程式版本。
+
+#### 表單
+
+1. 如果使用者下載最新的AEM Forms SDK (`AEM Forms add-on v2024.05.04.00-240400`)，批次檔案無法啟動Docker服務。 若要解決此問題：
+   1. 下載 [資料夾](/help/forms/assets/sdk_hotfix.zip).
+   1. 從下載的資料夾中解壓縮內容，並複製 `sdk.sh` 和 `sdk.bat` 檔案。
+   1. 取代現有的 `sdk.sh` 和 `sdk.bat` AEM Forms SDK中包含新檔案的檔案。
 
 ### 變更通知 {#change-notice-16799}
 
