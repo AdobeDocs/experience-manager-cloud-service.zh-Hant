@@ -4,10 +4,10 @@ description: 瞭解如何在設定檔案中宣告規則和篩選器，並使用C
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+source-git-commit: 1b4297c36995be7a4d305c3eddbabfef24e91559
 workflow-type: tm+mt
-source-wordcount: '1199'
-ht-degree: 4%
+source-wordcount: '1310'
+ht-degree: 3%
 
 ---
 
@@ -307,6 +307,42 @@ data:
 | **forwardCookie** （選擇性，預設為false） | 若設為true，則會將使用者端請求中的「Cookie」標頭傳遞至後端，否則會移除Cookie標頭。 |
 | **forwardAuthorization** （選擇性，預設為false） | 如果設為true ，則會將使用者端請求中的&quot;Authorization&quot;標頭傳遞至後端，否則會移除Authorization標頭。 |
 | **逾時** （選用，以秒為單位，預設為60） | CDN應等待後端伺服器傳遞HTTP回應本文第一個位元組的秒數。 此值也會用作後端伺服器的位元組逾時之間的值。 |
+
+### 代理至Edge Delivery Services {#proxying-to-edge-delivery}
+
+在某些情況下，來源選擇器應該用於透過AEM Publish將流量路由到AEMEdge Delivery Services：
+
+* 部分內容是由AEM Publish管理的網域所傳送，而來自相同網域的其他內容是由Edge Delivery Services所傳送
+* Edge Delivery Services提供的內容將受益於透過設定管道部署的規則，包括流量篩選器規則或請求/回應轉換
+
+以下是可實現此目標的原點選取器規則的範例：
+
+```
+kind: CDN
+version: '1'
+data:
+  originSelectors:
+    rules:
+      - name: select-edge-delivery-services-origin
+        when:
+          allOf:
+            - reqProperty: tier
+              equals: publish
+            - reqProperty: domain
+              equals: <Production Host>
+            - reqProperty: path
+              matches: "^^(/scripts/.*|/styles/.*|/fonts/.*|/blocks/.*|/icons/.*|.*/media_.*|/favicon.ico)"
+        action:
+          type: selectOrigin
+          originName: aem-live
+    origins:
+      - name: aem-live
+        domain: main--repo--owner.aem.live
+```
+
+>[!NOTE]
+> 由於已使用AdobeManaged CDN，請務必在中設定推送失效 **已管理** 模式，依循Edge Delivery Services [設定推送失效檔案](https://www.aem.live/docs/byo-dns#setup-push-invalidation).
+
 
 ## 使用者端重新導向 {#client-side-redirectors}
 
