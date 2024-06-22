@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2023.7.0 版�
 exl-id: 7866d94c-e54c-4bb2-aaa6-66c019e46336
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
-workflow-type: ht
+source-git-commit: f28f212574dda0ece2cedb56a714d381e5bd7d3c
+workflow-type: tm+mt
 source-wordcount: '896'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -84,7 +84,7 @@ Assets Essentials 現在會根據相關性 (依預設) 為搜尋結果進行排�
 
 * **[Headless 表單的 React 元件](https://github.com/adobe/aem-forms-headless-components/tree/main/packages/react-vanilla-components)**：您現在可以使用現成的 React 元件預覽和自訂 Headless 最適化表單轉譯。這些元件會運用最適化表單核心元件中的 BEM 類別進行樣式設定，讓您能夠輕鬆地根據特定需求自訂其外觀。
 
-* [**建立具有可重複區段的最適化表單**](/help/forms/create-forms-repeatable-sections.md)：您現在可製作可重複進行多筆資料紀錄擷取並以[折疊式](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html)、[精靈](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html)、[面板](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html)和[水平索引標籤](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html)元件為主的最適化表單。這些可重複的區段可讓您輕鬆提供多個資料條目。當無法事先知道需要多少份的資料時，這就非常有用。填表人可輕鬆新增或移除區段，使表單可依不同資料輸入情境進行調整，並簡化相同資料紀錄多次出現的收集作業。
+* [**建立具有可重複區段的最適化表單**](/help/forms/create-forms-repeatable-sections.md)：您現在可製作可重複進行多筆資料紀錄擷取並以[折疊式](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html)、[精靈](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html)、[面板](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel)和[水平索引標籤](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html)元件為主的最適化表單。這些可重複的區段可讓您輕鬆提供多個資料條目。當無法事先知道需要多少份的資料時，這就非常有用。填表人可輕鬆新增或移除區段，使表單可依不同資料輸入情境進行調整，並簡化相同資料紀錄多次出現的收集作業。
 
 
 ### [!DNL Forms] 中可用的搶鮮版功能 {#pre-release-features-available-in-forms-channel}

@@ -4,10 +4,10 @@ description: 了解 Sling Service 使用者對應和服務使用者定義的最�
 exl-id: 72f0dcbf-b4e6-4a73-8232-3574a212ac19
 feature: Security
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
-workflow-type: ht
+source-git-commit: f28f212574dda0ece2cedb56a714d381e5bd7d3c
+workflow-type: tm+mt
 source-wordcount: '1884'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -189,7 +189,7 @@ AEM 安全團隊為服務使用者定義了以下命名慣例，以增加新服�
 * 縮小範圍
 
    * 將存取控制原則放置在功能特定的子樹狀結構中
-   * 如果是分散式項目：使用限制來限制範圍 (如需內建限制的清單，請參閱[文件](http://jackrabbit.apache.org/oak/docs/security/authorization/restriction.html))。
+   * 如果是分散式項目：使用限制來限制範圍 (如需內建限制的清單，請參閱[文件](https://jackrabbit.apache.org/oak/docs/security/authorization/restriction.html))。
 
 * 確保一致性
 
