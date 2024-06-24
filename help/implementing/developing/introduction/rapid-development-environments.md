@@ -4,9 +4,9 @@ description: 瞭解如何使用快速開發環境在雲端環境中進行快速�
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 3577db15a276bed253c8fa51cbd100e90ec5ef45
+source-git-commit: 85dc92e1adc11a2ee513b7a43e0945b18b2f4790
 workflow-type: tm+mt
-source-wordcount: '4244'
+source-wordcount: '4215'
 ht-degree: 4%
 
 ---
@@ -223,11 +223,6 @@ RDE一次支援一個專案。 由於程式碼會從本機開發環境同步至R
 
 
 ### 全域旗標 {#global-flags}
-
->[!NOTE]
->
-> 這些全域旗標尚未開放使用。 這些功能將於6月推出。
-> 
 
 * 對於較不詳細的輸出，請使用安靜標幟：
 
@@ -565,11 +560,6 @@ RDE重設程式啟動後，通常需要幾分鐘才能完成並將環境恢復�
 有關如何使用Cloud Manager來管理您的環境的詳細資訊，請參閱 [Cloud Manager檔案](/help/implementing/cloud-manager/manage-environments.md).
 
 ## 支援JSON輸出的命令 {#json-commands}
-
->[!NOTE]
->
-> 這些命令尚無法使用。 這些功能將於6月推出。
-> 
 
 大部分的命令都支援全域 ```--json``` 此旗標會隱藏主控台輸出，並傳回要在指令碼中處理的有效json。 以下是一些支援的命令，以及json輸出的範例。
 
