@@ -1,31 +1,31 @@
 ---
-title: 目前的早期採用者功能 [!DNL Adobe Experience Manager Forms] as a Cloud Service。
-description: 目前的早期採用者功能 [!DNL Adobe Experience Manager Forms] as a Cloud Service。
+title: 目前的搶先存取功能 [!DNL Adobe Experience Manager Forms] as a Cloud Service。
+description: 目前的搶先存取功能 [!DNL Adobe Experience Manager Forms] as a Cloud Service。
 Feature: Introduction
 Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: 2766a351938062127babb01d5ed35bd37b705c21
+source-git-commit: 0c49e0ba5deb3659418cb0d057151863beac5340
 workflow-type: tm+mt
 source-wordcount: '1733'
 ht-degree: 22%
 
 ---
 
-# AEM Forms早期採用者計畫
+# AEM Forms搶先體驗計畫
 
-AEM Forms早期採用者計畫為您提供獨一無二的機會，讓您搶在其他人之前取得尖端功能的獨家存取權，並幫助打造他們的開發。 此計畫提供您：
+AEM Forms搶先使用計畫提供絕佳機會，讓您可以搶在其他人之前獨佔使用尖端功能，並幫助打造開發流程。 此計畫提供您：
 
 * 成為搶先體驗尖端技術的企業之一。
 * 與產品團隊共同創新，共同塑造產品的未來。 使用您的使用案例來指導開發，確保創新成熟並解決現實世界的挑戰。
 * 提供意見回饋，並協助我們在發行前解決問題，以便在完整發行時提供更流暢的使用者體驗。
 
-## 如何加入早期採用者計畫？
+## 如何加入搶先體驗計畫？
 
-如果您有興趣加入我們的早期採用者計畫，以進行任何早期採用者創新，只要將您的官方地址中的電子郵件傳送至 [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)  以要求存取權。 您可以要求存取所有或任何特定的創新。
+如果您有興趣加入我們的搶先存取計畫，以取得任何搶先存取的創新成果，只要將您官方地址的電子郵件傳送至 [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)  以要求存取權。 您可以要求存取所有或任何特定的創新。
 
-## 早期採用者創新
+## 搶先體驗創新
 
 ### AEM Forms Generative AI (Gen AI)
 
@@ -102,7 +102,7 @@ AEM Forms至Marketo聯結器橋接了使用Adobe Experience Manager (AEM)建立�
 本質上，AEM Forms至Marketo Connector可協助您運用兩個平台的優勢，建立更有效率的行銷漏斗。
 
 
-## 其他早期採用者創新功能
+## 其他早期存取創新
 
 ### 由右至左(RTL)語言支援
 
