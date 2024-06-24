@@ -1,9 +1,11 @@
 ---
 title: AEM Headless 查閱者篩選器設定
 description: Adobe Experience Manager 的查閱者篩選器允許第三方主機存取。需要查閱者篩選器的 OSGi 設定， Headless 應用程式才能存取 GraphQL 端點。
-feature: GraphQL API
+feature: Headless, GraphQL API
 exl-id: e2e3d2dc-b839-4811-b5d1-38ed8ec2cc87
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+solution: Experience Manager
+role: Admin, Developer
+source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
 workflow-type: tm+mt
 source-wordcount: '275'
 ht-degree: 100%

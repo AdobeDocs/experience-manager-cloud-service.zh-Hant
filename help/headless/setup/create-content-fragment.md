@@ -2,7 +2,9 @@
 title: 建立內容片段 - Headless 設定
 description: 了解如何使用 AEM 的內容片段來設計、建立、規劃和使用每頁自主的內容以進行 Headless 傳遞。
 exl-id: a227ae2c-f710-4968-8a00-bfe48aa66145
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+feature: Headless, Content Fragments,GraphQL API
+role: Admin, Developer
+source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
 workflow-type: tm+mt
 source-wordcount: '341'
 ht-degree: 85%
@@ -28,7 +30,7 @@ ht-degree: 85%
 1. 登入AEMas a Cloud Service，並從主功能表選取 **導覽** > **內容片段**.
 
 1. 選取 [您先前建立的資料夾。](create-assets-folder.md)
-1. 選擇 **建立**。
+1. 選取「**建立**」。
 1. 建立內容片段以顯示為對話框。
 選取您要用來建立內容片段的位置和模式。
 

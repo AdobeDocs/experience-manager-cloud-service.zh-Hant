@@ -1,9 +1,10 @@
 ---
 title: Headless 內容的權限考量事項
 description: 了解使用 Adobe Experience Manager 進行 Headless 實作時涉及的不同權限和 ACL 考量事項。了解編寫和發佈環境所需的不同角色和可能權限層級。
-feature: Content Fragments,GraphQL API
+feature: Headless, Content Fragments,GraphQL API
 exl-id: 3fbee755-2fa4-471b-83fc-3f4bf056267a
-source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
+role: Admin, Developer
+source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
 workflow-type: tm+mt
 source-wordcount: '811'
 ht-degree: 96%

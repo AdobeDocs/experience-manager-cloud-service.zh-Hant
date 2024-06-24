@@ -3,9 +3,9 @@ title: 如何架構目標內容的多網站管理
 description: 圖表顯示如何架構目標內容的多網站支援
 exl-id: c6b05c2a-0897-4514-8937-e23bfcf757d5
 solution: Experience Manager Sites
-feature: Authoring
+feature: Authoring, Personalization
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
 workflow-type: tm+mt
 source-wordcount: '181'
 ht-degree: 8%

@@ -3,9 +3,9 @@ title: 管理啟動項中的頁面
 description: 您可以在啟動項中建立新頁面。 您也可以刪除不要的頁面。
 exl-id: 214c8c2f-d09a-4ce9-b474-9505b76084f7
 solution: Experience Manager Sites
-feature: Authoring
+feature: Authoring, Launches
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
 workflow-type: tm+mt
 source-wordcount: '288'
 ht-degree: 1%

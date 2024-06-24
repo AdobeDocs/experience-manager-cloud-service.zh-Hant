@@ -2,10 +2,12 @@
 title: 建立 API 要求 - Headless 設定
 description: 了解如何使用 GraphQL API Headless 傳遞內容片段，以及如何使用 AEM Assets REST API 管理內容片段。
 exl-id: 2b72f222-2ba5-4a21-86e4-40c763679c32
-source-git-commit: 674db680f46a4fd4772cb10fe7cb396652354dfe
+feature: Headless, Content Fragments,GraphQL API
+role: Admin, Developer
+source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
 workflow-type: tm+mt
 source-wordcount: '674'
-ht-degree: 94%
+ht-degree: 97%
 
 ---
 
@@ -23,7 +25,7 @@ ht-degree: 94%
 
 >[!NOTE]
 >
->此 [內容片段和內容片段模型OpenAPI](/help/headless/content-fragment-openapis.md) 也可供使用。
+>也提供[內容片段和內容片段模型 OpenAPI](/help/headless/content-fragment-openapis.md)。
 
 本指南的其餘部分著重在 GraphQL 存取和內容片段傳遞。
 
@@ -106,4 +108,4 @@ GraphQL 可以避免反覆 API 要求和過度傳遞，而是允許大量傳遞�
 
 >[!NOTE]
 >
->此 [內容片段和內容片段模型OpenAPI](/help/headless/content-fragment-openapis.md) 也可供使用。
+>也提供[內容片段和內容片段模型 OpenAPI](/help/headless/content-fragment-openapis.md)。

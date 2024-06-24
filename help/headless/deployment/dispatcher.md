@@ -1,11 +1,12 @@
 ---
 title: 利用 AEM Headless 的 Dispatcher 端點設定
 description: Dispatcher 是 Adobe Experience Manager 發佈環境前面的快取和安全層。多個設定用於向 Headless 應用程式開啟 GraphQL 端點。
-feature: Dispatcher, GraphQL API
+feature: Headless, Dispatcher, GraphQL API
 exl-id: 78a20021-910f-4cf0-87bf-6e2223994f76
-source-git-commit: 316680823fe4bc85e1f4359305047c0d1f517dc7
-workflow-type: ht
-source-wordcount: '232'
+role: Admin, Developer
+source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+workflow-type: tm+mt
+source-wordcount: '212'
 ht-degree: 100%
 
 ---

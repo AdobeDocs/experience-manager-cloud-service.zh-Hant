@@ -4,7 +4,8 @@ description: 瞭解如何為內容片段製作內容，並根據用途建立該�
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
-source-git-commit: ec0129b0087e86f50c6c1e65d5445693e63278e0
+solution: Experience Manager Sites
+source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
 workflow-type: tm+mt
 source-wordcount: '2668'
 ht-degree: 5%
@@ -469,7 +470,7 @@ ht-degree: 5%
 
 定義URL後， **預覽** 按鈕作用中。 您可以選取此按鈕來啟動外部應用程式（在單獨的索引標籤中）以呈現內容片段。
 
-## 發佈您的片段 {#publish-content-fragment}
+## Publish您的片段 {#publish-content-fragment}
 
 您可以 **發佈** 您的片段成為：
 

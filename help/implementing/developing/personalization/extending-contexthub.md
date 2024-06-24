@@ -2,9 +2,9 @@
 title: 延伸 ContextHub
 description: 當提供的ContextHub存放區和模組不符合您的解決方案需求時，定義這些新的型別
 exl-id: ba817c18-f8bd-485d-b043-87593a6a93b5
-feature: Developing
+feature: Developing, Personalization
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
 workflow-type: tm+mt
 source-wordcount: '625'
 ht-degree: 0%

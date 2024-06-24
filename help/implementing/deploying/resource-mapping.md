@@ -6,10 +6,11 @@ topic-tags: configuring
 content-type: reference
 feature: Configuring
 exl-id: 1a1bb23c-d1d1-4e2b-811b-753e6a90a01b
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+role: Admin
+source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
 workflow-type: tm+mt
-source-wordcount: '545'
-ht-degree: 6%
+source-wordcount: '526'
+ht-degree: 2%
 
 ---
 
@@ -72,7 +73,7 @@ ResourceResolver.map方法用來將資源路徑對應至URL的專案清單。
 
 `https://localhost:4503/welcome` &quot;
 
-至:
+至：
 
 `https://localhost:4503/libs/cq/core/content/welcome.html`
 
@@ -104,7 +105,7 @@ ResourceResolver.map方法用來將資源路徑對應至URL的專案清單。
    * **名稱** `localhost_any`
 
 1. 按一下&#x200B;**「儲存全部」**。
-1. **將以下屬性新增至此節點：**
+1. **新增** 此節點的下列屬性：
 
    * **名稱** `sling:match`
 

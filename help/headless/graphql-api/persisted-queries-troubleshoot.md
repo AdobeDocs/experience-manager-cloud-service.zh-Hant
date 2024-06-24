@@ -1,9 +1,10 @@
 ---
 title: 疑難排解持續的GraphQL查詢
 description: 瞭解如何疑難排解Adobe Experience Manager as a Cloud Service中的持續性GraphQL查詢問題。
-feature: Content Fragments,GraphQL API
+feature: Headless, Content Fragments,GraphQL API
 exl-id: 71bd1f68-ca96-4c78-a936-abed250ecec1
-source-git-commit: 736fbc28c800c1c181721df7e0d7feed143642d9
+role: Admin, Developer
+source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
 workflow-type: tm+mt
 source-wordcount: '363'
 ht-degree: 0%

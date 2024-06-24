@@ -3,9 +3,9 @@ title: 在多個網站中使用目標內容
 description: 如果您需要管理目標內容，例如網站之間的活動、體驗和選件，您可以利用AEM針對目標內容的內建多網站支援
 exl-id: 03d2d640-8de8-4c4c-8a1d-756bb2dc8457
 solution: Experience Manager Sites
-feature: Authoring
+feature: Authoring, Personalization
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
 workflow-type: tm+mt
 source-wordcount: '2844'
 ht-degree: 4%

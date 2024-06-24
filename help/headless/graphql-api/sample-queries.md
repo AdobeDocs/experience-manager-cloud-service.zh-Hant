@@ -1,9 +1,10 @@
 ---
 title: 了解搭配使用 GraphQL 與 AEM - 範例內容和查詢
 description: 透過探索範例內容和查詢，了解如何搭配使用 GraphQL 與 AEM 以提供 Headless 內容。
-feature: Content Fragments,GraphQL API
+feature: Headless, Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
-source-git-commit: 07670a532294a4ae8afb9636a206d2a8cbdce2b9
+role: Admin, Developer
+source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
 workflow-type: tm+mt
 source-wordcount: '1826'
 ht-degree: 95%

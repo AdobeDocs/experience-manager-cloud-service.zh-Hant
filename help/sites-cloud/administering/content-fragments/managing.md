@@ -4,7 +4,8 @@ description: 瞭解如何從主控台和編輯器管理AEM內容片段、建立�
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
-source-git-commit: a9a2362903e8eec25393e2ceb307814e1a21f142
+solution: Experience Manager Sites
+source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
 workflow-type: tm+mt
 source-wordcount: '2628'
 ht-degree: 2%
@@ -291,7 +292,7 @@ ht-degree: 2%
 
 您可以將內容片段發佈至：
 
-* 此 **[發佈服務](/help/headless/deployment/architecture.md)**  — 完整公開存取
+* 此 **[Publish服務](/help/headless/deployment/architecture.md)**  — 完整公開存取
 
 * 此 **[預覽服務](/help/headless/deployment/architecture.md)**  — 在完整可用之前預覽內容
 
@@ -323,7 +324,7 @@ ht-degree: 2%
 
 1. 選取下列任一選項以開啟適當的對話方塊：
 
-   * **現在**  — 選取 **發佈服務**，或 **預覽服務**；確認後，片段將立即發佈
+   * **現在**  — 選取 **Publish服務**，或 **預覽服務**；確認後，片段將立即發佈
    * **排程**  — 除了必要的服務之外，您還可以選擇片段的發佈日期和時間
 
 1. 在對話方塊中提供所有詳細資料。 例如，對於已排程的發佈請求：

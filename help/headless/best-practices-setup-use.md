@@ -2,10 +2,12 @@
 title: 搭配內容片段設定及使用AEM GraphQL的最佳做法
 description: 瞭解設定及搭配內容片段使用AEM GraphQL的建議最佳實務。
 exl-id: 4d6a5aaa-c8be-4858-ad07-085dc4fb77e7
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+feature: Headless
+role: Admin, Developer
+source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
 workflow-type: tm+mt
-source-wordcount: '739'
-ht-degree: 40%
+source-wordcount: '702'
+ht-degree: 29%
 
 ---
 
@@ -61,14 +63,14 @@ ht-degree: 40%
 
 Dispatcher通常設定用於：
 
-* 發佈：生產
+* Publish：生產
 
 ### CORS設定 {#cors-setup}
 
 >[!NOTE]
 >如果快取位於 [AEM傳送器](#dispatcher-caching) 會啟用，則不需要進行CORS設定，因此可忽略此區段。
 
-若要存取 GraphQL 端點，必須設定 CORS 原則並新增至透過 Cloud Manager 部署到 AEM 的 AEM 專案。做法是為所需端點新增適當的 OSGi CORS 設定。
+若要存取GraphQL端點，必須設定CORS原則，並新增至透過Cloud Manager部署至AEM的AEM專案。 這可透過為所需端點新增適當的OSGi CORS設定檔案來完成。
 
 #### 詳細資料 {#details-cors-setup}
 
@@ -78,11 +80,11 @@ Dispatcher通常設定用於：
 
 CORS通常設定為：
 
-* 發佈：生產
+* Publish：生產
 
 ### 驗證 {#authentication}
 
-用於內容片段傳遞的 Adobe Experience Manager as a Cloud Service (AEM) GraphQL API 的主要使用案例是接受協力廠商應用程式或服務的遠端查詢。這些遠端查詢可能需要經驗證的 API 存取權，以確保 Headless 內容傳遞的安全。
+用於內容片段傳送的Adobe Experience Manager as a Cloud Service (AEM) GraphQL API的主要使用案例是接受來自協力廠商應用程式或服務的遠端查詢。 這些遠端查詢可能需要經驗證的 API 存取權，以確保 Headless 內容傳遞的安全。
 
 #### 詳細資料 {#details-authentication}
 
@@ -135,7 +137,7 @@ CORS通常設定為：
 
 CDN通常設定為：
 
-* 發佈：生產
+* Publish：生產
 
 ### 設定和建立內容片段 {#cconfigure-create-content-fragments}
 
@@ -183,7 +185,7 @@ AEM Headless CMS讓開發人員可以自由使用他們熟悉的語言、架構�
 #### 詳細資料 {#details-your-apps}
 
 * [安裝及使用用於開發的AEM SDK](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/aem-headless-sdk.html)
-* [AEM Headless開發人員資源](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
+* [AEM Headless開發人員資源](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=zh-Hant)
 * 範例，包括 [React](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/example-apps/react-app.html)， [Next.js](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/example-apps/next-js.html)， [Node.js](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/example-apps/server-to-server-app.html)，等等
 
 #### 環境 {#environments-your-apps}
@@ -205,4 +207,4 @@ AEM Headless CMS讓開發人員可以自由使用他們熟悉的語言、架構�
 
 * [與內容片段搭配使用的 AEM GraphQL API](/help/headless/graphql-api/content-fragments.md)
 * [使用 GraphiQL IDE](/help/headless/graphql-api/graphiql-ide.md)
-* [AEM Headless開發人員資源](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
+* [AEM Headless開發人員資源](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=zh-Hant)

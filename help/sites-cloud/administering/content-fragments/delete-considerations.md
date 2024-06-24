@@ -4,10 +4,11 @@ description: 在AEM中定義內容片段刪除原則之前，請檢閱這些重�
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: d1726bff-3aa8-4758-bee7-0cacea1f660a
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+solution: Experience Manager Sites
+source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
 workflow-type: tm+mt
 source-wordcount: '450'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -71,7 +72,7 @@ ht-degree: 1%
 
 * 對於 `jcr:content`所有內容片段的節點：
 
-   * `jcr:addChildNodes`, `jcr:modifyProperties`, 和 `jcr:removeChildNodes`
+   * `jcr:addChildNodes`， `jcr:modifyProperties`、和 `jcr:removeChildNodes`
 
 * 適用於以下所有節點 `jcr:content` 所有內容片段的：
 

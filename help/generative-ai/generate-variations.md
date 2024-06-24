@@ -2,7 +2,9 @@
 title: 產生變化版本
 description: 瞭解如何從AEMas a Cloud Service和Edge Delivery ServicesSidekick存取產生變數
 exl-id: 9114037f-37b9-4b2f-a714-10933f69b2c3
-source-git-commit: 207778a59e18407831292be9bd00ee7973ade78c
+feature: Generate Variations
+role: Admin, Architect, Developer
+source-git-commit: bbc51796c610af02b5260c063213cde2ef610ba2
 workflow-type: tm+mt
 source-wordcount: '3262'
 ht-degree: 1%
@@ -380,7 +382,7 @@ Adobe提供一些要使用的對象。
 1. 在Google Drive中建立試算表檔案，內含兩欄：
    1. 第一欄將顯示在下拉式清單中。
    1. 第二欄會是對象說明。
-1. 發佈檔案：
+1. Publish檔案：
    1. 檔案 — >共用 — >發佈至網頁 — > CSV
 1. 將URL複製到已發佈的檔案。
 1. 前往產生變數。

@@ -1,9 +1,10 @@
 ---
 title: AEM Headless 架構
 description: 了解 Adobe Experience Manager 高階架構，因為它與無周邊部署相關。了解 AEM 作者、預覽和發佈服務的角色，以及無周邊應用程式的建議部署模式。
-feature: Content Fragments,GraphQL API
+feature: Headless, Content Fragments,GraphQL API
 exl-id: 5ba6921f-b06e-463d-b956-d1fb434090c9
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+role: Admin, Developer
+source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
 workflow-type: tm+mt
 source-wordcount: '554'
 ht-degree: 100%
@@ -16,7 +17,7 @@ ht-degree: 100%
 
 * **作者服務**&#x200B;是內部使用者建立、管理和預覽內容的地方。
 
-* **發佈服務**&#x200B;被認為是「即時」環境，通常是一般使用者與其互動。內容在作者服務上經編輯和核准後，將傳遞到發佈服務。AEM 無周邊應用程式最常見的部署模式是讓應用程式的生產版本連接到 AEM Publish 服務。
+* **發佈服務**&#x200B;被認為是「即時」環境，通常是一般使用者與其互動。內容在編寫服務上經編輯和核准後，將傳遞到發佈服務。AEM 無周邊應用程式最常見的部署模式是讓應用程式的生產版本連接到 AEM Publish 服務。
 
 * **預覽服務**&#x200B;的功能與&#x200B;**發佈服務**&#x200B;相同。但是，它僅供內部使用者使用。因為最適合核准者用來審查即將發生的內容變更，然後再上線給一般使用者。
 

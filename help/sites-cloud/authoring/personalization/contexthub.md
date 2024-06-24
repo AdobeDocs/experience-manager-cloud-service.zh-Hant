@@ -3,9 +3,9 @@ title: 使用 ContextHub 資料預覽頁面
 description: ContextHub工具列會顯示ContextHub存放區中的資料，並可讓您變更存放區資料，且可用於預覽內容
 exl-id: 9c0536c5-900e-4814-9e31-f9fee5adc17c
 solution: Experience Manager Sites
-feature: Authoring
+feature: Authoring, Personalization
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
 workflow-type: tm+mt
 source-wordcount: '360'
 ht-degree: 3%

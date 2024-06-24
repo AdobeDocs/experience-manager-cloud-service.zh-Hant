@@ -2,7 +2,9 @@
 title: 建立內容片段模型 - Headless 設定
 description: 針對您將建立並使用 AEM Headless 功能提供的內容，使用內容片段模型來定義該內容的結構。
 exl-id: 8e3e4d00-34d3-4d4f-bc3a-43b8a322b986
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+feature: Headless, Content Fragments,GraphQL API
+role: Admin, Architect, Developer
+source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
 workflow-type: tm+mt
 source-wordcount: '477'
 ht-degree: 88%
@@ -27,7 +29,7 @@ ht-degree: 88%
 1. 選取透過建立您的設定所建立的資料夾。
 
    ![模型資料夾](../assets/models-folder.png)
-1. 選擇 **建立**。
+1. 選取「**建立**」。
 1. 提供&#x200B;**模型標題**、**標記**&#x200B;和&#x200B;**描述**。您也可以選擇/取消選擇&#x200B;**啟用模型** 以控制模型是否在建立時立即啟用。
 
    ![建立模型](../assets/models-create.png)

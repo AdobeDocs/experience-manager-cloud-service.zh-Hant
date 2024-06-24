@@ -4,10 +4,11 @@ description: 瞭解您的內容片段的結構。 如此可提供與Headless傳�
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: d9268c1a-bfe6-4df7-bad9-6007dd79e0aa
-source-git-commit: 62ede258711d0cb8d0b72479559c37221509e23f
+solution: Experience Manager Sites
+source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
 workflow-type: tm+mt
 source-wordcount: '128'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -26,7 +27,7 @@ Experience Manager (AEM)提供數種檢視和分析片段結構的方法。
    * [管理這些參考資料](/help/sites-cloud/administering/content-fragments/authoring.md##manage-references)
    * [尋找片段的父參照](/help/sites-cloud/administering/content-fragments/managing.md#parent-references-fragment)
 
-## 樹狀結構 {#structure-tree}
+## 結構樹 {#structure-tree}
 
 開啟 **樹狀結構** 標籤以顯示內容片段的階層結構及其參考。 使用連結圖示開啟參照。
 
