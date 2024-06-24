@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 68e2f6867a2cbcaf52fa6de259fe118e31ee7573
-workflow-type: ht
+source-git-commit: bd0d35c57e333d861072e189d0bef0ba14700664
+workflow-type: tm+mt
 source-wordcount: '1942'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -121,12 +121,12 @@ ht-degree: 100%
 
 
 
-### AEM Forms 的早期採用者功能 {#forms-new-early-adopter-features}
+### AEM Forms中的搶先使用功能 {#forms-new-access-adopter-features}
 
-AEM Forms 早期採用者計劃為您提供獨一無二的機會，讓您比其他人更早獲得尖端創新的獨家存取權，並協助推動相關開發。
+AEM Forms搶先體驗計畫提供絕佳機會，讓您可以搶在其他人之前獨佔使用最尖端的創新技術，並協助打造他們的開發成果。
 您可以透過該計劃存取多項創新。
 
-本發行說明列出目前版本提供的創新功能。如需早期採用者計劃提供之創新的完整清單，請參閱 [AEM Forms 早期採用者計劃文件](/help/forms/early-adopter-ea-features.md)。
+本發行說明列出目前版本提供的創新功能。如需「搶先體驗方案」下可用的創新完整清單，請參閱 [AEM Forms搶先使用計畫檔案](/help/forms/early-access-ea-features.md).
 
 #### 強化機器人保護方法
 
@@ -151,7 +151,7 @@ Forms 服務會產生用於資料擷取的互動式 PDF forms。也可以利用�
 
 >[!IMPORTANT]
 >
-> 如果您有興趣加入我們的早期採用者計劃以使用任何早期採用者創新，請直接從您的正式地址寄送電子郵件至 [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) 要求存取。您可以要求存取所有或任何特定的創新。
+> 如果您有興趣加入我們的搶先存取計畫以進行任何搶先存取創新，只要從您的官方地址傳送電子郵件至 [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) 以要求存取權。 您可以要求存取所有或任何特定的創新。
 
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] 基礎 {#foundation}
@@ -173,7 +173,7 @@ Adobe Developer Console 是用來產生存取各種 API 的認證。其中一種
 
 #### RDE 支援使用網站主題和網站範本的前端程式碼 {#rde-frontend}
 
-[RDE 現在支援以](/help/implementing/developing/introduction/rapid-development-environments.md#deploying-themes-to-rde)[網站主題](/help/sites-cloud/administering/site-creation/site-themes.md)和[網站範本](/help/sites-cloud/administering/site-creation/site-templates.md)為基礎的前端程式碼，方便早期採用者使用。經由 RDE，我們可以使用命令列指令完成，而不是使用[前端管道](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md)來完成。
+[RDE現在支援前端計畫碼](/help/implementing/developing/introduction/rapid-development-environments.md#deploying-themes-to-rde) 根據 [網站主題](/help/sites-cloud/administering/site-creation/site-themes.md) 和 [網站範本](/help/sites-cloud/administering/site-creation/site-templates.md)，適用於率先採用者。 經由 RDE，我們可以使用命令列指令完成，而不是使用[前端管道](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md)來完成。
 
 #### 增強 RDE 記錄 {#rde-logging}
 
