@@ -5,7 +5,7 @@ exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 3a5451020b8f76f95bcd8bff7b6eabd06be00f31
 workflow-type: tm+mt
 source-wordcount: '1197'
 ht-degree: 93%
@@ -90,7 +90,7 @@ _只有 Full Stack Code 流水線類型支援程式碼掃描、功能測試、UI
 
 ![階段測試](assets/stage-testing.png)
 
-## 生產部署階段 {#deployment-production}
+## 生產部署階段 {#production-deployment}
 
 為了對 AEM 網站訪客的影響降至最低，部署到生產拓撲的流程會略有不同。
 
