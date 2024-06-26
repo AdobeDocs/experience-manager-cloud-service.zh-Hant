@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
 role: Admin, Architect, Developer
 source-git-commit: 2766a351938062127babb01d5ed35bd37b705c21
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1043'
-ht-degree: 73%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ AEM Forms Edge Delivery Services 是一組可組合服務，讓環境可以快�
 
 這些服務可讓您：
 
-* **使用您選擇的工具建立註冊體驗**：透過分離內容來源來提高製作效率。開箱即用地使用檔案式製作(Microsoft SharePoint或Google Drive)、WYSIWYG製作(通用編輯器或調適型Forms編輯器)。 您可以在相同的表單網站上使用多個內容來源，並使用您偏好的編寫工具，例如Microsoft Excel、Google Sheets、通用編輯器或調適型Forms編輯器。
+* **使用您選擇的工具建立註冊體驗**：透過分離內容來源來提高製作效率。您可以開啟立即使用文件型製作 (Microsoft SharePoint 或 Google Drive) 和 WYSIWYG 製作 (通用編輯器或最適化表單編輯器)。您可以在同一個表單網站上使用多個內容來源，並使用您偏好的製作工具，例如 Microsoft Excel、Google Sheets、通用編輯器或最適化表單編輯器。
 
 * **提供卓越的數位註冊體驗：**&#x200B;提供快速載入和呈現的數位註冊體驗，並透過真實使用監控 (RUM) 持續監視您的表單效能。更快的載入時間和最佳化使用者體驗有助於提高表單完成率和轉換率。
 
@@ -25,11 +25,11 @@ AEM Forms Edge Delivery Services 是一組可組合服務，讓環境可以快�
 
 ## AEM Forms Edge Delivery Services 概觀 {#edge-overview}
 
-AEM Forms Edge Delivery 服務讓您在網站上製作表單時更具靈活性。您可以編寫內容和表單，使用 [所見即所得](/help/forms/creating-adaptive-form-core-components.md) 以及 [檔案式製作](/help/edge/docs/forms/create-forms.md). AEM Forms Edge Delivery Services 會提供一個表單區塊 (名為[最適化表單區塊](/help/edge/docs/forms/create-forms.md)) 以新增表單至您的 Edge Delivery Services 網站。
+AEM Forms Edge Delivery 服務讓您在網站上製作表單時更具靈活性。您可使用 [WYSIWYG 製作](/help/forms/creating-adaptive-form-core-components.md)以及[文件型製作](/help/edge/docs/forms/create-forms.md)來製作內容和表單。AEM Forms Edge Delivery Services 會提供一個表單區塊 (名為[最適化表單區塊](/help/edge/docs/forms/create-forms.md)) 以新增表單至您的 Edge Delivery Services 網站。
 
 例如，您直接在 Microsoft Excel 或 Google 工作表中建立表單，這些表格會轉換為您網站的表單。任何新表單或表單內容 )例如新表單欄位) 都可以立即在您的網站上使用，無需進行重新建立的程序。
 
-下圖說明如何在 Microsoft Excel 或 Google Sheets (文件型編輯) 中編輯表單內容並將其發佈到 Edge Delivery Services。它也會顯示使用WYSIWYG編寫(通用編輯器或調適型Forms編輯器)的AEM發佈方法。
+下圖說明如何在 Microsoft Excel 或 Google Sheets (文件型編輯) 中編輯表單內容並將其發佈到 Edge Delivery Services。下圖還展示了使用 WYSIWYG 製作 (通用編輯器或最適化表單編輯器) 的 AEM 發佈方法。
 
 ![發佈到 Edge Delivery Services 和 AEM](/help/edge/docs/forms/assets/AEM-forms-with-EDS-publishing.png)
 
@@ -39,16 +39,16 @@ AEM Forms Edge Delivery Services 使用 GitHub，因此客戶可以直接從其 
 
 ![安裝 AEM SideKick](/help/edge/assets/aem-sidekick-preview-publish-forms.png)
 
-選擇 [檔案式製作](#document-based-authoring-features) 和 [所見即所得](#wysiwyg-authoring-features) 取決於您的特定需求：
+要選擇[文件型製作](#document-based-authoring-features)或 [WYSIWYG 製作](#wysiwyg-authoring-features)，取決於您的特定要求：
 
 * 若只是為了收集幾個欄位的基本資訊的簡單表單 (例如聯絡我們表單、潛在客戶產生表單或服務請求表單)，以及需要使用試算表進行快速資料連接的情況， [文件型製作](#document-based-authoring-features)很適合這類表單使用。您可以像在 Google Sheets 或 Microsoft Excel 中建立文件一樣來建立這些表單。
 
-* 針對複雜表單，例如需要多個面板、複雜規則和商業邏輯、資料操控、與外部系統整合，或使用AEM功能簡化工作流程的表單，則 [所見即所得](#wysiwyg-authoring-features) 是更好的選擇。
+* 若是複雜的表單，例如需要多個面板、複雜規則和業務邏輯、資料操作、與外部系統整合或使用 AEM 功能來簡化工作流程的表單，那麼 [WYSIWYG 製作](#wysiwyg-authoring-features) 是一個更好的選擇。
 
 
-### 檔案式製作與WYSIWYG製作的主要功能
+### 文件型製作和 WYSIWYG 製作的主要功能
 
-檔案式製作提供一組基本功能，而WYSIWYG製作則開啟了檔案式製作以外的其他功能，讓您能夠建立更複雜且互動式的表單。 Document-based Authoring和WYSIWYG Authoring的主要功能包括：
+文件型製作提供了一組基本功能，且 WYSIWYG 製作會解鎖文件型製作以外的其他功能，讓您能夠建立更複雜的互動式表單。文件型製作和 WYSIWYG 製作的主要功能包括：
 
 #### 文件型製作功能
 
@@ -63,9 +63,9 @@ AEM Forms Edge Delivery Services 使用 GitHub，因此客戶可以直接從其 
 * 直接將表單資料提交到 Microsoft Excel 或 Google Sheets 或電子郵件地址。
 * 透過真實使用監控 (RUM) 監視您的表單效能
 
-#### 所見即所得製作功能
+#### WYSIWYG 製作功能
 
-WYSIWYG製作提供用於建立表單的WYSIWYG介面(通用編輯器和調適型Forms編輯器)，並提供檔案式製作的所有功能，以及各種其他功能：
+WYSIWYG 製作提供用來建立表單的 WYSIWYG 介面 (通用編輯器或最適化表單編輯器)，並提供文件型製作的所有功能，以及範圍廣泛的附加功能：
 
 * 用來建立複雜邏輯的進階規則編輯器。
 * 提供自訂功能的伺服器端可擴充性。
@@ -75,24 +75,24 @@ WYSIWYG製作提供用於建立表單的WYSIWYG介面(通用編輯器和調適�
 * 與 Adob&#x200B;&#x200B;e Workfront Fusion 整合，以便在提交表單時觸發 Adob&#x200B;&#x200B;e Workfront Fusion 情境。
 * 與各種資料來源整合，以預先填入表單和提交資料。
 * 用來定義資料結構並與各種資料來源互動的表單資料模型 (FDM)。
-* 具備能力從多個提交操作中選擇以處理表單提交，包括將資料提交到 Microsoft SharePoint、Microsoft OneDrive、Adob&#x200B;&#x200B;e Workfront Fusion、Salesforce、Microsoft Dynamics 以及更多資料來源。
+* 具備能力從多個提交操作中選擇以處理表單提交，包括將資料提交到 Microsoft SharePoint、Microsoft OneDrive、Adobe Workfront Fusion、Salesforce、Microsoft Dynamics 以及更多資料來源。
 
-也可以透過最適化Forms編輯器使用上述所有功能。
+上述所有功能也可以透過最適化表單編輯器取得。
 
-本質上，WYSIWYG Authoring (通用編輯器和 [最適化Forms編輯器](/help/forms/creating-adaptive-form-core-components.md))建立在 [檔案式製作](/help/edge/docs/forms/create-forms.md)，提供更進階的工具組，用於建立和管理複雜的表單。
+基本上，WYSIWYG 製作 (通用編輯器和[最適化表單編輯器](/help/forms/creating-adaptive-form-core-components.md)) 是建立在[件型製作](/help/edge/docs/forms/create-forms.md)的基礎上，可提供更進階的工具包來建立以及管理複雜表單。
 
 >[!NOTE]
 >
 >
-> WYSIWYG編寫功能可在率先採用者計畫下取得。 如果您有興趣，請以您的工作電子郵件地址向 aem-forms-ea@adobe.com 發送簡短電子郵件，以要求存取該功能。
+> WYSIWYG 製作功能適用於早期採用者計畫。如果您有興趣，請以您的工作電子郵件地址向 aem-forms-ea@adobe.com 發送簡短電子郵件，以要求存取該功能。
 
 ### AEM Forms Edge Delivery Services：表單製作、發佈和提交
 
-下列圖表說明使用檔案式製作和WYSIWYG製作來建立、發佈和提交表單的程式。
+下面圖表說明使用文件型製作和 WYSIWYG 製作來建立、發佈和提交表單的流程。
 
 ![文件型製作 ](/help/edge/assets/document-based-authoring-workflow.png)
 
-![所見即所得](/help/edge/assets/wysiwyg-authoring-workflow.png)
+![WYSIWYG 製作](/help/edge/assets/wysiwyg-authoring-workflow.png)
 
 ## 開始建立表單
 
