@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: fd687498a8c72bf5d47b7b97aadf22d7d1e8dd2b
 workflow-type: tm+mt
 source-wordcount: '649'
-ht-degree: 28%
+ht-degree: 96%
 
 ---
 
@@ -17,63 +17,63 @@ ht-degree: 28%
 
 ## 版本 16799 {#release-16799}
 
-以下摘要說明維護版本16799數的持續改善，該版本於2024年6月18日公開發佈。 上一個維護版本是版本 16544。
+以下摘要說明 16799 維護版本的持續改善內容，該版本於 2024 年 6 月 18 日公開發佈。上一個維護版本是版本 16544。
 
-2024.6.0 功能啟用將提供此維護版本的完整功能集。如需詳細資訊，請參閱 [Experience Manager 發行藍圖](https://experienceleague.adobe.com/tw/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)。
+2024.6.0 功能啟用將提供此維護版本的完整功能集。如需詳細資訊，請參閱 [Experience Manager 發行藍圖](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)。
 
 ### 增強功能 {#enhancements-16799}
 
-* ASSETS-31977：增強資產移動、複製和刪除作業。
-* ASSETS-33618： Dynamic Media中視訊的自動轉寫和翻譯功能。
-* ASSETS-35185：ContentHub和DM的核准動作，並新增屬性至damAssetLucene屬性。
-* ASSETS-35533：將DRM和CAI屬性新增至damAssetLucene索引。
-* ASSETS-37280：當來源子標題(vtt)仍在處理時，翻譯的循序工作處理。
-* ASSETS-37559：改善資產已刪除事件。
-* ASSETS-37723：實作資產已發佈事件。
-* ASSETS-37724：實作資產未發佈事件。
-* ASSETS-38614：共用連結UI增強功能。
-* ASSETS-39601：自動套用驗證Regex至Asset Livecopy名稱。
-* ASSETS-39454：在Quickstart升級至2024.5.0版檢視器。
-* CNTBF-184：下方支援路徑 `/conf` 於內容回流。
+* ASSETS-31977：增強型資產移動、複製和刪除作業。
+* ASSETS-33618：Dynamic Media 中影片的自動轉錄和翻譯功能。
+* ASSETS-35185：ContentHub 和 DM 的核准動作，並將屬性新增至 damAssetLucene 屬性。
+* ASSETS-35533：將 DRM 和 CAI 屬性新增至 damAssetLucene 索引。
+* ASSETS-37280：當來源字幕 (vtt) 仍在處理時，按照作業順序處理翻譯。
+* ASSETS-37559：改善了資產刪除事件。
+* ASSETS-37723：實施資產發佈事件。
+* ASSETS-37724：實施資產未發佈事件。
+* ASSETS-38614：共用連結 UI 增強。
+* ASSETS-39601：自動將驗證規則運算式套用至資產 Livecopy 名稱。
+* ASSETS-39454：在快速入門中升級到檢視器 2024.5.0。
+* CNTBF-184：支援內容回流中 `/conf` 下方的路徑。
 
 ### 已修正的問題 {#fixed-issues-16799}
 
-* ASSETS-37335：在篩選器中編輯搜尋面板會取消勾選所有方塊。
-* ASSETS-38069：時間軸篩選器選擇中的AEM DAMPDF預覽問題。
-* ASSETS-38215：適用於企業訂閱的AEMas a Cloud Service中，Adobe Stock授權按鈕顯示為灰色。
-* ASSETS-38578：資產連結共用報表中的超連結不正確。
-* ASSETS-38678：檢視在集合詳細資料中破壞的設定。
-* ASSETS-39071：如果原始轉譯mimetype為null，Web最佳化傳送可能會擲回例外狀況。
-* ASSETS-39316：按名稱排序在集合中無法運作。
-* ASSETS-39377：從遠端API接收背壓時，從OneDrive大量匯入可能會失敗。
-* ASSETS-39428：版權管理UI中的轉譯問題。
-* CQ-4357150：cq-content-sync套裝中的Guava。
-* GRANITE-52573：包含雙斜線的請求 `//` 已拒絕，狀態碼為400。
-* SCRNS-4194：移除對Google Guava API的相依性。
-* SCRNS-4360：頻道內容提供者中的非管理員使用者缺少管理出版物和快速發佈按鈕。
-* SCRNS-4323：隱藏/停用screens.html中的啟動。
+* ASSETS-37335：在篩選器中編輯搜尋面板會取消選取所有方塊。
+* ASSETS-38069：時間軸篩選器選項的 AEM DAM PDF 預覽問題。
+* ASSETS-38215：企業訂閱的 AEM as a Cloud Service 中，Adobe Stock 授權按鈕呈現灰色。
+* ASSETS-38578：資產連結共用報告中的超連結不正確。
+* ASSETS-38678：集合詳細資料中的檢視設定損壞。
+* ASSETS-39071：如果原始呈現 MIME 類型為 Null，Web 最佳化傳遞可能會引發例外狀況。
+* ASSETS-39316：集合中無法使用依照名稱排序功能。
+* ASSETS-39377：從遠端 API 接收背壓時，從 OneDrive 大量匯入可能會失敗。
+* ASSETS-39428：版權管理 UI 中的轉譯問題。
+* CQ-4357150：cq-content-sync 套裝中的 Guava。
+* GRANITE-52573：包含雙斜線 `//` 的要求遭到拒絕，狀態代碼為 400。
+* SCRNS-4194：移除對 Google Guava API 的相依性。
+* SCRNS-4360：頻道內容提供者中的非管理員使用者缺少管理發佈和快速發佈按鈕。
+* SCRNS-4323：隱藏/停用 Screens.html 中的啟動。
 
 ### 已知問題 {#known-issues-16799}
 
 >[!NOTE]
-> AEM工程部門已針對Launches功能找出回歸，而這會影響目前從16461開始的AEM版本。 由於此回歸，包含非深層頁面的新啟動（在套用新版本後建立）由於遺失設定，將無法正常提升。
-> 如果您的環境受到影響，可透過客戶支援使用殼層指令碼來識別和更新缺少的設定(內部參考SITES-22457)。
-> 我們將提供更長期的修正，以確保使用所有正確的設定來建立新的啟動。 在此之前，您也可依需求使用內部修補程式版本。
+> AEM Engineering 發現「啟動」功能已迴歸，從 16461 版開始的目前 AEM 版本會受到影響。由於這種迴歸，包含非深層頁面的新啟動 (套用新版本後建立) 將由於缺少設定而無法正確升級。
+> 如果您的環境受到影響，可以透過客戶支援取得用於識別和更新缺失設定的 shell 指令碼 (內部參考 SITES-22457)。
+> 將提供長期修正，以確保使用所有正確的設定建立新的啟動。在此之前，還可視需要提供內部修補版本。
 
 #### 表單
 
 1. 如果使用者下載的AEM Forms SDK版本高於 `AEM Forms add-on v2024.05.04.00-240400`，批次檔案無法啟動Docker服務。 若要解決此問題：
-   1. 下載 [資料夾](/help/forms/assets/sdk_hotfix.zip).
-   1. 從下載的資料夾中解壓縮內容，並複製 `sdk.sh` 和 `sdk.bat` 檔案。
-   1. 取代現有的 `sdk.sh` 和 `sdk.bat` AEM Forms SDK中包含新檔案的檔案。
+   1. 下載[資料夾](/help/forms/assets/sdk_hotfix.zip)。
+   1. 從下載的資料夾中提取內容，複製 `sdk.sh` 和 `sdk.bat` 檔案。
+   1. 用新檔案取代 AEM Forms SDK 中現有的 `sdk.sh` 和 `sdk.bat` 檔案。
 
 ### 變更通知 {#change-notice-16799}
 
-* 此發行版本包含下列新產品索引版本：
+* 此版本包含以下新產品索引版本：
    * **damAssetLucene-11**
-   * **片段–11**
+   * **fragments-11**
 
-  舊版索引的自訂版本會自動與新產品索引版本合併。 請進一步套用自訂更新至合併的版本。
+  先前索引版本的自訂版本將自動與新產品索引版本合併。請對合併版本套用進一步的自訂更新。
 
 * 從 2024 年 9 月開始，AEM as a Cloud Service 將透過 Sling 模型匯出工具框架，停用 Resource Resolver 的序列化。如需詳細資訊，請參閱[文件](/help/implementing/developing/hybrid/disallow-the-serialization-of-resourceresolvers-via-sling-model-exporter.md)。
 
