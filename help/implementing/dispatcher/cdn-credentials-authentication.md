@@ -4,10 +4,10 @@ description: 瞭解如何在設定檔案中宣告規則，再使用Cloud Manager
 feature: Dispatcher
 exl-id: a5a18c41-17bf-4683-9a10-f0387762889b
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+source-git-commit: 73d0a4a73a3e97a91b2276c86d3ed1324de8c361
 workflow-type: tm+mt
-source-wordcount: '1065'
-ht-degree: 3%
+source-wordcount: '1400'
+ht-degree: 2%
 
 ---
 
@@ -20,6 +20,8 @@ Adobe提供的CDN具有多項功能和服務，部分功能和服務需仰賴憑
 
 * AdobeCDN用來驗證來自客戶管理CDN之請求的HTTP標題值。
 * 用來清除CDN快取中資源的API權杖。
+* 透過提交基本驗證表單，可存取受限制內容的使用者名稱/密碼組合清單。
+
 
 各項（包括設定語法）將於下文其本身的章節中說明。 此 [通用設定](#common-setup) 一節會說明兩者通用的設定以及部署。 最後，本節將說明如何 [旋轉鍵](#rotating-secrets)，這被視為良好的安全性實務。
 
@@ -29,7 +31,7 @@ Adobe提供的CDN具有多項功能和服務，部分功能和服務需仰賴憑
 
 在設定過程中，AdobeCDN和客戶CDN必須就 `X-AEM-Edge-Key` HTTP標頭。 此值是在每個請求中在客戶CDN處設定的，之後再傳送至AdobeCDN，由其驗證值是否如預期般符合，因此它可以信任其他HTTP標頭，包括有助於將請求傳送至適當AEM來源的那些標頭。
 
-此 `X-AEM-Edge-Key` 值會以下列語法宣告。 請參閱 [通用設定](#common-setup) 一節以瞭解如何部署它。
+此 `X-AEM-Edge-Key` 值會以下列語法宣告，並使用edgeKey1和edgeKey2屬性參照的實際值。 請參閱 [通用設定](#common-setup) 一節，以瞭解如何部署設定。
 
 ```
 kind: "CDN"
@@ -55,12 +57,12 @@ data:
 
 * 種類、版本和中繼資料。
 * 包含子項的資料節點 `experimental_authentication` 節點（釋放特徵時，會移除實驗性前置詞）。
-* 在experimental_authentication下，具有一個驗證器節點和一個規則節點，兩者都是陣列。
+* 在 `experimental_authentication`，一 `authenticators` 節點和一個 `rules` 節點，兩者都是陣列。
 * 驗證者：可讓您宣告權杖或認證的型別，在此例中是邊緣金鑰。 其內容包含下列屬性：
    * name — 描述性字串。
-   * 型別 — 必須為edge。
-   * edgeKey1 — 其值必須參考秘密權杖，該權杖不應儲存在git中，而是宣告為 [Cloud Manager環境變數](/help/implementing/cloud-manager/environment-variables.md) 型別密碼的。 在「已套用服務」欄位中，選取全部。 建議使用的值(例如`${{CDN_EDGEKEY_052824}}`)反映新增日期。
-   * edgeKey2 — 用於輪換秘密，相關說明請參閱 [旋轉秘密區段](#rotating-secrets) 底下。 至少一個 `edgeKey1` 和 `edgeKey2` 必須宣告。
+   * 型別 — 必須是 `edge`.
+   * edgeKey1 - *X-AEM-Edge-Key*，這必須參考機密權杖，該權杖不應儲存在git中，而是宣告為 [Cloud Manager環境變數](/help/implementing/cloud-manager/environment-variables.md) 型別密碼的。 在「已套用服務」欄位中，選取全部。 建議使用的值(例如`${{CDN_EDGEKEY_052824}}`)反映新增日期。
+   * edgeKey2 — 用於輪換秘密，相關說明請參閱 [旋轉秘密區段](#rotating-secrets) 底下。 定義方式與edgeKey1類似。 至少一個 `edgeKey1` 和 `edgeKey2` 必須宣告。
 <!--   * OnFailure - defines the action, either `log` or `block`, when a request doesn't match either `edgeKey1` or `edgeKey2`. For `log`, request processing will continue, while `block` will serve a 403 error. The `log` value is useful when testing a new token on a live site since you can first confirm that the CDN is correctly accepting the new token before changing to `block` mode; it also reduces the chance of lost connectivity between the customer CDN and the Adobe CDN, as a result of an incorrect configuration. -->
 * 規則：可讓您宣告應該使用哪一個驗證器，以及它是否用於發佈和/或預覽層。  內容包括：
    * name — 描述性字串。
@@ -68,7 +70,7 @@ data:
    * 動作 — 必須指定「authenticate」，並參考所要的驗證者。
 
 >[!NOTE]
->Edge金鑰必須設定為 [Cloud Manager環境變數](/help/implementing/cloud-manager/environment-variables.md) 型別變數 `secret`，然後才部署參考的設定。
+>Edge金鑰必須設定為 [Cloud Manager環境變數](/help/implementing/cloud-manager/environment-variables.md) 型別變數 `secret` (含 *全部* 選取以套用服務)，然後再部署參考它的組態。
 
 ## 清除API Token {#purge-API-token}
 
@@ -87,19 +89,19 @@ data:
          purgeKey1: ${{CDN_PURGEKEY_031224}}
          purgeKey2: ${{CDN_PURGEKEY_021225}}
     rules:
-     - name: purge-auth-rule
-       when: { reqProperty: tier, equals: "publish" }
-       action:
-         type: authenticate
-         authenticator: purge-auth
+       - name: purge-auth-rule
+         when: { reqProperty: tier, equals: "publish" }
+         action:
+           type: authenticate
+           authenticator: purge-auth
 ```
 
 語法包括：
 
 * 種類、版本和中繼資料。
 * 包含子項的資料節點 `experimental_authentication` 節點（釋放特徵時，會移除實驗性前置詞）。
-* 在 `experimental_authentication`，單一驗證者節點。
-* 驗證者：可讓您宣告權杖或認證的型別，在此例中為清除金鑰。 包含下列屬性：
+* 在 `experimental_authentication`，一 `authenticators` 節點和一個 `rules` 節點，兩者都是陣列。
+* 驗證者：可讓您宣告權杖或認證的型別，在此例中為清除金鑰。 其內容包含下列屬性：
    * name — 描述性字串。
    * 型別 — 必須是永久刪除。
    * purgeKey1 — 其值必須參考秘密權杖，該權杖不應儲存在git中，而是宣告為 [Cloud Manager環境變數](/help/implementing/cloud-manager/environment-variables.md) 型別 `secret`.
@@ -109,6 +111,59 @@ data:
    * 名稱 — 描述性字串
    * when — 根據 [流量篩選規則](/help/security/traffic-filter-rules-including-waf.md) 文章。 通常包括目前階層的比較（例如，發佈）。
    * 動作 — 必須指定「authenticate」，並參考所要的驗證者。
+
+>[!NOTE]
+>Edge金鑰必須設定為 [Cloud Manager環境變數](/help/implementing/cloud-manager/environment-variables.md) 型別變數 `secret`，然後才部署參考的設定。
+
+## 基本驗證 {#basic-auth}
+
+Protect會彈出基本驗證對話方塊，要求使用者名稱和密碼，以顯示特定內容資源。 此功能主要用於輕度驗證使用案例（例如業務利害關係人審查內容），而不是作為一般使用者存取權的完整解決方案。
+
+一般使用者會看到基本驗證對話方塊突然出現，如下所示：
+
+![basicauth-dialog](/help/implementing/dispatcher/assets/basic-auth-dialog.png)
+
+
+語法會依照下方所述進行宣告。 請參閱 [通用設定](#common-setup) 區段，以瞭解如何部署該應用程式的資訊。
+
+```
+kind: "CDN"
+version: "1"
+metadata:
+  envTypes: ["dev"]
+data:
+  experimental_authentication:
+    authenticators:
+       - name: my-basic-authenticator
+         type: basic
+         credentials:
+           - user: johndoe
+             password: ${{JOHN_DOE_PASSWORD}}
+           - user: janedoe
+             password: ${{JANE_DOE_PASSWORD}}
+    rules:
+       - name: basic-auth-rule
+         when: { reqProperty: path, like: "/summercampaign" }
+         action:
+           type: authenticate
+           authenticator: my-basic-authenticator
+```
+
+語法包括：
+
+* 種類、版本和中繼資料。
+* 包含 `experimental_authentication` 節點（釋放特徵時，會移除實驗性前置詞）。
+* 在 `experimental_authentication`，一 `authenticators` 節點和一個 `rules` 節點，兩者都是陣列。
+* 驗證者：在此案例中，會宣告基本驗證者，其結構如下：
+   * 名稱 — 描述性字串
+   * 型別 — 必須是 `basic`
+   * 認證陣列，每個認證包括下列名稱/值組，一般使用者可在基本驗證對話方塊中輸入：
+      * user — 使用者的名稱
+      * 密碼 — 其值必須參考機密權杖，該權杖不應儲存在git中，而是宣告為機密型別的Cloud Manager環境變數(具有 **全部** 已選取為服務欄位)
+* 規則：可讓您宣告應使用哪些驗證者，以及應保護哪些資源。 每個規則包含：
+   * 名稱 — 描述性字串
+   * when — 根據 [流量篩選規則](/help/security/traffic-filter-rules-including-waf.md) 文章。 通常會包含發佈層級或特定路徑的比較。
+   * 動作 — 必須指定「authenticate」，並參考所要的驗證者，這是此情境的基本驗證
 
 >[!NOTE]
 >Edge金鑰必須設定為 [Cloud Manager環境變數](/help/implementing/cloud-manager/environment-variables.md) 型別變數 `secret`，然後才部署參考的設定。
