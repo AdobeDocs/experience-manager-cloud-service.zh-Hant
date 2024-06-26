@@ -1,17 +1,17 @@
 ---
-title: 搜尋資產API
-description: 瞭解如何使用搜尋資產API。
+title: 搜尋Assets API
+description: 瞭解如何使用Search Assets API。
 role: User
-source-git-commit: 0ad9f349c997c35862e4f571b4741ed4c0c947e2
+source-git-commit: 540aa876ba7ea54b7ef4324634f6c5e220ad19d3
 workflow-type: tm+mt
 source-wordcount: '450'
 ht-degree: 0%
 
 ---
 
-# 搜尋資產API {#search-assets-api}
+# 搜尋Assets API {#search-assets-api}
 
-全部 [核准的資產](approved-assets.md) Experience Manager資產存放庫中可用的專案，可以透過傳送URL搜尋並傳送至整合的下游應用程式。
+全部 [核准的資產](approve-assets.md) Experience Manager資產存放庫中可用的專案，可以透過傳送URL搜尋並傳送至整合的下游應用程式。
 
 從Experience Manager存放庫搜尋正確的已核准資產，是使用傳送URL傳送資產的第一步。 對搜尋請求的回應包括對應於符合搜尋條件的資產的一系列JSON檔案。 每個JSON檔案都使用 `id` 欄位，用於撰寫資產傳送請求。
 
@@ -42,7 +42,7 @@ ht-degree: 0%
 
 POST
 
-## 搜尋資產API標題 {#search-assets-api-header}
+## 搜尋Assets API標頭 {#search-assets-api-header}
 
 在「搜尋資產API」中定義標題時，您必須提供下列詳細資料：
 
@@ -55,7 +55,7 @@ headers: {
     },
 ```
 
-若要叫用Search API，必須在中定義IMS權杖 `Authorization` 詳細資料。 IMS權杖是從技術帳戶中擷取。 另請參閱 [擷取AEMas a Cloud Service認證](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=en#fetch-the-aem-as-a-cloud-service-credentials) 以建立新的技術帳戶。 另請參閱 [產生存取權杖](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=en#generating-the-access-token) 以產生IMS代號，並在搜尋資產API請求標頭中適當使用。
+若要叫用Search API，必須在中定義IMS權杖 `Authorization` 詳細資料。 IMS權杖是從技術帳戶中擷取。 另請參閱 [擷取AEM as a Cloud Service認證](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=en#fetch-the-aem-as-a-cloud-service-credentials) 以建立新的技術帳戶。 另請參閱 [產生存取權杖](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=en#generating-the-access-token) 以產生IMS代號，並在搜尋資產API請求標頭中適當使用。
 
-若要檢視要求範例、回應範例和回應代碼，請參閱 [搜尋資產API](https://adobe-aem-assets-delivery-experimental.redoc.ly/#operation/search).
+若要檢視要求範例、回應範例和回應代碼，請參閱 [搜尋Assets API](https://adobe-aem-assets-delivery-experimental.redoc.ly/#operation/search).
 

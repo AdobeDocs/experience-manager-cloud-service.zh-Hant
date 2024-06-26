@@ -2,9 +2,9 @@
 title: 在Experience Manager中核准資產
 description: 瞭解如何核准中的資產 [!DNL Experience Manager].
 role: User
-source-git-commit: 0ad9f349c997c35862e4f571b4741ed4c0c947e2
+source-git-commit: 540aa876ba7ea54b7ef4324634f6c5e220ad19d3
 workflow-type: tm+mt
-source-wordcount: '515'
+source-wordcount: '683'
 ht-degree: 1%
 
 ---
@@ -17,17 +17,18 @@ ht-degree: 1%
 
 ## 開始之前 {#pre-requisites}
 
-您必須擁有AEM Assetsas a Cloud Service的存取權和編輯許可權， **[!UICONTROL 檢閱狀態]** 屬性來建立資產。
+您必須擁有AEM Assetsas a Cloud Service的存取權以及編輯 **[!UICONTROL 檢閱狀態]** 屬性來建立資產。
 
 ## 設定
 
-您需要對中的適用中繼資料結構做一次性更新 [!DNL Experience Manager] 核准資產之前。 您可以略過此設定， [!DNL Experience Manager Assets]. 請依照下列步驟設定中繼資料結構：
+在核准資產之前，您需要對管理員檢視中適用的中繼資料結構做一次性的更新。 您可以略過Assets檢視的此設定。 請依照下列步驟設定中繼資料結構：
 
-1. 瀏覽至 **[!UICONTROL 工具]** > **[!UICONTROL 資產]** > **[!UICONTROL 中繼資料結構]**.
+1. 瀏覽至 **[!UICONTROL 工具]** > **[!UICONTROL Assets]** > **[!UICONTROL 中繼資料結構]**.
 1. 選取適用的中繼資料結構，然後按一下 **[!UICONTROL 編輯]**. <br>此 **[!UICONTROL 中繼資料結構表單編輯器]** 開啟時使用 **[!UICONTROL 基本]** 索引標籤反白顯示。
 1. 向下捲動並按一下 **[!UICONTROL 檢閱狀態]**.
 1. 按一下 **[!UICONTROL 規則]** 標籤在右側面板。
 1. 取消核取 **[!UICONTROL 停用編輯]** 並按一下 **[!UICONTROL 儲存]**.
+如果您需要檢視 **[!UICONTROL 檢閱狀態]** 欄位已對應至，請導覽至 **[!UICONTROL 設定]** 標籤並檢視 `./jcr:content/metadata/dam:status` 中的值 **[!UICONTROL 對應至屬性]** 欄位。
 
 >[!NOTE]
 >
@@ -45,7 +46,7 @@ ht-degree: 1%
 
    >[!VIDEO](https://video.tv.adobe.com/v/3427430)
 
-   同樣地，您可以使用核准資產 [新資產檢視](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/manage-organize.html?lang=en#manage-asset-status).
+   同樣地，您可以使用核准資產 [新增Assets檢視](/help/assets/manage-organize-assets-view.md).
 
 ## 大量核准資產 {#bulk-approve-assets}
 
@@ -53,13 +54,13 @@ ht-degree: 1%
 <br>請依照下列步驟，核准中的大量資產 [!DNL Experience Manager]：
 
 1. 在作者環境中建立資料夾(https://author-pXXX-eYYY.adobeaemcloud.com)。 取代 _XXX_ 使用您的方案ID和 _YYYY_ Experience Manager的環境ID識別碼。
-1. 瀏覽至 **[!UICONTROL 工具]** > **[!UICONTROL 資產]** > **[!UICONTROL 中繼資料設定檔]**.
+1. 瀏覽至 **[!UICONTROL 工具]** > **[!UICONTROL Assets]** > **[!UICONTROL 中繼資料設定檔]**.
 1. 按一下 **[!UICONTROL 建立]** ，位於頁面的右上角。
 1. 新增設定檔標題並按一下 **[!UICONTROL 建立]**. 已成功建立中繼資料設定檔。
 1. 選取新建立的中繼資料設定檔，然後按一下 **[!UICONTROL 編輯 _(e)_]**. <br>此&#x200B;**[!UICONTROL 編輯中繼資料設定檔]**表單開啟&#x200B;**[!UICONTROL 基本]**索引標籤反白顯示。
 1. 拖放 **[!UICONTROL 單行文字欄位]** 從 **[!UICONTROL 建置表單]** 區段至表單中的中繼資料區段。
 1. 按一下新新增的欄位，然後在 **[!UICONTROL 設定]** 面板：
-   1. 變更 **[!UICONTROL 欄位標籤]** 至 _核准的資產_.
+   1. 變更 **[!UICONTROL 欄位標籤]** 至 _已核准的Assets_.
    1. 更新 **[!UICONTROL 對應至屬性]** 至 _./jcr：content/metadata/dam：status_.
    1. 變更預設值為 _已核准_.
 
@@ -74,3 +75,31 @@ ht-degree: 1%
 >[!NOTE]
 > 
 >此方法會核准資料夾中新建立的資產。 針對資料夾中的現有資產，您需要手動選取並核准它們。 <br> 或者，您可以使用 **[!UICONTROL 重新處理]** 將中繼資料設定檔的變更套用至較舊資產的選項。
+
+同樣地，若要在Assets檢視中大量核准資料夾內的資產：
+
+1. 選取資產並按一下 **[!UICONTROL 大量中繼資料編輯]**.
+
+1. 選取 **[!UICONTROL 已核准]** 在 **[!UICONTROL 狀態]** 中的可用欄位 [!UICONTROL 屬性] 區段。
+
+1. 按一下「**[!UICONTROL 儲存]**」。
+
+## 複製已核准資產的傳遞URL {#copy-delivery-url-approved-assets}
+
+如果具備下列條件，則儲存庫中所有已核准資產的傳送URL都可供使用 [!UICONTROL 具有OpenAPI功能的Dynamic Media] 已在您的AEM as a Cloud Service執行個體上啟用。
+
+若要複製存放庫中已核准資產的傳送URL：
+
+1. 選取資產並按一下 **[!UICONTROL 詳細資料]**.
+
+1. 按一下右窗格中的「轉譯」圖示。
+
+1. 選取 **[!UICONTROL Dynamic Media與OpenAPI]** 可在 **[!UICONTROL 動態]** 區段。
+
+1. 按一下 **[!UICONTROL 複製URL]** 以複製資產的傳遞URL。
+   ![複製傳遞URL](/help/assets/assets/copy-delivery-url.png)
+
+   >[!NOTE]
+   >
+   >在Assets檢視中，剛提供複製已核准資產之傳送URL的選項。
+

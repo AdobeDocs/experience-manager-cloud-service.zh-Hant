@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的運作方式以及該軟體可以為您做哪些事。
 breadcrumb-title: 使用手冊
 user-guide-title: AEM as a Cloud Service
-source-git-commit: bd0d35c57e333d861072e189d0bef0ba14700664
+source-git-commit: 540aa876ba7ea54b7ef4324634f6c5e220ad19d3
 workflow-type: tm+mt
-source-wordcount: '5040'
+source-wordcount: '5073'
 ht-degree: 99%
 
 ---
@@ -559,6 +559,16 @@ ht-degree: 99%
       + [HTTP2 傳送內容常見問題集](/help/assets/dynamic-media/http2faq.md)
       + [Flash 檢視器產品壽命終止](/help/assets/dynamic-media/flash-viewers-eol.md)
       + [DHTML 檢視器產品壽命終止](/help/assets/dynamic-media/dhtml-viewer-endoflifefaqs.md)
+      + 具有OpenAPI功能的Dynamic Media {#dynamic-media-open-apis}
+         + [概觀](/help/assets/dynamic-media-open-apis-overview.md)
+         + [核准資產](/help/assets/approve-assets.md)
+         + [與下游應用程式整合](/help/assets/integrate-dynamic-media-open-apis.md)
+         + [搜尋資產API](/help/assets/search-assets-api.md)
+         + [傳送API](/help/assets/deliver-assets-apis.md)
+         + [限制資產傳遞](/help/assets/restrict-assets-delivery.md)
+         + [整合遠端AEM Assets與AEM Sites](/help/assets/integrate-remote-approved-assets-with-sites.md)
+         + [常見問題](/help/assets/dynamic-media-open-apis-faqs.md)
+         + [設定自訂網域](/help/assets/configure-custom-domain.md)
    + 使用資產檢視{#assets-view}
       + [簡介](/help/assets/assets-view-introduction.md)
       + [快速入門](/help/assets/get-started-assets-view.md)
