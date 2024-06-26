@@ -824,7 +824,7 @@ ht-degree: 99%
 + Edge Delivery Services {#edge-delivery}
    + [Edge Delivery Services 概觀](/help/edge/overview.md)
    + [透過 AEM 使用 Edge Delivery Services](/help/edge/using.md)
-   + 所見即所得 {#wysiwyg-authoring}
+   + WYSIWYG 製作{#wysiwyg-authoring}
       + [為 Edge Delivery 製作內容](/help/edge/wysiwyg-authoring/authoring.md)
       + [為 Edge Delivery 發佈內容](/help/edge/wysiwyg-authoring/publishing.md)
       + [開發人員快速入門指南](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)
