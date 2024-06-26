@@ -1,10 +1,10 @@
 ---
 title: 輕鬆建立大量PDF — 掌握批次處理的藝術 — 您製作數百萬PDF檔案的自助指南！
 description: 如何建立品牌導向和個人化的通訊？
-feature: Adaptive Forms, APIs
+feature: Adaptive Forms, APIs & Integrations
 role: Admin, Developer, User
 exl-id: 542c8480-c1a7-492e-9265-11cb0288ce98
-source-git-commit: 975f767e75a268a1638227ae20a533f82724c80a
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '1706'
 ht-degree: 2%
@@ -60,7 +60,7 @@ ht-degree: 2%
 
 您可以觀看影片或執行以下指示，瞭解如何使用批次操作產生檔案。 影片中使用的API參考檔案提供.yaml格式。 您可以下載 [批次API](assets/batch-api.yaml) 將其檔案上傳至Postman以檢查API的功能並觀看影片。
 
-### 先決條件 {#pre-requisites}
+### 必要條件 {#pre-requisites}
 
 若要使用批次API，需具備下列條件：
 
@@ -98,7 +98,7 @@ ht-degree: 2%
 
 ### 建立批次資料存放區設定 {#create-batch-data-store-configuration}
 
-批次資料設定可幫助您設定用於輸入和輸出的容器和資料夾。 您可以將客戶記錄儲存在來源資料夾中，產生的檔案會放置在目標資料夾中。
+批次資料設定可幫助您設定用於輸入和輸出的容器和資料夾。 您會將客戶記錄儲存在Source資料夾中，且產生的檔案會放置在目標資料夾中。
 
 若要建立組態：
 
@@ -106,7 +106,7 @@ ht-degree: 2%
 1. 開啟要裝載設定的資料夾，然後按一下「建立」。 您可以使用全域資料夾或建立資料夾。
 1. 指定設定的標題和名稱。 在儲存體中，選取Microsoft Azure儲存體。
 1. 在儲存體設定路徑中，瀏覽並選取包含客戶擁有的Azure儲存體帳戶認證的雲端設定。
-1. 在來源資料夾中，指定Azure儲存體容器的名稱和包含記錄的資料夾。
+1. 在Source資料夾中，指定Azure儲存體容器的名稱和包含記錄的資料夾。
 1. 在目標資料夾中，指定Azure儲存體容器的路徑以及儲存產生檔案的資料夾。
 1. 按一下「建立」。
 

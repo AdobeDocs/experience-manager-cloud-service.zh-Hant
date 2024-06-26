@@ -3,7 +3,8 @@ title: 如何設定最適化表單的提交動作？
 description: 最適化表單提供多個提交動作。提交動作會定義提交之後處理最適化表單的方式。您可以使用內建的提交動作或建立自己的動作。
 feature: Adaptive Forms, Foundation Components
 exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
-source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '3914'
 ht-degree: 72%
@@ -117,7 +118,7 @@ ht-degree: 72%
 >[!NOTE]
 >
 > * 所有表單欄位都必須有不同的元素名稱，即使這些欄位位於調適型表單的不同面板上亦然。
-> * AEMas a Cloud Service需要加密傳出郵件。 依預設，會停用傳出電子郵件。 若要啟用，請將支援票證提交至 [請求存取權](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=zh-Hant#sending-email).
+> * AEM as a Cloud Service需要加密傳出郵件。 依預設，會停用傳出電子郵件。 若要啟用，請將支援票證提交至 [請求存取權](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=zh-Hant#sending-email).
 
 您也可以在電子郵件中加入附件和記錄檔案(DoR)。 若要啟用 **[!UICONTROL 附加記錄檔案]** 選項，設定最適化表單以產生記錄檔案(DoR)。 您可以啟用從最適化表單屬性產生記錄檔案的選項。
 

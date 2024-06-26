@@ -4,7 +4,8 @@ description: 根據核心元件建立最適化表單範本，以使用範本編�
 feature: Adaptive Forms, Core Components
 Keywords: create adaptive form template, create adaptive form template based on core components, Use template to create adpative form.
 exl-id: c1c050d3-953e-4e56-a96b-d84f2ec05e5e
-source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '1962'
 ht-degree: 1%
@@ -27,11 +28,11 @@ You can download and install [!DNL AEM Forms] reference content package from [So
 
 ## 先決條件
 
-**為您的環境啟用最適化Forms核心元件**：建立方案時，最適化Forms核心元件已為您的環境啟用。 如果您有表單as a Cloud Service環境，根據 [AEM Archetype 39或更舊版本](https://github.com/adobe/aem-project-archetype)， [為您的環境啟用最適化Forms核心元件](enable-adaptive-forms-core-components.md).
+**為您的環境啟用最適化Forms核心元件**：建立方案時，最適化Forms核心元件已為您的環境啟用。 如果您有根據的表單as a Cloud Service環境 [AEM Archetype 39或更舊版本](https://github.com/adobe/aem-project-archetype)， [為您的環境啟用最適化Forms核心元件](enable-adaptive-forms-core-components.md).
 
 >[!NOTE]
 >
-> 根據Archetype 45部署Formsas a Cloud Service環境時， **最適化Forms （核心元件）** 範本和核心元件型主題會新增至您的環境。
+> 在部署以Archetype 45為基礎的Formsas a Cloud Service環境時， **最適化Forms （核心元件）** 範本和核心元件型主題會新增至您的環境。
 
 ## 使用範本 {#working-with-templates}
 
@@ -67,7 +68,7 @@ Experience Manager提供可組織範本的全域資料夾。 但預設不會啟�
      <!-- * **Emulator**: Lets you simulate and customize the look for different devices.-->
    * **模式選取器：** 可讓您變更模式。 您可以選擇 **[!UICONTROL 結構]** 模式， **[!UICONTROL 初始內容]**， **[!UICONTROL 配置控制項]** 模式。 「結構」模式可讓您新增及自訂頁首與頁尾。 初始內容模式可讓您自訂表單內容。
    * **預覽：** 可讓您預覽範本在發佈時的外觀。 您可以使用「圖層選取器」和「預覽」來切換編輯和預覽模式。
-* **側欄：** 提供內容、屬性、資產和元件瀏覽器。
+* **側欄：** 提供內容、屬性、Assets和元件瀏覽器。
 * **元件工具列：** 選取元件時，您會看到可讓您自訂元件的工具列。
 * **頁面**：新增內容以建立範本的區域。
 

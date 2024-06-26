@@ -3,7 +3,8 @@ title: 如何根據基礎元件為最適化表單新增對新區域設定的支�
 description: 對於最適化Forms，除了現成可用的語言之外，您還可以新增更多語言的區域設定。
 feature: Adaptive Forms, Foundation Components
 exl-id: 4c7d6caa-1adb-4663-933f-b09129b9baef
-source-git-commit: 6821856bd9f1a87a66ba296b3e315c0a4e78cea8
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '1220'
 ht-degree: 6%
@@ -53,7 +54,7 @@ AEM FormsForms目前支援英文(en)、西班牙文(es)、法文(fr)、義大利
 #### 1.複製存放庫 {#clone-the-repository}
 
 1. 從命令列，導覽至您要複製FormsCloud Service存放庫的位置。
-1. 執行您指定的指令 [從Cloud Manager擷取。](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git) 它類似於 `git clone https://git.cloudmanager.adobe.com/<my-org>/<my-program>/`.
+1. 執行您指定的指令 [擷取自Cloud Manager。](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git) 它類似於 `git clone https://git.cloudmanager.adobe.com/<my-org>/<my-program>/`.
 1. 使用Git使用者名稱和密碼來複製存放庫。
 1. 在您偏好的編輯器中，開啟複製的FormsCloud Service存放庫資料夾。
 

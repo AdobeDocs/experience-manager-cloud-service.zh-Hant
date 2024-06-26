@@ -3,7 +3,8 @@ title: 如何產生AEM Forms的記錄檔案(DoR)？
 description: 瞭解如何產生最適化Forms的記錄檔案(DoR)範本。
 feature: Adaptive Forms, Foundation Components
 exl-id: 16d07932-3308-4b62-8fa4-88c4e42ca7b6
-source-git-commit: 51d72edcde18503e9e4d83eaf51e28658d9ee5e6
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '4170'
 ht-degree: 3%
@@ -472,7 +473,7 @@ XCI檔案可協助您設定檔案的各種屬性。 Formsas a Cloud Service有�
 | config/present/script/currentPage | 指定開啟檔案時的初始頁面。 |
 | config/present/script/exclude | 通知Formsas a Cloud Service忽略哪些事件。 |
 | config/present/pdf/linearized | 控制是否將輸出PDF檔案線性化。 |
-| config/present/script/runScripts | 控制Formsas a Cloud Service執行的指令碼集。 |
+| config/present/script/runScripts | 控制Forms as a Cloud Service執行的指令碼集。 |
 | config/present/pdf/tagged | 控制標籤在輸出PDF檔案中是否包含。 在PDF的內容中，標籤是包含在檔案中的其他資訊，用於公開檔案的邏輯結構。 標籤有助於協助協助工具及重新格式化。 例如，頁碼可能會被標籤為成品，這樣熒幕閱讀器就不會在文字中間朗讀它。 雖然標籤讓檔案變得更實用，但它們也會增加檔案的大小，以及建立檔案的處理時間。 |
 | config/present/pdf/fontInfo/alwaysEmbed | 指定內嵌在輸出檔案中的字型。 |
 | config/present/pdf/fontInfo/neverEmbed | 指定不得嵌入至輸出檔案的字型。 |

@@ -1,9 +1,10 @@
 ---
 title: 如何疑難排解表單建立失敗？
 description: 疑難排解AEM Formsas a Cloud Service環境中表單建立的失敗。
-feature: Adaptive Forms, Troubleshooting
+feature: Adaptive Forms
 role: User
-source-git-commit: 23491130b44147753c5b98f316be5a9e5937afea
+exl-id: 169ea727-0941-4a1d-bc33-d9fe208b27ab
+source-git-commit: 0b693cb51a96011235fa87a5899426c6b0c2509a
 workflow-type: tm+mt
 source-wordcount: '183'
 ht-degree: 0%
@@ -27,9 +28,9 @@ ht-degree: 0%
 若要解決此問題，請執行以下步驟：
 
 1. 確認您在表單中使用的範本沒有 `jcr:uuid` 和其他系統在路徑中產生的受保護屬性 `<template-path>/initial/jcr:content node`.
-1. 使用範本主控台明確地發佈範本。
+1. 使用範本主控台明確地Publish範本。
 1. 現在，發佈範本時，請嘗試使用範本建立新表單。
-1. 如果您在未來的版本中使用了範本更新，請再次發佈範本（如步驟2所述）以防止表單建立失敗問題。
+1. 如果您在未來的版本中使用了範本更新，請再次Publish範本（如步驟2所述）以防止建立表單失敗問題。
 
 
 <!--
@@ -55,13 +56,3 @@ To resolve the issue, perform the following workaround steps:
 1. If the template is changed in the future, publish it again as mentioned in the step 1.
 
 -->
-
-
-
-
-
-
-
-
-
-

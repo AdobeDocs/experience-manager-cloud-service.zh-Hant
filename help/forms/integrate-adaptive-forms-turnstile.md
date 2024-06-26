@@ -5,7 +5,9 @@ topic-tags: Adaptive Forms, author
 feature: Adaptive Forms, Foundation Components
 hide: true
 hidefromtoc: true
-source-git-commit: d2c6514eb1f38b06dfa58daa03b781920b8928f6
+exl-id: 644c351b-a167-4d18-8b99-b7cae6be48d5
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '950'
 ht-degree: 2%
@@ -58,11 +60,11 @@ Cloudflare的Turnstile驗證碼是一種安全性措施，旨在保護表單和�
       ![設定Cloud Service以將AEM Forms環境與Turnstile連線](assets/config-turntstile.png)
 
 >[!NOTE]
-> 使用者不需要修改使用者端JavaScript驗證URL和伺服器端驗證URL，因為它們已預先填入Turnstile驗證。
+> 使用者不需要修改使用者端JavaScript驗證URL和伺服器端驗證URL，因為已預先填入Turnstile驗證。
 
 設定Turnstile驗證碼服務後，就可在調適型表單中使用。
 
-## 在最適化表單中使用Turnstile{#using-turnstile-foundation-components}
+## 在最適化表單中使用 Turnstile{#using-turnstile-foundation-components}
 
 1. 開啟您的AEM Formsas a Cloud Service執行個體。
 1. 前往 **[!UICONTROL Forms]** > **[!UICONTROL Forms與檔案]**.

@@ -2,9 +2,9 @@
 title: 如何使用Formsas a Cloud Service將資料與XDP和PDF範本合併，或產生PCL、ZPL和PostScript格式的輸出？
 description: 自動將資料與 XDP 和 PDF 範本合併，或產生 PCL、ZPL 和 PostScript 格式的輸出
 exl-id: 9fa9959e-b4f2-43ac-9015-07f57485699f
-feature: Adaptive Forms, APIs
+feature: Adaptive Forms,APIs & Integrations
 role: Admin, Developer, User
-source-git-commit: 975f767e75a268a1638227ae20a533f82724c80a
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '698'
 ht-degree: 6%
@@ -18,7 +18,7 @@ Formsas a Cloud Service- Communications API可讓您建立、彙總及提供品�
 
 假設您有一或多個範本，且每個範本有多個XML資料記錄。 您可以使用Communications API為每筆記錄產生列印檔案。 <!-- You can also combine the records into a single document. --> 結果會產生非互動式PDF檔案。 非互動式PDF檔案不允許使用者在其欄位中輸入資料。
 
-Formsas a Cloud Service — 通訊提供隨選和批次API （非同步API），用於產生排程檔案：
+Formsas a Cloud Service — 通訊功能提供隨選和批次API （非同步API），用於產生排程檔案：
 
 * 同步API適用於隨選、低延遲和單一記錄檔案產生使用案例。 這些 API 更適合根據使用者動作的使用案例。例如，在使用者填寫表單後產生檔案。
 
@@ -45,9 +45,9 @@ Formsas a Cloud Service — 通訊提供隨選和批次API （非同步API），
 
 * **基本驗證**：基本驗證是內建在HTTP通訊協定中的簡單驗證配置。 使用者端傳送的HTTP要求具有Authorization標頭，其中包含Basic這個字，後面接著space和base64編碼的字串username：password。 例如，若要授權為管理員/管理員，使用者端會傳送「基本」 [base64編碼字串使用者名稱]： [base64編碼的字串密碼].
 
-* **權杖型驗證：** 權杖型驗證使用存取權杖（持有者驗證權杖）向Experience Manager發出as a Cloud Service請求。 AEM Formsas a Cloud Service提供API以安全地擷取存取Token。 若要擷取並使用權杖來驗證請求：
+* **權杖型驗證：** 權杖型驗證使用存取權杖（持有者驗證權杖）向Experience Manageras a Cloud Service提出請求。 AEM Formsas a Cloud Service提供API以安全地擷取存取Token。 若要擷取並使用權杖來驗證請求：
 
-   1. [從開發人員控制檯擷取Experience Manageras a Cloud Service認證](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html).
+   1. [從Developer Console擷取Experience Manageras a Cloud Service認證](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html).
    1. [在您的環境中安裝Experience Manageras a Cloud Service認證](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html). (應用程式伺服器、Web伺服器或其他非AEM伺服器)設定為傳送要求給（進行呼叫）雲端服務。
    1. [產生JWT權杖並與Adobe IMS API交換存取權杖](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html).
    1. 以存取權杖作為持有者驗證權杖來執行Experience ManagerAPI。

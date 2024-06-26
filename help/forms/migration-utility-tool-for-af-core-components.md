@@ -6,13 +6,14 @@ role: User, Developer, Admin
 features: core components
 hide: true
 hidefromtoc: true
-source-git-commit: cc1f3e2f0ddaed67de541c730c0b97f68c1e0d02
+exl-id: ee71a576-96a7-4c81-b3a3-1d678f010cba
+feature: Adaptive Forms, Core Components
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '961'
 ht-degree: 1%
 
 ---
-
 
 # 簡介
 
@@ -117,9 +118,9 @@ Forms轉換公用程式會將以舊版基礎元件為基礎的最適化Forms轉�
    * **無** ：如果您不想在開始表單轉換之前建立以基礎元件為基礎的表單副本，請選取選項。
    * **還原** ：選取選項，以將表單還原至開始表單轉換前的狀態。
    * **複製到目標**：選取選項，在開始表單轉換之前建立Foundation元件式表單的副本。
-在我們的案例中， **複製到目標** 已選取選項。 如果 **複製到目標** 已選取選項，則 **[!UICONTROL 來源路徑]** 和 **[!UICONTROL 目標路徑]** 選項會變成可見。
+在我們的案例中， **複製到目標** 已選取選項。 如果 **複製到目標** 已選取選項，則 **[!UICONTROL Source路徑]** 和 **[!UICONTROL 目標路徑]** 選項會變成可見。
 
-1. 指定 `source folder` 中的名稱 **[!UICONTROL 來源路徑]**.
+1. 指定 `source folder` 中的名稱 **[!UICONTROL Source路徑]**.
 1. 指定 `target folder` 中的名稱 **[!UICONTROL 目標路徑]**.
 1. 選取&#x200B;**[!UICONTROL 「下一步」]**。
 1. 按一下 **[!UICONTROL 新增Forms]**. 此頁面中的所有表單 `source folder` 會顯示在畫面上。
@@ -149,6 +150,3 @@ Forms轉換公用程式會將以舊版基礎元件為基礎的最適化Forms轉�
 
 * 確定您的Foundation元件式表單，僅使用具有同等基礎元件的表單 [核心元件](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction#available-components-a-breakdown-by-component-type) 可用。 若您使用沒有對等核心元件的基礎元件，則不會轉換基礎元件。 因此，它在編寫表單時無法正常運作
 * 請確定將基礎元件轉換為核心元件的規則已格式化為XML。
-
-
-

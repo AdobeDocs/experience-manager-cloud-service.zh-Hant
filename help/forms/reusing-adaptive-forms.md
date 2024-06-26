@@ -4,7 +4,8 @@ description: 探索以有效率地重新利用現有的最適化表單來建立�
 seo-description: You can reuse an existing Adaptive Form to create new Adaptive Forms.
 feature: Adaptive Forms, Foundation Components
 exl-id: fb8cf3a9-fd19-46bf-b40e-2af76ca68b9f
-source-git-commit: f419883d0e83b5d711e0f594a8e14a8f2133f4b1
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '601'
 ht-degree: 12%
@@ -53,7 +54,7 @@ ht-degree: 12%
 
 按一下複製動作會自動退出選取模式並進行貼上 ![貼上](assets/Smock_Paste_18_N.svg) 圖示可見。 現在移至所需的資料夾路徑，然後按一下貼上 ![貼上](assets/Smock_Paste_18_N.svg) 圖示貼上複製的自適應表單。
 
-如果您貼上同一個資料夾或另一個具有相同節點名稱的檔案（儲存於CRX儲存庫中），則會在目標資料夾中加上1 （例如，myaf會變成myaf1，而如果myaf1存在於相同位置，myaf會變成myaf2）。 所有其他屬性仍維持與原始的最適化表單相同。
+如果貼上同一個資料夾或另一個具有相同節點名稱的檔案(儲存於CRX存放庫中)存在於此目標資料夾中，則會將1附加至尾碼(例如，myaf會變成myaf1，而如果myaf1存在於相同位置，myaf會變成myaf2。 所有其他屬性仍維持與原始的最適化表單相同。
 
 按一下貼上之後 ![貼上](assets/Smock_Paste_18_N.svg) 圖示，則會再次隱藏。 您一次只能貼上一次。 若要再次建立相同資產的復本，請再次複製。
 

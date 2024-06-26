@@ -2,10 +2,10 @@
 title: 如何建立最適化表單的自訂提交動作？
 description: 瞭解如何為最適化Forms建立自訂提交動作，以便在提交資料至Rest端點、儲存至資料存放區以及執行其他自訂函式之前延遲提交和處理資料。
 feature: Adaptive Forms, Foundation Components
-role: User
+role: User, Developer
 level: Intermediate
 exl-id: 77131cc2-9cb1-4a00-bbc4-65b1a66e76f5
-source-git-commit: ddf9632c0aad1fd5a3c2fb02fe1c9673ae4eb029
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '1669'
 ht-degree: 1%
@@ -102,13 +102,13 @@ for (Map.Entry<String, RequestParameter[]> param : requestParameterMap.entrySet(
    * **guideComponentType** 字串和值的型別 **fd/af/components/guidesubmittype**
    * **guideDataModel** 字串型別，指定適用於提交動作的最適化表單型別。 <!--**xfa** is supported for XFA-based Adaptive Forms while -->**xsd** 支援XSD式的最適化Forms。 **基本** 不使用XDP或XSD的最適化Forms支援。 若要顯示多種最適化Forms型別的動作，請新增對應的字串。 以逗號分隔每個字串。 例如，若要使動作顯示在 <!--XFA- and -->XSD式最適化Forms，請將值指定為 <!--**xfa** and--> **xsd**.
 
-   * **jcr：description** 型別字串的。 此屬性的值會顯示在「最適化表單編輯」對話方塊之「提交動作」索引標籤的「提交動作」清單中。 OOTB動作會存在於該位置的CRX存放庫中 **/libs/fd/af/components/guidesubmittype**.
+   * **jcr：description** 型別字串的。 此屬性的值會顯示在「最適化表單編輯」對話方塊之「提交動作」索引標籤的「提交動作」清單中。 OOTB動作會存在於CRX存放庫中的位置 **/libs/fd/af/components/guidesubmittype**.
 
    * **submitService** 型別字串的。 如需詳細資訊，請參閱 [針對自訂動作排程最適化表單提交](#schedule-adaptive-form-submission).
 
 ## 建立自訂提交動作 {#creating-a-custom-submit-action}
 
-執行以下步驟來建立自訂提交動作，將資料儲存在CRX存放庫中，然後向您傳送電子郵件。 最適化表單包含OOTB提交動作存放區內容（已棄用），可將資料儲存於CRX存放庫。 此外，AEM還提供 [郵件](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/day/cq/mailer/package-summary.html) 可用於傳送電子郵件的API。 使用Mail API之前，請透過系統主控台設定Day CQ Mail服務。 您可以重複使用「儲存內容（已棄用）」動作，將資料儲存在存放庫中。 存放區內容（已棄用）動作可在CRX存放庫中的/libs/fd/af/components/guidessubmittype/store位置取得。
+執行以下步驟來建立自訂提交動作，將資料儲存至CRX存放庫，然後傳送電子郵件給您。 最適化表單包含OOTB提交動作存放區內容（已棄用），可將資料儲存至CRX存放庫。 此外，AEM還提供 [郵件](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/day/cq/mailer/package-summary.html) 可用於傳送電子郵件的API。 使用Mail API之前，請透過系統主控台設定Day CQ Mail服務。 您可以重複使用「儲存內容（已棄用）」動作，將資料儲存在存放庫中。 存放區內容（已棄用）動作可在CRX存放庫中的/libs/fd/af/components/guidessubmittype/store位置取得。
 
 1. 在URL https://登入CRXDE Lite&lt;server>：&lt;port>/crx/de/index.jsp. 在/apps/custom_submit_action資料夾中建立具有sling：Folder屬性並命名為store_and_mail的節點。 建立custom_submit_action資料夾（如果尚未存在）。
 

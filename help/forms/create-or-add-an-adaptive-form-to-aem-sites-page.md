@@ -1,10 +1,11 @@
 ---
 title: 如何將最適化表單新增至AEM Sites頁面？
 description: 瞭解如何建立最適化表單或將其新增到您的AEM Sites頁面。 也瞭解將表單整合至您網站的好處和各種方式。
-feature: Adaptive Forms, Foundation Components, Page Editor, Authoring
+feature: Adaptive Forms, Foundation Components
 Keywords: AF in Sites editor, af in aem sites, aem sites af, add af to a sites page, af aem sites, af sites, create af in a sites page, adaptive form in aem sites, forms aem sites, add form to a sites page, adaptive forms aem sites, add adaptive forms to aem page, create forms in an aem sites page
 exl-id: a1846c5d-7b0f-4f48-9d15-96b2a8836a9d
-source-git-commit: 38e11538cdf3777a91a5ca60f83f8a95cd410c00
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '3184'
 ht-degree: 18%
@@ -206,7 +207,7 @@ AEM FormsCloud Service提供最適化表單容器和Adaptive Forms — 內嵌元
 
 ## 為AEM Sites頁面或體驗片段中的表單設定結構描述或表單資料模型(FDM) {#configure-schema-or-data-model-for-form}
 
-您可以使用表單資料模型(FDM)將表單連線至資料來源，以根據使用者動作傳送及接收資料。 您也可以將表單連線至JSON結構描述，以預先定義的格式接收提交的資料。 根據需求，將表單連線到JSON結構描述或表單資料模型(FDM)：
+您可以使用表單資料模型(FDM)將表單連線至資料Source，以根據使用者動作傳送及接收資料。 您也可以將表單連線至JSON結構描述，以預先定義的格式接收提交的資料。 根據需求，將表單連線到JSON結構描述或表單資料模型(FDM)：
 
 * [建立JSON結構描述並上傳至您的環境](/help/forms/adaptive-form-json-schema-form-model.md)  或，
 * [建立表單資料模型(FDM)](/help/forms/create-form-data-models.md)

@@ -6,7 +6,8 @@ contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms, Core Components
 exl-id: 24607dd1-2d65-480b-a831-9071e20c473d
-source-git-commit: 8730383d26c6f4fbe31a25a43d33bf314251d267
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '4351'
 ht-degree: 1%
@@ -39,11 +40,11 @@ AEM Forms支援自訂函式，可讓使用者定義JavaScript函式以實作複�
 * **動態行為**：自訂函式可讓您根據特定條件控制表單的動態行為。 例如，您可以顯示/隱藏欄位、修改欄位值或動態調整表單邏輯。
 * **整合**：您可以使用自訂函式與外部API或服務整合。 它有助於從外部來源擷取資料、傳送資料至外部Rest端點，或根據外部事件執行自訂動作。
 
-自訂函式基本上是新增到JavaScript檔案中的使用者端程式庫。 建立自訂函式後，規則編輯器中即可供使用者在最適化表單中選擇。 自訂函式由規則編輯器中的JavaScript註解來識別。
+自訂函式基本上是新增至JavaScript檔案中的使用者端程式庫。 建立自訂函式後，規則編輯器中即可供使用者在最適化表單中選擇。 自訂函式由規則編輯器中的JavaScript註解識別。
 
-### 自訂函式支援的JavaScript註解 {#js-annotations}
+### 支援自訂功能的JavaScript註解 {#js-annotations}
 
-JavaScript註解是用來提供JavaScript程式碼的中繼資料。 其中包含以特定符號(例如/**和@)開頭的註解。 註解提供關於程式碼中函式、變數和其他元素的重要資訊。 最適化表單支援自訂函式的下列JavaScript註解：
+JavaScript註解是用來提供JavaScript程式碼的中繼資料。 其中包含以特定符號(例如/**和@)開頭的註解。 註解提供關於程式碼中函式、變數和其他元素的重要資訊。 最適化表單支援下列自訂函式的JavaScript註解：
 
 #### 名稱
 
@@ -75,14 +76,14 @@ JavaScript註解是用來提供JavaScript程式碼的中繼資料。 其中包�
    * 日期[]：代表日期值的陣列。
    * array：代表包含各種型別值的泛型陣列。
    * object：代表傳遞至自訂函式的表單物件，而非直接傳遞其值。
-   * 範圍：代表全域物件，其中包含唯讀變數，例如表單例項、目標欄位例項，以及在自訂函式內執行表單修改的方法。 這會宣告為JavaScript註解中的最後一個引數，且不會顯示在調適型表單的規則編輯器中。 scope引數可存取表單或元件的物件，以觸發表單處理所需的規則或事件。 如需關於Globals物件及其使用方式的詳細資訊， [按一下這裡](/help/forms/create-and-use-custom-functions.md#support-field-and-global-objects).
+   * 範圍：代表全域物件，其中包含唯讀變數，例如表單例項、目標欄位例項，以及在自訂函式內執行表單修改的方法。 這會宣告為JavaScript註解中的最後一個引數，且不會顯示在最適化表單的規則編輯器中。 scope引數可存取表單或元件的物件，以觸發表單處理所需的規則或事件。 如需關於Globals物件及其使用方式的詳細資訊， [按一下這裡](/help/forms/create-and-use-custom-functions.md#support-field-and-global-objects).
 
 引數型別不區分大小寫，而且引數名稱中不允許使用空格。
 
 `<Parameter Description>` 包含有關引數用途的詳細資訊。 它可以有多個字詞。
 
 **選用引數**
-依預設，所有引數都是必要引數。 您可以透過新增引數將引數定義為選用的 `=` 在引數型別之後或將引數名稱括在  `[]`. 在JavaScript註解中定義為選用引數的規則編輯器會顯示為選用引數。
+依預設，所有引數都是必要引數。 您可以透過新增引數將引數定義為選用的 `=` 在引數型別之後或將引數名稱括在  `[]`. 在JavaScript註解中定義為選用性的引數，會在規則編輯器中顯示為選用專案。
 若要將變數定義為選用引數，您可以使用下列任一語法：
 
 * `@param {type=} Input1`
@@ -172,7 +173,7 @@ JavaScript註解是用來提供JavaScript程式碼的中繼資料。 其中包�
 ```
 如果使用者未將任何JavaScript註解新增至自訂函式，則會依函式名稱在規則編輯器中列出。 不過，建議您加入JavaScript註解，以提升自訂函式的可讀性。
 
-### 具有強制JavaScript註解或註解的Arrow函式
+### 箭頭功能與強制JavaScript註解或註解
 
 您可以使用箭頭函式語法來建立自訂函式：
 
@@ -196,7 +197,7 @@ JavaScript註解是用來提供JavaScript程式碼的中繼資料。 其中包�
 
 如果使用者沒有將任何JavaScript註解新增到自訂函式，則自訂函式不會列在最適化表單的規則編輯器中。
 
-### 含有必要JavaScript註解或註解的函式運算式
+### 含有強制JavaScript註解或註解的函式運算式
 
 若要列出最適化表單的規則編輯器中的自訂函式，請以下列格式建立自訂函式：
 
@@ -337,7 +338,7 @@ JavaScript註解是用來提供JavaScript程式碼的中繼資料。 其中包�
 
 **將新建立的使用者端程式庫資料夾部署至您的AEM環境**
 
-部署AEMas a Cloud Service、 [AemCS專案目錄]，前往您的Cloud Service環境。 若要部署至您的Cloud Service環境：
+部署AEM as a Cloud Service， [AemCS專案目錄]，前往您的Cloud Service環境。 若要部署至您的Cloud Service環境：
 
 1. 提交變更
 
@@ -353,7 +354,7 @@ JavaScript註解是用來提供JavaScript程式碼的中繼資料。 其中包�
 
    1. 透過現有的完整棧疊管道觸發計畫碼部署。 這會自動建置及部署更新的程式碼。
 
-如果您尚未設定管道，請參閱上的指南 [如何設定AEM Formsas a Cloud Service的管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=zh-Hant#setup-pipeline).
+如果您尚未設定管道，請參閱上的指南 [如何設定AEM Forms的as a Cloud Service管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=zh-Hant#setup-pipeline).
 
 管道執行成功後，使用者端資料庫中新增的自訂函式即可在中使用 [最適化表單規則編輯器](/help/forms/rule-editor-core-components.md).
 
@@ -374,7 +375,7 @@ JavaScript註解是用來提供JavaScript程式碼的中繼資料。 其中包�
 
 1. 按一下&#x200B;**[!UICONTROL 「完成」]**。
 
-您可在以下位置使用自訂函式： [最適化表單的規則編輯器](/help/forms/rule-editor-core-components.md) 使用 [JavaScript附註](##js-annotations).
+您可在以下位置使用自訂函式： [最適化表單的規則編輯器](/help/forms/rule-editor-core-components.md) 使用 [JavaScript註解](##js-annotations).
 
 ## 在最適化表單中使用自訂函式
 
@@ -1011,12 +1012,12 @@ Adaptive Forms會在規則編輯器中擷取自訂函式清單時，實作自訂
 * 如果自訂提交處理常式無法在現有AEM專案或表單中如預期般執行，請執行下列步驟：
    * 確保 [核心元件版本更新至3.0.18版及更新版本](https://github.com/adobe/aem-core-forms-components). 不過，對於現有的AEM專案和表單，還有其他要遵循的步驟：
 
-   * 對於AEM專案，使用者應取代所有例項 `submitForm('custom:submitSuccess', 'custom:submitError')` 替換為 `submitForm()` 和透過Cloud Manager管道部署專案。
+   * 對於AEM專案，使用者應取代所有例項 `submitForm('custom:submitSuccess', 'custom:submitError')` 替換為 `submitForm()` 並透過Cloud Manager管道部署專案。
 
    * 針對現有表單，如果自訂提交處理常式無法正常運作，使用者需要開啟並儲存 `submitForm` 上的規則 **提交** 按鈕來編輯規則。 此動作會取代中的現有規則 `submitForm('custom:submitSuccess', 'custom:submitError')` 替換為 `submitForm()` 在表單中。
 
 
-* 如果包含自訂函式程式碼的JavaScript檔案發生錯誤，則自訂函式不會列在調適型表單的規則編輯器中。 若要檢查自訂函式清單，您可以導覽至 `error.log` 錯誤檔案。 發生錯誤時，自訂函式清單會顯示為空白：
+* 如果包含自訂函式程式碼的JavaScript檔案發生錯誤，則自訂函式不會列在最適化表單的規則編輯器中。 若要檢查自訂函式清單，您可以導覽至 `error.log` 錯誤檔案。 發生錯誤時，自訂函式清單會顯示為空白：
 
   ![錯誤記錄檔](/help/forms/assets/custom-function-list-error-file.png)
 

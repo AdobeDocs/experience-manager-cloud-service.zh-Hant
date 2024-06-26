@@ -2,9 +2,10 @@
 title: 什麼是Formsas a Cloud Service通訊API？
 description: 使用通訊API來簽署、認證或保護您的檔案、自動化PDF產生流程，以及將PDF檔案轉換為另一種格式。
 Keywords: How to generate document?, Generate PDF document, Manipulation PDF documents, Assembling PDF documents, Validating PDF document, APIs used in encrypting or decrypting PDFs.
-feature: Adaptive Forms, APIs
+feature: Adaptive Forms, APIs & Integrations
 role: Admin, Developer, User
-source-git-commit: 92811662e1ef9b6cbd5cb66c67f774109745bc68
+exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '2290'
 ht-degree: 40%
@@ -298,7 +299,7 @@ DocAssurance服務包含簽名和加密API：
 
 ## 上線
 
-通訊功能可作為獨立和附加模組供 Forms as a Cloud Service 使用者使用。您可以聯絡Adobe銷售團隊或您的Adobe代表以要求存取權。 Adobe 為您的組織啟用存取權，並向您指定的組織管理員提供所需的權限。管理員可以授與您as a Cloud Service的Forms開發人員（使用者）存取權以使用這些API。
+通訊功能可作為獨立和附加模組供 Forms as a Cloud Service 使用者使用。您可以聯絡Adobe銷售團隊或您的Adobe代表以要求存取權。 Adobe 為您的組織啟用存取權，並向您指定的組織管理員提供所需的權限。管理員可以授予組織的Formsas a Cloud Service開發人員（使用者）存取權，以使用API。
 
 上線後，若要為您的Formsas a Cloud Service環境啟用通訊功能：
 

@@ -3,7 +3,9 @@ title: 如何將最適化表單與Microsoft® Power Automate整合？
 description: 整合最適化表單與Microsoft® Power Automate。
 exl-id: a059627b-df12-454d-9e2c-cc56986b7de6
 keywords: 將AEM表單連線至power automate、Power automate automation AEM Forms、將power automate整合至Adaptive Forms、將資料從Adaptive Forms傳送至Power Automate
-source-git-commit: fa9254a3290a7628c4d058a6e8cc010789bd30f9
+feature: Adaptive Forms
+role: Admin, User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '1171'
 ht-degree: 11%
@@ -17,7 +19,7 @@ ht-degree: 11%
 
 最適化Forms編輯器提供 **叫用Microsoft®Power Automate流程** 傳送最適化表單資料、附件和記錄檔案的提交動作會傳送到Power Automate雲端流程。
 
-AEMas a Cloud Service提供多種現成的提交動作，用於處理表單提交。 如需這些選項的詳細資訊，請參閱 [最適化表單提交動作](/help/forms/configure-submit-actions-core-components.md)  文章。
+AEM as a Cloud Service提供多種立即可用的提交動作，用於處理表單提交。 如需這些選項的詳細資訊，請參閱 [最適化表單提交動作](/help/forms/configure-submit-actions-core-components.md)  文章。
 
 
 ## 優點
@@ -38,14 +40,14 @@ AEMas a Cloud Service提供多種現成的提交動作，用於處理表單提�
 * 具有的Experience Manager使用者 [Forms Author](/help/forms/forms-groups-privileges-tasks.md) 和 [Forms管理員](/help/forms/forms-groups-privileges-tasks.md) 許可權
 * 用來連線至Microsoft的帳戶®Power Automate是已設定為可從調適型表單接收資料的Power Automate流程的所有者
 
-## 使用Microsoft® Power Automate連線您的Formsas a Cloud Service執行個體 {#connect-forms-server-with-power-automate}
+## 將Formsas a Cloud Service執行個體與Microsoft® Power Automate連線 {#connect-forms-server-with-power-automate}
 
 執行以下動作，將您的Formsas a Cloud Service執行個體與Microsoft® Power Automate連線：
 
 1. [建立Microsoft](#ms-power-automate-application)
 1. [建立Microsoft](#microsoft-power-automate-dataverse-cloud-configuration)
 1. [建立Microsoft](#create-microsoft-power-automate-flow-cloud-configuration)
-1. [發佈Microsoft](#publish-microsoft-power-automate-dataverse-cloud-configuration)
+1. [Publish Microsoft](#publish-microsoft-power-automate-dataverse-cloud-configuration)
 
 ### 建立Microsoft® Azure Active Directory應用程式 {#ms-power-automate-application}
 
@@ -91,7 +93,7 @@ AEMas a Cloud Service提供多種現成的提交動作，用於處理表單提�
 
    >[!NOTE]
    >
-   建立最適化表單時，請在 **[!UICONTROL 設定容器]** 欄位。
+   >建立最適化表單時，請在 **[!UICONTROL 設定容器]** 欄位。
 
 1. 在設定頁面上，選取 **[!UICONTROL 建立]** 以建立 [!DNL Microsoft®®® Power Automate Flow Service] AEM Forms中的設定。
 1. 在 **[!UICONTROL 設定Microsoft®® Power Automate的Dataverse服務]** 頁面，指定 **[!UICONTROL 使用者端ID]** （也稱為應用程式ID）、 **[!UICONTROL 使用者端密碼]**， **[!UICONTROL OAuth URL]** 和 **[!UICONTROL 動態環境URL]**. 使用的使用者端ID、使用者端密碼、OAuth URL及動態環境URL [Microsoft® Azure Active Directory應用程式](#ms-power-automate-application) 您在上一節中建立。 在Microsoft® Azure Active Directory應用程式UI中使用端點選項來尋找OAuth URL
@@ -107,23 +109,23 @@ AEMas a Cloud Service提供多種現成的提交動作，用於處理表單提�
 
    >[!NOTE]
    >
-   建立最適化表單時，請在 **[!UICONTROL 設定容器]** 欄位。
+   >建立最適化表單時，請在 **[!UICONTROL 設定容器]** 欄位。
 
 1. 在設定頁面上，選取 **[!UICONTROL 建立]** 以建立 [!DNL Microsoft® Power Automate Flow Service] AEM Forms中的設定。
 1. 在 **[!UICONTROL 設定Microsoft® Power Automate的Dataverse]** 頁面，指定 **[!UICONTROL 使用者端ID]** （也稱為應用程式ID）、 **[!UICONTROL 使用者端密碼]**， **[!UICONTROL OAuth URL]** 和 **[!UICONTROL 動態環境URL]**. 使用使用者端ID、使用者端密碼、OAuth URL和Dynamics環境ID。 在Microsoft® Azure Active Directory應用程式UI中使用端點選項來尋找OAuth URL。 開啟 [我的流程](https://us.flow.microsoft.com) 連結並選取「我的流程」，使用URL中列出的ID作為「動態環境ID」。
 1. 選取 **[!UICONTROL 連線]**. 如有要求，請登入您的Microsoft® Azure帳戶。 選取「**[!UICONTROL 儲存]**」。
 
-### 發佈Microsoft® Power Automate Dataverse和Microsoft® Power Automate流程服務雲端設定 {#publish-microsoft-power-automate-dataverse-cloud-configuration}
+### Publish包含Microsoft®Power Automate Dataverse和Microsoft® Power Automate Flow Service雲端設定 {#publish-microsoft-power-automate-dataverse-cloud-configuration}
 
 1. 瀏覽至 **[!UICONTROL 工具]** ![錘子](assets/hammer.png) > **[!UICONTROL Cloud Service]** > **[!UICONTROL Microsoft® Power Automate Dataverse]** 並開啟您之前建立的設定容器 [建立Microsoft® Power Automate Dataverse雲端設定](#microsoft-power-automate-dataverse-cloud-configuration) 區段。
-1. 選取 `dataverse` 設定並選取 **[!UICONTROL 發佈]**.
-1. 在發佈頁面上，選取 **[!UICONTROL 所有設定]** 並選取 **[!UICONTROL 發佈]**. 發佈Power Automate Dataverse和Power Automate流程服務雲端設定。
+1. 選取 `dataverse` 設定並選取 **[!UICONTROL Publish]**.
+1. 在Publish頁面上，選取 **[!UICONTROL 所有設定]** 並選取 **[!UICONTROL Publish]**. Publish包含Power Automate Dataverse和Power Automate流程服務雲端設定。
 
 您的Formsas a Cloud Service執行個體現在已與Microsoft® Power Automate連線。 您現在可以將最適化Forms資料傳送到Power Automate流程。
 
 ## 使用叫用Microsoft® Power Automate流程提交動作將資料傳送至Power Automate流程 {#use-the-invoke-microsoft-power-automate-flow-submit-action}
 
-在您之後 [使用Microsoft® Power Automate連線您的Formsas a Cloud Service執行個體](#connect-forms-server-with-power-automate)，執行下列動作來設定您的最適化表單，以在表單提交時傳送擷取的資料至Microsoft®流程。
+在您之後 [將Formsas a Cloud Service執行個體與Microsoft® Power Automate連線](#connect-forms-server-with-power-automate)，執行下列動作來設定您的最適化表單，以在表單提交時傳送擷取的資料至Microsoft®流程。
 
 1. 登入您的Author例項，選取您的Adaptive Form並按一下 **[!UICONTROL 屬性]**.
 1. 在設定容器中，瀏覽並選取在區段中建立的容器 [建立Microsoft® Power Automate Dataverse雲端設定](#microsoft-power-automate-dataverse-cloud-configuration)，並選取 **[!UICONTROL 儲存並關閉]**.
@@ -134,7 +136,7 @@ AEMas a Cloud Service提供多種現成的提交動作，用於處理表單提�
 
 >[!NOTE]
 >
-提交最適化表單前，請確定 `When an HTTP Request is received` 已將具有以下JSON結構描述的觸發程式新增至您的Power Automate流程。
+> 提交最適化表單前，請確定 `When an HTTP Request is received` 已將具有以下JSON結構描述的觸發程式新增至您的Power Automate流程。
 
 ```
         {

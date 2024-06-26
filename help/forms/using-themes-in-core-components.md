@@ -4,7 +4,8 @@ description: 您可以使用主題來設定樣式，並使用核心元件來將�
 keywords: 最適化表單樣式化核心元件。 在核心元件中使用主題、設計最適化表單的樣式、自訂主題
 feature: Adaptive Forms, Core Components
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: aca3508d85a0382f679a8fa0ca986cfd13ee793b
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '2879'
 ht-degree: 4%
@@ -380,7 +381,7 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 1. 選取 **[!UICONTROL 新增非生產管道]** 或 **[!UICONTROL 新增生產管道]** 根據Cloud Service環境而定。 例如，此處 **[!UICONTROL 新增生產管道]** 已選取選項。
 1. 在 **[!UICONTROL 新增生產管道]** 對話方塊作為 **[!UICONTROL 設定]** 步驟，指定管道的名稱。 例如，管道的名稱為 `customcanvastheme`.
 1. 按一下&#x200B;**[!UICONTROL 「繼續」]**。
-1. 選取 **[!UICONTROL 目標部署]** > **[!UICONTROL 前端計畫碼]** 選項，在 **[!UICONTROL 原始碼]** 步驟。
+1. 選取 **[!UICONTROL 目標部署]** > **[!UICONTROL 前端計畫碼]** 選項，在 **[!UICONTROL Source程式碼]** 步驟。
 1. 選取 **[!UICONTROL 存放庫]** 和 **[!UICONTROL Git分支]** 具有您最新變更的值。 例如，此處選取的存放庫名稱為 `custom-canvas-theme-repo` Git分支為 `main`.
 1. 選取 **[!UICONTROL 程式碼位置]** 作為 `/`，如果您的變更位於根資料夾中。
 1. 按一下「**[!UICONTROL 儲存]**」。
@@ -409,7 +410,7 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 
 1. 按一下 **建立** > **最適化Forms**. 建立最適化表單的精靈隨即開啟。
 
-1. 選取中的核心元件範本 **來源** 標籤。
+1. 選取中的核心元件範本 **Source** 標籤。
 1. 選取中的主題 **樣式** 標籤。
 1. 按一下&#x200B;**建立**。
 

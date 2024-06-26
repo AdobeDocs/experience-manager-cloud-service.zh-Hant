@@ -3,7 +3,9 @@ title: 如何將AEM Forms與Adobe Analytics整合？
 seo-title: Learn how to integrate AEM Forms with Adobe Analytics.
 exl-id: 0730432e-75b8-4b35-a377-ae4a2bee6c9f
 hidefromtoc: true
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+feature: Adaptive Forms, Acrobat Sign
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '1709'
 ht-degree: 1%
@@ -181,7 +183,7 @@ AEM Forms整合 [Adobe Analytics](https://experienceleague.adobe.com/docs/analyt
    >[!VIDEO](https://video.tv.adobe.com/v/337425)
 
 
-### 發佈流程 {#publish-flow}
+### Publish流程 {#publish-flow}
 
 建立資料元素並在規則中使用它們後，請發佈設定以在中收集表單資料 [!DNL Adobe Analytics].
 
@@ -193,11 +195,11 @@ AEM Forms整合 [Adobe Analytics](https://experienceleague.adobe.com/docs/analyt
 
 1. 選取 **[!UICONTROL 新增所有變更的資源]** 然後選取 **[!UICONTROL 儲存並建置到開發環境]**.
 
-1. 在 **[!UICONTROL 開發]** 區段，選取 ![更多選項](assets/more-options-icon.svg) 然後選取 **[!UICONTROL 核准並發佈到生產環境]**.
+1. 在 **[!UICONTROL 開發]** 區段，選取 ![更多選項](assets/more-options-icon.svg) 然後選取 **[!UICONTROL 核准並Publish至生產環境]**.
 
 1. 確認變更和發佈流程即將顯示在中 **[!UICONTROL 已發佈]** 區段。
 
-![發佈流程](assets/publish-flow.png)
+![Publish流量](assets/publish-flow.png)
 
 ## 2.設定AEM Forms {#configure-aem-forms}
 
@@ -219,9 +221,9 @@ AEM Forms整合 [Adobe Analytics](https://experienceleague.adobe.com/docs/analyt
 
 1. 選取建立的屬性名稱，同時 [設定Adobe Analytics](#install-extensions).
 
-1. 選取 **[!UICONTROL 儲存並關閉]**.
+1. 選取「**[!UICONTROL 儲存並關閉]**」。
 
-1. 發佈設定。
+1. Publish設定。
 
 ### 啟用 [!DNL Adobe Analytics] 最適化表單 {#enable-analytics-adaptive-form}
 
@@ -231,7 +233,7 @@ AEM Forms整合 [Adobe Analytics](https://experienceleague.adobe.com/docs/analyt
 1. 選取最適化表單，然後選取 **[!UICONTROL 屬性]**.
 1. 在 **[!UICONTROL 基本]** 索引標籤中，選取 [設定容器](#create-adobe-launch-configuration) 用於建立Adobe Launch設定。
 1. 選取 **[!UICONTROL 儲存並關閉]**. 已針對以下專案啟用最適化表單 [!DNL Adobe Analytics].
-1. 發佈表單。
+1. Publish表單。
 
 啟用之後 [!DNL Adobe Analytics] 若為最適化表單，您可以 [驗證](https://experienceleague.adobe.com/docs/launch-learn/implementing-in-websites-with-launch/implement-solutions/analytics.html?lang=en#validate-the-page-view-beacon) 如果AEM Forms和之間有適當的資料事件流程 [!DNL Adobe Analytics]. AEM Forms與Adobe Analytics的整合已完成。 您現在可以 [在Adobe Analytics中設定和檢視報表](#view-reports-adobe-analytics).
 

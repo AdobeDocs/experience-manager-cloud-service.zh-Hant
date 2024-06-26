@@ -4,9 +4,11 @@ Description: Learn how to send data from your Adaptive Form to a SharePoint stor
 keywords: 如何連線SharePoint清單以取得最適化表單？、如何連線SharePoint檔案庫取得最適化表單、提交至SharePoint、建立SharePoint檔案庫組態、在最適化表單中使用提交至SharePoint提交動作、將最適化表單連線至Microsoft&reg； SharePoint清單。
 feature: Adaptive Forms, Core Components
 exl-id: e925a750-5fb5-4950-afd3-78551eec985d
-source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+title: 「如何設定最適化表單的提交動作？」
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
-source-wordcount: '1042'
+source-wordcount: '1052'
 ht-degree: 34%
 
 ---
@@ -15,7 +17,7 @@ ht-degree: 34%
 
 此 **[!UICONTROL 提交至SharePoint]** 提交動作可讓您順暢地將最適化表單與Microsoft® SharePoint儲存空間連結。 它會在您提交表單後，將表單資料傳送至您選擇的SharePoint儲存空間。
 
-AEMas a Cloud Service提供多種現成的提交動作，用於處理表單提交。 如需這些選項的詳細資訊，請參閱 [最適化表單提交動作](/help/forms/configure-submit-actions-core-components.md)  文章。
+AEM as a Cloud Service提供多種立即可用的提交動作，用於處理表單提交。 如需這些選項的詳細資訊，請參閱 [最適化表單提交動作](/help/forms/configure-submit-actions-core-components.md)  文章。
 
 ## 優點
 

@@ -4,7 +4,8 @@ description: 使用稽核機制來新增稽核者並允許稽核者在表單上�
 topic-tags: forms-manager
 feature: Adaptive Forms, Foundation Components
 exl-id: 378049f8-bf21-4595-819d-ba5fba7023c0
-source-git-commit: f419883d0e83b5d711e0f594a8e14a8f2133f4b1
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '706'
 ht-degree: 7%
@@ -21,7 +22,7 @@ ht-degree: 7%
 | AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/create-reviews-forms.html) |
 | AEM as a Cloud Service  | 本文章 |
 
-## 評論 {#review}
+## 檢閱 {#review}
 
 稽核是一種機制，可讓一或多個稽核者在表單上加上註解。
 

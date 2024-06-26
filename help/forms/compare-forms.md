@@ -3,14 +3,16 @@ title: 比較兩個不同的調適型表單。
 description: 根據欄位、內容和表單元件比較兩個不同的表單。
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Adaptive Forms, Core Components
-source-git-commit: 31896ce21aa8a6e63657cd3099900803c98657b2
+exl-id: ce4ad231-a766-4ab0-8649-20cf16bf54ce
+role: User, Developer, Admin
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '153'
-ht-degree: 9%
+ht-degree: 11%
 
 ---
 
-# 比較最適化Forms {#compare-two-forms}
+# 比較最適化表單 {#compare-two-forms}
 
 <span class="preview">這是一項預先發佈功能，可透過我們的[預先發佈管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features)存取。</span>
 
@@ -27,4 +29,3 @@ ht-degree: 9%
 ## 另請參閱 {#see-also}
 
 {{see-also}}
-

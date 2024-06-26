@@ -2,13 +2,14 @@
 title: 如何將基於最適化表單的核心元件儲存為草稿？
 description: 瞭解如何將最適化表單的核心元件儲存為草稿，並建立Forms入口網站，以及在AEM Sites頁面上使用現成可用的核心元件。
 feature: Adaptive Forms, Core Components
-source-git-commit: 494e90bd5822495f0619e8ebf55f373a26a3ffe6
+exl-id: c0653bef-afeb-40c1-b131-7d87ca5542bc
+role: User, Developer, Admin
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '1072'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
-
 
 <span class="preview"> 本文包含搶鮮版功能的內容。 搶鮮版功能只能透過我們的 [發行前通道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features).
 
@@ -23,7 +24,7 @@ ht-degree: 1%
 * 確保 [核心元件設定為3.0.24版或更新版本](https://github.com/adobe/aem-core-forms-components) 以使用此功能。
 * 確定您有 [Azure儲存體帳戶和存取金鑰](https://learn.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?tabs=azure-portal) 以授權存取Azure儲存體帳戶。
 
-## 將最適化表單儲存為草稿
+## 將最適化表單另存為草稿
 
 [!DNL Experience Manager Forms] 資料整合(data-integration.md)提供 [!DNL Azure] 整合表單與的儲存體設定 [!DNL Azure] 儲存服務。 表單資料模型(FDM)可用來建立與互動的最適化Forms [!DNL Azure] 伺服器以啟用業務工作流程。
 
@@ -71,7 +72,7 @@ ht-degree: 1%
 
    ![統一的聯結器儲存設定](/help/forms/assets/save-form-as-draft-unified-connector-storage.png)
 
-1. 選取 **[!UICONTROL 儲存]** 然後選取 **[!UICONTROL 發佈]** 以發佈設定。
+1. 選取 **[!UICONTROL 儲存]** 然後選取 **[!UICONTROL Publish]** 以發佈設定。
 
 ### 3.建立規則以將最適化表單儲存為草稿 {#rule-to-save-adaptive-form-as-draft}
 

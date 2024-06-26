@@ -3,13 +3,15 @@ Title: How to integrate AEM workflow with an Adaptive Form?
 Description: Explore the process of automated workflow initiation with AEM Forms Submit Action.
 keywords: AEM工作流程，整合最適化表單與AEM工作流程，叫用AEM工作流程提交動作
 feature: Adaptive Forms, Core Components
-source-git-commit: 95af49839d206f67ac02116730229f5b0531c5bb
+exl-id: b7788e3d-acd8-4867-b232-f9767cf6b2f5
+title: 「如何設定最適化表單的提交動作？」
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
-source-wordcount: '647'
+source-wordcount: '657'
 ht-degree: 56%
 
 ---
-
 
 # 整合AEM最適化表單與AEM Workflow：簡化業務流程
 
@@ -19,7 +21,7 @@ ht-degree: 56%
 >
 >  瞭解如何 [建立工作流程模型](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=zh-Hant#extending-aem) 定義使用者啟動工作流程時所執行的一系列步驟。 您也可以定義模型屬性，例如工作流程是暫時的或使用多個資源。
 
-AEMas a Cloud Service提供多種現成的提交動作，用於處理表單提交。 如需這些選項的詳細資訊，請參閱 [最適化表單提交動作](/help/forms/configure-submit-actions-core-components.md)  文章。
+AEM as a Cloud Service提供多種立即可用的提交動作，用於處理表單提交。 如需這些選項的詳細資訊，請參閱 [最適化表單提交動作](/help/forms/configure-submit-actions-core-components.md)  文章。
 
 ## 優點
 

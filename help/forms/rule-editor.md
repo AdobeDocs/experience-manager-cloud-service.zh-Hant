@@ -2,10 +2,10 @@
 title: 如何使用規則編輯器將規則新增至表單欄位，以新增動態行為並將複雜邏輯建置至最適化表單？
 description: 最適化Forms規則編輯器可讓您新增動態行為並將複雜邏輯建置到表單中，而不需要編碼或指令碼。
 feature: Adaptive Forms, Foundation Components
-role: User
+role: User, Developer
 level: Beginner, Intermediate
 exl-id: 6fd38e9e-435e-415f-83f6-3be177738c00
-source-git-commit: 46cd7d689c6cbc453720b5798ffb552da58f66e7
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '6492'
 ht-degree: 1%
@@ -18,8 +18,8 @@ ht-degree: 1%
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
-| AEMas a Cloud Service（基礎元件） | 本文章 |
-| AEMas a Cloud Service（核心元件） | [按一下這裡](/help/forms/rule-editor-core-components.md) |
+| AEM as a Cloud Service （基礎元件） | 本文章 |
+| AEM as a Cloud Service （核心元件） | [按一下這裡](/help/forms/rule-editor-core-components.md) |
 | AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html) |
 
 ## 概觀 {#overview}
@@ -40,7 +40,7 @@ ht-degree: 1%
 
 新增至表單超級使用者群組的使用者可以建立指令碼並編輯現有指令碼。 中的使用者 [!DNL forms-users] 群組可以使用指令碼，但不能建立或編輯指令碼。
 
-## 核心元件中的規則編輯器與基礎元件中的規則編輯器之間的差異
+## 核心元件中的規則編輯器和基礎元件中的規則編輯器之間的差異
 
 {{rule-editor-diff}}
 
@@ -54,7 +54,7 @@ ht-degree: 1%
 
 **條件-動作** 在此構造中，規則首先定義條件，後跟要觸發的操作。 該結構可與程式設計語言中的if-then語句相媲美。
 
-在規則編輯器中， **時間** 規則型別會強制執行condition-action結構。
+在規則 編輯者中， **When** 規則 類型強制實施條件操作構造。
 
 **Action-Condition** 在此建構中，規則會先定義要觸發的動作，接著定義評估條件。 此建構的另一個變數為action-condition-alternate action，這也會定義在條件傳回False時要觸發的替代動作。
 
@@ -107,7 +107,7 @@ ht-degree: 1%
 
 規則編輯器提供了一組預先定義的規則型別，您可以使用這些型別來撰寫規則。 讓我們來詳細瞭解一下每種規則型別。 如需有關在規則編輯器中寫入規則的詳細資訊，請參閱 [寫入規則](rule-editor.md#p-write-rules-p).
 
-### [!UICONTROL 當] {#whenruletype}
+### [!UICONTROL 什麼時候] {#whenruletype}
 
 When **** 規則 類型遵循條件-操作-交替操作&#x200B;**規則構造，或者有時僅**&#x200B;遵循&#x200B;**條件-操作**&#x200B;構造。在此規則類型中，首先指定評估條件，然後在滿足條件時觸發操作 （ `True`）。 使用 When 規則 類型時，可以使用多個 AND 和 OR 運算符來創建 [嵌套表達式](#nestedexpressions)。
 
@@ -129,7 +129,7 @@ _
 
 當您有多值元件（如單選按鈕或清單）時，為該元件建立規則時，會自動擷取選項，並讓規則建立者可以使用這些選項。 您不需要再次輸入選項值。
 
-例如，清單有四個選項：紅色、藍色、綠色和黃色。 創建規則時，將自動檢索選項（單選按鈕）並提供給規則建立者，如下所示：
+例如，清單有四個選項：紅色、藍色、綠色和黃色。 建立規則時，會自動擷取選項（選項按鈕），以供規則建立者使用，如下所示：
 
 ![多值顯示選項](assets/multivaluefcdisplaysoptions1.png)
 
@@ -635,9 +635,9 @@ While writing JavaScript code in the rule editor, the following visual cues help
 
 **新增自訂函式**
 
-例如，您想要新增計算正方形區域的自訂函式。 側邊長度是自訂函式的使用者輸入，可使用表單中的數字方塊來接受。 計算的輸出會顯示在表單的另一個數值方塊中。 若要新增自訂函式，您必須先建立使用者端資料庫，然後將其新增到CRX存放庫。
+例如，您想要新增計算正方形區域的自訂函式。 側邊長度是自訂函式的使用者輸入，可使用表單中的數字方塊來接受。 計算的輸出會顯示在表單的另一個數值方塊中。 若要新增自訂函式，必須先建立使用者端資料庫，然後將其新增至CRX存放庫。
 
-若要建立使用者端程式庫並將其新增到CRX存放庫中，請執行以下步驟：
+若要建立使用者端程式庫並將其新增至CRX存放庫，請執行以下步驟：
 
 1. 建立使用者端資源庫。 如需詳細資訊，請參閱 [使用使用者端資料庫](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html#developing).
 1. 在CRXDE中新增屬性 `categories`字串型別值為 `customfunction` 至 `clientlib` 資料夾。
@@ -646,7 +646,7 @@ While writing JavaScript code in the rule editor, the following visual cues help
    >
    >`customfunction`是範例類別。 您可以為在中建立的類別選擇任何名稱 `clientlib`資料夾。
 
-在CRX存放庫中新增使用者端程式庫後，請將其用於最適化表單。 它可讓您使用自訂函式作為表單中的規則。 若要在最適化表單中新增使用者端程式庫，請執行下列步驟：
+在CRX存放庫中新增使用者端程式庫後，請於最適化表單中使用。 它可讓您使用自訂函式作為表單中的規則。 若要在最適化表單中新增使用者端程式庫，請執行下列步驟：
 
 1. 在編輯模式中開啟您的表單。
 若要以編輯模式開啟表單，請選取表單並選取 **[!UICONTROL 開啟]**.

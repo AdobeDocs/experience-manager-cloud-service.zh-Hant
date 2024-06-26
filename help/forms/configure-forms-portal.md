@@ -3,7 +3,8 @@ title: 如何在Experience Manager Sites頁面上建立Forms入口網站？
 description: 瞭解如何在AEM Sites頁面上建立Forms入口網站，並使用現成可用的核心元件。
 feature: Adaptive Forms, Foundation Components
 exl-id: 13cfe3ba-2e85-46bf-a029-2673de69c626
-source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '1786'
 ht-degree: 4%
@@ -56,13 +57,13 @@ AEM Forms提供下列立即可用的入口網站元件：
 
 ## 匯入Forms Portal元件 {#import-forms-portal-components-aem-archetype}
 
-若要在AEM Formsas a Cloud Service匯入現成可用的Forms Portal元件，請執行以下步驟：
+若要在AEM Forms as a Cloud Service上匯入現成可用的Forms Portal元件，請執行以下步驟：
 
-1. **在本機開發執行個體上複製Cloud Manager Git存放庫：**  您的Cloud Manager Git存放庫包含預設的AEM專案。 它基於 [AEM原型](https://github.com/adobe/aem-project-archetype/). 從Cloud Manager UI使用自助Git帳戶管理來複製您的Cloud Manager Git存放庫，將專案引進您的本機開發環境中。 有關存取存放庫的詳細資訊，請參閱 [存取存放庫](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/accessing-repos.html).
+1. **在本機開發執行個體上複製Cloud Manager Git存放庫：**  您的Cloud Manager Git存放庫包含預設的AEM專案。 它基於 [AEM原型](https://github.com/adobe/aem-project-archetype/). 從Cloud Manager UI使用自助Git帳戶管理功能來複製您的Cloud Manager Git存放庫，以將專案引進您的本機開發環境中。 有關存取存放庫的詳細資訊，請參閱 [存取存放庫](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/accessing-repos.html).
 
 1. **建立 [!DNL Experience Manager Forms] as a [Cloud Service] 專案：** 建立 [!DNL Experience Manager Forms] as a [Cloud Service] 專案依據 [AEM Archetype 27](https://github.com/adobe/aem-project-archetype/releases/tag/aem-project-archetype-27) 或更新版本。 原型可協助開發人員輕鬆開始開發 [!DNL AEM Forms] as a Cloud Service。 其中也包括一些範例主題和範本，可幫助您快速入門。
 
-   建立 [!DNL Experience Manager Forms] 與專案as a Cloud Service，請開啟命令提示字元並執行以下命令。 要包含 [!DNL Forms] 特定組態、主題和範本、集合 `includeForms=y`.
+   建立 [!DNL Experience Manager Forms] as a Cloud Service專案，開啟命令提示字元並執行以下命令。 要包含 [!DNL Forms] 特定組態、主題和範本、集合 `includeForms=y`.
 
    ```shell
    mvn -B archetype:generate -DarchetypeGroupId=com.adobe.aem -DarchetypeArtifactId=aem-project-archetype -DarchetypeVersion=30 -DaemVersion="cloud" -DappTitle="My Site" -DappId="mysite" -DgroupId="com.mysite" -DincludeForms="y"
@@ -101,7 +102,7 @@ AEM Forms提供下列立即可用的入口網站元件：
 1. 瀏覽至 **[!UICONTROL 工具]** > **[!UICONTROL Forms]** > **[!UICONTROL 統一的儲存聯結器]**.
 1. 在 **[!UICONTROL Forms入口網站]** 區段，選取 **[!UICONTROL Azure]** 從 **[!UICONTROL 儲存]** 下拉式清單。
 1. 指定 [Azure儲存體設定的設定路徑](#create-azure-storage-configuration) 在 **[!UICONTROL 儲存設定路徑]** 欄位。
-1. 選取 **[!UICONTROL 發佈]** 然後選取 **[!UICONTROL 儲存]** 以儲存組態。
+1. 選取 **[!UICONTROL Publish]** 然後選取 **[!UICONTROL 儲存]** 以儲存組態。
 
 ## 啟用Forms Portal元件 {#enable-forms-portal-components}
 

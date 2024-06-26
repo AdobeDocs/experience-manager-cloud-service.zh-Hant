@@ -3,7 +3,8 @@ title: 如何產生最適化Forms的記錄檔案？
 description: 瞭解如何為最適化Forms核心元件的記錄檔案(DoR)產生範本。
 feature: Adaptive Forms, Core Components
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
-source-git-commit: 54fa7ae32fa2882d844fd1c0eb0962b6b01885a5
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '3131'
 ht-degree: 1%

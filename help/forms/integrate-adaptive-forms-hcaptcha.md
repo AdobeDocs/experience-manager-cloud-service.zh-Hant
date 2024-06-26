@@ -6,13 +6,14 @@ keywords: 驗證碼&reg；服務，最適化Forms， CAPTCHA挑戰，機器人�
 feature: Adaptive Forms, Foundation Components
 hide: true
 hidefromtoc: true
-source-git-commit: d2c6514eb1f38b06dfa58daa03b781920b8928f6
+exl-id: dc7ca723-1008-472a-b6eb-8e9ed6332a16
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '983'
 ht-degree: 1%
 
 ---
-
 
 # 使用hCaptcha連線您的AEM Forms環境® {#connect-your-forms-environment-with-hcaptcha-service}
 
@@ -30,7 +31,7 @@ AEM Formsas a Cloud Service支援下列CAPTCHA解決方案：
 
 hCaptcha®服務可保護您的表單免受機器人、垃圾郵件和自動濫用的侵擾。 這會提出核取方塊Widget質詢，並評估使用者回應，以判斷它是人類還是機器人與表單互動。 它可防止使用者在測試失敗時繼續進行，並透過防止機器人張貼垃圾郵件或惡意活動來確保線上交易的安全。
 
-AEM Formsas a Cloud Service支援Adaptive Forms核心元件中的hCaptcha®。 您可以用它來在表單提交時顯示核取方塊Widget挑戰。
+AEM Forms as a Cloud Service支援Adaptive Forms核心元件中的hCaptcha®。 您可以用它來在表單提交時顯示核取方塊Widget挑戰。
 
 <!-- ![hCaptcha&reg;](assets/hCaptcha&reg;-challenge.png)-->
 

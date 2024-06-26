@@ -3,7 +3,8 @@ title: 如何將註腳新增至最適化表單？
 description: 在最適化表單中的註腳使用RTF編輯器(RTE) 。
 feature: Adaptive Forms, Foundation Components
 exl-id: f04dae84-daab-42f8-876f-02fe426f62be
-source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '429'
 ht-degree: 12%

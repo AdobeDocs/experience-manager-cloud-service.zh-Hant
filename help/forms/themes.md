@@ -3,7 +3,8 @@ title: 如何建立並使用主題來設定最適化表單的樣式？
 description: 使用最適化表單主題來設定樣式並為最適化表單提供視覺身分。 您可以在任何數量的最適化Forms中共用主題。
 feature: Adaptive Forms, Foundation Components
 exl-id: 99c3d1f7-5756-49d2-98ee-72dd62063110
-source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
+role: User, Developer, Admin
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '5558'
 ht-degree: 2%
@@ -122,7 +123,7 @@ ht-degree: 2%
   </tr>
   <tr>
    <td>4.</td>
-   <td>建立日期</td>
+   <td>已建立</td>
    <td>否</td>
    <td>佈景主題建立日期</td>
   </tr>
@@ -146,13 +147,13 @@ ht-degree: 2%
   </tr>
   <tr>
    <td>8.</td>
-   <td>準時發佈</td>
+   <td>Publish準時</td>
    <td>是</td>
    <td>自動發佈佈景主題的時間。</td>
   </tr>
   <tr>
    <td>9.</td>
-   <td>發佈關閉時間</td>
+   <td>Publish關閉時間</td>
    <td>是</td>
    <td>自動取消發佈佈景主題的時間。</td>
   </tr>
@@ -234,7 +235,7 @@ ht-degree: 2%
 
 [![主題編輯器](assets/themes.png)](assets/themes-1.png) **答：** 側欄 **B.** 畫布
 
-### 樣式化元件 {#styling-components}
+### 設定元件樣式 {#styling-components}
 
 您可以在多個最適化Forms中使用主題<!-- and interactive communications -->，會匯入您在主題中指定的元件格式。 您可以設定各種元件的樣式，例如標題、說明、面板、欄位、圖示和文字方塊。 使用Widget來設定主題中的元件屬性。 您不一定要具備CSS或LESS的先前知識，但是需要，不過CSS覆寫區段可讓您撰寫CSS程式碼或提供自訂選取器。 在側邊欄中選取元件時，CSS覆寫區段隨即顯示。
 
@@ -255,7 +256,7 @@ ht-degree: 2%
 * 左側的索引標籤
 * 頂端標籤
 * 折疊面板
-* 回應式
+* 反應
 * 精靈
 * 行動佈局
 
@@ -600,7 +601,7 @@ You can use the theme configuration service to add more fonts to the theme edito
 
 ## 對其他最適化表單使用案例的影響 {#impact-on-other-adaptive-form-use-cases}
 
-* **發佈/取消發佈表單：** 發佈表單時，也會發佈套用至的主題（如果尚未發佈）
+* **Publish/取消發佈表單：** 發佈表單時，也會發佈套用至的主題（如果尚未發佈）
 * **匯入/匯出表單：** 匯入或匯出表單時，也會自動匯入或匯出與其關聯的主題。
 * **表單的參照：** 表單參照中的「參照」區段包含主題的額外專案。
 * **表單的上次修改時間：** 當關聯的主題變更時更新。

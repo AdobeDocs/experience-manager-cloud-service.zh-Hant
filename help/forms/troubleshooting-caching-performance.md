@@ -2,13 +2,13 @@
 title: 如何針對AEM Formsas a Cloud Service的快取相關問題進行疑難排解？
 description: 疑難排解AEM Formsas a Cloud Service的快取相關問題。
 contentOwner: khsingh
-feature: Adaptive Forms, Troubleshooting
+feature: Adaptive Forms
 role: User
 exl-id: eae44a6f-25b4-46e9-b38b-5cec57b6772c
-source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
+source-git-commit: 0b693cb51a96011235fa87a5899426c6b0c2509a
 workflow-type: tm+mt
 source-wordcount: '381'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 1%
 
 ## 某些包含影像或影片的最適化Forms不會從Dispatcher快取中自動失效 {#images-videos-not-invalidated}
 
-您可以從資產瀏覽器選取影像或影片，並將其新增至最適化表單。 在資產編輯器中編輯這些影像時，包含這些影像的最適化表單的快取版本不會失效。 最適化表單會繼續顯示較舊的影像。
+您可以從資產瀏覽器選取影像或影片，並將其新增至最適化表單。 在Assets編輯器中編輯這些影像時，包含這些影像的最適化表單的快取版本不會失效。 最適化表單會繼續顯示較舊的影像。
 
 若要解決此問題，請在發佈影像和視訊後，明確取消發佈並發佈參照這些資產的最適化Forms。
 
@@ -35,7 +35,7 @@ ht-degree: 1%
 執行以下步驟以解決問題：
 
 1. 開啟您的Experience Manager專案。
-1. 開啟 `dispatcher/scr/conf.d/rewrites/rewrite.rules` 以進行編輯。
+1. 開啟 `dispatcher/scr/conf.d/rewrites/rewrite.rules` 進行編輯。
 1. 開啟 `conf.d/httpd-dispatcher.conf` 或任何其他設定為在執行階段載入的組態檔。
 1. 將下列程式碼新增至您的檔案並儲存。 此範常式式碼會加以修改以符合您的環境。
 
@@ -57,7 +57,7 @@ ht-degree: 1%
 
 ## CDN快取在300秒後停止運作 {#cdn-caching-stops-working-after-300-seconds}
 
-CDN快取在300秒後停止運作，所有對CDN上快取的請求都會重新導向到Dispatcher。
+CDN快取在300秒後停止運作，所有在CDN上快取的請求都會重新導向至Dispatcher。
 
 若要解決此問題，請將age標頭設為0：
 

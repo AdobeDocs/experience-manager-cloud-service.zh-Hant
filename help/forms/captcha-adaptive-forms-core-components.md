@@ -5,7 +5,8 @@ topic-tags: Adaptive Forms, author
 keywords: Google reCAPTCHA服務，最適化Forms， CAPTCHA挑戰，機器人預防，核心元件，表單提交安全性，表單垃圾郵件預防
 feature: Adaptive Forms, Core Components
 exl-id: d116f979-efb6-4fac-8202-89afd1037b2c
-source-git-commit: d2c6514eb1f38b06dfa58daa03b781920b8928f6
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '939'
 ht-degree: 2%
@@ -43,7 +44,7 @@ AEM Formsas a Cloud Service支援下列CAPTCHA解決方案：
       * 若要建立資料夾並為其啟用雲端設定選項：
          1. 在設定瀏覽器中，按一下 **[!UICONTROL 建立]**.
          1. 在建立組態對話方塊中，指定名稱、標題，然後選取 **[!UICONTROL 雲端設定]** 選項。
-         1. 按一下 **[!UICONTROL 建立]**
+         1. 按一下「**[!UICONTROL 建立]**」。
       * 若要啟用現有資料夾的「雲端設定」選項：
          1. 在組態瀏覽器中，選取資料夾並選取 **[!UICONTROL 屬性]**.
          1. 在組態內容對話方塊中，啟用 **[!UICONTROL 雲端設定]**.

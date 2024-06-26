@@ -2,7 +2,9 @@
 title: 如何將DocuSign與最適化表單整合？
 description: 瞭解如何搭配最適化表單使用DocuSign來收集電子簽章。
 exl-id: fb2e75d6-e454-4999-a079-f663af79051f
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+feature: Adaptive Forms, Acrobat Sign
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '1534'
 ht-degree: 7%
@@ -150,7 +152,7 @@ AEM Formsas a Cloud Service提供DocuSign的自訂提交動作。 提交動作�
 
 1. 選取 **[!UICONTROL 建立]** 以建立 [!DNL DocuSign] 設定。
 
-1. 選取設定並按一下 **[!UICONTROL 發佈]**，選取設定，然後按一下 **[!UICONTROL 發佈]**. 這會將設定複寫至對應的發佈環境。
+1. 選取設定並按一下 **[!UICONTROL Publish]**，選取設定，然後按一下 **[!UICONTROL Publish]**. 這會將設定複寫至對應的發佈環境。
 
 1. 請對您的開發人員、中繼及生產執行個體 (無論是哪個) 重複上述步驟，以完成您環境的設定 [!DNL DocuSign] with [!DNL AEM Forms]。
 

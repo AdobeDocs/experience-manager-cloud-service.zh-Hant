@@ -3,7 +3,8 @@ title: 如何建立最適化表單範本？
 description: 使用範本編輯器建立最適化表單範本，以定義基本結構和初始內容。
 feature: Adaptive Forms, Foundation Components
 exl-id: a882cba2-c621-4ff7-a972-c504641b5639
-source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
+role: User, Developer, Admin
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '2059'
 ht-degree: 4%
@@ -59,7 +60,7 @@ Experience Manager提供可組織範本的全域資料夾。 但預設不會啟�
      <!-- * **Emulator**: Lets you simulate and customize the look for different devices.-->
    * **模式選取器：** 可讓您變更模式。您可以選擇 **[!UICONTROL 結構]** 模式， **[!UICONTROL 初始內容]**， **[!UICONTROL 配置控制項]** 模式。 「結構」模式可讓您新增及自訂頁首與頁尾。 初始內容模式可讓您自訂表單內容。
    * **預覽：** 可讓您預覽範本在發佈時的外觀。 您可以使用「圖層選取器」和「預覽」來切換編輯和預覽模式。
-* **側欄：** 提供內容、屬性、資產和元件瀏覽器。
+* **側欄：** 提供內容、屬性、Assets和元件瀏覽器。
 * **元件工具列：** 選取元件時，您會看到可讓您自訂元件的工具列。
 * **頁面**：新增內容以建立範本的區域。
 

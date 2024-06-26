@@ -6,7 +6,8 @@ contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms, Foundation Components
 exl-id: 198a26a9-d6bb-457d-aab8-0a5d15177c48
-source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '2378'
 ht-degree: 90%
@@ -233,7 +234,7 @@ AEM Forms 為表單提交提供現成可用的成功和錯誤處理常式。這�
 1. 導覽至 `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/experience-league/` 並建立一個名為 `clientlibs` 的 `ClientLibraryFolder` 檔案夾。
 1. 建立一個名為 `js` 的檔案夾。
 1. 導覽至 `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/clientlibs/js` 檔案夾。
-1. 新增JavaScript檔案，例如 `function.js`. 該檔案包含自訂錯誤處理常式的代碼。
+1. 新增JavaScript檔案，例如， `function.js`. 該檔案包含自訂錯誤處理常式的代碼。
 讓我們將以下代碼新增至 JavaScript 檔案中，以便在瀏覽器主控台中顯示從 REST 服務端點接收到的回應和標頭。
 
    ```javascript

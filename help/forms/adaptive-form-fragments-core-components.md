@@ -5,7 +5,8 @@ topic-tags: author
 keywords: 新增最適化表單片段、最適化表單片段、建立表單片段、新增片段至最適化表單、管理片段
 feature: Adaptive Forms, Core Components
 exl-id: 3a9ad1b7-2f6f-4ca9-a1c9-549c4238c59e
-source-git-commit: 46cd7d689c6cbc453720b5798ffb552da58f66e7
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '1355'
 ht-degree: 4%
@@ -17,8 +18,8 @@ ht-degree: 4%
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
-| AEMas a Cloud Service（核心元件） | 本文章 |
-| AEMas a Cloud Service（基礎元件） | [按一下這裡](/help/forms/adaptive-form-fragments.md) |
+| AEM as a Cloud Service （核心元件） | 本文章 |
+| AEM as a Cloud Service （基礎元件） | [按一下這裡](/help/forms/adaptive-form-fragments.md) |
 | AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/adaptive-form-fragments.html) |
 
 雖然每個表單都是為特定目的而設計，但大多數表單中都有一些常見的區段，例如提供個人詳細資訊，例如姓名和地址、家庭詳細資訊、收入詳細資訊。 每次建立新表單時，表單開發人員都必須建立這些通用區段。
@@ -163,7 +164,7 @@ You can also drag-drop a bound Adaptive Form fragment from Adaptive Form Fragmen
    <td><p>產生字典以將選取的片段本地化。 如需詳細資訊，請參閱 <a>將最適化Forms本地化</a>.<br /> <br /> </p> </td>
   </tr>
   <tr>
-   <td><p>發佈/取消發佈</p> </td>
+   <td><p>Publish /取消發佈</p> </td>
    <td><p>發佈/取消發佈所選的片段。<br /> <br /> </p> </td>
   </tr>
   <tr>

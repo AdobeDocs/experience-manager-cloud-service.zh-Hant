@@ -4,7 +4,8 @@ description: 瞭解如何為最適化表單新增地區設定。
 feature: Adaptive Forms, Core Components
 Role: Developer, Author
 exl-id: bc06542b-84c8-4c6a-a305-effbd16d5630
-source-git-commit: 7d49be6d4f58078270fb15b10ef34e81dfa790cb
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '2068'
 ht-degree: 2%
@@ -94,9 +95,9 @@ AEM Forms會優先使用下列方法來判斷最適化表單的地區設定：
 
 若要根據核心元件為最適化表單新增地區設定的支援，請執行下列步驟：
 
-### 複製您的AEMas a Cloud ServiceGit存放庫
+### 複製您的AEM as a Cloud Service Git存放庫
 
-1. 開啟命令列，然後選擇要儲存AEMas a Cloud Service存放庫的目錄，例如 `/cloud-service-repository/`.
+1. 開啟命令列，然後選擇用來儲存AEM as a Cloud Service存放庫的目錄，例如 `/cloud-service-repository/`.
 
 1. 執行以下命令以複製存放庫：
 
@@ -106,7 +107,7 @@ AEM Forms會優先使用下列方法來判斷最適化表單的地區設定：
 
    若要複製Git存放庫，您需要一些資訊：
 
-   * **組織名稱**：這可在Adobe Experience Manager as a Cloud Service (AEMas a Cloud Service)中識別您的團隊或專案。
+   * **組織名稱**：這可在Adobe Experience Manager as a Cloud Service (AEM as a Cloud Service)中識別您的團隊或專案。
 
    * **方案ID**：這會指定與存放庫關聯的程式。
 
@@ -118,7 +119,7 @@ AEM Forms會優先使用下列方法來判斷最適化表單的地區設定：
 
    **您的專案已準備就緒！**
 
-   當命令成功完成時，您會看到在本機目錄中建立的新資料夾。 此資料夾以您的程式命名（例如，program-id）。 此資料夾包含從AEMas a Cloud ServiceGit存放庫下載的所有檔案和程式碼。
+   當命令成功完成時，您會看到在本機目錄中建立的新資料夾。 此資料夾以您的程式命名（例如，program-id）。 此資料夾包含從AEM as a Cloud Service Git存放庫下載的所有檔案和程式碼。
 
    在本指南中，我們將此資料夾稱為 `[AEMaaCS project directory]`.
 
@@ -197,7 +198,7 @@ git clone https://github.com/adobe/aem-core-forms-components.git
 
 ### 整合範例使用者端程式庫
 
-現在，讓我們整合 `clientlib-it-custom-locale` 程式庫至您的AEMas a Cloud Service， [AemCS專案目錄]：
+現在，讓我們整合 `clientlib-it-custom-locale` 將資料庫匯入您的AEM as a Cloud Service， [AemCS專案目錄]：
 
 1. 找到範例使用者端程式庫：
 
@@ -326,7 +327,7 @@ git clone https://github.com/adobe/aem-core-forms-components.git
 
 您現在都已設定為可搭配最適化Forms使用新的地區設定。 您可以
 
-* 部署AEMas a Cloud Service、 [AemCS專案目錄]，前往您的本機開發環境，以在本機電腦上嘗試新的地區設定。 若要部署到您的本機開發環境：
+* 部署AEM as a Cloud Service， [AemCS專案目錄]，前往您的本機開發環境，以在本機電腦上嘗試新的地區設定。 若要部署到您的本機開發環境：
 
    1. 確認您的本機開發環境已啟動且執行中。 如果您尚未設定本機開發環境，請參閱上的指南 [設定AEM Forms的本機開發環境](/help/forms/setup-local-development-environment.md).
 
@@ -340,7 +341,7 @@ git clone https://github.com/adobe/aem-core-forms-components.git
       mvn -PautoInstallPackage clean install
       ```
 
-* 部署AEMas a Cloud Service、 [AemCS專案目錄]，前往您的Cloud Service環境。 若要部署至您的Cloud Service環境：
+* 部署AEM as a Cloud Service， [AemCS專案目錄]，前往您的Cloud Service環境。 若要部署至您的Cloud Service環境：
 
    1. 提交您的變更：
 
@@ -350,7 +351,7 @@ git clone https://github.com/adobe/aem-core-forms-components.git
 
       透過，觸發程式碼的部署 [現有的完整棧疊管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=zh-Hant#setup-pipeline). 這會透過新的地區設定支援自動建置和部署更新的程式碼。
 
-      如果您尚未設定管道，請參閱上的指南 [如何設定AEM Formsas a Cloud Service的管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=zh-Hant#setup-pipeline).
+      如果您尚未設定管道，請參閱上的指南 [如何設定AEM Forms的as a Cloud Service管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=zh-Hant#setup-pipeline).
 
 
 ## 預覽具有新增地區設定的最適化表單

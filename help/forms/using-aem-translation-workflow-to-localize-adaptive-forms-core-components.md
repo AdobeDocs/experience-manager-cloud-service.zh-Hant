@@ -3,7 +3,8 @@ title: 如何翻譯以核心元件為基礎的最適化表單？
 description: 瞭解如何在AEM Forms中建立表單資料模型(FDM)、使用範例資料和服務測試模型，以及為模型設定各種選項。
 feature: Adaptive Forms, Core Components
 exl-id: ad46bf0f-e6ec-4c52-9695-5768a9968e16
-source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '885'
 ht-degree: 4%
@@ -16,7 +17,7 @@ ht-degree: 4%
 
 ## 使用機器翻譯翻譯翻譯最適化表單和記錄檔案 {#localizing-an-adaptive-form-and-document-of-record-using-machine-translation}
 
-機器翻譯服務會立即以最適化表單翻譯您的內容，並且 [記錄檔案](/help/forms/generate-document-of-record-core-components.md). AEM Formsas a Cloud Service已預先設定為使用機器翻譯適用的Microsoft Translator試用版。 執行以下步驟來啟用最適化Forms和記錄檔案的機器翻譯：
+機器翻譯服務會立即以最適化表單翻譯您的內容，並且 [記錄檔案](/help/forms/generate-document-of-record-core-components.md). AEM Forms as a Cloud Service已預先設定為使用機器翻譯適用的Microsoft Translator試用版。 執行以下步驟來啟用最適化Forms和記錄檔案的機器翻譯：
 
 1. 在AEM Forms UI上，選取表單，然後選取 **[!UICONTROL 新增字典]** 選項。
 1. 在「新增字典至翻譯專案」畫面中，針對 **[!UICONTROL 專案]** 選項

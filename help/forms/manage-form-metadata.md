@@ -3,10 +3,11 @@ title: 如何管理AEM Forms的中繼資料？
 description: 中繼資料可讓您更輕鬆地分類及組織資產，並幫助尋找特定資產的使用者。
 feature: Adaptive Forms, Foundation Components
 exl-id: 8527246a-37f0-4d43-a49e-1c76c265514e
-source-git-commit: 7b31a2ea016567979288c7a8e55ed5bf8dfc181d
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '1735'
-ht-degree: 5%
+ht-degree: 6%
 
 ---
 
@@ -110,12 +111,12 @@ ht-degree: 5%
    <td>指定上次發佈表單時間的唯讀值。</td> 
   </tr> 
   <tr> 
-   <td>發佈開啟/關閉時間</td> 
+   <td>Publish開啟/關閉時間</td> 
    <td>除了資源以外的所有專案</td> 
    <td><p>排定自動發佈/取消發佈表單的時間。 使用者在編輯中繼資料時設定此值。</p> 
     <ul> 
-     <li>發佈開啟和關閉時間都應在目前日期以後。 </li> 
-     <li>發佈關閉時間應在發佈開啟時間之後。 </li> 
+     <li>Publish的開啟和關閉時間都應在目前日期以後。 </li> 
+     <li>Publish關閉時間應在發佈開啟時間之後。 </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -153,8 +154,8 @@ ht-degree: 5%
    <td><p>最適化表單</p> <p>表單範本</p> <p>資源</p> </td> 
    <td><p>與此表單相關的資產（其他表單或資源）清單。 這些資產可能分為以下兩個類別：</p> 
     <ul> 
-     <li>參照：目前表單參照的資產。</li> 
-     <li>引用者：引用目前資產的資產。</li> 
+     <li>參照：目前表單參照的Assets。</li> 
+     <li>反向連結為：參考目前資產的Assets。</li> 
     </ul> <p>這些資產會顯示為連結，並可按一下連結直接存取其中繼資料。<br /> </p> </td> 
   </tr> 
   <tr> 
@@ -177,7 +178,7 @@ ht-degree: 5%
 
 ## 檢視表單中繼資料 {#view-form-metadata}
 
-資產具有現有的屬性值，可在唯讀模式下檢視。 此中繼資料源自表單上傳或表單建立時。
+Assets有現有的屬性值，可以在唯讀模式下檢視。 此中繼資料源自表單上傳或表單建立時。
 
 1. 導覽至您要檢視中繼資料的資產位置。
 
@@ -251,7 +252,7 @@ ht-degree: 5%
 
 ### 瀏覽中繼資料結構編輯器 {#navigate-the-metadata-schema-editor}
 
-1. 瀏覽至 **[!UICONTROL 「工具>資產>中繼資料結構」]**.
+1. 瀏覽至 **[!UICONTROL 「工具> Assets >中繼資料結構」]**.
 
 1. 按一下 **[!UICONTROL 表單]** 從列出的結構表單。
 

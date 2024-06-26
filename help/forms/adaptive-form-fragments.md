@@ -8,7 +8,8 @@ feature: Adaptive Forms, Foundation Components
 discoiquuid: 1a32eb24-db3b-4fad-b1c7-6326b5af4e5e
 docset: aem65
 exl-id: e4d8bcb9-ce1f-425e-b35c-d0a79fa771f3
-source-git-commit: 46cd7d689c6cbc453720b5798ffb552da58f66e7
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '2150'
 ht-degree: 1%
@@ -20,8 +21,8 @@ ht-degree: 1%
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
-| AEMas a Cloud Service（基礎元件） | 本文章 |
-| AEMas a Cloud Service（核心元件） | [按一下這裡](/help/forms/adaptive-form-fragments-core-components.md) |
+| AEM as a Cloud Service （基礎元件） | 本文章 |
+| AEM as a Cloud Service （核心元件） | [按一下這裡](/help/forms/adaptive-form-fragments-core-components.md) |
 | AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/adaptive-form-fragments.html?lang=en) |
 
 雖然每個表單都是為特定目的而設計的，但大多數表單中有一些常見的部分，例如提供個人詳細資訊按讚姓名和位址、家庭詳細資訊、收入詳細資訊等。 每次建立新表單時，表單開發人員都必須建立這些通用區段。 自適應Forms提供了一種方便的機制，只需區段 按讚面板或字段群組創建表單一次，並在自適應Forms中重複使用它們。 這些可重複使用的獨立區段稱為「最適化表單片段」。
@@ -130,14 +131,14 @@ ht-degree: 1%
 1. 前往AEM Web主控台設定頁面，網址為https：[*主機*]：[*連線埠*]/system/console/configMgr。
 
 1. 搜尋並按一下 **[!UICONTROL 最適化表單設定服務]** 以編輯模式開啟。
-1. 禁用 **[!UICONTROL 啟用佔位元代替片段]** 複選框以顯示完整片段而不是佔位元圖像。
+1. 停用 **[!UICONTROL 啟用預留位置來取代片段]** 核取方塊以顯示完整的片段，而非預留位置影像。
 
 ### 在自適應表單中插入片段 {#insert-a-fragment-in-an-adaptive-form}
 
 您建立的最適化窗体片段會显示在 AEM 內容 Finder 的「最適化窗体片段」標籤中。 要在最適化表單插入最適化表單片段：
 
 1. 在編輯模式中開啟您要插入最適化表單片段的最適化表單。
-1. 按一下 **資產** ![資產 — 瀏覽器](assets/assets-browser.png) 在側邊欄中。 在資產瀏覽器中，選取 **最適化表單片段** 從下拉式清單。
+1. 按一下 **Assets** ![資產 — 瀏覽器](assets/assets-browser.png) 在側邊欄中。 在資產瀏覽器中，選取 **最適化表單片段** 從下拉式清單。
 
    您也可以選擇顯示所有最適化表單片段，或根據其表單模型（表單範本、XML結構描述或基本）進行篩選。
 
@@ -230,7 +231,7 @@ ht-degree: 1%
    <td><p>產生字典以將選取的片段本地化。 <!-- For more information, see <a href="lazy-loading-adaptive-forms.md" target="_blank">Localizing Adaptive Forms</a>.<br /> <br /> --> </p> </td>
   </tr>
   <tr>
-   <td><p>發佈/取消發佈</p> </td>
+   <td><p>Publish /取消發佈</p> </td>
    <td><p>發佈/取消發佈所選的片段。<br /> <br /> </p> </td>
   </tr>
   <tr>
@@ -271,4 +272,4 @@ Reference Adaptive Form Fragments that you can use to create your form are avail
 
 >[!MORELIKETHIS]
 >
->* [核心元件中的最適化表單片段](/help/forms/adaptive-form-fragments-core-components.md)
+>* [核心元件中的 Adaptive Form 片段](/help/forms/adaptive-form-fragments-core-components.md)

@@ -4,7 +4,8 @@ description: 使用表格元件將表格新增至最適化表單。 除了協助
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Adaptive Forms, Foundation Components
 exl-id: 88ace1d4-b68d-40e6-a7b4-918ba25f2e91
-source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '2476'
 ht-degree: 2%
@@ -165,7 +166,7 @@ AEM Forms的側邊欄元件瀏覽器中提供表格元件，可讓您以最適�
 
 ## 表格中的運算式 {#expressions-in-a-table}
 
-調適型表單中的表格可讓您使用JavaScript撰寫運算式，以誘導行為，例如顯示或隱藏表格或列、加總所有數字並在儲存格中顯示總計、啟用或停用儲存格、驗證使用者輸入等。 這些運算式使用適用性表單指令碼模型API。
+調適型表單中的表格可讓您在JavaScript中撰寫運算式，以誘導行為，例如顯示或隱藏表格或列、加總所有數字並在儲存格中顯示總計、啟用或停用儲存格、驗證使用者輸入等。 這些運算式使用適用性表單指令碼模型API。
 
 雖然表格和列僅支援可見性運算式，以根據運算式傳回的值控制其可見性，但儲存格支援下列運算式：
 
@@ -183,7 +184,7 @@ AEM Forms的側邊欄元件瀏覽器中提供表格元件，可讓您以最適�
 
 表格或列的可見度運算式可以在它們對應的「編輯」元件對話方塊的「面板屬性」標籤中定義。 儲存格的運算式可在其「編輯」元件對話方塊的「指令碼」標籤中定義。
 
-如需最適化表單類別、事件、物件和公用API的完整清單，請參閱 [適用性表單的JavaScript資料庫API參考](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/index.html).
+如需最適化表單類別、事件、物件和公用API的完整清單，請參閱 [適用性表單的JavaScript Library API參考](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/index.html).
 
 ## 行動版面配置 {#mobile-layouts}
 
@@ -223,7 +224,7 @@ AEM Forms的側邊欄元件瀏覽器中提供表格元件，可讓您以最適�
 
 ## 合併表格中的資料 {#merge-data-in-a-table}
 
-適用性表單中的表格可讓您在執行階段使用XML檔案的資料填入表格。 資料XML檔案可位於AEM Forms伺服器執行所在電腦的本機檔案系統或CRX存放庫中。
+適用性表單中的表格可讓您在執行階段使用XML檔案的資料填入表格。 資料XML檔案可位於AEM Forms伺服器執行所在電腦的本機檔案系統中，或位於CRX存放庫中。
 
 以下列銀行交易摘要表為例，我們要以XML檔案中的資料填入。
 
