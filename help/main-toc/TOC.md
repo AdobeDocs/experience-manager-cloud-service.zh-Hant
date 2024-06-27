@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的運作方式以及該軟體可以為您做哪些事。
 breadcrumb-title: 使用手冊
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 540aa876ba7ea54b7ef4324634f6c5e220ad19d3
+source-git-commit: c7c881bb1c235007ba14684959494f08ed27aa67
 workflow-type: tm+mt
-source-wordcount: '5073'
-ht-degree: 99%
+source-wordcount: '5128'
+ht-degree: 98%
 
 ---
 
@@ -589,6 +589,19 @@ ht-degree: 99%
       + [管理報告](/help/assets/manage-reports-assets-view.md)
       + [管理標記](/help/assets/tagging-management-assets-view.md)
       + [發佈資產至 AEM 和 Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+
+   + 管理Content Hub {#content-hub}
+      + [概觀](/help/assets/product-overview.md)
+      + [部署Content Hub](/help/assets/deploy-content-hub.md)
+      + [設定Content Hub使用者介面](/help/assets/configure-content-hub-ui-options.md)
+      + [將品牌核准的資產上傳或匯入至Content Hub](/help/assets/upload-brand-approved-assets.md)
+      + [在Content Hub中搜尋資產](/help/assets/search-assets-content-hub.md)
+      + [資產屬性](/help/assets/asset-properties-content-hub.md)
+      + [在Content Hub中共用資產](/help/assets/share-assets-content-hub.md)
+      + [使用Content Hub下載資產](/help/assets/download-assets-content-hub.md)
+      + [在Content Hub中管理集合](/help/assets/collections-content-hub.md)
+      + [在Content Hub中使用Adobe Express編輯影像](/help/assets/edit-images-content-hub.md)
+      + [Content Hub中的Asset Insights](/help/assets/insights-content-hub.md)
    + 最佳做法{#best-practices}
       + [搜尋最佳做法](/help/assets/search-best-practices.md)
       + [中繼資料管理和最佳做法](/help/assets/metadata-best-practices.md)

@@ -1,0 +1,170 @@
+---
+title: Content Hub概觀
+description: 進一步瞭解Content Hub、其主要優點、如何存取該功能，以及如何針對Content Hub中提供的選項提供意見回饋。
+source-git-commit: 15a266ccb6e4117c769d775a5f579fba943389bf
+workflow-type: tm+mt
+source-wordcount: '619'
+ht-degree: 0%
+
+---
+
+
+# Content Hub概觀 {#overview-content-hub}
+
+![Content Hub概觀](assets/content-hub-overview.png)
+
+Content Hub是Experience Manager Assets as a Cloud Service的一部分，可讓組織及其業務合作夥伴普及對品牌上內容的存取。 其著重於大規模散發資產以供啟用，以及建立品牌內內容變體，以提升行銷靈敏度。
+
+## 為何選擇Content Hub？
+
+Content Hub提供下列主要優點：
+
+**透過直覺式入口網站，尋找並共用所有品牌核准的資產**
+
+AEM Assets可作為單一信任來源，而所有已核准的資產都會在Content Hub中以平面階層自動提供，以改善搜尋體驗。
+
+**可設定的使用者介面**
+
+Content Hub中最常見的屬性（例如搜尋的篩選器）、新增或匯入資產時可用的欄位、資產屬性、品牌化的橫幅內容，都是可設定的，管理員可以根據需求輕鬆設定Content Hub使用者介面。
+
+**讓非創意人員能夠編輯和重新混合內容，同時繼續使用品牌**
+
+Content Hub與Adobe Express整合(如果您有Adobe Express許可權)，可使用內嵌的Express編輯器編輯影像，以在保留品牌的同時建立令人驚豔的影像變體。
+
+**深入瞭解如何在團隊間使用內容**
+
+[!DNL Content Hub] 提供資產的寶貴見解，解決行銷利害關係人經常遇到的共同挑戰 — 用於行銷活動、管道和不同區域的資產使用統計資料。 透過清楚瞭解資產的效能和受歡迎程度，其提供可操作的深入分析，是提升使用者體驗的必要條件。
+
+## 先決條件 {#prerequisites-content-hub}
+
+Experience Manageras a Cloud Service6月版本
+
+## 如何存取Content Hub？ {#access-content-hub}
+
+將使用者新增至之後 [Content Hub產品設定檔](/help/assets/deploy-content-hub.md#content-hub-instance-product-profile)，您可使用下列方式存取Content Hub：
+
+* 使用下列連結存取Content Hub：
+
+  `https://experience.adobe.com/#/assets/contenthub`
+
+* 登入experience.adobe com並按一下 **[!UICONTROL Experience Manager Assets Content Hub]** 可在 **[!UICONTROL 快速存取]** 區段：
+  ![Content Hub存取](assets/access-content-hub.png)
+
+* 登入experience.adobe com並按一下 **[!UICONTROL Experience Manager Assets Content Hub]** 可在產品切換器中取得：
+  ![Content Hub存取方法3](assets/access-content-hub-alternate.png)
+
+
+
+## 提供Content Hub意見回饋 {#provide-content-hub-feedback}
+
+若要建議任何產品相關改良功能，請按一下 **[!UICONTROL 意見反應]** ，位於Content Hub使用者介面頂端的組織名稱旁。
+
+指定主旨、建議的說明，並視需要附加檔案。 按一下 **[!UICONTROL 提交]** 將意見反應提交至Adobe。
+
+## 為您的團隊設定Content Hub {#setup-content-hub}
+
+請依照下列步驟，為您的團隊設定Content Hub：
+
+1. [使用Cloud Manager啟用適用於Experience Manager Assets的Content Hub](deploy-content-hub.md#enable-content-hub).
+
+1. [載入Content Hub管理員](deploy-content-hub.md#onboard-content-hub-administrator).
+
+1. [新增關鍵Content Hub使用者](deploy-content-hub.md##onboard-content-hub-consumer-users).
+
+1. [DAM作者或管理員可使用Experience Manager資產核准資產](approve-assets.md).
+
+1. [管理員可為其他使用者設定Content Hub使用者介面](configure-content-hub-ui-options.md).
+
+1. [將Content Hub存取權授予團隊中的更多使用者](deploy-content-hub.md##onboard-content-hub-consumer-users).
+
+1. [存取Content Hub入口網站](#access-content-hub).
+
+1. [提供Content Hub意見回饋](#provide-content-hub-feedback).
+
+
+## 進一步瞭解主要功能 {#key-capabilities-content-module}
+
+<table>
+<td>
+   <a href="/help/assets/configure-content-hub-ui-options.md">
+   <img alt="部署Content Hub" src="./assets/configure-assets.png" />
+   </a>
+   <div>
+      <a href="/help/assets/configure-content-hub-ui-options.md">
+      <strong>設定Content Hub使用者介面</strong>
+      </a>
+   </div>
+   <p>
+      <em>瞭解管理員如何設定Content Hub使用者介面。 </em>
+   </p>
+</td>
+
+
+<td>
+   <a href="/help/assets/search-assets-content-hub.md">
+   <img alt="搜尋Content Hub中的可用資產" src="./assets/search.png" />
+   </a>
+   <div>
+      <a href="/help/assets/search-assets-content-hub.md">
+      <strong>搜尋Content Hub中的可用資產</strong>
+      </a>
+   </div>
+   <p>
+      <em>瞭解如何利用各種功能來縮小搜尋結果的範圍。</em>
+   </p>
+</td>
+<td>
+   <a href="/help/assets/edit-images-content-hub.md">
+   <img alt="使用 Adobe Express 編輯影像" src="./assets/edit-images-content-hub.png" />
+   </a>
+   <div>
+      <a href="/help/assets/edit-images-content-hub.md">
+      <strong>使用Adobe Express編輯影像</strong>
+      </a>
+   </div>
+   <p>
+      <em>瞭解如何使用Adobe Express在Content Hub中建立影像變體</em>
+   </p>
+</td>
+</table>
+<table>
+<td>
+   <a href="/help/assets/share-assets-content-hub.md">
+   <img alt="共用Content Hub中的可用資產" src="./assets/share-assets-banner.png" />
+   </a>
+   <div>
+      <a href="/help/assets/share-assets-content-hub.md">
+      <strong>共用Content Hub中的可用資產</strong>
+      </a>
+   </div>
+   <p>
+      <em>瞭解如何以連結形式共用一或多個資產，然後存取它們。</em>
+   </p>
+</td>
+<td>
+   <a href="/help/assets/collections-content-hub.md">
+   <img alt="在Content Hub中管理集合" src="./assets/manage-collection.png" />
+   </a>
+   <div>
+      <a href="/help/assets/collections-content-hub.md">
+      <strong>在Content Hub中管理集合</strong>
+      </a>
+   </div>
+   <p>
+      <em>瞭解如何使用資產建立集合，然後管理它們。</em>
+   </p>
+</td>
+<td>
+   <a href="/help/assets/insights-content-hub.md">
+   <img alt="共用Content Hub中的可用資產" src="./assets/asset-insights-banner.jpg" />
+   </a>
+   <div>
+      <a href="/help/assets/insights-content-hub.md">
+      <strong>在Content Hub中檢視資產分析</strong>
+      </a>
+   </div>
+   <p>
+      <em> 內容模組提供資產的寶貴見解，解決行銷利害關係人經常遇到的共同挑戰</em>
+   </p>
+</td>
+</table>
