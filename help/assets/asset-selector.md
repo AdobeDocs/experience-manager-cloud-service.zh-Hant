@@ -2,15 +2,15 @@
 title: 適用於  [!DNL Adobe Experience Manager]  as a  [!DNL Cloud Service] 的資產選擇器
 description: 在應用程式內使用資產選擇器搜尋、查找和檢索資產的中繼資料和轉譯。
 contentOwner: KK
-role: Admin, User
-exl-id: 5f962162-ad6f-4888-8b39-bf5632f4f298
-feature: Collaboration
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+role: Admin,User
+exl-id: b968f63d-99df-4ec6-a9c9-ddb77610e258
+source-git-commit: 60c94071332003312ed9e963bc50e35d3c29baf0
 workflow-type: tm+mt
-source-wordcount: '3908'
-ht-degree: 45%
+source-wordcount: '4725'
+ht-degree: 36%
 
 ---
+
 
 # 微前端資產選擇器 {#Overview}
 
@@ -47,7 +47,7 @@ ht-degree: 45%
 您必須確定下列通訊方法：
 
 * 應用程式正在HTTPS上執行。
-* 應用程式的URL位於IMS使用者端的允許重新導向URL清單中。
+* IMS使用者端允許重新導向URL清單中的應用程式URL。
 * IMS登入流程已設定完畢，並使用網頁瀏覽器上的快顯視窗呈現。 因此，目標瀏覽器上應該啟用或允許快顯視窗。
 
 如果您需要Asset Selector的IMS驗證工作流程，請使用上述先決條件。 或者，如果您已通過IMS工作流程驗證，您可以改為新增IMS資訊。
@@ -57,7 +57,7 @@ ht-degree: 45%
 > 此存放庫旨在作為補充檔案，說明整合資產選擇器的可用API和使用範例。 在嘗試安裝或使用「資產選擇器」之前，請確保貴組織已布建對「資產選擇器」的存取權，作為Experience Manager Assetsas a Cloud Service設定檔的一部分。 如果您尚未布建，則無法整合或使用這些元件。 若要請求布建，您的程式管理員應從Admin Console提出標示為P2的支援票證，並包含下列資訊：
 >
 >* 託管整合應用程式的網域名稱。
->* 布建後，您的組織將獲得 `imsClientId`， `imsScope`，和 `redirectUrl` 與要求的環境相對應，這對於設定資產選擇器至關重要。 如果沒有這些有效的屬性，您就無法執行安裝步驟。
+>* 布建後，您的組織將獲得 `imsClientId`， `imsScope`，和 `redirectUrl` 對於您請求的環境相對應，而此環境對於Asset Selector的設定至關重要。 如果沒有這些有效的屬性，您就無法執行安裝步驟。
 
 ## 安裝 {#installation}
 
@@ -108,6 +108,7 @@ import { AssetSelector } from 'https://experience.adobe.com/solutions/CQ-assets-
 
 * [將資產選擇器與 [!DNL Adobe] 應用計畫](#adobe-app-integration-vanilla)
 * [將資產選擇器與非Adobe應用程式整合](#adobe-non-app-integration)
+* [Dynamic Media與OpenAPI功能的整合](#adobe-app-integration-polaris)
 
 >[!BEGINTABS]
 
@@ -180,7 +181,7 @@ import { AssetSelector } from 'https://experience.adobe.com/solutions/CQ-assets-
 +++
 
 +++**ImsAuthService**
-`ImsAuthService` 類別會處理Asset Selector的驗證流程。 其須負責取得 `imsToken` 來自Adobe IMS驗證服務。 此 `imsToken` 用於驗證使用者並授權對的存取權 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 資產存放庫。 ImsAuthService使用 `ImsAuthProps` 屬性來控制驗證流程並註冊各種驗證事件的接聽程式。 您可以使用方便的 [`registerAssetsSelectorsAuthService`](#purejsselectorsregisterassetsselectorsauthservice) 函式以註冊 _ImsAuthService_ 使用資產選擇器的例項。 下列函式適用於 `ImsAuthService` 類別。 不過，如果您使用 _registerAssetsSelectorsAuthService_ 函式，您不需要直接呼叫這些函式。
+`ImsAuthService` 類別會處理Asset Selector的驗證流程。 其須負責取得 `imsToken` 來自Adobe IMS驗證服務。 此 `imsToken` 用於驗證使用者並授權對的存取權 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] Assets存放庫。 ImsAuthService使用 `ImsAuthProps` 屬性來控制驗證流程並註冊各種驗證事件的接聽程式。 您可以使用方便的 [`registerAssetsSelectorsAuthService`](#purejsselectorsregisterassetsselectorsauthservice) 函式以註冊 _ImsAuthService_ 使用資產選擇器的例項。 下列函式適用於 `ImsAuthService` 類別。 不過，如果您使用 _registerAssetsSelectorsAuthService_ 函式，您不需要直接呼叫這些函式。
 
 | 函式名稱 | 說明 |
 |---|---|
@@ -192,7 +193,7 @@ import { AssetSelector } from 'https://experience.adobe.com/solutions/CQ-assets-
 
 +++
 
-+++**使用提供的IMS權杖進行驗證**
++++**IMS權杖驗證**
 
 ```
 <script>
@@ -226,28 +227,28 @@ import { AssetSelector } from 'https://experience.adobe.com/solutions/CQ-assets-
 ```
 // object `imsProps` to be defined as below 
 let imsProps = {
-    imsClientId: <IMS Client Id>,
-        imsScope: "openid",
-        redirectUrl: window.location.href,
-        modalMode: true,
-        adobeImsOptions: {
-            modalSettings: {
-            allowOrigin: window.location.origin,
+imsClientId: <IMS Client Id>,
+imsScope: "openid",
+redirectUrl: window.location.href,
+modalMode: true,
+adobeImsOptions: {
+modalSettings: {
+allowOrigin: window.location.origin,
 },
-        useLocalStorage: true,
+useLocalStorage: true,
 },
 onImsServiceInitialized: (service) => {
-            console.log("onImsServiceInitialized", service);
+console.log("onImsServiceInitialized", service);
 },
 onAccessTokenReceived: (token) => {
-            console.log("onAccessTokenReceived", token);
+console.log("onAccessTokenReceived", token);
 },
 onAccessTokenExpired: () => {
-            console.log("onAccessTokenError");
+console.log("onAccessTokenError");
 // re-trigger sign-in flow
 },
 onErrorReceived: (type, msg) => {
-            console.log("onErrorReceived", type, msg);
+console.log("onErrorReceived", type, msg);
 },
 }
 ```
@@ -272,6 +273,10 @@ onErrorReceived: (type, msg) => {
 * apikey
 
 Asset Selector支援驗證 [!DNL Experience Manager Assets] 使用Identity Management系統(IMS)屬性的存放庫，例如 `imsScope` 或 `imsClientID` 將其與非Adobe應用程式整合時。
+
+### 將資產選擇器與非Adobe應用程式整合 {#adobe-non-app-integration}
+
+若要將Asset Selector與非Adobe應用程式整合，您需要執行各種驗證，例如記錄支援票證、整合等。
 
 +++**設定非Adobe應用程式的資產選擇器**
 若要為非Adobe應用程式設定「資產選擇器」，您必須先記錄布建的支援票證，然後進行整合步驟。
@@ -387,6 +392,170 @@ Asset Selector支援驗證 [!DNL Experience Manager Assets] 使用Identity Manag
 >
 >如果您已使用註冊登入工作流程整合資產選擇器，但仍無法存取傳遞存放庫，請確定已清理瀏覽器Cookie。 否則，您最終將獲得 `invalid_credentials All session cookies are empty` 主控台中的錯誤。
 
++++
+
+<!--Integration with Polaris application content starts here-->
+
+>[!TAB Dynamic Media與OpenAPI功能的整合]
+
+### 先決條件 {#prereqs-polaris}
+
+如果您整合Asset Selector與Dynamic Media以及OpenAPI功能，請使用下列先決條件：
+
+* [通訊方法](#prereqs)
+* 若要使用OpenAPI功能存取Dynamic Media，您必須擁有下列專案的授權：
+   * Assets存放庫(例如Experience Manager Assetsas a Cloud Service)
+   * AEM Dynamic Media
+* 僅限 [核准的資產](#approved-assets.md) 可用於確保品牌一致性。
+
+### Dynamic Media與OpenAPI功能的整合{#adobe-app-integration-polaris}
+
+Asset Selector與Dynamic Media OpenAPI程式的整合涉及各種步驟，包括建立自訂的動態媒體URL或準備挑選動態媒體URL等。
+
++++**將Dynamic Media的資產選擇器與OpenAPI功能整合**
+
+此 `rootPath` 和 `path` 屬性不應該是具有OpenAPI功能的Dynamic Media的一部分。 反之，您可以設定 `aemTierType` 屬性。 以下是設定的語法：
+
+```
+aemTierType:[1: "delivery"]
+```
+
+此設定可讓您檢視所有核准的資產，而不使用資料夾或以平面結構檢視。 如需詳細資訊，請導覽至 `aemTierType` 下的屬性 [資產選擇器屬性](#asset-selector-properties)
+
++++
+
++++**從已核准的資產建立動態傳送URL**
+設定「資產選擇器」後，系統會使用物件的結構描述，從選取的資產建立動態傳送URL。
+例如，從選取資產時收到的物件陣列中的一個物件的結構描述：
+
+```
+{
+"dc:format": "image/jpeg",
+"repo:assetId": "urn:aaid:aem:xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+"repo:name": "image-7.jpg",
+"repo:repositoryId": "delivery-pxxxx-exxxxxx.adobe.com",
+...
+}
+```
+
+所有選取的資產都由攜帶 `handleSelection` 函式做為JSON物件。 例如 `JsonObj`。動態傳遞URL是透過結合以下電信業者來建立：
+
+| 物件 | JSON |
+|---|---|
+| 主機 | `assetJsonObj["repo:repositoryId"]` |
+| API根目錄 | `/adobe/dynamicmedia/deliver` |
+| asset-id | `assetJsonObj["repo:assetId"]` |
+| seo-name | `assetJsonObj["repo:name"].split(".").slice(0,-1).join(".")` |
+| 格式 | `.jpg` |
+
+**核准的資產傳送API規格**
+
+URL格式：
+`https://<delivery-api-host>/adobe/dynamicmedia/deliver/<asset-id>/<seo-name>.<format>?<image-modification-query-parameters>`
+
+其中，
+
+* 主機為 `https://delivery-pxxxxx-exxxxxx.adobe.com`
+* API根為 `"/adobe/dynamicmedia/deliver"`
+* `<asset-id>` 是資產識別碼
+* `<seo-name>` 為資產名稱
+* `<format>` 是輸出格式
+* `<image modification query parameters>` 以核准資產的傳送API規格作為支援
+
+**核准的資產傳送API**
+
+動態傳送URL擁有下列語法：
+`https://<delivery-api-host>/adobe/assets/deliver/<asset-id>/<seo-name>`，其中，
+
+* 主機為 `https://delivery-pxxxxx-exxxxxx.adobe.com`
+* 原始轉譯傳遞的API根為 `"/adobe/assets/deliver"`
+* `<asset-id>` 是資產識別碼
+* `<seo-name>`是副檔名不一定存在的資產名稱
+
++++
+
++++**準備挑選動態傳遞URL**
+所有選取的資產都由攜帶 `handleSelection` 函式做為JSON物件。 例如 `JsonObj`。動態傳遞URL是透過結合以下電信業者來建立：
+
+| 物件 | JSON |
+|---|---|
+| 主機 | `assetJsonObj["repo:repositoryId"]` |
+| API根目錄 | `/adobe/assets/deliver` |
+| asset-id | `assetJsonObj["repo:assetId"]` |
+| seo-name | `assetJsonObj["repo:name"]` |
+
+以下是遍歷JSON物件的兩種方式：
+
+![動態傳遞url](assets/dynamic-delivery-url.png)
+
+* **縮圖：** 縮圖可以是影像，資產可以是PDF、影片、影像等。 不過，您可以使用資產縮圖的高度和寬度屬性作為動態傳送轉譯。
+以下轉譯可用於PDF型別資產：一旦在Sidekick中選取PDF，選取內容將提供以下資訊。 以下為遍歷JSON物件的方式：
+
+  <!--![Thumbnail dynamic delivery url](image-1.png)-->
+
+  您可參閱 `selection[0].....selection[4]` 以上熒幕擷圖中的轉譯連結陣列。 例如，其中一個縮圖轉譯的關鍵屬性包括：
+
+  ```
+  { 
+      "height": 319, 
+      "width": 319, 
+      "href": "https://delivery-pxxxxx-exxxxx-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:aem:8560f3a1-d9cf-429d-a8b8-d81084a42d41/as/algorithm design.jpg?accept-experimental=1&width=319&height=319&preferwebp=true", 
+      "type": "image/webp" 
+  } 
+  ```
+
+在上述熒幕擷圖中，如果需要PDF，而非其縮圖，則需要將PDF原始轉譯的傳送URL合併到目標體驗中。 例如 `https://delivery-pxxxxx-exxxxx-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:aem:8560f3a1-d9cf-429d-a8b8-d81084a42d41/original/as/algorithm design.pdf?accept-experimental=1`
+
+* **影片：** 對於使用內嵌iFrame的視訊型別資產，您可以使用視訊播放器URL。 您可以在目標體驗中使用下列陣列轉譯：
+  <!--![Video dynamic delivery url](image.png)-->
+
+  ```
+  { 
+      "height": 319, 
+      "width": 319, 
+      "href": "https://delivery-pxxxxx-exxxxx-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:aem:2fdef732-a452-45a8-b58b-09df1a5173cd/as/asDragDrop.2.jpg?accept-experimental=1&width=319&height=319&preferwebp=true", 
+      "type": "image/webp" 
+  } 
+  ```
+
+  您可參閱 `selection[0].....selection[4]` 以上熒幕擷圖中的轉譯連結陣列。 例如，其中一個縮圖轉譯的關鍵屬性包括：
+
+  上述熒幕擷取畫面中的程式碼片段為視訊資產的範例。 其中包含轉譯連結陣列。 此 `selection[5]` 在摘錄中，是影像縮圖的範例，可做為目標體驗中視訊縮圖的預留位置。 此 `selection[5]` 在轉譯陣列中，是用於視訊播放器。 這提供一個HTML，可設為 `src` iframe的URL。 它支援自我調整位元速率串流，這是網頁最佳化的視訊傳送方式。
+
+  在上述範例中，視訊播放器URL為 `https://delivery-pxxxxx-exxxxx-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:aem:2fdef732-a452-45a8-b58b-09df1a5173cd/play?accept-experimental=1`
+
++++**具OpenAPI功能的Dynamic Media資產選擇器使用者介面**
+
+與Adobe的微前端資產選擇器整合後，您只能看到Experience Manager資產存放庫中所有已核准資產的結構。
+
+![Dynamic Media搭配OpenAPI功能UI](assets/polaris-ui.png)
+
+* **A**：[隱藏/顯示面板](#hide-show-panel)
+* **B**： [Assets](#repository)
+* **C**： [排序](#sorting)
+* **D**：[篩選器](#filters)
+* **E**：[搜尋列](#search-bar)
+* **F**： [以遞增或遞減順序排序](#sorting)
+* **G**：取消選取
+* **H**：選取單一或多個資產
+
++++
+
++++**設定自訂篩選器**
+Dynamic Media的資產選擇器搭配OpenAPI功能，可讓您設定自訂屬性以及基於這些屬性的篩選器。 此 `filterSchema` 屬性是用來設定這類屬性。 自訂可公開為 `metadata.<metadata bucket>.<property name>.` 可針對其設定篩選器，其中，
+
+* `metadata` 是資產的資訊
+* `embedded` 是用於設定的靜態引數，以及
+* `<propertyname>` 是您設定的篩選器名稱
+
+針對此設定，屬性定義於 `jcr:content/metadata/` 層級顯示為 `metadata.<metadata bucket>.<property name>.` 用於您要設定的篩選器。
+
+例如，在具有OpenAPI功能的Dynamic Media資產選擇器中，將屬性 `asset jcr:content/metadata/client_name:market` 已轉換為 `metadata.embedded.client_name:market` 用於篩選器設定。
+
+若要取得名稱，必須完成一次性活動。 對資產發出搜尋API呼叫，然後取得屬性名稱（基本上是貯體）。
+
++++
+
 >[!ENDTABS]
 
 ## 資產選擇器屬性 {#asset-selector-properties}
@@ -399,8 +568,6 @@ Asset Selector支援驗證 [!DNL Experience Manager Assets] 使用Identity Manag
 | *imsOrg* | 字串 | 是 | | Adobe Identity Management System (IMS) ID 是在為您的組織佈建 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 時所指派的。此 `imsOrg` 需要金鑰才能驗證您要存取的組織是否位於Adobe IMS之下。 |
 | *imsToken* | 字串 | 否 | | 用於身份驗證的 IMS 持有人語彙基元。`imsToken` 若您使用 [!DNL Adobe] 整合的應用程式。 |
 | *apiKey* | 字串 | 否 | | 用於存取 AEM Discovery 服務的 API 金鑰。`apiKey` 若您使用 [!DNL Adobe] 應用程式整合。 |
-| *rootPath* | 字串 | 否 | /content/dam/ | 資產選擇器顯示資產的資料夾路徑。`rootPath` 也可以使用封裝形式。例如，假定路徑如下， `/content/dam/marketing/subfolder/`，Asset Selector不允許您周遊任何上層資料夾，只會顯示下層資料夾。 |
-| *path* | 字串 | 否 | | 在呈現資產選擇器時，用於導覽到特定資產目錄的路徑。 |
 | *filterSchema* | 陣列 | 否 | | 用於設定篩選器屬性的模式。這可用於想要限制資產選擇器中的特定篩選器選項時。 |
 | *filterFormProps* | 物件 | 否 | | 指定用於調整搜尋所需的篩選器屬性。例如，MIME 類型 JPG、PNG、GIF。 |
 | *selectedAssets* | 陣列 `<Object>` | 否 |                 | 呈現資產選擇器時指定選取的資產。需要包含資產的 id 屬性的物件陣列。例如，在目前的目錄中必須可以使用 `[{id: 'urn:234}, {id: 'urn:555'}]` 資產。如果您需要使用不同的目錄，請為該 `path` 屬性提供一個值。 |
@@ -419,12 +586,15 @@ Asset Selector支援驗證 [!DNL Experience Manager Assets] 使用Identity Manag
 | *onFilterSubmit* | 函數 | 否 | | 當使用者變更不同的篩選條件時，以篩選項目叫用。 |
 | *selectionType* | 字串 | 否 | single | 一次設定`single`或`multiple`資產選擇方式。 |
 | *dragOptions.allowList* | 布林值 | 否 | | 屬性可用來允許或拒絕拖曳無法選取的資產。 |
-| *aemTierType* | 字串 | 否 | | 它可讓您選取是否要顯示傳送層級、作者層級或兩者的資產。 <br><br> 語法： `aemTierType:[0: "author" 1: "delivery"` <br><br> 例如，如果兩者 `["author","delivery"]` 之後，存放庫切換器會同時顯示製作和傳送的選項。 |
+| *aemTierType* | 字串 | 否 | | 它可讓您選取是否要顯示傳送層級、作者層級或兩者的資產。 <br><br> 語法： `aemTierType:[0: "author" 1: "delivery"` <br><br> 例如，如果兩者 `["author","delivery"]` 之後，存放庫切換器會同時顯示製作和傳送的選項。 <br> 此外，使用 `["delivery"]` Dynamic Media中具有OpenAPI功能的傳遞相關資產。 |
 | *handleNavigateToAsset* | 函數 | 否 | | 這是一個Callback函式，可處理資產的選取專案。 |
 | *noWrap* | 布林值 | 否 | | 此 *noWrap* 屬性有助於在側邊欄面板中呈現「資產選擇器」。 如果未提及此屬性，則會轉譯 *對話方塊檢視* 依預設。 |
 | *dialogsize* | 小型、中型、大型、全熒幕或全熒幕接管 | 字串 | 選用 | 您可以使用指定的選項指定版面大小，以控制版面。 |
 | *colorScheme* | 淺色或深色 | 否 | | 此屬性用於設定Asset Selector應用程式的主題。 您可以選擇淺色或深色主題。 |
 | *filterRepoList* | 函數 | 否 |  | 您可以使用 `filterRepoList` 呼叫Experience Manager存放庫並傳回已篩選的存放庫清單的回呼函式。 |
+
+<!--| *rootPath* | string | No | /content/dam/ | Folder path from which Asset Selector displays your assets. `rootPath` can also be used in the form of encapsulation. For example, given the following path, `/content/dam/marketing/subfolder/`, Asset Selector does not allow you to traverse through any parent folder, but only displays the children folders. |
+| *path* | string | No | | Path that is used to navigate to a specific directory of assets when the Asset Selector is rendered. |-->
 
 ## 使用資產選擇器屬性的範例 {#usage-examples}
 
@@ -434,7 +604,7 @@ Asset Selector支援驗證 [!DNL Experience Manager Assets] 使用Identity Manag
 
 ![rail-view-example](assets/rail-view-example-vanilla.png)
 
-如果資產選擇器的值 `rail` 設為 `false` 或屬性中未提及，資產選擇器預設會顯示在模組檢視中。 此 `acvConfig` 屬性允許進行一些深入設定，例如拖放。 造訪 [啟用或停用拖放](#enable-disable-drag-and-drop) 瞭解的使用方式 `acvConfig` 屬性。
+如果資產選擇器的值 `rail` 設為 `false` 或屬性中未提及，資產選擇器預設會顯示在模組檢視中。 此 `acvConfig` 屬性可用來啟用資產檢視器的邊欄檢視。 造訪 [啟用或停用拖放](#enable-disable-drag-and-drop) 瞭解的使用方式 `acvConfig` 屬性。
 
 <!--
 ### Example 2: Use selectedAssets property in addition to the path property
@@ -452,7 +622,7 @@ Use the `path` property to define the folder name that displays automatically wh
 
 ### 範例 3：邊欄視圖中的自訂篩選器屬性
 
-除了多面向搜尋之外，Assets選擇器可讓您自訂各種屬性，以縮小您的搜尋範圍 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 應用程式。 新增下列程式碼，在您的應用程式中新增自訂的搜尋篩選器。 在下面的範例中，`Type Filter`在影像、文件或影片中篩選資產類型，或為搜尋新增篩選器類型的搜尋。
+除了多面向搜尋外，Assets Selector可讓您自訂各種屬性，以縮小您的搜尋範圍 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 應用程式。 新增下列程式碼，在您的應用程式中新增自訂的搜尋篩選器。 在下面的範例中，`Type Filter`在影像、文件或影片中篩選資產類型，或為搜尋新增篩選器類型的搜尋。
 
 ![custom-filter-example-vanilla](assets/custom-filter-example-vanilla.png)
 
@@ -512,7 +682,7 @@ filterSchema: [
     ],
     header: 'Mime Types',
     groupKey: 'MimeTypeGroup',
-    }},
+    },
     {
     fields: [
     {
@@ -568,7 +738,7 @@ const data = JSON.parse(e.dataTransfer.getData('collectionviewdata'));
 }
 ```
 
-### 選取資產 {#selection-of-assets}
+### 選擇Assets {#selection-of-assets}
 
 選取的資產類型是一個物件陣列，包含使用 `handleSelection`、`handleAssetSelection` 和 `onDrop` 函數時的資產資訊。
 
@@ -599,7 +769,7 @@ interface SelectedAsset {
     'repo:state': string;
     computedMetadata: Record<string, any>;
     _links: {
-        'https://ns.adobe.com/adobecloud/rel/rendition': Array<{
+        'http://ns.adobe.com/adobecloud/rel/rendition': Array<{
             href: string;
             type: string;
             'repo:size': number;
@@ -632,12 +802,12 @@ interface SelectedAsset {
 | *tiff:imageLength* | 數字 | 資產的高度。 |
 | *computedMetadata* | `Record<string, any>` | 代表貯體的一個物件，可存放各種類型之所有資產中繼資料 (存放庫、應用程式或嵌入式中繼資料)。 |
 | *_links* | `Record<string, any>` | 相關資產的超媒體連結。包括中繼資料和轉譯等資源的連結。 |
-| *連結(_L)。<https://ns.adobe.com/adobecloud/rel/rendition>* | `Array<Object>` | 包含有關資產轉譯資訊的物件陣列。 |
-| *連結(_L)。<https://ns.adobe.com/adobecloud/rel/rendition[].href>* | 字串 | 轉譯的 URI。 |
-| *連結(_L)。<https://ns.adobe.com/adobecloud/rel/rendition[].type>* | 字串 | 轉譯的 MIME 類型。 |
-| *連結(_L)。<https://ns.adobe.com/adobecloud/rel/rendition[].'repo:size>『* | 數字 | 轉譯的大小，以位元組計。 |
-| *連結(_L)。<https://ns.adobe.com/adobecloud/rel/rendition[].width>* | 數字 | 轉譯的寬度。 |
-| *連結(_L)。<https://ns.adobe.com/adobecloud/rel/rendition[].height>* | 數字 | 轉譯的高度。 |
+| *連結(_L)。<http://ns.adobe.com/adobecloud/rel/rendition>* | `Array<Object>` | 包含有關資產轉譯資訊的物件陣列。 |
+| *連結(_L)。<http://ns.adobe.com/adobecloud/rel/rendition[].href>* | 字串 | 轉譯的 URI。 |
+| *連結(_L)。<http://ns.adobe.com/adobecloud/rel/rendition[].type>* | 字串 | 轉譯的 MIME 類型。 |
+| *連結(_L)。<http://ns.adobe.com/adobecloud/rel/rendition[].'repo:size>『* | 數字 | 轉譯的大小，以位元組計。 |
+| *連結(_L)。<http://ns.adobe.com/adobecloud/rel/rendition[].width>* | 數字 | 轉譯的寬度。 |
+| *連結(_L)。<http://ns.adobe.com/adobecloud/rel/rendition[].height>* | 數字 | 轉譯的高度。 |
 
 如需完整的屬性清單和詳細範例，請造訪[資產選擇器代碼範例 ](https://github.com/adobe/aem-assets-selectors-mfe-examples)。
 
@@ -647,14 +817,14 @@ interface SelectedAsset {
 
 ![handle-selection](assets/handling-selection.png)
 
-## 停用資產的選擇 {#disable-selection}
+## 停用選擇的Assets {#disable-selection}
 
 「停用選取」可用來隱藏或停用資產或資料夾無法選取的功能。 它會隱藏卡片或資產中的「選取」核取方塊，使其無法選取。 若要使用此功能，您可以宣告要在陣列中停用的資產或資料夾位置。 例如，如果您要停用選取出現在第一個位置的資料夾，可以新增下列程式碼：
 `disableSelection: [0]:folder`
 
 您可以為陣列提供您想要停用的mime型別（例如影像、資料夾、檔案或其他mime型別，例如image/jpeg）清單。 您宣告的MIME型別會對應到 `data-card-type` 和 `data-card-mimetype` 資產的屬性。
 
-此外，已停用選取範圍的資產是可拖曳的。 若要停用特定資產型別的拖放功能，您可使用 `dragOptions.allowList` 屬性。
+此外，已停用選取範圍的Assets是可拖曳的。 若要停用特定資產型別的拖放功能，您可使用 `dragOptions.allowList` 屬性。
 
 停用選取的語法如下：
 
@@ -742,17 +912,11 @@ It is based on the `imsOrg` that is provided in the application. If you want to 
 * **![瀑布檢視](assets/do-not-localize/waterfall-view.png)[!UICONTROL 瀑布檢視]**：瀑布檢視以 Bridge 的形式顯示檔案或資料夾。
 
 <!--
-### Modes to view Asset Selector
+### Support for multiple instances
 
-Asset Selector supports two types of out of the box views:
+The micro front-end design supports the display of multiple instances of Asset Selector on a single screen.
 
-**  Modal view or Inline view:** The modal view or inline view is the default view of Asset Selector that represents Assets folders in the front area. The modal view allows users to view assets in a full screen to ease the selection of multiple assets for import. Use `<AssetSelector rail={false}>` to enable modal view.
-
-    ![modal-view](assets/modal-view.png)
-
-**  Rail view:** The rail view represents Assets folders in a left panel. The drag and drop of assets can be performed in this view. Use `<AssetSelector rail={true}>` to enable rail view.
-
-    ![rail-view](assets/rail-view.png)
+![multiple-instance](assets/multiple-instance.png)
 -->
 <!--
 
@@ -763,14 +927,6 @@ Asset Selector is flexible and can be integrated within your existing [!DNL Adob
 *   **Perfect fit** Asset selector easily fits in your existing [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] application and choose the way you want to view. The mode of view can be inline, rail, or modal view.
 *   **Accessible** With Asset Selector, you can reach the desired asset in an easy manner.
 *   **Localize** Assets can be availed for the various locales available as per Adobe's localization standards.
--->
-<!--
-
-### Support for multiple instances
-
-The micro front-end design supports the display of multiple instances of Asset Selector on a single screen.
-
-![multiple-instance](assets/multiple-instance.png)
 -->
 
 <!--
