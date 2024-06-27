@@ -1,7 +1,7 @@
 ---
 title: Content Hub概觀
-description: 進一步瞭解Content Hub、其主要優點、如何存取該功能，以及如何針對Content Hub中提供的選項提供意見回饋。
-source-git-commit: ad6d213b6ecf902ec80c323a686231f21ee13811
+description: 進一步瞭解Content Hub、其主要優點、如何存取該工具，以及如何針對Content Hub中可用的選項提供意見回饋。
+source-git-commit: b29641286919b5becc3982400ea160836531fdc5
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
