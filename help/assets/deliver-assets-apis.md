@@ -2,7 +2,7 @@
 title: 傳送API
 description: 瞭解如何使用傳送API。
 role: User
-source-git-commit: 540aa876ba7ea54b7ef4324634f6c5e220ad19d3
+source-git-commit: 3e2fe458460fe8ec4c1dd12152c1134bfb9ca62b
 workflow-type: tm+mt
 source-wordcount: '536'
 ht-degree: 0%
@@ -62,4 +62,3 @@ headers: {
 若要叫用傳送API，必須在以下專案中使用IMS代號： `Authorization` 傳遞受限制資產的詳細資訊。 IMS權杖是從技術帳戶中擷取。 另請參閱 [擷取AEM as a Cloud Service認證](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=en#fetch-the-aem-as-a-cloud-service-credentials) 以建立新的技術帳戶。 另請參閱 [產生存取權杖](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=en#generating-the-access-token) 以產生IMS代號，並在傳送API請求標頭中適當使用它。
 
 若要檢視要求範例、回應範例和回應代碼，請參閱 [傳送API](https://adobe-aem-assets-delivery-experimental.redoc.ly/#operation/getAssetSeoFormat).
-
