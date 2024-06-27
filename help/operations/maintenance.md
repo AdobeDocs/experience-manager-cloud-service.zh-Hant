@@ -4,7 +4,7 @@ description: 瞭解AEM as a Cloud Service中的維護任務以及如何進行設
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 feature: Operations
 role: Admin
-source-git-commit: 4113bb47dee5f3a2c7743f9a79c60654e58cb6bd
+source-git-commit: f8ef7e36ad602af96c3a6055db31ac328da808e6
 workflow-type: tm+mt
 source-wordcount: '2106'
 ht-degree: 8%
@@ -46,14 +46,14 @@ ht-degree: 8%
   <tr>
     <td>版本清除</td>
     <td>客戶</td>
-    <td>目前預設會停用版本清除，但可以設定原則，如以下所述 <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">版本永久刪除與稽核日誌永久刪除維護作業</a> 區段。<br/><br/>預設會立即啟用清除，且這些值可覆寫。<br><br> <!--Alexandru: leave the two line breaks in place, otherwise spacing won't render properly-->
+    <td>目前預設會停用版本清除，但可以設定原則，如以下所述 <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">版本永久刪除與稽核日誌永久刪除維護作業</a> 區段。<br/><br/>預設會立即啟用清除，且這些值可覆寫。<br>
    </td>
   </td>
   </tr>
   <tr>
     <td>稽核記錄清除</td>
     <td>客戶</td>
-    <td>稽核記錄清除目前預設為停用，但您可以設定原則，如中所述 <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">版本永久刪除與稽核日誌永久刪除維護作業</a> 區段。<br/><br/>預設會立即啟用清除，且這些值可覆寫。<br><br> <!--Alexandru: leave the two line breaks in place, otherwise spacing won't render properly-->
+    <td>稽核記錄清除目前預設為停用，但您可以設定原則，如中所述 <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">版本永久刪除與稽核日誌永久刪除維護作業</a> 區段。<br/><br/>預設會立即啟用清除，且這些值可覆寫。<br>
    </td>
    </td>
   </tr>
@@ -197,7 +197,7 @@ ht-degree: 8%
 
 >[!NOTE]
 >
->Adobe建議客戶不要設定「版本清除」。
+>AEM Guides客戶不應設定「版本清除」。
 
 ### 預設值 {#defaults}
 
@@ -283,7 +283,7 @@ data:
 
 >[!NOTE]
 >
->Adobe建議客戶不要設定「版本清除」。
+>AEM Guides客戶不應設定「版本清除」。
 
 #### 版本清除預設值 {#version-purge-defaults}
 
