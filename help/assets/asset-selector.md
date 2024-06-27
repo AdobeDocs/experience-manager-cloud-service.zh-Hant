@@ -4,7 +4,7 @@ description: 在應用程式內使用資產選擇器搜尋、查找和檢索資�
 contentOwner: KK
 role: Admin,User
 exl-id: b968f63d-99df-4ec6-a9c9-ddb77610e258
-source-git-commit: 60c94071332003312ed9e963bc50e35d3c29baf0
+source-git-commit: 3f2fbdc1fd4087ea4c90b9bbe11aa37a11237ae5
 workflow-type: tm+mt
 source-wordcount: '4725'
 ht-degree: 36%
@@ -404,8 +404,8 @@ Asset Selector支援驗證 [!DNL Experience Manager Assets] 使用Identity Manag
 
 * [通訊方法](#prereqs)
 * 若要使用OpenAPI功能存取Dynamic Media，您必須擁有下列專案的授權：
-   * Assets存放庫(例如Experience Manager Assetsas a Cloud Service)
-   * AEM Dynamic Media
+   * Assets存放庫(例如Experience Manager Assetsas a Cloud Service)。
+   * AEM Dynamic Media。
 * 僅限 [核准的資產](#approved-assets.md) 可用於確保品牌一致性。
 
 ### Dynamic Media與OpenAPI功能的整合{#adobe-app-integration-polaris}
