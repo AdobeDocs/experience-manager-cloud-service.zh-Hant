@@ -1,46 +1,68 @@
 ---
-title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 最新發行說明。'
-description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 最新發行說明。'
-mini-toc-levels: 1
-exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 50698fd78cf9ebfd1d92fdb29d53988410ac2970
+title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2024.5.0 版發行說明。'
+description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2024.5.0 版發行說明。'
+source-git-commit: 076d2a6aa6e02a7ef6f9347f2dc36ca02103c130
 workflow-type: tm+mt
-source-wordcount: '1970'
-ht-degree: 61%
+source-wordcount: '1949'
+ht-degree: 95%
 
 ---
 
-# [!DNL Adobe Experience Manager] as a Cloud Service 最新發行說明 {#release-notes}
+# [!DNL Adobe Experience Manager] as a Cloud Service 2024.5.0 版發行說明 {#release-notes}
 
-以下章節概述 [!DNL Experience Manager] as a Cloud Service 目前 (最新) 版本的功能發行說明。
+以下章節概述 [!DNL Experience Manager] as a Cloud Service 2024.5.0 版的功能發行說明。
 
 >[!NOTE]
 >
 >從這裡，您可以導覽至先前版本的發行說明，例如 2022 或 2023。
 >
->查看 [Experience Manager 發行藍圖](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)，了解關於 [!DNL Experience Manager] as a Cloud Service 未來功能的啟用。
+>查看 [Experience Manager 發行藍圖](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html)，了解關於 [!DNL Experience Manager] as a Cloud Service 未來功能的啟用。
 
 >[!NOTE]
 >
->請參閱[近期文件更新](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates)瞭解與版本不直接相關的文件更新的詳細資料。
+>請參閱[近期文件更新](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html)瞭解與版本不直接相關的文件更新的詳細資料。
 
 ## 發行日期 {#release-date}
 
-的發行日期 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 目前功能版本(2024.6.0)為2024年6月25日。 下一個功能版本(2024.7.0)計畫於2024年7月27日發行。
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 最新功能版本 (2024.5.0) 的發行日期為 2024 年 5 月 30 日。下一個功能版本 (2024.6.0) 預計於 2024 年 6 月 27 日發行。
 
 ## 維護版本發行說明 {#maintenance}
 
 您可以在[這裡](/help/release-notes/maintenance/latest.md)找到最新的維護版本發行說明。
 
-<!--  ## Release Video {#release-video}
+## 發行影片 {#release-video}
 
-Have a look at the June 2024 Release Overview video for a summary of the features added in the 2024.6.0 release:
+請觀看 2024 年 5 月版本概觀影片，了解 2024.5.0 版本新增功能的摘要：
 
 >[!VIDEO](https://video.tv.adobe.com/v/3429503?quality=12)
 
--->
-
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
+
+### Sites 的新功能 {#sites-new-features}
+
+#### AEM 翻譯整合 {#translation-integration}
+
+內容翻譯動作和工作流程現在會觸發事件，允許從外部應用程式追蹤相關流程步驟和狀態。所產生的事件如下所示。使用者將能夠使用 Adobe Developer Console 來訂閱事件。
+
+* `TRANSLATION_JOB_CREATED`
+* `TRANSLATION_JOB_CONTENT_ADDITION_STARTED`
+* `TRANSLATION_JOB_CONTENT_ADDITION_COMPLETED`
+* `TRANSLATION_JOB_CONTENT_DELETION_STARTED`
+* `TRANSLATION_JOB_CONTENT_DELETION_COMPLETED`
+* `TRANSLATION_JOB_COMMITTED_FOR_TRANSLATION`
+* `TRANSLATION_JOB_READY_FOR_REVIEW`
+* `TRANSLATION_JOB_APPROVED`
+* `TRANSLATION_JOB_COMPLETED`
+* `TRANSLATION_JOB_CANCELLED`
+* `TRANSLATION_JOB_ERROR`
+
+#### 實際使用監控 (RUM) 資料服務 {#real-use-monitoring}
+
+* **[實際使用監控 (RUM) 資料服務現在已正式推出](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)**，讓 AEM as a Cloud Service 能夠收集用戶端的資料。實際使用監控服務，即用戶端資料收集，可以更準確地反映互動情形，確保網站參與度的測量結果可信。它為客戶提供有關頁面流量和效能的進階深入分析。這是深入了解您的頁面效能並透過深入分析進行改善的絕佳機會。
+
+#### Edge Delivery Services 的 AEM 製作 {#edge-enhancements}
+
+加強穩定性和各種不同的改良功能，提供更好的編寫體驗。
 
 ### 早期採用者計劃 {#sites-early-adopter}
 
@@ -58,39 +80,18 @@ Have a look at the June 2024 Release Overview video for a summary of the feature
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### Experience Manager Assets中的新功能 {#new-features-assets}
+### 管理員檢視中的新功能 {#admin-view-new-features}
 
-**Content Hub**
-
-Content Hub是Experience Manager Assets as a Cloud Service的一部分，可讓組織及其業務合作夥伴普及對品牌上內容的存取。 透過Content Hub，您可以輕鬆尋找及發佈資產、重複使用和建立新的品牌上變體，並大規模加速啟用。
-
-![Content Hub使用者介面](/help/release-notes/assets/content-hub-ui.png)
-
-**具有OpenAPI功能的Dynamic Media**
-
-Dynamic Media搭配OpenAPI功能，可跨Adobe和第三方應用程式延伸DAM，讓您可透過任何管道的Asset Selector或OpenAPI棧疊存取品牌核准的數位資產。 重要原則 — 無二進位副本，資產在邊緣經過最佳化和轉換，以實現快速效能、提供公開或安全的資產。
-
-![新的Dynamic Media資料流程圖](/help/assets/assets/dm-openapi-dfd.png)
-
+* WebM 現在是視訊處理設定檔支援的輸出檔案。
+* Express 與 AEM 的原生整合現在支援 MP4 (匯入和匯出)。
 
 ### Assets 檢視的新功能 {#assets-view-new-features}
 
-**Assets Insights儀表板中有更多可用選項**
+**發佈資產至 AEM 和 Dynamic Media**
 
-Assets Insights儀表板現在提供依資產型別和大小排列的資產計數。 這些選項可在您的Assets檢視環境中提供按大小範圍和資產型別分類的資產計數和百分比的即時資料。
+現在，Experience Manager Assets 讓您無需切換到管理員視圖，而是使用 Assets 視圖快速[將資產發佈到 Experience Manager 和 Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)。您可以在上傳、瀏覽和搜尋資產的同時發佈資產。
 
-<!--
-
-
-**Content Credentials**
-
-Content Credentials feature in Assets view now provides detailed asset provenance data adhered to an asset. This helps to trace the enroute edits along the asset's lifecycle to prevent users from deception through deliberately tempered assets. This ensures content authenticity among users and fosters trust through transparency.
-
-When looking at the asset details, any image with content credentials added, such as those created with GenAI, displays the manifest details in a dedicated panel. If the asset is downloaded, published, or shared, the credentials remain intact with the asset.
-
-![check publish status1](/help/release-notes/assets/content-credentials.png)
-
--->
+![檢查發佈狀態 1](/help/assets/assets/check-publish-status1.png)
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -100,13 +101,13 @@ When looking at the asset details, any image with content credentials added, suc
 
 -->
 
-### AEM Forms 的新功能 {#forms-new-prerelease-features}
+### AEM Forms 的發行前新功能 {#forms-new-prerelease-features}
 
 #### 核心元件式最適化表單的增強型視覺規則編輯器
 
 此版本包含基於核心元件的最適化表單之視覺規則編輯器重大升級。您現在可以：
 
-* 在視覺規則編輯器中建立規則以 [覆寫預設表單提交成功/失敗訊息](/help/forms/create-and-use-custom-functions.md#use-case-override-form-submission-success-and-error-handlers).
+* 在視覺規則編輯器中建立規則，以[覆寫預設的表單提交成功/失敗訊息](/help/forms/create-and-use-custom-functions.md#use-case-override-form-submission-success-and-error-handlers)。
 
 * 在最適化表單規則編輯器中，新增[為 WHEN 運算選取不同類型欄位](/help/forms/rule-editor-core-components.md#allowed-multiple-fields-in-when)的功能。
 
@@ -114,11 +115,13 @@ When looking at the asset details, any image with content credentials added, suc
 
 * 使用「[**儲存為草稿**](/help/forms/save-core-component-based-form-as-draft.md)」功能儲存部分完成的表單，以便日後提交。遇到使用者必須中斷表單填寫並稍後再繼續的情況時，這項功能非常實用。
 
+
+
 ### AEM Forms中的搶先使用功能 {#forms-new-early-access-features}
 
 AEM Forms搶先體驗計畫提供絕佳機會，讓您可以搶在其他人之前獨佔使用最尖端的創新技術，並協助打造他們的開發成果。 您可以透過該計劃存取多項創新。
 
-本發行說明列出目前版本中提供的創新內容。 如需「搶先體驗方案」下可用的創新完整清單，請參閱 [AEM Forms搶先使用計畫檔案](/help/forms/early-access-ea-features.md).
+本發行說明列出目前版本提供的創新功能。如需「搶先體驗方案」下可用的創新完整清單，請參閱 [AEM Forms搶先使用計畫檔案](/help/forms/early-access-ea-features.md).
 
 #### 強化機器人保護方法
 
@@ -135,7 +138,7 @@ AEM Forms 新增對於 Cloudflare Turnstile 和 hCaptcha 兩種熱門驗證碼�
 
 ### Forms 服務
 
-Forms 服務會產生用於資料擷取的互動式 PDF forms。它也可以用來匯入或匯出現有互動式PDF表單的資料，以及驗證提交的資料。 以下是其功能的詳細介紹：
+Forms 服務會產生用於資料擷取的互動式 PDF forms。也可以利用此表單把資料匯入至現有的互動式 PDF 表單或將其中的資料匯出，並驗證提交的資料。以下是其功能的詳細介紹：
 
 * **轉譯表單**：從使用 AEM Forms Designer 建立的範本，並可以選擇搭配 XML 資料，產生互動式 PDF 表單。這實質上會產生一個可填寫的 PDF 表單，可選擇預先填入資料。
 * **資料擷取和匯入**：將資料匯入現有 PDF 表單，以及從已填妥的 PDF 表單中擷取資料。支援 XDP 和 XML 資料格式，而匯入至非 XFA PDF forms (又稱為 AcroForms) 可額外支援 FDF 和 XFDF 資料。
@@ -148,55 +151,66 @@ Forms 服務會產生用於資料擷取的互動式 PDF forms。它也可以用�
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] 基礎 {#foundation}
 
-### 內容健康相關動作中心通知早期採用者計畫 {#actions-center-notifications}
+### OAuth Server-to-Server 認證支援 AEM 與其他 Adobe 解決方案整合 {#S2S-OAuth-credentials}
 
-有重要事件發生時，或是我們注意到您的程式碼或設定中有些問題需要主動採取行動時，[行動中心](/help/operations/actions-center.md)就會寄送電子郵件通知。我們現在推出了數種與您的內容健康狀態相關的新通知型別。 這可透過早期採用者計畫取得。 若要參與，請聯絡Adobe客戶服務。
+Adobe Developer Console 是用來產生存取各種 API 的認證。其中一種認證類型，Service Account (JWT) 認證已淘汰，而改為使用 OAuth Server-to-Server 認證；AEM Cloud Service 現在支援該認證與其他 Adobe 解決方案 (例如 Adobe Analytics 和 Adobe Target) 整合。
 
-#### 頁面包含大量節點 {#page-nodes}
+[閱讀有關淘汰內容的資訊](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md)並[了解如何使用 AEM 編寫 UI](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md) 設定與其他 Adobe 解決方案的整合。
 
-大量節點可能會降低演算效能並減少頁面載入時間。 在頁面上偵測到大量節點時，會透過動作中心接收主動通知，允許您採取必要步驟來減少頁面內的節點總數。
+### 來源出現流量尖峰警示 {#traffic-spike-origin}
 
-#### 大量執行中的工作流程例項 {#running-workflows}
+在來源的流量模式顯示發 DDoS 攻擊時，透過行動中心[接收主動通知](/help/security/traffic-filter-rules-including-waf.md#traffic-spike-at-origin-alert)，讓您可以調查和設定流量篩選規則。
 
-當製作環境中有大量執行中的工作流程時，工作流程引擎效能會受到影響。 偵測到大量執行中的工作流程例項時，請透過「動作中心」接收主動通知，讓您設定清除工作以終止不需要的執行中的工作流程。
+### RDE 的新功能 {#RDE-new-features}
 
-#### 直接新增到自訂群組的使用者 {#users-customgroups}
+[快速開發環境 (RDE)](/help/implementing/developing/introduction/rapid-development-environments.md) 讓開發人員在雲端中快速部署、審查和測試變更。多項新功能將在 6 月份推出。我們也邀請您到 [RDE Discord 頻道](https://discord.com/channels/1131492224371277874/1245304281184079872)直接與 Adobe 工程部門互動。
 
-當使用者直接新增到自訂群組時，會透過動作中心收到主動通知，允許您遵循IMS最佳實務將使用者新增到相關的IMS群組，然後將IMS群組新增為AEM群組的成員。
 
-#### 缺少 JCR 內容 {#jcr-content}
+#### RDE 支援使用網站主題和網站範本的前端程式碼 {#rde-frontend}
 
-偵測到缺少JCR內容時，會透過動作中心收到主動通知，讓您新增缺少的JCR內容並避免某些AEM Assets功能失敗。
+[RDE 現在支援以](/help/implementing/developing/introduction/rapid-development-environments.md#deploying-themes-to-rde)[網站主題](/help/sites-cloud/administering/site-creation/site-themes.md)和[網站範本](/help/sites-cloud/administering/site-creation/site-templates.md)為基礎的前端程式碼，方便早期採用者使用。經由 RDE，我們可以使用命令列指令完成，而不是使用[前端管道](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md)來完成。
 
-#### 已完成的工作流程未清除 {#workflows}
+#### 增強 RDE 記錄 {#rde-logging}
 
-當超過90天未清除已完成的工作流程時，會透過「動作中心」收到主動通知，可讓您透過減少工作流程例項數量來改善工作流程引擎的效能。
+在 RDE 中進行程式碼除錯時，開發人員現在可以使用命令列[來設定和串流記錄](/help/implementing/developing/introduction/rapid-development-environments.md#rde-logging)，生產力更高，而且無需修改版本控制中的 OSGI 屬性。功能包含：
 
-#### 缺少Sling資源 {#sling-resource}
+* 根據每個套件或類別層級聲明記錄層級
+* 自訂記錄輸出格式
+* 並行串流多個記錄
 
-偵測到缺少Sling資源時，會透過動作中心接收主動通知，允許您新增缺少的Sling資源並避免某些AEM Assets功能失敗。
+#### RDE CLI 增強功能 {#rde-cli-enhancements}
 
-### 內容傳遞相關的早期採用者計畫 {#foundation-early-adopter}
+RDE 命令列介面有一些新功能，可改善開發人員體驗：
+
+* [設定命令是互動式的](/help/implementing/developing/introduction/rapid-development-environments.md#installing-the-rde-command-line-tools-interactive)，可以更輕鬆在組織、計劃和環境之間進行選擇。現在也可以在命令列中覆寫這些值。
+* [靜音模式](/help/implementing/developing/introduction/rapid-development-environments.md#global-flags)提供較簡潔的輸出。
+* [json 模式](/help/implementing/developing/introduction/rapid-development-environments.md#global-flags)可在以程式設計方式呼叫時，提供實用的輸出。
+
+### 新的行動中心通知 {#actions-center-notifications}
+
+有重要事件發生時，或是我們注意到您的程式碼或設定中有些問題需要主動採取行動時，[行動中心](/help/operations/actions-center.md)就會寄送電子郵件通知。有三個新的通知類型：
+
+* 透過進階網路基礎結構進行的傳出連線過多
+* 使用已淘汰的服務使用者對應格式
+* 有潛在的 DDoS 攻擊正在進行中
+
+### 早期採用者計劃 {#foundation-early-adopter}
 
 請寄送電子郵件至 **<aemcs-cdn-config-adopter@adobe.com>**，指出您對以下哪些早期採用者計劃感興趣。
 
-#### CDN的基本驗證（早期採用者計畫） {#basicauth-cdn}
-
-Protect會彈出基本驗證對話方塊，要求使用者名稱和密碼，以顯示特定內容資源。 此功能主要用於輕度驗證使用案例（例如業務利害關係人審查內容），而不是作為一般使用者存取權的完整解決方案。 透過透過設定管道部署的Git中的設定檔案來管理中的使用者名稱和密碼清單，並參考機密型別Cloud Manager環境變數。 [了解更多](/help/implementing/dispatcher/cdn-credentials-authentication.md#basic-auth)。
-
-#### 使用自助式API金鑰清除CDN的內容（早期採用計畫） {#purge-cdn}
+#### 使用自助 API 金鑰清除內容傳遞網路上的內容 (早期採用者計畫) {#purge-cdn}
 
 以自助方式註冊內容傳遞網路清除 API 金鑰，並利用它使內容傳遞網路上的內容失效，無論是全域或針對一個或多個資源。[了解更多](/help/implementing/dispatcher/cdn-cache-purge.md)。
 
 <!-- Email **<aemcs-cdn-config-adopter@adobe.com>** with a request to be an early adopter. -->
 
-#### 自助建立客戶管理的CDN的X-AEM-Edge-Key (BYOCDN) （早期採用計畫） {#byocdn-keys}
+#### 為客戶管理的內容傳遞網路 (BYOCDN) 自助建立 X-AEM-Edge-Key (早期採用者計劃) {#byocdn-keys}
 
 以前，需要支援服務單才能產生設定客戶管理之內容傳遞網路所需的 X-AEM-Edge-Key。現在則可以透過使用設定管道部署的設定檔，以自助方式完成此操作，因此新環境上線不會有任何延遲。[了解更多](/help/implementing/dispatcher/cdn-credentials-authentication.md#CDN-HTTP-value)。
 
 <!-- Email **<aemcs-cdn-config-adopter@adobe.com>** with a request to be an early adopter. -->
 
-#### 使用者端重新導向（早期採用者計畫） {#client-side-redirects-early-adopter}
+#### 用戶端重新導向 (早期採用者計畫) {#client-side-redirects-early-adopter}
 
 在原始碼控制系統中設定 301/302 用戶端重新導向，並部署到 CDN。[了解更多](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors)。<!-- and join the early adopter program by emailing **<aemcs-cdn-config-adopter@adobe.com>**. --> 請注意，已經有一些與[內容傳遞網路設定](/help/implementing/dispatcher/cdn-configuring-traffic.md)相關的其他功能可用，包括要求和回應轉換，以及將流量路由到 AEM 之外的網站。
 
@@ -206,7 +220,7 @@ Protect會彈出基本驗證對話方塊，要求使用者名稱和密碼，以�
 
 加入早期採用者計劃，您就可以在流量篩選規則觸發時收到提醒。發生某些流量狀況時，行動中心電子郵件通知會通知您，以利採取適當措施。
 
-#### 商務使用者可以在Git外部宣告重新導向（早期採用計畫） {#apache-rewritemaps-early-adopter}
+#### 業務使用者可以在 Git 之外宣告重新導向 (早期採用者計劃) {#apache-rewritemaps-early-adopter}
 
 與 AEM 6.5 類似，Apache/Dispatcher 將收錄放在發佈存放庫中特定位置的重新寫入對應並將其載入，而不需要執行 Web 層級管道。商業使用者因此有機會使用試算表或 UI (例如由 ACS Commons Redirect Map Manager 提供或做為客戶應用程式的一部分建立者) 來宣告重新導向。<!-- Please reach out to **<aemcs-cdn-config-adopter@adobe.com>** for more information. -->
 
@@ -214,15 +228,14 @@ Protect會彈出基本驗證對話方塊，要求使用者名稱和密碼，以�
 
 Adobe 管理的內容傳遞網路現在支援 [Edge Side Includes (ESI)](/help/implementing/dispatcher/edge-side-includes.md)，這是一種用於邊緣層級動態 Web 內容組合的標記語言。透過包含 ESI 程式碼片段，您可以在內容傳遞網路上用較高的 TTL 快取整個 HTML 頁面，同時更頻繁地從來源擷取需要較高更新頻率 (TTL 較低) 的較小區段。<!--Please reach out to **<aemcs-cdn-config-adopter@adobe.com>** for more information.-->
 
-#### 真實使用者監控 (RUM) 資料服務 (早期採用者計劃)
-
-* **[您可以利用真實使用者監控 (RUM) 資料服務](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)**&#x200B;啟用 AEM as a Cloud Service 的用戶端系列。真實使用者監控 (RUM) 資料服務可以更準確地反映使用者互動，確保可靠地測量網站參與度。這是深入了解頁面效能的絕佳機會。這對於使用 Adobe 管理 CDN 或非 Adobe 管理 CDN 的客戶很有幫助。此外，對於使用非 Adobe 管理 CDN 的客戶，現在可以啟用自動流量報告，而無需與 Adobe 共享任何流量報告。
-
-  如果您有興趣測試此新功能並分享意見回饋，請使用與您的 Adobe ID 相關聯的電子郵件地址，傳送電子郵件至 `aemcs-rum-adopter@adobe.com`，並在郵件中附上要啟用 RUM 的每個環境網域名稱。Adobe 的產品團隊隨後會為您啟用真實使用者監控 (RUM) 資料服務。
-
 ## [!DNL Experience Manager] Guides {#guides}
 
-您可以找到最新版Adobe Experience Manager Guides完整的新功能與增強功能清單 [此處](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2406-release/whats-new-2024-06-0).
+* **將主題或其元素發佈到體驗片段**
+現在，Experience Manager Guides 讓您可以將主題或其元素發佈到體驗片段。體驗片段是整合內容和版面的模組化內容單元。體驗片段很有用，可以協助您建立一致且引人入勝的體驗。
+* **能夠將主題資產中繼資料傳遞至原生 PDF 輸出**
+您可以在產生原生 PDF 輸出時新增主題資產中繼資料。此功能可協助您將不同主題的特定中繼資料 (例如主題標題和製作者) 新增至主題頁面的頁首和頁尾。
+
+如需更多有關該版本中新增功能和增強功能以及已修復問題的資訊，請查看 [Experience Manager Guides 發行藍圖](https://experienceleague.adobe.com/tw/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap)。
 
 ## Cloud Manager {#cloud-manager}
 

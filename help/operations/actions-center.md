@@ -4,10 +4,10 @@ description: 善用行動中心，方便處理事件和其他重要資訊
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
 feature: Operations
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+source-git-commit: 7630481aab89b31057509f23aab334e17c537257
 workflow-type: tm+mt
-source-wordcount: '842'
-ht-degree: 69%
+source-wordcount: '988'
+ht-degree: 59%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 69%
 
 AEM as Cloud Service 在發生需要立即採取行動的嚴重事件時會傳送行動中心電子郵件，並提出主動建議以進行最佳化。例如，佇列阻塞或一組過期的憑證；您可在[下表](#supported-notification-types)檢視整套行動中心通知類型，通知類型會隨時間增加。
 
-收到「作業中心」電子郵件通知時，您可以按一下該通知，開啟AEMas a Cloud Service的「作業中心」，並出現快顯視窗，顯示說明客戶應採取的作業的額外內容。
+收到「動作中心」電子郵件通知時，可以按一下該通知以開啟AEM as a Cloud Service的「動作中心」，並出現快顯視窗，顯示說明客戶應採取的動作的其他內容。
 
 除了顯示有關剛剛按一下的電子郵件通知資訊外，行動中心還可充當中樞，讓您在其中查看和管理目前和較舊的通知組。<!-- It can be accessed directly at the url TBD (Alexandru: I'm intentionally keeping it TBD for now so customers do not find it) -->
 
@@ -76,6 +76,12 @@ AEM as a Cloud Service 有多種類型的通知，但只有一部分出現在行
 | 鎖定的複製佇列 | 事件 | 按照[複製文件](/help/operations/replication.md#troubleshooting)中的說明解鎖佇列 |
 | 無效的GraphQL查詢 | 事件 | 參考「 」以修正無效的GraphQL查詢 [持續的GraphQL查詢疑難排解檔案](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries-troubleshoot.html) |
 | 來源處的流量尖峰 | 事件 | 透過設定在低於來源預設流量尖峰警報的臨界值處觸發的速率限制流量篩選規則，Protect您的來源。  請參閱 [使用流量規則封鎖DoS和DDoS攻擊](/help/security/traffic-filter-rules-including-waf.md#blocking-dos-and-ddos-attacks-using-traffic-filter-rules) 流量篩選規則檔案的區段，其中會參考教學課程。 |
+| 頁面包含大量節點 | 主動 | 減少頁面中的節點總數。 請參閱 [頁面複雜性檔案](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/pcx) | |
+| 大量執行中的工作流程例項 | 主動 | 終止不再需要的執行中工作流程。 瞭解如何 [設定清除工作](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/operations/maintenance) |               |
 | 即將到期的 S2S 認證 | 主動 | 在[為伺服器端 API 產生權杖文件](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md#refresh-credentials)中，了解如何重新整理認證 | 高連線計數 | 主動 | 瞭解中的連線集區 [連線集區以及進階網路檔案](/help/security/configuring-advanced-networking.md#connection-pooling-advanced-networking) |
 | 已棄用的服務使用者對應 | 主動 | 瞭解如何使用較新的Sling服務使用者對應格式，如中所述 [Sling服務使用者對應和服務使用者定義的最佳實務](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/best-practices-for-sling-service-user-mapping-and-service-user-definition) |
-| 高連線計數 | 主動 | 瞭解中的連線集區 [進階網路檔案](/help/security/configuring-advanced-networking.md#connection-pooling-advanced-networking) |
+| 高連線計數 | 主動 | 瞭解中的連線集區 [進階網路檔案](/help/security/configuring-advanced-networking.md#connection-pooling-advanced-networking) |  |
+| 直接新增到自訂群組的使用者 | 主動 | 使用者需要新增到相關的IMS群組，這些IMS群組需要新增為AEM群組的成員。 對齊 [IMS最佳實務](/help/security/ims-support.md) | |
+| 缺少JCR內容 | 主動 | 新增遺失的JCR內容節點。 請參閱 [Assets內容驗證器檔案](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/acv) | |
+| 已完成的工作流程未清除 | 主動 | 將工作流程例項的數目降至最低，並透過清除超過90天之前的工作流程例項來改善效能。 瞭解如何 [設定維護任務](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/operations/maintenance) | |
+| 頁面中缺少Sling資源型別 | 主動 | 新增缺少的Sling資源型別節點。 請參閱 [Assets內容驗證器檔案](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/acv) |

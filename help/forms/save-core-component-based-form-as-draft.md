@@ -4,14 +4,13 @@ description: 瞭解如何將最適化表單的核心元件儲存為草稿，並�
 feature: Adaptive Forms, Core Components
 exl-id: c0653bef-afeb-40c1-b131-7d87ca5542bc
 role: User, Developer, Admin
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: 52b87073cad84705b5dc0c6530aff44d1e686609
 workflow-type: tm+mt
-source-wordcount: '1072'
+source-wordcount: '1053'
 ht-degree: 2%
 
 ---
 
-<span class="preview"> 本文包含搶鮮版功能的內容。 搶鮮版功能只能透過我們的 [發行前通道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features).
 
 # 將核心元件型最適化表單儲存為草稿 {#save-af-form}
 
