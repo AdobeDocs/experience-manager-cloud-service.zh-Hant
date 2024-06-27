@@ -1,9 +1,9 @@
 ---
 title: Content Hub概觀
 description: 進一步瞭解Content Hub、其主要優點、如何存取該功能，以及如何針對Content Hub中提供的選項提供意見回饋。
-source-git-commit: 1aea6c6095aebd38f4c7c078701b29eebd3329b4
+source-git-commit: ad6d213b6ecf902ec80c323a686231f21ee13811
 workflow-type: tm+mt
-source-wordcount: '640'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -37,11 +37,11 @@ Content Hub可讓您使用Adobe Express(如果您有Adobe Express許可權)建�
 
 ## 先決條件 {#prerequisites-content-hub}
 
-Experience Manageras a Cloud Service6月版本
+Content Hub需要2024.6版或更新版本as a Cloud ServiceExperience Manager的生產製作環境(最低版本為2024.6.16799)。
 
 ## 如何存取Content Hub？ {#access-content-hub}
 
-將使用者新增至之後 [Content Hub產品設定檔](/help/assets/deploy-content-hub.md#content-hub-instance-product-profile)，您可使用下列方式存取Content Hub：
+[設定Content Hub後](#deploy-content-hub) 並將使用者新增至 [Content Hub產品設定檔](/help/assets/deploy-content-hub.md#content-hub-instance-product-profile)，您可使用下列方式存取Content Hub：
 
 * 使用下列連結存取Content Hub：
 
