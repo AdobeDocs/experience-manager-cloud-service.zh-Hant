@@ -1,9 +1,9 @@
 ---
 title: Content Hub概觀
 description: 進一步瞭解Content Hub、其主要優點、如何存取該功能，以及如何針對Content Hub中提供的選項提供意見回饋。
-source-git-commit: 15a266ccb6e4117c769d775a5f579fba943389bf
+source-git-commit: 1aea6c6095aebd38f4c7c078701b29eebd3329b4
 workflow-type: tm+mt
-source-wordcount: '619'
+source-wordcount: '640'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ Content Hub中最常見的屬性（例如搜尋的篩選器）、新增或匯入
 
 **讓非創意人員能夠編輯和重新混合內容，同時繼續使用品牌**
 
-Content Hub與Adobe Express整合(如果您有Adobe Express許可權)，可使用內嵌的Express編輯器編輯影像，以在保留品牌的同時建立令人驚豔的影像變體。
+Content Hub可讓您使用Adobe Express(如果您有Adobe Express許可權)建立新內容。 您可以使用簡單易用的工具編輯現有內容、使用範本和品牌元素產生品牌上的變化，以及從Adobe Firefly使用最新GenAI功能建立新內容。
 
 **深入瞭解如何在團隊間使用內容**
 
@@ -61,6 +61,8 @@ Experience Manageras a Cloud Service6月版本
 
 指定主旨、建議的說明，並視需要附加檔案。 按一下 **[!UICONTROL 提交]** 將意見反應提交至Adobe。
 
+![Content Hub意見反應](assets/content-hub-feedback.png)
+
 ## 為您的團隊設定Content Hub {#setup-content-hub}
 
 請依照下列步驟，為您的團隊設定Content Hub：
@@ -69,13 +71,13 @@ Experience Manageras a Cloud Service6月版本
 
 1. [載入Content Hub管理員](deploy-content-hub.md#onboard-content-hub-administrator).
 
-1. [新增關鍵Content Hub使用者](deploy-content-hub.md##onboard-content-hub-consumer-users).
+1. [新增關鍵Content Hub使用者](deploy-content-hub.md#onboard-content-hub-consumer-users).
 
 1. [DAM作者或管理員可使用Experience Manager資產核准資產](approve-assets.md).
 
 1. [管理員可為其他使用者設定Content Hub使用者介面](configure-content-hub-ui-options.md).
 
-1. [將Content Hub存取權授予團隊中的更多使用者](deploy-content-hub.md##onboard-content-hub-consumer-users).
+1. [將Content Hub存取權授予團隊中的更多使用者](deploy-content-hub.md#onboard-content-hub-consumer-users).
 
 1. [存取Content Hub入口網站](#access-content-hub).
 
