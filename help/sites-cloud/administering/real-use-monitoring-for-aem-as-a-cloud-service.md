@@ -1,17 +1,17 @@
 ---
-title: AEM的Real Use Monitoringas a Cloud Service
+title: AEM as a Cloud Service 的真實使用監控
 description: 瞭解如何使用即時監控(RUM)來即時擷取和分析網站或應用程式的數位使用者體驗。
 exl-id: 91fe9454-3dde-476a-843e-0e64f6f73aaf
 feature: Administering
 role: Admin
-source-git-commit: 12e37d6d0a8674dd4329200322e2f959cc6dd787
+source-git-commit: 19b52f733a592c7e84ba2e9d83d37e5e181f21ab
 workflow-type: tm+mt
-source-wordcount: '1395'
+source-wordcount: '1313'
 ht-degree: 0%
 
 ---
 
-# AEMas a Cloud Service的Real Use Monitoring Service {#real-use-monitoring-service-for-aem-as-a-cloud-service}
+# 適用於AEM as a Cloud Service的Real Use Monitoring Service {#real-use-monitoring-service-for-aem-as-a-cloud-service}
 
 >[!NOTE]
 >
@@ -33,8 +33,6 @@ Real Use Monitoring服務對所有客戶都有好處。 它可提供使用者互
 
 對於所有Adobe客戶，此服務可提供使用者互動的重要深入分析。 使用自己CDN的客戶可從簡化的流量報表中獲益，因為Adobe現在直接整合資料收集，消除在續約週期期間需個別報表的必要。
 
-您是否要使用Adobe的早期採用者RUM Explorer視覺化工具，針對您的網站互動獲得有用的深入分析，以釋放您網站的完整潛能？ 此工具可提供頁面效能的深入分析，包括點按次數、核心網頁生命(CWV)、轉換和客戶歷程圖等量度。 運用這些強大的深入分析，您可以微調數位體驗，更有效滿足使用者的需求。 如果您想深入瞭解並取得存取權，請傳送電子郵件至： `rum-explorer@adobe.com`.
-
 ## 瞭解實際使用監控服務的運作方式 {#understand-how-the-rum-service-works}
 
 Adobe Experience Manager (AEM)使用即時監控(RUM)來協助客戶和Adobe瞭解訪客如何與AEM網站互動。 它可協助他們診斷效能問題，並測量實驗的成效。 RUM透過取樣來保留訪客的隱私權 — 僅監控所有頁面檢視的一小部分 — 並且不會收集任何個人識別資訊(PII)。
@@ -47,7 +45,7 @@ AEM中的「Real Use Monitoring」服務可保留訪客隱私權，並將資料�
 
 ## Real Use Monitoring Service資料抽樣 {#rum-service-data-sampling}
 
-傳統的網站分析解決方案會嘗試收集每位訪客的資料。 AEM RUM服務只會從一小部分頁面檢視中擷取資訊。 此服務的用途是取樣和匿名處理，而非取代分析。 依預設，頁面的取樣比例為1:100。 網站運運算元目前無法增加或減少取樣速率。 為了準確估計總流量，每100次頁面檢視會從1收集資料，從而提供整體流量的可靠近似值。
+傳統的網站分析解決方案會嘗試收集每位訪客的資料。 AEM RUM服務只會從一小部分的頁面檢視中擷取資訊。 此服務的用途是取樣和匿名處理，而非取代分析。 依預設，頁面的取樣比例為1:100。 網站運運算元目前無法增加或減少取樣速率。 為了準確估計總流量，每100次頁面檢視會從1收集資料，從而提供整體流量的可靠近似值。
 
 在決定是否收集資料時，會依頁面檢視來決定，幾乎無法追蹤多個頁面上的互動。 在設計上，RUM沒有訪客或工作階段的概念，只有頁面檢視。
 
@@ -108,11 +106,11 @@ RUM資料有利於以下用途：
 
 1. **此 `/.rum` 我的網站封鎖路徑，該如何修正？**
 
-   此 `/.rum` 需要RUM集合的路徑才能運作。 如果您的AEMas a Cloud Service中包含CDN (Adobe)，請確保 `/.rum` 路徑轉寄給與其他AEM內容相同的AEM來源。 此外，請確定此維度沒有任何調整。
+   此 `/.rum` 需要RUM集合的路徑才能運作。 Adobe如果您的AEM as a Cloud Service中有CDN，則應確保 `/.rum` 路徑轉寄給與其他AEM內容相同的AEM來源。 此外，請確定此維度沒有任何調整。
 
 1. **RUM集合是否會計入合約目的的內容請求？**
 
-   RUM程式庫和RUM集合不會計為內容請求，也不會增加報告的頁面檢視或API呼叫數量。 此外，對於透過AEMas a Cloud Service使用現成可用CDN的客戶， [伺服器端集合](#serverside-collection) 是內容要求的基礎。
+   RUM程式庫和RUM集合不會計為內容請求，也不會增加報告的頁面檢視或API呼叫數量。 此外，對於透過AEM as a Cloud Service使用現成可用CDN的客戶， [伺服器端集合](#serverside-collection) 是內容要求的基礎。
 
 1. **我如何選擇退出？**
 
