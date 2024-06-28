@@ -4,7 +4,7 @@ description: 使用  [!DNL Adobe Express]  支援的選項編輯影像，並將�
 role: User
 exl-id: cfc4c7b7-da8c-4902-9935-0e3d4388b975
 feature: Best Practices, Interactive Images, Smart Crop, Smart Imaging
-source-git-commit: 9a21c9218e45bb6ce91263c9798e3b1c99f369b4
+source-git-commit: 23b43f22b62451c9d0a5460999fcd43479438d7e
 workflow-type: tm+mt
 source-wordcount: '1089'
 ht-degree: 33%
@@ -13,7 +13,7 @@ ht-degree: 33%
 
 # 在 [!DNL Assets view] 中編輯影像 {#edit-images-in-assets-view}
 
-「資產檢視」可啟用基本的影像編輯，包括調整大小、移除背景、裁切，以及在JPEG和PNG格式之間轉換。 此外，透過與Adobe Express整合，還可進行進階編輯。 編輯影像後，即可將新影像另存新版。版本設定功能可協助您稍後在需要時還原成原始資產。 要編輯影像，[開啟其預覽](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/navigate-view#preview-assets)，然後按一下「**編輯影像**」。
+Assets檢視可啟用基本的影像編輯，包括調整大小、移除背景、裁切以及JPEG和PNG格式之間的轉換。 此外，透過與Adobe Express整合，還可進行進階編輯。 編輯影像後，即可將新影像另存新版。版本設定功能可協助您稍後在需要時還原成原始資產。 要編輯影像，[開啟其預覽](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/navigate-view#preview-assets)，然後按一下「**編輯影像**」。
 
 >[!NOTE]
 >
@@ -23,7 +23,7 @@ ht-degree: 33%
 
 ## 編輯影像 {#edit-image}
 
-登陸資產檢視，使用連結 —  [資產檢視](https://experience.adobe.com/#/assets) 並選取正確的存放庫。 若要獲得存取權，請聯絡您組織的管理員。
+登陸Assets檢視，使用連結 —  [Assets檢視](https://experience.adobe.com/#/assets) 並選取正確的存放庫。 若要獲得存取權，請聯絡您組織的管理員。
 如需其他參考資訊，請參閱 —  [開始使用Adobe Experience Manager Assets檢視](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/get-started-assets-view)， [瞭解Assets檢視使用者介面](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/navigate-assets-view#understand-interface-navigation)、和 [Assets檢視使用案例](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/get-started-assets-view#use-cases).
 <!--
 >[!CONTEXTUALHELP]
@@ -88,11 +88,11 @@ ht-degree: 33%
 ![在Essentials UI中快取](/help/assets/assets/express-in-essentials-ui.jpg)
 若要使用編輯影像 [!DNL Adobe Express] 內嵌編輯器，請遵循下列步驟：
 
-1. 使用連結登陸AEM Assets檢視 —  [AEM資產檢視](https://experience.adobe.com/#/assets) 並選取正確的存放庫。
+1. 使用連結登陸AEM Assets檢視 —  [AEM Assets檢視](https://experience.adobe.com/#/assets) 並選取正確的存放庫。
 1. 按一下 **Assets**，輸入資料夾，然後選取影像。
 1. 按一下 **以Adobe Express開啟**. 影像會在快速畫布上開啟。
 1. 對影像進行必要的編輯。
-1. 如果您的專案需要您新增更多頁面，請按一下 **新增**，選取「Assets」，輸入資料夾，選取要帶入畫布頁面的影像，然後對影像執行所需的編輯。
+1. 如果您的專案需要您新增更多頁面，請按一下 **新增**，選取資產，輸入資料夾，選取要帶入畫布頁面的影像，然後對影像執行所需的編輯。
 1. 若要儲存影像，請按一下 **儲存**. 儲存對話方塊隨即顯示。
 
    >[!NOTE]
@@ -197,7 +197,7 @@ TBD: Insert a video of the available social media options.
 
 * 使用提供產品意見回饋 [!UICONTROL 意見反應] Assets檢視使用者介面提供的選項。
 
-* 若要提供文件意見回饋，請使用右側邊欄提供的[!UICONTROL 編輯此頁面]![來編輯頁面](assets/do-not-localize/edit-page.png)或[!UICONTROL 記錄問題]![來建立 GitHub 問題](assets/do-not-localize/github-issue.png)
+* 若要提供文件意見回饋，請使用右側邊欄提供的[!UICONTROL 編輯此頁面]![來編輯頁面](assets/do-not-localize/edit-page.png)或[!UICONTROL 記錄問題]![來建立 GitHub 問題](assets/do-not-localize/github-issue.png)。
 
 * 聯絡[客戶服務](https://experienceleague.adobe.com/?support-solution=General#support)
 
