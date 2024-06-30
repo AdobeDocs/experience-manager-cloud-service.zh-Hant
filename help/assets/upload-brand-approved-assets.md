@@ -2,9 +2,9 @@
 title: 將您的品牌核准資產上傳至 [!DNL Content Hub]
 description: 瞭解如何將您的品牌核准資產上傳至Content Hub
 role: User
-source-git-commit: 5a968440c8841abe7af2c81c4af12258b7e4547f
+source-git-commit: c85b4e1c828ed1fb7f4063f965fe116215ca0244
 workflow-type: tm+mt
-source-wordcount: '705'
+source-wordcount: '712'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # 將品牌核准的資產上傳至Content Hub {#upload-brand-approved-assets-content-hub}
 
-管理員可以從本機檔案系統新增資產到Content Hub，或是從OneDrive或Dropbox資料來源匯入資產。 無論本機檔案系統或OneDrive和Dropbox資料來源提供的檔案夾結構為何，所有資產都會顯示在Content Hub的頂層，以增強搜尋功能。
+[有權新增資產的Content Hub使用者](/help/assets/deploy-content-hub.md#onboard-content-hub-users-add-assets) 您可以從本機檔案系統新增資產至Content Hub，或從OneDrive或Dropbox資料來源匯入資產。 無論本機檔案系統或OneDrive和Dropbox資料來源提供的檔案夾結構為何，所有資產都會顯示在Content Hub的頂層，以增強搜尋功能。
 
 若要進一步增強資產搜尋，Content Hub可讓您：
 

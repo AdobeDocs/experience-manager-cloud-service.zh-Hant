@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 最新發行說明�
 description: 最新版本注意事項 [!DNL Adobe Experience Manager] as a Cloud Service。
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 1e5a32625377cb564c859a6fdaf1ecef6ebebe9e
+source-git-commit: 9d0ef963dfe2d81da09a7195540de87245e71a67
 workflow-type: tm+mt
-source-wordcount: '1865'
-ht-degree: 44%
+source-wordcount: '1932'
+ht-degree: 43%
 
 ---
 
@@ -86,6 +86,14 @@ Dynamic Media搭配OpenAPI功能，可跨Adobe和協力廠商應用程式擴充D
 **Assets Insights儀表板中提供更多選項**
 
 Assets Insights儀表板現在會提供依資產型別和大小排列的資產計數。 這些選項可在您的Assets檢視環境中提供即時資料。 它們會依大小範圍和資產型別詳細列出資產的計數和百分比。
+
+**內嵌Adobe Express編輯器的更新**
+
+* 相較於另存為新版本，已改善另存為新資產的使用者體驗。
+
+* 以多頁PDF和影像格式匯出多頁Express檔案（先前僅支援單頁）。 選取影像格式會將每個頁面儲存為DAM中的不同資產，以供下游發佈。
+
+* 支援在儲存資產時於「儲存」對話方塊中新增中繼資料。
 
 <!--
 
