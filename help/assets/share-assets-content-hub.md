@@ -2,9 +2,9 @@
 title: 在中共用Assets [!DNL the Content Hub]
 description: 在中共用Assets [!DNL the Content Hub]
 role: User
-source-git-commit: e20556531a82e42354b642955488bf14b83dab5e
+source-git-commit: 5a968440c8841abe7af2c81c4af12258b7e4547f
 workflow-type: tm+mt
-source-wordcount: '443'
+source-wordcount: '454'
 ht-degree: 1%
 
 ---
@@ -15,6 +15,10 @@ ht-degree: 1%
 ![共用資產橫幅影像](assets/share-assets-banner.png)
 
 透過連結共用資產是讓資源可供使用的便利方式 [!DNL the Content Hub] 使用者。 功能可讓獲授權的使用者存取及下載與其共用的資產。 從共用連結下載資產時， [!DNL the Content Hub] 使用非同步服務，提供更快速且無中斷的下載。
+
+## 先決條件 {#prerequisites}
+
+[Content Hub使用者](deploy-content-hub.md#onboard-content-hub-users) 可以執行本文所述的動作。
 
 ## 共用單一資產 {#share-a-single-asset}
 

@@ -2,9 +2,9 @@
 title: 部署 [!DNL Content Hub]
 description: 瞭解如何部署和啟用Content Hub，並為具有不同許可權型別的使用者(上傳資產、Adobe Express使用者)提供存取權，以及如何為使用者提供管理員許可權。
 role: Admin
-source-git-commit: 56af07a198e1350282f5d3f771c1c29db318b90e
+source-git-commit: 5a968440c8841abe7af2c81c4af12258b7e4547f
 workflow-type: tm+mt
-source-wordcount: '1032'
+source-wordcount: '1229'
 ht-degree: 0%
 
 ---
@@ -22,13 +22,15 @@ Content Hub是Experience Manager Assets as a Cloud Service的一部分，可讓�
 
 Content Hub上的許可權變化包括：
 
-* [資產消費者](#onboard-content-hub-consumer-users)：在Content Hub入口網站上存取品牌核准的資產。
+* [Content Hub使用者](#onboard-content-hub-users)：在Content Hub入口網站上存取品牌核准的資產。
 
-* [管理員](#onboard-content-hub-administrator)：存取 [設定使用者介面](/help/assets/configure-content-hub-ui-options.md) 除了具有提交許可權的資產消費者之外，還可在Content Hub上使用。
+* [Content Hub管理員](#onboard-content-hub-administrator)：存取 [設定使用者介面](/help/assets/configure-content-hub-ui-options.md) 在Content Hub上，除了存取品牌核准資產、上傳資產至Content Hub、Adobe Express整合以編輯影像(如果您有Adobe Express許可權)。
 
-* [具有提交許可權的資產消費者](#onboard-content-hub-consumer-users-submission-rights)：功能 [將資產上傳至Content Hub](/help/assets/upload-brand-approved-assets.md) 和 [Adobe Express整合](/help/assets/edit-images-content-hub.md) 除了存取Content Hub入口網站上的品牌核准資產之外。
+* [有權新增資產的Content Hub使用者](#onboard-content-hub-users-add-assets)：功能 [將資產上傳至Content Hub](/help/assets/upload-brand-approved-assets.md) 除了存取Content Hub入口網站上的品牌核准資產之外。
 
-* [資產經銷商](#content-hub-asset-distributors)：可在Experience Manager Assets上核准資產as a Cloud Service，以便這些資產可在Content Hub上使用。
+* [有權將資產重新混合為新變數的Content Hub使用者](#onboard-content-hub-users-remix-assets)： [Adobe Express整合](/help/assets/edit-images-content-hub.md) (如果您有Adobe Express許可權)以及存取Content Hub入口網站上的品牌核准資產。
+
+* [Experience Manager Assets使用者](#experience-manager-assets-users)：可在Experience Manager Assets上核准資產as a Cloud Service，以便這些資產可在Content Hub上使用。
 
 ## 步驟1：使用Cloud Manager啟用適用於Experience Manager Assets的Content Hub {#enable-content-hub}
 
@@ -65,7 +67,7 @@ Content Hub現在已啟用Experience Manager Assetsas a Cloud Service。
 
 ## 步驟2：加入Content Hub管理員 {#onboard-content-hub-administrator}
 
-Content Hub管理員可將資產新增至Content Hub，也可設定 [設定選項](/help/assets/configure-content-hub-ui-options.md) 組織內部的其他使用者。
+Content Hub管理員可以存取 [設定使用者介面](/help/assets/configure-content-hub-ui-options.md) 在Content Hub上，除了存取品牌核准資產、上傳資產至Content Hub、Adobe Express整合以編輯影像(如果您有Adobe Express許可權)。
 
 若要加入Content Hub管理員：
 
@@ -86,11 +88,11 @@ Content Hub管理員可將資產新增至Content Hub，也可設定 [設定選�
 
 1. 按一下 **[!UICONTROL 儲存]** 以儲存變更。
 
-## 步驟3：上線Content Hub資產消費者使用者 {#onboard-content-hub-consumer-users}
+## 步驟3：入門Content Hub使用者 {#onboard-content-hub-users}
 
-Content Hub消費者使用者可以存取入口網站上的可用資產，但無法新增任何資產或修改現有資產。
+Content Hub使用者可以存取入口網站上的可用資產，但無法新增任何資產或修改現有資產。
 
-若要將消費者使用者帶入Content Hub：
+若要加入Content Hub使用者：
 
 1. [存取並按一下Content Hub使用者產品設定檔](#content-hub-instance-product-profile).
 
@@ -117,17 +119,13 @@ Content Hub消費者使用者可以存取入口網站上的可用資產，但無
 ![停用電子郵件通知](assets/disable-email-notifications.png)
 
 
-## 步驟4：擁有提交許可權的Content Hub資產消費者使用者上線（選用） {#onboard-content-hub-consumer-users-submission-rights}
+## 步驟4：新增Content Hub使用者並取得資產許可權（選用） {#onboard-content-hub-users-add-assets}
 
-具有提交許可權的Content Hub資產消費者使用者可以：
+有權新增資產的Content Hub使用者可以 [將品牌核准的新資產上傳到Content Hub](/help/assets/upload-brand-approved-assets.md).
 
-* [將品牌核准的新資產上傳到Content Hub](/help/assets/upload-brand-approved-assets.md).
+若要讓具有新增使用者許可權的Content Hub使用者上線：
 
-* [使用Adobe Express修改現有資產並將資產儲存到存放庫](/help/assets/edit-images-content-hub.md). 只有使用者擁有Adobe Express權益，才能使用Adobe Express編輯資產。
-
-若要讓具有提交許可權的Content Hub消費者使用者上線：
-
-1. [將使用者新增到Content Hub產品設定檔後](#onboard-content-hub-consumer-users)，請按一下Admin Console上產品清單中的Experience Manager Assets產品名稱來存取AEM as a Cloud Service產品設定檔。
+1. [將使用者新增到Content Hub產品設定檔後](#onboard-content-hub-users)，請按一下Admin Console上產品清單中的Experience Manager Assets產品名稱來存取AEM as a Cloud Service產品設定檔。
 
 1. 按一下AEM as a Cloud Service的生產製作例項：
    ![AEM as a Cloud Service的產品設定檔](assets/aem-cloud-service-instances.png)
@@ -138,11 +136,28 @@ Content Hub消費者使用者可以存取入口網站上的可用資產，但無
 
 1. 按一下 **[!UICONTROL 儲存]** 以儲存變更。
 
-## Content Hub資產經銷商 {#content-hub-asset-distributors}
+## 步驟4：加入Content Hub使用者，並有權將資產重新混合成新的變數（選用） {#onboard-content-hub-users-remix-assets}
 
-資產經銷商可在AEM as a Cloud Service上核准資產，以便在Content Hub上使用。
+有權將資產重新混合到新變數的Content Hub使用者可以 [使用Adobe Express修改現有資產並將資產儲存至存放庫](/help/assets/edit-images-content-hub.md). 只有使用者擁有Adobe Express權益，才能使用Adobe Express編輯資產。
 
-若要設定資產散發者角色：
+若要讓有權將資產重新混合為新變數的Content Hub使用者上線：
+
+1. [將使用者新增到Content Hub產品設定檔後](#onboard-content-hub-users)，請按一下Admin Console上產品清單中的Experience Manager Assets產品名稱來存取AEM as a Cloud Service產品設定檔。
+
+1. 按一下AEM as a Cloud Service的生產製作例項：
+   ![AEM as a Cloud Service的產品設定檔](assets/aem-cloud-service-instances.png)
+
+   Admin Console會顯示AEM as a Cloud Service的兩個產品設定檔：管理員和使用者。
+1. 按一下「使用者」產品設定檔，然後按一下 **[!UICONTROL 新增使用者]** 將使用者新增至產品設定檔。
+   ![使用者產品設定檔](assets/aem-cs-user-product-profile.png)
+
+1. 按一下 **[!UICONTROL 儲存]** 以儲存變更。
+
+## Experience Manager Assets使用者 {#experience-manager-assets-users}
+
+Experience Manager Assets使用者可以在AEM as a Cloud Service上核准資產，以便在Content Hub上使用。
+
+若要設定Experience Manager Assets使用者：
 
 1. 按一下Admin Console上產品清單中的Experience Manager Assets產品名稱，存取AEM as a Cloud Service產品設定檔。
 
@@ -157,7 +172,7 @@ Content Hub消費者使用者可以存取入口網站上的可用資產，但無
 
    >[!NOTE]
    >
-   > 您不需要新增至 [Content Hub產品設定檔](#onboard-content-hub-consumer-users) 資產發佈角色的資訊。
+   > 您不需要新增至 [Content Hub產品設定檔](#onboard-content-hub-users) 適用於Experience Manager Assets使用者。
 
 
 

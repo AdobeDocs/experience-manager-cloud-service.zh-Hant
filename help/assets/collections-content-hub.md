@@ -2,9 +2,9 @@
 title: 在Content Hub中管理集合
 description: 瞭解如何在Content Hub中管理集合
 role: User
-source-git-commit: 92c4cd64503653c5d9248c2c3f6952100b03ff86
+source-git-commit: 5a968440c8841abe7af2c81c4af12258b7e4547f
 workflow-type: tm+mt
-source-wordcount: '606'
+source-wordcount: '617'
 ht-degree: 3%
 
 ---
@@ -26,6 +26,10 @@ ht-degree: 3%
 * **刪除**：刪除整個集合。
 
 它可協助使用者輕鬆存取及管理內提供的各種資產 [!DNL Content Hub].
+
+## 先決條件 {#prerequisites}
+
+[Content Hub使用者](deploy-content-hub.md#onboard-content-hub-users) 可以執行本文所述的動作。
 
 ## 建立集合{#create-collections}
 

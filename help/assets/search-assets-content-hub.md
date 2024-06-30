@@ -2,9 +2,9 @@
 title: 在Content Hub中搜尋資產
 description: 瞭解如何在中搜尋資產 [!DNL Content Hub]
 role: User
-source-git-commit: 15a266ccb6e4117c769d775a5f579fba943389bf
+source-git-commit: 5a968440c8841abe7af2c81c4af12258b7e4547f
 workflow-type: tm+mt
-source-wordcount: '623'
+source-wordcount: '634'
 ht-degree: 0%
 
 ---
@@ -15,6 +15,10 @@ ht-degree: 0%
 ![共用資產橫幅影像](assets/search.png)
 
 當存放庫中有大量資產時，搜尋合適的資產相當耗時。 [!DNL The Content Hub] 「搜尋」可讓您尋找已核准的資產，這樣您就可以對資產執行其他動作，例如下載、共用或建立集合。 您可以利用各種功能來縮小搜尋結果的範圍，例如，執行文字式搜尋、使用篩選條件、執行標籤或智慧標籤特定搜尋、搜尋特定檔案格式等。
+
+## 先決條件 {#prerequisites}
+
+[Content Hub使用者](deploy-content-hub.md#onboard-content-hub-users) 可以執行本文所述的動作。
 
 ## 您可以搜尋的內容  {#what-you-can-search}
 

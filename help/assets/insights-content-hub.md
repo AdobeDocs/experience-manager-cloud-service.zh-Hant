@@ -2,9 +2,9 @@
 title: 在Content Hub中檢視資產分析
 description: 瞭解如何在中檢視資產分析 [!DNL Content Hub]
 role: User
-source-git-commit: 788ed1189b21392bd399f7bdee888a3b5e1da117
+source-git-commit: 5a968440c8841abe7af2c81c4af12258b7e4547f
 workflow-type: tm+mt
-source-wordcount: '267'
+source-wordcount: '278'
 ht-degree: 0%
 
 ---
@@ -14,6 +14,10 @@ ht-degree: 0%
 ![Assets深入分析](assets/asset-insights-banner.jpg)
 
 [!DNL Content Hub] 提供資產的寶貴見解，解決行銷利害關係人經常遇到的共同挑戰 — 用於行銷活動、管道和不同區域的資產使用統計資料。 透過清楚瞭解資產的效能和受歡迎程度，其提供可操作的深入分析，是提升使用者體驗的必要條件。
+
+## 先決條件 {#prerequisites}
+
+[Content Hub使用者](deploy-content-hub.md#onboard-content-hub-users) 可以執行本文所述的動作。
 
 ## 檢視已上傳資產的統計資料{#view-statistics-for-uploaded-assets}
 

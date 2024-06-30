@@ -2,7 +2,7 @@
 title: 將您的品牌核准資產上傳至 [!DNL Content Hub]
 description: 瞭解如何將您的品牌核准資產上傳至Content Hub
 role: User
-source-git-commit: 92c4cd64503653c5d9248c2c3f6952100b03ff86
+source-git-commit: 5a968440c8841abe7af2c81c4af12258b7e4547f
 workflow-type: tm+mt
 source-wordcount: '705'
 ht-degree: 0%
@@ -28,7 +28,7 @@ ht-degree: 0%
 
 ## 先決條件 {#prerequisites-add-assets}
 
-[具有提交許可權的Content Hub資產消費者使用者](/help/assets/deploy-content-hub.md#onboard-content-hub-consumer-users-submission-rights) 可以將資產上傳至Content Hub。
+[有權新增資產的Content Hub使用者](/help/assets/deploy-content-hub.md#onboard-content-hub-users-add-assets) 可以將資產上傳至Content Hub。
 
 ## 從本機檔案系統新增資產至Content Hub {#add-assets-local-file-system}
 

@@ -2,9 +2,9 @@
 title: 中的資產屬性 [!DNL the Content Hub]
 description: 瞭解如何在中檢視及管理資產屬性 [!DNL Content Hub]
 role: User
-source-git-commit: e590c34c177e6b45b6a52370caa88da54b61ebc0
+source-git-commit: 5a968440c8841abe7af2c81c4af12258b7e4547f
 workflow-type: tm+mt
-source-wordcount: '588'
+source-wordcount: '599'
 ht-degree: 8%
 
 ---
@@ -21,6 +21,10 @@ ht-degree: 8%
 * 更易於存取 - 系統和使用者可以更輕鬆找到資產。
 * 更易於管理 — 您可以輕鬆找到具有同一組屬性的資產，並將變更套用至這些資產。
 * 完整 — 資產攜帶更多資訊和內容。
+
+## 先決條件 {#prerequisites}
+
+[Content Hub使用者](deploy-content-hub.md#onboard-content-hub-users) 可以執行本文所述的動作。
 
 ## 檢視資產屬性 {#properties-ui}
 

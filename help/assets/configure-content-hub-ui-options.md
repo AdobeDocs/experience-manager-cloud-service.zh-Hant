@@ -1,9 +1,9 @@
 ---
 title: 設定Content Hub使用者介面
 description: 設定Content Hub使用者介面
-source-git-commit: 85ccd23df4ac320d6da37c54b72f0f93916e65a1
+source-git-commit: 5a968440c8841abe7af2c81c4af12258b7e4547f
 workflow-type: tm+mt
-source-wordcount: '1104'
+source-wordcount: '1096'
 ht-degree: 4%
 
 ---
@@ -29,7 +29,7 @@ Experience Manager Assets可讓管理員設定Content Hub使用者介面上的�
 
 ## 先決條件 {#prerequisites-configuration-ui}
 
-[Content Hub管理員](/help/assets/deploy-content-hub.md#step-3-onboard-content-hub-administrator) 您可以將資產新增至Content Hub，也可以為組織內的其他使用者設定「設定」選項。
+[Content Hub管理員](/help/assets/deploy-content-hub.md#step-3-onboard-content-hub-administrator) 可為您組織內的其他使用者設定組態選項。
 
 ## 存取Content Hub上的設定選項 {#access-configuration-options-content-hub}
 
