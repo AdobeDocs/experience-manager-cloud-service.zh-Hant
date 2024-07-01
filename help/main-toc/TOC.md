@@ -9,7 +9,7 @@ user-guide-title: AEM as a Cloud Service
 source-git-commit: 379e5230d27be135b5862cdbfa35abc612f5ca57
 workflow-type: tm+mt
 source-wordcount: '5143'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -626,7 +626,7 @@ ht-degree: 97%
    + 概觀 {#forms-overview}
       + [簡介](/help/forms/home.md)
       + [重要 Adobe Experience Manager Forms 創新](/help/forms/latest-innovations.md)
-      + [搶先使用(EA)功能](/help/forms/early-access-ea-features.md)
+      + [搶先體驗 (EA) 功能](/help/forms/early-access-ea-features.md)
       + [重大變更](/help/forms/notable-changes.md)
       + [架構](/help/forms/aem-forms-cloud-service-architecture.md)
       + [常見問題](/help/forms/faq.md)
