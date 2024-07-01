@@ -130,11 +130,11 @@ When looking at the asset details, any image with content credentials added, suc
 
 * 使用「[**儲存為草稿**](/help/forms/save-core-component-based-form-as-draft.md)」功能儲存部分完成的表單，以便日後提交。當使用者需要中斷填寫表單並稍後返回表單時，此功能非常有用。
 
-### AEM Forms 的早期存取功能 {#forms-new-early-access-features}
+### AEM Forms 的優先體驗功能 {#forms-new-early-access-features}
 
 AEM Forms搶先體驗計畫提供絕佳機會，讓您可以搶在其他人之前獨佔使用最尖端的創新技術，並協助打造他們的開發成果。 您可以透過該計劃存取多項創新。
 
-本發行說明列出目前版本中提供的創新內容。 如需早期存取計劃提供之創新的完整清單，請參閱 [AEM Forms 早期存取計劃文件](/help/forms/early-access-ea-features.md)。
+本發行說明列出目前版本中提供的創新內容。 如需優先體驗計劃提供之創新的完整清單，請參閱 [AEM Forms 優先體驗計劃文件](/help/forms/early-access-ea-features.md)。
 
 #### 強化機器人保護方法
 
