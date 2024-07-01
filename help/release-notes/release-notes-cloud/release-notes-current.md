@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 最新發行說明�
 description: 最新版本注意事項 [!DNL Adobe Experience Manager] as a Cloud Service。
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 9d0ef963dfe2d81da09a7195540de87245e71a67
+source-git-commit: 379e5230d27be135b5862cdbfa35abc612f5ca57
 workflow-type: tm+mt
-source-wordcount: '1932'
-ht-degree: 43%
+source-wordcount: '1958'
+ht-degree: 42%
 
 ---
 
@@ -241,6 +241,14 @@ Adobe 管理的內容傳遞網路現在支援 [Edge Side Includes (ESI)](/help/i
 ## 移轉工具 {#migration-tools}
 
 您可以在[這裡](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)找到移轉工具版本的完整清單。
+
+## Universal Editor {#universal-editor}
+
+您可以找到通用編輯器版本的完整清單 [此處](/help/release-notes/universal-editor/current.md).
+
+## 產生變化版本 {#generate-variations}
+
+您可以找到「產生變數」核發的完整清單 [此處](/help/generative-ai/release-notes-generate-variations.md).
 
 ## Experience Cloud 發行說明 {#experience-cloud}
 
