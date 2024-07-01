@@ -5,9 +5,9 @@ exl-id: 29cf9548-e413-4e4f-b233-d6bb04918b22
 feature: Release Information
 role: Admin
 source-git-commit: f28f212574dda0ece2cedb56a714d381e5bd7d3c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1322'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -128,7 +128,7 @@ Experience Manager Assets 現在使您能夠透過搜尋結果使用者介面執
 
 * [表單資料模型的增強型驗證方法](/help/forms/configure-data-sources.md)：導入以用戶端憑證為基礎的驗證機制將 AEM Forms 與相容的資料來源相連接，體驗更高的安全性。使用此增強功能就不需要模擬或使用者登入，從而強化對資料的保護。
 
-* [具有可重複區段的最適化表單](/help/forms/create-forms-repeatable-sections.md)：您現在可在以核心元件為主的最適化表單中製作[折疊式](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html)、[精靈](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html)、[面板](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel)和[水平索引標籤](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html)，藉此建立可重複區段。
+* [具有可重複區段的最適化表單](/help/forms/create-forms-repeatable-sections.md)：您現在可在以核心元件為主的最適化表單中製作[折疊式](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html)、[精靈](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html)、[面板](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel)和[水平索引標籤](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html)，藉此建立可重複區段。
 
   >[!VIDEO](https://video.tv.adobe.com/v/3421052/adaptive-forms-repeatable-sections-repeat-sections/?quality=12&learn=on)
 

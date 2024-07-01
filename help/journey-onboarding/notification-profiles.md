@@ -5,9 +5,9 @@ feature: Onboarding
 role: Admin, User, Developer
 exl-id: 4edecfcd-6301-4a46-98c7-eb5665f48995
 source-git-commit: 53a3a4c47becf58f8874083e2878fa3458d6cad7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1130'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
@@ -23,12 +23,12 @@ Adobe 不定時會就 AEM as a Cloud Service 環境相關情況聯絡使用者�
 * **事件通知** - 這些通知是在事件期間或 Adobe 發現您的 AEM as a Cloud Service 環境存在潛在可用性問題時傳送的。
 * **主動通知** - 當 Adobe 支援團隊成員想要提供有關可使您的 AEM as a Cloud Service 環境受益的潛在最佳化或建議的指引時，將傳送這些通知。
 
-使用者也可以根據他們收到的特定計畫的這些通知 [自訂群組許可權。](/help/implementing/cloud-manager/custom-permissions.md)
+使用者也可以根據其[自訂群組權限](/help/implementing/cloud-manager/custom-permissions.md)收到特定方案的這些通知。
 
-此外，也支援將群組指派給主動通知，且可直接將使用者和群組指派給產品設定檔。
+此外，還支援將群組指派給主動通知，並且可以將使用者和群組直接指派給產品設定檔。
 
-* 事件和主動通知群組中的使用者預設會收到所有程式的通知。
-* 但是，如果使用者不想接收所有通知，他們可以使用自訂「讀取」許可權來指定他們希望接收的程式通知。
+* 依預設，事件和主動通知群組的使用者將收到所有方案的通知。
+* 但是，如果使用者不想收到所有通知，他們可以使用自訂讀取權限來指定他們想要收到哪個方案的通知。
 
 為了讓正確的使用者收到這些通知，您需要按照本文件中所述來設定和指派使用者設定檔。
 
@@ -63,8 +63,8 @@ Adobe 不定時會就 AEM as a Cloud Service 環境相關情況聯絡使用者�
 
    * **產品設定檔名稱**：`Incident Notification - Cloud Service`
    * **顯示名稱**：`Incident Notification - Cloud Service`
-   * **說明**：將在事件期間或Adobe發現您的AEMas a Cloud Service環境存在潛在可用性問題時收到通知的使用者Cloud Manager設定檔。
-      * 具有特定程式之自訂讀取許可權的使用者，只有在選擇使用自訂許可權時，才會收到這些程式的通知。
+   * **說明**：將在事件期間或 Adobe 發現您的 AEM as a Cloud Service 環境存在潛在可用性問題時收到通知的使用者 Cloud Manager 設定檔。
+      * 如果使用者具有特定方案的自訂讀取權限，他們選擇使用自訂權限時，將僅收到這些方案的通知。
 
 1. 按一下「**儲存**」。
 
@@ -73,7 +73,7 @@ Adobe 不定時會就 AEM as a Cloud Service 環境相關情況聯絡使用者�
    * **產品設定檔名稱**：`Proactive Notification - Cloud Service`
    * **顯示名稱**：`Proactive Notification - Cloud Service`
    * **說明**：當 Adobe 支援團隊成員想要針對 AEM as a Cloud Service 環境設定的潛在最佳化提供指引或建議動作時，將接收通知的使用者 Cloud Manager 設定檔
-      * 具有特定程式之自訂讀取許可權的使用者，只有在選擇使用自訂許可權時，才會收到這些程式的通知。
+      * 如果使用者具有特定方案的自訂讀取權限，其選擇使用自訂權限時，將僅收到這些方案的通知。
 
 1. 按一下「**儲存**」。
 
@@ -93,9 +93,9 @@ Adobe 不定時會就 AEM as a Cloud Service 環境相關情況聯絡使用者�
 
 按照以下步驟新增尚未設定 Federated ID 的使用者。
 
-1. 確定應接收事件或主動通知的使用者或群組。
+1. 確定應收到事件或主動通知的使用者或群組。
 
-1. 如果您尚未登入，請登入 Admin Console，位於 [`https://adminconsole.adobe.com`](https://adminconsole.adobe.com)。
+1. 如果您尚未登入，請登入 Admin Console：[`https://adminconsole.adobe.com`](https://adminconsole.adobe.com)。
 
 1. 確認您選擇了適當的組織。
 
@@ -118,7 +118,7 @@ Adobe 不定時會就 AEM as a Cloud Service 環境相關情況聯絡使用者�
 
 1. 按一下「**儲存**」即會傳送一封歡迎電子郵件給您新增的使用者。
 
-受邀使用者現在將收到通知。具有特定程式之自訂讀取許可權的使用者，只有在選擇使用自訂許可權時，才會收到這些程式的通知。
+受邀使用者現在將收到通知。如果使用者具有特定方案的自訂讀取權限，其選擇使用自訂權限時，將僅收到這些方案的通知。
 
 對團隊中您希望接收通知的使用者重複這些步驟。
 
@@ -126,7 +126,7 @@ Adobe 不定時會就 AEM as a Cloud Service 環境相關情況聯絡使用者�
 
 按照以下步驟新增已經存在 Federated ID 的使用者。
 
-1. 確定應接收事件或主動通知的使用者或群組。
+1. 確定應收到事件或主動通知的使用者或群組。
 
 1. 如果您尚未登入，請登入 Admin Console，位於 [`https://adminconsole.adobe.com`](https://adminconsole.adobe.com)。
 
@@ -149,7 +149,7 @@ Adobe 不定時會就 AEM as a Cloud Service 環境相關情況聯絡使用者�
 
 1. 按一下「**儲存**」即會傳送一封歡迎電子郵件給您新增的使用者。
 
-受邀使用者現在將收到通知。具有特定程式之自訂讀取許可權的使用者，只有在選擇使用自訂許可權時，才會收到這些程式的通知。
+受邀使用者現在將收到通知。如果使用者具有特定方案的自訂讀取權限，其選擇使用自訂權限時，將僅收到這些方案的通知。
 
 對團隊中您希望接收通知的使用者重複這些步驟。
 
