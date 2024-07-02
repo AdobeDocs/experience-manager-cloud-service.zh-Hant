@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的目前維�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 90b4cf269fc8be36d90f398d1696fc40f89f5142
+source-git-commit: 3a4dd9f1d769a9c9da12fdd8febfef481112d18c
 workflow-type: tm+mt
-source-wordcount: '739'
-ht-degree: 87%
+source-wordcount: '753'
+ht-degree: 79%
 
 ---
 
@@ -71,10 +71,10 @@ ht-degree: 87%
 
 #### 表單
 
-1. 如果使用者下載的 AEM Forms SDK 版本大於 `AEM Forms add-on v2024.05.04.00-240400`，則批次檔案將無法啟動 Docker 服務。若要解決此問題：
-   1. 下載[資料夾](/help/forms/assets/sdk_hotfix.zip)。
-   1. 從下載的資料夾中提取內容，複製 `sdk.sh` 和 `sdk.bat` 檔案。
-   1. 用新檔案取代 AEM Forms SDK 中現有的 `sdk.sh` 和 `sdk.bat` 檔案。
+* 當您安裝AEM SDK並新增 `AEM Forms add-on v2024.05.04.00-240400`，Docker服務無法啟動。 需要Docker服務才能在本機開發環境中生成記錄檔案。 若要修正問題：
+   1. 下載 [hotfix](/help/forms/assets/sdk_hotfix.zip). 下載Hotfix時， `.zip` 資料夾已下載。
+   1. 將下載的Hotfix解壓縮至資料夾。
+   1. 取代舊的 `sdk.sh` 和 `sdk.bat` 在步驟2中擷取的資料夾中有較新檔案的檔案。
 
 ### 變更通知 {#change-notice-16799}
 
