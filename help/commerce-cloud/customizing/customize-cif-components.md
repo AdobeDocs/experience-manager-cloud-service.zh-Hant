@@ -1,18 +1,10 @@
 ---
 title: 自訂CIF核心元件
 description: 瞭解如何自訂AEM CIF核心元件。 本教學課程涵蓋如何安全地擴充CIF核心元件，以符合特定企業的需求。 瞭解如何延伸GraphQL查詢以傳回自訂屬性，並在CIF核心元件中顯示新屬性。
-sub-product: Commerce
-topics: Development
-version: Cloud Service
-doc-type: tutorial
-activity: develop
-audience: developer
 feature: Commerce Integration Framework
-kt: 4279
-thumbnail: customize-aem-cif-core-component.jpg
-exl-id: 4933fc37-5890-47f5-aa09-425c999f0c91
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+exl-id: 4933fc37-5890-47f5-aa09-425c999f0c91
+source-git-commit: ef58cf5b216ef308cc65436f2eed2e500fb2bd96
 workflow-type: tm+mt
 source-wordcount: '2298'
 ht-degree: 0%
@@ -35,7 +27,7 @@ Venia品牌最近開始使用永續性材料來製造某些產品，而企業想
 
 ## 先決條件 {#prerequisites}
 
-本機開發環境是完成本教學課程的必要條件。 此環境包含設定並連線至Adobe Commerce執行個體的AEM執行個體。 檢閱的需求和步驟 [使用AEMas a Cloud ServiceSDK設定本機開發](../develop.md). 若要完全按照本教學課程進行，您需要許可權才能新增 [產品的屬性](https://docs.magento.com/user-guide/catalog/product-attributes-add.html) 在Adobe Commerce中。
+本機開發環境是完成本教學課程的必要條件。 此環境包含設定並連線至Adobe Commerce執行個體的AEM執行個體。 檢閱的需求和步驟 [使用AEM as a Cloud Service SDK設定本機開發](../develop.md). 若要完全按照本教學課程進行，您需要許可權才能新增 [產品的屬性](https://docs.magento.com/user-guide/catalog/product-attributes-add.html) 在Adobe Commerce中。
 
 您還需要GraphQL IDE，例如 [GraphiQL](https://github.com/graphql/graphiql) 或瀏覽器擴充功能來執行程式碼範例和教學課程。 如果您安裝瀏覽器擴充功能，請確定它可設定請求標頭。 在Google Chrome上， _Altair GraphQL使用者端_ 是可執行此工作的擴充功能。
 
