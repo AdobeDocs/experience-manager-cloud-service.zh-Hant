@@ -9,7 +9,7 @@ user-guide-title: AEM as a Cloud Service
 source-git-commit: 4e272fe63ccdc920c58ada780a2087bba1bfcb1f
 workflow-type: tm+mt
 source-wordcount: '5149'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -182,9 +182,9 @@ ht-degree: 97%
    + Workfront for Experience Manager 加強連接器發行說明{#workfront}
       + [Workfront for Experience Manager 加強連接器最新發行說明](/help/assets/release-notes-enhanced-connector-workfront.md)
    + 產生變化版本的發行說明 {#generate-variations}
-      + [產生變數的最新發行說明](/help/generative-ai/release-notes-generate-variations.md)
-   + Universal Editor發行說明 {#univeral-editor}
-      + [Universal Editor最新發行說明](/help/release-notes/universal-editor/current.md)
+      + [產生變化版本的最新發行說明](/help/generative-ai/release-notes-generate-variations.md)
+   + 通用編輯器發行說明 {#univeral-editor}
+      + [通用編輯器的最新發行說明](/help/release-notes/universal-editor/current.md)
    + [新增功能 ](/help/release-notes/what-is-new.md)
    + [AEM Cloud Service 的重大變更](/help/release-notes/aem-cloud-changes.md)
    + [已過時和已移除的功能和 API](/help/release-notes/deprecated-removed-features.md)
@@ -562,14 +562,14 @@ ht-degree: 97%
       + [HTTP2 傳送內容常見問題集](/help/assets/dynamic-media/http2faq.md)
       + [Flash 檢視器產品壽命終止](/help/assets/dynamic-media/flash-viewers-eol.md)
       + [DHTML 檢視器產品壽命終止](/help/assets/dynamic-media/dhtml-viewer-endoflifefaqs.md)
-      + 具有OpenAPI功能的Dynamic Media {#dynamic-media-open-apis}
+      + 具有 OpenAPI 功能的 Dynamic Media {#dynamic-media-open-apis}
          + [概觀](/help/assets/dynamic-media-open-apis-overview.md)
          + [核准資產](/help/assets/approve-assets.md)
          + [與下游應用程式整合](/help/assets/integrate-dynamic-media-open-apis.md)
-         + [搜尋資產API](/help/assets/search-assets-api.md)
-         + [傳送API](/help/assets/deliver-assets-apis.md)
+         + [搜尋資產 API](/help/assets/search-assets-api.md)
+         + [傳遞 API](/help/assets/deliver-assets-apis.md)
          + [限制資產傳遞](/help/assets/restrict-assets-delivery.md)
-         + [整合遠端AEM Assets與AEM Sites](/help/assets/integrate-remote-approved-assets-with-sites.md)
+         + [將遠端 AEM Assets 與 AEM Sites 整合](/help/assets/integrate-remote-approved-assets-with-sites.md)
          + [常見問題](/help/assets/dynamic-media-open-apis-faqs.md)
          + [設定自訂網域](/help/assets/configure-custom-domain.md)
    + 使用資產檢視{#assets-view}
@@ -595,16 +595,16 @@ ht-degree: 97%
 
    + Content Hub {#content-hub}
       + [概觀](/help/assets/product-overview.md)
-      + [部署Content Hub](/help/assets/deploy-content-hub.md)
-      + [設定Content Hub使用者介面](/help/assets/configure-content-hub-ui-options.md)
-      + [將品牌核准的資產上傳或匯入至Content Hub](/help/assets/upload-brand-approved-assets.md)
-      + [在Content Hub中搜尋資產](/help/assets/search-assets-content-hub.md)
+      + [部署 Content Hub](/help/assets/deploy-content-hub.md)
+      + [設定 Content Hub 使用者介面](/help/assets/configure-content-hub-ui-options.md)
+      + [將品牌核准的資產上傳或匯入 Content Hub](/help/assets/upload-brand-approved-assets.md)
+      + [在 Content Hub 中搜尋資產](/help/assets/search-assets-content-hub.md)
       + [資產屬性](/help/assets/asset-properties-content-hub.md)
-      + [在Content Hub中共用資產](/help/assets/share-assets-content-hub.md)
-      + [使用Content Hub下載資產](/help/assets/download-assets-content-hub.md)
-      + [在Content Hub中管理集合](/help/assets/collections-content-hub.md)
-      + [在Content Hub中使用Adobe Express編輯影像](/help/assets/edit-images-content-hub.md)
-      + [Content Hub中的Asset Insights](/help/assets/insights-content-hub.md)
+      + [在 Content Hub 中分享資產](/help/assets/share-assets-content-hub.md)
+      + [使用 Content Hub 下載資產](/help/assets/download-assets-content-hub.md)
+      + [在 Content Hub 中管理收藏集](/help/assets/collections-content-hub.md)
+      + [在 Content Hub 中使用 Adob&#x200B;&#x200B;e Express 編輯影像](/help/assets/edit-images-content-hub.md)
+      + [Content Hub 中的 Asset Insights](/help/assets/insights-content-hub.md)
    + 最佳做法{#best-practices}
       + [搜尋最佳做法](/help/assets/search-best-practices.md)
       + [中繼資料管理和最佳做法](/help/assets/metadata-best-practices.md)
