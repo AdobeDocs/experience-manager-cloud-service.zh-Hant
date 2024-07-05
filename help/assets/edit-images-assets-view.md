@@ -7,13 +7,13 @@ feature: Best Practices, Interactive Images, Smart Crop, Smart Imaging
 source-git-commit: 23b43f22b62451c9d0a5460999fcd43479438d7e
 workflow-type: tm+mt
 source-wordcount: '1089'
-ht-degree: 33%
+ht-degree: 79%
 
 ---
 
 # 在 [!DNL Assets view] 中編輯影像 {#edit-images-in-assets-view}
 
-Assets檢視可啟用基本的影像編輯，包括調整大小、移除背景、裁切以及JPEG和PNG格式之間的轉換。 此外，透過與Adobe Express整合，還可進行進階編輯。 編輯影像後，即可將新影像另存新版。版本設定功能可協助您稍後在需要時還原成原始資產。 要編輯影像，[開啟其預覽](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/navigate-view#preview-assets)，然後按一下「**編輯影像**」。
+Assets檢視可啟用基本的影像編輯，包括調整大小、移除背景、裁切以及JPEG和PNG格式之間的轉換。 此外，它可透過與 Adobe Express 的整合，進行進階編輯。編輯影像後，即可將新影像另存新版。版本設定功能有助於您稍後在必要時還原成原始資產。要編輯影像，[開啟其預覽](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-assets-essentials/help/navigate-view#preview-assets)，然後按一下「**編輯影像**」。
 
 >[!NOTE]
 >
@@ -33,14 +33,14 @@ Assets檢視可啟用基本的影像編輯，包括調整大小、移除背景�
 
 ### 在Assets檢視上使用Adobe Express編輯影像 {#edit-image-on-assets-view-using-adobe-express}
 
-登入Assets檢視後，按一下 **Assets**，選取影像，然後按一下 **編輯** 從頂端邊欄。 新畫面會顯示可用的編輯選項，包括調整大小、移除背景、裁切以及JPEG和PNG格式之間的轉換。
+登入Assets檢視後，按一下 **Assets**，選取影像，然後按一下 **編輯** 從頂端邊欄。 新畫面顯示可用的編輯選項，包括調整大小、背景移除、裁切，以及 JPEG 和 PNG 格式之間的轉換。
 
 #### 調整影像大小 {#resize-image-using-express}
 
 熱門的使用案例是將影像調整成特定大小。Assets View可針對特定像片大小提供預先計算好的新解析度，讓您快速調整影像大小以符合常見的像片大小。 若要使用Assets檢視調整影像大小，請遵循下列步驟：
 
-1. 按一下 **調整影像大小** 從左窗格。
-1. 從「調整大小」下拉式清單中選取適當的社群媒體平台，然後從顯示的選項中選取影像大小。
+1. 按一下左窗格中的&#x200B;**調整影像大小**。
+1. 從「調整大小」下拉清單選取適當的社交媒體平台，然後從顯示的選項中選擇影像大小。
 1. 如果需要，使用「**影像比例**」欄位來縮放影像。
 1. 按一下「**[!UICONTROL 套用]**」以套用您的變更。
    ![使用 Adobe Express 進行影像編輯](assets/adobe-express-resize-image.png)
@@ -50,9 +50,9 @@ Assets檢視可啟用基本的影像編輯，包括調整大小、移除背景�
 
 #### 移除背景 {#remove-background-using-express}
 
-您可以依照下列步驟移除影像的背景：
+您可以依照下方所述步驟移除影像中的背景：
 
-1. 按一下 **移除背景** 從左窗格。 Experience Manager Assets 會顯示沒有背景的影像。
+1. 按一下左窗格中的&#x200B;**移除背景**。Experience Manager Assets 會顯示沒有背景的影像。
 1. 按一下「**[!UICONTROL 套用]**」以套用您的變更。
    ![使用 Adobe Express 儲存影像](assets/adobe-express-remove-background.png)
 
@@ -60,19 +60,19 @@ Assets檢視可啟用基本的影像編輯，包括調整大小、移除背景�
 
 #### 裁切影像 {#crop-image-using-express}
 
-將影像轉換為完美大小非常簡單，只需使用內嵌 [!DNL Adobe Express] 快速動作。
+使用嵌入式 [!DNL Adobe Express] 快速動作可簡單地將影像轉換為完美大小。
 
-1. 按一下 **[!UICONTROL 裁切影像]** 從左窗格。
+1. 按一下左窗格中的&#x200B;**[!UICONTROL 裁切影像]**。
 2. 拖曳影像角落上的控點，建立所要的裁切大小。
 3. 按一下「**[!UICONTROL 套用]**」。
    ![使用 Adobe Express 儲存影像](assets/adobe-express-crop-image.png)
 裁切後的影像可供下載。您可以將編輯後的資產另存為同一資產的新版本，也可以將其另存為新資產。
 
-#### 在影像檔案型別之間轉換 {#convert-image-types-using-express}
+#### 在影像檔案類型之間轉換 {#convert-image-types-using-express}
 
-您可以使用Adobe Express快速在JPEG和PNG影像格式之間轉換。 執行以下步驟：
+您可以使用 Adobe Express 在 JPEG 和 PNG 影像格式之間快速轉換。執行以下步驟：
 
-1. 按一下 **JPEG至PNG** 或 **PNG至JPEG** 從左窗格。
+1. 按一下左窗格中的&#x200B;**將 JPEG 轉換為 PNG** 或&#x200B;**將 PNG 轉換為 JPEG**。
    <!--![Convert to PNG with Adobe Express](/help/using/assets/adobe-express-convert-image.png)-->
 1. 按一下「**[!UICONTROL 下載]**」。
 
@@ -82,43 +82,43 @@ Assets檢視可啟用基本的影像編輯，包括調整大小、移除背景�
 
 * 支援的檔案大小上限：17 MB。
 
-### 在Adobe Express內嵌編輯器中編輯影像 {#edit-images-in-adobe-express-embedded-editor}
+### 在 Adobe Express 嵌入式編輯器中編輯影像 {#edit-images-in-adobe-express-embedded-editor}
 
-擁有Express許可權的使用者可以使用Assets檢視中的內嵌式Express編輯器，從Adobe Firefly輕鬆編輯內容並使用GenAI建立新內容。 這麼做可改善內容重複使用率，並加快內容速度。 您也可以使用預先定義的元素，讓您的資產看起來令人驚豔，或執行快速動作，只要按幾下即可編輯您的影像。
+擁有Express許可權的使用者可以使用Assets檢視中的內嵌式Express編輯器，從Adobe Firefly輕鬆編輯內容並使用GenAI建立新內容。 這讓使用者更能重複使用內容，並加快建立內容的速度。您還可以使用預先定義的元素賦予資源令人驚嘆的效果，或者只需點擊幾下即可執行快速動作來編輯影像。
 ![在Essentials UI中快取](/help/assets/assets/express-in-essentials-ui.jpg)
 若要使用編輯影像 [!DNL Adobe Express] 內嵌編輯器，請遵循下列步驟：
 
 1. 使用連結登陸AEM Assets檢視 —  [AEM Assets檢視](https://experience.adobe.com/#/assets) 並選取正確的存放庫。
-1. 按一下 **Assets**，輸入資料夾，然後選取影像。
-1. 按一下 **以Adobe Express開啟**. 影像會在快速畫布上開啟。
-1. 對影像進行必要的編輯。
-1. 如果您的專案需要您新增更多頁面，請按一下 **新增**，選取資產，輸入資料夾，選取要帶入畫布頁面的影像，然後對影像執行所需的編輯。
-1. 若要儲存影像，請按一下 **儲存**. 儲存對話方塊隨即顯示。
+1. 按一下&#x200B;**資產**，進入資料夾，然後選取影像。
+1. 按一下「**在 Adobe Express 中開啟**」。影像在 Express 畫布上開啟。
+1. 對影像進行所需的編輯。
+1. 如果您的專案需要新增更多頁面，按一下&#x200B;**新增**，選取「資產」，進入資料夾，選取要放入畫布頁面的影像，然後對影像進行所需的編輯。
+1. 若要儲存影像，按一下「**儲存**」。儲存對話框隨即顯示。
 
    >[!NOTE]
    >
-   > **1. 針對單頁**
+   > **1. 對於單頁**
    >
-   > **另存為版本：** 此功能僅支援儲存單一資產。 選取此選項可將影像匯出為新版本（保留原始格式），並將它儲存在相同的資料夾中。
-   > **另存為新資產：** 選取此選項可將資產以與原始資產不同的格式匯出，並將其另存至任何資料夾中作為新資產。
+   > **另存新版本：**此功能僅支援儲存單一資產。選取此選項可將影像匯出為新版本 (保留原始格式)，並將其儲存在同一資料夾中。
+   > **另存為新資產：**&#x200B;選取此選項能以非原始格式將資產匯出，並將其做為新資產儲存在任何資料夾中。
    >  
-   > **2. 針對多頁**
+   > **2. 對於多頁**
    >
-   > **另存為版本：** 此功能僅支援儲存單一資產。 如果您想要從多個頁面儲存單一頁面，請選取此選項，以資產的原始格式和位置儲存資產。\
-   > **另存為新資產：** 透過此選項，您可以將多個資產或單一資產匯出至任何檔案夾，並將它們儲存為新資產，其檔案格式為原始檔案或不同檔案。
+   > **另存新版本：**&#x200B;此功能僅支援儲存單一資產。如果您想要儲存多個頁面中的單一頁面，請選取此選項以其原始格式和位置儲存資產。\
+   > **另存為新資產：**&#x200B;使用此選項，您可以將多個資產或單一資產匯出到任何資料夾，並使用原始檔案格式或不同的檔案格式，將其另存為新資產。
 
-1. 在「儲存」對話方塊中：
-   1. 在中輸入檔案的名稱 **另存為** 欄位。
+1. 在「儲存」對話框中：
+   1. 在&#x200B;**另存新檔**&#x200B;欄位中輸入檔案名稱。
    1. 選取目的地資料夾。
-   1. 可選：提供專案或行銷活動名稱、關鍵字、管道、時間範圍和區域等詳細資訊。
-1. 按一下 **另存為版本** 或 **另存為新資產** 以儲存資產。
+   1. 選擇性：提供專案或行銷活動名稱、關鍵字、管道、時間範圍和區域等詳細資訊。
+1. 按一下&#x200B;**另存新版本**&#x200B;或&#x200B;**另存為新資產**&#x200B;以儲存資產。
 
-#### 在快速編輯器中編輯影像的限制 {#limitations-of-editing-images-in-the-express-editor}
+#### 在 Express 編輯器中編輯影像的限制 {#limitations-of-editing-images-in-the-express-editor}
 
-* 支援的檔案型別：JPEG或PNG。
+* 支援的檔案類型：JPEG 或 PNG。
 * 支援的檔案大小上限：40 MB。
-* 支援的寬度和高度範圍：介於50到8000畫素之間。
-* 重新載入頁面，以檢視來源資料夾中最新儲存的新資產。
+* 支援的寬度和高度範圍：50 到 8000 像素之間。
+* 重新載入頁面即可查看來源資料夾中最新儲存的新資產。
 
 ### 使用 Adobe Express 建立新資產 {#create-new-embedded-editor}
 
@@ -126,7 +126,7 @@ Assets檢視可啟用基本的影像編輯，包括調整大小、移除背景�
 
 1. 瀏覽至 **[!UICONTROL 我的Workspace]** 並按一下 **[!UICONTROL 建立]** 顯示在頂端的Adobe Express橫幅內。 [!DNL Adobe Express] 空白畫布會顯示在 [!DNL Assets view] 使用者介面中。
 1. 使用「[範本](https://helpx.adobe.com/tw/express/using/work-with-templates.html)」建立您的內容。否則，請瀏覽至「**[!UICONTROL 您的資料]**」以修改現有內容。
-1. 完成編輯後，請按一下 **[!UICONTROL 儲存]**.
+1. 完成編輯後，按一下「**[!UICONTROL 儲存]**」。
 1. 指定已建立資產的目的地路徑，然後按一下 **[!UICONTROL 另存為新資產]**.
 
 #### 限制 {#limitations}
