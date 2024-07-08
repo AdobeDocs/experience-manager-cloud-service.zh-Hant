@@ -4,9 +4,9 @@ description: 了解如何使用真實用途監控 （RUM） 實時捕獲和分�
 exl-id: 91fe9454-3dde-476a-843e-0e64f6f73aaf
 feature: Administering
 role: Admin
-source-git-commit: 9a8adf777008b7a601abc8760cee67ec3c1816c6
+source-git-commit: 8ccef0103ae7fb75171431eeb36f7352f6467d56
 workflow-type: tm+mt
-source-wordcount: '1301'
+source-wordcount: '1302'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ ht-degree: 0%
 
 ## 誰可以從實際使用的監控服務中受益？ {#who-can-benefit-from-rum-service}
 
-實際使用監控服務對所有客戶都有好處。 它提供了用戶互動的代表性反映，通過捕獲用戶端 頁面視圖的數量來確保網站參與的可靠測量。
+真實使用監控服務對所有客戶都有好處。 它提供了用戶互動的代表性反映，通過捕獲用戶端 頁面視圖的數量來確保網站參與的可靠測量。
 
 對於所有Adobe Systems客戶，此服務提供了有關用戶交互的寶貴見解。 使用自己的 CDN 的客戶可以從簡化的流量 報告中受益，因為Adobe Systems現在直接集成了資料彙集，無需在續訂週期內提供單獨的報告。
 
