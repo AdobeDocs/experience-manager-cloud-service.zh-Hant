@@ -2,15 +2,15 @@
 title: 部署 [!DNL Content Hub]
 description: 瞭解如何部署和啟用Content Hub，並為具有不同許可權型別的使用者(上傳資產、Adobe Express使用者)提供存取權，以及如何為使用者提供管理員許可權。
 role: Admin
-source-git-commit: 0d340508823be6a2c6c2beb28c17ddfb2bf6b790
+source-git-commit: 7224cca950e61bea298f246245bdb221fd8fa22e
 workflow-type: tm+mt
-source-wordcount: '1253'
+source-wordcount: '1316'
 ht-degree: 0%
 
 ---
 
 
-# 部署Content Hub {#deploy-content-hub}
+# 部署 Content Hub {#deploy-content-hub}
 
 ![部署Content Hub](assets/deploy-content-hub.png)
 
@@ -46,6 +46,10 @@ Content Hub上的許可權變化包括：
 
 1. 展開 **[!UICONTROL Assets]** 並選取 **[!UICONTROL Content Hub]**.
    ![在Cloud Manager中選取Content Hub](assets/edit-program-cloud-manager-content-hub.png)
+
+   >[!NOTE]
+   >
+   >如果 **[!UICONTROL 更新]** 選擇Content Hub後沒有為您啟用，請確保您已指定該計畫的上線設定。
 
 1. 按一下&#x200B;**[!UICONTROL 更新]**。
 
@@ -111,9 +115,19 @@ Content Hub使用者可以存取入口網站上的可用資產，但無法新增
 >
 >您可以使用所有進階企業功能，例如與外部識別提供者同步化。
 
-使用Admin Console新增適當的使用者後，使用者可以使用以下連結存取Content Hub：
+### 如何存取Content Hub？ {#access-content-hub}
 
-`https://experience.adobe.com/#/assets/contenthub`
+Content Hub的存取方式如下：
+
+* 使用下列連結存取Content Hub：
+
+  `https://experience.adobe.com/#/assets/contenthub`
+
+* 登入 `experience.adobe com` 並按一下 **[!UICONTROL Experience Manager Assets Content Hub]** 可在 **[!UICONTROL 快速存取]** 區段：
+  ![Content Hub存取](assets/access-content-hub.png)
+
+* 登入 `experience.adobe com` 並按一下 **[!UICONTROL Experience Manager Assets Content Hub]** 可在產品切換器中取得：
+  ![Content Hub存取方法3](assets/access-content-hub-alternate.png)
 
 ### 停用使用者的電子郵件通知 {#disable-email-notifications}
 

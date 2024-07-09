@@ -1,14 +1,14 @@
 ---
-title: 設定Content Hub使用者介面
-description: 設定Content Hub使用者介面
-source-git-commit: 5a968440c8841abe7af2c81c4af12258b7e4547f
+title: 設定 Content Hub 使用者介面
+description: 設定 Content Hub 使用者介面
+source-git-commit: 7224cca950e61bea298f246245bdb221fd8fa22e
 workflow-type: tm+mt
-source-wordcount: '1096'
-ht-degree: 4%
+source-wordcount: '1119'
+ht-degree: 5%
 
 ---
 
-# 設定Content Hub使用者介面 {#configure-content-hub-user-interface}
+# 設定 Content Hub 使用者介面 {#configure-content-hub-user-interface}
 
 <!-- ![Download assets](assets/download-asset.jpg) -->
 ![在Content Hub上設定資產](assets/configure-assets.png)
@@ -97,6 +97,10 @@ Content Hub可讓管理員設定在搜尋資產時顯示的篩選器。 執行�
 1. 按一下 **[!UICONTROL 確認]**. 新篩選器會顯示在現有篩選器的清單中。
 
 1. 按一下 **[!UICONTROL 儲存]** 套用變更，以便在篩選資產時讓新篩選器顯示在「搜尋」頁面上。
+
+   >[!NOTE]
+   >
+   >只有在存放庫中有另一個資產符合篩選條件時，新篩選器才會顯示在「搜尋」頁面上。
 
 同樣地，您可以按一下 ![編輯圖示](assets/do-not-localize/edit_icon.svg)，可用於每個可用篩選器旁邊，以編輯標籤或按一下刪除圖示以刪除任何現有篩選器。 按一下 **[!UICONTROL 儲存]** 完成所有修改以套用變更後。
 

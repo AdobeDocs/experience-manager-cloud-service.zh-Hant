@@ -1,10 +1,10 @@
 ---
 title: Content Hub概觀
 description: 進一步瞭解Content Hub、其主要優點、如何存取該工具，以及如何針對Content Hub中可用的選項提供意見回饋。
-source-git-commit: b29641286919b5becc3982400ea160836531fdc5
+source-git-commit: 7224cca950e61bea298f246245bdb221fd8fa22e
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '660'
+ht-degree: 6%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 ![Content Hub概觀](assets/content-hub-overview.png)
 
-Content Hub是Experience Manager Assets as a Cloud Service的一部分，可讓組織及其業務合作夥伴普及對品牌上內容的存取。 其著重於大規模散發資產以供啟用，以及建立品牌內內容變體，以提升行銷靈敏度。
+Content Hub 作為 Experience Manager Assets as a Cloud Service 的一部分提供，以實現組織及其業務合作夥伴對品牌內容的大眾化存取。其著重於大規模散發資產以供啟用，以及建立品牌內內容變體，以提升行銷靈敏度。
 
 ## 為何選擇Content Hub？
 
@@ -41,7 +41,7 @@ Content Hub需要2024.6版或更新版本as a Cloud ServiceExperience Manager的
 
 ## 如何存取Content Hub？ {#access-content-hub}
 
-[設定Content Hub後](#deploy-content-hub) 並將使用者新增至 [Content Hub產品設定檔](/help/assets/deploy-content-hub.md#content-hub-instance-product-profile)，您可使用下列方式存取Content Hub：
+[設定Content Hub後](/help/assets/deploy-content-hub.md) 並將使用者新增至 [Content Hub產品設定檔](/help/assets/deploy-content-hub.md#content-hub-instance-product-profile)，您可使用下列方式存取Content Hub：
 
 * 使用下列連結存取Content Hub：
 
@@ -89,7 +89,7 @@ Content Hub需要2024.6版或更新版本as a Cloud ServiceExperience Manager的
 <table>
 <td>
    <a href="/help/assets/configure-content-hub-ui-options.md">
-   <img alt="部署Content Hub" src="./assets/configure-assets.png" />
+   <img alt="部署 Content Hub" src="./assets/configure-assets.png" />
    </a>
    <div>
       <a href="/help/assets/configure-content-hub-ui-options.md">
@@ -145,7 +145,7 @@ Content Hub需要2024.6版或更新版本as a Cloud ServiceExperience Manager的
 </td>
 <td>
    <a href="/help/assets/collections-content-hub.md">
-   <img alt="在Content Hub中管理集合" src="./assets/manage-collection.png" />
+   <img alt="在 Content Hub 中管理收藏集" src="./assets/manage-collection.png" />
    </a>
    <div>
       <a href="/help/assets/collections-content-hub.md">
