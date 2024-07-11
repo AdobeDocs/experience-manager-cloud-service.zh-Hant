@@ -4,10 +4,10 @@ description: 了解如何更新您的內容片段，以便在 Adobe Experience M
 exl-id: 211f079e-d129-4905-a56a-4fddc11551cc
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 66d44481fa7e58b23e0381bfebb997acbedecfb7
 workflow-type: tm+mt
-source-wordcount: '886'
-ht-degree: 100%
+source-wordcount: '867'
+ht-degree: 87%
 
 ---
 
@@ -38,71 +38,81 @@ ht-degree: 100%
 
    可用變數為：
 
+   | | 名稱 | 值 | 預設值 | 服務 | 已應用 | 類型 | 附註 |
+   |---|---|---|---|---|---|---|---|
+   | 1 | `CF_MIGRATION_ENABLED` | `1` | `0` | 全部 | | 變數 | 啟用(!=0) 或停用 (0) 觸發內容片段遷移作業。 |
+   | 2 | `CF_MIGRATION_ENFORCE` | `1` | `0` | 全部 | | 變數 | 執行 (!=0)重新移轉內容片段。 將此標幟設為0會執行CF的遞增移轉。 這表示，如果作業由於任何原因終止，則下一次執行作業會從作業被終止的那個點開始遷移。建議強制執行第一次遷移 (值=1)。 |
+   | 3 | `CF_MIGRATION_BATCH` | `50` | `50` | 全部 | | 變數 | 用於儲存移轉後內容片段數的批次大小。 這與一次儲存至存放庫的CF數量相關，並可用於最佳化寫入存放庫的次數。 |
+   | 4 | `CF_MIGRATION_LIMIT` | `1000` | `1000` | 全部 | | 變數 | 一次要處理的內容片段數量上限。 另請參閱以下專案的附註： `CF_MIGRATION_INTERVAL`. |
+   | 5 | `CF_MIGRATION_INTERVAL` | `60` | `600` | 全部 | | 變數 | 處理剩餘內容片段直到下一次限制的時間間隔（秒）。 此間隔也會被視為啟動作業前的等待時間，以及處理每個後續CF_MIGRATION_LIMIT數目CF之間的延遲。 (*) |
+
+   <!--
    <table style="table-layout:auto">
     <tbody>
      <tr>
-      <th> </th>
-      <th>名稱</th>
-      <th>值</th>
-      <th>預設值</th>
-      <th>服務</th>
-      <th>已應用</th>
-      <th>類型</th>
-      <th>附註</th>
+      <th>&nbsp;</th>
+      <th>Name</th>
+      <th>Value</th>
+      <th>Default Value</th>
+      <th>Service</th>
+      <th>Applied</th>
+      <th>Type</th>
+      <th>Notes</th>
      </tr>
 
-   <tr>
+     <tr>
       <td>1</td>
       <td>`CF_MIGRATION_ENABLED` </td>
       <td>`1` </td>
       <td>`0` </td>
-      <td>全部 </td>
+      <td>All </td>
       <td> </td>
-      <td>變數 </td>
-      <td>啟用(!=0) 或停用 (0) 觸發內容片段遷移作業。 </td>
+      <td>Variable </td>
+      <td>Enables(!=0) or disables(0) triggering of Content Fragment migration job. </td>
      </tr>
      <tr>
       <td>2</td>
       <td>`CF_MIGRATION_ENFORCE` </td>
       <td>`1` </td>
       <td>`0` </td>
-      <td>全部 </td>
+      <td>All </td>
       <td> </td>
-      <td>變數 </td>
-      <td>執行 (!=0) 內容片段的重新遷移。<br>將此標幟設定為 0 可執行 CF 的增量遷移。這表示，如果作業由於任何原因終止，則下一次執行作業會從作業被終止的那個點開始遷移。建議強制執行第一次遷移 (值=1)。 </td>
+      <td>Variable </td>
+      <td>Enforce (!=0) remigration of Content Fragments.<br>Setting this flag to 0 does an incremental migration of CFs. This means, if the job is terminated for any reason, then the next run of the job starts migration from the point where it got terminated. The first migration is recommended for enforcement (value=1). </td>
      </tr>
      <tr>
       <td>3</td>
       <td>`CF_MIGRATION_BATCH` </td>
       <td>`50` </td>
       <td>`50` </td>
-      <td>全部 </td>
+      <td>All </td>
       <td> </td>
-      <td>變數 </td>
-      <td>遷移後用來儲存內容片段數量的批次大小。<br>這與單批中多少個 CF 儲存到存放庫中有關，並且可以用來最佳化寫入存放庫的數量。 </td>
+      <td>Variable </td>
+      <td>Size of the batch for saving the number of Content Fragments after migration.<br>This is relevant to how many CFs are saved to the repository in one batch, and can be used to optimize the number of writes to the repository. </td>
      </tr>
      <tr>
       <td>4</td>
       <td>`CF_MIGRATION_LIMIT` </td>
       <td>`1000` </td>
       <td>`1000` </td>
-      <td>全部 </td>
+      <td>All </td>
       <td> </td>
-      <td>變數 </td>
-      <td>一次處理的最大數量的內容片段。<br>另請參閱 “CF_MIGRATION_INTERVAL” 的註釋。 </td>
+      <td>Variable </td>
+      <td>Max number of Content Fragments to process at a time.<br>See also notes for `CF_MIGRATION_INTERVAL`. </td>
      </tr>
      <tr>
       <td>5</td>
       <td>`CF_MIGRATION_INTERVAL` </td>
       <td>`60` </td>
       <td>`600` </td>
-      <td>全部 </td>
+      <td>All </td>
       <td> </td>
-      <td>變數 </td>
-      <td>處理剩餘內容片段直到下一個限制的時間間隔 (秒)<br>此時間間隔也被視為開始作業之前的等待時間，以及處理每個後續 CF_MIGRATION_LIMIT 數量的 CF 之間的延遲。<br>(*)</td>
+      <td>Variable </td>
+      <td>Interval (seconds) to process the remaining Content Fragments up until the next Limit<br>This interval is also considered as both a wait-time before starting the job, and a delay between processing of each subsequent CF_MIGRATION_LIMIT number of CFs.<br>(*)</td>
      </tr>
     </tbody>
    </table>
+   -->
 
    >[!NOTE]
    >
@@ -193,30 +203,36 @@ ht-degree: 100%
 
    執行更新程序後，將雲端環境變數 `CF_MIGRATION_ENABLED` 重設為 “0”，以觸發所有 pod 的回收。
 
+   | | 名稱 | 值 | 預設值 | 服務 | 已應用 | 類型 | 附註 |
+   |---|---|---|---|---|---|---|---|
+   | | `CF_MIGRATION_ENABLED` | `0` | `0` | 全部 | | 變數 | 停用(0) (或啟用(!=0)) 觸發內容片段遷移作業。 |
+
+   <!--
    <table style="table-layout:auto">
     <tbody>
      <tr>
-      <th> </th>
-      <th>名稱</th>
-      <th>值</th>
-      <th>預設值</th>
-      <th>服務</th>
-      <th>已應用</th>
-      <th>類型</th>
-      <th>附註</th>
+      <th>&nbsp;</th>
+      <th>Name</th>
+      <th>Value</th>
+      <th>Default Value</th>
+      <th>Service</th>
+      <th>Applied</th>
+      <th>Type</th>
+      <th>Notes</th>
      </tr>
      <tr>
       <td></td>
       <td>`CF_MIGRATION_ENABLED` </td>
       <td>`0` </td>
       <td>`0` </td>
-      <td>全部 </td>
+      <td>All </td>
       <td> </td>
-      <td>變數 </td>
-      <td>停用(0) (或啟用(!=0)) 觸發內容片段遷移作業。 </td>
+      <td>Variable </td>
+      <td>Disables(0) (or Enables(!=0)) triggering of Content Fragment migration job. </td>
      </tr>
     </tbody>
    </table>
+   -->
 
    >[!NOTE]
    >
