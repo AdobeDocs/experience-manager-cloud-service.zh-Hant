@@ -4,27 +4,27 @@ description: 瞭解如何在設定檔案中宣告規則和篩選器，並使用C
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: 1b4297c36995be7a4d305c3eddbabfef24e91559
+source-git-commit: c34aa4ad34d3d22e1e09e9026e471244ca36e260
 workflow-type: tm+mt
-source-wordcount: '1310'
+source-wordcount: '1326'
 ht-degree: 3%
 
 ---
 
 # 設定 CDN 上的流量 {#cdn-configuring-cloud}
 
-AEMas a Cloud Service提供可在以下位置設定的功能集合： [Adobe管理的CDN](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) 修改傳入要求或傳出回應之性質的圖層。 下列規則（在本頁中詳細說明）可宣告為達成下列行為：
+AEM as a Cloud Service提供可在[Adobe管理的CDN](/help/implementing/dispatcher/cdn.md#aem-managed-cdn)層設定的功能集合，可修改傳入要求或傳出回應的性質。 下列規則（在本頁中詳細說明）可宣告為達成下列行為：
 
-* [要求轉換](#request-transformations)  — 修改傳入請求的各個方面，包括標題、路徑和引數。
-* [回應轉換](#response-transformations)  — 修改回使用者端的標題（例如網頁瀏覽器）。
-* [使用者端重新導向](#client-side-redirectors)  — 觸發瀏覽器重新導向。 此功能尚未正式發行，但可供早期採用者使用。
-* [來源選取器](#origin-selectors) - proxy到不同的來源後端。
+* [要求轉換](#request-transformations) — 修改傳入要求的方面，包括標頭、路徑和引數。
+* [回應轉換](#response-transformations) — 修改回使用者端的標題（例如網頁瀏覽器）。
+* [使用者端重新導向](#client-side-redirectors) — 觸發瀏覽器重新導向。 此功能尚未正式發行，但可供早期採用者使用。
+* [來源選取器](#origin-selectors) — 代理至不同的來源後端。
 
-CDN也可以設定流量篩選規則（包括WAF），這可控制CDN允許或拒絕的流量。 此功能已發行，您可以在 [包含WAF規則的流量篩選規則](/help/security/traffic-filter-rules-including-waf.md) 頁面。
+CDN也可以設定流量篩選規則（包括WAF），這可控制CDN允許或拒絕的流量。 此功能已發行，您可以在[流量篩選器規則（包括WAF規則）](/help/security/traffic-filter-rules-including-waf.md)頁面中瞭解更多相關資訊。
 
-此外，如果CDN無法連絡其來源，您可以撰寫規則來參考自行託管的自訂錯誤頁面（然後呈現）。 如需詳細資訊，請參閱 [設定CDN錯誤頁面](/help/implementing/dispatcher/cdn-error-pages.md) 文章。
+此外，如果CDN無法連絡其來源，您可以撰寫規則來參考自行託管的自訂錯誤頁面（然後呈現）。 閱讀[設定CDN錯誤頁面](/help/implementing/dispatcher/cdn-error-pages.md)文章以進一步瞭解此專案。
 
-所有這些在原始檔控制的組態檔中宣告的規則，都是透過以下方式部署： [Cloud Manager的設定管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline). 請注意，設定檔案的累積大小（包括流量篩選規則）不得超過100KB。
+所有這些在原始檔控制的組態檔中宣告的規則，都是使用[Cloud Manager的組態管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline)部署。 請注意，設定檔案的累積大小（包括流量篩選規則）不得超過100KB。
 
 ## 評估順序 {#order-of-evaluation}
 
@@ -43,9 +43,9 @@ config/
      cdn.yaml
 ```
 
-* 此 `cdn.yaml` 設定檔案應同時包含中繼資料和下列範例所述的規則。 此 `kind` 引數應設為 `CDN` 而版本應設為結構描述版本，目前為 `1`.
+* `cdn.yaml`設定檔應同時包含中繼資料及下列範例中說明的規則。 `kind`引數應設為`CDN`，而版本應設為結構描述版本，目前為`1`。
 
-* 在Cloud Manager中建立目標部署設定管道。 另請參閱 [設定生產管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) 和 [設定非生產管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md).
+* 在Cloud Manager中建立目標部署設定管道。 請參閱[設定生產管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)和[設定非生產管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)。
 
 **附註**
 
@@ -58,7 +58,7 @@ config/
 
 規則由名稱、條件「when子句」和動作參考。
 
-when子句會根據包括網域、路徑、查詢字串、標頭和Cookie在內的屬性，決定是否評估規則。 各種規則型別的語法相同；如需詳細資訊，請參閱 [條件結構區段](/help/security/traffic-filter-rules-including-waf.md#condition-structure) 在流量篩選規則文章中。
+when子句會根據包括網域、路徑、查詢字串、標頭和Cookie在內的屬性，決定是否評估規則。 各規則型別的語法相同；如需詳細資訊，請參閱「流量篩選規則」文章中的[條件結構區段](/help/security/traffic-filter-rules-including-waf.md#condition-structure)。
 
 動作節點的詳細資訊因規則型別而異，以下各節將概述這些詳細資訊。
 
@@ -68,7 +68,7 @@ when子句會根據包括網域、路徑、查詢字串、標頭和Cookie在內�
 
 使用案例多種多樣，包括URL重寫以簡化應用程式或對映舊版URL。
 
-如前所述，設定檔案有大小限制，因此具有較大需求的組織應在 `apache/dispatcher` 圖層。
+如前所述，組態檔有大小限制，因此需求較大的組織應在`apache/dispatcher`層定義規則。
 
 設定範例：
 
@@ -146,7 +146,7 @@ data:
 |-----------|--------------------------|-------------|
 | **設定** | （reqProperty、reqHeader、queryParam或reqCookie），值 | 將指定的請求引數（僅支援「path」屬性）或請求標頭、查詢引數或Cookie設定為給定值。 |
 |     | 變數，值 | 將指定的要求屬性設定為指定的值。 |
-| **未設定** | reqProperty | 移除指定值的指定請求引數（僅支援「path」屬性），或請求標頭、查詢引數或Cookie。 |
+| **取消設定** | reqProperty | 移除指定值的指定請求引數（僅支援「path」屬性），或請求標頭、查詢引數或Cookie。 |
 |         | 變數 | 移除指定的變數。 |
 |         | queryParamMatch | 移除符合指定規則運算式的所有查詢引數。 |
 | **轉換** | op：replace， （reqProperty或reqHeader、queryParam或reqCookie），match，replacement | 以新值取代部分請求引數（僅支援「path」屬性），或請求標頭、查詢引數或Cookie。 |
@@ -168,7 +168,7 @@ actions:
 
 ### 變數 {#variables}
 
-您可以在請求轉換期間設定變數，稍後在評估序列中參考它們。 請參閱 [評估順序](#order-of-evaluation) 圖表以取得更多詳細資料。
+您可以在請求轉換期間設定變數，稍後在評估序列中參考它們。 如需詳細資訊，請參閱[評估順序](#order-of-evaluation)圖表。
 
 設定範例：
 
@@ -253,7 +253,7 @@ data:
 | 名稱 | 屬性 | 含義 |
 |-----------|--------------------------|-------------|
 | **設定** | reqHeader，值 | 將指定的標頭設定為回應中的指定值。 |
-| **未設定** | respHeader | 從回應中移除指定的標頭。 |
+| **取消設定** | respHeader | 從回應中移除指定的標頭。 |
 
 ## 來源選取器 {#origin-selectors}
 
@@ -274,7 +274,7 @@ data:
         action:
           type: selectOrigin
           originName: example-com
-          # useCache: false
+          # skpCache: true
     origins:
       - name: example-com
         domain: www.example.com
@@ -292,7 +292,7 @@ data:
 | 名稱 | 屬性 | 含義 |
 |-----------|--------------------------|-------------|
 | **selectOrigin** | 來源名稱 | 其中一個已定義來源的名稱。 |
-|     | useCache （選用，預設為true） | 標示是否將快取用於符合此規則的請求。 |
+|     | skipCache （選用，預設為false） | 標示是否將快取用於符合此規則的請求。 預設會根據回應快取標題（例如Cache-Control或Expires）快取回應 |
 
 **來源**
 
@@ -302,11 +302,11 @@ data:
 |------------------|--------------------------------------|
 | **名稱** | 可由「action.originName」參考的名稱。 |
 | **網域** | 用來連線至自訂後端的網域名稱。 它也用於SSL SNI和驗證。 |
-| **ip** （選用，支援iv4和ipv6） | 若提供，可用來連線到後端而非「網域」。 仍會使用「網域」進行SSL SNI和驗證。 |
+| **ip** （選擇性，支援的iv4和ipv6） | 若提供，可用來連線到後端而非「網域」。 仍會使用「網域」進行SSL SNI和驗證。 |
 | **forwardHost** （選擇性，預設為false） | 若設為true，則會將使用者端請求的「Host」標頭傳送至後端，否則「domain」值將會傳送至「Host」標頭。 |
 | **forwardCookie** （選擇性，預設為false） | 若設為true，則會將使用者端請求中的「Cookie」標頭傳遞至後端，否則會移除Cookie標頭。 |
 | **forwardAuthorization** （選擇性，預設為false） | 如果設為true ，則會將使用者端請求中的&quot;Authorization&quot;標頭傳遞至後端，否則會移除Authorization標頭。 |
-| **逾時** （選用，以秒為單位，預設為60） | CDN應等待後端伺服器傳遞HTTP回應本文第一個位元組的秒數。 此值也會用作後端伺服器的位元組逾時之間的值。 |
+| **逾時** （選擇性，以秒為單位，預設為60） | CDN應等待後端伺服器傳遞HTTP回應本文第一個位元組的秒數。 此值也會用作後端伺服器的位元組逾時之間的值。 |
 
 ### 代理至Edge Delivery Services {#proxying-to-edge-delivery}
 
@@ -341,13 +341,13 @@ data:
 ```
 
 >[!NOTE]
-> 由於已使用AdobeManaged CDN，請務必在中設定推送失效 **已管理** 模式，依循Edge Delivery Services [設定推送失效檔案](https://www.aem.live/docs/byo-dns#setup-push-invalidation).
+> 由於已使用AdobeManaged CDN，請依照Edge Delivery Services[安裝程式推送失效檔案](https://www.aem.live/docs/byo-dns#setup-push-invalidation)，確定在&#x200B;**Managed**&#x200B;模式中設定推送失效。
 
 
 ## 使用者端重新導向 {#client-side-redirectors}
 
 >[!NOTE]
->此功能尚未正式推出。若要加入率先採用者計畫，請傳送電子郵件至 `aemcs-cdn-config-adopter@adobe.com` 並說明您的使用案例。
+>此功能尚未正式推出。若要加入早期採用者計畫，請傳送電子郵件給`aemcs-cdn-config-adopter@adobe.com`並說明您的使用案例。
 
 對於301、302和類似的使用者端重新導向，您可以使用使用者端重新導向規則。 如果規則相符，CDN會以包含狀態代碼和訊息的狀態行回應（例如HTTP/1.1 301 Moved Permanently），以及位置標頭集。
 
