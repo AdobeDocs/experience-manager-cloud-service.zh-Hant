@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
-source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
+source-git-commit: f81ea2b58cfa68542df957b54b1c0233b6096810
 workflow-type: tm+mt
-source-wordcount: '2668'
+source-wordcount: '2687'
 ht-degree: 5%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 5%
 * [以內容參考的方式內嵌上傳資產](#reference-images)，無需先將它們上傳至資產DAM。
 * [產生變數](#generate-variations-ai) 使用Generative AI根據提示加速內容建立。
 * [預覽](#preview-content-fragment) 內容片段提供的呈現體驗數量。
-* 能夠 [發佈](#publish-content-fragment) 和 [取消發佈](#unpublish-content-fragment) 從編輯器中。
+* 能夠 [Publish](#publish-content-fragment) 和 [取消發佈](#unpublish-content-fragment) 從編輯器中。
 * 能夠 [檢視並開啟相關的語言副本](#view-language-copies) 在編輯器中。
 * 能夠 [檢視版本詳細資料](#view-version-history) 在編輯器中。 您也可以還原至選取的版本。
 * 能夠 [檢視和開啟父參照](#view-parent-references).
@@ -45,7 +45,7 @@ ht-degree: 5%
    * 內容片段主控台的連結 (首頁圖示)
    * 有關模型和檔案夾的資訊
    * 連結至 [預覽（如果為模型設定了「預設預覽URL模式」）](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#content-fragment-model-properties)
-   * [發佈](#publish-content-fragment)、和 [取消發佈](#unpublish-content-fragment) 動作
+   * [Publish](#publish-content-fragment)、和 [取消發佈](#unpublish-content-fragment) 動作
    * 顯示全部&#x200B;**父參考內容**&#x200B;的選項 (連結圖示)
    * **[狀態](/help/sites-cloud/administering/content-fragments/managing.md#statuses-content-fragments)**&#x200B;片段，以及最後儲存的資訊
    * 用來切換至原始 (以資產為主) 編輯器的切換開關
@@ -116,7 +116,7 @@ ht-degree: 5%
 
 ## 變化 {#variations}
 
-[變數](/help/sites-cloud/administering/content-fragments/overview.md#main-and-variations) 是AEM內容片段的一項重要功能。 它們可讓您建立並編輯 **主要** 用於特定頻道和情境的內容，讓headless內容傳送和頁面製作更加靈活。
+[變數](/help/sites-cloud/administering/content-fragments/overview.md#main-and-variations) 是AEM內容片段的重要功能。 它們可讓您建立並編輯 **主要** 用於特定頻道和情境的內容，讓headless內容傳送和頁面製作更加靈活。
 
 從編輯器中，您可以：
 
@@ -336,7 +336,7 @@ ht-degree: 5%
 在 **內容參考** 欄位您可以：
 
 * 已存在於存放庫中的參考資產
-* 將它們直接上傳到欄位；這樣就不需要使用 **資產** 要上傳的主控台
+* 將它們直接上傳到欄位；這樣就不需要使用 **Assets** 要上傳的主控台
 
   >[!NOTE]
   >
@@ -348,19 +348,26 @@ ht-degree: 5%
 若要新增資產，您可以：
 
 * 直接將新的資產檔案（例如，從您的檔案系統）拖放到 **內容參考** 欄位
-* 使用 **新增資產** 動作，然後選取 **瀏覽資產** 或 **上傳** 若要開啟適當的選取器以供您使用：
+* 使用 **新增資產** 動作，然後選取 **瀏覽Assets** 或 **上傳** 若要開啟適當的選取器以供您使用：
 
   ![內容片段編輯器 — 新增資產選項](assets/cf-authoring-add-asset-options.png)
 
 #### 參考頁面 {#reference-pages}
 
-若要新增對AEM頁面、體驗片段或其他內容型別的參照：
+若要新增對AEM頁面、體驗片段或其他這類內容型別的參照：
 
 1. 選取 **新增內容路徑**.
 
 1. 在輸入欄位中新增必要路徑。
 
 1. 確認 **新增**.
+
+>[!NOTE]
+>
+>此引數不應用於下列專案的參照：
+>
+>* 內容片段 — 使用 [片段引用](#fragment-references)
+>* 影像 — 使用 [參考影像](#reference-images)
 
 ### 檢視父參照 {#view-parent-references}
 
@@ -472,10 +479,10 @@ ht-degree: 5%
 
 ## Publish您的片段 {#publish-content-fragment}
 
-您可以 **發佈** 您的片段成為：
+您可以 **Publish** 您的片段成為：
 
 * 預覽例項
-* 發佈執行個體
+* Publish執行個體
 
 您可以從編輯器或控制檯發佈您的片段。 另請參閱 [發佈和預覽片段](/help/sites-cloud/administering/content-fragments/managing.md#publishing-and-previewing-a-fragment) 以取得完整詳細資訊。
 
@@ -484,7 +491,7 @@ ht-degree: 5%
 您也可以 **取消發佈** 您的片段，來自：
 
 * 預覽例項
-* 發佈執行個體
+* Publish執行個體
 
 您可以從編輯器或控制檯取消發佈您的片段。 另請參閱 [取消發佈片段](/help/sites-cloud/administering/content-fragments/managing.md#unpublishing-a-fragment) 以取得完整詳細資訊。
 
@@ -551,6 +558,6 @@ ht-degree: 5%
 
   內容片段及其變化也有稱為的中繼資料欄位（變化屬性） **標題** 和 **說明**. 這些欄位是任何內容片段不可或缺的一部分，並在片段時最初定義。 它們可以在以下位置更新： *右側面板* 編輯片段時。
 
-* 如需詳細資訊，請參閱資產檔案 [原始內容片段編輯器](/help/assets/content-fragments/content-fragments-variations.md)  — 您可透過 **資產** 主控台與 **內容片段** 主控台。
+* 請參閱Assets檔案，以取得以下專案的完整資訊： [原始內容片段編輯器](/help/assets/content-fragments/content-fragments-variations.md)  — 您可透過 **Assets** 主控台與 **內容片段** 主控台。
 
 * 您的專案團隊可視需要自訂編輯器。 另請參閱 [自訂內容片段控制檯和編輯器](/help/implementing/developing/extending/content-fragments-console-and-editor.md) 以取得更多詳細資料。
