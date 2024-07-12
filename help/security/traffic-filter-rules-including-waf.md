@@ -4,10 +4,10 @@ description: 設定流量篩選規則，包括 Web 應用程式防火牆 (WAF) �
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
-workflow-type: ht
-source-wordcount: '3947'
-ht-degree: 100%
+source-git-commit: 23d532f70e031608855bb9fc768aae5398c81e0f
+workflow-type: tm+mt
+source-wordcount: '3938'
+ht-degree: 96%
 
 ---
 
@@ -246,9 +246,9 @@ when:
 
 | **名稱** | **允許的屬性** | **含義** |
 |---|---|---|
-| **允許** | `wafFlags` (選項)，`alert` (選項，尚未發佈) | 如果沒有 wafFlags，則停止進一步處理規則並繼續提供回應。如果有 wafFlags，這將停用指定的 WAF 保護並繼續進一步處理規則。<br>如果已指定要發送警報，則當規則在 5 分鐘內觸發 10 次時，系統將發送行動中心通知。該功能尚未發佈；有關如何加入早期採用者計劃的資訊，請參閱「[流量篩選規則警報](#traffic-filter-rules-alerts)」部分。 |
-| **封鎖** | `status, wafFlags` (選項且互斥)， `alert`  (選項，尚未發佈) | 如果沒有 wafFlags，則繞過所有其他屬性來傳回 HTTP 錯誤，錯誤代碼由狀態屬性定義或預設為 406。如果有 wafFlags，這將啟用指定的 WAF 保護並繼續進一步處理規則。<br>如果已指定要發送警報，則當規則在 5 分鐘內觸發 10 次時，系統將發送行動中心通知。該功能尚未發佈；有關如何加入早期採用者計劃的資訊，請參閱「[流量篩選規則警報](#traffic-filter-rules-alerts)」部分。 |
-| **記錄** | `wafFlags` (選項)，`alert` (選項，尚未發佈) | 記錄規則已觸發的事實，否則不影響處理作業。wafFlags 沒有影響。<br>如果已指定要發送警報，則當規則在 5 分鐘內觸發 10 次時，系統將發送行動中心通知。該功能尚未發佈；有關如何加入早期採用者計劃的資訊，請參閱「[流量篩選規則警報](#traffic-filter-rules-alerts)」部分。 |
+| **允許** | `wafFlags` （選擇性）、`alert` （選擇性） | 如果沒有 wafFlags，則停止進一步處理規則並繼續提供回應。如果有 wafFlags，這將停用指定的 WAF 保護並繼續進一步處理規則。<br>如果已指定要發送警報，則當規則在 5 分鐘內觸發 10 次時，系統將發送行動中心通知。觸發特定規則的警報後，要到隔天(UTC)才會再次引發。 |
+| **封鎖** | `status, wafFlags` （選擇性和互斥）、`alert` （選擇性） | 如果沒有 wafFlags，則繞過所有其他屬性來傳回 HTTP 錯誤，錯誤代碼由狀態屬性定義或預設為 406。如果有 wafFlags，這將啟用指定的 WAF 保護並繼續進一步處理規則。<br>如果已指定要發送警報，則當規則在 5 分鐘內觸發 10 次時，系統將發送行動中心通知。觸發特定規則的警報後，要到隔天(UTC)才會再次引發。 |
+| **記錄** | `wafFlags` （選擇性）、`alert` （選擇性） | 記錄規則已觸發的事實，否則不影響處理作業。wafFlags 沒有影響。<br>如果已指定要發送警報，則當規則在 5 分鐘內觸發 10 次時，系統將發送行動中心通知。觸發特定規則的警報後，要到隔天(UTC)才會再次引發。 |
 
 ### WAF 標幟清單 {#waf-flags-list}
 
@@ -494,16 +494,14 @@ data:
 
 ## 流量篩選規則警報 {#traffic-filter-rules-alerts}
 
->[!NOTE]
->
->此功能尚未發佈。若要透過早期採用者計畫取得存取權限，請發送電子郵件至 **aemcs-waf-adopter@adobe.com**。
+規則可設定為在 5 分鐘時間內觸發十次時發送行動中心通知。當出現某些流量模式時，此類規則會向您發送警報，以便您採取任何必要的措施。觸發特定規則的警報後，要到隔天(UTC)才會再次引發。
 
-規則可設定為在 5 分鐘時間內觸發十次時發送行動中心通知。當出現某些流量模式時，此類規則會向您發送警報，以便您採取任何必要的措施。了解更多關於[行動中心](/help/operations/actions-center.md)，包括如何設定接收電子郵件所需的通知設定檔。
+了解更多關於[行動中心](/help/operations/actions-center.md)，包括如何設定接收電子郵件所需的通知設定檔。
 
 ![行動中心通知](/help/security/assets/traffic-filter-rules-actions-center-alert.png)
 
 
-警報屬性 (目前的前綴為&#x200B;*實驗性* ，因為該功能尚未發佈) 可以套用於所有行動類型 (允許、封鎖、記錄) 的行動節點。
+警示屬性可套用至所有動作型別（允許、封鎖、記錄）的動作節點。
 
 ```
 kind: "CDN"
@@ -520,7 +518,7 @@ data:
             - { reqProperty: tier, equals: publish }
         action:
           type: block
-          experimental_alert: true
+          alert: true
 ```
 
 ## 來源流量尖峰預設警報 {#traffic-spike-at-origin-alert}
@@ -533,7 +531,7 @@ data:
 
 如果達到此臨界值，Adobe 將阻止來自該 IP 位址的流量，但建議採取其他措施來保護您的來源，包括設定速率限制流量篩選規則，以便在臨界值較低時阻擋流量尖峰。請參閱[「使用流量篩選器規則封鎖 DoS 和 DDoS 攻擊」教學課程](#tutorial-blocking-DDoS-with-rules)以瞭解引導式逐步說明。
 
-此警報預設為啟用，但可以將 *enable_ddos_alerts* 屬性設定為 false 來加以停用。
+此警示預設為啟用，但可使用設為false的&#x200B;*enable_ddos_alerts*&#x200B;屬性來停用。 觸發警報後，它直到第二天(UTC)才會再次引發。
 
 ```
 kind: "CDN"
