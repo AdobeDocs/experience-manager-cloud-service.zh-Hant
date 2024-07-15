@@ -25,7 +25,7 @@ ht-degree: 98%
 
 ## 自動建立 {#auto-creation}
 
-沙箱計畫具有自動建立功能。每當您建立沙箱程式時，Cloud Manager都會自動：
+沙箱計畫具有自動建立功能。每當您建立沙箱計畫時，Cloud Manager都會自動：
 
 * 在您的計畫中新增 AEM Sites 和 AEM Assets 作為解決方案。
 * 使用基於範執行個體目的範執行個體目設定項目 git 存放庫 [AEM Project 原型。](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hant)

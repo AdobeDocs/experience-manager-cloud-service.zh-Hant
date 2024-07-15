@@ -15,9 +15,9 @@ ht-degree: 53%
 
 # 編輯計畫 {#editing-programs}
 
-若要管理和編輯程式，請從 [**我的計畫** 主控台。](/help/implementing/cloud-manager/navigation.md) 此 **我的計畫** 頁面提供您有權存取之所有程式的概觀。 選取個別方案時， **計畫總覽** 頁面提供一目瞭然的方案詳細資訊。
+若要管理和編輯程式，請從&#x200B;[**我的程式**&#x200B;主控台開始。](/help/implementing/cloud-manager/navigation.md) **我的程式**&#x200B;頁面提供您有權存取之所有程式的概觀。 選取個別方案時，**方案總覽**&#x200B;頁面會提供方案的詳細資訊。
 
-從 **計畫總覽**，具有必要許可權的使用者可以編輯 [在您的組織中建立的生產計畫](creating-production-programs.md) 和 [在您的組織中建立的沙箱計畫。](creating-sandbox-programs.md)透過編輯計畫，您可以：
+從&#x200B;**計畫總覽**，具有必要許可權的使用者可以編輯在您組織中建立的[生產計畫](creating-production-programs.md)和在您組織中建立的[沙箱計畫。](creating-sandbox-programs.md)透過編輯計畫，您可以：
 
 * 將 Sites 解決方案新增到有 Assets 現有方案中，反之亦然。
 * 從包含 Sites 和 Assets 的現有計畫中移除 Sites 或 Assets。
@@ -26,25 +26,25 @@ ht-degree: 53%
 
 ## 權限 {#permissions}
 
-您必須是 **企業所有者** 編輯計畫或刪除沙箱計畫以及存取授權儀表板的角色。
+您必須是&#x200B;**業務負責人**&#x200B;角色的成員才能編輯計畫或刪除沙箱計畫以及存取授權儀表板。
 
 ## 編輯方案 {#editing}
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織。
 
-1. 在 **[我的計畫](#my-programs)** 頁面上，按一下您要編輯的方案以顯示其詳細資訊。
+1. 在&#x200B;**[我的程式](#my-programs)**&#x200B;頁面上，按一下您要編輯的程式，以顯示其詳細資料。
 
 1. 按一下頁面左上角的計畫名稱，然後選擇&#x200B;**編輯計畫**。
 
    ![編輯計畫選項](assets/edit-program-overview.png)
 
-1. 此 **編輯計畫** 頁面開啟至 **一般** 標籤。
+1. **編輯程式**&#x200B;頁面會開啟至&#x200B;**一般**&#x200B;標籤。
 
    ![「一般」索引標籤](assets/edit-program-prod1.png)
 
 1. 可用於編輯方案的選項與建立方案時的選項相同。
-   * 請參閱檔案 [建立生產計畫](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) 和 [建立沙箱計畫](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md) 個別選項的詳細資訊。
-   * [其他選項](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#options) 根據您組織的權益，生產計畫可能適合使用。
+   * 如需個別選項的詳細資訊，請參閱檔案[建立生產計畫](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)和[建立沙箱計畫](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md)。
+   * 根據您組織的權益，您的生產計畫可能有[其他選項](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#options)可用。
 
 1. 按一下「**更新**」，儲存計畫的變更。
 
@@ -66,9 +66,9 @@ ht-degree: 53%
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織。
 
-1. 在 **[我的計畫](#my-programs)** 頁面上，按一下您要編輯的方案以顯示其詳細資訊。
+1. 在&#x200B;**[我的程式](#my-programs)**&#x200B;頁面上，按一下您要編輯的程式，以顯示其詳細資料。
 
-1. 按一下頁面左上角的計畫名稱，然後選擇 **刪除程式**.
+1. 按一下頁面左上角的程式名稱，然後選取&#x200B;**刪除程式**。
 
    ![刪除計畫選項](assets/delete-sandbox1.png)
 

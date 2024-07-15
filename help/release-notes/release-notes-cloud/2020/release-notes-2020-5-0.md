@@ -1,6 +1,6 @@
 ---
 title: Adobe Experience Manager as a Cloud Service 2020.5.0 版發行說明
-description: '"[!DNL Adobe Experience Manager] 2020.5.0版as a Cloud Service發行說明。」'
+description: "[!DNL Adobe Experience Manager]個2020.5.0版as a Cloud Service發行說明。"
 exl-id: 8570d2c3-6d55-4914-94b2-f5d162e0c285
 feature: Release Information
 role: Admin
@@ -11,7 +11,7 @@ ht-degree: 92%
 
 ---
 
-# AEMas a Cloud Service2020.5.0版發行說明 {#release-notes}
+# AEM as a Cloud Service 2020.5.0版發行說明 {#release-notes}
 
 此頁面概述 Experience Manager as a Cloud Service 2020.5.0 版的一般發行說明。
 
@@ -30,7 +30,7 @@ ht-degree: 92%
 * MSM - 從即時副本來源轉出即時副本元件後，同一元件現在會重新命名為 *_msm_moved*。
 
 
-## Cloud Manager新增功能 {#cloud-manager}
+## Cloud Manager的新增功能 {#cloud-manager}
 
 請詳閱本節，了解 AEM as a Cloud Service 2020.5.0 版中 Cloud Manager 的新增功能和更新。
 

@@ -25,15 +25,15 @@ ht-degree: 11%
 
 工作流程可從以下位置啟動：
 
-* [網站主控台](#starting-a-workflow-from-the-sites-console).
-* [編輯頁面時，從「頁面資訊」](#starting-a-workflow-from-the-page-editor).
+* [網站主控台](#starting-a-workflow-from-the-sites-console)。
+* [編輯頁面時，從頁面資訊](#starting-a-workflow-from-the-page-editor)。
 
 >[!NOTE]
 >
 >另請參閱：
 >
 >* 如何將工作流程套用至DAM資產。
->* [使用專案工作流程](/help/sites-cloud/authoring/projects/workflows.md).
+>* [使用專案工作流程](/help/sites-cloud/authoring/projects/workflows.md)。
 
 <!-- 
 >* [How to apply workflows to DAM assets](/help/assets/assets-workflow.md).
@@ -52,46 +52,46 @@ ht-degree: 11%
 
 您可以從以下其中一項啟動工作流程：
 
-* [「網站」工具列的「建立」選項](#starting-a-workflow-from-the-sites-toolbar).
-* [Sites主控台的時間軸邊欄](#starting-a-workflow-from-the-timeline).
+* [網站工具列的[建立]選項](#starting-a-workflow-from-the-sites-toolbar)。
+* [網站主控台的時間軸邊欄](#starting-a-workflow-from-the-timeline)。
 
-在這兩種情況下，您都必須 [在建立工作流程精靈中指定工作流程詳細資訊](#specifying-workflow-details-in-the-create-workflow-wizard).
+在這兩種情況下，您都必須在建立工作流程精靈](#specifying-workflow-details-in-the-create-workflow-wizard)中[指定工作流程詳細資訊。
 
 ### 從網站工具列啟動工作流程 {#starting-a-workflow-from-the-sites-toolbar}
 
-您可以從的工具列啟動工作流程 **網站** 主控台：
+您可以從&#x200B;**網站**&#x200B;主控台的工具列啟動工作流程：
 
 1. 導覽至並選取所需頁面。
 
-1. 從 **建立** 工具列中的選項，您現在可以選取 **工作流程**.
+1. 您現在可以從工具列的「**建立**」選項中選取「**工作流程**」。
 
    ![從工具列建立工作流程](/help/sites-cloud/authoring/assets/workflows-create-from-toolbar.png)
 
-1. 此 **建立工作流程** 精靈會協助您 [指定工作流程詳細資料](#specifying-workflow-details-in-the-create-workflow-wizard).
+1. **建立工作流程**&#x200B;精靈將協助您[指定工作流程詳細資料](#specifying-workflow-details-in-the-create-workflow-wizard)。
 
 ### 從時間表啟動工作流程 {#starting-a-workflow-from-the-timeline}
 
-從 **時間表** 您可以啟動要套用至所選資源的工作流程。
+您可以從&#x200B;**時間表**&#x200B;啟動要套用至您所選資源的工作流程。
 
-1. [選取資源](/help/sites-cloud/authoring/basic-handling.md#viewing-and-selecting-resources) 並開啟 [時間表](/help/sites-cloud/authoring/basic-handling.md#timeline) （或開啟時間表，然後選取資源）。
-1. 註解欄位旁的箭頭可用來顯現 **開始工作流程**：
+1. [選取資源](/help/sites-cloud/authoring/basic-handling.md#viewing-and-selecting-resources)並開啟[時間表](/help/sites-cloud/authoring/basic-handling.md#timeline) （或開啟時間表，然後選取資源）。
+1. 註解欄位的箭頭可用來顯示&#x200B;**啟動工作流程**：
 
    ![從時間表建立工作流程](/help/sites-cloud/authoring/assets/workflows-create-from-timeline.png)
 
-1. 此 **建立工作流程** 精靈會協助您 [指定工作流程詳細資料](#specifying-workflow-details-in-the-create-workflow-wizard).
+1. **建立工作流程**&#x200B;精靈將協助您[指定工作流程詳細資料](#specifying-workflow-details-in-the-create-workflow-wizard)。
 
 ### 在建立工作流程精靈中指定工作流程詳細資訊 {#specifying-workflow-details-in-the-create-workflow-wizard}
 
-此 **建立工作流程** 精靈將協助您選取工作流程並指定必要的詳細資料。
+**建立工作流程**&#x200B;精靈將協助您選取工作流程並指定必要的詳細資料。
 
-開啟 **建立工作流程** 精靈的來源：
+從下列其中一種開啟&#x200B;**建立工作流程**&#x200B;精靈之後：
 
-* [「網站」工具列的「建立」選項](#starting-a-workflow-from-the-sites-toolbar).
-* [Sites主控台的時間軸邊欄](#starting-a-workflow-from-the-timeline).
+* [網站工具列的[建立]選項](#starting-a-workflow-from-the-sites-toolbar)。
+* [網站主控台的時間軸邊欄](#starting-a-workflow-from-the-timeline)。
 
 您可以指定詳細資料：
 
-1. 在 **屬性** 步驟，工作流程的基本選項已定義：
+1. 在&#x200B;**屬性**&#x200B;步驟中，已定義工作流程的基本選項：
 
    * **工作流程模型**
    * **工作流程標題**
@@ -113,17 +113,17 @@ ht-degree: 11%
    >The **Keep workflow package** option is available when the workflow has been configured for [Multi Resource Support](/help/sites-developing/workflows-models.md#configuring-a-workflow-for-multi-resource-support) and multiple resources have been selected.
    -->
 
-   完成後，請使用 **下一個** 以繼續進行。
+   完成後，請使用&#x200B;**下一步**&#x200B;繼續。
 
    ![指定工作流程屬性](/help/sites-cloud/authoring/assets/workflows-properties.png)
 
-1. 在 **範圍** 您可以選取的步驟：
+1. 在&#x200B;**範圍**&#x200B;步驟中，您可以選取：
 
-   * **新增內容** 以開啟 [路徑瀏覽器](/help/sites-cloud/authoring/path-selection.md) 並選取其他資源；在瀏覽器中時，選取 **選取** 以將內容新增至工作流程例項。
+   * **新增內容**&#x200B;以開啟[路徑瀏覽器](/help/sites-cloud/authoring/path-selection.md)並選取其他資源；當瀏覽器中時，選取&#x200B;**選取**&#x200B;以將內容新增至工作流程執行個體。
 
    * 檢視其他動作的現有資源：
 
-      * **包含子項** 指定將該資源的子項包含在工作流程中。
+      * **包含子項**以指定該資源的子項包含在工作流程中。
 對話方塊開啟，可讓您根據下列條件調整選取範圍：
 
          * 僅包含直接子項。
@@ -132,7 +132,7 @@ ht-degree: 11%
 
         任何指定的子項都會新增至將套用工作流程的資源清單中。
 
-      * **移除選取專案** 以從工作流程移除該資源。
+      * **移除選取專案**&#x200B;以從工作流程移除該資源。
 
    ![定義工作流程範圍](/help/sites-cloud/authoring/assets/workflows-scope.png)
 
@@ -140,10 +140,10 @@ ht-degree: 11%
    >
    >如果添加其他資源，則可以使用「上 **一步** 」( **Back** )在「屬性」(Properties)步驟中調整「保留工作流程包 **」(Keep workflow package** )的設定。
 
-1. 使用 **建立** 以關閉精靈並建立工作流程例項。 通知會顯示在Sites主控台中。
+1. 使用&#x200B;**建立**&#x200B;關閉精靈並建立工作流程執行個體。 通知會顯示在Sites主控台中。
 
 ## 從頁面編輯器啟動工作流程 {#starting-a-workflow-from-the-page-editor}
 
-編輯頁面時，您可以選取 **頁面資訊** 工具列中的。 下拉式選單具有選項 **在工作流程中開始**. 這會開啟一個對話方塊，您可以在其中指定所需的工作流程，並視需要指定標題：
+編輯頁面時，您可以從工具列選取&#x200B;**頁面資訊**。 下拉式功能表具有&#x200B;**在工作流程中啟動**&#x200B;選項。 這會開啟一個對話方塊，您可以在其中指定所需的工作流程，並視需要指定標題：
 
 ![從頁面編輯器啟動工作流程](/help/sites-cloud/authoring/assets/workflows-create-page-editor.png)

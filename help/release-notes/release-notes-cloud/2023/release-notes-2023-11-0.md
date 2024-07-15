@@ -92,7 +92,7 @@ ht-degree: 98%
 
 
 
-### 中的新功能 [!DNL Forms] 發行前 {#prerelease-features-forms}
+### [!DNL Forms]發行前版本中的新功能 {#prerelease-features-forms}
 
 * **[將最適化表單與 Microsoft® SharePoint 清單連接](/help/forms/configure-submit-actions-core-components.md#submit-to-sharepoint)**：AEM Forms 提供 OOTB 整合，可將表單資料直接提交到 SharePoint 清單，使您能夠利用 SharePoint 清單功能。您可以將 Microsoft SharePoint 清單設定為表單資料模型的資料來源，並透過&#x200B;**使用表單資料模型提交**&#x200B;這個提交動作，將最適化表單與 SharePoint 清單連接。
 

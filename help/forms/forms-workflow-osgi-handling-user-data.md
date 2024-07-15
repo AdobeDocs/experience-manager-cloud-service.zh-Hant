@@ -1,6 +1,6 @@
 ---
-title: OSGi上以Forms為中心的工作流程 |處理使用者資料
-description: OSGi上以Forms為中心的工作流程 |處理使用者資料
+title: OSGi上以Forms為中心的工作流程 | 處理使用者資料
+description: OSGi上以Forms為中心的工作流程 | 處理使用者資料
 uuid: 6eefbe84-6496-4bf8-b065-212aa50cd074
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -13,19 +13,19 @@ ht-degree: 1%
 ---
 
 
-# OSGi上以Forms為中心的工作流程 |處理使用者資料 {#forms-centric-workflows-on-osgi-handling-user-data}
+# OSGi上以Forms為中心的工作流程 | 處理使用者資料 {#forms-centric-workflows-on-osgi-handling-user-data}
 
 以Forms為中心的AEM工作流程可讓您自動執行以Forms為中心的真實商業流程。 工作流程由一系列步驟組成，這些步驟會以關聯工作流程模型中指定的順序執行。 每個步驟都會執行特定動作，例如將任務指派給使用者或傳送電子郵件訊息。 工作流程可與存放庫中的資產、使用者帳戶和服務互動。 因此，工作流程可以協調涉及Experience Manager任何方面的複雜活動。
 
 可透過下列任何方法觸發或啟動以表單為中心的工作流程：
 
 * 從AEM收件匣提交應用程式
-* 從AEM提交申請 [!DNL Forms] 應用程式
+* 從AEM [!DNL Forms]應用程式提交應用程式
 * 提交最適化表單
 * 使用watched資料夾
 * 提互動動式通訊或信件
 
-如需以Forms為中心的AEM工作流程和功能的詳細資訊，請參閱 [OSGi上以Forms為中心的工作流程](aem-forms-workflow.md).
+如需以Forms為中心的AEM工作流程與功能的詳細資訊，請參閱OSGi上的[以Forms為中心的工作流程](aem-forms-workflow.md)。
 
 ## 使用者資料和資料存放區 {#user-data-and-data-stores}
 
@@ -45,24 +45,24 @@ ht-degree: 1%
    <td><b>AEM 6.3 [!DNL Forms]</b></td>
   </tr>
   <tr>
-   <td><strong>工作流程 <br /> 例項</strong></td>
+   <td><strong>工作流程<br />執行個體</strong></td>
    <td>/var/workflow/instances/[server_id]/&lt;date&gt;/[workflow-instance]/</td>
    <td>/etc/workflow/instances/[server_id]/[date]/[workflow-instance]/</td>
   </tr>
   <tr>
-   <td><strong>裝載</strong></td>
+   <td><strong>總額</strong></td>
    <td>/var/fd/dashboard/payload/[server_id]/[date]/<br /> [payload-id]/</td>
    <td>/etc/fd/dashboard/payload/[server_id]/[date]/<br /> [payload-id]/</td>
   </tr>
   <tr>
    <td><strong>草稿</strong></td>
    <td>/var/fd/dashboard/instances/[server_id]/<br /> [date]/[workflow-instance]/draft/[workitem]/</td>
-   <td>/etc/fd/dashboard/instances/[server_id]/<br /> [date]/[workflow-instance]/draft/[workitem]/</td>
+   <td>/etc/fd/dashboard/instances/[server_id]/<br /> [日期]/[workflow-instance]/draft/[workitem]/</td>
   </tr>
   <tr>
-   <td><strong>歷史</strong></td>
-   <td>/var/fd/dashboard/instances/[server_id]/<br /> [日期]/[workflow_instance]/history/</td>
-   <td>/etc/fd/dashboard/instances/[server_id]/<br /> [日期]/[workflow_instance]/history/</td>
+   <td><strong>記錄</strong></td>
+   <td>/var/fd/dashboard/instances/[server_id]/<br /> [date]/[workflow_instance]/history/</td>
+   <td>/etc/fd/dashboard/instances/[server_id]/<br /> [date]/[workflow_instance]/history/</td>
   </tr>
  </tbody>
 </table>
@@ -73,16 +73,16 @@ ht-degree: 1%
 
 但是，在下列情況下識別與啟動器相關聯的工作流程時，您無法識別或結果可能模稜兩可：
 
-* **透過watched資料夾觸發的工作流程**：如果工作流程是由watched資料夾觸發，則無法使用啟動器識別工作流程執行個體。 在此情況下，使用者資訊會編碼在儲存的資料中。
-* **從發佈AEM執行個體初始的工作流程**：從AEM發佈執行個體提交Adaptive Forms或信函時，所有工作流程執行個體都是使用服務使用者建立的。 在這些情況下，不會在工作流程例項資料中擷取登入使用者的使用者名稱。
+* **透過watched資料夾觸發的工作流程**：如果工作流程是由watched資料夾觸發，則無法使用工作流程執行個體的啟動器來識別工作流程執行個體。 在此情況下，使用者資訊會編碼在儲存的資料中。
+* **從發佈AEM執行個體啟動的工作流程**：從AEM發佈執行個體提交最適化Forms或信函時，所有工作流程執行個體都是使用服務使用者建立的。 在這些情況下，不會在工作流程例項資料中擷取登入使用者的使用者名稱。
 
 ### 存取使用者資料 {#access}
 
 若要識別及存取為工作流程執行個體儲存的使用者資料，請執行下列步驟：
 
-1. 在AEM編寫執行個體上，前往 `https://'[server]:[port]'/crx/de` 並導覽至 **[!UICONTROL 「工具」>「查詢」]**.
+1. 在AEM作者執行個體上，前往`https://'[server]:[port]'/crx/de`並瀏覽至&#x200B;**[!UICONTROL 工具>查詢]**。
 
-   選取 **[!UICONTROL SQL2]** 從 **[!UICONTROL 型別]** 下拉式清單。
+   從&#x200B;**[!UICONTROL 型別]**&#x200B;下拉式清單中選取&#x200B;**[!UICONTROL SQL2]**。
 
 1. 根據可用的資訊，執行下列其中一個查詢：
 
@@ -96,15 +96,15 @@ ht-degree: 1%
 
    查詢會傳回指定工作流程發起人或目前工作流程受指派人之所有工作流程執行個體的位置。
 
-   例如，下列查詢會從以下位置傳回兩個工作流程例項路徑： `/var/workflow/instances` 工作流程發起人的節點 `srose`.
+   例如，下列查詢會從工作流程啟動器為`srose`的`/var/workflow/instances`節點傳回兩個工作流程執行個體路徑。
 
-   ![workflow-instance](assets/workflow-instance.png)
+   ![工作流程執行個體](assets/workflow-instance.png)
 
 1. 移至查詢傳回的工作流程例項路徑。 status屬性顯示工作流程執行個體的目前狀態。
 
    ![狀態](assets/status.png)
 
-1. 在工作流程例項節點中，導覽至 `data/payload/`. 此 `path` 屬性會儲存工作流程例項之裝載的路徑。 您可以導覽至路徑，以存取裝載中儲存的資料。
+1. 在工作流程執行個體節點中，瀏覽至`data/payload/`。 `path`屬性會儲存工作流程執行個體之裝載的路徑。 您可以導覽至路徑，以存取裝載中儲存的資料。
 
    ![payload-path](assets/payload-path.png)
 
@@ -120,45 +120,45 @@ ht-degree: 1%
 
    >[!NOTE]
    >
-   >AEM [!DNL Forms] 應用程式也會以離線模式儲存資料。 工作流程例項的資料可能會儲存在本機上的個別裝置上，然後會被提交至 [!DNL Forms] server （應用程式與伺服器同步時）。
+   >AEM [!DNL Forms]應用程式也會以離線模式儲存資料。 工作流程執行個體的資料可能會儲存在個別裝置上，並在應用程式與伺服器同步時，提交至[!DNL Forms]伺服器。
 
 ### 刪除使用者資料 {#delete-user-data}
 
 您必須是AEM管理員，才能執行下列步驟，從工作流程例項刪除使用者資料：
 
-1. 請依照中的指示操作 [存取使用者資料](forms-workflow-osgi-handling-user-data.md#access) 並注意下列事項：
+1. 請依照[存取使用者資料](forms-workflow-osgi-handling-user-data.md#access)中的指示操作，並注意下列事項：
 
    * 與使用者相關聯的工作流程例項的路徑
    * 工作流程例項的狀態
    * 工作流程例項裝載的路徑
    * 工作流程例項的草稿和歷程記錄的路徑
 
-1. 對中的工作流程例項執行此步驟 **執行中**， **已暫停**，或 **過時** 狀態：
+1. 針對&#x200B;**正在執行**、**已暫停**&#x200B;或&#x200B;**過時**&#x200B;狀態的工作流程執行個體執行此步驟：
 
-   1. 前往 `https://'[server]:[port]'/aem/start.html` 並使用管理員認證登入。
-   1. 瀏覽至 **[!UICONTROL 工具>工作流程>例項]**.
-   1. 選取使用者的相關工作流程例項，然後選取 **[!UICONTROL 終止]** 終止執行中的例項。
+   1. 前往`https://'[server]:[port]'/aem/start.html`並使用系統管理員認證登入。
+   1. 瀏覽至&#x200B;**[!UICONTROL 工具>工作流程>執行個體]**。
+   1. 選取使用者的相關工作流程執行個體，並選取&#x200B;**[!UICONTROL 終止]**&#x200B;以終止執行中的執行個體。
 
-      如需有關使用工作流程例項的詳細資訊，請參閱 [管理工作流程例項](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/workflows/overview.html#authoring).
+      如需有關使用工作流程執行個體的詳細資訊，請參閱[管理工作流程執行個體](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/workflows/overview.html#authoring)。
 
-1. 前往 [!DNL CRXDE Lite] 導覽至工作流程例項的裝載路徑，然後刪除 `payload` 節點。
-1. 導覽至工作流程例項的草稿路徑，並刪除 `draft` 節點。
-1. 導覽至工作流程例項的歷程記錄路徑，並刪除 `history` 節點。
-1. 導覽至工作流程例項的工作流程例項路徑，然後刪除 `[workflow-instance-ID]` 工作流程的節點。
+1. 前往[!DNL CRXDE Lite]主控台，導覽至工作流程執行個體的裝載路徑，然後刪除`payload`節點。
+1. 導覽至工作流程執行個體的草稿路徑，並刪除`draft`節點。
+1. 導覽至工作流程執行個體的歷程記錄路徑，並刪除`history`節點。
+1. 導覽至工作流程執行個體的工作流程執行個體路徑，並刪除工作流程的`[workflow-instance-ID]`節點。
 
    >[!NOTE]
    >
    >刪除工作流程例項節點將會移除所有工作流程參與者的工作流程例項。
 
 1. 針對已識別的使用者之所有工作流程例項，重複步驟2至6。
-1. 識別並刪除AEM中的離線草稿和提交資料 [!DNL Forms] 工作流程參與者的應用程式寄件匣，以避擴音交至伺服器。
+1. 識別並刪除來自工作流程參與者AEM [!DNL Forms]應用程式寄件匣的離線草稿與提交資料，以避擴音交至伺服器。
 
 您也可以使用API來存取及移除節點和屬性。 如需詳細資訊，請參閱下列檔案。
 
 * [如何以程式設計方式存取AEM JCR](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/access-jcr.html?lang=en#platform)
-* [移除節點和屬性](https://docs.adobe.com/docs/en/spec/jcr/2.0/10_Writing.html#10.9%20Removing%20Nodes%20and%20Properties)
+* [正在移除節點和屬性](https://docs.adobe.com/docs/en/spec/jcr/2.0/10_Writing.html#10.9%20Removing%20Nodes%20and%20Properties)
 * [API參考](https://helpx.adobe.com/experience-manager/6-3/sites-developing/reference-materials/javadoc/overview-summary.html)
 
 >[!MORELIKETHIS]
 >
->* [使用AEM Forms工作流程實現業務流程自動化](/help/forms/aem-forms-workflow.md)
+>* [使用AEM Forms工作流程進行商務程式自動化](/help/forms/aem-forms-workflow.md)

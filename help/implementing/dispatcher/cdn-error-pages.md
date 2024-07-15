@@ -1,6 +1,6 @@
 ---
 title: 設定CDN錯誤頁面
-description: 瞭解如何在自行託管的儲存體(例如Amazon S3或Azure Blob儲存體)中託管靜態檔案，並在使用Cloud Manager設定管道部署的設定檔案中參照這些檔案，以覆寫預設錯誤頁面。
+description: 瞭解如何在自行託管的儲存體(例如Amazon S3或Azure Blob儲存體)中託管靜態檔案，並在使用Cloud Manager設定管道部署的設定檔案中參照這些檔案，藉此覆寫預設錯誤頁面。
 feature: Dispatcher
 exl-id: 1ecc374c-b8ee-41f5-a565-5b36445d3c7c
 role: Admin
@@ -13,7 +13,7 @@ ht-degree: 5%
 
 # 設定CDN錯誤頁面 {#cdn-error-pages}
 
-萬一發生下列罕見情況 [Adobe管理的CDN](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) 無法連線至AEM來源，CDN預設會提供不具品牌的一般錯誤頁面，指出無法連線至伺服器。 您可以將靜態檔案託管於自行託管的儲存體(例如Amazon S3或Azure Blob儲存體)中，並在使用部署的設定檔案中參照這些檔案，藉此覆寫預設錯誤頁面。 [Cloud Manager設定管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline).
+萬一[Adobe管理的CDN](/help/implementing/dispatcher/cdn.md#aem-managed-cdn)無法連線至AEM來源，CDN預設會提供不記名的一般錯誤頁面，指出無法連線至伺服器。 您可以在自行託管的儲存體(例如Amazon S3或Azure Blob儲存體)中託管靜態檔案，並在使用[Cloud Manager設定管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline)部署的設定檔案中參照這些檔案，藉此覆寫預設錯誤頁面。
 
 ## 設定 {#setup}
 
@@ -26,9 +26,9 @@ config/
      cdn.yaml
 ```
 
-* 此 `cdn.yaml` 設定檔案應同時包含中繼資料和下列範例所述的規則。 此 `kind` 引數應設為 `CDN` 而版本應設為結構描述版本，目前為 `1`.
+* `cdn.yaml`設定檔應同時包含中繼資料及下列範例中說明的規則。 `kind`引數應設為`CDN`，而版本應設為結構描述版本，目前為`1`。
 
-* 在Cloud Manager中建立目標部署設定管道。 另請參閱 [設定生產管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) 和 [設定非生產管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md).
+* 在Cloud Manager中建立目標部署設定管道。 請參閱[設定生產管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)和[設定非生產管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)。
 
 **附註**
 

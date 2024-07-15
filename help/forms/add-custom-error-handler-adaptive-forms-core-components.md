@@ -194,7 +194,7 @@ AEM Forms 為表單提交提供現成可用的成功和錯誤處理常式。這�
 如果錯誤回應是在標準結構描述中或是伺服器端驗證失敗，則系統會支援預設錯誤處理常式以顯示欄位的錯誤訊息。
 若要了解如何使用採用[規則編輯器調用服務](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-rules-and-use-expressions-in-an-adaptive-form/rule-editor.html?lang=zh-Hant#invoke)動作的預設錯誤處理常式，請以含有兩個欄位的簡單最適化表單為例 (**寵物 ID** 和&#x200B;**寵物名稱**)，並在「**寵物 ID**」欄位使用預設的錯誤處理常式，查看為調用外部服務所設定 REST 端點傳回的各種錯誤，例如 `200 - OK`、`404 - Not Found`、`400 - Bad Request`。要使用規則編輯器的調用服務操作添加默認錯誤處理程序，請執行以下步驟：
 
-1. 在撰寫模式中開啟最適化表單，選取表單元件，然後選取 **[!UICONTROL 規則編輯器]** 以開啟規則編輯器。
+1. 以編寫模式開啟最適化表單，選取表單元件，然後選取&#x200B;**[!UICONTROL 規則編輯器]**&#x200B;以開啟規則編輯器。
 1. 選取「**[!UICONTROL 建立]**」。
 1. 在「**何時**」規則部分中建立條件。例如，[寵物 ID 欄位名稱&#x200B;]****&#x200B;何時變更。「選取」從「**選取狀態**」下拉式清單變更「選取」。
 1. 在「**然後**」部分，從「**選取動作**」下拉式清單中選取「**[!UICONTROL 調用服務]**」。
@@ -237,7 +237,7 @@ AEM Forms 為表單提交提供現成可用的成功和錯誤處理常式。這�
 1. 導覽至 `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/experience-league/` 並建立一個名為 `clientlibs` 的 `ClientLibraryFolder` 檔案夾。
 1. 建立一個名為 `js` 的檔案夾。
 1. 導覽至 `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/clientlibs/js` 檔案夾。
-1. 新增JavaScript檔案，例如， `function.js`. 該檔案包含自訂錯誤處理常式的代碼。
+1. 新增JavaScript檔案，例如`function.js`。 該檔案包含自訂錯誤處理常式的代碼。
 讓我們將以下代碼新增至 JavaScript 檔案中，以便在瀏覽器主控台中顯示從 REST 服務端點接收到的回應和標頭。
 
    ```javascript
@@ -256,7 +256,7 @@ AEM Forms 為表單提交提供現成可用的成功和錯誤處理常式。這�
        return true; // true - call default error handler, false - don't call default error handler.
    }
    ```
-   在上面的程式碼中， `return true` 自動叫用預設的錯誤處理常式。 若要防止預設呼叫預設錯誤處理常式，請包括 `return false`.
+   在上述程式碼中，`return true`會自動叫用預設的錯誤處理常式。 若要防止預設呼叫預設錯誤處理常式，請包含`return false`。
 
    >[!NOTE]
    >
@@ -302,7 +302,7 @@ AEM Forms 為表單提交提供現成可用的成功和錯誤處理常式。這�
 
 若要使用自訂錯誤處理常式，請使用&#x200B;**[!UICONTROL 規則編輯器調用服務]**&#x200B;行動：
 
-1. 在撰寫模式中開啟最適化表單，選取表單元件，然後選取 **[!UICONTROL 規則編輯器]** 以開啟規則編輯器。
+1. 以編寫模式開啟最適化表單，選取表單元件，然後選取&#x200B;**[!UICONTROL 規則編輯器]**&#x200B;以開啟規則編輯器。
 1. 選取「**[!UICONTROL 建立]**」。
 1. 在「**何時**」規則部分中建立條件。例如，當&#x200B;**[寵物 ID 欄位名稱]**&#x200B;已變更，請從「**選擇狀態**」下拉式清單選取「**已變更**」。
 1. 在「**然後**」部分，從「**選取動作**」下拉式清單中選取「**[!UICONTROL 調用服務]**」。

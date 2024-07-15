@@ -14,7 +14,7 @@ ht-degree: 3%
 
 # 分析內容片段結構 {#analyzing-content-fragments-structure}
 
-內容片段是專為 [使用GraphQL的Headless傳遞](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md). 這表示它們可以具有多層結構。
+內容片段是專為使用GraphQL](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md)的[Headless傳遞所設計。 這表示它們可以具有多層結構。
 
 Experience Manager (AEM)提供數種檢視和分析片段結構的方法。
 
@@ -29,8 +29,8 @@ Experience Manager (AEM)提供數種檢視和分析片段結構的方法。
 
 ## 結構樹 {#structure-tree}
 
-開啟 **樹狀結構** 標籤以顯示內容片段的階層結構及其參考。 使用連結圖示開啟參照。
+從編輯器工具列開啟&#x200B;**結構樹狀結構**&#x200B;標籤，以顯示內容片段及其參照的階層結構。 使用連結圖示開啟參照。
 
 例如：
 
-![內容片段編輯器 — 結構樹](assets/cf-authoring-structure-tree.png)
+![內容片段編輯器 — 結構樹狀結構](assets/cf-authoring-structure-tree.png)

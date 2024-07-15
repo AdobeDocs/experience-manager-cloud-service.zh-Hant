@@ -31,9 +31,9 @@ AEM Forms提供多個API來提交表單、處理檔案和轉譯檔案。 有些A
 
 帳單API不考慮頁數、檔案或表單的長度，或轉譯檔案的最終格式。 交易報表將交易分為兩個類別：「Forms已提交」和「檔案已呈現」。
 
-* **Forms已提交：** 若從使用AEM Forms建立的任何型別的表單提交資料，且資料已提交至任何資料儲存庫或資料庫，則視為表單提交。 例如，提交最適化表單或表單集會視為已提交的表單。 如果表單集有5個表單，在提交表單集時，交易報告服務將其計為5個提交。
+* **Forms已提交：**&#x200B;從使用AEM Forms建立的任何型別的表單提交資料，且資料已提交至任何資料儲存庫或資料庫時，即視為表單提交。 例如，提交最適化表單或表單集會視為已提交的表單。 如果表單集有5個表單，在提交表單集時，交易報告服務將其計為5個提交。
 
-* **已轉譯的檔案：** 透過結合範本和資料來產生檔案、以數位方式簽署或認證檔案、使用檔案服務的計費檔案服務API，或將檔案從一種格式轉換為另一種格式，均被視為檔案已呈現。
+* **已轉譯的檔案：**&#x200B;透過結合範本和資料來產生檔案、以數位方式簽署或認證檔案、使用檔案服務的計費檔案服務API，或將檔案從一種格式轉換為另一種格式，均被視為已轉譯的檔案。
 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_submission_graph_en"
@@ -461,7 +461,7 @@ AEM Forms提供多個API來提交表單、處理檔案和轉譯檔案。 有些A
 
 當您執行下列一或多個作業時，叫用API的使用量會計為交易：
 
-1. 從非PDF格式轉換成PDF格式。 <!--For instance, the conversion from XDP format to PDF format, catering to both interactive and non-interactive forms of communication, and the conversion from Word to PDF.-->
+1. 從非PDF格式轉換成PDF格式。<!--For instance, the conversion from XDP format to PDF format, catering to both interactive and non-interactive forms of communication, and the conversion from Word to PDF.-->
 1. 從PDF格式轉換為PDF/A格式。
 1. 從PDF格式轉換為非PDF格式。 範例包括從PDF到影像格式的轉換或從PDF到文字格式的轉換。
 
@@ -495,7 +495,7 @@ AEM Forms提供多個API來提交表單、處理檔案和轉譯檔案。 有些A
 
 ## 可記帳資料擷取API {#billable-data-capture-apis}
 
-所有最適化表單的提交事件都會入帳為交易。 依預設，PDF表單的提交不會作為交易入帳。 使用提供的 [交易錄製器API](record-transaction-custom-implementation.md) 將PDF forms提交記錄為交易。
+所有最適化表單的提交事件都會入帳為交易。 依預設，PDF表單的提交不會作為交易入帳。 使用提供的[交易錄製器API](record-transaction-custom-implementation.md)，將PDF forms提交記錄為交易。
 
 ### 最適化表單 {#adaptive-forms}
 
@@ -647,7 +647,7 @@ Assign task and document services steps of Form-centric AEM Workflows on OSGi an
 
 ## 將可記帳API記錄為自訂程式碼的交易 {#recording-billable-apis-as-transactions-for-custom-code}
 
-提交PDF表單、使用代理程式UI預覽互動式通訊、使用非標準表單提交和自訂實施等動作不會計為交易。 AEM Forms提供API來記錄此類動作，例如交易。 您可以從自訂實施呼叫API至 [記錄交易](/help/forms/record-transaction-custom-implementation.md).
+提交PDF表單、使用代理程式UI預覽互動式通訊、使用非標準表單提交和自訂實施等動作不會計為交易。 AEM Forms提供API來記錄此類動作，例如交易。 您可以從自訂實作呼叫API以[記錄交易](/help/forms/record-transaction-custom-implementation.md)。
 
 ## 相關文章 {#related-articles}
 

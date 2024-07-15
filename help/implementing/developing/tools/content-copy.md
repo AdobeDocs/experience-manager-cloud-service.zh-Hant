@@ -1,6 +1,6 @@
 ---
 title: 內容複製工具
-description: 內容複製工具可讓使用者隨選從AEMas a Cloud Service的生產環境複製可變內容，以降低環境等級以進行測試。
+description: 內容複製工具可讓使用者根據需求，從AEM as a Cloud Service上的生產環境複製可變內容，以便用於測試目的的較低環境。
 exl-id: 5883e4bc-9861-498e-bd35-32ff03d901cc
 feature: Developing
 role: Admin, Architect, Developer
@@ -13,13 +13,13 @@ ht-degree: 33%
 
 # 內容複製工具 {#content-copy}
 
-內容複製工具可讓使用者隨選從AEMas a Cloud Service的生產環境複製可變內容，以降低環境等級以進行測試。
+內容複製工具可讓使用者根據需求，從AEM as a Cloud Service上的生產環境複製可變內容，以便用於測試目的的較低環境。
 
 ## 簡介 {#introduction}
 
-目前的真實資料對於測試、驗證和用戶接受度很有價值。內容複製工具可讓您將內容從生產AEMas a Cloud Service環境複製到測試、開發或 [快速開發環境(RDE)](/help/implementing/developing/introduction/rapid-development-environments.md) 用於此類測試的環境。
+目前的真實資料對於測試、驗證和用戶接受度很有價值。內容複製工具可讓您將內容從生產AEM as a Cloud Service環境複製到測試、開發或[快速開發環境(RDE)](/help/implementing/developing/introduction/rapid-development-environments.md)環境，以進行此類測試。
 
-要複製的內容由內容集定義。內容集包含JCR路徑清單，這些路徑包含要從來源製作服務環境複製到同一Cloud Manager程式中目標製作服務環境的可變內容。 內容集中允許使用以下路徑。
+要複製的內容由內容集定義。內容集包含JCR路徑清單，這些路徑包含要從來源製作服務環境複製到相同Cloud Manager程式中目標製作服務環境的可變內容。 內容集中允許使用以下路徑。
 
 ```text
 /content
@@ -43,7 +43,7 @@ ht-degree: 33%
 | 建立和修改[內容集](#create-content-set) | 不需要 | 必填 |
 | 開始獲取消[內容副本程序](#copy-content) | 必填 | 必填 |
 
-如需許可權以及如何設定許可權的詳細資訊，請參閱 [AEMas a Cloud Service團隊和產品設定檔](/help/onboarding/aem-cs-team-product-profiles.md).
+如需許可權及其設定方式的詳細資訊，請參閱[AEM as a Cloud Service團隊和產品設定檔](/help/onboarding/aem-cs-team-product-profiles.md)。
 
 ## 建立內容集 {#create-content-set}
 
@@ -51,31 +51,31 @@ ht-degree: 33%
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織和計畫。
 
-1. 使用側邊導覽面板，導覽至 **內容集** 標籤從 **概觀** 頁面。
+1. 使用側邊導覽面板，從&#x200B;**總覽**&#x200B;頁面導覽至&#x200B;**內容集**&#x200B;索引標籤。
 
-1. 在熒幕的右上方，按一下 **新增內容集**.
+1. 在熒幕的右上方，按一下&#x200B;**新增內容集**。
 
    ![內容集](assets/content-sets.png)
 
-1. 在 **詳細資料** 標籤中，提供內容集的名稱和說明，然後選取 **繼續**.
+1. 在精靈的&#x200B;**詳細資料**&#x200B;索引標籤上，提供內容集的名稱和說明，並選取&#x200B;**繼續**。
 
    ![內容詳細資料](assets/add-content-set-details.png)
 
 1. 在精靈上的&#x200B;**內容路徑**&#x200B;索引標籤，指定要包含在內容集中的可變內容路徑。
 
    1. 在&#x200B;**新增包含路徑**&#x200B;中輸入路徑欄位。
-   1. 按一下 **新增路徑** 將路徑新增至內容集。
-   1. 按一下 **新增路徑** 如有必要，請再次提供。
+   1. 按一下&#x200B;**新增路徑**，將路徑新增至內容集。
+   1. 視需要再次按一下&#x200B;**新增路徑**。
       * 最多允許50個路徑。
 
    ![新增路徑至內容集](assets/add-content-set-paths.png)
 
 1. 如果您必須調整或限制內容集，則可以排除子路徑。
 
-   1. 在包含的路徑清單中，按一下 **新增排除子路徑** ，位於您要限制的路徑旁。
+   1. 在包含的路徑清單中，按一下您想要限制的路徑旁的&#x200B;**新增排除子路徑**。
    1. 在選取的路徑下輸入要排除的子路徑。
-   1. 選取 **排除路徑**.
-   1. 選取 **新增排除子路徑** 同樣地，以視需要新增其他要排除的路徑。
+   1. 選取&#x200B;**排除路徑**。
+   1. 再次選取&#x200B;**新增排除子路徑**&#x200B;以視需要新增要排除的其他路徑。
       * 排除的路徑必須相對於包含的路徑。
       * 排除的路徑數量沒有限制。
 
@@ -84,17 +84,17 @@ ht-degree: 33%
 1. 您可以視需要編輯指定的路徑。
 
    1. 按一下已排除子路徑旁邊的X，以便刪除它們。
-   1. 按一下路徑旁的省略符號按鈕，以便您顯示 **編輯** 和 **刪除** 選項。
+   1. 按一下路徑旁的省略符號按鈕，即可顯示&#x200B;**編輯**&#x200B;和&#x200B;**刪除**&#x200B;選項。
 
    ![正在編輯路徑清單](assets/add-content-set-excluded-paths.png)
 
-1. 選取 **建立** 以建立內容集。
+1. 選取&#x200B;**建立**&#x200B;以建立內容集。
 
 內容集現在可用於在環境之間複製內容。
 
 ## 正在編輯內容集 {#edit-content-set}
 
-請依照下列步驟，建立新的內容。不要按一下 **新增內容集**，從主控台選取現有組合，然後選取 **編輯** 從省略符號選單。
+請依照下列步驟，建立新的內容。不要按一下&#x200B;**新增內容集**，請從主控台選取現有內容集，然後從省略符號選單中選取&#x200B;**編輯**。
 
 ![編輯內容集](assets/edit-content-set.png)
 
@@ -105,7 +105,7 @@ ht-degree: 33%
 建立內容集後，您就可以用它來複製內容。 請依照下列步驟操作，以便複製內容。
 
 >[!NOTE]
-> 請勿在環境上使用內容複製，當 [內容轉移](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md) 作業正在該環境中執行。
+> 當[內容轉移](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md)作業正在環境中執行時，請勿在該環境中使用內容複製。
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織和計畫。
 
@@ -134,9 +134,9 @@ ht-degree: 33%
       * 中繼
       * 開發/RDE
 
-1. 如有需要，您也可以選取 **包含存取控制清單** 在復製程式中。
+1. 如有必要，您也可以選擇在復製程式中&#x200B;**包含存取控制清單**。
 
-1. 選取 **複製**.
+1. 選取&#x200B;**複製**。
 
 複製程序開始。複製過程的狀態反映在所選內容集的控制台中。
 
@@ -167,9 +167,9 @@ ht-degree: 33%
 
 如果您在啟動內容復製作業後必須中止該作業，則可選擇取消該作業。
 
-若要這麼做，請在 **複製內容活動** 頁面，選取 **取消** 在您先前啟動的復製程式省略符號選單中的動作。
+若要這麼做，請在&#x200B;**複製內容活動**&#x200B;頁面上，從您先前啟動的復製程式省略符號選單中選取&#x200B;**取消**&#x200B;動作。
 
-![取消內容複製](assets/content-copy-cancel.png)
+![取消內容復本](assets/content-copy-cancel.png)
 
 >[!NOTE]
 >
@@ -181,9 +181,9 @@ ht-degree: 33%
 
 您可以檢查來源和目的地環境的記錄，以瞭解任何已完成的內容復製程式。
 
-若要這麼做，請在 **複製內容活動** 頁面，選取 **記錄檔** 動作來自復製程式的省略符號選單，您要檢閱其記錄檔，然後選擇哪個環境。
+若要這麼做，請在&#x200B;**複製內容活動**&#x200B;頁面上，從您要檢閱記錄檔的復製程式省略符號選單中選取&#x200B;**記錄檔**&#x200B;動作，然後選取哪個環境。
 
-![存取複製內容程式的記錄](assets/copy-content-logs.png)
+![正在存取複製內容程式的記錄檔](assets/copy-content-logs.png)
 
 記錄檔會下載到您的本機電腦。 如果下載未開始，請檢查您的快顯封鎖程式設定。
 

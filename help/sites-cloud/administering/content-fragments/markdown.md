@@ -14,9 +14,9 @@ ht-degree: 4%
 
 # Markdown {#markdown}
 
-當您 [製作](/help/sites-cloud/administering/content-fragments/authoring.md#edit-multi-line-text-fields-plaintext-markdown) 您可能擁有的內容片段 [多行文字欄位](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types) 已使用定義 **預設型別** 之 **Markdown**. 內容片段編輯器使用 *markdown* 語法可讓您輕鬆編寫頁面製作和headless傳送的內容：
+當您[編寫](/help/sites-cloud/administering/content-fragments/authoring.md#edit-multi-line-text-fields-plaintext-markdown)您的內容片段時，您可能會有[多行文字欄位](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)以&#x200B;**Markdown**&#x200B;的&#x200B;**預設型別**&#x200B;定義。 內容片段編輯器使用&#x200B;*Markdown*&#x200B;語法，可讓您輕鬆編寫頁面編寫和Headless傳送的內容：
 
-![編輯器中的Markdown多行文字欄位](/help/sites-cloud/administering/content-fragments/assets/cf-markdown-field-edit.png)
+編輯器中的![Markdown多行文字欄位](/help/sites-cloud/administering/content-fragments/assets/cf-markdown-field-edit.png)
 
 您可以定義：
 
@@ -60,7 +60,7 @@ ht-degree: 4%
 
 您可以建立內嵌和參照連結。
 
-在這兩種樣式中，連結文字會以方括弧分隔 `[]`.
+在這兩種樣式中，連結文字會以方括弧`[]`分隔。
 
 以下是內嵌連結的範例：
 
@@ -130,7 +130,7 @@ ht-degree: 4%
 
 您可以建立已排序和未排序清單。
 
-若要建立未排序清單，請使用清單中專案前的&amp;ast；符號。 例如：
+若要建立未排序清單，請在清單中的專案前使用&amp;amp；ast；符號。 例如：
 
     `* item in list`
 
@@ -166,7 +166,7 @@ ht-degree: 4%
 
     `Keyboard shortcut: Ctrl-B (Cmd-B)`
 
-若要指出程式碼跨度，請用反勾號(&amp;grave；)括住程式碼。 和預先格式化的程式碼區塊不同，程式碼範圍表示一般段落中的程式碼。
+若要指出程式碼範圍，請以反勾號(&amp;amp；grave；)將程式碼換行。 和預先格式化的程式碼區塊不同，程式碼範圍表示一般段落中的程式碼。
 
 例如：
 
@@ -182,7 +182,7 @@ ht-degree: 4%
 
 ## 反斜線逸出 {#backslash-escapes}
 
-您可以使用反斜線逸出產生在格式語法中具有特殊意義的常值字元。 例如，如果您想在文字周圍加上星號(而非HTML標籤)，則可以在星號前使用反斜線，如下所示：
+您可以使用反斜線逸出產生在格式語法中具有特殊意義的常值字元。 例如，如果您想在單詞周圍加上常值星號(而不是HTML&lt;em>標籤)，則可以在星號前使用反斜線，如下所示：
 
     `\\*literal asterisks\\*`
 

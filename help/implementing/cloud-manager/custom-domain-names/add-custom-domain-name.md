@@ -22,7 +22,7 @@ ht-degree: 73%
 
 >[!NOTE]
 >
->使用者必須擁有 **企業所有者** 或 **部署管理員** 角色以在Cloud Manager中新增自訂網域名稱，而且您必須使用Fastly CDN。
+>使用者必須擁有&#x200B;**業務負責人**&#x200B;或&#x200B;**部署管理員**&#x200B;角色，才能在Cloud Manager中新增自訂網域名稱，而且您必須使用Fastly CDN。
 
 ## 從域設定頁面新增自訂網域名稱 {#adding-cdn-settings}
 
@@ -34,11 +34,11 @@ ht-degree: 73%
 
 1. 在「**[我的程式](/help/implementing/cloud-manager/navigation.md#my-programs)**」控制台中，選取程式。
 
-1. 瀏覽至，然後選取 **網域設定** 索引標籤進行編輯。
+1. 導覽至左側導覽面板中的選取&#x200B;**網域設定**&#x200B;索引標籤。
 
    ![域設定窗口](/help/implementing/cloud-manager/assets/cdn/cdn-create.png)
 
-1. 按一下 **新增網域** 按鈕以開啟 **新增網域名稱** 對話方塊。
+1. 按一下右上角的&#x200B;**新增網域**&#x200B;按鈕以開啟&#x200B;**新增網域名稱**&#x200B;對話方塊。
 
    ![新增域對話框](/help/implementing/cloud-manager/assets/cdn/add-cdn1.png)
 
@@ -64,7 +64,7 @@ CDN 部署需要有效的 SSL 憑證和成功的 TXT 驗證。這由狀態指示
 
 >[!TIP]
 >
->檢閱以下文章，瞭解需要 [接著新增CNAME或記錄](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md) 以避免在將DNS記錄新增到您的自訂網域時加倍努力。 TXT專案和CNAME或A記錄可以同時設定在管理DNS伺服器上。
+>檢閱下列文章，瞭解是否需要[新增CNAME或下一筆記錄](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md)，以避免將DNS記錄新增至自訂網域時加倍努力。 TXT專案和CNAME或A記錄可以同時設定在管理DNS伺服器上。
 
 >[!TIP]
 >
@@ -90,7 +90,7 @@ CDN 部署需要有效的 SSL 憑證和成功的 TXT 驗證。這由狀態指示
 
    1. 輸入自訂網域名稱。
    1. 從下拉清單中選擇與此名稱關聯的 SSL 憑證。
-   1. 按一下 **+新增**.
+   1. 按一下&#x200B;**+新增**。
 
    ![新增自訂網域名稱](/help/implementing/cloud-manager/assets/cdn/cdn-create3.png)
 

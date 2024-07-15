@@ -36,7 +36,7 @@ ht-degree: 94%
 
 >[!NOTE]
 >
->您的使用者必須是 `project-administrators` 群組以使用語言複製功能。
+>您的使用者必須是`project-administrators`群組的成員才能使用語言副本功能。
 
 ## 最佳做法 {#best-practices}
 

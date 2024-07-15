@@ -37,7 +37,7 @@ java -jar oak-run.jar datastorecheck --consistency --store [<SEGMENT_STORE_PATH>
 java -jar oak-run.jar datastore --check-consistency [<SEGMENT_STORE_PATH>|<MONGO_URI>] --[s3ds|fds|azureds] <DATASTORE_CFG> --out-dir <OUT_DIR> --work-dir <TEMP_DIR> --verbose
 ```
 
-另請參閱 [Oak Runnable Jar](https://github.com/apache/jackrabbit-oak/tree/trunk/oak-run) 以取得更多詳細資料。
+如需詳細資訊，請參閱[Oak Runnable Jar](https://github.com/apache/jackrabbit-oak/tree/trunk/oak-run)。
 
 接著，即可針對上述在 *OUT_DIR* 中建立、有一致性問題的檔案，檢查是否有路徑遺失二進位檔案，以及是否有採取適當操作如透過備份還原、刪除路徑、重新索引等等。
 

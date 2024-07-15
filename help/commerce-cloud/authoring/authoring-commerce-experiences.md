@@ -25,33 +25,33 @@ CIF附加元件以特定於commerce的功能擴充AEM編寫功能。 這可讓�
 
 此選取器提供在目錄結構或全文檢索搜尋中瀏覽，以尋找產品的功能。 具有變數的產品會在「型別」欄中提供資料夾圖示。 按一下資料夾圖示會開啟所選產品的變化。
 
-![產品選取器](../assets/authoring/product-picker.png)
+![產品挑選器](../assets/authoring/product-picker.png)
 
 按一下父類別會將作者帶回產品層級。
 
-![產品選取器](../assets/authoring/product-picker-variation.png)
+![產品挑選器](../assets/authoring/product-picker-variation.png)
 
 **產品Teaser範例**
 
-![未選取的Teaser元件](../assets/authoring/teaser_component_without_selection.png)
+![沒有選取專案的Teaser元件](../assets/authoring/teaser_component_without_selection.png)
 
 此元件的設定對話方塊需要產品。 CIF會使用SKU作為產品識別碼。 作者可以手動輸入SKU或按一下資料夾圖示以開啟產品選擇器。 選取並關閉選擇器後，元件對話方塊會顯示所選產品的名稱
 
-![具有選取範圍的Teaser元件](../assets/authoring/teaser_component_with_selection.png)
+![含選取專案的Teaser元件](../assets/authoring/teaser_component_with_selection.png)
 
 ### 類別選取器 {#category-picker}
 
 此選取器提供在目錄結構中瀏覽以尋找類別的功能。
 
-![類別選取器](../assets/authoring/category-picker.png)
+![類別選擇器](../assets/authoring/category-picker.png)
 
 **類別輪播範例**
 
-![未選取的轉盤元件](../assets/authoring/carousel_component_without_selection.png)
+![轉盤元件未選取](../assets/authoring/carousel_component_without_selection.png)
 
 此元件的設定對話方塊需要1 ： n類別。 CIF會使用UID / ID作為類別識別碼。 作者可以手動輸入UID或按一下資料夾圖示以開啟類別選擇器。 選取並關閉選擇器後，元件對話方塊會顯示所選類別的名稱。
 
-![具有選取範圍的轉盤元件](../assets/authoring/carousel_component_with_selection.png)
+具有選取範圍的![轉盤元件](../assets/authoring/carousel_component_with_selection.png)
 
 ## 頁面編輯器 {#page-editor}
 
@@ -59,7 +59,7 @@ AEM中的頁面編輯器已擴充功能，可存取即時產品資料和相關�
 
 ### 存取產品資料 {#access-product-data}
 
-在編輯器側面板中的「資產」索引標籤中，選取「產品」型別即可存取產品資料。 會從設定的商務端點即時擷取資料。 此篩選器是商務端點上的全文檢索搜尋，以尋找特定產品。
+在編輯器側面板中的「Assets」索引標籤中，選取「產品」型別即可存取產品資料。 會從設定的商務端點即時擷取資料。 此篩選器是商務端點上的全文檢索搜尋，以尋找特定產品。
 
 ![產品資料側面板](../assets/authoring/products-side-panel.png)
 
@@ -73,13 +73,13 @@ CIF產品目錄頁面是即時轉譯的虛擬頁面。 因此，不可能內嵌�
 
     >[！NOTE]
     >
-    >如果同時選取類別和產品，則會採用產品。
+    >如果同時選取類別和產品，則會使用產品。
 
 這會建立預留位置連結，在頁面轉譯時以實際連結取代。
 
 ### 存取關聯產品內容 {#associated-content}
 
-如果編輯器辨識出頁面上的1：n產品，側面板會自動顯示「關聯的Commerce內容」索引標籤。 此索引標籤可讓作者快速存取已使用產品標籤的AEM內容(請參閱 [利用關聯AEM內容豐富產品資料](./enrich-product-associated-content.md) 以取得詳細資訊)。 如果頁面上有多個產品，此索引標籤會提供下拉式清單，以篩選內容型別和特定產品。 使用內容的運作方式與使用「資產」標籤中的內容完全相同。
+如果編輯器辨識出頁面上的1：n產品，側面板會自動顯示「關聯的Commerce內容」索引標籤。 此索引標籤可讓作者快速存取已使用產品標籤的AEM內容(如需詳細資訊，請參閱[以關聯AEM內容擴充產品資料](./enrich-product-associated-content.md))。 如果頁面上有多個產品，此索引標籤會提供下拉式清單，以篩選內容型別和特定產品。 使用內容的運作方式與使用「Assets」標籤中的內容完全相同。
 
 ![產品資料側面板](../assets/authoring/associated-commerce-content-tab.png)
 
@@ -91,7 +91,7 @@ CIF產品目錄頁面是即時轉譯的虛擬頁面。 因此，不可能內嵌�
 
 如果使用的日期已分段，元件會顯示視覺指示器。
 
-![分段指標](../assets/authoring/staged-indicator.png)
+![暫存指標](../assets/authoring/staged-indicator.png)
 
 ## Omnisearch {#omnisearch}
 

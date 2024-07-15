@@ -19,23 +19,23 @@ ht-degree: 5%
 有兩個編輯器可用於內容片段。 本節所述的編輯器：
 
 * 已針對headless內容傳送開發（儘管可用於所有情境）
-* 可從以下網址取得： **內容片段** 主控台
+* 可從&#x200B;**內容片段**&#x200B;主控台使用
 
 此編輯器提供：
 
-* [自動儲存](#saving-autosaving)，以防止編輯意外遺失。
-* [以內容參考的方式內嵌上傳資產](#reference-images)，無需先將它們上傳至資產DAM。
-* [產生變數](#generate-variations-ai) 使用Generative AI根據提示加速內容建立。
-* [預覽](#preview-content-fragment) 內容片段提供的呈現體驗數量。
-* 能夠 [Publish](#publish-content-fragment) 和 [取消發佈](#unpublish-content-fragment) 從編輯器中。
-* 能夠 [檢視並開啟相關的語言副本](#view-language-copies) 在編輯器中。
-* 能夠 [檢視版本詳細資料](#view-version-history) 在編輯器中。 您也可以還原至選取的版本。
-* 能夠 [檢視和開啟父參照](#view-parent-references).
-* 內容片段及其參考的階層式檢視，使用 [樹狀結構](#structure-tree).
+* [自動儲存](#saving-autosaving)，以防止意外遺失編輯。
+* [以內容參考的方式內嵌上傳資產](#reference-images)，無需先上傳至資產DAM。
+* [產生變數](#generate-variations-ai)以使用Generative AI根據提示加速內容建立。
+* 內容片段所傳遞呈現體驗的[預覽](#preview-content-fragment)。
+* 能夠從編輯器[Publish](#publish-content-fragment)和[取消發佈](#unpublish-content-fragment)。
+* 可在編輯器中[檢視及開啟相關的語言副本](#view-language-copies)。
+* 能夠在編輯器中[檢視版本詳細資料](#view-version-history)。 您也可以還原至選取的版本。
+* 能夠[檢視和開啟父系參考](#view-parent-references)。
+* 使用[結構樹狀結構](#structure-tree)的內容片段及其參考的階層檢視。
 
 >[!WARNING]
 >
->本節所述的編輯器為 *僅限* 可在 *線上* Adobe Experience Manager (AEM)as a Cloud Service。
+>本節中說明的編輯器&#x200B;*僅*&#x200B;可在&#x200B;*線上* Adobe Experience Manager (AEM)as a Cloud Service中使用。
 
 ## 內容片段編輯器 {#content-fragment-editor}
 
@@ -44,8 +44,8 @@ ht-degree: 5%
 * 頂端工具列：用於關鍵資訊和動作
    * 內容片段主控台的連結 (首頁圖示)
    * 有關模型和檔案夾的資訊
-   * 連結至 [預覽（如果為模型設定了「預設預覽URL模式」）](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#content-fragment-model-properties)
-   * [Publish](#publish-content-fragment)、和 [取消發佈](#unpublish-content-fragment) 動作
+   * [預覽的連結（如果為模型設定了預設預覽URL模式）](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#content-fragment-model-properties)
+   * [Publish](#publish-content-fragment)和[取消發佈](#unpublish-content-fragment)動作
    * 顯示全部&#x200B;**父參考內容**&#x200B;的選項 (連結圖示)
    * **[狀態](/help/sites-cloud/administering/content-fragments/managing.md#statuses-content-fragments)**&#x200B;片段，以及最後儲存的資訊
    * 用來切換至原始 (以資產為主) 編輯器的切換開關
@@ -55,16 +55,16 @@ ht-degree: 5%
      >原始編輯器會在相同標籤中開啟。 不建議同時開啟兩個編輯器。
 
 * 左面板：顯示內容片段的&#x200B;**[變數](#variations)**&#x200B;及其&#x200B;**欄位**：
-   * 這些連結可用於 [導覽內容片段結構](#navigate-structure)
-* 右側面板：顯示索引標籤 [顯示屬性（中繼資料）和標籤](#view-properties-tags)，此資訊關於 [版本記錄](#view-version-history)，以及與任何專案相關的資訊 [語言副本](#view-language-copies)
+   * 這些連結可用於[瀏覽內容片段結構](#navigate-structure)
+* 右側面板：顯示標籤[，其中顯示屬性（中繼資料）和標籤](#view-properties-tags)、有關[版本歷程記錄](#view-version-history)的資訊，以及與任何[語言副本](#view-language-copies)相關的資訊
    * 在「**屬性**」標籤中，您可以更新片段的「**標題**」和「**說明**」，或者更新「**變數**」
 * 中央面板：顯示所選變數的實際欄位和內容
    * 允許您編輯內容
-   * 如果 **索引標籤預留位置** 欄位會在此顯示的模式中定義，並可用於導覽；欄位會水準顯示或作為下拉式清單顯示。
+   * 如果&#x200B;**標籤預留位置**&#x200B;欄位已在模型中定義，則會顯示在這裡，且可用於導覽；這些欄位將會水準顯示，或作為下拉式清單顯示。
 
   >[!NOTE]
   >
-  >根據基礎模型中的定義，欄位可能會受限於特定型別 [驗證](/help/assets/content-fragments/content-fragments-models.md#validation).
+  >根據基礎模型中的定義，欄位可能會受特定型別的[驗證](/help/assets/content-fragments/content-fragments-models.md#validation)的限制。
 
 ![內容片段編輯器 — 概觀](assets/cf-authoring-overview.png)
 
@@ -74,8 +74,8 @@ ht-degree: 5%
 
 * 包含兩個層級：
 
-   * **[變數](#variations)** 內容片段的
-   * **欄位**  — 由內容片段模型定義，並供每個變數使用
+   * 內容片段的&#x200B;**[變數](#variations)**
+   * **欄位** — 由內容片段模型定義，並由每個變數使用
 
 * 可以包含各種參照。
 
@@ -83,12 +83,12 @@ ht-degree: 5%
 
 在左側面板中，您可以看到：
 
-* 清單 **[變數](#variations)** 已針對此片段建立的：
-   * **主要** 是最初建立內容片段時顯示的變數，您稍後可以新增其他變數
+* 已針對此片段建立的&#x200B;**[變數](#variations)**&#x200B;清單：
+   * **Main**&#x200B;是第一次建立內容片段時出現的變數，您可以稍後新增其他變數
    * 您可以使用「產生變數」(Generate Variations(#generate-variations))來使用Adobe針對特定使用案例建立的提示型範本。
-   * 您也可以 [建立變數](#create-variation)
-* 此 **欄位** 在片段及其變數內：
-   * 圖示會指出 [資料型別](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)
+   * 您也可以[建立變數](#create-variation)
+* 片段中的&#x200B;**欄位**&#x200B;及其變數：
+   * 圖示表示[資料型別](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)
    * 文字是欄位名稱
    * 這些共同提供了中央面板中欄位內容的直接連結（適用於目前的變數）
 
@@ -100,13 +100,13 @@ ht-degree: 5%
 
 ### 結構樹 {#structure-tree}
 
-開啟 **樹狀結構** 標籤以顯示內容片段的階層結構及其參考。 使用連結圖示導覽至參照。
+從編輯器工具列開啟&#x200B;**結構樹狀結構**&#x200B;標籤，以顯示內容片段及其參照的階層結構。 使用連結圖示導覽至參照。
 
-![內容片段編輯器 — 結構樹](assets/cf-authoring-structure-tree.png)
+![內容片段編輯器 — 結構樹狀結構](assets/cf-authoring-structure-tree.png)
 
 >[!NOTE]
 >
->另請參閱 [分析內容片段結構 — 結構樹](/help/sites-cloud/administering/content-fragments/analysis.md#structure-tree) 以取得更多詳細資料。
+>如需詳細資訊，請參閱[分析內容片段結構 — 結構樹狀結構](/help/sites-cloud/administering/content-fragments/analysis.md#structure-tree)。
 
 ## 儲存和自動儲存 {#saving-autosaving}
 
@@ -116,13 +116,13 @@ ht-degree: 5%
 
 ## 變化 {#variations}
 
-[變數](/help/sites-cloud/administering/content-fragments/overview.md#main-and-variations) 是AEM內容片段的重要功能。 它們可讓您建立並編輯 **主要** 用於特定頻道和情境的內容，讓headless內容傳送和頁面製作更加靈活。
+[變數](/help/sites-cloud/administering/content-fragments/overview.md#main-and-variations)是AEM內容片段的重要功能。 它們可讓您建立並編輯&#x200B;**主要**&#x200B;內容的復本，以用於特定管道和情境，使Headless內容傳送和頁面製作更加靈活。
 
 從編輯器中，您可以：
 
-* [建立變數](#create-variation) 的 **主要** 內容
+* 建立&#x200B;**主要**&#x200B;內容的[變數](#create-variation)
 
-* [使用產生變數AI](#generate-variations-ai) 使用Generative AI來使用Adobe為特定使用案例建立的提示型範本。
+* [使用Generative Variations AI](#generate-variations-ai)來使用Generative AI，以使用Adobe針對特定使用案例建立的提示型範本。
 
 * 選取編輯內容所需的變數
 
@@ -134,7 +134,7 @@ ht-degree: 5%
 
 若要建立內容片段的變數：
 
-1. 在左側面板中，選取 **加號** (**建立變數**)的右側 **變數**.
+1. 在左側面板中，選取&#x200B;**變數**&#x200B;右側的&#x200B;**加號** （**建立變數**）。
 
    >[!NOTE]
    >
@@ -142,23 +142,23 @@ ht-degree: 5%
 
    ![內容片段編輯器 — 建立您的第一個變數](assets/cf-authoring-create-variation-01.png)
 
-1. 在對話方塊中，輸入 **標題** ，以及 **說明** 如有需要：
+1. 在對話方塊中，輸入變數的&#x200B;**Title**，並視需要輸入&#x200B;**Description**：
 
-   ![內容片段編輯器 — 「建立變數」對話方塊](assets/cf-authoring-create-variation-02.png)
+   ![內容片段編輯器 — 建立變數對話方塊](assets/cf-authoring-create-variation-02.png)
 
-1. **建立** 變數。 它會出現在清單中。
+1. **建立**&#x200B;變數。 它會出現在清單中。
 
 ### 重新命名變數 {#rename-variation}
 
-若要重新命名 **變數**：
+若要重新命名&#x200B;**變數**：
 
 1. 選取所需的變數。
 
-1. 開啟 **屬性** 標籤。
+1. 開啟右側面板中的&#x200B;**屬性**&#x200B;索引標籤。
 
-1. 更新變數 **標題**.
+1. 更新變數&#x200B;**標題**。
 
-1. 按下 **傳回** 或移至另一個欄位以自動儲存變更。 標題會在 **變數** 面板顯示。
+1. 按下&#x200B;**Return**&#x200B;或移至其他欄位以自動儲存變更。 標題已在左側的&#x200B;**變數**&#x200B;面板中更新。
 
 ### 使用GenAI建立變化並產生變化 {#generate-variations-ai}
 
@@ -168,7 +168,7 @@ ht-degree: 5%
 
 1. 開啟內容片段編輯器。 在標題中，您會找到「產生變數」的進入點：
 
-   ![在內容片段編輯器中產生變體](assets/cfm-generate-variations1.png)
+   ![在內容片段編輯器中產生變數](assets/cfm-generate-variations1.png)
 
 1. 產生變數會在新標籤中開啟。 在左側欄中，您可以看到AEM Cloud例項以及您正在建立內容的內容片段。 選取您要使用的提示，或建立新提示。
 
@@ -176,7 +176,7 @@ ht-degree: 5%
    >
    >目前可用的Adobe提示範本有限，但未來版本將會新增更多範本。
 
-   ![匯出以產生內容片段中的變數](assets/cfm-generate-variations2.png)
+   ![匯出以產生內容片段中的變化](assets/cfm-generate-variations2.png)
 
 1. 透過填寫提示產生內容。 片段中的內容模型將會使用GenAI自動用來產生內容。
 
@@ -184,20 +184,20 @@ ht-degree: 5%
    >
    >我們目前僅支援文字欄位。
 
-   ![匯出以產生內容片段中的變數](assets/cfm-generate-variations3.png)
+   ![匯出以產生內容片段中的變化](assets/cfm-generate-variations3.png)
 
 1. 選取您喜歡的產生變體，然後選取「匯出變數」。 確認內容片段變數的名稱，並選取：
 
    * **匯出**：將變數匯出至內容片段，並停留在產生變數應用程式中。
    * **匯出並開啟**：將變數匯出至內容片段，並開啟新標籤，顯示具有GenAI新變數的內容片段。
 
-     ![匯出以產生內容片段中的變數](assets/cfm-generate-variations4.png)
+     ![匯出以產生內容片段中的變化](assets/cfm-generate-variations4.png)
 
 1. 產生的變化會顯示在主要內容片段編輯器中。
 
-   ![檢視內容片段中的產生變數](assets/cfm-generate-variations5.png)
+   ![檢視內容片段中的產生變化](assets/cfm-generate-variations5.png)
 
-您可以進一步瞭解產生變數 [此處](/help/generative-ai/generate-variations.md).
+您可以在[這裡](/help/generative-ai/generate-variations.md)進一步瞭解產生變數。
 
 ### 刪除變數 {#delete-variation}
 
@@ -205,19 +205,19 @@ ht-degree: 5%
 
     >[！NOTE]
     >
-    >您無法刪除**Main**。
+    >您無法刪除**Main**.
 
 1. 選取變數。
 
-1. 在 **變數** 面板，選取刪除圖示（垃圾桶）：
+1. 在&#x200B;**變數**&#x200B;面板中，選取刪除圖示（垃圾桶）：
 
    ![內容片段編輯器 — 刪除變數圖示](assets/cf-authoring-delete-variation.png)
 
-1. 對話方塊隨即開啟。 選取 **刪除** 以確認動作。
+1. 對話方塊隨即開啟。 選取&#x200B;**刪除**&#x200B;以確認動作。
 
 ## 編輯多行文字欄位 — 純文字或Markdown {#edit-multi-line-text-fields-plaintext-markdown}
 
-**[多行文字](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)** 欄位可以有下列三種格式之一：
+**[多行文字](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)**&#x200B;欄位可以有下列三種格式之一：
 
 * 純文字
 * [Markdown](/help/sites-cloud/administering/content-fragments/markdown.md)
@@ -229,7 +229,7 @@ ht-degree: 5%
 
 ## 編輯多行文字欄位 — Rtf {#edit-multi-line-text-fields-rich-text}
 
-的 **[多行文字](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)** 定義為 **RTF文字**，提供各種功能：
+定義為&#x200B;**RTF**&#x200B;的&#x200B;**[多行文字](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)**&#x200B;欄位可使用各種功能：
 
 * 編輯內容：
    * 還原/重做
@@ -245,7 +245,7 @@ ht-degree: 5%
    * 插入連結
    * 選取並插入影像資產的參照
    * 新增特殊字元
-* [全熒幕編輯器](#full-screen-editor-rich-text)  — 在全熒幕和流量之間切換
+* [全熒幕編輯器](#full-screen-editor-rich-text) — 在全熒幕和流動之間切換
 * [統計資料](#statistics-rich-text)
 * [比較與同步](#compare-and-synchronize-rich-text)
 
@@ -255,7 +255,7 @@ ht-degree: 5%
 
 >[!NOTE]
 >
->多行文字欄位也由適當的欄位表示 [圖示](#fields-datatypes-icons) 在 **欄位** 面板。
+>在&#x200B;**欄位**&#x200B;面板中，多行文字欄位也由適當的[圖示](#fields-datatypes-icons)表示。
 
 ### 全熒幕編輯器 — RTF {#full-screen-editor-rich-text}
 
@@ -267,7 +267,7 @@ ht-degree: 5%
 
 ### 統計資料 — RTF文字 {#statistics-rich-text}
 
-動作 **統計資料** 在多行欄位中顯示一系列文字相關資訊。
+動作&#x200B;**Statistics**&#x200B;會顯示多行欄位中文字的資訊範圍。
 
 例如：
 
@@ -275,11 +275,11 @@ ht-degree: 5%
 
 ### 比較和同步 — RTF {#compare-and-synchronize-rich-text}
 
-動作 **比較** 當您有多行欄位時，可使用 **變數** 開啟。
+當您開啟&#x200B;**變數**&#x200B;時，動作&#x200B;**比較**&#x200B;可用於多行欄位。
 
 這會在全熒幕中開啟多行欄位，並且：
 
-* 顯示兩者的內容 **主要** 和目前的 **變數** 同時，會強調任何差異
+* 同時顯示&#x200B;**主要**&#x200B;和目前&#x200B;**變數**&#x200B;的內容，並反白顯示任何差異
 
 * 差異以顏色表示：
 
@@ -287,18 +287,18 @@ ht-degree: 5%
    * 紅色表示內容已移除（從變數中）
    * 藍色表示取代的文字
 
-* 提供 **同步** 動作，會從以下位置同步內容： **主要** 至目前的變數
+* 提供&#x200B;**同步**&#x200B;動作，將內容從&#x200B;**主要**&#x200B;同步至目前的變數
 
-   * 如果 **主要** 已更新，則這些變更將會轉移至變數
-   * 如果已更新變數，則這些變更將由以下變數的內容覆寫： **主要**
+   * 如果&#x200B;**主要**&#x200B;已更新，則這些變更將會傳輸到變數
+   * 如果已更新變數，則這些變更將會被&#x200B;**主要**&#x200B;的內容覆寫
 
   >[!CAUTION]
   >
-  >同步僅可用於複製變更 *從&#x200B;**主要**至變數*.
+  >同步僅可用於將變更&#x200B;*從&#x200B;**Main**複製到變數*。
   >
-  >正在傳輸變更 *從變數到&#x200B;**主要*** 不提供選項。
+  >將變更&#x200B;*從變化傳輸至&#x200B;**主要***不提供選項。
 
-例如，案例中的變化內容已完全重寫，因此同步將會以來自的內容取代該新內容 **主要**：
+例如，變數內容已完全重寫的情境，因此同步處理會以&#x200B;**主要**&#x200B;的內容取代該新內容：
 
 ![內容片段編輯器 — 比較和同步](assets/cf-authoring-multilinetext-compare.png)
 
@@ -306,7 +306,7 @@ ht-degree: 5%
 
 ### 片段參考 {#fragment-references}
 
-[片段參考](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#fragment-reference-nested-fragments) 可用於：
+[片段參考](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#fragment-reference-nested-fragments)可用於：
 
 * [建立現有內容片段的參考](#create-reference-existing-content-fragment)
 * [建立內容片段，然後參考它](#create-reference-content-fragment)
@@ -316,7 +316,7 @@ ht-degree: 5%
 若要建立現有內容片段的參考：
 
 1. 選取欄位。
-1. 選取 **新增現有片段**.
+1. 選取&#x200B;**新增現有片段**。
 1. 從片段選擇器中選取所需的片段。
 
    >[!NOTE]
@@ -325,30 +325,30 @@ ht-degree: 5%
 
 #### 建立內容片段和參考 {#create-reference-content-fragment}
 
-或者，您可以 [選取 **建立新片段** 以開啟 **建立** 對話方塊](/help/sites-cloud/administering/content-fragments/managing.md#creating-a-content-fragment). 建立後，將參考此片段。
+或者，您可以[選取&#x200B;**建立新片段**&#x200B;以開啟&#x200B;**建立**&#x200B;對話方塊](/help/sites-cloud/administering/content-fragments/managing.md#creating-a-content-fragment)。 建立後，將參考此片段。
 
 ### 內容參考 {#content-references}
 
-[內容參照](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#content-reference) 用於參考其他AEM內容型別，例如影像、頁面和體驗片段。
+[內容參考](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#content-reference)用於參考其他AEM內容型別，例如影像、頁面和體驗片段。
 
 #### 參考影像 {#reference-images}
 
-在 **內容參考** 欄位您可以：
+在&#x200B;**內容參考**&#x200B;欄位中，您可以：
 
 * 已存在於存放庫中的參考資產
-* 將它們直接上傳到欄位；這樣就不需要使用 **Assets** 要上傳的主控台
+* 將它們直接上傳到欄位；如此可避免需要使用&#x200B;**Assets**&#x200B;主控台來上傳
 
   >[!NOTE]
   >
-  >若要直接將影像上傳至 **內容參考** 欄位，it **必須**：
+  >若要將影像直接上傳到&#x200B;**內容參考**&#x200B;欄位，它&#x200B;**必須**：
   >
-  >* 具有 **根路徑** 已定義(在 [內容片段模型](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#content-reference))。 這會指定影像的儲存位置。
-  >* 包含 **影像** 在接受內容型別清單中
+  >* 已定義&#x200B;**根路徑** （在[內容片段模型](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#content-reference)中）。 這會指定影像的儲存位置。
+  >* 在接受的內容型別清單中包含&#x200B;**影像**
 
 若要新增資產，您可以：
 
-* 直接將新的資產檔案（例如，從您的檔案系統）拖放到 **內容參考** 欄位
-* 使用 **新增資產** 動作，然後選取 **瀏覽Assets** 或 **上傳** 若要開啟適當的選取器以供您使用：
+* 將新的資產檔案直接拖放到&#x200B;**內容參考**&#x200B;欄位（例如，從您的檔案系統）
+* 使用&#x200B;**新增資產**&#x200B;動作，然後選取&#x200B;**瀏覽Assets**&#x200B;或&#x200B;**上傳**&#x200B;以開啟適當的選取器供您使用：
 
   ![內容片段編輯器 — 新增資產選項](assets/cf-authoring-add-asset-options.png)
 
@@ -356,18 +356,18 @@ ht-degree: 5%
 
 若要新增對AEM頁面、體驗片段或其他這類內容型別的參照：
 
-1. 選取 **新增內容路徑**.
+1. 選取&#x200B;**新增內容路徑**。
 
 1. 在輸入欄位中新增必要路徑。
 
-1. 確認 **新增**.
+1. 向&#x200B;**新增**&#x200B;確認。
 
 >[!NOTE]
 >
 >此引數不應用於下列專案的參照：
 >
->* 內容片段 — 使用 [片段引用](#fragment-references)
->* 影像 — 使用 [參考影像](#reference-images)
+>* 內容片段 — 使用[片段參考](#fragment-references)
+>* 影像 — 使用[參考影像](#reference-images)
 
 ### 檢視父參照 {#view-parent-references}
 
@@ -387,8 +387,8 @@ ht-degree: 5%
 
 在右側面板的屬性標籤中，可檢視屬性（中繼資料）和標籤。 屬性可以是：
 
-* 針對 **內容片段**  — 如果 **主要** 目前已選取
-* 針對特定 **變數**
+* 針對&#x200B;**內容片段** — 若目前已選取&#x200B;**主要**
+* 針對特定&#x200B;**變數**
 
 ![內容片段編輯器 — 屬性](assets/cf-authoring-properties.png)
 
@@ -404,7 +404,7 @@ ht-degree: 5%
 
 ### 開啟內容片段模型 {#open-content-fragment-model}
 
-當您有 **主要** 選取後，屬性區段中會顯示基礎內容片段模型的名稱。 選取連結圖示，在單獨的標籤中開啟模型。
+當您選取&#x200B;**主要**&#x200B;時，屬性區段中會顯示基礎內容片段模型的名稱。 選取連結圖示，在單獨的標籤中開啟模型。
 
 例如：
 
@@ -412,13 +412,13 @@ ht-degree: 5%
 
 ## 檢視版本記錄 {#view-version-history}
 
-在 **版本記錄** 標籤中，會顯示目前和先前版本的詳細資料：
+在右側面板的&#x200B;**版本記錄**&#x200B;標籤中，會顯示目前版本和先前版本的詳細資料：
 
 >[!NOTE]
 >
 >發佈內容片段時會建立新版本。
 
-![內容片段編輯器 — 版本記錄概觀](assets/cf-authoring-version-history-overview.png)
+![內容片段編輯器 — 版本記錄總覽](assets/cf-authoring-version-history-overview.png)
 
 ### 比較版本 {#compare-version}
 
@@ -428,11 +428,11 @@ ht-degree: 5%
 
 1. 選取版本旁的三點圖示。
 
-1. 選取 **比較**.
+1. 選取&#x200B;**比較**。
 
 ![內容片段編輯器 — 版本記錄比較](assets/cf-authoring-version-history-compare.png)
 
-這會開啟一個檢視，其中顯示內容目前版本與所選內容片段先前版本之間的差異。 從 **有變更的變數** 從下拉式清單中，您可以選取來檢視與主要內容的差異，和/或來自變數的內容。
+這會開啟一個檢視，其中顯示內容目前版本與所選內容片段先前版本之間的差異。 從&#x200B;**含有變更的變數**&#x200B;下拉式清單中，您可以選取檢視與主要內容的差異和/或來自變數的內容。
 
 差異以顏色表示：
 
@@ -449,13 +449,13 @@ ht-degree: 5%
 
 1. 選取版本旁的三點圖示。
 
-1. 選取 **回覆**.
+1. 選取&#x200B;**回覆**。
 
 ![內容片段編輯器 — 版本記錄回覆](assets/cf-authoring-version-history-revert.png)
 
 ## 檢視語言副本 {#view-language-copies}
 
-在 **語言屬性** 任何相關語言副本的標籤詳細資訊都會顯示。 選取連結圖示，即可在個別標籤中開啟副本。
+在&#x200B;**語言屬性**&#x200B;索引標籤中，會顯示任何相關語言副本的詳細資料。 選取連結圖示，即可在個別標籤中開啟副本。
 
 例如：
 
@@ -463,7 +463,7 @@ ht-degree: 5%
 
 >[!NOTE]
 >
->如需有關翻譯內容片段和建立語言副本的詳細資訊，請參閱 [AEM Headless翻譯歷程](/help/journey-headless/translation/overview.md).
+>如需有關翻譯內容片段和建立語言副本的詳細資訊，請參閱[AEM Headless翻譯歷程](/help/journey-headless/translation/overview.md)。
 
 
 ## 預覽您的片段 {#preview-content-fragment}
@@ -473,31 +473,31 @@ ht-degree: 5%
 若要使用此功能，您首先需要：
 
 * 與您的IT團隊合作，設定外部前端應用程式，該應用程式會透過使用其JSON輸出來呈現內容片段。
-* 設定外部前端應用程式時， **預設預覽URL模式** 必須定義為 [適當內容片段模型的屬性](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#properties).
+* 設定外部前端應用程式時，**預設預覽URL模式**&#x200B;必須定義為適當內容片段模式](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#properties)的[屬性。
 
-定義URL後， **預覽** 按鈕作用中。 您可以選取此按鈕來啟動外部應用程式（在單獨的索引標籤中）以呈現內容片段。
+定義URL後，**預覽**&#x200B;按鈕會啟用。 您可以選取此按鈕來啟動外部應用程式（在單獨的索引標籤中）以呈現內容片段。
 
 ## Publish您的片段 {#publish-content-fragment}
 
-您可以 **Publish** 您的片段成為：
+您可以&#x200B;**Publish**&#x200B;您的片段至：
 
 * 預覽例項
 * Publish執行個體
 
-您可以從編輯器或控制檯發佈您的片段。 另請參閱 [發佈和預覽片段](/help/sites-cloud/administering/content-fragments/managing.md#publishing-and-previewing-a-fragment) 以取得完整詳細資訊。
+您可以從編輯器或控制檯發佈您的片段。 如需完整詳細資訊，請參閱[發佈和預覽片段](/help/sites-cloud/administering/content-fragments/managing.md#publishing-and-previewing-a-fragment)。
 
 ## 取消發佈您的片段 {#unpublish-content-fragment}
 
-您也可以 **取消發佈** 您的片段，來自：
+您也可以&#x200B;**取消發佈**&#x200B;您的片段，從以下任一項：
 
 * 預覽例項
 * Publish執行個體
 
-您可以從編輯器或控制檯取消發佈您的片段。 另請參閱 [取消發佈片段](/help/sites-cloud/administering/content-fragments/managing.md#unpublishing-a-fragment) 以取得完整詳細資訊。
+您可以從編輯器或控制檯取消發佈您的片段。 如需完整詳細資訊，請參閱[取消發佈片段](/help/sites-cloud/administering/content-fragments/managing.md#unpublishing-a-fragment)。
 
 ## 欄位、資料型別和圖示 {#fields-datatypes-icons}
 
-此 **欄位** 面板會列出內容片段中的所有欄位。 圖示會指出 **[資料型別](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)**：
+**欄位**&#x200B;面板會列出內容片段中的所有欄位。 圖示表示&#x200B;**[資料型別](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)**：
 
 <table style="table-layout:auto">
  <tbody>
@@ -542,7 +542,7 @@ ht-degree: 5%
    <td><p> <img src="assets/cf-authoring-json-icon.png"> </p></td>
   </tr>
   <tr>
-   <td><p><b>標籤預留位置</b></p><p>雖然不是以實際圖示表示，但 <b>索引標籤預留位置</b> 即會顯示在左側面板中。 <br>它也會在中央面板中呈現(水準顯示或下拉式清單（當有太多無法水準顯示時）。</p> </td>
+   <td><p><b>標籤預留位置</b></p><p>雖然沒有實際圖示表示，但<b>索引標籤預留位置</b>會顯示在左側面板中。 <br>它也顯示在中央面板中，水準顯示或下拉式清單（當太多無法水準顯示時）。</p> </td>
    <td><p> <img src="assets/cf-authoring-tab-icon.png"> </p></td>
   </tr>
  </tbody>
@@ -550,14 +550,14 @@ ht-degree: 5%
 
 ## 很高興知道 {#good-to-know}
 
-* 若要編輯內容片段，您需要 [適當的許可權](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions). 如果您遇到問題，請聯絡您的系統管理員。
+* 若要編輯內容片段，您需要[適當的許可權](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions)。 如果您遇到問題，請聯絡您的系統管理員。
 
-  例如，如果您沒有 `edit` 許可權：編輯器將是唯讀的。
+  例如，如果您沒有`edit`許可權，編輯器將是唯讀的。
 
-* 內容片段模型通常可以定義資料欄位，名為 **標題** 和 **說明**. 如果這些欄位存在，則為使用者定義的欄位，並且可以在以下欄位中更新： *中央面板* 編輯片段時。
+* 內容片段模型通常可以定義名為&#x200B;**Title**&#x200B;和&#x200B;**Description**&#x200B;的資料欄位。 如果這些欄位存在，則為使用者定義的欄位，可以在編輯片段時在&#x200B;*中央面板*&#x200B;中更新。
 
-  內容片段及其變化也有稱為的中繼資料欄位（變化屬性） **標題** 和 **說明**. 這些欄位是任何內容片段不可或缺的一部分，並在片段時最初定義。 它們可以在以下位置更新： *右側面板* 編輯片段時。
+  內容片段及其變化也有稱為&#x200B;**Title**&#x200B;和&#x200B;**Description**&#x200B;的中繼資料欄位（變化屬性）。 這些欄位是任何內容片段不可或缺的一部分，並在片段時最初定義。 編輯片段時，它們可以在&#x200B;*右側面板*&#x200B;中更新。
 
-* 請參閱Assets檔案，以取得以下專案的完整資訊： [原始內容片段編輯器](/help/assets/content-fragments/content-fragments-variations.md)  — 您可透過 **Assets** 主控台與 **內容片段** 主控台。
+* 請參閱Assets檔案以取得[原始內容片段編輯器](/help/assets/content-fragments/content-fragments-variations.md)的完整資訊 — 可從&#x200B;**Assets**&#x200B;主控台和&#x200B;**內容片段**&#x200B;主控台取得。
 
-* 您的專案團隊可視需要自訂編輯器。 另請參閱 [自訂內容片段控制檯和編輯器](/help/implementing/developing/extending/content-fragments-console-and-editor.md) 以取得更多詳細資料。
+* 您的專案團隊可視需要自訂編輯器。 如需詳細資訊，請參閱[自訂內容片段主控台和編輯器](/help/implementing/developing/extending/content-fragments-console-and-editor.md)。

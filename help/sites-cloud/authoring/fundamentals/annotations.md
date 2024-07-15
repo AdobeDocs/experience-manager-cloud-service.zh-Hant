@@ -17,19 +17,19 @@ ht-degree: 0%
 
 >[!TIP]
 >
->別忘了 [評論](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline) 也可在頁面上提供意見回饋。
+>別忘了[評論](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline)也可在頁面上提供意見回饋。
 
-一個特殊 [模式](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) 用於建立和檢視註解。
+使用特殊的[模式](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)來建立和檢視註解。
 
 >[!TIP]
 >
->您也可以根據您的需求，開發 [工作流程](/help/sites-cloud/authoring/workflows/overview.md) 以在新增、更新或刪除註解時傳送通知。
+>您也可以根據您的需求開發[工作流程](/help/sites-cloud/authoring/workflows/overview.md)，以便在新增、更新或刪除註解時傳送通知。
 
 ## 附註指示器 {#annotation-indicator}
 
 註解不會在編輯模式中顯示，但工具列右上方的徽章會顯示目前頁面有多少注解。 徽章會取代預設的「註解」圖示，但仍可當作快速連結，切換至「註解」模式/從「註解」模式切換：
 
-![附註指示器](/help/sites-cloud/authoring/assets/annotation-indicator.png)
+![註解指示器](/help/sites-cloud/authoring/assets/annotation-indicator.png)
 
 ## 附註模式 {#annotate-mode}
 
@@ -41,7 +41,7 @@ ht-degree: 0%
 
    您現在可以檢視任何現有的註解。
 
-   ![附註範例](/help/sites-cloud/authoring/assets/annotation-sketches.png)
+   ![註解範例](/help/sites-cloud/authoring/assets/annotation-sketches.png)
 
 1. 選取註釋以開啟註釋對話方塊並檢視其詳細資訊。
 
@@ -53,7 +53,7 @@ ht-degree: 0%
 
 除了檢視註解之外，「註解」模式還允許您在內容上建立、編輯、移動或刪除註解
 
-1. [啟動附註模式](#annotate-mode) 在頁面上。
+1. 在頁面上[啟動附註模式](#annotate-mode)。
 
 1. 選取「加入註釋」(Add Annotation)圖示（工具列左側的加號）以開始加入註釋。
 
@@ -66,13 +66,13 @@ ht-degree: 0%
    * 輸入註解文字。
    * 建立草圖（線條和形狀）以反白元件的某個區域。
 
-     ![註釋草圖按鈕](/help/sites-cloud/authoring/assets/annotation-sketch.png)
+     ![註解Sketch按鈕](/help/sites-cloud/authoring/assets/annotation-sketch.png)
 
      建立草繪時，游標會變成十字線。 您可以繪製多條不同的線條。 草繪線會反映註釋顏色，可以是箭頭、圓或橢圓形。
 
    * 選擇或變更顏色：
 
-     ![附注色票按鈕](/help/sites-cloud/authoring/assets/annotation-color-swatch.png)
+     ![註釋色票按鈕](/help/sites-cloud/authoring/assets/annotation-color-swatch.png)
 
 1. 您可以按一下或點選註釋對話方塊外部，以關閉該對話方塊。 隨即顯示截斷的註釋檢視及任何草圖：
 
@@ -80,7 +80,7 @@ ht-degree: 0%
 
 1. 編輯完特定註解後，您可以：
 
-   * 選取文字標籤以開啟附註。 開啟後，即可檢視全文、進行變更，或 [刪除註解。](#deleting-annotations)
+   * 選取文字標籤以開啟附註。 開啟後，您可以檢視全文、進行變更或[刪除附註。](#deleting-annotations)
    * 重新定位文字標籤。
    * 選取草繪線以選取該草繪，並將其拖曳至所需位置。
    * 移動或複製元件
@@ -99,13 +99,13 @@ ht-degree: 0%
 
 可以刪除註釋及其關聯的草圖。
 
-1. [啟動附註模式](#annotate-mode) 在頁面上。
+1. 在頁面上[啟動附註模式](#annotate-mode)。
 
 1. 選取文字標籤以開啟附註。
 
 1. 選取刪除圖示。
 
-   ![刪除註解](/help/sites-cloud/authoring/assets/annotation-delete.png)
+   ![刪除附註](/help/sites-cloud/authoring/assets/annotation-delete.png)
 
 1. 註釋及所有關聯的草繪都會被刪除。
 
@@ -117,7 +117,7 @@ ht-degree: 0%
 
 您只能刪除特定草繪，而非刪除具有所有關聯草繪的整個註釋。
 
-1. [啟動附註模式](#annotate-mode) 在頁面上。
+1. 在頁面上[啟動附註模式](#annotate-mode)。
 
 1. 選取草繪。 AEM會以較暗的藍色方塊反白顯示。
 
@@ -131,5 +131,5 @@ ht-degree: 0%
 
 除了元件以外，您還可以為各種資源加上註解：
 
-* 為資產加上註釋 [為資產加上註釋](/help/assets/manage-digital-assets.md#annotating)
-* 為視訊資產加上註解 [為視訊資產加上註解](/help/assets/manage-video-assets.md#annotate-video-assets)
+* 正在註解資產[正在註解資產](/help/assets/manage-digital-assets.md#annotating)
+* 正在註解視訊資產[正在註解視訊資產](/help/assets/manage-video-assets.md#annotate-video-assets)

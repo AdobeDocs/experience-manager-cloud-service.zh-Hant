@@ -31,15 +31,15 @@ ht-degree: 36%
 
 接著，請遵循下列步驟：
 
-1. 選取移轉集並按一下 **檢視記錄** 從動作列移除。 這會顯示「記錄」對話方塊。 按一下 **擷取記錄** 以在新索引標籤中檢視記錄。
+1. 選取移轉集，然後按一下動作列中的&#x200B;**檢視記錄檔**。 這會顯示「記錄」對話方塊。 按一下&#x200B;**擷取記錄**，在新索引標籤中檢視記錄。
 
    ![影像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam25.png) \
-   或者，按一下 **已完成** 狀態：在新索引標籤中檢視記錄。
+   或者，按一下&#x200B;**已完成**&#x200B;狀態以在新索引標籤中檢視記錄。
 
 1. 若要追蹤記錄而不使用使用者介面，您可以透過 SSH 連線至來源 AEM 環境，並追蹤 `crx-quickstart/cloud-migration/extraction-XXXXX/output.log file`。
 
 ### 內嵌記錄
 
-若要檢視內嵌記錄，請前往Cloud Acceleration Manager中的內嵌工作清單，然後尋找所需的移轉工作，並按一下三個點(**...**)。 然後您可以按一下 **下載記錄** 以下載記錄檔。
+若要檢視內嵌記錄，請前往Cloud Acceleration Manager中的內嵌工作清單，然後尋找所需的移轉工作，並按一下工作的三個點(**...**)。 然後，您可以按一下&#x200B;**下載記錄檔**&#x200B;來下載記錄檔。
 
 ![影像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam28.png)

@@ -14,11 +14,11 @@ ht-degree: 1%
 
 # 建立頁面 {#creating-pages}
 
-瞭解如何使用為您的網站建立新頁面 **網站** 主控台。
+瞭解如何使用&#x200B;**網站**&#x200B;主控台為您的網站建立新頁面。
 
 >[!TIP]
 >
->開始建立新頁面之前，請先熟悉 [AEM中頁面的組織方式。](/help/sites-cloud/authoring/sites-console/organizing-pages.md)
+>開始建立新頁面之前，請熟悉[在AEM中組織頁面的方式。](/help/sites-cloud/authoring/sites-console/organizing-pages.md)
 
 ## 存取許可權 {#access-privileges}
 
@@ -30,25 +30,25 @@ ht-degree: 1%
 
 除非所有頁面都已預先為您建立，否則您必須先建立頁面，然後才能開始建立內容：
 
-1. 開啟 [此 **網站** 主控台。](/help/sites-cloud/authoring/sites-console/introduction.md)
+1. 開啟[ **網站**&#x200B;主控台。](/help/sites-cloud/authoring/sites-console/introduction.md)
 1. 導覽至您要建立新頁面的位置。
-1. 使用開啟下拉式選擇器 **建立** 在工具列中選取「 」 **頁面** 從清單：
+1. 使用工具列中的&#x200B;**Create**&#x200B;開啟下拉式選取器，然後從清單中選取&#x200B;**Page**：
 
-   ![建立頁面](/help/sites-cloud/authoring/assets/organizing-create-page.png)
+   ![正在建立頁面](/help/sites-cloud/authoring/assets/organizing-create-page.png)
 
 1. 從精靈的第一階段，您可以：
 
-   * 選取您要用來建立新頁面的範本，然後選取 **下一個** 以繼續進行。
+   * 選取您要用來建立新頁面的範本，然後選取[下一步] **以繼續。**
 
-   * **取消** 以中止程式。
+   * **取消**&#x200B;以中止程式。
 
-   ![為新頁面選取範本](/help/sites-cloud/authoring/assets/organizing-create-page-template.png)
+   ![選取新頁面的範本](/help/sites-cloud/authoring/assets/organizing-create-page-template.png)
 
 1. 從精靈的最後階段開始，您可以：
 
-   * 使用三個索引標籤來輸入 [頁面屬性](/help/sites-cloud/authoring/sites-console/page-properties.md) 您想要指派給新頁面，然後選取 **建立** 以實際建立頁面。
+   * 使用三個索引標籤來輸入您要指派給新頁面的[頁面屬性](/help/sites-cloud/authoring/sites-console/page-properties.md)，然後選取「**建立**」以實際建立頁面。
 
-   * 使用 **返回** 以返回範本選取。
+   * 使用&#x200B;**上一步**&#x200B;返回範本選取範圍。
 
    主要欄位包括：
 
@@ -59,22 +59,22 @@ ht-degree: 1%
    * **名稱**：
 
       * 這會用來產生URI。 如果未指定，則會從標題衍生名稱。
-      * 如果您提供頁面 **名稱** 建立頁面時，AEM [根據慣例驗證名稱](/help/implementing/developing/introduction/naming-conventions.md) 由AEM和JCR所強制。
-      * 您 **無法提交無效的字元** 在 **名稱** 欄位。 當AEM偵測到無效字元時，該欄位會反白顯示，並顯示說明訊息，指出需要移除/取代的字元。
+      * 如果您在建立頁面時提供頁面&#x200B;**Name**，AEM [會依據AEM和JCR所強加的慣例](/help/implementing/developing/introduction/naming-conventions.md)驗證名稱。
+      * 您&#x200B;**無法在**&#x200B;名稱&#x200B;**欄位中提交無效的字元**。 當AEM偵測到無效字元時，該欄位會反白顯示，並顯示說明訊息，指出需要移除/取代的字元。
 
    >[!TIP]
    >
-   >另請參閱 [頁面命名慣例](#page-naming-conventions).
+   >請參閱[頁面命名慣例](#page-naming-conventions)。
 
-   建立頁面所需的最低資訊為 **標題**.
+   建立頁面所需的最少資訊是&#x200B;**標題**。
 
    ![提供頁面標題](/help/sites-cloud/authoring/assets/organizing-create-page-title.png)
 
-1. 點選或按一下 **建立** 以完成程式並建立您的新頁面。 確認對話方塊會詢問您是否要 **開啟** 立即頁面或返回主控台(**完成**)。 選取一個以結束頁面建立程式。
+1. 點選或按一下「**建立**」以完成程式並建立新頁面。 確認對話方塊會詢問您是要立即&#x200B;**開啟**&#x200B;頁面，還是返回主控台（**完成**）。 選取一個以結束頁面建立程式。
 
    ![頁面建立成功](/help/sites-cloud/authoring/assets/organizing-create-page-success.png)
 
-   * 如果您選擇 **開啟**，則 **網站** console會根據新頁面的範本，開啟適當的編輯器：
+   * 如果您選擇&#x200B;**開啟**，**網站**&#x200B;主控台會根據新頁面的範本開啟適當的編輯器：
       * [頁面編輯器](/help/sites-cloud/authoring/page-editor/introduction.md)
       * [通用編輯器](/help/sites-cloud/authoring/universal-editor/authoring.md)
 
@@ -84,8 +84,8 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->如果您使用相同位置已存在的名稱來建立頁面，AEM會以附加編號所指定之名稱的變數來建立頁面。 例如，如果 `beach` 已存在，則新頁面會變成 `beach1`.
+>如果您使用相同位置已存在的名稱來建立頁面，AEM會以附加編號所指定之名稱的變數來建立頁面。 例如，如果`beach`已經存在，則新頁面會變成`beach1`。
 
 >[!CAUTION]
 >
->建立頁面後，無法變更其範本，除非您 [使用新範本建立啟動項](/help/sites-cloud/authoring/launches/creating.md#create-launch-with-new-template)，但會遺失任何現有內容。
+>建立頁面後，無法變更其範本，除非您[使用新範本](/help/sites-cloud/authoring/launches/creating.md#create-launch-with-new-template)建立啟動項，不過這樣會遺失任何現有內容。

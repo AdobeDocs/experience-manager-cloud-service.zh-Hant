@@ -10,14 +10,14 @@ ht-degree: 1%
 
 ---
 
-# Formsas a Cloud Service參考資產 {#reference-themes}
+# 適用於Formsas a Cloud Service的參考Assets {#reference-themes}
 
-您可以透過安裝參考主題、範本和表單資料模型(FDM) [參考資產套件](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.0.0.zip). 它有助於快速啟動和加速您的Adaptive Forms開發。 您可以使用 [封裝管理員](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager.html) 將此套件部署至您的Formsas a Cloud Service環境。
+您可以安裝[參考Assets套件](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.0.0.zip)，以取得參考主題、範本和表單資料模型(FDM)。 它有助於快速啟動和加速您的Adaptive Forms開發。 您可以使用[封裝管理員](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager.html)，將此封裝部署至您的Formsas a Cloud Service環境。
 套件中包含的參考資產包括：
 
 ## 主題 {#themes}
 
-[主題](/help/forms/themes.md) 讓您不具備CSS的深入知識，也能設定表單樣式。 包含下列主題：
+[佈景主題](/help/forms/themes.md)可讓您在不深入瞭解CSS的情況下設定表單樣式。 包含下列主題：
 
 * 貝瑞爾
 * 寧靜
@@ -31,13 +31,13 @@ ht-degree: 1%
 
 此套裝中包含的主題為回應式主題，這些主題中的樣式是為行動裝置和桌上型顯示器所定義。 各種裝置上的大部分現代化瀏覽器都能輕鬆轉譯套用這些主題之一的表單。
 
-如需安裝套件的詳細資訊，請參閱 [如何使用套件](/help/implementing/developing/tools/package-manager.md).
+如需安裝套件的詳細資訊，請參閱[如何使用套件](/help/implementing/developing/tools/package-manager.md)。
 
 ### 貝瑞爾 {#beryl}
 
 We.Gov最適化表單使用Beryl佈景主題，並強調使用背景影像、透明度及大型平面圖示。 在下方熒幕擷圖中，您可以看到Beryl佈景主題的外觀，以及如何增強表單的樣式。
 
-![柏瑞爾主題](/help/forms/assets/beryl.png)
+![貝瑞爾佈景主題](/help/forms/assets/beryl.png)
 
 <!--[Click to enlarge
 
@@ -74,7 +74,7 @@ Liberty theme uses a minimalist approach to highlight the important. For example
 
 寧靜的佈景主題提供寧靜色彩配置的明暗陰影，以突顯表單的不同元件。 例如，單選按鈕、面板和標籤會以不同的綠色顯示。
 
-![寧靜的主題](/help/forms/assets/tranquil.png)
+![寧靜主題](/help/forms/assets/tranquil.png)
 
 <!--[Click to enlarge](assets/tranquil-1.png)-->
 
@@ -82,7 +82,7 @@ Liberty theme uses a minimalist approach to highlight the important. For example
 
 Ultraminary主題使用深藍色陰影來反白標示元件，例如定位點、面板、文字方塊和按鈕。
 
-![超海洋主題](/help/forms/assets/ultramarine.png)
+![超海洋佈景主題](/help/forms/assets/ultramarine.png)
 <!--[Click to enlarge](assets/ultramarine-1.png)-->
 
 ### 城市化 {#urbane}
@@ -108,7 +108,7 @@ U.S. Web Design Standards theme, as the name suggests, uses typefaces and styles
 
 基本範本可協助您快速建立登錄檔單。
 
-![基本主題](/help/forms/assets/exec.png)
+![基本佈景主題](/help/forms/assets/exec.png)
 
 ### 空白 {#blank}
 

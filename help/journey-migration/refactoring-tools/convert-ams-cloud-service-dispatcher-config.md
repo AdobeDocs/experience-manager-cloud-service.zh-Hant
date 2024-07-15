@@ -3,8 +3,8 @@ title: 將 AMS 轉換為 Adobe Experience Manager as a Cloud Service Dispatcher 
 description: 將 AMS 轉換為 Adobe Experience Manager as a Cloud Service Dispatcher 設定
 source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1282'
-ht-degree: 39%
+source-wordcount: '1262'
+ht-degree: 37%
 
 ---
 
@@ -76,7 +76,7 @@ ht-degree: 39%
 
 1. **執行驗證器以檢查狀態**
 
-   使用以下的httpd子命令，在您的目錄中執行Dispatcher驗證器：
+   使用httpd子命令在目錄中執行Dispatcher驗證器：
 
    `$ validator httpd`
 如果您看見有關遺失「包含」檔案的錯誤，請檢查您是否已正確地重新命名那些檔案。
@@ -89,7 +89,7 @@ ht-degree: 39%
 
 1. **重新命名伺服器陣列檔案**
 
-   所有在「conf.dispatcher.d/enabled_farms」中的伺服器陣列都必須重新命名，以符合模式「*.farm」。 例如，重新命名 `customerX_farm.any` 至 `customerX.farm`.
+   所有在「conf.dispatcher.d/enabled_farms」中的伺服器陣列都必須重新命名，以符合模式「*.farm」。 例如，將`customerX_farm.any`重新命名為`customerX.farm`。
 
 1. **檢查快取**
 
@@ -97,13 +97,13 @@ ht-degree: 39%
 
    移除任何以「`ams_`」為首碼的檔案。
 
-   如果「conf.dispatcher.d/cache」現在為空白，請複製檔案 `conf.dispatcher.d/cache/rules.any` 從標準Dispatcher設定移至此資料夾。 您可以在此SDK的src資料夾中找到標準Dispatcher設定。 別忘了調整引用的$include陳述式 `ams_*_cache.any` 伺服器陣列檔案中的規則檔案。
+   如果「conf.dispatcher.d/cache」目前空白，請將檔案`conf.dispatcher.d/cache/rules.any`從標準Dispatcher設定複製到此資料夾。 您可以在此SDK的src資料夾中找到標準Dispatcher設定。 同時別忘了調整在伺服器陣列檔案中引用`ams_*_cache.any`規則檔案的$include陳述式。
 
-   如果「conf.dispatcher.d/cache」現在包含尾碼的單一檔案 `_cache.any`，應重新命名為 `rules.any`. 記得調整在伺服器陣列檔案中引用該檔案的$include陳述式。
+   如果「conf.dispatcher.d/cache」現在包含尾碼為`_cache.any`的單一檔案，則應將其重新命名為`rules.any`。 記得調整在伺服器陣列檔案中引用該檔案的$include陳述式。
 
    然而，如果該資料夾包含多個有該模式的伺服器陣列特定檔案，則應將其內容複製至在伺服器陣列檔案中引用這些檔案的$include陳述式中。
 
-   移除任何尾碼的檔案 `_invalidate_allowed.any`.
+   移除任何尾碼為`_invalidate_allowed.any`的檔案。
 
    將檔案「conf.dispatcher.d/cache/default_invalidate_any」從預設Dispatcher設定複製至該位置。
 
@@ -117,13 +117,13 @@ ht-degree: 39%
 
    移除任何以「`ams_`」為首碼的檔案。
 
-   如果「conf.dispatcher.d/clientheaders」包含含有尾碼的單一檔案 `_clientheaders.any`，將其重新命名為 `clientheaders.any`. 記得調整在伺服器陣列檔案中引用該檔案的$include陳述式。
+   如果「conf.dispatcher.d/clientheaders」包含尾碼為`_clientheaders.any`的單一檔案，請將其重新命名為`clientheaders.any`。 記得調整在伺服器陣列檔案中引用該檔案的$include陳述式。
 
    然而，如果該資料夾包含多個有該模式的伺服器陣列特定檔案，則應將其內容複製至在伺服器陣列檔案中引用這些檔案的$include陳述式中。
 
-   複製檔案 `conf.dispatcher/clientheaders/default_clientheaders.any` 從預設的Dispatcher設定恢復到該位置。
+   將檔案`conf.dispatcher/clientheaders/default_clientheaders.any`從預設Dispatcher組態複製到該位置。
 
-   在每個伺服器陣列檔案中，取代任何 `clientheader` &quot;include&quot;陳述式，如下所示：
+   在每個伺服器陣列檔案中，取代顯示如下的任何`clientheader`個「include」陳述式：
 
    `$include "/etc/httpd/conf.dispatcher.d/clientheaders/ams_publish_clientheaders.any"`
 
@@ -139,11 +139,11 @@ ht-degree: 39%
 
    * 移除任何以「`ams_`」為首碼的檔案。
 
-   * 如果「conf.dispatcher.d/filters」目前包含單一檔案，請將其重新命名為 `filters.any`. 記得調整在伺服器陣列檔案中引用該檔案的$include陳述式。
+   * 如果「conf.dispatcher.d/filters」目前包含單一檔案，請將其重新命名為`filters.any`。 記得調整在伺服器陣列檔案中引用該檔案的$include陳述式。
 
    * 然而，如果該資料夾包含多個有該模式的伺服器陣列特定檔案，則應將其內容複製至在伺服器陣列檔案中引用這些檔案的$include陳述式中。
 
-   * 複製檔案 `conf.dispatcher/filters/default_filters.any` 從預設的Dispatcher設定恢復到該位置。
+   * 將檔案`conf.dispatcher/filters/default_filters.any`從預設Dispatcher組態複製到該位置。
 
    * 在每個伺服器陣列檔案中，取代任何如下所示的篩選器「include」陳述式：
 
@@ -158,7 +158,7 @@ ht-degree: 39%
 
    * 移除該資料夾中的所有檔案。
 
-   * 複製檔案 `conf.dispatcher.d/renders/default_renders.any` 從預設的Dispatcher設定恢復到該位置。
+   * 將檔案`conf.dispatcher.d/renders/default_renders.any`從預設Dispatcher組態複製到該位置。
 
    * 在每個伺服器陣列檔案中，移除「renders」區段中的任何內容，並取代為：
 
@@ -170,11 +170,11 @@ ht-degree: 39%
 
    * 移除任何以「`ams_`」為首碼的檔案。
 
-   * 如果「conf.dispatcher.d/virtualhosts」目前包含單一檔案，請將其重新命名為 `virtualhosts.any`. 記得調整在伺服器陣列檔案中引用該檔案的$include陳述式。
+   * 如果「conf.dispatcher.d/virtualhosts」目前包含單一檔案，請將其重新命名為`virtualhosts.any`。 記得調整在伺服器陣列檔案中引用該檔案的$include陳述式。
 
    * 然而，如果該資料夾包含多個有該模式的伺服器陣列特定檔案，則應將其內容複製至在伺服器陣列檔案中引用這些檔案的$include陳述式中。
 
-   * 複製檔案 `conf.dispatcher/virtualhosts/default_virtualhosts.any` 從預設的Dispatcher設定恢復到該位置。
+   * 將檔案`conf.dispatcher/virtualhosts/default_virtualhosts.any`從預設Dispatcher組態複製到該位置。
 
    * 在每個伺服器陣列檔案中，取代任何如下所示的篩選器「include」陳述式：
 
@@ -186,7 +186,7 @@ ht-degree: 39%
 
 1. **執行驗證器以檢查狀態**
 
-   * 使用Dispatcher子命令在您的目錄中執行Dispatcher驗證器：
+   * 使用下列的Dispatcher子命令，在您的目錄中執行Dispatcher驗證器：
 
      `$ validator dispatcher`
 
@@ -204,19 +204,19 @@ ht-degree: 39%
 
 使用 Dispatcher SDK 中的指令碼 `docker_run.sh`，即可測試您的設定是否不包含任何僅顯示在部署中的其他錯誤：
 
-1. 使用以下驗證器產生部署資訊：.
+1. 使用驗證器產生部署資訊。
 
    `validator full -d out`
 驗證完整設定並在out中產生部署資訊。
 
 1. 使用該部署資訊在Docker映像中啟動Dispatcher。
 
-   在您的macOS電腦上執行AEM發佈伺服器，並在連線埠4503上接聽後，您就可以在該伺服器前面執行啟動Dispatcher，如下所示：
+   在macOS電腦上執行AEM發佈伺服器，並在連線埠4503上接聽後，您就可以在該伺服器前面執行Dispatcher，如下所示：
 
    `$ docker_run.sh out docker.for.mac.localhost:4503 8080`
 
    啟動容器並在本機連線埠8080上公開Apache。
 
-## 使用您的新Dispatcher設定 {#using-dispatcher-config}
+## 使用新的Dispatcher設定 {#using-dispatcher-config}
 
 如果驗證器不再回報任何問題，且 Docker 容器啟動時未出現任何失敗情況或警告，即可將您的設定移至 Git 存放庫的 D`ispatcher/src` 子目錄。

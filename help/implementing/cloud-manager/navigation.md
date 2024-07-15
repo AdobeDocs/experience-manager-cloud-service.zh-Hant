@@ -23,7 +23,7 @@ Cloud Manager UI 主要由兩個圖形介面組成：
 
 >[!TIP]
 >
->另請檢視 [入門檔案歷程](/help/journey-onboarding/overview.md) 有關如何使用Cloud Manager啟動和執行AEMas a Cloud Service的完整概觀。
+>另請檢視[上線檔案歷程](/help/journey-onboarding/overview.md)，以全面瞭解如何使用Cloud Manager快速上手AEM as a Cloud Service。
 
 ## 我的程式控制台 {#my-programs}
 
@@ -106,7 +106,7 @@ Cloud Manager UI 主要由兩個圖形介面組成：
 
 * 程式映像 (若已設定)
 * 程式名稱
-* 服務型別： **Experience Manager雲端** 針對AEM as a *Cloud Service計畫或 [**Experience Manager** 用於AMS程式](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/introduction)
+* 服務型別： AEM as a *Experience Manager程式的&#x200B;**Cloud Service雲端**&#x200B;或AMS程式的&#x200B;[**Experience Manager**](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/introduction)
 * [程式類型](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)：沙箱或生產
 * 狀態
 * 設定的解決方案:
@@ -120,7 +120,7 @@ Cloud Manager UI 主要由兩個圖形介面組成：
 
 * [WAF-DDOS保護](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#security)
 
-  ![waf-DDOS徽章](assets/waf-ddos-protection.png)
+  ![WAF-DDOS徽章](assets/waf-ddos-protection.png)
 
 * [99.99% SLA](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#sla)
 
@@ -144,12 +144,12 @@ Cloud Manager UI 主要由兩個圖形介面組成：
 >如需有關計畫以及建立和管理計畫的詳細資訊，請參閱以下檔案。
 >
 >* [程式和程式型別](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
->* [建立沙箱計畫](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md)
->* [建立生產計畫](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
+>* [正在建立沙箱計畫](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md)
+>* [正在建立生產計畫](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
 
 #### 授權索引標籤 {#license-tab}
 
-此 **授權** 索引標籤可讓您快速存取 [授權儀表板。](/help/implementing/cloud-manager/license-dashboard.md)
+**授權**&#x200B;索引標籤可讓您快速存取[授權儀表板。](/help/implementing/cloud-manager/license-dashboard.md)
 
 ### 快速連結 {#quick-links}
 
@@ -168,7 +168,7 @@ Cloud Manager UI 主要由兩個圖形介面組成：
 1. 根據程式最後動作的[行動號召](#cta) 
 1. 程式的[環境概觀](#environments)
 1. 程式的[管道概觀](#pipelines)
-1. 一個 [績效概觀](#performance) 計畫的
+1. 程式效能](#performance)的[概觀
 1. [實用資源](#useful-resources)的連結
 
 ### 工具列 {#program-overview-toolbar}
@@ -213,7 +213,7 @@ Cloud Manager 標頭有一個漢堡選單，會自動開啟以顯示程式概觀
 
 行動號召區段將根據您的程式狀態為您提供有用的資訊。對於新程式，您可能會看到提供的後續步驟以及上線日期的提醒，這是[在程式建立期間設定。](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)
 
-![新方案的行動號召](/help/implementing/cloud-manager/assets/info-banner-new-program.png)
+新程式的![呼叫動作](/help/implementing/cloud-manager/assets/info-banner-new-program.png)
 
 對於即時程式，會看到上次部署的狀態以及詳細資訊和開始新部署的連結。
 
@@ -237,7 +237,7 @@ Cloud Manager 標頭有一個漢堡選單，會自動開啟以顯示程式概觀
 
 ### 效能卡 {#performance}
 
-此 **效能** 卡片提供 **[CDN控制面板。](/help/implementing/cloud-manager/cdn-performance.md)**
+**效能**&#x200B;卡提供&#x200B;**[CDN儀表板](/help/implementing/cloud-manager/cdn-performance.md)**&#x200B;的概觀
 
 ![效能卡](/help/implementing/cloud-manager/assets/cdn-performance-dashboard.png)
 

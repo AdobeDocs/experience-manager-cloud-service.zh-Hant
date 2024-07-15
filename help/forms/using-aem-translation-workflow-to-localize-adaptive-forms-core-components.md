@@ -13,26 +13,26 @@ ht-degree: 4%
 
 # 使用機器翻譯或人工翻譯來翻譯以核心元件為基礎的最適化表單 {#using-aem-translation-workflow-to-localize-adaptive-forms-and-document-of-record}
 
-本地化的表單可協助您跨地理區域提供更廣泛的受眾。 Adobe Experience Manager翻譯工作流程可協助您將Adaptive Forms及其記錄檔案本地化。 您可以使用 **機器翻譯** 或 **人工翻譯人員** 將最適化表單當地語系化。
+本地化的表單可協助您跨地理區域提供更廣泛的受眾。 Adobe Experience Manager翻譯工作流程可協助您將Adaptive Forms及其記錄檔案本地化。 您可以使用&#x200B;**機器翻譯**&#x200B;或&#x200B;**人力翻譯人員**&#x200B;將最適化表單當地語系化。
 
 ## 使用機器翻譯翻譯翻譯最適化表單和記錄檔案 {#localizing-an-adaptive-form-and-document-of-record-using-machine-translation}
 
-機器翻譯服務會立即以最適化表單翻譯您的內容，並且 [記錄檔案](/help/forms/generate-document-of-record-core-components.md). AEM Forms as a Cloud Service已預先設定為使用機器翻譯適用的Microsoft Translator試用版。 執行以下步驟來啟用最適化Forms和記錄檔案的機器翻譯：
+機器翻譯服務會立即以最適化表單和[記錄檔案](/help/forms/generate-document-of-record-core-components.md)翻譯您的內容。 AEM Forms as a Cloud Service已預先設定為使用機器翻譯適用的Microsoft Translator試用版。 執行以下步驟來啟用最適化Forms和記錄檔案的機器翻譯：
 
-1. 在AEM Forms UI上，選取表單，然後選取 **[!UICONTROL 新增字典]** 選項。
-1. 在「新增字典至翻譯專案」畫面中，針對 **[!UICONTROL 專案]** 選項
+1. 在AEM Forms UI上，選取表單，然後選取&#x200B;**[!UICONTROL 新增字典]**&#x200B;選項。
+1. 在[新增字典至翻譯專案]畫面中，針對&#x200B;**[!UICONTROL 專案]**&#x200B;選項
 
-   * 若要建立翻譯專案，請選取 **[!UICONTROL 建立新的翻譯專案]** 選項和 **專案標題** 欄位中，指定標題。 例如 `Government Reference Site - German locale.`
-   * 若要在現有翻譯專案中新增字典，請選取 **[!UICONTROL 新增至現有翻譯專案]** 選項並選取 **[!UICONTROL 現有翻譯專案]**.
-1. 在 **目標語言** 欄位，指定地區設定(例如， `German(de)`)。 您可以指定多個地區設定。 表單會轉譯為 **目標語言** 欄位。 按一下&#x200B;**「完成」**。
-1. 在「新增的字典」對話方塊中，按一下 **開啟專案**.
-1. 在「專案」畫面中，按一下已建立的專案。 例如，按一下 **政府參考網站 — 德文地區設定** 圖磚。
-1. 在 **翻譯工作** 圖磚，按一下 ![aem62forms_downarrow](assets/aem62forms_downarrow.png) 圖示，然後按一下 **開始**. 圖磚的狀態會變更為「草稿」。 翻譯完成後，狀態會變更為 **已核准**. 幾分鐘後重新整理頁面並驗證狀態。
+   * 若要建立翻譯專案，請選取&#x200B;**[!UICONTROL 建立新翻譯專案]**&#x200B;選項，並在&#x200B;**專案標題**&#x200B;欄位中指定標題。 例如 `Government Reference Site - German locale.`
+   * 若要在現有翻譯專案中新增字典，請選取&#x200B;**[!UICONTROL 新增至現有翻譯專案]**&#x200B;選項，並選取&#x200B;**[!UICONTROL 現有翻譯專案]**。
+1. 在&#x200B;**目標語言**&#x200B;欄位中，指定地區設定（例如，`German(de)`）。 您可以指定多個地區設定。 表單已轉譯為&#x200B;**目標語言**&#x200B;欄位中指定的所有地區設定。 按一下&#x200B;**「完成」**。
+1. 在[新增的字典]對話方塊中，按一下[**開啟專案**]。
+1. 在「專案」畫面中，按一下已建立的專案。 例如，按一下&#x200B;**政府參考網站 — 德文地區設定**&#x200B;圖磚。
+1. 在&#x200B;**翻譯工作**&#x200B;圖磚上，按一下![aem62forms_downarrow](assets/aem62forms_downarrow.png)圖示，然後按一下&#x200B;**開始**。 圖磚的狀態會變更為「草稿」。 翻譯完成後，狀態會變更為&#x200B;**已核准**。 幾分鐘後重新整理頁面並驗證狀態。
 
    ![開始翻譯](/help/forms/assets/adaptive-forms-core-components-start-translation.png)
-1. 在狀態變更為 **已核准** 於 **翻譯工作** 圖磚，按一下 ![aem62forms_downarrow](assets/aem62forms_downarrow.png) 圖示，然後按一下 **完成**.
+1. 在&#x200B;**翻譯工作**&#x200B;圖磚上的狀態變更為&#x200B;**已核准**&#x200B;後，按一下![aem62forms_downarrow](assets/aem62forms_downarrow.png)圖示，然後按一下&#x200B;**完成**。
 
-1. 若要預覽本地化表單，請在AEM Forms UI上選取本地化表單。 按一下 **[!UICONTROL 預覽]** >**[!UICONTROL 以HTML預覽]**. 新增「 」後，重新開啟表單 `afAcceptLang=<locale code>` 至表單的URL。 例如，新增 `afAcceptLang=de`以開啟德文版的表單。
+1. 若要預覽本地化表單，請在AEM Forms UI上選取本地化表單。 按一下&#x200B;**[!UICONTROL 預覽]** >**[!UICONTROL 預覽為HTML]**。 將`afAcceptLang=<locale code>`新增至表單的URL後，重新開啟表單。 例如，新增`afAcceptLang=de`以開啟德文版的表單。
 
 
    >[!NOTE]
@@ -62,28 +62,28 @@ ht-degree: 4%
 
 執行以下步驟，使用人工翻譯將表單及其記錄檔案本地化：
 
-1. 在AEM Forms UI上，選取表單，然後選取 **[!UICONTROL 新增字典]** 選項。
-1. 在「新增字典至翻譯專案」畫面中，針對 **[!UICONTROL 專案]** 選項
+1. 在AEM Forms UI上，選取表單，然後選取&#x200B;**[!UICONTROL 新增字典]**&#x200B;選項。
+1. 在[新增字典至翻譯專案]畫面中，針對&#x200B;**[!UICONTROL 專案]**&#x200B;選項
 
-   * 若要建立翻譯專案，請選取 **[!UICONTROL 建立新的翻譯專案]** 選項和 **專案標題** 欄位中，指定標題。 例如 `Government Reference Site - German locale.`
-   * 若要在現有翻譯專案中新增字典，請選取 **[!UICONTROL 新增至現有翻譯專案]** 選項並選取 **[!UICONTROL 現有翻譯專案]**.
-1. 在 **目標語言** 欄位，指定地區設定(例如， `German(de)`)。 您可以指定多個地區設定。 表單會轉譯為 **目標語言** 欄位。 按一下&#x200B;**「完成」**。
-1. 在「新增的字典」對話方塊中，按一下 **開啟專案**.
-1. 在「專案」畫面中，按一下已建立的專案。 例如，按一下 **政府參考網站 — 德文地區設定** 圖磚。
-1. 在底部 **摘要** 圖磚，按一下 **橢圓**. 翻譯專案屬性畫面隨即開啟。
-1. 開啟 **[!UICONTROL 進階]** 索引標籤在頂端 **翻譯專案屬性** 畫面。 對於 **[!UICONTROL 翻譯欄位]**，選取 **[!UICONTROL 人工翻譯]**. 按一下 **儲存並關閉** ，位於畫面頂端。
-1. 在 **翻譯工作** 圖磚，按一下 ![aem62forms_downarrow](assets/aem62forms_downarrow.png) 圖示，然後按一下 **匯出**. 在「匯出」對話方塊中，按一下「下載匯出的檔案」選項。 它會下載.zip檔案。
+   * 若要建立翻譯專案，請選取&#x200B;**[!UICONTROL 建立新翻譯專案]**&#x200B;選項，並在&#x200B;**專案標題**&#x200B;欄位中指定標題。 例如 `Government Reference Site - German locale.`
+   * 若要在現有翻譯專案中新增字典，請選取&#x200B;**[!UICONTROL 新增至現有翻譯專案]**&#x200B;選項，並選取&#x200B;**[!UICONTROL 現有翻譯專案]**。
+1. 在&#x200B;**目標語言**&#x200B;欄位中，指定地區設定（例如，`German(de)`）。 您可以指定多個地區設定。 表單已轉譯為&#x200B;**目標語言**&#x200B;欄位中指定的所有地區設定。 按一下&#x200B;**「完成」**。
+1. 在[新增的字典]對話方塊中，按一下[**開啟專案**]。
+1. 在「專案」畫面中，按一下已建立的專案。 例如，按一下&#x200B;**政府參考網站 — 德文地區設定**&#x200B;圖磚。
+1. 在&#x200B;**摘要**&#x200B;圖磚底部，按一下&#x200B;**省略符號**。 翻譯專案屬性畫面隨即開啟。
+1. 開啟&#x200B;**翻譯專案屬性**&#x200B;畫面頂端的&#x200B;**[!UICONTROL 進階]**&#x200B;標籤。 針對&#x200B;**[!UICONTROL 翻譯欄位]**，選取&#x200B;**[!UICONTROL 人工翻譯]**。 按一下熒幕上方的&#x200B;**儲存並關閉**。
+1. 在&#x200B;**翻譯工作**&#x200B;圖磚上，按一下![aem62forms_downarrow](assets/aem62forms_downarrow.png)圖示，然後按一下&#x200B;**匯出**。 在「匯出」對話方塊中，按一下「下載匯出的檔案」選項。 它會下載.zip檔案。
    ![匯出翻譯檔案](/help/forms/assets/adaptive-forms-core-components-start-translation-export.png)
 1. 解壓縮下載的.zip檔案。 擷取的資料夾有兩個檔案：
    * translation_export_summary.xml
    * [form-fields-file].xml。
-1. 開啟 [form-fields-file].xml進行編輯。 為表單欄位新增當地語系化的字串和訊息。 儲存並關閉檔案。
-1. 將translation_export_summary.xml和 [form-fields-file].xml。
-1. 在 **翻譯工作** 圖磚，按一下 ![aem62forms_downarrow](assets/aem62forms_downarrow.png) 圖示，然後按一下 **匯入**. 選取包含的封存 [form-fields-file].xml。 表單欄位有當地語系化的字串和訊息。
+1. 開啟[form-fields-file].xml進行編輯。 為表單欄位新增當地語系化的字串和訊息。 儲存並關閉檔案。
+1. 將translation_export_summary.xml和[form-fields-file].xml壓縮檔案。
+1. 在&#x200B;**翻譯工作**&#x200B;圖磚上，按一下![aem62forms_downarrow](assets/aem62forms_downarrow.png)圖示，然後按一下&#x200B;**匯入**。 選取包含[form-fields-file].xml的封存。 表單欄位有當地語系化的字串和訊息。
 
    ![匯入翻譯檔案](/help/forms/assets/adaptive-forms-core-components-start-translation-import.png)
 
-1. 若要預覽本地化表單，請在AEM Forms UI上選取本地化表單。 按一下 **[!UICONTROL 預覽]** >**[!UICONTROL 以HTML預覽]**. 新增「 」後，重新開啟表單 `afAcceptLang=<locale code>` 至表單的URL。 例如，新增 `afAcceptLang=de`以開啟德文版的表單。
+1. 若要預覽本地化表單，請在AEM Forms UI上選取本地化表單。 按一下&#x200B;**[!UICONTROL 預覽]** >**[!UICONTROL 預覽為HTML]**。 將`afAcceptLang=<locale code>`新增至表單的URL後，重新開啟表單。 例如，新增`afAcceptLang=de`以開啟德文版的表單。
 
 ## 另請參閱 {#see-also}
 

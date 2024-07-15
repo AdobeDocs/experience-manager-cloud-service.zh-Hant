@@ -24,14 +24,14 @@ ht-degree: 6%
 
 若要為發佈層級設定自訂網域，請執行以下步驟：
 
-1. 前往 **[!UICONTROL AdobeCloud Manager]** > **[!UICONTROL 計畫總覽]** > **[!UICONTROL SSL憑證]**，並新增您的SSL憑證。
+1. 移至&#x200B;**[!UICONTROL AdobeCloud Manager]** > **[!UICONTROL 計畫總覽]** > **[!UICONTROL SSL憑證]**，然後新增您的SSL憑證。
    ![影像](/help/assets/assets/ssl-certificate.png)
-瞭解如何新增 [SSL憑證](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) 在AdobeCloud Manager中。
+瞭解如何在AdobeCloud Manager中新增[SSL憑證](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)。
 
-1. 新增SSL憑證後，請新增自訂網域。 按一下 **[!UICONTROL 網域設定]** 並指定針對的自訂網域 **[!UICONTROL Publish服務]** 選項。
-進一步瞭解 [自訂網域](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md).
+1. 新增SSL憑證後，請新增自訂網域。 按一下「**[!UICONTROL 網域設定]**」，並針對「**[!UICONTROL Publish服務]**」選項指定自訂網域。
+深入瞭解[自訂網域](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)。
 
-1. 新增2 [CNAME記錄](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md) 在對應至發佈網域的DNS記錄中。
+1. 在對應發佈網域的DNS記錄中新增2個[CNAME記錄](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md)。
 由於 DNS 傳播延遲，DNS 驗證可能需要幾個小時才能完成。
 
 1. 記錄支援案例以協助設定自訂網域，確保將其導向傳送階層。

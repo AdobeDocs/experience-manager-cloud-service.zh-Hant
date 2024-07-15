@@ -24,7 +24,7 @@ ht-degree: 10%
 
 >[!TIP]
 >
->如果您不熟悉如何針對通用編輯器檢測您的應用程式，請參閱檔案 [適用於AEM開發人員的通用編輯器概觀。](/help/implementing/universal-editor/developer-overview.md)
+>如果您不熟悉如何針對通用編輯器檢測您的應用程式，請參閱檔案： [適用於AEM開發人員的通用編輯器概述。](/help/implementing/universal-editor/developer-overview.md)
 
 ## 模型定義結構 {#model-structure}
 
@@ -41,9 +41,9 @@ ht-degree: 10%
 ]
 ```
 
-請參閱 **[欄位](#fields)** 一節，以取得如何定義 `fields` 陣列。
+請參閱本檔案的&#x200B;**[欄位](#fields)**&#x200B;區段，以取得如何定義`fields`陣列的詳細資訊。
 
-若要將模型定義與元件一起使用， `data-aue-model` 屬性可供使用。
+若要搭配元件使用模型定義，可以使用`data-aue-model`屬性。
 
 ```html
 <div data-aue-resource="urn:datasource:/content/path" data-aue-type="component"  data-aue-model="model-id">Click me</div>
@@ -77,11 +77,11 @@ ht-degree: 10%
 | `description` | `FieldDescription` | 欄位說明 | 否 |
 | `placeholder` | `string` | 欄位預留位置 | 否 |
 | `value` | `FieldValue` | 預設值 | 否 |
-| `valueType` | `ValueType` | 標準驗證，可以是 `string`， `string[]`， `number`， `date`， `boolean` | 否 |
+| `valueType` | `ValueType` | 標準驗證，可以是`string`、`string[]`、`number`、`date`、`boolean` | 否 |
 | `required` | `boolean` | 欄位是否為必填欄位 | 否 |
 | `readOnly` | `boolean` | 欄位是否為唯讀 | 否 |
 | `hidden` | `boolean` | 預設為隱藏欄位 | 否 |
-| `condition` | `RulesLogic` | 顯示或隱藏欄位的規則，根據 [條件](/help/implementing/universal-editor/customizing.md#conditionally-hide) | 否 |
+| `condition` | `RulesLogic` | 根據[條件](/help/implementing/universal-editor/customizing.md#conditionally-hide)顯示或隱藏欄位的規則 | 否 |
 | `multi` | `boolean` | 此欄位是否為多個欄位 | 否 |
 | `validation` | `ValidationType` | 欄位的驗證規則 | 否 |
 | `raw` | `unknown` | 元件可使用的原始資料 | 否 |
@@ -99,11 +99,11 @@ ht-degree: 10%
 | [容器](#container) | `container` |
 | [內容片段](#content-fragment) | `aem-content-fragment` |
 | [日期時間](#date-time) | `date-time` |
-| [多選](#multiselect) | `multiselect` |
+| [多重選取](#multiselect) | `multiselect` |
 | [數字](#number) | `number` |
-| [選項按鈕群組](#radio-group) | `radio-group` |
+| [無線電群組](#radio-group) | `radio-group` |
 | [參考](#reference) | `reference` |
-| [RTF文字](#rich-text) | `richtext` |
+| [RTF格式](#rich-text) | `richtext` |
 | [選取](#select) | `select` |
 | [標籤](#tab) | `tab` |
 | [文字](#text) | `text` |
@@ -114,7 +114,7 @@ AEM標籤元件型別會啟用AEM標籤選擇器，其可用來將標籤附加�
 
 >[!BEGINTABS]
 
->[!TAB 範例]
+>[!TAB 樣本]
 
 ```json
 {
@@ -142,7 +142,7 @@ AEM內容元件型別會啟用AEM內容選擇器，其可用於設定內容參�
 
 >[!BEGINTABS]
 
->[!TAB 範例]
+>[!TAB 樣本]
 
 ```json
 {
@@ -222,7 +222,7 @@ AEM內容元件型別會啟用AEM內容選擇器，其可用於設定內容參�
 
 >[!BEGINTABS]
 
->[!TAB 範例]
+>[!TAB 樣本]
 
 ```json
 {
@@ -244,7 +244,7 @@ AEM內容元件型別會啟用AEM內容選擇器，其可用於設定內容參�
 
 >[!TAB 熒幕擷圖]
 
-![核取方塊群組元件型別的熒幕擷圖](assets/component-types/checkbox-group.png)
+![核取方塊群組元件型別](assets/component-types/checkbox-group.png)的熒幕擷圖
 
 >[!ENDTABS]
 
@@ -258,7 +258,7 @@ AEM內容元件型別會啟用AEM內容選擇器，其可用於設定內容參�
 
 >[!BEGINTABS]
 
->[!TAB 範例]
+>[!TAB 樣本]
 
 ```json
  {
@@ -291,13 +291,13 @@ AEM內容元件型別會啟用AEM內容選擇器，其可用於設定內容參�
 
 >[!TAB 熒幕擷圖]
 
-![容器元件型別的熒幕擷圖](assets/component-types/container.png)
+![容器元件型別](assets/component-types/container.png)的熒幕擷圖
 
 >[!ENDTABS]
 
 #### 內容片段 {#content-fragment}
 
-內容片段選擇器可用來選取 [內容片段](/help/sites-cloud/authoring/fragments/content-fragments.md) 及其變數（如有需要）。 它提供額外設定。
+內容片段選擇器可用來選取[內容片段](/help/sites-cloud/authoring/fragments/content-fragments.md)及其變數（如果需要）。 它提供額外設定。
 
 | 設定 | 數值類型 | 說明 | 必填 |
 |---|---|---|---|
@@ -343,7 +343,7 @@ AEM內容元件型別會啟用AEM內容選擇器，其可用於設定內容參�
 
 | 驗證類型 | 數值類型 | 說明 | 必填 |
 |---|---|---|---|
-| `customErrorMsg` | `string` | 訊息將在發生以下情況時顯示 `valueFormat` 不符合 | 否 |
+| `customErrorMsg` | `string` | 未滿足`valueFormat`時將顯示的訊息 | 否 |
 
 >[!BEGINTABS]
 
@@ -417,13 +417,13 @@ AEM內容元件型別會啟用AEM內容選擇器，其可用於設定內容參�
 
 >[!TAB 熒幕擷圖]
 
-![日期時間元件型別的熒幕擷圖](assets/component-types/date-time.png)
+![日期時間元件型別](assets/component-types/date-time.png)的熒幕擷圖
 
 >[!ENDTABS]
 
 #### 體驗片段 {#experience-fragment}
 
-體驗片段選擇器可用來選取 [體驗片段](/help/sites-cloud/authoring/fragments/experience-fragments.md) 及其變數（如有需要）。 它提供額外設定。
+體驗片段選擇器可用來選取[體驗片段](/help/sites-cloud/authoring/fragments/experience-fragments.md)及其變數（如果需要）。 它提供額外設定。
 
 | 設定 | 數值類型 | 說明 | 必填 |
 |---|---|---|---|
@@ -518,10 +518,10 @@ AEM內容元件型別會啟用AEM內容選擇器，其可用於設定內容參�
 }
 ```
 
->[!TAB 熒幕擷圖]
+>[!TAB 熒幕擷取畫面]
 
-![多選元件型別的熒幕擷圖](assets/component-types/multiselect.png)
-![包含群組的多重選取元件型別熒幕擷圖](assets/component-types/multiselect-group.png)
+![多重選取元件型別的熒幕擷圖](assets/component-types/multiselect.png)
+![具有群組的多重選取元件型別熒幕擷圖](assets/component-types/multiselect-group.png)
 
 >[!ENDTABS]
 
@@ -533,7 +533,7 @@ AEM內容元件型別會啟用AEM內容選擇器，其可用於設定內容參�
 |---|---|---|---|
 | `numberMin` | `number` | 允許的最小數量 | 否 |
 | `numberMax` | `number` | 允許的最大數量 | 否 |
-| `customErrorMsg` | `string` | 訊息將在發生以下情況時顯示 `numberMin` 或 `numberMax` 不符合 | 否 |
+| `customErrorMsg` | `string` | 未符合`numberMin`或`numberMax`時將顯示的訊息 | 否 |
 
 >[!BEGINTABS]
 
@@ -580,7 +580,7 @@ AEM內容元件型別會啟用AEM內容選擇器，其可用於設定內容參�
 
 >[!TAB 熒幕擷圖]
 
-![數字元件型別的熒幕擷圖](assets/component-types/number.png)
+![數字元件型別](assets/component-types/number.png)的熒幕擷圖
 
 >[!ENDTABS]
 
@@ -590,7 +590,7 @@ AEM內容元件型別會啟用AEM內容選擇器，其可用於設定內容參�
 
 >[!BEGINTABS]
 
->[!TAB 範例]
+>[!TAB 樣本]
 
 ```json
 {
@@ -612,7 +612,7 @@ AEM內容元件型別會啟用AEM內容選擇器，其可用於設定內容參�
 
 >[!TAB 熒幕擷圖]
 
-![選項群組元件型別的熒幕擷圖](assets/component-types/radio.png)
+![無線電群組元件型別](assets/component-types/radio.png)的熒幕擷取畫面
 
 >[!ENDTABS]
 
@@ -622,7 +622,7 @@ AEM內容元件型別會啟用AEM內容選擇器，其可用於設定內容參�
 
 >[!BEGINTABS]
 
->[!TAB 範例]
+>[!TAB 樣本]
 
 ```json
 {
@@ -640,7 +640,7 @@ AEM內容元件型別會啟用AEM內容選擇器，其可用於設定內容參�
 
 >[!TAB 熒幕擷圖]
 
-![參考元件型別的熒幕擷圖](assets/component-types/reference.png)
+![參考元件型別](assets/component-types/reference.png)的熒幕擷圖
 
 >[!ENDTABS]
 
@@ -651,7 +651,7 @@ RTF允許多行RTF輸入。 它提供額外的驗證型別。
 | 驗證類型 | 數值類型 | 說明 | 必填 |
 |---|---|---|---|
 | `maxSize` | `number` | 允許的最大字元數 | 否 |
-| `customErrorMsg` | `string` | 訊息將在發生以下情況時顯示 `maxSize` 已超過 | 否 |
+| `customErrorMsg` | `string` | 超過`maxSize`時顯示的訊息 | 否 |
 
 >[!BEGINTABS]
 
@@ -703,7 +703,7 @@ RTF允許多行RTF輸入。 它提供額外的驗證型別。
 
 >[!BEGINTABS]
 
->[!TAB 範例]
+>[!TAB 樣本]
 
 ```json
 {
@@ -733,13 +733,13 @@ RTF允許多行RTF輸入。 它提供額外的驗證型別。
 
 索引標籤元件型別可讓您將其他輸入欄位分組在多個索引標籤上，以改善作者的版面配置組織。
 
-A `tab` 可將定義視為陣列中的分隔符號 `fields`. 之後的一切 `tab` 將會放在該索引標籤上，直到新的 `tab` 之後，會將下列專案放置在新標籤上。
+可以將`tab`定義視為`fields`陣列中的分隔符號。 `tab`之後的所有專案都將放在該索引標籤上，直到遇到新的`tab`為止，之後下列專案將放在該新索引標籤上。
 
 如果您希望專案出現在所有標籤的上方，必須在任何標籤之前定義它們。
 
 >[!BEGINTABS]
 
->[!TAB 範例]
+>[!TAB 樣本]
 
 ```json
 {
@@ -786,7 +786,7 @@ A `tab` 可將定義視為陣列中的分隔符號 `fields`. 之後的一切 `ta
 | `minLength` | `number` | 允許的最小字元數 | 否 |
 | `maxLength` | `number` | 允許的最大字元數 | 否 |
 | `regExp` | `string` | 輸入文字必須符合的規則運算式 | 否 |
-| `customErrorMsg` | `string` | 訊息將在發生以下情況時顯示 `minLength`， `maxLength`、和/或 `regExp` 違反了 | 否 |
+| `customErrorMsg` | `string` | 違反`minLength`、`maxLength`和/或`regExp`時將顯示的訊息 | 否 |
 
 >[!BEGINTABS]
 

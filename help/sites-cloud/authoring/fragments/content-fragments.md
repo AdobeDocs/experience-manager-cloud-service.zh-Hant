@@ -14,7 +14,7 @@ ht-degree: 2%
 
 # 內容片段 {#content-fragments}
 
-Adobe Experience Manager (AEM)as a Cloud Service中的內容片段包括 [已建立並管理為不受頁面影響的資產](/help/sites-cloud/administering/content-fragments/overview.md).
+Adobe Experience Manager (AEM) as a Cloud Service中的內容片段是[建立並管理為不受頁面影響的資產](/help/sites-cloud/administering/content-fragments/overview.md)。
 
 它們可讓您建立頻道中性內容，以及各種（頻道特定的）變化。 接著，您就可以在編寫內容頁面時，使用這些片段及其變數。
 
@@ -22,28 +22,28 @@ Adobe Experience Manager (AEM)as a Cloud Service中的內容片段包括 [已建
 
 >[!NOTE]
 >
->內容片段為 **網站** 功能，但儲存為 **資產**.
+>內容片段是&#x200B;**網站**&#x200B;功能，但儲存為&#x200B;**Assets**。
 >
->他們現在主要透過 **[內容片段](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console)** 主控台，但仍可從 **[資產](/help/assets/content-fragments/content-fragments-managing.md)** 主控台。
+>目前主要透過&#x200B;**[內容片段](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console)**&#x200B;主控台管理，但仍可從&#x200B;**[Assets](/help/assets/content-fragments/content-fragments-managing.md)**&#x200B;主控台管理。
 >
 >編寫內容片段有兩個編輯器：
 >
->* 的新編輯器 [內容片段 — 製作](/help/sites-cloud/administering/content-fragments/authoring.md)，主要從存取 **內容片段** 主控台。
->* 此 [原始編輯器](/help/assets/content-fragments/content-fragments-variations.md) 主要從「 」存取 **資產** 主控台。
+>* [內容片段的新編輯器 — 製作](/help/sites-cloud/administering/content-fragments/authoring.md)主要從&#x200B;**內容片段**&#x200B;主控台存取。
+>* [原始編輯器](/help/assets/content-fragments/content-fragments-variations.md)主要是從&#x200B;**Assets**&#x200B;主控台存取。
 
 >[!NOTE]
 >
->**內容片段** 和 **[體驗片段](/help/sites-cloud/authoring/fragments/content-fragments.md)** 是AEM中的不同功能：
->* **內容片段** 是可編輯內容，具備定義與結構，但無其他視覺化設計及/或版面配置。 它們可用於存取結構化資料，包括文字、數字和日期等。
->* **體驗片段** 是完全佈局的內容；網頁的片段。
+>**內容片段**&#x200B;和&#x200B;**[體驗片段](/help/sites-cloud/authoring/fragments/content-fragments.md)**&#x200B;是AEM中的不同功能：
+>* **內容片段**&#x200B;是可編輯內容，具有定義和結構，但沒有額外的視覺設計和/或版面配置。 它們可用於存取結構化資料，包括文字、數字和日期等。
+>* **體驗片段**&#x200B;是完整佈局的內容；網頁的片段。
 >
 >體驗片段可以包含內容片段形式的內容，反之則不行。
 >
->如需詳細資訊，請參閱 [瞭解AEM中的內容片段和體驗片段](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html#content-fragments).
+>如需詳細資訊，請參閱[瞭解AEM中的內容片段和體驗片段](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html#content-fragments)。
 
 >[!CAUTION]
 >
->此頁面必須結合閱讀 [使用內容片段](/help/sites-cloud/administering/content-fragments/overview.md) （及相關頁面），其中介紹基本術語和概念，以及建立和管理片段。
+>此頁面必須結合[使用內容片段](/help/sites-cloud/administering/content-fragments/overview.md) （及相關頁面）一起閱讀，因為它會介紹基本術語和概念，以及建立和管理片段。
 
 內容片段會啟用：
 
@@ -67,18 +67,18 @@ Adobe Experience Manager (AEM)as a Cloud Service中的內容片段包括 [已建
 ## 新增內容片段至您的頁面 {#adding-a-content-fragment-to-your-page}
 
 1. 開啟您的頁面以進行編輯。
-2. 新增 **內容片段** 元件；從 **元件** 瀏覽器或 **插入新元件**.
+2. 新增&#x200B;**內容片段**&#x200B;元件；從&#x200B;**元件**&#x200B;瀏覽器或&#x200B;**插入新元件**。
 3. 您可以執行下列兩個動作中的一個:
-   * 開啟 **資產** 瀏覽器和篩選器 **內容片段** （預設值為「影像」）。 然後將所需的片段拖曳到元件例項上。
-   * 選取內容片段元件，然後 **設定** 工具列中的。 在對話方塊中，您可以開啟選取對話方塊以瀏覽並選取所需的專案 **內容片段**.
+   * 開啟&#x200B;**Assets**&#x200B;瀏覽器並篩選&#x200B;**內容片段** （預設為「影像」）。 然後將所需的片段拖曳到元件例項上。
+   * 選取內容片段元件，然後從工具列&#x200B;**設定**。 在對話方塊中，您可以開啟選取對話方塊以瀏覽並選取所需的&#x200B;**內容片段**。
 
    >[!NOTE]
    >
    >另一種方法是將特定的內容片段直接拖曳到頁面上。 這會自動建立關聯的元件（內容片段）。
 
-4. 最初，內容來自 **主要** 元素和 **主版** （變數）會顯示。 您可以 [選取其他元素和/或變數](#selecting-the-element-or-variation) 視需要。
+4. 一開始會顯示來自&#x200B;**主要**&#x200B;專案和&#x200B;**主要** （變數）的內容。 您可以視需要[選取其他元素和/或變數](#selecting-the-element-or-variation)。
 
-   ![資產瀏覽器中的內容片段](/help/sites-cloud/authoring/assets/content-fragments.png)
+   Assets瀏覽器中的![內容片段](/help/sites-cloud/authoring/assets/content-fragments.png)
 
    >[!NOTE]
    >
@@ -89,11 +89,11 @@ Adobe Experience Manager (AEM)as a Cloud Service中的內容片段包括 [已建
 
 ### 選取元素或變數 {#selecting-the-element-or-variation}
 
-開啟片段的 **設定** 對話方塊，以設定片段用於目前頁面。 此對話方塊取決於所使用的元件。
+開啟片段的&#x200B;**組態**&#x200B;對話方塊，設定片段用於目前頁面。 此對話方塊取決於所使用的元件。
 
 >[!NOTE]
 >
->另請參閱 [核心元件內容片段元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html)
+>另請參閱[核心元件、內容片段元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html)
 
 在適當的組態對話方塊中，您可以選取可用的引數，包括：
 
@@ -110,16 +110,16 @@ Adobe Experience Manager (AEM)as a Cloud Service中的內容片段包括 [已建
   >可用的元素取決於所使用的模型。
 
 * **變異**
-   * 預設 **主版** 隨時可用。
+   * 預設&#x200B;**主版**&#x200B;始終可用。
    * 如果變數是為片段而建立，則可供選取。
 
-* **ID**
+* **識別碼**
 
-   * **HTMLID** 要套用至元件的屬性。
+   * 要套用至元件的&#x200B;**HTML識別碼**&#x200B;屬性。
 
 ### 快速連線到片段編輯器 {#quick-connection-to-fragment-editor}
 
-您可以使用開啟片段來源以進行編輯（資產） **編輯** 圖示來切換元件。 這可讓您 [編輯和管理內容片段](/help/sites-cloud/administering/content-fragments/overview.md).
+您可以使用元件工具列上的&#x200B;**編輯**&#x200B;圖示，開啟片段來源以進行編輯（資產）。 這可讓您[編輯及管理內容片段](/help/sites-cloud/administering/content-fragments/overview.md)。
 
 >[!CAUTION]
 >
@@ -127,15 +127,15 @@ Adobe Experience Manager (AEM)as a Cloud Service中的內容片段包括 [已建
 
 ### 新增中間內容 {#adding-in-between-content}
 
-將特定內容片段新增到頁面時， **將元件拖曳到這裡** 片段中每個HTML段落（和上/下）之間的預留位置。
+將特定內容片段新增到頁面時，片段的每個HTML段落（和上/下）之間會有&#x200B;**將元件拖曳到這裡**&#x200B;預留位置。
 
-這可讓您新增額外內容 [中間（即中間內容）](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments) 片段內容（在任何可用點），不必變更根片段。
+這可讓您新增中間的[額外內容（亦即中間內容）](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments)片段內容（在任何可用點），而不需變更根片段。
 
 針對中間內容，您可以：
 
-* 從新增元件 [元件瀏覽器。](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser)
-* 從新增資產 [資產瀏覽器。](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#assets-browser)
-* 使用 [關聯內容](#using-associated-content) 作為中間內容的來源。
+* 從[元件瀏覽器新增元件。](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser)
+* 從[Assets瀏覽器新增資產。](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#assets-browser)
+* 使用[關聯內容](#using-associated-content)作為中間內容的來源。
 
 >[!CAUTION]
 >
@@ -145,9 +145,9 @@ Adobe Experience Manager (AEM)as a Cloud Service中的內容片段包括 [已建
 
 >[!NOTE]
 >
->您也可以 [將視覺資產（影像）插入片段本身](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment).
+>您也可以[將視覺資產（影像）插入片段本身](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment)。
 >
->插入片段本身的視覺資產會附加至片段中前面的段落。 這表示您無法在視覺資產與前一段落之間放置中間內容。 如果您需要這種連線等級，可以將影像新增到片段(以 [混合媒體片段](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets))。
+>插入片段本身的視覺資產會附加至片段中前面的段落。 這表示您無法在視覺資產與前一段落之間放置中間內容。 如果您需要這種連線等級，可以將影像新增到片段（做為[混合媒體片段](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets)）。
 
 >[!CAUTION]
 >
@@ -162,25 +162,25 @@ Adobe Experience Manager (AEM)as a Cloud Service中的內容片段包括 [已建
 
 ### 使用關聯內容 {#using-associated-content}
 
-如果您有 [關聯內容](/help/assets/content-fragments/content-fragments-assoc-content.md) 使用 [內容片段](/help/assets/content-fragments/content-fragments.md) 這些資產可從側面板使用（在您將片段放在內容頁面後）。 關聯內容實際上是的特殊內容來源 [中間內容](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments).
+如果您有[與[內容片段](/help/assets/content-fragments/content-fragments.md)相關聯的內容](/help/assets/content-fragments/content-fragments-assoc-content.md)，這些資產便可從側面板使用（在您將片段放在內容頁面後）。 關聯內容實際上是[中間內容](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments)的特殊內容來源。
 
 >[!NOTE]
 >
->有多種方法可新增 [視覺資產（例如影像）](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) 至片段和/或頁面。
+>有多種方法可以將[視覺資產（例如影像）](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets)新增至片段和/或頁面。
 
 >[!NOTE]
 >
->如果您在一個頁面上有多個內容片段，請 **關聯內容** 索引標籤會顯示適用於所有片段的資產。
+>如果您在一個頁面上有多個內容片段，**關聯內容**&#x200B;索引標籤會顯示適用於所有片段的資產。
 
-將具有關聯內容的片段新增到頁面後，就會顯示新索引標籤(**關聯內容**)即會在側面板中開啟。
+將具有關聯內容的片段新增到頁面後，會在側面板中開啟新索引標籤（**關聯內容**）。
 
 從這裡，您可以將資產拖曳至所需位置（可拖曳至現有元件，或拖曳至建立適當元件的所需位置）：
 
-![插入影像](/help/sites-cloud/authoring/assets/content-fragments-image.png)
+![正在插入影像](/help/sites-cloud/authoring/assets/content-fragments-image.png)
 
-### 插入到片段中的資產 {#assets-inserted-into-the-fragment}
+### 插入片段中的Assets {#assets-inserted-into-the-fragment}
 
-如果資產（例如影像）已插入片段本身(如 [混合媒體片段](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets))，則頁面編輯器中用於編輯這些資產的選項會受到限制。
+如果已將資產（例如影像）插入片段本身（作為[混合媒體片段](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets)），則頁面編輯器中用於編輯這些資產的選項會受到限制。
 
 例如，您可以對影像執行
 
@@ -195,8 +195,8 @@ Adobe Experience Manager (AEM)as a Cloud Service中的內容片段包括 [已建
 
 片段必須發佈，才能用於您已發佈的網頁：
 
-* 片段可以在以下時間後發佈： [在內容片段控制檯中建立片段](/help/sites-cloud/administering/content-fragments/managing.md#publishing-and-previewing-a-fragment).
-* 如果 *未發佈的片段* 用於正在發佈的頁面，目前也可以發佈片段。
+* 在[在內容片段主控台](/help/sites-cloud/administering/content-fragments/managing.md#publishing-and-previewing-a-fragment)中建立片段之後，可以發佈片段。
+* 如果在正在發佈的頁面上使用&#x200B;*未發佈的片段*，此時也可以發佈片段。
 
 ## 匯出內容片段 {#exporting-content-fragments}
 

@@ -7,7 +7,7 @@ user-guide-description: 了解 Experience Manager as a Cloud Service 的運作�
 breadcrumb-title: 使用手冊
 user-guide-title: AEM as a Cloud Service
 source-git-commit: 4e272fe63ccdc920c58ada780a2087bba1bfcb1f
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '5149'
 ht-degree: 100%
 

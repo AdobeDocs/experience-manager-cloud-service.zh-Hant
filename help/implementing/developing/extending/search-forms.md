@@ -13,25 +13,25 @@ ht-degree: 9%
 
 # 設定搜尋表單 {#configuring-search-forms}
 
-Adobe Experience Manager as a Cloud Service隨附強大的功能 [搜尋](/help/sites-cloud/authoring/search.md) 機制。
+Adobe Experience Manager as a Cloud Service提供強大的[搜尋](/help/sites-cloud/authoring/search.md)機制。
 
-除此之外，還有一組預先定義的選項，可協助您篩選內容。 這些會保留預先定義的多面，例如 **修改日期**， **發佈狀態**，或 **即時副本狀態** 可協助您快速向下展開至您需要的資源。
+除此之外，還有一組預先定義的選項，可協助您篩選內容。 這些保留預先定義的Facet，例如&#x200B;**修改日期**、**Publish狀態**&#x200B;或&#x200B;**即時副本狀態**，可協助您快速向下展開至您需要的資源。
 
-![搜尋和篩選使用情形](assets/csf-usage.png)
+![搜尋和篩選使用方式](assets/csf-usage.png)
 
 這些目標可協助您從以下位置快速輕鬆地找到您的內容：
 
 * [搜尋和篩選](/help/sites-cloud/authoring/search.md#search-and-filter)
 * [邊欄選擇器](/help/sites-cloud/authoring/basic-handling.md#rail-selector)
-* 此 [資產瀏覽器](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#assets-browser) （編輯頁面時）
+* [Assets瀏覽器](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#assets-browser) （編輯頁面時）
 
 >[!NOTE]
 >
->您可以設定基礎 [內容搜尋與索引](/help/operations/indexing.md) 服務。
+>您可以設定基礎[內容搜尋和索引](/help/operations/indexing.md)服務。
 
-使用 **搜尋Forms**，您就可以根據特定需求自訂及擴充這些面板。
+使用&#x200B;**搜尋Forms**，您可以根據特定需求自訂及擴充這些面板。
 
-此 **搜尋Forms** 提供現成可用的 [述詞](#predicates-and-their-settings) 以組合和定義。 此 [用於設定這些表單的對話方塊](#configuring-your-search-forms) 可透過以下方式存取：
+**搜尋Forms**&#x200B;提供您可以組合和定義的[述詞](#predicates-and-their-settings)的現成選擇。 設定這些表單](#configuring-your-search-forms)的[對話方塊可透過下列方式存取：
 
 * **工具**
    * **一般**
@@ -39,13 +39,13 @@ Adobe Experience Manager as a Cloud Service隨附強大的功能 [搜尋](/help/
 
 ## 預設Forms {#default-forms}
 
-當您第一次存取 **搜尋Forms** 主控台您可以看到所有組態都有掛鎖符號。 這表示對應的設定是預設（現成）設定 — 無法刪除。 一旦您自訂並儲存設定，鎖定就會消失。 它會在您執行下列動作時重新出現： [刪除您的自訂設定](#deleting-a-configuration-to-reinstate-the-default)，則會恢復預設值（和掛鎖指示器）。
+第一次存取&#x200B;**搜尋Forms**&#x200B;主控台時，您可以看到所有設定都有掛鎖符號。 這表示對應的設定是預設（現成）設定 — 無法刪除。 一旦您自訂並儲存設定，鎖定就會消失。 當您[刪除自訂的組態](#deleting-a-configuration-to-reinstate-the-default)時，它將會重新出現，在此情況下，預設值（和掛鎖指示器）將會復原。
 
 ![設定搜尋表單概觀](assets/csf-overview.png)
 
 可用的預設設定（依字母順序列出）為：
 
-* **資產管理搜尋邊欄**
+* **Assets管理搜尋邊欄**
 * **頁面編輯器（檔案搜尋）**
 * **頁面編輯器（體驗片段搜尋）**
 * **頁面編輯器（影像搜尋）**
@@ -58,7 +58,7 @@ Adobe Experience Manager as a Cloud Service隨附強大的功能 [搜尋](/help/
 * **專案管理搜尋邊欄**
 * **專案翻譯搜尋邊欄**
 * **網站管理搜尋邊欄**
-* **代碼片段管理搜尋邊欄**
+* **程式碼片段管理搜尋邊欄**
 * **Stock管理搜尋邊欄**
 * **內容片段模型搜尋邊欄**
 * **專案管理搜尋邊欄**
@@ -66,7 +66,7 @@ Adobe Experience Manager as a Cloud Service隨附強大的功能 [搜尋](/help/
 
 >[!NOTE]
 >
->如需資產相關搜尋表單的詳細資訊，請參閱 [資產 — 搜尋Facet](/help/assets/search-facets.md).
+>如需資產相關搜尋表單的詳細資訊，請參閱[Assets — 搜尋Facet](/help/assets/search-facets.md)。
 
 
 ## 述詞及其設定 {#predicates-and-their-settings}
@@ -258,7 +258,7 @@ Adobe Experience Manager as a Cloud Service隨附強大的功能 [搜尋](/help/
   </tr>
   <tr>
    <td>選項</td>
-   <td><p>選項是使用者建立的內容節點。</p> <p>另請參閱 <a href="#addinganoptionspredicate">新增選項述詞</a> 以取得詳細資訊。</p> </td>
+   <td><p>選項是使用者建立的內容節點。</p> <p>如需詳細資訊，請參閱<a href="#addinganoptionspredicate">新增選項述詞</a>。</p> </td>
    <td>
     <ul>
      <li>欄位標籤</li>
@@ -288,7 +288,7 @@ Adobe Experience Manager as a Cloud Service隨附強大的功能 [搜尋](/help/
    <td>
     <ul>
      <li>欄位標籤</li>
-     <li>發佈屬性名稱*</li>
+     <li>Publish屬性名稱*</li>
      <li>鎖定的頁面屬性名稱*</li>
      <li>說明</li>
     </ul> </td>
@@ -339,7 +339,7 @@ Adobe Experience Manager as a Cloud Service隨附強大的功能 [搜尋](/help/
    </td>
   </tr>
   <tr>
-   <td>發佈狀態</td>
+   <td>Publish狀態</td>
    <td>根據資源的發佈狀態來篩選資源。</td>
    <td>
     <ul>
@@ -482,7 +482,7 @@ Adobe Experience Manager as a Cloud Service隨附強大的功能 [搜尋](/help/
 >常見的搜尋述詞定義於：
 >  `/libs/cq/gui/components/common/admin/customsearch/searchpredicates`
 >
->此資訊僅供參考，您不得變更 `/libs`.
+>此資訊僅供參考，您不得變更`/libs`。
 
 <!--
 >* Search predicates related only to siteadmin (classic UI) are located under:
@@ -509,9 +509,9 @@ Adobe Experience Manager as a Cloud Service隨附強大的功能 [搜尋](/help/
 
 * **屬性名稱**
 
-  要搜尋的屬性。 它使用相對路徑和萬用字元 `*/*/*` 指定屬性相對於 `jcr:content` 節點（每個星號代表一個節點層級）。
+  要搜尋的屬性。 它使用相對路徑，萬用字元`*/*/*`指定相對於`jcr:content`節點的屬性深度（每個星號代表一個節點層級）。
 
-  如果您只想搜尋具有下列專案的資源之第一層子節點： `x` 上的屬性 `jcr:content` 節點使用 `*/jcr:content/x`
+  如果您只想在`jcr:content`節點上具有`x`屬性的資源之第一層子節點上搜尋，請使用`*/jcr:content/x`
 
 * **屬性深度**
 
@@ -519,43 +519,43 @@ Adobe Experience Manager as a Cloud Service隨附強大的功能 [搜尋](/help/
 
 * **屬性值**
 
-  作為絕對字串或作為運算式語言的屬性值；例如， `cq:Page` 或
+  屬性值做為絕對字串或做為運算式語言；例如，`cq:Page`或
 
   `${empty requestPathInfo.suffix ? "/content" : requestPathInfo.suffix}`。
 
 * **範圍文字**
 
-  中範圍欄位的標籤 **日期範圍** 述詞。
+  **日期範圍**&#x200B;述詞中範圍欄位的標籤。
 
 * **選項路徑**
 
-  使用者可以使用述詞設定索引標籤中的路徑瀏覽器來選取路徑。 選取 **+** 圖示可用來將選取專案新增至有效選項清單(接著 **-** 圖示以視需要移除)。
+  使用者可以使用述詞設定索引標籤中的路徑瀏覽器來選取路徑。 選取&#x200B;**+**&#x200B;圖示之後，會使用將選取專案新增至有效選項清單（如有必要，則會移除&#x200B;**-**&#x200B;圖示）。
 
   選項是使用者建立的內容節點，結構如下：
 
   `(jcr:primaryType = nt:unstructured, value (String), jcr:title (String))`
 
 * **選項節點路徑**
-實際上與 **選項路徑**，只有這個在通用述詞欄位中，其他是資產專用的。
+實際上與**選項路徑**&#x200B;相同，只有這個在通用述詞欄位中，其他則專用於資產。
 
 * **單選**
 如果勾選，選項會呈現為僅允許單一選取的核取方塊。 如果錯誤地選取了，則可取消選取核取方塊。
 
-* **發佈和即時副本屬性名稱**
+* **Publish和即時副本屬性名稱**
 網站特定述詞的發佈和即時副本核取方塊的標籤。
 
-* 欄位標籤上的&amp;ast； **設定** tab表示欄位是必填欄位，如果留空，將會顯示錯誤訊息。
+* **設定**&#x200B;標籤中欄位標籤上的&amp;amp；ast；表示欄位是必填欄位，如果留白，將會出現錯誤訊息。
 
 ## 設定搜尋Forms {#configuring-your-search-forms}
 
 ### 建立/開啟自訂組態 {#creating-opening-a-customized-configuration}
 
-1. 瀏覽至 **工具**， **一般**， **搜尋Forms**.
+1. 導覽至&#x200B;**工具**、**一般**、**搜尋Forms**。
 
 1. 選取您要自訂的設定。
-1. 使用 **編輯** 圖示開啟設定以進行更新。
-1. 如果新的自訂專案，您可能想要 [新增述詞欄位並定義設定](#add-edit-a-predicate-field-and-define-field-settings) 視需要。 如果已有自訂，您可以選取現有欄位並 [更新設定](#add-edit-a-predicate-field-and-define-field-settings).
-1. 選取 **完成** 以儲存組態。 下次使用設定時即可看到您的變更。
+1. 使用&#x200B;**編輯**&#x200B;圖示開啟設定以進行更新。
+1. 如果新的自訂，您可能要[新增述詞欄位，並視需要定義設定](#add-edit-a-predicate-field-and-define-field-settings)。 如果已有自訂，您可以選取現有欄位並[更新設定](#add-edit-a-predicate-field-and-define-field-settings)。
+1. 選取&#x200B;**完成**&#x200B;以儲存組態。 下次使用設定時即可看到您的變更。
 
    >[!NOTE]
    >
@@ -568,8 +568,8 @@ Adobe Experience Manager as a Cloud Service隨附強大的功能 [搜尋](/help/
 
 您可以新增或編輯欄位，並定義/更新其設定：
 
-1. [開啟自訂的設定](#creating-opening-a-customized-configuration) 以進行更新。
-1. 如果您想要新增欄位，請開啟 **選取述詞** 並拖曳所需的述詞至所需的位置。 例如， **日期範圍述詞**：
+1. [開啟自訂的設定](#creating-opening-a-customized-configuration)以進行更新。
+1. 如果您想要新增欄位，請開啟&#x200B;**選取述詞**&#x200B;索引標籤，並將必要的述詞拖曳到必要的位置。 例如，**日期範圍述詞**：
 
    ![新增述詞](assets/csf-add-predicate.png)
 
@@ -577,17 +577,17 @@ Adobe Experience Manager as a Cloud Service隨附強大的功能 [搜尋](/help/
 
    * 您正在新增欄位：
 
-     新增述詞後， **設定** 標籤會開啟並顯示可定義的屬性。
+     新增述詞之後，**設定**&#x200B;索引標籤會開啟，並顯示可定義的屬性。
 
    * 您要更新現有的述詞：
 
-     選取述詞欄位（在右側），然後開啟 **設定** 標籤。
+     選取述詞欄位（在右側），然後開啟&#x200B;**設定**&#x200B;標籤。
 
-   例如， **日期範圍述詞**：
+   例如，**日期範圍述詞**&#x200B;的設定：
 
    ![修改述詞](assets/csf-modify-predicate.png)
 
-1. 視需要進行變更，然後確認： **完成**. 下次使用設定時即可看到您的變更。
+1. 視需要進行變更，並透過&#x200B;**完成**&#x200B;確認。 下次使用設定時即可看到您的變更。
 
 ### 預覽搜尋組態 {#previewing-the-search-configuration}
 
@@ -599,18 +599,18 @@ Adobe Experience Manager as a Cloud Service隨附強大的功能 [搜尋](/help/
 
    ![預覽表單](assets/csf-preview-form.png)
 
-1. **關閉** 預覽以傳回並完成設定。
+1. **關閉**&#x200B;預覽以傳回並完成設定。
 
 ### 刪除述詞欄位 {#deleting-a-predicate-field}
 
-1. [開啟自訂的設定](#creating-opening-a-customized-configuration) 以進行更新。
-1. 選取述詞欄位（在右側），開啟 **設定** 標籤，然後選取 **刪除** 圖示（左下方）。
+1. [開啟自訂的設定](#creating-opening-a-customized-configuration)以進行更新。
+1. 選取述詞欄位（在右側），開啟&#x200B;**設定**&#x200B;標籤，然後選取&#x200B;**刪除**&#x200B;圖示（左下方）。
 
    ![刪除圖示](assets/csf-delete-icon.png)
 
 1. 對話方塊會要求確認刪除動作。
 
-1. 確認此變更及任何其他變更，透過 **完成**.
+1. 透過&#x200B;**完成**&#x200B;確認此變更及任何其他變更。
 
 ### 刪除組態（恢復預設值） {#deleting-a-configuration-to-reinstate-the-default}
 
@@ -622,7 +622,7 @@ Adobe Experience Manager as a Cloud Service隨附強大的功能 [搜尋](/help/
 
 從主控台刪除自訂設定完成：
 
-1. 選取所需的設定(例如， **頁面編輯器（段落搜尋）**)，然後按一下 **刪除** 圖示：
+1. 選取必要的設定(例如，**頁面編輯器（段落搜尋）**)，然後選取工具列中的&#x200B;**刪除**&#x200B;圖示：
 
    ![還原預設值](assets/csf-restore-default.png)
 
@@ -640,26 +640,26 @@ Adobe Experience Manager as a Cloud Service隨附強大的功能 [搜尋](/help/
 
    個別選項的節點需要屬性：
 
-   * `jcr:title`  — 搜尋邊欄中顯示的欄位標籤
-   * `value`  — 要搜尋的屬性值
+   * `jcr:title` — 要在搜尋邊欄中顯示的欄位標籤
+   * `value` — 要搜尋的屬性值
 
    ![述詞定義](assets/csf-options-predicate-01.png)
 
    >[!NOTE]
    >
-   >您 ***必須*** 不會變更中的任何專案 `/libs` 路徑。
+   >您&#x200B;***必須***&#x200B;不要變更`/libs`路徑中的任何專案。
    >
-   >這是因為 `/libs` 下次升級執行個體時會被覆寫（當您套用hotfix或feature pack時，很可能會被覆寫）。
+   >這是因為下次升級執行個體時，`/libs`的內容會被覆寫（當您套用Hotfix或Feature Pack時，這些內容很可能會被覆寫）。
    >
    >設定和其他變更的建議方法是：
    >
-   >1. 重新建立所需的專案，因為它存在於中 `/libs`，下 `/apps`. 在此案例中，來自：
+   >1. 重新建立必要專案，因為它存在於`/libs`中的`/apps`下。 在此案例中，來自：
    >1. `/libs/cq/gui/content/common/options/predicates`
-   >1. 進行任何變更 `/apps.`
+   >1. 在`/apps.`中進行任何變更
 
-1. 開啟 **搜尋Forms** 控制檯並選取您要更新的設定。 例如， **網站管理搜尋邊欄**. 然後選取 **編輯**.
+1. 開啟&#x200B;**搜尋Forms**&#x200B;主控台，並選取您要更新的設定。 例如，**網站管理員搜尋邊欄**。 然後選取&#x200B;**編輯**。
 
-1. 視設定而定，請新增 **選項** 或 **選項屬性** 至組態。
+1. 視組態而定，將&#x200B;**Options**&#x200B;或&#x200B;**Options屬性**&#x200B;新增至組態。
 1. 更新欄位，特別是：
 
    * **屬性名稱**
@@ -676,10 +676,10 @@ Adobe Experience Manager as a Cloud Service隨附強大的功能 [搜尋](/help/
 
    ![選項述詞](assets/csf-options-predicate-02.png)
 
-1. 選取 **完成** 以儲存您的設定。
-1. 導覽至適當的主控台(在此範例中， **網站**)並開啟 **搜尋 — 篩選器** 邊欄。 會顯示新定義的搜尋表單以及各種選項。 選取必要選項以檢視搜尋結果。
+1. 選取&#x200B;**完成**&#x200B;以儲存您的設定。
+1. 導覽至適當的主控台（在此範例中為&#x200B;**Sites**）並開啟&#x200B;**搜尋 — 篩選器**&#x200B;邊欄。 會顯示新定義的搜尋表單以及各種選項。 選取必要選項以檢視搜尋結果。
 
-   ![使用的選項](assets/csf-options-usage.png)
+   ![個使用中的選項](assets/csf-options-usage.png)
 
 
 ## 使用者權限 {#user-permissions}
@@ -696,15 +696,15 @@ Adobe Experience Manager as a Cloud Service隨附強大的功能 [搜尋](/help/
  <tbody>
   <tr>
    <td>編輯 </td>
-   <td>的讀取、寫入許可權 <code>/apps </code>節點。</td>
+   <td><code>/apps </code>節點的讀取、寫入許可權。</td>
   </tr>
   <tr>
    <td>刪除</td>
-   <td>對的讀取、寫入、刪除許可權 <code>/apps</code> 節點</td>
+   <td><code>/apps</code>節點的讀取、寫入、刪除許可權</td>
   </tr>
   <tr>
    <td>預覽</td>
-   <td>對的讀取、寫入、刪除許可權 <code>/var/dam/content</code> 節點。<br /> 的讀取、寫入許可權 <code>/apps</code> 節點。</td>
+   <td><code>/var/dam/content</code>節點的讀取、寫入、刪除許可權。<code>/apps</code>節點上的<br />讀取、寫入許可權。</td>
   </tr>
  </tbody>
 </table>

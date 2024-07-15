@@ -1,6 +1,6 @@
 ---
-title: 目前的搶先存取功能 [!DNL Adobe Experience Manager Forms] as a Cloud Service。
-description: 目前的搶先存取功能 [!DNL Adobe Experience Manager Forms] as a Cloud Service。
+title: ' [!DNL Adobe Experience Manager Forms] as a Cloud Service目前的搶先存取功能。'
+description: ' [!DNL Adobe Experience Manager Forms] as a Cloud Service目前的搶先存取功能。'
 Feature: Introduction
 Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
@@ -23,7 +23,7 @@ AEM Forms搶先使用計畫提供絕佳機會，讓您可以搶在其他人之�
 
 ## 如何加入搶先體驗計畫？
 
-如果您有興趣加入我們的搶先存取計畫，以取得任何搶先存取的創新成果，只要將您官方地址的電子郵件傳送至 [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)  以要求存取權。 您可以要求存取所有或任何特定的創新。
+如果您有興趣加入我們的搶先存取計畫，以取得任何搶先存取創新，只要從您的正式地址傳送電子郵件至[aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)要求存取即可。 您可以要求存取所有或任何特定的創新。
 
 ## 搶先體驗創新
 
@@ -31,19 +31,19 @@ AEM Forms搶先使用計畫提供絕佳機會，讓您可以搶在其他人之�
 
 最適化Forms的創作AI為您的表單開發流程帶來全新境界的強大功能和簡易性。 藉助智慧型人工智慧功能，您可以以前所未有的速度建立更好的表單。
 
-![Generative AI Assistant、Adaptive Forms](/help/forms/assets/generative-ai-assistant.png)
+![Generative AI助理，最適化Forms](/help/forms/assets/generative-ai-assistant.png)
 
 提供的Generative AI功能包括：
 
-* **產品查詢的AI助理**：立即取得您AEM表單相關問題的答案。 我們的AI助理就像您自己的個人知識庫，直接在平台內提供有見地的指引和建議。
+* **產品查詢的AI小幫手**：取得您的AEM表單相關問題的立即解答。 我們的AI助理就像您自己的個人知識庫，直接在平台內提供有見地的指引和建議。
 
-* **產生最適化表單**：使用產生式AI提示，輕鬆建立完整的表單。 我們的Generative AI會自動產生方便使用的表單，以減少流失並個人化體驗。
+* **產生最適化表單**：輕鬆建立具有產生AI提示的完整表單。 我們的Generative AI會自動產生方便使用的表單，以減少流失並個人化體驗。
 
-* **為Forms產生面板**：讓AI做這項繁重的工作。 根據特定資料收集需求產生預先建立的表單面板。 例如，產生用於收集付款資訊、客戶偏好設定或旅行詳細資訊的區段。 節省時間並確保與預先定義的版面配置及功能的一致性。
+* **產生Forms的面板**：讓AI執行繁重的工作。 根據特定資料收集需求產生預先建立的表單面板。 例如，產生用於收集付款資訊、客戶偏好設定或旅行詳細資訊的區段。 節省時間並確保與預先定義的版面配置及功能的一致性。
 
-* **變更表單版面**：使用Generative AI提示來實驗不同的版面和設計。 嘗試不同的版面（如精靈或索引標籤檢視），以找出最符合您表單的版面。 使用Generative AI提示將您的表單最佳化為行動回應，並建立使用者喜愛的具有視覺吸引力的表單。
+* **變更表單版面配置**：使用Generative AI提示嘗試不同版面配置和設計。 嘗試不同的版面（如精靈或索引標籤檢視），以找出最符合您表單的版面。 使用Generative AI提示將您的表單最佳化為行動回應，並建立使用者喜愛的具有視覺吸引力的表單。
 
-* **設定提交動作**：使用Generative AI提示，輕鬆設定表單的提交動作。 從預先建立的提交動作資料庫或由您自己的開發團隊建立和部署的自訂提交動作清單中選擇。
+* **設定送出動作**：使用Generative AI提示輕鬆設定表單的送出動作。 從預先建立的提交動作資料庫或由您自己的開發團隊建立和部署的自訂提交動作清單中選擇。
 
 
 ### AEM Forms Workfront Fusion聯結器
@@ -52,7 +52,7 @@ AEM Forms Workfront Fusion聯結器可緊密整合Adobe Experience Manager (AEM)
 
 使用AEM Forms Workfront Fusion Connector，您可以設計在提交最適化表單時自動觸發的工作流程。 例如，設想這樣一個場景：啟動工作流程以便將審查提交資料的任務分配給特定個人，進而允許根據透過最適化表單擷取的資訊來核准或拒絕申請。這項簡化的整合可提升效率，並將工作流程自動化提升到新的水準。
 
-準備好開始了嗎？ 此 [提交最適化表單至Adobe Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md) 檔案提供創新功能的使用逐步指南。
+準備好開始了嗎？ [提交最適化表單至Adobe Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)檔案提供使用創新的逐步指南。
 
 <!-- <br/> ![Adobe Workfront](/help/forms/assets/adobe-workfront.png) <br/> -->
 
@@ -66,8 +66,8 @@ AEM Forms Workfront Fusion聯結器可緊密整合Adobe Experience Manager (AEM)
 
 Forms帶來的更多對話功能如下：
 
-* **輕鬆進行表單探索**：透過清晰、對話的介面，在任何AEM Sites頁面上尋找所需的確切表單。
-* **聊天樣式完成**：一次回答一個問題，就像與虛擬助理聊天一樣。 快速、直覺，感覺像是交談。
+* **簡易表單探索**：透過清晰且對話的介面，在任何AEM Sites頁面上尋找您所需的確切表單。
+* **聊天式完成**：一次回答一個問題，就像與虛擬助理聊天一樣。 快速、直覺，感覺像是交談。
 * **提交前先預覽**：在點選提交前仔細檢查所有內容。 預覽您完成的表單，以確保正確性並避免任何最後一刻的錯誤。
 
 
@@ -76,7 +76,7 @@ Forms帶來的更多對話功能如下：
 
 ### WYSIWYGEdge Delivery Services製作
 
-WYSIWYG製作提供WYSIWYG介面(通用編輯器和調適型Forms編輯器)，用於建置調適型表單並發佈到Edge Delivery Services。 所見即所得，提供所有功能 [檔案式製作](/help/edge/docs/forms/overview.md#document-based-authoring-features)，外加各式各樣的其他功能：
+WYSIWYG製作提供WYSIWYG介面(通用編輯器和調適型Forms編輯器)，用於建置調適型表單並發佈到Edge Delivery Services。 WYSIWYG Authoring提供[Document-based Authoring](/help/edge/docs/forms/overview.md#document-based-authoring-features)的所有功能，以及各種其他功能：
 
 * 用來建立複雜邏輯的進階規則編輯器。
 * 提供自訂功能的伺服器端可擴充性。
@@ -113,15 +113,15 @@ AEM Forms至Marketo聯結器橋接了使用Adobe Experience Manager (AEM)建立�
 
 Adaptive Forms中支援的由右至左(RTL)語言可協助您：
 
-* **擴展使用者基礎**：現在，全球有超過20億人對RTL語言更熟悉，因此企業可以觸及這些人。
+* **擴充使用者群**：企業現在可觸及全球超過20億熟悉RTL語言的使用者。
 
-* **提供增強的使用者體驗**：Forms能以完美的方式呈現，自然文字從右到左排列、正確的UI元素對齊方式，以及直覺式的版面配置反映了使用者的閱讀習慣。 這能減少混淆，並提高完成率。
+* **提供增強的使用者體驗**： Forms可完美呈現，自然文字由右至左排列、適當的UI元素對齊方式，以及符合使用者閱讀習慣的直覺式版面配置。 這能減少混淆，並提高完成率。
 
-* **提供行動回應式體驗**：由於固有的行動回應能力，Forms在任何裝置上皆可存取，確保桌上型電腦、平板電腦和智慧型手機間的順暢體驗。
+* **提供行動回應式體驗**：由於固有的行動回應能力，Forms仍可在任何裝置上存取，以確保在桌上型電腦、平板電腦和智慧型手機上都能順暢體驗。
 
 整體而言，最適化Forms中的RTL語言支援讓企業能夠設計真正的全球性表單，擴大觸及率、參與度和包容性。
 
-準備好開始了嗎？ [最適化Forms RTL檔案](/help/forms/supporting-new-language-localization-core-components.md) 提供使用RTL創新的逐步指南。
+準備好開始了嗎？ [最適化Forms RTL檔案](/help/forms/supporting-new-language-localization-core-components.md)提供使用RTL創新的逐步指南。
 
 ### 強化機器人保護方法
 
@@ -142,17 +142,17 @@ AEM Forms檔案保證API是AEM FormsCloud Service通訊API中的一組工具，�
 
 以下為Doc Assurance API功能劃分：
 
-* **加密和解密檔案**：使用加密讓檔案內容無法讀取，從而Protect您的檔案。 您可以控制PDF的加密部分，包括整個檔案、特定內容、中繼資料或附件。
+* **加密和解密檔案**：透過加密讓檔案的內容無法讀取，以Protect您的檔案。 您可以控制PDF的加密部分，包括整個檔案、特定內容、中繼資料或附件。
 
-* **數位簽署檔案**：將數位簽名新增至您的檔案，以進行驗證和防篡改驗證。 這可用於認證目的或確保檔案完整性
+* **數位簽署檔案**：將數位簽章新增至您的檔案，以進行驗證和防篡改驗證。 這可用於認證目的或確保檔案完整性
 
-* **Reader擴充檔案(套用或編輯PDF檔案的使用許可權)**：透過擴充具有其他使用許可權的Adobe Reader功能，讓您的組織可輕鬆共用互動式PDF檔案。
+* **Reader擴充檔案(套用或編輯PDF檔案的使用許可權)**：透過擴充具有其他使用許可權的Adobe Reader功能，讓您的組織能夠輕鬆共用互動式PDF檔案。
 
   Reader擴充功能（使用許可權） API將使用許可權新增至PDF檔案。 此動作會啟動在使用Adobe Reader開啟PDF檔案時通常無法使用的功能，例如新增註釋至檔案、填寫表單和儲存檔案。 協力廠商使用者不需要其他軟體或外掛程式即可使用啟用許可權的檔案。
 
   當PDF檔案新增了適當的使用許可權時，收件者可以從Adobe Reader中執行啟用的活動。
 
-整體而言， [檔案保證API](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/references/docassurance/) 透過新增一層額外的控制來協助您改善檔案安全性和合規性。
+整體而言，[Doc Assurance API](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/references/docassurance/)可透過新增一層控制來協助您改善檔案安全性和合規性。
 
 
 ### Forms服務API
@@ -179,7 +179,7 @@ Forms 服務會產生用於資料擷取的互動式 PDF forms。它也可以用�
 
 ### WYSIWYGEdge Delivery Services製作
 
-WYSIWYG製作提供WYSIWYG介面(通用編輯器和調適型Forms編輯器)，用於建置調適型表單並發佈到Edge Delivery Services。 所見即所得，提供所有功能 [檔案式製作](/help/edge/docs/forms/overview.md#document-based-authoring-features)，外加各式各樣的其他功能：
+WYSIWYG製作提供WYSIWYG介面(通用編輯器和調適型Forms編輯器)，用於建置調適型表單並發佈到Edge Delivery Services。 WYSIWYG Authoring提供[Document-based Authoring](/help/edge/docs/forms/overview.md#document-based-authoring-features)的所有功能，以及各種其他功能：
 
 * 用來建立複雜邏輯的進階規則編輯器。
 * 提供自訂功能的伺服器端可擴充性。
@@ -216,15 +216,15 @@ AEM Forms至Marketo聯結器橋接了使用Adobe Experience Manager (AEM)建立�
 
 Adaptive Forms中支援的由右至左(RTL)語言可協助您：
 
-* **擴展使用者基礎**：現在，全球有超過20億人對RTL語言更熟悉，因此企業可以觸及這些人。
+* **擴充使用者群**：企業現在可觸及全球超過20億熟悉RTL語言的使用者。
 
-* **提供增強的使用者體驗**：Forms能以完美的方式呈現，自然文字從右到左排列、正確的UI元素對齊方式，以及直覺式的版面配置反映了使用者的閱讀習慣。 這能減少混淆，並提高完成率。
+* **提供增強的使用者體驗**： Forms可完美呈現，自然文字由右至左排列、適當的UI元素對齊方式，以及符合使用者閱讀習慣的直覺式版面配置。 這能減少混淆，並提高完成率。
 
-* **提供行動回應式體驗**：由於固有的行動回應能力，Forms在任何裝置上皆可存取，確保桌上型電腦、平板電腦和智慧型手機間的順暢體驗。
+* **提供行動回應式體驗**：由於固有的行動回應能力，Forms仍可在任何裝置上存取，以確保在桌上型電腦、平板電腦和智慧型手機上都能順暢體驗。
 
 整體而言，最適化Forms中的RTL語言支援讓企業能夠設計真正的全球性表單，擴大觸及率、參與度和包容性。
 
-準備好開始了嗎？ [最適化Forms RTL檔案](/help/forms/supporting-new-language-localization-core-components.md) 提供使用RTL創新的逐步指南。
+準備好開始了嗎？ [最適化Forms RTL檔案](/help/forms/supporting-new-language-localization-core-components.md)提供使用RTL創新的逐步指南。
 
 ### 強化機器人保護方法
 
@@ -245,17 +245,17 @@ AEM Forms檔案保證API是AEM FormsCloud Service通訊API中的一組工具，�
 
 以下為Doc Assurance API功能劃分：
 
-* **加密和解密檔案**：使用加密讓檔案內容無法讀取，從而Protect您的檔案。 您可以控制PDF的加密部分，包括整個檔案、特定內容、中繼資料或附件。
+* **加密和解密檔案**：透過加密讓檔案的內容無法讀取，以Protect您的檔案。 您可以控制PDF的加密部分，包括整個檔案、特定內容、中繼資料或附件。
 
-* **數位簽署檔案**：將數位簽名新增至您的檔案，以進行驗證和防篡改驗證。 這可用於認證目的或確保檔案完整性
+* **數位簽署檔案**：將數位簽章新增至您的檔案，以進行驗證和防篡改驗證。 這可用於認證目的或確保檔案完整性
 
-* **Reader擴充檔案(套用或編輯PDF檔案的使用許可權)**：透過擴充具有其他使用許可權的Adobe Reader功能，讓您的組織可輕鬆共用互動式PDF檔案。
+* **Reader擴充檔案(套用或編輯PDF檔案的使用許可權)**：透過擴充具有其他使用許可權的Adobe Reader功能，讓您的組織能夠輕鬆共用互動式PDF檔案。
 
   Reader擴充功能（使用許可權） API將使用許可權新增至PDF檔案。 此動作會啟動在使用Adobe Reader開啟PDF檔案時通常無法使用的功能，例如新增註釋至檔案、填寫表單和儲存檔案。 協力廠商使用者不需要其他軟體或外掛程式即可使用啟用許可權的檔案。
 
   當PDF檔案新增了適當的使用許可權時，收件者可以從Adobe Reader中執行啟用的活動。
 
-整體而言， [檔案保證API](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/references/docassurance/) 透過新增一層額外的控制來協助您改善檔案安全性和合規性。
+整體而言，[Doc Assurance API](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/references/docassurance/)可透過新增一層控制來協助您改善檔案安全性和合規性。
 
 
 ### Forms服務API

@@ -20,8 +20,8 @@ ht-degree: 1%
 
 Universal Editor允許兩種型別的調整，以滿足您專案的需求。
 
-* [自訂通用編輯器](#customizing)  — 可透過數個自訂設定調整通用編輯器的標準功能。
-* [擴充通用編輯器UI](#extending)  — 也可使用App Builder擴充通用編輯器的UI，以符合您的專案需求。
+* [自訂通用編輯器](#customizing) — 可透過數個自訂設定調整通用編輯器的標準功能。
+* [擴充通用編輯器UI](#extending) — 也可使用App Builder擴充通用編輯器的UI，以符合您的專案需求。
 
 以下各節將詳細介紹這兩種型別。
 
@@ -33,7 +33,7 @@ Universal Editor提供數個內建選項，可用於自訂其功能。
 
 某些編寫工作流程在發佈內容之前必須先進行稽核。 在這種情況下，任何作者都不能使用發佈選項。
 
-此 **發佈** 因此，您可以新增下列中繼資料，完全抑制應用程式中的按鈕。
+因此，可以新增下列中繼資料，在應用程式中完全隱藏&#x200B;**Publish**&#x200B;按鈕。
 
 ```html
 <meta name="urn:adobe:aue:config:disable" content="publish"/>
@@ -58,13 +58,13 @@ Universal Editor提供數個內建選項，可用於自訂其功能。
 ]
 ```
 
-然後，您可以新增屬性，從容器元件參照篩選器定義 `data-aue-filter`，傳遞您先前定義之篩選器的ID。
+然後，您可以新增屬性`data-aue-filter`，傳遞您先前定義的篩選器ID，以參照容器元件的篩選器定義。
 
 ```html
 data-aue-filter="container-filter"
 ```
 
-設定 `components` 篩選定義中的屬性至 `null` 會允許所有元件，就像沒有篩選器一樣。
+將篩選定義中的`components`屬性設定為`null`可允許所有元件，就像沒有篩選一樣。
 
 ```json
 [
@@ -77,9 +77,9 @@ data-aue-filter="container-filter"
 
 ### 有條件地顯示和隱藏屬性邊欄中的元件 {#conditionally-hide}
 
-雖然元件通常可供作者使用，但在某些情況下卻可能沒有意義。 在這種情況下，您可以新增「 」，以隱藏屬性邊欄中的元件 `condition` 屬性至 [元件模型的欄位。](/help/implementing/universal-editor/field-types.md#fields)
+雖然元件通常可供作者使用，但在某些情況下卻可能沒有意義。 在這種情況下，您可以將`condition`屬性新增至元件模型的[欄位，以隱藏屬性邊欄中的元件。](/help/implementing/universal-editor/field-types.md#fields)
 
-可使用以下專案定義條件 [JsonLogic結構描述。](https://jsonlogic.com/) 如果條件為true，則會顯示欄位。 如果條件為false，則會隱藏欄位。
+可以使用[JsonLogic結構描述定義條件。](https://jsonlogic.com/)如果條件為true，則會顯示欄位。 如果條件為false，則會隱藏欄位。
 
 >[!BEGINTABS]
 
@@ -108,7 +108,7 @@ data-aue-filter="container-filter"
 
 >[!TAB 條件False]
 
-![隱藏文字欄位](assets/hidden.png)
+![隱藏的文字欄位](assets/hidden.png)
 
 >[!TAB 條件True]
 
@@ -118,18 +118,18 @@ data-aue-filter="container-filter"
 
 ## 擴充通用編輯器UI {#extending}
 
-作為Adobe Experience Cloud服務，Universal Editor的UI可以使用App Builder和Experience Manager來擴充。
+作為Adobe Experience Cloud服務，Universal Editor的UI可以使用App Builder和Experience Manager進行擴充。
 
-UI擴充功能是以AdobeApp Builder建置的JavaScript應用程式，可嵌入在Adobe Experience Cloud統一殼層（例如Universal Editor）下執行的UI應用程式中。 您可以將自己的按鈕和動作新增到頁首功能表和屬性邊欄，並為通用編輯器建立自己的事件。
+UI擴充功能是使用Adobe App Builder建置的JavaScript應用程式，可嵌入在Adobe Experience Cloud unified shell底下執行的UI應用程式（例如Universal Editor）中。 您可以將自己的按鈕和動作新增到頁首功能表和屬性邊欄，並為通用編輯器建立自己的事件。
 
 如果您想探索這些可能性，請參閱下列資源：
 
-1. [UI擴充性](https://developer.adobe.com/uix/docs/)  — 這是UI擴充功能的開發人員檔案。
-1. [UI擴充性指南](https://developer.adobe.com/uix/docs/guides/)  — 如何開發您自己的擴充功能的逐步指示
-1. [Universal Editor延伸點](https://developer.adobe.com/uix/docs/services/aem-universal-editor/)  — 通用編輯器專用的擴充點檔案
+1. [UI擴充功能](https://developer.adobe.com/uix/docs/) — 這是UI擴充功能的開發人員檔案。
+1. [UI擴充性指南](https://developer.adobe.com/uix/docs/guides/) — 如何開發您自己的擴充功能的逐步指示
+1. [通用編輯器擴充點檔案](https://developer.adobe.com/uix/docs/services/aem-universal-editor/) — 通用編輯器專用的擴充點檔案
 
 >[!TIP]
 >
->如果您偏好以範例學習，請參閱 [AEM UI擴充性教學課程。](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/extensibility/ui/overview) 雖然重點在於擴充內容片段主控台，但在通用編輯器中實作UI擴充功能的概念是相同的。
+>如果您偏好以範例學習，請參閱[AEM UI擴充性教學課程。](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/extensibility/ui/overview)雖然其著重於擴充內容片段主控台，但在通用編輯器中實作UI擴充功能的概念是相同的。
 
-[在AEM Sites中使用Extension Manager，](https://developer.adobe.com/uix/docs/extension-manager/) 您可以根據執行個體來啟用或停用擴充功能、存取Adobe的第一方擴充功能，包括通用編輯器的擴充功能等等。
+[在AEM Sites中使用Extension Manager，](https://developer.adobe.com/uix/docs/extension-manager/)您可以根據執行個體來啟用或停用擴充功能、存取Adobe的第一方擴充功能（包括Universal Editor的擴充功能）等等。

@@ -27,14 +27,14 @@ ht-degree: 1%
 
 >[!TIP]
 >
->嘗試使用Dynamic Media來探索Dynamic Media影像修飾元和智慧型影像處理的優點 [_快照_](https://snapshot.scene7.com/).
+>嘗試使用Dynamic Media [_快照_](https://snapshot.scene7.com/)，探索Dynamic Media影像修飾元和智慧型影像的優點。
 >
 > Snapshot是視覺化展示工具，旨在說明Dynamic Media在最佳化及動態影像傳送方面的強大功能。 實驗測試影像或Dynamic Media URL，以視覺化方式觀察各種Dynamic Media影像修飾元的輸出，以及針對下列專案的智慧型影像最佳化：
 >* 檔案大小（含WebP和AVIF傳送）
 >* 網路頻寬
 >* DPR （裝置畫素比率）
 >
->若要瞭解使用Snapshot的簡易性，請播放 [快照訓練影片](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot.html?lang=en) （3分17秒）。
+>若要瞭解使用快照的簡易程度，請播放[快照訓練影片](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot.html?lang=en) （3分17秒）。
 
 智慧型影像可與Adobe同級最佳的高階CDN （內容傳遞網路）服務完全整合，進而提升效能。 此服務會尋找伺服器、網路和對等點之間的最佳網際網路路由。 它會找到延遲最低、封包遺失率最低的路由，而不使用網際網路上的預設路由。
 
@@ -42,16 +42,16 @@ ht-degree: 1%
 
 | 影像(URL) | 縮圖 | 大小(JPEG) | 使用智慧型影像處理調整大小(WebP) | 使用智慧型影像處理調整大小(AVIF) | 使用WebP減少% | 使用AVIF降低% |
 |---|---|---|---|---|---|---|
-| [影像1](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_6?hei=500&amp;fmt=jpg&amp;qlt=85&amp;resmode=bisharp&amp;op_usm=5,0.125,5,0) | ![picture1](/help/assets/assets-dm/picture1.png) | 145 KB | 106 KB | 90.2 KB | 26.89% | 37.79% |
-| [影像2](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_3?hei=500&amp;fmt=jpg&amp;qlt=85&amp;resmode=bisharp&amp;op_usm=5,0.125,5,0) | ![picture2](/help/assets/assets-dm/picture2.png) | 412 KB | 346 KB | 113 KB | 16.01% | 72.57% |
-| [影像3](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_2?hei=500&amp;fmt=jpg&amp;qlt=85&amp;resmode=bisharp&amp;op_usm=5,0.125,5,0) | ![picture3](/help/assets/assets-dm/picture3.png) | 221 KB | 189 KB | 87.1 KB | 14.47% | 60.58% |
+| [影像1](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_6?hei=500&amp;fmt=jpg&amp;qlt=85&amp;resmode=bisharp&amp;op_usm=5,0.125,5,0) | ![圖片1](/help/assets/assets-dm/picture1.png) | 145 KB | 106 KB | 90.2 KB | 26.89% | 37.79% |
+| [影像2](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_3?hei=500&amp;fmt=jpg&amp;qlt=85&amp;resmode=bisharp&amp;op_usm=5,0.125,5,0) | ![圖片2](/help/assets/assets-dm/picture2.png) | 412 KB | 346 KB | 113 KB | 16.01% | 72.57% |
+| [影像3](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_2?hei=500&amp;fmt=jpg&amp;qlt=85&amp;resmode=bisharp&amp;op_usm=5,0.125,5,0) | ![圖片3](/help/assets/assets-dm/picture3.png) | 221 KB | 189 KB | 87.1 KB | 14.47% | 60.58% |
 | [影像4](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_1?hei=500&amp;qlt=85&amp;resmode=bisharp&amp;op_usm=5,0.125,5,0) | ![圖片4](/help/assets/assets-dm/picture4.png) | 594 KB | 545 KB | 286 KB | 8.25% | 51.85% |
 
 與上述類似，Adobe也使用較大的範例集執行測試。 與WebP相比，AVIF格式提供了20%的額外大小縮減，比JPEG提供了27%的縮減。 視覺品質完全相同。 與JPEG相比，AVIF的平均大小縮減率總計高達41%。
 
 比較WebP和AVIF與PNG，您可以看到WebP的大小減少84%，AVIF的大小減少87%。 此外，由於WebP和AVIF格式都支援透明和多重影像動畫，因此非常適合取代透明的PNG和GIF檔案。
 
-另請參閱 [使用新一代影像格式（WebP和AVIF）的影像最佳化](https://blog.developer.adobe.com/image-optimisation-with-next-gen-image-formats-webp-and-avif-248c75afacc4)
+另請參閱[使用下一代影像格式（WebP和AVIF）的影像最佳化](https://blog.developer.adobe.com/image-optimisation-with-next-gen-image-formats-webp-and-avif-248c75afacc4)
 
 <!-- HIDDEN ON MAY 19, 2022 BASED ON CQDOC-19280 On the mobile web, the challenges are compounded by two factors:
 
@@ -60,7 +60,7 @@ ht-degree: 1%
 
 In terms of images, the goal is to serve the best quality images as efficiently as possible. -->
 
-**智慧型影像處理的優點**
+**智慧型影像的優點**
 
 智慧型影像可根據使用者端使用的瀏覽器、裝置顯示和網路狀況，自動最佳化影像檔案大小，以提供更優異的影像傳送效能。 由於影像佔據了頁面的大部分載入時間，因此任何效能改善都會對業務KPI產生深遠影響，例如更高的轉換率、在網站上逗留的時間以及較低的網站跳出率。
 
@@ -74,11 +74,11 @@ In terms of images, the goal is to serve the best quality images as efficiently 
 
 ### 關於瀏覽器格式轉換 {#bfc}
 
-透過附加以開啟瀏覽器格式轉換 `bfc=on` 至影像URL會自動將JPEG和PNG轉換為有損AVIF、有損WebP、有損JPEGXR、其他瀏覽器的有損JPEG2000。 對於不支援這些格式的瀏覽器，智慧型影像會繼續提供JPEG或PNG。 除了格式以外，新格式的品質也會由「智慧型影像」重新計算。
+透過將`bfc=on`附加至影像URL來開啟瀏覽器格式轉換，會自動將JPEG和PNG轉換成其他瀏覽器的有損AVIF、有損WebP、有損JPEGXR、有損JPEG2000。 對於不支援這些格式的瀏覽器，智慧型影像會繼續提供JPEG或PNG。 除了格式以外，新格式的品質也會由「智慧型影像」重新計算。
 
-您也可以透過附加來關閉智慧型影像 `bfc=off` 至影像的URL。
+您也可以將`bfc=off`附加至影像的URL來關閉智慧型影像。
 
-另請參閱 [bfc](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-bfc.html?lang=en) Dynamic Media影像提供與轉譯API中。
+另請參閱Dynamic Media影像提供與轉譯API中的[bfc](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-bfc.html?lang=en)。
 
 ### 關於裝置畫素比最佳化 {#dpr}
 
@@ -91,11 +91,11 @@ In terms of images, the goal is to serve the best quality images as efficiently 
 | 影像URL中的允許值 | 說明 |
 |---|---|
 | `dpr=off` | 關閉個別影像URL層級的DPR最佳化。 |
-| `dpr=on,dprValue` | 使用自訂值（任何使用者端邏輯或其他方式偵測到的值）覆寫智慧型影像偵測到的DPR值。 允許的值 `dprValue` 是大於0的任何數字。 |
+| `dpr=on,dprValue` | 使用自訂值（任何使用者端邏輯或其他方式偵測到的值）覆寫智慧型影像偵測到的DPR值。 `dprValue`的允許值是大於0的任何數字。 |
 
 >[!NOTE]
 >
->* 您可以使用 `dpr=on,dprValue` 即使公司層級DPR設為關閉。
+>* 即使公司層級DPR設定為off，您仍可使用`dpr=on,dprValue`。
 >* 由於DPR最佳化，當產生的影像大於MaxPix Dynamic Media設定時，一律會透過維持影像的外觀比例來辨識MaxPix寬度。 —>
 
 | 要求的影像大小 | 裝置畫素比率(dpr)值 | 傳遞的影像大小 |
@@ -103,28 +103,28 @@ In terms of images, the goal is to serve the best quality images as efficiently 
 | 816 x 500 | 1 | 816 x 500 |
 | 816 x 500 | 2 | 1632 x 1000 |
 
-另請參閱 [使用影像時](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md#when-working-with-images) 和 [使用智慧型裁切時](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md#when-working-with-smart-crop).
+另請參閱[處理影像時](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md#when-working-with-images)和[處理智慧型裁切](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md#when-working-with-smart-crop)。
 
 ### 關於網路頻寬最佳化 {#bandwidth}
 
 開啟網路頻寬會自動根據實際網路頻寬調整影像品質。 因為網路頻寬太低，DPR （裝置畫素比）最佳化功能即使已經開啟，也會自動關閉。
 
-如有需要，貴公司可透過附加以選擇退出個別影像層級的網路頻寬最佳化 `network=off` 至影像的URL。
+如有需要，貴公司可將`network=off`附加至影像的URL，選擇退出個別影像層級的網路頻寬最佳化。
 
 | 影像URL中的允許值 | 說明 |
 |---|---|
 | `network=off` | 關閉個別影像URL層級的網路最佳化。 |
 
-DPR和網路頻寬值是根據偵測到的套件式CDN使用者端值。 這些值有時不準確。 例如，DPR=2的iPhone5和DPR為2的iPhone12 `dpr=3`，兩部節目 `dpr=2`. 不過，對於高解析度裝置，傳送 `dpr=2` 比傳送好 `dpr=1`. 然而，克服這種不正確性的最佳方式是使用使用者端DPR，為您提供100%正確的值。 而且它適用於任何裝置，不論是Apple或任何其他已啟動的裝置。 另請參閱 [搭配使用者端裝置畫素比使用智慧型影像](/help/assets/dynamic-media/client-side-dpr.md).
+DPR和網路頻寬值是根據偵測到的套件式CDN使用者端值。 這些值有時不準確。 例如，DPR=2的iPhone5和`dpr=3`的iPhone12都顯示`dpr=2`。 不過，對於高解析度裝置，傳送`dpr=2`還是比傳送`dpr=1`好。 然而，克服這種不正確性的最佳方式是使用使用者端DPR，為您提供100%正確的值。 而且它適用於任何裝置，不論是Apple或任何其他已啟動的裝置。 請參閱[使用智慧型影像搭配使用者端裝置畫素比率](/help/assets/dynamic-media/client-side-dpr.md)。
 
 **智慧型影像處理的其他主要優點**
 
 * 改善使用最新智慧型影像處理之網頁的Google SEO排名。
 * 立即提供最佳化內容（在執行階段）。
-* 使用Adobe Sensei技術根據品質(`qlt`)。
+* 使用Adobe Sensei技術，根據影像要求中指定的品質(`qlt`)進行轉換。
 * 不受TTL （存留時間）影響。 之前，智慧型影像處理至少必須有12小時的TTL才能運作。
 * 先前，原始和衍生影像都會經過快取，而且是使快取失效的兩步驟程式。 在最新的智慧型影像處理中，只會快取衍生專案，進行單一步驟的快取失效程式。
-* 在規則集中使用自訂標題的客戶可受益於最新的智慧型影像，因為這些標題不會遭到封鎖，不像舊版的智慧型影像。 例如，「計時允許原點」、「X-Robot」，如 [新增自訂標頭值至影像回應|Dynamic Media Classic](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/add-custom-header-val-image.html).
+* 在規則集中使用自訂標題的客戶可受益於最新的智慧型影像，因為這些標題不會遭到封鎖，不像舊版的智慧型影像。 例如，如[新增自訂標頭值至影像回應|Dynamic Media Classic](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/add-custom-header-val-image.html)中建議的「計時允許來源」、「X-Robot」。
 
 ## 智慧型影像的運作方式{#how-smart-imaging-works}
 
@@ -134,7 +134,12 @@ DPR和網路頻寬值是根據偵測到的套件式CDN使用者端值。 這些�
 * 如果AVIF轉換沒有好處或瀏覽器不支援AVIF，則自動轉換成WebP
 * 如果Safari不支援WebP，則自動轉換為JPEG2000
 * 自動轉換為IE 9+適用的JPEGXR，或如果Edge不支援WebP\
-  | 影像格式 | 支援的瀏覽器 | |—|—| | AVIF | [https://caniuse.com/avif](https://caniuse.com/avif) | | WebP | [https://caniuse.com/webp](https://caniuse.com/webp) | | JPEG2000 | [https://caniuse.com/jpeg2000](https://caniuse.com/jpeg2000) | | JPEGXR | [https://caniuse.com/jpegxr](https://caniuse.com/jpegxr) |
+  | 影像格式 | 支援的瀏覽器 |
+|—|—|
+| AVIF | [https://caniuse.com/avif](https://caniuse.com/avif) |
+| WebP | [https://caniuse.com/webp](https://caniuse.com/webp) |
+| JPEG2000 | [https://caniuse.com/jpeg2000](https://caniuse.com/jpeg2000) |
+| JPEGXR | [https://caniuse.com/jpegxr](https://caniuse.com/jpegxr) |
 * 對於不支援這些格式的瀏覽器，會提供最初請求的影像格式。
 
 如果原始影像大小小於智慧型影像產生的大小，則會提供原始影像。
@@ -152,11 +157,11 @@ DPR和網路頻寬值是根據偵測到的套件式CDN使用者端值。 這些�
 
 ## 智慧型影像處理中的影像伺服命令支援{#imaging-serving-command-support}
 
-「影像伺服」命令 `fmt` 和 `qlt` 不支援；支援所有剩餘的命令。
+不支援「影像伺服」命令`fmt`和`qlt`；支援所有剩餘的命令。
 
 ## 關於智慧型影像的常見問題{#smart-imaging-faq}
 
-+++**智慧型影像是否有相關的授權成本？**
++++**是否有與智慧型影像相關的授權成本？**
 
 不適用。 智慧型影像包含於您現有的授權中。 此規則適用於Dynamic Media Classic或Experience Manager - Dynamic Media (內部部署、AMS和Experience Manageras a Cloud Service)。
 
@@ -166,13 +171,13 @@ DPR和網路頻寬值是根據偵測到的套件式CDN使用者端值。 這些�
 
 +++
 
-+++**智慧型影像處理是否可因任何要求而關閉？**
++++**智慧型影像處理是否可以針對任何要求關閉？**
 
 可以。您可以新增下列任何修飾元來關閉智慧型影像：
 
-* `bfc=off` 關閉瀏覽器格式轉換。 另請參閱 [瀏覽器格式轉換](#bfc).
-* `dpr=off` 關閉裝置畫素比例。 另請參閱 [裝置畫素比例](#dpr).
-* `network=off` 關閉網路頻寬。 另請參閱 [網路頻寬](#network).
+* `bfc=off`以關閉瀏覽器格式轉換。 另請參閱[瀏覽器格式轉換](#bfc)。
+* `dpr=off`以關閉裝置畫素比例。 另請參閱[裝置畫素比例](#dpr)。
+* `network=off`以關閉網路頻寬。 另請參閱[網路頻寬](#network)。
 
 +++
 
@@ -194,7 +199,7 @@ DPR和網路頻寬值是根據偵測到的套件式CDN使用者端值。 這些�
 
 +++
 
-+++**我是否必須在網站上變更任何URL、影像預設集或部署新程式碼？**
++++**我是否必須在我的網站上變更任何URL、影像預設集或部署新程式碼？**
 
 不適用。 智慧型影像可以順暢地搭配您現有的影像URL和影像預設集。 此外，智慧型影像不需要您新增程式碼至網站以偵測使用者的瀏覽器。 所有此功能都會自動處理。
 
@@ -219,11 +224,11 @@ To understand pre-requisites for Smart Imaging, see [Am I eligible to use Smart 
 視情況而定。 若要使用智慧型影像，貴公司的Dynamic Media Classic或Dynamic MediaExperience Manager帳戶必須符合下列要求：
 
 * 使用Adobe隨附的CDN （內容傳遞網路）作為授權的一部分。
-* 使用專用網域(例如 `images.company.com` 或 `mycompany.scene7.com`)，而不是一般網域(例如， `s7d1.scene7.com`， `s7d2.scene7.com`，或 `s7d13.scene7.com`)。
+* 使用專用網域（例如`images.company.com`或`mycompany.scene7.com`），而不是通用網域（例如`s7d1.scene7.com`、`s7d2.scene7.com`或`s7d13.scene7.com`）。
 
-若要尋找您的網域，請開啟 [Dynamic Media Classic案頭應用程式](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)，然後登入您的公司帳戶或多個帳戶。
+若要尋找您的網域，請開啟[Dynamic Media Classic案頭應用程式](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)，然後登入您的公司帳戶或帳戶。
 
-前往 **[!UICONTROL 設定]** > **[!UICONTROL 應用程式設定]** > **[!UICONTROL 一般設定]**. 尋找標示為的欄位 **[!UICONTROL 已發佈的伺服器名稱]**. 如果您目前使用一般網域，您可以要求移至您自己的自訂網域。 當您提交支援案例時，提出此轉換請求。
+移至&#x200B;**[!UICONTROL 設定]** > **[!UICONTROL 應用程式設定]** > **[!UICONTROL 一般設定]**。 尋找標示為&#x200B;**[!UICONTROL 已發佈的伺服器名稱]**&#x200B;的欄位。 如果您目前使用一般網域，您可以要求移至您自己的自訂網域。 當您提交支援案例時，提出此轉換請求。
 
 使用Dynamic Media授權時，您的第一個自訂網域不需額外付費。
 
@@ -244,7 +249,7 @@ To understand pre-requisites for Smart Imaging, see [Am I eligible to use Smart 
 
 **若要建立支援案例，在您的帳戶上啟用智慧型影像處理：**
 
-1. [使用Admin Console開始建立新的支援案例](https://helpx.adobe.com/tw/enterprise/using/support-for-experience-cloud.html).
+1. [使用此Admin Console開始建立新的支援案例](https://helpx.adobe.com/tw/enterprise/using/support-for-experience-cloud.html)。
 1. 在您的支援案例中提供下列資訊：
 
    * 主要連絡人姓名、電子郵件、電話。
@@ -255,34 +260,34 @@ To understand pre-requisites for Smart Imaging, see [Am I eligible to use Smart 
       * DPR與網路頻寬最佳化
       * PNG至有損AVIF或有損WebP
 
-   * 要啟用智慧型影像的所有網域(也就是說， `images.company.com` 或 `mycompany.scene7.com`)。
+   * 要啟用智慧型影像的所有網域（即`images.company.com`或`mycompany.scene7.com`）。
 
-     若要尋找您的網域，請開啟 [Dynamic Media Classic案頭應用程式](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)，然後登入您的公司帳戶或多個帳戶。
+     若要尋找您的網域，請開啟[Dynamic Media Classic案頭應用程式](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)，然後登入您的公司帳戶或帳戶。
 
-     前往 **[!UICONTROL 設定]** > **[!UICONTROL 應用程式設定]** > **[!UICONTROL 一般設定]**.
+     移至&#x200B;**[!UICONTROL 設定]** > **[!UICONTROL 應用程式設定]** > **[!UICONTROL 一般設定]**。
 
-     尋找標示為的欄位 **[!UICONTROL 已發佈的伺服器名稱]**.
+     尋找標示為&#x200B;**[!UICONTROL 已發佈的伺服器名稱]**&#x200B;的欄位。
 
    * 確認您是透過Adobe使用CDN，且並非透過直接關係管理。
 
-   * 確認您使用的是專用網域，例如 `images.company.com` 或 `mycompany.scene7.com`，而不是一般網域，例如 `s7d1.scene7.com`， `s7d2.scene7.com`， `s7d13.scene7.com`.
+   * 請確認您使用的是專用網域（例如`images.company.com`或`mycompany.scene7.com`），而不是通用網域（例如`s7d1.scene7.com`、`s7d2.scene7.com`、`s7d13.scene7.com`）。
 
-     若要尋找您的網域，請開啟 [Dynamic Media Classic案頭應用程式](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)，然後登入您的公司帳戶或多個帳戶。
+     若要尋找您的網域，請開啟[Dynamic Media Classic案頭應用程式](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)，然後登入您的公司帳戶或帳戶。
 
-     前往 **[!UICONTROL 設定]** > **[!UICONTROL 應用程式設定]** > **[!UICONTROL 一般設定]**.
+     移至&#x200B;**[!UICONTROL 設定]** > **[!UICONTROL 應用程式設定]** > **[!UICONTROL 一般設定]**。
 
-     尋找標示為的欄位 **[!UICONTROL 已發佈的伺服器名稱]**. 如果您目前使用一般Dynamic Media Classic網域，您可以在此轉換中要求移至您自己的自訂網域。
+     尋找標示為&#x200B;**[!UICONTROL 已發佈的伺服器名稱]**&#x200B;的欄位。 如果您目前使用一般Dynamic Media Classic網域，您可以在此轉換中要求移至您自己的自訂網域。
 
    * 指出您是否希望它透過HTTP/2運作。
 
 1. Adobe客戶支援會根據提交請求的順序，將您新增至智慧型影像處理客戶等候清單。
 1. 當Adobe準備好處理您的請求時，客戶支援聯絡您以協調並設定目標日期。
-1. **可選**：您可以選擇在Adobe將新功能推展至生產環境之前，先在「測試」中測試智慧型影像。
+1. **選擇性**：您可以選擇在Adobe將新功能推展到生產環境之前，先在「測試」中測試「智慧型影像」。
 1. 客戶支援會在完成後通知您。
 1. 為了最大化智慧型影像的效能改善，Adobe建議將存留時間(TTL)設定為24小時或更長。 TTL會定義CDN快取資產的時間長度。 若要變更此設定：
 
-   1. 如果您使用Dynamic Media Classic，請前往 **[!UICONTROL 設定]** > **[!UICONTROL 應用程式設定]** > **[!UICONTROL 發佈設定]** > **[!UICONTROL 影像伺服器]**. 設定 **[!UICONTROL 預設使用者端快取存留時間]** 值為24或更長。
-   1. 如果您使用Dynamic Media，請遵循 [這些指示](config-dm.md). 設定 **[!UICONTROL 有效期]** 值為24小時或更長。
+   1. 若您使用Dynamic Media Classic，請移至&#x200B;**[!UICONTROL 設定]** > **[!UICONTROL 應用程式設定]** > **[!UICONTROL Publish設定]** > **[!UICONTROL 影像伺服器]**。 將&#x200B;**[!UICONTROL 預設使用者端快取存留時間]**&#x200B;值設為24或更長。
+   1. 如果您使用Dynamic Media，請遵循[這些指示](config-dm.md)。 將&#x200B;**[!UICONTROL Expiration]**&#x200B;值設定為24小時或更久。
 
 +++
 
@@ -309,14 +314,14 @@ To understand pre-requisites for Smart Imaging, see [Am I eligible to use Smart 
 可以。您可以執行下列動作：
 
 1. 帳戶設定智慧影像後，請在瀏覽器上載入Dynamic Media Classic或Adobe Experience Manager - Dynamic Media影像URL。
-1. 前往「 」開啟Chrome開發人員窗格 **[!UICONTROL 檢視]** > **[!UICONTROL 開發人員]** > **[!UICONTROL 開發人員工具]** 在瀏覽器中。 或者，選擇您選擇的任何瀏覽器開發人員工具。
+1. 在瀏覽器中前往&#x200B;**[!UICONTROL 檢視]** > **[!UICONTROL 開發人員]** > **[!UICONTROL 開發人員工具]**，開啟Chrome開發人員窗格。 或者，選擇您選擇的任何瀏覽器開發人員工具。
 
 1. 請確保在開發人員工具開啟時停用快取。
 
-   * 在Windows®上，導覽至開發人員工具窗格中的設定，然後選取 **[!UICONTROL 停用快取（當devtools開啟時）]** 核取方塊。
-   * 在macOS上，在開發人員窗格的 **[!UICONTROL 網路]** 索引標籤，選取 **[!UICONTROL 停用快取]**.
+   * 在Windows®上，瀏覽至開發人員工具窗格中的設定，然後選取&#x200B;**[!UICONTROL 停用快取（當devtools開啟時）]**&#x200B;核取方塊。
+   * 在macOS上，在開發人員窗格的&#x200B;**[!UICONTROL 網路]**&#x200B;標籤下，選取&#x200B;**[!UICONTROL 停用快取]**。
 
-1. 請注意，內容型別已轉換為適當的格式。 下列熒幕擷圖顯示動態轉換為Chrome上WebP的PNG影像。 如果您的網域已啟用AVIF，內容型別中也可能看到AVIF。
+1. 請注意，內容型別已轉換為適當的格式。 下列熒幕擷圖顯示的PNG影像正動態轉換為Chrome上的WebP。 如果您的網域已啟用AVIF，內容型別中也可能看到AVIF。
 1. 在不同的瀏覽器和使用者條件下重複此測試。
 
 >[!NOTE]
@@ -327,9 +332,9 @@ To understand pre-requisites for Smart Imaging, see [Am I eligible to use Smart 
 
 +++
 
-+++**您是否有辦法瞭解智慧型影像技術的優點？**
++++**是否有辦法瞭解智慧型影像的優點？**
 
-可以。智慧型影像標題決定智慧型影像的優點。 啟用「智慧型影像」時，當您要求影像後，請在 **[!UICONTROL 回應標頭]** 標題，您會看到 `-X-Adobe-Smart-Imaging` 如下列醒目提示的範例所示：
+可以。智慧型影像標題決定智慧型影像的優點。 啟用智慧型影像時，當您要求影像之後，在&#x200B;**[!UICONTROL 回應標題]**&#x200B;標題下，您可以看到`-X-Adobe-Smart-Imaging`，如下列醒目提示的範例所示：
 
 ![智慧型影像標題](/help/assets/dynamic-media/assets/smartimagingheader.png)
 
@@ -338,14 +343,14 @@ To understand pre-requisites for Smart Imaging, see [Am I eligible to use Smart 
 * 智慧型影像處理功能適用於本公司。
 * 正值表示轉換成功。 在這種情況下，會傳回新的WebP影像。
 * 負值表示轉換不成功。 在這種情況下，會傳回原始要求的影像(如果未指定，預設為JPEG)。
-* 正值會顯示要求的影像與新影像之間的位元組差異。 在上述範例中，儲存的位元組為 `75048` 或大約75 KB （一個影像）。
+* 正值會顯示要求的影像與新影像之間的位元組差異。 在上述範例中，儲存的位元組為`75048`或一個影像約75 KB。
 * 負值表示要求的影像小於新影像。 會顯示負數大小差異，但提供的影像僅為原始要求的影像。
 
 >[!NOTE]
 >
->**XAdobe智慧型影像= -1，傳送WebP**
+>**XAdobe智慧型影像= -1，正在傳遞WebP**
 >
->如果 `X-Adobe-Smart-Imaging` 為–1，而且WebP仍在傳送中，這表示智慧型影像正在運作，但由於快取記憶體陳舊，並未計算大小優勢。 您可以使用 `cache=update` （僅限一次）在影像的URL中修正此問題。
+>如果`X-Adobe-Smart-Imaging`的值為–1，而且WebP仍在傳遞，則表示智慧型影像正在運作，但由於快取記憶體太舊，因此並未計算大小優勢。 您可以在影像的URL中使用`cache=update` （僅一次）來修正此問題。
 >使用修飾元的範例：
 >`https://smartimaging.scene7.com/is/image/SmartImaging/sample1?cache=update`
 >若要讓整個快取失效，您必須建立支援案例。
@@ -354,29 +359,29 @@ To understand pre-requisites for Smart Imaging, see [Am I eligible to use Smart 
 
 +++**我可以在智慧型影像中停用AVIF最佳化嗎？**
 
-可以。如果您想要依預設切換回提供WebP，請為相同專案建立支援案例。 如同往常，您可以新增引數來關閉智慧型影像 `bfc=off` 至影像的URL。 不過，您無法在智慧型影像的URL修飾元中選取WebP或AVIF。 此能力在您的公司帳戶層級進行維護。
+可以。如果您想要依預設切換回提供WebP，請為相同專案建立支援案例。 如同往常，您可以新增引數`bfc=off`至影像的URL來關閉智慧型影像。 不過，您無法在智慧型影像的URL修飾元中選取WebP或AVIF。 此能力在您的公司帳戶層級進行維護。
 
 +++
 
-+++**為什麼我的請求在Chrome網頁瀏覽器上有fmt=tif的URL時失敗？**
++++**為什麼我的要求在Chrome網頁瀏覽器上有fmt=tif的URL時失敗？**
 
 如果您的帳戶未啟用智慧型影像處理，就不會發生這個錯誤。 智慧型影像僅適用於JPEG或PNG格式。
 
 若要避免此錯誤，您可以：
 
 * 指定JPEG或PNG，或
-* 不要使用 `fmt` 修飾元，或
+* 完全不使用`fmt`修飾元，或
 * 使用智慧型影像定義的瀏覽器偏好格式。 例如，您可以使用Chrome網頁瀏覽器的WebP。
 
 +++
 
 +++**我可以從影像的URL下載TIFF影像嗎？**
 
-可以。新增 `fmt=tif` 和 `bfc=off` 至影像的URL路徑。
+可以。將`fmt=tif`和`bfc=off`新增至影像的URL路徑。
 
 +++
 
-+++**智慧型影像處理是否可管理影像格式和影像品質設定？**
++++**智慧型影像處理是否管理影像格式和影像品質設定？**
 
 可以。智慧型影像使用格式和品質。 其餘的引數則維持不變（如果影像的URL中有要求）。
 
@@ -388,13 +393,13 @@ To understand pre-requisites for Smart Imaging, see [Am I eligible to use Smart 
 
 +++
 
-+++**智慧型影像處理是否會調整百分比品質輸出設定？**
++++**智慧型影像處理是否調整百分比品質輸出設定？**
 
 可以。智慧型影像會自動調整品質百分比。 此品質百分比是由Adobe開發的機器學習演演算法所決定。 此百分比不限範圍。
 
 +++
 
-+++**智慧型影像是否只取代JPEG和PNG？**
++++**只有JPEG和PNG會由智慧型影像取代？**
 
 可以。此功能僅適用於JPEG和PNG。
 
@@ -406,15 +411,15 @@ To understand pre-requisites for Smart Imaging, see [Am I eligible to use Smart 
 
 +++
 
-+++**裝置畫素比(dpr)為何不適用於複合影像？**
++++**為什麼裝置畫素比(dpr)不適用於複合影像？**
 
 如果複合影像涉及太多圖層，則使用position修飾元時，dpr功能可能會受到影響。 此問題已知，並將在未來版本的智慧型影像中修正。 如果其他智慧型影像功能無法如預期運作，您可以建立支援案例來報告問題。
 
 +++
 
-+++**為何智慧型影像處理PNG會轉換為不失真WebP/AVIF？**
++++**為什麼智慧型影像處理PNG會轉換成不失真WebP/AVIF？**
 
-由於PNG為無損格式，因此先前傳送的WebP和AVIF為無損結果，因此大小比預期大。 智慧型影像處理現在支援有損轉換。 您可以使用修飾元 `cache=update` （僅一次）以修正此問題。 使用此修飾元的範例：
+由於PNG為無損格式，因此先前傳送的WebP和AVIF為無損結果，因此大小比預期大。 智慧型影像處理現在支援有損轉換。 您可以在影像要求中使用修飾元`cache=update` （僅限一次）來修正此問題。 使用此修飾元的範例：
 
 `https://smartimaging.scene7.com/is/image/SmartImaging/sample1?cache=update`
 
@@ -424,7 +429,7 @@ To understand pre-requisites for Smart Imaging, see [Am I eligible to use Smart 
 
 +++**我可以在智慧型影像中繼續使用PNG進行無損轉換嗎？**
 
-可以。智慧型影像處理現在支援根據品質等級進行有損轉換。 若要繼續使用無損轉換，您可以使用透過公司設定或透過影像的URL設定的100品質專案，使用 `qlt=100` 路徑中。
+可以。智慧型影像處理現在支援根據品質等級進行有損轉換。 若要繼續使用無損轉換，您可以使用透過您公司的設定所設定的100品質，或是透過影像的URL，在路徑中使用`qlt=100`。
 
 +++
 

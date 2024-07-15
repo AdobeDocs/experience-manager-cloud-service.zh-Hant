@@ -41,21 +41,21 @@ In the **[!UICONTROL Reports]** screen, various components are shown in the tabu
 
 按一下左側導覽窗格中可用的「**[!UICONTROL 深入分析]**」以檢視以下自動產生的圖表：
 
-* **下載**：使用折線圖表示過去30天或12個月內從資產檢視環境下載的資產數量。
+* **下載**：使用折線圖表示過去30天或12個月內從Assets檢視環境下載的資產數量。
   ![深入分析 — 下載](/help/assets/assets/insights-downloads2341.svg)
 
-* **上傳**：使用折線圖表示過去30天或12個月內上傳至「資產」檢視環境的資產數量。
-  ![insights-uploads](/help/assets/assets/insights-uplods2.svg)
+* **上傳**：使用折線圖表示過去30天或12個月內上傳至Assets檢視環境的資產數量。
+  ![分析 — 上傳](/help/assets/assets/insights-uplods2.svg)
   <!--* **Asset Count by Size**: The division of count of assets based on their range of various sizes from 0 MB to 100 GB.-->
 
-* **儲存空間使用量**：使用長條圖表示的Assets檢視環境的儲存空間使用量（位元組）。
-  ![insights-uploads](/help/assets/assets/insights-storage-usage1.svg)
+* **儲存空間使用量**：使用長條圖表示的Assets檢視環境儲存空間使用量（位元組）。
+  ![分析 — 上傳](/help/assets/assets/insights-storage-usage1.svg)
   <!--* **Delivery**: The graph depicts the count of assets as the delivery dates.-->
 
 <!--* **Asset Count by Asset Type**: Represents count of various MIME types of the available assets. For example, application/zip, image/png, video/mp4, application/postscripte.-->
 
 * **熱門搜尋**：以表格格式檢視過去 30 天或 12 個月內，在資產檢視環境中熱門搜尋詞彙以及這些詞彙的搜尋次數。
-  ![insights-uploads](/help/assets/assets/insights-top-search.svg)
+  ![分析 — 上傳](/help/assets/assets/insights-top-search.svg)
   <!--
    ![Insights](assets/insights1.png)
    ![Insights](assets/insights2.png)

@@ -21,7 +21,7 @@ ht-degree: 9%
 
 <span class="preview">Adobe 建議使用新式且可擴充的資料擷取[核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)，用來[建立新的最適化表單](/help/forms/creating-adaptive-form-core-components.md)或[將最適化表單新增到 AEM Sites 頁面](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)。這些元件代表最適化表單建立方面的重大進步，可確保令人印象深刻的使用者體驗。本文會介紹使用基礎元件編寫最適化表單的舊方法。</span>
 
-AEM Formsas a Cloud Service提供多種參考主題、範本和表單資料模型(FDM)，可幫助您快速開始建立最適化Forms。 您可以下載 [來自軟體發佈入口網站的參考內容套件](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip) 並使用 [封裝管理員](/help/implementing/developing/tools/package-manager.md) 安裝 [參考內容封裝](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip) 在您的生產、開發或本機開發環境中，將這些參考資產帶至您的環境。
+AEM Formsas a Cloud Service提供多種參考主題、範本和表單資料模型(FDM)，可幫助您快速開始建立最適化Forms。 您可以從軟體發佈入口網站](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip)下載[參考內容套件，並使用[套件管理員](/help/implementing/developing/tools/package-manager.md)在您的生產、開發或本機開發環境中安裝[參考內容套件](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip)，以將這些參考資產傳送到您的環境。
 
 參考內容套件中包含的主題、範本和表單資料模型(FDM)包括：
 
@@ -38,7 +38,7 @@ AEM Formsas a Cloud Service提供多種參考主題、範本和表單資料模�
 
 ## 參考主題 {#reference-themes}
 
-[主題](/help/forms/themes.md) 讓您不具備CSS的深入知識，也能設定表單樣式。 您可以安裝 [參考內容封裝](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip)：
+[佈景主題](/help/forms/themes.md)可讓您在不深入瞭解CSS的情況下設定表單樣式。 您可以安裝[參考內容封裝](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip)以取得下列主題：
 
 * 貝瑞爾
 * Canvas 3.0
@@ -54,26 +54,26 @@ AEM Formsas a Cloud Service提供多種參考主題、範本和表單資料模�
 
 此套裝中包含的主題為回應式主題，這些主題中的樣式是為行動裝置和桌上型顯示器所定義。 各種裝置上的大部分現代化瀏覽器都能輕鬆轉譯套用這些主題之一的表單。
 
-如需安裝套件的詳細資訊，請參閱 [如何使用套件](/help/implementing/developing/tools/package-manager.md).
+如需安裝套件的詳細資訊，請參閱[如何使用套件](/help/implementing/developing/tools/package-manager.md)。
 
 ## 貝瑞爾 {#beryl}
 
 柏瑞佈景主題強調使用背景影像、透明度與大平面圖示。 在下方熒幕擷圖中，您可以看到Beryl佈景主題的外觀，以及如何增強表單的樣式。
 
-![柏瑞爾主題](assets/beryl.png)
+![貝瑞爾佈景主題](assets/beryl.png)
 
 ## Canvas 3.0 {#canvas}
 
 Canvas 3.0是Adaptive Forms的預設主題，並強調使用基本顏色、透明度和平坦圖示。 在下方熒幕擷圖中，您可以看到Canvas 3.0佈景主題的外觀。
 
-![柏瑞爾主題](assets/canvas.png)
+![貝瑞爾佈景主題](assets/canvas.png)
 
 
 ## 寧靜 {#tranquil}
 
 寧靜的佈景主題提供寧靜色彩配置的明暗陰影，以突顯表單的不同元件。 例如，單選按鈕、面板和標籤會以不同的綠色顯示。
 
-![寧靜的主題](assets/tranquil.png)
+![寧靜主題](assets/tranquil.png)
 
 
 ## 城市化 {#urbane}
@@ -87,25 +87,25 @@ Canvas 3.0是Adaptive Forms的預設主題，並強調使用基本顏色、透�
 
 Ultraminary主題使用深藍色陰影來反白標示元件，例如定位點、面板、文字方塊和按鈕。
 
-![超海洋主題](assets/ultramarine.png)
+![超海洋佈景主題](assets/ultramarine.png)
 
 ## 保健 {#healthcare}
 
 醫療保健主題使用深綠色陰影來反白顯示標籤、面板、文字方塊和按鈕等元件。
 
-![FSI主題](assets/healthcare.png)
+![FSI佈景主題](assets/healthcare.png)
 
 
 ## FSI （金融服務與保險）
 
 FSI主題強調表單的極簡和功能外觀。 當您將FSI主題套用至表單時，您會看到面板元件是黃色。
 
-![FSI主題](assets/fsi.png)
+![FSI佈景主題](assets/fsi.png)
 
 ## 參考範本 {#reference-templates}
 
 
-[範本](/help/forms/themes.md) 可讓您定義表單的初始表單結構、內容和動作。 您可以安裝 [參考內容封裝](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip)：
+[範本](/help/forms/themes.md)可讓您定義表單的初始表單結構、內容和動作。 您可以安裝[參考內容封裝](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip)來取得下列範本：
 
 * 基本
 * 空白
@@ -122,12 +122,12 @@ FSI主題強調表單的極簡和功能外觀。 當您將FSI主題套用至表�
 * 查詢Microsoft Dynamics 365和Salesforce伺服器以取得資料，並預先填入Adaptive Forms。
 * 從Microsoft Dynamics 365和Salesforce伺服器讀取資料。
 
-您可安裝 [參考內容封裝](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip)：
+您可以安裝[參考內容套件](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip)，以取得下清單單資料模型(FDM)：
 
 * Microsoft® Dynamics 365
 * Salesforce
 
-如需使用這些模型的詳細資訊，請參閱 [設定Microsoft Dynamics 365和Salesforce雲端服務](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-msdynamics-salesforce.html?lang=en#configure-dynamics-cloud-service)
+如需使用這些模型的詳細資訊，請參閱[設定Microsoft Dynamics 365和Salesforce雲端服務](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-msdynamics-salesforce.html?lang=en#configure-dynamics-cloud-service)
 
 
 ## 另請參閱 {#see-also}

@@ -13,7 +13,7 @@ ht-degree: 56%
 
 # [!DNL Adobe Experience Manager] as a Cloud Service 2022.8.0 版發行說明 {#release-notes}
 
-以下章節概述2022.8.0版的功能發行說明 [!DNL Experience Manager] as a Cloud Service。
+以下章節概述2022.8.0版[!DNL Experience Manager]as a Cloud Service的功能發行說明。
 
 >[!NOTE]
 >
@@ -25,7 +25,7 @@ ht-degree: 56%
 
 ## 發行日期 {#release-date}
 
-的發行日期 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 目前版本(2022.8.0)為2022年9月1日。
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service]目前版本(2022.8.0)的發行日期為2022年9月1日。
 下一個版本(2022.10.0)計畫於2022年11月10日發行。
 
 ## 發行影片 {#release-video}
@@ -39,15 +39,15 @@ ht-degree: 56%
 ### [!DNL Sites] 中的新功能 {#sites-features}
 
 * 電子郵件元件可讓您在AEM中建立內容，然後透過Campaign Classic將其傳遞為電子郵件。 核心電子郵件元件：
-   * 是根據 [核心WCM元件](https://github.com/adobe/aem-core-wcm-components) 支援可編輯的範本和樣式系統。
+   * 是以[核心WCM元件](https://github.com/adobe/aem-core-wcm-components)為基礎，該元件支援可編輯的範本和樣式系統。
    * 提供10個電子郵件最佳化的立即可用元件（頁面、容器、標題、文字、影像、按鈕、Teaser、體驗片段、內容片段、分段）。
-   * 提供進階的個人化與細分，這要歸功於 [插入Campaign變數](https://github.com/adobe/aem-core-email-components/wiki/RTE-Personalization) 於大多數對話方塊欄位上，並變更為靈活的 [分段元件](https://github.com/adobe/aem-core-email-components/wiki/Segmentation-component-(Technical-Documentation)).
-   * 提供最佳的電子郵件易用HTML輸出，這要歸功於 [CSS樣式內嵌](https://github.com/adobe/aem-core-email-components/wiki/HTML-Inliner:-Technical-documentation)，則 [HTML屬性內嵌](https://github.com/adobe/aem-core-email-components/wiki/HTML-Inliner:-Technical-documentation)，以及 [HTML洗手液](https://github.com/adobe/aem-core-email-components/wiki/HTML-sanitizing:-Technical-documentation).
+   * 提供進階個人化與分段，這要歸功於大多數對話方塊欄位上的[Campaign變數](https://github.com/adobe/aem-core-email-components/wiki/RTE-Personalization)插入以及彈性的[分段元件](https://github.com/adobe/aem-core-email-components/wiki/Segmentation-component-(Technical-Documentation))。
+   * 提供最佳的電子郵件易用HTML輸出，這要歸功於[CSS樣式內嵌器](https://github.com/adobe/aem-core-email-components/wiki/HTML-Inliner:-Technical-documentation)、[HTML屬性內嵌器](https://github.com/adobe/aem-core-email-components/wiki/HTML-Inliner:-Technical-documentation)和[HTML清理程式](https://github.com/adobe/aem-core-email-components/wiki/HTML-sanitizing:-Technical-documentation)。
    * 可讓您隨處建立電子郵件。
 
 ### [!DNL Sites] 發行前通道中可用的新功能 {#prerelease-features-sites}
 
-* 此 [內容片段主控台](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console) 為使用者提供一個選項，以便顯示與內容片段相關的語言副本總數。 另外提供一鍵式存取，以便檢視所有語言版本。 使用者也可以依照他們感興趣的地區設定來篩選表格檢視。
+* [內容片段主控台](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console)為使用者提供一個選項，以顯示與內容片段相關的語言副本總數。 另外提供一鍵式存取，以便檢視所有語言版本。 使用者也可以依照他們感興趣的地區設定來篩選表格檢視。
 
 ![內容片段語言](/help/release-notes/assets/cfconsole-languages.png)
 
@@ -55,7 +55,7 @@ ht-degree: 56%
 
 ### [!DNL Assets] 中的新功能 {#features-assets}
 
-* 您現在可以將Adobe Experience Manager Assets設定為 [根據MIME型別限制使用者可以上傳的資產型別](/help/assets/configure-asset-upload-restrictions.md).
+* 您現在可以將Adobe Experience Manager Assets設定為[根據MIME型別](/help/assets/configure-asset-upload-restrictions.md)限制使用者可以上傳的資產型別。
 
   ![資產上傳限制](/help/assets/assets/asset-upload-restrictions.png)
 

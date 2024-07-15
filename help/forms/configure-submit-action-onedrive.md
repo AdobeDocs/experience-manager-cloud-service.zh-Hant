@@ -17,7 +17,7 @@ ht-degree: 67%
 
 「**[!UICONTROL 提交到 OneDrive]**」提交動作會將最適化表單連結到 Microsoft® OneDrive。您可以將表單資料、檔案、附件或記錄檔案提交至已連線的Microsoft® OneDrive儲存體。
 
-AEM as a Cloud Service提供多種立即可用的提交動作，用於處理表單提交。 如需這些選項的詳細資訊，請參閱 [最適化表單提交動作](/help/forms/configure-submit-actions-core-components.md)  文章。
+AEM as a Cloud Service提供多種立即可用的提交動作，用於處理表單提交。 您可以在[最適化表單提交動作](/help/forms/configure-submit-actions-core-components.md)文章中進一步瞭解這些選項。
 
 ## 優點
 
@@ -33,7 +33,7 @@ AEM Forms與Microsoft® OneDrive無縫整合的一些優點包括：
 設定OneDrive以提交AEM Forms，請執行以下步驟：
 
 1. [建立 OneDrive 設定](#create-a-onedrive-configuration-create-onedrive-configuration)：將 AEM Forms 連接到您的 Microsoft® OneDrive 儲存空間。
-2. [在最適化表單中使用提交至OneDrive提交動作](#use-onedrive-configuration-in-an-adaptive-form-use-onedrive-configuartion-in-af)：此動作會將您的最適化表單連線至設定的Microsoft® OneDrive。
+2. [在最適化表單中使用提交至OneDrive提交動作](#use-onedrive-configuration-in-an-adaptive-form-use-onedrive-configuartion-in-af)：它會將您的最適化表單連線到已設定的Microsoft® OneDrive。
 
 ### 建立 OneDrive 設定 {#create-onedrice-configuration}
 

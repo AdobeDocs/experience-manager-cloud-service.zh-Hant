@@ -37,6 +37,6 @@ Best Practices Analyzer報告包含下列類別：
 關於類別和可能的影響以及與這些類別相關聯的解決方案的其他資訊，可透過最佳實務分析報告中的連結提供。
 
 >[!NOTE]
->最佳實務分析報告提供了您原本必須手動收集和評估的資訊，有助於快速評估轉換為AEMas a Cloud Service所需的時間和成本。
+>最佳實務分析報告提供了您原本必須手動收集和評估的資訊，有助於快速評估轉換至AEM as a Cloud Service所需的時間和成本。
 
-您也可以從AEM執行個體下載Best Practices Analyzer報表。 另請參閱 [檢視Best Practices Analyzer報表](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md#viewing-report) 以取得更多詳細資料。
+您也可以從AEM執行個體下載Best Practices Analyzer報表。 如需詳細資訊，請參閱[檢視Best Practices Analyzer報告](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md#viewing-report)。

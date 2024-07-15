@@ -1,6 +1,6 @@
 ---
-title: AEMas a Cloud Service版本2021.11.0中移轉工具的發行說明
-description: AEMas a Cloud Service版本2021.11.0中移轉工具的發行說明
+title: AEM as a Cloud Service 2021.11.0版中移轉工具的發行說明
+description: AEM as a Cloud Service 2021.11.0版中移轉工具的發行說明
 feature: Release Information
 exl-id: 668c0c66-88f5-4d74-9a2a-3bdc63b0bba7
 role: Admin
@@ -11,9 +11,9 @@ ht-degree: 16%
 
 ---
 
-# AEMas a Cloud Service版本2021.11.0中移轉工具的發行說明 {#release-notes}
+# AEM as a Cloud Service 2021.11.0版中移轉工具的發行說明 {#release-notes}
 
-本頁面總覽AEMas a Cloud Service2021.11.0中移轉工具發行說明。
+本頁面總覽AEM as a Cloud Service 2021.11.0中移轉工具的發行說明。
 
 >[!NOTE]
 >若要查看 Adobe Experience Manager as a Cloud Service 的最新發行說明，請按一下[此處](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html)。
@@ -26,6 +26,6 @@ ht-degree: 16%
 
 ### 新增功能 {#what-is-new-ctt}
 
-* 支援選購的 [預先複製](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html) 新增步驟，以便在來源AEM例項設定為使用檔案資料存放區時，與內容轉移工具搭配使用，大幅加快擷取階段。
+* 新增選用的[預先複製](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html)步驟支援，以便在來源AEM執行個體設定為使用檔案資料存放區時，與內容轉移工具搭配使用，大幅加快擷取階段。
 
 * 在內容轉移工具UI中，擷取階段新增了其他描述性訊息，以指示何時正在進行索引和蒙哥復原步驟。

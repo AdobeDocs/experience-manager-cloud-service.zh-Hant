@@ -32,34 +32,34 @@ Adobe Experience Manager (AEM)的預設現成行為是發佈內容不受影響�
 
 ### 範例情境 {#example-scenario}
 
-在以下段落中，新頁面的範例 `b` 會同時在Blueprint和即時副本分支（手動建立）中使用、建立，以說明解決衝突的各種方法：
+在以下區段中，使用在Blueprint和Live Copy分支（手動建立）中建立的新頁面`b`的範例，以說明解決衝突的各種方法：
 
 * Blueprint： `/b`
 
-  具有一個子頁面的主版頁面， `bp-level-1`
+  具有一個子頁面的主版頁面，`bp-level-1`
 
 * 即時副本： `/b`
 
-  在即時副本分支中手動建立的頁面，具有一個子頁面， `lc-level-1`
+  在即時副本分支中手動建立的頁面，具有一個子頁面`lc-level-1`
 
-   * 發佈時啟用為 `/b`，以及子頁面
+   * 與子頁面一起在發佈時以`/b`啟動
 
 #### 轉出前 {#before-rollout}
 
-|  | 轉出前的Blueprint | 轉出前的即時副本 | 轉出前發佈 |
+|  | 轉出前的Blueprint | 轉出前的即時副本 | 轉出前的Publish |
 |---|---|---|---|
 | 值 | `b` | `b` | `b` |
-| 評論 | 在Blueprint分支中建立，可供轉出 | 在即時副本分支中手動建立 | 包含頁面的內容 `b` 在即時副本分支中手動建立的 |
+| 評論 | 在Blueprint分支中建立，可供轉出 | 在即時副本分支中手動建立 | 包含在Live Copy分支中手動建立的頁面`b`的內容 |
 | 值 | `/bp-level-1` | `/lc-level-1` | `/lc-level-1` |
-| 評論 |  | 在即時副本分支中手動建立 | 包含頁面的內容 `child-level-1` 在即時副本分支中手動建立的 |
+| 評論 |  | 在即時副本分支中手動建立 | 包含在Live Copy分支中手動建立的頁面`child-level-1`的內容 |
 
 ## 轉出管理程式與衝突處理 {#rollout-manager-and-conflict-handling}
 
 轉出管理員可讓您啟用或停用衝突管理。
 
-這是使用來完成的 [OSGi設定](/help/implementing/deploying/configuring-osgi.md) 之 **Day CQ WCM轉出管理員**. 設定值 **處理與手動建立的頁面衝突** ( `rolloutmgr.conflicthandling.enabled`)為true，如果轉出管理員應處理在Live Copy中建立的頁面與Blueprint中已存在的名稱之間的衝突。
+這是使用&#x200B;**Day CQ WCM轉出管理員**&#x200B;的[OSGi組態](/help/implementing/deploying/configuring-osgi.md)完成的。 如果轉出管理員應處理在Live Copy中建立的頁面與Blueprint中已存在的名稱發生的衝突，則將值&#x200B;**處理與手動建立的頁面**&#x200B;的衝突(`rolloutmgr.conflicthandling.enabled`)設定為true。
 
-AEM具有 [已停用衝突管理時的預先定義行為。](#behavior-when-conflict-handling-deactivated)
+當衝突管理已停用時，AEM有[預先定義的行為。](#behavior-when-conflict-handling-deactivated)
 
 ## 衝突處理常式 {#conflict-handlers}
 
@@ -67,39 +67,39 @@ AEM使用衝突處理常式，來解決將內容從Blueprint轉出至即時副�
 
 AEM提供：
 
-* 此 [預設衝突處理常式](#default-conflict-handler)：
+* [預設衝突處理常式](#default-conflict-handler)：
    * `ResourceNameRolloutConflictHandler`
-* 實作 [自訂處理常式](#customized-handlers)
+* 實施[自訂處理常式](#customized-handlers)的可能性
 * 可讓您設定每個個別處理常式優先順序的服務排名機制
    * 使用排名最高的服務。
 
 ### 預設衝突處理常式 {#default-conflict-handler}
 
-預設的衝突處理常式為 `ResourceNameRolloutConflictHandler`
+預設衝突處理常式為`ResourceNameRolloutConflictHandler`
 
 * 使用此處理常式，Blueprint頁面會獲得優先權。
-* 此處理常式的服務排名設定為低。 亦即，低於 `service.ranking` 屬性，因為假設自訂處理常式需要較高的排名。 不過，排名並非在需要時確保彈性的絕對最低值。
+* 此處理常式的服務排名設定為低。 也就是說，低於`service.ranking`屬性的預設值，因為假設自訂處理常式需要較高的排名。 不過，排名並非在需要時確保彈性的絕對最低值。
 
-此衝突處理常式會賦予Blueprint優先權。 例如，即時副本頁面 `/b` 在即時副本分支中移至 `/b_msm_moved`.
+此衝突處理常式會賦予Blueprint優先權。 例如，即時副本頁面`/b`在即時副本分支中移至`/b_msm_moved`。
 
 * 即時副本： `/b`
 
-  在即時副本中移至 `/b_msm_moved`. 這會作為備份，並確保不會遺失任何內容。
+  在即時副本中移至`/b_msm_moved`。 這會作為備份，並確保不會遺失任何內容。
 
-   * `lc-level-1` 不會移動。
+   * 未移動`lc-level-1`。
 
 * 藍圖： `/b`
 
-  轉出至即時副本頁面 `/b`.
+  轉出至即時副本頁面`/b`。
 
-   * `bp-level-1` 轉出至即時副本。
+   * `bp-level-1`已轉出至即時副本。
 
 #### 轉出後 {#after-rollout}
 
-|  | 轉出後的Blueprint | 轉出後的即時副本 | 轉出後的即時副本 | 轉出後發佈 |
+|  | 轉出後的Blueprint | 轉出後的即時副本 | 轉出後的即時副本 | 轉出後的Publish |
 |---|---|---|---|---|
 | 值 | `b` | `b` | `b_msm_moved` | `b` |
-| 評論 |  | 具有Blueprint頁面的內容 `b` 已轉出的專案 | 具有頁面的內容 `b` 在即時副本分支中手動建立的 | 無變更；包含原始頁面的內容 `b` 在即時副本分支中手動建立且現在稱為 `b_msm_moved` |
+| 評論 |  | 具有已轉出的Blueprint頁面`b`的內容 | 具有在即時副本分支中手動建立的頁面`b`的內容 | 無變更；包含在Live Copy分支中手動建立的原始頁面`b`的內容，現在稱為`b_msm_moved` |
 | 值 | `/bp-level-1` | `/bp-level-1` | `/lc-level-1` | `/lc-level-1` |
 | 評論 |  |  | 無變更 | 無變更 |
 
@@ -112,19 +112,19 @@ AEM提供：
 * 根據您的需求命名。
 * 根據您的需求進行開發/設定。
    * 例如，您可以開發處理常式，讓即時副本頁面獲得優先權。
-* 可使用進行設定 [OSGi設定](/help/implementing/deploying/configuring-osgi.md). 尤其是：
-   * **服務排名** 定義與其他衝突處理常式相關的順序( `service.ranking`)。
+* 可以使用[OSGi設定](/help/implementing/deploying/configuring-osgi.md)來設定。 尤其是：
+   * **服務排名**&#x200B;定義與其他衝突處理常式( `service.ranking`)相關的順序。
       * 預設值為 `0`。
 
 ### 停用衝突處理時的行為 {#behavior-when-conflict-handling-deactivated}
 
-如果您手動 [停用衝突處理，](#rollout-manager-and-conflict-handling) AEM不會對任何衝突頁面執行任何動作。 非衝突頁面會如預期轉出。
+如果您手動[停用衝突處理，](#rollout-manager-and-conflict-handling) AEM不會對任何衝突頁面執行任何動作。 非衝突頁面會如預期轉出。
 
 >[!CAUTION]
 >
 >當衝突處理停用時，AEM不會指出將忽略衝突。 由於在這種情況下必須明確設定此行為，因此假設這是所需的行為。
 
-在此情況下，即時副本會有效取得優先權。 Blueprint頁面 `/b` 不會複製且即時副本頁面 `/b` 保持不變。
+在此情況下，即時副本會有效取得優先權。 不會複製Blueprint頁面`/b`，而即時副本頁面`/b`保持不變。
 
 * 藍圖： `/b`
 
@@ -136,13 +136,13 @@ AEM提供：
 
 #### 轉出後 {#after-rollout-no-conflict}
 
-|  | 轉出後的Blueprint | 轉出後的即時副本 | 轉出後發佈 |
+|  | 轉出後的Blueprint | 轉出後的即時副本 | 轉出後的Publish |
 |---|---|---|---|
 | 值 | `b` | `b` | `b` |
-| 評論 |  | 無變更；具有頁面內容 `b` 在即時副本分支中手動建立的 | 無變更；包含頁面內容 `b` 在即時副本分支中手動建立的 |
+| 評論 |  | 無變更；具有在即時副本分支中手動建立的頁面`b`的內容 | 無變更；包含在Live Copy分支中手動建立的頁面`b`的內容 |
 | 值 | `/bp-level-1,` | `/lc-level-1` | `/lc-level-1` |
 | 評論 |  | 無變更 | 無變更 |
 
 ### 服務排名 {#service-rankings}
 
-此 [osgi](https://www.osgi.org/) 服務排名可用來定義個別衝突處理常式的優先順序。
+[OSGi](https://www.osgi.org/)服務排名可用來定義個別衝突處理常式的優先順序。

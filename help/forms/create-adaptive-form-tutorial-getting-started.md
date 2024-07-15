@@ -7,13 +7,13 @@ role: User, Developer
 level: Beginner
 hide: true
 hidefromtoc: true
-source-git-commit: e6c58c835798b16158ab4aca26e381ab8f36afd3
+exl-id: b59cb56c-9629-48e4-b5c9-a861013a1360
+source-git-commit: af58a784f24f212962ad73f11015fb788493d8b5
 workflow-type: tm+mt
 source-wordcount: '918'
 ht-degree: 2%
 
 ---
-
 
 # 建立最適化表單（核心元件） — 教學課程
 
@@ -32,14 +32,14 @@ ht-degree: 2%
 * 將不同語言的最適化表單當地語系化
 * 設定您的表單以產生結構化資料
 * 設定您的表單以提交資料至REST端點
-* 發佈最適化表單
+* Publish您的最適化表單
 
 
 ## 為什麼要建立核心元件型表單？
 
 AEM Forms提供基礎元件和核心元件，以建立表單體驗。 核心元件是建立任何新表單體驗的現代建議方法。 為何使用核心元件？ 這些元件輕量且開放原始碼（可在github上取得）、提供優異的Google Lighthouse和Web重要分數、相容於協助工具，並提供AEM Sites所有熟悉的功能（例如版本設定和本地化）。 此外，這些元件樣式更簡單，您可以根據組織的品牌指導方針輕鬆自訂其外觀。 這些元件沒有協力廠商相依性，任何瞭解JavaScript和CSS的開發人員都可以輕鬆自訂這些元件。
 
-![為何要建立以核心元件為基礎的最適化Forms？ 這些元件輕量級、更易於風格、提供Lighthouse分數、支援協助工具標準、輕鬆自訂、開放原始碼、可在github上取得、不依賴第三方程式庫，並且幾乎對AEM開發人員和AEM作者沒有學習曲線。最重要的是，AEM Forms核心元件擁有AEM WCM核心元件的所有功能。](/help/forms/assets/cc-core-components-benefits.png){width="50%"}
+![為何要建立以最適化Forms為基礎的核心元件？ 這些元件輕量、更易於風格、提供Lighthouse高分數、支援協助工具標準、輕鬆自訂、開放原始碼、可在github上取得、不依賴第三方程式庫，並且幾乎對AEM開發人員和AEM作者沒有學習曲線。最上面，AEM Forms核心元件具有AEM WCM核心元件的所有功能。](/help/forms/assets/cc-core-components-benefits.png){width="50%"}
 
 ## 使用案例：透過最適化Forms簡化首頁貸款資格預審
 
@@ -66,17 +66,17 @@ AEM Forms提供基礎元件和核心元件，以建立表單體驗。 核心元�
 使用AEM SDK進行本機開發可節省您時間並簡化開發流程
 
 
-**準備好開始了嗎？**
+**準備開始嗎？**
 
-1. [設定AEM專案的開發工具](/help/forms/setup-local-development-environment.md#set-up-development-tools-for-aem-projects)：下載並安裝最新版本的 [Java 11™](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=en#local-development-environment-set-up)， [Git](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=en#install-git)， [Node.js (npm)](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=en#node-js)、和 [Maven](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=en#install-maven). 另外安裝純文字編輯器，本教學課程中的範例是以Visual Studio Code為基礎。
+1. [設定AEM專案的開發工具](/help/forms/setup-local-development-environment.md#set-up-development-tools-for-aem-projects)：下載並安裝最新版本的[Java 11™](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=en#local-development-environment-set-up)、[Git](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=en#install-git)、[Node.js (npm)](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=en#node-js)和[Maven](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=en#install-maven)。 另外安裝純文字編輯器，本教學課程中的範例是以Visual Studio Code為基礎。
 
-1. [安裝AEM SDK](/help/forms/setup-local-development-environment.md#set-up-local-experience-manager-environment-for-development)：下載並安裝最新版AEM SDK。 這提供了AEM開發的基本工具。 記下AEM SDK的版本。
+1. [安裝AEM SDK](/help/forms/setup-local-development-environment.md#set-up-local-experience-manager-environment-for-development)：下載並安裝最新版的AEM SDK。 這提供了AEM開發的基本工具。 記下AEM SDK的版本。
 
-   ![Software-Distribution](/help/forms/assets/software-distribution.png)
+   ![軟體發佈](/help/forms/assets/software-distribution.png)
 
    ![安裝AEM SDK](/help/forms/assets/start-aem-sdk.png)
 
-1. [新增AEM Forms附加元件](/help/forms/setup-local-development-environment.md#add-forms-archive-to-local-author-and-publish-instances-and-configure-forms-specific-users)：從下載並安裝與您的AEM SDK版本相符的AEM Forms附加元件 [Software Distribution](https://experience.adobe.com/#/downloads) 入口網站。
+1. [新增AEM Forms附加元件](/help/forms/setup-local-development-environment.md#add-forms-archive-to-local-author-and-publish-instances-and-configure-forms-specific-users)：從[軟體發佈](https://experience.adobe.com/#/downloads)入口網站下載並安裝與AEM SDK版本相符的AEM Forms附加元件。
    ![install-aem-forms-add-on](/help/forms/assets/install-aem-forms-add-on.png)
 
    +++安裝AEM Forms附加元件：
@@ -84,15 +84,15 @@ AEM Forms提供基礎元件和核心元件，以建立表單體驗。 核心元�
    若要安裝AEM Forms附加元件：
 
    1. 停止AEM SDK。
-   1. 將AEM Forms附加元件(.far)檔案新增至 `AEM SDK/crx-quickstart/install` 資料夾，
+   1. 將AEM Forms附加元件(.far)檔案新增至「`AEM SDK/crx-quickstart/install`」資料夾，
    1. 重新啟動AEM SDK。
 
 +++
 
-1. [設定使用者許可權](/help/forms/setup-local-development-environment.md#configure-users-and-permissions)：建立具有開發、製作和其他許可權的使用者，並將這些使用者新增至預先定義的表單群組。
+1. [設定使用者許可權](/help/forms/setup-local-development-environment.md#configure-users-and-permissions)：建立具有開發、編寫和其他許可權的使用者，並將這些使用者新增至預先定義的表單群組。
 
 
-1. [新增最適化Forms範本](/help/forms/setup-local-development-environment.md#set-up-a-development-project-for-forms-based-on-experience-manager-archetype)：使用AEM Archetypes 48或更新版本建立新的AEM專案，並將其部署至您的AEM SDK。 專案會將最適化Forms範本新增至您的AEM SDK。
+1. [新增最適化Forms範本](/help/forms/setup-local-development-environment.md#set-up-a-development-project-for-forms-based-on-experience-manager-archetype)：使用AEM Archetypes 48或更新版本來建立新的AEM專案，並將其部署至您的AEM SDK。 專案會將最適化Forms範本新增至您的AEM SDK。
 
    ![最適化表單範本](/help/forms/assets/adaptive-forms-templates.png)
 
@@ -119,7 +119,7 @@ AEM Forms提供基礎元件和核心元件，以建立表單體驗。 核心元�
 +++
 
 
-如需設定本機AEM Forms開發環境的詳細指示和逐步指南，請參閱 [設定AEM Forms的本機開發環境](/help/forms/setup-local-development-environment.md) 文章。
+如需有關設定本機AEM Forms開發環境的詳細指示和逐步指南，請參閱[為AEM Forms設定本機開發環境](/help/forms/setup-local-development-environment.md)文章。
 
 
 

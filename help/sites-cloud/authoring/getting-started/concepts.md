@@ -24,7 +24,7 @@ AEM 安裝通常至少包含兩個環境：
 * 作者建立和檢閱內容。 內容可以是許多不同的型別，包括頁面、資產和出版物。
 * 此內容將在某個時間點發佈至您的網站。
 
-![作者、發佈者和Dispatcher圖](/help/sites-cloud/authoring/assets/author-publish.png)
+![作者、發行者和Dispatcher的圖表](/help/sites-cloud/authoring/assets/author-publish.png)
 
 在製作環境中，可透過AEM製作使用者介面使用AEM的功能。 對於發佈環境，您可以設計可供使用者使用的介面的完整外觀。
 
@@ -32,7 +32,7 @@ AEM 安裝通常至少包含兩個環境：
 
 ## 作者環境 {#author-environment}
 
-作者的工作方式稱為 **作者環境**. 此環境提供建立內容時易於使用的介面(圖形使用者介面（GUI或UI）)。 它要求作者使用指派有適當存取許可權的帳戶登入。
+作者在稱為&#x200B;**作者環境**&#x200B;的環境中工作。 此環境提供建立內容時易於使用的介面(圖形使用者介面（GUI或UI）)。 它要求作者使用指派有適當存取許可權的帳戶登入。
 
 >[!NOTE]
 >
@@ -59,14 +59,14 @@ AEM 安裝通常至少包含兩個環境：
 
 AEM也提供Sites預覽服務，可讓開發人員和內容作者在網站到達發佈環境並公開使用之前預覽網站的最終體驗。
 
-另請參閱 [預覽內容](/help/sites-cloud/authoring/fundamentals/previewing-content.md) 以取得更多詳細資料。
+如需詳細資訊，請參閱[預覽內容](/help/sites-cloud/authoring/fundamentals/previewing-content.md)。
 
-## 發佈環境 {#publish-environment}
+## Publish環境 {#publish-environment}
 
-準備就緒後，您的網站內容會發佈到 **發佈環境**. 在此處，根據設計介面的外觀，可將網站頁面提供給目標對象。
+準備就緒後，您的網站內容會發佈至&#x200B;**發佈環境**。 在此處，根據設計介面的外觀，可將網站頁面提供給目標對象。
 
-如需有關發佈和取消發佈頁面的詳細資訊，請參閱檔案 [發佈頁面](/help/sites-cloud/authoring/fundamentals/publishing-pages.md).
+如需有關發佈與取消發佈頁面的詳細資訊，請參閱檔案[發佈頁面](/help/sites-cloud/authoring/fundamentals/publishing-pages.md)。
 
 ## Dispatcher {#dispatcher}
 
-若要最佳化網站訪客的效能， **[Dispatcher](/help/implementing/dispatcher/overview.md)** 實作負載平衡和快取。
+為了最佳化網站訪客的效能，**[Dispatcher](/help/implementing/dispatcher/overview.md)**&#x200B;實作負載平衡和快取。

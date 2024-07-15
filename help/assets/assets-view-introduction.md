@@ -1,6 +1,6 @@
 ---
-title: AEM中的「資產」檢視如何協助您？
-description: 進一步瞭解AEM中「資產」檢視的主要優點。 Adobe運用其在增強行銷和創意專業人士能力方面的專業知識，引進了改變遊戲規則的新使用者體驗。
+title: AEM中的Assets檢視如何造福您？
+description: 進一步瞭解AEM中Assets檢視的主要優點。 Adobe運用其在增強行銷和創意專業人士能力方面的專業知識，引進了改變遊戲規則的新使用者體驗。
 mini-toc-levels: 3
 exl-id: c27134f5-178c-4db1-a8e6-ec45d020f2b5
 feature: Asset Management, Publishing, Collaboration, Asset Processing
@@ -18,7 +18,7 @@ ht-degree: 69%
 
 在現今步調速迅的數位優先環境中，即時的內容創作和傳遞實屬不可或缺，針對下游行銷速度所設計的數位資產管理 (DAM) 體驗至關重要。Adobe運用其在增強行銷和創意專業人士能力方面的專業知識，引進了改變遊戲規則的新使用者體驗。 此工作流程優先的方法革新了企業處理動態數位資產的方式，讓行銷人員有能力在尋找、共同作業、個人化與傳遞資產方面，將效率提升到極致。這些簡化的工作流程加快內容速度，並將行銷作業推升到新的高度。
 
-若要進一步瞭解資產as a Cloud Service的可用角色型體驗，請參閱 [Assetsas a Cloud Service簡介](/help/assets/overview.md#persona-based-experiences).
+若要進一步瞭解Assetsas a Cloud Service的可用角色型體驗，請參閱[Assetsas a Cloud Service簡介](/help/assets/overview.md#persona-based-experiences)。
 
 ## 如何存取 Assets 檢視？ {#access-assets-view}
 
@@ -49,7 +49,7 @@ ht-degree: 69%
 
 ## 為什麼要使用 Assets 檢視？
 
-「資產」檢視提供下列「管理員」檢視中未提供的主要優點：
+Assets檢視提供下列「管理員」檢視中未提供的關鍵優點：
 
 * [我的工作區儀表板提供簡化的體驗](#my-workspace-for-streamlined-experience)
 * [搜尋優先方法可提高效率](#search-first)
@@ -61,7 +61,7 @@ ht-degree: 69%
 
 ### 我的工作區儀表板提供簡化的體驗 {#my-workspace-for-streamlined-experience}
 
-我們推出了明白各種組織角色不同需求的數位資產管理解決方案。時尚的Assets檢視可優先處理易用性和速度，滿足行銷人員對視覺吸引力和簡潔工作區的偏好。 透過可自訂的使用者特定「我的工作區」儀表板，行銷人員能夠以驚人的效率迅速尋找、預覽、編輯、管理和傳遞資產。無須再耗費無窮盡的時間搜尋特定資產，迎接簡化的體驗，讓您的一切所需皆觸手可及。
+我們推出了明白各種組織角色不同需求的數位資產管理解決方案。時尚的Assets檢視注重易用性和速度，迎合行銷人員對視覺吸引力的偏好以及簡潔的工作區。 透過可自訂的使用者特定「我的工作區」儀表板，行銷人員能夠以驚人的效率迅速尋找、預覽、編輯、管理和傳遞資產。無須再耗費無窮盡的時間搜尋特定資產，迎接簡化的體驗，讓您的一切所需皆觸手可及。
 
 ![我的工作區概觀](assets/my-workspace-demo.gif)
 
@@ -69,7 +69,7 @@ ht-degree: 69%
 
 ### 做出資訊導向決策的深入解析 {#insights-data}
 
-為了搭配內容更新速度，可操作分析實屬不可或缺。「資產」檢視提供「我的工作區」中的進階深入分析，提供資產效能、對象使用情況和參與的重要資料。 行銷人員可以做出資料導向的決策、最佳化內容策略，以及調整下游傳遞以達到最佳的成果。企業若能存取有意義的深入解析，就可以在遙遙領先同業的競爭，並取得卓越的成果。
+為了搭配內容更新速度，可操作分析實屬不可或缺。Assets檢視提供「我的Workspace」中的進階深入分析，提供資產效能、對象使用情況和參與度等寶貴資料。 行銷人員可以做出資料導向的決策、最佳化內容策略，以及調整下游傳遞以達到最佳的成果。企業若能存取有意義的深入解析，就可以在遙遙領先同業的競爭，並取得卓越的成果。
 
 ![深入解析概觀](assets/insights-overview.gif)
 
@@ -85,7 +85,7 @@ ht-degree: 69%
 
 [![請參閱指南](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](edit-images-assets-view.md)
 
-Assets的as a Cloud Service近期發行將包括 [透過Adobe Express進行Adobe Firefly整合](https://firefly.adobe.com/?gclid=EAIaIQobChMIlZeKuNfj_wIVeyCtBh3e5g2cEAAYASAAEgL56_D_BwE&amp;sdid=JM4FW6VL&amp;mv=search&amp;mv2=paidsearch&amp;ef_id=EAIaIQobChMIlZeKuNfj_wIVeyCtBh3e5g2cEAAYASAAEgL56_D_BwE:G:s&amp;s_kwcid=AL!3085!3!652077237594!e!!g!!adobe%20firefly!19870733758!148140507838).
+即將發行的Assetsas a Cloud Service版本也包含[透過Adobe Express的Adobe Firefly整合](https://firefly.adobe.com/?gclid=EAIaIQobChMIlZeKuNfj_wIVeyCtBh3e5g2cEAAYASAAEgL56_D_BwE&amp;sdid=JM4FW6VL&amp;mv=search&amp;mv2=paidsearch&amp;ef_id=EAIaIQobChMIlZeKuNfj_wIVeyCtBh3e5g2cEAAYASAAEgL56_D_BwE:G:s&amp;s_kwcid=AL!3085!3!652077237594!e!!g!!adobe%20firefly!19870733758!148140507838)。
 
 ### 資料夾上傳以設定組織的階層式結構 {#folder-uploads}
 
@@ -103,7 +103,7 @@ Assets的as a Cloud Service近期發行將包括 [透過Adobe Express進行Adobe
 
 ### 訂閱存放庫內容以進行高效率的資產管理 {#subscribe-content}
 
-「資產」檢視可讓您監視對存放庫中可用的資產、資料夾或集合執行的操作。 您需要選擇並訂閱將通知傳送給您的內容。您也可以配置事件類型，例如刪除已訂閱內容、修改已訂閱內容等。然後，僅針對這些事件類型發送通知給您。
+Assets檢視可讓您監視對存放庫中可用的資產、資料夾或集合執行的操作。 您需要選擇並訂閱將通知傳送給您的內容。您也可以配置事件類型，例如刪除已訂閱內容、修改已訂閱內容等。然後，僅針對這些事件類型發送通知給您。
 
 ![接收通知](assets/notifications.gif)
 
@@ -123,10 +123,10 @@ Assets 檢視中的垃圾桶資料夾列出了從根 Assets 資料夾刪除的�
 
 * 重新命名存放庫中可用的資產和資料夾。
 
-「資產」檢視是量身打造而成，可簡化工作流程、促進共同作業並加速資產交付。 透過採用內容速度，行銷人員可以釋放其數位資產的全部潛力，並釋放前所未有的創造力。
+Assets檢視經過量身打造，可簡化工作流程、促進共同作業並加速資產交付。 透過採用內容速度，行銷人員可以釋放其數位資產的全部潛力，並釋放前所未有的創造力。
 
 
-使用這些連結來快速開始使用資產檢視：
+使用這些連結來快速開始使用Assets檢視：
 
 * [我的工作區](/help/assets/my-workspace-assets-view.md)
-* [開始使用資產檢視](/help/assets/get-started-assets-view.md)
+* [開始使用Assets檢視](/help/assets/get-started-assets-view.md)

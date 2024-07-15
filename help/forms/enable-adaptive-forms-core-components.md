@@ -5,7 +5,8 @@ contentOwner: Khushwant Singh
 docset: CloudService
 role: Admin, Developer, User
 feature: Adaptive Forms, Core Components
-source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
+exl-id: 32a574e2-faa9-4724-a833-1e4c584582cf
+source-git-commit: 05548d56d791584781606b02839c5602b4469f7b
 workflow-type: tm+mt
 source-wordcount: '985'
 ht-degree: 85%
@@ -27,7 +28,7 @@ ht-degree: 85%
 
 * 如果您有較舊版的 Forms as a Cloud Service 方案，且其中核心元件[未啟用](#enable-components)時，你可以[將調適型表單核心元件的相依性新增](#enable-headless-adaptive-forms-for-an-aem-forms-as-a-cloud-service-environment)至您的 AEM as a Cloud Service 存放庫，並將該存放庫部署到您的 Cloud Service 環境以啟用 Headless 調適型表單。
 
-* 如果您現有的Cloud Service環境提供 [建立核心元件型最適化Forms](creating-adaptive-form-core-components.md)，最適化Forms核心元件和Headless最適化Forms已針對您的環境啟用，而您可以將核心元件型最適化Forms當作Headless表單提供給需要最適化Forms的Headless呈現的行動裝置、網路、原生應用程式和服務等頻道。
+* 如果您的現有Cloud Service環境提供[建立核心元件式最適化Forms](creating-adaptive-form-core-components.md)的選項，表示您的環境已啟用「最適化Forms核心元件」和Headless最適化Forms，而您可以將核心元件式最適化Forms當作Headless表單提供給需要最適化Forms的Headless呈現形式的行動裝置、網頁、原生應用程式和服務等管道。
 
 
 ## 啟用調適型表單核心元件和 Headless 調適型表單 {#enable-headless-forms}

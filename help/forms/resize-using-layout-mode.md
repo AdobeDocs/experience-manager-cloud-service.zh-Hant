@@ -27,28 +27,28 @@ ht-degree: 5%
 
 ## 存取配置模式 {#access-layout-mode}
 
-選取 **[!UICONTROL 版面]** 下拉式清單中的「最適化表單」製作介面頂端的「 」標籤，此標籤位於「 」旁邊 **[!UICONTROL 預覽]** 選項。 表單會以「版面」模式顯示。
+從出現在&#x200B;**[!UICONTROL 預覽]**&#x200B;選項旁最適化表單製作介面頂端的下拉式清單中選取&#x200B;**[!UICONTROL 配置]**。 表單會以「版面」模式顯示。
 
-1. 登入 [!DNL Adobe Experience Manager] 作者執行個體並導覽至 **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms與檔案]**.
-1. 建立新的或開啟現有的 [最適化表單](creating-adaptive-form.md).
-1. 選取 **[!UICONTROL 版面]** 下拉式清單(顯示於頁面上方的 **[!UICONTROL 預覽]** 選項。 表單會以「版面」模式顯示。
+1. 登入[!DNL Adobe Experience Manager]作者執行個體並導覽至&#x200B;**[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms和檔案]**。
+1. 建立新的或開啟現有的[最適化表單](creating-adaptive-form.md)。
+1. 從位於&#x200B;**[!UICONTROL 預覽]**&#x200B;選項旁上方的下拉式清單中選取&#x200B;**[!UICONTROL 配置]**。 表單會以「版面」模式顯示。
 
-   ![版面模式](assets/layout_mode_ic_new.png)
+   ![配置模式](assets/layout_mode_ic_new.png)
 
 ## 調整元件大小 {#resize-components}
 
 1. 在「版面」模式中，選取要調整大小的元件。 藍點會顯示在回應式格線的開始和結尾。
 1. 拖放藍點以定義元件在回應式格線中的位置。
 
-   ![使用版面模式調整大小](assets/layout_mode_resize_new_updated1.png)
+   ![使用配置模式調整大小](assets/layout_mode_resize_new_updated1.png)
 
    點選元件後顯示的工具列包含下列選項：
 
-   * **[!UICONTROL 父級]**：選取元件的父項。
-   * **[!UICONTROL 還原中斷點配置]**：還原所有調整大小的變更，並將預設版面套用至元件。
-   * **[!UICONTROL 浮動至新行]**：如果同一行中有多個元件，請將元件移至下一行。
+   * **[!UICONTROL 父系]**：選取元件的父系。
+   * **[!UICONTROL 回覆中斷點配置]**：復原所有調整大小的變更，並將預設配置套用至元件。
+   * **[!UICONTROL 浮動到新行]**：如果同一行中有多個元件，請將元件移至下一行。
 
-   您也可以使用 **[!UICONTROL 還原中斷點配置]** ( ![還原中斷點](assets/reverttopreviouslypublishedversion.png))選項來復原所有調整大小的變更。
+   您也可以在面板層級使用&#x200B;**[!UICONTROL 回覆中斷點配置]** （![回覆中斷點](assets/reverttopreviouslypublishedversion.png)）選項，以復原所有調整大小的變更。
 
    >[!NOTE]
    >
@@ -56,48 +56,48 @@ ht-degree: 5%
 
 ### 範例 {#example}
 
-**目標：** 您想要插入表格元件和影像元件，並在最適化表單中彼此平行放置。
+**目標：**&#x200B;您想要插入表格元件和影像元件，並在最適化表單中彼此平行放置。
 
-1. 插入表格和影像元件，使用 [!UICONTROL 編輯] 最適化表單中的模式。 影像元件會顯示在表格元件之後。
-1. 切換至 [!UICONTROL 版面] 模式並選取 [!UICONTROL 表格] 元件。 要調整元件大小的藍點會顯示在欄1和12。
+1. 在調適型表單中使用[!UICONTROL 編輯]模式插入表格和影像元件。 影像元件會顯示在表格元件之後。
+1. 切換至[!UICONTROL 配置]模式，並選取[!UICONTROL 表格]元件。 要調整元件大小的藍點會顯示在欄1和12。
 1. 將第12欄的藍色圓點拖曳至回應式格線的第6欄。
 
-   ![定義表格的端點](assets/layout_mode_end_point_table_new.png)
+   ![定義資料表的端點](assets/layout_mode_end_point_table_new.png)
 
-1. 同樣地，選取 [!UICONTROL 影像] 並將回應式格線第1欄的藍色圓點拖曳至第7欄。 表格和影像元件彼此平行顯示。
+1. 同樣地，選取[!UICONTROL 影像]元件，並將欄1的藍色圓點拖曳至回應式格線的欄7。 表格和影像元件彼此平行顯示。
 
-   ![在「版面」模式中同時顯示表格和影像](assets/table_image_parallel_new.png)
+   ![在版面配置模式中同時顯示表格和影像](assets/table_image_parallel_new.png)
 
-   您可以選取「影像」元件，然後選取 **[!UICONTROL 浮動至新行]** 工具列中的可用選項，將影像元件移至下一行。
+   您可以選取影像元件，並選取工具列中可用的&#x200B;**[!UICONTROL 浮動至新行]**&#x200B;選項，以將影像元件移至下一行。
 
 ## 調整面板大小 {#resize-panels-layout-mode}
 
 如果您想要調整整個面板而非個別元件的大小，請執行下列步驟：
 
-1. 在面板中選取您要調整大小的任何元件，然後選取 ![選取父系](assets/select_parent_icon.svg)，並選取下拉式清單中的第一個選項（如果面板為元件的直接父項）。
+1. 選取面板中您要調整大小的任何元件，選取![選取父項](assets/select_parent_icon.svg)，然後選取下拉式清單中的第一個選項（如果面板是元件的直接父項）。
 
    藍點會顯示在回應式格線的開始和結尾。
 
 1. 拖放藍點以定義面板在回應式格線中的位置。
-您可以重複步驟1和2，然後選取 ![選取父系](assets/float_to_new_line_icon.svg) 將調整大小的面板移至下一行。
+您可以重複步驟1和2，並選取![選取父項](assets/float_to_new_line_icon.svg)，將調整大小的面板移至下一行。
 
 ## 定義面板的多欄配置
 
 執行以下步驟來定義面板的欄數：
 
-1. 在 **[!UICONTROL 編輯]** 模式，選取面板，選取 ![設定](assets/configure-icon.svg)，並選取 **[!UICONTROL 回應式 — 頁面上的所有內容，無需導覽]** 選項來自 **[!UICONTROL 面板配置]** 下拉式清單。
+1. 在&#x200B;**[!UICONTROL 編輯]**&#x200B;模式中，選取面板，選取![設定](assets/configure-icon.svg)，然後從&#x200B;**[!UICONTROL 面板配置]**&#x200B;下拉式清單中選取&#x200B;**[!UICONTROL 回應式 — 頁面上所有不含導覽的]**&#x200B;選項。
 
-1. 選取 ![儲存](assets/save_icon.svg) 以儲存屬性。
+1. 選取![儲存](assets/save_icon.svg)以儲存屬性。
 
-1. 在 **[!UICONTROL 版面]** 模式，選取面板中的任何元件，然後選取 ![選取父系](assets/select_parent_icon.svg)，然後選取面板。
+1. 在&#x200B;**[!UICONTROL 配置]**&#x200B;模式中，選取面板中的任何元件，選取![選取父項](assets/select_parent_icon.svg)，然後選取面板。
 
-1. 選取 ![多欄](assets/multi-column.svg) 並從下拉式清單中選取欄數。 欄數可以介於1到12之間。 面板會分成多欄配置。
+1. 選取![多欄](assets/multi-column.svg)，並從下拉式清單中選取欄數。 欄數可以介於1到12之間。 面板會分成多欄配置。
 
-![佈局模式下的多欄](assets/multi-column-layout.png)
+![配置模式中的多欄](assets/multi-column-layout.png)
 
 ## 為舊的回應式版面配置啟用新的回應式格線 {#enableresponsivegrid}
 
-為您使用建立的表單啟用新的回應式格線 [!DNL Adobe Experience Manager] Forms 6.4或更低版本可調整元件大小。
+為您使用[!DNL Adobe Experience Manager] Forms 6.4或更低版本來調整元件大小的表單啟用新的回應式格線。
 
 >[!NOTE]
 >
@@ -105,8 +105,8 @@ ht-degree: 5%
 
 執行以下步驟以啟用新的回應式格線：
 
-1. 選取 **[!UICONTROL 版面]** 下拉式清單(顯示於頁面上方的 **[!UICONTROL 預覽]** 選項。 隨即顯示啟用配置模式的確認訊息。
-1. 選取 **[!UICONTROL 是]** 以啟用 **[!UICONTROL 版面]** 表單模式。
+1. 從位於&#x200B;**[!UICONTROL 預覽]**&#x200B;選項旁上方的下拉式清單中選取&#x200B;**[!UICONTROL 配置]**。 隨即顯示啟用配置模式的確認訊息。
+1. 選取&#x200B;**[!UICONTROL 是]**&#x200B;以啟用表單的&#x200B;**[!UICONTROL 配置]**&#x200B;模式。
 
 ### 使用新回應式佈局將舊片段嵌入最適化表單中 {#embed-an-old-fragment-in-an-adaptive-form-with-new-responsive-layout}
 
@@ -116,7 +116,7 @@ ht-degree: 5%
 
 如果您使用舊的回應式佈局在自適應表單中嵌入帶有新回應式佈局的片段，系統會提示您啟用表單的佈局模式並重新嵌入片段。
 
-若要啟用佈局模式，請選取 **[!UICONTROL 版面]** 下拉式清單(顯示於頁面上方的 **[!UICONTROL 預覽]** 選項並選取 **[!UICONTROL 是]** 以確認。 選取 **[!UICONTROL 編輯]** 模式以重新嵌入片段。
+若要啟用[配置]模式，請從位於&#x200B;**[!UICONTROL 預覽]**&#x200B;選項旁上方的下拉式清單中選取&#x200B;**[!UICONTROL 配置]**，並選取&#x200B;**[!UICONTROL 是]**&#x200B;進行確認。 選取&#x200B;**[!UICONTROL 編輯]**&#x200B;模式以重新嵌入片段。
 
 ## 停用具有舊回應式佈局的表單的佈局模式 {#disable-layout-mode-for-forms-with-old-responsive-layout}
 
@@ -124,13 +124,13 @@ ht-degree: 5%
 
 執行以下步驟以停用「配置」模式：
 
-1. 選取 **[!UICONTROL 工具]** > **[!UICONTROL 一般]** > **[!UICONTROL 範本]** 然後開啟表單中使用的範本，位置在 **[!UICONTROL 編輯]** 模式。
-1. 在左窗格中選取表單容器，然後選取 **[!UICONTROL 原則。]**
+1. 選取&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 一般]** > **[!UICONTROL 範本]**，並以&#x200B;**[!UICONTROL 編輯]**&#x200B;模式開啟表單中使用的範本。
+1. 在左窗格中選取表單容器，然後選取&#x200B;**[!UICONTROL 原則。]**
 
-   ![停用佈局模式](assets/policy_disable_layout_mode.png)
+   ![停用配置模式](assets/policy_disable_layout_mode.png)
 
-1. 選取 **[!UICONTROL 版面設定]** 標籤並選取 **[!UICONTROL 停用佈局模式]**.
-1. 選取 ![儲存變更](assets/save_icon.svg) 以儲存範本屬性。
+1. 選取&#x200B;**[!UICONTROL 配置設定]**&#x200B;索引標籤，並選取&#x200B;**[!UICONTROL 停用配置模式]**。
+1. 選取![儲存變更](assets/save_icon.svg)以儲存範本屬性。
 
 ## 另請參閱 {#see-also}
 

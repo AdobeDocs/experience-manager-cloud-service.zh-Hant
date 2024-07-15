@@ -1,6 +1,6 @@
 ---
 title: 內容轉移工具綜覽
-description: 瞭解如何使用內容轉移工具將內容從內部部署AEM例項轉移到AEMas a Cloud Service
+description: 瞭解如何使用「內容轉移工具」，將內容從內部部署AEM例項轉移至AEM as a Cloud Service
 exl-id: cfc0366a-2139-4d9d-b5bc-0b65bef4013c
 feature: Migration
 role: Admin
@@ -21,7 +21,7 @@ ht-degree: 38%
 
 「內容轉移工具」是Adobe開發的工具，可用來起始將現有內容從來源AEM例項（內部部署或AMS）移轉至目標AEM Cloud Service例項的作業。
 
-此工具也會自動轉移主體（使用者或群組）。  另請參閱 [使用者對應和主體移轉](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md) 以取得詳細資訊。
+此工具也會自動轉移主體（使用者或群組）。  如需詳細資訊，請參閱[使用者對應和主體移轉](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md)。
 
 「內容轉移工具」整合了內容轉移程式與Cloud Acceleration Manager。 這可讓使用者享有其提供的所有優點：
 
@@ -36,20 +36,20 @@ ht-degree: 38%
 
 1. **提取**：提取指的是從來源 AEM 例項提取內容，並存放至名為&#x200B;*移轉集*&#x200B;的暫存區域。*移轉集*&#x200B;是 Adobe 提供的雲端儲存空間，可供暫時儲存在來源 AEM 例項與雲端服務 AEM 例項間轉移的內容。
 
-   另請參閱 [內容轉移中的提取程式](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md) 以取得更多詳細資料。
+   如需詳細資訊，請參閱內容轉移中的[擷取程式](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md)。
 
    >[!NOTE]
-   >現在，使用者對應會在作者上的擷取階段中自動執行（但可選擇在作者上停用或在發佈上啟用）。 另請參閱 [使用者對應和主體移轉](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md) 以取得更多詳細資料。
+   >現在，使用者對應會在作者上的擷取階段中自動執行（但可選擇在作者上停用或在發佈上啟用）。 如需詳細資訊，請參閱[使用者對應和主體移轉](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md)。
 
 1. **擷取**：擷取指的是從&#x200B;*移轉集*&#x200B;擷取內容，並存放至目標雲端服務例項。
 
-   另請參閱 [內容轉移中的擷取程式](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md) 以取得更多詳細資料。
+   如需詳細資訊，請參閱內容轉移](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)中的[擷取程式。
 
 ## 移轉集的屬性 {#attributes-migration-set}
 
 移轉集有下列屬性：
 
-* 有了新版本，您可以在Cloud Acceleration Manager中建立的專案中最多建立20個移轉集。
+* 有了新版本，您可以在Cloud Acceleration Manager中建立的專案中建立最多二十個移轉集。
 * 每個移轉集的名稱必須是唯一的。
 
 「內容轉移工具」具備支援追加差異內容的功能，可以只轉移在上一次內容轉移活動後所進行的變更。
@@ -57,9 +57,9 @@ ht-degree: 38%
 >[!NOTE]
 >初始轉移內容後，建議您先頻繁地執行追加差異內容，以縮短最終差異化內容轉移的內容凍結時間，然後再於雲端服務上線。
 
-如果要在提取階段中&#x200B;***追加***&#x200B;現有的移轉集，則必須停用&#x200B;*覆蓋*&#x200B;選項。另請參閱 [追加提取](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process) 以取得更多詳細資料。
+如果要在提取階段中&#x200B;***追加***&#x200B;現有的移轉集，則必須停用&#x200B;*覆蓋*&#x200B;選項。如需詳細資訊，請參閱[追加提取](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process)。
 
-如果要在擷取階段中，將差異內容套用至目前內容的頂端，則必須停用&#x200B;*「擦去」*&#x200B;選項。另請參閱 [追加擷取](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) 以取得更多詳細資料。
+如果要在擷取階段中，將差異內容套用至目前內容的頂端，則必須停用&#x200B;*「擦去」*&#x200B;選項。如需詳細資訊，請參閱[追加擷取](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process)。
 
 ## 移轉集到期 {#migration-set-expiry}
 
@@ -82,4 +82,4 @@ ht-degree: 38%
 
 ## 下一步 {#whats-next}
 
-瞭解內容轉移工具及其概述後(說明此工具可用於將現有內容從來源AEM例項（內部部署或AMS）移至目標AEM Cloud Service例項)，您必須檢閱 [內容轉移工具的先決條件](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md).
+瞭解內容轉移工具及其概述後，瞭解此工具可用來將現有內容從來源AEM執行個體（內部部署或AMS）移至目標AEM Cloud Service執行個體時，您必須檢閱[內容轉移工具的先決條件](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md)。

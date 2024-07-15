@@ -140,15 +140,15 @@ ht-degree: 5%
    <td><p>對應至最適化表單中的Title屬性。</p> </td>
   </tr>
   <tr>
-   <td><p>displayformat<em> （所有欄位型別）</em></p> </td>
+   <td><p>displayFormat<em> （所有欄位型別）</em></p> </td>
    <td><p>對應至最適化表單的顯示模式。</p> </td>
   </tr>
   <tr>
-   <td><p>原始值<em> （所有欄位型別）</em></p> </td>
+   <td><p>rawValue<em> （所有欄位型別）</em></p> </td>
    <td><p>對應至最適化表單中的值屬性。</p> </td>
   </tr>
   <tr>
-   <td><p>個專案<em> （清單方塊、核取方塊）</em></p> </td>
+   <td><p>專案<em> （清單方塊、核取方塊）</em></p> </td>
    <td><p>對應至最適化表單中的選項屬性。 您可以使用「選項」運算式來覆寫它。</p> </td>
   </tr>
   <tr>

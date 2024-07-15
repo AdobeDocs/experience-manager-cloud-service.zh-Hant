@@ -44,7 +44,7 @@ Cloud Manager 支援靈活的多團隊設定，可以根據企業的需求進行
 
 每個企業都有不同的需求，包括不同的團隊設定、流程和開發工作流程。Adobe 將下述設定用於在 AEM as a Cloud Service 之上提供體驗的多個專案。
 
-例如，Adobe Photoshop 或 Adobe Illustrator 等 Adobe Creative Cloud 應用程式包括可供一般使用者使用的教學課程、範例和指南等內容資源。使用AEMas a Cloud Service的使用者端應用程式會以無頭方式使用此內容，方法是對AEM雲端發佈層級進行API呼叫，以將結構化內容擷取為JSON資料流，並使用 [AEMas a Cloud Service中的Content Delivery Network (CDN)](/help/implementing/dispatcher/cdn.md#content-delivery) 以最佳效能提供結構化和非結構化內容。
+例如，Adobe Photoshop 或 Adobe Illustrator 等 Adobe Creative Cloud 應用程式包括可供一般使用者使用的教學課程、範例和指南等內容資源。使用AEM as a Cloud Service的使用者端應用程式以無周邊方式使用此內容，方法是對AEM Cloud發佈層進行API呼叫，擷取結構化內容作為JSON資料流，並在AEM as a Cloud Service](/help/implementing/dispatcher/cdn.md#content-delivery)中使用[內容傳遞網路(CDN)，以最佳效能提供結構化和非結構化內容。
 
 為本專案貢獻內容的團隊應遵循以下流程。
 

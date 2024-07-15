@@ -23,7 +23,7 @@ Adobe 非常重視應用程式的監控、可用性和效能。AEM as a Cloud Se
 
 本文件介紹瞭如何管理對在 AEM as a Cloud Service環境中啟用的 New Relic One 應用程式效能監控 (APM) 功能的存取，以幫助支援效能並讓您充分利用 AEM as a Cloud Service。
 
-建立新的生產計畫時，會自動建立與您的AEMas a Cloud Service計畫關聯的New Relic One子帳戶。 [必須啟用此子帳戶](#activate-sub-account) 以開始擷取資料。
+建立新的生產計畫時，會自動建立與您的AEM as a Cloud Service計畫關聯的New Relic One子帳戶。 [必須啟動此子帳戶](#activate-sub-account)才能開始擷取資料。
 
 ## 功能 {#transaction-monitoring}
 
@@ -43,19 +43,19 @@ Adobe 非常重視應用程式的監控、可用性和效能。AEM as a Cloud Se
 
 >[!NOTE]
 >
->中的使用者 **企業所有者** 或 **部署管理員** 角色必須登入才能管理New Relic One子帳戶。
+>具有&#x200B;**企業所有者**&#x200B;或&#x200B;**部署管理員**&#x200B;角色的使用者必須登入才能管理New Relic One子帳戶。
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織。
 
-1. 在 **[我的計畫](/help/implementing/cloud-manager/navigation.md#my-programs)** 主控台，點選或按一下您要管理New Relic One使用者的計畫。
+1. 在&#x200B;**[我的程式](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;主控台上，點選或按一下您要管理New Relic One使用者的程式。
 
-1. 在底部 **環境** 卡片，在計畫總覽頁面，按一下省略符號按鈕並選擇 **啟動New Relic**.
+1. 在計畫總覽頁面的&#x200B;**環境**&#x200B;卡片底部，按一下省略符號按鈕並選取&#x200B;**啟用New Relic**。
 
    ![管理使用者](assets/newrelic-activate-sub-account.png)
 
    * 您還可以存取&#x200B;**管理使用者**&#x200B;透過頂部的省略符號按鈕選擇&#x200B;**環境**&#x200B;計畫的畫面。
 
-1. [執行管道](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#running-pipelines) ，以成功完成相同環境，進而完成子帳戶啟用。
+1. [針對相同環境執行管道](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#running-pipelines)以成功完成，以完成子帳戶啟用。
 
 停用子帳戶時，不會擷取任何資料。
 
@@ -77,7 +77,7 @@ Adobe 非常重視應用程式的監控、可用性和效能。AEM as a Cloud Se
 
    * 您還可以存取&#x200B;**管理使用者**&#x200B;透過頂部的省略符號按鈕選擇&#x200B;**環境**&#x200B;計畫的畫面。
 
-1. 在 **管理New Relic使用者** 對話方塊中，輸入要新增的使用者的名字和姓氏，然後按一下 **新增** 按鈕。 對您要新增的所有使用者重複此步驟。
+1. 在&#x200B;**管理New Relic使用者**&#x200B;對話方塊中，輸入您要新增的使用者的名字和姓氏，然後按一下&#x200B;**新增**&#x200B;按鈕。 對您要新增的所有使用者重複此步驟。
 
    ![新增使用者](assets/newrelic-add-users.png)
 
@@ -145,7 +145,7 @@ Adobe 非常重視應用程式的監控、可用性和效能。AEM as a Cloud Se
 
 ## 疑難排解New Relic One使用者存取 {#troubleshooting}
 
-如果您是依照一節所述新增為New Relic One使用者 [管理New Relic One使用者](#manage-users) 且無法依照下列步驟找到原始帳戶確認電子郵件。
+如果您被新增為New Relic One使用者，如[管理New Relic One使用者](#manage-users)一節中所述，並且找不到原始帳戶確認電子郵件，請按照以下步驟操作。
 
 1. 瀏覽 New Relic 至 [`login.newrelic.com/login`](https://login.newrelic.com/login) 登入頁面的概覽頁面。
 
@@ -179,9 +179,9 @@ Adobe 非常重視應用程式的監控、可用性和效能。AEM as a Cloud Se
 >
 >如果在您的New Relic One子帳戶中超過90天未偵測到任何活動，則APM代理程式將會停止。
 >
->請遵循以下說明中的相同步驟： [啟用您的New Relic One子帳戶](#activate-sub-account) 區段來重新啟用您的New Relic One子帳戶。
+>請依照本檔案中[啟用您的New Relic One子帳戶](#activate-sub-account)一節中的相同步驟，重新啟用您的New Relic One子帳戶。
 
-如需更多有關AEMas a Cloud Service計畫New Relic One產品的說明或其他指引，請透過以下方式開啟支援票證： [AEM支援入口網站。](https://helpx.adobe.com/tw/enterprise/using/support-for-experience-cloud.html)
+如需有關您AEM as a Cloud Service計畫之New Relic One產品的更多說明或其他指引，請透過[AEM支援入口網站](https://helpx.adobe.com/tw/enterprise/using/support-for-experience-cloud.html)開啟支援票證。
 
 ## 與 New Relic One 有關的常見問答 {#faqs}
 
@@ -227,4 +227,4 @@ New Relic One 使使用者能夠搜索他們有權存取的所有帳戶，並在
 
 ### 我 New Relic One 帳戶的 APM 代理已停止。發生了什麼事？ {#deactivated}
 
-如果 90 天或更久沒有偵測到任何活動，[APM 代理會停止](#limitations)。請遵循以下說明中的相同步驟： [啟用您的New Relic One子帳戶](#activate-sub-account) 區段來重新啟用您的New Relic One子帳戶。
+如果 90 天或更久沒有偵測到任何活動，[APM 代理會停止](#limitations)。請依照本檔案中[啟用您的New Relic One子帳戶](#activate-sub-account)一節中的相同步驟，重新啟用您的New Relic One子帳戶。

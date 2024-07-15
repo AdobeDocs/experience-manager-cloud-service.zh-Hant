@@ -27,7 +27,7 @@ ht-degree: 8%
 * 根據在其他欄位中指定的值變更針對特定欄位顯示的選項。
 * 根據在其他欄位中指定的值，在特定欄位中設定預設中繼資料值。
 
-## 在中設定階層式中繼資料 [!DNL Experience Manager] {#configure-cascading-metadata-in-aem}
+## 在[!DNL Experience Manager]中設定階層式中繼資料 {#configure-cascading-metadata-in-aem}
 
 假設您想根據選取的資產型別顯示階層式中繼資料。 部分範例
 
@@ -36,26 +36,26 @@ ht-degree: 8%
 
 無論選擇的資產型別為何，都會將版權資訊顯示為必填欄位。
 
-1. 選取 [!DNL Experience Manager] 標誌，並前往 **[!UICONTROL 工具]** > **[!UICONTROL 資產]** > **[!UICONTROL 中繼資料結構]**.
-1. 在 **[!UICONTROL 結構描述Forms]** 頁面，選取結構表單，然後選取 **[!UICONTROL 編輯]** 以編輯結構。
+1. 選取[!DNL Experience Manager]標誌，然後前往&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL Assets]** > **[!UICONTROL 中繼資料結構描述]**。
+1. 在「**[!UICONTROL 結構描述Forms]**」頁面中，選取結構描述表單，然後從工具列選取「**[!UICONTROL 編輯]**」以編輯結構描述。
 
    ![select_form](assets/select_form.png)
 
-1. （選用）在中繼資料結構編輯器中，建立欄位以進行條件化。 在中指定名稱和屬性路徑 **[!UICONTROL 設定]** 標籤。
+1. （選用）在中繼資料結構編輯器中，建立欄位以進行條件化。 在&#x200B;**[!UICONTROL 設定]**&#x200B;索引標籤中指定名稱和屬性路徑。
 
-   若要建立標籤，請選取 `+` 以新增索引標籤，然後新增中繼資料欄位。
+   若要建立標籤，請選取`+`以新增標籤，然後新增中繼資料欄位。
 
    ![add_tab](assets/add_tab.png)
 
-1. 新增下拉欄位以取得資產型別。 在中指定名稱和屬性路徑 **[!UICONTROL 設定]** 標籤。 新增選擇性說明。
+1. 新增下拉欄位以取得資產型別。 在&#x200B;**[!UICONTROL 設定]**&#x200B;索引標籤中指定名稱和屬性路徑。 新增選擇性說明。
 
    ![asset_type_field](assets/asset_type_field.png)
 
 1. 機碼值組是提供給表單使用者的選項。 您可以手動或從JSON檔案提供索引鍵/值組。
 
-   * 若要手動指定值，請選取 **[!UICONTROL 手動新增]**，並選取 **[!UICONTROL 新增選擇]** 並指定選項文字和值。 例如，指定「視訊」、「PDF」、「Word」和「影像」資產型別。
+   * 若要手動指定值，請選取&#x200B;**[!UICONTROL 手動新增]**，然後選取&#x200B;**[!UICONTROL 新增選項]**&#x200B;並指定選項文字和值。 例如，指定「視訊」、「PDF」、「Word」和「影像」資產型別。
 
-   * 若要動態擷取JSON檔案中的值，請選取 **[!UICONTROL 透過JSON路徑新增]** 和提供JSON檔案的路徑。 [!DNL Experience Manager] 向使用者呈現表單時，會即時擷取機碼值組。
+   * 若要從JSON檔案動態擷取值，請選取&#x200B;**[!UICONTROL 透過JSON路徑新增]**&#x200B;並提供JSON檔案的路徑。 當表單呈現給使用者時，[!DNL Experience Manager]會即時擷取機碼值組。
 
    這兩個選項是互斥的。 您無法從JSON檔案匯入選項並手動編輯。
 
@@ -73,14 +73,14 @@ ht-degree: 8%
 
    同樣地，為其他資產型別新增相依欄位。 例如，為檔案資產(如PDF和Word檔案)新增欄位頁數與作者。
 
-   ![video_dependent_fields](assets/video_dependent_fields.png)
+   ![視訊相依欄位](assets/video_dependent_fields.png)
 
-1. 若要在資產型別欄位與其他欄位之間建立相依性，請選擇相依性欄位，然後開啟 **[!UICONTROL 規則]** 標籤。
+1. 若要在資產型別欄位與其他欄位之間建立相依性，請選擇相依欄位並開啟&#x200B;**[!UICONTROL 規則]**&#x200B;標籤。
 
    ![select_dependentfield](assets/select_dependentfield.png)
 
-1. 在 **[!UICONTROL 需求]**，選擇 **[!UICONTROL 必要（根據新規則）]** 選項。
-1. 選取 **[!UICONTROL 新增規則]** 並選擇 **[!UICONTROL 資產型別]** 欄位以建立相依性。 也選擇要在其上建立相依性的欄位值。 在這種情況下，請選擇「 **[!UICONTROL 視訊」]**。選取 **[!UICONTROL 完成]** 以儲存變更。
+1. 在&#x200B;**[!UICONTROL 需求]**&#x200B;底下，根據新規則&#x200B;]**選項選擇**[!UICONTROL &#x200B;必要。
+1. 選取&#x200B;**[!UICONTROL 新增規則]**&#x200B;並選擇&#x200B;**[!UICONTROL 資產型別]**&#x200B;欄位以建立相依性。 也選擇要在其上建立相依性的欄位值。 在這種情況下，請選擇「 **[!UICONTROL 視訊」]**。選取&#x200B;**[!UICONTROL 完成]**&#x200B;以儲存變更。
 
    ![define_rule](assets/define_rule.png)
 
@@ -90,7 +90,7 @@ ht-degree: 8%
 
 1. 在「可 **[!UICONTROL 見性]**」下，選擇「可 **[!UICONTROL 見」，根據新規則選項]** 。
 
-1. 選取 **[!UICONTROL 新增規則]** 並選擇 **[!UICONTROL 資產型別]** 欄位以建立相依性。 也選擇要在其上建立相關性的欄位值。在這種情況下，請選擇「 **[!UICONTROL 視訊」]**。選取 **[!UICONTROL 完成]** 以儲存變更。
+1. 選取&#x200B;**[!UICONTROL 新增規則]**&#x200B;並選擇&#x200B;**[!UICONTROL 資產型別]**&#x200B;欄位以建立相依性。 也選擇要在其上建立相關性的欄位值。在這種情況下，請選擇「 **[!UICONTROL 視訊」]**。選取&#x200B;**[!UICONTROL 完成]**&#x200B;以儲存變更。
 
    ![define_visibilityrule](assets/define_visibilityrule.png)
 
@@ -103,16 +103,16 @@ ht-degree: 8%
    >您可以套用 **[!UICONTROL 「需求]** 」條件 **[!UICONTROL 和「可見性]** 」條件，它們彼此獨立。
 
 1. 同樣地，在「資產型別」欄位中的「視訊」值與其他欄位（例如「轉碼器」和「持續時間」）之間建立相依性。
-1. 重複這些步驟，在「 」中建立檔案資產(PDF和Word)之間的相依性 [!UICONTROL 資產型別] 欄位和欄位，例如 [!UICONTROL 頁數] 和 [!UICONTROL 作者].
+1. 重複這些步驟，在[!UICONTROL Asset Type]欄位和[!UICONTROL Page Count]和[!UICONTROL Author]等欄位中，建立檔案資產(PDF和Word)之間的相依性。
 1. 按一下「**[!UICONTROL 儲存]**」。將中繼資料結構套用至資料夾。
 
 1. 導覽至您套用中繼資料結構的資料夾，並開啟資產的屬性頁面。 視您在「資產型別」欄位中的選擇而定，會顯示相關的階層式中繼資料欄位。
 
    ![視訊資產的階層式中繼資料](assets/video_asset.png)
-   *圖：視訊資產的階層式中繼資料*
+   *圖：視訊資產*&#x200B;的階層式中繼資料
 
-   ![檔案資產的階層式中繼資料](assets/doc_type_fields.png)
-   *圖：檔案資產的階層式中繼資料*
+   ![檔案資產](assets/doc_type_fields.png)的階層式中繼資料
+   *圖：檔案資產*&#x200B;的階層式中繼資料
 
 **另請參閱**
 

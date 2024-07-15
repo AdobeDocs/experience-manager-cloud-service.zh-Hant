@@ -34,13 +34,13 @@ Adobe Experience Manager (AEM) CIF核心元件可用於多個AEM網站結構，�
 
 ## 設定 {#configuration}
 
-1. 根據中所述的模式設定多個商店和商店檢視 [Adobe Commerce網站、商店和檢視](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html)
+1. 根據[Adobe Commerce網站、商店和檢視](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html)中所述的模式，設定多個商店和商店檢視
 
 2. 請確定AEM與Adobe Commerce之間的連線正常運作。
 
 3. 依照下列步驟建立CIFCloud Service設定的子設定：
 
-   * 在AEM中，前往「工具」 > 「一般」 > [設定瀏覽器](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)
+   * 在AEM中，移至[工具] > [一般] > [設定瀏覽器] ](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)[
    * 選取您建立的基本組態
    * 使用上述第2點所述的步驟建立設定
 
@@ -53,14 +53,14 @@ Adobe Experience Manager (AEM) CIF核心元件可用於多個AEM網站結構，�
 4. 將子組態指派至AEM站台
 
    * 前往AEM Sites主控台
-   * 導覽至您網站結構的區域或語言根目錄。 例如， `/content/venia/us _or_ /content/venia/us/en` 針對Venia範例頁面
+   * 導覽至您網站結構的區域或語言根目錄。 例如，Venia範例頁面為`/content/venia/us _or_ /content/venia/us/en`
    * 選取頁面並開啟頁面屬性
    * 選取「進階」標籤
-   * 在 `Configuration` 區段，選取您在步驟3建立的組態
+   * 在`Configuration`區段中，選取您在步驟3建立的組態
 
 ## 其他資源
 
 * [Adobe Commerce網站、商店和檢視](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html)
-* [AEM CIF核心元件 — 多商店/網站設定](https://github.com/adobe/aem-core-cif-components#multi-store--site-configuration)
-* [使用多站點管理員](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/translation/multi-site-manager-feature-video-use.html)
+* [AEM CIF核心元件 — 多存放區/網站組態](https://github.com/adobe/aem-core-cif-components#multi-store--site-configuration)
+* [使用多網站管理員](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/translation/multi-site-manager-feature-video-use.html)
 * [重複使用內容：多網站管理員和 Live Copy](/help/sites-cloud/administering/msm/overview.md)

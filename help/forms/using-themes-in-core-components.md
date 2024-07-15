@@ -28,8 +28,8 @@ ht-degree: 4%
 
 Forms (如Cloud Service所提供)下列核心元件型最適化Forms的主題：
 
-* [畫布主題](https://github.com/adobe/aem-forms-theme-canvas)
-* [WKND主題](https://github.com/adobe/aem-forms-theme-wknd)
+* [畫布布主題](https://github.com/adobe/aem-forms-theme-canvas)
+* [WKND佈景主題](https://github.com/adobe/aem-forms-theme-wknd)
 * [畫架佈景主題](https://github.com/adobe/aem-forms-theme-easel)
 
 ## 瞭解主題結構
@@ -40,9 +40,9 @@ Forms (如Cloud Service所提供)下列核心元件型最適化Forms的主題：
 
 * `src/site`：此資料夾包含套用至整個AEM網站頁面的CSS檔案。 這些檔案包含程式碼和樣式，會影響AEM網站頁面的整體功能和版面。 此處所做的任何修改會反映在您的網站的所有頁面中。 [何時使用？]
 
-* `src/components`：此資料夾中的CSS檔案是針對個別AEM核心元件所設計。 元件的每個專用資料夾都包含 `.scss` 在最適化表單中設定該特定元件樣式的檔案。 例如，/src/components/accordion/_accordion.scss檔案包含Adaptive Forms摺疊式功能表元件的樣式資訊。
+* `src/components`：此資料夾中的CSS檔案是針對個別AEM核心元件所設計。 元件的每個專用資料夾都包含一個`.scss`檔案，該檔案會在最適化表單中設定該特定元件的樣式。 例如，/src/components/accordion/_accordion.scss檔案包含Adaptive Forms摺疊式功能表元件的樣式資訊。
 
-  ![最適化表單式主題結構](/help/forms/assets/theme_structure.png)
+  ![以最適化表單為基礎的主題結構](/help/forms/assets/theme_structure.png)
 
 * `src/resources`：此資料夾包含靜態檔案，例如圖示、標誌和字型。 這些資源用於增強主題的視覺元素和整體設計。
 
@@ -50,11 +50,11 @@ Forms (如Cloud Service所提供)下列核心元件型最適化Forms的主題：
 
 Forms如Cloud Service所提供，以下列出核心元件型最適化Forms的最適化表單樣式主題。
 
-* [畫布主題](https://github.com/adobe/aem-forms-theme-canvas)
-* [WKND主題](https://github.com/adobe/aem-forms-theme-wknd)
+* [畫布布主題](https://github.com/adobe/aem-forms-theme-canvas)
+* [WKND佈景主題](https://github.com/adobe/aem-forms-theme-wknd)
 * [畫架佈景主題](https://github.com/adobe/aem-forms-theme-easel)
 
-您可以 [自訂任何這些主題以建立新主題](#customize-a-theme-core-components).
+您可以[自訂任何這些主題以建立新的主題](#customize-a-theme-core-components)。
 
 ![佈景主題自訂的工作流程](/help/forms/assets/workflow-of-customization-of-theme.png)
 
@@ -64,15 +64,15 @@ Forms如Cloud Service所提供，以下列出核心元件型最適化Forms的最
 
 ### 先決條件 {#prerequisites-to-customize}
 
-* 熟悉 [在Cloud Manager中設定管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#setup-pipeline) 並且擁有有關如何設定管道的基本知識，可幫助您有效地管理和部署您的主題自訂。
-* 瞭解如何 [設定具有貢獻者角色的使用者](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem.html). 瞭解如何使用投稿人角色設定使用者，可讓您授與佈景主題自訂的必要許可權。
-* 安裝最新版本的 [Apache Maven。](https://maven.apache.org/download.cgi) Apache Maven是常用於Java™專案的組建自動化工具。 安裝最新版本可確保您擁有佈景主題自訂的必要相依性。
+* 熟悉[在Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#setup-pipeline)中設定管道，並瞭解如何設定管道的基本知識，可協助您有效率地管理和部署您的主題自訂。
+* 瞭解如何[設定具有貢獻者角色](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem.html)的使用者。 瞭解如何使用投稿人角色設定使用者，可讓您授與佈景主題自訂的必要許可權。
+* 安裝最新版的[Apache Maven。](https://maven.apache.org/download.cgi) Apache Maven是常用於Java™專案的組建自動化工具。 安裝最新版本可確保您擁有佈景主題自訂的必要相依性。
 * 安裝純文字編輯器。 例如，Microsoft® Visual Studio Code。 使用純文字編輯器(例如Microsoft® Visual Studio Code)可提供方便使用的環境，用於編輯和修改佈景主題檔案。
 
 ### 設定您的環境
 
-* [啟用最適化Forms核心元件](/help/forms/enable-adaptive-forms-core-components.md)  適合您的本機開發和Cloud Service環境。
-* 設定 [前端部署管道](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/enable-frontend-pipeline-devops/create-frontend-pipeline.html) 適合您的Cloud Service環境。 或者，您可以稍後設定管道，讓您在設定部署管道之前，靈活地排定測試的優先順序並調整主題。
+* [為您的本機開發和Cloud Service環境啟用最適化Forms核心元件](/help/forms/enable-adaptive-forms-core-components.md)。
+* 為您的Cloud Service環境設定[前端部署管道](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/enable-frontend-pipeline-devops/create-frontend-pipeline.html)。 或者，您可以稍後設定管道，讓您在設定部署管道之前，靈活地排定測試的優先順序並調整主題。
 
 <!-- 
 To deploy your themes to a Forms as a Cloud Service environment, first test theme on a local development environment to address any issues. Once the theme is tested, configure the front-end deployment pipeline, which is responsible for deploying the themes.
@@ -87,13 +87,13 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 
 自訂主題是多步驟的過程。 若要自訂主題，請依照列出的順序執行步驟：
 
-1. [原地複製主題](#download-a-theme-core-components)
+1. [複製佈景主題](#download-a-theme-core-components)
 1. [設定佈景主題的名稱](#set-name-of-theme)
 1. [自訂主題](#customize-the-theme)
 1. [測試主題](#test-the-theme)
 1. [部署主題](#deploy-the-theme)
 
-檔案中提供的範例是根據 **畫布** 佈景主題，但請務必注意，您可以複製任何佈景主題，並使用相同的指示加以自訂。 這些指示適用於任何主題，可讓您根據特定需求修改主題。
+檔案中提供的範例是以&#x200B;**畫布**&#x200B;主題為基礎，但請務必注意，您可以使用相同的指示複製任何主題並加以自訂。 這些指示適用於任何主題，可讓您根據特定需求修改主題。
 
 讓我們從使用主題為您的核心元件型最適化Forms建立品牌體驗的程式開始？
 
@@ -101,21 +101,21 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 
 若要複製以核心元件為基礎的最適化Forms主題，請選擇下列其中一種主題：
 
-* [畫布主題](https://github.com/adobe/aem-forms-theme-canvas)
-* [WKND主題](https://github.com/adobe/aem-forms-theme-wknd)
+* [畫布布主題](https://github.com/adobe/aem-forms-theme-canvas)
+* [WKND佈景主題](https://github.com/adobe/aem-forms-theme-wknd)
 * [畫架佈景主題](https://github.com/adobe/aem-forms-theme-easel)
 
 若要複製主題，請執行下列指示：
 
 1. 在本機開發環境中開啟命令提示字元或終端機視窗。
 
-1. 執行 `git clone` 複製佈景主題的命令。
+1. 執行`git clone`命令以複製主題。
 
    ```
       git clone [Path of Git Repository of the theme]
    ```
 
-   取代 [主題的Git存放庫路徑] 和主題的對應Git存放庫的實際URL
+   將主題]的Git存放庫的[路徑取代為主題對應的Git存放庫的實際URL
 
    例如，若要複製畫布主題，請執行下列命令：
 
@@ -123,12 +123,12 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
       git clone https://github.com/adobe/aem-forms-theme-canvas
    ```
 
-   成功執行命令後，您的電腦上便可在下列位置取得主題的本機復本：  `aem-forms-theme-canvas` 資料夾。
+   成功執行命令後，您的電腦在`aem-forms-theme-canvas`資料夾中有可用的主題本機復本。
 
 
 #### 2.設定佈景主題的名稱 {#set-name-of-theme}
 
-1. 在IDE中開啟主題資料夾。 例如，若要開啟 `aem-forms-theme-canvas` Visual Studio程式碼編輯器中的資料夾。
+1. 在IDE中開啟主題資料夾。 例如，在Visual Studio程式碼編輯器中開啟`aem-forms-theme-canvas`資料夾。
 
 1. 導覽至 `aem-forms-theme-canvas` 檔案夾。
 
@@ -144,31 +144,31 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 
 1. 開啟 `package.json` 檔案進行編輯。
 
-1. 設定 `name` 和 `version` 屬性。
+1. 設定`name`和`version`屬性的值。
 
    ![畫布布主題名稱變更影像](/help/forms/assets/changename_canvastheme.png)
 
    >[!NOTE]
    >
-   > * name屬性用於唯一識別主題，而指定的名稱會顯示在 **樣式** 的標籤 **表單建立精靈**.
-   > * 您可以選擇根據您的選擇為您的主題選取名稱，例如， `mytheme` 或 `customtheme`. 不過，在此案例中，我們已將名稱指定為 `aem-forms-wknd-theme`.
+   > * 名稱屬性用來唯一識別主題，而指定的名稱會顯示在&#x200B;**表單建立精靈**&#x200B;的&#x200B;**樣式**&#x200B;索引標籤中。
+   > * 您可以選擇根據您的選擇為您的主題選取名稱，例如`mytheme`或`customtheme`。 不過，在此案例中，我們已指定名稱為`aem-forms-wknd-theme`。
 
 1. 開啟 `package-lock.json` 檔案進行編輯。
-1. 設定 `name` 和 `version` 屬性。 確定 `name` 和 `version` 中的屬性 `Package-lock`.json檔案與 `Package.json` 檔案。
+1. 設定`name`和`version`屬性的值。 請確定`Package-lock`.json檔案中的`name`與`version`屬性值符合`Package.json`檔案中的值。
 
    ![畫布布主題名稱變更影像](/help/forms/assets/changename_canvastheme-package-lock.png)
 
-1. （可選）開啟 `ReadMe` 用於編輯和更新主題名稱的檔案。
+1. （選擇性）開啟`ReadMe`檔案進行編輯並更新佈景主題的名稱。
 
    ![畫布布主題名稱變更影像](/help/forms/assets/changename_canvastheme-readme-file.png)
 
 1. 儲存並關閉檔案。
 
-**設定主題名稱時的注意事項**
+**設定主題名稱時的考量事項**
 
-* 強制移除 `@aemforms` 從主題名稱 `Package.json` 檔案和 `Package-lock.json` 檔案。 如果無法移除 `@aemforms` 從您的自訂主題名稱，這會導致在主題部署期間前端管道失敗。
-* 建議更新主題 `version` 在 `Package.json` 檔案和 `Package-lock.json` 檔案來準確反映主題隨時間的變更和增強功能。
-* 如需有關使用、安裝指示和其他相關詳細資訊的重要資訊，建議更新 `ReadMe` 檔案。
+* 必須從`Package.json`檔案和`Package-lock.json`檔案中的主題名稱移除`@aemforms`。 如果您無法從自訂主題名稱中移除`@aemforms`，這會導致在主題部署期間前端管道失敗。
+* 建議更新`Package.json`檔案和`Package-lock.json`檔案中的主題`version`，以準確反映主題隨時間的變更和增強功能。
+* 如需有關使用方式、安裝指示和其他相關詳細資訊的重要資訊，建議更新`ReadMe`檔案中的主題名稱。
 
 #### 3.自訂主題 {#customize-the-theme}
 
@@ -180,22 +180,22 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 
 ##### 設定主題層級樣式{#theme-customization-global-level}
 
-此 `variable.scss` 檔案包含佈景主題的全域變數。 透過更新這些變數，您可以在主題層級進行樣式相關的變更。 若要套用佈景主題層級樣式，請依照下列步驟進行：
+`variable.scss`檔案包含佈景主題的全域變數。 透過更新這些變數，您可以在主題層級進行樣式相關的變更。 若要套用佈景主題層級樣式，請依照下列步驟進行：
 
 1. 開啟 `<your-theme-sources>/src/site/_variables.scss` 檔案進行編輯。
-1. 變更任何屬性的值。 例如，預設的錯誤顏色為 `red`. 若要變更錯誤顏色 `red` 至 `blue`，變更的顏色十六進位代碼 `$errorvariable`. 例如，`$error: #196ee5`。
+1. 變更任何屬性的值。 例如，預設的錯誤色彩為`red`。 若要將錯誤顏色從`red`變更為`blue`，請變更`$errorvariable`的顏色十六進位代碼。 例如，`$error: #196ee5`。
 1. 儲存並關閉檔案。
 
    ![編輯主題](/help/forms/assets/edit_theme.png)
 
-同樣地，您可以使用 `variable.scss` 檔案來設定字型系列和型別、佈景主題和字型顏色、字型大小、佈景主題間距、錯誤圖示、佈景主題框線樣式，以及其他可影響多個最適化表單元件的變數。
+同樣地，您可以使用`variable.scss`檔案來設定字型系列與型別、佈景主題與字型顏色、字型大小、佈景主題間距、錯誤圖示、佈景主題框線樣式，以及其他影響多個最適化表單元件的變數。
 
 ##### 設定元件層級樣式 {#component-based-customization}
 
 您也可以變更特定最適化表單核心元件的字型、顏色、大小和其他CSS屬性。 例如，按鈕、核取方塊、容器、頁尾等。 您可以編輯特定元件的CSS檔案來設定按鈕或核取方塊的樣式，使其與貴組織的樣式一致。 若要自訂元件的樣式：
 
-1. 開啟檔案 `<your-theme-sources>/src/components/<component>/<component.scss>` 以進行編輯。 例如，若要變更按鈕元件的字型顏色，請開啟 `<your-theme-sources>/src/components/button/button.scss`，檔案。
-1. 根據您的需求變更任何的值。 例如，若要將滑鼠懸停時按鈕元件的顏色變更為 `green`，變更 `color: $white` 中的屬性 `cmp-adaptiveform-button__widget:hover` 類別至十六進位程式碼 `#12B453` 或任何其他陰影 `green`. 最終程式碼如下所示：
+1. 開啟檔案`<your-theme-sources>/src/components/<component>/<component.scss>`進行編輯。 例如，若要變更按鈕元件的字型顏色，請開啟`<your-theme-sources>/src/components/button/button.scss`，檔案。
+1. 根據您的需求變更任何的值。 例如，若要將滑鼠懸停時按鈕元件的顏色變更為`green`，請將`cmp-adaptiveform-button__widget:hover`類別中`color: $white`屬性的值變更為十六進位代碼`#12B453`或其他任何`green`陰影。 最終程式碼如下所示：
 
    ```
    .cmp-adaptiveform-button__widget:hover {
@@ -221,8 +221,8 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 
 ##### 4.1.設定本機環境以進行測試 {#rename-env-file-theme-folder}
 
-1. 在IDE中開啟主題資料夾。 例如，開啟 `aem-forms-theme-canvas` Visual Studio程式碼編輯器中的資料夾。
-1. 重新命名 `env_template` 檔案到 `.env` 檔案並新增下列引數：
+1. 在IDE中開啟主題資料夾。 例如，在Visual Studio程式碼編輯器中開啟`aem-forms-theme-canvas`資料夾。
+1. 將`env_template`檔案重新命名為主題資料夾中的`.env`檔案，並新增下列引數：
 
    ```
    * **AEM url**
@@ -235,7 +235,7 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
    AEM_PROXY_PORT=7000
    ```
 
-   例如，表單的URL為 `http://localhost:4502/editor.html/content/forms/af/contactusform.html`. 因此，的值：
+   例如，表單的URL是`http://localhost:4502/editor.html/content/forms/af/contactusform.html`。 因此，的值：
 
    * AEM_URL = `http://localhost:4502/`
    * AEM_ADAPTIVE_FORM = `contactusform`
@@ -246,31 +246,31 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 
 ##### 4.2使用本機環境測試主題 {#start-a-local-proxy-server}
 
-1. 導覽至主題資料夾的根目錄。 在此案例中，主題資料夾名稱為 `aem-forms-theme-canvas`.
+1. 導覽至主題資料夾的根目錄。 在此案例中，主題資料夾名稱為`aem-forms-theme-canvas`。
 1. 開啟命令提示或終端機。
-1. 執行 `npm install` 以安裝相依性。
-1. 執行 `npm run live` 以在本機瀏覽器中預覽具有更新主題的表單。
+1. 執行`npm install`以安裝相依性。
+1. 執行`npm run live`以在本機瀏覽器中預覽具有更新主題的表單。
 
    >[!NOTE]
    >
-   > 如果在執行 `npm run live` 指令，在之前執行以下指令 `npm run live` 命令：
+   > 如果在執行`npm run live`命令期間發生錯誤，請在`npm run live`命令之前執行以下命令：
    >
    > * `npm install parcel --save-dev`
    > * `npm i @parcel/transformer-sass`
 
-這是熱門部署。 因此，無論您何時進行變更並儲存 `_variables.scss` 和 `button.scss` 檔案時，伺服器會自動挑選變更並預覽最新輸出。 直線 `[Browsersync] File event [change]` 表示伺服器已辨識出最新的變更，而且正在部署本機環境的變更。
+這是熱門部署。 因此，每當您進行任何變更並儲存`_variables.scss`和`button.scss`檔案時，伺服器就會自動挑選變更並預覽最新輸出。 行`[Browsersync] File event [change]`表示伺服器已辨識到最新的變更，而且正在部署本機環境中的變更。
 
 ![Proxy browsersync](/help/forms/assets/browser_sync.png)
 
-在主題層級和元件層級遵循用於自訂主題的最適化表單（核心元件）的樣式設定範例後，最適化表單的錯誤訊息將變更為 `blue` 顏色，而按鈕元件的標籤顏色會變更為 `green` 游標停留時。
+在主題層級和主題自訂的元件層級遵循設定最適化表單（核心元件）樣式的範例後，最適化表單的錯誤訊息將變更為`blue`顏色，而按鈕元件的標籤顏色在暫留時變更為`green`。
 
-**預覽主題層級樣式**
+**正在預覽佈景主題層級樣式**
 
 ![範例：錯誤顏色設定為藍色](/help/forms/assets/theme-level-changes.png)
 
-**預覽元件層級樣式**
+**正在預覽元件層級樣式**
 
-![範例：將游標停留顏色設定為綠色](/help/forms/assets/button-customization.png)
+![範例：暫留色彩設定為綠色](/help/forms/assets/button-customization.png)
 
 自訂主題有助於根據組織需求，設計核心元件型最適化Forms的自訂外觀。
 
@@ -278,8 +278,8 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 
 您也可以測試AEM Formsas a Cloud Service執行個體上託管的最適化表單主題。 若要使用雲端例項上託管的Adaptive Forms來設定和設定本機環境以測試主題，請執行以下步驟：
 
-1. 在IDE中開啟主題資料夾。 例如，開啟 `aem-forms-theme-canvas` Visual Studio程式碼編輯器中的資料夾。
-1. 重新命名 `env_template` 檔案到 `.env` 檔案並新增下列引數：
+1. 在IDE中開啟主題資料夾。 例如，在Visual Studio程式碼編輯器中開啟`aem-forms-theme-canvas`資料夾。
+1. 將`env_template`檔案重新命名為`.env`檔案，並新增下列引數：
 
    ```
    * **AEM url**
@@ -292,7 +292,7 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
    AEM_PROXY_PORT=7000
    ```
 
-   例如，雲端環境中的表單URL為 `https://author-XXXX.adobeaemcloud.com/editor.html/content/forms/af/contactusform.html`. 因此，的值：
+   例如，在雲端環境的表單URL是`https://author-XXXX.adobeaemcloud.com/editor.html/content/forms/af/contactusform.html`。 因此，的值：
 
    * AEM_URL = `https://author-XXXX-cmstg.adobeaemcloud.com/`
    * AEM_ADAPTIVE_FORM = `contactusform`
@@ -303,12 +303,12 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
    >
    > 若要建立本機使用者：
    >
-   > * 前往 **[!UICONTROL AEM首頁]** > **[!UICONTROL 工具]** > **[!UICONTROL 安全性]** > **[!UICONTROL 使用者]** .
-   > * 確定使用者是 `forms-users` 群組。
+   > * 移至&#x200B;**[!UICONTROL AEM首頁]** > **[!UICONTROL 工具]** > **[!UICONTROL 安全性]** > **[!UICONTROL 使用者]** 。
+   > * 確定使用者是`forms-users`群組的成員。
 
-1. 導覽至主題資料夾的根目錄。 在此案例中，主題資料夾名稱為 `aem-forms-theme-canvas`.
-1. 執行 `npm run live` 系統會將您重新導向至本機瀏覽器。
-1. 按一下 `SIGN IN LOCALLY (ADMIN TASKS ONLY)` 並使用本機使用者的憑證登入。
+1. 導覽至主題資料夾的根目錄。 在此案例中，主題資料夾名稱為`aem-forms-theme-canvas`。
+1. 執行`npm run live`，系統會將您重新導向至本機瀏覽器。
+1. 按一下`SIGN IN LOCALLY (ADMIN TASKS ONLY)`並使用本機使用者的認證登入。
 
 您可以預覽含有最新變更的最適化表單。 一旦您滿意在主題資料夾中完成的修改，請使用前端管道將主題部署到AEM Cloud Service環境。
 
@@ -316,39 +316,39 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 
 若要使用前端管道將主題部署到Cloud Service環境：
 
-* 5.1 [建立主題的存放庫](#create-a-new-theme-repo)
-* 5.2 [將變更推送至存放庫](#committing-the-changes)
+* 5.1 [建立佈景主題的存放庫](#create-a-new-theme-repo)
+* 5.2 [將變更推送到存放庫](#committing-the-changes)
 * 5.3 [執行前端管道](#run-a-frontend-pipeline)
 
 ##### 5.1建立主題的存放庫{#create-a-new-theme-repo}
 
-您需要存放庫才能部署主題。 登入您的 [AEM Cloud Manager存放庫](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git) 並為您的主題新增存放庫。
+您需要存放庫才能部署主題。 登入您的[AEM Cloud Manager存放庫](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git)，並為您的主題新增存放庫。
 
-1. 按一下「 」，建立主題的新存放庫 **[!UICONTROL 存放庫]** > **[!UICONTROL 新增存放庫]**.
+1. 按一下&#x200B;**[!UICONTROL 存放庫]** > **[!UICONTROL 新增存放庫]**，為主題建立新的存放庫。
 
    ![建立新的主題存放庫](/help/forms/assets/createrepo_canvastheme.png)
 
 
-1. 指定 **存放庫名稱** 在 **新增存放庫** 對話方塊。 例如，提供的名稱是 `custom-canvas-theme-repo`.
+1. 在&#x200B;**新增存放庫**&#x200B;對話方塊中指定&#x200B;**存放庫名稱**。 例如，提供的名稱是`custom-canvas-theme-repo`。
 1. 按一下「**[!UICONTROL 儲存]**」。
 
-   ![新增畫布主題存放庫](/help/forms/assets/addcanvasthemerepo.png)
+   ![新增畫布布主題存放庫](/help/forms/assets/addcanvasthemerepo.png)
 
-1. 按一下 **[!UICONTROL 複製存放庫URL]** 複製存放庫的URL。
+1. 按一下&#x200B;**[!UICONTROL 複製存放庫URL]**&#x200B;以複製存放庫URL。
 
-   ![畫布主題URL](/help/forms/assets/copyurl_canvastheme.png)
+   ![畫布布主題URL](/help/forms/assets/copyurl_canvastheme.png)
 
    >[!NOTE]
    > 
    > * 您可以將單一存放庫用於多個主題。
    > * 要部署不同的主題，您必須建立單獨的前端管道。
-   >* 例如，您可以使用相同的存放庫，如 `custom-canvas-theme-repo`，用於畫布布主題、WKND主題和畫盤主題。 但是，要部署主題，您需要建立單獨的前端管道。 使用相應的前端管道部署特定主題的未來自訂。
+   >* 例如，您可以使用相同的存放庫作為畫布主題、WKND主題和畫盤主題的`custom-canvas-theme-repo`。 但是，要部署主題，您需要建立單獨的前端管道。 使用相應的前端管道部署特定主題的未來自訂。
 
 ##### 5.2.將變更推送至存放庫 {#committing-the-changes}
 
 現在，將變更推送到AEM FormsCloud Service的主題存放庫。
 
-1. 導覽至主題資料夾的根目錄。  在此案例中，主題資料夾名稱為 `aem-forms-theme-canvas`.
+1. 導覽至主題資料夾的根目錄。  在此案例中，主題資料夾名稱為`aem-forms-theme-canvas`。
 1. 開啟命令提示或終端機。
 1. 以列出的順序執行以下命令：
 
@@ -374,29 +374,30 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 
 ##### 5.3執行前端管道 {#run-a-frontend-pipeline}
 
-使用部署主題 [前端管道。](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/enable-frontend-pipeline-devops/create-frontend-pipeline.html)。若要部署佈景主題，請執行下列步驟：
+使用[前端管道部署主題。](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/enable-frontend-pipeline-devops/create-frontend-pipeline.html)。若要部署佈景主題，請執行下列步驟：
 
 1. 登入您的AEM Cloud Manager存放庫。
-1. 按一下 **[!UICONTROL 新增]** 按鈕來自 **[!UICONTROL 管道]** 區段。
-1. 選取 **[!UICONTROL 新增非生產管道]** 或 **[!UICONTROL 新增生產管道]** 根據Cloud Service環境而定。 例如，此處 **[!UICONTROL 新增生產管道]** 已選取選項。
-1. 在 **[!UICONTROL 新增生產管道]** 對話方塊作為 **[!UICONTROL 設定]** 步驟，指定管道的名稱。 例如，管道的名稱為 `customcanvastheme`.
+1. 按一下&#x200B;**[!UICONTROL 管道]**&#x200B;區段中的&#x200B;**[!UICONTROL 新增]**&#x200B;按鈕。
+1. 根據Cloud Service環境選取&#x200B;**[!UICONTROL 新增非生產管道]**&#x200B;或&#x200B;**[!UICONTROL 新增生產管道]**。 例如，此處已選取&#x200B;**[!UICONTROL 新增生產管道]**&#x200B;選項。
+1. 在&#x200B;**[!UICONTROL 新增生產管道]**&#x200B;對話方塊中，作為&#x200B;**[!UICONTROL 設定]**&#x200B;步驟的一部分，請指定管道的名稱。 例如，管道的名稱為`customcanvastheme`。
 1. 按一下&#x200B;**[!UICONTROL 「繼續」]**。
-1. 選取 **[!UICONTROL 目標部署]** > **[!UICONTROL 前端計畫碼]** 選項，在 **[!UICONTROL Source程式碼]** 步驟。
-1. 選取 **[!UICONTROL 存放庫]** 和 **[!UICONTROL Git分支]** 具有您最新變更的值。 例如，此處選取的存放庫名稱為 `custom-canvas-theme-repo` Git分支為 `main`.
-1. 選取 **[!UICONTROL 程式碼位置]** 作為 `/`，如果您的變更位於根資料夾中。
+1. 選取&#x200B;**[!UICONTROL 目標部署]** > **[!UICONTROL 前端計畫碼]**選項，在
+**[!UICONTROL Source程式碼]**&#x200B;步驟。
+1. 選取包含您最新變更的&#x200B;**[!UICONTROL 存放庫]**&#x200B;和&#x200B;**[!UICONTROL Git分支]**&#x200B;值。 例如，此處選取的存放庫名稱為`custom-canvas-theme-repo`，而Git分支為`main`。
+1. 如果您的變更出現在根資料夾中，請選取&#x200B;**[!UICONTROL 程式碼位置]**&#x200B;作為`/`。
 1. 按一下「**[!UICONTROL 儲存]**」。
    ![建立前端管道](/help/forms/assets/canvas-theme-frontendpipeline.gif)
 
    管道設定完成後，會更新行動號召卡。
 
 1. 以滑鼠右鍵按一下已建立的管線。
-1. 按一下 **[!UICONTROL 執行]** .
+1. 按一下「**[!UICONTROL 執行]**」。
 
    ![執行管道](/help/forms/assets/canvas-theme-run-pipeline.png)
 
-建置完成後，主題即可在製作例項上使用。 它會顯示在 **[!UICONTROL 樣式]** 索引標籤建立最適化表單時，使用最適化表單建立精靈中的這個索引標籤。
+建置完成後，主題即可在製作例項上使用。 建立最適化表單時，它出現在最適化表單建立精靈的&#x200B;**[!UICONTROL 樣式]**&#x200B;標籤下。
 
-![樣式標籤下可用的自訂主題](/help/forms/assets/custom-theme-style-tab.png)
+樣式標籤](/help/forms/assets/custom-theme-style-tab.png)下有![個可用的自訂主題
 
 自訂主題有助於建立核心元件型Adaptive Forms的品牌體驗。
 
@@ -406,21 +407,21 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 
 1. 登入您的AEM Forms作者執行個體。
 
-1. 選取 **Adobe Experience Manager** > **Forms** > **Forms與檔案**.
+1. 選取&#x200B;**Adobe Experience Manager** > **Forms** > **Forms與檔案**。
 
-1. 按一下 **建立** > **最適化Forms**. 建立最適化表單的精靈隨即開啟。
+1. 按一下&#x200B;**建立** > **最適化Forms**。 建立最適化表單的精靈隨即開啟。
 
-1. 選取中的核心元件範本 **Source** 標籤。
-1. 選取中的主題 **樣式** 標籤。
+1. 在&#x200B;**Source**&#x200B;索引標籤中選取核心元件範本。
+1. 在&#x200B;**樣式**&#x200B;索引標籤中選取主題。
 1. 按一下&#x200B;**建立**。
 
 最適化表單主題用於最適化表單範本的一部分，以便在建立最適化表單時定義樣式。
 
 ## 最佳做法 {#best-practices}
 
-* **避免使用其他主題的資產**
+* **從另一個主題中避免資產**
 
-  編輯主題時，您可以瀏覽並從其他主題新增資產（例如影像）。 例如，您正在編輯頁面的背景。 例如，當您選取 **[!UICONTROL 頁面]** ![編輯按鈕](assets/edit-button.png)> **[!UICONTROL 背景]** > **[!UICONTROL 新增]** > **[!UICONTROL 影像]**，您會看到一個對話方塊，可讓您瀏覽並新增其他主題中的影像。
+  編輯主題時，您可以瀏覽並從其他主題新增資產（例如影像）。 例如，您正在編輯頁面的背景。 例如，當您選取&#x200B;**[!UICONTROL 頁面]** ![編輯按鈕](assets/edit-button.png)> **[!UICONTROL 背景]** > **[!UICONTROL 新增]** > **[!UICONTROL 影像]**&#x200B;時，您會看到一個對話方塊，可讓您瀏覽並新增其他主題中的影像。
 
   如果從其他主題新增資產，且移動或刪除了其他主題，您可能會遇到目前主題的問題。 建議您避免瀏覽和從其他主題新增資產。
 
@@ -435,9 +436,9 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 
 ## 常見問題 {#faq}
 
-**問：** 在全域和元件層級的主題資料夾中進行自訂時，哪個自訂專案優先？
+**問：**&#x200B;在全域和元件層級的主題資料夾中進行自訂時，哪一個自訂優先？
 
-**Ans：** 在全域和元件層級進行自訂時，優先採用元件層級的自訂。
+**Ans：**&#x200B;當在全域層級和元件層級進行自訂時，元件層級的自訂優先執行。
 
 <!--
 

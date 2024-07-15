@@ -1,6 +1,6 @@
 ---
 title: 產生變數的發行說明
-description: 產生變數的發行說明，可從AEMas a Cloud Service和Edge Delivery ServicesSidekick存取
+description: 產生變數的發行說明，可從AEM as a Cloud Service和Edge Delivery ServicesSidekick存取
 exl-id: caf85bae-3cce-4083-ab6e-e2637ff5afce
 feature: Release Information
 role: Admin
@@ -13,7 +13,7 @@ ht-degree: 8%
 
 # 產生變數的發行說明 {#release-notes-generate-variations}
 
-本頁會記錄「產生變數」的發行說明，可從AEMas a Cloud Service和Edge Delivery ServicesSidekick存取。
+本頁會記錄「產生變數」的發行說明，可從AEM as a Cloud Service和Edge Delivery ServicesSidekick存取。
 
 >[!NOTE]
 >
@@ -42,7 +42,7 @@ ht-degree: 8%
 
 ## 已知問題 {#known-issues}
 
-* 有關從舊版移動時的自訂提示問題，請參閱 [v2.0.0中的自訂提示](/help/generative-ai/generate-variations.md#custom-prompts-v200)
+* 關於從舊版移動時自訂提示的問題，請參閱[v2.0.0](/help/generative-ai/generate-variations.md#custom-prompts-v200)中的自訂提示
 
 ## 舊版 {#previous-releases}
 

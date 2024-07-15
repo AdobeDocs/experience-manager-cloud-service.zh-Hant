@@ -26,7 +26,7 @@ ht-degree: 0%
 
 ## 概觀 {#overview}
 
-***AEM Screens*** 運用Adobe Analytics，您可以透過跨管道分析（可協助將位置中顯示的內容與其他資料來源建立關聯）這項市場獨特功能。
+***AEM Screens***&#x200B;運用Adobe Analytics，您可以藉此達成市場上獨一無二的目標：跨管道分析，協助將位置中顯示的內容與其他資料來源建立關聯。
 
 AEM Screens提供與Adobe Analytics的現成整合，並為您提供播放證明。
 
@@ -39,7 +39,7 @@ AEM Screens提供與Adobe Analytics的現成整合，並為您提供播放證明
 * 允許建立回饋迴路，以追蹤一段時間內的播放事件
 * 允許系統根據內容作者定義的成功標準修改內容和版面
 
-因此，Adobe Analytics與AEM Screens的整合會強制進行下列作業 *目標*：
+Adobe Analytics與AEM Screens的整合因此會強制下列&#x200B;*目標*：
 
 * 實現數位招牌實作的投資報酬率
 * 整合Analytics，作為日後啟用收集和分析使用資訊的基礎
@@ -63,4 +63,4 @@ AEM Screens客戶想要瞭解內容在何時顯示，以及顯示時間（彙總
 Analytics事件會離線儲存在indexedDB中，並在稍後加入區塊並傳送至雲端。
 
 >[!NOTE]
->若要進一步瞭解事件的順序和標準資料模型，請參閱 [為AEM Screens設定Adobe Analytics](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/administering/analytics-integration/configuring-adobe-analytics-aem-screens.html) 以取得詳細資訊。
+>若要進一步瞭解事件的順序和標準資料模型，請參閱[為AEM Screens設定Adobe Analytics](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/administering/analytics-integration/configuring-adobe-analytics-aem-screens.html)以取得詳細資料。

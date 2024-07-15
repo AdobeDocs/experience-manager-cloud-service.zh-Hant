@@ -8,7 +8,7 @@ role: Admin, Architect, Developer
 source-git-commit: ceaa3b075953e9bdbcc0ae8c47106150be9a52d7
 workflow-type: tm+mt
 source-wordcount: '4482'
-ht-degree: 82%
+ht-degree: 88%
 
 ---
 
@@ -524,14 +524,14 @@ Experience Manager API 表面經過不斷修正，以識別不鼓勵使用並因
 
 ### 請勿在Sling模型中搭配@Optional使用@Inject註釋 {#sonarqube-slingmodels-inject-optional}
 
-* **索引鍵**： InjectAnnotationWithOptionalInjectionCheck
+* **Key**： InjectAnnotationWithOptionalInjectionCheck
 * **型別**：軟體品質
 * **嚴重度**：輕微
-* **從**：2023.11版
+* **自**： 2023.11版
 
-Apache Sling專案不鼓勵使用 `@Inject` Sling模型上下文中的註解，因為它在與 `DefaultInjectionStrategy.OPTIONAL` （在欄位或類別層級）。 而是更具體的注射(例如 `@ValueMapValue` 或 `@OsgiInjector` 註解)。
+Apache Sling專案不鼓勵在Sling模型的內容中使用`@Inject`註解，因為當與`DefaultInjectionStrategy.OPTIONAL`結合時（在欄位或類別層級），可能會導致效能不佳。 應該使用更具體的插入（例如`@ValueMapValue`或`@OsgiInjector`註解）。
 
-檢查 [Apache Sling檔案](https://sling.apache.org/documentation/bundles/models.html#discouraged-annotations-1) 以取得建議註解的詳細資訊，以及最初提出此建議的原因。
+請檢視[Apache Sling檔案](https://sling.apache.org/documentation/bundles/models.html#discouraged-annotations-1)，以取得關於建議之註解的詳細資訊，以及最初提出此建議的原因。
 
 
 ### 重複使用HTTPClient的執行個體 {#sonarqube-reuse-httpclient}
@@ -539,13 +539,13 @@ Apache Sling專案不鼓勵使用 `@Inject` Sling模型上下文中的註解，�
 * **索引鍵**： AEMSRE-870
 * **型別**：軟體品質
 * **嚴重度**：輕微
-* **從**：2023.11版
+* **自**： 2023.11版
 
 AEM應用程式經常使用HTTP通訊協定聯絡其他應用程式，而Apache HttpClient則是實現這一目標的常用程式庫。 但是建立這樣的HttpClient物件會產生一些額外負荷，因此這些物件應儘可能重複使用。
 
-此規則會檢查這種HttpClient物件在方法內是否不是私人，而是在類別層級上是否為全域，以便可以重複使用。 在這種情況下，httpClient欄位應在類別的建構函式中設定，或 `activate()` 方法（如果此類別是OSGi元件/服務）。
+此規則會檢查這種HttpClient物件在方法內是否不是私人，而是在類別層級上是否為全域，以便可以重複使用。 在這種情況下，httpClient欄位應在類別的建構函式或`activate()`方法（如果此類別是OSGi元件/服務）中設定。
 
-檢查 [Optimization指南](https://hc.apache.org/httpclient-legacy/performance.html) HttpClient的使用說明，以瞭解使用HttpClient的一些最佳作法。
+請檢視HttpClient的[最佳化指南](https://hc.apache.org/httpclient-legacy/performance.html)，以瞭解有關使用HttpClient的一些最佳實務。
 
 #### 不符合規範的程式碼 {#non-compliant-code-14}
 
@@ -989,7 +989,8 @@ Experience Manager as a Cloud Service 禁止自訂搜尋索引定義 (即 `oak:Q
 * **嚴重度**：輕微
 * **始自**：2021.2.0 版本
 
-Experience Manager as a Cloud Service 禁止自訂搜尋索引定義 (即 `oak:QueryIndexDefinition` 類型的節點) 包含名為 `reindex` 的屬性。在移轉到Experience Manageras a Cloud Service之前，必須更新使用此屬性的索引。 如需詳細資訊，請參閱[內容搜尋和索引](/help/operations/indexing.md#how-to-use)文件。
+Experience Manager as a Cloud Service 禁止自訂搜尋索引定義 (即 `oak:QueryIndexDefinition` 類型的節點) 包含名為 `reindex` 的屬性。在移轉到Experience Manager as a之前，必須更新使用此屬性的索引
+Cloud Service。 如需詳細資訊，請參閱[內容搜尋和索引](/help/operations/indexing.md#how-to-use)文件。
 
 ### 自訂DAM資產lucene節點不得指定「queryPaths」 {#oakpal-damAssetLucene-queryPaths}
 
@@ -1041,17 +1042,17 @@ Experience Manager as a Cloud Service 禁止自訂搜尋索引定義 (即 `oak:Q
 * **嚴重度**：輕微
 * **始自**：2023.1.0 版本
 
-對於自訂索引，兩者皆可 `includedPaths` 和 `queryPaths` 應設定為相同的值。 若已指定其中一個，另一個必須符合它。 但是，下列的索引有一個特殊情況 `damAssetLucene`，包括其自訂版本。 對於這些專案，您應該只提供 `includedPaths`.
+對於自訂索引，`includedPaths`和`queryPaths`都應該設定相同的值。 若已指定其中一個，另一個必須符合它。 但是，`damAssetLucene`的索引（包括其自訂版本）有特殊情況。 對於這些專案，您應該只提供`includedPaths`。
 
 ### 在一般節點型別上指定nodeScopeIndex的索引節點也應該指定includedPaths和queryPaths {#oakpal-full-text-on-generic-node-type}
 
-* **索引鍵**： IndexFulltextOnGenericType
+* **Key**： IndexFulltextOnGenericType
 * **類型**：程式碼異味
 * **嚴重度**：輕微
 * **始自**：2023.1.0 版本
 
-設定時 `nodeScopeIndex` 「一般」節點型別（例如）上的屬性 `nt:unstructured` 或 `nt:base`，您也必須指定 `includedPaths` 和 `queryPaths` 屬性。
-`nt:base` 可視為「一般」，因為所有節點型別都會繼承自它。 所以設定 `nodeScopeIndex` 於 `nt:base` 會讓它索引存放庫中的所有節點。 同樣地， `nt:unstructured` 由於存放庫中有許多此型別的節點，因此也視為「一般」。
+在`nt:unstructured`或`nt:base`之類的「一般」節點型別上設定`nodeScopeIndex`屬性時，您也必須指定`includedPaths`和`queryPaths`屬性。
+`nt:base`可視為「一般」，因為所有節點型別都繼承自它。 因此，在`nt:base`上設定`nodeScopeIndex`將使其索引存放庫中的所有節點。 同樣地，`nt:unstructured`也視為「一般」，因為存放庫中有許多節點屬於此型別。
 
 #### 不符合規範的程式碼 {#non-compliant-code-full-text-on-generic-node-type}
 
@@ -1127,12 +1128,12 @@ Experience Manager as a Cloud Service 禁止自訂搜尋索引定義 (即 `oak:Q
 
 ### 完整自訂索引定義的名稱應符合官方方針 {#oakpal-fully-custom-index-name}
 
-* **索引鍵**： IndexValidFullyCustomName
+* **Key**： IndexValidFullyCustomName
 * **類型**：程式碼異味
 * **嚴重度**：輕微
 * **始自**：2023.1.0 版本
 
-完整自訂索引名稱的預期模式為： `[prefix].[indexName]-custom-[version]`. 如需詳細資訊，請參閱檔案 [內容搜尋與索引](/help/operations/indexing.md).
+完整自訂索引名稱的預期模式是： `[prefix].[indexName]-custom-[version]`。 如需詳細資訊，請參閱檔案[內容搜尋與索引](/help/operations/indexing.md)。
 
 ### 具有相同索引定義中不同分析值的相同屬性 {#oakpal-same-property-different-analyzed-values}
 
@@ -1188,60 +1189,60 @@ Experience Manager as a Cloud Service 禁止自訂搜尋索引定義 (即 `oak:Q
 
 ### 標籤屬性 {#tags-property}
 
-* **索引鍵**： IndexHasValidTagsProperty
+* **Key**： IndexHasValidTagsProperty
 * **類型**：程式碼異味
 * **嚴重度**：輕微
 * **始自**：2023.1.0 版本
 
 對於特定索引，請確定您保留標籤屬性及其目前值。 雖然可以將新值新增到標籤屬性，但刪除任何現有值（或完全刪除屬性）可能會導致意外結果。
 
-### 索引定義節點不得部署在UI內容套件中 {#oakpal-ui-content-package}
+### 索引定義節點不得部署在 UI 內容套件中 {#oakpal-ui-content-package}
 
-* **索引鍵**： IndexNotUnderUIContent
-* **型別**：改進
+* **金鑰**：IndexNotUnderUIContent
+* **類型**：改善
 * **嚴重度**：輕微
 * **始自**：2024.6.0 版本
 
-AEM Cloud Service禁止自訂搜尋索引定義（型別的節點） `oak:QueryIndexDefinition`)，不會部署在UI內容套件中。
+AEM Cloud Service 禁止將自訂搜尋索引定義 (`oak:QueryIndexDefinition` 類型的節點) 部署在 UI 內容套件中。
 
 >[!WARNING]
 >
->強烈建議您儘快解決此問題，因為這會從開始導致管道失敗 [Cloud Manager 2024年8月發行。](/help/implementing/cloud-manager/release-notes/current.md)
+>我們請您盡快解決此問題，因為從 [Cloud Manager 2024 年 8 月版本開始，這麼做會導致管道失敗](/help/implementing/cloud-manager/release-notes/current.md)。
 
-### 型別damAssetLucene的自訂全文檢索索引定義必須正確加上前置詞「damAssetLucene」 {#oakpal-dam-asset-lucene}
+### damAssetLucene 類型的自訂全文索引定義必須正確新增「damAssetLucene」前置詞 {#oakpal-dam-asset-lucene}
 
-* **索引鍵**： CustomFulltextIndexesOfTheDamAssetCheck
-* **型別**：改進
+* **金鑰**：CustomFulltextIndexesOfTheDmAssetCheck
+* **類型**：改善
 * **嚴重度**：輕微
 * **始自**：2024.6.0 版本
 
-AEM Cloud Service禁止型別的自訂全文檢索索引定義 `damAssetLucene` ，以免前面加上 `damAssetLucene`.
+AEM Cloud Service 禁止 `damAssetLucene` 類型的自訂全文索引定義使用 `damAssetLucene` 以外的任何內容作為前置詞。
 
 >[!WARNING]
 >
->強烈建議您儘快解決此問題，因為這會從開始導致管道失敗 [Cloud Manager 2024年8月發行。](/help/implementing/cloud-manager/release-notes/current.md)
+>我們請您盡快解決此問題，因為從 [Cloud Manager 2024 年 8 月版本開始，這麼做會導致管道失敗](/help/implementing/cloud-manager/release-notes/current.md)。
 
-### 索引定義節點不得包含相同名稱的屬性 {#oakpal-index-property-name}
+### 索引定義節點不得包含有同名的屬性 {#oakpal-index-property-name}
 
-* **索引鍵**： DuplicateNameProperty
-* **型別**：改進
+* **金鑰**：DuplicateNameProperty
+* **類型**：改善
 * **嚴重度**：輕微
 * **始自**：2024.6.0 版本
 
-AEM Cloud Service禁止自訂搜尋索引定義（即型別的節點） `oak:QueryIndexDefinition`)以包含相同名稱的屬性
+AEM as a Cloud Service 禁止自訂搜尋索引定義 (即 `oak:QueryIndexDefinition` 類型的節點) 包含有同名的屬性。
 
 >[!WARNING]
 >
->強烈建議您儘快解決此問題，因為這會從開始導致管道失敗 [Cloud Manager 2024年8月發行。](/help/implementing/cloud-manager/release-notes/current.md)
+>我們請您盡快解決此問題，因為從 [Cloud Manager 2024 年 8 月版本開始，這麼做會導致管道失敗](/help/implementing/cloud-manager/release-notes/current.md)。
 
-### 禁止自訂某些OOTB索引定義 {#oakpal-customizing-ootb-index}
+### 禁止自訂某些 OOTB 索引定義 {#oakpal-customizing-ootb-index}
 
-* **索引鍵**： RestrictIndexCustomization
-* **型別**：改進
+* **金鑰**：RestrictIndexCustomization
+* **類型**：改善
 * **嚴重度**：輕微
 * **始自**：2024.6.0 版本
 
-AEM Cloud Service禁止未經授權修改下列OOTB索引：
+AEM Cloud Service 禁止對以下 OOTB 索引進行未經授權的修改：
 
 * `nodetypeLucene`
 * `slingResourceResolver`
@@ -1252,17 +1253,17 @@ AEM Cloud Service禁止未經授權修改下列OOTB索引：
 
 >[!WARNING]
 >
->強烈建議您儘快解決此問題，因為這會從開始導致管道失敗 [Cloud Manager 2024年8月發行。](/help/implementing/cloud-manager/release-notes/current.md)
+>我們請您盡快解決此問題，因為從 [Cloud Manager 2024 年 8 月版本開始，這麼做會導致管道失敗](/help/implementing/cloud-manager/release-notes/current.md)。
 
-### 分析器中代碼器的設定應以「tokenizer」名稱建立 {#oakpal-tokenizer}
+### 分析工具內的 Tokenizer 設定應使用名稱 “tokenizer” 來建立 {#oakpal-tokenizer}
 
-* **索引鍵**： AnalyzerTokenizerConfigCheck
-* **型別**：改進
+* **金鑰**：AnalyzerTokenizerConfigCheck
+* **類型**：改善
 * **嚴重度**：輕微
 * **始自**：2024.6.0 版本
 
-AEM Cloud Service禁止在分析器中建立名稱不正確的代碼器。 代號器應一律定義為 `tokenizer`.
+AEM Cloud Service禁止在分析器中建立名稱不正確的代碼器。 tokenizer 應始終定義為 `tokenizer`。
 
 >[!WARNING]
 >
->強烈建議您儘快解決此問題，因為這會從開始導致管道失敗 [Cloud Manager 2024年8月發行。](/help/implementing/cloud-manager/release-notes/current.md)
+>我們請您盡快解決此問題，因為從 [Cloud Manager 2024 年 8 月版本開始，這麼做會導致管道失敗](/help/implementing/cloud-manager/release-notes/current.md)。

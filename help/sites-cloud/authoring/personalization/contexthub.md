@@ -21,13 +21,13 @@ ContextHub工具列會顯示ContextHub存放區中的資料，並可讓您變更
 * UI模式是出現在工具列左側的圖示。 選取圖示時，工具列會顯示其中的UI模組。
 * UI模組會顯示一或多個ContextHub存放區的資料。 有些UI模組也可讓您操控存放區資料。
 
-ContextHub會安裝數個UI模式和UI模組。 您的管理員可能會 [已設定的ContextHub](/help/implementing/developing/personalization/configuring-contexthub.md) 以顯示不同的值。
+ContextHub會安裝數個UI模式和UI模組。 您的管理員可能已[設定ContextHub](/help/implementing/developing/personalization/configuring-contexthub.md)以顯示不同的設定檔。
 
 ## 顯示ContextHub工具列 {#revealing-the-contexthub-toolbar}
 
 ContextHub工具列可在「預覽」模式中使用。 工具列僅在作者執行個體上可用，且僅當您的管理員啟用了它時才可用。
 
-![contexthub工具列](/help/sites-cloud/authoring/assets/contexthub-toolbar.png)
+![ContextHub工具列](/help/sites-cloud/authoring/assets/contexthub-toolbar.png)
 
 1. 開啟頁面進行編輯時，在工具列上選取「預覽」。
 
@@ -51,7 +51,7 @@ UI模組可以在工具列中顯示一或多個ContextHub存放區的資料。 U
 
 有些UI模組在點選或點選時會顯示快顯覆蓋圖。 通常，快顯視窗會包含其他資訊，而不是顯示在工具列上的資訊。
 
-![contexthub設定檔資訊](/help/sites-cloud/authoring/assets/contexthub-profile.png)
+![ContextHub設定檔資訊](/help/sites-cloud/authoring/assets/contexthub-profile.png)
 
 ### 快顯Forms {#popup-forms}
 

@@ -24,15 +24,15 @@ AEM快速網站建立工具可讓非開發人員使用網站範本，從頭開�
 
 建立後，快速建立網站工具還可讓您快速為 AEM 網站自訂主題並建立風格 (JavaScript、CSS 和靜態資源)。這使得前端開發人員即使不懂 AEM 也能與內容建立者分開且並行工作。AEM 管理員只需下載網站主題並將其提供給前端開發人員，前端開發人員使用他們偏好的工具自訂主題，然後將變更提交到 AEM 程式碼存放庫，然後進行部署。
 
-本檔案著重於使用快速網站建立工具建立網站。 如果您想概略瞭解網站建立和自訂工作流程，請參閱 [AEM快速網站建立歷程](/help/journey-sites/quick-site/overview.md)
+本檔案著重於使用快速網站建立工具建立網站。 如果您想概略瞭解網站建立和自訂工作流程，請參閱[AEM快速網站建立歷程](/help/journey-sites/quick-site/overview.md)
 
 ## 規劃網站結構 {#structure}
 
-請花點時間提前考慮您網站的目的和規劃內容。 這將推動您設計網站結構的方式。 良好的網站結構可支援網站訪客輕鬆導覽和發現內容，並支援各種AEM功能，例如 [多站台管理與翻譯](/help/sites-cloud/administering/msm-and-translation.md).
+請花點時間提前考慮您網站的目的和規劃內容。 這將推動您設計網站結構的方式。 良好的網站結構可支援網站訪客的輕鬆導覽和內容探索，並支援各種AEM功能，例如[多網站管理和翻譯](/help/sites-cloud/administering/msm-and-translation.md)。
 
 >[!TIP]
 >
->[WKND參考網站](https://wknd.site) 提供功能齊全的戶外體驗品牌網站的最佳實務實作。 探索該網站，瞭解建置良好的AEM網站是如何建構的。
+>[WKND參考網站](https://wknd.site)提供功能齊全的戶外體驗品牌網站的最佳實務實作。 探索該網站，瞭解建置良好的AEM網站是如何建構的。
 
 ## 網站範本 {#site-templates}
 
@@ -42,7 +42,7 @@ AEM快速網站建立工具可讓非開發人員使用網站範本，從頭開�
 
 >[!TIP]
 >
->如需網站範本的詳細資訊，請參閱 [網站範本](site-templates.md).
+>如需網站範本的詳細資訊，請參閱[網站範本](site-templates.md)。
 
 >[!NOTE]
 >
@@ -60,15 +60,15 @@ AEM快速網站建立工具可讓非開發人員使用網站範本，從頭開�
 
    ![從範本建立網站](../assets/create-site-from-template.png)
 
-1. 在「建立網站」精靈中，選取左側面板中或上的現有範本 **匯入** ，以匯入新的範本。
+1. 在[建立網站]精靈中，在左側面板中選取現有的範本，或在左側欄頂端的&#x200B;**匯入**&#x200B;上選取要匯入新範本的現有範本。
 
    ![網站建立精靈](../assets/site-creation-wizard.png)
 
-   1. 如果您選擇匯入，請在檔案瀏覽器中找出您要使用的範本，然後選取 **上傳**.
+   1. 如果您選擇匯入，請在檔案瀏覽器中找出您要使用的範本，並選取&#x200B;**上傳**。
 
    1. 上傳後，範本就會顯示在可用範本清單中。
 
-1. 選取範本時，它會在右欄中顯示範本的相關資訊。 選取您想要的範本後，選取 **下一個**.
+1. 選取範本時，它會在右欄中顯示範本的相關資訊。 選取您想要的範本後，選取&#x200B;**下一步**。
 
    ![選取範本](../assets/select-site-template.png)
 
@@ -76,9 +76,9 @@ AEM快速網站建立工具可讓非開發人員使用網站範本，從頭開�
 
    * 網站標題顯示在瀏覽器標題列中。
    * 網站名稱成為 URL 的一部分。
-   * 網站名稱必須符合 [AEM頁面命名慣例](/help/sites-cloud/authoring/sites-console/organizing-pages.md#page-name-restrictions-and-best-practices).
+   * 網站名稱必須符合[AEM的頁面命名慣例](/help/sites-cloud/authoring/sites-console/organizing-pages.md#page-name-restrictions-and-best-practices)。
 
-1. 選取 **建立** 並從網站範本建立網站。
+1. 選取&#x200B;**建立**，網站是從網站範本建立的。
 
    ![新網站的詳細資訊](../assets/create-site-details.png)
 
@@ -96,8 +96,8 @@ AEM快速網站建立工具可讓非開發人員使用網站範本，從頭開�
 
 如果您的網站需要在可用範本之外進行自訂，您有幾個選項。
 
-* 如果必須調整網站結構或初始內容， [網站範本可自訂以符合您的需求](site-templates.md).
-* 如果必須調整網站樣式， [可以下載網站主題並加以自訂](/help/journey-sites/quick-site/overview.md).
-* 如果必須調整網站功能， [網站可完全自訂](/help/implementing/developing/introduction/develop-wknd-tutorial.md).
+* 如果必須調整網站結構或初始內容，[可以自訂網站範本以符合您的需求](site-templates.md)。
+* 如果必須調整網站樣式，可以下載[網站主題並加以自訂](/help/journey-sites/quick-site/overview.md)。
+* 如果必須調整網站功能，[網站可完全自訂](/help/implementing/developing/introduction/develop-wknd-tutorial.md)。
 
 任何自訂作業都應在開發團隊的支援下進行。

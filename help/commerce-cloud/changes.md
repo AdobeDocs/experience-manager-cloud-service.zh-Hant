@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Commerce integration framework(CIF)附加元件的重大變更{#notable-changes}
 
-Adobe Experience Manager as a Cloud Service提供許多管理AEM專案的新功能，並帶來許多可能性。 若要進一步瞭解這些功能，請遵循以下連結： [變更Experience Manageras a Cloud Service](/help/release-notes/aem-cloud-changes.md).
+Adobe Experience Manager as a Cloud Service提供許多管理AEM專案的新功能，並帶來許多可能性。 若要進一步瞭解這些功能，請依照連結操作[變更為Experience Manageras a Cloud Service](/help/release-notes/aem-cloud-changes.md)。
 
 本檔案著重說明Commerce integration framework (CIF)附加元件與舊版CIF (稱為CIF Classic (Quickstart)和CIF Open-source)之間的重要差異。
 
@@ -21,7 +21,7 @@ Adobe Experience Manager as a Cloud Service提供許多管理AEM專案的新功�
 
 AEM CIF附加元件是透過Cloud Manager安裝。 安裝需要CIF點數，但沙箱除外，其可安裝CIF而不需要點數。 系統會透過在您的AEM合約中布建CIF附加元件來自動接收學分。
 
-附加元件會隨著定期的AEMas a Cloud Service更新而自動更新。
+此附加元件會隨著定期的AEM as a Cloud Service更新而自動更新。
 
 **舊版CIF**
 
@@ -40,12 +40,12 @@ AEM CIF附加元件是透過Cloud Manager安裝。 安裝需要CIF點數，但�
 
 ## 部署CIF Venia專案
 
-中可用的專案 [Cloud Manager Git存放庫](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/integrating-with-git.html) 並透過完成部署 [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html)
+[Cloud Manager Git存放庫](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/integrating-with-git.html)中可用的專案，以及透過[Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html)完成的部署
 
 **舊版CIF**
 
 * CIF Classic：透過AEM套件安裝
-* CIF開放原始碼：透過 [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html)
+* CIF開放原始碼：透過[Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html)
 
 ## 產品目錄資料
 
@@ -53,7 +53,7 @@ AEM CIF附加元件是透過Cloud Manager安裝。 安裝需要CIF點數，但�
 
 **舊版CIF**
 
-* CIF Classic：透過完整或差異產品匯入，即時和階段產品資料會匯入並儲存在AEM Author上的JCR中。 即時產品資料會復寫到AEM Publish。
+* CIF Classic：透過完整或差異產品匯入，即時和階段產品資料會匯入並儲存在AEM Author上的JCR中。 即時產品資料會複製到AEM Publish。
 
 ## 具有AEM轉譯的產品目錄體驗
 
@@ -65,4 +65,4 @@ AEM會使用已指派給產品和類別的AEM目錄範本，即時呈現產品�
 
 >[!NOTE]
 >
->如需如何搭配AEM Managed Service或AEM內部部署使用CIF的其他檔案，請參閱 [Commerce integration framework](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/getting-started.html)
+>如需如何搭配使用CIF與AEM Managed Service或AEM內部部署的其他檔案，請參閱[Commerce integration framework](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/getting-started.html)

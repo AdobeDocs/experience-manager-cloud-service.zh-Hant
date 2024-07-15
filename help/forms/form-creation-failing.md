@@ -13,21 +13,21 @@ ht-degree: 0%
 
 # 發佈表單時出現問題{#form-creation-fails}
 
-使用者更新至AEM Formsas a Cloud Service版本後 `2024.5.16461`：
+使用者更新至AEM Formsas a Cloud Service版本`2024.5.16461`後：
 
-**部分使用者** 建立表單時可能會遇到問題，其程度為當使用者建立表單時，建立對話方塊中會彈出以下錯誤訊息：
+**有些使用者**&#x200B;在建立表單時可能會遇到問題，當使用者建立表單時，建立對話方塊中會彈出下列錯誤訊息：
 
 `A server error occurred. Try again after sometime.`
 
 ## 原因 {#cause-form-creation-fails}
 
-發生此問題是因為作者發佈表單時沒有 **首次發佈範本** 已用在其中。 這會導致額外的 `jcr:uuid` 和其他受保護及系統產生的屬性重新命名為 `<template-path>/initial/jcr:content` 節點，導致後續表單建立失敗。
+發生此問題是因為作者發佈表單時沒有&#x200B;**先發佈其中使用的範本**。 這會將`jcr:uuid`和其他受保護及系統產生的屬性新增至`<template-path>/initial/jcr:content`節點，導致後續表單建立失敗。
 
 ## 因應措施 {#resolution-form-creation-fails}
 
 若要解決此問題，請執行以下步驟：
 
-1. 確認您在表單中使用的範本沒有 `jcr:uuid` 和其他系統在路徑中產生的受保護屬性 `<template-path>/initial/jcr:content node`.
+1. 確定您在表單中使用的範本在路徑`<template-path>/initial/jcr:content node`沒有`jcr:uuid`和其他系統產生的受保護屬性。
 1. 使用範本主控台明確地Publish範本。
 1. 現在，發佈範本時，請嘗試使用範本建立新表單。
 1. 如果您在未來的版本中使用了範本更新，請再次Publish範本（如步驟2所述）以防止建立表單失敗問題。

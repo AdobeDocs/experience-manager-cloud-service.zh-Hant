@@ -17,7 +17,7 @@ ht-degree: 1%
 
 ## 目前進度 {#story-so-far}
 
-在AEM內容與Commerce編寫歷程的上一個檔案中， [AEM CIF製作基本知識快速入門](getting-started.md)，您已瞭解CIF編寫的基本知識。
+在AEM內容與Commerce編寫歷程的上一份檔案[AEM CIF編寫基本知識快速入門](getting-started.md)中，您已瞭解CIF編寫的基本知識。
 
 本文基於這些基礎之上。
 
@@ -63,7 +63,7 @@ Venia storefront提供典型的產品目錄體驗，包括導覽、登陸、類�
 
 ### 類別或產品特定範本 {#specific}
 
-CIF只要按幾下即可支援多個範本。 若要建立其他範本，請從個別類別中選取一般範本，然後使用 **建立** 動作。
+CIF只要按幾下即可支援多個範本。 若要建立其他範本，請從個別類別中選取一般範本，並使用&#x200B;**建立**&#x200B;動作建立頁面。
 
 ![建立範本頁面](assets/create-template-page.png)
 
@@ -81,21 +81,21 @@ CIF只要按幾下即可支援多個範本。 若要建立其他範本，請從�
 
 開啟範本。 它看起來與一般類別範本完全相同。
 
-![建立範本新增](assets/create-template-new.png)
+![建立新範本](assets/create-template-new.png)
 
 在頁面上方新增任何影像。
 
 ![建立範本更新](assets/create-template-update.png)
 
-此範本可與任何類別/產品一起預覽。 開啟 **頁面資訊** 然後選取 **使用類別/產品檢視**. 從選擇器選取產品/類別，以取得此產品/類別的預覽。 選取 **購買外觀** 類別以取得更新範本的預覽。
+此範本可與任何類別/產品一起預覽。 開啟&#x200B;**頁面資訊**，然後選取&#x200B;**檢視類別/產品**。 從選擇器選取產品/類別，以取得此產品/類別的預覽。 選取&#x200B;**購買Look**&#x200B;類別以取得更新範本的預覽。
 
-![建立範本 ](assets/create-template-picker.png)
+![建立範本](assets/create-template-picker.png)
 
-現在您必須將此範本指派給特定類別。 在中開啟屬性 **頁面資訊** 選單並切換至商務標籤。 按一下資料夾圖示以選取 **購買外觀** 類別選擇器中的類別。 您可以啟用核取方塊，將多個類別指派給範本，也可以包含子類別。
+現在您必須將此範本指派給特定類別。 開啟&#x200B;**頁面資訊**&#x200B;功能表中的屬性，並切換至商務標籤。 按一下資料夾圖示，從類別選擇器選取&#x200B;**Shop The Look**&#x200B;類別。 您可以啟用核取方塊，將多個類別指派給範本，也可以包含子類別。
 
 ![建立範本關聯](assets/create-template-associate.png)
 
-返回主首頁並按一下 **購買外觀** 類別以檢視特定範本。 所有其他類別仍使用一般範本。
+返回主首頁，然後按一下&#x200B;**購買Look**&#x200B;類別以檢視特定範本。 所有其他類別仍使用一般範本。
 
 ![建立範本結果](assets/create-template-result.png)
 
@@ -109,11 +109,11 @@ CIF只要按幾下即可支援多個範本。 若要建立其他範本，請從�
 * 一般範本的運作方式
 * 已建立個別範本
 
-在此知識的基礎上繼續您的歷程，接下來檢視檔案 [管理分階段產品目錄體驗](staged-catalog.md)，瞭解如何使用分階段產品資料和AEM啟動。
+在此基礎上繼續您的歷程，接下來檢閱檔案[管理分階段產品目錄體驗](staged-catalog.md)，瞭解如何使用分階段產品資料和AEM啟動。
 
 ## 其他資源 {#additional-resources}
 
-我們建議您檢閱檔案，以繼續下一段歷程 [管理分階段產品目錄體驗](staged-catalog.md)，以下是一些其他可選資源，這些資源對檔案中提到的一些概念進行了更深入的探究，但並非繼續無頭之旅所必需的：
+我們建議您檢閱檔案[管理分階段產品目錄體驗](staged-catalog.md)來繼續此歷程的下一部分，以下是一些其他選擇性資源，這些資源會對此檔案中提到的一些概念進行更深入的探究，但並非繼續無頭歷程所必需的：
 
 * [建立多個類別和產品頁面](/help/commerce-cloud/authoring/multi-template-usage.md)
-* [Experience Manager Cloud Service移轉指南](/help/commerce-cloud/migration.md)  — 如何從舊版移轉至AEMCommerce integration framework(CIF)附加元件
+* [Experience Manager Cloud Service的移轉指南](/help/commerce-cloud/migration.md) — 如何從舊版移轉至AEMCommerce integration framework(CIF)附加元件

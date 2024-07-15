@@ -1,6 +1,6 @@
 ---
-title: 架構 [!DNL Assets]
-description: Adobe Experience Manager Assets as a架構 [!DNL Cloud Service]
+title: ' [!DNL Assets]的架構'
+description: Adobe Experience Manager Assets as a [!DNL Cloud Service]的架構
 contentOwner: AG
 feature: Asset Management, Asset Compute Microservices
 role: Architect
@@ -12,11 +12,11 @@ ht-degree: 36%
 
 ---
 
-# Assets as a的架構 [!DNL Cloud Service] 解決方案 {#assets-architecture}
+# Assets as a [!DNL Cloud Service]解決方案的架構 {#assets-architecture}
 
-[!DNL Experience Manager Assets] as a [!DNL Cloud Service] 根據 [!DNL Adobe Experience Manager] 並與最新產品相較之下 [!DNL Experience Manager] 6.5.此 [!DNL Cloud Service] 產品具有調整後的架構和功能，可作為雲端原生服務。 基礎架構的變更不允許所有Experience Manager6.5功能成為 [!DNL Cloud Service].
+[!DNL Experience Manager Assets] as a [!DNL Cloud Service]是以[!DNL Adobe Experience Manager]為基礎，與最新的方案[!DNL Experience Manager] 6.5相較之下。[!DNL Cloud Service]產品具有經過調整的架構和功能，可作為雲端原生服務。 基礎架構中的變更不允許所有Experience Manager6.5功能成為[!DNL Cloud Service]的一部分。
 
-若要檢視資產微服務的架構概覽，請參閱此 [資產微服務概覽](asset-microservices-overview.md#asset-microservices-architecture).
+若要檢視資產微服務的架構概覽，請參閱此[資產微服務概覽](asset-microservices-overview.md#asset-microservices-architecture)。
 
 **另請參閱**
 

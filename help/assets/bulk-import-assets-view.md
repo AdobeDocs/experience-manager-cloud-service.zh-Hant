@@ -214,6 +214,6 @@ AEM Assets 檢視中的大量匯入能讓管理員將大量資產從資料來源
 
 若要檢視執行大量匯入作業後匯入資產的資產目標位置，請按一下設定名稱相對應的「![更多圖示](assets/do-not-localize/more-icon.svg)」，然後點選「**[!UICONTROL 檢視資產]**」。
 
-## 影片：使用資產檢視大量匯入資產
+## 影片：使用Assets檢視大量匯入資產
 
 >[!VIDEO](https://video.tv.adobe.com/v/3428012)

@@ -33,7 +33,7 @@ UI同時適用於行動裝置和桌上型裝置，不過AEM不但不建立兩種
 
 ### 標題列 {#header-bar}
 
-![AEM標題列](assets/ui-header-bar.png)
+![AEM標頭列](assets/ui-header-bar.png)
 
 標題列會顯示全域元素，包括：
 
@@ -54,21 +54,21 @@ UI同時適用於行動裝置和桌上型裝置，不過AEM不但不建立兩種
 
 也取決於是否選取資源：
 
-![已選取AEM Sites工具列](assets/ui-sites-toolbar-selected.png)
+已選取![AEM Sites工具列](assets/ui-sites-toolbar-selected.png)
 
 ### 左側邊欄 {#left-rail}
 
 您可以視需要開啟/隱藏左側邊欄，以顯示：
 
-* **僅限內容**
+* **僅內容**
 * **內容樹狀結構**
 * **時間表**
-* **引用**
-* **篩選**
+* **個參考**
+* **篩選器**
 
-預設值為 **僅限內容** （邊欄已隱藏）。
+預設值為&#x200B;**僅內容** （隱藏邊欄）。
 
-![左側欄](assets/ui-left-rail.png)
+![左側邊欄](assets/ui-left-rail.png)
 
 ## 頁面製作 {#page-authoring}
 
@@ -97,21 +97,21 @@ UI同時適用於行動裝置和桌上型裝置，不過AEM不但不建立兩種
 
 ### 側面板 {#side-panel}
 
-包含三個預設標籤。 此 **資產** 和 **元件** 索引標籤可讓您選取這類元素，並將它們從面板拖放至頁面上。 此 **內容樹狀結構** 索引標籤可讓您檢查頁面上內容的階層。
+包含三個預設標籤。 **Assets**&#x200B;和&#x200B;**元件**&#x200B;索引標籤可讓您選取這類元素，並將它們從面板拖放到頁面上。 **內容樹狀結構**&#x200B;索引標籤可讓您檢查頁面上內容的階層。
 
 側面板預設為隱藏。 選取時，該視窗會顯示在左側，或當視窗寬度小於1024畫素時，它會滑過以覆蓋整個視窗，例如在行動裝置上。
 
 ![側面板](assets/ui-side-panel.png)
 
-### 側面板 — 資產 {#side-panel-assets}
+### 側面板 — Assets {#side-panel-assets}
 
-在「資產」標籤中，您可以從資產範圍中選取。 您也可以篩選特定字詞，或選取群組。
+在Assets標籤中，您可以從資產範圍中選取。 您也可以篩選特定字詞，或選取群組。
 
-![「資產」標籤](assets/ui-side-panel-assets.png)
+![Assets索引標籤](assets/ui-side-panel-assets.png)
 
 ### 側面板 — 資產群組 {#side-panel-asset-groups}
 
-在「資產」標籤中，有一個下拉式清單可用來選取特定資產群組。
+在Assets索引標籤中，有一個下拉式清單可用來選取特定資產群組。
 
 ![資產群組](assets/ui-side-panel-asset-groups.png)
 
@@ -129,11 +129,11 @@ UI同時適用於行動裝置和桌上型裝置，不過AEM不但不建立兩種
 
 ### 覆蓋 {#overlays}
 
-覆蓋內容框架，並由 [圖層](#layer) 瞭解如何以透明方式與元件及其內容互動的機制。
+覆蓋內容框架，並由[圖層](#layer)使用，以達成與元件及其內容透明互動的機制。
 
 這些覆蓋圖會在編輯器框架中呈現（包含所有其他頁面製作元素），不過實際上會在內容框架中覆蓋適當的元件。
 
-![覆蓋](assets/ui-overlays.png)
+![重疊](assets/ui-overlays.png)
 
 ### 圖層 {#layer}
 
@@ -170,4 +170,4 @@ AEM隨附數個已實作用於頁面製作的圖層；例如包括編輯、預�
 
 <!--For more details about the concepts around the touch-enabled UI, continue to the article [Concepts of the AEM Touch-Enabled UI](/help/sites-developing/touch-ui-concepts.md).-->
 
-如需更多技術資訊，請參閱 [JS檔案集](https://developer.adobe.com/experience-manager/reference-materials/6-5/jsdoc/ui-touch/editor-core/index.html) 用於頁面編輯器。
+如需更多技術資訊，請參閱頁面編輯器的[JS檔案集](https://developer.adobe.com/experience-manager/reference-materials/6-5/jsdoc/ui-touch/editor-core/index.html)。

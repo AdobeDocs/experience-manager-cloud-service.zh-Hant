@@ -12,26 +12,26 @@ ht-degree: 5%
 
 # 基本處理 {#basic-handling}
 
-本檔案旨在概述使用AEM製作環境時的基本處理方式。 它會使用 **網站** 以主控台為基礎。
+本檔案旨在概述使用AEM製作環境時的基本處理方式。 它使用&#x200B;**Sites**&#x200B;主控台作為基礎。
 
 >[!NOTE]
 >
 >* 部分功能並非在所有主控台中提供，部分主控台可能提供其他功能。 有關個別主控台及其相關功能的特定資訊，請參閱其他頁面上的詳細說明。
->* 在整個AEM環境中都可以使用鍵盤快速鍵。 尤其是當 [使用主控台](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) 和 [編輯頁面](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md).
+>* 在整個AEM環境中都可以使用鍵盤快速鍵。 特別是當[使用主控台](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)和[編輯頁面](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md)時。
 
 {{edge-delivery-authoring}}
 
 ## 觸控式UI {#a-touch-enabled-ui}
 
-AEM使用者介面已啟用觸控功能。 觸控式介面可讓您使用觸控功能，透過選擇、觸控並按住及撥動等手勢與軟體互動。 由於AEM UI支援觸控功能，因此您可以在手機或平板電腦等觸控裝置上使用觸控手勢。 不過，您也可以使用傳統案頭裝置上的滑鼠動作，靈活選擇內容撰寫方式。
+AEM的使用者介面已啟用觸控功能。 觸控式介面可讓您使用觸控功能，透過選擇、觸控並按住及撥動等手勢與軟體互動。 由於AEM UI支援觸控功能，因此您可以在手機或平板電腦等觸控裝置上使用觸控手勢。 不過，您也可以使用傳統案頭裝置上的滑鼠動作，靈活選擇內容撰寫方式。
 
 ## 首要步驟 {#first-steps}
 
-登入後立即到達 [導覽面板](#navigation-panel). 選取其中一個選項會開啟個別主控台。
+登入後立即進入[導覽面板](#navigation-panel)。 選取其中一個選項會開啟個別主控台。
 
 ![導覽面板](/help/sites-cloud/authoring/assets/navigation.png)
 
-為了更清楚瞭解AEM的基本用法，本檔案根據 **網站** 主控台。 選擇於 **網站** 以開始使用。
+為了深入瞭解AEM的基本用法，本檔案是以&#x200B;**網站**&#x200B;主控台為基礎的。 在&#x200B;**網站**&#x200B;上選取以開始。
 
 ## 產品導覽 {#product-navigation}
 
@@ -39,22 +39,22 @@ AEM使用者介面已啟用觸控功能。 觸控式介面可讓您使用觸控�
 
 ![導覽教學課程](/help/sites-cloud/authoring/assets/tutorial.png)
 
-選取 **下一個** 以進入概覽的下一頁。 選取 **關閉** 或在「概述」對話方塊外部選取以關閉。
+選取「**下一步**」以前往概覽的下一頁。 選取&#x200B;**關閉**&#x200B;或在總覽對話方塊之外選取以關閉。
 
-除非您檢視所有投影片或核取選項，否則概觀將會在您下次存取主控台時重新啟動 **不要再顯示**.
+除非您檢視所有投影片或勾選&#x200B;**不要再顯示這個專案**，否則概觀將會在您下次存取主控台時重新啟動。
 
 ## 全域導覽 {#global-navigation}
 
 您可以使用全域導覽面板在主控台之間導覽。 當您選取畫面左上方的Adobe Experience Manager連結時，就會以全熒幕下拉式清單的形式觸發此動作。
 
-您可以按一下或點選以關閉全域導覽面板 **關閉** 以返回您之前的位置。
+您可以按一下或點選「**關閉**」來關閉全域導覽面板，以返回您之前的位置。
 
 ![導覽面板頂列](/help/sites-cloud/authoring/assets/navigation-bar.png)
 
 全域導覽有兩個面板，由畫面左側的圖示表示：
 
-* **[導覽](#navigation-panel)**  — 當您登入AEM時，以指南針和預設面板表示
-* **[工具](#tools-panel)**  — 以槌子表示
+* **[導覽](#navigation-panel)** — 在您登入AEM時，以指南針和預設面板表示
+* **[工具](#tools-panel)** — 以錘子表示
 
 這些面板上可用的選項說明如下。
 
@@ -70,18 +70,18 @@ AEM使用者介面已啟用觸控功能。 觸控式介面可讓您使用觸控�
 
 | 主控台 | 用途 |
 |---|---|
-| 專案 | 「專案」主控台可讓您直接存取專案。 [專案是虛擬儀表板](/help/sites-cloud/authoring/projects/overview.md) 可用來建立團隊的資訊。 然後，您可以授予該團隊存取資源、工作流程和任務的許可權，從而讓人們朝著共同目標努力。 |
-| Sites | Sites主控台可讓您 [建立、檢視及管理網站](/help/sites-cloud/authoring/fundamentals/organizing-pages.md) 在您的AEM執行個體上執行。 透過此主控台，您可以建立、編輯、複製、移動和刪除頁面、啟動工作流程以及發佈頁面。 |
-| 體驗片段 | 一個 [體驗片段](/help/sites-cloud/authoring/fundamentals/experience-fragments.md) 是獨立的體驗，可以跨管道重複使用，也可以具有變數，省去重複複製和貼上體驗或體驗片段的麻煩。 |
-| Assets | 「資產」主控台可讓您匯入及管理 [數位資產，例如影像、影片、檔案和音訊檔案](/help/assets/overview.md). 這些資產隨後便可由同一AEM例項上執行的任何網站使用。 您也可以建立和管理 [內容片段](/help/assets/content-fragments/content-fragments.md) 從「資產」主控台。 |
-| 個人化 | 此主控台提供工具的架構，適用於 [編寫鎖定內容及呈現個人化體驗](/help/sites-cloud/authoring/personalization/overview.md). |
-| 內容片段 | [內容片段](/help/sites-cloud/administering/content-fragments/overview.md) 可讓您設計、建立、策劃和發佈不受頁面影響的內容。 它們可讓您準備結構化內容，以準備用於多個位置/多個管道，並適用於頁面製作和headless傳送。 |
+| 專案 | 「專案」主控台可讓您直接存取專案。 [專案是虛擬儀表板](/help/sites-cloud/authoring/projects/overview.md)，可用來建立團隊。 然後，您可以授予該團隊存取資源、工作流程和任務的許可權，從而讓人們朝著共同目標努力。 |
+| Sites | Sites主控台可讓您[建立、檢視及管理在您的AEM執行個體上執行的網站](/help/sites-cloud/authoring/fundamentals/organizing-pages.md)。 透過此主控台，您可以建立、編輯、複製、移動和刪除頁面、啟動工作流程以及發佈頁面。 |
+| 體驗片段 | [體驗片段](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)是獨立的體驗，可以跨管道重複使用，也可以有變數，省去重複複製和貼上體驗或體驗片段的麻煩。 |
+| Assets | Assets主控台可讓您匯入及管理[數位資產，例如影像、影片、檔案和音訊檔案](/help/assets/overview.md)。 這些資產隨後便可由同一AEM例項上執行的任何網站使用。 您也可以從Assets主控台建立和管理[內容片段](/help/assets/content-fragments/content-fragments.md)。 |
+| 個人化 | 此主控台提供[製作目標內容與呈現個人化體驗的工具架構](/help/sites-cloud/authoring/personalization/overview.md)。 |
+| 內容片段 | [內容片段](/help/sites-cloud/administering/content-fragments/overview.md)可讓您設計、建立、組織及發佈獨立於頁面的內容。 它們可讓您準備結構化內容，以準備用於多個位置/多個管道，並適用於頁面製作和headless傳送。 |
 
 ## 「工具」面板 {#tools-panel}
 
-在「工具」面板中，有一個側面板，其中包含一系列類別，這些類別將類似的「工具」主控台組合在一起。 「工具」主控台可供存取數個專用工具與主控台，協助您管理網站、數位資產及內容存放庫的其他方面。 <!--The [Tools consoles](/help/sites-administering/tools-consoles.md) provide access to several specialized tools and consoles that help you administer your websites, digital assets, and other aspects of your content repository.-->
+在「工具」面板中，有一個側面板，其中包含一系列類別，這些類別將類似的「工具」主控台組合在一起。 「工具」主控台可供存取數個專用工具與主控台，協助您管理網站、數位資產及內容存放庫的其他方面。<!--The [Tools consoles](/help/sites-administering/tools-consoles.md) provide access to several specialized tools and consoles that help you administer your websites, digital assets, and other aspects of your content repository.-->
 
-![「工具」面板](/help/sites-cloud/authoring/assets/tools-panel.png)
+![工具面板](/help/sites-cloud/authoring/assets/tools-panel.png)
 
 ## 標頭 {#the-header}
 
@@ -91,7 +91,7 @@ AEM使用者介面已啟用觸控功能。 觸控式介面可讓您使用觸控�
 
 * [全域導覽](#global-navigation)
 
-  選取 **Adobe Experience Manager** 連結可在主控台之間導覽。
+  選取&#x200B;**Adobe Experience Manager**&#x200B;連結以在主控台之間導覽。
 
   ![全域導覽](/help/sites-cloud/authoring/assets/global-navigation.png)
 
@@ -99,11 +99,11 @@ AEM使用者介面已啟用觸控功能。 觸控式介面可讓您使用觸控�
 
   ![搜尋圖示](/help/sites-cloud/authoring/assets/search-icon.png)
 
-  您也可以使用 [快速鍵](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) `/` （正斜線）從任何主控台叫用搜尋。
+  您也可以使用[捷徑鍵](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) `/` （正斜線）從任何主控台叫用搜尋。
 
 * [解決方案](https://www.adobe.com/experience-cloud.html)
 
-  ![「解決方案」按鈕](/help/sites-cloud/authoring/assets/solutions.png)
+  ![解決方案按鈕](/help/sites-cloud/authoring/assets/solutions.png)
 
 * [說明](#accessing-help)
 
@@ -111,7 +111,7 @@ AEM使用者介面已啟用觸控功能。 觸控式介面可讓您使用觸控�
 
 * [通知](/help/sites-cloud/authoring/getting-started/inbox.md)
 
-  ![「通知」按鈕](/help/sites-cloud/authoring/assets/notifications.png)
+  ![通知按鈕](/help/sites-cloud/authoring/assets/notifications.png)
 
   此圖示會加上目前指派的未完成通知數目。
 
@@ -123,21 +123,21 @@ AEM使用者介面已啟用觸控功能。 觸控式介面可讓您使用觸控�
 
   ![邊欄選擇器按鈕](/help/sites-cloud/authoring/assets/rail-selector.png)
 
-  顯示的選項取決於您目前的主控台。 例如，在 **網站** 您可以選取「僅限內容」(Content only) （預設）、「時間軸」(Timeline)、「參照」(references)或「濾鏡」(filter)側面板。
+  顯示的選項取決於您目前的主控台。 例如，在&#x200B;**Sites**&#x200B;中，您可以選取僅限內容（預設）、時間軸、參照或篩選器側面板。
 
-  ![邊欄選擇器的範例](/help/sites-cloud/authoring/assets/rail-selector-example.png)
+  ![邊欄選擇器範例](/help/sites-cloud/authoring/assets/rail-selector-example.png)
 
 * 導覽列
 
-  ![導覽列中的階層連結](/help/sites-cloud/authoring/assets/breadcrumbs-navigation.png)
+  導覽列中的![階層連結](/help/sites-cloud/authoring/assets/breadcrumbs-navigation.png)
 
-  階層連結位於邊欄中間，且一律顯示目前所選專案的說明，可讓您在特定主控台內導覽。 在 **網站** 主控台，您可以瀏覽網站的各個層級。
+  階層連結位於邊欄中間，且一律顯示目前所選專案的說明，可讓您在特定主控台內導覽。 在&#x200B;**網站**&#x200B;主控台中，您可以瀏覽網站的各個層級。
 
   只要按一下階層連結文字，就會顯示一個下拉式清單，列出目前所選專案的階層層次。 按一下專案以跳至該位置。
 
   ![展開的階層連結範例](/help/sites-cloud/authoring/assets/breadcrumbs-example.png)
 
-* **建立** 按鈕
+* **建立**&#x200B;按鈕
 
   ![建立按鈕](/help/sites-cloud/authoring/assets/create.png)
 
@@ -145,13 +145,13 @@ AEM使用者介面已啟用觸控功能。 觸控式介面可讓您使用觸控�
 
 * [檢視](#viewing-and-selecting-resources)
 
-  檢檢視示位於AEM工具列的最右側。 它也會指出目前的檢視，因此會變更。 例如在預設檢視中， **欄檢視** 它顯示：
+  檢檢視示位於AEM工具列的最右側。 它也會指出目前的檢視，因此會變更。 例如，在預設檢視&#x200B;**欄檢視**&#x200B;中顯示：
 
   ![檢視按鈕](/help/sites-cloud/authoring/assets/views-button.png)
 
   您可以在欄檢視、卡片檢視和清單檢視之間切換。 在清單檢視中，它也會顯示檢視設定。
 
-  ![檢視](/help/sites-cloud/authoring/assets/view.png)
+  ![個檢視](/help/sites-cloud/authoring/assets/view.png)
 
   >[!NOTE]
   >
@@ -159,9 +159,9 @@ AEM使用者介面已啟用觸控功能。 觸控式介面可讓您使用觸控�
 
 * 鍵盤導覽
 
-  您僅能使用鍵盤導覽網站。 這會使用的標準瀏覽器功能 **標籤** 金鑰(或 **OPT+TAB**)，將您移動至頁面上可聚焦的元素之間。
+  您僅能使用鍵盤導覽網站。 這會使用&#x200B;**TAB**&#x200B;索引鍵（或&#x200B;**OPT+TAB**）的標準瀏覽器功能，在頁面上可聚焦的元素之間移動您。
 
-  在 **網站** 主控台新增選項至 **跳至主要內容**. 當您以Tab鍵瀏覽頁首選項時，這個選項就會顯示，而且可讓您略過（產品）工具列中的標準元素，並直接前往主要內容，加速導覽速度。
+  在&#x200B;**網站**&#x200B;主控台中，**跳至主要內容**&#x200B;的選項已新增。 當您以Tab鍵瀏覽頁首選項時，這個選項就會顯示，而且可讓您略過（產品）工具列中的標準元素，並直接前往主要內容，加速導覽速度。
 
   ![跳至主要內容](/help/sites-cloud/authoring/assets/skip-to-main-content.png)
 
@@ -171,13 +171,13 @@ AEM使用者介面已啟用觸控功能。 觸控式介面可讓您使用觸控�
 
 * **主控台工具列**
 
-  根據您的位置， **說明** 圖示會開啟適當的資源：
+  根據您的位置，**說明**&#x200B;圖示會開啟適當的資源：
 
   ![說明圖示](/help/sites-cloud/authoring/assets/help-console.png)
 
 * **導覽**
 
-  第一次瀏覽系統時， [一連串投影片介紹AEM導覽](#product-navigation).
+  第一次導覽系統時，[一連串幻燈片會介紹AEM導覽](#product-navigation)。
 
   ![教學課程](/help/sites-cloud/authoring/assets/tutorial.png)
 
@@ -187,24 +187,24 @@ AEM使用者介面已啟用觸控功能。 觸控式介面可讓您使用觸控�
 
   ![編輯器教學課程](/help/sites-cloud/authoring/assets/editor-tutorial.png)
 
-  瀏覽此概觀，如同操作 [產品導覽概觀](#product-navigation) 首次存取任何主控台時。
+  第一次存取任何主控台時，瀏覽這個概觀，就像瀏覽[產品瀏覽概觀](#product-navigation)一樣。
 
-  從 [**頁面資訊** 功能表您可以選取 **說明**](/help/sites-cloud/authoring/fundamentals/environment-tools.md#accessing-help) 以隨時再次顯示。
+  從&#x200B;[**頁面資訊**&#x200B;功能表，您可以隨時選取&#x200B;**說明**](/help/sites-cloud/authoring/fundamentals/environment-tools.md#accessing-help)&#x200B;來再次顯示這個專案。
 
 * **工具主控台**
 
-  從 **工具** 主控台您也可以存取外部 **資源**：
+  您也可以從&#x200B;**工具**&#x200B;主控台存取外部&#x200B;**資源**：
 
-   * **檔案**  — 檢視網站體驗管理檔案
-   * **開發人員資源**  — 開發人員資源和下載
+   * **檔案** — 檢視Web體驗管理檔案
+   * **開發人員資源** — 開發人員資源和下載
 
   >[!NOTE]
   >
-  >您可以隨時使用快速鍵來存取可用快速鍵的概觀 `?` （問號）。
+  >在主控台中，您可以隨時使用快速鍵`?` （問號）存取可用的快速鍵概觀。
   >
   >如需所有鍵盤快速鍵的概觀，請參閱下列檔案：
   >
-  >* [用於編輯頁面的鍵盤快速鍵](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md)
+  >* [編輯頁面的鍵盤快速鍵](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md)
   >* [主控台的鍵盤快速鍵](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
 
 ## 動作工具列 {#actions-toolbar}
@@ -213,13 +213,13 @@ AEM使用者介面已啟用觸控功能。 觸控式介面可讓您使用觸控�
 
 * 目前的主控台
 * 目前內容
-* 無論您是否在 [選擇模式](#viewing-and-selecting-resources)
+* 您是否處於[選取模式](#viewing-and-selecting-resources)
 
 工具列中可用的動作會變更，以反映您可對所選特定專案執行的動作。
 
-您如何 [選取資源](#viewing-and-selecting-resources) 視檢視而定。
+您如何[選取資源](#viewing-and-selecting-resources)取決於檢視。
 
-由於某些視窗的空間限制，工具列可能會很快變得比可用的空間長。發生此情況時，會出現其他選項。按一下或點選省略符號(三個點或 **...**)會開啟一個下拉式選取器，其中包含所有剩餘的動作。 例如，在Sites主控台中選取頁面 **後** :
+由於某些視窗的空間限制，工具列可能會很快變得比可用的空間長。發生此情況時，會出現其他選項。按一下或點選省略符號（三個點或&#x200B;**...**）會開啟一個下拉式選取器，其中包含所有剩餘的動作。 例如，在Sites主控台中選取頁面 **後** :
 
 ![其他選項](/help/sites-cloud/authoring/assets/additional-options.png)
 
@@ -229,9 +229,9 @@ AEM使用者介面已啟用觸控功能。 觸控式介面可讓您使用觸控�
 
 ## 快速動作 {#quick-actions}
 
-在 [卡片檢視](#card-view) 某些動作會以快速動作圖示的形式呈現，並位於工具列上。 快速動作圖示一次只適用於一個專案，您不需要預先選取。
+在[卡片檢視](#card-view)中，某些動作會以快速動作圖示的形式呈現，並顯示在工具列上。 快速動作圖示一次只適用於一個專案，您不需要預先選取。
 
-當您將滑鼠移至（桌上型裝置）資源卡上時，可以看到快速動作。 可用的快速動作取決於主控台和內容。 例如，以下是中頁面的快速動作 **網站** 主控台：
+當您將滑鼠移至（桌上型裝置）資源卡上時，可以看到快速動作。 可用的快速動作取決於主控台和內容。 例如，以下是&#x200B;**Sites**&#x200B;主控台中頁面的快速動作：
 
 ![其他選項](/help/sites-cloud/authoring/assets/quick-actions.png)
 
@@ -259,13 +259,13 @@ AEM使用者介面已啟用觸控功能。 觸控式介面可讓您使用觸控�
 | 卡片 | 選取並按住卡片 | 將滑鼠移到上方，然後使用核取記號快速動作 | 選取卡片 | 按一下卡片 |
 | 清單 | 選取縮圖 | 按一下縮圖 | 選取縮圖 | 按一下縮圖 |
 
-#### 請全選 {#select-all}
+#### 全選 {#select-all}
 
-您可以按一下 **全選** 控制檯右上角的選項。
+您可以按一下主控台右上角的&#x200B;**全選**&#x200B;選項，選取任何檢視中的所有專案。
 
-* 在 **卡片檢視** 已選取所有卡片。
-* 在 **清單檢視** 會選取清單中的所有專案。
-* 在 **欄檢視** 會選取最左欄中的所有專案。
+* 在&#x200B;**卡片檢視**&#x200B;中，已選取所有卡片。
+* 在&#x200B;**清單檢視**&#x200B;中，已選取清單中的所有專案。
+* 在&#x200B;**欄檢視**&#x200B;中，選取最左欄中的所有專案。
 
 ![全選](/help/sites-cloud/authoring/assets/select-all.png)
 
@@ -275,10 +275,10 @@ AEM使用者介面已啟用觸控功能。 觸控式介面可讓您使用觸控�
 
 您可以取消選取所有專案並結束選取模式，方法如下：
 
-* 按一下或點選 **X** 在計數旁邊
-* 使用 **逸出** key
+* 按一下或點選計數旁的&#x200B;**X**
+* 使用&#x200B;**ESC**&#x200B;金鑰
 
-![取消全選](/help/sites-cloud/authoring/assets/deselect-all.png)
+![全部取消選取](/help/sites-cloud/authoring/assets/deselect-all.png)
 
 在所有檢視中，如果您使用案頭裝置，點選鍵盤上的Esc鍵即可取消選取所有專案。
 
@@ -286,11 +286,11 @@ AEM使用者介面已啟用觸控功能。 觸控式介面可讓您使用觸控�
 
 1. 例如在卡片檢視中：
 
-   ![卡片檢視選取](/help/sites-cloud/authoring/assets/card-view-select.png)
+   ![卡片檢視選擇](/help/sites-cloud/authoring/assets/card-view-select.png)
 
-1. 選取資源後，頂端標題會由 [動作工具列](#actions-toolbar) 可讓您存取目前適用於所選資源的動作。
+1. 選取資源後，[動作工具列](#actions-toolbar)會覆蓋頂端標頭，提供目前適用於選取資源的動作存取權。
 
-   若要結束選取模式，請選取 **X** 右上方，或使用 **逸出**.
+   若要結束選取模式，請選取右上方的&#x200B;**X**，或使用&#x200B;**ESCAPE**。
 
 ### 欄檢視 {#column-view}
 
@@ -332,20 +332,20 @@ AEM使用者介面已啟用觸控功能。 觸控式介面可讓您使用觸控�
    * 重要日期（例如上次編輯、上次發佈）
    * 如果頁面已鎖定、隱藏或屬於即時副本的一部分
    * 適當時，亦即需要您擔任工作流程一部分的時間
-      * 指出所需動作的標籤，可能與 [收件匣](/help/sites-cloud/authoring/getting-started/inbox.md).
+      * 表示所需動作的標籤可能與[收件匣](/help/sites-cloud/authoring/getting-started/inbox.md)中的專案有關。
 
-* [快速動作](#quick-actions) 也可以在此檢視中使用，例如選取和常見動作，例如編輯。
+* [此檢視中也提供快速動作](#quick-actions)，例如選取範圍以及常見的動作，例如編輯。
 
   ![快速動作](/help/sites-cloud/authoring/assets/quick-actions.png)
 
-* 您可以點選/按一下卡片來向下瀏覽樹狀結構（注意避免快速動作），或使用 [標題中的階層連結](#the-header).
+* 您可以點選/按一下卡片來向下瀏覽樹狀結構（注意避免快速動作），或使用標頭](#the-header)中的[階層連結來再次向上瀏覽。
 
 ### 清單檢視 {#list-view}
 
 ![清單檢視](/help/sites-cloud/authoring/assets/list-view.png)
 
 * 清單檢視會列出目前層級中每個資源的資訊。
-* 您可以點選/按一下資源名稱，在樹狀結構中向下導覽，並使用 [標題中的階層連結](#the-header).
+* 您可以點選/按一下資源名稱，在樹狀結構中向下導覽，並使用標頭](#the-header)中的[階層連結進行備份。
 * 若要輕鬆選取清單中的所有專案，請使用清單左上方的核取方塊。
 
   ![清單檢視選取全部](/help/sites-cloud/authoring/assets/list-view-select-all.png)
@@ -359,27 +359,27 @@ AEM使用者介面已啟用觸控功能。 觸控式介面可讓您使用觸控�
       * 勾選核取方塊以選取全部。
       * 再次選取核取方塊以取消選取全部。
 
-* 選擇要顯示的欄，使用 **檢視設定** 選項位於「檢視」按鈕下。 下列欄可供顯示：
+* 使用位於[檢視]按鈕下方的&#x200B;**檢視設定**&#x200B;選項來選取要顯示的欄。 下列欄可供顯示：
 
-   * **名稱**  — 頁面名稱，在多語言撰寫環境中相當實用，因為它是頁面URL的一部分，無論使用何種語言，都不會變更
-   * **已修改**  — 上次修改日期和上次修改的使用者
-   * **已發佈**  — 發佈狀態
-   * **預覽**  — 預覽狀態
-   * **範本**  — 頁面所在的範本
-   * **工作流程**  — 目前套用至頁面的工作流程。 將滑鼠移至上方或開啟「時間軸」時，可以取得更多資訊。
+   * **名稱** — 頁面名稱，在多語言撰寫環境中很有用，因為它是頁面URL的一部分，無論使用何種語言，都不會變更
+   * **修改日期** — 上次修改日期和上次修改的使用者
+   * **已發佈** — 發佈狀態
+   * **預覽** — 預覽狀態
+   * **範本** — 頁面所依據的範本
+   * **工作流程** — 目前已套用至頁面的工作流程。 將滑鼠移至上方或開啟「時間軸」時，可以取得更多資訊。
    * **頁面分析**
    * **不重複訪客**
-   * **頁面逗留時間**
+   * 第&#x200B;**頁上的**&#x200B;時間
 
-     ![選取欄](/help/sites-cloud/authoring/assets/select-columns.png)
+     ![選取資料行](/help/sites-cloud/authoring/assets/select-columns.png)
 
-  根據預設 **名稱** 欄隨即顯示，它構成了頁面URL的一部分。 在某些情況下，作者可能需要存取不同語言的頁面，如果作者不知道頁面的語言，檢視頁面名稱（通常不會變更）會很有幫助。
+  預設會顯示&#x200B;**Name**&#x200B;欄，它構成了頁面URL的一部分。 在某些情況下，作者可能需要存取不同語言的頁面，如果作者不知道頁面的語言，檢視頁面名稱（通常不會變更）會很有幫助。
 
 * 使用清單中每個專案最右側的點狀垂直列，變更專案的順序。
 
   >[!NOTE]
   >
-  >變更順序僅適用於具有下列條件的已排序資料夾： `jcr:primaryType` 值為 `sling:OrderedFolder`.
+  >變更順序僅適用於具有`jcr:primaryType`值為`sling:OrderedFolder`的已排序資料夾。
 
   ![欄順序](/help/sites-cloud/authoring/assets/column-order.png)
 
@@ -389,17 +389,17 @@ AEM使用者介面已啟用觸控功能。 觸控式介面可讓您使用觸控�
 
 ## 邊欄選擇器 {#rail-selector}
 
-此 **邊欄選擇器** 可在視窗左上方取得，並依據您目前的主控台顯示選項。
+**邊欄選取器**&#x200B;會顯示在視窗左上角，並根據您目前的主控台顯示選項。
 
-![展開的邊欄選擇器](/help/sites-cloud/authoring/assets/rail-selector-expanded.png)
+已展開![邊欄選擇器](/help/sites-cloud/authoring/assets/rail-selector-expanded.png)
 
-例如，在 **網站** 控制檯您可以選取「僅限內容」（預設值）、「內容樹」、「時間軸」、「參照」、「場地詳細資訊」或「篩選器」側面板。
+例如，在&#x200B;**網站**&#x200B;主控台中，您可以選取僅限內容（預設）、內容樹狀結構、時間軸、參考、網站詳細資訊或篩選器側面板。
 
 如果選取「僅限內容」，則只會出現邊欄圖示。 選取任何其他選項時，選項名稱會出現在邊欄圖示旁。
 
 >[!NOTE]
 >
->[鍵盤快速鍵](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) 可用來快速切換邊欄顯示選項。
+>[鍵盤快速鍵](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)可用來快速切換邊欄顯示選項。
 
 ### 內容樹狀結構 {#content-tree}
 
@@ -413,13 +413,13 @@ AEM使用者介面已啟用觸控功能。 觸控式介面可讓您使用觸控�
 >
 >選取階層檢視中的專案後，可使用方向鍵來快速瀏覽階層。
 >
->另請參閱 [鍵盤快速鍵](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) 以取得詳細資訊。
+>如需詳細資訊，請參閱[鍵盤快速鍵](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)。
 
-### 時間軸 {#timeline}
+### 時間表 {#timeline}
 
 時間軸可用於檢視和/或啟動所選資源上已發生的事件。 若要開啟時間軸欄，請使用邊欄選取器：
 
-![時間軸樹狀結構](/help/sites-cloud/authoring/assets/timeline.png)
+![時間表樹狀結構](/help/sites-cloud/authoring/assets/timeline.png)
 
 時間軸欄可讓您：
 
@@ -433,7 +433,7 @@ AEM使用者介面已啟用觸控功能。 觸控式介面可讓您使用觸控�
       * [啟動](/help/sites-cloud/authoring/launches/overview.md)
       * [版本](/help/sites-cloud/authoring/features/page-versions.md)
       * [工作流程](/help/sites-cloud/authoring/workflows/overview.md)
-         * 暫時性工作流程除外，因為系統不會儲存這些工作流程的歷程記錄資訊 <!--With the exception of [transient workflows](/help/sites-developing/workflows.md#transient-workflows) as no history information is saved for these-->
+         * 暫時性工作流程除外，因為沒有儲存這些<!--With the exception of [transient workflows](/help/sites-developing/workflows.md#transient-workflows) as no history information is saved for these-->的歷史記錄資訊
       * 顯示全部
 
 * 新增/檢視有關所選項目的註解。「注 **釋** 」方塊會顯示在事件清單的底部。鍵入注釋後跟Return將註冊注釋。當選取「注 **釋** 」或「 **全部顯示** 」時顯示。
@@ -443,13 +443,13 @@ AEM使用者介面已啟用觸控功能。 觸控式介面可讓您使用觸控�
    * [儲存版本](/help/sites-cloud/authoring/features/page-versions.md)
    * [啟動工作流程](/help/sites-cloud/authoring/workflows/applying.md)
 
-這些選項可透過 **註解** 欄位。
+這些選項可透過&#x200B;**註解**&#x200B;欄位旁的>形箭號存取。
 
-![評論欄位](/help/sites-cloud/authoring/assets/comments.png)
+![註解欄位](/help/sites-cloud/authoring/assets/comments.png)
 
 ### 參考 {#references}
 
-**引用** 顯示與所選資源的任何連線。 例如，在 **網站** 主控台 [引用](/help/sites-cloud/authoring/fundamentals/environment-tools.md#references) 若為頁面，則顯示：
+**參考**&#x200B;顯示與所選資源的任何連線。 例如，在&#x200B;**Sites**&#x200B;主控台中，[頁面的引用](/help/sites-cloud/authoring/fundamentals/environment-tools.md#references)會顯示：
 
 * [啟動](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console)
 * [即時副本](/help/sites-cloud/administering/msm/overview.md#openingthelivecopyoverviewfromreferences)
@@ -459,22 +459,22 @@ AEM使用者介面已啟用觸控功能。 觸控式介面可讓您使用觸控�
    * 從其他頁面連結至所選頁面
    * 參考元件在所選頁面中借用的內容和/或借出的內容
 
-![引用範例](/help/sites-cloud/authoring/assets/references-example.png)
+![參考範例](/help/sites-cloud/authoring/assets/references-example.png)
 
 ### 網站 {#site}
 
-**網站** 顯示網站的詳細資料 [使用網站範本建立](/help/sites-cloud/administering/site-creation/create-site.md).
+**網站**&#x200B;顯示使用網站範本](/help/sites-cloud/administering/site-creation/create-site.md)建立的網站[的詳細資料。
 
 ![網站邊欄](../assets/site-rail.png)
 
-檢視檔案 [使用網站邊欄管理您的網站主題](/help/sites-cloud/administering/site-creation/site-rail.md) 以進一步瞭解如何使用邊欄管理 [您的網站主題](/help/sites-cloud/administering/site-creation/site-themes.md).
+請參閱檔案[使用網站邊欄管理您的網站主題](/help/sites-cloud/administering/site-creation/site-rail.md)，以取得有關如何使用邊欄管理網站[主題](/help/sites-cloud/administering/site-creation/site-themes.md)的詳細資訊。
 
 >[!TIP]
 >
->從範本建立網站並自訂其主題的程式的端對端說明可在以下連結中找到： [快速網站建立歷程](/help/journey-sites/quick-site/overview.md).
+>您可以在[快速網站建立歷程](/help/journey-sites/quick-site/overview.md)中找到從範本建立網站並自訂其主題的程式的端對端說明。
 
 ### 篩選條件 {#filter}
 
-這會開啟一個面板，類似於 [搜尋](/help/sites-cloud/authoring/getting-started/search.md) 並設定適當的位置篩選器，讓您進一步篩選想要檢視的內容。
+這會開啟類似於[搜尋](/help/sites-cloud/authoring/getting-started/search.md)的面板，並已設定適當的位置篩選器，可讓您進一步篩選您要檢視的內容。
 
 ![篩選器範例](/help/sites-cloud/authoring/assets/filter.png)

@@ -18,7 +18,7 @@ ht-degree: 83%
 
 ## 先決條件 {#prerequisites}
 
-使用WYSIWYG製作搭配Edge Delivery Services的專案會繼承任何其他Edge Delivery Services專案的大部分機制，不受內容來源或 [製作方法。](/help/edge/wysiwyg-authoring/authoring.md)
+使用WYSIWYG製作與Edge Delivery Services的專案會繼承任何其他Edge Delivery Services專案的大部分機制，與內容來源或[製作方法無關。](/help/edge/wysiwyg-authoring/authoring.md)
 
 在開始為專案的內容建立模式之前，請確保先閱讀以下文件。
 
@@ -39,7 +39,7 @@ ht-degree: 83%
 * **影像**：來源、描述
 * **按鈕**：文字、標題、url、類型 (預設、主要、次要)
 
-這些元件的模型是 [使用Edge Delivery Services進行WYSIWYG製作的樣板。](https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/component-models.json#L2-L112)
+這些元件的模型是使用Edge Delivery Services進行WYSIWYG製作的[樣板的一部分。](https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/component-models.json#L2-L112)
 
 ## 區塊 {#blocks}
 
@@ -345,7 +345,7 @@ ht-degree: 83%
 * **影像** - 如果 AEM 中的資源參照是 MIME 類型並且是以 `image/` 為開頭的資產，參照會呈現為 `<picture><img src="${reference}"></picture>`。
 * **連結** - 如果參照存在於 AEM 中且不是影像，或該值是以 `https?://` 或者 `#` 為開頭，則參照呈現為 `<a href="${reference}">${reference}</a>`。
 * **RTF 文字** - 如果裁剪後的值以段落 (`p`, `ul`、`ol`、`h1` -`h6` 等) 為開頭，則該值呈現為 RTF 文字。
-* **類別名稱** - `classes` 會將屬性視為 [區塊選項](/help/edge/developer/markup-sections-blocks.md#block-options) 並在表格標題中針對下列專案轉譯： [簡單區塊，](#simple) 或當做中專案的值清單 [容器區塊。](#container) 如果您想，這個功能會很有用 [以不同方式設定區塊的樣式，](/help/edge/wysiwyg-authoring/create-block.md#block-options) 但是不需要建立全新的區塊。
+* **類別名稱** - `classes`屬性會視為[區塊選項](/help/edge/developer/markup-sections-blocks.md#block-options)，並在[簡單區塊，](#simple)的資料表標頭中呈現，或是[容器區塊中專案的值清單。](#container)如果您要[以不同方式設定區塊的樣式，](/help/edge/wysiwyg-authoring/create-block.md#block-options)，但不需要建立全新的區塊，這會很有用。
 * **值清單** - 如果某個值是多值屬性，且第一個值不是前面的任何一個值，則所有值將連接為逗號分隔清單。
 
 其他所有內容都將呈現為純文字。
@@ -652,11 +652,11 @@ AEM 中提供的許多預設頁面屬性都會對應到文件中各別的頁面�
 
 現在您知道了如何模型化內容，您可以使用WYSIWYG編寫專案為自己的Edge Delivery Services建立區塊。
 
-檢視檔案 [建立可搭配通用編輯器使用的區塊](/help/edge/wysiwyg-authoring/create-block.md) 瞭解如何在WYSIWYG製作和Edge Delivery Services專案中，建立可搭配通用編輯器使用的區塊。
+請參閱檔案[建立用於萬用編輯器的區塊](/help/edge/wysiwyg-authoring/create-block.md)，瞭解如何建立用於萬用編輯器的區塊(透過Edge Delivery Services專案進行WYSIWYG製作)。
 
-如果您已熟悉建立區塊，請參閱檔案 [使用Edge Delivery Services進行WYSIWYG編寫的開發人員快速入門手冊](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) 讓您使用Edge Delivery Services和通用編輯器來編寫內容，進而使用新的Adobe Experience Manager網站。
+如果您已熟悉建立區塊，請參閱檔案[使用Edge Delivery Services進行WYSIWYG編寫的開發人員快速入門手冊](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)，以使用Edge Delivery Services和通用編輯器編寫內容，讓您啟動並執行新的Adobe Experience Manager網站。
 
 >[!TIP]
 >
->如需以AEMas a Cloud Service作為內容來源來建立啟用WYSIWYG製作的新Edge Delivery Services專案的端對端逐步解說，請檢視 [此AEM GEM網路研討會。](https://experienceleague.adobe.com/en/docs/events/experience-manager-gems-recordings/gems2024/wysiwyg-authoring-and-edge-delivery)
+>如需以AEM as a Cloud Service作為內容來源來建立啟用WYSIWYG製作的新Edge Delivery Services專案的端對端逐步解說，請檢視[此AEM GEM網路研討會。](https://experienceleague.adobe.com/en/docs/events/experience-manager-gems-recordings/gems2024/wysiwyg-authoring-and-edge-delivery)
 

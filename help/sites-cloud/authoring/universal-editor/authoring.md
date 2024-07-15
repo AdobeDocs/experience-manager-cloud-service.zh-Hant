@@ -37,22 +37,22 @@ Universal Editor 支援在任意實作中編輯任何方面的內容，以便提
 
 ## 存取通用編輯器 {#accessing}
 
-一旦將應用程式檢測為可使用通用編輯器後，該通用編輯器就可以在AEMas a Cloud Service記憶體取並直接存取，而無需存取AEM。
+一旦將應用程式檢測為可使用通用編輯器後，您便可在AEM as a Cloud Service記憶體取通用編輯器，且無需存取AEM即可直接存取。
 
-### 在AEMas a Cloud Service中存取 {#accessing-aem}
+### 在AEM as a Cloud Service中存取 {#accessing-aem}
 
-1. 登入您的AEMas a Cloud Service編寫執行個體。
-1. 使用 [**網站** 主控台](/help/sites-cloud/authoring/sites-console/introduction.md) 導覽至您要編輯的用於通用編輯器的頁面。
+1. 登入您的AEM as a Cloud Service編寫執行個體。
+1. 使用&#x200B;[**Sites**&#x200B;主控台](/help/sites-cloud/authoring/sites-console/introduction.md)瀏覽至與您要編輯的通用編輯器一起使用的頁面。
 1. 編輯頁面。
 1. 「通用編輯器」會開啟以編輯所選頁面。
 
 >[!NOTE]
 >
->在中編輯頁面時 [**網站** 主控台，](/help/sites-cloud/authoring/sites-console/introduction.md) 主控台將開啟適合頁面的編輯器 [範本：](/help/sites-cloud/authoring/sites-console/templates.md) 本檔案所述的通用編輯器，或 [頁面編輯器。](/help/sites-cloud/authoring/page-editor/introduction.md)
+>在&#x200B;[**網站**&#x200B;主控台中編輯頁面時，](/help/sites-cloud/authoring/sites-console/introduction.md)主控台將開啟適合頁面[範本：](/help/sites-cloud/authoring/sites-console/templates.md)的編輯器，可以是本檔案中說明的通用編輯器，或[頁面編輯器。](/help/sites-cloud/authoring/page-editor/introduction.md)
 
 ### 直接存取 {#accessing-directly}
 
-1. 登入通用編輯器。 您需要Adobe ID才能登入和 [擁有通用編輯器的存取權。](/help/implementing/universal-editor/getting-started.md#request-access)
+1. 登入通用編輯器。 您需要Adobe ID才能登入，[才能存取通用編輯器。](/help/implementing/universal-editor/getting-started.md#request-access)
 
 1. 登入後，請在[位置列中輸入您要編輯的頁面 URL。](#location-bar)這樣一來，您就可以開始編輯內容，例如[文字內容](#text-mode)或[媒體內容](#media-mode)。
 
@@ -111,7 +111,7 @@ Experience Cloud 標頭會始終顯示在畫面頂端。這是一個錨點，說
 
 ### 通用編輯器工具列 {#universal-editor-toolbar}
 
-Universal Editor工具列一律會顯示在畫面頂端，緊接在底下 [Experience Cloud標頭。](#experience-cloud-header)它可讓您快速存取，以導覽到另一個頁面進行編輯和發佈目前的頁面。
+Universal Editor工具列一律出現在熒幕頂端[Experience Cloud標頭正下方。](#experience-cloud-header)它可讓您快速存取，以導覽到另一個頁面進行編輯和發佈目前的頁面。
 
 ![通用編輯器工具列](assets/universal-editor-toolbar.png)
 
@@ -127,7 +127,7 @@ Universal Editor工具列一律會顯示在畫面頂端，緊接在底下 [Exper
 
 >[!NOTE]
 >
->您要使用通用編輯器編輯的任何頁面必須是 [用於支援通用編輯器。](/help/implementing/universal-editor/getting-started.md)
+>您要使用通用編輯器編輯的任何頁面都必須進行[檢測以支援通用編輯器。](/help/implementing/universal-editor/getting-started.md)
 
 #### 位置列 {#location-bar}
 
@@ -141,11 +141,11 @@ Universal Editor工具列一律會顯示在畫面頂端，緊接在底下 [Exper
 
 >[!NOTE]
 >
->您要使用通用編輯器編輯的任何頁面必須是 [用於支援通用編輯器。](/help/implementing/universal-editor/getting-started.md)
+>您要使用通用編輯器編輯的任何頁面都必須進行[檢測以支援通用編輯器。](/help/implementing/universal-editor/getting-started.md)
 
 #### 驗證標題設定 {#authentication-settings}
 
-如果您需要，請選取驗證標題設定圖示 [設定自訂驗證標頭，以供本機開發之用。](/help/implementing/universal-editor/developer-overview.md#auth-header)
+如果您需要[設定本機開發目的的自訂驗證標頭，請選取驗證標頭設定圖示。](/help/implementing/universal-editor/developer-overview.md#auth-header)
 
 ![驗證標題設定按鈕](assets/authentication-header-settings.png)
 
@@ -175,7 +175,7 @@ Universal Editor工具列一律會顯示在畫面頂端，緊接在底下 [Exper
 
 >[!TIP]
 >
->使用快速鍵 `P` 來切換至預覽模式，或是從預覽模式切換。
+>使用快速鍵`P`切換至預覽模式，或切換自預覽模式。
 
 #### 開啟應用程式預覽 {#open-app-preview}
 
@@ -195,7 +195,7 @@ Universal Editor工具列一律會顯示在畫面頂端，緊接在底下 [Exper
 
 >[!TIP]
 >
->檢視檔案 [使用通用編輯器發佈內容](publishing.md) 以取得有關使用Universal Editor發佈的詳細資訊。
+>請參閱檔案[使用通用編輯器發佈內容](publishing.md)，以取得使用通用編輯器發佈的詳細資訊。
 
 ### 編輯器 {#editor}
 
@@ -289,9 +289,9 @@ Universal Editor工具列一律會顯示在畫面頂端，緊接在底下 [Exper
 
 >[!TIP]
 >
->依預設，點選或按一下內容會選取內容以進行編輯。 如果您想透過以下連結導覽內容，請切換至 [預覽模式。](#preview-mode)
+>依預設，點選或按一下內容會選取內容以進行編輯。 如果您想透過下列連結導覽內容，請切換至[預覽模式。](#preview-mode)
 
-根據您選取的內容，您可能有不同的就地編輯選項，而且您可能會為中的內容提供其他資訊和選項 [屬性邊欄。](#properties-rail)
+根據您選取的內容，您可能有不同的就地編輯選項，而且您可能會在[屬性邊欄中針對內容提供額外的資訊和選項。](#properties-rail)
 
 ### 編輯純文字 {#edit-plain-text}
 
@@ -303,7 +303,7 @@ Universal Editor工具列一律會顯示在畫面頂端，緊接在底下 [Exper
 
 當您選取選取文字元件時，其詳細資訊會顯示在「屬性」邊欄中。 您也可以在邊欄中編輯文字。
 
-![編輯屬性邊欄中的文字](assets/ue-editing-text-component-rail.png)
+![正在編輯屬性邊欄中的文字](assets/ue-editing-text-component-rail.png)
 
 此外，屬性邊欄中也提供您文字的詳細資料。 一旦焦點離開屬性邊欄中已編輯的欄位，變更就會自動儲存。
 
@@ -315,8 +315,8 @@ Universal Editor工具列一律會顯示在畫面頂端，緊接在底下 [Exper
 
 為方便起見，您可在兩個位置找到文字的格式選項和詳細資訊。
 
-* 此 **內容功能表** 會在RTF區塊上方開啟，並在內容中提供基本的格式選項。 由於空間限制，某些選項可能會隱藏在省略符號按鈕後面。
-* 此 **屬性邊欄** 顯示所有可用的格式選項以及文字。
+* **內容功能表**&#x200B;會在RTF區塊上方開啟，並在內容中提供基本的格式選項。 由於空間限制，某些選項可能會隱藏在省略符號按鈕後面。
+* **屬性邊欄**&#x200B;會顯示所有可用的格式選項以及文字。
 
 一旦焦點離開已編輯的欄位，變更會自動儲存。
 
@@ -329,13 +329,13 @@ Universal Editor工具列一律會顯示在畫面頂端，緊接在底下 [Exper
 1. 在屬性邊欄中，點選或按一下所選影像的預覽。
 1. [資產選擇器](/help/assets/asset-selector.md#using-asset-selector)視窗會開啟，讓您可選取資產。
 1. 選取「 」以選取新資產。
-1. 選取 **選取** 以返回取代資產的屬性邊欄。
+1. 選取&#x200B;**選取**&#x200B;以返回取代資產的屬性邊欄。
 
 變更會自動儲存到您的內容中。
 
 ### 編輯內容片段 {#edit-content-fragment}
 
-如果您選取 [內容片段，](/help/sites-cloud/administering/content-fragments/overview.md) 您可以在「屬性」邊欄中編輯其詳細資料。
+如果您選取[內容片段，](/help/sites-cloud/administering/content-fragments/overview.md)，您可以在屬性邊欄中編輯其詳細資料。
 
 ![編輯內容片段](assets/ue-edit-cf.png)
 
@@ -345,7 +345,7 @@ Universal Editor工具列一律會顯示在畫面頂端，緊接在底下 [Exper
 
 一旦焦點離開屬性邊欄中已編輯的欄位，變更就會自動儲存。
 
-如果您想在 [內容片段編輯器](/help/sites-cloud/administering/content-fragments/authoring.md) 請改為按一下 [編輯按鈕](#edit) 在模式邊欄中。
+如果您想改在[內容片段編輯器](/help/sites-cloud/administering/content-fragments/authoring.md)中編輯您的內容片段，請按一下模式邊欄中的[編輯按鈕](#edit)。
 
 根據工作流程的需求，您可能會想要在通用編輯器中或直接在內容片段編輯器中編輯內容片段。
 
@@ -394,13 +394,13 @@ Universal Editor工具列一律會顯示在畫面頂端，緊接在底下 [Exper
 
 內容編輯完成後，您通常會希望瀏覽其內容，以查看它在其他頁面內容中的樣子。在[預覽模式](#preview-mode)中，您可以點選連結，像讀者一樣瀏覽您的內容。內容在編輯器中呈現的樣子就是將會發佈的樣子。
 
-在預覽模式中，點選或按一下內容的反應就像對內容的讀者一樣。 如果您想要選取要編輯的內容，請切換退出 [預覽模式。](#preview-mode)
+在預覽模式中，點選或按一下內容的反應就像對內容的讀者一樣。 若要選取要編輯的內容，請切換出[預覽模式。](#preview-mode)
 
 ## 其他資源 {#additional-resources}
 
 若要瞭解如何使用通用編輯器發佈內容，請參閱本檔案。
 
-* [使用通用編輯器發佈內容](publishing.md)  — 瞭解通用編輯器如何發佈內容，以及您的應用程式如何處理已發佈的內容。
+* [使用通用編輯器發佈內容](publishing.md) — 瞭解通用編輯器如何發佈內容，以及您的應用程式如何處理已發佈的內容。
 
 若要深入瞭解通用編輯器的技術細節，請參閱這些開發人員檔案。
 

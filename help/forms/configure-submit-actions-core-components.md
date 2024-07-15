@@ -31,14 +31,14 @@ ht-degree: 46%
 * 使用表單資料模型(FDM)，順暢地將資料傳送至已設定的資料來源。
 * 方便地將資料提交到 REST 端點。
 
-您可以 [擴充預設提交動作](custom-submit-action-form.md). 您也可以針對組織的特定需求自訂「提交動作」。
+您可以[擴充預設提交動作](custom-submit-action-form.md)。 您也可以針對組織的特定需求自訂「提交動作」。
 
-若要定義最適化的Submit動作，請使用 **最適化表單容器** 元件。 的設定對話方塊 **最適化表單容器** 元件包括：
+若要定義最適化表單的提交動作，請使用&#x200B;**最適化表單容器**&#x200B;元件的[設定]對話方塊。 **最適化表單容器**&#x200B;元件的設定對話方塊包括：
 * 基本標籤
 * 表單資料模型標籤
 * 提交索引標籤
 
-您可以使用設定對話方塊來定義表單容器屬性。 若要進一步瞭解表單容器元件的「設定」對話方塊， [按一下這裡。](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/form-container.html)
+您可以使用設定對話方塊來定義表單容器屬性。 若要深入瞭解表單容器元件的「設定」對話方塊，[請按一下這裡。](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/form-container.html)
 
 ## 選取並設定最適化表單的提交動作 {#select-and-configure-submit-action}
 
@@ -51,11 +51,11 @@ ht-degree: 46%
 
    ![按一下扳手圖示可開啟「最適化表單容器」對話框，以設定提交動作](/help/forms/assets/adaptive-forms-submit-message.png)
 
-1. 選取並設定 **[!UICONTROL 提交動作]**，根據您的需求。
+1. 根據您的需求，選取並設定&#x200B;**[!UICONTROL 提交動作]**。
 
 您也可以為最適化表單提交設定不同的動作。
-* **重新導向URL/路徑**  — 此選項可讓使用者為每個表單設定頁面，表單使用者在提交調適型表單後會重新導向至該頁面。
-* **顯示訊息**  — 此選項可讓使用者新增訊息，該訊息會在成功提交最適化表單時顯示。 預先定義的文字會包含在對話方塊中，且使用者可加以修改。
+* **重新導向URL/路徑** — 此選項可讓使用者為每個表單設定頁面，表單使用者在提交最適化表單後會重新導向至該頁面。
+* **顯示訊息** — 此選項可讓使用者新增在成功提交最適化表單時顯示的訊息。 預先定義的文字會包含在對話方塊中，且使用者可加以修改。
 
 如需有關下列「提交動作」的詳細資訊，請參閱：
 
@@ -74,7 +74,7 @@ ht-degree: 46%
 * [將最適化表單連接到 Salesforce 應用程式](/help/forms/aem-forms-salesforce-integration.md)
 * [將最適化表單連接到 Microsoft® Dynamics OData](/help/forms/ms-dynamics-odata-configuration.md)
 
-您可以 [自訂預設提交動作](custom-submit-action-form.md). 此外，您可以自訂「提交動作」以符合特定的組織需求。
+您可以[自訂預設提交動作](custom-submit-action-form.md)。 此外，您可以自訂「提交動作」以符合特定的組織需求。
 
 
 <!--
@@ -213,7 +213,7 @@ If end-user bypass those validations and submit the forms, the server again perf
 
 為了 AEM 安全性和強化準則，請設定自訂錯誤頁面，例如 400.jsp、404.jsp 和 500.jsp。提交表單時，如果出現 400、404 或 500 錯誤，就會呼叫這些處理常式。在發佈節點上觸發這些錯誤代碼時，也會呼叫處理常式。您也可以為其他 HTTP 錯誤代碼建立 JSP 頁面。
 
-當您將表單資料模型(FDM)或結構描述型調適型表單以XML或JSON資料投訴預先填寫到資料不包含的結構描述時 `<afData>`， `<afBoundData>`、和 `</afUnboundData>` 標籤中，則最適化表單之無限制欄位的資料會遺失。 結構描述可以是XML結構描述、JSON結構描述或表單資料模型(FDM)。 未繫結欄位是最適化表單欄位，但沒有 `bindref` 屬性。
+當您將包含XML或JSON資料投訴的表單資料模型(FDM)或結構描述型調適型表單預填至資料不包含`<afData>`、`<afBoundData>`和`</afUnboundData>`標籤的結構描述時，調適型表單未限制欄位的資料會遺失。 結構描述可以是XML結構描述、JSON結構描述或表單資料模型(FDM)。 未繫結欄位是最適化表單欄位，但沒有 `bindref` 屬性。
 
 <!-- For more information, see [Customizing Pages shown by the Error Handler](/help/sites-developing/customizing-errorhandler-pages.md). -->
 

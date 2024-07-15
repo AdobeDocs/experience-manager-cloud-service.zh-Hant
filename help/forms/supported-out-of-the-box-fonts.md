@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # 開箱即用(OOTB)支援的字型，可在Formsas a Cloud Service上產生PDF  {#ootb-supported-fonts-overview}
 
-AEM Formsas a Cloud Service提供多種內建OOTB支援的字型，可在其中順暢使用 [通訊API](/help/forms/aem-forms-cloud-service-communications-introduction.md)， [核心元件的記錄檔案](/help/forms/generate-document-of-record-core-components.md#customize-the-branding-information-in-document-of-record)、和 [基礎元件的記錄檔案](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#customize-the-branding-information-in-document-of-record).
+AEM Forms as a Cloud Service提供多種內建OOTB支援的字型，可順暢地用於[通訊API](/help/forms/aem-forms-cloud-service-communications-introduction.md)、[核心元件的記錄檔案](/help/forms/generate-document-of-record-core-components.md#customize-the-branding-information-in-document-of-record)以及[基礎元件的記錄檔案](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#customize-the-branding-information-in-document-of-record)。
 
 <!--
 
@@ -52,5 +52,5 @@ OOTB支援字型的清單為：
 * eurosign.ttf
 
 
-除了上述字型之外，您也可以使用自訂字型來為PDF提供特定外觀。 若要啟用自訂字型，請 [新增自訂字型至您的Formsas a Cloud Service環境](/help/forms/use-custom-fonts.md) 具有有效的授權。
+除了上述字型之外，您也可以使用自訂字型來為PDF提供特定外觀。 若要啟用自訂字型，請使用有效的授權[將自訂字型新增至您的Formsas a Cloud Service環境](/help/forms/use-custom-fonts.md)。
 

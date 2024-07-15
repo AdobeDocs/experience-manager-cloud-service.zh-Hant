@@ -25,7 +25,7 @@ Cloud Manager 使用專門的構建環境構建和測試您的程式碼。
 * 已安裝 Apache Maven 3.9.4。
    * Adobe 建議用者[更新其 Maven 存放庫以使用 HTTPS 而非 HTTP。](#https-maven)
 * 安裝的Java版本為OracleJDK 11.0.22和OracleJDK 8u401。
-* **重要**：根據預設， `JAVA_HOME` 環境變數已設為 `/usr/lib/jvm/jdk1.8.0_401` 其中包含OracleJDK 8u401。 *_AEM雲端專案應覆寫此預設值，才能使用JDK 11_*. 請參閱 [設定Maven JDK版本](#alternate-maven-jdk-version) 區段以取得更多詳細資料。
+* **重要**：依預設，`JAVA_HOME`環境變數設為`/usr/lib/jvm/jdk1.8.0_401`，其中包含OracleJDK 8u401。 *_AEM雲端專案應覆寫此預設以使用JDK 11_*。 如需詳細資訊，請參閱[設定Maven JDK版本](#alternate-maven-jdk-version)區段。
 * 安裝了一些必要的附加系統套件。
    * `bzip2`
    * `unzip`
@@ -54,13 +54,13 @@ Cloud Manager [2023.10.0 版](/help/implementing/cloud-manager/release-notes/202
 
 ### 使用特定 Java 版本 {#using-java-support}
 
-預設情況下，專案會透過Cloud Manager建置流程使用Oracle8 JDK來建置，但強烈建議AEM Cloud Service客戶將用來執行Maven的JDK版本設定為 `11`.
+根據預設，專案是由Cloud Manager建置流程使用Oracle8 JDK建置，但強烈建議AEM Cloud Service客戶將用於執行Maven的JDK版本設定為`11`。
 
 #### 設定Maven JDK版本 {#alternate-maven-jdk-version}
 
-建議將整個Maven執行的JDK版本設為 `11` 在 `.cloudmanager/java-version` 檔案。
+建議在`.cloudmanager/java-version`檔案中將整個Maven執行的JDK版本設為`11`。
 
-為此，可在管道使用的 Git 存放庫分支中建立名為 `.cloudmanager/java-version` 的檔案。編輯檔案，使其僅包含文字， `11`. 同時Cloud Manager也接受值 `8`，AEM Cloud Service專案不再支援此版本。 任何其他值會受到忽略。時間 `11` 已指定，使用Oracle11，且 `JAVA_HOME` 環境變數已設為 `/usr/lib/jvm/jdk-11.0.22`.
+為此，可在管道使用的 Git 存放庫分支中建立名為 `.cloudmanager/java-version` 的檔案。編輯檔案，使其僅包含文字`11`。 雖然Cloud Manager也接受`8`的值，但AEM Cloud Service專案不再支援此版本。 任何其他值會受到忽略。指定`11`時，會使用Oracle11，且`JAVA_HOME`環境變數設為`/usr/lib/jvm/jdk-11.0.22`。
 
 ## 環境變數 {#environment-variables}
 
@@ -87,7 +87,7 @@ Cloud Manager [2023.10.0 版](/help/implementing/cloud-manager/release-notes/202
 
 在某些情況下，您的建置流程可能會依據特定的設定變數而定，這些變數不適合放入 Git 存放庫中，或者在使用同一分支的管道執行之間需要有所變化。
 
-請參閱檔案 [設定管道變數](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md) 以取得詳細資訊
+如需詳細資訊，請參閱檔案[設定管道變數](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md)
 
 ## 安裝附加系統套件 {#installing-additional-system-packages}
 

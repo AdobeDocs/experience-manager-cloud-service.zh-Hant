@@ -1,9 +1,10 @@
 ---
-title: AEM Formsas a Cloud Service提供哪些立即可用的使用者群組？
+title: AEM Forms as a Cloud Service中哪些使用者群組是現成可用的群組？
 description: 現成可用的使用者群組清單以及指派給每個群組的許可權
 role: Admin, Developer, User
 feature: Adaptive Forms
-source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
+exl-id: bd66ce92-14d9-47fe-b5d3-022e3e468d25
+source-git-commit: 05548d56d791584781606b02839c5602b4469f7b
 workflow-type: tm+mt
 source-wordcount: '167'
 ht-degree: 23%
@@ -17,9 +18,9 @@ ht-degree: 23%
 | AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/manage-administer-aem-forms/forms-groups-privileges-tasks.html) |
 | AEM as a Cloud Service  | 本文章 |
 
-您可以 [建立群組](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html#accessing) 並指派原則和 [使用者](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html#accessing) 至群組。 這些原則可控制屬於群組之使用者的許可權。
+您可以[建立群組](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html#accessing)，並將原則和[使用者](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html#accessing)指派給群組。 這些原則可控制屬於群組之使用者的許可權。
 
-設定後 [!DNL AEM Forms] as a Cloud Service，下表列出的群組如下 [!DNL forms-users] 和表單 — 超級使用者，可自動用於指派：
+設定[!DNL AEM Forms]as a Cloud Service後，下表列出的群組（例如[!DNL forms-users]和forms-power-user）便會自動可供指派：
 
 <table>
  <tbody>
@@ -61,7 +62,7 @@ ht-degree: 23%
    <td>[!DNL template-authors] <sup>[2]</sup></td> 
    <td>
     <ul> 
-     <li>建立及預覽最適化Forms <!-- or interactive communications --> 範本</li> 
+     <li>建立和預覽最適化Forms <!-- or interactive communications -->範本</li> 
     </ul> </td> 
   </tr>
   <tr>

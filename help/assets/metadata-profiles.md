@@ -26,21 +26,21 @@ ht-degree: 21%
 
 ## 新增中繼資料設定檔 {#adding-a-metadata-profile}
 
-1. 瀏覽至 **[!UICONTROL 工具]** > **[!UICONTROL 資產]** > **[!UICONTROL 中繼資料設定檔]**，然後按一下 **[!UICONTROL 建立]**.
-1. 輸入中繼資料設定檔的標題，例如「範例中繼資料」，然後選取 **[!UICONTROL 提交]**. 此時會顯示中繼資料設定檔的編輯表單。
-1. 按一下元件，然後在以下位置設定其屬性： **[!UICONTROL 設定]** 標籤。 例如，按一下 **[!UICONTROL 說明]** 元件並編輯其屬性。
-編輯下列屬性 **[!UICONTROL 說明]** 元件：
+1. 導覽至&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL Assets]** > **[!UICONTROL 中繼資料設定檔]**，然後按一下&#x200B;**[!UICONTROL 建立]**。
+1. 輸入中繼資料設定檔的標題，例如「範例中繼資料」，然後選取&#x200B;**[!UICONTROL 提交]**。 此時會顯示中繼資料設定檔的編輯表單。
+1. 按一下元件，然後在&#x200B;**[!UICONTROL 設定]**&#x200B;索引標籤中設定其屬性。 例如，按一下&#x200B;**[!UICONTROL Description]**元件並編輯其屬性。
+編輯**[!UICONTROL Description]**&#x200B;元件的下列屬性：
 
-   * **[!UICONTROL 欄位標籤]**  — 中繼資料屬性的顯示名稱。 僅供使用者參考。
-   * **[!UICONTROL 對應至屬性]**  — 此屬性的值提供資產節點的相對路徑/名稱，資產節點會儲存於存放庫中。 此值應一律以 `./` 因為它表示路徑在資產的節點下。
+   * **[!UICONTROL 欄位標籤]** — 中繼資料屬性的顯示名稱。 僅供使用者參考。
+   * **[!UICONTROL 對應到屬性]** — 此屬性的值提供儲存於存放庫中的資產節點相對路徑/名稱。 此值應一律以`./`開頭，因為它表示路徑在資產的節點下。
 
-     您為指定的值 **[!UICONTROL 對應至屬性]** 會儲存為資產中繼資料節點下的屬性。 例如，如果您指定。`/jcr:content/metadata/dc:desc` 作為的名稱 **[!UICONTROL 對應至屬性]**， [!DNL Adobe Experience Manager Assets] 儲存值 `dc:desc` 位於資產的中繼資料節點。
+     您為&#x200B;**[!UICONTROL 對應至屬性]**&#x200B;指定的值會儲存為資產中繼資料節點下的屬性。 例如，如果您指定。`/jcr:content/metadata/dc:desc`作為&#x200B;**[!UICONTROL 對應至屬性]**&#x200B;的名稱，[!DNL Adobe Experience Manager Assets]會將值`dc:desc`儲存在資產的中繼資料節點。
 
-   * **[!UICONTROL 預設值]**  — 使用此屬性為中繼資料元件新增預設值。 例如，如果您指定「我的說明」，此值就會指派給屬性 `dc:desc` 位於資產的中繼資料節點。
+   * **[!UICONTROL 預設值]** — 使用此屬性為中繼資料元件新增預設值。 例如，如果您指定「我的說明」，此值就會指派給資產中繼資料節點上的屬性`dc:desc`。
 
      >[!NOTE]
      >
-     >將預設值新增至新的中繼資料屬性(不存在於 `/jcr:content/metadata` 節點)預設不會在資產的屬性頁面上顯示屬性及其值。 若要在 [!UICONTROL 屬性] 頁面，修改對應的結構描述表單。
+     >將預設值新增至新的中繼資料屬性（不存在於`/jcr:content/metadata`節點）時，預設不會在資產的「屬性」頁面上顯示屬性及其值。 若要在[!UICONTROL 屬性]頁面上檢視新屬性，請修改對應的結構描述表單。
 
 1. (可選) 從「建置表單」標籤新增更多元件至「 **[!UICONTROL 編輯表單]** 」，並在「設定」標籤中設定 **[!UICONTROL 其屬性]** 。「生成表單」頁籤提供 **[!UICONTROL 以下屬性]** :
 
@@ -53,20 +53,20 @@ ht-degree: 21%
 | 日期 | 欄位標籤，對應至屬性，預設值 |
 | 標準標記 | 欄位標籤，對應至屬性，預設值，說明 |
 
-1. 按一下 **[!UICONTROL 完成]**. 中繼資料設定檔會新增至 **[!UICONTROL 中繼資料設定檔]** 頁面。
+1. 按一下&#x200B;**[!UICONTROL 完成]**。 已將中繼資料設定檔新增至&#x200B;**[!UICONTROL 中繼資料設定檔]**&#x200B;頁面中的設定檔清單。
 
 ## 複製中繼資料設定檔 {#copying-a-metadata-profile}
 
-1. 從 **[!UICONTROL 中繼資料設定檔]** 頁面上，選取一個中繼資料描述檔來製作復本。
-1. 按一下 **[!UICONTROL 複製]** 工具列中的。
-1. 在 **[!UICONTROL 複製中繼資料設定檔]** 對話方塊中，輸入中繼資料設定檔新復本的標題。
-1. 按一下 **[!UICONTROL 複製]**. 中繼資料描述檔的復本會顯示在「中繼資料描述檔」頁面的描述檔 **[!UICONTROL 清單中]** 。
+1. 從&#x200B;**[!UICONTROL 中繼資料設定檔]**&#x200B;頁面中，選取一個中繼資料設定檔以製作其副本。
+1. 按一下工具列中的&#x200B;**[!UICONTROL 複製]**。
+1. 在&#x200B;**[!UICONTROL 複製中繼資料設定檔]**&#x200B;對話方塊中，輸入新中繼資料設定檔副本的標題。
+1. 按一下&#x200B;**[!UICONTROL 複製]**。 中繼資料描述檔的復本會顯示在「中繼資料描述檔」頁面的描述檔 **[!UICONTROL 清單中]** 。
 
 ## 刪除中繼資料設定檔 {#deleting-a-metadata-profile}
 
-1. 從 **[!UICONTROL 中繼資料設定檔]** 頁面上，選取要刪除的設定檔。
-1. 按一下 **[!UICONTROL 刪除中繼資料設定檔]** （在工具列中）。
-1. 在對話方塊中，按一下 **[!UICONTROL 刪除]** 以確認刪除操作。 中繼資料設定檔會從清單中刪除。
+1. 從&#x200B;**[!UICONTROL 中繼資料設定檔]**&#x200B;頁面，選取要刪除的設定檔。
+1. 按一下工具列中的&#x200B;**[!UICONTROL 刪除中繼資料設定檔]**。
+1. 在對話方塊中，按一下&#x200B;**[!UICONTROL 刪除]**&#x200B;以確認刪除作業。 中繼資料設定檔會從清單中刪除。
 
 ## 將中繼資料設定檔套用至資料夾 {#applying-a-metadata-profile-to-folders}
 
@@ -76,7 +76,7 @@ ht-degree: 21%
 
 在使用者介面中，會以卡片名稱中顯示的設定檔名稱來指出已指派設定檔的資料夾。
 
-若資料夾中已有您後來加以變更的現有中繼資料設定檔，您可以重新處理該資料夾中的資產。 <!-- See [Reprocessing assets in a folder after you have edited its processing profile](processing-profiles.md#reprocessing-assets-in-a-folder-after-you-have-edited-its-processing-profile). -->
+若資料夾中已有您後來加以變更的現有中繼資料設定檔，您可以重新處理該資料夾中的資產。<!-- See [Reprocessing assets in a folder after you have edited its processing profile](processing-profiles.md#reprocessing-assets-in-a-folder-after-you-have-edited-its-processing-profile). -->
 
 ### 將中繼資料設定檔套用至特定資料夾 {#applying-metadata-profiles-to-specific-folders}
 
@@ -84,31 +84,31 @@ ht-degree: 21%
 
 已為其分配配置檔案的資料夾將通過資料夾名稱正下方的配置檔案名稱顯示來指示。
 
-若資料夾中已有您後來加以變更的現有視訊設定檔，您可以重新處理該資料夾中的資產。 <!--See [Reprocessing assets in a folder after you have edited its processing profile](processing-profiles.md#reprocessing-assets-in-a-folder-after-you-have-edited-its-processing-profile). -->
+若資料夾中已有您後來加以變更的現有視訊設定檔，您可以重新處理該資料夾中的資產。<!--See [Reprocessing assets in a folder after you have edited its processing profile](processing-profiles.md#reprocessing-assets-in-a-folder-after-you-have-edited-its-processing-profile). -->
 
 #### 從「設定檔」使用者介面將中繼資料設定檔套用至資料夾 {#applying-metadata-profiles-to-folders-from-profiles-user-interface}
 
-1. 瀏覽至 **[!UICONTROL 工具>資產>中繼資料設定檔]**.
+1. 導覽至&#x200B;**[!UICONTROL 工具> Assets >中繼資料設定檔]**。
 1. 選取您要套用至一或多個資料夾的中繼資料設定檔。
-1. 按一下 **[!UICONTROL 套用中繼資料設定檔至資料夾]** 並選取您要用來接收新上傳資產的資料夾或多個資料夾，然後按一下 **[!UICONTROL 完成]**. 已為其分配配置檔案的資料夾將通過資料夾名稱正下方的配置檔案名稱顯示來指示。
+1. 按一下&#x200B;**[!UICONTROL 將中繼資料設定檔套用至資料夾]**，然後選取您要用來接收新上傳資產的資料夾或多個資料夾，並按一下&#x200B;**[!UICONTROL 完成]**。 已為其分配配置檔案的資料夾將通過資料夾名稱正下方的配置檔案名稱顯示來指示。
 
 #### 從「屬性」將中繼資料設定檔套用至資料夾 {#applying-metadata-profiles-to-folders-from-properties}
 
-1. 在左側邊欄中，按一下 **[!UICONTROL 資產]** 然後導覽至您要套用中繼資料設定檔的資料夾。
-1. 在資料夾中，選取核取記號以選取資料夾，然後選取 **屬性**.
-1. 選取 **[!UICONTROL 中繼資料設定檔]** 標籤並從下拉式選單中選取設定檔，然後按一下 **[!UICONTROL 儲存]**. 已為其分配配置檔案的資料夾將通過資料夾名稱正下方的配置檔案名稱顯示來指示。
+1. 在左側邊欄中，按一下&#x200B;**[!UICONTROL Assets]**，然後導覽至您要套用中繼資料設定檔的資料夾。
+1. 在資料夾中，選取核取記號以選取資料夾，然後選取&#x200B;**屬性**。
+1. 選取「**[!UICONTROL 中繼資料描述檔]**」標籤，然後從下拉式選單中選取描述檔，然後按一下「**[!UICONTROL 儲存]**」。 已為其分配配置檔案的資料夾將通過資料夾名稱正下方的配置檔案名稱顯示來指示。
 
 ### 全域套用中繼資料設定檔 {#applying-a-metadata-profile-globally}
 
-除了將設定檔套用至資料夾之外，您還可以全域套用設定檔，以便上傳到的任何內容 [!DNL Experience Manager Assets] 已套用選取的設定檔。
+除了將設定檔套用至資料夾之外，您也可以全域套用設定檔，以便任何資料夾中上傳至[!DNL Experience Manager Assets]的任何內容皆已套用選取的設定檔。
 
-若資料夾中已有您後來加以變更的現有中繼資料設定檔，您可以重新處理該資料夾中的資產。 <!--See [Reprocessing assets in a folder after you have edited its processing profile](processing-profiles.md#reprocessing-assets-in-a-folder-after-you-have-edited-its-processing-profile). -->
+若資料夾中已有您後來加以變更的現有中繼資料設定檔，您可以重新處理該資料夾中的資產。<!--See [Reprocessing assets in a folder after you have edited its processing profile](processing-profiles.md#reprocessing-assets-in-a-folder-after-you-have-edited-its-processing-profile). -->
 
-**若要全域套用中繼資料設定檔，請執行下列任一項作業**
+**若要全域套用中繼資料設定檔，請執行下列其中一項動作**
 
-* 瀏覽至 `https://[aem_server]/mnt/overlay/dam/gui/content/assets/v2/foldersharewizard.html/content/dam` 並套用適當的設定檔，然後按一下 **[!UICONTROL 儲存]**.
+* 瀏覽至`https://[aem_server]/mnt/overlay/dam/gui/content/assets/v2/foldersharewizard.html/content/dam`並套用適當的設定檔，然後按一下&#x200B;**[!UICONTROL 儲存]**。
 
-* 導覽至CRXDE Lite至下列節點： `/content/dam/jcr:content`. 新增屬性 `metadataProfile:/etc/dam/metadata/dynamicmedia/<name of metadata profile>`. 按一下&#x200B;**「儲存全部」**。
+* 瀏覽至CRXDE Lite到下列節點： `/content/dam/jcr:content`。 新增屬性`metadataProfile:/etc/dam/metadata/dynamicmedia/<name of metadata profile>`。 按一下&#x200B;**「儲存全部」**。
 
 ## 從資料夾中移除中繼資料設定檔 {#removing-a-metadata-profile-from-folders}
 
@@ -118,16 +118,16 @@ ht-degree: 21%
 
 ### 透過設定檔使用者介面從資料夾中移除中繼資料設定檔 {#removing-metadata-profiles-from-folders-via-profiles-user-interface}
 
-1. 按一下Experience Manager標誌並導覽至 **[!UICONTROL 工具>資產>中繼資料設定檔]**.
+1. 按一下Experience Manager標誌並導覽至&#x200B;**[!UICONTROL 工具> Assets >中繼資料設定檔]**。
 1. 選取您要從資料夾或多個資料夾移除的中繼資料設定檔。
-1. 按一下 **[!UICONTROL 從資料夾中移除中繼資料設定檔]** 並選取您要用來從中移除設定檔的資料夾或多個資料夾，然後按一下 **[!UICONTROL 完成]**.
+1. 按一下&#x200B;**[!UICONTROL 從資料夾移除中繼資料描述檔]**，然後選取您要用來從中移除描述檔的資料夾或多個資料夾，並按一下&#x200B;**[!UICONTROL 完成]**。
 
    您可以確認中繼資料描述檔不再套用至資料夾，因為資料夾名稱下方不再有該名稱。
 
 ### 透過「屬性」從資料夾中移除中繼資料設定檔 {#removing-metadata-profiles-from-folders-via-properties}
 
-1. 按一下Experience Manager標誌並導覽 **[!UICONTROL 資產]** 然後移至您要從中移除中繼資料設定檔的資料夾。
-1. 在資料夾中，按一下核取記號以選取資料夾，然後按一下 **[!UICONTROL 屬性]**.
+1. 按一下Experience Manager標誌並導覽&#x200B;**[!UICONTROL Assets]**，然後移至您要從中移除中繼資料設定檔的資料夾。
+1. 在資料夾上，按一下核取記號以選取資料夾，然後按一下&#x200B;**[!UICONTROL 內容]**。
 1. 選擇「元 **[!UICONTROL 資料描述檔]** 」標籤，然後從下拉式選單中選 **[!UICONTROL 擇「無]** 」，然後按一下「 **[!UICONTROL 儲存]**」。已為其分配配置檔案的資料夾將通過資料夾名稱正下方的配置檔案名稱顯示來指示。
 
 **另請參閱**

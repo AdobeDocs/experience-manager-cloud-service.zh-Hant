@@ -1,6 +1,6 @@
 ---
 title: 如何將資料庫連線至 [!DNL AEM Forms] as a Cloud Service？
-description: 從調適型表單或AEM工作流程擷取資料並儲存至RESTful Web服務、以SOAP為基礎的Web服務和OData服務。
+description: 從最適化表單或AEM Workflow擷取資料並儲存至RESTful Web服務、SOAP型Web服務和OData服務。
 feature: Adaptive Forms, Form Data Model
 role: Admin, User
 exl-id: 9d146275-de0a-4861-b060-d205ed6305f3
@@ -32,7 +32,7 @@ ht-degree: 3%
 
 ![aem-forms-data-integration](assets/aem-forms-data-integeration.png)
 
-[!DNL AEM Forms] 資料整合可讓您設定並連線不同的資料來源，使用 [!DNL AEM Forms]. 它提供直覺式使用者介面，可跨連線的資料來源建立商業實體和服務的統一資料呈現結構描述。 此統一表示法稱為表單資料模型(FDM)，是JSON結構描述的延伸。 表單資料模型(FDM)中的實體稱為資料模型物件。 表單資料模型(FDM)可讓您：
+[!DNL AEM Forms]資料整合允許設定不同的資料來源並與[!DNL AEM Forms]連線。 它提供直覺式使用者介面，可跨連線的資料來源建立商業實體和服務的統一資料呈現結構描述。 此統一表示法稱為表單資料模型(FDM)，是JSON結構描述的延伸。 表單資料模型(FDM)中的實體稱為資料模型物件。 表單資料模型(FDM)可讓您：
 
 * 從連線的資料來源存取資料模型物件、屬性和服務。
 * 建立自訂資料模型物件和屬性
@@ -50,7 +50,7 @@ ht-degree: 3%
 
 實施資料整合以將最適化表單傳送到資料庫的第一個步驟是，識別並設定資料來源，該資料來源儲存您要用於最適化Forms中的資訊。 接下來，您會建立表單資料模型(FDM)，此模型會使用一或多個資料來源的資料模型物件、屬性及服務。 您可以根據表單資料模型(FDM)建立最適化Forms，其中最適化表單欄位會繫結至各自的資料來源屬性。
 
-[!DNL AEM Forms] 也可讓您建立與資料來源無關的表單資料模型(FDM)，並在稍後將表單資料模型(FDM)中的資料模型物件和屬性與資料來源建立關聯或繫結。 它可消除您在處理表單資料模型(FDM)時對資料來源的任何依賴性。
+[!DNL AEM Forms]也可讓您建立與資料來源無關的表單資料模型(FDM)，並在稍後將表單資料模型(FDM)中的資料模型物件和屬性與資料來源建立關聯或繫結。 它可消除您在處理表單資料模型(FDM)時對資料來源的任何依賴性。
 
 檢閱下列內容以開始、瞭解並實作資料整合：
 
@@ -61,4 +61,4 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->[!UICONTROL Experience Manager Forms] 不支援關聯式資料庫。
+>[!UICONTROL Experience Manager Forms]不支援關聯式資料庫。

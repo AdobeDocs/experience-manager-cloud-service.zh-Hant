@@ -15,11 +15,11 @@ ht-degree: 1%
 
 # 製作和發佈概念 {#authoring-publishing}
 
-對於內容作者，AEMas a Cloud Service安裝在其最基本的層級可視為三個主要層級
+對於內容作者，AEM as a Cloud Service安裝在其最基本的層級可視為三個主要層級
 
 * 作者階層
 * 預覽層
-* 發佈階層
+* Publish階層
 
 這些階層可互動，讓您在網站上提供內容，讓訪客能夠存取。 基本的工作流程為：
 
@@ -29,9 +29,9 @@ ht-degree: 1%
 
 內容可以是許多不同的型別，包括頁面、資產和出版物。 根據作者的決定，可以略過預覽內容。
 
-![作者、發佈者和Dispatcher圖](assets/author-publish.jpg)
+![作者、發行者和Dispatcher的圖表](assets/author-publish.jpg)
 
-如需AEMas a Cloud Service技術架構的詳細資訊，請參閱本檔案 [Adobe Experience Manager as a Cloud Service架構簡介。](/help/overview/architecture.md)
+如需AEM as a Cloud Service技術架構的詳細資訊，請參閱檔案[Adobe Experience Manager as a Cloud Service架構簡介。](/help/overview/architecture.md)
 
 {{edge-delivery-authoring}}
 
@@ -54,20 +54,20 @@ ht-degree: 1%
 
 AEM也可從製作環境進行管理。
 
-請參閱檔案 [製作快速入門手冊](/help/sites-cloud/authoring/quick-start.md) 以取得製作程式的概觀。
+請參閱檔案[製作快速入門手冊](/help/sites-cloud/authoring/quick-start.md)，瞭解製作程式的概觀。
 
 ## 預覽內容 {#previewing-content}
 
 AEM也提供預覽服務，可讓開發人員和內容作者在網站到達發佈環境並公開使用之前預覽網站的最終體驗。
 
-請參閱檔案 [預覽內容](/help/sites-cloud/authoring/sites-console/previewing-content.md) 以取得更多詳細資料。
+如需詳細資訊，請參閱檔案[預覽內容](/help/sites-cloud/authoring/sites-console/previewing-content.md)。
 
-## 發佈環境 {#publish-environment}
+## Publish環境 {#publish-environment}
 
 準備就緒後，您的網站內容會發佈至發佈層級的發佈環境。 在此處，根據內容範本的外觀，目標對象可以存取網站頁面。
 
-請參閱檔案 [發佈頁面](/help/sites-cloud/authoring/sites-console/publishing-pages.md) 以取得有關發佈和取消發佈頁面的詳細資訊。
+請參閱檔案[發佈頁面](/help/sites-cloud/authoring/sites-console/publishing-pages.md)，以取得有關發佈和取消發佈頁面的詳細資訊。
 
 ## Dispatcher {#dispatcher}
 
-若要最佳化網站訪客的效能， **[Dispatcher](/help/implementing/dispatcher/overview.md)** 會為發佈和預覽層實施負載平衡和快取。
+為了最佳化網站訪客的效能，**[Dispatcher](/help/implementing/dispatcher/overview.md)**&#x200B;針對發佈和預覽層級實作負載平衡和快取。

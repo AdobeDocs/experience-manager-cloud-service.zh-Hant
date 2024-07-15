@@ -23,8 +23,8 @@ Assets檢視可啟用基本的影像編輯，包括調整大小、移除背景�
 
 ## 編輯影像 {#edit-image}
 
-登陸Assets檢視，使用連結 —  [Assets檢視](https://experience.adobe.com/#/assets) 並選取正確的存放庫。 若要獲得存取權，請聯絡您組織的管理員。
-如需其他參考資訊，請參閱 —  [開始使用Adobe Experience Manager Assets檢視](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/get-started-assets-view)， [瞭解Assets檢視使用者介面](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/navigate-assets-view#understand-interface-navigation)、和 [Assets檢視使用案例](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/get-started-assets-view#use-cases).
+登陸Assets檢視，使用連結 — [Assets檢視](https://experience.adobe.com/#/assets)並選取正確的存放庫。 若要獲得存取權，請聯絡您組織的管理員。
+如需其他參考資訊，請參閱 — [開始使用Adobe Experience Manager Assets檢視](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/get-started-assets-view)、[瞭解Assets檢視使用者介面](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/navigate-assets-view#understand-interface-navigation)和[Assets檢視使用案例](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/get-started-assets-view#use-cases)。
 <!--
 >[!CONTEXTUALHELP]
 >id="assets_express_integration"
@@ -33,7 +33,7 @@ Assets檢視可啟用基本的影像編輯，包括調整大小、移除背景�
 
 ### 在Assets檢視上使用Adobe Express編輯影像 {#edit-image-on-assets-view-using-adobe-express}
 
-登入Assets檢視後，按一下 **Assets**，選取影像，然後按一下 **編輯** 從頂端邊欄。 新畫面顯示可用的編輯選項，包括調整大小、背景移除、裁切，以及 JPEG 和 PNG 格式之間的轉換。
+登入Assets檢視後，按一下&#x200B;**Assets**、選取影像，然後從頂端邊欄按一下&#x200B;**編輯**。 新畫面顯示可用的編輯選項，包括調整大小、背景移除、裁切，以及 JPEG 和 PNG 格式之間的轉換。
 
 #### 調整影像大小 {#resize-image-using-express}
 
@@ -86,9 +86,9 @@ Assets檢視可啟用基本的影像編輯，包括調整大小、移除背景�
 
 擁有Express許可權的使用者可以使用Assets檢視中的內嵌式Express編輯器，從Adobe Firefly輕鬆編輯內容並使用GenAI建立新內容。 這讓使用者更能重複使用內容，並加快建立內容的速度。您還可以使用預先定義的元素賦予資源令人驚嘆的效果，或者只需點擊幾下即可執行快速動作來編輯影像。
 ![在Essentials UI中快取](/help/assets/assets/express-in-essentials-ui.jpg)
-若要使用編輯影像 [!DNL Adobe Express] 內嵌編輯器，請遵循下列步驟：
+若要使用[!DNL Adobe Express]內嵌編輯器編輯影像，請遵循下列步驟：
 
-1. 使用連結登陸AEM Assets檢視 —  [AEM Assets檢視](https://experience.adobe.com/#/assets) 並選取正確的存放庫。
+1. 使用連結 — [AEM Assets檢視](https://experience.adobe.com/#/assets)登陸AEM Assets檢視，並選取正確的存放庫。
 1. 按一下&#x200B;**資產**，進入資料夾，然後選取影像。
 1. 按一下「**在 Adobe Express 中開啟**」。影像在 Express 畫布上開啟。
 1. 對影像進行所需的編輯。
@@ -124,10 +124,10 @@ Assets檢視可啟用基本的影像編輯，包括調整大小、移除背景�
 
 [!DNL Assets view] 可讓您使用 [!DNL Adobe Express] 嵌入式編輯器從頭開始建立新範本。若要使用 [!DNL Adobe Express] 建立新資產，請執行以下步驟：
 
-1. 瀏覽至 **[!UICONTROL 我的Workspace]** 並按一下 **[!UICONTROL 建立]** 顯示在頂端的Adobe Express橫幅內。 [!DNL Adobe Express] 空白畫布會顯示在 [!DNL Assets view] 使用者介面中。
+1. 導覽至&#x200B;**[!UICONTROL 我的Workspace]**，然後在頂端顯示的Adobe Express橫幅中按一下&#x200B;**[!UICONTROL 建立]**。 [!DNL Adobe Express] 空白畫布會顯示在 [!DNL Assets view] 使用者介面中。
 1. 使用「[範本](https://helpx.adobe.com/tw/express/using/work-with-templates.html)」建立您的內容。否則，請瀏覽至「**[!UICONTROL 您的資料]**」以修改現有內容。
 1. 完成編輯後，按一下「**[!UICONTROL 儲存]**」。
-1. 指定已建立資產的目的地路徑，然後按一下 **[!UICONTROL 另存為新資產]**.
+1. 指定已建立資產的目的地路徑，然後按一下&#x200B;**[!UICONTROL 另存為新資產]**。
 
 #### 限制 {#limitations}
 
@@ -195,7 +195,7 @@ TBD: Insert a video of the available social media options.
 
 ### 後續步驟 {#next-steps}
 
-* 使用提供產品意見回饋 [!UICONTROL 意見反應] Assets檢視使用者介面提供的選項。
+* 使用Assets檢視使用者介面提供的[!UICONTROL 意見反應]選項提供產品意見反應。
 
 * 若要提供文件意見回饋，請使用右側邊欄提供的[!UICONTROL 編輯此頁面]![來編輯頁面](assets/do-not-localize/edit-page.png)或[!UICONTROL 記錄問題]![來建立 GitHub 問題](assets/do-not-localize/github-issue.png)。
 
@@ -203,5 +203,5 @@ TBD: Insert a video of the available social media options.
 
 >[!MORELIKETHIS]
 >
->* [Adobe Express中的快速動作](https://helpx.adobe.com/tw/express/using/resize-image.html)
+>* Adobe Express](https://helpx.adobe.com/tw/express/using/resize-image.html)中的[快速動作
 >* [檢視資產的版本記錄](navigate-assets-view.md)

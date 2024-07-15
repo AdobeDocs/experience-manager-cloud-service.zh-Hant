@@ -11,32 +11,32 @@ ht-degree: 0%
 
 # 搜尋Assets API {#search-assets-api}
 
-全部 [核准的資產](approve-assets.md) Experience Manager資產存放庫中可用的專案，可以透過傳送URL搜尋並傳送至整合的下游應用程式。
+可以搜尋Experience Manager資產存放庫中可用的所有[已核准資產](approve-assets.md)，然後使用傳送URL傳送給整合的下游應用程式。
 
-從Experience Manager存放庫搜尋正確的已核准資產，是使用傳送URL傳送資產的第一步。 對搜尋請求的回應包括對應於符合搜尋條件的資產的一系列JSON檔案。 每個JSON檔案都使用 `id` 欄位，用於撰寫資產傳送請求。
+從Experience Manager存放庫搜尋正確的已核准資產，是使用傳送URL傳送資產的第一步。 對搜尋請求的回應包括對應於符合搜尋條件的資產的一系列JSON檔案。 每個JSON檔案都使用`id`欄位識別，該欄位用於構成資產傳遞請求。
 
 ![直接二進位上傳通訊協定概觀](assets/search-assets-api-overview.png)
 
 您可以在Search Assets API請求中定義屬性，以啟用下列功能：
 
-* **全文檢索搜尋**：使用 `match` 查詢以定義搜尋文字。  您也可以使用中的運運算元 `match` 查詢以篩選結果。
+* **全文檢索搜尋**：使用`match`查詢定義要搜尋的文字。  您也可以使用`match`查詢中的運運算元來篩選結果。
 
-* **套用篩選器**：使用 `term` 查詢：透過定義 `key` 和一個或多個值。 `key` 會識別其值必須比對的欄位，並且 `value` 代表要比對的專案。 同樣地，您可以使用 `range` 查詢以使用「大於(gt)」、「大於或等於(gte)」、「小於(lt)」和「小於或等於(lte)」屬性來定義欄位範圍。
+* **套用篩選器**：使用`term`查詢，定義一個`key`和一個或多個值，以進一步篩選結果。 `key`會識別其值必須相符的欄位，`value`代表要相符的欄位。 同樣地，您可以使用`range`查詢來定義欄位的範圍，其使用大於(gt)、大於或等於(gte)、小於(lt)以及小於或等於(lte)屬性。
 
-* **排序結果**：使用 `OrderBy` 根據一或多個欄位來排序搜尋結果的屬性。 您可以依遞增或遞減順序來排序結果。
+* **排序結果**：使用`OrderBy`屬性，根據一或多個欄位來排序搜尋結果。 您可以依遞增或遞減順序來排序結果。
 
-* **分頁**：使用 `limit` 和 `cursor` 屬性來定義搜尋API請求中的分頁屬性。 `limit` 屬性會定義API回應中要擷取的最大專案數。 `cursor` 屬性有助於擷取中定義之下一組資產的起點 `limit` 屬性。 例如，如果您定義 `50` 作為API請求中的限制，您可以使用 `cursor` 屬性以開始使用下一個API請求來擷取接下來的50個專案。
+* **分頁**：使用`limit`和`cursor`屬性，在Search API要求中定義分頁屬性。 `limit`屬性會定義API回應中要擷取的最大專案數。 `cursor`屬性有助於擷取`limit`屬性中定義之下一組資產的起點。 例如，如果您在API要求中將`50`定義為限制，您可以使用`cursor`屬性來開始，並使用下一個API要求擷取接下來的50個專案。
 
 ## 搜尋資產API端點 {#search-assets-api-endpoint}
 
 搜尋資產API請求中的端點必須採用以下格式：
 `https://delivery-pXXXX-eYYYY.adobeaemcloud.com/adobe/assets/search`
 
-傳遞網域的結構類似於Experience Manager作者環境的網域。 唯一的區別是取代術語 `author` 替換為 `delivery`.
+傳遞網域的結構類似於Experience Manager作者環境的網域。 唯一的差異是以`delivery`取代字詞`author`。
 
-`pXXXX` 是指方案ID
+`pXXXX`參考方案識別碼
 
-`eYYYY` 指環境ID
+`eYYYY`參考環境識別碼
 
 ## 搜尋資產API要求方法 {#search-assets-api-request-method}
 
@@ -55,6 +55,6 @@ headers: {
     },
 ```
 
-若要叫用Search API，必須在中定義IMS權杖 `Authorization` 詳細資料。 IMS權杖是從技術帳戶中擷取。 另請參閱 [擷取AEM as a Cloud Service認證](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=en#fetch-the-aem-as-a-cloud-service-credentials) 以建立新的技術帳戶。 另請參閱 [產生存取權杖](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=en#generating-the-access-token) 以產生IMS代號，並在搜尋資產API請求標頭中適當使用。
+若要叫用搜尋API，必須在`Authorization`詳細資料中定義IMS權杖。 IMS權杖是從技術帳戶中擷取。 請參閱[擷取AEM as a Cloud Service認證](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=en#fetch-the-aem-as-a-cloud-service-credentials)以建立新的技術帳戶。 請參閱[產生存取權杖](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=en#generating-the-access-token)以產生IMS權杖，並在搜尋資產API要求標頭中正確使用它。
 
-若要檢視要求範例、回應範例和回應代碼，請參閱 [搜尋Assets API](https://adobe-aem-assets-delivery-experimental.redoc.ly/#operation/search).
+若要檢視要求範例、回應範例和回應代碼，請參閱[搜尋Assets API](https://adobe-aem-assets-delivery-experimental.redoc.ly/#operation/search)。

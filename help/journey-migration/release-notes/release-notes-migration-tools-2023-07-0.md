@@ -1,6 +1,6 @@
 ---
-title: AEMas a Cloud Service版本2023.07.0中移轉工具的發行說明
-description: AEMas a Cloud Service版本2023.07.0中移轉工具的發行說明
+title: AEM as a Cloud Service 2023.07.0版中移轉工具的發行說明
+description: AEM as a Cloud Service 2023.07.0版中移轉工具的發行說明
 feature: Release Information
 exl-id: 2f787321-f156-480d-bbe8-1a6d04f110c5
 role: Admin
@@ -11,9 +11,9 @@ ht-degree: 6%
 
 ---
 
-# AEMas a Cloud Service版本2023.07.0中移轉工具的發行說明 {#release-notes}
+# AEM as a Cloud Service 2023.07.0版中移轉工具的發行說明 {#release-notes}
 
-本頁面總覽AEMas a Cloud Service2023.07.0中移轉工具發行說明。
+本頁面總覽AEM as a Cloud Service 2023.07.0中移轉工具的發行說明。
 
 ## 最佳做法分析工具 {#bpa-release}
 
@@ -33,4 +33,4 @@ Best Practices Analyzer v2.1.42的發行日期為2023年7月6日。
 ### 錯誤修正 {#bug-fixes-bpa}
 
 * BPA已改善，以防止針對發現大量問題的報告產生記憶體不足的報告失敗。
-* BPA已經過改善，可偵測路徑中的逸出字元，以防止將內容移轉至AEMas a Cloud Service時發生內容擷取失敗。
+* BPA已經過改善，可偵測路徑中的逸出字元，以防止將內容移轉至AEM as a Cloud Service時內容擷取失敗。

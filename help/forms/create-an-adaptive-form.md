@@ -38,13 +38,13 @@ ht-degree: 77%
 
 您必須符合以下條件才能建立最適化表單：
 
-* **為您的環境啟用最適化Forms核心元件**：建立方案時，最適化Forms核心元件已為您的環境啟用。 如果您有以 Archetype 39 或更早版本為基礎的 Forms as a Cloud Service 環境，請[為您的環境啟用最適化表單核心元件](enable-adaptive-forms-core-components.md)。為您的環境啟用核心元件後，**最適化表單 (核心元件)** 範本和畫布主題就會新增到您的環境中。如果您的 AEM SDK 版本比 2023.02.0 更舊，[請確定已`prerelease`在您的環境中啟用標幟](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=zh-Hant#new-features)，因為最適化表單核心元件是 2023.02.0 版本之前搶鮮版的一部分。
+* **為您的環境啟用最適化Forms核心元件**：當您建立方案時，最適化Forms核心元件已為您的環境啟用。 如果您有以 Archetype 39 或更早版本為基礎的 Forms as a Cloud Service 環境，請[為您的環境啟用最適化表單核心元件](enable-adaptive-forms-core-components.md)。為您的環境啟用核心元件後，**最適化表單 (核心元件)** 範本和畫布主題就會新增到您的環境中。如果您的 AEM SDK 版本比 2023.02.0 更舊，[請確定已`prerelease`在您的環境中啟用標幟](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=zh-Hant#new-features)，因為最適化表單核心元件是 2023.02.0 版本之前搶鮮版的一部分。
 
 * **最適化表單範本**：此範本會提供基本結構並定義最適化表單的外觀 (版面和樣式)。其中具有包含特定屬性和內容結構的預先格式化元件。它也會提供定義主題和提交動作的選項。主題會定義外觀，而提交動作會定義提交最適化表單時要採取的動作。例如，將所收集的資料傳送到資料來源。雲端服務會提供一個名為 blank 的 OOTB 範本：
 
    * 該 `blank` 範本會包含在每個新的 AEM Forms as a Cloud Service 程式中。
    * 您可以透過套件管理員安裝參考套件，將該 `blank` 範本新增到您的 AEM Forms as a Cloud Service 程式。
-   * 您也可以 [建立最適化Forms範本（核心元件）](template-editor.md) 從頭開始。
+   * 您也可以從頭開始[建立最適化Forms範本（核心元件）](template-editor.md)。
 
 * **最適化表單主題**：主題包含元件和面板的樣式詳細資料。樣式包括背景顏色、狀態顏色、透明度、對齊方式和大小等屬性。套用主題時，指定的樣式會反映在對應的元件上。`Canvas` 會包含在每個新的 AEM Forms as a Cloud Service 程式中。
   <!-- * You can install the reference package, via package manager, to add the `Canvas` template to your AEM Forms as a Cloud Service program.
@@ -57,9 +57,9 @@ ht-degree: 77%
 
 1. 登入您的 [!DNL Experience Manager Forms] 作者執行個體；可以是 Cloud 執行個體或本機開發執行個體。
 
-1. 在 Experience Manager 登入頁面上輸入您的認證。登入後，在左上角選取「 」 **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms與檔案]**.
+1. 在 Experience Manager 登入頁面上輸入您的認證。登入後，在左上角選取&#x200B;**[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms和檔案]**。
 
-1. 選取 **[!UICONTROL 建立]**  > **[!UICONTROL 最適化Forms]**. 此時會開啟精靈。在「來源」標籤中，選取一個範本：
+1. 選取&#x200B;**[!UICONTROL 建立]** > **[!UICONTROL 最適化Forms]**。 此時會開啟精靈。在「來源」標籤中，選取一個範本：
 
    ![核心元件範本](/help/forms/assets/core-components-template.png){width="100%" align="center"}
 
@@ -78,7 +78,7 @@ ht-degree: 77%
 
 1. (選用) 在「資料」標籤中，選取一個資料模型：
 
-   * **表單資料模型**：A [表單資料模型(FDM)](data-integration.md) 可讓您將實體和服務從不同的資料來源整合到最適化表單中。 如果您要建立的最適化表單涉及從多個資料來源擷取及寫入資料，請選擇表單資料模型(FDM)。
+   * **表單資料模型**： [表單資料模型(FDM)](data-integration.md)可讓您將實體和服務從不同的資料來源整合到最適化表單。 如果您要建立的最適化表單涉及從多個資料來源擷取及寫入資料，請選擇表單資料模型(FDM)。
 
    * **JSON 結構描述**：[JSON 結構描述](adaptive-form-json-schema-form-model.md)是我們以核心元件為主的最適化表單，透過提供與 JSON 結構描述建立關聯的能力 (代表要產生或使用的資料結構)，可以與組織的後端系統緊密整合。這種關聯可讓作者使用結構描述的元素，動態地將內容新增到最適化表單。在編寫過程中，您可以在內容瀏覽器的資料模型物件標籤中輕鬆存取結構描述的元素，而且所有欄位都會自動新增到任何建立的調適型表單中。
 
@@ -98,18 +98,18 @@ ht-degree: 77%
    * **[!UICONTROL 名稱：]**&#x200B;指定表單的名稱。存放庫中會建立具有指定名稱的節點。您開始輸入標題時，就會自動產生名稱欄位的值。您可以變更建議的值。名稱欄位只能包含字母數字字元、連字號和底線。所有無效的輸入都會以連字號取代。
    * **[!UICONTROL 路徑：]**&#x200B;指定最適化表單的儲存位置。您可以將最適化表單直接儲存在 `/content/dam/formsanddocuments`，或建立一個資料夾 (例如 `/content/dam/formsanddocuments/adaptiveforms`) 以儲存最適化表單。要使用路徑中的資料夾之前，請務必先建立該資料夾。「**[!UICONTROL 路徑]**」欄位不會自動建立資料夾。
 
-1. 選擇 **[!UICONTROL 建立]**。此時已建立最適化表單，並在最適化表單編輯器中開啟。編輯器會顯示範本中可用的內容。根據最適化表單的型別，關聯中的表單元素 <!--XFA form template, XML schema or --> JSON結構描述或表單資料模型(FDM)會顯示在 **[!UICONTROL 資料模型物件]** 的標籤 **[!UICONTROL 內容瀏覽器]** 在側邊欄中。
+1. 選擇 **[!UICONTROL 建立]**。此時已建立最適化表單，並在最適化表單編輯器中開啟。編輯器會顯示範本中可用的內容。根據最適化表單的型別，相關<!--XFA form template, XML schema or --> JSON結構描述或表單資料模型(FDM)中存在的表單元素會顯示在側邊欄中&#x200B;**[!UICONTROL 內容瀏覽器]**&#x200B;的&#x200B;**[!UICONTROL 資料模型物件]**&#x200B;索引標籤中。
 
 現在，您可以拖放[最適化表單核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=zh-Hant#components)或結構描述元素，以建置您的最適化表單。
 
 
 ## 編輯最適化表單的表單模型屬性 {#edit-form-model-core-components-based-adaptive-forms}
 
-1. 選取最適化表單，然後選取 ![頁面資訊](/help/forms/assets/Smock_Properties_18_N.svg) > **[!UICONTROL 開啟屬性]**. 此時會開啟「表單屬性」頁面。
+1. 選取最適化表單，然後選取![頁面資訊](/help/forms/assets/Smock_Properties_18_N.svg) > **[!UICONTROL 開啟屬性]**。 此時會開啟「表單屬性」頁面。
 
 1. 前往「**[!UICONTROL 表單模型]**」標籤並選擇表單模型。如果最適化表單沒有表單模型，您可以自由選擇JSON結構描述或表單資料模型(FDM)。 另一方面，如果最適化表單已經是以表單模型為主，您可以選擇切換到相同類型的另一個表單模型。例如，如果表單使用JSON架構，您可以輕鬆切換至其他JSON架構，同樣如果表單使用表單資料模型(FDM)，您可以切換至其他表單資料模型(FDM)。
 
-1. 選取 **[!UICONTROL 儲存]** 以儲存屬性。
+1. 選取&#x200B;**[!UICONTROL 儲存]**&#x200B;以儲存屬性。
 
 >[!TAB 使用基礎元件建立最適化表單]
 
@@ -117,11 +117,11 @@ ht-degree: 77%
 
 * **權限**：將您的使用者新增到 [!DNL forms-users]，以便為他們提供建立最適化表單的權限。如需表單特定之使用者群組的詳細清單，請參閱[群組和權限](forms-groups-privileges-tasks.md)。
 
-* **最適化表單主題**：主題包含元件和面板的樣式詳細資料。樣式包括背景顏色、狀態顏色、透明度、對齊方式和大小等屬性。套用主題時，指定的樣式會反映在對應的元件上。您可以 [建立主題](themes.md) 或 [匯入現有主題](import-export-forms-templates.md#uploading-a-theme). 您也可以針對一些範例主題部署[最新的原型版本](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html#create-project)。
+* **最適化表單主題**：主題包含元件和面板的樣式詳細資料。樣式包括背景顏色、狀態顏色、透明度、對齊方式和大小等屬性。套用主題時，指定的樣式會反映在對應的元件上。您可以[建立主題](themes.md)或[匯入現有主題](import-export-forms-templates.md#uploading-a-theme)。 您也可以針對一些範例主題部署[最新的原型版本](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html#create-project)。
 
 * **最適化表單範本**：此範本會提供基本結構並定義最適化表單的外觀 (版面和樣式)。其中具有包含特定屬性和內容結構的預先格式化元件。它也會提供定義主題和提交動作的選項。主題會定義外觀，而提交動作會定義提交最適化表單時要採取的動作。例如，將所收集的資料傳送到資料來源。雲端服務支援兩種類型的範本：
 
-   * **可編輯的範本**：您可以 [建立](template-editor.md) 或 [匯入現有的可編輯範本](migrate-to-forms-as-a-cloud-service.md). 您也可以部署[最新的原型版本](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=zh-Hant#:~:text=The%20AEM%20Archetype%20is%20made%20up%20of%20modules%3A,and%20request%20filters.%20it.tests%3A%20are%20Java-based%20integration%20tests.)以取得一些可編輯範本範例。
+   * **可編輯的範本**：您可以[建立](template-editor.md)或[匯入現有的可編輯的範本](migrate-to-forms-as-a-cloud-service.md)。 您也可以部署[最新的原型版本](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=zh-Hant#:~:text=The%20AEM%20Archetype%20is%20made%20up%20of%20modules%3A,and%20request%20filters.%20it.tests%3A%20are%20Java-based%20integration%20tests.)以取得一些可編輯範本範例。
 
    * **靜態範本**：這些是舊範本，建議僅用於從 Adobe Managed Services (AMS) 和內部部署 AEM Forms 安裝 (AEM 6.5 Forms 或更早版本) 移轉的客戶。這些範本可讓您繼續使用對靜態範本的現有投資。建立最適化表單時，請使用可編輯的範本。
 
@@ -132,9 +132,9 @@ ht-degree: 77%
 
 1. 在 Experience Manager 登入頁面上輸入您的認證。
 
-   登入後，在左上角選取「 」 **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms與檔案]**.
+   登入後，在左上角選取&#x200B;**[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms和檔案]**。
 
-1. 選取 **[!UICONTROL 建立]**  > **[!UICONTROL 最適化Forms]**. 此時會開啟精靈。
+1. 選取&#x200B;**[!UICONTROL 建立]** > **[!UICONTROL 最適化Forms]**。 此時會開啟精靈。
 1. 在「來源」標籤中，選取一個範本：
 
    * 選取可編輯範本時，系統會自動選取範本中指定的主題和提交動作，且「**[!UICONTROL 建立]**」按鈕已啟用。您可以前往「**[!UICONTROL 樣式]**」或「**[!UICONTROL 提交]**」標籤，選取不同的主題或提交動作。如果選取的可編輯範本並未指定主題，則「建立」按鈕將維持停用狀態。您可以前往「**[!UICONTROL 樣式]**」標籤以手動選取主題。
@@ -152,7 +152,7 @@ ht-degree: 77%
 
 1. (選用) 在「**[!UICONTROL 資料]**」標籤中，選取一個資料模型：
 
-   * **表單資料模型**：A [表單資料模型(FDM)](data-integration.md) 可讓您將實體和服務從不同的資料來源整合到最適化表單中。 如果您要建立的最適化表單涉及從多個資料來源擷取及寫入資料，請選擇表單資料模型(FDM)。
+   * **表單資料模型**： [表單資料模型(FDM)](data-integration.md)可讓您將實體和服務從不同的資料來源整合到最適化表單。 如果您要建立的最適化表單涉及從多個資料來源擷取及寫入資料，請選擇表單資料模型(FDM)。
 
    * **JSON 結構描述**：[JSON 結構描述](adaptive-form-json-schema-form-model.md)代表組織內後端系統產生或使用之資料的結構。您可以將結構描述與最適化表單建立關聯，並使用其元素將動態內容新增到最適化表單。編寫Adaptive Forms時，可在內容瀏覽器的「資料模型物件」索引標籤中使用結構描述的元素，所有欄位也會新增到已建立的Adaptive Form。
 
@@ -180,7 +180,7 @@ ht-degree: 77%
 
 1. 選擇 **[!UICONTROL 建立]**。此時已建立最適化表單，並在最適化表單編輯器中開啟。編輯器會顯示範本中可用的內容，它也會顯示側邊欄，以根據需求自訂建立的表單。
 
-   根據最適化表單的型別，關聯中的表單元素 <!--XFA form template, XML schema or --> JSON結構描述或表單資料模型(FDM)會顯示在 **[!UICONTROL 資料模型物件]** 的標籤 **[!UICONTROL 內容瀏覽器]** 在側邊欄中。 您也可以拖放這些元素以建置自己的最適化表單。
+   根據最適化表單的型別，相關<!--XFA form template, XML schema or --> JSON結構描述或表單資料模型(FDM)中存在的表單元素會顯示在側邊欄中&#x200B;**[!UICONTROL 內容瀏覽器]**&#x200B;的&#x200B;**[!UICONTROL 資料模型物件]**&#x200B;索引標籤中。 您也可以拖放這些元素以建置自己的最適化表單。
 
 <!-- ## Create an Adaptive Form based on a Form Data Model {#fdm}
 
@@ -235,13 +235,13 @@ Do the following to use XML or JSON schema as form model for an Adaptive Form:
 
 您可以變更最適化表單(JSON式或表單資料模型(FDM))的表單模型。 您無法從一種表單模型變更為另一種表單模型。
 
-1. 選取最適化表單，然後選取 **屬性** 圖示。
+1. 選取最適化表單並選取&#x200B;**屬性**&#x200B;圖示。
 1. 開啟「**[!UICONTROL 表單模型]**」標籤，並執行以下其中一項操作。
 
-   * 如果最適化表單沒有表單模型，您可以選擇另一個表單模型，並相應地選擇 <!-- a form template, --> XML或JSON結構描述，或表單資料模型(FDM)。
-   * 如果最適化表單是以表單模型為基礎，您可以選擇其他模型 <!-- form template, --> XML或JSON結構描述，或相同表單模型的表單資料模型(FDM)。
+   * 如果最適化表單沒有表單模型，您可以選擇其他表單模型，並相應地選擇<!-- a form template, --> XML或JSON結構描述或表單資料模型(FDM)。
+   * 如果最適化表單是以表單模型為基礎，您可以為相同表單模型選擇其他<!-- form template, --> XML或JSON結構描述，或表單資料模型(FDM)。
 
-1. 選取 **[!UICONTROL 儲存]** 以儲存屬性。
+1. 選取&#x200B;**[!UICONTROL 儲存]**&#x200B;以儲存屬性。
 
 您也可以從最適化表單編輯器或最適化表單範本編輯器修改表單模型屬性。
 
@@ -249,9 +249,9 @@ Do the following to use XML or JSON schema as form model for an Adaptive Form:
 1. 按一下 ![設定圖示](/help/forms/assets/configure-icon.svg) 圖示以開啟最適化表單容器的「**[!UICONTROL 屬性]**」。
 1. 選取「**[!UICONTROL 資料模型]**」標籤，並執行以下其中一項操作：
 
-   * 如果最適化表單沒有表單模型，您可以選擇表單模型，並相應地選擇 <!-- a form template, --> XML或JSON結構描述，或表單資料模型(FDM)。
-   * 如果最適化表單是以表單模型為主，則無法變更表單模型。您可以選擇其他 <!-- form template, --> 適用時，為相同表單模型使用XML或JSON結構描述，或表單資料模型(FDM)。
-1. 選取 ![儲存](/help/forms/assets/check-button.png) 以儲存屬性。
+   * 如果最適化表單沒有表單模型，您可以選擇表單模型，並相應地選擇<!-- a form template, --> XML或JSON結構描述或表單資料模型(FDM)。
+   * 如果最適化表單是以表單模型為主，則無法變更表單模型。您可以為適用的相同表單模型選擇其他<!-- form template, --> XML或JSON結構描述，或表單資料模型(FDM)。
+1. 選取![儲存](/help/forms/assets/check-button.png)以儲存屬性。
 
 ![FDM-Schema-Support](/help/forms/assets/fdmsupport.png){width="100%" align="center"}
 

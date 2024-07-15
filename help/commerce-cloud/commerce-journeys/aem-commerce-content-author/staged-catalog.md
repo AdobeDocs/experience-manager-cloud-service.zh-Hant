@@ -17,7 +17,7 @@ ht-degree: 10%
 
 ## 目前進度 {#story-so-far}
 
-在AEM內容和Commerce歷程的上一個檔案中， [管理產品目錄頁面和範本](catalog-templates.md)，您已瞭解如何根據範本管理和建置產品目錄體驗。
+在AEM內容和Commerce歷程的上一個檔案[管理產品目錄頁面和範本](catalog-templates.md)中，您已瞭解如何根據範本管理和建置產品目錄體驗。
 
 本文基於這些基礎之上。
 
@@ -33,7 +33,7 @@ ht-degree: 10%
 
 ## 使用分階段產品資料 {#staged-product-data}
 
-存取分階段產品資料的一種方式是使用產品駕駛艙。 按一下AEM主功能表中的Commerce圖示，開啟產品目錄。 這可讓您存取即時產品資料。 開啟左側的篩選器索引標籤並展開 **階段目錄**. 您現在可以使用預覽資料存取任何時間點的階段產品資料。 階段資料包含新類別、產品或價格等更新欄位。
+存取分階段產品資料的一種方式是使用產品駕駛艙。 按一下AEM主功能表中的Commerce圖示，開啟產品目錄。 這可讓您存取即時產品資料。 開啟左側的篩選標籤，並展開&#x200B;**階段目錄**。 您現在可以使用預覽資料存取任何時間點的階段產品資料。 階段資料包含新類別、產品或價格等更新欄位。
 
 ![中繼駕駛艙](assets/staged-cockpit.png)
 
@@ -43,7 +43,7 @@ ht-degree: 10%
 
 您現在可以瀏覽包含階段資料的目錄。 如果您開啟分階段類別或產品頁面，編輯器將顯示視覺指示器。
 
-![階段計畫](assets/staged-plp.png)
+![階段plp](assets/staged-plp.png)
 
     >[！NOTE]
     >
@@ -51,13 +51,13 @@ ht-degree: 10%
 
 ## AEM 啟動 {#launches}
 
-AEM啟動可讓您建立分階段產品資料的內容。 如果您不熟悉Launch，請依照 [其他資源區段](#additional-resources). 然後會使用「啟動日期」來存取分階段的產品資料。
+AEM啟動可讓您建立分階段產品資料的內容。 如果您不熟悉Launches，請依照[其他資源區段](#additional-resources)下的檔案連結操作。 然後會使用「啟動日期」來存取分階段的產品資料。
 
-![中繼啟動](assets/staged-launch.png)
+![階段啟動](assets/staged-launch.png)
 
 請注意，選擇器會在啟動日期右側使用分階段指示器。
 
-![階段選取器](assets/staged-picker.png)
+![階段選擇器](assets/staged-picker.png)
 
 ## 下一步 {#what-is-next}
 
@@ -66,7 +66,7 @@ AEM啟動可讓您建立分階段產品資料的內容。 如果您不熟悉Laun
 * 透過Launch瞭解分階段產品目錄和內容的概念
 * 能夠透過產品駕駛艙和編輯器存取分階段產品目錄資料
 
-您現在已準備好管理 [產品體驗](product-experience-management.md). 不過，AEM內容和Commerce有許多其他可用選項。 查看[其他資源章節](#additional-resources)提供的一些其他資源，以詳細了解您在此歷程中看到的功能。
+您現在已準備好管理[產品體驗](product-experience-management.md)。 不過，AEM內容和Commerce有許多其他可用選項。 查看[其他資源章節](#additional-resources)提供的一些其他資源，以詳細了解您在此歷程中看到的功能。
 
 ## 其他資源 {#additional-resources}
 

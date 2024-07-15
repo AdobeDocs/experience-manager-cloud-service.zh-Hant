@@ -31,7 +31,7 @@ ht-degree: 0%
 * 基本瞭解Adobe Illustrator、Adobe Photoshop、Adobe XD等設計工具
 * 在Experience Manager上存取Dynamic Media有所幫助，但並非必要
 
-**_您可以期待瞭解的內容_**
+**_您可以瞭解的內容_**
 
 _第一部分_
 
@@ -52,7 +52,7 @@ _第二部分_
 * 業務分析師
 * 內容架構師
 * 內容作者
-* 設計工具
+* Designer
 * 開發人員
 * 行銷
 * 產品經理/擁有者
@@ -69,18 +69,18 @@ Dynamic Media整合了Adobe Experience Manager Assets數位資產管理解決方
 
 ### 單一檔案，提供無限可能
 
-Dynamic Media的主要概念之一，就是 _單一主要資產檔案，提供無限可能性_.
+有關Dynamic Media要瞭解的要點之一是&#x200B;_單一主要資產檔案的概念，其可能性無窮無盡_。
 
 若要更深入瞭解此概念，請思考您傳統上使用單一資產（例如影像或影片）的方式。 您通常會建立一個主要資產。 接著，您可以為每個體驗、所需每個裝置、每個網頁及其使用處的每個屬性，手動建立相同資產的版本。 隨著時間過去，該單一資產可能會增加到20個、30個或更多版本，且沒有附加版本記錄。 現在，想像一下針對您擁有的每個影像或視訊執行此動作。 資產版本的數目將很快變得難以維護和更新，更不用說儲存成本的增加了。
 
-不過，Dynamic Media與其他系統大不相同，因為您會使用它來傳送媒體 _動態_ 來自單一、主要資產和URL呼叫。 您請求的Dynamic Media URL路徑包含指示，告知Adobe發佈伺服器如何在資產傳送至客戶熒幕時顯示資產。 例如，使用相同的單一主要資產，您可以讓資產以無限制的轉譯立即傳送，並變更大小、格式、解析度、重量、顏色、裁切和縮放檢視等效果。
+不過，Dynamic Media與其他系統截然不同，因為您會使用它來從單一、主要資產和URL呼叫動態傳遞您的媒體&#x200B;__。 您請求的Dynamic Media URL路徑包含指示，告知Adobe發佈伺服器如何在資產傳送至客戶熒幕時顯示資產。 例如，使用相同的單一主要資產，您可以讓資產以無限制的轉譯立即傳送，並變更大小、格式、解析度、重量、顏色、裁切和縮放檢視等效果。
 
 這種獨特的傳送方式可確保將一致的品質體驗傳送至任何畫面，無論畫面大小或頻寬為何。 全尺寸視訊也針對所有熒幕型別最佳化，並以適應性串流處理，同時確保使用者體驗的一致性、品質。
 
 <!-- As part of building and publishing assets with Dynamic Media, you visually configure the effects that you want to apply to assets. In so doing, you are literally building the URL that correctly tells the publish server how to deliver your primary asset to the screen.  -->
 
-![Adobe Dynamic Media會將相同的主要影像提供給不同大小和格式的不同媒體](/help/assets/dynamic-media/assets/dm-oneasset-multioutput.png)
-_AdobeDynamic Media可確保在任何畫面上提供一致、高品質的體驗，無論畫面大小或頻寬為何。_
+![AdobeDynamic Media會將相同的主要影像提供給不同大小和格式的不同媒體](/help/assets/dynamic-media/assets/dm-oneasset-multioutput.png)
+_AdobeDynamic Media可確保在任何熒幕都能提供一致的品質體驗，無論熒幕大小或頻寬為何。_
 
 閱讀本文，您將深入瞭解「單一主要資產檔案，無限可能」的概念為何如此重要。
 
@@ -92,13 +92,13 @@ _AdobeDynamic Media可確保在任何畫面上提供一致、高品質的體驗�
 
 <!-- USE AN IMAGE HERE? ![Content delivery network](/help/assets/assets-dm/cdn.png) -->
 
-過去，CDN每月會提供3.5 PB的流量給客戶。 此系統在一天內可提供520億個資產。 這個數字相當於成功傳送給客戶的864,000張影像和影片。 _每秒_.
+過去，CDN每月會提供3.5 PB的流量給客戶。 此系統在一天內可提供520億個資產。 該數字等於成功傳送給客戶的864,000張影像和視訊，_每秒_。
 
 ### 智慧型影像
 
 Dynamic Media已透過CDN出色地最佳化資產，並確保每個資產都能快速載入行動與案頭系統。 為了達到此目的，Dynamic Media使用影像預設集來定義影像品質。 它們也會定義您要傳送的影像型別、其銳利度，以及您體驗或頁面不同部分的其他片段。
 
-但若要在影像預設集之外進一步增加Dynamic Media的價值，可使用 _智慧型影像_.
+但若要在影像預設集之外進一步增加Dynamic Media的價值，則有&#x200B;_智慧型影像_。
 
 智慧型影像可依據客戶的瀏覽器功能，自動最佳化影像的格式和檔案大小，以提供更優異的影像資產傳送效能。 它可搭配您現有的影像預設集運作（此歷程第二部分將討論影像預設集），並在傳送時使用情報。
 
@@ -111,7 +111,7 @@ Dynamic Media已透過CDN出色地最佳化資產，並確保每個資產都能�
 整體而言，使用智慧型影像處理，視您現有的影像預設集設定和特定使用者特性而定，效能可望提升22%至47%。 同時保持影像品質，如同從未接觸過一樣。
 
 ![智慧型影像](/help/assets/dynamic-media/assets/dm-smart-imaging.png)
-_智慧型影像可根據客戶的瀏覽器功能和網路速度，自動最佳化影像的格式和檔案大小。_
+_智慧型影像處理會根據客戶的瀏覽器功能和網路速度，自動最佳化影像的格式和檔案大小。_
 
 智慧型影像處理預設不會開啟，因為您需要與Adobe Dynamic Media技術支援人員協調運作。 此外，啟用智慧型影像處理需要完全清除CDN快取，然後重新填入時間。 如果您有興趣使用智慧型影像，可以透過提交技術支援票證來與Adobe合作，以將其開啟。 然後，技術支援會提供URL引數，讓您預先嘗試智慧型影像。 您可以在任何網頁或影像上試用，瞭解獲得的效能和節省的成本。 接著，您就可以為完整網站開啟智慧型影像處理。
 
@@ -119,11 +119,11 @@ _智慧型影像可根據客戶的瀏覽器功能和網路速度，自動最佳�
 
 當頁面上或首頁面上出現影片時，您的客戶往往會與該內容互動更久，並在頁面上停留更久，這通常是好事。 此行為會透過Adobe已完成的分析呈現。 不過，影片可能很複雜。 首先，您通常有一個大型的主要檔案。 要決定視訊的大小和傳送方式相當複雜，這完全是為了確保體驗能順暢地執行，無論是在哪台裝置上觀看，也不論頻寬為何。
 
-為了解決此問題，Dynamic Media可讓您建立 _最適化視訊集_.
+為了解決此問題，Dynamic Media可讓您建立&#x200B;_最適化視訊集_。
 
 「自我調整視訊集」會將使用不同位元速率和格式編碼的相同視訊版本分組。
 
-您先從您上傳到系統中的原始主要視訊開始。 Dynamic Media會自動調整大小，或 _轉碼_，則將該視訊轉換為多個視訊。 然後，在傳送時，它會聰明地決定要使用的視訊畫面、品質和格式，並將它傳送到手機、平板電腦或桌上型電腦。
+您先從您上傳到系統中的原始主要視訊開始。 Dynamic Media會自動調整視訊大小，或將&#x200B;_轉碼為_&#x200B;多個視訊。 然後，在傳送時，它會聰明地決定要使用的視訊畫面、品質和格式，並將它傳送到手機、平板電腦或桌上型電腦。
 
 例如，在iOS行動裝置上，它會偵測4G、5G或Wi-Fi等頻寬。 之後，它會從「自我調整視訊集」中的各種視訊位元速率中，自動選取正確的編碼視訊。 影片會串流至行動裝置、平板電腦或桌上型電腦。
 
@@ -144,7 +144,7 @@ Dynamic Media最重要的使用案例之一，也是最明顯的使用案例之�
 ![內容頁面權數](/help/assets/dynamic-media/assets/dm-content-page-weight.png)
 _典型網頁的內容頁面權數。_
 
-其餘10%為HTML、CSS程式碼和特定標籤。 您想要最佳化該頁面90%的權重，Dynamic Media可協助您完成此工作。 您在此之前閱讀了關於 _單一主要資產檔案，無限可能_. 此方法對於減少整體頁面權重相當重要。 能夠取得一個主要資產，並在產品詳細資料頁面、縮圖頁面、購物車和搜尋格線上使用它，是絕佳的節省時間。 而且可確保體驗之間的一致性。
+其餘10%為HTML、CSS程式碼和特定標籤。 您想要最佳化該頁面90%的權重，Dynamic Media可協助您完成此工作。 您先前已閱讀&#x200B;_單一主要資產檔案的概念，其可能性無窮無盡_。 此方法對於減少整體頁面權重相當重要。 能夠取得一個主要資產，並在產品詳細資料頁面、縮圖頁面、購物車和搜尋格線上使用它，是絕佳的節省時間。 而且可確保體驗之間的一致性。
 
 ![主要檔案方法](/help/assets/dynamic-media/assets/dm-onefile.png)
 _手錶是一個主要資產檔案，但會即時建立多個轉譯（而非復本）。_
@@ -181,7 +181,7 @@ Dynamic Media為解決的另一個使用案例是影片。 視訊很複雜。 �
 
 來到Dynamic Media的客戶有以下他們想要解決的問題：
 
-&quot;_我的企業有影片，部門花了很多錢製作它，但並沒有把它放在頁面上，也沒有送出。 原因是因為從測試來看，視訊品質無法得到保證，即便真的要播放。 最終，這會影響企業的品牌，以及其對於轉換的潛在角色。_&quot;
+「_我的企業擁有視訊，部門花費了大量資金製作它，但避免將它放在網頁上或送達。 原因是因為從測試來看，視訊品質無法得到保證，即便真的要播放。 最終，這會影響企業的品牌，以及其轉換角色。_」
 
 Dynamic Media的解決方案是取用那個主要視訊檔案，讓Dynamic Media透過轉碼程式完成所有大小。 接著，再搭配使用Dynamic Media的智慧型視訊播放器。 此工作流程可保證您在主要登陸頁面、類別或產品詳細資料頁面上使用該影片，其全程將保持一致，並提供高品質。
 
@@ -192,7 +192,7 @@ Dynamic Media的解決方案是取用那個主要視訊檔案，讓Dynamic Media
 | **問題** | **Dynamic Media解決方案** |
 |---|---|
 | 分散在組織中、分散在不同的團隊或業務單位的數位資產。 | 在一個中央位置儲存和管理所有數位資產。 |
-| 團隊成員下載並建立本機版本。 | 團隊成員使用單一主要檔案來建立 _和_ 提供各種熒幕大小和裝置的所有必要版本。 |
+| 團隊成員下載並建立本機版本。 | 團隊成員使用單一主要檔案來建立&#x200B;_和_，並提供各種熒幕大小和裝置的所有必要版本。 |
 | 為每個體驗和裝置建立的一次性資產。 | 消除一次性使用的資產，以節省時間和金錢建立它們。 |
 
 ### 使用案例：適用於多媒體的AI支援智慧型裁切
@@ -227,7 +227,7 @@ _資產如何流經Dynamic Media系統。_
 
 建立完主要資產後，可將其上傳至Dynamic Media。 您上傳的檔案型別、檔案的格式與大小是Dynamic Media的重要屬性。 您想在上傳時確定從單一檔案支援中獲得最大值。
 
-例如，下面的手錶影像是4560 x 3020畫素。 雖然您絕不能使用這個大小的影像，但您仍可以上傳它。 影像越大，Dynamic Media提供的品質就越好，甚至包括縮圖轉譯。 記住：您可以輕鬆地 _減少_ 現有影像的解析度。 但如果您嘗試 _增加_ 影像的解析度，結果可能會令人不滿意。
+例如，下面的手錶影像是4560 x 3020畫素。 雖然您絕不能使用這個大小的影像，但您仍可以上傳它。 影像越大，Dynamic Media提供的品質就越好，甚至包括縮圖轉譯。 請記住：您可以輕鬆&#x200B;_降低_&#x200B;現有影像的解析度。 但如果您嘗試&#x200B;_增加_&#x200B;影像的解析度，結果可能會不令人滿意。
 
 ![建議上傳至Dynamic Media的格式](/help/assets/dynamic-media/assets/dm-upload-formats.png)
 _資產上傳的考量事項。_
@@ -238,33 +238,33 @@ Adobe建議您以無損格式上傳資產。 一般來說，最好避免JPEG，�
 
 大部分使用者都不會考慮以CMYK傳送任何專案，或是您為何可能想要以CMYK傳送。 原因是色彩空間最常用於傳送列印專案。 但是，Dynamic Media可同時提供兩種色域。
 
-還有許多客戶仍會列印紙張，例如倉儲批發俱樂部。 此外還有雜貨店，他們通常每週列印傳單。 這類客戶要求將影像同時置於兩個色域中。 傳統上，這需要兩個不同的影像：一個是RGB，一個是CMYK。 不過，您可以直接將CMYK資產上傳至Dynamic Media，並讓Dynamic Media透過影像預設集或色彩設定檔自動傳遞RGB資產。 不需要建立檔案的多個版本，因此維護以下概念： _單一主要資產檔案，無限可能_.
+還有許多客戶仍會列印紙張，例如倉儲批發俱樂部。 此外還有雜貨店，他們通常每週列印傳單。 這類客戶要求將影像同時置於兩個色域中。 傳統上，這需要兩個不同的影像：一個是RGB，一個是CMYK。 不過，您可以直接將CMYK資產上傳至Dynamic Media，並讓Dynamic Media透過影像預設集或色彩設定檔自動傳遞RGB資產。 不需要建立多個版本的檔案，因此維護了&#x200B;_一個主要資產檔案的概念，並提供了無限可能性_。
 
 <!-- **The Value of Renditioning??? or Demo portion** -->
 
-### 發佈和預覽資產
+### Publish和預覽資產
 
-將資產上傳至Dynamic Media後，建議您最好使用 _發佈_ 選取資產，然後按一下 **[!UICONTROL 發佈]** 或 **[!UICONTROL 快速發佈]** 在Dynamic Media中。 如果您想要在任何體驗中使用資產，則必須發佈資產。 發佈資產後，您可使用複製的由Dynamic Media產生的URL或透過將程式碼內嵌在頁面上，將資產納入網頁中。
+將資產上傳到Dynamic Media後，請選取資產，然後按一下Dynamic Media中的&#x200B;**[!UICONTROL Publish]**&#x200B;或&#x200B;**[!UICONTROL 快速Publish]**，以&#x200B;_發佈_&#x200B;這些資產，是建議的做法。 如果您想要在任何體驗中使用資產，則必須發佈資產。 發佈資產後，您可使用複製的由Dynamic Media產生的URL或透過將程式碼內嵌在頁面上，將資產納入網頁中。
 
 除了手動發佈資產外，您可以設定Dynamic Media，以便在上傳時立即發佈資產（無需任何使用者介入）。
 
-上傳後，您可以在Dynamic Media中預覽資產轉譯的其他方式。 預覽轉譯可協助您瞭解客戶所看到的內容。 常見的預覽方法是選取資產，然後選取「 」，檢視其轉譯 _影像預設集_ 如下列所示。
+上傳後，您可以在Dynamic Media中預覽資產轉譯的其他方式。 預覽轉譯可協助您瞭解客戶所看到的內容。 常見的預覽方法是選取資產，然後選取&#x200B;_影像預設集_，檢視其轉譯，如下所示。
 
 ![根據大型影像預設集預覽資產的轉譯](/help/assets/dynamic-media/assets/dm-image-preset-with-url.png)
 _根據選取的「大」影像預設集預覽資產的轉譯。 已按一下URL按鈕。 產生的URL路徑包含「大」影像預設集名稱，且可用於網頁。_
 
-上述URL為即時網址！ [試試看](http://s7d1.scene7.com/is/image/jpearldemo/AdobeStock_28563982?$Large$){target="_blank"}.
+上述URL為即時網址！ [試用](http://s7d1.scene7.com/is/image/jpearldemo/AdobeStock_28563982?$Large$){target="_blank"}。
 
-另一種預覽資產的方法是選取影像資產，然後選取 _檢視者_ 預設集，如下所示。
+另一種預覽資產的方法是選取影像資產，然後選取&#x200B;_檢視器_&#x200B;預設集，如下所示。
 
-![根據縮放垂直光源檢視器預設集預覽資產](/help/assets/dynamic-media/assets/dm-viewer-preset.png)
-_根據選取的「ZoomVertical_light」檢視器預設集預覽資產。 滑鼠指標(`+`)移到手錶上放大顯示。 請注意URL和內嵌按鈕。_
+![根據Zoom Vertical Light檢視器預設集預覽資產](/help/assets/dynamic-media/assets/dm-viewer-preset.png)
+_根據選取的「ZoomVertical_light」檢視器預設集預覽資產。 滑鼠指標(`+`)移到手錶上以放大。 請注意URL和內嵌按鈕。_
 
-以上轉譯為即時轉譯！ [試試看](https://s7d1.scene7.com/s7viewers/html5/ZoomVerticalViewer.html?asset=jpearldemo/AdobeStock_28563982&amp;config=jpearldemo/ZoomVertical_light){target="_blank"}.
+以上轉譯為即時轉譯！ [試用](https://s7d1.scene7.com/s7viewers/html5/ZoomVerticalViewer.html?asset=jpearldemo/AdobeStock_28563982&amp;config=jpearldemo/ZoomVertical_light){target="_blank"}。
 
 ## 選擇性 — 瞭解更多
 
-此歷程的第一部分涵蓋各種Dynamic Media主題的基本知識。 如果您想深入瞭解您所閱讀的內容，請使用下列資料更詳細地探索概念。 否則，您可以繼續歷程的第二部分。 另請參閱 [此Dynamic Media歷程的下一步發展](#whats-next).
+此歷程的第一部分涵蓋各種Dynamic Media主題的基本知識。 如果您想深入瞭解您所閱讀的內容，請使用下列資料更詳細地探索概念。 否則，您可以繼續歷程的第二部分。 檢視[此Dynamic Media歷程的下一步是什麼](#whats-next)。
 
 _Dynamic Media說明主題_
 
@@ -275,23 +275,23 @@ _Dynamic Media說明主題_
 * [如何上傳資產](/help/assets/add-assets.md#upload-assets)
 * [如何預覽資產](/help/assets/dynamic-media/previewing-assets.md)
 * [如何預覽3D資產](/help/assets/dynamic-media/previewing-3d-assets.md)
-* [如何傳遞Dynamic Media資產](/help/assets/dynamic-media/delivering-dynamic-media-assets.md)
+* [如何傳遞Dynamic Media Assets](/help/assets/dynamic-media/delivering-dynamic-media-assets.md)
 * [如何發佈資產](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)
 * [在 Dynamic Media 中使用選擇性發佈](/help/assets/dynamic-media/selective-publishing.md)
 
 _Dynamic Media教學課程_
 
-* [搭配Experience Manager Assets使用Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html)
-* [Adobe Experience Manager內容庫](https://experienceleague.adobe.com/?lang=en#recommended/solutions/experience-manager) (搜尋 _Dynamic Media_)
+* [使用Dynamic Media搭配Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html)
+* [Adobe Experience Manager內容庫](https://experienceleague.adobe.com/?lang=en#recommended/solutions/experience-manager) (搜尋&#x200B;_Dynamic Media_)
 
 _Dynamic Media檢視器_
 
-* [即時示範](https://landing.adobe.com/tw/na/dynamic-media/ctir-2755/live-demos.html) 每個檢視者
+* 每個檢視者的[即時示範](https://landing.adobe.com/tw/na/dynamic-media/ctir-2755/live-demos.html)
 
 ## 此Dynamic Media歷程的下一步發展 {#whats-next}
 
 在此歷程的第二部分，您會詳細檢查Dynamic Media URL，以更清楚瞭解資產傳送時發生的情況。 您也會進一步瞭解建立影像預設集以轉譯資產背後的基礎知識，並瞭解影像集、迴轉集和混合媒體集及其建立方式。
 
-帶我前往 [Dynamic Media歷程：基礎知識，第二部分](/help/assets/dynamic-media/dm-journey-part2.md#dm-journey-d).
+帶我前往[Dynamic Media歷程：基本知識，第二部分](/help/assets/dynamic-media/dm-journey-part2.md#dm-journey-d)。
 
 <!-- Live as of April 28 2022. LEAVE IN HERE https://landing.adobe.com/en/na/dynamic-media/ctir-2755/index.html -->

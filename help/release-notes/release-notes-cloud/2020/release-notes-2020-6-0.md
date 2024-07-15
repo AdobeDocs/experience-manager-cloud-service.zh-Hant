@@ -1,6 +1,6 @@
 ---
 title: Adobe Experience Manager as a Cloud Service 2020.6.0 版發行說明
-description: '"[!DNL Adobe Experience Manager] 2020.6.0版as a Cloud Service發行說明。」'
+description: "[!DNL Adobe Experience Manager]個2020.6.0as a Cloud Service發行說明。"
 exl-id: fd6ebe2b-6d98-498c-a45d-b9a9c34e6be7
 feature: Release Information
 role: Admin
@@ -11,7 +11,7 @@ ht-degree: 92%
 
 ---
 
-# AEMas a Cloud Service2020.6.0版發行說明 {#release-notes}
+# AEM as a Cloud Service 2020.6.0版發行說明 {#release-notes}
 
 此頁面概述 Experience Manager as a Cloud Service 2020.6.0 版的一般發行說明。
 
@@ -48,13 +48,13 @@ ht-degree: 92%
 
 * 螢幕助讀程式的改良。
 
-## AEMas a Cloud Service基礎的新增功能 {#foundations}
+## AEM as a Cloud Service基礎的新增功能 {#foundations}
 
-AEM專案的pom.xml中所有的參照移至遠端存放庫之後，AEM專案建置時間將有所改善 `https://downloads.experiencecloud.adobe.com/content/maven/public`.
+將AEM專案的pom.xml中的所有參照移至遠端存放庫`https://downloads.experiencecloud.adobe.com/content/maven/public`之後，AEM專案建置時間將有所改善。
 
-AEMas a Cloud ServiceSDK API Jar （先前託管於該位置）現在位於Maven的預設成品存放庫Maven Central中。
+AEM as a Cloud Service SDK API Jar （先前託管於該位置）現在位於Maven Central （Maven的預設成品存放庫）中。
 
-## Cloud Manager新增功能 {#cloud-manager}
+## Cloud Manager的新增功能 {#cloud-manager}
 
 請詳閱本節，了解 AEM as a Cloud Service 2020.6.0 版中 Cloud Manager 的新增功能和更新。
 
@@ -104,13 +104,13 @@ AEMas a Cloud ServiceSDK API Jar （先前託管於該位置）現在位於Maven
 
 * 直接從 Cloud Manager 連結至開發人員控制台時，不會顯示將沙箱方案的環境解除休眠/休眠的選項。若要解決此問題，請於開發人員控制台中，在 URL 的結尾處加上 `#release-cm-p1234-e5678` 模式，其中，*1234* 是方案 ID，*5678* 是環境 ID。此問題將在即將發行的版本中解決。
 
-## 的新增功能 [!DNL Adobe Experience Manager Assets] {#aem-assets}
+## [!DNL Adobe Experience Manager Assets]的新增功能 {#aem-assets}
 
 **增強型智慧標記的引導式使用者體驗 (由 Adobe Sensei 提供技術支援)**
 
 增強型智慧標記可讓組織訓練智慧標記模型，以在一般智慧標記以外，還能根據客戶特定的商業標記來識別影像。
 
-此版本提供了新的引導式使用者體驗，有助於針對客戶特定的標記集設定智慧標記訓練，並使用資產加以訓練，以便在日後以標記來辨識和標示這些資產。現在的體驗更符合直覺。訓練增強型智慧標記，讓智慧標記的訓練更符合直覺。另請參閱 [如何將智慧標籤新增至資產](/help/assets/smart-tags.md).
+此版本提供了新的引導式使用者體驗，有助於針對客戶特定的標記集設定智慧標記訓練，並使用資產加以訓練，以便在日後以標記來辨識和標示這些資產。現在的體驗更符合直覺。訓練增強型智慧標記，讓智慧標記的訓練更符合直覺。請參閱[如何新增智慧標籤至資產](/help/assets/smart-tags.md)。
 
 **擷取、預覽和傳遞 3D 內容的支援**
 

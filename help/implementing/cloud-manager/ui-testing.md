@@ -26,7 +26,7 @@ ht-degree: 79%
 
 AEM 提供了[Cloud Manager 品質關卡](/help/implementing/cloud-manager/custom-code-quality-rules.md)整合套件，以確保自訂應用程序順利更新。尤其是 IT 測試門已經支援使用 AEM API 建立和自動化自訂測試。
 
-UI 測試是封裝在 Docker 映像檔中，提供廣泛的語言和架構 (例如 Cypress、Selenium、Java 和 Maven 以及 JavaScript) 選擇。此外，UI測試專案可以透過使用輕鬆生成 [AEM專案原型。](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)
+UI 測試是封裝在 Docker 映像檔中，提供廣泛的語言和架構 (例如 Cypress、Selenium、Java 和 Maven 以及 JavaScript) 選擇。此外，使用[AEM專案原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)可輕鬆產生UI測試專案。
 
 Adobe 鼓勵使用 Cypress，因為它提供即時重新載入和自動等待功能，有助於節省時間及提高測試期間的工作效率。Cypress 也提供簡單直覺的語法，容易學習和使用，即使是測試的初學者也能輕易上手。
 
@@ -48,7 +48,7 @@ UI 測試是每個 Cloud Manager 管道特定品質把關程序的一環，在[�
 
    * 若為 Cypress，請使用 [AEM 測試範例存放庫](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-cypress)中的範例程式碼。
 
-   * 若為JavaScript和WDIO，請使用中自動產生的範常式式碼 `ui.tests` Cloud Manager存放庫中的資料夾。
+   * 對於JavaScript和WDIO，請使用在Cloud Manager存放庫的`ui.tests`資料夾中自動產生的範常式式碼。
 
      >[!NOTE]
      >
@@ -235,8 +235,8 @@ UI 測試是每個 Cloud Manager 管道特定品質把關程序的一環，在[�
 Adobe 測試範例提供輔助函數以存取設定參數：
 
 * Cypress: 使用標準函數 `Cypress.env('VARIABLE_NAME')`
-* JavaScript：請參閱 [`lib/config.js`](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests.wdio/test-module/lib/config.js) 模組
-* Java：請參閱 [`Config`](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/Config.java) 類別
+* JavaScript：檢視[`lib/config.js`](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests.wdio/test-module/lib/config.js)模組
+* Java：檢視[`Config`](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/Config.java)類別
 
 ### 產生測試報告 {#generate-test-reports}
 
@@ -250,7 +250,7 @@ Docker 鏡像必須產生 JUnit XML 格式的測試報告，並保存在環境�
 >
 >使用斷言而不是僅將錯誤記錄到 STDERR 或返回非零退出程式碼，否則您的部署管道可能會正常進行。
 >
->如果在測試執行期間使用了HTTP Proxy，則結果將包含 `request.log` 檔案。
+>如果在測試執行期間使用了HTTP Proxy，則結果將包含`request.log`檔案。
 
 ### 必備條件 {#prerequisites}
 
@@ -327,22 +327,22 @@ Adobe 提供的測試範例依預設為任何失敗的測試建立螢幕擷圖�
 
 ### 設定HTTP Proxy
 
-Docker容器的入口點需要檢查 `PROXY_HOST` 環境變數。
+Docker容器的入口點需要檢查`PROXY_HOST`環境變數的值。
 
 如果此值為空，則不需要其他步驟，且測試應在不使用HTTP Proxy的情況下執行。
 
 如果不是空白，entrypoint指令碼需要：
 
-1. 設定HTTP Proxy連線以執行UI測試。 這可透過匯出 `HTTP_PROXY` 使用下列值建置的環境變數：
-   * Proxy主機，由 `PROXY_HOST` 變數
-   * Proxy連線埠，由 `PROXY_HTTPS_PORT` 或 `PROXY_HTTP_PORT` 變數（將會使用具有非空白值的變數）
-2. 設定連線到HTTP Proxy時將使用的CA憑證。 其位置由提供 `PROXY_CA_PATH` 變數中。
-   * 這可透過匯出來達成 `NODE_EXTRA_CA_CERTS` 環境變數。
+1. 設定HTTP Proxy連線以執行UI測試。 這可透過匯出使用下列值建置的`HTTP_PROXY`環境變數來達成：
+   * 由`PROXY_HOST`變數提供的Proxy主機
+   * 由`PROXY_HTTPS_PORT`或`PROXY_HTTP_PORT`變數提供的Proxy連線埠（將使用具有非空白值的變數）
+2. 設定連線到HTTP Proxy時將使用的CA憑證。 其位置由`PROXY_CA_PATH`變數提供。
+   * 這可透過匯出`NODE_EXTRA_CA_CERTS`環境變數來完成。
 3. 等候HTTP Proxy準備就緒。
-   * 若要檢查整備情況，請考量環境變數 `PROXY_HOST`， `PROXY_OBSERVABILITY_PORT`， `PROXY_RETRY_ATTEMPTS` 和 `PROXY_RETRY_DELAY` 可使用。
-   * 您可以使用cURL請求檢查，確保將cURL安裝在您的 `Dockerfile`.
+   * 若要檢查整備程度，可以使用環境變數`PROXY_HOST`、`PROXY_OBSERVABILITY_PORT`、`PROXY_RETRY_ATTEMPTS`和`PROXY_RETRY_DELAY`。
+   * 您可以使用cURL要求檢查，確定在您的`Dockerfile`中安裝cURL。
 
-您可以在Cypress範例測試模組的Entrypoint on找到實作範例 [GitHub。](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-cypress/test-module/run.sh)
+您可以在[GitHub.](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-cypress/test-module/run.sh)上的Cypress範例測試模組的Entrypoint中找到實作範例。
 
 ## 播放權特定的詳細資料
 
@@ -356,13 +356,13 @@ Docker容器的入口點需要檢查 `PROXY_HOST` 環境變數。
 >
 > 在顯示的範例中，我們假設使用Chrome作為專案瀏覽器。
 
-與Cypress類似，若為非空白，測試需要使用HTTP Proxy `PROXY_HOST` 已提供環境變數。
+與Cypress類似，如果提供了非空白的`PROXY_HOST`環境變數，則測試需要使用HTTP Proxy。
 
 若要這麼做，必須進行下列修改。
 
 #### Dockerfile
 
-安裝cURL和 `libnss3-tools`，可提供 `certutil.`
+安裝cURL和`libnss3-tools`，提供`certutil.`
 
 ```dockerfile
 RUN apt -y update \
@@ -372,10 +372,10 @@ RUN apt -y update \
 
 #### Entrypoint指令碼
 
-加入bash指令碼，以便 `PROXY_HOST` 提供的環境變數，會執行以下操作：
+納入bash指令碼，在已提供`PROXY_HOST`環境變數的情況下，其會執行下列動作：
 
-1. 匯出Proxy相關的變數，例如 `HTTP_PROXY` 和 `NODE_EXTRA_CA_CERTS`
-2. 使用 `certutil` 若要為chromium安裝Proxy CA憑證
+1. 匯出Proxy相關的變數，例如`HTTP_PROXY`和`NODE_EXTRA_CA_CERTS`
+2. 使用`certutil`安裝Chromium的Proxy CA憑證
 3. 等候HTTP Proxy準備就緒（或失敗時結束）。
 
 實作範例：
@@ -409,7 +409,7 @@ fi
 
 #### 播放器設定
 
-修改播放器設定(例如 `playwright.config.js`)來使用Proxy，以便 `HTTP_PROXY` 環境變數已設定。
+修改播放權設定（例如`playwright.config.js`中的）以使用Proxy，以防已設定`HTTP_PROXY`環境變數。
 
 實作範例：
 

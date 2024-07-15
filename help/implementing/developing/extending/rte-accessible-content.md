@@ -1,6 +1,6 @@
 ---
 title: 設定RTE以建立無障礙的網頁和網站。
-description: 瞭解如何設定RTF編輯器以在中建立無障礙網站 [!DNL Adobe Experience Manager].
+description: 瞭解如何設定RTF編輯器以在 [!DNL Adobe Experience Manager]中建立無障礙網站。
 contentOwner: AG
 exl-id: 54050fc9-0348-4033-8e2b-b3897588cb62
 feature: Developing
@@ -14,49 +14,49 @@ ht-degree: 1%
 
 # 設定 RTE 以建立可存取的網站 {#configure-rte-accessible-sites}
 
-[!DNL Adobe Experience Manager] 支援標準協助工具功能，例如影像的替代文字，以及在建立內容時可存取的額外功能。 內容作者將這些功能與使用RTF編輯器(RTE)的元件搭配使用。 功能包括新增替代文字、透過標題和段落元素的結構資訊等等。
+[!DNL Adobe Experience Manager]支援標準的協助工具功能，例如影像的替代文字，以及建立內容時可存取的額外功能。 內容作者將這些功能與使用RTF編輯器(RTE)的元件搭配使用。 功能包括新增替代文字、透過標題和段落元素的結構資訊等等。
 
-若要瞭解典型RTE設定，請參閱 [設定RTE](rich-text-editor.md) 和 [針對特定功能設定RTE外掛程式](configure-rich-text-editor-plug-ins.md).
+若要瞭解RTE的典型設定，請參閱[設定RTE](rich-text-editor.md)以及[為特定功能設定RTE外掛程式](configure-rich-text-editor-plug-ins.md)。
 
-使用RTE外掛程式設定來設定和自訂協助工具的相關功能。 例如，使用 `paraformat` 以新增額外的區塊層級語意元素，包括擴充基本標題層級以外的支援標題層級 `H1`， `H2` 和 `H3` 預設提供。 RTF編輯可使用製作使用者介面的許多元件。 常用的元件有文字、影像、下載等。
+使用RTE外掛程式設定來設定和自訂協助工具的相關功能。 例如，使用`paraformat`新增額外的區塊層級語意元素，包括擴充支援的標題層級數目，使其超過預設提供的基本`H1`、`H2`和`H3`。 RTF編輯可使用製作使用者介面的許多元件。 常用的元件有文字、影像、下載等。
 
-RTE功能可用於許多元件中。 主要元件為 `Text` 元件。
+RTE功能可用於許多元件中。 主要元件是`Text`元件。
 
-對於 `Text` 中的元件 [!DNL Experience Manager]，下列熒幕擷圖顯示RTF編輯器，其中包含一系列啟用的外掛程式，包括 `paraformat`：
+針對[!DNL Experience Manager]中的`Text`元件，下列熒幕擷圖顯示已啟用一系列外掛程式（包括`paraformat`）的RTF編輯器：
 
-![全熒幕模式的RTE文字元件](assets/rte-toolbar-full-screen-mode.png)
+全熒幕模式中的![RTE文字元件](assets/rte-toolbar-full-screen-mode.png)
 
 ## 設定外掛程式功能 {#configuring-the-plugin-features}
 
-如需設定RTE的說明，請參閱 [設定RTF編輯器](rich-text-editor.md) 頁面。 文章涵蓋：
+如需設定RTE的說明，請參閱[設定RTF編輯器](rich-text-editor.md)頁面。 文章涵蓋：
 
 * [外掛程式及其功能](rich-text-editor.md#aboutplugins)
 * [設定位置](rich-text-editor.md#understand-the-configuration-paths-and-locations)
 * [啟動外掛程式並設定功能屬性](rich-text-editor.md#enable-rte-functionalities-by-activating-plug-ins)
 * [設定RTE的其他功能](rich-text-editor.md#enable-rte-functionalities-by-activating-plug-ins)
 
-若要針對外掛程式啟動幾項或所有功能，請在適當位置設定外掛程式 `rtePlugins` CRXDE Lite中的支行。
+若要啟用外掛程式的幾項或所有功能，請在CRXDE Lite中適當的`rtePlugins`子分支內設定外掛程式。
 
-![顯示rtePlugin範例的CRXDE Lite](assets/example-rteplugin-crxde-lite.png)
+顯示rtePlugin](assets/example-rteplugin-crxde-lite.png)範例的![CRXDE Lite
 
 ### 指定RTE選取欄位中可用段落格式的範例 {#example-specifying-paragraph-formats-available-in-rte-selection-field}
 
 新的語意區塊格式可供選取。
 
-1. 根據您的RTE，決定並導覽至 [設定位置](rich-text-editor.md#understand-the-configuration-paths-and-locations).
-1. [啟用段落選取欄位](rich-text-editor.md) 作者： [啟用外掛程式](rich-text-editor.md#enable-rte-functionalities-by-activating-plug-ins).
-1. [在段落選取欄位中指定您要使用的格式](rich-text-editor.md).
+1. 根據您的RTE，決定並導覽至[設定位置](rich-text-editor.md#understand-the-configuration-paths-and-locations)。
+1. [啟用外掛程式](rich-text-editor.md#enable-rte-functionalities-by-activating-plug-ins)以啟用段落選取欄位](rich-text-editor.md)。[
+1. [指定您要在段落選取欄位中使用的格式](rich-text-editor.md)。
 1. 然後，內容作者可以從RTE的選擇欄位中使用段落格式。
 
-透過RTE中的段落格式選項提供結構元素， [!DNL Experience Manager] 為開發無障礙內容提供了良好的基礎。 內容作者無法使用RTE來格式化字型大小、顏色或其他相關屬性，因而無法建立內嵌格式。 相反地，作者可以選取適當的結構元素（例如標題），並使用從「樣式」選項中選取的全域樣式，以確保對於使用自己的樣式表瀏覽且結構內容正確的使用者，會有乾淨的標示和更大的選項。
+透過RTE中透過段落格式選項提供的結構元素，[!DNL Experience Manager]為開發無障礙內容提供了良好的基礎。 內容作者無法使用RTE來格式化字型大小、顏色或其他相關屬性，因而無法建立內嵌格式。 相反地，作者可以選取適當的結構元素（例如標題），並使用從「樣式」選項中選取的全域樣式，以確保對於使用自己的樣式表瀏覽且結構內容正確的使用者，會有乾淨的標示和更大的選項。
 
-## 使用來源編輯功能 {#use-of-the-source-edit-feature}
+## 使用Source編輯功能 {#use-of-the-source-edit-feature}
 
-在某些情況下，內容作者會發現必須檢查並調整使用RTE建立的HTML原始碼。 例如，在RTE內建立的內容片段可能需要更多標籤，以確保符合WCAG 2.0。您可以透過以下專案完成此作業： [來源編輯](rich-text-editor.md#aboutplugins) RTE的選項。 您可以指定 [`sourceedit` 上的功能 `misctools` 外掛程式](rich-text-editor.md#aboutplugins).
+在某些情況下，內容作者會發現必須檢查並調整使用RTE建立的HTML原始碼。 例如，在RTE內建立的內容片段可能需要更多標籤，以確保符合WCAG 2.0。您可以使用RTE的[來源編輯](rich-text-editor.md#aboutplugins)選項來完成此操作。 您可以在`misctools`外掛程式](rich-text-editor.md#aboutplugins)上指定[`sourceedit`功能。
 
 >[!CAUTION]
 >
->使用 `sourceedit` 功能精心。 任何輸入錯誤和不支援的功能都可能會造成問題。
+>請謹慎使用`sourceedit`功能。 任何輸入錯誤和不支援的功能都可能會造成問題。
 
 <!--
 TBD ENGREVIEW: Is this only applicable to Classic UI? 
@@ -150,4 +150,4 @@ In a `Table`, set the attribute to the DOM element or or remove it from the DOM 
 >[!MORELIKETHIS]
 >
 >* [WCAG標準快速指南](/help/compliance/accessibility/quick-guide-wcag.md)
->* [如何在Experience Manager中建立無障礙內容](/help/sites-cloud/authoring/page-editor/accessible-content.md)
+>* [如何在Experience Manager](/help/sites-cloud/authoring/page-editor/accessible-content.md)中建立可存取的內容

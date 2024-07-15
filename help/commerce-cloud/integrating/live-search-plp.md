@@ -1,6 +1,6 @@
 ---
-title: 『[!DNL Live Search] 產品清單頁面CIF元件
-description: 使用CIF元件來啟用 [!DNL Live Search] AEM網站上的產品清單頁面元件
+title: '[!DNL Live Search]產品清單頁面CIF元件'
+description: 使用CIF元件在AEM網站上啟用 [!DNL Live Search] 產品清單頁面元件
 exl-id: 7f2d9a43-a7cb-4d9d-a108-b016cd1ff81e
 feature: Commerce Integration Framework
 role: Admin
@@ -15,17 +15,17 @@ ht-degree: 0%
 
 Adobe Commerce的Live Search提供快速、相關且直覺的搜尋體驗，不需額外付費。 由Adobe Sensei提供支援的即時搜尋功能會使用人工智慧和機器學習演演算法，對彙總的訪客資料執行深入分析。 此資料與您的Adobe Commerce目錄結合時，會產生相關且個人化的購物體驗。
 
-本主題說明如何使用AEM CIF元件來實作 [!DNL Live Search] 將產品清單頁面(PLP) Widget插入您的AEM網站。
+本主題說明如何使用AEM CIF元件，將[!DNL Live Search]產品清單頁面(PLP) Widget實作至您的AEM網站。
 
 ## 先決條件 {#prerequisites}
 
-本主題假設您有一個本機 [AEM環境](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html) 設定。
+本主題假設您已設定本機[AEM環境](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html)。
 
-PLP元件需要 [[!DNL Live Search] 彈出式CIF元件](live-search-popover.md) 即將安裝。 PLP Widget需要由彈出視窗產生的瀏覽器工作階段變數。
+PLP元件需要安裝[[!DNL Live Search] Popover CIF元件](live-search-popover.md)。 PLP Widget需要由彈出視窗產生的瀏覽器工作階段變數。
 
 ## 更新撰寫器 {#update-composer}
 
-將事件模組新增至 `ui.frontend/package.json`.
+將事件模組新增至`ui.frontend/package.json`。
 
 在第27行，變更：
 
@@ -54,11 +54,11 @@ PLP元件需要 [[!DNL Live Search] 彈出式CIF元件](live-search-popover.md) 
 
 ## 檔案變更 {#files-changes}
 
-必須更新多個檔案才能啟用 [!DNL Live Search] 功能。 編輯下列檔案。 行號可能與此處顯示的稍有不同。
+必須更新多個檔案才能啟用[!DNL Live Search]功能。 編輯下列檔案。 行號可能與此處顯示的稍有不同。
 
 * ui.apps/src/main/content/jcr_root/apps/venia/clientlibs/clientlib-cif/.content.xml
 
-  附加 `core.cif.productlist.v1` 至 `embed` 行。
+  將`core.cif.productlist.v1`附加至`embed`行。
 
   ```
   embed="[core.cif.components.common,core.cif.components.product.v3,core.cif.components.productcarousel.v1,core.cif.components.productcollection.v2,core.cif.components.productteaser.v1,core.cif.components.searchbar.v2,core.cif.components.header.v1,core.cif.components.carousel.v1,core.cif.components.categorycarousel.v1,core.cif.components.featuredcategorylist.v1,core.cif.components.storefront-events.v1,core.cif.components.extensions.product-recs.storefront-events-collector.v1,core.wcm.components.commons.site.link,core.cif.productlist.v1]"
@@ -66,7 +66,7 @@ PLP元件需要 [[!DNL Live Search] 彈出式CIF元件](live-search-popover.md) 
 
 * ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/productlist/clientlibs/.content.xml
 
-  建立檔案 `.content.xml`：
+  建立檔案`.content.xml`：
 
   ```xml
   <?xml version="1.0" encoding="UTF-8"?>
@@ -79,7 +79,7 @@ PLP元件需要 [[!DNL Live Search] 彈出式CIF元件](live-search-popover.md) 
 
 * ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/productlist/clientlibs/css.txt
 
-  建立檔案 `css.txt`：
+  建立檔案`css.txt`：
 
   ```text
   #base=css
@@ -89,7 +89,7 @@ PLP元件需要 [[!DNL Live Search] 彈出式CIF元件](live-search-popover.md) 
 
 * ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/productlist/clientlibs/css/productlist.css
 
-  建立檔案 `productlist.css`
+  建立檔案`productlist.css`
 
   ```css
     /* #search-plp-root */
@@ -118,7 +118,7 @@ PLP元件需要 [[!DNL Live Search] 彈出式CIF元件](live-search-popover.md) 
 
 * ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/productlist/clientlibs/js.txt
 
-  建立檔案 `js.txt`：
+  建立檔案`js.txt`：
 
   ```text
   js/productlist.js
@@ -126,7 +126,7 @@ PLP元件需要 [[!DNL Live Search] 彈出式CIF元件](live-search-popover.md) 
 
 * ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/productlist/clientlibs/js/productlist.js
 
-  建立檔案 `productlist.js`：
+  建立檔案`productlist.js`：
 
   ```javascript
   /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -281,7 +281,7 @@ PLP元件需要 [[!DNL Live Search] 彈出式CIF元件](live-search-popover.md) 
 
 * ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/productlist/productlist.html
 
-  建立檔案 `productlist.html`：
+  建立檔案`productlist.html`：
 
   ```html
   <div
@@ -295,7 +295,7 @@ PLP元件需要 [[!DNL Live Search] 彈出式CIF元件](live-search-popover.md) 
 
 * ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/searchresults/.content.xml
 
-  編輯 `.content.xml` 在第6行：
+  在第6行編輯`.content.xml`：
 
   ```xml
   sling:resourceSuperType="venia/components/commerce/productlist"
@@ -303,7 +303,7 @@ PLP元件需要 [[!DNL Live Search] 彈出式CIF元件](live-search-popover.md) 
 
 * ui.content/src/main/content/jcr_root/content/venia/language-masters/en/search/.content.xml
 
-  編輯 `.content.xml` 在第21-22行：
+  在第21-22行編輯`.content.xml`：
 
   ```xml
   sling:resourceType="venia/components/commerce/productlist"
@@ -311,7 +311,7 @@ PLP元件需要 [[!DNL Live Search] 彈出式CIF元件](live-search-popover.md) 
 
 * ui.content/src/main/content/jcr_root/content/venia/us/en/search/.content.xml
 
-  編輯 `.content.xml` 在第26行：
+  在第26行編輯`.content.xml`：
 
   ```xml
   sling:resourceType="venia/components/commerce/productlist"
@@ -319,7 +319,7 @@ PLP元件需要 [[!DNL Live Search] 彈出式CIF元件](live-search-popover.md) 
 
 * ui.frontend/src/main/components/App/App.js
 
-  編輯 `App.js` 位於第47行，正上方 `../../site/main.scss`：
+  在第47行編輯`App.js` （位於`../../site/main.scss`的正上方）：
 
   ```javascript
   import '@adobe/magento-storefront-event-collector';
@@ -327,7 +327,7 @@ PLP元件需要 [[!DNL Live Search] 彈出式CIF元件](live-search-popover.md) 
 
 * ui.tests/test-module/specs/venia/productlist-dialog.js
 
-  編輯 `productlist-dialog.js` 和變更 `describe` 至 `describe.skip` 在第20行：
+  編輯`productlist-dialog.js`並在第20行將`describe`變更為`describe.skip`：
 
   ```javascript
   describe.skip('Product List Component Dialog', function () {
@@ -337,11 +337,11 @@ PLP元件需要 [[!DNL Live Search] 彈出式CIF元件](live-search-popover.md) 
 
 可能需要預設類別或目錄頁面，而非使用PLP Widget的某些類別。 在AEM中，這些類別頁面必須手動設定。
 
-1. 從作者頁面中，選取類別頁面範本。 _Venia Store — 首頁_ > _目錄頁面_ > _Venia商店 — 類別頁面_ 然後選取「商店外觀」或建立新頁面範本。
+1. 從作者頁面中，選取類別頁面範本。 _Venia商店 — 首頁_ > _目錄頁面_ > _Venia商店 — 類別頁面_，然後選取[購買外觀]或建立新的頁面範本。
 
 ![選取範本](../assets/cif-widget-1.jpg)
 
-1. 按一下 _屬性_ 區段並選取 _商務_ 標籤。
+1. 按一下「_屬性_」區段並選取「_Commerce_」標籤。
 
 ![選擇屬性](../assets/cif-widget-2.jpg)
 

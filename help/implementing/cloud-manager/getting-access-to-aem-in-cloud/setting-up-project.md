@@ -113,7 +113,7 @@ ht-degree: 96%
 
 >[!NOTE]
 >
->對於來自受密碼保護的Maven存放庫的成品，應謹慎使用，因為透過此機制部署的程式碼目前不會執行 [程式碼品質規則](/help/implementing/cloud-manager/custom-code-quality-rules.md) 在Cloud Manager的品質閘道中實作。 因此，它只應在極少數情況下用於不與 AEM 綁定的程式碼。建議同時部署 Java 原始程式碼和整個專案的原始程式碼還有二進位。
+>應謹慎使用來自受密碼保護的Maven存放庫的成品，因為透過此機制部署的程式碼目前不會透過在Cloud Manager品質閘道中實作的[程式碼品質規則](/help/implementing/cloud-manager/custom-code-quality-rules.md)執行。 因此，它只應在極少數情況下用於不與 AEM 綁定的程式碼。建議同時部署 Java 原始程式碼和整個專案的原始程式碼還有二進位。
 
 若要在 Cloud Manager 中使用受密碼保護的 Maven 存放庫：
 
@@ -123,7 +123,7 @@ ht-degree: 96%
 當 Cloud Manager 建置過程開始時：
 
 * 此檔案中的 `<servers>` 元素合併至由 Cloud Manager 提供的預設 `settings.xml` 檔案中。
-   * 伺服器ID開頭為 `adobe` 和 `cloud-manager` 視為已保留。 請勿在自訂伺服器上使用它們。
+   * 以`adobe`和`cloud-manager`開頭的伺服器ID視為保留的。 請勿在自訂伺服器上使用它們。
    * Cloud Manager 對於和這些首碼中的任何一個或預設 ID `central` 都不相符的伺服器 ID 將無法進行鏡像。
 * 備妥這個檔案後，將從 `<repository>` 內部和/或 `<pluginRepository>` 元素 (在 `pom.xml` 檔案內) 參照伺服器 ID。
 * 一般來說，這些 `<repository>` 和/或 `<pluginRepository>` 元素將包含在 [Cloud Manager 的特定設定檔](#activating-maven-profiles-in-cloud-manager)內，不過這並非絕對必要。

@@ -1,6 +1,6 @@
 ---
-title: 在Content Hub中搜尋資產
-description: 瞭解如何在中搜尋資產 [!DNL Content Hub]
+title: 在 Content Hub 中搜尋資產
+description: 瞭解如何搜尋 [!DNL Content Hub]中的資產
 role: User
 source-git-commit: 5a968440c8841abe7af2c81c4af12258b7e4547f
 workflow-type: tm+mt
@@ -10,45 +10,45 @@ ht-degree: 0%
 ---
 
 
-# 搜尋Assets於 [!DNL Content Hub] {#search-assets}
+# 在[!DNL Content Hub]中搜尋Assets {#search-assets}
 
 ![共用資產橫幅影像](assets/search.png)
 
-當存放庫中有大量資產時，搜尋合適的資產相當耗時。 [!DNL The Content Hub] 「搜尋」可讓您尋找已核准的資產，這樣您就可以對資產執行其他動作，例如下載、共用或建立集合。 您可以利用各種功能來縮小搜尋結果的範圍，例如，執行文字式搜尋、使用篩選條件、執行標籤或智慧標籤特定搜尋、搜尋特定檔案格式等。
+當存放庫中有大量資產時，搜尋合適的資產相當耗時。 [!DNL The Content Hub]搜尋可讓您尋找已核准的資產，這樣您就可以對資產執行其他動作，例如下載、共用或建立集合。 您可以利用各種功能來縮小搜尋結果的範圍，例如，執行文字式搜尋、使用篩選條件、執行標籤或智慧標籤特定搜尋、搜尋特定檔案格式等。
 
 ## 先決條件 {#prerequisites}
 
-[Content Hub使用者](deploy-content-hub.md#onboard-content-hub-users) 可以執行本文所述的動作。
+[Content Hub使用者](deploy-content-hub.md#onboard-content-hub-users)可以執行本文中提到的動作。
 
 ## 您可以搜尋的內容  {#what-you-can-search}
 
-此 [!DNL Content Hub] 搜尋提供的結果依據：
+[!DNL Content Hub]搜尋提供的結果依據：
 
-* **相符的文字：** 此 [!DNL Content Hub] 搜尋可讓您使用其名稱或說明來搜尋資產。 您可以執行關鍵字式搜尋，將關鍵字與資產屬性中可用的文字做比較。
+* **比對文字：** [!DNL Content Hub]搜尋可讓您使用資產名稱或描述來搜尋資產。 您可以執行關鍵字式搜尋，將關鍵字與資產屬性中可用的文字做比較。
 
-* **相符的內容：** [!DNL Content Hub] 搜尋結果清單包含您根據相符內容所取得資產的近似結果。 例如，如果您輸入 `cool` 在搜尋列中，與以下專案相關的資產： `winter`， `snow`， `cold surroundings`，會顯示在搜尋清單中。
+* **相符的內容：** [!DNL Content Hub]搜尋結果清單包含您根據相符的內容所取得之資產的近似結果。 例如，如果您在搜尋列中輸入`cool`，則與`winter`、`snow`、`cold surroundings`相關的資產會顯示在搜尋清單中。
 
-* **資產資訊（標題、標籤或智慧標籤）：** [!DNL Content Hub] 使用智慧型搜尋演演算法，儘可能將搜尋結果精確地排名。 [中繼資料](#asset-properties.md) 是資產所有可用資料的集合，但不一定包含在資產中。 [它有助於您進一步將資產分類，而且隨著數位資訊量成長，將相當實用](/help/assets/configure-content-hub-ui-options.md##configure-metadata-search-content-hub).
+* **資產資訊（標題、標籤或智慧標籤）：** [!DNL Content Hub]會使用智慧搜尋演演算法，儘可能將搜尋結果排入正確的等級。 [中繼資料](#asset-properties.md)是資產所有可用資料的集合，但不一定包含在該資產中。 [它有助於您進一步將資產分類，而且隨著數位資訊量成長，會很有幫助](/help/assets/configure-content-hub-ui-options.md##configure-metadata-search-content-hub)。
 
-* **上次修改日期：** 最近修改的資產會出現在搜尋結果清單頂端。 您也可以視需求篩選日期範圍。
+* **上次修改日期：**&#x200B;最近修改的資產會出現在搜尋結果清單的最前面。 您也可以視需求篩選日期範圍。
 
-* **使用狀況：** 常用的資產會出現在搜尋清單的頂端。
+* **使用狀況：**&#x200B;常用的資產會出現在搜尋清單的頂端。
 
-* **搜尋歷史記錄：** 在搜尋方塊內按一下，而不輸入字元以取得您的搜尋記錄。 您也可以從歷史記錄中移除任何特定關鍵字。 搜尋歷史記錄會儲存在網頁瀏覽器的快取記憶體中，也就是說，如果您存取 [!DNL Content Hub] 在其他瀏覽器中搜尋或清除瀏覽器的快取記憶體，您將無法再檢視搜尋歷史記錄。
+* **搜尋歷程記錄：**&#x200B;在搜尋方塊內按一下，而不輸入字元以取得您的搜尋歷程記錄。 您也可以從歷史記錄中移除任何特定關鍵字。 搜尋記錄儲存在網頁瀏覽器的快取記憶體中，這表示如果您在不同瀏覽器中存取[!DNL Content Hub]搜尋，或清除瀏覽器的快取記憶體，您將無法再檢視搜尋記錄。
 
-* **輸入時進行搜尋：** 此 [!DNL Content Hub] 搜尋可在您開始輸入內容時，透過提供自動完成建議來增強您的搜尋體驗。
+* **當您輸入時進行搜尋：** [!DNL Content Hub]搜尋會在您開始輸入時提供自動完成的建議，藉以強化您的搜尋體驗。
 
 ## 基本搜尋 {#basic-search}
 
-執行基本搜尋 [!DNL the Content Hub]，導覽至搜尋列，並指定您要搜尋的關鍵字。 導覽至左側窗格中可用的篩選器，並套用這些篩選器以縮小搜尋結果的範圍。
+若要在[!DNL the Content Hub]上執行基本搜尋，請瀏覽至搜尋列，並指定您需要搜尋的關鍵字。 導覽至左側窗格中可用的篩選器，並套用這些篩選器以縮小搜尋結果的範圍。
 
-例如，搜尋所有的 **[!UICONTROL JPEG]** 包含關鍵字的影像 `architect` 中的變數，並於去年修改。 若要執行此案例，請執行下列步驟：
+例如，搜尋包含關鍵字`architect`的所有&#x200B;**[!UICONTROL JPEG]**&#x200B;影像，該關鍵字已在去年修改。 若要執行此案例，請執行下列步驟：
 
-1. 指定 `architect` 作為搜尋關鍵字。
+1. 指定`architect`作為搜尋關鍵字。
 
-1. 導覽至篩選器面板> **[!UICONTROL 格式]** >選取 **[!UICONTROL JPEG]**.
+1. 導覽至篩選器面板> **[!UICONTROL 格式]** >選取&#x200B;**[!UICONTROL JPEG]**。
 
-1. 瀏覽至 **[!UICONTROL 已修改]** >指定日期範圍。
+1. 瀏覽至&#x200B;**[!UICONTROL 已修改]** >指定日期範圍。
 
    ![基本搜尋](assets/basic-search.png)
 
@@ -56,7 +56,7 @@ ht-degree: 0%
 
 使用「篩選器」面板，根據中繼資料搜尋資產。 您可以根據各種搜尋述詞來篩選搜尋結果。 您可以選取所有適當的述詞，以最小化或縮小搜尋結果。 當您在篩選器中選取多個選項時，Content Hub會顯示符合在篩選器中選取之任何選項的資產。 不過，當您跨篩選器選取多個選項時，Content Hub只會顯示符合跨篩選器選取之所有選項的資產，以縮小搜尋結果的範圍。
 
-預設篩選條件包括檔案格式、核准者、核准日期、過期和未過期的資產，以及過期日期。 管理員也可以設定篩選器清單中顯示的篩選器。 如需詳細資訊，請參閱 [設定Content Hub使用者介面](configure-content-hub-ui-options.md#configure-filters-content-hub).
+預設篩選條件包括檔案格式、核准者、核准日期、過期和未過期的資產，以及過期日期。 管理員也可以設定篩選器清單中顯示的篩選器。 如需詳細資訊，請參閱[設定Content Hub使用者介面](configure-content-hub-ui-options.md#configure-filters-content-hub)。
 
 <!--
 
@@ -152,4 +152,4 @@ ht-degree: 0%
 
 ## 透過搜尋完成更多工作 {#do-more-with-search}
 
-[!DNL The Content Hub] 不僅限於搜尋，也可讓您執行其他動作，例如 [下載](download-assets-content-hub.md)， [共用](share-assets-content-hub.md)、和 [將資產新增至收藏集](collections-content-hub.md)，從搜尋或預覽介面直接選取。 在搜尋結果頁面上選取資產以檢視這些選項。
+[!DNL The Content Hub]不限於搜尋，而是可讓您直接從搜尋或預覽介面執行其他動作，例如[下載](download-assets-content-hub.md)、[共用](share-assets-content-hub.md)以及[新增資產至集合](collections-content-hub.md)。 在搜尋結果頁面上選取資產以檢視這些選項。

@@ -29,25 +29,25 @@ ht-degree: 0%
 
 ## 簡介 {#introduction}
 
-[漸進式網頁應用程式(PWA)](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps) 可讓AEM網站在本機儲存在使用者電腦上，且可供離線存取，藉此啟用類似應用程式的沈浸式體驗。 即使失去網際網路連線，使用者也可以在行動中瀏覽網站。 即使網路遺失或不穩定，PWA也能提供順暢的體驗。
+[漸進式網頁應用程式(PWA)](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps)可讓AEM網站在本機儲存在使用者電腦上，並可離線存取，藉此啟用類似應用程式的沈浸式體驗。 即使失去網際網路連線，使用者也可以在行動中瀏覽網站。 即使網路遺失或不穩定，PWA也能提供順暢的體驗。
 
-內容作者不需要重新錄製網站，而是可以將PWA屬性設定為中的額外索引標籤 [頁面屬性](/help/sites-cloud/authoring/sites-console/page-properties.md) 網站的。
+內容作者不需要重新錄製網站，而是能夠將PWA屬性設定為網站[頁面屬性](/help/sites-cloud/authoring/sites-console/page-properties.md)中的額外索引標籤。
 
-* 儲存或發佈後，此設定會觸發一個事件處理常式，該處理常式會將 [資訊清單檔案](https://developer.mozilla.org/en-US/docs/Web/Manifest) 和 [服務工作者](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API) 可啟用網站上的PWA功能。
+* 儲存或發佈時，此設定會觸發寫出[資訊清單檔案](https://developer.mozilla.org/en-US/docs/Web/Manifest)的事件處理常式，以及啟用網站PWA功能的[Service Worker](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API)。
 * 也會維護Sling對應，以確保從應用程式的根提供Service Worker，以啟用代理內容，允許應用程式內的離線功能。
 
 透過PWA，使用者擁有網站的本機副本，即使沒有網際網路連線，也能提供應用程式般的體驗。
 
 >[!NOTE]
 >
->漸進式網頁應用程式是一項不斷發展的技術，可支援本機應用程式安裝和其他功能 [視您使用的瀏覽器而定。](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Tutorials/js13kGames/Installable_PWAs#summary)
+>漸進式網頁應用程式是一項不斷發展的技術，而且支援本機應用程式安裝和其他功能[取決於您使用的瀏覽器。](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Tutorials/js13kGames/Installable_PWAs#summary)
 
 ## 先決條件 {#prerequisites}
 
 若要能夠針對您的網站使用PWA功能，您的專案環境有兩個要求：
 
-1. [使用核心元件](#adjust-components) 以善用此功能
-1. [調整您的Dispatcher](#adjust-dispatcher) 公開所需檔案的規則
+1. [使用核心元件](#adjust-components)以利用此功能
+1. [調整您的Dispatcher](#adjust-dispatcher)規則以公開必要的檔案
 
 這些是作者必須與開發團隊協調的技術步驟。 每個網站只需執行這些步驟一次。
 
@@ -57,7 +57,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Adobe不建議在自訂元件上使用PWA功能，或對非自訂元件使用 [從核心元件擴充。](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html)
+>Adobe不建議在自訂元件或未從核心元件[延伸的元件上使用PWA功能。](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html)
 <!--
 Your components need to include the [manifest files](https://developer.mozilla.org/en-US/docs/Web/Manifest) and [service worker,](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API) which supports the PWA features.
 
@@ -85,7 +85,7 @@ The developer also adds the following link to the `customfooterlibs.html` file o
 
 ### 調整您的Dispatcher {#adjust-dispatcher}
 
-PWA功能會產生並使用 `/content/<sitename>/manifest.webmanifest` 檔案。 根據預設， [Dispatcher](/help/implementing/dispatcher/overview.md) 不會公開此類檔案。 若要公開這些檔案，開發人員必須將下列設定新增至您的網站專案。
+PWA功能會產生並使用`/content/<sitename>/manifest.webmanifest`個檔案。 依預設，[Dispatcher](/help/implementing/dispatcher/overview.md)不會公開這類檔案。 若要公開這些檔案，開發人員必須將下列設定新增至您的網站專案。
 
 ```text
 File location: [project directory]/dispatcher/src/conf.dispatcher.d/filters/filters.any >
@@ -94,7 +94,7 @@ File location: [project directory]/dispatcher/src/conf.dispatcher.d/filters/filt
 /0102 { /type "allow" /extension "webmanifest" /path "/content/*/manifest" }
 ```
 
-根據您的專案，您可能想要在重寫規則中包含不同型別的擴充功能。 此 `webmanifest` 當您匯入隱藏和重新導向要求的規則時，將擴充功能加入重寫條件會很有用 `/content/<projectName>`.
+根據您的專案，您可能想要在重寫規則中包含不同型別的擴充功能。 當您匯入隱藏及重新導向要求至`/content/<projectName>`的規則時，`webmanifest`擴充功能將包含在重新寫入條件中會很有用。
 
 ```text
 RewriteCond %{REQUEST_URI} (.html|.jpe?g|.png|.svg|.webmanifest)$
@@ -102,14 +102,14 @@ RewriteCond %{REQUEST_URI} (.html|.jpe?g|.png|.svg|.webmanifest)$
 
 ## 為您的網站啟用PWA {#enabling-pwa-for-your-site}
 
-替換為 [必備條件](#prerequisites) met，內容作者可以輕鬆為網站啟用PWA功能。 以下是如何進行此操作的基本概述。 區段中會詳細說明個別選項 [詳細選項。](#detailed-options)
+滿足[必要條件](#prerequisites)後，內容作者就可以輕鬆啟用網站PWA功能。 以下是如何進行此操作的基本概述。 個別選項在[詳細選項](#detailed-options)一節中詳細說明。
 
 1. 登入AEM。
-1. 從主功能表中選取 **導覽** > **網站**.
-1. 選取您的網站專案，然後選取 [**屬性**](/help/sites-cloud/authoring/sites-console/page-properties.md) 或使用快速鍵 `p`.
-1. 選取 **漸進式網頁應用程式** 標籤並設定適用的屬性。 您至少需要：
-   1. 選取選項 **啟用PWA**.
-   1. 定義 **啟動URL**.
+1. 從主功能表中選取&#x200B;**導覽** > **網站**。
+1. 選取您的網站專案，然後選取&#x200B;[**屬性**](/help/sites-cloud/authoring/sites-console/page-properties.md)&#x200B;或使用快速鍵`p`。
+1. 選取&#x200B;**漸進式網頁應用程式**&#x200B;標籤，並設定適用的屬性。 您至少需要：
+   1. 選取選項&#x200B;**啟用PWA**。
+   1. 定義&#x200B;**啟動URL**
 
       ![啟用PWA](../assets/pwa-enable.png)
 
@@ -128,13 +128,13 @@ RewriteCond %{REQUEST_URI} (.html|.jpe?g|.png|.svg|.webmanifest)$
 
 1. 選取「**儲存並關閉**」。
 
-您的網站現已設定完成，您可以 [將其安裝為本機應用程式。](#using-pwa-enabled-site)
+您的網站現在已設定，您可以[將它安裝為本機應用程式。](#using-pwa-enabled-site)
 
 ## 使用已啟用PWA的網站 {#using-pwa-enabled-site}
 
-現在您已擁有 [已設定您的網站以支援PWA，](#enabling-pwa-for-your-site) 您可以親身體驗。
+現在您已將[設定您的網站以支援PWA，](#enabling-pwa-for-your-site)您可以親自體驗它。
 
-1. 在中存取網站 [支援的瀏覽器](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Tutorials/js13kGames/Installable_PWAs#summary).
+1. 在[支援的瀏覽器](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Tutorials/js13kGames/Installable_PWAs#summary)中存取網站。
 1. 您會在瀏覽器的位址列看到新圖示，表示網站可安裝為本機應用程式。
    * 圖示可能會依瀏覽器而有所不同，且瀏覽器也可能會顯示通知（例如橫幅或對話方塊），指出可作為本機應用程式安裝。
 1. 安裝應用程式。
@@ -143,55 +143,55 @@ RewriteCond %{REQUEST_URI} (.html|.jpe?g|.png|.svg|.webmanifest)$
 
 ## 詳細選項 {#detailed-options}
 
-下節提供發生以下情況時可用的選項的詳細資訊 [設定您的網站以進行PWA。](#enabling-pwa-for-your-site)
+以下章節提供當[設定您的網站以進行PWA時，可用選項的詳細資訊。](#enabling-pwa-for-your-site)
 
 ### 設定安裝體驗 {#configure-installable-experience}
 
 這些設定可讓您的網站安裝在訪客的主畫面上並離線存取，以便像原生應用程式一樣運作。
 
-* **啟用PWA**  — 這是啟用網站PWA功能的主要切換按鈕。
-* **啟動URL**  — 這是 [偏好的起始URL](https://developer.mozilla.org/en-US/docs/Web/Manifest/start_url) 當使用者載入本機安裝的應用程式時，應用程式會開啟。
+* **啟用PWA** — 這是啟用網站PWA的主要切換按鈕。
+* **啟動URL** — 這是使用者載入本機安裝的應用程式時，應用程式開啟的[偏好的啟動URL](https://developer.mozilla.org/en-US/docs/Web/Manifest/start_url)。
    * 這可以是內容結構中的任何路徑。
    * 這不一定是根目錄，且通常是應用程式的專屬歡迎頁面。
    * 如果此URL是相對的，則資訊清單URL會作為基礎URL來解析。
    * 若保留為空白，功能會使用安裝應用程式的來源網頁位址。
    * 建議您設定值。
-* **顯示模式**  — 啟用PWA的應用程式仍然是透過瀏覽器傳送的AEM網站。 [這些顯示選項](https://developer.mozilla.org/en-US/docs/Web/Manifest/display) 定義應如何隱藏瀏覽器，或如何以其他方式將瀏覽器顯示給本機裝置上的使用者。
-   * **獨立**  — 使用者看不到瀏覽器，且看起來像是原生應用程式。 這是預設值。
+* **顯示模式** — 啟用PWA的應用程式仍然是透過瀏覽器傳送的AEM網站。 [這些顯示選項](https://developer.mozilla.org/en-US/docs/Web/Manifest/display)會定義如何隱藏瀏覽器，或如何以其他方式顯示給本機裝置上的使用者。
+   * **獨立** — 使用者看不到瀏覽器，而且它看起來像是原生應用程式。 這是預設值。
       * 有了此選項，您必須使用網站頁面上的連結和元件，完全能夠透過您的內容進行應用程式導覽，而不需要使用瀏覽器的導覽控制項。
-   * **瀏覽器**  — 瀏覽器在造訪網站時會如常顯示。
-   * **最小UI**  — 瀏覽器大部分是隱藏的，就像原生應用程式，但會顯示基本導覽控制項。
-   * **全熒幕**  — 瀏覽器會隱藏（如同原生應用程式），但會以全熒幕模式呈現。
+   * **瀏覽器** — 瀏覽器在造訪網站時會如常顯示。
+   * **最小化UI** — 瀏覽器大部分是隱藏的，就像原生應用程式一樣，但會顯示基本導覽控制項。
+   * **全熒幕** — 瀏覽器是隱藏的，就像原生應用程式，但會以全熒幕模式呈現。
       * 有了此選項，您必須使用網站頁面上的連結和元件，完全能夠透過您的內容進行應用程式導覽，而不需要使用瀏覽器的導覽控制項。
-* **熒幕方向**  — 身為本機應用程式，PWA必須知道如何處理 [裝置方向](https://developer.mozilla.org/en-US/docs/Web/Manifest/orientation).
-   * **任何**  — 應用程式會根據使用者裝置的方向進行調整。 這是預設值。
-   * **縱向**  — 此動作會強制應用程式以縱向配置開啟，無論使用者裝置的方向為何。
-   * **橫向**  — 強制應用程式以橫向配置開啟，無論使用者裝置的方向為何。
-* **佈景主題顏色**  — 這會定義 [應用程式的顏色](https://developer.mozilla.org/en-US/docs/Web/Manifest/theme_color) 這會影響本機使用者的作業系統顯示原生UI工具列和導覽控制項的方式。 視瀏覽器而定，它可能會影響其他應用程式簡報元素。
+* **熒幕方向** — 作為本機應用程式，PWA必須知道如何處理[裝置方向](https://developer.mozilla.org/en-US/docs/Web/Manifest/orientation)。
+   * **任何** — 應用程式會調整成使用者裝置的方向。 這是預設值。
+   * **縱向** — 這會強制應用程式以縱向配置開啟，無論使用者裝置的方向為何。
+   * **橫向** — 這會強制應用程式以橫向配置開啟，無論使用者裝置的方向為何。
+* **佈景主題色彩** — 這會定義應用程式](https://developer.mozilla.org/en-US/docs/Web/Manifest/theme_color)的[色彩，會影響本機使用者的作業系統顯示原生UI工具列和導覽控制項的方式。 視瀏覽器而定，它可能會影響其他應用程式簡報元素。
    * 使用色槽快顯視窗來選取顏色。
    * 顏色也可以由十六進位或RGB值定義。
-* **背景顏色**  — 這會定義 [應用程式的背景顏色](https://developer.mozilla.org/en-US/docs/Web/Manifest/background_color)，會在應用程式載入時顯示。
+* **背景色彩** — 這會定義應用程式](https://developer.mozilla.org/en-US/docs/Web/Manifest/background_color)的[背景色彩，會在應用程式載入時顯示。
    * 使用色槽快顯視窗來選取顏色。
    * 顏色也可以由十六進位或RGB值定義。
-   * 特定瀏覽器 [自動建立啟動畫面](https://developer.mozilla.org/en-US/docs/Web/Manifest#Splash_screens) 從應用程式名稱、背景顏色和圖示。
-* **圖示**  — 這定義 [圖示](https://developer.mozilla.org/en-US/docs/Web/Manifest/icons) 代表使用者裝置上的應用程式。
+   * 某些瀏覽器會自動從應用程式名稱、背景顏色和圖示[建立啟動畫面](https://developer.mozilla.org/en-US/docs/Web/Manifest#Splash_screens)。
+* **圖示** — 這會定義代表使用者裝置上應用程式的[圖示](https://developer.mozilla.org/en-US/docs/Web/Manifest/icons)。
    * 圖示必須是大小為512x512畫素的png檔案。
-   * 圖示必須是 [儲存在DAM中](/help/assets/overview.md).
+   * 圖示必須是[儲存在DAM](/help/assets/overview.md)中。
 
 ### 快取管理（進階） {#offline-configuration}
 
 這些設定可讓此網站的部分內容可離線使用，並可在訪客的裝置上在本機使用。 這可控制網頁應用程式的快取，以最佳化網路要求並支援離線體驗。
 
-* **快取策略與內容重新整理頻率**  — 此設定會定義PWA的快取模型。
-   * **適度** - [此設定](https://web.dev/stale-while-revalidate/) 是大部分網站的情況，且為預設值。
+* **快取策略與內容重新整理頻率** — 此設定會定義PWA的快取模型。
+   * **適度** - [此設定](https://web.dev/stale-while-revalidate/)適用於大多數網站，且為預設值。
       * 透過此設定，使用者首先檢視的內容將從快取中載入，當使用者使用該內容時，快取中的其餘內容將會重新驗證。
-   * **經常**  — 拍賣行等需要快速更新的網站就是這種情況。
+   * **經常** — 這適用於拍賣行等需要快速更新的網站。
       * 透過此設定，應用程式會先透過網路尋找最新內容，如果無法取得，則會退回本機快取。
-   * **極少**  — 這適用於幾乎靜態的網站，例如參考頁面。
+   * **很少** — 這適用於幾乎靜態的網站，例如參考頁面。
       * 透過此設定，應用程式會先在快取中尋找內容，如果沒有，則會退回網路來擷取內容。
-* **檔案預先快取**  — 這些在AEM上託管的檔案會在安裝Service Worker時和使用它之前儲存到本機瀏覽器快取。 這可確保網頁應用程式在離線時可完全正常運作。
-* **路徑包含**  — 攔截定義路徑的網路請求，並根據設定的傳回快取內容 **快取策略與內容重新整理頻率**.
-* **快取排除專案**  — 無論下的設定為何，都不會快取這些檔案 **檔案預先快取** 和 **路徑包含**.
+* **檔案預先快取** — 這些在AEM上託管的檔案會在安裝Service Worker時和使用它之前儲存到本機瀏覽器快取。 這可確保網頁應用程式在離線時可完全正常運作。
+* **路徑包含** — 已攔截定義路徑的網路要求，並根據設定的&#x200B;**快取策略與內容重新整理頻率**&#x200B;傳回快取的內容。
+* **快取排除專案** — 無論在&#x200B;**檔案預先快取**&#x200B;和&#x200B;**路徑包含專案**&#x200B;下的設定為何，都不會快取這些檔案。
 
 >[!TIP]
 >
@@ -214,13 +214,13 @@ Adobe建議您限制要預先快取的頁數。
 
 ### 在專案指令碼和樣式表穩定後啟用PWA。 {#pwa-stabilized}
 
-使用者端程式庫在提供時已新增快取選擇器，並遵循以下模式 `lc-<checksumHash>-lc`. 每當構成程式庫的其中一個檔案（和相依性）變更時，此選取器就會變更。 如果您列出要由service-worker預先快取的使用者端程式庫，且想參照新版本，請手動擷取並更新專案。 因此，Adobe建議您在穩定專案指令碼和樣式表之後，將網站設定為PWA。
+使用者端程式庫已連同快取選擇器一起傳送，並遵循下列模式`lc-<checksumHash>-lc`。 每當構成程式庫的其中一個檔案（和相依性）變更時，此選取器就會變更。 如果您列出要由service-worker預先快取的使用者端程式庫，且想參照新版本，請手動擷取並更新專案。 因此，Adobe建議您在穩定專案指令碼和樣式表之後，將網站設定為PWA。
 
 ### 將影像變數的數量減到最少。 {#minimize-variations}
 
 AEM核心元件的影像元件會決定要擷取的前端最佳轉譯。 此機制也包含與該資源上次修改時間對應的時間戳記。 此機制會使PWA預先快取的設定複雜化。
 
-設定預先快取時，使用者必須列出所有可擷取的路徑變數。 這些變化是由品質和寬度等引數所組成。 建議您將這些變數的數量減少到最多三個：小、中、大。 您可以透過 [影像元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html).
+設定預先快取時，使用者必須列出所有可擷取的路徑變數。 這些變化是由品質和寬度等引數所組成。 建議您將這些變數的數量減少到最多三個：小、中、大。 您可以透過[影像元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html)的內容原則對話方塊來執行此操作。
 
 若未妥善設定，記憶體與網路耗用量可能會嚴重影響PWA的效能。 此外，如果您打算預先快取50個影像，且每個影像有三個寬度，則維護網站的使用者必須在頁面屬性的PWA預先快取區段中，維護最多150個專案的清單。
 

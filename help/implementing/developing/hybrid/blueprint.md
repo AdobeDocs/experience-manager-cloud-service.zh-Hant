@@ -19,13 +19,13 @@ ht-degree: 0%
 
 本檔案說明任何SPA架構都應該履行的一般合約(即AEM支援層的型別)，以便您在AEM中實作可編輯的SPA元件。
 
-若要讓作者能使用AEM頁面編輯器來編輯單頁應用程式架構所公開的資料，專案必須能夠解譯代表為AEM存放庫中應用程式儲存之資料語意的模型結構。 為達到此目標，我們提供兩種與架構無關的程式庫： `PageModelManager` 和 `ComponentMapping`.
+若要讓作者能使用AEM頁面編輯器來編輯單頁應用程式架構所公開的資料，專案必須能夠解譯代表為AEM存放庫中應用程式儲存之資料語意的模型結構。 為了達成此目標，提供了兩個與架構無關的資料庫： `PageModelManager`和`ComponentMapping`。
 
 >[!NOTE]
 >
 >下列需求與架構無關。 如果滿足這些需求，則可以提供框架特定的層，該層由模組、元件和服務組成。
 >
->**AEM中的React和Angular架構已符合這些需求。** 此藍圖中的需求只有在您想要實作其他框架以與AEM一起使用時才相關。
+>**AEM中的React和Angular架構已符合這些需求。**&#x200B;只有當您想要實作其他框架以搭配AEM使用時，此藍圖中的需求才相關。
 
 >[!CAUTION]
 >
@@ -33,25 +33,25 @@ ht-degree: 0%
 
 ## PageModelManager {#pagemodelmanager}
 
-此 `PageModelManager` 程式庫會當作NPM套件提供，以供SPA專案使用。 它可與SPA搭配使用，並作為資料模型管理員。
+`PageModelManager`程式庫是以NPM封裝的形式提供，以供SPA專案使用。 它可與SPA搭配使用，並作為資料模型管理員。
 
 它會代表SPA抽象化代表實際內容結構的JSON結構的擷取和管理。 此外也負責與SPA同步，以便在必須重新呈現元件時通知。
 
-請參閱NPM套件 [@adobe/aem-spa-model-manager](https://www.npmjs.com/package/@adobe/aem-spa-model-manager)
+檢視NPM套件[@adobe/aem-spa-model-manager](https://www.npmjs.com/package/@adobe/aem-spa-model-manager)
 
-初始化時 `PageModelManager`，程式庫會先載入應用程式提供的根模型（透過引數、中繼屬性或目前的URL）。 如果元件庫識別目前頁面的模型不是其擷取的根模型的一部分，並包含它作為子頁面的模型。
+初始化`PageModelManager`時，程式庫會先載入應用程式提供的根模型（透過引數、中繼屬性或目前的URL）。 如果元件庫識別目前頁面的模型不是其擷取的根模型的一部分，並包含它作為子頁面的模型。
 
 ![頁面模型合併](assets/page-model-consolidation.png)
 
 ### 元件對應 {#componentmapping}
 
-此 `ComponentMapping` 模組會以NPM封裝的形式提供給前端專案。 它會儲存前端元件，並提供SPA將前端元件對應至AEM資源型別的方法。 如此一來，在剖析應用程式的JSON模型時，就能啟用元件的動態解析。
+`ComponentMapping`模組是以NPM封裝形式提供給前端專案。 它會儲存前端元件，並提供SPA將前端元件對應至AEM資源型別的方法。 如此一來，在剖析應用程式的JSON模型時，就能啟用元件的動態解析。
 
-模型中每個專案都包含 `:type` 公開AEM資源型別的欄位。 掛載時，前端元件可使用從基礎程式庫收到的模型片段來轉譯自身。
+模型中每個專案都包含公開AEM資源型別的`:type`欄位。 掛載時，前端元件可使用從基礎程式庫收到的模型片段來轉譯自身。
 
 #### 動態模型到元件對應 {#dynamic-model-to-component-mapping}
 
-如需有關在AEM適用的JavaScript SPA SDK中如何發生動態模型與元件對應的詳細資訊，請參閱文章 [SPA的動態模型至元件對應](model-to-component-mapping.md).
+如需如何在AEM的JavaScript SPA SDK中發生動態模型到元件對應的詳細資訊，請參閱文章[SPA的動態模型到元件對應](model-to-component-mapping.md)。
 
 ### 框架特定層 {#framework-specific-layer}
 
@@ -69,17 +69,17 @@ SPA元件必須和頁面模型同步，並更新以相應地變更其內容。 �
 
 ### 中繼欄位 {#meta-fields}
 
-頁面模型使用JSON模型匯出程式，其本身以 [Sling模型](https://sling.apache.org/documentation/bundles/models.html) API。 可匯出的Sling模型會顯示下列欄位清單，以啟用基礎程式庫來解譯資料模型：
+頁面模型使用JSON模型匯出程式，其本身是以[Sling模型](https://sling.apache.org/documentation/bundles/models.html) API為基礎。 可匯出的Sling模型會顯示下列欄位清單，以啟用基礎程式庫來解譯資料模型：
 
-* `:type`：AEM資源的型別（預設=資源型別）
+* `:type`： AEM資源的型別（預設=資源型別）
 * `:children`：目前資源的階層子系。 子系不屬於目前資源的內部內容（可在代表頁面的專案上找到）
-* `:hierarchyType`：資源的階層型別。 此 `PageModelManager` 目前支援頁面型別
+* `:hierarchyType`：資源的階層型別。 `PageModelManager`目前支援頁面型別
 
 * `:items`：目前資源的子內容資源（巢狀結構，僅存在於容器上）
 * `:itemsOrder`：子項的已排序清單。 JSON對應物件無法保證其欄位的順序。 透過同時使用對應和目前的陣列，API的取用者便擁有兩種結構的優點
 * `:path`：專案的內容路徑（存在於代表頁面的專案上）
 
-另請參閱 [AEM內容服務快速入門。](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)
+另請參閱[AEM Content Services快速入門。](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)
 
 ### 框架特定模組 {#framework-specific-module}
 
@@ -108,7 +108,7 @@ npm模組： [@adobe/aem-angular-editable-components](https://www.npmjs.com/pack
 
 專案元件必須將模型片段的存取權委派給模型提供者。 然後，模型提供者會負責監聽對模型的指定片段所做的變更，並將更新的模型傳回委派元件。
 
-為此，模型提供者必須向 [`PageModelManager`](#pagemodelmanager). 然後當變更發生時，它會接收更新後的資料並傳遞至委派元件。 根據慣例，可供將攜帶模型片段的委派元件使用的屬性命名為 `cqModel`. 實作可免費為元件提供此屬性，但應考量與框架架構整合、可發現性和易用性等層面。
+為此，模型提供者必須向[`PageModelManager`](#pagemodelmanager)註冊。 然後當變更發生時，它會接收更新後的資料並傳遞至委派元件。 根據慣例，可用於將承載模型片段的委派元件的屬性名為`cqModel`。 實作可免費為元件提供此屬性，但應考量與框架架構整合、可發現性和易用性等層面。
 
 ### 元件HTML裝飾器 {#the-component-html-decorator}
 
@@ -118,16 +118,16 @@ npm模組： [@adobe/aem-angular-editable-components](https://www.npmjs.com/pack
 
 下列中繼資料必須新增至專案元件產生的外部HTML元素。 它們可讓頁面編輯器擷取對應的編輯設定。
 
-* `data-cq-data-path`：與相關的資源路徑 `jcr:content`
+* `data-cq-data-path`：相對於`jcr:content`的資源路徑
 
 #### 編輯功能宣告和預留位置 {#editing-capability-declaration-and-placeholder}
 
 下列中繼資料和類別名稱必須新增至專案元件產生的外部HTML元素。 它們可讓頁面編輯器提供相關功能。
 
 * `cq-placeholder`：識別空白元件預留位置的類別名稱
-* `data-emptytext`：元件例項為空白時覆蓋圖所顯示的標籤
+* `data-emptytext`：當元件執行個體為空白時，覆蓋圖所顯示的標籤
 
-**空白元件的預留位置**
+空白元件的&#x200B;**預留位置**
 
 每個元件都必須延伸使用功能，以便在將元件識別為空白時，使用預留位置專用的資料屬性和類別名稱以及相關覆蓋來裝飾外部HTML元素。
 
@@ -138,13 +138,13 @@ npm模組： [@adobe/aem-angular-editable-components](https://www.npmjs.com/pack
 
 ### 容器 {#container}
 
-容器是用來包含和轉譯子元件的元件。 若要這麼做，容器會在 `:itemsOrder`， `:items` 和 `:children` 模型屬性。
+容器是用來包含和轉譯子元件的元件。 若要這麼做，容器會反複執行其模型的`:itemsOrder`、`:items`和`:children`屬性。
 
-容器會動態地從的存放區取得子元件 [`ComponentMapping`](#componentmapping) 資料庫。 容器接著會使用「模型提供者」功能擴充子元件，最後例項化它。
+容器會從[`ComponentMapping`](#componentmapping)資料庫的存放區動態取得子元件。 容器接著會使用「模型提供者」功能擴充子元件，最後例項化它。
 
 ### 頁面 {#page}
 
-此 `Page` 元件延伸 `Container` 元件。 容器是用來包含和轉譯子元件（包括子頁面）的元件。 若要這麼做，容器會在 `:itemsOrder`， `:items`、和 `:children` 模型屬性。 此 `Page` 元件會從的存放區動態取得子元件 [`ComponentMapping`](#componentmapping) 資料庫。 此 `Page` 負責具現化子元件。
+`Page`元件會擴充`Container`元件。 容器是用來包含和轉譯子元件（包括子頁面）的元件。 若要這麼做，容器會反複執行其模型的`:itemsOrder`、`:items`和`:children`屬性。 `Page`元件會從[`ComponentMapping`](#componentmapping)資料庫的存放區動態取得子元件。 `Page`負責具現化子元件。
 
 ### 回應式格線 {#responsive-grid}
 
@@ -154,14 +154,14 @@ npm模組： [@adobe/aem-angular-editable-components](https://www.npmjs.com/pack
 
 #### 特定模型欄位 {#specific-model-fields}
 
-* `gridClassNames:` 為回應式格線提供的類別名稱
-* `columnClassNames:` 為回應式欄提供的類別名稱
+* `gridClassNames:`為回應式格線提供的類別名稱
+* `columnClassNames:`為回應式資料行提供的類別名稱
 
-另請參閱npm資源 [@adobe/aem-react-editable-components](https://www.npmjs.com/package/@adobe/aem-react-editable-components)
+另請參閱npm資源[@adobe/aem-react-editable-components](https://www.npmjs.com/package/@adobe/aem-react-editable-components)
 
 #### 回應式格線的預留位置 {#placeholder-of-the-responsive-grid}
 
-SPA元件會對應至圖形容器（例如回應式格線），且必須在編寫內容時新增虛擬子預留位置。 當頁面編輯器編寫SPA的內容時，該內容會使用iframe和 `data-cq-editor` 屬性會新增到該內容的檔案節點。 當 `data-cq-editor` 屬性存在，容器必須包含HTMLElement，以代表作者在頁面中插入新元件時互動的區域。
+SPA元件會對應至圖形容器（例如回應式格線），且必須在編寫內容時新增虛擬子預留位置。 當頁面編輯器正在編寫SPA的內容時，該內容會使用iframe嵌入到編輯器中，並且`data-cq-editor`屬性會新增到該內容的檔案節點中。 當`data-cq-editor`屬性出現時，容器必須包含HTMLElement，以代表將新元件插入頁面時，作者互動的區域。
 
 例如：
 
@@ -173,13 +173,13 @@ SPA元件會對應至圖形容器（例如回應式格線），且必須在編�
 >
 >範例中使用的類別名稱目前是頁面編輯器所需。
 >
->* `"new section"`：指出目前元素是容器的預留位置
+>* `"new section"`：表示目前的元素是容器的預留位置
 >* `"aem-Grid-newComponent"`：標準化配置編寫的元件
 >
 
 #### 元件對應 {#component-mapping}
 
-基礎 [`Component Mapping`](#componentmapping) 程式庫及其 `MapTo` 函式可以封裝和延伸，以提供與目前元件類別隨附的編輯組態相關的函式。
+基礎的[`Component Mapping`](#componentmapping)程式庫及其`MapTo`函式可以封裝和延伸，以提供與目前元件類別隨附的編輯組態相關的函式。
 
 ```javascript
 const EditConfig = {
@@ -201,7 +201,7 @@ class MyComponent extends Component {
 MapTo('component/resource/path')(MyComponent, EditConfig);
 ```
 
-在上述實作中，專案元件會在中實際註冊之前，先以空白功能擴充 [元件對應](#componentmapping) 商店。 這是透過封裝和延伸 [`ComponentMapping`](#componentmapping) 程式庫，以介紹對的支援 `EditConfig` 設定物件：
+在上述實作中，專案元件會在[元件對應](#componentmapping)存放區中實際登入之前，先以空白功能擴充。 這是透過封裝和擴充[`ComponentMapping`](#componentmapping)程式庫來完成，以引入`EditConfig`設定物件的支援：
 
 ```javascript
 /**
@@ -228,7 +228,7 @@ ComponentMapping.map = function map (resourceTypes, clazz, editConfig) {};
 
 專案元件必須至少產生下列資料屬性，才能讓編輯器與其互動。
 
-* `data-cq-data-path`：元件的相對路徑，如 `PageModel` (例如， `"root/responsivegrid/image"`)。 此屬性不應新增至頁面。
+* `data-cq-data-path`： `PageModel`所提供的元件相對路徑（例如，`"root/responsivegrid/image"`）。 此屬性不應新增至頁面。
 
 簡而言之，若要由頁面編輯器解譯為可編輯，專案元件必須符合下列合約：
 
@@ -240,10 +240,10 @@ ComponentMapping.map = function map (resourceTypes, clazz, editConfig) {};
 
 以下片段說明頁面內容結構的典型HTML表示法。 以下是一些重要事項：
 
-* 回應式格線元素含有前置詞為的類別名稱 `aem-Grid--`
-* 回應式欄元素包含前置詞為的類別名稱 `aem-GridColumn--`
+* 回應式格線元素含有前置詞為`aem-Grid--`的類別名稱
+* 回應式資料行專案含有前置詞為`aem-GridColumn--`的類別名稱
 * 回應式格線同時也是父格線的欄，因此會換行，例如前兩個字首未出現在相同元素上
-* 對應至可編輯資源的元素會附帶 `data-cq-data-path` 屬性。 請參閱 [與頁面編輯器訂約](#contract-with-the-page-editor) 小節。
+* 對應至可編輯資源的元素包含`data-cq-data-path`屬性。 請參閱本檔案的[與頁面編輯器的合約](#contract-with-the-page-editor)區段。
 
 ```javascript
 <div data-cq-data-path="/content/page">
@@ -263,21 +263,21 @@ ComponentMapping.map = function map (resourceTypes, clazz, editConfig) {};
 
 應用程式擁有路由。 前端開發人員必須先實作導覽元件(對應至AEM導覽元件)。 此元件會轉譯URL連結，以便搭配顯示或隱藏內容片段的一系列路由使用。
 
-基礎 [`PageModelManager`](#pagemodelmanager) 程式庫及其 [`ModelRouter`](routing.md) 模組（預設為啟用）負責預先擷取並提供與指定資源路徑相關聯的模型存取權。
+基礎[`PageModelManager`](#pagemodelmanager)程式庫及其[`ModelRouter`](routing.md)模組（預設為啟用）負責預先擷取並提供與指定資源路徑關聯之模型的存取權。
 
-這兩個圖元與繞線的概念有關，但 [`ModelRouter`](routing.md) 僅負責載入 [`PageModelManager`](#pagemodelmanager) 資料模型的結構與目前應用程式狀態同步。
+這兩個實體與路由的概念有關，但[`ModelRouter`](routing.md)只負責以與目前應用程式狀態同步的結構化資料模型載入[`PageModelManager`](#pagemodelmanager)。
 
-請參閱文章 [SPA模型路由](routing.md) 以取得詳細資訊。
+如需詳細資訊，請參閱文章[SPA模型路由](routing.md)。
 
 ## SPA運作中 {#spa-in-action}
 
 繼續下列檔案，自行瞭解簡單SPA的運作和實驗SPA：
 
-* [使用React在AEM中開始使用SPA](getting-started-react.md).
-* [使用Angular在AEM中開始使用SPA](getting-started-angular.md).
+* [使用React在AEM中開始使用SPA](getting-started-react.md)。
+* [使用Angular](getting-started-angular.md)在AEM中開始使用SPA。
 
 ## 延伸閱讀 {#further-reading}
 
 如需AEM中SPA的詳細資訊，請參閱下列檔案：
 
-* [SPA編輯器概觀](editor-overview.md) 有關AEM中的SPA和通訊模型的概述
+* [SPA編輯器概觀](editor-overview.md)，瞭解AEM中的SPA概觀和通訊模型

@@ -14,7 +14,7 @@ ht-degree: 8%
 
 # 設定 Dynamic Media {#setting-up-dynamic-media}
 
-[Dynamic Media](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) 協助您透過隨選提供豐富的視覺化銷售和行銷資產，並自動針對網路、行動裝置和社交網站上的消費進行縮放，以管理資產。 Dynamic Media使用一組主要來源資產，透過其全球性、可擴充、效能最佳化的網路即時產生並傳送多種多樣的豐富內容。
+[Dynamic Media](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html)可依需求提供豐富的視覺化銷售和行銷資產，並自動針對網頁、行動裝置和社交網站的消費進行縮放，協助您管理資產。 Dynamic Media使用一組主要來源資產，透過其全球性、可擴充、效能最佳化的網路即時產生並傳送多種多樣的豐富內容。
 
 <!-- OBSOLETE UNTIL THE INTEGRATING SCENE7 TOPIC GETS A MAJOR UPDATE
 
@@ -40,6 +40,6 @@ ht-degree: 8%
 
 >[!NOTE]
 >
->**如果您要升級：**
+>**如果您正在升級：**
 >
->* Adobe之後 [!DNL Experience Manager] 啟動並運作中，您上傳的任何資產都會自動啟用Dynamic Media （除非您的系統管理員明確停用它）。 如果您在的升級執行個體上 [!DNL Experience Manager] 剛開始使用Dynamic Media時，您可能必須重新處理資產，以使其啟用Dynamic Media。 另請參閱 [重新處理資料夾中的資產](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
+>* Adobe[!DNL Experience Manager]啟動並執行後，您上傳的任何資產都會自動啟用Dynamic Media （除非系統管理員明確停用它）。 如果您在升級的[!DNL Experience Manager]執行個體上並且剛開始使用Dynamic Media，您可能需要重新處理您的資產，使其啟用Dynamic Media。 請參閱[重新處理資料夾](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets)中的資產。

@@ -24,7 +24,7 @@ ht-degree: 0%
 >
 > 此功能僅適用於以CIF為基礎的店面（例如Venia）。
 
-[AEM CIF核心元件](https://github.com/adobe/aem-core-cif-components) 讓內容作者能夠建立其他類別和產品頁面。 這些頁面可以包含其他行銷內容，並設定為鎖定特定類別和產品。 以下影片會逐步說明此功能的設定。
+[AEM CIF核心元件](https://github.com/adobe/aem-core-cif-components)讓內容作者能夠建立其他類別和產品頁面。 這些頁面可以包含其他行銷內容，並設定為鎖定特定類別和產品。 以下影片會逐步說明此功能的設定。
 
 >[!VIDEO](https://video.tv.adobe.com/v/28969/?quality=12)
 
@@ -33,8 +33,8 @@ ht-degree: 0%
 您可以從下列資源中找到有關此主題的詳細資訊：
 
 - [進階URL設定](../configuring/advanced-url-configuration.md)
-- [AEM CIF核心元件 — 多目錄頁面設定](https://github.com/adobe/aem-core-cif-components/wiki/configuration#multi-catalog-page-template-configuration)
+- [AEM CIF核心元件 — 多重目錄頁面設定](https://github.com/adobe/aem-core-cif-components/wiki/configuration#multi-catalog-page-template-configuration)
 
 ## 相關資源 {#related}
 
-您也可以動態鎖定頁面的特定區域，並重複使用相同的範本。 瞭解如何 [利用關聯AEM內容豐富產品資料](./enrich-product-associated-content.md).
+您也可以動態鎖定頁面的特定區域，並重複使用相同的範本。 瞭解如何[利用關聯AEM內容](./enrich-product-associated-content.md)豐富產品資料。

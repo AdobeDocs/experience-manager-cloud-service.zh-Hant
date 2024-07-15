@@ -7,7 +7,7 @@ role: Admin, Architect, Developer
 source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
 workflow-type: tm+mt
 source-wordcount: '624'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -40,7 +40,7 @@ ht-degree: 88%
 
 * 存放庫類型
    * **Adobe** 表示 Adob&#x200B;&#x200B;e 託管的存放庫
-   * **GitHub** 表示您管理的私人GitHub存放庫
+   * **GitHub** 表示是您管理的私人 GitHub 存放庫
 * 當存放庫建立時
 * 與存放庫有關聯的管道
 
@@ -79,10 +79,10 @@ Cloud Manager 會支援 Adobe 託管的存放庫 (**Adobe 存放庫**) 以及您
 
 ## 檢查分支/建立專案 {#check-branches}
 
-此 **檢查分支/建立專案** 動作會根據存放庫狀態執行兩個功能。
+**檢查分支/建立專案**&#x200B;動作會根據存放庫的狀態執行兩個功能。
 
-* 如果存放庫是新建立的，動作會根據下列專案建立範例專案 [AEM專案原型。](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/overview)
-* 如果存放庫已建立範例專案，則會檢查存放庫及其分支的狀態，並報告範例專案是否已存在。
+* 如果存放庫是新建立，則該動作將根據 [AEM 專案原型](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-core-components/using/developing/archetype/overview)建立範例專案。
+* 如果存放庫已經有建立的範例專案，該動作會檢查存放庫及其分支的狀態，並報告範例專案是否已存在。
 
 ![檢查分支動作](assets/check-branches.png)
 

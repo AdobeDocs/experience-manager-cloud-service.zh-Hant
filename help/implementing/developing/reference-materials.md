@@ -31,7 +31,7 @@ Adobe Experience Manager (AEM)提供許多API來開發應用程式和擴充AEM�
 
 >[!NOTE]
 >
->如需Experience Manager API的最新資訊，請造訪 [ADOBE EXPERIENCE MANAGER AS A CLOUD SERVICE API](https://developer.adobe.com/experience-cloud/experience-manager-apis/).
+>如需Experience Manager API的最新資訊，請造訪[Adobe Experience Manager as a Cloud Service API](https://developer.adobe.com/experience-cloud/experience-manager-apis/)。
 
 ## 其他的框架 {#additional-apis}
 
@@ -59,7 +59,7 @@ AEM是以下列四個主要Java API集為基礎，依偏好設定以遞減順序
 
 >[!TIP]
 >
->如需這些指引的詳細資訊，請參閱檔案 [瞭解Java API最佳實務。](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/understand-java-api-best-practices.html)
+>如需這些准則的詳細資訊，請參閱檔案[瞭解Java API最佳實務。](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/understand-java-api-best-practices.html)
 
 ## AEM傳遞與內容管理服務與API {#delivery-apis}
 
@@ -72,8 +72,8 @@ AEM提供可自訂的元件和內容傳送選項。
 | [為元件啟用 JSON 匯出](/help/implementing/developing/components/enabling-json-exporter.md) | 根據模組化工具框架產生元件內容的JSON匯出 |
 | [Assets API](/help/assets/mac-api-assets.md) | 允許對資產執行建立 — 讀取 — 更新 — 刪除(CRUD)操作，包括二進位、中繼資料、轉譯和註解。 請參閱AEM Assets HTTP API |
 | [內容片段HTTP API](/help/assets/content-fragments/assets-api-content-fragments.md) | 透過CRUD作業，直接透過HTTP API存取內容片段內容 |
-| [內容片段GraphQL API](/help/headless/graphql-api/content-fragments.md) | 在Headless CMS實作中實現將內容片段有效傳送至JavaScript使用者端 |
-| [內容片段資產HTTP API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html) | 支援的HTTP資產請求的確切格式 |
+| [內容片段GraphQL API](/help/headless/graphql-api/content-fragments.md) | 在Headless CMS實作中實現將內容片段有效傳送給JavaScript使用者端 |
+| [內容片段Assets HTTP API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html) | 支援的HTTP資產請求的確切格式 |
 | [內容片段和內容片段模型OpenAPI](/help/headless/content-fragment-openapis.md) | 內容片段和內容片段模型OpenAPI |
 
 ## SPA專屬的API {#spa-apis}
@@ -85,8 +85,8 @@ AEM單頁應用程式(SPA)編輯器SDK架構提供特定的JavaScript API參考�
 | [元件對應](https://www.npmjs.com/package/@adobe/aem-spa-component-mapping) | 提供單頁應用程式將前端元件對應至Adobe Experience Manager資源型別(AEM元件)的方法 |
 | [頁面模型管理員](https://www.npmjs.com/package/@adobe/aem-spa-page-model-manager) | Adobe Experience Manager編輯器和Adobe Experience Manager單頁應用程式(SPA)編輯器之間的解譯器 |
 | [React可編輯元件](https://www.npmjs.com/package/@adobe/aem-react-editable-components) | 提供React元件和整合層，讓您開始使用Adobe Experience Manager網站編輯器 |
-| [angular可編輯元件](https://www.npmjs.com/package/@adobe/aem-angular-editable-components) | 提供Angular元件和整合層，讓您開始使用Adobe Experience Manager網站編輯器 |
+| [Angular可編輯元件](https://www.npmjs.com/package/@adobe/aem-angular-editable-components) | 提供Angular元件和整合層，讓您開始使用Adobe Experience Manager網站編輯器 |
 
 >[!TIP]
 >
->檢視 [SPA簡介和逐步解說](/help/implementing/developing/hybrid/introduction.md) 以取得單頁應用程式的詳細資訊。
+>如需單頁應用程式的詳細資訊，請參閱[SPA簡介和逐步說明](/help/implementing/developing/hybrid/introduction.md)。

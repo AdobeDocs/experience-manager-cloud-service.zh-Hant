@@ -1,6 +1,6 @@
 ---
 title: AEM as a Cloud Service 中的快取
-description: 瞭解AEMas a Cloud Service快取的基本概念
+description: 瞭解AEM as a Cloud Service中的快取基本概念
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
 role: Admin
@@ -13,26 +13,26 @@ ht-degree: 1%
 
 # 簡介 {#intro}
 
-流量會透過CDN傳遞至Apache網頁伺服器層，該層支援包括Dispatcher在內的模組。 為了提高效能，Dispatcher主要用作快取，以限制發佈節點上的處理作業。
-規則可以套用至Dispatcher設定，以修改任何預設快取逾期設定，從而在CDN上產生快取。 Dispatcher也會在符合以下條件時遵循產生的快取過期標頭： `enableTTL` 會在Dispatcher設定中啟用，這表示它會在重新發佈內容之外重新整理特定內容。
+流量會透過CDN傳遞至Apache網頁伺服器層，其支援Dispatcher等模組。 為了提高效能，Dispatcher主要用作快取，以限制發佈節點上的處理作業。
+規則可以套用至Dispatcher設定，以修改任何預設的快取逾期設定，從而在CDN上產生快取。 如果在Dispatcher設定中啟用了`enableTTL`，Dispatcher也會遵守產生的快取過期標頭，這表示它重新整理特定內容，即使重新發佈的內容除外。
 
-此頁面也說明Dispatcher快取如何失效以及在瀏覽器層級關於使用者端程式庫的快取運作方式。
+本頁也說明Dispatcher快取如何失效，以及在瀏覽器層級如何針對使用者端程式庫執行快取。
 
 ## 快取 {#caching}
 
 ### HTML/文字 {#html-text}
 
-* 根據預設，瀏覽器會快取五分鐘 `cache-control` Apache圖層發出的標頭。 CDN也會遵守此值。
-* 透過定義「 」，可停用預設的HTML/文字快取設定 `DISABLE_DEFAULT_CACHING` 中的變數 `global.vars`：
+* 根據預設，瀏覽器會根據Apache圖層發出的`cache-control`標頭快取5分鐘。 CDN也會遵守此值。
+* 可在`global.vars`中定義`DISABLE_DEFAULT_CACHING`變數，以停用預設HTML/文字快取設定：
 
 ```
 Define DISABLE_DEFAULT_CACHING
 ```
 
-例如，當您的商業邏輯需要微調年齡標題（具有以行事曆日期為基準的值）時，此方法很有用，因為依預設，年齡標題設為0。 話雖如此 **關閉預設快取時請小心。**
+例如，當您的商業邏輯需要微調年齡標題（具有以行事曆日期為基準的值）時，此方法很有用，因為依預設，年齡標題設為0。 也就是說，**關閉預設快取時要小心。**
 
-* HTML可透過定義 `EXPIRATION_TIME` 中的變數 `global.vars` 使用AEMas a Cloud ServiceSDK Dispatcher工具。
-* 可在較精細的層級上覆寫，包括獨立控制CDN和瀏覽器快取，並使用下列Apache `mod_headers` 指令：
+* 可使用AEM as a Cloud Service SDK Dispatcher工具在`global.vars`中定義`EXPIRATION_TIME`變數，以覆寫所有HTML/文字內容。
+* 可以使用下列Apache `mod_headers`指令在較精細的層級上覆寫，包括獨立控制CDN和瀏覽器快取：
 
   ```
   <LocationMatch "^/content/.*\.(html)$">
@@ -43,9 +43,9 @@ Define DISABLE_DEFAULT_CACHING
   ```
 
   >[!NOTE]
-  >Surrogate-Control標頭會套用至Adobe管理的CDN。 若使用 [客戶管理的CDN](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html#point-to-point-CDN)，視您的CDN提供者而定，可能需要不同的標頭。
+  >Surrogate-Control標頭會套用至Adobe管理的CDN。 如果使用[客戶管理的CDN](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html#point-to-point-CDN)，則視您的CDN提供者而定，可能需要不同的標頭。
 
-  設定全域快取控制標頭或符合寬範圍Regex的類似快取標頭時，請務必謹慎，以免套用至必須私人儲存的內容。 請考慮使用多個指示，以確保以微調的方式套用規則。 話雖如此，如果AEMas a Cloud Service偵測到快取標題已套用至偵測到Dispatcher無法快取的專案，則會移除快取標題，如Dispatcher檔案所述。 若要強制AEM一律套用快取標題，您可以新增 **`always`** 選項如下所示：
+  設定全域快取控制標頭或符合寬範圍Regex的類似快取標頭時，請務必謹慎，以免套用至必須私人儲存的內容。 請考慮使用多個指示，以確保以微調的方式套用規則。 如此一來，如果AEM as a Cloud Service偵測到快取標題已套用至偵測到Dispatcher無法快取的專案，則會移除快取標題，如Dispatcher檔案所述。 若要強制AEM一律套用快取標頭，您可以新增&#x200B;**`always`**&#x200B;選項，如下所示：
 
   ```
   <LocationMatch "^/content/.*\.(html)$">
@@ -56,14 +56,14 @@ Define DISABLE_DEFAULT_CACHING
   </LocationMatch>
   ```
 
-  確定位於以下位置的檔案： `src/conf.dispatcher.d/cache` 有以下規則（在預設設定中）：
+  請確定`src/conf.dispatcher.d/cache`下的檔案有下列規則（在預設設定中）：
 
   ```
   /0000
   { /glob "*" /type "allow" }
   ```
 
-* 防止快取特定內容 **在CDN**，將Cache-Control標頭設為 *私人*. 例如，在名為的目錄下，以下內容會防止html內容 **secure** 從CDN快取：
+* 若要防止在CDN **快取特定內容**，請將Cache-Control標頭設定為&#x200B;*private*。 例如，下列專案可防止在CDN快取名為&#x200B;**secure**&#x200B;的目錄下的html內容：
 
   ```
      <LocationMatch "/content/secure/.*\.(html)$">.  // replace with the right regex
@@ -73,24 +73,24 @@ Define DISABLE_DEFAULT_CACHING
     </LocationMatch>
   ```
 
-* 雖然設為私用的HTML內容不會在CDN上快取，但可以在以下情況下在Dispatcher上快取 [許可權敏感型快取](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html) 已設定，確保僅授權使用者能獲得內容。
+* 雖然CDN不會快取設定為私用的HTML內容，但如果已設定[許可權敏感型快取](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html)，則可以在Dispatcher快取該內容，以確保只有授權的使用者才能獲得該內容。
 
   >[!NOTE]
-  >其他方法，包括 [Dispatcher-ttl AEM ACS Commons專案](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/)，無法成功覆寫值。
+  >其他方法(包括[Dispatcher-ttl AEM ACS Commons專案](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/))無法成功覆寫值。
 
   >[!NOTE]
-  >Dispatcher可能仍會根據自己的快取內容 [快取規則](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17497.html). 若要讓內容確實為私人，請確保Dispatcher不會快取該內容。
+  >Dispatcher可能仍會根據自己的[快取規則](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17497.html)快取內容。 若要讓內容確實為私人，請確保Dispatcher不會快取內容。
 
 ### 使用者端資料庫(js，css) {#client-side-libraries}
 
-* 使用AEM使用者端程式庫架構時，JavaScript和CSS程式碼會以瀏覽器可無限期快取的方式產生，因為任何變更都會顯示為具有唯一路徑的新檔案。 換言之，會視需要產生參考使用者端資料庫的HTML，讓客戶可在發佈新內容時體驗內容。 若舊版瀏覽器不遵循「不可變」值，則快取控制設為「不可變」，或設為30天。
-* 請參閱區段 [使用者端程式庫和版本一致性](#content-consistency) 以取得其他詳細資訊。
+* 使用AEM的使用者端程式庫架構時，JavaScript和CSS程式碼的產生方式會讓瀏覽器無限期快取它，因為任何變更都會顯示為具有唯一路徑的新檔案。 換言之，會視需要產生參考使用者端資料庫的HTML，讓客戶可在發佈新內容時體驗內容。 若舊版瀏覽器不遵循「不可變」值，則快取控制設為「不可變」，或設為30天。
+* 如需其他詳細資訊，請參閱[使用者端程式庫和版本一致性](#content-consistency)一節。
 
 ### 影像和任何足以儲存在Blob儲存空間中的內容 {#images}
 
 對於2022年5月中旬之後建立的計畫(特別是高於65000的計畫ID)，預設行為是快取，同時遵循請求的驗證上下文。 舊版程式(程式id等於或小於65000)預設不會快取blob內容。
 
-在這兩種情況下，都可以使用Apache在Apache/Dispatcher層的較精細層級覆寫快取標題 `mod_headers` 指令，例如：
+在這兩種情況下，都可以使用Apache `mod_headers`指令在Apache/Dispatcher層的較精細層級上覆寫快取標題，例如：
 
 ```
    <LocationMatch "^/content/.*\.(jpeg|jpg)$">
@@ -99,9 +99,9 @@ Define DISABLE_DEFAULT_CACHING
    </LocationMatch>
 ```
 
-在Dispatcher層修改快取標題時，請注意不要快取太廣泛。 請參閱HTML/文字區段中的討論 [以上](#html-text). 此外，也請確定原本要私密儲存（而非快取）的資產並未包含在 `LocationMatch` 指令篩選器。
+在Dispatcher層修改快取標題時，請留意不要快取太廣泛。 請參閱[以上](#html-text)的HTML/文字區段中的討論內容。 此外，請確定原本要保持私密狀態（而非快取）的資產不屬於`LocationMatch`指示詞篩選條件的一部分。
 
-儲存在Blob存放區中的JCR資源（大於16KB）通常可由AEM做為302重新導向。 這些重新導向會遭到攔截並隨後導向CDN，而內容會直接從blob存放區傳送。 在這些回應中只能自訂有限的標題集。 例如，若要自訂 `Content-Disposition` 您應依照以下方式使用dispatcher指示：
+儲存在Blob存放區中的JCR資源（大於16KB）通常可由AEM做為302重新導向。 這些重新導向會遭到攔截並隨後導向CDN，而內容會直接從blob存放區傳送。 在這些回應中只能自訂有限的標題集。 例如，若要自訂`Content-Disposition`，您應該使用Dispatcher指示詞，如下所示：
 
 ```
 <LocationMatch "\.(?i:pdf)$">
@@ -138,7 +138,7 @@ AEM層會根據是否已設定快取標頭及請求型別的值來設定快取�
 | 否 | 已驗證 | Cache-Control： private， max-age=600，不可變 |
 | 是 | 任何 | 未變更 |
 
-雖然不建議使用，但您可以設定Cloud Manager環境變數，將新的預設行為變更為遵循舊行為(計畫id等於或小於65000) `AEM_BLOB_ENABLE_CACHING_HEADERS` 為false。
+雖然不建議使用，但您可以將Cloud Manager環境變數`AEM_BLOB_ENABLE_CACHING_HEADERS`設定為false，以變更新的預設行為，使其遵循舊有的行為(程式id等於或低於65000)。
 
 #### 較舊的預設快取行為 {#old-caching-behavior}
 
@@ -147,25 +147,25 @@ AEM層預設不會快取blob內容。
 >[!NOTE]
 >將Cloud Manager環境變數AEM_BLOB_ENABLE_CACHING_HEADERS設定為true，以將較舊的預設行為變更為與新的行為(高於65000的程式ID)一致。 如果程式已上線，請務必確認在變更後，內容會如預期般運作。
 
-現在，在Blob儲存空間中標示為私用的影像無法使用在Dispatcher上快取 [許可權敏感型快取](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html). 系統會一律向AEM來源要求影像，並在使用者獲得授權時提供影像。
+現在，無法使用[許可權敏感型快取](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html)，在Dispatcher快取標示為私用的Blob儲存體中的影像。 系統會一律向AEM來源要求影像，並在使用者獲得授權時提供影像。
 
 >[!NOTE]
->其他方法，包括 [dispatcher-ttl AEM ACS Commons專案](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/)時，請勿成功覆寫值。
+>其他方法(包括[dispatcher-ttl AEM ACS Commons專案](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/))無法成功覆寫值。
 
 ### 節點存放區中的其他內容檔案型別 {#other-content}
 
 * 無預設快取
-* 無法設定預設值 `EXPIRATION_TIME` 用於html/文字檔案型別的變數
+* 無法以用於html/文字檔案型別的`EXPIRATION_TIME`變數設定預設值
 * 透過指定適當的規則運算式，可以使用html/text一節中所述的相同LocationMatch策略來設定快取有效期
 
 ### 進一步最佳化 {#further-optimizations}
 
-* 避免使用 `User-Agent` 做為 `Vary` 標頭。 舊版預設Dispatcher設定（在原型版本28之前）包含該引數，Adobe建議您透過以下步驟將其移除。
-   * 在中找到vhost檔案 `<Project Root>/dispatcher/src/conf.d/available_vhosts/*.vhost`
-   * 移除或註解該行： `Header append Vary User-Agent env=!dont-vary` 來自所有vhost檔案，但default.vhost為唯讀檔案除外
-* 使用 `Surrogate-Control` 標頭可獨立於瀏覽器快取控制CDN快取
-* 考慮套用 [`stale-while-revalidate`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control#stale-while-revalidate) 和 [`stale-if-error`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control#stale-if-error) 指示可允許背景重新整理並避免快取遺漏，讓使用者可以快速且新鮮地保留您的內容。
-   * 有許多方式可套用這些指示，但新增30分鐘即可 `stale-while-revalidate` 對於所有快取控制標題來說，這是個不錯的起點。
+* 避免使用`User-Agent`做為`Vary`標頭的一部分。 舊版預設Dispatcher設定（原型版本28之前）已包含該屬性，Adobe建議您透過下列步驟將其移除。
+   * 在`<Project Root>/dispatcher/src/conf.d/available_vhosts/*.vhost`中找到vhost檔案
+   * 從所有vhost檔案中移除或註解行： `Header append Vary User-Agent env=!dont-vary`，但default.vhost為唯讀檔案除外
+* 使用`Surrogate-Control`標頭可獨立於瀏覽器快取控制CDN快取
+* 請考慮套用[`stale-while-revalidate`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control#stale-while-revalidate)和[`stale-if-error`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control#stale-if-error)指示詞，以允許背景重新整理並避免快取遺漏，讓使用者能夠快速且新鮮地儲存您的內容。
+   * 有許多方式可套用這些指示，但將30分鐘的`stale-while-revalidate`新增至所有快取控制標題是很好的起點。
 * 以下是各種內容型別的範例，在設定自己的快取規則時，這些範例可作為指南。 請仔細考慮並測試您的特定設定和需求：
 
    * 快取可變的使用者端程式庫資源達12小時，並在12小時後重新整理背景。
@@ -227,11 +227,11 @@ AEM層預設不會快取blob內容。
 
 ### 分析CDN快取命中率 {#analyze-chr}
 
-請參閱 [快取命中率分析教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/caching/cdn-cache-hit-ratio-analysis.html) 如需有關下載CDN記錄檔及使用控制面板分析網站快取百分比的資訊。
+請參閱[快取命中率分析教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/caching/cdn-cache-hit-ratio-analysis.html)，以取得有關使用儀表板下載CDN記錄檔和分析網站快取命中率的資訊。
 
 ### HEAD請求行為 {#request-behavior}
 
-當在AdobeCDN收到資源的HEAD要求時，該資源 **非** 經過快取後，該請求會進行轉換，並由Dispatcher和/或AEM執行個體接收為GET請求。 如果回應可快取，則會從CDN提供後續HEAD請求。 如果回應無法快取，則會將後續HEAD請求傳遞給Dispatcher或AEM執行個體（或兩者），所需時間取決於 `Cache-Control` 總計
+在AdobeCDN收到快取&#x200B;**而非**&#x200B;的資源的HEAD要求時，該要求會進行轉換並由Dispatcher和/或AEM執行個體接收為GET要求。 如果回應可快取，則會從CDN提供後續HEAD請求。 如果回應無法快取，則會在`Cache-Control` TTL所依賴的時間內，將後續HEAD要求傳遞至Dispatcher或AEM執行個體或兩者。
 
 ### 行銷活動引數 {#marketing-parameters}
 
@@ -245,12 +245,12 @@ AEM層預設不會快取blob內容。
 
 如果您希望停用此行為，請提交支援票證。
 
-對於2023年10月之前建立的環境，建議設定Dispatcher設定的 `ignoreUrlParams` 屬性為 [在此處記錄](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#ignoring-url-parameters).
+對於2023年10月之前建立的環境，建議將Dispatcher設定的`ignoreUrlParams`屬性設定為記錄在此處](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#ignoring-url-parameters)的[。
 
 忽略行銷引數有兩種可能性。 （其中第一個偏好使用查詢引數來忽略防快取）：
 
 1. 忽略所有引數，並選擇性地允許使用的引數。
-僅限下列範例中 `page` 和 `product` 不會忽略引數，並將請求轉送給發佈者。
+在下列範例中，只有`page`和`product`引數不會被忽略，而且請求將轉送給發佈者。
 
 ```
 /ignoreUrlParams {
@@ -260,7 +260,7 @@ AEM層預設不會快取blob內容。
 }
 ```
 
-1. 允許行銷引數以外的所有引數。 檔案 [marketing_query_parameters.any](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/dispatcher.cloud/src/conf.dispatcher.d/cache/marketing_query_parameters.any) 會定義將忽略的常用行銷引數清單。 Adobe將不會更新此檔案。 使用者可依其行銷提供者來擴充。
+1. 允許行銷引數以外的所有引數。 檔案[marketing_query_parameters.any](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/dispatcher.cloud/src/conf.dispatcher.d/cache/marketing_query_parameters.any)定義了將被忽略的常用行銷引數清單。 Adobe將不會更新此檔案。 使用者可依其行銷提供者來擴充。
 
 ```
 /ignoreUrlParams {
@@ -272,20 +272,20 @@ AEM層預設不會快取blob內容。
 
 ## Dispatcher快取失效 {#disp}
 
-一般而言，不需要讓Dispatcher快取失效。 實際上，您應該依賴Dispatcher在內容重新發佈時重新整理其快取，並且CDN遵循快取到期標頭。
+一般而言，不需要讓Dispatcher快取失效。 實際上，您應該仰賴Dispatcher在內容重新發佈時重新整理其快取，以及CDN遵循快取到期標頭。
 
-### Dispatcher快取在啟用/停用期間失效 {#cache-activation-deactivation}
+### 在啟用/停用期間Dispatcher快取失效 {#cache-activation-deactivation}
 
-和舊版AEM一樣，發佈或取消發佈頁面會從Dispatcher快取中清除內容。 如果懷疑有快取問題，您應重新發佈有問題的頁面，並確保有符合的虛擬主機可用 `ServerAlias` Dispatcher快取失效所需的localhost。
+和舊版AEM一樣，發佈或取消發佈頁面會從Dispatcher快取中清除內容。 如果懷疑有快取問題，您應重新發佈有問題的頁面，並確保有可用的虛擬主機符合Dispatcher快取失效所需的`ServerAlias` localhost。
 
 >[!NOTE]
->為了讓Dispatcher正確失效，請確定來自「127.0.0.1」、「localhost」、「\*.local」、「\*.adobeaemcloud.com」和「\*.adobeaemcloud.net」的請求都符合，並由vhost設定進行處理，以便提供請求。 您可以依照參照中的模式，在全域比對所有vhost組態中的「*」來執行此工作 [AEM原型](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/dispatcher.cloud/src/conf.d/available_vhosts/default.vhost). 或者，您也可以確保前述清單是由其中一個主機擷取。
+>為正確使Dispatcher失效，請確定來自「127.0.0.1」、「localhost」、「\*.local」、「\*.adobeaemcloud.com」和「\*.adobeaemcloud.net」的請求都符合，並由vhost設定進行處理，以便提供請求。 您可以依照參考[AEM原型](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/dispatcher.cloud/src/conf.d/available_vhosts/default.vhost)中的模式，在全域比對vhost組態中的「*」來執行此工作。 或者，您也可以確保前述清單是由其中一個主機擷取。
 
-當發佈執行個體收到來自作者的新版本頁面或資產時，它會使用排清代理程式來使其Dispatcher上的適當路徑失效。 更新的路徑會與其父項一起從Dispatcher快取中移除，直到某個層級為止(您可以使用 [statfileslevel](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#invalidating-files-by-folder-level))。
+當發佈執行個體收到來自作者的新版本頁面或資產時，會使用排清代理程式來使其Dispatcher上的適當路徑失效。 更新的路徑會連同其父項一起從Dispatcher快取中移除，直到某個層級（您可以使用[statfileslevel](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#invalidating-files-by-folder-level)設定此層級）。
 
 ## Dispatcher快取明確失效 {#explicit-invalidation}
 
-Adobe建議您仰賴標準快取標頭來控制內容傳送生命週期。 不過，如有需要，可以直接使Dispatcher中的內容失效。
+Adobe建議您仰賴標準快取標頭來控制內容傳送生命週期。 不過，如有需要，可直接在Dispatcher中讓內容失效。
 
 下列清單包含您想要明確讓快取失效的情況（同時選擇性地接聽讓失效完成）：
 
@@ -295,7 +295,7 @@ Adobe建議您仰賴標準快取標頭來控制內容傳送生命週期。 不�
 有兩種方式可明確讓快取失效：
 
 * 偏好使用的方法是使用Author的Sling Content Distribution (SCD)。
-* 另一種方法是使用復寫API來叫用發佈Dispatcher Flush復寫代理程式。
+* 另一種方法是使用復寫API來叫用發佈Dispatcher排清復寫代理程式。
 
 方法因階層可用性、去除重複事件的能力及事件處理保證而異。 下表總結了這些選項：
 
@@ -313,7 +313,7 @@ Adobe建議您仰賴標準快取標頭來控制內容傳送生命週期。 不�
   <tr>
     <td>Sling內容發佈(SCD) API</td>
     <td>作者</td>
-    <td>可能使用Discovery API或啟用 <a href="https://github.com/apache/sling-org-apache-sling-distribution-journal/blob/e18f2bd36e8b43814520e87bd4999d3ca77ce8ca/src/main/java/org/apache/sling/distribution/journal/impl/publisher/DistributedEventNotifierManager.java#L146-L149">去重複化模式</a>.</td>
+    <td>可能使用探索API或啟用<a href="https://github.com/apache/sling-org-apache-sling-distribution-journal/blob/e18f2bd36e8b43814520e87bd4999d3ca77ce8ca/src/main/java/org/apache/sling/distribution/journal/impl/publisher/DistributedEventNotifierManager.java#L146-L149">重複資料刪除模式</a>。</td>
     <td>至少一次。</td>
     <td>
      <ol>
@@ -359,9 +359,9 @@ Adobe建議您仰賴標準快取標頭來控制內容傳送生命週期。 不�
     <td>
      <ol>
        <li>發佈內容並讓快取失效。</li>
-       <li>從作者/發佈層 — 移除內容並使快取失效。</li>
-       <li><p><strong>從作者階層</strong>  — 移除內容並使快取失效(如果從發佈代理程式上的AEM製作層觸發)。</p>
-           <p><strong>從發佈階層</strong>  — 僅讓快取失效(如果從Flush或Resource-only-flush代理程式上的AEM發佈層觸發)。</p>
+       <li>從作者/Publish階層 — 移除內容並使快取失效。</li>
+       <li><p><strong>從作者階層</strong> — 移除內容並讓快取失效(如果從Publish代理程式上的AEM作者階層觸發)。</p>
+           <p><strong>來自Publish階層</strong> — 僅讓快取失效(如果從Flush或Resource-only-flush代理程式上的AEM Publish階層觸發)。</p>
        </li>
      </ol>
      </td>
@@ -386,7 +386,7 @@ Adobe建議您仰賴標準快取標頭來控制內容傳送生命週期。 不�
 
 使用Author的SCD動作時，實施模式如下：
 
-1. 從Author編寫自訂程式碼以叫用Sling內容發佈 [API](https://sling.apache.org/documentation/bundles/content-distribution.html)，使用路徑清單來傳遞失效動作：
+1. 從Author撰寫自訂程式碼以叫用Sling內容發佈[API](https://sling.apache.org/documentation/bundles/content-distribution.html)，透過路徑清單傳遞失效動作：
 
 ```
 @Reference
@@ -400,7 +400,7 @@ DistributionRequest distributionRequest = new SimpleDistributionRequest(Distribu
 distributor.distribute(agentName, resolver, distributionRequest);
 ```
 
-* （可選）接聽反映所有Dispatcher執行個體失效的資源事件：
+* （可選）接聽反映所有Dispatcher執行個體失效之資源的事件：
 
 
 ```
@@ -455,11 +455,11 @@ public class InvalidatedHandler implements EventHandler {
 
 <!-- Optionally, instead of using the isLeader approach, one could add an OSGi configuration for the PID org.apache.sling.distribution.journal.impl.publisher.DistributedEventNotifierManager and property deduplicateEvent=true. But we'll stick with just one strategy and not mention it (double-check this).**review this**-->
 
-* （選擇性）在中執行商業邏輯 `invalidated(String[] paths, String packageId)` 方法。
+* （選擇性）在上述`invalidated(String[] paths, String packageId)`方法中執行商業邏輯。
 
 >[!NOTE]
 >
->當Dispatcher失效時，不會排清AdobeCDN。 Adobe管理的CDN遵守TTL，因此不需要清除。
+>Dispatcher失效時，不會排清AdobeCDN。 Adobe管理的CDN遵守TTL，因此不需要清除。
 
 ### 復寫API {#replication-api}
 
@@ -510,7 +510,7 @@ The Adobe-managed CDN respects TTLs and thus there is no need fo it to be flushe
 
 ## 使用者端程式庫和版本一致性 {#content-consistency}
 
-頁面由HTML、JavaScript、CSS和影像組成。 建議客戶使用 [使用者端資料庫(clientlibs)架構](/help/implementing/developing/introduction/clientlibs.md) 若要將JavaScript和CSS資源匯入HTML頁面，請考慮JS程式庫之間的相依性。
+頁面由HTML、JavaScript、CSS和影像組成。 建議客戶使用[使用者端資料庫(clientlibs)架構](/help/implementing/developing/introduction/clientlibs.md)，將JavaScript和CSS資源匯入HTML頁面，並考慮JS資料庫之間的相依性。
 
 clientlibs架構提供自動版本管理。 這表示開發人員可以在原始檔控制中籤入JS程式庫的變更，而且當客戶推送其版本時，就可以使用最新版本。 若沒有此工作流程，開發人員必須手動變更參照至新版程式庫的HTML，若相同程式庫共用許多HTML範本，則尤其會造成負擔。
 
@@ -518,7 +518,7 @@ clientlibs架構提供自動版本管理。 這表示開發人員可以在原始
 
 此功能背後的機制是序列化雜湊，會附加至使用者端程式庫連結。 這可確保瀏覽器擁有版本控制的唯一URL來快取CSS/JS。 只有在使用者端程式庫的內容變更時，才會更新序列化雜湊。 這表示如果發生不相關的更新（也就是說，不會變更使用者端程式庫的基礎css/js），即使使用新部署，參照仍會維持不變。 反過來，它可確保對瀏覽器快取的中斷較少。
 
-### 啟用使用者端程式庫的Longcache版本 — AEMas a Cloud ServiceSDK快速入門 {#enabling-longcache}
+### 啟用使用者端程式庫的Longcache版本 — AEM as a Cloud Service SDK快速入門 {#enabling-longcache}
 
 預設clientlib包含在HTML頁面上看起來像下面的範例：
 
@@ -532,13 +532,13 @@ clientlibs架構提供自動版本管理。 這表示開發人員可以在原始
 <link rel="stylesheet" href="/etc.clientlibs/wkndapp/clientlibs/clientlib-base.lc-7c8c5d228445ff48ab49a8e3c865c562-lc.css" type="text/css">
 ```
 
-在所有AEMas a Cloud Service環境中，預設會啟用嚴格clientlib版本設定。
+依預設，所有AEM as a Cloud Service環境中都會啟用嚴格clientlib版本設定。
 
 若要在本機SDK快速入門中啟用嚴格的clientlib版本設定，請執行以下操作：
 
-1. 導覽至OSGi Configuration管理員 `<host>/system/console/configMgr`
+1. 瀏覽至OSGi Configuration管理員`<host>/system/console/configMgr`
 1. 尋找AdobeGraniteHTML庫管理員的OSGi設定：
    * 核取核取方塊，以啟用嚴格版本設定
-   * 在標示為的欄位中 **長期使用者端快取金鑰**，輸入/的值。*；雜湊
-1. 儲存變更。 不需要在原始檔控制中儲存此設定，因為AEMas a Cloud Service會自動在開發、中繼和生產環境中啟用此設定。
+   * 在標示為&#x200B;**長期使用者端快取金鑰**&#x200B;的欄位中，輸入/的值。*；雜湊
+1. 儲存變更。 不需要在原始檔控制中儲存此設定，因為AEM as a Cloud Service會自動在開發、中繼和生產環境中啟用此設定。
 1. 只要使用者端資料庫的內容有所變更，就會產生新的雜湊金鑰並更新HTML參考。

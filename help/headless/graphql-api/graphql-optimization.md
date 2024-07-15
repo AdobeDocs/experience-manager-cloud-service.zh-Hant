@@ -21,7 +21,7 @@ ht-degree: 64%
 
 ## GraphQL檢查清單 {#graphql-checklist}
 
-下列檢查清單旨在協助您在Adobe Experience Manager (AEM)as a Cloud Service中最佳化GraphQL的設定和使用。
+以下檢查清單旨在協助您在Adobe Experience Manager (AEM)as a Cloud Service中最佳化GraphQL的設定和使用。
 
 ### 首要原則 {#first-principles}
 
@@ -33,24 +33,24 @@ ht-degree: 64%
 
 持續的GraphQL查詢利用內容傳遞網路(CDN)來協助降低查詢執行效能。 使用者端應用程式要求持續查詢，而GET要求快速啟用邊緣的執行。
 
-**進一步參考資料**
+**其他參考**
 
 請參閱：
 
-* [持續的GraphQL查詢](/help/headless/graphql-api/persisted-queries.md).
+* [持續的GraphQL查詢](/help/headless/graphql-api/persisted-queries.md)。
 * [了解搭配使用 GraphQL 與 AEM - 範例內容和查詢](/help/headless/graphql-api/sample-queries.md)
 
 ### 快取策略 {#cache-strategy}
 
 您也可以使用各種快取方法來最佳化。
 
-#### 啟用AEM Dispatcher快 {#enable-aem-dispatcher-caching}
+#### 啟用AEM Dispatcher快取 {#enable-aem-dispatcher-caching}
 
 **建議**
 
-[AEM傳送器](/help/implementing/dispatcher/overview.md) 是AEM服務中的第一層快取，在CDN快取之前。
+[AEM Dispatcher](/help/implementing/dispatcher/overview.md)是AEM服務中的第一層快取，在CDN快取之前。
 
-**進一步參考資料**
+**其他參考**
 
 請參閱：
 
@@ -60,9 +60,9 @@ ht-degree: 64%
 
 **建議**
 
-如果定位為，則可快取GraphQL查詢及其JSON回應 `GET` 使用CDN時的請求。 相反地，未快取的請求可能非常（資源）昂貴且處理緩慢，可能對來源的資源造成進一步的負面影響。
+使用CDN時，如果目標為`GET`請求，則可快取GraphQL查詢及其JSON回應。 相反地，未快取的請求可能非常（資源）昂貴且處理緩慢，可能對來源的資源造成進一步的負面影響。
 
-**進一步參考資料**
+**其他參考**
 
 請參閱：
 
@@ -74,9 +74,9 @@ ht-degree: 64%
 
 搭配CDN使用持續的GraphQL查詢時，建議設定適當的HTTP快取控制標頭。
 
-每個持續性查詢可以有自己一組特定的快取控制標頭。 標題可設定在 [GRAPHQL API](/help/headless/graphql-api/content-fragments.md) 或 [AEM GraphiQL IDE](/help/headless/graphql-api/graphiql-ide.md).
+每個持續性查詢可以有自己一組特定的快取控制標頭。 標頭可透過[GraphQL API](/help/headless/graphql-api/content-fragments.md)或[AEM GraphiQL IDE](/help/headless/graphql-api/graphiql-ide.md)設定。
 
-**進一步參考資料**
+**其他參考**
 
 請參閱：
 
@@ -89,7 +89,7 @@ ht-degree: 64%
 
 此功能可讓AEM在GraphQL查詢範圍內進一步快取內容，然後可將其組合為JSON輸出中的區塊，而不是逐行組合。
 
-**進一步參考資料**
+**其他參考**
 
 請聯絡Adobe，為您的AEM Cloud Service程式和環境啟用此功能。
 
@@ -110,7 +110,7 @@ AEM 提供兩種方式進行 GraphQL 查詢最佳化：
 
    * [排序](#use-graphql-sorting)與最佳化沒有直接關係，而是與分頁有關
 
-每種方法都有自己的使用案例和局限性。本節提供混合式篩選和分頁的相關資訊，以及部分 [最佳實務](#best-practices) 以便用於最佳化GraphQL查詢。
+每種方法都有自己的使用案例和局限性。本節提供混合篩選和分頁的資訊，以及用來最佳化GraphQL查詢的一些[最佳實務](#best-practices)。
 
 #### 使用AEM GraphQL混合篩選 {#use-aem-graphql-hybrid-filtering}
 
@@ -130,7 +130,7 @@ AEM 提供兩種方式進行 GraphQL 查詢最佳化：
 >
 >AEM混合篩選需要更新現有的內容片段
 
-**進一步參考資料**
+**其他參考**
 
 請參閱：
 
@@ -145,8 +145,8 @@ AEM 提供兩種方式進行 GraphQL 查詢最佳化：
 
 AEM 中的 GraphQL 支援兩種類型的分頁：
 
-* [限制/以偏移量為基礎的分頁](/help/headless/graphql-api/content-fragments.md#list-offset-limit)
-這用於清單查詢；這些結尾為 `List`；例如， `articleList`.
+* [限制/位移型分頁](/help/headless/graphql-api/content-fragments.md#list-offset-limit)
+這用於清單查詢；這些查詢以`List`結尾；例如，`articleList`。
 若要使用，您必須提供第一個要返回項目的位置 (`offset`) 和要返回的項目數 (`limit`，或頁面大小)。
 
 * [游標式分頁](/help/headless/graphql-api/content-fragments.md#paginated-first-after) (以 `first` 和 `after` 表示)
@@ -161,7 +161,7 @@ AEM 中的 GraphQL 支援兩種類型的分頁：
   >
   >不支援向後分頁 (使用 `before`/`last` 參數)。
 
-**進一步參考資料**
+**其他參考**
 
 請參閱：
 
@@ -181,7 +181,7 @@ AEM 中的 GraphQL 支援兩種類型的分頁：
 >
 >對頂層欄位進行排序也會對效能產生 (儘管很小) 影響。
 
-**進一步參考資料**
+**其他參考**
 
 請參閱：
 
@@ -290,7 +290,7 @@ AEM 中的 GraphQL 支援兩種類型的分頁：
 
 ### 不要輸出所有格式（多行文字元素） {#do-not-output-all-formats}
 
-AEM GraphQL可傳回文字，其製作方式為 **[多行文字](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)** 資料型別，有多種格式： RTF、簡單文字和Markdown。
+AEM GraphQL可以傳回以&#x200B;**[多行文字](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)**&#x200B;資料型別撰寫的文字，其格式有多種： Rich Text、Simple Text和Markdown。
 
 輸出全部三種格式會將JSON中文字輸出的大小增加3倍。 再加上來自非常廣泛查詢的通常大型結果集，可能會產生非常大的JSON回應，因此需要很長時間才能計算。 最好將輸出限製為呈現內容所需的文字格式。
 

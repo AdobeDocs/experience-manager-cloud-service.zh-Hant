@@ -25,44 +25,44 @@ ht-degree: 35%
 
 ## 發行日期 {#release-date}
 
-的發行日期 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 目前版本(2021.7.0)為2021年7月29日。
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service]目前版本(2021.7.0)的發行日期為2021年7月29日。
 下列版本(2021.8.0)將於2021年8月26日發行。
 
 ## 發行影片 {#release-video}
 
-請檢視 [2021年7月版本總覽](https://video.tv.adobe.com/v/335580) 影片以瞭解新增功能的摘要。
+請觀看[2021年7月版本總覽](https://video.tv.adobe.com/v/335580)影片，以瞭解新增功能的摘要。
 
-## Experience Manager Foundationas a Cloud Service {#foundation}
+## Experience Manager基礎as a Cloud Service {#foundation}
 
 ### 新增功能 {#what-is-new-foundation}
 
-* 更靈活的Dispatcher設定：更輕鬆地組織專案。 例如，您現在可以包含反映網站結構的多個重寫規則檔案。 [瞭解](/help/implementing/dispatcher/disp-overview.md#validation-debug) 此彈性模式，包括如何建構您的Dispatcher設定，以便您妥善運用。
-* 在復寫代理程式的「散發」標籤下方的樹狀復寫UI應視為不建議使用，並在2021年9月30日之後移除。 [瞭解](/help/operations/replication.md#tree-activation) 替代復寫策略。
-* 組合 `org.apache.sling.datasource-1.0.4.jar` 的Sling資料來源支援已移除，因為其功能已過時且未由客戶使用。
+* 更靈活的Dispatcher設定：更輕鬆地組織專案。 例如，您現在可以包含反映網站結構的多個重寫規則檔案。 [瞭解](/help/implementing/dispatcher/disp-overview.md#validation-debug)此彈性模式，包括如何建構您的Dispatcher設定，以便您加以運用。
+* 在復寫代理程式的「散發」標籤下方的樹狀復寫UI應視為不建議使用，並在2021年9月30日之後移除。 [瞭解](/help/operations/replication.md#tree-activation)替代復寫策略。
+* Sling資料來源支援的套件`org.apache.sling.datasource-1.0.4.jar`已移除，因為其功能已過時且未由客戶使用。
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ### [!DNL Assets] 中的新功能 {#assets-features}
 
-* 內容自動化功能可讓 [!DNL Experience Manager Assets] 使用 [!DNL Adobe Creative Cloud] API可大規模自動化資產的製作。 它大幅減少了建立相同資產的變體所需的時間和反複工作，進而加快提供內容的速度。 此功能不需要從DAM中進行任何程式設計和工作。 另請參閱 [使用Creative Cloud整合產生資產的變體](/help/assets/cc-api-integration.md).
+* 內容自動化功能可讓[!DNL Experience Manager Assets]使用[!DNL Adobe Creative Cloud] API來大規模自動化資產的製作。 它大幅減少了建立相同資產的變體所需的時間和反複工作，進而加快提供內容的速度。 此功能不需要從DAM中進行任何程式設計和工作。 請參閱[使用Creative Cloud整合](/help/assets/cc-api-integration.md)產生資產的變體。
 
-* [!DNL Experience Manager Assets] 包含 [!DNL Document Cloud] PDF檢視器以原生方式預覽PDF檔案。 此功能可讓使用者預覽多頁PDF檔案，而不需進行任何檔案處理或轉換。 此功能可改善 [!DNL Experience Manager] 6.5.檢視器中可用的控制項包括縮放、瀏覽至頁面、取消固定控制項，以及全熒幕檢視。 使用者也可以預覽並跳至頁面和書籤。 支援檔案本身的註解。 對PDF檔案中的內容發表評論和註解計畫於未來版本推出。
+* [!DNL Experience Manager Assets]包含[!DNL Document Cloud]個PDF檢視器以原生預覽PDF檔案。 此功能可讓使用者預覽多頁PDF檔案，而不需進行任何檔案處理或轉換。 此功能改善與[!DNL Experience Manager] 6.5的同等性。檢視器中可用的控制項包括縮放、瀏覽至頁面、取消固定控制項，以及全熒幕檢視。 使用者也可以預覽並跳至頁面和書籤。 支援檔案本身的註解。 對PDF檔案中的內容發表評論和註解計畫於未來版本推出。
 
-  ![在中預覽PDF檔案 [!DNL Experience Manager] 使用PDF檢視器](/help/assets/assets/preview-pdf-file-viewer.png)
+  使用PDF檢視器在[!DNL Experience Manager]中預覽PDF檔案](/help/assets/assets/preview-pdf-file-viewer.png)![
 
-* 連結共用下載功能使用可提高下載速度的非同步下載。 如需詳細資訊，請參閱 [下載使用連結共用所共用的資產](/help/assets/download-assets-from-aem.md#link-share-download).
+* 連結共用下載功能使用可提高下載速度的非同步下載。 如需詳細資訊，請參閱[下載使用連結共用的資產](/help/assets/download-assets-from-aem.md#link-share-download)。
 
   ![下載收件匣](/help/assets/assets/download-inbox.png)
 
 * 已增強檢視設定，讓使用者可選擇預設檢視和預設排序引數。
 
-  ![設定預設檢視於 [!UICONTROL 檢視設定]](/help/assets/assets/view-settings-for-defaults.png)
+  ![在[!UICONTROL 檢視設定]](/help/assets/assets/view-settings-for-defaults.png)中設定預設檢視
 
 * 使用者可以根據屬性述詞搜尋及篩選檔案夾。
 
   ![使用搜尋述詞篩選搜尋資料夾](/help/assets/assets/search-folders-via-predicates.png)
 
-### 中可用的新功能 [!DNL Assets] 發行前通道 {#assets-prerelease-features}
+### [!DNL Assets]發行前通道中可用的新功能 {#assets-prerelease-features}
 
 <!-- TBD: Not sure about GA of these enh. Shall check with the team.
 
@@ -79,13 +79,13 @@ ht-degree: 35%
 
 ### 修正在 [!DNL Assets] 中的錯誤 {#assets-bugs-fixed}
 
-API `com.day.cq.dam.api.collection.SmartCollection` 在中無法使用 [!DNL Experience Manager] as a [!DNL Cloud Service]. (CQ-4326322)
+API `com.day.cq.dam.api.collection.SmartCollection`在[!DNL Experience Manager]中無法當作[!DNL Cloud Service]使用。 (CQ-4326322)
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 ### [!DNL Forms] 的新增功能 {#what-is-new-forms}
 
-* 您現在可以使用Automated forms conversion服務 [轉換法文、德文和西班牙文PDF forms](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?#language-specific-meta-model) 調適型表單。
+* 您現在可以使用Automated forms conversion服務[將法文、德文和西班牙文PDF forms](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?#language-specific-meta-model)轉換為最適化表單。
 * 範本編輯器新增個別面板，以顯示與最適化表單元件相關的錯誤。 它有助於在同一處整合所有最適化表單錯誤，並縮短解決時間。
 
 ### [!DNL Forms] 搶鮮版頻道中可用的新功能 {#beta-features-forms}
@@ -99,7 +99,7 @@ API `com.day.cq.dam.api.collection.SmartCollection` 在中無法使用 [!DNL Exp
 
 * **Acroform-based Document of Record**：您也可以[使用 Adobe Acrobat Form PDF (Acroform PDF)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/generate-document-of-record-for-non-xfa-based-adaptive-forms.html) 作為 XFA 式表格範本以外的記錄文件範本。
 
-* **Microsoft® Azure資料存放區聯結器**：您現在可以 [將表單資料模型連線至Microsoft® Azure儲存體](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-azure-storage.html). 它可讓您擷取最適化表單資料，並將該資料作為BLOB儲存於Microsoft® Azure儲存體。
+* **Microsoft® Azure資料存放區聯結器**：您現在可以[將表單資料模型連線至Microsoft® Azure儲存體](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-azure-storage.html)。 它可讓您擷取最適化表單資料，並將該資料作為BLOB儲存於Microsoft® Azure儲存體。
 
 ## CIF 附加元件 {#cloud-services-cif}
 
@@ -110,7 +110,7 @@ API `com.day.cq.dam.api.collection.SmartCollection` 在中無法使用 [!DNL Exp
    * 在製作模式下分階段產品資料的視覺指示器，可更清楚顯示即將發生的變更
    * 內容和商務頁面的新Sitemap元件
 
-* 支援 [Adobe Commerce Sensei產品推薦，由Adobe Sensei提供技術支援](https://business.adobe.com/products/magento/product-recommendations.html) 在AEM Storefront中使用預先定義或即時建立的建議
+* 支援[Adobe Commerce Sensei產品建議，由AEM Storefront中的Adobe Sensei](https://business.adobe.com/products/magento/product-recommendations.html)提供技術支援，使用預先定義或即時建立的建議
 
 ## [!DNL Experience Manager Screens] as a [!DNL Cloud Service] {#screens}
 
@@ -122,17 +122,17 @@ API `com.day.cq.dam.api.collection.SmartCollection` 在中無法使用 [!DNL Exp
 
 * 您可以展開Screens內容結構。
 
-* `bulk-offline-update-service` 缺少某些環境的所有許可權。
+* `bulk-offline-update-service`缺少某些環境的所有許可權。
 
 * 更新說明連結以符合新的screens cloud檔案。
 
 * 現在可以解除指派播放清單，並禁止移除已指派播放器的播放清單。
 
-* 播放器現在會在「全部」快取清除後重新下載資產。
+* 清除「全部」快取時，播放器現在會重新下載Assets。
 
-* 重複排程現在有效，如果 *結束時間* 設為隔日。
+* 如果將&#x200B;*結束時間*&#x200B;設定為隔天，則重複排程現在有效。
 
-* `Back&Forward` 現在適用於Screensas a Cloud ServiceUI。
+* `Back&Forward`現在可在Screensas a Cloud ServiceUI中使用。
 
 * 之前無法建立具有相同名稱但不同名稱空間的標籤。
 
@@ -144,11 +144,11 @@ API `com.day.cq.dam.api.collection.SmartCollection` 在中無法使用 [!DNL Exp
 
 ## Cloud Manager {#cloud-manager}
 
-本節概述AEMas a Cloud Service2021.7.0中Cloud Manager的發行說明
+本節概述AEM as a Cloud Service 2021.7.0中Cloud Manager的發行說明
 
 ### 發行日期 {#release-cm-july}
 
-AEMas a Cloud Service2021.7.0中Cloud Manager的發行日期為2021年7月15日。
+AEM as a Cloud Service 2021.7.0中的Cloud Manager發行日期是2021年7月15日。
 下一版本計畫於2021年8月12日發行。
 
 ### 新增功能 {#what-is-new-cm-july}
@@ -157,7 +157,7 @@ AEMas a Cloud Service2021.7.0中Cloud Manager的發行日期為2021年7月15日�
 
 * 輸出 IP 現在記錄於建置步驟記錄檔。
 
-* 執行舊版AEM的階段和生產環境現在會報告狀態 **有可用更新**.
+* 執行舊版AEM的階段和生產環境現在會回報&#x200B;**有可用的更新**&#x200B;的狀態。
 
 * 支援的 SSL 憑證數量上限已增加到每個計劃 20 個。
 
@@ -191,8 +191,8 @@ Cloud Acceleration Manager的發行日期為2021年7月15日。
 
 ### 新增功能 {#what-is-new-cam}
 
-Cloud Acceleration Manager是雲端型應用程式，專為引導您的IT團隊進行從規劃到Cloud Service上線的轉換歷程所設計。 透過Adobe建議的最佳實務、秘訣、檔案和工具，協助進行AEM as aCloud Service歷程的每個階段，讓您的團隊成功進行移轉。 瞭解更多 [此處](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/getting-started-cam.html).
+Cloud Acceleration Manager是雲端型應用程式，專為引導您的IT團隊進行從規劃到Cloud Service上線的轉換歷程所設計。 透過Adobe建議的最佳實務、秘訣、檔案和工具，協助進行AEM as aCloud Service歷程的每個階段，讓您的團隊成功進行移轉。 在[此處](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/getting-started-cam.html)瞭解更多資訊。
 
 >[!NOTE]
 >
-> 看看這個 [Cloud Acceleration Manager示範影片](https://video.tv.adobe.com/v/335547).
+> 檢視此[Cloud Acceleration Manager示範影片](https://video.tv.adobe.com/v/335547)。

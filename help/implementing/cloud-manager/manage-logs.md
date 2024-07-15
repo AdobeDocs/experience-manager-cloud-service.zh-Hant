@@ -39,9 +39,9 @@ ht-degree: 69%
 
    ![下載記錄檔對話框](assets/download-preview.png)
 
-   以防萬一 [其他發佈區域](/help/operations/additional-publish-regions.md) 已針對您的環境啟用，您將能夠選取每個區域並個別下載其記錄，如下所示：
+   如果您的環境已啟用[其他Publish地區](/help/operations/additional-publish-regions.md)，您將能夠選取每個地區並個別下載其記錄檔，如下所示：
 
-   ![下載其他發佈區域的記錄](assets/download-publish-region-logs.png)
+   ![下載其他發佈區域的記錄檔](assets/download-publish-region-logs.png)
 
 1. 選取服務後，按一下您要擷取之記錄檔旁的下載圖示。
 
@@ -92,14 +92,14 @@ Environment Id Service    Name
 
 >[!TIP]
 >
->簽出 [此視訊資源](https://app.frame.io/reviews/28cdf463-b7fc-443b-a54a-93cb7da6567e/dbf158f1-568b-4efc-8fbc-3b241561cbab) 以進一步瞭解AEMas a Cloud Service偵錯。
+>請檢視[此視訊資源](https://app.frame.io/reviews/28cdf463-b7fc-443b-a54a-93cb7da6567e/dbf158f1-568b-4efc-8fbc-3b241561cbab)，深入瞭解偵錯AEM as a Cloud Service的相關資訊。
 
 請參閱以下更多資源，以深入了解如何使用 Cloud Manager API 和 Adobe I/O CLI：
 
 * [Cloud Manager API 文件](https://developer.adobe.com/experience-cloud/cloud-manager/)
 * [Adobe I/O CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager)
 
-請參閱下列其他資源，以進一步瞭解AEMas a Cloud Service中的記錄檔：
+請參閱下列其他資源，以進一步瞭解AEM as a Cloud Service中的記錄檔：
 
 * [Cloud 5 AEM記錄檔](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/expert-resources/cloud-5/cloud5-aem-log-files.html)
-* [使用記錄檔為AEMas a Cloud Service除錯](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs.html)
+* [使用記錄檔偵錯AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs.html)

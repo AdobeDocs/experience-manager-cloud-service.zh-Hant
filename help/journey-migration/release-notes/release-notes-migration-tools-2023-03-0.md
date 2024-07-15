@@ -1,6 +1,6 @@
 ---
-title: AEMas a Cloud Service版本2023.03.0中移轉工具的發行說明
-description: AEMas a Cloud Service版本2023.03.0中移轉工具的發行說明
+title: AEM as a Cloud Service 2023.03.0版中移轉工具的發行說明
+description: AEM as a Cloud Service 2023.03.0版中移轉工具的發行說明
 feature: Release Information
 exl-id: cdc57cca-e10a-4b0d-b803-910ccc9350a6
 role: Admin
@@ -11,9 +11,9 @@ ht-degree: 5%
 
 ---
 
-# AEMas a Cloud Service版本2023.03.0中移轉工具的發行說明 {#release-notes}
+# AEM as a Cloud Service 2023.03.0版中移轉工具的發行說明 {#release-notes}
 
-本頁面總覽AEMas a Cloud Service2023.03.0中移轉工具發行說明。
+本頁面總覽AEM as a Cloud Service 2023.03.0中移轉工具的發行說明。
 
 ## 最佳做法分析工具 {#bpa-release}
 
@@ -23,12 +23,12 @@ Best Practices Analyzer v2.1.40的發行日期為2023年3月3日。
 
 ### 新增功能 {#what-is-new-bpa}
 
-* BPA現在可以偵測並報告衝突的節點，也就是具有相同的節點 `jcr:uuid`. 這類發現會被標籤為嚴重，因為將內容移至AEMas a Cloud Service時，可能會導致內容擷取失敗。
-* BPA現在可以偵測並報告事件接聽程式的使用情形。 建議在移至AEMas a Cloud Service時，將此型別的事件處理機制重構為Sling工作。
+* BPA現在可以偵測並報告衝突的節點 — 具有相同`jcr:uuid`的節點。 這類發現會被標籤為嚴重，因為將內容移至AEM as a Cloud Service時，可能會導致內容擷取失敗。
+* BPA現在可以偵測並報告事件接聽程式的使用情形。 建議在移至AEM as a Cloud Service時，將此型別的事件處理機制重構為Sling工作。
 
 ### 錯誤修正 {#bug-fixes-bpa}
 
-* BPA回報的誤報 `grouprendercondition`. 此問題已修正。
+* BPA在`grouprendercondition`上回報誤報。 此問題已修正。
 
 ## 內容轉移工具 {#ctt-release}
 
@@ -38,8 +38,8 @@ Best Practices Analyzer v2.1.40的發行日期為2023年3月3日。
 
 ### 新增功能 {#what-is-new-ctt}
 
-* 使用者對應已經過簡化，並整合至內容擷取步驟。 不需要任何設定，預設情況下，當使用者起始內容擷取時，會自動完成使用者對應。 如有需要，使用者可以選擇停用使用者對應。 瞭解更多 [此處。](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/user-mapping-and-migration.html#user-mapping-detail)
-* 使用的預先複製步驟 [AzCopy](https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10) 已與內容轉移工具整合，以大幅加快內容擷取速度。 安裝此CTT版本時，會自動設定並安裝預先複製。 根據預設，在起始擷取作業時，將會對大於200 GB的移轉集自動執行預先複製。 使用者可以選擇視需要將其停用。 瞭解更多 [此處。](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/handling-large-content-repositories.html)
+* 使用者對應已經過簡化，並整合至內容擷取步驟。 不需要任何設定，預設情況下，當使用者起始內容擷取時，會自動完成使用者對應。 如有需要，使用者可以選擇停用使用者對應。 在此瞭解更多[。](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/user-mapping-and-migration.html#user-mapping-detail)
+* 使用[AzCopy](https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10)的預先複製步驟已與「內容轉移工具」整合，以大幅加快內容擷取速度。 安裝此CTT版本時，會自動設定並安裝預先複製。 根據預設，在起始擷取作業時，將會對大於200 GB的移轉集自動執行預先複製。 使用者可以選擇視需要將其停用。 在此瞭解更多[。](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/handling-large-content-repositories.html)
 * CTT現在可用於Windows伺服器。
 
 ### 錯誤修正 {#bug-fixes-ctt}

@@ -1,6 +1,6 @@
 ---
-title: 以Screensas a Cloud Service發佈頻道
-description: 本頁面說明如何以Screensas a Cloud Service發佈管道。
+title: 在Screens中發佈管道as a Cloud Service
+description: 本頁面說明如何在Screens中發佈管道as a Cloud Service。
 exl-id: a69086d2-777c-4a94-bd22-5c02f98bbedb
 feature: Authoring Screens
 role: Admin, Developer, User
@@ -11,7 +11,7 @@ ht-degree: 1%
 
 ---
 
-# 在Screensas a Cloud Service發佈頻道 {#publish-channel-screens-cloud}
+# 在Screens中發佈管道as a Cloud Service {#publish-channel-screens-cloud}
 
 ## 簡介 {#introduction}
 
@@ -31,24 +31,24 @@ ht-degree: 1%
 
 請依照下列步驟發佈管道：
 
-1. 從專案導覽並選取頻道，例如 **FirstDigExperience** —> **頻道** —> **LoopingChannelOne**.
+1. 瀏覽並選取專案中的頻道，例如&#x200B;**FirstDigitalExperience** —> **頻道** —> **LoopingChannelOne**。
 
    ![選取頻道](/help/screens-cloud/assets/create-content/managepub-1.png)
 
-1. 按一下 **管理發布** 從動作列移除。
+1. 按一下動作列中的&#x200B;**管理出版物**。
 
-1. 選取 **動作** 作為 **發佈** 和 **正在排程** 作為 **現在** 從 **管理出版物精靈** 並按一下 **下一個**.
+1. 從&#x200B;**管理出版物精靈**&#x200B;中選取&#x200B;**動作**&#x200B;做為&#x200B;**Publish**，**排程**&#x200B;做為&#x200B;**現在**，然後按一下&#x200B;**下一步**。
 
    ![選取Publish動作](/help/screens-cloud/assets/create-content/managepub-2.png)
 
    >[!NOTE]
-   >按一下 **包含子項** 從動作列中，取消勾選所有選項以發佈專案中的所有模組，然後按一下「新增」以發佈。 預設會勾選所有方塊，您必須手動取消勾選方塊以發佈專案中的所有模組。
+   >按一下動作列中的&#x200B;**包含子項**，然後取消勾選所有選項以發佈專案中的所有模組，然後按一下[新增]以發佈。 預設會勾選所有方塊，您必須手動取消勾選方塊以發佈專案中的所有模組。
 
-1. 從中選擇頻道後 **管理發布** 精靈，按一下 **發佈** 以發佈管道。
+1. 從&#x200B;**管理出版物**&#x200B;精靈中選取管道後，按一下&#x200B;**Publish**&#x200B;以發佈管道。
 
    ![Publish頻道](/help/screens-cloud/assets/create-content/managepub-3.png)
 
 
 ## 下一步 {#whats-next}
 
-現在，您已在專案中發佈頻道，您現在應該透過下一次檢閱檔案來繼續您的Screensas a Cloud Service歷程， [在Screensas a Cloud Service中安裝和設定播放器](/help/screens-cloud/managing-players-registration/installing-screens-cloud-player.md).
+現在您已發佈專案中的頻道，接下來應該檢閱檔案[在Screensas a Cloud Service中安裝和設定播放器](/help/screens-cloud/managing-players-registration/installing-screens-cloud-player.md)，以繼續您的Screensas a Cloud Service歷程。

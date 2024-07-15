@@ -21,13 +21,13 @@ ht-degree: 6%
 
 ### 連結未啟用 {#links-not-active}
 
-時間 [編輯頁面](/help/sites-cloud/authoring/page-editor/edit-content.md)，連結未啟用。
+當[編輯頁面](/help/sites-cloud/authoring/page-editor/edit-content.md)時，連結未啟用。
 
-* [切換至 **預覽** 模式](/help/sites-cloud/authoring/page-editor/introduction.md#preview-mode) 以使用內容中的連結進行導覽。
+* [切換到&#x200B;**預覽**&#x200B;模式](/help/sites-cloud/authoring/page-editor/introduction.md#preview-mode)以使用內容中的連結進行瀏覽。
 
 ### 結構頁面 {#structure-pages}
 
-無法命名頁面 `structure`. 已命名的頁面 `structure` 在頁面編輯器中將不可編輯。
+無法將Pagesis命名為`structure`。 名稱為`structure`的頁面在頁面編輯器中將不可編輯。
 
 ## CSS限制 {#css-limitations}
 
@@ -41,13 +41,13 @@ ht-degree: 6%
 
 ### vh單位 {#vh-units}
 
-`vh` 單位不受支援，因為iframe高度必須由AEM自動調整。
+不支援`vh`個單位，因為iframe高度必須由AEM自動調整。
 
 ### 固定背景影像 {#fixed-background-images}
 
 由於固定背景影像內嵌於iframe中，因此在捲動時可能無法顯示為固定背景影像。
 
-* 選取 **以發佈的形式檢視頁面** 在標題列中，動作會正確顯示頁面。
+* 在標題列動作中選取&#x200B;**以發佈的形式檢視頁面**&#x200B;可正確顯示頁面。
 
 ### 100%高度 {#height}
 

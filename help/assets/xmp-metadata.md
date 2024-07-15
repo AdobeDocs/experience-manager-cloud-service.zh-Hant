@@ -21,13 +21,13 @@ ht-degree: 17%
 
 XMP （可延伸中繼資料平台）是Experience Manager Assets用於所有中繼資料管理的中繼資料標準。 XMP為各種應用程式的中繼資料的建立、處理和交換提供標準格式。
 
-除了提供可嵌入到所有檔案格式的通用中繼資料編碼之外，XMP還提供豐富的 [內容模型](#xmp-core-concepts) 和 [受Adobe支援](#advantages-of-xmp) 和其他公司，以便XMP的使用者能夠與 [!DNL Assets] 擁有強大的平台作為建置基礎。
+除了提供可內嵌至所有檔案格式的通用中繼資料編碼之外，XMP還提供豐富的[內容模型](#xmp-core-concepts)，並受到Adobe](#advantages-of-xmp)和其他公司的[支援，因此XMP與[!DNL Assets]結合的使用者擁有強大的平台可以建置。
 
 ## XMP概觀和生態系統 {#xmp-ecosystem}
 
-[!DNL Assets] 原生支援XMP中繼資料標準。 XMP是在數位資產中處理和儲存標準化和專屬中繼資料的標準。 XMP是共同標準，可讓多個應用程式有效處理中繼資料。
+[!DNL Assets]原生支援XMP中繼資料標準。 XMP是在數位資產中處理和儲存標準化和專屬中繼資料的標準。 XMP是共同標準，可讓多個應用程式有效處理中繼資料。
 
-例如，生產專業人員可使用Adobe應用程式內建的XMP支援，以跨多種檔案格式傳遞資訊。 此 [!DNL Assets] 存放庫會擷取XMP中繼資料，並使用它來管理內容生命週期，並提供建立自動化工作流程的功能。
+例如，生產專業人員可使用Adobe應用程式內建的XMP支援，以跨多種檔案格式傳遞資訊。 [!DNL Assets]儲存庫會擷取XMP中繼資料，並使用它來管理內容生命週期，並提供建立自動化工作流程的功能。
 
 XMP透過提供資料模型、儲存模型和結構描述，將中繼資料的定義、建立和處理標準化。 本章節將介紹所有這些概念。
 
@@ -52,64 +52,65 @@ XMP標準設計為可擴充，可讓您將自訂型別的中繼資料新增到XM
 
 >[!NOTE]
 >
->XMP通常不允許內嵌二進位資料型別。 若要在XMP中攜帶二進位資料（例如縮圖影像），這些資料必須以XML易記格式編碼，例如 `Base64`.
+>XMP通常不允許內嵌二進位資料型別。 若要在XMP中攜帶二進位資料（例如縮圖影像），它們必須以XML易記格式（例如`Base64`）編碼。
 
 ### XMP核心概念 {#xmp-core-concepts}
 
 **名稱空間和結構描述**
 
-XMP結構描述是通用XML名稱空間中的一組屬性名稱，包括資料型別和描述性資訊。 XMP結構描述是由其XML名稱空間URI識別。 使用名稱空間可防止不同結構描述中名稱相同但含義不同的屬性之間發生衝突。
+XMP結構描述是通用XML名稱空間中的一組屬性名稱，其中包括
+資料型別和描述性資訊。 XMP結構描述是由其XML名稱空間URI識別。 使用名稱空間可防止不同結構描述中名稱相同但含義不同的屬性之間發生衝突。
 
-例如， **建立者** 兩個獨立設計結構描述中的屬性可能代表建立資產的人，也可能代表建立資產的應用程式(例如Adobe Photoshop)。
+例如，兩個獨立設計的結構描述中的&#x200B;**建立者**&#x200B;屬性可能代表建立資產的人，也可能代表建立資產的應用程式(例如Adobe Photoshop)。
 
 **XMP屬性和值**
 
 XMP可能包含一或多個結構描述的屬性。 例如，許多Adobe應用程式使用的典型子集可能包括以下內容：
 
-* 都柏林核心結構描述： `dc:title`， `dc:creator`， `dc:subject`， `dc:format`， `dc:rights`
-* XMP基本結構描述： `xmp:CreateDate`， `xmp:CreatorTool`， `xmp:ModifyDate`， `xmp:metadataDate`
-* XMP許可權管理綱要： `xmpRights:WebStatement`， `xmpRights:Marked`
-* XMP媒體管理結構： `xmpMM:DocumentID`
+* 都柏林核心結構描述： `dc:title`，`dc:creator`，`dc:subject`，`dc:format`，`dc:rights`
+* XMP基本結構描述： `xmp:CreateDate`，`xmp:CreatorTool`，`xmp:ModifyDate`，`xmp:metadataDate`
+* XMP許可權管理結構描述： `xmpRights:WebStatement`，`xmpRights:Marked`
+* XMP媒體管理結構描述： `xmpMM:DocumentID`
 
 **替代語言**
 
-XMP讓您能夠新增 `xml:lang` 屬性以指定文字的語言。
+XMP可讓您新增`xml:lang`屬性至文字屬性，以指定文字的語言。
 
 ## XMP回寫至轉譯 {#xmp-writeback-to-renditions}
 
-中的此XMP回寫功能 [!DNL Adobe Experience Manager Assets] 會將中繼資料變更復寫至原始資產的轉譯。
-當您從內變更資產的中繼資料時 [!DNL Assets] 或者，在上傳資產時，變更最初會儲存在資產階層的中繼資料節點中。 回寫功能可讓您將中繼資料變更傳播到資產的所有或特定轉譯。 此功能只會回寫那些使用的中繼資料屬性 `jcr` 名稱空間，也就是名為的屬性 `dc:title` 已寫回，但有一個屬性命名為 `mytitle` 不是。
+[!DNL Adobe Experience Manager Assets]中的這個XMP回寫功能會將中繼資料變更復寫到原始資產的轉譯。
+當您從[!DNL Assets]內變更資產的中繼資料時，或上傳資產時，變更最初會儲存在資產階層中的中繼資料節點中。 回寫功能可讓您將中繼資料變更傳播到資產的所有或特定轉譯。 此功能只會回寫那些使用`jcr`名稱空間的中繼資料屬性，也就是回寫名為`dc:title`的屬性，但不回寫名為`mytitle`的屬性。
 
-例如，假設您修改了 [!UICONTROL 標題] 標題為的資產屬性 `Classic Leather` 至 `Nylon`.
+例如，假設您將`Classic Leather`標題為`Nylon`之資產的[!UICONTROL Title]屬性修改為案例。
 
 ![中繼資料](assets/metadata.png)
 
-在這種情況下， [!DNL Assets] 將變更儲存至 **[!UICONTROL 標題]** 中的屬性 `dc:title` 儲存在資產階層中之資產中繼資料的引數。
+在此案例中，[!DNL Assets]會針對儲存在資產階層中的資產中繼資料，將變更儲存在`dc:title`引數中的&#x200B;**[!UICONTROL Title]**&#x200B;屬性。
 
-![中繼資料儲存在存放庫的資產節點中](assets/metadata_stored.png)
+![中繼資料儲存在儲存庫中的資產節點中](assets/metadata_stored.png)
 
 >[!IMPORTANT]
 >
->根據預設，中的回寫功能並未啟用 [!DNL Assets]. 瞭解如何 [啟用中繼資料回寫](#enable-xmp-writeback). 適用於數位資產的MSM無法搭配已啟用中繼資料回寫的功能運作。 回寫時，繼承中斷。
+>預設不會在[!DNL Assets]中啟用回寫功能。 瞭解如何[啟用中繼資料回寫](#enable-xmp-writeback)。 適用於數位資產的MSM無法搭配已啟用中繼資料回寫的功能運作。 回寫時，繼承中斷。
 
 ### 啟用XMP回寫 {#enable-xmp-writeback}
 
-[!UICONTROL DAM中繼資料回寫] 工作流程是用來回寫資產的中繼資料。 若要啟用回寫，請遵循下列三種方法之一：
+[!UICONTROL DAM中繼資料回寫]工作流程是用來回寫資產的中繼資料。 若要啟用回寫，請遵循下列三種方法之一：
 
 * 使用啟動器。
-* 手動啟動 `DAM MetaData Writeback` 工作流程。
+* 手動啟動`DAM MetaData Writeback`工作流程。
 * 將工作流程設定為後期處理的一部分。
 
 若要使用啟動器，請遵循下列步驟：
 
-1. 作為管理員，存取 **[!UICONTROL 工具]** > **[!UICONTROL 工作流程]** > **[!UICONTROL 啟動器]**.
-1. 選取 [!UICONTROL 啟動器] 針對 **[!UICONTROL 工作流程]** 欄顯示 **[!UICONTROL DAM中繼資料回寫]**. 按一下 **[!UICONTROL 屬性]** 工具列中的。
+1. 以系統管理員身分，存取&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 工作流程]** > **[!UICONTROL 啟動器]**。
+1. 選取&#x200B;**[!UICONTROL 工作流程]**&#x200B;欄顯示&#x200B;**[!UICONTROL DAM中繼資料回寫]**&#x200B;的[!UICONTROL 啟動器]。 按一下工具列中的&#x200B;**[!UICONTROL 屬性]**。
 
    ![選取DAM中繼資料回寫啟動器，以修改其屬性並加以啟用](assets/launcher-properties-metadata-writeback1.png)
 
-1. 選取 **[!UICONTROL 啟動]** 於 **[!UICONTROL 啟動器屬性]** 頁面。 按一下&#x200B;**[!UICONTROL 「儲存並關閉」]**。
+1. 在&#x200B;**[!UICONTROL 啟動器屬性]**&#x200B;頁面上選取&#x200B;**[!UICONTROL 啟動]**。 按一下&#x200B;**[!UICONTROL 「儲存並關閉」]**。
 
-若要隻手動將工作流程套用至資產一次，請套用 [!UICONTROL DAM中繼資料回寫] 工作流程。
+若要僅手動將工作流程套用至資產一次，請從左側邊欄套用[!UICONTROL DAM中繼資料回寫]工作流程。
 
 若要將工作流程套用至所有上傳的資產，請將工作流程新增至後期處理設定檔。
 

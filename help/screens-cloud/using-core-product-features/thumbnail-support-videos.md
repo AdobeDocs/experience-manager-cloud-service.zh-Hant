@@ -1,6 +1,6 @@
 ---
-title: Screensas a Cloud Service提供影片的縮圖支援
-description: 本頁說明如何在Screensas a Cloud Service中新增影片的縮圖支援。
+title: Screens影片的縮圖支援as a Cloud Service
+description: 本頁說明如何在Screens中新增影片的縮圖支援as a Cloud Service。
 index: true
 exl-id: 7b15d7cc-f089-4008-9039-5f48343a0f20
 feature: Developing Screens
@@ -33,39 +33,39 @@ ht-degree: 1%
 
 >[!IMPORTANT]
 >**必備條件**
->在瞭解如何使用影片的縮圖之前，請務必瞭解如何在Screensas a Cloud Service專案中為頻道建立影片轉譯。 另請參閱 [在Screensas a Cloud Service中建立視訊轉譯](/help/screens-cloud/configuring/creating-screens-video-renditions-cloud-service.md).
+>在瞭解如何使用影片的縮圖之前，請務必先瞭解如何在Screensas a Cloud Service專案中建立頻道的影片轉譯。 請參閱[在Screens as a Cloud Service](/help/screens-cloud/configuring/creating-screens-video-renditions-cloud-service.md)中建立視訊轉譯。
 
 請依照下列步驟，在視訊中使用縮圖：
 
 1. 導覽至現有的Screens頻道或建立頻道。
 
    >[!NOTE]
-   >若要瞭解如何建立管道及新增內容至管道，請參閱 [在Screensas a Cloud Service中建立和管理頻道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/create-content/creating-channels-screens-cloud.html).
+   >若要瞭解如何建立管道並將內容新增至管道，請參閱[在Screens中建立和管理管道as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/create-content/creating-channels-screens-cloud.html)。
 
-1. 選取頻道。 在動作列上，按一下 **編輯** 以開啟編輯器。
+1. 選取頻道。 在動作列上，按一下&#x200B;**編輯**&#x200B;以開啟編輯器。
 
 
-   ![動作列上的編輯按鈕](/help/screens-cloud/using-core-product-features/assets/thumbnail-1.png).
-
-1. 新增或編輯現有的視訊元件，如下圖所示。
-
-   ![醒目提示的視訊資產影像](/help/screens-cloud/using-core-product-features/assets/thumbnail-2.png).
+   ![動作列](/help/screens-cloud/using-core-product-features/assets/thumbnail-1.png)上的編輯按鈕。
 
 1. 新增或編輯現有的視訊元件，如下圖所示。
 
-1. 選取視訊並按一下設定(*扳手*)圖示以開啟視訊屬性。
+   ![視訊資產的醒目提示影像](/help/screens-cloud/using-core-product-features/assets/thumbnail-2.png)。
 
-   ![所選視訊資產影像中，指向「設定」圖示的箭頭標示為扳手。 在工具列上](/help/screens-cloud/using-core-product-features/assets/thumbnail-3.png).
+1. 新增或編輯現有的視訊元件，如下圖所示。
 
-1. 此 **視訊** 對話方塊開啟，您可以在其中檢視 **縮圖** 拖放區域。
+1. 選取視訊並按一下「設定（*扳手*）」圖示以開啟視訊屬性。
 
-   ![顯示視訊資產影像的視訊對話方塊和縮圖拖放方塊](/help/screens-cloud/using-core-product-features/assets/thumbnail-4.png).
+   ![選取的視訊資產影像，其箭頭指向[設定]圖示，表示為扳手。 在工具列](/help/screens-cloud/using-core-product-features/assets/thumbnail-3.png)上。
 
-1. 將影像從資產選擇器拖放至 **縮圖** 放置區域並按一下 **完成**.
+1. **視訊**&#x200B;對話方塊開啟，您可以在其中檢視&#x200B;**縮圖**&#x200B;拖放區域。
 
-   ![資產影像選擇器顯示在視訊對話方塊後方，影像資產顯示在縮圖拖放方塊中](/help/screens-cloud/using-core-product-features/assets/thumbnail-5.png).
+   ![顯示視訊資產影像的視訊對話方塊和縮圖拖放方塊](/help/screens-cloud/using-core-product-features/assets/thumbnail-4.png)。
 
-1. 按一下 **預覽**.
+1. 將影像從資產選擇器拖放至&#x200B;**縮圖**&#x200B;拖放區域，然後按一下&#x200B;**完成**。
+
+   ![影像選擇器顯示在視訊對話方塊後方，影像資產顯示在縮圖下拉方塊](/help/screens-cloud/using-core-product-features/assets/thumbnail-5.png)中。
+
+1. 按一下&#x200B;**預覽**。
 
 1. 若已在元件上設定視訊，則會播放視訊。 如果沒有，且已設定縮圖，則會播放縮圖。 否則，元件會視為未設定並略過。
 

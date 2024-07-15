@@ -27,7 +27,7 @@ AEM Content Services的設計目的，是要概括AEM內/外部內容的說明�
 
 您可以使用AEM JSON匯出工具，以JSON資料模型格式傳送AEM頁面的內容。 然後，您自己的應用程式便可使用它。
 
-在AEM中，傳遞是使用選取器達成 `model` 和 `.json` 副檔名。
+在AEM中，傳遞是使用選擇器`model`和`.json`副檔名達成。
 
 `.model.json`
 
@@ -39,11 +39,11 @@ AEM Content Services的設計目的，是要概括AEM內/外部內容的說明�
 
 1. 將傳送下列內容：
 
-   ![WKND內容的JSON模型](assets/json-model-wknd.png)
+   WKND內容的![JSON模型](assets/json-model-wknd.png)
 
 或者，您可以特別鎖定結構化內容片段的目標，以傳遞其內容。
 
-這是使用片段的整個路徑來完成的(透過 `jcr:content`)；例如，尾碼為。
+這是使用片段的整個路徑完成的（透過`jcr:content`）；例如，尾碼為。
 
 `.../jcr:content/root/container/container/contentfragment.model.json`
 
@@ -57,22 +57,22 @@ AEM Content Services的設計目的，是要概括AEM內/外部內容的說明�
 
 * 將傳送下列內容：
 
-  ![WKND內容片段的JSON模型](assets/json-model-wknd-content-fragment.png)
+  WKND內容片段的![JSON模型](assets/json-model-wknd-content-fragment.png)
 
   >[!NOTE]
   >
-  >您可以 [調整您自己的元件](enabling-json-exporter.md) 以存取及使用此資料。
+  >您可以[調整您自己的元件](enabling-json-exporter.md)以存取及使用此資料。
 
   >[!NOTE]
   >
-  >雖然不是標準實施， [支援多個選擇器，](enabling-json-exporter.md#multiple-selectors) 但是 `model` 必須為第一個。
+  >雖然不是標準實作，但支援[多個選取器，](enabling-json-exporter.md#multiple-selectors)但`model`必須是第一個。
 
 ### 更多資訊 {#further-information}
 
 * Assets HTTP API
    * [Assets HTTP API](/help/assets/developer-reference-material-apis.md)
 * Sling模型：
-   * [Sling模型 — 自130起將模型類別與資源型別建立關聯](https://sling.apache.org/documentation/bundles/models.html#associating-a-model-class-with-a-resource-type-since-130)
+   * [Sling模型 — 自130](https://sling.apache.org/documentation/bundles/models.html#associating-a-model-class-with-a-resource-type-since-130)起將模型類別與資源型別建立關聯
 * 具有JSON的AEM：
    * [為元件啟用 JSON 匯出](enabling-json-exporter.md)
 
@@ -81,4 +81,4 @@ AEM Content Services的設計目的，是要概括AEM內/外部內容的說明�
 * [內容片段](/help/sites-cloud/administering/content-fragments/overview.md)
 * [內容片段模型](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
 * [使用內容片段製作](/help/sites-cloud/authoring/fragments/content-fragments.md)
-* [核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hant) 和 [內容片段元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html)
+* [核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hant)和[內容片段元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html)

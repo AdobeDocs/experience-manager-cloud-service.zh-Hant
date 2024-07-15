@@ -29,11 +29,11 @@ Cloud Manager 授權儀表板提供對以下資訊的輕鬆存取：
 
 >[!NOTE]
 >
->中的使用者 **企業所有者** 必須登入角色才能檢視授權儀表板。
+>必須由具有&#x200B;**業主**&#x200B;角色的使用者登入才能檢視授權儀表板。
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織。
 
-1. 在 **[我的計畫](/help/implementing/cloud-manager/navigation.md#my-programs)** 主控台，切換至 **授權** 標籤。
+1. 在&#x200B;**[我的程式](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;主控台上，切換至&#x200B;**授權**&#x200B;標籤。
 
 ![授權儀表板](assets/license-dashboard.png)
 
@@ -45,14 +45,14 @@ Cloud Manager 授權儀表板提供對以下資訊的輕鬆存取：
 
 每個區段都總結了可用的內容及其使用方式（如果有的話）。 當前僅顯示 Sites 解決方案，即使租用戶中存在其他解決方案。
 
-* 此 **狀態** 欄顯示未使用的權利數量與租使用者可用的權利總數。
+* **狀態**&#x200B;欄顯示未使用的權利數量與租使用者可用的權利總數。
 * 這&#x200B;**配置在**&#x200B;清單示已套用解決方案權利的計畫。
    * 僅當已建立生產環境或已存在生產環境且已在其上執行更新管道時，才認為權利被使用。
 * 此&#x200B;**使用方式**&#x200B;按一下時，資料行將過去 12 個月內消耗的內容請求顯示為圖表。
 
 >[!TIP]
 >
->若要瞭解如何透過Admin Console管理整個組織的Adobe權益，請參閱 [Admin Console概觀](https://helpx.adobe.com/tw/enterprise/using/admin-console.html).
+>若要瞭解如何透過Admin Console管理整個組織的Adobe權益，請參閱[Admin Console概觀](https://helpx.adobe.com/tw/enterprise/using/admin-console.html)。
 
 ## 常見問答 {#faq}
 
@@ -64,7 +64,7 @@ Cloud Manager 授權儀表板提供對以下資訊的輕鬆存取：
 
 內容請求會排除僅為了提供產品和服務而由Adobe或其代表發起的請求或活動。 Adobe 識別的來自與常見搜索引擎和社交媒體服務相關的機器人、爬蟲和蜘蛛的使用者代理流量也被排除在外。
 
-另請參閱 [瞭解Cloud Service內容請求](/help/implementing/cloud-manager/content-requests.md).
+另請參閱[瞭解Cloud Service內容要求](/help/implementing/cloud-manager/content-requests.md)。
 
 ### Adobe Experience Manager 如何衡量內容請求？ {#how-are-content-requests-measured}
 
@@ -72,11 +72,11 @@ Cloud Manager 授權儀表板提供對以下資訊的輕鬆存取：
 
 AEM 還制定了排除知名機器人的規則，包括定期存取該網站以刷新其搜索索引或服務的知名服務。
 
-另請參閱 [瞭解Cloud Service內容請求](/help/implementing/cloud-manager/content-requests.md).
+另請參閱[瞭解Cloud Service內容要求](/help/implementing/cloud-manager/content-requests.md)。
 
 ### 為什麼我的 Analytics 報告顯示的結果與 AEM 內容請求不同？ {#why-are-reports-different}
 
-內容請求可能與組織的Analytics報告工具不同。 如需詳細資訊，請參閱 [瞭解Cloud Service內容請求](/help/implementing/cloud-manager/content-requests.md).
+內容請求可能與組織的Analytics報告工具不同。 如需詳細資訊，請參閱[瞭解Cloud Service內容要求](/help/implementing/cloud-manager/content-requests.md)。
 
 ### 如果我想了解更多有關我的內容請求量的資訊呢? {#current-request-volumes}
 

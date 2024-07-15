@@ -1,5 +1,5 @@
 ---
-title: 建立應用程式建立器應用程式
+title: 建立App Builder應用程式
 description: 瞭解如何建立和啟動新的App Builder應用程式。
 version: Cloud Service
 feature: App Builder, Developing
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 ---
 
-# 建立應用程式建立器應用程式
+# 建立App Builder應用程式
 
 ## 設定您的第一個專案
 
@@ -32,7 +32,7 @@ ht-degree: 0%
 
 ## 初始化您的第一個專案
 
-瞭解如何初始化應用程式產生器專案。
+瞭解如何初始化App Builder專案。
 
 >[!VIDEO](https://video.tv.adobe.com/v/339170/?quality=12&learn=on)
 

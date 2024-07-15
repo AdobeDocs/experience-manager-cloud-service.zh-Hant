@@ -8,8 +8,8 @@ discoiquuid: a1229970-5a5a-4f76-a880-278f972587cc
 docset: aem65
 source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
 workflow-type: tm+mt
-source-wordcount: '423'
-ht-degree: 0%
+source-wordcount: '396'
+ht-degree: 1%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 最適化表單片段是一組欄位，或包含一組欄位的面板，您可以在建立表單時使用這些欄位。 它可讓您輕鬆快速地建立表單。 您可以使用側邊欄中的資產瀏覽器，將最適化表單片段拖放至表單中，並在表單編輯器中加以編輯。
 
-對於最適化Forms作者，參考片段提供在 [!DNL AEM Forms] 封裝 [[!DNL AEM FORMS] 參考片段](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/fd/AEM-FORMS-6.3-REFERENCE-FRAGMENTS). 其包含下列片段：
+最適化Forms作者在[!DNL AEM Forms]套件[[!DNL AEM FORMS] 參考片段](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/fd/AEM-FORMS-6.3-REFERENCE-FRAGMENTS)中提供參考片段。 其包含下列片段：
 
 * 地址
 * 連絡資訊
@@ -31,7 +31,7 @@ ht-degree: 0%
 * 條款與條件
 * 條款與條件含草稿
 
-安裝套件時，會在Forms和檔案下方建立包含參考片段的參考片段資料夾。 如需安裝套裝，請參閱 [透過Cloud Manager和封裝管理員部署內容封裝](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html#deploying-content-packages-via-cloud-manager-and-package-manager) 和 [如何使用套件](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html).
+安裝套件時，會在Forms和檔案下方建立包含參考片段的參考片段資料夾。 若要安裝封裝，請參閱[透過Cloud Manager和封裝管理員部署內容封裝](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html#deploying-content-packages-via-cloud-manager-and-package-manager)以及[如何使用封裝](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html)。
 
 ![列出所有片段](assets/ootb-frags.png)
 
@@ -39,7 +39,7 @@ ht-degree: 0%
 
 包含欄位以指定郵寄地址。 可用欄位包括街道地址、郵遞區號、城市、州和國家/地區。 其中也包含預先設定的Web服務，可填入指定之美國郵遞區號的城市和州。
 
-![地址片段](assets/address.png)
+![位址片段](assets/address.png)
 
 <!--[Click to enlarge
 
@@ -49,7 +49,7 @@ ht-degree: 0%
 
 包含擷取電話號碼和電子郵件地址的欄位。
 
-![聯絡資訊片段](assets/contact-info.png)
+![連絡資訊片段](assets/contact-info.png)
 
 <!--[Click to enlarge
 
@@ -64,7 +64,7 @@ ht-degree: 0%
 
 包含擷取目前僱用詳細資料的欄位，例如僱用狀態、僱用欄位、指定、組織和加入日期。
 
-![目前就業片段](assets/current-emp.png)
+![目前的僱用片段](assets/current-emp.png)
 
 <!--[Click to enlarge
 
@@ -84,7 +84,7 @@ ht-degree: 0%
 
 包含擷取僱用歷史記錄的欄位。 可新增多個組織。
 
-![僱用歷史記錄片段](assets/emp-history.png)
+![僱用記錄片段](assets/emp-history.png)
 
 <!--[Click to enlarge
 
@@ -124,7 +124,7 @@ ht-degree: 0%
 
 指定使用者在提交表單前接受和簽署的條款與條件。
 
-![條款與條件含草稿](assets/tnc-scribble.png)
+![含草寫字的條款與條件](assets/tnc-scribble.png)
 
 <!--[Click to enlarge
 

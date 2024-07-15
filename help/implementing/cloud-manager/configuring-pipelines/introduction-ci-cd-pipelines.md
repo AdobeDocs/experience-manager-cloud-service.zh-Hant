@@ -56,7 +56,7 @@ Cloud Manager 提供兩種類型的管道：
 除了生產和非生產之外，管道還可以透過它們部署的程式碼類型來區分。
 
 * **[完整堆疊程式碼管道](#full-stack-pipeline)** - 同時部署包含一個或多個 AEM 伺服器應用程序以及 HTTPD/Dispatcher 配置的後端和前端程式碼構建
-* **[設定管道](#config-deployment-pipeline)**  — 在幾分鐘內設定和部署流量篩選器規則，包括WAF規則
+* **[設定管道](#config-deployment-pipeline)** — 在幾分鐘內設定並部署流量篩選器規則，包括WAF規則
 * **[前端程式碼管道](#front-end)** - 部署包含一個或多個用戶端 UI 應用程式的前端程式碼建置。
 * **[Web 層設定管道](#web-tier-config-pipelines)** - 部署 HTTPD/ Dispatcher 設定。
 
@@ -64,7 +64,7 @@ Cloud Manager 提供兩種類型的管道：
 
 ### 了解 Cloud Manager 中的 CI-CD 管道 {#understand-pipelines}
 
-下表總結了Cloud Manager中可用的管道及其用法。
+下表總結了Cloud Manager中可用的管道及其用途。
 
 | 管道類型 | 部署或程式碼品質 | 原始碼 | 用途 | 附註 |
 |--- |--- |--- |---|---|
@@ -118,7 +118,7 @@ Cloud Manager 提供兩種類型的管道：
 
 透過設定管道，您可以在幾分鐘內設定和部署流量篩選器規則，包括WAF規則。
 
-另請參閱 [包含WAF規則的流量篩選規則](/help/security/traffic-filter-rules-including-waf.md) 以瞭解如何管理存放庫中的設定，以便正確部署。
+請參閱[流量篩選規則（包括WAF規則）](/help/security/traffic-filter-rules-including-waf.md)以瞭解如何管理存放庫中的設定，以便正確部署。
 
 ### 設定管道設定 {#configure-config-deployment}
 

@@ -24,17 +24,17 @@ Cloud Acceleration Manager是雲端型應用程式，專為引導您的IT團隊�
 
 ## 使用Cloud Acceleration Manager {#using-cam}
 
-Cloud Acceleration Manager (CAM)提供遷移的一站式體驗。 它以引導式歷程的形式提供，提供初始評估，引導他們使用正確的工具、檔案和最佳實務，以確保在AEMas a Cloud Service上線成功。
+Cloud Acceleration Manager (CAM)提供遷移的一站式體驗。 它以引導式歷程的形式提供，提供初始評估，引導他們前往正確的工具、檔案和最佳實務，以確保在AEM as a Cloud Service上線成功。
 
-### 瀏覽至Cloud Acceleration Manager {#navigating}
+### 導覽至Cloud Acceleration Manager {#navigating}
 
 請依照下列步驟導覽至Cloud Acceleration Manager (CAM)：
 
-1. 登入 [Adobe Experience Cloud](https://experience.adobe.com).
+1. 登入[Adobe Experience Cloud](https://experience.adobe.com)。
 
-1. 按一下 **Experience Manager** 卡片。
+1. 按一下&#x200B;**Experience Manager**&#x200B;卡片。
 
-1. 按一下 **Launch** 從 **Cloud Acceleration Manager** 卡片，讓您可以開啟登入頁面。
+1. 從&#x200B;**Cloud Acceleration Manager**&#x200B;卡片按一下&#x200B;**啟動**，即可開啟登入頁面。
 
    ![影像](/help/journey-migration/cloud-acceleration-manager/assets/cam-1.png)
 
@@ -50,18 +50,18 @@ Cloud Acceleration Manager (CAM)的登陸頁面可讓您建立和編輯多個專
 
 請依照下列步驟建立專案：
 
-1. 按一下 **建立專案** 從登陸頁面。
+1. 從登入頁面按一下&#x200B;**建立專案**。
 
    ![影像](/help/journey-migration/cloud-acceleration-manager/assets/cam-2.png)
 
    >[!NOTE]
    >第一次使用CAM的使用者會看到建立專案的對話方塊。 過去使用CAM的使用者會看到預設專案或先前建立的專案。
 
-1. 輸入 **名稱** 和 **說明** ，然後按一下 **建立**.
+1. 輸入專案的&#x200B;**名稱**&#x200B;和&#x200B;**描述**，然後按一下&#x200B;**建立**。
 
    ![影像](/help/journey-migration/cloud-acceleration-manager/assets/cam-3.png)
 
-1. 專案現在已建立並顯示在 **Cloud Acceleration Manager** 登陸頁面。
+1. 專案現已建立並顯示在&#x200B;**Cloud Acceleration Manager**&#x200B;登陸頁面上。
 
    ![影像](/help/journey-migration/cloud-acceleration-manager/assets/cam-landing.png)
 
@@ -81,11 +81,11 @@ Cloud Acceleration Manager (CAM)的登陸頁面可讓您建立和編輯多個專
 
    ![影像](/help/journey-migration/cloud-acceleration-manager/assets/cam-4.png)
 
-1. 您可以編輯專案名稱、說明，甚至可以上傳新影像或編輯現有影像 **編輯專案** 對話方塊。
+1. 您可以編輯專案名稱、說明，甚至可以從&#x200B;**編輯專案**&#x200B;對話方塊上傳新影像或編輯現有影像。
 
    ![影像](/help/journey-migration/cloud-acceleration-manager/assets/cam-edit.png)
 
-1. 按一下 **更新** 以認可您的變更。
+1. 按一下&#x200B;**更新**&#x200B;認可您的變更。
 
 ### 刪除專案 {#delete-project}
 
@@ -95,7 +95,7 @@ Cloud Acceleration Manager (CAM)的登陸頁面可讓您建立和編輯多個專
 
    ![影像](/help/journey-migration/cloud-acceleration-manager/assets/cam-4.png)
 
-1. 按一下 **刪除** 以確認步驟。
+1. 按一下&#x200B;**刪除**&#x200B;以確認步驟。
 
    >[!NOTE]
    >專案將在移轉閒置1年後自動過期和刪除。 透過編輯專案名稱或說明、上傳BPA報告、建立或編輯移轉集、執行擷取或執行內嵌，專案將保持作用中。
@@ -103,4 +103,4 @@ Cloud Acceleration Manager (CAM)的登陸頁面可讓您建立和編輯多個專
 
 ## 下一步 {#whats-next}
 
-瞭解如何登入Cloud Acceleration Manager以及如何建立專案後，您就可以開始檢閱中的下一個步驟了 [整備階段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-readiness-phase.html).
+在瞭解如何登入Cloud Acceleration Manager以及如何建立專案後，您就可以開始檢閱[整備階段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-readiness-phase.html)的下一步。

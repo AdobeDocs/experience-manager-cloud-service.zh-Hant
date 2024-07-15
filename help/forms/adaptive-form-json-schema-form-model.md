@@ -37,14 +37,14 @@ ht-degree: 9%
 
 ## 使用JSON結構描述作為表單模型  {#using-a-json-schema-as-form-model}
 
-Adobe Experience Manager表單支援使用現有JSON結構描述作為表單模型來建立調適型表單。 此JSON結構描述代表組織中後端系統產生或使用資料的結構。 您使用的JSON結構描述應符合 [v4規格](https://json-schema.org/draft-04/schema).
+Adobe Experience Manager表單支援使用現有JSON結構描述作為表單模型來建立調適型表單。 此JSON結構描述代表組織中後端系統產生或使用資料的結構。 您使用的JSON結構描述應符合[v4規格](https://json-schema.org/draft-04/schema)。
 
 使用JSON結構描述的主要功能包括：
 
 * JSON的結構在最適化表單的製作模式中，會以樹狀結構顯示在「內容尋找器」標籤中。 您可以從JSON階層拖曳元素並新增至最適化表單。
 * 您可以使用與關聯結構描述相容的JSON預先填入表單。
 * 在提交時，使用者輸入的資料會以JSON格式提交，且符合相關聯的結構描述。
-* 您也可以根據JSON結構描述建立表單，依據的規格 [2012-20版本](https://json-schema.org/draft/2020-12/release-notes).
+* 您也可以根據[2012-20 version](https://json-schema.org/draft/2020-12/release-notes)的規格，以JSON結構描述為基礎建立表單。
 
 JSON結構描述包含簡單和複雜的元素型別。 元素具有將規則新增至元素的屬性。 將這些元素和屬性拖曳至最適化表單時，會自動對應至對應的最適化表單元件。
 
@@ -98,11 +98,11 @@ JSON元素與最適化表單元件的對應如下：
   </tr>
   <tr>
    <td>number屬性<br /> </td>
-   <td>子型別設定為浮點數的數值欄位<br /> </td>
+   <td>子型別設定為float<br />的數值欄位 </td>
   </tr>
   <tr>
-   <td>integer屬性<br /> </td>
-   <td>子型別設為整數的數值欄位<br /> </td>
+   <td>整數屬性<br /> </td>
+   <td>子型別設定為整數<br />的數值欄位 </td>
   </tr>
   <tr>
    <td>布林值屬性<br /> </td>
@@ -114,7 +114,7 @@ JSON元素與最適化表單元件的對應如下：
   </tr>
   <tr>
    <td>陣列屬性</td>
-   <td>可重複面板，最小值和最大值分別等於minItems和maxItems。 僅支援同質陣列。 因此專案限制必須是物件，而不是陣列。<br /> </td>
+   <td>可重複面板，最小值和最大值分別等於minItems和maxItems。 僅支援同質陣列。 所以專案限制必須是物件，而不是陣列。<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -123,17 +123,17 @@ JSON元素與最適化表單元件的對應如下：
 
 最適化表單會使用JSON結構描述中可用的資訊來對應每個產生的欄位。 尤其是：
 
-* 此 `title` 屬性可做為最適化表單元件的標籤。
-* 此 `description` 屬性會設定為最適化表單元件的完整說明。
-* 此 `default` 屬性會作為最適化表單欄位的初始值。
-* 此 `maxLength` 屬性設為 `maxlength` 文字欄位元件的屬性。
-* 此 `minimum`， `maximum`， `exclusiveMinimum`、和 `exclusiveMaximum` 屬性用於數值方塊元件。
-* 若要支援範圍 `DatePicker component` 其他JSON結構屬性 `minDate` 和 `maxDate` 提供……
-* 此 `minItems` 和 `maxItems` 屬性是用來限制可從面板元件新增或移除的專案/欄位數量。
-* 此 `readOnly` 屬性會設定 `readonly` 最適化表單元件的屬性。
-* 此 `required` 屬性會將調適型表單欄位標籤為必填欄位，但在面板（其中型別為物件）中，最終提交的JSON資料中會有欄位，其空值會對應至該物件。
-* 此 `pattern` 屬性已設定為最適化表單中的驗證模式（規則運算式）。
-* JSON結構描述檔案的副檔名必須保留為.schema.json。 例如， &lt;filename>.schema.json。
+* `title`屬性做為最適化表單元件的標籤。
+* `description`屬性已設定為最適化表單元件的完整說明。
+* `default`屬性做為最適化表單欄位的初始值。
+* `maxLength`屬性設定為文字欄位元件的`maxlength`屬性。
+* `minimum`、`maximum`、`exclusiveMinimum`和`exclusiveMaximum`屬性用於數值方塊元件。
+* 若要支援`DatePicker component`範圍，已提供其他JSON結構描述屬性`minDate`和`maxDate`。
+* `minItems`和`maxItems`屬性是用來限制可從面板元件新增或移除的專案/欄位數目。
+* `readOnly`屬性設定最適化表單元件的`readonly`屬性。
+* `required`屬性將最適化表單欄位標籤為必要，但在面板（其中型別為物件）中，最終提交的JSON資料具有的欄位具有與該物件對應的空白值。
+* `pattern`屬性設定為最適化表單中的驗證模式（規則運算式）。
+* JSON結構描述檔案的副檔名必須保留為.schema.json。 例如，&lt;filename>.schema.json。
 
 ## 範例JSON結構描述 {#sample-json-schema}
 
@@ -451,12 +451,12 @@ JSON元素與最適化表單元件的對應如下：
 >[!ENDTABS]
 
 從JSON結構描述V4到2020-12版本規範的主要變更為：
-* ID宣告為 `$id`
-* 定義宣告為 `$defs`
+* ID宣告為`$id`
+* 定義宣告為`$defs`
 
 ### 可重複使用的結構描述定義 {#reusable-schema-definitions}
 
-定義索引鍵是用來識別可重複使用的結構描述。 可重複使用的結構描述定義用於建立片段。 <!-- It is similar to identifying complex types in XSD.--> 具有定義的JSON結構描述範例如下：
+定義索引鍵是用來識別可重複使用的結構描述。 可重複使用的結構描述定義用於建立片段。 <!-- It is similar to identifying complex types in XSD.-->具有定義的範例JSON結構描述如下：
 
 ```json
 {
@@ -487,7 +487,7 @@ JSON元素與最適化表單元件的對應如下：
 
 ## 在JSON結構描述定義中預先設定欄位 {#pre-configuring-fields-in-json-schema-definition}
 
-您可以使用 **aem：afProperties** 屬性來預先設定JSON結構描述欄位，以對應至自訂最適化表單元件。 範例如下：
+您可以使用&#x200B;**aem：afProperties**&#x200B;屬性來預先設定JSON結構描述欄位，以對應至自訂最適化表單元件。 範例如下：
 
 ```json
 {
@@ -881,13 +881,13 @@ Here is the sample JSON code for previously mentioned examples.
 
 若要讓所有JSON結構描述型最適化Forms在表單提交時產生結構描述相容的資料，請遵循下列步驟：
 
-1. 前往Experience Manager網頁主控台，位於 `https://server:host/system/console/configMgr`.
-1. 尋找 **[!UICONTROL 最適化表單和互動式通訊Web通道設定]**.
+1. 前往`https://server:host/system/console/configMgr`的Experience ManagerWeb主控台。
+1. 找到&#x200B;**[!UICONTROL 最適化表單與互動式通訊Web通道組態]**。
 1. 選取以在編輯模式中開啟設定。
-1. 選取 **[!UICONTROL 產生符合結構描述的資料]** 核取方塊。
+1. 選取&#x200B;**[!UICONTROL 產生符合結構描述的資料]**&#x200B;核取方塊。
 1. 儲存設定。
 
-![最適化表單和互動式通訊Web頻道設定](/help/forms/assets/af-ic-web-channel-configuration.png)
+![最適化表單與互動式通訊Web通道組態](/help/forms/assets/af-ic-web-channel-configuration.png)
 
 
 ## 不支援的建構  {#non-supported-constructs}
@@ -902,20 +902,20 @@ Here is the sample JSON code for previously mentioned examples.
 
 ## 常見問題 {#frequently-asked-questions}
 
-**我為何無法為可重複的子表單（minOccours或maxOccurs值大於1）拖曳子表單的個別元素（由任何複雜型別產生的結構）？**
+**為什麼我無法為可重複的子表單（minOccours或maxOccurs值大於1）拖曳子表單的個別元素（由任何複雜型別產生的結構）？**
 
 在可重複的子表單中，您必須使用完整的子表單。 如果您只想使用選擇性欄位，請使用整個結構並刪除不需要的結構。
 
-**我在內容尋找器中有個長而複雜的結構。 如何尋找特定元素？**
+**我在內容尋找器中有長而複雜的結構。 如何找到特定專案？**
 
 您有兩個選項：
 
 * 捲動瀏覽樹狀結構
 * 使用搜尋方塊來尋找元素
 
-**JSON結構描述檔案的副檔名應該為何？**
+**什麼應該是JSON結構描述檔案的副檔名？**
 
-JSON結構描述檔案的副檔名必須是.schema.json。 例如， &lt;filename>.schema.json。
+JSON結構描述檔案的副檔名必須是.schema.json。 例如，&lt;filename>.schema.json。
 
 ## 另請參閱 {#see-also}
 

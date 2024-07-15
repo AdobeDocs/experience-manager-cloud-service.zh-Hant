@@ -13,9 +13,9 @@ ht-degree: 2%
 
 # REST API {#rest-apis}
 
-AEM Screens提供簡單的RESTful API，其會遵循 [警笛](https://github.com/kevinswiber/siren) 規格。 它可讓您導覽內容結構並向環境中的裝置傳送命令。
+AEM Screens提供遵循[Siren](https://github.com/kevinswiber/siren)規格的簡單RESTful API。 它可讓您導覽內容結構並向環境中的裝置傳送命令。
 
-API的存取位置為 [*http://localhost:4502/api/screens.json*](http://localhost:4502/api/screens.json).
+API可在&#x200B;[*http://localhost:4502/api/screens.json*](http://localhost:4502/api/screens.json)存取。
 
 ## 導覽內容結構 {#navigating-content-structure}
 
@@ -99,7 +99,7 @@ Host: http://localhost:4502
 
 API呼叫傳回的JSON可包含資源上可用的動作清單。
 
-例如，畫面會列出 *broadcast命令* 允許將命令傳送至指派給該顯示的所有裝置的動作。
+例如，顯示器會列出&#x200B;*broadcast-command*&#x200B;動作，允許將命令傳送給指派給該顯示器的所有裝置。
 
 ```xml
 GET /api/screens/content/screens/we-retail/locations/demo/flagship/single.json HTTP/1.1

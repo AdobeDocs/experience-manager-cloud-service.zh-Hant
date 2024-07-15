@@ -1,6 +1,6 @@
 ---
-title: AEMas a Cloud Service版本2024.05.0中移轉工具的發行說明
-description: AEMas a Cloud Service版本2024.05.0中移轉工具的發行說明
+title: AEM as a Cloud Service 2024.05.0版中移轉工具的發行說明
+description: AEM as a Cloud Service 2024.05.0版中移轉工具的發行說明
 feature: Release Information
 exl-id: 52709511-eab2-47a7-8bea-1b707cd568a1
 role: Admin
@@ -11,9 +11,9 @@ ht-degree: 7%
 
 ---
 
-# AEMas a Cloud Service版本2024.05.0中移轉工具的發行說明 {#release-notes}
+# AEM as a Cloud Service 2024.05.0版中移轉工具的發行說明 {#release-notes}
 
-本頁面總覽AEMas a Cloud Service2024.05.0中移轉工具發行說明。
+本頁面總覽AEM as a Cloud Service 2024.05.0中移轉工具的發行說明。
 
 ## 最佳做法分析工具 {#bpa-release}
 
@@ -23,12 +23,12 @@ Best Practices Analyzer v2.1.48的發行日期為2024年5月9日。
 
 ### 新增功能 {#what-is-new-bpa}
 
-* Best Practices Analyzer (BPA)現在支援將BPA產生的報告直接自動上傳到Cloud Acceleration Manager (CAM)。 使用者不再需要手動下載報告並將其上傳到CAM。 瞭解更多 [此處](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer)
+* Best Practices Analyzer (BPA)現在支援將BPA產生的報告直接自動上傳到Cloud Acceleration Manager (CAM)。 使用者不再需要手動下載報告並將其上傳到CAM。 在[此處](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer)瞭解更多資訊
 
 ## Cloud Acceleration Manager {#cam-release}
 
 ### 新增功能 {#what-is-new-cam}
 
-* Cloud Acceleration Manager (CAM)現在支援將BPA產生的報告直接自動上傳到CAM。 瞭解更多 [此處](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-readiness-phase#best-practices-analysis)
+* Cloud Acceleration Manager (CAM)現在支援將BPA產生的報表直接自動上傳至CAM。 在[此處](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-readiness-phase#best-practices-analysis)瞭解更多資訊
 
-* Cloud Acceleration Manager現在會根據節點數、資料存放區大小等因素估計擷取可能需要的時長。 瞭解更多 [此處](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content)
+* Cloud Acceleration Manager現在會根據節點數、資料存放區大小等因素，提供擷取可能需要多久的預估值。 在[此處](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content)瞭解更多資訊

@@ -25,40 +25,40 @@ ht-degree: 19%
 請依照下列步驟，從「內容轉移工具」中提取您的移轉集：
 
 >[!NOTE]
->如果使用Amazon S3、Azure資料存放區或檔案資料存放區作為資料存放區型別，您可以執行選用的預先複製步驟以提高擷取階段的速度。 預先複製步驟在第一次完整擷取和擷取時最有效。 另請參閱 [處理大型內容存放庫](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md) 以取得更多詳細資料。
+>如果使用Amazon S3、Azure資料存放區或檔案資料存放區作為資料存放區型別，您可以執行選用的預先複製步驟以提高擷取階段的速度。 預先複製步驟在第一次完整擷取和擷取時最有效。 如需詳細資訊，請參閱[處理大型內容存放庫](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md)。
 
-1. 從以下位置選取移轉集 **內容轉移** 精靈並按一下 **Extract** 以開始擷取。
+1. 從&#x200B;**內容轉移**&#x200B;精靈中選取移轉集，然後按一下&#x200B;**擷取**&#x200B;開始擷取。
 
    ![影像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam12.png)
 
    >[!TIP]
-   >現在，內嵌可排程在擷取成功後立即自動開始。 另請參閱 [將內容內嵌至目標](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md) 以取得詳細資訊。
+   >現在，內嵌可排程在擷取成功後立即自動開始。 如需詳細資訊，請參閱[將內容擷取至Target](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)。
 
    >[!IMPORTANT]
    >
-   >請確定擷取金鑰有效且不在到期日附近。 如果快到期了，您可以選取移轉集並按一下「屬性」，以續約擷取金鑰。 按一下 **續約**. 這會將您帶往Cloud Acceleration Manager，您可以在其中按一下 **複製擷取金鑰**. 每次按一下 **複製擷取金鑰**，會產生新的擷取金鑰，從建立之日起有效14天。
+   >請確定擷取金鑰有效且不在到期日附近。 如果快到期了，您可以選取移轉集並按一下「屬性」，以續約擷取金鑰。 按一下&#x200B;**續約**。 這會將您帶往Cloud Acceleration Manager，您可以在其中按一下&#x200B;**複製擷取金鑰**。 每次按一下&#x200B;**複製擷取金鑰**時，就會產生新的擷取金鑰，從建立時起的14天有效。
    >![影像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam13.png)
 
-1. 這會顯示擷取對話方塊。 按一下 **Extract** 以開始提取階段。
+1. 這會顯示擷取對話方塊。 按一下&#x200B;**擷取**&#x200B;以開始擷取階段。
 
    ![影像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam14b.png)
 
    >[!NOTE]
-   >您可以選擇在提取階段期間覆寫預備容器。 如果 **覆寫暫存容器** 功能已停用，如果內容路徑或包含版本設定未變更，此功能可為後續移轉加速擷取。 不過，如果內容路徑或包含版本設定已變更，則 **覆寫暫存容器** 應該啟用。
+   >您可以選擇在提取階段期間覆寫預備容器。 如果&#x200B;**覆寫暫存容器**&#x200B;已停用，它可以加快後續移轉的擷取速度，因為內容路徑或包含版本設定尚未變更。 不過，如果內容路徑或包含版本設定已變更，則應啟用&#x200B;**覆寫暫存容器**。
 
-1. 此 **摘取** 欄位現在顯示 **執行中** 狀態，表示擷取正在進行中。
+1. **擷取**&#x200B;欄位現在會顯示&#x200B;**正在執行**&#x200B;狀態，表示擷取正在進行中。
 
    ![影像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam15.png)
 
-   您可以按一下 **檢視進度** 以取得進行中擷取的精細檢視。
+   您可以按一下&#x200B;**檢視進度**&#x200B;以取得進行中擷取的精細檢視。
 
    ![影像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam16.png)
 
-   您也可以造訪「內容轉移」頁面，從Cloud Acceleration Manager監視擷取階段進度，並按一下 **...** > **檢視詳細資料**.
+   您也可以造訪「內容轉移」頁面，以從Cloud Acceleration Manager監視擷取階段進度，並按一下&#x200B;**...** > **檢視詳細資料**&#x200B;以更詳細地檢視該頁面。
 
    ![影像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam17.png)
 
-1. 擷取完成後，請檢閱其他欄，例如 **來源** 和 **路徑** 以瞭解您填入的移轉集詳細資訊。 按一下 **...** > **檢視詳細資料** 以檢視詳細資訊，包括擷取每個步驟的持續時間。 在擷取期間檢視此對話方塊，以便您檢視步驟的進度。
+1. 擷取完成時，請檢閱其他資料行，例如&#x200B;**Source**&#x200B;和&#x200B;**路徑**，以取得您填入的移轉集詳細資訊。 按一下&#x200B;**...** > **檢視詳細資料**&#x200B;以檢視詳細資料，包括擷取每個步驟的持續時間。 在擷取期間檢視此對話方塊，以便您檢視步驟的進度。
 
    ![影像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam18b.png)
 
@@ -75,11 +75,11 @@ ht-degree: 19%
 
 請遵循下列步驟：
 
-1. 導覽至 **內容轉移** 精靈並選取您要執行追加提取的移轉集。 按一下&#x200B;**提取**&#x200B;即可開始追加提取。
+1. 導覽至&#x200B;**內容轉移**&#x200B;精靈，並選取您要執行追加提取的移轉集。 按一下&#x200B;**提取**&#x200B;即可開始追加提取。
 
    ![影像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam19.png)
 
-1. 此 **移轉集擷取** 對話方塊隨即顯示。 按一下 **Extract**.
+1. **移轉集擷取**&#x200B;對話方塊隨即顯示。 按一下&#x200B;**擷取**。
 
    >[!IMPORTANT]
    >您必須停用&#x200B;**在提取期間覆寫預備容器**選項。
@@ -88,4 +88,4 @@ ht-degree: 19%
 
 ## 下一步 {#whats-next}
 
-您已在內容轉移工具中學習從來源擷取內容後，現在就可以開始學習內容轉移工具中的擷取程式了。 另請參閱 [將內容內嵌至目標](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md) 您可在此處瞭解如何從「內容轉移工具」擷取移轉集。
+您已在內容轉移工具中學習從Source擷取內容後，現在即可在內容轉移工具中學習擷取程式。 請參閱[將內容擷取至Target](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)，瞭解如何從「內容轉移工具」擷取移轉集。

@@ -23,7 +23,7 @@ ht-degree: 91%
 
 1. 在「**[我的程式](/help/implementing/cloud-manager/navigation.md#my-programs)**」控制台中，選取程式。
 
-1. 從 **概觀** 頁面，導覽至 **IP允許清單** 使用側邊導覽標籤來瀏覽頁面。
+1. 從&#x200B;**總覽**&#x200B;頁面，使用側邊導覽標籤導覽至&#x200B;**IP允許清單**&#x200B;頁面。
 
    ![IP 側面板中的允許清單選項](/help/implementing/cloud-manager/assets/ip-allow-list/ip-allow-list-create.png)
 

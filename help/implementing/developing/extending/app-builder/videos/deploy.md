@@ -1,5 +1,5 @@
 ---
-title: 部署應用程式建置器應用程式
+title: 部署App Builder應用程式
 description: 瞭解如何為Adobe Experience Manager (AEM)as a Cloud Service部署App Builder應用程式。
 version: Cloud Service
 feature: App Builder, Developing
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 ---
 
-# 部署應用程式建置器應用程式
+# 部署App Builder應用程式
 
 瞭解部署對App Builder有何意義，以及如何使用Adobe I/OCLI部署App Builder應用程式。
 

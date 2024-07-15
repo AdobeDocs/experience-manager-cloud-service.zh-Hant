@@ -27,7 +27,7 @@ AEM 提供一個工具框架，用於：
 * 定義規則，這些規則用於根據對象定義來解析已知使用者資訊。
 * 設定您的頁面以呈現已鎖定目標的個人化體驗；呈現適用於目前一般使用者的特定內容。
 
-以下概述介紹AEMas a Cloud Service中用於個人化的一些術語，以及建議採取的行動順序。
+以下概述介紹AEM as a Cloud Service中用於個人化的一些術語，以及建議採取的行動順序。
 
 ## 體驗 {#experience}
 
@@ -91,7 +91,7 @@ AEM 提供一個工具框架，用於：
 
 組成體驗的一組元件。
 
-[體驗片段](/help/sites-cloud/authoring/fragments/content-fragments.md#personalization-experience-fragment) 是由內容和資訊（樣式等）所組成，用來建立體驗；頁面製作時可直接使用這些內容和資訊。 它們可以被視為 AEM 頁面的子集。可讓內容作者重複使用跨管道的內容，包括 Sites 頁面和協力廠商系統。
+[體驗片段](/help/sites-cloud/authoring/fragments/content-fragments.md#personalization-experience-fragment)是由內容和資訊（樣式等）所組成，用來建立體驗；它們可以在頁面製作時直接使用。 它們可以被視為 AEM 頁面的子集。可讓內容作者重複使用跨管道的內容，包括 Sites 頁面和協力廠商系統。
 
 對於個人化範例，可以將標題、影像、描述和行動號召按鈕合併以形成預告片體驗。使用體驗片段是使用 Adobe Target 個人化的關鍵部分。
 

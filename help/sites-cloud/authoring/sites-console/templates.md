@@ -18,20 +18,20 @@ ht-degree: 9%
 
 使用范 **本編輯器**，建立和維護範本不再是開發人員專屬的工作。也可以涉及一種稱為模板作 **者的權**&#x200B;力用戶。開發人員仍需要設定環境、建立用戶端程式庫和建立要使用的元件，但是當這些基本功能準備就緒後，範本作者就可以彈性地建立和設定範本，而不需要開發專案。****
 
-此 **範本主控台** 可讓範本作者：
+**範本主控台**&#x200B;允許範本作者：
 
 * 建立新範本或複製現有範本。
 * 管理範本的生命週期。
 
-此 **範本編輯器** 可讓範本作者：
+**範本編輯器**&#x200B;允許範本作者：
 
 * 將元件新增至範本，並將其放置在回應式格線上。
 * 預先設定元件。
 * 定義在使用範本建立的頁面上可編輯哪些元件。
 
-本檔案說明如何 **範本作者** 可使用範本主控台和編輯器來建立和管理可編輯的範本。
+本檔案說明&#x200B;**範本作者**&#x200B;如何使用範本主控台和編輯器來建立和管理可編輯的範本。
 
-如需如何在技術層面使用可編輯範本的詳細資訊，請參閱開發人員檔案 [頁面範本](/help/implementing/developing/components/templates.md) 以取得詳細資訊。
+如需技術層面可編輯範本如何運作的詳細資訊，請參閱開發人員檔案[頁面範本](/help/implementing/developing/components/templates.md)以取得詳細資訊。
 
 >[!NOTE]
 >
@@ -41,23 +41,23 @@ ht-degree: 9%
 
 >[!NOTE]
 >
->管理員必須在中設定範本資料夾 **設定瀏覽器** 並套用適當的許可權，然後範本作者才能在該資料夾中建立範本。
+>管理員必須在&#x200B;**設定瀏覽器**&#x200B;中設定範本資料夾，並套用適當的許可權，範本作者才能在該資料夾中建立範本。
 
-開始之前，請務必考慮到建立範本需要共同作業。 因此， [角色](#roles) 會針對每項任務指定。 這不會影響您實際使用範本來建立頁面的方式，但會影響頁面與其範本的關聯方式。
+開始之前，請務必考慮到建立範本需要共同作業。 因此，每個工作都會顯示[角色](#roles)。 這不會影響您實際使用範本來建立頁面的方式，但會影響頁面與其範本的關聯方式。
 
 ### 角色 {#roles}
 
 使用「模板控制台」和「模 **板編輯器** 」建立新模板時 **** ，需要在以下角色之間協作：
 
 * **管理員**：
-   * 建立新的範本資料夾需要 `admin` 權利。
+   * 建立範本的新資料夾需要`admin`許可權。
    * 這類工作通常也可以由開發人員完成
 * **開發人員**：
    * 著重於技術/內部細節
    * 需要開發環境的經驗。
    * 為範本作者提供必要資訊。
 * **範本作者**：
-   * 此為群組成員的特定作者 `template-authors`
+   * 此為群組`template-authors`成員的特定作者
       * 這會配置所需的許可權和許可權。
    * 可以設定元件和其他高階詳細資訊的使用，這些需要：
       * 一些技術知識
@@ -72,62 +72,62 @@ ht-degree: 9%
 
 建立可編輯的範本時，您可以：
 
-* 使用 **範本** 主控台。 這可在以下位置取得： **一般** 的區段 **工具** 主控台。
-   * 或直接存取： `https://<host>:<port>/libs/wcm/core/content/sites/templates.html/conf`
-* 可以 [建立範本的資料夾](#creating-a-template-folder-admin) 如有需要
-* [建立新範本](#creating-a-new-template-template-author)，一開始會是空的
-* [定義其他屬性](#defining-template-properties-template-author) 範本（如有需要）
-* [編輯範本](#editing-templates-template-authors) 若要定義：
-   * [結構](#editing-a-template-structure-template-author)  — 使用範本建立的頁面上無法變更的預定義內容。
-   * [初始內容](#editing-a-template-initial-content-author)  — 可在使用範本建立的頁面上變更的預定義內容。
-   * [版面](#editing-a-template-layout-template-author)  — 適用於一系列裝置。
-   * [樣式](/help/sites-cloud/authoring/page-editor/style-system.md)  — 定義要與範本及其元件搭配使用的樣式。
-* [啟用範本](#enabling-a-template-template-author) 建立頁面時使用
-* [允許範本](#allowing-a-template-author) 適用於您的網站所需頁面或分支
-* [發佈範本](#publishing-a-template-template-author) 以使其可在發佈環境中使用
+* 使用&#x200B;**範本**&#x200B;主控台。 這可在&#x200B;**工具**&#x200B;主控台的&#x200B;**一般**&#x200B;區段中取得。
+   * 或直接在： `https://<host>:<port>/libs/wcm/core/content/sites/templates.html/conf`
+* 如有必要，可以[為範本](#creating-a-template-folder-admin)建立資料夾
+* [建立新的範本](#creating-a-new-template-template-author)，一開始會是空的
+* [必要時為範本定義其他屬性](#defining-template-properties-template-author)
+* [編輯範本](#editing-templates-template-authors)以定義：
+   * [結構](#editing-a-template-structure-template-author) — 無法在使用範本建立的頁面上變更的預先定義內容。
+   * [初始內容](#editing-a-template-initial-content-author) — 可在使用範本建立的頁面上變更的預先定義內容。
+   * [配置](#editing-a-template-layout-template-author) — 適用於一系列裝置。
+   * [樣式](/help/sites-cloud/authoring/page-editor/style-system.md) — 定義要用於範本及其元件的樣式。
+* [啟用範本](#enabling-a-template-template-author)，以便在建立頁面時使用
+* [允許範本](#allowing-a-template-author)用於您的網站所需頁面或分支
+* [Publish範本](#publishing-a-template-template-author)，使其可在發佈環境中使用
 
 >[!NOTE]
 >
->此 **允許的範本** 通常會在最初設定您的網站時預先定義。
+>**允許的範本**&#x200B;通常會在最初設定您的網站時預先定義。
 
 >[!TIP]
 >
->切勿在範本中輸入任何必須國際化的資訊。 <!-- Never enter any information that must be [internationalized](/help/sites-developing/i18n.md) into a template.-->
+>切勿在範本中輸入任何必須國際化的資訊。<!-- Never enter any information that must be [internationalized](/help/sites-developing/i18n.md) into a template.-->
 >
->針對必須本地化的範本元素（例如頁首和頁尾），請使用 [核心元件的本地化功能。](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html)
+>對於必須本地化的範本元素（例如頁首和頁尾），請使用核心元件的[本地化功能。](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html)
 
 ### 建立範本資料夾 — 管理員 {#creating-a-template-folder-admin}
 
-您應該為專案建立範本資料夾，以儲存專案特定的範本。 這是一項管理員任務，詳見檔案 [頁面範本](/help/implementing/developing/components/templates.md#template-folders).
+您應該為專案建立範本資料夾，以儲存專案特定的範本。 這是一項管理員工作，並在檔案[頁面範本](/help/implementing/developing/components/templates.md#template-folders)中說明。
 
 ### 建立新範本 — 範本作者 {#creating-a-new-template-template-author}
 
-1. 開啟 **範本主控台** (方式 **工具>** **一般**)然後導覽至所需的資料夾。
+1. 開啟&#x200B;**範本主控台** （透過&#x200B;**工具>** **一般**），然後導覽至所需的資料夾。
 
    >[!NOTE]
    >
-   >在標準AEM執行個體中 **全域** 資料夾已存在於範本主控台中。 此檔案會保留預設範本，並在目前資料夾中找不到原則及/或範本型別時，做為遞補內容。
+   >在標準AEM執行個體中，**global**&#x200B;資料夾已存在於範本主控台中。 此檔案會保留預設範本，並在目前資料夾中找不到原則及/或範本型別時，做為遞補內容。
    >
-   >建議最佳實務使用 [為您的專案建立的範本資料夾](/help/implementing/developing/components/templates.md#template-folders).
+   >建議最好使用專案](/help/implementing/developing/components/templates.md#template-folders)所建立的[範本資料夾。
 
-1. 選取 **建立**，後接 **建立範本** 以開啟精靈。
+1. 選取&#x200B;**建立**，接著選取&#x200B;**建立範本**&#x200B;以開啟精靈。
 
-1. 選取 **範本型別**，然後選取 **下一個**.
+1. 選取&#x200B;**範本型別**，然後選取&#x200B;**下一步**。
 
    >[!NOTE]
    >
-   >範本型別是預先定義的範本配置，可視為範本的範本。 這些是由開發人員或系統管理員預先定義的。 如需詳細資訊，請參閱開發人員檔案 [頁面範本](/help/implementing/developing/components/templates.md#template-type).—>
+   >範本型別是預先定義的範本配置，可視為範本的範本。 這些是由開發人員或系統管理員預先定義的。 如需詳細資訊，請參閱開發人員檔案[頁面範本](/help/implementing/developing/components/templates.md#template-type)。—>
 
-1. 完成 **範本詳細資訊**：
+1. 完成&#x200B;**範本詳細資料**：
 
    * **範本名稱**
    * **說明**
 
-1. 選擇 **建立**。隨即顯示確認訊息，請選取 **開啟** 以開始編輯範本或 **完成** 以返回範本主控台。
+1. 選擇 **建立**。顯示確認訊息，選取&#x200B;**開啟**&#x200B;以開始編輯範本，或選取&#x200B;**完成**&#x200B;以返回範本主控台。
 
    >[!NOTE]
    >
-   >建立新範本時，會將其標籤為 **草稿** 在主控台中，這表示頁面作者還不能使用它。
+   >建立新範本時，會在主控台中將其標示為&#x200B;**草稿**，這表示頁面作者還不能使用此範本。
 
 >[!NOTE]
 >
@@ -140,17 +140,17 @@ ht-degree: 9%
 範本可以有下列屬性：
 
 * 影像
-   * 要當做影像使用 [範本的縮圖](#template-thumbnail-image) 以輔助選取，例如「建立頁面」精靈中的選取。
+   * 要做為範本](#template-thumbnail-image)的[縮圖以輔助選取的影像，例如「建立頁面」精靈中的選取。
       * 可以上傳
       * 可根據範本內容產生
 * 標題
-   * 用於識別範本的標題，例如 **建立頁面** 精靈。
+   * 用於識別範本的標題，例如&#x200B;**建立頁面**&#x200B;精靈中的標題。
 * 說明
-   * 選用的說明，可提供範本及其用途的詳細資訊，例如 **建立頁面** 精靈。
+   * 選用的說明，可提供範本及其使用方式的詳細資訊，例如&#x200B;**建立頁面**&#x200B;精靈中顯示的說明。
 
 若要檢視和/或編輯屬性：
 
-1. 在 **範本主控台**，選取範本。
+1. 在&#x200B;**範本主控台**&#x200B;中，選取範本。
 1. 從工 **具欄中選擇** 「查看屬性」(View Properties)或快速選項以開啟對話框。
 1. 您現在可以檢視或編輯範本屬性。
 
@@ -164,30 +164,30 @@ ht-degree: 9%
 
 1. 編輯範本屬性。
 1. 選擇您要上傳縮圖，還是從範本內容產生縮圖。
-   * 如果要上傳縮圖，請選取 **上傳影像**
-   * 如果您要產生縮圖，請選取 **產生預覽**
+   * 若要上傳縮圖，請選取&#x200B;**上傳影像**
+   * 如果您要產生縮圖，請選取&#x200B;**產生預覽**
 1. 對於這兩種方法，都會顯示縮圖的預覽。
-   * 如果不滿意，請選取 **清除** 上傳另一個影像或重新產生縮圖。
-1. 如果您對縮圖感到滿意，請選取 **儲存並關閉**.
+   * 如果不滿意，請選取&#x200B;**清除**&#x200B;以上傳其他影像或重新產生縮圖。
+1. 如果您對縮圖感到滿意，請選取&#x200B;**儲存並關閉**。
 
 ### 啟用和允許範本 — 範本作者 {#enabling-and-allowing-a-template-template-author}
 
 若要在建立頁面時使用範本，您需要：
 
-* [啟用範本](#enabling-a-template-template-author) 以使其可在建立頁面時使用。
-* [允許範本](#allowing-a-template-author) 以指定可使用範本的內容分支。
+* [啟用範本](#enabling-a-template-template-author)，使其可在建立頁面時使用。
+* [允許範本](#allowing-a-template-author)指定可以使用範本的內容分支。
 
 #### 啟用範本 — 範本作者 {#enabling-a-template-template-author}
 
-您可啟用或停用範本，使其可在以下位置使用或無法使用： **建立頁面** 精靈。
+可以啟用或停用範本，使其在&#x200B;**建立頁面**&#x200B;精靈中可用或無法使用。
 
 >[!CAUTION]
 >
 >啟用範本後，當範本作者開始進一步更新範本時，會顯示警告。 這是為了通知使用者可能會參考範本，所以任何變更都可能影響參考範本的頁面。
 
-1. 在 **範本主控台**，選取範本。
-1. 選取 **啟用** 或 **停用** ，然後在確認對話方塊中再次開啟。
-1. 您現在可以在以下情況下使用範本： [建立頁面](/help/sites-cloud/authoring/sites-console/creating-pages.md#creating-a-new-page)，但您可能希望 [編輯範本](#editing-templates-template-authors) 根據您的需求。
+1. 在&#x200B;**範本主控台**&#x200B;中，選取範本。
+1. 從工具列選取&#x200B;**啟用**&#x200B;或&#x200B;**停用**，然後在確認對話方塊中再次選取。
+1. 您現在可以在[建立頁面](/help/sites-cloud/authoring/sites-console/creating-pages.md#creating-a-new-page)時使用範本，不過您可能想要根據自己的需求[編輯範本](#editing-templates-template-authors)。
 
 >[!NOTE]
 >
@@ -197,8 +197,8 @@ ht-degree: 9%
 
 範本可以供某些頁面分支使用或無法使用。
 
-1. 開啟 [頁面屬性](/help/sites-cloud/authoring/sites-console/page-properties.md) 用於您希望範本可用的分支根頁面。
-1. 開啟 **進階** 標籤。
+1. 針對您希望範本可用的分支根頁面，開啟[頁面屬性](/help/sites-cloud/authoring/sites-console/page-properties.md)。
+1. 開啟&#x200B;**進階**&#x200B;標籤。
 1. 在「 **範本設定** 」下 **，使用「新增」欄位** ，指定範本的路徑。
 
    路徑可以是明確的或使用模式。 例如：
@@ -209,12 +209,12 @@ ht-degree: 9%
 
    >[!NOTE]
    >
-   >如果 **允許的範本** 清單留空，然後樹狀結構會遞增，直到找到值/清單為止。
+   >如果&#x200B;**允許的範本**&#x200B;清單為空白，則樹狀結構會遞增，直到找到值/清單為止。
    >
    >
-   >另請參閱 [範本可用性](/help/implementing/developing/components/templates.md#template-availability)  — 允許範本的原則保持不變。
+   >請參閱[範本可用性](/help/implementing/developing/components/templates.md#template-availability) — 允許範本的原則保持不變。
 
-1. 按一下 **儲存** 以儲存對頁面屬性所做的變更。
+1. 按一下&#x200B;**儲存**&#x200B;以儲存頁面屬性的變更。
 
 >[!NOTE]
 >
@@ -224,16 +224,16 @@ ht-degree: 9%
 
 由於範本在轉譯頁面時為參考狀態，因此必須發佈已完整設定的範本，才能用於發佈環境。
 
-1. 在 **範本主控台**，選取範本。
-1. 選取 **發佈** 以開啟精靈。
-1. 選取 **內容原則** 將一同發佈。
-1. 選取 **發佈** 工具列以完成動作。
+1. 在&#x200B;**範本主控台**&#x200B;中，選取範本。
+1. 從工具列選取&#x200B;**Publish**&#x200B;以開啟精靈。
+1. 選取要同時發佈的&#x200B;**內容原則**。
+1. 從工具列選取&#x200B;**Publish**&#x200B;以完成動作。
 
 ## 編輯範本 — 範本作者 {#editing-templates-template-authors}
 
 建立或編輯範本時，您可以定義多個方面。 編輯範本類似於頁面製作。
 
-此 **模式** 工具列中的選取器可讓您選取並編輯範本的適當方面：
+工具列中的&#x200B;**模式**&#x200B;選取器可讓您選取並編輯範本的適當外觀：
 
 * [結構](#editing-a-template-structure-template-author)
 * [初始內容](#editing-a-template-initial-content-author)
@@ -241,7 +241,7 @@ ht-degree: 9%
 
 ![範本編輯器模式選擇器](/help/sites-cloud/authoring/assets/templates-mode.png)
 
-當 **頁面原則** 上的選項 **頁面資訊** 功能表可讓您 [選取所需的頁面原則](#page-policies)：
+雖然&#x200B;**頁面資訊**&#x200B;功能表上的&#x200B;**頁面原則**&#x200B;選項可讓您[選取必要的頁面原則](#page-policies)：
 
 ![範本編輯器頁面資訊](/help/sites-cloud/authoring/assets/templates-page-information.png)
 
@@ -255,9 +255,9 @@ ht-degree: 9%
 
 #### 結構 {#template-structure}
 
-新增至的元件 [結構](#editing-a-template-structure-template-author) 頁面作者無法從結果頁面中移動/移除。 如果您希望頁面作者能夠在產生的頁面中新增和移除元件，則需將段落系統新增至範本。
+頁面作者無法從結果頁面中移動/移除新增至[結構](#editing-a-template-structure-template-author)的元件。 如果您希望頁面作者能夠在產生的頁面中新增和移除元件，則需將段落系統新增至範本。
 
-鎖定元件後，您可以新增頁面作者無法編輯的內容。 您可以解鎖元件，讓您 [初始內容](#editing-a-template-initial-content-author).
+鎖定元件後，您可以新增頁面作者無法編輯的內容。 您可以解除鎖定元件，以定義[初始內容](#editing-a-template-initial-content-author)。
 
 >[!NOTE]
 >
@@ -265,11 +265,11 @@ ht-degree: 9%
 
 #### 初始內容 {#template-initial-content}
 
-解鎖元件後，您可以定義 [初始內容](#editing-a-template-initial-content-author) 這些頁面會複製到使用範本建立的結果頁面上。 您可以在產生的頁面上編輯這些已解鎖的元件。
+解鎖元件後，您可以定義複製到結果頁面（使用範本建立）的[初始內容](#editing-a-template-initial-content-author)。 您可以在產生的頁面上編輯這些已解鎖的元件。
 
 >[!NOTE]
 >
->在 **初始內容** 模式，以及在結果頁面上，可以刪除任何具有可存取父項的已解鎖元件（即配置容器內的元件）。
+>在&#x200B;**初始內容**&#x200B;模式和結果頁面中，可以刪除任何具有可存取父項的已解鎖元件（亦即配置容器內的元件）。
 
 #### 版面配置 {#template-layout}
 
@@ -277,34 +277,34 @@ ht-degree: 9%
 
 #### 頁面原則 {#template-page-policies}
 
-[頁面原則](#page-policies) 可以將預先定義的頁面原則連線至頁面。 這些頁面原則會定義各種設計配置。
+[頁面原則](#page-policies)可以將預先定義的頁面原則連線至頁面。 這些頁面原則會定義各種設計配置。
 
 #### 樣式 {#template-styles}
 
 樣式系統可讓範本作者在元件的內容原則中定義樣式類別，讓內容作者在編輯頁面上的元件時能夠選取這些類別。 這些樣式可作為元件的替代視覺變體，使其更靈活。
 
-請參閱 [樣式系統檔案](/help/sites-cloud/authoring/page-editor/style-system.md) 以取得詳細資訊。
+如需詳細資訊，請參閱[樣式系統檔案](/help/sites-cloud/authoring/page-editor/style-system.md)。
 
 ### 編輯範本 — 結構 — 範本作者 {#editing-a-template-structure-template-author}
 
-在 **結構** 模式您可以定義範本的元件和內容，並為範本及其元件定義原則。
+在&#x200B;**結構**&#x200B;模式中，您可為範本定義元件和內容，並為範本及其元件定義原則。
 
 * 範本結構中定義的元件無法在產生的頁面上移動，也無法從任何產生的頁面中刪除。
 * 如果您希望頁面作者能夠新增和移除元件，請新增段落系統至範本。
-* 元件可解除鎖定並重新鎖定，以允許您定義 [初始內容](#editing-a-template-initial-content-author).
+* 您可以解除鎖定元件，然後再將其鎖定，讓您定義[初始內容](#editing-a-template-initial-content-author)。
 * 元件和頁面的設計原則已定義。
 
 ![範本編輯器頁面結構](/help/sites-cloud/authoring/assets/templates-page-structure.png)
 
-您可以在中執行數個動作 **結構** 範本編輯器的模式和數個功能可協助您：
+您可以在範本編輯器的&#x200B;**結構**&#x200B;模式中執行數個動作，以及數個功能可協助您：
 
 #### 新增元件 {#add-components}
 
 將元件新增至範本的機制有幾種：
 
-* 從 **元件** 側面板中的瀏覽器。
+* 從側面板中的&#x200B;**元件**&#x200B;瀏覽器。
 * 使用範本上 **元件工具列上的「插入元件** 」(Insert Component **)選項或「拖曳元件至此** 」(Drag components here)方塊。
-* 透過拖曳資產(從 **資產** （例如側面板中的瀏覽器）直接在範本上原地產生適當的元件。
+* 將資產(從側面板中的&#x200B;**Assets**&#x200B;瀏覽器)直接拖曳到範本上，就地產生適當的元件。
 
 新增後，每個元件都會標示：
 
@@ -322,13 +322,13 @@ ht-degree: 9%
 
 >[!NOTE]
 >
->將元件和資產新增至範本時，雖然不盡相同，但與類似動作有許多相似之處， [頁面製作。](/help/sites-cloud/authoring/page-editor/edit-content.md)
+>將元件和資產新增至範本時，雖然並不完全相同，但在[頁面編寫時，與類似的動作有許多相似之處。](/help/sites-cloud/authoring/page-editor/edit-content.md)
 
 #### 元件動作 {#component-actions}
 
 將元件新增至範本後，請對元件執行動作。 每個個別例項都有可讓您存取可用動作的工具列，工具列視元件型別而定。
 
-![範本元件的動作工具列](/help/sites-cloud/authoring/assets/templates-component-actions.png)
+範本元件的![動作工具列](/help/sites-cloud/authoring/assets/templates-component-actions.png)
 
 也可以取決於所採取的動作，例如當原則已與元件相關聯時，則設計設定圖示會變為可用。
 
@@ -338,7 +338,7 @@ ht-degree: 9%
 
 #### 指示結構的邊框 {#border-to-indicate-structure}
 
-使用時 **結構** 模式橘色邊框表示目前選取的元件。 虛線也表示父元件。
+在&#x200B;**結構**&#x200B;模式下工作時，橘色邊框表示目前選取的元件。 虛線也表示父元件。
 
 #### 原則與屬性（一般） {#policy-and-properties-general}
 
@@ -354,8 +354,8 @@ ht-degree: 9%
 
 設定視窗分為兩個部分。
 
-* 在對話方塊的左側，在 **原則**，您可以選取現有原則或選取現有原則。
-* 對話方塊右側下方的 **屬性**&#x200B;時，您可以設定元件型別的特定屬性。
+* 在對話方塊左側的&#x200B;**原則**&#x200B;下，您可以選取現有原則或選取現有原則。
+* 在對話方塊右側的&#x200B;**屬性**&#x200B;下，您可以設定元件型別的特定屬性。
 
 可用的屬性取決於所選的元件。 例如，對於文字元件，屬性會定義複製和貼上選項、格式選項和段落樣式等選項。
 
@@ -363,21 +363,21 @@ ht-degree: 9%
 
 內容（或設計）原則會定義元件的設計屬性。 例如，可用的元件或最小/最大尺寸。 這些適用於範本（以及使用範本建立的頁面）。
 
-在 **原則** 您可以透過下拉式清單，選取要套用至元件的現有原則。
+在&#x200B;**原則**&#x200B;下，您可以透過下拉式清單選取要套用至元件的現有原則。
 
 ![選取原則](/help/sites-cloud/authoring/assets/templates-policy-selector.png)
 
-選取「 」旁邊的「新增」按鈕，即可新增一項原則。 **選取原則** 下拉式清單。 在中提供新標題 **原則標題** 欄位。
+選取&#x200B;**選取原則**&#x200B;下拉式清單旁的新增按鈕，即可新增原則。 在&#x200B;**原則標題**&#x200B;欄位中提供新標題。
 
-![「新增原則」按鈕](/help/sites-cloud/authoring/assets/templates-add-policy-button.png)
+![新增原則按鈕](/help/sites-cloud/authoring/assets/templates-add-policy-button.png)
 
-中選取的現有原則 **選取原則** 下拉式清單可使用下拉式清單旁的複製按鈕來復製為新原則。 在中提供新標題 **原則標題** 欄位。 依預設，複製的原則標題為 **X的副本**，其中X是複製原則的標題。
+使用下拉式清單旁的複製按鈕，可以複製&#x200B;**選取原則**&#x200B;下拉式清單中選取的現有原則作為新原則。 在&#x200B;**原則標題**&#x200B;欄位中提供新標題。 依預設，複製的原則標題為&#x200B;**X**&#x200B;的副本，其中X是複製原則的標題。
 
-![「複製原則」按鈕](/help/sites-cloud/authoring/assets/templates-copy-policy-button.png)
+![複製原則按鈕](/help/sites-cloud/authoring/assets/templates-copy-policy-button.png)
 
-原則說明是選擇性的，可在 **原則說明** 欄位。
+在&#x200B;**原則說明**&#x200B;欄位中，原則的說明是選擇性的。
 
-在 **其他範本也使用選取的原則** 區段，您可以輕鬆檢視其他哪些範本使用在區段中選取的原則 **選取原則** 下拉式清單。
+在&#x200B;**其他範本也使用選取的原則**&#x200B;區段中，您可以輕鬆地檢視其他哪些範本使用&#x200B;**選取原則**&#x200B;下拉式清單中所選取的原則。
 
 ![使用現有原則](/help/sites-cloud/authoring/assets/templates-policy-use.png)
 
@@ -387,30 +387,30 @@ ht-degree: 9%
 
 ##### 屬性 {#properties}
 
-在 **屬性** 標題您可以定義元件的設定。 標題有兩個標籤：
+在&#x200B;**屬性**&#x200B;標題下，您可以定義元件的設定。 標題有兩個標籤：
 
 * 主要
 * 功能
 
 ###### 主要 {#main}
 
-在 **主要** 標籤中，會定義元件最重要的設定。
+在&#x200B;**主要**&#x200B;標籤上，元件最重要的設定已定義。
 
 例如，對於影像元件，可定義允許的寬度並啟用延遲載入。
 
-如果設定允許多項組態，請選取 **新增** 按鈕以新增其他設定。
+如果設定允許多個組態，請選取&#x200B;**新增**&#x200B;按鈕以新增另一個組態。
 
 ![新增按鈕](/help/sites-cloud/authoring/assets/templates-add-button.png)
 
-若要移除組態，請選取 **刪除** 按鈕位於設定的右側。
+若要移除設定，請選取設定右側的&#x200B;**刪除**&#x200B;按鈕。
 
-若要移除組態，請選取 **刪除** 按鈕。
+若要移除設定，請選取&#x200B;**刪除**&#x200B;按鈕。
 
 ![刪除按鈕](/help/sites-cloud/authoring/assets/templates-delete-button.png)
 
 ###### 功能 {#features}
 
-此 **功能** 索引標籤可讓您啟用或停用元件的其他功能。
+**功能**&#x200B;索引標籤可讓您啟用或停用元件的其他功能。
 
 例如，對於影像元件，您可以定義裁切比例、允許的影像定向以及是否允許上傳。
 
@@ -418,11 +418,11 @@ ht-degree: 9%
 
 >[!CAUTION]
 >
->在AEM中，裁切比例定義為 **高度/寬度**. 這和寬度/高度比的傳統定義不同，並且是由於舊有相容性的原因完成的。只要您定義「 」，頁面編寫使用者就不會察覺到任何差異 **名稱** 很清楚，因為這是UI中顯示的內容。
+>在AEM中，裁切比例定義為&#x200B;**高度/寬度**。 這和寬度/高度比的傳統定義不同，並且是由於舊有相容性的原因完成的。只要您清楚地定義&#x200B;**Name**，頁面編寫使用者就不會察覺到任何差異，因為這是UI中顯示的內容。
 
 >[!NOTE]
 >
->[實作RTF編輯器的元件的內容原則](/help/implementing/developing/extending/rich-text-editor.md) 只能為RTE透過其UI設定提供的選項定義。
+>[實作RTF編輯器的元件的內容原則](/help/implementing/developing/extending/rich-text-editor.md)只能為RTE透過其UI設定提供的選項定義。
 
 #### 原則和屬性（配置容器） {#policy-and-properties-layout-container}
 
@@ -438,11 +438,11 @@ ht-degree: 9%
 
 內容（或設計）原則會定義元件的設計屬性。 例如，可用的元件或最小/最大尺寸。 這些適用於範本（以及使用範本建立的頁面）。
 
-在 **原則** 您可以透過下拉式清單選取要套用至元件的現有原則。 其運作方式與視窗的一般使用方式相同。
+在&#x200B;**原則**&#x200B;下，您可以透過下拉式清單選取要套用至元件的現有原則。 其運作方式與視窗的一般使用方式相同。
 
 ##### 屬性 {#properties-layout}
 
-在 **屬性** 標題您可以選擇哪些元件可用於版面容器並定義其設定。 標題有三個索引標籤：
+在&#x200B;**屬性**&#x200B;標題下，您可以選擇哪些元件可用於配置容器並定義其設定。 標題有三個索引標籤：
 
 * 已允許的元件
 * 預設元件
@@ -450,7 +450,7 @@ ht-degree: 9%
 
 ###### 已允許的元件 {#allowed-components}
 
-在 **允許的元件** 索引標籤中，您可定義哪些元件適用於配置容器。
+在&#x200B;**允許的元件**&#x200B;索引標籤上，您定義哪些元件可用於配置容器。
 
 * 元件會依其元件群組分組，這些群組可展開和摺疊。
 * 勾選群組名稱即可選取整個群組，取消勾選可取消選取所有群組。
@@ -462,33 +462,33 @@ ht-degree: 9%
 
 ###### 預設元件 {#default-components}
 
-在 **預設元件** 索引標籤上，您可定義哪些元件會自動與指定媒體型別建立關聯，這樣當作者從資產瀏覽器拖曳資產時，AEM就能知道要與哪個元件建立關聯。 只有具備拖放區域的元件才適用於此類設定。
+在&#x200B;**預設元件**&#x200B;索引標籤上，您可以定義哪些元件會自動與指定的媒體型別建立關聯，這樣當作者從資產瀏覽器拖曳資產時，AEM就會知道要與哪個元件建立關聯。 只有具備拖放區域的元件才適用於此類設定。
 
-選取 **新增對應** 新增全新的元件和MIME型別對應。
+選取&#x200B;**新增對應**&#x200B;以新增全新的元件和MIME型別對應。
 
-在清單中選取元件，然後選取 **新增型別** 將其他MIME型別新增至已對應的元件。 按一下「 **刪除** 」圖示以移除MIME類型。
+在清單中選取元件，並選取&#x200B;**新增型別**，將其他MIME型別新增至已對應的元件。 按一下「 **刪除** 」圖示以移除MIME類型。
 
 ![預設元件索引標籤](/help/sites-cloud/authoring/assets/templates-default-components-tab.png)
 
 ###### 回應式設定 {#responsive-settings}
 
-在 **回應式設定** 索引標籤您可以配置配置配置容器之產生格線中的欄數。
+在&#x200B;**回應式設定**&#x200B;標籤上，您可以設定配置容器之產生格線中的欄數。
 
 #### 解鎖和鎖定元件 {#unlock-and-lock-components}
 
-您可以解鎖/鎖定元件，以定義內容是否可用於變更 **初始內容** 模式。
+您解鎖/鎖定元件，以定義內容是否可在&#x200B;**初始內容**&#x200B;模式中變更。
 
 解鎖元件後：
 
 * 開啟的掛鎖指示器會顯示在邊框中。
 * 元件工具列會據此調整。
-* 任何已輸入的內容將不會再顯示於 **結構** 模式。
-   * 已輸入的內容會視為初始內容，且只會顯示在 **初始內容** 模式。
+* 已輸入的任何內容將不再以&#x200B;**結構**&#x200B;模式顯示。
+   * 已輸入的內容會視為初始內容，而且僅可在&#x200B;**初始內容**&#x200B;模式中顯示。
 * 無法移動、剪下或刪除已解鎖元件的父件。
 
 ![鎖定元件按鈕](/help/sites-cloud/authoring/assets/templates-unlock-component.png)
 
-這包括解除鎖定容器元件，以便在初始內容模式或產生的頁 **面中新增其他元件** 。如果您在解除鎖定容器之前已將元件/內容新增至容器，則在中時，不再顯示這些元件/內容。 **結構** 模式，但顯示於 **初始內容** 模式。 在 **結構模式**，則只會顯示容器元件本身及其清單： **允許的元件**.
+這包括解除鎖定容器元件，以便在初始內容模式或產生的頁 **面中新增其他元件** 。如果您在解除鎖定容器之前已將元件/內容新增至容器，則這些元件/內容在&#x200B;**結構**&#x200B;模式中不再顯示，但會以&#x200B;**初始內容**&#x200B;模式顯示。 在&#x200B;**結構模式**&#x200B;中，只有容器元件本身會顯示其&#x200B;**允許的元件**&#x200B;清單。
 
 ![允許的元件](/help/sites-cloud/authoring/assets/templates-allowed-components.png)
 
@@ -496,23 +496,23 @@ ht-degree: 9%
 
 可配置的元件以「策略」表徵圖顯示 **** ，可以點選或按一下該表徵圖以編輯該元件的策略和屬性。
 
-![「可設定的元件」圖示](/help/sites-cloud/authoring/assets/templates-configurable-component.png)
+![可設定的元件圖示](/help/sites-cloud/authoring/assets/templates-configurable-component.png)
 
 #### 與現有頁面的關係 {#relationship-to-existing-pages}
 
 如果在根據範本建立頁面後更新結構，則這些頁面將反映範本的變更。 工具列中會顯示警告訊息，提醒您這個事實以及確認對話方塊。
 
-![正在使用範本的橫幅警告](/help/sites-cloud/authoring/assets/templates-in-use-banner.png)
+正在使用範本的![橫幅警告](/help/sites-cloud/authoring/assets/templates-in-use-banner.png)
 
 ### 編輯範本 — 初始內容 — 作者 {#editing-a-template-initial-content-author}
 
-**初始內容** 模式是用來定義首次根據範本建立頁面時顯示的內容。 然後，頁面作者可以編輯初始內容。
+**初始內容**&#x200B;模式用於定義首次根據範本建立頁面時顯示的內容。 然後，頁面作者可以編輯初始內容。
 
 雖然在「結構 **」模式下建立的所有內容在「初始內容」中都可** 見 ****，但只能選擇和編輯已解鎖的元件。
 
 >[!NOTE]
 >
->**初始內容** 模式可視為使用該範本建立之頁面的編輯模式。 因此，原則未定義於 **初始內容** 模式，但不是在 [**結構** 模式](#editing-a-template-structure-template-author).
+>可將&#x200B;**初始內容**&#x200B;模式視為使用該範本建立的頁面的編輯模式。 因此，原則不是在&#x200B;**初始內容**&#x200B;模式中定義，而是在&#x200B;[**結構**&#x200B;模式](#editing-a-template-structure-template-author)中定義。
 
 * 可編輯的已解除鎖定元件會加上標籤。 選取時，它們具有藍色邊框：
 
@@ -535,15 +535,15 @@ ht-degree: 9%
 >
 >初始內容旨在準備元件和作為建立內容起點的頁面配置。 此並非意圖讓實際內容維持原狀。 因此，初始內容無法翻譯。
 >
->如果您需要在範本中加入可翻譯的文字（例如頁首或頁尾），您可使用 [核心元件的本地化功能](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html).
+>如果您需要在範本中加入可翻譯的文字（例如頁首或頁尾），可以使用核心元件的[本地化功能](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html)。
 
 ### 編輯範本 — 版面 — 範本作者 {#editing-a-template-layout-template-author}
 
-您可以為一系列裝置定義範本配置。 [回應式版面](/help/sites-cloud/authoring/page-editor/responsive-layout.md) 適用於範本的運作方式與頁面製作相同。
+您可以為一系列裝置定義範本配置。 範本的[回應式佈局](/help/sites-cloud/authoring/page-editor/responsive-layout.md)運作方式與頁面製作相同。
 
 >[!NOTE]
 >
->配置變更會反映在 **初始內容** 模式，但看不到任何變更 **結構** 模式。
+>配置變更會反映在&#x200B;**初始內容**&#x200B;模式中，但在&#x200B;**結構**&#x200B;模式中看不到任何變更。
 
 ![編輯範本配置](/help/sites-cloud/authoring/assets/templates-edit-layout.png)
 
@@ -551,13 +551,13 @@ ht-degree: 9%
 
 「頁面資訊」功能表的「頁面政策」選項下會維護包含必要用戶端程 **式庫的頁面原** 則 **** 。
 
-若要存取 **頁面原則** 對話方塊：
+若要存取&#x200B;**頁面原則**&#x200B;對話方塊：
 
-1. 從 **範本編輯器**，選取 **頁面資訊** 從工具列，然後 **頁面原則** 以開啟對話方塊。
-1. 此 **頁面原則** 對話方塊隨即開啟，並分成兩個區段：
+1. 從&#x200B;**範本編輯器**&#x200B;中，從工具列選取&#x200B;**頁面資訊**，然後選取&#x200B;**頁面原則**&#x200B;以開啟對話方塊。
+1. **頁面原則**&#x200B;對話方塊會開啟，並分成兩個區段：
 
-   * 左半部會定義 [頁面原則](#page-policies)
-   * 右半部分定義 [頁面屬性](#page-properties)
+   * 左半部分定義[頁面原則](#page-policies)
+   * 右半部分定義[頁面屬性](#page-properties)
 
    ![頁面設計](/help/sites-cloud/authoring/assets/templates-page-design.png)
 
@@ -567,36 +567,36 @@ ht-degree: 9%
 
 ![頁面原則](/help/sites-cloud/authoring/assets/templates-page-policy.png)
 
-* 您可以從以下位置為頁面選取現有的原則： **選取原則** 下拉式清單。
+* 您可以從&#x200B;**選取原則**&#x200B;下拉式清單中選取頁面的現有原則。
 
   ![原則選擇器](/help/sites-cloud/authoring/assets/templates-policy-selector.png)
 
-  選取「 」旁邊的「新增」按鈕，即可新增一項原則。 **選取原則** 下拉式清單。 在中提供新標題 **原則標題** 欄位。
+  選取&#x200B;**選取原則**&#x200B;下拉式清單旁的新增按鈕，即可新增原則。 在&#x200B;**原則標題**&#x200B;欄位中提供新標題。
 
-  ![「新增原則」按鈕](/help/sites-cloud/authoring/assets/templates-add-policy-button.png)
+  ![新增原則按鈕](/help/sites-cloud/authoring/assets/templates-add-policy-button.png)
 
-  中選取的現有原則 **選取原則** 下拉式清單可使用下拉式清單旁的複製按鈕來復製為新原則。 在中提供新標題 **原則標題** 欄位。 依預設，複製的原則標題為 **X的副本**，其中X是複製原則的標題。
+  使用下拉式清單旁的複製按鈕，可以複製&#x200B;**選取原則**&#x200B;下拉式清單中選取的現有原則作為新原則。 在&#x200B;**原則標題**&#x200B;欄位中提供新標題。 依預設，複製的原則標題為&#x200B;**X**&#x200B;的副本，其中X是複製原則的標題。
 
-  ![「複製原則」按鈕](/help/sites-cloud/authoring/assets/templates-copy-policy-button.png)
+  ![複製原則按鈕](/help/sites-cloud/authoring/assets/templates-copy-policy-button.png)
 
-* 在中定義原則的標題 **原則標題** 欄位。 原則必須有標題，這樣才能輕鬆地在 **選取原則** 下拉式清單。
+* 在&#x200B;**原則標題**&#x200B;欄位中定義原則的標題。 原則必須有標題，才能在&#x200B;**選取原則**&#x200B;下拉式清單中輕鬆選取原則。
 
   ![原則標題](/help/sites-cloud/authoring/assets/templates-policy-title.png)
 
-* 原則說明是選擇性的，可在 **原則說明** 欄位。
-* 在 **其他範本也使用選取的原則** 區段，您可以輕鬆檢視其他哪些範本使用在區段中選取的原則 **選取原則** 下拉式清單。
+* 在&#x200B;**原則說明**&#x200B;欄位中，原則的說明是選擇性的。
+* 在&#x200B;**其他範本也使用選取的原則**&#x200B;區段中，您可以輕鬆地檢視其他哪些範本使用&#x200B;**選取原則**&#x200B;下拉式清單中所選取的原則。
 
-  ![原則使用情況](/help/sites-cloud/authoring/assets/templates-policy-use.png)
+  ![原則使用量](/help/sites-cloud/authoring/assets/templates-policy-use.png)
 
 #### 頁面屬性 {#page-properties}
 
-使用頁面屬性，您可以使用來定義所需的使用者端程式庫 **頁面設計** 對話方塊。 這些使用者端程式庫包含要與範本及使用該範本建立的頁面一起載入的樣式表和JavaScript。
+使用頁面屬性，您可以使用&#x200B;**頁面設計**&#x200B;對話方塊來定義所需的使用者端程式庫。 這些使用者端程式庫包含要與範本及使用該範本建立的頁面一起載入的樣式表和JavaScript。
 
 ![頁面內容](/help/sites-cloud/authoring/assets/templates-page-properties.png)
 
-* 指定您要套用至使用此範本建立之頁面的使用者端程式庫。 在的文字欄位中輸入程式庫名稱 **使用者端資源庫** 區段。
+* 指定您要套用至使用此範本建立之頁面的使用者端程式庫。 在&#x200B;**使用者端資料庫**&#x200B;區段的文字欄位中輸入資料庫名稱。
 
-  ![使用者端程式庫](/help/sites-cloud/authoring/assets/templates-client-side-libraries.png)
+  ![使用者端資料庫](/help/sites-cloud/authoring/assets/templates-client-side-libraries.png)
 
 * 如果需要多個程式庫，請按一下「新增」按鈕，為程式庫名稱新增其他文字欄位。
 
@@ -614,15 +614,15 @@ ht-degree: 9%
 
 ### 編輯範本 — 初始頁面屬性 — 作者 {#editing-a-template-initial-page-properties-author}
 
-使用 **初始頁面屬性** 選項，您可以定義 [頁面屬性](/help/sites-cloud/authoring/sites-console/page-properties.md) 建立結果頁面時使用。
+使用&#x200B;**初始頁面屬性**&#x200B;選項，您可以定義建立結果頁面時要使用的初始[頁面屬性](/help/sites-cloud/authoring/sites-console/page-properties.md)。
 
-1. 在範本編輯器中，選取 **頁面資訊** 從工具列，然後 **初始頁面屬性** 以開啟對話方塊。
+1. 在範本編輯器中，從工具列選取&#x200B;**頁面資訊**，然後選取&#x200B;**初始頁面屬性**&#x200B;以開啟對話方塊。
 
 1. 在對話方塊中，您可以定義要套用至使用此範本建立的頁面的屬性。
 
    ![範本初始頁面屬性](/help/sites-cloud/authoring/assets/templates-initial-properties.png)
 
-1. 透過確認您的定義 **完成**.
+1. 使用&#x200B;**完成**&#x200B;確認您的定義。
 
 ## 最佳做法 {#best-practices}
 
@@ -663,5 +663,5 @@ ht-degree: 9%
    >
    >變更不再是草稿之範本上元件的鎖定狀態時，AEM會發出明確警告。
 
-1. [建立您自己的資料夾](#creating-a-template-folder-admin) 您網站專屬範本的URL。
-1. [發佈您的範本](#publishing-a-template-template-author) 從 **範本** 主控台。
+1. [為您網站特定的範本建立您自己的資料夾](#creating-a-template-folder-admin)。
+1. 從&#x200B;**範本**&#x200B;主控台[Publish您的範本](#publishing-a-template-template-author)。

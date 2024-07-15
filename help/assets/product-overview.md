@@ -19,7 +19,7 @@ Content Hub 作為 Experience Manager Assets as a Cloud Service 的一部分提�
 
 Content Hub提供下列主要優點：
 
-**透過直覺式入口網站，尋找並共用所有品牌核准的資產**
+**尋找並共用直覺式入口網站中可用的所有品牌核准資產**
 
 AEM Assets可作為單一信任來源，而所有已核准的資產都會在Content Hub中以平面階層自動提供，以改善搜尋體驗。
 
@@ -27,13 +27,13 @@ AEM Assets可作為單一信任來源，而所有已核准的資產都會在Cont
 
 Content Hub中最常見的屬性（例如搜尋的篩選器）、新增或匯入資產時可用的欄位、資產屬性、品牌化的橫幅內容，都是可設定的，管理員可以根據需求輕鬆設定Content Hub使用者介面。
 
-**讓非創意人員能夠編輯和重新混合內容，同時繼續使用品牌**
+**讓非創意人員編輯與重新混合內容，同時繼續使用品牌**
 
 Content Hub可讓您使用Adobe Express(如果您有Adobe Express許可權)建立新內容。 您可以使用簡單易用的工具編輯現有內容、使用範本和品牌元素產生品牌上的變化，以及從Adobe Firefly使用最新GenAI功能建立新內容。
 
-**深入瞭解如何在團隊間使用內容**
+**深入瞭解跨團隊使用內容的方式**
 
-[!DNL Content Hub] 提供資產的寶貴見解，解決行銷利害關係人經常遇到的共同挑戰 — 用於行銷活動、管道和不同區域的資產使用統計資料。 透過清楚瞭解資產的效能和受歡迎程度，其提供可操作的深入分析，是提升使用者體驗的必要條件。
+[!DNL Content Hub]可提供資產的寶貴見解，解決行銷利害關係人經常遇到的共同挑戰 — 行銷活動、管道和不同區域中使用的資產使用統計資料。 透過清楚瞭解資產的效能和受歡迎程度，其提供可操作的深入分析，是提升使用者體驗的必要條件。
 
 ## 先決條件 {#prerequisites-content-hub}
 
@@ -41,25 +41,25 @@ Content Hub需要2024.6版或更新版本as a Cloud ServiceExperience Manager的
 
 ## 如何存取Content Hub？ {#access-content-hub}
 
-[設定Content Hub後](/help/assets/deploy-content-hub.md) 並將使用者新增至 [Content Hub產品設定檔](/help/assets/deploy-content-hub.md#content-hub-instance-product-profile)，您可使用下列方式存取Content Hub：
+[設定Content Hub](/help/assets/deploy-content-hub.md)並將使用者新增至[Content Hub產品設定檔](/help/assets/deploy-content-hub.md#content-hub-instance-product-profile)後，可以使用下列方式存取Content Hub：
 
 * 使用下列連結存取Content Hub：
 
   `https://experience.adobe.com/#/assets/contenthub`
 
-* 登入experience.adobe com並按一下 **[!UICONTROL Experience Manager Assets Content Hub]** 可在 **[!UICONTROL 快速存取]** 區段：
-  ![Content Hub存取](assets/access-content-hub.png)
+* 登入experience.adobe com，然後按一下&#x200B;**[!UICONTROL 快速存取]**&#x200B;區段中可用的&#x200B;**[!UICONTROL Experience Manager Assets Content Hub]**：
+  ![Content Hub存取權](assets/access-content-hub.png)
 
-* 登入experience.adobe com並按一下 **[!UICONTROL Experience Manager Assets Content Hub]** 可在產品切換器中取得：
+* 登入experience.adobe com，然後按一下產品切換器中可用的&#x200B;**[!UICONTROL Experience Manager Assets Content Hub]**：
   ![Content Hub存取方法3](assets/access-content-hub-alternate.png)
 
 
 
 ## 提供Content Hub意見回饋 {#provide-content-hub-feedback}
 
-若要建議任何產品相關改良功能，請按一下 **[!UICONTROL 意見反應]** ，位於Content Hub使用者介面頂端的組織名稱旁。
+若要建議任何產品相關改良功能，請在Content Hub使用者介面最上方，按一下組織名稱旁的&#x200B;**[!UICONTROL 意見回饋]**。
 
-指定主旨、建議的說明，並視需要附加檔案。 按一下 **[!UICONTROL 提交]** 將意見反應提交至Adobe。
+指定主旨、建議的說明，並視需要附加檔案。 按一下&#x200B;**[!UICONTROL 提交]**&#x200B;提交意見給Adobe。
 
 ![Content Hub意見反應](assets/content-hub-feedback.png)
 
@@ -67,21 +67,21 @@ Content Hub需要2024.6版或更新版本as a Cloud ServiceExperience Manager的
 
 請依照下列步驟，為您的團隊設定Content Hub：
 
-1. [使用Cloud Manager啟用適用於Experience Manager Assets的Content Hub](deploy-content-hub.md#enable-content-hub).
+1. [使用Cloud Manager](deploy-content-hub.md#enable-content-hub)啟用Experience Manager Assets的Content Hub。
 
-1. [載入Content Hub管理員](deploy-content-hub.md#onboard-content-hub-administrator).
+1. [加入Content Hub系統管理員](deploy-content-hub.md#onboard-content-hub-administrator)。
 
-1. [新增關鍵Content Hub使用者](deploy-content-hub.md#onboard-content-hub-consumer-users).
+1. [新增金鑰Content Hub使用者](deploy-content-hub.md#onboard-content-hub-consumer-users)。
 
-1. [DAM作者或管理員可使用Experience Manager資產核准資產](approve-assets.md).
+1. [使用Experience Manager資產核准資產的DAM作者或管理員](approve-assets.md)。
 
-1. [管理員可為其他使用者設定Content Hub使用者介面](configure-content-hub-ui-options.md).
+1. [管理員可以為其他使用者設定Content Hub使用者介面](configure-content-hub-ui-options.md)。
 
-1. [將Content Hub存取權授予團隊中的更多使用者](deploy-content-hub.md#onboard-content-hub-consumer-users).
+1. [將Content Hub存取權授與團隊的其他使用者](deploy-content-hub.md#onboard-content-hub-consumer-users)。
 
-1. [存取Content Hub入口網站](#access-content-hub).
+1. [存取Content Hub入口網站](#access-content-hub)
 
-1. [提供Content Hub意見回饋](#provide-content-hub-feedback).
+1. [提供Content Hub意見回饋](#provide-content-hub-feedback)。
 
 
 ## 進一步瞭解主要功能 {#key-capabilities-content-module}
@@ -97,7 +97,7 @@ Content Hub需要2024.6版或更新版本as a Cloud ServiceExperience Manager的
       </a>
    </div>
    <p>
-      <em>瞭解管理員如何設定Content Hub使用者介面。 </em>
+      <em>瞭解管理員如何設定Content Hub使用者介面。</em>
    </p>
 </td>
 
@@ -125,7 +125,7 @@ Content Hub需要2024.6版或更新版本as a Cloud ServiceExperience Manager的
       </a>
    </div>
    <p>
-      <em>瞭解如何使用Adobe Express在Content Hub中建立影像變體</em>
+      <em>瞭解如何使用Adobe Express在Content Hub中建立影像的變體</em>
    </p>
 </td>
 </table>
@@ -136,7 +136,7 @@ Content Hub需要2024.6版或更新版本as a Cloud ServiceExperience Manager的
    </a>
    <div>
       <a href="/help/assets/share-assets-content-hub.md">
-      <strong>共用Content Hub中的可用資產</strong>
+      <strong>在Content Hub中共用可用的資產</strong>
       </a>
    </div>
    <p>
@@ -166,7 +166,7 @@ Content Hub需要2024.6版或更新版本as a Cloud ServiceExperience Manager的
       </a>
    </div>
    <p>
-      <em> 內容模組提供資產的寶貴見解，解決行銷利害關係人經常遇到的共同挑戰</em>
+      <em>內容模組提供資產的寶貴見解，解決行銷利害關係人經常遇到的共同挑戰</em>
    </p>
 </td>
 </table>

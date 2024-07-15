@@ -25,8 +25,8 @@ ht-degree: 9%
 
 * 內容片段主控台：
 
-   * [逐步進行AEM內容片段主控台擴充功能開發](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/extension-development/)
+   * [逐步開發AEM內容片段主控台擴充功能](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/extension-development/)
 
 * 內容片段編輯器
 
-   * [AEM內容片段編輯器擴充點](https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/)
+   * [AEM內容片段編輯器延伸點](https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/)

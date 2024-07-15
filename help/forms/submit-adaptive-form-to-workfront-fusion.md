@@ -15,13 +15,13 @@ ht-degree: 3%
 
 # 向 Adobe Workfront Fusion 提交最適化表單
 
-<span class="preview"> 此功能可在早期採用者計畫下取得。 您可以從您的官方電子郵件ID寫信到aem-forms-ea@adobe.com ，以加入率先採用者計畫並請求存取該功能。 </span>
+<span class="preview">此功能可在早期採用者方案下使用。 您可以從您的官方電子郵件ID寫信到aem-forms-ea@adobe.com ，以加入率先採用者計畫並請求存取該功能。</span>
 
-[Adobe Workfront Fusion](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/workfront-fusion-overview.html) 自動化重複相同工作的程式，例如檔案核准工作流程、電子郵件篩選和排序，讓您專注在新工作上，而非重複工作。 Adobe Workfront Fusion包含多個情境。 案例由一系列模組組成，這些模組會在應用程式和Web服務之間執行資料傳輸。 在案例中，您會新增各種步驟（模組）來自動化工作。
+[Adobe Workfront Fusion](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/workfront-fusion-overview.html)會自動執行重複相同工作的程式，例如檔案核准工作流程、電子郵件篩選和排序，讓您專注在新工作上，而非重複工作。 Adobe Workfront Fusion包含多個情境。 案例由一系列模組組成，這些模組會在應用程式和Web服務之間執行資料傳輸。 在案例中，您會新增各種步驟（模組）來自動化工作。
 
 例如，使用Workfront Fusion，您可以建立案例來透過Adaptive Form收集資料、處理資料，以及傳送資料至資料存放區進行封存。 一旦設定了案例，每當使用者填寫表單時，Workfront Fusion就會自動執行工作，順暢地更新資料存放區。
 
-AEM Formsas a Cloud Service提供OOTB聯結器，可連線最適化表單並將其提交至Adobe Workfront Fusion。 將表單提交至Adobe Workfront Fusion有幾項好處：
+AEM Formsas a Cloud Service提供OOTB聯結器，用於連線並將最適化表單提交至Adobe Workfront Fusion。 將表單提交至Adobe Workfront Fusion有幾項好處：
 * 它可讓表單提交資料順暢地傳輸至Workfront Fusion工作流程。
 * 它有助於自動執行由表單提交觸發的各種任務。 這可以包括起始專案、指派任務給特定團隊成員、傳送通知以及更新專案狀態 — 所有這一切都不需要手動介入。
 * 所有在Workfront Fusion中擷取的表單提交內容，都提供專案相關資訊的單一信任來源
@@ -35,8 +35,8 @@ AEM Formsas a Cloud Service提供OOTB聯結器，可連線最適化表單並將�
 
 若要在Workfront Fusion和AEM Forms之間建立連線，需具備下列條件：
 
-* 有效的 [Workfront與Workfront Fusion授權](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/license-automation-vs-integration.html).
-* 具有存取許可權的AEM使用者 [開發主控台](https://my.cloudmanager.adobe.com/) 至 [擷取服務認證](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html).
+* 有效的[Workfront和Workfront Fusion授權](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/license-automation-vs-integration.html)。
+* 有權存取[開發主控台](https://my.cloudmanager.adobe.com/)以[擷取服務認證](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html)的AEM使用者。
 
 ## 將AEM Forms與Adobe Workfront Fusion整合
 
@@ -51,21 +51,21 @@ AEM Formsas a Cloud Service提供OOTB聯結器，可連線最適化表單並將�
 #### 建立情境 {#create-scenario}
 
 若要建立情境：
-1. 登入您的 [Workfront Fusion帳戶](https://app-qa.workfrontfusion.com/).
-1. 按一下 **[!UICONTROL 情境]** ![「共用」圖示](/help/forms/assets/Smock_ShareAndroid_18_N.svg) 在左側面板中。
-1. 按一下 **[!UICONTROL 建立新情境]** 在頁面的右上角。 建立新情境的頁面會顯示在畫面上。
-1. 選取 **[!UICONTROL 新情境]** 在頁面的左上角，為案例輸入正確的名稱。
-1. 按一下問號，並確定您將第一個模組新增為 **[!UICONTROL AEM Forms]**.
+1. 登入您的[Workfront Fusion帳戶](https://app-qa.workfrontfusion.com/)。
+1. 按一下左側面板中的&#x200B;**[!UICONTROL 情境]** ![共用圖示](/help/forms/assets/Smock_ShareAndroid_18_N.svg)。
+1. 按一下頁面右上角的&#x200B;**[!UICONTROL 建立新案例]**。 建立新情境的頁面會顯示在畫面上。
+1. 在頁面的左上角選取&#x200B;**[!UICONTROL 新案例]**，然後為案例輸入適當的名稱。
+1. 按一下問號，並確認您將第一個模組新增為&#x200B;**[!UICONTROL AEM Forms]**。
 
    ![新增AEM Forms模組](/help/forms/assets/workfront-aemforms.png)
 
-   此 **[!UICONTROL 關注表單事件]** 對話方塊隨即顯示。
+   **[!UICONTROL 檢視表單事件]**&#x200B;對話方塊就會顯示。
 
    >[!NOTE]
    >
-   > 第一個模組必須新增為 **[!UICONTROL AEM Forms]**.
+   > 必須將第一個模組新增為&#x200B;**[!UICONTROL AEM Forms]**。
 
-1. 選取 **[!UICONTROL 關注表單事件]** 對話方塊與新增webhook的視窗隨即出現。
+1. 選取「**[!UICONTROL 關注表單事件]**」對話方塊，就會顯示新增webhook的視窗。
 
 #### 新增webhook {#add-webhook}
 
@@ -73,14 +73,14 @@ AEM Formsas a Cloud Service提供OOTB聯結器，可連線最適化表單並將�
 
 若要新增webhook：
 
-1. 按一下 **[!UICONTROL 新增]** 和 **[!UICONTROL 新增webhook]** 對話方塊隨即顯示。
+1. 按一下「**[!UICONTROL 新增]**」並出現「**[!UICONTROL 新增webhook]**」對話方塊。
 1. 指定webhook名稱。
 
    >[!NOTE]
    >
    > 建議您謹慎選擇您的webhook名稱，因為指定的webhook名稱會顯示在AEM執行個體中。
 
-1. 按一下 **[!UICONTROL 新增]** 以新增連線。 此 **[!UICONTROL 建立連線]** 對話方塊隨即顯示。
+1. 按一下&#x200B;**[!UICONTROL [新增]**]以新增連線。 **[!UICONTROL 建立連線]**&#x200B;對話方塊就會顯示。
 
 #### 新增與webhook的連線 {#add-connection}
 
@@ -88,51 +88,51 @@ AEM Formsas a Cloud Service提供OOTB聯結器，可連線最適化表單並將�
 
 若要新增連線：
 
-1. 指定 **[!UICONTROL 連線名稱]** 在 **[!UICONTROL 建立連線]** 對話方塊。
+1. 在&#x200B;**[!UICONTROL 建立連線]**&#x200B;對話方塊中指定&#x200B;**[!UICONTROL 連線名稱]**。
 
-1. 選取 **環境** 和 **型別** 下拉式清單中的。
+1. 從下拉式清單中選取&#x200B;**環境**&#x200B;和&#x200B;**型別**。
 
-1. 輸入 **執行個體URL**.
+1. 輸入&#x200B;**執行個體URL**。
 
    >[!NOTE]
    >
    > 執行個體URL是指向特定AEM Forms執行個體的唯一網址。
 
-   您可以擷取 [來自開發人員控制檯的服務認證](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html) 建立連線時需要。
+   您可以從建立連線所需的開發人員主控台](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html)擷取[服務認證。
 
-1. 取代 `ims-na1.adobelogin.com` 在 **IMS端點** ，值為 **imsEndpoint** 從開發人員控制檯中的服務認證。
-
-   >[!NOTE]
-   >
-   > 保留 `https://` 在 **IMS端點** 文字方塊 `imsEndpoint` URL。
-
-1. 在 **[!UICONTROL 建立連線]** 對話方塊：
-   * 指定 **使用者端ID** 具有值 **clientId** 從開發人員控制檯中的服務認證。
-   * 指定 **使用者端密碼** 具有值 **使用者端密碼** 從開發人員控制檯中的服務認證。
-   * 指定 **技術帳戶ID**  具有值 **id** 從開發人員控制檯中的服務認證。
-   * 指定 **組織ID**  具有值 **org** 從開發人員控制檯中的服務認證。
-   * **中繼範圍**  具有值 **metascope** 從開發人員控制檯中的服務認證。
-   * **私密金鑰**  具有值 **privateKey** 從開發人員控制檯中的服務認證。
+1. 從開發人員主控台中的服務認證中，將&#x200B;**IMS端點**&#x200B;中的`ims-na1.adobelogin.com`取代為&#x200B;**imsEndpoint**&#x200B;的值。
 
    >[!NOTE]
    >
-   >* 的 **私密金鑰**，移除 `\r\n` 從它的值開始。
+   > 新增`imsEndpoint` URL時，保留&#x200B;**IMS端點**&#x200B;文字方塊中的`https://`。
+
+1. 在&#x200B;**[!UICONTROL 建立連線]**&#x200B;對話方塊中指定下列值：
+   * 從開發人員主控台中的服務認證中指定值為&#x200B;**clientId**&#x200B;的&#x200B;**使用者端識別碼**。
+   * 從開發人員主控台中的服務認證中指定值為&#x200B;**clientSecret**&#x200B;的&#x200B;**使用者端密碼**。
+   * 從開發人員主控台中的服務認證指定&#x200B;**技術帳戶ID** （值為&#x200B;**ID**）。
+   * 從開發人員主控台中的服務認證中指定值為&#x200B;**org**&#x200B;的&#x200B;**組織ID**。
+   * 開發人員主控台中服務認證值為&#x200B;**中繼領域**&#x200B;的&#x200B;**中繼領域**。
+   * 從開發人員主控台中的服務認證取得值為&#x200B;**privateKey**&#x200B;的&#x200B;**私密金鑰**。
+
+   >[!NOTE]
+   >
+   >* 針對&#x200B;**私密金鑰**，從其值移除`\r\n`。
    >  例如，如果私密金鑰值為：
-   >`\r\nIJAVO8GDYAOZ9jMA0GCSqGSIb3DQEBCwUAMDAxL\r\nMy1lMTUxODMxLWNtc3RnLWludGVncmF0aW9uLTAw`，然後在移除 `\r\n` 從私密金鑰來看，金鑰看起來類似這樣，兩個值都出現在單獨的一行中：
+   >`\r\nIJAVO8GDYAOZ9jMA0GCSqGSIb3DQEBCwUAMDAxL\r\nMy1lMTUxODMxLWNtc3RnLWludGVncmF0aW9uLTAw`，然後從私密金鑰中移除`\r\n`後，金鑰看起來會像這樣，而且這兩個值都會出現在單獨的一行中：
    >
    >   `IJAVO8GDYAOZ9jMA0GCSqGSIb3DQEBCwUAMDAxL`
    >
    >   `My1lMTUxODMxLWNtc3RnLWludGVncmF0aW9uLTAw`
    > 
-   >* 您還可以選擇選取 **Extract** 按鈕。
+   >* 您也可選擇選取&#x200B;**擷取**&#x200B;按鈕，以擷取檔案中的私密金鑰或憑證。
 
 1. 按一下&#x200B;**「繼續」**。
 
-   建立的連線會開始出現在 **[!UICONTROL 連線]** 在 **[!UICONTROL 新增webhook]** 對話方塊。
+   建立的連線開始出現在&#x200B;**[!UICONTROL 新增webhook]**&#x200B;對話方塊的&#x200B;**[!UICONTROL 連線]**&#x200B;的下拉式清單中。
 
-1. 選取建立的連線 **[!UICONTROL 連線]** 下拉式清單中的。
+1. 從下拉式清單中選取已建立的連線&#x200B;**[!UICONTROL 連線]**。
 1. 按一下「**[!UICONTROL 儲存]**」。
-1. 按一下 **[!UICONTROL 確定]** 並儲存情境的變更。
+1. 按一下&#x200B;**[!UICONTROL 確定]**&#x200B;並儲存情境的變更。
 1. 若要啟用情境，請按一下情境編輯器中的開啟/關閉切換按鈕。
 
 >[!NOTE]
@@ -150,37 +150,37 @@ AEM Formsas a Cloud Service提供OOTB聯結器，可連線最適化表單並將�
 若要設定Workfront Fusion適用性表單的提交動作：
 
 1. 登入您的AEM執行個體。
-1. 前往 **[!UICONTROL Forms]** > **[!UICONTROL Forms與檔案]** > **[!UICONTROL 建立]** > **[!UICONTROL 最適化表單]**. 此 **[!UICONTROL 建立表單]** 精靈出現。
-1. 選擇最適化表單範本，從 **[!UICONTROL 來源]** 標籤。
-1. 從中選擇主題 **[!UICONTROL 樣式]** 標籤。
+1. 移至&#x200B;**[!UICONTROL Forms]** > **[!UICONTROL Forms與檔案]** > **[!UICONTROL 建立]** > **[!UICONTROL 最適化表單]**。 **[!UICONTROL 建立表單]**&#x200B;精靈出現。
+1. 從&#x200B;**[!UICONTROL Source]**&#x200B;索引標籤中選取最適化表單範本。
+1. 從&#x200B;**[!UICONTROL 樣式]**&#x200B;索引標籤中選取主題。
 
-   ![適用於Workfront Fusion的提交動作](/help/forms/assets/workfront-scenario-new-af.png)
+   ![Workfront Fusion的提交動作](/help/forms/assets/workfront-scenario-new-af.png)
 
-1. 選取 **[!UICONTROL 叫用Workfront Fusion案例]** 從 **[!UICONTROL 提交]** 標籤。
-1. 從中選擇已建立的webhook **[!UICONTROL 選項]** 索引標籤中的 **[!UICONTROL 屬性]** 視窗。
+1. 從&#x200B;**[!UICONTROL 提交]**&#x200B;索引標籤中選取&#x200B;**[!UICONTROL 叫用Workfront Fusion案例]**。
+1. 從&#x200B;**[!UICONTROL 屬性]**&#x200B;視窗的&#x200B;**[!UICONTROL 選項]**&#x200B;索引標籤中選取已建立的webhook。
 
    >[!NOTE]
    >
-   > Workfront情境的webhook名稱會顯示在 **選項** 下拉式清單。
+   > Workfront案例的webhook名稱會出現在&#x200B;**選項**&#x200B;下拉式清單中。
 
 1. 按一下&#x200B;**[!UICONTROL 建立]**。
-1. 指定新最適化表單的名稱，然後按一下 **[!UICONTROL 建立]**.
+1. 指定新最適化表單的名稱，然後按一下&#x200B;**[!UICONTROL 建立]**。
 
 #### 設定Workfront Fusion現有最適化表單的提交動作 {#existing-af-submit-action}
 
 若要設定Workfront Fusion現有最適化表單的提交動作：
 
 1. 登入您的AEM執行個體。
-1. 前往 **[!UICONTROL Forms]** > **[!UICONTROL Forms與檔案]**.
+1. 移至&#x200B;**[!UICONTROL Forms]** > **[!UICONTROL Forms和檔案]**。
 1. 選取最適化表單，然後在編輯模式中開啟表單。
 1. 開啟內容瀏覽器，然後選取最適化表單的「**[!UICONTROL 指引容器]**」元件。
 1. 按一下「指引容器」屬性 ![指引屬性](/help/forms/assets/configure-icon.svg) 圖示。此時會開啟「最適化表單容器」對話框。
 
-   ![適用於Workfront Fusion的提交動作](/help/forms/assets/workfront-scenario-existing-af.png)
+   ![Workfront Fusion的提交動作](/help/forms/assets/workfront-scenario-existing-af.png)
 
-1. 開啟 **[!UICONTROL 提交]** 標籤。
-1. 選取 **[!UICONTROL 提交動作]** 作為 **[!UICONTROL 叫用Workfront Fusion案例]**
-1. 選取 **[!UICONTROL Workfront Fusion分析藍本]** 下拉式清單中的。
+1. 開啟&#x200B;**[!UICONTROL 提交]**&#x200B;標籤。
+1. 選取&#x200B;**[!UICONTROL 提交動作]**&#x200B;作為&#x200B;**[!UICONTROL 叫用Workfront Fusion案例]**
+1. 從下拉式清單中選取&#x200B;**[!UICONTROL Workfront Fusion案例]**。
 1. 按一下&#x200B;**[!UICONTROL 「完成」]**。
 
 ## 最佳做法 {#best-practices}

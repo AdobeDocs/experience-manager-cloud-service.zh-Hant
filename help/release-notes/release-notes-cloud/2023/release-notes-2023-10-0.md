@@ -43,7 +43,7 @@ ht-degree: 91%
 
 ### 新功能 {#assets-features}
 
-**適用於Adobe Express的AEM Assets附加元件**：Experience Manager Assets現在提供Adobe Express的附加元件。 此附加元件可讓您從 Adobe Express 使用者介面直接存取儲存在 Experience Manager Assets 的資源。您可以將 AEM Assets 中管理的內容放置在 Express 畫布中，然後將新的或編輯的內容儲存在 AEM Assets 存放庫中。此附加元件提供以下主要優點：
+適用於Adobe Express **的** AEM Assets附加元件： Experience Manager Assets現在提供Adobe Express的附加元件。 此附加元件可讓您從 Adobe Express 使用者介面直接存取儲存在 Experience Manager Assets 的資源。您可以將 AEM Assets 中管理的內容放置在 Express 畫布中，然後將新的或編輯的內容儲存在 AEM Assets 存放庫中。此附加元件提供以下主要優點：
 
 * 透過在 AEM 中編輯和儲存新資源來提高內容重複使用率
 
@@ -53,11 +53,11 @@ ht-degree: 91%
 
 ### 資產檢視中的新功能 {#assets-view-features}
 
-* **從OneDrive資料來源大量匯入資產**：管理員現在能夠 [將大量資產從OneDrive匯入AEM Assets](/help/assets/bulk-import-assets-view.md#onedrive-developer-application). 支援大量匯入的資料來源清單已更新，其中包括 Azure、AWS、Google Cloud、Dropbox 和 OneDrive。
+* **從OneDrive資料來源大量匯入資產**：管理員現在可以[從OneDrive將大量資產](/help/assets/bulk-import-assets-view.md#onedrive-developer-application)匯入AEM Assets。 支援大量匯入的資料來源清單已更新，其中包括 Azure、AWS、Google Cloud、Dropbox 和 OneDrive。
 
   ![將中繼資料表單指派至資料夾](/help/assets/assets/bulk-import-source-details-onedrive.png)
 
-* **程式庫的跨組織權益支援**：Experience Manager Assets現在可讓您在其他IMS組織中設定Creative Cloud程式庫的存取權。 這允許更輕鬆地在 Creative Cloud 和 Experience Manager 之間存取最新跨產品工作流程，減少創作者工作所需時間和精力。
+* **資料庫的跨組織權益支援**： Experience Manager Assets現在可讓您設定其他IMS組織中Creative Cloud資料庫的存取權。 這允許更輕鬆地在 Creative Cloud 和 Experience Manager 之間存取最新跨產品工作流程，減少創作者工作所需時間和精力。
 
 ### [!DNL Experience Manager Assets] 中可用的搶鮮版功能 {#prerelease-features-assets}
 
@@ -88,7 +88,7 @@ ht-degree: 91%
 
 [篩選 Adob&#x200B;&#x200B;e Managed CDN 的流量](/help/security/traffic-filter-rules-including-waf.md)，方法是透過聲明按屬性 (包括 url、IP 位址和使用者代理程式) 來匹配網站流量的規則，或設定自訂流量速率限制以防範 DoS 攻擊。客戶還可以授權一組進階 Web 應用程式防火牆 (WAF) 規則，以針對複雜的網站威脅提供額外的保護。
 
-我們鼓勵您透過以下方式熟悉流量篩選規則 [試用教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview.html)！ 此課程可引導您完成設定新的 Cloud Manager 設定管道、在設定檔中聲明規則，以及分析 CDN 記錄中的惡意流量。
+我們鼓勵您[嘗試教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview.html)，以熟悉流量篩選規則！ 此課程可引導您完成設定新的 Cloud Manager 設定管道、在設定檔中聲明規則，以及分析 CDN 記錄中的惡意流量。
 
 流量篩選規則現可在開發環境中使用，且 11 月將逐步可在中繼和生產環境中使用。您可以透過傳送電子郵件至：**aemcs-waf-adopter@adobe.com**，要求提前在中繼和生產環境中存取。
 

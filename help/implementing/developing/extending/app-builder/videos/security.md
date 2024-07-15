@@ -1,6 +1,6 @@
 ---
 title: App Builder安全性
-description: 瞭解AEM的App Builder應用程式安全性as a Cloud Service。
+description: 瞭解AEM as a Cloud Service的App Builder應用程式安全性。
 version: Cloud Service
 feature: App Builder, Developing
 topic: Integrations, Development

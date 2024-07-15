@@ -1,6 +1,6 @@
 ---
-title: AEM Commerceas a Cloud Service快速入門
-description: 瞭解如何使用Adobe Cloud Manager、CI/CD管道和Venia參考店面部署Adobe Experience Manager (AEM)商務專案。
+title: AEM Commerce快速入門as a Cloud Service
+description: 瞭解如何使用AdobeCloud Manager、CI/CD管道和Venia參考店面部署Adobe Experience Manager (AEM)商務專案。
 topics: Commerce
 feature: Commerce Integration Framework, Cloud Manager
 version: Cloud Service
@@ -16,33 +16,33 @@ ht-degree: 1%
 
 ---
 
-# AEM Commerceas a Cloud Service快速入門 {#start}
+# AEM Commerce快速入門as a Cloud Service {#start}
 
-若要開始使用Adobe Experience Manager (AEM) Commerceas a Cloud Service，您的Experience Manager Cloud Service必須布建Commerce integration framework(CIF)附加元件。 CIF附加元件是上方的額外模組 [AEM Sitesas a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/home.html).
+若要開始使用Adobe Experience Manager (AEM) Commerceas a Cloud Service，您的Experience Manager Cloud Service必須布建Commerce integration framework(CIF)附加元件。 CIF附加元件是在[AEM Sitesas a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/home.html)之上的額外模組。
 
 ## 上線 {#onboarding}
 
 AEM Commerceas a Cloud Service入門有兩個步驟：
 
-1. 啟用AEM Commerceas a Cloud Service，並布建CIF附加元件
+1. 啟用AEM Commerce as a Cloud Service，並布建CIF附加元件
 2. 將AEM Commerceas a Cloud Service與您的商務解決方案連線
 
 第一個入門步驟透過Adobe完成。 如需有關定價和布建的詳細資訊，請洽詢您的銷售代表。
 
-布建CIF附加元件後，它會套用至任何現有的Cloud Manager方案。 如果您沒有Cloud Manager計畫，您必須建立一個計畫。 如需詳細資訊，請參閱 [設定您的程式](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/getting-started/program-setup.html).
+布建CIF附加元件後，它會套用至任何現有的Cloud Manager方案。 如果您沒有Cloud Manager計畫，則必須建立一個計畫。 如需詳細資訊，請參閱[設定您的程式](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/getting-started/program-setup.html)。
 
-第二步是每個AEMas a Cloud Service環境的自助服務。 在CIF附加元件初始布建後，您必須進行一些其他設定。
+第二步是每個AEM as a Cloud Service環境的自助服務。 在CIF附加元件初始布建後，您必須進行一些其他設定。
 
 ## 將AEM與Commerce解決方案連線 {#solution}
 
-若要連線CIF附加元件和 [AEM CIF核心元件](https://github.com/adobe/aem-core-cif-components) 使用商務解決方案時，您必須透過GraphQL環境變數提供Cloud Manager端點URL。 變數名稱為 `COMMERCE_ENDPOINT`. 必須設定透過HTTPS的安全連線。
+若要將CIF附加元件和[AEM CIF核心元件](https://github.com/adobe/aem-core-cif-components)與商務解決方案連線，您必須透過Cloud Manager環境變數提供GraphQL端點URL。 變數名稱為`COMMERCE_ENDPOINT`。 必須設定透過HTTPS的安全連線。
 
 此環境變數用於兩個位置：
 
 - GraphQL會透過AEM CIF核心元件和客戶專案元件使用的一些常見可共用GraphQl使用者端，從AEM呼叫商務後端。
-- 在設定變數的每個AEM環境中設定GraphQL Proxy URL，網址為 `/api/graphql`. 此URL由AEM Commerce編寫工具(CIF附加元件)和CIF使用者端元件使用。
+- 在每個AEM環境中設定GraphQL Proxy URL （變數設定於`/api/graphql`）。 此URL由AEM Commerce編寫工具(CIF附加元件)和CIF使用者端元件使用。
 
-不同的GraphQL端點URL可用於每個AEMas a Cloud Service環境。 如此一來，專案就可以將AEM測試環境與商務測試系統和AEM生產環境連線到商務生產系統。 GraphQL端點必須是公開可用的，不支援私人VPN或本機連線。 可選擇提供驗證標頭，以使用需要驗證的其他CIF功能。
+每個GraphQL環境可以使用不同的AEM as a Cloud Service端點URL。 如此一來，專案就可以將AEM測試環境與商務測試系統和AEM生產環境連線到商務生產系統。 GraphQL端點必須是公開可用的，不支援私人VPN或本機連線。 可選擇提供驗證標頭，以使用需要驗證的其他CIF功能。
 
 CIF附加元件可選擇性支援AEM作者使用分階段目錄資料，且僅適用於Adobe Commerce Enterprise/Cloud。 此資料需要您設定授權標頭。 基於安全考量，此標題僅適用於AEM Author執行個體。 AEM Publish執行個體無法顯示分段資料。
 
@@ -70,17 +70,17 @@ CIF附加元件可選擇性支援AEM作者使用分階段目錄資料，且僅�
 
 1. 使用Cloud Manager外掛程式取得Adobe I/OCLI
 
-   檢查 [AdobeCloud Manager檔案](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html) 下載、設定及使用 [ADOBE I/OCLI](https://github.com/adobe/aio-cli) 使用 [Cloud Manager CLI外掛程式](https://github.com/adobe/aio-cli-plugin-cloudmanager).
+   請檢視[AdobeCloud Manager檔案](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html)，瞭解如何下載、設定和使用[Adobe I/OCLI](https://github.com/adobe/aio-cli)搭配[Cloud Manager CLI外掛程式](https://github.com/adobe/aio-cli-plugin-cloudmanager)。
 
-2. 使用AEMas a Cloud Service程式驗證Adobe I/OCLI
+2. 使用AEM as a Cloud Service程式驗證Adobe I/OCLI
 
-3. 設定 `COMMERCE_ENDPOINT` Cloud Manager中的變數
+3. 在Cloud Manager中設定`COMMERCE_ENDPOINT`變數
 
    ```bash
    aio cloudmanager:set-environment-variables ENVIRONMENT_ID --variable COMMERCE_ENDPOINT "<Magento GraphQL endpoint URL>"
    ```
 
-   另請參閱 [CLI檔案](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid) 以取得詳細資訊。
+   如需詳細資訊，請參閱[CLI檔案](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid)。
 
    商務GraphQL端點URL必須指向商務的GraphQl服務並使用安全的HTTPS連線。 例如：`https://<yourcommercesystem>/graphql`。
 
@@ -88,9 +88,9 @@ CIF附加元件可選擇性支援AEM作者使用分階段目錄資料，且僅�
 
    >[!NOTE]
    >
-   >此功能僅適用於Adobe Commerce Enterprise或Cloud版。 另請參閱 [權杖型驗證](https://devdocs.magento.com/guides/v2.4/get-started/authentication/gs-authentication-token.html#integration-tokens) 以取得詳細資訊。
+   >此功能僅適用於Adobe Commerce Enterprise或Cloud版。 如需詳細資訊，請參閱[權杖型驗證](https://devdocs.magento.com/guides/v2.4/get-started/authentication/gs-authentication-token.html#integration-tokens)。
 
-   設定 `COMMERCE_AUTH_HEADER` Cloud Manager中的密碼變數：
+   在Cloud Manager中設定`COMMERCE_AUTH_HEADER`密碼變數：
 
    ```bash
    aio cloudmanager:set-environment-variables ENVIRONMENT_ID --secret COMMERCE_AUTH_HEADER "Authorization: Bearer <Access Token>"
@@ -98,13 +98,13 @@ CIF附加元件可選擇性支援AEM作者使用分階段目錄資料，且僅�
 
 >[!TIP]
 >
->您可以使用以下命令列出所有Cloud Manager變數以仔細檢查： `aio cloudmanager:list-environment-variables ENVIRONMENT_ID`
+>您可以使用以下命令列出所有Cloud Manager變數來仔細檢查： `aio cloudmanager:list-environment-variables ENVIRONMENT_ID`
 
 您已準備好使用AEM Commerceas a Cloud Service，可以透過Cloud Manager部署您的專案。
 
 ## 設定存放區和目錄 {#catalog}
 
-CIF附加元件和 [CIF Core Components](https://github.com/adobe/aem-core-cif-components) 可用於連線至不同商業商店（或商店檢視等）的多個AEM網站結構。 根據預設，CIF附加元件會以連線到Adobe Commerce預設存放區和目錄的預設設定進行部署。
+CIF附加元件和[CIF核心元件](https://github.com/adobe/aem-core-cif-components)可用於連線至不同商務商店（或商店檢視等）的多個AEM網站結構。 根據預設，CIF附加元件會以連線到Adobe Commerce預設存放區和目錄的預設設定進行部署。
 
 您可以透過以下步驟中的CIFCloud Service設定，針對專案調整此設定：
 
@@ -123,7 +123,7 @@ CIF附加元件和 [CIF Core Components](https://github.com/adobe/aem-core-cif-c
 - GraphQL Proxy路徑 — AEM中的GraphQL Proxy用來將請求代理至商務後端GraphQL端點的URL路徑。
   >[!NOTE]
   >
-  > 在大多數設定中，預設值 `/api/graphql` 不可變更。 只有未使用所提供GraphQL Proxy的進階設定，才應變更此設定。
+  > 在大多數設定中，不可變更預設值`/api/graphql`。 只有未使用所提供GraphQL Proxy的進階設定，才應變更此設定。
 - 啟用目錄UID支援 — 在商務後端GraphQL呼叫中啟用對UID而非ID的支援。
   >[!NOTE]
   >
@@ -131,11 +131,11 @@ CIF附加元件和 [CIF Core Components](https://github.com/adobe/aem-core-cif-c
 - 目錄根類別識別碼 — 商店目錄根的識別碼（UID或ID）
   >[!CAUTION]
   >
-  > 從CIF核心元件2.0.0版開始，支援 `id` 已移除並取代為 `uid`. 如果您的專案使用CIF核心元件2.0.0版，您必須啟用目錄UID支援，並使用有效的類別UID作為「目錄根類別識別碼」。
+  > 從CIF核心元件2.0.0版開始，已移除對`id`的支援，並取代為`uid`。 如果您的專案使用CIF核心元件2.0.0版，您必須啟用目錄UID支援，並使用有效的類別UID作為「目錄根類別識別碼」。
 
 以上所示的設定可供參考。 專案應提供自己的設定。
 
-如需更複雜的設定，搭配使用多個AEM網站結構與不同的商務目錄，請參閱 [Commerce多商店設定](configuring/multi-store-setup.md) 教學課程。
+如需更複雜的設定，請使用多個AEM網站結構搭配不同的商務目錄，請參閱[Commerce多商店設定](configuring/multi-store-setup.md)教學課程。
 
 ## 其他資源 {#additional-resources}
 

@@ -83,7 +83,7 @@ ht-degree: 94%
 
 在任何一種情況下，編輯器面板顯示的查詢，都是在您執行以下操作時會執行的查詢：
 
-* 選取 **執行查詢** 圖示
+* 在&#x200B;**執行查詢**&#x200B;圖示上選取
 * 使用鍵盤組合 `Control-Enter`
 
 ## 查詢變數 {#query-variables}
@@ -100,13 +100,13 @@ GraphiQL IDE 也讓您管理[查詢變數](/help/headless/graphql-api/content-fr
 
 >[!NOTE]
 >
->另請參閱 [正在快取您的持續查詢](/help/headless/graphql-api/persisted-queries.md#caching-persisted-queries).
+>請參閱[快取您的持續查詢](/help/headless/graphql-api/persisted-queries.md#caching-persisted-queries)。
 
 >[!NOTE]
 >
 >Dispatcher 上的自訂重寫規則可能會覆蓋 AEM 發佈的預設值。
 >
->如果您根據位置比對模式從Dispatcher傳送TTL型快取控制標題，則可能想要排除（如有必要） `/graphql/execute.json/*` 從相符專案。
+>若您是根據Location Match模式從Dispatcher傳送TTL型快取控制標題，則如有必要，您可能會想要從相符專案排除`/graphql/execute.json/*`。
 
 使用 GraphQL，您可以設定 HTTP 快取標頭來控制您個人持續性查詢的這些參數。
 
@@ -114,7 +114,7 @@ GraphiQL IDE 也讓您管理[查詢變數](/help/headless/graphql-api/content-fr
 
    ![持續性查詢 HTTP 快取標頭](assets/cfm-graphqlapi-headers-01.png "持續性查詢 HTTP 快取標頭")
 
-1. 選取此項可開啟 **快取設定** 對話方塊：
+1. 選取此選項會開啟&#x200B;**快取組態**&#x200B;對話方塊：
 
    ![持續性查詢 HTTP 快取標頭設定](assets/cfm-graphqlapi-headers-02.png "持續性查詢 HTTP 快取標頭設定")
 

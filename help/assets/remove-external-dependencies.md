@@ -21,7 +21,7 @@ Adobe建議您針對Workfront的現有增強型聯結器安裝執行設定步驟
 
 若要移除外部相依性：
 
-1. 從父系移除下列Hoodoo存放庫設定 `pom.xml`：
+1. 從上層`pom.xml`移除下列Hoodoo存放庫組態：
 
    ```XML
      <repository>
@@ -31,7 +31,7 @@ Adobe建議您針對Workfront的現有增強型聯結器安裝執行設定步驟
      </repository>
    ```
 
-1. 從移除下列伺服器組態 `settings.xml` 檔案，位於 `./cloudmanager/maven/settings.xml`：
+1. 從`settings.xml`檔案（位於`./cloudmanager/maven/settings.xml`）中移除下列伺服器組態：
 
    ```XML
          <server>
@@ -47,4 +47,4 @@ Adobe建議您針對Workfront的現有增強型聯結器安裝執行設定步驟
          </server>
    ```
 
-1. 執行 [新安裝步驟](workfront-connector-install.md).
+1. 執行[新安裝步驟](workfront-connector-install.md)。

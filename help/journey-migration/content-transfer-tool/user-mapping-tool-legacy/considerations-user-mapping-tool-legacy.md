@@ -17,13 +17,13 @@ ht-degree: 0%
 
 >[!INFO]
 >
->本檔案是指該工具的已棄用版本。 如需最新版本的詳細資訊，請參閱 [使用者對應和主體移轉](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md).
+>本檔案是指該工具的已棄用版本。 如需最新版本的詳細資訊，請參閱[使用者對應和主體移轉](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md)。
 
 ## 例外情況 {#exceptional-cases}
 
 會記錄下列特定案例：
 
-1. 如果使用者在電子郵件中沒有電子郵件地址 `profile/email` 的欄位 *jcr* 節點時，相關使用者或群組會移轉但未對應。 即使使用電子郵件地址作為使用者名稱登入，此規則仍適用。
+1. 如果使用者在其&#x200B;*jcr*&#x200B;節點的`profile/email`欄位中沒有電子郵件地址，則相關使用者或群組已移轉但未對應。 即使使用電子郵件地址作為使用者名稱登入，此規則仍適用。
 
 1. 如果在AdobeIdentity Management系統(IMS)系統上找不到所使用組織ID的電子郵件（或是如果無法擷取IMS ID），使用者或群組會移轉，但不會進行對應。
 
@@ -35,7 +35,7 @@ ht-degree: 0%
 
 ## 其他考量事項 {#additional-considerations}
 
-* 如果設定 **在內嵌之前擦除雲端例項上的現有內容** 設定，則會刪除Cloud Service執行個體上已轉移的使用者。 系統也會刪除整個現有存放庫，並建立一個新存放庫，在其中擷取內容。 此動作也會重設所有設定，包括目標Cloud Service執行個體的許可權，若管理員使用者已新增至 **管理員** 群組。 管理員使用者必須閱讀至 **管理員** 群組以擷取CTT的存取權杖。
+* 如果設定&#x200B;**在內嵌**&#x200B;設定之前擦除雲端執行個體上的現有內容，則會刪除Cloud Service執行個體上已傳輸的使用者。 系統也會刪除整個現有存放庫，並建立一個新存放庫，在其中擷取內容。 此動作也會重設所有設定，包括目標Cloud Service執行個體的許可權，且對於新增至&#x200B;**管理員**&#x200B;群組的管理員使用者為true。 必須將管理員使用者讀入&#x200B;**管理員**&#x200B;群組，才能擷取CTT的存取權杖。
 
 * Adobe建議您在透過使用者對應執行CTT之前，從目標Cloud ServiceAEM執行個體中移除任何現有使用者。 此動作是必要的，以防止將使用者從來源AEM例項移轉至目標AEM例項之間發生任何衝突。 如果來源AEM例項和目標AEM例項中存在相同的使用者，則在擷取期間可能會發生衝突。
 
@@ -47,4 +47,4 @@ ht-degree: 0%
 
 ### 下一步 {#whats-next}
 
-瞭解重要考量事項和特殊案例後，您就可以開始使用此工具了。 另請參閱 [使用使用者對應工具](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/using-user-mapping-tool-legacy.md) 以取得更多詳細資料。
+瞭解重要考量事項和特殊案例後，您就可以開始使用此工具了。 如需詳細資訊，請參閱[使用使用者對應工具](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/using-user-mapping-tool-legacy.md)。

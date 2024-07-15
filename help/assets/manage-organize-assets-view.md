@@ -114,7 +114,7 @@ TBD: query for engineering: How many versions are maintained. What happens when 
 
 **需要的權限：**`Can Edit`、`Owner` 或資產的管理員權限。
 
-「資產」檢視可讓您對存放庫中可用的資產設定狀態。 設定資產狀態以將數位資產的下游消費控管和管理得更好。
+Assets檢視可讓您對存放庫中可用的資產設定狀態。 設定資產狀態以將數位資產的下游消費控管和管理得更好。
 
 您可以在資產上設定下列狀態：
 
@@ -130,14 +130,14 @@ TBD: query for engineering: How many versions are maintained. What happens when 
 
 1. 選取該資產，然後按一下工具列中的「**[!UICONTROL 詳細資料]**」。
 
-1. 在 **[!UICONTROL 基本]** 索引標籤中，選取資產狀態 **[!UICONTROL 狀態]** 下拉式清單。 可能的值包括「已核准」、「已拒絕」以及「無狀態」(預設)。
+1. 在&#x200B;**[!UICONTROL 基本]**&#x200B;索引標籤中，從&#x200B;**[!UICONTROL 狀態]**&#x200B;下拉式清單中選取資產狀態。 可能的值包括「已核准」、「已拒絕」以及「無狀態」(預設)。
 
    >[!VIDEO](https://video.tv.adobe.com/v/342495)
 
 
 ### 設定資產到期日 {#set-asset-expiration-date}
 
-「資產」檢視也可讓您設定存放庫中可用資產的有效日期。 您可以[](search-assets-view.md#refine-search-results) 根據`Expired`資產狀態來篩選搜尋結果。此外，您可以指定資產的有效日期範圍以進一步篩選搜尋結果。
+Assets檢視也可讓您設定存放庫中可用資產的有效日期。 您可以[](search-assets-view.md#refine-search-results) 根據`Expired`資產狀態來篩選搜尋結果。此外，您可以指定資產的有效日期範圍以進一步篩選搜尋結果。
 
 若要設定資產到期日：
 
@@ -147,13 +147,13 @@ TBD: query for engineering: How many versions are maintained. What happens when 
 
 `Expired` 資產卡指標便會覆寫為資產所設定的 `Approved` 或 `Rejected` 指標。
 
-您也可以根據資產狀態來篩選資產，如需詳細資訊，請參閱 [在「資產」檢視中搜尋資產](search-assets-view.md).
+您也可以根據資產狀態來篩選資產，如需詳細資訊，請參閱[在Assets檢視中搜尋資產](search-assets-view.md)。
 
 ## 自訂中繼資料表單以包含資產狀態欄位 {#customize-asset-status-metadata-form}
 
 **需要的權限：**&#x200B;管理員
 
-資產檢視預設會提供許多標準中繼資料欄位。 組織擁有其他中繼資料需求，並需要更多中繼資料欄位以新增特定企業中繼資料。中繼資料表單可讓企業將自訂中繼資料欄位新增到資產的[!UICONTROL 詳細資訊]頁面。特定企業中繼資料能夠改善其資產的控管和探索。
+Assets檢視預設會提供許多標準中繼資料欄位。 組織擁有其他中繼資料需求，並需要更多中繼資料欄位以新增特定企業中繼資料。中繼資料表單可讓企業將自訂中繼資料欄位新增到資產的[!UICONTROL 詳細資訊]頁面。特定企業中繼資料能夠改善其資產的控管和探索。
 
 如需更多有關如何將更多中繼資料欄位新增到中繼資料表單的資訊，請參閱「[中繼資料表單](metadata-assets-view.md#metadata-forms)」。
 
@@ -167,7 +167,7 @@ TBD: query for engineering: How many versions are maintained. What happens when 
 
 ## 後續步驟 {#next-steps}
 
-* [觀看在「資產」檢視中管理資產的相關影片](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/managing.html)
+* [觀看在Assets檢視中管理資產的相關影片](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/managing.html)
 
 * 使用資產檢視使用者介面所提供的[!UICONTROL 意見回饋]選項提供產品意見回饋
 

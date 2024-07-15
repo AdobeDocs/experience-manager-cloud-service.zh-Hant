@@ -34,7 +34,7 @@ _只有 Full Stack Code 流水線類型支援程式碼掃描、功能測試、UI
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織。
 
-1. 在 **[我的計畫](/help/implementing/cloud-manager/navigation.md#my-programs)** 主控台，點選或按一下您要部署程式碼的程式。
+1. 在&#x200B;**[我的程式](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;主控台上，點選或按一下您要部署程式碼的程式。
 
 1. 按一下&#x200B;**部署**&#x200B;從號召性用語&#x200B;**概觀**&#x200B;畫面開始部署過程。
 
@@ -154,7 +154,7 @@ _只有 Full Stack Code 流水線類型支援程式碼掃描、功能測試、UI
 
 ### 重新執行 API {#reexecute-API}
 
-除了可在UI中使用外，您還可以使用 [Cloud Manager API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Pipeline-Execution) 以觸發重新執行並識別觸發為重新執行的執行。
+除了可在UI中使用之外，您還可以使用[Cloud Manager API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Pipeline-Execution)來觸發重新執行，並識別觸發為重新執行的執行。
 
 #### 觸發重新執行 {#reexecute-deployment-api}
 

@@ -20,13 +20,13 @@ ht-degree: 10%
 
 ## 追蹤專案進度 {#tracking-project-progress}
 
-您可以透過檢視專案內活動/完成的任務，來追蹤專案進度，該專案由 **任務** 圖磚。 專案進度可由下列專案決定：
+您可以透過檢視由&#x200B;**任務**&#x200B;圖磚表示的專案內的作用中/已完成任務來追蹤專案進度。 專案進度可由下列專案決定：
 
 * **** 任務表徵圖：項目詳細資訊頁面上的「任務表徵圖」(Task Tile)中描述了項目的整體進度。
 
 * **** 任務清單：按一下「任務」表徵圖時，將顯示任務清單。此清單包含與項目相關的所有任務的詳細資訊。
 
-兩者都會列出工作流程任務和您直接在中建立的任務 **任務** 圖磚。
+兩者都會列出工作流程任務和您直接在&#x200B;**任務**&#x200B;圖磚中建立的任務。
 
 ### 任務拼貼 {#task-tile}
 
@@ -46,19 +46,19 @@ ht-degree: 10%
 
 按一下「任務」方塊中的省略符號(...)，即可顯示與專案相關的任務清單。 任務會依父工作流程劃分。 任務詳細資訊會與中繼資料一起顯示，例如到期日、受指派人、優先順序和狀態。
 
-![任務清單](/help/sites-cloud/authoring/assets/projects-task-list.png)
+![工作清單](/help/sites-cloud/authoring/assets/projects-task-list.png)
 
 #### 工作詳細資訊 {#task-details}
 
-如需特定工作的詳細資訊，請在工作清單中選取工作並 **開啟**.
+如需特定工作的詳細資訊，請在工作清單中，選取工作並&#x200B;**開啟**。
 
-![任務詳細資訊](/help/sites-cloud/authoring/assets/projects-task-details.png)
+![任務詳細資料](/help/sites-cloud/authoring/assets/projects-task-details.png)
 
 ### 檢視和修改工作註解 {#viewing-and-modifying-task-comments}
 
 在「任務」詳細資訊中，您可以編輯或新增註解。 此外，專案中的所有註解都會顯示在「註解」區域中。
 
-![任務評論](/help/sites-cloud/authoring/assets/projects-tasks-comments.png)
+![對任務的評論](/help/sites-cloud/authoring/assets/projects-tasks-comments.png)
 
 ### 新增任務 {#adding-tasks}
 
@@ -66,10 +66,10 @@ ht-degree: 10%
 
 若要新增任務：
 
-1. 在專案中，在 **任務** 圖磚，選取+圖示。 將打 **開「添加任務** 」窗口。
-1. 輸入工作的相關資訊。 任務的標題及指派給哪個群組是必填欄位。 內容路徑、說明、工作優先順序及到期日等其他資訊為選用。 此外，您可以選取 **進階** 標籤以輸入工作的名稱，用來命名URL。
+1. 在專案中，在&#x200B;**任務**&#x200B;圖磚中，選取+圖示。 將打 **開「添加任務** 」窗口。
+1. 輸入工作的相關資訊。 任務的標題及指派給哪個群組是必填欄位。 內容路徑、說明、工作優先順序及到期日等其他資訊為選用。 此外，您可以選取&#x200B;**進階**&#x200B;標籤以輸入工作的名稱，此名稱可用來命名URL。
 
-   ![新增任務](/help/sites-cloud/authoring/assets/projects-add-task.png)
+   ![新增工作](/help/sites-cloud/authoring/assets/projects-add-task.png)
 
 1. 選取「**建立**」。
 
@@ -77,8 +77,8 @@ ht-degree: 10%
 
 存取任務的另一種方式是從「收件匣」。 從收件匣中，您可以開啟內容以實施必要的變更。 完成後，您會將任務狀態設定為「已完成」。 當任務指派給您所屬的使用者群組時，也會顯示在您的收件匣中。 在這種情況下，群組的所有成員都可以執行工作並完成任務。
 
-![收件匣中的任務](/help/sites-cloud/authoring/assets/projects-task-inbox.png)
+收件匣中的![任務](/help/sites-cloud/authoring/assets/projects-task-inbox.png)
 
-若要完成任務，請選取任務並按一下 **完成**. 將資訊新增至工作，然後按一下 **完成**. 另請參閱 [您的收件匣](/help/sites-cloud/authoring/inbox.md) 以取得詳細資訊。
+若要完成工作，請選取工作並按一下[完成]。**** 新增資訊至工作，然後按一下[完成]。**** 如需詳細資訊，請參閱[您的收件匣](/help/sites-cloud/authoring/inbox.md)。
 
 ![任務通知](/help/sites-cloud/authoring/assets/projects-task-notifications.png)

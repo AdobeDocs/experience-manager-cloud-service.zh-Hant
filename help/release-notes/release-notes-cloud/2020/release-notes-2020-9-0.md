@@ -1,6 +1,6 @@
 ---
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2020.9.0 版發行說明。'
-description: '"[!DNL Adobe Experience Manager] 2020.9.0版as a Cloud Service發行說明。」'
+description: "[!DNL Adobe Experience Manager]個2020.9.0as a Cloud Service發行說明。"
 exl-id: 2332512f-8c52-4569-a006-faa36a7670a1
 feature: Release Information
 role: Admin
@@ -11,32 +11,32 @@ ht-degree: 14%
 
 ---
 
-# 版本注意事項 [!DNL Adobe Experience Manager] as a Cloud Service2020.9.0 {#release-notes}
+# [!DNL Adobe Experience Manager]as a Cloud Service2020.9.0版發行說明 {#release-notes}
 
-以下區段會概述以下的一般發行說明： [!DNL Experience Manager] as a Cloud Service2020.9.0。
+以下章節概述[!DNL Experience Manager]as a Cloud Service2020.9.0版的一般發行說明。
 
 ## 發行日期 {#release-date}
 
-的發行日期 [!DNL Adobe Experience Manager] as a Cloud Service2020.9.0為2020年9月24日。
+[!DNL Adobe Experience Manager]as a Cloud Service2020.9.0版的發行日期為2020年9月24日。
 
-## [!DNL Adobe Experience Manager Sites] as a Cloud Service {#sites}
+## [!DNL Adobe Experience Manager Sites]個as a Cloud Service {#sites}
 
 ### [!DNL Sites] 的新增功能 {#what-is-new-sites}
 
-* 單頁應用程式(SPA)編輯器JavaScript SDK [現在是開放原始碼](/help/implementing/developing/hybrid/reference-materials.md).
+* 單頁應用程式(SPA)編輯器JavaScript SDK [現在是開放原始碼](/help/implementing/developing/hybrid/reference-materials.md)。
 
-## [!DNL Adobe Experience Manager Assets] as a Cloud Service {#assets}
+## [!DNL Adobe Experience Manager Assets]個as a Cloud Service {#assets}
 
 ### [!DNL Assets] 的新增功能 {#what-is-new-assets}
 
-* 使用資產微服務產生的轉譯支援浮水印影像檔案。 它可以設定為處理設定檔，並使用PNG檔案作為浮水印。 另請參閱 [為您的資產加上浮水印](/help/assets/watermark-assets.md).
+* 使用資產微服務產生的轉譯支援浮水印影像檔案。 它可以設定為處理設定檔，並使用PNG檔案作為浮水印。 請參閱[為您的資產加上浮水印](/help/assets/watermark-assets.md)。
 
-* 中的增強功能 [!DNL Dynamic Media]
+* [!DNL Dynamic Media]中的增強功能
 
-   * 選擇性發佈 — 行銷團隊現在可以存取 [!DNL Dynamic Media] 同步至的智慧型裁切影像和動態轉譯 [!DNL Dynamic Media] 這樣他們就可以建立促銷資料，完全不需要將這些資產發佈到 [!DNL Dynamic Media] 進行全域傳送。 [!DNL Experience Manager] 和 [!DNL Dynamic Media] 發佈是分離的，可個別執行以達成此目的。 另請參閱 [選擇性發佈](/help/assets/dynamic-media/selective-publishing.md).
-   * 管理員現在可以重設 [!DNL Dynamic Media] 布建時收到的Cloud Service密碼。 重設可在中完成 [!DNL Experience Manager] 使用者介面，而不需使用 [!DNL Dynamic Media Classic] 案頭應用程式。
+   * 選擇性Publish — 現在，行銷團隊可以存取同步到[!DNL Dynamic Media]的[!DNL Dynamic Media]智慧型裁切影像和動態轉譯，以便建立促銷文宣，而完全無須將這些資產發佈至[!DNL Dynamic Media]以進行全域傳送。 [!DNL Experience Manager]和[!DNL Dynamic Media]發佈是分離的，可個別執行以達成此目的。 請參閱[選擇性發佈](/help/assets/dynamic-media/selective-publishing.md)。
+   * 管理員現在可以重設布建時收到的[!DNL Dynamic Media]Cloud Service密碼。 重設可在[!DNL Experience Manager]使用者介面中完成，而不需要使用[!DNL Dynamic Media Classic]案頭應用程式。
 
-* 若要瞭解下列增強功能，請參閱 [Brand Portal的新增功能](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html).
+* 若要瞭解下列增強功能，請參閱[ Brand Portal的新功能](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html)。
 
    * 透過Adobe Document Cloud檢視SDK整合強化PDF預覽。
    * 按一下即可下載的功能。
@@ -52,7 +52,7 @@ TBD: list of Assets aaCS bugs that are fixed.
 
 ### 新增功能 {#what-is-new-commerce}
 
-* 已發行CIF Core Components v1.3.0。另請參閱 [CIF Core Components](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.3.0) 以取得更多詳細資料。
+* 已發行CIF Core Components v1.3.0。如需詳細資訊，請參閱[CIF核心元件](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.3.0)。
 
 * 現已提供產品和類別範本的產品/類別預覽功能。 這可讓AEM中的業務使用者/行銷人員檢視具有真實資料的產品/類別範本。
 
@@ -70,7 +70,7 @@ TBD: list of Assets aaCS bugs that are fixed.
 
 ### 發行日期 {#release-date-cm}
 
-的發行日期 [!UICONTROL Cloud Manager] 2020.9.0版為2020年9月3日。
+[!UICONTROL Cloud Manager] 2020.9.0版的發行日期為2020年9月3日。
 
 ### 新增功能 {#what-is-new-cloud-manager}
 
@@ -88,7 +88,7 @@ TBD: list of Assets aaCS bugs that are fixed.
 
 ### 新增功能 {#what-is-new-cra}
 
-* Cloud Readiness Analyzer (CRA)有一個顯示明確的 **產生報表** 按鈕供使用者按一下以執行CRA。
+* Cloud Readiness Analyzer (CRA)有一個啟動狀態主控台，會顯示一個明確的&#x200B;**產生報表**&#x200B;按鈕，供使用者按一下以執行CRA。
 
 * CRA UI在執行時會顯示進度。 它會顯示正在分析的專案，以及在執行期間找到的結果。
 
@@ -108,9 +108,9 @@ TBD: list of Assets aaCS bugs that are fixed.
 
 * CTT使用者介面具有自動重新載入功能，每30秒會重新載入一次概觀頁面。
 
-* CTT使用者介面新增了按鈕以擷取 *存取權杖* 輕鬆進行。
+* CTT使用者介面新增了按鈕，可輕鬆擷取&#x200B;*存取Token*。
 
-* 已新增描述性驗證訊息 *URL* 和 *移轉集名稱*.
+* 已為&#x200B;*URL*&#x200B;和&#x200B;*移轉集名稱*&#x200B;新增描述性驗證訊息。
 
 ## 程式碼重構工具 {#code-refactoring}
 
@@ -120,8 +120,8 @@ TBD: list of Assets aaCS bugs that are fixed.
 
 * AIO-CLI外掛程式支援Repository Modernizer，可讓使用者透過外掛程式執行工具。
 
-  另請參閱 [Git資源： aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) 以取得更多詳細資料。
+  如需詳細資訊，請參閱[Git資源： aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration)。
 
-* Repository Modernizer公用程式可用來將現有的專案套件重新建構為與針對AEMas a Cloud Service定義的專案結構相容的套件。
+* Repository Modernizer公用程式可用來將現有的專案套件重新建構為與針對AEM as a Cloud Service定義的專案結構相容的套件。
 
-  另請參閱 [Git資源： Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) 以取得更多詳細資料。
+  如需詳細資訊，請參閱[Git資源：儲存庫現代化工具](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer)。

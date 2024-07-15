@@ -27,17 +27,17 @@ ContextHub提供數個您可在解決方案中使用的候選範例商店。 每
 
 儲存已解析和未解析的ContextHub區段。 自動從ContextHub SegmentManager擷取區段。
 
-### 來源位置 {#source-location-segmentation}
+### Source位置 {#source-location-segmentation}
 
 `/libs/settings/cloudsettings/legacy/contexthub/segmentation`
 
 ### 基礎實作 {#base-implementation-segmentation}
 
-aem.segmentation存放區候選擴充 [`ContextHub.Store.PersistedJSONPStore`](contexthub-api.md#contexthub-store-persistedjsonpstore).
+aem.segmentation存放區候選擴充[`ContextHub.Store.PersistedJSONPStore`](contexthub-api.md#contexthub-store-persistedjsonpstore)。
 
 ### 設定 {#configuration-segmentation}
 
-當您建立 `aem.segmentation` 儲存，您不需要提供詳細設定。 預設設定會指定ContextHub區段定義的位置。
+建立`aem.segmentation`存放區時，您不需要提供詳細的組態。 預設設定會指定ContextHub區段定義的位置。
 
 ```xml
 {
@@ -51,15 +51,15 @@ aem.segmentation存放區候選擴充 [`ContextHub.Store.PersistedJSONPStore`](c
 
 ## contexthub.geolocation範例存放區候選專案 {#contexthub-geolocation-sample-store-candidate}
 
-此 `contexthub.geolocation` 範例存放區候選專案使用Google地圖來取得並儲存有關使用者端位置的資訊。
+`contexthub.geolocation`範例存放區候選專案使用Google Map來取得並儲存有關使用者端位置的資訊。
 
-### 來源位置 {#source-location-geolocation}
+### Source位置 {#source-location-geolocation}
 
 `/libs/settings/cloudsettings/legacy/contexthub/geolocation`
 
 ### 基礎實作 {#base-implementation-geolocation}
 
-此 `contexthub.geolocation` 存放區候選延伸 [`ContextHub.Store.PersistedJSONPStore`](contexthub-api.md#contexthub-store-persistedjsonpstore).
+`contexthub.geolocation`存放區候選專案延伸[`ContextHub.Store.PersistedJSONPStore`](contexthub-api.md#contexthub-store-persistedjsonpstore)。
 
 ### 設定 {#configuration-geolocation}
 
@@ -105,25 +105,25 @@ aem.segmentation存放區候選擴充 [`ContextHub.Store.PersistedJSONPStore`](c
 
 >[!NOTE]
 >
->Chrome 50.x中推出的安全性原則要求所有與地理位置相關的呼叫都必須透過安全連線進行。 因此，如果AEM也透過https執行，AEM會強制使用https進行地理位置API呼叫。 否則，會使用http來遵守相同來源的原則。
+>Chrome 50.x匯入的安全性原則要求所有與地理位置相關的呼叫都必須透過安全連線進行。 因此，如果AEM也透過https執行，AEM會強制使用https進行地理位置API呼叫。 否則，會使用http來遵守相同來源的原則。
 >
->另請參閱 [此Google部落格](https://developers.google.com/web/updates/2016/04/geolocation-on-secure-contexts-only) 以取得有關Chrome中變更的詳細資訊。
+>如需Chrome變更的詳細資訊，請參閱[此Google部落格](https://developers.google.com/web/updates/2016/04/geolocation-on-secure-contexts-only)。
 
 ## contexthub.surferinfo範例存放區候選專案 {#contexthub-surferinfo-sample-store-candidate}
 
 儲存有關目前使用者端環境的資訊，例如裝置、視窗、瀏覽器、日期和時間。
 
-### 來源位置 {#source-location-surferinfo}
+### Source位置 {#source-location-surferinfo}
 
 `/libs/settings/cloudsettings/legacy/contexthub/surferinfo`
 
 ### 基礎實作 {#base-implementation-surferinfo}
 
-此 `contexthub.surferinfo` 存放區候選延伸 [`ContextHub.Store.PersistedStore`](contexthub-api.md#contexthub-store-persistedstore).
+`contexthub.surferinfo`存放區候選專案延伸[`ContextHub.Store.PersistedStore`](contexthub-api.md#contexthub-store-persistedstore)。
 
 ### 設定 {#configuration-surferinfo}
 
-預設設定繼承自 `ContextHub.Store.PersistedStore`.
+預設設定繼承自`ContextHub.Store.PersistedStore`。
 
 ### 資料專案 {#data-items-surferinfo}
 
@@ -178,19 +178,19 @@ aem.segmentation存放區候選擴充 [`ContextHub.Store.PersistedJSONPStore`](c
 
 ## granite.emulators範例存放區候選專案 {#granite-emulators-sample-store-candidate}
 
-此 `granite.emulators` 範例存放區候選專案會儲存使用者端裝置的相關資訊。
+`granite.emulators`範例存放區候選專案儲存有關使用者端裝置的資訊。
 
-### 來源位置 {#source-location-emulators}
+### Source位置 {#source-location-emulators}
 
 `/libs/settings/cloudsettings/legacy/contexthub/emulators`
 
 ### 基礎實作 {#base-implementation-emulators}
 
-此 `granite.emulators` 存放區候選延伸 [`ContextHub.Store.PersistedStore`](contexthub-api.md#contexthub-store-persistedstore).
+`granite.emulators`存放區候選專案延伸[`ContextHub.Store.PersistedStore`](contexthub-api.md#contexthub-store-persistedstore)。
 
 ### 設定 {#configuration-emulators}
 
-預設設定包含一個名為的陣列 `defaultEmulators` 包含不同裝置的相關資訊。 建立存放區時，請視需要在「詳細資料組態」屬性中提供不同的裝置設定檔，格式如下例所示：
+預設組態包含名為`defaultEmulators`的陣列，其中包含不同裝置的相關資訊。 建立存放區時，請視需要在「詳細資料組態」屬性中提供不同的裝置設定檔，格式如下例所示：
 
 ```javascript
 {
@@ -313,13 +313,13 @@ aem.segmentation存放區候選擴充 [`ContextHub.Store.PersistedJSONPStore`](c
 
 儲存目前使用者的相關資訊。
 
-### 來源位置 {#source-location-profile}
+### Source位置 {#source-location-profile}
 
 `/libs/settings/cloudsettings/legacy/contexthub/profile`
 
 ### 基礎實作 {#base-implementation-profile}
 
-此 `granite.profile` 存放區候選延伸 [`ContextHub.Store.PersistedJSONPStore`](contexthub-api.md#contexthub-store-persistedjsonpstore).
+`granite.profile`存放區候選專案延伸[`ContextHub.Store.PersistedJSONPStore`](contexthub-api.md#contexthub-store-persistedjsonpstore)。
 
 ### 設定 {#configuration-profile}
 

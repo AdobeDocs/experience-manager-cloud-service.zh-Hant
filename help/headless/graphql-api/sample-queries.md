@@ -1350,7 +1350,7 @@ query {
 
 >[!NOTE]
 >
->`fragments` 欄位的資料類型為 `fragment-reference`，且已選取 `Article` 模型。查詢傳遞次數 `fragments` 作為陣列 `[Article]`.
+>`fragments` 欄位的資料類型為 `fragment-reference`，且已選取 `Article` 模型。查詢以`[Article]`的陣列傳送`fragments`。
 
 ```graphql
 {
@@ -1796,7 +1796,7 @@ query {
 } 
 ```
 
-## DAM和Dynamic Media資產傳送的範例查詢 {#sample-queries-delivery-DAM-DM}
+## DAM和Dynamic Media Assets傳送的範例查詢 {#sample-queries-delivery-DAM-DM}
 
 針對Web最佳化的影像傳送（DAM資產）：
 
@@ -1806,9 +1806,9 @@ query {
 
 用於將URL傳送至Dynamic Media資產
 
-* 另請參閱 [依URL的Dynamic Media資產傳遞的範例查詢 — 影像參考](/help/headless/graphql-api/content-fragments.md#sample-query-dynamic-media-asset-delivery-by-url-imageref)
+* 請參閱[依URL傳送Dynamic Media資產的範例查詢 — 影像參考](/help/headless/graphql-api/content-fragments.md#sample-query-dynamic-media-asset-delivery-by-url-imageref)
 
-* 另請參閱 [依URL的Dynamic Media資產傳遞的範例查詢 — 多個參考](/help/headless/graphql-api/content-fragments.md#sample-query-dynamic-media-asset-delivery-by-url-multiple-refs)
+* 檢視依URL的Dynamic Media資產傳遞[範例查詢 — 多個參考](/help/headless/graphql-api/content-fragments.md#sample-query-dynamic-media-asset-delivery-by-url-multiple-refs)
 
 ## 範例內容片段結構 (與 GraphQL 搭配使用) {#content-fragment-structure-graphql}
 

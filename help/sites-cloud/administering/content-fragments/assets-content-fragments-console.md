@@ -1,6 +1,6 @@
 ---
-title: 在內容片段主控台中檢視和管理資產
-description: 瞭解如何在Adobe Experience Manager as a Cloud Service的**內容片段主控台**中檢視及管理資產。
+title: 在內容片段主控台中檢視和管理Assets
+description: 瞭解如何在Adobe Experience Manager as a Cloud Service的**內容片段主控台**中檢視和管理Assets。
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: 865e1fa8-2956-45cf-9dd7-034d491808fe
@@ -12,42 +12,42 @@ ht-degree: 6%
 
 ---
 
-# 在內容片段主控台中檢視和管理資產 {#viewing-managing-assets-content-fragments-console}
+# 在內容片段主控台中檢視和管理Assets {#viewing-managing-assets-content-fragments-console}
 
-根據預設， [內容片段主控台](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console) 的Adobe Experience Manager as a Cloud Service會展示您的 [內容片段](/help/sites-cloud/administering/content-fragments/overview.md).
+依預設，Adobe Experience Manager as a Cloud Service的[內容片段主控台](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console)會顯示您的[內容片段](/help/sites-cloud/administering/content-fragments/overview.md)。
 
-不過，您也可以檢視及管理所有其他型別的 **資產** 在此 **內容片段主控台**.
+不過，您也可以在此&#x200B;**內容片段主控台**&#x200B;中檢視及管理所有其他型別的&#x200B;**Assets**。
 
 >[!NOTE]
 >
->內容片段也可以從以下位置存取： **[資產](/help/assets/overview.md)** 主控台。
+>您也可以從&#x200B;**[Assets](/help/assets/overview.md)**&#x200B;主控台存取內容片段。
 
-## 檢視資產 {#viewing-assets}
+## 檢視Assets {#viewing-assets}
 
-您可以使用內容片段控制檯最左側的面板來選取  **資產** 作為要檢視、瀏覽及管理的資源型別：
+您可以使用內容片段主控台最左側的面板，選取&#x200B;**Assets**&#x200B;作為要檢視、瀏覽及管理的資源型別：
 
 ![內容片段主控台 — 導覽](/help/sites-cloud/administering/content-fragments/assets/cf-console-assets-navigation.png)
 
 >[!NOTE]
 >
->雖然內容片段會儲存為資產，但此檢視中不會列出這些內容。
+>雖然內容片段會儲存為Assets，但此檢視表中不會列出這些內容。
 
-## 管理資產 {#managing-assets}
+## 管理Assets {#managing-assets}
 
-從 **資產** 檢視內容片段主控台您可以：
+從內容片段主控台的&#x200B;**Assets**&#x200B;檢視中，您可以：
 
 ![內容片段主控台 — 瀏覽資產](/help/sites-cloud/administering/content-fragments/assets/cf-console-assets-browse.png)
 
-* 導覽結構並瀏覽您的資產； [與「資產」主控台中的功能類似](/help/assets/navigate-assets-view.md)
+* 瀏覽結構並瀏覽您的Assets；[類似於Assets主控台中的功能](/help/assets/navigate-assets-view.md)
 * [建立資料夾](/help/assets/manage-digital-assets.md#creating-folders)
 * [上傳資產](/help/assets/add-delete-assets-view.md)
 * 設定檢視型別（「清單」、「格點」、「收藏館」、「瀑布」）；並在適當時設定可見欄
 
-您也可以對一個或多個選取的資產採取動作：
+您也可以針對一或多個選取的Assets採取動作：
 
 ![內容片段主控台 — 所選資產的動作](/help/sites-cloud/administering/content-fragments/assets/cf-console-assets-actions.png)
 
-另請參閱 [管理資產](/help/assets/manage-organize-assets-view.md) 以取得下列專案的詳細資訊：
+請參閱[管理Assets](/help/assets/manage-organize-assets-view.md)以取得更多詳細資料：
 
 * 詳細資料
 * 下載

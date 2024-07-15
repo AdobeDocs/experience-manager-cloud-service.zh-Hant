@@ -15,13 +15,13 @@ ht-degree: 60%
 
 # 為REST端點提交動作設定最適化表單
 
-使用 **[!UICONTROL 提交至REST端點]** 將提交的資料發佈至REST URL的動作。 該 URL 可以是內部伺服器 (呈現表單的伺服器) 或外部伺服器。
+使用&#x200B;**[!UICONTROL 提交至REST端點]**&#x200B;動作，將提交的資料發佈至REST URL。 該 URL 可以是內部伺服器 (呈現表單的伺服器) 或外部伺服器。
 
-AEM as a Cloud Service提供多種立即可用的提交動作，用於處理表單提交。 如需這些選項的詳細資訊，請參閱 [最適化表單提交動作](/help/forms/configure-submit-actions-core-components.md)  文章。
+AEM as a Cloud Service提供多種立即可用的提交動作，用於處理表單提交。 您可以在[最適化表單提交動作](/help/forms/configure-submit-actions-core-components.md)文章中進一步瞭解這些選項。
 
 ## 優點
 
-設定的 **[!UICONTROL 提交至REST端點]** 最適化Forms的提交動作如下：
+為Adaptive Forms設定&#x200B;**[!UICONTROL 提交至REST端點]**&#x200B;提交動作的部分優點包括：
 
 * 透過RESTful API，可緊密整合表單資料與外部系統和服務。
 * 它提供處理最適化Forms資料提交作業的彈性，支援動態和複雜的資料結構。
@@ -35,8 +35,8 @@ AEM as a Cloud Service提供多種立即可用的提交動作，用於處理表�
 1. 開啟內容瀏覽器，然後選取最適化表單的「**[!UICONTROL 指引容器]**」元件。
 1. 按一下「指引容器」屬性 ![指引屬性](/help/forms/assets/configure-icon.svg) 圖示。此時會開啟「最適化表單容器」對話框。
 1. 按一下「**[!UICONTROL 提交]**」標籤。
-1. 從 **[!UICONTROL 提交動作]** 下拉式清單，選取 **[!UICONTROL 提交至Rest端點]**.
-   ![提交至Rest端點的動作設定](/help/forms/assets/submit-action-restendpoint.png)
+1. 從&#x200B;**[!UICONTROL 提交動作]**&#x200B;下拉式清單中，選取&#x200B;**[!UICONTROL 提交至Rest端點]**。
+   提交至Rest端點的![動作設定](/help/forms/assets/submit-action-restendpoint.png)
 
    若要將資料發佈到內部伺服器，請提供資源的路徑。資料會發佈到資源的路徑。例如 `/content/restEndPoint`。對於此類發佈要求，會使用提交要求的驗證資訊。
 

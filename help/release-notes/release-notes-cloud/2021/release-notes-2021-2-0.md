@@ -1,6 +1,6 @@
 ---
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2021.2.0 版發行說明。'
-description: '"[!DNL Adobe Experience Manager] 2021.2.0版as a Cloud Service發行說明。」'
+description: "[!DNL Adobe Experience Manager]個2021.2.0as a Cloud Service發行說明。"
 exl-id: 88dac54b-cc12-44a0-b429-6e691221f806
 feature: Release Information
 role: Admin
@@ -12,26 +12,26 @@ ht-degree: 31%
 ---
 
 
-# 版本注意事項 [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
+# [!DNL Adobe Experience Manager]as a Cloud Service的發行說明 {#release-notes}
 
-以下區段會概述以下的一般發行說明： [!DNL Experience Manager] as a Cloud Service。
+以下章節概述[!DNL Experience Manager]as a Cloud Service的一般發行說明。
 
 ## 發行日期 {#release-date}
 
-的發行日期 [!DNL Adobe Experience Manager] 2021.2.0as a Cloud Service版本為2021年2月25日。
+[!DNL Adobe Experience Manager]as a Cloud Service2021.2.0的發行日期為2021年2月25日。
 下列版本(2021.3.0)將於2021年3月25日發行。
 
-## [!DNL Adobe Experience Manager Sites] as a Cloud Service {#sites}
+## [!DNL Adobe Experience Manager Sites]個as a Cloud Service {#sites}
 
 ### Headless內容管理 {#headless}
 
-* **[用於內容片段傳送的GraphQL API](/help/headless/graphql-api/content-fragments.md)**：能夠使用GraphQL語法和根據內容片段模型的結構描述查詢內容片段，以產生JSON格式的輸出。
+* **[用於內容片段傳送的GraphQL API](/help/headless/graphql-api/content-fragments.md)**：能夠使用GraphQL語法以及根據內容片段模型的結構描述來查詢內容片段，以產生JSON格式的輸出。
 
-* **[GraphQL API要求的驗證支援](/help/headless/security/authentication.md)**：能夠使用伺服器端API的存取權杖來驗證GraphQL API請求。
+* **[GraphQL API要求的驗證支援](/help/headless/security/authentication.md)**：能夠使用伺服器端API的存取權杖來驗證GraphQL API要求。
 
-* **[RemotePage元件](/help/implementing/developing/hybrid/remote-page.md)**：已新增在AEM中對於檢視及編輯外部SPA的支援。
+* **[RemotePage元件](/help/implementing/developing/hybrid/remote-page.md)**：新增在AEM中檢視及編輯外部SPA的支援。
 
-* **[在AEM內編輯外部SPA](/help/implementing/developing/hybrid/editing-external-spa.md)**：已新增將獨立單頁應用程式上傳至AEM執行個體、新增內容的可編輯區段及啟用編寫的功能。
+* **[在AEM內編輯外部SPA](/help/implementing/developing/hybrid/editing-external-spa.md)**：已新增將獨立單頁應用程式上傳到AEM執行個體、新增可編輯的內容區段及啟用編寫的功能。
 
 * GraphQL API的增強型JSON輸出，包括輸出JSON格式的RTF和地區設定的功能。
 
@@ -55,20 +55,20 @@ ht-degree: 31%
 
 ## [!DNL Assets] 的新增功能 {#what-is-new-assets}
 
-* 資產來源可透過 [!DNL Experience Manager Assets Brand Portal]. 這有助於從機構使用者處取得資產，用於新的行銷活動、攝影和專案。
+* 可使用[!DNL Experience Manager Assets Brand Portal]來取得Assets。 這有助於從機構使用者處取得資產，用於新的行銷活動、攝影和專案。
 
-* [!DNL Experience Manager Assets] as a [!DNL Cloud Service] 有權預先設定 [!DNL Brand Portal] 執行個體。 此 [!DNL Cloud Manager] 使用者可以啟用 [!DNL Brand Portal] 於 [!DNL Experience Manager Assets] as a [!DNL Cloud Service]. 另請參閱 [啟動Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/brand-portal/configure-aem-assets-with-brand-portal.html).
+* [!DNL Experience Manager Assets] as a [!DNL Cloud Service]有權擁有預先設定的[!DNL Brand Portal]執行個體。 [!DNL Cloud Manager]使用者可以在[!DNL Experience Manager Assets]啟動[!DNL Brand Portal]做為[!DNL Cloud Service]。 請參閱[啟用Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/brand-portal/configure-aem-assets-with-brand-portal.html)。
 
-* 企業現在可以使用以下專案取得資產： [!DNL Brand Portal]. 資產來源功能使用 [!DNL Brand Portal] 協助客戶與機構使用者互動，以取得新行銷活動、攝影和專案的資產。 另請參閱 [中的資產來源 [!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=zh-Hant).
+* 企業現在可以使用[!DNL Brand Portal]來取得資產。 資產來源功能使用[!DNL Brand Portal]來協助客戶與機構使用者互動，以獲取資產用於新的行銷活動、攝影和專案。 請參閱 [!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=zh-Hant)中的[資產來源。
 
-* 此 [!DNL Brand Portal] 使用報告現在只會顯示作用中的使用者。 現在不會顯示非作用中的使用者。 作用中的使用者是指其帳戶已指派給中某個產品設定檔的使用者。 [!DNL Admin Console]. 另請參閱 [[!DNL Brand Portal] 報表](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/admin-tools/brand-portal-reports.html).
+* [!DNL Brand Portal]使用報告現在只會顯示作用中的使用者。 現在不會顯示非作用中的使用者。 作用中的使用者是指已在[!DNL Admin Console]中將其帳戶指派給產品設定檔的使用者。 檢視[[!DNL Brand Portal] 報告](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/admin-tools/brand-portal-reports.html)。
 
-* 在 [!DNL Brand Portal]，推出新的下載設定，此設定可讓您在下載檔案夾、集合等專案時，為每個資產建立個別檔案夾。 另請參閱 [下載設定](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/download/brand-portal-download-assets.html).
+* 在[!DNL Brand Portal]中引進了新的下載設定，此設定可讓您在下載資料夾、集合等專案時，為每個資產建立個別資料夾。 請參閱[下載設定](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/download/brand-portal-download-assets.html)。
 
 ## [!DNL Assets]中的錯誤修正 {#bug-fixes-assets}
 
 * 選取多個資產以更新屬性時，有時會發生錯誤或取消選取資產的屬性會更新。 (CQ-4316532)
-* 嘗試開啟時 [!UICONTROL 資產管理搜尋邊欄]，頁面會保持空白並按一下 [!UICONTROL 編輯] > [!UICONTROL 設定] 產生錯誤。 (CQ-4315079)
+* 嘗試開啟[!UICONTROL Assets Admin Search邊欄]時，頁面保持空白，按一下[!UICONTROL 編輯] > [!UICONTROL 設定]會產生錯誤。 (CQ-4315079)
 * 解決命名衝突後建立現有資產的新版本時，原始資產的中繼資料會被覆寫。 (CQ-4313594)
 * 列印具有長註釋文字的資產時，即使有可用空間，註釋文字也會被裁剪。 (CQ-4314101)
 
@@ -78,11 +78,11 @@ ht-degree: 31%
 
 * 產品體驗管理：使用體驗片段個別豐富產品目錄頁面。
 
-* 擴充產品主控台屬性，以顯示連結的資產和體驗片段，包括快速導覽至關聯內容的動作。
+* 擴充產品主控台屬性以顯示連結的Assets和體驗片段，包括快速導覽至關聯內容的動作。
 
-* 已發行CIF Venia參考網站 — 2021.02.24，其中包含最新CIF核心元件1.8.0版。另請參閱 [CIF Venia參考網站](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.02.24) 以取得更多詳細資料。
+* 已發行CIF Venia參考網站 — 2021.02.24，其中包含最新CIF核心元件1.8.0版。如需詳細資訊，請參閱[CIF Venia參考網站](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.02.24)。
 
-* 已發行CIF Core Components v1.8.0。另請參閱 [CIF Core Components](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.8.0) 以取得更多詳細資料。
+* 已發行CIF Core Components v1.8.0。如需詳細資訊，請參閱[CIF核心元件](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.8.0)。
 
 ## Cloud Manager {#cloud-manager}
 
@@ -138,9 +138,9 @@ AEM as a Cloud Service 2021.2.0 中 Cloud Manager 的發行日期為 2021 年 2 
 ### 內容轉移工具的新增功能 {#what-is-new-ctt}
 
 * 內容轉移工具新增功能和UI — 使用者對應工具。 此功能會在內容移轉活動過程中，自動將現有的使用者和群組對應至其AdobeIdentity Management系統ID。
-另請參閱 [使用使用者對應工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html) 以取得更多詳細資料。
+如需詳細資訊，請參閱[使用使用者對應工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html)。
 * 內容轉移工具現在會移轉在移轉集中參考的所有群組和使用者（包括子項）。
-* 允許使用者選取底下的特定路徑 `/etc` 建立移轉集時。
+* 建立移轉集時，允許使用者選取`/etc`下的特定路徑。
 
 ## 最佳做法分析工具 {#best-practices-analyzer}
 
@@ -161,9 +161,9 @@ Best Practices Analyzer v2.1.2的發行日期為2021年2月18日。
 ### 程式碼重構工具的新增功能 {#what-is-new-crt}
 
 * 新版AIO-CLI外掛程式已發行。 此外掛程式的最新版本包含Repository Modernizer的多項錯誤修正。
-另請參閱 [Unified Experience](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html#benefits) 以進一步瞭解此外掛程式。
+請參閱[整合式體驗](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html#benefits)，深入瞭解此外掛程式。
 
 ### 錯誤修正 {#bug-fixes-crt}
 
 * 對Repository Modernizer進行的多項錯誤修正。
-另請參閱 [GitHub資源： aem-cloud-service-source-migration](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) 以取得更多詳細資料。
+如需詳細資訊，請參閱[GitHub資源： aem-cloud-service-source-migration](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer)。

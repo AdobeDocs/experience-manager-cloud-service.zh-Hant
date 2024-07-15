@@ -14,19 +14,19 @@ ht-degree: 1%
 
 # 使用前端管道開發網站 {#developing-site-with-front-end-pipeline}
 
-[有了前端管道，](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) 前端開發人員可獲得更多獨立性，開發流程可獲得大幅度的速度。 本檔案說明此程式的運作方式以及一些需要注意的事項，以便您能夠充分發揮此程式的潛力。
+[有了前端管道，](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end)給前端開發人員更多的獨立性，開發程式可以大幅提升速度。 本檔案說明此程式的運作方式以及一些需要注意的事項，以便您能夠充分發揮此程式的潛力。
 
 >[!TIP]
 >
->如果您尚不熟悉如何使用前端管道及其可能帶來的好處，請檢視 [快速網站建立歷程](/help/journey-sites/quick-site/overview.md) 有關如何快速部署新網站並完全獨立於後端開發來自訂其主題的範例。
+>如果您還不熟悉如何使用前端管道及其帶來的好處，請檢視[快速網站建立歷程](/help/journey-sites/quick-site/overview.md)，以示範如何快速部署新網站並完全獨立於後端開發來自訂其主題。
 
 ## 前端建置合約 {#front-end-build-contract}
 
-類似於 [完整棧疊組建環境，](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) 前端管道有自己的環境。 開發人員可使用此管道靈活運用，只要遵循以下前端建置合約。
+與[完整棧疊組建環境](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)類似，前端管道有自己的環境。 開發人員可使用此管道靈活運用，只要遵循以下前端建置合約。
 
-前端管道需要前端Node.js專案才能使用 `build` 指令碼指示詞，用於產生其所部署的組建。 這是因為Cloud Manager使用命令 `npm run build` 為前端組建產生可部署的專案。
+前端管道需要前端Node.js專案才能使用`build`指令碼指示詞來產生它部署的組建。 這是因為Cloud Manager使用命令`npm run build`產生前端組建的可部署專案。
 
-產生的內容 `dist` 資料夾是Cloud Manager最終部署的內容，可作為靜態檔案使用。 這些檔案由AEM外部託管，但可透過 `/content/...` 已部署環境上的URL。
+`dist`資料夾的結果內容將由Cloud Manager最終部署，並作為靜態檔案提供。 這些檔案由外部託管至AEM，但可透過已部署環境上的`/content/...` URL取得。
 
 ## 節點版本 {#node-versions}
 
@@ -37,17 +37,17 @@ ht-degree: 1%
 * 16
 * 18
 
-您可以使用 `NODE_VERSION` [環境變數](/help/implementing/cloud-manager/environment-variables.md) 以設定所要的版本。
+您可以使用`NODE_VERSION` [環境變數](/help/implementing/cloud-manager/environment-variables.md)來設定所要的版本。
 
-## 單一真實來源 {#single-source-of-truth}
+## 真實的單一Source {#single-source-of-truth}
 
 一般的良好做法是維護部署至AEM的單一信任來源。 Cloud Manager的目標是讓該單一真實來源變得顯而易見。 但是，由於前端管道允許將部分代碼的位置解耦，因此前端管道的正確設定需承擔一些額外的責任。 必須注意不要建立多個前端管道來部署到相同環境中的相同網站。
 
 因此，特別是當建立了幾個前端管道時，建議保持如以下的系統化命名慣例：
 
-* 前端模組的名稱，由 `name` 的屬性 `package.json` 檔案中，應包含其套用到的網站名稱。 例如，對於位於 `/content/wknd`，前端模組的名稱會類似 `wknd-theme`.
-* 當前端模組與其他模組共用相同的Git存放庫時，其資料夾名稱應等於或包含前端模組的相同名稱。 例如，如果前端模組命名為 `wknd-theme`，則封入資料夾名稱類似於 `wknd-theme-sources`.
-* Cloud Manager前端管道的名稱也應包含前端模組的名稱，並新增其部署的環境（生產或開發）。 例如，對於名為的前端模組 `wknd-theme`，此管道的名稱可能如下 `wknd-theme-prod`.
+* 前端模組的名稱（由`package.json`檔案的`name`屬性定義）應包含其套用的網站名稱。 例如，對於位於`/content/wknd`的網站，前端模組的名稱會類似`wknd-theme`。
+* 當前端模組與其他模組共用相同的Git存放庫時，其資料夾名稱應等於或包含前端模組的相同名稱。 例如，如果前端模組名為`wknd-theme`，則封入資料夾名稱會類似`wknd-theme-sources`。
+* Cloud Manager前端管道的名稱也應包含前端模組的名稱，也應新增其部署的環境（生產或開發）。 例如，對於名為`wknd-theme`的前端模組，管道的名稱可能類似於`wknd-theme-prod`。
 
 此慣例應有效防止下列部署錯誤：
 
@@ -69,13 +69,13 @@ ht-degree: 1%
       1. URL：前端團隊必須知道該開發環境的URL。
       1. ACL：前端團隊必須獲得具有類似「貢獻者」許可權的本機AEM使用者。
       1. Git：前端團隊必須具有針對該開發環境的前端模組的個別Git位置。
-         * 通常的做法是建立 `dev` 分支，如此一來針對開發環境所做的變更，便可輕鬆合併回 `main` 要部署到生產環境的分支。
-      1. 管道：前端團隊必須具有部署到開發環境的前端管道。 該管道將部署通常位於中的前端模組 `dev` 分支，如上一點所述。
+         * 通常的做法是建立`dev`分支，這樣對開發環境所做的變更就可以輕鬆地合併回要部署到生產環境的`main`分支。
+      1. 管道：前端團隊必須具有部署到開發環境的前端管道。 如前所述，該管道將部署通常位於`dev`分支中的前端模組。
 1. 前端團隊接著會讓CSS和JS程式碼與舊輸出和新輸出搭配使用。
    1. 一如既往，在本機開發：
-      1. 此 `npx aem-site-theme-builder proxy` 在前端模組內執行的命令會啟動一個從AEM環境請求內容的Proxy伺服器，同時將前端模組的CSS和JS檔案替換為來自本機的檔案 `dist` 資料夾。
-      1. 設定 `AEM_URL` 變數 `.env` 檔案可控制本機Proxy伺服器使用內容的AEM環境。
-      1. 變更此專案的值 `AEM_URL` 因此，您可以在生產環境和開發環境之間切換以調整CSS和JS，使其適合這兩個環境。
+      1. 在前端模組內執行的`npx aem-site-theme-builder proxy`命令會啟動一個從AEM環境請求內容的Proxy伺服器，同時將前端模組的CSS和JS檔案取代為來自本機`dist`資料夾的檔案。
+      1. 設定隱藏`.env`檔案中的`AEM_URL`變數，可控制本機Proxy伺服器使用內容的AEM環境。
+      1. 因此，變更此`AEM_URL`的值可讓您在生產環境和開發環境之間切換，以調整CSS和JS，使其適合兩個環境。
       1. 它必須與呈現新輸出的開發環境以及呈現舊輸出的生產環境搭配使用。
    1. 前端工作是在更新的前端模組適用於兩個環境時完成，並部署至兩個環境。
 1. 然後，後端團隊可以透過部署程式碼來更新生產環境，該程式碼會透過完整棧疊管道來呈現新HTML和/或JSON輸出。
@@ -83,5 +83,5 @@ ht-degree: 1%
 
 ## 其他資源 {#additional-resources}
 
-* [網站主題](/help/sites-cloud/administering/site-creation/site-themes.md)  — 瞭解如何使用AEM網站主題來自訂網站的樣式和設計。
-* [AEM網站主題產生器](https://github.com/adobe/aem-site-theme-builder) - Adobe提供AEM網站主題產生器，作為一組用於建立新網站主題的指令碼。
+* [網站主題](/help/sites-cloud/administering/site-creation/site-themes.md) — 瞭解如何使用AEM網站主題來自訂網站的樣式和設計。
+* [AEM網站主題產生器](https://github.com/adobe/aem-site-theme-builder) -Adobe提供AEM網站主題產生器，作為建立新網站主題的一組指令碼。

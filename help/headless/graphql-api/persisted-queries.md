@@ -258,35 +258,37 @@ query getAdventuresByActivity($activity: String!) {
 <AEM_HOST>/graphql/execute.json/wknd/adventures-by-activity%3Bactivity%3DCamping
 ```
 
-UTF-8編碼 `%3B` 為 `;` 和 `%3D` 是的編碼 `=`. 查詢變數和任何特殊字元必須[正確編碼](#encoding-query-url)才能執行持續性查詢。
+UTF-8編碼`%3B`適用於`;`，而`%3D`是`=`的編碼。 查詢變數和任何特殊字元必須[正確編碼](#encoding-query-url)才能執行持續性查詢。
 
 ### 使用查詢變數 — 最佳實務 {#query-variables-best-practices}
 
 在查詢中使用變數時，有一些最佳實務需要遵循：
 
-* 編碼一般而言，建議您一律編碼所有特殊字元，例如 `;`， `=`， `?`， `&`，以及其他專案。
+* 編碼
+一般而言，建議您一律編碼所有特殊字元；例如`;`、`=`、`?`、`&`等。
 
-* 使用多個變數（以分號分隔）的分號持續性查詢必須具備下列其中一項：
-   * 分號已編碼(`%3B`)；對URL編碼也可達到此目的
+* 分號
+使用多個變數（以分號分隔）的持續性查詢必須具備下列其中一項：
+   * 以分號編碼(`%3B`)；對URL進行編碼也會達到此目的
    * 或在查詢結尾加上分號
 
 * `CACHE_GRAPHQL_PERSISTED_QUERIES`
-時間 `CACHE_GRAPHQL_PERSISTED_QUERIES` 會為Dispatcher啟用，然後是包含 `/` 或 `\` 值中的字元會在Dispatcher層級編碼兩次。
+為Dispatcher啟用`CACHE_GRAPHQL_PERSISTED_QUERIES`時，其值中包含`/`或`\`字元的引數會在Dispatcher層級編碼兩次。
 若要避免此情況：
 
-   * 啟用 `DispatcherNoCanonURL` 在Dispatcher上。
-這會指示Dispatcher將原始URL轉送至AEM，以避免重複的編碼。
-不過，此設定目前僅適用於 `vhost` 層級，因此如果您已有Dispatcher設定來重新寫入URL （例如使用縮短的URL時），您可能需要個別的 `vhost` 用於持續查詢URL。
+   * 在Dispatcher上啟用`DispatcherNoCanonURL`。
+這會指示Dispatcher將原始URL轉送至AEM，以避免重複編碼。
+不過，此設定目前僅適用於`vhost`層級，因此如果您已有Dispatcher設定可重寫URL （例如使用縮短的URL時），則持續查詢URL可能需要個別的`vhost`。
 
-   * 傳送 `/` 或 `\` 未編碼的字元。
-呼叫持續查詢URL時，請確定 `/` 或 `\` 持續查詢變數的值中，字元會維持未編碼狀態。
+   * 傳送`/`或`\`個未編碼的字元。
+呼叫持久查詢URL時，請確定所有`/`或`\`字元在持久查詢變數的值中保持未編碼。
      >[!NOTE]
      >
-     >只有當 `DispatcherNoCanonURL` 無法實作解決方案，原因不明。
+     >只有由於任何原因而無法實作`DispatcherNoCanonURL`解決方案時，才建議使用此選項。
 
 * `CACHE_GRAPHQL_PERSISTED_QUERIES`
 
-  時間 `CACHE_GRAPHQL_PERSISTED_QUERIES` 會為Dispatcher啟用，然後 `;` 字元無法用於變數的值中。
+  為Dispatcher啟用`CACHE_GRAPHQL_PERSISTED_QUERIES`時，`;`字元不能用於變數的值。
 
 ## 快取持續性查詢 {#caching-persisted-queries}
 
@@ -409,7 +411,7 @@ curl -u admin:admin -X POST \
 
 預設情況下，`PersistedQueryServlet` 執行查詢時，會傳送 `200` 回應，無論實際結果如何。
 
-您可以 [設定OSGi設定](/help/implementing/deploying/configuring-osgi.md) 針對 **持久查詢服務設定** 控制是否傳回更詳細的狀態代碼 `/execute.json/persisted-query` 端點，當持續查詢中發生錯誤時。
+您可以[設定&#x200B;**持續查詢服務組態**&#x200B;的OSGi設定](/help/implementing/deploying/configuring-osgi.md)，以便在持續查詢發生錯誤時，控制`/execute.json/persisted-query`端點是否傳回更詳細的狀態代碼。
 
 >[!NOTE]
 >
@@ -417,15 +419,16 @@ curl -u admin:admin -X POST \
 
 欄位 `Respond with application/graphql-response+json`(`responseContentTypeGraphQLResponseJson`) 可依要求定義：
 
-* `false` (預設值)：持續性查詢成功與否並不重要。此 `Content-Type` 傳回的標頭為 `application/json`，以及 `/execute.json/persisted-query` *一直* 傳回狀態代碼 `200`.
+* `false` (預設值)：持續性查詢成功與否並不重要。傳回的`Content-Type`標頭是`application/json`，`/execute.json/persisted-query` *一律*&#x200B;會傳回狀態碼`200`。
 
-* `true`：傳回的 `Content-Type` 是 `application/graphql-response+json`，而端點會在執行持續查詢時發生任何形式的錯誤時，傳回適當的回應代碼：
+* `true`：
+傳回的`Content-Type`是`application/graphql-response+json`，當執行持續查詢時發生任何形式的錯誤時，端點會傳回適當的回應代碼：
 
   | 程式碼 | 說明 |
   |--- |--- |
   | 200 | 成功的回應 |
-  | 400 | 表示缺少標頭，或持續查詢路徑有問題。 例如，未指定組態名稱、未指定尾碼及其他。<br>另請參閱 [疑難排解 — 未設定GraphQL端點](/help/headless/graphql-api/persisted-queries-troubleshoot.md#missing-path-query-url). |
-  | 404 | 找不到請求的資源。 例如，伺服器上無法使用Graphql端點。<br>另請參閱 [疑難排解 — GraphQL持續查詢URL中缺少路徑](/help/headless/graphql-api/persisted-queries-troubleshoot.md#graphql-endpoint-not-configured). |
+  | 400 | 表示缺少標頭，或持續查詢路徑有問題。 例如，未指定組態名稱、未指定尾碼及其他。<br>請參閱[疑難排解 — 未設定GraphQL端點](/help/headless/graphql-api/persisted-queries-troubleshoot.md#missing-path-query-url)。 |
+  | 404 | 找不到請求的資源。 例如，伺服器上無法使用Graphql端點。<br>請參閱[疑難排解 — GraphQL持續查詢URL](/help/headless/graphql-api/persisted-queries-troubleshoot.md#graphql-endpoint-not-configured)中缺少路徑。 |
   | 500 | 內部伺服器錯誤。 例如，驗證錯誤、持續性錯誤和其他。 |
 
   >[!NOTE]
@@ -477,8 +480,8 @@ URL 可以分解成以下幾個部分：
 1. 在套件定義對話框中，在 **一般**&#x200B;下輸入&#x200B;**名稱**，例如「wknd-persistent-queries」。
 1. 輸入版本號碼，例如「1.0」。
 1. 在&#x200B;**篩選器**&#x200B;下加入新&#x200B;**篩選器**。使用路徑尋找工具選取設定下方的 `persistentQueries` 資料夾。例如，對於 `wknd` 設定，完整路徑將為 `/conf/wknd/settings/graphql/persistentQueries`。
-1. 選取 **儲存** 以儲存新的封裝定義並關閉對話方塊。
-1. 選取 **建置** 按鈕建立封裝。
+1. 選取&#x200B;**儲存**&#x200B;以儲存新的封裝定義並關閉對話方塊。
+1. 選取已建立封裝定義中的&#x200B;**建置**&#x200B;按鈕。
 
 建置套件後，您可以：
 

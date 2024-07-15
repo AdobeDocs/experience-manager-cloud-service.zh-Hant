@@ -19,7 +19,7 @@ ht-degree: 0%
 
 ### 表單資料 {#form-data}
 
-Communications API接受通常以設計工具建立的表單設計和XML表單資料作為輸入。 若要在檔案中填入資料，XML元素必須存在於您要填入的每個表單欄位的XML表單資料中。 XML元素名稱必須符合欄位名稱。 如果XML元素未對應至表單欄位，或XML元素名稱不符合欄位名稱，則會忽略該元素。 不需要比對XML元素的顯示順序。 重要因素是XML元素是以對應的值指定的。
+通訊API接受通常在Designer中建立的表單設計和XML表單資料作為輸入。 若要在檔案中填入資料，XML元素必須存在於您要填入的每個表單欄位的XML表單資料中。 XML元素名稱必須符合欄位名稱。 如果XML元素未對應至表單欄位，或XML元素名稱不符合欄位名稱，則會忽略該元素。 不需要比對XML元素的顯示順序。 重要因素是XML元素是以對應的值指定的。
 
 請考量下列範例貸款申請表單：
 
@@ -62,7 +62,7 @@ Communications API接受通常以設計工具建立的表單設計和XML表單�
 
 若要完整存取Communications API的轉譯功能，建議您使用XDP檔案作為輸入。 有時可以使用PDF檔案。 不過，使用PDF檔案作為輸入有限制：
 
-不包含XFA資料流的PDF檔案無法轉譯為PostScript、PCL或ZPL。 Communications API可將具有XFA串流（即在Designer中建立的表單）的PDF檔案轉譯為雷射影像和標籤格式。 如果PDF檔案經過簽署、認證或包含使用許可權(使用AEM FormsReader擴充功能服務套用)，將無法轉譯為上述列印格式。
+不包含XFA資料流的PDF檔案無法轉譯為PostScript、PCL或ZPL。 通訊API可以將XFA串流(即在Designer中建立的表單)的PDF檔案轉譯為雷射影像和標籤格式。 如果PDF檔案經過簽署、認證或包含使用許可權(使用AEM FormsReader擴充功能服務套用)，將無法轉譯為上述列印格式。
 
 
 ### 可列印區域 {#printable-areas}
@@ -73,16 +73,16 @@ Communications API接受通常以設計工具建立的表單設計和XML表單�
 
 ### 僅適用於XFA表單的指令碼(XDP/PDF) {#scripts}
 
-搭配Communications API使用的表單設計可以包含伺服器上執行的指令碼。 確認表單設計不包含在使用者端上執行的指令碼。 如需建立表單設計指令集的相關資訊，請參閱 [Designer說明](use-forms-designer.md).
+搭配Communications API使用的表單設計可以包含伺服器上執行的指令碼。 確認表單設計不包含在使用者端上執行的指令碼。 如需關於建立表單設計指令碼的資訊，請參閱[Designer說明](use-forms-designer.md)。
 
 <!-- #### Working with Fonts
  Document Considerations for Working with Fonts>> -->
 
 ### 字型對應 {#font-mapping}
 
-若要設計使用印表機內建字型的表單，請在Designer中選擇符合印表機可用字型的字型名稱。 PCL或PostScript支援的字型清單位於對應的裝置設定檔（XDC檔案）中。 或者，也可以建立字型對映來將非印表機駐留字型對應到印表機駐留字型的不同字型名稱。 例如，在PostScript案例中，對Arial®字型的參照可以對應到印表機所在的Helvetica®字型。
+若要設計使用印表機內建字型的表單，請在Designer中選擇符合印表機可用字型的字型名稱。 PCL或PostScript支援的字型清單位於對應的裝置設定檔（XDC檔案）中。 或者，也可以建立字型對映來將非印表機駐留字型對應到印表機駐留字型的不同字型名稱。 例如，在PostScript案例中，對Arial®字型的參照可以對應至印表機所在的Helvetica®字型。
 
-如果字型已安裝在使用者端電腦上，則可在Designer的下拉式清單中找到它。 如果未安裝字型，則必須手動指定字型名稱。 Designer中的「永久取代無法使用的字型」選項可以關閉。 否則，當XDP檔案儲存在Designer中時，替代字型名稱會寫入XDP檔案。 這表示不使用印表機內建的字型。
+如果字型已安裝在使用者端電腦上，則可在Designer的下拉式清單中找到它。 如果未安裝字型，則必須手動指定字型名稱。 Designer中的「永久取代無法使用的字型」選項可能會關閉。 否則，當XDP檔案儲存在Designer中時，替代字型名稱會寫入XDP檔案。 這表示不使用印表機內建的字型。
 
 OpenType有兩種型別®字型。 一種型別是PCL支援的TrueTypeOpenType®字型。 另一個是CFFOpenType®。 PDF和PostScript輸出支援內嵌Type-1、TrueType和OpenType®字型。 PCL輸出支援內嵌的TrueType字型。
 
@@ -127,7 +127,7 @@ Type-1和OpenType®字型未內嵌在PCL輸出中。 使用Type-1和OpenType®�
 
 ### 使用XCI設定檔案 {#working-with-xci-files}
 
-通訊API使用XCI設定檔案來執行工作，例如控制輸出是單一面板還是分頁。 雖然此檔案包含可設定的設定，但通常不會修改此值。 <!-- The default.xci file is located in the svcdata\XMLFormService folder. -->
+通訊API使用XCI設定檔案來執行工作，例如控制輸出是單一面板還是分頁。 雖然此檔案包含可設定的設定，但通常不會修改此值。<!-- The default.xci file is located in the svcdata\XMLFormService folder. -->
 
 您可以在使用Communications API時傳遞修改過的XCI檔案。 這樣做時，請建立預設檔案的副本，僅變更需要修改的值以滿足您的業務需求，並使用修改過的XCI檔案。
 
@@ -163,7 +163,7 @@ Type-1和OpenType®字型未內嵌在PCL輸出中。 使用Type-1和OpenType®�
 
 * 您只能在列印選項清單中使用一次特定的轉譯型別(PDF、列印)。 例如，不能有兩個PRINT選項，每個選項都指定PCL演算型別。
 
-* 對於批次設定，只允許一個OutputType (PDF、列印)和RenderType （PostScript、PCL、IPL、ZPL等）值組合的執行個體。
+* 對於批次設定，只允許一個OutputType (PDF、PRINT)和RenderType (PostScript、PCL、IPL、ZPL等)值組合的執行個體。
 
 * 對於非同步API （批次處理），預設記錄層級設定為2。 您可以使用自訂XCI將記錄層級變更為1。
 
@@ -179,17 +179,17 @@ Type-1和OpenType®字型未內嵌在PCL輸出中。 使用Type-1和OpenType®�
 
 **我可以使用watched資料夾或其他儲存機制來儲存輸入和輸出嗎？**
 
-目前，您可以使用Microsoft Azure Storage來儲存輸入資料和產生的檔案。 Microsoft Azure儲存體提供各種選項來 [自動化資料移動作業](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10).
+目前，您可以使用Microsoft Azure Storage來儲存輸入資料和產生的檔案。 Microsoft Azure儲存體提供各種選項，可[自動化資料移動作業](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10)。
 
-**Experience Manager FormsCloud Service授權是否包含Microsoft Azure儲存體帳戶？**
+**Microsoft Azure儲存體帳戶是否包含在Experience Manager FormsCloud Service授權中？**
 
 Microsoft Azure儲存體帳戶獨立於Experience Manager FormsCloud Service授權。
 
-**通訊API會將資料儲存在Experience Manager FormsCloud Service伺服器上嗎？**
+**通訊API會在Experience Manager FormsCloud Service伺服器上儲存資料嗎？**
 
 輸入和輸出資料僅儲存在Microsoft Azure Storage上。
 
-**通訊API是否僅適用於Experience Manager FormsCloud Service？ 我可以在內部部署環境中取得類似功能嗎？**
+**通訊API是否僅適用於Experience Manager FormsCloud Service？ 我可以在內部部署環境中取得類似的功能嗎？**
 
 您可以使用AEM Forms Output服務將範本(XFA或PDF)與客戶資料結合，以產生PDF、PS、PCL和ZPL格式的檔案。
 
@@ -209,7 +209,7 @@ Microsoft Azure儲存體帳戶獨立於Experience Manager FormsCloud Service授�
 >[!MORELIKETHIS]
 >
 >* [AEM Formsas a Cloud Service通訊簡介](/help/forms/aem-forms-cloud-service-communications-introduction.md)
->* [最適化Forms的AEM Formsas a Cloud Service架構和通訊API](/help/forms/aem-forms-cloud-service-architecture.md)
+>* 最適化Forms和通訊API的[AEM Formsas a Cloud Service架構](/help/forms/aem-forms-cloud-service-architecture.md)
 >* [通訊處理 — 同步API](/help/forms/aem-forms-cloud-service-communications.md)
 >* [通訊處理 — 批次API](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
 

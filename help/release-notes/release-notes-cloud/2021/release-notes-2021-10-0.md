@@ -25,16 +25,16 @@ ht-degree: 66%
 
 ## 發行日期 {#release-date}
 
-的發行日期 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 目前版本(2021.10.0)為2021年11月4日。
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service]目前版本(2021.10.0)的發行日期為2021年11月4日。
 下列版本(2021.11.0)將於2021年12月2日發行。
 
 ## 發行影片 {#release-video}
 
-請檢視 [2021年10月版本總覽](https://video.tv.adobe.com/v/338253) 影片以瞭解新增功能的摘要。
+請觀看[2021年10月版本總覽](https://video.tv.adobe.com/v/338253)影片，以瞭解新增功能的摘要。
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
-### 中的新功能 [!DNL Sites] {#sites-features}
+### [!DNL Sites]中的新功能 {#sites-features}
 
 * 內容片段模型現在會在發佈後自動設為唯讀狀態，以避免重新發佈已編輯的模型後，無意中中斷即時API查詢。 嘗試編輯已發佈的模型時，系統會提示使用者警告。 接受警告後即可進行編輯。
 
@@ -42,13 +42,13 @@ ht-degree: 66%
 
 ### [!DNL Assets] 中的新功能 {#assets-features}
 
-* [!DNL Experience Manager] 現在支援使用內建聯結器從支援的音訊和視訊資產自動產生文字記錄，以 [!DNL Azure Media Services]. 此 [支援的檔案型別](/help/assets/file-format-support.md#audio-video-transcription-formats) 會自動轉譯，且文字會以WebVTT格式儲存。 WebVTT註解可用於更有效的搜尋、註解或翻譯。 此外，功能可改善資產的協助工具、可發現性和本地化。
+* [!DNL Experience Manager]現在支援使用[!DNL Azure Media Services]的內建聯結器，從支援的音訊和視訊資產自動產生文字記錄。 [支援的檔案型別](/help/assets/file-format-support.md#audio-video-transcription-formats)會自動轉譯，文字會以WebVTT格式儲存。 WebVTT註解可用於更有效的搜尋、註解或翻譯。 此外，功能可改善資產的協助工具、可發現性和本地化。
 
-### 中的新功能 [!DNL Assets] 發行前通道 {#assets-prerelease-features}
+### [!DNL Assets]發行前管道中的新功能 {#assets-prerelease-features}
 
-* [!DNL Dynamic Media] 影像智慧型裁切和色票現在由Sensei最新服務提供支援，可製作出更佳裁切和色票成果。 此外，已啟動增強功能以產生相同縱橫比但跨不同解析度的不同裁切內容。 此外，如果「影像設定檔」中的寬度和高度沒有變化，則在重新處理時會保留任何手動編輯。
+* [!DNL Dynamic Media]影像智慧型裁切和色票現在由最新的Sensei服務提供支援，可製作出更佳裁切和色票成果。 此外，已啟動增強功能以產生相同縱橫比但跨不同解析度的不同裁切內容。 此外，如果「影像設定檔」中的寬度和高度沒有變化，則在重新處理時會保留任何手動編輯。
 
-* 智慧標籤會自動套用至使用資產微服務的資產，而非智慧內容服務。 基礎模型已更新，以改善標籤結果並減少偏差。 <!-- As it uses asset microservices, it is now possible to develop custom workers using Stock10-based Smart Tags. -->
+* 智慧標籤會自動套用至使用資產微服務的資產，而非智慧內容服務。 基礎模型已更新，以改善標籤結果並減少偏差。<!-- As it uses asset microservices, it is now possible to develop custom workers using Stock10-based Smart Tags. -->
 
 <!-- Leave this commented.
 ### Bugs fixed in [!DNL Assets] {#assets-bugs-fixed}
@@ -60,7 +60,7 @@ No customer-reported bugs fixed in Oct release. Details in CQDOC-18404.
 
 ### [!DNL Forms] 的新增功能 {#what-is-new-forms-oct-2021}
 
-* **Analytics for Adaptive Forms**：您現在可以透過Adobe Analytics for Adaptive Forms擷取及追蹤已登入和未登入（匿名）的行為，以收集使用者深入解析。 這可幫助您根據資料來進行明智的決策，以改善使用者體驗。
+* **Analytics for Adaptive Forms**：您現在可以透過Adobe Analytics for Adaptive Forms擷取及追蹤已登入和未登入（匿名）的行為，以收集使用者的深入解析。 這可幫助您根據資料來進行明智的決策，以改善使用者體驗。
 
 ### [!DNL Forms] 搶鮮版頻道中可用的新功能 {#prerelease-features-forms-oct-2021}
 
@@ -91,11 +91,11 @@ No customer-reported bugs fixed in Oct release. Details in CQDOC-18404.
 
 ## Cloud Manager {#cloud-manager}
 
-本節概述AEMas a Cloud Service2021.10.0中Cloud Manager的發行說明
+本節概述AEM as a Cloud Service 2021.10.0中Cloud Manager的發行說明
 
 ### 發行日期 {#release-date-cm-nov}
 
-AEMas a Cloud Service2021.11.0中Cloud Manager的發行日期為2021年11月04日。
+AEM as a Cloud Service 2021.11.0中Cloud Manager的發行日期為2021年11月4日。
 下一版本計畫於2021年12月9日發行。
 
 ### 新增功能 {#what-is-new-cm-nov}

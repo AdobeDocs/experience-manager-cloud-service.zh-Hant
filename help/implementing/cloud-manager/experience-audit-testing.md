@@ -47,7 +47,7 @@ Cloud Manager中的體驗稽核可確保使用者在網站上的體驗達到最�
 * 網站生產管道，預設為。
 * 可選擇前端開發管道。
 
-請參閱 [設定區段](#configuration) 有關如何為選用環境設定稽核的詳細資訊。
+請參閱[設定區段](#configuration)，以取得如何為選擇性環境設定稽核的詳細資訊。
 
 ## 設定 {#configuration}
 
@@ -57,25 +57,25 @@ Cloud Manager中的體驗稽核可確保使用者在網站上的體驗達到最�
 
 1. 根據您要設定的管線型別，請遵循以下指示：
 
-   * 新增 [生產管道，](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) 如果要定義稽核要評估的路徑。
-   * 新增 [非生產管道，](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) 如果您想要在前端或開發完整棧疊管道上啟用稽核。
-   * 或者，您可以 [編輯現有管道，](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) 並更新現有選項。
+   * 若要定義要由稽核評估的路徑，請新增新的[生產管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)。
+   * 若要在前端或開發完整棧疊管道上啟用稽核，請新增新的[非生產管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)。
+   * 或者，您可以[編輯現有管道，](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md)並更新現有選項。
 
-1. 如果您要新增或編輯要使用體驗稽核的非生產管道，則必須選取 **體驗稽核** 上的核取方塊 **原始碼** 標籤。
+1. 如果您要新增或編輯要使用體驗稽核的非生產管道，則必須在「**Source程式碼**」索引標籤上選取「**體驗稽核**」核取方塊。
 
-   ![啟用體驗稽核](assets/experience-audit-enable.jpg)
+   ![正在啟用體驗稽核](assets/experience-audit-enable.jpg)
 
    * 這僅對非生產管道是必要的。
-   * 此 **體驗稽核** 核取方塊選取時，標籤隨即顯示。
+   * 選取核取方塊時，**體驗稽核**&#x200B;索引標籤就會顯示。
 
-1. 對於生產和非生產管道，您可以定義應包含在上的體驗稽核中的路徑 **體驗稽核** 標籤。
+1. 對於生產和非生產管道，您定義應包含在&#x200B;**體驗稽核**&#x200B;標籤上的體驗稽核中的路徑。
 
-   * 頁面路徑的開頭必須是 `/` 和是相對於您的網站。
-   * 例如，若您的網站為 `wknd.site` 並且想要包含 `https://wknd.site/us/en/about-us.html` 在體驗稽核中，輸入路徑 `/us/en/about-us.html`.
+   * 頁面路徑必須以`/`開頭，且相對於您的網站。
+   * 例如，如果您的網站是`wknd.site`且想要在體驗稽核中包含`https://wknd.site/us/en/about-us.html`，請輸入路徑`/us/en/about-us.html`。
 
    ![定義體驗稽核的路徑](assets/experience-audit-add-page.png)
 
-1. 點選或按一下 **新增頁面** 路徑會使用您環境的地址自動完成，並新增至路徑表中。
+1. 點選或按一下「**新增頁面**」，路徑將使用您的環境位址自動完成並新增到路徑表中。
 
    ![儲存表格的路徑](assets/experience-audit-page-added.png)
 
@@ -103,11 +103,11 @@ Cloud Manager中的體驗稽核可確保使用者在網站上的體驗達到最�
 
 變更量度可以有下列其中一個值。
 
-* **正值**  — 自上次生產管道執行以來，頁面在選取的測試上已有所改善。
+* **正值** — 自上次生產管道執行以來，頁面在選取的測試上已有所改善。
 
-* **負值**  — 自上次生產管道執行以來，頁面已在選取的測試上回覆。
+* **負值** — 自上次生產管道執行以來，頁面已在選取的測試上回覆。
 
-* **無變更**  — 頁面的分數與上次生產管道執行時的分數相同。
+* **無變更** — 頁面的分數與上次生產管道執行時的分數相同。
 
 * **不適用** - 沒有可用於比較的先前分數。
 

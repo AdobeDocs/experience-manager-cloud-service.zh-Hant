@@ -19,13 +19,13 @@ ht-degree: 1%
 
 這些命名慣例會在不同的層級實作：
 
-* JcrUtil：的AEM實施 [jcr公用程式](#jcr-utilities).
-* PageManager： [頁面管理員](#page-manager) 提供頁面層級作業的方法。
-* 在AEM UI內 {#ui-behavior}
+* JcrUtil： [JCR公用程式](#jcr-utilities)的AEM實作。
+* PageManager： [頁面管理員](#page-manager)提供頁面層級作業的方法。
+* 在AEM UI {#ui-behavior}內
 
 ### jcr公用程式 {#jcr-utilities}
 
-[JcrUtil](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/commons/jcr/JcrUtil.html) 是JCR公用程式的AEM實作。 驗證名稱特別需要的是它控制的字元對應以及下列驗證：
+[JcrUtil](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/commons/jcr/JcrUtil.html)是JCR公用程式的AEM實作。 驗證名稱特別需要的是它控制的字元對應以及下列驗證：
 
 * `isValidName`
    * 檢查名稱是否非空白且僅包含有效字元。
@@ -36,7 +36,7 @@ ht-degree: 1%
 
 ### 頁面管理員 {#page-manager}
 
-[PageManager](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/wcm/api/PageManager.html) 提供頁面層級作業的方法，根據 [JCRUtil](#jcr-utilities).
+[PageManager](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/wcm/api/PageManager.html)提供基於[JCRUtil](#jcr-utilities)的頁面層級作業方法。
 
 ### AEM UI行為 {#ui-behavior}
 

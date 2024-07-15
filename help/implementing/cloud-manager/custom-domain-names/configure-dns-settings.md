@@ -40,7 +40,7 @@ ht-degree: 95%
 
 Apex 網域是不包含子網域的自訂網域，例如`example.com`。Apex 網域是透過您的 DNS 提供者使用 `A`、`ALIAS` 或 `ANAME`記錄設定的。Apex 網域必須指向特定的 IP 位址。
 
-新增下列專案 `A` 記錄到您的網域的DNS設定，經由您的網域提供者。
+透過您的網域提供者將下列`A`記錄新增到您網域的DNS設定中。
 
 * `A RECORD`
 

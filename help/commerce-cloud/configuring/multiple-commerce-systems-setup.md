@@ -23,6 +23,6 @@ ht-degree: 0%
 
 單一Adobe Experience Manager (AEM) CIF系統可用來連線至多個Adobe或協力廠商商務系統，以支援進階部署。 在多區域、多品牌店面的情況下，這很有用，其中單一體驗管理層簡化了商務內容的建立和傳遞流程。 這也有助於企業加快實現價值(TTV)的速度，並降低總體擁有成本(TCO)。
 
-逐步解說影片，詳述如何使用多個Adobe商務環境設定AEM。 AEM多網站管理(MSM)包括即時副本和語言副本等功能。 這些功能可與Commerce integration framework(CIF)搭配使用，以建立多區域店面，其中 __歐盟區域店面__ 連線到 __歐盟Adobe Commerce__ 和 __北美(NA)區域店面__ 連線到 __NA ADOBE COMMERCE__ 系統。
+逐步解說影片，詳述如何使用多個Adobe商務環境設定AEM。 AEM多網站管理(MSM)包括即時副本和語言副本等功能。 這些功能與Commerce integration framework(CIF)搭配使用，以建立多區域店面，其中&#x200B;__EU區域店面__&#x200B;連線至&#x200B;__EU Adobe Commerce__，而&#x200B;__北美(NA)區域店面__&#x200B;連線至&#x200B;__NA Adobe Commerce__&#x200B;系統。
 
 >[!VIDEO](https://video.tv.adobe.com/v/346811/?quality=12&learn=on)

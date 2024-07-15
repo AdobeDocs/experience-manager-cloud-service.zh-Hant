@@ -1,6 +1,6 @@
 ---
-title: AEMas a Cloud Service版本2023.08.0中移轉工具的發行說明
-description: AEMas a Cloud Service版本2023.08.0中移轉工具的發行說明
+title: AEM as a Cloud Service 2023.08.0版中移轉工具的發行說明
+description: AEM as a Cloud Service 2023.08.0版中移轉工具的發行說明
 feature: Release Information
 exl-id: 1c822ece-620a-4866-be5a-065cb6a90204
 role: Admin
@@ -11,9 +11,9 @@ ht-degree: 7%
 
 ---
 
-# AEMas a Cloud Service版本2023.08.0中移轉工具的發行說明 {#release-notes}
+# AEM as a Cloud Service 2023.08.0版中移轉工具的發行說明 {#release-notes}
 
-本頁面總覽AEMas a Cloud Service2023.08.0中移轉工具發行說明。
+本頁面總覽AEM as a Cloud Service 2023.08.0中移轉工具的發行說明。
 
 ## 最佳做法分析工具 {#bpa-release}
 

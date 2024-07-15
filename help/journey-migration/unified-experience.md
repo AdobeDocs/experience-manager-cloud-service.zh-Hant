@@ -19,7 +19,7 @@ Adobe已開發出工具，可自動執行與Adobe Experience Manager (AEM)as a C
 
 統一的Experience外掛程式提供下列優點：
 
-* 將處理原始程式碼的工具統一為一個 `node.js` 應用程式公開為 `aio-cli ` 外掛程式，為使用者提供一致的使用者體驗。
+* 將處理原始程式碼的工具統一到一個公開為`aio-cli `外掛程式的`node.js`應用程式中，以便為使用者提供一致的使用者體驗。
 
 * 透過單一指令執行所有工具，同時提供彈性以視需要執行特定工具。
 
@@ -27,12 +27,12 @@ Adobe已開發出工具，可自動執行與Adobe Experience Manager (AEM)as a C
 
 ## 瞭解外掛程式 {#understanding-plugin}
 
-此 `aio-cli-plugin-aem-cloud-service-migration` 外掛程式包含兩個主要部分：
+`aio-cli-plugin-aem-cloud-service-migration`外掛程式包含兩個主要部分：
 
 * **使用者介面**
 
-   * `aio-cli` 指令來執行一或多個程式碼重構工具（透過連結要循序執行的工具）。
-   * `config.yaml` 這會採用必要的輸入引數。
+   * `aio-cli`命令以執行一或多個程式碼重構工具（透過連結要循序執行的工具）。
+   * `config.yaml`接受必要的輸入引數。
 
 * **基礎程式碼重構工具套裝**
 
@@ -44,7 +44,7 @@ Adobe已開發出工具，可自動執行與Adobe Experience Manager (AEM)as a C
 
 ## 可用性 {#availability}
 
-另請參閱 [Git資源： aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) 您可在其中瞭解使用方式，以及如何為GitHub中開放原始碼的外掛程式程式碼貢獻內容。
+請參閱[Git資源：aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration)，瞭解使用情形以及如何為GitHub中開放來源的外掛程式程式碼貢獻內容。
 
 >[!NOTE]
 >目前，外掛程式已與AEM Dispatcher Converter和Repository Modernizer整合。

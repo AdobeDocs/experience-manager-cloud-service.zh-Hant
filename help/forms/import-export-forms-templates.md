@@ -21,22 +21,22 @@ ht-degree: 3%
 
 # 匯入或匯出最適化Forms和AEM Forms資產 {#importing-and-exporting-assets-to-aem-forms}
 
-您可以移動最適化Forms和相關資產，例如最適化表單主題、表單資料模型(FDM)、最適化表單範本、片段和PDF forms等 [!DNL AEM Forms] 執行個體。
+您可以在[!DNL AEM Forms]個執行個體之間移動最適化Forms和相關資產，例如最適化表單主題、表單資料模型(FDM)、最適化表單範本、片段和PDF forms。
 
 ## 下載最適化Forms、PDF forms或相關資產 {#download-forms-amp-documents-assets}
 
 若要下載表單或相關資產：
 
-1. 登入您的 [!DNL Experience Manager Forms] 執行個體。
-1. 選取 **[!UICONTROL Forms]** > **[!UICONTROL Forms與檔案]**.
+1. 登入您的[!DNL Experience Manager Forms]執行個體。
+1. 選取&#x200B;**[!UICONTROL Forms]** > **[!UICONTROL Forms與檔案]**。
 
    ![選取Forms](/help/forms/assets/select-forms.png)
 
-1. 選取資產，然後按一下 **[!UICONTROL 下載]** 圖示加以檢視。
+1. 選取資產，然後按一下上方邊欄中的&#x200B;**[!UICONTROL 下載]**&#x200B;圖示。
 
    ![下載Forms](/help/forms/assets/download-form.png)
 
-   下載表單時， **[!UICONTROL 下載資產]** 對話方塊隨即顯示。
+   下載表單時，會出現&#x200B;**[!UICONTROL 下載資產]**&#x200B;對話方塊。
 
    ![下載表單資產](/help/forms/assets/download-form-assets.png)
 
@@ -49,40 +49,40 @@ ht-degree: 3%
 您可以個別上傳支援的資產型別，或以ZIP封存檔的形式上傳。 對於ZIP檔案，會顯示所有支援資產的相對路徑。 ZIP內不支援的資產會遭忽略，不會列出。 不過，如果ZIP封存僅包含不支援的資產，則會顯示錯誤訊息，而非快顯對話方塊。
 若要上傳表單或相關資產：
 
-1. 登入您的 [!DNL Experience Manager Forms] 執行個體。
-1. 選取 **[!UICONTROL Forms]** > **[!UICONTROL Forms與檔案]**.
+1. 登入您的[!DNL Experience Manager Forms]執行個體。
+1. 選取&#x200B;**[!UICONTROL Forms]** > **[!UICONTROL Forms與檔案]**。
 
    ![選取Forms](/help/forms/assets/select-forms.png)
 
-1. 選取 **[!UICONTROL 建立]** > **[!UICONTROL 檔案上傳]**. 對話方塊隨即顯示。
+1. 選取&#x200B;**[!UICONTROL 建立]** > **[!UICONTROL 檔案上傳]**。 對話方塊隨即顯示。
 
    ![上傳Forms](/help/forms/assets/form-upload.png)
 
-1. 在對話方塊中，瀏覽並選取要匯入的封裝或封存。 您也可以選取其他支援的檔案型別。 選取 **[!UICONTROL 開啟]**. 您選取的資料夾或檔案名稱不得包含任何特殊字元。
+1. 在對話方塊中，瀏覽並選取要匯入的封裝或封存。 您也可以選取其他支援的檔案型別。 選取&#x200B;**[!UICONTROL 開啟]**。 您選取的資料夾或檔案名稱不得包含任何特殊字元。
 
-   在對話方塊中，確認要上傳之資產的詳細資訊，然後選取 **[!UICONTROL 上傳]**.
+   在對話方塊中，確認要上傳之資產的詳細資料，並選取&#x200B;**[!UICONTROL 上傳]**。
 
    如果上傳現有的表單資產，資產會隨之更新。
 
    >[!NOTE]
    >
-   > 當名稱與不同的資源型別衝突時，上傳套件不會取代現有的資料夾階層。 例如，如果您的位置有名為「Training」的最適化表單 `/content/dam/formsanddocuments` 在一部伺服器上。 您可以下載最適化表單並將表單上傳到其他伺服器。 第二個伺服器的相同位置也有一個名為「Training」的資料夾 `/content/dam/formsanddocuments`. 上傳失敗。
+   > 當名稱與不同的資源型別衝突時，上傳套件不會取代現有的資料夾階層。 例如，如果一台伺服器上的位置`/content/dam/formsanddocuments`有一個名為&#39;Training&#39;的最適化表單。 您可以下載最適化表單並將表單上傳到其他伺服器。 第二個伺服器的相同位置`/content/dam/formsanddocuments`也有一個名為&#39;Training&#39;的資料夾。 上傳失敗。
 
 ## 下載主題
 
-您可以匯出主題於 [!DNL AEM Forms] 可用於其他專案或執行個體的資訊。 AEM可讓您將主題下載為zip檔案，以便在執行個體上傳。
+您可以匯出[!DNL AEM Forms]中可用於其他專案或執行個體的主題。 AEM可讓您將主題下載為zip檔案，以便在執行個體上傳。
 若要下載佈景主題：
 
-1. 登入您的 [!DNL Experience Manager Forms] 作者執行個體。
-1. 選取 **[!UICONTROL Forms]** > **[!UICONTROL 主題]**.
+1. 登入您的[!DNL Experience Manager Forms]作者執行個體。
+1. 選取&#x200B;**[!UICONTROL Forms]** > **[!UICONTROL 主題]**。
 
    ![選取主題](/help/forms/assets/select-theme.png)
 
-1. 在「佈景主題」頁面上，選取佈景主題並按一下 **[!UICONTROL 下載]** 圖示加以檢視。
+1. 在「佈景主題」頁面上，選取佈景主題，然後從上方邊欄按一下&#x200B;**[!UICONTROL 下載]**&#x200B;圖示。
 
    ![下載主題](/help/forms/assets/download-theme.png)
 
-   下載主題時， **[!UICONTROL 下載資產]** 對話方塊隨即顯示。
+   下載主題時，會出現&#x200B;**[!UICONTROL 下載資產]**&#x200B;對話方塊。
 
    ![下載主題資產](/help/forms/assets/download-theme-asset.png)
 
@@ -95,16 +95,16 @@ ht-degree: 3%
 您可以上傳並使用其他人在您的表單中建立的主題。
 上傳佈景主題：
 
-1. 登入您的 [!DNL Experience Manager Forms] 執行個體。
-1. 在Experience Manager中，導覽至 **[!UICONTROL Forms]** > **[!UICONTROL 主題]**.
+1. 登入您的[!DNL Experience Manager Forms]執行個體。
+1. 在Experience Manager中，導覽至&#x200B;**[!UICONTROL Forms]** > **[!UICONTROL 主題]**。
 
    ![選取主題](/help/forms/assets/select-theme.png)
 
-1. 在「佈景主題」頁面上，按一下 **[!UICONTROL 建立]** > **[!UICONTROL 檔案上傳]**.
+1. 在[佈景主題]頁面上，按一下[建立&#x200B;]**] > [檔案上傳]**]。**[!UICONTROL **[!UICONTROL 
 
-   ![上傳主題](/help/forms/assets/theme-upload.png)
+   ![上傳佈景主題](/help/forms/assets/theme-upload.png)
 
-1. 瀏覽並選取電腦上的佈景主題套件，然後按一下 **[!UICONTROL 上傳]**. 上傳的主題即會顯示在「主題」頁面上。
+1. 瀏覽並選取您電腦上的主題封裝，然後按一下&#x200B;**[!UICONTROL 上傳]**。 上傳的主題即會顯示在「主題」頁面上。
 
 ## 使用資料夾整理Adaptive Forms、PDF forms和相關資產  {#folders-and-organizing-assets}
 
@@ -114,17 +114,17 @@ ht-degree: 3%
 
 若要建立資料夾：
 
-1. 登入您的 [!DNL Experience Manager Forms] 執行個體。
-1. 選取 **[!UICONTROL Forms]** > **[!UICONTROL Forms與檔案]**.
+1. 登入您的[!DNL Experience Manager Forms]執行個體。
+1. 選取&#x200B;**[!UICONTROL Forms]** > **[!UICONTROL Forms與檔案]**。
 
    ![選取表單](/help/forms/assets/select-forms.png)
 
-1. 選取 **[!UICONTROL 建立]** > **[!UICONTROL 資料夾]**.
+1. 選取&#x200B;**[!UICONTROL 建立]** > **[!UICONTROL 資料夾]**。
 
    ![建立資料夾](/help/forms/assets/create-folder.png)
 
-   此 **[!UICONTROL 新增資料夾]** 對話方塊隨即顯示。
-1. 輸入 **[!UICONTROL 標題]**. 此 **[!UICONTROL 名稱]** 會在您輸入時自動填入 **[!UICONTROL 標題]**.
+   **[!UICONTROL 新增資料夾]**&#x200B;對話方塊就會顯示。
+1. 輸入&#x200B;**[!UICONTROL 標題]**。 當您輸入&#x200B;**[!UICONTROL 標題]**&#x200B;時，**[!UICONTROL 名稱]**&#x200B;會自動填入。
 
    ![新增資料夾](/help/forms/assets/add-folder.png)
 
@@ -136,7 +136,7 @@ ht-degree: 3%
 
 具有您定義標題的新資料夾會顯示在資產清單中的目前位置。
 
-如果具有指定名稱的資料夾存在，則提交會失敗並出現錯誤。 您可以將游標移至錯誤上方，檢視錯誤訊息 ![aem6forms_error_alert](assets/Smock_Alert_18_N.svg) 圖示出現在名稱欄位旁。
+如果具有指定名稱的資料夾存在，則提交會失敗並出現錯誤。 您可以將游標移至名稱欄位旁邊顯示的錯誤![aem6forms_error_alert](assets/Smock_Alert_18_N.svg)圖示上，以檢視錯誤訊息。
 
 您可以選取建立的資料夾以移至資料夾內，並在資料夾內建立資產或資料夾。 此外，您可以選取資料夾，並選擇將資料夾排入下載佇列、刪除資料夾或編輯資料夾名稱。
 
@@ -146,25 +146,25 @@ ht-degree: 3%
 
 若要建立資產復本：
 
-1. 登入您的 [!DNL Experience Manager Forms] 執行個體。
-1. 在相關的資產頁面上，選取一或多個資產。 UI會顯示 **[!UICONTROL 複製]** 圖示。
-1. 選取 **[!UICONTROL 複製]**. UI會顯示 ![貼上圖示](/help/forms/assets/Smock_Paste_18_N.svg) 圖示。
+1. 登入您的[!DNL Experience Manager Forms]執行個體。
+1. 在相關的資產頁面上，選取一或多個資產。 UI顯示&#x200B;**[!UICONTROL 複製]**&#x200B;圖示。
+1. 選取&#x200B;**[!UICONTROL 複製]**。 UI會顯示![貼上圖示](/help/forms/assets/Smock_Paste_18_N.svg)圖示。
 
    ![複製資產](/help/forms/assets/copy-asset.png)
 
-   您也可以在貼上之前，選擇在資料夾中前往/導覽。 不同的資料夾可以包含具有相同名稱的資產。 如需檔案夾的詳細資訊，請參閱 [資料夾和組織資產](#folders-and-organizing-assets).
-1. 選取 **[!UICONTROL 貼上]**.
+   您也可以在貼上之前，選擇在資料夾中前往/導覽。 不同的資料夾可以包含具有相同名稱的資產。 如需資料夾的詳細資訊，請參閱[資料夾及組織資產](#folders-and-organizing-assets)。
+1. 選取&#x200B;**[!UICONTROL 貼上]**。
 
    ![貼上資產](/help/forms/assets/paste-asset.png)
 
-1. 此 **[!UICONTROL 貼上]** 對話方塊隨即顯示。 系統會自動產生資產新復本的名稱和標題，但您可以編輯資產的標題和名稱。
+1. **[!UICONTROL 貼上]**&#x200B;對話方塊就會顯示。 系統會自動產生資產新復本的名稱和標題，但您可以編輯資產的標題和名稱。
 
-   如果您要在相同位置複製和貼上資產，系統會將尾碼「 — CopyXX」新增至的現有名稱， `asset`. 如果複製的資產沒有標題，自動產生的標題欄位會維持空白。
+   如果您要在相同位置複製和貼上資產，系統會將尾碼「 — CopyXX」新增至「`asset`」的現有名稱。 如果複製的資產沒有標題，自動產生的標題欄位會維持空白。
 
    ![在新位置貼上資產](/help/forms/assets/paste-click-asset.png)
 
-   如有需要，請編輯 **[!UICONTROL 標題]** 要用來儲存資產復本的資料夾。 此 **[!UICONTROL 名稱]** 會在您輸入時自動填入 **[!UICONTROL 標題]**.
-1. 選取 **[!UICONTROL 貼上]**. 複製的資產會建立新復本。
+   如有必要，請編輯您想要用來儲存資產復本的&#x200B;**[!UICONTROL 標題]**。 當您輸入&#x200B;**[!UICONTROL 標題]**&#x200B;時，**[!UICONTROL 名稱]**&#x200B;會自動填入。
+1. 選取&#x200B;**[!UICONTROL 貼上]**。 複製的資產會建立新復本。
 
 ## 搜尋 {#search-forms}
 
@@ -172,8 +172,8 @@ ht-degree: 3%
 
 若要搜尋資產：
 
-1. 登入您的 [!DNL Experience Manager Forms] 執行個體。
-1. 按一下 ![搜尋圖示](assets/folder-search-icon.svg) 搜尋圖示。
+1. 登入您的[!DNL Experience Manager Forms]執行個體。
+1. 按一下![搜尋圖示](assets/folder-search-icon.svg)搜尋圖示。
 
    ![搜尋表單](/help/forms/assets/search-form.png)
 
@@ -183,7 +183,7 @@ ht-degree: 3%
 
    ![搜尋資產](/help/forms/assets/search-bar.png)
 
-如需使用搜尋的詳細資訊與指示，請參閱 [搜尋](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html).
+如需有關使用搜尋的詳細資訊與指示，請參閱[搜尋](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html)。
 
 <!--
 ## Export or create a package {#export-a-workflow-application}

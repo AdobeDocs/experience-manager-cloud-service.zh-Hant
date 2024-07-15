@@ -19,25 +19,25 @@ Adobe Experience Manager as a Cloud Service提供基礎架構、服務和使用�
 * [內部模組監控](#module-monitoring)
 * [客戶可觀察性](#customer-observability)
 
-AEMas a Cloud Service使用數百台雲端原生監視器，每年365天持續報告每個環境的狀態(24/7)。 監視器定義不是靜態的，會持續檢閱以改進早期偵測功能。 此外，Adobe已設定隨叫隨到的程式來回應警示。
+AEM as a Cloud Service使用數百台雲端原生監視器，一年365天持續報告每個環境的狀態(24/7)。 監視器定義不是靜態的，會持續檢閱以改進早期偵測功能。 此外，Adobe已設定隨叫隨到的程式來回應警示。
 
-如果您需要其他監視型別（如透過Cloud Manager的記錄或監視）的資訊，請參閱 [其他資源](#resources).
+如果您需要其他監視型別(例如透過Cloud Manager的記錄或監視)的相關資訊，請參閱[其他資源](#resources)。
 
 ## 外部可用性 {#external-availability}
 
-外部可用性由兩部分組成：服務邊緣和自訂監視。
+外部可用性由兩部分組成：服務Edge和自訂監視。
 
-### 服務邊緣 {#service-edge}
+### 服務Edge {#service-edge}
 
-您的所有AEMas a Cloud Service環境都會受到可用性監控。 不過， Service Edge Monitoring僅針對生產環境設定，而且會使用量度來計算客戶的SLA。 這會考量環境執行階段和AEMas a Cloud ServiceCDN。 Service Edge Monitoring會採用五個不同的位置，靠近您選擇的區域，並定期檢查可用性。 網站的不可用性會觸發警報，並讓Adobe的隨叫隨到支援團隊和程式參與互動。
+您的所有AEM as a Cloud Service環境都會受到可用性監控。 但是，服務Edge監控僅針對生產環境設定，並且會使用量度來計算客戶的SLA。 這會考量到環境執行階段和AEM as a Cloud Service CDN。 服務Edge監控會採用離您所選地區較近的五個不同位置，並定期檢查可用性。 網站的不可用性會觸發警報，並讓Adobe的隨叫隨到支援團隊和程式參與互動。
 
 ### 自訂監視 {#custom-monitoring}
 
-透過自訂監視，客戶可選擇之前提供最多五個不同的Web屬性URL [上線](/help/journey-migration/go-live.md). 這些URL應有效並傳回HTTP 200回應代碼。 這些顯示器可支援以下客戶 [自備CDN](/help/implementing/dispatcher/cdn.md#point-to-point-CDN) 在Adobe CDN前以及在AEMas a Cloud Service前採用且非Adobe控制的任何外部流量路由。 自訂監控檢查產生的警報會與Adobe的支援團隊和流程互動。
+透過自訂監視，客戶可選擇在[上線](/help/journey-migration/go-live.md)之前提供最多五個不同的Web屬性URL。 這些URL應有效並傳回HTTP 200回應代碼。 這些監視器可支援以下客戶：[將自己的CDN](/help/implementing/dispatcher/cdn.md#point-to-point-CDN)帶到Adobe CDN前，以及在AEM as a Cloud Service前採用且未受Adobe控制的任何外部流量路由。 自訂監控檢查產生的警報會與Adobe的支援團隊和流程互動。
 
 >[!NOTE]
 >
-> 此功能僅適用於生產環境和客戶，具有 [進階雲端支援。](https://experienceleague.adobe.com/docs/support-resources/data-sheets/overview.html#support-add-ons) 如有任何問題，請聯絡您的Adobe客戶團隊。
+> 此功能僅適用於生產環境以及具有[進階雲端支援的客戶。](https://experienceleague.adobe.com/docs/support-resources/data-sheets/overview.html#support-add-ons)如果您有任何問題，請聯絡您的Adobe客戶團隊。
 
 ## 內部模組監控 {#module-monitoring}
 
@@ -55,10 +55,10 @@ AEMas a Cloud Service使用數百台雲端原生監視器，每年365天持續�
 
 ## 客戶可觀察性 {#customer-observability}
 
-客戶可以使用 [New Relic應用程式效能監視](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic.html) 此套裝提供即時效能資料，收集並繪製圖表以供分析和疑難排解。 透過使用監控套件，客戶可以直接觀察各種量度，例如：JVM效能量度、Java™的交易時間、背景外部呼叫和資料庫呼叫。
+客戶可以使用[New Relic應用程式效能監視](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic.html)套裝，提供即時效能資料，收集並繪製圖表以供分析和疑難排解。 透過使用監控套件，客戶可以直接觀察各種量度，例如：JVM效能量度、Java™的交易時間、背景外部呼叫和資料庫呼叫。
 
 ## 其他資源 {#resources}
 
 * [New Relic應用程式效能監視](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic.html)
-* [AEMas a Cloud Service記錄](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/logging.html)
-* [監控環境](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/monitoring-environments.html)
+* [正在記錄AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/logging.html)
+* [監視環境](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/monitoring-environments.html)

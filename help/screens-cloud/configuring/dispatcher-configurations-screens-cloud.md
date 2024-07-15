@@ -15,9 +15,9 @@ ht-degree: 0%
 
 本節說明Screensas a Cloud Service的Dispatcher設定。
 
-## 在Dispatcher for Screensas a Cloud Service部署中新增篩選器和快取規則 {#deployment}
+## 在適用於Screensas a Cloud Service部署的Dispatcher中新增篩選器和快取規則 {#deployment}
 
-在Dispatcher中允許針對Screensas a Cloud Service中的發佈執行個體有下列篩選器和快取規則。
+在Screens as a Cloud Service中，允許發佈執行個體在Dispatcher中使用以下篩選器和快取規則。
 
 ### AEM Screens篩選器 {#filters}
 
@@ -34,12 +34,12 @@ ht-degree: 0%
 
 ### 快取規則 {#cache-rules}
 
-* 新增 `/statfileslevel "10"` 至 `/cache` 中的區段 `publish_farm.any`/.
+* 將`/statfileslevel "10"`新增至`publish_farm.any`/中的`/cache`區段。
 
   >[!NOTE]
   >此快取規則支援快取docroot中的最多10個層級，且在內容發佈時失效，而不是使所有內容失效。 您可以根據內容結構的設定深度來變更此層級。
 
-* 將下列專案新增至 `/invalidate` 中的區段 `publish_farm.any`.
+* 新增下列內容至`publish_farm.any`中的`/invalidate`區段。
 
   ```
   /0003 {
@@ -48,7 +48,7 @@ ht-degree: 0%
   }
   ```
 
-* 將下列規則新增至 `/rules` 中的區段 `/cache` (在publish_farm.any中或包含在 `publish_farm.any`.
+* 將下列規則新增至publish_farm.any中`/cache`的`/rules`區段或從`publish_farm.any`包含的檔案中。
 
   ```
   ## Allow Dispatcher Cache for Screens channels

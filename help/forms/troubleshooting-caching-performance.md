@@ -36,7 +36,7 @@ ht-degree: 2%
 
 1. 開啟您的Experience Manager專案。
 1. 開啟 `dispatcher/scr/conf.d/rewrites/rewrite.rules` 進行編輯。
-1. 開啟 `conf.d/httpd-dispatcher.conf` 或任何其他設定為在執行階段載入的組態檔。
+1. 開啟`conf.d/httpd-dispatcher.conf`或設定為在執行階段載入的任何其他組態檔。
 1. 將下列程式碼新增至您的檔案並儲存。 此範常式式碼會加以修改以符合您的環境。
 
 ```shellscript
@@ -61,7 +61,7 @@ CDN快取在300秒後停止運作，所有在CDN上快取的請求都會重新�
 
 若要解決此問題，請將age標頭設為0：
 
-1. 建立檔案於 `src\conf.d\available_vhosts`
+1. 在`src\conf.d\available_vhosts`建立檔案
 
 1. 將以下內容新增到檔案以設定age標頭
 
@@ -73,4 +73,4 @@ CDN快取在300秒後停止運作，所有在CDN上快取的請求都會重新�
    ```
 
 1. 儲存並關閉檔案。
-1. 修改以下專案的軟連結： `src\conf.d\enabled_vhosts\default.vhost` 以指向新檔案。
+1. 修改`src\conf.d\enabled_vhosts\default.vhost`的軟連結，以指向新檔案。

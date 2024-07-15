@@ -96,7 +96,7 @@ You can share collections with various users that are assigned different levels 
 
 ## 管理智慧型集合 {#manage-smart-collection}
 
-將搜尋結果另存為 Smart Collection 以動態更新集合內容。 如果新增到「資產」檢視存放庫的資產符合建立Smart Collection時定義的搜尋條件，則開啟Smart Collection時，Smart Collection的內容會自動更新。
+將搜尋結果另存為 Smart Collection 以動態更新集合內容。 如果新增到Assets檢視存放庫的資產符合建立Smart Collection時定義的搜尋條件，則開啟Smart Collection時，Smart Collection的內容會自動更新。
 
 ### 建立智慧型集合 {#create-smart-collection}
 
@@ -166,7 +166,7 @@ Click **[!UICONTROL Collections]** in the left rail and use the Search box to sp
 
 ![共用資產連結](assets/share-link-collections.png)
 
-如需有關如何與外部利益關係人共用收藏集連結的詳細資訊，請參閱 [共用資產連結](/help/assets/share-links-for-assets-view.md).
+如需有關如何與外部利益關係人共用集合連結的詳細資訊，請參閱[共用資產連結](/help/assets/share-links-for-assets-view.md)。
 
 ## 下載集合 {#download-collection}
 

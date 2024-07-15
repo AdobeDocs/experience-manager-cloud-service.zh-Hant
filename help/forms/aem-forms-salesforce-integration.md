@@ -27,7 +27,7 @@ Adobe Experience Manager (AEM) Forms與Salesforce的整合可讓組織透過將�
 
 AEM Forms會交換在Salesforce連線應用程式中定義的使用者端憑證（消費者金鑰和使用者密碼）以取得存取權杖。
 
-AEMas a Cloud Service提供多種現成的提交動作，用於處理表單提交。 如需這些選項的詳細資訊，請參閱 [最適化表單提交動作](/help/forms/configure-submit-actions-core-components.md) 文章。
+AEM as a Cloud Service提供多種立即可用的提交動作，用於處理表單提交。 您可以在[最適化表單提交動作](/help/forms/configure-submit-actions-core-components.md)文章中進一步瞭解這些選項。
 
 比起授權代碼流程驗證，使用 OAuth 2.0 用戶端認證進行驗證有多種好處：
 
@@ -74,9 +74,9 @@ AEMas a Cloud Service提供多種現成的提交動作，用於處理表單提�
 1. 如果連線成功，按一下「**[!UICONTROL 建立]**」按鈕。
 
 
-設定Salesforce應用程式後，您可以在建立表單資料模型(FDM)時使用設定。 如需詳細資訊，請參閱 [建立表單資料模型(FDM)](create-form-data-models.md). [設定表單資料模型提交動作](/help/forms/using-form-data-model.md) 最適化表單傳送資料至Salesforce應用程式的資訊。
+設定Salesforce應用程式後，您可以在建立表單資料模型(FDM)時使用設定。 如需詳細資訊，請參閱[建立表單資料模型(FDM)](create-form-data-models.md)。 [設定最適化表單的表單資料模型提交動作](/help/forms/using-form-data-model.md)，以將資料傳送至Salesforce應用程式。
 
-如需有關在業務工作流程中建立和使用表單資料模型(FDM)的詳細資訊，請參閱 [資料整合](data-integration.md).
+如需在業務工作流程中建立和使用表單資料模型(FDM)的詳細資訊，請參閱[資料整合](data-integration.md)。
 
 ## 相關文章
 

@@ -32,25 +32,25 @@ ht-degree: 4%
 
 >[!NOTE]
 >
-> 您可以使用輕鬆為使用者自訂片段體驗 [表單片段元件的「設定」對話方塊和「設計」對話方塊](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/adaptive-form-fragment).
+> 您可以使用[表單片段元件](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/adaptive-form-fragment)的「設定」對話方塊和「設計」對話方塊，輕鬆自訂使用者的片段體驗。
 
 ## 建立自適應表單片段 {#create-a-fragment}
 
 您可以從頭開始建立最適化表單片段，或將現有最適化表單中的面板儲存為片段。 若要建立表單片段：
 
-1. 在https://登入您的AEM Forms執行個體&#x200B;[*主機名稱*]：[*連線埠*]/aem/forms.html.
-1. 按一下 **建立>自適應表單片段**.
+1. 在https://[*主機名稱*]：[*連線埠*]/aem/forms.html登入您的AEM Forms執行個體。
+1. 按一下&#x200B;**建立>最適化表單片段**。
 
-   ![建立自適應表單片段](/help/forms/assets/adaptive-form-fragment.png)
+   ![建立最適化表單片段](/help/forms/assets/adaptive-form-fragment.png)
 
 1. 指定片段的標題、名稱、說明和標籤。 請確定您為片段指定唯一的名稱。 如果存在具有相同名稱的其他片段，則無法建立片段。
 1. 選取表單範本。 您可以為以核心元件為基礎的Adaptive Forms或基礎元件為基礎的Adaptive Forms建立表單片段。 若要建立核心元件型表單的表單片段，請選取核心元件型範本。
 
    當您建立核心元件型表單的表單片段時，請使用選取表單主題選項來選取核心元件型主題。
 
-1. 按一下以開啟 **表單模型** 標籤，並從 **選取自** 下拉式選單，為片段選取以下其中一個模型：
+1. 按一下以開啟&#x200B;**表單模型**&#x200B;標籤，然後從&#x200B;**選取自**&#x200B;下拉式功能表中，為片段選取下列其中一個模型：
 
-   ![在表單模型標籤中顯示模型型別](assets/create-af-1-1.png)
+   ![在表單模型索引標籤中顯示模型型別](assets/create-af-1-1.png)
 
    * **無**：指定從頭開始建立片段，而不使用任何表單模型。
 
@@ -58,14 +58,14 @@ ht-degree: 4%
      >
      > 在Adaptive Forms中，您可以使用單一表單片段（根據核心元件）多次。 它支援無型和結構描述型表單片段。
 
-   * **結構描述**：指定使用上傳至AEM Forms的XML或JSON結構描述建立片段。 您可以上傳或從可用的XML或JSON結構描述中選取作為片段的表單模型。 選取XML結構描述時，您也可以從以下專案選取所選結構描述中存在的complexType，以建立最適化表單片段： **[!UICONTROL XML結構描述複雜型別]** 下拉式方塊。 選取JSON結構描述時，您也可以從以下專案選取所選結構描述中存在的結構描述定義，以建立調適型表單片段： **[!UICONTROL json結構描述定義]** 下拉式方塊。
+   * **結構描述**：指定使用上傳至AEM Forms的XML或JSON結構描述建立片段。 您可以上傳或從可用的XML或JSON結構描述中選取作為片段的表單模型。 選取XML結構描述時，您也可以從&#x200B;**[!UICONTROL XML結構描述複雜型別]**&#x200B;下拉式方塊中選取所選結構描述中存在的complexType，以建立最適化表單片段。 選取JSON結構描述時，您也可以從&#x200B;**[!UICONTROL JSON結構描述定義]**&#x200B;下拉式方塊中選取所選結構描述中存在的結構描述定義，以建立調適型表單片段。
    * **表單資料模型**：指定使用表單資料模型(FDM)建立片段。 您可以僅根據表單資料模型(FDM)中的一個資料模型物件來建立最適化表單片段。 展開表單資料模型(FDM)定義下拉式清單。 它會列出指定表單資料模型(FDM)中的所有資料模型物件。 從清單中選取資料模型物件。
 
    ![表單資料模型(FDM)](assets/create-af-3.png)
 
-1. 按一下 **建立** 然後按一下 **開啟** 以使用預設範本在編輯模式中開啟片段。 在編輯模式中，您可以將任何最適化表單元件新增到片段。
+1. 按一下[建立]****，然後按一下[開啟]****，以編輯模式開啟具有預設範本的片段。 在編輯模式中，您可以將任何最適化表單元件新增到片段。
 
-<!-- For information about Adaptive Form components, see [Introduction to authoring Adaptive Forms](../../forms/using/introduction-forms-authoring.md). --> 此外，如果您選取XML結構描述作為片段的表單模型，則內容尋找器中會顯示一個顯示表單模型階層的新索引標籤。 它可讓您將表單模型元素拖放至片段上。 <!--The added form-model elements get converted into form components while retaining the original properties from the associated XDP or XSD. -->
+<!-- For information about Adaptive Form components, see [Introduction to authoring Adaptive Forms](../../forms/using/introduction-forms-authoring.md). --> 此外，如果您選取XML結構描述作為片段的表單模型，則內容尋找器中會顯示一個顯示表單模型階層的新索引標籤。 它可讓您將表單模型元素拖放至片段上。<!--The added form-model elements get converted into form components while retaining the original properties from the associated XDP or XSD. -->
 
 根據結構描述或表單資料模型(FDM)的自適應表單片段建立後，表單資料模型(FDM)或結構描述元素會顯示在自適應表單編輯器中，內容瀏覽器的「資料來源」標籤中。 您可以將表單模型元素拖放至片段上。 新增的表單模型元素會轉換為表單元件，同時保留關聯結構描述的原始屬性。
 
@@ -75,11 +75,11 @@ ht-degree: 4%
 若要將最適化表單片段新增至最適化表單：
 
 1. 在編輯模式中開啟最適化表單。
-1. 新增 **最適化表單片段** 元件至表單。
-1. 開啟「 」的「設定」對話方塊 **最適化表單片段** 元件。
-1. 選取 **片段參考** 在 **基本** 標籤。 您的表單可用的所有Adaptive Forms片段（視表單的模型而定）都會出現。
+1. 將&#x200B;**最適化表單片段**&#x200B;元件新增至表單。
+1. 開啟&#x200B;**最適化表單片段**&#x200B;元件的[設定]對話方塊。
+1. 在&#x200B;**基本**&#x200B;索引標籤中選取&#x200B;**片段參考**。 您的表單可用的所有Adaptive Forms片段（視表單的模型而定）都會出現。
 
-1. 選擇一個Adaptive Form片段到 **最適化表單片段** 最適化表單上的元件。
+1. 選擇一個Adaptive Form片段到您的Adaptive Form上的&#x200B;**Adaptive Form Fragment**&#x200B;元件上。
 
    ![選取最適化表單片段選項](/help/forms/assets/adaptive-form-fragment-basic.png)
 
@@ -135,7 +135,7 @@ You can also drag-drop a bound Adaptive Form fragment from Adaptive Form Fragmen
 
 1. 前往 `https://[hostname]/aem/forms.html`。
 
-1. 按一下 **選取** 在AEM Forms UI工具列中選取最適化表單片段。 工具列會顯示您對選取的Adaptive Form片段可以執行的下列操作。
+1. 按一下AEM Forms UI工具列中的&#x200B;**選取**，然後選取最適化表單片段。 工具列會顯示您對選取的Adaptive Form片段可以執行的下列操作。
 
 <table>
  <tbody>
@@ -145,11 +145,11 @@ You can also drag-drop a bound Adaptive Form fragment from Adaptive Form Fragmen
   </tr>
   <tr>
    <td><p>編輯</p> </td>
-   <td><p>在編輯模式中開啟選取的Adaptive Form片段。<br /> <br /> </p> </td>
+   <td><p>在編輯模式中開啟選取的最適化表單片段。<br /> <br /> </p> </td>
   </tr>
    <tr>
    <td><p>預覽</p> </td>
-   <td><p>提供以HTML預覽片段的選項，或透過將XML檔案的資料與片段合併來預覽自訂預覽。 如需詳細資訊，請參閱 <a>預覽表單</a>.<br /> <br /> </p> </td>
+   <td><p>提供以HTML預覽片段的選項，或透過將XML檔案的資料與片段合併來預覽自訂預覽。 如需詳細資訊，請參閱<a>預覽表單</a>。<br /> <br /> </p> </td>
   </tr>
   <tr>
    <td><p>下載</p> </td>
@@ -157,15 +157,15 @@ You can also drag-drop a bound Adaptive Form fragment from Adaptive Form Fragmen
   </tr>
   <tr>
    <td><p>開始檢閱/管理檢閱</p> </td>
-   <td><p>允許啟動和管理所選片段的審查。 如需詳細資訊，請參閱 <a>建立和管理稽核</a>.<br /> <br /> </p> </td>
+   <td><p>允許啟動和管理所選片段的審查。 如需詳細資訊，請參閱<a>建立和管理評論</a>。<br /> <br /> </p> </td>
   </tr>
   <tr>
    <td><p>新增字典</p> </td>
-   <td><p>產生字典以將選取的片段本地化。 如需詳細資訊，請參閱 <a>將最適化Forms本地化</a>.<br /> <br /> </p> </td>
+   <td><p>產生字典以將選取的片段本地化。 如需詳細資訊，請參閱<a>本地化最適化Forms</a>。<br /> <br /> </p> </td>
   </tr>
   <tr>
    <td><p>Publish /取消發佈</p> </td>
-   <td><p>發佈/取消發佈所選的片段。<br /> <br /> </p> </td>
+   <td><p>發佈/取消發佈選取的片段。<br /> <br /> </p> </td>
   </tr>
   <tr>
    <td><p>刪除</p> </td>

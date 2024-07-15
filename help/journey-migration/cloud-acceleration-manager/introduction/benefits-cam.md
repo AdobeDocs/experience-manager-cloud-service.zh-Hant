@@ -1,6 +1,6 @@
 ---
 title: 使用 Cloud Acceleration Manager 的好處
-description: 本頁面著重說明使用Cloud Acceleration Manager的主要優點。
+description: 本頁著重說明使用Cloud Acceleration Manager的主要優點。
 exl-id: d7a6c4f6-0f50-4f44-8a62-4a5769c76bd5
 feature: Migration
 role: Admin
@@ -27,13 +27,13 @@ ht-degree: 34%
 
    * 透過易於閱讀的結果視覺化表示方式，簡化目前執行個體的評估。
 
-   * 使用詳細的自訂報告，評估並瞭解移至AEMas a Cloud Service的估計複雜性。
+   * 使用詳細的自訂報告，評估並瞭解移至AEM as a Cloud Service的估計複雜性。
 
 1. 透過端對端指引簡化移動：
 
    * 使用內建智慧來管理移轉歷程，並在此過程中提供內容相關協助。
 
-   * 檢閱並識別AEMas a Cloud Service中不支援或需要重構的區域，以確保相容性。
+   * 檢閱並識別AEM as a Cloud Service不支援或需要重構的區域，以確保相容性。
 
 1. 最佳化工作：
 
@@ -41,4 +41,4 @@ ht-degree: 34%
 
 ## 下一步 {#whats-next}
 
-學習了什麼是Cloud Acceleration Manager後，您現在就可以準備使用和 [開始使用Cloud Acceleration Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/getting-started-cam.html?lang=zh-Hant).
+瞭解Cloud Acceleration Manager的用途後，您現在已準備好使用並[開始使用Cloud Acceleration Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/getting-started-cam.html?lang=zh-Hant)。

@@ -1,6 +1,6 @@
 ---
 title: App Builder動作
-description: 瞭解Adobe執行階段動作以及如何在App Builder應用程式中使用這些動作。
+description: 瞭解Adobe執行階段動作以及如何在App Builder應用程式中使用它們。
 version: Cloud Service
 feature: App Builder, Developing
 topic: Integrations, Development
@@ -32,7 +32,7 @@ ht-degree: 0%
 
 ## App Builder應用程式中的動作
 
-瞭解如何建立可以當作App Builder應用程式使用的動作。
+瞭解如何建立可做為App Builder應用程式的動作。
 
 >[!VIDEO](https://video.tv.adobe.com/v/339194/?quality=12&learn=on)
 

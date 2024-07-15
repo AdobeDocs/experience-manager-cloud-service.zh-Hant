@@ -1,6 +1,6 @@
 ---
-title: AEMas a Cloud Service版本2022.9.0中移轉工具的發行說明
-description: AEMas a Cloud Service版本2022.9.0中移轉工具的發行說明
+title: AEM as a Cloud Service 2022.9.0版中移轉工具的發行說明
+description: AEM as a Cloud Service 2022.9.0版中移轉工具的發行說明
 feature: Release Information
 exl-id: 581370ba-e3e8-487e-af83-a1eacbda2763
 role: Admin
@@ -11,9 +11,9 @@ ht-degree: 5%
 
 ---
 
-# AEMas a Cloud Service版本2022.9.0中移轉工具的發行說明 {#release-notes}
+# AEM as a Cloud Service 2022.9.0版中移轉工具的發行說明 {#release-notes}
 
-本頁面總覽AEMas a Cloud Service2022.9.0中移轉工具的發行說明。
+本頁面總覽AEM as a Cloud Service 2022.9.0中移轉工具的發行說明。
 
 ## 最佳做法分析工具 {#bpa-release}
 
@@ -23,7 +23,7 @@ Best Practices Analyzer v2.1.34的發行日期為2022年9月12日。
 
 ### 新增功能 {#what-is-new-bpa}
 
-* BPA現在可以偵測和報告客戶是否已新增自訂記錄器設定。 AEMas a Cloud Service不支援自訂記錄檔。 所有記錄檔都需要管道傳輸至 `error.log`
+* BPA現在可以偵測和報告客戶是否已新增自訂記錄器設定。 AEM as a Cloud Service不支援自訂記錄檔。 所有記錄檔都必須管道傳輸至`error.log`
 * BPA現在可以報告存在於客戶存放庫中的不同二進位MIME型別以及與其相關的計數。
 
 ### 錯誤修正 {#bug-fixes-bpa}

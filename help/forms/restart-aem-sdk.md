@@ -3,13 +3,13 @@ title: 如何重新啟動AEM SDK？
 description: 重新啟動AEM SDK的最佳實務
 role: Admin, Developer, User
 feature: Adaptive Forms
-source-git-commit: a0e2c0e3020d48b171645818b8e02dc33b50c2d5
+exl-id: 5fec2a93-1dda-4240-8690-24a6afae5c2b
+source-git-commit: 62be3c6e98df9002cdfbeef50dd5475c4daa1576
 workflow-type: tm+mt
 source-wordcount: '107'
 ht-degree: 2%
 
 ---
-
 
 # 重新啟動AEM SDK
 
@@ -17,11 +17,11 @@ ht-degree: 2%
 
 `javax.jcr.RepositoryException: Applying repoinit operation failed despite retry; set loglevel to DEBUG to see all exceptions. Last exception message was: Failed to set ACL (javax.jcr.ValueFormatException: Invalid type: 0) AclLine ALLOW {principals=[forms-xfa-writers], privileges=[jcr:modifyProperties]} restrictions=[rep:glob=[*/jcr:content/*], rep:itemNames=[xfaForm], fd:condition=[xfaForm, 1]]`
 
-![Restart-aem-sdk-error](/help/forms/assets/restart-sdk-error.png)
+![重新啟動 — aem-sdk-error](/help/forms/assets/restart-sdk-error.png)
 
 ## 解決方案
 
-若要重新啟動AEM SDK，請移至使用中命令視窗並按 `Ctrl + C` 重新啟動SDK的命令。
+若要重新啟動AEM SDK，請移至使用中命令視窗並按`Ctrl + C`命令以重新啟動SDK。
 
 建議您使用&#39;Ctrl + C&#39;命令重新啟動SDK。 使用替代方法重新啟動AEM SDK (例如停止Java™程式)可能會導致AEM開發環境不一致。
 

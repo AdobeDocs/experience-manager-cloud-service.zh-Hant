@@ -108,11 +108,11 @@ ht-degree: 93%
 
 使用存放庫中的 `LiveAction` 設定節點，以儲存會影響 `LiveAction` 執行個體執行階段行為的資訊。儲存 `LiveAction` 設定的存放庫中的節點可用於執行階段時的 `LiveActionFactory` 物件。因此，您可以對設定節點新增屬性，且必要時在您的 `LiveActionFactory` 實作中使用這些屬性。
 
-例如， `LiveAction` 必須儲存Blueprint作者的名稱。 設定節點的屬性包括儲存該資訊的藍圖頁面屬性名稱。在執行階段時，`LiveAction` 會從設定中擷取屬性名稱，然後獲取屬性值。
+例如，`LiveAction`必須儲存Blueprint作者的名稱。 設定節點的屬性包括儲存該資訊的藍圖頁面屬性名稱。在執行階段時，`LiveAction` 會從設定中擷取屬性名稱，然後獲取屬性值。
 
 [`LiveActionFactory.createAction`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/msm/api/LiveActionFactory.html) 方法的參數是一種 `Resource` 物件。此 `Resource` 物件在推出設定中代表這項即時動作的 `cq:LiveSyncAction` 節點。
 
-另請參閱 [建立轉出設定](/help/sites-cloud/administering/msm/live-copy-sync-config.md#creating-a-rollout-configuration) 以取得詳細資訊。
+如需詳細資訊，請參閱[建立轉出設定](/help/sites-cloud/administering/msm/live-copy-sync-config.md#creating-a-rollout-configuration)。
 
 和平常一樣，使用設定節點時，您應該將其調整為 `ValueMap` 物件：
 
@@ -138,7 +138,7 @@ public LiveAction createAction(Resource resource) throws WCMException {
    * `autoSave` 值表示您的 `LiveAction` 是否應該儲存對存放庫所做的變更
    * `reset` 值表示推出重設模式。
 
-從這些物件中，您可以取得 `LiveCopy`. 您還可以使用 `Resource` 物件獲取 `ResourceResolver`、`Session` 和 `Node` 物件。這些物件對於操作存放庫內容非常有用：
+您可以從這些物件取得有關`LiveCopy`的資訊。 您還可以使用 `Resource` 物件獲取 `ResourceResolver`、`Session` 和 `Node` 物件。這些物件對於操作存放庫內容非常有用：
 
 在以下程式碼的第一行中，來源是指來源頁面的 `Resource` 物件：
 
@@ -177,7 +177,7 @@ Node sourcenode = source.adaptTo(javax.jcr.Node.class);
 
 1. 在此位置下，建立一個具有以下屬性的節點：
 
-   * **名稱**：轉出設定的節點名稱，例如， `contentCopy` 或 `workflow`
+   * **名稱**：轉出設定的節點名稱，例如`contentCopy`或`workflow`
    * **類型**：`cq:RolloutConfig`
 
 1. 將以下屬性新增至此節點：
@@ -206,7 +206,7 @@ Node sourcenode = source.adaptTo(javax.jcr.Node.class);
 
 新增類型 `cq:LiveSyncAction` 的子節點，以將同步動作新增到推出設定中。同步動作節點的順序會決定動作發生的順序。
 
-1. 在CRXDE Lite中，選取 [轉出設定](#create-the-rollout-configuration) 節點，例如， `/apps/msm/myproject/rolloutconfigs/myrolloutconfig`.
+1. 在CRXDE Lite中，選取您的[轉出設定](#create-the-rollout-configuration)節點，例如`/apps/msm/myproject/rolloutconfigs/myrolloutconfig`。
 
 1. 建立具有下列節點屬性的節點：
 
@@ -351,7 +351,7 @@ Node sourcenode = source.adaptTo(javax.jcr.Node.class);
 
 以下 `LiveActionFactory` 類別會實作一項 `LiveAction`，這會記錄來源和目標頁面的訊息，並將 `cq:lastModifiedBy` 屬性從來源節點複製到目標節點。即時動作的名稱為 `exampleLiveAction`。
 
-1. 在Eclipse專案總管中，以滑鼠右鍵按一下 `MyLiveActionFactory-bundle/src/main/java/com.adobe.example.msm` 封裝並按一下 **新增** > **類別**.
+1. 在Eclipse專案總管中，用滑鼠右鍵按一下`MyLiveActionFactory-bundle/src/main/java/com.adobe.example.msm`封裝，然後按一下&#x200B;**新增** > **類別**。
 
 1. 對於&#x200B;**名稱**，請輸入 `ExampleLiveActionFactory` 然後按一下「**完成**」。
 
@@ -619,7 +619,7 @@ MSM 會使用儲存的語言和國家/地區代碼清單來確定和頁面語言
 * 連絡人電子郵件：
 
    * 從推出的屬性中排除。
-   * 另請參閱 [設定即時副本同步](/help/sites-cloud/administering/msm/live-copy-sync-config.md#excluding-properties-and-node-types-from-synchronization) 以取得詳細資訊。
+   * 如需詳細資訊，請參閱[設定即時副本同步處理](/help/sites-cloud/administering/msm/live-copy-sync-config.md#excluding-properties-and-node-types-from-synchronization)。
 
 * 索引鍵視覺樣式：
 

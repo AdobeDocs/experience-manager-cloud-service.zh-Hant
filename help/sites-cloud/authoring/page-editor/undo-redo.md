@@ -24,7 +24,7 @@ AEM會儲存您執行動作的歷史記錄，以及執行動作的順序，如�
 
 * 只要您使用復原後尚未進行頁面編輯，就可以重做動作。
 * 復原最多20個編輯動作（預設設定）。
-* 也使用 [鍵盤快速鍵](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md) 用於還原和重做。
+* 也使用[鍵盤快速鍵](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md)進行還原和重做。
 
 您可以對下列型別的頁面變更使用還原和重做：
 

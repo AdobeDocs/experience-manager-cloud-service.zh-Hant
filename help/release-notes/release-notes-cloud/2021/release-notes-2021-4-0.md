@@ -24,14 +24,14 @@ ht-degree: 43%
 
 ## 發行日期 {#release-date}
 
-的發行日期 [!DNL Adobe Experience Manager] 2021.4.0as a Cloud Service於2021年5月6日。
+[!DNL Adobe Experience Manager]as a Cloud Service2021.4.0的發行日期為2021年5月6日。
 下列版本(2021.5.0)將於2021年5月27日發行。
 
-## AEMas a Cloud Service基礎{#aem-as-a-cloud-service-foundation}
+## AEM as a Cloud Service Foundation{#aem-as-a-cloud-service-foundation}
 
 ### 新增功能 {#what-is-new-foundation}
 
-* [發佈內容樹狀工作流程](/help/operations/replication.md#publish-content-tree-workflow)  — 新的工作流程模型和步驟可在發佈深層內容時提高效能。
+* [Publish內容樹狀工作流程](/help/operations/replication.md#publish-content-tree-workflow) — 新的工作流程模型和步驟可在發佈深層內容時提高效能。
 
 ## [!DNL Adobe Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
@@ -55,21 +55,21 @@ ht-degree: 43%
 
 ### [!DNL Assets] 的新增功能 {#what-is-new-assets}
 
-* [!DNL Experience Manager] 不會封存下載原始檔案的單一資產下載。 此增強功能可提供更快的下載速度。
+* [!DNL Experience Manager]不會封存下載原始檔案的單一資產下載。 此增強功能可提供更快的下載速度。
 
 * 透過linkshare選項下載資產時，您現在可以選擇下載或不下載轉譯。 之前則會下載所有資產轉譯。
 
-* 管理員可以設定 [!DNL Experience Manager] ，以便在執行大量資產擷取後刪除資產來源。 另請參閱 [大量資產擷取](/help/assets/add-assets.md#asset-bulk-ingestor).
+* 管理員可以設定[!DNL Experience Manager]，以便在執行大量資產擷取後刪除資產來源。 請參閱[大量資產擷取](/help/assets/add-assets.md#asset-bulk-ingestor)。
 
-* 在執行狀況檢查以大量匯入資產時，Experience Manager現在會提供更多有關失敗原因的資訊。 另請參閱 [大量資產擷取](/help/assets/add-assets.md#asset-bulk-ingestor).
+* 在執行狀況檢查以大量匯入資產時，Experience Manager現在會提供更多有關失敗原因的資訊。 請參閱[大量資產擷取](/help/assets/add-assets.md#asset-bulk-ingestor)。
 
-* 使用大量匯入工具匯入資產時，管理員現在可以選擇在匯入成功後刪除來源檔案。 另請參閱 [大量資產擷取](/help/assets/add-assets.md#asset-bulk-ingestor).
+* 使用大量匯入工具匯入資產時，管理員現在可以選擇在匯入成功後刪除來源檔案。 請參閱[大量資產擷取](/help/assets/add-assets.md#asset-bulk-ingestor)。
 
 * 在編輯中繼資料結構時，新的根路徑選擇器欄位可讓管理員快速輕鬆地作出選擇，從而縮短設定時間。
 
-* 編輯中繼資料結構時，會新增一個資料型別，在中繼資料編輯器中提供自由格式的文字區域。 使用者可以使用此文字區域來輸入任意格式的文字，作為資產的中繼資料。 另請參閱 [中繼資料結構編輯器](/help/assets/metadata-schemas.md).
+* 編輯中繼資料結構時，會新增一個資料型別，在中繼資料編輯器中提供自由格式的文字區域。 使用者可以使用此文字區域來輸入任意格式的文字，作為資產的中繼資料。 請參閱[中繼資料結構描述編輯器](/help/assets/metadata-schemas.md)。
 
-* 您可使用CSV檔案大量匯入許多資產的中繼資料，也可以將其匯出為CSV檔案。 預設日期格式現在為 `yyyy-MM-dd'T'HH:mm:ss.SSSXXX`. 使用者可以更新欄標題來使用不同的格式。 例如，新增 `Date: DateFormat: yyyy-MM-dd'T'HH:mm:ssXXX` 做為CSV檔案中的欄標題，而不是Word `Date`.
+* 您可使用CSV檔案大量匯入許多資產的中繼資料，也可以將其匯出為CSV檔案。 預設日期格式現在是`yyyy-MM-dd'T'HH:mm:ss.SSSXXX`。 使用者可以更新欄標題來使用不同的格式。 例如，在CSV檔案中新增`Date: DateFormat: yyyy-MM-dd'T'HH:mm:ssXXX`作為欄標題，而不是新增`Date`這個字。
 
 * 在「欄」檢視中瀏覽資產時，視覺指示器會顯示每個資產的已核准或已拒絕狀態。
 
@@ -146,7 +146,7 @@ ht-degree: 43%
 
 ## Cloud Manager {#cloud-manager}
 
-本節概述AEMas a Cloud Service2021.4.0中Cloud Manager的發行說明
+本節概述AEM as a Cloud Service 2021.4.0中Cloud Manager的發行說明
 
 ### 發行日期 {#release-date-cm-april}
 

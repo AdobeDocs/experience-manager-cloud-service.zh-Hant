@@ -1,5 +1,5 @@
 ---
-title: 瞭解如何搜尋和探索中的資產 [!DNL Assets view]？
+title: 瞭解如何搜尋和探索 [!DNL Assets view]中的資產？
 description: 瞭解如何在AEM Assets檢視中搜尋和探索資產。 強大的搜尋功能可讓您快速探索合適的資產，協助您改善內容速度。
 role: User
 exl-id: abfe6a91-1699-436f-8bf4-0d0bf2369f46
@@ -49,7 +49,7 @@ ht-degree: 92%
 
 * 有效日期：根據`Expired`資產狀態來篩選搜尋結果。此外，您可以指定資產的有效日期範圍以進一步篩選搜尋結果。
 
-* 自訂篩選器： [新增自訂篩選器](#custom-filters) 至資產檢視使用者介面。 除了標準篩選器之外，您還可以套用這些自訂篩選器來縮小您的搜尋結果。
+* 自訂篩選器： [新增自訂篩選器](#custom-filters)至Assets檢視使用者介面。 除了標準篩選器之外，您還可以套用這些自訂篩選器來縮小您的搜尋結果。
 
 您可以依照 `Name`、`Relevancy`、`Size`、`Modified` 和 `Created` 的遞增或遞減順序排序搜尋的資產。
 
@@ -57,9 +57,9 @@ ht-degree: 92%
 
 **需要的權限：**`Can Edit`、`Owner` 或管理員。
 
-資產檢視也可讓您將自訂篩選器新增到使用者介面。 然後，除了[標準篩選器](#refine-search-results)之外，您還可以套用這些自訂篩選器來縮小您的搜尋結果。
+Assets檢視也可讓您將自訂篩選器新增到使用者介面。 然後，除了[標準篩選器](#refine-search-results)之外，您還可以套用這些自訂篩選器來縮小您的搜尋結果。
 
-「資產」檢視提供下列自訂篩選器：
+Assets檢視提供下列自訂篩選器：
 
 <table>
     <tbody>
@@ -322,13 +322,13 @@ Experience Manager Assets可讓您為組織選取預設登陸頁面。 使用「
 
 ### 內容搜尋意見回饋 {#contextual-search-feedback}
 
-如果您需要提供內容搜尋功能的意見回饋，請按一下 ![「關聯式搜尋」圖示](assets/do-not-localize/Smock_Help_18_N.svg) 並按一下「意見回饋」圖示。 選取意見回饋類型，指定主題和描述，然後按一下「**[!UICONTROL 提交]**」。
+如果您需要提供內容搜尋功能的意見回饋，請按一下![內容搜尋圖示](assets/do-not-localize/Smock_Help_18_N.svg)，然後按一下「意見回饋」圖示。 選取意見回饋類型，指定主題和描述，然後按一下「**[!UICONTROL 提交]**」。
 
 ![內容搜尋意見回饋](assets/contextual-search-feedback.png)
 
 ## 後續步驟 {#next-steps}
 
-* [觀看在「資產」檢視中搜尋資產的相關影片](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/using.html?lang=zh-Hant)
+* [觀看在Assets檢視中搜尋資產的相關影片](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/using.html?lang=zh-Hant)
 
 * 使用資產檢視使用者介面所提供的[!UICONTROL 意見回饋]選項提供產品意見回饋
 

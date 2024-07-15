@@ -52,7 +52,7 @@ ht-degree: 73%
    * 非容器標記的標記則稱為葉標記。
    * 標記命名空間可以是葉標記或容器標記。
 
-如需標籤運作方式的詳細技術資訊，請參閱 [AEM標籤架構](/help/implementing/developing/introduction/tagging-framework.md).
+如需有關標籤如何運作的詳細技術資訊，請參閱[AEM標籤架構](/help/implementing/developing/introduction/tagging-framework.md)。
 
 ## 標記主控台 {#tagging-console}
 
@@ -65,7 +65,7 @@ ht-degree: 73%
 若要存取標記主控台：
 
 1. 使用管理權限登入編寫環境。
-1. 在全域導覽功能表中選取 **`Tools`** > **`General`** >
+1. 在全域導覽功能表中選取&#x200B;**`Tools`** > **`General`** >
    **`Tagging`**。
 
 ![AEM 中的標記主控台](/help/sites-cloud/administering/assets/tagging-console.png)
@@ -82,7 +82,7 @@ ht-degree: 73%
 
 命名空間用於整理其他標記。可將其視為最低層級的標記，通常用於將其他標記分組。
 
-1. 若要建立名稱空間，請開啟 [標籤主控台](#tagging-console) 並選取 **建立** 工具列中的按鈕，然後 **建立名稱空間**.
+1. 若要建立名稱空間，請開啟[標籤主控台](#tagging-console)並選取工具列中的&#x200B;**建立**&#x200B;按鈕，然後選取&#x200B;**建立名稱空間**。
 
    ![新增命名空間對話框](/help/sites-cloud/administering/assets/add-namespace.png)
 
@@ -92,7 +92,7 @@ ht-degree: 73%
    * **名稱** - 如果未指定名稱，則在&#x200B;**標題**&#x200B;中建立有效的節點名稱。如需詳細資訊，可參閱文件「[AEM 標記架構](/help/implementing/developing/introduction/tagging-framework.md#tagid)」。
    * **說明** - 命名空間的說明 (選用)
 
-1. 輸入必要資訊後，請選取 **建立**.
+1. 輸入必要資訊後，請選取&#x200B;**建立**。
 
 命名空間即建立完成。在標籤主控台中，名稱空間位於最低層級（在主控台中最左側的欄），並由資料夾圖示表示，這反映了它們作為「容器」或其他標籤分組的性質。
 
@@ -104,11 +104,11 @@ ht-degree: 73%
 
 標記通常會新增到命名空間中。
 
-1. 若要建立標籤，請開啟 [標籤主控台。](#tagging-console)
+1. 若要建立標籤，請開啟[標籤主控台。](#tagging-console)
 
 1. 選取您要建立標籤的名稱空間。 或者選取另一個標記，在其下方建立子標記。
 
-1. 選取 **建立** 按鈕上，然後 **建立標籤**.
+1. 選取工具列上的&#x200B;**建立**&#x200B;按鈕，然後選取&#x200B;**建立標籤**。
 
 1. 「**建立標記**」對話框會隨即開啟。提供新標記所需的資訊。
 
@@ -119,7 +119,7 @@ ht-degree: 73%
 
    ![建立標記對話框](assets/create-tag.png)
 
-1. 選取 **提交**.
+1. 選取&#x200B;**提交**。
 
 標記已建立，主控台也已更新，顯示新的標記。
 
@@ -134,7 +134,7 @@ ht-degree: 73%
 
 1. 若要發佈標記，請開啟[標記主控台。](#tagging-console)
 
-1. 選取您要發佈的一個或多個標籤，然後在工具列中選取 **發佈**.
+1. 選取您要發佈的一個或多個標籤，然後在工具列中選取&#x200B;**Publish**。
 
    ![在主控台中選取標記](assets/select-tags.png)
 
@@ -178,7 +178,7 @@ Be sure to [apply permissions](#setting-tag-permissions) to the namespace before
 
 1. 若要檢視標記的屬性，請開啟[標記主控台。](#tagging-console)
 
-1. 選取您要檢視其屬性的標籤，然後在左側欄中選取 **屬性**.
+1. 選取您要檢視其屬性的標籤，然後在左側邊欄中選取&#x200B;**屬性**。
 
    ![選取屬性檢視](assets/view-tag-properties.png)
 
@@ -186,7 +186,7 @@ Be sure to [apply permissions](#setting-tag-permissions) to the namespace before
 
    ![檢視標記屬性](assets/tag-properties.png)
 
-如需有關選取檢視模式和邊欄的詳細資訊，請參閱 [基本處理](/help/sites-cloud/authoring/basic-handling.md#rail-selector).
+如需有關選取檢視模式和邊欄的詳細資訊，請參閱[基本處理](/help/sites-cloud/authoring/basic-handling.md#rail-selector)。
 
 ### 編輯標記 {#editing-tags}
 
@@ -194,7 +194,7 @@ Be sure to [apply permissions](#setting-tag-permissions) to the namespace before
 
 1. 若要編輯標記，請開啟[標記主控台。](#tagging-console)
 
-1. 選取您要編輯的標籤，然後在工具列中選取「 」 **編輯**.
+1. 選取您要編輯的標籤，然後在工具列中選取&#x200B;**編輯**。
 
 1. 進行所需的變更。可變更的項目為：
 
@@ -202,7 +202,7 @@ Be sure to [apply permissions](#setting-tag-permissions) to the namespace before
    * **說明**
    * [**本地化**](#managing-tags-in-different-languages)
 
-1. 進行編輯後，選取 **提交**.
+1. 完成編輯後，選取&#x200B;**提交**。
 
 如需如何新增語言翻譯的詳細資料，請參閱「[管理不同語言的標記](#managing-tags-in-different-languages)」一節。
 
@@ -214,7 +214,7 @@ Be sure to [apply permissions](#setting-tag-permissions) to the namespace before
 
 1. 若要取消發佈標記，請開啟[標記主控台。](#tagging-console)
 
-1. 選取您要取消發佈的一個或多個標籤，然後在工具列中選取 **取消發佈**.
+1. 選取您要取消發佈的標籤，然後在工具列中選取&#x200B;**取消發佈**。
 
    ![在主控台中選取標記](assets/select-tags.png)
 
@@ -234,7 +234,7 @@ Be sure to [apply permissions](#setting-tag-permissions) to the namespace before
 
 1. 若要檢視標記的參考，請開啟[標記主控台。](#tagging-console)
 
-1. 選取您要檢視其參照的標籤，然後在左側欄中選取 **引用**.
+1. 選取您要檢視其參照的標籤，然後在左側邊欄中選取&#x200B;**參照**。
 
    ![選取屬性檢視](assets/view-tag-references.png)
 
@@ -248,7 +248,7 @@ Be sure to [apply permissions](#setting-tag-permissions) to the namespace before
 
 將滑鼠停留在清單中或選取參照內容，以顯示內容的完整路徑。
 
-如需有關選取檢視模式和邊欄的詳細資訊，請參閱 [基本處理](/help/sites-cloud/authoring/basic-handling.md#rail-selector).
+如需有關選取檢視模式和邊欄的詳細資訊，請參閱[基本處理](/help/sites-cloud/authoring/basic-handling.md#rail-selector)。
 
 ### 移動標記 {#moving-tags}
 
@@ -260,20 +260,20 @@ Be sure to [apply permissions](#setting-tag-permissions) to the namespace before
 
 1. 若要移動標記或將其重新命名，請開啟[標記主控台。](#tagging-console)
 
-1. 選取您要移動或重新命名的標籤，然後選取 **移動** （在工具列中）。
+1. 選取您要移動或重新命名的標籤，然後在工具列中選取&#x200B;**移動**。
 
-1. 在 **移動標籤** 對話方塊，指定您要變更的屬性。
+1. 在&#x200B;**移動標籤**&#x200B;對話方塊中，指定您要變更的屬性。
 
-   * **重新命名為**  — 您想要為標籤指定的新名稱
+   * **重新命名為** — 您要賦予標籤的新名稱
       * 此欄位會預先填入標記的目前名稱。
       * 如果您只想移動標籤而不想重新命名，請保留未修改狀態。
-   * **移至**  — 您想要移動標籤的位置
+   * **移至** — 您要移動標籤的位置
       * 此欄位會預先填入標記的目前位置。
       * 如果您只想重新命名標籤而不想移動它，請保留未修改狀態。
 
    ![移動標記](assets/move-tag.png)
 
-1. 選取 **提交**.
+1. 選取&#x200B;**提交**。
 
 標記會被重新命名和/或移動到新位置。所選取的標記是容器標記時，若移動該標記，所有子標記也會跟著移動。
 
@@ -283,15 +283,15 @@ Be sure to [apply permissions](#setting-tag-permissions) to the namespace before
 
 1. 若要合併兩個標記，請開啟[標記主控台。](#tagging-console)
 
-1. 選取您要合併到另一個標籤的標籤，然後選取 **合併** （在工具列中）。
+1. 選取您要合併到其他標籤的標籤，然後在工具列選取&#x200B;**合併**。
 
-1. 在 **合併標籤** 對話方塊中，選取 **瀏覽** 圖示 **合併至** 欄位，指定要將選取的標籤合併到哪個標籤中。
+1. 在&#x200B;**合併標籤**&#x200B;對話方塊中，選取&#x200B;**合併為**&#x200B;欄位的&#x200B;**瀏覽**&#x200B;圖示，以指定要將選取的標籤合併到哪個標籤中。
 
    ![合併標記對話框](assets/merge-tag.png)
 
-1. 選取 **提交**.
+1. 選取&#x200B;**提交**。
 
-在主控台中選取的標記即會合併到對話框中指定的標記中。移動或合併參照的標記時，不會將該標記真的刪除，因此有可能維持參照。另請參閱 [AEM標籤架構](/help/implementing/developing/introduction/tagging-framework.md#moving-and-merging-tags) 以取得詳細資訊。
+在主控台中選取的標記即會合併到對話框中指定的標記中。移動或合併參照的標記時，不會將該標記真的刪除，因此有可能維持參照。如需詳細資訊，請參閱[AEM標籤架構](/help/implementing/developing/introduction/tagging-framework.md#moving-and-merging-tags)。
 
 ### 刪除標記 {#deleting-tags}
 
@@ -299,7 +299,7 @@ Be sure to [apply permissions](#setting-tag-permissions) to the namespace before
 
 1. 若要刪除標記，請開啟[標記主控台。](#tagging-console)
 
-1. 選取您要刪除的標籤，然後選取 **刪除** （在工具列中）。
+1. 選取您要刪除的標籤，然後在工具列中選取&#x200B;**刪除**。
 
 1. **刪除標記**&#x200B;對話框會要求確認要刪&#x200B;&#x200B;除所選取的標記。選取&#x200B;**刪除**。
 
@@ -307,7 +307,7 @@ Be sure to [apply permissions](#setting-tag-permissions) to the namespace before
 
 1. AEM 會檢查以確保該標記未被參照。
 
-   1. 如果找不到任何參照，則 AEM 會要求最後的刪除確認。選取 **刪除**
+   1. 如果找不到任何參照，則 AEM 會要求最後的刪除確認。選取&#x200B;**刪除**
 
       ![找不到任何參照](assets/no-references-found.png)
 
@@ -356,13 +356,13 @@ Tag permissions are ['secure (by default)'](/help/sites-administering/production
 
 可將標記的 `title` 屬性翻譯成多種語言。翻譯後，即會根據使用者或內容語言顯示適當的標記標題。
 
-假設我們有一個稱為的標籤 `Animals` 我們要翻譯成德文和法文
+假設我們有一個名為`Animals`的標籤，且我們要將其翻譯成德文和法文。
 
 1. 請開啟[標記主控台。](#tagging-console)
 
-1. 選取您要翻譯的標籤，然後選取「 」 **編輯** （在工具列中）。
+1. 選取您要翻譯的標籤，然後在工具列中選取&#x200B;**編輯**。
 
-1. 在 **編輯標籤** 對話方塊，在 **本地化** 欄，選取目標語言，例如，德文。
+1. 在&#x200B;**編輯標籤**&#x200B;對話方塊的&#x200B;**本地化**&#x200B;欄中，選取目標語言，例如德文。
 
 1. 在顯示的&#x200B;**德文**&#x200B;欄位中，提供翻譯後的標題。
 
@@ -370,7 +370,7 @@ Tag permissions are ['secure (by default)'](/help/sites-administering/production
 
    ![翻譯標記標題](assets/translate-tag.png)
 
-1. 選取 **提交**.
+1. 選取&#x200B;**提交**。
 
 若為內容頁面，會從頁面語言 (如有) 選擇標記的語言。
 
@@ -380,4 +380,4 @@ Tag permissions are ['secure (by default)'](/help/sites-administering/production
 
 >[!TIP]
 >
->如果您想深入瞭解AEM本地化功能，請參閱 [翻譯您的多語言網站內容](/help/sites-cloud/administering/translation/overview.md).
+>如果您想深入瞭解AEM本地化功能，請參閱[翻譯您的多語言網站內容](/help/sites-cloud/administering/translation/overview.md)。

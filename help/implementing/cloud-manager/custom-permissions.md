@@ -30,7 +30,7 @@ Cloud Manager 有一組預先定義的角色，主要對 Cloud Manager 不同功
 
 >[!TIP]
 >
->如需預先定義角色的詳細資訊，請參閱 [AEMas a Cloud Service團隊和產品設定檔](/help/onboarding/aem-cs-team-product-profiles.md).
+>如需預先定義角色的詳細資訊，請參閱[AEM as a Cloud Service團隊和產品設定檔](/help/onboarding/aem-cs-team-product-profiles.md)。
 
 ## 使用自訂權限 {#using}
 
@@ -40,7 +40,7 @@ Cloud Manager 有一組預先定義的角色，主要對 Cloud Manager 不同功
 1. [將自訂許可權指派給產品設定檔。](#assign-permissions)
 1. [將使用者指派給產品設定檔。](#assign-users)
 
-本節詳細說明這些步驟。 您可能會發現有用檢視 [辭彙](#terms) 和 [可設定的許可權](#configurable-permissions) 區段建立自己的自訂許可權時。
+本節詳細說明這些步驟。 當您建立自己的自訂許可權時，您可能會發現檢視[條款](#terms)和[可設定的許可權](#configurable-permissions)區段很有用。
 
 >[!NOTE]
 >
@@ -50,13 +50,13 @@ Cloud Manager 有一組預先定義的角色，主要對 Cloud Manager 不同功
 
 請先建立可指派自訂許可權的產品設定檔。
 
-1. 登入Cloud Manager於 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/).
+1. 在[my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)登入Cloud Manager。
 
-1. 在Cloud Manager登陸頁面上，選擇 **管理存取權** 按鈕。
+1. 在Cloud Manager登陸頁面上，選取&#x200B;**管理存取權**&#x200B;按鈕。
 
 ![管理存取權按鈕](assets/manage-access.png)
 
-1. 您將被重新導到 Admin Console **產品**&#x200B;標籤，您可以在其中管理雲端管理員的使用者和權限。在Admin Console中，選取 **新設定檔** 按鈕。
+1. 您將被重新導到 Admin Console **產品**&#x200B;標籤，您可以在其中管理雲端管理員的使用者和權限。在Admin Console中，選取&#x200B;**新設定檔**&#x200B;按鈕。
 
 ![新設定檔按鈕](assets/admin-console-new-profile.png)
 
@@ -65,9 +65,9 @@ Cloud Manager 有一組預先定義的角色，主要對 Cloud Manager 不同功
    * **產品設定檔名稱**- 設定檔的說明性名稱
    * **顯示名稱** - UI （選項）中顯示的縮寫名稱
    * **說明** - 設定檔的資訊性描述，解釋用途 (選擇性)
-   * **透過電子郵件通知使用者**  — 選取後，當使用者新增到此設定檔或從中移除時，會收到電子郵件通知。
+   * **透過電子郵件通知使用者** — 選取後，使用者新增或移除此設定檔時會透過電子郵件通知。
 
-1. 選取 **儲存** 完成時。
+1. 完成時選取&#x200B;**儲存**。
 
 新的產品設定檔已儲存並出現在 Admin Console 的產品設定檔清單。
 
@@ -75,28 +75,28 @@ Cloud Manager 有一組預先定義的角色，主要對 Cloud Manager 不同功
 
 現在您有了新的產品設定檔，您可以將自訂權限指派至新的產品設定檔。
 
-1. 在Admin Console中，選取 [您建立的新產品設定檔](#create).
+1. 在Admin Console中，選取您建立的[新產品設定檔](#create)的名稱。
 
 1. 在開啟的視窗中，選取&#x200B;**權限**&#x200B;標籤可檢視可編輯的權限清單。
 
    ![可編輯的權限](assets/permissions-tab.png)
 
-1. 選取 **編輯** 許可權的連結，方便您進行編輯。
+1. 選取許可權的&#x200B;**編輯**&#x200B;連結，以便您進行編輯。
 
-1. 此 **編輯許可權** 視窗會開啟。
+1. **編輯許可權**&#x200B;視窗隨即開啟。
    * 您在上一個步驟中選取的權限將在左側欄中呈現已選取狀態。
    * 標示為「**可用權限項目**」的中間欄包含此權限可指派的權限項目。
    * 標示為&#x200B;**包含的權限項目**&#x200B;的右側欄包含已指派的權限項目。
 
    ![編輯權限項目](assets/edit-permission-items.png)
 
-1. 選取加號(`+`)圖示來新增許可權至欄 **包含的許可權專案**.
+1. 選取許可權專案旁的加號(`+`)圖示，以便將其新增至欄&#x200B;**包含的許可權專案**。
 
-   * 選取 `i` 圖示加以存取（如果想深入瞭解）。
+   * 如果您想深入瞭解許可權專案，請選取許可權專案旁的`i`圖示。
 
-1. 選取 **全部新增** 按鈕上方的 **可用許可權** 欄，讓您可以新增所有許可權。
+1. 選取&#x200B;**可用許可權**&#x200B;欄頂端的&#x200B;**新增全部**&#x200B;按鈕，以便您新增所有許可權。
 
-1. 選取 **儲存** 當您完成新產品設定檔的許可權專案定義時。
+1. 當您完成定義新產品設定檔的許可權專案時，請選取&#x200B;**儲存**。
 
 您的新產品設定檔現已與其自訂權限一起儲存。
 
@@ -104,13 +104,13 @@ Cloud Manager 有一組預先定義的角色，主要對 Cloud Manager 不同功
 
 現在您可以將使用者指派至您建立的內含自訂權限的新產品設定檔。
 
-1. 在Admin Console中，選取 [您指派自訂許可權的新產品設定檔。](#assign-permissions)
+1. 在Admin Console中，選取您指派自訂許可權的[新產品設定檔名稱。](#assign-permissions)
 
 1. 在開啟的視窗中，選取&#x200B;**使用者**&#x200B;標籤。
 
-1. 選取 **新增使用者** 按鈕，並使用自訂許可權將使用者指派給您的新產品設定檔。
+1. 選取「**新增使用者**」按鈕，並將使用者指派給具有自訂許可權的新產品設定檔。
 
-請參閱區段 **將使用者和使用者群組新增至產品設定檔** 檔案 [管理企業使用者的產品設定檔](https://helpx.adobe.com/tw/enterprise/using/manage-product-profiles.html) 以取得有關如何使用Admin Console的詳細資訊。
+請參閱檔案[管理企業使用者的產品設定檔](https://helpx.adobe.com/tw/enterprise/using/manage-product-profiles.html)中的&#x200B;**將使用者與使用者群組新增至產品設定檔**&#x200B;一節，以取得有關如何使用此Admin Console的詳細資訊。
 
 ## 可設定的權限 {#configurable-permissions}
 
@@ -153,10 +153,10 @@ Cloud Manager 有一組預先定義的角色，主要對 Cloud Manager 不同功
 
 以下權限是組織層級的權限：
 
-* **計畫建立**  — 此許可權可讓使用者在組織中建立方案。
-* **存放庫資訊存取** 此租使用者/組織層級許可權可讓使用者產生使用者名稱、密碼和存放庫URL，以便存取和貢獻給客戶專案。
+* **方案建立** — 此許可權可讓使用者在組織中建立方案。
+* **存放庫資訊存取**&#x200B;此租使用者/組織層級許可權可讓使用者產生使用者名稱、密碼和存放庫URL，以存取和貢獻客戶專案。
    * 組織中所有存放庫存取許可權的使用者名稱和密碼都是通用的，不過每個計畫的存放庫URL都是唯一的。
-   * 另請參閱 [存取存放庫](/help/implementing/cloud-manager/managing-code/accessing-repos.md) 以取得詳細資訊。
+   * 如需詳細資訊，請參閱[存取存放庫](/help/implementing/cloud-manager/managing-code/accessing-repos.md)。
 
 ## 詞彙 {#terms}
 
@@ -164,7 +164,7 @@ Cloud Manager 有一組預先定義的角色，主要對 Cloud Manager 不同功
 
 | 術語 | 說明 |
 |---|---|
-| 預先定義的權限 | 預先定義的角色，例如 **企業所有者** 和 **部署管理員** 以控管Cloud Manager的各種功能。 如需預先定義角色的詳細資訊，請參閱 [AEMas a Cloud Service團隊和產品設定檔。](/help/onboarding/aem-cs-team-product-profiles.md) |
+| 預先定義的權限 | 預先定義的角色，例如&#x200B;**業務負責人**&#x200B;和&#x200B;**部署管理員**，可管理Cloud Manager的各種功能。 如需預先定義角色的詳細資訊，請參閱[AEM as a Cloud Service團隊和產品設定檔。](/help/onboarding/aem-cs-team-product-profiles.md) |
 | 自訂權限 | Cloud Manager功能可讓使用者建立許可權設定檔來定義角色，以控管Cloud Manager的支援功能 |
 | 產品設定檔 | 在Admin Console中建立，用於管理適用於屬於許可權設定檔的使用者之可設定許可權 |
 | 可設定的權限 | 可在權限設定檔中設定的 Cloud Manager 權限 |
@@ -184,7 +184,7 @@ Cloud Manager 有一組預先定義的角色，主要對 Cloud Manager 不同功
 使用自訂許可權時，請牢記以下限制。
 
 * 自訂許可權設定檔在設定許可權時也會列出AMS程式、環境和管道。
-* 在Cloud Manager中建立的計畫、環境和管道等資源可能需要兩分鐘才能在Admin Console中顯示許可權設定。
+* 在Cloud Manager中建立的方案、環境和管道等資源可能需要兩分鐘才能在Admin Console中顯示許可權設定。
 * 自訂權限服務無法回應時 (這種情況很少見)，預先定義的設定檔仍然可用，並且預先定義的設定檔中的使用者仍具有適當的存取權。
 
 ## 常見問題 {#faq}
@@ -196,7 +196,7 @@ Cloud Manager 有一組預先定義的角色，主要對 Cloud Manager 不同功
 * 部署管理員
 * 開發人員
 
-如需預先定義角色的詳細資訊，請參閱 [AEMas a Cloud Service團隊和產品設定檔。](/help/onboarding/aem-cs-team-product-profiles.md)
+如需預先定義角色的詳細資訊，請參閱[AEM as a Cloud Service團隊和產品設定檔。](/help/onboarding/aem-cs-team-product-profiles.md)
 
 ### 引入自訂設定檔後，預先定義的權限設定檔會發生什麼情況？
 
@@ -216,4 +216,4 @@ Cloud Manager 有一組預先定義的角色，主要對 Cloud Manager 不同功
 
 ### 如果使用者具有編輯環境/管道的權限，但無權存取包含該環境/管道的方案，會發生什麼情況？
 
-在此情況下，如果使用者沒有以下許可權，則無法存取環境或管道 **計畫存取** 包含環境或管道的許可權。
+在此情況下，如果使用者沒有包含環境或管道的&#x200B;**方案存取**&#x200B;許可權，則無法存取環境或管道。

@@ -16,7 +16,7 @@ ht-degree: 35%
 
 # 在活動資料流中檢視資產操作記錄 {#activity-stream-in-timeline}
 
-此功能會顯示時間軸上資產的活動記錄。 如果您在中執行下列任何資產相關作業 [!DNL Experience Manager Assets]，活動資料流功能會更新時間軸以反映活動。
+此功能會顯示時間軸上資產的活動記錄。 如果您在[!DNL Experience Manager Assets]中執行下列任何資產相關作業，活動資料流功能會更新時間軸以反映活動。
 
 下列作業會記錄於活動資料流中：
 
@@ -29,13 +29,13 @@ ht-degree: 35%
 * 拒絕
 * 移動
 
-將從儲存日誌檔案的CRX位置提取要在時 `/var/audit/com.day.cq.dam/content/dam` 間軸中顯示的活動日誌。此外，當上傳新資產或修改現有資產並簽入時，會記錄時間軸活動 [!DNL Experience Manager] via [Adobe資產連結](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html) 或 [[!DNL Experience Manager] 案頭應用程式](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html).
+將從儲存日誌檔案的CRX位置提取要在時 `/var/audit/com.day.cq.dam/content/dam` 間軸中顯示的活動日誌。此外，當上傳新資產或修改現有資產並透過[Adobe資產連結](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html)或[[!DNL Experience Manager] 案頭應用程式](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html)簽入[!DNL Experience Manager]時，會記錄時間軸活動。
 
 >[!NOTE]
 >
 >暫時性工作流程不會顯示在時間軸中，因為沒有為這些工作流程儲存歷史記錄資訊。
 
-若要檢視活動資料流，請在資產上執行一或多個作業、選取資產，然後選擇 **[!UICONTROL 時間表]** 從GlobalNav清單。
+若要檢視活動資料流，請在資產上執行一或多個作業、選取資產，然後從GlobalNav清單中選擇&#x200B;**[!UICONTROL 時間表]**。
 
 <!-- ![timeline-2](assets/timeline-2.png) -->
 

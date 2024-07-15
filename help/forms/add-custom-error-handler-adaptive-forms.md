@@ -68,7 +68,7 @@ AEM Forms 為表單提交提供現成可用的成功和錯誤處理常式。這�
 其中：
 
 * `errorCausedBy` 說明失敗的原因。
-* `errors` 提及未通過驗證准則的欄位的SOM運算式以及驗證錯誤訊息。
+* `errors`提及未通過驗證准則的欄位的SOM運算式以及驗證錯誤訊息。
 * `originCode` 由 AEM 新增的欄位，並包含外部服務傳回的 http 狀態代碼。
 * `originMessage`由 AEM 新增的欄位，並包含外部服務傳回的原始錯誤資料。
 
@@ -111,7 +111,7 @@ AEM Forms 為表單提交提供現成可用的成功和錯誤處理常式。這�
 * `detail (optional)` 會提供有關失敗的其他詳細資訊 (若需要)。
 * `instance (optional)` 會表示與失敗相關的執行個體或識別碼，有助於追蹤或識別失敗的具體情況。
 * `validationErrors (required)` 包含有關驗證錯誤的資訊。其中包含下列欄位：
-   * `fieldname` 提及未通過驗證准則的欄位的SOM運算式。
+   * `fieldname`提及未通過驗證准則的欄位的SOM運算式。
    * `dataRef` 表示驗證失敗欄位的 JSON 路徑或 XPath。
    * `details` 包含帶有錯誤欄位的驗證錯誤訊息。
 * `originCode (optional)` 由 AEM 新增的欄位，並包含外部服務傳回的 http 狀態代碼
@@ -141,9 +141,9 @@ AEM Forms 為表單提交提供現成可用的成功和錯誤處理常式。這�
           ]}
   ```
 
-  您可以點選任何欄位並選取「 」，以檢視最適化表單中任何欄位的SOM運算式 **[!UICONTROL 檢視SOM運算式]**.
+  您可以點選任何欄位並選取&#x200B;**[!UICONTROL 檢視SOM運算式]**，以檢視最適化表單中任何欄位的SOM運算式。
 
-  ![在自訂錯誤處理常式中顯示錯誤回應的最適化表單欄位的SOM運算式](/help/forms/assets/custom-error-handler-somexpression.png)
+  ![適用性表單欄位的Som運算式，以在自訂錯誤處理常式中顯示錯誤回應](/help/forms/assets/custom-error-handler-somexpression.png)
 
 +++
 
@@ -167,7 +167,7 @@ AEM Forms 為表單提交提供現成可用的成功和錯誤處理常式。這�
       ]}
   ```
 
-  ![在自訂錯誤處理常式中顯示錯誤回應的最適化表單欄位的資料參考](/help/forms/assets/custom-errorhandler-dataref.png)
+  ![最適化表單欄位的資料參考，以在自訂錯誤處理常式中顯示錯誤回應](/help/forms/assets/custom-errorhandler-dataref.png)
 
 您可以在表單元件的「**[!UICONTROL 屬性]**」視窗內查看 dataRef 值。
 
@@ -193,7 +193,7 @@ AEM Forms 為表單提交提供現成可用的成功和錯誤處理常式。這�
 如果錯誤回應是在標準結構描述中或是伺服器端驗證失敗，則系統會支援預設錯誤處理常式以顯示欄位的錯誤訊息。
 若要了解如何使用採用[規則編輯器調用服務](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=en#invoke)動作的預設錯誤處理常式，請以含有兩個欄位的簡單最適化表單為例 (**寵物 ID** 和&#x200B;**寵物名稱**)，並在「**寵物 ID**」欄位使用預設的錯誤處理常式，查看為調用外部服務所設定 REST 端點傳回的各種錯誤，例如 `200 - OK`、`404 - Not Found`、`400 - Bad Request`。要使用規則編輯器的調用服務操作添加默認錯誤處理程序，請執行以下步驟：
 
-1. 在撰寫模式中開啟最適化表單，選取表單元件，然後選取 **[!UICONTROL 規則編輯器]** 以開啟規則編輯器。
+1. 以編寫模式開啟最適化表單，選取表單元件，然後選取&#x200B;**[!UICONTROL 規則編輯器]**&#x200B;以開啟規則編輯器。
 1. 選取「**[!UICONTROL 建立]**」。
 1. 在「**何時**」規則部分中建立條件。例如，[寵物 ID 欄位名稱&#x200B;]****&#x200B;何時變更。「選取」從「**選取狀態**」下拉式清單變更「選取」。
 1. 在「**然後**」部分，從「**選取動作**」下拉式清單中選取「**[!UICONTROL 調用服務]**」。
@@ -229,12 +229,12 @@ AEM Forms 為表單提交提供現成可用的成功和錯誤處理常式。這�
 
 若要建立自訂錯誤函數，請執行以下步驟：
 
-1. [複製AEM Formsas a Cloud Service存放庫](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=zh-Hant#accessing-git).
+1. [複製AEM Formsas a Cloud Service存放庫](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=zh-Hant#accessing-git)。
 1. 在 `[AEM Forms as a Cloud Service repository folder]/apps/` 檔案夾中建立一個檔案夾。例如，建立一個名為 `experience-league` 的檔案夾
 1. 導覽至 `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/experience-league/` 並建立一個名為 `clientlibs` 的 `ClientLibraryFolder` 檔案夾。
 1. 建立一個名為 `js` 的檔案夾。
 1. 導覽至 `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/clientlibs/js` 檔案夾。
-1. 新增JavaScript檔案，例如， `function.js`. 該檔案包含自訂錯誤處理常式的代碼。
+1. 新增JavaScript檔案，例如`function.js`。 該檔案包含自訂錯誤處理常式的代碼。
 讓我們將以下代碼新增至 JavaScript 檔案中，以便在瀏覽器主控台中顯示從 REST 服務端點接收到的回應和標頭。
 
    ```javascript
@@ -258,7 +258,7 @@ AEM Forms 為表單提交提供現成可用的成功和錯誤處理常式。這�
 
    >[!NOTE]
    >
-   > 在 `.content.xml` 檔案，新增 `allowProxy` 和 `categories` 屬性。
+   > 在`.content.xml`檔案中，新增`allowProxy`和`categories`屬性。
    >
    > * `allowProxy = [Boolean]true`
    > * `categories= customfunctionsdemo`
@@ -300,11 +300,11 @@ AEM Forms 為表單提交提供現成可用的成功和錯誤處理常式。這�
 
 ![在最適化表單容器設定中新增用戶端資料庫的名稱](/help/forms/assets/client-library-category-name.png)
 
-在此情況下，使用者端程式庫名稱提供為 `customfunctionsdemo` 在 `.content.xml` 檔案。
+在此情況下，使用者端資料庫名稱會在`.content.xml`檔案中以`customfunctionsdemo`的形式提供。
 
 若要使用自訂錯誤處理常式，請使用&#x200B;**[!UICONTROL 規則編輯器調用服務]**&#x200B;行動：
 
-1. 在撰寫模式中開啟最適化表單，選取表單元件，然後選取 **[!UICONTROL 規則編輯器]** 以開啟規則編輯器。
+1. 以編寫模式開啟最適化表單，選取表單元件，然後選取&#x200B;**[!UICONTROL 規則編輯器]**&#x200B;以開啟規則編輯器。
 1. 選取「**[!UICONTROL 建立]**」。
 1. 在「**何時**」規則部分中建立條件。例如，當&#x200B;**[寵物 ID 欄位名稱]**&#x200B;已變更，請從「**選擇狀態**」下拉式清單選取「**已變更**」。
 1. 在「**然後**」部分，從「**選取動作**」下拉式清單中選取「**[!UICONTROL 調用服務]**」。

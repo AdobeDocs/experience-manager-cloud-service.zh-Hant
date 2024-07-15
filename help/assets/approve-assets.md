@@ -1,15 +1,15 @@
 ---
 title: 在Experience Manager中核准資產
-description: 瞭解如何核准中的資產 [!DNL Experience Manager].
+description: 瞭解如何核准 [!DNL Experience Manager]中的資產。
 role: User
 source-git-commit: 540aa876ba7ea54b7ef4324634f6c5e220ad19d3
 workflow-type: tm+mt
 source-wordcount: '683'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
-# 核准中的資產 [!DNL Experience Manager]
+# 核准[!DNL Experience Manager]中的資產
 
 品牌經理和行銷人員對品牌資產維持嚴格的控制。 該資產僅供經核准和最新版本的使用，以確保所有管道和應用程式的品牌一致性。
 
@@ -17,18 +17,18 @@ ht-degree: 1%
 
 ## 開始之前 {#pre-requisites}
 
-您必須擁有AEM Assetsas a Cloud Service的存取權以及編輯 **[!UICONTROL 檢閱狀態]** 屬性來建立資產。
+您必須擁有AEM Assetsas a Cloud Service的存取權以及編輯資產&#x200B;**[!UICONTROL 檢閱狀態]**&#x200B;屬性的許可權。
 
 ## 設定
 
 在核准資產之前，您需要對管理員檢視中適用的中繼資料結構做一次性的更新。 您可以略過Assets檢視的此設定。 請依照下列步驟設定中繼資料結構：
 
-1. 瀏覽至 **[!UICONTROL 工具]** > **[!UICONTROL Assets]** > **[!UICONTROL 中繼資料結構]**.
-1. 選取適用的中繼資料結構，然後按一下 **[!UICONTROL 編輯]**. <br>此 **[!UICONTROL 中繼資料結構表單編輯器]** 開啟時使用 **[!UICONTROL 基本]** 索引標籤反白顯示。
-1. 向下捲動並按一下 **[!UICONTROL 檢閱狀態]**.
-1. 按一下 **[!UICONTROL 規則]** 標籤在右側面板。
-1. 取消核取 **[!UICONTROL 停用編輯]** 並按一下 **[!UICONTROL 儲存]**.
-如果您需要檢視 **[!UICONTROL 檢閱狀態]** 欄位已對應至，請導覽至 **[!UICONTROL 設定]** 標籤並檢視 `./jcr:content/metadata/dam:status` 中的值 **[!UICONTROL 對應至屬性]** 欄位。
+1. 導覽至&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL Assets]** > **[!UICONTROL 中繼資料結構描述]**。
+1. 選取適用的中繼資料結構描述，然後按一下&#x200B;**[!UICONTROL 編輯]**。 <br>開啟&#x200B;**[!UICONTROL 中繼資料結構表單編輯器]**，並反白顯示&#x200B;**[!UICONTROL 基本]**&#x200B;索引標籤。
+1. 向下捲動並按一下&#x200B;**[!UICONTROL 檢閱狀態]**。
+1. 按一下右側面板上的&#x200B;**[!UICONTROL 規則]**&#x200B;標籤。
+1. 取消勾選&#x200B;**[!UICONTROL 停用編輯]**，然後按一下&#x200B;**[!UICONTROL 儲存]**。
+如果您需要檢視**[!UICONTROL 檢閱狀態]**&#x200B;欄位對應到的屬性，請瀏覽至&#x200B;**[!UICONTROL 設定]**&#x200B;標籤，並檢視&#x200B;**[!UICONTROL 對應到屬性]**&#x200B;欄位中的`./jcr:content/metadata/dam:status`值。
 
 >[!NOTE]
 >
@@ -36,67 +36,67 @@ ht-degree: 1%
 
 ## 核准資產 {#approve-assets}
 
-您可以同時核准以下兩個中的資產： [!DNL Experience Manager] 和 [!DNL Experience Manager Assets]. 若要核准中的資產 [!DNL Experience Manager]，請遵循下列步驟：
+您可以同時核准[!DNL Experience Manager]和[!DNL Experience Manager Assets]中的資產。 若要在[!DNL Experience Manager]中核准資產，請執行下列步驟：
 
-1. 選取資產並按一下 **[!UICONTROL 屬性]** 在頂端窗格中。
-1. 在 **[!UICONTROL 基本]** 標籤，向下捲動至 **[!UICONTROL 檢閱狀態]**.
-1. 將稽核狀態變更為 **[!UICONTROL 已核准]**.
+1. 選取資產並按一下頂端窗格中的&#x200B;**[!UICONTROL 屬性]**。
+1. 在&#x200B;**[!UICONTROL 基本]**&#x200B;索引標籤中，向下捲動至&#x200B;**[!UICONTROL 檢閱狀態]**。
+1. 將稽核狀態變更為&#x200B;**[!UICONTROL 已核准]**。
    ![影像](/help/assets/assets/approve-old-ui.png)
 1. 按一下&#x200B;**[!UICONTROL 「儲存並關閉」]**。
 
    >[!VIDEO](https://video.tv.adobe.com/v/3427430)
 
-   同樣地，您可以使用核准資產 [新增Assets檢視](/help/assets/manage-organize-assets-view.md).
+   同樣地，您可以使用[新的Assets檢視](/help/assets/manage-organize-assets-view.md)核准資產。
 
 ## 大量核准資產 {#bulk-approve-assets}
 
 一次快速核准多個資產，簡化工作流程。 您可以大量核准資產，以加快核准程式，節省時間並提高生產力。
-<br>請依照下列步驟，核准中的大量資產 [!DNL Experience Manager]：
+<br>請依照下列步驟在[!DNL Experience Manager]中核准大量資產：
 
-1. 在作者環境中建立資料夾(https://author-pXXX-eYYY.adobeaemcloud.com)。 取代 _XXX_ 使用您的方案ID和 _YYYY_ Experience Manager的環境ID識別碼。
-1. 瀏覽至 **[!UICONTROL 工具]** > **[!UICONTROL Assets]** > **[!UICONTROL 中繼資料設定檔]**.
-1. 按一下 **[!UICONTROL 建立]** ，位於頁面的右上角。
-1. 新增設定檔標題並按一下 **[!UICONTROL 建立]**. 已成功建立中繼資料設定檔。
-1. 選取新建立的中繼資料設定檔，然後按一下 **[!UICONTROL 編輯 _(e)_]**. <br>此&#x200B;**[!UICONTROL 編輯中繼資料設定檔]**表單開啟&#x200B;**[!UICONTROL 基本]**索引標籤反白顯示。
-1. 拖放 **[!UICONTROL 單行文字欄位]** 從 **[!UICONTROL 建置表單]** 區段至表單中的中繼資料區段。
-1. 按一下新新增的欄位，然後在 **[!UICONTROL 設定]** 面板：
-   1. 變更 **[!UICONTROL 欄位標籤]** 至 _已核准的Assets_.
-   1. 更新 **[!UICONTROL 對應至屬性]** 至 _./jcr：content/metadata/dam：status_.
-   1. 變更預設值為 _已核准_.
+1. 在作者環境中建立資料夾(https://author-pXXX-eYYY.adobeaemcloud.com)。 將&#x200B;_XXX_&#x200B;取代為您的方案識別碼，並將&#x200B;_YYY_&#x200B;取代為Experience Manager中的環境ID。
+1. 導覽至&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL Assets]** > **[!UICONTROL 中繼資料設定檔]**。
+1. 按一下頁面右上方的&#x200B;**[!UICONTROL 「建立]**」。
+1. 新增設定檔標題並按一下&#x200B;**[!UICONTROL 建立]**。 已成功建立中繼資料設定檔。
+1. 選取新建立的中繼資料設定檔，然後按一下&#x200B;**[!UICONTROL 編輯&#x200B;_(e)_]**。 <br>會開啟&#x200B;**[!UICONTROL 編輯中繼資料設定檔]**表單，並反白顯示&#x200B;**[!UICONTROL 基本]**索引標籤。
+1. 將&#x200B;**[!UICONTROL 單行文字欄位]**&#x200B;從右側的&#x200B;**[!UICONTROL 建置表單]**&#x200B;區段拖放到表單的中繼資料區段。
+1. 按一下新新增的欄位，然後在&#x200B;**[!UICONTROL 設定]**&#x200B;面板中執行下列更新：
+   1. 將&#x200B;**[!UICONTROL 欄位標籤]**&#x200B;變更為&#x200B;_已核准的Assets_。
+   1. 將&#x200B;**[!UICONTROL 對應更新至屬性]**&#x200B;至&#x200B;_。/jcr：content/metadata/dam：status_。
+   1. 將預設值變更為&#x200B;_已核准_。
 
 1. 按一下「**[!UICONTROL 儲存]**」。
-1. 在 **[!UICONTROL 中繼資料設定檔]** 頁面上，選取新建立的中繼資料設定檔。
-1. 按一下 **[!UICONTROL 套用中繼資料設定檔至資料夾]** 頂端動作列中的。
-1. 選取您需要核准的資料夾，然後按一下 **[!UICONTROL 套用]**.
-   <br> 系統會設定整個資料夾的許可權以供核准，且會自動核准上傳至此資料夾的任何資產。
+1. 在&#x200B;**[!UICONTROL 中繼資料設定檔]**&#x200B;頁面中，選取新建立的中繼資料設定檔。
+1. 按一下頂端動作列中的&#x200B;**[!UICONTROL 套用中繼資料設定檔至資料夾]**。
+1. 選取您需要核准的資料夾，然後按一下[套用]。****
+   <br>整個資料夾的許可權已設定為待核准，且任何上傳至此資料夾的資產都會自動核准。
 
    >[!VIDEO](https://video.tv.adobe.com/v/3427431)
 
 >[!NOTE]
 > 
->此方法會核准資料夾中新建立的資產。 針對資料夾中的現有資產，您需要手動選取並核准它們。 <br> 或者，您可以使用 **[!UICONTROL 重新處理]** 將中繼資料設定檔的變更套用至較舊資產的選項。
+>此方法會核准資料夾中新建立的資產。 針對資料夾中的現有資產，您需要手動選取並核准它們。 <br>或者，您可以使用&#x200B;**[!UICONTROL 重新處理]**&#x200B;選項，將中繼資料設定檔的變更套用至較舊的資產。
 
 同樣地，若要在Assets檢視中大量核准資料夾內的資產：
 
-1. 選取資產並按一下 **[!UICONTROL 大量中繼資料編輯]**.
+1. 選取資產並按一下&#x200B;**[!UICONTROL 大量中繼資料編輯]**。
 
-1. 選取 **[!UICONTROL 已核准]** 在 **[!UICONTROL 狀態]** 中的可用欄位 [!UICONTROL 屬性] 區段。
+1. 在右窗格的[!UICONTROL 屬性]區段中可用的&#x200B;**[!UICONTROL 狀態]**&#x200B;欄位中選取&#x200B;**[!UICONTROL 已核准]**。
 
 1. 按一下「**[!UICONTROL 儲存]**」。
 
 ## 複製已核准資產的傳遞URL {#copy-delivery-url-approved-assets}
 
-如果具備下列條件，則儲存庫中所有已核准資產的傳送URL都可供使用 [!UICONTROL 具有OpenAPI功能的Dynamic Media] 已在您的AEM as a Cloud Service執行個體上啟用。
+如果您在AEM as a Cloud Service執行個體上啟用了[!UICONTROL 具有OpenAPI功能的Dynamic Media]，則存放庫中所有已核准資產的傳送URL都可使用。
 
 若要複製存放庫中已核准資產的傳送URL：
 
-1. 選取資產並按一下 **[!UICONTROL 詳細資料]**.
+1. 選取資產並按一下&#x200B;**[!UICONTROL 詳細資料]**。
 
 1. 按一下右窗格中的「轉譯」圖示。
 
-1. 選取 **[!UICONTROL Dynamic Media與OpenAPI]** 可在 **[!UICONTROL 動態]** 區段。
+1. 選取&#x200B;**[!UICONTROL 動態]**&#x200B;區段中可用的具有OpenAPI ]**的**[!UICONTROL  Dynamic Media。
 
-1. 按一下 **[!UICONTROL 複製URL]** 以複製資產的傳遞URL。
+1. 按一下&#x200B;**[!UICONTROL 複製URL]**以複製資產的傳遞URL。
    ![複製傳遞URL](/help/assets/assets/copy-delivery-url.png)
 
    >[!NOTE]

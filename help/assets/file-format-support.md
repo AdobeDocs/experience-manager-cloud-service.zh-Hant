@@ -1,6 +1,6 @@
 ---
 title: 支援的檔案格式和MIME型別
-description: 支援的檔案格式和MIME型別 [!DNL Experience Manager Assets] as a [!DNL Cloud Service].
+description: ' [!DNL Experience Manager Assets] as a [!DNL Cloud Service]支援的檔案格式和MIME型別。'
 contentOwner: AG
 feature: Asset Management, Renditions
 role: User, Admin
@@ -12,19 +12,19 @@ ht-degree: 34%
 
 ---
 
-# [!DNL Assets] 支援的檔案格式 {#supported-file-formats}
+# [!DNL Assets]支援的檔案格式 {#supported-file-formats}
 
-[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 支援任何二進位檔案的基本內容管理功能 — 儲存、線上管理中繼資料、版本設定、上傳和下載等，不受檔案格式限制。 [!DNL Adobe Experience Manager Assets] 支援各式各樣的檔案格式，而且每種產品功能對於不同的格式都有不同的支援。
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service]支援任何二進位檔案的基本內容管理功能 — 儲存、線上管理中繼資料、版本設定、上傳和下載等，不受其格式限制。 [!DNL Adobe Experience Manager Assets]支援多種檔案格式，而且每種產品功能對於不同格式都有不同的支援。
 
-此外， [!DNL Experience Manager Assets] 提供延伸支援，可產生預覽和轉譯，以及擷取中繼資料和文字以供全文檢索索引。 這項延伸支援是透過以下方式提供： [資產微服務](asset-microservices-configure-and-use.md).
+此外，[!DNL Experience Manager Assets]提供延伸支援，可產生預覽和轉譯，以及擷取中繼資料和文字，以編制全文檢索索引。 此延伸支援是使用[資產微服務](asset-microservices-configure-and-use.md)提供。
 
 使用資產微服務的資產轉換重點包括：
 
-* 索引鍵 [Adobe檔案格式](#adobe-formats) 由Adobe應用程式和服務所產生，包括 [!DNL Adobe Photoshop]， [!DNL Adobe InDesign]， [!DNL Adobe Illustrator]， [!DNL Adobe XD]， [!DNL Adobe Dimension]、和 [!DNL Adobe Acrobat] 或PDF。
-* 索引鍵 [影像檔案格式](#image-formats).
-* [Camera Raw檔案格式](#camera-raw-formats) 適用於各種相機，包括Canon、Nikon、Fujifilm、Olympus和其他製造商(由Adobe Camera Raw提供技術支援)。
-* 通用 [檔案格式](#document-formats)，包括Microsoft®Office和Open Document格式。
-* 範圍廣泛 [視訊](#video-formats) 和 [音訊](#audio-formats) 格式。
+* 由Adobe應用程式和服務產生的金鑰[Adobe檔案格式](#adobe-formats)，包括[!DNL Adobe Photoshop]、[!DNL Adobe InDesign]、[!DNL Adobe Illustrator]、[!DNL Adobe XD]、[!DNL Adobe Dimension]和[!DNL Adobe Acrobat]或PDF。
+* 金鑰[影像檔案格式](#image-formats)。
+* [Camera Raw檔案格式](#camera-raw-formats)，適用於各種相機，包括Canon、Nikon、Fujifilm、Olympus和其他製造商(由Adobe Camera Raw提供)。
+* 常見的[檔案格式](#document-formats)，包括Microsoft® Office和Open Document格式。
+* [視訊](#video-formats)和[音訊](#audio-formats)格式範圍廣泛。
 
 下列圖例說明每種格式的支援等級。
 
@@ -51,7 +51,7 @@ ht-degree: 34%
 | PSD | ✓ | - | ✓ | ✓ |
 | XD | ✓ | - | ✓ | ✓ |
 
-\*用於 [!DNL Adobe InDesign] 檔案(INDD)，轉譯的大小由內嵌在INDD檔案中的預覽決定。 設定中的偏好設定 [!DNL InDesign] (**[!UICONTROL 偏好設定>檔案處理>永遠儲存包含檔案的預覽影像，預覽大小]**)以內嵌較大的轉譯。
+\*對於[!DNL Adobe InDesign]個檔案(INDD)，轉譯的大小是由內嵌在INDD檔案中的預覽所決定。 在[!DNL InDesign]中設定偏好設定（**[!UICONTROL 偏好設定>檔案處理>一律儲存預覽影像和檔案，預覽大小]**），以便您可以嵌入較大的轉譯。
 
 ## 影像格式 {#image-formats}
 
@@ -73,7 +73,7 @@ ht-degree: 34%
 
 支援下列3D格式。
 
-另請參閱 [在Dynamic Media中使用3D資產](/help/assets/dynamic-media/assets-3d.md).
+另請參閱[在Dynamic Media](/help/assets/dynamic-media/assets-3d.md)中使用3D資產。
 
 | 格式 | 儲存空間 | 版本設定 | 工作流程 | 發佈 | 存取控制 | 縮圖預覽 | 3D預覽 | Dynamic Media傳遞 |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
@@ -87,7 +87,7 @@ ht-degree: 34%
 | 美元z | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | - | ✓ |
 | SBSAR | ✓ | ✓ | ✓ | - | ✓ | ✓ | - | - |
 
-## [!DNL Camera Raw] 格式 {#camera-raw-formats}
+## [!DNL Camera Raw]格式 {#camera-raw-formats}
 
 | 檔案格式 | 產生縮圖 | 中繼資料擷取 | 寬度/高度 |
 | ----------- | -------------------- | ------------------- | ------------ |
@@ -175,7 +175,7 @@ ht-degree: 34%
 
 ## 音訊格式 {#audio-formats}
 
-[!DNL Assets] as a [!DNL Cloud Service] 為AIF、ASF、M4A、MP3、WAV和WMA音訊格式提供XMP中繼資料擷取支援。
+[!DNL Assets] as a [!DNL Cloud Service]提供AIF、ASF、M4A、MP3、WAV和WMA音訊格式的XMP中繼資料擷取支援。
 
 ## 支援的音訊和視訊轉譯輸入格式 {#audio-video-transcription-formats}
 
@@ -229,23 +229,23 @@ ht-degree: 34%
 | 格式 | 上傳（輸入格式） | 建立影像預設集（輸出格式） | 預覽動態轉譯 | 傳遞動態轉譯 | 下載動態轉譯 | 設定支援此格式的型別 |
 |---|:---:|:---:|:---:|:---:|:---:| --- |
 | AVIF | − | − | − | ✓ | − | − |
-| BMP | ✓ | − | − | − | − | [影像](/help/assets/dynamic-media/image-sets.md)， [混合媒體](/help/assets/dynamic-media/mixed-media-sets.md)、和 [迴轉](/help/assets/dynamic-media/spin-sets.md) |
+| BMP | ✓ | − | − | − | − | [影像](/help/assets/dynamic-media/image-sets.md)、[混合媒體](/help/assets/dynamic-media/mixed-media-sets.md)和[迴轉](/help/assets/dynamic-media/spin-sets.md) |
 | [EPS](/help/assets/dynamic-media/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ | ✓ | − |
 | GIF | ✓ | ✓ | ✓ | ✓ | ✓ | − |
 | HEIC | − | − | − | ✓ | − | − |
-| JPEG | ✓ | ✓ | ✓ | ✓ | ✓ | [影像](/help/assets/dynamic-media/image-sets.md)， [混合媒體](/help/assets/dynamic-media/mixed-media-sets.md)、和 [迴轉](/help/assets/dynamic-media/spin-sets.md) |
+| JPEG | ✓ | ✓ | ✓ | ✓ | ✓ | [影像](/help/assets/dynamic-media/image-sets.md)、[混合媒體](/help/assets/dynamic-media/mixed-media-sets.md)和[迴轉](/help/assets/dynamic-media/spin-sets.md) |
 | PICT | ✓ | − | − | − | − | − |
-| PNG | ✓ | ✓ | ✓ | ✓ | ✓ | [影像](/help/assets/dynamic-media/image-sets.md)， [混合媒體](/help/assets/dynamic-media/mixed-media-sets.md)、和 [迴轉](/help/assets/dynamic-media/spin-sets.md) |
+| PNG | ✓ | ✓ | ✓ | ✓ | ✓ | [影像](/help/assets/dynamic-media/image-sets.md)、[混合媒體](/help/assets/dynamic-media/mixed-media-sets.md)和[迴轉](/help/assets/dynamic-media/spin-sets.md) |
 | PSD‡ | ✓ | − | − | − | − | − |
-| TIFF | ✓ | ✓ | ✓ | ✓ | ✓ | [影像](/help/assets/dynamic-media/image-sets.md)， [混合媒體](/help/assets/dynamic-media/mixed-media-sets.md)、和 [迴轉](/help/assets/dynamic-media/spin-sets.md) |
+| TIFF | ✓ | ✓ | ✓ | ✓ | ✓ | [影像](/help/assets/dynamic-media/image-sets.md)、[混合媒體](/help/assets/dynamic-media/mixed-media-sets.md)和[迴轉](/help/assets/dynamic-media/spin-sets.md) |
 | WEBP | − | − | − | ✓ | − | − |
 <!-- AVIF, HEIC, and WebP added to table above on March 4, 2024 based on CQDOC-21294 -->
 
-‡合併的影像會從PSD檔案中擷取。 這是由產生的影像 [!DNL Adobe Photoshop] 和包含在PSD檔案中。 視設定而定，合併的影像不一定是實際影像。
+‡合併的影像會從PSD檔案中擷取。 它是由[!DNL Adobe Photoshop]產生並包含在PSD檔案中的影像。 視設定而定，合併的影像不一定是實際影像。
 
 ## Dynamic Media — 不支援的點陣影像格式 {#unsupported-raster-image-formats-dm}
 
-下列點陣影像檔案格式的子型別 *非* 支援 [!DNL Dynamic Media]：
+[!DNL Dynamic Media]不支援下列點陣影像檔案格式的子型別&#x200B;**：
 
 * IDAT區塊大小大於100 MB的PNG檔案。
 * PSB檔案。
@@ -256,14 +256,14 @@ ht-degree: 34%
 
 ## Dynamic Media — 支援的3D檔案格式 {#support-3d-formats-dynamic-media}
 
-另請參閱 [支援的3D格式](/help/assets/file-format-support.md#support-3d-formats)
+另請參閱[支援的3D格式](/help/assets/file-format-support.md#support-3d-formats)
 
 | 3D副檔名 | 檔案格式 | MIME型別 | 附註 |
 |---|---|---|---|
 | GLB | 二進位GL傳輸 | model/gltf-binary | 將材質和紋理納入為單一資產。 |
 | 物件 | WaveFront 3D物件檔案 | application/x-tgif | |
 | STL | 立體成型 | application/vnd.ms-pki.stl | |
-| USDZ | Universal Scene說明Zip封存 | model/vnd.usdz+zip | *支援內嵌和縮圖產生；尚不支援3D預覽。* USDZ是一種3D格式，可供Safari或iOS以原生方式檢視。 |
+| USDZ | Universal Scene說明Zip封存 | model/vnd.usdz+zip | *支援擷取和縮圖產生；尚未支援3D預覽。* USDZ是3D格式，可由Safari或iOS以原生方式檢視。 |
 
 **另請參閱**
 
@@ -282,5 +282,5 @@ ht-degree: 34%
 
 >[!MORELIKETHIS]
 >
->* [使用資產微服務進行資產處理](asset-microservices-overview.md).
->* [文字型資產智慧標籤支援的檔案格式](/help/assets/smart-tags.md#smart-tags-supported-file-formats)
+>* [使用資產微服務進行資產處理](asset-microservices-overview.md)。
+>* [支援的文字型資產智慧標籤檔案格式](/help/assets/smart-tags.md#smart-tags-supported-file-formats)

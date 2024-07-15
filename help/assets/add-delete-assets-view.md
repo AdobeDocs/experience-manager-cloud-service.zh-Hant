@@ -35,7 +35,7 @@ ht-degree: 91%
 
 >[!TIP]
 >
->如果您將資料夾結構上傳至「資產」檢視，則不需要建立具有該資料夾結構的.ZIP檔案，您可以直接上傳資料夾結構。 上傳至「資產」檢視的.ZIP檔案會儲存為一個ZIP資產，上傳後也不會自動解壓縮。
+>如果您將資料夾結構上傳至Assets檢視，則不需要建立具有該資料夾結構的.ZIP檔案，您可以直接上傳資料夾結構。 上傳至Assets檢視的.ZIP檔案會儲存為一個ZIP資產，上傳後也不會自動解壓縮。
 
 ## 檢視上傳進度和狀態 {#upload-progress}
 
@@ -83,7 +83,7 @@ ht-degree: 91%
 
 >[!TIP]
 >
->您可以從內直接將資產上傳到DAM存放庫 [!DNL Creative Cloud] 案頭應用程式。
+>您可以在[!DNL Creative Cloud]案頭應用程式內直接將資產上傳到DAM存放庫。
 <!--TBD
 See how [[!DNL Assets view] integrates with [!DNL Adobe Asset Link]](/help/assets/integration-assets-view.md).
 -->
@@ -102,7 +102,7 @@ See how [[!DNL Assets view] integrates with [!DNL Adobe Asset Link]](/help/asset
 
 ## 後續步驟 {#next-steps}
 
-* [觀看在「資產」檢視中上傳資產的相關影片](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/creating.html)
+* [觀看在Assets檢視中上傳資產的相關影片](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/creating.html)
 
 * 使用資產檢視使用者介面所提供的[!UICONTROL 意見回饋]選項提供產品意見回饋
 

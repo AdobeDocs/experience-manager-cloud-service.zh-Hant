@@ -22,7 +22,7 @@ ht-degree: 74%
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織。
 
-1. 在 **[我的計畫](/help/implementing/cloud-manager/navigation.md#my-programs)** 主控台，點選或按一下 **新增計畫** 靠近熒幕右上角。
+1. 在&#x200B;**[我的程式](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;主控台上，點選或按一下熒幕右上角附近的&#x200B;**新增程式**。
 
    ![Cloud Manager 登陸頁面](assets/log-in.png)
 
@@ -34,7 +34,7 @@ ht-degree: 74%
 
    * 該影像僅做為計畫概觀視窗的圖磚，有助於識別計畫。
 
-1. 在 **設定您的沙箱** 對話方塊中，核取 **解決方案和附加元件** 表格。
+1. 在&#x200B;**設定您的沙箱**&#x200B;對話方塊中，核取&#x200B;**解決方案和附加元件**&#x200B;表格中的選項，選擇要在沙箱程式中啟用的解決方案。
 
    * 使用解決方案名稱旁邊的 > 形符號，可以查看解決方案的其他選用的附加元件。
 
@@ -52,7 +52,7 @@ ht-degree: 74%
 
 您可以透過查看計畫概覽頁面查看沙箱設定的詳細資訊以及存取環境 (一旦可用)。
 
-1. 從Cloud Manager登入頁面，按一下您建立的方案上的省略符號按鈕。
+1. 從Cloud Manager登陸頁面，按一下您建立之方案上的省略符號按鈕。
 
    ![存取計畫概觀](assets/program-overview-sandbox.png)
 
@@ -74,4 +74,4 @@ ht-degree: 74%
 
 >[!TIP]
 >
->請參閱檔案 [瀏覽Cloud Manager UI](/help/implementing/cloud-manager/navigation.md) 如需有關如何導覽Cloud Manager以及瞭解 **我的計畫** 主控台。
+>如需如何導覽Cloud Manager及瞭解&#x200B;**我的程式**&#x200B;主控台的詳細資訊，請參閱檔案[瀏覽Cloud Manager UI](/help/implementing/cloud-manager/navigation.md)。

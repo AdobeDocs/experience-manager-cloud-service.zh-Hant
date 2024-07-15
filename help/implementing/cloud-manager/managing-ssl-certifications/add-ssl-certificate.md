@@ -22,7 +22,7 @@ ht-degree: 80%
 
 ## 憑證需求 {#certificate-requirements}
 
-檢閱區段 **憑證需求** 檔案 [管理SSL憑證的簡介](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md#requirements) 以確保AEMas a Cloud Service支援您要新增的憑證。
+檢閱檔案[管理SSL憑證簡介](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md#requirements)的&#x200B;**憑證需求**&#x200B;一節，以確定AEM as a Cloud Service支援您要新增的憑證。
 
 ## 正在新增憑證 {#adding-a-cert}
 
@@ -34,11 +34,11 @@ ht-degree: 80%
 
 1. 從&#x200B;**概觀**&#x200B;頁面瀏覽到&#x200B;**環境**&#x200B;畫面。
 
-1. 按一下 **SSL憑證** 從左側導覽面板。 包含任何現有 SSL 憑證詳細資訊的表格會顯示在主畫面上。
+1. 從瀏覽面板按一下&#x200B;**SSL憑證**。 包含任何現有 SSL 憑證詳細資訊的表格會顯示在主畫面上。
 
    ![新增 SSL 憑證](/help/implementing/cloud-manager/assets/ssl/ssl-cert-1.png)
 
-1. 按一下 **新增SSL憑證** 以開啟 **新增SSL憑證** 對話方塊。
+1. 按一下&#x200B;**新增SSL憑證**&#x200B;以開啟&#x200B;**新增SSL憑證**&#x200B;對話方塊。
 
    * 在&#x200B;**憑證名稱**&#x200B;中輸入憑證名稱。
       * 這僅供參考，可以是任何有助於您輕鬆引用憑證的名稱。
@@ -63,7 +63,7 @@ ht-degree: 80%
 
 >[!NOTE]
 >
->如果您收到類似以下的錯誤 `The Subject of an intermediate certificate must match the issuer in the previous certificate. The SKI of an intermediate certificate must match the AKI of the previous certificate.`，您可能會將使用者端憑證納入憑證鏈中。 請確定該鏈結不包含使用者端憑證，然後再試一次。
+>如果您收到類似`The Subject of an intermediate certificate must match the issuer in the previous certificate. The SKI of an intermediate certificate must match the AKI of the previous certificate.`的錯誤，您可能會將使用者端憑證包含在憑證鏈中。 請確定該鏈結不包含使用者端憑證，然後再試一次。
 
 ## 憑證錯誤 {#certificate-errors}
 

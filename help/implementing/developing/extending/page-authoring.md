@@ -24,7 +24,7 @@ Clientlib 讓您可擴充預設實作以啟用新功能，同時會重複使用�
 * 依賴編寫 clientlib `cq.authoring.editor.sites.page`。
 * 屬於適當的 `cq.authoring.editor.sites.page.hook` 類別的一部分。
 
-另請參閱 [在AEMas a Cloud Service上使用使用者端資料庫](/help/implementing/developing/introduction/clientlibs.md).
+請參閱[在AEM as a Cloud Service](/help/implementing/developing/introduction/clientlibs.md)上使用使用者端資料庫。
 
 ## 覆蓋 {#overlays}
 
@@ -32,9 +32,9 @@ Clientlib 讓您可擴充預設實作以啟用新功能，同時會重複使用�
 
 建立覆蓋時，不需要按原件 1:1 複製，因為 [Sling 資源合併](/help/implementing/developing/introduction/sling-resource-merger.md)可容許繼承。
 
-如需詳細資訊，請參閱 [JS檔案集](https://developer.adobe.com/experience-manager/reference-materials/6-5/jsdoc/ui-touch/editor-core/index.html).
+如需詳細資訊，請參閱[JS檔案集](https://developer.adobe.com/experience-manager/reference-materials/6-5/jsdoc/ui-touch/editor-core/index.html)。
 
-如需覆蓋圖的詳細資訊，請參閱 [Adobe Experience Manager as a Cloud Service的覆蓋圖](/help/implementing/developing/introduction/overlays.md).
+如需重疊的詳細資訊，請參閱[Adobe Experience Manager as a Cloud Service的重疊](/help/implementing/developing/introduction/overlays.md)。
 
 ## 新增「新圖層」(模式) {#add-new-layer-mode}
 
@@ -160,7 +160,7 @@ Clientlib 讓您可擴充預設實作以啟用新功能，同時會重複使用�
 
 ## 新增「新頁面動作」。 {#add-a-new-page-action}
 
-若要在頁面工具列中新增頁面動作，例如 **返回網站** （主控台）動作。
+若要在頁面工具列中新增頁面動作，例如&#x200B;**返回網站** （主控台）動作。
 
 ### 程式碼範例 {#code-sample-3}
 

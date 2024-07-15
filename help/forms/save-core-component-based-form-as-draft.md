@@ -14,20 +14,20 @@ ht-degree: 2%
 
 # 將核心元件型最適化表單儲存為草稿 {#save-af-form}
 
-將最適化表單另存為草稿是提升使用者效率和正確性的重要功能。 此功能可讓使用者儲存進度並在稍後返回完成工作，而不會遺失任何輸入的資訊。 提供  `save-as-draft` 選項可確保管理時間的彈性、減少資料遺失的風險，並維持提交作業的精確度。 您可以將表單儲存為草稿，以便稍後完成。
+將最適化表單另存為草稿是提升使用者效率和正確性的重要功能。 此功能可讓使用者儲存進度並在稍後返回完成工作，而不會遺失任何輸入的資訊。 提供`save-as-draft`選項可確保管理時間的彈性、減少資料遺失的風險，並維持提交作業的精確度。 您可以將表單儲存為草稿，以便稍後完成。
 
 ## 考量事項
 
 * [為您的環境啟用最適化Forms核心元件。](/help/forms/enable-adaptive-forms-core-components.md)
 
-* 確保 [核心元件設定為3.0.24版或更新版本](https://github.com/adobe/aem-core-forms-components) 以使用此功能。
-* 確定您有 [Azure儲存體帳戶和存取金鑰](https://learn.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?tabs=azure-portal) 以授權存取Azure儲存體帳戶。
+* 請確定[核心元件設定為3.0.24版或更新版本](https://github.com/adobe/aem-core-forms-components)以使用此功能。
+* 確定您有[Azure儲存體帳戶和存取金鑰](https://learn.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?tabs=azure-portal)，以授權存取Azure儲存體帳戶。
 
 ## 將最適化表單另存為草稿
 
-[!DNL Experience Manager Forms] 資料整合(data-integration.md)提供 [!DNL Azure] 整合表單與的儲存體設定 [!DNL Azure] 儲存服務。 表單資料模型(FDM)可用來建立與互動的最適化Forms [!DNL Azure] 伺服器以啟用業務工作流程。
+[!DNL Experience Manager Forms] Data Integration (data-integration.md)提供[!DNL Azure]儲存設定，以將表單與[!DNL Azure]儲存服務整合。 表單資料模型(FDM)可用來建立與[!DNL Azure]伺服器互動的Adaptive Forms，以啟用業務工作流程。
 
-若要將表單儲存為草稿，請確保您擁有Azure儲存體帳戶和存取金鑰，以授權存取 [!DNL Azure] 儲存體帳戶。 若要將表單另存為草稿，請執行下列步驟：
+若要將表單儲存為草稿，請確定您擁有Azure儲存體帳戶和存取金鑰，以授權存取[!DNL Azure]儲存體帳戶。 若要將表單另存為草稿，請執行下列步驟：
 
 1. [建立 Azure 儲存體設定](#create-azure-storage-configuration)
 1. [為Forms入口網站設定統一的儲存聯結器](#configure-usc-forms-portal)
@@ -36,18 +36,18 @@ ht-degree: 2%
 
 ### 1.建立Azure儲存體設定 {#create-azure-storage-configuration}
 
-一旦您擁有Azure儲存體帳戶和存取金鑰，可授權存取 [!DNL Azure] 儲存體帳戶時，請執行以下步驟來建立Azure儲存體設定：
+一旦您擁有Azure儲存體帳戶和存取金鑰以授權存取[!DNL Azure]儲存體帳戶，請執行下列步驟以建立Azure儲存體設定：
 
-1. 瀏覽至 **[!UICONTROL 工具]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Azure儲存體]**.
+1. 導覽至&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Azure儲存體]**。
 
-   ![Azure儲存卡選擇](/help/forms/assets/save-form-as-draft-azure-card.png)
+   ![選擇Azure儲存卡](/help/forms/assets/save-form-as-draft-azure-card.png)
 
-1. 選取設定資料夾以建立設定，然後選取 **[!UICONTROL 建立]**.
+1. 選取設定資料夾以建立設定，並選取&#x200B;**[!UICONTROL 建立]**。
 
    ![選取Azure儲存設定資料夾](/help/forms/assets/save-form-as-draft-select-config-folder.png)
 
-1. 在中指定設定的標題 **[!UICONTROL 標題]** 欄位。
-1. 指定 [!DNL Azure] 中的儲存體帳戶 **[!UICONTROL Azure儲存體帳戶]** 和 **[!UICONTROL Azure存取金鑰]** 欄位。
+1. 在&#x200B;**[!UICONTROL 標題]**&#x200B;欄位中指定組態的標題。
+1. 在&#x200B;**[!UICONTROL Azure儲存體帳戶]**&#x200B;和&#x200B;**[!UICONTROL Azure存取金鑰]**&#x200B;欄位中指定[!DNL Azure]儲存體帳戶的名稱。
 
    ![Azure 儲存體設定](/help/forms/assets/save-form-as-draft-azure-storage.png)
 
@@ -55,45 +55,45 @@ ht-degree: 2%
 
 >[!NOTE]
 >
-> 您可以擷取 **[!UICONTROL Azure儲存體帳戶]** 和 **[!UICONTROL Azure存取金鑰]** 從 [Microsoft Azure入口網站](https://learn.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?tabs=azure-portal).
+> 您可以從[Microsoft Azure入口網站](https://learn.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?tabs=azure-portal)擷取&#x200B;**[!UICONTROL Azure儲存體帳戶]**&#x200B;和&#x200B;**[!UICONTROL Azure存取金鑰]**。
 
 
 ### 2.設定Forms入口網站的統一儲存聯結器 {#configure-usc-forms-portal}
 
 成功建立Azure儲存體設定後，請使用下列步驟設定Forms Portal的統一儲存體聯結器：
 
-1. 瀏覽至 **[!UICONTROL 工具]** > **[!UICONTROL Forms]** > **[!UICONTROL 統一的儲存聯結器]**.
+1. 導覽至&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL Forms]** > **[!UICONTROL 整合式儲存聯結器]**。
 
-   ![統一的聯結器儲存](/help/forms/assets/save-form-as-draft-unified-connector.png)
+   ![統一的聯結器存放區](/help/forms/assets/save-form-as-draft-unified-connector.png)
 
-1. 在 **[!UICONTROL Forms入口網站]** 區段，選取 **[!UICONTROL Azure]** 從 **[!UICONTROL 儲存]** 下拉式清單。
-1. 指定 [Azure儲存體設定的設定路徑](#create-azure-storage-configuration) 在 **[!UICONTROL 儲存設定路徑]** 欄位。
+1. 在&#x200B;**[!UICONTROL Forms入口網站]**&#x200B;區段中，從&#x200B;**[!UICONTROL 儲存體]**&#x200B;下拉式清單中選取&#x200B;**[!UICONTROL Azure]**。
+1. 在&#x200B;**[!UICONTROL 儲存設定路徑]**&#x200B;欄位中指定Azure儲存體設定](#create-azure-storage-configuration)的[設定路徑。
 
    ![統一的聯結器儲存設定](/help/forms/assets/save-form-as-draft-unified-connector-storage.png)
 
-1. 選取 **[!UICONTROL 儲存]** 然後選取 **[!UICONTROL Publish]** 以發佈設定。
+1. 選取&#x200B;**[!UICONTROL 儲存]**，然後選取&#x200B;**[!UICONTROL Publish]**&#x200B;以發佈組態。
 
 ### 3.建立規則以將最適化表單儲存為草稿 {#rule-to-save-adaptive-form-as-draft}
 
-若要將表單儲存為草稿，請建立 **儲存表單** 規則，例如按鈕。 按一下按鈕時會觸發規則，而表單會儲存為草稿。 執行以下步驟以建立 **儲存表單** 按鈕元件的規則：
+若要將表單儲存為草稿，請在表單元件（例如按鈕）上建立&#x200B;**儲存表單**&#x200B;規則。 按一下按鈕時會觸發規則，而表單會儲存為草稿。 執行以下步驟，在按鈕元件上建立&#x200B;**儲存表單**&#x200B;規則：
 
 1. 在Author例項中，以編輯模式開啟調適型表單。
-1. 從左窗格中選取 ![元件圖示](assets/components_icon.png) 並拖曳 **[!UICONTROL 按鈕]** 元件至表單。
-1. 選取 **[!UICONTROL 按鈕]** 元件，然後選取 ![「設定」圖示](assets/configure_icon.png).
-1. 選取 **[!UICONTROL 編輯規則]** 圖示以開啟規則編輯器。
-1. 選取 **[!UICONTROL 建立]** 以設定及建立規則。
-1. 在 **[!UICONTROL 時間]** 區段，選取 **已點按** 和 **[!UICONTROL 則]** 區段，選取 **儲存表單** 選項。
-1. 選取 **[!UICONTROL 完成]** 以儲存規則。
+1. 從左窗格中，選取![元件圖示](assets/components_icon.png)並將&#x200B;**[!UICONTROL Button]**&#x200B;元件拖曳至表單。
+1. 選取&#x200B;**[!UICONTROL 按鈕]**&#x200B;元件，然後選取![設定圖示](assets/configure_icon.png)。
+1. 選取&#x200B;**[!UICONTROL 編輯規則]**&#x200B;圖示以開啟規則編輯器。
+1. 選取「**[!UICONTROL 建立]**」以設定及建立規則。
+1. 在&#x200B;**[!UICONTROL When]**&#x200B;區段中，選取&#x200B;**已點按**，並在&#x200B;**[!UICONTROL Then]**&#x200B;區段中，選取&#x200B;**儲存表單**&#x200B;選項。
+1. 選取&#x200B;**[!UICONTROL 完成]**&#x200B;以儲存規則。
 
-![建立按鈕的規則](/help/forms/assets/save-form-as-drfat-create-rule.png)
+![建立按鈕](/help/forms/assets/save-form-as-drfat-create-rule.png)的規則
 
-預覽最適化表單時，請填寫並按一下 **儲存表單** 按鈕時，表單會儲存為草稿以供稍後使用。
+當您預覽最適化表單並填寫時，按一下&#x200B;**儲存表單**&#x200B;按鈕，表單會儲存為草稿以供稍後使用。
 
 ## 在AEM Sites頁面上列出草稿的草稿和提交元件
 
-AEM Forms提供 **草稿和提交** 開箱即用的入口網站元件，可在AEM Sites頁面上顯示已儲存的表單。 此 **草稿和提交** 元件會顯示儲存為草稿以供稍後完成的表單以及已提交的表單。 此元件透過列出與使用者建立的最適化Forms相關的草稿和提交，為任何登入使用者提供個人化體驗。
+AEM Forms提供立即可用的&#x200B;**草稿和提交**&#x200B;入口網站元件，以便在AEM Sites頁面上顯示已儲存的表單。 **草稿和提交**&#x200B;元件會顯示儲存為草稿以供稍後完成的表單以及提交的表單。 此元件透過列出與使用者建立的最適化Forms相關的草稿和提交，為任何登入使用者提供個人化體驗。
 
-您可以使用現成的Forms Portal元件，在AEM Sites頁面中列出表單草稿。 執行以下步驟以使用 **草稿和提交** 入口網站元件：
+您可以使用現成的Forms Portal元件，在AEM Sites頁面中列出表單草稿。 執行以下步驟以使用&#x200B;**草稿和提交**&#x200B;入口網站元件：
 
 1. [啟用草稿和提交Forms Portal元件](#enable-component)
 2. [在AEM Sites頁面中新增草稿和提交元件](#Add-drafts-submissions-component)
@@ -101,13 +101,13 @@ AEM Forms提供 **草稿和提交** 開箱即用的入口網站元件，可在AE
 
 ### 1.啟用草稿和提交Forms入口網站元件{#enable-component}
 
-若要啟用 **[!UICONTROL 草稿和提交]** 元件時，請執行下列步驟：
+若要啟用範本原則中的&#x200B;**[!UICONTROL 草稿與提交]**&#x200B;元件，請執行下列步驟：
 
-1. 在中開啟AEM Sites頁面 **編輯** 模式。
-1. 前往 **[!UICONTROL 頁面資訊]** > **[!UICONTROL 編輯範本]**
+1. 以&#x200B;**編輯**&#x200B;模式開啟AEM Sites頁面。
+1. 移至&#x200B;**[!UICONTROL 頁面資訊]** > **[!UICONTROL 編輯範本]**
    ![編輯範本原則](/help/forms/assets/save-form-as-draft-edit-template.png)
 
-1. 按一下 **[!UICONTROL 原則]** 並選取 **[!UICONTROL 草稿和提交]**  核取方塊( **[AEM原型專案名稱] - Forms與通訊入口網站**.
+1. 按一下&#x200B;**[!UICONTROL 原則]**，然後選取&#x200B;**[AEM Archetype專案名稱] - Forms和通訊入口網站**&#x200B;下的&#x200B;**[!UICONTROL 草稿與提交]**&#x200B;核取方塊。
 
    ![原則選擇](/help/forms/assets/save-form-as-draft-enable-policy.png)
 
@@ -117,30 +117,30 @@ AEM Forms提供 **草稿和提交** 開箱即用的入口網站元件，可在AE
 
 ### 2.在AEM Sites頁面中新增草稿與提交元件{#Add-drafts-submissions-component}
 
-您可以透過新增和設定入口網站元件，在使用AEM編寫的網站上建立和自訂Forms入口網站。 確保 [已啟用草稿和提交元件](#enable-component) 在AEM Sites頁面中使用它們之前。
+您可以透過新增和設定入口網站元件，在使用AEM編寫的網站上建立和自訂Forms入口網站。 在AEM Sites頁面中使用[草稿和提交元件之前，請確定已啟用](#enable-component)。
 
-若要新增元件，請從以下位置拖放元件： **草稿和提交** 元件窗格至頁面上的佈局容器，或選取佈局容器上的新增圖示，然後從以下位置新增元件： **[!UICONTROL 插入新元件]** 對話方塊。
+若要新增元件，請將元件從&#x200B;**草稿和提交**&#x200B;元件窗格拖放至頁面上的配置容器，或選取配置容器上的新增圖示，然後從&#x200B;**[!UICONTROL 插入新元件]**&#x200B;對話方塊新增元件。
 
-![新增草稿和提交元件](/help/forms/assets/save-form-as-draft-add-dns.png)
+![新增草稿與提交元件](/help/forms/assets/save-form-as-draft-add-dns.png)
 
 ### 3.設定草稿和提交元件 {#configure-drafts-submissions-component}
 
-此 **草稿和提交** 元件會顯示儲存為草稿以供稍後完成及提交的表單。 進行設定 **草稿和提交**，請執行下列步驟：
-1. 選取 **草稿和提交** 元件。
-1. 按一下 ![「設定」圖示](assets/configure_icon.png) ，對話方塊就會顯示。
-1. 在 **[!UICONTROL 草稿與提交]** 對話方塊，請指定下列專案：
-   * **標題** 若要在Sites頁面中識別元件，預設情況下，標題會顯示在元件上方。
-   * **型別**：將表單指定為草稿或已提交表單。
-   * **版面**：以卡片或清單格式顯示清單草稿表單或已提交表單。
+**草稿和提交**&#x200B;元件會顯示儲存為草稿以供稍後完成和提交之表單的表單。 若要設定&#x200B;**草稿與提交**，請執行下列步驟：
+1. 選取&#x200B;**草稿與提交**&#x200B;元件。
+1. 按一下![設定圖示](assets/configure_icon.png)，對話方塊就會顯示。
+1. 在&#x200B;**[!UICONTROL 草稿和提交]**&#x200B;對話方塊中，指定下列專案：
+   * **標題**&#x200B;若要識別Sites頁面中的元件，根據預設，標題會顯示在元件上方。
+   * **型別**：表示表單清單為草稿或已提交的表單。
+   * **配置**：以卡片或清單格式顯示清單草稿表單或已提交的表單。
 
    ![草稿與提交元件屬性](/help/forms/assets/save-form-as-draft-dns-properties.png)
 
 1. 按一下&#x200B;**「完成」**。
 
-時間 **[!UICONTROL 選擇型別]** 已選取為 **草稿Forms**，儲存為草稿的表單會出現：
+當&#x200B;**[!UICONTROL 選取型別]**&#x200B;選取為&#x200B;**草稿Forms**時，儲存為草稿的表單會出現：
 ![草稿圖示](assets/drafts-component.png)
 
-時間 **[!UICONTROL 選擇型別]** 已選取為 **已提交Forms**，則會顯示提交的表單：
+當&#x200B;**[!UICONTROL 選取型別]**&#x200B;選取為&#x200B;**已提交的Forms**&#x200B;時，已提交的表單會出現：
 
 ![提交圖示](assets/submission-listing.png)
 

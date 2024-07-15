@@ -22,7 +22,7 @@ Blueprint設定會識別您要當作一或多個即時副本頁面來源的現�
 
 >[!TIP]
 >
->Blueprint設定可讓您將內容變更推送至即時副本。 另請參閱 [即時副本 — 來源、Blueprint和Blueprint設定](overview.md#source-blueprints-and-blueprint-configurations).
+>Blueprint設定可讓您將內容變更推送至即時副本。 檢視[即時副本 — Source、Blueprint和Blueprint設定](overview.md#source-blueprints-and-blueprint-configurations)。
 
 建立Blueprint設定時，您可以選取定義Blueprint內部結構的範本。 預設Blueprint範本假設來源網站具有下列特性：
 
@@ -37,16 +37,16 @@ Blueprint設定會識別您要當作一或多個即時副本頁面來源的現�
 建立Blueprint設定後，您可以設定以下屬性：
 
 * **名稱**：藍圖設定的名稱
-* **來源路徑**：您當作來源的網站根頁面的路徑(Blueprint)
-* **說明**. （可選） Blueprint設定的說明，這會顯示在建立網站時可從中進行選擇的Blueprint設定清單中
+* **Source路徑**：您當作來源的網站根頁面路徑(Blueprint)
+* **描述**。 （可選） Blueprint設定的說明，這會顯示在建立網站時可從中進行選擇的Blueprint設定清單中
 
-使用您的Blueprint設定時，您可以將其與轉出設定建立關聯，以決定來源/Blueprint的即時副本同步的方式。 另請參閱 [指定要使用的轉出設定](live-copy-sync-config.md#specifying-the-rollout-configurations-to-use).
+使用您的Blueprint設定時，您可以將其與轉出設定建立關聯，以決定來源/Blueprint的即時副本同步的方式。 請參閱[指定要使用的轉出設定](live-copy-sync-config.md#specifying-the-rollout-configurations-to-use)。
 
 ### 建立和編輯Blueprint設定 {#creating-editing-blueprint-configurations}
 
 Blueprint設定會視為不可變資料，因此在執行階段不可編輯。 因此，任何設定變更都必須使用CI/CD管道透過Git部署。
 
-如需詳細資訊，請參閱文章 [Adobe Experience Manager (AEM) as a Cloud Service重大變更](/help/release-notes/aem-cloud-changes.md).
+如需詳細資訊，請參閱文章[Adobe Experience Manager (AEM)重大變更as a Cloud Service](/help/release-notes/aem-cloud-changes.md)。
 
 下列步驟僅供管理員在本機開發執行個體上用於測試和開發目的。 這些選項在任何AEMaaCS雲端例項中均無法使用。
 
@@ -54,33 +54,33 @@ Blueprint設定會視為不可變資料，因此在執行階段不可編輯。 �
 
 若要建立Blueprint設定：
 
-1. [導覽](/help/sites-cloud/authoring/basic-handling.md#global-navigation) 至 **工具** 功能表，然後選取 **網站** 功能表。
-1. 選取 **藍圖** 以開啟 **Blueprint設定** 主控台：
+1. [瀏覽](/help/sites-cloud/authoring/basic-handling.md#global-navigation)至&#x200B;**工具**&#x200B;功能表，然後選取&#x200B;**網站**&#x200B;功能表。
+1. 選取&#x200B;**藍圖**&#x200B;以開啟&#x200B;**藍圖設定**&#x200B;主控台：
 
    ![Blueprint設定](../assets/blueprint-configurations.png)
 
 1. 選取「**建立**」。
-1. 選取Blueprint範本，然後 **下一個** 以繼續。
-1. 選取要用作Blueprint的來源頁面；然後 **下一個** 以繼續。
+1. 選取Blueprint範本，然後選取&#x200B;**下一步**&#x200B;以繼續。
+1. 選取要用作Blueprint的來源頁面；然後&#x200B;**下一步**&#x200B;以繼續。
 1. 定義：
 
-   * **標題**：藍圖的強制標題
-   * **說明**：選用的說明，可提供詳細資訊。
+   * **標題**： Blueprint的必要標題
+   * **描述**：提供詳細資訊的可選描述。
 
-1. **建立** 將根據您的規格建立Blueprint組態。
+1. **建立**&#x200B;將根據您的規格建立Blueprint組態。
 
 ### 在本機編輯或刪除Blueprint設定{#editing-or-deleting-a-blueprint-configuration}
 
 您可以編輯或刪除現有的Blueprint設定：
 
-1. [導覽](/help/sites-cloud/authoring/basic-handling.md#global-navigation) 至 **工具** 功能表，然後選取 **網站** 功能表。
-1. 選取 **藍圖** 以開啟 **Blueprint設定** 主控台：
+1. [瀏覽](/help/sites-cloud/authoring/basic-handling.md#global-navigation)至&#x200B;**工具**&#x200B;功能表，然後選取&#x200B;**網站**&#x200B;功能表。
+1. 選取&#x200B;**藍圖**&#x200B;以開啟&#x200B;**藍圖設定**&#x200B;主控台：
 
    ![Blueprint設定](../assets/blueprint-configurations.png)
 
 1. 選取所需的Blueprint設定 — 工具列中會顯示適當的動作：
 
-   * **屬性**；您可以使用它來檢視並編輯設定的屬性。
+   * **屬性**；您可以使用此項來檢視並編輯設定的屬性。
    * **刪除**
 
 ## 建立即時副本 {#creating-a-live-copy}
@@ -92,30 +92,30 @@ Blueprint設定會視為不可變資料，因此在執行階段不可編輯。 �
 您可以建立任何頁面或分支的即時副本。 建立即時副本時，您可以指定用於同步內容的轉出設定：
 
 * 所選的轉出設定會套用至即時副本頁面及其子頁面。
-* 如果您未指定任何轉出設定，MSM會決定要使用的轉出設定。 另請參閱 [指定要使用的轉出設定](live-copy-sync-config.md#specifying-the-rollout-configurations-to-use).
+* 如果您未指定任何轉出設定，MSM會決定要使用的轉出設定。 請參閱[指定要使用的轉出設定](live-copy-sync-config.md#specifying-the-rollout-configurations-to-use)。
 
 您可以建立任何頁面的即時副本：
 
-* 由參照的頁面 [Blueprint設定](#creating-a-blueprint-configuration)
+* 由[Blueprint設定](#creating-a-blueprint-configuration)參考的頁面
 * 以及與設定無連線的頁面
-* 另一個即時副本頁面中的即時副本([巢狀即時副本](overview.md#nested-live-copies))
+* 其他即時副本頁面中的即時副本（[巢狀即時副本](overview.md#nested-live-copies)）
 
-唯一的差異在於 **轉出** 「來源/Blueprint」頁面上的命令取決於Blueprint設定是否參考了來源：
+唯一的差異是，在來源/Blueprint頁面上&#x200B;**轉出**&#x200B;命令的可用性取決於Blueprint設定是否參考了來源：
 
-* 如果您從具有以下特性的來源頁面建立即時副本： **是** 在Blueprint設定中參照，則轉出命令可在來源/Blueprint頁面上使用。
-* 如果您從具有以下特性的來源頁面建立即時副本： **不是** 在Blueprint設定中參照，則轉出命令將無法在來源/Blueprint頁面上使用。
+* 如果您從Blueprint設定中參照的&#x200B;**是**&#x200B;的來源頁面建立即時副本，則轉出命令適用於來源/Blueprint頁面。
+* 如果您從Blueprint設定中未參照&#x200B;**的**&#x200B;來源頁面建立即時副本，則轉出命令將不適用於來源/Blueprint頁面。
 
 若要建立即時副本：
 
-1. 在 **網站** 主控台選取 **建立**，然後 **即時副本**.
+1. 在&#x200B;**網站**&#x200B;主控台中，選取&#x200B;**建立**，然後選取&#x200B;**即時副本**。
 
    ![建立即時副本](../assets/create-live-copy.png)
 
-1. 選取來源頁面，然後選取 **下一個**. 例如：
+1. 選取來源頁面，然後選取&#x200B;**下一步**。 例如：
 
    ![選取即時副本來源](../assets/live-copy-from.png)
 
-1. 指定即時副本的目的地路徑（開啟即時副本的父資料夾/頁面），然後選取「 」 **下一個**.
+1. 指定即時副本的目的地路徑（開啟即時副本的父資料夾/頁面），然後選取&#x200B;**下一步**。
 
    ![選取即時副本目的地](../assets/live-copy-to.png)
 
@@ -125,18 +125,18 @@ Blueprint設定會視為不可變資料，因此在執行階段不可編輯。 �
 
 1. 輸入：
 
-   * a **標題** 用於頁面。
-   * a **名稱**，此資訊會用於URL中。
+   * 頁面的&#x200B;**標題**。
+   * URL中使用的&#x200B;**名稱**。
 
    ![即時副本屬性](../assets/live-copy-properties.png)
 
-1. 使用 **排除子頁面** 核取方塊：
+1. 使用&#x200B;**排除子頁面**&#x200B;核取方塊：
 
    * 選取：僅建立所選頁面的即時副本（淺層即時副本）
    * 未選取：建立包含所選頁面所有子系的即時副本（深層即時副本）
 
-1. （可選）若要指定用於即時副本的一或多個轉出設定，請使用 **轉出設定** 下拉式清單加以選取。 選取的設定會顯示在下拉式選取器的下方。
-1. 選擇 **建立**。確認訊息隨即顯示，您可以從此處選取 **開啟** 或 **完成**.
+1. （可選）若要指定一個或多個轉出設定以用於即時副本，請使用&#x200B;**轉出設定**&#x200B;下拉式清單來選取它們。 選取的設定會顯示在下拉式選取器的下方。
+1. 選擇 **建立**。顯示確認訊息，您可以從這裡選取&#x200B;**開啟**&#x200B;或&#x200B;**完成**。
 
    >[!NOTE]
    >
@@ -144,9 +144,9 @@ Blueprint設定會視為不可變資料，因此在執行階段不可編輯。 �
 
 ### 從Blueprint設定建立網站的即時副本 {#creating-a-live-copy-of-a-site-from-a-blueprint-configuration}
 
-使用Blueprint設定建立即時副本，以根據Blueprint （來源）內容建立網站。 從Blueprint設定建立即時副本時，選取要複製的Blueprint來源的一或多個語言分支，然後從語言分支選取要複製的章節。 另請參閱 [建立Blueprint設定](#creating-a-blueprint-configuration).
+使用Blueprint設定建立即時副本，以根據Blueprint （來源）內容建立網站。 從Blueprint設定建立即時副本時，選取要複製的Blueprint來源的一或多個語言分支，然後從語言分支選取要複製的章節。 請參閱[建立Blueprint組態](#creating-a-blueprint-configuration)。
 
-如果您在即時副本中省略一些語言分支，您可以稍後新增它們。 另請參閱 [在即時副本中建立即時副本（Blueprint設定）](#creating-a-live-copy-inside-a-live-copy-blueprint-configuration) 以取得詳細資訊。
+如果您在即時副本中省略一些語言分支，您可以稍後新增它們。 如需詳細資訊，請參閱[在即時副本（Blueprint設定）](#creating-a-live-copy-inside-a-live-copy-blueprint-configuration)中建立即時副本。
 
 >[!CAUTION]
 >
@@ -157,29 +157,29 @@ Blueprint設定會視為不可變資料，因此在執行階段不可編輯。 �
 * **初始語言**：要包含在即時副本中的Blueprint來源的語言分支
 * **初始章節**：要包含在即時副本中的Blueprint語言分支的子頁面
 * **目的地路徑**：即時副本網站的根頁面位置
-* **標題**：即時副本網站根頁面的標題
-* **名稱**：（選用）儲存即時副本根頁面的JCR節點名稱（預設值根據標題）
-* **網站擁有者**：（選用）即時副本負責者的相關資訊
-* **即時副本**：選取此選項可與來源網站建立即時關係。 如果您未選取此選項，則會建立Blueprint的復本，但之後不會與來源同步。
-* **轉出設定**：（可選）選取一或多個轉出設定以用於同步化即時副本。 依預設，轉出設定是從Blueprint繼承。 另請參閱 [指定要使用的轉出設定](live-copy-sync-config.md#specifying-the-rollout-configurations-to-use) 以取得更多詳細資料。
+* **標題**：即時副本網站的根頁面標題
+* **名稱**： （選用）儲存即時副本根頁面的JCR節點名稱（預設值是根據標題）
+* **網站擁有者**： （選擇性）負責即時副本之當事方的相關資訊
+* **即時副本**：選取此選項以建立與來源網站的即時關係。 如果您未選取此選項，則會建立Blueprint的復本，但之後不會與來源同步。
+* **轉出設定**： （選擇性）選取一或多個轉出設定，以用於同步化即時副本。 依預設，轉出設定是從Blueprint繼承。 如需詳細資訊，請參閱[指定要使用的轉出設定](live-copy-sync-config.md#specifying-the-rollout-configurations-to-use)。
 
 若要從Blueprint設定建立網站的即時副本：
 
-1. 在 **網站** 主控台，選取 **建立**，然後 **網站** 從下拉式選擇器中。
-1. 選取要作為即時副本來源的Blueprint設定，並繼續 **下一個**：
+1. 在&#x200B;**Sites**&#x200B;主控台中，從下拉式選取器中選取&#x200B;**建立**，然後選取&#x200B;**網站**。
+1. 選取要做為即時副本來源的Blueprint設定，並繼續&#x200B;**下一步**：
 
    ![從Blueprint建立網站](../assets/create-site-from-blueprint.png)
 
-1. 使用 **初始語言** 選取器，指定用於即時副本的Blueprint網站語言。
+1. 使用&#x200B;**初始語言**&#x200B;選取器來指定要用於即時副本的Blueprint網站語言。
 
-   預設會選取所有可用語言。 若要移除語言，請選取 **X** 顯示在語言旁邊。
+   預設會選取所有可用語言。 若要移除語言，請選取該語言旁邊顯示的&#x200B;**X**。
 
    例如：
 
-   ![建立網站時指定屬性](../assets/create-site-properties.png)
+   ![在建立網站時指定屬性](../assets/create-site-properties.png)
 
-1. 使用 **初始章節** 下拉式清單來選取要包含在即時副本中的Blueprint區段。 預設會包含所有可用章節，但可將其移除。
-1. 提供剩餘屬性的值，然後選取 **建立**. 在確認對話方塊中選取 **完成** 以返回 **網站** 主控台，或 **開啟網站** 以開啟網站的根頁面。
+1. 使用&#x200B;**初始章節**&#x200B;下拉式清單來選取要包含在即時副本中的Blueprint區段。 預設會包含所有可用章節，但可將其移除。
+1. 提供其餘屬性的值，然後選取&#x200B;**建立**。 在確認對話方塊中，選取&#x200B;**完成**&#x200B;以返回&#x200B;**網站**&#x200B;主控台，或選取&#x200B;**開啟網站**&#x200B;以開啟網站的根頁面。
 
 ### 在即時副本中建立即時副本（Blueprint設定） {#creating-a-live-copy-inside-a-live-copy-blueprint-configuration}
 
@@ -191,9 +191,9 @@ Blueprint設定會視為不可變資料，因此在執行階段不可編輯。 �
 
 即時副本頁面的屬性會顯示有關即時副本的下列資訊：
 
-* **來源**：即時副本頁面的來源頁面
-* **狀態**：即時副本的同步狀態，包括即時副本是否與來源保持同步、上次同步時間以及同步的執行者
-* **設定**：
+* **Source**：即時副本頁面的來源頁面
+* **狀態**：即時副本的同步處理狀態，包括即時副本是否與來源保持同步、上次同步發生的時間以及同步處理的執行者
+* **組態**：
 
    * 頁面是否仍受即時副本繼承的約束
    * 設定是否繼承自父頁面
@@ -201,20 +201,20 @@ Blueprint設定會視為不可變資料，因此在執行階段不可編輯。 �
 
 若要檢視屬性：
 
-1. 在 **網站** 控制檯中，選取即時副本頁面並開啟屬性。
-1. 選取 **即時副本** 標籤。
+1. 在&#x200B;**網站**&#x200B;主控台中，選取即時副本頁面並開啟屬性。
+1. 選取&#x200B;**即時副本**&#x200B;索引標籤。
 
    例如：
 
-   ![頁面屬性中的即時副本索引標籤](../assets/live-copy-inherit.png)
+   頁面屬性中的![即時副本索引標籤](../assets/live-copy-inherit.png)
 
-   請參閱區段 [使用即時副本概述](live-copy-overview.md#using-the-live-copy-overview) 如需詳細資訊，請參閱即時副本概觀主控台一文。
+   如需詳細資訊，請參閱文章即時副本概觀控制檯中的[使用即時副本概觀](live-copy-overview.md#using-the-live-copy-overview)一節。
 
 ### 檢視Blueprint頁面的即時副本 {#seeing-the-live-copies-of-a-blueprint-page}
 
-Blueprint頁面（在Blueprint設定中參照）為您提供使用目前(Blueprint)頁面作為來源的即時副本頁面清單。 使用此清單來追蹤即時副本。 此清單會顯示在 **Blueprint** 的標籤 [頁面屬性](/help/sites-cloud/authoring/sites-console/page-properties.md).
+Blueprint頁面（在Blueprint設定中參照）為您提供使用目前(Blueprint)頁面作為來源的即時副本頁面清單。 使用此清單來追蹤即時副本。 清單會顯示在[頁面屬性](/help/sites-cloud/authoring/sites-console/page-properties.md)的&#x200B;**Blueprint**&#x200B;標籤上。
 
-![頁面屬性的Blueprint標籤](../assets/live-copy-blueprint-tab.png)
+![頁面屬性的Blueprint索引標籤](../assets/live-copy-blueprint-tab.png)
 
 ## 同步您的即時副本 {#synchronizing-your-live-copy}
 
@@ -222,19 +222,19 @@ Blueprint頁面（在Blueprint設定中參照）為您提供使用目前(Bluepri
 
 ### 轉出Blueprint {#rolling-out-a-blueprint}
 
-轉出Blueprint頁面以將內容變更推送至即時副本。 A **轉出** 動作會執行使用的轉出設定 [轉出時](live-copy-sync-config.md#rollout-triggers) 觸發器。
+轉出Blueprint頁面以將內容變更推送至即時副本。 **轉出**&#x200B;動作會執行使用[轉出](live-copy-sync-config.md#rollout-triggers)觸發器的轉出設定。
 
 >[!NOTE]
 >
 >如果在Blueprint分支和相依即時副本分支中同時建立具有相同頁面名稱的新頁面，則可能會發生衝突。
 >
->此類 [轉出時需要處理和解決衝突](rollout-conflicts.md).
+>轉出](rollout-conflicts.md)時需要處理和解決這類[衝突。
 
 #### 從頁面屬性轉出Blueprint {#rolling-out-a-blueprint-from-page-properties}
 
-1. 在 **網站** 主控台，選取Blueprint中的頁面並開啟屬性。
-1. 開啟 **Blueprint** 標籤。
-1. 選取 **轉出**.
+1. 在&#x200B;**網站**&#x200B;主控台中，選取Blueprint中的頁面並開啟屬性。
+1. 開啟&#x200B;**Blueprint**&#x200B;標籤。
+1. 選取&#x200B;**轉出**。
 
    ![轉出按鈕](../assets/rollout.png)
 
@@ -242,20 +242,20 @@ Blueprint頁面（在Blueprint設定中參照）為您提供使用目前(Bluepri
 
    ![選取要轉出的頁面](../assets/select-rollout-pages.png)
 
-1. 指定轉出工作是否應該立即執行(**現在**)或其他日期/時間(**稍後**)。
+1. 指定轉出工作應立即執行（**現在**）還是在其他日期/時間執行（**稍後**）。
 
    ![定義轉出時間](../assets/rollout-now-later.png)
 
-轉出會以非同步作業方式處理，並且可在以下位置檢視： [***非同步工作狀態** 頁面](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations).
+轉出會以非同步工作方式處理，並可在[***非同步工作狀態**&#x200B;頁面](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations)上檢視。
 
 #### 從參考邊欄轉出Blueprint {#roll-out-a-blueprint-from-the-reference-rail}
 
-1. 在 **網站** 控制檯中，選取即時副本中的頁面，然後開啟 **[引用](/help/sites-cloud/authoring/basic-handling.md#references)** 面板（從工具列）。
-1. 選取 **Blueprint** 選項，以顯示與此頁面關聯的Blueprint。
+1. 在&#x200B;**網站**&#x200B;主控台中，選取即時副本中的頁面，並從工具列開啟&#x200B;**[參考](/help/sites-cloud/authoring/basic-handling.md#references)**&#x200B;面板。
+1. 從清單中選取&#x200B;**Blueprint**&#x200B;選項，以顯示與此頁面關聯的藍圖。
 1. 從清單中選取所需的Blueprint。
-1. 選取 **轉出**.
+1. 選取&#x200B;**轉出**。
 
-   ![從參照邊欄轉出Blueprint](../assets/rollout-blueprint-from-references.png)
+   從參考邊欄![轉出Blueprint](../assets/rollout-blueprint-from-references.png)
 
 1. 系統會要求您確認轉出的詳細資訊：
 
@@ -265,32 +265,32 @@ Blueprint頁面（在Blueprint設定中參照）為您提供使用目前(Bluepri
 
    * **排程**：
 
-     指定轉出工作是否應該立即執行(**現在**)或之後的日期/時間(**稍後**)。
+     指定轉出工作應該立即執行（**現在**）還是在稍後的日期/時間執行（**稍後**）。
 
      ![定義轉出範圍和排程](../assets/rollout-scope-schedule.png)
 
-1. 確認這些詳細資料後，請選取 **轉出** 以執行該動作。
+1. 確認這些詳細資料後，請選取&#x200B;**轉出**&#x200B;以執行動作。
 
-轉出會以非同步作業方式處理，並且可在以下位置檢視： [**非同步工作狀態** 頁面](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations).
+轉出會以非同步工作方式處理，並可在&#x200B;[**非同步工作狀態**&#x200B;頁面](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations)上檢視。
 
 #### 從即時副本概觀轉出Blueprint {#roll-out-a-blueprint-from-the-live-copy-overview}
 
-此 [**轉出** 動作也可在即時副本概述中取得](live-copy-overview.md#using-the-live-copy-overview)，在選取Blueprint頁面時。
+選取Blueprint頁面時，[**轉出**&#x200B;動作也可從即時副本總覽](live-copy-overview.md#using-the-live-copy-overview)中使用。
 
-1. 開啟 [即時副本概觀](live-copy-overview.md#using-the-live-copy-overview) 並選取Blueprint頁面。
-1. 選取 **轉出** 工具列中的。
+1. 開啟[即時副本總覽](live-copy-overview.md#using-the-live-copy-overview)並選取Blueprint頁面。
+1. 從工具列選取&#x200B;**轉出**。
 
-   ![即時副本概觀](../assets/live-copy-overview-actions-blueprint.png)
+   ![即時副本總覽](../assets/live-copy-overview-actions-blueprint.png)
 
 1. 指定頁面及任何子頁面，然後使用核取記號確認：
 
    ![選取要轉出的頁面](../assets/select-rollout-pages.png)
 
-1. 指定轉出工作是否應該立即執行(**現在**)或其他日期/時間(**稍後**)。
+1. 指定轉出工作應立即執行（**現在**）還是在其他日期/時間執行（**稍後**）。
 
    ![定義轉出排程](../assets/rollout-now-later.png)
 
-轉出會以非同步作業方式處理，並且可在以下位置檢視： [**非同步工作狀態** 頁面](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations).
+轉出會以非同步工作方式處理，並可在&#x200B;[**非同步工作狀態**&#x200B;頁面](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations)上檢視。
 
 ### 同步即時副本 {#synchronizing-a-live-copy}
 
@@ -302,28 +302,28 @@ Blueprint頁面（在Blueprint設定中參照）為您提供使用目前(Bluepri
 
 >[!NOTE]
 >
->同步會執行使用 [轉出時](live-copy-sync-config.md#rollout-triggers) 觸發器。
+>同步處理會執行使用[轉出](live-copy-sync-config.md#rollout-triggers)觸發器的轉出設定。
 
-1. 在 **網站** 控制檯中，選取即時副本頁面並開啟屬性。
-1. 開啟 **即時副本** 標籤。
-1. 選取 **同步**.
+1. 在&#x200B;**網站**&#x200B;主控台中，選取即時副本頁面並開啟屬性。
+1. 開啟&#x200B;**即時副本**&#x200B;標籤。
+1. 選取&#x200B;**同步處理**。
 
    ![同步按鈕](../assets/synchronize.png)
 
-   已要求確認，使用 **同步** 以繼續進行。
+   已要求確認，請使用&#x200B;**同步**&#x200B;以繼續。
 
 #### 從即時副本概述同步即時副本 {#synchronize-a-live-copy-from-the-live-copy-overview}
 
-此 [即時副本概述中也提供同步動作](live-copy-overview.md#using-the-live-copy-overview)，在選取即時副本頁面時。
+選取即時副本頁面時，也可從即時副本綜覽](live-copy-overview.md#using-the-live-copy-overview)使用[同步動作。
 
-1. 開啟 [即時副本概觀](live-copy-overview.md#using-the-live-copy-overview) 並選取即時副本頁面。
-1. 選取 **同步** 工具列中的。
-1. 確認 **轉出** 在指定是否要包含之後，在對話方塊中執行動作：
+1. 開啟[即時副本總覽](live-copy-overview.md#using-the-live-copy-overview)並選取即時副本頁面。
+1. 從工具列選取&#x200B;**同步處理**。
+1. 指定是否要包含之後，在對話方塊中確認&#x200B;**轉出**&#x200B;動作：
 
-   * **頁面和子頁面**
+   * **頁和子頁**
    * **僅頁面**
 
-   ![帶或不帶子頁面的轉出頁面](../assets/rollout-page-and-subpages.png)
+   ![轉出包含或不包含子頁面的頁面](../assets/rollout-page-and-subpages.png)
 
 ## 變更即時副本內容 {#changing-live-copy-content}
 
@@ -342,17 +342,17 @@ Blueprint頁面（在Blueprint設定中參照）為您提供使用目前(Bluepri
 >
 >如果在Blueprint分支和相依即時副本分支中同時建立具有相同頁面名稱的新頁面，則可能會發生衝突。
 >
->此類 [轉出時需要處理和解決衝突](rollout-conflicts.md).
+>轉出](rollout-conflicts.md)時需要處理和解決這類[衝突。
 
 ### 將元件新增至即時副本頁面 {#adding-components-to-a-live-copy-page}
 
 您可以隨時新增元件至即時副本頁面。 即時副本及其段落系統的繼承狀態不會控制您新增元件的能力。
 
-當即時副本頁面與來源頁面同步時，新增的元件將維持不變。 另請參閱 [變更即時副本頁面上的元件順序。](#changing-the-order-of-components-on-a-live-copy-page)
+當即時副本頁面與來源頁面同步時，新增的元件將維持不變。 另請參閱[變更即時副本頁面上的元件順序。](#changing-the-order-of-components-on-a-live-copy-page)
 
 >[!TIP]
 >
->在本機對標示為容器的元件進行的變更不會由轉出時的Blueprint內容覆寫。 另請參閱 [MSM最佳實務](best-practices.md#components-and-container-synchronization) 以取得詳細資訊。
+>在本機對標示為容器的元件進行的變更不會由轉出時的Blueprint內容覆寫。 如需詳細資訊，請參閱[MSM最佳實務](best-practices.md#components-and-container-synchronization)。
 
 ### 暫停頁面的繼承 {#suspending-inheritance-for-a-page}
 
@@ -362,49 +362,49 @@ Blueprint頁面（在Blueprint設定中參照）為您提供使用目前(Bluepri
 
 >[!TIP]
 >
->您也可以 [分離即時副本](#detaching-a-live-copy) 從其Blueprint移除所有連線。 與暫停繼承不同，分離動作是永久且不可逆的。
+>您也可以[從其Blueprint分離即時副本](#detaching-a-live-copy)以移除所有連線。 與暫停繼承不同，分離動作是永久且不可逆的。
 
 #### 暫停來自頁面屬性的繼承 {#suspending-inheritance-from-page-properties}
 
 若要暫停頁面上的繼承，請執行下列動作：
 
-1. 使用「 」開啟「即時副本」頁面的屬性。 **檢視屬性** 命令 **網站** 主控台或使用 **頁面資訊** ，位於頁面工具列上。
-1. 選取 **即時副本** 標籤。
-1. 選取 **暫停** 工具列中的。 然後，您可以選取：
+1. 使用&#x200B;**Sites**&#x200B;主控台的&#x200B;**檢視屬性**&#x200B;命令或頁面工具列上的&#x200B;**頁面資訊**，開啟即時副本頁面的屬性。
+1. 選取&#x200B;**即時副本**&#x200B;索引標籤。
+1. 從工具列選取&#x200B;**暫停**。 然後，您可以選取：
 
    * **暫停**：僅暫停目前頁面。
-   * **與子項一起暫停**：暫停目前頁面及其任何子頁面。
+   * **與子項一起暫停**：暫停目前頁面與任何子頁面。
 
-1. 選取 **暫停** 在確認對話方塊上。
+1. 在確認對話方塊上選取&#x200B;**暫停**。
 
 #### 暫停來自即時副本概觀的繼承 {#suspending-inheritance-from-the-live-copy-overview}
 
-此 [即時副本概觀中也提供暫停動作](live-copy-overview.md#using-the-live-copy-overview)，在選取即時副本頁面時。
+選取即時副本頁面時，[暫停動作也可從即時副本概觀](live-copy-overview.md#using-the-live-copy-overview)中使用。
 
-1. 開啟 [即時副本概觀](live-copy-overview.md#using-the-live-copy-overview) 並選取即時副本頁面。
-1. 選取 **暫停** 工具列中的。
+1. 開啟[即時副本總覽](live-copy-overview.md#using-the-live-copy-overview)並選取即時副本頁面。
+1. 從工具列選取&#x200B;**暫停**。
 1. 從下列專案選取適當的選項：
 
    * **暫停**
-   * **與子項一起暫停**
+   * **與子系一起暫停**
 
-   ![與子項一起暫停](../assets/suspend-with-children.png)
+   ![與子系一起暫停](../assets/suspend-with-children.png)
 
-1. 確認 **暫停** 中的動作 **暫停即時副本** 對話方塊：
+1. 在&#x200B;**暫停即時副本**&#x200B;對話方塊中確認&#x200B;**暫停**&#x200B;動作：
 
    ![確認暫停](../assets/confirm-suspend.png)
 
 ### 恢復頁面的繼承 {#resuming-inheritance-for-a-page}
 
-暫停頁面的即時副本繼承是暫時的動作。 暫停後， **繼續** 動作將變為可用，可讓您恢復即時關係。
+暫停頁面的即時副本繼承是暫時的動作。 在暫停後，**繼續**&#x200B;動作將變為可用，可讓您恢復即時關係。
 
 ![繼續繼承](../assets/resume-inheritance.png)
 
 當您重新啟用繼承時，頁面不會自動與來源同步。 如果需要，您可以請求同步，方法是：
 
-* 在 **繼續**/**回覆** 對話方塊；例如：
+* 在&#x200B;**繼續**/**回覆**&#x200B;對話方塊中；例如：
 
-  ![繼續並同步](../assets/resume-and-synch.png)
+  ![繼續並同步處理](../assets/resume-and-synch.png)
 
 * 在稍後階段，透過手動選取同步化動作。
 
@@ -414,19 +414,19 @@ Blueprint頁面（在Blueprint設定中參照）為您提供使用目前(Bluepri
 
 #### 繼續頁面屬性的繼承 {#resuming-inheritance-from-page-properties}
 
-一次 [已暫停](#suspending-inheritance-from-page-properties) 此 **繼續** 動作會在頁面屬性的工具列中變成：
+一旦[暫停](#suspending-inheritance-from-page-properties) **繼續**&#x200B;動作在頁面屬性的工具列中變成：
 
-![「繼續」按鈕](../assets/resume.png)
+![繼續按鈕](../assets/resume.png)
 
 選取時，會顯示對話方塊。 您可以視需要選取同步，然後確認動作。
 
 #### 從即時副本概觀繼續即時副本頁面 {#resume-a-live-copy-page-from-the-live-copy-overview}
 
-此 [即時副本概觀中也提供繼續動作](live-copy-overview.md#using-the-live-copy-overview)，在選取即時副本頁面時。
+選取即時副本頁面時，也可從即時副本綜覽](live-copy-overview.md#using-the-live-copy-overview)使用[繼續動作。
 
-1. 開啟 [即時副本概觀](live-copy-overview.md#using-the-live-copy-overview) 並選取暫停的即時副本頁面。 頁面顯示為 **已取消繼承**.
-1. 選取 **繼續** 工具列中的。
-1. 指示您是否要在恢復繼承後同步頁面，然後確認 **繼續** 中的動作 **繼續即時副本** 對話方塊。
+1. 開啟[即時副本總覽](live-copy-overview.md#using-the-live-copy-overview)，並選取暫停的即時副本頁面。 此頁面顯示為&#x200B;**繼承已取消**。
+1. 從工具列選取&#x200B;**繼續**。
+1. 指示您是否要在恢復繼承後同步頁面，然後在&#x200B;**繼續即時副本**&#x200B;對話方塊中確認&#x200B;**繼續**&#x200B;動作。
 
 ### 變更繼承深度（淺/深） {#changing-inheritance-depth-shallow-deep}
 
@@ -438,7 +438,7 @@ Blueprint頁面（在Blueprint設定中參照）為您提供使用目前(Bluepri
 
    * 明確將子頁面從即時副本中分離。 如果還原，則無法保留對子項所做的進一步修改。
 
-   * 將移除任何下級 `LiveRelationships` 即使有巢狀 `LiveCopies`.
+   * 將移除任何下階`LiveRelationships`，即使有巢狀`LiveCopies`亦然。
 
 * 切換到深層即時副本：
 
@@ -447,13 +447,13 @@ Blueprint頁面（在Blueprint設定中參照）為您提供使用目前(Bluepri
 
 * 切換至淺層即時副本，然後回到深：
 
-   * 將（先前的）淺Live Copy的所有子系視為手動建立，因此會使用將其移開 `[oldname]_msm_moved name`.
+   * 將（先前的）淺層即時副本的所有子項視為手動建立，因此使用`[oldname]_msm_moved name`將其移開。
 
 若要指定或變更深度，請執行下列動作：
 
-1. 使用「 」開啟「即時副本」頁面的屬性。 **檢視屬性** 命令 **網站** 主控台或使用 **頁面資訊** ，位於頁面工具列上。
-1. 選取 **即時副本** 標籤。
-1. 在 **設定** 部分，設定或清除 **即時副本繼承** 選項（視是否包含子頁面而定）：
+1. 使用&#x200B;**Sites**&#x200B;主控台的&#x200B;**檢視屬性**&#x200B;命令或頁面工具列上的&#x200B;**頁面資訊**，開啟即時副本頁面的屬性。
+1. 選取&#x200B;**即時副本**&#x200B;索引標籤。
+1. 在&#x200B;**組態**&#x200B;區段中，根據是否包含子頁面來設定或清除&#x200B;**即時副本繼承**&#x200B;選項：
 
    * 勾選 — 深層即時副本（包含子頁面）
    * 未勾選 — 淺層即時副本（排除子頁面）
@@ -462,9 +462,9 @@ Blueprint頁面（在Blueprint設定中參照）為您提供使用目前(Bluepri
    >
    >切換至淺層即時副本將立即生效且不可還原。
    >
-   >另請參閱 [即時副本 — 構成](overview.md#live-copies-composition) 以取得詳細資訊。
+   >如需詳細資訊，請參閱[即時副本 — 構成](overview.md#live-copies-composition)。
 
-1. 選取 **儲存** 以持續儲存您的更新。
+1. 選取&#x200B;**儲存**&#x200B;以保留您的更新。
 
 ### 取消元件的繼承 {#cancelling-inheritance-for-a-component}
 
@@ -478,21 +478,21 @@ Blueprint頁面（在Blueprint設定中參照）為您提供使用目前(Bluepri
 
 1. 選取您要取消繼承的元件。
 
-   ![元件工具列中的繼承](../assets/inheritance-toolbar.png)
+   元件工具列中的![繼承](../assets/inheritance-toolbar.png)
 
-1. 在元件工具列上，選取 **取消繼承** 圖示。
+1. 在元件工具列上，選取&#x200B;**取消繼承**&#x200B;圖示。
 
    ![取消繼承圖示](../assets/cancel-inheritance-icon.png)
 
-1. 在「取消繼承」對話方塊中，確認動作 **是**.
+1. 在[取消繼承]對話方塊中，使用&#x200B;**是**&#x200B;確認動作。
 
    元件工具列已更新為包含所有（適當的）編輯指令。
 
 ### 重新啟用元件的繼承 {#re-enabling-inheritance-for-a-component}
 
-若要啟用元件的繼承，請選取 **重新啟用繼承** 圖示來切換元件。
+若要啟用元件的繼承，請選取元件工具列上的&#x200B;**重新啟用繼承**&#x200B;圖示。
 
-![「重新啟用繼承」圖示](../assets/re-enable-inheritance-icon.png)
+![重新啟用繼承圖示](../assets/re-enable-inheritance-icon.png)
 
 ### 變更即時副本頁面上的元件順序 {#changing-the-order-of-components-on-a-live-copy-page}
 
@@ -504,13 +504,13 @@ Blueprint頁面（在Blueprint設定中參照）為您提供使用目前(Bluepri
 
 >[!NOTE]
 >
->在段落系統上恢復取消的繼承時，元件的順序 **將不會自動還原** 從Blueprint。 如有需要，您可以手動要求同步。
+>在段落系統上還原取消的繼承時，元件&#x200B;**的順序將不會自動從Blueprint還原**。 如有需要，您可以手動要求同步。
 
 請使用下列步驟來取消段落系統的繼承。
 
 1. 開啟即時副本頁面。
 1. 將現有元件拖曳至頁面上的新位置。
-1. 在 **取消繼承** 對話方塊中，確認動作 **是**.
+1. 在&#x200B;**取消繼承**&#x200B;對話方塊中，以&#x200B;**是**&#x200B;確認動作。
 
 ### 覆寫即時副本頁面的屬性 {#overriding-properties-of-a-live-copy-page}
 
@@ -530,16 +530,16 @@ Blueprint頁面（在Blueprint設定中參照）為您提供使用目前(Bluepri
 >
 >當您重新啟用繼承時，即時副本頁面屬性不會自動與來源屬性同步。 如有需要，您可以手動要求同步。
 
-1. 使用下列任一專案開啟即時副本頁面的屬性： **檢視屬性** 的選項 **網站** 主控台或 **頁面資訊** 圖示加以檢視。
+1. 使用&#x200B;**網站**&#x200B;主控台的&#x200B;**檢視屬性**&#x200B;選項或頁面工具列上的&#x200B;**頁面資訊**&#x200B;圖示，開啟即時副本頁面的屬性。
 1. 若要取消屬性的繼承，請選取屬性右側顯示的連結圖示。
 
    ![取消繼承按鈕](../assets/cancel-inheritance-button.png)
 
-1. 在 **取消繼承** 確認對話方塊，選取 **是**.
+1. 在&#x200B;**取消繼承**&#x200B;確認對話方塊中，選取&#x200B;**是**。
 
 ### 還原即時副本頁面的屬性 {#revert-properties-of-a-live-copy-page}
 
-若要啟用屬性的繼承，請選取 **還原繼承** 圖示顯示在屬性旁。
+若要啟用屬性的繼承，請選取屬性旁邊顯示的&#x200B;**還原繼承**&#x200B;圖示。
 
 ![還原繼承按鈕](../assets/revert-inheritance-button.png)
 
@@ -554,30 +554,30 @@ Blueprint頁面（在Blueprint設定中參照）為您提供使用目前(Bluepri
 
 #### 從頁面屬性重設即時副本頁面 {#reset-a-live-copy-page-from-the-page-properties}
 
-1. 在 **網站** 主控台，選取即時副本頁面並選取 **檢視屬性**.
-1. 開啟 **即時副本** 標籤。
-1. 選取 **重設** 工具列中的。
+1. 在&#x200B;**網站**&#x200B;主控台中，選取即時副本頁面並選取&#x200B;**檢視屬性**。
+1. 開啟&#x200B;**即時副本**&#x200B;標籤。
+1. 從工具列選取&#x200B;**重設**。
 
    ![重設按鈕](../assets/reset.png)
 
-1. 在 **重設即時副本** 對話方塊，確認 **重設**.
+1. 在&#x200B;**重設即時副本**&#x200B;對話方塊中，使用&#x200B;**重設**&#x200B;確認。
 
 #### 從即時副本概觀重設即時副本頁面 {#reset-a-live-copy-page-from-the-live-copy-overview}
 
-此 [**重設** 動作也可在即時副本概述中取得](live-copy-overview.md#using-the-live-copy-overview)，在選取即時副本頁面時。
+選取即時副本頁面時，[**重設**&#x200B;動作也可從即時副本總覽](live-copy-overview.md#using-the-live-copy-overview)中使用。
 
-1. 開啟 [即時副本概觀](live-copy-overview.md#using-the-live-copy-overview) 並選取即時副本頁面。
-1. 選取 **重設** 工具列中的。
-1. 確認 **重設** 中的動作 **重設即時副本** 對話方塊：
+1. 開啟[即時副本總覽](live-copy-overview.md#using-the-live-copy-overview)並選取即時副本頁面。
+1. 從工具列選取&#x200B;**重設**。
+1. 在&#x200B;**重設即時副本**&#x200B;對話方塊中確認&#x200B;**重設**&#x200B;動作：
 
    ![確認即時副本重設](../assets/reset-live-copy.png)
 
 ## 比較即時副本頁面與Blueprint頁面 {#comparing-a-live-copy-page-with-a-blueprint-page}
 
-若要追蹤您所做的變更，您可以在中檢視Blueprint頁面 **引用** 並與其即時副本頁面比較：
+若要追蹤您所做的變更，您可以在&#x200B;**參考**&#x200B;中檢視Blueprint頁面，並將其與其即時副本頁面比較：
 
-1. 在 **網站** 主控台， [導覽至Blueprint或即時副本頁面並加以選取](/help/sites-cloud/authoring/basic-handling.md#viewing-and-selecting-resources).
-1. 開啟 **[引用](/help/sites-cloud/authoring/basic-handling.md#references)** 面板，並根據內容選取：
+1. 在&#x200B;**網站**&#x200B;主控台中，[導覽至Blueprint或即時副本頁面並選取它](/help/sites-cloud/authoring/basic-handling.md#viewing-and-selecting-resources)。
+1. 開啟&#x200B;**[參考](/help/sites-cloud/authoring/basic-handling.md#references)**&#x200B;面板，並根據內容選取：
 
    * **藍圖**
    * **即時副本**
@@ -593,7 +593,7 @@ Blueprint頁面（在Blueprint設定中參照）為您提供使用目前(Bluepri
 
 1. 即時副本和Blueprint頁面會並排開啟。
 
-   如需使用比較功能的完整資訊，請參閱 [頁面差異](/help/sites-cloud/authoring/sites-console/page-diff.md).
+   如需使用比較功能的完整資訊，請參閱[頁面差異](/help/sites-cloud/authoring/sites-console/page-diff.md)。
 
 ## 分離 Live Copy {#detaching-a-live-copy}
 
@@ -603,17 +603,17 @@ Blueprint頁面（在Blueprint設定中參照）為您提供使用目前(Bluepri
 >
 >分離即時副本後，您無法恢復即時關係。
 >
->若要移除即時關係並選擇稍後恢復它，您可以 [取消即時副本繼承](#suspending-inheritance-for-a-page) 用於頁面。
+>若要移除即時關係並選擇稍後恢復它，您可以[取消頁面的即時副本繼承](#suspending-inheritance-for-a-page)。
 
-這會對您使用的樹狀結構中的位置產生影響 **分離**：
+在樹狀結構中使用&#x200B;**Detach**&#x200B;的位置上會有影響：
 
-* **在即時副本的根頁面上分離**
+* 在即時副本的根頁面上中斷連結&#x200B;****
 
   在即時副本的根頁面上執行此操作時，它會移除Blueprint的所有頁面與其即時副本之間的即時關係。
 
-  Blueprint中頁面的進一步變更 **不會** 會影響即時副本。
+  對Blueprint **中頁面所做的進一步變更將不會**&#x200B;影響即時副本。
 
-* **在即時副本的子頁面上分離**
+* 在即時副本的子頁面上&#x200B;**中斷連結**
 
   在即時副本的子頁面（或分支）上執行此操作時：
 
@@ -630,26 +630,26 @@ Blueprint頁面（在Blueprint設定中參照）為您提供使用目前(Bluepri
 
   >[!NOTE]
   >
-  >另請參閱 [MSM轉出衝突](rollout-conflicts.md) 以取得這些情況的詳細資訊。
+  >請參閱[MSM轉出衝突](rollout-conflicts.md)以瞭解這類情況的詳細資料。
 
 ### 從頁面屬性分離即時副本頁面 {#detach-a-live-copy-page-from-the-page-properties}
 
 若要分離即時副本：
 
-1. 在 **網站** 主控台，選取即時副本頁面並選取 **檢視屬性**.
-1. 開啟 **即時副本** 標籤。
-1. 在工具列上，選取 **分離**.
+1. 在&#x200B;**網站**&#x200B;主控台中，選取即時副本頁面並選取&#x200B;**檢視屬性**。
+1. 開啟&#x200B;**即時副本**&#x200B;標籤。
+1. 在工具列上，選取&#x200B;**分離**。
 
-   ![「分離」按鈕](../assets/detach-button.png)
+   ![分離按鈕](../assets/detach-button.png)
 
-1. 隨即顯示確認對話方塊，請選取 **分離** 以完成動作。
+1. 顯示確認對話方塊，選取&#x200B;**分離**&#x200B;以完成動作。
 
 ### 從即時副本概觀分離即時副本頁面 {#detach-a-live-copy-page-from-the-live-copy-overview}
 
-此 [即時副本概觀中也提供分離動作](live-copy-overview.md#using-the-live-copy-overview)，在選取即時副本頁面時。
+選取即時副本頁面時，[分離動作也可從即時副本概觀](live-copy-overview.md#using-the-live-copy-overview)中使用。
 
-1. 開啟 [即時副本概觀](live-copy-overview.md#using-the-live-copy-overview) 並選取即時副本頁面。
-1. 選取 **分離** 工具列中的。
-1. 確認 **分離** 中的動作 **分離即時副本** 對話方塊：
+1. 開啟[即時副本總覽](live-copy-overview.md#using-the-live-copy-overview)並選取即時副本頁面。
+1. 從工具列選取&#x200B;**分離**。
+1. 在&#x200B;**分離即時副本**&#x200B;對話方塊中確認&#x200B;**分離**&#x200B;動作：
 
    ![分離即時副本](../assets/detach-live-copy.png)

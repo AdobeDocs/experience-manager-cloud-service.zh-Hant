@@ -19,7 +19,7 @@ ht-degree: 93%
 
 若要產生資產或包含資產的檔案夾的連結：
 
-1. 選取包含資產的資產或（或）資料夾，然後按一下 **[!UICONTROL 共用連結]**.
+1. 選取包含資產的資產、資料夾或兩者，然後按一下[共用連結]。****
 
 1. 如果您要進行調整，可按一下「行事曆」圖示，以使用&#x200B;**[!UICONTROL 到期日]**&#x200B;欄位定義連結的到期日。您還可以直接以「`yyyy-mm-dd`」格式指定日期。預設的連結到期日設為共用日期起的 2 週。
 
@@ -45,7 +45,7 @@ ht-degree: 93%
 
 ## 後續步驟 {#next-steps}
 
-* [觀看在「資產」檢視中共用資產連結的相關影片](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/link-sharing.html)
+* [觀看在Assets檢視中分享資產連結的相關影片](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/link-sharing.html)
 
 * 使用資產檢視使用者介面所提供的[!UICONTROL 意見回饋]選項提供產品意見回饋
 

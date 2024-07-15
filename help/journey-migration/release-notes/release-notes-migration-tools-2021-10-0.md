@@ -1,6 +1,6 @@
 ---
-title: AEMas a Cloud Service版本2021.10.0中移轉工具的發行說明
-description: AEMas a Cloud Service版本2021.11.0中移轉工具的發行說明
+title: AEM as a Cloud Service 2021.10.0版中移轉工具的發行說明
+description: AEM as a Cloud Service 2021.11.0版中移轉工具的發行說明
 feature: Release Information
 exl-id: 6b1caa63-dcb0-4c48-ab2c-fd72617abf13
 role: Admin
@@ -11,9 +11,9 @@ ht-degree: 11%
 
 ---
 
-# AEMas a Cloud Service版本2021.10.0中移轉工具的發行說明 {#release-notes}
+# AEM as a Cloud Service 2021.10.0版中移轉工具的發行說明 {#release-notes}
 
-本頁面總覽AEMas a Cloud Service2021.10.0中移轉工具發行說明。
+本頁面總覽AEM as a Cloud Service 2021.10.0中移轉工具的發行說明。
 
 >[!NOTE]
 >若要查看 Adobe Experience Manager as a Cloud Service 的最新發行說明，請按一下[此處](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current.html)。
@@ -26,7 +26,7 @@ Cloud Acceleration Manager的發行日期為2021年10月25日。
 
 ### 新增功能 {#what-is-new-cam}
 
-Cloud Acceleration Manager現在可讓使用者在趨勢線報告中檢視歷史BPA報告。 使用此報表，使用者便能以易於使用的圖形表示來檢視他們正在取得的進度。 另請參閱 [使用檢視趨勢線](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-readiness-phase.html#trendline-view-cam) 以取得更多詳細資料。
+Cloud Acceleration Manager現在可讓使用者在趨勢線報告中檢視歷史BPA報告。 使用此報表，使用者便能以易於使用的圖形表示來檢視他們正在取得的進度。 如需詳細資訊，請參閱[使用檢視趨勢線](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-readiness-phase.html#trendline-view-cam)。
 
 ### 發行日期 {#release-date-october-cam}
 
@@ -34,7 +34,7 @@ Cloud Acceleration Manager的發行日期為2021年10月4日。
 
 ### 新增功能 {#what-is-new-cam-oct}
 
-Cloud Acceleration Manager現在可讓使用者在可列印的預覽中檢視BPA報告，以便進行簡易列印或列印PDF，以輕鬆共用。 請參閱中的步驟6和7 [使用最佳做法分析卡](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-readiness-phase.html#best-practices-analysis).
+Cloud Acceleration Manager現在可讓使用者在可列印的預覽中檢視BPA報告，以便進行簡易列印或列印PDF以便輕鬆共用。 請參閱[使用最佳做法分析卡](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-readiness-phase.html#best-practices-analysis)中的步驟6和步驟7。
 
 
 ## 內容轉移工具 {#ctt-release}
@@ -45,14 +45,14 @@ Cloud Acceleration Manager現在可讓使用者在可列印的預覽中檢視BPA
 
 ### 新增功能 {#what-is-new-ctt-oct}
 
-* 透過簡化的使用者體驗改進使用者對應工具，包括以下列出的功能。 如需詳細資訊，請參閱 [使用使用者對應工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/legacy-user-mapping-tool/using-user-mapping-tool-legacy.html).
+* 透過簡化的使用者體驗改進使用者對應工具，包括以下列出的功能。 如需詳細資訊，請參閱[使用使用者對應工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/legacy-user-mapping-tool/using-user-mapping-tool-legacy.html)。
    * 在執行使用者對應之前測試與使用者管理API的連線
    * 正常略過錯誤，並繼續使用者對應活動
-   * 若發生以下情況，則使用者對應不再失敗 **存取權杖** 24小時後過期。 可以從上次停止的位置重新執行使用者對應。
+   * 如果&#x200B;**存取權杖**&#x200B;在24小時後過期，則使用者對應不再失敗。 可以從上次停止的位置重新執行使用者對應。
 
-* 為了增加內容轉移工具的穩健性，內容可以一次擷取到製作執行個體或發佈執行個體。 另請參閱 [內容轉移工具快速入門](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=zh-Hant) 以取得更多詳細資料。
+* 為了提高「內容轉移工具」的健全度，內容可以一次擷取到作者例項或Publish例項。 如需詳細資訊，請參閱[內容轉移工具快速入門](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=zh-Hant)。
 
-* 包含版本時，路徑 `/var/audit` 會自動包含在內，以移轉稽核事件。
+* 包含版本時，會自動包含路徑`/var/audit`以移轉稽核事件。
 
 ## 最佳做法分析工具 {#best-practices-analyzer}
 

@@ -37,27 +37,27 @@ ht-degree: 8%
 
 下列屬性和節點可套用至元件，以控制其裝飾標籤的行為：
 
-* **`cq:noDecoration {boolean}`：** 此屬性可新增至元件，而true值會強制AEM不在元件上產生任何包裝函式元素。
-* **`cq:htmlTag`節點：** 此節點可新增至元件下，並可具備下列屬性：
-   * **`cq:tagName {String}`：** 這可用來指定用於包住元件的自訂HTML標籤，而非預設DIV元素。
-   * **`class {String}`：** 這可用來指定要新增至包裝函式的css類別名稱。
+* **`cq:noDecoration {boolean}`：**&#x200B;此屬性可以新增至元件，而true值會強制AEM在元件上不產生任何包裝函式元素。
+* **`cq:htmlTag`節點：**&#x200B;此節點可以新增到元件下，並且可以具有以下屬性：
+   * **`cq:tagName {String}`：**&#x200B;這可用來指定用於包住元件的自訂HTML標籤，而非預設DIV元素。
+   * **`class {String}`：**&#x200B;這可用來指定要新增至包裝函式的CSS類別名稱。
    * 其他屬性名稱會新增為HTML屬性，其字串值與提供的值相同。
 
 ## 指令碼控制項 {#script-controls}
 
 一般而言，HTL中的包裝函式行為可歸納如下：
 
-* 預設不會轉譯任何包裝函式DIV (僅在執行 `data-sly-resource="foo"`)。
+* 預設不會轉譯任何包裝函式DIV （僅執行`data-sly-resource="foo"`時）。
 * 所有wcm-modes （已停用、預覽、編輯作者和發佈）的轉譯方式相同。
 
 您也可以完全控制包裝函式的行為。
 
 * HTL指令碼可完全控制包裝函式標籤的結果行為。
-* 元件屬性(例如 `cq:noDecoration` 和 `cq:tagName`)也可以定義包裝函式標籤。
+* 元件屬性（例如`cq:noDecoration`和`cq:tagName`）也可以定義包裝函式標籤。
 
 您可以透過HTL指令碼及其相關邏輯，完全控制包裝函式標籤的行為。
 
-如需有關使用HTL開發的詳細資訊，請參閱 [HTL檔案](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html).
+如需使用HTL開發的詳細資訊，請參閱[HTL檔案](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html)。
 
 ### 決策樹 {#decision-tree}
 
@@ -91,13 +91,13 @@ ht-degree: 8%
 
 #### 使用案例1：包含重複使用程式碼的元件 {#use-case-include-a-component-for-code-reuse}
 
-最典型的使用案例是當一個元件包含另一個元件來重複使用程式碼時。 在此情況下，包含的元件不需要透過其本身的工具列和對話方塊進行編輯，因此不需要包裝函式，以及元件的 `cq:htmlTag` 會忽略。 可將此視為預設行為。
+最典型的使用案例是當一個元件包含另一個元件來重複使用程式碼時。 在這種情況下，包含的元件不需要使用其本身的工具列和對話方塊進行編輯，因此不需要包裝函式，且元件的`cq:htmlTag`會被忽略。 可將此視為預設行為。
 
 `one.html: <sly data-sly-resource="child"></sly>`
 
 `two.html: Hello World!`
 
-產生的輸出於 `/content/test.html`：
+在`/content/test.html`上產生的輸出：
 
 **`Hello World!`**
 
@@ -105,15 +105,15 @@ ht-degree: 8%
 
 #### 使用案例2：包含可編輯的元件 {#use-case-include-an-editable-component}
 
-另一個常見的使用案例是容器元件包含可編輯的子元件，例如配置容器。 在這種情況下，每個包含的子項都需要包裝函式才能讓編輯器運作(除非明確以 `cq:noDecoration` 屬性)。
+另一個常見的使用案例是容器元件包含可編輯的子元件，例如配置容器。 在這種情況下，每個包含的子項都需要包裝函式才能讓編輯器運作（除非使用`cq:noDecoration`屬性明確停用）。
 
-由於包含的元件在此情況下是獨立元件，因此它需要包裝函式元素才能讓編輯器運作，並定義其要套用的版面和樣式。 若要觸發此行為，需使用 `decoration=true` 選項。
+由於包含的元件在此情況下是獨立元件，因此它需要包裝函式元素才能讓編輯器運作，並定義其要套用的版面和樣式。 若要觸發此行為，有`decoration=true`選項。
 
 `one.html: <sly data-sly-resource="${'child' @ decoration=true}"></sly>`
 
 `two.html: Hello World!`
 
-產生的輸出於 `/content/test.html`：
+在`/content/test.html`上產生的輸出：
 
 **`<article class="component-two">Hello World!</article>`**
 
@@ -121,13 +121,13 @@ ht-degree: 8%
 
 您可以透過使用HTL明確提供以下內容的方式，輕鬆處理任意數量的複雜案例：
 
-* **`decorationTagName='ELEMENT_NAME'`** 定義包裝函式的元素名稱。
-* **`cssClassName='CLASS_NAME'`** 定義要設定的CSS類別名稱。
+* **`decorationTagName='ELEMENT_NAME'`**&#x200B;定義包裝函式的元素名稱。
+* **`cssClassName='CLASS_NAME'`**&#x200B;定義要在其中設定的CSS類別名稱。
 
 `one.html: <sly data-sly-resource="${'child' @ decorationTagName='aside', cssClassName='child'}"></sly>`
 
 `two.html: Hello World!`
 
-產生的輸出 `/content/test.html`：
+產生的輸出`/content/test.html`：
 
 **`<aside class="child">Hello World!</aside>`**

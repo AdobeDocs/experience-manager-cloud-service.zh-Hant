@@ -1,6 +1,6 @@
 ---
-title: 如何在「資產」檢視中管理中繼資料？
-description: 瞭解如何在「資產」檢視中管理中繼資料。 更好的中繼資料管理讓資產更易於存取、更易於管理和完成。
+title: 如何在Assets檢視中管理中繼資料？
+description: 瞭解如何在Assets檢視中管理中繼資料。 更好的中繼資料管理讓資產更易於存取、更易於管理和完成。
 role: User, Leader, Admin, Architect, Developer
 contentOwner: AG
 exl-id: 7264e8d1-fc8f-4eb3-93a9-a6066ca3f851
@@ -69,18 +69,18 @@ ht-degree: 87%
 >title="中繼資料表單"
 >abstract="[!DNL Experience Manager Assets] 預設會提供許多標準中繼資料欄位。組織擁有其他中繼資料需求，並需要更多中繼資料欄位以新增特定企業中繼資料。 中繼資料表單可讓企業將自訂中繼資料欄位新增到資產的詳細資訊頁面。特定企業中繼資料能夠改善其資產的控管和探索。"
 
-資產檢視預設會提供許多標準中繼資料欄位。 組織擁有其他中繼資料需求，並需要更多中繼資料欄位以新增特定企業中繼資料。中繼資料表單可讓企業將自訂中繼資料欄位新增到資產的[!UICONTROL 詳細資訊]頁面。特定企業中繼資料能夠改善其資產的控管和探索。您可以從零開始建立表單，或改變現有表單的用途。
+Assets檢視預設會提供許多標準中繼資料欄位。 組織擁有其他中繼資料需求，並需要更多中繼資料欄位以新增特定企業中繼資料。中繼資料表單可讓企業將自訂中繼資料欄位新增到資產的[!UICONTROL 詳細資訊]頁面。特定企業中繼資料能夠改善其資產的控管和探索。您可以從零開始建立表單，或改變現有表單的用途。
 
-您可以為不同的資產類型 (不同的 MIME 類型) 設定中繼資料表單。使用與檔案的 MIME 類型相同的表單名稱。資產檢視會自動比對上傳的資產MIME型別與表單的名稱，並根據表單欄位更新上傳資產的中繼資料。
+您可以為不同的資產類型 (不同的 MIME 類型) 設定中繼資料表單。使用與檔案的 MIME 類型相同的表單名稱。Assets檢視會自動比對上傳的資產MIME型別與表單的名稱，並根據表單欄位更新上傳資產的中繼資料。
 <!--
 For example, if a metadata form by the name `PDF` or `pdf` exists, then the uploaded PDF documents contain metadata fields as defined in the form.
 -->
-「資產」檢視會使用下列順序搜尋現有中繼資料表單名稱，以將中繼資料欄位套用至特定型別的已上傳資產：
+Assets檢視使用以下順序搜尋現有中繼資料表單名稱，以將中繼資料欄位套用至特定型別的已上傳資產：
 
 MIME 子類型 > MIME 類型 > `default` 表單 > 現成可用的表單
 
-例如，如果存在名稱為 `PDF` 或 `pdf` 的中繼資料表單，上傳的 PDF 文件則包含如表單中定義的中繼資料欄位。如果根據名稱的中繼資料表單 `PDF` 或 `pdf` 不存在，如果存在名稱為的中繼資料表單，則資產檢視會相符 `application`. 如果有名稱為 `application` 的中繼資料表單，則上傳的 PDF 文件會包含如表單中定義的中繼資料欄位。如果資產檢視仍找不到符合的中繼資料表單，則會搜尋 `default` 中繼資料表單，以將表單中定義的中繼資料欄位套用至上傳的PDF檔案。 如果上述任何步驟都無法運作，資產檢視會將現成可用表單中定義的中繼資料欄位套用至所有上傳的PDF檔案。
-不過，如果您想要將中繼資料表單指派給資料夾 [另請參閱](#assign-metadata-form-folder).
+例如，如果存在名稱為 `PDF` 或 `pdf` 的中繼資料表單，上傳的 PDF 文件則包含如表單中定義的中繼資料欄位。如果名稱為`PDF`或`pdf`的中繼資料表單不存在，則Assets檢視會比對是否存在名稱為`application`的中繼資料表單。 如果有名稱為 `application` 的中繼資料表單，則上傳的 PDF 文件會包含如表單中定義的中繼資料欄位。如果Assets檢視仍找不到符合的中繼資料表單，則會搜尋`default`中繼資料表單，以將表單中定義的中繼資料欄位套用至上傳的PDF檔案。 如果上述任何步驟都無法運作，Assets檢視會將現成可用表單中定義的中繼資料欄位套用至所有上傳的PDF檔案。
+如果您想要將中繼資料表單指派給資料夾[，請參閱](#assign-metadata-form-folder)。
 
 >[!IMPORTANT]
 >
@@ -137,7 +137,7 @@ MIME 子類型 > MIME 類型 > `default` 表單 > 現成可用的表單
 
 ### 將中繼資料表單指派至資料夾 {#assign-metadata-form-folder}
 
-您也可以將中繼資料表單指派至資產檢視部署內的資料夾。 當您手動將中繼資料表單套用到資料夾時，根據 MIME 類型，指派至資料夾的中繼資料表單將會被覆寫。然後，資料夾中的所有資產 (包括子資料夾中的資產) 將顯示中繼資料表單中定義的屬性。
+您也可以將中繼資料表單指派給Assets檢視部署內的資料夾。 當您手動將中繼資料表單套用到資料夾時，根據 MIME 類型，指派至資料夾的中繼資料表單將會被覆寫。然後，資料夾中的所有資產 (包括子資料夾中的資產) 將顯示中繼資料表單中定義的屬性。
 
 若要將中繼資料表單指派至資料夾：
 
@@ -145,7 +145,7 @@ MIME 子類型 > MIME 類型 > `default` 表單 > 現成可用的表單
 
 2. 按一下「**[!UICONTROL 指派至資料夾]**」。
 
-3. 選取資料夾並按一下 **[!UICONTROL 指派]**. 您可以透過按一下資料夾名稱來選取資料夾。
+3. 選取資料夾並按一下&#x200B;**[!UICONTROL 指派]**。 您可以透過按一下資料夾名稱來選取資料夾。
 
    ![將中繼資料表單指派至資料夾](assets/assign-to-folder.png)
 
@@ -169,7 +169,7 @@ MIME 子類型 > MIME 類型 > `default` 表單 > 現成可用的表單
 
 ## 後續步驟 {#next-steps}
 
-* [觀看在「資產」檢視中管理中繼資料表單的相關影片](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/configuring/metadata-forms.html)
+* [觀看在Assets檢視中管理中繼資料表單的相關影片](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/configuring/metadata-forms.html)
 
 * 使用資產檢視使用者介面所提供的[!UICONTROL 意見回饋]選項提供產品意見回饋
 

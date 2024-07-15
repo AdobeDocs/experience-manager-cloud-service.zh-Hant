@@ -149,7 +149,7 @@ interface SelectedDestination {
 
 本範例會示範在 Unified Shell 之下執行 [!DNL Adobe] 應用程式時，或者已經有為進行身份驗證而產生的 `imsToken` 時，應如何搭配非 SUSI 流程使用目標選擇器。
 
-使用以下專案在您的程式碼中加入Destination Selector套件： `script` 標籤，如所示 _第6-15行_ 範例的一部分。 載入指令碼後， `PureJSSelectors` 全域變數可供使用。 定義目的地選擇器 [屬性](#destination-selector-properties) 如所示 _第16-23行_. 在非 SUSI 流程執行身份驗證需要 `imsOrg` 和 `imsToken` 屬性。`handleSelection` 屬性用於處理選取的資產。若要轉譯目標選擇器，請呼叫 `renderDestinationSelector` 函數，如&#x200B;_第 17 行_&#x200B;所述。目標選擇器會顯示於 `<div>` 容器元素，如&#x200B;_第 21 和 22 行_&#x200B;所示。
+使用`script`標籤在您的程式碼中包含目的地選擇器套件，如下列範例的&#x200B;_行6-15_&#x200B;所示。 載入指令碼後，`PureJSSelectors`全域變數即可使用。 定義目的地選擇器[屬性](#destination-selector-properties)，如&#x200B;_行16-23_&#x200B;所示。 在非 SUSI 流程執行身份驗證需要 `imsOrg` 和 `imsToken` 屬性。`handleSelection` 屬性用於處理選取的資產。若要轉譯目標選擇器，請呼叫 `renderDestinationSelector` 函數，如&#x200B;_第 17 行_&#x200B;所述。目標選擇器會顯示於 `<div>` 容器元素，如&#x200B;_第 21 和 22 行_&#x200B;所示。
 
 執行這些步驟後，您即可在您的 [!DNL Adobe] 應用程式中，以非 SUSI 流程使用目標選擇器。
 
@@ -190,14 +190,14 @@ interface SelectedDestination {
 
 | 屬性 | 類型 | 必要 | 預設 | 說明 |
 |---|---|---|---|---|
-| *imsOrg* | 字串 | 是 | | Adobe Identity Management System (IMS) ID 是在為您的組織佈建 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 時所指派的。此 `imsOrg` 需要金鑰才能驗證您要存取的組織是否位於Adobe IMS之下。 |
-| *imsToken* | 字串 | 否 | | 用於身份驗證的 IMS 持有人語彙基元。`imsToken` 如果您使用SUSI流程，則不需要使用。 不過，如果您使用非SUSI流程，則需使用此功能。 |
-| *apiKey* | 字串 | 否 | | 用於存取 AEM Discovery 服務的 API 金鑰。`apiKey` 如果您使用SUSI流程，則不需要使用。 但是，在非 SUSI 流程中即需要。 |
-| *rootPath* | 字串 | 否 | /content/dam/ | 目標選擇器會顯示資產的資料夾路徑。`rootPath` 也可以使用封裝形式。例如，假定路徑如下， `/content/dam/marketing/subfolder/`，目的地選擇器不允許您周遊任何上層資料夾，但只會顯示下層資料夾。 |
+| *imsOrg* | 字串 | 是 | | Adobe Identity Management System (IMS) ID 是在為您的組織佈建 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 時所指派的。`imsOrg`金鑰是驗證您所存取的組織是否位於Adobe IMS下的必要專案。 |
+| *imsToken* | 字串 | 否 | | 用於身份驗證的 IMS 持有人語彙基元。如果您使用SUSI流程，則不需要`imsToken`。 不過，如果您使用非SUSI流程，則需使用此功能。 |
+| *apiKey* | 字串 | 否 | | 用於存取 AEM Discovery 服務的 API 金鑰。如果您使用SUSI流程，則不需要`apiKey`。 但是，在非 SUSI 流程中即需要。 |
+| *rootPath* | 字串 | 否 | /content/dam/ | 目標選擇器會顯示資產的資料夾路徑。`rootPath` 也可以使用封裝形式。例如，給定以下路徑`/content/dam/marketing/subfolder/`，目的地選擇器不允許您周遊任何父資料夾，但只顯示子資料夾。 |
 | *hasMore* | 布林值 | 否 | | 當應用程式有更多內容要顯示時，您可以使用此屬性新增載入器，以載入內容並使其顯示在應用程式中。這是一種指示器，表示內容載入正在進行中。 |
 | *orgName* | 布林值 | 否 | | 這指和 AEM 相關的組織名稱 (可能是 orgID) |
 | *initRepoID* | 字串 | 否 | | 這是您要在預設初始檢視中使用的資產存放庫的路徑 |
-| *onCreateFolder* | 字串 | 否 | | 此 `onCreateFolder` 屬性可讓您新增圖示，在應用程式中新增資料夾。 |
+| *onCreateFolder* | 字串 | 否 | | `onCreateFolder`屬性可讓您新增圖示，在應用程式中新增資料夾。 |
 | *onConfirm* | 字串 | 否 | | 這是當您點擊「確認」按鈕時的一種回呼。 |
 | *confirmDisabled* | 字串 | 否 | | 此屬性可控制「確認」按鈕的切換。 |
 | *viewType* | 字串 | 否 | | 此 `viewType` 屬性會用於指定檢視，讓您用於顯示資產。 |
@@ -262,7 +262,7 @@ interface SelectedDestination {
 
 ### 建立資料夾 {#create-new-folder}
 
-它可讓您在的目的地資料夾中建立資料夾 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service].
+它可讓您在[!DNL Adobe Experience Manager]的目的地資料夾中建立一個資料夾作為[!DNL Cloud Service]。
 
 ### 檢視的類型 {#types-of-view}
 
@@ -279,4 +279,4 @@ interface SelectedDestination {
 
 ### 選取資料夾 {#select-folder}
 
-「選取資料夾」按鈕可讓您選取要執行各種相關操作的資產 [屬性](#destination-selector-properties) 在目的地選擇器上。
+「選取資料夾」按鈕可讓您選取資產，以執行與目的地選擇器上的[屬性](#destination-selector-properties)相關的各種作業。

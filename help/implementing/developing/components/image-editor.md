@@ -21,7 +21,7 @@ ht-degree: 2%
 
 ### imageMap屬性 {#imagemap-property}
 
-影像地圖座標會保留在JCR中，做為 `imageMap` 屬性。 其格式如下。
+影像編輯器會將影像地圖座標以`imageMap`屬性的形式保留至JCR。 其格式如下。
 
 屬性會依下列方式儲存地圖區域：
 
@@ -46,13 +46,13 @@ ht-degree: 2%
 
 在某些情況下，由於伺服器端處理缺乏支援，因此必須限制特定MIME型別的編寫動作。 例如，可能不允許編輯SVG影像。
 
-MIME型別可以透過設定 `supportedMimeTypes` 屬性（在個別外掛程式的設定節點上）。
+在個別外掛程式的設定節點上設定`supportedMimeTypes`屬性，MIME型別即可選擇性地啟用影像編輯器中的外掛程式。
 
 ### 範例 {#example}
 
 舉例來說，我們假設只有GIF、JPEG、PNG、WEBP和TIFF影像才允許裁切功能。
 
-此 `supportedMimeTypes` 然後，屬性必須設定為 `cq:editConfig` 影像元件的節點。
+然後，必須在影像元件的`cq:editConfig`節點上的外掛程式的設定節點上，將`supportedMimeTypes`屬性設定為允許的MIME型別字串。
 
 `/apps/core/wcm/components/image/v2/image/cq:editConfig`
 

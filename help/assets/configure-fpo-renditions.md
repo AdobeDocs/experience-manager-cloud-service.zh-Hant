@@ -19,7 +19,7 @@ ht-degree: 10%
 | AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/configure-fpo-renditions.html?lang=en) |
 | AEM as a Cloud Service  | 本文章 |
 
-從Experience Manager將大型資產放入Adobe InDesign檔案時，創意專業人士必須等待相當長的時間 [放置資產](https://helpx.adobe.com/indesign/using/placing-graphics.html). 同時，使用者會被封鎖而無法使用InDesign。 這會中斷創意流程，並對使用者體驗產生負面影響。 Adobe功能可暫時將小型轉譯置於InDesign檔案中。 需要最終輸出時（例如針對列印及發佈工作流程），原始的完整解析度資產會在背景取代暫時轉譯。 這種背景的非同步更新可加快設計流程以提高生產力，且不會影響創作流程。
+從Experience Manager將大型資產放入Adobe InDesign檔案時，創意專業人士必須在他們[放置資產](https://helpx.adobe.com/indesign/using/placing-graphics.html)後等待相當長的時間。 同時，使用者會被封鎖而無法使用InDesign。 這會中斷創意流程，並對使用者體驗產生負面影響。 Adobe功能可暫時將小型轉譯置於InDesign檔案中。 需要最終輸出時（例如針對列印及發佈工作流程），原始的完整解析度資產會在背景取代暫時轉譯。 這種背景的非同步更新可加快設計流程以提高生產力，且不會影響創作流程。
 
 Assets提供僅用於放置的轉譯(FPO)。 這些FPO轉譯的檔案大小較小，但外觀比例相同。 如果資產無法使用FPO轉譯，Adobe InDesign會改用原始資產。 此遞補機制可確保創意工作流程無任何中斷地進行。
 
@@ -27,22 +27,22 @@ Experience Manageras a Cloud Service提供雲端原生資產處理功能，可�
 
 以下是產生FPO轉譯的步驟：
 
-1. [建立處理設定檔](#create-processing-profile).
+1. [建立處理設定檔](#create-processing-profile)。
 
-1. 設定Experience Manager以使用此設定檔 [處理新資產](#generate-renditions-of-new-assets).
-1. 使用設定檔來 [處理現有資產](#generate-renditions-of-existing-assets).
+1. 設定Experience Manager以使用此設定檔來[處理新資產](#generate-renditions-of-new-assets)。
+1. 使用設定檔[處理現有資產](#generate-renditions-of-existing-assets)。
 
 ## 建立處理設定檔 {#create-processing-profile}
 
-若要產生FPO轉譯，請建立 **[!UICONTROL 處理設定檔]**. 設定檔使用雲端原生資產微服務進行處理。 如需指示，請參閱 [建立資產微服務的處理設定檔](asset-microservices-configure-and-use.md).
+若要產生FPO轉譯，請建立&#x200B;**[!UICONTROL 處理設定檔]**。 設定檔使用雲端原生資產微服務進行處理。 如需指示，請參閱[建立資產微服務的處理設定檔](asset-microservices-configure-and-use.md)。
 
-選取 **[!UICONTROL 建立FPO轉譯]** 以產生FPO轉譯。 或者，按一下 **[!UICONTROL 新增]** 將另一個轉譯設定新增至相同設定檔。
+選取&#x200B;**[!UICONTROL 建立FPO轉譯]**&#x200B;以產生FPO轉譯。 或者，按一下[新增] ****&#x200B;將其他轉譯設定新增至相同的設定檔。
 
 ![create-processing-profile-fpo-renditions](assets/create-processing-profile-fpo-renditions.png)
 
 ## 產生新資產的轉譯 {#generate-renditions-of-new-assets}
 
-若要產生新資產的FPO轉譯，請套用 **[!UICONTROL 處理設定檔]** 至資料夾屬性中的資料夾。 在資料夾的「屬性」頁面中，按一下 **[!UICONTROL 資產處理]** 索引標籤中，選取 **[!UICONTROL FPO設定檔]** as a **[!UICONTROL 處理設定檔]**，並儲存變更。 所有上傳至資料夾的新資產都會使用此設定檔進行處理。
+若要產生新資產的FPO轉譯，請將&#x200B;**[!UICONTROL 處理設定檔]**&#x200B;套用至資料夾屬性中的資料夾。 在資料夾的[內容]頁面中，按一下[資產處理]索引標籤&#x200B;****，選取&#x200B;**[!UICONTROL FPO設定檔]**&#x200B;做為&#x200B;**[!UICONTROL 處理設定檔]**，然後儲存變更。 所有上傳至資料夾的新資產都會使用此設定檔進行處理。
 
 ![add-fpo-rendition](assets/add-fpo-rendition.png)
 
@@ -56,9 +56,9 @@ Experience Manageras a Cloud Service提供雲端原生資產處理功能，可�
 
 ## 檢視FPO轉譯 {#view-fpo-renditions}
 
-您可以在工作流程完成後，檢查產生的FPO轉譯。 在Experience Manager Assets使用者介面中，按一下資產以開啟大型預覽。 開啟左側邊欄並選取 **[!UICONTROL 轉譯]**. 或者，使用鍵盤快速鍵 `Alt + 3` 開啟預覽時。
+您可以在工作流程完成後，檢查產生的FPO轉譯。 在Experience Manager Assets使用者介面中，按一下資產以開啟大型預覽。 開啟左側邊欄並選取&#x200B;**[!UICONTROL 轉譯]**。 或者，在預覽開啟時使用鍵盤快速鍵`Alt + 3`。
 
-按一下 **[!UICONTROL FPO轉譯]** 以載入其預覽。 或者，您也可以用滑鼠右鍵按一下轉譯，並將其儲存至您的檔案系統。 檢查左側邊欄中是否有可用的轉譯。
+按一下&#x200B;**[!UICONTROL FPO轉譯]**&#x200B;以載入其預覽。 或者，您也可以用滑鼠右鍵按一下轉譯，並將其儲存至您的檔案系統。 檢查左側邊欄中是否有可用的轉譯。
 
 ![rendition_list](assets/list-renditions.png)
 

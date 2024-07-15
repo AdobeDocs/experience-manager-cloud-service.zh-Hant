@@ -32,17 +32,17 @@ Universal Editor 服務綁定 Universal Editor 和後端系統。若要能夠在
 
 為此，您需要將 AEM 設定為在 HTTPS 上執行。出於開發目的，您可以使用自我簽署憑證。
 
-[請參閱此檔案](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/use-the-ssl-wizard.html) 有關如何設定在HTTPS上執行的AEM，包括您可使用的自我簽署憑證。
+[請參閱此檔案](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/use-the-ssl-wizard.html)，瞭解如何設定在HTTPS上執行的AEM，包括您可以使用的自我簽署憑證。
 
 ## 安裝 Universal Editor 服務 {#install-ue-service}
 
 Universal Editor服務並非Universal Editor的完整復本，而是其功能的子集，以確保不會透過網際網路路由來自您本機AEM環境的呼叫，而是從您控制的已定義端點路由呼叫。
 
-[NodeJS版本16](https://nodejs.org/en/download/releases) 執行Universal Editor服務的本機副本需要。
+需要[NodeJS版本16](https://nodejs.org/en/download/releases)才能執行Universal Editor服務的本機復本。
 
-Universal Editor服務可透過Software Distribution取得。 請參閱 [Software Distribution檔案](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html) 以取得存取它的詳細資訊。
+Universal Editor服務可透過Software Distribution取得。 如需如何存取軟體的詳細資訊，請參閱[軟體發佈檔案](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html)。
 
-儲存 `universal-editor-service.cjs` 檔案從Software Distribution傳至您的本機開發環境。
+將`universal-editor-service.cjs`檔案從Software Distribution儲存至您的本機開發環境。
 
 ## 建立憑證以透過 HTTPS 執行 Universal Editor 服務 {#ue-https}
 
@@ -106,9 +106,9 @@ Universal Editor 會根據頁面的偵測方式，知道要使用哪個 Universa
 
 >[!NOTE]
 >
->嘗試直接存取 `https://localhost:8000` 結果位於 `404` 錯誤。 這是預期行為。
+>嘗試直接存取`https://localhost:8000`導致`404`錯誤。 這是預期行為。
 >
->若要測試對您本機Universal Editor服務的存取，請使用 `https://localhost:8000/corslib/LATEST`. 請參閱 [下一節](#editing) 以取得詳細資訊。
+>若要測試存取您本機的Universal Editor服務，請使用`https://localhost:8000/corslib/LATEST`。 如需詳細資訊，請參閱[下一節](#editing)。
 
 >[!TIP]
 >

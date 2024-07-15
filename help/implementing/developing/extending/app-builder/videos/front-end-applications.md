@@ -26,6 +26,6 @@ ht-degree: 0%
 
 ## 建置前端App Builder應用程式
 
-瞭解如何使用React和在應用程式中使用Adobe執行階段動作來建置前端應用程式產生器應用程式。
+瞭解如何使用React和在應用程式中使用Adobe執行階段動作來建置前端App Builder應用程式。
 
 >[!VIDEO](https://video.tv.adobe.com/v/339248/?quality=12&learn=on)

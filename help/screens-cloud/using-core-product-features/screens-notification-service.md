@@ -1,6 +1,6 @@
 ---
-title: Screensas a Cloud Service中的Screens通知服務
-description: 本頁面說明如何在Screensas a Cloud Service設定「通知服務」。
+title: Screens中的Screens Notification Serviceas a Cloud Service
+description: 本頁說明如何在Screensas a Cloud Service中設定「通知服務」。
 index: true
 exl-id: 74215a70-45c8-4b7f-ba30-60c332de07e9
 feature: Developing Screens
@@ -35,4 +35,4 @@ AEM Screens Notifications Service可讓管理員接收報表，其中包含未�
 
 ### 範例使用案例
 
-如果您將報表時間設定為5 am，而Ping逾時設定為1小時，則如果Screens裝置在4:00 am至5:00 am之間未執行Ping功能，您將會收到電子郵件通知，確認裝置未使用中。
+如果您將報表時間設定為5 am，而Ping逾時設定為1小時，則如果您的Screens裝置未在凌晨4:00至凌晨5:00之間Ping，您將會收到電子郵件通知，確認裝置閒置中。

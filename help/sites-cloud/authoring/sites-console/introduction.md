@@ -14,26 +14,26 @@ ht-degree: 6%
 
 # Sites 主控台 {#sites-console}
 
-瞭解如何使用 **網站** 主控台以管理和組織您的AEM頁面。
+瞭解如何使用&#x200B;**Sites**&#x200B;主控台來管理和組織您的AEM頁面。
 
 ## 方向 {#orientation}
 
-此 **網站** 主控台可讓您檢視頁面階層。
+**Sites**&#x200B;主控台可讓您檢視您的頁面階層。
 
-![已選取專案之Sites主控台的欄檢視](assets/sites-console-column-view-selected.png)
+已選取專案的Sites主控台的![欄檢視](assets/sites-console-column-view-selected.png)
 
 它提供不同的檢視和工具列，協助您管理和組織頁面。
 
-* [主控台工具列](#toolbar) 會隨時出現，協助您導覽。
-* [三種不同的檢視](#views) 讓您輕鬆找到並選取頁面。
-* [動作工具列](#action-toolbar) 當您選取要對其採取動作的專案時，就會顯示。
-* [側面板](#side-panel) 有多個選項，可在選取的頁面上顯示詳細資訊。
+* [主控台工具列](#toolbar)會一直出現，協助您瀏覽。
+* [三種不同的檢視](#views)可讓您輕鬆找到並選取您的頁面。
+* [當您選取要對其採取動作的專案時，動作工具列](#action-toolbar)就會出現。
+* [側面板](#side-panel)有多個選項，可在選取的頁面上顯示詳細資訊。
 
 ## 主控台工具列 {#console-toolbar}
 
 主控台工具列一律會顯示在主控台上，協助您定位內容並導覽內容。
 
-![Sites主控台的工具列](assets/sites-console-toolbar.png)
+![網站主控台的工具列](assets/sites-console-toolbar.png)
 
 ### 側面板選擇器 {#side-panel-selector}
 
@@ -41,17 +41,17 @@ ht-degree: 6%
 
 ![側面板選擇器按鈕](assets/sites-console-side-panel-button.png)
 
-顯示的選項取決於您目前的主控台。 例如，在 **網站** 您可以選取「僅限內容」(Content only) （預設）、「時間軸」(Timeline)、「參照」(references)或「濾鏡」(filter)側面板。
+顯示的選項取決於您目前的主控台。 例如，在&#x200B;**Sites**&#x200B;中，您可以選取僅限內容（預設）、時間軸、參照或篩選器側面板。
 
 ![側面板選擇器範例](assets/sites-console-side-panel-selector.png)
 
-如需關於側面板的詳細資訊，請參閱檔案 [網站主控台側面板。](/help/sites-cloud/authoring/sites-console/console-side-panel.md)
+如需側面板的詳細資訊，請參閱檔案[網站主控台側面板。](/help/sites-cloud/authoring/sites-console/console-side-panel.md)
 
 ### 導覽列 {#breadcrumbs}
 
 階層連結位於邊欄中間，且一律顯示目前所選專案的說明，可讓您導覽網站的各個層級。
 
-![導覽列中的階層連結](assets/sites-console-breadcrumbs-navigation.png)
+導覽列中的![階層連結](assets/sites-console-breadcrumbs-navigation.png)
 
 
 點選或按一下階層連結文字，以顯示下拉式清單，列出目前所選專案的階層層次。 點選或按一下專案以跳至該位置。
@@ -60,22 +60,22 @@ ht-degree: 6%
 
 ### 全選 {#select-all}
 
-點選或按一下 **全選** button會選取主控台目前檢視中的所有專案。
+點選或按一下&#x200B;**全選**&#x200B;按鈕會選取您目前主控台檢視中的所有專案。
 
-![全選按鈕](assets/sites-console-select-all.png)
+![選取所有按鈕](assets/sites-console-select-all.png)
 
-當您選取了所有專案時，所選專案的計數會顯示在工具列的右上角，其中 **全選** 按鈕已出現。
+當您選取了所有專案時，選取專案的計數會顯示在工具列的右上角，其中會顯示&#x200B;**全選**&#x200B;按鈕。
 
 您可以取消選取所有專案並結束選取模式，方法如下：
 
-* 按一下或點選 **X** 計數旁邊。
-* 使用 **逸出** 機碼。
+* 按一下或點選計數旁的&#x200B;**X**。
+* 使用&#x200B;**ESC**&#x200B;機碼。
 
-![取消全選](assets/sites-console-deselect-all.png)
+![全部取消選取](assets/sites-console-deselect-all.png)
 
 ### 建立按鈕 {#create-button}
 
-此 **建立** 按鈕可讓您新增頁面至您的網站，以及建立其他Sites物件，例如即時副本或啟動。
+**建立**&#x200B;按鈕可讓您新增頁面至您的網站，以及建立其他網站物件，例如即時副本或啟動。
 
 ![建立按鈕](assets/sites-console-create.png)
 
@@ -92,13 +92,13 @@ ht-degree: 6%
 
 ## 檢視和選取頁面 {#views}
 
-此 **網站** 主控台提供您內容階層的三種不同檢視。 您可以透過任何可用檢視來檢視、瀏覽及選取（供進一步動作）您的資源。
+**Sites**&#x200B;主控台提供您內容階層的三種不同檢視。 您可以透過任何可用檢視來檢視、瀏覽及選取（供進一步動作）您的資源。
 
 * [欄檢視](#column-view)
 * [卡片檢視](#card-view)
 * [清單檢視](#list-view)
 
-此 **檢視** 圖示位於AEM工具列的最右側，表示目前選取的檢視。
+AEM工具列最右邊的&#x200B;**檢視**&#x200B;圖示表示目前選取的檢視。
 
 點選或按一下它可讓您選取不同的檢視。
 
@@ -106,7 +106,7 @@ ht-degree: 6%
 
 您可以在欄檢視、卡片檢視和清單檢視之間切換。 在清單檢視中，它也會顯示檢視設定。
 
-![檢視](assets/sites-console-view.png)
+![個檢視](assets/sites-console-view.png)
 
 >[!NOTE]
 >
@@ -132,11 +132,11 @@ ht-degree: 6%
 
 1. 例如在卡片檢視中：
 
-   ![卡片檢視選取](assets/sites-console-card-view-select.png)
+   ![卡片檢視選擇](assets/sites-console-card-view-select.png)
 
-1. 選取資源後，頂端標題會由 [動作工具列](#actions-toolbar) 可讓您存取目前適用於所選資源的動作。
+1. 選取資源後，[動作工具列](#actions-toolbar)會覆蓋頂端標頭，提供目前適用於選取資源的動作存取權。
 
-1. 若要結束選取模式，請選取 **X** 右上方，或使用 **逸出**.
+1. 若要結束選取模式，請選取右上方的&#x200B;**X**，或使用&#x200B;**ESCAPE**。
 
 ### 欄檢視 {#column-view}
 
@@ -181,11 +181,11 @@ ht-degree: 6%
    * 如果頁面已鎖定、隱藏或是LiveCopy的一部分。
    * 指示器，表示您是否需要在工作流程中對專案執行動作。
 
-卡片檢視也提供 [快速動作](#quick-actions) 用於選取等專案，以及編輯等常見動作。
+卡片檢視也提供專案的[快速動作](#quick-actions)，例如選取範圍與常見的動作，例如編輯。
 
 ![快速動作](assets/sites-console-quick-actions.png)
 
-您可以點選/按一下卡片來向下導覽樹狀結構（注意避免點選快速動作），或使用再次向上導覽 [標題中的階層連結](#the-header).
+您可以點選/按一下卡片來向下瀏覽樹狀結構（注意避免點選快速動作），或使用標頭](#the-header)中的[階層連結來再次向上瀏覽。
 
 ### 清單檢視 {#list-view}
 
@@ -193,26 +193,26 @@ ht-degree: 6%
 
 ![清單檢視](assets/sites-console-list-view.png)
 
-* 您可以點選/按一下資源名稱，在樹狀結構中向下導覽，並使用 [標題中的階層連結](#the-header).
-* 若要輕鬆選取清單中的所有專案，請使用 [**全選** 核取方塊。](#select-all)
+* 您可以點選/按一下資源名稱，在樹狀結構中向下導覽，並使用標頭](#the-header)中的[階層連結進行備份。
+* 若要輕鬆選取清單中的所有專案，請使用工具列中的&#x200B;[**全選**&#x200B;核取方塊。](#select-all)
 
-* 選擇要顯示的欄，使用 **檢視設定** 選項位於「檢視」按鈕下。 下列欄可供顯示：
+* 使用位於[檢視]按鈕下方的&#x200B;**檢視設定**&#x200B;選項來選取要顯示的欄。 下列欄可供顯示：
 
-   * **名稱**  — 頁面名稱，在多語言撰寫環境中相當實用，因為它是頁面URL的一部分，無論使用何種語言，都不會變更
-   * **已修改**  — 上次修改日期和上次修改的使用者
-   * **已發佈**  — 發佈狀態
-   * **預覽**  — 預覽狀態
-   * **範本**  — 頁面所在的範本
+   * **名稱** — 頁面名稱，在多語言撰寫環境中很有用，因為它是頁面URL的一部分，無論使用何種語言，都不會變更
+   * **修改日期** — 上次修改日期和上次修改的使用者
+   * **已發佈** — 發佈狀態
+   * **預覽** — 預覽狀態
+   * **範本** — 頁面所依據的範本
    * **作業**
-   * **工作流程**  — 目前套用至頁面的工作流程。 將滑鼠移至上方或開啟「時間軸」時，可以取得更多資訊。
+   * **工作流程** — 目前已套用至頁面的工作流程。 將滑鼠移至上方或開啟「時間軸」時，可以取得更多資訊。
    * **已翻譯**
-   * **頁面檢視**
+   * **頁面檢視次數**
    * **不重複訪客**
-   * **頁面逗留時間**
+   * 第&#x200B;**頁上的**&#x200B;時間
 
 ![設定資料欄](assets/sites-console-select-columns.png)
 
-根據預設 **名稱** 欄隨即顯示，它構成了頁面URL的一部分。 在某些情況下，作者可能需要存取不同語言的頁面，如果作者不知道頁面的語言，檢視頁面名稱（通常不會變更）會很有幫助。
+預設會顯示&#x200B;**Name**&#x200B;欄，它構成了頁面URL的一部分。 在某些情況下，作者可能需要存取不同語言的頁面，如果作者不知道頁面的語言，檢視頁面名稱（通常不會變更）會很有幫助。
 
 * 使用清單中每個專案最右側的點狀垂直列，變更專案的順序。
 
@@ -224,7 +224,7 @@ ht-degree: 6%
 
 >[!NOTE]
 >
->變更順序僅適用於具有下列條件的已排序資料夾： `jcr:primaryType` 值為 `sling:OrderedFolder`.
+>變更順序僅適用於具有`jcr:primaryType`值為`sling:OrderedFolder`的已排序資料夾。
 
 ## 動作工具列 {#actions-toolbar}
 
@@ -234,31 +234,31 @@ ht-degree: 6%
 
 唯有在主控台中選取資源時，動作工具列才會出現。 動作工具列中的可用動作會變更，以反映您可對所選特定專案執行的動作。 最常見的動作包括：
 
-* [**建立**](#create-action)  — 建立新內容或內容相關動作
-* **編輯**  — 根據所選頁面的建立方式， **編輯** 動作會開啟適當的編輯器。
-   * [頁面編輯器](/help/sites-cloud/authoring/page-editor/introduction.md)  — 適用於使用AEM頁面編輯器建立的頁面
-   * [通用編輯器](/help/sites-cloud/authoring/universal-editor/authoring.md)  — 適用於使用通用編輯器建立的頁面
-* [**屬性**](/help/sites-cloud/authoring/sites-console/page-properties.md)  — 開啟頁面屬性視窗
-* [**鎖定**](/help/sites-cloud/authoring/sites-console/managing-pages.md#locking-a-page)  — 鎖定頁面以防止其他人變更它
-* [**複製**](/help/sites-cloud/authoring/sites-console/managing-pages.md#copying-and-pasting-a-page)  — 複製頁面
-* [**移動**](/help/sites-cloud/authoring/sites-console/managing-pages.md#moving-or-renaming-a-page)  — 移動或重新命名頁面
-* [**快速發佈**](/help/sites-cloud/authoring/sites-console/publishing-pages.md#quick-publish)  — 立即發佈一個或多個頁面
-* [**管理發布**](/help/sites-cloud/authoring/sites-console/publishing-pages.md#manage-publication)  — 排程要發佈的頁面
-* [**還原**](/help/sites-cloud/authoring/sites-console/page-versions.md#restore-version)  — 還原頁面或頁面樹狀結構的版本
-* [**刪除**](/help/sites-cloud/authoring/sites-console/managing-pages.md#deleting-a-page)  — 刪除一或多個頁面
+* [**建立**](#create-action) — 建立新內容或內容相關動作
+* **編輯** — 視選取頁面的建立方式而定，**編輯**&#x200B;動作會開啟適當的編輯器。
+   * [頁面編輯器](/help/sites-cloud/authoring/page-editor/introduction.md) — 針對使用AEM頁面編輯器建立的頁面
+   * [通用編輯器](/help/sites-cloud/authoring/universal-editor/authoring.md) — 針對使用通用編輯器建立的頁面
+* [**屬性**](/help/sites-cloud/authoring/sites-console/page-properties.md) — 開啟頁面屬性視窗
+* [**鎖定**](/help/sites-cloud/authoring/sites-console/managing-pages.md#locking-a-page) — 鎖定頁面以防止其他人變更它
+* [**複製**](/help/sites-cloud/authoring/sites-console/managing-pages.md#copying-and-pasting-a-page) — 複製頁面
+* [**移動**](/help/sites-cloud/authoring/sites-console/managing-pages.md#moving-or-renaming-a-page) — 移動或重新命名頁面
+* [**快速Publish**](/help/sites-cloud/authoring/sites-console/publishing-pages.md#quick-publish) — 立即Publish一或多個頁面
+* [**管理出版物**](/help/sites-cloud/authoring/sites-console/publishing-pages.md#manage-publication) — 排程要發佈的頁面
+* [**還原**](/help/sites-cloud/authoring/sites-console/page-versions.md#restore-version) — 還原頁面或頁面樹狀結構的版本
+* [**刪除**](/help/sites-cloud/authoring/sites-console/managing-pages.md#deleting-a-page) — 刪除一個或多個頁面
 
-由於某些視窗的空間限制，工具列可能會很快變得比可用的空間長。發生此情況時，會出現其他選項。按一下或點選省略符號(三個點或 **...**)會開啟一個下拉式選取器，其中包含所有剩餘的動作。
+由於某些視窗的空間限制，工具列可能會很快變得比可用的空間長。發生此情況時，會出現其他選項。按一下或點選省略符號（三個點或&#x200B;**...**）會開啟一個下拉式選取器，其中包含所有剩餘的動作。
 
 ![其他選項](assets/sites-console-additional-options.png)
 
 ### 建立動作 {#create-action}
 
-建立動作提供的選項與類似， [**建立** 工具列按鈕](#create-button) 用於建立新頁面和類似專案。
+建立動作提供類似於&#x200B;[**建立**&#x200B;工具列按鈕](#create-button)的選項，可用來建立新頁面和類似專案。
 
 此外，它提供建立頁面相關動作的功能。
 
-* [**工作流程**](/help/sites-cloud/authoring/workflows/overview.md)  — 將工作流程套用至頁面
-* [**版本**](/help/sites-cloud/authoring/sites-console/page-versions.md)  — 建立頁面的版本
+* [**工作流程**](/help/sites-cloud/authoring/workflows/overview.md) — 將工作流程套用至頁面
+* [**版本**](/help/sites-cloud/authoring/sites-console/page-versions.md) — 建立頁面的版本
 
 ## 範本
 

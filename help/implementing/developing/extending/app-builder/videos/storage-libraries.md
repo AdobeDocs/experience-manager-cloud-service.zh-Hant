@@ -20,7 +20,7 @@ ht-degree: 0%
 
 ## 儲存庫簡介
 
-瞭解App Builder儲存空間選項，以及儲存空間在App Builder應用程式中為何重要。
+瞭解App Builder儲存選項，以及儲存在App Builder應用程式中為何重要。
 
 >[!VIDEO](https://video.tv.adobe.com/v/339238/?quality=12&learn=on)
 

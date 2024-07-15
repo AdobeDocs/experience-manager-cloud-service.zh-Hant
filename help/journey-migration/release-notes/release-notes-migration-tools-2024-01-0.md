@@ -1,6 +1,6 @@
 ---
-title: AEMas a Cloud Service版本2024.01.0中移轉工具的發行說明
-description: AEMas a Cloud Service版本2024.01.0中移轉工具的發行說明
+title: AEM as a Cloud Service 2024.01.0版中移轉工具的發行說明
+description: AEM as a Cloud Service 2024.01.0版中移轉工具的發行說明
 feature: Release Information
 source-git-commit: 77da30bab941e7274c82ea5ce55a3f9c65608f49
 workflow-type: tm+mt
@@ -9,9 +9,9 @@ ht-degree: 7%
 
 ---
 
-# AEMas a Cloud Service版本2024.01.0中移轉工具的發行說明 {#release-notes}
+# AEM as a Cloud Service 2024.01.0版中移轉工具的發行說明 {#release-notes}
 
-本頁面總覽AEMas a Cloud Service2024.01.0中移轉工具發行說明。
+本頁面總覽AEM as a Cloud Service 2024.01.0中移轉工具的發行說明。
 
 ## 內容轉移工具 {#ctt-release}
 

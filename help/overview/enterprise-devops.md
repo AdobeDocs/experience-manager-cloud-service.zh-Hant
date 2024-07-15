@@ -3,7 +3,7 @@ title: 企業 DevOps
 description: 了解輕鬆部署、簡化共同作業所需的程序、方法和溝通方式。
 exl-id: c8da1fd7-fe3e-4c7b-8fe7-1f7faf02769c
 source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1009'
 ht-degree: 100%
 

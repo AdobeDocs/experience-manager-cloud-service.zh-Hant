@@ -28,4 +28,4 @@ ht-degree: 0%
 
 >[!VIDEO](https://video.tv.adobe.com/v/339245/?quality=12&learn=on)
 
-瞭解如何建置發佈可透過App Builder應用程式使用事件。
+瞭解如何建置發佈能在App Builder應用程式中使用事件。

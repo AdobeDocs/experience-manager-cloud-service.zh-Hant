@@ -21,38 +21,38 @@ ht-degree: 10%
 | AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/inline-style-adaptive-forms.html) |
 | AEM as a Cloud Service  | 本文章 |
 
-您可使用以下方式指定樣式，以定義最適化表單的整體外觀和樣式 [主題編輯器](themes.md). 此外，您也可以將CSS內嵌樣式套用至個別的最適化表單元件，並即時預覽變更。 內嵌樣式會覆寫主題中提供的樣式。
+您可以使用[主題編輯器](themes.md)來指定樣式，以定義最適化表單的整體外觀和樣式。 此外，您也可以將CSS內嵌樣式套用至個別的最適化表單元件，並即時預覽變更。 內嵌樣式會覆寫主題中提供的樣式。
 
 ## 套用內嵌CSS屬性 {#apply-inline-css-properties}
 
 若要將內嵌樣式新增至元件：
 
-1. 在表單編輯器中開啟您的表單，並將模式變更為樣式模式。 若要將模式變更為樣式模式，請在頁面工具列中，選取 ![畫佈下拉式清單](assets/Smock_ChevronDown.svg) > **[!UICONTROL 樣式]**.
-1. 在頁面中選取元件，然後選取編輯按鈕 ![編輯按鈕](assets/edit.svg). 在側邊欄中開啟樣式屬性。
+1. 在表單編輯器中開啟您的表單，並將模式變更為樣式模式。 若要將模式變更為樣式模式，請在頁面工具列中選取![畫佈下拉式清單](assets/Smock_ChevronDown.svg) > **[!UICONTROL 樣式]**。
+1. 在頁面中選取元件，然後選取編輯按鈕![edit-button](assets/edit.svg)。 在側邊欄中開啟樣式屬性。
 
    您也可以從側欄中的表單階層樹狀結構中選取元件。 表單階層樹狀結構可在側邊欄中做為表單物件使用。
 
-   在 [!UICONTROL 樣式] 模式中，您可以看到列在「表單物件」下的元件。 不過，側邊欄中的「表單物件」清單會列出欄位和面板等元件。 欄位和面板是可包含文字方塊和選項按鈕等元件的類屬元件。
+   在[!UICONTROL 樣式]模式中，您可以看到列在「表單物件」下的元件。 不過，側邊欄中的「表單物件」清單會列出欄位和面板等元件。 欄位和面板是可包含文字方塊和選項按鈕等元件的類屬元件。
 
    從側欄選取元件時，您會看到列出所有子元件以及所選元件的屬性。 您可以選取特定的子元件並設定其樣式。
 
 1. 按一下側邊欄中的索引標籤以指定CSS屬性。 您可以指定屬性，例如：
 
-   * [!UICONTROL Dimension與位置] （顯示設定、邊框間距、高度、寬度、邊界、位置、z索引、浮動、清除、溢位）
+   * [!UICONTROL Dimension和位置] （顯示設定、邊框間距、高度、寬度、邊界、位置、z索引、浮動、清除、溢位）
    * [!UICONTROL 文字] （字型系列、粗細、顏色、大小、行高和對齊）
    * [!UICONTROL 背景] （影像和漸層，背景顏色）
-   * [!UICONTROL 邊框] （寬度、樣式、顏色、半徑）
+   * [!UICONTROL 框線] （寬度、樣式、顏色、半徑）
    * [!UICONTROL 效果] （陰影、不透明度）
-   * [!UICONTROL 進階] （可讓您為元件編寫自訂CSS）
+   * [!UICONTROL 進階] （讓您為元件撰寫自訂CSS）
 
-1. 同樣地，您也可以為元件的其他零件套用樣式，例如 [!UICONTROL Widget]， [!UICONTROL 註解]、和 [!UICONTROL 說明].
-1. 選取 **[!UICONTROL 完成]** 確認變更或 **[!UICONTROL 取消]** 以捨棄變更。
+1. 同樣地，您可以為元件的其他部分套用樣式，例如[!UICONTROL Widget]、[!UICONTROL 標題]和[!UICONTROL 說明]。
+1. 選取&#x200B;**[!UICONTROL 完成]**&#x200B;以確認變更，或選取&#x200B;**[!UICONTROL 取消]**&#x200B;以捨棄變更。
 
 ## 範例：欄位元件的內嵌樣式 {#example-inline-styles-for-a-field-component}
 
 下列影像說明套用內嵌樣式之前和之後的文字欄位。
 
-![套用內嵌樣式之前的文字方塊元件](assets/no-style.png)
+套用內嵌樣式之前的![文字方塊元件](assets/no-style.png)
 
 套用內嵌樣式屬性前的文字方塊元件
 
@@ -99,7 +99,7 @@ ht-degree: 10%
  </tbody>
 </table>
 
-![套用內嵌樣式後的文字方塊樣式](assets/applied-style.png)
+套用內嵌樣式後的![文字方塊樣式](assets/applied-style.png)
 
 套用內嵌樣式屬性後的文字方塊元件
 
@@ -111,25 +111,25 @@ ht-degree: 10%
 
 ## 複製並貼上樣式 {#copy-paste-styles}
 
-您也可以在最適化表單中，將樣式從一個元件複製並貼到另一個元件。 在 **[!UICONTROL 樣式]** 模式，選取元件並選取復製圖示 ![複製](assets/property-copy-icon.svg).
+您也可以在最適化表單中，將樣式從一個元件複製並貼到另一個元件。 在&#x200B;**[!UICONTROL 樣式]**&#x200B;模式中，選取元件並選取「複製」圖示![複製](assets/property-copy-icon.svg)。
 
-選取相同型別的其他元件，然後選取「貼上」圖示 ![複製](assets/Smock_Paste_18_N.svg) 貼上複製的樣式。 您也可以選取「清除樣式」圖示 ![複製](assets/clear-style-icon.svg) 以清除套用的樣式。
+選取相同型別的其他元件，並選取「貼上」圖示![「複製」](assets/Smock_Paste_18_N.svg)以貼上複製的樣式。 您也可以選取「清除樣式」圖示![複製](assets/clear-style-icon.svg)來清除套用的樣式。
 
 ## 為元件的不同狀態設定樣式 {#set-styles-for-states}
 
-您可以為元件型別的不同狀態設定樣式。 不同的狀態包括： [!UICONTROL 焦點]， [!UICONTROL 已停用]， [!UICONTROL 暫留]， [!UICONTROL 錯誤]， [!UICONTROL 成功]、和 [!UICONTROL 強制].
+您可以為元件型別的不同狀態設定樣式。 不同的狀態包括： [!UICONTROL 焦點]、[!UICONTROL 已停用]、[!UICONTROL 暫留]、[!UICONTROL 錯誤]、[!UICONTROL 成功]以及[!UICONTROL 必要]。
 
 若要定義元件狀態的樣式：
 
-1. 在 **[!UICONTROL 樣式]** 模式，選取元件並選取編輯圖示 ![編輯](assets/Smock_Edit_18_N.svg).
+1. 在&#x200B;**[!UICONTROL 樣式]**&#x200B;模式中，選取元件並選取「編輯」圖示![「編輯」](assets/Smock_Edit_18_N.svg)。
 
-1. 使用選取元件狀態 **[!UICONTROL 狀態]** 下拉式清單。
+1. 使用&#x200B;**[!UICONTROL 狀態]**&#x200B;下拉式清單選取元件的狀態。
 
    ![選取狀態](assets/select-state.png)
 
-1. 為元件的所選狀態定義樣式，然後選取 ![儲存](assets/save_icon.svg) 以儲存屬性。
+1. 定義元件所選取狀態的樣式，並選取![儲存](assets/save_icon.svg)以儲存屬性。
 
-您也可以模擬成功和錯誤狀態。 選取「展開」圖示以檢視 **[!UICONTROL 模擬成功]** 和 **[!UICONTROL 模擬錯誤]** 選項。
+您也可以模擬成功和錯誤狀態。 選取「展開」圖示以檢視&#x200B;**[!UICONTROL 模擬成功]**&#x200B;和&#x200B;**[!UICONTROL 模擬錯誤]**&#x200B;選項。
 
 ![模擬狀態](assets/simulate-states.png)
 

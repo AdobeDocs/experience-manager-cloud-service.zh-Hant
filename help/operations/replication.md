@@ -1,6 +1,6 @@
 ---
 title: 複製
-description: 瞭解AEMas a Cloud Service中的散佈和疑難排解復寫。
+description: 瞭解AEM as a Cloud Service中的散佈和疑難排解復寫問題。
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
 feature: Operations
 role: Admin
@@ -13,17 +13,17 @@ ht-degree: 1%
 
 # 複製 {#replication}
 
-Adobe Experience Manager as a Cloud Service使用 [Sling Content Distribution](https://sling.apache.org/documentation/bundles/content-distribution.html) 將內容移動至復寫至在AEM執行階段以外的Adobe Developer上執行的管道服務的功能。
+Adobe Experience Manager as a Cloud Service使用[Sling內容發佈](https://sling.apache.org/documentation/bundles/content-distribution.html)功能將內容移動至復寫至AEM執行階段以外的Adobe Developer上執行的管道服務。
 
 >[!NOTE]
 >
->讀取 [分佈](/help/overview/architecture.md#content-distribution) 以取得詳細資訊。
+>閱讀[發佈](/help/overview/architecture.md#content-distribution)以取得詳細資訊。
 
 ## 發佈內容的方法 {#methods-of-publishing-content}
 
 >[!NOTE]
 >
->如果您想要大量發佈內容，請使用 [Publish內容樹工作流程](#publish-content-tree-workflow).
+>如果您想要大量發佈內容，請使用[Publish內容樹工作流程](#publish-content-tree-workflow)。
 >此工作流程步驟是專為Cloud Service建置的，可有效處理大型負載。
 >不建議建置您自己的大量發佈自訂程式碼。
 >如果您因任何原因必須自訂，則可使用現有的工作流程API來觸發此工作流程/工作流程步驟。
@@ -33,15 +33,15 @@ Adobe Experience Manager as a Cloud Service使用 [Sling Content Distribution](h
 
 此功能可讓您立即發佈所選頁面，無需透過「管理發布」方法選擇其他選項。
 
-如需詳細資訊，請參閱 [管理發布](/help/sites-cloud/authoring/sites-console/publishing-pages.md#manage-publication).
+如需詳細資訊，請參閱[管理出版物](/help/sites-cloud/authoring/sites-console/publishing-pages.md#manage-publication)。
 
 ### 開啟和關閉時間 — 觸發器設定 {#on-and-off-times-trigger-configuration}
 
-的其他可能性 **準時** 和 **關閉時間** 可從以下網址取得： [頁面屬性的基本索引標籤](/help/sites-cloud/authoring/sites-console/page-properties.md#basic).
+**開啟時間**&#x200B;和&#x200B;**關閉時間**&#x200B;的其他可能性可從頁面屬性](/help/sites-cloud/authoring/sites-console/page-properties.md#basic)的[基本索引標籤取得。
 
-若要為此功能實現自動複製，請啟用 **自動復寫** 在 [OSGi設定](/help/implementing/deploying/configuring-osgi.md) **開啟關閉觸發器設定**：
+若要實現此功能的自動復寫，請在[OSGi設定](/help/implementing/deploying/configuring-osgi.md) **開啟關閉觸發程式設定**&#x200B;中啟用&#x200B;**自動復寫**：
 
-![OSGi開啟關閉觸發器設定](/help/operations/assets/replication-on-off-trigger.png)
+![OSGi開啟關閉觸發器組態](/help/operations/assets/replication-on-off-trigger.png)
 
 ### 管理發佈 {#manage-publication}
 
@@ -49,53 +49,53 @@ Adobe Experience Manager as a Cloud Service使用 [Sling Content Distribution](h
 
 針對「稍後發佈」選項包含資料夾的子項時，會叫用Publish內容樹工作流程，如本文所述。
 
-您可在以下網址找到有關管理發布的詳細資訊： [出版基礎檔案](/help/sites-cloud/authoring/sites-console/publishing-pages.md#manage-publication).
+您可以在[出版基礎檔案](/help/sites-cloud/authoring/sites-console/publishing-pages.md#manage-publication)中找到有關管理出版的詳細資訊。
 
 ### 發佈內容樹狀工作流程 {#publish-content-tree-workflow}
 
-您可以透過選擇來觸發樹狀結構復寫 **工具 — 工作流程 — 模型** 並複製 **發佈內容樹狀結構** 現成的工作流程模型，如下所示：
+您可以選擇&#x200B;**工具 — 工作流程 — 模型**&#x200B;並複製&#x200B;**Publish內容樹狀結構**&#x200B;現成的工作流程模型，以觸發樹狀結構復寫，如下所示：
 
-![Publish內容樹工作流程卡片](/help/operations/assets/publishcontenttreeworkflow.png)
+![Publish內容樹狀工作流程卡](/help/operations/assets/publishcontenttreeworkflow.png)
 
 請勿叫用原始模型。 相反，請務必先複製模型並叫用該副本。
 
-如同所有工作流程，您也可以透過API叫用。 如需詳細資訊，請參閱 [以程式設計方式與工作流程互動](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-program-interaction.html#extending-aem).
+如同所有工作流程，您也可以透過API叫用。 如需詳細資訊，請參閱[以程式設計方式與工作流程互動](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-program-interaction.html#extending-aem)。
 
-或者，您可以建立工作流程模型，此模型使用 `Publish Content Tree` 程式步驟：
+或者，您可以建立使用`Publish Content Tree`處理步驟的工作流程模型：
 
-1. 從AEMas a Cloud Service首頁，前往 **工具 — 工作流程 — 模型**.
-1. 在「工作流程模型」頁面中，按下 **建立** 在畫面的右上角。
-1. 新增標題和名稱至您的模型。 如需詳細資訊，請參閱 [建立工作流程模型](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html).
-1. 從清單中選取已建立的模型，然後按下 **編輯**
+1. 從AEM as a Cloud Service首頁，移至&#x200B;**工具 — 工作流程 — 模型**。
+1. 在「工作流程模型」頁面中，按畫面右上角的&#x200B;**建立**。
+1. 新增標題和名稱至您的模型。 如需詳細資訊，請參閱[建立工作流程模型](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html)。
+1. 從清單中選取建立的模型，然後按&#x200B;**編輯**
 1. 在下列視窗中，將「處理步驟」拖放至目前的模型流程：
 
-   ![程式步驟](/help/operations/assets/processstep.png)
+   ![處理步驟](/help/operations/assets/processstep.png)
 
-1. 在流程中選取處理步驟，然後選取 **設定** 按一下扳手圖示。
-1. 選取 **程式** 標籤並選取 `Publish Content Tree` 從下拉式清單，然後檢查 **處理常式前進** 核取方塊
+1. 在流程中選取「處理」步驟，並按扳手圖示選取&#x200B;**設定**。
+1. 選取「**處理序**」標籤，並從下拉式清單中選取「`Publish Content Tree`」，然後核取「**處理常式進階**」核取方塊
 
    ![樹狀結構啟動](/help/operations/assets/newstep.png)
 
-1. 在中設定任何其他引數 **引數** 欄位。 多個以逗號分隔的引數可串連在一起。 例如：
+1. 在&#x200B;**引數**&#x200B;欄位中設定任何其他引數。 多個以逗號分隔的引數可串連在一起。 例如：
 
    `enableVersion=true,agentId=publish,includeChildren=true`
 
 
    >[!NOTE]
    >
-   >如需引數清單，請參閱 **引數** 一節。
+   >如需引數清單，請參閱下方的&#x200B;**引數**&#x200B;區段。
 
-1. 按下 **完成** 以儲存工作流程模型。
+1. 按下&#x200B;**完成**&#x200B;以儲存工作流程模型。
 
 **引數**
 
-* `includeChildren` (布林值，預設： `false`)。 值 `false` 表示只會發佈路徑； `true` 表示也會發佈子項。
-* `replicateAsParticipant` (布林值，預設： `false`)。 若已設定為 `true`，復寫使用 `userid` 執行參與者步驟的主參與者。
-* `enableVersion` (布林值，預設： `false`)。 此引數會決定複製時是否建立新版本。
-* `agentId` （字串值，預設值表示僅使用發佈代理程式）。 建議您清楚說明agentId，例如設定值： publish。 將代理程式設定為 `preview` 發佈到預覽服務。
+* `includeChildren` （布林值，預設： `false`）。 值`false`表示僅發佈路徑；`true`表示也發佈子項。
+* `replicateAsParticipant` （布林值，預設： `false`）。 如果設定為`true`，則復寫使用執行參與者步驟的主體`userid`。
+* `enableVersion` （布林值，預設： `false`）。 此引數會決定複製時是否建立新版本。
+* `agentId` （字串值，預設值表示僅使用發佈代理程式）。 建議您清楚說明agentId，例如設定值： publish。 正在將代理程式設定為`preview`發佈到預覽服務。
 * `filters` （字串值，預設值代表所有路徑都已啟動）。 可用的值包括：
-   * `onlyActivated`  — 僅啟動已（已）啟動的頁面。 作為重新啟用的一種形式。
-   * `onlyModified`  — 僅啟動已啟動且修改日期晚於啟動日期的路徑。
+   * `onlyActivated` — 僅啟動已（已）啟動的頁面。 作為重新啟用的一種形式。
+   * `onlyModified` — 僅啟動已啟動且修改日期晚於啟動日期的路徑。
    * 以上可以用垂直號「|」進行「或」操作。 例如，`onlyActivated|onlyModified`。
 
 **記錄**
@@ -104,9 +104,9 @@ Adobe Experience Manager as a Cloud Service使用 [Sling Content Distribution](h
 
 在工作流程步驟已複製所有路徑之後，會記錄最終的INFO陳述式。
 
-此外，您也可以將記錄器的記錄層級提升至以下 `com.day.cq.wcm.workflow.process.impl` 至DEBUG/TRACE，以取得更多記錄資訊。
+此外，您也可以將記錄器的記錄層級增加至`com.day.cq.wcm.workflow.process.impl`以下，以偵錯/TRACE，取得更多記錄資訊。
 
-如果有錯誤，工作流程步驟會以 `WorkflowException`，會包裝基礎的例外狀況。
+如果有錯誤，工作流程步驟會以`WorkflowException`結束，這會包裝基礎例外狀況。
 
 以下是在範例發佈內容樹狀工作流程期間產生的記錄範例：
 
@@ -124,9 +124,9 @@ Adobe Experience Manager as a Cloud Service使用 [Sling Content Distribution](h
 
 ### 復寫API {#replication-api}
 
-您可以使用AEMas a Cloud Service提供的復寫API發佈內容。
+您可以使用AEM as a Cloud Service提供的復寫API發佈內容。
 
-如需詳細資訊，請參閱 [API檔案](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/com/day/cq/replication/package-summary.html).
+如需詳細資訊，請參閱[API檔案](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/com/day/cq/replication/package-summary.html)。
 
 **API的基本用法**
 
@@ -153,9 +153,9 @@ Map<String,ReplicationStatus> allStatus = replicationStatusProvider.getBatchRepl
 
 **使用特定代理程式復寫**
 
-如上例所示，複製資源時，只會使用預設為作用中的代理程式。 在AEMas a Cloud Service中，這僅表示稱為「發佈」的代理程式，其會將作者連線到發佈層級。
+如上例所示，複製資源時，只會使用預設為作用中的代理程式。 在AEM as a Cloud Service中，這僅表示稱為「發佈」的代理程式，其會將作者連線到發佈層級。
 
-為了支援預覽功能，已新增名為「預覽」的新代理程式，預設為不啟用。 此代理程式用於將作者連線到預覽層。 如果您只想透過預覽代理程式進行復寫，您必須透過 `AgentFilter`.
+為了支援預覽功能，已新增名為「預覽」的新代理程式，預設為不啟用。 此代理程式用於將作者連線到預覽層。 如果您只想透過預覽代理程式復寫，您必須透過`AgentFilter`明確選取此預覽代理程式。
 
 請參閱下列範例：
 
@@ -180,34 +180,34 @@ ReplicationStatus previewStatus = afterStatus.getStatusForAgent(PREVIEW_AGENT); 
 
 如果您未提供這類篩選器，且只使用「發佈」代理程式，則不會使用「預覽」代理程式，且復寫動作不會影響預覽階層。
 
-整體 `ReplicationStatus` 只有當復寫動作包含至少一個預設為作用中的代理程式時，才會修改資源的復寫動作。 在上述範例中，此流程並非真實情況。 復寫只是使用「預覽」代理程式。 因此，您必須使用 `getStatusForAgent()` 方法，允許查詢特定代理程式的狀態。 此方法也適用於「發佈」代理。 如果已使用提供的代理程式完成任何復寫動作，則會傳回非null值。
+只有當復寫動作包含至少一個預設為作用中的代理程式時，才會修改資源的整體`ReplicationStatus`。 在上述範例中，此流程並非真實情況。 復寫只是使用「預覽」代理程式。 因此，您必須使用新的`getStatusForAgent()`方法，允許查詢特定代理程式的狀態。 此方法也適用於「發佈」代理。 如果已使用提供的代理程式完成任何復寫動作，則會傳回非null值。
 
 ### 讓內容失效的方法 {#invalidating-content}
 
-您可以使用作者的Sling內容失效(SCD) （偏好方法）或使用復寫API叫用發佈Dispatcher Flush復寫代理程式，直接讓內容失效。 另請參閱 [快取](/help/implementing/dispatcher/caching.md) 頁面，以取得更多詳細資料。
+您可以使用作者的Sling內容失效(SCD) （偏好方法）或使用復寫API叫用發佈Dispatcher Flush復寫代理程式，直接讓內容失效。 如需詳細資訊，請參閱[快取](/help/implementing/dispatcher/caching.md)頁面。
 
 **復寫API容量限制**
 
-一次複製少於100個路徑，以500為限制。 超出限制， `ReplicationException` 擲回。
-如果您的應用程式邏輯不需要原子複製，可透過設定 `ReplicationOptions.setUseAtomicCalls` 為false，這會接受任何數量的路徑，但在內部建立貯體以保持在此限制以下。
+一次複製少於100個路徑，以500為限制。 超過限制，擲回`ReplicationException`。
+如果您的應用程式邏輯不需要原子式復寫，您可以將`ReplicationOptions.setUseAtomicCalls`設定為false，這會接受任何數量的路徑，但在內部建立儲存貯體以保持在此限制以下。
 
-每個復寫呼叫所傳輸的內容大小不得超過 `10 MB`. 此規則包含節點和屬性，但不包含任何二進位檔（工作流程套件和內容套件會視為二進位檔）。
+每個復寫呼叫所傳輸的內容大小不得超過`10 MB`。 此規則包含節點和屬性，但不包含任何二進位檔（工作流程套件和內容套件會視為二進位檔）。
 
 
 ## 疑難排解 {#troubleshooting}
 
 若要疑難排解復寫問題，請導覽至AEM作者服務Web UI中的復寫佇列：
 
-1. 從AEM「開始」功能表，導覽至 **工具** > **部署** > **分佈**
-1. 選取卡片 **發佈**
+1. 從AEM開始功能表，瀏覽至&#x200B;**工具** > **部署** > **發佈**
+1. 選取卡片&#x200B;**發佈**
 
    ![狀態](assets/publish-status.png "狀態")
 
 1. 檢查應為綠色的佇列狀態
 1. 您可以測試復寫服務的連線
-1. 選取 **記錄檔** 標籤中，顯示內容出版物的歷史記錄
+1. 選取&#x200B;**記錄檔**&#x200B;標籤，顯示內容發佈的歷史記錄
 
-![記錄檔](assets/publish-logs.png "記錄檔")
+![個記錄檔](assets/publish-logs.png "個記錄檔")
 
 如果內容無法發佈，則整個發佈將從AEM Publish Service還原。
 

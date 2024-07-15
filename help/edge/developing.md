@@ -4,7 +4,7 @@ description: 了解如何開發區塊並自訂 AEM 專案，以利搭配 Edge De
 feature: Edge Delivery Services
 exl-id: c356c03c-af43-43a1-a14e-45f94ccb3970
 source-git-commit: a22ecddf7c97c5894cb03eb44296e0562ac46ddb
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '257'
 ht-degree: 100%
 
@@ -12,7 +12,7 @@ ht-degree: 100%
 
 # 為 Edge Delivery Services 進行開發 {#developing-edge}
 
-Edge Delivery Services 以區塊概念為基礎。AEM 包含完整的預先定義區塊資料庫，您可以擴充該資料庫來專案需求。Edge Delivery Services 專案的程式碼是在 GitHub 中管理。
+Edge Delivery Services 以區塊概念為基礎。AEM 包含完整的預先定義區塊資料庫，您可以擴充該資料庫來符合專案需求。Edge Delivery Services 專案的程式碼是在 GitHub 中管理。
 
 ## 區塊 {#blocks}
 

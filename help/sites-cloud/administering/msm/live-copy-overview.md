@@ -33,7 +33,7 @@ ht-degree: 88%
 
 **Live Copy 概觀**&#x200B;可以從 **Sites** 主控台的&#x200B;**參考**&#x200B;側面板開啟：
 
-1. 在 **網站** 主控台， [導覽至您的Blueprint頁面並加以選取](/help/sites-cloud/authoring/basic-handling.md#viewing-and-selecting-resources).
+1. 在&#x200B;**網站**&#x200B;主控台中，[導覽至您的Blueprint頁面並加以選取](/help/sites-cloud/authoring/basic-handling.md#viewing-and-selecting-resources)。
 1. 開啟&#x200B;**[參考](/help/sites-cloud/authoring/basic-handling.md#references)**&#x200B;邊欄並選擇 **Live Copy**。
 
    ![來自參考邊欄的 Live Copy](../assets/live-copy-references.png)
@@ -50,7 +50,7 @@ ht-degree: 88%
 **Live Copy 概觀**&#x200B;可以在檢視藍圖頁面的屬性時開啟：
 
 1. 開啟相關藍圖頁面的&#x200B;**屬性**。
-1. 開啟 **Blueprint** 標籤 —  **即時副本概觀** 選項會顯示在頂端工具列中：
+1. 開啟&#x200B;**Blueprint**&#x200B;標籤 — **即時副本總覽**&#x200B;選項會顯示在頂端工具列中：
 
    ![藍圖屬性索引標籤](../assets/live-copy-blueprint-tab.png)
 
@@ -95,7 +95,7 @@ ht-degree: 88%
 * **[同步](overview.md#rollout-and-synchronize)** - 同步 Live Copy 以將變更從來源推送到 Live Copy。
 * **[重設](creating-live-copies.md#resetting-a-live-copy-page)** - 重設 Live Copy 頁面以刪除所有繼承取消，並將頁面返回到與來源頁面相同的狀態。
 * **[暫停](overview.md#suspending-and-cancelling-inheritance-and-synchronization)** - 暫時停用 Live Copy 與其藍圖頁面之間的即時關係。
-* **[繼續](creating-live-copies.md#resuming-inheritance-for-a-page)**  — 恢復可讓您恢復暫停的關係。
+* **[繼續](creating-live-copies.md#resuming-inheritance-for-a-page)** — 繼續可讓您恢復暫停的關係。
 * **[分離](overview.md#detaching-a-live-copy)** - 永久移除 Live Copy 與其藍圖頁面之間的即時關係。
 
 ## 關係狀態 {#relationship-status}

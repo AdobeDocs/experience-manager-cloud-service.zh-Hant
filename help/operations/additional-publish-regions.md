@@ -51,7 +51,7 @@ ht-degree: 78%
 
 ## 記錄 {#logging}
 
-如果啟用了其他發佈區域，將透過Cloud Manager提供每個區域的單獨日誌。 如需詳細資訊，請參閱 [存取和管理記錄檔](/help/implementing/cloud-manager/manage-logs.md) 和 [其他發佈區域的記錄](/help/implementing/developing/introduction/logging.md#logs-for-additional-publish-regions).
+如果啟用其他發佈區域，將透過Cloud Manager提供每個區域的個別記錄。 如需詳細資訊，請參閱[存取及管理其他Publish地區的](/help/implementing/cloud-manager/manage-logs.md)及[記錄](/help/implementing/developing/introduction/logging.md#logs-for-additional-publish-regions)。
 
 ## 限制 {#limitations}
 

@@ -15,7 +15,7 @@ ht-degree: 25%
 
 # 設定最適化表單的傳送電子郵件提交動作
 
-此 **[!UICONTROL 傳送電子郵件]** 提交動作可讓您在成功提交表單時，傳送電子郵件給一或多個收件者。 此提交動作可讓您建立包含預先定義格式之表單資料的電子郵件。 例如，考慮以下範本，其中從已提交的表單資料中擷取客戶名稱、送貨地址、州名稱和郵遞區號：
+**[!UICONTROL 傳送電子郵件]**&#x200B;提交動作可讓您在成功提交表單時，傳送電子郵件給一或多個收件者。 此提交動作可讓您建立包含預先定義格式之表單資料的電子郵件。 例如，考慮以下範本，其中從已提交的表單資料中擷取客戶名稱、送貨地址、州名稱和郵遞區號：
 
 
     ```
@@ -48,24 +48,24 @@ ht-degree: 25%
 1. 開啟內容瀏覽器，然後選取最適化表單的「**[!UICONTROL 指引容器]**」元件。
 1. 按一下「指引容器」屬性 ![指引屬性](/help/forms/assets/configure-icon.svg) 圖示。此時會開啟「最適化表單容器」對話框。
 1. 按一下「**[!UICONTROL 提交]**」標籤。
-1. 從 **[!UICONTROL 提交動作]** 下拉式清單，選取 **[!UICONTROL 傳送電子郵件]**.
+1. 從&#x200B;**[!UICONTROL 提交動作]**&#x200B;下拉式清單中，選取&#x200B;**[!UICONTROL 傳送電子郵件]**。
 
-   ![傳送電子郵件的動作設定](/help/forms/assets/send-email-action-configuration.gif)
-1. 在中指定寄件者的電子郵件識別碼 **[!UICONTROL 從]** 文字方塊。
-1. 在中新增收件者的電子郵件識別碼 **[!UICONTROL 至]** 文字方塊。 您可以按一下 **[!UICONTROL 新增]** 按鈕。
-1. [可選] 按一下「 」，新增「副本」和「密件副本」的收件者 **[!UICONTROL 新增]** 按鈕。
-1. 指定主旨列於 **[!UICONTROL 主旨]** 文字方塊。
+   傳送電子郵件的![動作設定](/help/forms/assets/send-email-action-configuration.gif)
+1. 在&#x200B;**[!UICONTROL 寄件者]**&#x200B;文字方塊中指定寄件者的電子郵件識別碼。
+1. 在&#x200B;**[!UICONTROL To]**&#x200B;文字方塊中新增收件者的電子郵件識別碼。 您可以按一下&#x200B;**[!UICONTROL 新增]**&#x200B;按鈕，新增多個收件者。
+1. [選擇性]按一下&#x200B;**[!UICONTROL 新增]**&#x200B;按鈕，新增副本和密件副本的收件者。
+1. 在&#x200B;**[!UICONTROL 主旨]**&#x200B;文字方塊中指定主旨列。
 1. 新增電子郵件範本以設定傳送電子郵件提交動作。
-   * 您可以使用來指定儲存於AEM資產中的外部電子郵件範本的路徑 **[!UICONTROL 外部範本路徑]** 選項。
-   * 您也可以新增自訂電子郵件範本，以便在下列位置提交表單： **[!UICONTROL 電子郵件範本]** 文字方塊。
-1. [可選] 此 **[!UICONTROL 傳送電子郵件]** 「提交動作」提供包含附件與 [記錄檔案(DoR)](generate-document-of-record-core-components.md) 透過電子郵件。
+   * 您可以使用&#x200B;**[!UICONTROL 外部範本路徑]**&#x200B;選項，指定儲存在AEM資產中的外部電子郵件範本的路徑。
+   * 您也可以在&#x200B;**[!UICONTROL 電子郵件範本]**&#x200B;文字方塊中為表單提交新增自訂電子郵件範本。
+1. [選擇性] **[!UICONTROL 傳送電子郵件]**&#x200B;提交動作提供選項，可在電子郵件中包含附件和[記錄檔案(DoR)](generate-document-of-record-core-components.md)。
 1. 按一下&#x200B;**[!UICONTROL 「完成」]**。
 
 ## 最佳做法 {#best-practices}
 
 * 建議保持電子郵件內容簡潔明瞭。 使用者應該瞭解電子郵件的用途，以及需要採取的任何動作。
 * 建議所有表單欄位都有唯一的元素名稱，即使它們放在調適型表單的不同面板上亦然。
-* 使用 AEM as a Cloud Service 時，傳出的電子郵件必須加密。傳出的電子郵件功能預設會停用。若要啟用，請將支援票證提交至 [要求存取權](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=zh-Hant#sending-email).
+* 使用 AEM as a Cloud Service 時，傳出的電子郵件必須加密。傳出的電子郵件功能預設會停用。若要啟用它，請將支援票證提交至[要求存取權](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=zh-Hant#sending-email)。
 
 
 ## 相關文章

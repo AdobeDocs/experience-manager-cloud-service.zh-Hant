@@ -44,7 +44,7 @@ ht-degree: 98%
 
 為了在「使用 Edge Delivery Services 的 AEM」專案中使用試算表來建立應對，您需要使用最新的網站範本建立網站。
 
-請參閱檔案 [使用Edge Delivery Services進行WYSIWYG編寫的開發人員快速入門手冊](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) 以取得詳細資訊。
+如需詳細資訊，請參閱檔案[使用Edge Delivery Services進行WYSIWYG編寫的開發人員快速入門手冊](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)。
 
 ## 建立試算表 {#spreadsheet}
 

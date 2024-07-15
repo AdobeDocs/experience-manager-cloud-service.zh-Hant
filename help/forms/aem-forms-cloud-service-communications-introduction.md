@@ -14,7 +14,7 @@ ht-degree: 40%
 
 # AEM Formsas a Cloud Service通訊API {#frequently-asked-questions}
 
-![主圖影像](assets/cloud-communication-apis-hero-image.jpeg)
+![英雄影像](assets/cloud-communication-apis-hero-image.jpeg)
 
 
 | 版本 | 文章連結 |
@@ -138,7 +138,7 @@ When such an interactive PDF document is flattened using the Communications APIs
 
 >[!NOTE]
 >
-> AEM Forms提供多種內建字型，可與PDF檔案緊密整合。 若要檢視支援字型的清單， [按一下這裡](/help/forms/supported-out-of-the-box-fonts.md).
+> AEM Forms提供多種內建字型，可與PDF檔案緊密整合。 若要檢視支援的字型清單，[請按一下這裡](/help/forms/supported-out-of-the-box-fonts.md)。
 
 <!-- 
 
@@ -168,7 +168,7 @@ The [PDF to XDP API](https://developer.adobe.com/experience-manager-forms-cloud-
 
 ## 檔案擷取
 
-<span class="preview"> 檔案擷取功能屬於早期採用者計畫。 您可以從您的官方電子郵件ID寫信到aem-forms-ea@adobe.com ，以加入率先採用者計畫並請求存取該功能。 </span>
+<span class="preview">檔案擷取功能屬於早期採用者計畫。 您可以從您的官方電子郵件ID寫信到aem-forms-ea@adobe.com ，以加入率先採用者計畫並請求存取該功能。</span>
 
 檔案擷取服務可讓您取得PDF檔案的屬性，例如使用許可權、PDF屬性和中繼資料。 檔案擷取功能包括：
 
@@ -176,7 +176,7 @@ The [PDF to XDP API](https://developer.adobe.com/experience-manager-forms-cloud-
 * 擷取PDF檔案中啟用的使用許可權，使用者會擷取在PDF檔案中啟用或停用的使用許可權，以利進行Adobe Acrobat Reader擴充。
 * 取得PDF檔案中出現的中繼資料資訊，中繼資料是檔案的相關資訊(與檔案的內容（例如文字和圖形）有所區別)。 Adobe可延伸中繼資料平台(XMP)是處理檔案中繼資料的標準。 「XMP公用程式」服務可以從PDF檔案中擷取XMP中繼資料，並將XMP中繼資料匯出到PDF檔案中。
 
-此 [API參考檔案](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/) 會提供API提供之所有引數、驗證方法和服務之相關詳細資訊。 API參考檔案也以.yaml格式提供。 您可以下載.yaml並將其上傳到Postman以檢查API的功能。
+[API參考檔案](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/)提供API所提供之所有引數、驗證方法及服務的詳細資訊。 API參考檔案也以.yaml格式提供。 您可以下載.yaml並將其上傳到Postman以檢查API的功能。
 
 <!--
 
@@ -198,7 +198,7 @@ PDF documents contain metadata, which is information about the document (as dist
 
 ### 將PDF轉換為XDP {#convert-pdf-to-xdp}
 
-<span class="preview"> 轉換PDF為XDP的功能屬於早期採用者計畫。 您可以從您的官方電子郵件ID寫信到aem-forms-ea@adobe.com ，以加入率先採用者計畫並請求存取該功能。 </span>
+<span class="preview">轉換PDF為XDP功能屬於早期採用者計畫。 您可以從您的官方電子郵件ID寫信到aem-forms-ea@adobe.com ，以加入率先採用者計畫並請求存取該功能。</span>
 
 將PDF檔案轉換為XDP檔案。 若要將PDF檔案成功轉換成XDP檔案，PDF檔案必須在字典中包含XFA資料流。
 
@@ -208,7 +208,7 @@ DocAssurance服務包含簽名和加密API：
 
 ### 簽名API
 
-簽名 API 可讓您的組織保護所分發和接收 Adobe PDF 文件的安全和隱私。<!--This service uses digital signatures and certification to ensure that only intended recipients can alter documents. --> 安全功能會套用至檔案本身，檔案在其整個生命週期中會保持安全及受控。 當檔案離線下載以及將它送回您的組織時，防火牆外仍會保持安全。 您可以使用簽名API完成以下任務：
+簽名 API 可讓您的組織保護所分發和接收 Adobe PDF 文件的安全和隱私。<!--This service uses digital signatures and certification to ensure that only intended recipients can alter documents. -->安全性功能已套用至檔案本身，檔案在其整個生命週期內皆保持安全及受控制。 當檔案離線下載以及將它送回您的組織時，防火牆外仍會保持安全。 您可以使用簽名API完成以下任務：
 
 * 將可見簽名欄位新增至PDF檔案。
 * 將不可見的簽名欄位新增到PDF檔案中。
@@ -217,7 +217,7 @@ DocAssurance服務包含簽名和加密API：
 
 ### 加密API
 
-加密API可讓您加密和解密檔案。 檔案加密後，其內容會變得無法讀取。 授權的使用者可以解密檔案以取得內容的存取權。 如果PDF檔案已使用密碼加密，使用者必須先指定開啟的密碼，才能在Adobe Reader或Adobe Acrobat中檢視檔案。 <!-- Likewise, if a PDF document is encrypted with a certificate, the user must decrypt the PDF document with the public key that corresponds to the certificate (private key) that was used to encrypt the PDF document.-->
+加密API可讓您加密和解密檔案。 檔案加密後，其內容會變得無法讀取。 授權的使用者可以解密檔案以取得內容的存取權。 如果PDF檔案已使用密碼加密，使用者必須先指定開啟的密碼，才能在Adobe Reader或Adobe Acrobat中檢視檔案。<!-- Likewise, if a PDF document is encrypted with a certificate, the user must decrypt the PDF document with the public key that corresponds to the certificate (private key) that was used to encrypt the PDF document.-->
 
 您可以使用加密API完成這些工作：
 
@@ -226,17 +226,17 @@ DocAssurance服務包含簽名和加密API：
 * 擷取套用至PDF檔案的安全性型別。
 * 傳回套用至PDF檔案的安全性型別。
 
-簽名API和加密API都是 [同步API](#types-of-communications-apis-types).
+簽章API和加密API都是[同步API](#types-of-communications-apis-types)。
 
 
 ### 檔案公用程式 {#doc-utility}
 
-具有同步API的檔案公用程式可協助您在PDF和XDP檔案格式之間轉換檔案。 將使用許可權套用至檔案，並從檔案中擷取啟用的使用許可權。 查詢PDF檔案的相關資訊。 <!-- determines whether a PDF document contains comments or attachments and more, and use document transformation services for XMP utilities--> 使用許可權API的詳細資訊如下：
+具有同步API的檔案公用程式可協助您在PDF和XDP檔案格式之間轉換檔案。 將使用許可權套用至檔案，並從檔案中擷取啟用的使用許可權。 查詢PDF檔案的相關資訊。 <!-- determines whether a PDF document contains comments or attachments and more, and use document transformation services for XMP utilities-->使用許可權API的詳細資訊如下：
 
 
 #### 使用許可權API (Reader擴充功能)
 
-<span class="preview"> 使用許可權(Reader擴充功能)功能受限於早期採用者計畫。 您可以從您的官方電子郵件ID寫信到aem-forms-ea@adobe.com ，以加入率先採用者計畫並請求存取該功能。 </span>
+<span class="preview">使用許可權(Reader延伸)功能屬於早期採用者計畫。 您可以從您的官方電子郵件ID寫信到aem-forms-ea@adobe.com ，以加入率先採用者計畫並請求存取該功能。</span>
 
 使用許可權功能可透過擴充具有其他使用許可權的Adobe Reader功能，讓您的組織輕鬆共用互動式PDF檔案。 此服務可與Adobe Reader 7.0或更新版本搭配使用，且會將使用許可權新增至PDF檔案。 此動作會啟動在使用Adobe Reader開啟PDF檔案時通常無法使用的功能，例如新增註釋至檔案、填寫表單和儲存檔案。
 
@@ -261,33 +261,33 @@ DocAssurance服務包含簽名和加密API：
 
 * **註解**：若要在PDF檔案上離線註解。
 
-* **線上註解**：若要在PDF檔案上線上上加上註解。
+* **線上註解**：若要在PDF檔案上線上註解。
 
-* **數位簽名**：將數位簽名新增至PDF檔案。
+* **數位簽章**：新增數位簽章至PDF檔案。
 
-* **動態表單欄位**：新增表單欄位至PDF檔案的方式。
+* **動態表單欄位**：若要將表單欄位新增至PDF檔案。
 
-* **動態表單頁面**：將表單頁面新增至PDF檔案。
+* **動態表單頁面**：若要將表單頁面新增至PDF檔案。
 
-* **內嵌檔案**：在PDF檔案中內嵌檔案。
+* **內嵌檔案**：將檔案內嵌在PDF檔案中。
 
 * **表單資料匯入**：將表單資料匯入PDF檔案。
 
 * **表單資料匯出**：將表單資料匯入PDF檔案。
 
-* **表單填寫**：在PDF檔案中填寫表單欄位。
+* **表單填入**：若要在PDF檔案中填入表單欄位。
 
-* **線上Forms**：從PDF檔案存取Web服務或資料庫。
+* **線上Forms**：若要從PDF檔案存取Web服務或資料庫。
 
-* **獨立提交**：從PDF檔案離線提交表單資料。
+* **獨立提交**：若要從PDF檔案離線提交表單資料。
 
 
 #### 其他功能
 
-* **訊息**：開啟PDF檔案並套用一或多個使用許可權時，Adobe Acrobat Reader中顯示的訊息。
-* **解鎖密碼**：開啟加密的PDF檔案所需的密碼。 通常這是檔案開啟密碼，但如果PDF檔案受到許可權密碼的額外保護，則其中之一可能用於開啟檔案。
+* **訊息**：開啟套用了一或多個使用許可權的PDF檔案時，Adobe Acrobat Reader中顯示的訊息。
+* **解除鎖定密碼**：開啟加密PDF檔案所需的密碼。 通常這是檔案開啟密碼，但如果PDF檔案受到許可權密碼的額外保護，則其中之一可能用於開啟檔案。
 
-此 [API參考檔案](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/) 提供API提供的所有引數、驗證方法和各種服務的詳細資訊。 API參考檔案也以.yaml格式提供。 您可以下載.yaml並將其上傳到Postman以檢查API的功能。
+[API參考檔案](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/)提供API提供的所有引數、驗證方法和各種服務的詳細資訊。 API參考檔案也以.yaml格式提供。 您可以下載.yaml並將其上傳到Postman以檢查API的功能。
 
 ## 通訊 API 類型 {#types}
 
@@ -319,7 +319,7 @@ DocAssurance服務包含簽名和加密API：
 
 >[!NOTE]
 >
-> 若要啟用及設定檔案操作API，請將下列規則新增至 [Dispatcher設定](setup-local-development-environment.md#forms-specific-rules-to-dispatcher)：
+> 若要啟用及設定檔案操作API，請將下列規則新增至[Dispatcher設定](setup-local-development-environment.md#forms-specific-rules-to-dispatcher)：
 >
 > `# Allow Forms Doc Generation requests`
 > `/0062 { /type "allow" /method "POST" /url "/adobe/forms/assembler/*" }`

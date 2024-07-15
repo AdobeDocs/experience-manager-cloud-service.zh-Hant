@@ -34,23 +34,23 @@ ht-degree: 2%
 
 批次作業是以排定的間隔為一組記錄產生多個型別相似檔案的程式。 批次操作有兩個部分：設定（定義）和執行。
 
-* **設定（定義）**：批次設定會儲存各種資產和屬性的相關資訊，以便為產生的檔案設定。 例如，它提供有關XDP或PDF範本和要使用的客戶資料位置的詳細資訊，並為輸出檔案指定各種屬性。
+* **組態（定義）**：批次組態會儲存各種資產和屬性的相關資訊，以針對產生的檔案設定。 例如，它提供有關XDP或PDF範本和要使用的客戶資料位置的詳細資訊，並為輸出檔案指定各種屬性。
 
-* **執行**：若要開始批次作業，請將批次設定名稱傳遞至批次執行API。
+* **執行**：若要啟動批次作業，請將批次組態名稱傳遞至批次執行API。
 
 ### 批次作業的元件 {#components-of-a-batch-operations}
 
-**雲端設定**：Experience Manger雲端設定可協助您將Experience Manager執行個體連線到客戶擁有的Microsoft Azure儲存體。 它可讓您指定客戶擁有的Microsoft Azure帳戶認證，以便連線至該帳戶。
+**雲端設定**： Experience Manger雲端設定可協助您將Experience Manager執行個體連線到客戶擁有的Microsoft Azure儲存體。 它可讓您指定客戶擁有的Microsoft Azure帳戶認證，以便連線至該帳戶。
 
-**批次資料存放區設定(USC)**：批次資料設定可協助您為批次API設定Blob儲存體的特定執行個體。 它可讓您在客戶擁有的Microsoft Azure Blob儲存空間中指定輸入和輸出位置。
+**批次資料存放區組態(USC)**：批次資料組態可協助您為批次API設定特定的Blob存放區執行個體。 它可讓您在客戶擁有的Microsoft Azure Blob儲存空間中指定輸入和輸出位置。
 
-**批次API**：可讓您建立批次設定並根據這些設定執行批次執行，以將PDF或XDP範本與資料合併，並產生PDF、PS、PCL、DPL、IPL和ZPL格式的輸出。 通訊提供批次API用於設定管理和批次執行。
+**批次API**：可讓您建立批次設定，並根據這些設定執行批次執行，以合併PDF或XDP範本與資料，並產生PDF、PS、PCL、DPL、IPL和ZPL格式的輸出。 通訊提供批次API用於設定管理和批次執行。
 
 ![data-merge-table](assets/communications-batch-structure.png)
 
-**儲存**：通訊API會使用客戶擁有的Microsoft Azure雲端儲存空間來擷取客戶記錄，並儲存產生的檔案。 您可以在「Experience Manager Cloud Service設定」中設定Microsoft Azure儲存體。
+**儲存空間**：通訊API會使用客戶擁有的Microsoft Azure雲端儲存空間來擷取客戶記錄並儲存產生的檔案。 您可以在「Experience Manager Cloud Service設定」中設定Microsoft Azure儲存體。
 
-**應用程式**：使用批次API產生及使用檔案的自訂應用程式。
+**應用程式**：您用來使用批次API來產生和使用檔案的自訂應用程式。
 
 ## 使用批次作業產生多個檔案 {#generate-multiple-documents-using-batch-operations}
 
@@ -58,7 +58,7 @@ ht-degree: 2%
 
 >[!VIDEO](https://video.tv.adobe.com/v/338349)
 
-您可以觀看影片或執行以下指示，瞭解如何使用批次操作產生檔案。 影片中使用的API參考檔案提供.yaml格式。 您可以下載 [批次API](assets/batch-api.yaml) 將其檔案上傳至Postman以檢查API的功能並觀看影片。
+您可以觀看影片或執行以下指示，瞭解如何使用批次操作產生檔案。 影片中使用的API參考檔案提供.yaml格式。 您可以下載[批次API](assets/batch-api.yaml)檔案並將其上傳到Postman以檢查API的功能並觀看影片。
 
 ### 必要條件 {#pre-requisites}
 
@@ -80,7 +80,7 @@ ht-degree: 2%
 
 ### 將客戶資料（XML檔案）上傳至Azure儲存體 {#upload-customer-data-to-Azure-Storage}
 
-在您的Microsoft Azure儲存體上，建立 [容器](https://docs.microsoft.com/en-us/azure/vs-azure-tools-storage-explorer-blobs) 和 [上傳客戶資料(XML)](https://docs.microsoft.com/en-us/azure/vs-azure-tools-storage-explorer-blobs#managing-blobs-in-a-blob-container) 至 [資料夾](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-portal) 在容器內。
+在您的Microsoft Azure儲存體上，建立[容器](https://docs.microsoft.com/en-us/azure/vs-azure-tools-storage-explorer-blobs)和[將客戶資料(XML)](https://docs.microsoft.com/en-us/azure/vs-azure-tools-storage-explorer-blobs#managing-blobs-in-a-blob-container)上傳到容器內的[資料夾](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-portal)。
 >[!NOTE]
 >
 >您可以設定Microsoft Azure儲存體以自動清除輸入資料夾，或依排程間隔將輸出資料夾的內容移至其他位置。 不過，請確保當參照資料夾的批次作業仍在執行時，不要清除資料夾。
@@ -91,7 +91,7 @@ ht-degree: 2%
 
 1. 前往「工具>Cloud Service> Azure儲存體」
 1. 開啟要裝載設定的資料夾，然後按一下「建立」。 您可以使用全域資料夾或建立資料夾。
-1. 指定要連線至服務的組態名稱和認證。 您可以 [從您的Microsoft Azure儲存體入口網站擷取這些認證](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?tabs=azure-portal#view-account-access-keys).
+1. 指定要連線至服務的組態名稱和認證。 您可以從您的Microsoft Azure儲存體入口網站[擷取這些認證](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?tabs=azure-portal#view-account-access-keys)。
 1. 按一下「建立」。
 
 您的Experience Manager執行個體現在已準備好連線至Microsoft Azure Storage，並視需要用它來儲存和讀取內容。
@@ -123,15 +123,15 @@ ht-degree: 2%
 
 ## 使用批次API產生檔案 {#use-batch-API-to-generate-documents}
 
-若要使用批次API，請建立批次設定，並根據該設定執行執行。 API檔案提供建立和執行批次的API、對應引數和可能錯誤的相關資訊。 您可以下載 [API定義檔案](assets/batch-api.yaml) 檔案並上傳至 [Postman](https://go.postman.co/home) 或類似的軟體來測試API，以建立並執行批次作業。
+若要使用批次API，請建立批次設定，並根據該設定執行執行。 API檔案提供建立和執行批次的API、對應引數和可能錯誤的相關資訊。 您可以下載[API定義檔](assets/batch-api.yaml)檔案，並將其上傳至[Postman](https://go.postman.co/home)或類似的軟體，以測試API來建立和執行批次作業。
 
 ### 建立批次 {#create-a-batch}
 
-若要建立批次，請使用 `POST /config` API。 在HTTP請求內文中包含以下強制屬性：
+若要建立批次，請使用`POST /config` API。 在HTTP請求內文中包含以下強制屬性：
 
-* **configname**：指定批次的唯一名稱。 例如 `wknd-job`
-* **dataSourceConfigUri**：指定批次資料存放區設定的位置。 可以是設定的相對或絕對路徑。 例如：`/conf/global/settings/forms/usc/batch/wknd-batch`
-* **outputType**：指定輸出格式：PDF和列印。 如果您使用PRINT輸出型別，請輸入 `printedOutputOptionsList` 屬性，請至少指定一個列印選項。 列印選項由其轉譯器型別識別，因此目前不允許使用相同轉譯器型別的多個列印選項。 支援的格式為PS、PCL、DPL、IPL和ZPL。
+* **configName**：指定批次的唯一名稱。 例如 `wknd-job`
+* **dataSourceConfigUri**：指定批次資料存放區組態的位置。 可以是設定的相對或絕對路徑。 例如：`/conf/global/settings/forms/usc/batch/wknd-batch`
+* **outputTypes**：指定輸出格式：PDF和列印。 如果您使用PRINT輸出型別，請在`printedOutputOptionsList`屬性中指定至少一個列印選項。 列印選項由其轉譯器型別識別，因此目前不允許使用相同轉譯器型別的多個列印選項。 支援的格式為PS、PCL、DPL、IPL和ZPL。
 
 * **範本**：指定範本的絕對或相對路徑。 例如 `crx:///content/dam/formsanddocuments/wknd/statements.xdp`
 
@@ -139,11 +139,11 @@ ht-degree: 2%
 
 <!-- For example, you include the following JSON in the body of HTTP APIs to create a batch named wknd-job: -->
 
-您可以使用 `GET /config /[configName]` 以檢視批次設定的詳細資訊。
+您可以使用`GET /config /[configName]`檢視批次組態的詳細資料。
 
 ### 執行批次 {#run-a-batch}
 
-若要執行（執行）批次，請使用 `POST /config /[configName]/execution`. 例如，若要執行名為wknd-demo的批次，請使用/config/wknd-demo/execution。 伺服器接受請求時會傳回HTTP回應代碼202。 除了在伺服器上執行的批次作業的HTTP回應標題中的唯一代碼(execution-identifier)，API不會傳回任何裝載。 您可以使用執行識別碼來擷取批次的狀態。
+若要執行（執行）批次，請使用`POST /config /[configName]/execution`。 例如，若要執行名為wknd-demo的批次，請使用/config/wknd-demo/execution。 伺服器接受請求時會傳回HTTP回應代碼202。 除了在伺服器上執行的批次作業的HTTP回應標題中的唯一代碼(execution-identifier)，API不會傳回任何裝載。 您可以使用執行識別碼來擷取批次的狀態。
 
 >[!NOTE]
 >
@@ -151,7 +151,7 @@ ht-degree: 2%
 
 ### 檢查批次的狀態 {#status-of-a-batch}
 
-若要擷取批次的狀態，請使用 `GET /config /[configName]/execution/[execution-identifier]`. 執行識別碼包含在批次執行請求的HTTP回應標頭中。
+若要擷取批次的狀態，請使用`GET /config /[configName]/execution/[execution-identifier]`。 執行識別碼包含在批次執行請求的HTTP回應標頭中。
 
 狀態請求的回應包含狀態區段。 它提供有關批次作業狀態、已在管道中的記錄數（已讀取和正在處理）以及每個outputType/renderType的狀態（進行中、成功和失敗專案的數目）的詳細資訊。 狀態也包含批次工作的開始和結束時間以及錯誤的相關資訊（如果有的話）。 結束時間為–1，直到批次執行實際完成。
 
@@ -162,9 +162,9 @@ ht-degree: 2%
 
 ### 檢視產生的檔案 {#view-generated-documents}
 
-工作完成時，產生的檔案會儲存至 `success` 在批次資料存放區設定中指定的目的地位置資料夾。 如果有任何錯誤，服務會建立 `failure` 資料夾。 它提供有關錯誤型別和原因的資訊。
+工作完成時，產生的檔案會儲存在批次資料存放區組態中所指定目的地位置的`success`資料夾中。 如果有任何錯誤，服務會建立`failure`資料夾。 它提供有關錯誤型別和原因的資訊。
 
-讓我們透過範例來瞭解：假設有一個輸入資料檔案 `record1.xml` 以及兩種輸出型別： `PDF` 和 `PCL`. 然後，目的地位置包含兩個子資料夾 `pdf` 和 `pcl`，每種輸出型別各一個。 讓我們假設PDF產生成功，然後 `pdf` 子資料夾包含 `success` 包含實際產生PDF檔案的子資料夾 `record1.pdf`. 假設PCL產生失敗，然後假設 `pcl` 子資料夾包含 `failure` 又包含錯誤檔案的子資料夾 `record1.error.txt` 其中包含錯誤的詳細資料。 此外，目的地位置包含一個名為的暫存資料夾 `__tmp__` 會儲存批次執行期間所需的某些檔案。 當沒有參考目的地資料夾的有效批次執行時，可以刪除此資料夾。
+讓我們透過範例來瞭解：假設有一個輸入資料檔`record1.xml`和兩種輸出型別： `PDF`和`PCL`。 然後，目的地位置包含兩個子資料夾`pdf`和`pcl`，每個輸出型別各一個。 假設PDF產生成功，則`pdf`子資料夾包含`success`子資料夾，而該子資料夾又包含實際產生的PDF檔案`record1.pdf`。 假設PCL產生失敗，則`pcl`子資料夾包含`failure`子資料夾，而該子資料夾又包含錯誤檔案`record1.error.txt`，其中包含錯誤的詳細資料。 此外，目的地位置包含名為`__tmp__`的暫存資料夾，其中會儲存批次執行期間所需的特定檔案。 當沒有參考目的地資料夾的有效批次執行時，可以刪除此資料夾。
 
 >[!NOTE]
 >
@@ -172,11 +172,11 @@ ht-degree: 2%
 
 ## API參考檔案
 
-API參考檔案提供API提供的所有引數、驗證方法和各種服務的詳細資訊。 API參考檔案提供.yaml格式。 您可以下載 [批次API](assets/batch-api.yaml) 將其上傳至Postman以檢查API的功能。
+API參考檔案提供API提供的所有引數、驗證方法和各種服務的詳細資訊。 API參考檔案提供.yaml格式。 您可以下載[批次API](assets/batch-api.yaml)檔案並將其上傳到Postman以檢查API的功能。
 
 >[!MORELIKETHIS]
 >
 >* [AEM Formsas a Cloud Service通訊簡介](/help/forms/aem-forms-cloud-service-communications-introduction.md)
->* [最適化Forms的AEM Formsas a Cloud Service架構和通訊API](/help/forms/aem-forms-cloud-service-architecture.md)
+>* 最適化Forms和通訊API的[AEM Formsas a Cloud Service架構](/help/forms/aem-forms-cloud-service-architecture.md)
 >* [通訊處理 — 同步API](/help/forms/aem-forms-cloud-service-communications.md)
 >* [通訊處理 — 批次API](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)

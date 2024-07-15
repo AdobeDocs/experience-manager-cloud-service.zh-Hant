@@ -34,10 +34,10 @@ https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/cont
 若要建立版本的表單，請遵循下列步驟：
 
 1. 建立表單或使用現有表單。
-1. 在AEM UI上，導覽至 **[!UICONTROL 表單]**>>**[!UICONTROL Forms與檔案]** 並選取 **表單**.
-1. 在左側面板上的選取下拉式清單中，選取 **[!UICONTROL 版本]**.
+1. 在AEM UI上，導覽至&#x200B;**[!UICONTROL 表單]**>**[!UICONTROL Forms與檔案]**，然後選取您的&#x200B;**表單**。
+1. 在左側面板上的選取下拉式清單中，選取&#x200B;**[!UICONTROL 版本]**。
    ![選取表單](select-a-form.png)
-1. 按一下 **三點** 按一下左下方面板上的「 」 **[!UICONTROL 另存為版本]**.
+1. 按一下左下方面板上的&#x200B;**三個點**，然後按一下&#x200B;**[!UICONTROL [另存為版本]]**。
 1. 現在，為表單版本提供標籤，而您可以透過註解提供表單的相關資訊。
    ![建立表單版本](create-a-form-version.png)
 
@@ -49,22 +49,22 @@ https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/cont
 
 ### 還原表單版本 {#revert-a-form-version}
 
-若要將表單版本還原為之前的版本，請選取表單版本，然後按一下 **[!UICONTROL 還原為此版本]**.
+若要將表單版本還原成上一個版本，請選取表單版本，按一下&#x200B;**[!UICONTROL 還原成這個版本]**。
 
-![回覆表單版本](revert-form-version.png)
+![還原表單版本](revert-form-version.png)
 
 ### 比較表單版本 {#compare-form-versions}
 
-表單作者可比較兩個不同的表單版本，以供預覽。 若要比較版本，請選取任一表單版本並按一下 **[!UICONTROL 與目前專案比較]**. 它會在預覽模式中顯示兩個不同的表單版本。
+表單作者可比較兩個不同的表單版本，以供預覽。 若要比較版本，請選取任一表單版本，然後按一下[與目前版本比較]。**** 它會在預覽模式中顯示兩個不同的表單版本。
 
 ![比較表單版本](compare-form-versions.png)
 
 ## 新增註解 {#add-comments}
 
-稽核是一種機制，可讓一或多個稽核者在表單上加上註解。 任何表單使用者都可以評論表單或透過評論來檢閱表單。 若要在表單上加上註解，請選取 **[!UICONTROL 表單]**，並新增 **[!UICONTROL 註解]** 至表單。
+稽核是一種機制，可讓一或多個稽核者在表單上加上註解。 任何表單使用者都可以評論表單或透過評論來檢閱表單。 若要在表單上加上註解，請選取&#x200B;**[!UICONTROL 表單]**，然後新增&#x200B;**[!UICONTROL 註解]**&#x200B;至表單。
 
 >[!NOTE]
-> 如上所述，當您在調適型表單核心元件中使用註解時，表單功能就會恢復正常 [建立和管理表單的稽核](/help/forms/create-reviews-forms.md) 已停用。
+> 如上所述，當您在調適型表單核心元件中使用註解時，表單功能[建立及管理表單](/help/forms/create-reviews-forms.md)的稽核功能會停用。
 
 
 ![在表單上新增註解](form-comments.png)
@@ -73,12 +73,12 @@ https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/cont
 
 在許多情況下，表單群組使用者需要新增註解至表單以供檢閱，例如在表單的特定標籤上或表單的元件上。 在這種情況下，作者可以使用註解。 若要將註解新增至表單，請執行下列步驟：
 
-1. 在中開啟表單 **[!UICONTROL 編輯]** 模式。
+1. 以&#x200B;**[!UICONTROL 編輯]**&#x200B;模式開啟表單。
 
-1. 按一下 **新增圖示** 位於右上邊欄中（如影像所示）。
+1. 按一下位於右上邊欄的&#x200B;**新增圖示** （如影像所示）。
    ![註解](annotation.png)
 
-1. 按一下 **新增圖示** 位於左上邊欄的影像中，用來新增附註。
+1. 按一下位於左上邊欄的&#x200B;**新增圖示** （如影像所指定）以新增註解。
    ![新增註解](add-annotation.png)
 
 1. 現在，您可以新增註解，用多種顏色繪製草圖以形成元件。

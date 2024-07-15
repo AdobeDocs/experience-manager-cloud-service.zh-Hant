@@ -8,7 +8,7 @@ discoiquuid: ed50fa70-a8dd-4cc6-82a9-d59de0fa417d
 docset: aem65
 source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '2314'
+source-wordcount: '2307'
 ht-degree: 3%
 
 ---
@@ -22,7 +22,7 @@ CSS和LESS架構的相關知識。
 
 ## 可自訂的專案 {#what-can-be-customized}
 
-本文列出最適化Forms的公開可用css類別。 您可以使用這些類別來設定最適化表單各種元件的樣式。 製作元件的樣式（例如顯示警告的對話方塊和狀態列）超出本文範圍。 只有在您無法使用來樣式化元件時，才使用這些樣式建構來建立樣式（使用CSS或更少）。 [主題編輯器](https://helpx.adobe.com/experience-manager/6-3/forms/using/themes.html).
+本文列出最適化Forms的公開可用css類別。 您可以使用這些類別來設定最適化表單各種元件的樣式。 製作元件的樣式（例如顯示警告的對話方塊和狀態列）超出本文範圍。 只有在無法使用[主題編輯器](https://helpx.adobe.com/experience-manager/6-3/forms/using/themes.html)來設定元件樣式時，才使用這些樣式建構來建立樣式（使用CSS或更少）。
 
 ## 在最適化Forms中自訂樣式 {#customizing-styles-in-adaptive-forms}
 
@@ -101,7 +101,7 @@ LESS框架簡化了使用案例，讓您可以在自適應Forms中自訂樣式�
 
 ## 欄位樣式 {#field-styling}
 
-最適化Forms包含各種型別的欄位。 每個欄位都有唯一的類別名稱，即欄位名稱。 欄位也有常見的類別名稱 `guideFieldNode`.
+最適化Forms包含各種型別的欄位。 每個欄位都有唯一的類別名稱，即欄位名稱。 欄位也有通用類別名稱`guideFieldNode`。
 
 欄位包含標籤、Widget、說明說明（完整和簡短說明）以及欄位說明圖示（問號）。
 
@@ -137,7 +137,7 @@ LESS框架簡化了使用案例，讓您可以在自適應Forms中自訂樣式�
 
 ## 標籤樣式 {#label-styling}
 
-HTML元素 **標籤** 用於欄位包括類別 **左側** 或 **top** 標籤位於頂端還是左側。
+用於欄位的HTML專案&#x200B;**label**&#x200B;包含類別&#x200B;**left**&#x200B;或&#x200B;**top**，這取決於標籤在頂端還是左側。
 
 <table>
  <tbody>
@@ -177,11 +177,11 @@ HTML元素 **標籤** 用於欄位包括類別 **左側** 或 **top** 標籤位�
  </tbody>
 </table>
 
-標籤的CSS規則是使用 **Guidelfiellabel** 標籤。 如果您是作者，請覆寫此規則以顯示自訂變更。
+使用&#x200B;**guideFieldLabel**&#x200B;標籤套用標籤的CSS規則。 如果您是作者，請覆寫此規則以顯示自訂變更。
 
 ## Widget樣式 {#widgets-styling}
 
-視其型別而定，Widget也包含類別。 通常Widget包含 `guideFieldWidget` 類別。 附帶HTML的Widget通常使用標準HTML元素輸入並選取。 樣式會據此來設定。 您無法藉由變更變數來設定自訂Widget的樣式。
+視其型別而定，Widget也包含類別。 通常Widget包含`guideFieldWidget`類別。 附帶HTML的Widget通常使用標準HTML元素輸入並選取。 樣式會據此來設定。 您無法藉由變更變數來設定自訂Widget的樣式。
 
 <table>
  <tbody>
@@ -287,7 +287,7 @@ HTML元素 **標籤** 用於欄位包括類別 **左側** 或 **top** 標籤位�
 
 ## 說明說明 {#help-description}
 
-作者可以使用簡短和完整說明元件，在欄位中指定說明內容。 兩個元件都有共同類別 `.guideHelpDescription` 和另一個類別 `.long`/ `.short`，視說明型別而定。 說明內容會包含在段落元素中，以覆寫說明的樣式。 說明說明（長與短）會使用以widgetshelp開頭的變數加以修改，如下表所述：
+作者可以使用簡短和完整說明元件，在欄位中指定說明內容。 這兩個元件都有共同類別`.guideHelpDescription`和另一個類別`.long`/ `.short`，視描述型別而定。 說明內容會包含在段落元素中，以覆寫說明的樣式。 說明說明（長與短）會使用以widgetshelp開頭的變數加以修改，如下表所述：
 
 <table>
  <tbody>
@@ -328,7 +328,7 @@ HTML元素 **標籤** 用於欄位包括類別 **左側** 或 **top** 標籤位�
 
 ## 條款與條件 {#terms-and-conditions}
 
-條款與條件(TnC) `` ``) widget可讓您指定條款與條件。 您可以使用下表所述的變數來自訂Widget。
+條款與條件(TnC `` ``) Widget可讓您指定條款與條件。 您可以使用下表所述的變數來自訂Widget。
 
 <table>
  <tbody>
@@ -517,7 +517,7 @@ HTML元素 **標籤** 用於欄位包括類別 **左側** 或 **top** 標籤位�
   </tr>
   <tr>
    <td><p><code>table-header-bg-color</code></p> </td>
-   <td><p>標題列的背景顏色。 預設值為 <code>#333</code>。<br /> </p> </td>
+   <td><p>標題列的背景顏色。 預設值為<code>#333</code>.<br /> </p> </td>
   </tr>
   <tr>
    <td><p><code>table-odd-row-bg-color</code></p> </td>
@@ -638,7 +638,7 @@ Adaptive Forms的檔案附件Widget可讓您上傳檔案。 您也可以使用�
 
 `</div>`
 
-您可以使用CSS規則變更導覽器的樣式，CSS規則會使用以下方式選取元素 **下級** 選擇器。 例如，若要將文字裝飾樣式新增至錨點標籤：
+您可以使用CSS規則來變更導覽器的樣式，該規則會使用&#x200B;**descendant**&#x200B;選取器來選取元素。 例如，若要將文字裝飾樣式新增至錨點標籤：
 
 頂端的Tab導覽器：
 
@@ -718,7 +718,7 @@ guideNavIcon類別會提供預設圖示，供定位點導覽器（左側和頂�
 
 >[!NOTE]
 >
->您可以在編寫表單範例的面板上提供CSS類別，以變更特定導覽器的圖示 &lt;class_name>. 您新增 **&lt;class_name>_nav** 用於導覽器的圖示。
+>您可以在編寫的面板上提供CSS類別（例如&lt;CLASS_NAME>），以變更特定導覽器的圖示。 您為導覽器的圖示新增&#x200B;**&lt;CLASS_NAME>_nav**。
 
 <table>
  <tbody>
@@ -914,7 +914,7 @@ guideNavIcon類別會提供預設圖示，供定位點導覽器（左側和頂�
   </tr>
   <tr>
    <td><p><code>panel-font-color</code></p> </td>
-   <td><p>面板文字的字型顏色<br /> </p> </td>
+   <td><p>面板文字的字型色彩<br /> </p> </td>
   </tr>
   <tr>
    <td><p><code>panel-padding</code></p> </td>
@@ -939,7 +939,7 @@ guideNavIcon類別會提供預設圖示，供定位點導覽器（左側和頂�
  </tbody>
 </table>
 
-面板節點分為導覽器和內容。 那裡 `` `` 內容沒有獨立的樣式元件。 所描述的變數會套用至導覽器和內容。
+面板節點分為導覽器和內容。 內容沒有`` ``獨立的樣式元件。 所描述的變數會套用至導覽器和內容。
 
 最上層的面板(RootPanel)沒有這個類別。
 
@@ -1073,7 +1073,7 @@ guideNavIcon類別會提供預設圖示，供定位點導覽器（左側和頂�
 
 ## 主題特定變數 {#theme-specific-variable}
 
-此 **簡單註冊** /etc/clientlibs/fd/af/guidetheme/simpleEnrollment的主題和類別 `guide.theme.simpleEnrollment` 也會介紹一些變數。 如果要建立主題來增強簡單註冊，您可以使用以下「額外變數：
+/etc/clientlibs/fd/af/guidetheme/simpleEnrollment的&#x200B;**簡單註冊**&#x200B;主題和類別`guide.theme.simpleEnrollment`也引進了幾個變數。 如果要建立主題來增強簡單註冊，您可以使用以下「額外變數：
 
 <table>
  <tbody>

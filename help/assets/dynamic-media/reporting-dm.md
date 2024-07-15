@@ -9,8 +9,8 @@ hidefromtoc: true
 exl-id: 2488f813-df15-4dbb-8747-f827ee5925e1
 source-git-commit: aa7429d9ca9f67979303c0b85c9dbd5b8c74c05c
 workflow-type: tm+mt
-source-wordcount: '273'
-ht-degree: 4%
+source-wordcount: '260'
+ht-degree: 0%
 
 ---
 
@@ -26,10 +26,10 @@ ht-degree: 4%
 
 您可以每月為指定公司要求一次錯誤報告。
 
-**若要為失敗的Dynamic Media傳送URL請求錯誤報告：**
+**若要為失敗的Dynamic Media傳遞URL請求錯誤報告：**
 
-1. [傳送電子郵件至reports-dynamic-media@adobe.com](mailto:reports-dynamic-media@adobe.com) ，且使用與您的Dynamic Media帳戶相關聯的公司名稱。
+1. [傳送電子郵件至reports-dynamic-media@adobe.com](mailto:reports-dynamic-media@adobe.com)，其中包含與您的Dynamic Media帳戶相關聯的公司名稱。
 
-   如果您不知道公司名稱，請參閱 [Dynamic Media設定](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/config-dm.html?lang=zh-Hant#configuring-dynamic-media-cloud-services) 頁面位置 **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL 工具]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Dynamic Media設定]**. 在Dynamic Media設定瀏覽器頁面上，按一下 **[!UICONTROL 全域]**，選取 *[動態媒體資料夾圖示]* 核取方塊，然後選取 **[!UICONTROL 編輯]**. 您必須在AEM中擁有管理員許可權，才能存取Dynamic Media設定頁面。
+   如果您不知道公司名稱，請參閱&#x200B;**[!UICONTROL Dynamic Media]** > **[!UICONTROL 工具]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Dynamic Media設定]**&#x200B;中的[Adobe Experience Manager設定](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/config-dm.html?lang=zh-Hant#configuring-dynamic-media-cloud-services)頁面。 在Dynamic Media設定瀏覽器頁面上，按一下&#x200B;**[!UICONTROL 全域]**，選取&#x200B;*[Dynamic_Media_folder_icon]*&#x200B;核取方塊，然後選取&#x200B;**[!UICONTROL 編輯]**。 您必須在AEM中擁有管理員許可權，才能存取Dynamic Media設定頁面。
 
    ![存取Dynamic Media設定頁面。](/help/assets/dynamic-media/assets/reporting-accessdmconfig.png)

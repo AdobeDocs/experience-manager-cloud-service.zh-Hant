@@ -11,7 +11,7 @@ exl-id: fb63e2d4-2c8c-48dd-a0dc-fdfbbfb57b30
 source-git-commit: 973cec704b5e8f34e3b2c448fc10e09226ffa933
 workflow-type: tm+mt
 source-wordcount: '308'
-ht-degree: 2%
+ht-degree: 9%
 
 ---
 
@@ -30,11 +30,11 @@ ht-degree: 2%
 
 | 資產 — 限制型別 | 最佳實務 | 強加的限制 |
 | --- | --- | --- |
-| **影像**  — 每個影像的智慧型裁切數目 | 5 | 100 |
-| **所有集合**  — 每組重複資產數 | 無重複專案 | 20 |
-| **所有集合**  — 每組資產數量上限 | 每組5至10個影像 | 1000 |
-| **迴轉集**  — 每個2D集的最大列/欄數 | 每組12至18個影像 | 1000 |
-| **PDF**  — 要考慮進行擷取的PDF最大頁數 |  | 100 (適用於所有PDF) |
+| **影像** — 每個影像的智慧型裁切數目 | 5 | 100 |
+| **所有集合** — 每個集合的重複資產數目 | 無重複專案 | 20 |
+| **所有集合** — 每個集合的資產數量上限 | 每組5至10個影像 | 1000 |
+| **迴轉集** — 每個2D集的列/欄數上限 | 每組12至18個影像 | 1000 |
+| **PDF** — 要視為擷取的PDF最大頁數 |  | 100 (適用於所有PDF) |
 
 <!-- See also [Dynamic Media limitations](/help/assets/limitations.md). -->
 
@@ -59,10 +59,10 @@ and CQDOC-19792 (removed as per this ticket December 5, 2022) -->
 
 自2024年4月30日起，Adobe Dynamic Media將停止支援下列專案：
 
-* SSL （安全通訊端層） 2.0
+* SSL (安全通訊端層) 2.0
 * SSL 3.0
-* TLS （傳輸層安全性） 1.0和1.1
-* TLS 1.2中的下列弱加密：
+* TLS (傳輸層安全性) 1.0 和 1.1
+* TLS 1.2 中的以下弱密碼：
    * `TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384`
    * `TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA`
    * `TLS_RSA_WITH_AES_256_GCM_SHA384`

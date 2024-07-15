@@ -24,30 +24,30 @@ ht-degree: 43%
 
 ## 發行日期 {#release-date}
 
-的發行日期 [!DNL Adobe Experience Manager] as a Cloud Service2021.5.0為2021年5月27日。
+[!DNL Adobe Experience Manager]as a Cloud Service2021.5.0的發行日期為2021年5月27日。
 下列版本(2021.6.0)將於2021年6月28日發行。
 
-## AEMas a Cloud Service基礎 {#foundation}
+## AEM as a Cloud Service Foundation {#foundation}
 
-### AEMas a Cloud Service基礎的新增功能 {#what-is-new-foundation}
+### AEM as a Cloud Service Foundation新增功能 {#what-is-new-foundation}
 
-* [發行前通道](/help/release-notes/prerelease.md)：在即將上線的功能投入生產之前，先預覽整整一個月！
+* [發行前管道](/help/release-notes/prerelease.md)：在即將上線的功能投入生產前，先預覽一整月！
 
-* [API淘汰](/help/release-notes/deprecated-removed-features.md)：提供適用於AEMas a Cloud Service的最新已棄用API清單。
+* [棄用API](/help/release-notes/deprecated-removed-features.md)：已提供AEM as a Cloud Service的最新棄用API清單。
 
-* [AEMas a Cloud ServiceSDK建置分析器Maven外掛程式](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html)：將您的Maven專案更新至最新版本，其中包括已淘汰的Java API檢查和其他改善。
+* [AEM as a Cloud Service SDK Build Analyzer Maven外掛程式](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html)：將您的Maven專案更新至最新版本，其中包括已淘汰的Java API檢查和其他改善。
 
 ## [!DNL Adobe Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
 ### [!DNL Sites] 的新增功能 {#what-is-new-sites}
 
-* 您很快就會能夠驗證新版本的內容 [預覽層](/help/sites-cloud/authoring/sites-console/previewing-content.md) 以模擬最終的體驗外觀，如同您在發佈層級上一樣。 這可透過AEM Sites Managed Publication精靈啟用，現在可讓您在發佈或預覽之間選擇發佈目的地。 接著，您就可以透過專用URL存取「預覽」上的體驗。 在「預覽」上進行驗證後，內容可以如常從「作者」發佈至「發佈」。 在AEMas a Cloud Service環境中啟用預覽服務將在未來幾週逐步推出。
+* 您很快就會能夠驗證新[預覽階層](/help/sites-cloud/authoring/sites-console/previewing-content.md)上的內容，以模擬最終的體驗外觀，如同您在Publish階層上一樣。 這可透過AEM Sites Managed Publication精靈啟用，現在可讓您在Publish或預覽之間選擇發佈目的地。 接著，您就可以透過專用URL存取「預覽」上的體驗。 在「預覽」上進行驗證後，內容可以如常從「作者」發佈至Publish。 在AEM as a Cloud Service環境中啟用預覽服務將在未來幾週逐步推出。
 
 ## [!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ### [!DNL Assets] 的新增功能 {#what-is-new-assets}
 
-* 您可以使用「連結共用」功能下載共用的資產。 此下載專案現在使用非同步服務，提供更快速且無中斷的下載專案，即使是大型下載專案亦然。 另請參閱 [下載資產](/help/assets/download-assets-from-aem.md#link-share-download).
+* 您可以使用「連結共用」功能下載共用的資產。 此下載專案現在使用非同步服務，提供更快速且無中斷的下載專案，即使是大型下載專案亦然。 請參閱[下載資產](/help/assets/download-assets-from-aem.md#link-share-download)。
 
   ![下載收件匣](/help/assets/assets/download-inbox.png)
 
@@ -55,22 +55,22 @@ ht-degree: 43%
 
 * 中繼資料結構描述可直接套用至資料夾屬性。
 
-  ![從資料夾屬性新增中繼資料結構](/help/assets/assets/metadata-schema-folder-properties.png)
+  ![從資料夾屬性新增中繼資料結構描述](/help/assets/assets/metadata-schema-folder-properties.png)
 
 * 資產大量擷取工具可讓您在大量擷取期間新增中繼資料。
 
-* 使用者體驗增強功能會顯示存在於資料夾中的資產數量。 若資料夾中有超過1000個資產， [!DNL Assets] 顯示1000+。
+* 使用者體驗增強功能會顯示存在於資料夾中的資產數量。 若資料夾中有超過1000個資產，[!DNL Assets]會顯示1000+。
 
-  ![介面上會顯示資料夾中的資產數量](/help/assets/assets/browse-folder-number-of-assets.png)
+  ![介面會顯示資料夾中的資產數目](/help/assets/assets/browse-folder-number-of-assets.png)
 
 ### 修正在 [!DNL Assets] 中的錯誤 {#assets-bugs-fixed}
 
-* 上傳超大型檔案會當機 [!DNL Experience Manager desktop app]. (CQ-4320942)
+* 上傳超大型檔案會使[!DNL Experience Manager desktop app]當機。 (CQ-4320942)
 * 當從資料夾中選取相同的集合，以及從搜尋結果中選取集合時，工具列選項會不同。 (CQ-4321406)
 
 #### Dynamic Media的新增功能 {#what-is-new-dm}
 
-* 智慧型影像DPR （裝置畫素比）和網路頻寬最佳化可讓您在具有高解析度顯示器且網路頻寬受限的裝置上，有效率地提供最佳品質影像。 如需詳細資訊，請參閱 [智慧型影像常見問題集](/help/assets/dynamic-media/imaging-faq.md) 和 [使用新一代影像格式WebP和AVIF進行影像最佳化。](https://medium.com/adobetech/image-optimisation-with-next-gen-image-formats-webp-and-avif-248c75afacc4)
+* 智慧型影像DPR （裝置畫素比）和網路頻寬最佳化可讓您在具有高解析度顯示器且網路頻寬受限的裝置上，有效率地提供最佳品質影像。 如需詳細資訊，請參閱[智慧型影像常見問題集](/help/assets/dynamic-media/imaging-faq.md)和[使用新一代影像格式WebP和AVIF的影像最佳化。](https://medium.com/adobetech/image-optimisation-with-next-gen-image-formats-webp-and-avif-248c75afacc4)
 * 在Dynamic Media傳送中推出對新一代影像格式AVIF的支援（fmt URL修飾元）。
 
 ## [!DNL Adobe Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
@@ -99,11 +99,11 @@ Output as a Cloud service：Output 服務可幫助您合併 XDP 範本和 XML �
 
 ## Cloud Manager {#cloud-manager}
 
-本節概述AEMas a Cloud Service2021.5.0中Cloud Manager的發行說明
+本節概述AEM as a Cloud Service 2021.5.0中Cloud Manager的發行說明
 
 ### 發行日期 {#release-date-cm-may}
 
-AEMas a Cloud Service2021.5.0中Cloud Manager的發行日期為2021年5月06日。
+AEM as a Cloud Service 2021.5.0中的Cloud Manager發行日期是2021年5月06日。
 下一個版本計畫於2021年6月3日發行。
 
 ### 新增功能 {#what-is-new-may}
@@ -150,7 +150,7 @@ AEMas a Cloud Service2021.5.0中Cloud Manager的發行日期為2021年5月06日�
 
 * 如果使用者沒有Java可執行檔的執行許可權，則會將新的記錄陳述式新增至快速入門的錯誤記錄檔。
 
-* 當使用者從CTT使用者介面（已執行擷取）刪除移轉集時， `tmp` 會刪除與該移轉集相關聯的資料夾以節省空間。
+* 當使用者從執行擷取的CTT使用者介面中刪除移轉集時，會刪除與該移轉集相關聯的`tmp`資料夾以節省空間。
 
 ### 錯誤修正 {#bug-fixes-ctt-latest}
 
@@ -170,7 +170,7 @@ AEMas a Cloud Service2021.5.0中Cloud Manager的發行日期為2021年5月06日�
 ### 錯誤修正 {#bug-fixes-ctt-may}
 
 * 和內容轉移工具UI中的自動重新整理功能相關的多項錯誤修正。
-* 內容轉移工具，搭配 `wipe=true` 導致目標上的計數器索引不正確。 此問題已修正。
+* 具有`wipe=true`的內容轉移工具導致目標上的計數器索引不正確。 此問題已修正。
 
 ## Commerce附加元件 {#cloud-services-commerce}
 

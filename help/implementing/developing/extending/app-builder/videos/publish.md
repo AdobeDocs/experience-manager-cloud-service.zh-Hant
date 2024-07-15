@@ -1,6 +1,6 @@
 ---
 title: 發佈App Builder應用程式
-description: 瞭解如何發佈及執行App Builder應用程式。
+description: 瞭解如何發佈和執行App Builder應用程式。
 version: Cloud Service
 feature: App Builder, Developing
 topic: Integrations, Development

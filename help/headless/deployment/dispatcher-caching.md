@@ -41,7 +41,7 @@ ht-degree: 89%
 
 >[!NOTE]
 >
->若要取得個人 `ETag` 快取持續查詢上的標題計算(針對 *每個* 不重複回應) `FileETag Digest` 必須在dispatcher設定虛擬主機設定中使用設定（如果尚未存在）：
+>若要在快取的持續性查詢上取得個別`ETag`標頭計算（針對唯一的&#x200B;*每個*&#x200B;回應），必須在Dispatcher設定虛擬主機設定（如果尚未存在）中使用`FileETag Digest`設定：
 >
 >```xml
 ><Directory />    

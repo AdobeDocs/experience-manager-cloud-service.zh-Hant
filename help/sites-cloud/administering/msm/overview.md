@@ -33,7 +33,7 @@ ht-degree: 95%
 
 >[!NOTE]
 >
->MSM 也可用於 Assets，包括內容片段。另請參閱 [使用MSM對資產重複使用內容片段](/help/assets/reuse-assets-using-msm.md) （只能透過「資產」主控台使用）。
+>MSM 也可用於 Assets，包括內容片段。請參閱[使用Assets的MSM重複使用內容片段](/help/assets/reuse-assets-using-msm.md) (只能透過Assets主控台使用)。
 
 ## 可能的案例 {#possible-scenarios}
 
@@ -145,7 +145,7 @@ MSM 可以使用相關主控台的各種選項直接在 UI 中存取 MSM。
 
 >[!NOTE]
 >
->MSM可同時用於頁面和 [體驗片段](/help/sites-cloud/authoring/fragments/experience-fragments.md) 因為這些片段是體驗（頁面）的一部分，
+>MSM可同時用於頁面和[體驗片段](/help/sites-cloud/authoring/fragments/experience-fragments.md)，因為這些片段是體驗（頁面）的一部分。
 
 >[!NOTE]
 >
@@ -177,7 +177,7 @@ MSM 可以使用相關主控台的各種選項直接在 UI 中存取 MSM。
 
 >[!TIP]
 >
->另請參閱 [擴充多站點管理員](/help/implementing/developing/extending/msm.md#overview-of-the-java-api) 物件名稱。
+>請參閱物件名稱的[延伸多站台管理員](/help/implementing/developing/extending/msm.md#overview-of-the-java-api)。
 
 ## Live Copy {#live-copies}
 
@@ -194,7 +194,7 @@ MSM Live Copy 是特定網站內容的副本，與原始來源保持即時關係
 
 * `/content/wknd/language-masters/en` 下面的內容是來源。
 * `/content/wknd/language-masters/en` 下面的內容被複製到 `/content/wknd/us/en/` 和 `/content/wknd/ca/en` 節點下面。這些是 Live Copy。
-* 作者變更以下頁面 `/content/wknd/language-masters/en`.
+* 作者在`/content/wknd/language-masters/en`底下變更頁面。
 * 觸發後，MSM 會將這些變更同步到 Live Copy。
 
 ### Live Copy - 組成項目 {#live-copies-composition}
@@ -324,11 +324,11 @@ Live Copy 中的每個頁面和元件都透過即時關係與其來源頁面和�
 1. 開發源網站的內容。
 1. 決定要使用的推出設定。
 
-   1. MSM [安裝數個轉出設定](live-copy-sync-config.md#installed-rollout-configurations) 可滿足數種使用案例的需求。
-   1. 您可以選擇是否可以 [建立轉出設定](live-copy-sync-config.md#creating-a-rollout-configuration) 如有需要。
+   1. MSM [安裝數個轉出設定](live-copy-sync-config.md#installed-rollout-configurations)，可滿足數個使用案例。
+   1. 您可以視需要[建立轉出設定](live-copy-sync-config.md#creating-a-rollout-configuration)。
 
 1. 決定您需要在哪裡[指定要使用的推出設定](live-copy-sync-config.md#specifying-the-rollout-configurations-to-use)，並根據需要進行設定。
-1. 如有需要， [建立Blueprint設定](creating-live-copies.md#creating-a-blueprint-configuration) 會識別即時副本的來源內容。
+1. 如有必要，[建立Blueprint設定](creating-live-copies.md#creating-a-blueprint-configuration)，以識別即時副本的來源內容。
 1. [建立 Live Copy。](creating-live-copies.md#creating-a-live-copy)
 1. 根據需要變更來源內容。您應該採用您組織已建立的一般內容審查和核准流程。
 1. [推出](creating-live-copies.md#rolling-out-a-blueprint)藍圖，或[將 Live Copy 與變更同步](creating-live-copies.md#synchronizing-a-live-copy)。

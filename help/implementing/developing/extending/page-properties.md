@@ -72,10 +72,10 @@ ht-degree: 92%
 
 >[!NOTE]
 >
->當設定要與即時副本一起使用的頁面屬性時，請參閱 [擴充多站點管理員](/help/implementing/developing/extending/msm.md#configuring-msm-locks-on-page-properties) 以取得更多詳細資料。
+>設定要與即時副本一起使用的頁面屬性時，請參閱[擴充多網站管理員](/help/implementing/developing/extending/msm.md#configuring-msm-locks-on-page-properties)以取得詳細資訊。
 
 ## 頁面屬性的設定範例 {#sample-configuration-of-page-properties}
 
 本範例會示範 [Sling 資源合併](/help/implementing/developing/introduction/sling-resource-merger.md)的對話框差異技術，包括 [`sling:orderBefore`](/help/implementing/developing/introduction/sling-resource-merger.md#properties) 的使用。還會說明 `cq:showOnCreate` 和 `cq:hideOnEdit` 兩者的使用。
 
-您可以在此頁面找到程式碼： [GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-page-dialog).
+您可以在[GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-page-dialog)上找到此頁面的程式碼。

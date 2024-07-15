@@ -14,7 +14,7 @@ ht-degree: 4%
 
 # 主控台的鍵盤快速鍵 {#keyboard-shortcuts-for-consoles}
 
-下列捷徑適用於「網站」、「資產」、「使用者」、「群組」、「專案」和「體驗片段」主控台。 此外，還有以下專案的特定捷徑 [內容片段主控台](#keyboard-shortcuts-for-the-content-fragments-console).
+下列捷徑適用於「網站」、「Assets」、「使用者」、「群組」、「專案」和「體驗片段」主控台。 [內容片段主控台](#keyboard-shortcuts-for-the-content-fragments-console)也有特定的捷徑。
 
 | 位置 | 捷徑 | 說明 |
 |---|---|---|
@@ -26,8 +26,8 @@ ht-degree: 4%
 | 主控台 — 欄檢視 | `Shift-Up/Down Arrow` | 上/下移動並選取相同層級的頁面清單 |
 |  | `Esc` | 在同一層級的頁面清單中向上移動 |
 | 主控台 | `?` | 鍵盤快速鍵說明 |
-|  | `/` | 叫用 [搜尋](/help/sites-cloud/authoring/search.md) |
-|  | `Alt+`&lt;`Number`> | 切換目標 [邊欄選擇器](/help/sites-cloud/authoring/basic-handling.md#rail-selector) 檢視選項 |
+|  | `/` | 叫用[搜尋](/help/sites-cloud/authoring/search.md) |
+|  | `Alt+`&lt;`Number`> | 切換要檢視的[邊欄選擇器](/help/sites-cloud/authoring/basic-handling.md#rail-selector)選項 |
 |  | ``` ` ``` | 隱藏邊欄 |
 |  | `e` | 編輯 |
 |  | `p` | 屬性 |
@@ -37,7 +37,7 @@ ht-degree: 4%
 |  | `Backspace` | 刪除 |
 | 屬性頁面 | `Ctrl+s` | 儲存 |
 
-按鍵組合會與Windows一起列出 [修飾鍵](#os-specific-modifier-keys).
+這些索引鍵組合是以Windows [修飾元索引鍵](#os-specific-modifier-keys)列出。
 
 ## 作業系統特定修飾元鍵 {#os-specific-modifier-keys}
 
@@ -64,7 +64,7 @@ AEM會避免常用瀏覽器已使用的常用捷徑，但AEM捷徑不會覆寫�
 >
 >AEM鍵盤快速鍵可能會干擾熒幕閱讀程式、某些瀏覽器功能和其他協助工具。
 >
->Adobe建議 [停用AEM鍵盤快速鍵](#deactivating-keyboard-shortcuts) 使用熒幕助讀程式時。
+>Adobe建議在使用熒幕閱讀程式時[停用AEM鍵盤快速鍵](#deactivating-keyboard-shortcuts)。
 
 ## 停用鍵盤快速鍵 {#deactivating-keyboard-shortcuts}
 
@@ -75,7 +75,7 @@ AEM為一些常用功能（編輯、屬性、複製/貼上、顯示各種側邊�
 您可以在兩個位置停用鍵盤快速鍵：
 
 * [我的喜好設定](/help/sites-cloud/authoring/account-environment.md#my-preferences)
-* 此 [說明功能表](/help/sites-cloud/authoring/basic-handling.md#accessing-help)
+* [說明功能表](/help/sites-cloud/authoring/basic-handling.md#accessing-help)
 
 >[!NOTE]
 >
@@ -83,8 +83,8 @@ AEM為一些常用功能（編輯、屬性、複製/貼上、顯示各種側邊�
 
 ## 頁面編輯器的鍵盤快速鍵 {#keyboard-shortcuts-for-the-page-editor}
 
-AEM提供各種鍵盤快速鍵。 有些適用於使用主控台，有些則適用於 [頁面編輯](/help/sites-cloud/authoring/page-editor/keyboard-shortcuts.md).
+AEM提供各種鍵盤快速鍵。 有些適用於使用主控台，有些則適用於[頁面編輯](/help/sites-cloud/authoring/page-editor/keyboard-shortcuts.md)。
 
 ## 內容片段控制檯的鍵盤快速鍵 {#keyboard-shortcuts-for-the-content-fragments-console}
 
-有些鍵盤快速鍵適用於 [內容片段主控台](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md)
+某些鍵盤快速鍵適用於[內容片段主控台](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md)

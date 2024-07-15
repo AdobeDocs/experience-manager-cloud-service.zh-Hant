@@ -42,19 +42,19 @@ AEM Forms的側邊欄元件瀏覽器中提供表格元件，可讓您以最適�
 
 若要建立表格，請從最適化表單上sidekick的元件瀏覽器中拖放表格元件。 依預設，表格包含兩欄和三列，包括標題列。
 
-![AEM側邊欄中的表格元件](assets/sidebar-tables.png)
+![AEM側邊欄中的資料表元件](assets/sidebar-tables.png)
 
 ### 關於頁首與內文儲存格 {#about-header-and-body-cells}
 
-標題儲存格為文字欄位。 若要變更標題的標籤，請以滑鼠右鍵按一下標題儲存格，然後按一下 **編輯**. 在「編輯」對話方塊中，更新 **值** 欄位並按一下 **確定**.
+標題儲存格為文字欄位。 若要變更標頭的標籤，請在標頭儲存格上按一下滑鼠右鍵，然後按一下&#x200B;**編輯**。 在[編輯]對話方塊中，更新&#x200B;**值**&#x200B;欄位中的標籤，然後按一下&#x200B;**確定**。
 
 依預設，內文儲存格為文字方塊。 您可以使用Sidekick中提供的任何其他最適化表單元件來取代內文儲存格，例如數值方塊、日期選擇器或下拉式清單。
 
 例如，下表中的第一個內文列包含文字方塊、日期選擇器和下拉式清單元件，作為儲存格。
 
-![row-cell-type](assets/row-cell-types.png)
+![列儲存格型別](assets/row-cell-types.png)
 
-您可以合併兩個或多個內文儲存格，方法是選取要合併的儲存格，按一下滑鼠右鍵並選取 **合併**. 您也可以以滑鼠右鍵按一下合併的儲存格並選取「 」，以分割合併的儲存格 **分割儲存格**.
+您可以合併兩個或多個內文儲存格，方法是選取要合併的儲存格，按一下滑鼠右鍵，然後選取&#x200B;**合併**。 您也可以用滑鼠右鍵按一下合併的儲存格並選取&#x200B;**分割儲存格**，以分割該儲存格。
 
 ### 新增、刪除、移動列和欄 {#add-delete-move-rows-and-columns}
 
@@ -62,13 +62,13 @@ AEM Forms的側邊欄元件瀏覽器中提供表格元件，可讓您以最適�
 
 #### 新增、刪除或移動列
 
-若要新增、刪除或移動列，請按一下列的任一儲存格。 開啟內容瀏覽器 ![內容瀏覽器](/help/forms/assets/Smock_Layers_18_N.svg) 並選取對應的列，它會使用工具列選項反白選取的列，您可以從中新增、刪除或上下移動列。
+若要新增、刪除或移動列，請按一下列的任一儲存格。 開啟內容瀏覽器![內容瀏覽器](/help/forms/assets/Smock_Layers_18_N.svg)並選取對應的列，它會以工具列選項反白選取的列，您可以在此增加、刪除或上下移動列。
 
-* 此 **[!UICONTROL 上移]** 和 **[!UICONTROL 下移]** 作業將選取的列上下移動。
+* **[!UICONTROL 上移]**&#x200B;和&#x200B;**[!UICONTROL 下移]**&#x200B;作業會上下移動選取的列。
 
-* 此 **[!UICONTROL 新增欄]** 作業會在選取列的下方新增一列。
+* **[!UICONTROL 新增資料行]**&#x200B;作業會在選取的資料列下方新增一列。
 
-* 此 **[!UICONTROL 刪除欄]** 作業會刪除選取的列。
+* **[!UICONTROL 刪除資料行]**&#x200B;作業會刪除選取的資料列。
 
 ![add-delete-move-row-column](assets/add-delete-move-row.png)
 
@@ -90,7 +90,7 @@ AEM Forms的側邊欄元件瀏覽器中提供表格元件，可讓您以最適�
 
 您可以新增表格的說明，以說明資訊的組織方式，讓熒幕朗讀程式可以解譯和閱讀。 若要新增說明：
 
-1. 選取表格並選取 ![cmppr](assets/cmppr.png) 以在側欄中檢視其屬性。
+1. 選取資料表並選取![cmppr](assets/cmppr.png)，以在側欄中檢視其屬性。
 1. 在「協助工具」標籤中指定摘要。
 1. 按一下&#x200B;**「完成」**。
 
@@ -108,55 +108,55 @@ AEM Forms的側邊欄元件瀏覽器中提供表格元件，可讓您以最適�
 
 若要啟用排序：
 
-1. 選取表格並選取 ![configure_icon](assets/configure_icon.png) （設定）。 您也可以使用 **內容** 互動式通訊側邊欄中的瀏覽器。
-1. 選取 **啟用排序**.
-1. 選取 ![完成圖示](assets/done_icon.png) 以儲存表格屬性。 欄標題中的排序圖示（向上和向下箭頭）表示已啟用排序。
+1. 選取表格並選取![configure_icon](assets/configure_icon.png) （設定）。 您也可以在互動式通訊的Sidekick中使用&#x200B;**Content**&#x200B;瀏覽器來選取資料表。
+1. 選取&#x200B;**啟用排序**。
+1. 選取![done_icon](assets/done_icon.png)以儲存表格屬性。 欄標題中的排序圖示（向上和向下箭頭）表示已啟用排序。
 
    ![啟用排序](assets/enable_sorting_new.png)
 
-1. 切換至 **預覽** 模式以檢視輸出。 表格會根據表格的第一個欄自動排序。
+1. 切換至&#x200B;**預覽**&#x200B;模式以檢視輸出。 表格會根據表格的第一個欄自動排序。
 1. 按一下欄標題，根據欄排序值。
 
    具有向上箭頭的欄標題表示表格是根據該欄排序。 此外，欄中的值會以遞增順序顯示。
 
-   ![以遞增順序排序](assets/sorting_ascending_new.png)
+   ![依遞增順序排序](assets/sorting_ascending_new.png)
 
    同樣地，具有向下箭頭的欄標題表示欄中的值以降序顯示。
 
-   您也可以在的表格中變更 **預覽** 模式，然後再次按一下欄標題以對欄值進行排序。
+   您也可以在&#x200B;**預覽**&#x200B;模式的表格中進行變更，然後再次按一下欄標題來排序欄值。
 
 ## 設定表格的欄寬 {#set-column-width}
 
 執行以下步驟來設定表格的欄寬：
 
-1. 在 **[!UICONTROL 內容]** 索引標籤中，選取 **[!UICONTROL 表格]** 元件並選取設定(![設定](assets/configure-icon.svg))圖示。
+1. 在&#x200B;**[!UICONTROL Content]**&#x200B;索引標籤中，選取&#x200B;**[!UICONTROL Table]**&#x200B;元件並選取[設定] （![設定](assets/configure-icon.svg)）圖示。
 
-1.在「 」中輸入逗號分隔值清單， **[!UICONTROL 欄寬]** 欄位以指定表格中每一欄的比例寬度。 例如，針對包含3個資料欄的表格，將2,4，6指定為 **[!UICONTROL 欄寬]** 欄位會導致將第一欄的寬度設為2/12、第二欄設為4/12、第三欄設為6/12。 2/12，因為第一欄的寬度是表格寬度的六分之一。 同樣地，「4/12」將第二個欄寬設為表格寬度的三分之一，而「6/12」將第三個欄寬設為表格寬度的一半。
+1.在&#x200B;**[!UICONTROL 欄寬]**&#x200B;欄位中輸入逗號分隔值清單，以指定表格中每一欄的按比例寬度。 例如，如果表格包含3個資料行，在&#x200B;**[!UICONTROL 資料行寬度]**&#x200B;欄位中指定2,4，6為值會導致將資料行的寬度設定為第一資料行的2/12、第二資料行的4/12和第三資料行的6/12。 2/12，因為第一欄的寬度是表格寬度的六分之一。 同樣地，「4/12」將第二個欄寬設為表格寬度的三分之一，而「6/12」將第三個欄寬設為表格寬度的一半。
 
 ## 設定表格樣式 {#configure}
 
 您可以使用頁面工具列中的「樣式」模式來定義表格的樣式。 執行以下步驟以切換到樣式模式並編輯表格樣式
 
-1. 在頁面工具列中，在「預覽」前選取 ![畫佈下拉式清單](assets/canvas-drop-down.png) > **樣式**.
+1. 在頁面工具列中，在[預覽]之前，選取![畫佈下拉式清單](assets/canvas-drop-down.png) > **樣式**。
 
-1. 在側邊欄中選取表格並選取編輯按鈕 ![編輯按鈕](assets/edit-button.png).
+1. 在側邊欄中，選取表格並選取編輯按鈕![edit-button](assets/edit-button.png)。
 您可以在側邊欄中看到樣式屬性。
 
-![表格的樣式屬性](assets/style-table.png)
+![資料表的樣式屬性](assets/style-table.png)
 
 >[!NOTE]
 >
->您可以變更標題列與本文列的顏色主題，方法是變更 [較少變數](https://lesscss.org//). 如需詳細資訊，請參閱 [AEM Forms中的主題](/help/forms/themes.md).
+>您可以變更[LESS變數](https://lesscss.org//)的值，以變更標題與本文列的顏色主題。 如需詳細資訊，請參閱AEM Forms中的[主題](/help/forms/themes.md)。
 
 ## 動態新增或刪除列 {#add-or-delete-a-row-dynamically}
 
 表格提供立即可用的支援，可在執行階段動態新增或刪除列。
 
-1. 選取表格列並選取 ![cmppr](assets/cmppr.png).
+1. 選取表格列，然後選取![cmppr](assets/cmppr.png)。
 1. 在重複設定索引標籤中，指定最小和最大計數以限制表格中的列數。
 1. 按一下&#x200B;**「完成」**。
 
-在執行階段或預覽時，您會看到 **+** 和 ![刪除按鈕](/help/forms/assets/Smock_Delete.svg) 按鈕以新增或刪除列。
+在執行階段或預覽時，您會看到&#x200B;**+**&#x200B;和![刪除按鈕](/help/forms/assets/Smock_Delete.svg)按鈕，用以新增或刪除列。
 
 ![add-delete-rows-dynamic](assets/add-delete-layout.png)
 
@@ -170,21 +170,21 @@ AEM Forms的側邊欄元件瀏覽器中提供表格元件，可讓您以最適�
 
 雖然表格和列僅支援可見性運算式，以根據運算式傳回的值控制其可見性，但儲存格支援下列運算式：
 
-* **初始化指令碼：** 在欄位初始化時執行動作。
-* **值認可指令碼：** 在欄位值變更後變更表單元件。
+* **初始化指令碼：**&#x200B;以在欄位初始化時執行動作。
+* **值認可指令碼：**&#x200B;以在欄位值變更後變更表單元件。
 
 >[!NOTE]
 >
 >如果XFA變更/退出指令碼也套用至相同欄位，則XFA變更/退出指令碼會在值認可指令碼之前執行。
 
-* **計算運算式**：用於自動計算欄位的值。
+* **計算運算式**：自動計算欄位的值。
 * **驗證運算式**：驗證欄位。
 * **存取運算式**：啟用/停用欄位。
-* **可見度運算式**：控制欄位和面板的可見度。
+* **可見性運算式**：控制欄位和面板的可見性。
 
 表格或列的可見度運算式可以在它們對應的「編輯」元件對話方塊的「面板屬性」標籤中定義。 儲存格的運算式可在其「編輯」元件對話方塊的「指令碼」標籤中定義。
 
-如需最適化表單類別、事件、物件和公用API的完整清單，請參閱 [適用性表單的JavaScript Library API參考](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/index.html).
+如需最適化表單類別、事件、物件和公用API的完整清單，請參閱[最適化表單的JavaScript資料庫API參考](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/index.html)。
 
 ## 行動版面配置 {#mobile-layouts}
 
@@ -214,7 +214,7 @@ AEM Forms的側邊欄元件瀏覽器中提供表格元件，可讓您以最適�
 
 下列影像會比較表格在含有摺疊與展開欄的裝置上的外觀。
 
-![collapsed-column](assets/collapsed-column.png)
+![摺疊的資料行](assets/collapsed-column.png)
 
 在行動裝置上只顯示兩欄的表格摺疊欄
 
@@ -232,11 +232,11 @@ AEM Forms的側邊欄元件瀏覽器中提供表格元件，可讓您以最適�
 
 在此範例中，下列專案的Element name屬性：
 
-* 該列為 **Row1**
-* 「交易日期」下的內文儲存格為 **tableItem1**
-* 「說明」下的內文儲存格為 **tableItem2**
-* 「交易型別」下的內文儲存格為 **type**
-* 「金額（美元）」下的內文儲存格為 **tableItem3**
+* 資料列為&#x200B;**Row1**
+* 交易日期下的內文儲存格為&#x200B;**tableItem1**
+* 說明下的內文儲存格為&#x200B;**tableItem2**
+* 交易型別下的內文儲存格是&#x200B;**型別**
+* 在「USD金額」底下的內文儲存格為&#x200B;**tableItem3**
 
 包含下列格式之資料的XML檔案：
 
@@ -296,13 +296,13 @@ AEM Forms的側邊欄元件瀏覽器中提供表格元件，可讓您以最適�
 </afData>
 ```
 
-在範例XML中，資料列的資料是由 `<Row1>` 標籤，表格中列的元素名稱。 在 `<Row1>` 標籤中，每個儲存格的資料會在其元素名稱(例如 `<tableItem1>`， `<tableItem2>`， `<tableItem3>`、和 `<type>`.
+在範例XML中，資料列的資料由`<Row1>`標籤定義，這是資料表中資料列的元素名稱。 在`<Row1>`標籤內，每個儲存格的資料都定義在其元素名稱（例如`<tableItem1>`、`<tableItem2>`、`<tableItem3>`和`<type>`）的標籤內。
 
-若要在執行階段將此資料與表格合併，我們需要將包含表格的調適型表單指向停用wcmmode的絕對XML位置。 例如，如果最適化表單位於 *https://localhost:4502/myForms/bankTransaction.html* 而且資料XML檔案儲存在 *C：/myTransactions/bankSummary.xml*，您可以在以下URL檢視含有資料的表格：
+若要在執行階段將此資料與表格合併，我們需要將包含表格的調適型表單指向停用wcmmode的絕對XML位置。 例如，如果最適化表單位於&#x200B;*https://localhost:4502/myForms/bankTransaction.html*，而資料XML檔案儲存在&#x200B;*C：/myTransactions/bankSummary.xml*，您可以在下列URL檢視含有資料的表格：
 
 *https://localhost:4502/myForms/bankTransaction.html?dataRef=file:/// C：/myTransactions/bankSummary.xml&amp;wcmmode=disabled*
 
-![data-merged-table](assets/data-merged-table.png)
+![資料合併資料表](assets/data-merged-table.png)
 
 ## 使用XDP元件和XSD複雜型別 {#use-xdp-components-and-xsd-complex-types}
 

@@ -18,21 +18,21 @@ ht-degree: 0%
 
 ## Forms選項無法使用
 
-此 **[!UICONTROL Forms]** 選項在下列位置無法使用： **[!UICONTROL 導覽]** 頁面。
+**[!UICONTROL Forms]**&#x200B;選項在&#x200B;**[!UICONTROL 導覽]**&#x200B;頁面上無法使用。
 
 ![Forms選項無法使用](assets/installation-configuration-forms-option-unavailable-troubleshooting.png)
 
-若要啟用 **[!UICONTROL Forms]** 選項：
+若要啟用&#x200B;**[!UICONTROL Forms]**&#x200B;選項：
 
-1. 登入 [Cloud Manager](https://experience.adobe.com/)
-1. 找到您的程式並按一下 ![Forms選項無法使用](assets/Smock_Edit_18_N.svg) 圖示。 它會開啟您計畫的編輯計畫頁面。
-1. 開啟 **[!UICONTROL 解決方案和附加元件]** 標籤。
-1. 選取 **[!UICONTROL Forms]** 選項並按一下 **[!UICONTROL 儲存]**.
+1. 登入[Cloud Manager](https://experience.adobe.com/)
+1. 找到您的程式，然後按一下![Forms選項無法使用](assets/Smock_Edit_18_N.svg)圖示。 它會開啟您計畫的編輯計畫頁面。
+1. 開啟&#x200B;**[!UICONTROL 解決方案和附加元件]**&#x200B;標籤。
+1. 選取&#x200B;**[!UICONTROL Forms]**&#x200B;選項並按一下&#x200B;**[!UICONTROL 儲存]**。
 
    ![選取Forms選項](assets/installation-configuration-select-forms-option.png)
-1. [建立](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html?lang=en#how-to-use) 和 [執行](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html) 生產和非生產管道。
+1. [建立](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html?lang=en#how-to-use)和[執行](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html)生產和非生產管道。
 
-建置和部署管道後， **[!UICONTROL Forms]** 上的選項 **[!UICONTROL 導覽]** 頁面。
+建置和部署管道後，**[!UICONTROL 導覽]**&#x200B;頁面上的&#x200B;**[!UICONTROL Forms]**&#x200B;選項。
 
 <!--  
 ## Environment creation fails {#environment-creation-fails}
@@ -52,7 +52,7 @@ If the profile exists and issues still persist, contact Adobe Support. -->
 
 使用者無法執行建置管道。 管道執行一段時間後就會失敗。
 
-若要解決此問題，請開啟Cloud Manager，選取 **[!UICONTROL 更新]** 選項，然後執行管道。
+若要解決此問題，請開啟Cloud Manager，為您的環境選取&#x200B;**[!UICONTROL 更新]**&#x200B;選項，然後執行管道。
 
 
 ## 套件組合未處於作用中狀態 {#bundles-inactive-state}
@@ -61,5 +61,5 @@ If the profile exists and issues still persist, contact Adobe Support. -->
 
 1. 啟動AEM，並等待它完全啟動，直到所有套件組合都啟動為止。
 1. 停止AEM (Ctrl + C)。
-1. 放置Forms `.far` 檔案中新增的程式碼。
+1. 將Forms `.far`檔案放在安裝資料夾中。
 1. 重新啟動AEM伺服器。

@@ -14,46 +14,46 @@ ht-degree: 3%
 
 # 內容片段模型 {#content-fragment-models}
 
-Adobe Experience Manager (AEM)中的內容片段模型as a Cloud Service定義 [內容片段](/help/sites-cloud/administering/content-fragments/overview.md). 這些片段隨後可用於頁面製作，或用作Headless內容的基礎。
+Adobe Experience Manager (AEM)中的內容片段模型as a Cloud Service定義[內容片段](/help/sites-cloud/administering/content-fragments/overview.md)的內容結構。 這些片段隨後可用於頁面製作，或用作Headless內容的基礎。
 
 若要使用內容片段模式，您可以：
 
 1. [為您的執行個體啟用內容片段模型功能](/help/sites-cloud/administering/content-fragments/setup.md)
-1. [建立](#creating-a-content-fragment-model)、和 [設定](#defining-your-content-fragment-model)，您的內容片段模型
-1. [啟用您的內容片段模型](#enabling-disabling-a-content-fragment-model) 以便在建立內容片段時使用
-1. [在所需的Assets資料夾上允許您的內容片段模型](#allowing-content-fragment-models-assets-folder) 透過設定 **原則**.
+1. [建立](#creating-a-content-fragment-model)，並[設定您的內容片段模型](#defining-your-content-fragment-model)
+1. [啟用您的內容片段模型](#enabling-disabling-a-content-fragment-model)，以便在建立內容片段時使用
+1. [藉由設定&#x200B;**原則**，在必要的Assets資料夾](#allowing-content-fragment-models-assets-folder)上允許您的內容片段模型。
 
 ## 建立內容片段模型 {#creating-a-content-fragment-model}
 
-1. 瀏覽至 **工具**， **一般**，然後開啟 **內容片段模型**.
-1. 導覽至適合您的檔案夾 [設定，或子設定](/help/sites-cloud/administering/content-fragments/setup.md).
-1. 使用 **建立** 以開啟精靈。
+1. 導覽至&#x200B;**工具**、**一般**，然後開啟&#x200B;**內容片段模型**。
+1. 導覽至適合您[組態或子組態](/help/sites-cloud/administering/content-fragments/setup.md)的資料夾。
+1. 使用&#x200B;**建立**&#x200B;開啟精靈。
 
    >[!CAUTION]
    >
-   >如果 [未啟用內容片段模型](/help/sites-cloud/administering/content-fragments/setup.md)，則 **建立** 選項將無法使用。
+   >如果尚未啟用[使用內容片段模式](/help/sites-cloud/administering/content-fragments/setup.md)，將無法使用&#x200B;**建立**&#x200B;選項。
 
-1. 指定 **模型標題**.
-您也可以定義各種屬性；例如，新增 **標籤**， a **說明**，選取 **啟用模型** 至 [啟用模型](#enabling-disabling-a-content-fragment-model) 若有需要，並定義
-   **預設預覽URL模式**.
+1. 指定&#x200B;**模型標題**。
+您也可以定義各種屬性；例如，新增**標籤**、**描述**、選取&#x200B;**啟用模型**&#x200B;以[視需要啟用模型](#enabling-disabling-a-content-fragment-model)並定義
+   **預設預覽URL模式**。
 
    >[!NOTE]
    >
-   >另請參閱 [內容片段模型 — 屬性](#content-fragment-model-properties) 以取得完整詳細資訊。
+   >如需完整詳細資訊，請參閱[內容片段模式 — 屬性](#content-fragment-model-properties)。
 
    ![標題和說明](assets/cf-cfmodels-create.png)
 
-1. 使用 **建立** 以儲存空白模型。 訊息會指出動作是否成功，您可以選取 **開啟** 立即編輯模型，或 **完成** 以返回主控台。
+1. 使用&#x200B;**建立**&#x200B;儲存空的模型。 訊息會指出動作是否成功，您可以選取&#x200B;**開啟**&#x200B;立即編輯模型，或選取&#x200B;**完成**&#x200B;返回主控台。
 
 >[!CAUTION]
 >
 >如果要查詢多個引用的片段，則建議不要讓各種片段模式具有名稱相同，但型別不同的欄位名稱。
 >
->如需詳細資訊，請參閱 [用於內容片段的AEM GraphQL API — 限制](/help/headless/graphql-api/content-fragments.md#limitations)
+>如需詳細資訊，請參閱搭配內容片段使用的[AEM GraphQL API — 限制](/help/headless/graphql-api/content-fragments.md#limitations)
 
 ### 內容片段模型 — 屬性 {#content-fragment-model-properties}
 
-這些屬性是在您建立模型時定義的，稍後可透過進行編輯 **屬性** 內容片段模式的選項：
+這些屬性是在您建立模型時定義，並且稍後可以使用內容片段模型的&#x200B;**屬性**&#x200B;選項進行編輯：
 
 * **基本**
    * **模型標題**
@@ -61,7 +61,7 @@ Adobe Experience Manager (AEM)中的內容片段模型as a Cloud Service定義 [
    * **說明**
    * **啟用模型**
    * **預設預覽URL模式**
-內容片段編輯器可讓作者 **預覽** 外部前端應用程式中的內容。 一旦 **預覽服務** 已設定，請為前端應用程式新增URL。
+內容片段編輯器可讓作者在外部前端應用程式中**預覽**&#x200B;其內容。 設定&#x200B;**預覽服務**&#x200B;後，請新增前端應用程式的URL。
 
      預覽URL應遵循此模式：
     `https://<preview_url>?param=${expression}`
@@ -91,16 +91,16 @@ Adobe Experience Manager (AEM)中的內容片段模型as a Cloud Service定義 [
 
 ## 定義內容片段模型 {#defining-your-content-fragment-model}
 
-內容片段模式透過以下選項，有效地定義了結果內容片段的結構 **[資料型別](#data-types)**. 使用模型編輯器，您可以新增資料型別的例項，然後將其設定以建立必填欄位：
+內容片段模式透過選擇&#x200B;**[資料型別](#data-types)**，有效地定義了結果內容片段的結構。 使用模型編輯器，您可以新增資料型別的例項，然後將其設定以建立必填欄位：
 
 >[!CAUTION]
 >
 >編輯現有內容片段已使用的模型可能會影響這些相依片段。
 
-1. 瀏覽至 **工具**， **一般**，然後開啟 **內容片段模型**.
+1. 導覽至&#x200B;**工具**、**一般**，然後開啟&#x200B;**內容片段模型**。
 
 1. 導覽至容納您的內容片段模式的資料夾。
-1. 開啟所需的模型 **編輯**；使用快速動作或選取模型，然後從工具列選取動作。
+1. 開啟&#x200B;**編輯**&#x200B;所需的模型；使用快速動作，或選取模型，然後從工具列選取動作。
 
    開啟模型編輯器後，會顯示：
 
@@ -109,7 +109,7 @@ Adobe Experience Manager (AEM)中的內容片段模型as a Cloud Service定義 [
 
    >[!NOTE]
    >
-   >當欄位定義為 **必填**，則 **標籤** 左窗格中標示為星號(**&#42;**)。
+   >當欄位定義為&#x200B;**必要**&#x200B;時，左窗格中指示的&#x200B;**標籤**&#x200B;會標示為字元(**&#42;**)。
 
 ![屬性](assets/cf-cfmodels-empty-model.png)
 
@@ -119,14 +119,14 @@ Adobe Experience Manager (AEM)中的內容片段模型as a Cloud Service定義 [
 
      ![拖曳資料型別以建立欄位](assets/cf-cfmodels-create-field.png)
 
-   * 將欄位新增到模型後，右側面板會顯示 **屬性** 可針對該特定資料型別定義的屬性。 您可以在此處定義該欄位的必要條件。
+   * 將欄位新增至模型後，右側面板會顯示可針對該特定資料型別定義的&#x200B;**屬性**。 您可以在此處定義該欄位的必要條件。
 
-      * 許多屬性的含義一目瞭然，如需更多詳細資訊，請參閱 [屬性](#properties).
-      * 輸入 **欄位標籤** 自動完成 **屬性名稱**   — 如果為空白，則可在之後手動更新。
+      * 許多屬性不言自明，如需詳細資訊，請參閱[屬性](#properties)。
+      * 輸入&#x200B;**欄位標籤**&#x200B;會自動完成&#x200B;**屬性名稱** （如果空白），之後可以手動更新。
 
         >[!CAUTION]
         >
-        手動更新屬性時 **屬性名稱** 對於資料型別，名稱必須包含 *僅限* A-Z、a-z、0-9和下劃線「_」作為特殊字元。
+        手動更新資料型別的屬性&#x200B;**Property Name**&#x200B;時，名稱必須僅包含&#x200B;*個* A-Z、a-z、0-9和下劃線「_」作為特殊字元。
         >
         如果在舊版AEM中建立的模型包含非法字元，請移除或更新這些字元。
 
@@ -144,7 +144,7 @@ Adobe Experience Manager (AEM)中的內容片段模型as a Cloud Service定義 [
 
    ![儲存](assets/cf-cfmodels-save.png)
 
-1. 選取 **儲存** 以保留定義。
+1. 選取&#x200B;**儲存**&#x200B;以保留定義。
 
 ## 資料類型 {#data-types}
 
@@ -157,9 +157,9 @@ Adobe Experience Manager (AEM)中的內容片段模型as a Cloud Service定義 [
 
   >[!NOTE]
   >
-  文字區域是RTF、純文字還是Markdown，由屬性在模型中定義 **預設型別**.
+  文字區域是否為RTF、純文字或Markdown，是由屬性&#x200B;**預設型別**&#x200B;在模型中定義。
   >
-  此格式無法從 [內容片段編輯器](/help/sites-cloud/administering/content-fragments/authoring.md)，但僅從模型中進行。
+  此格式無法從[內容片段編輯器](/help/sites-cloud/administering/content-fragments/authoring.md)變更，只能從模型變更。
 
 * **數字**
    * 新增一或多個數值欄位
@@ -172,14 +172,14 @@ Adobe Experience Manager (AEM)中的內容片段模型as a Cloud Service定義 [
 * **標籤**
    * 允許片段作者存取及選取標籤區域
 * **內容參考**
-   * 參考任何型別的其他內容；可用於 [建立巢狀內容](#using-references-to-form-nested-content)
+   * 參考任何型別的其他內容；可用於[建立巢狀內容](#using-references-to-form-nested-content)
    * 如果參照了影像，您可以選擇顯示縮圖
-* **片段引用**
-   * 參考其他內容片段；可用於 [建立巢狀內容](#using-references-to-form-nested-content)
+* **片段參考**
+   * 參考其他內容片段；可用於[建立巢狀內容](#using-references-to-form-nested-content)
    * 可以設定此資料類型以允許片段作者：
       * 直接編輯參考的片段。
       * 根據適當的模式建立新的內容片段
-* **json物件**
+* **JSON物件**
    * 允許內容片段作者在片段的對應元素中輸入JSON語法。
       * 允許AEM儲存您從其他服務複製/貼上的直接JSON。
       * JSON會傳遞，並在GraphQL中輸出為JSON。
@@ -199,7 +199,7 @@ Adobe Experience Manager (AEM)中的內容片段模型as a Cloud Service定義 [
 
 * **屬性名稱**
 
-  手動更新資料型別的此屬性時，名稱 **必須** contain *僅限* A-Z、a-z、0-9和下劃線「_」作為特殊字元。
+  手動更新資料型別的這個屬性時，名稱&#x200B;**必須**&#x200B;僅包含&#x200B;*個* A-Z、a-z、0-9和下劃線「_」作為特殊字元。
 
   >[!CAUTION]
   >
@@ -207,30 +207,30 @@ Adobe Experience Manager (AEM)中的內容片段模型as a Cloud Service定義 [
 
 * **呈現為**
 
-  在片段中實現/轉譯欄位的各種選項。 這通常可讓您定義作者將看到欄位的單一例項，還是允許建立多個例項。 時間 **多個欄位** 用於定義專案的最小和最大數量 — 請參閱 [驗證](#validation) 以取得更多詳細資料。
+  在片段中實現/轉譯欄位的各種選項。 這通常可讓您定義作者將看到欄位的單一例項，還是允許建立多個例項。 使用&#x200B;**多個欄位**&#x200B;時，您可以定義專案的最小和最大數量 — 如需詳細資訊，請參閱[驗證](#validation)。
 
 * **欄位標籤**
-輸入 **欄位標籤** 自動產生 **屬性名稱**，然後可視需要手動更新。
+輸入**欄位標籤**&#x200B;會自動產生&#x200B;**屬性名稱**，然後可視需要手動更新。
 
 * **驗證**
-基本驗證可由以下機制提供 **必填** 屬性。 有些資料型別有額外的驗證欄位。 另請參閱 [驗證](#validation) 以取得更多詳細資料。
+基本驗證可由機制使用，例如**Required**&#x200B;屬性。 有些資料型別有額外的驗證欄位。 如需詳細資訊，請參閱[驗證](#validation)。
 
 * 對於「多行」 **資料類型** ，可將「預設類型 **** 」定義為：
 
-   * **RTF文字**
+   * **RTF格式**
    * **Markdown**
    * **純文字**
 
-  若未指定，則預設值 **RTF文字** 用於此欄位。
+  如果未指定，此欄位會使用預設值&#x200B;**RTF**。
 
-  變更 **預設型別** 在內容片段模型中，只有在編輯器中開啟並儲存該片段後，該片段才會對現有、相關的內容片段生效。
+  在內容片段模型中變更&#x200B;**預設型別**，只會在編輯器中開啟並儲存該片段後，對現有、相關的內容片段生效。
 
-* **獨特**
+* **唯一**
 從目前模型建立的所有內容片段內容（適用於特定欄位）必須是唯一的。
 
   這是為了確保內容作者無法重複已新增至相同模型其他片段中的內容。
 
-  例如， **單行文字** 已呼叫的欄位 `Country` 在內容片段模型中不能有 `Japan` 於兩個相依內容片段中。 嘗試第二個執行個體時會發出警告。
+  例如，內容片段模型中名為`Country`的&#x200B;**單行文字**&#x200B;欄位在兩個相依的內容片段中不能有值`Japan`。 嘗試第二個執行個體時會發出警告。
 
   >[!NOTE]
   >
@@ -238,18 +238,18 @@ Adobe Experience Manager (AEM)中的內容片段模型as a Cloud Service定義 [
 
   >[!NOTE]
   >
-  變數可能具有相同的 *獨特* 值做為相同片段的變數，但與其他片段變數中使用的值不同。
+  變數可以有與相同片段變數相同的&#x200B;*唯一*&#x200B;值，但與其他片段變數中使用的值不同。
 
-* 另請參閱 **[內容參考](#content-reference)** 以取得該特定資料型別及其屬性的詳細資訊。
+* 如需特定資料型別及其屬性的詳細資訊，請參閱&#x200B;**[內容參考](#content-reference)**。
 
-* 另請參閱 **[片段參考（巢狀片段）](#fragment-reference-nested-fragments)** 以取得該特定資料型別及其屬性的詳細資訊。
+* 如需特定資料型別及其屬性的詳細資訊，請參閱&#x200B;**[片段參考（巢狀片段）](#fragment-reference-nested-fragments)**。
 
 * **可翻譯**
 
-  檢查 **可翻譯** 內容片段模型編輯器中的欄位上的核取方塊將：
+  核取內容片段模型編輯器中欄位上的&#x200B;**可翻譯**&#x200B;核取方塊將：
 
-   * 確保欄位的屬性名稱已新增到翻譯設定、上下文 `/content/dam/<sites-configuration>`，如果尚未存在。
-   * 對於GraphQL：設定 `<translatable>` 「 」內容片段欄位上的屬性 `yes`，以允許GraphQL查詢篩選僅含有可翻譯內容的JSON輸出。
+   * 確認欄位的屬性名稱已新增至翻譯組態，內容`/content/dam/<sites-configuration>` （如果尚未存在）。
+   * 對於GraphQL：將內容片段欄位上的`<translatable>`屬性設定為`yes`，以允許GraphQL查詢篩選僅包含可翻譯內容的JSON輸出。
 
 ## 驗證  {#validation}
 
@@ -263,16 +263,16 @@ Adobe Experience Manager (AEM)中的內容片段模型as a Cloud Service定義 [
    * 測試特定型別的內容。
    * 只能參考指定檔案大小或更小的資產。
    * 只能參考預先定義的寬度和/或高度範圍（以畫素為單位）內的影像。
-* **片段引用**
+* **片段參考**
    * 測試特定內容片段模型。
-* **專案最小數量** / **專案最大數量**
+* **最小專案數** / **最大專案數**
 
-  已定義為 **多個欄位** (設定為 **呈現為**)擁有下列選項：
+  已定義為&#x200B;**多個欄位** （以&#x200B;**Render As**&#x200B;設定）的欄位具有選項：
 
-   * **專案最小數量**
-   * **專案最大數量**
+   * **最小專案數**
+   * **最大專案數**
 
-  這些將在中驗證 [內容片段編輯器](/help/sites-cloud/administering/content-fragments/authoring.md).
+  已在[內容片段編輯器](/help/sites-cloud/administering/content-fragments/authoring.md)中驗證這些專案。
 
 ## 使用參照來形成巢狀內容 {#using-references-to-form-nested-content}
 
@@ -282,27 +282,29 @@ Adobe Experience Manager (AEM)中的內容片段模型as a Cloud Service定義 [
    * 提供其他內容的簡單參照；任何型別。
    * 可以為一個或多個參考（在產生的片段中）設定。
 
-* **[片段引用](#fragment-reference-nested-fragments)** （巢狀片段）
+* **[片段參考](#fragment-reference-nested-fragments)** （巢狀片段）
    * 根據指定的特定模型，參考其他片段。
    * 可讓您包含/擷取結構化資料。
      >[!NOTE]
      >
-     當您使用時，此方法特別有趣 [搭配GraphQL使用內容片段的Headless內容傳送](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md).
+     當您透過GraphQL](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md)使用內容片段的[Headless內容傳遞時，此方法特別令人感興趣。
    * 可以為一個或多個參考（在產生的片段中）設定。
 
 >[!NOTE]
 >
 AEM針對下列專案提供週期性保護：
 >
-* 內容參考這可防止使用者新增對目前片段的參考，並可能導致空白的片段參考選擇器對話方塊。
+* 內容參照
+這可防止使用者新增對目前片段的引用，並可能導致空白的片段引用選取器對話方塊。
 >
-* GraphQL中的片段參考如果您建立深層查詢，並傳回互相參考的多個內容片段，則在第一次出現時就會傳回null。
+* GraphQL中的片段參考
+如果您建立深層查詢，且該查詢傳回多個互相參照的內容片段，則它會在第一次出現時傳回null。
 
 >[!CAUTION]
 >
 如果要查詢多個引用的片段，則建議不要讓各種片段模式具有名稱相同，但型別不同的欄位名稱。
 >
-如需詳細資訊，請參閱 [用於內容片段的AEM GraphQL API — 限制](/help/headless/graphql-api/content-fragments.md#limitations)
+如需詳細資訊，請參閱搭配內容片段使用的[AEM GraphQL API — 限制](/help/headless/graphql-api/content-fragments.md#limitations)
 
 ### 內容參考 {#content-reference}
 
@@ -310,19 +312,19 @@ AEM針對下列專案提供週期性保護：
 
 除了標準屬性之外，您還可以指定：
 
-* 此 **根路徑**，會指定儲存任何參考內容的位置
+* **根路徑**，指定儲存任何參考內容的位置
   >[!NOTE]
   >
   如果您想在使用內容片段編輯器時直接在此欄位上傳和參考影像，則必須使用此選項。
   >
-  另請參閱 [參考影像](/help/sites-cloud/administering/content-fragments/authoring.md#reference-images) 以取得更多詳細資料。
+  如需詳細資訊，請參閱[參考影像](/help/sites-cloud/administering/content-fragments/authoring.md#reference-images)。
 
 * 可參考的內容型別
   >[!NOTE]
   >
-  這些必須包括 **影像** 如果您想在使用內容片段編輯器時直接在此欄位上傳和參考影像。
+  如果您想要在使用內容片段編輯器時直接上傳和參考此欄位中的影像，這些必須包含&#x200B;**影像**。
   >
-  另請參閱 [參考影像](/help/sites-cloud/administering/content-fragments/authoring.md#reference-images) 以取得更多詳細資料。
+  如需詳細資訊，請參閱[參考影像](/help/sites-cloud/administering/content-fragments/authoring.md#reference-images)。
 
 * 檔案大小限制
 * 如果參照影像：
@@ -356,15 +358,15 @@ type CompanyModel {
 
 >[!NOTE]
 >
-片段參考對以下專案特別感興趣 [搭配GraphQL使用內容片段的Headless內容傳送](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md).
+片段參考對搭配GraphQL](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md)使用內容片段的[Headless內容傳遞特別感興趣。
 
 除了標準屬性之外，您還可以定義：
 
 * **呈現為**：
 
-   * **多欄位**  — 片段作者可以建立多個個別參考
+   * **multifield** — 片段作者可以建立多個個別參考
 
-   * **片段參考**  — 允許片段作者選取片段的單一參照
+   * **fragmentreference** — 允許片段作者選取片段的單一參考
 
 * **模型型別**
 可選取多個模型。 將參照新增至內容片段時，任何參照的片段都必須使用這些模型建立。
@@ -376,9 +378,9 @@ type CompanyModel {
 
   如此可讓片段作者根據適當的模型建立片段。
 
-   * **片段參考複合**  — 允許片段作者藉由選取多個片段來建置複合
+   * **fragmentreferencecomposite** — 允許片段作者藉由選取多個片段來建置複合
 
-  ![片段引用](assets/cf-cfmodels-fragment-reference.png)
+  ![片段參考](assets/cf-cfmodels-fragment-reference.png)
 
 >[!NOTE]
 >
@@ -388,7 +390,7 @@ GraphQL中也有片段參考的週期性保護。 如果您在兩個互相參照
 
 ## 啟用或停用內容片段模型 {#enabling-disabling-a-content-fragment-model}
 
-您可以 **啟用** 或 **停用** 您的內容片段模型，以完整控制其使用。
+您可以&#x200B;**啟用**&#x200B;或&#x200B;**停用**&#x200B;您的內容片段模型，以完全控制其使用。
 
 ### 啟用內容片段模型 {#enabling-a-content-fragment-model}
 
@@ -400,10 +402,10 @@ GraphQL中也有片段參考的週期性保護。 如果您在兩個互相參照
 
 若要啟用被標示為下列其中一項的模型：
 
-* **草稿** ：新增（從未啟用）。
+* **草稿** ：新的（從未啟用）。
 * **已停用** ：已特別停用。
 
-您使用 **啟用** 選項來自：
+您可從下列任一位置使用&#x200B;**啟用**&#x200B;選項：
 
 * 當選取所需的「模型」時，頂部工具列。
 * 對應的「快速動作」(Quick Action) （將滑鼠移到所需模型上）。
@@ -414,13 +416,13 @@ GraphQL中也有片段參考的週期性保護。 如果您在兩個互相參照
 
 也可以停用模型，以便：
 
-* 模型無法再用來作為建立基礎 *新* 內容片段。
+* 此模型無法再用來建立&#x200B;*新的*&#x200B;內容片段。
 * 但是：
    * GraphQL結構描述會持續產生，且仍可查詢（以避免影響JSON API）。
    * 您仍可以從GraphQL端點查詢及傳回任何以模型為基礎的內容片段。
 * 該模型無法再參考，但現有參考將保持不變，並且仍可以從GraphQL端點查詢和返回。
 
-若要停用標示為 **已啟用**，您會使用 **停用** 選項來自：
+若要停用標示為&#x200B;**已啟用**&#x200B;的模型，您可從下列任一選項使用&#x200B;**停用**&#x200B;選項：
 
 * 當選取所需的「模型」時，頂部工具列。
 * 對應的「快速動作」(Quick Action) （將滑鼠移到所需模型上）。
@@ -429,23 +431,23 @@ GraphQL中也有片段參考的週期性保護。 如果您在兩個互相參照
 
 ## 允許資產資料夾中的內容片段模型 {#allowing-content-fragment-models-assets-folder}
 
-若要實作內容控管，您可以設定 **原則** ，以控制在該資料夾中允許建立片段的內容片段模型。
+若要實作內容控管，您可以在Assets資料夾上設定&#x200B;**原則**，以控制允許在該資料夾中建立片段的內容片段模型。
 
 >[!NOTE]
 >
-其機制類似於 [允許頁面範本](/help/sites-cloud/authoring/sites-console/templates.md#allowing-a-template-author) 頁面及其子頁面（在頁面的進階屬性中）。
+此機制類似於[允許在頁面的進階屬性中，為頁面及其子頁面設定頁面範本](/help/sites-cloud/authoring/sites-console/templates.md#allowing-a-template-author)。
 
-若要設定 **原則** 的 **允許的內容片段模型**：
+若要為&#x200B;**允許的內容片段模型**&#x200B;設定&#x200B;**原則**：
 
-1. 導覽並開啟 **屬性** ，作為所需的Assets資料夾。
+1. 瀏覽並開啟必要的Assets資料夾的&#x200B;**屬性**。
 
-1. 開啟 **原則** 標籤，您可在其中設定：
+1. 開啟&#x200B;**原則**&#x200B;標籤，您可以在其中設定：
 
    * **繼承自`<folder>`**
 
      建立新的子資料夾時，會自動繼承原則；如果子資料夾需要允許與父資料夾不同的模型，則可以重新設定原則（並中斷繼承）。
 
-   * **允許的內容片段模型（依路徑）**
+   * **允許的內容片段模型（依路徑**）
 
      可允許多個模型。
 
@@ -455,12 +457,12 @@ GraphQL中也有片段參考的週期性保護。 如果您在兩個互相參照
 
    ![內容片段模型原則](assets/cf-cfmodels-policy-assets-folder.png)
 
-1. **儲存** 任何變更。
+1. **儲存**&#x200B;任何變更。
 
 允許用於資料夾的內容片段模型的解析如下：
-* 此 **原則** 的 **允許的內容片段模型**.
+* **允許的內容片段模型**&#x200B;的&#x200B;**原則**。
 * 如果空白，請嘗試使用繼承規則來決定原則。
-* 如果繼承鏈沒有傳遞結果，請檢視 **Cloud Service** 該資料夾的設定（也請先直接設定，然後再透過繼承）。
+* 如果繼承鏈結未傳遞結果，請檢視該資料夾的&#x200B;**Cloud Service**&#x200B;設定（也請先直接再透過繼承）。
 * 如果以上所有內容均未提供任何結果，則該資料夾不允許使用模型。
 
 ## 刪除內容片段模型 {#deleting-a-content-fragment-model}
@@ -471,10 +473,10 @@ GraphQL中也有片段參考的週期性保護。 如果您在兩個互相參照
 
 若要刪除內容片段模型：
 
-1. 瀏覽至 **工具**， **一般**，然後開啟 **內容片段模型**.
+1. 導覽至&#x200B;**工具**、**一般**，然後開啟&#x200B;**內容片段模型**。
 
 1. 導覽至容納您的內容片段模式的資料夾。
-1. 選取您的模型，然後 **刪除** 工具列中的。
+1. 選取您的模型，然後從工具列&#x200B;**刪除**。
 
    >[!NOTE]
    >
@@ -486,10 +488,10 @@ GraphQL中也有片段參考的週期性保護。 如果您在兩個互相參照
 
 若要發佈內容片段模型：
 
-1. 瀏覽至 **工具**， **一般**，然後開啟 **內容片段模型**.
+1. 導覽至&#x200B;**工具**、**一般**，然後開啟&#x200B;**內容片段模型**。
 
 1. 導覽至容納您的內容片段模式的資料夾。
-1. 選取您的模型，然後 **發佈** 工具列中的。
+1. 選取您的模型，然後從工具列選取&#x200B;**Publish**。
 發佈狀態會顯示在主控台中。
 
    >[!NOTE]
@@ -502,17 +504,17 @@ GraphQL中也有片段參考的週期性保護。 如果您在兩個互相參照
 
 若要取消發佈內容片段模型：
 
-1. 瀏覽至 **工具**， **一般**，然後開啟 **內容片段模型**.
+1. 導覽至&#x200B;**工具**、**一般**，然後開啟&#x200B;**內容片段模型**。
 
 1. 導覽至容納您的內容片段模型的資料夾。
-1. 選取您的模型，然後 **取消發佈** 工具列中的。
+1. 選取您的模型，然後從工具列&#x200B;**取消發佈**。
 主控台會指出發佈狀態。
 
 如果您嘗試取消發佈一個或多個片段目前使用的模型，則會顯示錯誤警告。 例如：
 
-![取消發佈使用中的模型時顯示內容片段模型錯誤訊息](assets/cf-cfmodels-unpublish-error.png)
+取消發佈使用中的模型時出現![內容片段模型錯誤訊息](assets/cf-cfmodels-unpublish-error.png)
 
-此訊息建議您檢查 [引用](/help/sites-cloud/authoring/basic-handling.md#references) 面板以進一步調查：
+此訊息建議您檢查[參考](/help/sites-cloud/authoring/basic-handling.md#references)面板以進一步調查：
 
 ![參考中的內容片段模型](assets/cf-cfmodels-references.png)
 
@@ -542,41 +544,41 @@ GraphQL中也有片段參考的週期性保護。 如果您在兩個互相參照
 
 ### 解決方案 {#the-solution}
 
-為了解決這些問題，內容片段模型包括 *已鎖定* 在發佈後立即對作者設為唯讀模式。 此狀態由以下指示 **已鎖定**：
+為了解決這些問題，內容片段模型在發佈後立即在作者上&#x200B;*鎖定*&#x200B;為唯讀模式。 此狀態由&#x200B;**鎖定**&#x200B;表示：
 
-![鎖定內容片段模型的卡片](assets/cf-cfmodels-locked.png)
+鎖定內容片段模型](assets/cf-cfmodels-locked.png)的![卡片
 
-當模型為 **已鎖定** （在「唯讀」模式中），您可以檢視模型的內容和結構，但無法加以編輯。
+當模型為&#x200B;**鎖定** （在「唯讀」模式中）時，您可以檢視模型的內容和結構，但無法進行編輯。
 
-您可以管理 **已鎖定** 從主控台或模型編輯器中的模型：
+您可以從主控台或模型編輯器管理&#x200B;**已鎖定的**&#x200B;模型：
 
 * 主控台
 
-  在主控台中，您可以使用來管理唯讀模式 **解鎖** 和 **鎖定** 工具列中的動作：
+  從主控台，您可以使用工具列中的&#x200B;**解除鎖定**&#x200B;和&#x200B;**鎖定**&#x200B;動作來管理唯讀模式：
 
   ![鎖定的內容片段模型的工具列](assets/cf-cfmodels-locked.png)
 
-   * 您可以 **解鎖** 啟用編輯的模型。
+   * 您可以&#x200B;**解鎖**&#x200B;模型以啟用編輯。
 
-     如果您選取 **解鎖** 警告隨即顯示，您必須確認 **解鎖** 動作：
-     ![解鎖內容片段模型時的訊息](assets/cf-cfmodels-unlock-message.png)
+     如果您選取&#x200B;**解除鎖定**，會顯示警告，而且您必須確認&#x200B;**解除鎖定**動作：
+     解鎖內容片段模型](assets/cf-cfmodels-unlock-message.png)時出現![訊息
 
      然後您可以開啟模型以進行編輯。
 
-   * 您也可以 **鎖定** 之後模型。
-   * 重新發佈模型會立即將其傳回 **已鎖定** （唯讀）模式。
+   * 您之後也可以&#x200B;**鎖定**&#x200B;模型。
+   * 重新發佈模型會立即將其傳回&#x200B;**鎖定** （唯讀）模式。
 
 * 模型編輯器
 
-   * 當您開啟已鎖定的模型時，系統會警告您，並顯示三個動作： **取消**， **以唯讀方式檢視**， **編輯**：
+   * 當您開啟已鎖定的模型時，系統會警告您，並顯示三個動作： **取消**、**檢視唯讀**、**編輯**：
 
-     ![檢視鎖定的內容片段模型時的訊息](assets/cf-cfmodels-editor-lock-message.png)
+     檢視鎖定的內容片段模型時出現![訊息](assets/cf-cfmodels-editor-lock-message.png)
 
-   * 如果您選取 **以唯讀方式檢視**，您可以檢視模型的內容和結構：
+   * 如果您選取&#x200B;**檢視唯讀**，您可以檢視模型的內容和結構：
 
      ![檢視唯讀 — 鎖定的內容片段模型](assets/cf-cfmodels-editor-locked-view-only.png)
 
-   * 如果您選取 **編輯**，您可以編輯並儲存更新：
+   * 如果您選取&#x200B;**編輯**，您可以編輯並儲存您的更新：
 
      ![編輯 — 鎖定的內容片段模型](assets/cf-cfmodels-editor-locked-edit.png)
 
@@ -584,4 +586,4 @@ GraphQL中也有片段參考的週期性保護。 如果您在兩個互相參照
      >
      頂端可能仍會顯示警告，但此時模型已由現有內容片段使用。
 
-   * **取消** 將您帶回主控台。
+   * **取消**&#x200B;會帶您返回主控台。

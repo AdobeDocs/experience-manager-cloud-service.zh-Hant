@@ -23,7 +23,7 @@ ht-degree: 64%
 * 從 Experience Manager 的遠端部署作業中擷取高於臨界值限制設定的資產
 * 轉出即時副本
 
-您可以從以下網址檢視非同步作業的狀態： **[!UICONTROL 背景作業]** 儀表板位置 **全域導覽** > **工具** > **一般** > **工作**.
+您可以在&#x200B;**全域導覽** > **工具** > **一般** > **作業**&#x200B;的&#x200B;**[!UICONTROL 背景作業]**&#x200B;儀表板中檢視非同步作業的狀態。
 
 >[!NOTE]
 >
@@ -35,11 +35,11 @@ ht-degree: 64%
 
 AEM 以非同步方式處理操作時，您會透過[收件匣](/help/sites-cloud/authoring/inbox.md)和電子郵件 (如果已啟用) 收到通知。
 
-若要檢視非同步操作的詳細狀態，請導覽至 **[!UICONTROL 背景作業]** 頁面。
+若要檢視非同步操作的詳細狀態，請導覽至&#x200B;**[!UICONTROL 背景操作]**&#x200B;頁面。
 
-1. 在Experience Manager介面中，選取 **全域導覽** > **工具** > **一般** > **工作**.
+1. 在Experience Manager介面中，選取&#x200B;**全域導覽** > **工具** > **一般** > **工作**。
 
-1. 在 **[!UICONTROL 背景作業]** 頁面中，檢閱作業的詳細資訊。
+1. 在&#x200B;**[!UICONTROL 背景作業]**&#x200B;頁面中，檢閱作業的詳細資料。
 
    ![非同步操作的狀態和詳細資訊](assets/async-operation-status.png)
 
@@ -57,7 +57,7 @@ AEM 以非同步方式處理操作時，您會透過[收件匣](/help/sites-clou
 
    ![停止圖示](assets/async-stop-icon.png)
 
-1. 若要檢視額外詳細資訊（例如，說明和記錄），請選取操作，然後按一下 **[!UICONTROL 開啟]** 工具列中的。
+1. 若要檢視額外詳細資訊（例如，說明和記錄），請選取操作，然後按一下工具列中的[開啟]。****
 
    ![開啟圖示](assets/async-open-icon.png)
 
@@ -77,7 +77,7 @@ AEM 以非同步方式處理操作時，您會透過[收件匣](/help/sites-clou
 
 >[!NOTE]
 >
->[OSGi設定](/help/implementing/deploying/configuring-osgi.md#creating-osgi-configurations) 會將視為可變內容，並且任何此類設定都必須部署為生產環境的內容套件。
+>[OSGi設定](/help/implementing/deploying/configuring-osgi.md#creating-osgi-configurations)被視為可變內容，任何這類設定都必須部署為生產環境的內容套件。
 
 ### 清除已完成的工作 {#purging-completed-jobs}
 
@@ -85,8 +85,8 @@ AEM每天01:00會執行清除作業，將超過一天的已完成非同步作業
 
 您可以修改清除作業的排程，並調整已完成作業詳細資訊的保留時間。您也可以針對要保留詳細資訊的已完成作業，隨時設定數量上限。
 
-1. 請在登入AEM SDK Quickstart Jar的AEM Web主控台 `https://<host>:<port>/system/console` 作為管理員使用者。
-1. 瀏覽至 **osgi** > **設定**
+1. 以管理員使用者身分登入`https://<host>:<port>/system/console`的AEM SDK Quickstart Jar的AEM Web主控台。
+1. 瀏覽至&#x200B;**OSGi** > **設定**
 1. 開啟&#x200B;**[!UICONTROL 「Adobe Granite 非同步作業清除已排程作業」]**。
 1. 指定下列設定：
    * 已完成作業的保留天數上限。
@@ -101,8 +101,8 @@ AEM每天01:00會執行清除作業，將超過一天的已完成非同步作業
 
 如果要刪除的資產或資料夾數量超過上限，系統就會以非同步方式執行刪除操作。
 
-1. 請在登入AEM SDK Quickstart Jar的AEM Web主控台 `https://<host>:<port>/system/console` 作為管理員使用者。
-1. 瀏覽至 **osgi** > **設定**
+1. 以管理員使用者身分登入`https://<host>:<port>/system/console`的AEM SDK Quickstart Jar的AEM Web主控台。
+1. 瀏覽至&#x200B;**OSGi** > **設定**
 1. 在 Web 主控台中，開啟&#x200B;**[!UICONTROL 「非同步處理預設佇列設定」]**。
 1. 在&#x200B;**[!UICONTROL 「資產數上限」]**&#x200B;方塊中，指定非同步處理刪除操作的資產/資料夾數量上限。
 
@@ -115,8 +115,8 @@ AEM每天01:00會執行清除作業，將超過一天的已完成非同步作業
 
 如果要移動的資產/資料夾或參照數量超過上限，系統就會以非同步方式執行移動操作。
 
-1. 請在登入AEM SDK Quickstart Jar的AEM Web主控台 `https://<host>:<port>/system/console` 作為管理員使用者。
-1. 瀏覽至 **osgi** > **設定**
+1. 以管理員使用者身分登入`https://<host>:<port>/system/console`的AEM SDK Quickstart Jar的AEM Web主控台。
+1. 瀏覽至&#x200B;**OSGi** > **設定**
 1. 在 Web 主控台中，開啟&#x200B;**[!UICONTROL 「非同步移動操作作業處理設定」]**。
 1. 在&#x200B;**[!UICONTROL 「資產/參照數上限」]**&#x200B;方塊中，指定非同步處理移動操作的資產/資料夾或參照數量上限。
 
@@ -127,8 +127,8 @@ AEM每天01:00會執行清除作業，將超過一天的已完成非同步作業
 
 ### 設定非同步MSM操作 {#configuring-asynchronous-msm-operations}
 
-1. 請在登入AEM SDK Quickstart Jar的AEM Web主控台 `https://<host>:<port>/system/console` 作為管理員使用者。
-1. 瀏覽至 **osgi** > **設定**
+1. 以管理員使用者身分登入`https://<host>:<port>/system/console`的AEM SDK Quickstart Jar的AEM Web主控台。
+1. 瀏覽至&#x200B;**OSGi** > **設定**
 1. 在 Web 主控台中，開啟&#x200B;**[!UICONTROL 「非同步頁面移動操作作業處理設定」]**。
 1. 勾選&#x200B;**「啟用電子郵件通知」**&#x200B;選項，接收此作業狀態的電子郵件通知，例如，成功、失敗。
 

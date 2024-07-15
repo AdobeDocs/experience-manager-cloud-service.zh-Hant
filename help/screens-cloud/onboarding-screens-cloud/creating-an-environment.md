@@ -16,23 +16,23 @@ ht-degree: 5%
 本節說明如何在Cloud Manager中為您的方案建立環境。
 
 >[!NOTE]
->另請參閱 [在Cloud Manager中管理環境](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html) 以瞭解使用者如何建立環境。
+>請參閱[在Cloud Manager中管理環境](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html)，瞭解使用者如何建立環境。
 
 ## 目標 {#objective}
 
 以下章節說明如何在Cloud Manager中為您的方案建立環境。
 
-## 在Cloud Manager中為您的Screens專案建立環境的步驟 {#steps-branch-creation}
+## 在Cloud Manager中為Screens專案建立環境的步驟 {#steps-branch-creation}
 
-專案建立成功後，您可以在Cloud Manager的總覽頁面中看到行動號召卡更新。
+專案建立成功後，您可以在Cloud Manager的「概觀」頁面中看到行動號召卡片更新。
 
-1. 瀏覽到Cloud Manager並選取圖示，這樣您就可以進入Cloud Manager的 **概觀** 頁面。
+1. 導覽至Cloud Manager並選取圖示，即可前往Cloud Manager的&#x200B;**概觀**&#x200B;頁面。
 
-1. 按一下 **新增環境** 從Cloud Manager的 **概觀** 頁面。
+1. 從Cloud Manager的&#x200B;**總覽**&#x200B;頁面按一下&#x200B;**新增環境**。
 
    ![影像](/help/screens-cloud/assets/onboarding/add-environ1.png)
 
-1. 從中選擇環境詳細資訊 **新增環境** 對話方塊並按一下 **儲存**.
+1. 從&#x200B;**新增環境**&#x200B;對話方塊中選取環境詳細資料，然後按一下&#x200B;**儲存**。
 
    ![影像](/help/screens-cloud/assets/onboarding/add-environ2.png)
 
@@ -42,4 +42,4 @@ ht-degree: 5%
 
 ## 下一步 {#whats-next}
 
-瞭解如何在Cloud Manager中為您的方案設定環境後，您就可以繼續下一步了。 入門流程的下一步是 [執行管道](/help/screens-cloud/onboarding-screens-cloud/running-a-pipeline.md).
+瞭解如何在Cloud Manager中為您的方案設定環境後，您就可以繼續下一步了。 入門流程的下一步是[執行管道](/help/screens-cloud/onboarding-screens-cloud/running-a-pipeline.md)。

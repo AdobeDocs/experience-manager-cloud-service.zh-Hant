@@ -23,11 +23,11 @@ ht-degree: 10%
    * 當您變更來源內容時，來源和即時副本會同步。
    * 您可以透過斷開各個子頁面和/或元件的即時關係，僅對 Live Copy 的內容進行調整。
 
-如需MSM概念的詳細概觀，請參閱 [重複使用內容：多網站管理員和即時副本](/help/sites-cloud/administering/msm/overview.md).
+如需MSM概念的詳細概觀，請參閱[重複使用內容：多網站管理員和即時副本](/help/sites-cloud/administering/msm/overview.md)。
 
 >[!NOTE]
 >
->[多站點管理員(MSM)](/help/sites-cloud/administering/msm/overview.md) Adobe Experience Manager中的功能可讓使用者重複使用製作一次並在多個網站位置重複使用的內容。
+>Adobe Experience Manager中的[多網站管理員(MSM)](/help/sites-cloud/administering/msm/overview.md)功能可讓使用者重複使用製作一次的內容，然後跨多個網站位置重複使用。
 
 使用MSM處理內容片段您可以：
 
@@ -39,30 +39,30 @@ ht-degree: 10%
 
 >[!CAUTION]
 >
->內容片段的MSM僅適用於透過使用內容片段時 **資產** 主控台。
+>只有在透過&#x200B;**Assets**&#x200B;主控台使用內容片段時，才能使用內容片段的MSM。
 >
->MSM功能為 *非* 使用時可用 **內容片段** 主控台。
+>使用&#x200B;**內容片段**&#x200B;主控台時，MSM功能&#x200B;*無法*&#x200B;使用。
 
 ## 操作說明 {#how-to}
 
-請參閱下列檔案，以取得有關使用MSM處理內容片段（也適用於資產）的詳細資訊：
+請參閱下列檔案，以取得有關使用MSM處理內容片段(亦適用於Assets)的詳細資訊：
 
-* 使用方式 [內容片段（和資產）的MSM](/help/assets/reuse-assets-using-msm.md)
+* 如何針對內容片段(和Assets)使用[MSM](/help/assets/reuse-assets-using-msm.md)
 
 * [建立即時副本](/help/assets/reuse-assets-using-msm.md)
 
   >[!CAUTION]
   >
-  >如果您想使用MSM建立內容片段副本)，則任何 **獨特** 應從個別專案中使用的任何資料型別中移除限制 [內容片段模型](/help/assets/content-fragments/content-fragments-models.md).
+  >如果您想使用MSM建立內容片段的復本)，則應該從個別[內容片段模式](/help/assets/content-fragments/content-fragments-models.md)中使用的任何資料型別中移除任何&#x200B;**唯一**&#x200B;限制。
 
 * [檢視來源和即時副本的屬性和狀態](/help/assets/reuse-assets-using-msm.md#properties)
 * [將修改從來源傳播到即時副本](/help/assets/reuse-assets-using-msm.md#rollout-sync)
 * 取消並恢復下列專案的繼承：
-   * 中的欄位和變數 [內容片段編輯器](/help/assets/content-fragments/content-fragments-variations.md#inheritance)
+   * [內容片段編輯器](/help/assets/content-fragments/content-fragments-variations.md#inheritance)中的欄位和變數
    * [相關資產的中繼資料](/help/assets/content-fragments/content-fragments-variations.md#canceling-reenabling-inheritance-individual-items)
 * [暫停並繼續關係](/help/assets/reuse-assets-using-msm.md#suspend-resume)
 * [移除即時關係](/help/assets/reuse-assets-using-msm.md#detach)
-* [比較內容片段（和資產）的MSM與網站的MSM](/help/assets/reuse-assets-using-msm.md#comparison)
+* [比較內容片段(和Assets)的MSM與網站的MSM](/help/assets/reuse-assets-using-msm.md#comparison)
 
 ## 限制 {#limitations}
 

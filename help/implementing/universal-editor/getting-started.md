@@ -40,7 +40,7 @@ ht-degree: 68%
 @adobe/universal-editor-cors
 ```
 
-若要啟動檢測，必須將下列匯入專案新增至 `index.js`.
+若要啟動檢測，必須將下列匯入加入您的`index.js`。
 
 ```javascript
 import "@adobe/universal-editor-cors";
@@ -56,9 +56,9 @@ import "@adobe/universal-editor-cors";
 
 我們一律會建議使用最新版本，但若發生重大變更，可參考舊版服務。
 
-* `https://universal-editor-service.experiencecloud.live/corslib/LATEST`  — 最新UE CORS程式庫
+* `https://universal-editor-service.experiencecloud.live/corslib/LATEST` — 最新UE CORS程式庫
 * `https://universal-editor-service.experiencecloud.live/corslib/2/LATEST` - 2.x版下最新的UE CORS程式庫
-* `https://universal-editor-service.experiencecloud.live/corslib/2.1/LATEST` - 2.1.x版底下最新的UE CORS程式庫
+* `https://universal-editor-service.experiencecloud.live/corslib/2.1/LATEST` - 2.1.x版下最新的UE CORS程式庫
 * `https://universal-editor-service.experiencecloud.live/corslib/2.1.1` — 完全相同的UE CORS程式庫2.1.1版
 
 ## 新增必要的 OSGi 設定 {#osgi-configurations}
@@ -109,9 +109,9 @@ Universal Editor 服務需要[統一資源名稱 (URN)](https://en.wikipedia.org
 <meta name="urn:adobe:aue:<category>:<referenceName>" content="<protocol>:<url>">
 ```
 
-* `<category>`  — 這是使用兩個選項的連線分類。
-   * `system`  — 適用於連線端點
-   * `config`  — 用於 [定義選用的組態設定](#configuration-settings)
+* `<category>` — 這是具有兩個選項的連線分類。
+   * `system` — 用於連線端點
+   * `config` — 針對[定義選擇性組態設定](#configuration-settings)
 * `<referenceName>` - 這是簡短名稱，可在文件中重複使用以標識連線。例如 `aemconnection`
 * `<protocol>` - 這代表要使用 Universal Editor 持續性服務的哪個持續性外掛程式。例如 `aem`
 * `<url>` - 這是儲存變更之系統的 URL。例如 `http://localhost:4502`
@@ -165,12 +165,12 @@ data-aue-resource="urn:<referenceName>:<resource>"
 
 ### 組態設定 {#configuration-settings}
 
-您可以使用 `config` 首碼位於您的連線URN中，以視需要設定服務和擴充端點。
+您可以視需要使用連線URN中的`config`首碼來設定服務和擴充端點。
 
 如果您不想使用由Adobe託管（但您自己的託管版本）的通用編輯器服務，可以在中繼標籤中設定此專案。 若要覆寫Universal Editor提供的預設服務端點，請設定您自己的服務端點：
 
-* 中繼名稱 —  `urn:adobe:aue:config:service`
-* 中繼內容 —  `content="https://adobe.com"` （範例）
+* 中繼名稱 — `urn:adobe:aue:config:service`
+* 中繼內容 — `content="https://adobe.com"` （範例）
 
 ```html
 <meta name="urn:adobe:aue:config:service" content="<url>">
@@ -197,7 +197,7 @@ data-aue-resource="urn:<referenceName>:<resource>"
 
 * [Universal Editor 簡介](introduction.md) - 了解 Universal Editor 如何在任意實作中編輯任何方面的內容，以便提供卓越的體驗、提高內容速度並提供最先進的開發人員體驗。
 * [使用 Universal Editor 編寫內容](/help/sites-cloud/authoring/universal-editor/authoring.md) - 了解內容作者使用 Universal Editor 建立內容有多簡單和直覺。
-* [使用通用編輯器發佈內容](/help/sites-cloud/authoring/universal-editor/publishing.md)  — 瞭解通用編輯器如何發佈內容，以及您的應用程式如何處理已發佈的內容。
+* [使用通用編輯器發佈內容](/help/sites-cloud/authoring/universal-editor/publishing.md) — 瞭解通用編輯器如何發佈內容，以及您的應用程式如何處理已發佈的內容。
 * [Universal Editor 架構](architecture.md) - 了解 Universal Editor 的架構，以及資料如何在其服務和階層之間流動。
 * [屬性和類型](attributes-types.md) - 了解 Universal Editor 需要的資料屬性和類型。
 * [Universal Editor 驗證](authentication.md) - 了解 Universal Editor 如何進行驗證。

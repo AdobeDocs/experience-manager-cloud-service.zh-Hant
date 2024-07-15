@@ -25,12 +25,12 @@ ht-degree: 55%
 
 ## 發行日期 {#release-date}
 
-的發行日期 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 目前版本(2021.11.0)為2021年12月16日。
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service]目前版本(2021.11.0)的發行日期為2021年12月16日。
 下列版本(2022.1.0)的發行日期為2022年2月3日。
 
 ## 發行影片 {#release-video}
 
-請檢視 [2021年12月版本總覽](https://video.tv.adobe.com/v/339278) 2021.11.0 （2021年11月）版本新增功能摘要影片。
+請觀看[2021年12月版本總覽](https://video.tv.adobe.com/v/339278)影片，瞭解2021.11.0 （2021年11月）版本新增的功能摘要。
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -38,13 +38,13 @@ ht-degree: 55%
 
 * Dynamic Media影像智慧型裁切和色票現在由最新的Sensei服務提供支援，可製作出更佳裁切和色票成果。 此外，已啟動增強功能以產生相同縱橫比但跨不同解析度的不同裁切內容。 此外，如果「影像設定檔」中的寬度和高度沒有變化，則在重新處理時會保留任何手動編輯。
 
-### 中的新功能 [!DNL Assets] 發行前通道 {#assets-prerelease-features}
+### [!DNL Assets]發行前管道中的新功能 {#assets-prerelease-features}
 
-* [!DNL Dynamic Media]  — 您現在可以使用AEM Dynamic Media介面進行設定，包括一般設定和發佈設定，而不必透過Dynamic Media Classic案頭應用程式來進行。
+* [!DNL Dynamic Media] — 您現在可以使用AEM Dynamic Media介面進行設定，包括一般設定和Publish設定，而不必透過Dynamic Media Classic案頭應用程式來進行。
 
-* [!DNL Dynamic Media] 現在支援MXF影片的擷取、預覽、播放和發佈。 尚不支援MXF影片的附註和可訂購影片。
+* [!DNL Dynamic Media]現在支援MXF影片的擷取、預覽、播放和發佈。 尚不支援MXF影片的附註和可訂購影片。
 
-* 在設定遠端DAM和Sites部署之間的連線後，遠端DAM上的資產可在Sites部署中使用。 您現在可以執行 [更新、刪除、重新命名和移動作業](/help/assets/use-assets-across-connected-assets-instances.md) 位於遠端DAM資產或資料夾。 這些更新會在Sites部署中自動提供，但會有一些延遲。
+* 在設定遠端DAM和Sites部署之間的連線後，遠端DAM上的資產可在Sites部署中使用。 您現在可以在遠端DAM資產或資料夾上執行[更新、刪除、重新命名和移動操作](/help/assets/use-assets-across-connected-assets-instances.md)。 這些更新會在Sites部署中自動提供，但會有一些延遲。
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -59,9 +59,9 @@ ht-degree: 55%
    * 使用 XML 資料填寫範本檔案 (PDF 和 XDP) 來產生文件。
    * 產生多種格式的輸出表單，包括非互動式 PDF 列印資料流。
 
-* **記錄檔案的自訂字型，以及使用Communications API建立的PDF檔案**：您現在可以在使用Communications API產生的PDF檔案中使用品牌核准的字型，以符合您的組織要求。
+* **記錄檔案和使用Communications API建立的PDF檔案的自訂字型**：您現在可以在使用Communications API產生的PDF檔案中使用品牌核准的字型，以符合您的組織要求。
 
-* **Forms入口網站**：您可以使用 [Forms入口網站](/help/forms/configure-forms-portal.md) 以列出AEM Sites頁面上已發佈的最適化表單。 這有助於網站訪客發現所有可用表單。 此外，訪客可使用Forms入口網站來儲存和存取最適化表單的草稿，並檢視已提交最適化表單的PDF版本。
+* **Forms入口網站**：您可以使用[Forms入口網站](/help/forms/configure-forms-portal.md)，在AEM Sites頁面上列出您已發佈的最適化表單。 這有助於網站訪客發現所有可用表單。 此外，訪客可使用Forms入口網站來儲存和存取最適化表單的草稿，並檢視已提交最適化表單的PDF版本。
 
 ## CIF 附加元件 {#cloud-services-cif}
 
@@ -69,7 +69,7 @@ ht-degree: 55%
 
 * 以Commerce的可擴充Peregrine元件為基礎的擴充myAccount元件
 
-![延伸的myAccount元件](/help/assets/CIF/extended-myAccount-components.png)
+![延伸myAccount元件](/help/assets/CIF/extended-myAccount-components.png)
 
 * 作者可使用其他建議型別來建立臨機Commerce產品Recommendations
 
@@ -77,11 +77,11 @@ ht-degree: 55%
 
 ## Cloud Manager {#cloud-manager}
 
-本節概述AEMas a Cloud Service2021.11.0中Cloud Manager的發行說明
+本節概述AEM as a Cloud Service 2021.11.0中Cloud Manager的發行說明
 
 ### 發行日期 {#release-date-cm-nov}
 
-AEMas a Cloud Service2021.11.0中Cloud Manager的發行日期為2021年11月04日。
+AEM as a Cloud Service 2021.11.0中Cloud Manager的發行日期為2021年11月4日。
 下一版本計畫於2021年12月9日發行。
 
 ### 新增功能 {#what-is-new-cm-nov}
@@ -89,7 +89,7 @@ AEMas a Cloud Service2021.11.0中Cloud Manager的發行日期為2021年11月04�
 * 使用者現在可以使用新的前端管道以加速的方式專門部署前端代碼。請參閱 [Cloud Manager 前端管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end)來了解更多資訊。
 
   >[!IMPORTANT]
-  >您必須使用AEM版本 `2021.10.5933.20211012T154732Z` 或更高版本以使用新的前端管線。
+  >您必須使用AEM版本`2021.10.5933.20211012T154732Z`或更高版本才能使用新的前端管道。
 
 * 透過以更有效的方式執行程式碼分析來顯著減少程式碼品質管道期限，而不需要建置整個 AEM 影像。此變更會在發佈後的未來幾週內逐步展開。
 
@@ -140,4 +140,4 @@ Best Practices Analyzer v2.1.22的發行日期為2021年12月1日。
 ### 錯誤修正 {#bug-fixes-bpa}
 
 * 已改善對Foundation元件的偵測，以減少誤判。
-* 針對AEM Forms客戶，BPA傳訊關於 `EMAIL_PDF_SUBMIT_ACTION` 已修正AEMas a Cloud Service上無法使用的問題。
+* 針對AEM Forms客戶，已修正AEM as a Cloud Service上無法使用`EMAIL_PDF_SUBMIT_ACTION`的BPA訊息。

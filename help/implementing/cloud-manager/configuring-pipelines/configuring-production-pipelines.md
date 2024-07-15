@@ -9,7 +9,7 @@ role: Admin, Architect, Developer
 source-git-commit: a5179851af8ec88e23d79a74265b10cbce2d50f1
 workflow-type: tm+mt
 source-wordcount: '1367'
-ht-degree: 67%
+ht-degree: 69%
 
 ---
 
@@ -42,7 +42,7 @@ ht-degree: 67%
 
 1. 在「**[我的程式](/help/implementing/cloud-manager/navigation.md#my-programs)**」控制台中，選取程式。
 
-1. 導覽至 **管道** 卡來自 **計畫總覽** 頁面並按一下 **新增** 以選取 **新增生產管道**.
+1. 從&#x200B;**方案總覽**&#x200B;頁面瀏覽至&#x200B;**管道**&#x200B;卡片，然後按一下&#x200B;**新增**&#x200B;以選取&#x200B;**新增生產管道**。
 
    ![計畫管理員概觀中的管道卡](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-1.png)
 
@@ -61,12 +61,12 @@ ht-degree: 67%
 
    ![生產管道設定](/help/implementing/cloud-manager/assets/configure-pipeline/production-pipeline-configuration.png)
 
-1. 在 **原始碼** 索引標籤您必須選取管道應處理的程式碼型別。
+1. 在&#x200B;**Source程式碼**&#x200B;索引標籤上，您必須選取管道應處理的程式碼型別。
 
    * **[完整堆疊程式碼](#full-stack-code)**
    * **[目標部署](#targeted-deployment)**
 
-另請參閱 [CI/CD管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) 有關管道型別的詳細資訊。
+如需有關管道型別的詳細資訊，請參閱[CI/CD管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)。
 
 完成建立生產流水線的步驟因所選原始計畫碼型別而異。 按照上面的連結跳到本文件的下一部分以便完成管道的設定。
 
@@ -96,13 +96,13 @@ ht-degree: 67%
 
    ![完整堆疊程式碼](/help/implementing/cloud-manager/assets/configure-pipeline/production-pipeline-fullstack.png)
 
-1. 點選或按一下 **繼續** 以前進到 **體驗稽核** 索引標籤，您可在其中定義應一律包含在體驗稽核中的路徑。
+1. 點選或按一下「**繼續**」以前往「**體驗稽核**」標籤，您可以在其中定義應一律包含在體驗稽核中的路徑。
 
    ![新增體驗稽核](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-audit.png)
 
 1. 提供要包含在體驗稽核中的路徑。
 
-   * 檢視檔案 [體驗稽核測試](/help/implementing/cloud-manager/experience-audit-testing.md#configuration) 以取得詳細資訊。
+   * 如需詳細資訊，請參閱檔案[體驗稽核測試](/help/implementing/cloud-manager/experience-audit-testing.md#configuration)。
 
 1. 按一下&#x200B;**儲存**，即可儲存您的管道。
 
@@ -112,23 +112,23 @@ ht-degree: 67%
 
 ### 目標部署 {#targeted-deployment}
 
-目標部署只會為AEM應用程式的選定部分部署程式碼。 在這樣的部署中，您可以選擇 **包含** 下列其中一種程式碼型別：
+目標部署只會為AEM應用程式的選定部分部署程式碼。 在這種部署中，您可以選擇&#x200B;**包含**&#x200B;下列其中一個型別的程式碼：
 
-* **設定**  — 在您的AEM環境中設定流量篩選規則的設定。
-   * 檢視檔案 [包含WAF規則的流量篩選規則](/help/security/traffic-filter-rules-including-waf.md) 以瞭解如何管理存放庫中的設定，以便正確部署。
-   * 執行目標部署管道時， [WAF設定](/help/security/traffic-filter-rules-including-waf.md) 將部署，前提是它們會儲存到您在管道中定義的環境、存放庫和分支。
+* **設定** — 設定AEM環境中流量篩選規則的設定。
+   * 請參閱檔案[流量篩選規則（包括WAF規則）](/help/security/traffic-filter-rules-including-waf.md)，瞭解如何管理存放庫中的設定，以便正確部署。
+   * 執行目標部署管道時，將會部署[WAF設定](/help/security/traffic-filter-rules-including-waf.md)，前提是這些設定已儲存至您在管道中定義的環境、存放庫和分支。
    * 在任何時候，每個環境只能有一個設定管道。
-* **前端計畫碼**  — 為AEM應用程式的前端設定JavaScript和CSS。
+* **前端程式碼** — 設定AEM應用程式前端的JavaScript和CSS。
    * 有了前端流水線，給前端開發者更多的獨立性，可以加快開發進程。
    * 請參閱文件[使用前端管道開發網站](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) 了解此程序的工作原理以及需要注意的一些注意事項，以充分發揮此程序的潛力。
-* **Web層設定**  — 設定Dispatcher屬性以儲存、處理並傳送網頁給使用者端。
-   * 檢視檔案 [CI/CD管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipelines) 以取得更多詳細資料。
+* **網頁層設定** — 設定Dispatcher屬性，以儲存、處理及傳送網頁給使用者端。
+   * 如需詳細資訊，請參閱檔案[CI/CD管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipelines)。
    * 如果所選環境存在 Web 層程式碼管道，則此選項會停用。
    * 如果您將現有的完整堆疊管道部署到環境，則為同一環境建立 Web 層設定管道將忽略完整堆疊管道中的現有 Web 層設定。
 
 >[!NOTE]
 >
->私有存放庫不支援Web層和設定管道。 請參閱檔案 [在Cloud Manager中新增私有存放庫](/help/implementing/cloud-manager/managing-code/private-repositories.md) 以取得詳細資料和完整的限制清單。
+>私人存放庫不支援 Web 層和設定管道。請參閱文件「[在 Cloud Manager 中新增私人存放庫](/help/implementing/cloud-manager/managing-code/private-repositories.md)」，了解詳細資訊和完整的限制清單。
 
 選擇部署型別後，完成建立生產、目標部署管道的步驟相同。
 
@@ -136,11 +136,11 @@ ht-degree: 67%
 
 ![目標部署選項](/help/implementing/cloud-manager/assets/configure-pipeline/prod-pipeline-targeted-deployment.png)
 
-1. 定義 **符合資格的部署環境**.
+1. 定義&#x200B;**合格的部署環境**。
 
    * 如果您的管道是部署管道，則必須選擇它應該部署到哪些環境。
 
-1. 在 **原始碼**，定義下列選項：
+1. 在&#x200B;**Source程式碼**&#x200B;下，定義下列選項：
 
    * **存放庫** - 此選項會定義管道應該從哪個 Git 存放庫擷取程式碼。
 
@@ -152,7 +152,7 @@ ht-degree: 67%
       * 輸入分支名稱的前幾個字元，該欄位的自動完成功能。會尋找相符的分支以幫助您進行選取。
    * **程式碼位置** - 此選項會定義管道應從所選存放庫的分支中擷取程式碼的路徑。
    * **在部署到生產之前暫停** - 此選項會在部署到生產之前暫停管道。
-   * **已排程**  — 此選項可讓使用者啟用已排程的生產部署。 僅適用於Web層目標部署。
+   * **已排程** — 此選項可讓使用者啟用已排程的生產部署。 僅適用於Web層目標部署。
 
    ![設定管道](/help/implementing/cloud-manager/assets/configure-pipeline/prod-pipeline-config-deployment.png)
 

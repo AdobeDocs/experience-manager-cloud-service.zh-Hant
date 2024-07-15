@@ -20,7 +20,7 @@ ht-degree: 29%
 協助您快速上手：
 
 * [什麼是Headless？](/help/headless/what-is-headless.md)
-* AEM中各種環境的概觀 [架構](/help/headless/deployment/architecture.md)
+* AEM [架構](/help/headless/deployment/architecture.md)中各種環境的概觀
 
 ## 設定 {#setup}
 
@@ -51,7 +51,7 @@ ht-degree: 29%
 ### AEM Dispatcher快取 {#dispatcher-caching}
 
 >[!NOTE]
->如果Dispatcher中的快取已啟用，則 [CORS設定](#cors-setup) 不需要使用，因此可忽略。
+>如果已啟用Dispatcher中的快取，則不需要[CORS設定](#cors-setup)，因此可以忽略。
 
 根據預設，不啟用 Dispatcher 的持續性查詢快取。因為使用具有多個來源的 CORS (跨來源資源共用) 的客戶必須檢閱，且可能更新其 Dispatcher 設定，因此無法預設啟用。
 
@@ -68,7 +68,7 @@ Dispatcher通常設定用於：
 ### CORS設定 {#cors-setup}
 
 >[!NOTE]
->如果快取位於 [AEM傳送器](#dispatcher-caching) 會啟用，則不需要進行CORS設定，因此可忽略此區段。
+>如果[AEM Dispatcher](#dispatcher-caching)中的快取已啟用，則不需要CORS設定，因此可忽略此區段。
 
 若要存取GraphQL端點，必須設定CORS原則，並新增至透過Cloud Manager部署至AEM的AEM專案。 這可透過為所需端點新增適當的OSGi CORS設定檔案來完成。
 
@@ -127,7 +127,7 @@ CORS通常設定為：
 
 ### 使用內容傳遞網路(CDN) {#cdn}
 
-如果定位為，則可快取GraphQL查詢及其JSON回應 `GET` 使用CDN時的請求。 相反地，未快取的請求可能非常（資源）昂貴且處理緩慢，可能對來源的資源造成進一步的負面影響。
+使用CDN時，如果目標為`GET`請求，則可快取GraphQL查詢及其JSON回應。 相反地，未快取的請求可能非常（資源）昂貴且處理緩慢，可能對來源的資源造成進一步的負面影響。
 
 #### 詳細資料 {#details-cdn}
 
@@ -147,7 +147,7 @@ AEM GraphQL是用來從您的內容片段中擷取資訊。 必須先設定這�
 
 * [建立設定](/help/headless/setup/create-configuration.md)
 * [建立內容片段模型](/help/headless/setup/create-content-model.md)
-* [建立資產資料夾](/help/headless/setup/create-assets-folder.md)
+* [建立Assets資料夾](/help/headless/setup/create-assets-folder.md)
 * [建立和編輯您的內容片段](/help/headless/setup/create-content-fragment.md)
 
 #### 環境 {#eenvironments-content-fragments}
@@ -176,7 +176,7 @@ AEM GraphQL是用來從您的內容片段中擷取資訊。 必須先設定這�
 
 >[!NOTE]
 >
->最佳化准則涵蓋快取設定(已涵蓋在 [設定](#setup).
+>最佳化准則涵蓋快取組態，已包含在[設定](#setup)中。
 
 ### 從您的應用程式存取GraphQL {#access-graphql-from-your-apps}
 
@@ -186,7 +186,7 @@ AEM Headless CMS讓開發人員可以自由使用他們熟悉的語言、架構�
 
 * [安裝及使用用於開發的AEM SDK](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/aem-headless-sdk.html)
 * [AEM Headless開發人員資源](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=zh-Hant)
-* 範例，包括 [React](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/example-apps/react-app.html)， [Next.js](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/example-apps/next-js.html)， [Node.js](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/example-apps/server-to-server-app.html)，等等
+* 範例，包括[React](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/example-apps/react-app.html)、[Next.js](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/example-apps/next-js.html)、[Node.js](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/example-apps/server-to-server-app.html)等
 
 #### 環境 {#environments-your-apps}
 
