@@ -2,10 +2,10 @@
 title: 具有OpenAPI功能的Dynamic Media
 description: 瞭解重要概念，例如為何將Dynamic Media與OpenAPI功能搭配使用，以及如何啟用它。
 role: User
-source-git-commit: 540aa876ba7ea54b7ef4324634f6c5e220ad19d3
+source-git-commit: 8cd8eb834b548a52d6a9e094cb2c4447f228ab0d
 workflow-type: tm+mt
-source-wordcount: '980'
-ht-degree: 0%
+source-wordcount: '1061'
+ht-degree: 1%
 
 ---
 
@@ -117,6 +117,10 @@ Dynamic Media搭配OpenAPI功能提供下列主要優點：
 </td>
 </table>
 <table>
+
+
+
+<table>
 <td>
    <a href="/help/assets/search-assets-api.md">
    <img alt="搜尋資產Experience Manager Assets存放庫" src="./assets/search-assets-api-overview.png" />
@@ -156,5 +160,48 @@ Dynamic Media搭配OpenAPI功能提供下列主要優點：
       <em> DAM管理員或品牌管理員在AEM as a Cloud Service作者執行個體上設定已核准資產的角色，以限制存取權。</em>
    </p>
 </td>
+
+</table>
+<table>
+<td>
+   <a href="/help/assets/integrate-remote-approved-assets-with-sites.md">
+   <img alt="將遠端 AEM Assets 與 AEM Sites 整合" src="./assets/connected-assets-rdam.png" />
+   </a>
+   <div>
+      <a href="/help/assets/integrate-remote-approved-assets-with-sites.md">
+      <strong>將遠端AEM Assets與AEM Sites整合</strong>
+      </a>
+   </div>
+   <p>
+      <em>瞭解如何將遠端AEM Assets與AEM Sites環境整合。</em>
+   </p>
+</td>
+<td>
+   <a href="/help/assets/dynamic-media-open-apis-faqs.md">
+   <img alt="具有OpenAPI功能的Dynamic Media常見問題" src="./assets/dynamic-media-faqs.jpeg" />
+   </a>
+   <div>
+      <a href="/help/assets/dynamic-media-open-apis-faqs.md">
+      <strong>具有OpenAPI功能的Dynamic Media常見問題</strong>
+      </a>
+   </div>
+   <p>
+      <em>透過OpenAPI功能取得最常問Dynamic Media問題的回應。</em>
+   </p>
+</td>
+<td>
+   <a href="/help/assets/configure-custom-domain.md">
+   <img alt="設定自訂網域" src="./assets/configure-custom-domain.jpeg" />
+   </a>
+   <div>
+      <a href="/help/assets/configure-custom-domain.md">
+      <strong>設定自訂網域</strong>
+      </a>
+   </div>
+   <p>
+      <em>雖然AEM as a Cloud Service隨附預設網域，但您可以視需求加以自訂。</em>
+   </p>
+</td>
+
 </table>
 
