@@ -4,7 +4,7 @@ description: 瞭解如何使用「內容轉移工具」，將內容從內部部�
 exl-id: cfc0366a-2139-4d9d-b5bc-0b65bef4013c
 feature: Migration
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 67bc538fe174034c05808d4a62c51c404dfaf38c
 workflow-type: tm+mt
 source-wordcount: '655'
 ht-degree: 38%
@@ -68,7 +68,7 @@ ht-degree: 38%
 >title="移轉集到期"
 >abstract="了解移轉集到期。"
 
-所有移轉集都將在約90天長時間不活動後最終到期。 指標在專案卡片和移轉工作表格列中顯示一段時間後，移轉集將到期，其資料將不再可用。 透過以下方式根據移轉集採取行動，可輕鬆延長到期時間：
+所有移轉集都將在約45天的長時間不活動後最終到期。 指標在專案卡片和移轉工作表格列中顯示一段時間後，移轉集將到期，其資料將不再可用。 透過以下方式根據移轉集採取行動，可輕鬆延長到期時間：
 
 * 編輯其說明
 * 取得其擷取金鑰
