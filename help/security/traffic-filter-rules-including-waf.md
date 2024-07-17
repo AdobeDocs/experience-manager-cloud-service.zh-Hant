@@ -4,7 +4,7 @@ description: 設定流量篩選規則，包括 Web 應用程式防火牆 (WAF) �
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
-source-git-commit: 23d532f70e031608855bb9fc768aae5398c81e0f
+source-git-commit: b8fc132e7871a488cad99440d320e72cd8c31972
 workflow-type: tm+mt
 source-wordcount: '3938'
 ht-degree: 96%
@@ -531,7 +531,7 @@ data:
 
 如果達到此臨界值，Adobe 將阻止來自該 IP 位址的流量，但建議採取其他措施來保護您的來源，包括設定速率限制流量篩選規則，以便在臨界值較低時阻擋流量尖峰。請參閱[「使用流量篩選器規則封鎖 DoS 和 DDoS 攻擊」教學課程](#tutorial-blocking-DDoS-with-rules)以瞭解引導式逐步說明。
 
-此警示預設為啟用，但可使用設為false的&#x200B;*enable_ddos_alerts*&#x200B;屬性來停用。 觸發警報後，它直到第二天(UTC)才會再次引發。
+此警示預設為啟用，但可使用設為false的&#x200B;*defaultTrafficAlerts*&#x200B;屬性將其停用。 觸發警報後，它直到第二天(UTC)才會再次引發。
 
 ```
 kind: "CDN"
@@ -540,7 +540,7 @@ metadata:
   envTypes: ["dev"]
 data:
   trafficFilters:
-    enable_ddos_alerts: false
+   defaultTrafficAlerts: false
 ```
 
 ## CDN 記錄 {#cdn-logs}
