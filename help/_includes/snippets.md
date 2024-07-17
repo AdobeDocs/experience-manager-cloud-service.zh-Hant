@@ -1,8 +1,8 @@
 ---
-source-git-commit: 494e90bd5822495f0619e8ebf55f373a26a3ffe6
+source-git-commit: 2acaafab86c0552e63e7b38b2a774c3c6afd6f9c
 workflow-type: tm+mt
-source-wordcount: '516'
-ht-degree: 100%
+source-wordcount: '564'
+ht-degree: 86%
 
 ---
 # 代碼片段 {#snippets}
@@ -87,8 +87,8 @@ ht-degree: 100%
      </tr>
    <tr>
     <td>在可重複面板欄位上執行數學運算 </td>
-    <td>OOTB 數學函數可套用在可重複面板欄位以執行加總、平均值等函數。 </td>
-    <td>可以使用自訂函數對可重複面板欄位執行數學運算。
+    <td>OOTB Math函式可套用至可重複的面板欄位，以使用規則編輯器執行sum、average之類的函式。 需要提供兩個引數：第一個指定包含欄位的可重複面板，第二個指定對應可重複面板中的欄位。 </td>
+    <td>重複面板欄位的數學運算可使用自訂函式來執行。 您也可以使用規則編輯器，將數學函式直接套用至可重複面板的欄位。
    </td>
    </tr>
       <tr>

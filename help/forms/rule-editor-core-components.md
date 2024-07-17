@@ -5,9 +5,9 @@ feature: Adaptive Forms, Core Components
 role: User
 level: Beginner, Intermediate
 exl-id: 1292f729-c6eb-4e1b-b84c-c66c89dc53ae
-source-git-commit: 46cd7d689c6cbc453720b5798ffb552da58f66e7
+source-git-commit: cf69db380097992ba8adfe1ac07b3ffa26217a07
 workflow-type: tm+mt
-source-wordcount: '5627'
+source-wordcount: '5735'
 ht-degree: 0%
 
 ---
@@ -193,7 +193,7 @@ Allowed Multiple fields in When condition feature is disabled by default. To ena
    * value: deps
 1. Click **[!UICONTROL Done]**. -->
 
-如果「當條件」功能中允許的多個字段遇到任何問題，請將故障排除步驟追隨為：
+如果「條件」功能中允許的多個欄位發生任何問題，請遵循下列疑難排解步驟：
 
 1. 在編輯模式中開啟表單。
 1. 開啟內容瀏覽器，然後選取最適化表單的&#x200B;**[!UICONTROL 指南容器]**&#x200B;元件。
@@ -863,7 +863,7 @@ var c = {
 
 ![複雜運算式](assets/complexexpression.png)
 
-您也可以拖放規則中的條件以進行編輯。 選取並將滑鼠游標停留在條件前的控制代碼（ ![控制代碼](assets/drag-handle.svg)）上。 指標變為手形符號（如下所示）后，將條件拖放到規則內的任何位置。 規則結構會變更。
+您也可以拖放規則中的條件以進行編輯。 選取並將滑鼠游標停留在條件前的控制代碼（ ![控制代碼](assets/drag-handle.svg)）上。 指標變為手形符號（如下所示）后，將條件拖放到規則內的任何位置。 規則結構將發生變化。
 
 ![拖放](assets/drag-and-drop.png)
 
@@ -900,6 +900,15 @@ In [!DNL Experience Manager Forms] versions prior to [!DNL Experience Manager 6.
 Any scripts or expressions that you must have written in the Scripts tab are available in the rule editor. While you cannot view or edit them in visual editor, if you are a part of the forms-power-users group you can edit scripts in code editor. -->
 
 ## 規則範例 {#example}
+
+### 使用內建函式簡化可重複面板中的複雜計算
+
+規則編輯器可讓您直接在可重複面板中的欄位上使用現成可用的函式，例如Sum、Min、Max和Join。 這開啟了強大的自動化功能，讓您無需自訂程式碼即可實施複雜的商業邏輯。
+想像一個具有可重複面板的表單。 每個面板例項可能會收集產品數量等資料。 您可以使用「總和」函式自動計算所有面板的總數量，消除手動計算與可能的錯誤。
+
+![支援OOTB函式中的可重複面板欄位](/help/forms/assets/ootb-function-support-repeatable-panel.png)
+
+這只是個範例！ 探索可用的[功能](#b-form-objects-and-functions-br)以簡化工作流程，並提高表單中的資料準確度。
 
 ### 啟動表單資料模型服務 {#invoke}
 
