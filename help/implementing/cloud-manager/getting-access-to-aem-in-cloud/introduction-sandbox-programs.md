@@ -5,10 +5,10 @@ exl-id: 4606590c-6826-4794-9d2e-5548a00aa2fa
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 88b0479c44f6431a9f254551e51b1ce86af91d0f
 workflow-type: tm+mt
-source-wordcount: '464'
-ht-degree: 98%
+source-wordcount: '488'
+ht-degree: 90%
 
 ---
 
@@ -48,7 +48,15 @@ ht-degree: 98%
 
 ### 沒有自訂域或 IP 加入允許清單 {#ip-allow}
 
-自訂域和 IP 允許清單在沙箱計畫中不可用。
+[自訂網域](/help/implementing/cloud-manager/custom-domain-names/introduction.md)和[IP允許清單](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)在沙箱程式中無法使用。
+
+### 沒有其他Publish地區 {#additional-publish-regions}
+
+[其他發佈區域](/help/operations/additional-publish-regions.md)不適用於沙箱計畫。
+
+### 無99.99% SLA {#999-sla}
+
+[99.99% SLA](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#sla)不適用於沙箱程式。
 
 ### 非進階網路 {#advanced-networking}
 

@@ -4,7 +4,7 @@ description: 瞭解如何使用AEM as a Cloud Service的記錄來設定中央記
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
 feature: Log Files, Developing
 role: Admin, Architect, Developer
-source-git-commit: bc92ed7acefbbd906b0986ea0b6b96fa6d8422de
+source-git-commit: 88b0479c44f6431a9f254551e51b1ce86af91d0f
 workflow-type: tm+mt
 source-wordcount: '2797'
 ht-degree: 8%
@@ -561,9 +561,9 @@ CDN記錄與其他記錄不同，因為它會遵循JSON格式。
 
 ### 其他Publish地區的記錄 {#logs-for-additional-publish-regions}
 
-如上所述，如果針對特定環境啟用了其他Publish地區，則可以從Cloud Manager下載每個地區的記錄。
+如果針對特定環境啟用了其他發佈區域，則可以從Cloud Manager下載每個區域的記錄，如上所述。
 
-其他Publish區域的AEM記錄檔和Dispatcher記錄檔會在環境ID之後的前3個字母中指定區域，以下範例中的&#x200B;**nld2**&#x200B;即代表位於荷蘭的其他AEM發佈執行個體：
+其他發佈區域的AEM記錄檔和Dispatcher記錄檔會在環境ID之後的前3個字母中指定區域，以下範例中的&#x200B;**nld2**&#x200B;即代表位於荷蘭的其他AEM發佈執行個體：
 
 ```
 cm-p7613-e12700-nld2-aem-publish-bcbb77549-5qmmt 127.0.0.1 - 07/Nov/2023:23:57:11 +0000 "HEAD /libs/granite/security/currentuser.json HTTP/1.1" 200 - "-" "Java/11.0.19"

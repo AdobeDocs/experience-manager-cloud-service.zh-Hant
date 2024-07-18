@@ -5,9 +5,9 @@ exl-id: 6d33c3c5-258c-4c9c-90c2-d566eaeb14c0
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: c7362a77fd929d812db3cd40bf01763ed3bef02c
 workflow-type: tm+mt
-source-wordcount: '1958'
+source-wordcount: '1995'
 ht-degree: 8%
 
 ---
@@ -112,7 +112,7 @@ Cloud Manager中的體驗稽核可確保使用者在網站上的體驗達到最�
 
 點選或按一下&#x200B;**檢視最慢的頁面**&#x200B;會開啟&#x200B;**最慢的5個頁面**&#x200B;對話方塊，顯示您[設定為稽核的五個效能最低的頁面。](#configuration)
 
-![最慢的五個](assets/experience-audit-slowest-five.jpg)
+![最慢的五個](assets/experience-audit-slowest-five.png)
 
 分數會依&#x200B;**效能**、**協助工具**、**最佳實務**&#x200B;及&#x200B;**SEO**&#x200B;以及每個量度與上次稽核的偏差來劃分。
 
@@ -166,7 +166,7 @@ Cloud Manager的&#x200B;**報告**&#x200B;標籤已開啟，顯示&#x200B;**體�
 
 點選或按一下任何建議的>形箭號，即可顯示相關詳細資訊。
 
-![建議詳細資料](assets/experience-audit-recommendation-details.png)
+![建議詳細資料](assets/experience-audit-recommendations-details.png)
 
 可用時，擴充的建議詳細資料也包含建議影響的百分比，以協助聚焦於最具影響力的變更。
 
@@ -184,7 +184,7 @@ Cloud Manager的&#x200B;**報告**&#x200B;標籤已開啟，顯示&#x200B;**體�
 
 ![頁面結果](assets/experience-audit-page-results.png)
 
-**原始報表**&#x200B;索引標籤會提供您每次稽核頁面的分數。 點選或按一下&#x200B;**下載**&#x200B;圖示以擷取原始資料的JSON檔案。
+**原始報表**&#x200B;索引標籤會提供您每次稽核頁面的分數。 點選或按一下&#x200B;**Lighthouse報表**&#x200B;欄中的報表日期，以擷取原始資料的JSON檔案。
 
 ![原始報告](assets/experience-audit-raw-reports.png)
 
@@ -200,6 +200,10 @@ Cloud Manager的&#x200B;**報告**&#x200B;標籤已開啟，顯示&#x200B;**體�
 
 ![隨選掃描](assets/experience-audit-on-demand.png)
 
+當隨選掃描已執行時，**執行掃描**&#x200B;按鈕會變成無法使用，且會以時鐘圖示標籤。
+
+![正在執行隨選掃描](assets/experience-audit-on-demand-running.png)
+
 隨選掃描會觸發針對最新25個[已設定頁面](#configuration)的體驗稽核，通常會在幾分鐘內完成。
 
 完成時，分數圖表將自動更新，您可以檢查與管道執行掃描完全相同的結果。
@@ -214,15 +218,15 @@ Cloud Manager的&#x200B;**報告**&#x200B;標籤已開啟，顯示&#x200B;**體�
 
 ## 體驗稽核遇到的問題 {#issues}
 
-如果您設定要稽核的[頁面](#configuration)無法使用，體驗稽核會反映這一點。
+如果您設定要稽核的[頁面](#configuration)無法使用或稽核中有其他錯誤，體驗稽核會反映這一點。
 
 管道會顯示可展開的錯誤區段，以檢視它無法存取的相對URL路徑。
 
 ![體驗稽核遇到的問題](assets/experience-audit-issues.jpg)
 
-如果檢視完整報告，詳細資訊會顯示在&#x200B;**[體驗稽核掃描結果](#results)**&#x200B;區段中。
+如果檢視完整報告，詳細資訊會顯示在&#x200B;**[體驗稽核掃描結果](#results)**&#x200B;區段中，此區段也是可展開的。
 
-![完整報告問題](assets/experience-audit-issues-reports.jpeg)
+![完整報告問題](assets/experience-audit-issues-report.png)
 
 無法使用頁面的部分原因包括：
 
@@ -253,8 +257,7 @@ Cloud Manager的&#x200B;**報告**&#x200B;標籤已開啟，顯示&#x200B;**體�
 
 下列詳細資料提供體驗稽核如何評估您的網站的其他資訊。 這些不是功能一般使用的必要專案，此處提供這些專案是為了完整起見。
 
-* 雖然[設定的體驗稽核頁面路徑](#configuration)會顯示發佈者的`.com`網域，但稽核會掃描來源(`.net`)網域，以確保偵測到開發期間發生的問題。
-   * `.com`網域使用CDN，可能會產生更好的分數或包含快取的結果。
+* 稽核會掃描發佈者[設定的體驗稽核頁面路徑](#configuration)中定義的來源(`.com`)網域，以更準確地模擬真實的使用者體驗，並幫助您針對管理和最佳化網站做出更明智的決策。
 * 在生產完整棧疊管道中，會掃描中繼環境。
    * 為確保稽核在稽核期間提供相關詳細資訊，中繼環境的內容應儘可能接近生產環境。
 * 在&#x200B;[**頁面分數 — 趨勢**&#x200B;區段](#trend)的&#x200B;**選取**&#x200B;下拉式清單中顯示的頁面，都是過去由體驗稽核掃描的已知頁面。

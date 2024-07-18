@@ -5,10 +5,10 @@ exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: ceaa3b075953e9bdbcc0ae8c47106150be9a52d7
+source-git-commit: 51fa6e0fe56b1d5f0d8ada6bd2335175d603bc8c
 workflow-type: tm+mt
-source-wordcount: '4482'
-ht-degree: 88%
+source-wordcount: '4513'
+ht-degree: 87%
 
 ---
 
@@ -1267,3 +1267,12 @@ AEM Cloud Service禁止在分析器中建立名稱不正確的代碼器。 token
 >[!WARNING]
 >
 >我們請您盡快解決此問題，因為從 [Cloud Manager 2024 年 8 月版本開始，這麼做會導致管道失敗](/help/implementing/cloud-manager/release-notes/current.md)。
+
+### 索引定義的設定不應包含空格 {#oakpal-indexing-definitions-spaces}
+
+* **索引鍵**： PathSpacesCheck
+* **類型**：改善
+* **嚴重度**：輕微
+* **始自**：2024.7.0 版本
+
+AEM Cloud Service禁止建立包含空格屬性的索引定義。

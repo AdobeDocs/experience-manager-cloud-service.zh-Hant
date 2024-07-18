@@ -1,20 +1,20 @@
 ---
-title: Adobe Experience Manager as a Cloud Service 中 Cloud Manager 2024.6.0 的發行說明
-description: 以下是 AEM as a Cloud Service 中 Cloud Manager 2024.6.0 的發行說明。
+title: Adobe Experience Manager as a Cloud Service 中 Cloud Manager 2024.7.0 的發行說明
+description: 以下是AEM as a Cloud Service中Cloud Manager 2024.7.0的發行說明。
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
 role: Admin
-source-git-commit: 6ca376bda8055d62e35e13053ff21f861c12b292
-workflow-type: ht
-source-wordcount: '548'
-ht-degree: 100%
+source-git-commit: a5cd55bcdc6044dd8db26f009b955216cda5daee
+workflow-type: tm+mt
+source-wordcount: '621'
+ht-degree: 57%
 
 ---
 
 
-# Adobe Experience Manager as a Cloud Service 中 Cloud Manager 2024.6.0 的發行說明 {#release-notes}
+# Adobe Experience Manager as a Cloud Service 中 Cloud Manager 2024.7.0 的發行說明 {#release-notes}
 
-本頁面記錄 AEM as a Cloud Service 中 Cloud Manager 版本 2024.6.0 的發行說明。
+本頁面記錄 AEM as a Cloud Service 中 Cloud Manager 版本 2024.7.0 的發行說明。
 
 >[!NOTE]
 >
@@ -22,19 +22,23 @@ ht-degree: 100%
 
 ## 發行日期 {#release-date}
 
-AEM as a Cloud Service 中的 Cloud Manager 2024.6.0 版發行日期為 2024 年 6 月 6 日。下一版本預計於 2024 年 7 月 18 日發行。
+AEM as a Cloud Service中的Cloud Manager版本2024.7.0發行日期為2024年7月18日。 下一版本計畫於 2024 年 8 月 8 日發行。
 
 ## 新增功能 {#what-is-new}
 
-* 您現在可以[使用自己的 GitHub 存放庫](/help/implementing/cloud-manager/managing-code/private-repositories.md)，做為完整堆疊和前端管道的來源。
-   * 此外，您還可以透過有 [Git 子模組](/help/implementing/cloud-manager/managing-code/git-submodules.md)的 GitHub 存放庫，對用於驗證提取請求的自動產生的管道增強控制，並定義程式碼掃描階段中關鍵指標的行為。
-   * [您也可以選擇](/help/implementing/cloud-manager/managing-code/github-check-config.md)在 GitHub 上保留報告歷史記錄、命名管道，以及按照您的需求設定管道變數。
-* [自助內容還原](/help/operations/restore.md)提供最多 7 天的備份還原，並具備下列功能：
-   * 前 24 小時的時間點備份還原
-   * 固定時間還原最長可達 7 天
-* [新的 OakPal 規則](/help/implementing/cloud-manager/custom-code-quality-rules.md#oakpal-ui-content-package)已新增至 Cloud Manager 程式碼品質掃描。
-   * 截至 2024 年 6 月新增的每項新規則都是非重大變更。
-   * 建議您盡快解決這些問題，因為這些新規則將會導致 Cloud Manager 2024 年 8 月版本無法啟動管道。
+* [生產管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#adding-production-pipeline)和[非生產管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#adding-non-production-pipeline)在Git變更上&#x200B;**觸發**&#x200B;以在認可上啟動管道，現在可供[私人存放庫使用。](/help/implementing/cloud-manager/managing-code/private-repositories.md)
+   * 我們將分階段推出，並於8月中旬前完成。
+* 新增[Adobe管理的DV憑證時，](/help/implementing/cloud-manager/managing-ssl-certifications/domain-validated-certificates.md)您現在可以新增單一憑證，其涵蓋多個網域，而非為每個網域建立憑證。
+* 現在起，只要程式至少套用Sites或Forms解決方案，就可以將沒有[其他發佈區域](/help/operations/additional-publish-regions.md)的解決方案新增至程式。
+* 現在可以將沒有[99.99% SLA](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#sla)的解決方案新增到計畫中，只要該計畫至少套用了Sites或Forms解決方案。
+* [體驗稽核儀表板](/help/implementing/cloud-manager/experience-audit-dashboard.md)已透過多種方式增強。
+   * 現在會透過CDN針對`.com`端點執行稽核，取代之前的`.net`方法。
+      * 這項變更可更精確地模擬真實的使用者體驗，並協助您針對管理和最佳化網站做出更明智的決策。
+   * 已對體驗稽核UI進行多項增強，包括：
+      * 新增效能、最佳實務、SEO和協助工具的趨勢檢視。
+      * Lighthouse原始報表連結現在會以更直覺的方式顯示，直接顯示在掃描快照詳細資料面板中。
+      * 改善燈塔建議區段。
+   * 根據Lighthouse版本12.0.0移除PWA量度，因此消除此量度。
 
 ## 早期採用計劃 {#early-adoption}
 
@@ -53,14 +57,6 @@ AEM as a Cloud Service 中的 Cloud Manager 2024.6.0 版發行日期為 2024 年
 您現在可透過 Cloud Manager [以自助方式產生和管理網域驗證 (DV) SSL 憑證。](/help/implementing/cloud-manager/managing-ssl-certifications/domain-validated-certificates.md) 您要為線上業務建立安全的網站，這便是最快、最簡單且成本效益最高的解決方案。
 
 如果您有興趣測試此新功能並分享回饋意見，請使用與您的 Adobe ID 相關聯的電子郵件地址傳送電子郵件至 `Grp-aemcs-dv-dert-adopter@adobe.com`。
-
-<!-- RICK: REMOVED THIS SECTION AS PER EMAIL REQUEST TO DL-AEM-DOCS FROM SHWETA DUA, WEDNESDAY, JUNE 12, 2024 ### Client-Side Collection via Real Use Monitoring (RUM) {#rum}
-
-You can leverage the [Real Use Monitoring (RUM) Data Service](/help/implementing/cloud-manager/content-requests.md#cliendside-collection) to enable client-side collection for AEM as a Cloud Service.
-
-Real Use Monitoring (RUM) Data Service offers a more precise reflection of user interactions, ensuring a reliable measure of website engagement. It is a great opportunity to gain advanced insights into your page performance. This is beneficial for customers who use either Adobe-managed CDN or non-Adobe managed CDN. For customers using a non-Adobe managed CDN, automated traffic reporting can now be enabled for them, thus removing the need to share any traffic report with Adobe.
-
-If you are interested in testing this new feature and sharing your feedback, please send an email to `aemcs-rum-adopter@adobe.com` from the email address associated with your Adobe ID. Please include the domain name for production, stage, and dev environments in your email.  Availability of the early adopter program of this feature is limited.-->
 
 ### 體驗稽核儀表板 {#experience-audit-dashboard}
 

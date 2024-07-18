@@ -4,12 +4,13 @@ description: 了解 AEM as a Cloud Service 如何支援額外發佈區域以提�
 exl-id: b9ac3c6a-eb8b-461d-8f1d-a0356046a3f9
 feature: Operations
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+source-git-commit: c7362a77fd929d812db3cd40bf01763ed3bef02c
 workflow-type: tm+mt
-source-wordcount: '638'
-ht-degree: 78%
+source-wordcount: '663'
+ht-degree: 71%
 
 ---
+
 
 # 額外發佈區域 {#additional-publish-regions}
 
@@ -22,7 +23,9 @@ ht-degree: 78%
 
 >[!NOTE]
 >
->此功能目前僅適用於 AEM Sites。該功能也無法適用沙箱計畫。此外，其他發佈區域功能要求您的程式必須更新至AEM發行版本12142或更高版本。
+>* 此功能適用於Sites和Forms解決方案。
+>* 此功能無法套用至[沙箱程式。](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)
+>* 此功能需要您的程式更新至AEM發行版本12142或更高版本。
 
 ## 使用案例 {#use-cases}
 
@@ -57,7 +60,9 @@ ht-degree: 78%
 
 在考慮使用額外發佈區域時，請謹記以下限制。
 
-* 只能將額外發佈區域新增到 AEM Sites。其他發佈區域不會延伸至相同方案中部署的其他AEM解決方案或相關功能(例如AEM Forms或Adobe Learning Manager)。
+* 其他發佈區域只能新增到AEM Sites或AEM Forms。
+   * 其他發佈區域不會延伸至相同方案中部署的其他AEM解決方案或相關功能(例如AEM Assets或Adobe Learning Manager)。
+   * 不過，只要有至少一個Sites或Forms解決方案套用至計畫，您就可以將這些解決方案新增至計畫。
 * 只有在租用戶中有相關權益且未使用時，才能新增額外區域。
 * 最多可以向任何個別環境新增三個額外的發佈區域。
 * 額外區域僅適用於生產計畫。此功能在沙箱計畫中無法使用。
