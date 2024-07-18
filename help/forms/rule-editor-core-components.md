@@ -5,7 +5,7 @@ feature: Adaptive Forms, Core Components
 role: User
 level: Beginner, Intermediate
 exl-id: 1292f729-c6eb-4e1b-b84c-c66c89dc53ae
-source-git-commit: cf69db380097992ba8adfe1ac07b3ffa26217a07
+source-git-commit: 46a6f413be2ba41df8ca72bd7751ec453ae438ec
 workflow-type: tm+mt
 source-wordcount: '5735'
 ht-degree: 0%
@@ -13,13 +13,13 @@ ht-degree: 0%
 ---
 
 
+# 將規則新增至最適化表單（核心元件） {#adaptive-forms-rule-editor}
+
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
 | AEM as a Cloud Service （核心元件） | 本文章 |
 | AEM as a Cloud Service （基礎元件） | [按一下這裡](/help/forms/rule-editor.md) |
 | AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html) |
-
-# 將規則新增至最適化表單（核心元件） {#adaptive-forms-rule-editor}
 
 規則編輯器功能可讓表單業務使用者和開發人員在調適型表單物件上編寫規則。 這些規則會根據預設條件、使用者輸入及使用者對表單的動作，定義要在表單物件上觸發的動作。 它有助於進一步簡化表單填寫體驗，確保準確性和速度。
 
