@@ -5,9 +5,9 @@ feature: Adaptive Forms, Core Components
 role: User
 level: Beginner, Intermediate
 exl-id: 1292f729-c6eb-4e1b-b84c-c66c89dc53ae
-source-git-commit: 46a6f413be2ba41df8ca72bd7751ec453ae438ec
+source-git-commit: a9596774326d5756477c0a44c2715fc5c3561e2a
 workflow-type: tm+mt
-source-wordcount: '5735'
+source-wordcount: '5787'
 ht-degree: 0%
 
 ---
@@ -904,9 +904,17 @@ Any scripts or expressions that you must have written in the Scripts tab are ava
 ### 使用內建函式簡化可重複面板中的複雜計算
 
 規則編輯器可讓您直接在可重複面板中的欄位上使用現成可用的函式，例如Sum、Min、Max和Join。 這開啟了強大的自動化功能，讓您無需自訂程式碼即可實施複雜的商業邏輯。
-想像一個具有可重複面板的表單。 每個面板例項可能會收集產品數量等資料。 您可以使用「總和」函式自動計算所有面板的總數量，消除手動計算與可能的錯誤。
+想像一個具有可重複面板的表單，其中每個面板執行個體都會收集有關資產宣告值的資訊。
+
+![可重複的表單](/help/forms/assets/ootb-function-support-repeatable-panel-form.png)
+
+您可以使用`Sum`函式自動計算所有面板的總資產值，而不需要手動計算，並降低發生錯誤的可能性。
 
 ![支援OOTB函式中的可重複面板欄位](/help/forms/assets/ootb-function-support-repeatable-panel.png)
+
+當您填寫表單並新增執行個體以宣告資產值時，`Calculate Asset Value`按鈕會計算所有已宣告資產值的總和，並在`assetvalue`文字方塊中顯示結果。
+
+![支援OOTB函式中的可重複面板欄位](/help/forms/assets/ootb-function-support-repeatable-panel-form-preview.png)
 
 這只是個範例！ 探索可用的[功能](#b-form-objects-and-functions-br)以簡化工作流程，並提高表單中的資料準確度。
 
