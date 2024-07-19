@@ -3,7 +3,9 @@ title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 最新發行說明�
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 最新發行說明。'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 544fa6be686071275abd34a76f785c89b5ac3ed9
+feature: Release Information
+role: Admin
+source-git-commit: d76f27e2b85cefe5e83f790a91466e94a619a077
 workflow-type: tm+mt
 source-wordcount: '1965'
 ht-degree: 99%
@@ -250,4 +252,4 @@ Adobe 管理的內容傳遞網路現在支援 [Edge Side Includes (ESI)](/help/i
 
 ## Experience Cloud 發行說明 {#experience-cloud}
 
-您可以在[這裡](https://experienceleague.adobe.com/tw/docs/release-notes/experience-cloud/current)找到其他Experience Cloud應用程式發行版本的相關資訊。
+您可以在[這裡](https://experienceleague.adobe.com/zh-hant/docs/release-notes/experience-cloud/current)找到其他Experience Cloud應用程式發行版本的相關資訊。
