@@ -5,9 +5,9 @@ exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 35ac4cfb18e348281d2b126bdc3b292c84590f3a
 workflow-type: tm+mt
-source-wordcount: '645'
+source-wordcount: '649'
 ht-degree: 76%
 
 ---
@@ -39,7 +39,9 @@ ht-degree: 76%
 1. 從&#x200B;**環境**&#x200B;畫面瀏覽到 **SSL** 憑證。
 1. 您可以看到一個表格，其中一列包含已成功安裝在計畫中的每個SSL憑證。 按一下要更新的憑證列最右側的省略符號按鈕，並選取&#x200B;**檢視和更新**。
 1. 憑證詳細資訊隨即顯示並可進行更新。
-1. 執行管道以部署更新的憑證。
+1. 儲存您的變更。
+
+儲存變更後，會自動套用變更。
 
 >[!NOTE]
 >
