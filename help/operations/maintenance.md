@@ -4,9 +4,9 @@ description: 瞭解AEM as a Cloud Service中的維護任務以及如何進行設
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 feature: Operations
 role: Admin
-source-git-commit: b8bed4acf895f1cf04ea92ae27b87c7bfb38863d
+source-git-commit: b0e72f0eee0f20b19b0d9c4317a061855ffd4f62
 workflow-type: tm+mt
-source-wordcount: '2110'
+source-wordcount: '2107'
 ht-degree: 8%
 
 ---
@@ -84,7 +84,7 @@ ht-degree: 8%
     <td>客戶</td>
     <td>
     <p>必須在Git中完成。 覆寫<code>/libs</code>下的現成維護視窗設定節點，方法是在資料夾<code>/apps/settings/granite/operations/maintenance/granite_weekly</code>、<code>granite_daily</code>或<code>granite_monthly</code>下建立屬性。 如需其他組態詳細資訊，請參閱下方的維護期間表格。</p>
-    <p>透過在上面的節點底下新增另一個具有適當屬性的節點（將其命名為<code>granite_ProjectPurgeTask</code>）來啟用維護任務。 請參閱**Adobe專案清除組態**底下的[OSGI屬性](/help/implementing/deploying/configuring-osgi.md)清單。</p>
+    <p>透過在上面的節點底下新增另一個具有適當屬性的節點（將其命名為<code>granite_ProjectPurgeTask</code>）來啟用維護任務。 檢視<b>Adobe專案清除組態</b>的<a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi">OSGi屬性</a>清單。</p>
   </td>
   </tr>
   </tbody>
