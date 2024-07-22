@@ -2,7 +2,7 @@
 title: 傳遞 API
 description: 瞭解如何使用傳送API。
 role: User
-source-git-commit: 6fdc44b93e11a20b6859419813fd7eadbefd95c1
+source-git-commit: deae260ce34a0801ee534ddadfb14823ef461a87
 workflow-type: tm+mt
 source-wordcount: '537'
 ht-degree: 0%
@@ -23,7 +23,7 @@ Experience Manager資產存放庫中所有可用的[已核准資產](approve-ass
 
 | 傳送API | 說明 |
 |---|---|
-| 以要求的輸出格式呈現資產的[網頁最佳化的二進位表示](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetSeoFormat) | 根據請求中傳送的資產ID，傳回請求輸出格式之資產的Web最佳化二進位表示法。 此外，您可以定義各種影像修飾元，例如，寬度、高度、旋轉、翻轉、品質、裁切、格式和[智慧型裁切](/help/assets/dynamic-media/image-profiles.md)。 如需支援的格式和影像修飾元，請參閱[API詳細資料](https://adobe-aem-assets-delivery-experimental.redoc.ly/#operation/getAssetSeoFormat)。<br>Adobe建議對所有影像格式型別使用此API。 |
+| 以要求的輸出格式呈現資產的[網頁最佳化的二進位表示](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetSeoFormat) | 根據請求中傳送的資產ID，傳回請求輸出格式之資產的Web最佳化二進位表示法。 此外，您可以定義各種影像修飾元，例如，寬度、高度、旋轉、翻轉、品質、裁切、格式和[智慧型裁切](/help/assets/dynamic-media/image-profiles.md)。 如需支援的格式和影像修飾元，請參閱[API詳細資料](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetSeoFormat)。<br>Adobe建議對所有影像格式型別使用此API。 |
 | [資產](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAsset)的Web最佳化二進位表示 | 將預設套用至回應中傳回之資產的Web最佳化二進位表示的便利API。 預設值包括標準JPEG/WEBP格式、品質=> 65和寬度=> 1024。 |
 | [資產的原始已上傳二進位檔](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetOriginal) | 傳回資產最初上傳的二進位檔案。 Adobe建議針對檔案格式型別和SVG影像使用此API。 |
 | [預先產生的資產轉譯，可在AEM Assets製作環境中使用](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetRendition) | 根據請求中傳送的資產ID和轉譯名稱，傳回AEM Assets製作環境中可用的資產轉譯位元串流。 |
