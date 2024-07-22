@@ -4,7 +4,7 @@ description: 本頁面說明如何導覽至Screens服務提供者。
 exl-id: 9eff6fe8-41d4-4cf3-b412-847850c4e09c
 feature: Administering Screens
 role: Admin, Developer, User
-source-git-commit: f91166ca0349636386aa8721ded5b3bbda1cdb51
+source-git-commit: ea374f6e521d3b94d1d38af5c8f6780275ae2cb4
 workflow-type: tm+mt
 source-wordcount: '430'
 ht-degree: 4%
@@ -52,37 +52,35 @@ ht-degree: 4%
 需要列入白名單的IP也需要移至設定檔，並且需要從Cloud Manager設定中[取消套用](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/ip-allow-lists/apply-allow-list)。
 
    ![影像](/help/screens-cloud/assets/configure/configure-screens20.png)
-
 需要在AEM CDN設定中設定相同的金鑰。  建議不要直接將標頭值放入GITHub中，並使用[機密參考](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-credentials-authentication#rotating-secrets)。
 以下提供範例[CDN設定](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf)：
-
-    kind： &quot;CDN&quot;
-    version： &quot;1&quot;
-    metadata：
-    envTypes： [&quot;dev&quot;， &quot;stage&quot;， &quot;prod&quot;]
-    資料：
-    trafficFilters：
-    規則：
-     — 名稱： &quot;block-request-from-not-allowed-ips&quot;
-    when：
-    allOf：
-    - reqProperty： clientIp
-    notIn： [&quot;101.41.112.0/24&quot;]
-    - reqProperty： tier： tier
-    equequequals： publish
-     4}操作：塊
-     — 名稱：「allow-requests-with-header」
-    時間：
-    allOf：
-    - reqProperty： tier
-    equals： publish
-    - reqProperty： path
-    equals： /screens/channels.json
-    - reqHeader： x-screens-allowlist-key
-    equals： ${\
-    {CDN_HEADER_KEY}
-    操作：
-    型別： allow
+種類： &quot;CDN&quot;
+版本： 「1」
+中繼資料：
+envTypes： [&quot;dev&quot;、&quot;stage&quot;、&quot;prod&quot;]
+資料：
+trafficFilters：
+規則：
+ — 名稱： &quot;block-request-from-not-allowed-ips&quot;
+時間：
+allOf：
+- reqProperty： clientIp
+notIn： [&quot;101.41.112.0/24&quot;]
+- reqProperty：層
+等於：發佈
+動作：區塊
+ — 名稱： &quot;allow-requests-with-header&quot;
+時間：
+allOf：
+- reqProperty：層
+等於：發佈
+- reqProperty：路徑
+等於：/screens/channels.json
+- reqHeader： x-screens-allowlist-key
+等於： ${\
+   {CDN_HEADER_KEY}
+動作：
+型別：允許
 
 1. 從左側導覽列中選取&#x200B;**管道**，然後按一下內容提供者中的&#x200B;**開啟**。
 
@@ -91,6 +89,10 @@ ht-degree: 4%
 1. Screens內容提供者會在另一個標籤中開啟，讓您建立內容。
 
    ![影像](/help/screens-cloud/assets/configure/configure-screens2.png)
+
+
+
+
 
 ## 下一步 {#whats-next}
 
