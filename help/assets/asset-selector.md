@@ -5,10 +5,10 @@ contentOwner: KK
 role: Admin,User
 feature: Selectors
 exl-id: b968f63d-99df-4ec6-a9c9-ddb77610e258
-source-git-commit: d12aba19a8f166afcaa071478c1cb6d995010cd8
+source-git-commit: 61647c0f190c7c71462f034a131f5a7c13fd7162
 workflow-type: tm+mt
-source-wordcount: '4725'
-ht-degree: 36%
+source-wordcount: '4871'
+ht-degree: 35%
 
 ---
 
@@ -812,6 +812,60 @@ interface SelectedAsset {
 | *_links.<http://ns.adobe.com/adobecloud/rel/rendition[].height>* | 數字 | 轉譯的高度。 |
 
 如需完整的屬性清單和詳細範例，請造訪[資產選擇器代碼範例 ](https://github.com/adobe/aem-assets-selectors-mfe-examples)。
+
+### 關聯式引動篩選{#contextual-invocation-filter}
+
+資產選擇器可讓您新增標籤選取器篩選器。 它支援標籤群組，此群組會將所有相關標籤結合至特定標籤群組。 此外，它可讓您選取與您正在尋找的資產對應的其他標籤。 此外，您也可以在大部分由您使用的內容叫用篩選下設定預設標籤群組，以便您隨時可以存取這些群組。
+
+> 
+>
+> * 您必須新增內容引動程式碼片段，才能在搜尋中啟用標籤篩選器。
+> * 必須使用對應至標籤群組型別`(property=xcm:keywords.id=)`的名稱屬性。
+
+語法：
+
+```
+const filterSchema=useMemo(() => {
+    return: [
+        {
+            element: 'taggroup',
+            name: 'property=xcm:keywords.id='
+        },
+    ];
+}, []);
+```
+
+若要在篩選器面板中新增標籤群組，必須至少新增一個標籤群組作為預設值。 此外，使用以下程式碼片段，新增從標籤群組中預先選取的預設標籤。
+
+```
+export const WithAssetTags = (props) = {
+const [selectedTags, setSelectedTags] = useState (
+new Set(['orientation', 'color', 'facebook', 'experience-fragments:', 'dam', 'monochrome'])
+const handleSelectTags = (selected) => {
+setSelectedTags (new Set (selected)) ;
+};
+const filterSchema = useMemo ((); => {
+    return {
+        schema: [
+            ｛
+                fields: [
+                    {
+                    element: 'checkbox', 
+                    name: 'property=xcm:keywords=', 
+                    defaultValue: Array. from(selectedTags), 
+                    options: assetTags, 
+                    orientation: 'vertical',
+                    },
+                ],
+    header: 'Asset Tags', 
+    groupkey: 'AssetTagsGroup',
+        ],
+    },
+｝；
+}, [selectedTags]);
+```
+
+![標籤群組篩選器](assets/tag-group.gif)
 
 ## 使用物件綱要處理資產選擇 {#handling-selection}
 
