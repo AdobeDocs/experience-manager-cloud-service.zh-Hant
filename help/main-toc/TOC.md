@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的運作方式以及該軟體可以為您做哪些事。
 breadcrumb-title: 使用手冊
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 2814a61976d1815e0f0deff2e35ccad4731cfb09
+source-git-commit: 11624bc35020247494e3ae66c9601c1da505c8bf
 workflow-type: tm+mt
-source-wordcount: '5160'
-ht-degree: 100%
+source-wordcount: '5265'
+ht-degree: 97%
 
 ---
 
@@ -692,13 +692,21 @@ ht-degree: 100%
             + [在最適化表單中使用 Turnstile](/help/forms/integrate-adaptive-forms-turnstile-core-components.md)
             + [在最適化表單中新增自訂的錯誤處理常式](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
             + [為以核心元件為主的最適化表單新增地區設定](/help/forms/supporting-new-language-localization-core-components.md)
-            + [建立和使用自訂功能](/help/forms/create-and-use-custom-functions.md)
-            + [新增規則至以核心元件為基礎的最適化表單](/help/forms/rule-editor-core-components.md)
             + [設計自適應表單的 JSON 綱要 (核心元件)](/help/forms/adaptive-form-core-components-json-schema-form-model.md)
             + [在最適化表單中新增版本設定、評論和附註](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md)
             + [比較最適化表單](/help/forms/compare-forms.md)
             + [使用移轉公用程式將基礎元件型最適化表單轉換為核心元件型表單。](/help/forms/migration-utility-tool-for-af-core-components.md)
             + [將最適化表單另存為草稿](/help/forms/save-core-component-based-form-as-draft.md)
+            + 根據核心元件之最適化Forms的規則編輯器簡介{#rule-editor-core-components}
+               + [根據核心元件之最適化Forms的規則編輯器簡介](/help/forms/rule-editor-core-components.md)
+               + [根據核心元件之最適化Forms的規則編輯器使用者介面](/help/forms/rule-editor-core-components-user-interface.md)
+               + [基礎規則編輯器和核心元件規則編輯器之間的差異](/help/forms/rule-editor-core-components-difference-tables.md)
+               + [根據核心元件的最適化表單的規則編輯器中可用的運運算元和事件型別](/help/forms/rule-editor-core-components-events-operators.md)
+               + [根據核心元件的最適化表單的規則編輯器範例](/help/forms/rule-editor-core-components-usecases.md)
+            + 根據核心元件之最適化Forms的自訂函式簡介{#create-and-use-custom-function-core-component}
+               + [根據核心元件之最適化Forms的自訂函式簡介](/help/forms/create-and-use-custom-functions.md)
+               + [根據核心元件建立並使用最適化表單的自訂函式](/help/forms/custom-function-core-component-create-function.md)
+               + [根據核心元件之最適化表單的自訂函式範例](/help/forms/custom-function-core-components-use-cases.md)
       + Foundation 元件 {#authoring-adaptive-forms-foundation-components}
          + 將您的 PDF 表單轉換為最適化表單 {#afcs}
             + [自動表單轉換服務簡介](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=zh-Hant)
