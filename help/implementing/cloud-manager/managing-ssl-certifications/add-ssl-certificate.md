@@ -5,10 +5,10 @@ exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 07696086644d52199bada102e9aee163d868c9c0
+source-git-commit: 83c9c6a974b427317aa2f83a3092d0775aac1d53
 workflow-type: tm+mt
-source-wordcount: '665'
-ht-degree: 73%
+source-wordcount: '598'
+ht-degree: 82%
 
 ---
 
@@ -63,14 +63,6 @@ ht-degree: 73%
 ## 憑證錯誤 {#certificate-errors}
 
 如果憑證未正確安裝或未滿足 Cloud Manager 的要求，可能會出現某些錯誤。
-
-### 確定正確的行格式 {#line-formatting}
-
-貼上&#x200B;**憑證**、**私密金鑰**&#x200B;和&#x200B;**憑證鏈**&#x200B;的值時，新行應該僅在BEGIN CERTIFICATE之後、END CERTIFICATE之前。 亦即，貼上的值應建構如下：
-
-* `-----BEGIN CERTIFICATE-----`必須出現在其自己的行上。
-* `-----END CERTIFICATE-----`必須出現在其自己的行上。
-* 憑證內容必須出現在它自己的行中，作為一個長字串&#x200B;**，在`-----BEGIN CERTIFICATE-----`和`-----END CERTIFICATE-----`之間沒有任何新的行**。
 
 ### 移除使用者端憑證 {#client-certificates}
 
