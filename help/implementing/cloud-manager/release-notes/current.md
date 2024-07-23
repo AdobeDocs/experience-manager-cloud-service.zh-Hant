@@ -4,10 +4,10 @@ description: 以下是AEM as a Cloud Service中Cloud Manager 2024.7.0的發行�
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
 role: Admin
-source-git-commit: a5cd55bcdc6044dd8db26f009b955216cda5daee
+source-git-commit: 12e19fe771c0b70ec471949944141f4d6858cbfd
 workflow-type: tm+mt
-source-wordcount: '621'
-ht-degree: 57%
+source-wordcount: '633'
+ht-degree: 56%
 
 ---
 
@@ -39,6 +39,7 @@ AEM as a Cloud Service中的Cloud Manager版本2024.7.0發行日期為2024年7�
       * Lighthouse原始報表連結現在會以更直覺的方式顯示，直接顯示在掃描快照詳細資料面板中。
       * 改善燈塔建議區段。
    * 根據Lighthouse版本12.0.0移除PWA量度，因此消除此量度。
+* [AEM專案原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)已更新為[版本49。](https://github.com/adobe/aem-project-archetype/tree/aem-project-archetype-49)
 
 ## 早期採用計劃 {#early-adoption}
 
