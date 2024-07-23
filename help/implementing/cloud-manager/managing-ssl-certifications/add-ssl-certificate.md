@@ -5,10 +5,10 @@ exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 07696086644d52199bada102e9aee163d868c9c0
 workflow-type: tm+mt
-source-wordcount: '612'
-ht-degree: 80%
+source-wordcount: '665'
+ht-degree: 73%
 
 ---
 
@@ -43,7 +43,6 @@ ht-degree: 80%
    * 在&#x200B;**憑證名稱**&#x200B;中輸入憑證名稱。
       * 這僅供參考，可以是任何有助於您輕鬆引用憑證的名稱。
    * 在對應欄位中貼上&#x200B;**憑證**、**私人金鑰**&#x200B;和&#x200B;**憑證鏈**&#x200B;值。所有三個欄位都是必填項目。
-   * 在某些情況下，終端使用者證書可能會包含在鏈中，並且必須在將鏈貼上到欄位之前將其清除。
 
    ![新增憑證對話方塊](/help/implementing/cloud-manager/assets/ssl/ssl-cert-02.png)
 
@@ -61,13 +60,27 @@ ht-degree: 80%
 >
 >使用者必須具有&#x200B;**業務負責人**&#x200B;或&#x200B;**部署管理員**&#x200B;角色，才能在 Cloud Manager 中安裝 SSL 憑證。
 
->[!NOTE]
->
->如果您收到類似`The Subject of an intermediate certificate must match the issuer in the previous certificate. The SKI of an intermediate certificate must match the AKI of the previous certificate.`的錯誤，您可能會將使用者端憑證包含在憑證鏈中。 請確定該鏈結不包含使用者端憑證，然後再試一次。
-
 ## 憑證錯誤 {#certificate-errors}
 
 如果憑證未正確安裝或未滿足 Cloud Manager 的要求，可能會出現某些錯誤。
+
+### 確定正確的行格式 {#line-formatting}
+
+貼上&#x200B;**憑證**、**私密金鑰**&#x200B;和&#x200B;**憑證鏈**&#x200B;的值時，新行應該僅在BEGIN CERTIFICATE之後、END CERTIFICATE之前。 亦即，貼上的值應建構如下：
+
+* `-----BEGIN CERTIFICATE-----`必須出現在其自己的行上。
+* `-----END CERTIFICATE-----`必須出現在其自己的行上。
+* 憑證內容必須出現在它自己的行中，作為一個長字串&#x200B;**，在`-----BEGIN CERTIFICATE-----`和`-----END CERTIFICATE-----`之間沒有任何新的行**。
+
+### 移除使用者端憑證 {#client-certificates}
+
+新增憑證時，如果您收到類似下列的錯誤：
+
+```text
+The Subject of an intermediate certificate must match the issuer in the previous certificate. The SKI of an intermediate certificate must match the AKI of the previous certificate.
+```
+
+您可能在憑證鏈結中包含使用者端憑證。 請確定該鏈結不包含使用者端憑證，然後再試一次。
 
 ### 憑證政策 {#certificate-policy}
 
