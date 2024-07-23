@@ -2,7 +2,8 @@
 title: 限制Experience Manager中的資產傳遞
 description: 瞭解如何限制 [!DNL Experience Manager]中的資產傳遞。
 role: User
-source-git-commit: 540aa876ba7ea54b7ef4324634f6c5e220ad19d3
+exl-id: 3fa0b75d-c8f5-4913-8be3-816b7fb73353
+source-git-commit: 16b313a4fb79f915613044d12d29e618209113ec
 workflow-type: tm+mt
 source-wordcount: '1125'
 ht-degree: 0%
@@ -19,7 +20,7 @@ Experience Manager中的中央資產控管可讓DAM管理員或品牌管理員�
 
 ## 使用IMS權杖的受限制傳遞 {#restrict-delivery-ims-token}
 
-在Experience Manager中，透過IMS的受限制傳送涉及兩個關鍵階段：
+在Experience Manager Assets中，透過IMS的受限制傳送涉及兩個關鍵階段：
 
 * 製作
 * 傳遞
@@ -43,7 +44,7 @@ Experience Manager中的中央資產控管可讓DAM管理員或品牌管理員�
       1. 將&#x200B;**[!UICONTROL 對應更新至屬性]**&#x200B;至&#x200B;_。/jcr：content/metadata/dam：roles_。
 
 1. 取得要新增至資產角色中繼資料的IMS群組。 若要擷取IMS群組，請執行以下步驟：
-   1. 登入https://adminconsole.adobe.com/。
+   1. 在`https://adminconsole.adobe.com/.`登入
    1. 前往您個別的組織，並導覽至&#x200B;**[!UICONTROL 使用者群組]**。
    1. 選取您需要新增的&#x200B;**[!UICONTROL 使用者群組]**，並從URL擷取&#x200B;**[!UICONTROL orgID]**&#x200B;和&#x200B;**[!UICONTROL userGroupID]**，或使用您的組織識別碼，例如`{orgID}@AdobeOrg:{usergroupID}`。
 
