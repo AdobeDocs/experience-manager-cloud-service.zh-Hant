@@ -5,9 +5,9 @@ exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
 source-git-commit: 573de431328650778b3ef0979a24190477382310
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '332'
-ht-degree: 42%
+ht-degree: 100%
 
 ---
 
@@ -18,26 +18,26 @@ ht-degree: 42%
 
 ## 版本 17098 {#release-17098}
 
-以下摘要說明維護版本17098數的持續改善，該版本於2024年7月16日公開發佈。 上一個維護版本是版本 16971。
+以下摘要說明 17098 維護版本的持續改善內容，該版本於 2024 年 7 月 16 日公開發佈。上一個維護版本是版本 16971。
 
-2024.7.0功能啟動將提供此維護版本的完整功能集。 如需詳細資訊，請參閱 [Experience Manager 發行藍圖](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)。
+2024.7.0 功能啟用將提供此維護版本的完整功能集。如需詳細資訊，請參閱 [Experience Manager 發行藍圖](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)。
 
 ### 增強功能 {#enhancements-17098}
 
-- SKYOPS-79817：為服務使用者對應啟用Sling功能分析器工作
+- SKYOPS-79817：為服務使用者對應啟用 Sling 功能分析器任務
 
 ### 已修正的問題 {#fixed-issues-17098}
 
-- Assets-39665：從6.5移轉至AEMCS後，智慧型裁切同步無法運作
-- Forms-14993：Forms API傳回先前有效宣傳品500美元
-- GRANITE-52120：CRXDE在顯示存取控制資料時傳回500
-- GRANITE-52573：在重新寫入的URL中使用//時傳回400的請求
-- GRANITE-52746：所有節點型別未載入建立節點對話方塊
-- GRANITE-52777：要求包裝時對404的處理中斷
-- GRANITE-52871：確保publish-worker與golden-publish同步，並在壓縮前完成
-- SKYOPS-79173：復寫器沒有復寫到符合指定AgentIdFilter的多個代理程式
-- SKYOPS-80075：資產名稱中出現變音的問題，導致發佈佇列阻塞(Mac)
-- SKYOPS-81032：篩選掉請求產生的記錄，以便在使用增強式記錄時取得記錄
+- ASSETS-39665：從 6.5 遷移到 AEMCS 後，Smart Crops Sync 無法運作
+- FORMS-14993：為先前工作附屬物，表單 API 傳回 500
+- GRANITE-52120：顯示「存取控制」資料時，CRXDE 傳回 500
+- GRANITE-52573：在重寫的 URL 中使用 // 時請求傳回 400
+- GRANITE-52746：「建立節點」對話方塊中未載入所有節點類型
+- GRANITE-52777：包裝請求時 404 的處理中斷
+- GRANITE-52871：確保 publish-worker 與 golden-publish 同步，並在壓縮之前完成
+- SKYOPS-79173：複製器未複製到與給定 AgentIdFilter 相符的多個代理程式
+- SKYOPS-80075：資產名稱中的 Umlaut 問題導致發佈佇列阻塞 (Mac)
+- SKYOPS-81032：使用增強記錄功能時，篩除取得記錄之請求所產生的記錄
 
 ### 已知問題 {#known-issues-17098}
 
@@ -49,7 +49,7 @@ ht-degree: 42%
 
 ### 已過時的功能和 API {#deprecated-17098}
 
-在AEM as a Cloud Service中已過時和已移除的功能和API的詳細資訊，請參閱[已過時和已移除的功能和API](/help/release-notes/deprecated-removed-features.md)檔案。
+ [已過時和移除的功能和 API](/help/release-notes/deprecated-removed-features.md) 文件中詳細介紹了 AEM as a Cloud Service 已過時和移除的功能和 API。
 
 ### 內嵌技術 {#embedded-tech-17098}
 
