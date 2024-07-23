@@ -1,18 +1,18 @@
 ---
-title: 為 Edge Delivery Services 製作內容
+title: WYSIWYGEdge Delivery Services內容製作
 description: 了解內容製作如何與 Edge Delivery Services 搭配使用，以及如何使用 Edge Delivery Services 製作 AEM 內容。
 feature: Edge Delivery Services
 exl-id: 963ff71a-8176-4d9d-8240-dc429405d139
 role: User
-source-git-commit: 7ad9a959592f1e8cebbcad9a67d280d5b2119866
+source-git-commit: f0cb108c620a31c4f8a48f1d2530860ca01b06c3
 workflow-type: tm+mt
-source-wordcount: '477'
-ht-degree: 85%
+source-wordcount: '448'
+ht-degree: 69%
 
 ---
 
 
-# 為 Edge Delivery Services 製作內容 {#authoring-edge}
+# WYSIWYGEdge Delivery Services內容製作 {#authoring-edge}
 
 使用 Edge Delivery Services 時，製作很簡單、快速且靈活。您有兩種選擇來為 Edge Delivery Services 製作內容：
 
@@ -25,7 +25,7 @@ ht-degree: 85%
 
 ![WYSIWYG製作如何搭配Edge Delivery Services使用](assets/how-aem-edge-works.png)
 
-1. [WYSIWYG製作環境](/help/sites-cloud/authoring/quick-start.md)用於內容管理，例如建立新頁面、體驗片段、內容片段等。
+1. [AEM Sites環境](/help/sites-cloud/authoring/quick-start.md)用於內容管理，例如建立新頁面、體驗片段、內容片段等。
    * AEM 的所有功能均適用，例如工作流程、MSM、翻譯、啟動等。
 1. [Universal Editor](/help/sites-cloud/authoring/universal-editor/authoring.md) 是用來製作 AEM 所管理的內容。
    * Universal Editor 為內容製作提供了全新且現代化的使用者介面。
@@ -52,9 +52,8 @@ Universal Editor 提供了一個現代且直觀的 GUI，可透過拖放區塊�
 
 請參閱[使用Edge Delivery Services進行WYSIWYG編寫的開發人員快速入門手冊](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)，瞭解如何開始使用AEM和Edge Delivery Services編寫您自己的專案。
 
-## 以文件為主的製作  {#document-based}
+## 其他撰寫方法  {#authoring-methods}
 
-當使用文件型製作時，您可以使用各種來源，例如 Microsoft Word 和 Google Docs 等文件。來自這些來源的文件會成為您網站上的頁面。標題、清單、影像、字體元素、影片都可以從初始來源傳輸到您的網站。您可以為 SEO 目的新增中繼資料，或者使用塊處理結構化內容並新增功能。
+所見即所得撰寫是內容作者適用的強大且直覺式工具。 不過，有許多不同的撰寫使用案例，這就是為什麼AEM要提供其他撰寫解決方案的原因。
 
-有關更多以文件為主的製作詳細資訊，請參閱 [Edge Delivery Services 文件中的本文件。](/help/edge/docs/authoring.md)
-
+請參閱檔案[選擇撰寫方法](/help/edge/authoring-methods.md)，以進一步瞭解AEM提供的撰寫解決方案，包括檔案式撰寫和Headless。
