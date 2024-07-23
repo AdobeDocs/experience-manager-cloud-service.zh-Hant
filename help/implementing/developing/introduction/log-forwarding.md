@@ -4,9 +4,9 @@ description: 瞭解如何在AEM as a Cloud Service中將記錄轉送給Splunk和
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 4116f63c4a19b90849e4b55f0c10409530be7d3e
+source-git-commit: cb4299be4681b24852a7e991c123814d31f83cad
 workflow-type: tm+mt
-source-wordcount: '1278'
+source-wordcount: '1349'
 ht-degree: 1%
 
 ---
@@ -109,7 +109,7 @@ AEM和Apache/Dispatcher記錄檔可選擇透過AEM的進階網路基礎結構路
             enabled: false
    ```
 
-1. 針對RDE以外的環境型別（目前不支援），請在Cloud Manager中建立目標部署設定管道。
+1. 對於RDE以外的環境型別（目前不支援），在Cloud Manager中建立目標部署設定管道；請注意，完整棧疊管道和Web層管道不會部署設定檔案。
 
    * [參閱設定生產管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)。
    * [參閱設定非生產管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)。
@@ -254,10 +254,15 @@ data:
   https:
     default:
       enabled: true
-      url: "https://example.com/aem_logs/aem"
+      url: "https://example.com:8443/aem_logs/aem"
       authHeaderName: "X-AEMaaCS-Log-Forwarding-Token"
       authHeaderValue: "${{HTTPS_LOG_FORWARDING_TOKEN}}"
 ```
+
+考量事項：
+
+* URL字串必須包含&#x200B;**https://**，否則驗證將會失敗。 如果url字串中未包含任何連線埠，則會假設是連線埠443 （預設的HTTPS連線埠）。
+* 如果您想要使用與443不同的連線埠，請將其提供為URL的一部分。
 
 #### HTTPS CDN記錄 {#https-cdn}
 
@@ -267,8 +272,7 @@ Web要求(POST)將持續傳送，其裝載json為記錄專案陣列，記錄專�
 
 >[!NOTE]
 >
-> 在傳送第一個CDN記錄專案之前，您的HTTP伺服器必須成功完成一次性挑戰：傳送至路徑``wellknownpath``的要求必須以``*``回應。
-
+> 在傳送第一個CDN記錄專案之前，您的HTTP伺服器必須成功完成一次性質詢：傳送至路徑``/.well-known/fastly/logging/challenge``的要求必須在內文中以星號``*``回應，且狀態碼為200。
 
 #### HTTPS AEM記錄 {#https-aem}
 
