@@ -4,7 +4,7 @@ description: 本頁面說明如何導覽至Screens服務提供者。
 exl-id: 9eff6fe8-41d4-4cf3-b412-847850c4e09c
 feature: Administering Screens
 role: Admin, Developer, User
-source-git-commit: ea374f6e521d3b94d1d38af5c8f6780275ae2cb4
+source-git-commit: 093cd62f282bd9842ad74124bb9bd4d5a33ef1c5
 workflow-type: tm+mt
 source-wordcount: '430'
 ht-degree: 4%
@@ -66,7 +66,7 @@ trafficFilters：
 allOf：
 - reqProperty： clientIp
 notIn： [&quot;101.41.112.0/24&quot;]
-- reqProperty：層
+reqProperty：層
 等於：發佈
 動作：區塊
  — 名稱： &quot;allow-requests-with-header&quot;
@@ -77,7 +77,7 @@ allOf：
 - reqProperty：路徑
 等於：/screens/channels.json
 - reqHeader： x-screens-allowlist-key
-等於： ${\
+等於： $\
    {CDN_HEADER_KEY}
 動作：
 型別：允許
