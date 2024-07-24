@@ -1,30 +1,35 @@
 ---
 title: 正在設定 DNS 設定
-description: 了解如何為自訂網域名稱設定 DNS 設定。
+description: 瞭解如何為自訂網域名稱設定DNS設定，讓您的網站可為訪客提供服務。
 exl-id: 6e294f0b-52cb-40dd-bc42-ddbcffdf5600
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 06e961febd7cb2ea1d8fca00cb3dee7f7ca893c9
 workflow-type: tm+mt
-source-wordcount: '337'
-ht-degree: 95%
+source-wordcount: '416'
+ht-degree: 49%
 
 ---
 
+
 # 正在設定 DNS 設定 {#configure-dns}
 
-成功驗證和部署自訂網域名稱後，您就可以使用 DNS 提供者更新自訂網域名稱的 DNS 記錄了。這樣做可以讓您的網站為訪客提供服務。因此，此活動通常在入門之前完成。
+在您的自訂網域名稱成功[驗證和部署後，](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)您就可以使用DNS提供者更新自訂網域名稱的DNS記錄了。 這樣做可以讓您的網站為訪客提供服務。因此，此活動通常在入門之前完成。
 
 ## 什麼是 DNS 設定？ {#dns-settings}
 
-一個 `CNAME` 或一則記錄，部署後將把網域的所有網際網路流量路由到它指向的任何地方。如果未佈建該位置來處理流量，則會發生中斷。如果未經測試，內容可能會存在錯誤。這就是為什麼這個步驟總是在完成測試且準備好上線之後才完成。
+`CNAME`或記錄一旦布建，就會將網域的所有網際網路流量路由到它指向的任何地方。 如果未佈建該位置來處理流量，則會發生中斷。如果未經測試，內容可能會存在錯誤。這就是為什麼這個步驟總是在完成測試且準備好上線之後才完成。
 
-若要設定這些設定，您需要確定是否必須設定 `CNAME` 或 Apex 記錄以將您的自訂網域名稱指向 Cloud Manager 網域名稱。以下章節會協助您確定適合您的 DNS 設定的記錄類型。
+若要設定這些設定，您必須確定是否必須設定`CNAME`或Apex記錄以將您的自訂網域名稱指向Cloud Manager網域名稱。 本檔案的下列章節將幫助您確定適合您的DNS設定的記錄型別。
 
->[!NOTE]
->
->您或您組織中適當的個人必須能夠登入或聯絡您的 DNS 提供者 (您購買網域的公司) 並在您的 DNS 設定中進行更新。
+## 要求 {#requirements}
+
+在設定DNS記錄之前，您必須滿足這些要求。
+
+* 如果您還不知道您的網域名稱主機服務商或註冊商，則必須確定它。
+* 您必須能夠編輯組織網域的DNS記錄，或聯絡可以編輯的適當人員。
+* 您必須已驗證您設定的自訂網域名稱，如檔案[檢查網域名稱狀態。](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)中所述
 
 ## CNAME 記錄 {#cname-record}
 
@@ -51,3 +56,7 @@ Apex 網域是不包含子網域的自訂網域，例如`example.com`。Apex 網
 * `A record for domain @ pointing to IP 151.101.131.10`
 
 * `A record for domain @ pointing to IP 151.101.195.10`
+
+## 後續步驟 {#next-steps}
+
+為自訂網域名稱設定DNS記錄後，您需要在Cloud Manager中驗證這些設定。 繼續檔案[檢查DNS記錄狀態](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md)以完成您的自訂網域名稱。

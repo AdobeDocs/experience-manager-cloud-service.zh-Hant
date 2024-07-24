@@ -5,15 +5,25 @@ exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 0c9328dc5be8f0a5e0924d0fc2ec59c9fce4141b
 workflow-type: tm+mt
-source-wordcount: '651'
-ht-degree: 88%
+source-wordcount: '826'
+ht-degree: 64%
 
 ---
 
 
 # 檢查網域名稱狀態 {#check-status}
+
+了解如何確定您的自訂網域名稱是否已透過 Cloud Manager 成功驗證。
+
+## 要求 {#requirements}
+
+在Cloud Manager中檢查網域名稱狀態之前，您必須滿足這些要求。
+
+* 您必須先為自訂網域新增TXT記錄，如檔案[新增TXT記錄](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md)中所述。
+
+## 如何檢查自訂網域名稱的狀態 {#how-to}
 
 您可以在 Cloud Manager 中確定自訂網域名稱的狀態。
 
@@ -27,16 +37,25 @@ ht-degree: 88%
 
 1. 按一下網域名稱的&#x200B;**狀態**&#x200B;圖示。
 
-Cloud Manager 將透過 TXT 值驗證網路擁有權，並顯示以下其中一個狀態訊息。
+狀態詳細資訊隨即顯示。 當顯示狀態&#x200B;**已驗證和部署網域**&#x200B;時，您的自訂網域即可使用。 檢視[下一節](#statuses)，以取得不同狀態及其含義的詳細資訊。
+
+>[!NOTE]
+>
+>當您在&#x200B;**新增自訂網域**&#x200B;精靈的驗證步驟上選取&#x200B;**建立**&#x200B;時，[將新的自訂網域名稱新增至Cloud Manager時，Cloud Manager會自動觸發驗證。](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)對於後續驗證，您必須主動選擇狀態旁邊的再次驗證圖示。
+
+## 瞭解驗證狀態 {#statuses}
+
+Cloud Manager將透過[TXT值](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md)驗證網域擁有權，並顯示下列其中一個狀態訊息。
 
 * **網域驗證失敗** - TXT 值缺失或偵測到錯誤。
 
-   * 按照提供的說明解決問題。
+   * 按照狀態訊息中提供的說明解決問題。
    * 準備就緒後，必須選擇狀態旁邊的&#x200B;**再次驗證**&#x200B;圖示。
 
 * **正在進行網域驗證** - 正在進行驗證。
 
    * 選擇狀態旁邊的&#x200B;**再次驗證**&#x200B;圖示後，通常會看到此狀態。
+   * 由於 DNS 傳播延遲，DNS 驗證可能需要幾個小時才能完成。
 
 * **已透過驗證，部署失敗** - TXT 驗證成功，但 CDN 部署失敗。
 
@@ -53,11 +72,9 @@ Cloud Manager 將透過 TXT 值驗證網路擁有權，並顯示以下其中一�
 
    * 如需更多資訊，請參閱[管理自訂網域名稱](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md)。
 
-當您在&#x200B;**新增自訂網域**&#x200B;精靈的驗證步驟中選擇&#x200B;**儲存**&#x200B;時，Cloud Manager 將自動觸發 TXT 驗證。對於後續驗證，您必須主動選擇狀態旁邊的再次驗證圖示。
-
 ## 網域名稱錯誤 {#domain-error}
 
-以下是一些常見的網域名稱錯誤及其典型的解決方法。
+以下是一些常見的網域名稱驗證錯誤及其一般解析度。
 
 ### 未安裝網域錯誤 {#domain-not-installed}
 
@@ -92,3 +109,7 @@ Fastly 會將網域鎖定到註冊它的初始帳戶，在未經許可的情況�
 使用 UI 移轉所有預先存在的環境設定後，該訊息就會消失。訊息可能需要 1-2 個工作日才能消失。
 
 如需更多詳細資訊，請參閱[新增自訂網域名稱](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)。
+
+## 後續步驟 {#next-steps}
+
+在Cloud Manager中驗證網域狀態後，您需要透過新增指向AEM as a Cloud Service的DNS CNAME或APEX記錄來設定DNS設定。 繼續檔案[設定DNS設定](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md)以繼續設定您的自訂網域名稱。

@@ -5,12 +5,13 @@ exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 83c9c6a974b427317aa2f83a3092d0775aac1d53
+source-git-commit: 06e961febd7cb2ea1d8fca00cb3dee7f7ca893c9
 workflow-type: tm+mt
-source-wordcount: '598'
-ht-degree: 82%
+source-wordcount: '664'
+ht-degree: 70%
 
 ---
+
 
 # 新增 SSL 憑證 {#adding-an-ssl-certificate}
 
@@ -18,7 +19,7 @@ ht-degree: 82%
 
 >[!TIP]
 >
->提供憑證可能需要幾天時間。因此，Adobe 建議提前準備好憑證。
+>提供憑證可能需要幾天時間。因此，Adobe建議在任何截止日期或上線日期之前布建憑證。
 
 ## 憑證需求 {#certificate-requirements}
 
@@ -42,7 +43,8 @@ ht-degree: 82%
 
    * 在&#x200B;**憑證名稱**&#x200B;中輸入憑證名稱。
       * 這僅供參考，可以是任何有助於您輕鬆引用憑證的名稱。
-   * 在對應欄位中貼上&#x200B;**憑證**、**私人金鑰**&#x200B;和&#x200B;**憑證鏈**&#x200B;值。所有三個欄位都是必填項目。
+   * 將&#x200B;**憑證**、**私密金鑰**&#x200B;和&#x200B;**憑證鏈**&#x200B;值貼到其各自的欄位中。
+      * 所有三個欄位都是必填項目。
 
    ![新增憑證對話方塊](/help/implementing/cloud-manager/assets/ssl/ssl-cert-02.png)
 
@@ -63,6 +65,32 @@ ht-degree: 82%
 ## 憑證錯誤 {#certificate-errors}
 
 如果憑證未正確安裝或未滿足 Cloud Manager 的要求，可能會出現某些錯誤。
+
+### 正確的憑證順序 {#correct-certificate-order}
+
+憑證部署失敗的最常見原因是中間憑證或鏈憑證的順序不正確。
+
+中間憑證文件必須以根憑證或最接近根的憑證結尾。它們必須按降序排列`main/server`憑證到根。
+
+您可以使用以下命令確定中間文件的順序。
+
+```shell
+openssl crl2pkcs7 -nocrl -certfile $CERT_FILE | openssl pkcs7 -print_certs -noout
+```
+
+您可以驗證私鑰和`main/server`使用以下命令進行憑證匹配。
+
+```shell
+openssl x509 -noout -modulus -in certificate.pem | openssl md5
+```
+
+```shell
+openssl rsa -noout -modulus -in ssl.key | openssl md5
+```
+
+>[!NOTE]
+>
+>這兩個命令的輸出必須完全相同。如果您無法為您的 `main/server` 憑證找到相符的私密金鑰，您需要透過產生新的 CSR 和/或向您的 SSL 供應商請求更新的憑證來重新加密憑證。
 
 ### 移除使用者端憑證 {#client-certificates}
 
@@ -124,32 +152,13 @@ openssl x509 -in certificate.pem -text grep "Policy: 2.23.140.1.2.2" -B5
 openssl x509 -in certificate.pem -text grep "Policy: 2.23.140.1.2.1" -B5
 ```
 
-### 正確的憑證順序 {#correct-certificate-order}
-
-憑證部署失敗的最常見原因是中間憑證或鏈憑證的順序不正確。
-
-中間憑證文件必須以根憑證或最接近根的憑證結尾。它們必須按降序排列`main/server`憑證到根。
-
-您可以使用以下命令確定中間文件的順序。
-
-```shell
-openssl crl2pkcs7 -nocrl -certfile $CERT_FILE | openssl pkcs7 -print_certs -noout
-```
-
-您可以驗證私鑰和`main/server`使用以下命令進行憑證匹配。
-
-```shell
-openssl x509 -noout -modulus -in certificate.pem | openssl md5
-```
-
-```shell
-openssl rsa -noout -modulus -in ssl.key | openssl md5
-```
-
->[!NOTE]
->
->這兩個命令的輸出必須完全相同。如果您無法為您的 `main/server` 憑證找到相符的私密金鑰，您需要透過產生新的 CSR 和/或向您的 SSL 供應商請求更新的憑證來重新加密憑證。
-
 ### 憑證有效期 {#certificate-validity-dates}
 
 Cloud Manager 預計 SSL 憑證從當前日期起至少 90 天內有效。您應該檢查憑證鏈結的有效性。
+
+## 後續步驟 {#next-steps}
+
+恭喜！您現在擁有專案的有效的SSL憑證。 這通常是設定自訂網域名稱的第一步。
+
+* 請參閱檔案[新增自訂網域名稱](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)以繼續設定自訂網域名稱。
+* 若要瞭解如何在Cloud Manager中更新及管理SSL憑證，請參閱檔案[管理SSL憑證](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)。
