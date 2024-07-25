@@ -1,0 +1,300 @@
+---
+title: 存取及導覽通用編輯器
+description: 瞭解存取和導覽Universal Editor的基本知識。
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 58c58243dc98a21161afe0976da4dcdc235da0d3
+workflow-type: tm+mt
+source-wordcount: '1512'
+ht-degree: 48%
+
+---
+
+
+# 存取及導覽通用編輯器 {#navigating}
+
+瞭解存取和導覽Universal Editor的基本知識。
+
+## 簡介 {#introduction}
+
+Universal Editor 支援在任意實作中編輯任何方面的內容，以便提供卓越的體驗、提高內容速度並提供最先進的開發人員體驗。
+
+為此，Universal Editor 為內容作者提供直觀的 UI，只需要最基本的培訓就能立即進入狀況並開始編輯內容。本檔案說明如何導覽通用編輯器。
+
+>[!TIP]
+>
+>* 如需有關使用通用編輯器編寫的詳細資訊，請參閱檔案[使用通用編輯器編寫內容。](/help/sites-cloud/authoring/universal-editor/authoring.md)
+>* 如需 Universal Editor 的更詳細介紹，請參閱 [Universal Editor 簡介](/help/implementing/universal-editor/introduction.md)文件。
+
+## 準備應用程式 {#prepare-app}
+
+為了使用 Universal Editor 編寫應用程式的內容，應用程式必須由開發人員進行檢測以支援編輯器。
+
+>[!TIP]
+>
+>請參閱 [AEM 中 Universal Editor 快速入門](/help/implementing/universal-editor/getting-started.md)，了解設定 AEM 應用程式以使用 Universal Editor 的範例。
+
+## 存取通用編輯器 {#accessing}
+
+一旦將應用程式檢測為可使用通用編輯器後，您便可在AEM as a Cloud Service記憶體取通用編輯器，且無需存取AEM即可直接存取。
+
+### 在AEM as a Cloud Service中存取 {#accessing-aem}
+
+1. 登入您的AEM as a Cloud Service編寫執行個體。
+1. 使用&#x200B;[**Sites**&#x200B;主控台](/help/sites-cloud/authoring/sites-console/introduction.md)瀏覽至與您要編輯的通用編輯器一起使用的頁面。
+1. 編輯頁面。
+1. 「通用編輯器」會開啟以編輯所選頁面。
+
+>[!NOTE]
+>
+>在&#x200B;[**網站**&#x200B;主控台中編輯頁面時，](/help/sites-cloud/authoring/sites-console/introduction.md)主控台將開啟適合頁面[範本：](/help/sites-cloud/authoring/sites-console/templates.md)的編輯器，可以是本檔案中說明的通用編輯器，或[頁面編輯器。](/help/sites-cloud/authoring/page-editor/introduction.md)
+
+### 直接存取 {#accessing-directly}
+
+1. 登入通用編輯器。 您需要Adobe ID才能登入，[才能存取通用編輯器。](/help/implementing/universal-editor/getting-started.md#request-access)
+
+1. 登入後，請在[位置列中輸入您要編輯的頁面 URL。](#location-bar)這樣一來，您就可以開始編輯內容，例如[文字內容](#text-mode)或[媒體內容](#media-mode)。
+
+## 了解 UI {#ui}
+
+UI分為以下幾個主要區域。
+
+* [Experience Cloud 標頭](#experience-cloud-header)
+* [通用編輯器工具列](#universal-editor-toolbar)
+* [編輯器](#editor)
+* [屬性邊欄](#properties-rail)
+
+![Universal Editor UI](assets/ui.png)
+
+### Experience Cloud 標頭 {#experience-cloud-header}
+
+Experience Cloud 標頭會始終顯示在畫面頂端。這是一個錨點，說明您在 Experience Cloud 中的位置，並幫助您導覽到其他 Experience Cloud 應用程式。
+
+![Experience Cloud 標頭](assets/experience-cloud-header.png)
+
+#### Experience Manager {#experience-manager}
+
+選取標頭左側的 Adobe Experience Cloud 連結，導覽至 Experience Manager 解決方案的根目錄，以存取 [Cloud Manager](/help/onboarding/cloud-manager-introduction.md)、[Cloud Acceleration Manager](/help/journey-migration/cloud-acceleration-manager/introduction/overview-cam.md) 和 [Software Distribution](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html) 等工具。
+
+![全域導覽按鈕](assets/global-navigation.png)
+
+#### 組織 {#organization}
+
+這將顯示您目前登入的組織。如果您的Adobe ID與多個組織相關聯，請選取以切換至其他組織。
+
+![組織指示器](assets/organization.png)
+
+#### 解決方案 {#solutions}
+
+點選或按一下解決方案切換器可讓您快速跳轉到其他 Experience Cloud 解決方案。
+
+![解決方案切換器](assets/solutions.png)
+
+#### 說明 {#help}
+
+說明圖示可快速存取學習和支援資源。
+
+![說明](assets/help.png)
+
+#### 通知 {#notifications}
+
+此圖示會標有目前已指派之未完成的[通知](/help/implementing/cloud-manager/notifications.md)數量。
+
+![通知](assets/notifications.png)
+
+#### 使用者屬性 {#user-properties}
+
+選取代表您使用者的圖示以存取您的使用者設定。如果您沒有設定使用者圖片，則會隨機分配圖示。
+
+![使用者屬性](assets/user-properties.png)
+
+### 通用編輯器工具列 {#universal-editor-toolbar}
+
+Universal Editor工具列一律出現在熒幕頂端[Experience Cloud標頭正下方。](#experience-cloud-header)它可讓您快速存取，以導覽到另一個頁面進行編輯和發佈目前的頁面。
+
+![通用編輯器工具列](assets/universal-editor-toolbar.png)
+
+#### 首頁按鈕 {#home-button}
+
+首頁按鈕可帶您回到通用編輯器的起始頁
+
+![漢堡選單](assets/home-button.png)
+
+在開始頁面上，您可以輸入要用通用編輯器編輯的網站URL。
+
+![起始頁](assets/start-page.png)
+
+>[!NOTE]
+>
+>您要使用通用編輯器編輯的任何頁面都必須進行[檢測以支援通用編輯器。](/help/implementing/universal-editor/getting-started.md)
+
+#### 位置列 {#location-bar}
+
+位置列會顯示您正在編輯頁面的網址。選取「 」即可輸入其他頁面要編輯的位址。
+
+![位置列](assets/location-bar.png)
+
+>[!TIP]
+>
+>使用快速鍵 `L` 打開網址列。
+
+>[!NOTE]
+>
+>您要使用通用編輯器編輯的任何頁面都必須進行[檢測以支援通用編輯器。](/help/implementing/universal-editor/getting-started.md)
+
+#### 驗證標題設定 {#authentication-settings}
+
+如果您需要[設定本機開發目的的自訂驗證標頭，請選取驗證標頭設定圖示。](/help/implementing/universal-editor/developer-overview.md#auth-header)
+
+![驗證標題設定按鈕](assets/authentication-header-settings.png)
+
+#### 模擬器設定 {#emulator}
+
+選取模擬圖示以定義Universal Editor呈現頁面的方式。
+
+![模擬器圖示](assets/emulator.png)
+
+點選或按一下模擬圖示即可顯示選項。
+
+![模擬選項](assets/emulation-options.png)
+
+依預設，編輯器會在案頭版面配置中開啟，其中高度和寬度會由瀏覽器自動定義。
+
+您也可以選擇在 Universal Editor 中模擬行動裝置：
+
+* 定義其方向
+* 定義寬度和高度
+* 變更方向
+
+#### 預覽模式 {#preview-mode}
+
+在預覽模式下，在編輯器中呈現的頁面就是發佈服務所顯示的樣子。這可讓內容作者按一下連結等方式來導覽內容。
+
+![預覽模式](assets/preview-mode.png)
+
+>[!TIP]
+>
+>使用快速鍵`P`切換至預覽模式，或切換自預覽模式。
+
+#### 開啟應用程式預覽 {#open-app-preview}
+
+選取開啟應用程式預覽圖示，即可使用自己的瀏覽器標籤開啟您目前正在編輯的頁面，無須使用編輯器即可預覽您的內容。
+
+![開啟應用程式預覽](assets/open-app-preview.png)
+
+>[!TIP]
+>
+>使用快速鍵 `O`(字母 O) 可開啟應用程式預覽。
+
+#### 發佈 {#publish}
+
+選取「發佈」按鈕，讓您可以發佈內容的變更供讀者即時使用。
+
+![發佈按鈕](assets/publish.png)
+
+>[!TIP]
+>
+>請參閱檔案[使用通用編輯器發佈內容](publishing.md)，以取得使用通用編輯器發佈的詳細資訊。
+
+#### 其他按鈕 {#additional-toolbar-buttons}
+
+Universal Editor提供可自訂且可擴充的撰寫體驗。 如果您在工具列中看到其他按鈕，表示您的通用編輯器已擴展。
+
+* 如需擴充功能的詳細資訊，請參閱[自訂及擴充通用編輯器。](/help/implementing/universal-editor/customizing.md)
+* 如需個別擴充功能運作方式的詳細資訊，請參閱[Extension Manager檔案。](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/)
+
+### 編輯器 {#editor}
+
+編輯器會佔據大部分視窗，而且是[位置列](#location-bar)中指定之頁面的呈現位置。
+
+![編輯器](assets/editor.png)
+
+如果編輯器在[預覽模式，](#preview-mode)內容即為可瀏覽，而且您可以點選連結，但無法編輯內容。
+
+### 屬性邊欄 {#properties-rail}
+
+屬性邊欄一律會沿著編輯器的右側顯示。 視其模式而定，可能會顯示在內容或頁面內容之階層中選取的元件詳細資訊。
+
+![屬性邊欄](assets/component-rail.png)
+
+#### 屬性模式 {#properties-mode}
+
+在屬性模式下，邊欄會顯示編輯器中目前選取的元件屬性。這是載入頁面時屬性邊欄的預設模式。
+
+![屬性模式](assets/properties-mode.png)
+
+依您所選取的元件類型而定，可在屬性邊欄中顯示和修改詳細資料。
+
+![元件詳細資料](assets/component-details.png)
+
+並非所有元件都有可顯示及/或編輯的詳細資料。
+
+>[!TIP]
+>
+>使用快速鍵 `D` 可切換至屬性模式。
+
+#### 內容樹模式 {#content-tree-mode}
+
+在內容樹模式下，邊欄會顯示頁面內容的階層。
+
+![內容樹模式](assets/content-tree-mode.png)
+
+在內容樹中選取一個項目時，編輯器會捲動到該內容並予以選取。
+
+![內容樹](assets/content-tree.png)
+
+>[!TIP]
+>
+>使用快速鍵 `F` 可切換至內容樹模式。
+
+##### 編輯 {#edit}
+
+編輯時，所選元件的選項會顯示在屬性邊欄中，您可在此編輯所選元件。 如果選取的元件是內容片段，您也可以選取「編輯」按鈕。
+
+![「編輯」圖示](assets/edit.png)
+
+點選或按一下編輯按鈕將在新的索引標籤中開啟[內容片段編輯器](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor)。這可讓您使用內容片段編輯器的全部功能來編輯關聯的內容片段。
+
+根據工作流程的需求，您可能會想要在通用編輯器中或直接在內容片段編輯器中編輯內容片段。
+
+>[!TIP]
+>
+>使用快速鍵 `E` 可編輯選取的元件。
+
+##### 新增 {#add}
+
+如果您在內容樹狀結構或編輯器中選取容器元件，「屬性」邊欄會出現「新增」選項。
+
+![「新增」圖示](assets/ue-add-component-icon.png)
+
+點選或按一下「新增」按鈕即會開啟元件的下拉選單，可用於[新增到選取的容器。](#adding-components)
+
+![新增內容功能表](assets/add-context-menu.png)
+
+>[!TIP]
+>
+>使用快速鍵`A`將元件新增到選取的容器元件中。
+
+##### 刪除 {#delete}
+
+如果在內容樹狀結構或編輯器中選取容器元件內的元件，屬性邊欄會顯示刪除選項。
+
+![「刪除」圖示](assets/ue-delete-component-icon.png)
+
+點選或按一下刪除按鈕[刪除該元件。](#deleting-components)
+
+>[!TIP]
+>
+>使用快速鍵`Shift+Backspace`從容器中刪除選取的元件。
+
+#### 其他按鈕 {#additional-properties-rail-buttons}
+
+Universal Editor提供可自訂且可擴充的撰寫體驗。 如果您在屬性邊欄中看到其他按鈕，表示您的通用編輯器已擴充。
+
+* 如需擴充功能的詳細資訊，請參閱[自訂及擴充通用編輯器。](/help/implementing/universal-editor/customizing.md)
+* 如需個別擴充功能運作方式的詳細資訊，請參閱[Extension Manager檔案。](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/)
+
+## 後續步驟 {#next-steps}
+
+現在您已經知道如何存取和瀏覽通用編輯器，您就可以使用它[創作內容了。](/help/sites-cloud/authoring/universal-editor/authoring.md)
