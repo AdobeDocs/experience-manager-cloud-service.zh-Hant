@@ -4,38 +4,31 @@ description: 瞭解如何在自行託管的儲存體(例如Amazon S3或Azure Blo
 feature: Dispatcher
 exl-id: 1ecc374c-b8ee-41f5-a565-5b36445d3c7c
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+source-git-commit: 3a10a0b8c89581d97af1a3c69f1236382aa85db0
 workflow-type: tm+mt
-source-wordcount: '376'
-ht-degree: 5%
+source-wordcount: '365'
+ht-degree: 1%
 
 ---
 
+
 # 設定CDN錯誤頁面 {#cdn-error-pages}
 
-萬一[Adobe管理的CDN](/help/implementing/dispatcher/cdn.md#aem-managed-cdn)無法連線至AEM來源，CDN預設會提供不記名的一般錯誤頁面，指出無法連線至伺服器。 您可以在自行託管的儲存體(例如Amazon S3或Azure Blob儲存體)中託管靜態檔案，並在使用[Cloud Manager設定管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline)部署的設定檔案中參照這些檔案，藉此覆寫預設錯誤頁面。
+萬一[Adobe管理的CDN](/help/implementing/dispatcher/cdn.md#aem-managed-cdn)無法連線至AEM來源，CDN預設會提供不記名的一般錯誤頁面，指出無法連線至伺服器。 您可以在自行託管的儲存體(例如Amazon S3或Azure Blob儲存體)中託管靜態檔案，並在使用Cloud Manager [設定管道部署的設定檔案中參照這些檔案，藉此覆寫預設錯誤頁面。](/help/operations/config-pipeline.md#managing-in-cloud-manager)
 
 ## 設定 {#setup}
 
 您必須先執行下列操作，才能覆寫預設錯誤頁面：
 
-* 在您的Git專案的頂層資料夾中建立此資料夾和檔案結構：
+1. 參照下方的語法區段，建立名為`cdn.yaml`或類似的檔案。
 
-```
-config/
-     cdn.yaml
-```
+1. 將檔案放置在名為&#x200B;*config*&#x200B;或類似名稱的頂層資料夾之下，如[config管道文章](/help/operations/config-pipeline.md#folder-structure)所述。
 
-* `cdn.yaml`設定檔應同時包含中繼資料及下列範例中說明的規則。 `kind`引數應設為`CDN`，而版本應設為結構描述版本，目前為`1`。
+1. 在Cloud Manager中建立設定管道，如[設定管道文章](/help/operations/config-pipeline.md#managing-in-cloud-manager)所述。
 
-* 在Cloud Manager中建立目標部署設定管道。 請參閱[設定生產管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)和[設定非生產管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)。
+1. 部署設定。
 
-**附註**
-
-* RDE目前不支援設定管道。
-* 您可以使用 `yq` 在本機驗證設定檔的 YAML 格式 (例如 `yq cdn.yaml`)。
-
-### 設定 {#configuration}
+### 語法 {#syntax}
 
 錯誤頁面會實作為單頁應用程式(SPA)，並參考一些屬性，如以下範例所示。  URL參考的靜態檔案應由您透過網際網路可存取的服務(例如Amazon S3或Azure Blob Storage)來託管。
 
@@ -54,6 +47,8 @@ data:
       cssUrl: https://www.example.com/error.css
       jsUrl: https://www.example.com/error.js
 ```
+如需資料節點上方屬性的說明，請參閱[設定管道文章](/help/operations/config-pipeline.md#common-syntax)。 kind屬性值應該是&#x200B;*CDN*，且`version`屬性應該設定為&#x200B;*1*。
+
 
 | 名稱 | 允許的屬性 | 含義 |
 |-----------|--------------------------|-------------|

@@ -4,12 +4,13 @@ description: 瞭解如何在設定檔案中宣告規則和篩選器，並使用C
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: c34aa4ad34d3d22e1e09e9026e471244ca36e260
+source-git-commit: 3a10a0b8c89581d97af1a3c69f1236382aa85db0
 workflow-type: tm+mt
-source-wordcount: '1326'
-ht-degree: 3%
+source-wordcount: '1319'
+ht-degree: 2%
 
 ---
+
 
 # 設定 CDN 上的流量 {#cdn-configuring-cloud}
 
@@ -20,11 +21,11 @@ AEM as a Cloud Service提供可在[Adobe管理的CDN](/help/implementing/dispatc
 * [使用者端重新導向](#client-side-redirectors) — 觸發瀏覽器重新導向。 此功能尚未正式發行，但可供早期採用者使用。
 * [來源選取器](#origin-selectors) — 代理至不同的來源後端。
 
-CDN也可以設定流量篩選規則（包括WAF），這可控制CDN允許或拒絕的流量。 此功能已發行，您可以在[流量篩選器規則（包括WAF規則）](/help/security/traffic-filter-rules-including-waf.md)頁面中瞭解更多相關資訊。
+在CDN也可以設定的是流量篩選規則(包括WAF)，其可控制CDN允許或拒絕的流量。 此功能已發行，您可以在[流量篩選器規則(包括WAF規則)](/help/security/traffic-filter-rules-including-waf.md)頁面中瞭解更多相關資訊。
 
 此外，如果CDN無法連絡其來源，您可以撰寫規則來參考自行託管的自訂錯誤頁面（然後呈現）。 閱讀[設定CDN錯誤頁面](/help/implementing/dispatcher/cdn-error-pages.md)文章以進一步瞭解此專案。
 
-所有這些在原始檔控制的組態檔中宣告的規則，都是使用[Cloud Manager的組態管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline)部署。 請注意，設定檔案的累積大小（包括流量篩選規則）不得超過100KB。
+所有這些在原始檔控制的設定檔案中宣告的規則，都是使用Cloud Manager [設定管道來部署。](/help/operations/config-pipeline.md)請注意，組態檔（包括流量篩選規則）的累積大小不能超過100KB。
 
 ## 評估順序 {#order-of-evaluation}
 
@@ -36,23 +37,24 @@ CDN也可以設定流量篩選規則（包括WAF），這可控制CDN允許或�
 
 您必須先執行下列操作，才能在CDN設定流量：
 
-* 在您的Git專案的頂層資料夾中建立此資料夾和檔案結構：
+1. 建立名為`cdn.yaml`或類似的檔案，參考以下各節中的各種組態程式碼片段。
 
-```
-config/
-     cdn.yaml
-```
+   所有程式碼片段都有這些通用屬性，在[Config Pipeline文章](/help/operations/config-pipeline.md#common-syntax)中說明。 `kind`屬性值應該是&#x200B;*CDN*，且`version`屬性應該設定為&#x200B;*1*。
 
-* `cdn.yaml`設定檔應同時包含中繼資料及下列範例中說明的規則。 `kind`引數應設為`CDN`，而版本應設為結構描述版本，目前為`1`。
+   ```
+   kind: "CDN"
+   version: "1"
+   metadata:
+     envTypes: ["dev"]
+   ```
 
-* 在Cloud Manager中建立目標部署設定管道。 請參閱[設定生產管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)和[設定非生產管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)。
+1. 將檔案放置在名為&#x200B;*config*&#x200B;或類似名稱的頂層資料夾之下，如[設定管道文章](/help/operations/config-pipeline.md#folder-structure)所述。
 
-**附註**
+1. 在Cloud Manager中建立設定管道，如[設定管道文章](/help/operations/config-pipeline.md#managing-in-cloud-manager)所述。
 
-* RDE目前不支援設定管道。
-* 您可以使用 `yq` 在本機驗證設定檔的 YAML 格式 (例如 `yq cdn.yaml`)。
+1. 部署設定。
 
-## 語法 {#configuration-syntax}
+## 規則語法 {#configuration-syntax}
 
 以下各節中的規則型別會共用相同語法。
 

@@ -6,10 +6,10 @@ exl-id: 40d6778f-65e0-4612-bbe3-ece02905709b
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 585c934465215c48b9441a95c03e4c116859103e
 workflow-type: tm+mt
-source-wordcount: '1418'
-ht-degree: 89%
+source-wordcount: '1500'
+ht-degree: 84%
 
 ---
 
@@ -56,7 +56,8 @@ Cloud Manager 提供兩種類型的管道：
 除了生產和非生產之外，管道還可以透過它們部署的程式碼類型來區分。
 
 * **[完整堆疊程式碼管道](#full-stack-pipeline)** - 同時部署包含一個或多個 AEM 伺服器應用程序以及 HTTPD/Dispatcher 配置的後端和前端程式碼構建
-* **[設定管道](#config-deployment-pipeline)** — 在幾分鐘內設定並部署流量篩選器規則，包括WAF規則
+* **[設定管道](#config-deployment-pipeline)** — 快速部署功能設定，例如記錄轉送、清除相關的維護工作，以及各種CDN設定，例如流量篩選器規則(包括WAF規則)、請求和回應轉換、來源選擇器、使用者端重新導向、錯誤頁面、客戶管理的CDN金鑰、清除API金鑰以及基本驗證。
+   * 如需詳細資訊，請參閱檔案[使用設定管道](/help/operations/config-pipeline.md)。
 * **[前端程式碼管道](#front-end)** - 部署包含一個或多個用戶端 UI 應用程式的前端程式碼建置。
 * **[Web 層設定管道](#web-tier-config-pipelines)** - 部署 HTTPD/ Dispatcher 設定。
 
@@ -71,11 +72,10 @@ Cloud Manager 提供兩種類型的管道：
 | 生產或非生產 | 部署 | 完整堆疊 | 同時部署後端和前端程式碼構建以及 HTTPD/Dispatcher 配置 | 當前端程式碼必須與 AEM 伺服器程式碼同時部署時。<br>當尚未採用前端管道或 Web 層配置管道時。 |
 | 生產或非生產 | 部署 | 前端 | 部署包含一個或多個客戶端 UI 應用程序的前端程式碼建構。 | 支援多個並發的前端管道<br>比完整堆疊部署快得多 |
 | 生產或非生產 | 部署 | Web 層設定 | 部署 HTTPD/Dispatcher 配置 | 幾分鐘內部署 |
-| 生產或非生產 | 部署 | 設定 | 部署流量篩選規則 | 幾分鐘內部署 |
+| 生產或非生產 | 部署 | 設定 | 為與CDN、記錄檔轉送和清除維護工作相關的許多功能](/help/operations/config-pipeline.md)部署[設定 | 幾分鐘內部署 |
 | 非生產 | 程式碼品質 | 完整堆疊 | 無需部署即可對完整堆疊程式碼執行程式碼品質掃描 | 支援多管道 |
 | 非生產 | 程式碼品質 | 前端 | 無需部署即可對前端程式碼執行程式碼品質掃描 | 支援多管道 |
 | 非生產 | 程式碼品質 | Web 層設定 | 在沒有部署的情況下對 Dispatcher 配置執行程式碼品質掃描 | 支援多管道 |
-| 非生產 | 程式碼品質 | 設定 | 部署流量篩選規則 |  |
 
 下圖說明了 Cloud Manager 的管道配置以及傳統的單一前端存放庫或獨立的前端存放庫設定。
 
@@ -116,9 +116,9 @@ Cloud Manager 提供兩種類型的管道：
 
 ## 設定管道 {#config-deployment-pipeline}
 
-透過設定管道，您可以在幾分鐘內設定和部署流量篩選器規則，包括WAF規則。
+透過設定管道，您可以快速部署記錄轉送、清除相關的維護工作的設定，以及各種CDN設定，例如流量篩選規則(包括WAF規則)、請求和回應轉換、來源選擇器、使用者端重新導向、錯誤頁面、客戶管理的CDN金鑰、清除API金鑰以及基本驗證。
 
-請參閱[流量篩選規則（包括WAF規則）](/help/security/traffic-filter-rules-including-waf.md)以瞭解如何管理存放庫中的設定，以便正確部署。
+請參閱檔案[使用設定管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)，以取得支援功能的完整清單，並瞭解如何管理存放庫中的設定，以便正確部署設定。
 
 ### 設定管道設定 {#configure-config-deployment}
 

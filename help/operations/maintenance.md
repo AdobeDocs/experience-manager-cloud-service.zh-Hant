@@ -4,12 +4,13 @@ description: 瞭解AEM as a Cloud Service中的維護任務以及如何進行設
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 feature: Operations
 role: Admin
-source-git-commit: b0e72f0eee0f20b19b0d9c4317a061855ffd4f62
+source-git-commit: 3a10a0b8c89581d97af1a3c69f1236382aa85db0
 workflow-type: tm+mt
-source-wordcount: '2107'
+source-wordcount: '2055'
 ht-degree: 8%
 
 ---
+
 
 # AEM as a Cloud Service 中的維護任務 {#maintenance-tasks-in-aem-as-a-cloud-service}
 
@@ -219,23 +220,19 @@ ht-degree: 8%
 > 
 >同樣地，在組態檔中部署稽核記錄清除節點後，必須將其保持宣告狀態，不得將其移除。
 
-**1** — 在Git中專案的頂層資料夾中建立下列資料夾和檔案結構：
+**1**&#x200B;建立名為`mt.yaml`或類似的檔案。
 
-```
-config/
-     mt.yaml
-```
+**2**&#x200B;將檔案放置在名為`config`或類似名稱的頂層資料夾下，如[設定管道文章所述。](/help/operations/config-pipeline.md#folder-structure)
 
-**2** — 在組態檔中宣告屬性，包括：
+**3** — 在組態檔中宣告屬性，包括：
 
-* 值為「MaintenanceTasks」的「kind」屬性。
-* 「版本」屬性（目前我們為版本1）。
-* 具有屬性`envTypes`的可選「metadata」物件，其環境型別(dev、stage、prod)的清單以逗號分隔，此設定對其有效。 如果未宣告任何中繼資料物件，則該設定對所有環境型別都有效。
+* 資料節點上方的一些屬性 — 如需說明，請參閱[設定管道文章](/help/operations/config-pipeline.md#common-syntax)。 `kind`屬性值應該是&#x200B;*MaintenanceTasks*，而且版本應該設定為&#x200B;*1*。
+
 * 同時具有`versionPurge`和`auditLogPurge`物件的資料物件。
 
 請參閱下列`versionPurge`與`auditLogPurge`物件的定義與語法。
 
-您應建構類似於以下範例的設定：
+建構類似於以下範例的設定：
 
 ```
 kind: "MaintenanceTasks"
@@ -270,14 +267,7 @@ data:
 * 必須定義所有屬性。 沒有繼承的預設值。
 * 下方屬性表格中的型別（整數、字串、布林值等）必須遵守。
 
->[!NOTE]
->您可以使用`yq`在本機驗證組態檔（例如，`yq mt.yaml`）的YAML格式。
-
-**3** — 設定非生產和生產組態管道。
-
-快速開發環境(RDE)不支援清除。 對於生產（非沙箱）計畫中的其他環境型別，在Cloud Manager中建立目標部署設定管道。
-
-如需詳細資訊，請參閱[設定生產管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)和[設定非生產管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)。
+**4** — 在Cloud Manager中建立設定管道，如[設定管道文章所述。](/help/operations/config-pipeline.md#managing-in-cloud-manager)沙箱和快速開發環境(RDE)不支援清除。
 
 ### 版本清除 {#version-purge}
 

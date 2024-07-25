@@ -6,10 +6,10 @@ exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: a5179851af8ec88e23d79a74265b10cbce2d50f1
+source-git-commit: 3a10a0b8c89581d97af1a3c69f1236382aa85db0
 workflow-type: tm+mt
-source-wordcount: '1367'
-ht-degree: 69%
+source-wordcount: '1376'
+ht-degree: 68%
 
 ---
 
@@ -114,9 +114,9 @@ ht-degree: 69%
 
 目標部署只會為AEM應用程式的選定部分部署程式碼。 在這種部署中，您可以選擇&#x200B;**包含**&#x200B;下列其中一個型別的程式碼：
 
-* **設定** — 設定AEM環境中流量篩選規則的設定。
-   * 請參閱檔案[流量篩選規則（包括WAF規則）](/help/security/traffic-filter-rules-including-waf.md)，瞭解如何管理存放庫中的設定，以便正確部署。
-   * 執行目標部署管道時，將會部署[WAF設定](/help/security/traffic-filter-rules-including-waf.md)，前提是這些設定已儲存至您在管道中定義的環境、存放庫和分支。
+* **設定** — 設定AEM環境中各種功能的設定。
+   * 請參閱[使用設定管道文章](/help/operations/config-pipeline.md)以取得支援的設定清單，其中包括記錄轉送、清除相關的維護工作以及各種CDN設定，並在您的存放庫中管理這些設定，以便正確部署它們。
+   * 執行目標部署管道時，將會部署設定，前提是這些設定會儲存至您在管道中定義的環境、存放庫和分支。
    * 在任何時候，每個環境只能有一個設定管道。
 * **前端程式碼** — 設定AEM應用程式前端的JavaScript和CSS。
    * 有了前端流水線，給前端開發者更多的獨立性，可以加快開發進程。

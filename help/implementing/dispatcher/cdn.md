@@ -4,12 +4,13 @@ description: 瞭解如何使用AEM管理的CDN以及如何將您自己的CDN指�
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+source-git-commit: 3a10a0b8c89581d97af1a3c69f1236382aa85db0
 workflow-type: tm+mt
-source-wordcount: '1118'
+source-wordcount: '1128'
 ht-degree: 23%
 
 ---
+
 
 # AEM as a Cloud Service 中的 CDN {#cdn}
 
@@ -43,7 +44,7 @@ AEM管理的CDN符合大部分客戶的效能與安全性需求。 對於發佈�
 
 ### 設定 CDN 上的流量 {#cdn-configuring-cloud}
 
-設定CDN流量和篩選器的規則可在設定檔案中宣告，並使用[Cloud Manager的設定管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline)部署至CDN。 如需詳細資訊，請參閱[在CDN設定流量](/help/implementing/dispatcher/cdn-configuring-traffic.md)和[包含WAF規則的流量篩選規則](/help/security/traffic-filter-rules-including-waf.md)。
+設定CDN流量和篩選器的規則可在設定檔案中宣告，並使用[Cloud Manager的設定管道部署至CDN。](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline)如需詳細資訊，請參閱[在CDN設定流量](/help/implementing/dispatcher/cdn-configuring-traffic.md)和[包含WAF規則的流量篩選器規則](/help/security/traffic-filter-rules-including-waf.md)。
 
 ### 設定CDN錯誤頁面 {#cdn-error-pages}
 
@@ -70,7 +71,7 @@ CDN錯誤頁面可設定為在罕見情況下無法連線到AEM時，覆寫提�
 1. 將SNI設為AdobeCDN的入口。
 1. 將Host標頭設定為原始網域。 例如：`Host:publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`。
 1. 使用網域名稱設定`X-Forwarded-Host`標頭，讓AEM可以判斷主機標頭。 例如：`X-Forwarded-Host:example.com`。
-1. 設定`X-AEM-Edge-Key`。 該值應來自Adobe。
+1. 設定`X-AEM-Edge-Key`。 應該使用Cloud Manager設定管線來設定值，如[本文章](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token#CDN-HTTP-value)所述。
 
    * 需要，以便AdobeCDN可以驗證要求的來源，並將`X-Forwarded-*`標頭傳遞至AEM應用程式。 例如，`X-Forwarded-For`是用來判斷使用者端IP。 因此，受信任的呼叫者（即客戶管理的CDN）有責任確保`X-Forwarded-*`標頭的正確性（請參閱以下備註）。
    * 您可以選擇是否在`X-AEM-Edge-Key`不存在時封鎖對AdobeCDN輸入端的存取。 如果您需要直接存取AdobeCDN的入口（將被封鎖），請通知Adobe。
@@ -79,7 +80,7 @@ CDN錯誤頁面可設定為在罕見情況下無法連線到AEM時，覆寫提�
 
 在接受即時流量之前，您應該向Adobe的客戶支援驗證端對端流量路由是否正常運作。
 
-取得`X-AEM-Edge-Key`後，您可以依照以下方式測試要求是否正確路由。
+設定`X-AEM-Edge-Key`後，您可以依照以下方式測試要求是否正確路由。
 
 在Linux®中：
 
