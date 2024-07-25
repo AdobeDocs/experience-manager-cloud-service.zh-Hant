@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: d76f27e2b85cefe5e83f790a91466e94a619a077
+source-git-commit: e11c869c2f8cc8847869ad67a2c752e7239bd44c
 workflow-type: tm+mt
-source-wordcount: '1965'
-ht-degree: 100%
+source-wordcount: '1511'
+ht-degree: 73%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 100%
 
 ## 發行日期 {#release-date}
 
-[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 最新功能版本 (2024.6.0) 的發行日期為 2024 年 6 月 27 日。下一個功能版本 (2024.7.0) 預計於 2024 年 7 月 25 日發行。
+[!DNL Adobe Experience Manager]作為[!DNL Cloud Service]目前功能版本(2024.7.0)的發行日期是2024年7月25日。 下一個功能版本(2024.8.0)計畫於2024年8月29日發行。
 
 ## 維護版本發行說明 {#maintenance}
 
@@ -36,17 +36,13 @@ ht-degree: 100%
 
 ## 發行影片 {#release-video}
 
-請觀看 2024 年 6 月發行概觀影片，了解 2024.6.0 版本新增功能摘要：
+請觀看 2024 年 7 月版本概觀影片，了解 2024.7.0 版本新增功能的摘要：
 
->[!VIDEO](https://video.tv.adobe.com/v/3430779?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3431707?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
 ### Experience Manager Sites 新功能 {#new-feature-sites}
-
-**實際使用監控 (RUM) 資料服務**{#real-use-monitoring}
-
-[實際使用監控 (RUM) 資料服務](/help/sites-cloud/administering/real-use-monitoring-for-aem-as-a-cloud-service.md)現在已正式推出，讓 AEM as a Cloud Service 能夠收集用戶端的資料。此服務可以更準確地反映使用者互動，確保可靠地測量網站參與度。它為客戶提供有關頁面流量和效能的進階深入分析，帶來了解和增強頁面效能的寶貴機會。
 
 ### 早期採用者計劃 {#sites-early-adopter}
 
@@ -64,36 +60,21 @@ ht-degree: 100%
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### Experience Manager Assets 新功能 {#new-features-assets}
+**使用資產選擇器上傳資產**
 
-
-
-**Content Hub**
-
-Content Hub 作為 Experience Manager Assets as a Cloud Service 的一部分提供，以實現組織及其業務合作夥伴對品牌內容的大眾化存取。有了 Content Hub，您可以輕鬆找到和分發資產、重複使用及建立新的品牌變化版本，並加速大規模啟動。
-
-![Content Hub 使用者介面](/help/release-notes/assets/content-hub-ui.png)
-
-**具有 OpenAPI 功能的 Dynamic Media**
-
-具有 OpenAPI 功能的 Dynamic Media 將 DAM 擴展到 Adobe 和第三方應用程式，從而能夠透過資產選擇器或 OpenAPI 堆疊在任何管道存取品牌認可的數位資產。關鍵原則 - 無二進位副本，資產在邊緣進行最佳化和轉換以實現快速效能，公開或安全地交付資產。
-
-![新的 Dynamic Media 資料流程圖](/help/assets/assets/dm-openapi-dfd.png)
-
+Asset Selector現在可讓內容作者透過拖曳或瀏覽本機檔案系統，直接從選取器上傳最終資產。 這可讓您從所選的應用程式將最終資產上傳至DAM。
 
 ### 資產視圖的新功能 {#assets-view-new-features}
 
-**Assets Insights 儀表板中提供了更多選項**
+**Content credentials整合**
 
-現在，Assets Insights 儀表板中提供了按資產類型和大小劃分的資產計數。這些選項在您的資產視圖環境中提供即時資料。依大小範圍和資產類型詳細顯示資產的計數和百分比。
+Experience Manager Assets現在支援支援影像格式的content credentials。 如此一來，資產歷程及其建立方式的相關資訊，包括是否使用GenAI進行修改。
 
-**嵌入式 Adobe Express 編輯器的更新**
+![Content credentials](/help/assets/assets/content-credentials.png)
 
-* 改進了另存為新資產與另存為新版本的使用者體驗。
+**資料夾內容的視覺預覽**
 
-* 以多頁 PDF 和影像格式匯出多頁 Express 文件 (以前僅支援單頁)。選取影像格式會將每個頁面儲存為 DAM 中的不同資產，以供下游傳遞。
-
-* 支援在儲存資產時在「儲存」對話方塊中新增中繼資料。
+現在，Experience Manager Assets在瀏覽或搜尋內容時，會在資料夾縮圖上顯示資料夾內容的視覺預覽，改善AEM Assets存放庫中可用資產的可發現性。
 
 <!--
 
@@ -110,25 +91,11 @@ When looking at the asset details, any image with content credentials added, suc
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-<!-- 
-
-* **Configure a shard for Adobe Sign for AEM Forms**: Adobe distributes Acrobat Sign API around the globe in many deployment units called "shards." Each shard serves a customer's account, such as NA1, NA2, NA3, EU1, JP1, AU1, IN1, and others. The shard names correspond to geographic locations. You can now use more than one shard while using Adobe Sign integration with AEM Forms. 
-
--->
-
 ### AEM Forms 的新功能 {#forms-new-prerelease-features}
 
 #### 核心元件式最適化表單的增強型視覺規則編輯器
 
-此版本包含基於核心元件的最適化表單之視覺規則編輯器重大升級。您現在可以：
-
-* 在視覺規則編輯器中建立規則，以[覆寫預設的表單提交成功/失敗訊息](/help/forms/create-and-use-custom-functions.md#use-case-override-form-submission-success-and-error-handlers)。
-
-* 在最適化表單規則編輯器中，新增[為 WHEN 運算選取不同類型欄位](/help/forms/rule-editor-core-components.md#allowed-multiple-fields-in-when)的功能。
-
-* 表單製作者現在可以[在提交之前套用自訂函數來預先處理資料](/help/forms/create-and-use-custom-functions.md#use-case-submit-altered-data-to-the-server)。
-
-* 使用「[**儲存為草稿**](/help/forms/save-core-component-based-form-as-draft.md)」功能儲存部分完成的表單，以便日後提交。遇到使用者必須中斷表單填寫並稍後再繼續的情況時，這項功能非常實用。
+最適化表單作者可以在核心元件的視覺規則編輯器中使用現成可用的函式中的可重複表單欄位，以在表單中建置複雜的商業邏輯，而不需要自訂或開發團隊的協助。
 
 ### AEM Forms 的優先體驗功能 {#forms-new-early-access-features}
 
@@ -136,33 +103,54 @@ AEM Forms 優先體驗計劃為您提供獨一無二的機會，讓您比其他�
 
 本發行說明列出目前版本提供的創新功能。如需優先體驗計劃提供之創新的完整清單，請參閱 [AEM Forms 優先體驗計劃文件](/help/forms/early-access-ea-features.md)。
 
-#### 強化機器人保護方法
+#### 使用通用編輯器製作調適型表單
 
-AEM Forms 新增對於 Cloudflare Turnstile 和 hCaptcha 兩種熱門驗證碼解決方案的支援，藉此強化其安全性功能。此功能補充了現有的 Google reCAPTCHA，為使用者提供更多選項。讓使用者擁有更多保護表單的彈性，避免發生機器人和垃圾郵件提交資料的情況。
-
-* **Cloudflare Turnstile**：這種無摩擦的驗證碼利用不需要明確互動的簡易挑戰來驗證使用者。它與您的表單無縫整合，可提升使用者體驗。
-* **hCaptcha**：這種重視隱私的驗證碼提供簡單易用且著重資料隱私權的替代方案。其目的是在安全性和使用者體驗之間取得平衡。
-* **Google reCAPTCHA**：AEM Forms 繼續支援 reCAPTCHA v2 和 reCAPTCHA Enterprise，提供可靠且完善的解決方案。
-
-透過提供多個驗證碼選項，AEM Forms 讓您根據自己的具體需求選擇最合適的解決方案。
-
-是否準備好將上述任一驗證碼解決方案與您的最適化表單整合？Adobe 文件提供各個解決方案的詳細操作指示，包括 [Cloudflare Turnstile](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-turnstile-core-components)、[hCaptcha](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-hcaptcha-core-components) 和 [Google reCAPTCHA](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/captcha-adaptive-forms-core-components)。
-
-
-### Forms 服務
-
-Forms 服務會產生用於資料擷取的互動式 PDF forms。也可以利用此表單把資料匯入至現有的互動式 PDF 表單或將其中的資料匯出，並驗證提交的資料。以下是其功能的詳細介紹：
-
-* **轉譯表單**：從使用 AEM Forms Designer 建立的範本，並可以選擇搭配 XML 資料，產生互動式 PDF 表單。此功能會產生一個可填寫的 PDF 表單，可選擇預先填入資料。
-* **資料擷取和匯入**：將資料匯入現有 PDF 表單，以及從已填妥的 PDF 表單中擷取資料。支援 XDP 和 XML 資料格式，而匯入至非 XFA PDF forms (又稱為 AcroForms) 可額外支援 FDF 和 XFDF 資料。
-* **資料驗證**：根據使用 AEM Forms Designer 建立的範本驗證以 XDP 或 XML 格式提交的資料。
+運用Adobe Experience Manager [通用編輯器](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction)，透過Edge Delivery Service提供的WYSIWYG拖放式撰寫功能，針對Headless和Headful註冊體驗建立最適化表單。 最適化表單作者可針對網頁中的表單變化輕鬆建立和啟動實驗，並決定使用者的最佳執行體驗。
 
 >[!IMPORTANT]
 >
 > 如果您有興趣加入 Adobe 優先體驗計劃以使用任何優先體驗創新，請直接從您的正式地址寄送電子郵件至 [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) 要求存取。您可以要求存取所有或任何特定的創新。
 
-
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] 基礎 {#foundation}
+
+### 使用自助API金鑰清除CDN的內容 {#purge-cdn}
+
+使用HTTP Cache-Control標題設定TTL，是平衡內容傳送效能與內容新鮮度的有效方法。 不過，在即時提供更新內容很重要的情況下，直接清除CDN快取可能會有助益。
+
+[瞭解如何](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token)使用Cloud Manager設定管道自助設定清除API Token，以便您可以[叫用具有下列任一變數的清除API](/help/implementing/dispatcher/cdn-cache-purge.md)：
+* 單一URL
+* 使用標籤的多個URL
+* 完整CDN快取清除
+
+### 客戶管理的CDN專用X-AEM-Edge-Key的自助設定 {#customermanaged-keys}
+
+以前，需要支援服務單才能產生設定客戶管理之內容傳遞網路所需的 X-AEM-Edge-Key。現在，這是自助式，可在使用設定管道部署的設定檔案中宣告索引鍵值，移除上線新環境的任何延遲。 [了解更多](/help/implementing/dispatcher/cdn-credentials-authentication.md#CDN-HTTP-value)。
+
+### 流量篩選規則警報 {#traffic-filter-rules-alerts}
+
+流量篩選規則包含可選擇性授權的Web應用程式防火牆(WAF)規則，可讓您設定應該封鎖哪些流量。
+
+現在只要流量篩選規則被觸發，您就可以[訂閱警示](/help/security/traffic-filter-rules-including-waf.md#traffic-filter-rules-alerts)。 發生某些流量狀況時，行動中心電子郵件通知會通知您，以利採取適當措施。
+
+### 與內容交付相關的早期採用者計劃 {#foundation-early-adopter}
+
+請寄送電子郵件至 **<aemcs-cdn-config-adopter@adobe.com>**，指出您對以下哪些早期採用者計劃感興趣。
+
+#### 內容傳遞網路的基本驗證 (早期採用者計劃) {#basicauth-cdn}
+
+透過彈出要求使用者名稱和密碼的基本驗證對話方塊來保護某些內容資源。此功能主要針對輕型身分驗證使用案例，例如業務利害關係人檢閱內容，而不是作為一般使用者存取權限的全面解決方案。使用者名稱和密碼清單是由設定檔管理的，此設定檔位於透過設定管道部署的 Git 中，會參考祕密類型的 Cloud Manager 環境變數。[了解更多](/help/implementing/dispatcher/cdn-credentials-authentication.md#basic-auth)。
+
+#### 用戶端重新導向 (早期採用者計畫) {#client-side-redirects-early-adopter}
+
+在原始碼控制系統中設定 301/302 用戶端重新導向，並部署到內容傳遞網路。[了解更多](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors)。<!-- and join the early adopter program by emailing **<aemcs-cdn-config-adopter@adobe.com>**. --> 請注意，已經有一些與[內容傳遞網路設定](/help/implementing/dispatcher/cdn-configuring-traffic.md)相關的其他功能可用，包括要求和回應轉換，以及將流量路由到 AEM 之外的網站。
+
+#### 業務使用者可以在 Git 之外宣告重新導向 (早期採用者計劃) {#apache-rewritemaps-early-adopter}
+
+與 AEM 6.5 類似，Apache/Dispatcher 擷取放在發佈存放庫中特定位置的重新寫入對應並將其載入，而不需要 Web 層級的管道執行。此方法可讓業務使用者使用試算表或 UI (例如 ACS Commons Redirect Map Manager 或自訂應用程式) 宣告重新導向。<!-- Please reach out to **<aemcs-cdn-config-adopter@adobe.com>** for more information. -->
+
+#### 用來載入動態內容的 Edge Side Includes (ESI) (早期採用者計劃) {#esi-early-adopter}
+
+Adobe 管理的內容傳遞網路現在支援 [Edge Side Includes (ESI)](/help/implementing/dispatcher/edge-side-includes.md)，這是一種用於邊緣層級動態 Web 內容組合的標記語言。透過包含 ESI 程式碼片段，您可以在內容傳遞網路上用較高的 TTL 快取整個 HTML 頁面，同時更頻繁地從來源擷取需要較高更新頻率 (TTL 較低) 的較小區段。<!--Please reach out to **<aemcs-cdn-config-adopter@adobe.com>** for more information.-->
 
 ### 內容健康相關行動中心通知早期採用者計劃 {#actions-center-notifications}
 
@@ -191,44 +179,6 @@ Forms 服務會產生用於資料擷取的互動式 PDF forms。也可以利用�
 #### 缺少 Sling 資源 {#sling-resource}
 
 當偵測到缺少 Sling 資源時，動作中心會主動通知您。透過此方法，您可以新增缺少的資源並防止某些 AEM Assets 功能失敗。
-
-### 與內容交付相關的早期採用者計劃 {#foundation-early-adopter}
-
-請寄送電子郵件至 **<aemcs-cdn-config-adopter@adobe.com>**，指出您對以下哪些早期採用者計劃感興趣。
-
-#### 內容傳遞網路的基本驗證 (早期採用者計劃) {#basicauth-cdn}
-
-透過彈出要求使用者名稱和密碼的基本驗證對話方塊來保護某些內容資源。此功能主要針對輕型身分驗證使用案例，例如業務利害關係人檢閱內容，而不是作為一般使用者存取權限的全面解決方案。使用者名稱和密碼清單是由設定檔管理的，此設定檔位於透過設定管道部署的 Git 中，會參考祕密類型的 Cloud Manager 環境變數。[了解更多](/help/implementing/dispatcher/cdn-credentials-authentication.md#basic-auth)。
-
-#### 使用自助 API 金鑰清除內容傳遞網路上的內容 (早期採用者計畫) {#purge-cdn}
-
-以自助方式註冊內容傳遞網路清除 API 金鑰，並利用它使內容傳遞網路上的內容失效，無論是全域或針對一個或多個資源。[了解更多](/help/implementing/dispatcher/cdn-cache-purge.md)。
-
-<!-- Email **<aemcs-cdn-config-adopter@adobe.com>** with a request to be an early adopter. -->
-
-#### 為客戶管理的內容傳遞網路 (BYOCDN) 自助建立 X-AEM-Edge-Key (早期採用者計劃) {#byocdn-keys}
-
-以前，需要支援服務單才能產生設定客戶管理之內容傳遞網路所需的 X-AEM-Edge-Key。現在則可以透過使用設定管道部署的設定檔，以自助方式取得此結果，因此新環境上線不會有任何延遲。[了解更多](/help/implementing/dispatcher/cdn-credentials-authentication.md#CDN-HTTP-value)。
-
-<!-- Email **<aemcs-cdn-config-adopter@adobe.com>** with a request to be an early adopter. -->
-
-#### 用戶端重新導向 (早期採用者計畫) {#client-side-redirects-early-adopter}
-
-在原始碼控制系統中設定 301/302 用戶端重新導向，並部署到內容傳遞網路。[了解更多](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors)。<!-- and join the early adopter program by emailing **<aemcs-cdn-config-adopter@adobe.com>**. --> 請注意，已經有一些與[內容傳遞網路設定](/help/implementing/dispatcher/cdn-configuring-traffic.md)相關的其他功能可用，包括要求和回應轉換，以及將流量路由到 AEM 之外的網站。
-
-#### 流量篩選規則警報 (早期採用者計畫) {#traffic-filter-rules-alerts-early-adopter}
-
-最近發佈的[流量篩選規則](/help/security/traffic-filter-rules-including-waf.md) (其中包括可授權選項的 Web 應用程式防火牆 (WAF) 規則) 可讓您設定應該允許或拒絕哪些流量。
-
-加入早期採用者計劃，您就可以在流量篩選規則觸發時收到提醒。發生某些流量狀況時，行動中心電子郵件通知會通知您，以利採取適當措施。
-
-#### 業務使用者可以在 Git 之外宣告重新導向 (早期採用者計劃) {#apache-rewritemaps-early-adopter}
-
-與 AEM 6.5 類似，Apache/Dispatcher 擷取放在發佈存放庫中特定位置的重新寫入對應並將其載入，而不需要 Web 層級的管道執行。此方法可讓業務使用者使用試算表或 UI (例如 ACS Commons Redirect Map Manager 或自訂應用程式) 宣告重新導向。<!-- Please reach out to **<aemcs-cdn-config-adopter@adobe.com>** for more information. -->
-
-#### 用來載入動態內容的 Edge Side Includes (ESI) (早期採用者計劃) {#esi-early-adopter}
-
-Adobe 管理的內容傳遞網路現在支援 [Edge Side Includes (ESI)](/help/implementing/dispatcher/edge-side-includes.md)，這是一種用於邊緣層級動態 Web 內容組合的標記語言。透過包含 ESI 程式碼片段，您可以在內容傳遞網路上用較高的 TTL 快取整個 HTML 頁面，同時更頻繁地從來源擷取需要較高更新頻率 (TTL 較低) 的較小區段。<!--Please reach out to **<aemcs-cdn-config-adopter@adobe.com>** for more information.-->
 
 ## [!DNL Experience Manager] Guides {#guides}
 

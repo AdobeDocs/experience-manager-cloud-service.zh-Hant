@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的運作方式以及該軟體可以為您做哪些事。
 breadcrumb-title: 使用手冊
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 83cf953853c88c1f4b7149bc63c7f07b1e73faf3
+source-git-commit: f6b4ca55d69de3bb20e2232dbc29d1aadae2cd10
 workflow-type: tm+mt
-source-wordcount: '5283'
+source-wordcount: '5297'
 ht-degree: 97%
 
 ---
@@ -32,6 +32,7 @@ ht-degree: 97%
    + AEMaaCS 功能發行說明{#release-notes}
       + [最新發行說明](/help/release-notes/release-notes-cloud/release-notes-current.md)
       + 2024 {#2024}
+         + [2024.6.0 版發行說明](/help/release-notes/release-notes-cloud/2024/release-notes-2024-6-0.md)
          + [2024.5.0 版發行說明](/help/release-notes/release-notes-cloud/2024/release-notes-2024-5-0.md)
          + [2024.4.0 版發行說明](/help/release-notes/release-notes-cloud/2024/release-notes-2024-4-0.md)
          + [2024.3.0 版發行說明](/help/release-notes/release-notes-cloud/2024/release-notes-2024-3-0.md)
@@ -686,6 +687,7 @@ ht-degree: 97%
             + [將最適化表單提交至 Azure Blob 儲存體](/help/forms/configure-submit-action-azure-blob-storage.md)
             + [將最適化表單提交至 Microsoft](/help/forms/configure-submit-action-onedrive.md)
             + [將最適化表單連接到 Microsoft](/help/forms/configure-submit-action-sharepoint.md)
+            + [使用授權範圍以有限存取權設定SharePoint網站](/help/forms/configure-sharepoint-site-limited-access.md)
             + [將 AEM 最適化表單與 AEM 工作流程整合](/help/forms/configure-submit-action-workflow.md)
             + [設定提交到最適化表單的 REST 端點提交動作](/help/forms/configure-submit-action-restpoint.md)
             + [設定最適化表單的傳送電子郵件提交動作](/help/forms/configure-submit-action-send-email.md)

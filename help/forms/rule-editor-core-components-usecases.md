@@ -4,13 +4,13 @@ description: 本文概述根據核心元件在最適化表單中規則編輯器�
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
-source-git-commit: c600af3f2e866483cda2426e188dbc104b07688e
+exl-id: 8191e113-f768-4b1e-a191-e3c722f19054
+source-git-commit: 34be2ca89433e36a68e7d8eae42c6bd9ad6e623f
 workflow-type: tm+mt
-source-wordcount: '1069'
+source-wordcount: '1125'
 ht-degree: 0%
 
 ---
-
 
 # 規則編輯器的不同使用案例
 
@@ -18,9 +18,10 @@ ht-degree: 0%
 現在，讓我們討論規則編輯器的不同實作。
 
 
-## 使用內建函式簡化可重複面板中的複雜計算
+## 在具有函式的可重複面板中簡化複雜的計算
 
-規則編輯器可讓您直接在可重複面板中的欄位上使用現成可用的函式，例如Sum、Min、Max和Join。 這開啟了強大的自動化功能，讓您無需自訂程式碼即可實施複雜的商業邏輯。
+規則編輯器可讓您直接在可重複面板中的欄位上使用現成可用的函式，例如Sum、Min、Max和Join。 您也可以將可重複的面板欄位值傳遞至接受數字陣列、字串陣列、布林陣列等的函式。 這開啟了強大的自動化功能，讓您無需自訂程式碼即可實施複雜的商業邏輯。
+
 想像一個具有可重複面板的表單，其中每個面板執行個體都會收集有關資產宣告值的資訊。
 
 ![可重複的表單](/help/forms/assets/ootb-function-support-repeatable-panel-form.png)
@@ -32,6 +33,10 @@ ht-degree: 0%
 當您填寫表單並新增執行個體以宣告資產值時，`Calculate Asset Value`按鈕會計算所有已宣告資產值的總和，並在`assetvalue`文字方塊中顯示結果。
 
 ![支援OOTB函式中的可重複面板欄位](/help/forms/assets/ootb-function-support-repeatable-panel-form-preview.png)
+
+>[!NOTE]
+>
+> 如果可重複面板欄位的值傳遞至不接受陣列的函式，則可重複面板的最後一個執行個體的欄位值傳遞至函式。
 
 這只是個範例！ 探索可用的[功能](#b-form-objects-and-functions-br)以簡化工作流程，並提高表單中的資料準確度。
 

@@ -6,10 +6,10 @@ feature: Adaptive Forms, Core Components
 exl-id: e925a750-5fb5-4950-afd3-78551eec985d
 title: 「如何設定最適化表單的提交動作？」
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: 5e1d08e82cafc3a8a715653727f42ce0048f2b1f
 workflow-type: tm+mt
-source-wordcount: '1052'
-ht-degree: 34%
+source-wordcount: '1117'
+ht-degree: 31%
 
 ---
 
@@ -51,7 +51,12 @@ AEM as a Cloud Service提供多種立即可用的提交動作，用於處理表�
 1. 指定「**[!UICONTROL 標題]**」、「**[!UICONTROL 用戶端 ID]**」、「**[!UICONTROL 用戶端密碼]**」和「**[!UICONTROL OAuth URL]**」。如需有關如何擷取 OAuth URL 之用戶端 ID、用戶端密碼、租用戶 ID 的資訊，請參閱 [Microsoft® 文件](https://learn.microsoft.com/en-us/graph/auth-register-app-v2)。
    * 您可以從 Microsoft® Azure 入口網站擷取應用程式的 `Client ID` 和 `Client Secret`。
    * 在 Microsoft® Azure 入口網站中，將重新導向 URI 新增為 `https://[author-instance]/libs/cq/sharepoint/content/configurations/wizard.html`。以作者執行個體的 URL 取代 `[author-instance]`。
-   * 新增 API 權限 `offline_access` 和 `Sites.Manage.All` 以提供讀取/寫入權限。
+   * 新增API許可權`offline_access`和`Sites.Manage.All`，以提供讀取/寫入許可權。`Sites.Manage.All`是Microsoft Graph API中的許可權範圍，可授予應用程式管理SharePoint Sites所有方面的能力，例如刪除或修改網站。
+
+     >[!NOTE]
+     >
+     > 您也可以[在SharePoint的Graph API中使用`Sites.Selected`許可權範圍，以有限存取權](/help/forms/configure-sharepoint-site-limited-access.md)設定Microsoft網站。 `Sites.Selected`是Microsoft的Graph API中的許可權範圍，可讓您更精細且受限地存取SharePoint網站。
+
    * 使用 OAuth URL：`https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`。從 Microsoft® Azure 入口網站，以應用程式的 `tenant-id` 取代 `<tenant-id>`。
 
    >[!NOTE]

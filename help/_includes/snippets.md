@@ -1,8 +1,8 @@
 ---
-source-git-commit: a35556164ace2245577c3e22da1bc276fc3d98d0
+source-git-commit: 4cfdabaae23f0dcd1737c73e5edd644bbec6014e
 workflow-type: tm+mt
-source-wordcount: '656'
-ht-degree: 74%
+source-wordcount: '662'
+ht-degree: 72%
 
 ---
 # 代碼片段 {#snippets}
@@ -100,7 +100,7 @@ ht-degree: 74%
    </tr>
    <tr>
     <td>ES10 支援 </td>
-    <td>尚不支援 ES10。 </td>
+    <td>尚未支援ES10。 僅支援ES5 JavaScript功能。 </td>
     <td>支援現代 JavaScript 功能，例如自訂函數中的 let 和 arrow 函數 (ES10 支援)。 
    </td>
    </tr>
