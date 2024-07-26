@@ -4,10 +4,10 @@ description: 了解如何將 Adobe Experience Manager (AEM) as a Cloud Service �
 feature: Headless, Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 role: Admin, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 4492536120989423b639bbb75105568a9c328507
 workflow-type: tm+mt
-source-wordcount: '5400'
-ht-degree: 83%
+source-wordcount: '5469'
+ht-degree: 82%
 
 ---
 
@@ -1154,6 +1154,14 @@ query allTeams {
 ## 驗證 {#authentication}
 
 請參閱[針對內容片段之遠端 AEM GraphQL 查詢的驗證](/help/headless/security/authentication.md)。
+
+## 自動化測試 {#automated-testing}
+
+在AEM Cloud Manager中執行部署管道時，會在管道執行期間執行自動化測試。
+
+為了提供準確的結果，您的AEM as a Cloud Service **階段**&#x200B;環境應儘可能映象您的&#x200B;**生產**&#x200B;環境。 這對內容尤其重要。
+
+您可以使用AEM as a Cloud Service [內容複製工具](/help/implementing/developing/tools/content-copy.md)將您的生產內容複製到中繼環境，藉此達成此目的。
 
 ## 限制 {#limitations}
 
