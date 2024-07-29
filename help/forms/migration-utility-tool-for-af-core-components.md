@@ -8,14 +8,16 @@ hide: true
 hidefromtoc: true
 exl-id: ee71a576-96a7-4c81-b3a3-1d678f010cba
 feature: Adaptive Forms, Core Components
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: 5d8f4d5d628b090b8bf54de0f2d9d62c02544522
 workflow-type: tm+mt
-source-wordcount: '961'
+source-wordcount: '991'
 ht-degree: 1%
 
 ---
 
 # 簡介
+
+<span class="preview">此功能可在早期採用者方案下使用。 您可以從您的官方電子郵件ID寫信到aem-forms-ea@adobe.com ，以加入率先採用者計畫並請求存取該功能。</span>
 
 Forms Conversion Utility (屬於[AEM Modernize Tool](https://opensource.adobe.com/aem-modernize-Tools/)套裝的一部分)可協助您輕鬆地將使用舊版基礎元件建立的最適化Forms轉換為利用核心元件所支援的現代化功能的表單。
 
