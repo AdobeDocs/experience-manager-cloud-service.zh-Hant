@@ -9,7 +9,7 @@ user-guide-title: AEM as a Cloud Service
 source-git-commit: 06fc5cd31b07fcd8bf085b41bc5f39907d4f5a79
 workflow-type: tm+mt
 source-wordcount: '5299'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -703,16 +703,16 @@ ht-degree: 97%
             + [比較最適化表單](/help/forms/compare-forms.md)
             + [使用移轉公用程式將基礎元件型最適化表單轉換為核心元件型表單。](/help/forms/migration-utility-tool-for-af-core-components.md)
             + [將最適化表單另存為草稿](/help/forms/save-core-component-based-form-as-draft.md)
-            + 根據核心元件之最適化Forms的規則編輯器簡介{#rule-editor-core-components}
-               + [根據核心元件之最適化Forms的規則編輯器簡介](/help/forms/rule-editor-core-components.md)
-               + [根據核心元件之最適化Forms的規則編輯器使用者介面](/help/forms/rule-editor-core-components-user-interface.md)
-               + [基礎規則編輯器和核心元件規則編輯器之間的差異](/help/forms/rule-editor-core-components-difference-tables.md)
-               + [根據核心元件的最適化表單的規則編輯器中可用的運運算元和事件型別](/help/forms/rule-editor-core-components-events-operators.md)
-               + [根據核心元件的最適化表單的規則編輯器範例](/help/forms/rule-editor-core-components-usecases.md)
-            + 根據核心元件之最適化Forms的自訂函式簡介{#create-and-use-custom-function-core-component}
-               + [根據核心元件之最適化Forms的自訂函式簡介](/help/forms/create-and-use-custom-functions.md)
-               + [根據核心元件建立並使用最適化表單的自訂函式](/help/forms/custom-function-core-component-create-function.md)
-               + [根據核心元件之最適化表單的自訂函式範例](/help/forms/custom-function-core-components-use-cases.md)
+            + 以核心元件為主之最適化表單的規則編輯器簡介{#rule-editor-core-components}
+               + [以核心元件為主之最適化表單的規則編輯器簡介](/help/forms/rule-editor-core-components.md)
+               + [以核心元件為主之最適化表單的規則編輯器使用者介面](/help/forms/rule-editor-core-components-user-interface.md)
+               + [基礎規則編輯器與核心元件規則編輯器之間的差異](/help/forms/rule-editor-core-components-difference-tables.md)
+               + [以核心元件為主之最適化表單的規則編輯器中可用的運算子和事件類型](/help/forms/rule-editor-core-components-events-operators.md)
+               + [以核心元件為主之最適化表單的規則編輯器範例](/help/forms/rule-editor-core-components-usecases.md)
+            + 以核心元件為主之最適化表單的自訂函數簡介{#create-and-use-custom-function-core-component}
+               + [以核心元件為主之最適化表單的自訂函數簡介](/help/forms/create-and-use-custom-functions.md)
+               + [建立和使用以核心元件為主之最適化表單的自訂函數](/help/forms/custom-function-core-component-create-function.md)
+               + [以核心元件為主之最適化表單的自訂函數範例](/help/forms/custom-function-core-components-use-cases.md)
       + Foundation 元件 {#authoring-adaptive-forms-foundation-components}
          + 將您的 PDF 表單轉換為最適化表單 {#afcs}
             + [自動表單轉換服務簡介](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=zh-Hant)
@@ -869,7 +869,7 @@ ht-degree: 97%
    + [透過 AEM 使用 Edge Delivery Services](/help/edge/using.md)
    + [選擇編寫方法](/help/edge/authoring-methods.md)
    + WYSIWYG 製作{#wysiwyg-authoring}
-      + [WYSIWYG Edge Delivery內容製作](/help/edge/wysiwyg-authoring/authoring.md)
+      + [為 Edge Delivery 製作 WYSIWYG 內容](/help/edge/wysiwyg-authoring/authoring.md)
       + [為 Edge Delivery 發佈內容](/help/edge/wysiwyg-authoring/publishing.md)
       + [開發人員快速入門指南](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)
       + [建立區塊](/help/edge/wysiwyg-authoring/create-block.md)
