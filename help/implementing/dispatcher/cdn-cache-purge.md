@@ -4,20 +4,17 @@ description: 瞭解如何設定清除API權杖（其可用於API呼叫），從A
 feature: CDN Cache
 exl-id: 4d091677-b817-4aeb-b131-7a5407ace3e0
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+source-git-commit: 3b55f3094b7154b7723ef7ae2230d7ae01eb4abc
 workflow-type: tm+mt
-source-wordcount: '449'
-ht-degree: 3%
+source-wordcount: '437'
+ht-degree: 1%
 
 ---
 
 # 清除內容傳遞網路快取 {#cdn-purge-cache}
 
->[!NOTE]
->此功能尚未正式推出。若要加入早期採用者計畫，請傳送電子郵件至`aemcs-cdn-config-adopter@adobe.com`。
-
 整個清除會從AdobeCDN快取中移除物件，導致未來的請求以快取遺失的形式繼續前往來源，而不是從快取提供服務。
-AEM as a Cloud Service可讓您設定清除API Token，然後將其用於API呼叫。 閱讀[設定CDN認證和驗證文章](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token)，瞭解如何使用Cloud Manager設定管道驗證指示來設定此權杖。
+AEM as a Cloud Service可讓您設定清除API Token，然後將其用於清除API呼叫。 閱讀[設定CDN認證和驗證文章](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token)，瞭解如何使用Cloud Manager設定管道驗證指示詞設定此權杖。
 
 有三個支援的清除變數：
 

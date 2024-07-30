@@ -4,10 +4,10 @@ description: 瞭解如何使用AEM管理的CDN以及如何將您自己的CDN指�
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 role: Admin
-source-git-commit: 3a10a0b8c89581d97af1a3c69f1236382aa85db0
+source-git-commit: 4c145559d1ad18d31947c0437d6d1d31fb3af1bb
 workflow-type: tm+mt
-source-wordcount: '1128'
-ht-degree: 23%
+source-wordcount: '1250'
+ht-degree: 20%
 
 ---
 
@@ -44,13 +44,29 @@ AEM管理的CDN符合大部分客戶的效能與安全性需求。 對於發佈�
 
 ### 設定 CDN 上的流量 {#cdn-configuring-cloud}
 
-設定CDN流量和篩選器的規則可在設定檔案中宣告，並使用[Cloud Manager的設定管道部署至CDN。](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline)如需詳細資訊，請參閱[在CDN設定流量](/help/implementing/dispatcher/cdn-configuring-traffic.md)和[包含WAF規則的流量篩選器規則](/help/security/traffic-filter-rules-including-waf.md)。
+以多種方式設定CDN的流量，包括：
+* 使用[流量篩選規則](/help/security/traffic-filter-rules-including-waf.md)封鎖惡意流量(包括選擇性授權的高階WAF規則)
+* 修改[要求與回應](/help/implementing/dispatcher/cdn-configuring-traffic.md#request-transformations)的性質
+* 套用301/302 [使用者端重新導向](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors)
+* 宣告[原始選取器](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors)將要求反向Proxy至非AEM後端
+
+瞭解如何使用Git中的YAML檔案來設定這些功能，並使用Cloud Manager [設定管道](/help/implementing/dispatcher/cdn-configuring-traffic.md)來部署這些功能。
 
 ### 設定CDN錯誤頁面 {#cdn-error-pages}
 
 CDN錯誤頁面可設定為在罕見情況下無法連線到AEM時，覆寫提供給瀏覽器的預設無品牌頁面。 如需詳細資訊，請參閱[設定CDN錯誤頁面](/help/implementing/dispatcher/cdn-error-pages.md)。
 
-## 客戶 CDN 會指向 AEM 管理的 CDN {#point-to-point-CDN}
+### 清除CDN上的快取內容 {#purge-cdn}
+
+使用HTTP Cache-Control標題設定TTL，是平衡內容傳送效能與內容新鮮度的有效方法。 不過，在必須立即提供更新內容的情況下，直接清除CDN快取可能會有幫助。
+
+閱讀有關[設定清除API Token](/help/implementing/dispatcher/cdn-credentials-authentication.md/#purge-API-token)和[清除快取的CDN內容](/help/implementing/dispatcher/cdn-cache-purge.md)的資訊。
+
+### CDN的基本驗證 {#basic-auth}
+
+對於輕度驗證使用案例，包括商務利害關係人審查內容，透過彈出基本驗證對話方塊（需要使用者名稱和密碼）來保護內容。 [瞭解更多](/help/implementing/dispatcher/cdn-credentials-authentication.md)並加入早期採用者計畫。
+
+## 客戶CDN指向AEM管理的CDN {#point-to-point-CDN}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_byocdn"
@@ -71,7 +87,7 @@ CDN錯誤頁面可設定為在罕見情況下無法連線到AEM時，覆寫提�
 1. 將SNI設為AdobeCDN的入口。
 1. 將Host標頭設定為原始網域。 例如：`Host:publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`。
 1. 使用網域名稱設定`X-Forwarded-Host`標頭，讓AEM可以判斷主機標頭。 例如：`X-Forwarded-Host:example.com`。
-1. 設定`X-AEM-Edge-Key`。 應該使用Cloud Manager設定管線來設定值，如[本文章](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token#CDN-HTTP-value)所述。
+1. 設定`X-AEM-Edge-Key`。 應該使用Cloud Manager設定管線來設定值，如[本文章](/help/implementing/dispatcher/cdn-credentials-authentication.md#CDN-HTTP-value)所述。
 
    * 需要，以便AdobeCDN可以驗證要求的來源，並將`X-Forwarded-*`標頭傳遞至AEM應用程式。 例如，`X-Forwarded-For`是用來判斷使用者端IP。 因此，受信任的呼叫者（即客戶管理的CDN）有責任確保`X-Forwarded-*`標頭的正確性（請參閱以下備註）。
    * 您可以選擇是否在`X-AEM-Edge-Key`不存在時封鎖對AdobeCDN輸入端的存取。 如果您需要直接存取AdobeCDN的入口（將被封鎖），請通知Adobe。
