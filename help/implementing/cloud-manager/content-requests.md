@@ -5,7 +5,7 @@ exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5296d46658f591d7736587c98b112006d947321d
+source-git-commit: 96bf1d56d24da851ad4713e3cb0728fd7a18da18
 workflow-type: tm+mt
 source-wordcount: '1288'
 ht-degree: 10%
@@ -21,6 +21,10 @@ ht-degree: 10%
 ## 了解雲端服務內容要求 {#understanding-cloud-service-content-requests}
 
 對於使用現成CDN的客戶，Cloud Service內容請求是透過伺服器端資料收集來測量。 系統會透過CDN記錄分析啟用此集合。 透過自動分析源自Adobe Experience Manager as a Cloud Service CDN的記錄檔，可在AEM as a Cloud Service邊緣的伺服器端自動收集內容請求。 這是透過從CDN隔離傳回HTML`(text/html)`或JSON `(application/json)`內容的要求來完成的，其基礎為下文詳述的幾個包含和排除規則。 內容請求會與從CDN快取提供的傳回內容或回到CDN原始來源(AEM傳送器)的內容分開進行。
+
+<!-- REMOVED AS PER EMAIL REQUEST FROM SHWETA DUA, JULY 30, 2024 TO RICK BROUGH AND ALEXANDRU SARCHIZ   For customers employing their own CDN, client-side collection offers a more precise reflection of interactions, ensuring a reliable measure of website engagement via the [Real Use Monitoring](/help/sites-cloud/administering/real-use-monitoring-for-aem-as-a-cloud-service.md) service. This gives customers advanced insights into their page traffic and performance. While it is beneficial for all customers, it offers a representative reflection of user interactions, ensuring a reliable measure of website engagement by capturing the number of page views from the client side. 
+
+For customers that bring their own CDN on top of AEM as a Cloud Service, server-side reporting results in numbers that cannot be used to compare with the licensed content requests. With the [Real Use Monitoring](/help/sites-cloud/administering/real-use-monitoring-for-aem-as-a-cloud-service.md), Adobe can reflect a reliable measure of website engagement. -->
 
 ### Cloud Service內容請求的差異 {#content-requests-variances}
 
