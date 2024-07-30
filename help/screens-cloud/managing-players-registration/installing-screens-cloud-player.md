@@ -4,7 +4,7 @@ description: 本頁面說明如何在Screensas a Cloud Service中安裝和設定
 exl-id: a022738a-c543-4629-a244-f70fa294fe7f
 feature: Developing Screens
 role: Admin, Developer, User
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: af7793ca7ad3d11bfff980a4d00f537fd0871755
 workflow-type: tm+mt
 source-wordcount: '582'
 ht-degree: 1%
@@ -71,10 +71,12 @@ AEM Screens播放器中的基本播放監視可讓我們：
 | lastContentChange {string} | 上次內容變更的時間戳記 |
 
 >[!NOTE]
+>
 >或者，您也可以從播放器偏好設定中啟用更進階的屬性（啟用播放監視）：
->|屬性|說明|
->|—|—|
->|isContentRendering {boolean}|如果GPU可以確認它正在播放實際內容（根據畫素分析），則為true|
+>
+>| 屬性 | 說明 |
+>|---|---|
+>| isContentRendering {boolean} | 如果GPU可以確認正在播放實際內容（根據畫素分析），則為true |
 
 ### 限制 {#limitations}
 

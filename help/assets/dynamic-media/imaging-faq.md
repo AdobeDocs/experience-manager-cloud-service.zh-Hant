@@ -6,7 +6,7 @@ feature: Asset Management,Renditions,Best Practices
 role: User
 mini-toc-levels: 2
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
-source-git-commit: 35f31c95e92148ff5f3472f26ea9c40fa5a17947
+source-git-commit: 22de8ac77af27114099de2f6b4349232524cb94f
 workflow-type: tm+mt
 source-wordcount: '3454'
 ht-degree: 1%
@@ -30,6 +30,7 @@ ht-degree: 1%
 >嘗試使用Dynamic Media [_快照_](https://snapshot.scene7.com/)，探索Dynamic Media影像修飾元和智慧型影像的優點。
 >
 > Snapshot是視覺化展示工具，旨在說明Dynamic Media在最佳化及動態影像傳送方面的強大功能。 實驗測試影像或Dynamic Media URL，以視覺化方式觀察各種Dynamic Media影像修飾元的輸出，以及針對下列專案的智慧型影像最佳化：
+>
 >* 檔案大小（含WebP和AVIF傳送）
 >* 網路頻寬
 >* DPR （裝置畫素比率）
@@ -133,13 +134,15 @@ DPR和網路頻寬值是根據偵測到的套件式CDN使用者端值。 這些�
 * 如果瀏覽器支援格式，則自動轉換為AVIF
 * 如果AVIF轉換沒有好處或瀏覽器不支援AVIF，則自動轉換成WebP
 * 如果Safari不支援WebP，則自動轉換為JPEG2000
-* 自動轉換為IE 9+適用的JPEGXR，或如果Edge不支援WebP\
+* 自動轉換為IE 9+適用的JPEGXR，或如果Edge不支援WebP
+
   | 影像格式 | 支援的瀏覽器 |
-|—|—|
-| AVIF | [https://caniuse.com/avif](https://caniuse.com/avif) |
-| WebP | [https://caniuse.com/webp](https://caniuse.com/webp) |
-| JPEG2000 | [https://caniuse.com/jpeg2000](https://caniuse.com/jpeg2000) |
-| JPEGXR | [https://caniuse.com/jpegxr](https://caniuse.com/jpegxr) |
+  |---|---|
+  | AVIF | [https://caniuse.com/avif](https://caniuse.com/avif) |
+  | WebP | [https://caniuse.com/webp](https://caniuse.com/webp) |
+  | JPEG2000 | [https://caniuse.com/jpeg2000](https://caniuse.com/jpeg2000) |
+  | JPEGXR | [https://caniuse.com/jpegxr](https://caniuse.com/jpegxr) |
+
 * 對於不支援這些格式的瀏覽器，會提供最初請求的影像格式。
 
 如果原始影像大小小於智慧型影像產生的大小，則會提供原始影像。
@@ -477,5 +480,5 @@ See also [When working with images](/help/assets/dynamic-media/adding-dynamic-me
 
 >[!MORELIKETHIS]
 >
->* [Image optimization with next generation image formats WebP and AVIF.](https://medium.com/adobetech/image-optimisation-with-next-gen-image-formats-webp-and-avif-248c75afacc4) -->
->>
+>* [Image optimization with next generation image formats WebP and AVIF.](https://medium.com/adobetech/image-optimisation-with-next-gen-image-formats-webp-and-avif-248c75afacc4) 
+-->

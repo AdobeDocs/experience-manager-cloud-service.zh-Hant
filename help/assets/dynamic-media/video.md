@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Video Profiles,Best Practices
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 9a3678e8e28806c3c7574d2cfd047c30537d7f41
+source-git-commit: af7793ca7ad3d11bfff980a4d00f537fd0871755
 workflow-type: tm+mt
 source-wordcount: '10491'
 ht-degree: 1%
@@ -908,7 +908,8 @@ Dynamic Media支援透過URL修飾元在視訊中新增單一標題。 請參閱
    | 另存新檔 | 使用「另存新檔」文字欄位中指定的預設檔案名稱，或指定您自己的名稱。 |
    | 為每個資產建立個別的資料夾 | 為您選取要下載的每個註解檔或音訊追蹤檔建立一個資料夾。 |
    | 電子郵件 | 使用您的預設電子郵件程式，將.zip檔案傳送至指定的電子郵件地址。 |
-   | 資產 | 指定正在下載的檔案數以及所有選取檔案的組合總大小。 取消選取此選項會使&#x200B;**[!UICONTROL 下載]**&#x200B;按鈕變暗（關閉），使您無法下載任何檔案。 |
+   | Assets | 指定正在下載的檔案數以及所有選取檔案的組合總大小。 取消選取此選項會使&#x200B;**[!UICONTROL 下載]**&#x200B;按鈕變暗（關閉），使您無法下載任何檔案。 |
+
 1. 選取&#x200B;**[!UICONTROL 下載]**。
 1. Publish影片。 檢視[Publish資產](publishing-dynamicmedia-assets.md)。
 

@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Asset Management, Renditions
 role: User, Admin
 exl-id: e848aa77-7829-4adc-8b88-0279791a4525
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: af7793ca7ad3d11bfff980a4d00f537fd0871755
 workflow-type: tm+mt
 source-wordcount: '1423'
 ht-degree: 34%
@@ -239,6 +239,7 @@ ht-degree: 34%
 | PSD‡ | ✓ | − | − | − | − | − |
 | TIFF | ✓ | ✓ | ✓ | ✓ | ✓ | [影像](/help/assets/dynamic-media/image-sets.md)、[混合媒體](/help/assets/dynamic-media/mixed-media-sets.md)和[迴轉](/help/assets/dynamic-media/spin-sets.md) |
 | WEBP | − | − | − | ✓ | − | − |
+
 <!-- AVIF, HEIC, and WebP added to table above on March 4, 2024 based on CQDOC-21294 -->
 
 ‡合併的影像會從PSD檔案中擷取。 它是由[!DNL Adobe Photoshop]產生並包含在PSD檔案中的影像。 視設定而定，合併的影像不一定是實際影像。
