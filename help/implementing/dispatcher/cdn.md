@@ -4,10 +4,10 @@ description: 瞭解如何使用AEM管理的CDN以及如何將您自己的CDN指�
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 role: Admin
-source-git-commit: 4c145559d1ad18d31947c0437d6d1d31fb3af1bb
+source-git-commit: 655b92f0fd3c6fb69bdd9343719537d6328fa7be
 workflow-type: tm+mt
-source-wordcount: '1250'
-ht-degree: 20%
+source-wordcount: '1552'
+ht-degree: 16%
 
 ---
 
@@ -44,7 +44,8 @@ AEM管理的CDN符合大部分客戶的效能與安全性需求。 對於發佈�
 
 ### 設定 CDN 上的流量 {#cdn-configuring-cloud}
 
-以多種方式設定CDN的流量，包括：
+您可以透過多種方式設定CDN的流量，包括：
+
 * 使用[流量篩選規則](/help/security/traffic-filter-rules-including-waf.md)封鎖惡意流量(包括選擇性授權的高階WAF規則)
 * 修改[要求與回應](/help/implementing/dispatcher/cdn-configuring-traffic.md#request-transformations)的性質
 * 套用301/302 [使用者端重新導向](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors)
@@ -64,7 +65,7 @@ CDN錯誤頁面可設定為在罕見情況下無法連線到AEM時，覆寫提�
 
 ### CDN的基本驗證 {#basic-auth}
 
-對於輕度驗證使用案例，包括商務利害關係人審查內容，透過彈出基本驗證對話方塊（需要使用者名稱和密碼）來保護內容。 [瞭解更多](/help/implementing/dispatcher/cdn-credentials-authentication.md)並加入早期採用者計畫。
+對於輕度驗證使用案例，包括商務利害關係人審查內容，顯示需要使用者名稱和密碼的基本驗證對話方塊以保護內容。 [瞭解更多](/help/implementing/dispatcher/cdn-credentials-authentication.md)並加入早期採用者計畫。
 
 ## 客戶CDN指向AEM管理的CDN {#point-to-point-CDN}
 
@@ -145,6 +146,26 @@ curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com --header "X-Forwa
 
 ![Cloudflare1](assets/cloudflare1.png "Cloudflare")
 ![Cloudflare2](assets/cloudflare2.png "Cloudflare")
+
+### 常見錯誤 {#common-errors}
+
+提供的設定範例顯示所需的基本設定，但客戶設定可能有其他影響規則，這些規則會移除、修改或重新排列AEM as a Cloud Service提供流量所需的標頭。 以下是在設定客戶管理的CDN以指向AEM as a Cloud Service時發生的常見錯誤。
+
+**重新導向至Publish服務端點**
+
+當請求收到403禁止的回應時，表示請求缺少某些必要的標頭。 發生此情況的常見原因是CDN同時管理Apex和`www`網域流量，但未為`www`網域新增正確的標頭。 可透過檢查您的AEM as a Cloud Service CDN記錄並驗證所需的請求標頭來測試此問題。
+
+**太多重新導向回圈**
+
+當頁面收到「太多重新導向」回圈時，系統會在CDN新增一些要求標題，以符合強制傳回本身的重新導向。 例如：
+
+* 建立CDN規則以比對Apex網域或www網域，並僅新增Apex網域的X-Forwarded-Host標頭。
+* Apex網域的請求符合此CDN規則，這會將Apex網域新增為X-Forwarded-Host標頭。
+* 要求會傳送到來源，其中重新導向明確符合Apex網域的主機標頭(例如^example.com)。
+* 會觸發重寫規則，將Apex網域的請求重寫為包含www子網域的https。
+* 該重新導向會傳送至客戶的邊緣，而重新觸發CDN規則時，會針對Apex網域（而非www子網域）重新新增X-Forwarded-Host標頭。 接著，程式會重新開始，直到要求失敗為止。
+
+若要解決此問題，請評估您的SSL重新導向策略、CDN規則、重新導向及重寫規則組合。
 
 ## 地理位置標題 {#geo-headers}
 
