@@ -5,9 +5,9 @@ exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: af2985f29cb867162061bbac465b19637aa0ecad
+source-git-commit: 5296d46658f591d7736587c98b112006d947321d
 workflow-type: tm+mt
-source-wordcount: '1405'
+source-wordcount: '1288'
 ht-degree: 10%
 
 ---
@@ -21,11 +21,6 @@ ht-degree: 10%
 ## 了解雲端服務內容要求 {#understanding-cloud-service-content-requests}
 
 對於使用現成CDN的客戶，Cloud Service內容請求是透過伺服器端資料收集來測量。 系統會透過CDN記錄分析啟用此集合。 透過自動分析源自Adobe Experience Manager as a Cloud Service CDN的記錄檔，可在AEM as a Cloud Service邊緣的伺服器端自動收集內容請求。 這是透過從CDN隔離傳回HTML`(text/html)`或JSON `(application/json)`內容的要求來完成的，其基礎為下文詳述的幾個包含和排除規則。 內容請求會與從CDN快取提供的傳回內容或回到CDN原始來源(AEM傳送器)的內容分開進行。
-
-對於使用自己CDN的客戶，使用者端集合可提供更精確的互動反映，以確保透過[即時使用監控](/help/sites-cloud/administering/real-use-monitoring-for-aem-as-a-cloud-service.md)服務取得可靠的網站參與度測量。 這可提供客戶對其頁面流量和效能的進階深入分析。 雖然此功能對所有客戶都有好處，但可提供使用者互動的有代表性反映，從使用者端擷取頁面檢視次數，確保可靠衡量網站參與度。
-
-對於在AEM as a Cloud Service基礎上自備CDN的客戶，伺服器端報表會產生數字，而無法與授權內容請求進行比較。 透過[即時監控](/help/sites-cloud/administering/real-use-monitoring-for-aem-as-a-cloud-service.md)，Adobe可反映可靠的網站參與度量。
-
 
 ### Cloud Service內容請求的差異 {#content-requests-variances}
 
