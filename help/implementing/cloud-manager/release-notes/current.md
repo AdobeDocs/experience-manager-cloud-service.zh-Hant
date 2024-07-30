@@ -1,13 +1,13 @@
 ---
 title: Adobe Experience Manager as a Cloud Service 中 Cloud Manager 2024.7.0 的發行說明
-description: 以下是AEM as a Cloud Service中Cloud Manager 2024.7.0的發行說明。
+description: 以下是 AEM as a Cloud Service 中 Cloud Manager 2024.7.0 的發行說明。
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
 role: Admin
 source-git-commit: 12e19fe771c0b70ec471949944141f4d6858cbfd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '633'
-ht-degree: 56%
+ht-degree: 100%
 
 ---
 
@@ -22,24 +22,24 @@ ht-degree: 56%
 
 ## 發行日期 {#release-date}
 
-AEM as a Cloud Service中的Cloud Manager版本2024.7.0發行日期為2024年7月18日。 下一版本計畫於 2024 年 8 月 8 日發行。
+AEM as a Cloud Service 中的 Cloud Manager 2024.7.0 版發行日期為 2024 年 7 月 18 日。下一版本計畫於 2024 年 8 月 8 日發行。
 
 ## 新增功能 {#what-is-new}
 
-* [生產管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#adding-production-pipeline)和[非生產管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#adding-non-production-pipeline)在Git變更上&#x200B;**觸發**&#x200B;以在認可上啟動管道，現在可供[私人存放庫使用。](/help/implementing/cloud-manager/managing-code/private-repositories.md)
-   * 我們將分階段推出，並於8月中旬前完成。
-* 新增[Adobe管理的DV憑證時，](/help/implementing/cloud-manager/managing-ssl-certifications/domain-validated-certificates.md)您現在可以新增單一憑證，其涵蓋多個網域，而非為每個網域建立憑證。
-* 現在起，只要程式至少套用Sites或Forms解決方案，就可以將沒有[其他發佈區域](/help/operations/additional-publish-regions.md)的解決方案新增至程式。
-* 現在可以將沒有[99.99% SLA](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#sla)的解決方案新增到計畫中，只要該計畫至少套用了Sites或Forms解決方案。
-* [體驗稽核儀表板](/help/implementing/cloud-manager/experience-audit-dashboard.md)已透過多種方式增強。
-   * 現在會透過CDN針對`.com`端點執行稽核，取代之前的`.net`方法。
-      * 這項變更可更精確地模擬真實的使用者體驗，並協助您針對管理和最佳化網站做出更明智的決策。
-   * 已對體驗稽核UI進行多項增強，包括：
-      * 新增效能、最佳實務、SEO和協助工具的趨勢檢視。
-      * Lighthouse原始報表連結現在會以更直覺的方式顯示，直接顯示在掃描快照詳細資料面板中。
-      * 改善燈塔建議區段。
-   * 根據Lighthouse版本12.0.0移除PWA量度，因此消除此量度。
-* [AEM專案原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)已更新為[版本49。](https://github.com/adobe/aem-project-archetype/tree/aem-project-archetype-49)
+* [生產管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#adding-production-pipeline)和[非生產管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#adding-non-production-pipeline)觸發器「**在 Git 變更**」現在可用於[私人存放庫](/help/implementing/cloud-manager/managing-code/private-repositories.md)，在提交時啟動管道。
+   * 這將分階段推出，並於 8 月中旬完成。
+* 當您新增「[Adobe 管理的 DV 憑證](/help/implementing/cloud-manager/managing-ssl-certifications/domain-validated-certificates.md)」時，您現在可以新增涵蓋多個網域的單一憑證，而不是為每個網域都建立憑證。
+* 現在，只要程式至少有一個適用的 Sites 或 Forms 解決方案，就可以將沒有[其他發佈區域](/help/operations/additional-publish-regions.md)的解決方案新增至該程式。
+* 現在，只要程式至少有一個適用的 Sites 或 Forms 解決方案，就可以將不具有 [99.99% SLA](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#sla) 的解決方案新增至該程式。
+* 「[體驗稽核儀表板](/help/implementing/cloud-manager/experience-audit-dashboard.md)」已透過多種方式增強。
+   * 現在透過 CDN 針對 `.com` 端點執行稽核，取代了先前的 `.net` 方法。
+      * 此變更可以更準確地模擬真實的使用者體驗，並幫助您在管理和最佳化網站方面做出更明智的決策。
+   * 體驗稽核 UI 進行了多項增強，包括：
+      * 新增了效能、最佳實務、SEO 和可存取性的趨勢檢視。
+      * 現在，可以直接在掃描快照詳細資料面板中以更直觀的方式查看 Lighthouse 原始報告連結。
+      * 增強了 Lighthouse 推薦區段。
+   * 根據 Lighthouse 版本 12.0.0 移除了 PWA 指標，該版本已刪除該指標。
+* [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) 已更新至[版本 49](https://github.com/adobe/aem-project-archetype/tree/aem-project-archetype-49)。
 
 ## 早期採用計劃 {#early-adoption}
 
