@@ -1,8 +1,8 @@
 ---
-source-git-commit: 4cfdabaae23f0dcd1737c73e5edd644bbec6014e
+source-git-commit: 964d4a04c6c645a5cdab29218f93431649d41588
 workflow-type: tm+mt
 source-wordcount: '662'
-ht-degree: 72%
+ht-degree: 98%
 
 ---
 # 代碼片段 {#snippets}
@@ -87,8 +87,8 @@ ht-degree: 72%
      </tr>
    <tr>
     <td>在可重複面板欄位上執行數學運算 </td>
-    <td>OOTB Math函式可套用至可重複的面板欄位，以使用規則編輯器執行sum、average之類的函式。 需要提供兩個引數：第一個指定包含欄位的可重複面板，第二個指定對應可重複面板中的欄位。 </td>
-    <td>重複面板欄位的數學運算可使用自訂函式來執行。 您也可以使用規則編輯器，將數學函式直接套用至可重複面板的欄位。
+    <td>您可使用規則編輯器，將 OOTB 數學函數套用在可重複面板欄位以執行加總、平均值等函數。需要提供兩個引數：第一個指定包含該欄位的可重複面板，第二個指定對應的可重複面板內的欄位。 </td>
+    <td>可以使用自訂函數對可重複面板欄位執行數學運算。您也可以使用規則編輯器將數學函數直接套用到可重複面板的欄位。
    </td>
    </tr>
       <tr>
@@ -117,13 +117,13 @@ ht-degree: 72%
   <table>
   </tbody>
 
-## 規則編輯器另請參閱 {#see-also-rule-editor}
+## 規則編輯器，另請參閱 {#see-also-rule-editor}
 
-* [根據核心元件之最適化Forms的規則編輯器簡介](/help/forms/rule-editor-core-components.md)
-* [根據核心元件的最適化表單的規則編輯器中的運運算元型別和事件](/help/forms/rule-editor-core-components-events-operators.md)
-* [根據核心元件之最適化Forms的規則編輯器使用者介面](/help/forms/rule-editor-core-components-user-interface.md)
-* [根據核心元件的最適化表單的規則編輯器的不同使用案例](/help/forms/rule-editor-core-components-user-interface.md)
-* [不同版本規則編輯器的差異](/help/forms/rule-editor-core-components-difference-tables.md)
-* [根據核心元件之最適化Forms的自訂函式簡介](/help/forms/create-and-use-custom-functions.md)
-* [根據核心元件建立最適化表單的自訂函式](/help/forms/custom-function-core-component-create-function.md)
-* [開發及使用自訂函式的範例](/help/forms/custom-function-core-components-use-cases.md)
+* [以核心元件為主之最適化表單的規則編輯器簡介](/help/forms/rule-editor-core-components.md)
+* [以核心元件為主之最適化表單的規則編輯器中的運算子和事件類型](/help/forms/rule-editor-core-components-events-operators.md)
+* [以核心元件為主之最適化表單的規則編輯器使用者介面](/help/forms/rule-editor-core-components-user-interface.md)
+* [以核心元件為主之最適化表單的規則編輯器不同使用案例](/help/forms/rule-editor-core-components-usecases.md)
+* [規則編輯器各個版本的差異](/help/forms/rule-editor-core-components-difference-tables.md)
+* [以核心元件為主之最適化表單的自訂函數簡介](/help/forms/create-and-use-custom-functions.md)
+* [建立以核心元件為主之最適化表單的自訂函數](/help/forms/custom-function-core-component-create-function.md)
+* [自訂函數的開發和使用範例](/help/forms/custom-function-core-components-use-cases.md)
