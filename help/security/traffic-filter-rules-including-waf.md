@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: 3a10a0b8c89581d97af1a3c69f1236382aa85db0
 workflow-type: tm+mt
 source-wordcount: '3939'
-ht-degree: 92%
+ht-degree: 93%
 
 ---
 
@@ -515,7 +515,7 @@ data:
 
 如果達到此臨界值，Adobe 將阻止來自該 IP 位址的流量，但建議採取其他措施來保護您的來源，包括設定速率限制流量篩選規則，以便在臨界值較低時阻擋流量尖峰。請參閱[「使用流量篩選器規則封鎖 DoS 和 DDoS 攻擊」教學課程](#tutorial-blocking-DDoS-with-rules)以瞭解引導式逐步說明。
 
-此警示預設為啟用，但可使用設為false的&#x200B;*defaultTrafficAlerts*&#x200B;屬性將其停用。 一旦觸發特定規則的警報，直到第二天 (UTC) 它才會再次觸發。
+此警報預設為啟用，但可以將 *defaultTrafficAlerts* 屬性設定為 False 來加以停用。一旦觸發特定規則的警報，直到第二天 (UTC) 它才會再次觸發。
 
 ```
 kind: "CDN"

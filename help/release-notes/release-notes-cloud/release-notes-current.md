@@ -24,7 +24,7 @@ ht-degree: 73%
 
 >[!NOTE]
 >
->若要透過每月電子郵件通知，了解 Experience Cloud 發行說明的最新消息，請訂閱 [Adobe 優先產品更新](https://www.adobe.com/tw/tw/subscription/priority-product-update.html)。
+>若要透過每月電子郵件通知，了解 Experience Cloud 發行說明的最新消息，請訂閱 [Adobe 優先產品更新](https://www.adobe.com/tw/subscription/priority-product-update.html)。
 
 ## 發行日期 {#release-date}
 
