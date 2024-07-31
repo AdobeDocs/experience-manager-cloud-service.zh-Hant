@@ -1,6 +1,6 @@
 ---
 title: Dynamic Media 最佳實務
-description: 瞭解使用影像和影片的Dynamic Media最佳實務。
+description: 瞭解Dynamic Media中處理影像和影片的最佳實務，以及Dynamic Media Viewers的最佳實務。
 contentOwner: Rick Brough
 products: Experience Manager as a Cloud Service
 topic-tags: introduction,administering
@@ -9,9 +9,9 @@ feature: Adaptive Streaming, Best Practices, Smart Imaging, Image Profiles, Rule
 role: User, Admin
 mini-toc-levels: 4
 exl-id: 39e491bb-367d-4c72-b4ca-aab38d513ac5
-source-git-commit: de1116ee39024d30e14838f8b36f9ab087a45f85
+source-git-commit: fca8b4b34718bd7d22186740fac383b87e968cdb
 workflow-type: tm+mt
-source-wordcount: '3571'
+source-wordcount: '4105'
 ht-degree: 0%
 
 ---
@@ -68,6 +68,23 @@ Dynamic Media的部分主要原則包括：
 這兩個最佳實務可協助您對多媒體內容進行更好的控制、控管和生產力。
 
 想要進一步瞭解嗎？ 移至[在Dynamic Media](/help/assets/dynamic-media/selective-publishing.md)的資料夾層級設定選擇性Publish。
+
+
+## Dynamic Media 檢視器
+
+Dynamic Media檢視器最佳實務是基本准則，旨在最佳化AEM上Dynamic Media資產的效能、功能和使用者體驗。 這些實務可確保資產正確同步、發佈和設定，以使用Dynamic Media的完整功能。
+
+透過遵循這些最佳實務，您可以實現緊密整合、有效率的資產管理並增強檢視器互動。 同步資產、使用智慧型裁切並遵循JavaScript檔案包含准則，這些都是重要的作法。 這些建議有助於維持各種平台與裝置間媒體傳送的完整性與可靠性。
+
+* **同步檢視器Assets：**&#x200B;在使用播放器之前，請確定所有檢視器資產都已與Dynamic Media同步。 若要疑難排解檢視器，請前往[疑難排解Dynamic Media檢視器](/help/assets/dynamic-media/troubleshoot-dm.md#viewers)文章。
+* **範例管理員頁面：**&#x200B;存取位於`/libs/dam/gui/content/s7dam/samplemanager/samplemanager`的範例管理員頁面。
+* **Publish Assets：**&#x200B;在傳遞檢視器中檢視資產之前，請確定資產已發佈。
+* **自動播放視訊已靜音：**&#x200B;針對視訊中的自動播放功能，請使用靜音視訊設定，因為瀏覽器會限制以大量播放視訊。
+* **智慧型裁切：**&#x200B;使用智慧型裁切的影像v3元件來增強影像資產簡報。
+* **JavaScript檔案包含：**&#x200B;僅將主要檢視器JavaScript檔案包含在您的頁面上。 避免參照檢視器的執行階段邏輯可能下載的其他JavaScript檔案。 具體而言，請勿從`/s7viewers`內容路徑（稱為整合的SDK包含）直接連結至HTML5 SDK `Utils.js`資料庫。 檢視器的邏輯會管理`Utils.js`或類似的執行階段檢視器程式庫的位置，這些程式庫可能會在發行版本之間變更。 Adobe不會保留伺服器上較舊的次要檢視器版本，因此直接參照這些版本可能會在未來的更新中破壞檢視器功能。
+* **內嵌准則：**請使用每個檢視器特定的內嵌准則檔案。
+想要進一步瞭解嗎？ 移至AEM Assets ](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers)的[檢視器。
+* **SDK教學課程和範例：**&#x200B;檢閱[Viewer SDK教學課程](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/c-tutorial)和[HTML5 SDK應用程式範例](https://s7d9.scene7.com/s7sdk/2024.5/docs/jsdoc/index.html)，以深入瞭解SDK元件API。
 
 
 ## 準備資產以進行傳送
@@ -156,7 +173,6 @@ Dynamic Media搭配Experience Manager Assets可讓使用者之間有效率地建
 
 想要進一步瞭解嗎？ 移至[Google的URL結構最佳實務](https://developers.google.com/search/docs/crawling-indexing/url-structure)和[Google影像SEO最佳實務](https://developers.google.com/search/docs/appearance/google-images)
 
-
 ### 使用命令動態增強影像並建立視覺效果
 
 **商業案例：** *套用豐富的視覺效果至影像。*
@@ -191,7 +207,7 @@ Dynamic Media可讓您直接透過URL操作影像，使其成為建立動態數�
 | --- | --- |
 | **上傳並發佈基本影像** | 首先，上傳並發佈您要重疊標誌或圖示的基本影像。 您可以使用任何影像作為基礎。<br>例如，以下是基礎影像：<br>[https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa](https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa)。 |
 | **上傳並發佈標誌或圖示影像** | 接著，上傳並發佈您要重疊在基本影像上的影像。 此影像應是透明的PNG，並應包含您要覆蓋的標誌或圖示。<br>這是即將重疊的具有透明效果的star物件的透明PNG影像：<br>[https://s7g2.scene7.com/is/image/genaibeta/decorate-star](https://s7g2.scene7.com/is/image/genaibeta/decorate-star) |
-| **套用Dynamic Media URL** | 現在，請建立結合基本影像與標誌或圖示影像的Dynamic Media URL。 您可以使用URL命令來達到此效果。<br>URL結構看起來像這樣：<br>[https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa?layer=1&amp;src=decorate-star&amp;scale=1.25&amp;posN=0.33,-.25&amp;fmt=png](https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa?layer=1&amp;src=decorate-star&amp;scale=1.25&amp;posN=0.33,-.25&amp;fmt=png)<br>其中<br>· `hotspotRetailBaseImage`是基本影像。<br>· `starxp`是標誌/圖示影像。<br>· `layer=1`指定標誌或圖示應重疊在基本影像上。<br>· `scale=1.25`會調整標誌/圖示的大小。<br>· `posN=0.33,-.25`會決定商標/圖示相對於基本影像的位置。<br>· `fmt=png`可確保輸出為PNG格式。 |
+| **套用Dynamic Media URL** | 現在，請建立結合基本影像與標誌或圖示影像的Dynamic Media URL。 您可以使用URL命令來達到此效果。<br>URL結構看起來像這樣：<br>[https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa?layer=1&amp;src=decorate-star&amp;scale=1.25&amp;posN=0.33,-.25&amp;fmt=png](https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa?layer=1&amp;src=decorate-star&amp;scale=1.25&amp;posN=0.33,-.25&amp;fmt=png)<br>其中資產<br>· `hotspotRetailBaseImage`是基本影像。<br>· `starxp`是標誌/圖示影像。<br>· `layer=1`指定標誌或圖示應重疊在基本影像上。<br>· `scale=1.25`會調整標誌/圖示的大小。<br>· `posN=0.33,-.25`會決定商標/圖示相對於基本影像的位置。<br>· `fmt=png`可確保輸出為PNG格式。 |
 
 要進一步瞭解什麼？ 移至[src](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-src)，以取得有關`src`命令和其他Dynamic Media URL命令的詳細資料。
 
@@ -246,6 +262,28 @@ Dynamic Media可讓您直接透過URL操作影像，使其成為建立動態數�
 
 您可以根據特定需求，隨時探索這些變數。
 想要進一步瞭解URL中可用的命令？ 移至[命令參考](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference)。
+
+### 傳遞GIF影像
+
+**業務案例：** *使用Dynamic Media的串流GIF*
+
+您可以透過Dynamic Media上傳和傳遞GIF。 若要呈現動畫GIF，請在URL中將`is/image`取代為`is/content`。 例如，如果您已上傳`abc.gif`，請使用下列專案：
+
+* 此URL路徑會呈現GIF的靜態檢視：
+
+  ```
+  https://your.domain.com/is/image/yourfolder/abc
+  ```
+
+* 此URL路徑會呈現GIF的動畫檢視：
+
+  ```
+  https://your.domain.com/is/content/yourfolder/abc
+  ```
+
+>[!NOTE]
+>
+>在URL路徑中使用`is/content`時，影像轉換命令不會套用至資產。
 
 ### Publish我的網站影片
 
@@ -349,3 +387,11 @@ Adobe建議您使用智慧型影像的功能，而非手動將影像格式設定
 仰賴智慧型影像處理，您可以確保影像以最有效率的方式傳送，並因應每位使用者的瀏覽環境量身打造。 此方法可簡化程式，並可改善影像載入時間和整體使用者體驗方面的效能。
 
 想要進一步瞭解嗎？ 移至[智慧型影像](/help/assets/dynamic-media/imaging-faq.md)。
+
+### 將資產傳遞至客戶後
+
+**業務案例：** *發佈新內容或覆寫現有內容後，如何確保變更立即出現在CDN上？*
+
+CDN （內容傳遞網路）會快取Dynamic Media資產，以快速傳送給客戶。 更新這些資產時，必須讓變更立即在網站上生效。 透過清除或使CDN快取失效，Dynamic Media提供的資產可以快速更新。 此方法可免除根據TTL （存留時間）值（通常設定為10小時）等待快取到期的需求。 反之，您可從Dynamic Media使用者介面傳送請求，讓快取在數分鐘內過期。
+
+想要進一步瞭解嗎？ 移至[透過Dynamic Media](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)使CDN快取失效。
