@@ -9,7 +9,7 @@ feature: Adaptive Streaming, Best Practices, Smart Imaging, Image Profiles, Rule
 role: User, Admin
 mini-toc-levels: 4
 exl-id: 39e491bb-367d-4c72-b4ca-aab38d513ac5
-source-git-commit: fca8b4b34718bd7d22186740fac383b87e968cdb
+source-git-commit: 57c5b886b5964e13219b2525c7ed0073292277a0
 workflow-type: tm+mt
 source-wordcount: '4105'
 ht-degree: 0%
@@ -76,15 +76,23 @@ Dynamic Media檢視器最佳實務是基本准則，旨在最佳化AEM上Dynamic
 
 透過遵循這些最佳實務，您可以實現緊密整合、有效率的資產管理並增強檢視器互動。 同步資產、使用智慧型裁切並遵循JavaScript檔案包含准則，這些都是重要的作法。 這些建議有助於維持各種平台與裝置間媒體傳送的完整性與可靠性。
 
-* **同步檢視器Assets：**&#x200B;在使用播放器之前，請確定所有檢視器資產都已與Dynamic Media同步。 若要疑難排解檢視器，請前往[疑難排解Dynamic Media檢視器](/help/assets/dynamic-media/troubleshoot-dm.md#viewers)文章。
-* **範例管理員頁面：**&#x200B;存取位於`/libs/dam/gui/content/s7dam/samplemanager/samplemanager`的範例管理員頁面。
-* **Publish Assets：**&#x200B;在傳遞檢視器中檢視資產之前，請確定資產已發佈。
-* **自動播放視訊已靜音：**&#x200B;針對視訊中的自動播放功能，請使用靜音視訊設定，因為瀏覽器會限制以大量播放視訊。
-* **智慧型裁切：**&#x200B;使用智慧型裁切的影像v3元件來增強影像資產簡報。
-* **JavaScript檔案包含：**&#x200B;僅將主要檢視器JavaScript檔案包含在您的頁面上。 避免參照檢視器的執行階段邏輯可能下載的其他JavaScript檔案。 具體而言，請勿從`/s7viewers`內容路徑（稱為整合的SDK包含）直接連結至HTML5 SDK `Utils.js`資料庫。 檢視器的邏輯會管理`Utils.js`或類似的執行階段檢視器程式庫的位置，這些程式庫可能會在發行版本之間變更。 Adobe不會保留伺服器上較舊的次要檢視器版本，因此直接參照這些版本可能會在未來的更新中破壞檢視器功能。
-* **內嵌准則：**請使用每個檢視器特定的內嵌准則檔案。
+* **同步處理檢視器Assets：**
+在使用播放器之前，請確定所有檢視器資產都已與Dynamic Media同步。 若要疑難排解檢視器，請前往[疑難排解Dynamic Media檢視器](/help/assets/dynamic-media/troubleshoot-dm.md#viewers)文章。
+* **範例管理員頁面：**
+在`/libs/dam/gui/content/s7dam/samplemanager/samplemanager`存取範例管理員頁面。
+* **Publish Assets：**
+在傳遞檢視器中檢視資產之前，請確定資產已發佈。
+* **自動播放視訊已靜音：**
+如需視訊中的自動播放功能，請使用靜音視訊設定，因為瀏覽器會限制以大量播放視訊。
+* **智慧型裁切：**
+使用智慧型裁切的影像v3元件來增強影像資產簡報。
+* **JavaScript檔案包含：**
+在您的頁面上僅包含主要檢視器JavaScript檔案。 避免參照檢視器的執行階段邏輯可能下載的其他JavaScript檔案。 具體而言，請勿從`/s7viewers`內容路徑（稱為整合的SDK包含）直接連結至HTML5 SDK `Utils.js`資料庫。 檢視器的邏輯會管理`Utils.js`或類似的執行階段檢視器程式庫的位置，這些程式庫可能會在發行版本之間變更。 Adobe不會保留伺服器上較舊的次要檢視器版本，因此直接參照這些版本可能會在未來的更新中破壞檢視器功能。
+* **內嵌准則：**
+使用本檔案內嵌每個檢視器特有的准則。
 想要進一步瞭解嗎？ 移至AEM Assets ](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers)的[檢視器。
-* **SDK教學課程和範例：**&#x200B;檢閱[Viewer SDK教學課程](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/c-tutorial)和[HTML5 SDK應用程式範例](https://s7d9.scene7.com/s7sdk/2024.5/docs/jsdoc/index.html)，以深入瞭解SDK元件API。
+* **SDK教學課程與範例：**
+檢閱[Viewer SDK教學課程](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/c-tutorial)和[HTML5 SDK應用程式範例](https://s7d9.scene7.com/s7sdk/2024.5/docs/jsdoc/index.html)，以深入瞭解SDK元件API。
 
 
 ## 準備資產以進行傳送
