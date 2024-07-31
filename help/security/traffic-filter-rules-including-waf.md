@@ -4,9 +4,9 @@ description: 設定流量篩選規則，包括 Web 應用程式防火牆 (WAF) �
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
-source-git-commit: 3a10a0b8c89581d97af1a3c69f1236382aa85db0
+source-git-commit: 7ce397b2564373a006d7f413409d29265c74d768
 workflow-type: tm+mt
-source-wordcount: '3939'
+source-wordcount: '3932'
 ht-degree: 93%
 
 ---
@@ -506,10 +506,6 @@ data:
 ```
 
 ## 來源流量尖峰預設警報 {#traffic-spike-at-origin-alert}
-
->[!NOTE]
->
->此功能正在逐步推出。
 
 有大量流量傳送到來源，且其中來自相同 IP 位址的請求臨界值相當高，因而暗示可能發生 DDoS 攻擊時，將傳送[行動中心](/help/operations/actions-center.md)電子郵件通知。
 
