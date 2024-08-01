@@ -9,9 +9,9 @@ feature: Adaptive Streaming, Best Practices, Smart Imaging, Image Profiles, Rule
 role: User, Admin
 mini-toc-levels: 4
 exl-id: 39e491bb-367d-4c72-b4ca-aab38d513ac5
-source-git-commit: 57c5b886b5964e13219b2525c7ed0073292277a0
+source-git-commit: ce5f9fc101c86ffdfb685ff493e8f5e508f45e37
 workflow-type: tm+mt
-source-wordcount: '4105'
+source-wordcount: '4118'
 ht-degree: 0%
 
 ---
@@ -77,9 +77,11 @@ Dynamic Media檢視器最佳實務是基本准則，旨在最佳化AEM上Dynamic
 透過遵循這些最佳實務，您可以實現緊密整合、有效率的資產管理並增強檢視器互動。 同步資產、使用智慧型裁切並遵循JavaScript檔案包含准則，這些都是重要的作法。 這些建議有助於維持各種平台與裝置間媒體傳送的完整性與可靠性。
 
 * **同步處理檢視器Assets：**
-在使用播放器之前，請確定所有檢視器資產都已與Dynamic Media同步。 若要疑難排解檢視器，請前往[疑難排解Dynamic Media檢視器](/help/assets/dynamic-media/troubleshoot-dm.md#viewers)文章。
-* **範例管理員頁面：**
-在`/libs/dam/gui/content/s7dam/samplemanager/samplemanager`存取範例管理員頁面。
+在使用播放器之前，請確定所有檢視器資產都已與Dynamic Media同步。
+
+   * 存取位於`/libs/dam/gui/content/s7dam/samplemanager/samplemanager`的範例管理員頁面。 此頁面可讓您重新同步檢視器的資產，包括現成可用的圖示、CSS檔案和預設集。
+   * 如果您遇到任何檢視器問題，請前往[疑難排解Dynamic Media檢視器](/help/assets/dynamic-media/troubleshoot-dm.md#viewers)文章。
+
 * **Publish Assets：**
 在傳遞檢視器中檢視資產之前，請確定資產已發佈。
 * **自動播放視訊已靜音：**
@@ -400,6 +402,7 @@ Adobe建議您使用智慧型影像的功能，而非手動將影像格式設定
 
 **業務案例：** *發佈新內容或覆寫現有內容後，如何確保變更立即出現在CDN上？*
 
-CDN （內容傳遞網路）會快取Dynamic Media資產，以快速傳送給客戶。 更新這些資產時，必須讓變更立即在網站上生效。 透過清除或使CDN快取失效，Dynamic Media提供的資產可以快速更新。 此方法可免除根據TTL （存留時間）值（通常設定為10小時）等待快取到期的需求。 反之，您可從Dynamic Media使用者介面傳送請求，讓快取在數分鐘內過期。
+CDN （內容傳遞網路）會快取Dynamic Media資產，以快速傳送給客戶。 更新這些資產時，必須讓變更立即在網站上生效。 透過清除或使CDN快取失效，Dynamic Media提供的資產可以快速更新。 此方法可免除根據TTL （存留時間）值（通常設定為10小時）等待快取到期的需求。
+您可以根據您的特定使用案例，相應地更新CDN TTL （存留時間）設定。
 
 想要進一步瞭解嗎？ 移至[透過Dynamic Media](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)使CDN快取失效。
