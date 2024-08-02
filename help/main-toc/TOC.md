@@ -236,7 +236,7 @@ ht-degree: 99%
       + [建立 Headless 內容](/help/trials/headless/create-content.md)
       + [通過 GraphQL API 擷取內容](/help/trials/headless/extract-content.md)
       + [使用 JavaScript 擷取 JSON 內容](/help/trials/headless/code-playground.md)
-      + [使用 Universal Editor 進行內嵌編輯](/help/trials/headless/universal-editor.md)
+      + [使用通用編輯器進行內嵌編輯](/help/trials/headless/universal-editor.md)
 + AEM as a Cloud Service 移轉歷程 {#migration-journey}
    + [移動 AEM as a Cloud Service 快速入門](/help/journey-migration/getting-started.md)
    + [整備階段](/help/journey-migration/readiness.md)
@@ -331,10 +331,10 @@ ht-degree: 99%
          + [鍵盤快速鍵](/help/sites-cloud/authoring/page-editor/keyboard-shortcuts.md)
          + [樣式系統](/help/sites-cloud/authoring/page-editor/style-system.md)
          + [取消復原還原限制](/help/sites-cloud/authoring/page-editor/undo-redo.md)
-      + Universal Editor {#universal-editor}
-         + [導覽通用編輯器](/help/sites-cloud/authoring/universal-editor/navigation.md)
-         + [使用 Universal Editor 製作內容](/help/sites-cloud/authoring/universal-editor/authoring.md)
-         + [使用 Universal Editor 發佈內容](/help/sites-cloud/authoring/universal-editor/publishing.md)
+      + 通用編輯器 {#universal-editor}
+         + [瀏覽通用編輯器](/help/sites-cloud/authoring/universal-editor/navigation.md)
+         + [使用通用編輯器製作內容](/help/sites-cloud/authoring/universal-editor/authoring.md)
+         + [使用通用編輯器發佈內容](/help/sites-cloud/authoring/universal-editor/publishing.md)
          + [通用編輯器中的內容繼承](/help/sites-cloud/authoring/universal-editor/inheritance.md)
       + 片段 {#fragments}
          + [內容片段](/help/sites-cloud/authoring/fragments/content-fragments.md)
@@ -690,7 +690,7 @@ ht-degree: 99%
             + [將最適化表單提交至 Azure Blob 儲存體](/help/forms/configure-submit-action-azure-blob-storage.md)
             + [將最適化表單提交至 Microsoft](/help/forms/configure-submit-action-onedrive.md)
             + [將最適化表單連接到 Microsoft](/help/forms/configure-submit-action-sharepoint.md)
-            + [使用授權範圍以有限存取權設定SharePoint網站](/help/forms/configure-sharepoint-site-limited-access.md)
+            + [使用授權範圍設定具有有限存取權限的 SharePoint 網站](/help/forms/configure-sharepoint-site-limited-access.md)
             + [將 AEM 最適化表單與 AEM 工作流程整合](/help/forms/configure-submit-action-workflow.md)
             + [設定提交到最適化表單的 REST 端點提交動作](/help/forms/configure-submit-action-restpoint.md)
             + [設定最適化表單的傳送電子郵件提交動作](/help/forms/configure-submit-action-send-email.md)
@@ -868,7 +868,7 @@ ht-degree: 99%
 + Edge Delivery Services {#edge-delivery}
    + [Edge Delivery Services 概觀](/help/edge/overview.md)
    + [透過 AEM 使用 Edge Delivery Services](/help/edge/using.md)
-   + [選擇編寫方法](/help/edge/authoring-methods.md)
+   + [選擇製作方法](/help/edge/authoring-methods.md)
    + WYSIWYG 製作{#wysiwyg-authoring}
       + [為 Edge Delivery 製作 WYSIWYG 內容](/help/edge/wysiwyg-authoring/authoring.md)
       + [為 Edge Delivery 發佈內容](/help/edge/wysiwyg-authoring/publishing.md)
@@ -1137,7 +1137,7 @@ ht-degree: 99%
             + [實施自訂述詞求值器](/help/implementing/developing/introduction/query-builder-custom-predicate.md)
          + [自訂錯誤頁面](/help/implementing/developing/introduction/custom-error-page.md)
          + [AEM 節點類型](/help/implementing/developing/introduction/node-types.md)
-      + Universal Editor {#universal-editor}
+      + 通用編輯器 {#universal-editor}
          + [簡介](/help/implementing/universal-editor/introduction.md)
          + [使用案例](/help/implementing/universal-editor/use-cases.md)
          + [屬性和項目類型](/help/implementing/universal-editor/attributes-types.md)
