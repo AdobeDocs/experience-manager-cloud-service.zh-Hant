@@ -9,7 +9,7 @@ feature: Adaptive Streaming, Best Practices, Smart Imaging, Image Profiles, Rule
 role: User, Admin
 mini-toc-levels: 4
 exl-id: 39e491bb-367d-4c72-b4ca-aab38d513ac5
-source-git-commit: 5e028e99b472dc10ecd739ee5e5c70ea4daa2078
+source-git-commit: 220a8d8aecde76c7d77ebab16fda2158316c08dd
 workflow-type: tm+mt
 source-wordcount: '4118'
 ht-degree: 0%
@@ -406,7 +406,6 @@ Adobe建議您使用智慧型影像的功能，而非手動將影像格式設定
 
 **業務案例：** *發佈新內容或覆寫現有內容後，如何確保變更立即出現在CDN上？*
 
-CDN （內容傳遞網路）會快取Dynamic Media資產，以快速傳送給客戶。 更新這些資產時，必須讓變更立即在網站上生效。 透過清除或使CDN快取失效，Dynamic Media提供的資產可以快速更新。 此方法可免除根據TTL （存留時間）值（通常設定為10小時）等待快取到期的需求。
-您可以根據您的特定使用案例，相應地更新CDN TTL （存留時間）設定。
+CDN （內容傳遞網路）會快取Dynamic Media資產，以快速傳送給客戶。 更新這些資產時，必須讓變更立即在網站上生效。 透過清除或使CDN快取失效，Dynamic Media提供的資產可以快速更新。 此方法可免除根據TTL （存留時間）值（通常設定為10小時）等待快取到期的需求。 您可以根據您的特定使用案例，相應地更新CDN TTL （存留時間）設定。
 
 想要進一步瞭解嗎？ 移至[透過Dynamic Media](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)使CDN快取失效。
