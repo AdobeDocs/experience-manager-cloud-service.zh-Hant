@@ -3,9 +3,9 @@ title: 限制Experience Manager中的資產傳遞
 description: 瞭解如何限制 [!DNL Experience Manager]中的資產傳遞。
 role: User
 exl-id: 3fa0b75d-c8f5-4913-8be3-816b7fb73353
-source-git-commit: 16b313a4fb79f915613044d12d29e618209113ec
+source-git-commit: 65f0018a25c57189229fc56332ad874ebd0deef4
 workflow-type: tm+mt
-source-wordcount: '1125'
+source-wordcount: '1130'
 ht-degree: 0%
 
 ---
@@ -49,7 +49,7 @@ Experience Manager中的中央資產控管可讓DAM管理員或品牌管理員�
    1. 選取您需要新增的&#x200B;**[!UICONTROL 使用者群組]**，並從URL擷取&#x200B;**[!UICONTROL orgID]**&#x200B;和&#x200B;**[!UICONTROL userGroupID]**，或使用您的組織識別碼，例如`{orgID}@AdobeOrg:{usergroupID}`。
 
 1. 將群組識別碼新增至資產屬性的&#x200B;**[!UICONTROL 角色]**&#x200B;欄位。 <br>
-在**[!UICONTROL 角色]**&#x200B;欄位中定義的群組ID是唯一可存取資產的使用者。 您也可以在&#x200B;**[!UICONTROL 角色]**&#x200B;欄位中新增IMS使用者端ID和IMS設定檔ID。 例如，`{orgId}@AdobeOrg:{profileId}`。
+在**[!UICONTROL 角色]**&#x200B;欄位中定義的群組ID是唯一可存取資產的使用者。 除了IMS群組ID，您還可以在&#x200B;**[!UICONTROL 角色]**&#x200B;欄位中新增IMS使用者ID和IMS設定檔ID。 例如，`{orgId}@AdobeOrg:{profileId}`。
 
    >[!NOTE]
    >
