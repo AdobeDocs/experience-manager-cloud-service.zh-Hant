@@ -1,34 +1,40 @@
 ---
-title: AEM as a Cloud Service 2024.05.0版中移轉工具的發行說明
-description: AEM as a Cloud Service 2024.05.0版中移轉工具的發行說明
+title: AEM as a Cloud Service 2024.07版中移轉工具的發行說明
+description: AEM as a Cloud Service 2024.07.0版中移轉工具的發行說明
 feature: Release Information
 exl-id: 52709511-eab2-47a7-8bea-1b707cd568a1
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 4f01ca0076248442fe93161bbc8b98bffb64551b
 workflow-type: tm+mt
-source-wordcount: '166'
-ht-degree: 7%
+source-wordcount: '171'
+ht-degree: 8%
 
 ---
 
-# AEM as a Cloud Service 2024.05.0版中移轉工具的發行說明 {#release-notes}
+# AEM as a Cloud Service 2024.07.0版中移轉工具的發行說明 {#release-notes}
 
-本頁面總覽AEM as a Cloud Service 2024.05.0中移轉工具的發行說明。
+本頁面總覽AEM as a Cloud Service 2024.07.0中移轉工具的發行說明。
+
+## 內容轉移工具 {#ctt-release}
+
+### 發行日期 {#release-date-ctt}
+
+內容轉移工具v3.0.16的發行日期為2024年7月。
+
+### 新增功能 {#what-is-new-ctt}
+
+* 發生失敗時自動上傳CTT擷取記錄。
+* 使用者現在可以在更新擷取金鑰後成功執行內嵌。
+* 新增支援透過AzureDataStore使用Azure存取金鑰和秘密金鑰執行CTT擷取。
+* 現在，當使用無效的金鑰建立移轉集時，使用者會收到正確的錯誤訊息。
 
 ## 最佳做法分析工具 {#bpa-release}
 
 ### 發行日期 {#release-date-bpa}
 
-Best Practices Analyzer v2.1.48的發行日期為2024年5月9日。
+Best Practices Analyzer v2.1.50的發行日期為2024年5月。
 
-### 新增功能 {#what-is-new-bpa}
+### 錯誤修正 {#bug-fixes-bpa}
 
-* Best Practices Analyzer (BPA)現在支援將BPA產生的報告直接自動上傳到Cloud Acceleration Manager (CAM)。 使用者不再需要手動下載報告並將其上傳到CAM。 在[此處](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer)瞭解更多資訊
-
-## Cloud Acceleration Manager {#cam-release}
-
-### 新增功能 {#what-is-new-cam}
-
-* Cloud Acceleration Manager (CAM)現在支援將BPA產生的報表直接自動上傳至CAM。 在[此處](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-readiness-phase#best-practices-analysis)瞭解更多資訊
-
-* Cloud Acceleration Manager現在會根據節點數、資料存放區大小等因素，提供擷取可能需要多久的預估值。 在[此處](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content)瞭解更多資訊
+* Best Practices Analyzer現在會偵測大於16MB的所有節點
+* 造成NCC發現點偶爾發生的競爭條件已修正。

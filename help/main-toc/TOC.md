@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的運作方式以及該軟體可以為您做哪些事。
 breadcrumb-title: 使用手冊
 user-guide-title: AEM as a Cloud Service
-source-git-commit: ae2805097007d3d056e30b9c8420b47027a3af0e
+source-git-commit: 4f01ca0076248442fe93161bbc8b98bffb64551b
 workflow-type: tm+mt
-source-wordcount: '5304'
+source-wordcount: '5315'
 ht-degree: 99%
 
 ---
@@ -162,6 +162,9 @@ ht-degree: 99%
          + [2020.2.0 版發行說明](/help/implementing/cloud-manager/release-notes/2020/2020-2-0.md)
    + 移轉工具發行說明 {#migration-tools}
       + [最新發行說明](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)
+      + 2024 {#2024}
+         + [2024.01.0 版發行說明](/help/journey-migration/release-notes/release-notes-migration-tools-2024-01-0.md)
+         + [2024.05.0 版發行說明](/help/journey-migration/release-notes/release-notes-migration-tools-2024-05-0.md)
       + 2023 {#2023}
          + [2023.10.0 版發行說明](/help/journey-migration/release-notes/release-notes-migration-tools-2023-10-0.md)
          + [2023.9.0 版發行說明](/help/journey-migration/release-notes/release-notes-migration-tools-2023-09-0.md)
