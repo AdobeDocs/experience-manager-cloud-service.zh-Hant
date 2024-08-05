@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: 7ce397b2564373a006d7f413409d29265c74d768
 workflow-type: tm+mt
 source-wordcount: '3932'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 93%
 
 流量篩選規則的子類別需要增強的安全性授權或 WAF-DDoS 保護授權。這些強大的規則也稱為 WAF (Web 應用程式防火牆) 流量篩選規則 (或簡稱 WAF 規則)，且可以存取本文稍後將進行說明 [WAF 標幟](#waf-flags-list)。
 
-流量篩選器規則可透過Cloud Manager設定管道部署到生產（非沙箱）計畫中的開發、暫存和生產環境型別。 未來將推出對 RDE 的支援。
+流量篩選規則可以透過 Cloud Manager 設定管道部署到生產 (非沙箱) 程式中的開發、中繼和生產環境類型。未來將推出對 RDE 的支援。
 
 [按照教學課程進行操作](#tutorial)，快速建立有關此功能的具體專業知識。
 
@@ -64,13 +64,13 @@ Adobe 邀請您透過傳送電子郵件至：**aemcs-waf-adopter@adobe.com**，�
 
 例如，在 Apache 層，客戶可以設定 [Dispatcher 模組](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration#configuring-access-to-content-filter)或 [ModSecurity](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/foundation/security/modsecurity-crs-dos-attack-protection) 以限制對特定內容的存取。
 
-如本文所述，流量篩選器規則可以使用Cloud Manager的[設定管道部署到Adobe管理的CDN。](/help/operations/config-pipeline.md)除了根據IP位址、路徑和標題等屬性的流量篩選規則，或根據設定速率限制的規則之外，客戶也可以授權一個稱為WAF規則的強大流量篩選規則子類別。
+如本文所述，可以將流量篩選器規則部署到 Adobe Managed CDN，方法是使用 Cloud Manager 的[設定管道。](/help/operations/config-pipeline.md)除了根據 IP 位址、路徑和標頭等屬性的流量篩選規則，或根據設定速率限制的規則之外，客戶也可以授權稱為 WAF 規則的強大流量篩選規則子類別。
 
 ## 建議的流程 {#suggested-process}
 
 以下是制定正確流量篩選規則的高階建議端到端流程：
 
-1. 設定非生產及生產設定管道，如[設定](#setup)區段中所述。
+1. 設定非生產和生產設定管道，如[設定](#setup)章節的敘述。
 1. 已獲得 WAF 流量篩選規則子類別授權的客戶應於 Cloud Manager 加以啟用。
 1. 閱讀並嘗試本教學課程，以具體了解如何使用流量篩選規則，包括 WAF 規則 (若已獲得授權)。本教學課程將引導您將規則部署到開發環境、模擬惡意流量、下載 [CDN 日誌](#cdn-logs)，以及在[儀表板工具](#dashboard-tooling)中進行分析。
 1. 將推薦的入門規則複製到 `cdn.yaml`，並以日誌模式將設定部署到生產環境。
@@ -80,7 +80,7 @@ Adobe 邀請您透過傳送電子郵件至：**aemcs-waf-adopter@adobe.com**，�
 
 ## 設定 {#setup}
 
-1. 使用一組流量篩選規則(包括WAF規則)建立檔案`cdn.yaml`。
+1. 建立包含一組流量篩選規則 (包括 WAF 規則) 的檔案 `cdn.yaml`。
 
    ```
    kind: "CDN"
@@ -101,22 +101,22 @@ Adobe 邀請您透過傳送電子郵件至：**aemcs-waf-adopter@adobe.com**，�
          action: block
    ```
 
-   請參閱[設定管道文章](/help/operations/config-pipeline.md#common-syntax)，瞭解`data`節點上方屬性的說明。 `kind`屬性值應該設定為&#x200B;*CDN*，而版本應該設定為`1`。
+   有關  `data`節點上方屬性的描述，請參閱[設定管道文章](/help/operations/config-pipeline.md#common-syntax)。`kind` 屬性值應設定為 *CDN*，版本應設定為 `1`。
 
 
 1. 如果 WAF 規則已獲得授權，則應在 Cloud Manager 中啟用該功能 (如下所述)，對於新的和現有的計畫案例都適用。
 
    1. 若要對新計畫設定 WAF，在新增生產計畫時，請勾選「**WAF-DDOS 防護**」核取方塊 (在&#x200B;**安全性**&#x200B;標籤中) [。](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
 
-   1. 若要在現有程式上設定WAF，請隨時[編輯您的程式](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)並在&#x200B;**安全性**&#x200B;索引標籤上取消核取或核取&#x200B;**WAF-DDOS**&#x200B;選項。
+   1. 若要在現有的計畫上設定 WAF，[編輯您的計畫](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)並在「**安全性**」標籤隨時取消勾選或勾選 **WAF-DDOS** 選項。
 
-1. 在Cloud Manager中建立設定管道，如[設定管道文章所述。](/help/operations/config-pipeline.md#managing-in-cloud-manager)管道將參照最上層`config`資料夾，並將`cdn.yaml`檔案放在下方，如此處](/help/operations/config-pipeline.md#folder-structure)所述。[
+1. 在 Cloud Manager 中建立設定管道，依照此文章中所述執行：[設定管道文章。](/help/operations/config-pipeline.md#managing-in-cloud-manager)管道將參考頂層 `config` 資料夾，並將 `cdn.yaml` 檔案放置在下面的某個位置，如[此處所述](/help/operations/config-pipeline.md#folder-structure)。
 
 ## 流量篩選規則語法 {#rules-syntax}
 
-您可以設定&#x200B;*流量篩選規則*，以符合IP、使用者代理、要求標題、主機名稱、地理和URL等模式。
+您可以將&#x200B;*流量篩選規則*&#x200B;設定為符合 IPS、使用者代理、要求標頭、主機名稱、地理位置和 URL 等模式。
 
-授權增強式安全性或WAF-DDoS Protection Security產品的客戶，也可以設定稱為&#x200B;*WAF流量篩選器規則* (簡稱WAF規則)的特殊流量篩選器規則類別，以參考一或多個[WAF旗標](#waf-flags-list)。
+授權強化的安全性或 WAF-DDoS 保護安全性產品的客戶，也可以設定特殊類別的流量篩選規則 *WAF 流量篩選規則* (或簡稱為 WAF 規則)，其參考一個或多個 [WAF 標幟](#waf-flags-list)。
 
 以下是一組流量篩選規則的範例，其中也包括 WAF 規則。
 
@@ -262,7 +262,7 @@ when:
 | SCANNER | 掃描程式 | 可識別熱門的掃描服務和工具 |
 | RESPONSESPLIT | HTTP 回應拆分 | 會識別何時將 CRLF 字元作為輸入提交給應用程式，以將標頭注入 HTTP 回應 |
 | XML-ERROR | XML 編碼錯誤 | 指定為在「Content-Type」要求標頭中包含 XML 但包含 XML 剖析錯誤的 POST、PUT 或 PATCH 要求內文。這經常和程式設計錯誤或自動化亦或惡意要求有關。 |
-| DATACENTER | 資料中心 | 將請求識別為來自已知的託管提供者。 這種類型的流量通常和真正的一般使用者無關。 |
+| DATACENTER | 資料中心 | 將請求識別為來自已知的主機提供者。這種類型的流量通常和真正的一般使用者無關。 |
 
 
 ## 考量事項 {#considerations}
@@ -732,7 +732,7 @@ data:
 
 本教學課程將引導您完成：
 
-* 設定Cloud Manager設定管道
+* 設定 Cloud Manager 設定管道
 * 使用工具模擬惡意流量
 * 宣告流量篩選規則，包括 WAF 規則
 * 使用儀表板工具分析結果
