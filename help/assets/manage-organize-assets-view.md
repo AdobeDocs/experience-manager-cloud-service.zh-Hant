@@ -5,10 +5,10 @@ role: User, Leader
 contentOwner: AG
 exl-id: 2459d482-828b-4410-810c-ac55ef0a2119
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: 7ec5d5e3ca487ff84bc0b1f7f040aec9475059e0
 workflow-type: tm+mt
-source-wordcount: '1177'
-ht-degree: 93%
+source-wordcount: '1204'
+ht-degree: 90%
 
 ---
 
@@ -130,7 +130,8 @@ Assets檢視可讓您對存放庫中可用的資產設定狀態。 設定資產�
 
 1. 選取該資產，然後按一下工具列中的「**[!UICONTROL 詳細資料]**」。
 
-1. 在&#x200B;**[!UICONTROL 基本]**&#x200B;索引標籤中，從&#x200B;**[!UICONTROL 狀態]**&#x200B;下拉式清單中選取資產狀態。 可能的值包括「已核准」、「已拒絕」以及「無狀態」(預設)。
+1. 在&#x200B;**[!UICONTROL 基本]**&#x200B;索引標籤中，從&#x200B;**[!UICONTROL 狀態]**下拉式清單中選取資產狀態。 可能的值包括「已核准」、「已拒絕」和「無狀態」（預設）。
+如果您已為Dynamic Media布建適合您環境的OpenAPI功能，Experience Manager Assets會在您將資產標示為`Approved`後立即產生公用URL。
 
    >[!VIDEO](https://video.tv.adobe.com/v/342495)
 
