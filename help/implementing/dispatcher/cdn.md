@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: 655b92f0fd3c6fb69bdd9343719537d6328fa7be
 workflow-type: tm+mt
 source-wordcount: '1552'
-ht-degree: 16%
+ht-degree: 18%
 
 ---
 
@@ -59,7 +59,7 @@ CDN錯誤頁面可設定為在罕見情況下無法連線到AEM時，覆寫提�
 
 ### 清除CDN上的快取內容 {#purge-cdn}
 
-使用HTTP Cache-Control標題設定TTL，是平衡內容傳送效能與內容新鮮度的有效方法。 不過，在必須立即提供更新內容的情況下，直接清除CDN快取可能會有幫助。
+使用 HTTP Cache-Control 標頭設定 TTL 是平衡內容傳遞效能和內容新鮮度的有效方法。不過，在必須立即提供更新內容的情況下，直接清除CDN快取可能會有幫助。
 
 閱讀有關[設定清除API Token](/help/implementing/dispatcher/cdn-credentials-authentication.md/#purge-API-token)和[清除快取的CDN內容](/help/implementing/dispatcher/cdn-cache-purge.md)的資訊。
 
@@ -67,7 +67,7 @@ CDN錯誤頁面可設定為在罕見情況下無法連線到AEM時，覆寫提�
 
 對於輕度驗證使用案例，包括商務利害關係人審查內容，顯示需要使用者名稱和密碼的基本驗證對話方塊以保護內容。 [瞭解更多](/help/implementing/dispatcher/cdn-credentials-authentication.md)並加入早期採用者計畫。
 
-## 客戶CDN指向AEM管理的CDN {#point-to-point-CDN}
+## 客戶 CDN 會指向 AEM 管理的 CDN {#point-to-point-CDN}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_byocdn"
