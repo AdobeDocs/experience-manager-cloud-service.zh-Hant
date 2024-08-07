@@ -5,10 +5,10 @@ exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 96bf1d56d24da851ad4713e3cb0728fd7a18da18
+source-git-commit: f8b058549162b7ae3d57b1a7dd3461f738b75320
 workflow-type: tm+mt
-source-wordcount: '1288'
-ht-degree: 10%
+source-wordcount: '1269'
+ht-degree: 11%
 
 ---
 
@@ -28,7 +28,7 @@ For customers that bring their own CDN on top of AEM as a Cloud Service, server-
 
 ### Cloud Service內容請求的差異 {#content-requests-variances}
 
-內容請求在組織的Analytics報告工具中可能有差異，如下表所述。 一般而言，*不要*&#x200B;使用透過使用者端檢測收集資料的分析工具，來報告特定網站的內容要求數目，因為通常要視使用者同意而觸發，因此遺漏了相當部分的流量。 收集記錄檔中資料伺服器端的Analytics工具，或為在AEM as a Cloud Service上新增自己CDN的客戶提供CDN報告，可提供較佳的計數。 若要報告頁面檢視及其相關效能，[AdobeRUM資料服務](/help/sites-cloud/administering/real-use-monitoring-for-aem-as-a-cloud-service.md)是Adobe的建議選項。
+內容請求在組織的Analytics報告工具中可能有差異，如下表所述。 一般而言，*不要*&#x200B;使用透過使用者端檢測收集資料的分析工具，來報告特定網站的內容要求數目，因為通常要視使用者同意而觸發，因此遺漏了相當部分的流量。 收集記錄檔中資料伺服器端的Analytics工具，或為在AEM as a Cloud Service上新增自己CDN的客戶提供CDN報告，可提供較佳的計數。
 
 | 差異原因 | 解釋 |
 |---|---|
