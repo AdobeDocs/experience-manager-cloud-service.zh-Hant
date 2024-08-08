@@ -4,9 +4,9 @@ description: 瞭解如何使用AEM as a Cloud Service的記錄來設定中央記
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
 feature: Log Files, Developing
 role: Admin, Architect, Developer
-source-git-commit: 88b0479c44f6431a9f254551e51b1ce86af91d0f
+source-git-commit: 6cb2665f2a2e61216608dfe9c3444adeb472395f
 workflow-type: tm+mt
-source-wordcount: '2797'
+source-wordcount: '2829'
 ht-degree: 8%
 
 ---
@@ -550,7 +550,7 @@ CDN記錄與其他記錄不同，因為它會遵循JSON格式。
 | *狀態* | 作為整數值的 HTTP 狀態代碼。 |
 | *res_age* | 回應已經 (在所有的節點) 快取的時間量 (以秒為單位)。 |
 | *pop* | CDN 快取伺服器的資料中心。 |
-| *rules* | 任何相符的[流量篩選規則](/help/security/traffic-filter-rules-including-waf.md)的名稱和WAF旗標，也表示相符是否造成區塊。 若沒有相符的規則，則為空白。 |
+| *rules* | 任何相符的[流量篩選規則](/help/security/traffic-filter-rules-including-waf.md)和WAF旗標的名稱，也表示相符是否造成封鎖。 若沒有相符的規則，則為空白。 |
 
 
 ## 如何存取記錄檔 {#how-to-access-logs}
@@ -614,6 +614,12 @@ Apache層記錄檔（包括Dispatcher）位於儲存Dispatcher的Docker容器中
 與傳送至Splunk的記錄檔相關聯的網路頻寬會視為客戶網路I/O使用量的一部分。
 
 CDN記錄檔將轉送至Splunk以處理新的支援票證請求；已啟用Splunk轉送的客戶未來將能夠新增CDN記錄檔。
+
+>[!NOTE]
+>
+>特定記錄和特定使用者記錄無法轉送到Splunk。
+>
+>所有記錄都將轉送至Splunk，客戶可在其中根據需求進行任何進一步篩選。
 
 ### 啟用Splunk轉送 {#enabling-splunk-forwarding}
 
