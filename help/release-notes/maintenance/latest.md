@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的目前維�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 8c1bad70a82775c1c99b0c35f07e0d1cae602230
+source-git-commit: 80edd0255b38beee93b3f9c779ae0f364500b4a5
 workflow-type: tm+mt
-source-wordcount: '1153'
-ht-degree: 16%
+source-wordcount: '1176'
+ht-degree: 15%
 
 ---
 
@@ -93,7 +93,7 @@ ht-degree: 16%
 
 ### 已知問題 {#known-issues-17465}
 
-* Assets-40875 — 會為頁面觸發AssetDeleteHandler和Handler中的NullPointerException。
+* Assets-40875 - AssetDeleteHandler類別會監聽資產刪除事件，並根據刪除DELETE型別(PRE_event或POST_event)執行特定動作。DELETE 在某些情況下，事件的POST_DELETE型別會造成NullPointerException。
 * Forms-14340 — 具現化FormsAndDocumentOmniSearchHandler和CloudStorageSubmitActionInserter時發生錯誤。 這些是無害的log陳述式。
 * Forms-15818 — 元件描述項專案「OSGI-INF/com.adobe.aemfd.docmanager.impl」。在伺服器記錄檔中找不到*.xml&#39;陳述式。 這些是無害的log陳述式。
 * 
