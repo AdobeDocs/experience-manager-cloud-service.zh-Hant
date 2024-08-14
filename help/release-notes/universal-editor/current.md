@@ -1,19 +1,20 @@
 ---
-title: Universal Editor 2024.06.28發行說明
-description: 這些是2024.06.28版通用編輯器的發行說明。
+title: Universal Editor 2024.08.13發行說明
+description: 這些是2024.08.13版通用編輯器的發行說明。
 feature: Release Information
 role: Admin
-source-git-commit: cc94ad2ba42707bb7541217f0225b995f64ad84f
+exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
+source-git-commit: d71d3481004f2429c018c536b3e12784cf597f85
 workflow-type: tm+mt
-source-wordcount: '306'
-ht-degree: 1%
+source-wordcount: '369'
+ht-degree: 0%
 
 ---
 
 
-# Universal Editor 2024.06.28發行說明 {#release-notes}
+# Universal Editor 2024.08.13發行說明 {#release-notes}
 
-這些是2024年6月28日發行的Universal Editor的發行說明。
+這些是2024年8月13日發行的Universal Editor的發行說明。
 
 >[!TIP]
 >
@@ -21,18 +22,19 @@ ht-degree: 1%
 
 ## 新增功能 {#what-is-new}
 
-* **首頁**：最近使用的頁面會顯示為清單，沒有預覽影像。
-* **位置列**：已新增增強型URL驗證，強制執行HTTPS URL並支援URL中的雜湊，以處理雜湊路由的應用程式。
-* **鍵盤導覽**：頁面覆蓋選取範圍已與屬性邊欄焦點分離，以改善頁面上的鍵盤導覽，而不會失去焦點。
-* **專案標籤**：標籤的遞補值現在會使用`data-aue-prop` （而非`data-aue-type`）在覆蓋圖和內容樹狀結構中更清楚的識別。
-* **RTE強制回應視窗**：從屬性面板開啟RTF編輯器強制回應視窗時，已將&#x200B;**取消**&#x200B;按鈕新增到該視窗中。
-* **節點**&#x200B;上的UE服務：已重新引入Universal Editor服務的HTTP支援，因為所有HTTPS連線已在Dispatcher層級終止。
-* **內部複製API**：已新增API至通用編輯器服務，以複製元件，以便未來引進工具列選項來複製和複製內容。
+* **自訂資料型別**：根據您的獨特資料需求量身打造編輯器，並能在屬性面板中建立自訂欄位。
+   * 無論您是開發商務使用案例的自訂產品選擇器，還是使用您後端的值填入下拉式清單，此功能都可讓您控制作者用來撰寫內容的資料。
+* **跨容器拖放**：您可以透過拖放至[內容樹狀結構面板中的方式，跨不同容器移動元件，讓版面組合更加靈活。](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode)
+* **最佳化的GitHub整合**：已引入GitHub回應的快取，大幅加快標籤和`universal-editor-cors-library`的擷取速度，進而提供更快速且流暢的使用者體驗。
+* **Managed Services RPM套件**：Adobe現在提供RPM套件，以簡化Universal Editor Service的部署和管理，簡化維護作業，並減少Managed Services的作業額外負荷。
+* **可設定的IMS權杖驗證**：若要增加權杖管理的彈性，現在可選擇IMS權杖驗證。
+   * 此設定選項可讓您視需要停用驗證，進而簡化雲端閘道的設定。
+* **Splunk整合**： Splunk記錄已整合至Universal Editor Service Express，可加強監控和診斷。
+   * 此整合可確保有效率的記錄追蹤、更順暢的操作，以及更快的疑難排解。
 
 ## 錯誤修正 {#bug-fixes}
 
-* **屬性面板階層連結**：已修正深層巢狀專案屬性面板中的階層連結功能表，該功能表未保持開啟狀態。
-* **內容片段選擇器**：內容片段選擇器已經過改良，以確保其符合內容片段模式或`data-aue-filter`中定義的規則。
-* **元件插入**：已更正要插入的新元件清單，這些元件在瀏覽至其他頁面後未正確更新。
-* **發佈狀態**：已改善發佈狀態的處理方式，以更一致地運作。
-* **其他修正**：此版本也包含各種小修正、技術債務清理、安全性增強功能，以及整體穩定性和效能的整合測試。
+* **增強型發佈意見反應**：如果因許可權不足而發佈失敗，則發佈期間對使用者的意見反應已改善為顯示清楚的警告，而非單純表示失敗。
+* **已改善URL處理**：已修正造成發佈失敗的URL編碼/解碼錯誤問題。
+* **正確的資料處理**：已解決浮點數錯誤地儲存為整數的問題，以確保整個內容的精確資料處理。
+* **安全性與穩定性**： Docker映像中的安全性弱點已修正，重要元件（例如元件選擇器和階層連結）的測試涵蓋範圍已實施，進而提供更安全、穩定且可靠的編輯器體驗。
