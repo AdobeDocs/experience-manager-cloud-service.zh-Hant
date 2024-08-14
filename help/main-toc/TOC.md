@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的運作方式以及該軟體可以為您做哪些事。
 breadcrumb-title: 使用手冊
 user-guide-title: AEM as a Cloud Service
-source-git-commit: a1baa7f29c6e15af11347debdd341f9972c06e83
+source-git-commit: bd5f77e8e27b55c538bbe50d28ae56f6e983f541
 workflow-type: tm+mt
-source-wordcount: '5315'
-ht-degree: 100%
+source-wordcount: '5320'
+ht-degree: 99%
 
 ---
 
@@ -859,6 +859,7 @@ ht-degree: 100%
          + [為 SEO 設定 URL](/help/commerce-cloud/configuring/advanced-url-configuration.md)
          + [快取選項](/help/commerce-cloud/configuring/caching.md)
          + [自訂 HTTP 標頭](/help/commerce-cloud/configuring/custom-http-headers.md)
+         + [購物車和Dispatcher設定](/help/commerce-cloud/configuring/shopping-cart-dispatcher.md)
       + 開發 {#developing}
          + [利用 AEM Cloud Service SDK 進行開發 ](/help/commerce-cloud/develop.md)
          + [設定 CIF 元件樣式](/help/commerce-cloud/customizing/style-cif-component.md)
