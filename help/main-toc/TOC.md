@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的運作方式以及該軟體可以為您做哪些事。
 breadcrumb-title: 使用手冊
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 1c18e38a463bdd57089881c098cb81641e55a5e4
+source-git-commit: a9b7e2fbafcfc4b5592cc95e6bbd1e8e0f631757
 workflow-type: tm+mt
-source-wordcount: '5335'
+source-wordcount: '5340'
 ht-degree: 99%
 
 ---
@@ -104,6 +104,7 @@ ht-degree: 99%
    + Cloud Manager 發行說明 {#cloud-manager}
       + [最新發行說明](/help/implementing/cloud-manager/release-notes/current.md)
       + 2024 {#2024}
+         + [2024.7.0 版發行說明](/help/implementing/cloud-manager/release-notes/2024/2024-7-0.md)
          + [2024.6.0 版發行說明](/help/implementing/cloud-manager/release-notes/2024/2024-6-0.md)
          + [2024.5.0 版發行說明](/help/implementing/cloud-manager/release-notes/2024/2024-5-0.md)
          + [2024.4.0 版發行說明](/help/implementing/cloud-manager/release-notes/2024/2024-4-0.md)
@@ -370,7 +371,7 @@ ht-degree: 99%
          + [在多個網站中使用目標內容](/help/sites-cloud/authoring/personalization/multisite-targeted-content.md)
          + [如何架構目標內容的多網站管理](/help/sites-cloud/authoring/personalization/multisite-structure.md)
          + [管理活動](/help/sites-cloud/authoring/personalization/activities.md)
-         + [管理對象](/help/sites-cloud/authoring/personalization/audiences.md)
+         + [管理客群](/help/sites-cloud/authoring/personalization/audiences.md)
          + [建立和管理選件 (選件主控台)](/help/sites-cloud/authoring/personalization/offers.md)
          + [了解分段](/help/sites-cloud/authoring/personalization/segmentation.md)
          + [使用 ContextHub 設定分段](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
