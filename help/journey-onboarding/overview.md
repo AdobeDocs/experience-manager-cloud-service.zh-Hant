@@ -5,10 +5,10 @@ exl-id: 892577db-05dc-49ff-bb2c-203efdb89c8c
 recommendations: noDisplay
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 1289da67452be7fc0fa7f3126d2a3dbf051aa9b5
 workflow-type: tm+mt
-source-wordcount: '1290'
-ht-degree: 100%
+source-wordcount: '1292'
+ht-degree: 98%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 100%
 
 ## 簡介 {#introduction}
 
-Adobe Experience Manager 是一套功能強大的可組合內容服務，可在任何頻道中快速提供極具影響力的個人化體驗，為所有人解鎖所有內容。**Edge Delivery Services** 是 Adobe Experience Manager 的最創新服務，可使內容速度達到極限並提供卓越的體驗。了解如何開始使用 Edge Delivery Services，請瀏覽[此頁面](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html)。若要了解如何使用 Edge Delivery Services，請參閱[開發人員教學課程](https://www.hlx.live/developer/tutorial)頁面。
+Adobe Experience Manager 是一套功能強大的可組合內容服務，可在任何頻道中快速提供極具影響力的個人化體驗，為所有人解鎖所有內容。**Edge Delivery Services** 是 Adobe Experience Manager 的最創新服務，可使內容速度達到極限並提供卓越的體驗。透過諮詢[Edge Delivery Services概觀](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html)，瞭解如何開始使用Edge Delivery Services。 若要了解如何使用 Edge Delivery Services，請參閱[開發人員教學課程](https://www.hlx.live/developer/tutorial)頁面。
 
 上線是指定的系統管理員為您的組織設定 AEM as a Cloud Service 的過程。此程序包括雲端資源的初始設定，以及根據使用者的工作職責為其指派角色。因此，每個成員都能夠登入並存取他們的 AEM as a Cloud Service 資源。
 
@@ -52,7 +52,7 @@ Adobe Experience Manager 是一套功能強大的可組合內容服務，可在�
 
 您將開始使用新的 AEM as a Cloud Service 專案！
 
-## 對象 {#audience}
+## 客群 {#audience}
 
 上線歷程是專門為剛接觸 AEM as a Cloud Service 和一般 AEM 客戶的&#x200B;**系統管理員**&#x200B;製作的。系統管理員是在您的 AEM as a Cloud Service 合約簽署後，Adobe 第一個接觸的個人。他們通常是第一個在 AEM as a Cloud Service 存取和設定資源的人。如果您正在閱讀本主題，您很可能是系統管理員。
 
@@ -75,7 +75,7 @@ Adobe Experience Manager 是一套功能強大的可組合內容服務，可在�
 
 以下文章詳細介紹了核心上線概念，並為您提供了 AEM as a Cloud Service 的基礎知識。儘管您可以直接進入歷程的特定部分，但許多概念都是以先前文章中的概念為基礎。因此，如果您不熟悉上線流程，Adobe 建議您從頭開始，然後按順序進行。
 
-| # | 文章 | 說明 | 對象 |
+| # | 文章 | 說明 | 客群 |
 |---|---|---|---|
 | 0 | 上線歷程 | 本文件 | 系統管理員 |
 | 1 | [上線準備](preparation.md) | 在啟動過程開始之前，系統管理員在登入系統之前必須了解一些準備步驟。 | 系統管理員 |

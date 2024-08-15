@@ -4,10 +4,10 @@ description: 瞭解您必須執行的步驟，以便確定AEM安裝已準備好�
 exl-id: 3bc8c037-d82a-4455-bce6-3c80c359a4ae
 feature: Migration
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '1900'
-ht-degree: 6%
+source-wordcount: '1907'
+ht-degree: 5%
 
 ---
 
@@ -38,7 +38,7 @@ AEM as a Cloud Service提供許多管理AEM專案的新功能，並帶來許多�
 
 隨著這些改善，與AEM as a Cloud Service相比，AEM的內部部署安裝和Adobe Managed Services之間也引進了幾項差異。
 
-下表中的專案清單是與移轉至AEM as a Cloud Service最相關的變更子集。 您可以在[這裡](/help/release-notes/aem-cloud-changes.md)查閱重大變更的完整清單。
+下表中的專案清單是與移轉至AEM as a Cloud Service最相關的變更子集。 您可以參閱Adobe Experience Manager as a Cloud Service](/help/release-notes/aem-cloud-changes.md)的[重大變更完整清單。
 
 <table>
 <thead>
@@ -117,7 +117,7 @@ AEM as a Cloud Service提供許多管理AEM專案的新功能，並帶來許多�
   <tr>
     <td>工作流程啟動器</td>
     <td></td>
-    <td>從您的程式碼中移除所有觸發現成可用或自訂DAM更新資產工作流程的工作流程啟動器。 <br>所有上傳至AEM as a Cloud Service的資產將由資產處理服務處理。 如需自訂步驟，請參閱<a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use.html#post-processing-workflows"> Post處理工作流程</a>，瞭解如何設定與設定後續處理工作流程。</td>
+    <td>從您的程式碼中移除所有觸發現成可用或自訂DAM更新資產工作流程的工作流程啟動器。 <br>所有上傳至AEM as a Cloud Service的資產將由資產處理服務處理。 如需自訂步驟，請參閱<a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use.html#post-processing-workflows">後處理工作流程</a>，瞭解如何設定與設定後處理工作流程。</td>
   </tr>
   <tr>
     <td>自訂轉譯步驟</td>

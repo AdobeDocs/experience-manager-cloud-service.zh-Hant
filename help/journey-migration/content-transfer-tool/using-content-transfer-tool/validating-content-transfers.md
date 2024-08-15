@@ -4,9 +4,9 @@ description: 使用內容轉移工具來驗證內容轉移
 exl-id: a12059c3-c15a-4b6d-b2f4-df128ed0eea5
 feature: Migration
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 1289da67452be7fc0fa7f3126d2a3dbf051aa9b5
 workflow-type: tm+mt
-source-wordcount: '1074'
+source-wordcount: '1080'
 ht-degree: 2%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 2%
 
 >[!INFO]
 >
->此功能在內容轉移工具(CTT) 1.8.x版發行後即可使用。 AEM Cloud Service目標環境必須至少執行版本6158或更高版本。 還需要設定來源環境，以執行[預先複製](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#setting-up-pre-copy-step)。 驗證功能會尋找來源上的azcopy.config檔案。 如果找不到此檔案，則不會執行驗證。 若要進一步瞭解如何設定azcopy.config檔案，請參閱[此頁面](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#configure-azcopy-config-file)。
+>此功能在內容轉移工具(CTT) 1.8.x版發行後即可使用。 AEM Cloud Service目標環境必須至少執行版本6158或更高版本。 還需要設定來源環境，以執行[預先複製](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#setting-up-pre-copy-step)。 驗證功能會尋找來源上的azcopy.config檔案。 如果找不到此檔案，則不會執行驗證。 若要深入瞭解如何設定azcopy.config檔案，請參閱[處理大型內容存放庫 — 設定azcopy.config檔案](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#configure-azcopy-config-file)。
 
 驗證內容轉移是一項選擇性功能。 啟用此功能會增加執行擷取和擷取所需的時間。 若要使用此功能，請在來源AEM環境的「系統主控台」中啟用它，步驟如下：
 

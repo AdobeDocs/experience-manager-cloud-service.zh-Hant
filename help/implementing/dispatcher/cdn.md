@@ -4,9 +4,9 @@ description: 瞭解如何使用AEM管理的CDN以及如何將您自己的CDN指�
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 role: Admin
-source-git-commit: 655b92f0fd3c6fb69bdd9343719537d6328fa7be
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '1552'
+source-wordcount: '1555'
 ht-degree: 18%
 
 ---
@@ -178,7 +178,7 @@ AEM管理的CDN會新增標頭至具有下列各項的每個要求：
 >
 >如果有客戶管理的CDN，這些標題會反映客戶CDN Proxy伺服器的位置，而非實際使用者端。 因此，對於客戶管理的CDN，地理位置標題應由客戶CDN管理。
 
-國家/地區代碼的值是[此處](https://en.wikipedia.org/wiki/tw/ISO_3166-1)描述的Alpha-2代碼。
+國家/地區代碼的值是[ISO 3166-1](https://en.wikipedia.org/wiki/tw/ISO_3166-1)中描述的Alpha-2代碼。
 
 大陸代碼的值如下：
 

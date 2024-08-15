@@ -6,10 +6,10 @@ exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 3a10a0b8c89581d97af1a3c69f1236382aa85db0
+source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
 workflow-type: tm+mt
-source-wordcount: '1405'
-ht-degree: 74%
+source-wordcount: '1403'
+ht-degree: 75%
 
 ---
 
@@ -116,7 +116,7 @@ ht-degree: 74%
 目標部署只會為AEM應用程式的選定部分部署程式碼。 在這種部署中，您可以選擇&#x200B;**包含**&#x200B;下列其中一個型別的程式碼：
 
 * **設定** — 設定AEM環境中各種功能的設定。
-   * 請參閱[使用設定管道文章](/help/operations/config-pipeline.md)以取得支援的設定清單，其中包括記錄轉送、清除相關的維護工作以及各種CDN設定，並在您的存放庫中管理這些設定，以便正確部署它們。
+   * 請參閱[使用設定管道](/help/operations/config-pipeline.md)以取得支援的設定清單，其中包括記錄轉送、清除相關的維護工作以及各種CDN設定，並在您的存放庫中管理這些設定，以便正確部署它們。
    * 執行目標部署管道時，將會部署設定，前提是這些設定會儲存至您在管道中定義的環境、存放庫和分支。
    * 在任何時候，每個環境只能有一個設定管道。
 * **前端程式碼** — 設定AEM應用程式前端的JavaScript和CSS。

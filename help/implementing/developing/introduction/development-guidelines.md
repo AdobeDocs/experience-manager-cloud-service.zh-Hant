@@ -4,7 +4,7 @@ description: 了解在 AEM as a Cloud Service 上進行開發的準則，以及�
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
 source-wordcount: '2745'
 ht-degree: 4%
@@ -184,7 +184,7 @@ DEBUG 3 WebApp Panel: WebApp successfully deployed
 
 客戶可以在作者階層的開發環境中存取CRXDE Lite，但不能在預備或生產環境中存取。 無法在執行階段寫入不可變的存放庫(`/libs`， `/apps`)，因此嘗試這樣做將會導致錯誤。
 
-您可以從AEM as a Cloud Service Developer Console啟動存放庫瀏覽器，為作者、發佈和預覽層級的所有環境提供存放庫的唯讀檢視。 在[這裡](/help/implementing/developing/tools/repository-browser.md)閱讀更多有關存放庫瀏覽器的資訊。
+您可以從AEM as a Cloud Service Developer Console啟動存放庫瀏覽器，為作者、發佈和預覽層級的所有環境提供存放庫的唯讀檢視。 如需詳細資訊，請參閱[存放庫瀏覽器](/help/implementing/developing/tools/repository-browser.md)。
 
 AEM as a Cloud Service Developer Console中針對RDE、開發、測試和生產環境提供了一組用於偵錯AEM as a Cloud Service開發人員環境的工具。 可藉由調整作者或Publish服務URL來決定URL，如下所示：
 
@@ -194,7 +194,7 @@ AEM as a Cloud Service Developer Console中針對RDE、開發、測試和生產�
 
 `aio cloudmanager:open-developer-console <ENVIRONMENTID> --programId <PROGRAMID>`
 
-如需詳細資訊，請參閱[此頁面](/help/release-notes/home.md)。
+如需詳細資訊，請參閱[發行資訊](/help/release-notes/home.md)。
 
 開發人員可以產生狀態資訊，並解析各種資源。
 

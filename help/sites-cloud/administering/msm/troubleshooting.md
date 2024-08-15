@@ -5,9 +5,9 @@ feature: Multi Site Manager
 role: Admin
 exl-id: 50f02f4f-a347-4619-ac90-b3136a7b1782
 solution: Experience Manager Sites
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
 workflow-type: tm+mt
-source-wordcount: '766'
+source-wordcount: '762'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 如果您在MSM中遇到您認為不正確的行為或錯誤，在開始和詳細的疑難排解之前，請務必：
 
 * 請檢視[MSM常見問題集](#faq)，因為您的問題或疑問可能已在該處解決。
-* 請檢視[MSM最佳實務文章](best-practices.md)，因為其中提供了一些秘訣，以及一些錯誤概念的澄清。
+* 請檢視[MSM最佳實務](best-practices.md)以取得一些秘訣，以及某些錯誤概念的澄清。
 
 ## 尋找有關您的Blueprint和即時副本狀態的進階資訊 {#advanced-info}
 
@@ -68,7 +68,7 @@ MSM會在資源URL上向選取器註冊數個可請求的servlet。 這些可供
 
 MSM同步動作是高度可設定的。 轉出期間會修改哪些屬性或元件，直接取決於這些設定的屬性。
 
-請參閱[此文章](best-practices.md)，以取得此主題的詳細資訊。
+請參閱[MSM最佳實務](best-practices.md)以取得此主題的詳細資訊。
 
 ### 如何移除一組作者的轉出許可權？ {#remove-rollout-permissions}
 

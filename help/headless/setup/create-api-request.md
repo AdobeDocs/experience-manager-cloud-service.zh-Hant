@@ -4,10 +4,10 @@ description: 了解如何使用 GraphQL API Headless 傳遞內容片段，以及
 exl-id: 2b72f222-2ba5-4a21-86e4-40c763679c32
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '674'
-ht-degree: 97%
+source-wordcount: '677'
+ht-degree: 96%
 
 ---
 
@@ -45,7 +45,7 @@ ht-degree: 97%
    /content/cq:graphql/<configuration-name>/endpoint
    ```
 
-更多有關啟用 [GraphQL 端點的詳細資訊位於此處](/help/headless/graphql-api/graphql-endpoint.md)。
+如需有關啟用GraphQL端點的詳細資訊，請參閱[在AEM中管理GraphQL端點](/help/headless/graphql-api/graphql-endpoint.md)。
 
 ## 使用 GraphQL 和 GraphiQL 查詢內容
 

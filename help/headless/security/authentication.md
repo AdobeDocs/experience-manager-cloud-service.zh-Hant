@@ -4,10 +4,10 @@ description: 了解必須對遠程 Adobe Experience Manager GraphQL 查詢執行
 feature: Headless, Content Fragments,GraphQL API
 exl-id: dfeae661-06a1-4001-af24-b52ae12d625f
 role: Admin, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '230'
-ht-degree: 100%
+source-wordcount: '231'
+ht-degree: 96%
 
 ---
 
@@ -41,4 +41,4 @@ Authorization: Bearer <access_token>
 
 此使用者帳戶表示您必須檢查該帳戶是否具有執行 GraphQL 查詢所需的權限。
 
-您可以在本機執行個體上使用 GraphiQL 來檢查這些權限。您可以在[這裡](/help/headless/security/permissions.md)找到更多有關權限的詳細資訊。
+您可以在本機執行個體上使用 GraphiQL 來檢查這些權限。如需更多詳細資料，請參閱[Headless內容的許可權考量事項](/help/headless/security/permissions.md)。

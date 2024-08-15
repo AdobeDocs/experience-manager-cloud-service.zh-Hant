@@ -4,10 +4,10 @@ description: AEM as a Cloud Service 2021.11.0版中移轉工具的發行說明
 feature: Release Information
 exl-id: 668c0c66-88f5-4d74-9a2a-3bdc63b0bba7
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
 source-wordcount: '149'
-ht-degree: 16%
+ht-degree: 4%
 
 ---
 
@@ -16,7 +16,8 @@ ht-degree: 16%
 本頁面總覽AEM as a Cloud Service 2021.11.0中移轉工具的發行說明。
 
 >[!NOTE]
->若要查看 Adobe Experience Manager as a Cloud Service 的最新發行說明，請按一下[此處](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html)。
+>
+>如需最新發行說明，請參閱[Adobe Experience Manager as a Cloud Service最新發行說明](/help/release-notes/release-notes-cloud/release-notes-current.md)。
 
 ## 內容轉移工具 {#ctt-release}
 

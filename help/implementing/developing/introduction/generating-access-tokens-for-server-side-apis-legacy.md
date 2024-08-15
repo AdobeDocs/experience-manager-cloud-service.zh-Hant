@@ -5,7 +5,7 @@ hidefromtoc: true
 exl-id: 6561870c-cbfe-40ef-9efc-ea75c88c4ed7
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
 source-wordcount: '1359'
 ht-degree: 0%
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 ## 伺服器對伺服器流量 {#the-server-to-server-flow}
 
-具有IMS組織管理員角色，並且也是AEM Author上的AEM使用者或AEM管理員產品設定檔成員的使用者，可以產生AEM as a Cloud Service認證。 具有AEM as a Cloud Service環境管理員角色的使用者稍後可以擷取該認證，且應安裝在伺服器上，並且需要謹慎將其視為機密金鑰。 此JSON格式檔案包含與AEM as a Cloud Service API整合所需的所有資料。 資料可用來建立已簽署的JWT權杖，該權杖會與IMS交換以取得IMS存取權杖。 然後，可將此存取權杖用作持有者驗證權杖，以向AEM as a Cloud Service提出請求。 認證預設在一年後到期，但可視需要重新整理，如[此處](#refresh-credentials)所述。
+具有IMS組織管理員角色，並且也是AEM Author上的AEM使用者或AEM管理員產品設定檔成員的使用者，可以產生AEM as a Cloud Service認證。 具有AEM as a Cloud Service環境管理員角色的使用者稍後可以擷取該認證，且應安裝在伺服器上，並且需要謹慎將其視為機密金鑰。 此JSON格式檔案包含與AEM as a Cloud Service API整合所需的所有資料。 資料可用來建立已簽署的JWT權杖，該權杖會與IMS交換以取得IMS存取權杖。 然後，可將此存取權杖用作持有者驗證權杖，以向AEM as a Cloud Service提出請求。 認證預設在一年後到期，但可視需要重新整理，請參閱[重新整理認證](#refresh-credentials)。
 
 伺服器對伺服器流程涉及以下步驟：
 

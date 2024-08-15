@@ -4,9 +4,9 @@ description: 具有機密值和環境特定值的OSGi設定
 feature: Deploying
 exl-id: f31bff80-2565-4cd8-8978-d0fd75446e15
 role: Admin
-source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
+source-git-commit: 1289da67452be7fc0fa7f3126d2a3dbf051aa9b5
 workflow-type: tm+mt
-source-wordcount: '3302'
+source-wordcount: '3321'
 ht-degree: 1%
 
 ---
@@ -322,7 +322,7 @@ org.apache.felix.configadmin.plugin.interpolation.secretsdir=${sling.home}/secre
 * 必須使用個別的`config.author`和`config.publish` OSGi資料夾，如[執行模式解析區段](#runmode-resolution)所述。
 * 建立獨立變數名稱有兩個選項，應該使用：
    * 建議使用的第一個選項：在宣告要定義不同值的所有OSGi資料夾（例如`config.author`和`config.publish`）中，使用相同的變數名稱。 例如
-     `$[env:ENV_VAR_NAME;default=<value>]`，其中預設值對應至該階層（作者或發佈）的預設值。 透過[Cloud Manager API](#cloud-manager-api-format-for-setting-properties)或透過使用者端設定環境變數時，請依照本[API參考檔案](https://developer.adobe.com/experience-cloud/cloud-manager/api-reference/)所述，使用「服務」引數來區分層級。 「service」引數會將變數的值繫結至適當的OSGi層。 它可以是「作者」、「發佈」或「預覽」。
+     `$[env:ENV_VAR_NAME;default=<value>]`，其中預設值對應至該階層（作者或發佈）的預設值。 透過[Cloud Manager API](#cloud-manager-api-format-for-setting-properties)或透過使用者端設定環境變數時，請依照[Cloud Manager API參考檔案](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/)所述，使用「服務」引數來區分層級。 「service」引數會將變數的值繫結至適當的OSGi層。 它可以是「作者」、「發佈」或「預覽」。
    * 第二個選項是使用前置詞（例如`author_<samevariablename>`和`publish_<samevariablename>`）宣告不同的變數
 
 ### 設定範例 {#configuration-examples}
@@ -515,14 +515,15 @@ config.dev
 
 ## 用於設定屬性的Cloud Manager API格式 {#cloud-manager-api-format-for-setting-properties}
 
-請參閱[此頁面](https://developer.adobe.com/experience-cloud/cloud-manager/docs/)，瞭解如何設定API。
+如需Cloud Manager API的相關資訊以及設定方式，請參閱[在Adobe Developer網站](https://developer.adobe.com/experience-cloud/cloud-manager/docs/)上AdobeCloud Manager 。
+
 >[!NOTE]
 >
 >確保使用的Cloud Manager API已指派「部署管理員 — Cloud Service」角色。 其他角色無法執行以下所有命令。
 
 >[!TIP]
 >
->您也可以使用Cloud Manager來設定環境變數。 如需詳細資訊，請參閱檔案[這裡。](/help/implementing/cloud-manager/environment-variables.md)
+>您也可以使用Cloud Manager來設定環境變數。 如需詳細資訊，請參閱[Cloud Manager環境變數](/help/implementing/cloud-manager/environment-variables.md)。
 
 ### 透過API設定值 {#setting-values-via-api}
 
@@ -550,7 +551,7 @@ PATCH /program/{programId}/environment/{environmentId}/variables
 >[!NOTE]
 >預設變數不是透過API設定，而是在OSGi屬性本身中設定。
 >
->如需詳細資訊，請參閱[此頁面](https://developer.adobe.com/experience-cloud/cloud-manager/api-reference/)。
+>如需詳細資訊，請參閱[Cloud Manager API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/)。
 
 ### 透過API取得值 {#getting-values-via-api}
 
@@ -558,7 +559,7 @@ PATCH /program/{programId}/environment/{environmentId}/variables
 GET /program/{programId}/environment/{environmentId}/variables
 ```
 
-如需詳細資訊，請參閱[此頁面](https://developer.adobe.com/experience-cloud/cloud-manager/api-reference/)。
+如需詳細資訊，請參閱[Cloud Manager API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/)。
 
 ### 透過API刪除值 {#deleting-values-via-api}
 
@@ -568,7 +569,7 @@ PATCH /program/{programId}/environment/{environmentId}/variables
 
 若要刪除變數，請將其納入空白值。
 
-如需詳細資訊，請參閱[此頁面](https://developer.adobe.com/experience-cloud/cloud-manager/api-reference/)。
+如需詳細資訊，請參閱[Cloud Manager API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/)。
 
 ### 透過命令列取得值 {#getting-values-via-cli}
 
@@ -594,7 +595,7 @@ $ aio cloudmanager:set-environment-variables ENVIRONMENT_ID --delete MY_VAR1 MY_
 
 >[!NOTE]
 >
->請參閱[此頁面](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid)，以取得有關如何使用Cloud Manager外掛程式為Adobe I/OCLI設定值的詳細資訊。
+>請參閱GitHub](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid)上的[aio-cli-plugin-cloudmanager，以取得有關如何使用Cloud Manager外掛程式為Adobe I/OCLI設定值的詳細資訊。
 
 ### 變數數量 {#number-of-variables}
 

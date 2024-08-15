@@ -4,9 +4,9 @@ description: 本頁面說明如何導覽至Screens服務提供者。
 exl-id: 9eff6fe8-41d4-4cf3-b412-847850c4e09c
 feature: Administering Screens
 role: Admin, Developer, User
-source-git-commit: 5452a02ed20d70c09728b3e34f248c7d37fc4668
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '383'
+source-wordcount: '382'
 ht-degree: 4%
 
 ---
@@ -28,7 +28,7 @@ ht-degree: 4%
 
 請依照下列步驟設定Screens服務提供者：
 
-1. 從[這裡](https://experience.adobe.com/screens)瀏覽至Screens服務提供者。
+1. 導覽至[Screens服務提供者](https://experience.adobe.com/screens)。
 
    >[!CAUTION]
    >如果您可以存取多個組織，請確保您已登入正確的組織。 若要變更您的組織，請按一下畫面右上角的「組織」名稱，然後選擇您需要存取的所需組織。

@@ -4,9 +4,9 @@ description: 了解關於連接器、這類工具的功能，以及如何在 Exp
 exl-id: 70024424-8c52-493e-bbc9-03d238b8a5f5
 feature: Operations
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
 workflow-type: tm+mt
-source-wordcount: '935'
+source-wordcount: '936'
 ht-degree: 8%
 
 ---
@@ -26,7 +26,7 @@ AEM是尖端的Web體驗管理解決方案，提供許多潛在的整合領域�
 
 * 從外部系統提取資料至AEM。 例如，從CRM匯出聯絡資訊，以供造訪AEM支援之網站的更廣泛對象使用。  實作應使用Sling的[已排程工作](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#scheduled-jobs)，以確保即使容器發生故障也能執行工作。 程式碼的設計應假設工作可能會觸發多次。
 * 將資料從AEM匯出至外部系統。 例如，在AEM支援的網站上提交給CRM的Newsletter訂閱設定。
-* 正在從AEM擷取資產。 例如，參照儲存在AEM Assets中之資產的外部內容管理系統(CMS)。 或者，以連結至AEM Assets影像的PIM系統為例。
+* 正在從AEM擷取資產。 例如，參考AEM Assets中儲存之資產的外部內容管理系統(CMS)。 或者，以連結至AEM Assets影像的PIM系統為例。
 * 將資產儲存在AEM基礎架構中。 例如，行銷資源管理(MRM)系統將核准的資產儲存在AEM Assets中。
 * 設定和呈現自訂UI元件。 例如，允許作者拖放視訊元件，並設定要在即時網站上播放的特定視訊。
 * 透過合作夥伴服務對資產採取行動。 例如，在發佈頁面時傳送資產至視訊平台。
@@ -60,7 +60,7 @@ Experience Manageras a Cloud Service[檔案](../overview/introduction.md)提供�
 * `/apps`
 * `/content`和`/conf`
 
-聯結器應該遵守這些封裝指導方針，這些指導方針在[本文章](/help/implementing/developing/introduction/aem-project-content-package-structure.md)中說明。 現有聯結器也應重構以符合要求。
+聯結器應該遵守這些封裝指導方針，這些指導方針在[AEM專案結構](/help/implementing/developing/introduction/aem-project-content-package-structure.md)中說明。 現有聯結器也應重構以符合要求。
 
 此外，只有Adobe應將程式碼寫入`/libs`，而客戶和合作夥伴則應將程式碼寫入`/apps`。
 

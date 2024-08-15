@@ -4,17 +4,17 @@ Description: Learn how to configure SharePoint Site with limited access using th
 keywords: 如何設定具有有限存取權的SharePoint網站？、設定具有有限存取權的SharePoint、使用授權範圍來限制SharePoint網站的存取權。
 feature: Adaptive Forms, Core Components
 role: User, Developer
-source-git-commit: 4962c058e2cc2135dd3626655ba7b21dbdcbd455
+source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
 workflow-type: tm+mt
-source-wordcount: '807'
-ht-degree: 12%
+source-wordcount: '817'
+ht-degree: 13%
 
 ---
 
 
 <span class="preview">此功能可在早期採用者方案下使用。 您可以從您的官方電子郵件ID寫信到aem-forms-ea@adobe.com ，以加入率先採用者計畫並請求存取該功能。</span>
 
-# 使用授權範圍以有限存取權設定SharePoint網站
+# 使用授權範圍設定具有有限存取權限的 SharePoint 網站
 
 有限或受限存取的目的是透過允許管理員控制使用者對特定SharePoint網站或一組SharePoint網站的存取來增強安全管理。 當您需要授予使用者或群組存取特定網站的許可權，而不允許他們檢視任何其他不允許的SharePoint網站時，許可權層級就十分實用。
 
@@ -52,7 +52,7 @@ ht-degree: 12%
 
 若要使用`Sites.Selected` API許可權，必須在Azure入口網站中註冊的應用程式，並為SharePoint Online Sites設定適當的許可權。 此設定可確保應用程式擁有必要授權，可在定義的範圍內與SharePoint網站互動，從而提供所需的有限存取權。
 
-請參閱[文章](https://techcommunity.microsoft.com/t5/microsoft-sharepoint-blog/develop-applications-that-use-sites-selected-permissions-for-spo/ba-p/3790476)，瞭解開發使用SharePoint Online Sites `Sites.Selected`許可權的應用程式的說明。
+請參考[部落格 — 開發使用Sites的應用程式。SPO網站的選取許可權](https://techcommunity.microsoft.com/t5/microsoft-sharepoint-blog/develop-applications-that-use-sites-selected-permissions-for-spo/ba-p/3790476)，瞭解開發使用SharePoint Online Sites `Sites.Selected`許可權的應用程式的說明。
 
 ### 在AEM執行個體設定授權範圍
 

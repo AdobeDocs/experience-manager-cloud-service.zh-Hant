@@ -4,9 +4,9 @@ description: 瞭解如何在AEM as a Cloud Service中將記錄轉送給Splunk和
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: cb4299be4681b24852a7e991c123814d31f83cad
+source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
 workflow-type: tm+mt
-source-wordcount: '1349'
+source-wordcount: '1375'
 ht-degree: 1%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->此功能尚未發行，並且某些記錄目的地在發行時可能不可用。 同時，您可以開啟支援票證以將記錄轉送至&#x200B;**Splunk**，如[記錄文章](/help/implementing/developing/introduction/logging.md)中所述。
+>此功能尚未發行，並且某些記錄目的地在發行時可能不可用。 同時，您可以開啟支援票證以將記錄轉送至&#x200B;**Splunk**，如[AEM as a Cloud Service記錄](/help/implementing/developing/introduction/logging.md)中所述。
 
 擁有記錄廠商授權或託管記錄產品的客戶可以將AEM記錄(包括Apache/Dispatcher)和CDN記錄轉送至關聯的記錄目的地。 AEM as a Cloud Service支援下列記錄目的地：
 
@@ -169,7 +169,7 @@ aemcdn/
    2024-03-04T10:00:30.000-mno.log
 ```
 
-每個檔案包含多個json記錄專案，每個專案位於一行中。 記錄專案格式在[記錄專案](/help/implementing/developing/introduction/logging.md)中說明，每個記錄專案也包含以下[記錄專案格式](#log-format)區段中提及的其他屬性。
+每個檔案包含多個json記錄專案，每個專案位於一行中。 記錄專案格式在[AEM as a Cloud Service的記錄](/help/implementing/developing/introduction/logging.md)下描述，每個記錄專案也包含以下[記錄專案格式](#log-format)區段中提及的其他屬性。
 
 #### Azure Blob儲存體AEM記錄檔 {#azureblob-aem}
 
@@ -183,7 +183,7 @@ AEM記錄(包括Apache/Dispatcher)會顯示在具有以下命名慣例的資料�
 
 在每個資料夾下，將建立單一檔案並附加至其中。 客戶應負責處理和管理此檔案，以免檔案變得太大。
 
-請參閱[記錄文章](/help/implementing/developing/introduction/logging.md)中的記錄專案格式。 記錄專案也會包含以下[記錄專案格式](#log-formats)區段中提及的其他屬性。
+請參閱[AEM as a Cloud Service](/help/implementing/developing/introduction/logging.md)的記錄下的記錄專案格式。 記錄專案也會包含以下[記錄專案格式](#log-formats)區段中提及的其他屬性。
 
 
 ### Datadog {#datadog}
@@ -266,7 +266,7 @@ data:
 
 #### HTTPS CDN記錄 {#https-cdn}
 
-Web要求(POST)將持續傳送，其裝載json為記錄專案陣列，記錄專案格式在[記錄文章](/help/implementing/developing/introduction/logging.md#cdn-log)中說明。 以下[Log Entry Formats](#log-formats)區段中提及其他屬性。
+Web要求(POST)將持續傳送，其有json裝載（記錄專案陣列），其記錄專案格式說明於[AEM as a Cloud Service記錄](/help/implementing/developing/introduction/logging.md#cdn-log)。 以下[Log Entry Formats](#log-formats)區段中提及其他屬性。
 
 還有名稱為`sourcetype`的屬性，其設定為值`aemcdn`。
 
@@ -276,7 +276,7 @@ Web要求(POST)將持續傳送，其裝載json為記錄專案陣列，記錄專�
 
 #### HTTPS AEM記錄 {#https-aem}
 
-對於AEM記錄檔（包括apache/dispacher），網路要求(POST)將持續傳送，其為json裝載陣列，記錄專案格式為[記錄文章](/help/implementing/developing/introduction/logging.md)中所述的各種記錄專案格式。 以下[Log Entry Formats](#log-format)區段中提及其他屬性。
+對於AEM記錄檔（包括apache/dispacher），網路要求(POST)將持續傳送，其包含記錄專案陣列的json裝載，並具有各種記錄專案格式，如[AEM as a Cloud Service的記錄](/help/implementing/developing/introduction/logging.md)中所述。 以下[Log Entry Formats](#log-format)區段中提及其他屬性。
 
 也有名為`sourcetype`的屬性，其設定為下列其中一個值：
 
@@ -323,7 +323,7 @@ data:
 
 ## 記錄專案格式 {#log-formats}
 
-請參閱一般[記錄文章](/help/implementing/developing/introduction/logging.md)，瞭解每種個別記錄型別(CDN記錄檔和包括Apache/Dispatcher在內的AEM記錄檔)的格式。
+請參閱[AEM as a Cloud Service的記錄](/help/implementing/developing/introduction/logging.md)，以瞭解每個個別記錄型別(CDN記錄檔和包括Apache/Dispatcher在內的AEM記錄檔)的格式。
 
 由於來自多個程式和環境的記錄可能會轉發到相同的記錄目標，除了記錄文章中所述的輸出之外，以下屬性將包含在每個記錄專案中：
 
@@ -350,7 +350,7 @@ aem_tier: author
 
 有些組織會選擇限制記錄目的地可接收哪些流量。
 
-對於CDN記錄檔，您可以將IP位址加入允許清單，如[本文章](https://www.fastly.com/documentation/reference/api/utils/public-ip-list/)所述。 如果共用IP位址清單太大，請考慮傳送流量至(非Adobe) Azure Blob存放區，其中可寫入邏輯，以將專用IP的記錄傳送至其最終目的地。
+對於CDN記錄檔，您可以將IP位址加入允許清單，如[fastly檔案 — 公用IP清單](https://www.fastly.com/documentation/reference/api/utils/public-ip-list/)中所述。 如果共用IP位址清單太大，請考慮傳送流量至(非Adobe) Azure Blob存放區，其中可寫入邏輯，以將專用IP的記錄傳送至其最終目的地。
 
 針對AEM記錄檔(包括Apache/Dispatcher)，您可以設定記錄檔轉送以通過[進階網路](/help/security/configuring-advanced-networking.md)。 檢視以下三種進階網路型別的模式，這些型別使用選用的`port`引數以及`host`引數。
 

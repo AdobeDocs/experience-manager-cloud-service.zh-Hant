@@ -4,10 +4,10 @@ description: Adobe Experience Manager as a Cloud Service 的影像管理系統�
 exl-id: fb563dbd-a761-4d83-9da1-58f8e462b383
 feature: Security
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '1922'
-ht-degree: 100%
+source-wordcount: '1941'
+ht-degree: 93%
 
 ---
 
@@ -60,9 +60,9 @@ AEM 客戶應先有已佈建的組織，而在 IMS 佈建過程中，客戶即�
 1. 系統管理員在 Admin Console 中執行 IDP 設定，以設定單一登入。
 1. AEM 管理員可照常管理本機群組和權限。
 
-[此文件](https://helpx.adobe.com/tw/enterprise/using/set-up-identity.html)說明 Adobe 身分管理基本知識，包括 IDP 設定。
+AdobeIdentity Management基本知識（包括IDP組態）包含在[設定身分和單一登入](https://helpx.adobe.com/tw/enterprise/using/set-up-identity.html)中。
 
-[此文件](https://helpx.adobe.com/tw/enterprise/admin-guide.html)說明企業管理和 Admin Console 使用方式。
+企業管理和Admin Console使用方式在[歡迎使用企業和團隊管理指南](https://helpx.adobe.com/tw/enterprise/admin-guide.html)中說明。
 
 ### 在 Admin Console 中建立使用者 {#onboarding-users-in-admin-console}
 
@@ -96,27 +96,29 @@ AEM 客戶應先有已佈建的組織，而在 IMS 佈建過程中，客戶即�
 
 >[!NOTE]
 >
->搶鮮版 **2.4RC1** 提供建立動態群組的相關支援，可從[此處](https://github.com/adobe-apiplatform/user-sync.py/releases/tag/v2.4rc1)取得。
+>GitHub ](https://github.com/adobe-apiplatform/user-sync.py/releases/tag/v2.4rc1)上的[使用者同步工具v2.4rc1支援建立動態群組，並提供發行前版本&#x200B;**2.4RC1**。
 
 此版本的主要功能是能在 Admin Console 中動態對應新 LDAP 群組，以取得使用者成員資格，並且建立動態使用者群組。
 
-若需新群組功能的詳細資訊，請參閱[此處](https://adobe-apiplatform.github.io/user-sync.py/en/user-manual/advanced_configuration.html#additional-group-options)。
+如需有關新群組功能的詳細資訊，請參閱[Adobe使用者同步工具 — 其他群組選項](https://adobe-apiplatform.github.io/user-sync.py/en/user-manual/advanced_configuration.html#additional-group-options)。
 
 **使用者同步文件**
 
-如需更多詳細資訊，請參閱 [UST 文件](https://adobe-apiplatform.github.io/user-sync.py/en/)。
+請參閱：
 
-使用者同步工具必須透過[此處](https://adobe-apiplatform.github.io/umapi-documentation/en/UM_Authentication.html)的程序，註冊為 Adobe Developer 用戶端 UMAPI。
+* [UST檔案](https://adobe-apiplatform.github.io/user-sync.py/en/)
 
-Adobe Developer Console 文件位於[此處](https://developer.adobe.com/developer-console/)。
+* 使用者同步工具必須使用[API存取驗證](https://adobe-apiplatform.github.io/umapi-documentation/en/UM_Authentication.html)的程式註冊為Adobe Developer使用者端UMAPI
 
-[此文件](https://adobe-apiplatform.github.io/user-sync.py/en/)說明使用者同步工具所採用的 User Management API。
+* [Adobe Developer Console檔案](https://developer.adobe.com/developer-console/)
+
+* 使用者同步工具](https://adobe-apiplatform.github.io/user-sync.py/en/)所使用的[使用者管理API
 
 ## Adobe Experience as a Cloud Service 設定 {#aem-configuration}
 
 >[!NOTE]
 >
->佈建 AEM 環境和執行個體時，系統會自動設定所需的 AEM IMS 設定。不過，管理員可透過[此處](/help/implementing/deploying/overview.md)所述方法，依需求適度修改。
+>佈建 AEM 環境和執行個體時，系統會自動設定所需的 AEM IMS 設定。但是，管理員可以根據他們的需求修改它，請參閱[部署到AEM as a Cloud Service](/help/implementing/deploying/overview.md)。
 
 佈建 AEM 環境和執行個體時，系統會自動設定所需的 AEM IMS 設定。客戶管理員可依需求適度修改部分設定
 

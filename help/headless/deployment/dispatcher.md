@@ -4,10 +4,10 @@ description: Dispatcher 是 Adobe Experience Manager 發佈環境前面的快取
 feature: Headless, Dispatcher, GraphQL API
 exl-id: 78a20021-910f-4cf0-87bf-6e2223994f76
 role: Admin, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '212'
-ht-degree: 100%
+source-wordcount: '222'
+ht-degree: 90%
 
 ---
 
@@ -40,4 +40,4 @@ ht-degree: 100%
 /0061 { /type "allow" /method '(GET|POST|OPTIONS)' /url "/graphql/execute.json*" }
 ```
 
-可以使用 `GET` 要求持續性查詢，在 Dispatcher 和 CDN 層級快取回應。更多快取和快取失效的詳細資訊，請參閱[此處](/help/implementing/dispatcher/caching.md)。
+可以使用 `GET` 要求持續性查詢，在 Dispatcher 和 CDN 層級快取回應。有關快取和快取失效的更多詳細資訊，請參閱[AEM as a Cloud Service中的快取簡介](/help/implementing/dispatcher/caching.md)。

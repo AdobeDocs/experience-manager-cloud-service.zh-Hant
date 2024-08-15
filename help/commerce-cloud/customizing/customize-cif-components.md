@@ -4,9 +4,9 @@ description: 瞭解如何自訂AEM CIF核心元件。 本教學課程涵蓋如�
 feature: Commerce Integration Framework
 role: Admin
 exl-id: 4933fc37-5890-47f5-aa09-425c999f0c91
-source-git-commit: ef58cf5b216ef308cc65436f2eed2e500fb2bd96
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '2298'
+source-wordcount: '2300'
 ht-degree: 0%
 
 ---
@@ -175,7 +175,7 @@ AEM中顯示的產品和產品資料儲存在Adobe Commerce中。 接著，使�
 
    >[!TIP]
    >
-   > 請在此閱讀更多有關[Adobe Commerce GraphQL](https://devdocs.magento.com/guides/v2.4/graphql/index.html)的詳細檔案。
+   > 如需詳細資訊，請參閱[Adobe Commerce GraphQL](https://devdocs.magento.com/guides/v2.4/graphql/index.html)。
 
 ## 更新產品Teaser的Sling模型 {#updating-sling-model-product-teaser}
 
@@ -385,7 +385,7 @@ AEM元件的常見擴充功能是修改元件產生的標籤。 此編輯是透�
 
    在HTL中呼叫Sling模型方法時，會捨棄方法的`get`和`is`部分，且第一個字母會變成小寫。 因此，`isShowBadge()`會變成`.showBadge`，`isEcoFriendly`會變成`.ecoFriendly`。 根據從`.isEcoFriendly()`傳回的布林值，決定是否顯示`<span>Eco Friendly</span>`。
 
-   如需`data-sly-test`和其他[HTL區塊陳述式的詳細資訊，請參閱此處](https://experienceleague.adobe.com/docs/experience-manager-htl/content/specification.html)。
+   有關`data-sly-test`和其他HTL區塊陳述式的詳細資訊，請參閱[HTL規格](https://experienceleague.adobe.com/docs/experience-manager-htl/content/specification.html)。
 
 1. 從命令列終端機，使用Maven技能儲存變更並將更新部署到AEM：
 
@@ -479,7 +479,7 @@ AEM元件的常見擴充功能是修改元件產生的標籤。 此編輯是透�
 
 ## 恭喜 {#congratulations}
 
-您已自訂您的第一個AEM CIF元件！ 在此下載[完成的解決方案檔案](../assets/customize-cif-components/customize-cif-component-SOLUTION_FILES.zip)。
+您已自訂您的第一個AEM CIF元件！ 您可以[在此下載解決方案檔案](../assets/customize-cif-components/customize-cif-component-SOLUTION_FILES.zip)。
 
 ## 額外挑戰 {#bonus-challenge}
 

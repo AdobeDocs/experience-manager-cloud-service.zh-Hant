@@ -4,10 +4,10 @@ description: 了解部署至 AEM as a Cloud Service 的基礎知識和最佳做�
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
 role: Admin
-source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '3429'
-ht-degree: 98%
+source-wordcount: '3441'
+ht-degree: 96%
 
 ---
 
@@ -37,7 +37,7 @@ ht-degree: 98%
 >[!NOTE]
 >應用程式在本機電腦的行為與在 Adobe Cloud 上的行為有細微差異。在本機開發過程中必須考慮這些架構差異，在雲端基礎結構上部署時可能會導致不同的行為。由於這些差異，在生產環境中推出新的自訂程式碼之前，在開發和中繼環境中執行詳盡的測試非常重要。
 
-若要為內部版本開發自訂程式碼，應下載並安裝相關版本的 [AEM as a Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)。如需有關使用 AEM as a Cloud Service Dispatcher 工具的詳細資訊，請參閱[此頁面](/help/implementing/dispatcher/disp-overview.md)。
+若要為內部版本開發自訂程式碼，應下載並安裝相關版本的 [AEM as a Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)。如需使用AEM as a Cloud Service Dispatcher工具的其他資訊，請參閱[雲端中的Dispatcher](/help/implementing/dispatcher/disp-overview.md)。
 
 以下影片提供了有關如何將程式碼部署到 AEM as a Cloud Service 的概略說明：
 
@@ -56,7 +56,8 @@ ht-degree: 98%
 
 ![image](https://git.corp.adobe.com/storage/user/9001/files/e91b880e-226c-4d5a-93e0-ae5c3d6685c8) -->
 
-客戶透過 Cloud Manager 將自訂程式碼部署到雲端環境。Cloud Manager 將本機組裝的內容套件轉換為符合 Sling Feature Model 的成品，這就是在雲端環境中執行時描述 AEM as a Cloud Service 上的應用程式的方式。因此，在雲端環境中查看 [封裝管理員](/help/implementing/developing/tools/package-manager.md) 中的套件時，名稱包含「cp2fm」，並且轉換後套件已刪除所有中繼資料。它們無法互動，這表示它們無法下載、複製或開啟。轉換器的詳細文件位於[此處](https://github.com/apache/sling-org-apache-sling-feature-cpconverter)。
+客戶透過 Cloud Manager 將自訂程式碼部署到雲端環境。Cloud Manager 將本機組裝的內容套件轉換為符合 Sling Feature Model 的成品，這就是在雲端環境中執行時描述 AEM as a Cloud Service 上的應用程式的方式。因此，在雲端環境中查看 [封裝管理員](/help/implementing/developing/tools/package-manager.md) 中的套件時，名稱包含「cp2fm」，並且轉換後套件已刪除所有中繼資料。它們無法互動，這表示它們無法下載、複製或開啟。如需轉換器的詳細檔案，請參閱[
+GitHub](https://github.com/apache/sling-org-apache-sling-feature-cpconverter)上的sling-org-apache-sling-feature-cpconverter 。
 
 為 AEM as a Cloud Service 上的應用程式編寫的內容套件必須明確區分不可變內容和可變內容，Cloud Manager 僅安裝可變內容，同時輸出如下訊息：
 
@@ -252,7 +253,7 @@ above appears to be internal, to confirm with Brian -->
 
 ## 索引 {#indexes}
 
-在新版本可以處理流量之前，新的或修改的索引會導致額外的建立索引或重新索引步驟。如需有關 AEM as a Cloud Service 中索引管理的詳細資訊，請參閱[這篇文章](/help/operations/indexing.md)。您可以在 Cloud Manager 檢查建置頁面的建立索引狀態，並在新版本準備就緒可接收流量時收到通知。
+在新版本可以處理流量之前，新的或修改的索引會導致額外的建立索引或重新索引步驟。有關AEM as a Cloud Service中索引管理的詳細資訊，請參閱[內容搜尋和索引](/help/operations/indexing.md)。 您可以在 Cloud Manager 檢查建置頁面的建立索引狀態，並在新版本準備就緒可接收流量時收到通知。
 
 >[!NOTE]
 >
@@ -278,7 +279,7 @@ above appears to be internal, to confirm with Brian -->
 
 ### 索引變更 {#index-changes}
 
-如果變更了索引，需確保新版本在終止前持續使用其索引，同時舊版本則使用自己的已修改索引集。開發人員應遵循[本篇文章](/help/operations/indexing.md)中描述的索引管理技術。
+如果變更了索引，需確保新版本在終止前持續使用其索引，同時舊版本則使用自己的已修改索引集。開發人員應遵循[內容搜尋與索引](/help/operations/indexing.md)中所述的索引管理技術。
 
 ### 針對回復作業的保守編碼 {#conservative-coding-for-rollbacks}
 
@@ -333,4 +334,4 @@ Developers want to ensure that their custom code is performing well. For Cloud e
 
 ## 原始檔控制系統中的維護任務設定。 {#maintenance-tasks-configuration-in-source-control}
 
-維護任務設定必須保留在原始檔控制中，因為&#x200B;**工具 > 操作**&#x200B;畫面在雲端環境中不再可用。這樣做的好處是可以確保變更是有意保留的，而不是被動套用和被遺忘的。如需詳細資訊，請參閱[維護任務文章](/help/operations/maintenance.md)。
+維護任務設定必須保留在原始檔控制中，因為&#x200B;**工具 > 操作**&#x200B;畫面在雲端環境中不再可用。這樣做的好處是可以確保變更是有意保留的，而不是被動套用和被遺忘的。如需詳細資訊，請參閱AEM as a Cloud Service中的[維護工作](/help/operations/maintenance.md)。

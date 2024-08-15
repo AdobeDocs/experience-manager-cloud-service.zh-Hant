@@ -4,9 +4,9 @@ description: 瞭解如何設定清除API權杖（其可用於API呼叫），從A
 feature: CDN Cache
 exl-id: 4d091677-b817-4aeb-b131-7a5407ace3e0
 role: Admin
-source-git-commit: 3b55f3094b7154b7723ef7ae2230d7ae01eb4abc
+source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
 workflow-type: tm+mt
-source-wordcount: '437'
+source-wordcount: '433'
 ht-degree: 1%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 1%
 # 清除內容傳遞網路快取 {#cdn-purge-cache}
 
 整個清除會從AdobeCDN快取中移除物件，導致未來的請求以快取遺失的形式繼續前往來源，而不是從快取提供服務。
-AEM as a Cloud Service可讓您設定清除API Token，然後將其用於清除API呼叫。 閱讀[設定CDN認證和驗證文章](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token)，瞭解如何使用Cloud Manager設定管道驗證指示詞設定此權杖。
+AEM as a Cloud Service可讓您設定清除API Token，然後將其用於清除API呼叫。 請參閱[設定CDN認證和驗證](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token)，瞭解如何使用Cloud Manager設定管道驗證指示詞來設定此權杖。
 
 有三個支援的清除變數：
 
@@ -75,4 +75,4 @@ curl
 
 ## 與Apache/Dispatcher層的互動 {#apache-layer}
 
-如[內容傳遞流程文章](/help/implementing/dispatcher/overview.md)所述，如果快取已過期，CDN會從Apache/Dispatcher階層擷取內容。 這代表在CDN上清除資源之前，您應該確保Dispatcher上也有內容的新版本。 如需詳細資訊，另請參閱[Dispatcher快取失效](/help/implementing/dispatcher/caching.md#disp)。
+如[內容傳遞流程](/help/implementing/dispatcher/overview.md)中所述，如果快取已過期，CDN會從Apache/Dispatcher階層擷取內容。 這代表在CDN上清除資源之前，您應該確保Dispatcher上也有內容的新版本。 如需詳細資訊，另請參閱[Dispatcher快取失效](/help/implementing/dispatcher/caching.md#disp)。

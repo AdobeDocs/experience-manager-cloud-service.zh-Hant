@@ -5,9 +5,9 @@ exl-id: a991e710-a974-419f-8709-ad86c333dbf8
 solution: Experience Manager Sites
 feature: Authoring, Personalization
 role: User
-source-git-commit: 54159c25b60277268ade16b437891f268873fecf
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '1340'
+source-wordcount: '1343'
 ht-degree: 1%
 
 ---
@@ -129,7 +129,7 @@ AEM as a Cloud Service會啟用Cookie式粘性工作階段，確保每個請求�
 
 ## 許可權（已關閉的使用者群組） {#permissions-closed-user-groups}
 
-Publish層級存取原則(也稱為封閉式使用者群組(CUG))在AEM作者中定義為[此處說明](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/cug.html#applying-your-closed-user-group-to-content-pages)。 若要限制某些使用者存取網站的某些區段或頁面，請視需要使用AEM作者套用CUG （如此處所述），並將它們復寫至發佈階層。
+Publish層存取原則(也稱為封閉式使用者群組(CUG))是在AEM作者中定義的，請參閱[建立封閉式使用者群組](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/cug.html#applying-your-closed-user-group-to-content-pages)。 若要限制某些使用者存取網站的某些區段或頁面，請視需要使用AEM作者套用CUG （如此處所述），並將它們復寫至發佈階層。
 
 * 如果使用者透過使用SAML向身分提供者(IdP)進行驗證來登入，驗證處理常式將識別使用者的群組成員資格（應與發佈層上的CUG相符），並透過存放庫記錄保留使用者與群組之間的關聯
 * 如果在沒有IdP整合的情況下完成登入，則自訂程式碼可以套用相同的存放庫結構關係。

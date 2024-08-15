@@ -4,9 +4,9 @@ description: 瞭解如何在自行託管的儲存體(例如Amazon S3或Azure Blo
 feature: Dispatcher
 exl-id: 1ecc374c-b8ee-41f5-a565-5b36445d3c7c
 role: Admin
-source-git-commit: 3a10a0b8c89581d97af1a3c69f1236382aa85db0
+source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
 workflow-type: tm+mt
-source-wordcount: '365'
+source-wordcount: '364'
 ht-degree: 1%
 
 ---
@@ -22,9 +22,9 @@ ht-degree: 1%
 
 1. 參照下方的語法區段，建立名為`cdn.yaml`或類似的檔案。
 
-1. 將檔案放置在名為&#x200B;*config*&#x200B;或類似名稱的頂層資料夾之下，如[config管道文章](/help/operations/config-pipeline.md#folder-structure)所述。
+1. 將檔案放置在名為&#x200B;*config*&#x200B;或類似名稱的頂層資料夾之下，如[使用設定管道](/help/operations/config-pipeline.md#folder-structure)中所述。
 
-1. 在Cloud Manager中建立設定管道，如[設定管道文章](/help/operations/config-pipeline.md#managing-in-cloud-manager)所述。
+1. 在Cloud Manager中建立設定管道，如[使用設定管道](/help/operations/config-pipeline.md#managing-in-cloud-manager)中所述。
 
 1. 部署設定。
 
@@ -47,7 +47,7 @@ data:
       cssUrl: https://www.example.com/error.css
       jsUrl: https://www.example.com/error.js
 ```
-如需資料節點上方屬性的說明，請參閱[設定管道文章](/help/operations/config-pipeline.md#common-syntax)。 kind屬性值應該是&#x200B;*CDN*，且`version`屬性應該設定為&#x200B;*1*。
+請參閱[使用設定管道](/help/operations/config-pipeline.md#common-syntax)，以取得資料節點上方屬性的說明。 kind屬性值應該是&#x200B;*CDN*，且`version`屬性應該設定為&#x200B;*1*。
 
 
 | 名稱 | 允許的屬性 | 含義 |

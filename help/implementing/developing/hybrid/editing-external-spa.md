@@ -4,7 +4,7 @@ description: 本檔案說明將獨立SPA上傳到AEM執行個體、新增內容�
 exl-id: 7978208d-4a6e-4b3a-9f51-56d159ead385
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
 source-wordcount: '2374'
 ht-degree: 1%
@@ -362,7 +362,7 @@ JCR](assets/container-jcr-structure.png)中的![容器位置
 
 ## 框架限制 {#framework-limitations}
 
-RemotePage元件預期實作會提供資產資訊清單，例如此處](https://github.com/shellscape/webpack-manifest-plugin)所找到的資產[。 不過，RemotePage元件僅通過測試可用於React架構（以及透過remote-page-next元件的Next.js），因此不支援從其他架構(例如Angular)從遠端載入應用程式。
+RemotePage元件預期實作會提供資產資訊清單，例如GitHub](https://github.com/shellscape/webpack-manifest-plugin)上的[webpack-manifest-plugin。 不過，RemotePage元件僅通過測試可用於React架構（以及透過remote-page-next元件的Next.js），因此不支援從其他架構(例如Angular)從遠端載入應用程式。
 
 ## 其他資源 {#additional-resources}
 

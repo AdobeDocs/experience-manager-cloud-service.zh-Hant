@@ -12,7 +12,7 @@ kt: 3456
 thumbnail: 3456-style-cif.jpg
 exl-id: 521c1bb8-7326-4ee8-aba3-f386727e2b34
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
 source-wordcount: '2342'
 ht-degree: 0%
@@ -179,7 +179,7 @@ ht-degree: 0%
 
    這些使用者端程式庫不是由`ui.frontend`模組管理。 這些使用者端資料庫會包含由Adobe提供的CSS和JavaScript相依性。 這些使用者端資料庫的定義位於每個資料夾下方的`.content.xml`檔案中。
 
-   **clientlib-base** — 空白的使用者端程式庫，僅嵌入[AEM核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hant)的必要相依性。 類別是`venia.base`。
+   **clientlib-base** — 空白的使用者端程式庫，僅嵌入[AEM核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-hant)的必要相依性。 類別是`venia.base`。
 
    **clientlib-cif** — 空白的使用者端程式庫，僅嵌入[AEM CIF核心元件](https://github.com/adobe/aem-core-cif-components)的必要相依性。 類別是`venia.cif`。
 
@@ -436,7 +436,7 @@ webpack-dev-server會代理來自AEM本機執行個體的影像和部分CSS/Java
 
    ![Webpack Dev Server Teaser變更](../assets/style-cif-component/webpack-dev-server-teaser-changes.png)
 
-   不過，這些變更尚未部署至AEM。 您可以在此下載[解決方案檔案](../assets/style-cif-component/_productteaser.scss)。
+   不過，這些變更尚未部署至AEM。 您可以[在此下載解決方案檔案](../assets/style-cif-component/_productteaser.scss)。
 
 1. 從命令列終端機，使用您的Maven技能將更新部署到AEM：
 

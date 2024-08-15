@@ -4,9 +4,9 @@ description: 瞭解AEM as a Cloud Service中的快取基本概念
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '2894'
+source-wordcount: '2897'
 ht-degree: 1%
 
 ---
@@ -245,7 +245,7 @@ AEM層預設不會快取blob內容。
 
 如果您希望停用此行為，請提交支援票證。
 
-對於2023年10月之前建立的環境，建議將Dispatcher設定的`ignoreUrlParams`屬性設定為記錄在此處](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#ignoring-url-parameters)的[。
+對於2023年10月之前建立的環境，建議設定Dispatcher設定的`ignoreUrlParams`屬性；請參閱[設定Dispatcher — 忽略URL引數](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#ignoring-url-parameters)。
 
 忽略行銷引數有兩種可能性。 （其中第一個偏好使用查詢引數來忽略防快取）：
 

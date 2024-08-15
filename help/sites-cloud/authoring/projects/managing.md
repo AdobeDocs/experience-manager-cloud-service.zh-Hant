@@ -5,9 +5,9 @@ exl-id: be4616e7-18bc-4b2d-89f6-d04178ac7f3a
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '875'
+source-wordcount: '876'
 ht-degree: 11%
 
 ---
@@ -92,7 +92,7 @@ AEM提供這些立即可用的範本，供您在建立專案時選擇：
 
    ![將專案新增至圖磚](/help/sites-cloud/authoring/assets/project-workflows.png)
 
-1. 新增專案至圖磚，就像建立圖磚時一樣。 專案拼貼的說明位於[這裡](/help/sites-cloud/authoring/projects/overview.md#project-tiles)。 在此範例中，已新增另一個工作流程。
+1. 新增專案至圖磚，就像建立圖磚時一樣。 如需詳細資訊，請參閱[專案拼貼](/help/sites-cloud/authoring/projects/overview.md#project-tiles)。 在此範例中，已新增另一個工作流程。
 
 ### 開啟拼貼 {#opening-a-tile}
 

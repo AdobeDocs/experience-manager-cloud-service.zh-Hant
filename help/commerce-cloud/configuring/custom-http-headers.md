@@ -4,9 +4,9 @@ description: 瞭解如何設定將傳送至商務引擎的自訂HTTP標頭，以
 exl-id: 2cef5d4b-45f6-4d72-a24b-67ca53d9057d
 feature: Commerce Integration Framework
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '279'
+source-wordcount: '284'
 ht-degree: 3%
 
 ---
@@ -36,7 +36,7 @@ ht-degree: 3%
 
 ## 限制 {#restrictions}
 
-雖然此服務可定義任何標頭名稱，包括標準名稱，但無法加以設定。 換言之，您無法使用此功能覆寫標準HTTP標頭。 [這裡](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers)有受限制的標頭名稱清單。 除了這些以外，還有兩個標頭無法使用：
+雖然此服務可定義任何標頭名稱，包括標準名稱，但無法加以設定。 換言之，您無法使用此功能覆寫標準HTTP標頭。 在[mdn網頁檔案 — HTTP標題](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers)下可找到限制的標題名稱清單。 除了這些以外，還有兩個標頭無法使用：
 
 * &quot;Store&quot; - CIF用來識別Adobe Commerce存放區
 * &quot;Preview-Version&quot; — 由CIF用於擷取分階段產品

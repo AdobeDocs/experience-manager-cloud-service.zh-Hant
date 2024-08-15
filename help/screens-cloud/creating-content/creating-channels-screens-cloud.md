@@ -4,9 +4,9 @@ description: 本頁面說明如何在Screens中建立和管理管道as a Cloud S
 exl-id: 3b0bae7a-4a45-485a-ab04-604510ff6578
 feature: Authoring Screens
 role: Admin, Developer, User
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '1103'
+source-wordcount: '1102'
 ht-degree: 1%
 
 ---
@@ -95,7 +95,7 @@ ht-degree: 1%
 
 此功能可讓您定義頻道的預設啟用排程，並預設用於顯示的每個指派。 此方法可讓繁瑣的排程定義不需要重複。
 
-1. 從[這裡](https://experience.adobe.com/screens)瀏覽至Screens服務提供者。
+1. 導覽至[Screens服務提供者](https://experience.adobe.com/screens)。
 
 ### 建立管道的預設指派詳細資料 {#create-default}
 

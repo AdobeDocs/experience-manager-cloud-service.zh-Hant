@@ -4,16 +4,16 @@ description: Adobe Experience Manager as a Cloud Service 的同網站 Cookie 支
 exl-id: 2cec7202-4450-456f-8e62-b7ed3791505c
 feature: Security
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
 workflow-type: tm+mt
-source-wordcount: '278'
-ht-degree: 100%
+source-wordcount: '280'
+ht-degree: 96%
 
 ---
 
 # Adobe Experience Manager as a Cloud Service 的同網站 Cookie 支援 {#same-site-cookie-support-for-adobe-experience-manager-as-a-cloud-service}
 
-從 80 版本開始，Chrome 和之後的 Safari 引入了一種新的 cookie 安全性模型。此模式旨在透過稱為 `SameSite` 的設定在第三方網站的 Cookie 可用性方面引入安全性控制項。如需詳細資訊，請參閱本[文章](https://web.dev/articles/samesite-cookies-explained)。
+從 80 版本開始，Chrome 和之後的 Safari 引入了一種新的 cookie 安全性模型。此模式旨在透過稱為 `SameSite` 的設定在第三方網站的 Cookie 可用性方面引入安全性控制項。如需詳細資訊，請參閱[web.dev — 說明的SameSite Cookie](https://web.dev/articles/samesite-cookies-explained)。
 
 此設定的預設值 (`SameSite=Lax`) 可能會導致 AEM 執行個體或服務之間的驗證無法運作。這是因為這些服務的網域或 URL 結構可能不受此 cookie 原則的約束。
 

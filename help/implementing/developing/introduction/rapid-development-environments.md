@@ -4,9 +4,9 @@ description: 瞭解如何使用快速開發環境在雲端環境中進行快速�
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 85dc92e1adc11a2ee513b7a43e0945b18b2f4790
+source-git-commit: 1289da67452be7fc0fa7f3126d2a3dbf051aa9b5
 workflow-type: tm+mt
-source-wordcount: '4215'
+source-wordcount: '4241'
 ht-degree: 4%
 
 ---
@@ -153,7 +153,7 @@ Setup the CLI configuration necessary to use the RDE commands.
 
    `aio config:set cloudmanager_orgid 4E03EQC05D34GL1A0B49421C@AdobeOrg`
 
-   * 您可以使用這裡記錄的方法[來查詢您自己的組織ID。](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html#concept_EA8AEE5B02CF46ACBDAD6A8508646255)
+   * 您可以使用[檢視您的組織ID](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html#concept_EA8AEE5B02CF46ACBDAD6A8508646255)下記錄的方法查詢您自己的組織ID。
 
 1. 接下來，設定您的程式ID：
 
@@ -167,7 +167,7 @@ Setup the CLI configuration necessary to use the RDE commands.
 
    `aio login`
 
-   這些步驟需要您成為Cloud Manager **開發人員 — Cloud Service**&#x200B;產品設定檔的成員。 如需詳細資訊，請參閱[此頁面](/help/journey-onboarding/assign-profiles-cloud-manager.md#assign-developer)。
+   這些步驟需要您成為Cloud Manager **開發人員 — Cloud Service**&#x200B;產品設定檔的成員。 檢視[將團隊成員指派給Cloud Manager產品設定檔 — 指派開發人員產品設定檔](/help/journey-onboarding/assign-profiles-cloud-manager.md#assign-developer)以取得詳細資訊。
 
 如需詳細資訊和示範，請觀看教學課程影片[如何設定RDE (06:24)](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup.html)。
 </details>
@@ -1005,7 +1005,7 @@ Forms開發人員可以使用AEM FormsCloud Service快速開發環境來快速�
 
 ### 有關許可權不足的錯誤 {#insufficient-permissions}
 
-若要使用RDE外掛程式，您必須是Cloud Manager **開發人員 — Cloud Service**&#x200B;產品設定檔的成員。 如需詳細資訊，請參閱[此頁面](/help/journey-onboarding/assign-profiles-cloud-manager.md#assign-developer)。
+若要使用RDE外掛程式，您必須是Cloud Manager **開發人員 — Cloud Service**&#x200B;產品設定檔的成員。 檢視[將團隊成員指派給Cloud Manager產品設定檔 — 指派開發人員產品設定檔](/help/journey-onboarding/assign-profiles-cloud-manager.md#assign-developer)以取得詳細資訊。
 
 或者，如果您可以透過執行此命令登入開發人員主控台，則可以確認您擁有此開發人員角色：
 

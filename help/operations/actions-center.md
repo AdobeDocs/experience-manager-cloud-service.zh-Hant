@@ -4,10 +4,10 @@ description: 善用行動中心，方便處理事件和其他重要資訊
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
 feature: Operations
 role: Admin
-source-git-commit: 22d5975a0c4ee180bbcda906b035d306a352b752
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
 source-wordcount: '1045'
-ht-degree: 56%
+ht-degree: 54%
 
 ---
 
@@ -30,7 +30,7 @@ AEM as Cloud Service 在發生需要立即採取行動的嚴重事件時會傳�
 
 ## 設定 {#configuration}
 
-若要配置接收行動中心的電子郵件通知，請建立[本文](/help/journey-onboarding/notification-profiles.md)所描述的產品設定檔，即「事件通知 - Cloud Service」和「主動通知 - Cloud Service」。還要指派貴組織的適當 Adobe ID 至這些設定檔。這可讓管理員確定哪些使用者有資格接收這些電子郵件通知。
+若要設定接收動作中心電子郵件通知，請依照[通知設定檔](/help/journey-onboarding/notification-profiles.md)下所述建立產品設定檔，即事件通知 — Cloud Service和主動通知 — Cloud Service。 還要指派貴組織的適當 Adobe ID 至這些設定檔。這可讓管理員確定哪些使用者有資格接收這些電子郵件通知。
 
 >[!NOTE]
 >行動中心電子郵件通知在組織層級執行，因此訂閱者將收到有關這些計畫中的所有計畫和環境通知。
@@ -65,7 +65,7 @@ AEM as a Cloud Service 有多種類型的通知，但只有一部分出現在行
 |---------------------------------|-----------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------|
 | 操作事件 | 需要立即採取行動的嚴重事件 | 指派給「事件通知 - Cloud Service」產品設定檔的使用者 | X |
 | 主動建議 | 應該計畫的最佳化 | 指派給「主動通知 - Cloud Service」產品設定檔的使用者 | X |
-| Cloud Manager 管道狀態 | 有關管道狀態的資訊 | 在[Experience Cloud偏好設定](https://experience.adobe.com/preferences)中選取「其他」核取方塊的使用者（具有企業所有者、方案管理員或部署管理員角色），如下所述[此處](/help/implementing/cloud-manager/notifications.md)。 |                           |
+| Cloud Manager 管道狀態 | 有關管道狀態的資訊 | 在[Experience Cloud偏好設定](https://experience.adobe.com/preferences)中選取「其他」核取方塊的使用者（具有企業所有者、方案管理員或部署管理員角色），請參閱[通知](/help/implementing/cloud-manager/notifications.md)。 |                           |
 
 ## 支援的通知類型 {#supported-notification-types}
 

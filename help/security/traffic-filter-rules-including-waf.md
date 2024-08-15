@@ -4,10 +4,10 @@ description: 設定流量篩選規則，包括 Web 應用程式防火牆 (WAF) �
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
-source-git-commit: 7ce397b2564373a006d7f413409d29265c74d768
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '3932'
-ht-degree: 100%
+source-wordcount: '3937'
+ht-degree: 98%
 
 ---
 
@@ -101,7 +101,7 @@ Adobe 邀請您透過傳送電子郵件至：**aemcs-waf-adopter@adobe.com**，�
          action: block
    ```
 
-   有關  `data`節點上方屬性的描述，請參閱[設定管道文章](/help/operations/config-pipeline.md#common-syntax)。`kind` 屬性值應設定為 *CDN*，版本應設定為 `1`。
+   請參閱[使用設定管道](/help/operations/config-pipeline.md#common-syntax)，以取得`data`節點之上屬性的說明。 `kind` 屬性值應設定為 *CDN*，版本應設定為 `1`。
 
 
 1. 如果 WAF 規則已獲得授權，則應在 Cloud Manager 中啟用該功能 (如下所述)，對於新的和現有的計畫案例都適用。
@@ -110,7 +110,7 @@ Adobe 邀請您透過傳送電子郵件至：**aemcs-waf-adopter@adobe.com**，�
 
    1. 若要在現有的計畫上設定 WAF，[編輯您的計畫](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)並在「**安全性**」標籤隨時取消勾選或勾選 **WAF-DDOS** 選項。
 
-1. 在 Cloud Manager 中建立設定管道，依照此文章中所述執行：[設定管道文章。](/help/operations/config-pipeline.md#managing-in-cloud-manager)管道將參考頂層 `config` 資料夾，並將 `cdn.yaml` 檔案放置在下面的某個位置，如[此處所述](/help/operations/config-pipeline.md#folder-structure)。
+1. 在 Cloud Manager 中建立設定管道，依照此文章中所述執行：[設定管道文章。](/help/operations/config-pipeline.md#managing-in-cloud-manager)管道將參照最上層`config`資料夾，並將`cdn.yaml`檔案放在下方，請參閱[使用設定管道](/help/operations/config-pipeline.md#folder-structure)。
 
 ## 流量篩選規則語法 {#rules-syntax}
 
@@ -215,7 +215,7 @@ when:
   in: [ "192.168.0.0/24" ]
 ```
 
-* Adobe 建議使用 [regex101](https://regex101.com/)，以及在搭配規則運算式時使用 [Fastly Fiddle](https://fiddle.fastly.dev/)。您也可以在本[文章](https://www.fastly.com/documentation/reference/vcl/regex/#best-practices-and-common-mistakes)中了解更多有關 Fastly 如何處理規則運算式的資訊。
+* Adobe 建議使用 [regex101](https://regex101.com/)，以及在搭配規則運算式時使用 [Fastly Fiddle](https://fiddle.fastly.dev/)。您也可以進一步瞭解Fastly如何處理[fastly檔案中的regex - Fastly VCL](https://www.fastly.com/documentation/reference/vcl/regex/#best-practices-and-common-mistakes)中的規則運算式。
 
 
 ### 動作結構 {#action-structure}

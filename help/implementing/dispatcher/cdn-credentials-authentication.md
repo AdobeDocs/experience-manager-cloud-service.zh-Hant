@@ -4,9 +4,9 @@ description: 瞭解如何在設定檔案中宣告規則，再使用Cloud Manager
 feature: Dispatcher
 exl-id: a5a18c41-17bf-4683-9a10-f0387762889b
 role: Admin
-source-git-commit: 3a10a0b8c89581d97af1a3c69f1236382aa85db0
+source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
 workflow-type: tm+mt
-source-wordcount: '1271'
+source-wordcount: '1266'
 ht-degree: 2%
 
 ---
@@ -30,7 +30,7 @@ Adobe提供的CDN具有多項功能和服務，部分功能和服務需仰賴憑
 
 在設定過程中，AdobeCDN和客戶CDN必須同意`X-AEM-Edge-Key` HTTP標頭的值。 此值是在每個請求中在客戶CDN處設定的，之後再傳送至AdobeCDN，由其驗證值是否如預期般符合，因此它可以信任其他HTTP標頭，包括有助於將請求傳送至適當AEM來源的那些標頭。
 
-*X-AEM-Edge-Key*&#x200B;值由名為`cdn.yaml`或類似檔案中的`edgeKey1`和`edgeKey2`屬性參考，位於最上層`config`資料夾的某處。 閱讀[設定管道文章](/help/operations/config-pipeline.md#folder-structure)，以瞭解資料夾結構以及如何部署設定的詳細資訊。
+*X-AEM-Edge-Key*&#x200B;值由名為`cdn.yaml`或類似檔案中的`edgeKey1`和`edgeKey2`屬性參考，位於最上層`config`資料夾的某處。 閱讀[使用設定管道](/help/operations/config-pipeline.md#folder-structure)，以取得資料夾結構以及如何部署設定的詳細資訊。
 
 語法如下所述：
 
@@ -54,7 +54,7 @@ data:
           authenticator: edge-auth
 ```
 
-請參閱[設定管道文章](/help/operations/config-pipeline.md#common-syntax)，瞭解`data`節點上方屬性的說明。 `kind`屬性值應該是&#x200B;*CDN*，且`version`屬性應該設定為`1`。
+請參閱[使用設定管道](/help/operations/config-pipeline.md#common-syntax)，以取得`data`節點之上屬性的說明。 `kind`屬性值應該是&#x200B;*CDN*，且`version`屬性應該設定為`1`。
 
 其他屬性包括：
 
@@ -76,7 +76,7 @@ data:
 
 ## 清除API Token {#purge-API-token}
 
-客戶可以使用宣告的清除API權杖[清除CDN快取](/help/implementing/dispatcher/cdn-cache-purge.md)。 Token是在名為`cdn.yaml`或類似的檔案中宣告的，位於最上層`config`資料夾的某處。 閱讀[設定管道文章](/help/operations/config-pipeline.md#folder-structure)，以瞭解資料夾結構以及如何部署設定的詳細資訊。
+客戶可以使用宣告的清除API權杖[清除CDN快取](/help/implementing/dispatcher/cdn-cache-purge.md)。 Token是在名為`cdn.yaml`或類似的檔案中宣告的，位於最上層`config`資料夾的某處。 閱讀[使用設定管道](/help/operations/config-pipeline.md#folder-structure)，以取得資料夾結構以及如何部署設定的詳細資訊。
 
 語法如下所述：
 
@@ -100,7 +100,7 @@ data:
            authenticator: purge-auth
 ```
 
-請參閱[設定管道文章](/help/operations/config-pipeline.md#common-syntax)，瞭解`data`節點上方屬性的說明。 `kind`屬性值應該是&#x200B;*CDN*，且`version`屬性應該設定為`1`。
+請參閱[使用設定管道](/help/operations/config-pipeline.md#common-syntax)，以取得`data`節點之上屬性的說明。 `kind`屬性值應該是&#x200B;*CDN*，且`version`屬性應該設定為`1`。
 
 其他屬性包括：
 
@@ -156,7 +156,7 @@ data:
            authenticator: my-basic-authenticator
 ```
 
-請參閱[設定管道文章](/help/operations/config-pipeline.md#common-syntax)，瞭解`data`節點上方屬性的說明。 `kind`屬性值應該是&#x200B;*CDN*，且`version`屬性應該設定為`1`。
+請參閱[使用設定管道](/help/operations/config-pipeline.md#common-syntax)，以取得`data`節點之上屬性的說明。 `kind`屬性值應該是&#x200B;*CDN*，且`version`屬性應該設定為`1`。
 
 此外，語法包括：
 

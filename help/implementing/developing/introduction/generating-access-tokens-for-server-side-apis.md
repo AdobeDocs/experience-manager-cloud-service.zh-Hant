@@ -4,7 +4,7 @@ description: 瞭解如何產生安全JWT權杖，以促進第三方伺服器與A
 exl-id: 20deaf8f-328e-4cbf-ac68-0a6dd4ebf0c9
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
 source-wordcount: '2089'
 ht-degree: 0%
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 ## 伺服器對伺服器流量 {#the-server-to-server-flow}
 
-具有IMS組織管理員角色以及AEM Author上的AEM使用者或AEM管理員產品設定檔成員的使用者，可以從AEM as a Cloud Service產生一組認證。 每個認證都是JSON裝載，其中包含憑證（公開金鑰）、私密金鑰以及包含`clientId`和`clientSecret`的技術帳戶。 這些認證稍後可由具有AEM as a Cloud Service環境管理員角色的使用者擷取，並應安裝在非AEM伺服器上，且仔細視為機密金鑰。 此JSON格式檔案包含與AEM as a Cloud Service API整合所需的所有資料。 資料可用來建立已簽署的JWT權杖，該權杖會與AdobeIdentity Management服務(IMS)交換以取得IMS存取權杖。 然後，可將此存取權杖用作持有者驗證權杖，以向AEM as a Cloud Service提出請求。 憑證中的憑證預設在一年後到期，但可視需要重新整理，如[此處](#refresh-credentials)所述。
+具有IMS組織管理員角色以及AEM Author上的AEM使用者或AEM管理員產品設定檔成員的使用者，可以從AEM as a Cloud Service產生一組認證。 每個認證都是JSON裝載，其中包含憑證（公開金鑰）、私密金鑰以及包含`clientId`和`clientSecret`的技術帳戶。 這些認證稍後可由具有AEM as a Cloud Service環境管理員角色的使用者擷取，並應安裝在非AEM伺服器上，且仔細視為機密金鑰。 此JSON格式檔案包含與AEM as a Cloud Service API整合所需的所有資料。 資料可用來建立已簽署的JWT權杖，該權杖會與AdobeIdentity Management服務(IMS)交換以取得IMS存取權杖。 然後，可將此存取權杖用作持有者驗證權杖，以向AEM as a Cloud Service提出請求。 認證中的憑證預設在一年後到期，但可在需要時重新整理，請參閱[重新整理認證](#refresh-credentials)。
 
 伺服器對伺服器流程涉及以下步驟：
 

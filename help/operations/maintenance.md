@@ -4,9 +4,9 @@ description: 瞭解AEM as a Cloud Service中的維護任務以及如何進行設
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 feature: Operations
 role: Admin
-source-git-commit: 3a10a0b8c89581d97af1a3c69f1236382aa85db0
+source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
 workflow-type: tm+mt
-source-wordcount: '2055'
+source-wordcount: '2053'
 ht-degree: 8%
 
 ---
@@ -222,11 +222,11 @@ ht-degree: 8%
 
 **1**&#x200B;建立名為`mt.yaml`或類似的檔案。
 
-**2**&#x200B;將檔案放置在名為`config`或類似名稱的頂層資料夾下，如[設定管道文章所述。](/help/operations/config-pipeline.md#folder-structure)
+**2**&#x200B;將檔案放置在名為`config`或類似名稱的頂層資料夾下，如[使用設定管道](/help/operations/config-pipeline.md#folder-structure)中所述。
 
 **3** — 在組態檔中宣告屬性，包括：
 
-* 資料節點上方的一些屬性 — 如需說明，請參閱[設定管道文章](/help/operations/config-pipeline.md#common-syntax)。 `kind`屬性值應該是&#x200B;*MaintenanceTasks*，而且版本應該設定為&#x200B;*1*。
+* 資料節點上方的一些屬性 — 如需相關說明，請參閱[使用設定管道](/help/operations/config-pipeline.md#common-syntax)。 `kind`屬性值應該是&#x200B;*MaintenanceTasks*，而且版本應該設定為&#x200B;*1*。
 
 * 同時具有`versionPurge`和`auditLogPurge`物件的資料物件。
 

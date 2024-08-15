@@ -4,7 +4,7 @@ description: 下列教學課程將逐步說明為AEM Screens建立自訂元件�
 exl-id: fe8e7bf2-6828-4a5a-b650-fb3d9c172b97
 feature: Developing Screens
 role: Admin, Developer, User
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
 source-wordcount: '2042'
 ht-degree: 2%
@@ -35,7 +35,7 @@ ht-degree: 2%
 
 ## 專案設定 {#project-setup}
 
-Screens專案的原始程式碼通常會作為多模組Maven專案來管理。 為了加快教學課程，已使用[AEM Project Archetype 13](https://github.com/adobe/aem-project-archetype)預先產生專案。 有關[使用Maven AEM Project Archetype建立專案的更多詳細資訊，請參閱此處](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html)。
+Screens專案的原始程式碼通常會作為多模組Maven專案來管理。 為了加快教學課程，已使用[AEM Project Archetype 13](https://github.com/adobe/aem-project-archetype)預先產生專案。 如需使用Maven AEM專案原型建立專案的詳細資訊，請參閱[專案設定](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html)。
 
 1. 使用[CRX Package Manager](http://localhost:4502/crx/packmgr/index.jsp)下載並安裝下列套件：
 

@@ -4,9 +4,9 @@ description: 禁止透過 Sling 模型匯出工具序列化 ResourceResolvers
 exl-id: 63972c1e-04bd-4eae-bb65-73361b676687
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
 workflow-type: tm+mt
-source-wordcount: '521'
+source-wordcount: '529'
 ht-degree: 5%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 5%
 
 Sling模型匯出工具功能允許將Sling模型物件序列化為JSON格式。 此功能廣泛使用，因為它可讓SPA （單頁應用程式）輕鬆從AEM存取資料。 在實施端，會使用Jacson資料庫資料庫來序列化這些物件。
 
-序列化是遞回作業。 從「根物件」開始，它會遞回地反複執行所有合格的物件，並將它們及其子件序列化。 您可以找到在[本檔案](https://www.baeldung.com/jackson-field-serializable-deserializable-or-not)中序列化哪些欄位的說明。
+序列化是遞回作業。 從「根物件」開始，它會遞回地反複執行所有合格的物件，並將它們及其子件序列化。 您可以在文章[Jackson — 決定哪些欄位要序列化/還原序列化](https://www.baeldung.com/jackson-field-serializable-deserializable-or-not)中找到哪些欄位的描述。
 
 此方法會將所有型別的物件序列化為JSON，自然也可以序列化Sling `ResourceResolver`物件（如果序列化規則涵蓋此物件）。 這是問題所在，因為`ResourceResolver`服務（因此也是代表它的服務物件）包含潛在的敏感資訊，這些資訊不應公開。 例如：
 

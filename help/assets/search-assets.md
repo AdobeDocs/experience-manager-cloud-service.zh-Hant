@@ -6,9 +6,9 @@ mini-toc-levels: 1
 feature: Selectors, Adobe Stock, Asset Distribution, Asset Management, Asset Processing
 role: User, Admin
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
 workflow-type: tm+mt
-source-wordcount: '5503'
+source-wordcount: '5506'
 ht-degree: 6%
 
 ---
@@ -87,7 +87,7 @@ Experience Manager Assets預設會顯示兩個屬性的Facet計數：
 
 如果您需要切換到先前的行為（`statistical`模式），請參閱[內容搜尋和索引](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html)以建立`damAssetLucene-9`索引的自訂版本。 由於對大型結果集的搜尋回應時間造成影響，Adobe不建議切換至`secure`模式。
 
-如需Oak多面向功能的詳細資訊，包括這些模式的詳細說明，請參閱[本文章](https://jackrabbit.apache.org/oak/docs/query/lucene.html#facets)。
+如需Oak多面向功能的詳細資訊，包括這些模式的詳細說明，請參閱[多面向 — Oak檔案 — Lucene索引](https://jackrabbit.apache.org/oak/docs/query/lucene.html#facets)。
 
 ## 輸入時搜尋建議 {#searchsuggestions}
 

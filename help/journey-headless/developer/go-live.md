@@ -5,10 +5,10 @@ exl-id: 81616e31-764b-44b0-94a6-3ae24ce56bf6
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '1060'
-ht-degree: 100%
+source-wordcount: '1071'
+ht-degree: 97%
 
 ---
 
@@ -70,7 +70,7 @@ ht-degree: 100%
 
 將更新上傳到 Cloud Manager 後，可以使用 [Cloud Manager 的 CI/CD 管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html)部署到 AEM as a Cloud Service。
 
-您可以利用 Cloud Manager CI/CD 管道開始部署您的程式碼，請參閱[此處](/help/implementing/deploying/overview.md)的詳細介紹。
+您可以使用Cloud Manager CI/CD管道開始部署您的程式碼，此管道在[透過Cloud Manager和封裝管理員部署內容封裝](/help/implementing/deploying/overview.md)中廣泛涵蓋。
 
 ## 效能監控 {#performance-monitoring}
 

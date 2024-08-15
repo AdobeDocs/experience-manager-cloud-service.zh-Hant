@@ -4,9 +4,9 @@ description: 瞭解如何在設定檔案中宣告規則和篩選器，並使用C
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: 3c546a05cf91dd8dcba39e42cd0f19857713f130
+source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
 workflow-type: tm+mt
-source-wordcount: '1319'
+source-wordcount: '1314'
 ht-degree: 2%
 
 ---
@@ -39,7 +39,7 @@ AEM as a Cloud Service提供可在[Adobe管理的CDN](/help/implementing/dispatc
 
 1. 建立名為`cdn.yaml`或類似的檔案，參考以下各節中的各種組態程式碼片段。
 
-   所有程式碼片段都有這些通用屬性，在[Config Pipeline文章](/help/operations/config-pipeline.md#common-syntax)中說明。 `kind`屬性值應該是&#x200B;*CDN*，且`version`屬性應該設定為&#x200B;*1*。
+   所有程式碼片段都有這些通用屬性，在[設定管道](/help/operations/config-pipeline.md#common-syntax)中加以說明。 `kind`屬性值應該是&#x200B;*CDN*，且`version`屬性應該設定為&#x200B;*1*。
 
    ```
    kind: "CDN"
@@ -48,9 +48,9 @@ AEM as a Cloud Service提供可在[Adobe管理的CDN](/help/implementing/dispatc
      envTypes: ["dev"]
    ```
 
-1. 將檔案放置在名為&#x200B;*config*&#x200B;或類似名稱的頂層資料夾之下，如[設定管道文章](/help/operations/config-pipeline.md#folder-structure)所述。
+1. 將檔案放置在名為&#x200B;*config*&#x200B;或類似名稱的頂層資料夾之下，如[設定管道](/help/operations/config-pipeline.md#folder-structure)所述。
 
-1. 在Cloud Manager中建立設定管道，如[設定管道文章](/help/operations/config-pipeline.md#managing-in-cloud-manager)所述。
+1. 在Cloud Manager中建立設定管道，如[設定管道](/help/operations/config-pipeline.md#managing-in-cloud-manager)中所述。
 
 1. 部署設定。
 

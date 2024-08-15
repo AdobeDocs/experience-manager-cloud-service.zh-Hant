@@ -4,10 +4,10 @@ description: 了解 Adobe Experience Manager 高階架構，因為它與無周�
 feature: Headless, Content Fragments,GraphQL API
 exl-id: 5ba6921f-b06e-463d-b956-d1fb434090c9
 role: Admin, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '554'
-ht-degree: 100%
+source-wordcount: '552'
+ht-degree: 98%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 100%
 
 * **Dispatcher** 是靜態 Web 伺服器，增加了 AEM Dispatcher 模組。它提供快取功能和另一層安全性。**Dispatcher** 位在&#x200B;**發佈**&#x200B;和&#x200B;**預覽**&#x200B;服務之前。
 
-在 AEM as a Cloud Service 方案中，您可以擁有多個環境：開發、預備和生產。每個環境都有自己獨特的&#x200B;**作者**、**發佈**&#x200B;和&#x200B;**預覽**&#x200B;服務。您可以在[此處](/help/implementing/cloud-manager/manage-environments.md)進一步了解如何管理環境。
+在 AEM as a Cloud Service 方案中，您可以擁有多個環境：開發、預備和生產。每個環境都有自己獨特的&#x200B;**作者**、**發佈**&#x200B;和&#x200B;**預覽**&#x200B;服務。請參閱[管理環境](/help/implementing/cloud-manager/manage-environments.md)以瞭解更多資訊。
 
 ## 作者發佈模型
 

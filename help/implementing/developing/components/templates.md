@@ -4,9 +4,9 @@ description: 建立作為新頁面基礎的頁面時，會使用頁面範本
 exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '3267'
+source-wordcount: '3268'
 ht-degree: 1%
 
 ---
@@ -357,7 +357,7 @@ When creating an editable template, the value is copied from the template type t
 
 如果您已建立可作為其他範本基礎的範本，則可以複製此範本作為範本型別。
 
-1. 建立範本，就像您在此處記錄的任何頁面範本[一樣](/help/sites-cloud/authoring/sites-console/templates.md#creating-a-new-template-template-author)，這些範本將作為範本型別的基礎。
+1. 建立範本，就像建立任何頁面範本一樣。 請參閱[建立頁面範本](/help/sites-cloud/authoring/sites-console/templates.md#creating-a-new-template-template-author)。 這會作為範本型別的基礎。
 1. 使用CRXDE Lite，將建立的範本從`templates`節點複製到[範本資料夾](#template-folders)下的`template-types`節點。
 1. 從[範本資料夾](#template-folders)下的`templates`節點中刪除範本。
 1. 在`template-types`節點下的範本復本中，從所有`jcr:content`節點刪除所有`cq:template`和`cq:templateType`屬性。

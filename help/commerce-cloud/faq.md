@@ -4,10 +4,10 @@ description: AEM - 使用 Commerce Integration Framework 進行商務整合常�
 exl-id: 0a946d98-22c7-445d-984a-9e09c306ce45
 feature: Commerce Integration Framework
 role: Admin, Architect, User
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '963'
-ht-degree: 100%
+source-wordcount: '965'
+ht-degree: 98%
 
 ---
 
@@ -77,4 +77,4 @@ Adobe 建議使用抽象的付款方式。這可讓瀏覽器用戶端與支付�
 
 ## 16. 如何申請 I/O 執行階段試用版授權？
 
-您可以在「[這裡](https://developer.adobe.com/app-builder/trial/)」申請使用 I/O 執行階段的試用版授權。
+如需請求使用I/O執行階段的試用授權詳細資訊，請參閱[取得存取權](https://developer.adobe.com/runtime/docs/guides/overview/getting_access/)。
