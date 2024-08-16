@@ -5,10 +5,10 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 3922375b52ae64d08cdc64d475a95e8bd240a587
+source-git-commit: eecbc48a77e92b064be9fcdbe547fb330f8d40e0
 workflow-type: tm+mt
-source-wordcount: '1177'
-ht-degree: 44%
+source-wordcount: '1297'
+ht-degree: 40%
 
 ---
 
@@ -33,7 +33,7 @@ Universal Editor 支援在任意實作中編輯任何方面的內容，以便提
 
 ## 編輯內容 {#editing-content}
 
-編輯內容很簡單又直覺。當您將滑鼠移至編輯器中的內容時，可編輯的內容會以藍色方塊醒目提示。
+編輯內容很簡單又直覺。當您將滑鼠移至編輯器中的內容上時，可編輯的內容會以淡藍色外框反白顯示。
 
 ![可編輯的內容會以藍色框醒目顯示](assets/editable-content.png)
 
@@ -49,7 +49,7 @@ Universal Editor 支援在任意實作中編輯任何方面的內容，以便提
 
 ![編輯內容](assets/editing-content.png)
 
-按下Enter/Return或在文字方塊外選取，以儲存變更。
+薄的藍色輪廓會變成粗的藍色輪廓來指示選取，並且會出現游標。 進行變更，然後按下Enter/Return或在文字方塊外選取，以儲存變更。
 
 當您選取選取文字元件時，其詳細資訊會顯示在[屬性邊欄中。](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)您也可以編輯邊欄中的文字。
 
@@ -65,10 +65,21 @@ Universal Editor 支援在任意實作中編輯任何方面的內容，以便提
 
 為方便起見，您可在兩個位置找到文字的格式選項和詳細資訊。
 
-* **內容功能表**&#x200B;會在RTF區塊上方開啟，並在內容中提供基本的格式選項。 由於空間限制，某些選項可能會隱藏在省略符號按鈕後面。
-* **[屬性邊欄](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)**&#x200B;會顯示所有可用的格式選項以及文字。
+#### 內容功能表 {#context-menu}
+
+快顯選單會在RTF區塊上方開啟，並在快顯選單中提供基本的格式選項。 由於空間限制，某些選項可能會隱藏在省略符號按鈕後面。
+
+![ RTF內容功能表](assets/rich-text-context-menu.png)
 
 一旦焦點離開已編輯的欄位，變更會自動儲存。
+
+#### 屬性邊欄 {#properties-rail}
+
+[屬性邊欄](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)會顯示所選文字的專案。 點選專案以開啟對話方塊，顯示較大的畫布以編輯文字。
+
+![RTF編輯對話方塊](assets/rich-text-canvas.png)
+
+點選或按一下「**取消**」或「**完成**」，分別捨棄或儲存變更。
 
 ### 編輯媒體 {#edit-media}
 
@@ -95,9 +106,19 @@ Universal Editor 支援在任意實作中編輯任何方面的內容，以便提
 
 一旦焦點離開屬性邊欄中已編輯的欄位，變更就會自動儲存。
 
-如果您想改為在[內容片段編輯器](/help/sites-cloud/administering/content-fragments/authoring.md)中編輯您的內容片段，請按一下屬性邊欄中的[編輯按鈕](/help/sites-cloud/authoring/universal-editor/navigation.md#edit)。
+如果您想改在[內容片段編輯器](/help/sites-cloud/administering/content-fragments/authoring.md)中編輯您的內容片段，請點選或按一下屬性邊欄中的&#x200B;[**在CF編輯器中開啟**&#x200B;按鈕](/help/sites-cloud/authoring/universal-editor/navigation.md#edit)。
+
+>[!TIP]
+>
+>使用快速鍵`e`在內容片段編輯器中編輯選取的內容片段。
 
 根據工作流程的需求，您可能會想要在通用編輯器中或直接在內容片段編輯器中編輯內容片段。
+
+>[!NOTE]
+>
+>通用編輯器[根據其模型](/help/assets/content-fragments/content-fragments-models.md#validation)驗證內容片段欄位，可讓您強制執行資料完整性規則，例如規則運算式模式和唯一性限制。
+>
+>這可確保您的內容在發佈之前符合特定的業務需求。
 
 ### 新增元件到容器中 {#adding-components}
 
@@ -110,7 +131,7 @@ Universal Editor 支援在任意實作中編輯任何方面的內容，以便提
 
 >[!TIP]
 >
->使用快速鍵 `A` 將元件新增到選取的容器中。
+>使用快速鍵 `a` 將元件新增到選取的容器中。
 
 ### 從容器中刪除元件 {#deleting-components}
 

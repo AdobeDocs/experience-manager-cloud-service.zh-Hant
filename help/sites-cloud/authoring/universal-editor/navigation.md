@@ -4,10 +4,10 @@ description: 瞭解存取和導覽Universal Editor的基本知識。
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 58c58243dc98a21161afe0976da4dcdc235da0d3
+source-git-commit: eecbc48a77e92b064be9fcdbe547fb330f8d40e0
 workflow-type: tm+mt
-source-wordcount: '1512'
-ht-degree: 48%
+source-wordcount: '1576'
+ht-degree: 42%
 
 ---
 
@@ -137,7 +137,7 @@ Universal Editor工具列一律出現在熒幕頂端[Experience Cloud標頭正�
 
 >[!TIP]
 >
->使用快速鍵 `L` 打開網址列。
+>使用快速鍵`l` （字母l）開啟位址列。
 
 >[!NOTE]
 >
@@ -175,7 +175,7 @@ Universal Editor工具列一律出現在熒幕頂端[Experience Cloud標頭正�
 
 >[!TIP]
 >
->使用快速鍵`P`切換至預覽模式，或切換自預覽模式。
+>使用快速鍵`p`切換至預覽模式，或切換自預覽模式。
 
 #### 開啟應用程式預覽 {#open-app-preview}
 
@@ -185,7 +185,11 @@ Universal Editor工具列一律出現在熒幕頂端[Experience Cloud標頭正�
 
 >[!TIP]
 >
->使用快速鍵 `O`(字母 O) 可開啟應用程式預覽。
+>使用快速鍵`o` （字母o）開啟應用程式預覽。
+
+>[!TIP]
+>
+>您可以自訂應用程式[的預覽URL。](/help/implementing/universal-editor/customizing.md#custom-preview-urls)
 
 #### 發佈 {#publish}
 
@@ -196,6 +200,14 @@ Universal Editor工具列一律出現在熒幕頂端[Experience Cloud標頭正�
 >[!TIP]
 >
 >請參閱檔案[使用通用編輯器發佈內容](publishing.md)，以取得使用通用編輯器發佈的詳細資訊。
+
+#### 省略符號 {#ellipsis}
+
+可使用省略符號按鈕存取其他標準選項。
+
+![省略符號按鈕](assets/ellipsis.png)
+
+例如，可透過省略符號按鈕存取取消發佈頁面的功能(亦即反轉&#x200B;[**Publish**&#x200B;按鈕](#publish)的動作)。
 
 #### 其他按鈕 {#additional-toolbar-buttons}
 
@@ -216,7 +228,7 @@ Universal Editor提供可自訂且可擴充的撰寫體驗。 如果您在工具
 
 屬性邊欄一律會沿著編輯器的右側顯示。 視其模式而定，可能會顯示在內容或頁面內容之階層中選取的元件詳細資訊。
 
-![屬性邊欄](assets/component-rail.png)
+![屬性邊欄](assets/properties-rail.png)
 
 #### 屬性模式 {#properties-mode}
 
@@ -232,7 +244,7 @@ Universal Editor提供可自訂且可擴充的撰寫體驗。 如果您在工具
 
 >[!TIP]
 >
->使用快速鍵 `D` 可切換至屬性模式。
+>使用快速鍵 `d` 可切換至屬性模式。
 
 #### 內容樹模式 {#content-tree-mode}
 
@@ -246,21 +258,21 @@ Universal Editor提供可自訂且可擴充的撰寫體驗。 如果您在工具
 
 >[!TIP]
 >
->使用快速鍵 `F` 可切換至內容樹模式。
+>使用快速鍵 `f` 可切換至內容樹模式。
 
-##### 編輯 {#edit}
+##### 在 CF 編輯器中開啟 {#edit}
 
-編輯時，所選元件的選項會顯示在屬性邊欄中，您可在此編輯所選元件。 如果選取的元件是內容片段，您也可以選取「編輯」按鈕。
+編輯時，所選元件的選項會顯示在屬性邊欄中，您可在此編輯所選元件。 如果選取的元件是內容片段，您也可以選取&#x200B;**在CF編輯器中開啟**&#x200B;按鈕。
 
-![「編輯」圖示](assets/edit.png)
+![在CF編輯器中開啟圖示](assets/open-in-cf-editor.png)
 
-點選或按一下編輯按鈕將在新的索引標籤中開啟[內容片段編輯器](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor)。這可讓您使用內容片段編輯器的全部功能來編輯關聯的內容片段。
+點選或按一下&#x200B;**在CF編輯器中開啟**&#x200B;按鈕，在新索引標籤中開啟[內容片段編輯器](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor)。 這可讓您存取內容片段編輯器的完整功能，以編輯相關聯的內容片段。
 
 根據工作流程的需求，您可能會想要在通用編輯器中或直接在內容片段編輯器中編輯內容片段。
 
 >[!TIP]
 >
->使用快速鍵 `E` 可編輯選取的元件。
+>使用快速鍵`e`在內容片段編輯器中開啟選取的內容片段。
 
 ##### 新增 {#add}
 
@@ -274,7 +286,7 @@ Universal Editor提供可自訂且可擴充的撰寫體驗。 如果您在工具
 
 >[!TIP]
 >
->使用快速鍵`A`將元件新增到選取的容器元件中。
+>使用快速鍵`a`將元件新增到選取的容器元件中。
 
 ##### 刪除 {#delete}
 
