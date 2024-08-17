@@ -1,62 +1,55 @@
 ---
-title: 正在新增 SSL 憑證
+title: 新增SSL憑證
 description: 了解如何使用 Cloud Manager 的自助服務工具新增您自己的 SSL 憑證。
 exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 06e961febd7cb2ea1d8fca00cb3dee7f7ca893c9
+source-git-commit: 64aa010c3d840adad9e1ab6040a6d80c07cd8455
 workflow-type: tm+mt
-source-wordcount: '664'
-ht-degree: 70%
+source-wordcount: '659'
+ht-degree: 50%
 
 ---
 
 
-# 新增 SSL 憑證 {#adding-an-ssl-certificate}
+# 新增SSL憑證 {#adding-an-ssl-certificate}
 
 了解如何使用 Cloud Manager 的自助服務工具新增您自己的 SSL 憑證。
 
 >[!TIP]
 >
->提供憑證可能需要幾天時間。因此，Adobe建議在任何截止日期或上線日期之前布建憑證。
+>提供憑證可能需要幾天時間。因此，Adobe建議在任何期限或上線日期之前提供憑證。
 
 ## 憑證需求 {#certificate-requirements}
 
-檢閱檔案[管理SSL憑證簡介](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md#requirements)的&#x200B;**憑證需求**&#x200B;一節，以確定AEM as a Cloud Service支援您要新增的憑證。
+檢閱[管理SSL憑證簡介](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md#requirements)中的&#x200B;**憑證需求**，以確定AEM as a Cloud Service支援您要新增的憑證。
 
-## 正在新增憑證 {#adding-a-cert}
-
-依照以下步驟使用 Cloud Manager 新增憑證。
+## 新增憑證 {#adding-a-cert}
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager，並選取適當的組織。
 
 1. 在「**[我的程式](/help/implementing/cloud-manager/navigation.md#my-programs)**」控制台中，選取程式。
 
-1. 從&#x200B;**概觀**&#x200B;頁面瀏覽到&#x200B;**環境**&#x200B;畫面。
+1. 從&#x200B;**概觀**&#x200B;頁面，瀏覽到&#x200B;**環境**&#x200B;畫面。
 
-1. 從瀏覽面板按一下&#x200B;**SSL憑證**。 包含任何現有 SSL 憑證詳細資訊的表格會顯示在主畫面上。
+1. 從左側導覽面板的&#x200B;**服務**&#x200B;下，按一下&#x200B;**SSL憑證**。 (如有必要，您可能需要按一下左上角的漢堡圖示，以使用導覽面板。 隨即顯示一個表格，其中包含任何現有SSL憑證的詳細資訊。
 
-   ![新增 SSL 憑證](/help/implementing/cloud-manager/assets/ssl/ssl-cert-1.png)
+   ![新增SSL憑證](/help/implementing/cloud-manager/assets/ssl/ssl-cert-1.png)
 
 1. 按一下&#x200B;**新增SSL憑證**&#x200B;以開啟&#x200B;**新增SSL憑證**&#x200B;對話方塊。
 
-   * 在&#x200B;**憑證名稱**&#x200B;中輸入憑證名稱。
-      * 這僅供參考，可以是任何有助於您輕鬆引用憑證的名稱。
-   * 將&#x200B;**憑證**、**私密金鑰**&#x200B;和&#x200B;**憑證鏈**&#x200B;值貼到其各自的欄位中。
-      * 所有三個欄位都是必填項目。
+   * 在&#x200B;**憑證名稱**&#x200B;中輸入憑證名稱。 此欄位僅供參考，可以是任何有助於您輕鬆引用憑證的名稱。
+   * 在對應欄位中貼上&#x200B;**憑證**、**私人金鑰**&#x200B;和&#x200B;**憑證鏈**&#x200B;值。這三個欄位都是必填欄位。
 
-   ![新增憑證對話方塊](/help/implementing/cloud-manager/assets/ssl/ssl-cert-02.png)
+   ![新增SSL憑證對話方塊](/help/implementing/cloud-manager/assets/ssl/ssl-cert-02.png)
 
-   * 會顯示偵測到的任何錯誤。
-      * 您必須先解決所有錯誤，然後才能保存您的憑證。
-      * 請參閱[憑證錯誤](#certificate-errors)章節以了解有關解決常見錯誤的更多資訊。
+   * 將顯示值中偵測到的任何錯誤。 您必須先解決所有錯誤，才能儲存憑證。
+請參閱[憑證錯誤](#certificate-errors)，深入瞭解如何解決常見錯誤。
 
-1. 按一下&#x200B;**儲存**&#x200B;來儲存您的憑證。
+1. 按一下「**儲存**」。
 
-儲存後，您會看到憑證在表格中顯示為新的一列。
-
-![已儲存的 SSL 憑證](/help/implementing/cloud-manager/assets/ssl/ssl-cert-3.png)
+![已儲存的SSL憑證](/help/implementing/cloud-manager/assets/ssl/ssl-cert-3.png)您的憑證現在會在表格中顯示為新列，類似於上圖。
 
 >[!NOTE]
 >
@@ -102,7 +95,7 @@ The Subject of an intermediate certificate must match the issuer in the previous
 
 您可能在憑證鏈結中包含使用者端憑證。 請確定該鏈結不包含使用者端憑證，然後再試一次。
 
-### 憑證政策 {#certificate-policy}
+### 憑證原則 {#certificate-policy}
 
 如果您看到以下錯誤，請檢查您的憑證政策。
 
@@ -110,7 +103,7 @@ The Subject of an intermediate certificate must match the issuer in the previous
 Certificate policy must conform with EV or OV, and not DV policy.
 ```
 
-通常憑證策略由嵌入的 OID 值標識。將憑證輸出為文字並搜尋 OID 將顯示憑證的策略。
+嵌入的OID值通常會識別憑證策略。 將憑證輸出為文字並搜尋OID會顯示憑證的策略。
 
 您可以使用以下範例作為指南將您的憑證詳細資訊輸出為文字。
 
@@ -152,13 +145,13 @@ openssl x509 -in certificate.pem -text grep "Policy: 2.23.140.1.2.2" -B5
 openssl x509 -in certificate.pem -text grep "Policy: 2.23.140.1.2.1" -B5
 ```
 
-### 憑證有效期 {#certificate-validity-dates}
+### 憑證有效日期 {#certificate-validity-dates}
 
-Cloud Manager 預計 SSL 憑證從當前日期起至少 90 天內有效。您應該檢查憑證鏈結的有效性。
+Cloud Manager 預計 SSL 憑證從當前日期起至少 90 天內有效。檢查憑證鏈結的有效性。
 
 ## 後續步驟 {#next-steps}
 
-恭喜！您現在擁有專案的有效的SSL憑證。 這通常是設定自訂網域名稱的第一步。
+恭喜！您現在擁有專案的有效的SSL憑證。 此步驟通常是第一個設定自訂網域名稱的步驟。
 
-* 請參閱檔案[新增自訂網域名稱](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)以繼續設定自訂網域名稱。
-* 若要瞭解如何在Cloud Manager中更新及管理SSL憑證，請參閱檔案[管理SSL憑證](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)。
+* 若要設定自訂網域名稱，請參閱[新增自訂網域名稱](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)。
+* 若要瞭解如何在Cloud Manager中更新及管理SSL憑證，請參閱[管理SSL憑證](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)。
