@@ -7,9 +7,9 @@ exl-id: ace9b9f3-8bc6-4a36-a51c-ff60cdd339ce
 feature: Headless
 role: Admin, User, Developer
 source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1003'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -82,7 +82,7 @@ ht-degree: 98%
 
 >[!TIP]
 >
->**冒險**&#x200B;模型是以 AEM 的 WKND 範例網站為基礎。您可以[造訪此處](https://wknd.site/us/en/adventures/yosemite-backpacking.html)的WKND網站，檢視使用&#x200B;**Adventure**&#x200B;模型的內容。
+>**冒險**&#x200B;模型是以 AEM 的 WKND 範例網站為基礎。你可以[在這裡造訪 WKND 網站](https://wknd.site/us/en/adventures/yosemite-backpacking.html)以查看使用&#x200B;**冒險**&#x200B;模型的內容。
 
 按照與上述相同的步驟新增這些其他欄位。唯一的差異是您必須設定的屬性。
 

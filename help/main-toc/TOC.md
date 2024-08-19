@@ -7,9 +7,9 @@ user-guide-description: 了解 Experience Manager as a Cloud Service 的運作�
 breadcrumb-title: 使用手冊
 user-guide-title: AEM as a Cloud Service
 source-git-commit: a9b7e2fbafcfc4b5592cc95e6bbd1e8e0f631757
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '5340'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -173,7 +173,7 @@ ht-degree: 99%
          + [2023.8.0 版發行說明](/help/journey-migration/release-notes/release-notes-migration-tools-2023-08-0.md)
          + [2023.7.0 版發行說明](/help/journey-migration/release-notes/release-notes-migration-tools-2023-07-0.md)
          + [2023.6.0 版發行說明](/help/journey-migration/release-notes/release-notes-migration-tools-2023-06-0.md)
-         + [2023.3.0 發行說明](/help/journey-migration/release-notes/release-notes-migration-tools-2023-03-0.md)
+         + [2023.3.0 版發行說明](/help/journey-migration/release-notes/release-notes-migration-tools-2023-03-0.md)
       + 2022 {#2022}
          + [2022.12.0 版發行說明](/help/journey-migration/release-notes/release-notes-migration-tools-2022-12-0.md)
          + [2022.9.0 版發行說明](/help/journey-migration/release-notes/release-notes-migration-tools-2022-09-0.md)
@@ -194,8 +194,8 @@ ht-degree: 99%
    + 通用編輯器發行說明 {#univeral-editor}
       + [通用編輯器的最新發行說明](/help/release-notes/universal-editor/current.md)
       + 2024 {#2024}
-         + [2024.07.28版本注意事項](/help/release-notes/universal-editor/2024/2024-07-28.md)
-         + [2024.06.28發行說明](/help/release-notes/universal-editor/2024/2024-06-28.md)
+         + [2024.07.28 發行說明](/help/release-notes/universal-editor/2024/2024-07-28.md)
+         + [2024.06.28 發行說明](/help/release-notes/universal-editor/2024/2024-06-28.md)
    + [新增功能 ](/help/release-notes/what-is-new.md)
    + [AEM Cloud Service 的重大變更](/help/release-notes/aem-cloud-changes.md)
    + [已過時和已移除的功能和 API](/help/release-notes/deprecated-removed-features.md)
@@ -864,7 +864,7 @@ ht-degree: 99%
          + [為 SEO 設定 URL](/help/commerce-cloud/configuring/advanced-url-configuration.md)
          + [快取選項](/help/commerce-cloud/configuring/caching.md)
          + [自訂 HTTP 標頭](/help/commerce-cloud/configuring/custom-http-headers.md)
-         + [購物車和Dispatcher設定](/help/commerce-cloud/configuring/shopping-cart-dispatcher.md)
+         + [購物車和 Dispatcher 設定](/help/commerce-cloud/configuring/shopping-cart-dispatcher.md)
       + 開發 {#developing}
          + [利用 AEM Cloud Service SDK 進行開發 ](/help/commerce-cloud/develop.md)
          + [設定 CIF 元件樣式](/help/commerce-cloud/customizing/style-cif-component.md)

@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
 source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1056'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -43,7 +43,7 @@ AEM SDK 用於建置和部署自訂程式碼。它是您在上線前開發和測
 
 與 AEM SDK 不同，AEM **Headless SDK** 是一組程式庫，用戶端可以使用這些程式庫透過 HTTP 快速輕鬆地與 AEM Headless API 互動。
 
-如需詳細資訊，請參閱[AEM Headless SDK](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/aem-headless-sdk.html)。
+如需詳細資訊，請參閱 [AEM Headless SDK](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/aem-headless-sdk.html)。
 
 ## 其他開發工具 {#additional-development-tools}
 
