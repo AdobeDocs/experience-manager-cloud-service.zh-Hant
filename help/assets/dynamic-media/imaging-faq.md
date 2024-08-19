@@ -6,9 +6,9 @@ feature: Asset Management,Renditions,Best Practices
 role: User
 mini-toc-levels: 2
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
-source-git-commit: 22de8ac77af27114099de2f6b4349232524cb94f
+source-git-commit: 1b985a83fd58522ee485c02b96bfb6a697da6ce0
 workflow-type: tm+mt
-source-wordcount: '3454'
+source-wordcount: '3455'
 ht-degree: 1%
 
 ---
@@ -166,7 +166,7 @@ DPR和網路頻寬值是根據偵測到的套件式CDN使用者端值。 這些�
 
 +++**是否有與智慧型影像相關的授權成本？**
 
-不適用。 智慧型影像包含於您現有的授權中。 此規則適用於Dynamic Media Classic或Experience Manager - Dynamic Media (內部部署、AMS和Experience Manageras a Cloud Service)。
+否。智慧型影像包含於您現有的授權中。 此規則適用於Dynamic Media Classic或Experience Manager - Dynamic Media (內部部署、AMS和Experience Manageras a Cloud Service)。
 
 >[!IMPORTANT]
 >
@@ -204,7 +204,7 @@ DPR和網路頻寬值是根據偵測到的套件式CDN使用者端值。 這些�
 
 +++**我是否必須在我的網站上變更任何URL、影像預設集或部署新程式碼？**
 
-不適用。 智慧型影像可以順暢地搭配您現有的影像URL和影像預設集。 此外，智慧型影像不需要您新增程式碼至網站以偵測使用者的瀏覽器。 所有此功能都會自動處理。
+否。智慧型影像可以順暢地搭配您現有的影像URL和影像預設集。 此外，智慧型影像不需要您新增程式碼至網站以偵測使用者的瀏覽器。 所有此功能都會自動處理。
 
 <!-- Smart Imaging works seamlessly with your existing image URLs and image presets if you configure Smart Imaging on your existing custom domain. In addition, Smart Imaging does not require you to add any code on your website to detect a user's browser. It is all handled automatically.
 
@@ -239,7 +239,7 @@ To understand pre-requisites for Smart Imaging, see [Am I eligible to use Smart 
 
 +++**我可以為我的帳戶啟用智慧型影像處理嗎？**
 
-不適用。 您起始了使用智慧型影像的要求，但系統不會自動啟用此要求。
+否。您起始了使用智慧型影像的要求，但系統不會自動啟用此要求。
 
 建立支援案例，如下所述。 在您的支援案例中，請務必提及要在帳戶上啟用的下列智慧影像功能（一或多個）：
 
@@ -392,7 +392,7 @@ To understand pre-requisites for Smart Imaging, see [Am I eligible to use Smart 
 
 +++**我可以設定最小和最大品質設定嗎？**
 
-不適用。 目前沒有這類布建。
+否。目前沒有這類布建。
 
 +++
 
