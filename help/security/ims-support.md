@@ -5,9 +5,9 @@ exl-id: fb563dbd-a761-4d83-9da1-58f8e462b383
 feature: Security
 role: Admin
 source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1941'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 93%
 
 >[!TIP]
 >
->請參閱[為管理員設定 AEM 存取權](https://experienceleague.adobe.com/?recommended=ExperienceManager-A-1-2020.1.aem)，了解使用者如何使用 Adobe IMS 向 AEM as a Cloud Service 進行驗證，同時了解如何使用 Adobe IMS 使用者、使用者群組和產品設定檔來控制對 AEM 及其特性和功能的存取。需要 Adobe ID。
+>請參閱[為管理員設定 AEM 存取權](https://experienceleague.adobe.com/?recommended=ExperienceManager-A-1-2020.1.aem_zh-hant)，了解使用者如何使用 Adobe IMS 向 AEM as a Cloud Service 進行驗證，同時了解如何使用 Adobe IMS 使用者、使用者群組和產品設定檔來控制對 AEM 及其特性和功能的存取。需要 Adobe ID。
 
 ## 重要焦點 {#key-highlights}
 
@@ -58,11 +58,11 @@ AEM 客戶應先有已佈建的組織，而在 IMS 佈建過程中，客戶即�
 1. 系統管理員需先宣告網域，以確認各別網域的所有權 (例如，acme.com)
 1. 系統管理員設定使用者目錄
 1. 系統管理員在 Admin Console 中執行 IDP 設定，以設定單一登入。
-1. AEM 管理員可照常管理本機群組和權限。
+1. AEM 管理員可照常管理本機群組、權限與高階權限。
 
-AdobeIdentity Management基本知識（包括IDP組態）包含在[設定身分和單一登入](https://helpx.adobe.com/tw/enterprise/using/set-up-identity.html)中。
+[設定身分和單一登入](https://helpx.adobe.com/tw/enterprise/using/set-up-identity.html)中介紹包括 IDP 設定在內的 Adobe Identity Management 基礎知識。
 
-企業管理和Admin Console使用方式在[歡迎使用企業和團隊管理指南](https://helpx.adobe.com/tw/enterprise/admin-guide.html)中說明。
+[「歡迎使用企業和團隊管理指南」](https://helpx.adobe.com/tw/enterprise/admin-guide.html)中介紹企業管理和 Admin Console 的使用。
 
 ### 在 Admin Console 中建立使用者 {#onboarding-users-in-admin-console}
 
@@ -96,29 +96,29 @@ AdobeIdentity Management基本知識（包括IDP組態）包含在[設定身分�
 
 >[!NOTE]
 >
->GitHub ](https://github.com/adobe-apiplatform/user-sync.py/releases/tag/v2.4rc1)上的[使用者同步工具v2.4rc1支援建立動態群組，並提供發行前版本&#x200B;**2.4RC1**。
+>預發行版本 **2.4RC1** 可透過 [GitHub 上的使用者同步工具 v2.4rc1](https://github.com/adobe-apiplatform/user-sync.py/releases/tag/v2.4rc1) 提供的建立動態群組支援取得。
 
-此版本的主要功能是能在 Admin Console 中動態對應新 LDAP 群組，以取得使用者成員資格，並且建立動態使用者群組。
+此版本的主要功能是在 Admin Console 中針對使用者會籍動態對應新 LDAP 群組，以及建立動態使用者群組。
 
-如需有關新群組功能的詳細資訊，請參閱[Adobe使用者同步工具 — 其他群組選項](https://adobe-apiplatform.github.io/user-sync.py/en/user-manual/advanced_configuration.html#additional-group-options)。
+有關新群組功能的更多資訊，請參閱[「Adobe 使用者同步工具 - 其他群組選項」](https://adobe-apiplatform.github.io/user-sync.py/en/user-manual/advanced_configuration.html#additional-group-options)。
 
 **使用者同步文件**
 
 請參閱：
 
-* [UST檔案](https://adobe-apiplatform.github.io/user-sync.py/en/)
+* [UST 文件](https://adobe-apiplatform.github.io/user-sync.py/en/)
 
-* 使用者同步工具必須使用[API存取驗證](https://adobe-apiplatform.github.io/umapi-documentation/en/UM_Authentication.html)的程式註冊為Adobe Developer使用者端UMAPI
+* 使用者同步工具必須透過 [API 存取權驗證](https://adobe-apiplatform.github.io/umapi-documentation/en/UM_Authentication.html)中的程序，註冊為 Adobe Developer 用戶端 UMAPI。
 
-* [Adobe Developer Console檔案](https://developer.adobe.com/developer-console/)
+* [Adobe Developer Console 文件](https://developer.adobe.com/developer-console/)
 
-* 使用者同步工具](https://adobe-apiplatform.github.io/user-sync.py/en/)所使用的[使用者管理API
+* [使用者同步工具所採用的 User Management API](https://adobe-apiplatform.github.io/user-sync.py/en/)
 
 ## Adobe Experience as a Cloud Service 設定 {#aem-configuration}
 
 >[!NOTE]
 >
->佈建 AEM 環境和執行個體時，系統會自動設定所需的 AEM IMS 設定。但是，管理員可以根據他們的需求修改它，請參閱[部署到AEM as a Cloud Service](/help/implementing/deploying/overview.md)。
+>佈建 AEM 環境和執行個體時，系統會自動設定所需的 AEM IMS 設定。不過，管理員可依其需求進行修改，請參閱[「部署至 AEM as a Cloud Service」](/help/implementing/deploying/overview.md)。
 
 佈建 AEM 環境和執行個體時，系統會自動設定所需的 AEM IMS 設定。客戶管理員可依需求適度修改部分設定
 

@@ -5,9 +5,9 @@ exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
 source-git-commit: 80edd0255b38beee93b3f9c779ae0f364500b4a5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1176'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 79%
 
 ## 版本 17465 {#release-17465}
 
-以下摘要說明維護版本17465數的持續改善，該版本於2024年8月14日公開發佈。 上一個維護版本是版本 17258。
+下面是 17465 維護版本的持續改善內容，該版本於 2024 年 8 月 14 日公開發行。上一個維護版本是版本 17258。
 
 2024.8.0 功能啟用將提供此維護版本的完整功能集。如需詳細資訊，請參閱 [Experience Manager 發行藍圖](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)。
 
@@ -45,7 +45,7 @@ ht-degree: 79%
 * SITES-22813 - 內容片段 REST API：定義分項清單欄位的最小/最大屬性。
 * SITES-22031 - 內容片段 REST API：取得片段資料夾的允許內容片段模型。
 * SITES-17640 - 內容片段 REST API：內容片段發佈作業驗證。
-* SITES-22677 — 內容片段REST API：擷取下級參考的平面清單。
+* SITES-22677 - 內容片段 REST API：獲取下階參考資料的平面清單。
 * SITES-22207 - 建立內容片段時的重複模型。
 * SITES-23093 - 事件：為內容片段模型事件的承載新增標籤。
 * SITES-23092 - 事件：為內容片段事件的承載新增標籤。
@@ -89,15 +89,15 @@ ht-degree: 79%
 * SITES-22203 - 內容片段 REST API：統一管理 API，以對相同情況做出相同回應。
 * SITES-21973 - 內容片段 REST API：模型缺少分項清單類型的唯一屬性。
 * SITES-20364 - 302 重新導向無法用於 URL 中的選擇器。
-* SITES-21198 - VersionPreviewServlet：清除會在所有叢集節點上同時執行，造成合併衝突與區塊認可。
+* SITES-21198 - VersionPreviewServlet：在所有叢集節點上同時執行清理造成合併衝突且無法認可。
 
 ### 已知問題 {#known-issues-17465}
 
-* Assets-40875 - AssetDeleteHandler類別會監聽資產刪除事件，並根據刪除DELETE型別(PRE_event或POST_event)執行特定動作。DELETE 在某些情況下，事件的POST_DELETE型別會造成NullPointerException。
-* Forms-14340 — 具現化FormsAndDocumentOmniSearchHandler和CloudStorageSubmitActionInserter時發生錯誤。 這些是無害的log陳述式。
-* Forms-15818 — 元件描述項專案「OSGI-INF/com.adobe.aemfd.docmanager.impl」。在伺服器記錄檔中找不到*.xml&#39;陳述式。 這些是無害的log陳述式。
+* ASSETS-40875 - AssetDeleteHandler 類別偵聽資產刪除事件，並根據刪除事件的類型 (PRE_DELETE 或 POST_DELETE) 執行特定動作。在某些情況下，POST_DELETE 類型的事件會導致 NullPointerException。
+* FORMS-14340 - FormsAndDocumentOmniSearchHandler 和 CloudStorageSubmitActionInserter 實例化時發生錯誤。這些是無害的記錄陳述式。
+* FORMS-15818 - 元件描述項的項目「OSGI-INF/com.adobe.aemfd.docmanager.impl.*.xml」在伺服器記錄中找不到陳述式。這些是無害的記錄陳述式。
 * 
-   * SITES-23662 — 無法從伺服器記錄檔中的JCR記錄陳述式中擷取觸發發佈的使用者。 這是針對正在開發中的功能，可能會在記錄中造成間歇性和無害的「在批次OSGI事件中找不到有效的使用者ID」錯誤。
+   * SITES-23662 - 無法從伺服器記錄的 JCR 記錄陳述式內提取觸發發佈的使用者。這是針對一項正在開發的功能，可能會導致記錄中出現間歇性且無害的「無法在 OSGI 事件的批次中找到有效的使用者 ID」錯誤。
 
 ### 變更通知 {#change-notice-17465}
 
@@ -105,13 +105,13 @@ ht-degree: 79%
 
 ### 已過時的功能和 API {#deprecated-17465}
 
-請注意，我們正在更新`com.day.cq.wcm.api`，而目前版本中，我們已將其一些方法和類別標示為`@Deprecated`。 這些功能將在未來版本中移除，因此，如果您使用任何這些功能，請考慮改用其建議的替代功能。
+請注意，我們正在更新 `com.day.cq.wcm.api`，並且在目前版本中，我們已將其中某些方法和類別標記為 `@Deprecated`。這些將於未來的版本中刪除，因此若您正在使用其中的任何一個，請考慮改用所建議的替代方案。
 
- [已過時和移除的功能和 API](/help/release-notes/deprecated-removed-features.md) 文件中詳細介紹了 AEM as a Cloud Service 已過時和移除的功能和 API。
+[「已過時和已移除的功能及 API」](/help/release-notes/deprecated-removed-features.md)文件中詳細介紹 AEM as a Cloud Service 中已過時和已移除的功能及 API。
 
 ### 安全性修正 {#security-17465}
 
-AEM as a Cloud Service致力於將平台的安全性和效能最佳化。 此維護發行版本解決了7個已識別的漏洞，強化我們對強大系統保護的承諾。
+AEM as a Cloud Service 專門負責將您的平台的安全性與效能最佳化。此維護版本解決了 7 個已確認的漏洞，強化我們提供健全系統保護的承諾。
 
 ### 內嵌技術 {#embedded-tech-17465}
 
