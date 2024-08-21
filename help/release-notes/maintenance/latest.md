@@ -96,7 +96,7 @@ ht-degree: 100%
 * ASSETS-40875 - AssetDeleteHandler 類別偵聽資產刪除事件，並根據刪除事件的類型 (PRE_DELETE 或 POST_DELETE) 執行特定動作。在某些情況下，POST_DELETE 類型的事件會導致 NullPointerException。
 * FORMS-14340 - FormsAndDocumentOmniSearchHandler 和 CloudStorageSubmitActionInserter 實例化時發生錯誤。這些是無害的記錄陳述式。
 * FORMS-15818 - 元件描述項的項目「OSGI-INF/com.adobe.aemfd.docmanager.impl.*.xml」在伺服器記錄中找不到陳述式。這些是無害的記錄陳述式。
-* 
+* &#x200B;
    * SITES-23662 - 無法從伺服器記錄的 JCR 記錄陳述式內提取觸發發佈的使用者。這是針對一項正在開發的功能，可能會導致記錄中出現間歇性且無害的「無法在 OSGI 事件的批次中找到有效的使用者 ID」錯誤。
 
 ### 變更通知 {#change-notice-17465}
