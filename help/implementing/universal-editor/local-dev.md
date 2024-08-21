@@ -4,10 +4,10 @@ description: 了解 Universal Editor 如何支援為開發目的在本機 AEM �
 exl-id: ba1bf015-7768-4129-8372-adfb86e5a120
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 5a6795056090908652a72730939024e974a9a697
 workflow-type: tm+mt
-source-wordcount: '698'
-ht-degree: 61%
+source-wordcount: '819'
+ht-degree: 50%
 
 ---
 
@@ -38,7 +38,7 @@ Universal Editor 服務綁定 Universal Editor 和後端系統。若要能夠在
 
 Universal Editor服務並非Universal Editor的完整復本，而是其功能的子集，以確保不會透過網際網路路由來自您本機AEM環境的呼叫，而是從您控制的已定義端點路由呼叫。
 
-需要[NodeJS版本16](https://nodejs.org/en/download/releases)才能執行Universal Editor服務的本機復本。
+需要[NodeJS版本20](https://nodejs.org/en/download/releases)才能執行通用編輯器服務的本機復本。
 
 Universal Editor服務可透過Software Distribution取得。 如需如何存取軟體的詳細資訊，請參閱[軟體發佈檔案](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html)。
 
@@ -56,25 +56,43 @@ $ openssl req -newkey rsa:2048 -nodes -keyout key.pem -x509 -days 365 -out certi
 
 該命令會產生一個 `key.pem` 和一個 `certificate.pem` 檔案。將這些檔案儲存至與您 `universal-editor-service.cjs` 檔案相同的路徑。
 
-## 進行 Universal Editor 服務設定 {#setting-up-service}
+## 設定Universal Editor服務設定 {#setting-up-service}
 
 必須在 NodeJS 中設定許多環境變數，才能在本機上執行 Universal Editor 服務。
 
 在與您 `universal-editor-service.cjs`、`key.pem` 和 `certificate.pem` 檔案相同的路徑上，建立一個包含以下內容的 `.env` 檔案。
 
 ```text
-EXPRESS_PORT=8000
-EXPRESS_PRIVATE_KEY=./key.pem
-EXPRESS_CERT=./certificate.pem
-NODE_TLS_REJECT_UNAUTHORIZED=0
+UES_PORT=8000
+UES_PRIVATE_KEY=./key.pem
+UES_CERT=./certificate.pem
+UES_TLS_REJECT_UNAUTHORIZED=false
 ```
 
-此變數的意義如下：
+這些是範例中本機開發所需的最小值。 下表詳細說明這些值和可用的其他值。
 
-* `EXPRESS_PORT`：定義 Universal Editor 服務偵聽的連接埠
-* `EXPRESS_PRIVATE`：指向您[先前建立的私鑰 ](#ue-https)`key.pem`
-* `EXPRESS_CERT`：指向您[先前建立的憑證 ](#ue-https)`certificate.pem`
-* `NODE_TLS_REJECT_UNAUTHORIZED=0`：接受自我簽署憑證
+| 值 | 選用 | 預設 | 說明 |
+|---|---|---|---|
+| `UES_PORT` | 是 | `8080` | 伺服器執行所在的連線埠 |
+| `UES_PRIVATE_KEY` | 是 | 無 | https伺服器私密金鑰的路徑 |
+| `UES_CERT` | 是 | 無 | HTTPS伺服器憑證檔案的路徑 |
+| `UES_TLS_REJECT_UNAUTHORIZED` | 是 | `true` | 拒絕未授權的TLS連線 |
+| `UES_DISABLE_IMS_VALIDATION` | 是 | `false` | 停用IMS驗證 |
+| `UES_ENDPOINT_MAPPING` | 是 | 空白 | 內部重寫的端點對應<br>範例： `UES_ENDPOINT_MAPPING='[{"https://your-public-facing-author-domain.net": "http://10.0.0.1:4502"}]'`<br>結果：通用編輯器服務將連線到`http://10.0.0.1:4502`，而不是提供的連線`https://your-public-facing-author-domain.net` |
+| `UES_LOG_LEVEL` | 是 | `info` | 伺服器的記錄層級，可能的值為`silly`、`trace`、`debug`、`verbose`、`info`、`log`、`warn`、`error`和`fatal` |
+| `UES_SPLUNK_HEC_URL` | 是 | 無 | 指向Splunk端點的HEC URL |
+| `UES_SPLUNK_TOKEN` | 是 | 無 | Splunk權杖 |
+| `UES_SPLUNK_INDEX` | 是 | 無 | 要寫入記錄的索引 |
+| `UES_SPLUNK_SOURCE` | 是 | `universal-editor-service` | splunk記錄檔中的來源名稱 |
+
+>[!NOTE]
+>
+>在Universal Editor的[2024.08.13版本](/help/release-notes/universal-editor/current.md)之前，`.env`檔案中需要下列變數。 為了回溯相容性，這些值將支援直到2024年10月1日。
+>
+>`EXPRESS_PORT=8000`
+>`EXPRESS_PRIVATE_KEY=./key.pem`
+>`EXPRESS_CERT=./certificate.pem`
+>`NODE_TLS_REJECT_UNAUTHORIZED=0`
 
 ## 執行 Universal Editor 服務 {#running-ue}
 
