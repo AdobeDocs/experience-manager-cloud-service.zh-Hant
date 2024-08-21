@@ -1,8 +1,8 @@
 ---
-source-git-commit: 964d4a04c6c645a5cdab29218f93431649d41588
+source-git-commit: 4eee52c28a57b466cfba52a99b832108b936a5d3
 workflow-type: tm+mt
-source-wordcount: '662'
-ht-degree: 98%
+source-wordcount: '673'
+ht-degree: 95%
 
 ---
 # 代碼片段 {#snippets}
@@ -80,7 +80,7 @@ ht-degree: 98%
   </tr>
   <tr>
     <td>設定下拉式清單選項 </td>
-    <td>下拉式清單選項是使用規則編輯器的<b>設定選項</b>屬性設定的。</td>
+    <td>下拉式清單選項是使用規則編輯器的<b>設定選項（共</b>個屬性）來設定。</td>
     <td>下拉式選項是使用自訂函數設定的。 
    </td>
    </tr>
@@ -92,7 +92,7 @@ ht-degree: 98%
    </td>
    </tr>
       <tr>
-    <td>‘Then’ 中的驗證/重設欄位/面板/表單規則 </td>
+    <td>驗證/重設'Then'中的欄位/面板/表單規則 </td>
     <td>驗證和重設函數僅支援規則編輯器中的表單物件。 
    </td>
     <td>驗證和重設函數支援規則編輯器中的表單/面板/欄位物件。 
@@ -100,7 +100,7 @@ ht-degree: 98%
    </tr>
    <tr>
     <td>ES10 支援 </td>
-    <td>尚未支援ES10。 僅支援ES5 JavaScript功能。 </td>
+    <td>尚不支援 ES10。僅支援 ES5 JavaScript 功能。 </td>
     <td>支援現代 JavaScript 功能，例如自訂函數中的 let 和 arrow 函數 (ES10 支援)。 
    </td>
    </tr>
@@ -127,3 +127,10 @@ ht-degree: 98%
 * [以核心元件為主之最適化表單的自訂函數簡介](/help/forms/create-and-use-custom-functions.md)
 * [建立以核心元件為主之最適化表單的自訂函數](/help/forms/custom-function-core-component-create-function.md)
 * [自訂函數的開發和使用範例](/help/forms/custom-function-core-components-use-cases.md)
+
+
+## IP允許清單和前端管道 {#allowlist-frontend-pipeline}
+
+>[!IMPORTANT]
+>
+>在這裡新增重要注意事項。
