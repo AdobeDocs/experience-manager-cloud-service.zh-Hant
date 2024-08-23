@@ -4,10 +4,10 @@ description: AEM Forms Edge Delivery Services 旨在為實現最佳效而建置�
 feature: Edge Delivery Services
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
 role: Admin, Architect, Developer
-source-git-commit: 2766a351938062127babb01d5ed35bd37b705c21
+source-git-commit: 5670e0ab7e6cb47bcc2dd7608aa3f01dc4ec0704
 workflow-type: tm+mt
 source-wordcount: '1043'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -104,7 +104,7 @@ WYSIWYG 製作提供用來建立表單的 WYSIWYG 介面 (通用編輯器或最�
 * [將可重複區段新增到表單](/help/edge/docs/forms/repeatable-forms.md)
 * [提交表單後顯示自訂感謝訊息](/help/edge/docs/forms/thank-you-page-form.md)
 * [最適化表單區塊元件及其屬性](/help/edge/docs/forms/form-components.md)
-* [即時使用者監控](https://www.aem.live/developer/rum#authentication)
+* [實際使用監控](https://www.aem.live/developer/rum#authentication)
 
 <!-- 
 
