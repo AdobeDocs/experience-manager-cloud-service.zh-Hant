@@ -4,9 +4,9 @@ description: 瞭解AEM as a Cloud Service中的內容搜尋和索引。
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
 feature: Operations
 role: Admin
-source-git-commit: 65e67225a6a91d871218c12c4696dd281787cd58
+source-git-commit: 4de04b0a2c74406544757f9a92c061abfde5b615
 workflow-type: tm+mt
-source-wordcount: '2449'
+source-wordcount: '2531'
 ht-degree: 1%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 ## AEM as a Cloud Service中的變更 {#changes-in-aem-as-a-cloud-service}
 
-透過AEM as a Cloud Service，Adobe正從AEM以執行個體為中心的模式移至具有n-x AEM容器的服務型檢視，由Cloud Manager中的CI/CD管道驅動。 必須在部署之前指定索引設定，而不是在單一AEM執行個體上設定和維護索引。 生產環境中的設定變更顯然違反CI/CD政策。 同樣的情況也適用於索引變更，因為如果未指定在將索引投入生產之前測試和重新索引，索引變更可能會影響系統穩定性和效能。
+透過AEM as a Cloud Service，Adobe正從AEM以執行個體為中心的模式移至具有n-x AEM容器的服務型檢視，由Cloud Manager中的CI/CD管道驅動。 必須在部署之前指定索引設定，而不是在單一AEM執行個體上設定和維護索引。 生產環境中的設定變更顯然違反CI/CD政策。 同樣的情況也適用於索引變更，因為如果未指定、測試並重新編制索引，在將索引投入生產之前，索引變更可能會影響系統穩定性和效能。
 
 以下是與AEM 6.5和更早版本相比的主要變更清單：
 
@@ -71,11 +71,11 @@ ht-degree: 1%
 >
 >如果自訂立即可用索引（例如`damAssetLucene-8`），請使用CRX DE封裝管理員(`/crx/packmgr/`)從&#x200B;*Cloud Service環境*&#x200B;複製最新的立即可用索引定義。 將其重新命名為`damAssetLucene-8-custom-1` （或更高版本），並在XML檔案中新增自訂內容。 這可確保不會無意中移除所需的設定。 例如，部署至AEM Cloud Service環境的自訂索引中需要`/oak:index/damAssetLucene-8/tika`底下的`tika`節點，但本機AEM SDK上並不存在。
 
-針對OOTB索引的自訂，請準備包含遵循此命名模式之實際索引定義的新套件：
+對於OOTB索引的自訂，請準備包含遵循此命名模式之實際索引定義的新套件：
 
 `<indexName>-<productVersion>-custom-<customVersion>`
 
-對於完全自訂的索引，請準備新的索引定義封裝，其中包含遵循此命名模式的索引定義：
+對於完全自訂的索引，請準備新的索引定義套件，其中包含遵循此命名模式的索引定義：
 
 `<prefix>.<indexName>-<productVersion>-custom-<customVersion>`
 
@@ -308,11 +308,22 @@ Adobe變更開箱即用的索引（例如&quot;damAssetLucene&quot;或&quot;cqPa
 | /oak：index/cqPageLucene | 是 | 是 | 否 |
 | /oak：index/cqPageLucene-2 | 是 | 否 | 是 |
 
+請務必注意，環境可能使用不同的AEM版本。 例如： `dev`環境在發行版本`X+1`上，而階段和生產仍在發行版本`X`上，且在`dev`上執行必要的測試後，正在等待升級至發行版本`X+1`。 如果版本`X+1`隨附已自訂的較新版本產品索引，且需要對該索引進行新的自訂，則下表將說明需要根據AEM版本設定哪些環境版本：
+
+| 環境(AEM發行版本) | 產品索引版本 | 現有的自訂索引版本 | 新的自訂索引版本 |
+|-----------------------------------|-----------------------|-------------------------------|----------------------------|
+| 開發(X+1) | damAssetLucene-11 | damAssetLucene-11-custom-1 | damAssetLucene-11-custom-2 |
+| 階段(X) | damAssetLucene-10 | damAssetLucene-10-custom-1 | damAssetLucene-10-custom-2 |
+| Prod (X) | damAssetLucene-10 | damAssetLucene-10-custom-1 | damAssetLucene-10-custom-2 |
+
+
 ### 目前限制 {#current-limitations}
 
 僅型別`lucene`的索引支援索引管理，並將`compatVersion`設定為`2`。 在內部，可以設定其他索引並用於查詢，例如Elasticsearch索引。 在AEM as a Cloud Service上，針對`damAssetLucene`索引寫入的查詢實際上可能會針對此索引的Elasticsearch版本執行。 應用程式使用者不會看見這個差異，但某些工具（例如`explain`功能）會報告不同的索引。 如需Lucene與Elasticsearch索引之間的差異，請參閱[Apache Jackrabbit Oak中的Elasticsearch檔案](https://jackrabbit.apache.org/oak/docs/query/elastic.html)。 客戶不能也不需要直接設定Elasticsearch索引。
 
 僅支援內建分析器（即產品隨附的分析器）。 不支援自訂分析器。
+
+目前不支援為`/oak:index`的內容編制索引。
 
 為獲得最佳作業效能，索引不應過大。 所有索引的總計大小均可作為參考使用。 如果在新增自訂索引後，此大小增加超過100%，並且在開發環境中調整了標準索引，則應調整自訂索引定義。 AEM as a Cloud Service可防止部署可能對系統穩定性和效能造成負面影響的索引。
 
@@ -350,30 +361,7 @@ Adobe變更開箱即用的索引（例如&quot;damAssetLucene&quot;或&quot;cqPa
 
 下列專案僅適用於自訂索引。 當AEM使用產品索引時，無法移除這些索引。
 
-如果在較新版本的應用程式中移除索引，您可以使用新名稱定義空白索引（從未使用且不含任何資料的空白索引）。 在此範例中，您可以將其命名為`/oak:index/acme.product-custom-3`。 此名稱會取代索引`/oak:index/acme.product-custom-2`。 系統移除`/oak:index/acme.product-custom-2`之後，就可以移除空的索引`/oak:index/acme.product-custom-3`。 這類空白索引的範例為：
-
-```xml
-<acme.product-custom-3
-        jcr:primaryType="oak:QueryIndexDefinition"
-        async="async"
-        compatVersion="2"
-        includedPaths="/dummy"
-        queryPaths="/dummy"
-        type="lucene">
-        <indexRules jcr:primaryType="nt:unstructured">
-            <rep:root jcr:primaryType="nt:unstructured">
-                <properties jcr:primaryType="nt:unstructured">
-                    <dummy
-                        jcr:primaryType="nt:unstructured"
-                        name="dummy"
-                        propertyIndex="{Boolean}true"/>
-                </properties>
-            </rep:root>
-        </indexRules>
-</acme.product-custom-3>
-```
-
-如果不再需要自訂現成索引，則必須複製現成索引定義。 例如，如果您已經部署`damAssetLucene-8-custom-3`，但不再需要自訂，並且要切換回預設的`damAssetLucene-8`索引，則必須新增包含`damAssetLucene-8`的索引定義的索引`damAssetLucene-8-custom-4`。
+自訂索引可以從客戶存放庫中移除，以在客戶應用程式的較新版本中移除。 從存放庫移除的索引不用於AEM中的查詢，儘管它可能在執行個體中仍存在一段時間。 有定期執行的清除機制，可清除執行處理中的舊版索引。
 
 ## 索引和查詢最佳化 {#index-query-optimizations}
 
