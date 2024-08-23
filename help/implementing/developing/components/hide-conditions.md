@@ -4,7 +4,7 @@ description: 隱藏條件可用於判斷元件資源是否已轉譯。
 exl-id: 2a96f246-fb0f-4298-899e-ebbf9fc1c96f
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
 workflow-type: tm+mt
 source-wordcount: '584'
 ht-degree: 1%
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 # 使用隱藏條件 {#using-hide-conditions}
 
-隱藏條件可用於判斷元件資源是否已轉譯。 例如，範本作者在[範本編輯器](/help/sites-cloud/authoring/sites-console/templates.md)中設定核心元件[list元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/list.html)，並決定停用根據子頁面建立清單的選項。 在「設計」對話方塊中停用此選項會設定屬性，以便在轉譯清單元件時，會評估隱藏條件，且不顯示顯示子頁面的選項。
+隱藏條件可用於判斷元件資源是否已轉譯。 例如，範本作者在[範本編輯器](/help/sites-cloud/authoring/page-editor/templates.md)中設定核心元件[list元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/list.html)，並決定停用根據子頁面建立清單的選項。 在「設計」對話方塊中停用此選項會設定屬性，以便在轉譯清單元件時，會評估隱藏條件，且不顯示顯示子頁面的選項。
 
 ## 概觀 {#overview}
 
@@ -51,9 +51,9 @@ ${cqDesign.property1 == 'someText' && cqDesign.property2 || cqDesign.property3 !
 
 ## 範例 {#example}
 
-隱藏條件的範例可以在AEM中找到，特別是[核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hant)。 例如，將[清單核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/list.html)視為在[WKND教學課程](/help/implementing/developing/introduction/develop-wknd-tutorial.md)中實作。
+隱藏條件的範例可以在AEM中找到，特別是[核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-hant)。 例如，將[清單核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/list.html)視為在[WKND教學課程](/help/implementing/developing/introduction/develop-wknd-tutorial.md)中實作。
 
-[使用範本編輯器](/help/sites-cloud/authoring/sites-console/templates.md)，範本作者可以在設計對話方塊中定義清單元件中哪些選項可供頁面作者使用。 您可以啟用或停用選項，例如是否允許清單成為靜態清單、子頁面清單、標籤頁面清單等。
+[使用範本編輯器](/help/sites-cloud/authoring/page-editor/templates.md)，範本作者可以在設計對話方塊中定義清單元件中哪些選項可供頁面作者使用。 您可以啟用或停用選項，例如是否允許清單成為靜態清單、子頁面清單、標籤頁面清單等。
 
 如果範本作者選擇停用子頁面選項，則會設定設計屬性，並評估其隱藏條件，導致該選項無法針對頁面作者呈現。
 

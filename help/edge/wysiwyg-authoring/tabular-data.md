@@ -4,10 +4,10 @@ description: 了解如何使用試算表管理各種值的表格資料，例如�
 feature: Edge Delivery Services
 exl-id: 26d4db90-3e4b-4957-bf21-343c76322cdc
 role: Admin, Architect, Developer
-source-git-commit: 7ad9a959592f1e8cebbcad9a67d280d5b2119866
+source-git-commit: f8e305f636c7a7247d2a41f6ed25b1715bd8837c
 workflow-type: tm+mt
-source-wordcount: '958'
-ht-degree: 98%
+source-wordcount: '970'
+ht-degree: 97%
 
 ---
 
@@ -130,6 +130,7 @@ ht-degree: 98%
 * 中繼資料
 * 標頭
 * 設定
+* [分類法](/help/edge/wysiwyg-authoring/taxonomy.md)
 
 只需按照「[建立試算表](#spreadsheet)」和「[更新 paths.json](#paths-json)」等節中的相同步驟進行，並選擇適當範本及相關的 `paths.json` 檔案。
 
@@ -138,6 +139,7 @@ ht-degree: 98%
 * 設定：`/.helix/config.json`
 * 標頭：`/.helix/headers.json`
 * 中繼資料：`/metadata.json`
+* 分類：如需詳細資訊，請參閱檔案[管理分類資料](/help/edge/wysiwyg-authoring/taxonomy.md)。
 
 此外，您還可以[建立自己的試算表](#own-spreadsheet)，以及供您自己使用的任意資料欄。
 

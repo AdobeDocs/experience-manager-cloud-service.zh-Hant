@@ -5,7 +5,7 @@ feature: Administering
 role: Admin
 exl-id: 42eec922-b02e-4f2c-8107-7336192919c7
 solution: Experience Manager Sites
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
 workflow-type: tm+mt
 source-wordcount: '556'
 ht-degree: 19%
@@ -26,7 +26,7 @@ ht-degree: 19%
 
 >[!NOTE]
 >
->不應混淆AEM網站範本與[頁面範本](/help/sites-cloud/authoring/sites-console/templates.md)。 網站範本定義網站的整體結構。 頁面範本定義單一頁面的結構和初始內容。
+>不應混淆AEM網站範本與[頁面範本](/help/sites-cloud/authoring/page-editor/templates.md)。 網站範本定義網站的整體結構。 頁面範本定義單一頁面的結構和初始內容。
 >
 >AEM網站範本不應與[AEM網站主題](site-themes.md)混淆。 AEM網站主題僅包含AEM網站的樣式資訊。 AEM網站範本定義網站結構和初始內容，並包含AEM網站主題，以允許[快速建立網站](create-site.md)。
 

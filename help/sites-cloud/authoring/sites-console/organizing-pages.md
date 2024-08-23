@@ -5,7 +5,7 @@ exl-id: c57096ca-34fe-4b19-98e0-8f3cd43cf24e
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
 workflow-type: tm+mt
 source-wordcount: '799'
 ht-degree: 4%
@@ -118,7 +118,7 @@ ht-degree: 4%
 
 ## 範本 {#templates}
 
-在AEM中，[範本](/help/sites-cloud/authoring/sites-console/templates.md)是特殊型別的頁面，用來作為任何建立新頁面的基礎。
+在AEM中，[範本](/help/sites-cloud/authoring/page-editor/templates.md)是特殊型別的頁面，用來作為任何建立新頁面的基礎。
 
 範本定義包含縮圖影像和其他屬性的頁面結構。 例如，您可以為產品頁面、Sitemap和聯絡資訊使用不同的範本。 範本由[個元件](#components)組成。
 

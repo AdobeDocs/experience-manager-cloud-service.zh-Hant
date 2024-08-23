@@ -5,7 +5,7 @@ contentOwner: AG
 exl-id: 1f0ff800-5e95-429a-97f2-221db0668170
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
 workflow-type: tm+mt
 source-wordcount: '1858'
 ht-degree: 0%
@@ -154,7 +154,7 @@ RTE功能可透過一系列外掛程式使用，每個外掛程式都具備功�
 <!-- TBD ENGREVIEW: To confirm if the sample works in CS or not?
 **Sample**: Download [this sample configuration](/help/sites-administering/assets/rte-sample-all-features-enabled-10.zip) that illustrates how to configure RTE. In this package all the features are enabled. -->
 
-[核心元件文字元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html#the-text-component-and-the-rich-text-editor)可讓範本編輯器使用使用者介面作為內容原則來設定許多RTE外掛程式，而不需要技術設定。 內容原則可搭配使用RTE UI設定，如本檔案所述。 如需詳細資訊，請參閱[建立頁面範本](/help/sites-cloud/authoring/sites-console/templates.md)以及[核心元件開發人員檔案](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html)。
+[核心元件文字元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html#the-text-component-and-the-rich-text-editor)可讓範本編輯器使用使用者介面作為內容原則來設定許多RTE外掛程式，而不需要技術設定。 內容原則可搭配使用RTE UI設定，如本檔案所述。 如需詳細資訊，請參閱[建立頁面範本](/help/sites-cloud/authoring/page-editor/templates.md)以及[核心元件開發人員檔案](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html)。
 
 >為了參考之用，預設Text元件（作為標準安裝的一部分提供）可在以下位置找到：
 >
@@ -220,7 +220,7 @@ RTE功能可透過一系列外掛程式使用，每個外掛程式都具備功�
 
 ## RTE使用者介面設定和內容原則 {#rtecontentpolicies}
 
-管理員可以使用內容原則來控制RTE選項，而不是如上所述進行設定。 當內容原則用作[可編輯的範本](/help/sites-cloud/authoring/sites-console/templates.md)的一部分時，會定義元件的設計屬性。 例如，如果使用RTE的文字元件搭配可編輯的範本使用，則內容原則可定義粗體選項為可用，而一些段落格式選項為可用。 內容原則可重複使用，並可套用至多個範本。
+管理員可以使用內容原則來控制RTE選項，而不是如上所述進行設定。 當內容原則用作[可編輯的範本](/help/sites-cloud/authoring/page-editor/templates.md)的一部分時，會定義元件的設計屬性。 例如，如果使用RTE的文字元件搭配可編輯的範本使用，則內容原則可定義粗體選項為可用，而一些段落格式選項為可用。 內容原則可重複使用，並可套用至多個範本。
 
 RTE中可用的選項會從使用者介面設定向下流向內容原則。
 

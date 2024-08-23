@@ -4,7 +4,7 @@ description: 開發人員參考指南，瞭解元件及其結構的詳細資訊
 exl-id: 45e5265b-39d6-4a5c-be1a-e66bb7ea387d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
 workflow-type: tm+mt
 source-wordcount: '3481'
 ht-degree: 1%
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 # 元件參考指南 {#components-reference-guide}
 
-元件是在AEM中建立體驗的核心。 [核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hant)和[AEM專案原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hant)可讓您輕鬆開始使用一組現成且強大的元件。 [WKND教學課程](/help/implementing/developing/introduction/develop-wknd-tutorial.md)會帶領開發人員瞭解如何使用這些工具，以及如何建置自訂元件來建立AEM網站。
+元件是在AEM中建立體驗的核心。 [核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-hant)和[AEM專案原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hant)可讓您輕鬆開始使用一組現成且強大的元件。 [WKND教學課程](/help/implementing/developing/introduction/develop-wknd-tutorial.md)會帶領開發人員瞭解如何使用這些工具，以及如何建置自訂元件來建立AEM網站。
 
 >[!TIP]
 >
@@ -223,9 +223,9 @@ AEM元件的對話方塊：
 
 ### 設計對話方塊 {#design-dialogs}
 
-「設計」對話方塊類似於用來編輯和設定內容的對話方塊，但它們為範本作者提供了介面，讓他們可以預先設定，並為頁面範本上的該元件提供設計詳細資訊。 然後，內容作者會使用頁面範本來建立內容頁面。 如需如何建立範本的詳細資訊，請參閱[範本檔案](/help/sites-cloud/authoring/sites-console/templates.md)。
+「設計」對話方塊類似於用來編輯和設定內容的對話方塊，但它們為範本作者提供了介面，讓他們可以預先設定，並為頁面範本上的該元件提供設計詳細資訊。 然後，內容作者會使用頁面範本來建立內容頁面。 如需如何建立範本的詳細資訊，請參閱[範本檔案](/help/sites-cloud/authoring/page-editor/templates.md)。
 
-編輯頁面範本](/help/sites-cloud/authoring/sites-console/templates.md)時會使用[設計對話方塊，不過並非所有元件都需要。 例如，**Title**&#x200B;和&#x200B;**影像元件**&#x200B;都有設計對話方塊，而&#x200B;**社群媒體共用元件**&#x200B;則沒有。
+編輯頁面範本](/help/sites-cloud/authoring/page-editor/templates.md)時會使用[設計對話方塊，不過並非所有元件都需要。 例如，**Title**&#x200B;和&#x200B;**影像元件**&#x200B;都有設計對話方塊，而&#x200B;**社群媒體共用元件**&#x200B;則沒有。
 
 ### Coral UI和Granite UI {#coral-and-granite}
 
@@ -280,7 +280,7 @@ Content not found
 
 定義元件後，該元件必須可供使用。 若要讓元件可在範本中使用，您必須在範本的版面配置容器原則中啟用該元件。
 
-如需如何建立範本的詳細資訊，請參閱[範本檔案](/help/sites-cloud/authoring/sites-console/templates.md)。
+如需如何建立範本的詳細資訊，請參閱[範本檔案](/help/sites-cloud/authoring/page-editor/templates.md)。
 
 ### 元件及其建立的內容 {#components-and-the-content-they-create}
 

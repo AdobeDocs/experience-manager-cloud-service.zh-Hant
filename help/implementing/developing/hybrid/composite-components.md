@@ -4,7 +4,7 @@ description: 瞭解如何建立自己的複合元件，也就是由AEM單頁應�
 exl-id: fa1ab1dd-9e8e-4e2c-aa9a-5b46ed8a02cb
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
 workflow-type: tm+mt
 source-wordcount: '782'
 ht-degree: 1%
@@ -158,7 +158,7 @@ function Home() {
     itemPath='root/responsivegrid' />
    ```
 
-1. 將已建立的`wknd-spa/components/imagecard`元件新增至頁面範本](/help/sites-cloud/authoring/sites-console/templates.md)中容器元件[的允許元件。
+1. 將已建立的`wknd-spa/components/imagecard`元件新增至頁面範本](/help/sites-cloud/authoring/page-editor/templates.md)中容器元件[的允許元件。
 
 現在可以直接將`imagecard`元件新增到AEM編輯器中的容器。
 

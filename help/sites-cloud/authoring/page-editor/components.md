@@ -5,7 +5,7 @@ exl-id: a8118329-1330-49b0-a3f8-a27774f1c5df
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 7ad9a959592f1e8cebbcad9a67d280d5b2119866
+source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
 workflow-type: tm+mt
 source-wordcount: '335'
 ht-degree: 2%
@@ -42,7 +42,7 @@ AEM隨附多種現成可用的元件，可為網站作者提供全方位功能�
 
 ## 核心元件 {#core-components}
 
-[核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hant)提供彈性且功能豐富的製作功能，可提供建立頁面所需的基本內容型別。
+[核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-hant)提供彈性且功能豐富的製作功能，可提供建立頁面所需的基本內容型別。
 
 它們是使用AEM最佳實務建置的，也是AEM編寫體驗的基礎。 開發人員可輕鬆擴充核心元件，以符合特定專案需求。
 
@@ -50,4 +50,4 @@ AEM隨附多種現成可用的元件，可為網站作者提供全方位功能�
 
 ### 設定範本 {#configuring-templates}
 
-如果您的頁面是以建議的、最新的可編輯範本為基礎，您可以[編輯範本](/help/sites-cloud/authoring/sites-console/templates.md)啟用/停用這些專案，以及編輯特定元件的引數。
+如果您的頁面是以建議的、最新的可編輯範本為基礎，您可以[編輯範本](/help/sites-cloud/authoring/page-editor/templates.md)啟用/停用這些專案，以及編輯特定元件的引數。

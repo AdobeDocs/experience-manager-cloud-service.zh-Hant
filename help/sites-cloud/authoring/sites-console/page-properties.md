@@ -5,7 +5,7 @@ exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
 workflow-type: tm+mt
 source-wordcount: '2268'
 ht-degree: 3%
@@ -38,7 +38,7 @@ ht-degree: 3%
 
 * **品牌**
 
-  藉由將品牌概要附加至每個頁面標題，跨頁面套用一致的品牌識別。 此功能需要使用2.14.0版或更新版本的[核心元件。](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hant)的頁面元件
+  藉由將品牌概要附加至每個頁面標題，跨頁面套用一致的品牌識別。 此功能需要使用2.14.0版或更新版本的[核心元件。](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-hant)的頁面元件
 
    * **品牌概要**
 
@@ -118,7 +118,7 @@ ht-degree: 3%
 
 * **範本設定**
 
-   * **允許的範本** - [定義此子分支內可用的範本清單](/help/sites-cloud/authoring/sites-console/templates.md#enabling-and-allowing-a-template-template-author)
+   * **允許的範本** - [定義此子分支內可用的範本清單](/help/sites-cloud/authoring/page-editor/templates.md#enabling-and-allowing-a-template-template-author)
 
 * **驗證需求**
 

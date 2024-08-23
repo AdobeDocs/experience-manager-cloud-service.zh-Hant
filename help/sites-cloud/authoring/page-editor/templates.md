@@ -2,9 +2,12 @@
 title: 建立頁面範本
 description: 範本會定義結果頁面的結構，且使用範本編輯器，建立和維護範本不再是開發人員專屬的工作
 exl-id: 4c9dbf26-5852-45ab-b521-9f051c153b2e
-source-git-commit: c79aeaab9d33f1c2a15f93d58847798c6caff31c
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
 workflow-type: tm+mt
-source-wordcount: '4522'
+source-wordcount: '4524'
 ht-degree: 9%
 
 ---
@@ -13,7 +16,7 @@ ht-degree: 9%
 
 建立頁面時，您必須選取範本，作為建立新頁面的基礎。 範本會定義結果頁面的結構、任何初始內容以及可以使用的元件。
 
-使用&#x200B;**範本編輯器**，建立和維護範本不是開發人員專屬的工作。 也可以涉及一種稱為模板作 **者的權**&#x200B;力用戶。開發人員仍需要設定環境、建立用戶端程式庫和建立要使用的元件，但是當這些基本功能準備就緒後，範本作者就可以彈性地建立和設定範本，而不需要開發專案。****
+使用范 **本編輯器**，建立和維護範本不再是開發人員專屬的工作。也可以涉及一種稱為模板作 **者的權**&#x200B;力用戶。開發人員仍需要設定環境、建立用戶端程式庫和建立要使用的元件，但是當這些基本功能準備就緒後，範本作者就可以彈性地建立和設定範本，而不需要開發專案。****
 
 **範本主控台**&#x200B;允許範本作者：
 
@@ -78,7 +81,7 @@ ht-degree: 9%
    * [結構](#editing-a-template-structure-template-author) — 無法在使用範本建立的頁面上變更的預先定義內容。
    * [初始內容](#editing-a-template-initial-content-author) — 可在使用範本建立的頁面上變更的預先定義內容。
    * [配置](#editing-a-template-layout-template-author) — 適用於一系列裝置。
-   * [樣式](/help/sites-cloud/authoring/features/style-system.md) — 定義要用於範本及其元件的樣式。
+   * [樣式](/help/sites-cloud/authoring/page-editor/style-system.md) — 定義要用於範本及其元件的樣式。
 * [啟用範本](#enabling-a-template-template-author)，以便在建立頁面時使用
 * [允許範本](#allowing-a-template-author)用於您的網站所需頁面或分支
 * [Publish範本](#publishing-a-template-template-author)，使其可在發佈環境中使用
@@ -184,7 +187,7 @@ ht-degree: 9%
 
 1. 在&#x200B;**範本主控台**&#x200B;中，選取範本。
 1. 從工具列選取&#x200B;**啟用**&#x200B;或&#x200B;**停用**，然後在確認對話方塊中再次選取。
-1. 您現在可以在[建立頁面](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page)時使用範本，不過您可能想要根據自己的需求[編輯範本](#editing-templates-template-authors)。
+1. 您現在可以在[建立頁面](/help/sites-cloud/authoring/sites-console/creating-pages.md#creating-a-new-page)時使用範本，不過您可能想要根據自己的需求[編輯範本](#editing-templates-template-authors)。
 
 >[!NOTE]
 >
@@ -194,7 +197,7 @@ ht-degree: 9%
 
 範本可以供某些頁面分支使用或無法使用。
 
-1. 針對您希望範本可用的分支根頁面，開啟[頁面屬性](/help/sites-cloud/authoring/fundamentals/page-properties.md)。
+1. 針對您希望範本可用的分支根頁面，開啟[頁面屬性](/help/sites-cloud/authoring/sites-console/page-properties.md)。
 1. 開啟&#x200B;**進階**&#x200B;標籤。
 1. 在「 **範本設定** 」下 **，使用「新增」欄位** ，指定範本的路徑。
 
@@ -270,7 +273,7 @@ ht-degree: 9%
 
 #### 版面配置 {#template-layout}
 
-使用版 [面](#editing-a-template-layout-template-author) ，您可以預先定義所需裝置格式的範本版面。**範本製作的** 「版面」模式與頁面製作的「版面 [**** 」模式功能相同](/help/sites-cloud/authoring/features/responsive-layout.md#defining-layouts-layout-mode)。
+使用版 [面](#editing-a-template-layout-template-author) ，您可以預先定義所需裝置格式的範本版面。**範本製作的** 「版面」模式與頁面製作的「版面 [**** 」模式功能相同](/help/sites-cloud/authoring/page-editor/responsive-layout.md#defining-layouts-layout-mode)。
 
 #### 頁面原則 {#template-page-policies}
 
@@ -278,9 +281,9 @@ ht-degree: 9%
 
 #### 樣式 {#template-styles}
 
-[樣式系統](/help/sites-cloud/authoring/features/style-system.md)可讓範本作者在元件的內容原則中定義樣式類別，讓內容作者在編輯頁面上的元件時能夠選取這些類別。 這些樣式可作為元件的替代視覺變體，使其更靈活。
+樣式系統可讓範本作者在元件的內容原則中定義樣式類別，讓內容作者在編輯頁面上的元件時能夠選取這些類別。 這些樣式可作為元件的替代視覺變體，使其更靈活。
 
-如需詳細資訊，請參閱[樣式系統檔案](/help/sites-cloud/authoring/features/style-system.md)。
+如需詳細資訊，請參閱[樣式系統檔案](/help/sites-cloud/authoring/page-editor/style-system.md)。
 
 ### 編輯範本 — 結構 — 範本作者 {#editing-a-template-structure-template-author}
 
@@ -319,7 +322,7 @@ ht-degree: 9%
 
 >[!NOTE]
 >
->將元件和資產新增至範本時，雖然並不完全相同，但在[頁面製作](/help/sites-cloud/authoring/fundamentals/editing-content.md)時，與類似的動作有許多相似之處。
+>將元件和資產新增至範本時，雖然並不完全相同，但在[頁面編寫時，與類似的動作有許多相似之處。](/help/sites-cloud/authoring/page-editor/edit-content.md)
 
 #### 元件動作 {#component-actions}
 
@@ -536,7 +539,7 @@ ht-degree: 9%
 
 ### 編輯範本 — 版面 — 範本作者 {#editing-a-template-layout-template-author}
 
-您可以為一系列裝置定義範本配置。 範本的[回應式佈局](/help/sites-cloud/authoring/features/responsive-layout.md)運作方式與頁面製作相同。
+您可以為一系列裝置定義範本配置。 範本的[回應式佈局](/help/sites-cloud/authoring/page-editor/responsive-layout.md)運作方式與頁面製作相同。
 
 >[!NOTE]
 >
@@ -611,7 +614,7 @@ ht-degree: 9%
 
 ### 編輯範本 — 初始頁面屬性 — 作者 {#editing-a-template-initial-page-properties-author}
 
-使用&#x200B;**初始頁面屬性**&#x200B;選項，您可以定義建立結果頁面時要使用的初始[頁面屬性](/help/sites-cloud/authoring/fundamentals/page-properties.md)。
+使用&#x200B;**初始頁面屬性**&#x200B;選項，您可以定義建立結果頁面時要使用的初始[頁面屬性](/help/sites-cloud/authoring/sites-console/page-properties.md)。
 
 1. 在範本編輯器中，從工具列選取&#x200B;**頁面資訊**，然後選取&#x200B;**初始頁面屬性**&#x200B;以開啟對話方塊。
 

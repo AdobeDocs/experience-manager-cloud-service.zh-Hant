@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的運作方式以及該軟體可以為您做哪些事。
 breadcrumb-title: 使用手冊
 user-guide-title: AEM as a Cloud Service
-source-git-commit: a9b7e2fbafcfc4b5592cc95e6bbd1e8e0f631757
-workflow-type: ht
-source-wordcount: '5340'
-ht-degree: 100%
+source-git-commit: 773ce75975f4dcc2c5310422bcc377b487ebec25
+workflow-type: tm+mt
+source-wordcount: '5348'
+ht-degree: 99%
 
 ---
 
@@ -319,7 +319,6 @@ ht-degree: 100%
          + [頁面屬性](/help/sites-cloud/authoring/sites-console/page-properties.md)
          + [預覽頁面](/help/sites-cloud/authoring/sites-console/previewing-content.md)
          + [發佈頁面](/help/sites-cloud/authoring/sites-console/publishing-pages.md)
-         + [頁面範本](/help/sites-cloud/authoring/sites-console/templates.md)
          + [頁面版本](/help/sites-cloud/authoring/sites-console/page-versions.md)
          + [頁面差異](/help/sites-cloud/authoring/sites-console/page-diff.md)
          + [使用標記](/help/sites-cloud/authoring/sites-console/tags.md)
@@ -330,6 +329,7 @@ ht-degree: 100%
          + [頁面編輯器](/help/sites-cloud/authoring/page-editor/introduction.md)
          + [編輯器側面板](/help/sites-cloud/authoring/page-editor/editor-side-panel.md)
          + [編輯頁面](/help/sites-cloud/authoring/page-editor/edit-content.md)
+         + [頁面範本](/help/sites-cloud/authoring/page-editor/templates.md)
          + [新增頁面註解](/help/sites-cloud/authoring/page-editor/annotations.md)
          + [RTF 編輯器](/help/sites-cloud/authoring/page-editor/rich-text-editor.md)
          + [回應式版面](/help/sites-cloud/authoring/page-editor/responsive-layout.md)
@@ -344,6 +344,7 @@ ht-degree: 100%
          + [使用通用編輯器製作內容](/help/sites-cloud/authoring/universal-editor/authoring.md)
          + [使用通用編輯器發佈內容](/help/sites-cloud/authoring/universal-editor/publishing.md)
          + [通用編輯器中的內容繼承](/help/sites-cloud/authoring/universal-editor/inheritance.md)
+         + [頁面範本](/help/edge/wysiwyg-authoring/templates.md)
       + 片段 {#fragments}
          + [內容片段](/help/sites-cloud/authoring/fragments/content-fragments.md)
          + [體驗片段](/help/sites-cloud/authoring/fragments/experience-fragments.md)
@@ -886,6 +887,8 @@ ht-degree: 100%
       + [建立內容模式](/help/edge/wysiwyg-authoring/content-modeling.md)
       + [表格資料和試算表](/help/edge/wysiwyg-authoring/tabular-data.md)
       + [現有專案和 Edge Delivery](/help/edge/wysiwyg-authoring/existing-projects.md)
+      + [管理分類資料](/help/edge/wysiwyg-authoring/taxonomy.md)
+      + [在製品網站功能](/help/edge/wysiwyg-authoring/wip-features.md)
    + 文件型的製作 {#document-authoring}
       + [製作](/help/edge/docs/authoring.md)
       + [大量中繼資料](/help/edge/docs/bulk-metadata.md)

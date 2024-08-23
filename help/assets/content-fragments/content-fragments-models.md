@@ -5,7 +5,7 @@ exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
 feature: Content Fragments, GraphQL API
 role: User, Admin, Architect
 solution: Experience Manager Sites
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
 workflow-type: tm+mt
 source-wordcount: '3011'
 ht-degree: 6%
@@ -386,7 +386,7 @@ GraphQL中也有片段參考的週期性保護。 如果您在兩個相互參照
 
 >[!NOTE]
 >
-此機制類似於[允許在頁面的進階屬性中，為頁面及其子頁面設定頁面範本](/help/sites-cloud/authoring/sites-console/templates.md#allowing-a-template-author)。
+此機制類似於[允許在頁面的進階屬性中，為頁面及其子頁面設定頁面範本](/help/sites-cloud/authoring/page-editor/templates.md#allowing-a-template-author)。
 
 若要為&#x200B;**允許的內容片段模型**&#x200B;設定&#x200B;**原則**：
 

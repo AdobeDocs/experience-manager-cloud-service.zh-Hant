@@ -4,7 +4,7 @@ description: 瞭解Adobe Experience Manager (AEM)設定，以及這些設定如�
 exl-id: 0ade04df-03a9-4976-a4b7-c01b4748474d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
 workflow-type: tm+mt
 source-wordcount: '1482'
 ht-degree: 4%
@@ -37,7 +37,7 @@ AEM管理員和作者可以將設定視為工作區。 藉由實作這些功能�
 
 * [上下文中心區段](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
 * [內容片段模型](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
-* [可編輯的範本](/help/sites-cloud/authoring/sites-console/templates.md)
+* [可編輯的範本](/help/sites-cloud/authoring/page-editor/templates.md)
 * 各種雲端設定
 
 ### 範例 {#administrator-example}
@@ -83,7 +83,7 @@ AEM管理員和作者可以將設定視為工作區。 藉由實作這些功能�
 1. 檢查您要允許的設定型別。
    * [上下文中心區段](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
    * [內容片段模型](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
-   * [可編輯的範本](/help/sites-cloud/authoring/sites-console/templates.md)
+   * [可編輯的範本](/help/sites-cloud/authoring/page-editor/templates.md)
    * 各種雲端設定
 1. 選取「**建立**」。
 

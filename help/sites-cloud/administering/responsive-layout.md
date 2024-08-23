@@ -5,7 +5,7 @@ exl-id: 469e8151-8231-4ccc-b7f6-855545f87440
 solution: Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
 workflow-type: tm+mt
 source-wordcount: '1250'
 ht-degree: 0%
@@ -223,9 +223,9 @@ AEM使用LESS來產生必要CSS的部分，這些需要包含在您的專案中�
 
 若要讓作者更能回應式地新增網格至內容頁面，您必須啟用頁面的「配置容器」元件。 您可以透過以下其中一種方式來達成此目的：
 
-* **透過作者環境** - [編輯您的頁面範本](/help/sites-cloud/authoring/sites-console/templates.md)以啟用頁面的配置容器。
+* **透過作者環境** - [編輯您的頁面範本](/help/sites-cloud/authoring/page-editor/templates.md)以啟用頁面的配置容器。
 * **元件定義** — 在定義元件時使用`allowedComponent`或靜態包含。
 
 ### 設定配置容器的格線 {#configure-the-grid-of-the-layout-container}
 
-您可以編輯您的頁面範本，設定配置容器[的每個特定執行個體可用的欄數。](/help/sites-cloud/authoring/sites-console/templates.md)
+您可以編輯您的頁面範本，設定配置容器[的每個特定執行個體可用的欄數。](/help/sites-cloud/authoring/page-editor/templates.md)

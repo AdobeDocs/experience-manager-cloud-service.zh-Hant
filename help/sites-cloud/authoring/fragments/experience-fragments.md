@@ -5,7 +5,7 @@ exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
 solution: Experience Manager Sites
 feature: Authoring, Experience Fragments
 role: User
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
 workflow-type: tm+mt
 source-wordcount: '2099'
 ht-degree: 3%
@@ -95,7 +95,7 @@ ht-degree: 3%
 
   >[!NOTE]
   >
-  >您可以使用[範本編輯器](/help/sites-cloud/authoring/sites-console/templates.md)來建立您自己的範本。
+  >您可以使用[範本編輯器](/help/sites-cloud/authoring/page-editor/templates.md)來建立您自己的範本。
 
 WKND專案會根據`Contributors`建構一些體驗片段。 使用的結構也說明了如何使用其他功能，例如「多網站管理」（包括語言副本）。
 

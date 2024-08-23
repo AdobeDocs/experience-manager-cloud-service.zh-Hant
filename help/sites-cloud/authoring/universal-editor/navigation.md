@@ -4,7 +4,7 @@ description: 瞭解存取和導覽Universal Editor的基本知識。
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: eecbc48a77e92b064be9fcdbe547fb330f8d40e0
+source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
 workflow-type: tm+mt
 source-wordcount: '1576'
 ht-degree: 42%
@@ -48,7 +48,7 @@ Universal Editor 支援在任意實作中編輯任何方面的內容，以便提
 
 >[!NOTE]
 >
->在&#x200B;[**網站**&#x200B;主控台中編輯頁面時，](/help/sites-cloud/authoring/sites-console/introduction.md)主控台將開啟適合頁面[範本：](/help/sites-cloud/authoring/sites-console/templates.md)的編輯器，可以是本檔案中說明的通用編輯器，或[頁面編輯器。](/help/sites-cloud/authoring/page-editor/introduction.md)
+>在&#x200B;[**網站**&#x200B;主控台中編輯頁面時，](/help/sites-cloud/authoring/sites-console/introduction.md)主控台將開啟適合頁面[範本：](/help/sites-cloud/authoring/page-editor/templates.md)的編輯器，可以是本檔案中說明的通用編輯器，或[頁面編輯器。](/help/sites-cloud/authoring/page-editor/introduction.md)
 
 ### 直接存取 {#accessing-directly}
 
