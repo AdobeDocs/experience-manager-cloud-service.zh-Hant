@@ -4,10 +4,10 @@ description: 瞭解如何在AEM Assets檢視中搜尋和探索資產。 強大�
 role: User
 exl-id: abfe6a91-1699-436f-8bf4-0d0bf2369f46
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: 940e62432b8234f90c84d6c7a09dd60e643a3ae5
+source-git-commit: f30d9d43de926e3d0d62dba351c75a0c9641c53e
 workflow-type: tm+mt
-source-wordcount: '1908'
-ht-degree: 92%
+source-wordcount: '2002'
+ht-degree: 76%
 
 ---
 
@@ -19,15 +19,15 @@ ht-degree: 92%
 >abstract="透過指定搜尋列中的關鍵字或根據資產的狀態、檔案類型、MIME 類型、大小、建立、修改和到期日期篩選資產，來搜尋資產。您除了標準篩選器之外，還可以套用自訂篩選器。您可以將篩選的結果另存為「已儲存搜尋」或「智慧型集合」。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/manage-collections.html?lang=zh-Hant#manage-smart-collection" text="建立智慧型集合"
 
-[!DNL Assets view] 的預設功能即提供有效的搜尋。由於是全文檢索搜尋，因此十分全面。強大的搜尋功能可讓您快速探索合適的資產，協助您改善內容速度。[!DNL Assets view] 提供全文檢索搜尋，甚至還透過如智慧標記、標題、建立的日期和版本等中繼資料進行搜尋。
+[!DNL Assets view]提供有效的搜尋，預設即適用。 此搜尋是全文字搜尋，因此十分全面。 強大的搜尋功能可讓您快速探索合適的資產，協助您改善內容速度。[!DNL Assets view] 提供全文檢索搜尋，甚至還透過如智慧標記、標題、建立的日期和版本等中繼資料進行搜尋。
 
-若要搜尋資產：
+若要搜尋資產，
 
 * 按一下頁面頂部的搜尋方塊。預設為在您目前瀏覽的資料夾內進行搜尋。執行下列任一項作業：
 
   ![搜尋方塊](assets/search-box.png)
 
-   * 使用關鍵字進行搜尋，並選取變更資料夾。按下「Return」。
+   * 使用關鍵字搜尋，並選擇變更資料夾。 按下「Return」。
 
    * 開始直接搜尋最近檢視的資產，然後使用該資產。在搜尋方塊中按一下，然後從建議中選取最近檢視的資產。
 
@@ -42,7 +42,7 @@ ht-degree: 92%
 * 資產狀態：使用 `Approved`、`Rejected` 或 `No Status` 資產狀態來篩選搜尋結果。
 
 * 檔案類型：依照支援的檔案類型篩選搜尋結果，也就是 `Images`、`Documents` 和 `Videos`。
-* MIME 類型：篩選一個或更多支援的檔案格式。<!-- TBD:  [supported file formats](/help/assets/supported-file-formats-assets-view.md). -->
+* MIME 類型：篩選一個或更多支援的檔案格式。<!-- TBD:  [supported file formats](/help/using/supported-file-formats.md). -->
 * 影像大小：提供一個或更多最小和最大尺寸，以篩選影像。以尺寸 (像素) 提供大小，而非影像的檔案大小。
 * 建立日期：資產的建立日期如中繼資料中所提供。使用的標準日期格式為 `yyyy-mm-dd`。
 * 修改日期：上次修改資產的日期。使用的標準日期格式為 `yyyy-mm-dd`。
@@ -51,7 +51,7 @@ ht-degree: 92%
 
 * 自訂篩選器： [新增自訂篩選器](#custom-filters)至Assets檢視使用者介面。 除了標準篩選器之外，您還可以套用這些自訂篩選器來縮小您的搜尋結果。
 
-您可以依照 `Name`、`Relevancy`、`Size`、`Modified` 和 `Created` 的遞增或遞減順序排序搜尋的資產。
+您可以依照 `Name`、`Relevance`、`Size`、`Modified` 和 `Created` 的遞增或遞減順序排序搜尋的資產。已搜尋的資產會依`Relevance` (依預設) 進行排序。
 
 ## 管理自訂篩選器 {#custom-filters}
 
@@ -125,41 +125,51 @@ Assets檢視提供下列自訂篩選器：
 
 您可以利用 [!DNL Experience Manager Assets] 中的 [!DNL Adobe Firefly] 資產搜尋功能，搜尋任何資產資料夾中都找不到的資產。您就可以有效率且即時地產生未儲存在資產資料夾中的資產。
 
-### 開始之前
+### 開始之前 {#search-assets-firefly-prereqs}
 
 您必須擁有使用中的 [!DNL Adobe Express] 訂閱。
 
-### 產生資產
+### 產生資產 {#generate-assets-firefly}
 
 如要使用 [!DNL Adobe Firefly] 來產生新資產：
 
 1. 瀏覽至 [!DNL AEM Assets] 工作區。
-1. 在頁面頂部的搜尋欄中，輸入資產名稱。<br>
-例如，您可以使用關鍵字 `Bugatti Type 57` 來搜尋資產。搜尋資產時，若找不到任何結果，是因為該資產不存在於任何資產資料夾中。
-1. 在頁面中間的搜尋欄中，輸入資產名稱，然後按一下 **[!UICONTROL 產生]**。
-   ![Firefly 整合](assets/firefly-integration.jpg)
-   *圖：未在資產資料夾中找到 Bugatti Type 57 的結果。* <br>
-新資產已成功產生。
-   ![Firefly 整合](assets/bugatti-type-57.jpg)
-   *圖：使用 [!DNL Adobe Firefly] 資產搜尋功能，搜尋參照資產。* <br>
-您可以將這些資產上傳到您偏好的資料夾，以便存取。
 
-### 上傳資產
+1. 在搜尋列中鍵入資產名稱。 例如，您可以使用關鍵字`Bugatti Type 57`來搜尋資產。 搜尋資產時，由於資產不存在於任何資產資料夾中，因此找不到結果。 若要使用AI產生資產，請按一下[使用Firefly產生]。**** [!DNL Adobe Firefly]畫面會出現。
+
+   ![Firefly 整合](assets/firefly-integration.png)
+
+   新資產已成功產生。 此外，您可以在描述方塊中輸入新的文字提示來變更影像描述。 [瞭解如何撰寫良好的AI提示，以產生非凡的相關內容。](https://helpx.adobe.com/in/firefly/using/tips-and-tricks.html)或者，您也可以[使用各種其他功能（例如變更樣式、影像尺寸等等）編輯影像。](https://helpx.adobe.com/in/firefly/using/text-to-image.html)
+
+   ![Firefly 整合](assets/bugatti-type-57.png)
+
+1. 選取要儲存的影像。 按一下「儲存」****&#x200B;將資產儲存在您偏好的資料夾中，以方便存取。
+
+1. 儲存資產表單隨即顯示。 指定下列欄位：
+
+   * 在&#x200B;**另存新檔**&#x200B;欄位中輸入檔案名稱。
+   * 選取目的地資料夾。
+   * 提供專案或行銷活動名稱、關鍵字、頻道、時間範圍和區域等詳細資訊。
+
+   ![Firefly 整合](assets/save-generated-asset.png)
+
+1. 按一下&#x200B;**另存為新資產**&#x200B;以儲存資產。
+
+### 上傳資產 {#upload-assets-firefly}
 
 若要將產生的資產上傳到資產存放庫：
 
 1. 按一下 **[!UICONTROL 上傳]**。
 1. 選取需要上傳資產的資產資料夾，然後按一下 **[!UICONTROL 選取資料夾]**。
    ![上傳資產](assets/upload-asset-firefly.jpg)
-   *圖：選取要上傳資產的資料夾。*
 
 ## 已儲存搜尋 {#saved-search}
 
-搜尋功能可以在 [!DNL Assets view] 中輕鬆使用。從搜尋方塊中，您只需輸入關鍵字並按Return鍵即可檢視結果，或者只要按一下即可快速再次搜尋最近搜尋的關鍵字。
+搜尋功能可以在 [!DNL Assets view] 中輕鬆使用。在搜尋方塊中，您不可以只輸入關鍵字然後按下Return來檢視結果，也可以按一下快速再次搜尋最近搜尋的關鍵字。
 
 您也可以根據資產的中繼資料和類型的特定條件，來篩選搜尋結果。對於常用的篩選條件，若要改善搜尋體驗，[!DNL Assets view] 可讓您儲存搜尋參數。您稍後可以選取已儲存搜尋，按一下即可搜尋並套用篩選器。
 
-若要建立已儲存搜尋，請搜尋某個資產、套用一個或更多篩選條件，然後按一下「[!UICONTROL 篩選器]」面板中的「**[!UICONTROL 另存新檔]** > **[!UICONTROL 儲存搜尋]**」。您也可以按一下「**[!UICONTROL 另存新檔]**」並選取「**[!UICONTROL 智慧型集合]**」將結果儲存為智慧型集合。如需詳細資料，請參閱[建立智慧型集合](manage-collections-assets-view.md#create-a-smart-collection)。
+若要建立已儲存搜尋，請搜尋某個資產、套用一個或更多篩選條件，然後按一下「[!UICONTROL 篩選器]」面板中的「**[!UICONTROL 另存新檔]** > **[!UICONTROL 儲存搜尋]**」。您也可以按一下「**[!UICONTROL 另存新檔]**」並選取「**[!UICONTROL 智慧型集合]**」將結果儲存為智慧型集合。如需詳細資料，請參閱[建立智慧型集合](manage-collections.md#create-a-smart-collection)。
 
 ![建立智慧型集合](assets/create-smart-collection.png)
 
@@ -178,7 +188,7 @@ When userA is searching and userB add an asset that matches search results, will
 
 您可以選取搜尋結果中顯示的資產，然後執行以下動作：
 
-* **尋找類似影像**：根據中繼資料和智慧標記在 Assets UI 中尋找類似影像資產。
+* **尋找類似的影像**：根據中繼資料和智慧標籤，在Assets UI中尋找類似的影像資產。
 
 * **詳細資料**：檢視和編輯資產屬性。
 
@@ -206,29 +216,29 @@ When userA is searching and userB add an asset that matches search results, will
 
 * **指派任務**：將資產的任務指派給使用者。
 
-* **觀看**：[監視](manage-notifications-assets-view.md)針對資產執行的作業。
+* **觀看**：[監視](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/assets/manage/search-assets)針對資產執行的作業。
 
 ## 設定搜尋優先首頁 {#configuring-search-first-homepage}
 
-Experience Manager Assets可讓您為組織選取預設登陸頁面。 使用「搜尋優先」作為首頁時，會有幾個選項讓您設定符合您品牌的背景和標誌影像，以量身打造品牌頁面。
+Assets檢視可讓您為組織選取預設登陸頁面。 使用「搜尋優先」作為首頁時，會有幾個選項讓您設定符合您品牌的背景和標誌影像，以量身打造品牌頁面。
 
 若要設定搜尋優先首頁，請執行以下步驟：
 
 1. 瀏覽至「**[!UICONTROL 設定]**」>「**[!UICONTROL 一般設定]**」。
-1. 選取「**[!UICONTROL 搜尋優先]**」。接著會打開搜尋優先相關設定。您可以設定首頁的「[對齊方式](#setting-alignment-search-bar)」或「[設定背景和標誌影像」](#setting-background-image-and-logo)。
+1. 選取「**[!UICONTROL 搜尋優先]**」。它會進一步開啟搜尋第一個相關設定。 您可以設定首頁的[對齊方式](#setting-alignment-search-bar)或[設定背景與標誌影像](#setting-background-image-and-logo)。
 
 ### 設定搜尋列的對齊方式 {#setting-alignment-search-bar}
 
-[!DNL Assets view] 可讓您變更搜尋列的對齊方式。您可以讓搜尋列顯示在中心或頂端。選取適當的對齊方式，然後按一下「**[!UICONTROL 儲存]**」。
+[!DNL Assets view]可讓您變更搜尋列的對齊方式。 您可以讓搜尋列顯示在中央或頂端。 選取適當的對齊方式，然後按一下「**[!UICONTROL 儲存]**」。
 
 ![搜尋優先首頁對齊方式](assets/search-first-alignment.png)
 
 ### 設定首頁的背景和標誌影像 {#setting-background-image-and-logo}
 
-您可以將品牌標誌和背景影像新增至搜尋優先首頁。執行以下步驟：
+您可以將品牌標誌和背景影像新增至您的搜尋第一個首頁。 執行以下步驟：
 
-1. 瀏覽到「**[!UICONTROL 首頁]**」底下的「**[!UICONTROL 背景和標誌影像]**」。
-1. 按一下「**[!UICONTROL 取代]**」以瀏覽現有資產存放庫中的影像。
+1. 導覽至&#x200B;**[!UICONTROL 首頁]**&#x200B;下的&#x200B;**[!UICONTROL 背景和標誌影像]**&#x200B;區段。
+1. 按一下[取代]****&#x200B;瀏覽現有資產存放庫的影像。
 1. 按一下「**[!UICONTROL 儲存]**」。[預覽](#preview-configured-homepage)變更以查看修改部分。
 
 ### 預覽已設定首頁 {#preview-configured-homepage}
@@ -236,7 +246,7 @@ Experience Manager Assets可讓您為組織選取預設登陸頁面。 使用「
 您可以預覽以查看搜尋優先首頁的版面配置和格式。使用「**[!UICONTROL 預覽]**」，您可以根據需要更改版面配置或進行修改。若要預覽已設定首頁，請執行以下步驟：
 
 1. 按一下「**[!UICONTROL 一般設定]**」，然後選取「**[!UICONTROL 搜尋優先]**」。
-1. 瀏覽到「**[!UICONTROL 自訂搜尋優先首頁]**」，然後按一下「**[!UICONTROL 預覽]**」。切換「**[!UICONTROL 深色主題]**」按鈕以深色或淺色主題預覽首頁。
+1. 瀏覽到「**[!UICONTROL 自訂搜尋優先首頁]**」，然後按一下「**[!UICONTROL 預覽]**」。切換&#x200B;**[!UICONTROL 深色佈景主題]**&#x200B;按鈕，以深色或淺色佈景主題預覽首頁。
 1. 按一下「**[!UICONTROL 關閉]**」即可關閉預覽畫面。
 
    ![搜尋優先首頁預覽](/help/assets/assets/search-first-preview.gif)
@@ -258,7 +268,6 @@ Experience Manager Assets可讓您為組織選取預設登陸頁面。 使用「
    ![內容搜尋文字提示](/help/assets/assets/wknd-contextual-search.png)
 
    [!DNL Experience Manager Assets] 會顯示搜尋結果。
-
 
 ### 支援篩選器 {#supported-filters}
 
@@ -302,7 +311,7 @@ Experience Manager Assets可讓您為組織選取預設登陸頁面。 使用「
 
 **範例 3**
 
-**文字提示**：我需要高度為 1500 和 2500 像素的藍天影像，而且是過去一個月內建立的未過期及已核准影像。
+**文字提示**：我需要1500和2500畫素高度的藍天影像，而且是在過去一個月內建立的，但是尚未到期且未核准。
 
 [!DNL Experience Manager Assets] 會自動套用以下篩選器並顯示搜尋結果：
 
@@ -322,7 +331,7 @@ Experience Manager Assets可讓您為組織選取預設登陸頁面。 使用「
 
 ### 內容搜尋意見回饋 {#contextual-search-feedback}
 
-如果您需要提供內容搜尋功能的意見回饋，請按一下![內容搜尋圖示](assets/do-not-localize/Smock_Help_18_N.svg)，然後按一下「意見回饋」圖示。 選取意見回饋類型，指定主題和描述，然後按一下「**[!UICONTROL 提交]**」。
+如果您需要提供有關內容搜尋功能的意見回饋，請按一下 ![內容搜尋圖示](assets/do-not-localize/Smock_Help_18_N.svg)，然後按一下「意見回饋」圖示。選取意見回饋類型，指定主題和描述，然後按一下「**[!UICONTROL 提交]**」。
 
 ![內容搜尋意見回饋](assets/contextual-search-feedback.png)
 
@@ -335,3 +344,5 @@ Experience Manager Assets可讓您為組織選取預設登陸頁面。 使用「
 * 若要提供文件意見回饋，請使用右側邊欄提供的[!UICONTROL 編輯此頁面]![來編輯頁面](assets/do-not-localize/edit-page.png)或[!UICONTROL 記錄問題]![來建立 GitHub 問題](assets/do-not-localize/github-issue.png)。
 
 * 聯絡[客戶服務](https://experienceleague.adobe.com/?support-solution=General#support)
+
+
