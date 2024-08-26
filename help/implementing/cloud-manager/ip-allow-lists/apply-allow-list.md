@@ -5,7 +5,7 @@ exl-id: 7158496c-b0c4-4228-a306-71dc51003c57
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f4c6331491bb08e81964476ad58065c1ee022967
+source-git-commit: 1415d07235641262814e81362c806572bcf582ba
 workflow-type: tm+mt
 source-wordcount: '293'
 ht-degree: 18%
@@ -17,6 +17,8 @@ ht-degree: 18%
 
 套用IP允許清單時，清單定義中包含的所有IP範圍都與環境中的作者或發佈服務相關聯。 取消套用清單與此過程相反。
 
+{{add-cm-allowlist-frontend-pipeline}}
+
 ## 套用IP允許清單 {#applying}
 
 具有&#x200B;**業務負責人**&#x200B;或&#x200B;**部署管理員**&#x200B;角色的使用者可以按照以下步驟套用IP允許清單。
@@ -26,8 +28,8 @@ ht-degree: 18%
 1. 在[my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)登入Cloud Manager。
 1. 選取適當的組織。
 1. 在「**[我的程式](/help/implementing/cloud-manager/navigation.md#my-programs)**」控制台中，選取程式。
-1. 從&#x200B;**概觀**&#x200B;頁面，瀏覽到&#x200B;**環境**&#x200B;畫面。
-1. 瀏覽至&#x200B;**環境**&#x200B;畫面上的特定環境詳細資訊頁面。
+1. 從「**概觀**」頁面，瀏覽到「**環境**」畫面。
+1. 在&#x200B;**環境**&#x200B;畫面上，瀏覽至特定環境詳細資訊頁面。
 1. 瀏覽至&#x200B;**IP允許清單**&#x200B;資料表。
 1. 使用表格頂端的輸入欄位，以便您可以選取IP允許清單以及要套用清單的作者或發佈服務。
 IP允許清單必須已存在於Cloud Manager中才能套用它。 請參閱[新增IP允許清單](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)。

@@ -5,7 +5,7 @@ exl-id: 5d264078-e552-48ca-8d82-294a646e6b1f
 solution: Experience Manager Sites
 feature: Developing
 role: Admin, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 1415d07235641262814e81362c806572bcf582ba
 workflow-type: tm+mt
 source-wordcount: '1113'
 ht-degree: 100%
@@ -112,6 +112,8 @@ Cloud Manager 是 AEM as a Cloud Service 的重要元件，是使用平台的單
 ![快速建立網站流程](assets/qsc-flow.png)
 
 使用快速建立網站工具的主要優點是前端開發人員只需要負責實際的自訂內容。前端開發人員與 AEM 沒有任何互動，也不需要任何 AEM 知識。
+
+{{add-cm-allowlist-frontend-pipeline}}
 
 ## 下一步 {#what-is-next}
 
