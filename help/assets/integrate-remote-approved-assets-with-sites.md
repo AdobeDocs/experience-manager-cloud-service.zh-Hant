@@ -1,13 +1,13 @@
 ---
 title: 將遠端 AEM Assets 與 AEM Sites 整合
-description: 瞭解如何在Creative Cloud中透過「已核准的AEM Assets」設定及連線AEM網站。
-source-git-commit: f6c0e8e5c1d7391011ccad5aa2bad4a6ab7d10c3
+description: 瞭解如何使用核准的AEM Assets來設定並連線AEM網站。
+exl-id: 382e6166-3ad9-4d8f-be5c-55a7694508fa
+source-git-commit: e2c0c848c886dc770846d064e45dcc52523ed8e3
 workflow-type: tm+mt
-source-wordcount: '800'
+source-wordcount: '977'
 ht-degree: 2%
 
 ---
-
 
 # 將遠端 AEM Assets 與 AEM Sites 整合  {#integrate-approved-assets}
 
@@ -23,7 +23,13 @@ ht-degree: 2%
 
 Dynamic Media搭配OpenAPI功能提供數種其他好處，例如存取和使用內容片段中的遠端資產、擷取遠端資產的中繼資料等等。 進一步瞭解Dynamic Media的OpenAPI功能優於連線Assets](/help/assets/dynamic-media-open-apis-faqs.md)的其他[優點。
 
-## 開始之前 {#pre-requisits-sites-integration}
+## 開始之前 {#pre-requisites-sites-integration}
+
+若要支援使用Dynamic Media搭配OpenAPI功能的遠端資產，需要：
+
+* AEM 6.5 SP 18+或AEM as a Cloud Service
+
+* 核心元件2.23.2版或更新版本
 
 * 為AEM as a Cloud Service設定下列[環境變數](/help/implementing/cloud-manager/environment-variables.md#add-variables)：
 
@@ -31,21 +37,47 @@ Dynamic Media搭配OpenAPI功能提供數種其他好處，例如存取和使用
      `pXXXX`參考程式識別碼<br>
      `eYYYY`參考環境識別碼
 
-   * ASSET_DELIVERY_IMS_CLIENT= [IMSClientId]
+  這些變數是使用AEM as a Cloud Service環境的Cloud Manager使用者介面設定的，會作為您的本機Sites例項。
 
-  或在AEM Sites執行個體中為AEM 6.5設定[OSGi設定](https://experienceleague.adobe.com/docs/experience-manager-65/content/implementing/deploying/configuring/configuring-osgi.html)，請遵循下列步驟：
+   * ASSET_DELIVERY_IMS_CLIENT= [IMSClientId]：您必須提交Adobe支援票證才能取得IMS使用者端ID。
+
+     或在AEM Sites執行個體中為AEM 6.5設定[OSGi設定](https://experienceleague.adobe.com/docs/experience-manager-65/content/implementing/deploying/configuring/configuring-osgi.html)，請遵循下列步驟：
 
    1. 登入主控台並按一下&#x200B;**[!UICONTROL OSGi] >**或
-使用直接URL；例如： `http://localhost:4502/system/console/configMgr`
+使用直接URL；例如： `https://localhost:4502/system/console/configMgr`
 
-   1. 新增&#x200B;**[!UICONTROL repositoryID]**= &quot;delivery-pxxxxx-eyyyyy.adobeaemcloud.com&quot;和&#x200B;**[!UICONTROL imsClient]**= [IMSClientId]
-深入瞭解[IMS驗證](https://experienceleague.adobe.com/docs/experience-manager-65/content/security/ims-config-and-admin-console.html)。
+   1. 依照以下方式設定&#x200B;**新一代Dynamic Media設定** (`NextGenDynamicMediaConfigImpl`) OSGi設定，將值取代為您遠端資產環境的值。
 
-* 以IMS存取登入遠端DAM AEM as a Cloud Service例項。
+      ```text
+        imsClient="<ims-client-ID>"
+        enabled=B"true"
+        imsOrg="<ims-org>@AdobeOrg"
+        repositoryId="<repo-id>.adobeaemcloud.com"
+      ```
 
-* 在遠端DAM中開啟具有OpenAPI功能的Dynamic Media切換開關。
+      `imsOrg`不是強制輸入。
+      `repositoryId` = &quot;delivery-pxxxxx-eyyyyyy.adobeaemcloud.com&quot;
+其中`pXXXX`參考了方案ID
+      `eYYYY`參考環境識別碼
+
+      ![新一代Dynamic Media設定OSGi設定視窗](/help/assets/assets/remote-assets-osgi.png)
+
+  深入瞭解[IMS驗證](https://experienceleague.adobe.com/docs/experience-manager-65/content/security/ims-config-and-admin-console.html)。
+
+  如需如何設定OSGi的詳細資訊，請參閱下列檔案：
+
+   * [為AEM as a Cloud Service設定Adobe Experience Manager as a Cloud Service的OSGi](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html)
+   * [為AEM 6.5設定OSGi](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-osgi.html)
+
+* 以IMS存取登入遠端DAM AEM as a Cloud Service例項。 這指對遠端DAM環境具有IMS存取許可權的Sites作者。
 
 * 在AEM Sites例項中設定影像v3元件。 如果元件不存在，請下載並安裝[內容封裝](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.23.0)。
+
+## 設定 HTTPS {#https}
+
+通常建議使用HTTP來執行您的所有生產AEM執行個體。 不過，您的本機開發環境可能不會依此設定。 不過，使用Dynamic Media搭配OpenAPI的遠端資產需要HTTPS才能運作。
+
+[使用本指南](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/use-the-ssl-wizard.html)設定HTTPS，無論您想使用遠端資產，包括開發環境。
 
 ## 從遠端DAM存取資產 {#fetch-assets}
 
@@ -58,7 +90,6 @@ Dynamic Media搭配OpenAPI功能，可讓您在本機AEM Sites頁面編輯器和
 請依照下列步驟，在您的AEM Sites執行個體上使用AEM頁面編輯器中的遠端資產。 您可以在AEM as a Cloud Service和AEM 6.5中進行這項整合。
 
 1. 移至&#x200B;**[!UICONTROL 網站]** > _您的網站_，其中有AEM **[!UICONTROL 頁面]**，您需要新增遠端資產。
-1. 瀏覽至您打算新增遠端資產之網站中&#x200B;**[!UICONTROL 網站]**&#x200B;區段下的特定AEM **[!UICONTROL 頁面]**。
 1. 選取頁面並按一下&#x200B;**[!UICONTROL 編輯(_e_)]**。 AEM **[!UICONTROL 頁面編輯器]**&#x200B;開啟。
 1. 按一下「版面容器」並新增&#x200B;**[!UICONTROL Image]**&#x200B;元件。
 1. 按一下&#x200B;**[!UICONTROL Image]**&#x200B;元件，然後按一下![設定圖示](/help/assets/assets/do-not-localize/settings-icon.svg)圖示。
