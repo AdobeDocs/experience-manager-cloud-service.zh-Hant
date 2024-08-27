@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Video Profiles,Best Practices
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: f41e2f6ce39fff9615e35928d3f569e9254325d0
+source-git-commit: e3667a6172447072d7c528213826fd0171e9acc2
 workflow-type: tm+mt
 source-wordcount: '9406'
 ht-degree: 2%
@@ -143,7 +143,7 @@ OUTDATED 2/28/22 BASED ON CQDOC-18692 You can find Windows&reg; devices that sup
 * 設定視訊播放器以符合您的品牌需求。
 * 使用簡單的URL或內嵌程式碼將視訊整合至您的網站、行動網站或行動應用程式。
 
-請參閱[動態視訊播放](https://s7d9.scene7.com/s7/uvideo.jsp?asset=GeoRetail/Mop_AVS&amp;config=GeoRetail/Universal_Video1&amp;stageSize=640,480)範例。
+<!-- GIVES a 404 See [Dynamic video playback](https://s7d9.scene7.com/s7/uvideo.jsp?asset=GeoRetail/Mop_AVS&config=GeoRetail/Universal_Video1&stageSize=640,480) sample. -->
 
 另請參閱[Experience Manager Assets檢視器參考指南](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources)中的[Experience Manager Assets檢視器和Dynamic Media Classic ](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers#viewers-aem-assets-dmc)以及[僅適用於Dynamic Media的檢視器](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers#viewers-for-aem-assets-only)。
 
@@ -562,7 +562,7 @@ See [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8
 
 ## 關於Dynamic Media中視訊的多重註解和音訊追蹤支援{#about-msma}
 
-透過Dynamic Media中的多重字幕與音訊追蹤功能，您可以輕鬆將多重字幕與音訊追蹤新增至主要視訊。 此功能表示全球對象都可以存取您的影片。您可以以多種語言向全球對象自訂單一已發佈的主要影片，並遵守不同地理區域的輔助功能指南。此外，作者還可以在使用者介面的單一標籤管理字幕和音軌。
+透過Dynamic Media中的多重字幕與音訊追蹤功能，您可以輕鬆將多重字幕與音訊追蹤新增至主要視訊。 此功能表示您的視訊可供全球對象存取。 您可以以多種語言向全球客群自訂單一已發佈的主要影片，並遵守不同地理區域的輔助功能指南。此外，作者還可以在使用者介面的單一標籤管理字幕和音軌。
 
 ![Dynamic Media中的註解與音訊曲目索引標籤，以及顯示已上傳的.VTT註解檔案和已上傳之視訊的.MP3音訊曲目檔案的表格。](/help/assets/dynamic-media/assets/msma-caption-audiotracks-tab2.png)
 
@@ -609,16 +609,16 @@ Dynamic Media](/help/assets/file-format-support.md)支援的所有[視訊格式�
    >[!TIP]
    >如果您看不到[!UICONTROL 註解與音軌]標籤，表示有下列其中一種情況：
    >* 選取的視訊所在的資料夾未指派視訊設定檔。 在這種情況下，請參閱[將視訊設定檔套用至資料夾](/help/assets/dynamic-media/video-profiles.md#applying-video-profiles-to-specific-folders)
-   >* 或者，影片必須由Dynamic Media重新處理。 在這種情況下，請參閱[重新處理資料夾](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets)中的Dynamic Media資產。
+   >* 或者，Dynamic Media必須重新處理視訊。 在這種情況下，請參閱[重新處理資料夾](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets)中的Dynamic Media資產。
 
    完成上述任一項工作後，請回到這些步驟。
 
-   ![資產屬性&#x200B;](/help/assets/dynamic-media/assets/msma-audiotracks.png)*視訊屬性頁面上的註解和音訊曲目索引標籤。*
+   ![資產屬性&#x200B;](/help/assets/dynamic-media/assets/msma-audiotracks.png)*視訊屬性頁面上的字幕與音軌索引標籤。*
 
 1. （可選）若要新增一或多個註解檔案至視訊，請執行下列動作：
 
    * 選取&#x200B;**[!UICONTROL 上傳字幕]**。
-   * 導覽至一或多個.vtt （視訊文字軌）檔案，並加以開啟。
+   * 導覽至一或多個`.vtt` （影片文字軌）檔案，並加以開啟。
    * 為了讓註解顯示在媒體播放器上，您必須新增有關您上傳的每個註解檔案的必要詳細資訊（中繼資料）。 選取註解檔案名稱右側的鉛筆圖示。 在「編輯註解」對話方塊中，輸入檔案的下列必要詳細資訊，然後選取「**[!UICONTROL 儲存]**」。 對您上傳的每個註解檔案重複此程式：
 
 
@@ -626,7 +626,7 @@ Dynamic Media](/help/assets/file-format-support.md)支援的所有[視訊格式�
    | --- | --- | 
    | 檔案名稱 | 預設檔案名稱衍生自原始檔案名稱。 檔案名稱只能在上傳時變更，以後無法變更。 檔案名稱字元需求與AEM Assets相同。<br>其他註解檔和音訊曲目檔不能使用相同的檔名。 |
    | 語言 | 選取註解的語言。 |
-   | 類型 | 選取您使用的註解型別。<br>**Subtitle** — 與視訊一起顯示的標題文字，該視訊會翻譯或轉譯對話方塊。<br>**註解** — 註解文字也包含背景噪音、說話者辨別與其他相關資訊，以及對話方塊的翻譯或轉錄，讓耳聾或聽力缺佳的人更容易存取內容。 |
+   | 類型 | 選取您使用的註解型別。<br>**Subtitle** — 與視訊一起顯示的標題文字，該視訊會翻譯或轉譯對話方塊。<br>**註解** — 註解文字包含背景噪音和喇叭識別。 此外也包含其他相關的詳細資訊以及對話方塊的翻譯或轉錄。 此功能讓耳聾或聽力缺佳的個人更容易存取內容。 |
    | 標籤 | 在媒體播放器的&#x200B;**[!UICONTROL 選取音訊或標題]**&#x200B;快顯清單中，為標題名稱顯示的文字。 客戶看到的標籤與副標題或標題追蹤相對應。 例如，英文(CC)。 |
 
    如有需要，您可以稍後變更或編輯註解中繼資料。 發佈影片時，這些詳細資料會反映在已發佈影片中的公開URL上。
@@ -635,7 +635,7 @@ Dynamic Media](/help/assets/file-format-support.md)支援的所有[視訊格式�
 
    * 選取&#x200B;**[!UICONTROL 上傳音軌]**。
    * 導覽至一或多個.mp3檔案並加以選取，然後開啟。
-   * 若要在媒體播放器的&#x200B;**[!UICONTROL 選取音訊或標題]**&#x200B;快顯清單中看到音訊曲目，您必須新增您新增的每個音訊曲目檔案的必要詳細資料。 選取音軌檔案名稱右側的鉛筆圖示。 在[編輯音訊]對話方塊中，輸入下列必要的詳細資料，然後選取[儲存]。**** 為您上傳的每個音訊曲目檔案重複此程式。
+   * 若要讓音訊曲目顯示在媒體播放器上的&#x200B;**[!UICONTROL 選取音訊或標題]**&#x200B;快顯清單中，請為每個音訊曲目檔案新增必要的詳細資料。 請確定您已包含正確顯示所需的所有資訊。 選取音軌檔案名稱右側的鉛筆圖示。 在[編輯音訊]對話方塊中，輸入下列必要的詳細資料，然後選取[儲存]。**** 為您上傳的每個音訊曲目檔案重複此程式。
 
    | 音訊曲目中繼資料 | 說明 |
    | --- | --- |
@@ -931,7 +931,7 @@ Dynamic Media支援透過URL修飾元在視訊中新增單一標題。 請參閱
 1. 在右上角，選取&#x200B;**[!UICONTROL 儲存並關閉]**。
 1. Publish影片。 檢視[Publish資產](publishing-dynamicmedia-assets.md)。
 
-### 預覽含有多個字幕和音訊曲目的視訊{#preview-video-audio-subtitle}
+### 預覽含有多個字幕和音訊曲目的視訊 {#preview-video-audio-subtitle}
 
 將註解檔案和音訊曲目檔案上傳到視訊並進行處理後，您可以使用Dynamic Media視訊檢視器來預覽所有不同的曲目。 這麼做可協助您檢視客戶所看到的視訊外觀和聲音，並確保影片如預期般運作。
 
@@ -993,7 +993,7 @@ Dynamic Media支援透過URL修飾元在視訊中新增單一標題。 請參閱
 
 **使用案例：**&#x200B;如果您在`.vtt`檔案中發現錯誤，則可能需要下載註解檔。 只要下載不正確的`.vtt`檔案、以純文字編輯器開啟，並進行更正。 儲存`.vtt`檔案後，請重新上傳。 然後，使用&#x200B;**[!UICONTROL 翻譯字幕]**&#x200B;選項來重新翻譯更正過的`.vtt`檔案。
 
-**若要從視訊下載註解或音訊曲目檔案：**
+**若要下載已上傳至視訊的註解或音訊曲目檔案：**
 
 1. 導覽至您要設定其預設音訊曲目的視訊資產。
 1. 在資產選取模式中，從「清單檢視」或「卡片檢視」中選取視訊資產。

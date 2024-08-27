@@ -1,7 +1,9 @@
 ---
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2024.6.0 版發行說明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2024.6.0 版發行說明。'
-source-git-commit: effb2f01dc26a7ab80b18c9e80ecc7286cb67284
+feature: Release Information
+role: Admin
+source-git-commit: 81aacb0c616490eed4589cb8927ea1316ca1670e
 workflow-type: tm+mt
 source-wordcount: '1972'
 ht-degree: 100%
@@ -20,7 +22,7 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->若要透過每月電子郵件通知，了解 Experience Cloud 發行說明的最新消息，請訂閱 [Adobe 優先產品更新](https://www.adobe.com/tw/tw/subscription/priority-product-update.html)。
+>若要透過每月電子郵件通知，了解 Experience Cloud 發行說明的最新消息，請訂閱 [Adobe 優先產品更新](https://www.adobe.com/tw/subscription/priority-product-update.html)。
 
 ## 發行日期 {#release-date}
 
