@@ -19,7 +19,7 @@ ht-degree: 19%
 >id="aemcloud_ctt_extraction"
 >title="內容摘取"
 >abstract="提取是指將來源 Adobe Experience Manager (AEM) 執行個體中的內容提取到稱為移轉集的暫時區域中。移轉集是 Adobe 提供的雲端儲存區，用於暫時儲存在來源 AEM 執行個體和 Cloud Service AEM 執行個體之間轉移的內容。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=zh-Hant#top-up-extraction-process" text="填滿提取"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html#top-up-extraction-process" text="填滿提取"
 
 
 請依照下列步驟，從「內容轉移工具」中提取您的移轉集：

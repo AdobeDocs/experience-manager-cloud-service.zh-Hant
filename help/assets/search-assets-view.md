@@ -7,7 +7,7 @@ feature: Asset Management, Publishing, Collaboration, Asset Processing
 source-git-commit: de5aaead0955f997cf5304c3cd1d540b2eded16b
 workflow-type: tm+mt
 source-wordcount: '2002'
-ht-degree: 76%
+ht-degree: 94%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 76%
 >abstract="透過指定搜尋列中的關鍵字或根據資產的狀態、檔案類型、MIME 類型、大小、建立、修改和到期日期篩選資產，來搜尋資產。您除了標準篩選器之外，還可以套用自訂篩選器。您可以將篩選的結果另存為「已儲存搜尋」或「智慧型集合」。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/manage-collections.html?lang=zh-Hant#manage-smart-collection" text="建立智慧型集合"
 
-[!DNL Assets view]提供有效的搜尋，預設即適用。 此搜尋是全文字搜尋，因此十分全面。 強大的搜尋功能可讓您快速探索合適的資產，協助您改善內容速度。[!DNL Assets view] 提供全文檢索搜尋，甚至還透過如智慧標記、標題、建立的日期和版本等中繼資料進行搜尋。
+[!DNL Assets view] 的預設功能即提供有效的搜尋。由於是全文檢索搜尋，因此十分全面。強大的搜尋功能可讓您快速探索合適的資產，協助您改善內容速度。[!DNL Assets view] 提供全文檢索搜尋，甚至還透過如智慧標記、標題、建立的日期和版本等中繼資料進行搜尋。
 
 若要搜尋資產，
 
@@ -27,7 +27,7 @@ ht-degree: 76%
 
   ![搜尋方塊](assets/search-box.png)
 
-   * 使用關鍵字搜尋，並選擇變更資料夾。 按下「Return」。
+   * 使用關鍵字進行搜尋，並選擇變更資料夾。按下「Return」。
 
    * 開始直接搜尋最近檢視的資產，然後使用該資產。在搜尋方塊中按一下，然後從建議中選取最近檢視的資產。
 
@@ -49,7 +49,7 @@ ht-degree: 76%
 
 * 有效日期：根據`Expired`資產狀態來篩選搜尋結果。此外，您可以指定資產的有效日期範圍以進一步篩選搜尋結果。
 
-* 自訂篩選器： [新增自訂篩選器](#custom-filters)至Assets檢視使用者介面。 除了標準篩選器之外，您還可以套用這些自訂篩選器來縮小您的搜尋結果。
+* 自訂篩選器： [新增自訂篩選器](#custom-filters)至Assets檢視使用者介面。 除了標準篩選器之外，您還可以套用自訂篩選器來縮小您的搜尋結果。
 
 您可以依照 `Name`、`Relevance`、`Size`、`Modified` 和 `Created` 的遞增或遞減順序排序搜尋的資產。已搜尋的資產會依`Relevance` (依預設) 進行排序。
 
@@ -135,17 +135,17 @@ Assets檢視提供下列自訂篩選器：
 
 1. 瀏覽至 [!DNL AEM Assets] 工作區。
 
-1. 在搜尋列中鍵入資產名稱。 例如，您可以使用關鍵字`Bugatti Type 57`來搜尋資產。 搜尋資產時，由於資產不存在於任何資產資料夾中，因此找不到結果。 若要使用AI產生資產，請按一下[使用Firefly產生]。**** [!DNL Adobe Firefly]畫面會出現。
+1. 在搜尋列中輸入資產名稱。例如，您可以使用關鍵字 `Bugatti Type 57` 來搜尋資產。搜尋資產時，若找不到任何結果，是因為該資產不存在於任何資產資料夾中。若要使用 AI 產生資產，請按一下「**[!UICONTROL 使用 Firefly 生成]**」。出現 [!DNL Adobe Firefly] 畫面。
 
    ![Firefly 整合](assets/firefly-integration.png)
 
-   新資產已成功產生。 此外，您可以在描述方塊中輸入新的文字提示來變更影像描述。 [瞭解如何撰寫良好的AI提示，以產生非凡的相關內容。](https://helpx.adobe.com/in/firefly/using/tips-and-tricks.html)或者，您也可以[使用各種其他功能（例如變更樣式、影像尺寸等等）編輯影像。](https://helpx.adobe.com/in/firefly/using/text-to-image.html)
+   已成功產生新資產。此外，您可以在描述框中輸入新的文字提示以變更影像描述。[了解如何撰寫良好的 AI 提示以產生傑出且相關的內容。](https://helpx.adobe.com/tw/firefly/using/tips-and-tricks.html)或者，您也可以[使用各種其他功能編輯影像，例如：變更樣式、影像尺寸等。](https://helpx.adobe.com/tw/firefly/using/text-to-image.html)
 
    ![Firefly 整合](assets/bugatti-type-57.png)
 
-1. 選取要儲存的影像。 按一下「儲存」****&#x200B;將資產儲存在您偏好的資料夾中，以方便存取。
+1. 選取您想儲存的影像。按一下「**[!UICONTROL 儲存]**」，在您偏好的資料夾儲存資產以便存取。
 
-1. 儲存資產表單隨即顯示。 指定下列欄位：
+1. 出現儲存資產表單。指定以下欄位：
 
    * 在&#x200B;**另存新檔**&#x200B;欄位中輸入檔案名稱。
    * 選取目的地資料夾。
@@ -153,7 +153,7 @@ Assets檢視提供下列自訂篩選器：
 
    ![Firefly 整合](assets/save-generated-asset.png)
 
-1. 按一下&#x200B;**另存為新資產**&#x200B;以儲存資產。
+1. 按一下「**另存為新資產**」，以儲存資產。
 
 ### 上傳資產 {#upload-assets-firefly}
 
@@ -165,7 +165,7 @@ Assets檢視提供下列自訂篩選器：
 
 ## 已儲存搜尋 {#saved-search}
 
-搜尋功能可以在 [!DNL Assets view] 中輕鬆使用。在搜尋方塊中，您不可以只輸入關鍵字然後按下Return來檢視結果，也可以按一下快速再次搜尋最近搜尋的關鍵字。
+搜尋功能可以在 [!DNL Assets view] 中輕鬆使用。您不僅可以從搜尋方塊中輸入關鍵字然後按下「Return」來查看結果，也可按一下來快速再次搜尋最近搜尋的關鍵字。
 
 您也可以根據資產的中繼資料和類型的特定條件，來篩選搜尋結果。對於常用的篩選條件，若要改善搜尋體驗，[!DNL Assets view] 可讓您儲存搜尋參數。您稍後可以選取已儲存搜尋，按一下即可搜尋並套用篩選器。
 
@@ -188,7 +188,7 @@ When userA is searching and userB add an asset that matches search results, will
 
 您可以選取搜尋結果中顯示的資產，然後執行以下動作：
 
-* **尋找類似的影像**：根據中繼資料和智慧標籤，在Assets UI中尋找類似的影像資產。
+* **尋找類似影像**：根據中繼資料和智慧標記在 Assets UI 中尋找類似影像資產。
 
 * **詳細資料**：檢視和編輯資產屬性。
 
@@ -225,20 +225,20 @@ Assets檢視可讓您為組織選取預設登陸頁面。 使用「搜尋優先�
 若要設定搜尋優先首頁，請執行以下步驟：
 
 1. 瀏覽至「**[!UICONTROL 設定]**」>「**[!UICONTROL 一般設定]**」。
-1. 選取「**[!UICONTROL 搜尋優先]**」。它會進一步開啟搜尋第一個相關設定。 您可以設定首頁的[對齊方式](#setting-alignment-search-bar)或[設定背景與標誌影像](#setting-background-image-and-logo)。
+1. 選取「**[!UICONTROL 搜尋優先]**」。接著會開啟搜尋優先相關設定。您可以設定首頁的[對齊方式](#setting-alignment-search-bar)或[設定背景和標誌影像](#setting-background-image-and-logo)。
 
 ### 設定搜尋列的對齊方式 {#setting-alignment-search-bar}
 
-[!DNL Assets view]可讓您變更搜尋列的對齊方式。 您可以讓搜尋列顯示在中央或頂端。 選取適當的對齊方式，然後按一下「**[!UICONTROL 儲存]**」。
+[!DNL Assets view] 可讓您變更搜尋列的對齊方式。您可以讓搜尋列顯示在中心或頂端。選取適當的對齊方式，然後按一下「**[!UICONTROL 儲存]**」。
 
 ![搜尋優先首頁對齊方式](assets/search-first-alignment.png)
 
 ### 設定首頁的背景和標誌影像 {#setting-background-image-and-logo}
 
-您可以將品牌標誌和背景影像新增至您的搜尋第一個首頁。 執行以下步驟：
+您可以將品牌標誌和背景影像新增至搜尋優先首頁。執行以下步驟：
 
-1. 導覽至&#x200B;**[!UICONTROL 首頁]**&#x200B;下的&#x200B;**[!UICONTROL 背景和標誌影像]**&#x200B;區段。
-1. 按一下[取代]****&#x200B;瀏覽現有資產存放庫的影像。
+1. 瀏覽到「**[!UICONTROL 背景和標誌影像]**」(在「**[!UICONTROL 首頁]**」下方)。
+1. 按一下「**[!UICONTROL 取代]**」以瀏覽現有資產存放庫中的影像。
 1. 按一下「**[!UICONTROL 儲存]**」。[預覽](#preview-configured-homepage)變更以查看修改部分。
 
 ### 預覽已設定首頁 {#preview-configured-homepage}
@@ -246,7 +246,7 @@ Assets檢視可讓您為組織選取預設登陸頁面。 使用「搜尋優先�
 您可以預覽以查看搜尋優先首頁的版面配置和格式。使用「**[!UICONTROL 預覽]**」，您可以根據需要更改版面配置或進行修改。若要預覽已設定首頁，請執行以下步驟：
 
 1. 按一下「**[!UICONTROL 一般設定]**」，然後選取「**[!UICONTROL 搜尋優先]**」。
-1. 瀏覽到「**[!UICONTROL 自訂搜尋優先首頁]**」，然後按一下「**[!UICONTROL 預覽]**」。切換&#x200B;**[!UICONTROL 深色佈景主題]**&#x200B;按鈕，以深色或淺色佈景主題預覽首頁。
+1. 瀏覽到「**[!UICONTROL 自訂搜尋優先首頁]**」，然後按一下「**[!UICONTROL 預覽]**」。切換「**[!UICONTROL 深色主題]**」按鈕以深色或淺色主題預覽首頁。
 1. 按一下「**[!UICONTROL 關閉]**」即可關閉預覽畫面。
 
    ![搜尋優先首頁預覽](/help/assets/assets/search-first-preview.gif)
@@ -311,7 +311,7 @@ Assets檢視可讓您為組織選取預設登陸頁面。 使用「搜尋優先�
 
 **範例 3**
 
-**文字提示**：我需要1500和2500畫素高度的藍天影像，而且是在過去一個月內建立的，但是尚未到期且未核准。
+**文字提示**：我需要高度為 1500 和 2500 像素的藍天影像，而且是過去一個月內建立的未過期及已核准影像。
 
 [!DNL Experience Manager Assets] 會自動套用以下篩選器並顯示搜尋結果：
 
