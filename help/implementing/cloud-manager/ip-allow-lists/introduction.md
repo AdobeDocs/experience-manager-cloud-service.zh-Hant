@@ -5,7 +5,7 @@ exl-id: 352fae8e-d116-40b0-ba54-d7f001f076e8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 1415d07235641262814e81362c806572bcf582ba
+source-git-commit: 96179c5f88e8546c12674e34afd0269c1f196d65
 workflow-type: tm+mt
 source-wordcount: '421'
 ht-degree: 15%
@@ -34,7 +34,7 @@ Cloud Manager的IP允許清單可用於限制和控制對此類受信任IP地址
 
 ## 搭配前端管道使用Cloud Manager IP允許清單 {#allowlists-frontend-pipeline}
 
-如果您使用或打算使用[前端管道來開發網站](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md)，則必須預先新增以下Cloud Manager IP允許清單。
+如果您使用或打算使用[前端管道來開發網站](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md)，則必須預先新增下列Cloud Manager IP允許清單。
 
 當您[新增IP允許清單](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md#add-cm-allowlist)，將其命名&#x200B;*`Cloud Manager`*，然後複製下列位址清單並將其貼到IP允許清單對話方塊中。
 
