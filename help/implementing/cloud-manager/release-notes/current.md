@@ -4,9 +4,9 @@ description: 了解 AEM as a Cloud Service 中 Cloud Manager 2024.8.0 的發行�
 feature: Release Information
 role: Admin
 source-git-commit: a823bcd1461b847983d0243cd9abd59efd8d7b6f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '465'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 96%
 
 ## 發行日期 {#release-date}
 
-AEM as a Cloud Service中的Cloud Manager版本2024.8.0發行日期為2024年8月14日。 下一個版本規劃於 2024 年 9 月 14 日發行。
+AEM as a Cloud Service 中的 Cloud Manager 版本 2024.8.0 發行日期為 2024 年 8 月 14 日。下一個版本規劃於 2024 年 9 月 14 日發行。
 
 ## 新增功能 {#what-is-new}
 
