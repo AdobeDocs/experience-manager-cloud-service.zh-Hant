@@ -5,7 +5,7 @@ feature: Administering
 role: Admin
 exl-id: 55d54d72-f87b-47c9-955f-67ec5244dd6e
 solution: Experience Manager Sites
-source-git-commit: 1415d07235641262814e81362c806572bcf582ba
+source-git-commit: d6ecdae8dd78c3c93a410ca2c8b80322340f439e
 workflow-type: tm+mt
 source-wordcount: '544'
 ht-degree: 0%
@@ -50,7 +50,7 @@ AEM可以自動調整您的現有網站以使用前端管道。 若要執行此�
 
 {{add-cm-allowlist-frontend-pipeline}}
 
-使用[網站邊欄，從Sites主控台啟用您的網站。](site-rail.md)
+使用[網站邊欄](site-rail.md)從Sites主控台啟用您的網站。
 
 1. 登入AEM並透過&#x200B;**全域導覽** > **網站**&#x200B;瀏覽您的網站。
 1. 在主控台中選取您的網站。 選取網站的根目錄，而非任何子頁面。
