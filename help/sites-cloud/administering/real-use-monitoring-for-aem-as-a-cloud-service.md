@@ -4,14 +4,14 @@ description: 瞭解如何使用即時監控(RUM)來即時擷取和分析網站�
 exl-id: 91fe9454-3dde-476a-843e-0e64f6f73aaf
 feature: Administering
 role: Admin
-source-git-commit: ae9951fa89edeab5f34ae3506cf8a4864201c93e
+source-git-commit: 2515bc51fd54b014ffb701a8aef38cd08d6725b3
 workflow-type: tm+mt
-source-wordcount: '1282'
+source-wordcount: '1274'
 ht-degree: 1%
 
 ---
 
-# 適用於AEM as a Cloud Service的Real Use Monitoring Service {#real-use-monitoring-service-for-aem-as-a-cloud-service}
+# AEM as a Cloud Service的Real Use Monitoring服務 {#real-use-monitoring-service-for-aem-as-a-cloud-service}
 
 >[!NOTE]
 >
@@ -31,28 +31,28 @@ RUM （即時監控）服務是一種效能監控技術，可即時擷取和分�
 >
 >「Real User Monitoring」已更名為「Real Use Monitoring」，因為它更能反映服務的真實本質。
 
-## 誰能從實際使用監控服務中獲益？ {#who-can-benefit-from-rum-service}
+## 誰能從「即時使用監控」服務中受益？ {#who-can-benefit-from-rum-service}
 
 AEM已開發RUM來協助客戶和Adobe瞭解訪客如何與AEM網站互動。 RUM可用來協助診斷效能問題，以及測量實驗的成效。 RUM透過取樣來保留訪客的隱私權 — 僅監控所有頁面檢視的一小部分 — 並且不會收集任何個人識別資訊(PII)。
 
 
 ## 瞭解實際使用監控服務的運作方式 {#understand-how-the-rum-service-works}
 
-Adobe Experience Manager (AEM)使用即時監控(RUM)來協助客戶和Adobe瞭解訪客如何與AEM網站互動。 它可協助他們診斷效能問題，並測量實驗的成效。 RUM透過取樣來保留訪客的隱私權 — 僅監控所有頁面檢視的一小部分 — 並且不會收集任何個人識別資訊(PII)。
+AEM使用RUM來協助客戶和Adobe瞭解訪客如何與AEM網站互動。 它可協助他們診斷效能問題，並測量實驗的成效。 RUM透過取樣來保留訪客的隱私權 — 僅監控所有頁面檢視的一小部分 — 並且不會收集任何個人識別資訊(PII)。
 
-## Real Use Monitoring Service與隱私權 {#rum-service-and-privacy}
+## Real Use Monitoring服務與隱私權 {#rum-service-and-privacy}
 
 AEM中的「Real Use Monitoring」服務可保留訪客隱私權，並將資料收集降至最低。 身為訪客，這表示您造訪或可供Adobe使用的網站不會收集任何個人資訊。
 
 作為網站操作員，您不需要其他選擇加入即可透過此功能啟用監視。 使用者不需額外快顯視窗或同意表單，即可接受啟用RUM。
 
-## Real Use Monitoring Service資料抽樣 {#rum-service-data-sampling}
+## Real Use Monitoring服務資料抽樣 {#rum-service-data-sampling}
 
 傳統的網站分析解決方案會嘗試收集每位訪客的資料。 AEM RUM服務只會從一小部分的頁面檢視中擷取資訊。 此服務的用途是取樣和匿名處理，而非取代分析。 依預設，頁面的取樣比例為1:100。 網站運運算元目前無法增加或減少取樣速率。 為了準確估計總流量，每100次頁面檢視會從1收集資料，從而提供整體流量的可靠近似值。
 
 在決定是否收集資料時，會依頁面檢視來決定，幾乎無法追蹤多個頁面上的互動。 在設計上，RUM沒有訪客或工作階段的概念，只有頁面檢視。
 
-## 正在收集哪些資料 {#what-data-is-being-collected}
+## 會收集哪些資料？ {#what-data-is-being-collected}
 
 Real Use Monitoring服務可防止收集個人識別資訊。 RUM收集的完整資訊集列示如下：
 
@@ -68,7 +68,7 @@ Real Use Monitoring服務可防止收集個人識別資訊。 RUM收集的完整
 * 使用者與上述查核點互動的外部頁面或資源的目標或連結。 例如：`https://blog.adobe.com/jp/publish/2022/06/29/media_162fb947c7219d0537cce36adf22315d64fb86e94.png`
 * 核心Web Vitals (CWV)效能量度，包括最大內容繪製(LCP)、首次輸入延遲(FID)、累計版面位移(CLS)以及說明訪客體驗品質的首次位元組時間(TTFB)。
 
-## 客戶真實使用監控的運作方式 {#how-rum-works-for-a-customer}
+## Real Use Monitoring如何為客戶運作 {#how-rum-works-for-a-customer}
 
 Real Use Monitoring會自動監控使用者端流量，為您提供有價值的深入分析。 身為Adobe客戶，您無需執行任何其他步驟，因為此服務已順暢整合至您現有的設定。 透過「一般可用性」(GA)推出功能，您將自動受益於這項新功能。
 
@@ -76,7 +76,7 @@ Real Use Monitoring會自動監控使用者端流量，為您提供有價值的�
 
 If you wish to leverage more insights with this new feature to optimize your digital experiences effortlessly, please see here (link to Row 99). -->
 
-## 如何使用實際使用監控服務資料 {#how-rum-service-data-is-being-used}
+## 如何使用Real Use監控服務資料 {#how-rum-service-data-is-being-used}
 
 RUM資料有利於以下用途：
 
@@ -84,7 +84,7 @@ RUM資料有利於以下用途：
 * 簡化包含頁面檢視的自動化流量查詢。
 * 若要瞭解AEM如何與相同頁面上的其他指令碼（例如分析、鎖定目標或外部程式庫）互動，以提高相容性。
 
-## 限制和瞭解頁面檢視與效能度量中的差異 {#limitations-and-understanding-variance-in-page-views-and-performance-metrics}
+## 頁面檢視和效能度量中的限制和瞭解差異 {#limitations-and-understanding-variance-in-page-views-and-performance-metrics}
 
 當您分析RUM資料時，頁面檢視和其他效能量度可能會有差異。 這些差異可歸因於即時使用者端監視中固有的數個因素。 以下是客戶在解譯其RUM資料時應牢記的主要考量事項：
 
