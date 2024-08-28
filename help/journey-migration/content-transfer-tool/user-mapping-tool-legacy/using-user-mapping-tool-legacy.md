@@ -6,18 +6,19 @@ hide: true
 hidefromtoc: true
 feature: Migration
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: e5fd1b351047213adbb83ef1d1722352958ce823
 workflow-type: tm+mt
-source-wordcount: '806'
+source-wordcount: '803'
 ht-degree: 1%
 
 ---
+
 
 # 使用使用者對應工具（舊版） {#using-user-mapping-tool}
 
 >[!INFO]
 >
->本檔案是指該工具的已棄用版本。 如需最新版本的詳細資訊，請參閱[使用者對應和主體移轉](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md)。
+>本檔案是指該工具的已棄用版本。 如需最新版本的詳細資訊，請參閱[群組移轉](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/group-migration.md)。
 
 使用者對應工具使用API，可透過電子郵件查詢AdobeIdentity Management系統(IMS)使用者並傳回其IMS ID。 此API要求使用者為其組織建立使用者端ID、使用者端密碼以及存取或持有人權杖。
 

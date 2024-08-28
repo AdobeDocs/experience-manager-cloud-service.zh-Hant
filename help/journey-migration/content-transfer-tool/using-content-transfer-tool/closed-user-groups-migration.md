@@ -6,41 +6,33 @@ hidefromtoc: true
 exl-id: f62ed751-d5e2-4a01-8910-c844afab5733
 feature: Migration
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 5b0dfb847a1769665899d6dd693a7946832fe7d1
 workflow-type: tm+mt
-source-wordcount: '374'
-ht-degree: 10%
+source-wordcount: '287'
+ht-degree: 12%
 
 ---
+
 
 # 移轉關閉的使用者群組 {#migrating-closed-user-groups}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_cug_migration"
->title="封閉使用者群組移轉"
+>title="已關閉使用者群組的移轉"
 >abstract="封閉使用者群組 (CUG) 的移轉目前需要執行一些檢查和步驟，以便在移轉後正常運作。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/closed-user-groups.html" text="AEM 中的封閉使用者群組"
 
 目前，封閉使用者群組(CUG)需要一些額外的步驟，才能在移轉的目標環境中正常運作。 本檔案將說明相關情境，以及要求他們以預期方式保護節點所需的步驟。
 
-## 群組移轉
+## 封閉式使用者群組(CUG)的移轉
 
-如果主體（包括群組）透過該內容的ACL與移轉的內容相關聯，則會自動納入到Adobe Experience Manager as a Cloud Service的移轉中，如果在該內容的CUG原則中參考主體（包括群組）。
+如果群組透過內容的ACL或其CUG原則節點與已移轉的內容相關聯，則會自動包含在CTT/CAM移轉至Adobe Experience Manager as a Cloud Service中。 驗證群組及其成員是否存在，應在上線前完成。 參照CUG原則的群組稱為「CUG群組」。
 
-## 移轉中的封閉式使用者群組
+若要在AEM as a Cloud Service中使用CUG，使用者必須出現在製作例項上，並成為相關CUG群組的成員。  這可以使用套件完成，或者，如果CUG使用者是IMS使用者，則他們可能已存在。  之後，CUG使用者必須成為AEM CUG群組的成員。
 
-驗證群組及其成員是否存在，應在上線前完成。 透過「內嵌工作」檢視下載的「主體報表」可用來檢視相關群組是否包含，或因不在ACL或CUG原則中而不包含。
+若要在Publish例項上啟用CUG行為，
+1. 必須啟動CUG群組(這會將群組及其成員複製到Publish執行個體)，並且
+1. 必須發佈受CUG原則保護的頁面(如此可讓Publish執行個體並追蹤原則)。
+1. 發佈所有頁面後，請確認每個受CUG保護頁面的功能。
 
-接下來，必須觸發程式，且必須設定屬性以啟用CUG。 為此，請重新發佈與CUG原則相關的所有頁面。 這會校準Publish執行個體以追蹤原則。
-
-這樣會在Publish上啟用CUG原則，而且只有屬於與原則相關群組成員的已驗證使用者才能存取內容。
-
-## 摘要
-
-總而言之，以下是移轉後啟用CUG的步驟：
-
-1. 請確定CUG政策中使用的每個群組在移轉後都存在於Publish上。
-   - 如果移轉內容的CUG原則或該內容的ACL中包含群組，則群組可能存在。
-   - 如果沒有，請使用套件將其安裝在目的地執行個體上（或在那裡手動建立），並啟動它及其成員。 然後確認它存在於Publish上。
-1. 重新發佈與CUG原則相關聯的所有頁面，例如先編輯頁面，以確保發佈該頁面。 請務必將其全部重新發佈。
-   - 重新發佈所有頁面後，請確認每個受CUG保護頁面的功能。
+如需其他資訊，請參閱[已關閉的使用者群組](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/closed-user-groups.html)。

@@ -4,12 +4,13 @@ description: 瞭解使用「內容轉移工具」的准則與最佳實務。
 exl-id: d1975c34-85d4-42e0-bb1a-968bdb3bf85d
 feature: Migration
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: e5fd1b351047213adbb83ef1d1722352958ce823
 workflow-type: tm+mt
-source-wordcount: '1401'
+source-wordcount: '1368'
 ht-degree: 12%
 
 ---
+
 
 # 使用內容轉移工具的准則和最佳實務 {#guidelines}
 
@@ -22,32 +23,32 @@ ht-degree: 12%
 >title="Guidelines and Best Practices"
 >abstract="Review guidelines and best practices to use the Content Transfer tool including revision cleanup tasks, Disk space considerations and more."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html" text="Important Considerations for using Content Transfer Tool"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/user-mapping-and-migration.md#important-considerations" text="Important Considerations when Mapping and Migrating Users" 
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/group-migration.md#important-considerations" text="Important Considerations when Migrating Groups" 
 
 -->
 
-現已推出新版「內容轉移工具」，此工具整合了內容轉移程式與Cloud Acceleration Manager。 強烈建議您改用此新版本，以使用它提供的所有優點：
+「內容轉移工具」整合了內容轉移程式與Cloud Acceleration Manager。 您必須使用此版本（2.0或更新版本，但現在建議使用3.0版本）才能獲得其提供的所有優點：
 
 * 自助式方式擷取一次移轉集，並同時將其擷取至多個環境中
 * 透過更好的載入狀態、護欄和錯誤處理，改善使用者體驗
 * 內嵌記錄檔會持續存在，且隨時可用於疑難排解
 
-若要開始使用新版本，請解除安裝舊版的「內容轉移工具」。 這是必要的，因為新版本具有重大的架構變更。 若使用2.x版，您可以建立移轉集，並對該集重新執行提取和擷取。
+若要開始使用最新版本，請解除安裝舊版的「內容轉移工具」。 若使用2.0版或更新版本，您可以建立移轉集，並在集上重新執行擷取和擷取。
 不支援2.0.0之前的版本，建議您使用最新版本。
 
 下列准則和最佳實務適用於新版「內容轉移工具」：
 
 * 對&#x200B;**來源**&#x200B;存放庫執行[修訂清理](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/revision-cleanup.html)和[資料存放區一致性檢查](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16550.html)，以便識別潛在問題並降低存放庫大小。
 
-* 在擷取階段中，Adobe建議您使用已啟用的&#x200B;*擦去*&#x200B;模式來執行擷取，並刪除目標Adobe Experience Manager (AEM)Cloud Service環境中的現有存放庫（製作或發佈）。 然後，以移轉集資料更新。 此模式比非擦去模式更快，因為在非擦去模式中，移轉集會套用在目前內容的頂端。
+* 在擷取階段中，Adobe建議您使用已啟用的&#x200B;*擦去*&#x200B;模式來執行擷取，並刪除目標Adobe Experience Manager (AEM)Cloud Service環境中的現有存放庫(Author或Publish)。 然後，以移轉集資料更新。 此模式比非擦去模式更快，因為在非擦去模式中，移轉集會套用在目前內容的頂端。
 
 * 內容轉移活動完成後，雲端服務環境將需要正確的專案結構，以確保內容在雲端服務環境中成功轉譯。
 
 * 在執行「內容轉移工具」之前，您必須確定來源 AEM 例項的 `crx-quickstart` 子目錄中有足夠的磁碟空間。這是因為「內容轉移工具」會建立存放庫的本機副本，且該副本稍後將上傳至移轉集。計算所需可用磁碟空間的一般公式如下：
   `data store size + node store size * 1.5`
 
-   * *資料存放區大小*：「內容轉移工具」會使用 64GB，即使實際資料存放區較大亦然。
-   * *節點存放區大小*：區段存放區目錄大小或 MongoDB 資料庫大小。因此，若區段存放區的大小為 20 GB，則需要的可用磁碟空間為 94 GB。
+* *資料存放區大小*：「內容轉移工具」會使用 64GB，即使實際資料存放區較大亦然。
+* *節點存放區大小*：區段存放區目錄大小或 MongoDB 資料庫大小。因此，若區段存放區的大小為 20 GB，則需要的可用磁碟空間為 94 GB。
 
 * 必須在整個內容轉移活動中維護移轉集，以支援內容追加。 在內容轉移活動期間，Cloud Acceleration Manager中一次最多可以建立和維護每個專案20個移轉集。 若需要20個以上的移轉集，請在Cloud Acceleration Manager中建立第二個專案。 但是，這需要額外的專案管理和產品外控管，以避免多個使用者覆寫目標上的內容。
 
@@ -73,9 +74,9 @@ ht-degree: 12%
 
 * 擷取金鑰的有效期為從建立或更新後的14天。 可隨時續約。 如果擷取金鑰已過期，您將無法執行擷取。
 
-* 在將內容從來源例項轉移至目標例項之前，內容轉移工具(CTT)不會執行任何型別的內容分析。 例如，將內容擷取至Publish環境時，CTT不會區分已發佈和未發佈的內容。 移轉集中指定的任何內容都會擷取到所選的目標例項。 使用者可將移轉集內嵌至作者例項或Publish例項，或兩者皆可。 Adobe建議，將內容移動至生產執行個體時，CTT應安裝在來源製作執行個體上，以將內容移動至目標製作執行個體。 同樣地，請在來源Publish例項上安裝CTT，將內容移至目標Publish例項。 如需詳細資訊，請參閱[在Publish執行個體上執行內容轉移工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html#running-tool)。
+* 在將內容從來源例項轉移至目標例項之前，內容轉移工具(CTT)不會執行任何型別的內容分析。 例如，將內容擷取至Publish環境時，CTT不會區分已發佈和未發佈的內容。 移轉集中指定的任何內容都會擷取到所選的目標例項。 使用者可以將移轉集內嵌至「作者」例項或「Publish」例項，或兩者皆內嵌。 Adobe建議，將內容移動至生產執行個體時，CTT應安裝在來源製作執行個體上，以將內容移動至目標製作執行個體。 同樣地，請在來源Publish例項上安裝CTT，將內容移至目標Publish例項。 如需詳細資訊，請參閱[在Publish執行個體上執行內容轉移工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html#running-tool)。
 
-* 「內容轉移工具」轉移的使用者和群組只是內容滿足許可權所需的使用者與群組。 _擷取_&#x200B;程式會將整個`/home`複製到移轉集，而且會新增從每個使用者的電子郵件地址建立的欄位來進行使用者對應。 如需詳細資訊，請參閱[使用者對應和主體移轉](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md)。 _內嵌_&#x200B;程式會複製移轉的內容ACL中參考的所有使用者和群組。 請參閱[移轉封閉式使用者群組](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/closed-user-groups-migration.md)，以了解封閉式使用者群組(CUG)原則中所使用群組的額外考量事項。
+* 「內容轉移工具」所轉移的群組只是內容滿足許可權所需的群組。 _擷取_&#x200B;程式會將整個`/home/groups`複製到移轉集。 如需詳細資訊，請參閱[群組移轉](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/group-migration.md)。 _內嵌_&#x200B;程式會複製已移轉內容ACL中參考的所有群組。 請參閱[移轉封閉式使用者群組](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/closed-user-groups-migration.md)，以了解封閉式使用者群組(CUG)原則中所使用群組的額外考量事項。
 
 * 在提取階段中，「內容轉移工具」會在作用中的 AEM 來源例項上執行。
 

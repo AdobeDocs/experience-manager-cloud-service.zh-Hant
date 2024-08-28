@@ -4,7 +4,7 @@ description: 瞭解如何從來源Adobe Experience Manager (AEM)例項擷取內�
 exl-id: c5c08c4e-d5c3-4a66-873e-96986e094fd3
 feature: Migration
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 4408f15ef85d0fc2c6a0e2b45038dc900d212187
 workflow-type: tm+mt
 source-wordcount: '728'
 ht-degree: 19%
@@ -41,7 +41,7 @@ ht-degree: 19%
 
 1. 這會顯示擷取對話方塊。 按一下&#x200B;**擷取**&#x200B;以開始擷取階段。
 
-   ![影像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam14b.png)
+   ![影像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam14c.png)
 
    >[!NOTE]
    >您可以選擇在提取階段期間覆寫預備容器。 如果&#x200B;**覆寫暫存容器**&#x200B;已停用，它可以加快後續移轉的擷取速度，因為內容路徑或包含版本設定尚未變更。 不過，如果內容路徑或包含版本設定已變更，則應啟用&#x200B;**覆寫暫存容器**。

@@ -4,24 +4,25 @@ description: 瞭解如何使用「內容轉移工具」，將內容從內部部�
 exl-id: cfc0366a-2139-4d9d-b5bc-0b65bef4013c
 feature: Migration
 role: Admin
-source-git-commit: d9565e86c4b7e513cb1a95ecbe7a30c9586d9fb1
+source-git-commit: e73933acc3ff23d1456f03b288f2f842a6289ace
 workflow-type: tm+mt
-source-wordcount: '655'
-ht-degree: 38%
+source-wordcount: '612'
+ht-degree: 39%
 
 ---
+
 
 # 概觀 {#overview-content-transfer-tool}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_overview"
 >title="概觀"
->abstract="「內容轉移工具」是 Adobe 開發的工具，可用來起始將現有內容從來源 AEM 執行個體 (內部部署或 AMS) 移轉至目標 AEM Cloud Service 執行個體的作業。此工具也會自動轉移主體 (使用者或群組)。"
+>abstract="「內容轉移工具」是 Adobe 開發的工具，可用來起始將現有內容從來源 AEM 執行個體 (內部部署或 AMS) 移轉至目標 AEM Cloud Service 執行個體的作業。此工具也會自動傳輸群組。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html" text="準則和最佳做法"
 
 「內容轉移工具」是Adobe開發的工具，可用來起始將現有內容從來源AEM例項（內部部署或AMS）移轉至目標AEM Cloud Service例項的作業。
 
-此工具也會自動轉移主體（使用者或群組）。  如需詳細資訊，請參閱[使用者對應和主體移轉](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md)。
+此工具也會自動傳輸群組。  如需詳細資訊，請參閱[群組移轉](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/group-migration.md)。
 
 「內容轉移工具」整合了內容轉移程式與Cloud Acceleration Manager。 這可讓使用者享有其提供的所有優點：
 
@@ -37,9 +38,6 @@ ht-degree: 38%
 1. **提取**：提取指的是從來源 AEM 例項提取內容，並存放至名為&#x200B;*移轉集*&#x200B;的暫存區域。*移轉集*&#x200B;是 Adobe 提供的雲端儲存空間，可供暫時儲存在來源 AEM 例項與雲端服務 AEM 例項間轉移的內容。
 
    如需詳細資訊，請參閱內容轉移中的[擷取程式](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md)。
-
-   >[!NOTE]
-   >現在，使用者對應會在作者上的擷取階段中自動執行（但可選擇在作者上停用或在發佈上啟用）。 如需詳細資訊，請參閱[使用者對應和主體移轉](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md)。
 
 1. **擷取**：擷取指的是從&#x200B;*移轉集*&#x200B;擷取內容，並存放至目標雲端服務例項。
 
@@ -78,7 +76,6 @@ ht-degree: 38%
 您可以在移轉集列上監視移轉集的到期日。 移轉集即將到期的一個實用視覺指示器也新增了專案的卡片。
 
 ![影像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam29.png)
-
 
 ## 下一步 {#whats-next}
 

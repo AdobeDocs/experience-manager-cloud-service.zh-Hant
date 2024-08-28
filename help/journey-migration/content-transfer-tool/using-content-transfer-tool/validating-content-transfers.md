@@ -4,12 +4,13 @@ description: 使用內容轉移工具來驗證內容轉移
 exl-id: a12059c3-c15a-4b6d-b2f4-df128ed0eea5
 feature: Migration
 role: Admin
-source-git-commit: 1289da67452be7fc0fa7f3126d2a3dbf051aa9b5
+source-git-commit: b7e485e3b7ce6f2d2fa7fe9b2953d2296186871d
 workflow-type: tm+mt
-source-wordcount: '1080'
-ht-degree: 2%
+source-wordcount: '1189'
+ht-degree: 1%
 
 ---
+
 
 # 驗證內容轉移 {#validating-content-transfers}
 
@@ -134,23 +135,28 @@ Migration validation took 0 minutes
 
 ![影像](/help/journey-migration/content-transfer-tool/assets-ctt/CTTvalidationreportnew.png)
 
-## 如何驗證主體移轉 {#how-to-validate-principal-migration}
+## 如何驗證主體移轉 {#how-to-validate-group-migration}
 
-請參閱[使用者對應和主體移轉](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md)，瞭解主體移轉的詳細資訊以及需要的原因。
+請參閱[群組移轉](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/group-migration.md)以讀取主體移轉詳細資料以及需要的原因。
 
-成功完成擷取和內嵌後，即可使用主要移轉的摘要和報表。 這些資訊可用於驗證哪些使用者和群組已成功移轉，也可用於判斷部分使用者及群組未成功移轉的原因。
+成功完成擷取和內嵌後，即可使用主要移轉的摘要和報表。 這項資訊可用來驗證哪些群組已成功移轉，也可用來判斷部分群組未成功移轉的原因。
 
 若要檢視此資訊，請前往Cloud Acceleration Manager。 按一下您的專案卡，然後按一下「內容轉移」卡。 導覽至&#x200B;**擷取工作**，並找出您要驗證的擷取。 按一下該擷取的三個點(**...**)，然後在下拉式清單中按一下&#x200B;**檢視主體摘要**。
 
 ![影像](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-principal-action.png)
 
-您會看到包含摘要資訊的對話方塊。 使用說明圖示可讀取更完整的說明。 按一下「**下載報表**」按鈕即可下載完整的逗號分隔報表(CSV)。
+您會看到包含摘要資訊的對話方塊。 使用說明圖示可讀取更完整的說明。 按一下「**下載報表**」按鈕即可下載完整的逗號分隔報表(CSV)。  也請注意，此報表結尾是使用者報表，可用於移轉後使用者管理。
 
 ![影像](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-principal-dialog.png)
 
->[!NOTE]
->
->如果停用使用者對應，則會顯示此對話方塊的另一個變體。 這會指出已停用使用者對應，且不會顯示提供使用者對應值的3個欄位。
+「主要移轉」報告會報告：
+
+* 每個群組都已移轉，且是第一個觸發該群組移轉的內容路徑；群組也可能位於其他路徑上，但只報告為指定群組找到的第一個路徑。 它也會報告是否在ACL或CUG原則中找到它。
+* 每個群組都沒有移轉，以及它沒有移轉的原因。  這通常是因為下列其中一個原因：
+   * 這是一個內建群組
+   * 它已經在目標系統上
+   * 它不在正在移轉的內容上的ACL或CUG原則中
+   * 它具有重複的唯一欄位（rep：principalName、rep：authorizableId、jcr：uuid或rep：externalId其中之一已在目的地上，但所有這些都必須是唯一的）
 
 ## 疑難排解 {#troubleshooting}
 
@@ -166,6 +172,6 @@ Migration validation took 0 minutes
 
 我們目前從摘要中排除的路徑包括： `cqdam.text.txt`轉譯、`/home`內的節點和`/jcr:system`內的節點。
 
-### 已關閉的使用者群組無法運作 {#validating-cugs}
+### 封閉使用者群組 {#validating-cugs}
 
 請參閱[移轉封閉式使用者群組](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/closed-user-groups-migration.md)以瞭解使用封閉式使用者群組(CUG)原則時的額外考量事項。
