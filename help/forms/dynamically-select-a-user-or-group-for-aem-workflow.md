@@ -3,7 +3,11 @@ title: 如何在AEM工作流程中選取使用者？
 description: 瞭解如何在執行階段為 [!DNL AEM Forms] 工作流程選取使用者或群組。
 content-type: troubleshooting
 topic-tags: publish
-source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
+feature: Adaptive Forms
+role: User
+hide: true
+hidefromtoc: true
+source-git-commit: 937bd4653e454beea3111cfc7ef7b4bbc1ace193
 workflow-type: tm+mt
 source-wordcount: '853'
 ht-degree: 1%

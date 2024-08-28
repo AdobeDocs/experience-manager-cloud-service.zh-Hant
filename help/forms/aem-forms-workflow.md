@@ -4,9 +4,13 @@ seo-title: Rapidly build Adaptive Forms-based processes, automate document servi
 description: 使用AEM Forms工作流程自動化並快速建立業務流程工作流程。 例如，檢閱和核准、PDF產生、Adobe Sign工作流程。
 uuid: 797ba0f7-a378-45ac-9f82-fa9a952027be
 topic-tags: publish, document_services
-source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
+feature: Adaptive Forms
+role: User, Developer
+hide: true
+hidefromtoc: true
+source-git-commit: d661f869f1264e4a2317692ab6fd22263c89e072
 workflow-type: tm+mt
-source-wordcount: '2373'
+source-wordcount: '2335'
 ht-degree: 1%
 
 ---
@@ -74,8 +78,8 @@ AEM提供直覺式使用者介面，讓您使用提供的工作流程步驟建�
 1. 啟用電子郵件通知。 您可以在OSGi上設定以Forms為中心的工作流程，以傳送電子郵件通知給使用者或受指派人。 執行以下設定以啟用電子郵件通知：
 
    1. 前往`https://[server]:[port]/system/console/configMgr`的AEM設定管理員。
-   1. 開啟&#x200B;**[!UICONTROL 天CQ郵件服務]**&#x200B;設定。 指定&#x200B;**[!UICONTROL SMTP伺服器主機名稱]**、**[!UICONTROL SMTP伺服器連線埠、]**&#x200B;和&#x200B;**[!UICONTROL 「寄件者」位址]**&#x200B;欄位的值。 按一下「**[!UICONTROL 儲存]**」。
-   1. 開啟&#x200B;**[!UICONTROL Day CQ Link Externalizer]**&#x200B;設定。 在&#x200B;**[!UICONTROL 網域]**&#x200B;欄位中，指定本機、作者和發佈執行個體的實際主機名稱/IP位址和連線埠號碼。 按一下「**[!UICONTROL 儲存]**」。
+   1. 開啟&#x200B;**[!UICONTROL 天CQ郵件服務]**&#x200B;設定。 指定&#x200B;**[!UICONTROL SMTP伺服器主機名稱]**、**[!UICONTROL SMTP伺服器連線埠、]**&#x200B;和&#x200B;**[!UICONTROL 「寄件者」位址]**&#x200B;欄位的值。 按一下&#x200B;**[!UICONTROL 儲存]**。
+   1. 開啟&#x200B;**[!UICONTROL Day CQ Link Externalizer]**&#x200B;設定。 在&#x200B;**[!UICONTROL 網域]**&#x200B;欄位中，指定本機、作者和發佈執行個體的實際主機名稱/IP位址和連線埠號碼。 按一下&#x200B;**[!UICONTROL 儲存]**。
 
 1. 建立工作流程階段。 一個工作流程可以有多個階段。 這些階段會顯示在AEM收件匣中，並報告工作流程的進度。
 
@@ -197,7 +201,7 @@ AEM提供直覺式使用者介面，讓您使用提供的工作流程步驟建�
 
 ### 從AEM收件匣提交應用程式 {#inbox}
 
-您建立的工作流程應用程式可在「收件匣」中作為應用程式使用。 屬於[!DNL workflow-users]群組成員的使用者可以填寫並提交觸發相關工作流程的應用程式。 如需使用AEM收件匣提交應用程式和管理工作的相關資訊，請參閱[在AEM收件匣中管理Forms應用程式和工作](manage-applications-/help/sites-cloud/authoring/inbox.md)。
+您建立的工作流程應用程式可在「收件匣」中作為應用程式使用。 屬於[!DNL workflow-users]群組成員的使用者可以填寫並提交觸發相關工作流程的應用程式。
 
 <!-- ### Submitting an application from [!DNL AEM Forms] App {#afa}
 
@@ -270,9 +274,3 @@ You can use the Assign Task and Send Email steps of AEM Workflows to send an ema
 ### 清除工作流程例項 {#purge-workflow-instances}
 
 將工作流程例項的數目降至最低會提升工作流程引擎的效能，因此您可以定期從儲存庫中清除已完成或執行中的工作流程例項。 如需詳細資訊，請參閱[定期清除工作流程執行個體](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/maintenance.html?lang=zh-Hant)清除工作流程執行個體
-
-
->[!MORELIKETHIS]
->
->* [使用AEM翻譯工作流程將最適化Forms和記錄檔案當地語系化](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms.md)
->* 以Forms為中心的AEM工作流程中的[變數](/help/forms/variable-in-aem-workflows.md)

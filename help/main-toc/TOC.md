@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的運作方式以及該軟體可以為您做哪些事。
 breadcrumb-title: 使用手冊
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 773ce75975f4dcc2c5310422bcc377b487ebec25
-workflow-type: ht
-source-wordcount: '5348'
-ht-degree: 100%
+source-git-commit: 937bd4653e454beea3111cfc7ef7b4bbc1ace193
+workflow-type: tm+mt
+source-wordcount: '5478'
+ht-degree: 97%
 
 ---
 
@@ -681,6 +681,7 @@ ht-degree: 100%
          + [建立表單資料模型](/help/forms/create-form-data-models.md)
          + [處理表單資料模型](/help/forms/work-with-form-data-model.md)
          + [使用表單資料模型](/help/forms/using-form-data-model.md)
+         + [為最適化表單設計XML結構描述](/help/forms/adaptive-form-xml-schema-form-model.md)
    + 最適化表單 {#adaptive-forms-authoring}
       + [建立最適化表單](/help/forms/create-an-adaptive-form.md)
       + [建立最適化表單片段](/help/forms/adaptive-form-fragments.md)
@@ -730,12 +731,17 @@ ht-degree: 100%
             + [檢閱並修正轉換後的表單](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/review-correct-ui-edited.html?lang=zh-hant#welcome-to-review-and-correct-editor)
          + 建立最適化表單{#create-an-adaptive-form-on-forms-cs}
             + [製作最適化表單簡介](/help/forms/introduction-forms-authoring.md)
+            + [為表單欄位編寫內容內說明](/help/forms/authoring-in-field-help.md)
             + [建立最適化表單](/help/forms/creating-adaptive-form.md)
             + [參考主題、範本和資料模型](/help/forms/reference-themes-templates-data-models.md)
             + [建立範例](/help/forms/template-editor.md)
             + [建立主題](/help/forms/themes.md)
+            + [參考自適應表單片段](/help/forms/reference-adaptive-form-fragments.md)
+            + [同步最適化Forms與XFA表單範本](/help/forms/synchronizing-adaptive-forms-xfa.md)
+            + [XDP型最適化Forms中的XFA支援](/help/forms/xfa-api-supported-in-adaptive-form.md)
             + [為最適化表單設計 JSON 綱要](/help/forms/adaptive-form-json-schema-form-model.md)
             + [透過延遲載入改善大型表單的效能](/help/forms/lazy-loading-adaptive-forms.md)
+            + [發佈和取消發佈表單和檔案](/help/forms/publishing-unpublishing-forms.md)
          + 將元件新增至最適化表單{#add-components-to-an-adaptive-form}
             + [在最適化表單中使用驗證碼](/help/forms/captcha-adaptive-forms.md)
             + [在最適化表單中使用 hCaptcha](/help/forms/integrate-adaptive-forms-hcaptcha.md)
@@ -748,10 +754,15 @@ ht-degree: 100%
             + [設定最適化表單的版面](/help/forms/layout-capabilities-adaptive-forms.md)
             + [使用版面模式調整元件大小](/help/forms/resize-using-layout-mode.md)
             + [建立多步驟資料擷取體驗](/help/forms/introduction-form-sequence.md)
+            + [最適化Forms的樣式建構](/help/forms/styling-constructs-adaptive-forms.md)
             + [將 CSS 內嵌樣式套用至個別的最適化表單元件](/help/forms/inline-style-adaptive-forms.md)
+            + [如何在最適化Forms中使用分隔符號元件？](/help/forms/separator-component-in-adaptive-forms.md)
          + 在最適化表單中新增規則和使用運算式{#add-rules-and-use-expressions-in-an-adaptive-form}
             + [將規則新增至最適化表單](/help/forms/rule-editor.md)
             + [使用規則編輯器的叫用服務新增自訂錯誤處理常式](/help/forms/add-custom-error-handler-adaptive-forms.md)
+            + [將規則編輯器存取權授予給所選的使用者群組](/help/forms/rule-editor-access-user-groups.md)
+            + [在最適化Forms中使用SOM運算式](/help/forms/using-som-expressions-adaptive-forms.md)
+            + [最適化表單運算式](/help/forms/adaptive-form-expressions.md)
          + 使用 [!DNL Adobe Sign] {#use-adobe-sign}
             + [使用 Adobe Sign 在最適化表單上進行電子簽名](/help/forms/working-with-adobe-sign.md)
          + 設定提交動作和中繼資料提交{#configure-submit-actions-and-metadata-submission}
@@ -759,6 +770,8 @@ ht-degree: 100%
             + [設定重新導向頁面](/help/forms/configuring-redirect-page.md)
             + [為最適化表單設定非同步提交](/help/forms/asynchronous-submissions-adaptive-forms.md)
             + [建立自訂提交動作](/help/forms/custom-submit-action-form.md)
+            + [將使用者資料中的資訊新增至表單提交中繼資料](/help/forms/form-submission-metadata.md)
+            + [從最適化Forms叫用表單資料模型(FDM)服務的API](/help/forms/invoke-form-data-model-services.md)
          + [預填最適化表單欄位](/help/forms/prepopulate-adaptive-form-fields.md)
          + [產生記錄文件](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
          + [將對新語言環境的支援新增至最適化表單](/help/forms/supporting-new-language-localization.md)
@@ -769,11 +782,16 @@ ht-degree: 100%
             + [建立無障礙的最適化表單](/help/forms/creating-accessible-adaptive-forms.md)
          + [設定表單入口網站](/help/forms/configure-forms-portal.md)
          + [建立和管理評論](/help/forms/create-reviews-forms.md)
+         + [將提交稽核者與表單建立關聯](/help/forms/adding-reviewers-form.md)
+         + [建立和管理最適化表單的稽核](/help/forms/review-adaptiveforms-in-sites-page.md)
       + [最適化表單關鍵字](/help/forms/adaptive-forms-keywords.md)
       + [預覽表單](/help/forms/previewing-forms.md)
    + 以 Forms 為中心的工作流程 {#create-form-centric-workflows}
+      + [以Forms為中心的工作流程簡介](/help/forms/aem-forms-workflow.md)
       + [在工作流程中使用以 Forms 為中心的步驟 + 步驟參考](/help/forms/aem-forms-workflow-step-reference.md)
       + [在以 Forms 為中心的工作流程中使用變數](/help/forms/variable-in-aem-workflows.md)
+      + [AEM Workflow中的動態使用者或群組選擇](/help/forms/dynamically-select-a-user-or-group-for-aem-workflow.md)
+      + [管理AEM收件匣中的Forms應用程式和工作](/help/forms/manage-applications-inbox.md)
       + [使用「外出」選項](/help/forms/configure-out-of-office-settings.md)
    + 通訊 API {#using-communications}
       + [通訊 API 簡介](/help/forms/aem-forms-cloud-service-communications-introduction.md)
@@ -781,6 +799,7 @@ ht-degree: 100%
       + [通訊 API - 大量處理](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
       + [安裝及設定 Forms Designer](/help/forms/installing-configuring-designer.md)
       + [使用 Forms Designer 建立範本](/help/forms/use-forms-designer.md)
+      + [在Designer中變更零頁內容](/help/forms/changing-page-zero-content-designer.md)
       + [在 PDF 文件中使用自訂字型](/help/forms/use-custom-fonts.md)
       + [PDF 文件中支援的字體清單](/help/forms/supported-out-of-the-box-fonts.md)
       + [已知問題、最佳做法和常見問題集](/help/forms/communications-known-issues-limitations.md)
@@ -926,6 +945,7 @@ ht-degree: 100%
          + [從 URL 將選項載入表單](/help/edge/docs/forms/load-options-from-url.md)
          + [自訂表單的外觀](/help/edge/docs/forms/style-theme-forms.md)
          + [使用規則為表單新增動態行為](/help/edge/docs/forms/rules-forms.md)
+         + [驗證的規則運算式](/help/edge/docs/forms/regex-forms.md)
          + [提交表單後顯示自訂感謝訊息](/help/edge/docs/forms/thank-you-page-form.md)
       + 功能 {#advanced-features-edge-delivery-services-forms}
          + [使用表單片段](/help/edge/docs/forms/form-fragments.md)

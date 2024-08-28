@@ -4,8 +4,11 @@ description: 排程最適化Forms的發佈和取消發佈。 發佈的表單會�
 content-type: reference
 topic-tags: publish
 discoiquuid: 32a7a50c-74f4-49bc-a0bd-a9ec142527cb
-docset: aem65s
-source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+feature: Adaptive Forms
+role: User
+hide: true
+hidefromtoc: true
+source-git-commit: 937bd4653e454beea3111cfc7ef7b4bbc1ace193
 workflow-type: tm+mt
 source-wordcount: '1328'
 ht-degree: 0%
@@ -21,7 +24,7 @@ ht-degree: 0%
 
 [!DNL AEM Forms]支援下列資產型別：
 
-* 最適化表單
+* 調適型表單
 * 最適化檔案
 * 最適化表單片段
 * 主題

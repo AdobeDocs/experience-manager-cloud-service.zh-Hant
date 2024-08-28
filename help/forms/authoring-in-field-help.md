@@ -3,10 +3,13 @@ title: 如何為AEM最適化Forms欄位新增說明文字？
 description: AEM Forms可讓您將內容說明新增至最適化表單欄位和面板，做為文字或豐富媒體（包括影片）。
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
-docset: aem65
-source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
+feature: Adaptive Forms, Foundation Components
+role: User
+hide: true
+hidefromtoc: true
+source-git-commit: d661f869f1264e4a2317692ab6fd22263c89e072
 workflow-type: tm+mt
-source-wordcount: '384'
+source-wordcount: '369'
 ht-degree: 0%
 
 ---
@@ -64,8 +67,3 @@ ht-degree: 0%
 新增面板的說明會顯示&#x200B;**嗎？面板說明旁的**&#x200B;圖示。 按一下圖示會顯示新增在面板編輯對話方塊的「說明內容」區段中的內容。
 
 ![表單面板層級](assets/photoshop-1.png)的內容內說明範例
-
->[!MORELIKETHIS]
->
->* [新增預留位置文字至表單欄位](/help/forms/placeholder-text-in-aem-forms.md)
->* [新增註腳至RTF適用的最適化表單](/help/forms/footnotes-richtextsupport.md)
