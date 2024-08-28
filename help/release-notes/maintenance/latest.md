@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的目前維�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 82be9b2b328343e827b90bd8266d93127757f477
+source-git-commit: eb01b6982578ad1300163c2fd536e844afc815fa
 workflow-type: tm+mt
-source-wordcount: '675'
-ht-degree: 39%
+source-wordcount: '736'
+ht-degree: 51%
 
 ---
 
@@ -27,22 +27,16 @@ ht-degree: 39%
 * CQ-4353778：翻譯程式事件。
 * CQ-4354583：透過Adobe管道傳送翻譯流程事件。
 * CQ-4356479：僅允許Adobe程式碼使用/adobe servlet內容。
-* CQ-4358133：最佳化Jenkins背景工作使用。
 * CQ-4358226：儲存翻譯關鍵字功能無法用於特定字串格式。
 * CQ-4358270： AEM翻譯套件：2008年8月。
 * CQ-4358310：將oak-compat-query-spi-1.2新增至quickstart。
-* GRANITE-36205：QS內部Oak版本的自動更新。
 * GRANITE-49833：事件傳送者和Proxy的批次處理支援。
 * GRANITE-52053：移除Commons Collections的使用情況3：平台其他。
 * GRANITE-52492：在PIT還原的情況下進行彈性非同步追溯。
-* GRANITE-53086：將AEMaaCS中的Jacoco外掛程式版本更新為0.8.12。
 * GRANITE-53099：更新到 Apache Felix Http Jetty 5.1.24。
 * GRANITE-53125：將分類新增至CloudEvent。
 * GRANITE-53328：將Filevault更新至3.8.0-T20240726111512-3cc11d50，其中包含儲存記錄改善功能。
-* GRANITE-53340：AEM660:660 CQ/Platform的適當版本設定和分支。
-* GRANITE-53341：使用ACS Commons 6時不發出警告。
 * GRANITE-53453：將commons-lang更新為3.15.0。
-* GRANITE-53473：取消棄用Sling設定。
 * GRANITE-53478：將Filevault更新至3.8.0版。
 * GRANITE-53505：將QS更新為commons-collections-3.2.2-adobe-2。
 * GRANITE-53528：更新平台成品版本。
@@ -71,7 +65,10 @@ ht-degree: 39%
 
 ### 已知問題 {#known-issues-17569}
 
-無。
+* ASSETS-40875 - AssetDeleteHandler 類別偵聽資產刪除事件，並根據刪除事件的類型 (PRE_DELETE 或 POST_DELETE) 執行特定動作。在某些情況下，POST_DELETE 類型的事件會導致 NullPointerException。
+* FORMS-14340 - FormsAndDocumentOmniSearchHandler 和 CloudStorageSubmitActionInserter 實例化時發生錯誤。這些是無害的記錄陳述式。
+* FORMS-15818 - 元件描述項的項目「OSGI-INF/com.adobe.aemfd.docmanager.impl.*.xml」在伺服器記錄中找不到陳述式。這些是無害的記錄陳述式。
+* SITES-23662 - 無法從伺服器記錄的 JCR 記錄陳述式內提取觸發發佈的使用者。這是針對一項正在開發的功能，可能會導致記錄中出現間歇性且無害的「無法在 OSGI 事件的批次中找到有效的使用者 ID」錯誤。
 
 ### 變更通知 {#change-notice-17569}
 
