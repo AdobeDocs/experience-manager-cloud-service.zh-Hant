@@ -7,9 +7,9 @@ feature: Adaptive Forms
 index: false
 exl-id: 0b14b680-7da5-4e0b-bd6a-c379d148f9d7
 source-git-commit: 5ee37f59bb959e0549c0541c6568aa8c135c330e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '975'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -76,7 +76,7 @@ Custom parameters are planned for an upcoming release. -->
 是，您可以將圖表新增到最適化表單中。最適化表單提供一個圖表元件。您可以使用該元件將圖表新增到最適化表單。
 
 * **我可以將表單資料模型連接到關聯式資料庫模型嗎？**
-您可以將表單資料模型連線至[!DNL RESTful web services]、[!DNL SOAP-based web services]、[!DNL OData services]，並將使用者設定檔Experience Manager為資料來源。<!--Support to connect a Form Data Model with a relational database is not available.-->
+您可以將表單資料模型連接到 [!DNL RESTful web services]、[!DNL SOAP-based web services]、[!DNL OData services] 和 Experience Manager 使用者設定檔做為資料來源。<!--Support to connect a Form Data Model with a relational database is not available.-->
 
 * **我可以使用自訂憑證搭配表單資料模型 (FDM) 進行驗證嗎？**
 表單資料模型 (FDM) 不提供使用自訂憑證進行驗證的方法。因此，不支援 x509 和雙向 SSL 等自訂憑證。

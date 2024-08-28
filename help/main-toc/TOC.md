@@ -7,9 +7,9 @@ user-guide-description: 了解 Experience Manager as a Cloud Service 的運作�
 breadcrumb-title: 使用手冊
 user-guide-title: AEM as a Cloud Service
 source-git-commit: 773ce75975f4dcc2c5310422bcc377b487ebec25
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '5348'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -888,7 +888,7 @@ ht-degree: 99%
       + [表格資料和試算表](/help/edge/wysiwyg-authoring/tabular-data.md)
       + [現有專案和 Edge Delivery](/help/edge/wysiwyg-authoring/existing-projects.md)
       + [管理分類資料](/help/edge/wysiwyg-authoring/taxonomy.md)
-      + [在製品網站功能](/help/edge/wysiwyg-authoring/wip-features.md)
+      + [WIP Sites 功能](/help/edge/wysiwyg-authoring/wip-features.md)
    + 文件型的製作 {#document-authoring}
       + [製作](/help/edge/docs/authoring.md)
       + [大量中繼資料](/help/edge/docs/bulk-metadata.md)
