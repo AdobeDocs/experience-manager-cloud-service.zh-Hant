@@ -4,7 +4,7 @@ description: Adaptive Forms在各種裝置上的版面配置與外觀是由版�
 feature: Adaptive Forms, Core Components
 keywords: 根據核心元件的調適型表單佈局、表單的不同佈局、動態表單佈局AEM、AEM Cloud Service表單佈局、AEM核心元件中的表單佈局型別、調適型表單佈局
 role: User, Developer, Admin
-source-git-commit: 31f18027d856cbd161457c4a01d6c7c17d1c2b89
+source-git-commit: 0397e5ec20b48a45df74d7d1c03eaae3739000dd
 workflow-type: tm+mt
 source-wordcount: '2107'
 ht-degree: 1%
@@ -138,10 +138,10 @@ ht-degree: 1%
 
 1. 在表單編輯器中找出可讓您新增配置的區段。
 
-   ![表單編輯器](/help/forms/assets/form-editor.png){width="200" align="center"}
+   ![表單編輯器](/help/forms/assets/form-editor.png)
 1. 按一下&#x200B;**新增**&#x200B;圖示。 圖示是加號(+)，表示可新增元件的選項。
 
-   ![插入版面配置](/help/forms/assets/insert-layout-add-icon.png){width="200" align="center"}
+   ![插入版面配置](/help/forms/assets/insert-layout-add-icon.png)
 
    按一下&#x200B;**新增**&#x200B;圖示會顯示&#x200B;**插入新元件**&#x200B;對話方塊，其中顯示要插入的各種元件。
 
@@ -151,20 +151,20 @@ ht-degree: 1%
 
 1. 瀏覽對話方塊中的可用元件，並從清單中選取所需的版面。 在本例中，我們選取「水平定位點」元件來插入水平定位點版面配置。
 
-   ![選取水準索引標籤](/help/forms/assets/select-horizontal-tab.png){width="200" align="center"}
+   ![選取水準索引標籤](/help/forms/assets/select-horizontal-tab.png)
 
    將水準標籤元件新增至表單時，預設情況下它最初由兩個空白面板組成，名為Item1和Item2。 您必須手動將表單元件新增至這些面板。
 
-   ![水準索引標籤](/help/forms/assets/insert-tabs-on-top.png){width="200" align="center"}
+   ![水準索引標籤](/help/forms/assets/insert-tabs-on-top.png)
 
 1. 開啟水準標籤元件的屬性，並指定元件的名稱。
 例如，在此案例中，我們將水平定位點元件的名稱新增為IT請求表單。
 
-   ![新增水準索引標籤的名稱](/help/forms/assets/change-name-of-horizontal-tabs.png){width="200" align="center"}
+   ![新增水準索引標籤的名稱](/help/forms/assets/change-name-of-horizontal-tabs.png)
 
 1. 按一下&#x200B;**「完成」**。
 
-   ![水準索引標籤](/help/forms/assets/tabs-on-top-rename-component.png){width="200" align="center"}
+   ![水準索引標籤](/help/forms/assets/tabs-on-top-rename-component.png)
 
 在表單中新增版面配置元件後，請根據需求修改面板數量。
 
@@ -174,43 +174,43 @@ ht-degree: 1%
 
 1. 開啟水準標籤元件屬性，然後按一下&#x200B;**專案**&#x200B;標籤。
 
-   水準索引標籤的![專案索引標籤](/help/forms/assets/tabs-on-top-items-tab.png){width="200" align="center"}
+   水準索引標籤的![專案索引標籤](/help/forms/assets/tabs-on-top-items-tab.png)
 
 1. 按一下「**新增**」圖示以新增面板。
 
-   ![新增面板](/help/forms/assets/tabs-on-top-add-panel.png){width="200" align="center"}
+   ![新增面板](/help/forms/assets/tabs-on-top-add-panel.png)
 
    當您按一下&#x200B;**新增**&#x200B;圖示時，**插入新元件**&#x200B;對話方塊就會顯示。
 
 1. 選取面板元件。
 
-   ![新增面板](/help/forms/assets/tabs-on-top-new-panel.png){width="200" align="center"}
+   ![新增面板](/help/forms/assets/tabs-on-top-new-panel.png)
 
    當您選取面板元件時，新面板會新增至水準版面配置中。
 
-   ![新增面板](/help/forms/assets/tabs-on-top-add-new-panel.png){width="200" align="center"}
+   ![新增面板](/help/forms/assets/tabs-on-top-add-new-panel.png)
 
    提供新面板的名稱；否則，您無法儲存水準索引標籤元件的屬性。
 
 1. 指定面板的名稱，如下圖所示：
 
-   ![面板名稱](/help/forms/assets/tabs-on-tops-panel-name.png){width="200" align="center"}
+   ![面板名稱](/help/forms/assets/tabs-on-tops-panel-name.png)
 
 1. 按一下&#x200B;**「完成」**。
 
    按一下&#x200B;**完成**&#x200B;後，這三個面板會並排顯示。 面板名稱會顯示為每個面板的標題，而您可以將表單元件新增至每個面板。
 
-   ![面板名稱](/help/forms/assets/tabs-on-top-initial-view.png){width="200" align="center"}
+   ![面板名稱](/help/forms/assets/tabs-on-top-initial-view.png)
 
    您可以設定面板元件的屬性。 例如，IT申請表單不包含面板標題，以下是設定面板元件屬性的步驟。
 
 1. 開啟第一個面板的屬性。
 
-   ![面板1屬性](/help/forms/assets/tabs-on-tops-panel1-properties.png){width="200" align="center"}
+   ![面板1屬性](/help/forms/assets/tabs-on-tops-panel1-properties.png)
 
 1. 從&#x200B;**基本**&#x200B;索引標籤中選取&#x200B;**隱藏標題**&#x200B;核取方塊。
 
-   ![隱藏標題](/help/forms/assets/tabs-on-top-hide-panel.png){width="200" align="center"}
+   ![隱藏標題](/help/forms/assets/tabs-on-top-hide-panel.png)
 
 1. 按一下&#x200B;**「完成」**。
 
@@ -224,41 +224,41 @@ ht-degree: 1%
 
 1. 在面板中找出可新增元件的區段。
 1. 按一下&#x200B;**新增**圖示。 圖示是加號(+)，表示可新增元件的選項。
-   ![插入版面配置](/help/forms/assets/tabs-on-top-add-component.png){width="200" align="center"}
+   ![插入版面配置](/help/forms/assets/tabs-on-top-add-component.png)
 
    按一下&#x200B;**新增**&#x200B;圖示會顯示&#x200B;**插入新元件**&#x200B;對話方塊，其中顯示要插入的各種元件。
 
-   ![插入新元件對話方塊](/help/forms/assets/insert-new-component.png){width="200" align="center"}
+   ![插入新元件對話方塊](/help/forms/assets/insert-new-component.png)
 
 1. 瀏覽出現的對話方塊中的可用元件，並選取所需元件。 在本例中，請選取「文字方塊」元件。
 1. 開啟新增元件的屬性並指定其名稱。 讓編輯新增的「文字方塊」元件的屬性，並指定其名稱。
-   ![插入版面配置](/help/forms/assets/tabs-on-top-textbox-component.png){width="200" align="center"}
+   ![插入版面配置](/help/forms/assets/tabs-on-top-textbox-component.png)
 1. 同樣地，新增兩個更多Text Box元件，且name已將元件新增為Email ID和Department。\
-   ![第一個面板](/help/forms/assets/tabs-on-tops-first-panel.png){width="200" align="center"}
+   ![第一個面板](/help/forms/assets/tabs-on-tops-first-panel.png)
 
    現在第一個面板中的元件已新增，您可以繼續將元件新增至第二個面板。
 
 1. 若要切換面板，請按一下工具列中的&#x200B;**選取面板**。
 
-   ![切換面板](/help/forms/assets/tabs-on-top-select-panel.png){width="200" align="center"}
+   ![切換面板](/help/forms/assets/tabs-on-top-select-panel.png)
 
    當您按一下&#x200B;**選取面板**&#x200B;時，水準標籤元件中新增的面板清單就會顯示。
 
-   ![切換面板](/help/forms/assets/tabs-on-tops-panel2.png){width="200" align="center"}
+   ![切換面板](/help/forms/assets/tabs-on-tops-panel2.png)
 
 1. 從面板清單中選取&#x200B;**2面板**，檢視就會從第一個面板變更為第二個面板。
 
-   ![第二個面板](/help/forms/assets/tabs-on-top-panel2-component.png){width="200" align="center"}
+   ![第二個面板](/help/forms/assets/tabs-on-top-panel2-component.png)
 
 1. 重複步驟2至步驟4所述的步驟，在面板2中新增所需的元件，如下圖所示：
 
-   ![第二個面板元件](/help/forms/assets/panel-2-components.png){width="200" align="center"}
+   ![第二個面板元件](/help/forms/assets/panel-2-components.png)
 
 1. 依照步驟6和步驟7中概述的步驟，切換至&#x200B;**3面板**。
 
 1. 重複步驟2至步驟4所述的步驟，在面板3中新增所需的元件：
 
-   ![第三面板元件](/help/forms/assets/panel-3-component.png){width="200" align="center"}
+   ![第三面板元件](/help/forms/assets/panel-3-component.png)
 
 1. 按一下編寫環境右上角的&#x200B;**[!UICONTROL 預覽]**。
 
@@ -319,7 +319,7 @@ ht-degree: 1%
 
 您也可以使用![刪除圖示](/help/forms/assets/Smock_Delete_18_N.svg)圖示從面板刪除表單元件。
 
-![刪除元件](/help/forms/assets/delete-component.png){width="200" align="center"}
+![刪除元件](/help/forms/assets/delete-component.png)
 
 您也可以視需要為元件新增必要的驗證。
 
@@ -333,11 +333,11 @@ ht-degree: 1%
 
 1. 按一下配置元件工具列上的「取代」圖示，就會顯示&#x200B;**[!UICONTROL 取代元件]**&#x200B;對話方塊。
 
-   ![取代配置](/help/forms/assets/replace-layout.png){width="200" align="center"}
+   ![取代配置](/help/forms/assets/replace-layout.png)
 
 1. 從&#x200B;**[!UICONTROL 取代元件]**&#x200B;對話方塊中選取所需的版面。
 
-   ![取代元件對話方塊](/help/forms/assets/replace-component.png){width="200" align="center"}
+   ![取代元件對話方塊](/help/forms/assets/replace-component.png)
 
    選取配置圖後，配置圖中的元件排列會隨之變更。 例如，從&#x200B;**[!UICONTROL 取代元件]**&#x200B;對話方塊中選取垂直索引標籤元件；面板的排列會變更為左側的索引標籤：
 
@@ -350,11 +350,11 @@ ht-degree: 1%
 1. 找出可新增元件的區段。
 1. 導覽至您編寫環境中的左側面板，然後按一下&#x200B;**元件**。
 
-   ![元件面板](/help/forms/assets/add-new-component.png){width="200" align="center"}
+   ![元件面板](/help/forms/assets/add-new-component.png)
 
    當您按一下&#x200B;**元件**&#x200B;選項時，可用的元件清單就會顯示。
 
-   ![元件面板](/help/forms/assets/add-new-component2.png){width="200" align="center"}
+   ![元件面板](/help/forms/assets/add-new-component2.png)
 
 1. 瀏覽可用的元件並選取所需的元件。
 
