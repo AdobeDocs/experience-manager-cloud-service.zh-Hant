@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的運作方式以及該軟體可以為您做哪些事。
 breadcrumb-title: 使用手冊
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 260761e6380846f44756adf4aa4c5410a40ce446
+source-git-commit: 9c6cf85ccc4e15671669b2fc59b01e7c0cef10e2
 workflow-type: tm+mt
-source-wordcount: '5481'
-ht-degree: 97%
+source-wordcount: '5528'
+ht-degree: 96%
 
 ---
 
@@ -691,6 +691,7 @@ ht-degree: 97%
       + 核心元件 {#authoring-adaptive-forms-core-components}
          + 建立最適化表單{#create-an-adaptive-form-on-forms-cs}
             + [建立最適化表單](/help/forms/creating-adaptive-form-core-components.md)
+            + [根據核心元件設定最適化表單的版面](/help/forms/layout-capabilities-adaptive-forms-core-components.md)
             + [建立最適化表單片段](/help/forms/adaptive-form-fragments-core-components.md)
             + [為最適化表單建立主題 - 核心元件](/help/forms/using-themes-in-core-components.md)
             + [建立以核心元件為基礎的最適化表單範本](/help/forms/template-editor-core-components.md)
@@ -715,7 +716,6 @@ ht-degree: 97%
             + [在最適化表單中新增版本設定、評論和附註](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md)
             + [比較最適化表單](/help/forms/compare-forms.md)
             + [使用移轉公用程式將基礎元件型最適化表單轉換為核心元件型表單。](/help/forms/migration-utility-tool-for-af-core-components.md)
-            + [將最適化表單另存為草稿](/help/forms/save-core-component-based-form-as-draft.md)
             + 以核心元件為主之最適化表單的規則編輯器簡介{#rule-editor-core-components}
                + [以核心元件為主之最適化表單的規則編輯器簡介](/help/forms/rule-editor-core-components.md)
                + [以核心元件為主之最適化表單的規則編輯器使用者介面](/help/forms/rule-editor-core-components-user-interface.md)
@@ -726,6 +726,11 @@ ht-degree: 97%
                + [以核心元件為主之最適化表單的自訂函數簡介](/help/forms/create-and-use-custom-functions.md)
                + [建立和使用以核心元件為主之最適化表單的自訂函數](/help/forms/custom-function-core-component-create-function.md)
                + [以核心元件為主之最適化表單的自訂函數範例](/help/forms/custom-function-core-components-use-cases.md)
+            + Forms Portal及其元件簡介{#introduction-to-forms-portal}
+               + [Forms Portal元件簡介](/help/forms/configure-forms-portal.md)
+               + [使用搜尋與清單產生器元件在「網站」頁面上列出表單](/help/forms/list-forms-on-sites-page.md)
+               + [使用草稿和提交元件將表單儲存並列為「網站」頁面上的草稿](/help/forms/save-core-component-based-form-as-draft.md)
+               + [使用連結元件將表單連結新增至網站頁面](/help/forms/add-form-link-to-aem-sites-page.md)
       + Foundation 元件 {#authoring-adaptive-forms-foundation-components}
          + 將您的 PDF 表單轉換為最適化表單 {#afcs}
             + [自動表單轉換服務簡介](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=zh-hant)
@@ -782,7 +787,6 @@ ht-degree: 97%
             + [重複使用最適化表單的中繼資料屬性](/help/forms/reusing-adaptive-forms.md)
          + 改進最適化表單的協助工具功能{#accessible-adaptive-forms}
             + [建立無障礙的最適化表單](/help/forms/creating-accessible-adaptive-forms.md)
-         + [設定表單入口網站](/help/forms/configure-forms-portal.md)
          + [建立和管理評論](/help/forms/create-reviews-forms.md)
          + [將提交稽核者與表單建立關聯](/help/forms/adding-reviewers-form.md)
          + [建立和管理最適化表單的稽核](/help/forms/review-adaptiveforms-in-sites-page.md)

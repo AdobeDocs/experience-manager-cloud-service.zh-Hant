@@ -1,8 +1,8 @@
 ---
-source-git-commit: 7a1181a372928602b8fd0eb4699789217473a94c
+source-git-commit: c7b78b5c4e4851d57314a437b3b7fa06c1f167d5
 workflow-type: tm+mt
-source-wordcount: '711'
-ht-degree: 75%
+source-wordcount: '892'
+ht-degree: 77%
 
 ---
 # 代碼片段 {#snippets}
@@ -128,6 +128,26 @@ ht-degree: 75%
 * [建立以核心元件為主之最適化表單的自訂函數](/help/forms/custom-function-core-component-create-function.md)
 * [開發及使用自訂函式的範例](/help/forms/custom-function-core-components-use-cases.md)
 
+
+## Forms入口網站{#forms-portal-see-also}
+
+* [Forms Portal元件簡介](/help/forms/configure-forms-portal.md)
+* [在網站頁面上列出您的表單](/help/forms/list-forms-on-sites-page.md)
+* [將您的表單儲存為草稿](/help/forms/save-core-component-based-form-as-draft.md)
+* [將表單連結新增至網站頁面](/help/forms/add-form-link-to-aem-sites-page.md)
+
+
+## Cloud Manager IP 允許清單和前端管道 {#allowlist-frontend-pipeline}
+
+>[!IMPORTANT]
+>
+>前端管道要求將以下 IP 允許清單預先新增至 Cloud Manager。
+>如有需要，請複製以下位址區塊來[新增 IP 允許清單](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)。每個位址都以逗號區隔。將該區塊貼到「**IP 位址/CIDR**」的欄位 (在「**新增 IP 允許清單**」的對話框裡)。將游標放在位址清單中第一個逗號後面，然後按 **Enter** 鍵。儲存清單。
+>為了避免前端管道運作中斷，在啟用管道&#x200B;*之前*，務必先將此 IP 允許清單新增至 Cloud Manager。
+>
+>**Cloud Manager IP 允許清單**
+>52.254.106.192/28,20.186.185.181,52.254.106.240/28,52.254.107.128/28,52.254.105.192/28,52.254.106.176/28,20.186.185.227,52.254.106.144/28,52.254.107.64/28,20.186.185.239,20.22.83.112,52.254.107.80/28,52.254.107.144/28,52.254.106.224/28,20.14.241.153,52.254.107.0/28,52.254.107.32/28,52.254.106.208/28,40.70.154.136/29,52.254.106.160/28,52.254.107.16/28,52.254.106.0/28,4.152.211.251
+>   
 
 ## 新增Cloud Manager IP允許清單和前端管道 {#add-cm-allowlist-frontend-pipeline}
 

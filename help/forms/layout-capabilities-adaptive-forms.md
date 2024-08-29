@@ -4,10 +4,10 @@ description: Adaptive Forms在各種裝置上的版面配置與外觀是由版�
 feature: Adaptive Forms, Foundation Components
 exl-id: e30c6ff9-692b-4415-8f14-b4ef616b2d12
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: ba98b4e17a1245a5a5d208b4bf8698b4da4e9f6b
 workflow-type: tm+mt
-source-wordcount: '847'
-ht-degree: 8%
+source-wordcount: '858'
+ht-degree: 7%
 
 ---
 
@@ -19,7 +19,8 @@ ht-degree: 8%
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
 | AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/layout-capabilities-adaptive-forms.html) |
-| AEM as a Cloud Service  | 本文章 |
+| AEM as a Cloud Service （核心元件） | [按一下這裡](/help/forms/layout-capabilities-adaptive-forms-core-components.md) |
+| AEM as a Cloud Service （基礎元件） | 本文章 |
 
 [!DNL Adobe Experience Manager]可讓您建立簡單易用的最適化Forms，為使用者提供動態體驗。 表單版面配置會控制專案或元件在調適型表單中的顯示方式。
 
