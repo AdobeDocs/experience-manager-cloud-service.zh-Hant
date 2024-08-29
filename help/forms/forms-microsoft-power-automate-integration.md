@@ -5,10 +5,10 @@ exl-id: a059627b-df12-454d-9e2c-cc56986b7de6
 keywords: 將AEM表單連線至power automate、Power automate automation AEM Forms、將power automate整合至Adaptive Forms、將資料從Adaptive Forms傳送至Power Automate
 feature: Adaptive Forms
 role: Admin, User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: ae2815a49a674521344ded8da009290c4d999fdf
 workflow-type: tm+mt
-source-wordcount: '1171'
-ht-degree: 11%
+source-wordcount: '1209'
+ht-degree: 10%
 
 ---
 
@@ -72,14 +72,14 @@ AEM as a Cloud Service提供多種立即可用的提交動作，用於處理表�
    * 存取權杖（用於隱含流程）
    * ID權杖（用於隱含和混合流量）
 
-1. 在API許可權頁面上按一下「新增許可權」 。
-1. 在Microsoft® API底下選取流量服務，然後選取以下許可權。
+1. 在API許可權頁面上按一下`Add a permission`。
+
+1. 在Microsoft® API底下，選取`Power Automate`，然後選取下列許可權。
    * Flows.Manage.All
    * Flows.Read.All
-
-   按一下「新增許可權」以儲存許可權。
-1. 在API許可權頁面上按一下「新增許可權」 。 選取我的組織使用的API並搜尋`DataVerse`。
-1. 啟用user_impersonation ，然後按一下新增許可權。
+   * GCC許可權(如果您想要連線至GCC （政府雲端運算）租使用者，則為選用)
+按一下`Add permissions`以儲存許可權。
+1. 在API許可權頁面上按一下`Add a permission`。 選取我的組織使用的API並搜尋`DataVerse`和啟用`user_impersonation`按一下`Add`許可權。
 1. （選擇性）在「憑證和密碼」頁面上，按一下「新增使用者端密碼」。 在「新增使用者端密碼」畫面上，提供密碼到期的說明和時段，然後按一下「新增」。 產生秘密字串。
 1. 記下貴組織專屬的[動態環境URL](https://docs.microsoft.com/en-us/power-automate/web-api#compose-http-requests)。
 
@@ -88,15 +88,15 @@ AEM as a Cloud Service提供多種立即可用的提交動作，用於處理表�
 1. 在AEM Forms作者執行個體上，瀏覽至&#x200B;**[!UICONTROL 工具]** ![hammer](assets/hammer.png) > **[!UICONTROL 一般]** > **[!UICONTROL 設定瀏覽器]**。
 1. 在&#x200B;**[!UICONTROL 設定瀏覽器]**&#x200B;頁面上，選取&#x200B;**[!UICONTROL 建立]**。
 1. 在&#x200B;**[!UICONTROL 建立設定]**&#x200B;對話方塊中，指定設定的&#x200B;**[!UICONTROL 標題]**、啟用&#x200B;**[!UICONTROL 雲端設定]**，並選取&#x200B;**[!UICONTROL 建立]**。 這樣便會建立儲存 Cloud Services 的設定容器。請確保資料夾名稱未含任何空格。
-1. 瀏覽至&#x200B;**[!UICONTROL Tools]** ![hammer](assets/hammer.png) > **[!UICONTROL Cloud Service]** > **[!UICONTROL Microsoft®® Power Automate Dataverse]**，並開啟您在上一步中建立的設定容器。
+1. 瀏覽至&#x200B;**[!UICONTROL Tools]** ![hammer](assets/hammer.png) > **[!UICONTROL Cloud Service]** > **[!UICONTROL Microsoft® Power Automate Dataverse]**，並開啟您在上一步中建立的設定容器。
 
 
    >[!NOTE]
    >
    >建立最適化表單時，請在&#x200B;**[!UICONTROL 設定容器]**&#x200B;欄位中指定容器名稱。
 
-1. 在設定頁面上，選取「**[!UICONTROL 建立]**」以在AEM Forms中建立[!DNL Microsoft®®® Power Automate Flow Service]設定。
-1. 在&#x200B;**[!UICONTROL 設定Microsoft®® Power Automate的Dataverse服務]**&#x200B;頁面上，指定&#x200B;**[!UICONTROL 使用者端ID]** （也稱為應用程式ID）、**[!UICONTROL 使用者端密碼]**、**[!UICONTROL OAuth URL]**&#x200B;和&#x200B;**[!UICONTROL 動態環境URL]**。 使用您在上一節建立的[Microsoft® Azure Active Directory應用程式](#ms-power-automate-application)的使用者端ID、使用者端密碼、OAuth URL和動態環境URL。 在Microsoft® Azure Active Directory應用程式UI中使用端點選項來尋找OAuth URL
+1. 在設定頁面上，選取「**[!UICONTROL 建立]**」以在AEM Forms中建立[!DNL Microsoft® Power Automate Flow Service]設定。
+1. 在&#x200B;**[!UICONTROL 設定Microsoft® Power Automate的Dataverse服務]**&#x200B;頁面上，指定&#x200B;**[!UICONTROL 使用者端ID]** （也稱為應用程式ID）、**[!UICONTROL 使用者端密碼]**、**[!UICONTROL OAuth URL]**&#x200B;和&#x200B;**[!UICONTROL 動態環境URL]**。 使用您在上一節建立的[Microsoft® Azure Active Directory應用程式](#ms-power-automate-application)的使用者端ID、使用者端密碼、OAuth URL和動態環境URL。 在Microsoft® Azure Active Directory應用程式UI中使用端點選項來尋找OAuth URL
 
    ![在Microsoft Power Automate應用程式UI中使用端點選項來尋找OAuth URL](assets/endpoints.png)
 
@@ -112,7 +112,18 @@ AEM as a Cloud Service提供多種立即可用的提交動作，用於處理表�
    >建立最適化表單時，請在&#x200B;**[!UICONTROL 設定容器]**&#x200B;欄位中指定容器名稱。
 
 1. 在設定頁面上，選取「**[!UICONTROL 建立]**」以在AEM Forms中建立[!DNL Microsoft® Power Automate Flow Service]設定。
+
+1. （選擇性）選取`Connect to Microsoft GCC`核取方塊以連線至GCC租使用者。
+
+   >[!NOTE]
+   >
+   > 如果您想要連線到GCC （政府雲端運算）租使用者，請在Microsoft Azure入口網站中選取GCC許可權。
+
+
+   ![Power Automate雲端設定](/help/forms/assets/power-automate.png)
+
 1. 在&#x200B;**[!UICONTROL 設定Microsoft® Power Automate的Dataverse]**&#x200B;頁面上，指定&#x200B;**[!UICONTROL 使用者端ID]** （也稱為應用程式ID）、**[!UICONTROL 使用者端密碼]**、**[!UICONTROL OAuth URL]**&#x200B;和&#x200B;**[!UICONTROL 動態環境URL]**。 使用使用者端ID、使用者端密碼、OAuth URL和Dynamics環境ID。 在Microsoft® Azure Active Directory應用程式UI中使用端點選項來尋找OAuth URL。 開啟[我的資料流](https://us.flow.microsoft.com)連結，然後選取「我的資料流」使用URL中列出的識別碼做為Dynamics環境ID。
+
 1. 選取&#x200B;**[!UICONTROL 連線]**。 如有要求，請登入您的Microsoft® Azure帳戶。 選取「**[!UICONTROL 儲存]**」。
 
 ### Publish包含Microsoft®Power Automate Dataverse和Microsoft® Power Automate Flow Service雲端設定 {#publish-microsoft-power-automate-dataverse-cloud-configuration}
