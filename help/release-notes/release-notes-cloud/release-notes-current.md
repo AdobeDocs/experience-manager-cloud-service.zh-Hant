@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: e11c869c2f8cc8847869ad67a2c752e7239bd44c
+source-git-commit: 9cc49bf83d278d4064faa1d0157201226a067cb1
 workflow-type: tm+mt
-source-wordcount: '1511'
-ht-degree: 73%
+source-wordcount: '1142'
+ht-degree: 51%
 
 ---
 
@@ -28,21 +28,35 @@ ht-degree: 73%
 
 ## 發行日期 {#release-date}
 
-[!DNL Adobe Experience Manager]作為[!DNL Cloud Service]目前功能版本(2024.7.0)的發行日期是2024年7月25日。 下一個功能版本(2024.8.0)計畫於2024年8月29日發行。
+[!DNL Adobe Experience Manager]作為[!DNL Cloud Service]目前功能版本(2024.8.0)的發行日期是2024年8月29日。 下一個功能版本(2024.9.0)計畫於2024年9月26日發行。
 
 ## 維護版本發行說明 {#maintenance}
 
 您可以在[這裡](/help/release-notes/maintenance/latest.md)找到最新的維護版本發行說明。
 
-## 發行影片 {#release-video}
+<!-- ## Release Video {#release-video}
 
-請觀看 2024 年 7 月版本概觀影片，了解 2024.7.0 版本新增功能的摘要：
+Have a look at the August 2024 Release Overview video for a summary of the features added in the 2024.8.0 release:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3431707?quality=12)
+
+-->
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
 ### Experience Manager Sites 新功能 {#new-feature-sites}
+
+**Edge Delivery Services 的 AEM 製作**
+
+現在支援現有的網站[繼承](/help/sites-cloud/authoring/universal-editor/inheritance.md)功能，包括：
+
+* [AEM 啟動](/help/sites-cloud/authoring/launches/overview.md)
+* 頁面層級的[MSM](/help/sites-cloud/administering/msm/overview.md)
+
+此外，現已支援下列頁面管理功能：
+
+* [AEM標籤](/help/sites-cloud/authoring/sites-console/tags.md)可以作為[分類](/help/edge/wysiwyg-authoring/taxonomy.md)匯出給Edge Delivery Services。
+* 即將推出適用於Edge Delivery Services的[範本](/help/edge/wysiwyg-authoring/templates.md)！
 
 ### 早期採用者計劃 {#sites-early-adopter}
 
@@ -50,87 +64,70 @@ ht-degree: 73%
 
 透過 AEM 新功能「[產生變化版本](/help/generative-ai/generate-variations.md)」運用 GenAI；此功能現在可於雲端服務中存取。產生變化版本可協助您透過使用生成式 AI 來產生和擴展內容建立。請聯絡您的 Adob&#x200B;&#x200B;e 客戶團隊以考慮參與該計劃。
 
-**在內容片段控制台中瀏覽資產**
-
-內容作者現在可以瀏覽、查看影像，並對影像執行動作，而無需離開內容片段控制台。
-
-![資產瀏覽](/help/sites-cloud/administering/content-fragments/assets/cf-console-assets-browse.png)
-
-有興趣嘗試該功能並分享回饋意見嗎？從您的官方電子郵件 ID 傳送電子郵件到 aemcs-headless-adopter@adobe.com，深入了解有關早期採用者計劃的資訊。
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-**使用資產選擇器上傳資產**
+### 資產檢視中的新功能 {#assets-view-new-features}
 
-Asset Selector現在可讓內容作者透過拖曳或瀏覽本機檔案系統，直接從選取器上傳最終資產。 這可讓您從所選的應用程式將最終資產上傳至DAM。
+**已更新Adobe Firefly影像產生**
 
-### 資產視圖的新功能 {#assets-view-new-features}
+Assets as a Cloud Service現在使用Firefly最新的Widget，可讓您使用Adobe Firefly產生不同樣式的影像。 透過定義其樣式、構成、維度等，使用內建的Firefly編輯器，您可以直接在AEM Assets存放庫中快速建立和儲存您需要的資產，以立即使用。
 
-**Content credentials整合**
+![Adobe Firefly影像產生](/help/assets/assets/bugatti-type-57.png)
 
-Experience Manager Assets現在支援支援影像格式的content credentials。 如此一來，資產歷程及其建立方式的相關資訊，包括是否使用GenAI進行修改。
+**PSB檔案支援**
 
-![Content credentials](/help/assets/assets/content-credentials.png)
+除了現有的as a Cloud Service檔案支援外，Assets現在還支援PhotoshopPSD大型檔案（PSB檔案）。
 
-**資料夾內容的視覺預覽**
+### Content Hub中的新增強功能 {#content-hub-new-enhancements}
 
-現在，Experience Manager Assets在瀏覽或搜尋內容時，會在資料夾縮圖上顯示資料夾內容的視覺預覽，改善AEM Assets存放庫中可用資產的可發現性。
+* 更妥善地處理長檔案名稱，透過工具提示輕鬆擴充完整名稱。
+* 改善縮圖，以更符合內容外觀比例，並涵蓋更大的內容區域。
+* 透過內容中心支援AEM的自訂縮圖體驗。
+* 改善色彩搜尋。
+* 改善設定可儲存體驗。
+* 已改善集合的資訊頁面，以反映建立者名稱。
 
-<!--
-
-
-**Content Credentials**
-
-Content Credentials feature in Assets view now provides detailed asset provenance data adhered to an asset. This helps to trace the enroute edits along the asset's lifecycle to prevent users from deception through deliberately tempered assets. This ensures content authenticity among users and fosters trust through transparency.
-
-When looking at the asset details, any image with content credentials added, such as those created with GenAI, displays the manifest details in a dedicated panel. If the asset is downloaded, published, or shared, the credentials remain intact with the asset.
-
-![check publish status1](/help/release-notes/assets/content-credentials.png)
-
--->
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-### AEM Forms 的新功能 {#forms-new-prerelease-features}
+### AEM Forms中的新搶鮮版功能 {#forms-new-prerelease-features}
 
-#### 核心元件式最適化表單的增強型視覺規則編輯器
+#### 根據最適化Forms自動儲存核心元件的草稿
 
-最適化表單作者可以在核心元件的視覺規則編輯器中使用現成可用的函式中的可重複表單欄位，以在表單中建置複雜的商業邏輯，而不需要自訂或開發團隊的協助。
+使用者現在可以受益於自動儲存功能，該功能會自動將部分完成的表單儲存為草稿。 他們可以稍後再回來，在相同或其他裝置上完成填寫。 此功能可減少表單放棄率，改善組織的轉換率，因為使用者不需要從頭開始填寫表單。
+
 
 ### AEM Forms 的優先體驗功能 {#forms-new-early-access-features}
 
-AEM Forms 優先體驗計劃為您提供獨一無二的機會，讓您比其他人更早獲得尖端創新的獨家存取權，並協助推動相關開發。您可以透過該計劃存取多項創新。
+AEM Forms搶先體驗計畫提供您獨一無二的機會，讓您以獨家方式存取尖端創新技術，並幫助打造其開發流程。
 
 本發行說明列出目前版本提供的創新功能。如需優先體驗計劃提供之創新的完整清單，請參閱 [AEM Forms 優先體驗計劃文件](/help/forms/early-access-ea-features.md)。
 
-#### 使用通用編輯器製作調適型表單
+#### AEM Forms AI助理
 
-運用Adobe Experience Manager [通用編輯器](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction)，透過Edge Delivery Service提供的WYSIWYG拖放式撰寫功能，針對Headless和Headful註冊體驗建立最適化表單。 最適化表單作者可針對網頁中的表單變化輕鬆建立和啟動實驗，並決定使用者的最佳執行體驗。
+最適化Forms的創作AI為您的表單開發流程帶來全新境界的強大功能和簡易性。 這可讓您以前所未有的速度建置更好的表單。
+
+![Generative AI助理，最適化Forms](/help/forms/assets/generative-ai-assistant.png)
+
+提供的Generative AI功能包括：
+
+* **產品查詢的AI小幫手**：取得您的AEM表單相關問題的立即解答。 AI助理就像您自己的個人知識庫，直接在平台內提供有見地的指引和建議。
+
+* **產生最適化表單**：輕鬆建立具有產生AI提示的完整表單。 我們的Generative AI會自動產生方便使用的表單，以減少流失並個人化體驗。
+
+* 為Forms **產生**&#x200B;面板：產生符合特定資料收集需求的表單區段。 例如，產生用於收集付款資訊、客戶偏好設定或旅行詳細資訊的區段。
+
+* **變更表單版面配置**：使用Generative AI提示嘗試不同版面配置和設計。 嘗試不同的版面（如精靈或索引標籤檢視），以找出最符合您表單的版面。 使用Generative AI提示將您的表單最佳化為行動回應，並建立使用者喜愛的具有視覺吸引力的表單。
+
+* **設定送出動作**：使用Generative AI提示輕鬆設定表單的送出動作。 從預先建立的提交動作資料庫或由您自己的開發團隊建立和部署的自訂提交動作清單中選擇。
 
 >[!IMPORTANT]
 >
-> 如果您有興趣加入 Adobe 優先體驗計劃以使用任何優先體驗創新，請直接從您的正式地址寄送電子郵件至 [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) 要求存取。您可以要求存取所有或任何特定的創新。
+> 如果您有興趣加入Early Access Program以進行任何創新，只要將您感興趣的功能清單從您的官方地址傳送給[aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)即可。
+
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] 基礎 {#foundation}
-
-### 使用自助API金鑰清除CDN的內容 {#purge-cdn}
-
-使用HTTP Cache-Control標題設定TTL，是平衡內容傳送效能與內容新鮮度的有效方法。 不過，在即時提供更新內容很重要的情況下，直接清除CDN快取可能會有助益。
-
-[瞭解如何](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token)使用Cloud Manager設定管道自助設定清除API Token，以便您可以[叫用具有下列任一變數的清除API](/help/implementing/dispatcher/cdn-cache-purge.md)：
-* 單一URL
-* 使用標籤的多個URL
-* 完整CDN快取清除
-
-### 客戶管理的CDN專用X-AEM-Edge-Key的自助設定 {#customermanaged-keys}
-
-以前，需要支援服務單才能產生設定客戶管理之內容傳遞網路所需的 X-AEM-Edge-Key。現在，這是自助式，可在使用設定管道部署的設定檔案中宣告索引鍵值，移除上線新環境的任何延遲。 [了解更多](/help/implementing/dispatcher/cdn-credentials-authentication.md#CDN-HTTP-value)。
-
-### 流量篩選規則警報 {#traffic-filter-rules-alerts}
-
-流量篩選規則包含可選擇性授權的Web應用程式防火牆(WAF)規則，可讓您設定應該封鎖哪些流量。
-
-現在只要流量篩選規則被觸發，您就可以[訂閱警示](/help/security/traffic-filter-rules-including-waf.md#traffic-filter-rules-alerts)。 發生某些流量狀況時，行動中心電子郵件通知會通知您，以利採取適當措施。
 
 ### 與內容交付相關的早期採用者計劃 {#foundation-early-adopter}
 
@@ -152,33 +149,6 @@ AEM Forms 優先體驗計劃為您提供獨一無二的機會，讓您比其他�
 
 Adobe 管理的內容傳遞網路現在支援 [Edge Side Includes (ESI)](/help/implementing/dispatcher/edge-side-includes.md)，這是一種用於邊緣層級動態 Web 內容組合的標記語言。透過包含 ESI 程式碼片段，您可以在內容傳遞網路上用較高的 TTL 快取整個 HTML 頁面，同時更頻繁地從來源擷取需要較高更新頻率 (TTL 較低) 的較小區段。<!--Please reach out to **<aemcs-cdn-config-adopter@adobe.com>** for more information.-->
 
-### 內容健康相關行動中心通知早期採用者計劃 {#actions-center-notifications}
-
-有重要事件發生時，或是我們注意到您的程式碼或設定中有些問題需要主動採取行動時，[行動中心](/help/operations/actions-center.md)就會寄送電子郵件通知。Adobe 現在推出了幾種與您的內容健康相關的新類型通知。此功能可透過早期採用者計畫使用。若要參與，請聯絡 Adobe 客戶服務。
-
-#### 頁面包含大量節點 {#page-nodes}
-
-大量節點會降低轉譯效能並減少頁面載入時間。當偵測到頁面有大量節點時，您會收到動作中心主動傳來的通知，從而允許您採取必要的步驟來減少頁面內的節點總數。
-
-#### 大量執行中工作流程實例 {#running-workflows}
-
-當製作環境中存在大量執行中工作流程時，工作流程引擎效能會受到影響。當偵測到大量執行中工作流程時，您會收到動作中心主動傳來的通知。此程序可讓您設定清除作業以終止不必要的執行中工作流程。
-
-#### 直接新增到自訂群組的使用者 {#users-customgroups}
-
-當使用者直接新增至自訂群組時，您會收到動作中心主動傳來的通知。此程序可讓您遵循 IMS 最佳實務，將使用者新增至相關 IMS 群組，然後將這些 IMS 群組納入 AEM 群組做為其成員。
-
-#### 缺少 JCR 內容 {#jcr-content}
-
-當偵測到缺少 JCR 內容時，動作中心會主動通知您。透過此方法，您可以新增缺少的內容並防止某些 AEM Assets 功能失敗。
-
-#### 已完成的工作流程未清除 {#workflows}
-
-當超過 90 天的已完成工作流程尚未清除時，動作中心會主動通知您。此方法透過減少工作流程實例數來幫助提高工作流程引擎的效能。
-
-#### 缺少 Sling 資源 {#sling-resource}
-
-當偵測到缺少 Sling 資源時，動作中心會主動通知您。透過此方法，您可以新增缺少的資源並防止某些 AEM Assets 功能失敗。
 
 ## [!DNL Experience Manager] Guides {#guides}
 
