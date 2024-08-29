@@ -3,8 +3,8 @@ title: 如何將核心元件型最適化表單儲存為草稿，並使用草稿�
 description: 瞭解如何將基於核心元件的最適化表單另存為草稿。 也瞭解如何使用草稿和提交元件來列出登入使用者的草稿和提交？
 feature: Adaptive Forms, Core Components
 exl-id: c0653bef-afeb-40c1-b131-7d87ca5542bc
-role: User, Developer, Admin
-source-git-commit: 31f18027d856cbd161457c4a01d6c7c17d1c2b89
+role: User, Developer
+source-git-commit: 2561145c37fe2ba6a38482fb2d1be614a971b418
 workflow-type: tm+mt
 source-wordcount: '1376'
 ht-degree: 2%
@@ -12,7 +12,7 @@ ht-degree: 2%
 ---
 
 
-# 將表單儲存為草稿並列在網站頁面上
+# 將表單另存為草稿並列在網站頁面上
 
 <span class="preview">本文包含關於&#x200B;**自動儲存**&#x200B;功能（發行前功能）的內容。 只能透過我們的[發行前通道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features).</span>存取發行前功能
 
