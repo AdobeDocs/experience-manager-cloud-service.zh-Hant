@@ -4,7 +4,7 @@ description: Adaptive Forms在各種裝置上的版面配置與外觀是由版�
 feature: Adaptive Forms, Core Components
 keywords: 根據核心元件的調適型表單佈局、表單的不同佈局、動態表單佈局AEM、AEM Cloud Service表單佈局、AEM核心元件中的表單佈局型別、調適型表單佈局
 role: User, Developer, Admin
-source-git-commit: 0397e5ec20b48a45df74d7d1c03eaae3739000dd
+source-git-commit: 9f14950170cc92d1ab433fdaa1a5d68b4dc53484
 workflow-type: tm+mt
 source-wordcount: '2107'
 ht-degree: 1%
@@ -326,8 +326,6 @@ ht-degree: 1%
 ## 如何以新版面配置取代現有版面？
 
 您可以使用新的版面配置來取代表單的版面，其中涉及修改元件在表單中的排列和顯示方式。
-
-
 
 執行以下步驟來取代現有的表單版面：
 
