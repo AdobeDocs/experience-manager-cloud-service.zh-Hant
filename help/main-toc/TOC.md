@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的運作方式以及該軟體可以為您做哪些事。
 breadcrumb-title: 使用手冊
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 14c07774254c8479e8962c367a16cd3a6d3af012
+source-git-commit: f7508f2113d81aae205c63a25097ed920b124011
 workflow-type: tm+mt
-source-wordcount: '5533'
+source-wordcount: '5538'
 ht-degree: 96%
 
 ---
@@ -618,6 +618,7 @@ ht-degree: 96%
       + [部署 Content Hub](/help/assets/deploy-content-hub.md)
       + [設定 Content Hub 使用者介面](/help/assets/configure-content-hub-ui-options.md)
       + [將品牌核准的資產上傳或匯入 Content Hub](/help/assets/upload-brand-approved-assets.md)
+      + [核准Content Hub的資產](/help/assets/approve-assets-content-hub.md)
       + [在 Content Hub 中搜尋資產](/help/assets/search-assets-content-hub.md)
       + [資產屬性](/help/assets/asset-properties-content-hub.md)
       + [在 Content Hub 中分享資產](/help/assets/share-assets-content-hub.md)
