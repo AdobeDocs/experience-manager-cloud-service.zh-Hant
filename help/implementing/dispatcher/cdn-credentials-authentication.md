@@ -4,10 +4,10 @@ description: 瞭解如何在設定檔案中宣告規則，再使用Cloud Manager
 feature: Dispatcher
 exl-id: a5a18c41-17bf-4683-9a10-f0387762889b
 role: Admin
-source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
+source-git-commit: e8c40d6205bfa2de18374e5161fe0fea42c8ce32
 workflow-type: tm+mt
-source-wordcount: '1266'
-ht-degree: 2%
+source-wordcount: '1283'
+ht-degree: 5%
 
 ---
 
@@ -54,7 +54,7 @@ data:
           authenticator: edge-auth
 ```
 
-請參閱[使用設定管道](/help/operations/config-pipeline.md#common-syntax)，以取得`data`節點之上屬性的說明。 `kind`屬性值應該是&#x200B;*CDN*，且`version`屬性應該設定為`1`。
+請參閱[「使用設定管道」](/help/operations/config-pipeline.md#common-syntax)，取得 `data` 節點上方屬性的描述。`kind`屬性值應該是&#x200B;*CDN*，且`version`屬性應該設定為`1`。
 
 其他屬性包括：
 
@@ -100,7 +100,7 @@ data:
            authenticator: purge-auth
 ```
 
-請參閱[使用設定管道](/help/operations/config-pipeline.md#common-syntax)，以取得`data`節點之上屬性的說明。 `kind`屬性值應該是&#x200B;*CDN*，且`version`屬性應該設定為`1`。
+請參閱[「使用設定管道」](/help/operations/config-pipeline.md#common-syntax)，取得 `data` 節點上方屬性的描述。`kind`屬性值應該是&#x200B;*CDN*，且`version`屬性應該設定為`1`。
 
 其他屬性包括：
 
@@ -118,6 +118,8 @@ data:
 
 >[!NOTE]
 >在部署參考清除金鑰的組態之前，必須將清除金鑰設定為[機密型別Cloud Manager環境變數](/help/operations/config-pipeline.md#secret-env-vars)。
+
+您可以參考以設定清除金鑰和執行CDN快取清除為重點的[教學課程](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/how-to/purge-cache)。
 
 ## 基本驗證 {#basic-auth}
 
@@ -156,7 +158,7 @@ data:
            authenticator: my-basic-authenticator
 ```
 
-請參閱[使用設定管道](/help/operations/config-pipeline.md#common-syntax)，以取得`data`節點之上屬性的說明。 `kind`屬性值應該是&#x200B;*CDN*，且`version`屬性應該設定為`1`。
+請參閱[「使用設定管道」](/help/operations/config-pipeline.md#common-syntax)，取得 `data` 節點上方屬性的描述。`kind`屬性值應該是&#x200B;*CDN*，且`version`屬性應該設定為`1`。
 
 此外，語法包括：
 
