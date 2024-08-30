@@ -4,9 +4,9 @@ description: 瞭解如何使用Cloud Acceleration Manager將移轉集中的內�
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 feature: Migration
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 4d34dc8464a51bcc11ee435de4d19183b2f3e3b2
 workflow-type: tm+mt
-source-wordcount: '2905'
+source-wordcount: '2982'
 ht-degree: 12%
 
 ---
@@ -214,11 +214,20 @@ AEM中的每個節點都必須有唯一的uuid。 此錯誤指出正在擷取的
 >abstract="擷取失敗的常見原因是超過節點屬性值的大小上限。請遵依文件 (包括與 BPA 報告相關的文件) 說明來修復這種情況。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html" text="移轉先決條件"
 
-儲存在MongoDB中的節點屬性值不能超過16 MB。 如果節點值超過支援的大小，擷取會失敗，且記錄會包含`BSONObjectTooLarge`錯誤，並指定哪個節點超過最大值。 這是MongoDB限制。
+儲存在MongoDB中的節點屬性值不能超過16 MB。 如果節點值超過支援的大小，擷取會失敗，且記錄會包含：
+
+* `BSONObjectTooLarge`錯誤並指定哪個節點超過最大值，或
+* `BsonMaximumSizeExceededException`錯誤，表示節點可能包含超過大小上限**的unicode字元
+
+這是MongoDB限制。
 
 請參閱[內容轉移工具必備條件](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md)中的`Node property value in MongoDB`附註，以取得詳細資訊以及可協助尋找所有大型節點的Oak工具連結。 修正所有大型節點後，請再次執行擷取和擷取。
 
 若要避免此限制，請在來源AEM執行個體上執行[Best Practices Analyzer](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md)，並檢閱它提供的發現，特別是[「不支援的存放庫結構」(URS)](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/urs)模式。
+
+>[!NOTE]
+>
+>[Best Practices Analyzer](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md) 2.1.50+版會報告包含超過大小上限Unicode字元的大型節點。 請確定您執行的是最新版本。 2.1.50之前的BPA版本將無法識別並報告這些大型節點，而且您必須使用上述的先決條件Oak工具個別探索這些節點。
 
 ### 擷取已撤銷 {#ingestion-rescinded}
 
