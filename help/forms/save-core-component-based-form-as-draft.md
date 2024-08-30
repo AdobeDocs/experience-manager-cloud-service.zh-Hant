@@ -4,9 +4,9 @@ description: 瞭解如何將基於核心元件的最適化表單另存為草稿�
 feature: Adaptive Forms, Core Components
 exl-id: c0653bef-afeb-40c1-b131-7d87ca5542bc
 role: User, Developer
-source-git-commit: 2561145c37fe2ba6a38482fb2d1be614a971b418
+source-git-commit: 2933b3be569724800a77b4ea93e91441046746f6
 workflow-type: tm+mt
-source-wordcount: '1376'
+source-wordcount: '1384'
 ht-degree: 2%
 
 ---
@@ -45,7 +45,9 @@ ht-degree: 2%
 
    ![Azure 儲存體設定](/help/forms/assets/save-form-as-draft-azure-storage.png)
 
-1. 按一下&#x200B;**儲存**。
+   在`Azure Storage Account`文字方塊中輸入`Connection String`，在`Azure Access key`文字方塊中輸入`Azure Key`。
+
+1. 按一下「**儲存**」。
 
    >[!NOTE]
    >
