@@ -2,9 +2,10 @@
 title: 在Experience Manager中核准資產
 description: 瞭解如何核准 [!DNL Experience Manager]中的資產。
 role: User
-source-git-commit: 540aa876ba7ea54b7ef4324634f6c5e220ad19d3
+exl-id: fe61a0f1-94d3-409a-acb9-195979668c25
+source-git-commit: 9b3b93100c45c7053549c3f9899a344ca7db104d
 workflow-type: tm+mt
-source-wordcount: '683'
+source-wordcount: '676'
 ht-degree: 2%
 
 ---
@@ -36,7 +37,7 @@ ht-degree: 2%
 
 ## 核准資產 {#approve-assets}
 
-您可以同時核准[!DNL Experience Manager]和[!DNL Experience Manager Assets]中的資產。 若要在[!DNL Experience Manager]中核准資產，請執行下列步驟：
+若要在[!DNL Experience Manager Admin view]中核准資產，請執行下列步驟：
 
 1. 選取資產並按一下頂端窗格中的&#x200B;**[!UICONTROL 屬性]**。
 1. 在&#x200B;**[!UICONTROL 基本]**&#x200B;索引標籤中，向下捲動至&#x200B;**[!UICONTROL 檢閱狀態]**。
@@ -51,7 +52,7 @@ ht-degree: 2%
 ## 大量核准資產 {#bulk-approve-assets}
 
 一次快速核准多個資產，簡化工作流程。 您可以大量核准資產，以加快核准程式，節省時間並提高生產力。
-<br>請依照下列步驟在[!DNL Experience Manager]中核准大量資產：
+<br>請依照下列步驟在[!DNL Experience Manager Admin view]中核准大量資產：
 
 1. 在作者環境中建立資料夾(https://author-pXXX-eYYY.adobeaemcloud.com)。 將&#x200B;_XXX_&#x200B;取代為您的方案識別碼，並將&#x200B;_YYY_&#x200B;取代為Experience Manager中的環境ID。
 1. 導覽至&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL Assets]** > **[!UICONTROL 中繼資料設定檔]**。
@@ -102,4 +103,3 @@ ht-degree: 2%
    >[!NOTE]
    >
    >在Assets檢視中，剛提供複製已核准資產之傳送URL的選項。
-
