@@ -4,9 +4,9 @@ description: 瞭解如何使用即時監控(RUM)來即時擷取和分析網站�
 exl-id: 91fe9454-3dde-476a-843e-0e64f6f73aaf
 feature: Administering
 role: Admin
-source-git-commit: 2515bc51fd54b014ffb701a8aef38cd08d6725b3
+source-git-commit: 1bb463fe59e89e6360dceefdaaec395084fc80c5
 workflow-type: tm+mt
-source-wordcount: '1274'
+source-wordcount: '1213'
 ht-degree: 1%
 
 ---
@@ -34,11 +34,6 @@ RUM （即時監控）服務是一種效能監控技術，可即時擷取和分�
 ## 誰能從「即時使用監控」服務中受益？ {#who-can-benefit-from-rum-service}
 
 AEM已開發RUM來協助客戶和Adobe瞭解訪客如何與AEM網站互動。 RUM可用來協助診斷效能問題，以及測量實驗的成效。 RUM透過取樣來保留訪客的隱私權 — 僅監控所有頁面檢視的一小部分 — 並且不會收集任何個人識別資訊(PII)。
-
-
-## 瞭解實際使用監控服務的運作方式 {#understand-how-the-rum-service-works}
-
-AEM使用RUM來協助客戶和Adobe瞭解訪客如何與AEM網站互動。 它可協助他們診斷效能問題，並測量實驗的成效。 RUM透過取樣來保留訪客的隱私權 — 僅監控所有頁面檢視的一小部分 — 並且不會收集任何個人識別資訊(PII)。
 
 ## Real Use Monitoring服務與隱私權 {#rum-service-and-privacy}
 
