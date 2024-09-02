@@ -4,10 +4,10 @@ description: 特定於  [!DNL Adobe Experience Manager] as a [!DNL Cloud Service
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: d80872b1df4d31d784745dabeb0e1680fc921cb8
+source-git-commit: c5057120d68e1119211c7733a8eb0424590096bd
 workflow-type: tm+mt
 source-wordcount: '2172'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -18,8 +18,7 @@ ht-degree: 100%
 >title="AEM as a Cloud Service 中已過時和已移除的功能"
 >abstract="AEM as a Cloud Service 具有雲端原生部署模型。某些功能和特性已由對應的雲生原生功能取代，此標籤顯示了這些功能。"
 
-
-Adobe 持續評估產品功能，以更新或替代的方式來改善或取代舊功能，以提升客戶享有的整體價值，且隨時謹慎考慮是否回溯相容。此外，由於 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 提供雲端原生部署模型，因此某些功能已由對應的雲端原生功能取代。
+Adobe持續評估產品功能，以更新或替代的方式來改善或取代舊功能，以提升整體客戶價值，並時時考慮回溯相容性。 此外，由於 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 提供雲端原生部署模型，因此某些功能已由對應的雲端原生功能取代。
 
 若要傳達 [!DNL Experience Manager] 功能即將移除/取代的訊息，請套用下列規則：
 
