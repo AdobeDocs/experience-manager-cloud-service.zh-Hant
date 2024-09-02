@@ -3,11 +3,10 @@ title: 如何在Adaptive Forms中建立和使用主題？
 description: 您可以使用主題來設定樣式，並使用核心元件來將視覺身分提供給最適化表單。 您可以在任何數量的最適化Forms中共用主題。
 keywords: 最適化表單樣式化核心元件。 在核心元件中使用主題、設計最適化表單的樣式、自訂主題
 feature: Adaptive Forms, Core Components
-exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: 076ee3616ad56b4d463d93e407a9e7e67e54b4ac
 workflow-type: tm+mt
-source-wordcount: '2879'
+source-wordcount: '2816'
 ht-degree: 4%
 
 ---
@@ -172,7 +171,7 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 
 #### 3.自訂主題 {#customize-the-theme}
 
-您可以使用佈景主題的全域變數來自訂個別元件或進行佈景主題層級變更。 對全域變數所做的任何變更都會影響所有個別元件。 例如，您可以使用全域變數來變更最適化表單所有元件的邊框顏色，並使用明亮的填色顏色來設定使用按鈕元件的CTA （行動號召）：
+您可以使用佈景主題的全域變數來自訂個別元件或進行佈景主題層級變更。 對全域變數所做的任何變更都會影響所有個別元件。 例如，您可以使用全域變數來變更最適化表單所有元件的邊框顏色，並使用明亮的填色顏色來設定CTA （呼叫動作）使用按鈕元件：
 
 * [設定主題層級樣式](#theme-customization-global-level)
 
@@ -380,7 +379,7 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 1. 按一下&#x200B;**[!UICONTROL 管道]**&#x200B;區段中的&#x200B;**[!UICONTROL 新增]**&#x200B;按鈕。
 1. 根據Cloud Service環境選取&#x200B;**[!UICONTROL 新增非生產管道]**&#x200B;或&#x200B;**[!UICONTROL 新增生產管道]**。 例如，此處已選取&#x200B;**[!UICONTROL 新增生產管道]**&#x200B;選項。
 1. 在&#x200B;**[!UICONTROL 新增生產管道]**&#x200B;對話方塊中，作為&#x200B;**[!UICONTROL 設定]**&#x200B;步驟的一部分，請指定管道的名稱。 例如，管道的名稱為`customcanvastheme`。
-1. 按一下&#x200B;**[!UICONTROL 「繼續」]**。
+1. 按一下「**[!UICONTROL 繼續]**」。
 1. 選取&#x200B;**[!UICONTROL 目標部署]** > **[!UICONTROL 前端計畫碼]**選項，在
 **[!UICONTROL Source程式碼]**&#x200B;步驟。
 1. 選取包含您最新變更的&#x200B;**[!UICONTROL 存放庫]**&#x200B;和&#x200B;**[!UICONTROL Git分支]**&#x200B;值。 例如，此處選取的存放庫名稱為`custom-canvas-theme-repo`，而Git分支為`main`。
@@ -428,11 +427,6 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 * **變更容器面板配置寬度**
 
   不建議變更容器面板配置寬度。 當您指定容器面板的寬度時，其會變成靜態，且無法適應不同的顯示。
-
-* **使用表單編輯器或主題編輯器來處理頁首和頁尾**
-
-  如果要使用字型樣式、背景和透明度等樣式選項來設定頁首和頁尾的樣式，請使用主題編輯器。
-如果您想在頁首中提供標誌影像、公司名稱以及頁尾的版權資訊等資訊，請使用表單編輯器選項。
 
 ## 常見問題 {#faq}
 
