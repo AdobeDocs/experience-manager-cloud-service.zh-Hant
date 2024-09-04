@@ -5,10 +5,10 @@ exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: eae5c75e1bf4f7201fe2c01d08737d36489ca3e4
+source-git-commit: 57fb7a011cb2da853cdca4f3233cd56775f4a459
 workflow-type: tm+mt
-source-wordcount: '1101'
-ht-degree: 31%
+source-wordcount: '925'
+ht-degree: 37%
 
 ---
 
@@ -63,11 +63,14 @@ Cloud Manager 授權儀表板提供對以下資訊的輕鬆存取：
 >
 >若要瞭解如何透過Admin Console管理整個組織的Adobe權益，請參閱[Admin Console概觀](https://helpx.adobe.com/tw/enterprise/using/admin-console.html)。
 
-## 檢視使用詳細資料 {#view-usage-details}
+## 檢視使用情況的詳細資訊 {#view-usage-details}
 
-**檢視使用詳細資料**&#x200B;按鈕可讓您存取所選解決方案的&#x200B;**使用詳細資料**&#x200B;視窗。 此視窗提供詳細的劃分，包括顯示解決方案使用情況的圖表。 如何測量此使用方式取決於選擇的解決方案。
+<!--
+The **View usage details** button gives access to the chosen solution's **Usage Details** window. This window gives a detailed breakdown including charts to show your solution's usage. How that usage is measured depends on the chosen solution. -->
 
-### 網站使用細節 {#sites-usage-details}
+Cloud Manager授權區域中的&#x200B;**檢視使用狀況詳細資料**&#x200B;按鈕提供您目前資源使用狀況的詳細劃分。 按一下就會開啟報表或控制面板，顯示與授權相關的重要量度。 <!-- ADD THIS SENTENCE IF ASSETS USAGE DETAILS GETS REINSTATED ", such as the number of users, storage consumption, or bandwidth usage, depending on the type of services you're using." -->此功能可協助您監視並確保您保持在合約的限制內，同時提供深入分析以更好地規劃資源及最佳化。
+
+### Sites 使用情況詳細資訊 {#sites-usage-details}
 
 **Sites使用詳細資料**&#x200B;視窗會顯示圖表，提供您根據[內容要求使用Sites授權的概觀。](#what-is-a-content-request)
 
@@ -77,27 +80,28 @@ Cloud Manager 授權儀表板提供對以下資訊的輕鬆存取：
 
 視窗右側會顯示區域圖，其中顯示所選合約年度內一段時間內依方案劃分的使用量。 游標暫留會顯示快顯視窗，其中顯示所選時間點的每個方案的詳細資料。
 
-### Assets使用詳細資料 {#assets-usage-details}
+<!-- REMOVED AS PER CQDOC-21983
+### Assets usage details {#assets-usage-details}
 
-**Assets使用詳細資料**&#x200B;視窗顯示的圖表會根據[儲存空間](#storage)和[標準使用者，提供您Assets授權使用情形的概觀。](#standard-users)選取適當的索引標籤以在檢視之間切換。
+The **Assets usage details** window, presents graphs giving an overview of the usage of your Assets licenses based on [storage](#storage) and [standard users.](#standard-users) Select the appropriate tab to toggle between the views.
 
-對於儲存和標準使用者檢視，您可以使用&#x200B;**環境型別**&#x200B;下拉式清單，在生產、中繼和開發環境之間切換檢視。
+For both storage and standard users views, you can use the **Environment Type** dropdown to toggle the view between production, stage, and development environments.
 
-#### 儲存空間 {#storage}
+#### Storage {#storage}
 
-![儲存裝置的Assets使用量詳細資料視窗](assets/assets-usage-details-storage.png)
+![Assets usage details window for storage](assets/assets-usage-details-storage.png)
 
-視窗左側會顯示圓形圖，顯示在&#x200B;**檢視合約年度**&#x200B;下拉式清單中所選合約年度的合約明細。
+The left side of the window presents a pie chart showing the contract breakdown for the contract year selected in the **View contract year** dropdown.
 
-視窗右側會顯示區域圖，其中顯示所選合約年度內一段時間內依方案劃分的使用量。 游標暫留會顯示快顯視窗，其中顯示所選時間點的每個方案的詳細資料。
+The right side of the window presents an area chart showing the usage broken down by program over time for the selected contract year. A hover reveals a popup with details per program for the selected point in time.
 
-#### 標準使用者 {#standard-users}
+#### Standard Users {#standard-users}
 
-![標準使用者的Assets使用詳細資訊視窗](assets/assets-usage-details-standard-users.png)
+![Assets usage details window for standard-users](assets/assets-usage-details-standard-users.png)
 
-視窗左側會顯示圓形圖，顯示在&#x200B;**檢視合約年度**&#x200B;下拉式清單中所選合約年度的合約明細。
+The left side of the window presents a pie chart showing the contract breakdown for the contract year selected in the **View contract year** dropdown.
 
-視窗右側會顯示區域圖，其中顯示所選合約年度內一段時間內依方案劃分的使用量。 游標暫留會顯示快顯視窗，其中顯示所選時間點的每個方案的詳細資料。
+The right side of the window presents an area chart showing the usage broken down by program over time for the selected contract year. A hover reveals a popup with details per program for the selected point in time. -->
 
 ## 常見問答 {#faq}
 

@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Configuration,Viewer Presets,Image Presets,Dynamic Media
 role: Admin,User
 exl-id: 83b70b17-7ee3-41cb-be90-c92ca161660e
-source-git-commit: 26afff3a39a2a80c1f730287b99f3fb33bff0673
+source-git-commit: 6ad46350906c3b8a36a8e361714fa5fffdbf8e82
 workflow-type: tm+mt
 source-wordcount: '172'
 ht-degree: 8%
@@ -13,6 +13,8 @@ ht-degree: 8%
 ---
 
 # 設定 Dynamic Media {#setting-up-dynamic-media}
+
+{{work-with-dynamic-media}}
 
 [Dynamic Media](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html)可依需求提供豐富的視覺化銷售和行銷資產，並自動針對網頁、行動裝置和社交網站的消費進行縮放，協助您管理資產。 Dynamic Media使用一組主要來源資產，透過其全球性、可擴充、效能最佳化的網路即時產生並傳送多種多樣的豐富內容。
 
