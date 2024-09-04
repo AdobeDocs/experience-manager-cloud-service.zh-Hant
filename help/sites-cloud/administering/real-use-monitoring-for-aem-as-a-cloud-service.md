@@ -4,9 +4,9 @@ description: 瞭解如何使用即時監控(RUM)來即時擷取和分析網站�
 exl-id: 91fe9454-3dde-476a-843e-0e64f6f73aaf
 feature: Administering
 role: Admin
-source-git-commit: 1bb463fe59e89e6360dceefdaaec395084fc80c5
+source-git-commit: 917e9496dcbb8c6fe72b7a718211ee5bbecb3323
 workflow-type: tm+mt
-source-wordcount: '1213'
+source-wordcount: '1200'
 ht-degree: 1%
 
 ---
@@ -93,10 +93,11 @@ RUM資料有利於以下用途：
 
 ## 常見問題集 {#faq}
 
+<!-- REMOVED THIS FAQ AS PER EMAIL REQUEST FROM SHWETA DUA, SEPTEMBER 4, 2024 TO THE DL-AEM-DOCS GROUP 
+1. **Can customers integrate the RUM service scripts with third-party systems like Dynatrace?**
 
-1. **客戶是否可將RUM服務指令碼與Dynatrace等協力廠商系統整合？**
-
-   是。
+   Yes.
+-->
 
 1. **是否正在收集「下一筆繪畫的互動」、「第一位元組的時間」和「第一筆內容繪畫」網頁縮圖量度？**
 
