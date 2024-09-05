@@ -5,7 +5,7 @@ exl-id: 4a35fc46-f641-46a4-b3ff-080d090c593b
 source-git-commit: 1f9526f8e8aa6a070e95827fab16431b0ee7566b
 workflow-type: tm+mt
 source-wordcount: '1315'
-ht-degree: 0%
+ht-degree: 4%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_groupmigration"
 >title="群組移轉"
->abstract="「內容轉移工具」可協助您將群組從現有的Adobe Experience Manager (AEM)系統複製到AEM as a Cloud Service。"
+>abstract="內容轉移工具可協助您將現有 Adobe Experience Manager (AEM) 系統中的群組複製到 AEM as a Cloud Service。"
 
 >[!NOTE]
 >如需舊版的使用者對應工具，請參閱[舊版檔案](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/considerations-user-mapping-tool-legacy.md)。
@@ -25,9 +25,9 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_usermigration"
 >title="使用者未移轉"
->abstract="「內容轉移工具」不再移轉使用者。 應以Admin Console管理使用者。"
->additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/admin-console" text="AEMAdmin Console檔案"
->additional-url="https://adminconsole.adobe.com/" text="AEMAdmin Console"
+>abstract="內容轉移工具不再移轉使用者。應在 Admin Console 中管理使用者。"
+>additional-url="https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/onboarding/journey/admin-console" text="AEM Admin Console 文件"
+>additional-url="https://adminconsole.adobe.com/" text="AEM Admin Console"
 
 在轉換至Adobe Experience Manager (AEM)as a Cloud Service的過程中，群組必須從現有的AEM系統移轉至AEM as a Cloud Service。 此工作由「內容轉移工具」完成。
 

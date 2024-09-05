@@ -7,7 +7,7 @@ feature: Asset Management, Publishing, Collaboration, Asset Processing
 source-git-commit: de5aaead0955f997cf5304c3cd1d540b2eded16b
 workflow-type: tm+mt
 source-wordcount: '2002'
-ht-degree: 94%
+ht-degree: 95%
 
 ---
 
@@ -149,7 +149,7 @@ Assets檢視提供下列自訂篩選器：
 
    * 在&#x200B;**另存新檔**&#x200B;欄位中輸入檔案名稱。
    * 選取目的地資料夾。
-   * 輸入專案或行銷活動名稱、關鍵字、管道、時間範圍和區域等詳細資訊。
+   * 輸入專案或行銷活動名稱、關鍵字、管道、時間段和區域等詳細資訊。
 
    ![Firefly 整合](assets/save-generated-asset.png)
 

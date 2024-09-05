@@ -9,7 +9,7 @@ role: Admin
 source-git-commit: 5b0dfb847a1769665899d6dd693a7946832fe7d1
 workflow-type: tm+mt
 source-wordcount: '287'
-ht-degree: 12%
+ht-degree: 13%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 12%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_cug_migration"
->title="已關閉使用者群組的移轉"
+>title="封閉使用者群組的移轉"
 >abstract="封閉使用者群組 (CUG) 的移轉目前需要執行一些檢查和步驟，以便在移轉後正常運作。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/closed-user-groups.html" text="AEM 中的封閉使用者群組"
 

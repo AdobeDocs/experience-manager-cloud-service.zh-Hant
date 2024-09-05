@@ -1,20 +1,20 @@
 ---
-title: 管理主參與者
+title: 管理主體
 description: 管理移轉主體，使用Admin Console
-source-git-commit: 5bf497fb2122cc3d3ff0903aeb680a35e90f33b0
+exl-id: a75598d0-8f59-466b-984e-dfe527388c2a
+source-git-commit: a5bec2c05b46f8db55762b7ee1f346f3bb099d24
 workflow-type: tm+mt
 source-wordcount: '311'
-ht-degree: 0%
+ht-degree: 6%
 
 ---
 
-
-# 管理主參與者 {#managing-principals}
+# 管理主體 {#managing-principals}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_managingprincipals"
->title="管理主參與者"
->abstract="瞭解在內容移轉期間或之後管理使用者需要採取哪些動作"
+>title="管理主體"
+>abstract="了解在內容移轉期間或之後需要完成哪些工作來管理使用者"
 
 在將內容轉移到AEM as a Cloud Service雲端環境之前，可以在Admin Console上執行一些任務。  它們是：建立使用者、建立群組以及將使用者指派給群組；這些使用者和群組將存在於IMS (Adobe的Identity Management服務)中，用於管理所有Adobe雲端型服務的使用者和群組。
 

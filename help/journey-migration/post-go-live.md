@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: 13a2386c099624a46e84126a939a9470e9b3a5f2
 workflow-type: tm+mt
 source-wordcount: '459'
-ht-degree: 16%
+ht-degree: 22%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 16%
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_troubleshooting"
 >title="AEM 的移難排解"
->abstract="檢閱持續開發的最佳實務，並管理記錄以及開發人員控制檯和CRXDE Lite等工具，以協助疑難排解AEM的問題"
+>abstract="檢閱持續開發和管理記錄檔的最佳做法以及開發人員主控台和 CRXDE Lite 之類的工具，以協助對 AEM 的問題進行移難排解"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-logs.html" text="存取和管理記錄檔"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html#aem-as-a-cloud-service-development-tools" text="AEM as a Cloud Service 開發工具"
 

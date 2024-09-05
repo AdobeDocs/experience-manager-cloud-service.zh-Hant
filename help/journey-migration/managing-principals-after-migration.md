@@ -1,24 +1,24 @@
 ---
 title: 移轉後管理主體
-description: 瞭解如何在IMS和AEM中設定使用者和群組
-source-git-commit: 5b0dfb847a1769665899d6dd693a7946832fe7d1
+description: 了解如何在 IMS 和 AEM 中設定使用者和群組
+exl-id: 46c4abfb-7e28-4f18-a6d4-f729dd42ea7b
+source-git-commit: a5bec2c05b46f8db55762b7ee1f346f3bb099d24
 workflow-type: tm+mt
 source-wordcount: '773'
-ht-degree: 0%
+ht-degree: 5%
 
 ---
-
 
 # 移轉後管理主體 {#managing-principals-after-migration}
 
 >[!CONTEXTUALHELP]
 >id="managing-principals"
 >title="移轉後管理主體"
->abstract="瞭解如何在IMS和AEM中設定使用者和群組"
+>abstract="了解如何在 IMS 和 AEM 中設定使用者和群組"
 
 本檔案說明客戶應該採取的高層級步驟，以便在IMS和AEM中設定使用者和群組，以便使用其AEM as a Cloud Service環境。
 
-## 管理主參與者 {#managing-principals}
+## 管理主體 {#managing-principals}
 
 對於AEM as a Cloud Service，使用者和群組管理時主要必須使用Admin Console。  考慮移轉時，某些工作可在內容移轉發生之前執行。  基本上是這些主要任務群組中的
 
@@ -56,5 +56,3 @@ ht-degree: 0%
 * 當使用者首次登入時，他們的IMS使用者將在AEM中建立，並且他們應該有權存取新群組，從而存取原始收集群組。
 
 注意：若要大量指派使用者，必須使用上述步驟在IMS中建立使用者；已存在於IMS中的使用者無法透過大量上傳再次建立。
-
-
