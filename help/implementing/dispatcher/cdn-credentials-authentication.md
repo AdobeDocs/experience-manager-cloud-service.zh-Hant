@@ -4,9 +4,9 @@ description: 瞭解如何在設定檔案中宣告規則，再使用Cloud Manager
 feature: Dispatcher
 exl-id: a5a18c41-17bf-4683-9a10-f0387762889b
 role: Admin
-source-git-commit: c8059260ab0ff13ed85f55eda2e09ca5cb678fa9
+source-git-commit: 5d51ff056d4e4f0fdbb3004cbac55803ac91f8ca
 workflow-type: tm+mt
-source-wordcount: '1379'
+source-wordcount: '1443'
 ht-degree: 5%
 
 ---
@@ -72,7 +72,7 @@ data:
    * 動作 — 必須指定「authenticate」，並參考所要的驗證者。
 
 >[!NOTE]
->在部署參考Edge金鑰的組態之前，必須將其設定為[密碼型別Cloud Manager環境變數](/help/operations/config-pipeline.md#secret-env-vars)。
+>在部署參考Edge金鑰的組態之前，必須將其設定為[密碼型別Cloud Manager環境變數](/help/operations/config-pipeline.md#secret-env-vars)。 建議使用至少32個位元組長度的唯一隨機金鑰；例如，Open SSL密碼編譯程式庫可以透過執行命令`openssl rand -hex 32`來產生隨機金鑰。
 
 ### 安全地移轉，以減少流量受阻的風險 {#migrating-safely}
 
@@ -140,7 +140,7 @@ data:
    * 動作 — 必須指定「authenticate」，並參考所要的驗證者。
 
 >[!NOTE]
->在部署參考清除金鑰的組態之前，必須將清除金鑰設定為[機密型別Cloud Manager環境變數](/help/operations/config-pipeline.md#secret-env-vars)。
+>在部署參考清除金鑰的組態之前，必須將清除金鑰設定為[機密型別Cloud Manager環境變數](/help/operations/config-pipeline.md#secret-env-vars)。 建議使用至少32個位元組長度的唯一隨機金鑰；例如，Open SSL密碼編譯程式庫可以透過執行命令openssl rand -hex 32來產生隨機金鑰
 
 您可以參考以設定清除金鑰和執行CDN快取清除為重點的[教學課程](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/how-to/purge-cache)。
 
