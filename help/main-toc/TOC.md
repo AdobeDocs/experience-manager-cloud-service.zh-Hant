@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的運作方式以及該軟體可以為您做哪些事。
 breadcrumb-title: 使用手冊
 user-guide-title: AEM as a Cloud Service
-source-git-commit: f7508f2113d81aae205c63a25097ed920b124011
+source-git-commit: b34a15138e1b8fbe2bebc22f2cc7e8a0ae22316a
 workflow-type: tm+mt
-source-wordcount: '5538'
+source-wordcount: '5533'
 ht-degree: 96%
 
 ---
@@ -225,7 +225,7 @@ ht-degree: 96%
       + [建立環境](/help/journey-onboarding/create-environments.md)
       + [指派 AEM 產品設定檔](/help/journey-onboarding/assign-profiles-aem.md)
       + [開發人員和部署管理員工作](/help/journey-onboarding/developers.md)
-      + [管理主參與者](/help/journey-migration/managing-principals.md)
+      + [管理主體](/help/journey-migration/managing-principals.md)
       + [AEM 使用者工作](/help/journey-onboarding/aem-users.md)
       + [上線檢查清單](/help/journey-onboarding/go-live-checklist.md)
    + AEM 參考示範附加元件歷程{#demo-add-on}
@@ -609,7 +609,7 @@ ht-degree: 96%
       + [查看資產、資料夾和集合](/help/assets/manage-notifications-assets-view.md)
       + [管理報告](/help/assets/manage-reports-assets-view.md)
       + [管理標記](/help/assets/tagging-management-assets-view.md)
-      + [內容憑證](/help/assets/content-credentials.md)
+      + [Content Credentials](/help/assets/content-credentials.md)
       + [發佈資產至 AEM 和 Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 
 
@@ -913,7 +913,6 @@ ht-degree: 96%
       + [建立區塊](/help/edge/wysiwyg-authoring/create-block.md)
       + [建立內容模式](/help/edge/wysiwyg-authoring/content-modeling.md)
       + [表格資料和試算表](/help/edge/wysiwyg-authoring/tabular-data.md)
-      + [現有專案和 Edge Delivery](/help/edge/wysiwyg-authoring/existing-projects.md)
       + [管理分類資料](/help/edge/wysiwyg-authoring/taxonomy.md)
       + [WIP Sites 功能](/help/edge/wysiwyg-authoring/wip-features.md)
    + 文件型的製作 {#document-authoring}
