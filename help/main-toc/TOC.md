@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的運作方式以及該軟體可以為您做哪些事。
 breadcrumb-title: 使用手冊
 user-guide-title: AEM as a Cloud Service
-source-git-commit: b34a15138e1b8fbe2bebc22f2cc7e8a0ae22316a
+source-git-commit: 503c6712aeea33fc093dbaec780e50c1e72579cd
 workflow-type: tm+mt
-source-wordcount: '5533'
-ht-degree: 96%
+source-wordcount: '5578'
+ht-degree: 95%
 
 ---
 
@@ -456,7 +456,17 @@ ht-degree: 96%
    + [資產微服務概觀](/help/assets/asset-microservices-overview.md)
    + [ [!DNL Assets] 中的協助工具](/help/assets/accessibility.md)
    + 管理數位資產 {#manage}
-      + [微前端資產選擇器](/help/assets/asset-selector.md)
+      + 微前端資產選擇器{#asset-selector}
+         + [資產選擇器概觀](/help/assets/overview-asset-selector.md)
+         + 資產選擇器整合{#asset-selector-integration}
+            + [Asset Selector整合概述](/help/assets/integrate-asset-selector.md)
+            + [整合Asset Selector與Adobe應用程式](/help/assets/integrate-asset-selector-adobe-app.md)
+            + [將資產選擇器與非Adobe應用程式整合](/help/assets/integrate-asset-selector-non-adobe-app.md)
+            + [將Dynamic Media的資產選擇器與OpenAPI功能整合](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
+         + [資產選擇器屬性](/help/assets/asset-selector-properties.md)
+         + [資產選擇器範例](/help/assets/asset-selector-examples.md)
+         + [資產選擇器自訂](/help/assets/asset-selector-customization.md)
+         + [資產選擇器上傳](/help/assets/asset-selector-upload.md)
       + [微前端目標選擇器](/help/assets/destination-selector.md)
       + [共用資產](/help/assets/share-assets.md)
       + [重新處理資產](/help/assets/reprocessing.md)

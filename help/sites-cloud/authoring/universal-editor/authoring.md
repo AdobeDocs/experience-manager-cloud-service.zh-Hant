@@ -5,7 +5,7 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: eecbc48a77e92b064be9fcdbe547fb330f8d40e0
+source-git-commit: ffe90d3919c0f0c1a1c60efccc0191118dfaa84a
 workflow-type: tm+mt
 source-wordcount: '1297'
 ht-degree: 40%
@@ -88,7 +88,7 @@ Universal Editor 支援在任意實作中編輯任何方面的內容，以便提
 ![編輯媒體](assets/ue-edit-media.png)
 
 1. 在屬性邊欄中，點選或按一下所選影像的預覽。
-1. [資產選擇器](/help/assets/asset-selector.md#using-asset-selector)視窗會開啟，讓您可選取資產。
+1. [資產選擇器](/help/assets/overview-asset-selector.md#using-asset-selector)視窗會開啟，讓您可選取資產。
 1. 選取「 」以選取新資產。
 1. 選取&#x200B;**選取**&#x200B;以返回取代資產的屬性邊欄。
 

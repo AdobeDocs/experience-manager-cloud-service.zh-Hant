@@ -2,9 +2,10 @@
 title: 具有OpenAPI功能的Dynamic Media常見問題
 description: 具有OpenAPI功能的Dynamic Media常見問題
 role: User
-source-git-commit: 540aa876ba7ea54b7ef4324634f6c5e220ad19d3
+exl-id: 3450e050-4b0b-4184-8e71-5e667d9ca721
+source-git-commit: dcc233be4d1bb84534aaef64316406bb960ce51d
 workflow-type: tm+mt
-source-wordcount: '1495'
+source-wordcount: '1494'
 ht-degree: 0%
 
 ---
@@ -108,14 +109,14 @@ Adobe的一般指引是將Dynamic Media與OpenAPI棧疊用於任何整合使用�
 | [僅適用於Assetsas a Cloud Service](/help/assets/dynamic-media-open-apis-overview.md#prerequisites-dynaminc-media-open-apis) | 內部部署或Adobe Managed Services也提供此功能，包含其他設定和布建步驟。 |
 | [受支援的影像修飾元集有限，例如寬度、高度、旋轉、翻轉、品質和格式](/help/assets/deliver-assets-apis.md) | 豐富的可用影像修飾元集 |
 | 根據使用者、角色、日期和時間[限制資產傳遞](/help/assets/restrict-assets-delivery.md) | 發佈至Dynamic Media的Assets可供所有使用者存取 |
-| 大部分開發人員都熟悉OpenAPI規格。 使用[Micro Frontend Asset Selector](/help/assets/asset-selector.md)，AEM Assets的擴充性就會變得非常簡單。 | 以SOAP為基礎的API，在開發整合自訂功能時成為了障礙。 |
+| 大部分開發人員都熟悉OpenAPI規格。 使用[Micro-Frontend Asset Selector](/help/assets/overview-asset-selector.md)，AEM Assets的擴充性就會變得非常簡單。 | 以SOAP為基礎的API，在開發整合自訂功能時成為了障礙。 |
 | 對DAM中已核准的資產所做的任何變更（包括版本更新和中繼資料修改）都會自動反映在傳送URL中。 透過CDN為Dynamic Media的OpenAPI功能設定了短短的存留時間(TTL)值（10分鐘），不到10分鐘即可顯示所有製作和發佈介面的更新。 | 建議的CDN TTL為10小時。 您可以使用快取失效動作覆寫TTL值。 |
 | 只有已核准的資產可用於將資產傳送至下游應用程式，以在數位體驗中啟用品牌核准的資產。 | Dynamic Media已發佈資產的任何更新都會自動發佈，無需任何核准工作流程，而這無法確保在數位體驗中擁有品牌核准的資產。 |
 | 使用情況報表以傳送的資產數量為基礎。 此功能即將推出。 | 使用情況報表無法使用。 此功能即將推出。 |
 | 下游應用程式無法再使用Assetsas a Cloud Service存放庫中標示為過期的Assets。 | 沒有固有資產到期日。 資產會維持在公開狀態，直到從AEM as a Cloud Service存放庫中刪除為止。 |
 | 不支援影像預設集和視訊智慧型裁切功能。 | 支援影像預設集和視訊智慧型裁切功能。 |
 | 動態視訊編碼，確保根據輸入視訊提供最佳編碼。 原生視訊傳送不需要任何設定。 | 不論輸入視訊為何，標準3都會進行編碼（可能會影響視訊傳送效能）。 您必須手動設定不同視訊位元速率的不同編碼。 |
-| 難以猜測資產UID型URL （啟用URL模糊化），但SEO已最佳化。 | URL模糊化僅適用於URL查詢引數。 URL中的Assets ID （資產名稱）是可辨識的。 |
+| 很難猜測以UID為基礎的資產URL （啟用URL模糊化），但SEO已最佳化。 | URL模糊化僅適用於URL查詢引數。 URL中的Assets ID （資產名稱）是可辨識的。 |
 
 +++
 
@@ -135,6 +136,3 @@ Adobe的一般指引是將Dynamic Media與OpenAPI棧疊用於任何整合使用�
 | 遠端DAM的資產中繼資料也可在AEM Sites例項上使用。 | 遠端DAM的資產中繼資料在AEM Sites例項上無法使用。 |
 
 +++
-
-
-
