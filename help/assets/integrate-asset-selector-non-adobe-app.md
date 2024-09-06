@@ -2,13 +2,13 @@
 title: 適用於  [!DNL Adobe Experience Manager]  as a  [!DNL Cloud Service] 的資產選擇器
 description: 將資產選擇器與各種Adobe、非Adobe和第三方應用程式整合。
 role: Admin, User
-source-git-commit: fb1350c91468f9c448e34b66dc938fa3b5a3e9a9
+exl-id: 55848de0-aff2-42a0-b959-c771235d9425
+source-git-commit: f9f5b2a25933e059cceacf2ba69e23d528858d4b
 workflow-type: tm+mt
 source-wordcount: '403'
 ht-degree: 6%
 
 ---
-
 
 # 與非Adobe應用程式整合 {#integrate-asset-selector-non-adobe-app}
 
@@ -18,7 +18,7 @@ Asset Selector可讓您使用各種非Adobe或協力廠商應用程式進行整�
 
 如果您整合Asset Selector與非Adobe應用程式，請使用下列先決條件：
 
-* [通訊方法](#overview-asset-selector.md#prereqs)
+* [通訊方法](/help/assets/overview-asset-selector.md#prereqs)
 * imsClientId
 * imsScope
 * redirectUrl

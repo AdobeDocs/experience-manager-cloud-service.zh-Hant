@@ -2,7 +2,8 @@
 title: 適用於  [!DNL Adobe Experience Manager]  as a  [!DNL Cloud Service] 的資產選擇器
 description: 使用Asset Selector搜尋、尋找和擷取應用程式內的資產中繼資料和轉譯。
 role: Admin, User
-source-git-commit: fb1350c91468f9c448e34b66dc938fa3b5a3e9a9
+exl-id: 62b0b857-068f-45b7-9018-9c59fde01dc3
+source-git-commit: f9f5b2a25933e059cceacf2ba69e23d528858d4b
 workflow-type: tm+mt
 source-wordcount: '1267'
 ht-degree: 35%
@@ -19,7 +20,7 @@ ht-degree: 35%
 
 資產選擇器提供了許多優點，例如：
 
-* 使用Vanilla JavaScript程式庫輕鬆與任何[Adobe](#integrate-asset-selector-adobe-app.md)或[非Adobe](#integrate-asset-selector.md)應用程式整合。
+* 使用Vanilla JavaScript程式庫輕鬆與任何[Adobe](/help/assets/integrate-asset-selector-adobe-app.md)或[非Adobe](/help/assets/integrate-asset-selector-non-adobe-app.md)應用程式整合。
 * 容易維護，因為資產選擇器套件的更新會自動部署到您的應用程式可用的資產選擇器。您的應用程式無需更新即可載入最新的修改內容。
 * 簡易的自訂功能，因為有可以控制應用程式中資產選擇器顯示的可用屬性。
 * 全文搜尋、開箱即用和自訂篩選器，可快速找到要在編寫體驗中使用的資產。
@@ -51,8 +52,8 @@ ht-degree: 35%
 
 **檢視更多**
 
-* [整合Asset Selector與Adobe應用程式](#integrate-asset-selector-adobe-app.md)
-* [將資產選擇器與非Adobe應用程式整合](#integrate-asset-selector-non-adobe-app.md)
+* [整合Asset Selector與Adobe應用程式](/help/assets/integrate-asset-selector-adobe-app.md)
+* [將資產選擇器與非Adobe應用程式整合](/help/assets/integrate-asset-selector-non-adobe-app.md)
 * [整合Asset Selector dynamic media open API](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
 
 
@@ -124,7 +125,7 @@ Asset Selector也可讓您切換資產選取的存放庫。 您可以從左側�
 
 * **[!UICONTROL 狀態]：**&#x200B;包含`all`、`approved`、`rejected`或`no status`之間的資產目前狀態。
 * **[!UICONTROL 檔案型別]：**&#x200B;包含`folder`、`file`、`images`、`documents`或`video`。
-* **[!UICONTROL 到期狀態]：**&#x200B;根據資產的到期持續時間提及該資產。 您可以勾選「`[!UICONTROL Expired]`」核取方塊以篩選過期的資產；或設定資產的`[!UICONTROL Expiration Duration]`以根據資產的到期持續時間顯示資產。 當資產已過期或即將過期時，畫面會顯示相同的徽章。 此外，您可以控制是否允許使用（或拖放）過期的資產。 深入瞭解[自訂過期的資產](#asset-selector-customization.md#customize-expired-assets)。 依預設，會針對未來30天內到期的資產顯示&#x200B;**即將到期**&#x200B;徽章。 不過，您可以使用`expirationDate`屬性來設定到期日。
+* **[!UICONTROL 到期狀態]：**&#x200B;根據資產的到期持續時間提及該資產。 您可以勾選「`[!UICONTROL Expired]`」核取方塊以篩選過期的資產；或設定資產的`[!UICONTROL Expiration Duration]`以根據資產的到期持續時間顯示資產。 當資產已過期或即將過期時，畫面會顯示相同的徽章。 此外，您可以控制是否允許使用（或拖放）過期的資產。 深入瞭解[自訂過期的資產](/help/assets/asset-selector-customization.md#customize-expired-assets)。 依預設，會針對未來30天內到期的資產顯示&#x200B;**即將到期**&#x200B;徽章。 不過，您可以使用`expirationDate`屬性來設定到期日。
 
   >[!TIP]
   >

@@ -2,7 +2,8 @@
 title: 適用於  [!DNL Adobe Experience Manager]  as a  [!DNL Cloud Service] 的資產選擇器
 description: 將資產選擇器與各種Adobe、非Adobe和第三方應用程式整合。
 role: Admin, User
-source-git-commit: fb1350c91468f9c448e34b66dc938fa3b5a3e9a9
+exl-id: b01097f3-982f-4b2d-85e5-92efabe7094d
+source-git-commit: f9f5b2a25933e059cceacf2ba69e23d528858d4b
 workflow-type: tm+mt
 source-wordcount: '884'
 ht-degree: 3%
@@ -18,11 +19,11 @@ Asset Selector可讓您使用各種Adobe應用程式進行整合，好讓他們�
 
 如果您整合Asset Selector與Dynamic Media以及OpenAPI功能，請使用下列先決條件：
 
-* [通訊方法](#overview-asset-selector.md#prereqs)
+* [通訊方法](/help/assets/overview-asset-selector.md#prereqs)
 * 若要使用OpenAPI功能存取Dynamic Media，您必須擁有下列專案的授權：
    * Assets存放庫(例如Experience Manager Assetsas a Cloud Service)。
    * AEM Dynamic Media。
-* 只有[個核准的資產](#approved-assets.md)可供使用，以確保品牌一致性。
+* 只有[個核准的資產](/help/assets/approve-assets.md)可供使用，以確保品牌一致性。
 
 ## Dynamic Media與OpenAPI功能的整合 {#adobe-app-integration-polaris}
 
@@ -36,7 +37,7 @@ Asset Selector與Dynamic Media OpenAPI程式的整合涉及各種步驟，包括
 aemTierType:[1: "delivery"]
 ```
 
-此設定可讓您檢視所有核准的資產，而不使用資料夾或以平面結構檢視。 如需詳細資訊，請導覽至[資產選擇器屬性](#asset-selector-properties.md)下的`aemTierType`屬性。
+此設定可讓您檢視所有核准的資產，而不使用資料夾或以平面結構檢視。 如需詳細資訊，請導覽至[資產選擇器屬性](/help/assets/asset-selector-properties.md)下的`aemTierType`屬性。
 
 
 ### 從已核准的資產建立動態傳送URL {#create-dynamic-media-url}

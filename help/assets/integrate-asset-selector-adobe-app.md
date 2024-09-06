@@ -2,13 +2,13 @@
 title: 適用於  [!DNL Adobe Experience Manager]  as a  [!DNL Cloud Service] 的資產選擇器
 description: 將資產選擇器與各種Adobe、非Adobe和第三方應用程式整合。
 role: Admin, User
-source-git-commit: fb1350c91468f9c448e34b66dc938fa3b5a3e9a9
+exl-id: a0c030e2-2213-406b-ad92-4761f1e2ee9f
+source-git-commit: f9f5b2a25933e059cceacf2ba69e23d528858d4b
 workflow-type: tm+mt
 source-wordcount: '765'
 ht-degree: 8%
 
 ---
-
 
 # 整合Asset Selector與Adobe應用程式 {#integrate-asset-selector-with-adobe-app}
 
@@ -18,7 +18,7 @@ Asset Selector可讓您使用各種Adobe應用程式進行整合，好讓他們�
 
 如果您整合Asset Selector與[!DNL Adobe]應用程式，請使用下列先決條件：
 
-* [通訊方法](#overview-asset-selector.md#prereqs)
+* [通訊方法](/help/assets/overview-asset-selector.md#prereqs)
 * imsOrg
 * imsToken
 * apikey
@@ -27,7 +27,7 @@ Asset Selector可讓您使用各種Adobe應用程式進行整合，好讓他們�
 
 下列範例示範在Unified Shell下執行[!DNL Adobe]應用程式或您已針對驗證產生`imsToken`時，資產選擇器的使用方式。
 
-使用`script`標籤在您的程式碼中加入Asset Selector套件，如下列範例的&#x200B;_行6-15_&#x200B;所示。 在載入指令碼後，即可使用 `PureJSSelectors` 全域變數。定義資產選擇器[屬性](#asset-selector-properties.md)，如&#x200B;_行16-23_&#x200B;所示。 在Adobe應用程式中驗證時需要`imsOrg`和`imsToken`屬性。 `handleSelection` 屬性用於處理選取的資產。要轉譯資產選擇器，請呼叫 `renderAssetSelector` 函數，如&#x200B;_第 17 行_&#x200B;所述。資產選擇器顯示於 `<div>` 容器元素，如&#x200B;_第 21 和 22 行_&#x200B;所示。
+使用`script`標籤在您的程式碼中加入Asset Selector套件，如下列範例的&#x200B;_行6-15_&#x200B;所示。 在載入指令碼後，即可使用 `PureJSSelectors` 全域變數。定義資產選擇器[屬性](/help/assets/asset-selector-properties.md)，如&#x200B;_行16-23_&#x200B;所示。 在Adobe應用程式中驗證時需要`imsOrg`和`imsToken`屬性。 `handleSelection` 屬性用於處理選取的資產。要轉譯資產選擇器，請呼叫 `renderAssetSelector` 函數，如&#x200B;_第 17 行_&#x200B;所述。資產選擇器顯示於 `<div>` 容器元素，如&#x200B;_第 21 和 22 行_&#x200B;所示。
 
 按照這些步驟操作，您就可以將Asset Selector與[!DNL Adobe]應用程式搭配使用。
 
@@ -153,4 +153,3 @@ onErrorReceived: (type, msg) => {
 >* [資產選擇器屬性](/help/assets/asset-selector-properties.md)
 >* [整合資產選擇器Dynamic Media開啟API](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
 >* [資產選擇器自訂](/help/assets/asset-selector-customization.md)
-

@@ -2,13 +2,13 @@
 title: 適用於  [!DNL Adobe Experience Manager]  as a  [!DNL Cloud Service] 的資產選擇器
 description: 使用「資產」選擇器來搜尋、尋找及擷取應用程式內的資產中繼資料和轉譯。
 role: Admin,User
-source-git-commit: fb1350c91468f9c448e34b66dc938fa3b5a3e9a9
+exl-id: d6ff601c-3111-421a-9a94-cc524ce7e432
+source-git-commit: f9f5b2a25933e059cceacf2ba69e23d528858d4b
 workflow-type: tm+mt
 source-wordcount: '505'
 ht-degree: 1%
 
 ---
-
 
 # 將檔案和資料夾上傳至Asset Selector {#upload-files-folders}
 
@@ -28,13 +28,13 @@ ht-degree: 1%
 
    您也可以使用縮圖預覽選取的影像，然後按一下X圖示以從清單中移除任何特定影像。 只有當您將滑鼠停留在影像名稱或大小上時，才會顯示X圖示。 您也可以按一下&#x200B;**[!UICONTROL 全部移除]**，從上載清單中刪除所有專案。
 
-1. 若要完成上傳程式，請按一下&#x200B;**[!UICONTROL 上傳]**。 您的上傳資產隨即顯示。 如需可設定的程式碼，請參閱[基本上傳](asset-selector-customization.md#basic-upload)。
+1. 若要完成上傳程式，請按一下&#x200B;**[!UICONTROL 上傳]**。 您的上傳資產隨即顯示。 如需可設定的程式碼，請參閱[基本上傳](/help/assets/asset-selector-customization.md#basic-upload)。
 
 ## 上傳包含中繼資料的資產 {#upload-assets-with-metadata}
 
-您可以將中繼資料新增到資產，同時立即將資產上傳到您的應用程式。 中繼資料包含各種欄位，例如業務主旨列、產品詳細資訊、行銷活動等。 要執行此操作，請使用`metadataSchema`屬性。 移至[資產選擇器屬性](asset-selector-properties.md)以進一步瞭解`metadataSchema`屬性。
+您可以將中繼資料新增到資產，同時立即將資產上傳到您的應用程式。 中繼資料包含各種欄位，例如業務主旨列、產品詳細資訊、行銷活動等。 要執行此操作，請使用`metadataSchema`屬性。 移至[資產選擇器屬性](/help/assets/asset-selector-properties.md)以進一步瞭解`metadataSchema`屬性。
 
-請參閱使用中繼資料](#upload-with-metadata)上傳[以取得組態所需的程式碼片段。
+請參閱使用中繼資料](/help/assets/asset-selector-customization.md#upload-with-metadata)上傳[以取得組態所需的程式碼片段。
 
 ![上傳包含中繼資料的資產](assets/upload-with-metadata.png)
 
@@ -51,7 +51,6 @@ ht-degree: 1%
 
 ## 自訂上傳 {#customize-upload}
 
-資產選擇器可讓您新增自訂的上傳表單。 有數個自訂功能可供使用。 例如，[hideUploadButton](#asset-selector-properties.md)屬性可讓您隱藏應用程式中預設顯示的上傳按鈕。 您可以視需要自訂該檔案，以便在MFE應用程式外部呈現。 請參閱組態的[自訂上傳](#asset-selector-customization.md#customized-upload)。
+資產選擇器可讓您新增自訂的上傳表單。 有數個自訂功能可供使用。 例如，[hideUploadButton](/help/assets/asset-selector-properties.md)屬性可讓您隱藏應用程式中預設顯示的上傳按鈕。 您可以視需要自訂該檔案，以便在MFE應用程式外部呈現。 請參閱組態的[自訂上傳](/help/assets/asset-selector-customization.md#customized-upload)。
 
 ![自訂上傳](assets/customized-upload.png)
-

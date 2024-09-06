@@ -2,13 +2,13 @@
 title: 適用於  [!DNL Adobe Experience Manager]  as a  [!DNL Cloud Service] 的資產選擇器
 description: 使用函式來自訂應用程式內的資產選擇器。
 role: Admin, User
-source-git-commit: fb1350c91468f9c448e34b66dc938fa3b5a3e9a9
+exl-id: 0fd0a9f7-8c7a-4c21-9578-7c49409df609
+source-git-commit: f9f5b2a25933e059cceacf2ba69e23d528858d4b
 workflow-type: tm+mt
-source-wordcount: '1246'
+source-wordcount: '1241'
 ht-degree: 24%
 
 ---
-
 
 # 資產選擇器自訂 {#asset-selector-customization}
 
@@ -21,7 +21,7 @@ Asset Selector可讓您根據偏好設定、需求或功能需求來自訂各種
 * [自訂過期的資產](#customize-expired-assets)
 * [關聯式引動篩選](#contextual-invocation-filter)
 
-您必須在`index.html`檔案或應用程式實作中的類似檔案中定義先決條件，以定義存取存放庫[!DNL Experience Manager Assets]的驗證詳細資料。 完成後，您可以視需求新增程式碼片段。
+您必須在&#x200B;**index.html**&#x200B;檔案或應用程式實作中的類似檔案中定義先決條件，以定義存取[!DNL Experience Manager Assets]存放庫的驗證詳細資料。 完成後，您可以視需求新增程式碼片段。
 
 ## 自訂篩選器面板 {#customize-filter-panel}
 
@@ -186,12 +186,12 @@ interface SelectedAsset {
 | *tiff:imageLength* | 數字 | 資產的高度。 |
 | *computedMetadata* | `Record<string, any>` | 代表貯體的一個物件，可存放各種類型之所有資產中繼資料 (存放庫、應用程式或嵌入式中繼資料)。 |
 | *_links* | `Record<string, any>` | 相關資產的超媒體連結。包括中繼資料和轉譯等資源的連結。 |
-| *_links.<https://ns.adobe.com/adobecloud/rel/rendition>* | `Array<Object>` | 包含有關資產轉譯資訊的物件陣列。 |
-| *_links.<https://ns.adobe.com/adobecloud/rel/rendition[].href>* | 字串 | 轉譯的 URI。 |
-| *_links.<https://ns.adobe.com/adobecloud/rel/rendition[].type>* | 字串 | 轉譯的 MIME 類型。 |
-| *_links.<https://ns.adobe.com/adobecloud/rel/rendition[].repo:size>&#39;* | 數字 | 轉譯的大小，以位元組計。 |
-| *_links.<https://ns.adobe.com/adobecloud/rel/rendition[].width>* | 數字 | 轉譯的寬度。 |
-| *_links.<https://ns.adobe.com/adobecloud/rel/rendition[].height>* | 數字 | 轉譯的高度。 |
+| *`_links.<https://ns.adobe.com/adobecloud/rel/rendition>`* | `Array<Object>` | 包含有關資產轉譯資訊的物件陣列。 |
+| *`_links.<https://ns.adobe.com/adobecloud/rel/rendition[].href>`* | 字串 | 轉譯的 URI。 |
+| *`_links.<https://ns.adobe.com/adobecloud/rel/rendition[].type>`* | 字串 | 轉譯的 MIME 類型。 |
+| *`_links.<https://ns.adobe.com/adobecloud/rel/rendition[].repo:size>`* | 數字 | 轉譯的大小，以位元組計。 |
+| *`_links.<https://ns.adobe.com/adobecloud/rel/rendition[].width>`* | 數字 | 轉譯的寬度。 |
+| *`_links.<https://ns.adobe.com/adobecloud/rel/rendition[].height>`* | 數字 | 轉譯的高度。 |
 
 ### 使用物件綱要處理資產選擇 {#handling-selection}
 

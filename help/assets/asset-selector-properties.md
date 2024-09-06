@@ -2,13 +2,13 @@
 title: 適用於  [!DNL Adobe Experience Manager]  as a  [!DNL Cloud Service] 的資產選擇器
 description: 在應用程式內使用資產選擇器搜尋、查找和檢索資產的中繼資料和轉譯。
 role: Admin, User
-source-git-commit: fb1350c91468f9c448e34b66dc938fa3b5a3e9a9
+exl-id: cd5ec1de-36b0-48a5-95c9-9bd22fac9719
+source-git-commit: f9f5b2a25933e059cceacf2ba69e23d528858d4b
 workflow-type: tm+mt
 source-wordcount: '1277'
-ht-degree: 43%
+ht-degree: 42%
 
 ---
-
 
 # 資產選擇器屬性 {#asset-selector-properties}
 
@@ -33,8 +33,8 @@ ht-degree: 43%
 | *dropOptions* | `{allowList?: Object}` | 否 | | 使用 &#39;allowList&#39; 設定放置選項。 |
 | *colorScheme* | 字串 | 否 | | 為資產選擇器設定主題 (`light`或者`dark`)。 |
 | *佈景主題* | 字串 | 否 | 預設 | 套用主題至`default`到`express`之間的資產選擇器應用程式。 它也支援`@react-spectrum/theme-express`。 |
-| *handleSelection* | 函數 | 否 | | 在選取資產並按一下`Select`模組上的按鈕時，叫用資產項目陣列。此函數僅在模組視圖中叫用。對於邊欄視圖，請使用 `handleAssetSelection`或`onDrop` 函數。範例： <pre>handleSelection=(assets: Asset[])=> {...}</pre> 查看[選取的資產類型](#selected-asset-type)以了解詳細資訊。 |
-| *handleAssetSelection* | 函數 | 否 | | 在選擇或取消選擇資產時，以項目陣列叫用。當您想要在使用者選擇資產時進行監聽，這是十分實用的功能。範例： <pre>handleSelection=(assets: Asset[])=> {...}</pre> 查看[選取的資產類型](#selected-asset-type)以了解詳細資訊。 |
+| *handleSelection* | 函數 | 否 | | 在選取資產並按一下`Select`模組上的按鈕時，叫用資產項目陣列。此函數僅在模組視圖中叫用。對於邊欄視圖，請使用 `handleAssetSelection`或`onDrop` 函數。範例： <pre>handleSelection=(assets: Asset[])=> {...}</pre> 如需詳細資訊，請參閱[選取的資產](/help/assets/asset-selector-customization.md#selection-of-assets)。 |
+| *handleAssetSelection* | 函數 | 否 | | 在選擇或取消選擇資產時，以項目陣列叫用。當您想要在使用者選擇資產時進行監聽，這是十分實用的功能。範例： <pre>handleSelection=(assets: Asset[])=> {...}</pre> 如需詳細資訊，請參閱[選取的資產](/help/assets/asset-selector-customization.md#selection-of-assets)。 |
 | *onClose* | 函數 | 否 | | 在按下`Close`模組視圖中的按鈕時叫用。這只在`modal`視圖中呼叫，而在`rail`視圖中忽略。 |
 | *onFilterSubmit* | 函數 | 否 | | 當使用者變更不同的篩選條件時，以篩選項目叫用。 |
 | *selectionType* | 字串 | 否 | 單身 | 一次設定`single`或`multiple`資產選擇方式。 |
@@ -45,7 +45,7 @@ ht-degree: 43%
 | *dialogSize* | 小型、中型、大型、全熒幕或全熒幕接管 | 字串 | 選用 | 您可以使用指定的選項指定版面大小，以控制版面。 |
 | *colorScheme* | 淺色或深色 | 否 | | 此屬性用於設定Asset Selector應用程式的主題。 您可以選擇淺色或深色主題。 |
 | *filterRepoList* | 函數 | 否 |  | 您可以使用`filterRepoList`回呼函式來呼叫Experience Manager存放庫並傳回已篩選的存放庫清單。 |
-| *expiryOptions* | 函數 | | | 您可以在下列兩個屬性之間使用： **getExpiryStatus**，它提供過期資產的狀態。 函式會根據您提供的資產到期日傳回`EXPIRED`、`EXPIRING_SOON`或`NOT_EXPIRED`。 請參閱[自訂過期的資產](#customize-expired-assets)。 此外，您可以使用&#x200B;**allowSelectionAndDrag**，函式值可以是`true`或`false`。 當值設定為`false`時，無法在畫布上選取或拖曳過期的資產。 |
+| *expiryOptions* | 函數 | | | 您可以在下列兩個屬性之間使用： **getExpiryStatus**，它提供過期資產的狀態。 函式會根據您提供的資產到期日傳回`EXPIRED`、`EXPIRING_SOON`或`NOT_EXPIRED`。 請參閱[自訂過期的資產](/help/assets/asset-selector-customization.md#customize-expired-assets)。 此外，您可以使用&#x200B;**allowSelectionAndDrag**，函式值可以是`true`或`false`。 當值設定為`false`時，無法在畫布上選取或拖曳過期的資產。 |
 | *showToast* | | 否 | | 它可讓「資產選擇器」顯示已過期資產的自訂快顯通知訊息。 |
 | *metadataSchema* | 陣列 | 否 | | 新增您提供的欄位陣列，以從使用者收集中繼資料。 使用此屬性，您也可以使用自動指派給資產但使用者不可見的隱藏中繼資料。 |
 | *onMetadataFormChange* | 回呼函式 | 否 | | 它包含`property`和`value`。 `Property`等於從值正在更新的&#x200B;*metadataSchema*&#x200B;傳遞之欄位的&#x200B;*mapToProperty*。 而提供`value`等於新值作為輸入。 |
@@ -63,8 +63,5 @@ ht-degree: 43%
 | *rootPath* | String | No | /content/dam/ | Folder path from which Asset Selector displays your assets. `rootPath` can also be used in the form of encapsulation. For example, given the following path, `/content/dam/marketing/subfolder/`, Asset Selector does not allow you to traverse through any parent folder, but only displays the children folders. |
 | *path* | String | No | | Path that is used to navigate to a specific directory of assets when the Asset Selector is rendered. |
 | *expirationDate* | Function | No | | This function is used to set the usability period of an asset. |
-| *disableDefaultBehaviour* | Boolean | No | False | It is a function that is used to enable or disable the selection of an expired asset. You can customize the default behavior of an asset that is set to expire. See [customize expired assets](#customize-expired-assets). |
+| *disableDefaultBehaviour* | Boolean | No | False | It is a function that is used to enable or disable the selection of an expired asset. You can customize the default behavior of an asset that is set to expire. See [customize expired assets](/help/assets/asset-selector-customization.md#customize-expired-assets). |
 -->
-
-
-
