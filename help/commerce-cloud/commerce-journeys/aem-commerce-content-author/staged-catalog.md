@@ -4,9 +4,9 @@ description: 瞭解如何管理分階段的產品目錄體驗。
 exl-id: 1db18818-b8e0-4127-8a65-dc3dea1f2927
 feature: Commerce Integration Framework
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+source-git-commit: f172f514eaa8f1337359f00fad964f5781fba769
 workflow-type: tm+mt
-source-wordcount: '487'
+source-wordcount: '485'
 ht-degree: 10%
 
 ---
@@ -25,9 +25,9 @@ ht-degree: 10%
 
 本檔案可協助您瞭解如何根據分階段產品資料和AEM啟動來管理產品目錄體驗。 許多時候，作者必須同時準備即將推出的產品（例如新的服裝系列）。 需要存取分階段產品資料（尚未上線）和準備內容的能力。 此新內容將在產品上市時上線。
 
-    >[！NOTE]
-    >
-    >此功能僅適用於Adobe Commerce或Cloud Edition，以及支援權杖式驗證的協力廠商聯結器。 如需詳細資訊，請參閱[快速入門](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/storefront/getting-started.html)。
+>[!NOTE]
+>
+>此功能僅適用於Adobe Commerce或Cloud Edition，以及支援權杖式驗證的協力廠商聯結器。 如需詳細資訊，請參閱[快速入門](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/storefront/getting-started.html)。
 
 首先，讓我們瞭解作者如何使用CIF存取分階段產品資料。
 
@@ -45,9 +45,9 @@ ht-degree: 10%
 
 ![階段plp](assets/staged-plp.png)
 
-    >[！NOTE]
-    >
-    >Omnisearch沒有內容，因此只會傳回即時產品目錄資料
+>[!NOTE]
+>
+>Omnisearch沒有內容，因此只會傳回即時產品目錄資料
 
 ## AEM 啟動 {#launches}
 

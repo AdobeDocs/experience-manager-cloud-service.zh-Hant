@@ -4,9 +4,9 @@ description: 瞭解如何在不離開上下文的情況下存取產品資料和�
 exl-id: 45d697b7-ec96-4c26-be2a-3395b731d52d
 feature: Commerce Integration Framework
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+source-git-commit: dbf5c47f6d66b1ce35536b0762556511386a7e38
 workflow-type: tm+mt
-source-wordcount: '721'
+source-wordcount: '720'
 ht-degree: 0%
 
 ---
@@ -49,7 +49,7 @@ CIF附加元件以特定於commerce的功能擴充AEM編寫功能。 這可讓�
 
 ![轉盤元件未選取](../assets/authoring/carousel_component_without_selection.png)
 
-此元件的設定對話方塊需要1 ： n類別。 CIF會使用UID / ID作為類別識別碼。 作者可以手動輸入UID或按一下資料夾圖示以開啟類別選擇器。 選取並關閉選擇器後，元件對話方塊會顯示所選類別的名稱。
+此元件的設定對話方塊需要1 ： n類別。 CIF使用UID / ID作為類別識別碼。 作者可以手動輸入UID或按一下資料夾圖示以開啟類別選擇器。 選取並關閉選擇器後，元件對話方塊會顯示所選類別的名稱。
 
 具有選取範圍的![轉盤元件](../assets/authoring/carousel_component_with_selection.png)
 
@@ -71,9 +71,9 @@ CIF產品目錄頁面是即時轉譯的虛擬頁面。 因此，不可能內嵌�
 
 ![RTE](../assets/authoring/RTE.png)
 
-    >[！NOTE]
-    >
-    >如果同時選取類別和產品，則會使用產品。
+>[!NOTE]
+>
+> 如果同時選取類別和產品，則會採用產品。
 
 這會建立預留位置連結，在頁面轉譯時以實際連結取代。
 
