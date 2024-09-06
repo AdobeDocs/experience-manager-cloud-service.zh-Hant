@@ -5,10 +5,10 @@ exl-id: c0771078-ea68-4d0d-8d41-2d9be86408a4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
-source-wordcount: '695'
-ht-degree: 84%
+source-wordcount: '696'
+ht-degree: 83%
 
 ---
 
@@ -117,7 +117,7 @@ ht-degree: 84%
 
 * 沙箱計畫內的環境在八小時不活動後自動休眠。
    * 不活動被定義為既不創作服務也不預覽或發布服務接收請求。
-   * 一旦休眠，它們可以[手動解除休眠](#de-hibernation-introduction)。
+   * 一旦休眠，它們可以[手動解除休眠]。(#de-hibernation-introduction)
 * 沙箱計畫在處於連續休眠模式六個月後被刪除，之後可以重新建立它們。
 
 >[!NOTE]

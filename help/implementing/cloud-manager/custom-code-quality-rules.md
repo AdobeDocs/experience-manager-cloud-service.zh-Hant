@@ -5,10 +5,10 @@ exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 51fa6e0fe56b1d5f0d8ada6bd2335175d603bc8c
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
 source-wordcount: '4513'
-ht-degree: 87%
+ht-degree: 84%
 
 ---
 
@@ -96,7 +96,7 @@ public class DoThis implements Runnable {
 * **嚴重度**：重大
 * **始自**：2018.4.0 版本
 
-使用來自外部來源的格式字串 (例如要求參數或使用者產生的內容) 可能會讓應用程式遭受拒絕服務的攻擊。在某些情況下，格式字串可能會受到外部控制，但僅允許來自受信任的來源。
+使用來自外部來源的格式字串 (例如要求參數或使用者產生的內容) 可能會讓應用程式遭受拒絕服務的攻擊。在某些情況下，格式字串可能會受到外部控制，但是僅限受信任的來源。
 
 #### 不符合規範的程式碼 {#non-compliant-code-1}
 
@@ -645,7 +645,7 @@ public class DontDoThis implements Page {
 * **嚴重度**：阻斷因素
 * **始自**：2021.8.0
 
-`lucene` 類型的 Oak 索引必須一律進行非同步索引。如果不這樣做可能會導致系統不穩定。如需有關 Lucene 索引結構的更多資訊，可在 [Oak 文件](https://jackrabbit.apache.org/oak/docs/query/lucene.html#index-definition)中找到。
+`lucene` 類型的 Oak 索引必須一律進行非同步索引。如果不這樣做可能會導致系統不穩定。有關Lucene索引結構的更多資訊可在[Oak檔案](https://jackrabbit.apache.org/oak/docs/query/lucene.html#index-definition)中找到。
 
 #### 不符合規範的程式碼 {#non-compliant-code-indexasync}
 
@@ -897,7 +897,7 @@ Experience Manager 用戶端資料庫可能包含影像和字體之類的靜態�
 
 雖然靜態範本的使用歷來在 Experience Manager 專案中極為普遍，Adobe 建議使用可編輯範本，因為它們可提供最大的靈活度並支援靜態範本中不存在的附加功能。在[頁面範本](/help/implementing/developing/components/templates.md)文件中可找到更多資訊。
 
-使用 [Experience Manager 現代化工具](https://opensource.adobe.com/aem-modernize-tools/)可將從靜態範本到可編輯範本的遷移大幅自動化。
+使用[Experience Manager現代化工具](https://opensource.adobe.com/aem-modernize-tools/)可將從靜態範本到可編輯範本的移轉大幅自動化。
 
 ### 不建議使用舊版基礎元件 {#oakpal-usage-legacy}
 
@@ -908,7 +908,7 @@ Experience Manager 用戶端資料庫可能包含影像和字體之類的靜態�
 
 舊版基礎元件 (即 `/libs/foundation` 下的元件) 已在多個 Experience Manager 版本中被取代，以支援核心元件。不建議使用基礎元件作為自訂元件的基礎 (無論是透過覆蓋還是繼承)，並應轉換為相對應的核心元件。
 
-[Experience Manager 現代化工具](https://opensource.adobe.com/aem-modernize-tools/)可有助於這種轉換。
+[Experience Manager現代化工具](https://opensource.adobe.com/aem-modernize-tools/)可有助於這種轉換。
 
 ### 僅使用受支援的執行模式名稱和順序 {#oakpal-supported-runmodes}
 
@@ -953,7 +953,7 @@ Experience Manager as a Cloud Service 要求自訂搜尋索引定義 (例如類�
 * **嚴重度**：輕微
 * **始自**：2021.2.0 版本
 
-正確定義的自訂搜尋索引定義節點必須包含一個名為 `indexRules` 的子節點，而該子節點又必須至少有一個子系。在以下連結中可找到更多資訊：[Oak 文件。](https://jackrabbit.apache.org/oak/docs/query/lucene.html)
+正確定義的自訂搜尋索引定義節點必須包含一個名為 `indexRules` 的子節點，而該子節點又必須至少有一個子系。以下連結中可找到更多資訊：[Oak 文件。](https://jackrabbit.apache.org/oak/docs/query/lucene.html)。
 
 ### 自訂搜尋索引定義節點必須遵循命名慣例 {#oakpal-custom-search-definitions}
 
@@ -1207,7 +1207,7 @@ AEM Cloud Service 禁止將自訂搜尋索引定義 (`oak:QueryIndexDefinition` 
 
 >[!WARNING]
 >
->我們請您盡快解決此問題，因為從 [Cloud Manager 2024 年 8 月版本開始，這麼做會導致管道失敗](/help/implementing/cloud-manager/release-notes/current.md)。
+>強烈建議您儘快解決此問題，因為從[Cloud Manager 2024年8月發行版本](/help/implementing/cloud-manager/release-notes/current.md)開始，這會導致管道失敗。
 
 ### damAssetLucene 類型的自訂全文索引定義必須正確新增「damAssetLucene」前置詞 {#oakpal-dam-asset-lucene}
 
@@ -1220,7 +1220,7 @@ AEM Cloud Service 禁止 `damAssetLucene` 類型的自訂全文索引定義使�
 
 >[!WARNING]
 >
->我們請您盡快解決此問題，因為從 [Cloud Manager 2024 年 8 月版本開始，這麼做會導致管道失敗](/help/implementing/cloud-manager/release-notes/current.md)。
+>強烈建議您儘快解決此問題，因為從[Cloud Manager 2024年8月發行版本](/help/implementing/cloud-manager/release-notes/current.md)開始，這會導致管道失敗。
 
 ### 索引定義節點不得包含有同名的屬性 {#oakpal-index-property-name}
 
@@ -1233,7 +1233,7 @@ AEM as a Cloud Service 禁止自訂搜尋索引定義 (即 `oak:QueryIndexDefini
 
 >[!WARNING]
 >
->我們請您盡快解決此問題，因為從 [Cloud Manager 2024 年 8 月版本開始，這麼做會導致管道失敗](/help/implementing/cloud-manager/release-notes/current.md)。
+>強烈建議您儘快解決此問題，因為從[Cloud Manager 2024年8月發行版本](/help/implementing/cloud-manager/release-notes/current.md)開始，這會導致管道失敗。
 
 ### 禁止自訂某些 OOTB 索引定義 {#oakpal-customizing-ootb-index}
 
@@ -1253,7 +1253,7 @@ AEM Cloud Service 禁止對以下 OOTB 索引進行未經授權的修改：
 
 >[!WARNING]
 >
->我們請您盡快解決此問題，因為從 [Cloud Manager 2024 年 8 月版本開始，這麼做會導致管道失敗](/help/implementing/cloud-manager/release-notes/current.md)。
+>強烈建議您儘快解決此問題，因為從[Cloud Manager 2024年8月發行版本](/help/implementing/cloud-manager/release-notes/current.md)開始，這會導致管道失敗。
 
 ### 分析工具內的 Tokenizer 設定應使用名稱 “tokenizer” 來建立 {#oakpal-tokenizer}
 
@@ -1266,13 +1266,13 @@ AEM Cloud Service禁止在分析器中建立名稱不正確的代碼器。 token
 
 >[!WARNING]
 >
->我們請您盡快解決此問題，因為從 [Cloud Manager 2024 年 8 月版本開始，這麼做會導致管道失敗](/help/implementing/cloud-manager/release-notes/current.md)。
+>強烈建議您儘快解決此問題，因為從[Cloud Manager 2024年8月發行版本](/help/implementing/cloud-manager/release-notes/current.md)開始，這會導致管道失敗。
 
 ### 索引定義的設定不應包含空格 {#oakpal-indexing-definitions-spaces}
 
-* **索引鍵**： PathSpacesCheck
+* **索引鍵**：PathSpacesCheck
 * **類型**：改善
 * **嚴重度**：輕微
 * **始自**：2024.7.0 版本
 
-AEM Cloud Service禁止建立包含空格屬性的索引定義。
+AEM Cloud Service 禁止建立包含帶有空格之屬性的索引定義。

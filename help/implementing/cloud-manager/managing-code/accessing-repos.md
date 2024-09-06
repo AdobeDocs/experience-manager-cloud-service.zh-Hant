@@ -5,10 +5,10 @@ exl-id: 0c0671a3-e400-46f3-ad86-166a6cfdd44b
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 0b39fc4dcaf86d436547d3941b1f12bca8c5bc9b
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
-source-wordcount: '400'
-ht-degree: 100%
+source-wordcount: '399'
+ht-degree: 96%
 
 ---
 
@@ -59,10 +59,10 @@ Cloud Manager 可以使用管道資訊卡上顯眼的&#x200B;**存取存放庫�
 
 ## 從「存放庫視窗」存取存放庫資訊 {#repositories-window}
 
-「[**存放庫**」視窗的工具列中也有「**存取存放庫資訊**」按鈕。](managing-repositories.md)這會顯示有關存取 Adob&#x200B;&#x200B;e 託管存放庫的相同資訊。
+[**存放庫**&#x200B;視窗](managing-repositories.md)的工具列上也有&#x200B;**存取存放庫資訊**&#x200B;按鈕。 此按鈕顯示有關存取受 Adobe 管理的存放庫的相同資訊。
 
 ## 撤銷存取密碼 {#revoke-password}
 
-您可以隨時撤銷存取密碼。若要如此做，請[為此請求建立支援服務單。](https://experienceleague.adobe.com/?support-solution=Experience+Manager&amp;support-tab=home#support)
+您可以隨時撤銷存取密碼。若要如此做，請[為此請求建立支援服務單](https://experienceleague.adobe.com/?support-solution=Experience+Manager&amp;support-tab=home#support)。
 
 此服務單將會獲得最優先處理，並應該會在一天內撤銷。

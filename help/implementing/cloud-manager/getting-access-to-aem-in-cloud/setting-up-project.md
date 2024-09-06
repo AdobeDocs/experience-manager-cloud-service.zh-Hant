@@ -5,7 +5,7 @@ exl-id: 76af0171-8ed5-4fc7-b5d5-7da5a1a06fa8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
 source-wordcount: '1399'
 ht-degree: 96%
@@ -20,7 +20,7 @@ ht-degree: 96%
 
 為了使用 Cloud Manager 成功建置和部署，AEM 專案需要遵循以下準則：
 
-* 必須使用 [Apache Maven](https://maven.apache.org) 建置專案。
+* 必須使用[Apache Maven](https://maven.apache.org)建置專案。
 * 在 Git 存放庫的根目錄中必須有一個 `pom.xml` 檔案。如有必要，此 `pom.xml` 檔案可參照的子模組 (這些子模組又可能有其他子模組等) 數量並無限制。
 * 您可在您的 `pom.xml` 檔案中新增對其他 Maven 成品存放庫的參照。
    * 設定後，可支援對[受密碼保護的成品存放庫](#password-protected-maven-repositories)的存取權。但是，不支援對受網路保護的成品存放庫的存取權。
@@ -281,7 +281,7 @@ ht-degree: 96%
 
 ## 組建成品重複使用 {#build-artifact-reuse}
 
-在許多情況下，會將相同的程式碼部署到多個 AEM 環境中。在可能的情況下，當 Cloud Manager 偵測到在多個全堆疊管道執行中都使用了相同的 Git 認可時，即會避免重新建置程式碼庫。
+在許多情況下，會將相同的程式碼部署到多個 AEM 環境中。在可能的情況下，當 Cloud Manager 偵測到在多個全端管道執行中都使用了相同的 Git 認可時，即會避免重新建置程式碼庫。
 
 開始執行時，將擷取分支管道的最新 HEAD 認可。在 UI 中以及透過 API 看得見該認可雜湊。當建置步驟成功完成時，所產生的成品將根據該認可雜湊進行儲存，並可能在後續管道執行中重複使用。
 

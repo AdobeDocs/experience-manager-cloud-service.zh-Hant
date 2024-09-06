@@ -5,19 +5,19 @@ exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
-source-wordcount: '439'
-ht-degree: 53%
+source-wordcount: '429'
+ht-degree: 49%
 
 ---
 
 
 # 編輯計畫 {#editing-programs}
 
-若要管理和編輯程式，請從&#x200B;[**我的程式**&#x200B;主控台開始。](/help/implementing/cloud-manager/navigation.md) **我的程式**&#x200B;頁面提供您有權存取之所有程式的概觀。 選取個別方案時，**方案總覽**&#x200B;頁面會提供方案的詳細資訊。
+若要管理和編輯程式，請從&#x200B;[**我的程式**&#x200B;主控台](/help/implementing/cloud-manager/navigation.md)開始。 「**我的程式**」頁面提供您有權存取之所有程式的概觀。 選取個別方案時，**方案總覽**&#x200B;頁面會提供方案的詳細資訊。
 
-從&#x200B;**計畫總覽**，具有必要許可權的使用者可以編輯在您組織中建立的[生產計畫](creating-production-programs.md)和在您組織中建立的[沙箱計畫。](creating-sandbox-programs.md)透過編輯計畫，您可以：
+從&#x200B;**計畫總覽**，具有必要許可權的使用者可以編輯在您組織中建立的[生產計畫](creating-production-programs.md)以及在您的組織中建立的[沙箱計畫](creating-sandbox-programs.md)。 透過編輯方案，您可以：
 
 * 將 Sites 解決方案新增到有 Assets 現有方案中，反之亦然。
 * 從包含 Sites 和 Assets 的現有計畫中移除 Sites 或 Assets。
@@ -29,6 +29,10 @@ ht-degree: 53%
 您必須是&#x200B;**業務負責人**&#x200B;角色的成員才能編輯計畫或刪除沙箱計畫以及存取授權儀表板。
 
 ## 編輯方案 {#editing}
+
+只要編輯計畫 (包括新增或移除解決方案或附加元件)，這些變更就會在下次部署後生效。
+
+**若要編輯程式：**
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織。
 
@@ -43,16 +47,10 @@ ht-degree: 53%
    ![「一般」索引標籤](assets/edit-program-prod1.png)
 
 1. 可用於編輯方案的選項與建立方案時的選項相同。
-   * 如需個別選項的詳細資訊，請參閱檔案[建立生產計畫](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)和[建立沙箱計畫](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md)。
+   * 如需個別選項的詳細資訊，請參閱[建立生產計畫](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)和[建立沙箱計畫](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md)。
    * 根據您組織的權益，您的生產計畫可能有[其他選項](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#options)可用。
 
 1. 按一下「**更新**」，儲存計畫的變更。
-
-將會儲存對計畫的變更。
-
->[!NOTE]
->
->只要編輯計畫 (包括新增或移除解決方案或附加元件)，這些變更就會在下次部署後生效。
 
 ## 刪除沙箱計畫 {#delete-sandbox-program}
 
@@ -62,7 +60,7 @@ ht-degree: 53%
 >
 >具有&#x200B;**業務負責人**&#x200B;或&#x200B;**部署管理員**&#x200B;角色也可以刪除其生產和中繼環境，而非整個沙箱計畫。
 
-若要刪除沙箱計畫，請依照以下步驟進行。
+**若要刪除沙箱程式：**
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織。
 

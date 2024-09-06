@@ -6,10 +6,10 @@ exl-id: 4aff5a84-134a-43fa-8de8-8d564f4edd16
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 0b39fc4dcaf86d436547d3941b1f12bca8c5bc9b
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
-source-wordcount: '1119'
-ht-degree: 58%
+source-wordcount: '1110'
+ht-degree: 71%
 
 ---
 
@@ -48,15 +48,15 @@ ht-degree: 58%
 
 1. 從&#x200B;**方案總覽**&#x200B;頁面，選取&#x200B;**管道**&#x200B;索引標籤以切換至&#x200B;**管道**&#x200B;視窗。
 
-1. 在這裡，您可以看到方案的所有管道清單，並像在&#x200B;**管道卡**&#x200B;中一樣開始和停止管道執行。
+1. 在這裡，您可以看到方案所有管道的清單，並啟動和停止管道執行，就像在&#x200B;**管道卡**&#x200B;中一樣。
 
-如果管道正在執行，點選&#x200B;**狀態**&#x200B;欄中的資訊圖示將會顯示有關執行的詳細資訊。
+如果管道正在執行，按一下&#x200B;**狀態**&#x200B;欄中的資訊圖示會顯示有關執行的詳細資訊。
 
 ![管道執行詳細資訊](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-status.png)
 
-點選或按一下&#x200B;**檢視詳細資訊**&#x200B;將帶您前往[管道執行詳細資訊](#view-details)
+按一下&#x200B;**檢視詳細資訊**，即可前往[管道執行詳細資訊](#view-details)。
 
-您也可以點選或按一下管道的省略符號按鈕，以採取適用於管道狀態的其他動作，例如[編輯](#editing-pipelines)它或[取消執行。](#cancel)
+您也可以按一下管道的省略符號按鈕，以採取適用於管道狀態的其他動作，例如[編輯](#editing-pipelines)它或[取消執行](#cancel)。
 
 ![管道動作](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-actions.png)
 
@@ -70,13 +70,13 @@ ht-degree: 58%
 
 1. 在這裡，您可以看到方案所有管道執行的清單，包括目前和歷史執行。
 
-如果管道正在執行，點選&#x200B;**狀態**&#x200B;欄中的資訊圖示將會顯示有關執行的詳細資訊。
+如果管道正在執行，按一下&#x200B;**狀態**&#x200B;資料行中的資訊圖示將會顯示執行的詳細資訊。
 
 ![管道執行詳細資訊](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-activity.png)
 
-點選或按一下代表管道執行的資料列，將會帶您前往管道執行的[詳細資料。](#view-details)
+點選或按一下代表管道執行的資料列，系統就會將您導向管道執行的[詳細資料](#view-details)。
 
-您也可以點選或按一下省略符號按鈕，以針對管道執行採取進一步的動作，例如檢視其詳細資料或下載記錄，這會帶您前往[管道詳細資料頁面。](#view-details)
+您也可以按一下省略符號按鈕，以針對管道執行採取進一步的動作，例如檢視其詳細資料或下載記錄，這會帶您前往[管道詳細資料頁面](#view-details)。
 
 ![管道執行動作](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-execution-actions.png)
 
@@ -84,19 +84,19 @@ ht-degree: 58%
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織和方案。
 
-1. 瀏覽至&#x200B;**管道**&#x200B;卡（位於&#x200B;**方案總覽**&#x200B;頁面），並按一下您執行的管道旁的省略符號按鈕，從選單中選取&#x200B;**執行**。
+1. 瀏覽至&#x200B;**管道**&#x200B;卡 (位於&#x200B;**方案總覽**&#x200B;頁面)，並按一下您執行的管道旁的省略符號按鈕，從選單中選取&#x200B;**執行**。
 
 1. 此管道執行開始，並由&#x200B;**狀態**&#x200B;欄顯示。
 
-您可以查看執行的詳細資訊，只要再按一下省略符號按鈕，並選取&#x200B;**[檢視詳細資訊。](#view-details)**
+您可以查看執行的詳細資訊，只要再按一下省略符號按鈕，並選取「**[檢視詳細資訊](#view-details)**」。
 
-依管道的類型而定，您也許可以取消執行，只要再按一下省略符號按鈕，並選取&#x200B;**取消**。
+依管道的類型而定，您也許可以取消執行，只要再按一下省略符號按鈕，並選取「**取消**」。
 
 ## 編輯管道 {#editing-pipelines}
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織和方案。
 
-1. 瀏覽至&#x200B;**管道**&#x200B;卡（位於&#x200B;**方案總覽**&#x200B;頁面），並按一下您要編輯的管道旁的省略符號按鈕，然後從選單中選取&#x200B;**編輯**。
+1. 瀏覽至&#x200B;**管道**&#x200B;卡 (位於&#x200B;**程式概觀**&#x200B;頁面)，並按一下您要編輯的管道旁的省略符號按鈕，然後從選單中選取&#x200B;**編輯**。
 
 1. **編輯生產管道**&#x200B;或是&#x200B;**編輯非生產管道**&#x200B;對話框會隨即顯示，讓您可以對您在建立管道時輸入的詳細資訊進行編輯。
 
@@ -118,7 +118,7 @@ ht-degree: 58%
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織和方案。
 
-1. 瀏覽至&#x200B;**管道**&#x200B;卡（位於&#x200B;**方案總覽**&#x200B;頁面），並按一下您執行的管道旁的省略符號按鈕，從選單中選取&#x200B;**刪除**。
+1. 瀏覽至&#x200B;**管道**&#x200B;卡 (位於&#x200B;**方案總覽**&#x200B;頁面)，並按一下您執行的管道旁的省略符號按鈕，從選單中選取&#x200B;**刪除**。
 
 >[!NOTE]
 >
@@ -130,7 +130,7 @@ ht-degree: 58%
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織和方案。
 
-1. 瀏覽至&#x200B;**管道**&#x200B;卡（位於&#x200B;**方案總覽**&#x200B;頁面），並按一下您執行的管道旁的省略符號按鈕，從選單中選取&#x200B;**檢視詳細資料**。
+1. 瀏覽至&#x200B;**管道**&#x200B;卡 (位於&#x200B;**方案總覽**&#x200B;頁面)，並按一下您執行的管道旁的省略符號按鈕，從選單中選取&#x200B;**檢視詳情**。
 
 1. 系統將會帶您前往執行中管道的詳細資訊頁面。
 

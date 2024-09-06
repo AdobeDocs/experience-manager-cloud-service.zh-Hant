@@ -1,21 +1,21 @@
 ---
 title: 導覽 Cloud Manager UI
-description: 了解 Cloud Manager UI 的組織方式以及如何導覽以管理您的程式和環境。
+description: 了解 Cloud Manager UI 的組織方式以及如何導覽以管理您的方案和環境。
 exl-id: 3f3d7631-2bc9-440b-9888-50f6529bcd42
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: b2950c62c55942614e23d08b3bb96864d4112e8c
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
-source-wordcount: '1500'
-ht-degree: 80%
+source-wordcount: '1499'
+ht-degree: 76%
 
 ---
 
 
 # 導覽 Cloud Manager UI {#navigation}
 
-了解 Cloud Manager UI 的組織方式以及如何導覽以管理您的程式和環境。
+了解 Cloud Manager UI 的組織方式以及如何導覽以管理您的方案和環境。
 
 Cloud Manager UI 主要由兩個圖形介面組成：
 
@@ -30,17 +30,17 @@ Cloud Manager UI 主要由兩個圖形介面組成：
 
 當您透過 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織時，您將看到「**我的程式**」控制台。
 
-![我的程式控制台](assets/my-programs-console.png)
+![我的方案控制台](assets/my-programs-console.png)
 
-「我的程式」控制台提供您在所選組織中有權存取之所有程式的概觀。它由幾個部分組成。
+「我的方案」控制台提供您在所選組織中有權存取之所有方案的概觀。它由幾個部分組成。
 
 1. [工具列](#toolbars-my-programs-toolbars)：提供組織選擇、警示和帳戶設定
 1. 標籤：可讓您切換程式的目前檢視。
    * **首頁**&#x200B;檢視 (預設)：選取了「**我的程式**」檢視，其中包含所有程式的概觀
-   * 存取[授權儀表板](/help/implementing/cloud-manager/license-dashboard.md)的&#x200B;**授權**
-   * 請注意，標籤預設為關閉狀態，可使用 [Cloud Manager 標頭](#cloud-manager-header)中的漢堡選單來顯示
+   * 存取[授權儀表板](/help/implementing/cloud-manager/license-dashboard.md)的&#x200B;**授權**。
+   * 請注意，標籤預設為關閉狀態，可使用 [Cloud Manager 標頭](#cloud-manager-header)中的漢堡選單來顯示。
 1. [統計資料和行動號召](#statistics)，提供您最近的活動概觀
-1. [**我的程式**&#x200B;區段](#my-programs-section)：包含您所有程式的概觀
+1. [**我的程式**&#x200B;部份](#my-programs-section)：包含您所有程式的概觀
 1. [快速連結](#quick-links-section)：用於輕鬆存取相關資源
 
 >[!TIP]
@@ -63,18 +63,18 @@ Cloud Manager UI 主要由兩個圖形介面組成：
 1. 組織選擇器會顯示您目前登入的組織 (在本例中為 Foundation Internal)。如果您的 Adobe ID 與多個組織關聯，可點選或按一下以切換到另一個組織。
 1. 點選或按一下解決方案切換器可讓您快速跳轉到其他 Experience Cloud 解決方案。
 1. 說明圖示可快速存取學習和支援資源。
-1. 通知圖示標有目前已指派之未完成的[通知](/help/implementing/cloud-manager/notifications.md)數量。
+1. 通知圖示具有目前指派的未完成[通知](/help/implementing/cloud-manager/notifications.md)數目。
 1. 選取代表您使用者的圖示以存取您的使用者設定。如果您沒有設定使用者圖片，則會隨機分配圖示。
 
 #### 程式工具列 {#program-toolbar}
 
 程式工具列提供了在 Cloud Manager 程式與內容相關的動作之間切換的連結。
 
-![程式工具列](assets/program-toolbar.png)
+![方案工具列](assets/program-toolbar.png)
 
 1. 程式選擇器將會開啟一個下拉式選單，您可以在其中快速選取其他程式或採取內容相關動作，例如建立新程式
 1. 透過入門連結，您可以存取[上線文件歷程](/help/journey-onboarding/overview.md)以幫助您順利執行 Cloud Manager。
-1. 動作按鈕提供內容相關動作，例如建立新程式。
+1. 動作按鈕提供內容相關動作，例如建立新方案。
 
 ### 統計資料與行動號召 {#statistics}
 
@@ -86,7 +86,7 @@ Cloud Manager UI 主要由兩個圖形介面組成：
 
 或者，如果您剛開始設定您的組織，可能會有關於後續步驟或文件資源的提示。
 
-### 我的程式區段 {#my-programs-section}
+### 我的程式部份 {#my-programs-section}
 
 **我的程式**&#x200B;主控台的主要內容是&#x200B;**我的程式**&#x200B;區段中的程式清單。
 
@@ -102,7 +102,7 @@ Cloud Manager UI 主要由兩個圖形介面組成：
 
 * 排序依據
    * 建立日期 (預設)
-   * 程式名稱
+   * 方案名稱
    * 狀態
 * 升序 (預設) / 降序
 * 格點檢視 (預設)
@@ -114,8 +114,8 @@ Cloud Manager UI 主要由兩個圖形介面組成：
 
 ![程式卡片](assets/program-card.png)
 
-* 程式映像 (若已設定)
-* 程式名稱
+* 方案映像 (若已設定)
+* 方案名稱
 * 服務類型：
    * AEM as a Cloud Service程式的&#x200B;**Experience Manager雲端**
    * [AMS程式](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/introduction)的&#x200B;**Experience Manager**
@@ -140,7 +140,7 @@ Cloud Manager UI 主要由兩個圖形介面組成：
 
   ![99.99% SLA徽章](assets/9999-sla.png)
 
-透過資訊圖示，還可以快速存取有關程式的其他資訊 (在清單檢視中很實用)。
+透過資訊圖示，還可以快速存取有關方案的其他資訊 (在清單檢視中很實用)。
 
 ![資訊](assets/information-list-view.png)
 
@@ -148,9 +148,9 @@ Cloud Manager UI 主要由兩個圖形介面組成：
 
 ![程式的省略符號按鈕](assets/program-ellipsis.png)
 
-* 瀏覽至程式的特定[環境](/help/implementing/cloud-manager/manage-environments.md)
-* 開啟[程式概觀](#program-overview)
-* [編輯程式](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#editing)
+* 瀏覽至方案的特定[環境](/help/implementing/cloud-manager/manage-environments.md)
+* 開啟[方案概觀](#program-overview)
+* [編輯方案](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#editing)
 * [刪除沙箱計畫](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#delete-sandbox-program)
 
 >[!TIP]
@@ -163,7 +163,7 @@ Cloud Manager UI 主要由兩個圖形介面組成：
 
 ### 快速連結區段 {#quick-links-section}
 
-透過快速連結區段，您可以存取常用的相關資源。
+透過快速連結部份，您可以存取常用的相關資源。
 
 ## 程式概觀視窗 {#program-overview}
 
@@ -183,7 +183,7 @@ Cloud Manager UI 主要由兩個圖形介面組成：
 
 ### 工具列 {#program-overview-toolbar}
 
-程式概觀的工具列非常相似於[我的程式控制台。](#my-programs-toolbars)唯一的差別說明如下。
+程式總覽的工具列與[我的程式主控台](#my-programs-toolbars)的工具列類似。 唯一的差別說明如下。
 
 #### Cloud Manager 標頭 {#cloud-manager-header-2}
 
@@ -205,12 +205,12 @@ Cloud Manager 標頭有一個漢堡選單，會自動開啟以顯示程式概觀
 
 每個程式都有許多與之相關的選項和資料。這些資料會收集到索引標籤中，以方便導覽程式。這些索引標籤可讓您存取：
 
-* 概觀 - 目前文件中所述的程式概觀
-* [活動](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#activity) - 程式的管道執行歷史記錄
-* [管道](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#pipelines) - 為程式設定的所有管道
-* [存放庫](/help/implementing/cloud-manager/managing-code/managing-repositories.md) - 為程式設定的所有存放庫
+* 概觀 - 目前文件中所述的方案概觀
+* [活動](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#activity) - 方案的管道執行歷史記錄
+* [管道](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#pipelines) - 為方案設定的所有管道
+* [存放庫](/help/implementing/cloud-manager/managing-code/managing-repositories.md) - 為方案設定的所有存放庫
 * [報告](/help/implementing/cloud-manager/sla-reporting.md) - SLA 資料等量度
-* [環境](/help/implementing/cloud-manager/manage-environments.md) - 為程式設定的所有環境
+* [環境](/help/implementing/cloud-manager/manage-environments.md) - 為方案設定的所有環境
 * [網域設定](/help/implementing/cloud-manager/custom-domain-names/introduction.md) — 管理程式的自訂網域名稱
 * [SSL憑證](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md) — 管理程式的SSL憑證
 * [IP允許清單](/help/implementing/cloud-manager/ip-allow-lists/introduction.md) — 為特定IP位址定義允許清單
@@ -219,17 +219,17 @@ Cloud Manager 標頭有一個漢堡選單，會自動開啟以顯示程式概觀
 * [網路基礎結構](/help/security/configuring-advanced-networking.md) — 管理程式的進階網路選項
 * 學習路徑 - 有關 Cloud Manager 的其他學習資源
 
-預設情況下，當您開啟程式時，您會到達「**概觀**」索引標籤。會醒目提示目前的索引標籤。選取另一個索引標籤即可顯示其詳細資訊。
+預設情況下，當您開啟方案時，您會到達「**概觀**」索引標籤。會醒目提示目前的索引標籤。選取另一個索引標籤即可顯示其詳細資訊。
 
 使用 [Cloud Manager 標頭](#cloud-manager-header-2)中的漢堡選單即可隱藏索引標籤。
 
 ### 行動號召 {#cta}
 
-行動號召區段將根據您的程式狀態為您提供有用的資訊。對於新程式，您可能會看到提供的後續步驟以及上線日期的提醒，這是[在程式建立期間設定。](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)
+行動號召部份將根據您的程式狀態為您提供有用的資訊。若是新計畫，您可能會看到提供的後續步驟以及上線日期提醒，[於計畫建立期間設定](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)。
 
 新程式的![呼叫動作](/help/implementing/cloud-manager/assets/info-banner-new-program.png)
 
-對於即時程式，會看到上次部署的狀態以及詳細資訊和開始新部署的連結。
+對於即時方案，會看到上次部署的狀態以及詳細資訊和開始新部署的連結。
 
 ![行動號召](/help/implementing/cloud-manager/assets/info-banner.png)
 
@@ -251,10 +251,10 @@ Cloud Manager 標頭有一個漢堡選單，會自動開啟以顯示程式概觀
 
 ### 效能卡 {#performance}
 
-**效能**&#x200B;卡提供&#x200B;**[CDN儀表板](/help/implementing/cloud-manager/cdn-performance.md)**&#x200B;的概觀
+**效能**&#x200B;卡提供&#x200B;**[CDN儀表板](/help/implementing/cloud-manager/cdn-performance.md)**&#x200B;的概觀。
 
 ![效能卡](/help/implementing/cloud-manager/assets/cdn-performance-dashboard.png)
 
 ### 實用資源 {#useful-resources}
 
-「**實用資源**」區段提供了 Cloud Manager 的其他學習資源的連結。
+「**實用資源**」部份提供了 Cloud Manager 的其他學習資源的連結。

@@ -5,7 +5,7 @@ exl-id: 76ca1584-e21d-4e3a-a08a-82b2779167cf
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 06e961febd7cb2ea1d8fca00cb3dee7f7ca893c9
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
 source-wordcount: '373'
 ht-degree: 60%
@@ -25,7 +25,7 @@ ht-degree: 60%
 
 在使用Cloud Manager檢查DNS記錄狀態之前，您必須滿足這些要求。
 
-* 您必須已設定自訂網域名稱的DNS設定，如檔案[設定DNS設定。](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md)中所述。
+* 您必須已經設定自訂網域名稱的DNS設定，如檔案[設定DNS設定](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md)中所述。
 
 ## 如何檢查DNS記錄狀態 {#how-to}
 
@@ -37,7 +37,7 @@ ht-degree: 60%
 
 1. 按一下網域名稱的&#x200B;**狀態**&#x200B;圖示。
 
-Cloud Manager會針對您的網域名稱執行DNS查詢，並顯示其[目前狀態。](#statuses)
+Cloud Manager會針對您的網域名稱執行DNS查詢，並顯示其[目前狀態](#statuses)。
 
 當您的自訂網域名稱首次成功驗證和部署時，Cloud Manager 將自動觸發 DNS 查找。對於後續嘗試，您必須主動選擇狀態旁邊的&#x200B;**再次解析**&#x200B;圖示。
 

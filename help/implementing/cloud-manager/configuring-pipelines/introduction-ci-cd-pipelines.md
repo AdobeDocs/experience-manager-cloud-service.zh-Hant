@@ -6,10 +6,10 @@ exl-id: 40d6778f-65e0-4612-bbe3-ece02905709b
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f4c6331491bb08e81964476ad58065c1ee022967
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
 source-wordcount: '1482'
-ht-degree: 36%
+ht-degree: 35%
 
 ---
 
@@ -99,7 +99,7 @@ Cloud Manager 提供兩種類型的管道：
 * 使用者必須使用&#x200B;**部署管理員**&#x200B;角色以配置或執行管道。
 * 在任何時候，每個環境只能有一個完整堆疊管道。
 
-此外，如果您選擇引入一個 [Web 層設定管道](#web-tier-config-pipelines)，請注意完整堆疊管道的運作方式。
+此外，如果您選擇引入[Web層配置管道](#web-tier-config-pipelines)，請注意完整棧疊管道的行為。
 
 * 如果存在對應的Web層配置管道，則環境的完整棧疊管道會忽略Dispatcher配置。
 * 如果環境對應的 Web 層配置管道不存在，使用者可以配置完整堆疊管道包括或忽略 Dispatcher 配置。

@@ -5,10 +5,10 @@ exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 0c9328dc5be8f0a5e0924d0fc2ec59c9fce4141b
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
 source-wordcount: '826'
-ht-degree: 64%
+ht-degree: 66%
 
 ---
 
@@ -41,7 +41,7 @@ ht-degree: 64%
 
 >[!NOTE]
 >
->當您在&#x200B;**新增自訂網域**&#x200B;精靈的驗證步驟上選取&#x200B;**建立**&#x200B;時，[將新的自訂網域名稱新增至Cloud Manager時，Cloud Manager會自動觸發驗證。](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)對於後續驗證，您必須主動選擇狀態旁邊的再次驗證圖示。
+>當您在&#x200B;**新增自訂網域**&#x200B;精靈的驗證步驟上選取&#x200B;**建立**&#x200B;時，Cloud Manager會在[將新的自訂網域名稱新增至Cloud Manager](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)時，自動觸發驗證。 對於後續驗證，您必須主動選擇狀態旁邊的再次驗證圖示。
 
 ## 瞭解驗證狀態 {#statuses}
 

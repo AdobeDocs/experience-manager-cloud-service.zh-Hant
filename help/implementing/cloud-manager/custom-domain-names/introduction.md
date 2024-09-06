@@ -5,10 +5,10 @@ exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 1c9924b4477d53d86bb72eda8597a02304450195
+source-git-commit: 4e887b753eaf09e104c68484792f00dcb08ee304
 workflow-type: tm+mt
-source-wordcount: '722'
-ht-degree: 65%
+source-wordcount: '714'
+ht-degree: 47%
 
 ---
 
@@ -36,33 +36,33 @@ Adobe Experience Manager as a Cloud Service已佈建預設網域名稱，結尾�
 >
 >Cloud Manager 不是網域名稱註冊機構，不提供 DNS 服務。
 
-## 自訂網域名稱和 BYO CDN {#byo-cdn}
+## 自訂網域名稱並自備CDN {#byo-cdn}
 
-AEM as a Cloud Service 提供內建的內容傳遞網路 (CDN) 服務，但也讓您自攜 (BYO) CDN 以搭配 AEM 使用。自訂網域可以安裝在 AEM 管理的 CDN 或您管理的 CDN 中。
+AEM as a Cloud Service提供內建的內容傳遞網路(CDN)服務，也可讓您透過BYO （自攜） CDN搭配AEM使用。 自訂網域可以安裝在 AEM 管理的 CDN 或您管理的 CDN 中。
 
-* 安裝在 AEM 管理的 CDN 中的自訂網域名稱 (和憑證) 是透過 Cloud Manager 進行管理。
-* 安裝在您自己 CDN 中的自訂網域名稱 (和憑證) 是在特定 CDN 中進行管理。
+* Cloud Manager可管理安裝在AEM管理的CDN中的自訂網域名稱和憑證。
+* BYO CDN中安裝的自訂網域名稱和憑證會直接在該CDN中管理。
 
-**在您自己的CDN中管理的網域不需要透過Cloud Manager安裝。**&#x200B;它們可透過X-Forwarded-Host提供給AEM，並符合Dispatcher中定義的vhosts。 請參閱[CDN檔案。](/help/implementing/dispatcher/cdn.md)
+**在您自己的CDN中管理的網域不需要透過Cloud Manager安裝** — 這些網域可透過X-Forwarded-Host供AEM使用，並且符合Dispatcher中定義的vhost。 請參閱 [CDN 文件](/help/implementing/dispatcher/cdn.md)。
 
-在一個環境中，您可以將兩個網域安裝在 AEM 管理的 CDN 中，和安裝在您自己的 CDN 中。
+在一個環境中，您可以將兩個網域安裝在AEM管理的CDN中，並將它們安裝在BYO CDN中。
 
 ## 工作流程 {#workflow}
 
-新增自訂網域名稱需要 DNS 服務和 Cloud Manager 互動。因此，安裝、設定和驗證自訂網域名稱需要執行幾個步驟。 下表提供所需步驟的概觀，包括完成這些步驟的檔案資源連結。
+新增自訂網域名稱需要 DNS 服務和 Cloud Manager 互動。由於此工作流程，安裝、設定和驗證自訂網域名稱需要執行數個步驟。 下表提供所需步驟的概觀，包括完成這些步驟的檔案資源連結。
 
 | 步驟 | 說明 | 文件 |
 |---|---|---|
-| 1 | 將 SSL 憑證新增到 Cloud Manager | [新增 SSL 憑證](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) |
+| 1 | 將 SSL 憑證新增到 Cloud Manager | [新增SSL憑證](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) |
 | 2 | 新增自訂網域至Cloud Manager | [新增自訂網域名稱](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) |
-| 3 | 新增 TXT 記錄以驗證網域 | [新增 TXT 記錄](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md) |
+| 3 | 新增 TXT 記錄以驗證網域 | [新增TXT記錄](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md) |
 | 4 | 檢閱網域驗證狀態 | [檢查網域名稱狀態](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) |
-| 5 | 新增指向 AEM as a Cloud Service 的 DNS CNAME 或 Apex 記錄，以設定 DNS 設定 | [正在設定 DNS 設定](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md) |
-| 6 | 檢查 DNS 記錄狀態 | [檢查 DNS 記錄狀態](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md) |
+| 5 | 新增指向 AEM as a Cloud Service 的 DNS CNAME 或 Apex 記錄，以設定 DNS 設定 | [設定DNS設定](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md) |
+| 6 | 檢查 DNS 記錄狀態 | [檢查DNS記錄狀態](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md) |
 
 >[!TIP]
 >
->使用 AEM as a Cloud service 設定自訂網域名稱通常是一個簡單的過程。但是，有時可能會發生網域委派問題，這可能需要1-2個工作日才能解決。 出於這個原因，強烈建議在上線日期之前安裝網域。請參閱文件：[檢查網域名稱狀態](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)以了解詳細資訊。
+>使用 AEM as a Cloud service 設定自訂網域名稱通常是一個簡單的過程。但是，有時可能會發生網域委派問題，這可能需要1-2個工作日才能解決。 出於這個原因，強烈建議在上線日期之前安裝網域。如需詳細資訊，請參閱檔案[檢查網域名稱狀態](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)。
 
 ## 限制 {#limitations}
 
@@ -71,13 +71,13 @@ AEM as a Cloud Service 提供內建的內容傳遞網路 (CDN) 服務，但也�
 * Cloud Manager僅支援Sites計畫的發佈和預覽服務的自訂網域名稱。
    * 不支援編寫服務的自訂網域。
 * 每個 Cloud Manager 環境最多可以託管 500 個自訂網域。
-* 當有目前正在執行的管道連線到這些環境時，無法將網域名稱新增到環境中。
+* 當有一個目前正在執行的管道連接到這些環境時，無法將網域名稱新增到環境中。
 * 同一個網域名稱不能在多個環境中使用。
 * 一次只能新增一個網域名稱。
 * AEM as a Cloud Service 不支援萬用字元網域，例如 `*.example.com`。
 * 在新增自訂網域名稱之前，必須為您的計畫安裝包含自訂網域名稱的有效SSL憑證（萬用字元憑證有效）。
 
-## 開始使用！ {#get-started}
+## 開始 {#get-started}
 
-* 透過[新增SSL憑證，開始設定專案的新自訂網域名稱。](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)
-* 檢閱檔案[管理自訂網域名稱，以管理您現有的網域名稱。](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md)
+* 透過[新增SSL憑證](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)，開始設定專案的新自訂網域名稱。
+* 檢閱檔案[管理自訂網域名稱](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md)，以管理您現有的網域名稱。

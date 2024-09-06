@@ -1,60 +1,52 @@
 ---
-title: Adobe Experience Manager as a Cloud Service 中 Cloud Manager 2024.8.0 的發行說明
-description: 了解 AEM as a Cloud Service 中 Cloud Manager 2024.8.0 的發行說明。
+title: Adobe Experience Manager as a Cloud Service 中 Cloud Manager 2024.9.0 的發行說明
+description: 瞭解AEM as a Cloud Service中Cloud Manager 2024.9.0的發行說明。
 feature: Release Information
 role: Admin
-source-git-commit: a823bcd1461b847983d0243cd9abd59efd8d7b6f
-workflow-type: ht
-source-wordcount: '465'
-ht-degree: 100%
+source-git-commit: cfaa3be31195929b80310610120a779a20537c61
+workflow-type: tm+mt
+source-wordcount: '332'
+ht-degree: 15%
 
 ---
 
+# Adobe Experience Manager as a Cloud Service 中 Cloud Manager 2024.9.0 的發行說明 {#release-notes}
 
-# Adobe Experience Manager as a Cloud Service 中 Cloud Manager 2024.8.0 的發行說明 {#release-notes}
-
-本頁面記錄 AEM as a Cloud Service 中 Cloud Manager 版本 2024.8.0 的發行說明。
+本頁面記錄 AEM as a Cloud Service 中 Cloud Manager 版本 2024.9.0 的發行說明。
 
 >[!NOTE]
 >
->如需有關 Adobe Experience Manager as a Cloud Service 的最新發行說明，請參閱[此頁面](/help/release-notes/release-notes-cloud/release-notes-current.md)。
+>請參閱Adobe Experience Manager as a Cloud Service ](/help/release-notes/release-notes-cloud/release-notes-current.md)的[最新發行說明。
 
 ## 發行日期 {#release-date}
 
-AEM as a Cloud Service 中的 Cloud Manager 版本 2024.8.0 發行日期為 2024 年 8 月 14 日。下一個版本規劃於 2024 年 9 月 14 日發行。
+AEM as a Cloud Service中的Cloud Manager版本2024.9.0發行日期是2024年9月5日。 下一版本計畫於2024年10月3日發行。
 
 ## 新增功能 {#what-is-new}
 
-* [額外發佈區域](/help/operations/additional-publish-regions.md)和 [99.99% SLA](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#sla) (服務層級協定) 現已適用於 AEM Forms as a Cloud Service。
-   * 此增強功能可讓您達成更高的 SLA，正常執行時間更長且延遲更低，確保能為分散於全球的使用者提供同級最佳的體驗。
+* **體驗稽核儀表板：**
 
-## 早期採用方案 {#early-adoption}
+  AdobeCloud Manager的[增強體驗稽核儀表板](/help/implementing/cloud-manager/experience-audit-dashboard.md) (採用Google Lighthouse技術)可評估核心Web重要功能、SEO和協助工具量度，以提供AEM Sites品質和效能的深入分析。 透過提供可操作建議、讓團隊增強使用者體驗、頁面載入時間和網站合規性，它有助於使用者識別需要改進的領域。 此儀表板可簡化關鍵網站量度的監控，並確保AEM應用程式符合高效能和協助工具標準。
 
-若想要有機會測試一些即將推出的功能，請參加 Adobe 早期採用方案。
+* **Adobe產生並管理的網域驗證憑證：**
 
-### Cloud Manager 中的 Edge Delivery Services 支援 {#edge-delivery-services}
+  透過Cloud Manager，您現在可以[自助Adobe產生和受管理的DV （網域驗證） SSL憑證](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)。 此功能為您提供最快、最簡單且最具成本效益的解決方案，為您的線上組織或企業建立安全的網站。<!-- CMGR-52403 -->
 
-如果您因為擁有 AEM Sites 而獲得 Edge Delivery Services 授權，[則現在可以直接在 Cloud Manager 中使用 Edge Delivery Services 將您的網站上線](/help/implementing/cloud-manager/edge-delivery-services.md)，並使用引導式自助服務體驗來啟用網站。
+* Cloud Manager中的&#x200B;**Edge Delivery Services支援：**
 
-這項功能為您的所有 AEM 屬性提供統一的體驗。其確保網域名稱管理、SSL 憑證管理和內容傳遞網路對應等關鍵工作流程的一致性。
+  如果您擁有AEM Sites中的Edge Delivery Services授權，[您現在可以直接透過Cloud Manager](/help/implementing/cloud-manager/edge-delivery-services.md)使用Edge Delivery Services加入您的網站。 此功能可啟用引導式自助上線體驗。 此外也統一所有AEM屬性中的網域名稱管理、SSL憑證和CDN對應等基本工作流程，確保一致性和效率。<!-- CMGR-49859 -->
 
-如果您有興趣測試此新功能並分享您的意見回饋，請使用和您 Adobe ID 相關聯的電子郵件地址寄送電子郵件至 `aemcs-cmedgedelsvs-program-adopter@adobe.com`。
+* 使用GitHub存放庫的客戶現在能夠建立和使用網頁層級設定管道。<!--( KEEP IN? SP: YES CMGR-59046 and Slack https://cq-dev.slack.com/archives/C07LFP5BZ2L/p1725407057847379 ) -->
 
-### 網域驗證 (DV) 憑證
+<!--
+## Early adoption program {#early-adoption}
 
-透過 Cloud Manager，您現在能夠以[自助方式產生和管理網域驗證 (DV) SSL 憑證](/help/implementing/cloud-manager/managing-ssl-certifications/domain-validated-certificates.md)。若您要建立安全的線上業務網站，這項功能是最快、最簡單且成本效益最高的解決方案。
+For a chance to test some upcoming features, be a part of Adobe's early adoption program. -->
 
-如果您有意願測試此新功能並提供意見回饋，請使用和您 Adobe ID 相關聯的電子郵件地址寄送電子郵件至 `Grp-aemcs-dv-dert-adopter@adobe.com`。
-
-### 體驗稽核儀表板 {#experience-audit-dashboard}
-
-[Cloud Manager 體驗稽核儀表板](/help/implementing/cloud-manager/experience-audit-dashboard.md)包括頁面效能分數的趨勢檢視以及可協助您提高效能分數的深入解析和建議。體驗稽核會隨附為 Cloud Manager 生產管道中的一個步驟。
-
-該儀表板使用 Google Lighthouse，這是一種開放原始碼自動化工具，可提升網頁應用程式的品質。您可以使用它來稽核任何頁面，無論是公開頁面或需要驗證。可針對效能、輔助工具、漸進式網頁應用程式、SEO 等進行評估。
-
-想嘗試使用新的儀表板嗎？首先，請使用連結您 Adobe ID 的電子郵件地址寄送電子郵件至 `aem-lighthouse-pilot@adobe.com`。
 
 ## 錯誤修正
 
-* 已修正在管道刪除後發現管道步驟仍在執行的罕見問題。
-* 設定管道於罕見情況下錯誤顯示 `FAILED` 狀態的問題已修正。
+* SSL憑證表格檢視的分頁現在可如預期運作。<!-- (CMGR-60804 - [UI] Pagination doesn't work for ssl certificates) -->
+* 使用執行中的&#x200B;**Promote Build**&#x200B;按鈕時，升級了錯誤的成品版本。<!-- ( KEEP IN? SP: YES CMGR-59519 and Slack https://cq-dev.slack.com/archives/C07LFPN2R08/p1725408253474129 ) -->
+
+<!-- * Slack message says next release? SP: REMOVE (Leave in for now) SSL Certificates table in Cloud Manager now enables pagination in the user experience. ( https://jira.corp.adobe.com/browse/CMGR-61041 and Slack https://cq-dev.slack.com/archives/C07LFRE9QJU/p1725408553760009 ) --<>

@@ -1,10 +1,10 @@
 ---
 title: 僅限中繼和僅限生產管道
 description: 了解如何使用專用管道分割中繼和生產部署。
-source-git-commit: 94e5ecb67212bcced45141cba3af8c830791473b
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
-source-wordcount: '952'
-ht-degree: 92%
+source-wordcount: '942'
+ht-degree: 88%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 92%
 
 >[!NOTE]
 >
->此功能僅適用於[早期採用者方案。](/help/implementing/cloud-manager/release-notes/current.md#early-adoption)
+>此功能僅適用於[早期採用者計劃](/help/implementing/cloud-manager/release-notes/current.md#early-adoption)。
 
 ## 概觀 {#overview}
 
@@ -54,9 +54,9 @@ ht-degree: 92%
 
 ## 管道建立 {#pipeline-creation}
 
-僅限生產和僅限中繼管道的建立方式類似於標準耦合[生產管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)和[非生產管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)。請參閱這些文件以了解詳細資訊。
+僅限生產和僅限中繼管道的建立方式類似於標準耦合[生產管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)和[非生產管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)。請參閱這些文件，以了解詳細資訊。
 
-1. 在&#x200B;**管道**&#x200B;視窗中，點選或按一下&#x200B;**新增管道**。
+1. 在&#x200B;**管道**&#x200B;視窗中，按一下&#x200B;**新增管道**。
 
    * 選取&#x200B;**新增非生產管道**&#x200B;以建立僅限中繼管道。
    * 選取&#x200B;**新增僅限生產管道**&#x200B;以建立僅限生產管道。
@@ -74,7 +74,7 @@ ht-degree: 92%
 ### 僅限中繼管道 {#stage-only}
 
 1. 選取&#x200B;**新增非生產管道**&#x200B;選項後，**新增非生產管道**&#x200B;對話方塊將會開啟。
-1. 若要建立僅限中繼管道，請在管道的&#x200B;**合格的部署環境**&#x200B;欄位中選取中繼環境。完成其餘欄位，然後點選或按一下&#x200B;**繼續**。
+1. 若要建立僅限中繼管道，請在管道的&#x200B;**合格的部署環境**&#x200B;欄位中選取中繼環境。完成其餘欄位，然後按一下&#x200B;**繼續**。
 
    ![建立僅限中繼管道](assets/stage-only.png)
 
@@ -82,12 +82,12 @@ ht-degree: 92%
 
 ### 僅限生產管道 {#prod-only}
 
-1. 選取&#x200B;**新增僅限生產管道**&#x200B;選項後，**新增僅限生產管道**&#x200B;對話方塊將會開啟。
-1. 提供&#x200B;**管道名稱**。此對話方塊的其餘選項和功能與標準耦合管道建立對話方塊中的選項和功能相同。點選或按一下「**儲存**」，以儲存管道。
+1. 當您選取&#x200B;**僅新增生產管道**&#x200B;選項時，**僅新增生產管道**&#x200B;對話方塊會開啟。
+1. 提供&#x200B;**管道名稱**。此對話方塊的其餘選項和功能與標準耦合管道建立對話方塊中的選項和功能相同。按一下&#x200B;**儲存**，即可儲存管道。
 
 ## 執行僅限生產和僅限中繼管道 {#running}
 
-僅限生產和僅限中繼管道的執行方式相同於[所有其他管道的執行方式](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#running-pipelines)。如需詳細資訊，請查看文件。
+僅限生產和僅限中繼管道的執行方式與[所有其他管道的執行方式](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#running-pipelines)相同。如需詳細資訊，請參閱文件。
 
 此外，僅限生產管道的執行可以直接從僅限中繼管道的執行詳細資訊觸發。
 
@@ -97,7 +97,7 @@ ht-degree: 92%
 
 ![僅限中繼管道執行](assets/stage-only-pipeline-run.png)
 
-只有當您處於最新成功的僅限中繼管道執行時，**提升組建版本**&#x200B;按鈕才會出現。點選或按一下後，它將要求您確認僅限生產管道的執行，或建立僅限生產管道 (如果尚未存在)。
+只有當您處於最新成功的僅限中繼管道執行時，**提升組建版本**&#x200B;按鈕才會出現。按一下時，它會要求您確認僅生產配管的執行，或建立僅生產配管（如果尚未存在）。
 
 ### 僅限生產管道 {#prod-only-run}
 

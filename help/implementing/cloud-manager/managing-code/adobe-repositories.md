@@ -4,7 +4,7 @@ description: 了解如何在 Cloud Manager 中建立 Adob​​e 託管的存放
 exl-id: 6c32c4ae-f48d-4440-bfc2-cdc1a3d59599
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
 source-wordcount: '145'
 ht-degree: 100%
@@ -31,8 +31,8 @@ ht-degree: 100%
 
    ![新增存放庫對話框](assets/add-adobe-repository.png)
 
-精靈關閉後，您的新存放庫將顯示在「**存放庫**」視窗的表格中。您現在可以將 [CI/CD 管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)與存放庫建立關聯，或在「[**存放庫**」視窗中管理存放庫。](managing-repositories.md)
+精靈關閉後，您的新存放庫將顯示在「**存放庫**」視窗的表格中。您現在可以將 [CI/CD 管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)與存放庫建立關聯，或在&#x200B;[**存放庫**&#x200B;視窗中管理存放庫](managing-repositories.md)。
 
 >[!TIP]
 >
->您也可以新增自己管理的 GitHub 存放庫，以此作為 [私人存放庫](private-repositories.md)。
+>您也可以新增自己管理的 GitHub 存放庫，以此作為[私人存放庫](private-repositories.md)。

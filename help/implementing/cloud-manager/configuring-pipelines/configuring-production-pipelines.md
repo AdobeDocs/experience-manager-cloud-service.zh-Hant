@@ -6,7 +6,7 @@ exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
+source-git-commit: cfaa3be31195929b80310610120a779a20537c61
 workflow-type: tm+mt
 source-wordcount: '1374'
 ht-degree: 69%
@@ -102,11 +102,11 @@ ht-degree: 69%
 
 1. 提供要包含在體驗稽核中的路徑。
 
-   * 如需詳細資訊，請參閱檔案[體驗稽核測試](/help/implementing/cloud-manager/experience-audit-testing.md#configuration)。
+   * 如需詳細資訊，請參閱檔案[體驗稽核測試](/help/implementing/cloud-manager/experience-audit-dashboard.md#configuration)。
 
 1. 按一下&#x200B;**儲存**，即可儲存您的管道。
 
-為體驗稽核設定的路徑會提交給服務，並在管道執行時根據效能、協助工具、SEO (搜尋引擎最佳化)、最佳實務和 PWA (漸進式 Web 應用程式) 測試進行評估。如需更多詳細資訊，請參閱[了解體驗稽核結果](/help/implementing/cloud-manager/experience-audit-testing.md)。
+為體驗稽核設定的路徑會提交給服務，並在管道執行時根據效能、協助工具、SEO (搜尋引擎最佳化)、最佳實務和 PWA (漸進式 Web 應用程式) 測試進行評估。如需更多詳細資訊，請參閱[了解體驗稽核結果](/help/implementing/cloud-manager/experience-audit-dashboard.md)。
 
 管道已儲存，您現在可以在&#x200B;**計畫概觀**&#x200B;頁面的&#x200B;**管道**&#x200B;卡上[管理您的管道](managing-pipelines.md)。
 

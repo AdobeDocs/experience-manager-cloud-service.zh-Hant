@@ -5,10 +5,10 @@ exl-id: e014b8ad-ac9f-446c-bee8-adf05a6b4d70
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
 source-wordcount: '878'
-ht-degree: 95%
+ht-degree: 94%
 
 ---
 
@@ -22,12 +22,12 @@ ht-degree: 95%
 
 >[!NOTE]
 >
->如果您的存放庫是在 Cloud Manager 自動建立 `it.tests` 資料夾之前所建立，您還可以使用 [AEM 專案原型產生最新版本。](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/it.tests)
+>如果您的存放庫是在 Cloud Manager 自動建立 `it.tests` 資料夾之前所建立，您還可以使用 [AEM 專案原型產生最新版本](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/it.tests)。
 
 獲得 `it.tests` 資料夾的內容後，您可以將其用作自己測試的基礎，然後：
 
-1. [開發您的測試案例。](#writing-functional-tests)
-1. [在本機執行測試。](#local-test-execution)
+1. [開發您的測試案例](#writing-functional-tests)。
+1. [在本機執行測試](#local-test-execution)。
 1. 將您的程式碼提交到 Cloud Manager 存放庫並執行 Cloud Manager 管道。
 
 ## 寫入自訂功能測試 {#writing-functional-tests}

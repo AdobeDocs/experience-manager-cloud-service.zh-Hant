@@ -4,10 +4,10 @@ description: 了解如何設定 Cloud Manager 以搭配使用您自己的私人 
 exl-id: 5232bbf5-17a5-4567-add7-cffde531abda
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
 source-wordcount: '836'
-ht-degree: 77%
+ht-degree: 78%
 
 ---
 
@@ -44,7 +44,7 @@ ht-degree: 77%
 
 >[!TIP]
 >
->如需在Cloud Manager中管理存放庫的詳細資訊，請參閱[Cloud Manager存放庫](/help/implementing/cloud-manager/managing-code/managing-repositories.md)。
+>如需關於在 Cloud Manager 管理存放庫的詳細資訊，請參閱「[Cloud Manager 存放庫](/help/implementing/cloud-manager/managing-code/managing-repositories.md)」。
 
 ### 私人存放庫所有權驗證 {#validate-ownership}
 
@@ -56,7 +56,7 @@ Cloud Manager 現在知道您的 GitHub 存放庫，但仍然需要存取它。�
 
 1. Cloud Manager 使用 GitHub 應用程式與您的存放庫安全地互動。
    * 您 GitHub 組織的擁有者必須安裝位於 `https://github.com/apps/cloud-manager-for-aem` 的應用程式，並授予存放庫的存取權。
-   * 如需有關如何執行此動作的詳細資訊，請參閱GitHub的檔案。
+   * 如需深入了解如何完成此操作，請參閱 GitHub 的文件。
 
 1. 為了提高安全性，您必須在存放庫的預設分支中建立密碼檔案。選取&#x200B;**產生**。
 
@@ -110,7 +110,7 @@ Cloud Manager 現在知道您的 GitHub 存放庫，但仍然需要存取它。�
 
 ## 將私人存放庫與管道建立關聯 {#pipelines}
 
-經驗證的私人存放庫可以與[全端和前端管道建立關聯。](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
+已驗證的私人存放庫可以與[完整棧疊和前端管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)相關聯。
 
 >[!NOTE]
 >

@@ -6,9 +6,9 @@ exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
+source-git-commit: cfaa3be31195929b80310610120a779a20537c61
 workflow-type: tm+mt
-source-wordcount: '1403'
+source-wordcount: '1402'
 ht-degree: 75%
 
 ---
@@ -103,7 +103,7 @@ ht-degree: 75%
       * **產品功能測試** - 針對開發環境執行[產品功能測試](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing)。
       * **自訂功能測試** - 針對開發環境執行[自訂功能測試](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing)。
       * **自訂 UI 測試** - 為自訂應用程式執行[自訂 UI 測試](/help/implementing/cloud-manager/ui-testing.md)。
-      * **體驗稽核** — 執行[體驗稽核](/help/implementing/cloud-manager/experience-audit-testing.md)
+      * **體驗稽核** — 執行[體驗稽核](/help/implementing/cloud-manager/experience-audit-dashboard.md)
 
    ![完整堆疊管道](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-full-stack.png)
 
@@ -152,13 +152,13 @@ ht-degree: 75%
    * **Git 分支** - 此選項會定義管道應該選取哪個分支來擷取程式碼。
       * 輸入分支名稱的前幾個字元，該欄位的自動完成功能。會尋找相符的分支以幫助您進行選取。
    * **程式碼位置** - 此選項會定義管道應從所選存放庫的分支中擷取程式碼的路徑。
-   * **管道** — 對於前端非生產管道，您可以選擇啟用&#x200B;**[體驗稽核。](/help/implementing/cloud-manager/experience-audit-testing.md)**
+   * **管道** — 對於前端非生產管道，您可以選擇啟用&#x200B;**[體驗稽核](/help/implementing/cloud-manager/experience-audit-dashboard.md)**。
 
    ![設定管道](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-config-deployment-experience-audit.png)
 
 1. 如果您已啟用體驗稽核，請點選或按一下「**繼續**」以前進到「**體驗稽核**」標籤，您可以在其中定義應一律包含在體驗稽核中的路徑。
 
-   * 如果您已啟用&#x200B;**體驗稽核**，請參閱檔案[體驗稽核](/help/implementing/cloud-manager/experience-audit-testing.md#configuration)以取得如何設定的詳細資訊。
+   * 如果您已啟用&#x200B;**體驗稽核**，請參閱檔案[體驗稽核](/help/implementing/cloud-manager/experience-audit-dashboard.md)以瞭解如何設定的詳細資訊。
    * 如果您沒有這麼做，請略過此步驟。
 
 1. 點選或按一下「**儲存**」，以儲存管道。

@@ -4,10 +4,10 @@ description: 了解如何在 Cloud Manager 中建立、檢視和刪除 Git 存�
 exl-id: 6e1cf636-78f5-4270-9a21-38b4d5e5a0b0
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
-source-wordcount: '624'
-ht-degree: 100%
+source-wordcount: '621'
+ht-degree: 92%
 
 ---
 
@@ -39,7 +39,7 @@ ht-degree: 100%
 「**存放庫**」視窗會提供有關存放庫的詳細資訊：
 
 * 存放庫類型
-   * **Adobe** 表示 Adob&#x200B;&#x200B;e 託管的存放庫
+   * **Adobe** 表示 Adobe 託管的存放庫
    * **GitHub** 表示是您管理的私人 GitHub 存放庫
 * 當存放庫建立時
 * 與存放庫有關聯的管道
@@ -71,11 +71,11 @@ Cloud Manager 會支援 Adobe 託管的存放庫 (**Adobe 存放庫**) 以及您
 
 ## 存取存放庫資訊 {#repo-info}
 
-在「**存放庫**」視窗中查看存放庫時，您可以點選或按一下工作列的「**存取存放庫資訊**」按鈕，以查看有關如何以程式設計方式存取 Adobe 託管的存放庫的詳細資訊。
+在&#x200B;**存放庫**&#x200B;視窗中檢視您的存放庫時，您可以按一下工具列中的&#x200B;**存取存放庫資訊**&#x200B;按鈕，以程式設計方式檢視如何存取Adobe管理的存放庫的詳細資料。
 
 ![存放庫資訊](assets/repo-info.png)
 
-「**存放庫資訊**」視窗會開啟，並且內含詳細資訊。有關存取存放庫資訊的更多資訊，請參閱文件[「存取存放庫資訊」。](accessing-repos.md)
+「**存放庫資訊**」視窗會開啟，並且內含詳細資訊。如需有關存取存放庫資訊的詳細資訊，請參閱檔案[存取存放庫資訊](accessing-repos.md)。
 
 ## 檢查分支/建立專案 {#check-branches}
 

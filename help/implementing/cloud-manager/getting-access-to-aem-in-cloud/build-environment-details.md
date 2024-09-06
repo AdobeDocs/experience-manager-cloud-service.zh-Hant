@@ -5,7 +5,7 @@ exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
 source-wordcount: '788'
 ht-degree: 77%
@@ -21,9 +21,9 @@ ht-degree: 77%
 
 Cloud Manager 使用專門的構建環境構建和測試您的程式碼。
 
-* 組建環境以 Linux 為基礎，衍生自 Ubuntu 22.04。
+* 建置環境以 Linux 為基礎，衍生自 Ubuntu 22.04。
 * 已安裝 Apache Maven 3.9.4。
-   * Adobe 建議用者[更新其 Maven 存放庫以使用 HTTPS 而非 HTTP。](#https-maven)
+   * Adobe 建議使用者[更新其 Maven 存放庫以使用 HTTPS 而非 HTTP](#https-maven)。
 * 安裝的Java版本為OracleJDK 11.0.22和OracleJDK 8u401。
 * **重要**：依預設，`JAVA_HOME`環境變數設為`/usr/lib/jvm/jdk1.8.0_401`，其中包含OracleJDK 8u401。 *_AEM雲端專案應覆寫此預設以使用JDK 11_*。 如需詳細資訊，請參閱[設定Maven JDK版本](#alternate-maven-jdk-version)區段。
 * 安裝了一些必要的附加系統套件。
@@ -32,7 +32,7 @@ Cloud Manager 使用專門的構建環境構建和測試您的程式碼。
    * `libpng`
    * `imagemagick`
    * `graphicsmagick`
-* 在建置時間可安裝其他套件，如[安裝附加系統套件](#installing-additional-system-packages)區段中所述。
+* 在建置時間可安裝其他套件，如[安裝附加系統套件](#installing-additional-system-packages)部份中所述。
 * 每次構建都是在原始環境中完成的；構建容器在執行之間不保持任何狀態。
 * 一直使用下列三個命令執行 Maven：
    * `mvn --batch-mode org.apache.maven.plugins:maven-dependency-plugin:3.1.2:resolve-plugins`

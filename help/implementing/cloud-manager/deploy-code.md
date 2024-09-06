@@ -5,10 +5,10 @@ exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 3a5451020b8f76f95bcd8bff7b6eabd06be00f31
+source-git-commit: cfaa3be31195929b80310610120a779a20537c61
 workflow-type: tm+mt
 source-wordcount: '1197'
-ht-degree: 93%
+ht-degree: 94%
 
 ---
 
@@ -64,7 +64,7 @@ _只有 Full Stack Code 流水線類型支援程式碼掃描、功能測試、UI
 * **程式碼掃描** - 此步驟會評估應用程式的程式碼品質。
    * 如需有關測試流程的詳細資訊，請參閱[程式碼品質測試](/help/implementing/cloud-manager/code-quality-testing.md)。
 * **構建映像**- 此過程負責將構建步驟生成的內容和調度程序包轉換為 Docker 映像和 Kubernetes 配置。
-* **部署到階段**- 將映像部署到中繼環境以準備[階段測試階段。](#stage-testing)
+* **部署至階段** — 將映像部署至測試環境，以準備[階段測試階段](#stage-testing)。
 
 ![中繼部署](assets/stage-deployment.png)
 
@@ -86,7 +86,7 @@ _只有 Full Stack Code 流水線類型支援程式碼掃描、功能測試、UI
    * 配置的頁面將提交給服務並進行評估。
    * 結果是資訊性的，並顯示分數以及當前和以前分數之間的變化。
    * 此深入分析對於判斷是否有會於目前部署引入的迴歸十分有用。
-   * 如需更多詳細資訊，請參閱[了解體驗稽核結果](/help/implementing/cloud-manager/experience-audit-testing.md)。
+   * 如需更多詳細資訊，請參閱[了解體驗稽核結果](/help/implementing/cloud-manager/experience-audit-dashboard.md)。
 
 ![階段測試](assets/stage-testing.png)
 
@@ -154,7 +154,7 @@ _只有 Full Stack Code 流水線類型支援程式碼掃描、功能測試、UI
 
 ### 重新執行 API {#reexecute-API}
 
-除了可在UI中使用之外，您還可以使用[Cloud Manager API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Pipeline-Execution)來觸發重新執行，並識別觸發為重新執行的執行。
+除了可在 UI 中使用之外，您還可以使用 [Cloud Manager API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Pipeline-Execution) 觸發重新執行，並識別已作為重新執行來觸發的執行。
 
 #### 觸發重新執行 {#reexecute-deployment-api}
 

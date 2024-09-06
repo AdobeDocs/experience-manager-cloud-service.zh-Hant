@@ -5,10 +5,10 @@ exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
 source-wordcount: '1850'
-ht-degree: 80%
+ht-degree: 78%
 
 ---
 
@@ -109,7 +109,7 @@ Adobe 非常重視應用程式的監控、可用性和效能。AEM as a Cloud Se
 
 1. New Relic 將向您傳送一封電子郵件，其中包含確認帳戶的連結。
 
-如果您沒有收到來自 New Relic 的確認電子郵件，請參閱[故障排除部分](#troubshooting)。
+如果您沒有收到來自New Relic的確認電子郵件，請參閱[疑難排解小節](#troubshooting)。
 
 ## 正在存取 New Relic One {#accessing-new-relic}
 
@@ -159,7 +159,7 @@ Adobe 非常重視應用程式的監控、可用性和效能。AEM as a Cloud Se
 
 1. New Relic 將向您傳送一封電子郵件，其中包含確認帳戶的連結。
 
-如果您完成註冊過程但由於電子郵件或密碼錯誤消息而無法登入您的帳戶，請透過 [Admin Console](https://adminconsole.adobe.com/) 登入支援票證。
+如果您完成註冊程式，但由於電子郵件或密碼錯誤訊息而無法登入您的帳戶，請透過[Admin Console](https://adminconsole.adobe.com/)登入支援票證。
 
 如果您沒有收到來自 New Relic 的電子郵件：
 
@@ -172,7 +172,7 @@ Adobe 非常重視應用程式的監控、可用性和效能。AEM as a Cloud Se
 以下限制適用於將使用者新增到 New Relic One：
 
 * 最多可以新增 30 個使用者。如果已達到最大使用者數，請刪除使用者以便能夠新增新使用者。
-* 新增到 New Relic 的使用者屬於&#x200B;**受限制的**&#x200B;類型，有關詳細資訊，請參閱 [New Relic 文件](https://docs.newrelic.com/docs/accounts/original-accounts-billing/original-users-roles/users-roles-original-user-model/#:~:text=在%20general%2C%20Admins%20take%20responsibility, Restricted%20Users%20can%20use%20them.&amp;text=One%20or%20more%20individuals%20who,change)。
+* 新增至New Relic的使用者屬於&#x200B;**Restricted**&#x200B;型別，請參閱[New Relic檔案以取得詳細資料](https://docs.newrelic.com/docs/accounts/original-accounts-billing/original-users-roles/users-roles-original-user-model/#:~:text=在%20general%2C%20Admins%20take%20responsibility, Restricted%20Users%20can%20use%20them.&amp;text=One%20or%20more%20individuals%20who,change)。
 * AEM as a Cloud Service 僅提供 New Relic One APM 解決方案，不支援警報、記錄或 API 整合。
 
 >[!NOTE]
@@ -181,7 +181,7 @@ Adobe 非常重視應用程式的監控、可用性和效能。AEM as a Cloud Se
 >
 >請依照本檔案中[啟用您的New Relic One子帳戶](#activate-sub-account)一節中的相同步驟，重新啟用您的New Relic One子帳戶。
 
-如需有關您AEM as a Cloud Service計畫之New Relic One產品的更多說明或其他指引，請透過[AEM支援入口網站](https://helpx.adobe.com/tw/enterprise/using/support-for-experience-cloud.html)開啟支援票證。
+如需有關 AEM as a Cloud Service 計畫的 New Relic One 產品的更多說明或其他指導，請透過 [AEM 支援入口網站](https://helpx.adobe.com/tw/enterprise/using/support-for-experience-cloud.html)開啟支援票證
 
 ## 與 New Relic One 有關的常見問答 {#faqs}
 
@@ -203,7 +203,7 @@ Adobe 透過 New Relic One 的 Java 外掛程式監視 AEM as a Cloud Service �
 
 ### Adobe 是否從 New Relic One 傳送警報通知？ {#alerting-new-relic}
 
-Adobe 提供 New Relic One 存取權限僅基於可觀察性之用途，不會將其用於客戶警報或內部營運警報。任何事件通知的傳送均使用[使用者通知設定檔。](/help/journey-onboarding/notification-profiles.md)
+Adobe 提供 New Relic One 存取權限僅基於可觀察性之用途，不會將其用於客戶警報或內部營運警報。使用[使用者通知設定檔](/help/journey-onboarding/notification-profiles.md)傳送任何事件的通知。
 
 ### 誰可以存取 New Relic One cloud 服務資料？ {#access-new-relic-cloud}
 

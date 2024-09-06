@@ -5,9 +5,9 @@ exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: ec95438d704568076af045d8933be2125885f482
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
-source-wordcount: '925'
+source-wordcount: '923'
 ht-degree: 37%
 
 ---
@@ -21,7 +21,7 @@ Cloud Manager 提供了一個儀表板，用於輕鬆查看您的組織或租用
 >
 >授權儀表板僅適用於AEM as a Cloud Service計畫。 [AMS程式](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/introduction)未包含在授權儀表板中。
 >
->若要判斷您的程式具有的服務型別（AMS或AEMaaCS），請參閱檔案[瀏覽Cloud Manager UI。](/help/implementing/cloud-manager/navigation.md#program-cards)
+>若要判斷您的程式具有的服務型別（AMS或AEMaaCS），請參閱檔案[瀏覽Cloud Manager UI](/help/implementing/cloud-manager/navigation.md#program-cards)。
 
 ## 概觀 {#overview}
 
@@ -39,7 +39,7 @@ Cloud Manager 授權儀表板提供對以下資訊的輕鬆存取：
 >必須由具有&#x200B;**業主**&#x200B;角色的使用者登入才能檢視授權儀表板。
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織。
-1. 在「**[我的程式](/help/implementing/cloud-manager/navigation.md#my-programs)**」主控台上，點選或按一下「[Cloud Manager標題」上的「漢堡選單」按鈕。](/help/implementing/cloud-manager/navigation.md#cloud-manager-header)這會顯示標籤。
+1. 在&#x200B;**[我的程式](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;主控台上，按一下[Cloud Manager標題](/help/implementing/cloud-manager/navigation.md#cloud-manager-header)上的漢堡功能表按鈕。 如此可顯示標籤。
 1. 點選或按一下標籤中的&#x200B;**授權**&#x200B;選項。
 
 ![授權儀表板](assets/license-dashboard.png)
@@ -72,7 +72,7 @@ Cloud Manager授權區域中的&#x200B;**檢視使用狀況詳細資料**&#x200B
 
 ### Sites 使用情況詳細資訊 {#sites-usage-details}
 
-**Sites使用詳細資料**&#x200B;視窗會顯示圖表，提供您根據[內容要求使用Sites授權的概觀。](#what-is-a-content-request)
+**Sites使用詳細資料**&#x200B;視窗會顯示圖表，提供您根據[內容要求](#what-is-a-content-request)的Sites授權使用概況。
 
 ![網站使用狀況詳細資料視窗](assets/sites-usage-details.png)
 
@@ -83,7 +83,7 @@ Cloud Manager授權區域中的&#x200B;**檢視使用狀況詳細資料**&#x200B
 <!-- REMOVED AS PER CQDOC-21983
 ### Assets usage details {#assets-usage-details}
 
-The **Assets usage details** window, presents graphs giving an overview of the usage of your Assets licenses based on [storage](#storage) and [standard users.](#standard-users) Select the appropriate tab to toggle between the views.
+The **Assets usage details** window, presents graphs giving an overview of the usage of your Assets licenses based on [storage](#storage) and [standard users](#standard-users). Select the appropriate tab to toggle between the views.
 
 For both storage and standard users views, you can use the **Environment Type** dropdown to toggle the view between production, stage, and development environments.
 

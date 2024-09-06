@@ -5,7 +5,7 @@ exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: cfaa3be31195929b80310610120a779a20537c61
 workflow-type: tm+mt
 source-wordcount: '1373'
 ht-degree: 9%
@@ -97,7 +97,7 @@ Adobe提供數個內建品質閘道，而其他閘道則需要您的介入以進
 >
 >自訂UI測試會在生產和非生產（選擇加入）管道中執行，您的AEM應用程式會使用這些管道變更部署和AEM產品推播更新，因此是協助確保應用程式正常運作並提高發行安全性的重要貢獻。 客戶UI測試也會在每個客戶的內部發行前驗證管道中執行，這有助於提供早期意見反應。
 >
->非Selenium容器應該根據[UI測試區段中的環境變數，使用HTTP Proxy執行測試。](/help/implementing/cloud-manager/ui-testing.md#custom-ui-testing)
+>非Selenium容器應該根據[UI測試區段](/help/implementing/cloud-manager/ui-testing.md#custom-ui-testing)中的環境變數，使用HTTP Proxy執行測試。
 
 為了保持管道執行效率，我們建議專注於關鍵功能和主要使用者互動流程。 建議在客戶開發流程期間，作為一般客戶驗證管道的一部分執行不符合此品質閘道的完整UI測試套裝。
 
@@ -111,7 +111,7 @@ Adobe提供數個內建品質閘道，而其他閘道則需要您的介入以進
 
 此品質閘道由AEM現成提供，但未封鎖部署管道。 依預設，會針對發佈執行個體的根頁面(`/`)執行稽核。 您可以設定最多25個要納入稽核考量的自訂路徑，以便協助撰寫。
 
-如需詳細資訊，請參閱[體驗稽核測試](/help/implementing/cloud-manager/experience-audit-testing.md)。
+如需詳細資訊，請參閱[體驗稽核測試](/help/implementing/cloud-manager/experience-audit-dashboard.md)。
 
 ### 客戶驗證
 

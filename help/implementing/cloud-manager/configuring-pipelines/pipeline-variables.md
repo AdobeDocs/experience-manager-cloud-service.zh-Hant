@@ -5,7 +5,7 @@ exl-id: cfcef2e2-0590-457d-a0f9-6092a6d9e0e8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
 source-wordcount: '571'
 ht-degree: 20%
@@ -51,7 +51,7 @@ ht-degree: 20%
 
 1. **變陣列態**&#x200B;視窗隨即開啟。 在表格的第一列輸入變數詳細資料，然後點選或按一下&#x200B;**新增**。
 
-   * **設定名稱**&#x200B;是變數的唯一識別碼，它必須標頭[管線變數命名慣例。](#naming-conventions)
+   * **設定名稱**&#x200B;是變數的唯一識別碼，它必須標頭[管線變數命名慣例](#naming-conventions)。
    * **值**&#x200B;是變數儲存的值。
    * **套用的步驟**&#x200B;是管道中套用變數的步驟。 此為必要欄位。
       * **組建**

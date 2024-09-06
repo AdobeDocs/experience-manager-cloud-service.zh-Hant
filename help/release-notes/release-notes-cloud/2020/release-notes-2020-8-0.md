@@ -4,10 +4,10 @@ description: "[!DNL Adobe Experience Manager]個2020.8.0as a Cloud Service發行
 exl-id: 83413130-ae90-4419-bcf7-42fdc740452b
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: cfaa3be31195929b80310610120a779a20537c61
 workflow-type: tm+mt
 source-wordcount: '1031'
-ht-degree: 34%
+ht-degree: 35%
 
 ---
 
@@ -84,7 +84,7 @@ ht-degree: 34%
   >[!NOTE]
   >此後，內容稽核已重命名為體驗稽核。
 
-  如需更多詳細資訊，請參閱[體驗稽核測試](/help/implementing/cloud-manager/experience-audit-testing.md)。
+  如需更多詳細資訊，請參閱[體驗稽核測試](/help/implementing/cloud-manager/experience-audit-dashboard.md)。
 
 * Assets 計畫中新建立的環境現在將自動設定智慧內容服務。
 
