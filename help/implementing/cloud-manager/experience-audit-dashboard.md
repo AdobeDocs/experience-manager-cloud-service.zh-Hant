@@ -5,10 +5,10 @@ exl-id: 6d33c3c5-258c-4c9c-90c2-d566eaeb14c0
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 72868ab808ebbd99c5e81805e7669083c5c754fb
+source-git-commit: 505e0887124472693216fee2f0a3e960591b5ae5
 workflow-type: tm+mt
-source-wordcount: '1927'
-ht-degree: 7%
+source-wordcount: '1950'
+ht-degree: 6%
 
 ---
 
@@ -17,17 +17,11 @@ ht-degree: 7%
 
 探索體驗稽核如何驗證您的部署流程，確保變更符合效能、協助工具、最佳實務和SEO的基準標準。 它提供清楚且資訊豐富的儀表板介面，以便追蹤這些量度。
 
->[!NOTE]
->
->此功能僅適用於[早期採用者程式](/help/implementing/cloud-manager/release-notes/current.md#early-adoption)。
->
->如需AEM as a Cloud Service現有體驗稽核功能的詳細資訊，請參閱[體驗稽核測試](/help/implementing/cloud-manager/experience-audit-testing.md)。
-
 ## 概觀 {#overview}
 
 體驗稽核會驗證部署流程，並協助確保已部署變更：
 
-1. 符合效能、協助工具、最佳實務、SEO (搜尋引擎最佳化) 和 PWA (漸進式 Web 應用程式) 的基線標準。
+1. 符合效能、協助工具、最佳實務和SEO （搜尋引擎最佳化）的基準標準。
 
 1. 不要引入迴歸。
 
@@ -88,7 +82,7 @@ Cloud Manager中的體驗稽核可確保使用者在網站上的體驗達到最�
 
 透過[生產管道執行頁面](/help/implementing/cloud-manager/deploy-code.md)，體驗稽核的結果會顯示在生產管道的&#x200B;**階段測試**&#x200B;階段。
 
-![管道中的儀表板](assets/experience-audit-dashboard.jpg)
+![管道中的儀表板](assets/experience-audit-dashboard.png)
 
 體驗稽核提供[已設定頁面](#configuration)的Google Lighthouse分數中位數，以及與上次掃描的分數差異。
 
@@ -139,9 +133,17 @@ Cloud Manager的&#x200B;**報告**&#x200B;標籤已開啟，顯示&#x200B;**體�
 
 #### 頁面分數 — 趨勢 {#trend}
 
-依預設，**頁面分數的選取檢視 — 趨勢**&#x200B;是過去&#x200B;**個6個月**&#x200B;的&#x200B;**中位數分數**。
+根據預設，**頁面分數的選取檢視 — 趨勢**&#x200B;是去年&#x200B;**的**&#x200B;中位數分數&#x200B;**個**。
 
-使用圖表按鈕頂端和底部的&#x200B;**選取**&#x200B;和&#x200B;**檢視**&#x200B;下拉式清單，分別選取特定頁面的詳細資訊和不同的時間範圍。 按一下圖表頂端的&#x200B;**更新趨勢**&#x200B;以套用選取專案並重新整理圖表。
+您可以按一下圖例中的類別名稱，選擇檢視特定Lighthouse類別的趨勢。
+
+![趨勢可選擇](assets/experience-audit-trend-selectable.png)
+
+使用圖表頂端的&#x200B;**選取**&#x200B;下拉式清單選取特定頁面的詳細資料，而底部的&#x200B;**檢視**&#x200B;和&#x200B;**觸發器**&#x200B;下拉式清單則分別選取不同的時間範圍和觸發器型別。
+
+**檢視**&#x200B;下拉式清單可讓您選取預設的時間範圍，或選取更特定檢視的自訂間隔。
+
+![趨勢檢視](assets/experience-audit-trend-view.png)
 
 將滑鼠移到圖表上時，工具提示會在特定時間點顯示Google Lighthouse類別的值。
 
@@ -164,11 +166,11 @@ Cloud Manager的&#x200B;**報告**&#x200B;標籤已開啟，顯示&#x200B;**體�
 
 ![Recommendations](assets/experience-audit-recommendations.png)
 
-按一下任何建議的>形箭號以顯示其詳細資訊。
+按一下任何建議以顯示其相關詳細資訊。
 
 ![建議詳細資料](assets/experience-audit-recommendations-details.png)
 
-可用時，擴充的建議詳細資料也包含建議影響的百分比，以協助聚焦於最具影響力的變更。
+可用時，擴充的建議詳細資料也包含建議影響的百分比，以協助聚焦於最具影響力的變更。 除此之外，延展的建議可能包含相關的AEM檔案連結和提示，可引導您實作建議的修正專案。
 
 按一下詳細資料檢視中的&#x200B;**檢視頁面**&#x200B;連結，檢視套用建議的頁面。
 
@@ -222,7 +224,7 @@ Cloud Manager的&#x200B;**報告**&#x200B;標籤已開啟，顯示&#x200B;**體�
 
 管道會顯示可展開的錯誤區段，以檢視它無法存取的相對URL路徑。
 
-![體驗稽核遇到的問題](assets/experience-audit-issues.jpg)
+![體驗稽核遇到的問題](assets/experience-audit-issues.png)
 
 如果檢視完整報告，詳細資訊會顯示在&#x200B;**[體驗稽核掃描結果](#results)**&#x200B;區段中，此區段也是可展開的。
 
