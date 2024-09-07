@@ -4,10 +4,10 @@ description: ' [!DNL Workfront for Experience Manager enhanced connector] 版發
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 346f36a476a11dc7fe022df8b7b8df7aff06a2ba
 workflow-type: tm+mt
-source-wordcount: '1660'
-ht-degree: 100%
+source-wordcount: '1678'
+ht-degree: 98%
 
 ---
 
@@ -15,13 +15,13 @@ ht-degree: 100%
 
 以下章節概述 [!DNL Workfront for Experience Manager enhanced connector] 版的一般發行說明。
 
-[!DNL Workfront for Experience Manager enhanced connector] 的最新版本 1.9.19 發行日期是 2024 年 4 月 12 日。
+[!DNL Workfront for Experience Manager enhanced connector]最新1.9.20版的發行日期為2024年9月06日。
 
 ## 版本重點 {#release-highlights}
 
 [!DNL Workfront for Experience Manager enhanced connector] 的最新版本包括以下錯誤修復：
 
-* 無法關閉 HTTP 用戶端會導致記憶體不足問題。
+* 上傳和建立現有資產的新版本時，MIME型別會遺失。
 
 >[!NOTE]
 >
@@ -29,7 +29,7 @@ ht-degree: 100%
 
 >[!IMPORTANT]
 >
->Adobe 建議[升級到 [!DNL Workfront for Experience Manager enhanced connector] 的最新版本 1.9.19](/help/assets/workfront-connector-install.md)。
+>Adobe 建議[升級到 [!DNL Workfront for Experience Manager enhanced connector] 的最新版本 1.9.20](/help/assets/workfront-connector-install.md)。
 
 ## 已知問題 {#known-issues}
 
@@ -38,6 +38,11 @@ ht-degree: 100%
 * 在使用傳統 Workfront 體驗時，「**[!UICONTROL 更多]**」下拉式清單中的「**[!UICONTROL 傳送至]**」選項不允許您在 Experience Manager 之內選取目標目的地。使用「**[!UICONTROL 文件動作]**」下拉式清單時，「**[!UICONTROL 傳送至]**」選項正常運作。在使用新的 Workfront 體驗時，「**[!UICONTROL 更多]**」下拉式清單和「**[!UICONTROL 文件動作]**」下拉式清單的「**[!UICONTROL 傳送至]**」選項正常運作。
 
 ## 舊版本 {#previous-releases}
+
+### 2024 年 4 月版 {#april-2024-release}
+
+* 無法關閉 HTTP 用戶端會導致記憶體不足問題。
+
 
 ### 2024 年 3 月版 {#march-2024-release}
 
@@ -68,7 +73,7 @@ ht-degree: 100%
 
 * 連結資料夾、文件更新和註釋更新中的關鍵流程無需請求時間處理。
 
-### 2023 年 11 月版 {#november-2023-release}
+### 2023 年 11 月版 {#nov-2023-release}
 
 * 查看 AEM 檔案夾清單時，對話框需要超過一分鐘才能載入。
 * 已獲授權的 [!DNL Workfront] 使用者正持續收到身份驗證失敗錯誤記錄。
@@ -120,7 +125,7 @@ ht-degree: 100%
 
 [!DNL Workfront for Experience Manager enhanced connector]2023 年 3 月 3 日發布的 1.9.8 版本包含以下更新：
 
-* Experience Manager 在 Workfront 中建立專案連結的資料夾時的性能得到改進。
+* Experience Manager 在 Workfront 中建立專案連結的資料夾時的效能得到改進。
 
 * 在 Workfront 中刪除評論現在會反映在 Experience Manager 中。
 
