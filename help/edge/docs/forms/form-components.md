@@ -1,19 +1,19 @@
 ---
 title: 最適化表單區塊元件及其屬性
-description: 本文件旨在概述 AEM Forms Edge Delivery Service 表單適用的元件及其屬性。
+description: 本檔案概述AEM Forms的Edge Delivery Services中可用的表單元件及其屬性。
 feature: Edge Delivery Services
 exl-id: 7d087d41-9313-482a-a905-8955b0999781
 role: Admin, Architect, Developer
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
 workflow-type: tm+mt
-source-wordcount: '1006'
-ht-degree: 100%
+source-wordcount: '1009'
+ht-degree: 96%
 
 ---
 
 # 最適化表單區塊元件及其屬性
 
-AEM Forms Edge Delivery Services 可讓您使用各種元件建立便利使用者的互動式表單。這些元件符合不同類型資料收集的需求，還可供您輕鬆自訂以滿足您的特定需求。
+AEM Forms的Edge Delivery Services可讓您使用各種元件建立使用者易記的互動式表單。 這些元件符合不同類型資料收集的需求，還可供您輕鬆自訂以滿足您的特定需求。
 
 
 ![含有部份元件和屬性的試算表範本](/help/edge/assets/sample-form-in-spreadsheet.png)

@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2024.3.0 版�
 exl-id: b3816929-2c0a-4d6a-b583-c928d2182ecd
 feature: Release Information
 role: Admin
-source-git-commit: 8d5d8910a906e2adf17fa9c75f17634602c2e0b9
+source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
 workflow-type: tm+mt
-source-wordcount: '2292'
-ht-degree: 94%
+source-wordcount: '2293'
+ht-degree: 93%
 
 ---
 
@@ -116,7 +116,7 @@ Assets Essentials 可讓管理員管理存放庫中專用集合的存取層級�
 
 ### AEM Forms 的新功能 {#forms-new-features}
 
-* **[Adobe Experience Manager Forms Edge Delivery Services](/help/edge/docs/forms/overview.md)**：AEM Forms Edge Delivery Services 是一組可組合服務，讓環境可以快速進行開發，以利作者迅速更新、發佈並推出新表單。這些服務提供卓越且高影響力的表單體驗，進而促進使用者的參與度和轉換率。這些表單體驗易於製作和開發。
+* **[Adobe Experience Manager FormsEdge Delivery Services](/help/edge/docs/forms/overview.md)**： AEM Forms的Edge Delivery Services是一組可撰寫的服務，可啟用快速開發環境，讓作者可以快速更新、發佈和啟動新表單。 這些服務提供卓越且高影響力的表單體驗，進而促進使用者的參與度和轉換率。這些表單體驗易於製作和開發。
 
   ![EDS 表單功能](/help/edge/assets/eds-forms-features.png)
 
@@ -180,7 +180,7 @@ Assets Essentials 可讓管理員管理存放庫中專用集合的存取層級�
 
 * **Reader 延伸模組服務**：AEM Forms Communication API 引入了 Reader 延伸模組服務，讓您可以為一般的 PDF 新增表單填寫和評論等功能，讓免費 Adob&#x200B;&#x200B;e Reader 的使用者可使用這些功能。
 
-* [從右至左語言支援](/help/forms/supporting-new-language-localization-core-components.md)：以核心元件為主的最適化表單現在可以呈現從右至左 (RTL) 語言 (如阿拉伯文、波斯文和烏都文)。全球有超過 20 億人使用 RTL 語言。使用 RTL 語言的表單可讓您擴展最適化表單的範圍，以滿足這些不同的受眾並選擇進入 RTL 市場。在某些地區，法律也強制要求以當地語言提供表單。透過適應當地語言，您不僅可以向更廣泛的受眾敞開大門，還可以確保遵守相關法律和法規。
+* [從右至左語言支援](/help/forms/supporting-new-language-localization-core-components.md)：以核心元件為主的最適化表單現在可以呈現從右至左 (RTL) 語言 (如阿拉伯文、波斯文和烏都文)。全球有超過 20 億人使用 RTL 語言。使用 RTL 語言的表單可讓您擴展最適化表單的範圍，以滿足這些不同的客群並選擇進入 RTL 市場。在某些地區，法律也強制要求以當地語言提供表單。透過適應當地語言，您不僅可以向更廣泛的客群敞開大門，還可以確保遵守相關法律和法規。
 
 * **[使用 DocAssurance API (通訊 API 的一部分) 保護您的文件](/help/forms/aem-forms-cloud-service-communications-introduction.md#document-assurance-doc-assurance)**：DocAssurance API 可讓您透過在文件上簽名和加密來保護敏感資訊。透過加密，文件內容會被轉換為不可讀的格式，確保只有授權的使用者才能存取。這個強化的保護層不僅可以防止重要資料受到未經授權的查看，還可以讓您高枕無憂。簽名 API 可讓您的組織保護所分發和接收 Adobe PDF 文件的安全和隱私。這項服務使用數位簽名和認證來確保只有預期的收件人才能變更文件。
 

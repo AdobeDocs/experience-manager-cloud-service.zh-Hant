@@ -1,19 +1,19 @@
 ---
-title: 開始使用 AEM Forms Edge Delivery Services - 開發人員教學課程
+title: AEM FormsEdge Delivery Services快速入門 — 開發人員教學課程
 description: 本教學課程可協助您啟動並執行新的 Adob​​e Experience Manager (AEM) Forms 專案。您將在 10 到 20 分鐘內建立好自己的表單。
 feature: Edge Delivery Services
 exl-id: bb7e93ee-0575-44e1-9c5e-023284c19490
 role: Admin, Architect, Developer
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
 workflow-type: tm+mt
-source-wordcount: '1848'
-ht-degree: 100%
+source-wordcount: '1850'
+ht-degree: 98%
 
 ---
 
 # 快速入門 - 開發人員教學課程
 
-身處今日數位時代，任何組織都需要建立對使用者友善的表單。AEM Forms Edge Delivery Services (EDS) 可讓您使用 Google Docs 和 Microsoft Office 等熟悉的工具建立表單。
+身處今日數位時代，任何組織都需要建立對使用者友善的表單。AEM Forms (EDS)Edge Delivery Services可讓您使用熟悉的工具(如Google檔案和Microsoft Office)來建立表單。
 
 這些表單可直接提交資料至 Microsoft Excel 或 Google Sheets 檔案，讓您能夠使用由 Google Sheets、Microsoft Excel 和 Microsoft SharePoint 等強大 API 建構的活躍生態系統，以便輕鬆處理提交的資料或啟動現有的業務工作流程。
 

@@ -1,22 +1,22 @@
 ---
-title: 為 AEM Forms Edge Delivery Services Form 進行翻譯和本地化
-description: 為 AEM Forms Edge Delivery Services Form 進行翻譯和本地化
+title: 翻譯及本地化AEM Forms的Edge Delivery Services
+description: 翻譯及本地化AEM Forms的Edge Delivery Services
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: 8a0c826f-8acc-4a00-bd84-7b0df9a82457
 role: Admin, Architect, Developer
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
 workflow-type: tm+mt
-source-wordcount: '543'
-ht-degree: 100%
+source-wordcount: '546'
+ht-degree: 94%
 
 ---
 
 
-# 為 AEM Forms Edge Delivery Services Form 進行翻譯和本地化
+# 翻譯及本地化AEM Forms的Edge Delivery Services
 
-在 Edge Delivery Services 中，表單翻譯是將表單內容從一種語言轉換為另一種語言，且著重準確性、清晰度和一致性。翻譯或本地化表單可在不同地理位置贏得範圍更廣泛的對象，因此可增強使用者體驗並促進不同語言偏好之間更有效溝通。
+在 Edge Delivery Services 中，表單翻譯是將表單內容從一種語言轉換為另一種語言，且著重準確性、清晰度和一致性。翻譯或本地化表單可在不同地理位置贏得範圍更廣泛的客群，因此可增強使用者體驗並促進不同語言偏好之間更有效溝通。
 
 
 閱讀完本文章後，您將學會：
