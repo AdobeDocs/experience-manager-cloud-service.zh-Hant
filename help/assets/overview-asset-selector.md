@@ -3,7 +3,7 @@ title: 適用於  [!DNL Adobe Experience Manager]  as a  [!DNL Cloud Service] �
 description: 使用Asset Selector搜尋、尋找和擷取應用程式內的資產中繼資料和轉譯。
 role: Admin, User
 exl-id: 62b0b857-068f-45b7-9018-9c59fde01dc3
-source-git-commit: 575980320c1dbd32f799bf9c2fddf3d6773c838a
+source-git-commit: 0b8c345efa4c8f59b423644944ca2a6f8d54cbb4
 workflow-type: tm+mt
 source-wordcount: '1295'
 ht-degree: 34%
@@ -221,7 +221,7 @@ Asset Selector也可讓您切換資產選取的存放庫。 您可以從左側�
     </td>
     <td>
         <img src="assets/asset-selector-upload.gif" width="70px" height="70px" alt="Asset Selector上傳圖形"><br/>
-        <a href="asset-selector-upload.md">資產選擇器自訂</a>
+        <a href="asset-selector-upload.md">資產選擇器上傳</a>
         <p>
         <em>瞭解如何從您的本機或協力廠商檔案系統上傳檔案或資料夾至Asset Selector。</em>
         </p>
