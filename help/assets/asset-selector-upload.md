@@ -3,9 +3,9 @@ title: 適用於  [!DNL Adobe Experience Manager]  as a  [!DNL Cloud Service] �
 description: 使用「資產」選擇器來搜尋、尋找及擷取應用程式內的資產中繼資料和轉譯。
 role: Admin,User
 exl-id: d6ff601c-3111-421a-9a94-cc524ce7e432
-source-git-commit: f9f5b2a25933e059cceacf2ba69e23d528858d4b
+source-git-commit: 575980320c1dbd32f799bf9c2fddf3d6773c838a
 workflow-type: tm+mt
-source-wordcount: '505'
+source-wordcount: '517'
 ht-degree: 1%
 
 ---
@@ -54,3 +54,9 @@ ht-degree: 1%
 資產選擇器可讓您新增自訂的上傳表單。 有數個自訂功能可供使用。 例如，[hideUploadButton](/help/assets/asset-selector-properties.md)屬性可讓您隱藏應用程式中預設顯示的上傳按鈕。 您可以視需要自訂該檔案，以便在MFE應用程式外部呈現。 請參閱組態的[自訂上傳](/help/assets/asset-selector-customization.md#customized-upload)。
 
 ![自訂上傳](assets/customized-upload.png)
+
+>[!MORELIKETHIS]
+>
+>* [資產選擇器範例](/help/assets/asset-selector-examples.md)
+>* [整合資產選擇器與各種應用程式](/help/assets/integrate-asset-selector.md)
+>* [資產選擇器屬性](/help/assets/asset-selector-properties.md)

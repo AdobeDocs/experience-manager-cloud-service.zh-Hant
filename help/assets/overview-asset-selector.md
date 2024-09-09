@@ -3,10 +3,10 @@ title: 適用於  [!DNL Adobe Experience Manager]  as a  [!DNL Cloud Service] �
 description: 使用Asset Selector搜尋、尋找和擷取應用程式內的資產中繼資料和轉譯。
 role: Admin, User
 exl-id: 62b0b857-068f-45b7-9018-9c59fde01dc3
-source-git-commit: f9f5b2a25933e059cceacf2ba69e23d528858d4b
+source-git-commit: 575980320c1dbd32f799bf9c2fddf3d6773c838a
 workflow-type: tm+mt
-source-wordcount: '1267'
-ht-degree: 35%
+source-wordcount: '1295'
+ht-degree: 34%
 
 ---
 
@@ -219,7 +219,13 @@ Asset Selector也可讓您切換資產選取的存放庫。 您可以從左側�
         <em>根據您的使用狀態，設定和自訂各種資產選擇器元件。</em>
         </p>
     </td>
-    <td></td>
+    <td>
+        <img src="assets/asset-selector-upload.gif" width="70px" height="70px" alt="Asset Selector上傳圖形"><br/>
+        <a href="asset-selector-upload.md">資產選擇器自訂</a>
+        <p>
+        <em>瞭解如何從您的本機或協力廠商檔案系統上傳檔案或資料夾至Asset Selector。</em>
+        </p>
+    </td>
 </tr>
 </table>
 
@@ -228,4 +234,4 @@ Asset Selector也可讓您切換資產選取的存放庫。 您可以從左側�
 >* [資產選擇器自訂](/help/assets/asset-selector-customization.md)
 >* [整合資產選擇器與各種應用程式](/help/assets/integrate-asset-selector.md)
 >* [資產選擇器屬性](/help/assets/asset-selector-properties.md)
->* [整合資產選擇器Dynamic Media開啟API](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
+>* [整合Asset Selector與Dynamic Media以及OpenAPI功能](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)

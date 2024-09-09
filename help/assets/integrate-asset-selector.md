@@ -3,10 +3,10 @@ title: 適用於  [!DNL Adobe Experience Manager]  as a  [!DNL Cloud Service] �
 description: 將資產選擇器與各種Adobe、非Adobe和第三方應用程式整合。
 role: Admin, User
 exl-id: 1c0051a3-549c-4783-9fc1-594f424a70c3
-source-git-commit: b85363b0a284929a2308ebee24888937f7c32841
+source-git-commit: 575980320c1dbd32f799bf9c2fddf3d6773c838a
 workflow-type: tm+mt
-source-wordcount: '176'
-ht-degree: 47%
+source-wordcount: '178'
+ht-degree: 46%
 
 ---
 
@@ -38,4 +38,4 @@ ht-degree: 47%
 >
 >* [資產選擇器自訂](/help/assets/asset-selector-customization.md)
 >* [資產選擇器屬性](/help/assets/asset-selector-properties.md)
->* [整合資產選擇器Dynamic Media開啟API](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
+>* [整合Asset Selector與Dynamic Media以及OpenAPI功能](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)

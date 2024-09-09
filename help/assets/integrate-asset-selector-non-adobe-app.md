@@ -3,10 +3,10 @@ title: 適用於  [!DNL Adobe Experience Manager]  as a  [!DNL Cloud Service] �
 description: 將資產選擇器與各種Adobe、非Adobe和第三方應用程式整合。
 role: Admin, User
 exl-id: 55848de0-aff2-42a0-b959-c771235d9425
-source-git-commit: f9f5b2a25933e059cceacf2ba69e23d528858d4b
+source-git-commit: 575980320c1dbd32f799bf9c2fddf3d6773c838a
 workflow-type: tm+mt
-source-wordcount: '403'
-ht-degree: 6%
+source-wordcount: '424'
+ht-degree: 5%
 
 ---
 
@@ -141,3 +141,9 @@ Asset Selector可讓您使用各種非Adobe或協力廠商應用程式進行整�
 >
 >如果您已使用註冊登入工作流程整合資產選擇器，但仍無法存取傳遞存放庫，請確定已清理瀏覽器Cookie。 否則，您會在主控台中收到`invalid_credentials All session cookies are empty`錯誤。
 
+>[!MORELIKETHIS]
+>
+>* [整合資產選擇器與各種應用程式](/help/assets/integrate-asset-selector.md)
+>* [資產選擇器屬性](/help/assets/asset-selector-properties.md)
+>* [整合Asset Selector與Dynamic Media以及OpenAPI功能](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
+>* [資產選擇器自訂](/help/assets/asset-selector-customization.md)

@@ -3,10 +3,10 @@ title: 適用於  [!DNL Adobe Experience Manager]  as a  [!DNL Cloud Service] �
 description: 根據需求使用Asset Selector來自訂的範例。
 role: Admin, User
 exl-id: 7a393a96-f2a2-4a25-922c-577271cafc57
-source-git-commit: f9f5b2a25933e059cceacf2ba69e23d528858d4b
+source-git-commit: 575980320c1dbd32f799bf9c2fddf3d6773c838a
 workflow-type: tm+mt
-source-wordcount: '252'
-ht-degree: 50%
+source-wordcount: '257'
+ht-degree: 49%
 
 ---
 
@@ -53,5 +53,6 @@ Assets display panel shows the out of the box metadata that can be displayed in 
 >[!MORELIKETHIS]
 >
 >* [資產選擇器自訂](/help/assets/asset-selector-customization.md)
+>* [資產選擇器上傳](/help/assets/asset-selector-upload.md)
 >* [資產選擇器屬性](/help/assets/asset-selector-properties.md)
->* [整合資產選擇器Dynamic Media開啟API](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
+>* [整合Asset Selector與Dynamic Media以及OpenAPI功能](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
