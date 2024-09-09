@@ -5,9 +5,9 @@ exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: fcde1f323392362d826f9b4a775e468de9550716
+source-git-commit: a9bcbae1317d95e3710a19a79115f1437b418e41
 workflow-type: tm+mt
-source-wordcount: '737'
+source-wordcount: '745'
 ht-degree: 42%
 
 ---
@@ -27,12 +27,14 @@ Cloud Manager提供自助服務工具來安裝和管理SSL （安全通訊端層
 
 <!-- CQDOC-21758, #1 -->
 
-* **使用案例1：** Cloud Manager使用平台TLS （傳輸層安全性）服務來管理客戶擁有的SSL憑證以及來自協力廠商憑證授權單位（例如&#x200B;*讓我們加密*）的私密金鑰。
-* **使用案例2：** Cloud Manager可讓使用者設定來自Adobe的DV （網域驗證）憑證，以進行快速網域設定。 DV憑證是最基本的SSL憑證等級，通常用於測試目的或透過基本加密保護網站。 DV憑證同時適用於[生產及沙箱程式](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)。
+| | 使用案例 | 說明 |
+| --- | --- | --- |
+| 1 | **Adobe受管理憑證(DV)** | Cloud Manager可讓使用者設定來自Adobe的DV （網域驗證）憑證，以進行快速網域設定。 DV憑證是最基本的SSL憑證等級，通常用於測試目的或透過基本加密保護網站。 DV憑證同時適用於[生產及沙箱程式](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)。 |
+| 2 | **客戶管理的憑證(OV/EV)** | Cloud Manager使用平台TLS （傳輸層安全性）服務來管理客戶擁有的SSL憑證，以及來自協力廠商憑證授權單位（例如&#x200B;*Let&#39;s Encrypt*）的私密金鑰。 |
 
-  >
-  >
-  >不允許客戶上傳DV （網域驗證）憑證。
+>[!NOTE]
+>
+>不允許客戶上傳DV （網域驗證）憑證。
 
 
 ## 憑證簡介 {#certificates}

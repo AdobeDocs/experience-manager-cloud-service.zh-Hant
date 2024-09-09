@@ -4,9 +4,9 @@ description: 瞭解如何使用Edge Delivery Services傳遞Cloud Manager專案�
 exl-id: f33bd6f0-62fc-4ecc-b8d2-65d1f1c44d82
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 4e887b753eaf09e104c68484792f00dcb08ee304
+source-git-commit: bc6ea60abed904ef514a4b010a9848511c28128e
 workflow-type: tm+mt
-source-wordcount: '1510'
+source-wordcount: '1503'
 ht-degree: 5%
 
 ---
@@ -75,7 +75,7 @@ AEM as a Cloud Service中的Cloud Manager可讓您為專案啟用Edge Delivery�
 
 將Edge Delivery Services新增到生產計畫後，您的Edge Delivery Services授權將套用到該計畫。
 
-概觀頁面上顯示名稱為&#x200B;**Edge Delivery**&#x200B;的可點選新標籤。 按一下索引標籤會顯示一個表格，其中列出您已新增的每個Edge Delivery網站。 在左側導覽面板的&#x200B;**服務**&#x200B;群組下方，您會注意到名為&#x200B;**Edge Delivery Sites**&#x200B;的功能表選項。
+概觀頁面上顯示名為&#x200B;**Edge Delivery**&#x200B;的可點按索引標籤。 按一下索引標籤會顯示一個表格，其中列出您已新增的每個Edge Delivery網站。 在左側導覽面板的&#x200B;**服務**&#x200B;群組下方，請注意名為&#x200B;**Edge Delivery Sites**&#x200B;的功能表選項。
 
 ![總覽頁面在左側導覽面板中顯示Edge Delivery Sites，並在Edge Delivery索引標籤右側顯示Publish傳送索引標籤](/help/implementing/cloud-manager/assets/cm-overview-eds.png)
 
@@ -127,7 +127,7 @@ AEM as a Cloud Service中的Cloud Manager可讓您為專案啟用Edge Delivery�
 | 5 | 新增 SSL 憑證 | 請參閱[新增SSL憑證](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)。 |
 | 6 | 設定Edge Delivery網站的CDN | 請參閱[新增CDN組態](#add-cdn)。 |
 
->[!VIDEO](https://video.tv.adobe.com/v/3428020?learn=on) (2 分鐘、13 秒)
+>[!VIDEO](https://video.tv.adobe.com/v/3428020?learn=on)
 
 ## 新增CDN設定至您的Edge Delivery網站 {#add-cdn}
 
