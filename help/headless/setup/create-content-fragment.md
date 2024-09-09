@@ -5,9 +5,9 @@ exl-id: a227ae2c-f710-4968-8a00-bfe48aa66145
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Developer
 source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '341'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -25,23 +25,23 @@ ht-degree: 85%
 
 ## 如何建立內容片段 {#how-to-create-a-content-fragment}
 
-內容作者將建立任意數量的內容片段來表示他們建立的內容。這是他們在 AEM 中的主要任務。出於本快速入門指南的目的，我們只需要建立一個。
+內容作者將建立任意數量的內容片段來表示他們建立的內容。這是他們在 AEM 中的主要任務。由於這是快速入門手冊，因此我們只需要建立一個。
 
-1. 登入AEM as a Cloud Service，從主功能表選取&#x200B;**導覽** > **內容片段**。
+1. 登入 AEM as a Cloud Service，然後從主選單中選取&#x200B;**導覽** > **內容片段**。
 
-1. 選取您先前建立的[資料夾。](create-assets-folder.md)
+1. 選取[您之前建立的資料夾。](create-assets-folder.md)
 1. 選取「**建立**」。
 1. 建立內容片段以顯示為對話框。
-選取您要用來建立內容片段的位置和模式。
+選取您想用於建立內容片段的位置和模型。
 
    * 可用模型取決於您為內容片段建立所在資產資料夾所定義的&#x200B;[**雲端設定**](create-assets-folder.md)。
    * 如果您的模型不可用，請檢查資產資料夾的設定。
 
-   新增「標題」、「名稱」，並視需要新增「說明」。
+   新增標題、名稱，如果需要，可以新增描述。
 
    ![「建立新內容片段」對話框](/help/sites-cloud/administering/content-fragments/assets/cfc-console-create.png)
 
-1. 選取&#x200B;**建立**&#x200B;或&#x200B;**建立並開啟**。
+1. 選取「**建立**」或「**建立並開啟**」。
 
 內容片段可以參考其他內容片段，必要時允許巢狀內容結構。
 

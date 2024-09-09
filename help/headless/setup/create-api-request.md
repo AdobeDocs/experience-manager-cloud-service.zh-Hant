@@ -5,9 +5,9 @@ exl-id: 2b72f222-2ba5-4a21-86e4-40c763679c32
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Developer
 source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '677'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -37,7 +37,7 @@ ht-degree: 96%
 1. 選擇 **建立**。
 1. **建立新的 GraphQL 端點**&#x200B;對話框隨即開啟。您可以在這裡指定：
    * **名稱**：端點名稱，您可以輸入任何文字。
-   * **使用由**&#x200B;提供的GraphQL結構描述：使用下拉式清單來選取必要的設定。
+   * **使用以下方式提供的 GraphQL 結構描述**：使用下拉選單選取所需的設定。
 1. 使用&#x200B;**建立**&#x200B;確認。
 1. 主控台會根據之前建立的設定顯示&#x200B;**路徑**。此路徑用於執行 GraphQL 查詢。
 
@@ -45,7 +45,7 @@ ht-degree: 96%
    /content/cq:graphql/<configuration-name>/endpoint
    ```
 
-如需有關啟用GraphQL端點的詳細資訊，請參閱[在AEM中管理GraphQL端點](/help/headless/graphql-api/graphql-endpoint.md)。
+如需更多啟用 GraphQL 端點的詳細資料，請參閱「[在 AEM 中管理 GraphQL 端點](/help/headless/graphql-api/graphql-endpoint.md)」。
 
 ## 使用 GraphQL 和 GraphiQL 查詢內容
 
@@ -96,7 +96,7 @@ GraphiQL 是包含在您 AEM 環境中的 IDE，在[設定您的端點](#enable-
 
 GraphQL 支援結構化查詢，這些查詢不僅可以針對特定資料集或個別資料物件，還可以傳遞物件的特定元素、巢狀結果、支援查詢變數等等。
 
-GraphQL 可以避免反覆 API 要求和過度傳遞，而是允許大量傳遞呈現作業所需的內容，作為對單一 API 查詢的回應。產生的 JSON 可用於將資料傳遞到其他網站或應用程式。
+GraphQL 可以避免反覆 API 要求和過度傳遞，而是允許大量傳遞轉譯作業所需的內容，作為對單一 API 查詢的回應。產生的 JSON 可用於將資料傳遞到其他網站或應用程式。
 
 ## 後續步驟 {#next-steps}
 

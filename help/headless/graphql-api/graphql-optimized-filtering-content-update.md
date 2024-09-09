@@ -5,9 +5,9 @@ exl-id: 211f079e-d129-4905-a56a-4fddc11551cc
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Developer
 source-git-commit: 8d14936ad21dc5879c72383defc3db22ce9a24ef
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '867'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -41,10 +41,10 @@ ht-degree: 87%
    | | 名稱 | 值 | 預設值 | 服務 | 已應用 | 類型 | 附註 |
    |---|---|---|---|---|---|---|---|
    | 1 | `CF_MIGRATION_ENABLED` | `1` | `0` | 全部 | | 變數 | 啟用(!=0) 或停用 (0) 觸發內容片段遷移作業。 |
-   | 2 | `CF_MIGRATION_ENFORCE` | `1` | `0` | 全部 | | 變數 | 執行 (!=0)重新移轉內容片段。 將此標幟設為0會執行CF的遞增移轉。 這表示，如果作業由於任何原因終止，則下一次執行作業會從作業被終止的那個點開始遷移。建議強制執行第一次遷移 (值=1)。 |
-   | 3 | `CF_MIGRATION_BATCH` | `50` | `50` | 全部 | | 變數 | 用於儲存移轉後內容片段數的批次大小。 這與一次儲存至存放庫的CF數量相關，並可用於最佳化寫入存放庫的次數。 |
-   | 4 | `CF_MIGRATION_LIMIT` | `1000` | `1000` | 全部 | | 變數 | 一次要處理的內容片段數量上限。 另請參閱`CF_MIGRATION_INTERVAL`的附註。 |
-   | 5 | `CF_MIGRATION_INTERVAL` | `60` | `600` | 全部 | | 變數 | 處理剩餘內容片段直到下一次限制的時間間隔（秒）。 此間隔也會被視為啟動作業前的等待時間，以及處理每個後續CF_MIGRATION_LIMIT數目CF之間的延遲。 (*) |
+   | 2 | `CF_MIGRATION_ENFORCE` | `1` | `0` | 全部 | | 變數 | 執行 (!=0) 內容片段的重新遷移。將此標幟設定為 0 可執行 CF 的增量遷移。這表示，如果作業由於任何原因終止，則下一次執行作業會從作業被終止的那個點開始遷移。建議強制執行第一次遷移 (值=1)。 |
+   | 3 | `CF_MIGRATION_BATCH` | `50` | `50` | 全部 | | 變數 | 遷移後用來儲存內容片段數量的批次大小。這與單批中多少個 CF 儲存到存放庫中有關，並且可以用來最佳化寫入存放庫的數量。 |
+   | 4 | `CF_MIGRATION_LIMIT` | `1000` | `1000` | 全部 | | 變數 | 一次處理的最大數量的內容片段。另請參閱 `CF_MIGRATION_INTERVAL` 的說明。 |
+   | 5 | `CF_MIGRATION_INTERVAL` | `60` | `600` | 全部 | | 變數 | 處理剩餘內容片段直到下一個限制的時間間隔 (秒)。這個間隔時間也視為開始作業前的等待時間，以及處理每個後續 CF_MIGRATION_LIMIT 數量的內容片段之間的延遲時間。(*) |
 
    >[!NOTE]
    >

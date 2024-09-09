@@ -5,9 +5,9 @@ feature: Headless, Content Fragments,GraphQL API
 exl-id: dfeae661-06a1-4001-af24-b52ae12d625f
 role: Admin, Developer
 source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '231'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -41,4 +41,4 @@ Authorization: Bearer <access_token>
 
 此使用者帳戶表示您必須檢查該帳戶是否具有執行 GraphQL 查詢所需的權限。
 
-您可以在本機執行個體上使用 GraphiQL 來檢查這些權限。如需更多詳細資料，請參閱[Headless內容的許可權考量事項](/help/headless/security/permissions.md)。
+您可以在本機執行個體上使用 GraphiQL 來檢查這些權限。如需更多詳細資料，請參閱「[無頭內容的權限考量](/help/headless/security/permissions.md)」。

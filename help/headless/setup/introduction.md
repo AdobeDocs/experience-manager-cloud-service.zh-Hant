@@ -5,7 +5,7 @@ exl-id: 26c05122-5930-4b4e-91dd-287b7cc865ee
 feature: Headless
 role: Admin, Developer
 source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '278'
 ht-degree: 100%
 
@@ -32,7 +32,7 @@ ht-degree: 100%
 >* [Headless 內容作者歷程](/help/journey-headless/author/overview.md)
 >* [Headless 翻譯歷程](/help/journey-headless/translation/overview.md)。
 
-## 對象 {#audience}
+## 客群 {#audience}
 
 所描述的任務對於 AEM Headless 功能的基本完整示範是必要的。任何人如果對測試用 AEM 執行個體具有管理員存取權，都可以按照這些指南來了解 AEM Headless 傳遞，而具有開發人員經驗的人更為理想。
 

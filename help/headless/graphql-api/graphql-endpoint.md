@@ -5,9 +5,9 @@ feature: Headless, Content Fragments,GraphQL API
 exl-id: f7164ae3-4074-4db7-8c43-a79cc2ef00b1
 role: Admin, Developer
 source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '512'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -63,9 +63,9 @@ AEM 全域端點的 GraphQL 存放庫路徑：
 
 1. 導覽至&#x200B;**工具**、**一般**，然後選取 **GraphQL**。
 1. 選擇 **建立**。
-1. **建立新的GraphQL端點**&#x200B;對話方塊開啟。 您可以在這裡指定：
+1. **建立新的 GraphQL 端點**&#x200B;對話框隨即開啟。您可以在這裡指定：
    * **名稱**：端點名稱，您可以輸入任何文字。
-   * **使用由**&#x200B;提供的GraphQL結構描述：使用下拉式清單來選取必要的網站/專案。
+   * **使用以下方式提供的 GraphQL 結構描述**：使用下拉選單選取所需的網站/專案。
 
    >[!NOTE]
    >
@@ -74,7 +74,7 @@ AEM 全域端點的 GraphQL 存放庫路徑：
    >* *如果未妥善管理，GraphQL 端點可能會導致資料安全性和效能問題。在建立端點後，請務必設定適當的權限。*
 
 1. 使用&#x200B;**建立**&#x200B;確認。
-1. **後續步驟**&#x200B;對話方塊將提供安全性主控台的直接連結，讓您能夠確保建立的端點具有適當的許可權。
+1. **後續步驟** 對話框會提供安全性主控台的直接連結，因此您可確保建立的端點具有合適的權限。
 
    >[!CAUTION]
    >
@@ -92,4 +92,4 @@ AEM 全域端點的 GraphQL 存放庫路徑：
 >
 >這可能為發佈執行個體帶來安全性問題，因為 GraphQL 查詢會給伺服器帶來沉重的負載。
 >
->在端點上設定適合您使用案例](/help/headless/security/permissions.md)的[ACL。
+>在端點上設定[適合您使用案例的 ACL](/help/headless/security/permissions.md)。

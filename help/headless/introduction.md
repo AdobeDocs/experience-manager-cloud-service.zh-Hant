@@ -6,7 +6,7 @@ exl-id: 24300499-ae9c-49d0-aa25-f51e14d9cf79
 feature: Headless
 role: Admin, Developer
 source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '694'
 ht-degree: 100%
 
@@ -52,9 +52,9 @@ AEM as a Cloud Service 是一種適用於無周邊實作模型的靈活工具，
 
 ## 您的開始步驟 {#first-steps}
 
-有多種資源可協助開始使用 AEM 的無周邊功能。每個指南都針對不同使用案例和對象量身打造。
+有多種資源可協助開始使用 AEM 的無周邊功能。每個指南都針對不同使用案例和客群量身打造。
 
-| 資源 | 說明 | 類型 | 對象 | 預估時間 |
+| 資源 | 說明 | 類型 | 客群 | 預估時間 |
 |---|---|---|---|---|
 | [Headless 開發人員歷程](/help/journey-headless/developer/overview.md) | **對於剛接觸 AEM 和無周邊技術的開發人員**，從這裡開始全面介紹 AEM 及其無周邊功能，從無周邊理論到實作您的第一個無周邊體驗。 | 指南 | **剛接觸 AEM 和無周邊技術** 的開發人員 | 1 小時 |
 | [Headless 設定](/help/headless/setup/introduction.md) | 對於需要扼要介紹關鍵 AEM 無周邊功能的&#x200B;**有經驗 AEM 使用者**，請查看此快速入門概述。 | 參考設定 | **具有 AEM 經驗**&#x200B;的開發人員、管理員 | 20 分鐘 |

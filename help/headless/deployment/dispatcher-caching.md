@@ -5,9 +5,9 @@ feature: Headless, Dispatcher, GraphQL API
 exl-id: 30a97e56-6699-41c4-a4eb-fc6236667f8f
 role: Admin, Developer
 source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '339'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 89%
 
 >[!NOTE]
 >
->如需 Dispatcher 的詳細文件，請參閱 [Dispatcher 指南](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)。
+>如需 Dispatcher 的詳細文件，請參閱 [Dispatcher 指南](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=zh-Hant)。
 
 ## 啟用持續性查詢的快取 {#enable-caching-persisted-queries}
 
@@ -41,7 +41,7 @@ ht-degree: 89%
 
 >[!NOTE]
 >
->若要在快取的持續性查詢上取得個別`ETag`標頭計算（針對唯一的&#x200B;*每個*&#x200B;回應），必須在Dispatcher設定虛擬主機設定（如果尚未存在）中使用`FileETag Digest`設定：
+>若要在快取的持續性查詢上實現單獨的 `ETag` 標頭計算 (對於&#x200B;*每個*&#x200B;唯一的回應)，必須在 Dispatcher 設定虛擬主機設定中使用 `FileETag Digest` 設定 (如果它尚不存在)：
 >
 >```xml
 ><Directory />    
@@ -52,7 +52,7 @@ ht-degree: 89%
 
 >[!NOTE]
 >
->為了符合 [Dispatcher 對可快取檔案的要求](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/troubleshooting/dispatcher-faq.html#how-does-the-dispatcher-return-documents%3F)，Dispatcher 會將後綴 `.json` 新增到所有持續性查詢 URL，以便快取結果。
+>為了符合 [Dispatcher 對可快取檔案的要求](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/troubleshooting/dispatcher-faq.html?lang=zh-Hant#how-does-the-dispatcher-return-documents%3F)，Dispatcher 會將後綴 `.json` 新增到所有持續性查詢 URL，以便快取結果。
 >
 >啟用持續性查詢快取後，就會重寫規則來新增此後綴。
 

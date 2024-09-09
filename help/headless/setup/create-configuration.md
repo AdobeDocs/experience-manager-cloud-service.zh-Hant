@@ -5,9 +5,9 @@ exl-id: 48801599-f279-4e55-8033-9c418d2af5bb
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Developer
 source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '325'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 92%
 
 系統管理員一次只需建立一個設定，或者在需要新工作區來組織內容模型時建立，這個情況很少發生。出於本快速入門指南的目的，我們只需要建立一個設定。
 
-1. 登入AEM as a Cloud Service，從主功能表選取&#x200B;**工具>一般>設定瀏覽器**。
+1. 登入 AEM as a Cloud Service，然後從主選單中選取「**工具 > 一般 > 設定瀏覽器**」。
 1. 提供設定的&#x200B;**標題**&#x200B;和&#x200B;**名稱**。
    * **標題** 應該是描述性的。
    * **名稱**&#x200B;會成為存放庫中的節點名稱。
@@ -39,9 +39,9 @@ ht-degree: 92%
 
    ![建立設定](../assets/create-configuration.png)
 
-1. 選取&#x200B;**建立**
+1. 選取「**建立**」
 
-您可以視需要建立多個組態。 設定也可以是巢狀。
+如果需要，您可以建立多個設定。設定也可以是巢狀。
 
 >[!NOTE]
 >

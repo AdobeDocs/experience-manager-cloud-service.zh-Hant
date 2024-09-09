@@ -5,9 +5,9 @@ exl-id: 9a156a17-8403-40fc-9bd0-dd82fb7b2235
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Developer
 source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '375'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -27,8 +27,8 @@ ht-degree: 83%
 
 管理員只需要偶爾建立資料夾來組織建立的內容。出於本快速入門指南的目的，我們只需要建立一個資料夾。
 
-1. 登入AEM as a Cloud Service，從主功能表選取&#x200B;**導覽> Assets >檔案**。
-1. 選取&#x200B;**建立>資料夾**。
+1. 登入 AEM as a Cloud Service，然後從主選單中選取&#x200B;**導覽 > 資產 -> 檔案**。
+1. 選取「**建立 > 資料夾**」。
 1. 為您的資料夾提供 **標題**&#x200B;和&#x200B;**名稱**。
    * **標題** 應該是描述性的。
    * **名稱**&#x200B;會成為存放庫中的節點名稱。
@@ -36,16 +36,16 @@ ht-degree: 83%
       * 如有需要，可加以調整。
 
    ![建立資料夾](../assets/assets-folder-create.png)
-1. 將滑鼠懸停並點選核取記號，以選取您建立的資料夾。 然後從工具列中選取「**屬性**」(或使用 `p`[ 鍵盤快速鍵](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md))。
+1. 透過將游標停留並點選核取記號來選取剛建立的資料夾。然後從工具列中選取「**屬性**」(或使用 `p`[ 鍵盤快速鍵](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md))。
 1. 在&#x200B;**屬性**&#x200B;視窗中，選擇&#x200B;**雲端服務**&#x200B;索引標籤。
 1. 對於&#x200B;**雲端設定**，選擇您之前建立的[設定。](create-configuration.md)
    ![設定資產資料夾](../assets/assets-folder-configure.png)
 1. 選取「**儲存並關閉**」。
-1. 在確認視窗中選取&#x200B;**確定**。
+1. 在確認視窗中選取「**確定**」。
 
    ![確認視窗](../assets/assets-folder-confirmation.png)
 
-您可以在建立的資料夾中建立其他子資料夾。 子資料夾將繼承父資料夾的&#x200B;**雲端設定**。不過，如果您要使用其他組態的模型，則可以覆寫此選項。
+您可以在剛建立的資料夾中建立其他子資料夾。子資料夾將繼承父資料夾的&#x200B;**雲端設定**。但是，如果您想使用來自另一個設定的模型，可以覆寫此設定。
 
 如果您使用的是當地語系化網站結構，則可以在新資料夾下[建立語言根](/help/assets/translate-assets.md)。
 

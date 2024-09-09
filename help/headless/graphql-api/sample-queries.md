@@ -5,9 +5,9 @@ feature: Headless, Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
 role: Admin, Developer
 source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1826'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -53,7 +53,7 @@ ht-degree: 95%
 >
 >範例查詢是根據[與 GraphQL 搭配使用的範例內容片段結構](#content-fragment-structure-graphql)
 
-### 範例查詢 - 所有可用的綱要和資料類型 {#sample-all-schemes-datatypes}
+### 範例查詢 - 所有可用的結構描述和資料類型 {#sample-all-schemes-datatypes}
 
 傳回所有可用結構描述的所有 `types`。
 
@@ -363,14 +363,14 @@ query {
 }
 ```
 
-### 範例查詢 — 所有標籤為城市分隔符號的城市名稱 {#sample-names-all-cities-tagged-city-breaks}
+### 範例查詢 - 所有標記為 City Breaks 的城市名稱 {#sample-names-all-cities-tagged-city-breaks}
 
 如果您：
 
 * 建立各種標記，名稱為 `Tourism`：`Business`、`City Break`、`Holiday`
 * 並將這些標記指派給各種 `City` 執行個體的主版變化
 
-接著您可以使用查詢傳回在 `city` 綱要中標記為「City Breaks」之所有項目的 `name` 和 `tags` 的詳細資料。
+接著您可以使用查詢傳回在 `city` 結構描述中標記為「City Breaks」之所有項目的 `name` 和 `tags` 的詳細資料。
 
 **範例查詢**
 
@@ -1350,7 +1350,7 @@ query {
 
 >[!NOTE]
 >
->`fragments` 欄位的資料類型為 `fragment-reference`，且已選取 `Article` 模型。查詢以`[Article]`的陣列傳送`fragments`。
+>`fragments` 欄位的資料類型為 `fragment-reference`，且已選取 `Article` 模型。查詢將 `fragments` 以 `[Article]` 陣列形式傳遞。
 
 ```graphql
 {
@@ -1796,29 +1796,29 @@ query {
 } 
 ```
 
-## DAM和Dynamic Media Assets傳送的範例查詢 {#sample-queries-delivery-DAM-DM}
+## DAM 和 Dynamic Media 資產傳遞的範例查詢 {#sample-queries-delivery-DAM-DM}
 
-針對Web最佳化的影像傳送（DAM資產）：
+對於 Web 最佳化影像傳遞 (DAM 資產)：
 
-* [使用完整引數進行Web最佳化影像傳送的範例查詢](/help/headless/graphql-api/content-fragments.md#web-optimized-image-delivery-full-parameters)
+* [具有完整參數的 Web 最佳化影像傳遞的範例查詢](/help/headless/graphql-api/content-fragments.md#web-optimized-image-delivery-full-parameters)
 
-* [使用單一指定引數進行Web最佳化影像傳送的範例查詢](/help/headless/graphql-api/content-fragments.md#web-optimized-image-delivery-single-query-variable)
+* [具有單一特定參數進行 Web 最佳化影像傳遞的範例查詢](/help/headless/graphql-api/content-fragments.md#web-optimized-image-delivery-single-query-variable)
 
-用於將URL傳送至Dynamic Media資產
+對於 Dynamic Media 資產的 URL 傳遞
 
-* 請參閱[依URL傳送Dynamic Media資產的範例查詢 — 影像參考](/help/headless/graphql-api/content-fragments.md#sample-query-dynamic-media-asset-delivery-by-url-imageref)
+* 請參閱「[Dynamic Media 資產透過 URL 進行傳遞的範例查詢 - 影像參考](/help/headless/graphql-api/content-fragments.md#sample-query-dynamic-media-asset-delivery-by-url-imageref)」
 
-* 檢視依URL的Dynamic Media資產傳遞[範例查詢 — 多個參考](/help/headless/graphql-api/content-fragments.md#sample-query-dynamic-media-asset-delivery-by-url-multiple-refs)
+* 請參閱「[透過 URL 進行 Dynamic Media 資產傳遞的範例查詢 - 多個參考](/help/headless/graphql-api/content-fragments.md#sample-query-dynamic-media-asset-delivery-by-url-multiple-refs)」
 
 ## 範例內容片段結構 (與 GraphQL 搭配使用) {#content-fragment-structure-graphql}
 
 這些範例查詢是根據以下結構，該結構使用：
 
-* 一個或多個[範例內容片段模型](#sample-content-fragment-models-schemas) - 構成 GraphQL 綱要的基礎
+* 一個或多個[範例內容片段模型](#sample-content-fragment-models-schemas) - 構成 GraphQL 結構描述的基礎
 
 * 根據上述模型的[範例內容片段](#sample-content-fragments)
 
-### 範例內容片段結構 (綱要) {#sample-content-fragment-models-schemas}
+### 範例內容片段結構 (結構描述) {#sample-content-fragment-models-schemas}
 
 對於範例查詢，您使用以下內容模型及其相互關係 (參考 ->)：
 

@@ -5,9 +5,9 @@ feature: Headless, Dispatcher, GraphQL API
 exl-id: 78a20021-910f-4cf0-87bf-6e2223994f76
 role: Admin, Developer
 source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '222'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 90%
 >
 >如需 Dispatcher 的詳細文件，請參閱 [Dispatcher 指南](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=zh-Hant)。
 
-作為 AEM 專案的一部分，Dispatcher 模組包含在內，模組中有 Dispatcher 設定。從 [AEM 專案原型](https://github.com/adobe/aem-project-archetype)新產生的專案會自動包含可啟用 GraphQL 端點的[篩選器](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?#defining-a-filter)。
+作為 AEM 專案的一部分，Dispatcher 模組包含在內，模組中有 Dispatcher 設定。從 [AEM 專案原型](https://github.com/adobe/aem-project-archetype)新產生的專案會自動包含可啟用 GraphQL 端點的[篩選器](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=zh-Hant?#defining-a-filter)。
 
 ## GraphQL 端點
 
@@ -40,4 +40,4 @@ ht-degree: 90%
 /0061 { /type "allow" /method '(GET|POST|OPTIONS)' /url "/graphql/execute.json*" }
 ```
 
-可以使用 `GET` 要求持續性查詢，在 Dispatcher 和 CDN 層級快取回應。有關快取和快取失效的更多詳細資訊，請參閱[AEM as a Cloud Service中的快取簡介](/help/implementing/dispatcher/caching.md)。
+可以使用 `GET` 要求持續性查詢，在 Dispatcher 和 CDN 層級快取回應。如需更多有關快取和快取無效的詳細資料，請參閱「[AEM as a Cloud Service 中的快取介紹](/help/implementing/dispatcher/caching.md)」。

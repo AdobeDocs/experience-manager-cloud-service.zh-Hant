@@ -5,9 +5,9 @@ feature: Headless, Content Fragments,GraphQL API
 exl-id: be2ebd1b-e492-4d77-b6ef-ffdea9a9c775
 role: Admin, Developer
 source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1136'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 94%
 * 選擇適合您要用於查詢之 Sites 設定的&#x200B;**端點**
 * 直接輸入新查詢
 * 建立和存取&#x200B;**[持續性查詢](/help/headless/graphql-api/persisted-queries.md)**
-* 執行查詢以立即檢視結果
+* 執行查詢以立即查看結果
 * 管理&#x200B;**查詢變數**
 * 儲存和管理&#x200B;**持續性查詢**
 * 發佈或取消發佈，**持續性查詢**，至您的&#x200B;**發佈**&#x200B;或&#x200B;**預覽**&#x200B;服務；例如，至/從 `dev-publish`
@@ -83,7 +83,7 @@ ht-degree: 94%
 
 在任何一種情況下，編輯器面板顯示的查詢，都是在您執行以下操作時會執行的查詢：
 
-* 在&#x200B;**執行查詢**&#x200B;圖示上選取
+* 選取「**執行查詢**」圖示
 * 使用鍵盤組合 `Control-Enter`
 
 ## 查詢變數 {#query-variables}
@@ -100,13 +100,13 @@ GraphiQL IDE 也讓您管理[查詢變數](/help/headless/graphql-api/content-fr
 
 >[!NOTE]
 >
->請參閱[快取您的持續查詢](/help/headless/graphql-api/persisted-queries.md#caching-persisted-queries)。
+>請參閱「[快取持續性查詢](/help/headless/graphql-api/persisted-queries.md#caching-persisted-queries)」。
 
 >[!NOTE]
 >
 >Dispatcher 上的自訂重寫規則可能會覆蓋 AEM 發佈的預設值。
 >
->若您是根據Location Match模式從Dispatcher傳送TTL型快取控制標題，則如有必要，您可能會想要從相符專案排除`/graphql/execute.json/*`。
+>如果您根據位置相符模式從 Dispatcher 發送以 TTL 為主的快取控制標題，那麼，如有必要，您可能希望從相符項目中排除 `/graphql/execute.json/*`。
 
 使用 GraphQL，您可以設定 HTTP 快取標頭來控制您個人持續性查詢的這些參數。
 
@@ -114,7 +114,7 @@ GraphiQL IDE 也讓您管理[查詢變數](/help/headless/graphql-api/content-fr
 
    ![持續性查詢 HTTP 快取標頭](assets/cfm-graphqlapi-headers-01.png "持續性查詢 HTTP 快取標頭")
 
-1. 選取此選項會開啟&#x200B;**快取組態**&#x200B;對話方塊：
+1. 選取此選項會開啟&#x200B;**快取設定**&#x200B;對話框：
 
    ![持續性查詢 HTTP 快取標頭設定](assets/cfm-graphqlapi-headers-02.png "持續性查詢 HTTP 快取標頭設定")
 

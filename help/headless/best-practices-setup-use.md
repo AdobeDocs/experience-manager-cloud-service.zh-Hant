@@ -1,34 +1,34 @@
 ---
-title: 搭配內容片段設定及使用AEM GraphQL的最佳做法
-description: 瞭解設定及搭配內容片段使用AEM GraphQL的建議最佳實務。
+title: 設定和使用 AEM GraphQL 與內容片段的最佳做法
+description: 了解有關設定和使用 AEM GraphQL 與內容片段的建議最佳做法。
 exl-id: 4d6a5aaa-c8be-4858-ad07-085dc4fb77e7
 feature: Headless
 role: Admin, Developer
 source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '702'
-ht-degree: 29%
+ht-degree: 100%
 
 ---
 
-# 搭配內容片段設定及使用AEM GraphQL的最佳做法{#best-practices-setup-use-aem-graphql-content-fragments}
+# 設定和使用 AEM GraphQL 與內容片段的最佳做法{#best-practices-setup-use-aem-graphql-content-fragments}
 
-這些指引總結了搭配GraphQL和內容片段設定、設定和使用AEM的建議最佳作法。
+這些指南總結了設定、設定 AEM，以及將 AEM 與 GraphQL 和內容片段搭配使用的建議最佳做法。
 
 ## 快速入門 {#getting-started}
 
-協助您快速上手：
+為了幫助您快速上手：
 
-* [什麼是Headless？](/help/headless/what-is-headless.md)
+* [什麼是 Headless？](/help/headless/what-is-headless.md)
 * AEM [架構](/help/headless/deployment/architecture.md)中各種環境的概觀
 
 ## 設定 {#setup}
 
-若要安全地設定AEM GraphQL以搭配內容片段和應用程式使用，您需要設定各種元件。
+為了安全地設定 AEM GraphQL 以用於內容片段和您的應用程式，您需要設定各種元件。
 
-### GraphQL端點建立（包括安全性） {#graphql-endpoint-creation}
+### GraphQL 端點建立 (包括安全性) {#graphql-endpoint-creation}
 
-端點是用於存取 AEM GraphQL 的路徑。需要建立和發佈這些端點，才能安全地存取它們。
+端點是用於存取 AEM GraphQL 的路徑。需要建立和發佈這些端點，以便安全地存取它們。
 
 #### 詳細資料 {#details-graphql-endpoint-creation}
 
@@ -36,22 +36,22 @@ ht-degree: 29%
 
 #### 環境 {#environments-graphql-endpoint-creation}
 
-需要在以下位置設定端點：
+端點需要設定為：
 
 * 作者
 * 預覽
 * 發佈
 
-針對：
+用於：
 
 * 開發
 * 測試
 * 生產
 
-### AEM Dispatcher快取 {#dispatcher-caching}
+### AEM Dispatcher 快取 {#dispatcher-caching}
 
 >[!NOTE]
->如果已啟用Dispatcher中的快取，則不需要[CORS設定](#cors-setup)，因此可以忽略。
+>如果啟用了 Dispatcher 的快取，就不需要 [CORS 設定](#cors-setup)，因此可以忽略該部分。
 
 根據預設，不啟用 Dispatcher 的持續性查詢快取。因為使用具有多個來源的 CORS (跨來源資源共用) 的客戶必須檢閱，且可能更新其 Dispatcher 設定，因此無法預設啟用。
 
@@ -61,16 +61,16 @@ ht-degree: 29%
 
 #### 環境 {#environments-dispatcher-caching}
 
-Dispatcher通常設定用於：
+Dispatcher 通常設定為：
 
-* Publish：生產
+* 發佈：生產
 
-### CORS設定 {#cors-setup}
+### CORS 設定 {#cors-setup}
 
 >[!NOTE]
->如果[AEM Dispatcher](#dispatcher-caching)中的快取已啟用，則不需要CORS設定，因此可忽略此區段。
+>如果啟用了 [AEM Dispatcher](#dispatcher-caching) 的快取，就不需要 CORS 設定，因此可以忽略該部分。
 
-若要存取GraphQL端點，必須設定CORS原則，並新增至透過Cloud Manager部署至AEM的AEM專案。 這可透過為所需端點新增適當的OSGi CORS設定檔案來完成。
+若要存取 GraphQL 端點，必須設定 CORS 原則並新增至透過 Cloud Manager 部署到 AEM 的 AEM 專案。做法是為所需端點新增適當的 OSGi CORS 設定。
 
 #### 詳細資料 {#details-cors-setup}
 
@@ -78,13 +78,13 @@ Dispatcher通常設定用於：
 
 #### 環境 {#environments-cors-setup}
 
-CORS通常設定為：
+CORS 通常設定為：
 
-* Publish：生產
+* 發佈：生產
 
 ### 驗證 {#authentication}
 
-用於內容片段傳送的Adobe Experience Manager as a Cloud Service (AEM) GraphQL API的主要使用案例是接受來自協力廠商應用程式或服務的遠端查詢。 這些遠端查詢可能需要經驗證的 API 存取權，以確保 Headless 內容傳遞的安全。
+用於內容片段傳遞的 Adobe Experience Manager as a Cloud Service (AEM) GraphQL API 的主要使用案例是接受協力廠商應用程式或服務的遠端查詢。這些遠端查詢可能需要經驗證的 API 存取權，以確保 Headless 內容傳遞的安全。
 
 #### 詳細資料 {#details-authentication}
 
@@ -97,7 +97,7 @@ CORS通常設定為：
 * 預覽
 * 發佈
 
-針對：
+用於：
 
 * 開發
 * 測試
@@ -113,21 +113,21 @@ CORS通常設定為：
 
 #### 環境 {#environments-permissions}
 
-許可權通常設定為：
+權限通常設定為：
 
 * 作者
 * 預覽
 * 發佈
 
-針對：
+用於：
 
 * 開發
 * 測試
 * 生產
 
-### 使用內容傳遞網路(CDN) {#cdn}
+### 使用內容傳遞網路 (CDN) {#cdn}
 
-使用CDN時，如果目標為`GET`請求，則可快取GraphQL查詢及其JSON回應。 相反地，未快取的請求可能非常（資源）昂貴且處理緩慢，可能對來源的資源造成進一步的負面影響。
+使用 CDN 時，如果作為目標 `GET` 要求，則可以快取 GraphQL 查詢及其 JSON 回應。相反地，未快取的要求可能非常昂貴 (資源) 且處理速度緩慢，並且可能對來源資源產生進一步的有害影響。
 
 #### 詳細資料 {#details-cdn}
 
@@ -135,40 +135,40 @@ CORS通常設定為：
 
 #### 環境 {#environments-cdn}
 
-CDN通常設定為：
+CDN 通常設定為：
 
-* Publish：生產
+* 發佈：生產
 
 ### 設定和建立內容片段 {#cconfigure-create-content-fragments}
 
-AEM GraphQL是用來從您的內容片段中擷取資訊。 必須先設定這些專案，然後定義結構和位置，您才能建立內容。
+AEM GraphQL 用於從您的內容片段中擷取資訊。需要先進行設定，定義結構和位置，然後才能建立內容。
 
 #### 詳細資料 {#details-content-fragments}
 
 * [建立設定](/help/headless/setup/create-configuration.md)
 * [建立內容片段模型](/help/headless/setup/create-content-model.md)
-* [建立Assets資料夾](/help/headless/setup/create-assets-folder.md)
-* [建立和編輯您的內容片段](/help/headless/setup/create-content-fragment.md)
+* [建立資產資料夾](/help/headless/setup/create-assets-folder.md)
+* [建立和編輯內容片段](/help/headless/setup/create-content-fragment.md)
 
 #### 環境 {#eenvironments-content-fragments}
 
-在以下位置定義、編寫、測試、發佈和存取內容片段：
+內容片段的定義、編輯、測試、發佈和存取：
 
 * 作者
 * 預覽
 * 發佈
 
-針對：
+用於：
 
 * 開發
 * 測試
 * 生產
 
-## 使用AEM GraphQL {#use-aem-graphql}
+## 使用 AEM GraphQL {#use-aem-graphql}
 
-### 最佳化GraphQL查詢 {#optimize-graphql-queries}
+### 最佳化 GraphQL 查詢 {#optimize-graphql-queries}
 
-提供這些准則是為了協助防止您的GraphQL查詢出現效能問題。
+提供這些指南是為了幫助防止 GraphQL 查詢出現效能問題。
 
 #### 詳細資料 {#details-optimize-graphql-queries}
 
@@ -176,26 +176,26 @@ AEM GraphQL是用來從您的內容片段中擷取資訊。 必須先設定這�
 
 >[!NOTE]
 >
->最佳化准則涵蓋快取組態，已包含在[設定](#setup)中。
+>最佳化指南涵蓋了快取設定，這部分已在[設定](#setup)中介紹。
 
-### 從您的應用程式存取GraphQL {#access-graphql-from-your-apps}
+### 從您的應用程式存取 GraphQL {#access-graphql-from-your-apps}
 
-AEM Headless CMS讓開發人員可以自由使用他們熟悉的語言、架構和工具，建置並提供卓越的體驗。
+AEM 無頭 CMS 使開發者可以自由地使用他們已經熟悉的語言、框架和工具來建置和交付卓越的體驗。
 
 #### 詳細資料 {#details-your-apps}
 
-* [安裝及使用用於開發的AEM SDK](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/aem-headless-sdk.html)
-* [AEM Headless開發人員資源](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=zh-Hant)
-* 範例，包括[React](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/example-apps/react-app.html)、[Next.js](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/example-apps/next-js.html)、[Node.js](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/example-apps/server-to-server-app.html)等
+* [安裝並使用 AEM SDK 進行開發](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/aem-headless-sdk.html?lang=zh-Hant)
+* [AEM Headless 開發人員資源](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=zh-Hant)
+* 範例包括 [React](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/example-apps/react-app.html?lang=zh-Hant)、[Next.js](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/example-apps/next-js.html?lang=zh-Hant)、[Node.js](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/example-apps/server-to-server-app.html?lang=zh-Hant) 等
 
 #### 環境 {#environments-your-apps}
 
-應用程式通常會開發、測試及用於：
+應用程式通常在以下環境中開發、測試和使用：
 
 * 預覽
 * 發佈
 
-針對：
+用於：
 
 * 開發
 * 測試
@@ -203,8 +203,8 @@ AEM Headless CMS讓開發人員可以自由使用他們熟悉的語言、架構�
 
 ### 其他資源
 
-如需AEM GraphQL和內容片段的詳細資訊，請參閱下列內容：
+如需更多 AEM GraphQL 和內容片段的詳細資料，請參閱以下內容：
 
 * [與內容片段搭配使用的 AEM GraphQL API](/help/headless/graphql-api/content-fragments.md)
 * [使用 GraphiQL IDE](/help/headless/graphql-api/graphiql-ide.md)
-* [AEM Headless開發人員資源](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=zh-Hant)
+* [AEM Headless 開發人員資源](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=zh-Hant)

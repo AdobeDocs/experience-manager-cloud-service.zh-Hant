@@ -5,9 +5,9 @@ feature: Headless, Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 role: Admin, Developer
 source-git-commit: 4492536120989423b639bbb75105568a9c328507
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '5469'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 82%
 
 * 避免與 REST 一樣的反覆 API 要求，
 * 確保傳遞限於特定要求，
-* 允許大量傳遞需要呈現的內容做為對單一 API 查詢的回應。
+* 允許大量傳遞需要轉譯的內容做為對單一 API 查詢的回應。
 
 >[!NOTE]
 >
@@ -33,7 +33,7 @@ ht-degree: 82%
 
 >[!NOTE]
 >
->如需Experience Manager API的最新資訊，請造訪[Adobe Experience Manager as a Cloud Service API](https://developer.adobe.com/experience-cloud/experience-manager-apis/)。
+>如需 Experience Manager API 的最新資訊，另請造訪「[Adobe Experience Manager as a Cloud Service API](https://developer.adobe.com/experience-cloud/experience-manager-apis/)」。
 
 ## GraphQL API {#graphql-api}
 
@@ -83,15 +83,15 @@ GraphQL 使用以下項目：
 
 * **[查詢](https://graphql.org/learn/queries/)**
 
-* **[綱要和類型](https://graphql.org/learn/schema/)**：
+* **[結構描述和類型](https://graphql.org/learn/schema/)**：
 
-   * 綱要是由 AEM 根據內容片段模型所產生。
-   * 使用您的綱要，GraphQL 呈現 GraphQL for AEM 實作可用的類型和操作。
+   * 結構描述是由 AEM 根據內容片段模型所產生。
+   * 使用您的結構描述，GraphQL 呈現 GraphQL for AEM 實作可用的類型和操作。
 
 * **[欄位](https://graphql.org/learn/queries/#fields)**
 
 * **[GraphQL 端點](graphql-endpoint.md)**
-   * AEM 中回應 GraphQL 查詢並提供 GraphQL 綱要存取權的路徑。
+   * AEM 中回應 GraphQL 查詢並提供 GraphQL 結構描述存取權的路徑。
 
    * 如需詳細資訊，請參閱[啟用 GraphQL 端點](graphql-endpoint.md)。
 
@@ -120,7 +120,7 @@ AEM 提供將查詢 (兩種類型) 轉換為[持續性查詢的功能，可由 D
 
 不建議使用 POST 要求的 GraphQL 查詢，因為它們不會被快取，因此在預設執行個體上，Dispatcher 設定為阻擋此類查詢。
 
-雖然GraphQL也支援GET要求，但這些要求可能會達到限制（例如URL的長度），而使用「持續查詢」可以避免這些限制。
+雖然 GraphQL 也支援 GET 要求，但這些要求可能會達到限制 (例如，URL 的長度)，而使用持續性查詢可以避免此狀況。
 
 如需更多的詳細資訊，請參閱[啟用持續性查詢的快取](/help/headless/deployment/dispatcher-caching.md)。
 
@@ -161,19 +161,19 @@ AEM 提供將查詢 (兩種類型) 轉換為[持續性查詢的功能，可由 D
 
 GraphQL 查詢是在基礎要求之 AEM 使用者的許可下執行的。如果使用者沒有某些片段 (儲存為資產) 的讀取權限，它們將不會包含在結果集中。
 
-此外，使用者必須擁有GraphQL端點的存取權，才能執行GraphQL查詢。
+此外，使用者必須可以存取 GraphQL 端點才能執行 GraphQL 查詢。
 
-## 綱要產生 {#schema-generation}
+## 結構描述產生 {#schema-generation}
 
 GraphQL 是強式類型 API，這表示資料必須結構明確並依類型編排。
 
-GraphQL 規格提供了一系列指南，說明如何建立健全的 API 來查詢特定執行個體上的資料。若要這麼做，使用者端必須擷取[結構描述](#schema-generation)，其中包含查詢所需的所有型別。
+GraphQL 規格提供了一系列指南，說明如何建立健全的 API 來查詢特定執行個體上的資料。為此，用戶端必須擷取[結構描述](#schema-generation)，其中包含查詢所需的所有類型。
 
-對於內容片段，GraphQL 綱要 (結構和類型) 是以&#x200B;**啟用的**[內容片段模型](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)及其資料類型為基礎。
+對於內容片段，GraphQL 結構描述 (結構和類型) 是以&#x200B;**啟用的**[內容片段模型](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)及其資料類型為基礎。
 
 >[!CAUTION]
 >
->所有 GraphQL 綱要 (衍生自已&#x200B;**啟用**&#x200B;的內容片段模型) 都可透過 GraphQL 端點讀取。
+>所有 GraphQL 結構描述 (衍生自已&#x200B;**啟用**&#x200B;的內容片段模型) 都可透過 GraphQL 端點讀取。
 >
 >這表示您必須確保沒有敏感資料，因為它可能會以這種方式洩露；例如，這包括可以在模型定義中做為欄位名稱出現的資訊。
 
@@ -183,8 +183,8 @@ GraphQL 規格提供了一系列指南，說明如何建立健全的 API 來查�
 
    ![與 GraphQL 搭配使用的內容片段模型](assets/cfm-graphqlapi-01.png "與 GraphQL 搭配使用的內容片段模型")
 
-1. 對應的 GraphQL 綱要 (來自 GraphiQL 自動文件的輸出)：
-   ![根據內容片段模型的 GraphQL 綱要](assets/cfm-graphqlapi-02.png "根據內容片段模型的 GraphQL 綱要")
+1. 對應的 GraphQL 結構描述 (來自 GraphiQL 自動文件的輸出)：
+   ![根據內容片段模型的 GraphQL 結構描述](assets/cfm-graphqlapi-02.png "根據內容片段模型的 GraphQL 結構描述")
 
    此顯示產生的類型 `ArticleModel` 包含多個[欄位](#fields)。
 
@@ -194,13 +194,13 @@ GraphQL 規格提供了一系列指南，說明如何建立健全的 API 來查�
 
 1. 使用者根據文章模型建立內容片段後，就可以透過 GraphQL 對其進行查詢。例如，請參閱[範例查詢](/help/headless/graphql-api/sample-queries.md#graphql-sample-queries) (根據[與 GraphQL 搭配使用的範例內容片段結構](/help/headless/graphql-api/sample-queries.md#content-fragment-structure-graphql))。
 
-在 GraphQL for AEM 中，綱要是靈活的。這表示著每次建立、更新或刪除內容片段模型時都會自動產生它。當您更新內容片段模型時，資料綱要快取也會重新整理。
+在 GraphQL for AEM 中，結構描述是靈活的。這表示著每次建立、更新或刪除內容片段模型時都會自動產生它。當您更新內容片段模型時，資料結構描述快取也會重新整理。
 
 <!-- move the following to a separate "in depth" page -->
 
-當您更新內容片段模型時，資料綱要快取也會重新整理。
+當您更新內容片段模型時，資料結構描述快取也會重新整理。
 
-Sites GraphQL 服務偵聽 (在背景) 對內容片段模型所做的任何修改。當偵測到更新時，只有該部分的綱要會重新產生。這種最佳化作業可以節省時間並提供穩定性。
+Sites GraphQL 服務偵聽 (在背景) 對內容片段模型所做的任何修改。當偵測到更新時，只有該部分的結構描述會重新產生。這種最佳化作業可以節省時間並提供穩定性。
 
 例如，您可以：
 
@@ -218,11 +218,11 @@ Sites GraphQL 服務偵聽 (在背景) 對內容片段模型所做的任何修�
 >
 >如果您想透過 REST API 或其他方式對內容片段模型進行大量更新，請務必注意這一點。
 
-綱要透過與 GraphQL 查詢相同的端點提供服務，用戶端處理以 `GQLschema` 副檔名呼叫綱要這一事實。例如，對 `/content/cq:graphql/global/endpoint.GQLschema` 執行簡單的 `GET` 要求，將導致內容類型為 `text/x-graphql-schema;charset=iso-8859-1` 的綱要輸出。
+結構描述透過與 GraphQL 查詢相同的端點提供服務，用戶端處理以 `GQLschema` 副檔名呼叫結構描述這一事實。例如，對 `/content/cq:graphql/global/endpoint.GQLschema` 執行簡單的 `GET` 要求，將導致內容類型為 `text/x-graphql-schema;charset=iso-8859-1` 的結構描述輸出。
 
 <!-- move through to here to a separate "in depth" page -->
 
-### 綱要產生 - 未發佈的模型 {#schema-generation-unpublished-models}
+### 結構描述產生 - 未發佈的模型 {#schema-generation-unpublished-models}
 
 巢狀內嵌內容片段時，可能會發佈父內容片段模型，但不會發佈被參考的模型。
 
@@ -230,19 +230,19 @@ Sites GraphQL 服務偵聽 (在背景) 對內容片段模型所做的任何修�
 >
 >AEM UI 可防止這種情況發生，但如果以程式設計方式或使用內容套件進行發佈，則可能會發生這種情況。
 
-發生這種情況時，AEM 會為父內容片段模型產生&#x200B;*不完整*&#x200B;綱要。這表示相依於未發佈模型的片段參考已從綱要中刪除。
+發生這種情況時，AEM 會為父內容片段模型產生&#x200B;*不完整*&#x200B;結構描述。這表示相依於未發佈模型的片段參考已從結構描述中刪除。
 
 ## 欄位 {#fields}
 
-在綱要中有個別欄位，分成兩個基本類別：
+在結構描述中有個別欄位，分成兩個基本類別：
 
 * 產生的欄位。
 
   一系列[資料類型](#Data-types)用於根據內容片段模型的設定方式建立欄位。欄位名稱取自&#x200B;**資料類型**&#x200B;索引標籤的&#x200B;**屬性名稱**&#x200B;欄位。
 
-   * 也必須考慮&#x200B;**呈現為**&#x200B;設定，因為使用者可以設定某些資料類型。例如，從下拉式清單中選擇`multifield`，可將單行文字欄位設定為包含多個單行文字。
+   * 也必須考慮&#x200B;**轉譯為**&#x200B;設定，因為使用者可以設定某些資料類型。例如，從下拉選單中選擇 `multifield`，可以將單行文字欄位設定為包含多個單行文字。
 
-* 適用於AEM的GraphQL也會產生數個[協助程式欄位](#helper-fields)。
+* GraphQL for AEM 也會產生幾個 [Helper 欄位](#helper-fields)。
 
 ### 資料類型 {#data-types}
 
@@ -250,7 +250,7 @@ GraphQL for AEM 支援類型清單。表示所有支援的內容片段模型資�
 
 | 內容片段模型 - 資料類型 | GraphQL 類型 | 說明 |
 |--- |--- |--- |
-| 單行文字 | `String`、`[String]` | 用於簡單字串，例如作者名稱、位置名稱等。 |
+| 單行文字 | `String`、`[String]` | 用於簡單的字串，例如作者姓名、位置名稱等。 |
 | 多行文字 | `String`、`[String]` | 用於輸出文字，例如文章正文 |
 | 數字 | `Float`、`[Float]` | 用於顯示浮點數和正規數 |
 | 布林值 | `Boolean` | 用於顯示核取方塊 → 簡單的 true/false 陳述式 |
@@ -264,7 +264,7 @@ GraphQL for AEM 支援類型清單。表示所有支援的內容片段模型資�
 
 ### Helper 欄位 {#helper-fields}
 
-除了使用者產生欄位的資料型別外，適用於AEM的GraphQL也會產生數個&#x200B;*協助程式*&#x200B;欄位，以協助識別內容片段，或提供有關內容片段的額外資訊。
+除了使用者產生之欄位的資料類型外，GraphQL for AEM 也會產生幾個 *Helper* 欄位，以協助識別內容片段，或提供有關內容片段的其他資訊。
 
 這些 [Helper 欄位](#helper-fields)前面加上 `_` 以區分是使用者定義的還是自動產生的。
 
@@ -307,7 +307,7 @@ GraphQL for AEM 支援類型清單。表示所有支援的內容片段模型資�
 
 透過 GraphQL，AEM 還公開內容片段的中繼資料。中繼資料是描述內容片段的資訊，例如內容片段的標題、縮圖路徑、內容片段的描述、建立日期等。
 
-由於中繼資料是透過綱要編輯器產生的，因此沒有特定的結構，所以實作 `TypedMetaData` GraphQL 類型來公開內容片段的中繼資料。`TypedMetaData` 公開依以下純量類型群組的資訊：
+由於中繼資料是透過結構描述編輯器產生的，因此沒有特定的結構，所以實作 `TypedMetaData` GraphQL 類型來公開內容片段的中繼資料。`TypedMetaData` 公開依以下純量類型群組的資訊：
 
 | 欄位 |
 |--- |
@@ -343,7 +343,7 @@ GraphQL for AEM 支援類型清單。表示所有支援的內容片段模型資�
 }
 ```
 
-如果檢視產生的 GraphQL 綱要，則可以檢視所有中繼資料 GraphQL 類型。所有模型類型都具有相同的 `TypedMetaData`。
+如果檢視產生的 GraphQL 結構描述，則可以檢視所有中繼資料 GraphQL 類型。所有模型類型都具有相同的 `TypedMetaData`。
 
 >[!NOTE]
 >
@@ -370,9 +370,9 @@ GraphQL for AEM 支援類型清單。表示所有支援的內容片段模型資�
 
 >[!NOTE]
 >
->`_variations`欄位不包含`master`變數，因為技術上來說，原始資料（在UI中參考為&#x200B;*Master*）不被視為明確變數。
+>`_variations` 欄位不包含 `master` 變化，在技術上，原始資料 (在 UI 中參考為&#x200B;*主版*) 不視為明確變化。
 
-請參閱[範例查詢 - 所有具有名稱變化的城市](/help/headless/graphql-api/sample-queries.md#sample-cities-named-variation)。
+請參閱「[範例查詢 - 所有具有名稱變化的城市](/help/headless/graphql-api/sample-queries.md#sample-cities-named-variation)」。
 
 >[!NOTE]
 >
@@ -504,11 +504,11 @@ query GetAdventureByType($includePrice: Boolean!) {
 | `AFTER` | `Calendar`, `Date`, `Time` | ...值表示的時間點在欄位內容表示的時間點之後 |
 | `AT_OR_AFTER` | `Calendar`, `Date`, `Time` | ...值表示的時間點在欄位內容表示的時間點之後或相同 |
 
-有些型別也可讓您指定其他選項，以修改運算式的評估方式：
+某些類型也可讓您指定其他選項來修改評估運算式的方式：
 
 | 選項 | 類型 | 說明 |
 |--- |--- |--- |
-| `_ignoreCase` | `String` | 忽略字串的大小寫，例如`time`的值符合`TIME`、`time`、`tImE`... |
+| `_ignoreCase` | `String` | 忽略字串的大小寫，例如 `time` 值與 `TIME`、`time`、`tImE` 相符... |
 | `_sensitiveness` | `Float` | 允許 `float` 值的某些差數視為相同 (以解決由於 `float` 值的內部表示造成的技術限制；應避免，因為此選項可能對效能有負面影響 |
 
 運算式可以使用邏輯運算子 (`_logOp`) 合併成一個集合：
@@ -520,11 +520,11 @@ query GetAdventureByType($includePrice: Boolean!) {
 
 篩選器定義 (作為 `filter` 引數傳遞給查詢) 包含：
 
-* 每個欄位的子定義(可透過其名稱存取欄位，例如，資料（欄位）型別中`lastName`欄位的篩選器中有`lastName`欄位)
+* 每個欄位的子定義 (欄位可以透過其名稱存取，例如，資料 (欄位) 類型中的 `lastName` 欄位其篩選器中有一個 `lastName` 欄位)
 * 每個子定義包含 `_expressions` 陣列，其提供運算式集，以及 `_logOp` 欄位，其定義應用來將運算式合併的邏輯運算子
 * 每個運算式由值 (`value` 欄位) 和運算子 (`_operator` 欄位) 定義，應比較欄位內容與
 
-如果要將專案與`AND`合併，則可以省略`_logOp`；如果要檢查是否相等，則可以省略`_operator`，因為這些是預設值。
+如果您要將項目與 `AND` 合併，則可以省略 `_logOp`；如果要檢查是否相等，則可以省略 `_operator`，因為這些是預設值。
 
 以下範例示範一個完整的查詢，該查詢會篩選所有 `lastName`為 `Provo` 或包含 `sjö` 的人，不受大小寫影響：
 
@@ -576,8 +576,8 @@ query GetAdventureByType($includePrice: Boolean!) {
 排序標準：
 
 * 以逗號分隔的值清單，這些值代表欄位路徑
-   * 清單中的第一個欄位將定義主要排序順序，如果主要排序標準的兩個值相等，則使用第二個欄位，如果前兩個標準相等，則使用第三個欄位，以此類推。
-   * 點狀標籤法，也就是field1.subfield.subfield等等……
+   * 清單中的第一個欄位將定義主要排序順序，如果主要排序標準的兩個值相等，將使用第二個欄位，如果前兩個標準相等，則使用第三個欄位
+   * 點符號，即 field1.subfield.subfield 等...
 * 具有順序方向 (選擇性)
    * ASC (遞增) 或 DESC (遞減)；預設是套用 ASC
    * 可以為每個欄位指定方向，這表示您可以對一個欄位遞增排序，對另一個欄位遞減排序 (姓名，名字 DESC)
@@ -712,11 +712,11 @@ query {
 >
 >* 由於內部技術限制，如果對巢狀欄位套用排序和篩選，效能會降低。因此，建議使用儲存在根層級的篩選/排序欄位。如果要查詢大型已分頁結果集，同樣也建議使用此方法。
 
-## GraphQL 查詢中的網頁最佳化影像傳遞 {#web-optimized-image-delivery-in-graphql-queries}
+## GraphQL 查詢中的 Web 最佳化影像傳遞 {#web-optimized-image-delivery-in-graphql-queries}
 
-網頁最佳化影像傳遞可讓您使用 Graphql 查詢進行下列作業：
+Web 最佳化影像傳遞可讓您使用 Graphql 查詢進行下列作業：
 
-* 請求DAM資產影像的URL （由&#x200B;**內容參考**&#x200B;參考）
+* 要求 DAM 資產影像的 URL (由 **內容參考**&#x200B;進行參考)
 
 * 透過查詢傳遞參數，以便自動產生並傳回特定的影像轉譯
 
@@ -728,7 +728,7 @@ query {
 
 您可以使用 AEM 進行以下作業：
 
-* 將[網頁最佳化影像傳遞](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html)傳遞至 GraphQL 查詢。
+* 將[Web 最佳化影像傳遞](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html?lang=zh-Hant)傳遞至 GraphQL 查詢。
 
 這表示在查詢執行期間會套用命令，其方式與這些影像的 GET 要求中的 URL 參數相同。
 
@@ -736,17 +736,17 @@ query {
 
 GraphQL 中的解決方案代表您可以：
 
-* 要求URL：在`ImageRef`參考上使用`_dynamicUrl`
+* 要求 URL：在 `_dynamicUrl` 參考上使用 `ImageRef`
 
-* 傳遞引數：將`_assetTransform`新增至定義篩選器的清單標題
+* 傳遞參數：新增 `_assetTransform` 到您定義篩選器的清單標頭中
 
 >[!NOTE]
 >
->**內容參考**&#x200B;可用於DAM資產和Dynamic Media資產。 擷取適當的URL時會使用不同的引數：
->* `_dynamicUrl` ： DAM資產
->* `_dmS7Url` ：Dynamic Media資產
+>**內容參考** 可用於 DAM 資產和 Dynamic Media 資產。擷取適當的 URL 使用不同的參數：
+>* `_dynamicUrl`：DAM 資產
+>* `_dmS7Url`：Dynamic Media 資產
 > 
->如果參考的資產是DAM資產，則`_dmS7Url`的值將為`null`。 請參閱GraphQL查詢中的[依URL的Dynamic Media資產傳遞](#dynamic-media-asset-delivery-by-url)。
+>如果參考的資產是 DAM 資產，則 `_dmS7Url` 的值將為 `null`。請參閱「[透過 GraphQL 查詢以 URL 進行動態媒體資產傳遞](#dynamic-media-asset-delivery-by-url)」。
 
 ### 轉換要求結構 {#structure-transformation-request}
 
@@ -772,7 +772,7 @@ GraphQL 中的解決方案代表您可以：
 
 URL 轉換適用於所有查詢類型：按路徑、清單或分頁。
 
-### 具有完整參數的網頁最佳化影像傳遞 {#web-optimized-image-delivery-full-parameters}
+### 具有完整參數的 Web 最佳化影像傳遞 {#web-optimized-image-delivery-full-parameters}
 
 以下是具有一組完整參數的範例查詢：
 
@@ -811,7 +811,7 @@ URL 轉換適用於所有查詢類型：按路徑、清單或分頁。
 }
 ```
 
-### 具有單一查詢變數的網頁最佳化影像傳遞 {#web-optimized-image-delivery-single-query-variable}
+### 具有單一查詢變數的 Web 最佳化影像傳遞 {#web-optimized-image-delivery-single-query-variable}
 
 以下範例顯示如何使用單一查詢變數：
 
@@ -850,7 +850,7 @@ query ($seoName: String!) {
 }
 ```
 
-### 具有多個查詢變數的網頁最佳化影像傳遞 {#web-optimized-image-delivery-multiple-query-variables}
+### 具有多個查詢變數的 Web 最佳化影像傳遞 {#web-optimized-image-delivery-multiple-query-variables}
 
 以下範例顯示如何使用多個查詢變數：
 
@@ -889,7 +889,7 @@ query ($seoName: String!, $format: AssetTransformFormat!) {
 }
 ```
 
-### 透過 URL 要求網頁最佳化影像傳遞 {#web-optimized-image-delivery-request-url}
+### 透過 URL 要求 Web 最佳化影像傳遞 {#web-optimized-image-delivery-request-url}
 
 如果您將查詢儲存為持續性查詢 (例如，使用名稱`dynamic-url-x`)，那麼您可以[直接執行持續性查詢](/help/headless/graphql-api/persisted-queries.md#execute-persisted-query)。
 
@@ -911,7 +911,7 @@ query ($seoName: String!, $format: AssetTransformFormat!) {
      >
      >若要乾淨地終止參數清單，結尾必須加上 `;`。
 
-### 網頁最佳化影像傳送的限制 {#web-optimized-image-delivery-limitations}
+### Web 最佳化影像傳遞的限制 {#web-optimized-image-delivery-limitations}
 
 存在以下限制：
 
@@ -922,9 +922,9 @@ query ($seoName: String!, $format: AssetTransformFormat!) {
    * 編寫時不可快取
    * 發佈時可快取 - 最長 10 分鐘 (用戶端無法變更)
 
-## GraphQL查詢中依URL的Dynamic Media資產傳送{#dynamic-media-asset-delivery-by-url}
+## 透過 GraphQL 查詢以 URL 進行動態媒體資產傳遞{#dynamic-media-asset-delivery-by-url}
 
-AEM內容片段的GraphQL可讓您要求AEM Dynamic Media (Scene7)資產的URL （由&#x200B;**內容參考**&#x200B;參考）。
+GraphQL for AEM Content Fragments 可讓您要求 AEM Dynamic Media (Scene7) 資產的 URL (由&#x200B;**內容參考**&#x200B;所參考)。
 
 GraphQL 中的解決方案代表您可以：
 
@@ -932,23 +932,23 @@ GraphQL 中的解決方案代表您可以：
 
 >[!NOTE]
 >
->為此，您需要有[Dynamic Media雲端設定](/help/assets/dynamic-media/config-dm.md)。
+>若要這樣做，您需要有 [Dynamic Media 雲端設定](/help/assets/dynamic-media/config-dm.md)。
 >
->這會在建立資產的中繼資料時新增`dam:scene7File`和`dam:scene7Domain`屬性。
+>這會在建立資產時，將 `dam:scene7File` 和 `dam:scene7Domain` 屬性新增到資產的中繼資料中。
 
 >[!NOTE]
 >
->**內容參考**&#x200B;可用於DAM資產和Dynamic Media資產。 擷取適當的URL時會使用不同的引數：
+>**內容參考**&#x200B;可用於 DAM 資產和 Dynamic Media 資產。擷取適當的 URL 使用不同的參數：
 >
->* `_dmS7Url` ：Dynamic Media資產
->* `_dynamicUrl` ： DAM資產
+>* `_dmS7Url`：Dynamic Media 資產
+>* `_dynamicUrl`：DAM 資產
 > 
->如果參考的資產是Dynamic Media資產，`_dynamicURL`的值將為`null`。 請參閱GraphQL查詢中的[網頁最佳化的影像傳遞](#web-optimized-image-delivery-in-graphql-queries)。
+>如果參考的資產是 Dynamic Media 資產，則 `_dynamicURL` 的值將為 `null`。請參閱「[GraphQL 查詢中的 Web 最佳化影像傳遞](#web-optimized-image-delivery-in-graphql-queries)」。
 
-### 依URL的Dynamic Media資產傳遞的範例查詢 — 影像參考{#sample-query-dynamic-media-asset-delivery-by-url-imageref}
+### Dynamic Media 資產透過 URL 進行傳遞的範例查詢 - 影像參考{#sample-query-dynamic-media-asset-delivery-by-url-imageref}
 
 以下是範例查詢：
-* 型別`team`和`person`的多個內容片段，傳回`ImageRef`
+* 對於類型為 `team` 和 `person` 的多個內容片段，傳回 `ImageRef`
 
 ```graphql
 query allTeams {
@@ -972,10 +972,10 @@ query allTeams {
 } 
 ```
 
-### 依URL的Dynamic Media資產傳遞的範例查詢 — 多個參考{#sample-query-dynamic-media-asset-delivery-by-url-multiple-refs}
+### Dynamic Media 資產透過 URL 進行傳遞的範例查詢 - 多個參考{#sample-query-dynamic-media-asset-delivery-by-url-multiple-refs}
 
 以下是範例查詢：
-* 針對型別`team`和`person`的多個內容片段，傳回`ImageRef`、`MultimediaRef`和`DocumentRef`：
+* 對於類型為 `team` 和 `person` 的多個內容片段，傳回 `ImageRef`、`MultimediaRef` 和 `DocumentRef`：
 
 ```graphql
 query allTeams {
@@ -1018,7 +1018,7 @@ query allTeams {
 使用 GraphQL for AEM 進行查詢的基本操作符合標準 GraphQL 規格。使用 GraphQL for AEM 進行查詢，有一些擴充功能：
 
 * 如果您需要單一結果：
-   * 使用模型名稱；例如city
+   * 使用模型名稱，例如城市
 
 * 如果您期望結果清單：
    * 新增 `List` 到模型名稱，例如 `cityList`
@@ -1085,34 +1085,34 @@ query allTeams {
 
          * 請參閱[範例查詢 - 所有具有名稱變化的城市](/help/headless/graphql-api/sample-queries.md#sample-cities-named-variation)
 
-   * 針對影像傳送：
+   * 對於影像傳遞：
 
-      * `_authorURL`： AEM作者上影像資產的完整URL
-      * `_publishURL`： AEM Publish上影像資產的完整URL
+      * `_authorURL`：AEM Author 上影像資產的完整 URL
+      * `_publishURL`：AEM Publish 上影像資產的完整 URL
 
-      * 針對[網頁最佳化的影像傳遞](#web-optimized-image-delivery-in-graphql-queries) （DAM資產）：
+      * 對於 [Web 最佳化影像傳遞](#web-optimized-image-delivery-in-graphql-queries) (DAM 資產)：
 
-         * `_dynamicUrl`： `ImageRef`參考上網頁最佳化DAM資產的完整URL
+         * `_dynamicUrl`：`ImageRef` 參考上經過 Web 最佳化的 DAM 資產的完整 URL
 
            >[!NOTE]
            >
-           >`_dynamicUrl`是用於Web最佳化DAM資產的慣用URL，應儘可能取代`_path`、`_authorUrl`和`_publishUrl`的使用。
+           >`_dynamicUrl` 是用於 Web 最佳化 DAM 資產的理想 URL，並應在可行時取代 `_path`、`_authorUrl` 和 `_publishUrl` 的使用。
 
-         * `_assetTransform`：在定義篩選器的清單標頭上傳遞引數
+         * `_assetTransform`：在您定義篩選器的清單標頭上傳遞參數
 
          * 請參閱：
 
-            * [使用完整引數進行Web最佳化影像傳送的範例查詢](#web-optimized-image-delivery-full-parameters)
+            * [具有完整參數的 Web 最佳化影像傳遞的範例查詢](#web-optimized-image-delivery-full-parameters)
 
-            * [使用單一指定引數進行Web最佳化影像傳送的範例查詢](#web-optimized-image-delivery-single-query-variable)
+            * [具有單一特定參數進行 Web 最佳化影像傳遞的範例查詢](#web-optimized-image-delivery-single-query-variable)
 
-      * `_dmS7Url`：在用於將URL傳遞至[Dynamic Media資產](#dynamic-media-asset-delivery-by-url)的`ImageRef`參考上
+      * `_dmS7Url`：將 URL 傳遞到 [Dynamic Media](#dynamic-media-asset-delivery-by-url) 資產的 `ImageRef` 參考
 
-         * 檢視依URL的Dynamic Media資產傳遞[範例查詢 — ImageRef](#sample-query-dynamic-media-asset-delivery-by-url-imageref)
+         * 請參閱「[透過 URL 進行 Dynamic Media 資產傳遞的範例查詢 - ImageRef](#sample-query-dynamic-media-asset-delivery-by-url-imageref)」
 
-         * 檢視依URL的Dynamic Media資產傳遞[範例查詢 — 多個參考](#sample-query-dynamic-media-asset-delivery-by-url-multiple-refs)
+         * 請參閱「[透過 URL 進行 Dynamic Media 資產傳遞的範例查詢 - 多個參考](#sample-query-dynamic-media-asset-delivery-by-url-multiple-refs)」
 
-   * `_tags`：顯示包含標籤的內容片段或變數的ID；這是`cq:tags`個識別碼的陣列。
+   * `_tags`：顯示包含標記的內容片段或變化的 ID；這是一個 `cq:tags` 識別碼的陣列。
 
       * 請參閱[範例查詢 - 所有標記為 City Breaks 的城市名稱](/help/headless/graphql-api/sample-queries.md#sample-names-all-cities-tagged-city-breaks)
       * 請參閱[對附加了特定標記的特定模式之內容片段變化的範例查詢](/help/headless/graphql-api/sample-queries.md#sample-wknd-fragment-variations-given-model-specific-tag)
@@ -1157,44 +1157,44 @@ query allTeams {
 
 ## 自動化測試 {#automated-testing}
 
-在AEM Cloud Manager中執行部署管道時，會在管道執行期間執行自動化測試。
+在 AEM Cloud Manager 中執行部署管道時，會在管道執行期間執行自動化測試。
 
-為了提供準確的結果，您的AEM as a Cloud Service **階段**&#x200B;環境應儘可能映象您的&#x200B;**生產**&#x200B;環境。 這對內容尤其重要。
+為了提供準確的結果，您的 AEM as a Cloud Service **中繼**&#x200B;環境應盡可能與您的&#x200B;**生產**&#x200B;環境相似。這對於內容來說非常重要。
 
-您可以使用AEM as a Cloud Service [內容複製工具](/help/implementing/developing/tools/content-copy.md)將您的生產內容複製到中繼環境，藉此達成此目的。
+您可以透過使用 AEM as a Cloud Service [內容複製工具](/help/implementing/developing/tools/content-copy.md) 將生產內容複製到中繼環境來實現這一點。
 
 ## 限制 {#limitations}
 
-為了防止潛在問題，您的查詢有預設限制：
+為了防範潛在問題，對您的查詢會施加預設限制：
 
-* 查詢不能包含超過1M (1024 * 1024)個字元
-* 查詢不能包含超過15000個權杖
-* 查詢不能包含超過200000個空白代號
+* 查詢不能包含超過 1M (1024 * 1024) 個字元
+* 查詢不能包含超過 15000 個語彙基元
+* 查詢不能包含超過 200000 個空白語彙基元
 
-您也需要注意：
+您還需要了解：
 
-* 當您的GraphQL查詢包含兩個（或更多）模型中具有相同名稱的欄位，並且符合以下條件時，將傳回欄位衝突錯誤：
+* 當您的 GraphQL 查詢在兩個 (或多個) 模型中具有相同名稱的欄位，並且滿足以下條件時，將傳回欄位衝突錯誤：
 
-   * 因此，其中：
+   * 當：
 
-      * 兩個（或更多模型）可能用作參考；當它們在內容片段參考中定義為允許的&#x200B;**模型型別**&#x200B;時。
+      * 將兩個 (或更多模型) 當作可能的參考時，並且它們在內容片段參考中定義為允許的&#x200B;**模型類型**。
 
      和：
 
-      * 這兩個模型都有相同名稱的欄位；這表示兩個模型中有相同名稱。
+      * 這兩個模型的欄位具有相同的名稱；即兩個模型中出現相同的名稱。
 
      和
 
-      * 這些欄位屬於不同的資料型別。
+      * 這些欄位的資料類型不同。
 
    * 例如：
 
-      * 當兩個或更多具有不同模型的片段時（例如`M1`、`M2`），可能作為來自另一個片段的參考（內容參考或片段參考）；例如`Fragment1` `MultiField/List`
-      * 而且這兩個具有不同模型(`M1`、`M2`)的片段具有名稱相同，但型別不同的欄位。
-舉例說明：
-         * `M1.Title`為`Text`
-         * `M2.Title`為`Text/MultiField`
-      * 如果GraphQL查詢包含`Title`欄位，則會發生欄位衝突錯誤。
+      * 當兩個 (或多個) 具有不同模型 (例如，`M1`、`M2`) 的片段用作來自另一個片段的可能參考 (內容參考或片段參考) 時；例如 `Fragment1` `MultiField/List`
+      * 而這兩個具有不同模型 (`M1`，`M2`) 的片段擁有相同名稱但不同類型的欄位。
+說明：
+         * `M1.Title` 作為 `Text`
+         * `M2.Title` 作為 `Text/MultiField`
+      * 那麼如果 GraphQL 查詢包含 `Title` 欄位，就會出現欄位衝突錯誤。
 
 ## 常見問題 {#faqs}
 
@@ -1208,4 +1208,4 @@ query allTeams {
 
 ## 教學課程 - AEM Headless 和 GraphQL 快速入門 {#tutorial}
 
-正在尋找實作教學課程？查看 [AEM Headless 和 GraphQL 快速入門](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html)端對端教學課程，說明如何在 Headless CMS 情境下使用 AEM GraphQL API 建立和公開內容並供外部應用程式取用。
+正在尋找實作教學課程？查看 [AEM Headless 和 GraphQL 快速入門](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=zh-Hant)端對端教學課程，說明如何在 Headless CMS 情境下使用 AEM GraphQL API 建立和公開內容並供外部應用程式取用。

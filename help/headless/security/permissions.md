@@ -5,9 +5,9 @@ feature: Headless, Content Fragments,GraphQL API
 exl-id: 3fbee755-2fa4-471b-83fc-3f4bf056267a
 role: Admin, Developer
 source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '817'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 93%
 
 作為最佳做法，應在 AEM 的群組上設定權限。也稱為本機群組，這些群組可以在 AEM 編寫環境中管理。
 
-管理群組成員身份最簡單方法是使用 Adobe Identity Management System (IMS) 群組，並將 [IMS 群組指派到本機 AEM 群組](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html#managing-permissions-in-aem)。
+管理群組成員身份最簡單方法是使用 Adobe Identity Management System (IMS) 群組，並將 [IMS 群組指派到本機 AEM 群組](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html?lang=zh-Hant#managing-permissions-in-aem)。
 
 ![Admin Console 權限流程](assets/admin-console-aem-group-permissions.png)
 
@@ -37,7 +37,7 @@ ht-degree: 93%
 
 >[!TIP]
 >
->如需管理IMS和AEM使用者及群組的詳細影片逐步解說，請參閱[設定AEM as a Cloud Service存取權](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/overview.html)。
+>有關管理 IMS 和 AEM 使用者和群組的詳細影片解說，請參閱「[設定 AEM as a Cloud Service 的存取權](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/overview.html?lang=zh-Hant)」。
 
 若要管理 AEM **群組**，請導覽至&#x200B;**工具** > **安全性** > **群組**。
 
@@ -65,7 +65,7 @@ ht-degree: 93%
 >
 >修改內容片段模型會改變 Headless 應用程式所依賴的基礎 GraphQL API。
 
-如果您想要建立管理內容片段模型但不是完整管理員存取權的群組，您可以建立具有下列存取控制專案的群組：
+如果您想建立一個可以管理內容片段模型但沒有完全管理員存取權的群組，可以建立具有以下存取控制項目的群組：
 
 | 路徑 | 權限 | 權限 |
 |-----| -------------| ---------|
@@ -80,7 +80,7 @@ ht-degree: 93%
 
 ### 內容權限
 
-透過 AEM GraphQL API 公開的內容可以使用在資產資料夾上設定的[封閉使用者群組 (CUG) ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/advanced/closed-user-groups.html) 來進行限制，其在指定哪些 AEM 使用者群組 (及其成員) 可以存取資產資料夾的內容。
+透過 AEM GraphQL API 公開的內容可以使用在資產資料夾上設定的[封閉使用者群組 (CUG) ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/advanced/closed-user-groups.html?lang=zh-Hant) 來進行限制，其在指定哪些 AEM 使用者群組 (及其成員) 可以存取資產資料夾的內容。
 
 資產 CUG 透過以下方式運作：
 
