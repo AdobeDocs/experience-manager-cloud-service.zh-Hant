@@ -3,10 +3,11 @@ title: Adobe Experience Manager as a Cloud Service 中 Cloud Manager 2024.9.0 �
 description: 瞭解AEM as a Cloud Service中Cloud Manager 2024.9.0的發行說明。
 feature: Release Information
 role: Admin
-source-git-commit: cfaa3be31195929b80310610120a779a20537c61
+exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
+source-git-commit: 610ae004b6da2f7fc0dae2baa613cb363fe9fb00
 workflow-type: tm+mt
-source-wordcount: '332'
-ht-degree: 15%
+source-wordcount: '367'
+ht-degree: 13%
 
 ---
 
@@ -32,9 +33,17 @@ AEM as a Cloud Service中的Cloud Manager版本2024.9.0發行日期是2024年9�
 
   透過Cloud Manager，您現在可以[自助Adobe產生和受管理的DV （網域驗證） SSL憑證](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)。 此功能為您提供最快、最簡單且最具成本效益的解決方案，為您的線上組織或企業建立安全的網站。<!-- CMGR-52403 -->
 
+  >[!NOTE]
+  >
+  >[Content Hub](/help/assets/product-overview.md)客戶計劃分階段接收此功能，作為逐步推出的一部分。
+
 * Cloud Manager中的&#x200B;**Edge Delivery Services支援：**
 
-  如果您擁有AEM Sites中的Edge Delivery Services授權，[您現在可以直接透過Cloud Manager](/help/implementing/cloud-manager/edge-delivery-services.md)使用Edge Delivery Services加入您的網站。 此功能可啟用引導式自助上線體驗。 此外也統一所有AEM屬性中的網域名稱管理、SSL憑證和CDN對應等基本工作流程，確保一致性和效率。<!-- CMGR-49859 -->
+  如果您擁有AEM Sites中的Edge Delivery Services授權，現在可以直接透過Cloud Manager](/help/implementing/cloud-manager/edge-delivery-services.md)使用Edge Delivery Services加入您的網站[。 此功能可啟用引導式自助上線體驗。 此外也統一所有AEM屬性中的網域名稱管理、SSL憑證和CDN對應等基本工作流程，確保一致性和效率。<!-- CMGR-49859 -->
+
+  >[!NOTE]
+  >
+  >[Content Hub](/help/assets/product-overview.md)客戶計劃分階段接收此功能，作為逐步推出的一部分。
 
 * 使用GitHub存放庫的客戶現在能夠建立和使用網頁層級設定管道。<!--( KEEP IN? SP: YES CMGR-59046 and Slack https://cq-dev.slack.com/archives/C07LFP5BZ2L/p1725407057847379 ) -->
 
