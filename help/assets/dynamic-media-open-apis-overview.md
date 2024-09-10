@@ -3,9 +3,9 @@ title: 具有OpenAPI功能的Dynamic Media
 description: 瞭解重要概念，例如為何將Dynamic Media與OpenAPI功能搭配使用，以及如何啟用它。
 role: User
 exl-id: 658b6eff-9f5a-4166-9ff6-5dc8eb92ada3
-source-git-commit: 1041769d4c1efa4465745a85df65c803939b472b
+source-git-commit: 6199a8ae0033feee0c1bee4e4c50e19cd55c805c
 workflow-type: tm+mt
-source-wordcount: '1061'
+source-wordcount: '1062'
 ht-degree: 1%
 
 ---
@@ -62,7 +62,7 @@ Dynamic Media搭配OpenAPI功能提供下列主要優點：
 
   >[!NOTE]
   >
-  > 若要與非Adobe應用程式整合，請提供網域名稱以將應用程式託管於白名單中。
+  > 若要與非Adobe應用程式整合，請提供網域名稱以允許列出託管應用程式的位置。
 
 * 整合專案中涉及之主要客戶聯絡人的詳細資訊。
 
