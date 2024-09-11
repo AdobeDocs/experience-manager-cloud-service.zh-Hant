@@ -11,7 +11,7 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: f3472006-d5ae-4f70-af3e-44e73aee85cc
-source-git-commit: 879af9e3168a1ab993eff930355c4bd200879c71
+source-git-commit: d16a2dbe5cf2ab6d42af661b6ab2b9845612304f
 workflow-type: tm+mt
 source-wordcount: '3615'
 ht-degree: 0%
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # Dynamic Media歷程：基礎知識，第一部分 {#dm-journey-part1}
 
-{{work-with-dynamic-media}}
+{{see-also-dm}}
 
 歡迎使用Dynamic Media歷程。
 
@@ -268,7 +268,6 @@ _根據選取的「ZoomVertical_light」檢視器預設集預覽資產。 滑鼠
 
 此歷程的第一部分涵蓋各種Dynamic Media主題的基本知識。 如果您想深入瞭解您所閱讀的內容，請使用下列資料更詳細地探索概念。 否則，您可以繼續歷程的第二部分。 檢視[此Dynamic Media歷程的下一步是什麼](#whats-next)。
 
-{{see-also-dm}}
 <!--
 _Dynamic Media Help topics_
 

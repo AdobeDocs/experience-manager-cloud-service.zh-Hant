@@ -9,7 +9,7 @@ feature: Adaptive Streaming, Best Practices, Smart Imaging, Image Profiles, Rule
 role: User, Admin
 mini-toc-levels: 4
 exl-id: 39e491bb-367d-4c72-b4ca-aab38d513ac5
-source-git-commit: 879af9e3168a1ab993eff930355c4bd200879c71
+source-git-commit: d16a2dbe5cf2ab6d42af661b6ab2b9845612304f
 workflow-type: tm+mt
 source-wordcount: '4118'
 ht-degree: 0%
@@ -33,7 +33,7 @@ In the accompanying guide, you'll find a comprehensive list of best practices fo
 
 Stage Business Problem Best Practice Recommendation: This section will outline specific business challenges and provide targeted best practices and recommendations to address them effectively. -->
 
-{{work-with-dynamic-media}}
+{{see-also-dm}}
 
 組織在與使用者互動時，面臨著頻道和裝置的爆炸式增長。 客戶歷程橫跨實體商店、網路、行動裝置、社群媒體、電子郵件和商務。 為滿足此需求，Adobe Experience Manager (AEM)上的Dynamic Media提供全方位的解決方案。 它會最佳化資產傳送、處理個人化，並確保跨頻道和裝置的一致性、效能表現和品牌一致性體驗。
 
@@ -412,4 +412,3 @@ CDN （內容傳遞網路）會快取Dynamic Media資產，以快速傳送給客
 
 想要進一步瞭解嗎？ 移至[透過Dynamic Media](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)使CDN快取失效。
 
-{{see-also-dm}}

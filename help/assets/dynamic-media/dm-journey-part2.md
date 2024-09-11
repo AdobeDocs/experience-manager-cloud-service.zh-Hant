@@ -11,7 +11,7 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: cdca41ad-a2cd-4f68-aaa4-5eec33c30f0b
-source-git-commit: 879af9e3168a1ab993eff930355c4bd200879c71
+source-git-commit: d16a2dbe5cf2ab6d42af661b6ab2b9845612304f
 workflow-type: tm+mt
 source-wordcount: '2621'
 ht-degree: 0%
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # Dynamic Media歷程：基礎知識，第二部分  {#dm-journey-part2}
 
-{{work-with-dynamic-media}}
+{{see-also-dm}}
 
 歡迎使用Dynamic Media歷程：基礎知識，第II部分，您將可在此學習下列內容：
 
@@ -211,8 +211,6 @@ _套用了彈出式檢視器的`Running`影像集。_
 ## 選擇性 — 瞭解更多
 
 如果您想進一步瞭解您剛剛閱讀的內容，請使用以下資料更詳細地探索概念。 否則，您的Dynamic Media歷程已完成！
-
-{{see-also-dm}}
 
 <!--
 _Dynamic Media Help topics_
