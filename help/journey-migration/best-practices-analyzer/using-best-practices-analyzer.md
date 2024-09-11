@@ -4,7 +4,7 @@ description: 瞭解如何使用Best Practices Analyzer以瞭解升級整備程�
 exl-id: e8498e17-f55a-4600-87d7-60584d947897
 feature: Migration
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 9998fb4bc4f9f4c0f4adf67fd1b378ae662c8f70
 workflow-type: tm+mt
 source-wordcount: '2686'
 ht-degree: 39%
@@ -35,7 +35,7 @@ ht-degree: 39%
 * BPA可以在任何環境中執行，但最好在&#x200B;*階段*&#x200B;環境中執行。
 
   >[!NOTE]
-  >為避免對業務關鍵執行個體造成影響，建議您在儘可能接近&#x200B;*生產*&#x200B;環境的&#x200B;*作者*&#x200B;環境中，對自訂、設定、內容和使用者應用程式等方面執行BPA。 或者，您可以在複製的生產&#x200B;*製作*&#x200B;環境中執行 CRA。
+  >為避免對業務關鍵執行個體造成影響，建議您在儘可能接近&#x200B;*生產*&#x200B;環境的&#x200B;*階段*&#x200B;環境中，在自訂、設定、內容和使用者應用程式等方面執行BPA。 或者，您可以在複製的生產&#x200B;*製作*&#x200B;環境中執行 CRA。
 
 * 產生BPA報告內容可能需要相當長的時間，從幾分鐘到幾小時不等。 所需的時間主要取決於 AEM 存放庫內容的大小和性質、AEM 版本和其他因素。
 
