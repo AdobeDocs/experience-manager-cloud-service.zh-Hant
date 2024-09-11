@@ -4,7 +4,7 @@ description: 了解在 AEM as a Cloud Service 上進行開發的準則，以及�
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: ea631743af99879d2a76d3a4a78ecf5883f39c69
+source-git-commit: 16379d9cb7cdf876502205c12a233a95b410a67a
 workflow-type: tm+mt
 source-wordcount: '2770'
 ht-degree: 3%
@@ -183,7 +183,7 @@ DEBUG 3 WebApp Panel: WebApp successfully deployed
 >
 
 >[!NOTE]
->部分客戶可選擇試用改版的AEM Cloud Service Developer Console體驗。 如需詳細資訊，請參閱[本文章](/help/implementing/developing/introduction/developer-console.md)。]
+>部分客戶可選擇試用改版的AEM Cloud Service Developer Console體驗。 如需詳細資訊，請參閱[本文章](/help/implementing/developing/introduction/aem-developer-console.md)。]
 
 客戶可以在作者階層的開發環境中存取CRXDE Lite，但不能在預備或生產環境中存取。 無法在執行階段寫入不可變的存放庫(`/libs`， `/apps`)，因此嘗試這樣做將會導致錯誤。
 
