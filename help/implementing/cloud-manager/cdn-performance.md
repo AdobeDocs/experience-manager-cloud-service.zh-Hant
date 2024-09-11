@@ -5,14 +5,14 @@ exl-id: ecd8c1ca-873f-4e73-ad73-b5f7561eb109
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
+source-git-commit: dd696580758e7ab9a5427d47fda4275f9ad7997f
 workflow-type: tm+mt
-source-wordcount: '383'
+source-wordcount: '384'
 ht-degree: 4%
 
 ---
 
-# CDN 效能儀表板 {#cdn-performance}
+# CDN效能儀表板 {#cdn-performance}
 
 瞭解Cloud Manager如何評估內容傳遞網路(CDN)效能，以及您可以從儀表板瞭解哪些內容。
 
@@ -66,13 +66,13 @@ CDN控制面板可在每個計畫的概觀頁面上取得。
 Cache Hit Ratio = Cache Hits / (Hits + Misses + Passes + Other)
 ```
 
-* **點選** — 已從快取要求資料，但找到資料。
+* **點選** — 從快取要求資料，但找到資料。
 * **未命中** — 已從快取要求資料，但找不到資料。
-* **傳遞** — 資料是從快取中要求，而且已設定為在任何情況下都不會快取此資料。
+* **傳遞** — 要求快取中的資料，而且已設定為在任何情況下都不會快取此資料。
 * **Other** — 快取中不符合任何其他大小寫的所有資料要求。
 
 快取量度每24小時更新一次。
 
 >[!TIP]
 >
->如需Cloud Manager和CDN如何與Dispatcher互動的詳細資訊，請參閱檔案： [在AEM as a Cloud Service中快取](/help/implementing/dispatcher/caching.md)。
+>如需Cloud Manager和CDN如何與Dispatcher互動的詳細資訊，請參閱[在AEM as a Cloud Service中快取](/help/implementing/dispatcher/caching.md)。

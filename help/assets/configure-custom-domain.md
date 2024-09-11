@@ -1,13 +1,13 @@
 ---
-title: 設定發佈層的自訂網域
-description: 瞭解如何在AdobeCloud Manager中設定發佈層的自訂網域。
-source-git-commit: f6c0e8e5c1d7391011ccad5aa2bad4a6ab7d10c3
+title: 設定Publish層的自訂網域
+description: 瞭解如何在AdobeCloud Manager中為發佈層設定自訂網域。
+exl-id: cc71c8c5-cf42-4092-b0e0-646a2ed0ee54
+source-git-commit: 8a10634e413ea5c66845dfffa7396a4554a5b3ca
 workflow-type: tm+mt
-source-wordcount: '264'
+source-wordcount: '261'
 ht-degree: 6%
 
 ---
-
 
 # 設定發佈層的自訂網域{#configure-custom-domain}
 
@@ -20,9 +20,7 @@ ht-degree: 6%
 * 憑證原則必須符合擴展驗證(EV)或組織驗證(OV)，而不是網域驗證(DV)原則。
 
 
-## 新增自訂網域
-
-若要為發佈層級設定自訂網域，請執行以下步驟：
+## 設定發佈層的自訂網域
 
 1. 移至&#x200B;**[!UICONTROL AdobeCloud Manager]** > **[!UICONTROL 計畫總覽]** > **[!UICONTROL SSL憑證]**，然後新增您的SSL憑證。
    ![影像](/help/assets/assets/ssl-certificate.png)
@@ -31,11 +29,11 @@ ht-degree: 6%
 1. 新增SSL憑證後，請新增自訂網域。 按一下「**[!UICONTROL 網域設定]**」，並針對「**[!UICONTROL Publish服務]**」選項指定自訂網域。
 深入瞭解[自訂網域](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)。
 
-1. 在對應發佈網域的DNS記錄中新增2個[CNAME記錄](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md)。
+1. 在對應發佈網域的DNS記錄中新增兩個[CNAME記錄](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)。
 由於 DNS 傳播延遲，DNS 驗證可能需要幾個小時才能完成。
 
 1. 記錄支援案例以協助設定自訂網域，確保將其導向傳送階層。
 
 >[!NOTE]
 >
-> 請務必新增自訂網域，以至資產選擇器的IMS使用者端中允許的重新導向URL清單。<br>提供自訂網域字串，與個別Adobe團隊協調以執行此工作。
+>新增自訂網域至允許的重新導向URL清單。 此清單位於資產選擇器的IMS使用者端中。<br>提供自訂網域字串，與個別Adobe團隊協調以執行此工作。

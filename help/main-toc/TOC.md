@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的運作方式以及該軟體可以為您做哪些事。
 breadcrumb-title: 使用手冊
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 983928c46ed5c4999dcae12c75930a9973d51f75
+source-git-commit: 1b8640e4ac60e242abc0462bed3335a90e8c49f7
 workflow-type: tm+mt
-source-wordcount: '5600'
+source-wordcount: '5593'
 ht-degree: 95%
 
 ---
@@ -1121,9 +1121,7 @@ ht-degree: 95%
       + 網域設定{#custom-domain-names}
          + [簡介](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
          + [新增自訂網域名稱](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
-         + [新增 TXT 記錄](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md)
          + [檢查自訂網域名稱狀態](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)
-         + [正在設定 DNS 設定](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md)
          + [檢查 DNS 記錄狀態](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md)
          + [管理客戶網域名稱](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md)
       + SSL 憑證 {#manage-ssl-certificates}
