@@ -4,9 +4,9 @@ description: 瞭解如何在設定檔案中宣告規則和篩選器，並使用C
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
+source-git-commit: 35d3dcca6b08e42c0d2a97116d0628ac9bbb6a7c
 workflow-type: tm+mt
-source-wordcount: '1314'
+source-wordcount: '1350'
 ht-degree: 2%
 
 ---
@@ -153,6 +153,21 @@ data:
 |         | queryParamMatch | 移除符合指定規則運算式的所有查詢引數。 |
 | **轉換** | op：replace， （reqProperty或reqHeader、queryParam或reqCookie），match，replacement | 以新值取代部分請求引數（僅支援「path」屬性），或請求標頭、查詢引數或Cookie。 |
 |              | op：tolower， （reqProperty、reqHeader、queryParam或reqCookie） | 將請求引數（僅支援「path」屬性）或請求標頭、查詢引數或Cookie設定為小寫值。 |
+
+取代動作支援擷取群組，如下所示：
+
+```
+      - name: replace-jpg-with-jpeg
+        when:
+          reqProperty: path
+          like: /mypath          
+        actions:
+          - type: transform
+            reqProperty: path
+            op: replace
+            match: (.*)(\.jpg)$
+            replacement: "\1\.jpeg"          
+```
 
 動作可以鏈結在一起。 例如：
 
@@ -384,3 +399,31 @@ data:
 |-----------|--------------------------|-------------|
 | **重新導向** | 位置 | 「Location」標頭的值。 |
 |     | 狀態（選擇性，預設為301） | 重新導向訊息中使用的HTTP狀態，預設為301，允許值為： 301、302、303、307、308。 |
+
+重新導向的位置可以是字串常值(例如https://www.example.com/page)，或是由以下語法選擇性轉換的屬性（例如path）所產生：
+
+```
+experimental_redirects:
+  rules:
+    - name: country-code-redirect
+      when: { reqProperty: path, like: "/" }
+      action:
+        type: redirect
+        location:
+          reqProperty: clientCountry
+          transform:
+            - op: replace
+              match: '^(/.*)$'
+              replacement: 'https://www.example.com/\1/home'
+            - op: tolower
+    - name: www-redirect
+      when: { reqProperty: domain, equals: "example.com" }
+      action:
+        type: redirect
+        location:
+          reqProperty: path
+          transform:
+            - op: replace
+              match: '^(/.*)$'
+              replacement: 'https://www.example.com/\1'
+```
