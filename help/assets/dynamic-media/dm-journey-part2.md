@@ -11,7 +11,7 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: cdca41ad-a2cd-4f68-aaa4-5eec33c30f0b
-source-git-commit: d16a2dbe5cf2ab6d42af661b6ab2b9845612304f
+source-git-commit: 74172fe7fcf9a22837645a154f2e85fd6fa6b40e
 workflow-type: tm+mt
 source-wordcount: '2621'
 ht-degree: 0%
@@ -24,9 +24,9 @@ ht-degree: 0%
 
 歡迎使用Dynamic Media歷程：基礎知識，第II部分，您將可在此學習下列內容：
 
-* Dynamic Media URL剖析，以及Dynamic Media如何提供內容
-* 建立影像預設集以轉譯資產的基礎知識
-* 影像集、迴轉集及混合媒體集
+* Dynamic Media URL剖析，以及Dynamic Media如何提供內容。
+* 建立影像預設集以轉譯資產的基礎知識。
+* 影像集、迴轉集及混合媒體集。
 
 另請參閱[Dynamic Media歷程；基本資訊，第一部分](/help/assets/dynamic-media/dm-journey-part1.md)。
 
