@@ -1,19 +1,19 @@
 ---
-title: 管理SSL憑證
+title: 管理 SSL 憑證
 description: 了解如何使用 Cloud Manager 檢查 SSL 憑證的狀態以及如何編輯、取代、更新和刪除它們。
 exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 4a369104ea8394989149541ee1a7b956383c8f12
+source-git-commit: 70f99cfb2cd00278d9ebbb7972ef455af7a87a1b
 workflow-type: tm+mt
 source-wordcount: '722'
-ht-degree: 16%
+ht-degree: 17%
 
 ---
 
 
-# 管理SSL憑證 {#managing-ssl-certificates}
+# 管理 SSL 憑證 {#managing-ssl-certificates}
 
 瞭解如何使用Cloud Manager來檢查Adobe託管和客戶託管的SSL憑證的狀態，以及如何刪除它們。 對於客戶管理的憑證，您也可以編輯和更新（取代）它們。
 
@@ -25,9 +25,9 @@ ht-degree: 16%
 | --- | --- |
 | 綠色 | 憑證從目前日期起至少14天有效。 |
 | 橙色 | 憑證將在14天內到期。<br>·確定您有更新憑證的計畫，並透過Cloud Manager使用者介面取代憑證，以避免可能的網站存取或中斷。<br>· Cloud Manager會在UI中定期傳送通知，提醒您憑證即將到期。 |
-| 紅色 | SSL憑證已過期。<br>請參閱[更新已過期的客戶管理的SSL憑證](#update-ssl-certificate)或[刪除SSL憑證](#deleting-an-ssl-certificate)。 |
+| 紅色 | SSL憑證已過期。<br>請參閱[更新過期的客戶管理的SSL憑證](#update-ssl-certificate)或[刪除SSL憑證](#deleting-an-ssl-certificate)。 |
 
-## 更新已過期的客戶管理的SSL憑證 {#update-ssl-certificate}
+## 更新過期的客戶管理的SSL憑證 {#update-ssl-certificate}
 
 當客戶管理的憑證過期時，與過期憑證一起使用的任何網域都將不再運作。 更新憑證可確保您的網域繼續如期運作。
 
@@ -52,7 +52,7 @@ ht-degree: 16%
 
 1. 按一下&#x200B;**更新**&#x200B;以儲存變更並自動套用變更。
 
-## 取代已過期的客戶管理的SSL憑證 {#replace-ssl-certificate}
+## 取代過期的客戶管理的SSL憑證 {#replace-ssl-certificate}
 
 請依照[更新過期的SSL憑證](#update-ssl-certificate)中所述的相同步驟操作，以取代過期的客戶管理的SSL憑證。
 

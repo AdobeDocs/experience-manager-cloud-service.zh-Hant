@@ -5,15 +5,15 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 672513d7-ee0a-4f6e-9ef0-7a41fabbaf9a
-source-git-commit: 9ffec422ec4b5a45962f07142c49a466e8892754
+source-git-commit: 70f99cfb2cd00278d9ebbb7972ef455af7a87a1b
 workflow-type: tm+mt
 source-wordcount: '343'
-ht-degree: 6%
+ht-degree: 7%
 
 ---
 
 
-# 新增CDN設定 {#add-cdn}
+# 新增內容傳遞網路設定 {#add-cdn}
 
 若要將網域與計畫內Adobe管理的CDN上的SSL憑證連結，您必須新增CDN （內容傳遞網路）設定。
 
@@ -46,6 +46,5 @@ ht-degree: 6%
    | --- | --- |
    | Adobe 管理的 CDN | a.在&#x200B;**網域**&#x200B;下拉式清單中，選取您要使用的網域名稱。<br>下拉式清單中沒有已驗證的網域嗎？ 請參閱[新增自訂網域名稱](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)。<br>b。在「SSL憑證」下拉式清單中，選取您要使用的憑證。<br>下拉式清單中沒有可用的SSL憑證嗎？ 請參閱[新增SSL憑證](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)。 |
    | 其他CDN提供者。 | 如果您使用自己的CDN提供者，而不是Adobe管理的CDN，請選取此選項。<br>在&#x200B;**網域**&#x200B;下拉式清單中，選取您要使用的網域名稱。<br>下拉式清單中沒有可用的SSL憑證嗎？ 請參閱[新增自訂網域名稱](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)。 |
-
 
 1. 按一下「**儲存**」。
