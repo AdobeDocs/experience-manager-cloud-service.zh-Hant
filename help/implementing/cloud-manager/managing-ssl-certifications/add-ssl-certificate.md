@@ -5,7 +5,7 @@ exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 6fb672e03fe28ae8af6dc873791c7d1ac1fb8fd7
+source-git-commit: d2f05915c0bf0af073db7f070b83f13aeae55252
 workflow-type: tm+mt
 source-wordcount: '533'
 ht-degree: 9%
@@ -13,12 +13,11 @@ ht-degree: 9%
 ---
 
 
-# 新增SSL憑證
+# 新增SSL憑證 {#add-ssl-cert}
 
 瞭解如何使用Cloud Manager的自助服務工具新增客戶管理的SSL憑證或Adobe產生和管理的DV （網域驗證）憑證。
 
 另請參閱[疑難排解SSL憑證錯誤](/help/implementing/cloud-manager/managing-ssl-certifications/troubleshoot-ssl-cert.md)。
-
 
 ## 新增SSL憑證 {#adding-an-ssl-certificate}
 

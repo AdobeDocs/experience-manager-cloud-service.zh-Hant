@@ -1,19 +1,19 @@
 ---
-title: 管理 SSL 憑證的簡介
+title: SSL憑證簡介
 description: 了解 Cloud Manager 如何提供自助服務工具以安裝 SSL 憑證。
 exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: bc9aa376a402a55191e153f662262ff65df32f5e
+source-git-commit: d2f05915c0bf0af073db7f070b83f13aeae55252
 workflow-type: tm+mt
-source-wordcount: '763'
-ht-degree: 41%
+source-wordcount: '765'
+ht-degree: 34%
 
 ---
 
 
-# 管理 SSL 憑證的簡介{#introduction}
+# SSL憑證簡介{#introduction}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_sslcert"
@@ -37,7 +37,7 @@ Cloud Manager提供自助服務工具來安裝和管理SSL （安全通訊端層
 >不允許客戶上傳DV （網域驗證）憑證。
 
 
-## 憑證簡介 {#certificates}
+## SSL憑證簡介 {#certificates}
 
 企業和組織使用SSL憑證來保護他們的網站，並允許他們的客戶信任他們。 為了使用 SSL 協議，Web 伺服器需要使用 SSL 憑證。
 
@@ -46,8 +46,6 @@ Cloud Manager提供自助服務工具來安裝和管理SSL （安全通訊端層
 >[!IMPORTANT]
 >
 >Cloud Manager 不提供 SSL 憑證或私密金鑰。這些必須從憑證授權單位（受信任的第三方組織）取得。 某些知名的憑證授權單位包括&#x200B;*DigiCert*、*Let&#39;s Encrypt*、*GlobalSign*、*Entrust*&#x200B;和&#x200B;*Verisign*。
-
-## Cloud Manager SSL管理功能 {#features}
 
 Cloud Manager 支援以下客戶 SSL 憑證使用選項。
 
@@ -58,14 +56,9 @@ Cloud Manager 支援以下客戶 SSL 憑證使用選項。
 * 平台 TLS 服務根據用於終止的 SSL 憑證和託管該網域的 CDN 服務將要求路由到客戶的 CDN 服務。
 * AEM as a Cloud Service 接受網域的萬用字元 SSL 憑證。
 
-## 建議 {#recommendations}
+AEM as a Cloud Service僅支援安全的`https`網站。 擁有多個自訂網域的客戶不希望每次新增網域時都上傳憑證。 這類客戶能因獲得具有多個網域的憑證而受益。
 
-AEM as a Cloud Service 僅支援安全的 `https` 網站。
-
-* 擁有多個自訂網域的客戶不希望每次新增網域時都上傳憑證。
-* 這類客戶能因獲得具有多個網域的憑證而受益。
-
-## 憑證需求 {#requirements}
+## SSL憑證需求 {#requirements}
 
 * AEM as a Cloud Service接受符合OV （組織驗證）、EV （擴展驗證）或DV （網域驗證）原則的憑證。<!-- CQDOC-21758, #2 -->
 * 任何憑證都必須是來自受信任憑證授權單位的X.509 TLS憑證，並具有相符的2048位元RSA私密金鑰。
@@ -73,7 +66,7 @@ AEM as a Cloud Service 僅支援安全的 `https` 網站。
 
 OV和EV憑證提供CA驗證的資訊。 這類資訊可協助使用者評估網站所有者、電子郵件寄件者或程式碼或PDF檔案的數位簽署者是否可信。 DV 憑證不允許此類所有權驗證。
 
-### 客戶管理的憑證格式 {#certificate-format}
+### 客戶管理的SSL憑證格式 {#certificate-format}
 
 <!-- CQDOC-21758, #3 -->
 
@@ -99,14 +92,11 @@ SSL 憑證文件必須是 PEM 格式才能與 Cloud Manager 一起安裝。PEM�
   openssl x509 -inform der -in certificate.cer -out certificate.pem
   ```
 
-## 限制 {#limitations}
+## 已安裝SSL憑證數量的限制 {#limitations}
 
 在任何指定時間，Cloud Manager允許最多安裝50個SSL憑證。 這些憑證可以與您的計畫中的一個或多個環境相關聯，並且還包括任何過期的憑證。
 
-如果您已達到限制，請查看您的憑證並考慮：
-
-* 刪除所有過期的憑證。
-* 在同一個憑證中對多個網域進行分組，因為一個憑證可以覆蓋多個網域 (最多 100 個 SAN)。
+如果您已達到限制，請檢視您的憑證並考慮刪除任何過期的憑證。 或者，將多個網域群組在同一個憑證中，因為一個憑證可以涵蓋多個網域（最多100個SAN）。
 
 ## 了解更多 {#learn-more}
 

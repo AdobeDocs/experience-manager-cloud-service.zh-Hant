@@ -5,10 +5,10 @@ exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 70f99cfb2cd00278d9ebbb7972ef455af7a87a1b
+source-git-commit: d2f05915c0bf0af073db7f070b83f13aeae55252
 workflow-type: tm+mt
 source-wordcount: '722'
-ht-degree: 17%
+ht-degree: 13%
 
 ---
 
@@ -41,7 +41,7 @@ ht-degree: 17%
 1. 從&#x200B;**環境**&#x200B;畫面，瀏覽至&#x200B;**SSL憑證**&#x200B;畫面。
 1. 在您想要更新的過期客戶管理憑證列中，按一下最右側的省略符號按鈕，然後選取&#x200B;**檢視和更新**。
 
-   ![更新過期的、客戶管理的SSL認證](/help/implementing/cloud-manager/assets/ssl/ssl-cert-update.png)
+   ![更新過期的客戶管理的SSL認證](/help/implementing/cloud-manager/assets/ssl/ssl-cert-update.png)
 
 1. 在&#x200B;**檢視和更新SSL憑證**&#x200B;對話方塊中，執行下列動作：
 
@@ -87,4 +87,4 @@ ht-degree: 17%
 
 如需詳細資訊，請參閱[新增SSL憑證](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)。
 
-對於具有 IP 允許清單或自訂網域名稱的既有 CDN 設定的環境，**IP 允許清單**&#x200B;和&#x200B;**環境**&#x200B;頁面上也提供了類似的訊息。
+對於具有IP允許清單或自訂網域名稱的既有CDN設定的環境，**IP允許清單**&#x200B;和&#x200B;**環境**&#x200B;頁面上也提供了類似的訊息。
