@@ -5,9 +5,9 @@ exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
 source-git-commit: c5057120d68e1119211c7733a8eb0424590096bd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2172'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 98%
 >title="AEM as a Cloud Service 中已過時和已移除的功能"
 >abstract="AEM as a Cloud Service 具有雲端原生部署模型。某些功能和特性已由對應的雲生原生功能取代，此標籤顯示了這些功能。"
 
-Adobe持續評估產品功能，以更新或替代的方式來改善或取代舊功能，以提升整體客戶價值，並時時考慮回溯相容性。 此外，由於 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 提供雲端原生部署模型，因此某些功能已由對應的雲端原生功能取代。
+Adobe 會持續評估產品功能，逐漸利用更現代化的替代方案重塑或取代舊功能，藉此提升整體客戶價值，也會隨時謹慎考量是否回溯相容性。此外，由於 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 提供雲端原生部署模型，因此某些功能已由對應的雲端原生功能取代。
 
 若要傳達 [!DNL Experience Manager] 功能即將移除/取代的訊息，請套用下列規則：
 
@@ -43,7 +43,7 @@ Adobe持續評估產品功能，以更新或替代的方式來改善或取代舊
 | [!DNL Assets] | FFmpeg 影片轉碼。 | 若要產生 FFmpeg 縮圖，請使用[資產微服務](/help/assets/asset-microservices-overview.md)。若是 FFmpeg 轉碼，請使用 [Dynamic Media](/help/assets/manage-video-assets.md)。 |
 | [!DNL Foundation] | 複寫代理程式的「散發」標籤下的樹狀結構複寫 UI (2021 年 9 月 30 日後移除) | [管理出版物](/help/operations/replication.md#manage-publication)或[發佈內容樹工作流程](/help/operations/replication.md#publish-content-tree-workflow)方法 |
 | [!DNL Foundation] | 複寫代理程式管理員畫面的「散發」標籤和複寫 API 都不能用於複寫超過 10MB 的內容套件。請改用[管理出版物](/help/operations/replication.md#manage-publication)或[發佈內容樹工作流程](/help/operations/replication.md#publish-content-tree-workflow) |
-| [!DNL Foundation] | 使用從 Adob&#x200B;&#x200B;e Developer Console 專案產生的憑證來整合，將逐漸失去對服務帳戶 (JWT) 憑證的支援。2024 年 5 月 1 日或之後，無法在 Adobe Developer Console 中建立新的服務帳戶(JWT) 憑證，但在 2025 年 1 月 1 日之前，現有服務帳戶 (JWT) 憑證仍可用於已設定的整合，到那時候，現有服務帳戶 (JWT) 憑證將不再有效，且客戶必須移轉到 OAuth Server-to-Server 憑證。[了解更多](https://experienceleague.adobe.com/tw/docs/experience-manager-cloud-service/content/security/jwt-credentials-deprecation-in-adobe-developer-console)。 | [移轉](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#migration-overview)至 OAuth Server-to-Server 憑證。 |
+| [!DNL Foundation] | 使用從 Adob&#x200B;&#x200B;e Developer Console 專案產生的憑證來整合，將逐漸失去對服務帳戶 (JWT) 憑證的支援。2024 年 5 月 1 日或之後，無法在 Adobe Developer Console 中建立新的服務帳戶(JWT) 憑證，但在 2025 年 1 月 1 日之前，現有服務帳戶 (JWT) 憑證仍可用於已設定的整合，到那時候，現有服務帳戶 (JWT) 憑證將不再有效，且客戶必須移轉到 OAuth Server-to-Server 憑證。[了解更多](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/security/jwt-credentials-deprecation-in-adobe-developer-console)。 | [移轉](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#migration-overview)至 OAuth Server-to-Server 憑證。 |
 
 ## 移除的功能 {#removed-features}
 

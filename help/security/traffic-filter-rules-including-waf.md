@@ -5,9 +5,9 @@ exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
 source-git-commit: dee1a768c1cec6cf0e7c321d4d76a486db661d13
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3928'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -185,7 +185,7 @@ data:
 
 | **屬性** | **類型** | **說明** |
 |---|---|---|
-| reqProperty | `string` | 要求屬性。<br><br>之一：<br><ul><li>`path`：傳回不帶查詢參數的 URL 完整路徑。</li><li>`queryString`：傳回 URL 的查詢部分</li><li>`method`：傳回要求中所使用的 HTTP 方法。</li><li>`tier`：傳回 `author`、`preview` 或 `publish` 其中之一。</li><li>`domain`：傳回小寫的網域屬性 (如 `Host` 標頭的定義)</li><li>`clientIp`：傳回用戶端 IP 位址。</li><li>`clientCountry`：傳回兩個字母的代碼 ([區域指示器符號](https://en.wikipedia.org/wiki/tw/Regional_indicator_symbol))，可識別客戶位於哪個國家/地區。</li></ul> |
+| reqProperty | `string` | 要求屬性。<br><br>之一：<br><ul><li>`path`：傳回不帶查詢參數的 URL 完整路徑。</li><li>`queryString`：傳回 URL 的查詢部分</li><li>`method`：傳回要求中所使用的 HTTP 方法。</li><li>`tier`：傳回 `author`、`preview` 或 `publish` 其中之一。</li><li>`domain`：傳回小寫的網域屬性 (如 `Host` 標頭的定義)</li><li>`clientIp`：傳回用戶端 IP 位址。</li><li>`clientCountry`：傳回兩個字母的代碼 ([區域指示器符號](https://zh.wikipedia.org/wiki/tw/Regional_indicator_symbol))，可識別客戶位於哪個國家/地區。</li></ul> |
 | reqHeader | `string` | 傳回具有指定名稱的要求標頭 |
 | queryParam | `string` | 傳回具有指定名稱的查詢參數 |
 | reqCookie | `string` | 傳回具有指定名稱的 Cookie |
@@ -245,7 +245,7 @@ when:
 | XSS | 跨網站指令碼 | 跨網站指令碼指試圖透過惡意 JavaScript 程式碼劫持使用者的帳戶或 Web 瀏覽工作階段。 |
 | 周遊 | 目錄周遊 | 目錄周遊指試圖瀏覽整個系統中的特權檔案，期望能獲取敏感資訊。 |
 | USERAGENT | 攻擊工具 | 攻擊工具指使用自動化軟體識別安全漏洞或試圖惡意探索發現的漏洞。 |
-| LOG4J-JNDI | Log4J JNDI | Log4J JNDI 攻擊會試圖惡意探索出現在 2.16.0 之前的 Log4J 版本中的 [Log4Shell 漏洞](https://en.wikipedia.org/wiki/tw/Log4Shell) |
+| LOG4J-JNDI | Log4J JNDI | Log4J JNDI 攻擊會試圖惡意探索出現在 2.16.0 之前的 Log4J 版本中的 [Log4Shell 漏洞](https://zh.wikipedia.org/wiki/tw/Log4Shell) |
 | BHH | 錯誤跳躍標頭 | 錯誤跳躍標頭指透過格式錯誤的傳輸編碼 (TE) 或內容長度 (CL) 標頭或格式正確的 TE 和 CL 標頭進行的 HTTP 走私嘗試 |
 | CODEINJECTION | 程式碼注入 | 程式碼注入是指試圖透過由使用者輸入的任意應用程式碼命令獲取控制或毀損目標系統。 |
 | ABNORMALPATH | 異常路徑 | 異常路徑指原始路徑和標準化路徑不同 (例如：`/foo/./bar` 會標準化為 `/foo/bar`) |
@@ -255,7 +255,7 @@ when:
 | MALFORMED-DATA | 要求內文中格式錯誤的資料 | 根據「Content-Type」要求標頭，格式錯誤的 POST、PUT 或 PATCH 要求內文。例如，如果指定了「Content-Type: application/x-www-form-urlencoded」要求標頭並包含 json 的 POST 內文。這經常是程式設計錯誤、自動化或惡意要求。需要代理程式 3.2 或更高版本。 |
 | SANS | 惡意的 IP 流量 | [SANS 網際網路風暴中心](https://isc.sans.edu/)進行惡意活動的被舉報 IP 位址清單 |
 | NO-CONTENT-TYPE | 缺少「Content-Type」要求標頭 | 沒有「Content-Type」要求標頭的 POST、PUT 或 PATCH 要求。在此案例中，預設情況下應用程式伺服器應假設「Content-Type: text/plain; charset=us-ascii」。許多自動化和惡意要求可能會缺少「內容類型」。 |
-| NOUA | 沒有使用者代理程式 | 指出要求未包含「User-Agent」標頭或未設定標頭值。 |
+| NOUA | 沒有使用者代理程式 | 指示請求不包含「使用者代理」標頭或未設定的標頭值。 |
 | TORNODE | Tor 流量 | Tor 是可隱藏使用者身份的軟體。Tor 流量激增可能表示有攻擊者試圖掩飾其位置。 |
 | NULLBYTE | 空位元 | 空位元通常不會出現在要求中，因為這表示該要求的格式錯誤且可能是惡意的。 |
 | PRIVATEFILE | 私人檔案 | 私人檔案在本質上屬於機密性，例如 Apache `.htaccess` 檔案或可能洩漏敏感資訊的設定檔案 |
@@ -620,7 +620,7 @@ data:
 | *timestamp* | TLS 終止後要求開始的時間。 |
 | *ttfb* | *首位元組時間 (Time To First Byte)* 的縮寫。發出要求開始到回應內文開始串流的時間之間的時間間隔。 |
 | *cli_ip* | 用戶端 IP 位址。 |
-| *cli_country* | 雙字母 [ISO 3166-1](https://en.wikipedia.org/wiki/tw/ISO_3166-1) 用戶端國家/地區的 alpha-2 國家/地區代碼。 |
+| *cli_country* | 雙字母 [ISO 3166-1](https://zh.wikipedia.org/wiki/tw/ISO_3166-1) 用戶端國家/地區的 alpha-2 國家/地區代碼。 |
 | *rid* | 用於唯一識別要求的要求標頭的值。 |
 | *req_ua* | 負責發出特定 HTTP 要求的使用者代理程式。 |
 | *主機* | 發送要求的目標機構。 |
