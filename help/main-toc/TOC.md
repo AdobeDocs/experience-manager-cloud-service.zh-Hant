@@ -707,7 +707,7 @@ ht-degree: 97%
       + 核心元件 {#authoring-adaptive-forms-core-components}
          + 建立最適化表單{#create-an-adaptive-form-on-forms-cs}
             + [建立最適化表單](/help/forms/creating-adaptive-form-core-components.md)
-            + [設定以核心元件為基礎的最適化表單版面](/help/forms/layout-capabilities-adaptive-forms-core-components.md)
+            + [設定以核心元件為主的最適化表單版面](/help/forms/layout-capabilities-adaptive-forms-core-components.md)
             + [建立最適化表單片段](/help/forms/adaptive-form-fragments-core-components.md)
             + [為最適化表單建立主題 - 核心元件](/help/forms/using-themes-in-core-components.md)
             + [建立以核心元件為基礎的最適化表單範本](/help/forms/template-editor-core-components.md)
