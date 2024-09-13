@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 672513d7-ee0a-4f6e-9ef0-7a41fabbaf9a
-source-git-commit: bc9aa376a402a55191e153f662262ff65df32f5e
+source-git-commit: b222b4384b1c2a21ecbb244d149ce7e51cc7990f
 workflow-type: tm+mt
-source-wordcount: '356'
-ht-degree: 8%
+source-wordcount: '445'
+ht-degree: 6%
 
 ---
 
@@ -27,13 +27,16 @@ ht-degree: 8%
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織。
 
-1. 在左側導覽面板的&#x200B;**服務**&#x200B;下方，按一下&#x200B;**CDN設定**。
+1. 根據您的使用案例，執行下列任一項作業：
 
-1. 在「CDN設定」頁面的右上角附近，按一下「**新增**」。
-
-   ![設定CDN對話方塊](/help/implementing/cloud-manager/assets/configure-cdn-dialog.png)
+   | 使用案例 | 步驟 |
+   | --- | --- |
+   | 我要將CDN設定新增至Cloud Manager中的&#x200B;*現有*&#x200B;個Edge Delivery網站 | a.在左側導覽面板的&#x200B;**服務**&#x200B;下方，按一下&#x200B;**Edge Delivery網站**。<br>b。在Edge Delivery表格中，在沒有相關網域的一列結尾處，按一下省略符號。<br>c。按一下&#x200B;**設定CDN**。  ![按一下「設定Edge Delivery網站的CDN」](/help/implementing/cloud-manager/assets/cm-eds-config-cdn.png) |
+   | 我想要在Cloud Manager中新增CDN設定 | a.在左側導覽面板的&#x200B;**服務**&#x200B;下，按一下&#x200B;**CDN設定**。<br>b。在「CDN設定」頁面的右上角附近，按一下「**新增**」。 |
 
 1. 在&#x200B;**設定CDN**&#x200B;對話方塊的&#x200B;**來源**&#x200B;下拉式清單中，選取下列其中一項：
+
+   ![設定CDN對話方塊](/help/implementing/cloud-manager/assets/configure-cdn-dialog.png)
 
    | 來源 | 說明 |
    | --- | --- |

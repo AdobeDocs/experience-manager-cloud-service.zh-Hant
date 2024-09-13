@@ -4,7 +4,7 @@ description: 了解 AEM as a Cloud Service 中 Cloud Manager 2024.9.0 的發行�
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 610ae004b6da2f7fc0dae2baa613cb363fe9fb00
+source-git-commit: b222b4384b1c2a21ecbb244d149ce7e51cc7990f
 workflow-type: tm+mt
 source-wordcount: '367'
 ht-degree: 83%
@@ -39,7 +39,7 @@ AEM as a Cloud Service 中的 Cloud Manager 版本 2024.9.0 發行日期是 2024
 
 * **Cloud Manager 的 Edge Delivery Services 支援：**
 
-  如果您擁有AEM Sites中的Edge Delivery Services授權，現在可以直接透過Cloud Manager](/help/implementing/cloud-manager/edge-delivery-services.md)使用Edge Delivery Services加入您的網站[。 此功能可提供引導式自助上線體驗。它還統一所有 AEM 屬性中的網域名稱管理、SSL 憑證和內容傳遞網路 (CDN) 對應等必要工作流程，確保一致性和效率。<!-- CMGR-49859 -->
+  如果您擁有AEM Sites中的Edge Delivery Services授權，現在可以直接透過Cloud Manager](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)使用Edge Delivery Services加入您的網站[。 此功能可提供引導式自助上線體驗。它還統一所有 AEM 屬性中的網域名稱管理、SSL 憑證和內容傳遞網路 (CDN) 對應等必要工作流程，確保一致性和效率。<!-- CMGR-49859 -->
 
   >[!NOTE]
   >

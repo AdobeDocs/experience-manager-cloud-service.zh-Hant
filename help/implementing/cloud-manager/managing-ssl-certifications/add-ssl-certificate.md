@@ -5,7 +5,7 @@ exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: d2f05915c0bf0af073db7f070b83f13aeae55252
+source-git-commit: b222b4384b1c2a21ecbb244d149ce7e51cc7990f
 workflow-type: tm+mt
 source-wordcount: '533'
 ht-degree: 9%
@@ -23,7 +23,7 @@ ht-degree: 9%
 
 提供憑證可能需要幾天時間。因此，Adobe建議在任何截止日期或上線日期之前提供憑證。
 
-請務必在[管理SSL憑證簡介](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md#requirements)中檢閱&#x200B;**憑證需求**，以確定AEM as a Cloud Service支援您要新增的憑證。
+請務必在[管理SSL憑證簡介](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md#requirements)中檢閱&#x200B;**憑證需求**，以確定AEM as a Cloud Service支援您要新增的憑證。
 
 使用者必須是&#x200B;**企業所有者**&#x200B;或&#x200B;**部署管理員**&#x200B;角色的成員才能完成此工作。
 
@@ -45,7 +45,7 @@ ht-degree: 9%
 
 1. 在頁面的右上角附近，按一下&#x200B;**新增SSL憑證**。
 
-1. 在&#x200B;**新增SSL憑證**&#x200B;對話方塊中，根據[您的特定使用案例](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)，執行下列其中一項作業：
+1. 在&#x200B;**新增SSL憑證**&#x200B;對話方塊中，根據[您的特定使用案例](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md)，執行下列其中一項作業：
 
    | | 使用案例 | 步驟 |
    | --- | --- | --- |

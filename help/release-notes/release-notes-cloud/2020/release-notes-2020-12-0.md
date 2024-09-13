@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2020.12.0 版
 exl-id: 16875180-1f23-477d-9d4d-e220998c4983
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 64344b9b2cce8d7c7f05d3e5ba94049346308a9d
 workflow-type: tm+mt
-source-wordcount: '652'
-ht-degree: 10%
+source-wordcount: '657'
+ht-degree: 8%
 
 ---
 
@@ -32,7 +32,7 @@ ht-degree: 10%
 
 * [!DNL Dynamic Media]功能現在可透過AEM [!DNL Sites]影像型核心元件存取。 作者可在建立網頁時快速設定元件，以使用影像預設集、智慧型裁切和影像修飾元。 請參閱[核心元件2.13.0版本](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.13.0)。
 
-* [!DNL Experience Manager]案頭應用程式可讓使用者在案頭應用程式介面上，從Windows檔案總管或Mac Finder拖曳檔案，以上傳檔案和資料夾。 請參閱[使用案頭應用程式](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem)新增資產。
+* [!DNL Experience Manager]案頭應用程式可讓使用者在案頭應用程式介面上，從Windows檔案總管或Mac Finder拖曳檔案，以上傳檔案和資料夾。 請參閱[使用案頭應用程式](https://experienceleague.adobe.com/en/docs/experience-manager-desktop-app/using/using#upload-and-add-new-assets-to-aem)新增資產。
 
 ## Adobe Experience Manager Commerceas a Cloud Service {#cloud-services-commerce}
 
@@ -50,7 +50,7 @@ Adobe Experience Manager (AEM) as a Cloud Service 2020.12.0中的Cloud Manager�
 
 ### [!DNL Cloud Manager] 的新增功能 {#what-is-new-cm}
 
-* 自助管理 [SSL 憑證](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)和[自訂網域名稱](/help/implementing/cloud-manager/custom-domain-names/introduction.md)。
+* 自助管理[SSL憑證](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md)和[自訂網域名稱簡介](/help/implementing/cloud-manager/custom-domain-names/introduction.md)。
 
 * 自助管理 [IP 允許清單](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)。
 
@@ -66,7 +66,7 @@ Adobe Experience Manager (AEM) as a Cloud Service 2020.12.0中的Cloud Manager�
 
 ### [!DNL Code Refactoring Tools] 的新增功能 {#what-is-new-crt}
 
-* 新版AIO-CLI外掛程式已發行。 此增效模組的最新版本修正AEM Dispatcher Converter和Repository Modernizer的錯誤，並支援全新公用程式Index Converter。 請參閱[Unified Experience](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/refactoring-tools/unified-experience.html#benefits)，您可以在此瞭解更多關於此外掛程式的資訊。
+* 新版AIO-CLI外掛程式已發行。 此增效模組的最新版本修正AEM Dispatcher Converter和Repository Modernizer的錯誤，並支援全新公用程式Index Converter。 請參閱[Unified Experience](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/refactoring-tools/unified-experience#benefits)，您可以在此瞭解更多關於此外掛程式的資訊。
 
 * Index Converter公用程式可將客戶的自訂Oak索引定義轉換成與AEM as a Cloud Service相容的Oak索引定義。 如需詳細資訊，請參閱[索引轉換器](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/index-converter)。
 
@@ -86,6 +86,6 @@ Adobe Experience Manager (AEM) as a Cloud Service 2020.12.0中的Cloud Manager�
 
 ### 錯誤修正 {#ctt-bug-fixes}
 
-* 移轉集的內容轉移工具(CTT)使用者介面狀態在一段閒置時間後沒有持續存在且已變更。 此問題已修正。
-* 如果日誌無法使用，則會停用檢視日誌的選項。 此問題已修正，且已新增傳訊功能，以通知使用者日誌遺失的原因。
-* 當使用者停止內嵌時，內容轉移工具使用者介面狀態顯示&#x200B;*失敗*。 此問題已修正為顯示&#x200B;*已停止*。
+* 移轉集的內容轉移工具(CTT)使用者介面狀態在一段閒置時間後沒有持續存在且已變更。 此問題現已修正。
+* 如果日誌無法使用，則會停用檢視日誌的選項。 此問題現在已修正，且訊息現在已新增，以通知使用者缺少記錄的原因。
+* 當使用者停止內嵌時，內容轉移工具使用者介面狀態顯示&#x200B;*失敗*。 此問題現在已修正，改為顯示&#x200B;*已停止*。

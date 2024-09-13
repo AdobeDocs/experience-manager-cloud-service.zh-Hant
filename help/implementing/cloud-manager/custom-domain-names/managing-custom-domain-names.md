@@ -5,7 +5,7 @@ exl-id: 6cab8cf2-22c0-4f4b-9c54-a1425e74ddd0
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 4e887b753eaf09e104c68484792f00dcb08ee304
+source-git-commit: b222b4384b1c2a21ecbb244d149ce7e51cc7990f
 workflow-type: tm+mt
 source-wordcount: '342'
 ht-degree: 60%
@@ -41,7 +41,7 @@ Cloud Manager 可讓您檢視、更新、取代和刪除自訂網域名稱。
 
 >[!NOTE]
 >
->SSL憑證必須有效，[已設定](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)，並包含您要更新的自訂網域名稱。
+>SSL憑證必須有效，[已設定](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md)，並包含您要更新的自訂網域名稱。
 
 ## 刪除自訂網域名稱 {#deleting}
 

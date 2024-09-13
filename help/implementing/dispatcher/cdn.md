@@ -4,9 +4,9 @@ description: 瞭解如何使用AEM管理的CDN以及如何將您自己的CDN指�
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 role: Admin
-source-git-commit: dd696580758e7ab9a5427d47fda4275f9ad7997f
+source-git-commit: 64344b9b2cce8d7c7f05d3e5ba94049346308a9d
 workflow-type: tm+mt
-source-wordcount: '1607'
+source-wordcount: '1608'
 ht-degree: 11%
 
 ---
@@ -34,11 +34,10 @@ AEM管理的CDN符合大部分客戶的效能與安全性需求。 對於發佈�
 
 若要透過Cloud Manager的自助UI使用AEM的內建CDN為內容傳送做好準備，您可以利用Adobe的受管CDN功能。 此功能可讓您處理自助式CDN管理，包括設定和安裝SSL憑證，例如DV （網域驗證）或EV/OV （延伸/組織驗證）憑證。 如需這些方法的詳細資訊，請參閱下列內容：
 
-* [管理SSL憑證](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
+* [Cloud Manager中的Edge Delivery Services](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)
+* [自訂網域名稱簡介](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
+* [SSL憑證簡介](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md)
 * [新增CDN設定](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)
-* [管理自訂網域名稱](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
-* [Cloud Manager 中的 Edge Delivery Services Support](/help/implementing/cloud-manager/edge-delivery-services.md)
-
 
 **限制流量**
 
@@ -185,7 +184,7 @@ AEM Managed CDN會新增標頭至具有下列各項的每個要求：
 >
 >如果有客戶管理的CDN，這些標題會反映客戶的CDN Proxy伺服器的位置，而非實際使用者端。 客戶使用客戶管理的CDN時，應透過自己的CDN管理地理位置標題。
 
-國家/地區代碼的值是[ISO 3166-1](https://en.wikipedia.org/wiki/tw/ISO_3166-1)中描述的Alpha-2代碼。
+國家/地區代碼的值是[ISO 3166-1](https://zh.wikipedia.org/wiki/tw/ISO_3166-1)中描述的Alpha-2代碼。
 
 大陸代碼的值如下：
 

@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的運作方式以及該軟體可以為您做哪些事。
 breadcrumb-title: 使用手冊
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 34904bc7cd0f13d7f2bccb6f6e21057cb7eb9a4f
+source-git-commit: b222b4384b1c2a21ecbb244d149ce7e51cc7990f
 workflow-type: tm+mt
-source-wordcount: '5621'
+source-wordcount: '5638'
 ht-degree: 97%
 
 ---
@@ -1122,7 +1122,9 @@ ht-degree: 97%
       + [通知](/help/implementing/cloud-manager/notifications.md)
       + [進階網路](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking.html?lang=zh-hant)
       + Edge Delivery Sites {#edge-delivery-sites}
-         + [Cloud Manager 中的 Edge Delivery 支援](/help/implementing/cloud-manager/edge-delivery-services.md)
+         + [Cloud Manager中的Edge Delivery Services簡介](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)
+         + [將Edge Delivery網站新增至Cloud Manager](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md)
+         + [在Cloud Manager中管理Edge Delivery網站](/help/implementing/cloud-manager/edge-delivery/manage-edge-delivery-sites.md)
       + 網域設定 {#custom-domain-names}
          + [網域設定簡介](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
          + [新增自訂網域名稱](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
@@ -1130,7 +1132,7 @@ ht-degree: 97%
          + [檢查DNS記錄狀態](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md)
          + [管理自訂網域名稱](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md)
       + SSL 憑證 {#manage-ssl-certificates}
-         + [SSL憑證簡介](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
+         + [SSL憑證簡介](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md)
          + [新增SSL憑證](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)
          + [疑難排解SSL憑證錯誤](/help/implementing/cloud-manager/managing-ssl-certifications/troubleshoot-ssl-cert.md)
          + [管理 SSL 憑證](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
