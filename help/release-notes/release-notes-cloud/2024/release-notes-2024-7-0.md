@@ -3,10 +3,11 @@ title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2024.7.0 版發行�
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2024.7.0 版發行說明。'
 feature: Release Information
 role: Admin
-source-git-commit: 2edaca5637c735645e2b761377b9681d9b48daa1
+exl-id: 6194df9d-8c3c-4c7f-be59-099b970a565a
+source-git-commit: fc578f35214327567aaa6f5d88a637df9428f87f
 workflow-type: tm+mt
-source-wordcount: '1518'
-ht-degree: 100%
+source-wordcount: '1605'
+ht-degree: 77%
 
 ---
 
@@ -60,19 +61,25 @@ ht-degree: 100%
 
 **使用資產選擇器上傳資產**
 
-資產選擇器現在允許內容作者透過拖曳或從本機檔案系統瀏覽，直接從選擇器上傳最終資產。如此最終資產可以從您選擇的應用程式上傳到 DAM。
+Asset Selector現在提供內容作者直接從選取器上傳最終資產的功能，方法是拖曳或瀏覽本機檔案系統。 此功能允許您從所選的應用程式將最終資產上傳到DAM。
+
+### Dynamic Media的早期存取功能 {#dm-early-access}
+
+**AI視訊標題**
+
+Adobe Dynamic Media中的AI型視訊字幕會使用人工智慧為視訊內容自動產生字幕。 此功能旨在改善協助工具，並透過提供準確的即時註解來增強使用者體驗。 AI會分析視訊的音軌以轉譯語音並建立字幕，您可以編輯這些內容以提高準確性或加以自訂。 這些註解有助於滿足協助工具要求，並提升依賴或偏好文字型視訊支援之對象的視訊參與度。
 
 ### 資產視圖的新功能 {#assets-view-new-features}
 
-**內容憑證整合**
+**Content Credentials 整合**
 
-Experience Manager Assets 現在支援受支援影像格式的內容憑證。這提供了有關資產沿襲和其創作方式的資訊，包括該資產是否使用生成式 AI 進行了修改。
+Experience Manager Assets 現在針對支援的影像格式提供 Content Credentials 支援。此功能提供有關資產歷程及其建立方式的資訊，包括是否使用GenAI進行修改。
 
-![內容憑證](/help/assets/assets/content-credentials.png)
+![Content Credentials](/help/assets/assets/content-credentials.png)
 
 **資料夾內容的視覺化預覽**
 
-現在，當瀏覽或搜尋內容時，Experience Manager Assets 會在資料夾縮圖上顯示資料夾內容的視覺化預覽，如此使用者可更容易尋找 AEM Assets 存放庫中的可用資產。
+Experience Manager Assets現在會在瀏覽或搜尋內容時，在資料夾縮圖上顯示資料夾內容的視覺預覽，這可改善AEM Assets存放庫中可用資產的可發現性。
 
 <!--
 
@@ -93,7 +100,7 @@ When looking at the asset details, any image with content credentials added, suc
 
 #### 核心元件式最適化表單的增強型視覺規則編輯器
 
-最適化表單作者可以在核心元件的視覺規則編輯器中，使用開箱即用功能中的可重複的表單欄位，在表單中建立複雜的商業邏輯，而無需自訂或開發團隊的協助。
+調適型表單作者可使用可重複的表單欄位和現成的視覺化規則編輯器函式，在表單中建立複雜的商業邏輯，而無需來自開發團隊的自訂或支援。
 
 ### AEM Forms 的優先體驗功能 {#forms-new-early-access-features}
 
@@ -103,7 +110,7 @@ AEM Forms 優先體驗計劃為您提供獨一無二的機會，讓您比其他�
 
 #### 使用通用編輯器製作最適化表單
 
-利用 Adobe Experience Manager [通用編輯器](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction)的所見即所得拖放工具建立最適化表單，以實現透過 Edge Delivery Service 傳遞的 (headless) 和有頭 (headful) 註冊體驗。最適化表單作者可以輕鬆地針對網頁表單的變化版本，建立和啟動實驗，並確定提供給一般使用者的最佳執行體驗。
+利用 Adobe Experience Manager [通用編輯器](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction)的所見即所得拖放工具建立最適化表單，以實現透過 Edge Delivery Service 傳遞的 (headless) 和有頭 (headful) 註冊體驗。最適化表單作者可針對網頁中的表單變化，輕鬆建立並啟動實驗。 此功能可讓他們為一般使用者決定最佳執行體驗。
 
 >[!IMPORTANT]
 >
@@ -113,22 +120,23 @@ AEM Forms 優先體驗計劃為您提供獨一無二的機會，讓您比其他�
 
 ### 使用自助 API 金鑰清除內容傳遞網路上的內容 {#purge-cdn}
 
-使用 HTTP Cache-Control 標頭設定 TTL 是平衡內容傳遞效能和內容新鮮度的有效方法。但是，在需要立即提供更新內容的情況下，直接清除 CDN 快取可能會很有幫助。
+使用 HTTP Cache-Control 標頭設定 TTL 是平衡內容傳遞效能和內容新鮮度的有效方法。不過，在必須立即提供更新內容的情況下，直接清除CDN快取可能會有助益。
 
-[了解如何](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token)使用 Cloud Manager 設定管道自助設定清除 API 權杖，以便您可以[叫用清除 API](/help/implementing/dispatcher/cdn-cache-purge.md)，使用以下任一變化版本：
+[瞭解如何](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token)使用Cloud Manager設定管道自助提供清除API Token的設定，以便您可以[叫用具有下列任何變數的清除API](/help/implementing/dispatcher/cdn-cache-purge.md)：
+
 * 單一 URL
 * 使用標記的多個 URL
 * 全面 CDN 快取清除
 
 ### 客戶管理之 CDN 的 X-AEM-Edge-Key 自助設定 {#customermanaged-keys}
 
-以前，需要支援服務單才能產生設定客戶管理之內容傳遞網路所需的 X-AEM-Edge-Key。現在則可以在使用設定管道部署的設定檔中宣告索引鍵值，以自助方式完成此操作，因此新環境上線不會有任何延遲。[了解更多](/help/implementing/dispatcher/cdn-credentials-authentication.md#CDN-HTTP-value)。
+以前，需要支援服務單才能產生設定客戶管理之內容傳遞網路所需的 X-AEM-Edge-Key。此工作流程現在是自助式，透過在使用設定管道部署的設定檔案中宣告索引鍵值，消除新環境上線中的任何延遲。 [了解更多](/help/implementing/dispatcher/cdn-credentials-authentication.md#CDN-HTTP-value)。
 
 ### 流量篩選規則警報 {#traffic-filter-rules-alerts}
 
-流量篩選規則 (其中包括可授權選項的 Web 應用程式防火牆 (WAF) 規則) 可讓您設定應該封鎖哪些流量。
+流量篩選規則包含可選擇性授權的Web應用程式防火牆(WAF)規則，可讓您設定應該封鎖哪些流量。
 
-現在，您可以[訂閱警報](/help/security/traffic-filter-rules-including-waf.md#traffic-filter-rules-alerts)，您的流量篩選規則被觸發時會發出警報。發生某些流量狀況時，行動中心電子郵件通知會通知您，以利採取適當措施。
+現在，只要流量篩選規則被觸發，您就可以[訂閱警示](/help/security/traffic-filter-rules-including-waf.md#traffic-filter-rules-alerts)。 發生某些流量狀況時，行動中心電子郵件通知會通知您，以利採取適當措施。
 
 ### 與內容交付相關的早期採用者計劃 {#foundation-early-adopter}
 
