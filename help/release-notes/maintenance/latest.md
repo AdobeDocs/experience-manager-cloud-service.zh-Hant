@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: 9323464610b804ff407f5eedf404ab2cca93a8da
 workflow-type: tm+mt
 source-wordcount: '572'
-ht-degree: 46%
+ht-degree: 47%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 46%
 
 ## 版本 17689 {#release-17689}
 
-以下摘要說明維護版本17689數的持續改善，該版本於2024年9月10日公開發佈。 上一個維護版本是版本 17569。
+以下摘要說明維護版本17689數的持續改善，該版本於2024年9月10日公開發佈。 前一個維護版本是版本 17569。
 
 2024.9.0 功能啟用將提供此維護版本的完整功能集。如需詳細資訊，請參閱 [Experience Manager 發行藍圖](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)。
 

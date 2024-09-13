@@ -54,7 +54,7 @@ ht-degree: 79%
 此外，現在也支援以下頁面管理功能：
 
 * [AEM 標籤](/help/sites-cloud/authoring/sites-console/tags.md)可作為[分類](/help/edge/wysiwyg-authoring/taxonomy.md)匯出至 Edge Delivery Services。
-* Edge Delivery Services 的[範本](/help/edge/wysiwyg-authoring/templates.md) 即將推出！
+* Edge Delivery Services 的[範本](/help/edge/wysiwyg-authoring/templates.md)即將推出！
 
 ### 早期採用者計劃 {#sites-early-adopter}
 
@@ -102,9 +102,9 @@ Assets as a Cloud Service 現在使用最新的 Firefly 小工具，讓您可以
 使用者現在可以享受自動儲存功能帶來的好處，此功能會將部分完成的表單自動儲存為草稿。他們可以稍後再回來，使用同一部裝置或其他裝置完成填寫。此功能可減少表單放棄率，藉以改善組織的轉換率，因為使用者不需要從頭開始填寫表單。
 
 
-### AEM Forms 的 Early Access 功能 {#forms-new-early-access-features}
+### AEM Forms 的優先體驗功能 {#forms-new-early-access-features}
 
-AEM Forms Early Access 計劃為您提供獨一無二的機會，獲得先進創新內容的獨家使用權，並協助形塑開發。
+AEM Forms 優先體驗計劃為您提供獨一無二的機會，獲得先進創新內容的獨家使用權，並協助形塑開發。
 
 本發行說明列出目前版本提供的創新功能。如需優先體驗計劃提供之創新的完整清單，請參閱 [AEM Forms 優先體驗計劃文件](/help/forms/early-access-ea-features.md)。
 
@@ -120,7 +120,7 @@ AEM Forms Early Access 計劃為您提供獨一無二的機會，獲得先進創
 
 * **產生最適化表單**：輕鬆建立具有產生式AI提示的完整表單。 Adobe的創作AI會自動產生方便使用的表單，以減少流失並個人化體驗。
 
-* **Forms 面板生成**：產生適合特定資料集需求的表單區段。例如：產生用於收集付款資訊、客戶偏好或旅行詳細資訊的區段。
+* **表單面板生成**：產生適合特定資料集需求的表單區段。例如：產生用於收集付款資訊、客戶偏好或旅行詳細資訊的區段。
 
 * **變更表單版面配置**：使用產生式AI提示來實驗不同的版面配置和設計。 嘗試不同的版面配置，例如精靈或索引標籤檢視，找到最適合您的表單版面配置。使用創造性的AI提示來最佳化您的表單，以提供行動回應，並建立使用者喜愛的視覺化吸引人表單。
 
