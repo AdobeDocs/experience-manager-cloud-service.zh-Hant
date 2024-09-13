@@ -1,34 +1,33 @@
 ---
-title: AEM FormsEdge Delivery Services概觀
-description: AEM Forms的Edge Delivery Services
+title: AEM Forms 適用的 Edge Delivery Services 概觀
+description: AEM Forms 適用的 Edge Delivery Services
 feature: Edge Delivery Services
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
 role: Admin, Architect, Developer
 source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1037'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
-# AEM Forms的Edge Delivery Services
+# AEM Forms 適用的 Edge Delivery Services
 
 
-AEM Forms的Edge Delivery Services是一組可撰寫的服務，可啟用快速的開發環境，讓作者可以快速更新、發佈和啟動新表單。 這些服務提供卓越且高影響力的表單體驗，進而促進使用者的參與度和轉換率。這些表單體驗易於製作和開發。
+AEM Forms 適用的 Edge Delivery Services 是一套可組合的服務，提供快速開發環境讓作者迅速更新、發佈並推出新表單。這些服務提供卓越且高影響力的表單體驗，進而促進使用者的參與度和轉換率。這些表單體驗易於製作和開發。
 
 這些服務可讓您：
 
-* **使用您選擇的工具建立註冊體驗**：透過分離內容來源來提高製作效率。您可以開啟立即使用文件型製作 (Microsoft SharePoint 或 Google Drive) 和 WYSIWYG 製作 (通用編輯器或最適化表單編輯器)。您可以在同一個表單網站上使用多個內容來源，並使用您偏好的製作工具，例如 Microsoft Excel、Google Sheets、通用編輯器或最適化表單編輯器。
+* **使用您選擇的工具建立註冊體驗**：透過分離內容來源來提高製作效率。您可以開啟立即使用文件型製作 (Microsoft SharePoint 或 Google Drive) 和 WYSIWYG 製作 (通用編輯器或最適化 Forms 編輯器)。您可以在同一個表單網站上使用多個內容來源，並使用您偏好的製作工具，例如 Microsoft Excel、Google Sheets、通用編輯器或最適化表單編輯器。
 
-* **提供卓越的數位註冊體驗：**&#x200B;提供快速載入和呈現的數位註冊體驗，並透過真實使用監控 (RUM) 持續監視您的表單效能。更快的載入時間和最佳化使用者體驗有助於提高表單完成率和轉換率。
+* **提供卓越的數位註冊體驗：**&#x200B;提供快速載入和呈現的數位註冊體驗，並透過真實使用監控 (RUM) 持續監視您的表單效能。載入時間更快和使用者體驗最佳化，有助於提高表單完成率和轉換率。
 
-* **使用開發人員友善的工具集：**個AEM FormsEdge Delivery Services
-使用純HTML、現代化CSS和vanilla JavaScript來建立卓越的體驗，避免特定架構的陡峭學習曲線。 只要具備基本 Web 開發技能的開發人員，即可自訂並輕鬆建立表單元件和體驗。無需等待管道開始運作，只需將程式碼簽入 GitHub，您進行的變更就會生效。
+* **使用開發人員易用的工具組：** AEM Forms 適用的 Edge Delivery Services 使用純 HTML、現代 CSS 和普通 JavaScript 來建立卓越的體驗，避免特定框架出現陡峭的學習曲線。只要具備基本 Web 開發技能的開發人員，即可自訂並輕鬆建立表單元件和體驗。無需等待管道開始運作，只需將程式碼簽入 GitHub，您進行的變更就會生效。
 
-## AEM FormsEdge Delivery Services概觀 {#edge-overview}
+## AEM Forms 適用的 Edge Delivery Services 概觀 {#edge-overview}
 
-AEM FormsEdge Delivery Services可讓您在網站上撰寫表單時擁有高度彈性。 您可使用 [WYSIWYG 製作](/help/forms/creating-adaptive-form-core-components.md)以及[文件型製作](/help/edge/docs/forms/create-forms.md)來製作內容和表單。AEM Forms的Edge Delivery Services
-提供稱為[最適化Forms區塊](/help/edge/docs/forms/create-forms.md)的表單區塊，以將表單新增至您的Edge Delivery Services網站。
+AEM Forms 適用的 Edge Delivery Services 讓您在網站上製作表單時更具有彈性。您可使用 [WYSIWYG 製作](/help/forms/creating-adaptive-form-core-components.md)以及[文件型製作](/help/edge/docs/forms/create-forms.md)來製作內容和表單。AEM Forms 適用的 Edge Delivery Services
+會提供一個表單區塊 (名為[最適化 Forms 區塊](/help/edge/docs/forms/create-forms.md)) 以新增表單至您的 Edge Delivery Services 網站。
 
 例如，您直接在 Microsoft Excel 或 Google 工作表中建立表單，這些表格會轉換為您網站的表單。任何新表單或表單內容 )例如新表單欄位) 都可以立即在您的網站上使用，無需進行重新建立的程序。
 
@@ -36,7 +35,7 @@ AEM FormsEdge Delivery Services可讓您在網站上撰寫表單時擁有高度�
 
 ![發佈到 Edge Delivery Services 和 AEM](/help/edge/docs/forms/assets/AEM-forms-with-EDS-publishing.png)
 
-AEM Forms的Edge Delivery Services使用GitHub，因此客戶可以直接從其GitHub存放庫管理和部署程式碼。 例如，您可以在 [Google Sheets](/help/edge/docs/forms/create-forms.md) 或 [Microsoft Excel](/help/edge/docs/forms/create-forms.md) 中編寫表單，並可使用 GitHub 存放庫中的 CSS 和 JavaScript 開發您的表單元件。
+AEM Forms 適用的 Edge Delivery Services 使用 GitHub，因此客戶可以直接從其 GitHub 存放庫管理和部署程式碼。例如，您可以在 [Google Sheets](/help/edge/docs/forms/create-forms.md) 或 [Microsoft Excel](/help/edge/docs/forms/create-forms.md) 中編寫表單，並可使用 GitHub 存放庫中的 CSS 和 JavaScript 開發您的表單元件。
 
 當您準備好表單後，您可以使用 [AEM Sidekick](/help/edge/docs/forms/tutorial.md#preview-and-publish-your-content) (chrome 瀏覽器擴充功能) 來預覽和發佈內容更新。
 
@@ -68,7 +67,7 @@ AEM Forms的Edge Delivery Services使用GitHub，因此客戶可以直接從其G
 
 #### WYSIWYG 製作功能
 
-WYSIWYG 製作提供用來建立表單的 WYSIWYG 介面 (通用編輯器或最適化表單編輯器)，並提供文件型製作的所有功能，以及範圍廣泛的附加功能：
+WYSIWYG 製作提供用來建立表單的 WYSIWYG 介面 (通用編輯器或最適化 Forms 編輯器)，並提供文件型製作的所有功能，以及範圍廣泛的附加功能：
 
 * 用來建立複雜邏輯的進階規則編輯器。
 * 提供自訂功能的伺服器端可擴充性。
@@ -87,21 +86,21 @@ WYSIWYG 製作提供用來建立表單的 WYSIWYG 介面 (通用編輯器或最�
 >[!NOTE]
 >
 >
-> WYSIWYG 製作功能適用於早期採用者計畫。如果您有興趣，請以您的工作電子郵件地址向 aem-forms-ea@adobe.com 發送簡短電子郵件，以要求存取該功能。
+> WYSIWYG 製作功能適用於早期採用者計畫。如果您感興趣，請使用您的工作電子郵件地址發送簡短電子郵件至 aem-forms-ea@adobe.com，要求存取該功能。
 
-### AEM Forms的Edge Delivery Services
+### AEM Forms 適用的 Edge Delivery Services
 
-：編寫、發佈和提交Forms
+：製作、發佈和提交表單
 
-下面圖表說明使用文件型製作和 WYSIWYG 製作來建立、發佈和提交表單的流程。
+以下圖表說明使用文件型製作和 WYSIWYG 製作來建立、發佈和提交表單的流程。
 
-![檔案式製作](/help/edge/assets/document-based-authoring-workflow.png)
+![文件型製作](/help/edge/assets/document-based-authoring-workflow.png)
 
 ![WYSIWYG 製作](/help/edge/assets/wysiwyg-authoring-workflow.png)
 
 ## 開始建立表單
 
-* [開始使用AEM Forms的Edge Delivery Services](/help/edge/docs/forms/tutorial.md)
+* [開始使用 AEM Forms 適用的 Edge Delivery Services](/help/edge/docs/forms/tutorial.md)
 * [使用 Google Sheets 或 Microsoft Excel 建立表單](/help/edge/docs/forms/create-forms.md)
 * [設定您的 Google 表單或 Microsoft Excel 檔案以開始接受資料](/help/edge/docs/forms/submit-forms.md)
 * [發佈您的表單並開始收集資料](/help/edge/docs/forms/publish-forms.md)

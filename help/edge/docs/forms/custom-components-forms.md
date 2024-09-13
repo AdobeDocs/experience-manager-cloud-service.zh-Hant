@@ -7,15 +7,15 @@ hidefromtoc: true
 exl-id: 77e90657-38db-4a49-9aac-3f3774b62624
 role: Admin, Architect, Developer
 source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '665'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
 # 建立自訂元件
 
-AEM Forms的Edge Delivery Services可讓您自訂[原生HTML表單元件](/help/edge/docs/forms/form-components.md)，並建立好用的互動式表單。 它讓您能使用預先定義標記修改表單元件，如[表單欄位樣式](/help/edge/docs/forms/style-theme-forms.md)所述，使用自訂 CSS (階層樣式表) 和自訂程式碼來裝飾元件，進而增強最適化表單區塊中表單欄位外觀。
+AEM Forms 適用的 Edge Delivery Services 讓您可以自訂[原生 HTML 表單元件](/help/edge/docs/forms/form-components.md)，並建立容易使用的互動式表單。它讓您能使用預先定義標記修改表單元件，如[表單欄位樣式](/help/edge/docs/forms/style-theme-forms.md)所述，使用自訂 CSS (階層樣式表) 和自訂程式碼來裝飾元件，進而增強最適化 Forms 區塊中表單欄位外觀。
 
 ![自訂元件](/help/edge/assets/custom-component-image.png)
 

@@ -1,13 +1,13 @@
 ---
 title: 使用規則為表單新增動態行為
-description: AEM Forms的Edge Delivery Services是專為尖峰效能而打造，可讓您構想簡化資料收集和使用者參與的未來。 使用規則為您的表單新增動態行為。
+description: AEM Forms 適用的 Edge Delivery Services 專為實現尖峰效能而設計，讓您能夠展望未來簡化資料收集和使用者參與的願景。使用規則為您的表單新增動態行為。
 feature: Edge Delivery Services
 exl-id: 58042016-e655-446f-a2bf-83f1811525e3
 role: Admin, Architect, Developer
 source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2218'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -82,7 +82,7 @@ ht-degree: 98%
 
 ## 適用於規則的試算表函數
 
-最適化表單支援各種可用於建立規則的試算表函數。以下是開箱即用 (OOTB) 的函數：
+最適化 Forms 支援各種可用於建立規則的試算表函數。以下是開箱即用 (OOTB) 的函數：
 
 ### 邏輯函數
 
@@ -297,7 +297,7 @@ MIN(ageLimits[&quot;US&quot;],ageLimits[&quot;UK&quot;],ageLimits[&quot;France&q
 
 ## 建立和部署自訂函數
 
-開箱即用 (OOTB) 最適化表單區塊提供了許多[常用試算表函數](#spreadsheet-functions-for-rules)的實施。但是，為了對表單進行更精細的控制，您可以在最適化表單區塊中使用 Microsoft® Excel 或 Google 工作表提供的任何 OOTB 函數。最適化表單區塊不包含 Microsoft® Excel 或 Google 工作表所提供全部 OOTB 函數的實施。如果您需要任何此類函數，您可以開發具有類似語法的自訂函數來實施 Microsoft® Excel 或 Google 工作表提供的功能。例如，您可以實施 [Microsoft® Excel&#39;s Year() 函數](https://support.microsoft.com/zh-Hant/office/calculate-age-113d599f-5fea-448f-a4c3-268927911b37#)，從出生日期計算年齡。
+開箱即用 (OOTB) 最適化表單區塊提供了許多[常用試算表函數](#spreadsheet-functions-for-rules)的實施。但是，為了對表單進行更精細的控制，您可以在最適化表單區塊中使用 Microsoft® Excel 或 Google 工作表提供的任何 OOTB 函數。最適化表單區塊不包含 Microsoft® Excel 或 Google 工作表所提供全部 OOTB 函數的實施。如果您需要任何此類函數，您可以開發具有類似語法的自訂函數來實施 Microsoft® Excel 或 Google 工作表提供的功能。例如，您可以實施 [Microsoft® Excel&#39;s Year() 函數](https://support.microsoft.com/zh-hant/office/calculate-age-113d599f-5fea-448f-a4c3-268927911b37#)，從出生日期計算年齡。
 
 
 ### 建立自訂函數

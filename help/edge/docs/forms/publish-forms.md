@@ -1,13 +1,13 @@
 ---
-title: Publish和AEM Forms的Edge Delivery Services
-description: Publish和AEM Forms的Edge Delivery Services
+title: 發佈 AEM Forms 適用的 Edge Delivery Services
+description: 發佈 AEM Forms 適用的 Edge Delivery Services
 feature: Edge Delivery Services
 exl-id: dcb16da1-dcc2-4529-8859-0716e727b54d
 role: Admin, Architect, Developer
 source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '549'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 97%
 
 ## 必要條件 
 
-* 您擁有以 [AEM Forms 範本](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block)為主的 AEM 專案，或您[已將最適化表單區塊新增至現有 AEM 專案](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project)
+* 您擁有以 [AEM Forms 範本](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block)為主的 AEM 專案，或您[已將最適化 Forms 區塊新增至現有 AEM 專案](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project)
 * 您的表單已經過全面測試並可供使用。
 * 您的[試算表已設定](/help/edge/docs/forms/submit-forms.md)可接受資料。
 

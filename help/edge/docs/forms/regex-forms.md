@@ -1,15 +1,15 @@
 ---
-title: AEM Forms驗證表單欄位常用規則運算式的Edge Delivery Services
-description: AEM Forms驗證表單欄位常用規則運算式的Edge Delivery Services
+title: AEM Forms 適用的 Edge Delivery Services 常用於驗證表單欄位的規則運算式
+description: AEM Forms 適用的 Edge Delivery Services 常用於驗證表單欄位的規則運算式
 feature: Edge Delivery Services
 role: User
 hide: true
 hidefromtoc: true
 exl-id: 5cfe23bb-155f-4639-b7b7-5edc172ba92a
 source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '195'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 

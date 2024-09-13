@@ -7,10 +7,10 @@ hidefromtoc: true
 exl-id: ba8c7220-55b3-4731-9e40-ce0c360c508d
 role: Admin, Architect, Developer
 source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '28'
-ht-degree: 64%
+ht-degree: 100%
 
 ---
 
-# 掌握AEM FormsEdge Delivery Services的表單片段
+# 熟悉 AEM Forms 適用的 Edge Delivery Services 表單片段

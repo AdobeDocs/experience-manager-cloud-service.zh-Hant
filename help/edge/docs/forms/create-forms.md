@@ -1,21 +1,21 @@
 ---
-title: AEM FormsEdge Delivery Services快速入門。 建立表單。
+title: 開始使用 AEM Forms 適用的 Edge Delivery Services。建立表單。
 description: 快速製作完美表單！⚡ AEM Forms Edge Delivery 文件型製作 = 驚人的速度和 SEO 友善表單，讓使用者更滿意且適用於搜尋引擎。
 feature: Edge Delivery Services
 exl-id: 0cf881a2-3784-45eb-afe8-3435e5e95cf4
 role: Admin, Architect, Developer
 source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '806'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
-# 使用最適化表單區塊建立表單
+# 使用最適化 Forms 區塊建立表單
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427881?quality=12&learn=on)
 
-AEM Forms Edge Delivery 會提供一個區塊 (名為最適化表單區塊)，可協助您輕鬆建立表單來擷取和儲存擷取的資料。您可以[建立預先設定最適化表單區塊的新 AEM 專案](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block)，或可以[將最適化表單區塊新增至現有 AEM 專案](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project)。
+AEM Forms Edge Delivery 會提供一個區塊 (名為最適化 Forms 區塊)，可協助您輕鬆建立表單來擷取和儲存擷取的資料。您可以[建立預先設定最適化 Forms 區塊的新 AEM 專案](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block)，或可以[將最適化 Forms 區塊新增至現有 AEM 專案](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project)。
 
 這些表單可直接提交資料至 Microsoft Excel 或 Google Sheets 檔案，讓您能夠使用由 Google Sheets、Microsoft Excel 和 Microsoft SharePoint 等強大 API 建構的活躍生態系統，以便輕鬆處理提交的資料或啟動現有的業務工作流程。
 
@@ -26,7 +26,7 @@ AEM Forms Edge Delivery 會提供一個區塊 (名為最適化表單區塊)，�
 
 在開始之前，請確保您已完成以下步驟：
 
-* [使用 AEM Forms 範本設定 AEM 專案](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block)，或[將最適化表單區塊新增至您現有的 AEM 專案](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project)，並原地複製本機電腦上的對應 GitHub 存放庫。
+* [使用 AEM Forms 範本設定 AEM 專案](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block)，或[將最適化 Forms 區塊新增至您現有的 AEM 專案](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project)，並原地複製本機電腦上的對應 GitHub 存放庫。
 在本文件中，Edge Delivery Services (EDS) 專案的本機資料夾稱為 `[EDS Project repository]`。
 * 確保您可以存取 Google Sheets 或 Microsoft SharePoint。若要將 Microsoft SharePoint 設定為您的內容來源，請參閱[「如何使用 SharePoint」](https://www.aem.live/docs/setup-customer-sharepoint)。
 
@@ -137,7 +137,7 @@ Ensure a smooth GitHub build process by addressing potential issues:
    | [https://main--wefinance--wkndforms.hlx.live/enquiry.json](https://main--wefinance--wkndforms.hlx.live/enquiry.json) |
 
 
-   ![將最適化表單區塊新增至您的網頁](/help/edge/assets/add-adaptive-forms-block.png)
+   ![將最適化 Forms 區塊新增至您的網頁](/help/edge/assets/add-adaptive-forms-block.png)
 
    此區塊是用作嵌入表單的暫留位置。在該區塊的第二行中，新增 `<form>.json` 檔案的預覽 URL 作為超連結。
 
