@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Video Profiles,Best Practices
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: e3667a6172447072d7c528213826fd0171e9acc2
+source-git-commit: 7c195e5640f828d2c59dbabd8f29127692788576
 workflow-type: tm+mt
-source-wordcount: '9406'
+source-wordcount: '9402'
 ht-degree: 2%
 
 ---
@@ -526,7 +526,7 @@ See [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8
 * 多字幕和音訊曲目
 * AI產生的註解（搶先使用）
 
-透過您建立和提交的Adobe客戶支援案例。
+透過建立並提交Adobe客戶支援案例。
 
 啟用以上三種功能中的任一項，即可啟用所有功能。 因此，如果只想啟用DASH，您實際上是啟用以上列出的全部三個功能。
 
