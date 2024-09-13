@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的運作方式以及該軟體可以為您做哪些事。
 breadcrumb-title: 使用手冊
 user-guide-title: AEM as a Cloud Service
-source-git-commit: d2f05915c0bf0af073db7f070b83f13aeae55252
+source-git-commit: 34904bc7cd0f13d7f2bccb6f6e21057cb7eb9a4f
 workflow-type: tm+mt
-source-wordcount: '5615'
-ht-degree: 98%
+source-wordcount: '5621'
+ht-degree: 97%
 
 ---
 
@@ -629,8 +629,8 @@ ht-degree: 98%
    + Content Hub {#content-hub}
       + [概觀](/help/assets/product-overview.md)
       + [部署 Content Hub](/help/assets/deploy-content-hub.md)
-      + [設定 Content Hub 使用者介面](/help/assets/configure-content-hub-ui-options.md)
       + [將品牌核准的資產上傳或匯入 Content Hub](/help/assets/upload-brand-approved-assets.md)
+      + [設定 Content Hub 使用者介面](/help/assets/configure-content-hub-ui-options.md)
       + [批准 Content Hub 的資產](/help/assets/approve-assets-content-hub.md)
       + [在 Content Hub 中搜尋資產](/help/assets/search-assets-content-hub.md)
       + [資產屬性](/help/assets/asset-properties-content-hub.md)
@@ -638,7 +638,8 @@ ht-degree: 98%
       + [使用 Content Hub 下載資產](/help/assets/download-assets-content-hub.md)
       + [在 Content Hub 中管理收藏集](/help/assets/collections-content-hub.md)
       + [在 Content Hub 中使用 Adob&#x200B;&#x200B;e Express 編輯影像](/help/assets/edit-images-content-hub.md)
-      + [Content Hub 中的 Asset Insights](/help/assets/insights-content-hub.md)
+      + [Content Hub中的Asset Insights](/help/assets/insights-content-hub.md)
+      + [Content Hub的常見問題集](/help/assets/frequently-asked-questions-content-hub.md)
    + 最佳做法{#best-practices}
       + [搜尋最佳做法](/help/assets/search-best-practices.md)
       + [中繼資料管理和最佳做法](/help/assets/metadata-best-practices.md)
