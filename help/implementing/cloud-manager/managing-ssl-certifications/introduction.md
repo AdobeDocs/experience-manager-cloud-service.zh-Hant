@@ -5,10 +5,10 @@ exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: a9bcbae1317d95e3710a19a79115f1437b418e41
+source-git-commit: bc9aa376a402a55191e153f662262ff65df32f5e
 workflow-type: tm+mt
-source-wordcount: '745'
-ht-degree: 42%
+source-wordcount: '763'
+ht-degree: 41%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 42%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_sslcert"
->title="管理SSL憑證"
+>title="管理 SSL 憑證"
 >abstract="了解 Cloud Manager 如何提供自助服務工具來安裝和管理 SSL 憑證，為您的使用者保護您的網站。Cloud Manager 使用平台 TLS 服務來管理客戶擁有並從第三方憑證授權單位獲得的 SSL 憑證和私密金鑰。"
 >additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates" text="檢視、更新和取代 SSL 憑證"
 >additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates" text="檢查 SSL 憑證狀態"
@@ -29,7 +29,7 @@ Cloud Manager提供自助服務工具來安裝和管理SSL （安全通訊端層
 
 | | 使用案例 | 說明 |
 | --- | --- | --- |
-| 1 | **Adobe受管理憑證(DV)** | Cloud Manager可讓使用者設定來自Adobe的DV （網域驗證）憑證，以進行快速網域設定。 DV憑證是最基本的SSL憑證等級，通常用於測試目的或透過基本加密保護網站。 DV憑證同時適用於[生產及沙箱程式](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)。 |
+| 1 | **Adobe受管理憑證(DV)** | Cloud Manager可讓使用者設定來自Adobe的DV （網域驗證）憑證，以進行快速網域設定。 DV憑證是最基本的SSL憑證等級，通常用於測試目的或透過基本加密保護網站。 DV憑證可在[生產程式和沙箱程式](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)中使用。 建立DV憑證後，Adobe每三個月會自動更新一次，除非憑證被刪除。 |
 | 2 | **客戶管理的憑證(OV/EV)** | Cloud Manager使用平台TLS （傳輸層安全性）服務來管理客戶擁有的SSL憑證，以及來自協力廠商憑證授權單位（例如&#x200B;*Let&#39;s Encrypt*）的私密金鑰。 |
 
 >[!NOTE]
@@ -41,7 +41,7 @@ Cloud Manager提供自助服務工具來安裝和管理SSL （安全通訊端層
 
 企業和組織使用SSL憑證來保護他們的網站，並允許他們的客戶信任他們。 為了使用 SSL 協議，Web 伺服器需要使用 SSL 憑證。
 
-當實體（例如組織或企業）向CA （憑證授權單位）請求憑證時，CA會完成驗證程式。 此程式的範圍包括從驗證網域名稱控制到收集公司註冊檔案和訂閱者協定。 在實體的資訊獲得驗證後，CA會使用CA的私密金鑰簽署其公開金鑰。 因為所有主要的憑證授權單位在Web瀏覽器中都有根憑證，實體的憑證會透過&#x200B;*信任鏈*&#x200B;連結，而且網頁瀏覽器會將其識別為受信任的憑證。
+當實體（例如組織或企業）向憑證授權單位(CA)要求憑證時，CA會完成驗證程式。 此程式的範圍包括從驗證網域名稱控制到收集公司註冊檔案和訂閱者協定。 在實體的資訊獲得驗證後，CA會使用CA的私密金鑰簽署其公開金鑰。 因為所有主要的憑證授權單位在Web瀏覽器中都有根憑證，實體的憑證會透過&#x200B;*信任鏈*&#x200B;連結，而且網頁瀏覽器會將其識別為受信任的憑證。
 
 >[!IMPORTANT]
 >

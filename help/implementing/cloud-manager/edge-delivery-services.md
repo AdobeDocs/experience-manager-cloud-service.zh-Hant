@@ -4,9 +4,9 @@ description: 瞭解如何使用Edge Delivery Services傳遞Cloud Manager專案�
 exl-id: f33bd6f0-62fc-4ecc-b8d2-65d1f1c44d82
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: dda5444ccfced079125c358f65f0dae43293ae55
+source-git-commit: bc9aa376a402a55191e153f662262ff65df32f5e
 workflow-type: tm+mt
-source-wordcount: '1502'
+source-wordcount: '1516'
 ht-degree: 5%
 
 ---
@@ -61,7 +61,7 @@ AEM as a Cloud Service中的Cloud Manager可讓您為專案啟用Edge Delivery�
 
 ## 為簽約客戶Adobe建議路徑 {#recommended-path-eds}
 
-身為合約客戶，請透過Cloud Manager存取及使用您的Adobe授權，確保您從Edge Delivery Services中獲得最大利益。 此方法可讓您使用[Adobe管理的CDN](/help/implementing/dispatcher/cdn.md#aem-managed-cdn)，並利用自助式CDN管理等關鍵優點，包括設定和安裝DV或EV/OV憑證。 如果您沒有Adobe的Edge Delivery Services授權，並決定略過這些權益，您只能使用客戶管理的CDN。 此設定必須在aem.live平台上。
+身為合約客戶，請透過Cloud Manager存取及使用您的Adobe授權，確保您從Edge Delivery Services中獲得最大利益。 此方法可讓您使用[Adobe受管理的CDN](/help/implementing/dispatcher/cdn.md#aem-managed-cdn)，並利用自助式CDN管理等關鍵優點，包括設定和增加DV憑證。 此外，建立DV憑證後，Adobe會每三個月自動更新一次（除非憑證被刪除）。 如果您沒有Adobe的Edge Delivery Services授權，並決定略過這些權益，您只能使用客戶管理的CDN。 此安裝程式必須在`aem.live`平台上。
 
 如果您是與AEM as a Cloud Service SitesEdge Delivery Services授權簽約者，請登入Cloud Manager以確保您能夠執行下列動作：
 

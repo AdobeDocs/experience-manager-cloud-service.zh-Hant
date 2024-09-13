@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 672513d7-ee0a-4f6e-9ef0-7a41fabbaf9a
-source-git-commit: 70f99cfb2cd00278d9ebbb7972ef455af7a87a1b
+source-git-commit: bc9aa376a402a55191e153f662262ff65df32f5e
 workflow-type: tm+mt
-source-wordcount: '343'
-ht-degree: 7%
+source-wordcount: '356'
+ht-degree: 8%
 
 ---
 
@@ -40,11 +40,11 @@ ht-degree: 7%
    | Sites | 選取Edge Delivery網站。 |
    | 環境 | 選取您要在AEM設定中鎖定的特定Cloud Service環境。<br>在&#x200B;**第**&#x200B;層下拉式清單中，選取下列其中一項：<br>·選取&#x200B;**Publish**，將目標設定為內容傳送給使用者的即時生產環境。<br>·針對您要在變更上線前測試的測試或非生產環境，選取&#x200B;**預覽**。 |
 
-1. 選擇下列其中一項，以選取您的CDN型別：
+1. 選取下列其中一項，以選取您的CDN型別和關聯的設定：
 
-   | CDN型別 | 說明 |
+   | CDN型別 | 設定詳細資料 |
    | --- | --- |
-   | Adobe 管理的 CDN | a.在&#x200B;**網域**&#x200B;下拉式清單中，選取您要使用的網域名稱。<br>下拉式清單中沒有已驗證的網域嗎？ 請參閱[新增自訂網域名稱](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)。<br>b。在「SSL憑證」下拉式清單中，選取您要使用的憑證。<br>下拉式清單中沒有可用的SSL憑證嗎？ 請參閱[新增SSL憑證](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)。 |
-   | 其他CDN提供者。 | 如果您使用自己的CDN提供者，而不是Adobe管理的CDN，請選取此選項。<br>在&#x200B;**網域**&#x200B;下拉式清單中，選取您要使用的網域名稱。<br>下拉式清單中沒有可用的SSL憑證嗎？ 請參閱[新增自訂網域名稱](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)。 |
+   | Adobe 管理的 CDN | 在&#x200B;**組態詳細資料**&#x200B;底下，執行下列動作：<br>a。在&#x200B;**網域**&#x200B;下拉式清單中，選取您要使用的網域名稱。<br>下拉式清單中沒有已驗證的網域嗎？ 請參閱[新增自訂網域名稱](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)。<br>b。在&#x200B;**SSL憑證**&#x200B;下拉式清單中，選取您要使用的憑證。<br>下拉式清單中沒有可用的SSL憑證嗎？ 請參閱[新增SSL憑證](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)。 |
+   | 其他 CDN 提供者 | 如果您使用自己的CDN提供者，而不是Adobe管理的CDN，請選取此選項。<br>在&#x200B;**設定詳細資料**&#x200B;下，在&#x200B;**網域**&#x200B;下拉式清單中，選取您要使用的網域名稱。<br>下拉式清單中沒有已驗證的網域嗎？ 請參閱[新增自訂網域名稱](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)。 |
 
 1. 按一下「**儲存**」。
