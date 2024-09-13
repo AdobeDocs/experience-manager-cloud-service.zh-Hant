@@ -5,9 +5,9 @@ feature: Language Copy
 role: Admin
 exl-id: 6e74cdee-7965-4087-a733-e9d81c4aa7c2
 solution: Experience Manager Sites
-source-git-commit: 4f5346200499f125ea986bc094446359ed10bd81
+source-git-commit: c4cb466bf6a9b6f8f4a28943d28bdb524610f5ad
 workflow-type: tm+mt
-source-wordcount: '1481'
+source-wordcount: '1447'
 ht-degree: 10%
 
 ---
@@ -28,26 +28,9 @@ ht-degree: 10%
 
 ## 連接到翻譯服務提供者 {#connecting-to-a-translation-service-provider}
 
-建立雲端設定，將AEM連線至您的翻譯服務提供者。 AEM預設包含[連線至Microsoft® Translator](connect-ms-translator.md)的功能。
+建立雲端設定，將AEM連線至您的翻譯服務提供者。
 
-下列翻譯廠商提供用於翻譯專案的AEM API實作。
-
-* [Microsoft](connect-ms-translator.md)
-* [Translations.com](https://exchange.adobe.com/experiencecloud.details.90104.globallink-connect-plus-for-aem.html)
-* [Lionbridge](https://exchange.adobe.com/experiencecloud.details.100064.lionbridge-connector-for-experience-manager-63.html)
-* [Memsource](https://exchange.adobe.com/apps/ec/103166/memsource-connector-for-adobe-experience-manager)
-* [XTM Cloud](https://exchange.adobe.com/apps/ec/105037/xtm-connect-for-adobe-experience-manager)
-* [Lingotek](https://exchange.adobe.com/apps/ec/90088/lingotek-collaborative-translation-platform)
-* [RWS](https://exchange.adobe.com/apps/ec/108277/rws-language-cloud)
-* [Smartling](https://www.smartling.com/software/integrations/adobe-experience-manager/)
-
->[!NOTE]
->
->若要尋找最新的人工和機器翻譯提供者清單，請檢視以下頁面：
->
->* [AEM人工翻譯](https://exchange.adobe.com/apps/browse/ec?page=1&amp;partnerLevel=All&amp;product=AEM&amp;q=aem+human+translation&amp;sort=RELEVANCE)
->* [AEM機器翻譯](https://exchange.adobe.com/apps/browse/ec?q=AEM+machine+translation&amp;product=All&amp;partnerLevel=All&amp;sort=RELEVANCE)
->
+AEM預設包含[連線至Microsoft® Translator](connect-ms-translator.md)的功能。 其他擁有AEM聯結器且是Adobe Exchange合作夥伴計畫成員的翻譯技術廠商可在[這裡](https://exchange.adobe.com/apps/browse/ec?page=1&amp;partnerLevel=All&amp;product=AEM&amp;q=experience+manager+translation&amp;sort=RELEVANCE)找到。
 
 安裝聯結器套件後，您可以為聯結器建立雲端設定。 通常，您必須提供認證來向翻譯服務進行驗證。 如需有關為Microsoft® Translator聯結器新增雲端設定的資訊，請參閱[與Microsoft® Translator整合](connect-ms-translator.md)。
 
