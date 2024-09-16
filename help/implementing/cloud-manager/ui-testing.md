@@ -5,9 +5,9 @@ exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
+source-git-commit: bb75e70fb83b63e12968f7cb01e6976e367ff70e
 workflow-type: tm+mt
-source-wordcount: '2610'
+source-wordcount: '2630'
 ht-degree: 79%
 
 ---
@@ -212,16 +212,20 @@ UI 測試是每個 Cloud Manager 管道特定品質把關程序的一環，在[�
 
 以下環境變數會在執行階段傳遞給您的 Docker 映像，視您的架構而定。
 
+>[!NOTE]
+>
+> 這些值將在管道執行期間自動設定 — 不需要手動設定為管道變數。
+
 | 變數 | 範例 | 說明 | 測試架構 |
-|----------------------------|----------------------------------|---------------------------------------------------------------------------------------------------|---------------------|
+|----------------------------|----------------------------------|----------------------------------------------------------------------------------------------------|---------------------|
 | `SELENIUM_BASE_URL` | `http://my-ip:4444` | Selenium 伺服器的 URL | 僅限 Selenium |
 | `SELENIUM_BROWSER` | `chrome` | Selenium 伺服器使用的瀏覽器實作 | 僅限 Selenium |
 | `AEM_AUTHOR_URL` | `http://my-ip:4502/context-path` | AEM 編寫執行個體的 URL | 全部 |
 | `AEM_AUTHOR_USERNAME` | `admin` | 用於登入 AEM 編寫執行個體的使用者名稱 | 全部 |
 | `AEM_AUTHOR_PASSWORD` | `admin` | 用於登入 AEM 編寫執行個體的密碼 | 全部 |
-| `AEM_PUBLISH_URL` | `http://my-ip:4503/context-path` | AEM 發佈執行個體的 URL | 全部 |
-| `AEM_PUBLISH_USERNAME` | `admin` | 用於登入 AEM 發佈執行個體的使用者名稱 | 全部 |
-| `AEM_PUBLISH_PASSWORD` | `admin` | 登入AEM發佈執行個體的密碼 | 全部 |
+| `AEM_PUBLISH_URL` | `http://my-ip:4503/context-path` | AEM 發佈執行個體的 URL | 全部* |
+| `AEM_PUBLISH_USERNAME` | `admin` | 用於登入 AEM 發佈執行個體的使用者名稱 | 全部* |
+| `AEM_PUBLISH_PASSWORD` | `admin` | 登入AEM發佈執行個體的密碼 | 全部* |
 | `REPORTS_PATH` | `/usr/src/app/reports` | 測試結果 XML 報告必須儲存的路徑 | 全部 |
 | `UPLOAD_URL` | `http://upload-host:9090/upload` | 必須將檔案上傳到的 URL，以便測試架構可以存取 | 全部 |
 | `PROXY_HOST` | `proxy-host` | 測試架構要使用的內部HTTP Proxy的主機名稱 | 除Selenium外的所有專案 |
@@ -231,6 +235,8 @@ UI 測試是每個 Cloud Manager 管道特定品質把關程序的一環，在[�
 | `PROXY_OBSERVABILITY_PORT` | `8081` | Proxy伺服器的HTTP健康情況檢查連線埠 | 除Selenium外的所有專案 |
 | `PROXY_RETRY_ATTEMPTS` | `12` | 等待Proxy伺服器準備就緒時的建議重試次數 | 除Selenium外的所有專案 |
 | `PROXY_RETRY_DELAY` | `5` | 等待Proxy伺服器整備時重試嘗試之間的建議延遲 | 除Selenium外的所有專案 |
+
+`* these values will be empty if there is no publish instance`
 
 Adobe 測試範例提供輔助函數以存取設定參數：
 
