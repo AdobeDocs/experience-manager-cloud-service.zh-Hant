@@ -4,9 +4,9 @@ description: 瞭解如何在AEM as a Cloud Service中將記錄轉送給Splunk和
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
+source-git-commit: bf0b577de6174c13f5d3e9e4a193214c735fb04d
 workflow-type: tm+mt
-source-wordcount: '1375'
+source-wordcount: '1359'
 ht-degree: 1%
 
 ---
@@ -177,9 +177,10 @@ AEM記錄(包括Apache/Dispatcher)會顯示在具有以下命名慣例的資料�
 
 * aemaccess
 * aemerror
+* aemrequest
 * aemdispatcher
-* httpdaccess
-* httpderror
+* aemhttpdaccess
+* aemhttpderror
 
 在每個資料夾下，將建立單一檔案並附加至其中。 客戶應負責處理和管理此檔案，以免檔案變得太大。
 
@@ -209,6 +210,9 @@ data:
 
 * 建立API金鑰，而不與特定雲端提供者進行任何整合。
 * tags屬性是選用的
+* 對於AEM記錄檔，Datadog來源標籤設定為`aemaccess`、`aemerror`、`aemrequest`、`aemdispatcher`、`aemhttpdaccess`或`aemhttpderror`其中之一
+* 對於CDN記錄，Datadog來源標籤設為`aemcdn`
+* Datadog服務標籤已設定為`adobeaemcloud`，但您可以在標籤區段中覆寫它
 
 
 ### Elasticsearch和OpenSearch {#elastic}
@@ -230,10 +234,12 @@ data:
 
 考量事項：
 
+* 依預設，連線埠為443。 您可以選擇使用名為`port`的屬性覆寫
 * 對於認證，請務必使用部署認證，而不是帳戶認證。 這些是在畫面中產生的認證，可能類似於此影像：
 
 ![彈性部署認證](/help/implementing/developing/introduction/assets/ec-creds.png)
 
+* 對於AEM記錄檔，`index`設定為`aemaccess`、`aemerror`、`aemrequest`、`aemdispatcher`、`aemhttpdaccess`或`aemhttpderror`其中之一
 * 選用管線屬性應設為Elasticsearch或OpenSearch擷取管線的名稱，可將其設定為將記錄專案路由至適當的索引。 管道的處理器型別必須設定為&#x200B;*指令碼*，而且指令碼語言應設定為&#x200B;*無痛苦的*。 以下是指令碼片段範例，可將記錄專案路由至索引，例如aemaccess_dev_26_06_2024：
 
 ```
@@ -254,15 +260,15 @@ data:
   https:
     default:
       enabled: true
-      url: "https://example.com:8443/aem_logs/aem"
+      url: "https://example.com/aem_logs/aem"
       authHeaderName: "X-AEMaaCS-Log-Forwarding-Token"
       authHeaderValue: "${{HTTPS_LOG_FORWARDING_TOKEN}}"
 ```
 
 考量事項：
 
-* URL字串必須包含&#x200B;**https://**，否則驗證將會失敗。 如果url字串中未包含任何連線埠，則會假設是連線埠443 （預設的HTTPS連線埠）。
-* 如果您想要使用與443不同的連線埠，請將其提供為URL的一部分。
+* URL字串必須包含&#x200B;**https://**，否則驗證將會失敗。
+* url可能包含連線埠。 例如 `https://example.com:8443/aem_logs/aem`。如果url字串中未包含任何連線埠，則會假設是連線埠443 （預設的HTTPS連線埠）。
 
 #### HTTPS CDN記錄 {#https-cdn}
 
@@ -278,13 +284,14 @@ Web要求(POST)將持續傳送，其有json裝載（記錄專案陣列），其�
 
 對於AEM記錄檔（包括apache/dispacher），網路要求(POST)將持續傳送，其包含記錄專案陣列的json裝載，並具有各種記錄專案格式，如[AEM as a Cloud Service的記錄](/help/implementing/developing/introduction/logging.md)中所述。 以下[Log Entry Formats](#log-format)區段中提及其他屬性。
 
-也有名為`sourcetype`的屬性，其設定為下列其中一個值：
+也有名為`Source-Type`的屬性，其設定為下列其中一個值：
 
 * aemaccess
 * aemerror
+* aemrequest
 * aemdispatcher
-* httpdaccess
-* httpderror
+* aemhttpdaccess
+* aemhttpderror
 
 ### Splunk {#splunk}
 
@@ -299,8 +306,13 @@ data:
       enabled: true
       host: "splunk-host.example.com"
       token: "${{SPLUNK_TOKEN}}"
-      index: "AEMaaCS"
+      index: "aemaacs"
 ```
+
+考量事項：
+
+* 依預設，連線埠為443。 您可以選擇使用名為`port`的屬性覆寫它。
+
 
 <!--
 ### Sumo Logic {#sumologic}
@@ -343,119 +355,26 @@ aem_tier: author
 
 ## 進階網路 {#advanced-networking}
 
->[!NOTE]
->
->此功能尚未準備好供早期採用者使用。
-
-
 有些組織會選擇限制記錄目的地可接收哪些流量。
 
-對於CDN記錄檔，您可以將IP位址加入允許清單，如[fastly檔案 — 公用IP清單](https://www.fastly.com/documentation/reference/api/utils/public-ip-list/)中所述。 如果共用IP位址清單太大，請考慮傳送流量至(非Adobe) Azure Blob存放區，其中可寫入邏輯，以將專用IP的記錄傳送至其最終目的地。
+對於CDN記錄檔，您可以將IP位址加入允許清單，如[fastly檔案 — 公用IP清單](https://www.fastly.com/documentation/reference/api/utils/public-ip-list/)中所述。 如果共用IP位址清單太大，請考慮傳送流量至https伺服器或(非Adobe) Azure Blob存放區，其中可寫入邏輯，以將已知IP的記錄傳送至其最終目的地。
 
-針對AEM記錄檔(包括Apache/Dispatcher)，您可以設定記錄檔轉送以通過[進階網路](/help/security/configuring-advanced-networking.md)。 檢視以下三種進階網路型別的模式，這些型別使用選用的`port`引數以及`host`引數。
-
-### 彈性連接埠輸出 {#flex-port}
-
-如果記錄流量是傳送到443以外的連線埠（例如，下面的8443），請設定進階網路，如下所示：
-
-```
-{
-    "portForwards": [
-        {
-            "name": "splunk-host.example.com",
-            "portDest": 8443, # something other than 443
-            "portOrig": 30443
-        }    
-    ]
-}
-```
-
-並設定yaml檔案，如下所示：
+對於AEM記錄檔(包括Apache/Dispatcher)，如果您已設定[進階網路](/help/security/configuring-advanced-networking.md)，則可使用advancedNetworking屬性從專用輸出IP位址或透過VPN轉送記錄檔。
 
 ```
 kind: "LogForwarding"
 version: "1"
+metadata:
+  envTypes: ["dev"]
 data:
   splunk:
     default:
-      host: "${{AEM_PROXY_HOST}}"
-      token: "${{SomeToken}}"
-      port: 30443
-      index: "index_name"
+      enabled: true
+      host: "splunk-host.example.com"
+      port: 443
+      token: "${{SPLUNK_TOKEN}}"
+      index: "aemaacs"
+    aem:
+      advancedNetworking: true
 ```
 
-### 專用輸出IP {#dedicated-egress}
-
-
-如果記錄流量需要來自專用輸出IP，請設定進階網路，如下所示：
-
-```
-{
-    "portForwards": [
-        {
-            "name": "splunk-host.example.com",
-            "portDest": 443, 
-            "portOrig": 30443
-        }    
-    ]
-}
-```
-
-並設定yaml檔案，如下所示：
-
-```
-      
-kind: "LogForwarding"
-version: "1"
-   metadata:
-     envTypes: ["dev"]
-data:
-  splunk:
-     default:
-       enabled: true
-       index: "index_name" 
-       token: "${{SPLUNK_TOKEN}}"  
-     aem:
-       enabled: true
-       host: "${{AEM_PROXY_HOST}}"
-       port: 30443       
-     cdn:
-       enabled: true
-       host: "splunk-host.example.com"
-       port: 443    
-```
-
-### VPN {#vpn}
-
-如果記錄流量需要通過VPN，請設定進階網路，如下所示：
-
-```
-{
-    "portForwards": [
-        {
-            "name": "splunk-host.example.com",
-            "portDest": 443,
-            "portOrig": 30443
-        }    
-    ]
-}
-
-kind: "LogForwarding"
-version: "1"
-   metadata:
-     envTypes: ["dev"]
-data:
-  splunk:
-     default:
-       enabled: true
-       index: "index_name" 
-       token: "${{SPLUNK_TOKEN}}"  
-     aem:
-       enabled: true
-       host: "${{AEM_PROXY_HOST}}"
-       port: 30443       
-     cdn:
-       enabled: true
-       host: "splunk-host.example.com"
-       port: 443     
-```
