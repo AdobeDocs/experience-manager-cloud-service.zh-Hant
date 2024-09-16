@@ -1,13 +1,13 @@
 ---
 title: 上線後
-description: 瞭解如何監控問題並改善效能
+description: 瞭解如何監控問題並改善效能。
 exl-id: 487f0b51-501b-48fc-a796-3cb8a6d64462
 feature: Migration
 role: Admin
-source-git-commit: 13a2386c099624a46e84126a939a9470e9b3a5f2
+source-git-commit: bb2688701b80a560ea9078c2b7b6594ff55ce824
 workflow-type: tm+mt
-source-wordcount: '459'
-ht-degree: 22%
+source-wordcount: '458'
+ht-degree: 16%
 
 ---
 
@@ -16,11 +16,11 @@ ht-degree: 22%
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_troubleshooting"
 >title="AEM 的移難排解"
->abstract="檢閱持續開發和管理記錄檔的最佳做法以及開發人員主控台和 CRXDE Lite 之類的工具，以協助對 AEM 的問題進行移難排解"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-logs.html" text="存取和管理記錄檔"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html#aem-as-a-cloud-service-development-tools" text="AEM as a Cloud Service 開發工具"
+>abstract="檢閱持續開發和管理記錄的最佳實務。 瞭解Developer Console和CRXDE Lite等工具，協助疑難排解AEM問題。"
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-logs" text="存取和管理記錄檔"
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines#aem-as-a-cloud-service-development-tools" text="AEM as a Cloud Service 開發工具"
 
-此歷程是最後一部分，因此您將瞭解如何監視問題，並在移轉完成後改善效能。 您應該確保清理暫存檔，並檢閱持續開發的最佳實務和管理記錄。
+此歷程是最後一部分，協助您瞭解如何監視問題，並在移轉完成後改善效能。 確保清理暫存檔，檢閱持續開發的最佳實務，以及管理記錄。
 
 ## 目前進度 {#story-so-far}
 
@@ -45,7 +45,7 @@ Developer Console中有提供開發、預備和生產環境的除錯AEM as a Clo
 身為使用者，您可以在開發環境中存取CRXDE Lite，但不能在預備或生產環境中存取。
 
 >[!IMPORTANT]
->在執行階段寫入不可變的存放庫（例如`/libs`和`/apps`）會導致錯誤。 此外，您也無法存取預備和生產環境的開發人員工具。
+>在執行階段寫入不可變的存放庫（例如`/libs`和`/apps`）會產生錯誤。 此外，您也無法存取預備和生產環境的開發人員工具。
 
 請參閱[使用CRXDE Lite開發](/help/implementing/developing/tools/crxde.md)，以取得有關如何使用CRXDE Lite開發您的AEM應用程式的詳細資訊。
 
