@@ -5,10 +5,10 @@ exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: dd696580758e7ab9a5427d47fda4275f9ad7997f
+source-git-commit: f45de13049f78f97b256235d9395695cb531c40d
 workflow-type: tm+mt
-source-wordcount: '1488'
-ht-degree: 20%
+source-wordcount: '1490'
+ht-degree: 21%
 
 ---
 
@@ -23,13 +23,13 @@ ht-degree: 20%
 
 * 在新增自訂網域名稱之前，您必須先為要新增的網域新增網域SSL憑證，如檔案[新增SSL憑證](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)中所述。
 * 您必須擁有&#x200B;**業務負責人**&#x200B;或&#x200B;**部署管理員**&#x200B;角色，才能在Cloud Manager中新增自訂網域名稱。
-* 正在使用Fastly CDN。
+* 使用Fastly或其他CDN。
 
 >[!IMPORTANT]
 >
 >即使您使用非AdobeCDN，仍需要將網域新增至Cloud Manager。
 
-## 在何處新增自訂網域名稱{#}
+## 新增自訂網域名稱的位置 {#where-to-add-cdn}
 
 您可以從 Cloud Manager 中的兩個位置新增自訂網域名稱：
 
@@ -68,7 +68,7 @@ ht-degree: 20%
 
    | 如果您選取憑證型別 | 說明 |
    | --- | ---  |
-   | Adobe 管理的憑證 | 請先完成[Adobe受管理憑證步驟](#abobe-managed-cert-steps)，再繼續下一個步驟。 |
+   | Adobe 管理的憑證 | 請先完成[Adobe受管理憑證步驟](#adobe-managed-cert-steps)，再繼續下一個步驟。 |
    | 客戶管理的憑證 | 請先完成[客戶管理的憑證步驟](#customer-managed-cert-steps)，再繼續下一個步驟。 |
 
 1. 按一下&#x200B;**驗證**。
@@ -78,7 +78,6 @@ ht-degree: 20%
    >[!NOTE]
    >
    >如果您使用自我管理的SSL憑證和自我CDN提供者，則可以略過此步驟，並在準備就緒時直接移至[新增CDN設定](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)。
-
 
 
 ### Adobe受管理憑證步驟 {#adobe-managed-cert-steps}
@@ -97,7 +96,7 @@ ht-degree: 20%
 >
 >對於Adobe管理的CDN，使用DV （網域驗證）憑證時，只允許具有ACME驗證的網站。
 
-#### 要求 {#dv-requirements}
+#### 要求 {#adobe-managed-cert-dv-requirements}
 
 在設定您的DNS記錄之前，請先滿足這些要求。
 
@@ -105,7 +104,7 @@ ht-degree: 20%
 * 能夠編輯組織網域的DNS記錄，或聯絡可以編輯的適當人員。
 * 您必須已驗證您設定的自訂網域名稱，如檔案[檢查網域名稱狀態](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)中所述。
 
-#### CNAME記錄 {#cname-record}
+#### CNAME記錄 {#adobe-managed-cert-cname-record}
 
 正式名稱或 CNAME 記錄是一種將別名對應到真實或正式網域名稱的 DNS 記錄。CNAME 記錄通常用於將子網域 (例如 `www.example.com`) 對應到託管該子網域內容的網域。
 
@@ -115,7 +114,7 @@ ht-degree: 20%
 | --- | --- |
 | `www.customdomain.com` | `cdn.adobeaemcloud.com` |
 
-#### APEX記錄 {#apex-record}
+#### APEX記錄 {#adobe-managed-cert-apex-record}
 
 Apex 網域是不包含子網域的自訂網域，例如`example.com`。Apex網域已透過您的DNS提供者設定`A`、`ALIAS`或`ANAME`記錄。 Apex 網域必須指向特定的 IP 位址。
 
@@ -132,7 +131,6 @@ Apex 網域是不包含子網域的自訂網域，例如`example.com`。Apex網�
 * `A record for domain @ pointing to IP 151.101.195.10`
 
 
-
 ### 客戶管理的憑證步驟 {#customer-managed-cert-steps}
 
 如果您選取憑證型別&#x200B;*客戶管理的憑證*，請在&#x200B;**驗證網域**&#x200B;對話方塊中完成下列步驟。
@@ -145,7 +143,7 @@ Apex 網域是不包含子網域的自訂網域，例如`example.com`。Apex網�
 
 Cloud Manager使用特定TXT記錄來授權要在CDN服務中託管的網域。 在授權Cloud Manager使用自訂網域部署CDN服務並將其與後端服務關聯的區域中，建立DNS TXT記錄。 此關聯完全在您的控制之下，並授權 Cloud Manager 將內容從服務提供給網域。這種授權可以被授予也可以被撤銷。TXT記錄特定於網域和Cloud Manager環境。
 
-## 要求 {#requirements-customer-cert}
+#### 要求 {#customer-managed-cert-requirements}
 
 在新增TXT記錄之前，請先滿足這些要求。
 
@@ -153,7 +151,7 @@ Cloud Manager使用特定TXT記錄來授權要在CDN服務中託管的網域。 
 * 能夠編輯組織網域的DNS記錄，或聯絡可以編輯的適當人員。
 * 首先，新增自訂網域名稱，如本文前面所述。
 
-## 新增TXT記錄以進行驗證 {#verification}
+#### 新增TXT記錄以進行驗證 {#customer-managed-cert-verification}
 
 1. 在&#x200B;**驗證網域**&#x200B;對話方塊中，Cloud Manager會顯示用於驗證的名稱和TXT值。 複製此值。
 
@@ -170,7 +168,7 @@ Cloud Manager使用特定TXT記錄來授權要在CDN服務中託管的網域。 
 
 1. 將TXT記錄儲存至您的網域主機。
 
-## 驗證TXT記錄 {#verify}
+#### 驗證TXT記錄 {#customer-managed-cert-verify}
 
 完成後，可執行下列指令來驗證結果。
 
