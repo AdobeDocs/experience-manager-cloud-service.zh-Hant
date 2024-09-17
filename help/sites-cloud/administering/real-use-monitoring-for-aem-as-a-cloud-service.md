@@ -4,9 +4,9 @@ description: 瞭解Real Use Monitoring (RUM) ，這是一項自動化服務，�
 exl-id: 91fe9454-3dde-476a-843e-0e64f6f73aaf
 feature: Administering
 role: Admin
-source-git-commit: ed52bac52618e23b9bcbe7c6767501c6711aff00
+source-git-commit: fbc3358f1be3ae7ce3142cdc84815d304a2d6c38
 workflow-type: tm+mt
-source-wordcount: '1012'
+source-wordcount: '1009'
 ht-degree: 1%
 
 ---
@@ -27,7 +27,7 @@ RUM (Real Use Monitoring)服務是一種效能監視技術，可即時監視網�
 
 ## 誰能從「即時使用監控」服務中受益？ {#who-can-benefit-from-rum-service}
 
-AEM開發出的Real Use Monitoring可協助客戶和Adobe瞭解一般使用者如何與AEM網站互動。 「即時監控」可診斷效能問題，並評估實驗的成效。 「即時使用監控」可透過取樣來保留訪客的隱私權 — 只監控所有頁面檢視的一小部分 — 並且不會收集任何個人識別資訊(PII)。
+Real Use Monitoring可協助客戶和Adobe瞭解一般使用者與AEM網站的互動情形。 「即時監控」可診斷效能問題，並評估實驗的成效。 「即時使用監控」可透過取樣來保留訪客的隱私權 — 只監控所有頁面檢視的一小部分 — 並且不會收集任何個人識別資訊(PII)。
 
 ## Real Use Monitoring服務與隱私權 {#rum-service-and-privacy}
 
@@ -59,7 +59,7 @@ Real Use Monitoring服務可防止收集個人識別資訊。 RUM收集的完整
 
 ## Real Use Monitoring如何為客戶運作 {#how-rum-works-for-a-customer}
 
-Real Use Monitoring會自動監視使用者端流量。 身為Adobe客戶，您無需執行任何其他步驟，因為此服務已順暢整合至您現有的設定。 透過「實際使用監控(RUM)」成為「一般可用性(GA)」 ，您將自動受益於這項新功能。 Real Use Monitoring服務目前不會透過視覺化工具公開任何量度。 我們正在努力儘快為您提供此功能。
+Real Use Monitoring會自動監視使用者端流量。 身為Adobe客戶，您無需執行任何其他步驟，因為此服務已順暢整合至您現有的設定。 隨著實際使用監控(RUM)服務正式推出，您將自動受益於這項新功能。 Real Use Monitoring服務目前不會公開任何受客戶影響的量度來進行監視。 我們正在努力儘快為您提供此功能。
 
 <!-- Alexandru: hiding temporarily, until we figure out where this needs to be linked to 
 
