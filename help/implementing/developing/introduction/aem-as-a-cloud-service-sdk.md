@@ -4,9 +4,9 @@ description: AEM as a Cloud Service Software Development Kit概述
 exl-id: 06f3d5ee-440e-4cc5-877a-5038f9bd44c6
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 8ccf03ebcb4a96b66a15dc9a1161a857888278a7
 workflow-type: tm+mt
-source-wordcount: '1213'
+source-wordcount: '1256'
 ht-degree: 1%
 
 ---
@@ -24,6 +24,10 @@ AEM as a Cloud Service SDK由下列成品組成：
 
 * **6.5已棄用的Java™ API Jar** — 自AEM 6.5起已移除的額外一組介面
 * **6.5已棄用的Javadoc Jar** — 其他一組介面的Javadoc
+
+>[!NOTE]
+> 
+> AEM as a Cloud Service和SDK在許多不同方面有所差異。 對於需要快速反複變更的情況，Adobe已推出快速開發環境。 如需詳細資訊，請檢視[快速開發環境](/help/implementing/developing/introduction/rapid-development-environments.md)。
 
 ## 針對SDK進行建置 {#building-for-the-sdk}
 
