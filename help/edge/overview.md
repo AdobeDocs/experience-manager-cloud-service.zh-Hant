@@ -4,10 +4,10 @@ description: 了解 Edge Delivery Services 提供的效能和完善 Lighthouse �
 feature: Edge Delivery Services
 exl-id: 03a1aa93-d2e6-4175-9cf3-c7ae25c0d24e
 role: Admin, Architect, Developer
-source-git-commit: 6c7e704dff97e8549664618f879863c3ca0f8f86
-workflow-type: ht
-source-wordcount: '1356'
-ht-degree: 100%
+source-git-commit: fa50e661d05a5083be3605a8c6e26450357f4aec
+workflow-type: tm+mt
+source-wordcount: '1425'
+ht-degree: 93%
 
 ---
 
@@ -135,7 +135,11 @@ Adobe 致力為您提供 Edge Delivery Services、WYSIWYG 和文件型製作的�
 
 ### 記錄支援服務單 {#support-ticket}
 
-如果產品問題需要額外調查和故障排除，並且必須符合回應 SLT，您可以使用 Admin Console 按照此流程來提交支援服務單：
+如果產品問題需要額外的調查和疑難排解，並且必須符合回應SLT，您可以提交支援票證。
+
+若要登入支援票證，您必須先在Cloud Manager中註冊Edge Delivery網站。 建議所有AEM as a Cloud Service使用者在Cloud Manager中註冊您的網站，[可帶來許多好處。](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)如果您尚未註冊網站，請參閱[Cloud Manager檔案](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md)以取得詳細資料。
+
+您的網站向Cloud Manager註冊後，請使用Admin Console按照此流程提交支援票證：
 
 1. [依照標準支援流程](https://experienceleague.adobe.com/?support-tab=home#support)並建立服務單。
 1. 將 **Edge Delivery** 加入服務單標題中。
