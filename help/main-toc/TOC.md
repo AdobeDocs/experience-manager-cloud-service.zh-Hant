@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的運作方式以及該軟體可以為您做哪些事。
 breadcrumb-title: 使用手冊
 user-guide-title: AEM as a Cloud Service
-source-git-commit: f0dc6a753590a1aaddcf01b9766ab0ab6373187c
+source-git-commit: 8349f6d4d4f04d8609d5a5241b973201b54b2cd2
 workflow-type: tm+mt
-source-wordcount: '5641'
+source-wordcount: '5651'
 ht-degree: 97%
 
 ---
@@ -625,8 +625,6 @@ ht-degree: 97%
       + [管理標記](/help/assets/tagging-management-assets-view.md)
       + [Content Credentials](/help/assets/content-credentials.md)
       + [發佈資產至 AEM 和 Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
-
-
    + Content Hub {#content-hub}
       + [概觀](/help/assets/product-overview.md)
       + [部署 Content Hub](/help/assets/deploy-content-hub.md)
@@ -1068,9 +1066,6 @@ ht-degree: 97%
    + [產生變化版本](/help/generative-ai/generate-variations.md)
 + 實施 {#implementing}
    + [為 AEM as a Cloud Service 實施應用程式](/help/implementing/home.md)
-
-
-
    + 使用 Cloud Manager {#using-cloud-manager}
       + [導覽](/help/implementing/cloud-manager/navigation.md)
       + 方案 {#programs}
@@ -1149,9 +1144,6 @@ ht-degree: 97%
       + [瞭解Cloud Service內容請求](/help/implementing/cloud-manager/content-requests.md)
       + [CDN 效能儀表板](/help/implementing/cloud-manager/cdn-performance.md)
       + [Cloud Manager 常見問題集](/help/implementing/cloud-manager/faqs.md)
-
-
-
    + 為 AEM as a Cloud Service 開發 {#developing}
       + [AEM 專案結構](/help/implementing/developing/introduction/aem-project-content-package-structure.md)
       + [AEM 專案存放庫結構套件](/help/implementing/developing/introduction/repository-structure-package.md)
@@ -1259,7 +1251,7 @@ ht-degree: 97%
       + [ContextHub API](/help/implementing/developing/personalization/contexthub-api.md)
       + [使用 ContextHub 設定分段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/personalization/contexthub-segmentation.html?lang=zh-hant)
    + 設定和擴充 AEM as a Cloud Service {#configuring-and-extending}
-      + 使用 App Builder 延伸 AEM{#app-builder}
+      + 使用App Builder {#app-builder}延伸AEM
          + [使用 Adobe Developer App Builder 延伸 AEM](/help/implementing/developing/extending/app-builder/extending-aem-with-app-builder.md)
          + [App Builder 簡介](/help/implementing/developing/extending/app-builder/videos/introduction.md)
          + [Adobe Developer Console](/help/implementing/developing/extending/app-builder/videos/adobe-developer-console.md)
@@ -1287,6 +1279,10 @@ ht-degree: 97%
       + [擴充頁面屬性](/help/implementing/developing/extending/page-properties.md)
       + [擴充大量編輯器](/help/implementing/developing/extending/bulk-editor.md)
       + [擴充 MSM](/help/implementing/developing/extending/msm.md)
+      + 國際化{#internationalization}
+         + [國際化元件](/help/implementing/developing/extending/i18n/components.md)
+         + [國際化UI字串](/help/implementing/developing/extending/i18n/dev.md)
+         + [擷取要轉譯的字串](/help/implementing/developing/extending/i18n/extract.md)
    + 部署至 AEM as a Cloud Service {#deploying}
       + [部署至 AEM as a Cloud Service ](/help/implementing/deploying/overview.md)
       + [AEM 版本更新](/help/implementing/deploying/aem-version-updates.md)
