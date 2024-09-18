@@ -4,7 +4,7 @@ description: 瞭解如何使用Edge Delivery Services傳遞Cloud Manager專案�
 exl-id: f33bd6f0-62fc-4ecc-b8d2-65d1f1c44d82
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: c952e69aa637b30abec4deba0e643b4287d84330
+source-git-commit: ad6a0e13f27839b9900e440d60948158ddf75d99
 workflow-type: tm+mt
 source-wordcount: '737'
 ht-degree: 6%
@@ -68,7 +68,7 @@ AEM as a Cloud Service中的Cloud Manager可讓您為專案啟用Edge Delivery�
 
 ![Edge Delivery網站待辦事項清單](/help/implementing/cloud-manager/assets/cm-eds-todo-list.png)
 
-|  | 任務 | 說明 |
+|   | 任務 | 說明 |
 | --- | --- | --- |
 | 1 | 加入產品協作頻道 | 按一下&#x200B;**立即提交請求**&#x200B;提交請求給Adobe以建立貴公司的管道。 如果頻道已存在，則會將您轉送到公司的頻道。 |
 | 2 | 完成先決條件 | 按一下&#x200B;**檢視快速入門教學課程**，會將您導向[快速入門 — 開發人員教學課程](https://www.aem.live/developer/tutorial)。 |
@@ -76,5 +76,7 @@ AEM as a Cloud Service中的Cloud Manager可讓您為專案啟用Edge Delivery�
 | 4 | 新增網域 | 請參閱[新增自訂網域名稱](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)。 |
 | 5 | 新增 SSL 憑證 | 請參閱[新增SSL憑證](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)。 |
 | 6 | 設定Edge Delivery網站的CDN | 請參閱[新增CDN組態](#add-cdn)。 |
+
+<!-- &#x2460; for "1" inside circle -->
 
 >[!VIDEO](https://video.tv.adobe.com/v/3428020?learn=on)
