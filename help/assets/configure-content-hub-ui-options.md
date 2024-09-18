@@ -1,14 +1,20 @@
 ---
 title: 設定 Content Hub 使用者介面
 description: 設定 Content Hub 使用者介面
-source-git-commit: 7224cca950e61bea298f246245bdb221fd8fa22e
+exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
+source-git-commit: 96c50aad9368adc83f8698dc35266146b1883672
 workflow-type: tm+mt
-source-wordcount: '1119'
+source-wordcount: '1185'
 ht-degree: 5%
 
 ---
 
 # 設定 Content Hub 使用者介面 {#configure-content-hub-user-interface}
+
+>[!CONTEXTUALHELP]
+>id="configure_content_hub"
+>title="設定 Content Hub 使用者介面"
+>abstract="Experience Manager Assets可讓管理員設定Content Hub使用者介面上的可用選項。 根據管理員選取的設定選項，Content Hub使用者可以在Content Hub上檢視欄位。 設定選項包括匯入資產時的中繼資料、篩選器、資產屬性、搜尋資產時的中繼資料、個人化的品牌，以及任何自訂連結。"
 
 <!-- ![Download assets](assets/download-asset.jpg) -->
 ![在Content Hub上設定資產](assets/configure-assets.png)
@@ -43,7 +49,7 @@ Experience Manager Assets可讓管理員設定Content Hub使用者介面上的�
 
 ## 在Content Hub上管理設定選項 {#manage-configuration-options}
 
-為您的使用者管理下列設定選項：
+以管理員身分，管理使用者的下列組態選項：
 
 * [匯入](#configure-import-options-content-hub)
 
@@ -184,5 +190,3 @@ Content Hub可讓管理員設定在搜尋資產時顯示的篩選器。 執行�
 自訂連結在Content Hub首頁的「深入分析」標籤旁邊會顯示為新標籤。
 
 ![Content Hub上的設定UI自訂連結標籤](assets/configuration-ui-custom-link-tab.png)
-
-
