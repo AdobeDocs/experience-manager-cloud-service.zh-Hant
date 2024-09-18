@@ -3,9 +3,9 @@ title: 適用於  [!DNL Adobe Experience Manager]  as a  [!DNL Cloud Service] �
 description: 使用Asset Selector搜尋、尋找和擷取應用程式內的資產中繼資料和轉譯。
 role: Admin, User
 exl-id: 62b0b857-068f-45b7-9018-9c59fde01dc3
-source-git-commit: 0b8c345efa4c8f59b423644944ca2a6f8d54cbb4
+source-git-commit: 027922c304be9c36b600b04b264d571ea8ed60d4
 workflow-type: tm+mt
-source-wordcount: '1295'
+source-wordcount: '1314'
 ht-degree: 34%
 
 ---
@@ -196,15 +196,15 @@ Asset Selector也可讓您切換資產選取的存放庫。 您可以從左側�
         <em>瞭解如何整合Asset Selector與Dynamic Media Open API。</em>
         </p>
      </td>
-</tr>
-<tr>
-    <td>
+     <td>
         <img src="assets/asset-selector-examples.gif" width="70px" height="70px" alt="Asset Selector屬性圖形"><br/>
         <a href="asset-selector-customization.md">資產選擇器屬性</a>
         <p>
         <em>瞭解自訂Asset Selector各種元件的基本知識，例如篩選器、資產選擇、過期資產等等。</em>
         </p>
     </td>
+</tr>
+<tr>
     <td>
         <img src="assets/asset-selector-properties.gif" width="70px" height="70px" alt="資產選擇器範例圖形"><br/>
         <a href="asset-selector-customization.md">資產選擇器範例</a>
@@ -225,6 +225,15 @@ Asset Selector也可讓您切換資產選取的存放庫。 您可以從左側�
         <p>
         <em>瞭解如何從您的本機或協力廠商檔案系統上傳檔案或資料夾至Asset Selector。</em>
         </p>
+    </td>
+     <td>
+        <img src="assets/asset-selector-collections.gif" width="70px" height="70px" alt="Asset Selector集合圖形"><br/>
+        <a href="asset-selector-collections.md">資產選擇器集合</a>
+        <p>
+        <em>瞭解如何使用Experience Manager存放庫在Asset Selector中使用集合。</em>
+        </p>
+    </td>
+    <td>
     </td>
 </tr>
 </table>
