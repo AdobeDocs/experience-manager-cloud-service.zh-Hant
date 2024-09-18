@@ -1,34 +1,29 @@
 ---
 title: 將Edge Delivery網站新增至Cloud Manager
-description: 瞭解如何將Edge Delivery網站新增到您的生產計畫或沙箱計畫，以及它帶來的好處。
+description: 瞭解如何將Edge Delivery網站新增到您的生產計畫或沙箱計畫。
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 68f05c49ebc3d46aa44b3998e6142ab8547e5455
+source-git-commit: c952e69aa637b30abec4deba0e643b4287d84330
 workflow-type: tm+mt
-source-wordcount: '565'
+source-wordcount: '446'
 ht-degree: 2%
 
 ---
 
 
-# 將Edge Delivery網站新增至Cloud Manager {#eds-add-site}
+# 將Edge Delivery網站新增至Cloud Manager {#adding}
 
-瞭解如何將Edge Delivery網站新增到您的生產計畫或沙箱計畫，以及它帶來的好處。
+您可以將Edge Delivery網站新增到生產計畫或沙箱計畫。
 
-## 簡介 {#introduction}
+必須將Edge Delivery網站新增至Cloud Manager，才能[註冊Edge Delivery專案的支援票證](/help/edge/overview.md##support-ticket)。
 
-在使用AEM as a Cloud Service的Edge Delivery Services專案中，建議您將Edge Delivery網站新增至Cloud Manager。 將您的Edge Delivery網站新增至Cloud Manager，為您提供下列優點。
+另請參閱[Cloud ManagerEdge Delivery Services簡介](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)。
 
-* [存取Adobe管理的CDN](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)
-* [存取SLA報表](/help/implementing/cloud-manager/sla-reporting.md)
-* [存取授權使用報告](/help/implementing/cloud-manager/license-dashboard.md)
-
-請注意，必須將您的Edge Delivery網站新增至Cloud Manager，才能[註冊Edge Delivery專案的支援票證。](/help/edge/overview.md##support-ticket)
-
-## 將和Edge Delivery網站新增至Cloud Manager {#adding}
+**若要將Edge Delivery網站新增至Cloud Manager：**
 
 1. 在[`https://my.cloudmanager.adobe.com`](https://my.cloudmanager.adobe.com/)登入Cloud Manager並選取適當的程式。
 1. 執行下列任一項作業：
+
    * 從&#x200B;**計畫總覽**&#x200B;頁面，按一下&#x200B;**Edge Delivery**&#x200B;標籤。 然後，在頁面的右下角附近，按一下&#x200B;**新增Edge Delivery網站**。
 
      ![從Edge Delivery索引標籤新增Edge Delivery網站](/help/implementing/cloud-manager/assets/cm-eds-add1.png)
@@ -59,11 +54,3 @@ ht-degree: 2%
 1. 按一下&#x200B;**驗證**。
 
 驗證存放庫後，其在Edge Deliver Sites表格中的狀態會變更為綠色圓形，且內有白色勾號。
-
-將Edge Delivery Services新增到生產計畫後，您的Edge Delivery Services授權就會套用到該計畫。
-
-每個Edge Delivery網站都有&#x200B;**Edge Delivery待辦事項清單**，可引導您建立Edge Delivery網站。
-
-![Edge Delivery待辦事項應用程式](/help/implementing/cloud-manager/assets/edge-delivery-to-do-ist.png)
-
-如需這些步驟的詳細資訊，請參閱檔案[ Cloud ManagerEdge Delivery Services簡介](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md#ed-todo-list)。

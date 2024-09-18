@@ -4,7 +4,7 @@ description: 瞭解如何使用Edge Delivery Services傳遞Cloud Manager專案�
 exl-id: f33bd6f0-62fc-4ecc-b8d2-65d1f1c44d82
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: a51e2cf3f91b3bc1fe1600024943f6bd95f78352
+source-git-commit: c952e69aa637b30abec4deba0e643b4287d84330
 workflow-type: tm+mt
 source-wordcount: '737'
 ht-degree: 6%
@@ -34,7 +34,7 @@ AEM as a Cloud Service中的Cloud Manager可讓您為專案啟用Edge Delivery�
 
 此外，您可以存取統一體驗來管理所有AEM屬性，同時確保關鍵工作流程的一致性。 這些功能包括網域名稱管理、SSL憑證管理和CDN對應。
 
-## 將Edge Delivery Services新增到生產計畫或沙箱計畫
+## 關於將Edge Delivery Services新增到生產計畫或沙箱計畫
 
 視您專案的開始方式而定，可以多種方式新增Edge Delivery Services。
 
@@ -51,17 +51,16 @@ AEM as a Cloud Service中的Cloud Manager可讓您為專案啟用Edge Delivery�
 >* 您的組織必須先擁有未使用的Edge Delivery Services授權，才能將其套用至生產計畫。
 >* 一旦Edge Delivery Services授權套用至計畫或從計畫中移除，變更就會立即生效，而無需執行管道。
 
-
 ## AdobeEdge Delivery Services的建議路徑 {#recommended-path-eds}
 
 透過Cloud Manager存取及使用Adobe授權，讓您從Edge Delivery Services中獲得最大利益。 這麼做可讓您享有數個主要優點。
 
-* [在您選擇的程式上使用授權](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md)和/或[更新其他程式。](/help/implementing/cloud-manager/edge-delivery/manage-edge-delivery-sites.md)
+* [在您選擇的程式上使用授權](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md)，或[更新其他程式](/help/implementing/cloud-manager/edge-delivery/manage-edge-delivery-sites.md)，或同時使用兩者。
 * 利用[API-first](https://developer.adobe.com/experience-cloud/experience-manager-apis/)的優勢執行CRUD （建立、讀取、更新、刪除）作業。
 * [存取SLA報告](/help/implementing/cloud-manager/sla-reporting.md) （*即將推出*）
 * [取得您註冊之生產程式的Adobe支援](/help/edge/overview.md#support-ticket)。
 
-此外，使用Cloud Manager可讓您將[Adobe管理的CDN](/help/implementing/dispatcher/cdn.md#aem-managed-cdn)用於您的Edge Delivery網站，並利用自助服務CDN管理等關鍵優點，包括設定和增加DV憑證。 此外，建立DV憑證後，Adobe會每三個月自動更新一次（除非憑證被刪除）。 如果您沒有Adobe的Edge Delivery Services授權，但決定略過這些權益，您只能使用自己的自助CDN。 此安裝程式必須在[`aem.live`平台上。](https://www.aem.live/docs/go-live-checklist#cdn-configuration)
+此外，使用Cloud Manager可讓您將[Adobe管理的CDN](/help/implementing/dispatcher/cdn.md#aem-managed-cdn)用於您的Edge Delivery網站，並利用自助服務CDN管理等關鍵優點，包括設定和增加DV憑證。 此外，建立DV憑證後，Adobe會每三個月自動更新一次（除非憑證被刪除）。 如果您沒有Adobe的Edge Delivery Services授權，但決定略過這些權益，您只能使用自己的自助CDN。 此安裝程式必須在[`aem.live`平台](https://www.aem.live/docs/go-live-checklist#cdn-configuration)上。
 
 ## 關於Edge Delivery待辦事項清單 {#ed-todo-list}
 
