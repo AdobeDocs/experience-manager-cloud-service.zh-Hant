@@ -5,10 +5,10 @@ exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: d2f05915c0bf0af073db7f070b83f13aeae55252
+source-git-commit: 8e2fc0d4ee82e79d1a822a528b1a46acce3c192a
 workflow-type: tm+mt
-source-wordcount: '722'
-ht-degree: 13%
+source-wordcount: '904'
+ht-degree: 11%
 
 ---
 
@@ -50,11 +50,30 @@ ht-degree: 13%
    * 在&#x200B;**私密金鑰**&#x200B;欄位中，只有在您變更憑證時才更新此欄位。
    * 在&#x200B;**憑證鏈**&#x200B;欄位（或信任鏈）貼上憑證鏈。
 
-1. 按一下&#x200B;**更新**&#x200B;以儲存變更並自動套用變更。
+1. 按一下&#x200B;**更新**&#x200B;以儲存變更並自動套用變更。—>
 
 ## 取代過期的客戶管理的SSL憑證 {#replace-ssl-certificate}
 
 請依照[更新過期的SSL憑證](#update-ssl-certificate)中所述的相同步驟操作，以取代過期的客戶管理的SSL憑證。
+
+## 重新命名Adobe管理的SSL憑證(#rename-an-ssl-certificate)
+
+以下是可能需要重新命名SSL憑證的幾個原因：
+
+* **已改善組織**：重新命名憑證可協助釐清其用途，例如識別其適用的環境（例如，測試、生產）或網域。
+* **避免混淆**：如果您正在管理多個憑證，使用清楚的描述性名稱有助於避免發生錯誤，例如將錯誤的憑證套用至錯誤的網域。
+* **法規遵循與稽核**：為了安全性和稽核目的，較容易追蹤正確命名的憑證。
+
+**若要重新命名Adobe管理的SSL憑證：**
+
+1. 在[my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)登入Cloud Manager並選取適當的程式。
+1. 在「**[我的程式](/help/implementing/cloud-manager/navigation.md#my-programs)**」控制台中，選取程式。
+1. 在頁面的左上角，按一下漢堡圖示以顯示左側導覽功能表。
+1. 在&#x200B;**服務**&#x200B;標題下，按一下&#x200B;**SSL憑證**。
+1. 在&#x200B;**SSL憑證**&#x200B;頁面上，按一下您要重新命名憑證之資料列結尾的省略符號。
+1. 按一下&#x200B;**重新命名**。
+1. 在&#x200B;**重新命名DV憑證**&#x200B;對話方塊的&#x200B;**憑證名稱**&#x200B;文字欄位中，輸入憑證的新名稱。
+1. 按一下&#x200B;**重新命名**。
 
 ## 刪除SSL憑證 {#deleting-an-ssl-certificate}
 

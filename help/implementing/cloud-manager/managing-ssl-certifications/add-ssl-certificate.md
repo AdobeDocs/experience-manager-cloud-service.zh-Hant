@@ -5,9 +5,9 @@ exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: b222b4384b1c2a21ecbb244d149ce7e51cc7990f
+source-git-commit: 8e2fc0d4ee82e79d1a822a528b1a46acce3c192a
 workflow-type: tm+mt
-source-wordcount: '533'
+source-wordcount: '548'
 ht-degree: 9%
 
 ---
@@ -49,7 +49,7 @@ ht-degree: 9%
 
    | | 使用案例 | 步驟 |
    | --- | --- | --- |
-   | 1 | **新增Adobe管理的憑證(DV)** | **若要新增Adobe管理的憑證(DV)：**<br> a。選取憑證型別&#x200B;**受管理的Adobe(DV)**。<br>![新增DV憑證](/help/implementing/cloud-manager/assets/ssl/add-dv-certificate.png)<br>b。在&#x200B;**選取網域**&#x200B;下拉式清單中，選取一或多個要與DV憑證關聯的網域。<br>沒有要選取的網域？ 若是如此，表示您必須新增自訂網域。 請參閱[新增自訂網域名稱](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)。 新增完自訂網域名稱后，請返回本主題並從步驟1重新開始。<br>天。繼續步驟7。 |
+   | 1 | **新增Adobe管理的憑證(DV)** | **若要新增Adobe管理的憑證(DV)：**<br> a。選取憑證型別&#x200B;**受管理的Adobe(DV)**。<br>![新增DV憑證](/help/implementing/cloud-manager/assets/ssl/add-dv-certificate.png)<br>b。在&#x200B;**憑證名稱**&#x200B;欄位中，輸入您要與憑證關聯的名稱。<br>c。在&#x200B;**選取網域**&#x200B;下拉式清單中，選取一或多個要與DV憑證關聯的網域。<br>沒有要選取的網域？ 若是如此，表示您必須新增自訂網域。 請參閱[新增自訂網域名稱](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)。 新增完自訂網域名稱后，請返回本主題並從步驟1重新開始。<br>天。繼續步驟7。 |
    | 2 | **新增客戶管理的憑證(OV/EV)** | **若要新增客戶管理的憑證(OV/EV)：**<br> a。選取憑證型別&#x200B;**客戶管理的(OV/EV)**。<br>b。在&#x200B;**憑證名稱**&#x200B;欄位中，輸入憑證的名稱。 此欄位僅供參考，可以是任何有助於您輕鬆引用憑證的名稱。<br>c。在&#x200B;**憑證**、**私密金鑰**&#x200B;和&#x200B;**憑證鏈**&#x200B;欄位中，將必要的值貼到各自的欄位中。<br>![新增SSL憑證對話方塊](/help/implementing/cloud-manager/assets/ssl/ssl-cert-02.png)<br>顯示值中偵測到的任何錯誤。 您必須先解決所有錯誤，才能儲存憑證。 請參閱[憑證錯誤](#certificate-errors)，深入了解疑難排解常見錯誤。<br>天。繼續步驟7。 |
 
 <!--
