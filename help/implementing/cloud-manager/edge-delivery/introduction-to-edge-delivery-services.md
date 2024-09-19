@@ -4,7 +4,7 @@ description: 瞭解如何使用Edge Delivery Services傳遞Cloud Manager專案�
 exl-id: f33bd6f0-62fc-4ecc-b8d2-65d1f1c44d82
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 3db0b72a267a001b3fda5341a6c2c642babfb9eb
+source-git-commit: e28e4bf06c28f97d665e5fd86ab87d484116504f
 workflow-type: tm+mt
 source-wordcount: '746'
 ht-degree: 6%
@@ -62,7 +62,10 @@ AEM as a Cloud Service中的Cloud Manager可讓您為專案啟用Edge Delivery�
 >* 您的組織必須先擁有未使用的Edge Delivery Services授權，才能將其套用至生產計畫。
 >* 一旦Edge Delivery Services授權套用至計畫或從計畫中移除，變更就會立即生效，而無需執行管道。
 
+
 ## 關於Edge Delivery待辦事項清單 {#ed-todo-list}
+
+<!-- &#x2460; for "1" inside circle -->
 
 **Edge Delivery待辦事項清單**&#x200B;是入門工作檢查清單，旨在引導您完成入門、管理您的Edge Delivery網站直到[上線](/help/journey-onboarding/go-live-checklist.md)。
 
@@ -77,7 +80,6 @@ AEM as a Cloud Service中的Cloud Manager可讓您為專案啟用Edge Delivery�
 | 5 | 新增 SSL 憑證 | 請參閱[新增SSL憑證](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)。 |
 | 6 | 設定Edge Delivery網站的CDN | 請參閱[新增CDN組態](#add-cdn)。 |
 
-<!-- &#x2460; for "1" inside circle -->
 
 ## 記錄支援票證 {#eds-support-ticket}
 
