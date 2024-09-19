@@ -3,9 +3,9 @@ title: 在Cloud Manager中管理Edge Delivery網站
 description: 瞭解如何將CDN設定新增至Edge Delivery網站或刪除Edge Delivery網站。
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 8e2fc0d4ee82e79d1a822a528b1a46acce3c192a
+source-git-commit: 991db00a833e964d4837bdde9a04ee72b3ad782d
 workflow-type: tm+mt
-source-wordcount: '508'
+source-wordcount: '512'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 在AdobeCloud Manager中，您可能想要重新命名Edge Delivery網站，原因如下：
 
-* **清晰度與組織**：為了更清楚描述網站的目的或其相關環境（例如，生產、測試）。
+* **清晰度與組織**：更清楚描述網站目的或其相關環境（例如，生產、測試）。
 * **避免混淆**：如果正在使用多個網站，重新命名可協助輕鬆區分它們，減少將設定或更新套用至錯誤網站的機會。
 * **標準化**：遵循一致的命名慣例，符合您組織的准則，以便更輕鬆地進行管理和稽核。
 
@@ -61,3 +61,7 @@ ht-degree: 0%
 
 
      ![從Edge Delivery Sites按鈕](/help/implementing/cloud-manager/assets/cm-eds-delete2.png)新增Edge Delivery網站
+
+### 記錄支援票證 {#eds-support-ticket}
+
+{{support-ticket}}

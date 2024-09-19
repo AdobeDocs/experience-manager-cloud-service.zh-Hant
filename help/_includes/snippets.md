@@ -1,8 +1,8 @@
 ---
-source-git-commit: 11368914a78c1f47c2f341a112bf981545cf6203
+source-git-commit: 991db00a833e964d4837bdde9a04ee72b3ad782d
 workflow-type: tm+mt
-source-wordcount: '993'
-ht-degree: 93%
+source-wordcount: '1139'
+ht-degree: 79%
 
 ---
 # 代碼片段 {#snippets}
@@ -95,7 +95,7 @@ ht-degree: 93%
     <td>「Then」中的驗證/重設欄位/面板/表單規則 </td>
     <td>驗證和重設函數僅支援規則編輯器中的表單物件。 
    </td>
-    <td>驗證和重設函數支援規則編輯器中的表單/面板/欄位物件。 
+    <td>驗證和重設函式支援規則編輯器中的表單/面板/欄位物件。 
    </td>
    </tr>
    <tr>
@@ -134,7 +134,7 @@ ht-degree: 93%
 * [Forms Portal 元件簡介](/help/forms/configure-forms-portal.md)
 * [在 Sites 頁面上列出您的表單](/help/forms/list-forms-on-sites-page.md)
 * [將您的表單儲存為草稿](/help/forms/save-core-component-based-form-as-draft.md)
-* [新增表單連結至 Sites 頁面](/help/forms/add-form-link-to-aem-sites-page.md)
+* [將表單連結新增至網站頁面](/help/forms/add-form-link-to-aem-sites-page.md)
 
 
 ## Cloud Manager IP 允許清單和前端管道 {#allowlist-frontend-pipeline}
@@ -143,7 +143,7 @@ ht-degree: 93%
 >
 >前端管道要求將以下 IP 允許清單預先新增至 Cloud Manager。
 >如有需要，請複製以下位址區塊來[新增 IP 允許清單](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)。每個位址都以逗號區隔。將該區塊貼到「**IP 位址/CIDR**」的欄位 (在「**新增 IP 允許清單**」的對話框裡)。將游標放在位址清單中第一個逗號後面，然後按 **Enter** 鍵。儲存清單。
->為了避免前端管道運作中斷，在啟用管道&#x200B;*之前*，務必先將此 IP 允許清單新增至 Cloud Manager。
+>為避免執行前端管道的中斷，請確保在您啟用管道&#x200B;*之前，將此IP允許清單新增到Cloud Manager*。
 >
 >**Cloud Manager IP 允許清單**
 >52.254.106.192/28,20.186.185.181,52.254.106.240/28,52.254.107.128/28,52.254.105.192/28,52.254.106.176/28,20.186.185.227,52.254.106.144/28,52.254.107.64/28,20.186.185.239,20.22.83.112,52.254.107.80/28,52.254.107.144/28,52.254.106.224/28,20.14.241.153,52.254.107.0/28,52.254.107.32/28,52.254.106.208/28,40.70.154.136/29,52.254.106.160/28,52.254.107.16/28,52.254.106.0/28,4.152.211.251
@@ -160,13 +160,13 @@ ht-degree: 93%
 
 >[!TIP]
 >
->您初次使用 Dynamic Media 嗎？有關 Dynamic Media 的快速、高階概觀，請參閱「[使用 Dynamic Media](/help/assets/dynamic-media/dynamic-media.md)」。
+>您初次使用 Dynamic Media 嗎？如需Dynamic Media的快速、高階概觀，請參閱[使用Dynamic Media](/help/assets/dynamic-media/dynamic-media.md)。
 
 ## 另請參閱Dynamic Media {#see-also-dm}
 
 >[!NOTE]
 >
->* 您初次使用 Dynamic Media 嗎？有關 Dynamic Media 的快速、高階概觀，請參閱「[使用 Dynamic Media](/help/assets/dynamic-media/dynamic-media.md)」。
+>* 您初次使用 Dynamic Media 嗎？如需Dynamic Media的快速、高階概觀，請參閱[使用Dynamic Media](/help/assets/dynamic-media/dynamic-media.md)。
 >
 >* 遵循[Dynamic Media最佳實務](/help/assets/dynamic-media/dm-best-practices.md)以取得最大的價值。
 >
@@ -180,4 +180,19 @@ ht-degree: 93%
 >
 >* 提供[互動式3D支援的體驗](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/3d/dynamic-media-3d-feature-video)。
 >* 其他[Dynamic Media資源庫](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use)。
+
+## 記錄支援服務單 {#support-ticket}
+
+如果產品問題需要額外的調查和疑難排解，並且必須符合回應SLT，您可以提交支援票證。
+
+若要登入支援票證，您必須先在Cloud Manager中註冊Edge Delivery網站。 建議所有AEM as a Cloud Service使用者在Cloud Manager中註冊您的網站，[可帶來許多好處](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)。 如果您尚未註冊網站，請參閱[Cloud Manager檔案](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md)以取得詳細資料。
+
+您的網站向Cloud Manager註冊後，請使用Admin Console按照此流程提交支援票證：
+
+1. [遵循標準支援程式](https://experienceleague.adobe.com/?support-tab=home#support)並建立票證。
+1. 將 **Edge Delivery** 加入服務單標題中。
+1. 在描述中，除了問題描述之外，還提供以下詳細資訊：
+
+   * 已上線網站的 URL。例如：`www.mydomain.com`。
+   * 原始網站的 URL (`.hlx` URL)。
 

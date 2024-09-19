@@ -4,10 +4,10 @@ description: 了解 Edge Delivery Services 提供的效能和完善 Lighthouse �
 feature: Edge Delivery Services
 exl-id: 03a1aa93-d2e6-4175-9cf3-c7ae25c0d24e
 role: Admin, Architect, Developer
-source-git-commit: fa50e661d05a5083be3605a8c6e26450357f4aec
+source-git-commit: 991db00a833e964d4837bdde9a04ee72b3ad782d
 workflow-type: tm+mt
-source-wordcount: '1425'
-ht-degree: 93%
+source-wordcount: '1281'
+ht-degree: 72%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 93%
 
 ## 敏捷反應商務需求 {#agile-reaction}
 
-作為長期公認的業界領導者，Adobe 知道為您的客戶快速建立和發佈有意義的新內容有多重要。市場已經明確了擴大內容創作規模的常見挑戰，包括：
+Adobe是公認的長期業界領導者，知道為客戶快速建立和發佈有意義的新內容是多麼重要。 市場已經明確了擴大內容創作規模的常見挑戰，包括：
 
 1. **對內容的需求持續成長。**
    * 需要解鎖新的內容作者來滿足這項需求。
@@ -36,7 +36,7 @@ ht-degree: 93%
 1. **提高內容投資報酬率的壓力越來越大。**
    * 作者本身需要有能力最佳化他們所創造的內容。
 
-事實證明，整個產業都面臨著相同的趨勢。然而，各個專案的具體要求一定都各不相同。任何 Edge Delivery Services 專案的目標都是專注於找到適合您使用者的解決方案。
+事實證明，整個產業都面臨著相同的趨勢。不過，個別需求不可避免地會因專案而異。 任何Edge Delivery Services專案的目標都是著重尋找適合您的使用者的解決方案。
 
 1. **關注價值而不是功能。** - 確定最佳化的工作流程來為您的作者提供服務，而不是迷失在 AEM 廣泛的功能集中。
 1. **利用 AEM 的靈活性。** - AEM 功能並不一定要獨立使用。使用每個使用案例所需的功能。
@@ -46,7 +46,7 @@ ht-degree: 93%
 
 ## 為您的內容創作者提供靈活的創作工具 {#overview}
 
-Edge Delivery Services 是一組可組合的服務，可讓您以高度靈活的方式在網站上製作內容。您可以使用 [AEM 內容管理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/getting-started/concepts.html?lang=zh-Hant)和 WYSIWYG 製作 (使用 [Universal Editor](/help/sites-cloud/authoring/universal-editor/authoring.md) 以及[文件型製作)。](https://www.aem.live/docs/authoring)
+Edge Delivery Services 是一組可組合的服務，可讓您以高度靈活的方式在網站上製作內容。您可以使用[Universal Editor](/help/sites-cloud/authoring/universal-editor/authoring.md)以及[檔案式撰寫](https://www.aem.live/docs/authoring)，同時使用[AEM內容管理](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/author-publish)和WYSIWYG撰寫。
 
 下圖說明如何在 Microsoft Word (文件型製作) 中編輯內容並將其發佈到 Edge Delivery Services。圖表也展示使用 Universal Editor 的 WYSIWYG 編輯。
 
@@ -67,9 +67,9 @@ Edge Delivery Services 會使用 GitHub，可讓您直接從自己的 GitHub 存
 
 進一步閱讀文件型製作文件：
 
-* 若需如何開始使用 Edge Delivery 的詳細資訊，請參閱[「建置」部分](https://www.aem.live/docs/#build)。
-* 若要了解如何使用 Edge Delivery 製作和發佈內容，請參閱[「發佈」部分](https://www.aem.live/docs/authoring)。
-* 若要了解如何正確啟動您的網站專案，請參閱[「啟動」部分](https://www.aem.live/docs/#launch)。
+* 如需如何開始使用Edge Delivery的詳細資訊，請參閱[建置區段](https://www.aem.live/docs/#build)。
+* 若要了解如何使用 Edge Delivery 編寫和發佈內容，請參閱[「發佈」部份](https://www.aem.live/docs/authoring)。
+* 若要瞭解如何正確啟動您的網站專案，請參閱[啟動區段](https://www.aem.live/docs/#launch)。
 
 ### WYSIWYG 製作 {#wysiwyg-authoring}
 
@@ -84,8 +84,8 @@ Edge Delivery Services 會使用 GitHub，可讓您直接從自己的 GitHub 存
 
 進一步閱讀 WYSIWYG 製作文件：
 
-* 有關通用編輯器和所見即所得創作的概觀，請參閱文件 [Edge Delivery Services 的 WYSIWYG 內容製作](/help/edge/wysiwyg-authoring/authoring.md)。
-* 如需開發人員概觀，請參閱文件「[使用 Edge Delivery Services 進行 WYSIWYG 製作的開發人員快速入門手冊](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)」。
+* 如需Universal Editor和WYSIWYG編寫的概觀，請參閱[Edge Delivery Services的WYSIWYG內容編寫](/help/edge/wysiwyg-authoring/authoring.md)。
+* 如需開發人員概觀，請參閱[使用Edge Delivery Services進行WYSIWYG編寫的開發人員快速入門手冊](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)。
 
 ### 決定您的製作方法 {#authoring-method}
 
@@ -94,21 +94,21 @@ AEM 的靈活性可確保滿足您的創作需求。Adobe 可以幫助您確定�
 * 隨時讓您的內容作者參與決策。
 * 可以實現多種創作方法。
 * 您隨時可以在之後更改您的創作方法。
-* 不要實施之前做出決定，而是將其作為實施的一部分。
+* 您不需要在實施之前作出決定，而是當作實施的一部分。
 
-請參閱文件「[選擇製作方法](authoring-methods.md)」以了解更多資訊。
+如需詳細資訊，請參閱[選擇編寫方法](authoring-methods.md)。
 
 ## Edge Delivery Services 和其他 Adobe Experience Cloud 產品 {#edge-other-products}
 
-Edge Delivery Services 屬於 Adobe Experience Manager 的一部分，因此 Edge Delivery Services 和 AEM Sites 可以在相同網域中共存 (較大型網站的常見使用案例)。此外，您可在 AEM Sites 頁面中輕鬆使用來自 Edge Delivery Services 的內容，反之亦然。
+Edge Delivery Services是Adobe Experience Manager的一部分。 因此，Edge Delivery Services和AEM Sites可以共存於相同網域，這是大型網站的常見使用案例。 此外，您的AEM Sites頁面可以順暢地使用Edge Delivery Services中的內容，反之亦然。
 
-請參閱「[使用 Edge Delivery Services 進行 WYSIWYG 的開發人員入門指南](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)」，了解如何展開您自己的專案並使用 AEM 和 Edge Delivery Services 進行製作。
+請參閱[具有Edge Delivery Services的WYSIWYG開發人員快速入門手冊](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)，瞭解如何開始您自己的專案，以便使用AEM和Edge Delivery Services進行創作。
 
-您也可以將 Edge Delivery Services 與 [Adobe Target、](https://www.aem.live/developer/target-integration) [真實使用者監控 (RUM)](https://www.aem.live/developer/rum) 結合使用，用來診斷網站的使用情況和效能，並且[啟動。](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/tags/home)
+您也可以搭配[Adobe Target](https://www.aem.live/developer/target-integration)、[即時監控(RUM)](https://www.aem.live/developer/rum)使用Edge Delivery Services來診斷網站的使用情況和效能，以及[啟動](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/tags/home)。
 
 ## 開始使用 Edge Delivery Services {#getting-started}
 
-輕鬆開始使用 Edge Delivery Services，請[開始使用 - 開發人員教學課程。](https://www.aem.live/developer/tutorial)
+依照[快速入門 — 開發人員教學課程](https://www.aem.live/developer/tutorial)，輕鬆開始使用Edge Delivery Services。
 
 ## 取得 Adobe 的協助 {#getting-help}
 
@@ -122,12 +122,12 @@ Adobe 提供三個頻道來幫助您使用 Edge Delivery Services：
 
 Adobe 致力為您提供 Edge Delivery Services、WYSIWYG 和文件型製作的最佳社群參與和支援服務。
 
-* 參與 [Experience League 社群](https://adobe.ly/3Q6kTKl)，提出問題、分享意見、發起討論、尋求 Adobe 專家和 AEM 顧問/達人的協助，以及與志趣相投的人即時聯繫。
-* 加入我們的[探索頻道](https://discord.gg/aem-live)，一個更輕鬆的即時互動和靈感想法交流平台。
+* 參與[Experience League社群](https://adobe.ly/3Q6kTKl)以提出問題、分享意見、展開討論、向Adobe專家和AEM顧問/冠軍尋求協助，並即時與志同道合的個人進行交流。
+* 加入[Discord channel](https://discord.gg/aem-live)，這是更輕鬆的即時互動與快速構想交流平台。
 
 ### 如何存取您的產品協作頻道 {#collaboration-channel}
 
-鑑於與使用者直接溝通管道的重要性，所有 AEM 專案在發佈時都會建立 Slack 頻道，以提升作業效率，並存取重要更新和體驗品質的擴充報告。您將獲得 Adobe 邀請您加入針對您組織的 Slack 頻道。
+考慮到與使用者直接溝通管道的價值，所有AEM專案在啟動時都會建立Slack管道，用於快速更新、關鍵更新以及體驗品質的規模化報表。 您會獲得 Adobe 邀請您加入針對您組織的 Slack 頻道。
 
 若要了解更多資訊，請參閱「[使用 Slack 機器人](https://www.aem.live/docs/slack)」文件取得更多詳細資訊。
 
@@ -135,19 +135,8 @@ Adobe 致力為您提供 Edge Delivery Services、WYSIWYG 和文件型製作的�
 
 ### 記錄支援服務單 {#support-ticket}
 
-如果產品問題需要額外的調查和疑難排解，並且必須符合回應SLT，您可以提交支援票證。
-
-若要登入支援票證，您必須先在Cloud Manager中註冊Edge Delivery網站。 建議所有AEM as a Cloud Service使用者在Cloud Manager中註冊您的網站，[可帶來許多好處。](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)如果您尚未註冊網站，請參閱[Cloud Manager檔案](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md)以取得詳細資料。
-
-您的網站向Cloud Manager註冊後，請使用Admin Console按照此流程提交支援票證：
-
-1. [依照標準支援流程](https://experienceleague.adobe.com/?support-tab=home#support)並建立服務單。
-1. 將 **Edge Delivery** 加入服務單標題中。
-1. 在描述中，除了問題描述之外，還提供以下詳細資訊：
-
-   * 已上線網站的 URL。例如：`www.mydomain.com`。
-   * 原始網站的 URL (`.hlx` URL)。
+{{support-ticket}}
 
 ## 下一步 {#whats-next}
 
-開始先檢閱[「使用 Edge Delivery Services」。](/help/edge/using.md)
+開始先檢閱「[使用 Edge Delivery Services](/help/edge/using.md)」。
