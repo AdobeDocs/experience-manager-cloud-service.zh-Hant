@@ -7,7 +7,7 @@ exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
 source-git-commit: b222b4384b1c2a21ecbb244d149ce7e51cc7990f
 workflow-type: tm+mt
 source-wordcount: '367'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -35,15 +35,15 @@ AEM as a Cloud Service 中的 Cloud Manager 版本 2024.9.0 發行日期是 2024
 
   >[!NOTE]
   >
-  >[Content Hub](/help/assets/product-overview.md)客戶計劃分階段接收此功能，作為逐步推出的一部分。
+  >在逐步推出功能的過程中，計畫讓 [Content Hub](/help/assets/product-overview.md) 客戶分階段接收此功能。
 
 * **Cloud Manager 的 Edge Delivery Services 支援：**
 
-  如果您擁有AEM Sites中的Edge Delivery Services授權，現在可以直接透過Cloud Manager](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)使用Edge Delivery Services加入您的網站[。 此功能可提供引導式自助上線體驗。它還統一所有 AEM 屬性中的網域名稱管理、SSL 憑證和內容傳遞網路 (CDN) 對應等必要工作流程，確保一致性和效率。<!-- CMGR-49859 -->
+  如果您擁有的 AEM Sites 包含 Edge Delivery Services 授權，[您現在就能直接透過 Cloud Manager 使用 Edge Delivery Services 將您的網站上線](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)。此功能可提供引導式自助上線體驗。它還統一所有 AEM 屬性中的網域名稱管理、SSL 憑證和內容傳遞網路 (CDN) 對應等必要工作流程，確保一致性和效率。<!-- CMGR-49859 -->
 
   >[!NOTE]
   >
-  >[Content Hub](/help/assets/product-overview.md)客戶計劃分階段接收此功能，作為逐步推出的一部分。
+  >在逐步推出功能的過程中，計畫讓 [Content Hub](/help/assets/product-overview.md) 客戶分階段接收此功能。
 
 * 使用 GitHub 存放庫的客戶可立即建立和使用 Web 層級設定管道。<!--( KEEP IN? SP: YES CMGR-59046 and Slack https://cq-dev.slack.com/archives/C07LFP5BZ2L/p1725407057847379 ) -->
 
