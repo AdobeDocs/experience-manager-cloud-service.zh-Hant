@@ -2,7 +2,7 @@
 source-git-commit: 991db00a833e964d4837bdde9a04ee72b3ad782d
 workflow-type: tm+mt
 source-wordcount: '1139'
-ht-degree: 79%
+ht-degree: 83%
 
 ---
 # 代碼片段 {#snippets}
@@ -162,24 +162,24 @@ ht-degree: 79%
 >
 >您初次使用 Dynamic Media 嗎？如需Dynamic Media的快速、高階概觀，請參閱[使用Dynamic Media](/help/assets/dynamic-media/dynamic-media.md)。
 
-## 另請參閱Dynamic Media {#see-also-dm}
+## 另請參閱 Dynamic Media {#see-also-dm}
 
 >[!NOTE]
 >
 >* 您初次使用 Dynamic Media 嗎？如需Dynamic Media的快速、高階概觀，請參閱[使用Dynamic Media](/help/assets/dynamic-media/dynamic-media.md)。
 >
->* 遵循[Dynamic Media最佳實務](/help/assets/dynamic-media/dm-best-practices.md)以取得最大的價值。
+>* 請遵循「[Dynamic Media 最佳實務](/help/assets/dynamic-media/dm-best-practices.md)」以實現最大價值。
 >
->* 試用[快照工具](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot)的Dynamic Media影像功能。
+>* 試用[快照工具](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot)的Dynamic Media影像功能。
 >
->* 使用[最適化視訊](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-dash)確保流暢的視訊播放。
+>* 透過[調適型影片](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-dash)確保影片播放順暢。
 >
->* 使用智慧型裁切](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use)自動裁切[影像。
+>* [使用「智慧裁切」來](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use)自動裁切影像。
 >
->* 使用智慧型裁切](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-smart-crop-video)自動裁切[影片。
+>* [使用「智慧裁切」來](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-smart-crop-video)自動裁切影片。
 >
->* 提供[互動式3D支援的體驗](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/3d/dynamic-media-3d-feature-video)。
->* 其他[Dynamic Media資源庫](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use)。
+>* 提供[互動式3D支援的體驗](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/assets/dynamic-media/3d/dynamic-media-3d-feature-video)。
+>* 其他[ Dynamic Media 資源庫](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use)」。
 
 ## 記錄支援服務單 {#support-ticket}
 

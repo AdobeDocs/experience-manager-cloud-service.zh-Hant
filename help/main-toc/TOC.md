@@ -9,7 +9,7 @@ user-guide-title: AEM as a Cloud Service
 source-git-commit: 8349f6d4d4f04d8609d5a5241b973201b54b2cd2
 workflow-type: tm+mt
 source-wordcount: '5651'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -637,8 +637,8 @@ ht-degree: 97%
       + [使用 Content Hub 下載資產](/help/assets/download-assets-content-hub.md)
       + [在 Content Hub 中管理收藏集](/help/assets/collections-content-hub.md)
       + [在 Content Hub 中使用 Adob&#x200B;&#x200B;e Express 編輯影像](/help/assets/edit-images-content-hub.md)
-      + [Content Hub中的Asset Insights](/help/assets/insights-content-hub.md)
-      + [Content Hub的常見問題集](/help/assets/frequently-asked-questions-content-hub.md)
+      + [Content Hub 中的資產深入分析](/help/assets/insights-content-hub.md)
+      + [Content Hub 的常見問題](/help/assets/frequently-asked-questions-content-hub.md)
    + 最佳做法{#best-practices}
       + [搜尋最佳做法](/help/assets/search-best-practices.md)
       + [中繼資料管理和最佳做法](/help/assets/metadata-best-practices.md)
@@ -1072,7 +1072,7 @@ ht-degree: 97%
          + [方案和方案類型](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
          + [生產方案](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md)
          + [建立生產計畫](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
-         + [沙箱方案](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)
+         + [沙箱計畫](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)
          + [建立沙箱計畫](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md)
          + [編輯計畫](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)
          + [休眠環境](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md)
@@ -1083,12 +1083,12 @@ ht-degree: 97%
       + [管理環境](/help/implementing/cloud-manager/manage-environments.md)
       + 管理程式碼 {#managing-code}
          + [Maven 專案版本處理](/help/implementing/cloud-manager/managing-code/project-version-handling.md)
-         + [在Cloud Manager中管理存放庫](/help/implementing/cloud-manager/managing-code/managing-repositories.md)
-         + [新增Adobe存放庫](/help/implementing/cloud-manager/managing-code/adobe-repositories.md)
+         + [管理 Cloud Manager 中的存放庫](/help/implementing/cloud-manager/managing-code/managing-repositories.md)
+         + [新增 Adobe 存放庫](/help/implementing/cloud-manager/managing-code/adobe-repositories.md)
          + [新增私人存放庫](/help/implementing/cloud-manager/managing-code/private-repositories.md)
          + [存取存放庫](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
          + [Git 子模組支援](/help/implementing/cloud-manager/managing-code/git-submodules.md)
-         + [搭配使用Git與Cloud Manager](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)
+         + [將 Git 與 Cloud Manager 一起使用](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)
          + [使用多個存放庫](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md)
          + [企業開發團隊設定](/help/implementing/cloud-manager/managing-code/enterprise-team-dev-setup.md)
          + [GitHub 檢查設定](/help/implementing/cloud-manager/managing-code/github-check-config.md)
@@ -1110,7 +1110,7 @@ ht-degree: 97%
             + [Java 功能測試](/help/implementing/cloud-manager/java-functional-testing.md)
             + [UI 測試](/help/implementing/cloud-manager/ui-testing.md)
          + [體驗稽核儀表板](/help/implementing/cloud-manager/experience-audit-dashboard.md)
-      + [存取及管理記錄檔](/help/implementing/cloud-manager/manage-logs.md)
+      + [存取和管理記錄](/help/implementing/cloud-manager/manage-logs.md)
       + [自訂權限](/help/implementing/cloud-manager/custom-permissions.md)
       + [SLA 報告](/help/implementing/cloud-manager/sla-reporting.md)
       + [New Relic One](/help/implementing/cloud-manager/user-access-new-relic.md)
@@ -1125,23 +1125,23 @@ ht-degree: 97%
          + [網域設定簡介](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
          + [新增自訂網域名稱](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
          + [檢查自訂網域名稱狀態](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)
-         + [檢查DNS記錄狀態](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md)
+         + [檢查 DNS 記錄狀態](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md)
          + [管理自訂網域名稱](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md)
       + SSL 憑證 {#manage-ssl-certificates}
-         + [SSL憑證簡介](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md)
-         + [新增SSL憑證](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)
-         + [疑難排解SSL憑證錯誤](/help/implementing/cloud-manager/managing-ssl-certifications/troubleshoot-ssl-cert.md)
+         + [SSL 憑證簡介](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md)
+         + [新增 SSL 憑證](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)
+         + [SSL 憑證錯誤疑難排解](/help/implementing/cloud-manager/managing-ssl-certifications/troubleshoot-ssl-cert.md)
          + [管理 SSL 憑證](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
       + 內容傳遞網路設定 {#cdn-configurations}
-         + [新增CDN設定](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)
-         + [管理CDN設定](/help/implementing/cloud-manager/cdn-configurations/manage-cdn-config.md)
+         + [新增內容傳遞網路設定](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)
+         + [管理內容傳遞網路設定](/help/implementing/cloud-manager/cdn-configurations/manage-cdn-config.md)
       + IP 允許清單 {#ip-allow-lists}
          + [IP 允許清單簡介](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
          + [新增 IP 允許清單](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)
-         + [套用和取消套用IP允許清單](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)
+         + [套用和取消套用 IP 允許清單](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)
          + [管理 IP 允許清單](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md)
       + [授權儀表板](/help/implementing/cloud-manager/license-dashboard.md)
-      + [瞭解Cloud Service內容請求](/help/implementing/cloud-manager/content-requests.md)
+      + [了解 Cloud Service 內容請求](/help/implementing/cloud-manager/content-requests.md)
       + [CDN 效能儀表板](/help/implementing/cloud-manager/cdn-performance.md)
       + [Cloud Manager 常見問題集](/help/implementing/cloud-manager/faqs.md)
    + 為 AEM as a Cloud Service 開發 {#developing}
@@ -1149,7 +1149,7 @@ ht-degree: 97%
       + [AEM 專案存放庫結構套件](/help/implementing/developing/introduction/repository-structure-package.md)
       + [AEM as a Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)
       + [AEM 快速開發環境](/help/implementing/developing/introduction/rapid-development-environments.md)
-      + [AEM as a Cloud Service 開發指導方針](/help/implementing/developing/introduction/development-guidelines.md)
+      + [AEM as a Cloud Service 開發指南](/help/implementing/developing/introduction/development-guidelines.md)
       + [AEM as a Cloud Service Developer Console (Beta)](/help/implementing/developing/introduction/aem-developer-console.md)
       + [記錄](/help/implementing/developing/introduction/logging.md)
       + [記錄轉送](/help/implementing/developing/introduction/log-forwarding.md)
