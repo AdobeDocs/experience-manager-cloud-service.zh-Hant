@@ -3,10 +3,10 @@ title: 將Edge Delivery網站新增至Cloud Manager
 description: 瞭解如何將Edge Delivery網站新增到您的生產計畫或沙箱計畫。
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 2b384a4233672d69de09b922fcdef6d0f84ff7df
+source-git-commit: f684a52ca3b51d1aa4412122f7ad28dde3e2672f
 workflow-type: tm+mt
-source-wordcount: '505'
-ht-degree: 2%
+source-wordcount: '500'
+ht-degree: 3%
 
 ---
 
@@ -28,8 +28,8 @@ ht-degree: 2%
 
      ![從Edge Delivery索引標籤新增Edge Delivery網站](/help/implementing/cloud-manager/assets/cm-eds-add1.png)
 
-   * 在頁面的左上角，按一下![顯示或隱藏側邊導覽](https://spectrum.corp.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)以顯示側邊導覽功能表。
-在**服務**&#x200B;標題下，按一下Edge Delivery網站的![網頁](https://spectrum.corp.adobe.com/static/icons/workflow_18/Smock_WebPages_18_N.svg) **Edge Delivery網站**。
+   * 在頁面的左上角，按一下![顯示功能表圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)以顯示側面導覽功能表。
+在**服務**&#x200B;標題下，按一下![網頁圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_WebPages_18_N.svg) **Edge Delivery網站**。
 在頁面的右上角附近，按一下**新增網站**。
 
      ![從Edge Delivery Sites按鈕](/help/implementing/cloud-manager/assets/cm-eds-add2.png)新增Edge Delivery網站
@@ -48,14 +48,14 @@ ht-degree: 2%
 
    | 步驟編號 | 說明 |
    | - | - |
-   | **1** | 將路徑和名稱為`well-known/adobe/cloudmanager-challenge.txt`的檔案新增至&#x200B;**存放庫URL**&#x200B;欄位中所列之Git存放庫的`main`分支。 請&#x200B;*不*&#x200B;在位置路徑的開頭新增句號。<br>如有必要，請按一下[複製]，將路徑複製到剪貼簿。![](https://spectrum.corp.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) |
-   | **2** | 將步驟2中在文字欄位中看到的程式碼新增至您在步驟1中剛建立的檔案。<br>如有必要，請按一下[複製]，將代碼複製到剪貼簿。![](https://spectrum.corp.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) |
+   | **1** | 將路徑和名稱為`well-known/adobe/cloudmanager-challenge.txt`的檔案新增至&#x200B;**存放庫URL**&#x200B;欄位中所列之Git存放庫的`main`分支。 請&#x200B;*不*&#x200B;在位置路徑的開頭新增句號。<br>如有必要，請按一下[複製]，將路徑複製到剪貼簿。![](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) |
+   | **2** | 將步驟2中在文字欄位中看到的程式碼新增至您在步驟1中剛建立的檔案。<br>如有必要，請按一下[複製]，將代碼複製到剪貼簿。![](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) |
    | **3** | 在Git存放庫中為您剛才建立的變更建立提取請求，然後將其合併到`main`以認可程式碼。 |
 
 1. 按一下&#x200B;**驗證**。
 
 驗證存放庫後，其在Edge Delivery Sites表格中的狀態會變更為綠色圓形，且內有白色勾號。
 
-在相同表格中，您可以按一下![Edge Delivery網站的相關資訊。](https://spectrum.corp.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg)以檢視您網站的詳細資料，例如已驗證的存放庫URL以及預覽和生產網站的URL。
+在相同表格中，您可以按一下![Edge Delivery網站的相關資訊。](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg)以檢視您網站的詳細資料，例如已驗證的存放庫URL以及預覽和生產網站的URL。
 
 
