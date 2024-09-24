@@ -1,18 +1,18 @@
 ---
-title: 管理CDN設定
+title: 管理內容傳遞網路設定
 description: 瞭解如何使用Cloud Manager編輯和更新，或刪除Edge Delivery網站或Cloud Manager環境的CDN設定。
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 8e2fc0d4ee82e79d1a822a528b1a46acce3c192a
+source-git-commit: 2d1382c84d872719332986baa5829d1623d9d9a6
 workflow-type: tm+mt
-source-wordcount: '466'
-ht-degree: 6%
+source-wordcount: '468'
+ht-degree: 7%
 
 ---
 
 
-# 管理CDN設定 {#manage-cdn-configurations}
+# 管理CDN （內容傳遞網路）設定 {#manage-cdn-configurations}
 
 瞭解如何使用Cloud Manager編輯和更新，或刪除Edge Delivery網站或Cloud Manager環境的CDN設定。
 
@@ -31,7 +31,7 @@ ht-degree: 6%
 **若要編輯CDN設定：**
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織和方案。
-1. 在左側導覽面板的&#x200B;**服務**&#x200B;下方，按一下&#x200B;**CDN設定**。
+1. 在&#x200B;**服務**&#x200B;底下，按一下&#x200B;**CDN設定**。
 1. 在&#x200B;**CDN設定**&#x200B;表格中，按一下您要編輯其CDN設定的資料列結尾的省略符號。
 
    ![編輯CDN設定](/help/implementing/cloud-manager/assets/cdn-config-edit.png)

@@ -5,9 +5,9 @@ exl-id: 10011392-3059-4bb0-88db-0af1d390742e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 17306cf0877513d1412ffba311bd5d601edec062
+source-git-commit: 2d1382c84d872719332986baa5829d1623d9d9a6
 workflow-type: tm+mt
-source-wordcount: '436'
+source-wordcount: '455'
 ht-degree: 15%
 
 ---
@@ -26,24 +26,24 @@ ht-degree: 15%
 
    ![Cloud Manager 登陸頁面](assets/log-in.png)
 
-1. 在&#x200B;*讓我們建立您的程式*&#x200B;精靈，在&#x200B;**程式名稱**&#x200B;文字欄位中，輸入您要程式的名稱。
+1. 在&#x200B;*讓我們建立您的程式*&#x200B;精靈，在&#x200B;**程式名稱**&#x200B;文字欄位中，輸入您想要的程式名稱。
 
-1. 在&#x200B;**方案目標**&#x200B;下，選取&#x200B;**`Set up a sandbox`**。
+1. 在&#x200B;**方案目標**&#x200B;下，選取![魔術棒圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MagicWand_18_N.svg) **設定沙箱**。
 
    ![方案類型建立](assets/create-sandbox.png)
 
 1. （選擇性）在精靈對話方塊的右下角，執行下列任一項作業：
 
-   * 將影像檔案拖放到&#x200B;**新增程式影像**&#x200B;目標上。
-   * 按一下&#x200B;**新增程式影像**，然後從檔案瀏覽器中選取影像。
-   * 按一下垃圾桶圖示可刪除您新增的影像。
+   * 將影像檔案拖放到![影像圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Image_18_N.svg) **新增程式影像**&#x200B;目標上。
+   * 按一下![影像圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Image_18_N.svg) **新增程式影像**，然後從檔案瀏覽器中選取影像。
+   * 按一下![刪除圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DeleteOutline_18_N.svg)以移除您新增的影像。
 
 1. 按一下「**繼續**」。
 
 1. 在&#x200B;**解決方案和附加元件**&#x200B;清單方塊中，選取一或多個要包含在計畫中的解決方案。
 
    * 按一下解決方案名稱左側的>形箭號，即可顯示任何您想納入選取解決方案的可用附加元件。
-   * 建立沙箱程式時，**網站**、**Assets**&#x200B;和&#x200B;**Edge Deliver Servicesy**&#x200B;解決方案一律預設為選取。 您無法取消選取它們。
+   * 建立沙箱程式時，**網站**、**Assets**&#x200B;和&#x200B;**Edge Delivery Services**&#x200B;解決方案一律預設為選取。 您無法取消選取它們。
 
    ![為沙箱選取解決方案和附加元件](assets/sandbox-solutions-add-ons.png)
 
@@ -55,7 +55,7 @@ ht-degree: 15%
 
 新沙箱計畫建立完成後，您可以檢視沙箱設定的詳細資訊，並透過檢視計畫概觀頁面存取環境。
 
-1. 從Cloud Manager登陸頁面，按一下您建立的沙箱方案上的省略符號按鈕。
+1. 從Cloud Manager登陸頁面，在沙箱計畫中，在您的建立的沙箱計畫上按一下![更多小型清單圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)。
 
    ![存取計畫概觀](assets/program-overview-sandbox.png)
 

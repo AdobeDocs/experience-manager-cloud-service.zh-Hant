@@ -5,10 +5,10 @@ exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f45de13049f78f97b256235d9395695cb531c40d
+source-git-commit: 2d1382c84d872719332986baa5829d1623d9d9a6
 workflow-type: tm+mt
-source-wordcount: '1490'
-ht-degree: 21%
+source-wordcount: '1489'
+ht-degree: 20%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 21%
 
 * 在新增自訂網域名稱之前，您必須先為要新增的網域新增網域SSL憑證，如檔案[新增SSL憑證](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)中所述。
 * 您必須擁有&#x200B;**業務負責人**&#x200B;或&#x200B;**部署管理員**&#x200B;角色，才能在Cloud Manager中新增自訂網域名稱。
-* 使用Fastly或其他CDN。
+* 使用Fastly或其他CDN （內容傳遞網路）。
 
 >[!IMPORTANT]
 >
@@ -31,22 +31,22 @@ ht-degree: 21%
 
 ## 新增自訂網域名稱的位置 {#where-to-add-cdn}
 
-您可以從 Cloud Manager 中的兩個位置新增自訂網域名稱：
+您可以在Cloud Manager中從以下兩個位置新增自訂網域名稱：
 
-* [從域設定頁面](#adding-cdn-settings)
-* [從環境頁面](#adding-cdn-environments)
+* [網域設定頁面](#adding-cdn-settings)
+* [環境頁面](#adding-cdn-environments)
 
 新增自訂網域名稱時，會使用最明確的有效憑證提供網域。 如果多個憑證具有相同的網域，則選擇最近更新的憑證。 Adobe建議您管理憑證，以免網域重疊。
 
-本檔案中描述的任一方法的步驟均以Fastly為基礎。 如果您使用不同的CDN，請使用您選擇要使用的CDN來設定網域。
+本檔案中描述的任一方法的步驟均以Fastly為基礎。 如果您使用不同的CDN （內容傳遞網路），請使用您選擇要使用的CDN來設定網域。
 
-## 從網域設定頁面新增自訂網域名稱 {#adding-cdn-settings}
+## 新增自訂網域名稱 {#adding-cdn-settings}
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織。
 
 1. 在「**[我的程式](/help/implementing/cloud-manager/navigation.md#my-programs)**」控制台中，選取程式。
 
-1. 在左側導覽面板中，選取&#x200B;**網域設定**&#x200B;索引標籤
+1. 在側邊功能表的&#x200B;**服務**&#x200B;底下，選取&#x200B;**網域設定**。
 
    ![域設定窗口](/help/implementing/cloud-manager/assets/cdn/cdn-create.png)
 
@@ -59,7 +59,7 @@ ht-degree: 21%
 
 1. 在&#x200B;**驗證網域**&#x200B;對話方塊中，在&#x200B;**您打算搭配此網域使用哪種憑證型別？**&#x200B;下拉式清單，選取下列其中一個選項：
 
-   | 憑證型別 | 說明 |
+   | 憑證型別選項 | 說明 |
    | --- | --- |
    | Adobe 管理的憑證 | 選取是否要使用DV （網域驗證）憑證。 此選項適用於大多數的情況，可提供基本網域驗證。 Adobe會自動管理和更新憑證。 |
    | 客戶管理的憑證 | 選取是否要使用EV/OV憑證。 此選項提供EV （延伸驗證）或OV （組織驗證）的增強式安全性。 若需要更嚴格的驗證、更高的信任層級或自訂的憑證控制，請使用。 |
@@ -207,6 +207,8 @@ Now that you created your TXT entry, you can verify your domain name status. Pro
 
 
 ## 從環境頁面 {#adding-cdn-environments}
+
+<!-- I DON'T SEE THIS ABILITY ANYMORE IN THE UI -->
 
 從&#x200B;**環境**&#x200B;頁面新增自訂網域名稱的步驟與[從「網域設定」頁面](#adding-cdn-settings)新增自訂網域名稱的步驟相同，但進入點不同。 按照以下步驟從&#x200B;**環境**&#x200B;頁面。
 

@@ -1,19 +1,19 @@
 ---
-title: 新增CDN設定
+title: 新增內容傳遞網路設定
 description: 瞭解如何為Edge Delivery網站或Cloud Manager環境新增CDN設定。
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 672513d7-ee0a-4f6e-9ef0-7a41fabbaf9a
-source-git-commit: b222b4384b1c2a21ecbb244d149ce7e51cc7990f
+source-git-commit: 2d1382c84d872719332986baa5829d1623d9d9a6
 workflow-type: tm+mt
-source-wordcount: '445'
+source-wordcount: '448'
 ht-degree: 6%
 
 ---
 
 
-# 新增內容傳遞網路設定 {#add-cdn}
+# 新增CDN （內容傳遞網路）設定 {#add-cdn}
 
 若要將網域與計畫內Adobe管理的CDN上的SSL憑證連結，您必須新增CDN （內容傳遞網路）設定。
 

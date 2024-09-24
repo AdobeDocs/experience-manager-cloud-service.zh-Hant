@@ -5,9 +5,9 @@ exl-id: 6cab8cf2-22c0-4f4b-9c54-a1425e74ddd0
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 8e2fc0d4ee82e79d1a822a528b1a46acce3c192a
+source-git-commit: 2d1382c84d872719332986baa5829d1623d9d9a6
 workflow-type: tm+mt
-source-wordcount: '445'
+source-wordcount: '447'
 ht-degree: 34%
 
 ---
@@ -33,10 +33,10 @@ Cloud Manager可讓您編輯、更新、取代和刪除自訂網域名稱。
 
 1. 在頁面的左上角，按一下漢堡圖示以顯示左側導覽功能表。
 1. 在&#x200B;**服務**&#x200B;標題下，按一下&#x200B;**CDN組態**。
-1. 在&#x200B;**CDN設定**&#x200B;頁面上，按一下您要編輯其CDN之資料列結尾的省略符號。
+1. 在&#x200B;**CDN設定**&#x200B;頁面上，在您要編輯其CDN的資料列結尾按一下![更多圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)。
 1. 按一下&#x200B;**編輯**。
 1. 在&#x200B;**編輯CDN組態**&#x200B;對話方塊中，執行下列動作：
-   * 在&#x200B;**層**&#x200B;下拉式清單中，選取您要使用的層(作者或Publish)。
+   * 在&#x200B;**階層**&#x200B;下拉式清單中，選取您要使用的階層(Publish或預覽)。
    * 在&#x200B;**SSL憑證**&#x200B;下拉式清單中，選取您要使用的SSL憑證。
 1. 按一下&#x200B;**更新**。
 
