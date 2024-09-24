@@ -6,9 +6,9 @@ exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
 source-git-commit: 79bf9d669c1b8757f456b83aad87550df306c78b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1266'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -67,11 +67,11 @@ ht-degree: 96%
 
 ### Dynamic Media 的搶先體驗功能 {#dm-early-access}
 
-**AI產生的視訊字幕**
+**以 AI 產生的影片字幕**
 
-Adobe Dynamic Media中AI產生的視訊字幕會使用人工智慧，自動為視訊內容產生字幕。 此功能旨在透過提供準確的即時字幕來改善可存取性並增強使用者體驗。AI 分析影片的音軌以轉錄語音並建立針對準確性或自訂可進行編輯的字幕。這些字幕有助於滿足可存取性的要求，並改善依賴或偏好文字式影片支援之客群的影片參與度。
+Adobe Dynamic Media 中以 AI 產生的影片字幕，是使用人工智慧來自動產生影片內容的字幕。此功能旨在透過提供準確的即時字幕來改善可存取性並增強使用者體驗。AI 分析影片的音軌以轉錄語音並建立針對準確性或自訂可進行編輯的字幕。這些字幕有助於滿足可存取性的要求，並改善依賴或偏好文字式影片支援之客群的影片參與度。
 
-若要搶先使用您Dynamic Media帳戶的AI產生註解支援，請[建立並提交Adobe客戶支援案例](/help/assets/dynamic-media/video.md##enable-dash)。
+若要在您的 Dynamic Media 帳戶搶先體驗 AI 產生的字幕支援，請[建立並提交 Adobe 客戶支援案例](/help/assets/dynamic-media/video.md##enable-dash)。
 
 ### 使用 Assets 檢視的新功能 {#assets-view-new-features}
 

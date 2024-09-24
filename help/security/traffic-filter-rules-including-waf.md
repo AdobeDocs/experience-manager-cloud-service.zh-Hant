@@ -5,9 +5,9 @@ exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
 source-git-commit: cf9e1b3c290d142095912c794de58547913faece
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4012'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -55,9 +55,9 @@ Adobe 邀請您透過傳送電子郵件至：**aemcs-waf-adopter@adobe.com**，�
 
 在目前的數位環境中，惡意流量是一種揮之不去的威脅。Adobe 了解風險的嚴重性，並提供多種方法保護客戶應用程式，以及在發生時減輕攻擊。
 
-在邊緣，AdobeManaged CDN會吸收網路層（第3層和第4層）的DoS攻擊，包括泛洪和反射/放大攻擊。
+在邊緣，Adobe 管理的內容傳遞網路會吸收網路層上的 DoS 攻擊 (第 3 層和第 4 層)，包括洪水攻擊和反射/放大攻擊。
 
-預設情況下，Adobe 會採取措施防止因超出特定閾值的意外爆發高流量而導致效能下降。如果有影響網站可用性的 DoS 攻擊，Adobe 的營運團隊會收到警報並採取減輕影響的步驟。
+預設情況下，Adobe 會採取措施來防止因超出特定臨界值的意外突發高流量所導致的效能降低。如果有影響網站可用性的 DoS 攻擊，Adobe 的營運團隊會收到警報並採取減輕影響的步驟。
 
 客戶可以透過在不同層的內容傳遞流程設定規則，以採取主動式措施減輕應用程式層攻擊 (第 7 層)。
 
@@ -475,13 +475,13 @@ data:
         rateLimit: { limit: 100, window: 10, penalty: 60, count: fetches }
 ```
 
-## CVE規則 {#cve-rules}
+## CVE 規則 {#cve-rules}
 
-如果WAF已獲得授權，Adobe會自動套用封鎖規則，以防範許多已知的CVE （常見漏洞和暴露），新的CVE在發現後不久可能會新增。 客戶不應且不需要自行設定CVE規則。
+如果 WAF 已獲得授權，Adobe 就會自動套用封鎖規則來防範許多已知的 CVE (常見漏洞和暴露)，而新的 CVE 可能會在發現後立即新增。客戶不應也不需自行設定 CVE 規則。
 
-如果流量請求符合CVE，則會顯示在相對應的CDN記錄專案中。
+如果流量請求符合 CVE，就會顯示在對應的內容傳遞網路記錄項目中。
 
-如果特定CVE有任何問題，或您的組織想要停用特定CVE規則，請聯絡Adobe支援。
+如果對特定 CVE 有疑問或您的組織想要停用特定 CVE 規則，請聯絡 Adobe 支援。
 
 ## 流量篩選規則警報 {#traffic-filter-rules-alerts}
 
