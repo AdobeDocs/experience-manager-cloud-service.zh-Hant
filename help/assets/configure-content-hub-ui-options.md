@@ -5,7 +5,7 @@ exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
 source-git-commit: 96c50aad9368adc83f8698dc35266146b1883672
 workflow-type: tm+mt
 source-wordcount: '1185'
-ht-degree: 5%
+ht-degree: 13%
 
 ---
 
@@ -14,12 +14,12 @@ ht-degree: 5%
 >[!CONTEXTUALHELP]
 >id="configure_content_hub"
 >title="設定 Content Hub 使用者介面"
->abstract="Experience Manager Assets可讓管理員設定Content Hub使用者介面上的可用選項。 根據管理員選取的設定選項，Content Hub使用者可以在Content Hub上檢視欄位。 設定選項包括匯入資產時的中繼資料、篩選器、資產屬性、搜尋資產時的中繼資料、個人化的品牌，以及任何自訂連結。"
+>abstract="Experience Manager Assets 可讓管理員設定 Content Hub 使用者介面上的可用選項。根據管理員選取的設定選項，Content Hub 使用者可以查看 Content Hub 上的欄位。設定選項包括匯入資產時的中繼資料、篩選器、資產屬性、搜尋資產時的中繼資料、個人化品牌和任何自訂連結。"
 
 <!-- ![Download assets](assets/download-asset.jpg) -->
 ![在Content Hub上設定資產](assets/configure-assets.png)
 
-Experience Manager Assets可讓管理員設定Content Hub使用者介面上的可用選項。 根據管理員選取的設定選項，Content Hub使用者可以在Content Hub上檢視欄位。 組態選項包括：
+Experience Manager Assets 可讓管理員設定 Content Hub 使用者介面上的可用選項。根據管理員選取的設定選項，Content Hub 使用者可以查看 Content Hub 上的欄位。組態選項包括：
 
 * 使用者在搜尋資產時可使用的篩選器。
 

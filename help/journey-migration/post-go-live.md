@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: bb2688701b80a560ea9078c2b7b6594ff55ce824
 workflow-type: tm+mt
 source-wordcount: '458'
-ht-degree: 16%
+ht-degree: 22%
 
 ---
 
@@ -16,9 +16,9 @@ ht-degree: 16%
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_troubleshooting"
 >title="AEM 的移難排解"
->abstract="檢閱持續開發和管理記錄的最佳實務。 瞭解Developer Console和CRXDE Lite等工具，協助疑難排解AEM問題。"
->additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-logs" text="存取和管理記錄檔"
->additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines#aem-as-a-cloud-service-development-tools" text="AEM as a Cloud Service 開發工具"
+>abstract="查看記錄持續開發和管理的最佳實務。了解 Developer Console 和 CRXDE Lite 等工具，以協助解決 AEM 的相關問題。"
+>additional-url="https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-logs" text="存取和管理記錄檔"
+>additional-url="https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines#aem-as-a-cloud-service-development-tools" text="AEM as a Cloud Service 開發工具"
 
 此歷程是最後一部分，協助您瞭解如何監視問題，並在移轉完成後改善效能。 確保清理暫存檔，檢閱持續開發的最佳實務，以及管理記錄。
 

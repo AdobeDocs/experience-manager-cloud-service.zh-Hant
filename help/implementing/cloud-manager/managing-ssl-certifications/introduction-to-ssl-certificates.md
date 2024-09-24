@@ -1,5 +1,5 @@
 ---
-title: SSL憑證簡介
+title: SSL 憑證簡介
 description: 了解 Cloud Manager 如何提供自助服務工具以安裝 SSL 憑證。
 exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
 solution: Experience Manager
@@ -8,12 +8,12 @@ role: Admin, Architect, Developer
 source-git-commit: b222b4384b1c2a21ecbb244d149ce7e51cc7990f
 workflow-type: tm+mt
 source-wordcount: '765'
-ht-degree: 34%
+ht-degree: 36%
 
 ---
 
 
-# SSL憑證簡介{#introduction}
+# SSL 憑證簡介{#introduction}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_sslcert"
@@ -37,7 +37,7 @@ Cloud Manager提供自助服務工具來安裝和管理SSL （安全通訊端層
 >不允許客戶上傳DV （網域驗證）憑證。
 
 
-## SSL憑證簡介 {#certificates}
+## SSL 憑證簡介 {#certificates}
 
 企業和組織使用SSL憑證來保護他們的網站，並允許他們的客戶信任他們。 為了使用 SSL 協議，Web 伺服器需要使用 SSL 憑證。
 
