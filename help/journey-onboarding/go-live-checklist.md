@@ -5,9 +5,9 @@ exl-id: b424a9db-0f3b-4a8d-be84-365d68df46ca
 feature: Onboarding
 role: Admin, User, Developer
 source-git-commit: 64344b9b2cce8d7c7f05d3e5ba94049346308a9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '567'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -40,7 +40,7 @@ ht-degree: 99%
       * 根據 CDN 供應商的文件設定 SSL 和 DNS。
    * 如果您未使用額外的 CDN，請依照下列文件管理 SSL 和 DNS：
       * 管理 SSL 憑證
-         * [SSL憑證簡介](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md)
+         * [SSL 憑證簡介](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md)
          * [管理 SSL 憑證](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
       * 管理自訂網域名稱 (DNS)
          * 確保 DNS 切換不會產生非預期的問題。在上線之前建立測試子網域以連接您的生產執行個體，並進行一輪 UAT 測試。比如說您的網域是 example.com，可以建立一個子網域 test.example.com，並將其套用到生產。在網域的 UAT 測試期間，尋找諸如正確連結重新導向、快取和 Dispatcher 設定等內容。
