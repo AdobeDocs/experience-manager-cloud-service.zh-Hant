@@ -1,33 +1,33 @@
 ---
 title: 建立經檢測適用 Universal Editor 的區塊
-description: 瞭解如何在WYSIWYG製作和Edge Delivery Services專案中，建立可搭配通用編輯器使用的區塊。
+description: 瞭解如何建立在WYSIWYG製作中與Edge Delivery Services專案結合使用並搭配通用編輯器的區塊。
 exl-id: 65a5600a-8d16-4943-b3cd-fe2eee1b4abf
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: 772fcc2688edb57eca3b84689de1d1c47f87dcd0
+source-git-commit: 3419fa943eb865d87467443527ea97fcd64909c2
 workflow-type: tm+mt
-source-wordcount: '1401'
-ht-degree: 59%
+source-wordcount: '1445'
+ht-degree: 57%
 
 ---
 
 
 # 建立經檢測適用 Universal Editor 的區塊 {#create-block}
 
-瞭解如何在WYSIWYG製作和Edge Delivery Services專案中，建立可搭配通用編輯器使用的區塊。
+瞭解如何建立在WYSIWYG製作中與Edge Delivery Services專案結合使用並搭配通用編輯器的區塊。
 
 ## 先決條件 {#prerequisites}
 
-本指南提供逐步指示，說明如何透過Edge Delivery Services專案在WYSIWYG製作中建立為通用編輯器檢測的區塊。 內容包括新增元件、載入 Universal Editor 中的元件定義、發佈頁面、實施區塊裝飾和樣式、將變更引入生產以及進行變更驗證。完成本指南後，您可以為自己的專案建立和部署新區塊。
+本指南提供逐步指示，說明如何透過Edge Delivery Services專案在WYSIWYG製作中建立針對通用編輯器檢測的區塊。 內容包括新增元件、載入 Universal Editor 中的元件定義、發佈頁面、實施區塊裝飾和樣式、將變更引入生產以及進行變更驗證。完成本指南後，您可以為自己的專案建立和部署新區塊。
 
-本指南必須具備WYSIWYG製作與Edge Delivery Services專案及通用編輯器的現有知識。 在開始執行本指南之前，您應該有 Edge Delivery Services 存取權並熟悉基本使用需知，包括：
+本指南需要與Edge Delivery Services專案及通用編輯器搭配使用的WYSIWYG編寫的現有知識。 在開始執行本指南之前，您應該有 Edge Delivery Services 存取權並熟悉基本使用需知，包括：
 
 * 您已完成 [Edge Delivery Service 教學課程。](/help/edge/developer/tutorial.md)
 * 您有權存取 [AEM Cloud Service 沙箱。](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)
 * 您已[在同一沙箱環境中啟用 Universal Editor。](/help/implementing/universal-editor/getting-started.md)
 * 您已完成使用Edge Delivery Services進行WYSIWYG製作的[開發人員快速入門手冊](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)。
 
-本指南以[開發人員快速入門手冊(使用Edge Delivery Services進行WYSIWYG製作)中完成的工作為基礎](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)。
+本指南以[使用Edge Delivery Services進行WYSIWYG編寫的開發人員快速入門手冊](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)中完成的工作為基礎。
 
 ## 為您的專案新增區塊 {#add-block}
 
@@ -45,7 +45,7 @@ Adobe 建議您採用三階段方法來開發區塊：
 
 ### 建立區塊定義和模式 {#create-block-model}
 
-1&amp;amp；period；在本機複製您在[開發人員快速入門手冊中建立的GitHub專案，以使用Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)進行WYSIWYG製作，並在您選擇的編輯器中開啟。
+1&amp;amp；period；在本機複製您在[使用Edge Delivery Services進行WYSIWYG編寫的開發人員快速入門手冊](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)中建立的GitHub專案，並在您選擇的編輯器中開啟。
 
 * 此處使用 Microsoft 程式碼是為了說明目的。
 
@@ -85,7 +85,7 @@ Adobe 建議您採用三階段方法來開發區塊：
 
 3&amp;amp；句點；編輯專案根目錄中的`component-models.json`檔案，並為您的新報價區塊新增下列[模型定義](/help/implementing/universal-editor/field-types.md#model-structure)並儲存檔案。
 
-* 請參閱檔案[使用Edge Delivery Services專案進行WYSIWYG製作的內容模型](/help/edge/wysiwyg-authoring/content-modeling.md)，以取得建立內容模型時務必考量的詳細資訊。
+* 請參閱檔案[使用Edge Delivery Services專案進行WYSIWYG製作的內容模型](/help/edge/wysiwyg-authoring/content-modeling.md)，以取得建立內容模型時務必要考量的詳細資訊。
 
 >[!BEGINTABS]
 
@@ -155,7 +155,7 @@ Adobe 建議您採用三階段方法來開發區塊：
 
 現在您的基本引述區塊已定義並提交給範例專案，您可以將引述區塊新增至現有頁面。
 
-1. 在瀏覽器中，登入 AEM as a Cloud Service。[使用Sites主控台，](/help/sites-cloud/authoring/basic-handling.md)瀏覽至您在[開發人員快速入門手冊](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)中建立的網站，以使用Edge Delivery Services進行WYSIWYG製作，並選取頁面。
+1. 在瀏覽器中，登入 AEM as a Cloud Service。[使用Sites主控台，](/help/sites-cloud/authoring/basic-handling.md)導覽至您在[使用Edge Delivery Services進行WYSIWYG編寫的開發人員快速入門手冊](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)指南中建立的網站，並選取頁面。
 
    * 在本案例中，`index`是用於說明目的。
 
@@ -331,6 +331,12 @@ export default function decorate(block) {
 
 只有模式合併到`main`分支時，才支援發佈內容及新模式。
 
+## 重複使用您的區塊以進行檔案式編寫 {#reusing-blocks}
+
+如果您遵循相同的內容模型，可以使用透過通用編輯器為WYSIWYG編寫建立的區塊，以進行檔案式編寫。
+
+如需詳細資訊，請參閱檔案[WYSIWYG和檔案式編寫的區塊](/help/edge/wysiwyg-authoring/wysiwyg-doc-blocks.md)。
+
 ## 後續步驟 {#next-steps}
 
 既然您已經知道如何建立區塊，那麼了解如何以語義方式建立內容模式並實現精益開發人員體驗就很重要。
@@ -339,5 +345,5 @@ export default function decorate(block) {
 
 >[!TIP]
 >
->如需以AEM as a Cloud Service作為內容來源來建立啟用WYSIWYG製作的新Edge Delivery Services專案的端對端逐步解說，請檢視[此AEM GEM網路研討會。](https://experienceleague.adobe.com/en/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)
+>如需使用AEM as a Cloud Service作為內容來源來建立啟用WYSIWYG撰寫的新Edge Delivery Services專案的端對端逐步解說，請檢視[此AEM GEM網路研討會。](https://experienceleague.adobe.com/en/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)
 
