@@ -3,7 +3,7 @@ title: Edge Delivery Services的路徑對應
 description: 瞭解如何將AEM編寫執行個體上使用的頁面路徑對應到網站上使用的公開頁面路徑，並控制要將哪些內容發佈到Edge Delivery Services。
 feature: Edge Delivery Services
 role: User
-source-git-commit: 51a2b453ccce39cb42c927a088bc088083545542
+source-git-commit: 2727744f276ee5facae718a987dcc6dc54d4e917
 workflow-type: tm+mt
 source-wordcount: '567'
 ht-degree: 0%
@@ -95,8 +95,8 @@ Edge Delivery Services頁面上使用的Assets通常會與網頁一起發佈。 
    }'
    ```
 
-1. 如果專案未使用設定服務，路徑對應會透過專案GitHub存放庫中的paths.json檔案進行設定。
+1. 如果專案未使用設定服務，則會透過您專案GitHub存放庫中的`paths.json`檔案設定路徑對應。
 
-   * 如需範例，請參閱[`https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/paths.json`](/https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/paths.json)。
+   * 如需範例，請參閱[`https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/paths.json`](https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/paths.json)。
 
 在這兩種情況下，設定路徑對應後，您就可以透過可公開存取的設定URL `https://<branch>--<site>--<org>.aem.page/config.json`檢查設定。
