@@ -5,10 +5,10 @@ exl-id: 3f3d7631-2bc9-440b-9888-50f6529bcd42
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: b9fb178760b74cb0e101506b6a9ff5ae30c18490
+source-git-commit: b5ae995623c41803f8704fa9699d3514c37e4550
 workflow-type: tm+mt
-source-wordcount: '1574'
-ht-degree: 52%
+source-wordcount: '1677'
+ht-degree: 42%
 
 ---
 
@@ -57,7 +57,7 @@ Cloud Manager UI 主要由兩個圖形介面組成：
 
 ![Experience Cloud 標頭](assets/experience-cloud-header.png)
 
-1. 按一下「![顯示功能表圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)」（顯示/隱藏側邊功能表）可讓您存取各種標籤，這些標籤可帶您進入個別程式的特定部分。 或者，您可以根據內容在[授權儀表板](/help/implementing/cloud-manager/license-dashboard.md)和&#x200B;**[我的程式](#my-programs-console)**&#x200B;主控台之間切換。
+1. 按一下「![顯示功能表圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)」（顯示或隱藏側邊功能表）可讓您存取各種標籤，這些標籤可帶您進入個別程式的特定部分。 或者，您可以根據內容在[授權儀表板](/help/implementing/cloud-manager/license-dashboard.md)和&#x200B;**[我的程式](#my-programs-console)**&#x200B;主控台之間切換。
 1. 按一下AdobeCloud Manager按鈕帶您返回Cloud Manager的「我的程式」主控台，無論您身在Cloud Manager何處。
 1. 按一下&#x200B;**意見反應**，向Adobe提供有關Cloud Manager的意見反應。
 1. 按一下組織選擇器，會顯示您目前登入的組織（在此範例中為Foundation Internal）。 如果您的 Adobe ID 與多個組織關聯，可按一下以切換到另一個組織。
@@ -90,7 +90,7 @@ Cloud Manager UI 主要由兩個圖形介面組成：
 
 **我的程式**&#x200B;主控台的主要內容是&#x200B;**我的程式**&#x200B;區段中的程式清單。
 
-**我的程式**&#x200B;區段列出代表每個程式的卡片。 點選或按一下卡片即可存取該程式的「**程式概觀**」頁面，以了解有關該程式的詳細資訊。
+**我的程式**&#x200B;區段列出代表每個程式的卡片。 按一下卡片即可存取該方案的「**方案概觀**」頁面，了解有關該方案的詳細資訊。
 
 >[!NOTE]
 >
@@ -101,13 +101,13 @@ Cloud Manager UI 主要由兩個圖形介面組成：
 
 ![排序選項](/help/implementing/cloud-manager/assets/my-programs-sorting.png)
 
-* 排序依據
-   * 建立日期 (預設)
-   * 方案名稱
-   * 狀態
-* 升序 (預設) / 降序
-* 格點檢視 (預設)
-* 清單檢視
+* 排序方式：
+   * **建立日期** （預設）
+   * **程式名稱**
+   * **狀態**
+* ![向下排序圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SortOrderDown_18_N.svg)遞增（預設） / ![向上排序圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SortOrderUp_18_N.svg)遞減
+* ![傳統格線檢檢視示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ClassicGridView_18_N.svg)格線檢視（預設）
+* ![檢視清單圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewList_18_N.svg)清單檢視
 
 #### 方案卡片 {#program-cards}
 
@@ -115,48 +115,42 @@ Cloud Manager UI 主要由兩個圖形介面組成：
 
 ![方案卡片](assets/program-card.png)
 
-* 方案映像 (若已設定)
-* 方案名稱
+* 和方案相關聯的影像（如果已設定）。 上圖為「WKND」。
+* 指派給計畫的名稱。 上圖顯示「SecurBank Sample」為程式名稱。
 * 服務類型：
-   * AEM as a Cloud Service程式的&#x200B;**Experience Manager雲端**
-   * [AMS程式](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/introduction)的&#x200B;**Experience Manager**
+   * **Experience Manager雲端** — 適用於AEM as a Cloud Service計畫
+   * **Experience Manager** — 適用於[AMS (AdobeManaged Services)程式](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/introduction)
 * [程式型別](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)：
    * 沙箱
    * 生產
-* 狀態
-* 設定的解決方案:
-* 建立日期
+* 狀態。 在上圖中，狀態為「就緒」並帶有核取標籤。
+* 已設定的解決方案。 在上圖中，Sites和Assets是已設定的解決方案。
+* 建立日期。
 
-根據建立計畫時選擇的選項，生產計畫可能會有顯示其他功能的徽章。
+生產計畫可能會有徽章，以顯示您在新增計畫時選擇的其他功能，例如：
 
-* [HIPAA](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#security)
+* ![HIPAA徽章](assets/hipaa.png) [HIPAA](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#security)
 
-  ![HIPAA徽章](assets/hipaa.png)
+* ![WAF-DDOS徽章](assets/waf-ddos-protection.png) [WAF-DDOS保護](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#security)
 
-* [WAF-DDOS保護](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#security)
-
-  ![WAF-DDOS徽章](assets/waf-ddos-protection.png)
-
-* [99.99% SLA](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#sla)
-
-  ![99.99% SLA徽章](assets/9999-sla.png)
+* [99.99% SLA （服務等級協定）](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#sla)
 
 透過資訊圖示，還可以快速存取有關方案的其他資訊 (在清單檢視中很實用)。
 
 ![資訊](assets/information-list-view.png)
 
-透過省略符號圖示，您能存取可對方案執行的其他動作。
+此![更多圖示](https://spectrum.adobe.com/static/icons/workflow_22/Smock_More_22_N.svg)圖示可讓您存取可以對方案執行的其他動作。
 
 ![方案的省略符號按鈕](assets/program-ellipsis.png)
 
-* 瀏覽至方案的特定[環境](/help/implementing/cloud-manager/manage-environments.md)
-* 開啟[方案概觀](#program-overview)
-* [編輯方案](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#editing)
-* [刪除沙箱計畫](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#delete-sandbox-program)
+* 瀏覽至程式的特定![資料圖示](https://spectrum.adobe.com/static/icons/workflow_22/Smock_Data_22_N.svg) [環境](/help/implementing/cloud-manager/manage-environments.md)
+* 開啟![計畫總覽圖示](/help/implementing/cloud-manager/assets/program-overview.svg) [計畫總覽](#program-overview)
+* ![編輯圖示](https://spectrum.corp.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) [編輯程式](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#editing)
+* ![刪除圖示](https://spectrum.corp.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg)[刪除沙箱程式](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#delete-sandbox-program)
 
 >[!TIP]
 >
->如需有關計畫以及建立和管理計畫的詳細資訊，請參閱以下檔案。
+>如需有關程式以及新增和管理程式的詳細資訊，請參閱下列內容：
 >
 >* [程式和程式型別](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
 >* [建立生產計畫](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
@@ -167,9 +161,9 @@ Cloud Manager UI 主要由兩個圖形介面組成：
 
 快速連結區段可讓您存取相關的常用資源。
 
-## 計畫總覽視窗 {#program-overview}
+## 計畫總覽頁面 {#program-overview}
 
-在&#x200B;**[我的計畫](#my-programs-console)**&#x200B;主控台中選取計畫時，您會進入&#x200B;**計畫總覽**&#x200B;視窗。
+在&#x200B;**[我的計畫](#my-programs-console)**&#x200B;主控台中選取計畫時，您會進入&#x200B;**計畫總覽**&#x200B;頁面。
 
 ![程式概觀](assets/program-overview.png)
 
@@ -189,11 +183,11 @@ Cloud Manager UI 主要由兩個圖形介面組成：
 
 #### Cloud Manager 標頭 {#cloud-manager-header-2}
 
-Cloud Manager 標頭有一個漢堡選單，會自動開啟以顯示程式概觀的可導覽索引標籤。
+頁面左上角是Cloud Manager標題Adobe。 您可以按一下![側功能表圖示](https://spectrum.corp.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)來顯示或隱藏標籤側功能表到軟體的其他區域。
 
 ![Cloud Manager 漢堡選單](assets/cloud-manager-hamburger.png)
 
-點選或按一下漢堡選單圖示即可隱藏索引標籤。
+按一下AdobeCloud Manager以返回首頁。
 
 #### 方案工具列 {#program-toolbar-2}
 
@@ -229,11 +223,11 @@ Cloud Manager 標頭有一個漢堡選單，會自動開啟以顯示程式概觀
 
 **資源**
 
-* 學習路徑 - 有關 Cloud Manager 的其他學習資源
+* ![書籍圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Book_18_N.svg)學習路徑 — 有關Cloud Manager的其他學習資源
 
 預設情況下，當您開啟方案時，您會到達「**概觀**」索引標籤。會醒目提示目前的索引標籤。選取另一個索引標籤即可顯示其詳細資訊。
 
-使用 [Cloud Manager 標頭](#cloud-manager-header-2)中的漢堡選單即可隱藏索引標籤。
+在[Cloud Manager標題](#cloud-manager-header-2)的左上角，按一下![顯示功能表圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)以顯示或隱藏標籤的側邊功能表。
 
 ### 呼叫區段 {#cta}
 
