@@ -4,10 +4,10 @@ description: 瞭解如何在AEM as a Cloud Service中將記錄轉送給Splunk和
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: bf0b577de6174c13f5d3e9e4a193214c735fb04d
+source-git-commit: 17d195f18055ebd3a1c4a8dfe1f9f6bc35ebaf37
 workflow-type: tm+mt
-source-wordcount: '1359'
-ht-degree: 1%
+source-wordcount: '1362'
+ht-degree: 0%
 
 ---
 
@@ -44,14 +44,7 @@ AEM和Apache/Dispatcher記錄檔可選擇透過AEM的進階網路基礎結構路
 
 ## 設定 {#setup}
 
-1. 在Git中專案的頂層資料夾中建立以下資料夾和檔案結構：
-
-   ```
-   config/
-        logForwarding.yaml
-   ```
-
-1. `logForwarding.yaml`應包含中繼資料及類似以下格式的設定（我們使用Splunk作為範例）。
+1. 建立名為`logForwarding.yaml`的檔案。 它應該包含中繼資料，如[設定管道文章](/help/operations/config-pipeline.md#common-syntax)中所述（**kind**&#x200B;應該設定為`LogForwarding`且版本設定為&quot;1&quot;），其設定類似於以下內容（我們使用Splunk作為範例）。
 
    ```
    kind: "LogForwarding"
@@ -67,52 +60,51 @@ AEM和Apache/Dispatcher記錄檔可選擇透過AEM的進階網路基礎結構路
          index: "AEMaaCS"
    ```
 
-   **kind**&#x200B;引數應該設定為`LogForwarding`，而版本應該設定為結構描述版本，即1。
+1. 將檔案放置在名為&#x200B;*config*&#x200B;或類似名稱的頂層資料夾之下，如[使用設定管道](/help/operations/config-pipeline.md#folder-structure)中所述。
 
-   設定中的權杖（例如`${{SPLUNK_TOKEN}}`）代表不應儲存在Git中的秘密。 請改為宣告它們為&#x200B;**密碼**&#x200B;型別的Cloud Manager [環境變數](/help/implementing/cloud-manager/environment-variables.md)。 請務必選取「**全部**」作為「已套用服務」欄位的下拉式清單值，以便將記錄檔轉送至作者、發佈及預覽層級。
+1. 針對RDE以外的環境型別（目前不支援），在Cloud Manager中建立目標部署設定管道，如[此區段](/help/operations/config-pipeline.md#creating-and-managing)所參考；請注意，完整棧疊管道和Web層管道不會部署設定檔案。
 
-   您可以在CDN記錄檔與AEM記錄檔(包括Apache/Dispatcher)之間設定不同的值，方法是在&#x200B;**預設**&#x200B;區塊之後加入額外的&#x200B;**cdn**&#x200B;和/或&#x200B;**aem**&#x200B;區塊，其中的屬性可以覆寫&#x200B;**預設**&#x200B;區塊中定義的屬性；只需要啟用的屬性。 一個可能的使用案例是對CDN記錄使用不同的Splunk索引，如以下範例所示。
+1. 部署設定。
 
-   ```
-      kind: "LogForwarding"
-      version: "1"
-      metadata:
-        envTypes: ["dev"]
-      data:
-        splunk:
-          default:
-            enabled: true
-            host: "splunk-host.example.com"
-            token: "${{SPLUNK_TOKEN}}"
-            index: "AEMaaCS"
-          cdn:
-            enabled: true
-            token: "${{SPLUNK_TOKEN_CDN}}"
-            index: "AEMaaCS_CDN"   
-   ```
+設定中的權杖（例如`${{SPLUNK_TOKEN}}`）代表不應儲存在Git中的秘密。 請改為宣告為Cloud Manager [秘密環境變數](/help/operations/config-pipeline.md#secret-env-vars)。 請務必選取「**全部**」作為「已套用服務」欄位的下拉式清單值，以便將記錄檔轉送至作者、發佈及預覽層級。
 
-   另一種情況是停用CDN記錄或AEM記錄(包括Apache/Dispatcher)的轉送。 例如，若只要轉送CDN記錄檔，即可設定下列專案：
+您可以在CDN記錄檔與AEM記錄檔(包括Apache/Dispatcher)之間設定不同的值，方法是在&#x200B;**預設**&#x200B;區塊之後加入額外的&#x200B;**cdn**&#x200B;和/或&#x200B;**aem**&#x200B;區塊，其中的屬性可以覆寫&#x200B;**預設**&#x200B;區塊中定義的屬性；只需要啟用的屬性。 一個可能的使用案例是對CDN記錄使用不同的Splunk索引，如以下範例所示。
 
-   ```
-      kind: "LogForwarding"
-      version: "1"
-      metadata:
-        envTypes: ["dev"]
-      data:
-        splunk:
-          default:
-            enabled: true
-            host: "splunk-host.example.com"
-            token: "${{SPLUNK_TOKEN}}"
-            index: "AEMaaCS"
-          aem:
-            enabled: false
-   ```
+```
+   kind: "LogForwarding"
+   version: "1"
+   metadata:
+     envTypes: ["dev"]
+   data:
+     splunk:
+       default:
+         enabled: true
+         host: "splunk-host.example.com"
+         token: "${{SPLUNK_TOKEN}}"
+         index: "AEMaaCS"
+       cdn:
+         enabled: true
+         token: "${{SPLUNK_TOKEN_CDN}}"
+         index: "AEMaaCS_CDN"   
+```
 
-1. 對於RDE以外的環境型別（目前不支援），在Cloud Manager中建立目標部署設定管道；請注意，完整棧疊管道和Web層管道不會部署設定檔案。
+另一種情況是停用CDN記錄或AEM記錄(包括Apache/Dispatcher)的轉送。 例如，若只要轉送CDN記錄檔，即可設定下列專案：
 
-   * [參閱設定生產管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)。
-   * [參閱設定非生產管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)。
+```
+   kind: "LogForwarding"
+   version: "1"
+   metadata:
+     envTypes: ["dev"]
+   data:
+     splunk:
+       default:
+         enabled: true
+         host: "splunk-host.example.com"
+         token: "${{SPLUNK_TOKEN}}"
+         index: "AEMaaCS"
+       aem:
+         enabled: false
+```
 
 ## 記錄目的地組態 {#logging-destinations}
 
