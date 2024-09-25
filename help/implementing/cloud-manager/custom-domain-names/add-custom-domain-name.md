@@ -1,21 +1,21 @@
 ---
 title: 新增自訂網域名稱
-description: 了解如何使用 Cloud Manager 新增自訂網域名稱。
+description: 瞭解如何使用Cloud Manager中的網域設定來新增自訂網域名稱。
 exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 2d1382c84d872719332986baa5829d1623d9d9a6
+source-git-commit: b9fb178760b74cb0e101506b6a9ff5ae30c18490
 workflow-type: tm+mt
-source-wordcount: '1489'
-ht-degree: 20%
+source-wordcount: '1509'
+ht-degree: 18%
 
 ---
 
 
 # 新增自訂網域名稱 {#adding-cdn}
 
-了解如何使用 Cloud Manager 新增自訂網域名稱。
+瞭解如何使用Cloud Manager中的&#x200B;**網域設定**&#x200B;來新增自訂網域名稱。
 
 ## 要求 {#requirements}
 
@@ -46,7 +46,7 @@ ht-degree: 20%
 
 1. 在「**[我的程式](/help/implementing/cloud-manager/navigation.md#my-programs)**」控制台中，選取程式。
 
-1. 在側邊功能表的&#x200B;**服務**&#x200B;底下，選取&#x200B;**網域設定**。
+1. 在側邊功能表的&#x200B;**服務**&#x200B;底下，選取![設定圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg) **網域設定**。
 
    ![域設定窗口](/help/implementing/cloud-manager/assets/cdn/cdn-create.png)
 
@@ -61,8 +61,8 @@ ht-degree: 20%
 
    | 憑證型別選項 | 說明 |
    | --- | --- |
-   | Adobe 管理的憑證 | 選取是否要使用DV （網域驗證）憑證。 此選項適用於大多數的情況，可提供基本網域驗證。 Adobe會自動管理和更新憑證。 |
-   | 客戶管理的憑證 | 選取是否要使用EV/OV憑證。 此選項提供EV （延伸驗證）或OV （組織驗證）的增強式安全性。 若需要更嚴格的驗證、更高的信任層級或自訂的憑證控制，請使用。 |
+   | Adobe 管理的憑證 | 如果您要使用DV （網域驗證）憑證，請選取此憑證型別。 此選項適用於大多數的情況，可提供基本網域驗證。 Adobe會自動管理和更新憑證。 |
+   | 客戶管理的憑證 | 如果您要使用EV/OV憑證，請選取此憑證型別。 此選項提供EV （延伸驗證）或OV （組織驗證）的增強式安全性。 若需要更嚴格的驗證、更高的信任層級或自訂的憑證控制，請使用。 |
 
 1. 在&#x200B;**驗證網域**&#x200B;對話方塊中，根據您選取的憑證型別，執行下列其中一項作業：
 
@@ -77,7 +77,7 @@ ht-degree: 20%
 
    >[!NOTE]
    >
-   >如果您使用自我管理的SSL憑證和自我CDN提供者，則可以略過此步驟，並在準備就緒時直接移至[新增CDN設定](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)。
+   >如果您使用客戶管理的SSL憑證和客戶管理的CDN提供者，您可以略過新增SSL憑證，並在準備就緒後直接移至[新增CDN設定](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)。
 
 
 ### Adobe受管理憑證步驟 {#adobe-managed-cert-steps}
@@ -222,8 +222,8 @@ Now that you created your TXT entry, you can verify your domain name status. Pro
 
    1. 輸入自訂網域名稱。
    1. 從下拉清單中選擇與此名稱關聯的 SSL 憑證。
-   1. 按一下&#x200B;**+新增**。
+   1. 按一下「![新增」圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg)「**新增**」。
 
    ![新增自訂網域名稱](/help/implementing/cloud-manager/assets/cdn/cdn-create3.png)
 
-1. **新增網域名稱**&#x200B;對話方塊會開啟至&#x200B;**網域名稱**&#x200B;索引標籤。 繼續進行，如同從[網域設定]頁面](#adding-cdn-settings)新增自訂網域名稱一樣。 —>[
+1. **新增網域名稱**&#x200B;對話方塊會開啟至&#x200B;**網域名稱**&#x200B;索引標籤。 繼續進行，如同從[網域設定]頁面](#adding-cdn-settings)新增自訂網域名稱一樣。[

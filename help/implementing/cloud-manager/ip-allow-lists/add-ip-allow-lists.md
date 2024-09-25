@@ -5,9 +5,9 @@ exl-id: 769be71f-5c11-4f98-8906-7a5667a25aee
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: d6ecdae8dd78c3c93a410ca2c8b80322340f439e
+source-git-commit: b9fb178760b74cb0e101506b6a9ff5ae30c18490
 workflow-type: tm+mt
-source-wordcount: '227'
+source-wordcount: '234'
 ht-degree: 14%
 
 ---
@@ -21,11 +21,13 @@ ht-degree: 14%
 
 {{add-cm-allowlist-frontend-pipeline}}
 
+**新增IP允許清單：**
+
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織。
 
 1. 在「**[我的程式](/help/implementing/cloud-manager/navigation.md#my-programs)**」控制台中，選取程式。
 
-1. 從&#x200B;**計畫總覽**&#x200B;頁面，使用左側的側面板（您可能需要按一下左上角的漢堡圖示才能看到面板），按一下&#x200B;**IP允許清單**。
+1. 從&#x200B;**程式總覽**&#x200B;頁面，使用側面板（您可能需要按一下左上角的![顯示功能表圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)來檢視面板），按一下![工作清單圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_TaskList_18_N.svg) **IP允許清單**。
 
    側面板中的![IP允許清單選項](/help/implementing/cloud-manager/assets/ip-allow-list/ip-allow-list-create.png)
 
@@ -37,7 +39,7 @@ ht-degree: 14%
 
 1. 在&#x200B;**IP位址/ CIDR**&#x200B;欄位中，輸入IP或IP CIDR區塊。 請使用逗號或定位點分隔多個區塊。
 
-1. 按一下&#x200B;**儲存**。
+1. 按一下「**儲存**」。
 
 儲存後，新建立的IP允許清單會在&#x200B;**IP允許清單**&#x200B;頁面的表格中顯示為一列。
 

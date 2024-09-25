@@ -5,10 +5,10 @@ exl-id: 7158496c-b0c4-4228-a306-71dc51003c57
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: d6ecdae8dd78c3c93a410ca2c8b80322340f439e
+source-git-commit: b9fb178760b74cb0e101506b6a9ff5ae30c18490
 workflow-type: tm+mt
-source-wordcount: '293'
-ht-degree: 18%
+source-wordcount: '303'
+ht-degree: 11%
 
 ---
 
@@ -31,9 +31,9 @@ ht-degree: 18%
 1. 從「**概觀**」頁面，瀏覽到「**環境**」畫面。
 1. 在&#x200B;**環境**&#x200B;畫面上，瀏覽至特定環境詳細資訊頁面。
 1. 瀏覽至&#x200B;**IP允許清單**&#x200B;資料表。
-1. 使用表格頂端的輸入欄位，以便您可以選取IP允許清單以及要套用清單的作者或發佈服務。
+1. 使用表格頂端的輸入欄位，以便您可以選取IP允許清單以及要套用清單的作者、Publish或預覽服務。
 IP允許清單必須已存在於Cloud Manager中才能套用它。 請參閱[新增IP允許清單](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)。
-1. 按一下「**套用**」，然後確認您的訂閱。
+1. 按一下「![新增」圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg)「**套用**」並確認您的訂閱。
 
 ## 取消套用IP允許清單 {#un-applying}
 
@@ -44,8 +44,10 @@ IP允許清單必須已存在於Cloud Manager中才能套用它。 請參閱[新
 1. 在[my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)登入Cloud Manager。
 1. 選取適當的組織。
 1. 在「**[我的程式](/help/implementing/cloud-manager/navigation.md#my-programs)**」控制台中，選取程式。
-1. 從&#x200B;**概觀**&#x200B;頁面，瀏覽到&#x200B;**環境**&#x200B;畫面。
-1. 瀏覽至&#x200B;**環境**&#x200B;畫面上的特定環境詳細資訊頁面。1.瀏覽至&#x200B;**IP允許清單**&#x200B;表格。
+1. 從&#x200B;**總覽**&#x200B;頁面，瀏覽至&#x200B;**環境**&#x200B;頁面。
+1. 導覽至特定環境詳細資訊頁面。
+1. 從[一般]索引標籤，捲動至&#x200B;**IP允許清單**&#x200B;表格。
 1. 識別您要取消套用之IP允許清單的列。
-1. 在已識別列的右側，按一下省略符號按鈕，然後選取&#x200B;**取消套用**。
-1. 確認您的提交。
+1. 在已識別列的右側，按一下![更多圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)。
+1. 按一下&#x200B;**取消套用**。
+1. 在&#x200B;**取消套用IP允許清單**&#x200B;對話方塊中，按一下&#x200B;**取消套用**。

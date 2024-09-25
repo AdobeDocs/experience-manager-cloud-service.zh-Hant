@@ -5,10 +5,10 @@ exl-id: 3f3d7631-2bc9-440b-9888-50f6529bcd42
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 64344b9b2cce8d7c7f05d3e5ba94049346308a9d
+source-git-commit: b9fb178760b74cb0e101506b6a9ff5ae30c18490
 workflow-type: tm+mt
-source-wordcount: '1518'
-ht-degree: 68%
+source-wordcount: '1574'
+ht-degree: 52%
 
 ---
 
@@ -57,14 +57,14 @@ Cloud Manager UI 主要由兩個圖形介面組成：
 
 ![Experience Cloud 標頭](assets/experience-cloud-header.png)
 
-1. 漢堡選單提供標籤，可帶您前往個別計畫的特定部分。 或者，您可以根據內容在[授權儀表板](/help/implementing/cloud-manager/license-dashboard.md)和&#x200B;**[我的程式](#my-programs-console)**&#x200B;主控台之間切換。
-1. 無論您位於 Cloud Manager 中的哪個位置，Cloud Manager 按鈕皆會將您帶回 Cloud Manager 的「我的方案」控制台。
-1. 點選或按一下「意見回饋」按鈕，即可向 Adobe 提供有關 Cloud Manager 的意見回饋。
-1. 組織選擇器會顯示您目前所登入的組織 (在本例中為 Foundation Internal)。如果您的 Adobe ID 與多個組織關聯，可點選或按一下以切換到另一個組織。
-1. 點選或按一下解決方案切換器可讓您快速跳轉到其他 Experience Cloud 解決方案。
-1. 說明圖示可快速存取學習和支援資源。
-1. 通知圖示具有目前指派的未完成[通知](/help/implementing/cloud-manager/notifications.md)數目。
-1. 選取代表您使用者的圖示以存取您的使用者設定。如果您沒有設定使用者圖片，則會隨機分配圖示。
+1. 按一下「![顯示功能表圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)」（顯示/隱藏側邊功能表）可讓您存取各種標籤，這些標籤可帶您進入個別程式的特定部分。 或者，您可以根據內容在[授權儀表板](/help/implementing/cloud-manager/license-dashboard.md)和&#x200B;**[我的程式](#my-programs-console)**&#x200B;主控台之間切換。
+1. 按一下AdobeCloud Manager按鈕帶您返回Cloud Manager的「我的程式」主控台，無論您身在Cloud Manager何處。
+1. 按一下&#x200B;**意見反應**，向Adobe提供有關Cloud Manager的意見反應。
+1. 按一下組織選擇器，會顯示您目前登入的組織（在此範例中為Foundation Internal）。 如果您的 Adobe ID 與多個組織關聯，可按一下以切換到另一個組織。
+1. 按一下![應用程式圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Apps_18_N.svg) （解決方案切換器）以快速跳至其他Experience Cloud解決方案。
+1. 按一下![說明圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Help_18_N.svg)，讓您快速存取學習與支援資源。
+1. 按一下![鈴鐺圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Bell_18_N.svg) （[通知](/help/implementing/cloud-manager/notifications.md)）檢視通知和公告等。
+1. 按一下代表使用者對您的使用者設定之存取權的圖示。 如果您沒有設定使用者圖片，則會隨機分配圖示。
 
 #### 方案工具列 {#program-toolbar}
 
@@ -72,9 +72,9 @@ Cloud Manager UI 主要由兩個圖形介面組成：
 
 ![方案工具列](assets/program-toolbar.png)
 
-1. 程式選擇器將會開啟一個下拉式選單，您可以在其中快速選取其他程式或採取內容相關動作，例如建立新程式
-1. 透過入門連結，您可以存取[上線文件歷程](/help/journey-onboarding/overview.md)以幫助您順利執行 Cloud Manager。
-1. 動作按鈕提供內容相關動作，例如建立新方案。
+1. **我的程式**&#x200B;選擇器會開啟一個下拉式清單，您可以在此快速選取其他程式，或執行適合內容的動作，例如建立新程式
+1. **快速入門**&#x200B;連結可讓您存取[入門檔案歷程](/help/journey-onboarding/overview.md)，以開始使用Cloud Manager。
+1. 動作按鈕提供適合上下文的動作，例如新增方案。
 
 ### 統計資料和行動號召 {#statistics}
 
@@ -209,23 +209,23 @@ Cloud Manager 標頭有一個漢堡選單，會自動開啟以顯示程式概觀
 
 **程式**
 
-* 概觀 - 目前文件中所述的方案概觀
-* [活動](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#activity) - 方案的管道執行歷史記錄
-* [管道](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#pipelines) - 為方案設定的所有管道
-* [存放庫](/help/implementing/cloud-manager/managing-code/managing-repositories.md) - 為方案設定的所有存放庫
-* [報告](/help/implementing/cloud-manager/sla-reporting.md) - SLA 資料等量度
+* ![現代格線檢檢視示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ModernGridView_18_N.svg)概觀 — 目前檔案中說明的方案概觀
+* ![鈴鐺圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Bell_18_N.svg) [活動](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#activity) — 計畫的管道執行歷程記錄
+* ![工作流程圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg) [管道](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#pipelines) — 為方案設定的所有管道
+* ![資料夾圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) [存放庫](/help/implementing/cloud-manager/managing-code/managing-repositories.md) — 為方案設定的所有存放庫
+* ![圖形圓形圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_GraphPie_18_N.svg) [報表](/help/implementing/cloud-manager/sla-reporting.md) - SLA資料之類的量度
 
 **服務**
 
-* [環境](/help/implementing/cloud-manager/manage-environments.md) - 為方案設定的所有環境
-* [Edge Delivery網站](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md) — 管理Edge Delivery網站
-* [網域設定](/help/implementing/cloud-manager/custom-domain-names/introduction.md) — 管理程式的自訂網域名稱
-* [SSL憑證](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md) — 管理程式的SSL憑證
-* [CDN設定](/help/implementing/cloud-manager/custom-domain-names/introduction.md) — 管理CDN設定
-* [IP允許清單](/help/implementing/cloud-manager/ip-allow-lists/introduction.md) — 為特定IP位址定義允許清單
-* [內容集](/help/implementing/developing/tools/content-copy.md) - 為複製目的而建立的內容集合
-* [複製內容活動](/help/implementing/developing/tools/content-copy.md) - 內容複製活動
-* [網路基礎結構](/help/security/configuring-advanced-networking.md) — 管理程式的進階網路選項
+* ![資料圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) [環境](/help/implementing/cloud-manager/manage-environments.md) — 針對此程式設定的所有環境
+* ![網頁圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_WebPages_18_N.svg) [Edge Delivery網站](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md) — 管理Edge Delivery網站
+* ![設定圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg) [網域設定](/help/implementing/cloud-manager/custom-domain-names/introduction.md) — 管理程式的自訂網域名稱
+* ![鎖定已關閉圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_LockClosed_18_N.svg) [SSL憑證](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md) — 管理程式的SSL憑證
+* ![社交網路圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SocialNetwork_18_N.svg) [CDN設定](/help/implementing/cloud-manager/custom-domain-names/introduction.md) — 管理CDN設定
+* ![工作清單圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_TaskList_18_N.svg) [IP允許清單](/help/implementing/cloud-manager/ip-allow-lists/introduction.md) — 為特定IP位址定義允許清單
+* ![方塊圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Box_18_N.svg) [內容集](/help/implementing/developing/tools/content-copy.md) — 為複製目的建立的內容集
+* ![歷程圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_History_18_N.svg) [複製內容活動](/help/implementing/developing/tools/content-copy.md) — 內容複製活動
+* ![頻道圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Channel_18_N.svg) [網路基礎結構](/help/security/configuring-advanced-networking.md) — 管理程式的進階網路選項
 
 **資源**
 
