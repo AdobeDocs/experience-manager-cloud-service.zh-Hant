@@ -3,13 +3,13 @@ title: 管理分類資料
 description: 瞭解如何管理分類資料，以便在AEM和Edge Delivery Services網站中使用標籤。
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: 81aacb0c616490eed4589cb8927ea1316ca1670e
+exl-id: 017982e4-a4c8-4097-8751-9619cc4639d0
+source-git-commit: 13bde08db33ff4b81a6e76cad91bb5ea257ab195
 workflow-type: tm+mt
-source-wordcount: '829'
-ht-degree: 8%
+source-wordcount: '845'
+ht-degree: 7%
 
 ---
-
 
 # 管理分類資料 {#managing-taxonomy-data}
 
@@ -108,6 +108,10 @@ ht-degree: 8%
    * 根據您的流程提交 `main` 或建立提取請求。
 
 每個分類頁面只需執行一次此程式。 完成後，您可以發佈分類。
+
+>[!TIP]
+>
+>如需有關路徑對應的詳細資訊，請參閱檔案[Edge Delivery Services的路徑對應。](/help/edge/wysiwyg-authoring/path-mapping.md)
 
 ## 發佈分類法 {#publishing}
 

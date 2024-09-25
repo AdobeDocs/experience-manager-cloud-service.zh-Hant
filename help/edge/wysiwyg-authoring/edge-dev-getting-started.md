@@ -4,10 +4,10 @@ description: 本指南將引導您開始使用新的Adobe Experience Manager網�
 feature: Edge Delivery Services
 exl-id: a71184a7-c954-442e-b276-99edc6d2acd8
 role: Admin, Architect, Developer
-source-git-commit: b34a15138e1b8fbe2bebc22f2cc7e8a0ae22316a
+source-git-commit: 13bde08db33ff4b81a6e76cad91bb5ea257ab195
 workflow-type: tm+mt
-source-wordcount: '1207'
-ht-degree: 86%
+source-wordcount: '1223'
+ht-degree: 85%
 
 ---
 
@@ -113,6 +113,10 @@ Edge Delivery 運用 GitHub，可讓您直接從自己的 GitHub 存放庫管理
 1. 根據需要新增提交訊息，然後按一下「**提交變更**」，將其直接提交到 `main` 分支。
 
    ![提交變更](assets/edge-dev-getting-started/commit-paths-changes.png)
+
+>[!TIP]
+>
+>如需有關路徑對應的詳細資訊，請參閱檔案[Edge Delivery Services的路徑對應。](/help/edge/wysiwyg-authoring/path-mapping.md)
 
 ### 建立和編輯新的 AEM 網站 {#create-aem-site}
 

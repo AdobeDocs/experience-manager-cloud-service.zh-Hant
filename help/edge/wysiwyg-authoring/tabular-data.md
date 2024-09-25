@@ -4,10 +4,10 @@ description: 了解如何使用試算表管理各種值的表格資料，例如�
 feature: Edge Delivery Services
 exl-id: 26d4db90-3e4b-4957-bf21-343c76322cdc
 role: Admin, Architect, Developer
-source-git-commit: f8e305f636c7a7247d2a41f6ed25b1715bd8837c
+source-git-commit: 13bde08db33ff4b81a6e76cad91bb5ea257ab195
 workflow-type: tm+mt
-source-wordcount: '970'
-ht-degree: 97%
+source-wordcount: '986'
+ht-degree: 95%
 
 ---
 
@@ -121,6 +121,10 @@ ht-degree: 97%
    ![橫幅確認發佈](assets/tabular-data/tabular-data-publish-banner.png)
 
 重新導向試算表現已發佈並可供大家存取。
+
+>[!TIP]
+>
+>如需有關路徑對應的詳細資訊，請參閱檔案[Edge Delivery Services的路徑對應。](/help/edge/wysiwyg-authoring/path-mapping.md)
 
 ## 其他試算表類型 {#other}
 
