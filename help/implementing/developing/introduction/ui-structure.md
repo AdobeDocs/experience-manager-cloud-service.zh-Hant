@@ -4,9 +4,9 @@ description: AEM UI具有幾項基礎原則，並由數種關鍵元素組成
 exl-id: ac211716-d699-4fdb-a286-a0a1122c86c5
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 55cf6a10c2cb4c62aa8f89fac7f9d1fb4c012d26
 workflow-type: tm+mt
-source-wordcount: '887'
+source-wordcount: '935'
 ht-degree: 2%
 
 ---
@@ -171,3 +171,15 @@ AEM隨附數個已實作用於頁面製作的圖層；例如包括編輯、預�
 <!--For more details about the concepts around the touch-enabled UI, continue to the article [Concepts of the AEM Touch-Enabled UI](/help/sites-developing/touch-ui-concepts.md).-->
 
 如需更多技術資訊，請參閱頁面編輯器的[JS檔案集](https://developer.adobe.com/experience-manager/reference-materials/6-5/jsdoc/ui-touch/editor-core/index.html)。
+
+### Unified Shell {#unified-shell}
+
+如果您使用Unified Shell做為AEM UI，請參閱Unified Shell上的[AEM as a Cloud Service](/help/overview/aem-cloud-service-on-unified-shell.md)。
+
+如果您需要進行（或已經進行）任何自訂，則可停用此功能：
+
+* [從UI](/help/overview/aem-cloud-service-on-unified-shell.md#disabling-unified-shell)
+
+* 從專案程式碼中，透過設定`Boolean`屬性：
+
+  `/conf/global/setting/unifiedshell` - `false`

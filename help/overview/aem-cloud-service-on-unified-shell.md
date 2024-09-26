@@ -4,10 +4,10 @@ description: 了解有關 Unified Shell 上的 AEM as a Cloud Service 的權益
 exl-id: ea739307-dc99-4621-a239-dbe60ab6b52e
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 55cf6a10c2cb4c62aa8f89fac7f9d1fb4c012d26
 workflow-type: tm+mt
-source-wordcount: '390'
-ht-degree: 100%
+source-wordcount: '408'
+ht-degree: 95%
 
 ---
 
@@ -44,6 +44,10 @@ AEM as a Cloud Service (編寫服務) 與 Unified Shell 整合，以改進使用
 
    ![影像](/help/overview/assets/unifiedshell3.png)
 
+>[!NOTE]
+>
+>您也可以在專案程式碼中停用Unified Shell。 請參閱[AEM UI的結構 — Unified Shell](/help/implementing/developing/introduction/ui-structure.md#unified-shell)。
+
 ## 變更為深色主題 {#changing-to-dark-theme}
 
 若要變更為深色主題，請按一下您的個人資料圖示。此動作會顯示快顯視窗，如下所示。您可以使用切換按鈕切換到 Unified Shell 的深色主題。
@@ -73,3 +77,4 @@ AEM 收件匣可以透過按一下 Unified Shell 中的鈴鐺圖示來存取。
 按一下快顯視窗中的收件匣按鈕以前往 AEM 收件匣：
 
 ![影像](/help/overview/assets/unifiedshell6.png)
+
