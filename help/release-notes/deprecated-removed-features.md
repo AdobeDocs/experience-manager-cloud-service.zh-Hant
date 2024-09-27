@@ -4,10 +4,10 @@ description: 特定於  [!DNL Adobe Experience Manager] as a [!DNL Cloud Service
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: c5057120d68e1119211c7733a8eb0424590096bd
-workflow-type: ht
-source-wordcount: '2172'
-ht-degree: 100%
+source-git-commit: 708bf370c2843dd8e2937de8fbf77843e661cf02
+workflow-type: tm+mt
+source-wordcount: '2220'
+ht-degree: 97%
 
 ---
 
@@ -271,11 +271,36 @@ Adobe 會持續評估產品功能，逐漸利用更現代化的替代方案重�
     <td>2022 年 4 月 11 日</td>
     <td>2024 年 8 月 30 日</td>
   </tr>
+  <tr>
     <td>org.apache.sling.repoinit.jcr<br>org.apache.sling.repoinit.parser.operations</td>
     <td>AEM as a Cloud Service 不支援使用此 API。</td>
     <td>2024 年 5 月 17 日</td>
     <td>2024 年 6 月 30 日</td>
+  </tr>
+  <tr>
+    <td>com.day.cq.xss<br>com.day.cq.xss.taglib<br>com.day.cq.xss.impl</td>
+    <td>請改用org.apache.sling.xss。</td>
+    <td>12/12/2023</td>
+    <td>2024 年 6 月 30 日</td>
+  </tr>
+  <tr>
+    <td>com.adobe.granite.xss<br>com.adobe.granite.xss.impl</td>
+    <td>請注意，com.adobe.granite.xss.impl.servlets中的servlet並未過時</td>
+    <td>12/12/2023</td>
+    <td>2024 年 6 月 30 日</td>
   </tr>  
+  <tr>
+    <td>com.drew.*</td>
+    <td>應透過Cloud Service中的Asset compute，或透過Apache POI或Apache Tika，從影像和影片擷取中繼資料。</td>
+    <td>9/17/2024</td>
+    <td>12/17/2024</td>
+  </tr>
+  <tr>
+    <td>org.apache.jackrabbit.oak.plugins.blob.*</td>
+    <td></td>
+    <td>9/23/2024</td>
+    <td>12/23/2024</td>
+  </tr>       
 </tbody>
 </table>
 </details>
