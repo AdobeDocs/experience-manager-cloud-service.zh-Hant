@@ -4,10 +4,10 @@ description: 瞭解如何使用AEM管理的CDN以及如何將您自己的CDN指�
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 role: Admin
-source-git-commit: 64344b9b2cce8d7c7f05d3e5ba94049346308a9d
+source-git-commit: c31441baa6952d92be4446f9035591b784091324
 workflow-type: tm+mt
-source-wordcount: '1608'
-ht-degree: 11%
+source-wordcount: '1602'
+ht-degree: 12%
 
 ---
 
@@ -36,8 +36,8 @@ AEM管理的CDN符合大部分客戶的效能與安全性需求。 對於發佈�
 
 * [Cloud Manager中的Edge Delivery Services](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)
 * [自訂網域名稱簡介](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
-* [SSL憑證簡介](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md)
-* [新增CDN設定](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)
+* [SSL 憑證簡介](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md)
+* [新增內容傳遞網路設定](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)
 
 **限制流量**
 
@@ -72,7 +72,7 @@ AEM管理的CDN符合大部分客戶的效能與安全性需求。 對於發佈�
 
 ### CDN的基本驗證 {#basic-auth}
 
-對於輕度驗證使用案例，包括商務利害關係人審查內容，顯示需要使用者名稱和密碼的基本驗證對話方塊以保護內容。 [瞭解更多](/help/implementing/dispatcher/cdn-credentials-authentication.md)並加入早期採用者計畫。
+對於輕度驗證使用案例，包括商務利害關係人審查內容，顯示需要使用者名稱和密碼的基本驗證對話方塊以保護內容。 [了解更多](/help/implementing/dispatcher/cdn-credentials-authentication.md)。
 
 ## 客戶管理的內容傳遞網路會指向 AEM 管理的內容傳遞網路 {#point-to-point-CDN}
 

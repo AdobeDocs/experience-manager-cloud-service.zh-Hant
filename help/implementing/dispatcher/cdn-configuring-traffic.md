@@ -4,9 +4,9 @@ description: 瞭解如何在設定檔案中宣告規則和篩選器，並使用C
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: 35d3dcca6b08e42c0d2a97116d0628ac9bbb6a7c
+source-git-commit: c31441baa6952d92be4446f9035591b784091324
 workflow-type: tm+mt
-source-wordcount: '1350'
+source-wordcount: '1321'
 ht-degree: 2%
 
 ---
@@ -18,7 +18,7 @@ AEM as a Cloud Service提供可在[Adobe管理的CDN](/help/implementing/dispatc
 
 * [要求轉換](#request-transformations) — 修改傳入要求的方面，包括標頭、路徑和引數。
 * [回應轉換](#response-transformations) — 修改回使用者端的標題（例如網頁瀏覽器）。
-* [使用者端重新導向](#client-side-redirectors) — 觸發瀏覽器重新導向。 此功能尚未正式發行，但可供早期採用者使用。
+* [使用者端重新導向](#client-side-redirectors) — 觸發瀏覽器重新導向。
 * [來源選取器](#origin-selectors) — 代理至不同的來源後端。
 
 在CDN也可以設定的是流量篩選規則(包括WAF)，其可控制CDN允許或拒絕的流量。 此功能已發行，您可以在[流量篩選器規則(包括WAF規則)](/help/security/traffic-filter-rules-including-waf.md)頁面中瞭解更多相關資訊。
@@ -363,9 +363,6 @@ data:
 
 ## 使用者端重新導向 {#client-side-redirectors}
 
->[!NOTE]
->此功能尚未正式推出。若要加入早期採用者計畫，請傳送電子郵件給`aemcs-cdn-config-adopter@adobe.com`並說明您的使用案例。
-
 對於301、302和類似的使用者端重新導向，您可以使用使用者端重新導向規則。 如果規則相符，CDN會以包含狀態代碼和訊息的狀態行回應（例如HTTP/1.1 301 Moved Permanently），以及位置標頭集。
 
 允許使用固定值的絕對和相對位置。
@@ -380,7 +377,7 @@ version: "1"
 metadata:
   envTypes: ["dev"]
 data:
-  experimental_redirects:
+  redirects:
     rules:
       - name: redirect-absolute
         when: { reqProperty: path, equals: "/page.html" }

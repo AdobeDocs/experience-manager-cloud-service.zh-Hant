@@ -4,10 +4,10 @@ description: 瞭解如何在設定檔案中宣告規則，再使用Cloud Manager
 feature: Dispatcher
 exl-id: a5a18c41-17bf-4683-9a10-f0387762889b
 role: Admin
-source-git-commit: 5d51ff056d4e4f0fdbb3004cbac55803ac91f8ca
+source-git-commit: c31441baa6952d92be4446f9035591b784091324
 workflow-type: tm+mt
-source-wordcount: '1443'
-ht-degree: 5%
+source-wordcount: '1415'
+ht-degree: 4%
 
 ---
 
@@ -18,7 +18,7 @@ Adobe提供的CDN具有多項功能和服務，部分功能和服務需仰賴憑
 
 * AdobeCDN用來驗證來自客戶管理CDN之請求的X-AEM-Edge-Key HTTP標題值。
 * 用來清除CDN快取中資源的API權杖。
-* 透過提交基本驗證表單，可存取受限制內容的使用者名稱/密碼組合清單。 [此功能可供早期採用者使用。](/help/release-notes/release-notes-cloud/release-notes-current.md#foundation-early-adopter)
+* 透過提交基本驗證表單，可存取受限制內容的使用者名稱/密碼組合清單。
 
 各項（包括設定語法）將於下文其本身的章節中說明。
 
@@ -146,9 +146,6 @@ data:
 
 ## 基本驗證 {#basic-auth}
 
->[!NOTE]
->此功能尚未正式推出。若要加入早期採用者計畫，請傳送電子郵件至`aemcs-cdn-config-adopter@adobe.com`。
-
 透過彈出要求使用者名稱和密碼的基本驗證對話方塊來保護某些內容資源。此功能主要用於輕度驗證使用案例（例如業務利害關係人審查內容），而不是作為一般使用者存取權的完整解決方案。
 
 一般使用者會看到基本驗證對話方塊突然出現，如下所示：
@@ -164,7 +161,7 @@ version: "1"
 metadata:
   envTypes: ["dev"]
 data:
-  experimental_authentication:
+  authentication:
     authenticators:
        - name: my-basic-authenticator
          type: basic
@@ -185,12 +182,12 @@ data:
 
 此外，語法包括：
 
-* 包含`experimental_authentication`節點的`data`節點（釋放功能時會移除實驗首碼）。
-* 在`experimental_authentication`底下，有一個`authenticators`節點和一個`rules`節點，兩者都是陣列。
+* 包含`authentication`節點的`data`節點。
+* 在`authentication`底下，有一個`authenticators`節點和一個`rules`節點，兩者都是陣列。
 * 驗證者：在此案例中，會宣告基本驗證者，其結構如下：
    * 名稱 — 描述性字串
    * 型別 — 必須是`basic`
-   * 認證陣列，每個認證包括下列名稱/值組，一般使用者可在基本驗證對話方塊中輸入：
+   * 最多10個憑證的陣列，每個憑證都包含以下名稱/值組，一般使用者可在基本驗證對話方塊中輸入這些名稱/值組：
       * user — 使用者的名稱
       * 密碼 — 其值必須參考[Cloud Manager密碼型別環境變數](/help/operations/config-pipeline.md#secret-env-vars)，並選取&#x200B;**全部**&#x200B;做為服務欄位。
 * 規則：可讓您宣告應使用哪些驗證者，以及應保護哪些資源。 每個規則包含：
@@ -208,7 +205,7 @@ data:
 1. 一開始只定義了`edgeKey1`，在此案例中是參考為`${{CDN_EDGEKEY_052824}}`，這作為建議的慣例，會反映其建立日期。
 
    ```
-   experimental_authentication:
+   authentication:
      authenticators:
        - name: edge-auth
          type: edge
@@ -218,7 +215,7 @@ data:
 1. 在設定中，從`edgeKey2`參照並部署。
 
    ```
-   experimental_authentication:
+   authentication:
      authenticators:
        - name: edge-auth
          type: edge
@@ -229,7 +226,7 @@ data:
 1. 一旦確定不再使用舊的Edge金鑰，請從設定中移除`edgeKey1`以將其移除。
 
    ```
-   experimental_authentication:
+   authentication:
      authenticators:
        - name: edge-auth
          type: edge
@@ -240,7 +237,7 @@ data:
 1. 準備好進行下一次輪換時，請遵循相同的程式，不過這次您會新增`edgeKey1`至組態，並參考名為的新Cloud Manager環境密碼，例如`${{CDN_EDGEKEY_031426}}`。
 
    ```
-   experimental_authentication:
+   authentication:
      authenticators:
        - name: edge-auth
          type: edge

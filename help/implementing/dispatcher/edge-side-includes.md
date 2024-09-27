@@ -4,17 +4,14 @@ description: Adobe Managed CDN現在支援Edge Side Include (ESI)，這是邊緣
 feature: Dispatcher
 exl-id: 35093477-2788-4f69-80a9-899f43567cae
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+source-git-commit: d70a8030ca6687b1839adc0ce1becdf366ec7170
 workflow-type: tm+mt
-source-wordcount: '541'
-ht-degree: 2%
+source-wordcount: '523'
+ht-degree: 1%
 
 ---
 
 # Edge Side 包括 {#edge-side-includes}
-
->[!NOTE]
->此功能尚未正式推出。若要加入早期採用者計畫，請傳送電子郵件給`aemcs-cdn-config-adopter@adobe.com`並說明您的使用案例。
 
 內容傳送速度受益於積極快取頁面，透過設定快取標頭為高存留時間(TTL)值來達成。 當頁面包含需要經常重新整理或可能完全無法快取的動態內容時，這可能會很具挑戰性。 幸運的是，有些策略可以使用高TTL快取包含HTML的頁面，將較動態內容片段的擷取延遲到稍後，透過使用者端Javascript或CDN擷取。 後一種方法是稱為Edge Side Include (ESI)的標準，AEM發佈功能支援該標準。 此HTML包含ESI標籤，指示CDN將頁面的服務遞延給瀏覽器，直到其評估這些標籤為止，並從來源擷取其他較動態（較低TTL）的內容（如果TTL尚未過期，則稱為CDN快取）。
 
