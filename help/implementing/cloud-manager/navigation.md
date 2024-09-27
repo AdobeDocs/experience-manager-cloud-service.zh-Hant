@@ -5,7 +5,7 @@ exl-id: 3f3d7631-2bc9-440b-9888-50f6529bcd42
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: b5ae995623c41803f8704fa9699d3514c37e4550
+source-git-commit: eb2e1555f684a68807b0b3764cd1be03c2d439ab
 workflow-type: tm+mt
 source-wordcount: '1677'
 ht-degree: 42%
@@ -145,8 +145,8 @@ Cloud Manager UI 主要由兩個圖形介面組成：
 
 * 瀏覽至程式的特定![資料圖示](https://spectrum.adobe.com/static/icons/workflow_22/Smock_Data_22_N.svg) [環境](/help/implementing/cloud-manager/manage-environments.md)
 * 開啟![計畫總覽圖示](/help/implementing/cloud-manager/assets/program-overview.svg) [計畫總覽](#program-overview)
-* ![編輯圖示](https://spectrum.corp.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) [編輯程式](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#editing)
-* ![刪除圖示](https://spectrum.corp.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg)[刪除沙箱程式](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#delete-sandbox-program)
+* ![編輯圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) [編輯程式](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#editing)
+* ![刪除圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg)[刪除沙箱程式](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#delete-sandbox-program)
 
 >[!TIP]
 >
@@ -183,9 +183,9 @@ Cloud Manager UI 主要由兩個圖形介面組成：
 
 #### Cloud Manager 標頭 {#cloud-manager-header-2}
 
-頁面左上角是Cloud Manager標題Adobe。 您可以按一下![側功能表圖示](https://spectrum.corp.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)來顯示或隱藏標籤側功能表到軟體的其他區域。
+頁面左上角是Cloud Manager標題Adobe。 您可以按一下![側功能表圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)來顯示或隱藏標籤側功能表到軟體的其他區域。
 
-![Cloud Manager 漢堡選單](assets/cloud-manager-hamburger.png)
+![Cloud Manager側邊功能表](assets/cloud-manager-hamburger.png)
 
 按一下AdobeCloud Manager以返回首頁。
 

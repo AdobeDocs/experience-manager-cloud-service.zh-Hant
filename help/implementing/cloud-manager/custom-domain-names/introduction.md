@@ -5,7 +5,7 @@ exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 8a10634e413ea5c66845dfffa7396a4554a5b3ca
+source-git-commit: 815bd75844ed164973c6acc07a6bf37a39d616b8
 workflow-type: tm+mt
 source-wordcount: '705'
 ht-degree: 47%
@@ -36,7 +36,7 @@ Adobe Experience Manager as a Cloud Service已佈建預設網域名稱，結尾�
 >
 >Cloud Manager 不是網域名稱註冊機構，不提供 DNS 服務。
 
-## 自訂網域名稱並自備CDN {#byo-cdn}
+## 自訂網域名稱並使用您自己的CDN {#byo-cdn}
 
 AEM as a Cloud Service提供內建的CDN （內容傳遞網路）服務，也可讓您透過BYO （自攜）CDN搭配AEM使用。 自訂網域可以安裝在 AEM 管理的 CDN 或您管理的 CDN 中。
 
