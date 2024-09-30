@@ -4,9 +4,9 @@ description: 特定於  [!DNL Adobe Experience Manager] as a [!DNL Cloud Service
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: 115c7e02b5f2fda8e57ad1f5bcbc40ff044eb23d
+source-git-commit: 0bcb769f0d8beb4b501646d82fa91bd9233a2173
 workflow-type: tm+mt
-source-wordcount: '2502'
+source-wordcount: '2496'
 ht-degree: 82%
 
 ---
@@ -79,7 +79,7 @@ Adobe 會持續評估產品功能，逐漸利用更現代化的替代方案重�
 <tbody>
   <tr>
     <td>org.apache.sling.commons.auth<br> org.apache.sling.commons.auth.spi</td>
-    <td>使用Sling的Auth Core / Auth Core SPI介面作為替代方法。 [請參閱下方的移除注意事項。](#org.apache.sling.commons.auth)</td>
+    <td>使用Sling的Auth Core / Auth Core SPI介面作為替代方法。 <a href="#org.apache.sling.commons.auth">請參閱下方的移除備註。</a></td>
     <td>2015</td>
     <td>7/30/21</td>
   </tr>
@@ -144,7 +144,7 @@ Adobe 會持續評估產品功能，逐漸利用更現代化的替代方案重�
     <td>7/30/21</td>
   </tr>
   <tr> <td>org.apache.felix.http.jetty<br>org.eclipse.jetty.client.jmx<br>org.eclipse.jetty.jmx<br>org.eclipse.jetty.server.handler.jmx<br>org.eclipse.jetty.server.nio<br>org.eclipse.jetty.server.jmx<br>org.eclipse.jetty.servlet.jmx<br>org.eclipse.jetty.util.preventers<br>org.eclipse.jetty.util.thread.strategy<br>org.eclipse.jetty.webapp<br>org.eclipse.jetty.websocket.api<br>org.eclipse.jetty.websocket.api.annotations<br>org.eclipse.jetty.websocket.api.extensions<br>org.eclipse.jetty.websocket.api.util<br>org.eclipse.jetty.websocket.client<br>org.eclipse.jetty.websocket.client.io<br>org.eclipse.jetty.websocket.client.masks<br>org.eclipse.jetty.websocket.common<br>org.eclipse.jetty.websocket.common.events<br>org.eclipse.jetty.websocket.common.events.annotated<br>org.eclipse.jetty.websocket.common.extensions<br>org.eclipse.jetty.websocket.common.extensions.compress<br>org.eclipse.jetty.websocket.common.extensions.fragment<br>org.eclipse.jetty.websocket.common.extensions.identity<br>org.eclipse.jetty.websocket.common.frames<br>org.eclipse.jetty.websocket.common.io<br>org.eclipse.jetty.websocket.common.io.http<br>org.eclipse.jetty.websocket.common.io.payload<br>org.eclipse.jetty.websocket.common.message<br>org.eclipse.jetty.websocket.common.scopes<br>org.eclipse.jetty.websocket.common.util<br>org.eclipse.jetty.websocket.server<br>org.eclipse.jetty.websocket.server.pathmap<br>org.eclipse.jetty.websocket.servlet<br>org.eclipse.jetty.xml</td>
-    <td>不再支援Eclipse Jetty和Felix Http Jetty套件。 [請參閱下方的移除注意事項。](#org.eclipse.jetty)</td>
+    <td>不再支援Eclipse Jetty和Felix Http Jetty套件。 <a href="#org.eclipse.jetty">請參閱下方的移除備註。</a></td>
     <td>5/27/21</td>
     <td>8/26/21</td>
   </tr>
@@ -155,7 +155,7 @@ Adobe 會持續評估產品功能，逐漸利用更現代化的替代方案重�
     <td>8/26/21</td>
   </tr>  
   <tr>     <td>com.mongodb<br>com.mongodb.annotations<br>com.mongodb.assertions<br>com.mongodb.async<br>com.mongodb.binding<br>com.mongodb.bulk<br>com.mongodb.client<br>com.mongodb.client.gridfs<br>com.mongodb.client.gridfs.codecs<br>com.mongodb.client.gridfs.model<br>com.mongodb.client.jndi<br>com.mongodb.client.model<br>com.mongodb.client.model.changestream<br>com.mongodb.client.model.geojson<br>com.mongodb.client.model.geojson.codecs<br>com.mongodb.client.result<br>com.mongodb.connection<br>com.mongodb.connection.netty<br>com.mongodb.diagnostics.logging<br>com.mongodb.event<br>com.mongodb.gridfs<br>com.mongodb.internal<br>com.mongodb.internal.async<br>com.mongodb.internal.authentication<br>com.mongodb.internal.connection<br>com.mongodb.internal.dns<br>com.mongodb.internal.event<br>com.mongodb.internal.management.jmx<br>com.mongodb.internal.session<br>com.mongodb.internal.thread<br>com.mongodb.internal.validator<br>com.mongodb.management<br>com.mongodb.operation<br>com.mongodb.selector<br>com.mongodb.session<br>com.mongodb.util</td>
-    <td>AEM as a Cloud Service不支援使用此API。 [請參閱下方的移除注意事項。](#com.mongodb)</td>
+    <td>AEM as a Cloud Service不支援使用此API。 <a href="#com.mongodb">請參閱下方的移除備註。</a></td>
     <td>5/27/21</td>
     <td>7/30/21</td>
   </tr>
@@ -173,7 +173,7 @@ Adobe 會持續評估產品功能，逐漸利用更現代化的替代方案重�
   </tr>
   <tr>
     <td>org.apache.abdera<br>org.apache.abdera.model<br>org.apache.abdera.factory<br>org.apache.abdera.ext.media<br>org.apache.abdera.util<br>org.apache.abdera.i18n.iri<br>org.apache.abdera.writer<br>org.apache.abdera.i18n.rfc4646<br>org.apache.abdera.i18n.rfc4646.enums<br>org.apache.abdera.i18n.text<br>org.apache.abdera.filter<br>org.apache.abdera.xpath<br>org.apache.abdera.i18n.text.io<br>org.apache.abdera.i18n.text.data<br>org.apache.abdera.parser</td>
-    <td>此API已過時，因為Apache Abdera自2017年以來已為淘汰專案。 [請參閱下方的移除注意事項。](#org.apache.abdera_or_org.apache.sling.atom.taglib)</td>
+    <td>此API已過時，因為Apache Abdera自2017年以來已為淘汰專案。 <a href="#org.apache.abdera_or_org.apache.sling.atom.taglib">請參閱下方的移除備註。</a></td>
     <td>7/29/21</td>
     <td>09/29/21</td>
   </tr>
@@ -202,13 +202,13 @@ Adobe 會持續評估產品功能，逐漸利用更現代化的替代方案重�
     <td>已移除</td>
   <tr>
     <td>org.apache.sling.atom.taglib<br>org.apache.sling.atom.taglib.media</td>
-    <td>舊版AEM 6.x API。 [請參閱下方的移除注意事項。](#org.apache.abdera_or_org.apache.sling.atom.taglib)</td>
+    <td>舊版AEM 6.x API。 <a href="#org.apache.abdera_or_org.apache.sling.atom.taglib">請參閱下方的移除備註。</a></td>
     <td>4/8/19</td>
     <td>09/29/21</td>
   </tr>
   <tr>
     <td>org.apache.felix.http.whiteboard</td>
-    <td>不再支援 Apache Felix Http Whiteboard。將您的程式碼移轉到OSGi Http Whiteboard。 [請參閱下方的移除注意事項。](#org.apache.felix.http.whiteboard)</td>
+    <td>不再支援 Apache Felix Http Whiteboard。將您的程式碼移轉到OSGi Http Whiteboard。 <a href="#org.apache.felix.http.whiteboard">請參閱下方的移除備註。</a></td>
     <td>1/27/2022</td>
     <td>03/24/2022</td>
   </tr>
@@ -270,7 +270,7 @@ Adobe 會持續評估產品功能，逐漸利用更現代化的替代方案重�
     <td>6/15/2023</td>
   </tr>
   <tr>
-    <td>org.slf4j.event	</td>
+    <td>org.slf4j.event    </td>
     <td>AEM as a Cloud Service 不支援此內部 slf4j API</td>
     <td>2022 年 4 月 11 日</td>
     <td>2024 年 8 月 30 日</td>
