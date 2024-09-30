@@ -4,17 +4,17 @@ description: 瞭解通用編輯器如何讓您看到即得(WYSIWYG)編輯任何H
 exl-id: d4fc2384-a0f5-4a6f-9572-62749786be4c
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: a77bff14b34f1e433ba185b19f0f0d61728b7c7a
 workflow-type: tm+mt
-source-wordcount: '973'
-ht-degree: 54%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 
 # Universal Editor 簡介 {#introduction}
 
-通用編輯器是多功能的視覺化編輯器，屬於Adobe Experience Manager Sites的一部分。 它可讓作者對任何Headless或Headful體驗進行「所見即所得」(WYSIWYG)編輯。 瞭解它如何協助內容作者提供卓越的體驗，以及如何為開發人員提供無與倫比的自由。
+通用編輯器是多功能的視覺化編輯器，屬於Adobe Experience Manager Sites的一部分。 它可讓作者對任何Headless或Headful體驗進行即席即得(WYSIWYG)編輯。 瞭解它如何協助內容作者提供卓越的體驗，以及如何為開發人員提供無與倫比的自由。
 
 ## 背景 {#background}
 
@@ -91,6 +91,8 @@ Universal Editor 可以用於任何實作、任何內容和任何方面的內容
 * 需要AEM as a Cloud Service版本`2023.8.13099`或更新版本。
 * 內容作者必須擁有自己的個別Experience Cloud帳戶。
 * Chrome和Edge為支援的瀏覽器
+
+{{ue-ip-allow-lists}}
 
 ## 後續步驟 {#next-steps}
 
