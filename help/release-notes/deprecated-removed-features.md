@@ -4,10 +4,10 @@ description: 特定於  [!DNL Adobe Experience Manager] as a [!DNL Cloud Service
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: 708bf370c2843dd8e2937de8fbf77843e661cf02
+source-git-commit: 115c7e02b5f2fda8e57ad1f5bcbc40ff044eb23d
 workflow-type: tm+mt
-source-wordcount: '2220'
-ht-degree: 97%
+source-wordcount: '2502'
+ht-degree: 82%
 
 ---
 
@@ -79,7 +79,7 @@ Adobe 會持續評估產品功能，逐漸利用更現代化的替代方案重�
 <tbody>
   <tr>
     <td>org.apache.sling.commons.auth<br> org.apache.sling.commons.auth.spi</td>
-    <td>使用 Sling 的 Auth Core / Auth Core SPI 介面作為替代方法</td>
+    <td>使用Sling的Auth Core / Auth Core SPI介面作為替代方法。 [請參閱下方的移除注意事項。](#org.apache.sling.commons.auth)</td>
     <td>2015</td>
     <td>7/30/21</td>
   </tr>
@@ -143,15 +143,19 @@ Adobe 會持續評估產品功能，逐漸利用更現代化的替代方案重�
     <td>4/30/21</td>
     <td>7/30/21</td>
   </tr>
-  <tr>
-    <td>org.apache.felix.http.jetty<br>org.eclipse.jetty.http<br>org.eclipse.jetty.http.pathmap<br>org.eclipse.jetty.io<br>org.eclipse.jetty.io.ssl<br>org.eclipse.jetty.jmx<br>org.eclipse.jetty.security<br>org.eclipse.jetty.server<br>org.eclipse.jetty.server.handler<br>org.eclipse.jetty.server.handler.gzip<br>org.eclipse.jetty.server.handler.jmx<br>org.eclipse.jetty.server.jmx<br>org.eclipse.jetty.server.nio<br>org.eclipse.jetty.server.session<br>org.eclipse.jetty.servlet<br>org.eclipse.jetty.servlet.jmx<br>org.eclipse.jetty.servlet.listener<br>org.eclipse.jetty.util<br>org.eclipse.jetty.util.annotation<br>org.eclipse.jetty.util.component<br>org.eclipse.jetty.util.log<br>org.eclipse.jetty.util.preventers<br>org.eclipse.jetty.util.resource<br>org.eclipse.jetty.util.security<br>org.eclipse.jetty.util.ssl<br>org.eclipse.jetty.util.statistic<br>org.eclipse.jetty.util.thread<br>org.eclipse.jetty.util.thread.strategy<br>org.eclipse.jetty.webapp<br>org.eclipse.jetty.websocket.api<br>org.eclipse.jetty.websocket.api.annotations<br>org.eclipse.jetty.websocket.api.extensions<br>org.eclipse.jetty.websocket.api.util<br>org.eclipse.jetty.websocket.client<br>org.eclipse.jetty.websocket.client.io<br>org.eclipse.jetty.websocket.client.masks<br>org.eclipse.jetty.websocket.common<br>org.eclipse.jetty.websocket.common.events<br>org.eclipse.jetty.websocket.common.events.annotated<br>org.eclipse.jetty.websocket.common.extensions<br>org.eclipse.jetty.websocket.common.extensions.compress<br>org.eclipse.jetty.websocket.common.extensions.fragment<br>org.eclipse.jetty.websocket.common.extensions.identity<br>org.eclipse.jetty.websocket.common.frames<br>org.eclipse.jetty.websocket.common.io<br>org.eclipse.jetty.websocket.common.io.http<br>org.eclipse.jetty.websocket.common.io.payload<br>org.eclipse.jetty.websocket.common.message<br>org.eclipse.jetty.websocket.common.scopes<br>org.eclipse.jetty.websocket.common.util<br>org.eclipse.jetty.websocket.server<br>org.eclipse.jetty.websocket.server.pathmap<br>org.eclipse.jetty.websocket.servlet<br>org.eclipse.jetty.xml<br>org.eclipse.jetty.client<br>org.eclipse.jetty.client.api<br>org.eclipse.jetty.client.http<br>org.eclipse.jetty.client.jmx<br>org.eclipse.jetty.client.util</td>
-    <td>不再支援 Eclipse Jetty 和 Felix Http Jetty 套件。</td>
+  <tr> <td>org.apache.felix.http.jetty<br>org.eclipse.jetty.client.jmx<br>org.eclipse.jetty.jmx<br>org.eclipse.jetty.server.handler.jmx<br>org.eclipse.jetty.server.nio<br>org.eclipse.jetty.server.jmx<br>org.eclipse.jetty.servlet.jmx<br>org.eclipse.jetty.util.preventers<br>org.eclipse.jetty.util.thread.strategy<br>org.eclipse.jetty.webapp<br>org.eclipse.jetty.websocket.api<br>org.eclipse.jetty.websocket.api.annotations<br>org.eclipse.jetty.websocket.api.extensions<br>org.eclipse.jetty.websocket.api.util<br>org.eclipse.jetty.websocket.client<br>org.eclipse.jetty.websocket.client.io<br>org.eclipse.jetty.websocket.client.masks<br>org.eclipse.jetty.websocket.common<br>org.eclipse.jetty.websocket.common.events<br>org.eclipse.jetty.websocket.common.events.annotated<br>org.eclipse.jetty.websocket.common.extensions<br>org.eclipse.jetty.websocket.common.extensions.compress<br>org.eclipse.jetty.websocket.common.extensions.fragment<br>org.eclipse.jetty.websocket.common.extensions.identity<br>org.eclipse.jetty.websocket.common.frames<br>org.eclipse.jetty.websocket.common.io<br>org.eclipse.jetty.websocket.common.io.http<br>org.eclipse.jetty.websocket.common.io.payload<br>org.eclipse.jetty.websocket.common.message<br>org.eclipse.jetty.websocket.common.scopes<br>org.eclipse.jetty.websocket.common.util<br>org.eclipse.jetty.websocket.server<br>org.eclipse.jetty.websocket.server.pathmap<br>org.eclipse.jetty.websocket.servlet<br>org.eclipse.jetty.xml</td>
+    <td>不再支援Eclipse Jetty和Felix Http Jetty套件。 [請參閱下方的移除注意事項。](#org.eclipse.jetty)</td>
     <td>5/27/21</td>
     <td>8/26/21</td>
   </tr>
-  <tr>
-    <td>com.mongodb<br>com.mongodb.annotations<br>com.mongodb.assertions<br>com.mongodb.async<br>com.mongodb.binding<br>com.mongodb.bulk<br>com.mongodb.client<br>com.mongodb.client.gridfs<br>com.mongodb.client.gridfs.codecs<br>com.mongodb.client.gridfs.model<br>com.mongodb.client.jndi<br>com.mongodb.client.model<br>com.mongodb.client.model.changestream<br>com.mongodb.client.model.geojson<br>com.mongodb.client.model.geojson.codecs<br>com.mongodb.client.result<br>com.mongodb.connection<br>com.mongodb.connection.netty<br>com.mongodb.diagnostics.logging<br>com.mongodb.event<br>com.mongodb.gridfs<br>com.mongodb.internal<br>com.mongodb.internal.async<br>com.mongodb.internal.authentication<br>com.mongodb.internal.connection<br>com.mongodb.internal.dns<br>com.mongodb.internal.event<br>com.mongodb.internal.management.jmx<br>com.mongodb.internal.session<br>com.mongodb.internal.thread<br>com.mongodb.internal.validator<br>com.mongodb.management<br>com.mongodb.operation<br>com.mongodb.selector<br>com.mongodb.session<br>com.mongodb.util</td>
-    <td>AEM as a Cloud Service 不支援使用此 API。</td>
+  <tr> <td>org.eclipse.jetty.client<br>org.eclipse.jetty.client.api<br>org.eclipse.jetty.client.http<br>org.eclipse.jetty.client.util<br>org.eclipse.jetty.http<br>org.eclipse.jetty.http.pathmap<br>org.eclipse.jetty.io<br>org.eclipse.jetty.io.ssl<br>org.eclipse.jetty.security<br>org.eclipse.jetty.server<br>org.eclipse.jetty.server.handler<br>org.eclipse.jetty.server.handler.gzip<br>org.eclipse.jetty.server.session<br>org.eclipse.jetty.servlet<br>org.eclipse.jetty.servlet.listener<br>org.eclipse.jetty.util<br>org.eclipse.jetty.util.annotation<br>org.eclipse.jetty.util.component<br>org.eclipse.jetty.util.log<br>org.eclipse.jetty.util.resource<br>org.eclipse.jetty.util.security<br>org.eclipse.jetty.util.ssl<br>org.eclipse.jetty.util.statistic<br>org.eclipse.jetty.util.thread
+</td>
+    <td>不再支援 Eclipse Jetty 和 Felix Http Jetty 套件。</td>
+    <td>5/27/21</td>
+    <td>8/26/21</td>
+  </tr>  
+  <tr>     <td>com.mongodb<br>com.mongodb.annotations<br>com.mongodb.assertions<br>com.mongodb.async<br>com.mongodb.binding<br>com.mongodb.bulk<br>com.mongodb.client<br>com.mongodb.client.gridfs<br>com.mongodb.client.gridfs.codecs<br>com.mongodb.client.gridfs.model<br>com.mongodb.client.jndi<br>com.mongodb.client.model<br>com.mongodb.client.model.changestream<br>com.mongodb.client.model.geojson<br>com.mongodb.client.model.geojson.codecs<br>com.mongodb.client.result<br>com.mongodb.connection<br>com.mongodb.connection.netty<br>com.mongodb.diagnostics.logging<br>com.mongodb.event<br>com.mongodb.gridfs<br>com.mongodb.internal<br>com.mongodb.internal.async<br>com.mongodb.internal.authentication<br>com.mongodb.internal.connection<br>com.mongodb.internal.dns<br>com.mongodb.internal.event<br>com.mongodb.internal.management.jmx<br>com.mongodb.internal.session<br>com.mongodb.internal.thread<br>com.mongodb.internal.validator<br>com.mongodb.management<br>com.mongodb.operation<br>com.mongodb.selector<br>com.mongodb.session<br>com.mongodb.util</td>
+    <td>AEM as a Cloud Service不支援使用此API。 [請參閱下方的移除注意事項。](#com.mongodb)</td>
     <td>5/27/21</td>
     <td>7/30/21</td>
   </tr>
@@ -169,7 +173,7 @@ Adobe 會持續評估產品功能，逐漸利用更現代化的替代方案重�
   </tr>
   <tr>
     <td>org.apache.abdera<br>org.apache.abdera.model<br>org.apache.abdera.factory<br>org.apache.abdera.ext.media<br>org.apache.abdera.util<br>org.apache.abdera.i18n.iri<br>org.apache.abdera.writer<br>org.apache.abdera.i18n.rfc4646<br>org.apache.abdera.i18n.rfc4646.enums<br>org.apache.abdera.i18n.text<br>org.apache.abdera.filter<br>org.apache.abdera.xpath<br>org.apache.abdera.i18n.text.io<br>org.apache.abdera.i18n.text.data<br>org.apache.abdera.parser</td>
-    <td>此 API 已過時，因為 Apache Abdera 自 2017 年以來已為淘汰專案。</td>
+    <td>此API已過時，因為Apache Abdera自2017年以來已為淘汰專案。 [請參閱下方的移除注意事項。](#org.apache.abdera_or_org.apache.sling.atom.taglib)</td>
     <td>7/29/21</td>
     <td>09/29/21</td>
   </tr>
@@ -198,13 +202,13 @@ Adobe 會持續評估產品功能，逐漸利用更現代化的替代方案重�
     <td>已移除</td>
   <tr>
     <td>org.apache.sling.atom.taglib<br>org.apache.sling.atom.taglib.media</td>
-    <td>舊版 AEM 6.x API。</td>
+    <td>舊版AEM 6.x API。 [請參閱下方的移除注意事項。](#org.apache.abdera_or_org.apache.sling.atom.taglib)</td>
     <td>4/8/19</td>
     <td>09/29/21</td>
   </tr>
   <tr>
     <td>org.apache.felix.http.whiteboard</td>
-    <td>不再支援 Apache Felix Http Whiteboard。將您的程式碼移轉到 OSGi Http Whiteboard。</td>
+    <td>不再支援 Apache Felix Http Whiteboard。將您的程式碼移轉到OSGi Http Whiteboard。 [請參閱下方的移除注意事項。](#org.apache.felix.http.whiteboard)</td>
     <td>1/27/2022</td>
     <td>03/24/2022</td>
   </tr>
@@ -285,7 +289,7 @@ Adobe 會持續評估產品功能，逐漸利用更現代化的替代方案重�
   </tr>
   <tr>
     <td>com.adobe.granite.xss<br>com.adobe.granite.xss.impl</td>
-    <td>請注意，com.adobe.granite.xss.impl.servlets中的servlet並未過時</td>
+    <td>請改用org.apache.sling.xss。</td>
     <td>12/12/2023</td>
     <td>2024 年 6 月 30 日</td>
   </tr>  
@@ -304,6 +308,52 @@ Adobe 會持續評估產品功能，逐漸利用更現代化的替代方案重�
 </tbody>
 </table>
 </details>
+
+### 移除`org.apache.sling.commons.auth*` {#org.apache.sling.commons.auth}
+
+如果您使用`org.apache.sling.commons.auth`和/或`org.apache.sling.commons.auth.spi`，則可將程式碼移轉至`org.apache.sling.auth`回應以取代該用法。 `org.apache.sling.auth.spi`。如果您使用舊版[ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/)，請務必更新至最新版本。
+
+動作清單：
+* 將ACS AEM Commons更新至最新版本
+* 從`org.apache.sling.commons.auth`和/或`org.apache.sling.commons.auth.spi`移轉至`org.apache.sling.auth`回應。`org.apache.sling.auth.spi`。
+
+### 移除`org.eclipse.jetty*` {#org.eclipse.jetty}
+
+如果您使用封裝`org.eclipse.jetty`或其子封裝中的任何專案，您可能想要移轉至具有類似功能的其他協力廠商程式庫。 如果移轉不可行，請從下列清單將所需的套件組合新增至您的專案。
+
+動作清單：
+* 將`org.eclipse.jetty`套件的使用方式取代為其他協力廠商程式庫/自己的程式碼或
+* 從此清單中選取所需的組合，並將其新增至您的專案：
+   * org.eclipse.jetty:jetty-client:9.4.54.v20240208
+   * org.eclipse.jetty:jetty-http:9.4.54.v20240208
+   * org.eclipse.jetty:jetty-io:9.4.54.v20240208
+   * org.eclipse.jetty:jetty-security:9.4.54.v20240208
+   * org.eclipse.jetty:jetty-servlet:9.4.54.v20240208
+   * org.eclipse.jetty:jetty-server:9.4.54.v20240208
+   * org.eclipse.jetty:jetty-util:9.4.54.v20240208
+   * org.eclipse.jetty:jetty-util-ajax:9.4.54.v20240208
+
+### 移除`com.mongodb` {#com.mongodb}
+
+將Mongo使用者端API新增至您的專案。
+
+動作清單：
+* 將此套件組合新增至您的專案
+   * org.mongodb:mongo-java-driver:3.12.7
+
+### `org.apache.abdera*`和`org.apache.sling.atom.taglib`的使用情況{#org.apache.abdera_or_org.apache.sling.atom.taglib}
+
+使用提供類似功能或您自己的程式碼的第三方程式庫取代`org.apache.abdera`和`org.apache.sling.atom.taglib`的任何封裝。
+
+動作清單：
+* 將來自`org.apache.abdera`和`org.apache.sling.atom.taglib`的封裝使用取代為其他協力廠商程式庫/自己的程式碼。
+
+### `org.apache.felix.http.whiteboard` {#org.apache.felix.http.whiteboard}的使用狀況
+
+以[OSGi Http Whiteboard](https://docs.osgi.org/specification/osgi.cmpn/7.0.0/service.http.whiteboard.html)取代`org.apache.felix.http.whiteboard`的使用方式。 官方OSGi API具有類似功能，取代通常只需要變更服務註冊屬性。
+
+動作清單：
+* 以[OSGi Http Whiteboard](https://docs.osgi.org/specification/osgi.cmpn/7.0.0/service.http.whiteboard.html)取代`org.apache.felix.http.whiteboard`的使用方式
 
 ## OSGI 設定 {#osgi-configuration}
 
