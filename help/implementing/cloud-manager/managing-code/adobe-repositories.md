@@ -4,10 +4,10 @@ description: 瞭解如何在Cloud Manager中新增Adobe管理的存放庫。
 exl-id: 6c32c4ae-f48d-4440-bfc2-cdc1a3d59599
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 533fa72b7610f671a24461073112b7fb798ce166
+source-git-commit: f2364de6237ca9f0285815b581bcf3881488188d
 workflow-type: tm+mt
-source-wordcount: '235'
-ht-degree: 8%
+source-wordcount: '231'
+ht-degree: 7%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 8%
 
 1. 在[my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)登入Cloud Manager，並選取適當的組織以及您要新增Adobe管理存放庫的程式。
 
-1. 從&#x200B;**方案總覽**&#x200B;頁面，按一下側邊功能表中的![資料夾圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) **存放庫**&#x200B;索引標籤。 以切換至&#x200B;**存放庫**&#x200B;頁面。
+1. 從&#x200B;**方案總覽**&#x200B;頁面，按一下側邊功能表中的![資料夾圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) **存放庫**&#x200B;索引標籤。
 
 1. 在&#x200B;**存放庫**&#x200B;頁面右上角附近，按一下&#x200B;**新增存放庫**。
 
@@ -32,10 +32,10 @@ ht-degree: 8%
 1. 在個別文字欄位中輸入下列內容：
 
    * **存放庫名稱** — 您新存放庫的表達式名稱。
-   * **存放庫URL預覽** — 您不需要輸入URL路徑或編輯現有路徑，因為基礎結構已經就位，並已完全整合併由Adobe管理。
+   * **存放庫URL預覽** — 您不需要輸入URL路徑或編輯現有路徑，因為存放庫基礎結構已經就位，並已完全整合併由Adobe管理。
    * **描述（選擇性）** — 存放庫的詳細描述。
 
-   ![新增存放庫對話框](assets/add-adobe-repository.png)
+   ![新增存放庫對話方塊](assets/add-adobe-repository.png)
 
 1. 按一下&#x200B;**儲存**。
 您的新存放庫會顯示在**存放庫**&#x200B;頁面的表格中。

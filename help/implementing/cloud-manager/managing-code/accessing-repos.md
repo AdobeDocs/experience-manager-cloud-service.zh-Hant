@@ -5,9 +5,9 @@ exl-id: 0c0671a3-e400-46f3-ad86-166a6cfdd44b
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 533fa72b7610f671a24461073112b7fb798ce166
+source-git-commit: f2364de6237ca9f0285815b581bcf3881488188d
 workflow-type: tm+mt
-source-wordcount: '380'
+source-wordcount: '384'
 ht-degree: 44%
 
 ---
@@ -42,9 +42,9 @@ Cloud Manager 不會提供[私人存放庫](private-repositories.md) 的存取�
 
    ![存取管道卡上的存放庫資訊](assets/pipelines-card.png)
 
-1. 若要存取密碼，必須產生新密碼。在[存放庫資訊]對話方塊中，按一下&#x200B;**`Generate password`**。
+1. 若要存取密碼，必須產生新密碼。在&#x200B;**存放庫資訊**&#x200B;對話方塊中，選取&#x200B;**產生密碼**。
 
-1. 在確認對話方塊中，按一下&#x200B;**`Generate password`**。
+1. 在確認對話方塊中，選取&#x200B;**產生密碼**。
 
    ![確認產生密碼](assets/confirm-generated-password.png)
 

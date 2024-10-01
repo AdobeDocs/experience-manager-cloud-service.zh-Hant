@@ -1,13 +1,13 @@
 ---
 title: 管理 Cloud Manager 中的存放庫
-description: 瞭解如何在Cloud Manager中建立、檢視和刪除GIT存放庫。
+description: 瞭解如何在Cloud Manager中新增、檢視及刪除Git存放庫。
 exl-id: 6e1cf636-78f5-4270-9a21-38b4d5e5a0b0
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 533fa72b7610f671a24461073112b7fb798ce166
+source-git-commit: b35b25bcd62c28f7894171b7b2269fa46d612686
 workflow-type: tm+mt
-source-wordcount: '645'
-ht-degree: 13%
+source-wordcount: '708'
+ht-degree: 19%
 
 ---
 
@@ -50,6 +50,8 @@ Cloud Manager中的存放庫是用來透過Git儲存和管理您的專案計畫�
 
 ## 新增存放庫 {#adding-repositories}
 
+使用者必須具有&#x200B;**部署管理員**&#x200B;或&#x200B;**企業所有者**&#x200B;角色才能新增存放庫。
+
 在&#x200B;**存放庫**&#x200B;頁面的右上角，按一下&#x200B;**新增存放庫**
 
 ![新增存放庫對話方塊。](assets/repository-add.png)
@@ -60,11 +62,15 @@ Cloud Manager支援兩種型別的存放庫：Adobe管理的存放庫(**Adobe存
 * [在 Cloud Manager 中新增 Adobe 存放庫](adobe-repositories.md)
 * [在 Cloud Manager 中新增私人存放庫](private-repositories.md)
 
->[!NOTE]
->
->* 使用者必須具有&#x200B;**部署管理員**&#x200B;或&#x200B;**企業所有者**&#x200B;角色才能新增存放庫。
->* 任何指定公司或 IMS 組織中的所有計畫都存在 300 個存放庫的限制。
+任何指定公司或 IMS 組織中的所有計畫都存在 300 個存放庫的限制。
 
+## 存取存放庫資訊 {#repo-info}
+
+在「**存放庫**」視窗中查看存放庫時，您可以按一下工作列的「**存取存放庫資訊**」按鈕，以檢視有關如何以程式設計方式存取 Adobe 託管的存放庫詳細資訊。
+
+![存放庫資訊](assets/repository-access-repo-info2.png)
+
+「**存放庫資訊**」視窗會開啟，並且內含詳細資訊。有關存取存放庫資訊的更多資訊，請參閱文件「[存取存放庫資訊](/help/implementing/cloud-manager/managing-code/accessing-repos.md)」。
 
 ## 檢查分支/建立專案 {#check-branches}
 
@@ -91,7 +97,7 @@ Cloud Manager支援兩種型別的存放庫：Adobe管理的存放庫(**Adobe存
 
 ![刪除](assets/repository-delete.png)
 
-刪除存放庫會導致其名稱無法用於將來建立的任何新存放庫。 如果您嘗試使用相同的名稱，您會遇到下列錯誤訊息：
+刪除存放庫會導致其名稱無法用於將來建立的任何新存放庫。 如果您嘗試使用與已刪除的存放庫相同名稱來新增存放庫，您會遇到以下錯誤訊息：
 
 `Repository name should be unique within organization.`
 
