@@ -4,9 +4,9 @@ description: 瞭解如何在自行託管的儲存體(例如Amazon S3或Azure Blo
 feature: Dispatcher
 exl-id: 1ecc374c-b8ee-41f5-a565-5b36445d3c7c
 role: Admin
-source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
+source-git-commit: 137ea509de353f9f800f0b64bb8f2f6375e7d83d
 workflow-type: tm+mt
-source-wordcount: '364'
+source-wordcount: '388'
 ht-degree: 1%
 
 ---
@@ -89,3 +89,9 @@ curl "https://publish-pXXXXX-eXXXXXX.adobeaemcloud.com/cdnstatus?code=403"
 支援的程式碼為：403、404、406、500和503。
 
 如此一來，您就能直接觸發CDN的錯誤處理常式，以測試指定錯誤碼的綜合回應。
+
+### 教學課程
+
+請參閱[CDN錯誤頁面](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/content-delivery/custom-error-pages#cdn-error-pages)教學課程，以取得如何建立、部署和測試CDN提供的錯誤頁面的逐步指示。
+
+
