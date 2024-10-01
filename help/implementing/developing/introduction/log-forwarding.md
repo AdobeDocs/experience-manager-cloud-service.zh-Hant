@@ -4,9 +4,9 @@ description: 瞭解如何在AEM as a Cloud Service中將記錄轉送給Splunk和
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 17d195f18055ebd3a1c4a8dfe1f9f6bc35ebaf37
+source-git-commit: 3aafe41554fd86637e34687660fc48ea817b01d7
 workflow-type: tm+mt
-source-wordcount: '1362'
+source-wordcount: '1603'
 ht-degree: 0%
 
 ---
@@ -40,6 +40,7 @@ AEM和Apache/Dispatcher記錄檔可選擇透過AEM的進階網路基礎結構路
 * 記錄目的地設定 — 每個目的地的格式稍有不同
 * 記錄專案格式 — 記錄專案格式的相關資訊
 * 進階網路 — 透過專用出口或VPN傳送AEM和Apache/Dispatcher記錄
+* 從舊版記錄轉送移轉 — 如何從先前由Adobe設定的記錄轉送移至自助方法
 
 
 ## 設定 {#setup}
@@ -369,4 +370,23 @@ data:
     aem:
       advancedNetworking: true
 ```
+
+## 從舊版記錄檔轉送移轉 {#legacy-migration}
+
+在透過自助模型完成記錄轉送設定之前，已要求客戶開啟支援票證，Adobe將在其中啟動整合。
+
+若客戶是透過Adobe以這種方式進行設定，歡迎在方便時調整為自助服務模式。 進行此轉換有幾個原因：
+
+* 已布建新環境（例如，新的開發環境或RDE）。
+* 變更您現有的Splunk端點或認證。
+* Adobe已在CDN記錄可用之前設定記錄轉送，您想要接收CDN記錄。
+* 主動因應自助服務模式的明智決策，讓貴組織在需要進行時效性變動之前便已掌握相關知識。
+
+準備移轉時，只需依照前幾節所述設定YAML檔案即可。 使用Cloud Manager設定管道來部署至應套用設定的每個環境。
+
+我們建議（但非必要）將設定部署到所有環境，以便它們都處於自助控制之下。 如果沒有，您可能會忘記哪些環境已由Adobe設定，哪些是以自助方式設定。
+
+>[!NOTE]
+>
+>當記錄轉送部署至先前由Adobe支援設定的環境時，您可能會收到長達數小時的重複記錄。 這最終會自動解決。
 
