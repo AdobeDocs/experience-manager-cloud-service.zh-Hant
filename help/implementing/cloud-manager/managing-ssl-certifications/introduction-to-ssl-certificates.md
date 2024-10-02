@@ -1,19 +1,21 @@
 ---
 title: SSL 憑證簡介
-description: 了解 Cloud Manager 如何提供自助服務工具以安裝 SSL 憑證。
+description: 瞭解Cloud Manager提供的自助服務工具，用於安裝和管理SSL憑證。
 exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: b222b4384b1c2a21ecbb244d149ce7e51cc7990f
+source-git-commit: 484f7b0fd8917902d028434451964dd9df3e3445
 workflow-type: tm+mt
-source-wordcount: '765'
-ht-degree: 36%
+source-wordcount: '889'
+ht-degree: 23%
 
 ---
 
 
 # SSL 憑證簡介{#introduction}
+
+瞭解Cloud Manager提供的自助服務工具，用於安裝和管理SSL憑證。
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_sslcert"
@@ -22,24 +24,9 @@ ht-degree: 36%
 >additional-url="https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates" text="檢視、更新和取代 SSL 憑證"
 >additional-url="https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates" text="檢查 SSL 憑證狀態"
 
+## 什麼是SSL憑證？ {#overview}
 
-Cloud Manager提供自助服務工具來安裝和管理SSL （安全通訊端層）憑證，確保使用者的網站安全性。 支援以下兩個使用案例：
-
-<!-- CQDOC-21758, #1 -->
-
-| | 使用案例 | 說明 |
-| --- | --- | --- |
-| 1 | **Adobe受管理憑證(DV)** | Cloud Manager可讓使用者設定來自Adobe的DV （網域驗證）憑證，以進行快速網域設定。 DV憑證是最基本的SSL憑證等級，通常用於測試目的或透過基本加密保護網站。 DV憑證可在[生產程式和沙箱程式](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)中使用。 建立DV憑證後，Adobe每三個月會自動更新一次，除非憑證被刪除。 |
-| 2 | **客戶管理的憑證(OV/EV)** | Cloud Manager使用平台TLS （傳輸層安全性）服務來管理客戶擁有的SSL憑證，以及來自協力廠商憑證授權單位（例如&#x200B;*Let&#39;s Encrypt*）的私密金鑰。 |
-
->[!NOTE]
->
->不允許客戶上傳DV （網域驗證）憑證。
-
-
-## SSL 憑證簡介 {#certificates}
-
-企業和組織使用SSL憑證來保護他們的網站，並允許他們的客戶信任他們。 為了使用 SSL 協議，Web 伺服器需要使用 SSL 憑證。
+企業和組織使用SSL （安全通訊端層）憑證來保護他們的網站，並讓他們的客戶信任他們。 若要使用SSL通訊協定，Web伺服器需要SSL憑證。
 
 當實體（例如組織或企業）向憑證授權單位(CA)要求憑證時，CA會完成驗證程式。 此程式的範圍包括從驗證網域名稱控制到收集公司註冊檔案和訂閱者協定。 在實體的資訊獲得驗證後，CA會使用CA的私密金鑰簽署其公開金鑰。 因為所有主要的憑證授權單位在Web瀏覽器中都有根憑證，實體的憑證會透過&#x200B;*信任鏈*&#x200B;連結，而且網頁瀏覽器會將其識別為受信任的憑證。
 
@@ -47,28 +34,62 @@ Cloud Manager提供自助服務工具來安裝和管理SSL （安全通訊端層
 >
 >Cloud Manager 不提供 SSL 憑證或私密金鑰。這些必須從憑證授權單位（受信任的第三方組織）取得。 某些知名的憑證授權單位包括&#x200B;*DigiCert*、*Let&#39;s Encrypt*、*GlobalSign*、*Entrust*&#x200B;和&#x200B;*Verisign*。
 
-Cloud Manager 支援以下客戶 SSL 憑證使用選項。
+## 使用Cloud Manager管理憑證 {#cloud-manager}
 
-* 多個環境可以使用SSL憑證。 也就是說，可以新增一次，但使用多次。
+Cloud Manager提供自助服務工具來安裝和管理SSL憑證，確保使用者的網站安全性。 Cloud Manager支援兩種管理憑證的模式。
+
+| | 模型 | 說明 |
+| --- | --- | --- |
+| 1 | **[Adobe受管理憑證(DV)](#adobe-managed)** | Cloud Manager可讓使用者設定Adobe所提供的DV （網域驗證）憑證，以進行快速網域設定。 |
+| 2 | **[客戶管理的憑證(OV/EV)](#customer-managed)** | Cloud Manager提供平台TLS （傳輸層安全性）服務，可讓您管理擁有的OV和EV SSL憑證，以及來自協力廠商憑證授權單位（例如&#x200B;*Let&#39;s Encrypt*）的私密金鑰。 |
+
+這兩種模型都提供下列一般特徵。
+
 * 每個 Cloud Manager 環境都可以使用多個憑證。
 * 一個私密金鑰可以發行多個 SSL 憑證。
-* 一個憑證通常包含多個網域。
 * 平台 TLS 服務根據用於終止的 SSL 憑證和託管該網域的 CDN 服務將要求路由到客戶的 CDN 服務。
-* AEM as a Cloud Service 接受網域的萬用字元 SSL 憑證。
 
-AEM as a Cloud Service僅支援安全的`https`網站。 擁有多個自訂網域的客戶不希望每次新增網域時都上傳憑證。 這類客戶能因獲得具有多個網域的憑證而受益。
+>[!IMPORTANT]
+>
+>[若要新增自訂網域並將其關聯到環境，](/help/implementing/cloud-manager/custom-domain-names/introduction.md)您必須擁有涵蓋網域的有效SSL憑證。
 
-## SSL憑證需求 {#requirements}
+### Adobe管理憑證 {#adobe-managed}
 
-* AEM as a Cloud Service接受符合OV （組織驗證）、EV （擴展驗證）或DV （網域驗證）原則的憑證。<!-- CQDOC-21758, #2 -->
-* 任何憑證都必須是來自受信任憑證授權單位的X.509 TLS憑證，並具有相符的2048位元RSA私密金鑰。
-* 不接受自我簽署憑證。
+DV憑證是最基本的SSL憑證等級，通常用於測試目的或透過基本加密保護網站。 DV憑證可在[生產程式和沙箱程式](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)中使用。
+
+建立DV憑證後，Adobe每三個月會自動更新一次，除非憑證被刪除。
+
+### 客戶管理的憑證 {#customer-managed}
 
 OV和EV憑證提供CA驗證的資訊。 這類資訊可協助使用者評估網站所有者、電子郵件寄件者或程式碼或PDF檔案的數位簽署者是否可信。 DV 憑證不允許此類所有權驗證。
 
-### 客戶管理的SSL憑證格式 {#certificate-format}
+OV和EV另外在Cloud Manager中透過DV憑證提供這些功能。
 
-<!-- CQDOC-21758, #3 -->
+* 多個環境可以使用OV/EV憑證。
+   * 也就是說，可以新增一次，但使用多次。
+* 每個OV/EV憑證通常包含多個網域。
+* Cloud Manager接受網域的萬用字元OV/EV憑證。
+
+>[!TIP]
+>
+>如果您有多個自訂網域，並且不想每次新增網域時都上傳憑證，則可獲得具有多個網域的一個憑證可能會對您有所助益。
+
+>[!NOTE]
+>
+>如果已安裝兩個涵蓋相同網域的憑證，則會套用較精確的憑證。
+>
+>例如，如果您的網域是`dev.adobe.com`，而您有涵蓋`*.adobe.com`的憑證和涵蓋`dev.adobe.com`的憑證，則會套用後者，因為它更精確。
+
+#### 客戶管理憑證的需求 {#requirements}
+
+如果您選擇上傳自己的EV/OV憑證，該憑證必須符合以下要求。
+
+* AEM as a Cloud Service接受符合OV （組織驗證）或EV （擴展驗證）原則的憑證。
+   * Cloud Manager不支援上傳您自己的DV （網域驗證）憑證。
+* 任何憑證都必須是來自受信任憑證授權單位的X.509 TLS憑證，並具有相符的2048位元RSA私密金鑰。
+* 不接受自我簽署憑證。
+
+#### 客戶管理的憑證格式 {#certificate-format}
 
 SSL 憑證文件必須是 PEM 格式才能與 Cloud Manager 一起安裝。PEM格式的一般副檔名包括`.pem,`。 `crt`、`.cer` 和 `.cert`。
 
