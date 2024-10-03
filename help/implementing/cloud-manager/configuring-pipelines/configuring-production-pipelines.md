@@ -1,20 +1,20 @@
 ---
-title: 設定生產管道
-description: 了解如何設定生產管道以建置程式碼並將其部署到生產環境。
+title: 新增生產管道
+description: 瞭解如何新增生產管道以建置計畫碼並將其部署到生產環境。
 index: true
 exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: cfaa3be31195929b80310610120a779a20537c61
+source-git-commit: a5e9b29a8108d5c012d402fda8ff7544e02ca911
 workflow-type: tm+mt
-source-wordcount: '1374'
-ht-degree: 69%
+source-wordcount: '1376'
+ht-degree: 67%
 
 ---
 
 
-# 設定生產管道 {#configure-production-pipeline}
+# 新增生產管道 {#configure-production-pipeline}
 
 瞭解如何設定生產管道以建置計畫碼並將其部署到生產環境。 生產管道會先將計畫碼部署到中繼環境，並在獲得核准後將相同的計畫碼部署到生產環境。
 

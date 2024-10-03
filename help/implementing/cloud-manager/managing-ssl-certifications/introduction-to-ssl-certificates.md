@@ -5,9 +5,9 @@ exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 484f7b0fd8917902d028434451964dd9df3e3445
+source-git-commit: 075094f018ccf213cd8d1d69defdc390f0a90713
 workflow-type: tm+mt
-source-wordcount: '889'
+source-wordcount: '891'
 ht-degree: 23%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 23%
 
 # SSL 憑證簡介{#introduction}
 
-瞭解Cloud Manager提供的自助服務工具，用於安裝和管理SSL憑證。
+瞭解Cloud Manager提供的自助服務工具，用於安裝和管理SSL （安全通訊端層）憑證。
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_sslcert"
@@ -32,7 +32,7 @@ ht-degree: 23%
 
 >[!IMPORTANT]
 >
->Cloud Manager 不提供 SSL 憑證或私密金鑰。這些必須從憑證授權單位（受信任的第三方組織）取得。 某些知名的憑證授權單位包括&#x200B;*DigiCert*、*Let&#39;s Encrypt*、*GlobalSign*、*Entrust*&#x200B;和&#x200B;*Verisign*。
+>Cloud Manager 不提供 SSL 憑證或私密金鑰。這些部分必須從憑證授權單位（受信任的第三方組織）取得。 某些知名的憑證授權單位包括&#x200B;*DigiCert*、*Let&#39;s Encrypt*、*GlobalSign*、*Entrust*&#x200B;和&#x200B;*Verisign*。
 
 ## 使用Cloud Manager管理憑證 {#cloud-manager}
 
@@ -40,10 +40,10 @@ Cloud Manager提供自助服務工具來安裝和管理SSL憑證，確保使用�
 
 | | 模型 | 說明 |
 | --- | --- | --- |
-| 1 | **[Adobe受管理憑證(DV)](#adobe-managed)** | Cloud Manager可讓使用者設定Adobe所提供的DV （網域驗證）憑證，以進行快速網域設定。 |
-| 2 | **[客戶管理的憑證(OV/EV)](#customer-managed)** | Cloud Manager提供平台TLS （傳輸層安全性）服務，可讓您管理擁有的OV和EV SSL憑證，以及來自協力廠商憑證授權單位（例如&#x200B;*Let&#39;s Encrypt*）的私密金鑰。 |
+| A | **[Adobe受管理憑證(DV)](#adobe-managed)** | Cloud Manager可讓使用者設定Adobe所提供的DV （網域驗證）憑證，以進行快速網域設定。 |
+| B | **[客戶管理的憑證(OV/EV)](#customer-managed)** | Cloud Manager提供平台TLS （傳輸層安全性）服務，可讓您管理您所擁有的OV和EV SSL憑證，以及來自協力廠商憑證授權單位的私密金鑰，例如&#x200B;*Let&#39;s Encrypt*。 |
 
-這兩種模型都提供下列一般特徵。
+這兩種模式都提供下列管理憑證的一般功能：
 
 * 每個 Cloud Manager 環境都可以使用多個憑證。
 * 一個私密金鑰可以發行多個 SSL 憑證。
@@ -51,9 +51,9 @@ Cloud Manager提供自助服務工具來安裝和管理SSL憑證，確保使用�
 
 >[!IMPORTANT]
 >
->[若要新增自訂網域並將其關聯到環境，](/help/implementing/cloud-manager/custom-domain-names/introduction.md)您必須擁有涵蓋網域的有效SSL憑證。
+>[若要新增自訂網域並與環境建立關聯](/help/implementing/cloud-manager/custom-domain-names/introduction.md)，您必須擁有涵蓋網域的有效SSL憑證。
 
-### Adobe管理憑證 {#adobe-managed}
+### AdobeManaged憑證 {#adobe-managed}
 
 DV憑證是最基本的SSL憑證等級，通常用於測試目的或透過基本加密保護網站。 DV憑證可在[生產程式和沙箱程式](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)中使用。
 
@@ -72,17 +72,17 @@ OV和EV另外在Cloud Manager中透過DV憑證提供這些功能。
 
 >[!TIP]
 >
->如果您有多個自訂網域，並且不想每次新增網域時都上傳憑證，則可獲得具有多個網域的一個憑證可能會對您有所助益。
+>如果您有多個自訂網域，則可能不希望每次新增網域時都上傳憑證。 在這種情況下，您可以透過取得涵蓋多個網域的單一憑證受益。
 
 >[!NOTE]
 >
->如果已安裝兩個涵蓋相同網域的憑證，則會套用較精確的憑證。
+>如果已安裝兩個涵蓋相同網域的憑證，則會套用更精確的憑證。
 >
->例如，如果您的網域是`dev.adobe.com`，而您有涵蓋`*.adobe.com`的憑證和涵蓋`dev.adobe.com`的憑證，則會套用後者，因為它更精確。
+>例如，如果您的網域是`dev.adobe.com`，而您有`*.adobe.com`的一個憑證和`dev.adobe.com`的另一個憑證，則會使用更具體的憑證(`dev.adobe.com`)。
 
 #### 客戶管理憑證的需求 {#requirements}
 
-如果您選擇上傳自己的EV/OV憑證，該憑證必須符合以下要求。
+如果您選擇上傳自己的EV/OV憑證，該憑證必須符合以下要求：
 
 * AEM as a Cloud Service接受符合OV （組織驗證）或EV （擴展驗證）原則的憑證。
    * Cloud Manager不支援上傳您自己的DV （網域驗證）憑證。

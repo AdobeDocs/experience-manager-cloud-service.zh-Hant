@@ -1,13 +1,13 @@
 ---
-title: 疑難排解SSL憑證錯誤
+title: SSL 憑證錯誤疑難排解
 description: 瞭解如何識別常見原因以疑難排解SSL憑證錯誤，進而維護安全連線。
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 9ffec422ec4b5a45962f07142c49a466e8892754
+source-git-commit: ff8c7fb21b4d8bcf395d28c194a7351281eef45b
 workflow-type: tm+mt
-source-wordcount: '331'
-ht-degree: 63%
+source-wordcount: '377'
+ht-degree: 56%
 
 ---
 
@@ -15,6 +15,18 @@ ht-degree: 63%
 # 疑難排解SSL憑證錯誤 {#certificate-errors}
 
 如果憑證未正確安裝或不符合Cloud Manager的要求，可能會出現某些錯誤。
+
++++**無效的憑證**
+
+發生此錯誤是因為客戶新增了加密的私密金鑰，並使用DER格式的私密金鑰。
+
++++
+
++++**私密金鑰必須是PKCS 8格式**
+
+發生此錯誤是因為客戶新增了加密的私密金鑰，並使用DER格式的私密金鑰。
+
++++
 
 +++**正確的憑證順序**
 

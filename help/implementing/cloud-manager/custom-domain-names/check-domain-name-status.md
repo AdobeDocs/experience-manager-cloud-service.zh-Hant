@@ -5,10 +5,10 @@ exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 3ff7b76f7892269f6ca001ff2c079bc693c06d93
+source-git-commit: ff8c7fb21b4d8bcf395d28c194a7351281eef45b
 workflow-type: tm+mt
-source-wordcount: '822'
-ht-degree: 30%
+source-wordcount: '832'
+ht-degree: 26%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 30%
 
 在Cloud Manager中檢查您的網域名稱狀態之前，請先滿足這些要求。
 
-* 首先為您自訂網域新增TXT記錄，如檔案[新增自訂網域名稱](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)中所述。
+* 首先為您的自訂網域新增EV/OV憑證，如檔案[新增自訂網域名稱](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)中所述。
 
 ## 檢查自訂網域名稱的狀態 {#how-to}
 
@@ -45,13 +45,13 @@ ht-degree: 30%
 
 ## 驗證狀態 {#statuses}
 
-Cloud Manager透過[TXT值](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)驗證網域擁有權，並顯示下列其中一個狀態訊息。
+Cloud Manager會透過客戶管理的憑證驗證網域擁有權。 完成後，它會顯示下列其中一個狀態訊息：
 
 | 狀態 | 說明 |
 | --- | --- |
-| 網域驗證失敗 | TXT值遺失或偵測到錯誤。<br>請依照狀態訊息中提供的指示解決問題。 準備就緒後，必須選擇狀態旁邊的&#x200B;**再次驗證**&#x200B;圖示。 |
+| 網域驗證失敗 | 客戶管理的EV/OV憑證遺失或偵測到錯誤。<br>請依照狀態訊息中提供的指示解決問題。 準備就緒後，必須選擇狀態旁邊的&#x200B;**再次驗證**&#x200B;圖示。 |
 | 正在進行網域驗證 | 驗證進行中。<br>在您選取狀態旁邊的&#x200B;**再次驗證**&#x200B;圖示後，通常會看到此狀態。 由於 DNS 傳播延遲，DNS 驗證可能需要幾個小時才能完成。 |
-| 已驗證 — 部署失敗 | TXT驗證成功，但CDN部署失敗。<br>若是這種情況，請聯絡您的Adobe代表。 |
+| 已驗證 — 部署失敗 | EV/OV憑證驗證成功，但CDN部署失敗。<br>若是這種情況，請聯絡您的Adobe代表。 |
 | 網域已驗證和部署 | 此狀態代表您的自訂網域名稱隨時可使用。<br>此時，您的自訂網域名稱已準備好進行測試，並指向Cloud Manager網域名稱。 請參閱[新增自訂網域名稱](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)以瞭解更多資訊。 |
 | 刪除中 | 正在刪除自訂網域名稱。 |
 | 無法刪除 | 刪除自訂網域名稱失敗，必須重試。<br>請參閱[管理自訂網域名稱](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md)以瞭解更多資訊。 |
@@ -63,7 +63,7 @@ Cloud Manager透過[TXT值](/help/implementing/cloud-manager/custom-domain-names
 
 ### 未安裝網域錯誤 {#domain-not-installed}
 
-此錯誤可能發生在 TXT 記錄的網域驗證期間，即使是您已檢查記錄已正確更新。
+此錯誤可能發生在EV/OV憑證的網域驗證期間，即使您已經檢查憑證是否已適當更新。
 
 #### 錯誤原因 {#cause}
 

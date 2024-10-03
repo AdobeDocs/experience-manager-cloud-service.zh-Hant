@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的運作方式以及該軟體可以為您做哪些事。
 breadcrumb-title: 使用手冊
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 2ea7700107d3f0b73828ba07d5cefdec126e37b8
+source-git-commit: 0b69e7ff3b35685ff9ac899eb19c3b58d7f37b41
 workflow-type: tm+mt
-source-wordcount: '5662'
+source-wordcount: '5675'
 ht-degree: 99%
 
 ---
@@ -104,9 +104,11 @@ ht-degree: 99%
          + [2023.4.0 維護版本發行說明](/help/release-notes/maintenance/2023/2023-4-0.md)
          + [2023.2.0 維護版本發行說明](/help/release-notes/maintenance/2023/2023-2-0.md)
          + [2023.1.0 維護版本發行說明](/help/release-notes/maintenance/2023/2023-1-0.md)
+
    + Cloud Manager 發行說明 {#cloud-manager}
       + [最新發行說明](/help/implementing/cloud-manager/release-notes/current.md)
       + 2024 {#2024}
+         + [2024.9.0 版發行說明](/help/implementing/cloud-manager/release-notes/2024/2024-9-0.md)
          + [2024.8.0 版發行說明](/help/implementing/cloud-manager/release-notes/2024/2024-8-0.md)
          + [2024.7.0 版發行說明](/help/implementing/cloud-manager/release-notes/2024/2024-7-0.md)
          + [2024.6.0 版發行說明](/help/implementing/cloud-manager/release-notes/2024/2024-6-0.md)
@@ -929,7 +931,7 @@ ht-degree: 99%
       + [路徑對應](/help/edge/wysiwyg-authoring/path-mapping.md)
       + [表格資料和試算表](/help/edge/wysiwyg-authoring/tabular-data.md)
       + [管理分類資料](/help/edge/wysiwyg-authoring/taxonomy.md)
-      + [WYSIWYG和檔案型區塊](/help/edge/wysiwyg-authoring/wysiwyg-doc-blocks.md)
+      + [WYSIWYG 和文件式區塊](/help/edge/wysiwyg-authoring/wysiwyg-doc-blocks.md)
       + [WIP Sites 功能](/help/edge/wysiwyg-authoring/wip-features.md)
    + 文件型的製作 {#document-authoring}
       + [製作](/help/edge/docs/authoring.md)
@@ -1087,8 +1089,9 @@ ht-degree: 99%
       + 管理程式碼 {#managing-code}
          + [Maven 專案版本處理](/help/implementing/cloud-manager/managing-code/project-version-handling.md)
          + [管理 Cloud Manager 中的存放庫](/help/implementing/cloud-manager/managing-code/managing-repositories.md)
-         + [新增 Adobe 存放庫](/help/implementing/cloud-manager/managing-code/adobe-repositories.md)
+         + [新增Adobe存放庫](/help/implementing/cloud-manager/managing-code/adobe-repositories.md)
          + [新增私人存放庫](/help/implementing/cloud-manager/managing-code/private-repositories.md)
+         + [新增外部存放庫（早期採用者）](/help/implementing/cloud-manager/managing-code/external-repositories.md)
          + [存取存放庫](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
          + [Git 子模組支援](/help/implementing/cloud-manager/managing-code/git-submodules.md)
          + [將 Git 與 Cloud Manager 一起使用](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)

@@ -1,20 +1,20 @@
 ---
-title: 設定非生產管道
-description: 了解如何設定非生產管道以在部署到生產環境之前測試程式碼的品質。
+title: 新增非生產管道
+description: 瞭解如何新增非生產管道，以在部署到生產環境之前測試計畫碼的品質。
 index: true
 exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: cfaa3be31195929b80310610120a779a20537c61
+source-git-commit: a5e9b29a8108d5c012d402fda8ff7544e02ca911
 workflow-type: tm+mt
-source-wordcount: '1402'
-ht-degree: 75%
+source-wordcount: '1405'
+ht-degree: 73%
 
 ---
 
 
-# 設定非生產管道 {#configuring-non-production-pipelines}
+# 新增非生產管道 {#configuring-non-production-pipelines}
 
 了解如何設定非生產管道以在部署到生產環境之前測試程式碼的品質。
 

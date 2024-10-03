@@ -5,10 +5,10 @@ exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: b9fb178760b74cb0e101506b6a9ff5ae30c18490
+source-git-commit: ff8c7fb21b4d8bcf395d28c194a7351281eef45b
 workflow-type: tm+mt
-source-wordcount: '1509'
-ht-degree: 18%
+source-wordcount: '1000'
+ht-degree: 17%
 
 ---
 
@@ -68,8 +68,8 @@ ht-degree: 18%
 
    | 如果您選取憑證型別 | 說明 |
    | --- | ---  |
-   | Adobe 管理的憑證 | 請先完成[Adobe受管理憑證步驟](#adobe-managed-cert-steps)，再繼續下一個步驟。 |
-   | 客戶管理的憑證 | 請先完成[客戶管理的憑證步驟](#customer-managed-cert-steps)，再繼續下一個步驟。 |
+   | Adobe 管理的憑證 | 請先完成[Adobe受管理憑證步驟](#adobe-managed-cert-steps)，再繼續步驟9。 |
+   | 客戶管理的憑證 | 請先完成[客戶管理的憑證步驟](#customer-managed-cert-steps)，再繼續步驟9。 |
 
 1. 按一下&#x200B;**驗證**。
 
@@ -130,100 +130,95 @@ Apex 網域是不包含子網域的自訂網域，例如`example.com`。Apex網�
 
 * `A record for domain @ pointing to IP 151.101.195.10`
 
+>[!TIP]
+>
+>可在管理DNS伺服器上設定&#x200B;*CNAME*&#x200B;或&#x200B;*A記錄*，以節省您的時間。
+
 
 ### 客戶管理的憑證步驟 {#customer-managed-cert-steps}
 
-如果您選取憑證型別&#x200B;*客戶管理的憑證*，請在&#x200B;**驗證網域**&#x200B;對話方塊中完成下列步驟。
+如果您選取憑證型別&#x200B;*客戶管理的憑證*，請完成下列步驟。
 
-![客戶管理的憑證步驟](/help/implementing/cloud-manager/assets/cdn/cdn-create-customer-cert.png)
+1. 在&#x200B;**驗證網域**&#x200B;對話方塊中，上傳涵蓋選取網域的新EV/OV憑證。
 
-若要驗證使用中的網域，您必須新增及驗證TXT記錄。
+   ![驗證客戶管理的EV/OV憑證的網域](/help/implementing/cloud-manager/assets/verify-domain-customer-managed-step.png)
 
-文字記錄（也稱為TXT記錄）是網域名稱系統(DNS)中的資源記錄型別。 它可讓您關聯任意文字與主機名稱。 此文字可能包括伺服器或網路資訊等人類看得懂的細節。
+1. 按一下&#x200B;**「確定」**。
 
-Cloud Manager使用特定TXT記錄來授權要在CDN服務中託管的網域。 在授權Cloud Manager使用自訂網域部署CDN服務並將其與後端服務關聯的區域中，建立DNS TXT記錄。 此關聯完全在您的控制之下，並授權 Cloud Manager 將內容從服務提供給網域。這種授權可以被授予也可以被撤銷。TXT記錄特定於網域和Cloud Manager環境。
+   上傳有效的EV/OV憑證後，**網域設定**&#x200B;表格中的網域狀態會標籤為&#x200B;**已驗證**。
 
-#### 要求 {#customer-managed-cert-requirements}
+   ![顯示驗證狀態的網域設定資料表。](/help/implementing/cloud-manager/assets/domain-settings-verified.png)
 
-在新增TXT記錄之前，請先滿足這些要求。
+<!--
+![Customer managed certificate steps](/help/implementing/cloud-manager/assets/cdn/cdn-create-customer-cert.png)
 
-* 如果您還不知道您的網域主機或註冊商，請確定它。
-* 能夠編輯組織網域的DNS記錄，或聯絡可以編輯的適當人員。
-* 首先，新增自訂網域名稱，如本文前面所述。
+To verify the domain in use, you are required to add and verify a TXT record.
 
-#### 新增TXT記錄以進行驗證 {#customer-managed-cert-verification}
+A text record (also known as a TXT record) is a type of resource record in the Domain Name System (DNS). It lets you associate arbitrary text with a hostname. This text could include human-readable details like server or network information.
 
-1. 在&#x200B;**驗證網域**&#x200B;對話方塊中，Cloud Manager會顯示用於驗證的名稱和TXT值。 複製此值。
+Cloud Manager uses a specific TXT record to authorize a domain to be hosted in a CDN service. Create a DNS TXT record in the zone that authorizes Cloud Manager to deploy the CDN service with the custom domain and associate it with the backend service. This association is entirely under your control and authorizes Cloud Manager to serve content from the service to a domain. This authorization may be granted and withdrawn. The TXT record is specific to the domain and the Cloud Manager environment.
 
-1. 登入您的DNS服務提供者並找到DNS記錄區段。
+#### Requirements {#customer-managed-cert-requirements}
 
-1. 新增`aemverification.[yourdomainname]`作為值的&#x200B;**Name**，並新增TXT值，就像它在&#x200B;**網域名稱**&#x200B;欄位中顯示的一樣。
+Fulfill these requirements before adding a TXT record.
 
-   **TXT記錄範例**
+* Identify your domain host or registrar if you do not know it already.
+* Be able to edit the DNS records for your organization's domain, or contact the appropriate person who can.
+* First, add a custom domain name as described earlier in this article.
 
-   | 網域 | 名稱 | TXT 數值 |
+#### Add a TXT record for verification {#customer-managed-cert-verification}
+
+1. In the **Verify domain** dialog box, Cloud Manager displays the name and TXT value to use for verification. Copy this value.
+
+1. Log in to your DNS service provider and find the DNS records section. 
+
+1. Add `aemverification.[yourdomainname]` as the **Name** of the value and add the TXT value exactly as it appears in the **Domain Name** field.
+
+   **TXT record examples**
+
+   | Domain | Name | TXT Value |
    | --- | --- | --- |
-   | `example.com` | `_aemverification.example.com` | 複製Cloud Manager UI中顯示的整個值。 此值專用於網域和環境。 例如：<br>`adobe-aem-verification=example.com/[program]/[env]/..*` |
-   | `www.example.com` | `_aemverification.www.example.com` | 複製Cloud Manager UI中顯示的整個值。 此值專用於網域和環境。 例如：<br>`adobe-aem-verification=www.example.com/[program]/[env]/..*` |
+   | `example.com` | `_aemverification.example.com` | Copy the entire value displayed in the Cloud Manager UI. This value is specific to the domain and the environment. For example:<br>`adobe-aem-verification=example.com/[program]/[env]/..*` |
+   | `www.example.com` | `_aemverification.www.example.com` | Copy the entire value displayed in the Cloud Manager UI. This value is specific to the domain and the environment. For example:<br>`adobe-aem-verification=www.example.com/[program]/[env]/..*` |
 
-1. 將TXT記錄儲存至您的網域主機。
+1. Save the TXT record to your domain host.
 
-#### 驗證TXT記錄 {#customer-managed-cert-verify}
+#### Verify TXT record {#customer-managed-cert-verify}
 
-完成後，可執行下列指令來驗證結果。
+When you are done, you can verify the result by running the following command.
 
 ```shell
 dig _aemverification.[yourdomainname] -t txt
 ```
 
-預期結果應顯示Cloud Manager UI之&#x200B;**新增網域名稱**&#x200B;對話方塊的&#x200B;**驗證**&#x200B;索引標籤上提供的TXT值。
+The expected result should display the TXT value provided on the **Verification** tab of the **Add Domain Name** dialog of the Cloud Manager UI.
 
-例如，如果您的網域是 `example.com`，然後執行：
+For example, if your domain is `example.com`, then run:
 
 ```shell
 dig TXT _aemverification.example.com -t txt
 ```
 
+
 >[!TIP]
 >
->有數個[DNS查詢工具](https://www.ultratools.com/tools/dnsLookup)可供使用。 Google DoH可用於查詢TXT記錄專案並識別TXT記錄是否遺失或錯誤。
+>There are several [DNS lookup tools](https://www.ultratools.com/tools/dnsLookup) available. Google DoH can be used to look up TXT record entries and identify if the TXT record is missing or erroneous.
+
+-->
 
 >[!NOTE]
 >
 >由於 DNS 傳播延遲，DNS 驗證可能需要幾個小時才能完成。
 >
->Cloud Manager會驗證所有權並更新狀態，這可在網域設定表中看到。 如需詳細資訊，請參閱[檢查自訂網域名稱狀態](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)。
+>Cloud Manager會驗證所有權並更新狀態，可在&#x200B;**網域設定**&#x200B;資料表中看到該狀態。 如需詳細資訊，請參閱[檢查自訂網域名稱狀態](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)。
 
 <!--
 ## Next Steps {#next-steps}
 
 Now that you created your TXT entry, you can verify your domain name status. Proceed to the document [Checking Domain Name Status](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) to continue setting up your custom domain name. -->
 
->[!TIP]
->
->TXT專案和CNAME或A記錄可以同時設定在控管的DNS伺服器上，因此可節省時間。
+
+><!-- The TXT entry and the CNAME or A Record can be set simultaneously on the governing DNS server, thus saving time. -->
 >
 ><!-- To do this, review the entire process of setting up a custom domain name as detailed in the document [Introduction to custom domain names](/help/implementing/cloud-manager/custom-domain-names/introduction.md) taking special note of the document [help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md) and update your DNS settings appropriately. -->
 
-
-## 從環境頁面 {#adding-cdn-environments}
-
-<!-- I DON'T SEE THIS ABILITY ANYMORE IN THE UI -->
-
-從&#x200B;**環境**&#x200B;頁面新增自訂網域名稱的步驟與[從「網域設定」頁面](#adding-cdn-settings)新增自訂網域名稱的步驟相同，但進入點不同。 按照以下步驟從&#x200B;**環境**&#x200B;頁面。
-
-1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織和計畫。
-
-1. 瀏覽至感興趣環境的&#x200B;**環境詳細資料**&#x200B;詳細資訊頁面。
-
-   ![在環境詳情頁面輸入網域名稱](/help/implementing/cloud-manager/assets/cdn/cdn-create4.png)
-
-1. 使用&#x200B;**網站網域名稱**&#x200B;表提交自訂網域名稱。
-
-   1. 輸入自訂網域名稱。
-   1. 從下拉清單中選擇與此名稱關聯的 SSL 憑證。
-   1. 按一下「![新增」圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg)「**新增**」。
-
-   ![新增自訂網域名稱](/help/implementing/cloud-manager/assets/cdn/cdn-create3.png)
-
-1. **新增網域名稱**&#x200B;對話方塊會開啟至&#x200B;**網域名稱**&#x200B;索引標籤。 繼續進行，如同從[網域設定]頁面](#adding-cdn-settings)新增自訂網域名稱一樣。[

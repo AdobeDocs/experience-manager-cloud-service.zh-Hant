@@ -4,14 +4,14 @@ description: 了解如何設定 Cloud Manager 與您自己的私人 GitHub 存�
 exl-id: 5232bbf5-17a5-4567-add7-cffde531abda
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: eb2e1555f684a68807b0b3764cd1be03c2d439ab
+source-git-commit: a5e9b29a8108d5c012d402fda8ff7544e02ca911
 workflow-type: tm+mt
-source-wordcount: '932'
-ht-degree: 36%
+source-wordcount: '928'
+ht-degree: 33%
 
 ---
 
-# 在 Cloud Manager 中新增私人存放庫 {#private-repositories}
+# 在Cloud Manager中新增私人GitHub存放庫 {#private-repositories}
 
 透過設定Cloud Manager以與您的私人GitHub存放庫整合，您可以直接在GitHub中使用Cloud Manager驗證您的程式碼。 此設定免除了定期將程式碼與Adobe存放庫同步的需求。
 
@@ -33,12 +33,12 @@ In essence, a "Build your own GitHub" in Adobe Cloud Manager empowers teams to m
 
 ## 設定 {#configuration}
 
-在Cloud Manager中設定私人存放庫包含兩個步驟：
+在Cloud Manager中設定私人GitHub存放庫包含兩個步驟：
 
-1. [新增私人存放庫](#add-repo)至選取的方案。
-1. 然後，[驗證私人存放庫的所有權](#validate-ownership)。
+1. [將私人GitHub存放庫](#add-repo)新增至選取的方案。
+1. 然後，[驗證私人GitHub存放庫的所有權](#validate-ownership)。
 
-### 將私人存放庫新增到計畫 {#add-repo}
+### 將私人GitHub存放庫新增到計畫 {#add-repo}
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織。
 
@@ -69,11 +69,13 @@ In essence, a "Build your own GitHub" in Adobe Cloud Manager empowers teams to m
 >
 >如需關於在 Cloud Manager 管理存放庫的詳細資訊，請參閱「[Cloud Manager 存放庫](/help/implementing/cloud-manager/managing-code/managing-repositories.md)」。
 
-### 驗證私人存放庫的所有權 {#validate-ownership}
+
+
+### 驗證私人GitHub存放庫的所有權 {#validate-ownership}
 
 Cloud Manager 現在知道您的 GitHub 存放庫，但仍然需要存取它。若要授予存取權，您需要安裝 Adobe GitHub 應用程式並驗證您擁有指定的存放庫。
 
-**若要驗證私人存放庫的所有權：**
+**若要驗證私人GitHub存放庫的所有權：**
 
 1. 新增您自己的存放庫後，請依照&#x200B;**私人存放庫所有權驗證**&#x200B;對話方塊中的剩餘步驟操作。
 
@@ -104,11 +106,13 @@ Cloud Manager 現在知道您的 GitHub 存放庫，但仍然需要存取它。�
 
 如果您稍後需要返回存放庫以完成驗證，請在&#x200B;**存放庫**&#x200B;頁面上，按一下代表您剛剛新增的GitHub存放庫之列中的![更多圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)。 在下拉式清單中，選取&#x200B;**所有權驗證**。
 
-## 將私人存放庫與 Cloud Manager 搭配使用 {#using}
+
+
+## 搭配Cloud Manager使用私人GitHub存放庫 {#using}
 
 在Cloud Manager中驗證GitHub存放庫後，整合即完成。 您可以搭配Cloud Manager使用存放庫。
 
-**若要搭配Cloud Manager使用私人存放庫：**
+**搭配Cloud Manager使用私人存放庫：**
 
 1. 當您建立提取請求時，會自動啟動 GitHub 檢查。
 
@@ -130,22 +134,22 @@ Cloud Manager 現在知道您的 GitHub 存放庫，但仍然需要存取它。�
 >
 >您可以控制自動建立的管道以驗證對私人存放庫的每個提取請求。請參閱[私人存放庫的 GitHub 檢查設定](github-check-config.md)，了解更多資訊。
 
+
+
 ## 將私人存放庫與管道建立關聯 {#pipelines}
 
 已驗證的私人存放庫可以與[完整棧疊和前端管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)相關聯。
 
->[!NOTE]
->
->私人存放庫不支援 Web 層和設定管道。
+
 
 ## 限制 {#limitations}
 
 將私人存放庫與 Cloud Manager 搭配使用時會有某些限制。
 
-* 您無法使用Cloud Manager的GitHub檢查來暫停提取請求驗證。
-如果已在Cloud Manager中驗證GitHub存放庫，Cloud Manager會一律嘗試驗證為該存放庫建立的提取請求。
-* 如果AdobeGitHub應用程式從您的GitHub組織移除，其會移除所有存放庫的提取請求驗證功能。
 * 私人存放庫不支援 Web 層和設定管道。
 * 在生產全端管道上使用私人存放庫時，不會建立和推送 Git 標記。
+* 如果AdobeGitHub應用程式從您的GitHub組織移除，其會移除所有存放庫的提取請求驗證功能。
 * 當新提交被推送到所選分支時，使用私人存放庫和提交建置觸發器的管道不會自動啟動。
 * [成品重複使用功能](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse)不適用於私人存放庫。
+* 您無法使用Cloud Manager的GitHub檢查來暫停提取請求驗證。
+如果已在Cloud Manager中驗證GitHub存放庫，Cloud Manager會一律嘗試驗證為該存放庫建立的提取請求。

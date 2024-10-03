@@ -1,8 +1,8 @@
 ---
-source-git-commit: a77bff14b34f1e433ba185b19f0f0d61728b7c7a
+source-git-commit: 075094f018ccf213cd8d1d69defdc390f0a90713
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1202'
+ht-degree: 94%
 
 ---
 # 代碼片段 {#snippets}
@@ -162,7 +162,7 @@ ht-degree: 0%
 >
 >[通用編輯器](/help/implementing/universal-editor/introduction.md)與IP允許清單不相容。
 >
->如果您希望使用通用編輯器，則不得啟用IP允許清單。
+>如果您想使用通用編輯器，則不能啟用IP允許清單。
 
 ## Universal Editor和IP允許清單 {#ue-ip-allow-lists}
 
@@ -197,7 +197,7 @@ ht-degree: 0%
 >* 提供[支援互動式 3D 的體驗](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/assets/dynamic-media/3d/dynamic-media-3d-feature-video)。
 >* 其他 [Dynamic Media 資源庫](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use)。
 
-## 記錄支援服務單 {#support-ticket}
+## 記錄支援票證 {#support-ticket}
 
 如果產品問題需要額外調查和疑難排解，並且必須符合回應 SLT，您可以提交支援服務單。
 
