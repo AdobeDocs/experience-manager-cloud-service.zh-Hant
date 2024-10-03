@@ -4,10 +4,10 @@ description: 網站無障礙規範 (WCAG) 2.1 版快速指南。
 exl-id: 56aa834b-cd07-41c5-88f2-915bc0596e48
 feature: Compliance
 role: Admin, Architect, Developer, Leader
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: bffc743b2d28c4c4815a17df75c04c8bfdc90a1e
 workflow-type: tm+mt
-source-wordcount: '1739'
-ht-degree: 98%
+source-wordcount: '1749'
+ht-degree: 97%
 
 ---
 
@@ -23,7 +23,9 @@ Adobe Experience Manager (AEM) as a Cloud Service 的開發過程充分遵循「
 
 >[!NOTE]
 >
->[指引的更新版 WCAG 2.2](https://www.w3.org/TR/WCAG22/) 目前正在開發中，但暫時不會列入考量。
+>由於這些檔案是以指引的[更新版本撰寫，因此WCAG 2.2](https://www.w3.org/TR/WCAG/)已於2023年10月推出。
+>
+>請參閱[與WCAG 2.1](https://www.w3.org/TR/WCAG/#comparison-with-wcag-2-1)的比較，以及[WCAG 2.2](https://www.w3.org/TR/WCAG/#new-features-in-wcag-2-2)的新功能。
 
 WCAG 2.1 包含一系列無需仰賴技術的指引和成功標準，有助身心障礙人士存取與使用網路內容。這些標準可為網路內容作者、設計人員和開發人員提供建議，確保他們製作的資源能盡可能方便讓更多使用者存取，無論使用者有任何身心障礙，例如視障、聽力損失、學習障礙、年齡相關限制等均可使用。
 
