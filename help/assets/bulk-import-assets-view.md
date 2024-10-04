@@ -4,10 +4,10 @@ description: 了解如何使用新的 Assets UI (Assets 檢視) 大量匯入資�
 exl-id: 10f9d679-7579-4650-9379-bc8287cb2ff1
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 role: User
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: 816bf0f93dd67f193f4e8a7c9bc4a7df29cb6cf5
 workflow-type: tm+mt
-source-wordcount: '1761'
-ht-degree: 97%
+source-wordcount: '1881'
+ht-degree: 90%
 
 ---
 
@@ -125,11 +125,23 @@ AEM Assets 檢視中的大量匯入能讓管理員將大量資產從資料來源
    >* 如果您在建立 Dropbox 應用程式時選取「**完整 Dropbox**」，並且包含資產的資料夾位於 `https://www.dropbox.com/home/bulkimport-assets`，則在「**[!UICONTROL 來源資料夾]**」欄位中指定 `bulkimport-assets`。
    >* 如果您在建立 Dropbox 應用程式時選取「**應用程式資料夾**」，並且包含資產的資料夾位於 `https://www.dropbox.com/home/Apps/BulkImportAppFolderScope/bulkimport-assets`，則在「**[!UICONTROL 來源資料夾]**」欄位中指定 `bulkimport-assets`，其中 `BulkImportAppFolderScope` 是指應用程式的名稱。在這種情況下，`Apps` 會自動加在 `home` 後面。
 
+   >[!NOTE]
+   >
+   >如果您使用OneDrive做為資料來源，請根據下列規則指定來源資料夾路徑：
+   >* 僅指定根資料夾名稱，不含網域。 如果資料夾的完整URL路徑為`https://my.sharepoint.com/my?id=/personal/user/Documents/Importfolder/`，請在&#x200B;**[!UICONTROL Source資料夾]**&#x200B;欄位中指定`/Importfolder/`。
+   >* 如果資料夾名稱包含多個以空格分隔的字詞，請在「大量匯入」組態中指定包含空格的名稱。
+   >* 來源資料夾必須位於根目錄。 不支援資料夾路徑。
+
 1. (可選) 選取「**[!UICONTROL 匯入後刪除來源檔案]**」選項，在檔案匯入到 Experience Manager Assets 後，從來源資料存放區中刪除原始檔案。
 1. 選取「**[!UICONTROL 匯入模式]**」。選取「**[!UICONTROL 跳過]**」、「**[!UICONTROL 取代]**」或「**[!UICONTROL 建立版本]**」。跳過模式是預設值，在此模式下，擷取工具會跳過匯入資產 (如果已存在)。
    ![匯入來源詳細資訊](/help/assets/assets/bulk-import-source-details.png)
 
 1. (選用) 在「**[!UICONTROL 中繼資料檔案]**」欄位中指定要匯入的中繼資料檔案 (以 CSV 格式提供)。中繼資料來源檔案必須位於來源資料夾中。按一下「**[!UICONTROL 下一步]**」，導覽至「**[!UICONTROL 位置和篩選器]**」。
+
+   >[!NOTE]
+   >
+   >根據您組織的安全性規則，您可能需要管理員同意才能讓此應用程式連線到大量匯入工具。 如果需要，管理員必須先提供同意，然後才能儲存大量匯入設定。
+
 1. 要使用「**[!UICONTROL 資產目標資料夾]**」欄位在所要匯入資產的 DAM 中定義位置，請指定路徑。 例如，`/content/dam/imported_assets`。
 1. (可選) 在「**[!UICONTROL 選擇篩選器]**」區段中，提供資產的檔案大小下限 (以 MB 為單位)，以便將它們包含在「**[!UICONTROL 按大小下限篩選]**」欄位中的擷取程序中。
 1. (可選) 提供資產的檔案大小上限 (以 MB 為單位)，以納入「**[!UICONTROL 按大小上限篩選]**」欄位的擷取程序。
