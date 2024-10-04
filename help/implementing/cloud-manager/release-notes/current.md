@@ -3,10 +3,10 @@ title: Adobe Experience Manager as a Cloud Service 中 Cloud Manager 2024.10.0 �
 description: 瞭解AEM as a Cloud Service中Cloud Manager 2024.10.0的發行說明。
 feature: Release Information
 role: Admin
-source-git-commit: b90ace2250277005d8ac250c841104c93298a605
+source-git-commit: aa8d4c8c69a96054492b886893414c3e82b2f4ad
 workflow-type: tm+mt
-source-wordcount: '472'
-ht-degree: 13%
+source-wordcount: '569'
+ht-degree: 12%
 
 ---
 
@@ -29,6 +29,16 @@ AEM as a Cloud Service中的Cloud Manager版本2024.10.0發行日期是2024年10
 * <!-- BOTH CS & AMS --> Cloud Manager中使用的AEM原型版本現在更新至版本26。 請參閱[https://github.com/adobe/aem-project-archetype/releases](https://github.com/adobe/aem-project-archetype/releases)
 
 <!-- (CMGR-59817) -->
+
+* <!-- CS ONLY --> 新增自訂網域時，之前的驗證方法涉及漫長的DNS驗證過程。 Adobe為客戶簡化了此程式。 現在，您只需要提供有效的SSL憑證（EV或OV），作為擁有權的證明。 不再需要更新DNS中的TXT記錄。
+
+  >[!NOTE]
+  >
+  >此功能僅適用於客戶管理的EV和OV憑證。 由Adobe管理的DV憑證仍需要存在CNAME記錄。
+
+  請參閱[新增自訂網域名稱](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)。
+
+  ![驗證客戶管理的EV/OV憑證的網域](/help/implementing/cloud-manager/assets/verify-domain-customer-managed-step.png)
 
 * <!-- CS ONLY --> 當您新增或編輯網路基礎結構時，會根據下列規則驗證IP位址和網路遮罩欄位中的值：
 
@@ -66,7 +76,7 @@ AEM as a Cloud Service中的Cloud Manager版本2024.10.0發行日期是2024年10
 
 請參閱[在Cloud Manager](/help/implementing/cloud-manager/managing-code/external-repositories.md)中新增外部存放庫。
 
-![新增存放庫對話方塊](/help/implementing/cloud-manager/release-notes/assets/repositories-add-release-notes.png)
+![新增存放庫對話框](/help/implementing/cloud-manager/release-notes/assets/repositories-add-release-notes.png)
 
 >[!NOTE]
 >
