@@ -4,10 +4,10 @@ description: 了解如何為 AEM as a Cloud Service 設定進階網路功能，�
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
 feature: Security
 role: Admin
-source-git-commit: 09a1d6065c42406f1004eb1bdd7dbf902edb279f
+source-git-commit: fd6fb14bf3acdd30efb984e1666ed91a2327d810
 workflow-type: tm+mt
-source-wordcount: '5685'
-ht-degree: 100%
+source-wordcount: '5675'
+ht-degree: 99%
 
 ---
 
@@ -216,7 +216,7 @@ ProxyPassReverse "/somepath" "https://example.com:8443"
 
 在與 SaaS 廠商 (如 CRM 廠商) 整合或在 AEM as a Cloud Service 之外有提供 IP 位址允許清單的其他整合時，專用的 IP 位址可以增強安全性。新增專用的 IP 位址新增至允許清單，可確保只允許來自 AEM Cloud Service 的流量流向外部服務。這是在任何其他 IPS 所允許以外的流量。
 
-相同的專用 IP 適用於您的 Adobe 組織中所有程式以及您所用程式中的全部環境。專用 IP 位址適用於製作和發佈服務。
+相同的專用IP會套用至方案中的所有環境，並套用至Author和Publish服務。
 
 如果沒有啟用專用 IP 位址功能，來自 AEM as a Cloud Service 的流量會流經與其他 AEM as a Cloud Service 客戶共用的一組 IP。
 
