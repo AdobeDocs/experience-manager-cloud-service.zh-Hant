@@ -6,10 +6,10 @@ exl-id: 4aff5a84-134a-43fa-8de8-8d564f4edd16
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: a5e9b29a8108d5c012d402fda8ff7544e02ca911
+source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
 workflow-type: tm+mt
-source-wordcount: '1111'
-ht-degree: 71%
+source-wordcount: '1109'
+ht-degree: 69%
 
 ---
 
@@ -112,7 +112,7 @@ ht-degree: 71%
 
 >[!NOTE]
 >
->私人存放庫不支援 Web 層和設定管道。請參閱文件「[在 Cloud Manager 中新增私人存放庫](/help/implementing/cloud-manager/managing-code/private-repositories.md)」，了解詳細資訊和完整的限制清單。
+>私人存放庫不支援 Web 層和設定管道。請參閱[在Cloud Manager中新增私人存放庫](/help/implementing/cloud-manager/managing-code/private-repositories.md)，以取得詳細資訊和完整的限制清單。
 
 ## 刪除管道 {#deleting-pipelines}
 

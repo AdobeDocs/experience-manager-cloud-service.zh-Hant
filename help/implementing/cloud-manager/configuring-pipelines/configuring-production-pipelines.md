@@ -6,10 +6,10 @@ exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: a5e9b29a8108d5c012d402fda8ff7544e02ca911
+source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
 workflow-type: tm+mt
-source-wordcount: '1376'
-ht-degree: 67%
+source-wordcount: '1375'
+ht-degree: 66%
 
 ---
 
@@ -128,7 +128,7 @@ ht-degree: 67%
 
 >[!NOTE]
 >
->私人存放庫不支援 Web 層和設定管道。請參閱文件「[在 Cloud Manager 中新增私人存放庫](/help/implementing/cloud-manager/managing-code/private-repositories.md)」，了解詳細資訊和完整的限制清單。
+>私人存放庫不支援 Web 層和設定管道。如需詳細資訊和完整的限制清單，請參閱檔案[在Cloud Manager中新增私人存放庫](/help/implementing/cloud-manager/managing-code/private-repositories.md)。
 
 選擇部署型別後，完成建立生產、目標部署管道的步驟相同。
 

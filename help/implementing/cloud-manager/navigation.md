@@ -5,10 +5,10 @@ exl-id: 3f3d7631-2bc9-440b-9888-50f6529bcd42
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: eb2e1555f684a68807b0b3764cd1be03c2d439ab
+source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
 workflow-type: tm+mt
-source-wordcount: '1677'
-ht-degree: 42%
+source-wordcount: '1660'
+ht-degree: 40%
 
 ---
 
@@ -45,7 +45,7 @@ Cloud Manager UI 主要由兩個圖形介面組成：
 
 >[!TIP]
 >
->有關程式的詳細資訊，請參閱文件：[程式和程式類型](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)。
+>如需更多方案的詳細資料，請參閱「[方案和方案類型](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)」。
 
 ### 工具列 {#my-programs-toolbars}
 
@@ -229,7 +229,7 @@ Cloud Manager UI 主要由兩個圖形介面組成：
 
 在[Cloud Manager標題](#cloud-manager-header-2)的左上角，按一下![顯示功能表圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)以顯示或隱藏標籤的側邊功能表。
 
-### 呼叫區段 {#cta}
+### 行動號召 {#cta}
 
 行動號召區段會根據您的方案狀態為您提供有用的資訊。若是新程式，您可能會看到指定的後續步驟以及上線日期提醒，[設定於程式建立期間](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)。
 
@@ -241,19 +241,19 @@ Cloud Manager UI 主要由兩個圖形介面組成：
 
 ### 環境卡片 {#environments}
 
-「**環境**」卡片為您提供環境的概觀以及快速動作的連結。
+「**環境**」卡片為您提供環境的概觀和快速動作的連結。
 
-「**環境**」卡片只會列出三個環境。按一下「**全部顯示**」按鈕即可查看程式的所有環境。
+「**環境**」卡片只會列出三個環境。按一下「**全部顯示**」按鈕即可查看方案的所有環境。
 
-請參閱文件：[管理環境](/help/implementing/cloud-manager/manage-environments.md)，了解有關如何管理環境的詳細資訊。
+另請參閱[管理環境](/help/implementing/cloud-manager/manage-environments.md)。
 
-### 管道卡片 {#pipelines}
+### 管道資訊卡 {#pipelines}
 
 「**管道**」卡片為您提供管道的概觀以及快速動作的連結。
 
-「**管道**」卡片只列出了三個管道。按一下「**全部顯示**」按鈕即可查看程式的所有管道。
+「**管道**」卡片只列出了三個管道。按一下「**全部顯示**」按鈕即可查看方案的所有管道。
 
-請參閱文件：[管理管道](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md)，了解有關如何管理管道的詳細資訊。
+如需有關如何管理管道的詳細資訊，另請參閱[管理管道](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md)。
 
 ### 效能卡 {#performance}
 

@@ -6,10 +6,10 @@ exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: a5e9b29a8108d5c012d402fda8ff7544e02ca911
+source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
 workflow-type: tm+mt
-source-wordcount: '1405'
-ht-degree: 73%
+source-wordcount: '1402'
+ht-degree: 71%
 
 ---
 
@@ -129,7 +129,7 @@ ht-degree: 73%
 
 >[!NOTE]
 >
->私人存放庫不支援 Web 層和設定管道。請參閱文件「[在 Cloud Manager 中新增私人存放庫](/help/implementing/cloud-manager/managing-code/private-repositories.md)」，了解詳細資訊和完整的限制清單。
+>私人存放庫不支援 Web 層和設定管道。請參閱[在Cloud Manager中新增私人存放庫](/help/implementing/cloud-manager/managing-code/private-repositories.md)，以取得詳細資訊和完整的限制清單。
 
 選擇部署型別後，完成建立非生產、目標部署管道的步驟相同。
 
@@ -163,9 +163,9 @@ ht-degree: 73%
 
 1. 點選或按一下「**儲存**」，以儲存管道。
 
-管道已儲存，您現在可以在&#x200B;**計劃總覽**&#x200B;頁面的&#x200B;**管道**&#x200B;卡上[管理您的管道](managing-pipelines.md)。
+管道已儲存，您現在可以在&#x200B;**計畫概觀**&#x200B;頁面的&#x200B;**管道**&#x200B;卡上[管理您的管道](managing-pipelines.md)。
 
-## 跳過 Dispatcher 套件 {#skip-dispatcher-packages}
+## 跳過Dispatcher套件 {#skip-dispatcher-packages}
 
 如果您希望將 Dispatcher 套件建置為管道的一部分，但又不希望將它們發佈到建置儲存，您可以停用發佈它們，這可能會減少管道的執行時間。
 

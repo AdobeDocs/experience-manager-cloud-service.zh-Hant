@@ -1,5 +1,5 @@
 ---
-source-git-commit: 075094f018ccf213cd8d1d69defdc390f0a90713
+source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
 workflow-type: tm+mt
 source-wordcount: '1202'
 ht-degree: 94%
@@ -170,7 +170,7 @@ ht-degree: 94%
 >
 >通用編輯器與[IP允許清單不相容。](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
 >
->如果您希望使用通用編輯器，則不得啟用IP允許清單。
+>如果您想使用通用編輯器，則不能啟用IP允許清單。
 
 ## 使用 Dynamic Media {#work-with-dynamic-media}
 

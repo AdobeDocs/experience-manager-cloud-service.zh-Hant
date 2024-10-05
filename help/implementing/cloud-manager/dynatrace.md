@@ -5,9 +5,9 @@ exl-id: b58c8b82-a098-4d81-bc36-664e890c8f66
 solution: Experience Manager
 feature: Log Files, Developing
 role: Admin, Architect, Developer
-source-git-commit: 8d5d8910a906e2adf17fa9c75f17634602c2e0b9
+source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
 workflow-type: tm+mt
-source-wordcount: '589'
+source-wordcount: '586'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ Dynatrace客戶可透過客戶支援票證要求連線，藉此監控其AEM環�
 | [!DNL Dynatrace Environment URL] | 您的Dynatrace環境網址。<br><br>Dynatrace SaaS客戶的格式為`https://<your-environment-id>.live.dynatrace.com`。<br><br>對於Dynatrace Managed客戶，格式為`https://<your-managed-url>/e/<environmentId>` |
 | [!DNL Dynatrace Environment ID] | 您的Dynatrace環境ID。 請參閱[如何取得我的Dynatrace連線詳細資料？](#how-do-i-get-my-dynatrace-connection-details)取得此專案的方式。 |
 | [!DNL Dynatrace Environment Token] | 您的Dynatrace環境權杖。 請參閱[如何取得我的Dynatrace連線詳細資料？](#how-do-i-get-my-dynatrace-connection-details)取得此專案的方式。<br><br>這應視為秘密，因此請使用適當的安全性實務。 例如，密碼可在網站（例如&#x200B;**zerobin.net**，客戶支援票證可參照此網站）中保護此密碼以及密碼。 |
-| [!DNL Dynatrace API access token] | 您Dynatrace環境的API存取Token。  請參閱[建立Dynatrace API存取Token](#create-dynatrace-access-token)以瞭解如何建立此專案。<br><br>這應視為秘密，因此請使用適當的安全性實務。 例如，密碼可在網站（例如&#x200B;**zerobin.net**，客戶支援票證可參照此網站）中保護此密碼以及密碼。<br><br>注意：只有Dynatrace Managed才需要此專案。 |
+| [!DNL Dynatrace API access token] | 您Dynatrace環境的API存取Token。 請參閱[建立Dynatrace API存取Token](#create-dynatrace-access-token)，瞭解如何建立此專案。<br><br>這應視為秘密，因此請使用適當的安全性實務。 例如，密碼可在網站（例如&#x200B;**zerobin.net**，客戶支援票證可參照此網站）中保護此密碼以及密碼。<br><br>注意：只有Dynatrace Managed才需要此專案。 |
 | [!DNL Dynatrace ActiveGate Port] | AEM整合應連線至您的Dynatrace ActiveGate連線埠。<br><br>注意：只有Dynatrace Managed才需要此專案。 |
 | [!DNL Dynatrace ActiveGate Network Zone] | 您的[Dynatrace ActiveGate網路區域](https://docs.dynatrace.com/docs/manage/network-zones)可跨資料中心和網路區域有效路由AEM監控資料。<br><br>注意： Dynatrace ActiveGate網路區域是選用的。 |
 | [!DNL AEM Environment ID(s)] | Dynatrace要監控的AEM環境ID。 |

@@ -5,9 +5,9 @@ exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
+source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
 workflow-type: tm+mt
-source-wordcount: '788'
+source-wordcount: '786'
 ht-degree: 77%
 
 ---
@@ -87,7 +87,7 @@ Cloud Manager [2023.10.0 版](/help/implementing/cloud-manager/release-notes/202
 
 在某些情況下，您的建置流程可能會依據特定的設定變數而定，這些變數不適合放入 Git 存放庫中，或者在使用同一分支的管道執行之間需要有所變化。
 
-如需詳細資訊，請參閱檔案[設定管道變數](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md)
+另請參閱[設定管道變數](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md)以取得詳細資訊
 
 ## 安裝附加系統套件 {#installing-additional-system-packages}
 

@@ -5,10 +5,10 @@ exl-id: 352fae8e-d116-40b0-ba54-d7f001f076e8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 0edc6d2b32d06727c693d4630ce500e32aa336b4
+source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '452'
+ht-degree: 25%
 
 ---
 
@@ -80,7 +80,7 @@ Cloud Manager的IP允許清單可用於限制和控制對此類受信任IP地址
 
 為避免前端管道執行中斷，請確保新增此Cloud Manager IP允許清單。 然後，在啟用管道之前&#x200B;*將清單套用至作者環境*。
 
-如需詳細資訊，請參閱檔案[套用IP允許清單](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)和[啟用前端管道](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md)。
+如需詳細資訊，請參閱[套用IP允許清單](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)和[啟用前端管道](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md)。
 
 ### Universal Editor和IP允許清單 {#universal-editor}
 

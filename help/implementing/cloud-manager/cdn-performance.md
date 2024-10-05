@@ -5,9 +5,9 @@ exl-id: ecd8c1ca-873f-4e73-ad73-b5f7561eb109
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: dd696580758e7ab9a5427d47fda4275f9ad7997f
+source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
 workflow-type: tm+mt
-source-wordcount: '384'
+source-wordcount: '382'
 ht-degree: 4%
 
 ---
@@ -28,7 +28,7 @@ CDN控制面板可在每個計畫的概觀頁面上取得。
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織。
 
-1. 在&#x200B;**[我的程式](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;主控台上，點選或按一下您要檢視其CDN儀表板的程式。
+1. 在&#x200B;**[我的計畫](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;主控台上，按一下您要檢視其CDN儀表板的計畫。
 
    ![我的程式頁面](assets/my-programs.png)
 

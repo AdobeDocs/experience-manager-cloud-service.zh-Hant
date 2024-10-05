@@ -5,9 +5,9 @@ exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
+source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
 workflow-type: tm+mt
-source-wordcount: '2375'
+source-wordcount: '2371'
 ht-degree: 73%
 
 ---
@@ -50,13 +50,13 @@ ht-degree: 73%
 
    ![環境卡](assets/no-environments.png)
 
-   * **新增環境**&#x200B;選項也可在&#x200B;**環境**&#x200B;索引標籤上找到。
+   * **新增環境**&#x200B;選項也可在![資料圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **環境**&#x200B;索引標籤上使用。
 
      ![「環境」索引標籤](assets/environments-tab.png)
 
    * 由於缺少權限或根據授權的資源，**新增環境**&#x200B;選項可能會停用。
 
-1. 在出現的&#x200B;**新增環境**&#x200B;對話框中：
+1. 在&#x200B;**新增環境**&#x200B;對話方塊中：
 
    * 選取&#x200B;[**環境型別**](#environment-types)。
       * 可用/已使用環境的數量會顯示在環境類型名稱後面的括號中。
@@ -310,7 +310,7 @@ Sites計畫的Cloud Manager支援發佈和預覽服務的自訂網域名稱。
 
 >[!TIP]
 >
->如需詳細資訊，請參閱檔案[自訂網域名稱簡介](/help/implementing/cloud-manager/custom-domain-names/introduction.md)。
+>如需詳細資訊，請參閱[自訂網域名稱簡介](/help/implementing/cloud-manager/custom-domain-names/introduction.md)。
 
 ## 管理 IP 允許清單 {#manage-ip-allow-lists}
 
@@ -324,4 +324,4 @@ Cloud Manager 支援 IP 允許清單，用於 Sites 計畫的編寫、發佈和�
 
 >[!TIP]
 >
->如需詳細資訊，請參閱檔案[ IP允許清單簡介](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)。
+>如需詳細資訊，請參閱[ IP允許清單簡介](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)。
