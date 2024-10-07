@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的目前維�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: fa2da21ef6424bce0830d503eba650e1c1bf3dc2
+source-git-commit: ee3e1bedddddff0aa41665359a91a0de48fd19c8
 workflow-type: tm+mt
-source-wordcount: '1353'
-ht-degree: 98%
+source-wordcount: '1411'
+ht-degree: 89%
 
 ---
 
@@ -63,7 +63,7 @@ ht-degree: 98%
 * SITES - 24166：觸控 UI 編輯器的遠端資產緩解。
 * SITES - 24409：僅在一種 HTTP 方法上註冊所有請求處理器。
 * SITES - 25008：改善對 PersistenceExceptions 和權限問題的處理。
-* SITES - 24821：[Xwalk] 將 aem.page / aem.live 設定為預設值。
+* SITES - 24821：將aem.page / aem.live設為預設值。
 
 ### 已修正的問題 {#fixed-issues-17964}
 
@@ -107,7 +107,7 @@ ht-degree: 98%
 * SITES - 23899：事件：頁面事件延遲或完全不生成
 * SITES - 23961：事件：設定資料夾存在時，無法使用參考來建立內容片段模型
 * SITES - 23963：事件：頁面刪除事件有時不會出現
-* SITES - 23443：GraphQL：GraphQL 游標查詢行為不一致。
+* SITES - 23443： GraphQL： GraphQL資料指標查詢不一致行為。
 * SITES - 10994：鍵盤焦點順序不合邏輯。
 * SITES - 16357：AEM：Sites 選單的「設定分析」索引標籤中的按鈕被截斷。
 * SITES - 19836：容器中的 Ghost 元件顯示在發佈和預覽實例上。
@@ -123,7 +123,7 @@ ht-degree: 98%
 * SITES - 24025：AEM 返回位置標頭的 302 重新導向使用內部 DNS 而非公共 DNS
 * SITES - 24036：需要對 ASCII 格式的 AEM RTE 持續性字元進行調查
 * SITES - 24317：代理程式設定不適用於基本驗證
-* SITES - 24918：[Xwalk] 修正在使用專用出口 IP 時偶爾傳回的 504 錯誤。
+* SITES - 24918：修復使用專用ip輸出時偶爾傳回的504錯誤。
 
 ### 已知問題 {#known-issues-17964}
 
@@ -131,9 +131,19 @@ ht-degree: 98%
 
 ### 已過時的功能和 API {#deprecated-17964}
 
-請注意，我們正在更新 `com.day.cq.wcm.api`，並且在目前版本中，我們已將其中某些方法和類別標記為 `@Deprecated`。這些將於未來的版本中刪除，因此若您正在使用其中的任何一個，請考慮改用所建議的替代方案。
+ [已過時和移除的功能和 API](/help/release-notes/deprecated-removed-features.md) 文件中詳細介紹了 AEM as a Cloud Service 已過時和移除的功能和 API。
 
-[「已過時和已移除的功能及 API」](/help/release-notes/deprecated-removed-features.md)文件中詳細介紹 AEM as a Cloud Service 中已過時和已移除的功能及 API。
+以下是最近已棄用的功能或即將棄用的功能的摘要。
+
+#### JavaScript使用API {#javascript-use-api}
+
+[JavaScript Use API](https://github.com/adobe/htl-spec/blob/master/SPECIFICATION.md#42-javascript-use-api)已正式淘汰，因為使用者需要偵錯和維護運用API的程式碼，而且與Java替代方案相比，存在效能限制。
+
+您應該轉換至[Java Use API，](https://experienceleague.adobe.com/en/docs/experience-manager-htl/content/java-use-api)，提供更優異的效能、更輕鬆的偵錯，以及更優異的長期支援。
+
+#### com.day.cq.wcm.api {#com-day-cq-wcm-api}
+
+請注意，Adobe正在更新`com.day.cq.wcm.api`。 其某些方法和類別在目前版本中已標示為`@Deprecated`。 這些功能將在未來版本中移除。 請考慮改用他們建議的替代方案。
 
 ### 安全性修正 {#security-17964}
 
