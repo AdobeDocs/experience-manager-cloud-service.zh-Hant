@@ -4,9 +4,9 @@ description: 瞭解如何在設定檔案中宣告規則，再使用Cloud Manager
 feature: Dispatcher
 exl-id: a5a18c41-17bf-4683-9a10-f0387762889b
 role: Admin
-source-git-commit: 83efc7298bc8d211d1014e8d8be412c6826520b8
+source-git-commit: 37d399c63ae49ac201a01027069b25720b7550b9
 workflow-type: tm+mt
-source-wordcount: '1430'
+source-wordcount: '1486'
 ht-degree: 4%
 
 ---
@@ -30,9 +30,10 @@ Adobe提供的CDN具有多項功能和服務，部分功能和服務需仰賴憑
 
 在設定過程中，AdobeCDN和客戶CDN必須同意`X-AEM-Edge-Key` HTTP標頭的值。 此值是在每個請求中在客戶CDN處設定的，之後再傳送至AdobeCDN，由其驗證值是否如預期般符合，因此它可以信任其他HTTP標頭，包括有助於將請求傳送至適當AEM來源的那些標頭。
 
-*X-AEM-Edge-Key*&#x200B;值由名為`cdn.yaml`或類似檔案中的`edgeKey1`和`edgeKey2`屬性參考，位於最上層`config`資料夾的某處。 閱讀[使用設定管道](/help/operations/config-pipeline.md#folder-structure)，以取得資料夾結構以及如何部署設定的詳細資訊。
+*X-AEM-Edge-Key*&#x200B;值由名為`cdn.yaml`或類似檔案中的`edgeKey1`和`edgeKey2`屬性參考，位於最上層`config`資料夾的某處。 閱讀[使用設定管道](/help/operations/config-pipeline.md#folder-structure)，以取得資料夾結構以及如何部署設定的詳細資訊。  以下範例說明語法。
 
-語法如下所述：
+>[!WARNING]
+>不符合條件的所有要求（在以下範例中，代表對發佈層級的所有要求）將會拒絕沒有正確X-AEM-Edge-Key的直接存取。 如果您需要逐步引入驗證，請參閱[安全移轉以降低封鎖流量的風險](#migrating-safely)區段。
 
 ```
 kind: "CDN"
@@ -78,7 +79,7 @@ data:
 
 ### 安全地移轉，以減少流量受阻的風險 {#migrating-safely}
 
-如果您的網站已上線，請謹慎移轉至客戶管理的CDN，因為設定錯誤可能會封鎖公開流量，因為AdobeCDN只會接受具有預期X-AEM-Edge-Key標頭值的請求。 建議您在驗證規則中暫時包含其他條件的情況下，使用此方法，只有在包含測試標頭時才會評估請求：
+如果您的網站已上線，請謹慎移轉至客戶管理的CDN，因為設定錯誤可能會封鎖公開流量，因為AdobeCDN只會接受具有預期X-AEM-Edge-Key標頭值的請求。 建議您在驗證規則中暫時包含其他條件的情況下，採取此做法，如此一來，只有在包含測試標頭或路徑符合時，才會封鎖請求：
 
 ```
     - name: edge-auth-rule
@@ -86,6 +87,17 @@ data:
           allOf:  
             - { reqProperty: tier, equals: "publish" }
             - { reqHeader: x-edge-test, equals: "test" }
+        action:
+          type: authenticate
+          authenticator: edge-auth
+```
+
+```
+    - name: edge-auth-rule
+        when:
+          allOf:
+            - { reqProperty: tier, equals: "publish" }
+            - { reqProperty: path, like: "/test*" }
         action:
           type: authenticate
           authenticator: edge-auth
