@@ -5,10 +5,10 @@ exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 075094f018ccf213cd8d1d69defdc390f0a90713
+source-git-commit: 912e63b2ff11e24392fc7509945f352ab07c60cc
 workflow-type: tm+mt
-source-wordcount: '891'
-ht-degree: 23%
+source-wordcount: '914'
+ht-degree: 22%
 
 ---
 
@@ -112,6 +112,10 @@ SSL 憑證文件必須是 PEM 格式才能與 Cloud Manager 一起安裝。PEM�
   ```shell
   openssl x509 -inform der -in certificate.cer -out certificate.pem
   ```
+
+>[!TIP]
+>
+>Adobe建議您先使用`openssl verify -untrusted intermediate.pem certificate.pem`之類的工具在本機驗證憑證的完整性，然後再嘗試使用Cloud Manager進行安裝。
 
 ## 已安裝SSL憑證數量的限制 {#limitations}
 

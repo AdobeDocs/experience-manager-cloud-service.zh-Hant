@@ -5,21 +5,28 @@ exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 2d1382c84d872719332986baa5829d1623d9d9a6
+source-git-commit: b735c724bd8d68273b3c09a2dc53a13f5f6095ae
 workflow-type: tm+mt
-source-wordcount: '949'
-ht-degree: 6%
+source-wordcount: '1038'
+ht-degree: 9%
 
 ---
 
 
 # 管理 SSL 憑證 {#managing-ssl-certificates}
 
-瞭解如何使用Cloud Manager來檢查Adobe託管和客戶託管的SSL憑證的狀態，以及如何刪除它們。 對於客戶管理的憑證，您也可以編輯和更新（取代）它們。
+了解如何使用 Cloud Manager 檢查 SSL 憑證的狀態以及如何編輯、取代、更新和刪除它們。
 
 ## 檢查SSL憑證的狀態 {#checking-status-an-ssl-certificate}
 
-您的SSL憑證狀態可以從&#x200B;**SSL憑證**&#x200B;頁面一眼掌握。
+Cloud Manager會提供程式中所有憑證狀態的概觀。
+
+1. 在[my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)登入Cloud Manager並選取適當的程式。
+1. 在「**[我的程式](/help/implementing/cloud-manager/navigation.md#my-programs)**」控制台中，選取程式。
+1. 在頁面的左上角，按一下![顯示功能表圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)以顯示側邊功能表。
+1. 在&#x200B;**服務**&#x200B;標題下，按一下![鎖定已關閉圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_LockClosed_18_N.svg) **SSL憑證**。
+
+**SSL憑證**&#x200B;頁面會提供您SSL憑證的狀態。
 
 | SSL憑證的狀態 | 說明 |
 | --- | --- |
@@ -51,6 +58,12 @@ ht-degree: 6%
    * 在&#x200B;**憑證鏈**&#x200B;欄位（或信任鏈）貼上憑證鏈。
 
 1. 按一下&#x200B;**更新**&#x200B;以儲存變更並自動套用變更。
+
+>[!NOTE]
+>
+>如果您有兩個以上涵蓋相同SAN網域專案的SAN憑證，若該網域由其中一個憑證涵蓋，且另一個憑證已更新，則現在會為該網域安裝後者。
+>
+>如需詳細資訊，請參閱[疑難排解SSL憑證問題](/help/implementing/cloud-manager/managing-ssl-certifications/troubleshoot-ssl-cert.md#wrong-san-cert)。
 
 ## 取代過期的客戶管理的SSL憑證 {#replace-ssl-certificate}
 
@@ -109,4 +122,3 @@ ht-degree: 6%
 如需詳細資訊，請參閱[新增SSL憑證](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)。
 
 對於具有IP允許清單或自訂網域名稱的既有CDN設定的環境，**IP允許清單**&#x200B;和&#x200B;**環境**&#x200B;頁面上也提供了類似的訊息。
-
