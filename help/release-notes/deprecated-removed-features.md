@@ -4,10 +4,10 @@ description: 特定於  [!DNL Adobe Experience Manager] as a [!DNL Cloud Service
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: 4e59095a47a919fd0b6acb868e27d71f9193c520
+source-git-commit: b64c8f16976988d04840f1006afe4f7c9b28c705
 workflow-type: tm+mt
-source-wordcount: '2504'
-ht-degree: 81%
+source-wordcount: '2488'
+ht-degree: 82%
 
 ---
 
@@ -325,14 +325,14 @@ Adobe 會持續評估產品功能，逐漸利用更現代化的替代方案重�
 動作清單：
 * 將`org.eclipse.jetty`套件的使用方式取代為其他協力廠商程式庫/自己的程式碼或
 * 從此清單中選取所需的組合，並將其新增至您的專案：
-   * org.eclipse.jetty:jetty-client:9.4.54.v20240208
-   * org.eclipse.jetty:jetty-http:9.4.54.v20240208
-   * org.eclipse.jetty:jetty-io:9.4.54.v20240208
-   * org.eclipse.jetty:jetty-security:9.4.54.v20240208
-   * org.eclipse.jetty:jetty-servlet:9.4.54.v20240208
-   * org.eclipse.jetty:jetty-server:9.4.54.v20240208
-   * org.eclipse.jetty:jetty-util:9.4.54.v20240208
-   * org.eclipse.jetty:jetty-util-ajax:9.4.54.v20240208
+   * `org.eclipse.jetty:jetty-client:9.4.54.v20240208`
+   * `org.eclipse.jetty:jetty-http:9.4.54.v20240208`
+   * `org.eclipse.jetty:jetty-io:9.4.54.v20240208`
+   * `org.eclipse.jetty:jetty-security:9.4.54.v20240208`
+   * `org.eclipse.jetty:jetty-servlet:9.4.54.v20240208`
+   * `org.eclipse.jetty:jetty-server:9.4.54.v20240208`
+   * `org.eclipse.jetty:jetty-util:9.4.54.v20240208`
+   * `org.eclipse.jetty:jetty-util-ajax:9.4.54.v20240208`
 
 ### 移除`com.mongodb` {#com.mongodb}
 
