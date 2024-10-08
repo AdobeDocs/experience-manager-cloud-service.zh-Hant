@@ -2,7 +2,7 @@
 source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
 workflow-type: tm+mt
 source-wordcount: '1202'
-ht-degree: 94%
+ht-degree: 97%
 
 ---
 # 代碼片段 {#snippets}
@@ -156,19 +156,19 @@ ht-degree: 94%
 >如果您使用 (或打算使用) 前端管道來開發網站，必須先行新增 Cloud Manager IP 允許清單。
 >請參閱「[ Cloud Manager IP 允許清單與前端管道搭配使用](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#allowlists-frontend-pipeline)」。
 
-## IP允許清單和通用編輯器 {#ip-allow-lists-ue}
+## IP 允許清單和通用編輯器 {#ip-allow-lists-ue}
 
 >[!IMPORTANT]
 >
->[通用編輯器](/help/implementing/universal-editor/introduction.md)與IP允許清單不相容。
+>[通用編輯器](/help/implementing/universal-editor/introduction.md)與 IP 允許清單不相容。
 >
 >如果您想使用通用編輯器，則不能啟用IP允許清單。
 
-## Universal Editor和IP允許清單 {#ue-ip-allow-lists}
+## 通用編輯器和 IP 允許清單 {#ue-ip-allow-lists}
 
 >[!IMPORTANT]
 >
->通用編輯器與[IP允許清單不相容。](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
+>通用編輯器與 [IP 允許清單](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)不相容。
 >
 >如果您想使用通用編輯器，則不能啟用IP允許清單。
 
