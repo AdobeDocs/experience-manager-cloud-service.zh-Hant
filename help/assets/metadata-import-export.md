@@ -5,14 +5,17 @@ contentOwner: AG
 feature: Metadata
 role: User, Admin
 exl-id: fb70a068-3ba3-4459-952d-79155d286c42
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '739'
+source-wordcount: '757'
 ht-degree: 10%
 
 ---
 
 # 大量匯入和匯出資產的中繼資料 {#import-and-export-asset-metadata-in-bulk}
+
+| [搜尋最佳實務](/help/assets/search-best-practices.md) | [中繼資料最佳實務](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [具有OpenAPI功能的Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets開發人員檔案](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 Adobe Experience Manager Assets可讓您使用CSV檔案大量匯入資產中繼資料。 您可以匯入CSV檔案，大量更新最近上傳的資產或現有資產。 您也可以以CSV格式從協力廠商系統大量擷取資產中繼資料。
 

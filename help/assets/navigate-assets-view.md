@@ -4,14 +4,17 @@ description: 了解  [!DNL Assets view] 中的使用者介面和導覽
 role: User
 exl-id: 1e71ea7d-fee7-4ed0-bb80-d537b57fc823
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: b8ee421c5105c95dc4a509d3b2e32fa43b1adc0b
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '966'
-ht-degree: 81%
+source-wordcount: '984'
+ht-degree: 86%
 
 ---
 
 # 導覽至檔案和資料夾，並檢視資產 {#view-assets-and-details}
+
+| [搜尋最佳實務](/help/assets/search-best-practices.md) | [中繼資料最佳實務](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [具有OpenAPI功能的Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets開發人員檔案](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 <!-- TBD: Give screenshots of all views with many assets. Zoom out to showcase how the thumbnails/tiles flow on the UI in different views. -->
 
@@ -31,8 +34,8 @@ ht-degree: 81%
 
 ## 瀏覽和檢視資產和資料夾 {#browse-repository}
 
-您可以從主要使用者介面或左側邊欄瀏覽資料夾。現在，Experience Manager Assets在瀏覽或搜尋內容時，會在資料夾縮圖上顯示資料夾內容的視覺預覽，改善AEM Assets存放庫中可用資產的可發現性。 此資料夾縮圖可讓您節省在AEM Assets存放庫的資料夾中搜尋特定資產所花費的時間。
-瀏覽資料夾中的資產時，您可以使用介面檢視資產縮圖，以瀏覽存放庫或檢視資產詳細資訊，快速找到您想要的資產。 在左側邊欄中可用的選項包括：
+您可以從主要使用者介面或左側邊欄瀏覽資料夾。現在，當瀏覽或搜尋內容時，Experience Manager Assets 會在資料夾縮圖上顯示資料夾內容的視覺化預覽，這提高了 AEM Assets 存放庫中可用資產的可發現性。此資料夾縮圖可讓您節省在AEM Assets存放庫的資料夾中搜尋特定資產所花費的時間。
+在資料夾中瀏覽資產時，您可以使用該介面檢視資產縮圖以瀏覽存放庫或檢視資產詳細資料，以便快速找到您想要的資產。在左側邊欄中的可用選項有：
 
 * [我的工作區](/help/assets/my-workspace-assets-view.md)：Assets 現在包含一個可自訂的工作區，提供 Widget 以方便存取資產使用者介面的關鍵區域以及與您最相關的資訊。 此頁面可用作一站式解決方案，提供工作項目的概觀並讓您快速存取關鍵工作流程。更方便地存取這些選項可以提高您的效率和內容速度。
 * [任務](/help/assets/my-workspace-assets-view.md)：您可以在&#x200B;**我的任務**&#x200B;標籤下檢視指派給您的任務。而您建立的任務則顯示在&#x200B;**指派的任務**&#x200B;標籤下。 此外，您完成的工作位於&#x200B;**已完成的工作**&#x200B;標籤下。

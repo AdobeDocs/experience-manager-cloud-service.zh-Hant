@@ -5,14 +5,17 @@ contentOwner: KK
 exl-id: 4759fa8c-10c7-4446-a135-3104b9beaee8
 feature: Asset Processing
 role: User, Leader, Developer
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '685'
+source-wordcount: '703'
 ht-degree: 0%
 
 ---
 
 # 重新處理數位資產 {#reprocessing-digital-assets}
+
+| [搜尋最佳實務](/help/assets/search-best-practices.md) | [中繼資料最佳實務](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [具有OpenAPI功能的Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets開發人員檔案](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 若資料夾中已有您後來加以變更的現有中繼資料設定檔，您可以重新處理該資料夾中的資產。 如果您要將新編輯的預設集重新套用至資料夾中的現有資產，則必須重新處理資料夾。 您可以視需要重新處理儘可能多的資產。
 
@@ -50,7 +53,7 @@ ht-degree: 0%
       * **[!UICONTROL 處理設定檔]：**&#x200B;當您要重新處理選取的設定檔時，請選擇此選項。 您可以選擇&#x200B;**[!UICONTROL 完整處理序]**選項，以包含預設處理以及在資料夾層級指派的自訂設定檔。
         <!--When assets are uploaded to a folder, [!DNL Experience Manager] checks the containing folder's properties for a processing profile. If none is applied, a parent folder in the hierarchy is checked for a processing profile to apply.-->
 
-      * **[!UICONTROL Post處理工作流程]：**&#x200B;如果必須使用處理設定檔才能完成額外的資產處理，請選擇此選項。 可以將其他後處理工作流程新增到設定。 Post處理可讓您在使用資產微服務的可設定處理之上，新增完全自訂的處理作業。
+      * **[!UICONTROL 後續處理工作流程]：**&#x200B;如果必須使用處理設定檔才能完成額外的資產處理，請選擇此選項。 可以將其他後處理工作流程新增到設定。 後處理可讓您在使用資產微服務的可設定處理之上新增完全自訂處理。
 
 請參閱[使用資產微服務和處理設定檔](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use.html?lang=en)，以進一步瞭解處理設定檔和後續處理工作流程。
 

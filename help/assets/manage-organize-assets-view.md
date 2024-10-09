@@ -5,14 +5,17 @@ role: User, Leader
 contentOwner: AG
 exl-id: 2459d482-828b-4410-810c-ac55ef0a2119
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: 7ec5d5e3ca487ff84bc0b1f7f040aec9475059e0
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '1204'
-ht-degree: 90%
+source-wordcount: '1222'
+ht-degree: 92%
 
 ---
 
 # 管理資產 {#manage-assets}
+
+| [搜尋最佳實務](/help/assets/search-best-practices.md) | [中繼資料最佳實務](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [具有OpenAPI功能的Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets開發人員檔案](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 您可以使用 [!DNL Assets view] 的人性化介面，輕鬆進行各種數位資產管理 (DAM) 任務。新增資產後，即可搜尋、下載、移動、複製、重新命名、刪除、更新和編輯您的資產。
 
@@ -130,8 +133,8 @@ Assets檢視可讓您對存放庫中可用的資產設定狀態。 設定資產�
 
 1. 選取該資產，然後按一下工具列中的「**[!UICONTROL 詳細資料]**」。
 
-1. 在&#x200B;**[!UICONTROL 基本]**&#x200B;索引標籤中，從&#x200B;**[!UICONTROL 狀態]**下拉式清單中選取資產狀態。 可能的值包括「已核准」、「已拒絕」和「無狀態」（預設）。
-如果您已為Dynamic Media布建適合您環境的OpenAPI功能，Experience Manager Assets會在您將資產標示為`Approved`後立即產生公用URL。
+1. 在&#x200B;**[!UICONTROL 基本]**&#x200B;索引標籤中，從&#x200B;**[!UICONTROL 狀態]**下拉式清單中選取資產狀態。 可能的值包括「已核准」、「已拒絕」以及「無狀態」(預設)。
+如果您為環境佈建了具有 OpenAPI 功能的 Dynamic Media，則在您將資產標記為 `Approved` 時，Experience Manager Assets 會立即產生一個公用 URL。
 
    >[!VIDEO](https://video.tv.adobe.com/v/342495)
 

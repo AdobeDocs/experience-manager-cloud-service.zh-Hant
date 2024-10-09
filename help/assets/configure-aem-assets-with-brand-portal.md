@@ -5,14 +5,17 @@ contentOwner: AK
 feature: Brand Portal, Asset Distribution, Configuration
 role: Admin
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '1766'
-ht-degree: 7%
+source-wordcount: '1784'
+ht-degree: 8%
 
 ---
 
-# 使用Brand Portal設定Experience Manager Assets {#configure-aem-assets-with-brand-portal}
+# 透過 Brand Portal 設定 Experience Manager Assets {#configure-aem-assets-with-brand-portal}
+
+| [搜尋最佳實務](/help/assets/search-best-practices.md) | [中繼資料最佳實務](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [具有OpenAPI功能的Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets開發人員檔案](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
@@ -141,7 +144,7 @@ Cloud Manager使用者為Experience Manager Assets as a [!DNL Cloud Service]執�
 * [從Experience Manager Assets到Brand Portal的Publish資產](publish-to-brand-portal.md)
 * [從Experience Manager Assets到Brand Portal的Publish資料夾](publish-to-brand-portal.md#publish-folders-to-brand-portal)
 * [從Experience Manager Assets到Brand Portal的Publish集合](publish-to-brand-portal.md#publish-collections-to-brand-portal)
-* 從Brand Portal到Experience Manager Assets的[Publish資產](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=zh-Hant) - Brand Portal中的資產來源
+* 從Brand Portal到Experience Manager Assets的[Publish資產](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=zh-hant) - Brand Portal中的資產來源
 * [將預設集、結構和 Facet 發佈至 Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/publish-schema-search-facets-presets.html)
 * [將標記發佈至 Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/brand-portal-publish-tags.html)
 

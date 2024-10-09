@@ -4,14 +4,17 @@ description: 將您的數位資產新增至 [!DNL Adobe Experience Manager] 做�
 feature: Asset Ingestion, Asset Management, Asset Processing, Upload
 role: User, Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '3144'
+source-wordcount: '3162'
 ht-degree: 9%
 
 ---
 
 # 將數位資產新增至[!DNL Adobe Experience Manager]做為[!DNL Cloud Service] [!DNL Assets] {#add-assets-to-experience-manager}
+
+| [搜尋最佳實務](/help/assets/search-best-practices.md) | [中繼資料最佳實務](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [具有OpenAPI功能的Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets開發人員檔案](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 [!DNL Adobe Experience Manager Assets]接受許多來源的數位資產型別。 它會儲存二進位檔和已建立的轉譯，可以使用各種工作流程和[!DNL Adobe Sensei]服務進行資產處理，允許透過許多管道在多個表面進行分發。
 

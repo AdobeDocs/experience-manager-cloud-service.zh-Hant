@@ -5,14 +5,17 @@ contentOwner: AG
 feature: Asset Management, Publishing, Collaboration, Video
 role: User
 exl-id: 91edce4a-dfa0-4eca-aba7-d41ac907b81e
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '4983'
+source-wordcount: '5001'
 ht-degree: 6%
 
 ---
 
 # 管理影片資產 {#manage-video-assets}
+
+| [搜尋最佳實務](/help/assets/search-best-practices.md) | [中繼資料最佳實務](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [具有OpenAPI功能的Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets開發人員檔案](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
@@ -376,7 +379,7 @@ After you enable the YouTube Publish replication agent, if you want to test the 
 1. 在頁面的右上角附近，選取&#x200B;**[!UICONTROL 儲存]**。
 1. 將YouTube發佈中繼資料設定檔套用至您要上傳影片的資料夾。 您必須同時設定中繼資料設定檔和視訊設定檔。
 
-   請參 [閱中繼資料](/help/assets/metadata-profiles.md)[描述檔和視訊描述檔](/help/assets/dynamic-media/video-profiles.md)。
+   請參[閱中繼資料設定檔](/help/assets/metadata-profiles.md)和[視訊設定檔](/help/assets/dynamic-media/video-profiles.md)。
 
 ### Publish影片至您的YouTube頻道 {#publishing-videos-to-your-youtube-channel}
 

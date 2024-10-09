@@ -5,14 +5,17 @@ contentOwner: AG
 feature: Metadata
 role: User, Admin
 exl-id: 9e94afeb-1c54-4653-bf52-b0910c0cb6c1
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '2634'
-ht-degree: 9%
+source-wordcount: '2652'
+ht-degree: 10%
 
 ---
 
 # 中繼資料結構描述 {#metadata-schemas}
+
+| [搜尋最佳實務](/help/assets/search-best-practices.md) | [中繼資料最佳實務](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [具有OpenAPI功能的Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets開發人員檔案](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
@@ -150,7 +153,7 @@ ht-degree: 9%
 
 #### 在結構表單中新增或刪除索引標籤 {#add-delete-a-tab-in-the-schema-form}
 
-架構編輯器可讓您新增或刪除標籤。預設結構描述表單包含&#x200B;**[!UICONTROL Basic]**、**[!UICONTROL Advanced]**、**[!UICONTROL IPTC]**&#x200B;和&#x200B;**[!UICONTROL IPTC延伸]**&#x200B;標籤。
+架構編輯器可讓您新增或刪除標籤。預設結構描述表單包含&#x200B;**[!UICONTROL Basic]**、**[!UICONTROL Advanced]**、**[!UICONTROL IPTC]**&#x200B;和&#x200B;**[!UICONTROL IPTC擴充功能]**&#x200B;標籤。
 
 ![中繼資料結構表單中的預設標籤](assets/metadata-schema-form-tabs.png)
 

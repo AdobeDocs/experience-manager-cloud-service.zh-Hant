@@ -4,14 +4,17 @@ description: Assets檢視中的Quick Publish可讓您同時或個別將資產發
 exl-id: 147c1c35-0d81-4458-b4ed-7541d2b0dd54
 feature: Publishing, Dynamic Media
 role: User
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '1188'
-ht-degree: 0%
+source-wordcount: '1206'
+ht-degree: 1%
 
 ---
 
 # 發佈資產至 AEM 和 Dynamic Media{#Publish-Assets-to-AEM-and-Dynamic-Media}
+
+| [搜尋最佳實務](/help/assets/search-best-practices.md) | [中繼資料最佳實務](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [具有OpenAPI功能的Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets開發人員檔案](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 Experience Manager Assets可讓您使用Assets檢視快速將資產發佈到Experience Manager和Dynamic Media。 這可確保您管理資產，然後使用[Assets檢視發佈資產，而不需切換至管理員檢視](/help/assets/overview.md##persona-based-experiences)。
 

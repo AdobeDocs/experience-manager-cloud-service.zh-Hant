@@ -2,14 +2,18 @@
 title: 傳遞 API
 description: 瞭解如何使用傳送API。
 role: User
-source-git-commit: deae260ce34a0801ee534ddadfb14823ef461a87
+exl-id: 806ca38f-2323-4335-bfd8-a6c79f6f15fb
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '537'
-ht-degree: 0%
+source-wordcount: '555'
+ht-degree: 1%
 
 ---
 
 # 傳送API {#delivery-apis}
+
+| [搜尋最佳實務](/help/assets/search-best-practices.md) | [中繼資料最佳實務](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [具有OpenAPI功能的Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets開發人員檔案](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 Experience Manager資產存放庫中所有可用的[已核准資產](approve-assets.md)都可以進行[搜尋](search-assets-api.md)，然後使用傳遞URL傳遞至整合式下游應用程式。
 

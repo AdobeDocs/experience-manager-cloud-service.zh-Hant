@@ -2,14 +2,17 @@
 title: 設定Publish層的自訂網域
 description: 瞭解如何在AdobeCloud Manager中為發佈層設定自訂網域。
 exl-id: cc71c8c5-cf42-4092-b0e0-646a2ed0ee54
-source-git-commit: 8a10634e413ea5c66845dfffa7396a4554a5b3ca
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '261'
-ht-degree: 6%
+source-wordcount: '279'
+ht-degree: 7%
 
 ---
 
 # 設定發佈層的自訂網域{#configure-custom-domain}
+
+| [搜尋最佳實務](/help/assets/search-best-practices.md) | [中繼資料最佳實務](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [具有OpenAPI功能的Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets開發人員檔案](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 在AdobeCloud Manager中，您可以新增自訂網域，讓您的網站脫穎而出。 雖然AEM as a Cloud Service隨附預設網域，但您可以視需求加以自訂。
 

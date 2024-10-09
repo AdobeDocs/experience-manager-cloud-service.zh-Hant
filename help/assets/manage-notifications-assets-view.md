@@ -4,14 +4,17 @@ description: 使用Assets檢視通知，監視對存放庫中可用的資產或�
 exl-id: 1fe6a845-37d5-43c2-bb96-c5b149c238ab
 feature: Assets Essentials
 role: User, Leader
-source-git-commit: 763ef950ffa7642a345977485f56c1187f6ecc0a
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '617'
-ht-degree: 70%
+source-wordcount: '635'
+ht-degree: 69%
 
 ---
 
 # 查看資產、資料夾和集合 {#watch-assets-folders}
+
+| [搜尋最佳實務](/help/assets/search-best-practices.md) | [中繼資料最佳實務](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [具有OpenAPI功能的Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets開發人員檔案](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 Assets檢視通知可讓您監視對存放庫中可用的資產、資料夾或集合執行的操作。 您需要選取並訂閱將通知傳送給您的內容。您還可以配置通知發送給您的類別。
 

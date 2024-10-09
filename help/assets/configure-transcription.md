@@ -9,14 +9,17 @@ topic-tags: Configuration
 feature: Asset Management, Configuration
 role: Admin
 exl-id: e96c8d68-74a6-4d61-82dc-20e619338d4b
-source-git-commit: 02ad83eb9fa9ed3bf06cf7fe0ef10fd9577f66a9
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '1668'
+source-wordcount: '1686'
 ht-degree: 2%
 
 ---
 
 # 在[!DNL Experience Manager Assets]中設定轉錄 {#configure-transcription-service}
+
+| [搜尋最佳實務](/help/assets/search-best-practices.md) | [中繼資料最佳實務](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [具有OpenAPI功能的Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets開發人員檔案](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 轉錄是使用語音辨識技術，將音訊或視訊檔案中的音訊轉換為文字（語音轉換為文字）的過程。
 [!DNL Adobe Experience Manager Assets]已設定[!DNL Azure Media Services]，它會自動產生WebVTT (.vtt)格式之支援音訊或視訊檔案中的口語文字轉錄。 在[!DNL Experience Manager Assets]中處理音訊或視訊資產時，轉譯服務會自動產生音訊或視訊資產的文字轉譯，並將其儲存在原始資產所在的Assets存放庫中的相同位置。 [!DNL Experience Manager Assets]轉錄服務可讓行銷人員透過新增的文字內容可發現性來有效管理其音訊與視訊內容，並透過支援協助工具與本地化來提高這些資產的ROI。

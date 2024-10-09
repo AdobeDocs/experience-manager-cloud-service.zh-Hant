@@ -5,14 +5,17 @@ contentOwner: AG
 feature: Upload, Asset Processing, Publishing, Asset Compute Microservices
 role: User, Admin
 exl-id: 4cff355e-d12c-44c7-b519-4cc37f49e396
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '772'
+source-wordcount: '790'
 ht-degree: 5%
 
 ---
 
 # 使用[!DNL Adobe Creative Cloud]整合產生資產的變體 {#content-automation}
+
+| [搜尋最佳實務](/help/assets/search-best-practices.md) | [中繼資料最佳實務](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [具有OpenAPI功能的Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets開發人員檔案](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 內容自動化附加元件將[!DNL Adobe Experience Manager Assets]整合為[!DNL Cloud Service]和[!DNL Adobe Creative Cloud] API，以大規模創意處理您的資產。 [!DNL Experience Manager]使用雲端式[資產微服務](/help/assets/asset-microservices-overview.md)來使用[!DNL Adobe Creative Cloud]功能，並自動化資產的建立和媒體處理。
 
@@ -57,7 +60,7 @@ ht-degree: 5%
 1. 請聯絡您的客戶代表以授權Content Automation附加元件。
 1. 存取Cloud Manager，並使用組織選擇器切換至您的組織。
 1. 按一下&#x200B;**[!UICONTROL 新增程式]**&#x200B;並指定程式名稱。
-1. 按一下&#x200B;**[!UICONTROL 「繼續」]**。
+1. 按一下「**[!UICONTROL 繼續]**」。
 1. 展開&#x200B;**[!UICONTROL Assets]**&#x200B;並選取&#x200B;**[!UICONTROL Content Automation]**。
 1. 按一下&#x200B;**[!UICONTROL 建立]**。
 1. 執行管道以[將變更部署到Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html)。

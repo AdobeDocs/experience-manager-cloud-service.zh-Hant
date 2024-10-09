@@ -3,14 +3,17 @@ title: 適用於  [!DNL Adobe Experience Manager]  as a  [!DNL Cloud Service] �
 description: 根據需求使用Asset Selector來自訂的範例。
 role: Admin, User
 exl-id: 7a393a96-f2a2-4a25-922c-577271cafc57
-source-git-commit: 575980320c1dbd32f799bf9c2fddf3d6773c838a
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '257'
-ht-degree: 49%
+source-wordcount: '275'
+ht-degree: 46%
 
 ---
 
 # 使用資產選擇器屬性的範例 {#usage-examples}
+
+| [搜尋最佳實務](/help/assets/search-best-practices.md) | [中繼資料最佳實務](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [具有OpenAPI功能的Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets開發人員檔案](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 您可以在&#x200B;**index.html**&#x200B;檔案中定義資產選擇器[屬性](/help/assets/asset-selector-properties.md)，以自訂應用程式中的資產選擇器顯示。
 

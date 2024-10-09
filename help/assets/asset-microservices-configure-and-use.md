@@ -5,14 +5,17 @@ contentOwner: AG
 feature: Asset Compute Microservices, Asset Processing, Asset Management
 role: Architect, Admin
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '2866'
+source-wordcount: '2884'
 ht-degree: 2%
 
 ---
 
 # 使用資產微服務和處理設定檔 {#get-started-using-asset-microservices}
+
+| [搜尋最佳實務](/help/assets/search-best-practices.md) | [中繼資料最佳實務](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [具有OpenAPI功能的Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets開發人員檔案](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 資產微服務可使用雲端原生應用程式（也稱為背景工作），提供可擴充及彈性的資產處理功能。 Adobe會管理服務，以最佳化處理各種資產型別和處理選項。
 
@@ -181,11 +184,11 @@ asset compute服務整合可讓Experience Manager使用[!UICONTROL 服務引數]
 
 *圖：由套用至父資料夾的處理設定檔產生的兩個額外轉譯範例。*
 
-## Post處理工作流程 {#post-processing-workflows}
+## 後處理工作流程 {#post-processing-workflows}
 
-若需要額外處理資產，而使用處理設定檔無法達成該目的，則可將其他後處理工作流程新增到設定中。 Post處理可讓您在使用資產微服務的可設定處理之上，新增完全自訂的處理作業。
+若需要額外處理資產，而使用處理設定檔無法達成該目的，則可將其他後處理工作流程新增到設定中。 後處理可讓您在使用資產微服務的可設定處理之上新增完全自訂處理。
 
-Post處理工作流程或[自動啟動工作流程](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/configuring/auto-start-workflows.html) （如果已設定）會在微服務處理完成後，由[!DNL Experience Manager]自動執行。 不需要手動新增工作流程啟動器來觸發工作流程。 範例包括：
+後期處理工作流程，或[自動啟動工作流程](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/configuring/auto-start-workflows.html) （若已設定）會在微服務處理完成後，由[!DNL Experience Manager]自動執行。 不需要手動新增工作流程啟動器來觸發工作流程。 範例包括：
 
 * 處理資產的自訂工作流程步驟。
 * 整合以將中繼資料或屬性從外部系統新增至資產，例如產品或程式資訊。
@@ -202,7 +205,7 @@ Post處理工作流程或[自動啟動工作流程](https://experienceleague.ado
 
 ### 建立後處理工作流程模型 {#create-post-processing-workflow-models}
 
-Post處理工作流程模型是一般[!DNL Experience Manager]工作流程模型。 如果您需要對不同的存放庫位置或資產型別進行不同的處理，請建立不同的模型。
+後處理工作流程模型是一般[!DNL Experience Manager]工作流程模型。 如果您需要對不同的存放庫位置或資產型別進行不同的處理，請建立不同的模型。
 
 處理步驟會視需要新增。 您可以使用兩者、可用的支援步驟以及任何自訂實作的工作流程步驟。
 
@@ -229,8 +232,8 @@ Post處理工作流程模型是一般[!DNL Experience Manager]工作流程模型
 
 您可以為進階設定設定自訂工作流程執行器服務，這些設定無法透過將工作流程套用至資料夾來輕鬆完成。 例如，使用規則運算式的工作流程。 Adobe CQ DAM自訂工作流程執行器(`com.adobe.cq.dam.processor.nui.impl.workflow.CustomDamWorkflowRunnerImpl`)是OSGi服務。 它提供下列兩個設定選項：
 
-* 依路徑(`postProcWorkflowsByPath`)的Post處理工作流程：可以根據不同的存放庫路徑列出多個工作流程模型。 使用冒號分隔路徑和模型。 支援簡單的存放庫路徑。 將這些專案對應至`/var`路徑中的工作流程模型。 例如：`/content/dam/my-brand:/var/workflow/models/my-workflow`。
-* 依運算式(`postProcWorkflowsByExpression`)進行Post處理的工作流程：根據不同的規則運算式，可以列出多個工作流程模型。 運算式和模型應以冒號分隔。 規則運算式應直接指向Asset節點，而非其中一個轉譯或檔案。 例如：`/content/dam(/.*/)(marketing/seasonal)(/.*):/var/workflow/models/my-workflow`。
+* 依路徑(`postProcWorkflowsByPath`)的後處理工作流程：可以根據不同的存放庫路徑列出多個工作流程模型。 使用冒號分隔路徑和模型。 支援簡單的存放庫路徑。 將這些專案對應至`/var`路徑中的工作流程模型。 例如：`/content/dam/my-brand:/var/workflow/models/my-workflow`。
+* 依運算式(`postProcWorkflowsByExpression`)後處理工作流程：根據不同的規則運算式，可以列出多個工作流程模型。 運算式和模型應以冒號分隔。 規則運算式應直接指向Asset節點，而非其中一個轉譯或檔案。 例如：`/content/dam(/.*/)(marketing/seasonal)(/.*):/var/workflow/models/my-workflow`。
 
 若要瞭解如何部署OSGi設定，請參閱[部署至 [!DNL Experience Manager]](/help/implementing/deploying/overview.md)。
 

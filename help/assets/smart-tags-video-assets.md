@@ -4,14 +4,17 @@ description: Experience Manager會使用 [!DNL Adobe Sensei]自動將內容與�
 feature: Smart Tags
 role: Admin, User
 exl-id: b59043c5-5df3-49a7-b4fc-da34c03649d7
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '1225'
-ht-degree: 3%
+source-wordcount: '1243'
+ht-degree: 4%
 
 ---
 
 # 為您視訊資產加上智慧型標記 {#video-smart-tags}
+
+| [搜尋最佳實務](/help/assets/search-best-practices.md) | [中繼資料最佳實務](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [具有OpenAPI功能的Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets開發人員檔案](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 對新內容的需求日益增長，需要減少手動工作，以迅速提供引人入勝的數位體驗。 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]支援使用人工智慧自動標籤視訊資產。 手動標籤視訊可能很耗時。 不過，[!DNL Adobe Sensei]支援的視訊智慧標籤功能會使用人工智慧模型來分析視訊內容並將標籤新增至視訊資產。 從而減少DAM使用者為客戶提供豐富體驗的時間。 Adobe的機器學習服務為影片產生兩組標籤。 而其中一組對應於該視訊中的物件、場景和屬性；另一組則與飲酒、跑步和慢跑等動作相關。
 

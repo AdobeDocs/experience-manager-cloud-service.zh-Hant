@@ -3,14 +3,17 @@ title: 適用於  [!DNL Adobe Experience Manager]  as a  [!DNL Cloud Service] �
 description: 使用「資產」選擇器來搜尋、尋找及擷取應用程式內的資產中繼資料和轉譯。
 role: Admin,User
 exl-id: d6ff601c-3111-421a-9a94-cc524ce7e432
-source-git-commit: 575980320c1dbd32f799bf9c2fddf3d6773c838a
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '517'
+source-wordcount: '535'
 ht-degree: 1%
 
 ---
 
 # 將檔案和資料夾上傳至Asset Selector {#upload-files-folders}
+
+| [搜尋最佳實務](/help/assets/search-best-practices.md) | [中繼資料最佳實務](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [具有OpenAPI功能的Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets開發人員檔案](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 您可以從您的本機檔案系統上傳檔案或資料夾至Asset Selector。 若要使用本機檔案系統上傳檔案，您通常需要使用Asset Selector微前端應用程式提供的上傳功能。
 

@@ -1,23 +1,26 @@
 ---
-title: content credentials整合
-description: content credentials已整合至AEM Assets並在Assets檢視中提供，可提供資產歷史記錄的上下文，包括資產的製作方式以及參與建立資產的對象。 就像數位內容的營養標籤一樣，Content credentials可以協助提高透明度，並建立與受眾之間的信任。
+title: Content Credentials整合
+description: Content Credentials已整合至AEM Assets並在Assets檢視中提供，可提供資產歷史記錄的上下文，包括資產的製作方式以及參與建立資產的對象。 就像數位內容的營養標籤一樣，Content credentials可以協助提高透明度，並建立與受眾之間的信任。
 role: User
-source-git-commit: 1c0ffe9d6e45f1d6b3574d1ac5611b2c2e2d00e0
+exl-id: 27c25ae0-4477-40c3-85c8-3e0aa725aba7
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '462'
-ht-degree: 0%
+source-wordcount: '480'
+ht-degree: 1%
 
 ---
 
+# Content Credentials {#content-credentials}
 
-# 內容憑證 {#content-credentials}
+| [搜尋最佳實務](/help/assets/search-best-practices.md) | [中繼資料最佳實務](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [具有OpenAPI功能的Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets開發人員檔案](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 各大品牌對於內容透明度、AI揭露以及防止資產竄改的關注度前所未有。 Adobe的Content Authenticity Initiative (CAI)建立符合[內容來源與真偽聯盟](https://c2pa.org/specifications/specifications/1.1/specs/C2PA_Specification.html#_trust_model) (C2PA)技術標準的工具。 content credentials是一種新型加密的、可顯示篡改的中繼資料，可協助檢視者瞭解內容的譜系並確保品牌資產的完整性。 這類變數可包含範圍廣泛的來源資料，提供數位資產歷史記錄的深入分析。
 
 此資訊可能包括：
 
 * **簽發者或簽署者：**&#x200B;發行數位簽章以驗證或簽署資產的實體或公司的相關資訊。
-* **問題日期：**&#x200B;將內容認證套用至資產的日期。
+* **問題日期：** Content Credential套用至資產的日期。
 * **評分和使用狀況：**&#x200B;資產製作者的相關資訊，包括名稱、社群媒體控制代碼或其他身分相關資訊。
 * **處理序：**&#x200B;對資產進行任何編輯或修改的記錄。
 * **裝置詳細資料：**&#x200B;用來建立或編輯資產的應用程式或裝置相關資訊。

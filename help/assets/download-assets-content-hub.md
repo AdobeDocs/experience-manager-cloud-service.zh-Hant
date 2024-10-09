@@ -2,14 +2,18 @@
 title: 從Content Hub下載資產
 description: 瞭解如何從Content Hub入口網站下載資產
 role: User
-source-git-commit: 5a968440c8841abe7af2c81c4af12258b7e4547f
+exl-id: 96d4ffba-4e3e-4496-9da2-6eb36be8331f
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '125'
-ht-degree: 4%
+source-wordcount: '143'
+ht-degree: 5%
 
 ---
 
 # 從Content Hub下載資產 {#download-assets}
+
+| [搜尋最佳實務](/help/assets/search-best-practices.md) | [中繼資料最佳實務](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [具有OpenAPI功能的Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets開發人員檔案](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 <!-- ![Download assets](assets/download-asset.jpg) -->
 ![下載資產](assets/download-asset-genstudio.jpeg)

@@ -1,14 +1,17 @@
 ---
 title: Content Hub常見問題集(FAQ)
 description: 取得Content Hub部分常見問題(FAQ)的回應。
-source-git-commit: 1d51a1e0858e975bc354ffd9c4b32c26aa1604af
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '1082'
+source-wordcount: '1100'
 ht-degree: 0%
 
 ---
 
 # Content Hub常見問題 {#content-hub-frequently-asked-questions}
+
+| [搜尋最佳實務](/help/assets/search-best-practices.md) | [中繼資料最佳實務](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [具有OpenAPI功能的Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets開發人員檔案](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 ![Content Hub常見問題](assets/content-hub-faqs.png)
 

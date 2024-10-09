@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Accessibility, Asset Management
 role: User, Architect, Leader
 exl-id: a6d24ba6-3cb1-42cb-9942-f78572c93358
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '1923'
+source-wordcount: '1941'
 ht-degree: 2%
 
 ---
@@ -29,6 +29,9 @@ Possible topics to cover in this article are below.
 -->
 
 # [!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service]中的協助工具功能 {#accessibility-in-aem-assets}
+
+| [搜尋最佳實務](/help/assets/search-best-practices.md) | [中繼資料最佳實務](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [具有OpenAPI功能的Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets開發人員檔案](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 [!DNL Adobe Experience Manager]可讓內容建立者和發佈者在網站上提供令人驚豔的體驗。 Adobe致力於改善[!DNL Experience Manager]的協助工具，以納入殘障人士建立者。 本軟體持續強化，以符合各類使用者的需求，並符合全球標準，包括視覺、聽覺、行動力或其他殘疾人士。
 

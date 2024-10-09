@@ -3,14 +3,17 @@ title: 在Experience Manager中核准資產
 description: 瞭解如何核准 [!DNL Experience Manager]中的資產。
 role: User
 exl-id: fe61a0f1-94d3-409a-acb9-195979668c25
-source-git-commit: 9b3b93100c45c7053549c3f9899a344ca7db104d
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '676'
+source-wordcount: '694'
 ht-degree: 2%
 
 ---
 
 # 核准[!DNL Experience Manager]中的資產
+
+| [搜尋最佳實務](/help/assets/search-best-practices.md) | [中繼資料最佳實務](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [具有OpenAPI功能的Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets開發人員檔案](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 品牌經理和行銷人員對品牌資產維持嚴格的控制。 該資產僅供經核准和最新版本的使用，以確保所有管道和應用程式的品牌一致性。
 

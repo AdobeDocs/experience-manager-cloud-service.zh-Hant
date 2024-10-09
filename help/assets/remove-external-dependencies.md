@@ -4,14 +4,17 @@ description: 移除現有安裝的外部相依性
 feature: Workfront Integrations and Apps
 exl-id: 5b28ce97-2719-47b8-a386-77d4aaddbe81
 role: Admin
-source-git-commit: 257930bc2633a0d31ad3bd28305b8159597befa5
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '104'
+source-wordcount: '122'
 ht-degree: 17%
 
 ---
 
 # 移除現有安裝的外部相依性 {#remove-external-depedencies}
+
+| [搜尋最佳實務](/help/assets/search-best-practices.md) | [中繼資料最佳實務](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [具有OpenAPI功能的Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets開發人員檔案](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 Adobe建議您針對Workfront的現有增強型聯結器安裝執行設定步驟，以移除Hoodoo散發點上的相依性。
 

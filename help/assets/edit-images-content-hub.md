@@ -1,14 +1,18 @@
 ---
 title: 使用Adobe Express在Content Hub中編輯影像
 description: 使用Adobe Express在Content Hub中編輯影像
-source-git-commit: 5a968440c8841abe7af2c81c4af12258b7e4547f
+exl-id: c9777862-226c-4d39-87da-9c4a30437dc5
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '390'
+source-wordcount: '408'
 ht-degree: 2%
 
 ---
 
 # 在Content Hub中編輯影像 {#edit-images-content-hub}
+
+| [搜尋最佳實務](/help/assets/search-best-practices.md) | [中繼資料最佳實務](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [具有OpenAPI功能的Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets開發人員檔案](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 ![在Content Hub中使用Adobe Express編輯影像](assets/edit-images-content-hub.png)
 
@@ -49,5 +53,3 @@ Content Hub可讓您使用Adobe Express建立新內容。 您可以使用簡單�
 1. 按一下&#x200B;**[!UICONTROL 另存為新資產]**&#x200B;以儲存資產。
 
 管理員也可以設定將資產新增至Content Hub時顯示的必填和選用欄位，例如行銷活動名稱、關鍵字、管道等。 如需詳細資訊，請參閱[設定Content Hub使用者介面](configure-content-hub-ui-options.md#configure-upload-options-content-hub)。
-
-

@@ -2,15 +2,18 @@
 title: ' [!DNL the Content Hub]中的資產屬性'
 description: 瞭解如何在 [!DNL Content Hub]中檢視及管理資產屬性
 role: User
-source-git-commit: 5a968440c8841abe7af2c81c4af12258b7e4547f
+exl-id: a85af980-4c51-4d30-9fad-afd16370e9db
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '599'
-ht-degree: 8%
+source-wordcount: '617'
+ht-degree: 9%
 
 ---
 
-
 # 在Content Hub中管理資產屬性 {#asset-properties}
+
+| [搜尋最佳實務](/help/assets/search-best-practices.md) | [中繼資料最佳實務](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [具有OpenAPI功能的Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets開發人員檔案](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 ![中繼資料橫幅影像](assets/metadata-banner-image.png)
 
@@ -126,4 +129,3 @@ ht-degree: 8%
 The date range allows you to select dates you want to see the assets. You can customize date range by choosing the start and end dates. 
 
 -->
-

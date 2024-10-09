@@ -1,14 +1,18 @@
 ---
-title: 核准Content Hub的資產
+title: 批准 Content Hub 的資產
 description: 瞭解如何在Assets as a Cloud Service中核准資產，以便在Content Hub中使用。
-source-git-commit: f540f5934c4acbed4d7eff51a5a4ac1484fcb765
+exl-id: fc849028-ab56-4388-b8d6-e36cac8f868f
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '728'
-ht-degree: 2%
+source-wordcount: '746'
+ht-degree: 4%
 
 ---
 
-# 核准Content Hub的資產 {#approve-assets-content-hub}
+# 批准 Content Hub 的資產 {#approve-assets-content-hub}
+
+| [搜尋最佳實務](/help/assets/search-best-practices.md) | [中繼資料最佳實務](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [具有OpenAPI功能的Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets開發人員檔案](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 ![核准Content Hub的資產](assets/content-hub-approve-assets.png)
 
@@ -24,7 +28,7 @@ ht-degree: 2%
 
 * 寫入許可權可編輯資產中繼資料，以便能夠編輯資產[資產屬性](/help/assets/manage-organize-assets-view.md##manage-asset-status)中可用的&#x200B;**[!UICONTROL 狀態]**&#x200B;欄位。
 
-## 核准Content Hub的資產 {#approve-assets-for-content-hub}
+## 批准 Content Hub 的資產 {#approve-assets-for-content-hub}
 
 Assetsas a Cloud Service中標示為`approved`的資產會自動在Content Hub中使用。
 
@@ -98,6 +102,3 @@ Assetsas a Cloud Service中標示為`approved`的資產會自動在Content Hub�
 * 如果&#x200B;**[!UICONTROL 自動核准]**&#x200B;切換功能已停用，您使用Content Hub上傳的資產不會自動顯示。 這些資產可在Assetsas a Cloud Service環境的`hydrated-assets`資料夾中使用。 導覽至資料夾，然後[大量編輯](#bulk-approve-assets-content-hub)這些資產的狀態到`Approved`，以便這些資產顯示在Content Hub中。
 
 ![Content Hub核准流程](/help/assets/assets/content-hub-approval.png)
-
-
-

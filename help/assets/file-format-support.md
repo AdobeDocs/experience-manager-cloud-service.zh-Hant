@@ -5,14 +5,17 @@ contentOwner: AG
 feature: Asset Management, Renditions
 role: User, Admin
 exl-id: e848aa77-7829-4adc-8b88-0279791a4525
-source-git-commit: af7793ca7ad3d11bfff980a4d00f537fd0871755
+source-git-commit: 02caeb490ad99d8417eb2b5c91850c4ab822f57d
 workflow-type: tm+mt
-source-wordcount: '1423'
+source-wordcount: '1441'
 ht-degree: 34%
 
 ---
 
 # [!DNL Assets]支援的檔案格式 {#supported-file-formats}
+
+| [搜尋最佳實務](/help/assets/search-best-practices.md) | [中繼資料最佳實務](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [具有OpenAPI功能的Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets開發人員檔案](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]支援任何二進位檔案的基本內容管理功能 — 儲存、線上管理中繼資料、版本設定、上傳和下載等，不受其格式限制。 [!DNL Adobe Experience Manager Assets]支援多種檔案格式，而且每種產品功能對於不同格式都有不同的支援。
 

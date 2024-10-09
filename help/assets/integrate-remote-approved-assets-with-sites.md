@@ -2,14 +2,17 @@
 title: 將遠端 AEM Assets 與 AEM Sites 整合
 description: 瞭解如何使用核准的AEM Assets來設定並連線AEM網站。
 exl-id: 382e6166-3ad9-4d8f-be5c-55a7694508fa
-source-git-commit: e2c0c848c886dc770846d064e45dcc52523ed8e3
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '977'
+source-wordcount: '995'
 ht-degree: 2%
 
 ---
 
 # 將遠端 AEM Assets 與 AEM Sites 整合  {#integrate-approved-assets}
+
+| [搜尋最佳實務](/help/assets/search-best-practices.md) | [中繼資料最佳實務](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [具有OpenAPI功能的Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets開發人員檔案](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 有效管理數位資產對於跨各種線上平台提供吸引人且一致的品牌體驗至關重要。 Dynamic Media搭配OpenAPI功能，可啟用AEM Sites與AEM Assetsas a Cloud Service之間的緊密整合，進而增強數位資產管理。 這項創新功能可讓您輕鬆跨多個AEM環境共用和管理不同型別的已核准數位資產，精簡網站作者和內容編輯的工作流程。
 

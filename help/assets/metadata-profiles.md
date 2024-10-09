@@ -5,14 +5,17 @@ contentOwner: AG
 feature: Metadata
 role: User, Admin
 exl-id: eef90c6a-b354-4342-8b97-21d067ae2979
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '1403'
+source-wordcount: '1421'
 ht-degree: 21%
 
 ---
 
 # 中繼資料設定檔 {#metadata-profiles}
+
+| [搜尋最佳實務](/help/assets/search-best-practices.md) | [中繼資料最佳實務](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [具有OpenAPI功能的Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets開發人員檔案](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
@@ -60,7 +63,7 @@ ht-degree: 21%
 1. 從&#x200B;**[!UICONTROL 中繼資料設定檔]**&#x200B;頁面中，選取一個中繼資料設定檔以製作其副本。
 1. 按一下工具列中的&#x200B;**[!UICONTROL 複製]**。
 1. 在&#x200B;**[!UICONTROL 複製中繼資料設定檔]**&#x200B;對話方塊中，輸入新中繼資料設定檔副本的標題。
-1. 按一下&#x200B;**[!UICONTROL 複製]**。 中繼資料描述檔的復本會顯示在「中繼資料描述檔」頁面的描述檔 **[!UICONTROL 清單中]** 。
+1. 按一下&#x200B;**[!UICONTROL 複製]**。 中繼資料設定檔的復本會顯示在「中繼資料設定檔」頁面的設定檔 **[!UICONTROL 清單中]** 。
 
 ## 刪除中繼資料設定檔 {#deleting-a-metadata-profile}
 
@@ -80,9 +83,9 @@ ht-degree: 21%
 
 ### 將中繼資料設定檔套用至特定資料夾 {#applying-metadata-profiles-to-specific-folders}
 
-您可以從「工具」菜單或者在資料夾內的「屬性」中，將元資料配置檔案應 **[!UICONTROL 用到資料夾]******。本節說明如何以兩種方式將中繼資料描述檔套用至資料夾。
+您可以從「工具」菜單或者在資料夾內的「屬性」中，將元資料設定檔&#x200B;**[!UICONTROL 應用到資料夾]******。本節說明如何以兩種方式將中繼資料設定檔套用至資料夾。
 
-已為其分配配置檔案的資料夾將通過資料夾名稱正下方的配置檔案名稱顯示來指示。
+已為其分配輪廓的資料夾將通過資料夾名稱正下方的輪廓名稱顯示來指示。
 
 若資料夾中已有您後來加以變更的現有視訊設定檔，您可以重新處理該資料夾中的資產。<!--See [Reprocessing assets in a folder after you have edited its processing profile](processing-profiles.md#reprocessing-assets-in-a-folder-after-you-have-edited-its-processing-profile). -->
 
@@ -90,13 +93,13 @@ ht-degree: 21%
 
 1. 導覽至&#x200B;**[!UICONTROL 工具> Assets >中繼資料設定檔]**。
 1. 選取您要套用至一或多個資料夾的中繼資料設定檔。
-1. 按一下&#x200B;**[!UICONTROL 將中繼資料設定檔套用至資料夾]**，然後選取您要用來接收新上傳資產的資料夾或多個資料夾，並按一下&#x200B;**[!UICONTROL 完成]**。 已為其分配配置檔案的資料夾將通過資料夾名稱正下方的配置檔案名稱顯示來指示。
+1. 按一下&#x200B;**[!UICONTROL 將中繼資料設定檔套用至資料夾]**，然後選取您要用來接收新上傳資產的資料夾或多個資料夾，並按一下&#x200B;**[!UICONTROL 完成]**。 已為其分配輪廓的資料夾將通過資料夾名稱正下方的輪廓名稱顯示來指示。
 
 #### 從「屬性」將中繼資料設定檔套用至資料夾 {#applying-metadata-profiles-to-folders-from-properties}
 
 1. 在左側邊欄中，按一下&#x200B;**[!UICONTROL Assets]**，然後導覽至您要套用中繼資料設定檔的資料夾。
 1. 在資料夾中，選取核取記號以選取資料夾，然後選取&#x200B;**屬性**。
-1. 選取「**[!UICONTROL 中繼資料描述檔]**」標籤，然後從下拉式選單中選取描述檔，然後按一下「**[!UICONTROL 儲存]**」。 已為其分配配置檔案的資料夾將通過資料夾名稱正下方的配置檔案名稱顯示來指示。
+1. 選取「**[!UICONTROL 中繼資料描述檔]**」標籤，然後從下拉式選單中選取描述檔，然後按一下「**[!UICONTROL 儲存]**」。 已為其分配輪廓的資料夾將通過資料夾名稱正下方的輪廓名稱顯示來指示。
 
 ### 全域套用中繼資料設定檔 {#applying-a-metadata-profile-globally}
 
@@ -114,7 +117,7 @@ ht-degree: 21%
 
 當您從資料夾中移除中繼資料描述檔時，任何子資料夾都會自動繼承其父資料夾中描述檔的移除作業。 不過，在資料夾內發生的任何檔案處理作業都會維持不變。
 
-您可以從「工具」功能表內的資料夾或在資料夾內的「屬性」中移除中繼資料描述檔，或從「屬性」中移除中繼資料描述檔，或從「屬性」中移除中繼資料描述檔，或從「工具 **」功能表** 移除中繼資料描述檔 ****。本節將說明如何以兩種方式從資料夾中移除中繼資料描述檔。
+您可以從「工具」功能表內的資料夾或在資料夾內的「屬性」中移除中繼資料設定檔，或從「屬性」中移除中繼資料設定檔，或從「屬性」中移除中繼資料設定檔，或從「工具」**功能表** 移除中繼資料設定檔 ****。本節將說明如何以兩種方式從資料夾中移除中繼資料設定檔。
 
 ### 透過設定檔使用者介面從資料夾中移除中繼資料設定檔 {#removing-metadata-profiles-from-folders-via-profiles-user-interface}
 
@@ -128,7 +131,7 @@ ht-degree: 21%
 
 1. 按一下Experience Manager標誌並導覽&#x200B;**[!UICONTROL Assets]**，然後移至您要從中移除中繼資料設定檔的資料夾。
 1. 在資料夾上，按一下核取記號以選取資料夾，然後按一下&#x200B;**[!UICONTROL 內容]**。
-1. 選擇「元 **[!UICONTROL 資料描述檔]** 」標籤，然後從下拉式選單中選 **[!UICONTROL 擇「無]** 」，然後按一下「 **[!UICONTROL 儲存]**」。已為其分配配置檔案的資料夾將通過資料夾名稱正下方的配置檔案名稱顯示來指示。
+1. 選擇&#x200B;**[!UICONTROL 「元資料設定檔」]**&#x200B;標籤，然後從下拉式選單中選 **[!UICONTROL 擇「無」]**，然後按一下&#x200B;**[!UICONTROL 「儲存」]**。已為其分配輪廓的資料夾將通過資料夾名稱正下方的輪廓名稱顯示來指示。
 
 **另請參閱**
 

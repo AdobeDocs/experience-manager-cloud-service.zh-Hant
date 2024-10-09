@@ -4,14 +4,17 @@ description: 了解如何設定 AEM Assets 並將其連接到 Creative Cloud。�
 exl-id: 880200fe-94b3-49de-802c-34283f7c71bc
 feature: Collaboration
 role: User
-source-git-commit: 257930bc2633a0d31ad3bd28305b8159597befa5
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '282'
-ht-degree: 75%
+source-wordcount: '300'
+ht-degree: 72%
 
 ---
 
 # 將 AEM Assets 連接到 Creative Cloud  {#cross-org-entitlements}
+
+| [搜尋最佳實務](/help/assets/search-best-practices.md) | [中繼資料最佳實務](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [具有OpenAPI功能的Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets開發人員檔案](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 Experience Manager Assets可連線至已布建給其他IMS組織的Creative Cloud權益，以輕鬆使用AEM Assets中的最新Creative Cloud整合，包括Express和Creative Cloud Libraries。
 

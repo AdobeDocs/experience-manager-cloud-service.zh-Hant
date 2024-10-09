@@ -4,14 +4,17 @@ description: 本文說明如何在Experience Manager中建立、修改和使用�
 feature: Metadata
 role: Admin, User
 exl-id: f994c1bf-3f9d-4cb2-88f4-72a9ad6fa999
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '2505'
+source-wordcount: '2523'
 ht-degree: 19%
 
 ---
 
 # 搜尋 Facet {#search-facets}
+
+| [搜尋最佳實務](/help/assets/search-best-practices.md) | [中繼資料最佳實務](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [具有OpenAPI功能的Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets開發人員檔案](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
@@ -330,7 +333,7 @@ Adobe建議您在移除預設搜尋Facet時務必小心，以免出現效能問�
 
    刪除搜尋Facet的自訂變更後，在「搜尋表單」頁面的「資產管 **[!UICONTROL 理搜尋邊欄]** 」前會重 **** 新顯示「鎖定」圖示。
 
-## 使用者許可權 {#user-permissions}
+## 使用者權限 {#user-permissions}
 
 如果您未獲指派管理員角色，以下是您需要用來執行涉及搜尋Facet的編輯、刪除和預覽動作的許可權清單。
 

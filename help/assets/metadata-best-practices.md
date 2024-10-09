@@ -4,9 +4,9 @@ description: 瞭解中繼資料最佳實務，以有效管理您的數位資產�
 role: User, Admin
 exl-id: d90519df-55a6-4e23-81ad-ff2365d71c0d
 feature: Metadata, Best Practices
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '1384'
+source-wordcount: '1399'
 ht-degree: 1%
 
 ---
@@ -17,6 +17,9 @@ aem metadata
 experience manager metadata-->
 
 # 中繼資料管理和最佳做法 {#metadata-best-practices}
+
+| [搜尋最佳實務](/help/assets/search-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [具有OpenAPI功能的Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets開發人員檔案](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- |---------|----|-----|
 
 若要讓您的企業脫穎而出，並吸引更多客戶，運用影像、視訊和其他數位資產等高品質視覺效果至關重要。 為此，您需要可讓您將中繼資料新增到所有數位資產的程式，以便輕鬆搜尋。 中繼資料是提供有關數位資產的重要詳細資訊，包括資產名稱、型別、存放庫內的位置、修改日期和關聯標籤。 中繼資料可簡化資產管理、改善搜尋能力和協助工具，並確保有效的版本控制。
 

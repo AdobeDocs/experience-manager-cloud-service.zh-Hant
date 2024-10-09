@@ -3,14 +3,17 @@ title: 限制Experience Manager中的資產傳遞
 description: 瞭解如何限制 [!DNL Experience Manager]中的資產傳遞。
 role: User
 exl-id: 3fa0b75d-c8f5-4913-8be3-816b7fb73353
-source-git-commit: 65f0018a25c57189229fc56332ad874ebd0deef4
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '1130'
-ht-degree: 0%
+source-wordcount: '1148'
+ht-degree: 1%
 
 ---
 
 # 限制對[!DNL Experience Manager]中資產的存取 {#restrict-access-to-assets}
+
+| [搜尋最佳實務](/help/assets/search-best-practices.md) | [中繼資料最佳實務](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [具有OpenAPI功能的Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets開發人員檔案](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 Experience Manager中的中央資產控管可讓DAM管理員或品牌管理員管理對資產的存取。 他們可以透過在編寫端為已核准的資產設定角色來限制存取權，尤其是在AEM as a Cloud Service編寫執行個體上。
 

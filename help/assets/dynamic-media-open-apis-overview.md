@@ -3,14 +3,17 @@ title: 具有OpenAPI功能的Dynamic Media
 description: 瞭解重要概念，例如為何將Dynamic Media與OpenAPI功能搭配使用，以及如何啟用它。
 role: User
 exl-id: 658b6eff-9f5a-4166-9ff6-5dc8eb92ada3
-source-git-commit: 6199a8ae0033feee0c1bee4e4c50e19cd55c805c
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '1062'
+source-wordcount: '1075'
 ht-degree: 1%
 
 ---
 
 # 具有OpenAPI功能的Dynamic Media {#new-dynaminc-media-apis-overview}
+
+| [搜尋最佳實務](/help/assets/search-best-practices.md) | [中繼資料最佳實務](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [AEM Assets開發人員檔案](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|-----|
 
 在當今快節奏的數位世界中，釋放品牌數位資產的全部潛力對於在競爭中保持領先地位至關重要。 整體數位Assets管理(DAM)解決方案有助於資產控管、促進品牌一致性，並加快內容交付，同時確保品牌完整性和卓越的客戶體驗。
 

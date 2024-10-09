@@ -4,14 +4,17 @@ description: 管理 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]中
 feature: Asset Management
 role: User, Admin
 exl-id: 29660869-6902-4093-845b-cd629be59d4d
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '838'
+source-wordcount: '856'
 ht-degree: 5%
 
 ---
 
 # 在Experience Manager Assetsas a Cloud Service中管理PDF檔案 {#add-assets-to-experience-manager}
+
+| [搜尋最佳實務](/help/assets/search-best-practices.md) | [中繼資料最佳實務](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [具有OpenAPI功能的Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets開發人員檔案](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 Experience Manager Assets與Document CloudPDF檢視器緊密整合，可讓您預覽PDF檔案的多個頁面。 此外，您也可以使用進階Document CloudPDF檢視器功能，例如註解、搜尋文字、使用書籤和縮圖導覽PDF檔案，以及同一屋頂下的更多功能。 Experience Manager Assets也可讓您上傳其他支援格式的檔案，並以PDF格式預覽。
 
