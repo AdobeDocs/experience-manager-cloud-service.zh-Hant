@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的運作方式以及該軟體可以為您做哪些事。
 breadcrumb-title: 使用手冊
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 7a370ee0ab77046d128ae260af2575d50e655254
+source-git-commit: 2d41b880ec3988b72128c7aac8b619c337a89427
 workflow-type: tm+mt
-source-wordcount: '5678'
+source-wordcount: '5684'
 ht-degree: 99%
 
 ---
@@ -86,6 +86,7 @@ ht-degree: 99%
    + AEMaaCS 維護版本發行說明{#maintenance}
       + [目前維護版本發行說明](/help/release-notes/maintenance/latest.md)
       + 2024 {#2024}
+         + [2024.10.0 維護版本發行說明](/help/release-notes/maintenance/2024/2024-10-0.md)
          + [2024.9.0 維護版本發行說明](/help/release-notes/maintenance/2024/2024-9-0.md)
          + [2024.8.0 維護版本發行說明](/help/release-notes/maintenance/2024/2024-8-0.md)
          + [2024.7.0 維護版本發行說明](/help/release-notes/maintenance/2024/2024-7-0.md)
