@@ -1,14 +1,14 @@
 ---
 title: 功能測試
-description: 了解內建在 AEM as a Cloud Service 部署流程中的三種不同類型的功能測試，以確保程式碼的品質和可靠性。
+description: 瞭解內建在AEM as a Cloud Service部署流程中的三種不同型別的功能測試，以確保計畫碼的品質和可靠性。
 exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: b8b1748f9c50178fbcb167370c53285b55d809b1
+source-git-commit: 7a370ee0ab77046d128ae260af2575d50e655254
 workflow-type: tm+mt
-source-wordcount: '1373'
-ht-degree: 8%
+source-wordcount: '1314'
+ht-degree: 3%
 
 ---
 
@@ -18,9 +18,9 @@ ht-degree: 8%
 >[!CONTEXTUALHELP]
 >id="aemcloud_nonbpa_functionaltesting"
 >title="功能測試"
->abstract="了解內建在 AEM as a Cloud Service 部署流程中的三種不同類型的功能測試，以確保程式碼的品質和可靠性。"
+>abstract="瞭解內建在AEM as a Cloud Service部署流程中的三種不同型別的功能測試，以確保計畫碼的品質和可靠性。"
 
-瞭解[AEM as a Cloud Service部署程式](/help/implementing/cloud-manager/deploy-code.md)中可用的品質閘道、內建的不同功能測試型別、如何貢獻以及如何在整個測試策略的內容中善加利用這些閘道。
+探索[AEM as a Cloud Service部署程式](/help/implementing/cloud-manager/deploy-code.md)中可用的品質閘道以及各種型別的內建功能測試。 瞭解如何在全方位的測試策略架構中，貢獻並最佳化其使用。
 
 ## 概觀
 
@@ -32,7 +32,7 @@ ht-degree: 8%
 
 AEM Cloud Service部署管道的用途是在開發和AEM產品發行生命週期的各個階段促進穩定且安全的部署。 這些管道在不同層級合併多個品質閘道，以確保部署AEM應用程式變更和AEM產品更新的完整性和安全性。
 
-Adobe提供數個內建品質閘道，而其他閘道則需要您的介入以進行實作和設定。 這些品質門檻是多種多樣的，其中一些適用於生命週期的不同階段，甚至可整合到您自己的開發設定和CI/CD流程中。
+Adobe提供數個內建品質閘道，而其他閘道則需要您的介入以進行實作和設定。 這些品質門檻是通用的，可在不同的生命週期階段套用，並直接整合到您的開發設定和CI/CD流程中。
 
 內建品質門檻主要在AEM應用程式內容中驗證AEM產品的功能。 相較之下，您設定的自訂品質閘道則可驗證應用程式的關鍵功能和使用者互動是否如預期般執行。 這兩組品質閘道共同運作，確保程式碼修改和AEM產品更新的穩定且安全的自動部署。
 
@@ -58,7 +58,7 @@ Adobe提供數個內建品質閘道，而其他閘道則需要您的介入以進
 
 建議您為AEM應用程式提供單元測試，這是每個測試策略的基礎。 這些設定旨在快速且經常地執行，並提供早期且快速的意見反應。 它們已緊密整合到開發人員工作流程、您自己的CI/CD和AEM雲端服務部署管道中。
 
-它們會使用JUnit實作，並使用Maven執行。 請參閱AEM專案原型的[核心模組](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/core.html#unit-tests)，以取得AEM的範例單元測試及入門。
+它們會使用JUnit實作，並使用Maven執行。 請參閱AEM Project Archetype](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/using#unit-tests)的[核心模組，以取得AEM及入門的單元測試範例。
 
 ### 程式碼品質
 
@@ -68,40 +68,40 @@ Adobe提供數個內建品質閘道，而其他閘道則需要您的介入以進
 
 ### 產品測試
 
-產品功能測試是 AEM 中核心功能 (例如編寫和複製任務) 的一組穩定 HTTP 整合測試 (IT)。Adobe提供和維護開箱即用的功能。 它們旨在防止自訂應用程式程式碼變更而中斷AEM產品中的核心功能時進行部署。
+產品功能測試是核心AEM功能的穩定HTTP整合測試(IT)，包括製作和複製任務。 Adobe提供和維護開箱即用的功能。 它們旨在防止自訂應用程式程式碼變更而中斷AEM產品中的核心功能時進行部署。
 
-它們使用Junit實作，使用Maven執行並使用官方[AEM測試使用者端](https://github.com/adobe/aem-testing-clients)。 產品測試套件維護為
+他們使用JUnit來實作、使用Maven執行，並依賴官方[AEM測試使用者端](https://github.com/adobe/aem-testing-clients)。 產品測試套件維護為
 [開放原始碼專案](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke)遵循最佳實務，可以視為實施測試的良好起點。
 
 ### 自訂功能測試
 
-和產品測試一樣，客戶功能測試是HTTP整合測試(IT)，也使用Junit實作，使用Maven執行並在官方[AEM測試使用者端](https://github.com/adobe/aem-testing-clients)上建置。
+與產品測試類似，客戶功能測試是使用JUnit實作的HTTP整合測試(IT)、使用Maven執行，以及建置在官方[AEM測試使用者端](https://github.com/adobe/aem-testing-clients)之上。
 
 >[!NOTE]
 >
->自訂功能測試會在生產和非生產（選擇加入）管道中執行，您的AEM應用程式會使用這些管道變更部署和AEM產品推播更新，因此是協助確保應用程式正常運作並提高發行安全性的關鍵貢獻。 客戶功能測試也會在每個客戶的內部發行前驗證管道中執行，這有助於提供早期意見反應。
+>自訂功能測試會在生產和非生產（選擇加入）管道中執行，用於AEM應用程式變更部署和AEM產品推播更新。 它們在確保您的應用程式正常運作並增強發行安全性方面扮演著關鍵角色。 客戶功能測試也會在每個客戶的內部發行前驗證管道中執行，這有助於提供早期意見反應。
 
-為了保持管道執行效率，我們建議專注於關鍵功能和主要使用者互動流程。 建議使用約15分鐘或更短的執行時間進行功能測試。 建議在客戶開發流程中，將不符合此品質閘道的完整功能測試套裝作為一般客戶驗證管道的一部分執行。
+為了維持有效的管道執行，Adobe建議專注於關鍵功能和主要使用者互動流程，目標是大約15分鐘或更短時間的功能測試執行時間。 超過此時間的完整功能測試套裝應在開發過程中作為一般客戶驗證管道的一部分執行。
 
-如需範例，請參閱[開放來源產品測試](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke)或AEM專案原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/ittests.html)的[it.tests模組。
+如需範例，請參閱[開放來源產品測試](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke)或AEM專案原型](https://github.com/adobe/aem-project-archetype/tree/develop/src/main/archetype/it.tests)的[it.tests模組。
 
 如需詳細資訊，請參閱 [Java 功能測試](/help/implementing/cloud-manager/java-functional-testing.md)。
 
 ### 自訂UI測試
 
-為了最大化客戶特定開發的風險控制，Adobe強烈建議您將關鍵UI測試擷取到AEMCS中。 其數量有限，但對客戶體驗的影響最大。
+為了最大化客戶特定開發的風險控制，Adobe鼓勵您將關鍵UI測試擷取到AEM as a Cloud Service中。 限制使用量，但著重於最大化其對客戶體驗的影響。
 
-測試封裝在Docker映像中 — 設計為儘可能易變（支援Cypress、Selenium、Java和Javascript）。 它們遵循與自訂功能測試相同的特性和目的。
+測試封裝在Docker映像中 — 設計為儘可能易變(支援Cypress、Selenium、Java和JavaScript)。 它們遵循與自訂功能測試相同的特性和目的。
 
 >[!NOTE]
 >
->自訂UI測試會在生產和非生產（選擇加入）管道中執行，您的AEM應用程式會使用這些管道變更部署和AEM產品推播更新，因此是協助確保應用程式正常運作並提高發行安全性的重要貢獻。 客戶UI測試也會在每個客戶的內部發行前驗證管道中執行，這有助於提供早期意見反應。
+>自訂UI測試會在用於AEM應用程式變更部署和AEM產品推送更新的生產和非生產（選擇加入）管道中執行。 它們對於確保應用程式的正常運作以及增強發行安全性至關重要。 客戶UI測試也會在每個客戶的內部發行前驗證管道中執行，這有助於提供早期意見反應。
 >
 >非Selenium容器應該根據[UI測試區段](/help/implementing/cloud-manager/ui-testing.md#custom-ui-testing)中的環境變數，使用HTTP Proxy執行測試。
 
-為了保持管道執行效率，我們建議專注於關鍵功能和主要使用者互動流程。 建議在客戶開發流程期間，作為一般客戶驗證管道的一部分執行不符合此品質閘道的完整UI測試套裝。
+為了保持管道執行效率，Adobe建議專注於關鍵功能和主要使用者互動流程。 超出此品質閘道的完整UI測試套裝應該作為一般客戶驗證管道的一部分執行。 將其整合至客戶的開發流程中。
 
-如需範例，請參閱[開放來源範例測試](https://github.com/adobe/aem-test-samples/tree/aem-cloud/)或AEM專案原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uitests.html)的[ui.tests模組。
+如需範例，請參閱[開放來源範例測試](https://github.com/adobe/aem-test-samples/tree/aem-cloud/)或AEM專案原型](/help/implementing/cloud-manager/ui-testing.md)的[ui.tests模組。
 
 如需詳細資訊，請參閱[自訂 UI 測試](/help/implementing/cloud-manager/ui-testing.md#custom-ui-testing)。
 
@@ -117,12 +117,12 @@ Adobe提供數個內建品質閘道，而其他閘道則需要您的介入以進
 
 客戶驗證品質閘道是客戶自身測試策略和工作的預留位置，在客戶的應用程式變更傳至AEM雲端部署管道之前執行。
 
-您可以在此處選擇您偏好的工具和架構。 相較於客戶功能測試和自訂UI測試，沒有與AEM as a Cloud Service相關的限制，因此我們建議在這裡執行長期執行的功能和UI測試。
+您可以在此處選擇您偏好的工具和架構。 相較於客戶功能測試和自訂UI測試，沒有與AEM as a Cloud Service相關的限制。 因此，Adobe建議您在這裡執行長期執行的功能和UI測試。
 
-雖然您可以自由選擇任何工具和架構，但建議您將HTTP型整合測試和UI測試與自訂功能測試和自訂UI測試品質閘道中可用的工具和架構搭配起來。 我們建議將[快速開發環境(RDE)](/help/implementing/developing/introduction/rapid-development-environments.md)整合到您的本機測試策略中，以便儘可能接近AEM雲端環境進行測試。
+您可以選擇任何工具和架構，Adobe則建議將HTTP型整合和UI測試與自訂功能和UI測試品質閘道中使用的工具和架構保持一致。 此外，Adobe建議將[快速開發環境(RDE)](/help/implementing/developing/introduction/rapid-development-environments.md)合併到您的本機測試策略中，以密切映象AEM雲端環境。
 
 ### 手動測試
 
-手動測試品質閘道是進行手動測試之客戶的預留位置。 AEM雲端管道不支援手動測試，因此這需要在您自己的本機測試策略中進行。
+手動測試品質閘道是進行手動測試之客戶的預留位置。 由於AEM雲端管道不支援手動測試，因此必須將其納入您的本機測試策略中。
 
 若是手動測試，將其與其他AEM Cloud Service開發環境整合會很有用。
