@@ -3,10 +3,10 @@ title: 在Cloud Manager中新增外部存放庫（早期採用者）
 description: 瞭解如何將外部存放庫新增到Cloud Manager。 Cloud Manager支援與GitHub、GitLab和Bitbucket存放庫整合。
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: b90ace2250277005d8ac250c841104c93298a605
+source-git-commit: 9cde6e63ec452161dbeb1e1bfb10c75f89e2692c
 workflow-type: tm+mt
 source-wordcount: '742'
-ht-degree: 5%
+ht-degree: 4%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 5%
 
 >[!NOTE]
 >
->此功能僅適用於[早期採用者計劃](/help/implementing/cloud-manager/release-notes/current.md#early-adoption)。
+>此功能僅適用於[早期採用方案](/help/implementing/cloud-manager/release-notes/current.md#early-adoption)。
 
 ## 設定外部存放庫
 

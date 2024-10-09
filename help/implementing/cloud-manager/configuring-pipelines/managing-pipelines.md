@@ -6,10 +6,10 @@ exl-id: 4aff5a84-134a-43fa-8de8-8d564f4edd16
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
+source-git-commit: 9cde6e63ec452161dbeb1e1bfb10c75f89e2692c
 workflow-type: tm+mt
-source-wordcount: '1109'
-ht-degree: 69%
+source-wordcount: '1108'
+ht-degree: 67%
 
 ---
 
@@ -98,7 +98,7 @@ ht-degree: 69%
 
 1. 瀏覽至&#x200B;**管道**&#x200B;卡 (位於&#x200B;**程式概觀**&#x200B;頁面)，並按一下您要編輯的管道旁的省略符號按鈕，然後從選單中選取&#x200B;**編輯**。
 
-1. **編輯生產管道**&#x200B;或是&#x200B;**編輯非生產管道**&#x200B;對話框會隨即顯示，讓您可以對您在建立管道時輸入的詳細資訊進行編輯。
+1. 會顯示&#x200B;**編輯生產管道**&#x200B;或&#x200B;**編輯非生產管道**&#x200B;對話方塊，讓您編輯建立管道時輸入的相同詳細資料。
 
    * 如需有關管道可用的欄位和設定選項的詳細資訊，請參閱以下頁面。
       * [設定生產管道](configuring-production-pipelines.md)

@@ -5,10 +5,10 @@ exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
+source-git-commit: 9cde6e63ec452161dbeb1e1bfb10c75f89e2692c
 workflow-type: tm+mt
 source-wordcount: '4513'
-ht-degree: 84%
+ht-degree: 83%
 
 ---
 
@@ -794,7 +794,7 @@ public class DontDoThis implements Page {
 * **嚴重度**：重大
 * **始自**：2019.6.0 版本
 
-類似[套件不應包含重複的 OSGi 設定規則，](#oakpal-package-osgi)這是複雜專案中常見的問題，這類專案會由多個單獨的內容套件寫入相同的節點路徑。雖然使用內容套件相依性可用於確保一致的結果，但最好還是完全避免重疊。
+類似[套件不應包含重複的OSGi設定規則](#oakpal-package-osgi)，這是複雜專案中常見的問題，這類專案會由多個單獨的內容套件寫入相同的節點路徑。 雖然使用內容套件相依性可以確保結果一致，但最好還是完全避免重疊。
 
 ### 預設的撰寫模式不應該是 Classic UI {#oakpal-default-authoring}
 
@@ -853,7 +853,7 @@ Cloud Service 部署中不支援反向複寫，如 Experience Manager as a Cloud
 * **嚴重度**：輕微
 * **始自**：2021.2.0 版本
 
-Experience Manager 用戶端資料庫可能包含影像和字體之類的靜態資源。如[使用前置處理器](/help/implementing/developing/introduction/clientlibs.md#using-preprocessors)文件中所述，使用透過 Proxy 的用戶端資料庫時，這些靜態資源必須包含在名為 `resources` 的子資料夾中，以便在發佈執行個體上有效地參考。
+Experience Manager 用戶端資料庫可能包含影像和字體之類的靜態資源。如檔案[使用前置處理器](/help/implementing/developing/introduction/clientlibs.md#using-preprocessors)中所述，在使用代理的使用者端程式庫時，這些靜態資源必須包含在名為`resources`的子資料夾中，才能在發佈執行個體上有效參考。
 
 #### 不符合規範的程式碼 {#non-compliant-proxy-enabled}
 

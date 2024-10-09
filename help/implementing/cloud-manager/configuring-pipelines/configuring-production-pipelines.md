@@ -6,25 +6,29 @@ exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
+source-git-commit: 9cde6e63ec452161dbeb1e1bfb10c75f89e2692c
 workflow-type: tm+mt
-source-wordcount: '1375'
-ht-degree: 66%
+source-wordcount: '1314'
+ht-degree: 39%
 
 ---
 
 
 # 新增生產管道 {#configure-production-pipeline}
 
-瞭解如何設定生產管道以建置計畫碼並將其部署到生產環境。 生產管道會先將計畫碼部署到中繼環境，並在獲得核准後將相同的計畫碼部署到生產環境。
+瞭解如何設定生產管道以建置計畫碼並將其部署到生產環境。 生產管道會先將計畫碼部署到中繼環境。 在核准後，會將相同的程式碼部署到生產環境。
 
 使用者必須擁有&#x200B;**[部署管理員](/help/onboarding/cloud-manager-introduction.md#role-based-permissions)**&#x200B;角色才能設定生產管道。
 
 >[!NOTE]
 >
->直到計畫建立完成，Git存放庫至少有一個分支，並建立生產和測試環境集後，才能設定生產管道。
+>在發生以下情況之前，無法設定生產管道：
+>
+>* 程式隨即建立。
+>* Git存放庫至少有一個分支。
+>* 生產和中繼環境隨即建立。
 
-在開始部署程式碼之前，您必須從 [!UICONTROL Cloud Manager] 設定管道設定。
+開始部署程式碼之前，請從[!UICONTROL Cloud Manager]設定您的管道設定。
 
 >[!NOTE]
 >
@@ -36,7 +40,7 @@ ht-degree: 66%
 
 >[!TIP]
 >
->在設定前端管道之前，請參閱 [AEM Quick Site 建立歷程](/help/journey-sites/quick-site/overview.md)，以透過易於使用的 AEM Quick Site 建立工具取得端到端指南。此歷程可幫助您簡化 AEM 網站的前端開發，讓您無需 AEM 後端知識即可快速自訂網站。
+>在設定前端管道之前，請參閱[AEM Quick Site建立歷程](/help/journey-sites/quick-site/overview.md)，以透過易於使用的AEM Quick Site建立工具取得端對端指南。 此歷程可幫助您簡化AEM網站的前端開發，讓您無需AEM後端知識即可快速自訂網站。
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager，並選取適當的組織。
 
@@ -50,27 +54,27 @@ ht-degree: 66%
 
    **部署觸發計畫** - 在定義部署觸發計畫以啟動管道時，有以下選項。
 
-   * **手動** - 使用此選項以手動方式啟動管道。
-   * **開啟 Git 變更** - 只要將認可新增到已設定的 Git 分支，此選項就會啟動 CI/CD 管道。使用此選項，您仍然可以在需要時手動啟動管道。
+   * **手動** — 手動啟動管道。
+   * **在Git變更上** — 只要將認可新增到已設定的Git分支，就會啟動CI/CD管道。 使用此選項，您仍然可以在需要時手動啟動管道。
 
    **重要量度失敗行為** - 在管道設定或編輯期間，**部署管理員**&#x200B;可選擇對任何品質閘道中遭遇重要失敗時的管道行為進行定義。可使用的選項包括：
 
-   * **每次都詢問** - 這是預設設定，要求對任何重要失敗進行手動介入。
-   * **立即失敗** - 如果選取，則每當重要失敗發生時，會取消管道。這基本上是模擬使用者手動拒絕每次失敗。
-   * **立即持續** - 如果選取，則每當重要失敗發生時，管道將自動繼續。這基本上是模擬使用者手動核准每次失敗。
+   * **每次都詢問** — 預設設定。 任何重要失敗都需要手動介入。
+   * **立即失敗** - 如果選取，則每當重要失敗發生時，會取消管道。此程式基本上是模擬使用者手動拒絕每次失敗。
+   * **立即繼續** — 如果選取，則每當重要失敗發生時，管道會自動繼續。 此程式基本上是模擬使用者手動核准每次失敗。
 
    ![生產管道設定](/help/implementing/cloud-manager/assets/configure-pipeline/production-pipeline-configuration.png)
 
-1. 在&#x200B;**Source程式碼**&#x200B;索引標籤上，您必須選取管道應處理的程式碼型別。
+1. 在&#x200B;**Source程式碼**&#x200B;索引標籤上，選取管道應處理的程式碼型別。
 
-   * **[完整堆疊程式碼](#full-stack-code)**
-   * **[目標部署](#targeted-deployment)**
+   * **[設定完整棧疊計畫碼管道](#full-stack-code)**
+   * **[設定目標部署管道](#targeted-deployment)**
 
 如需有關管道型別的詳細資訊，請參閱[CI/CD管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)。
 
 完成建立生產流水線的步驟因所選原始計畫碼型別而異。 按照上面的連結跳到本文件的下一部分以便完成管道的設定。
 
-### 完整堆疊程式碼 {#full-stack-code}
+### 設定完整棧疊計畫碼管道 {#full-stack-code}
 
 完整棧疊計畫碼管道同時部署包含一個或多個AEM伺服器應用程式以及HTTPD/Dispatcher配置的後端和前端計畫碼構建。
 
@@ -78,45 +82,45 @@ ht-degree: 66%
 >
 >如果所選環境已存在完整堆疊程式碼管道，則此選項會停用。
 
-若要完成完整堆疊程式碼生產管道的設定，請按照以下步驟操作。
+**若要設定完整棧疊計畫碼管道：**
 
-1. 在&#x200B;**原始程式碼**&#x200B;索引標籤上，您必須定義以下選項。
+1. 在&#x200B;**Source程式碼**&#x200B;索引標籤上，定義下列選項。
 
-   * **存放庫** - 此選項會定義管道應該從哪個 Git 存放庫擷取程式碼。
+   * **存放庫** — 定義管道應該從哪個Git存放庫擷取程式碼。
 
    >[!TIP]
    > 
-   >如要了解如何在 Cloud Manager 中新增和管理存放庫，請參閱文件：[新增和管理存放庫](/help/implementing/cloud-manager/managing-code/managing-repositories.md)。
+   >請參閱[新增和管理存放庫](/help/implementing/cloud-manager/managing-code/managing-repositories.md)，瞭解如何在Cloud Manager中新增和管理存放庫。
 
-   * **Git 分支** - 此選項會定義管道應該選取哪個分支來擷取程式碼。
-      * 輸入分支名稱的前幾個字元，該欄位的自動完成功能將會尋找相符的分支以幫助您進行選擇。
+   * **Git分支** — 定義選取的管道應該從哪個分支擷取程式碼。
+輸入分支名稱的前幾個字元，此欄位的自動完成功能會尋找相符的分支以協助您選取。
    * **忽略 Web 層設定**- 選取後，管道不會部署您的 Web 層設定。
-   * **在部署到生產之前暫停** - 此選項會在部署到生產之前暫停管道。
-   * **已排程** - 此選項可讓使用者啟用已排程的產生部署。
+   * **在部署到生產之前暫停** — 在部署到生產之前暫停管道。
+   * **已排程** — 讓使用者啟用已排程的生產部署。
 
    ![完整堆疊程式碼](/help/implementing/cloud-manager/assets/configure-pipeline/production-pipeline-fullstack.png)
 
-1. 點選或按一下「**繼續**」以前往「**體驗稽核**」標籤，您可以在其中定義應一律包含在體驗稽核中的路徑。
+1. 按一下&#x200B;**繼續**&#x200B;進入&#x200B;**體驗稽核**&#x200B;索引標籤，您可以在其中定義應一律包含在體驗稽核中的路徑。
 
    ![新增體驗稽核](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-audit.png)
 
 1. 提供要包含在體驗稽核中的路徑。
 
-   * 如需詳細資訊，請參閱檔案[體驗稽核測試](/help/implementing/cloud-manager/experience-audit-dashboard.md#configuration)。
+   * 如需詳細資訊，請參閱[體驗稽核測試](/help/implementing/cloud-manager/experience-audit-dashboard.md#configuration)。
 
 1. 按一下&#x200B;**儲存**，即可儲存您的管道。
 
-為體驗稽核設定的路徑會提交給服務，並在管道執行時根據效能、協助工具、SEO (搜尋引擎最佳化)、最佳實務和 PWA (漸進式 Web 應用程式) 測試進行評估。如需更多詳細資訊，請參閱[了解體驗稽核結果](/help/implementing/cloud-manager/experience-audit-dashboard.md)。
+當管道執行時，會根據效能、協助工具、SEO、最佳實務和PWA測試，提交和評估為體驗稽核設定的路徑。 如需更多詳細資料，請參閱[瞭解體驗稽核結果](/help/implementing/cloud-manager/experience-audit-dashboard.md)。
 
 管道已儲存，您現在可以在&#x200B;**計畫概觀**&#x200B;頁面的&#x200B;**管道**&#x200B;卡上[管理您的管道](managing-pipelines.md)。
 
-### 目標部署 {#targeted-deployment}
+### 設定目標部署管道 {#targeted-deployment}
 
 目標部署只會為AEM應用程式的選定部分部署程式碼。 在這種部署中，您可以選擇&#x200B;**包含**&#x200B;下列其中一個型別的程式碼：
 
 * **設定** — 設定AEM環境中各種功能的設定。
    * 請參閱[使用設定管道](/help/operations/config-pipeline.md)以取得支援的設定清單，其中包括記錄轉送、清除相關的維護工作以及各種CDN設定，並在您的存放庫中管理這些設定，以便正確部署它們。
-   * 執行目標部署管道時，將會部署設定，前提是這些設定會儲存至您在管道中定義的環境、存放庫和分支。
+   * 執行目標部署管道時，會部署設定，前提是這些設定已儲存至管道中定義的環境、存放庫和分支。
    * 在任何時候，每個環境只能有一個設定管道。
 * **前端程式碼** — 設定AEM應用程式前端的JavaScript和CSS。
    * 有了前端流水線，給前端開發者更多的獨立性，可以加快開發進程。
@@ -124,13 +128,13 @@ ht-degree: 66%
 * **網頁層設定** — 設定Dispatcher屬性，以儲存、處理及傳送網頁給使用者端。
    * 如需詳細資訊，請參閱檔案[CI/CD管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipelines)。
    * 如果所選環境存在 Web 層程式碼管道，則此選項會停用。
-   * 如果您將現有的完整堆疊管道部署到環境，則為同一環境建立 Web 層設定管道將忽略完整堆疊管道中的現有 Web 層設定。
+   * 如果您為具有現有完整棧疊管道的環境建立Web層配置管道，則忽略完整棧疊管道中的Web層配置。 此變更只會影響該環境中的Web層設定。
 
 >[!NOTE]
 >
->私人存放庫不支援 Web 層和設定管道。如需詳細資訊和完整的限制清單，請參閱檔案[在Cloud Manager中新增私人存放庫](/help/implementing/cloud-manager/managing-code/private-repositories.md)。
+>私人存放庫不支援 Web 層和設定管道。請參閱[在Cloud Manager中新增私人存放庫](/help/implementing/cloud-manager/managing-code/private-repositories.md)，以取得詳細資訊和完整的限制清單。
 
-選擇部署型別後，完成建立生產、目標部署管道的步驟相同。
+**若要設定目標部署管道：**
 
 1. 選擇所需的部署型別。
 
@@ -152,7 +156,7 @@ ht-degree: 66%
       * 輸入分支名稱的前幾個字元，該欄位的自動完成功能。會尋找相符的分支以幫助您進行選取。
    * **程式碼位置** - 此選項會定義管道應從所選存放庫的分支中擷取程式碼的路徑。
    * **在部署到生產之前暫停** - 此選項會在部署到生產之前暫停管道。
-   * **已排程** — 此選項可讓使用者啟用已排程的生產部署。 僅適用於Web層目標部署。
+   * **已排程** — 讓使用者啟用已排程的生產部署。 僅適用於Web層目標部署。
 
    ![設定管道](/help/implementing/cloud-manager/assets/configure-pipeline/prod-pipeline-config-deployment.png)
 
@@ -160,11 +164,11 @@ ht-degree: 66%
 
 管道已儲存，您現在可以在&#x200B;**計畫概觀**&#x200B;頁面的&#x200B;**管道**&#x200B;卡上[管理您的管道](managing-pipelines.md)。
 
-## 跳過發送器套件 {#skip-dispatcher-packages}
+## 跳過Dispatcher套件 {#skip-dispatcher-packages}
 
-如果您希望將 Dispatcher 套件建置為管道的一部分，但又不希望將它們發佈到建置儲存，您可以停用發佈它們，這可能會減少管道的執行時間。
+若要在管道中建置Dispatcher套件，而不將套件發佈到建置儲存，您可以停用發佈選項。 這麼做有助於縮短管道的執行時間。
 
-必須透過您的專案 `pom.xml` 檔案新增以下停用發佈 Dispatcher 套件的設定。這會根據環境變數 (作為一個標幟)，您可以在 Cloud Manager 建置容器中設定以定義何時應忽略 Dispatcher 套件。
+必須透過您的專案 `pom.xml` 檔案新增以下停用發佈 Dispatcher 套件的設定。環境變數可作為您在Cloud Manager建置容器中設定的標幟，以判斷何時應忽略Dispatcher套件。
 
 ```xml
 <profile>

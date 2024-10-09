@@ -5,10 +5,10 @@ exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: cfaa3be31195929b80310610120a779a20537c61
+source-git-commit: 9cde6e63ec452161dbeb1e1bfb10c75f89e2692c
 workflow-type: tm+mt
-source-wordcount: '1197'
-ht-degree: 94%
+source-wordcount: '1195'
+ht-degree: 90%
 
 ---
 
@@ -82,7 +82,7 @@ _只有 Full Stack Code 流水線類型支援程式碼掃描、功能測試、UI
    * UI 測試是封裝在 Docker 影像中的 Selenium 型測試，以便在語言和架構 (例如 Java 和 Maven、Node 和 WebDriver.io 或任何其他根據 Selenium 建置的架構和技術) 中提供廣泛的選擇。
    * 如需更多詳細資訊，請參閱[自訂 UI 測試](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing)。
 
-* **體驗稽核** - 步驟一律存在且不能跳過。在執行生產管道時，在執行檢查的自訂功能測試之後會包含一個體驗稽核步驟。
+* **體驗稽核** - 步驟一律存在且不能跳過。在執行生產管道時，在執行檢查的自訂功能測試之後會包含體驗稽核步驟。
    * 配置的頁面將提交給服務並進行評估。
    * 結果是資訊性的，並顯示分數以及當前和以前分數之間的變化。
    * 此深入分析對於判斷是否有會於目前部署引入的迴歸十分有用。
@@ -110,7 +110,7 @@ _只有 Full Stack Code 流水線類型支援程式碼掃描、功能測試、UI
 
 ## 逾時 {#timeouts}
 
-如果等候使用者回饋意見，以下步驟將逾時：
+如果等候使用者回饋，則以下步驟會逾時：
 
 | 步驟 | 逾時 |
 |--- |--- |

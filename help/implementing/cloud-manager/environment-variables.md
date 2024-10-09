@@ -5,10 +5,10 @@ exl-id: 5cdd5532-11fe-47a3-beb2-21967b0e43c6
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
+source-git-commit: 9cde6e63ec452161dbeb1e1bfb10c75f89e2692c
 workflow-type: tm+mt
 source-wordcount: '988'
-ht-degree: 76%
+ht-degree: 72%
 
 ---
 
@@ -90,7 +90,7 @@ ht-degree: 76%
 
 1. 完成必要的組態變更後，請選取&#x200B;**儲存**。
 
-[新增變數時](#add-variables)，具有&#x200B;**更新**&#x200B;狀態的指示器會顯示在表格頂端和更新的變數旁邊，表示正在使用設定更新環境。完成後，更新的環境變數會顯示在表格中。
+[新增變數](#add-variables)時，狀態為&#x200B;**正在更新**&#x200B;的指標會顯示在表格頂端和最近更新的變數旁邊，表示正在使用設定更新環境。 完成後，更新的環境變數會顯示在表格中。
 
 >[!TIP]
 >

@@ -5,10 +5,10 @@ exl-id: bb8d4a5a-b26a-4718-9327-149fedb87e6a
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
+source-git-commit: 9cde6e63ec452161dbeb1e1bfb10c75f89e2692c
 workflow-type: tm+mt
 source-wordcount: '490'
-ht-degree: 92%
+ht-degree: 87%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 92%
 
 生產計畫適用於準備開始編寫、構建和測試程式碼的團隊，目標是部署它以託管實時流量。
 
-在你之後[建立您的生產計畫，](creating-production-programs.md)一個[計畫建立精靈](using-the-wizard.md)根據使用者建立計畫的目標，引導使用者進行選擇。
+在您[建立您的生產計畫](creating-production-programs.md)之後，[計畫建立精靈](using-the-wizard.md)會根據使用者建立計畫的目標，引導使用者進行選擇。
 
 ## 計畫建立選項 {#program-creation-options}
 

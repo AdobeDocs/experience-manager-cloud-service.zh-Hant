@@ -5,10 +5,10 @@ exl-id: cfcef2e2-0590-457d-a0f9-6092a6d9e0e8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
+source-git-commit: 9cde6e63ec452161dbeb1e1bfb10c75f89e2692c
 workflow-type: tm+mt
-source-wordcount: '571'
-ht-degree: 20%
+source-wordcount: '551'
+ht-degree: 18%
 
 ---
 
@@ -28,28 +28,28 @@ ht-degree: 20%
 
 ### 管道變數命名慣例 {#naming-conventions}
 
-變量名必須遵守以下約定。
+變數名稱必須遵守下列慣例：
 
-* 變數名稱只能包含字母數字構成的字元和底線 (`_`)。
+* 變數只能包含英數字元和底線(`_`)。
 * 按照慣例，上述名稱應全部大寫。
 * 每個管道限制為 200 個變數。
 * 每個名稱不得超過100個字元。
 * 每個`string`變數值都必須少於 2048 個字元。
 * 每個`secretString`型別變數值都必須少於或等於500個字元。
 
-## 透過Cloud Manager UI {#ui}
+## 透過Cloud Manager使用者介面 {#ui}
 
-管道變數可透過Cloud Manager UI設定和管理。 您必須有許可權編輯管道，才能新增、編輯和刪除管道變數。
+管道變數可透過Cloud Manager使用者介面進行設定和管理。 您必須有權編輯管道以新增、編輯和刪除管道變數。
 
 如果管道正在執行，則會封鎖變數管理。
 
 ### 新增管道變數 {#add-ui}
 
-1. 當[管理您的管道時，](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md)點選或按一下您要建立管道變數的管道的省略符號按鈕，並從內容選單中選取&#x200B;**檢視/編輯變數**。
+1. 當[管理您的管道](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md)時，按一下您要為其建立管道變數的管道的省略符號按鈕，然後從內容選單中選取&#x200B;**檢視/編輯變數**。
 
    ![檢視/編輯管道變數](/help/implementing/cloud-manager/assets/pipeline-variables-view-edit.png)
 
-1. **變陣列態**&#x200B;視窗隨即開啟。 在表格的第一列輸入變數詳細資料，然後點選或按一下&#x200B;**新增**。
+1. **變陣列態**&#x200B;視窗隨即開啟。 在表格的第一列輸入變數詳細資料，然後按一下&#x200B;**新增**。
 
    * **設定名稱**&#x200B;是變數的唯一識別碼，它必須標頭[管線變數命名慣例](#naming-conventions)。
    * **值**&#x200B;是變數儲存的值。
@@ -65,21 +65,21 @@ ht-degree: 20%
 
 ### 編輯管道變數 {#edit-ui}
 
-1. 當[管理您的管道時，](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md)點選或按一下您要建立管道變數的管道的省略符號按鈕，並從內容選單中選取&#x200B;**檢視/編輯變數**。
+1. 當[管理您的管道](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md)時，按一下您要為其建立管道變數的管道的省略符號按鈕，然後從內容選單中選取&#x200B;**檢視/編輯變數**。
 
    ![檢視/編輯管道變數](/help/implementing/cloud-manager/assets/pipeline-variables-view-edit.png)
 
-1. **變陣列態**&#x200B;視窗隨即開啟。 點選或按一下您要編輯之變數的省略符號按鈕，然後選取&#x200B;**編輯**。
+1. **變陣列態**&#x200B;視窗隨即開啟。 按一下您要編輯之變數的省略符號按鈕，然後選取&#x200B;**編輯**。
 
    ![編輯變數](/help/implementing/cloud-manager/assets/pipeline-variables-edit.png)
 
-1. 視需要更新變數的值，然後點選或按一下「套用」**** （列末端的核取記號）以套用變更，或點選「捨棄」**** （返回箭頭）以還原變更。
+1. 視需要更新變數的值，然後按一下&#x200B;**套用** （列末端的核取記號）以套用變更，或按一下&#x200B;**捨棄** （返回箭頭）以還原變更。
 
    * 只能編輯變數的值。
 
    ![編輯變數](/help/implementing/cloud-manager/assets/pipeline-variables-edit-save.png)
 
-1. 點選或按一下「**儲存**」，將您對變數所做的變更儲存至管道。
+1. 按一下「**儲存**」。
 
 如果您想要刪除變數，請在&#x200B;**變數設定**&#x200B;視窗的管道變數省略符號選單中選取&#x200B;**刪除**，而非&#x200B;**編輯**。
 

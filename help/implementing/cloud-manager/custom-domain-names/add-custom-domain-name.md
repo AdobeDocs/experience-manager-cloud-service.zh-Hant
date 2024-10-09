@@ -5,7 +5,7 @@ exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: ff8c7fb21b4d8bcf395d28c194a7351281eef45b
+source-git-commit: 9cde6e63ec452161dbeb1e1bfb10c75f89e2692c
 workflow-type: tm+mt
 source-wordcount: '1000'
 ht-degree: 17%
@@ -147,7 +147,7 @@ Apex 網域是不包含子網域的自訂網域，例如`example.com`。Apex網�
 
    上傳有效的EV/OV憑證後，**網域設定**&#x200B;表格中的網域狀態會標籤為&#x200B;**已驗證**。
 
-   ![顯示驗證狀態的網域設定資料表。](/help/implementing/cloud-manager/assets/domain-settings-verified.png)
+   ![顯示驗證狀態的網域設定資料表](/help/implementing/cloud-manager/assets/domain-settings-verified.png)。
 
 <!--
 ![Customer managed certificate steps](/help/implementing/cloud-manager/assets/cdn/cdn-create-customer-cert.png)

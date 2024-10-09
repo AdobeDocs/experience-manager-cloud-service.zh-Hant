@@ -5,9 +5,9 @@ exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 493c5729c3107f151685a243006b17196b74c1bd
+source-git-commit: 9cde6e63ec452161dbeb1e1bfb10c75f89e2692c
 workflow-type: tm+mt
-source-wordcount: '541'
+source-wordcount: '535'
 ht-degree: 6%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 6%
 ## 先決條件 {#prerequisites}
 
 * 使用者必須是&#x200B;**企業所有者**&#x200B;或&#x200B;**部署管理員**&#x200B;角色的成員才能新增憑證。
-* 如果您正在安裝自己的憑證，請務必在[管理SSL憑證簡介](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md#requirements)中檢閱&#x200B;**憑證需求**。
+* 如果您正在安裝自己的憑證，請參閱[管理SSL憑證簡介](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md#requirements)中的&#x200B;**憑證需求**。
 
 ## 新增SSL憑證 {#add-certificate}
 
@@ -55,4 +55,4 @@ ht-degree: 6%
 
 >[!TIP]
 >
->如果您在新增或管理憑證時遇到問題，請參閱檔案[疑難排解SSL憑證錯誤。](/help/implementing/cloud-manager/managing-ssl-certifications/troubleshoot-ssl-cert.md)
+>如果您在新增或管理憑證時遇到問題，請參閱[疑難排解SSL憑證錯誤](/help/implementing/cloud-manager/managing-ssl-certifications/troubleshoot-ssl-cert.md)。
