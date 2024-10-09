@@ -5,7 +5,7 @@ exl-id: 214c8c2f-d09a-4ce9-b474-9505b76084f7
 solution: Experience Manager Sites
 feature: Authoring, Launches
 role: User
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: cc007536d14bd0464879b30d6303c24ccf15d2d0
 workflow-type: tm+mt
 source-wordcount: '288'
 ht-degree: 1%
@@ -42,6 +42,7 @@ ht-degree: 1%
 
 * **網站**主控台：
 如果您選取特定來源頁面並開啟**參考資料**，您可以接著選取&#x200B;**啟動**，然後選取&#x200B;**管理內容**：
+
   ![啟動主控台 — 管理內容](/help/sites-cloud/authoring/assets/launches-navigate-sites-console.png)
 
   >[!NOTE]

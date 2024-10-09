@@ -5,10 +5,10 @@ exl-id: 3e410120-d08f-4d05-932f-07bc4440af2b
 solution: Experience Manager Sites
 feature: Authoring, Launches
 role: User
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: cc007536d14bd0464879b30d6303c24ccf15d2d0
 workflow-type: tm+mt
-source-wordcount: '898'
-ht-degree: 94%
+source-wordcount: '897'
+ht-degree: 92%
 
 ---
 
@@ -105,9 +105,13 @@ ht-degree: 94%
 
 ## 啟動主控台 {#the-launches-console}
 
-「啟動」主控台提供啟動的總覽，並可讓您對列出的啟動執行動作。 主控台可透過以下方式存取：
+「啟動」主控台提供啟動的總覽，並可讓您對列出的啟動執行動作。
 
-* **工具**&#x200B;主控台：**工具**、**Sites**、**啟動**。
+![啟動主控台 — 管理內容](/help/sites-cloud/authoring/assets/launches-navigate-launches-console.png)
+
+主控台可透過以下方式存取：
+
+* **工具**&#x200B;主控台： **工具**，**一般**，**啟動**。
 
 * 在 Sites 主控台瀏覽來源內容時，**啟動主控台**&#x200B;位於&#x200B;**參考**&#x200B;邊欄&#x200B;**啟動**&#x200B;區段的底部。
 
@@ -116,6 +120,3 @@ ht-degree: 94%
 * 在 Sites 主控台導覽啟動內容時，**啟動** 按鈕位於右上角：
 
   ![Sites 主控台中的啟動選項](/help/sites-cloud/authoring/assets/launches-console-navigate-launch-content.png)
-
-* 或直接，例如使用：
-  `https://<host>:<port>/libs/launches/content/launches.html`

@@ -5,7 +5,7 @@ exl-id: 5f5ed17c-43db-4ef6-ab79-c491326fa01c
 solution: Experience Manager Sites
 feature: Authoring, Launches
 role: User
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: b5ded40d1cb8b8fab28583467b68c4586eecf1a0
 workflow-type: tm+mt
 source-wordcount: '812'
 ht-degree: 1%
@@ -74,7 +74,9 @@ ht-degree: 1%
      >[!NOTE]
      >
      >若您有巢狀啟動，請參閱提升巢狀啟動[，這會涵蓋單一啟動](#promoting-a-nested-launch)。
+
 1. 選取&#x200B;**下一步**&#x200B;以繼續。
+
 1. 您可以檢閱要提升的頁面，頁面視您選擇的頁面範圍而定：
 
    ![檢閱促銷活動](/help/sites-cloud/authoring/assets/launches-promote-review.png)
