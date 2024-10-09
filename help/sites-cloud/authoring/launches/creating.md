@@ -5,9 +5,9 @@ exl-id: 216ccb7a-1409-4f55-8be2-2b088f91a430
 solution: Experience Manager Sites
 feature: Authoring, Launches
 role: User
-source-git-commit: b5ded40d1cb8b8fab28583467b68c4586eecf1a0
+source-git-commit: c30ec18858c977f0701fef9bb2a7d3320e67dcba
 workflow-type: tm+mt
-source-wordcount: '1077'
+source-wordcount: '1100'
 ht-degree: 12%
 
 ---
@@ -159,7 +159,8 @@ ht-degree: 12%
 
 * 點選/按一下縮圖，以選取啟動。
 * 工具列隨即顯示 — 選取「原地複製」。
-   * 復製作業將顯示在主控台中。
+   * 複製將會建立並顯示在主控台中。
+   * **啟動項標題**&#x200B;會指出其為翻制。 您可以編輯[啟動設定](/help/sites-cloud/authoring/launches/editing.md#editing-a-launch-configuration) （**屬性**）來更新標題。
 
 ## 刪除啟動項 {#deleting-a-launch}
 
