@@ -9,9 +9,9 @@ role: User, Developer
 level: Intermediate
 topic: Migration
 exl-id: 090e77ff-62ec-40cb-8263-58720f3b7558
-source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+source-git-commit: 1c6ab84a7fadb543cc8e28424efe634627923e70
 workflow-type: tm+mt
-source-wordcount: '1433'
+source-wordcount: '1380'
 ht-degree: 1%
 
 ---
@@ -64,8 +64,7 @@ ht-degree: 1%
 
   ![試執行結果](assets/enable-add-on.png)
 
-* 在Cloud Service環境中，Migration Utility可與使用者對應工具和內容轉移工具搭配使用。 移轉公用程式會使[!DNL AEM Forms]資產與Cloud Service相容，而內容轉移工具會將內容從您的[!DNL AEM Forms]環境移轉到[!DNL AEM]as a Cloud Service環境。 在使用移轉公用程式之前，請先瞭解[移至AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/home.html)的程式。 此程式有兩個工具：
-   * [使用者對應工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#cloud-migration)：使用者對應工具可協助您將使用者與對應的Adobe IMS使用者帳戶對應。
+* 在Cloud Service環境中，Migration Utility可與「內容轉移工具」搭配使用。 移轉公用程式會使[!DNL AEM Forms]資產與Cloud Service相容，而內容轉移工具會將內容從您的[!DNL AEM Forms]環境移轉到[!DNL AEM]as a Cloud Service環境。 在使用移轉公用程式之前，請先瞭解[移至AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/home.html)的程式。 程式會使用以下工具：
    * [內容轉移工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?#cloud-migration)：內容轉移工具可協助您準備內容，並將內容從現有環境轉移到Cloud Service環境。 它可協助使用者輕鬆從AEM Forms升級至雲端環境。
 * 在[!DNL AEM Forms]as a Cloud Service和您的本機[!DNL AEM Forms]環境中具有系統管理員許可權的帳戶。
 * 從[軟體發佈入口網站](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)下載並安裝Best Practice Analyzer、內容轉移工具和[!DNL AEM Forms]移轉公用程式。
@@ -86,11 +85,9 @@ ht-degree: 1%
 
    >[!NOTE]
    >
-   > 從6.5移轉至雲端服務時，建議使用複製的環境來執行「內容轉移工具」和「移轉公用程式」。 內容轉移工具和移轉公用程式會對內容和資產進行一些變更。 因此，請勿在生產環境中執行內容轉移工具和移轉公用程式。
+   > 從6.5移轉至雲端服務時，建議使用複製的環境來執行「內容轉移工具」和「移轉公用程式」。 內容轉移工具和移轉公用程式會對內容和資產進行一些變更。 因此，請勿在生產環境中執行內容轉移工具或移轉公用程式。
 
 1. 以管理許可權登入您的複製環境。
-
-1. 執行[使用者對應工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#cloud-migration)，將您的使用者與對應的Adobe IMS使用者帳戶對應。 您需要Adobe IMS使用者帳戶才能登入[!DNL AEM Forms]as a Cloud Service執行個體。
 
 1. 從複製環境上的[軟體發佈入口網站](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)下載並安裝[內容轉移工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?#cloud-migration)和[!DNL AEM Forms]as a Cloud Service移轉公用程式。 您可以使用AEM Package Manager來安裝工具與公用程式。
 
