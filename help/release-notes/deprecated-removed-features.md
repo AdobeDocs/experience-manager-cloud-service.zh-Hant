@@ -6,8 +6,8 @@ feature: Release Information
 role: Admin
 source-git-commit: 04ec933125da9ee3c84ffd948b144581d31763d6
 workflow-type: tm+mt
-source-wordcount: '2485'
-ht-degree: 98%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -285,26 +285,26 @@ Adobe 會持續評估產品功能，逐漸利用更現代化的替代方案重�
   <tr>
     <td>com.day.cq.xss<br>com.day.cq.xss.taglib<br>com.day.cq.xss.impl</td>
     <td>請改用 org.apache.sling.xss。</td>
-    <td>12/12/2023</td>
+    <td>2023 年 12 月 12 日</td>
     <td>2024 年 6 月 30 日</td>
   </tr>
   <tr>
     <td>com.adobe.granite.xss<br>com.adobe.granite.xss.impl</td>
     <td>請改用 org.apache.sling.xss。</td>
-    <td>12/12/2023</td>
+    <td>2023 年 12 月 12 日</td>
     <td>2024 年 6 月 30 日</td>
   </tr>  
   <tr>
     <td>com.drew.*</td>
     <td>若要從影像和影片中擷取中繼資料，應透過 Cloud Service 中的 Asset Compute 或透過 Apache POI 或 Apache Tika 完成。</td>
-    <td>9/17/2024</td>
-    <td>12/17/2024</td>
+    <td>2024 年 9 月 17 日</td>
+    <td>2024 年 12 月 17 日</td>
   </tr>
   <tr>
     <td>org.apache.jackrabbit.oak.plugins.blob。*</td>
     <td></td>
-    <td>9/23/2024</td>
-    <td>12/23/2024</td>
+    <td>2024 年 9 月 23 日</td>
+    <td>2024 年 12 月 23 日</td>
   </tr>       
 </tbody>
 </table>
