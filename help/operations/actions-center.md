@@ -4,10 +4,10 @@ description: 善用行動中心，方便處理事件和其他重要資訊
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
 feature: Operations
 role: Admin
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
+source-git-commit: 41e06c75229d78827e35164eca37a96d6feeb730
 workflow-type: tm+mt
-source-wordcount: '1045'
-ht-degree: 54%
+source-wordcount: '1098'
+ht-degree: 51%
 
 ---
 
@@ -77,6 +77,7 @@ AEM as a Cloud Service 有多種類型的通知，但只有一部分出現在行
 | 無效的GraphQL查詢 | 事件 | 參考[持續的GraphQL查詢疑難排解檔案](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries-troubleshoot.html)，修正無效的GraphQL查詢 |
 | 來源處的流量尖峰 | 事件 | 透過設定在低於來源預設流量尖峰警報的臨界值處觸發的速率限制流量篩選規則，Protect您的來源。  請參閱參考教學課程之流量篩選規則檔案中的[使用流量規則封鎖DoS和DDoS攻擊](/help/security/traffic-filter-rules-including-waf.md#blocking-dos-and-ddos-attacks-using-traffic-filter-rules)一節。 |
 | 已觸發CDN流量篩選器規則 | 事件 | 如果相符的流量篩選規則反映攻擊，而您的網站沒有封鎖該流量，請在封鎖模式中設定流量篩選規則來保護您的網站。 請參閱流量篩選規則檔案中的[使用流量篩選規則(包括WAF規則)保護網站](/help/security/traffic-filter-rules-including-waf.md#tutorial-protecting-websites)一節，其中會參考教學課程。 |
+| Splunk記錄轉送錯誤 | 事件 | 檢查您的Splunk端點是否正常運作，以及是否可從您的AEM Cloud Service環境連線。 如需記錄轉送的詳細資訊，請瀏覽[Splunk記錄轉送檔案](/help/implementing/developing/introduction/logging.md#splunk-logs)。 如果您需要協助疑難排解，或需要變更記錄設定，請Adobe提出支援票證。 |
 | 頁面包含大量節點 | 主動 | 減少頁面中的節點總數。 請參閱[頁面複雜性檔案](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/pcx) | |
 | 大量執行中的工作流程例項 | 主動 | 終止不再需要的執行中工作流程。 瞭解如何[設定清除工作](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/operations/maintenance) |               |
 | 即將到期的 S2S 認證 | 主動 | 在[為伺服器端 API 產生權杖文件](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md#refresh-credentials)中，了解如何重新整理認證 | 高連線計數 | 主動 | 瞭解在[連線集區以及進階網路檔案](/help/security/configuring-advanced-networking.md#connection-pooling-advanced-networking)中的連線集區 |
