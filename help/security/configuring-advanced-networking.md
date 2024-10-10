@@ -4,9 +4,9 @@ description: 了解如何為 AEM as a Cloud Service 設定進階網路功能，�
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
 feature: Security
 role: Admin
-source-git-commit: fd6fb14bf3acdd30efb984e1666ed91a2327d810
+source-git-commit: 09cc9c65aff42c3a169791d32dfdbdbfb044aecb
 workflow-type: tm+mt
-source-wordcount: '5675'
+source-wordcount: '5676'
 ht-degree: 99%
 
 ---
@@ -299,7 +299,7 @@ DriverManager.getConnection("jdbc:mysql://" + System.getenv("AEM_PROXY_HOST") + 
 <tbody>
   <tr>
     <td><b>Http 或 https 通訊協定</b></td>
-    <td>到 Azure 或 Adobe 服務的流量</td>
+    <td>到Azure (*.windows.net)或Adobe服務的流量</td>
     <td>任何</td>
     <td>流經共用叢集 IP (不是專用的 IP)</td>
     <td>adobe.io<br>api.windows.net</td>
