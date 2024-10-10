@@ -5,10 +5,10 @@ feature: Headless, GraphQL API
 exl-id: e2e3d2dc-b839-4811-b5d1-38ed8ec2cc87
 solution: Experience Manager
 role: Admin, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
-workflow-type: ht
-source-wordcount: '275'
-ht-degree: 100%
+source-git-commit: 3096436f8057833419249d51cb6c15e6c28e9e13
+workflow-type: tm+mt
+source-wordcount: '322'
+ht-degree: 55%
 
 ---
 
@@ -28,7 +28,13 @@ Adobe Experience Manager 的查閱者篩選器允許第三方主機存取。
 
 檔案名稱必須是 `org.apache.sling.security.impl.ReferrerFilter.cfg.json`。
 
+## 設定範例 {#example-configuration}
+
 例如，要授予使用查閱者 `my.domain` 之要求的存取權，您可以：
+
+>[!CAUTION]
+>
+>這是可能會覆寫標準設定的基本範例。 您必須確保產品更新一律會套用至任何自訂。
 
 ```xml
 {
@@ -52,16 +58,28 @@ Adobe Experience Manager 的查閱者篩選器允許第三方主機存取。
 }
 ```
 
->[!CAUTION]
->
->客戶有責任：
->
->* 僅將存取權授予受信任網域
->* 確保敏感資訊沒有公開
->* 不要使用萬用字元 [*] 語法；這將停用對 GraphQL 端點的已驗證存取，並將其公開給整個世界。
+## 資料安全性 {#data-security}
 
 >[!CAUTION]
 >
->所有 GraphQL [結構描述](#schema-generation) (衍生自&#x200B;**已啟用**&#x200B;的內容片段模型) 都可透過 GraphQL 端點讀取。
->
->這表示您必須確保沒有敏感資料，因為它可能會以這種方式洩露；例如，這包括可以在模型定義中做為欄位名稱出現的資訊。
+>您有責任完全處理下列各點。
+
+為確保您的資料安全無虞，您必須確保：
+
+* 存取許可權僅&#x200B;**僅**&#x200B;授與信任的網域
+
+* **未使用**&#x200B;中的萬用字元[`*`]語法；這既會停用對GraphQL端點的已驗證存取權，也會將其公開給整個世界
+
+* 敏感資訊為&#x200B;**永不公開**；不直接也不間接：
+
+   * 例如，所有[GraphQL結構描述](/help/headless/graphql-api/content-fragments.md#schema-generation)都是：
+
+      * 衍生自&#x200B;**已啟用**&#x200B;的內容片段模型
+
+     **和**
+
+      * 可透過GraphQL端點讀取
+
+     這表示在模型定義中以欄位名稱顯示的資訊可以變為可用。
+
+您必須確保任何方法都無法取得敏感資料，因此必須仔細考慮這些詳細資訊。
