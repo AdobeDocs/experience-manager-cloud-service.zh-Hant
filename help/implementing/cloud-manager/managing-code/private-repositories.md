@@ -4,16 +4,16 @@ description: 了解如何設定 Cloud Manager 與您自己的私人 GitHub 存�
 exl-id: 5232bbf5-17a5-4567-add7-cffde531abda
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: a5e9b29a8108d5c012d402fda8ff7544e02ca911
+source-git-commit: 2fa4abca9823bbc62900023d637429f3fbfd894d
 workflow-type: tm+mt
-source-wordcount: '928'
-ht-degree: 33%
+source-wordcount: '930'
+ht-degree: 42%
 
 ---
 
 # 在Cloud Manager中新增私人GitHub存放庫 {#private-repositories}
 
-透過設定Cloud Manager以與您的私人GitHub存放庫整合，您可以直接在GitHub中使用Cloud Manager驗證您的程式碼。 此設定免除了定期將程式碼與Adobe存放庫同步的需求。
+透過設定Cloud Manager以與您的私人GitHub存放庫整合，您可以直接在GitHub中使用Cloud Manager驗證您的程式碼。 此設定免除了定期將計畫碼與Adobe存放庫同步的需求。
 
 <!-- CONSIDER ADDING MORE DETAIL... THE WHY. Some key points about this capability include the following:
 
@@ -44,23 +44,23 @@ In essence, a "Build your own GitHub" in Adobe Cloud Manager empowers teams to m
 
 1. 在&#x200B;**[我的程式](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;主控台上，選取您要連結私人Git存放庫的程式。
 
-1. 在側邊功能表的&#x200B;**服務**&#x200B;下方，選取![資料夾圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) **存放庫**。
+1. 在側邊選單中，在&#x200B;**服務**&#x200B;下，選取![資料夾圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) **存放庫**。
 
-   ![存放庫頁面](/help/implementing/cloud-manager/managing-code/assets/repositories-tab.png)
+   ![儲存庫頁面](/help/implementing/cloud-manager/managing-code/assets/repositories-tab.png)
 
-1. 在&#x200B;**存放庫**&#x200B;頁面的右上角附近，按一下&#x200B;**新增存放庫**。
+1. 在右上角附近的&#x200B;**存放庫**&#x200B;頁面，按一下&#x200B;**新增存放庫**。
 
 1. 在「**新增存放庫**」對話框內，選取「**私人存放庫**」作為存放庫類型。
 
    ![新增自己的存放庫](/help/implementing/cloud-manager/assets/repos/add-own-github.png)
 
-1. 在每個欄位中，提供關於存放庫的下列詳細資訊：
+1. 在每個對應欄位中，提供關於存放庫的下列詳細資料：
 
    | 欄位 | 說明 |
    | --- | --- |
-   | 存放庫名稱 | 您新存放庫的表現式名稱。 |
-   | 存放庫 URL | 私人存放庫的URL，必須以`.git`結尾。<br>例如，*`https://github.com/org-name/repo-name.git`* （URL路徑僅供插圖之用）。 |
-   | 說明 (選填) | 存放庫的詳細說明。 |
+   | 存放庫名稱 | 您的新存放庫的生動名稱。 |
+   | 存放庫 URL | 私人存放庫的URL，必須以`.git`結尾。<br>例如，*`https://github.com/org-name/repo-name.git`*(URL 路徑僅用於插圖目的)。 |
+   | 說明 (選填) | 存放庫的詳細描述。 |
 
 1. 選取&#x200B;**儲存**。
 現在您可以[驗證私人存放庫的所有權](#validate-ownership)。
@@ -112,7 +112,7 @@ Cloud Manager 現在知道您的 GitHub 存放庫，但仍然需要存取它。�
 
 在Cloud Manager中驗證GitHub存放庫後，整合即完成。 您可以搭配Cloud Manager使用存放庫。
 
-**搭配Cloud Manager使用私人存放庫：**
+**若要透過 Cloud Manager 使用私人存放庫：**
 
 1. 當您建立提取請求時，會自動啟動 GitHub 檢查。
 
@@ -138,7 +138,7 @@ Cloud Manager 現在知道您的 GitHub 存放庫，但仍然需要存取它。�
 
 ## 將私人存放庫與管道建立關聯 {#pipelines}
 
-已驗證的私人存放庫可以與[完整棧疊和前端管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)相關聯。
+經過驗證的私人存放庫可以與 [全堆疊和前端管道相關聯](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)。
 
 
 
