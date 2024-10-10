@@ -4,7 +4,7 @@ description: 瞭解使用「內容轉移工具」的准則與最佳實務。
 exl-id: d1975c34-85d4-42e0-bb1a-968bdb3bf85d
 feature: Migration
 role: Admin
-source-git-commit: e5fd1b351047213adbb83ef1d1722352958ce823
+source-git-commit: 208a4de5aab5326490908fade8f12f17b8f3c0d7
 workflow-type: tm+mt
 source-wordcount: '1368'
 ht-degree: 12%
@@ -50,7 +50,7 @@ ht-degree: 12%
 * *資料存放區大小*：「內容轉移工具」會使用 64GB，即使實際資料存放區較大亦然。
 * *節點存放區大小*：區段存放區目錄大小或 MongoDB 資料庫大小。因此，若區段存放區的大小為 20 GB，則需要的可用磁碟空間為 94 GB。
 
-* 必須在整個內容轉移活動中維護移轉集，以支援內容追加。 在內容轉移活動期間，Cloud Acceleration Manager中一次最多可以建立和維護每個專案20個移轉集。 若需要20個以上的移轉集，請在Cloud Acceleration Manager中建立第二個專案。 但是，這需要額外的專案管理和產品外控管，以避免多個使用者覆寫目標上的內容。
+* 必須在整個內容轉移活動中維護移轉集，以支援內容追加。 在內容轉移活動期間，Cloud Acceleration Manager中一次最多可以建立和維護每個專案10個移轉集。 如果需要超過10個移轉集，請在Cloud Acceleration Manager中建立第二個專案。 但是，這需要額外的專案管理和產品外控管，以避免多個使用者覆寫目標上的內容。
 
 * 請避免變更CTT工具的安裝目錄。 依預設，安裝會在crx-quickstart/cloud-migration路徑中進行。 此特定位置會由其他程式庫在內部使用。 修改此路徑可能會導致擷取問題。
 
