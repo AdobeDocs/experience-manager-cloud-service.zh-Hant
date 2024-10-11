@@ -4,10 +4,10 @@ description: 瞭解如何使用Cloud Acceleration Manager將移轉集中的內�
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 feature: Migration
 role: Admin
-source-git-commit: 4d34dc8464a51bcc11ee435de4d19183b2f3e3b2
+source-git-commit: 766573bfeb5190d212e87b18331e41820ddd3e32
 workflow-type: tm+mt
-source-wordcount: '2982'
-ht-degree: 12%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -228,6 +228,20 @@ AEM中的每個節點都必須有唯一的uuid。 此錯誤指出正在擷取的
 >[!NOTE]
 >
 >[Best Practices Analyzer](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md) 2.1.50+版會報告包含超過大小上限Unicode字元的大型節點。 請確定您執行的是最新版本。 2.1.50之前的BPA版本將無法識別並報告這些大型節點，而且您必須使用上述的先決條件Oak工具個別探索這些節點。
+
+### 由於非預期的間歇性錯誤而導致擷取失敗 {#ingestion-failure-due-to-unexpected-intermittent-errors}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_cam_ingestion_troubleshooting_intermittent_errors"
+>title="未預期的間歇性錯誤"
+>abstract="有時可能會發生非預期的間歇性下游服務錯誤，不幸的是，唯一的補救方法就是重試擷取。"
+
+有時，非預期的間歇性問題可能會導致擷取失敗，很遺憾，唯一的補救方法就是重試擷取。 調查擷取記錄以找出失敗的原因，並檢視它是否符合下面列出的任何錯誤，其中應嘗試重試。
+
+## MongoDB問題 {#mongo-db-issues}
+
+* `Atlas prescale timeout error` — 擷取階段會嘗試預先縮放目標雲端資料庫，使其大小與正在擷取的移轉集內容大小相符。 少數情況下，此作業未在預期時間範圍內完成。
+* `Exhausted mongo restore retries` — 嘗試將擷取的移轉集內容還原到雲端資料庫的本機傾印已經用盡。 這表示MongoDB的整體健康情況/網路問題，通常會在幾分鐘後自行解決。
 
 ### 擷取已撤銷 {#ingestion-rescinded}
 
