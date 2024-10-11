@@ -5,9 +5,9 @@ exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 7a370ee0ab77046d128ae260af2575d50e655254
+source-git-commit: 2573eb5f8a8ff21a8e30b94287b554885cd1cd89
 workflow-type: tm+mt
-source-wordcount: '1314'
+source-wordcount: '1321'
 ht-degree: 3%
 
 ---
@@ -22,13 +22,13 @@ ht-degree: 3%
 
 探索[AEM as a Cloud Service部署程式](/help/implementing/cloud-manager/deploy-code.md)中可用的品質閘道以及各種型別的內建功能測試。 瞭解如何在全方位的測試策略架構中，貢獻並最佳化其使用。
 
-## 概觀
+## 關於功能測試
 
 下列圖表提供整體測試策略和[AEM as a Cloud Service部署程式](/help/implementing/cloud-manager/deploy-code.md)內容中可用管道的整體概觀。
 
 ![AEM Cloud Service部署品質閘道](assets/functional-testing/quality-gates-compact.svg)
 
-## 用途
+## 功能測試的用途
 
 AEM Cloud Service部署管道的用途是在開發和AEM產品發行生命週期的各個階段促進穩定且安全的部署。 這些管道在不同層級合併多個品質閘道，以確保部署AEM應用程式變更和AEM產品更新的完整性和安全性。
 
@@ -38,7 +38,7 @@ Adobe提供數個內建品質閘道，而其他閘道則需要您的介入以進
 
 請務必注意，這些品質閘道並非旨在作為您整個測試策略的全面測試架構。 AEM產品在進入AEM雲端服務部署程式前會接受大量測試。 同樣地，您的應用程式在到達部署階段之前應該已經是高品質的。 此方法可確保品質門檻專注於維護部署流程的主要目標，而不是取代完整的測試制度。
 
-## 品質閘道
+## 測試中的品質閘道
 
 下圖提供可用的品質閘道的詳細檢視，及其在整體測試策略和[AEM as a Cloud Service部署程式](/help/implementing/cloud-manager/deploy-code.md)中的使用情形。
 
