@@ -5,10 +5,10 @@ exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 9cde6e63ec452161dbeb1e1bfb10c75f89e2692c
+source-git-commit: fa99656e0dd02bb97965e8629d5fa657fbae9424
 workflow-type: tm+mt
-source-wordcount: '1000'
-ht-degree: 17%
+source-wordcount: '998'
+ht-degree: 15%
 
 ---
 
@@ -21,13 +21,13 @@ ht-degree: 17%
 
 在Cloud Manager中新增自訂網域名稱之前，請先滿足這些要求。
 
-* 在新增自訂網域名稱之前，您必須先為要新增的網域新增網域SSL憑證，如檔案[新增SSL憑證](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)中所述。
+* 您必須在新增自訂網域名稱&#x200B;*之前*&#x200B;新增網域SSL憑證，如檔案[新增SSL憑證](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)中所述。
 * 您必須擁有&#x200B;**業務負責人**&#x200B;或&#x200B;**部署管理員**&#x200B;角色，才能在Cloud Manager中新增自訂網域名稱。
 * 使用Fastly或其他CDN （內容傳遞網路）。
 
 >[!IMPORTANT]
 >
->即使您使用非AdobeCDN，仍需要將網域新增至Cloud Manager。
+>如果您使用Adobe管理的CDN，仍需將網域新增至Cloud Manager。
 
 ## 新增自訂網域名稱的位置 {#where-to-add-cdn}
 
@@ -46,14 +46,14 @@ ht-degree: 17%
 
 1. 在「**[我的程式](/help/implementing/cloud-manager/navigation.md#my-programs)**」控制台中，選取程式。
 
-1. 在側邊功能表的&#x200B;**服務**&#x200B;底下，選取![設定圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg) **網域設定**。
+1. 在側邊功能表的&#x200B;**服務**&#x200B;底下，按一下![設定圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg) **網域設定**。
 
    ![域設定窗口](/help/implementing/cloud-manager/assets/cdn/cdn-create.png)
 
 1. 在&#x200B;**網域設定**&#x200B;頁面的右上角附近，按一下&#x200B;**新增網域**。
 
 1. 在&#x200B;**新增網域**&#x200B;對話方塊的&#x200B;**網域名稱**欄位中，輸入您正在使用的自訂網域名稱。
-不包括`http://`,`https://`, 或輸入您的域時的空格。
+輸入網域名稱時，請勿包含`http://`、`https://`或空格。
 
 1. 按一下&#x200B;**建立**。
 
@@ -61,23 +61,19 @@ ht-degree: 17%
 
    | 憑證型別選項 | 說明 |
    | --- | --- |
-   | Adobe 管理的憑證 | 如果您要使用DV （網域驗證）憑證，請選取此憑證型別。 此選項適用於大多數的情況，可提供基本網域驗證。 Adobe會自動管理和更新憑證。 |
-   | 客戶管理的憑證 | 如果您要使用EV/OV憑證，請選取此憑證型別。 此選項提供EV （延伸驗證）或OV （組織驗證）的增強式安全性。 若需要更嚴格的驗證、更高的信任層級或自訂的憑證控制，請使用。 |
+   | Adobe受管理(DV) SSL憑證 | 如果您要使用DV （網域驗證）憑證，請選取此憑證型別。 此選項適用於大多數的情況，可提供基本網域驗證。 Adobe會自動管理和更新憑證。 |
+   | 客戶管理的(OV/EV) SSL憑證 | 如果您想要使用EV/OV SSL憑證來保護網域，請選取此憑證型別。 此選項提供OV （組織驗證）或EV （延伸驗證）的增強式安全性。 若需要更嚴格的驗證、更高的信任層級或自訂的憑證控制，請使用。 |
 
 1. 在&#x200B;**驗證網域**&#x200B;對話方塊中，根據您選取的憑證型別，執行下列其中一項作業：
 
    | 如果您選取憑證型別 | 說明 |
    | --- | ---  |
-   | Adobe 管理的憑證 | 請先完成[Adobe受管理憑證步驟](#adobe-managed-cert-steps)，再繼續步驟9。 |
-   | 客戶管理的憑證 | 請先完成[客戶管理的憑證步驟](#customer-managed-cert-steps)，再繼續步驟9。 |
-
-1. 按一下&#x200B;**驗證**。
-
-1. 您現在已準備好[新增SSL憑證](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)。
+   | Adobe 管理的憑證 | a.完成下列[Adobe受管理憑證步驟](#adobe-managed-cert-steps)。 當您完成&#x200B;**驗證網域**&#x200B;對話方塊中的步驟時，請按一下&#x200B;**驗證**。<ul><li>由於 DNS 傳播延遲，DNS 驗證可能需要幾個小時才能完成。</li><li>Cloud Manager最終會驗證網域名稱所有權，並更新&#x200B;**網域設定**&#x200B;資料表中的狀態。 如需詳細資訊，請參閱[檢查自訂網域名稱狀態](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)。</li>![驗證網域狀態](/help/implementing/cloud-manager/assets/domain-settings-verified.png)</li></ul>b.您現在已準備好[新增Adobe受管理(DV) SSL憑證](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)。</li></ul> |
+   | 客戶管理的憑證 | a.按一下&#x200B;**確定**。<br>b。您現在已準備好[新增客戶管理的(OV/EV) SSL憑證](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)。<ul><li>新增憑證後，您的網域名稱在&#x200B;**網域設定**&#x200B;表格中標示為已驗證。 如需詳細資訊，請參閱[檢查自訂網域名稱狀態](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)。</li></ul><br>![驗證客戶管理的EV/OV憑證的網域](/help/implementing/cloud-manager/assets/verify-domain-customer-managed-step.png) |
 
    >[!NOTE]
    >
-   >如果您使用客戶管理的SSL憑證和客戶管理的CDN提供者，您可以略過新增SSL憑證，並在準備就緒後直接移至[新增CDN設定](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)。
+   >如果您使用客戶管理的(OV/EV) SSL憑證和客戶管理的CDN提供者，您可以略過新增SSL憑證，並在就緒後直接前往[新增CDN設定](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)。
 
 
 ### Adobe受管理憑證步驟 {#adobe-managed-cert-steps}
@@ -133,21 +129,6 @@ Apex 網域是不包含子網域的自訂網域，例如`example.com`。Apex網�
 >[!TIP]
 >
 >可在管理DNS伺服器上設定&#x200B;*CNAME*&#x200B;或&#x200B;*A記錄*，以節省您的時間。
-
-
-### 客戶管理的憑證步驟 {#customer-managed-cert-steps}
-
-如果您選取憑證型別&#x200B;*客戶管理的憑證*，請完成下列步驟。
-
-1. 在&#x200B;**驗證網域**&#x200B;對話方塊中，上傳涵蓋選取網域的新EV/OV憑證。
-
-   ![驗證客戶管理的EV/OV憑證的網域](/help/implementing/cloud-manager/assets/verify-domain-customer-managed-step.png)
-
-1. 按一下&#x200B;**「確定」**。
-
-   上傳有效的EV/OV憑證後，**網域設定**&#x200B;表格中的網域狀態會標籤為&#x200B;**已驗證**。
-
-   ![顯示驗證狀態的網域設定資料表](/help/implementing/cloud-manager/assets/domain-settings-verified.png)。
 
 <!--
 ![Customer managed certificate steps](/help/implementing/cloud-manager/assets/cdn/cdn-create-customer-cert.png)
@@ -206,11 +187,7 @@ dig TXT _aemverification.example.com -t txt
 
 -->
 
->[!NOTE]
->
->由於 DNS 傳播延遲，DNS 驗證可能需要幾個小時才能完成。
->
->Cloud Manager會驗證所有權並更新狀態，可在&#x200B;**網域設定**&#x200B;資料表中看到該狀態。 如需詳細資訊，請參閱[檢查自訂網域名稱狀態](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)。
+
 
 <!--
 ## Next Steps {#next-steps}

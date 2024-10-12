@@ -5,10 +5,10 @@ exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: ff8c7fb21b4d8bcf395d28c194a7351281eef45b
+source-git-commit: fa99656e0dd02bb97965e8629d5fa657fbae9424
 workflow-type: tm+mt
-source-wordcount: '832'
-ht-degree: 26%
+source-wordcount: '847'
+ht-degree: 24%
 
 ---
 
@@ -17,15 +17,11 @@ ht-degree: 26%
 
 瞭解如何確認Cloud Manager已成功確認您的自訂網域名稱。
 
-## 要求 {#requirements}
-
-在Cloud Manager中檢查您的網域名稱狀態之前，請先滿足這些要求。
-
-* 首先為您的自訂網域新增EV/OV憑證，如檔案[新增自訂網域名稱](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)中所述。
-
 ## 檢查自訂網域名稱的狀態 {#how-to}
 
-您可以在Cloud Manager中判斷自訂網域名稱的狀態。
+在Cloud Manager中檢查您的網域名稱狀態之前，請確定您已為自訂網域新增客戶管理的(OV/EV) SSL憑證，如[新增客戶管理的SSL憑證](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md##add-customer-managed-ssl-cert)中所述。
+
+**若要檢查自訂網域名稱的狀態：**
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織。
 
@@ -33,7 +29,7 @@ ht-degree: 26%
 
 1. 從&#x200B;**概觀**&#x200B;頁面，瀏覽到&#x200B;**環境**&#x200B;畫面。
 
-1. 按一下左側導覽面板中的&#x200B;**網域設定**。
+1. 按一下左側功能表中的&#x200B;**網域設定**。
 
 1. 按一下網域名稱的&#x200B;**狀態**&#x200B;圖示。
 
@@ -41,11 +37,14 @@ ht-degree: 26%
 
 >[!NOTE]
 >
->當您在&#x200B;**新增自訂網域**&#x200B;精靈的驗證步驟上選取&#x200B;**建立**&#x200B;時，Cloud Manager會在[將新的自訂網域名稱新增至Cloud Manager](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)時，自動觸發驗證。 對於後續驗證，您必須主動選擇狀態旁邊的再次驗證圖示。
+>如果您正在搭配網域使用&#x200B;*Adobe受管理(DV) SSL憑證*，當您在[新增自訂網域名稱](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)時，Cloud Manager會在您按一下[驗證網域]對話方塊中的&#x200B;**驗證**&#x200B;時自動觸發驗證。
+>
+>如果您打算使用&#x200B;**客戶管理的(OV/EV) SSL憑證**，請在&#x200B;*之後*&#x200B;驗證您的網域[新增OV/EV SSL憑證](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)。
+
 
 ## 驗證狀態 {#statuses}
 
-Cloud Manager會透過客戶管理的憑證驗證網域擁有權。 完成後，它會顯示下列其中一個狀態訊息：
+Cloud Manager透過客戶管理的(OV/EV) SSL憑證驗證網域所有權。 完成後，它會顯示下列其中一個狀態訊息：
 
 | 狀態 | 說明 |
 | --- | --- |
