@@ -1,66 +1,42 @@
 ---
-title: 限制Experience Manager中的資產傳遞
-description: 瞭解如何限制 [!DNL Experience Manager]中的資產傳遞。
+title: 使用具有OpenAPI功能的Dynamic Media限制資產傳送
+description: 瞭解如何使用OpenAPI功能限制資產傳送。
 role: User
 exl-id: 3fa0b75d-c8f5-4913-8be3-816b7fb73353
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 6e9fa8301fba9cab1a185bf2d81917e45acfe3a3
 workflow-type: tm+mt
-source-wordcount: '1148'
-ht-degree: 1%
+source-wordcount: '1181'
+ht-degree: 2%
 
 ---
 
-# 限制對[!DNL Experience Manager]中資產的存取 {#restrict-access-to-assets}
+# 使用具有OpenAPI功能的Dynamic Media限制資產傳送 {#restrict-access-to-assets}
 
-| [搜尋最佳實務](/help/assets/search-best-practices.md) | [中繼資料最佳實務](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [具有OpenAPI功能的Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets開發人員檔案](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| [搜尋最佳實務](/help/assets/search-best-practices.md) | [中繼資料最佳實務](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [具有 OpenAPI 功能的 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 開發人員文件](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
-Experience Manager中的中央資產控管可讓DAM管理員或品牌管理員管理對資產的存取。 他們可以透過在編寫端為已核准的資產設定角色來限制存取權，尤其是在AEM as a Cloud Service編寫執行個體上。
+Experience Manager的中央資產控管可讓DAM管理員或品牌管理員透過Dynamic Media的OpenAPI功能管理可用資產的存取權。 他們可以透過在AEM as a Cloud Service作者服務上的資產上設定某些中繼資料，將已核准的資產（精確到個別資產）的傳送限製為所選的[AdobeIdentity Management系統(IMS)使用者或群組](https://helpx.adobe.com/in/enterprise/using/users.html#user-mgt-strategy)。
 
-成功通過授權程式後，使用者[搜尋](search-assets-api.md)或使用[傳遞URL](deliver-assets-apis.md)即可取得受限制資產的存取權。
+一旦透過OpenAPI的Dynamic Media限制資產，只有授權存取所述資產的（Adobe IMS已上線）使用者才會被授予存取權。 若要存取資產，使用者必須運用Dynamic Media的[搜尋](search-assets-api.md)和[傳遞](deliver-assets-apis.md)功能搭配OpenAPI。
 
 ![已限制存取資產](/help/assets/assets/restricted-access.png)
-
-## 使用IMS權杖的受限制傳遞 {#restrict-delivery-ims-token}
 
 在Experience Manager Assets中，透過IMS的受限制傳送涉及兩個關鍵階段：
 
 * 製作
 * 傳遞
 
-### 製作 {#authoring}
+## 製作 {#authoring}
 
-您可以根據角色限制[!DNL Experience Manager]內資產的傳遞。 若要設定角色，請執行下列步驟：
+### 使用IMS持有人權杖的受限制傳遞 {#restrict-delivery-ims-token}
 
-1. 以DAM管理員身分前往[!DNL Experience Manager]。
-1. 選取您需要為其設定角色的資產。
-1. 導覽至&#x200B;**[!UICONTROL 屬性]** > **[!UICONTROL 進階]**，並確定[!UICONTROL 進階中繼資料]索引標籤中存在&#x200B;**[!UICONTROL 角色]**&#x200B;欄位。
+您可以根據IMS使用者和群組身分限制[!DNL Experience Manager]內資產的傳遞。
 
-   ![角色中繼資料](/help/assets/assets/roles_metadata.jpg)
-如果該欄位無法使用，請使用以下步驟來新增該欄位：
+>[!NOTE]
+>
+> 此功能目前不是自助式。 若要限制IMS [使用者](https://helpx.adobe.com/in/enterprise/using/manage-directory-users.html)和[群組](https://helpx.adobe.com/in/enterprise/using/user-groups.html)的資產傳遞，請洽詢您的企業支援團隊，以取得如何從[Adobe Admin Console](https://adminconsole.adobe.com/)入口網站擷取限制存取所需的資訊，以及如何在AEM as a Cloud Service作者服務中設定存取許可權的相關指引。
 
-   1. 導覽至&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL Assets]** > **[!UICONTROL 中繼資料結構描述]**。
-   1. 選取中繼資料結構描述，然後按一下&#x200B;**[!UICONTROL 編輯&#x200B;_(e)_]**。
-   1. 從表單右側的&#x200B;**[!UICONTROL 建置表單]**&#x200B;區段新增一個&#x200B;**[!UICONTROL 多值文字]**&#x200B;欄位到表單的中繼資料區段。
-   1. 按一下新新增的欄位，然後在&#x200B;**[!UICONTROL 設定]**&#x200B;面板中執行下列更新：
-      1. 將&#x200B;**[!UICONTROL 欄位標籤]**&#x200B;變更為&#x200B;_角色_。
-      1. 將&#x200B;**[!UICONTROL 對應更新至屬性]**&#x200B;至&#x200B;_。/jcr：content/metadata/dam：roles_。
-
-1. 取得要新增至資產角色中繼資料的IMS群組。 若要擷取IMS群組，請執行以下步驟：
-   1. 在`https://adminconsole.adobe.com/.`登入
-   1. 前往您個別的組織，並導覽至&#x200B;**[!UICONTROL 使用者群組]**。
-   1. 選取您需要新增的&#x200B;**[!UICONTROL 使用者群組]**，並從URL擷取&#x200B;**[!UICONTROL orgID]**&#x200B;和&#x200B;**[!UICONTROL userGroupID]**，或使用您的組織識別碼，例如`{orgID}@AdobeOrg:{usergroupID}`。
-
-1. 將群組識別碼新增至資產屬性的&#x200B;**[!UICONTROL 角色]**&#x200B;欄位。 <br>
-在**[!UICONTROL 角色]**&#x200B;欄位中定義的群組ID是唯一可存取資產的使用者。 除了IMS群組ID，您還可以在&#x200B;**[!UICONTROL 角色]**&#x200B;欄位中新增IMS使用者ID和IMS設定檔ID。 例如，`{orgId}@AdobeOrg:{profileId}`。
-
-   >[!NOTE]
-   >
-   >對於新的Assets檢視，您只能將存取權授予檔案夾層級，並僅限群組而非個別使用者存取。 深入瞭解[在Experience Manager Assets](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions)中管理許可權。
-
-   >[!VIDEO](https://video.tv.adobe.com/v/3427429)
-
-#### 使用開啟和關閉日期與時間限制資產傳遞 {#restrict-delivery-assets-date-time}
+### 使用開啟和關閉日期與時間限制資產傳遞 {#restrict-delivery-assets-date-time}
 
 DAM作者也可以定義資產屬性中可用的啟動開啟或關閉時間，以限制資產的傳送。
 
@@ -95,28 +71,36 @@ DAM作者也可以定義資產屬性中可用的啟動開啟或關閉時間，�
 
 
 
-### 受限制資產的傳遞 {#delivery-restricted-assets}
+## 受限制資產的傳遞 {#delivery-restricted-assets}
 
-受限制資產的傳送取決於成功存取資產的授權。 如果請求是從AEM作者執行個體或資產選擇器傳送，則授權會以IMS權杖為基礎，或者，如果您Publish或預覽執行個體上設定了自訂身分識別服務提供者，授權會以特殊Cookie為基礎。
+受限制資產的傳送取決於成功存取資產的授權。 授權是透過[IMS持有人權杖](https://developer.adobe.com/developer-console/docs/guides/authentication/UserAuthentication/IMS/) (從[AEM Asset Selector](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector)起始之要求的應用程式)或安全Cookie (如果您已在AEM Publish/預覽服務上設定自訂身分識別服務提供者，並已設定Cookie建立和包含在頁面上)進行。
 
-#### AEM作者或資產選擇器請求的傳送 {#delivery-aem-author-asset-selector}
+### AEM作者或資產選擇器請求的傳送 {#delivery-aem-author-asset-selector}
 
-若要在請求從AEM作者執行個體或資產選擇器傳送時啟用受限制資產的傳送，有效的IMS權杖至關重要。 請依照下列步驟執行：
+若要在請求是從AEM作者服務或AEM資產選擇器傳送時啟用受限制資產的傳遞，有效的IMS持有人權杖至關重要。\
+在AEM Cloud Service作者服務以及資產選擇器中，會自動產生IMS持有人權杖並在成功登入後用於請求。
 
-1. [產生存取權杖](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=en#generating-the-access-token)。
-   * 登入您的AEM as a Cloud Service環境的開發主控台。
+>[!NOTE]
+>
+>若要進一步瞭解如何在AEM Asset Selector型整合上啟用IMS驗證，請聯絡企業支援
 
-   * 瀏覽至&#x200B;**[!UICONTROL 環境]** > **[!UICONTROL 整合]** > **[!UICONTROL 本機權杖]** > **[!UICONTROL 取得本機開發權杖]** > **[!UICONTROL 複製accessToken值]**。 深入瞭解[如何存取Token及相關層面](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=en#generating-the-access-token)
+1. 對於非Asset Selector型體驗，AEM as a Cloud Service和具有OpenAPI功能的Dynamic Media目前支援伺服器端API整合，且可產生IMS持有人權杖。
+   * 依照[這裡](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis#the-server-to-server-flow)的指示，執行可透過[AEM as a Cloud Service Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines#crxde-lite-and-developer-console)擷取IMS持有人權杖的服務對伺服器API整合
+   * 在有限的時間內，本機開發人員存取（不適用於生產使用案例）可以依照指示[這裡](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis#developer-flow)產生在[AEM as a Cloud Service Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines#crxde-lite-and-developer-console)上驗證的使用者的短期IMS持有人權杖
 
-1. 將取得的存取權杖整合至&#x200B;**[!UICONTROL 授權]**&#x200B;標頭，確保其值會加上前置詞&#x200B;**[!UICONTROL 持有者]**。
+1. 發出[Search](search-assets-api.md)和[Delivery](deliver-assets-apis.md) API要求時，將取得的IMS持有人權杖新增至HTTP要求的&#x200B;**[!UICONTROL Authorization]**&#x200B;標頭（請確定它的值有前置詞&#x200B;**[!UICONTROL 持有人權杖]**）。
 
-1. 透過起始請求來驗證存取權杖的功能。 如果沒有IMS存取權杖，或提供的存取權杖缺少與資產中繼資料中新增的主體或群組，應該會產生404錯誤。
+1. 若要驗證存取限制，請起始傳送API要求，其中含或不含&#x200B;**[!UICONTROL Authorization]**&#x200B;標頭。
+   * 若沒有IMS持有人權杖或提供的IMS持有人權杖不屬於已授與資產存取許可權的使用者（直接或透過群組成員資格），回應將會產生`404`錯誤狀態碼。
+   * 如果IMS持有者權杖是被授予資產存取權的一或多個使用者群組，回應將會產生具有資產二進位內容的`200`成功狀態代碼。
 
-#### Publish例項上自訂身分提供者的傳送 {#delivery-custom-identity-provider}
+### Publish服務上自訂身分提供者的傳送 {#delivery-custom-identity-provider}
 
-若是您Publish或Preview執行個體上設定的自訂身分提供者，您可以提及在設定程式期間必須有權存取`groupMembership`屬性內之安全資產的群組。 當您透過[SAML整合](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/saml-2-0)登入自訂身分提供者時，會讀取`groupMembership`屬性並用來建構Cookie，這會在所有驗證請求中傳送，類似於AEM作者或資產選擇器請求時的IMS權杖。
+AEM Sites、AEM Assets和Dynamic Media搭配OpenAPI授權可搭配使用，而限制的資產傳送可在透過AEM Publish或預覽服務傳送的網站上設定。
+如果AEM Sites的Publish和預覽服務設定為使用[自訂身分提供者(IdP)](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/saml-2-0)，則在設定程式期間，`groupMembership`屬性中可包含必須擁有其中安全資產存取權的群組。\
+當網站使用者登入自訂身分提供者並存取Publish/預覽服務上託管的網站時，會讀取`groupMembership`屬性，並在成功驗證後，在網站上建構並傳遞安全Cookie。 所有後續傳送網站內容給使用者代理程式的請求都會包含此secure-cookie。
 
-當頁面上提供安全資產，且傳送URL收到轉譯資產的要求時，AEM會檢查Cookie或IMS權杖中存在的角色，並將其與資產編寫期間套用的`dam:roles property`配對。 如果有相符專案，則會顯示資產。
+當頁面上要求安全資產時，AEM Publish和預覽層級會從secure-cookie擷取授權資料並驗證存取權。 如果有相符專案，則會顯示資產。
 
 >[!NOTE]
 >
