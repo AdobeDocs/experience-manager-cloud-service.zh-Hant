@@ -5,9 +5,9 @@ exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f12392075b71b219bf449f585f63561167ddada9
+source-git-commit: 9645ee21bc8c44020d5bb7cdd513d67429353c7d
 workflow-type: tm+mt
-source-wordcount: '1000'
+source-wordcount: '996'
 ht-degree: 4%
 
 ---
@@ -46,7 +46,7 @@ ht-degree: 4%
 * **對於客戶管理的(OV/EV) SSL憑證：**
 
    * 從憑證授權單位取得您的OV/EV SSL憑證。 如需詳細資訊，請檢閱客戶管理的OV/EV SSL憑證的[需求](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md#requirements)。
-   * 取得憑證後，[在Cloud Manager中新增您客戶管理的(OV/EV) SSL憑證的](#add-customer-manage-ssl-cert)詳細資料。
+   * 取得憑證後，[在Cloud Manager中新增您客戶管理的(OV/EV) SSL憑證的](#add-customer-managed-ssl-cert)詳細資料。
    * 新增後，自訂網域名稱將標籤為已驗證，並套用SSL憑證。
 
 無論哪種情況，在驗證並安裝憑證後，自訂網域都可在您的環境中安全使用。 請務必定期[在Cloud Manager介面中檢查網域狀態](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)，確認一切都如預期般運作。
@@ -76,8 +76,7 @@ ht-degree: 4%
 1. 在&#x200B;**憑證名稱**&#x200B;欄位中，輸入您要與DV SSL憑證關聯的名稱。
 
 1. 在&#x200B;**選取網域**&#x200B;下拉式清單中，選取一或多個要與DV SSL憑證關聯的已驗證網域。
-   * 沒有要選取的網域？ 如果是，您必須先新增自訂網域名稱並確保它經過驗證，然後才能新增SSL憑證。
-   * 請參閱[新增自訂網域名稱](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)。
+   * 沒有要選取的網域？ 若是如此，您必須先[新增自訂網域名稱](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)並確保它經過驗證，然後才能新增Adobe管理的SSL憑證。
    * 新增完自訂網域名稱后，請返回本主題並從步驟1重新開始。
 
 1. 在對話框右下角，按一下「**儲存**」。
