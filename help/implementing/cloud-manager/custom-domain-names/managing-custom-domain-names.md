@@ -5,9 +5,9 @@ exl-id: 6cab8cf2-22c0-4f4b-9c54-a1425e74ddd0
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 27d9a48c6afa115d5c755fa54cf96cb6a561b2f5
+source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
 workflow-type: tm+mt
-source-wordcount: '790'
+source-wordcount: '789'
 ht-degree: 18%
 
 ---
@@ -31,7 +31,7 @@ Cloud Manager可讓您編輯、更新、取代、驗證和刪除自訂網域名�
 
 1. 在「**[我的程式](/help/implementing/cloud-manager/navigation.md#my-programs)**」控制台中，選取程式。
 
-1. 在頁面的左上角，按一下![顯示圖示 — 漢堡](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)以顯示左側導覽功能表。
+1. 在頁面的左上角，按一下[顯示]圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)以顯示左側功能表。![
 
 1. 在&#x200B;**服務**&#x200B;標題下，按一下&#x200B;**CDN組態**。
 

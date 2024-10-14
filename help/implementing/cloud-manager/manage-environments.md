@@ -5,10 +5,10 @@ exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
+source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
 workflow-type: tm+mt
-source-wordcount: '2371'
-ht-degree: 73%
+source-wordcount: '2357'
+ht-degree: 70%
 
 ---
 
@@ -109,7 +109,7 @@ ht-degree: 73%
 
 您也可以移除額外發佈區域。但是，在一次異動中，您只能新增或移除區域。如果您必須新增一個區域並移除一個區域，請先新增、儲存您的變更，然後再進行移除 (反之亦然)。
 
-1. 從計畫的「計畫概觀」主控台中，按一下生產環境的省略號按鈕並從選單中選取「**編輯**」。
+1. 從您程式的程式總覽主控台中，針對您的生產環境按一下https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg ，然後從選單中選取&#x200B;**編輯**。
 
    ![編輯環境](assets/select-edit-environment.png)
 
@@ -129,7 +129,7 @@ ht-degree: 73%
 
 從&#x200B;**總覽**&#x200B;頁面，您可以透過兩種方式存取環境的詳細資訊。
 
-1. 從&#x200B;**總覽**&#x200B;頁面，按一下側面導覽面板中的&#x200B;**環境**&#x200B;索引標籤。
+1. 從&#x200B;**總覽**&#x200B;頁面，按一下左側功能表中的&#x200B;**環境**&#x200B;索引標籤。
 
    ![「環境」索引標籤](assets/environments-tab2.png)
 
@@ -141,11 +141,11 @@ ht-degree: 73%
 
    ![環境索引標籤](assets/environments-tab2.png)
 
-1. 點選或按一下清單中的環境，以便顯示其詳細資訊。
+1. 按一下清單中的環境可以顯示其詳細資訊。
 
    ![環境詳細資訊](assets/environ-preview1.png)
 
-或者，按一下所需環境的省略符號按鈕，然後選擇&#x200B;**查看詳細資訊**。
+或者，按一下所需環境的https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg，然後選取&#x200B;**檢視詳細資料**。
 
 ![檢視環境詳細資訊](assets/view-environment-details.png)
 
@@ -193,7 +193,7 @@ Cloud Manager 為每個 AEM as a Cloud Service 環境提供預覽服務 (作為�
 
 1. 在「**概觀**」頁面上，選取「**環境**」標籤。
 
-1. 在&#x200B;**環境**&#x200B;索引標籤上，在左側導覽面板中選取您要查詢的環境。
+1. 在&#x200B;**環境**&#x200B;索引標籤上，在左側功能表中選取您要查詢的環境。
 
 1. 選取環境後：
 
@@ -235,11 +235,11 @@ Cloud Manager 為每個 AEM as a Cloud Service 環境提供預覽服務 (作為�
 >[!NOTE]
 > 截至2024年，開發執行個體和某些沙箱計畫已自動更新，因此無需手動管理其更新。 由於此轉變，您的程式中的&#x200B;_部分_&#x200B;可能無法使用手動更新開發執行個體的環境的選項。
 
-按一下環境的省略符號按鈕，可以從&#x200B;**環境**&#x200B;卡中為沙箱計畫中的某些開發環境和環境使用&#x200B;**更新**&#x200B;選項。
+按一下環境的https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg，可以從&#x200B;**環境**&#x200B;卡中，為沙箱計畫中的某些開發環境和環境使用&#x200B;**更新**&#x200B;選項。
 
 ![更新環境卡的選項](assets/environ-update2.png)
 
-也可以按一下計畫的「**環境**」索引標籤，然後選擇環境的省略符號按鈕來使用此選項。
+也可以按一下程式的&#x200B;**環境**&#x200B;索引標籤，然後按一下環境的https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg來使用此選項。
 
 ![更新環境索引標籤的選項](assets/environ-update3.png)
 
@@ -259,11 +259,11 @@ Cloud Manager 為每個 AEM as a Cloud Service 環境提供預覽服務 (作為�
 
 具有&#x200B;**部署管理員**&#x200B;或&#x200B;**企業所有者**&#x200B;角色的使用者可以刪除開發環境。
 
-在「**環境**」卡上計畫的「**概觀**」畫面中，按一下要刪除的開發環境的省略符號按鈕。
+在&#x200B;**環境**&#x200B;卡片上的程式&#x200B;**總覽**&#x200B;畫面中，按一下要刪除的開發環境的https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg。
 
 ![刪除選項](assets/environ-delete.png)
 
-刪除選項也可在計畫&#x200B;**概觀**&#x200B;視窗的&#x200B;**環境**&#x200B;索引標籤中找到。按一下環境的省略符號按鈕，然後選擇「**刪除**」。
+刪除選項也可在計畫&#x200B;**概觀**&#x200B;視窗的&#x200B;**環境**&#x200B;索引標籤中找到。按一下環境的https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg並選取&#x200B;**刪除**。
 
 ![環境索引標籤的刪除選項](assets/environ-delete2.png)
 

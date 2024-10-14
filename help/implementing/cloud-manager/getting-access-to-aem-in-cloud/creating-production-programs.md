@@ -5,10 +5,10 @@ exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 6a3d2d484bde20586b329010cdfe156570e736f5
+source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
 workflow-type: tm+mt
-source-wordcount: '1029'
-ht-degree: 12%
+source-wordcount: '1027'
+ht-degree: 13%
 
 ---
 
@@ -119,7 +119,7 @@ AEM Sites和Forms提供標準的99.9%服務等級合約(SLA)。 **99.99%服務�
 
 ## 存取您的程式 {#accessing}
 
-1. 當您在登陸頁面上看到您的計畫卡時，選擇省略符號按鈕以檢視您可以使用的選單選項。
+1. 當您在登陸頁面上看到您的計畫卡時，請按一下https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg以檢視可用的功能表選項。
 
    ![計畫概觀](assets/program-overview.png)
 

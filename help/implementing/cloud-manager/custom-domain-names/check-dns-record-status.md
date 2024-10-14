@@ -1,14 +1,14 @@
 ---
-title: 檢查DNS記錄狀態
+title: 檢查 DNS 記錄狀態
 description: 瞭解如何確定您的DNS設定是否已使用Cloud Manager正確解析。
 exl-id: 76ca1584-e21d-4e3a-a08a-82b2779167cf
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 8a10634e413ea5c66845dfffa7396a4554a5b3ca
+source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
 workflow-type: tm+mt
 source-wordcount: '366'
-ht-degree: 24%
+ht-degree: 25%
 
 ---
 
@@ -33,7 +33,7 @@ ht-degree: 24%
 
 1. 從&#x200B;**概觀**&#x200B;頁面，瀏覽到&#x200B;**環境**&#x200B;畫面。
 
-1. 按一下左側導覽面板中的&#x200B;**網域設定**。
+1. 按一下左側功能表中的&#x200B;**網域設定**。
 
 1. 按一下網域名稱的&#x200B;**狀態**&#x200B;圖示。
 

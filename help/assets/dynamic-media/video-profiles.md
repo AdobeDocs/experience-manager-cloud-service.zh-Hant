@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Asset Management,Video Profiles,Renditions,Best Practices
 role: User
 exl-id: 07bfd353-c105-4677-a094-b70c1098fb7f
-source-git-commit: 35f31c95e92148ff5f3472f26ea9c40fa5a17947
+source-git-commit: 88b4864da30fbf201dbd5bde1ac17d3be977648f
 workflow-type: tm+mt
-source-wordcount: '3744'
+source-wordcount: '3742'
 ht-degree: 6%
 
 ---
@@ -151,7 +151,7 @@ Dynamic Media已隨附預先定義的自我調整視訊編碼設定檔 — 一�
 
 若要定義其他資產型別的進階處理引數，請參閱[設定資產處理](/help/assets/dynamic-media/config-dm.md#configuring-asset-processing)。
 
-**若要建立最適化位元速率資料流的視訊設定檔**，
+**若要建立最適化位元速率資料流的視訊設定檔：**
 
 1. 選取Experience Manager標誌並導覽至&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL Assets]** > **[!UICONTROL 視訊設定檔]**。
 1. 選取「**[!UICONTROL 建立]**」。
@@ -192,7 +192,7 @@ Dynamic Media已隨附預先定義的自我調整視訊編碼設定檔 — 一�
 
 如果您選擇不使用&#x200B;**[!UICONTROL 自我調整資料流的編碼]**&#x200B;選項，則您新增至設定檔的所有編碼預設集都會被視為個別視訊轉譯，以用於單位元速率資料流或漸進式視訊傳送。 此外，沒有驗證可確保所有視訊轉譯具有相同的外觀比例。
 
-支援的視訊格式轉碼器為H.264 (.mp4)和WebM。
+支援的視訊格式轉碼器是H.264 (.mp4)。<!-- use to also include WebM but was requested for removal by Riya Midha in email dated October 14, 2024 -->
 
 另請參閱[建立最適化位元速率資料流的視訊編碼設定檔](#creating-a-video-encoding-profile-for-adaptive-streaming)。
 
@@ -371,7 +371,7 @@ Dynamic Media已隨附預先定義的自我調整視訊編碼設定檔 — 一�
 
 您可以從&#x200B;**[!UICONTROL 工具]**&#x200B;功能表或在資料夾內的&#x200B;**[!UICONTROL 屬性]**&#x200B;中，將視訊設定檔套用至資料夾。 本節說明如何以兩種方式將視訊描述檔套用至資料夾。
 
-已為其分配配置檔案的資料夾將通過資料夾名稱正下方的配置檔案名稱顯示來指示。
+已為其分配輪廓的資料夾將通過資料夾名稱正下方的輪廓名稱顯示來指示。
 
 另請參閱[在您編輯資料夾中資產的處理設定檔後，重新處理該資料夾中的資產](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets)。
 
@@ -386,7 +386,7 @@ Dynamic Media已隨附預先定義的自我調整視訊編碼設定檔 — 一�
 
 1. 選取Experience Manager標誌並導覽至&#x200B;**[!UICONTROL Assets]**，然後導覽至您要套用視訊設定檔的資料夾。
 1. 在資料夾中，選取核取記號以選取資料夾，然後選取&#x200B;**[!UICONTROL 屬性]**。
-1. 選取「**[!UICONTROL 視訊設定檔]**」標籤，然後從下拉式選單中選取設定檔，然後選取「**[!UICONTROL 儲存並關閉]**」。 已為其分配配置檔案的資料夾將通過資料夾名稱正下方的配置檔案名稱顯示來指示。
+1. 選取「**[!UICONTROL 視訊設定檔]**」標籤，然後從下拉式選單中選取設定檔，然後選取「**[!UICONTROL 儲存並關閉]**」。 已為其分配輪廓的資料夾將通過資料夾名稱正下方的輪廓名稱顯示來指示。
 
    ![chlimage_1-518](assets/chlimage_1-518.png)
 您可以[監視視訊設定檔處理工作的進度](#monitoring-the-progress-of-an-encoding-job)。
@@ -428,4 +428,4 @@ Dynamic Media已隨附預先定義的自我調整視訊編碼設定檔 — 一�
 
 1. 選取Experience Manager標誌並導覽至&#x200B;**[!UICONTROL Assets]**，然後導覽至您要移除其視訊設定檔的資料夾。
 1. 在資料夾中，選取核取記號以選取資料夾，然後選取&#x200B;**[!UICONTROL 屬性]**。
-1. 選取「**[!UICONTROL 視訊設定檔]**」標籤，然後從下拉式功能表中選取「**[!UICONTROL 無]**」，然後選取「**[!UICONTROL 儲存並關閉]**」。 已為其分配配置檔案的資料夾將通過資料夾名稱正下方的配置檔案名稱顯示來指示。
+1. 選取「**[!UICONTROL 視訊設定檔]**」標籤，然後從下拉式功能表中選取「**[!UICONTROL 無]**」，然後選取「**[!UICONTROL 儲存並關閉]**」。 已為其分配輪廓的資料夾將通過資料夾名稱正下方的輪廓名稱顯示來指示。

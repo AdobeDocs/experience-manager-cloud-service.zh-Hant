@@ -5,9 +5,9 @@ exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f12392075b71b219bf449f585f63561167ddada9
+source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
 workflow-type: tm+mt
-source-wordcount: '1034'
+source-wordcount: '1029'
 ht-degree: 9%
 
 ---
@@ -46,7 +46,7 @@ Cloud Manager會提供程式中所有憑證狀態的概觀。
 1. 在「**[我的程式](/help/implementing/cloud-manager/navigation.md#my-programs)**」控制台中，選取程式。
 1. 在頁面的左上角，按一下![顯示功能表圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)以顯示側邊功能表。
 1. 在&#x200B;**服務**&#x200B;標題下，按一下![鎖定已關閉圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_LockClosed_18_N.svg) **SSL憑證**。
-1. 在您想要更新的過期客戶管理憑證列中，按一下最右側的省略符號按鈕，然後選取&#x200B;**檢視和更新**。
+1. 在您要更新的過期客戶管理憑證列中，按一下最右邊的https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg，然後按一下&#x200B;**[檢視並更新]**。
 
    ![更新過期的客戶管理的SSL認證](/help/implementing/cloud-manager/assets/ssl/ssl-cert-update.png)
 
@@ -117,9 +117,7 @@ Cloud Manager會提供程式中所有憑證狀態的概觀。
 
 1. 在&#x200B;**服務**&#x200B;標題下，按一下![鎖定已關閉圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_LockClosed_18_N.svg) **SSL憑證**。
 
-1. 在「SSL憑證」頁面上，在您要刪除之憑證的表格列中，按一下最右側的![更多圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)。
-
-1. 在下拉式功能表中，按一下&#x200B;**刪除**。
+1. 在「SSL憑證」頁面上，在您要刪除之憑證的表格列中，按一下最右邊的![更多圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)，然後按一下&#x200B;**刪除**。
 
    如果&#x200B;**Delete**&#x200B;有資訊圖示（如下列影像所示），請參閱上述附註。
 

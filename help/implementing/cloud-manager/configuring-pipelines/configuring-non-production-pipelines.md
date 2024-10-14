@@ -6,10 +6,10 @@ exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
+source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
 workflow-type: tm+mt
-source-wordcount: '1402'
-ht-degree: 71%
+source-wordcount: '1398'
+ht-degree: 72%
 
 ---
 
@@ -33,7 +33,7 @@ ht-degree: 71%
 >
 >你可以在初始設定後[編輯管道設定](managing-pipelines.md)。
 
-## 新增新的非生產管道 {#adding-non-production-pipeline}
+## 新增一個全新非生產管道 {#adding-non-production-pipeline}
 
 設定好方案並擁有至少一個使用 Cloud Manager UI 的環境後，您就可以依照以下步驟著手新增非生產管道了。
 
@@ -156,12 +156,12 @@ ht-degree: 71%
 
    ![設定管道](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-config-deployment-experience-audit.png)
 
-1. 如果您已啟用體驗稽核，請點選或按一下「**繼續**」以前進到「**體驗稽核**」標籤，您可以在其中定義應一律包含在體驗稽核中的路徑。
+1. 如果您已啟用體驗稽核，請按一下「**繼續**」以前往「**體驗稽核**」標籤，您可以在其中定義應一律包含在體驗稽核中的路徑。
 
    * 如果您已啟用&#x200B;**體驗稽核**，請參閱檔案[體驗稽核](/help/implementing/cloud-manager/experience-audit-dashboard.md)以瞭解如何設定的詳細資訊。
    * 如果您沒有這麼做，請略過此步驟。
 
-1. 點選或按一下「**儲存**」，以儲存管道。
+1. 按一下&#x200B;**儲存**，即可儲存管道。
 
 管道已儲存，您現在可以在&#x200B;**計畫概觀**&#x200B;頁面的&#x200B;**管道**&#x200B;卡上[管理您的管道](managing-pipelines.md)。
 

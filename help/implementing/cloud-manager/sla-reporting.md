@@ -5,7 +5,7 @@ exl-id: 03932415-a029-4703-b44a-f86a87edb328
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: c46b6df488722fe750e524ad2bb383f25bf00b0f
+source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
 workflow-type: tm+mt
 source-wordcount: '477'
 ht-degree: 13%
@@ -36,7 +36,7 @@ SLA報表資料會追蹤兩個生產階層的效能量度：製作階層和Publi
 
 1. 在「**[我的程式](/help/implementing/cloud-manager/navigation.md#my-programs)**」控制台中，選取程式。
 
-1. 從&#x200B;**方案總覽**&#x200B;頁面，在左側導覽面板中按一下&#x200B;**報表**。
+1. 從&#x200B;**計畫總覽**&#x200B;頁面，按一下左側功能表中的&#x200B;**報表**。
 
 1. 按一下&#x200B;**SLA報表**。
 

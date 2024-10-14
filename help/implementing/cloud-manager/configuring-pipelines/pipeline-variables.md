@@ -5,9 +5,9 @@ exl-id: cfcef2e2-0590-457d-a0f9-6092a6d9e0e8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 2573eb5f8a8ff21a8e30b94287b554885cd1cd89
+source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
 workflow-type: tm+mt
-source-wordcount: '621'
+source-wordcount: '618'
 ht-degree: 14%
 
 ---
@@ -84,6 +84,7 @@ ht-degree: 14%
 
 1. 按一下「**儲存**」。
 
+
 ## 刪除管道變數 {#delete-ui}
 
 1. 當[管理您的管道](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md)時，按一下要刪除管道變數之管道的![省略符號 — 更多圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)。
@@ -92,10 +93,7 @@ ht-degree: 14%
 
    ![檢視/編輯管道變數](/help/implementing/cloud-manager/assets/pipeline-variables-view-edit.png)
 
-1. 在&#x200B;**變陣列態**&#x200B;對話方塊中，按一下您要移除之變數的![省略符號 — 其他圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)。
-
-1. 在下拉式功能表中，按一下&#x200B;**刪除**。
-
+1. 在&#x200B;**變陣列態**&#x200B;對話方塊中，按一下您要移除之變數的![省略符號 — 其他圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)，然後按一下&#x200B;**刪除**。
 
 ## 使用Cloud Manager CLI設定管道變數 {#cli}
 

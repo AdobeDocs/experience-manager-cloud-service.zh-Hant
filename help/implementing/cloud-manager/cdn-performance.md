@@ -5,9 +5,9 @@ exl-id: ecd8c1ca-873f-4e73-ad73-b5f7561eb109
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
+source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
 workflow-type: tm+mt
-source-wordcount: '382'
+source-wordcount: '376'
 ht-degree: 4%
 
 ---
@@ -42,17 +42,17 @@ CDN控制面板可在每個計畫的概觀頁面上取得。
 
 ![CDN效能儀表板](assets/cdn-performance-dashboard.png)
 
-如需CDN效能的詳細資訊及改善建議，請點選或按一下&#x200B;**檢視趨勢**。
+如需CDN效能的詳細資訊及改善建議，請按一下&#x200B;**檢視趨勢**。
 
 ![效能趨勢](assets/cdn-performance-trend.png)
 
-點選或按一下圖表下方的&#x200B;**檢視**，以變更圖表的時間範圍。
+按一下圖表下方的&#x200B;**檢視**&#x200B;以變更圖表的時間範圍。
 
 如需如何改善CDN效能的建議，請選取&#x200B;**Recommendations**&#x200B;索引標籤。
 
 ![CDN建議](assets/cdn-performance-recommendations.png)
 
-點選或按一下清單中任何建議旁的>形箭號，可檢視關於採取哪些步驟改善及問題原因的詳細資訊。
+按一下清單中任何建議旁的>形箭號，以檢視關於採取哪些步驟改善及問題原因的詳細資訊。
 
 ## 快取點選定義 {#cache-hit}
 

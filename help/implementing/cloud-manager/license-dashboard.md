@@ -5,9 +5,9 @@ exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
+source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
 workflow-type: tm+mt
-source-wordcount: '911'
+source-wordcount: '909'
 ht-degree: 34%
 
 ---
@@ -34,7 +34,7 @@ Cloud Manager授權儀表板可讓您輕鬆存取所有計畫中可用的解決�
 >必須由具有&#x200B;**業主**&#x200B;角色的使用者登入才能檢視授權儀表板。
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織。
-1. 在&#x200B;**[我的程式](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;主控台上，按一下[Cloud Manager標題](/help/implementing/cloud-manager/navigation.md#cloud-manager-header)上的漢堡功能表按鈕。 如此可顯示標籤。
+1. 在&#x200B;**[我的程式](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;主控台上，按一下[Cloud Manager標題](/help/implementing/cloud-manager/navigation.md#cloud-manager-header)上的https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg。 此動作會顯示標籤。
 1. 按一下索引標籤中的&#x200B;**授權**&#x200B;選項。
 
 ![授權儀表板](assets/license-dashboard.png)
