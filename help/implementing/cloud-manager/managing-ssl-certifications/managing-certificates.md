@@ -5,9 +5,9 @@ exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: b735c724bd8d68273b3c09a2dc53a13f5f6095ae
+source-git-commit: f12392075b71b219bf449f585f63561167ddada9
 workflow-type: tm+mt
-source-wordcount: '1038'
+source-wordcount: '1034'
 ht-degree: 9%
 
 ---
@@ -59,9 +59,10 @@ Cloud Manager會提供程式中所有憑證狀態的概觀。
 
 1. 按一下&#x200B;**更新**&#x200B;以儲存變更並自動套用變更。
 
+
 >[!NOTE]
 >
->如果您有兩個以上涵蓋相同SAN網域專案的SAN憑證，若該網域由其中一個憑證涵蓋，且另一個憑證已更新，則現在會為該網域安裝後者。
+>如果您有兩個以上涵蓋相同SAN網域專案的SAN憑證，若該網域由其中一個憑證涵蓋，且另一個憑證已更新，則後者會針對該網域安裝。
 >
 >如需詳細資訊，請參閱[疑難排解SSL憑證問題](/help/implementing/cloud-manager/managing-ssl-certifications/troubleshoot-ssl-cert.md#wrong-san-cert)。
 
@@ -80,13 +81,21 @@ Cloud Manager會提供程式中所有憑證狀態的概觀。
 **若要重新命名Adobe管理的SSL憑證：**
 
 1. 在[my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)登入Cloud Manager並選取適當的程式。
+
 1. 在「**[我的程式](/help/implementing/cloud-manager/navigation.md#my-programs)**」控制台中，選取程式。
+
 1. 在頁面的左上角，按一下![顯示功能表圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)以顯示側邊功能表。
+
 1. 在&#x200B;**服務**&#x200B;標題下，按一下![鎖定已關閉圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_LockClosed_18_N.svg) **SSL憑證**。
-1. 在&#x200B;**SSL憑證**&#x200B;頁面上，按一下資料列結尾的![更多圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)，該資料列的&#x200B;*AdobeManaged*&#x200B;憑證是您想要重新命名的。
+
+1. 在&#x200B;**SSL憑證**&#x200B;頁面上，按一下資料列結尾的![更多圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)，該資料列的&#x200B;**Adobe受管理**&#x200B;您要重新命名的SSL憑證。
+
 1. 在下拉式功能表中，按一下&#x200B;**重新命名**。
+
 1. 在&#x200B;**重新命名DV憑證**&#x200B;對話方塊的&#x200B;**憑證名稱**&#x200B;文字欄位中，輸入憑證的新名稱。
+
 1. 按一下&#x200B;**重新命名**。
+
 
 ## 刪除SSL憑證 {#deleting-an-ssl-certificate}
 
@@ -101,17 +110,25 @@ Cloud Manager會提供程式中所有憑證狀態的概觀。
 **若要刪除SSL憑證：**
 
 1. 在[my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)登入Cloud Manager並選取適當的程式。
+
 1. 在「**[我的程式](/help/implementing/cloud-manager/navigation.md#my-programs)**」控制台中，選取程式。
+
 1. 在頁面的左上角，按一下![顯示功能表圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)以顯示側邊功能表。
+
 1. 在&#x200B;**服務**&#x200B;標題下，按一下![鎖定已關閉圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_LockClosed_18_N.svg) **SSL憑證**。
-1. 在「SSL憑證」頁面上，在您要刪除之憑證的表格列中，按一下最右側的![更多圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)
+
+1. 在「SSL憑證」頁面上，在您要刪除之憑證的表格列中，按一下最右側的![更多圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)。
+
 1. 在下拉式功能表中，按一下&#x200B;**刪除**。
-如果「刪除」按鈕有一個資訊圖示（如下圖所示），請參閱上方的「附註」。
+
+   如果&#x200B;**Delete**&#x200B;有資訊圖示（如下列影像所示），請參閱上述附註。
 
    ![刪除含有資訊圖示的按鈕](/help/implementing/cloud-manager/assets/ssl/ssl-cert-delete-infoicon.png)
 
 1. 在&#x200B;**刪除SSL憑證**&#x200B;對話方塊中，按一下&#x200B;**刪除**&#x200B;以確認刪除。
+
 1. 執行管道以取消部署已刪除的憑證。
+
 
 ## 既有的CDN設定 {#pre-existing-cdn}
 

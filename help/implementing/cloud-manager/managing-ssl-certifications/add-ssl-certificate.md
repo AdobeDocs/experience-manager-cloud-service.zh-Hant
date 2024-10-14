@@ -5,7 +5,7 @@ exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: fa99656e0dd02bb97965e8629d5fa657fbae9424
+source-git-commit: f12392075b71b219bf449f585f63561167ddada9
 workflow-type: tm+mt
 source-wordcount: '1000'
 ht-degree: 4%
@@ -90,13 +90,18 @@ ht-degree: 4%
 
 ## 新增客戶管理的(OV/ED) SSL憑證 {#add-customer-managed-ssl-cert}
 
+<!-- IF THIS TOPIC GET UPDATED, REMEMBER TO UPDATE THE STEPS ALSO IN THE "MANAGE SSL CERTIFICATES TOPIC TOO -->
+
 需要協助您選擇搭配您的網域使用Adobe管理的SSL憑證（建議）或客戶管理的SSL憑證嗎？ 請參閱[選擇要新增的SSL憑證](#which-ssl-to-add)
 
 **若要新增客戶管理的(OV/EV) SSL憑證：**
 
 1. 在[my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)登入Cloud Manager並選取適當的程式。
+
 1. 在「**[我的程式](/help/implementing/cloud-manager/navigation.md#my-programs)**」控制台中，選取程式。
+
 1. 在頁面的左上角，按一下![顯示功能表圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)以顯示側邊功能表。
+
 1. 在&#x200B;**服務**&#x200B;標題下，按一下![鎖定已關閉圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_LockClosed_18_N.svg) **SSL憑證**。
 
    ![正在新增SSL憑證](/help/implementing/cloud-manager/assets/ssl/ssl-cert-add.png)
@@ -108,8 +113,9 @@ ht-degree: 4%
 1. 在&#x200B;**憑證名稱**欄位中，輸入憑證的名稱。
 此欄位僅供參考，可以是任何有助於您輕鬆參考SSL憑證的名稱。
 
-1. 在&#x200B;**憑證**、**私密金鑰**&#x200B;和&#x200B;**憑證鏈**欄位中，複製OV或EV SSL憑證的必要值，並將其貼到對話方塊中各自的欄位中。
-將顯示值中偵測到的任何錯誤。 您必須先解決所有錯誤，才能儲存憑證。 請參閱[憑證錯誤](#certificate-errors)，深入了解疑難排解常見錯誤。
+1. 在&#x200B;**憑證**、**私密金鑰**&#x200B;和&#x200B;**憑證鏈**&#x200B;欄位中，複製OV或EV SSL憑證的必要值，並將其貼到對話方塊中各自的欄位中。
+
+   將顯示值中偵測到的任何錯誤。 您必須先解決所有錯誤，才能儲存憑證。 請參閱[憑證錯誤](#certificate-errors)，深入了解疑難排解常見錯誤。
 
    ![新增SSL憑證對話方塊](/help/implementing/cloud-manager/assets/ssl/ssl-cert-02.png)|
 
