@@ -3,9 +3,9 @@ title: 使用具有OpenAPI功能的Dynamic Media限制資產傳送
 description: 瞭解如何使用OpenAPI功能限制資產傳送。
 role: User
 exl-id: 3fa0b75d-c8f5-4913-8be3-816b7fb73353
-source-git-commit: 6e9fa8301fba9cab1a185bf2d81917e45acfe3a3
+source-git-commit: 03e13d29629c5e0305401179502cd1fc24f9ad75
 workflow-type: tm+mt
-source-wordcount: '1181'
+source-wordcount: '1117'
 ht-degree: 2%
 
 ---
@@ -96,12 +96,4 @@ DAM作者也可以定義資產屬性中可用的啟動開啟或關閉時間，�
 
 ### Publish服務上自訂身分提供者的傳送 {#delivery-custom-identity-provider}
 
-AEM Sites、AEM Assets和Dynamic Media搭配OpenAPI授權可搭配使用，而限制的資產傳送可在透過AEM Publish或預覽服務傳送的網站上設定。
-如果AEM Sites的Publish和預覽服務設定為使用[自訂身分提供者(IdP)](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/saml-2-0)，則在設定程式期間，`groupMembership`屬性中可包含必須擁有其中安全資產存取權的群組。\
-當網站使用者登入自訂身分提供者並存取Publish/預覽服務上託管的網站時，會讀取`groupMembership`屬性，並在成功驗證後，在網站上建構並傳遞安全Cookie。 所有後續傳送網站內容給使用者代理程式的請求都會包含此secure-cookie。
-
-當頁面上要求安全資產時，AEM Publish和預覽層級會從secure-cookie擷取授權資料並驗證存取權。 如果有相符專案，則會顯示資產。
-
->[!NOTE]
->
-> 在[支援票證中，提及使用案例中受限制的傳遞，以啟動具有OpenAPI功能的Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md#how-to-enable-the-dynamic-media-with-openapi-capabilities)。 Adobe工程將協助您進行必要的澄清，及/或設定受限傳遞的程式。
+AEM Sites、AEM Assets和具有OpenAPI授權的Dynamic Media可搭配使用，允許在AEM Publish或預覽服務上託管的網站上設定受限制的資產傳送。 安全傳送流程會利用瀏覽器Cookie來建立使用者的存取權，而且必須具備發佈網域子網域所在傳送層的自訂網域，才能實作此使用案例。 如果AEM Sites的Publish和預覽服務設定為使用[自訂身分提供者(IdP)](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/saml-2-0)，則必須在發佈網域發佈使用者的驗證上設定名稱為`delivery-token`的封裝使用者群組成員資格的新Cookie。 傳遞層級會從secure-cookie擷取授權資料並驗證存取權。 如需詳細資訊，請記錄[企業支援票證](/help/assets/dynamic-media-open-apis-overview.md#how-to-enable-the-dynamic-media-with-openapi-capabilities)。
