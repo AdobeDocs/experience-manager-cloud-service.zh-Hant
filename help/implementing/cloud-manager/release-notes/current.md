@@ -1,12 +1,12 @@
 ---
 title: Adobe Experience Manager as a Cloud Service 中 Cloud Manager 2024.10.0 的發行說明
-description: 瞭解AEM as a Cloud Service中Cloud Manager 2024.10.0的發行說明。
+description: 了解 AEM as a Cloud Service 中 Cloud Manager 2024.10.0 的發行說明。
 feature: Release Information
 role: Admin
 source-git-commit: 9cde6e63ec452161dbeb1e1bfb10c75f89e2692c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '569'
-ht-degree: 12%
+ht-degree: 100%
 
 ---
 
@@ -20,69 +20,69 @@ ht-degree: 12%
 
 ## 發行日期 {#release-date}
 
-AEM as a Cloud Service中的Cloud Manager版本2024.10.0發行日期是2024年10月3日。
+AEM as a Cloud Service 中的 Cloud Manager 版本 2024.10.0 發行日期是 2024 年 10 月 3 日。
 
-下一版本計畫於2024年11月14日發行。
+下一個版本計劃於 2024 年 11 月 14 日發佈。
 
 ## 新增功能 {#what-is-new}
 
-* <!-- BOTH CS & AMS --> Cloud Manager中使用的AEM原型版本現在更新至版本26。 請參閱[https://github.com/adobe/aem-project-archetype/releases](https://github.com/adobe/aem-project-archetype/releases)
+* <!-- BOTH CS & AMS --> Cloud Manager 中使用的 AEM Archetype 版本現已更新至 26 版。請參閱 [https://github.com/adobe/aem-project-archetype/releases](https://github.com/adobe/aem-project-archetype/releases)
 
 <!-- (CMGR-59817) -->
 
-* <!-- CS ONLY --> 新增自訂網域時，之前的驗證方法涉及漫長的DNS驗證過程。 Adobe為客戶簡化了此程式。 現在，您只需要提供有效的SSL憑證（EV或OV），作為擁有權的證明。 不再需要更新DNS中的TXT記錄。
+* <!-- CS ONLY --> 新增自訂網域時，先前的驗證方法出現冗長的 DNS 驗證程序。Adobe 已為客戶簡化此程序。現在，您只需提供有效的 SSL 憑證 (EV 或 OV)，作為所有權證明。不再需要更新 DNS 中的 TXT 記錄。
 
   >[!NOTE]
   >
-  >此功能僅適用於客戶管理的EV和OV憑證。 由Adobe管理的DV憑證仍需要存在CNAME記錄。
+  >此功能僅適用於客戶管理的 EV 和 OV 憑證。Adobe 管理的 DV 憑證仍然需要 CNAME 記錄。
 
   請參閱[新增自訂網域名稱](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)。
 
-  ![驗證客戶管理的EV/OV憑證的網域](/help/implementing/cloud-manager/assets/verify-domain-customer-managed-step.png)
+  ![驗證客戶管理的 EV/OV 憑證的網域](/help/implementing/cloud-manager/assets/verify-domain-customer-managed-step.png)
 
-* <!-- CS ONLY --> 當您新增或編輯網路基礎結構時，會根據下列規則驗證IP位址和網路遮罩欄位中的值：
+* <!-- CS ONLY --> 新增或編輯網路基礎結構時，IP 位址和網路遮罩欄位中的值將根據下列規則進行驗證：
 
-   * 位址空間不能與連線位址空間中所定義的位址重疊。
-   * DNS位址必須屬於連線位址空間中所定義的網路遮罩，或是公用。
+   * 位址空間不得與連線位址空間中定義的位址重疊。
+   * DNS 位址必須屬於連線位址空間中定義的網路遮罩或是公共的。
 
-  ![新增網路基礎結構對話方塊](/help/implementing/cloud-manager/release-notes/assets/network-infrastructure-add.png)
+  ![新增網路基礎結構對話框](/help/implementing/cloud-manager/release-notes/assets/network-infrastructure-add.png)
 
-* <!-- CS ONLY --> 正在變更環境部署記錄的格式，以便索引、安裝可變內容和轉換工作。
+* <!-- CS ONLY --> 正在變更用於索引、安裝可變內容和轉換作業之環境部署記錄的格式。
 
   >[!NOTE]
   >
-  >此變更計劃分階段推出，預期完成日期為2024年12月。
+  >此變更計畫分階段推出，預計完成日期為 2024 年 12 月。
 
-  ![部署至生產卡](/help/implementing/cloud-manager/release-notes/assets/deploy-to-production-card.png)
+  ![部署至生產卡片](/help/implementing/cloud-manager/release-notes/assets/deploy-to-production-card.png)
 
-  記錄檔的格式將會從下列的簡單專案變更：
+  記錄的格式將從如下所示的簡單項目：
 
-  ![顯示簡單專案的記錄檔](/help/implementing/cloud-manager/release-notes/assets/log-file-simple-entry.png)
+  ![顯示簡單項目的記錄檔](/help/implementing/cloud-manager/release-notes/assets/log-file-simple-entry.png)
 
-  JSON專案的下列專案：
+  變更至如下所示的 JSON 項目：
 
-  ![記錄檔顯示json專案](/help/implementing/cloud-manager/release-notes/assets/log-file-json-entry.png)
+  ![顯示 json 項目的記錄檔](/help/implementing/cloud-manager/release-notes/assets/log-file-json-entry.png)
 
 
 ## 早期採用方案 {#early-adoption}
 
-成為Cloud Manager早期採用計畫的一部分，並有機會測試即將推出的功能。
+成為 Cloud Manager 早期採用方案的一部分，並有機會測試即將推出的功能。
 
-### 自備Git — 現在支援GitLab和Bitbucket {#gitlab-bitbucket}
+### 自備 Git - 現在支援 GitLab 和 Bitbucket {#gitlab-bitbucket}
 
 <!-- BOTH CS & AMS -->
 
-**自攜Git**&#x200B;功能已擴充為包含對外部存放庫（例如GitLab和Bitbucket）的支援。 除了這項新支援之外，私人和企業GitHub存放庫也提供現有支援。 新增這些新存放庫時，您也可以將其直接連結至您的管道。 您可以在公用雲端平台上或您的私人雲端或基礎架構內託管這些存放庫。 此整合也免除了與Adobe存放庫持續進行程式碼同步的需求，並可讓您在將提取請求合併至主要分支之前先驗證提取請求。
+**自備 Git** 功能已進行擴展，包括對 GitLab 和 Bitbucket 等外部存放庫的支援。這項新的支援功能是對私人和企業 GitHub 存放庫現有支援的補充。當您新增這些新存放庫時，也可以將它們直接連結到您的管道。您可以將這些存放庫託管在公有雲平台上或私有雲或基礎架構內。這項整合也消除了與 Adobe 存放庫持續進行代碼同步的需求，並提供了在提取請求合併到主分支之前，驗證提取請求的功能。
 
-請參閱[在Cloud Manager](/help/implementing/cloud-manager/managing-code/external-repositories.md)中新增外部存放庫。
+請查看[在 Cloud Manager 中新增外部存放庫](/help/implementing/cloud-manager/managing-code/external-repositories.md)。
 
 ![新增存放庫對話框](/help/implementing/cloud-manager/release-notes/assets/repositories-add-release-notes.png)
 
 >[!NOTE]
 >
->目前，GitHub託管的存放庫僅能執行現成可用的提取要求程式碼品質檢查，不過也正在研究更新以將此功能擴充至其他Git廠商。
+>目前，立即可用的提取請求代碼品質檢查僅限於 GitHub 託管的存放庫，但我們正在進行一項更新以將此功能擴展到其他 Git 供應商。
 
-如果您有興趣測試這項新功能並分享您的意見回饋，請從與Adobe ID相關聯的電子郵件地址傳送電子郵件至[Grp-CloudManager_BYOG@adobe.com](mailto:Grp-CloudManager_BYOG@adobe.com)。 請務必加入您要使用的Git平台，以及您是要使用私人/公有或企業存放庫結構。
+如果您有興趣測試此新功能並分享您的意見回饋，請使用與您的 Adobe ID 關聯的電子郵件地址向 [Grp-CloudManager_BYOG@adobe.com](mailto:Grp-CloudManager_BYOG@adobe.com) 傳送電子郵件。請務必包含您要使用的 Git 平台以及您是否使用私人/公開或企業存放庫結構。
 
 
 <!-- ## Bug fixes

@@ -5,9 +5,9 @@ exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
 feature: Security
 role: Admin
 source-git-commit: 09cc9c65aff42c3a169791d32dfdbdbfb044aecb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '5676'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -32,7 +32,7 @@ AEM as a Cloud Service 提供以下進階網路選項：
 
 >[!CAUTION]
 >
->如果您已佈建舊版專用輸出技術並想設定這些進階網路選項之一，[聯絡 Adobe Client Care](https://experienceleague.adobe.com/?support-solution=Experience+Manager#home_zh-hant)。
+>如果您已佈建舊版專用輸出技術並想設定這些進階網路選項之一，[聯絡 Adobe Client Care](https://experienceleague.adobe.com/?support-solution=Experience+Manager#home)。
 >
 >嘗試使用舊版專用輸出技術設定進階網路時，可能會影響網站連線。
 
@@ -216,11 +216,11 @@ ProxyPassReverse "/somepath" "https://example.com:8443"
 
 在與 SaaS 廠商 (如 CRM 廠商) 整合或在 AEM as a Cloud Service 之外有提供 IP 位址允許清單的其他整合時，專用的 IP 位址可以增強安全性。新增專用的 IP 位址新增至允許清單，可確保只允許來自 AEM Cloud Service 的流量流向外部服務。這是在任何其他 IPS 所允許以外的流量。
 
-相同的專用IP會套用至方案中的所有環境，並套用至Author和Publish服務。
+相同的專用 IP 適用於程式中的所有環境，並且適用於製作和發佈服務。
 
 如果沒有啟用專用 IP 位址功能，來自 AEM as a Cloud Service 的流量會流經與其他 AEM as a Cloud Service 客戶共用的一組 IP。
 
-設定專用輸出 IP 位址類似[彈性連接埠輸出。](#flexible-port-egress) 主要區別在於設定後，流量一律從專用的的唯一 IP 輸出。若要尋找該 IP，請使用 DNS 解析器識別與 `p{PROGRAM_ID}.external.adobeaemcloud.com` 相關聯的 IP 位址。該 IP 位址預期不會變更，但如果必須變更會事先通知。
+設定專用輸出 IP 位址類似[彈性連接埠輸出。](#flexible-port-egress) 主要區別在於設定後，流量一律從專用的唯一 IP 輸出。若要尋找該 IP，請使用 DNS 解析器識別與 `p{PROGRAM_ID}.external.adobeaemcloud.com` 相關聯的 IP 位址。該 IP 位址預期不會變更，但如果必須變更會事先通知。
 
 >[!TIP]
 >
@@ -299,7 +299,7 @@ DriverManager.getConnection("jdbc:mysql://" + System.getenv("AEM_PROXY_HOST") + 
 <tbody>
   <tr>
     <td><b>Http 或 https 通訊協定</b></td>
-    <td>到Azure (*.windows.net)或Adobe服務的流量</td>
+    <td>到 Azure (*.windows.net) 或 Adobe 服務的流量</td>
     <td>任何</td>
     <td>流經共用叢集 IP (不是專用的 IP)</td>
     <td>adobe.io<br>api.windows.net</td>
