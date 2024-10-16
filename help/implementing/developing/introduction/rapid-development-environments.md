@@ -4,10 +4,10 @@ description: 瞭解如何使用快速開發環境在雲端環境中進行快速�
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 1289da67452be7fc0fa7f3126d2a3dbf051aa9b5
+source-git-commit: fd57437b16a87de2b279b0f8bc10c12a7d3f721a
 workflow-type: tm+mt
-source-wordcount: '4241'
-ht-degree: 4%
+source-wordcount: '4537'
+ht-degree: 3%
 
 ---
 
@@ -94,10 +94,38 @@ RDE可用於程式碼、內容以及Apache或Dispatcher設定。 不像一般的
    aio plugins:update
    ```
 
-1. 設定RDE外掛程式以使用您的組織、程式和環境。 以下的設定指令將以互動方式提供使用者組織內的程式清單，並顯示該程式中可供選擇的RDE環境。
+1. 使用aio使用者端登入。
 
    ```
    aio login
+   ```
+   登入資訊（代號）儲存在全域aio設定中，因此僅支援一個登入和組織。 如果您想要使用需要不同登入或組織的多個RDE，請遵循以下範例來介紹內容。
+
+   <details><summary>請依照此範例為其中一個RDE登入設定本機內容</summary>
+   若要將登入資訊本機儲存在特定前後關聯內目前目錄的.aio檔案中，請執行下列步驟。 設定上下文也是設定CI/CD環境或指令碼的聰明方法。  若要使用此功能，請確定至少使用aio-cli 10.3.1版。使用'npm install -g @adobe/aio-cli'更新
+
+   讓我們在呼叫登入命令之前，先建立名為「mycontext」的前後關聯，接著使用auth外掛程式將其設定為預設的前後關聯。
+
+   ```
+   aio config set --json -l "ims.contexts.mycontext" "{ cli.bare-output: false }"
+   aio auth ctx -s mycontext
+   aio login --no-open
+   ```
+
+
+   >[!NOTE]
+   > 包含`--no-open`選項的登入命令會在終端機中輸出URL，而不是開啟您的預設瀏覽器。 您可以透過瀏覽器的&#x200B;**無痕檢視**&#x200B;視窗複製並開啟它。 如此一來，您目前在一般瀏覽器視窗中登入的工作階段將維持不變，而且您可以確保使用內容所需的特定登入和組織。
+
+   第一個命令會在您的本機`.aio`組態檔中建立新的登入內容組態，稱為`mycontext` （視需要建立檔案）。 第二個命令會將內容`mycontext`設定為「目前」內容，即預設值。
+
+   設定好此組態後，登入命令會自動將登入權杖儲存在內容`mycontext`中，因此可保持其本機狀態。
+
+   將本機設定儲存在多個資料夾中，即可管理多個內容。 或者，也可以在單一組態檔案中設定多個前後關聯，並透過變更「目前」前後關聯在它們之間切換。
+   </details>
+
+1. 設定RDE外掛程式以使用您的組織、程式和環境。 以下的設定指令將以互動方式提供使用者組織內的程式清單，並顯示該程式中可供選擇的RDE環境。
+
+   ```
    aio aem:rde:setup
    ```
 
