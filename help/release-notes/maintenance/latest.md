@@ -6,8 +6,8 @@ feature: Release Information
 role: Admin
 source-git-commit: 6fa6fc9015624bec9113a198285531a3bdd7e29c
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '773'
+ht-degree: 97%
 
 ---
 
@@ -20,77 +20,77 @@ ht-degree: 0%
 
 以下摘要說明維護版本18175數的持續改善，該版本於2024年10月10日公開發佈。 之前的維護版本是版本 17964。由於問題，版本 18099 已設為私人版本。
 
-2024.10.0 功能啟用將提供此維護版本的完整功能集。如需詳細資訊，請參閱 [Experience Manager 發行藍圖](https://experienceleague.adobe.com/tw/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)。
+2024.10.0 功能啟用將提供此維護版本的完整功能集。如需詳細資訊，請參閱 [Experience Manager 發行藍圖](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)。
 
 ### 增強功能 {#enhancements-18175}
 
-* Assets-38322：啟用AEM的http要求事件。
-* Assets-41448：更新auth.ims套件組合以支援FI對群組的對應。
-* Assets-41684：新增OOB OSGI設定，以定義Assets、Foundation、Sites和Forms的FI與群組對應。
-* Assets-43015：更新至最新的auth.ims套件組合。
-* CQ-4356633：在「僅限內容」工具提示中新增額外字元。
-* GRANITE-50948：將存放庫服務整合到存放庫服務的AEM支援中。
-* GRANITE-52454：新增支援協助程式0.1.2。
-* GRANITE-52454：升級支援協助程式GRANITE-52454升級支援協助程式以使用AEMaaCS的最新版本。
-* GRANITE-53287：正在更新安全性許可權整合測試版本。
-* GRANITE-53485：復寫Azure Blob儲存體的支援服務主要驗證。
-* GRANITE-53514： Treeactivation已更新至1.0.26版。
-* GRANITE-53870：建立內部機制，以略過快速入門的最大JVM版本檢查。
-* GRANITE-53914：使用Java 17更新模組版本修正Platform測試失敗。
-* GRANITE-53966：對內容分發使用單獨的對話串池。
-* GRANITE-54006：將Jackson更新為2.17.2。
-* GRANITE-54038：將Creative Cloud企業IMS使用者端新增至AEM IMS使用者端允許清單。
-* GRANITE-54054： com.adobe.granite.repository.impl.SystemUserValidation warnOnly的環境變數。
-* GRANITE-54266：生產SDK缺少搜尋建議程式服務。
-* GRANITE-54274：接受FireflyIMS使用者端。
+* ASSETS-38322：為 AEM 啟用 http 請求事件。
+* ASSETS-41448：更新 auth.ims 套件組合以支援 FI 到群組對應。
+* ASSETS-41684：新增 OOB OSGI 設定以定義 FI 到 Assets、Foundation、Sites 和 Forms 的群組對應。
+* ASSETS-43015：更新到最新的 auth.ims 套件組合。
+* CQ-4356633：在「僅內容」工具提示中新增額外字元。
+* GRANITE-50948：將存放庫服務整合到存放庫服務的 AEM 支援中。
+* GRANITE-52454：新增支援協助程式 0.1.2。
+* GRANITE-52454：升級 Support Helper GRANITE-52454 升級支援協助程式以使用最新版 AEMaaCS。
+* GRANITE-53287：更新安全權限整合測試版本。
+* GRANITE-53485：支援複製 Azure Blob 儲存體的服務主體驗證。
+* GRANITE-53514：Treeactivation 更新至版本 1.0.26。
+* GRANITE-53870：建立內部機制以跳過快速入門的最大 JVM 版本檢查。
+* GRANITE-53914：修復使用 Java 17 更新模組版本後的平台測試失敗問題。
+* GRANITE-53966：使用單獨的執行緒池進行內容分發。
+* GRANITE-54006：更新 Jackson 至 2.17.2。
+* GRANITE-54038：將 Creative Cloud Enterprise IMS 用戶端新增至 AEM IMS 用戶端允許清單。
+* GRANITE-54054：com.adobe.granite.repository.impl.SystemUserValidation warnOnly 的環境變數。
+* GRANITE-54266：生產 SDK 缺少搜尋建議服務。
+* GRANITE-54274：接受 Firefly IMS 用戶端。
 * GRANITE-54300：更新 Oak 至最新的公開版本 (1.70.0)。
-* GUIDES-19069：新增guidesPeerLinkIndex for aem guides add on.
-* SITES-23584：修正Java 17上基礎元件的測試失敗。
-* SKYOPS-69768： SlingModels不會將ResourceResolvers還原序列化。
-* SKYOPS-76378：改善i18n中ResourceBundle註冊/取消註冊的對話串安全性。
-* SKYOPS-79285：將Sling XSS更新至2.4.2。
-* SKYOPS-82383：在命令執行描述項中公開「helm-values」convert-merge-analyze結果。
-* SKYOPS-84810：在RDE啟動時略過「40-initialize-publish.sh」執行。
-* SKYOPS-84951：修正可變內容總和檢查碼產生程式碼。
-* SKYOPS-85335：將org.apache.sling.jcr.repoinit更新至1.1.52。
-* SKYOPS-85336：將Sling Commons Threads更新至3.3.0。
-* SKYOPS-86329：更新平台測試模組版本，以支援java 21 sdk。
+* GUIDES-19069：為 AEM Guides 附加元件新增 guidesPeerLinkIndex。
+* SITES-23584：修正 Java 17 上 Foundation 元件測試失敗的問題。
+* SKYOPS-69768：SlingModel 無法還原序列化 ResourceResolvers。
+* SKYOPS-76378：改善 i18n 中 ResourceBundle 註冊/取消註冊的執行緒安全性。
+* SKYOPS-79285：更新 Sling XSS 至 2.4.2。
+* SKYOPS-82383：在命令執行描述項中公開「helm-values」轉換 - 合併 - 分析結果。
+* SKYOPS-84810：RDE 啟動時跳過「40-initialize-publish.sh」執行。
+* SKYOPS-84951：修復可變內容總和檢查碼產生程式碼。
+* SKYOPS-85335：將 org.apache.sling.jcr.repoinit 更新至 1.1.52。
+* SKYOPS-85336：將 Sling Commons 執行緒更新到 3.3.0。
+* SKYOPS-86329：更新平台測試模組的版本以支援 Java 21 SDK。
 
 ### 已修正的問題 {#fixed-issues-18175}
 
-* CNTBF-298：從CC匯出的套件中移除jcr：uuid。
-* SKYOPS-83910：修正SKYOPS-82371中發現的並行問題。
-* GRANITE-52876：更新至com.adobe.granite.ui.content 0.8.1448。
-* GUIDES-14445：原生PDF產生失敗，並出現與取得Node.js的相依性相關的錯誤。
-* GUIDES-16961：網頁編輯器的基準線和轉譯控制面板中無法解析含有`<conref>`的標題。
-* GUIDES-17283：選取&#x200B;**使用新增至topicmeta**&#x200B;選項的中繼資料時，中繼資料屬性不會傳播至原生PDF輸出的檔案屬性。
-* GUIDES-17793：在大量啟用已發佈內容期間，參考的PDF沒有從&#x200B;**大量Publish儀表板**&#x200B;啟用。
+* CNTBF-298：從 CC 匯出的封裝中移除 jcr:uuid。
+* SKYOPS-83910：修復在 SKYOPS-82371 中發現的並行性問題。
+* GRANITE-52876：更新到 com.adobe.granite.ui.content 0.8.1448。
+* GUIDES-14445：原生 PDF 產生失敗，出現與取得 Node.js 相依性相關的錯誤。
+* GUIDES-16961：標題中帶有 `<conref>` 的不會在 Web 編輯器的基線和翻譯儀表板中解析。
+* GUIDES-17283：選取「**使用在 topicmeta 中新增的中繼資料**」選項時，中繼資料屬性不會在原生 PDF 輸出的文件屬性中傳播。
+* GUIDES-17793：在大量啟動已發佈內容期間，不會從&#x200B;**大量發佈儀表板**&#x200B;啟動參考的 PDF。
 
-如需版本中修正之全新和增強型指南功能與問題的詳細資訊，請檢視[Experience Manager Guides發行藍圖](https://experienceleague.adobe.com/tw/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap)。
+如需更多有關該版本中 Guides 新增功能和增強功能以及已修復問題的資訊，請查看 [Experience Manager Guides 發行藍圖](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap)。
 
 ### 已知問題 {#known-issues-18175}
 
-* Forms-15818：在伺服器記錄檔中找不到元件描述項專案`OSGI-INF/com.adobe.aemfd.docmanager.impl.*.xml`的陳述式。 這些是無害的記錄陳述式。
+* FORMS-15818：元件描述項條目 `OSGI-INF/com.adobe.aemfd.docmanager.impl.*.xml` 在伺服器記錄中找不到陳述式。這些是無害的記錄陳述式。
 
 ### 已過時的功能和 API {#deprecated-18175}
 
  [已過時和移除的功能和 API](/help/release-notes/deprecated-removed-features.md) 文件中詳細介紹了 AEM as a Cloud Service 已過時和移除的功能和 API。
 
-以下是最近已棄用的功能或即將棄用的功能的摘要。
+以下是最近汰除或正在汰除的功能摘要。
 
-#### JavaScript使用API {#javascript-use-api}
+#### JavaScript Use API {#javascript-use-api}
 
-[JavaScript Use API](https://github.com/adobe/htl-spec/blob/master/SPECIFICATION.md#42-javascript-use-api)已正式淘汰，因為使用者需要偵錯和維護運用API的程式碼，而且與Java替代方案相比，存在效能限制。
+[JavaScript Use API](https://github.com/adobe/htl-spec/blob/master/SPECIFICATION.md#42-javascript-use-api) 已正式汰除，因為使用者在偵錯和維護利用 API 的程式碼時面臨挑戰，以及與 Java 替代方案相比存在效能限制。
 
-您應該轉換至[Java Use API，](https://experienceleague.adobe.com/en/docs/experience-manager-htl/content/java-use-api)，提供更優異的效能、更輕鬆的偵錯，以及更優異的長期支援。
+您應該轉換到 [Java Use API](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-htl/content/java-use-api)，它提供更好的性能、更輕鬆的偵錯和更強大的長期支援。
 
 #### com.day.cq.wcm.api {#com-day-cq-wcm-api}
 
-請注意，Adobe正在更新`com.day.cq.wcm.api`。 其某些方法和類別在目前版本中已標示為`@Deprecated`。 這些功能將在未來版本中移除。 請考慮改用他們建議的替代方案。
+請注意，Adobe 正在更新 `com.day.cq.wcm.api`。它的一些方法和類別在目前版本中已被標記為 `@Deprecated`。這些將在未來版本中刪除。請考慮改用建議的替代方案。
 
 #### org.apache.jackrabbit.oak.plugins.blob {#org.apache.jackrabbit.oak.plugins.blob}
 
-* GRANITE-54165：棄用公用API中的org.apache.jackrabbit.oak.plugins.blob。
+* GRANITE-54165：在公共 API 中汰除 org.apache.jackrabbit.oak.plugins.blob。
 
 ### 安全性修正 {#security-18175}
 
