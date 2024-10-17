@@ -4,9 +4,9 @@ description: 瞭解如何在AEM as a Cloud Service中將記錄轉送給Splunk和
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 3aafe41554fd86637e34687660fc48ea817b01d7
+source-git-commit: e450a58587ca4d7dff2ab229f522c7e7d4f3f20c
 workflow-type: tm+mt
-source-wordcount: '1603'
+source-wordcount: '1663'
 ht-degree: 0%
 
 ---
@@ -305,6 +305,12 @@ data:
 考量事項：
 
 * 依預設，連線埠為443。 您可以選擇使用名為`port`的屬性覆寫它。
+* 根據特定記錄，sourcetype欄位會有下列其中一個值： *aemaccess*，*aemerror*，
+  *aemrequest*，*aemdispatcher*，*aemhttpdaccess*，*aemhttpderror*，*aemcdn*
+
+>[!NOTE]
+>
+> [如果將](#legacy-migration)從舊版記錄轉送移轉到此自助模型，則傳送至您的Splunk索引的`sourcetype`欄位值可能已變更，因此請適當的調整。
 
 
 <!--
@@ -385,6 +391,10 @@ data:
 準備移轉時，只需依照前幾節所述設定YAML檔案即可。 使用Cloud Manager設定管道來部署至應套用設定的每個環境。
 
 我們建議（但非必要）將設定部署到所有環境，以便它們都處於自助控制之下。 如果沒有，您可能會忘記哪些環境已由Adobe設定，哪些是以自助方式設定。
+
+>[!NOTE]
+>
+>傳送至您Splunk索引的`sourcetype`欄位值可能已變更，因此請適當的調整。
 
 >[!NOTE]
 >
