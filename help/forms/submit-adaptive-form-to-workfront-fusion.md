@@ -6,9 +6,9 @@ topic-tags: author, developer
 feature: Adaptive Forms
 role: Admin, User
 exl-id: d3efb450-a879-40ae-8958-0040f99bdafc
-source-git-commit: 559b4afa975dcd2204cd06c95f19ed38da00033e
+source-git-commit: d0d7a10b2c1dadb0f8bfaa654db7993d3e5e6635
 workflow-type: tm+mt
-source-wordcount: '1255'
+source-wordcount: '1272'
 ht-degree: 3%
 
 ---
@@ -82,6 +82,10 @@ AEM Formsas a Cloud Service提供OOTB聯結器，用於連線並將最適化表�
 
 1. 按一下&#x200B;**[!UICONTROL [新增]**]以新增連線。 **[!UICONTROL 建立連線]**&#x200B;對話方塊就會顯示。
 
+>[!NOTE]
+>
+> 請確定技術帳戶是&#x200B;**forms-users**&#x200B;群組的成員；否則，新增webhook會失敗。
+
 #### 新增與webhook的連線 {#add-connection}
 
 ![新增連線](/help/forms/assets/workfront-add-connection.png)
@@ -126,7 +130,7 @@ AEM Formsas a Cloud Service提供OOTB聯結器，用於連線並將最適化表�
    > 
    >* 您也可選擇選取&#x200B;**擷取**&#x200B;按鈕，以擷取檔案中的私密金鑰或憑證。
 
-1. 按一下&#x200B;**「繼續」**。
+1. 按一下「**繼續**」。
 
    建立的連線開始出現在&#x200B;**[!UICONTROL 新增webhook]**&#x200B;對話方塊的&#x200B;**[!UICONTROL 連線]**&#x200B;的下拉式清單中。
 
