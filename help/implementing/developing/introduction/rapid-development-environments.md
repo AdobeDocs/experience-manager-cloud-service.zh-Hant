@@ -4,9 +4,9 @@ description: 瞭解如何使用快速開發環境在雲端環境中進行快速�
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: fd57437b16a87de2b279b0f8bc10c12a7d3f721a
+source-git-commit: 3c1cbf0930799c2919696465931bf7c1f76bf8bb
 workflow-type: tm+mt
-source-wordcount: '4537'
+source-wordcount: '4794'
 ht-degree: 3%
 
 ---
@@ -1052,3 +1052,17 @@ Forms開發人員可以使用AEM FormsCloud Service快速開發環境來快速�
 `aio cloudmanager:list-programs`
 
 這應該列出您設定之組織下的所有計畫，並確認您已指派正確的角色。
+
+### 使用已棄用的內容「aio-cli-plugin-cloudmanager」 {#aio-rde-plugin-troubleshooting-deprecatedcontext}
+
+由於「aio-cli-plugin-aem-rde」的歷史記錄，內容名稱「aio-cli-plugin-cloudmanager」已使用一段時間。 Rede外掛程式現在會使用IMS方式處理內容資訊，這表示有可在全域或本機儲存內容資訊的選項，而且如有需要，可將所有aio呼叫預設為已設定的預設值。 設定的預設前後關聯儲存在本機，可讓開發人員追蹤及使用資料夾內的個別前後關聯及其資訊。 如需詳細資訊，請閱讀[以上設定本機內容的範例](/help/implementing/developing/introduction/rapid-development-environments.md#installing-the-rde-command-line-tools)。
+
+同時使用外掛程式aio-cli-plugin-cloudmanager和aio-cli-plugin-aem-rde且想要將所有資訊儲存在相同上下文的開發人員，現在只能選擇以下選項：
+
+#### 繼續使用內容&#39;aio-cli-plugin-cloudmanager&#39;
+
+您仍可使用內容，RDE外掛程式中會顯示棄用警告。 可以使用```--quiet```模式省略此警告。 較新版本的RDE外掛程式將不再提供用於讀取內容「aio-cli-plugin-cloudmanager」的遞補功能。 若要繼續使用，只要將預設內容設定為&#39;aio-cli-plugin-cloudmanager&#39;即可，請參閱上述[設定本機內容的範例](/help/implementing/developing/introduction/rapid-development-environments.md#installing-the-rde-command-line-tools)。
+
+#### 將任何其他內容名稱也用於Cloud Manager外掛程式
+
+cloud manager外掛程式會提供引數，以定義要使用的內容。 目前尚不支援IMS預設內容設定。 若要這麼做，請使用[範例設定RDE外掛程式以設定本機內容](/help/implementing/developing/introduction/rapid-development-environments.md#installing-the-rde-command-line-tools)，並告訴Cloud Manager外掛程式在每次呼叫它時都使用&#39;myContext&#39; （例如```--imsContextName=myContext```）。
