@@ -7,9 +7,9 @@ user-guide-description: 了解 Experience Manager as a Cloud Service 的運作�
 breadcrumb-title: 使用手冊
 user-guide-title: AEM as a Cloud Service
 source-git-commit: 2d41b880ec3988b72128c7aac8b619c337a89427
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '5684'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -1072,7 +1072,7 @@ ht-degree: 99%
    + [產生變化版本](/help/generative-ai/generate-variations.md)
 + 實施 {#implementing}
    + [為 AEM as a Cloud Service 實施應用程式](/help/implementing/home.md)
-   + 使用Cloud Manager {#using-cloud-manager}
+   + 使用 Cloud Manager {#using-cloud-manager}
       + [導覽](/help/implementing/cloud-manager/navigation.md)
       + 方案 {#programs}
          + [方案和方案類型](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
@@ -1082,12 +1082,12 @@ ht-degree: 99%
          + [建立沙箱計畫](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md)
          + [編輯計畫](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)
          + [休眠環境](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md)
-      + 建立AEM應用程式專案{#create-application-project}
+      + 建立 AEM 應用程式專案 {#create-application-project}
          + [專案建立精靈](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md)
          + [專案設定](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md)
          + [組建環境](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)
       + [管理環境](/help/implementing/cloud-manager/manage-environments.md)
-      + 管理您的程式碼{#managing-code}
+      + 管理您的代碼 {#managing-code}
          + [Maven 專案版本處理](/help/implementing/cloud-manager/managing-code/project-version-handling.md)
          + [管理 Cloud Manager 中的存放庫](/help/implementing/cloud-manager/managing-code/managing-repositories.md)
          + [新增 Adobe 存放庫](/help/implementing/cloud-manager/managing-code/adobe-repositories.md)
@@ -1102,13 +1102,13 @@ ht-degree: 99%
          + [GitHub 檢查附註](/help/implementing/cloud-manager/managing-code/github-annotations.md)
       + [環境變數](/help/implementing/cloud-manager/environment-variables.md)
       + Cloud Manager CI-CD 管道 {#cicd-pipelines}
-         + [CI-CD管道簡介](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
+         + [CI-CD 管道簡介](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
          + [設定生產管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)
          + [設定非生產管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
          + [管理管道](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md)
          + [管道變數](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md)
       + [部署您的程式碼](/help/implementing/cloud-manager/deploy-code.md)
-      + 瞭解測試結果{#test-results}
+      + 瞭解測試結果 {#test-results}
          + [概觀](/help/implementing/cloud-manager/overview-test-results.md)
          + [程式碼品質測試](/help/implementing/cloud-manager/code-quality-testing.md)
          + [自訂程式碼品質規則](/help/implementing/cloud-manager/custom-code-quality-rules.md)
