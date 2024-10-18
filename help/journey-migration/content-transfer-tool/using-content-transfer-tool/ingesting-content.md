@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: ec80660d45c69363690b653dd54634c74c3c9907
 workflow-type: tm+mt
 source-wordcount: '3137'
-ht-degree: 11%
+ht-degree: 12%
 
 ---
 
@@ -229,12 +229,12 @@ AEM中的每個節點都必須有唯一的uuid。 此錯誤指出正在擷取的
 >
 >[Best Practices Analyzer](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md) 2.1.50+版會報告包含超過大小上限Unicode字元的大型節點。 請確定您執行的是最新版本。 2.1.50之前的BPA版本將無法識別並報告這些大型節點，而且您必須使用上述的先決條件Oak工具個別探索這些節點。
 
-### 由於非預期的間歇性錯誤而導致擷取失敗 {#ingestion-failure-due-to-unexpected-intermittent-errors}
+### 因預期外的間歇性錯誤導致擷取失敗 {#ingestion-failure-due-to-unexpected-intermittent-errors}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_cam_ingestion_troubleshooting_intermittent_errors"
->title="未預期的間歇性錯誤"
->abstract="有時可能會發生非預期的間歇性下游服務錯誤，不幸的是，唯一的補救方法就是重試擷取。"
+>title="預期外的間歇性錯誤"
+>abstract="有時可能會發生預期外的間歇性下游服務錯誤，而不幸的是，唯一能做的處理方法就是重新嘗試一次擷取動作。"
 
 有時，非預期的間歇性問題可能會導致擷取失敗，很遺憾，唯一的補救方法就是重試擷取。 調查擷取記錄以找出失敗的原因，並檢視它是否符合下面列出的任何錯誤，其中應嘗試重試。
 

@@ -1,6 +1,6 @@
 ---
 title: 自訂程式碼品質規則
-description: 瞭解Cloud Manager以Adobe Experience Manager工程最佳實務為基礎的自訂程式碼品質規則，透過徹底測試確保高品質的程式碼。
+description: 了解 Cloud Manager 根據 Adobe Experience Manager Engineering 最佳實務的自訂程式碼品質規則，以透過徹底的測試確保高品質的程式碼。
 exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
 solution: Experience Manager
 feature: Cloud Manager, Developing
@@ -8,7 +8,7 @@ role: Admin, Architect, Developer
 source-git-commit: 2573eb5f8a8ff21a8e30b94287b554885cd1cd89
 workflow-type: tm+mt
 source-wordcount: '4421'
-ht-degree: 66%
+ht-degree: 67%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 66%
 >[!CONTEXTUALHELP]
 >id="aemcloud_nonbpa_customcodequalityrules"
 >title="自訂程式碼品質規則"
->abstract="瞭解Cloud Manager以Adobe Experience Manager工程最佳實務為基礎的自訂程式碼品質規則，透過徹底測試確保高品質的程式碼。"
+>abstract="了解 Cloud Manager 根據 Adobe Experience Manager Engineering 最佳實務的自訂程式碼品質規則，以透過徹底的測試確保高品質的程式碼。"
 
 瞭解Cloud Manager以Adobe Experience Manager工程最佳實務為基礎的自訂程式碼品質規則，透過徹底測試確保高品質的程式碼。 另請參閱[程式碼品質測試](/help/implementing/cloud-manager/code-quality-testing.md)。
 
