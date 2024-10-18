@@ -4,7 +4,7 @@ description: 瞭解如何使用快速開發環境在雲端環境中進行快速�
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 3c1cbf0930799c2919696465931bf7c1f76bf8bb
+source-git-commit: e508ba2fcb709b1925b490bdb3e1a8774068927c
 workflow-type: tm+mt
 source-wordcount: '4794'
 ht-degree: 3%
@@ -99,6 +99,7 @@ RDE可用於程式碼、內容以及Apache或Dispatcher設定。 不像一般的
    ```
    aio login
    ```
+
    登入資訊（代號）儲存在全域aio設定中，因此僅支援一個登入和組織。 如果您想要使用需要不同登入或組織的多個RDE，請遵循以下範例來介紹內容。
 
    <details><summary>請依照此範例為其中一個RDE登入設定本機內容</summary>
@@ -111,7 +112,6 @@ RDE可用於程式碼、內容以及Apache或Dispatcher設定。 不像一般的
    aio auth ctx -s mycontext
    aio login --no-open
    ```
-
 
    >[!NOTE]
    > 包含`--no-open`選項的登入命令會在終端機中輸出URL，而不是開啟您的預設瀏覽器。 您可以透過瀏覽器的&#x200B;**無痕檢視**&#x200B;視窗複製並開啟它。 如此一來，您目前在一般瀏覽器視窗中登入的工作階段將維持不變，而且您可以確保使用內容所需的特定登入和組織。
@@ -153,8 +153,8 @@ Setup the CLI configuration necessary to use the RDE commands.
 選取本機或全域組態後，setup命令會嘗試從您目前的登入讀取您的組織id，然後讀取組織的程式。 如果找不到組織，您可以手動輸入，並附上一些指引。
 
 ```
- Selected only organization: XYXYXYXYXYXYXYXXYY
- retrieving programs of your organization ...
+Selected only organization: XYXYXYXYXYXYXYXXYY
+retrieving programs of your organization ...
 ```
 
 擷取程式後，使用者可以從清單中選取，也可以鍵入以進行篩選。
@@ -248,7 +248,6 @@ RDE一次支援一個專案。 由於程式碼會從本機開發環境同步至R
 * 如需命令的詳細說明，請輸入：
 
   `aio aem rde <command> --help`
-
 
 ### 全域旗標 {#global-flags}
 
@@ -507,7 +506,7 @@ RDE CLI也有自己的記錄命令，可用來快速設定應該記錄哪些類�
 >
 >如果您在播放作者服務的記錄檔命令時看到錯誤`RDECLI:UNEXPECTED_API_ERROR`，請重設您的環境，然後再試一次。 如果您的最新重設作業是在2024年5月底之前，則會擲回此錯誤。
 >
-```
+>```
 >aio aem:rde:reset
 >```
 
@@ -683,6 +682,7 @@ RDE重設程式啟動後，通常需要幾分鐘才能完成並將環境恢復�
   }
 }
 ```
+
 </details>
 
 ### 安裝 {#install}
@@ -723,6 +723,7 @@ RDE重設程式啟動後，通常需要幾分鐘才能完成並將環境恢復�
   ]
 }
 ```
+
 </details>
 
 ### 刪除 {#delete}
@@ -901,6 +902,7 @@ RDE重設程式啟動後，通常需要幾分鐘才能完成並將環境恢復�
   ]
 }
 ```
+
 </details>
 
 ### 重設 {#reset}
@@ -931,6 +933,7 @@ RDE重設程式啟動後，通常需要幾分鐘才能完成並將環境恢復�
   "status": "reset"
 }
 ```
+
 </details>
 
 ### 重新啟動 {#restart}
