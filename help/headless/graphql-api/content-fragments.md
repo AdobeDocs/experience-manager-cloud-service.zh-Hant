@@ -4,10 +4,10 @@ description: 了解如何將 Adobe Experience Manager (AEM) as a Cloud Service �
 feature: Headless, Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 role: Admin, Developer
-source-git-commit: 4492536120989423b639bbb75105568a9c328507
-workflow-type: ht
-source-wordcount: '5469'
-ht-degree: 100%
+source-git-commit: 32803bc4304e55ccf0a618236e482cb42aa88e27
+workflow-type: tm+mt
+source-wordcount: '5557'
+ht-degree: 98%
 
 ---
 
@@ -929,6 +929,15 @@ GraphQL for AEM Content Fragments 可讓您要求 AEM Dynamic Media (Scene7) 資
 GraphQL 中的解決方案代表您可以：
 
 * 在 `ImageRef` 參考中使用 `_dmS7Url`
+   * 請參閱[依URL傳送Dynamic Media資產的範例查詢 — 影像參考](#sample-query-dynamic-media-asset-delivery-by-url-imageref)
+* 在多個參考上使用`_dmS7Url`；`ImageRef`、`MultimediaRef`和`DocumentRef`
+   * 請參閱[依URL傳送Dynamic Media資產的範例查詢 — 多個參考](#sample-query-dynamic-media-asset-delivery-by-url-multiple-refs)
+
+* 搭配智慧型裁切功能使用`_dmS7Url`
+
+   * `_smartCrops`屬性會公開特定資產可用的智慧型裁切設定
+
+   * 請參閱依URL的Dynamic Media資產傳遞[範例查詢 — 使用智慧型裁切](#sample-query-dynamic-media-asset-delivery-by-url-smart-crop)
 
 >[!NOTE]
 >
@@ -1011,6 +1020,36 @@ query allTeams {
     }
   }
 }
+```
+
+### 依URL的Dynamic Media資產傳遞的範例查詢 — 使用智慧型裁切 {#sample-query-dynamic-media-asset-delivery-by-url-smart-crop}
+
+以下是範例查詢：
+
+* 以公開可用於請求資產的智慧型裁切設定
+
+```graphql
+query allTeams {
+  teamList {
+    items {
+      title
+      teamMembers {
+        profilePicture {
+          ... on ImageRef {
+            height
+            width
+            _dmS7Url
+            _smartCrops {
+              width
+              height
+              name
+            }
+          }
+        }
+      }
+    }
+  }
+} 
 ```
 
 ## GraphQL for AEM - 擴充功能摘要 {#graphql-extensions}
