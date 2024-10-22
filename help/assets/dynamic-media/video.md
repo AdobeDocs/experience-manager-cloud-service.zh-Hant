@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Video Profiles,Best Practices
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 7a370ee0ab77046d128ae260af2575d50e655254
+source-git-commit: c142ac7ad12179dd842ce6c81cc4d97ece36a197
 workflow-type: tm+mt
-source-wordcount: '10490'
+source-wordcount: '10543'
 ht-degree: 1%
 
 ---
@@ -440,7 +440,7 @@ Dynamic Media建議使用MP4 H.264視訊編碼預設集。 由於MP4檔案使用
 
 **若要檢視視訊報告：**
 
-1. 在Experience Manager的左上角，選取Experience Manager標誌。 在左側導軌中，移至&#x200B;**[!UICONTROL 工具]** （槌子圖示） > **[!UICONTROL Assets]** > **[!UICONTROL 視訊報告]**。
+1. 在Experience Manager的左上角，選取Experience Manager標誌。 在左側導軌中，按一下![槌子圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Hammer_18_N.svg) > **[!UICONTROL Assets]** > **[!UICONTROL 視訊報表]**。
 1. 在「視訊報表」頁面上，執行下列任一項作業：
 
    * 在右上角附近，選取&#x200B;**[!UICONTROL 重新整理視訊報告]**圖示。
@@ -532,7 +532,7 @@ See [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8
 
 | 功能 | 說明 |
 | --- | --- |
-| 虛線 | DASH (Digital Adaptive Streaming over HTTP)是視訊串流的國際標準，被廣泛採用於不同的視訊檢視器中。 當您的帳戶啟用DASH時，您可以選擇使用DASH或HLS進行最適化視訊串流。 或者，當您在檢視器預設集中選取&#x200B;**[!UICONTROL auto]**&#x200B;作為播放型別時，可以選擇在播放器之間自動切換。<br>在您的帳戶上啟用DASH的一些主要優點包括：<br>·封裝DASH串流視訊以進行最適化位元速率串流。 此方法可提高傳遞效率。 最適化串流可確保為客戶提供最佳檢視體驗。<br>·使用Dynamic Media播放器最佳化的瀏覽器串流可在HLS和DASH串流之間切換，以確保最佳服務品質。 使用Safari瀏覽器時，視訊播放器會自動切換至HLS。<br>·您可以編輯視訊檢視器預設集，以設定您偏好的串流方法（HLS或DASH）。<br>·最佳化的視訊編碼可確保啟用DASH功能時不會使用額外的儲存空間。 會針對HLS和DASH建立單一視訊編碼集，以最佳化視訊儲存成本。<br>·協助讓您的客戶更容易存取視訊傳送。<br>·也透過API取得串流URL。 |
+| 虛線 | DASH (Digital Adaptive Streaming over HTTP)是視訊串流的國際標準，被廣泛採用於不同的視訊檢視器中。 當您的帳戶啟用DASH時，您可以選擇使用DASH或HLS進行最適化視訊串流。 或者，當您在檢視器預設集中選取&#x200B;**[!UICONTROL auto]**&#x200B;作為播放型別時，可以選擇在播放器之間自動切換。<br>在您的帳戶上啟用DASH的一些主要優點包括：<ul><li>封裝DASH串流視訊，以進行最適化位元速率串流。 此方法可提高傳遞效率。 最適化串流可確保為客戶提供最佳檢視體驗。</li><li>使用Dynamic Media播放器最佳化的瀏覽器串流可在HLS和DASH串流之間切換，以確保最佳服務品質。 使用Safari瀏覽器時，視訊播放器會自動切換至HLS。</li><li>您可以編輯視訊檢視器預設集，以設定您偏好的串流方法（HLS或DASH）。</li><li>最佳化的視訊編碼可確保啟用DASH功能時不會使用額外的儲存空間。 會針對HLS和DASH建立單一視訊編碼集，以最佳化視訊儲存成本。</li><li>協助讓客戶更容易存取視訊傳送。</li><li>也透過API取得串流URL。</li></ul> |
 | 多字幕和音訊曲目 | 自動啟用多重註解和音訊追蹤支援，讓您受益匪淺。 啟用後，您上傳的所有後續視訊都會透過新的後端架構進行處理，包括支援在視訊中新增多個註解和音訊曲目。 |
 | AI產生的註解（可用性限制） | 為AI支援的視訊建立註解。 它會使用AI建立視訊的文字稿，並將其轉換為註解。 甚至時間軸也會定義。 |
 
@@ -554,7 +554,7 @@ See [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8
 1. 「Adobe客戶支援」會根據提交請求的順序，將您新增至「客戶等候清單」。
 1. 當Adobe準備好處理您的請求時，客戶支援聯絡您以協調並設定啟用的目標日期。
 1. Adobe客戶支援會在完成後通知您。
-1. 現在，執行下列任一項作業：
+1. 現在，執行下列一或多個動作：
 
    * 照常建立您的[視訊檢視器預設集](/help/assets/dynamic-media/managing-viewer-presets.md#creating-a-new-viewer-preset)。
    * 照常建立您的[視訊設定檔](/help/assets/dynamic-media/video-profiles.md)。
@@ -708,8 +708,8 @@ Dynamic Media](/help/assets/file-format-support.md)和所有Dynamic Media視訊�
 
 1. [將您的主要視訊上傳至已指派視訊設定檔的資料夾](/help/assets/manage-video-assets.md#upload-and-preview-video-assets)。
 1. 導覽至您要新增多個標題和音訊曲目的上傳視訊資產。
-1. 在資產選取模式中，從「清單檢視」或「卡片檢視」中選取視訊資產。
-1. 在工具列上，按一下「屬性」圖示（內有「i」的圓形）。
+1. 在資產選擇模式中，從![檢視卡片圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewCard_18_N.svg) （卡片檢視）或![檢視清單圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewList_18_N.svg) （清單檢視），選取視訊資產。
+1. 在工具列上，按一下![資訊圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Info_18_N.svg)屬性。
    ![選取的視訊資產在視訊縮圖影像上加上核取記號，並在工具列上反白顯示「檢視屬性」。](/help/assets/dynamic-media/assets/msma-selectedasset-propertiesbutton.png)*在卡片檢視中選取的視訊資產。*
 1. 在視訊的[內容]頁面上，選取&#x200B;**[!UICONTROL 註解與音軌]**&#x200B;標籤。
 
@@ -722,12 +722,12 @@ Dynamic Media](/help/assets/file-format-support.md)和所有Dynamic Media視訊�
    >完成上述任一項工作後，請回到這些步驟。
 
    在[屬性]頁面上的![註解與音訊曲目索引標籤。](/help/assets/dynamic-media/assets/msma-audiotracks.png)
-   *視訊的[內容]頁面上的[字幕與音軌]索引標籤。*
+   在視訊的[內容]頁面上，*註解與音訊曲目索引標籤。*
 
 1. 若要將一或多個音訊曲目新增至視訊，請執行下列動作：
    1. 選取&#x200B;**[!UICONTROL 上傳音軌]**。
    1. 導覽至一或多個.mp3檔案並加以選取，然後開啟。
-   1. 若要在媒體播放器的&#x200B;**[!UICONTROL 選取音訊或標題]**&#x200B;快顯清單中看到音訊曲目，您必須新增每個音訊曲目檔案的必要詳細資料。 這樣做可確保正確列出所有音訊曲目並加以存取。 選取音軌檔案名稱右側的鉛筆圖示。 在&#x200B;**編輯音軌**&#x200B;對話方塊中，輸入下列必要的詳細資料：
+   1. 若要在媒體播放器的&#x200B;**[!UICONTROL 選取音訊或標題]**&#x200B;快顯清單中看到音訊曲目，您必須新增每個音訊曲目檔案的必要詳細資料。 這樣做可確保正確列出所有音訊曲目並加以存取。 按一下音軌檔案名稱右邊的![繪圖圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Draw_18_N.svg)。 在&#x200B;**編輯音軌**&#x200B;對話方塊中，輸入下列必要的詳細資料：
 
       | 音訊曲目中繼資料 | 說明 |
       |--- |--- |
@@ -758,7 +758,7 @@ Dynamic Media](/help/assets/file-format-support.md)和所有Dynamic Media視訊�
 
    1. 在頁面的右上角附近，按一下&#x200B;**[!UICONTROL 建立標題]** > **[!UICONTROL 上傳檔案]**。
    1. 瀏覽並選取一或多個既有的`.vtt`檔案，然後開啟這些檔案。
-   1. 若要在媒體播放器上顯示註解，您&#x200B;*必須*&#x200B;新增您上傳的每個&#x200B;*註解檔案的必要詳細資料*。 選取註解檔案名稱右側的鉛筆圖示。 在&#x200B;**編輯標題**&#x200B;對話方塊中，輸入下列檔案的必要詳細資訊：
+   1. 若要在媒體播放器上顯示註解，您&#x200B;*必須*&#x200B;新增您上傳的每個&#x200B;*註解檔案的必要詳細資料*。 按一下標題檔案名稱右側的![繪圖圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Draw_18_N.svg)。 在&#x200B;**編輯標題**&#x200B;對話方塊中，輸入下列檔案的必要詳細資訊：
 
       | 標題中繼資料 | 說明 |
       |--- |--- |
@@ -791,8 +791,8 @@ Dynamic Media](/help/assets/file-format-support.md)和所有Dynamic Media視訊�
 
       | 選項 | 說明 |
       |--- |--- |
-      | 要轉換的音軌 | 在下拉式清單中，選取您想要使用AI產生註解的上傳音訊曲目檔案。 |
-      | 輸出語言 | 在下拉式清單中，選取您要顯示註解檔案的一或多個語言。<br>若要移除選取的語言，請按一下&#x200B;**X**。<br>在視訊播放期間，語言清單會依照您在這裡選取的順序顯示在媒體播放器中。 |
+      | 要轉換的音軌 | 按一下![「向下V形」圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronDown_18_N.svg)，然後選擇您要使用AI產生字幕的上傳音訊曲目檔案。 |
+      | 輸出語言 | 按一下![向下V形圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronDown_18_N.svg)，然後選取您要顯示註解檔案的一或多個語言。<br>若要移除選取的語言，請按一下![關閉圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Close_18_N.svg)。<br>在視訊播放期間，語言清單會依照您在這裡選取的順序顯示在媒體播放器中。 |
 
    1. 按一下&#x200B;**[!UICONTROL 「完成」]**。
    1. 在頁面右上角附近，在&#x200B;**[!UICONTROL 儲存並關閉]**&#x200B;下拉式清單中，按一下&#x200B;**[!UICONTROL 儲存]**。
@@ -802,7 +802,7 @@ Dynamic Media](/help/assets/file-format-support.md)和所有Dynamic Media視訊�
       >
       >根據您執行個體的快取設定，中繼資料處理可能需要幾分鐘時間，才會反映在預覽和已發佈的URL中。
 
-   1. （選擇性）選取註解檔案名稱右側的鉛筆圖示。 在&#x200B;**編輯標題**&#x200B;對話方塊中，您可以編輯檔案的下列詳細資料：
+   1. （選擇性）按一下註解檔案名稱右側的![繪圖圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Draw_18_N.svg)。 在&#x200B;**編輯標題**&#x200B;對話方塊中，您可以編輯檔案的下列詳細資料：
 
       | 標題中繼資料 | 說明 |
       | --- | --- |
@@ -821,12 +821,12 @@ Dynamic Media](/help/assets/file-format-support.md)和所有Dynamic Media視訊�
       ![翻譯字幕對話方塊。](/help/assets/dynamic-media/assets/msma-translate-captions.png)
       *「翻譯註解」對話方塊可讓您使用現有的註解檔案，讓AI以多種語言產生新的註解檔案。*
 
-   1. 在&#x200B;**翻譯註解**&#x200B;對話方塊中，設定下列選項：
+   1. 在&#x200B;**翻譯字幕**&#x200B;對話方塊中，設定下列選項：
 
       | 選項 | 說明 |
       |--- |--- |
-      | 要翻譯的標題 | 在下拉式清單中，選擇您要使用AI產生註解的註解檔案。 |
-      | 輸出語言 | 在下拉式清單中，選取您要顯示註解檔案的一或多個語言。<br>若要移除選取的語言，請按一下&#x200B;**X**。<br>在視訊播放期間，語言清單會依照您在這裡選取的順序顯示在媒體播放器中。 |
+      | 要翻譯的標題 | 按一下![向下V形圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronDown_18_N.svg)，然後選擇您要使用AI產生註解的註解檔案。 |
+      | 輸出語言 | 按一下![向下V形圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronDown_18_N.svg)，然後選取您要顯示註解檔案的一或多個語言。<br>若要移除選取的語言，請按一下![關閉圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Close_18_N.svg)。<br>在視訊播放期間，語言清單會依照您在這裡選取的順序顯示在媒體播放器中。 |
 
    1. 按一下&#x200B;**[!UICONTROL 「完成」]**。
    1. 在頁面右上角附近，在&#x200B;**[!UICONTROL 儲存並關閉]**&#x200B;下拉式清單中，按一下&#x200B;**[!UICONTROL 儲存]**。
@@ -836,7 +836,7 @@ Dynamic Media](/help/assets/file-format-support.md)和所有Dynamic Media視訊�
       >
       >根據您執行個體的快取設定，中繼資料處理可能需要幾分鐘時間，才會反映在預覽和已發佈的URL中。
 
-   1. （選擇性）選取註解檔案名稱右側的鉛筆圖示。 在&#x200B;**編輯標題**&#x200B;對話方塊中，您可以編輯檔案的下列詳細資料：
+   1. （選擇性）按一下註解檔案名稱右側的![繪圖圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Draw_18_N.svg)。 在&#x200B;**編輯標題**&#x200B;對話方塊中，您可以編輯檔案的下列詳細資料：
 
       | 標題中繼資料 | 說明 |
       | --- | --- |
@@ -888,11 +888,12 @@ Dynamic Media支援透過URL修飾元在視訊中新增單一標題。 請參閱
 **若要檢視視訊的生命週期狀態：**
 
 1. 導覽至您要檢視其生命週期狀態的視訊資產。
-1. 在資產選取模式中，從「清單檢視」或「卡片檢視」中選取視訊資產。
-1. 在工具列上，選取「屬性」圖示（內有「i」的圓形）。
-1. 在[內容]頁面上，選取&#x200B;**[!UICONTROL 註解與音軌]**&#x200B;標籤。 在「狀態」欄中，記下每個註解或音訊檔案的狀態。
+1. 在資產選擇模式中，從![檢視卡片圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewCard_18_N.svg) （卡片檢視）或![檢視清單圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewList_18_N.svg) （清單檢視），選取視訊資產。
+1. 在工具列上，按一下![資訊圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Info_18_N.svg)屬性。
+1. 在&#x200B;**屬性**&#x200B;頁面上，選取&#x200B;**[!UICONTROL 註解與音軌]**&#x200B;索引標籤。
+1. 在&#x200B;**[!UICONTROL 狀態]**&#x200B;欄中，記下每個註解或音訊檔案的狀態。
 
-| 註解或音訊曲目狀態 | 說明 |
+| 註解與音訊曲目的狀態 | 說明 |
 | --- | --- |
 | 處理中 | 新增並儲存新的註解或音訊曲目檔案時，檔案會進入「正在處理」狀態。 Dynamic Media會將串流資訊清單附加至主要視訊，以處理檔案。 |
 | 已處理 | 處理完成後，註解或音訊曲目檔案，或與主要視訊相關的原始音訊曲目會以「已處理」狀態出現。 您可以預覽標題和音訊曲目檔案，這些檔案在您發佈視訊上線&#x200B;*之前*&#x200B;顯示為「已處理」。 |
@@ -900,7 +901,6 @@ Dynamic Media支援透過URL修飾元在視訊中新增單一標題。 請參閱
 | 已失敗 | 「失敗」狀態表示字幕或音訊曲目檔案的處理未完成。 請刪除註解或音訊曲目檔案，然後重新上傳。 |
 | 已取消發佈 | 明確取消發佈已發佈的主要視訊時，您新增至視訊的任何註解或音訊追蹤檔案也會取消發佈。 |
 
-![標題和音訊曲目欄位中反白顯示的狀態列。](/help/assets/dynamic-media/assets/msma-lifecycle-status.png)*每個已上傳的註解和音訊曲目檔案的生命週期狀態。*
 
 ### 為具有多個音軌的視訊設定預設音訊
 
@@ -918,16 +918,16 @@ Dynamic Media支援透過URL修飾元在視訊中新增單一標題。 請參閱
 **若要為具有多個音軌的視訊設定預設音訊：**
 
 1. 導覽至您要設定其預設音訊曲目的視訊資產。
-1. 在資產選取模式中，從「清單檢視」或「卡片檢視」中選取視訊資產。
-1. 在工具列上，選取「屬性」圖示（內有「i」的圓形）。
+1. 在資產選擇模式中，從![檢視卡片圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewCard_18_N.svg) （卡片檢視）或![檢視清單圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewList_18_N.svg) （清單檢視），選取視訊資產。
+1. 在工具列上，按一下![資訊圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Info_18_N.svg)屬性。
 1. 在[內容]頁面上，選取&#x200B;**[!UICONTROL 註解與音軌]**&#x200B;標籤。
 1. 在&#x200B;**音軌**&#x200B;標題下，選取您要設定為視訊預設的音軌檔案。
-1. 選取&#x200B;**[!UICONTROL 設定為預設值]**。
-在**設定為預設值**&#x200B;對話方塊中，選取&#x200B;**[!UICONTROL 取代]**。
+1. 按一下![音訊圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Audio_18_N.svg) **[!UICONTROL 設定為預設值]**。
+1. 在&#x200B;**設定為預設值**&#x200B;對話方塊中，按一下&#x200B;**[!UICONTROL 取代]**。
 
    ![音訊曲目標題具有選取的音訊曲目檔案名稱，並反白顯示[設定為預設]按鈕。](/help/assets/dynamic-media/assets/msma-defaultaudiotrack.png)*正在設定視訊的預設音軌。*
 
-1. 在右上角，選取&#x200B;**[!UICONTROL 儲存並關閉]**。
+1. 按一下右上角的&#x200B;**[!UICONTROL 儲存並關閉]**。
 1. Publish影片。 檢視[Publish資產](publishing-dynamicmedia-assets.md)。
 
 ### 預覽含有多個字幕和音訊曲目的視訊 {#preview-video-audio-subtitle}
@@ -947,22 +947,21 @@ Dynamic Media支援透過URL修飾元在視訊中新增單一標題。 請參閱
 **若要預覽含有多個字幕和音軌的視訊：**
 
 1. 在&#x200B;**[!UICONTROL Assets]**&#x200B;中，導覽至您已新增多個字幕和音軌的現有視訊。
-1. 按一下視訊資產，以便您可以在預覽模式中將其開啟。
-1. 在預覽頁面，在頁面的左上角附近，選取下拉式清單，然後選取&#x200B;**[!UICONTROL 檢視器]**。
+1. 按一下視訊資產，以在預覽模式中開啟。
+1. 在預覽頁面上，在頁面左上角附近，按一下![左側邊欄圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_RailLeft_18_N.svg) ![向下V形圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronDown_18_N.svg)，然後選取&#x200B;**[!UICONTROL 檢視器]**。
 
    顯示[檢視器]選項的![下拉式清單。](/help/assets/dynamic-media/assets/msma-selectviewers.png)
 
-1. 從「檢視器」清單中，選取您要用於視訊預覽的檢視器。 例如，下列熒幕擷圖顯示正在選取&#x200B;**[!UICONTROL 視訊]**&#x200B;檢視器。
+1. 在頁面的左上角附近，按一下![左側邊欄圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_RailLeft_18_N.svg)檢視器![向下V形圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronDown_18_N.svg)，然後選取您要用於視訊預覽的檢視器。
 
-   ![從[檢視器]下拉式清單選取視訊檢視器。](/help/assets/dynamic-media/assets/msma-dmviewerselected.png)
-
-1. 在右下角附近，在音量圖示的左側，選取語音泡泡圖示，然後選取您要聽到的音訊或註解，或視見或兩者皆選。 如有需要，您可以在「註解」底下，按一下&#x200B;**[!UICONTROL 關閉]**&#x200B;以停用任何註解的顯示。
+1. 在頁面的右下角附近，按一下語音泡泡圖示，然後選取您要聽到的音訊或字幕/註解，或同時選取兩者。
 
    ![視訊檢視器中的音訊和註解快顯清單。](/help/assets/dynamic-media/assets/msma-selectaudiosubtitle.png)*模擬使用者選取視訊播放的音訊和標題。*
 
-1. 若要開始播放，請選取視訊的&#x200B;**[!UICONTROL 播放]**按鈕。
-記下左下角的**[!UICONTROL URL]**&#x200B;和&#x200B;**[!UICONTROL Embed]**&#x200B;按鈕。 使用這些按鈕分別將視訊的URL[連結至您的網頁應用程式](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)或[將視訊內嵌至網頁](/help/assets/dynamic-media/embed-code.md)。
-1. 在預覽頁面的右上角附近，選取&#x200B;**[!UICONTROL 關閉]**。
+1. 若要開始播放，請按一下![光碟機圖示](https://spectrum.adobe.com/static/icons/workflow_22/Smock_PlayCircle_22_N.svg)。
+如有需要，請按一下![最大化圖示](https://spectrum.adobe.com/static/icons/workflow_22/Smock_Maximize_22_N.svg)以最大化檢視視窗。
+請注意頁面左下角附近的**[!UICONTROL URL]**&#x200B;和&#x200B;**[!UICONTROL Embed]**&#x200B;按鈕。 使用這些按鈕分別將視訊的URL[連結至您的網頁應用程式](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)或[將視訊內嵌至網頁](/help/assets/dynamic-media/embed-code.md)。
+1. 在預覽頁面的右上角附近，按一下&#x200B;**[!UICONTROL 關閉]**。
 
 ### 從視訊中刪除註解或音訊曲目檔案
 
@@ -973,13 +972,13 @@ Dynamic Media支援透過URL修飾元在視訊中新增單一標題。 請參閱
 **若要刪除視訊的標題或音訊曲目檔案：**
 
 1. 導覽至您要設定其預設音訊曲目的視訊資產。
-1. 在資產選取模式中，從「清單檢視」或「卡片檢視」中選取視訊資產。
-1. 在工具列上，選取「屬性」圖示（內有「i」的圓形）。
+1. 在資產選擇模式中，從![檢視卡片圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewCard_18_N.svg) （卡片檢視）或![檢視清單圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewList_18_N.svg) （清單檢視），選取視訊資產。
+1. 在工具列上，按一下![資訊圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Info_18_N.svg)屬性。
 1. 在[內容]頁面上，選取&#x200B;**[!UICONTROL 註解與音軌]**&#x200B;標籤。
 1. 執行下列任一項作業：
 
-   * 註解 — 在&#x200B;**註解**&#x200B;標題下，選取一或多個要從視訊中刪除的註解檔案，然後按一下&#x200B;**[!UICONTROL 刪除]**。
-   * 音訊曲目 — 在&#x200B;**音訊曲目**&#x200B;標題下，選取一或多個您要從視訊中刪除的音訊曲目檔案，然後按一下&#x200B;**[!UICONTROL 刪除]**。
+   * 註解 — 在&#x200B;**註解**&#x200B;標題下，選取一或多個要從視訊中刪除的註解檔案，然後按一下![刪除圖示](https://spectrum.adobe.com/static/icons/workflow_22/Smock_Delete_22_N.svg) **[!UICONTROL 刪除]**。
+   * 音訊曲目 — 在&#x200B;**音訊曲目**&#x200B;標題下，選取一或多個您要從視訊中刪除的音訊曲目檔案，然後按一下![刪除圖示](https://spectrum.adobe.com/static/icons/workflow_22/Smock_Delete_22_N.svg) **[!UICONTROL 刪除]**。
 
 1. 在[刪除]對話方塊中，按一下[確定]。****
 1. Publish影片。
@@ -995,22 +994,23 @@ Dynamic Media支援透過URL修飾元在視訊中新增單一標題。 請參閱
 **若要下載已上傳至視訊的註解或音訊曲目檔案：**
 
 1. 導覽至您要設定其預設音訊曲目的視訊資產。
-1. 在資產選取模式中，從「清單檢視」或「卡片檢視」中選取視訊資產。
-1. 在工具列上，選取「屬性」圖示（內有「i」的圓形）。
-1. 在[內容]頁面上，選取&#x200B;**[!UICONTROL 註解與音軌]**&#x200B;標籤。
+1. 在資產選擇模式中，從![檢視卡片圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewCard_18_N.svg) （卡片檢視）或![檢視清單圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewList_18_N.svg) （清單檢視），選取視訊資產。
+1. 在工具列上，按一下![資訊圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Info_18_N.svg)屬性。
+1. 在&#x200B;**屬性**&#x200B;頁面上，選取&#x200B;**[!UICONTROL 註解與音軌]**&#x200B;索引標籤。
 1. 執行下列任一項作業：
 
-   * 註解 — 在&#x200B;**註解**&#x200B;標題下，選取您要從視訊下載的一或多個註解檔案，然後選取&#x200B;**[!UICONTROL 下載]**。
-   * 音訊曲目 — 在&#x200B;**音訊曲目**&#x200B;標題下，選取您要從視訊下載的一或多個音訊曲目檔案，然後選取&#x200B;**[!UICONTROL 下載]**。
+   * 註解 — 在&#x200B;**註解**&#x200B;標題下，選取您要從視訊下載的一或多個註解檔案，然後按一下![下載圖示](https://spectrum.adobe.com/static/icons/workflow_22/Smock_Download_22_N.svg) **[!UICONTROL 下載]**。
+   * 音訊曲目 — 在&#x200B;**音訊曲目**&#x200B;標題下，選取您要從視訊下載的一或多個音訊曲目檔案，然後按一下![下載圖示](https://spectrum.adobe.com/static/icons/workflow_22/Smock_Download_22_N.svg) **[!UICONTROL 下載]**。
 
 1. 在「下載」對話方塊中，設定下列選項：
 
-   | 選項 | 說明 |
+   | 下載選項 | 說明 |
    |--- |--- |
    | 另存新檔 | 使用「另存新檔」文字欄位中指定的預設檔案名稱，或指定您自己的名稱。 |
    | 為每個資產建立個別的資料夾 | 為您選取要下載的每個註解檔或音訊追蹤檔建立一個資料夾。 |
    | 電子郵件 | 使用您的預設電子郵件程式，將.zip檔案傳送至指定的電子郵件地址。 |
    | Assets | 指定正在下載的檔案數以及所有選取檔案的組合總大小。 取消選取此選項會使&#x200B;**[!UICONTROL 下載]**&#x200B;按鈕變暗（關閉），使您無法下載任何檔案。 |
+   | 轉譯 | 轉譯是指原始檔案的替代版本或預覽，通常是較小或解析度較低的版本。 如果顯示為0 B，則可能表示沒有可用的替代版本，或太小而無法註冊大小。 |
 
 1. 選取&#x200B;**[!UICONTROL 下載]**。
 1. Publish影片。 檢視[Publish資產](publishing-dynamicmedia-assets.md)。
@@ -1060,7 +1060,7 @@ Dynamic Media可以將註解檔案轉換為JSON (JavaScript物件標籤法)格�
 
    For best results, use the tool in Internet Explorer 9 or above, Google Chrome, or Safari.
 
-   In the tool, in the **[!UICONTROL Enter URL of video file]** field, paste the copied URL of your video file and then select **[!UICONTROL Load]**. See [Obtain a URL for an Asset](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset) to get the URL to the video file itself which you can then paste into the **[!UICONTROL Enter URL of video file field]**. Internet Explorer, Chrome, or Safari can then natively play back the video.-->
+   In the tool, in the **[!UICONTROL Enter URL of video file]** field, paste the copied URL of your video file and then select **[!UICONTROL Load]**. See [Obtain a URL for an Asset](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset) to get the URL to the video file itself which you can then paste into the **[!UICONTROL Enter URL of video file field]**. Internet Explorer, Chrome, or Safari can then natively play back the video. -->
 
 依照網站上的熒幕指示製作及儲存您的WebVTT檔案。 完成後，複製註解檔案內容並貼到純文字編輯器中，以VTT副檔名儲存。
 
@@ -1085,11 +1085,11 @@ Dynamic Media可以將註解檔案轉換為JSON (JavaScript物件標籤法)格�
 
      記下註解路徑結尾的`,1`。 路徑中的VTT副檔名後面緊接著可以選擇性啟用（開啟）或停用（關閉）視訊播放器列上的隱藏式字幕按鈕，方法是分別設定為`,1`或`,0`。
 
-   * 若要內嵌視訊檢視器體驗，請選取&#x200B;**[!UICONTROL 內嵌程式碼]**。 在「內嵌程式碼」對話方塊中，選取「 」，並將內嵌程式碼複製到剪貼簿，然後將程式碼貼到簡單的文字編輯器中。 請使用下列語法附加複製的內嵌程式碼：
+   * 如需內嵌視訊檢視器體驗，請按一下&#x200B;**[!UICONTROL 內嵌程式碼]**。 在「內嵌程式碼」對話方塊中，選取「 」，並將內嵌程式碼複製到剪貼簿，然後將程式碼貼到簡單的文字編輯器中。 請使用下列語法附加複製的內嵌程式碼：
 
      `videoViewer.setParam("caption","<path_to_caption.vtt_file,1>");`
 
-     記下註解路徑結尾的`,1`。 路徑中的VTT副檔名後面緊接著可以選擇性啟用（開啟）或停用（關閉）視訊播放器列上的隱藏式字幕按鈕，方法是分別設定為`,1`或`,0`。
+     請注意註解路徑結尾的`,1`。 路徑中的VTT副檔名後面緊接著可以選擇性啟用（開啟）或停用（關閉）視訊播放器列上的隱藏式字幕按鈕，方法是分別設定為`,1`或`,0`。
 
 ## 將章節標籤新增至視訊 {#adding-chapter-markers-to-video}
 
@@ -1170,7 +1170,6 @@ Cost-efficient access to rapidly evolving technology.
    </table>
 
 
-
 ## 關於視訊縮圖 {#about-video-thumbnails}
 
 視訊縮圖是視訊影格的縮小版本，或是向客戶表示視訊的影像資產。 縮圖應該用於鼓勵客戶選擇影片。
@@ -1190,26 +1189,28 @@ Experience Manager中的所有視訊都必須有關聯的縮圖。 根據預設�
 
    * [已將視訊上傳至資料夾](/help/assets/manage-video-assets.md#upload-and-preview-video-assets)。
 
+
 1. 導覽至您要變更其縮圖影像的上傳視訊資產。
-1. 在資產選擇模式中，從&#x200B;**[!UICONTROL 清單檢視]**&#x200B;或&#x200B;**[!UICONTROL 卡片檢視]**，選取視訊資產。
-1. 在工具列上，選取&#x200B;**[!UICONTROL 屬性]**&#x200B;圖示（內有「i」的圓形）。
-1. 在視訊的「屬性」頁面上，選取&#x200B;**[!UICONTROL 變更縮圖]**。
-1. 在「變更縮圖」頁面上，執行下列任一項作業：
+1. 在資產選擇模式中，從![檢視卡片圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewCard_18_N.svg) （卡片檢視）或![檢視清單圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewList_18_N.svg) （清單檢視），選取視訊資產。
+1. 在工具列上，按一下![資訊圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Info_18_N.svg)屬性。
+1. 在視訊的[內容]頁面上，按一下[**[!UICONTROL 變更縮圖]**]。
+1. 在「變更縮圖」對話方塊中，執行下列任一項作業：
 
    * 若要使用視訊中的影格做為新的縮圖：
 
-      * 在工具列上，按一下&#x200B;**[!UICONTROL 從視訊選取影格]**&#x200B;選項。
-      * 選取「播放」按鈕，然後在您要擷取的影格上選取「暫停」按鈕，作為視訊的新縮圖。
+      * 在工具列上，按一下&#x200B;**[!UICONTROL 從視訊選取影格]**&#x200B;索引標籤。
+      * 按一下![播放圖示](https://spectrum.adobe.com/static/icons/workflow_22/Smock_PlayCircle_22_N.svg)。
+      * 在您要擷取為視訊新縮圖的影格上按一下![暫停圖示](https://spectrum.adobe.com/static/icons/workflow_22/Smock_PauseCircle_22_N.svg)。
 
    * 若要將影像資產作為新縮圖：
 
-      * 在工具列上，選取&#x200B;**[!UICONTROL 從Assets中選取縮圖]**。
-      * 選取&#x200B;**[!UICONTROL 選取縮圖]**。
+      * 在工具列上，按一下&#x200B;**[!UICONTROL 從Assets選取縮圖]**&#x200B;索引標籤。
+      * 按一下&#x200B;**[!UICONTROL 選取縮圖]**&#x200B;按鈕。
       * 導覽至您想要使用的先前上傳和發佈影像資產。 資產會自動調整大小，以作為視訊的縮圖影像。
-      * 選取影像資產，然後選取&#x200B;**[!UICONTROL 選取]**。
+      * 選取影像資產，然後按一下&#x200B;**[!UICONTROL 選取]**。
 
-1. 在[變更縮圖]頁面上，選取[**[!UICONTROL 儲存變更]**]。
-1. 在影片的「屬性」頁面右上角，選取「**[!UICONTROL 儲存並關閉]**」。
+1. 在[變更縮圖]對話方塊中，按一下[儲存變更]。****
+1. 在影片的「屬性」頁面右上角，按一下「**[!UICONTROL 儲存並關閉]**」或「**[!UICONTROL 儲存]**」。
 
 
 
