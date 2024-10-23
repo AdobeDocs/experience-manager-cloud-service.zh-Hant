@@ -4,10 +4,10 @@ description: 瞭解如何在設定檔案中宣告規則和篩選器，並使用C
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: 913b1beceb974243f0aa7486ddd195998d5e9439
+source-git-commit: 198b3e29c3cd392db3ee42eeca22e3c8c414420f
 workflow-type: tm+mt
-source-wordcount: '1341'
-ht-degree: 2%
+source-wordcount: '1351'
+ht-degree: 1%
 
 ---
 
@@ -79,7 +79,7 @@ kind: "CDN"
 version: "1"
 metadata:
   envTypes: ["dev", "stage", "prod"]
-data:  
+data:
   requestTransformations:
     removeMarketingParams: true
     rules:
@@ -98,7 +98,7 @@ data:
         actions:
           - type: set
             reqHeader: x-some-header
-            value: {reqProperty: path}           
+            value: {reqProperty: path}
       - name: unset-header-rule
         when:
           reqProperty: path
@@ -106,7 +106,7 @@ data:
         actions:
           - type: unset
             reqHeader: x-some-header
-            
+
       - name: unset-matching-query-params-rule
         when:
           reqProperty: path
@@ -114,7 +114,7 @@ data:
         actions:
           - type: unset
             queryParamMatch: ^removeMe_.*$
-            
+
       - name: unset-all-query-params-except-exact-two-rule
         when:
           reqProperty: path
@@ -122,7 +122,7 @@ data:
         actions:
           - type: unset
             queryParamMatch: ^(?!leaveMe$|leaveMeToo$).*$
-            
+
       - name: multi-action
         when:
           reqProperty: path
@@ -134,17 +134,17 @@ data:
           - type: set
             reqHeader: x-header2
             value: '201'
-            
+
       - name: replace-html
         when:
           reqProperty: path
           like: /mypath
         actions:
           - type: transform
-           reqProperty: path
-           op: replace
-           match: \.html$
-           replacement: ""
+            reqProperty: path
+            op: replace
+            match: \.html$
+            replacement: ""
 ```
 
 **動作**
@@ -158,22 +158,36 @@ data:
 | **取消設定** | reqProperty | 將指定的請求引數（僅支援「path」屬性），或請求標頭、查詢引數或Cookie移除至指定值，該值可為字串常值或請求引數。 |
 |         | 變數 | 移除指定的變數。 |
 |         | queryParamMatch | 移除符合指定規則運算式的所有查詢引數。 |
-| **轉換** | op：replace， （reqProperty或reqHeader、queryParam或reqCookie），match，replacement | 以新值取代部分請求引數（僅支援「path」屬性），或請求標頭、查詢引數或Cookie。 |
-|              | op：tolower， （reqProperty、reqHeader、queryParam或reqCookie） | 將請求引數（僅支援「path」屬性）或請求標頭、查詢引數或Cookie設定為小寫值。 |
+| **轉換** | op：replace， （reqProperty或reqHeader、queryParam或reqCookie或var），match，replacement | 以新值取代部分請求引數（僅支援「path」屬性）、請求標頭、查詢引數、Cookie或變數。 |
+|              | op：tolower， （reqProperty或reqHeader、queryParam或reqCookie或var） | 將請求引數（僅支援「path」屬性）、請求標頭、查詢引數、Cookie或變數設定為小寫值。 |
 
 取代動作支援擷取群組，如下所示：
 
 ```
+      - name: extract-country-code-from-path
+        when:
+          reqProperty: path
+          matches: ^/([a-zA-Z]{2})(/.*|$)
+        actions:
+          - type: set
+            var: country-code
+            value:
+              reqProperty: path
+          - type: transform
+            var: country-code
+            op: replace
+            match: ^/([a-zA-Z]{2})(/.*|$)
+            replacement: \1
       - name: replace-jpg-with-jpeg
         when:
           reqProperty: path
-          like: /mypath          
+          like: /mypath
         actions:
           - type: transform
             reqProperty: path
             op: replace
             match: (.*)(\.jpg)$
-            replacement: "\1\.jpeg"          
+            replacement: "\1\.jpeg"
 ```
 
 動作可以鏈結在一起。 例如：
@@ -201,7 +215,7 @@ kind: "CDN"
 version: "1"
 metadata:
   envTypes: ["prod", "dev"]
-data:   
+data:
   requestTransformations:
     rules:
       - name: set-variable-rule
@@ -212,7 +226,7 @@ data:
           - type: set
             var: some_var_name
             value: some_value
- 
+
   responseTransformations:
     rules:
       - name: set-response-header-while-variable
@@ -247,7 +261,7 @@ data:
           - type: set
             value: value-set-by-resp-rule
             respHeader: x-resp-header
- 
+
       - name: unset-response-header-rule
         when:
           reqProperty: path
@@ -255,7 +269,7 @@ data:
         actions:
           - type: unset
             respHeader: x-header1
- 
+
       # Example: Multi-action on response header
       - name: multi-action-response-header-rule
         when:
@@ -304,7 +318,7 @@ data:
         domain: www.example.com
         # ip: '1.1.1.1'
         # forwardHost: true
-        # forwardCookie: true 
+        # forwardCookie: true
         # forwardAuthorization: true
         # timeout: 20
 ```
