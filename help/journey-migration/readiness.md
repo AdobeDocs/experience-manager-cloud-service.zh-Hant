@@ -4,9 +4,9 @@ description: 瞭解您必須執行的步驟，以便確定AEM安裝已準備好�
 exl-id: 3bc8c037-d82a-4455-bce6-3c80c359a4ae
 feature: Migration
 role: Admin
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
+source-git-commit: 913b1beceb974243f0aa7486ddd195998d5e9439
 workflow-type: tm+mt
-source-wordcount: '1907'
+source-wordcount: '1913'
 ht-degree: 5%
 
 ---
@@ -169,7 +169,7 @@ Adobe建議您參閱[已棄用的功能](https://experienceleague.adobe.com/docs
 
 下圖將展示稽核階段中的關鍵步驟：
 
-![影像](/help/journey-migration/assets/planning-phaseimg1.png)
+![稽核階段期間涉及的關鍵步驟](/help/journey-migration/assets/planning-phaseimg1.png)
 
 接下來，您會詳細探索這些步驟的意義。
 

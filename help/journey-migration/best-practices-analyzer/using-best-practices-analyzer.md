@@ -4,9 +4,9 @@ description: 瞭解如何使用Best Practices Analyzer以瞭解升級整備程�
 exl-id: e8498e17-f55a-4600-87d7-60584d947897
 feature: Migration
 role: Admin
-source-git-commit: 9998fb4bc4f9f4c0f4adf67fd1b378ae662c8f70
+source-git-commit: 9f5d7ee97da1c92d3a3d4573fa3ec737356f54a9
 workflow-type: tm+mt
-source-wordcount: '2686'
+source-wordcount: '2701'
 ht-degree: 39%
 
 ---
@@ -73,45 +73,43 @@ ht-degree: 39%
 
 1. 選取Adobe Experience Manager並導覽至工具> **作業** > **最佳做法分析工具**。
 
-   ![影像](/help/journey-migration/best-practices-analyzer/assets/BPA_pic1.png)
+   ![最佳做法分析工具](/help/journey-migration/best-practices-analyzer/assets/BPA_pic1.png)
 
 1. 按一下&#x200B;**產生報告**&#x200B;以執行Best Practices Analyzer。
 
-   ![影像](/help/journey-migration/best-practices-analyzer/assets/BPA_pic2.png)
+   ![產生報表](/help/journey-migration/best-practices-analyzer/assets/BPA_pic2.png)
 
-1. 提供BPA上傳金鑰以將產生的BPA報告自動上傳至[Cloud Acceleration Manager (CAM)](/help/journey-migration/cloud-acceleration-manager/introduction/benefits-cam.md)。 若要取得上傳金鑰，請瀏覽至CAM中的[最佳實務分析](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-readiness-phase.md#best-practices-analysis)
+1. 提供BPA上傳金鑰以將產生的BPA報告自動上傳至[Cloud Acceleration Manager (CAM)](/help/journey-migration/cloud-acceleration-manager/introduction/benefits-cam.md)。 若要取得上傳金鑰，請瀏覽至[CAM中的最佳實務分析](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-readiness-phase.md#best-practices-analysis)
 
-   ![影像](/help/journey-migration/best-practices-analyzer/assets/BPA_upload_key.png)
+   ![設定BPA上傳金鑰](/help/journey-migration/best-practices-analyzer/assets/BPA_upload_key.png)
 
 >[!NOTE]
 >您可選擇略過自動上傳至CAM，方法是選取&#x200B;**略過報告自動上傳至CAM**。 如果您選擇略過，則需要以逗號分隔的值檔案手動下載BPA報表，然後以CAM上傳該檔案。 建議您使用上傳金鑰選項，因為這可簡化作業。
 
 1. 提供有效金鑰時，**產生**&#x200B;按鈕會變成使用中。 按一下&#x200B;**產生**&#x200B;以開始產生報表。
 
-   ![影像](/help/journey-migration/best-practices-analyzer/assets/BPA_upload_key1.png)
-
+   ![產生報表](/help/journey-migration/best-practices-analyzer/assets/BPA_upload_key1.png)
 
 1. 在BPA產生報表時，您可以在畫面上看到工具執行的進度。 它以完成百分比顯示進度。 它也會顯示已分析的專案數，也會顯示找到的結果數。
 
-   ![影像](/help/journey-migration/best-practices-analyzer/assets/BPA_generate_upload.png)
+   ![正在產生報告](/help/journey-migration/best-practices-analyzer/assets/BPA_generate_upload.png)
 
 >[!NOTE]
 >BPA上傳金鑰到期時間戳記會顯示在右上角。 您應該在BPA上傳金鑰接近到期時進行更新。 若要更新金鑰，您可以按一下&#x200B;**更新**，瀏覽至CAM以更新金鑰。
 
 1. 產生BPA報告後，會以表格格式顯示結果的摘要和數目，並依據結果型別和重要性層級加以整理。 若要取得特定發現專案的詳細資訊，您可以按一下與表格中的發現專案型別相對應的數字。
 
-   ![影像](/help/journey-migration/best-practices-analyzer/assets/BPA_report_upload.png)
+   ![報告總覽](/help/journey-migration/best-practices-analyzer/assets/BPA_report_upload.png)
 
 1. 您可以按一下&#x200B;**匯出至CSV**，選擇下載逗號分隔值(CSV)格式的報表。 您也可以按一下&#x200B;**移至CAM**，選擇在CAM中檢視報表。 這會帶您進入CAM中的[最佳實務分析](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-readiness-phase.md#best-practices-analysis)頁面。
 
 您可以按一下&#x200B;**重新整理報告**，以強制BPA清除其快取並重新產生報告。
 
-![影像](/help/journey-migration/best-practices-analyzer/assets/BPA_report_upload.png)
-
+![重新整理報告](/help/journey-migration/best-practices-analyzer/assets/BPA_report_upload.png)
 
 1. 如果快取過期，您可以選擇在CAM中檢視上次產生的報告，方法是按一下&#x200B;**在CAM中檢視上次產生的報告**，或按一下&#x200B;**產生新報告**&#x200B;來啟動新的報告產生作業。
 
-![影像](/help/journey-migration/best-practices-analyzer/assets/BPA_regeneratereport.png)
+![沒有報告](/help/journey-migration/best-practices-analyzer/assets/BPA_regeneratereport.png)
 
 
 #### 在Best Practices Analyzer報告中使用篩選器 {#bpa-filters}
@@ -120,14 +118,14 @@ ht-degree: 39%
 
 1. 按一下頁面左側的左側欄圖示。 這會顯示&#x200B;**ACS Commons篩選器**。 按一下&#x200B;**ACS Commons Filter**&#x200B;以顯示互動式核取方塊，如下圖所示。
 
-   ![影像](/help/journey-migration/best-practices-analyzer/assets/report_filter_1.png)
+   ![ACS Commons篩選器](/help/journey-migration/best-practices-analyzer/assets/report_filter_1.png)
 
    >[!NOTE]
    >只有在BPA偵測到ACS Commons的使用時，左側邊欄圖示才會出現。
 
 1. 取消選取此方塊，以篩選掉與ACS Commons相關的所有發現。 您應該會在報表上看到&#x200B;**篩選的發現專案計數**，如下圖所示。 當篩選器匯出為逗號分隔值(CSV)格式時，也會套用至報表。
 
-   ![影像](/help/journey-migration/best-practices-analyzer/assets/report_filter_2.png)
+   ![篩選結果計數](/help/journey-migration/best-practices-analyzer/assets/report_filter_2.png)
 
    >[!NOTE]
    >不應忽略ACS Commons的發現。 請參閱[檔案](https://adobe-consulting-services.github.io/acs-aem-commons/pages/compatibility.html#aem-as-a-cloud-service-feature-incompatibility)以判斷與AEM as a Cloud Service的相容性。

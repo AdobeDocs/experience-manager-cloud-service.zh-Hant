@@ -4,10 +4,10 @@ description: 熟悉 AEM as a Cloud Service 移轉的基本知識，開始您的�
 exl-id: e1a79630-56c1-4648-aa11-3348c3b37541
 feature: Migration
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 913b1beceb974243f0aa7486ddd195998d5e9439
 workflow-type: tm+mt
-source-wordcount: '560'
-ht-degree: 17%
+source-wordcount: '579'
+ht-degree: 16%
 
 ---
 
@@ -39,11 +39,11 @@ AEM as a Cloud Service為Experience Manager Assets、Forms和Screens提供可擴
 
 下圖顯示建議的AEM as a Cloud Service轉換歷程的高層級表示。
 
-![影像](/help/journey-migration/assets/move-aemcloud-process.png)
+![建議的AEM as a Cloud Service轉換歷程的高層級表示](/help/journey-migration/assets/move-aemcloud-process.png)
 
 您也可以參閱下圖，以取得更詳細、更精細的移轉歷程檢視。
 
-![影像](/help/journey-migration/assets/migration-process.png)
+![移轉歷程的詳細精細檢視](/help/journey-migration/assets/migration-process.png)
 
 ## Cloud Acceleration Manager {#cloud-acceleration-manager}
 

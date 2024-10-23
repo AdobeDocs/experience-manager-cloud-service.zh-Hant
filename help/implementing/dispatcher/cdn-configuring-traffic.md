@@ -4,9 +4,9 @@ description: 瞭解如何在設定檔案中宣告規則和篩選器，並使用C
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: 6ea53e6b2b009895dccf99ac0265dc42b68db509
+source-git-commit: 913b1beceb974243f0aa7486ddd195998d5e9439
 workflow-type: tm+mt
-source-wordcount: '1339'
+source-wordcount: '1341'
 ht-degree: 2%
 
 ---
@@ -31,7 +31,7 @@ AEM as a Cloud Service提供可在[Adobe管理的CDN](/help/implementing/dispatc
 
 在功能上，先前提到的各種功能會依下列順序評估：
 
-![影像](/help/implementing/dispatcher/assets/order.png)
+![評估順序](/help/implementing/dispatcher/assets/order.png)
 
 ## 設定 {#initial-setup}
 

@@ -4,9 +4,9 @@ description: 確定您的程式碼和內容已準備好移轉至雲端
 exl-id: d124f9a5-a754-4ed0-a839-f2968c7c8faa
 feature: Migration
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 913b1beceb974243f0aa7486ddd195998d5e9439
 workflow-type: tm+mt
-source-wordcount: '2282'
+source-wordcount: '2288'
 ht-degree: 9%
 
 ---
@@ -49,7 +49,7 @@ Cloud Manager 可讓組織在雲端中自行管理 AEM。其內容包含持續�
 
 下圖顯示階段中涉及轉換程式碼和內容以用於AEM as a Cloud Service的主要步驟：
 
-![影像](/help/journey-migration/assets/exec-image1.png)
+![轉換步驟](/help/journey-migration/assets/exec-image1.png)
 
 我們將在以下章節開始詳細說明您必須使用的工具，讓您能夠達成此目標。
 
@@ -217,7 +217,7 @@ One more important datapoint is the amount of time it takes to complete the [use
 
 下節顯示可用於制定內容移轉策略和時間表的重要步驟和相關工作。
 
-![影像](/help/journey-migration/assets/content-migration2.png)
+![制定移轉策略的步驟](/help/journey-migration/assets/content-migration2.png)
 
 ### 裝置 {#fitment}
 

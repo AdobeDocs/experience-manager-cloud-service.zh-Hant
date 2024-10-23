@@ -1,17 +1,17 @@
 ---
-title: 國際化UI字串
+title: 國際化使用者介面字串
 description: Java&amp；trade；和JavaScript API可讓您將字串國際化
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: a0afa0d733b8493883770d03fc1a55db247aaf71
+source-git-commit: 913b1beceb974243f0aa7486ddd195998d5e9439
 workflow-type: tm+mt
-source-wordcount: '1089'
+source-wordcount: '1095'
 ht-degree: 0%
 
 ---
 
-# 國際化UI字串 {#internationalizing-ui-strings}
+# 國際化使用者介面字串 {#internationalizing-ui-strings}
 
 Java™和JavaScript API可讓您國際化下列資源型別的字串：
 
@@ -174,7 +174,7 @@ UI字串通常以JCR節點屬性為基礎。 例如，頁面的`jcr:title`屬性
 
 下圖顯示AEM首頁的存根轉譯：
 
-![chlimage_1](/help/implementing/developing/extending/assets/i18n-dev1.jpeg)
+![AEM首頁的Stub翻譯](/help/implementing/developing/extending/assets/i18n-dev1.jpeg)
 
 若要設定使用者的語言，請為使用者帳戶設定偏好設定節點的語言屬性。
 
