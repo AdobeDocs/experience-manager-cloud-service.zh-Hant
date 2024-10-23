@@ -9,9 +9,9 @@ feature: Adaptive Streaming, Best Practices, Smart Imaging, Image Profiles, Rule
 role: User, Admin
 mini-toc-levels: 4
 exl-id: 39e491bb-367d-4c72-b4ca-aab38d513ac5
-source-git-commit: b616f85df5211897286cc7031fdff809296ebcd6
+source-git-commit: 9d4c8946dcdf0e175a54a1dcf55513f01e5648aa
 workflow-type: tm+mt
-source-wordcount: '4118'
+source-wordcount: '4114'
 ht-degree: 0%
 
 ---
@@ -132,7 +132,7 @@ Dynamic Media搭配Experience Manager Assets可讓使用者之間有效率地建
 
 由於對影像品質的感知會因人而異，有時候，系統性的實驗方法對於取得理想的結果至關重要。 Adobe Experience Manager使用100多個Dynamic Media命令來協助此程式，以進行影像增強。
 
-想要進一步瞭解嗎？ 觀看[Dynamic Media快照](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot) （3分鐘17秒）。
+想要進一步瞭解嗎？ 觀看[Dynamic Media快照](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot) （3分鐘17秒）。
 
 若要評估這些不同命令對影像品質的影響，您可以將影像上傳到Dynamic Media、在指定的URL使用工具的介面，然後套用您要嘗試的命令。
 
@@ -154,7 +154,7 @@ Dynamic Media搭配Experience Manager Assets可讓使用者之間有效率地建
 
 最佳實務是使用智慧型裁切建立影像設定檔。 在設定檔中，您可以定義各種熒幕大小並讓Adobe Sensei執行其餘工作，以確保您的影像和視訊一律為檢視者的裝置最佳化。
 
-想要進一步瞭解嗎？ 觀看[搭配AEM Assets Dynamic Media使用智慧型裁切](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use) （6分鐘35秒）和[使用Dynamic Media智慧型裁切視訊](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-smart-crop-video) （6分鐘22秒）。
+想要進一步瞭解嗎？ 觀看[搭配AEM Assets Dynamic Media使用智慧型裁切](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use) （6分鐘35秒）和[使用Dynamic Media智慧型裁切視訊](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-smart-crop-video) （6分鐘22秒）。
 
 ### 改善SEO排名
 
@@ -182,7 +182,7 @@ Dynamic Media搭配Experience Manager Assets可讓使用者之間有效率地建
 想要進一步瞭解嗎？ 移至[使用規則集轉換URL](/help/assets/dynamic-media/using-rulesets-to-transform-urls.md)。
 * **智慧型影像與智慧型裁切：**
 使用Dynamic Media中的智慧型影像和智慧型裁切功能，提供最佳化和回應式影像。 這麼做不僅可改善頁面載入時間，也會對SEO排名產生正面影響。
-想要進一步瞭解嗎？ 移至[智慧型影像](/help/assets/dynamic-media/imaging-faq.md)，或觀看[搭配AEM Assets Dynamic Media使用智慧型裁切](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use) （6分鐘35秒）。
+想要進一步瞭解嗎？ 移至[智慧型影像](/help/assets/dynamic-media/imaging-faq.md)，或觀看[搭配AEM Assets Dynamic Media使用智慧型裁切](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use) （6分鐘35秒）。
 
 請記住，這些最佳作法與Google的影像SEO最佳作法高度一致。 這些做法強調透過適當的命名慣例、結構化資料和最佳化的影像傳送，為搜尋引擎提供內容和清晰度的重要性。
 
@@ -198,9 +198,9 @@ Dynamic Media提供一套命令，用於增強影像以及動態建立視覺效�
 
 | 任務 | 該做什麼 |
 | --- | --- |
-| **上傳並發佈原始影像** | ·首先，將原始影像上傳至Dynamic Media。<br>·請確定已發佈並可透過URL存取。<br>·在此範例中，具有白色背景的手錶的庫存影像（我們將其稱為「影像X」）會上傳至Dynamic Media。<br>[https://s7g2.scene7.com/is/image/genaibeta/watch-silver-offer](https://s7g2.scene7.com/is/image/genaibeta/watch-silver-offer) |
-| **建立遮罩** | ·開發定義主旨（要套用效果的區域）和背景（要變更的區域）的遮色片。<br>[https://s7g2.scene7.com/is/image/genaibeta/watch-silver-offer-maskps](https://s7g2.scene7.com/is/image/genaibeta/watch-silver-offer-maskps)<br>·遮色片通常是灰階影像，其中白色代表主旨，黑色代表背景。 您可以使用Adobe Photoshop等工具建立遮色片。<br>想進一步瞭解嗎？ 移至[在Photoshop](https://helpx.adobe.com/in/photoshop/using/create-temporary-quick-mask.html)中建立和編輯快速遮色片。<br>·針對「影像X」，請建立精確勾勒出您要增強之主題的遮色片。 例如，人員、物件等。 |
-| **套用Dynamic Media URL命令以取得效果** | 在您擁有遮色片之後，請使用URL命令套用陰影等效果，或將背景顏色變更為「影像X」。 以下是兩個範例：<br><br> · **陰影效果：**<br>&#x200B;若要沿著主體邊界加入陰影效果，請編輯類似下列URL的：<br>[https://s7g10.scene7.com/is/image/genaibeta/watch-silver-offer?mask=watch-silver-offer-maskps&amp;maskUse=invert&amp;effect=-1&amp;pos=100,100&amp;op_blur=75&amp;op_grow=1&amp;opac=25](https://s7g10.scene7.com/is/image/genaibeta/watch-silver-offer?mask=watch-silver-offer-maskps&amp;maskUse=invert&amp;effect=-1&amp;pos=100,100&amp;op_blur=75&amp;op_grow=1&amp;opac=25)<br>在此URL中，`$shadow$`引數會建立陰影效果，而`color=0,0,0`會將陰影顏色設定為黑色。<br>· **背景顏色變更：**<br>&#x200B;若要變更背景顏色，請使用具有不同背景顏色值的URL：<br>[https://s7g10.scene7.com/is/image/genaibeta/watch-silver-offer?mask=watch-silver-offer-maskps&amp;maskUse=invert&amp;maskUse=invert&amp;color=255,255,0](https://s7g10.scene7.com/is/image/genaibeta/watch-silver-offer?mask=watch-silver-offer-maskps&amp;maskUse=invert&amp;maskUse=invert&amp;color=255,255,0)<br>在此範例中，`color=255,255,0`會將背景顏色設定為黃色。 將背景編輯成特定顏色，以符合視覺效果。 |
+| **上傳並發佈原始影像** | <ul><li> 首先，將原始影像上傳至Dynamic Media。</li><li> 請確定已發佈並可透過URL存取。</li><li> 在此範例中，具有白色背景的手錶的庫存影像（我們將其稱為「影像X」）會上傳至Dynamic Media。<br>[https://s7g2.scene7.com/is/image/genaibeta/watch-silver-offer](https://s7g2.scene7.com/is/image/genaibeta/watch-silver-offer)</li></ul> |
+| **建立遮罩** | <ul><li> 開發定義主旨（要套用效果的區域）和背景（要變更的區域）的遮色片。<br>[https://s7g2.scene7.com/is/image/genaibeta/watch-silver-offer-maskps](https://s7g2.scene7.com/is/image/genaibeta/watch-silver-offer-maskps)</li><li> 遮色片通常是灰階影像，其中白色代表主題，黑色代表背景。 您可以使用Adobe Photoshop等工具建立遮色片。<br>想進一步瞭解嗎？ 移至[在Photoshop](https://helpx.adobe.com/in/photoshop/using/create-temporary-quick-mask.html)中建立和編輯快速遮色片。</li><li> 針對「影像X」，請建立一個遮色片，精確勾勒出您要增強的主題外框。 例如，人員、物件等。</li></ul> |
+| **套用Dynamic Media URL命令以取得效果** | 當您擁有遮色片之後，請使用URL指令套用像外光暈這樣的效果，或將背景顏色變更為「影像X」。 以下是兩個範例：<ul><li> **外部光暈效果：**<br>&#x200B;若要沿著主體邊界加入外部光暈效果，請編輯如下URL：<br>[https://s7g10.scene7.com/is/image/genaibeta/watch-silver-offer?mask=watch-silver-offer-maskps&amp;maskUse=invert&amp;effect=-1&amp;pos=100,100&amp;op_blur=75&amp;op_grow=1&amp;opac=25](https://s7g10.scene7.com/is/image/genaibeta/watch-silver-offer?mask=watch-silver-offer-maskps&amp;maskUse=invert&amp;effect=-1&amp;pos=100,100&amp;op_blur=75&amp;op_grow=1&amp;opac=25)<br>在此URL中，`op_blur`、`op_grow`和`opac`引數會建立外部光暈效果。</li><li> **背景顏色變更：**<br>&#x200B;若要變更背景顏色，請使用具有不同背景顏色值的URL：<br>[https://s7g10.scene7.com/is/image/genaibeta/watch-silver-offer?mask=watch-silver-offer-maskps&amp;maskUse=invert&amp;maskUse=invert&amp;color=255,255,0](https://s7g10.scene7.com/is/image/genaibeta/watch-silver-offer?mask=watch-silver-offer-maskps&amp;maskUse=invert&amp;maskUse=invert&amp;color=255,255,0)<br>在此範例中，`color=255,255,0`會將背景顏色設定為黃色。 將背景編輯成特定顏色，以符合視覺效果。</li></ul> |
 
 #### 新增影像邊框
 
@@ -222,7 +222,7 @@ Dynamic Media可讓您直接透過URL操作影像，使其成為建立動態數�
 | --- | --- |
 | **上傳並發佈基本影像** | 首先，上傳並發佈您要重疊標誌或圖示的基本影像。 您可以使用任何影像作為基礎。<br>例如，以下是基礎影像：<br>[https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa](https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa)。 |
 | **上傳並發佈標誌或圖示影像** | 接著，上傳並發佈您要重疊在基本影像上的影像。 此影像應是透明的PNG，並應包含您要覆蓋的標誌或圖示。<br>這是即將重疊的具有透明效果的star物件的透明PNG影像：<br>[https://s7g2.scene7.com/is/image/genaibeta/decorate-star](https://s7g2.scene7.com/is/image/genaibeta/decorate-star) |
-| **套用Dynamic Media URL** | 現在，請建立結合基本影像與標誌或圖示影像的Dynamic Media URL。 您可以使用URL命令來達到此效果。<br>URL結構看起來像這樣：<br>[https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa?layer=1&amp;src=decorate-star&amp;scale=1.25&amp;posN=0.33,-.25&amp;fmt=png](https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa?layer=1&amp;src=decorate-star&amp;scale=1.25&amp;posN=0.33,-.25&amp;fmt=png)<br>其中資產<br>· `hotspotRetailBaseImage`是基本影像。<br>· `starxp`是標誌/圖示影像。<br>· `layer=1`指定標誌或圖示應重疊在基本影像上。<br>· `scale=1.25`會調整標誌/圖示的大小。<br>· `posN=0.33,-.25`會決定商標/圖示相對於基本影像的位置。<br>· `fmt=png`可確保輸出為PNG格式。 |
+| **套用Dynamic Media URL** | 現在，請建立結合基本影像與標誌或圖示影像的Dynamic Media URL。 您可以使用URL命令來達到此效果。<br>URL結構看起來像這樣：<br>[https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa?layer=1&amp;src=decorate-star&amp;scale=1.25&amp;posN=0.33,-.25&amp;fmt=png](https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa?layer=1&amp;src=decorate-star&amp;scale=1.25&amp;posN=0.33,-.25&amp;fmt=png)<br>資產所在的位置<ul><li> `hotspotRetailBaseImage`是基本影像。</li><li> `starxp`是標誌/圖示影像。</li><li> `layer=1`指定標誌或圖示應重疊在基本影像上。</li><li> `scale=1.25`會調整標誌/圖示的大小。</li><li> `posN=0.33,-.25`決定相對於基本影像的標誌/圖示位置。</li><li> `fmt=png`確保輸出為PNG格式。</li></ul> |
 
 要進一步瞭解什麼？ 移至[src](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-src)，以取得有關`src`命令和其他Dynamic Media URL命令的詳細資料。
 
