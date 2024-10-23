@@ -4,10 +4,10 @@ description: 瞭解內容模型如何搭配Edge Delivery Services專案用於WYS
 exl-id: e68b09c5-4778-4932-8c40-84693db892fd
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: b34a15138e1b8fbe2bebc22f2cc7e8a0ae22316a
+source-git-commit: 058f3c24ac883315dfaa9206a8c2caa4bb005d07
 workflow-type: tm+mt
-source-wordcount: '2242'
-ht-degree: 83%
+source-wordcount: '2196'
+ht-degree: 80%
 
 ---
 
@@ -608,22 +608,9 @@ Edge Delivery Services 內容模式本來就是只允許單一巢狀層級，這
 
 在 AEM as a Cloud Service 中，可能以類似表格的方式定義每個路徑或每個路徑模式的中繼資料。有一個類似 Excel 或 Google Sheets 的表格式資料適用的製作 UI。
 
-若要建立此類表，請建立頁面並使用 Sites 控制台中的中繼資料範本。
+如需更多詳細資訊，請參閱檔案[使用試算表管理表格式資料](/help/edge/wysiwyg-authoring/tabular-data.md)。
 
-在試算表的頁面屬性中，定義所需的中繼資料欄位以及 URL。然後新增每個頁面路徑或頁面路徑模式的中繼資料。
-
-在發布之前，請確保試算表也已新增至您的路徑對應中。
-
-```json
-{
-  "mappings": [
-    "/content/site/:/",
-    "/content/site/metadata:/metadata.json"
-  ]
-}
-```
-
-### 頁面內容 {#page-properties}
+### 頁面屬性 {#page-properties}
 
 AEM 中提供的許多預設頁面屬性都會對應到文件中各別的頁面中繼資料。例如，這包括 `title`、`description`、`robots`、`canonical url` 或 `keywords`。有些 AEM 特定的屬性也可用：
 
@@ -631,7 +618,7 @@ AEM 中提供的許多預設頁面屬性都會對應到文件中各別的頁面�
 * 文件最後發佈的時間為 `published-time` (ISO8601 格式)
 * `cq:tags` 作為 `cq-tags` 以逗號分隔的標記 ID 清單。
 
-也可以為自訂頁面中繼資料定義元件模式，這可以讓作者用作 AEM Sites 頁面屬性對話方塊的標記。
+您也可以為自訂頁面中繼資料定義元件模型，以供作者在通用編輯器中使用。
 
 若要如此做，請使用 ID `page-metadata` 建立元件模式。
 

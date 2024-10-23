@@ -4,10 +4,10 @@ description: 了解如何使用試算表管理各種值的表格資料，例如�
 feature: Edge Delivery Services
 exl-id: 26d4db90-3e4b-4957-bf21-343c76322cdc
 role: Admin, Architect, Developer
-source-git-commit: 13bde08db33ff4b81a6e76cad91bb5ea257ab195
+source-git-commit: 69c8e54bde6c6047fdefbbbb1f166af690584f88
 workflow-type: tm+mt
-source-wordcount: '986'
-ht-degree: 95%
+source-wordcount: '1014'
+ht-degree: 92%
 
 ---
 
@@ -101,6 +101,10 @@ ht-degree: 95%
      ]
    }
    ```
+
+   >[!NOTE]
+   >
+   >此`paths.json`專案是以使用表格資料建立重新導向的範例為基礎。 請確定更新適合您正在建立之[型別試算表的路徑。](#other)
 
 1. 按一下「**提交變更...**」，將變更儲存到 `main`。
 
