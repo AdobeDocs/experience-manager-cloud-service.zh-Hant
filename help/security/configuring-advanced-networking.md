@@ -4,10 +4,10 @@ description: 了解如何為 AEM as a Cloud Service 設定進階網路功能，�
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
 feature: Security
 role: Admin
-source-git-commit: 09cc9c65aff42c3a169791d32dfdbdbfb044aecb
-workflow-type: ht
-source-wordcount: '5676'
-ht-degree: 100%
+source-git-commit: 47d38589071bb7b51d43a2dbc65bbd169810f9ee
+workflow-type: tm+mt
+source-wordcount: '5657'
+ht-degree: 99%
 
 ---
 
@@ -563,9 +563,7 @@ VPN 允許從製作、發佈或預覽執行個體連線到內部部署基礎結�
 
 ### 供設定的實用網域 {#vpn-useful-domains-for-configuration}
 
-下圖提供了一組網域和相關聯的 IP 的視覺化表示，對設定和開發很有幫助。圖表下方的表格描述了這些網域和 IP。
-
-![VPN 網域設定](/help/security/assets/AdvancedNetworking.jpg)
+下表說明一組對設定和開發有用的網域和IP。
 
 <table>
 <thead>
