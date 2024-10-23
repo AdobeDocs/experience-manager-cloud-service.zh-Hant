@@ -5,10 +5,10 @@ exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f504f622446f082c3662c39cc0a249b6f92a4b6e
+source-git-commit: 8703240a5b7b8ed751620f602470da45025f7b74
 workflow-type: tm+mt
-source-wordcount: '2630'
-ht-degree: 79%
+source-wordcount: '2698'
+ht-degree: 74%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 79%
 
 AEM 提供了[Cloud Manager 品質關卡](/help/implementing/cloud-manager/custom-code-quality-rules.md)整合套件，以確保自訂應用程序順利更新。尤其是 IT 測試門已經支援使用 AEM API 建立和自動化自訂測試。
 
-UI 測試是封裝在 Docker 映像檔中，提供廣泛的語言和架構 (例如 Cypress、Selenium、Java 和 Maven 以及 JavaScript) 選擇。此外，使用[AEM專案原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)可輕鬆產生UI測試專案。
+UI 測試是封裝在 Docker 映像檔中，提供廣泛的語言和架構 (例如 Cypress、Selenium、Java 和 Maven 以及 JavaScript) 選擇。此外，使用[AEM專案原型](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-core-components/using/developing/archetype/overview)可輕鬆產生UI測試專案。
 
 Adobe 鼓勵使用 Cypress，因為它提供即時重新載入和自動等待功能，有助於節省時間及提高測試期間的工作效率。Cypress 也提供簡單直覺的語法，容易學習和使用，即使是測試的初學者也能輕易上手。
 
@@ -44,17 +44,15 @@ UI 測試是每個 Cloud Manager 管道特定品質把關程序的一環，在[�
 
 本節旨在說明設定 UI 測試以便在 Cloud Manager 中執行所需的步驟。
 
-1. 確定您要使用的編程語言。
+1. 決定您要使用的測試架構。
 
-   * 若為 Cypress，請使用 [AEM 測試範例存放庫](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-cypress)中的範例程式碼。
+   * 對於Cypress （預設），請使用[AEM測試範例存放庫](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-cypress)中的範常式式碼，或使用在Cloud Manager存放庫的`ui.tests`資料夾中自動產生的範常式式碼。
 
-   * 對於JavaScript和WDIO，請使用在Cloud Manager存放庫的`ui.tests`資料夾中自動產生的範常式式碼。
+   * 對於Playwright，請使用[AEM測試範例存放庫](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-playwright)中的範常式式碼。
 
-     >[!NOTE]
-     >
-     >如果您的存放庫是在 Cloud Manager 自動建立 `ui.tests` 資料夾之前所建立，您還可以使用 [AEM 專案原型產生最新版本](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/ui.tests)。
+   * 對於Webdriver.IO，請使用[AEM測試範例存放庫](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-wdio)中的範常式式碼。
 
-   * 若是 Java 和 WebDriver，請使用 [AEM 測試範例存放庫](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver)中的範例程式碼。
+   * 對於Selenium WebDriver，請使用[AEM測試範例存放庫](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver)中的範常式式碼。
 
    * 若為其他程式語言，請參閱本文件的「[建立 UI 測試](#building-ui-tests)」章節來設定測試專案。
 
@@ -270,9 +268,9 @@ Docker 鏡像必須產生 JUnit XML 格式的測試報告，並保存在環境�
 
 | 類型 | 值 | 說明 |
 |----------------------|-------|-----------------------------------------------------------------------|
-| CPU | 2.0 | 每次測試執行保留的 CPU 時間量 |
-| 記憶體 | 1Gi | 分配給測試的記憶體數量，其值以 gibibyte 為單位 |
-| 逾時 | 30m | 測試持續時間。 |
+| CPU | 2.0 | 每個測試執行所保留的CPU時間量。 |
+| 記憶體 | 1Gi | 分配給測試的記憶體數量，以GB為單位的值。 |
+| 逾時 | 30m | 測試完成的持續時間。 |
 | 建議的持續時間 | 15m | Adobe 建議所編寫的測試不應花費超過這個時間。 |
 
 >[!NOTE]
@@ -290,7 +288,7 @@ Docker 鏡像必須產生 JUnit XML 格式的測試報告，並保存在環境�
 在測試開始之前，Docker 影像負責確保 Selenium 伺服器啟動並執行。等待 Selenium 服務有兩個步驟。
 
 1. 從 `SELENIUM_BASE_URL` 環境變數中讀取 Selenium 服務的 URL。
-1. 定期輪詢 Selenium API 公開的[狀態端點](https://github.com/SeleniumHQ/docker-selenium/#waiting-for-the-grid-to-be-ready)。
+1. 定期輪詢Selenium API公開的[狀態端點](https://github.com/SeleniumHQ/docker-selenium/#waiting-for-the-grid-to-be-ready)。
 
 一旦 Selenium 的狀態端點得到肯定的響應，測試就可以開始了。
 
@@ -432,6 +430,11 @@ if (proxyServer !== '') {
 }
 ```
 
+>[!NOTE]
+>
+> 您可以在[GitHub](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-playwright/)上的Playwright範例測試模組中找到實作範例。
+
+
 ## 在本機執行 UI 測試 {#run-ui-tests-locally}
 
 在 Cloud Manager 管道啟用 UI 測試之前，建議在本機針對 [AEM as a Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) 或實際的 AEM as a Cloud Service 執行個體執行 UI 測試。
@@ -494,7 +497,36 @@ if (proxyServer !== '') {
 >* 記錄檔案會儲存在您的存放庫的 `target/reports` 資料夾中
 >* 請務必確定您的電腦執行最新版本的 Chrome，因為測試會自動下載最新版的 ChromeDriver 以進行測試。
 >
->如需詳細資訊，請參閱 [AEM 專案原型存放庫](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests/README.md)。
+>如需詳細資訊，請參閱 [AEM 測試範例存放庫](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-wdio)。
+
+### Playwright測試範例 {#playwright-sample}
+
+1. 打開 shell 並瀏覽至存放庫中的 `ui.tests` 資料夾
+
+1. 執行以下命令以使用Maven構建Docker映像
+
+   ```shell
+   mvn clean package -Pui-tests-docker-build
+   ```
+
+1. 執行以下命令以使用 Maven 啟動測試
+
+   ```shell
+   mvn verify -Pui-tests-docker-execution \
+    -DAEM_AUTHOR_URL=https://author-<program-id>-<environment-id>.adobeaemcloud.com \
+    -DAEM_AUTHOR_USERNAME=<user> \
+    -DAEM_AUTHOR_PASSWORD=<password> \
+    -DAEM_PUBLISH_URL=https://publish-<program-id>-<environment-id>.adobeaemcloud.com \
+    -DAEM_PUBLISH_USERNAME=<user> \
+    -DAEM_PUBLISH_PASSWORD=<password>
+   ```
+
+>[!NOTE]
+>
+>記錄檔案會儲存在您的存放庫的 `target/` 資料夾中。
+>
+>如需詳細資訊，請參閱 [AEM 測試範例存放庫](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-playwright)。
+
 
 ### Java Selenium WebDriver 測試範例 {#java-sample}
 
