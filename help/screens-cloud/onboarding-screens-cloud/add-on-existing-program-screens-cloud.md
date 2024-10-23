@@ -4,10 +4,10 @@ description: 瞭解如何將Screens附加元件新增至適用於Screens的Cloud
 exl-id: 0f9a2c21-2d45-470e-a096-443741f9f2ab
 feature: Screens Deployments
 role: Admin, Developer, User
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: 53086e2ec6d9d962a8f1cb1cc40f0601da74ac63
 workflow-type: tm+mt
-source-wordcount: '244'
-ht-degree: 3%
+source-wordcount: '247'
+ht-degree: 2%
 
 ---
 
@@ -33,14 +33,14 @@ ht-degree: 3%
 
 1. 導覽至您的專案，然後從Cloud Manager的&#x200B;**總覽**&#x200B;頁面按一下&#x200B;**編輯方案**&#x200B;選項。
 
-   ![影像](/help/screens-cloud/assets/onboarding/add-onexisting1.png)
+   ![編輯程式](/help/screens-cloud/assets/onboarding/add-onexisting1.png)
 
    >[!NOTE]
    >**編輯程式**&#x200B;頁面顯示兩個標籤&#x200B;**一般**&#x200B;和&#x200B;**解決方案和附加元件**。
 
 1. **解決方案和附加元件**&#x200B;索引標籤會顯示選項，例如Sites、Assets和Screens。 選取&#x200B;**Screens**&#x200B;附加元件選項，如下圖所示。
 
-   ![影像](/help/screens-cloud/assets/onboarding/add-onexisting2.png)
+   ![Screens附加元件選項](/help/screens-cloud/assets/onboarding/add-onexisting2.png)
 
 1. 選取您的選項後，按一下&#x200B;**更新**。
 

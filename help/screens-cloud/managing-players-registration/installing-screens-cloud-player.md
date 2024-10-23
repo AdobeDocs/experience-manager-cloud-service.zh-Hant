@@ -4,9 +4,9 @@ description: 本頁面說明如何在Screensas a Cloud Service中安裝和設定
 exl-id: a022738a-c543-4629-a244-f70fa294fe7f
 feature: Developing Screens
 role: Admin, Developer, User
-source-git-commit: af7793ca7ad3d11bfff980a4d00f537fd0871755
+source-git-commit: 53086e2ec6d9d962a8f1cb1cc40f0601da74ac63
 workflow-type: tm+mt
-source-wordcount: '582'
+source-wordcount: '595'
 ht-degree: 1%
 
 ---
@@ -35,13 +35,13 @@ ht-degree: 1%
 
 1. 按一下&#x200B;**組態**&#x200B;標籤，然後按一下&#x200B;**重設**&#x200B;選項下的&#x200B;**到工廠**&#x200B;按鈕。
 
-   ![影像](/help/screens-cloud/assets/player/installplayer-2.png)
+   [重設]選項下的![To Factory按鈕](/help/screens-cloud/assets/player/installplayer-2.png)
 
 1. 按一下&#x200B;**確認**&#x200B;以重設您的播放器。
 
 1. 再次從&#x200B;**組態**&#x200B;索引標籤按一下&#x200B;**切換執行模式**&#x200B;選項下的&#x200B;**變更為雲端模式**&#x200B;按鈕。
 
-   ![影像](/help/screens-cloud/assets/player/installplayer-1.png)
+   ![切換執行模式選項下的變更為雲端模式按鈕](/help/screens-cloud/assets/player/installplayer-1.png)
 
 1. 按一下&#x200B;**確認**，在切換到雲端模式時提示取消註冊播放器。
 
