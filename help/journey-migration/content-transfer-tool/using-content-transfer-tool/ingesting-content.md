@@ -19,7 +19,7 @@ ht-degree: 12%
 >id="aemcloud_ctt_ingestion"
 >title="內容攝入"
 >abstract="攝入是指將移轉集中的內容攝入到目標 Cloud Service 執行個體中。「內容轉移工具」具備支援追加差異內容的功能，可以只轉移在上一次內容轉移活動後所進行的變更。"
->additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/extracting-content#top-up-extraction-process" text="填滿提取"
+>additional-url="https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/extracting-content#top-up-extraction-process" text="填滿提取"
 
 請依照下列步驟，使用Cloud Acceleration Manager擷取您的移轉集：
 
@@ -94,7 +94,7 @@ ht-degree: 12%
 >id="aemcloud_ctt_ingestion_topup"
 >title="填滿攝入"
 >abstract="使用填滿功能來移動自上次內容轉移活動以來修改的內容。攝入完成後，檢查記錄檔中是否有任何錯誤或警告。如有任何錯誤應立即處理，方法是處理回報的問題或聯絡 Adobe 客戶服務。"
->additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/viewing-logs" text="檢視記錄檔"
+>additional-url="https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/viewing-logs" text="檢視記錄檔"
 
 「內容轉移工具」具備可透過執行移轉集的&#x200B;*追加*&#x200B;來擷取差異內容的功能。 如此可修改移轉集，使其僅包含自上次擷取以來已變更的內容，而無須再次擷取所有內容。
 
@@ -113,7 +113,7 @@ ht-degree: 12%
 >id="aemcloud_ctt_ingestion_troubleshooting"
 >title="內容攝取故障排除"
 >abstract="請參閱攝入記錄和文件，了解攝入失敗的常見原因，並尋找修正問題的解決方案。修正之後，就可以再次執行攝入。"
->additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers" text="驗證內容轉移"
+>additional-url="https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers" text="驗證內容轉移"
 
 ### CAM無法擷取移轉權杖 {#cam-unable-to-retrieve-the-migration-token}
 
@@ -174,7 +174,7 @@ ht-degree: 12%
 >id="aemcloud_cam_ingestion_troubleshooting_uuid"
 >title="違反唯一條件限制"
 >abstract="非擦除擷取失敗的常見原因是節點 ID 衝突。只能存在一個衝突節點。"
->additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content#top-up-ingestion-process" text="填滿擷取"
+>additional-url="https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content#top-up-ingestion-process" text="填滿擷取"
 
 [追加擷取](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process)失敗的常見原因是節點ID發生衝突。 若要識別此錯誤，請使用Cloud Acceleration Manager UI下載擷取記錄，並尋找類似以下的專案：
 
@@ -194,7 +194,7 @@ AEM中的每個節點都必須有唯一的uuid。 此錯誤指出正在擷取的
 >id="aemcloud_cam_ingestion_troubleshooting_referenced_node"
 >title="無法刪除引用的節點"
 >abstract="非擦除擷取失敗的常見原因是目標實例上特定節點的版本衝突。必須修復節點的版本。"
->additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content#top-up-ingestion-process" text="填滿擷取"
+>additional-url="https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content#top-up-ingestion-process" text="填滿擷取"
 
 [追加擷取](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process)失敗的另一個常見原因是目的地執行個體上特定節點的版本衝突。 若要識別此錯誤，請使用Cloud Acceleration Manager UI下載擷取記錄，並尋找類似以下的專案：
 
@@ -212,7 +212,7 @@ AEM中的每個節點都必須有唯一的uuid。 此錯誤指出正在擷取的
 >id="aemcloud_cam_ingestion_troubleshooting_bson"
 >title="大節點屬性"
 >abstract="擷取失敗的常見原因是超過節點屬性值的大小上限。請遵依文件 (包括與 BPA 報告相關的文件) 說明來修復這種情況。"
->additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool" text="移轉先決條件"
+>additional-url="https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool" text="移轉先決條件"
 
 儲存在MongoDB中的節點屬性值不能超過16 MB。 如果節點值超過支援的大小，擷取會失敗，且記錄會包含：
 
