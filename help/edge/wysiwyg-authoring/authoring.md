@@ -1,18 +1,18 @@
 ---
-title: WYSIWYGEdge Delivery Services內容製作
+title: 適用於Edge Delivery Services的WYSIWYG內容製作
 description: 了解內容製作如何與 Edge Delivery Services 搭配使用，以及如何使用 Edge Delivery Services 製作 AEM 內容。
 feature: Edge Delivery Services
 exl-id: 963ff71a-8176-4d9d-8240-dc429405d139
 role: User
-source-git-commit: f0cb108c620a31c4f8a48f1d2530860ca01b06c3
+source-git-commit: 7e8446bec18eaeb4eb017dd63436a066d3a90fed
 workflow-type: tm+mt
-source-wordcount: '448'
-ht-degree: 69%
+source-wordcount: '452'
+ht-degree: 64%
 
 ---
 
 
-# WYSIWYGEdge Delivery Services內容製作 {#authoring-edge}
+# 適用於Edge Delivery Services的WYSIWYG內容製作 {#authoring-edge}
 
 使用 Edge Delivery Services 時，製作很簡單、快速且靈活。您有兩種選擇來為 Edge Delivery Services 製作內容：
 
@@ -40,9 +40,9 @@ ht-degree: 69%
 
 區塊是 Edge Delivery Services 提交的頁面基本元件。作者可以從 Adob&#x200B;&#x200B;e 作為標準提供的預設區塊或開發人員為您專案量身定制的區塊中進行選擇。
 
-Universal Editor 提供了一個現代且直觀的 GUI，可透過拖放區塊來製作內容。
+Universal Editor提供現代且直覺式的GUI，讓您透過新增和排列區塊來編寫內容。
 
-![Universal Editor 中的拖放區塊](assets/blocks.png)
+![在通用編輯器中新增及排列區塊](assets/blocks.png)
 
 然後，在屬性邊欄內可設定區塊的詳細資訊。
 
@@ -54,6 +54,6 @@ Universal Editor 提供了一個現代且直觀的 GUI，可透過拖放區塊�
 
 ## 其他撰寫方法  {#authoring-methods}
 
-所見即所得撰寫是內容作者適用的強大且直覺式工具。 不過，有許多不同的撰寫使用案例，這就是為什麼AEM要提供其他撰寫解決方案的原因。
+WYSIWYG製作是內容作者的強大而直覺式工具。 不過，有許多不同的撰寫使用案例，這就是為什麼AEM要提供其他撰寫解決方案的原因。
 
 請參閱檔案[選擇撰寫方法](/help/edge/authoring-methods.md)，以進一步瞭解AEM提供的撰寫解決方案，包括檔案式撰寫和Headless。
