@@ -2,9 +2,9 @@
 title: 群組移轉
 description: AEM as a Cloud Service中的群組移轉概觀。
 exl-id: 4a35fc46-f641-46a4-b3ff-080d090c593b
-source-git-commit: 1f9526f8e8aa6a070e95827fab16431b0ee7566b
+source-git-commit: 7e7b311d425ae6cdee9eb9311c0a12af84f81096
 workflow-type: tm+mt
-source-wordcount: '1315'
+source-wordcount: '1447'
 ht-degree: 4%
 
 ---
@@ -46,6 +46,8 @@ AEM as a Cloud Service的一項重大變更是完全整合式使用AdobeID來存
 
 大部分已移轉的群組已設定為由IMS管理。  這表示IMS中具有相同名稱的群組將連結至AEM中的群組，而IMS群組中的任何IMS使用者都會成為AEM中的AEM使用者和群組成員。  這可讓這些使用者根據群組的ACL或CUG原則存取內容。
 
+請注意，移轉的群組不再視為「本機群組」；它們是IMS群組，且必須在IMS中重新建立，以便在AEM和IMS之間同步。  群組可以透過Admin Console等方式在IMS中個別或大量建立。  請參閱[管理使用者群組](https://helpx.adobe.com/ca/enterprise/using/user-groups.html)，以取得在Admin Console上個別或大量建立群組的詳細資訊。
+
 此IMS設定的例外情況是Assets集合建立的群組。 在AEM上建立集合時，會建立群組以供存取該集合；此類群組會移轉至雲端系統，但不會設定為由IMS管理。  若要將IMS使用者新增至這些群組，他們就必須在Assets UI的群組屬性頁面中新增使用者，且以個別或集體方式新增至其他IMS群組。
 
 
@@ -53,7 +55,7 @@ AEM as a Cloud Service的一項重大變更是完全整合式使用AdobeID來存
 
 CTT 3.0.20版及更新版本包含可停用群組移轉的選項。  這在OSGI主控台中設定如下：
 
-* 開啟OSGI設定`(http://<server> /system/console/configMgr)`
+* 開啟OSGI設定`(http://<server>/system/console/configMgr)`
 * 按一下名為&#x200B;**內容轉移工具擷取服務組態**&#x200B;的組態
 * 取消勾選&#x200B;**在移轉中包含群組**&#x200B;以停用群組移轉
 * 按一下[儲存] ****，確定組態已儲存並在伺服器上啟用
@@ -73,7 +75,9 @@ CTT 3.0.20版及更新版本包含可停用群組移轉的選項。  這在OSGI�
 
 這些案例可以同時發生，也可以與前幾個案例同時發生。
 
-使用者報告會新增到主體移轉報告的結尾（因此是其中一部分） （請參閱下方的[最終摘要與報告](#final-summary-and-report)）。
+使用者報告會新增到主體移轉報告的結尾（因此是其中一部分） （請參閱下方的[最終摘要與報告](#final-summary-and-report)）。  此報告中的資訊（包括為每個使用者報告的群組）可用於建立大量使用者上傳檔案，其可用於Admin Console以大量在IMS中建立許多使用者。  現有的IMS使用者也可以大量編輯。
+
+檢視[管理多個使用者 | 大量上傳CSV](https://helpx.adobe.com/ca/enterprise/using/bulk-upload-users.html)，以取得透過Admin Console大量建立或編輯使用者的詳細資訊。
 
 ## 其他考量事項 {#additional-considerations}
 
