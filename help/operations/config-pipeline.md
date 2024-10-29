@@ -4,9 +4,9 @@ description: 瞭解如何使用設定管道來部署不同的設定AEM as a Clou
 feature: Operations
 role: Admin
 exl-id: bd121d31-811f-400b-b3b8-04cdee5fe8fa
-source-git-commit: 3d0abce117cf94d7bf521e78be2ec019f216aa08
+source-git-commit: 2247fdd919057703f1c35145ba2bc9c6ec47250b
 workflow-type: tm+mt
-source-wordcount: '973'
+source-wordcount: '1000'
 ht-degree: 1%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 1%
 
 Cloud Manager設定管道將設定檔案（以YAML格式建立）部署到目標環境。 AEM as a Cloud Service中的許多功能可以這樣設定，包括記錄轉送、清除相關的維護任務和數個CDN功能。
 
-設定管道可以透過Cloud Manager部署到生產（非沙箱）計畫中的開發、測試和生產環境型別。 不支援RDE。
+設定管道可以透過Cloud Manager部署到生產（非沙箱）計畫中的開發、測試和生產環境型別。 組態檔可以使用[命令列工具](/help/implementing/developing/introduction/rapid-development-environments.md#deploy-config-pipeline)部署至快速開發環境(RDE)。
 
 本檔案的以下章節概述有關如何使用設定管道以及如何為其建構設定的重要資訊。 它說明在配置管道所支援的所有功能或功能子集之間共用的一般概念。
 
@@ -53,6 +53,9 @@ Cloud Manager設定管道將設定檔案（以YAML格式建立）部署到目標
 有關如何建立和設定管道的資訊，請參閱檔案[CI/CD管道。](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline)
 
 在Cloud Manager中建立設定管道時，在設定管道時請務必選取&#x200B;**目標部署**，而不是&#x200B;**完整棧疊代碼**。
+
+如前所述，RDE的組態是使用[命令列工具](/help/implementing/developing/introduction/rapid-development-environments.md#deploy-config-pipeline)部署，而非管道。
+
 
 ## 一般語法 {#common-syntax}
 

@@ -4,9 +4,9 @@ description: 瞭解如何使用快速開發環境在雲端環境中進行快速�
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: e508ba2fcb709b1925b490bdb3e1a8774068927c
+source-git-commit: 33a30ea29023f90cc6ce1c8b64ed4f9cfdd4f4a7
 workflow-type: tm+mt
-source-wordcount: '4794'
+source-wordcount: '4863'
 ht-degree: 3%
 
 ---
@@ -277,7 +277,7 @@ RDE一次支援一個專案。 由於程式碼會從本機開發環境同步至R
 
 您可以找到下列一些範例：
 
-<u>部署內容封裝</u>
+#### 部署內容封裝 {#deploy-content-package}
 
 `aio aem:rde:install sample.demo.ui.apps.all-1.0.0-SNAPSHOT.zip`
 
@@ -300,7 +300,7 @@ RDE一次支援一個專案。 由於程式碼會從本機開發環境同步至R
 >
 >WKND專案的Dispatcher設定不會透過上述內容套件安裝進行部署。 依照「部署Apache/Dispatcher設定」步驟單獨部署。
 
-<u>正在部署OSGI設定</u>
+#### 部署OSGI設定 {#deploy-OSGI-config}
 
 `aio aem:rde:install com.adobe.granite.demo.MyServlet.cfg.json`
 
@@ -311,7 +311,7 @@ RDE一次支援一個專案。 由於程式碼會從本機開發環境同步至R
 #2: deploy completed for osgi-config com.adobe.granite.demo.MyServlet.cfg.json on author,publish - done by 9E0725C05D54FE1A0B49431C@AdobeID at 2022-09-13T11:54:36.390Z
 ```
 
-<u>正在部署組合</u>
+#### 部署套件組合 {#deploy-bundle}
 
 若要部署套件組合，請使用：
 
@@ -324,7 +324,7 @@ RDE一次支援一個專案。 由於程式碼會從本機開發環境同步至R
 #3: deploy staged for osgi-bundle org.apache.felix.gogo.jline-1.1.8.jar on author,publish - done by 9E0725C05D53BE1A0B49431C@AdobeID at 2022-09-14T07:54:28.882Z
 ```
 
-<u>部署內容檔案</u>
+#### 部署內容檔案 {#deploy-content-file}
 
 若要部署內容檔案，請使用：
 
@@ -337,7 +337,7 @@ RDE一次支援一個專案。 由於程式碼會從本機開發環境同步至R
 #4: deploy completed for content-file world.txt on author,publish - done by 9E0729C05C54FE1A0B49431C@AdobeID at 2022-09-14T07:49:30.644Z
 ```
 
-<u>部署Apache/Dispatcher設定</u>
+#### 部署Apache/Dispatcher設定 {#deploy-apache-config}
 
 對於此型別的設定，整個資料夾結構必須採用zip檔案的形式。
 
@@ -388,6 +388,26 @@ The analyser found the following errors for publish :
 ```
 
 上述程式碼範例說明套件無法解析時的行為。 在此情況下，會將其設為「暫存」，且僅當透過安裝其他程式碼滿足其需求（在此情況下為缺少匯入）時才會安裝。
+
+#### 部署設定管道相關設定（yaml設定） {#deploy-config-pipeline}
+
+在[使用設定管道](/help/operations/config-pipeline.md)一文中說明的環境特定設定（一或多個yaml檔案）可以部署如下：
+
+`aio aem:rde:install -t env-config ./my-config-folder`
+其中my-config-folder是包含yaml設定的上層資料夾。
+
+或者，您也可以安裝包含設定資料夾樹狀結構的zip檔案：
+
+`aio aem:rde:install -t env-config config.zip`
+
+請注意，yaml檔案的envTypes陣列應包含值&#x200B;*rde*，如以下範例所示：
+
+```
+kind: "CDN"
+version: "1"
+metadata:
+  envTypes: ["rde"]
+```
 
 ### 根據網站主題和網站範本部署前端計畫碼 {#deploying-themes-to-rde}
 

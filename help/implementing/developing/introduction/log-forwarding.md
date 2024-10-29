@@ -4,7 +4,7 @@ description: 瞭解如何在AEM as a Cloud Service中將記錄轉送給Splunk和
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: e450a58587ca4d7dff2ab229f522c7e7d4f3f20c
+source-git-commit: af7e94a5727608cd480b2b32cd097d347abb23d3
 workflow-type: tm+mt
 source-wordcount: '1663'
 ht-degree: 0%
@@ -63,7 +63,7 @@ AEM和Apache/Dispatcher記錄檔可選擇透過AEM的進階網路基礎結構路
 
 1. 將檔案放置在名為&#x200B;*config*&#x200B;或類似名稱的頂層資料夾之下，如[使用設定管道](/help/operations/config-pipeline.md#folder-structure)中所述。
 
-1. 針對RDE以外的環境型別（目前不支援），在Cloud Manager中建立目標部署設定管道，如[此區段](/help/operations/config-pipeline.md#creating-and-managing)所參考；請注意，完整棧疊管道和Web層管道不會部署設定檔案。
+1. 針對RDE （使用命令列工具）以外的環境型別，在Cloud Manager中建立目標部署設定管道，如[此區段](/help/operations/config-pipeline.md#creating-and-managing)所參考；請注意，完整棧疊管道和Web層管道不會部署設定檔案。
 
 1. 部署設定。
 

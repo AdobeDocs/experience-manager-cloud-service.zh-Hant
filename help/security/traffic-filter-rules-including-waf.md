@@ -4,10 +4,10 @@ description: 設定流量篩選規則，包括 Web 應用程式防火牆 (WAF) �
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
-source-git-commit: cf9e1b3c290d142095912c794de58547913faece
-workflow-type: ht
-source-wordcount: '4012'
-ht-degree: 100%
+source-git-commit: 51c54d29f998d4c5fcd6ff2e5139638c495955b3
+workflow-type: tm+mt
+source-wordcount: '4019'
+ht-degree: 99%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 100%
 
 流量篩選規則的子類別需要增強的安全性授權或 WAF-DDoS 保護授權。這些強大的規則也稱為 WAF (Web 應用程式防火牆) 流量篩選規則 (或簡稱 WAF 規則)，且可以存取本文稍後將進行說明 [WAF 標幟](#waf-flags-list)。
 
-流量篩選規則可以透過 Cloud Manager 設定管道部署到生產 (非沙箱) 程式中的開發、中繼和生產環境類型。未來將推出對 RDE 的支援。
+流量篩選規則可以透過 Cloud Manager 設定管道部署到生產 (非沙箱) 程式中的開發、中繼和生產環境類型。可使用命令列工具將設定檔案部署到快速開發環境(RDE)。
 
 [按照教學課程進行操作](#tutorial)，快速建立有關此功能的具體專業知識。
 
