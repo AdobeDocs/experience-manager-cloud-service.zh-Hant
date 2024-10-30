@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的運作方式以及該軟體可以為您做哪些事。
 breadcrumb-title: 使用手冊
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 04c9ab33d0f6023195cffe9929cfad172a230216
+source-git-commit: d9fec7d96bbea19549f3fcfe53606c0d59a01a53
 workflow-type: tm+mt
-source-wordcount: '5681'
+source-wordcount: '5709'
 ht-degree: 99%
 
 ---
@@ -462,6 +462,10 @@ ht-degree: 99%
    + [支援的檔案格式](/help/assets/file-format-support.md)
    + [資產微服務概觀](/help/assets/asset-microservices-overview.md)
    + [ [!DNL Assets] 中的協助工具](/help/assets/accessibility.md)
+   + [Assetsas a Cloud Service旗艦版](/help/assets/assets-ultimate-overview.md)
+   + [啟用Assetsas a Cloud Service旗艦版](/help/assets/enable-assets-ultimate.md)
+   + [Assets as a Cloud Service Prime](/help/assets/assets-prime.md)
+   + [Assets Collaborator使用者](/help/assets/assets-collaborator-users.md)
    + 管理數位資產 {#manage}
       + 微前端資產選擇器{#asset-selector}
          + [資產選擇器概觀](/help/assets/overview-asset-selector.md)
@@ -640,6 +644,7 @@ ht-degree: 99%
       + [在 Content Hub 中分享資產](/help/assets/share-assets-content-hub.md)
       + [使用 Content Hub 下載資產](/help/assets/download-assets-content-hub.md)
       + [在 Content Hub 中管理收藏集](/help/assets/collections-content-hub.md)
+      + [在Content Hub上管理授權的Assets](/help/assets/manage-licensed-assets-on-content-hub.md)
       + [在 Content Hub 中使用 Adob&#x200B;&#x200B;e Express 編輯影像](/help/assets/edit-images-content-hub.md)
       + [Content Hub 中的資產深入分析](/help/assets/insights-content-hub.md)
       + [Content Hub 的常見問題](/help/assets/frequently-asked-questions-content-hub.md)
@@ -1305,7 +1310,7 @@ ht-degree: 99%
       + [使用 Dispatcher 工具舊版進行驗證和偵錯](/help/implementing/dispatcher/validation-debug-legacy.md)
       + [AEM as a Cloud Service 中的 CDN](/help/implementing/dispatcher/cdn.md)
       + [設定 CDN 上的流量](/help/implementing/dispatcher/cdn-configuring-traffic.md)
-      + [Pipeline-free URL Redirects](/help/implementing/dispatcher/pipeline-free-url-redirects.md)
+      + [管道專用URL重新導向](/help/implementing/dispatcher/pipeline-free-url-redirects.md)
       + [Edge Side 包括](/help/implementing/dispatcher/edge-side-includes.md)
       + [設定內容傳遞網路憑證和身份驗證](/help/implementing/dispatcher/cdn-credentials-authentication.md)
       + [設定內容傳遞網路錯誤頁面](/help/implementing/dispatcher/cdn-error-pages.md)
