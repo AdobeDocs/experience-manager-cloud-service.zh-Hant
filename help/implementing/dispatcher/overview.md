@@ -4,7 +4,7 @@ description: 進一步了解關於內容傳送資料流量，以及發佈內容�
 exl-id: fe42fb9e-cdf4-43e1-b688-7cecf4124fa5
 feature: Dispatcher
 role: Admin
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
+source-git-commit: d58055cd0ed2451b5e8063fbb4e7269885d0787c
 workflow-type: tm+mt
 source-wordcount: '219'
 ht-degree: 93%
@@ -34,6 +34,5 @@ ht-degree: 93%
 以下章節提供更多有關內容傳遞的詳細資訊：
 * [CDN 設定](/help/implementing/dispatcher/cdn.md)
 * [快取](/help/implementing/dispatcher/caching.md)
-
 
 如需有關從作者服務復寫到發佈服務的資訊，請參閱[復寫](/help/operations/replication.md)。
