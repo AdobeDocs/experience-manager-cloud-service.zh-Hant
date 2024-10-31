@@ -4,10 +4,10 @@ description: 瞭解如何使用AEM as a Cloud Service的記錄來設定中央記
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
 feature: Log Files, Developing
 role: Admin, Architect, Developer
-source-git-commit: bc103cfe43f2c492b20ee692c742189d6e454856
+source-git-commit: e1ac26b56623994dfbb5636993712844db9dae64
 workflow-type: tm+mt
-source-wordcount: '2834'
-ht-degree: 8%
+source-wordcount: '2376'
+ht-degree: 9%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 8%
 
 AEM as a Cloud Service是客戶納入自訂程式碼的平台，可為他們的客戶群建立獨特的體驗。 有鑑於此，記錄服務對於在本機開發和雲端環境(尤其是AEM as a Cloud Service的開發環境)上除錯和瞭解程式碼執行至關重要。
 
-AEM as a Cloud Service記錄設定和記錄層級是在組態檔中進行管理，這些組態檔會儲存為Git中AEM專案的一部分，並透過Cloud Manager部署為AEM專案的一部分。 登入AEM as a Cloud Service可分成兩個邏輯集：
+AEM as a Cloud Service記錄設定和記錄層級是在組態檔中進行管理，這些組態檔會儲存為Git中AEM專案的一部分，並透過Cloud Manager部署為AEM專案的一部分。 登入AEM as a Cloud Service可分為三個邏輯集：
 
 * AEM記錄，可在AEM應用程式層級執行記錄
 * Apache HTTPD網頁伺服器/Dispatcher記錄，可在Publish層級上執行網頁伺服器和Dispatcher的記錄。
@@ -344,7 +344,7 @@ cm-p1234-e5678-aem-publish-b86c6b466-qpfvp - - 17/Jul/2020:09:14:42 +0000  "GET 
 <td>310</td>
 </tr>
 <tr>
-<td>Referer</td>
+<td>推薦者</td>
 <td>-</td>
 </tr>
 <tr>
@@ -510,8 +510,6 @@ Define DISP_LOG_LEVEL debug
 
 AEM as a Cloud Service提供對CDN記錄的存取權，這些記錄可用於快取命中比率最佳化等使用案例。 無法自訂CDN記錄格式，且沒有將其設定為不同模式（例如info、warn或error）的概念。
 
-CDN記錄檔將轉送至Splunk，以處理新的Splunk轉送支援票證請求；已啟用Splunk轉送的客戶未來可以新增CDN記錄檔。
-
 **範例**
 
 ```
@@ -543,7 +541,7 @@ CDN記錄與其他記錄不同，因為它會遵循JSON格式。
 | *timestamp* | TLS 終止後要求開始的時間 |
 | *ttfb* | *首位元組時間 (Time To First Byte)* 的縮寫。發出要求開始到回應內文開始串流的時間之間的時間間隔。 |
 | *cli_ip* | 用戶端 IP 位址。 |
-| *cli_country* | 雙字母 [ISO 3166-1](https://en.wikipedia.org/wiki/tw/ISO_3166-1) 用戶端國家/地區的 alpha-2 國家/地區代碼。 |
+| *cli_country* | 雙字母 [ISO 3166-1](https://zh.wikipedia.org/wiki/tw/ISO_3166-1) 用戶端國家/地區的 alpha-2 國家/地區代碼。 |
 | *rid* | 用於唯一識別要求的要求標頭的值。 |
 | *req_ua* | 負責發出特定 HTTP 要求的使用者代理程式。 |
 | *主機* | 發送要求的目標機構。 |
@@ -611,82 +609,18 @@ Apache層記錄檔（包括Dispatcher）位於儲存Dispatcher的Docker容器中
 * 謹慎行事，並且只在絕對必要時進行
 * 已恢復至適當層級，並儘快重新部署
 
-## Splunk記錄 {#splunk-logs}
+## 記錄轉送 {#log-forwarding}
 
-擁有Splunk帳戶的客戶可透過客戶支援票證，要求將其AEM Cloud Service記錄轉送至適當的索引。 記錄資料等同於透過Cloud Manager記錄下載提供的資料，但客戶可能會發現使用Splunk產品中提供的查詢功能很方便。
+雖然可從Cloud Manager下載記錄檔，但有些組織認為將這些記錄檔轉送至偏好的記錄目的地較為有利。 AEM支援將記錄串流至以下目的地：
 
-與傳送至Splunk的記錄檔相關聯的網路頻寬會視為客戶網路I/O使用量的一部分。
+* Azure Blob儲存體
+* Datadog
+* HTTPD
+* Elasticsearch （和OpenSearch）
+* Splunk
 
-CDN記錄檔將轉送至Splunk以處理新的支援票證請求；已啟用Splunk轉送的客戶未來將能夠新增CDN記錄檔。
-
->[!NOTE]
->
->無法將&#x200B;*特定*&#x200B;記錄檔和&#x200B;*特定*&#x200B;使用者記錄檔轉送至Splunk。
->
->**所有**&#x200B;記錄檔將轉送至Splunk，客戶可依據其需求進行任何進一步的篩選。
-
-### 啟用Splunk轉送 {#enabling-splunk-forwarding}
-
-在支援要求中，客戶應指出：
-
-* Splunk HEC端點位址。 此端點必須具有有效的SSL憑證且可公開存取。
-* Splunk索引
-* Splunk連線埠
-* Splunk HEC權杖。 如需詳細資訊，請參閱[HTTP事件收集器範例](https://docs.splunk.com/Documentation/Splunk/8.0.4/Data/HECExamples)。
-
-以上屬性應該為每個相關的程式/環境型別組合指定。 例如，如果客戶想要開發、測試和生產環境，他們應該提供三組資訊，如下所示。
+如需有關如何設定此功能的詳細資訊，請參閱[記錄轉送文章](/help/implementing/developing/introduction/log-forwarding.md)。
 
 >[!NOTE]
 >
->不支援沙箱計畫環境的Splunk轉送。
-
->[!NOTE]
->
->專用輸出 IP 位址無法提供 Splunk 轉送功能。
-
-您應該確保初始請求除了階段/生產環境之外，還包含所有應該啟用的開發環境。 Splunk必須具有SSL憑證，且必須對外公開。
-
-如果在初始請求後建立的任何新開發環境打算啟用Splunk轉送，但未啟用，則應提出其他請求。
-
-另請注意，如果已經請求開發環境，則不在請求中的其他開發環境或甚至沙箱環境可能會啟用Splunk轉送，並且將共用Splunk索引。 客戶可以使用`aem_env_id`欄位來區分這些環境。
-
-您將會找到客戶支援請求的範例：
-
-方案123，生產環境
-
-* Splunk HEC端點位址： `splunk-hec-ext.acme.com`
-* Splunk索引：acme_123prod （客戶可以選擇想要的任何命名慣例）
-* Splunk連線埠：443
-* Splunk HEC權杖： ABC123
-
-方案123，中繼環境
-
-* Splunk HEC端點位址： `splunk-hec-ext.acme.com`
-* Splunk索引： acme_123stage
-* Splunk連線埠：443
-* Splunk HEC權杖： ABC123
-
-方案123，開發環境
-
-* Splunk HEC端點位址： `splunk-hec-ext.acme.com`
-* Splunk索引： acme_123dev
-* Splunk連線埠：443
-* Splunk HEC權杖： ABC123
-
-每個環境使用相同的Splunk索引可能就足夠了，在這種情況下，`aem_env_type`欄位都可以用來根據值dev、stage和prod進行區分。 如果有多個開發環境，也可使用`aem_env_id`欄位。 如果關聯的索引限制存取縮減的Splunk使用者集，則某些組織可能會為生產環境的記錄選擇單獨的索引。
-
-紀錄專案範例如下：
-
-```
-aem_env_id: 1242
-aem_env_type: dev
-aem_program_id: 12314
-aem_tier: author
-file_path: /var/log/aem/error.log
-host: 172.34.200.12 
-level: INFO
-msg: [FelixLogListener] com.adobe.granite.repository Service [5091, [org.apache.jackrabbit.oak.api.jmx.SessionMBean]] ServiceEvent REGISTERED
-orig_time: 16.07.2020 08:35:32.346
-pod_name: aemloggingall-aem-author-77797d55d4-74zvt
-splunk_customer: true
-```
+>不支援沙箱計畫環境的記錄檔轉送。

@@ -4,9 +4,9 @@ description: 了解如何為 AEM as a Cloud Service 設定進階網路功能，�
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
 feature: Security
 role: Admin
-source-git-commit: 47d38589071bb7b51d43a2dbc65bbd169810f9ee
-workflow-type: ht
-source-wordcount: '5657'
+source-git-commit: e1ac26b56623994dfbb5636993712844db9dae64
+workflow-type: tm+mt
+source-wordcount: '5618'
 ht-degree: 100%
 
 ---
@@ -236,10 +236,6 @@ ProxyPassReverse "/somepath" "https://example.com:8443"
 >
 >建立後，專用輸出 IP 位址基礎架構類型將無法編輯。變更設定值的唯一方法是刪除並重新建立。
 
->[!INFO]
->
->如果設定了專用輸出 IP，Splunk 轉送將繼續使用動態輸出範圍。Splunk 轉送無法設定為使用專用輸出 IP。
-
 ### UI 設定 {#configuring-dedicated-egress-provision-ui}
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織。
@@ -411,7 +407,6 @@ VPN 允許從製作、發佈或預覽執行個體連線到內部部署基礎結�
 >以下是 VPN 基礎設施的限制：
 >
 >* 支援僅限於單一 VPN 連線
->* Splunk 轉送功能無法透過 VPN 連線提供。
 >* DNS Resolver 必須列在閘道位址空間中才能解析私有主機名稱。
 
 ### UI 設定 {#configuring-vpn-ui}
