@@ -4,10 +4,10 @@ description: 了解 AEM as a Cloud Service 團隊和產品設定檔如何能夠�
 exl-id: 7b1474c9-aca0-4354-8798-1abdcda2f6dd
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 5f630c8a618502907e4be50844e07184e38e1b1e
 workflow-type: tm+mt
-source-wordcount: '847'
-ht-degree: 100%
+source-wordcount: '1821'
+ht-degree: 39%
 
 ---
 
@@ -20,17 +20,246 @@ ht-degree: 100%
 
 在授與使用者特定 Adobe 解決方案的存取權時，您不一定要授與他們完整的存取權。產品設定檔使每個解決方案都可以擁有自己的一組使用者權限。這些可透過 [Admin Console](/help/journey-onboarding/admin-console.md) 取得和存取。
 
+Adobe Admin Console具有產品、產品執行個體和產品設定檔的結構化階層，可為組織的內部使用者指派成員資格，讓他們存取已授權的解決方案和功能。
+
+<!-- Alexandru: Drafting for now 
+
+Your AEM as a Cloud Service team members are added and assigned to one or more of the following product profiles via the Admin Console during onboarding.
+
+* **AEM Administrators**: An AEM administrator is typically assigned to developers, in particular developers who need access to, for example, the development environments. The AEM administrator's product profile is used to grant administrator privileges in the associated AEM instance.
+
+* **AEM Users**: AEM users are the users in your organization who use AEM as a Cloud Service generally to create content. These users need to access AEM to do their tasks. The AEM users product profile is typically assigned to an AEM content author who creates and reviews the content. This content can be of many types such as pages, assets, publications, and so on. The AEM users product profile shown below is assigned to these members.
+
+![Product profiles](/help/onboarding/assets/admin-console-profiles.png) -->
+
 ## AEM as a Cloud Service 產品設定檔 {#aem-product-profiles}
 
 AEM as a Cloud Service 是完全的雲端原生產品，可提供 AEM 即服務。它以雲端原生方式提供 AEM，具有永遠可用、永遠最新、永遠安全和永遠可擴展等新屬性。同時，它保留了 AEM 作為可自訂平台提供給客戶的主要價值主張，並允許企業級團隊整合到他們的開發和交付方案中。若要深入了解 AEM as a Cloud Service，請參閱 [Adobe Experience Manager as a Cloud Service 簡介](/help/overview/introduction.md)。
 
-在上線期間，您的 AEM as a Cloud Service 團隊成員會透過 Admin Console 新增並指派到以下一個或多個產品設定檔。
+### 組織層級產品例項 {#org-level-product-instances}
 
-* **AEM 管理員**：AEM 管理員的身份通常會指派給開發人員，特別是需要存取比如開發環境等的開發人員。AEM 管理員的產品設定檔用於在關聯的 AEM 執行個體中授與管理員權限。
+>[!NOTE]
+>
+> 本文中說明的某些產品執行個體和產品設定檔可能只會出現在新建立的環境中。 未來的機制將允許更新現有的環境。
 
-* **AEM 使用者**：AEM 使用者是組織中使用 AEM as a Cloud Service 來建立內容的使用者。這些使用者需要存取 AEM 來執行他們的任務。AEM 使用者產品設定檔通常會指派給建立和檢閱內容的 AEM 內容作者。此內容可以是多種類型，例如頁面、資產、出版物等。以下顯示的 AEM 使用者產品設定檔已指派給這些成員。
+當Adobe首次處理AEM解決方案的授權時，兩個產品執行個體會出現在Adobe Admin Console的Adobe Experience Manager as a Cloud Service產品下方：
 
-![產品設定檔](/help/onboarding/assets/admin-console-profiles.png)
+* **AEM組織層級** — 包含一或多個產品設定檔，這些設定檔代表存取涵蓋所有AEM環境的功能，而不只是存取單一功能
+* **Cloud Manager** — 包含與不同層級的Cloud Manager功能存取權相對應的產品設定檔。
+
+<!--
+>[!NOTE]
+>
+>For existing programs, the AEM Org-Level Product Instance is created upon selecting the **Update product** profiles action for a given environment.
+-->
+
+![組織層級產品執行個體](/help/onboarding/assets/orglevel.png)
+
+在AEM組織層級產品執行個體內是名為AEM組織層級報告者的產品設定檔，目前不使用，但未來可能會用於表示擷取AEM產品授權相關資訊的存取權。
+
+當Forms通訊解決方案獲得授權時，對應的產品設定檔也會出現在AEM組織層級的產品執行個體下。
+
+![記者產品設定檔](/help/onboarding/assets/org-level-reporters.png)
+
+### 環境和層級產品執行個體 {#environment-and-tier-level-product-instances}
+
+使用一或多個AEM環境布建新程式後，每個環境將顯示兩個產品執行個體，分別包含用於製作和發佈的產品設定檔。
+
+![環境產品執行個體](/help/onboarding/assets/env-productinstances.png)
+
+以下是作者產品例項中的產品設定檔，適用於已在包含AEM Sites的方案中提供環境的組織：
+
+![網站產品執行個體](/help/onboarding/assets/sites-product-instances.png)
+
+下表說明環境層特定產品執行個體底下的可能產品設定檔清單。
+
+<table style="table-layout:auto">
+    <tr>
+        <th>產品例項</th>
+        <th>命名慣例</th>
+        <th>預設服務</th>
+        <th>說明</th>
+    </tr>
+    <tr>
+        <td>AEM 作者</td>
+        <td>AEM Sites內容管理員 — 作者 — 方案<code>id</code> — 環境 <code>id</code></td>
+        <td>AEM Sites內容管理員</td>
+        <td>
+            <ul>
+                <li>用於在此環境中控制存取AEM Sites作者功能。 此產品設定檔中的使用者會成為AEM Sites內容作者AEM群組的成員，此群組會自動在AEM中建立。 AEM群組許可權應在AEM中以所需的存取層級設定。</li><br>
+                <li>如果預設服務保持選取狀態
+                    <ul>
+                        <li>此產品設定檔中的使用者也會是「AEM Sites內容管理員 — 服務」AEM群組的成員。</li>
+                      <!--  <li>users in this product profile will have access to AEM Sites Content Management API.</li>
+                        <li>an Adobe Developer Console API OAuth S2S project containing AEM Sites Content Management API can optionally be scoped to this environment.</li>-->
+                    </ul>
+                </li>
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>AEM管理員 — 作者 — 方案<code>id</code> — 環境 <code>id</code></td>
+        <td>AEM管理員</td>
+        <td>
+            <ul>
+                <li>旨在不受限制地存取AEM作者和發佈環境功能。 此產品設定檔中的使用者將成為AEM管理員的成員，可撰寫在AEM中自動建立的AEM群組。</li><br>
+                <li>如果預設服務保持選取狀態
+                    <ul>
+                        <li>此產品設定檔中的使用者也將是「AEM管理員 — 服務」AEM群組的成員</li>
+                    </ul>
+                </li>
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>AEM使用者 — 作者 — 方案<code>id</code> — 環境 <code>id</code></td>
+        <td>AEM 使用者</td>
+        <td>
+            <ul>
+                <li>旨在提供非常有限的AEM作者環境功能存取權。 此產品設定檔中的使用者將會是在AEM中自動建立的「貢獻者」AEM群組的成員</li><br>
+                <li>如果預設服務保持選取狀態
+                    <ul>
+                        <li>此產品設定檔中的使用者也會是「AEM使用者 — 服務」AEM群組的成員</li>
+                    </ul>
+                </li>
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>AEM Reporters — 作者 — 方案<code>id</code> — 環境 <code>id</code></td>
+        <td>AEM記者</td>
+        <td>
+            <ul>
+                <li>目前未使用，但未來可能會提供此環境作者階層的相關報表資訊存取權。</li>
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>AEM Assets Collaborator — 作者 — 方案<code>id</code> — 環境 <code>id</code></td>
+        <td>AEM Assets Collaborator使用者</td>
+        <td>
+        <ul>
+                <li>旨在以唯讀方式存取DAM。 此產品設定檔中的使用者將會是在AEM中自動建立的「貢獻者」AEM群組的成員。
+                </li>
+                <li>
+                此外，它提供Adobe Express許可權以建立資產變數。
+                </li>
+          <ul>
+    </tr>
+    <tr>
+        <td></td>
+        <td>AEM Assets超級使用者 — 作者 — 方案<code>id</code> — 環境 <code>id</code></td>
+        <td>AEM Assets超級使用者</td>
+<td>
+        <ul>
+                <li>旨在以唯讀方式存取DAM。 此產品設定檔中的使用者將會是在AEM中自動建立的「貢獻者」AEM群組的成員。
+                </li>
+                <li>
+                此外，它提供Adobe Express許可權以建立資產變數。
+                </li>
+          <ul>
+</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>AEM Forms內容管理員 — 作者 — 方案<code>id</code> — 環境 <code>id</code></td>
+        <td>AEM Forms內容管理員</td>
+        <td>
+            <ul>
+                <li>用於在此環境中控制存取AEM Forms作者功能。 此產品設定檔中的使用者將會是在AEM中自動建立的AEM Forms forms-users AEM群組的成員。</li><br>
+                <li>如果預設服務保持選取狀態
+                    <ul>
+                        <li>此產品設定檔中的使用者也會是「AEM Forms內容管理員 — 服務」AEM群組的成員。</li>
+                    </ul>
+                </li>
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>AEM Forms開發人員 — 作者 — 方案<code>id</code> — 環境 <code>id</code></td>
+        <td>AEM Forms開發人員</td>
+        <td>
+            <ul>
+                <li>用於在此環境中控制存取AEM Forms作者功能。 此產品設定檔中的使用者將會是在AEM中自動建立的AEM Forms forms-power-users AEM群組的成員。 除了正常表單編寫工作之外，這些使用者還有權上傳XDP和編寫表單資料模型。</li><br>
+                <li>如果預設服務保持選取狀態
+                    <ul>
+                        <li>此產品設定檔中的使用者也會是「AEM Forms開發人員 — 服務」AEM群組的成員。</li>
+                    </ul>
+                </li>
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>AEM Forms Communications Service使用者 — 作者 — 方案<code>id</code> — 環境 <code>id</code></td>
+        <td>AEM Forms Communications Service使用者</td>
+        <td>
+            <ul>
+                <li>旨在控制此環境中對AEM Forms Communications Services功能的存取。 此產品設定檔中的使用者將會是在AEM中自動建立的AEM Forms forms-users AEM群組的成員。</li><br>
+                <li>如果預設服務保持選取狀態
+                    <ul>
+                        <li>此產品設定檔中的使用者也會是「AEM Forms Communications Service使用者 — 服務」AEM群組的成員。</li>
+                    </ul>
+                </li>
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <td>AEM 發佈</td>
+        <td>AEM使用者 — 發佈 — 方案<code>id</code> — 環境 <code>id</code></td>
+        <td>AEM 使用者</td>
+        <td>
+            <ul>
+                <li>旨在提供非常有限的AEM作者環境功能存取權。 此產品設定檔中的使用者將會是在AEM中自動建立的「參與者」AEM群組的成員</li><br>
+                <li>如果預設服務保持選取狀態
+                    <ul>
+                        <li>此產品設定檔中的使用者也會是「AEM使用者 — 服務」AEM群組的成員。</li>
+                    </ul>
+                </li>
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>AEM Reporters — 發佈 — 方案<code>id</code> — 環境 <code>id</code></td>
+        <td>AEM記者</td>
+        <td>
+            <ul>
+                <li>目前未使用，但未來可能會提供此環境發佈層級相關報表資訊的存取權。</li>
+            </ul>
+        </td>
+    </tr>
+   <tr>
+        <td></td>
+        <td>AEM Forms Communications Service使用者 — 發佈 — 方案<code>id</code> — 環境 <code>id</code></td>
+        <td>AEM Forms Communications Service使用者</td>
+        <td>
+            <ul>
+                <li>旨在控制此環境中對AEM Forms Communications Services功能的存取。 此產品設定檔中的使用者將會是在AEM中自動建立的AEM Forms forms-users AEM群組的成員。</li><br>
+                <li>如果預設服務保持選取狀態
+                    <ul>
+                        <li>此產品設定檔中的使用者也會是「AEM Forms Communications Service使用者 — 服務」AEM群組的成員。</li>
+                    </ul>
+                </li>
+            </ul>
+        </td>
+    </tr>
+</table>
+
+請注意，每個產品設定檔都會預設啟用相關聯的產品設定檔服務。 除非您有複雜的存取需求，否則建議您只選取預設服務。 將在AEM中以命名慣例`<Product Profile Prefix> - Service` (例如&#x200B;**AEM Sites Content Managers - Service**)建立對應的AEM群組，父產品設定檔中的使用者會自動成為該對應AEM群組的成員。
+
+與該服務相關聯的AEM中的AEM群組將具有彙總使用者集，這些使用者集存在於該環境層組合之該服務的所有相關聯產品設定檔中。
+
+![服務](/help/onboarding/assets/services.png)
+
+下圖代表反映AEM Sites內容管理員作者層產品設定檔和服務的AEM群組。
+
+![AEM群組對服務對應](/help/onboarding/assets/profile-to-service-mapping.png)
 
 >[!NOTE]
 >
