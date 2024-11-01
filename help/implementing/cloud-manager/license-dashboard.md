@@ -5,10 +5,10 @@ exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
+source-git-commit: 8f3ceb5ebf348b5f3f496b1db04d7dd7c9a0ac5c
 workflow-type: tm+mt
-source-wordcount: '909'
-ht-degree: 34%
+source-wordcount: '906'
+ht-degree: 25%
 
 ---
 
@@ -34,7 +34,7 @@ Cloud Manager授權儀表板可讓您輕鬆存取所有計畫中可用的解決�
 >必須由具有&#x200B;**業主**&#x200B;角色的使用者登入才能檢視授權儀表板。
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織。
-1. 在&#x200B;**[我的程式](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;主控台上，按一下[Cloud Manager標題](/help/implementing/cloud-manager/navigation.md#cloud-manager-header)上的https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg。 此動作會顯示標籤。
+1. 在&#x200B;**[我的程式](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;主控台上，按一下[Cloud Manager標題](/help/implementing/cloud-manager/navigation.md#cloud-manager-header)上的![顯示功能表圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)。 此動作會顯示標籤。
 1. 按一下索引標籤中的&#x200B;**授權**&#x200B;選項。
 
 ![授權儀表板](assets/license-dashboard.png)
@@ -49,9 +49,9 @@ Cloud Manager授權儀表板可讓您輕鬆存取所有計畫中可用的解決�
 
 * **狀態**&#x200B;欄顯示未使用的權利數量與租使用者可用的權利總數。
 * 這&#x200B;**配置在**&#x200B;清單示已套用解決方案權利的計畫。
-   * 僅當已建立生產環境或已存在生產環境且已在其上執行更新管道時，才認為權利被使用。
+   * 只有在建立生產環境時，才會將權益視為使用。 或者，如果存在管道，且已在其上執行更新管道。
    * 欄中只列出有限數目的程式，其餘則以`+x`專案表示。
-   * 將滑鼠停留在快顯視窗的`+x`專案上，以顯示所有程式的詳細資料。
+   * 將游標暫留在`+x`專案上，即可看到包含所有程式詳細資訊的快顯視窗。
 * **使用狀況**&#x200B;欄顯示&#x200B;**[檢視使用狀況詳細資料](#view-usage-details)**&#x200B;按鈕，以顯示解決方案的使用狀況統計資料。
 
 >[!TIP]
@@ -100,11 +100,9 @@ The right side of the window presents an area chart showing the usage broken dow
 
 ## 常見問題 {#faq}
 
-+++
++++**什麼是內容要求？** {#what-is-a-content-request}
 
-### 什麼是內容請求？ {#what-is-a-content-request}
-
-內容請求是進入AEM Sites或任何客戶提供的快取系統（例如內容傳遞網路）的請求，以HTML格式作為頁面檢視或JSON格式作為API呼叫傳遞內容或資料。
+內容請求是任何導向至AEM Sites或客戶提供的快取系統（例如內容傳遞網路）的請求。 它會擷取HTML格式的內容或資料以供頁面檢視。 或者，以JSON格式用於API呼叫。
 
 每次頁面查看或每五個 API 調用計算一個內容請求，在接收內容請求的第一個緩存系統的入口處測量。內容請求僅計入生產環境。
 
@@ -113,9 +111,7 @@ The right side of the window presents an area chart showing the usage broken dow
 另請參閱[瞭解Cloud Service內容要求](/help/implementing/cloud-manager/content-requests.md)。
 +++
 
-+++
-
-### Adobe Experience Manager 如何衡量內容請求？ {#how-are-content-requests-measured}
++++**Adobe Experience Manager如何測量內容要求？** {#how-are-content-requests-measured}
 
 內容請求在 AEM as a Cloud Service 的邊緣伺服器進行追蹤。原始流量不計入內容請求。AEM as a Cloud Service 內建的 CDN 可跟踪有效的 HTML 和 JSON 請求。
 
@@ -124,23 +120,17 @@ AEM 還制定了排除知名機器人的規則，包括定期存取該網站以�
 另請參閱[瞭解Cloud Service內容要求](/help/implementing/cloud-manager/content-requests.md)。
 +++
 
-+++
-
-### 為什麼我的 Analytics 報告顯示的結果與 AEM 內容請求不同？ {#why-are-reports-different}
++++**為什麼我的Analytics報告顯示的結果與AEM內容請求不同？** {#why-are-reports-different}
 
 內容請求可能與組織的Analytics報告工具不同。 如需詳細資訊，請參閱[瞭解Cloud Service內容要求](/help/implementing/cloud-manager/content-requests.md)。
 +++
 
++++**如果我想進一步瞭解我的內容請求量，該怎麼辦？** {#current-request-volumes}
+
+如果您想進一步瞭解授權儀表板中顯示的內容請求量，您的Adobe團隊可以提供一份報告，顯示內容請求的主要數量驅動因素。 請聯絡您的Adobe團隊或Adobe客戶支援，以請求最高使用量報告。
 +++
 
-### 如果我想了解更多有關我的內容請求量的資訊呢? {#current-request-volumes}
-
-如果您想進一步了解授權儀表板中顯示的內容請求量，您的 Adobe 團隊可以提供一份報告，顯示內容請求的主要數量驅動因素。請聯絡您的Adobe團隊或Adobe客戶支援，以請求最高使用量報告。
-+++
-
-+++
-
-### 如果我使用自己的 CDN 怎麼辦？ {#using-own-cdn}
++++**如果我使用自己的CDN怎麼辦？** {#using-own-cdn}
 
 授權儀表板只會顯示Cloud ServiceCDN追蹤的資料。 如果您選擇使用自己的CDN (BYOCDN)，請按照合約中的規定每年向Adobe報告您的內容請求量。
 +++

@@ -3,9 +3,9 @@ title: 在 Cloud Manager 中管理 Edge Delivery 網站
 description: 瞭解如何將CDN設定新增至Edge Delivery網站或刪除Edge Delivery網站。
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
+source-git-commit: f64a551bc18b53d0026736ece2a44e48cd0cfb4c
 workflow-type: tm+mt
-source-wordcount: '540'
+source-wordcount: '538'
 ht-degree: 2%
 
 ---
@@ -56,7 +56,7 @@ ht-degree: 2%
 
      ![從Edge Delivery索引標籤新增Edge Delivery網站](/help/implementing/cloud-manager/assets/cm-eds-delete1.png)
 
-   * 在頁面的左上角，按一下![顯示或隱藏側邊導覽](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)以顯示左側功能表。 在&#x200B;**服務**&#x200B;標題下，按一下Edge Delivery網站的![網頁](https://spectrum.adobe.com/static/icons/workflow_18/Smock_WebPages_18_N.svg) **Edge Delivery網站**。
+   * 在頁面的左上角，按一下![顯示功能表圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)以顯示左側功能表。 在&#x200B;**服務**&#x200B;標題下，按一下Edge Delivery網站的![網頁](https://spectrum.adobe.com/static/icons/workflow_18/Smock_WebPages_18_N.svg) **Edge Delivery網站**。
 在Edge Delivery網站表格中，在您要移除其網站的資料列結尾按一下![更多圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)。 按一下[刪除Edge Delivery網站]![](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg)**{刪除}**，然後再次按一下[刪除]****&#x200B;以確認移除網站。
 
      ![從Edge Delivery Sites按鈕](/help/implementing/cloud-manager/assets/cm-eds-delete2.png)新增Edge Delivery網站

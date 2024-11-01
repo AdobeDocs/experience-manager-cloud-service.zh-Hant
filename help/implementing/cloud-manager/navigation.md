@@ -5,9 +5,9 @@ exl-id: 3f3d7631-2bc9-440b-9888-50f6529bcd42
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
+source-git-commit: f64a551bc18b53d0026736ece2a44e48cd0cfb4c
 workflow-type: tm+mt
-source-wordcount: '1656'
+source-wordcount: '1661'
 ht-degree: 39%
 
 ---
@@ -35,10 +35,10 @@ Cloud Manager UI 主要由兩個圖形介面組成：
 「我的方案」控制台提供您在所選組織中有權存取之所有方案的概觀。它由幾個部分組成。
 
 1. [工具列](#toolbars-my-programs-toolbars)：提供組織選擇、警示和帳戶設定
-1. 標籤：可讓您切換程式的目前檢視。
+1. 標籤，讓您切換方案的目前視圖。
    * **首頁**&#x200B;檢視 (預設)：選取了「**我的程式**」檢視，其中包含所有程式的概觀
    * 存取[授權儀表板](/help/implementing/cloud-manager/license-dashboard.md)的&#x200B;**授權**。
-   * 請注意，索引標籤預設為關閉，並可使用[Cloud Manager標題](#cloud-manager-header)中的https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg來顯示。
+   * 請注意，索引標籤預設為關閉，並可使用[Cloud Manager標題](#cloud-manager-header)中的![顯示功能表圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)來顯示。
 1. [統計資料和行動號召](#statistics)，提供您最近的活動概觀
 1. [**我的方案**&#x200B;部份](#my-programs-section)：包含您所有方案的概觀
 1. [快速連結](#quick-links-section)可輕鬆存取相關資源。
@@ -195,7 +195,7 @@ Cloud Manager UI 主要由兩個圖形介面組成：
 
 ![方案工具列](assets/cloud-manager-program-toolbar.png)
 
-即使您已使用https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg隱藏標籤，工具列仍會顯示您目前所在的標籤。
+即使您已使用![顯示功能表圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)隱藏標籤，工具列仍會顯示您目前所在的標籤。
 
 ### 方案標籤 {#program-tabs}
 
