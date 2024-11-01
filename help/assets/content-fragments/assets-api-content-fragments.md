@@ -4,10 +4,10 @@ description: 瞭解Adobe Experience Manager HTTP API支援內容片段，這是A
 feature: Content Fragments, Assets HTTP API
 exl-id: d72cc0c0-0641-4fd6-9f87-745af5f2c232
 role: User, Admin
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: 7386298ee83eef5693ce00077659bbc4a1a70d24
 workflow-type: tm+mt
-source-wordcount: '1804'
-ht-degree: 14%
+source-wordcount: '1829'
+ht-degree: 15%
 
 ---
 
@@ -24,6 +24,8 @@ ht-degree: 14%
 
 >[!NOTE]
 >
+>請參閱[結構化內容傳遞與管理的AEM API](/help/headless/apis-headless-and-content-fragments.md)，以取得各種可用API的概觀，以及所涉及概念的比較。
+>
 >也提供[內容片段和內容片段模型 OpenAPI](/help/headless/content-fragment-openapis.md)。
 
 >[!NOTE]
@@ -37,15 +39,15 @@ ht-degree: 14%
 
 >[!NOTE]
 >
->如需Experience Manager API的最新資訊，請造訪[Adobe Experience Manager as a Cloud Service API](https://developer.adobe.com/experience-cloud/experience-manager-apis/)。
+>如需 Experience Manager API 的最新資訊，另請造訪「[Adobe Experience Manager as a Cloud Service API](https://developer.adobe.com/experience-cloud/experience-manager-apis/)」。
 
 [Assets REST API](/help/assets/mac-api-assets.md)可讓Adobe Experience Manager as a Cloud Service的開發人員透過CRUD （建立、讀取、更新、刪除）作業，直接透過HTTP API存取內容(儲存在AEM中)。
 
-此API可讓您藉由向Adobe Experience Manager as a Cloud Service前端應用程式提供內容服務，將JavaScript當作Headless CMS （內容管理系統）來運作。 或任何可執行HTTP要求及處理JSON回應的其他應用程式。
+此API可讓您藉由向Adobe Experience Manager as a Cloud Service前端應用程式提供內容服務，以將JavaScript當作Headless CMS （內容管理系統）來運作。 或任何可執行HTTP要求及處理JSON回應的其他應用程式。
 
 例如，[單頁應用程式(SPA)](/help/implementing/developing/hybrid/introduction.md) （框架式或自訂）需要透過HTTP API提供的內容，通常為JSON格式。
 
-雖然[AEM核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hant)提供可自訂的API，可提供此用途的必要讀取作業，且可自訂其JSON輸出，但實作時確實需要AEM WCM （Web內容管理）技術。 這是因為它們必須託管在基於專用AEM範本的頁面中。 並非每個SPA開發組織都能直接存取這些知識。
+雖然[AEM核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-hant)提供可自訂的API，可提供此用途的必要讀取作業，且可自訂其JSON輸出，但實作時確實需要AEM WCM （Web內容管理）技術。 這是因為它們必須託管在基於專用AEM範本的頁面中。 並非每個SPA開發組織都能直接存取這些知識。
 
 此時可使用Assets REST API。 它可讓開發人員直接存取資產（例如影像和內容片段），而不需要先將資產內嵌在頁面中，並以序列化JSON格式傳送其內容。
 

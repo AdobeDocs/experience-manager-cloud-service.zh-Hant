@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 9b6cbe2d1a076b6c06fb3e9d55b79e124d4abc96
+source-git-commit: d98aa9d206486022d465ca19c8888088562d56c3
 workflow-type: tm+mt
-source-wordcount: '1371'
-ht-degree: 62%
+source-wordcount: '1395'
+ht-degree: 61%
 
 ---
 
@@ -56,6 +56,10 @@ Have a look at the October 2024 Release Overview video for a summary of the feat
 **產生變化版本**
 
 透過 AEM 新功能「[產生變化版本](/help/generative-ai/generate-variations.md)」運用 GenAI；此功能現在可於雲端服務中存取。產生變化版本可協助您透過使用生成式 AI 來產生和擴展內容建立。請聯絡您的 Adob&#x200B;&#x200B;e 客戶團隊以考慮參與該計劃。
+
+**用於內容片段傳送的AEM REST OpenAPI**
+
+內容片段傳送的[AEM REST OpenAPI](/help/headless/aem-rest-openapi-content-fragment-delivery.md)現在可用於AEM as a Cloud Service。
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 

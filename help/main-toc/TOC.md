@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的運作方式以及該軟體可以為您做哪些事。
 breadcrumb-title: 使用手冊
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 92392d3d57b40a423acc3e813e96ffb6f791ba4c
+source-git-commit: 0e7c58b2a4d0f0704f8693c0dddae0b1a033ec83
 workflow-type: tm+mt
-source-wordcount: '5714'
+source-wordcount: '5729'
 ht-degree: 99%
 
 ---
@@ -1021,6 +1021,7 @@ ht-degree: 99%
          + [Markdown 編輯器](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html?lang=zh-hant)
       + [樹狀結構](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html?lang=zh-hant)
       + [JSON 預覽](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-json-preview.html?lang=zh-hant)
+   + [適用於結構化內容傳遞與管理的AEM API](/help/headless/apis-headless-and-content-fragments.md)
    + GraphQL API{#graphql-api}
       + [用於內容片段的 GraphQL API](/help/headless/graphql-api/content-fragments.md)
       + [管理 GraphQL 端點](/help/headless/graphql-api/graphql-endpoint.md)
@@ -1030,6 +1031,7 @@ ht-degree: 99%
       + [更新您的內容片段，以達到最佳化 GraphQL 篩選](/help/headless/graphql-api/graphql-optimized-filtering-content-update.md)
       + [範例 GraphQL 查詢](/help/headless/graphql-api/sample-queries.md)
       + [疑難排解 GraphQL 查詢](/help/headless/graphql-api/persisted-queries-troubleshoot.md)
+   + [用於內容片段傳送的AEM REST OpenAPI](/help/headless/aem-rest-openapi-content-fragment-delivery.md)
    + [內容片段和模型 OpenAPI](/help/headless/content-fragment-openapis.md)
    + [Assets HTTP API 中的內容片段支援](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/assets-api-content-fragments.html?lang=zh-hant)
    + 安全性 {#security}

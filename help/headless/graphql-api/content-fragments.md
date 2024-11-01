@@ -4,9 +4,9 @@ description: 了解如何將 Adobe Experience Manager (AEM) as a Cloud Service �
 feature: Headless, Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 role: Admin, Developer
-source-git-commit: 32803bc4304e55ccf0a618236e482cb42aa88e27
+source-git-commit: 575b626447f6b88c1be601fbbd4de7eeb0264019
 workflow-type: tm+mt
-source-wordcount: '5557'
+source-wordcount: '5582'
 ht-degree: 98%
 
 ---
@@ -30,6 +30,10 @@ ht-degree: 98%
 >
 >* [AEM Commerce 透過 GraphQL 取用來自 Commerce 平台的資料](/help/commerce-cloud/integrating/magento.md)。
 >* AEM 內容片段與 AEM GraphQL API (基於標準 GraphQL 的自訂實作) 搭配運作，以傳遞結構化內容以供您的應用程式使用。
+
+>[!NOTE]
+>
+>請參閱[結構化內容傳遞與管理的AEM API](/help/headless/apis-headless-and-content-fragments.md)，以取得各種可用API的概觀，以及所涉及概念的比較。
 
 >[!NOTE]
 >
