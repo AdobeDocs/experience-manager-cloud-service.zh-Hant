@@ -5,10 +5,10 @@ exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 815bd75844ed164973c6acc07a6bf37a39d616b8
+source-git-commit: 41a67b0747ed665291631de4faa7fb7bb50aa9b9
 workflow-type: tm+mt
-source-wordcount: '705'
-ht-degree: 47%
+source-wordcount: '704'
+ht-degree: 45%
 
 ---
 
@@ -61,7 +61,7 @@ AEM as a Cloud Service提供內建的CDN （內容傳遞網路）服務，也可
 
 >[!TIP]
 >
->使用 AEM as a Cloud service 設定自訂網域名稱通常是一個簡單的過程。但是，有時可能會發生網域委派問題，這可能需要1-2個工作日才能解決。 出於這個原因，強烈建議在上線日期之前安裝網域。如需詳細資訊，請參閱檔案[檢查網域名稱狀態](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)。
+>使用 AEM as a Cloud service 設定自訂網域名稱通常是一個簡單的過程。但是，有時可能會發生網域委派問題，這可能需要1-2個工作日才能解決。 因此，建議您在上線日期之前安裝網域。 如需詳細資訊，請參閱檔案[檢查網域名稱狀態](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)。
 
 ## 限制 {#limitations}
 

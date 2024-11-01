@@ -5,9 +5,9 @@ exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
+source-git-commit: 41a67b0747ed665291631de4faa7fb7bb50aa9b9
 workflow-type: tm+mt
-source-wordcount: '786'
+source-wordcount: '785'
 ht-degree: 77%
 
 ---
@@ -54,7 +54,7 @@ Cloud Manager [2023.10.0 版](/help/implementing/cloud-manager/release-notes/202
 
 ### 使用特定 Java 版本 {#using-java-support}
 
-根據預設，專案是由Cloud Manager建置流程使用Oracle8 JDK建置，但強烈建議AEM Cloud Service客戶將用於執行Maven的JDK版本設定為`11`。
+預設情況下，專案會由Cloud Manager建置流程使用Oracle8 JDK建置，但AEM Cloud Service客戶建議將用於執行Maven的JDK版本設定為`11`。
 
 #### 設定Maven JDK版本 {#alternate-maven-jdk-version}
 

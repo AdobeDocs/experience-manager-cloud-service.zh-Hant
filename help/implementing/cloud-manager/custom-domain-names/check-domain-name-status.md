@@ -5,10 +5,10 @@ exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: fa99656e0dd02bb97965e8629d5fa657fbae9424
+source-git-commit: 41a67b0747ed665291631de4faa7fb7bb50aa9b9
 workflow-type: tm+mt
-source-wordcount: '847'
-ht-degree: 24%
+source-wordcount: '846'
+ht-degree: 22%
 
 ---
 
@@ -80,7 +80,7 @@ Fastly會將網域鎖定到首先註冊它的帳戶，而其他帳戶必須請�
 
 >[!TIP]
 >
->與 Fastly 解決網域委派問題通常需要 1-2 個工作天。出於這個原因，強烈建議在上線日期之前安裝網域。
+>與 Fastly 解決網域委派問題通常需要 1-2 個工作天。因此，建議您在上線日期之前安裝網域。
 
 >[!NOTE]
 >
