@@ -1,12 +1,12 @@
 ---
-title: 使用設定管道
+title: 使用\s
 description: 瞭解如何使用設定管道來部署不同的設定AEM as a Cloud Service，例如記錄轉送設定、清除相關的維護任務和各種CDN設定。
 feature: Operations
 role: Admin
 exl-id: bd121d31-811f-400b-b3b8-04cdee5fe8fa
-source-git-commit: 2247fdd919057703f1c35145ba2bc9c6ec47250b
+source-git-commit: 4d8f6f37541c0d712019f21a5684ec4bd5133de3
 workflow-type: tm+mt
-source-wordcount: '1000'
+source-wordcount: '997'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ Cloud Manager設定管道將設定檔案（以YAML格式建立）部署到目標
 
 設定管道可以透過Cloud Manager部署到生產（非沙箱）計畫中的開發、測試和生產環境型別。 組態檔可以使用[命令列工具](/help/implementing/developing/introduction/rapid-development-environments.md#deploy-config-pipeline)部署至快速開發環境(RDE)。
 
-本檔案的以下章節概述有關如何使用設定管道以及如何為其建構設定的重要資訊。 它說明在配置管道所支援的所有功能或功能子集之間共用的一般概念。
+本檔案的以下章節提供了有關如何使用設定管道以及如何為其構建配置的重要資訊的概述。 它說明在配置管道所支援的所有功能或功能子集之間共用的一般概念。
 
 * [支援的組態](#configurations) — 可以使用組態管道部署的組態清單
 * [建立和管理設定管道](#creating-and-managing) — 如何建立設定管道。
@@ -31,7 +31,7 @@ Cloud Manager設定管道將設定檔案（以YAML格式建立）部署到目標
 
 ## 支援的設定 {#configurations}
 
-下表提供這類設定的完整清單，並連結至描述其不同設定語法和其他資訊的專用檔案。
+下表提供這類設定的完整清單，以及描述其不同設定語法和其他資訊的專用檔案的連結。
 
 | 類型 | YAML `kind`值 | 說明 |
 |---|---|---|
@@ -43,10 +43,10 @@ Cloud Manager設定管道將設定檔案（以YAML格式建立）部署到目標
 | [CDN錯誤頁面](/help/implementing/dispatcher/cdn-error-pages.md) | `CDN` | 如果無法連線AEM來源，並參考設定檔案中自行託管靜態內容的位置，則覆寫預設錯誤頁面 |
 | [CDN清除](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token) | `CDN` | 宣告用來清除CDN的清除API金鑰 |
 | [客戶管理的CDN HTTP權杖](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token#CDN-HTTP-value) | `CDN` | 宣告從客戶CDN呼叫AdobeCDN所需的X-AEM-Edge-Key值 |
-| [基本驗證](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token#basic-auth) | `CDN` | 宣告基本驗證對話方塊的使用者名稱和密碼，以保護某些URL [ （僅供早期採用者使用）](/help/release-notes/release-notes-cloud/release-notes-current.md#foundation-early-adopter) |
+| [基本驗證](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token#basic-auth) | `CDN` | 為保護特定URL的基本驗證對話方塊宣告使用者名稱和密碼。 |
 | [版本清除維護任務](/help/operations/maintenance.md#purge-tasks) | `MaintenanceTasks` | 透過在應清除內容版本的時機周圍宣告規則來最佳化AEM存放庫 |
 | [稽核記錄清除維護任務](/help/operations/maintenance.md#purge-tasks) | `MaintenanceTasks` | 最佳化AEM稽核記錄檔，藉由宣告規則來決定何時應清除記錄檔，以提高效能 |
-| [記錄檔轉送](/help/implementing/developing/introduction/log-forwarding.md) | `LogForwarding` | 尚未提供 — 設定要將記錄轉送至不同目的地（例如Splunk、Datadog、HTTPS）的端點和認證 |
+| [記錄檔轉送](/help/implementing/developing/introduction/log-forwarding.md) | `LogForwarding` | 設定可將記錄轉送至不同目的地的端點和認證，包括Azure Blob Storage、Datadog、HTTPS、Elasticsearch、Splunk) |
 
 ## 建立和管理設定管道 {#creating-and-managing}
 
@@ -111,7 +111,7 @@ Cloud Manager設定管道將設定檔案（以YAML格式建立）部署到目標
   logForwarding.yaml
 ```
 
-當所有環境和所有型別的設定（CDN、記錄轉送等）都滿足相同設定需要時，請使用此結構。 在此案例中，`envTypes`陣列屬性將包含所有環境型別。
+當相同的設定足以滿足所有環境和所有型別的設定（CDN、記錄轉送等）時，請使用此結構。 在此案例中，`envTypes`陣列屬性將包含所有環境型別。
 
 ```yaml
    kind: "cdn"

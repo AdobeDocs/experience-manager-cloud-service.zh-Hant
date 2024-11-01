@@ -3,7 +3,7 @@ title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2024.8.0 版發行�
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2024.8.0 版發行說明。'
 feature: Release Information
 role: Admin
-source-git-commit: 35ec3edfec42936b9a5908265d6dbb529a70f6cf
+source-git-commit: d6f058bbb6bd7222327ff7bf3c5fe6a6ecf0461b
 workflow-type: tm+mt
 source-wordcount: '1173'
 ht-degree: 100%
@@ -12,7 +12,7 @@ ht-degree: 100%
 
 # [!DNL Adobe Experience Manager] as a Cloud Service 2024.8.0 版發行說明 {#release-notes}
 
-以下章節概述 [!DNL Experience Manager] as a Cloud Service 目前 (最新) 版本的功能發行說明。
+以下章節概述 [!DNL Experience Manager] as a Cloud Service 2024.8.0 版的功能發行說明。
 
 >[!NOTE]
 >
@@ -89,22 +89,22 @@ Assets as a Cloud Service 現在使用最新的 Firefly 小工具，讓您可以
 
 ### AEM Forms 的全新預發行功能 {#forms-new-prerelease-features}
 
-#### 自動儲存以核心元件為主的調適型表單草稿
+#### 自動儲存以核心元件為主的最適化表單草稿
 
 使用者現在可以享受自動儲存功能帶來的好處，此功能會將部分完成的表單自動儲存為草稿。他們可以稍後再回來，使用同一部裝置或其他裝置完成填寫。此功能讓使用者不需要從頭開始填寫表單，因此能夠減少放棄表單的次數，進而改善組織的轉換率。
 
 
 ### AEM Forms 的優先體驗功能 {#forms-new-early-access-features}
 
-AEM Forms 優先體驗計劃為您提供獨一無二的機會，獲得先進創新內容的獨家使用權，並協助形塑開發。
+AEM Forms 搶先體驗計劃為您提供獨一無二的機會，獲得先進創新內容的獨家使用權，並協助形塑開發。
 
-本發行說明列出目前版本提供的創新功能。如需優先體驗計劃提供之創新的完整清單，請參閱 [AEM Forms 優先體驗計劃文件](/help/forms/early-access-ea-features.md)。
+本發行說明列出目前版本提供的創新功能。如需搶先體驗計劃提供之創新的完整清單，請參閱 [AEM Forms 搶先體驗計劃文件](/help/forms/early-access-ea-features.md)。
 
 #### AEM Forms AI 助理
 
-調適型表單的生成式 AI 全面提升表單開發流程的功能和易用性。它使您能夠建置更好的表單，速度也比以往更快。
+最適化表單的生成式 AI 全面提升表單開發流程的功能和易用性。它使您能夠建置更好的表單，速度也比以往更快。
 
-![生成式 AI 助理、調適型表單](/help/forms/assets/generative-ai-assistant.png)
+![生成式 AI 助理、最適化表單](/help/forms/assets/generative-ai-assistant.png)
 
 提供的生成式 AI 功能包括：
 

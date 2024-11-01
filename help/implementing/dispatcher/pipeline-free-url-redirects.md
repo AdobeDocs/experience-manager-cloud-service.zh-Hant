@@ -3,17 +3,14 @@ title: 管道專用URL重新導向
 description: 瞭解如何宣告301或302重新導向，而不需要存取Git或Cloud Manager管道。
 feature: Dispatcher
 role: Admin
-source-git-commit: 567c75f456f609dbc254753b439151d0f4100bc0
+source-git-commit: 4be9d99de2a8fbebc508419630ce254d2f9fd6dc
 workflow-type: tm+mt
-source-wordcount: '653'
+source-wordcount: '644'
 ht-degree: 0%
 
 ---
 
 # 管道專用URL重新導向 {#pipeline-free-redirects}
-
->[!NOTE]
->此功能尚未發行。
 
 由於各種原因，組織會重新寫入URL，引發301 （或302）重新導向，亦即瀏覽器會重新導向至不同頁面。
 
@@ -64,7 +61,7 @@ maps:
 
 `RewriteMap`指示詞應指出資料是以`sdbm` （簡單DBM）格式儲存於資料庫管理員(DBM)檔案格式。
 
-其餘組態將取決於`redirectmap.txt`的格式。 最簡單的格式（如下面的範例所示）是原始url與對應url之間的一對一對應：
+其餘組態取決於`redirectmap.txt`的格式。 最簡單的格式（如下面的範例所示）是原始url與對應url之間的一對一對應：
 
 ```
 # RewriteMap from managed rewrite maps
@@ -78,6 +75,6 @@ RewriteRule ^(.*)$ ${map.foo:$1|/} [L,R=301]
 
 請牢記以下事項：
 
-* 根據預設，載入重寫對應時，Apache將會啟動，而不等待完整對應檔案載入，因此在完整對應載入之前，可能會暫時出現不一致的情況。 您可以變更此設定，讓Apache等待完整地圖內容載入，但Apache啟動需要更長的時間。 若要變更此行為以便Apache等候，請新增`wait:true`至`managed-rewrite-maps.yaml`檔案。
-* 若要變更載入之間的頻率，請新增`ttl: <integer>`至`managed-rewrite-maps.yaml`檔案。 例如 `ttl: 120`。
+* 依預設，載入重寫對應時，Apache會啟動而不等待完整對應檔案載入，因此在完整對應載入之前可能會暫時出現不一致的情況。 您可以變更此設定，讓Apache等待完整地圖內容載入，但Apache需要更長的時間啟動。 若要變更此行為以便Apache等待，請新增`wait:true`至`managed-rewrite-maps.yaml`檔案。
+* 若要變更載入之間的頻率，請新增`ttl: <integer>`至`managed-rewrite-maps.yaml`檔案。 例如：`ttl: 120`。
 * Apache對RewriteMap單一專案具有1024長度限制。

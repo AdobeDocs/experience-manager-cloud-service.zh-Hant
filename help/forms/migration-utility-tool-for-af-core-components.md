@@ -8,9 +8,9 @@ hide: true
 hidefromtoc: true
 exl-id: ee71a576-96a7-4c81-b3a3-1d678f010cba
 feature: Adaptive Forms, Core Components
-source-git-commit: 5d8f4d5d628b090b8bf54de0f2d9d62c02544522
+source-git-commit: c52d649e569ef427e70c85a88fa0f48fcc534e9e
 workflow-type: tm+mt
-source-wordcount: '991'
+source-wordcount: '993'
 ht-degree: 1%
 
 ---
@@ -19,11 +19,11 @@ ht-degree: 1%
 
 <span class="preview">此功能可在早期採用者方案下使用。 您可以從您的官方電子郵件ID寫信到aem-forms-ea@adobe.com ，以加入率先採用者計畫並請求存取該功能。</span>
 
-Forms Conversion Utility (屬於[AEM Modernize Tool](https://opensource.adobe.com/aem-modernize-Tools/)套裝的一部分)可協助您輕鬆地將使用舊版基礎元件建立的最適化Forms轉換為利用核心元件所支援的現代化功能的表單。
+Forms轉換公用程式是[AEM現代化工具](https://opensource.adobe.com/aem-modernize-tools/)套裝的一部分，可協助您輕鬆地將使用舊版基礎元件建立的最適化Forms轉換為運用核心元件現代支援功能的表單。
 
 ## 什麼是AEM現代化工具？
 
-[AEM Modernize Tools](https://opensource.adobe.com/aem-modernize-Tools/)是指一組公用程式或軟體應用程式，這些應用程式是專為協助現代化或更新Adobe Experience Manager (AEM)專案而設計。 這些工具通常有助於將AEM中的舊元件或功能轉換為更新、更有效率且受支援的替代方案。 「Forms轉換公用程式」安裝在「AEM現代化工具」下，以將以基礎元件為基礎的調適型Forms轉換為以核心元件為基礎的表單。
+[AEM Modernize Tools](https://opensource.adobe.com/aem-modernize-tools/)是指一組公用程式或軟體應用程式，這些應用程式是專為協助現代化或更新Adobe Experience Manager (AEM)專案而設計。 這些工具通常有助於將AEM中的舊元件或功能轉換為更新、更有效率且受支援的替代方案。 「Forms轉換公用程式」安裝在「AEM現代化工具」下，以將以基礎元件為基礎的調適型Forms轉換為以核心元件為基礎的表單。
 
 Forms轉換公用程式會將以舊版基礎元件為基礎的最適化Forms轉換為以新版核心元件為基礎的表單。 此轉換流程可確保表單符合現代標準和功能，潛在地改善效能、相容性，以及AEM環境內的維護便利性。
 
@@ -68,7 +68,7 @@ Forms轉換公用程式會將以舊版基礎元件為基礎的最適化Forms轉�
 
    `java -jar aem-author-p4502.jar`
 
-1. 在本機系統中複製[AEM Modernize Tool](https://git.corp.adobe.com/livecycle/forms-modernizer/tree/convertForms)存放庫。
+1. 在本機系統中複製[AEM Modernize Tool](/help/journey-migration/refactoring-tools/aem-modernization-tools.md)存放庫。
 
    ```Shell
    git clone [Path of Git repository of AEM Modernize Tool]
@@ -125,7 +125,7 @@ Forms轉換公用程式會將以舊版基礎元件為基礎的最適化Forms轉�
 1. 在&#x200B;**[!UICONTROL Source路徑]**&#x200B;中指定`source folder`名稱。
 1. 在&#x200B;**[!UICONTROL 目標路徑]**&#x200B;中指定`target folder`名稱。
 1. 選取&#x200B;**[!UICONTROL 「下一步」]**。
-1. 按一下&#x200B;**[!UICONTROL 新增Forms]**。 `source folder`中的所有表單都會顯示在畫面上。
+1. 按一下&#x200B;**[!UICONTROL 新增Forms]**。 `source folder`中的所有表單都會出現在畫面上。
 1. 選取以基礎元件為基礎的最適化Forms ，以將它轉換為以核心元件為基礎的表單。 您也可以選取多個表單。
 
    ![AEM現代化工具選取表單](/help/forms/assets/aem-modernize-tools-select-form.png)
