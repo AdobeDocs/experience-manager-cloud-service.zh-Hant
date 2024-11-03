@@ -1,9 +1,9 @@
 ---
 title: 在Content Hub上管理授權的Assets
-description: 瞭解各種中繼資料管理和編輯方法
-source-git-commit: 541d5819e19c67eb3f961e41000106178bff66de
+description: 瞭解如何將授權欄位新增至資產中繼資料表單、將授權中繼資料屬性套用至資產資料夾，以及核准具有授權的資產以供使用。
+source-git-commit: 9324faf8c93620f5fccb1476eb124f5e640f193e
 workflow-type: tm+mt
-source-wordcount: '206'
+source-wordcount: '251'
 ht-degree: 1%
 
 ---
@@ -21,5 +21,7 @@ ht-degree: 1%
 1. [核准授權PDF](/help/assets/manage-organize-assets-view.md#set-asset-status)
 1. 選取該資產，然後按一下&#x200B;**詳細資料**&#x200B;以檢視其屬性。 在步驟1中新增的授權欄位中，為已在步驟3中核准或先前已核准的資產授權定義絕對路徑。 Content Hub絕對路徑遵循此標準模式： `/content/dam/(The asset's folder hierarchy within the DAM repository)/(asset_name).(file_extension)`。 例如， /content/dam/teamA/projects/documents/file1.pdf
    ![絕對路徑](/help/assets/assets/absolute-path.png)
+1. 核准資產使其可在Content Hub中使用，然後按一下&#x200B;**儲存**。 如需如何核准資產的詳細資訊，請參閱[設定資產狀態](/help/assets/manage-organize-assets-view.md#set-asset-status)。
+
 
 
