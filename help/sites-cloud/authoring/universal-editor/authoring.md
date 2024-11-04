@@ -5,10 +5,10 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: ffe90d3919c0f0c1a1c60efccc0191118dfaa84a
+source-git-commit: 31fc69523107719d6f33d7a0845407547b57f4a7
 workflow-type: tm+mt
-source-wordcount: '1297'
-ht-degree: 40%
+source-wordcount: '1317'
+ht-degree: 38%
 
 ---
 
@@ -159,7 +159,11 @@ Universal Editor 支援在任意實作中編輯任何方面的內容，以便提
 
 1. 拖曳的元件在內容樹狀結構中會變成灰色，而您的插入點會以藍線表示。 將元件鬆開並放在新位置中。
 
-元件在內容樹和編輯器中都會重新排序
+元件會在內容樹和編輯器中重新排序。
+
+>[!NOTE]
+>
+>如果在來源和目標容器之間設定不同的[元件篩選器](/help/implementing/universal-editor/customizing.md#filtering-components)，則無法在容器之間移動元件。
 
 ## 預覽內容 {#previewing-content}
 
