@@ -3,7 +3,7 @@ title: 管道專用URL重新導向
 description: 瞭解如何宣告301或302重新導向，而不需要存取Git或Cloud Manager管道。
 feature: Dispatcher
 role: Admin
-source-git-commit: 4be9d99de2a8fbebc508419630ce254d2f9fd6dc
+source-git-commit: 36b7d72f24bd60ad94762c9c9937105bea6e31b6
 workflow-type: tm+mt
 source-wordcount: '644'
 ht-degree: 0%
