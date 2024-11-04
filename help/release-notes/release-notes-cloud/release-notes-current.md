@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: a5159f2ff49b8e216087df4206c14a9ccd89f336
+source-git-commit: 08b23f093e4362a9885919a3e3d87bdcaada8876
 workflow-type: tm+mt
-source-wordcount: '1395'
-ht-degree: 61%
+source-wordcount: '1480'
+ht-degree: 58%
 
 ---
 
@@ -143,6 +143,19 @@ AEM Forms 搶先體驗計劃為您提供獨一無二的機會，獲得先進創�
 * 已解決類別URL格式在雲端例項中無法如預期運作的問題。
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] 基礎 {#foundation}
+
+### 控制表單提交的設定 {#configuration-submissions}
+
+為了控制Coral或Foundation表單在特定位置的表單提交，AEM已引入新的設定： `com.adobe.granite.ui.components.FormRestrict`。 此設定包含兩個欄位：
+
+1. **新增允許的路徑**：指定允許表單動作的路徑。
+1. **限制行為**：決定限制路徑（未包含在允許清單中的路徑）的行為。 您可以選擇兩個選項：
+   * **快顯視窗** （預設）：顯示快顯通知。
+   * **防止**：封鎖表單提交。
+
+>[!NOTE]
+>
+>位於`/apps`、`/libs`、`/mnt/overlay`和`/mnt/override`下的所有Coral或Foundation表單都不支援此設定。
 
 ### 具有進階網路選項的自助式記錄檔轉送 {#log-forwarding}
 
