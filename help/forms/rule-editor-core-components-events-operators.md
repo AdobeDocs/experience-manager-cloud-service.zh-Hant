@@ -4,15 +4,15 @@ description: 最適化Forms規則編輯器支援各種運運算元型別和事�
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
-source-git-commit: 780c68f0c21ef94ff6a73ce991370100b1a88db9
+exl-id: ac85ff04-25dc-4566-a986-90ae374bf383
+source-git-commit: f6e1de0c2cc2c056b3bfcea6ce5d7aaed041f6f8
 workflow-type: tm+mt
-source-wordcount: '1921'
-ht-degree: 1%
+source-wordcount: '2106'
+ht-degree: 2%
 
 ---
 
-
-# 根據核心元件的最適化表單的規則編輯器中的運運算元型別和事件
+# 以核心元件為主之最適化表單的規則編輯器中的運算子和事件類型
 
 在AEM Forms as a Cloud中，規則編輯器包含各種運運算元型別和事件，可讓您輕鬆定義和執行複雜的條件和動作。
 
@@ -36,7 +36,7 @@ ht-degree: 1%
 * **不是空的**
 * **已選取：**&#x200B;當使用者選取核取方塊、下拉式清單單選按鈕的特定選項時，傳回True。
 * **已初始化（事件）：**&#x200B;當表單物件在瀏覽器中呈現時傳回True。
-* **已變更（事件）：**&#x200B;當使用者變更表單物件的輸入值或選取的選項時，傳回true。
+* **已變更 （事件）：** 當用戶變更表單物件的輸入值或選取選項時，會傳回 true。
 
 <!--
 * **Navigation(event):** Returns true when the user clicks a navigation object. Navigation objects are used to move between panels. 
@@ -44,9 +44,9 @@ ht-degree: 1%
 * **Successful Submission(event):** Returns true on successful submission of data to a form data model.
 * **Error in Submission(event):**  Returns true on unsuccessful submission of data to a form data model. -->
 
-### 規則編輯器中的可用規則型別 {#available-rule-types-in-rule-editor}
+### 規則 編輯者 中可用的規則類型 {#available-rule-types-in-rule-editor}
 
-規則 編輯者提供了一組可用于編寫規則的預定義規則類型。 讓我們詳細看一下每種規則類型。 有關在規則 編輯者中編寫規則的詳細信息，請参閱 [編寫規則](/help/forms/rule-editor-core-components-user-interface.md#write-rules)。
+規則編輯者提供了一組可用于編寫規則的預定義規則類型。 讓我們詳細看一下每種規則類型。 如需有關在規則編輯器中寫入規則的詳細資訊，請參閱[寫入規則](/help/forms/rule-editor-core-components-user-interface.md#write-rules)。
 
 #### [!UICONTROL 時間] {#whenruletype}
 
@@ -75,11 +75,11 @@ _
 
 例如，清單有四個選項：紅色、藍色、綠色和黃色。 建立規則時，系統會自動擷取選項（選項按鈕），供規則建立者使用，如下所示：
 
-![多重值顯示選項](assets/multivaluefcdisplaysoptions.png)
+![多值顯示選項](assets/multivaluefcdisplaysoptions.png)
 
-編寫 When 規則時，可以觸發清除值操作。 清除值操作將清除指定物件的值。 在 When 語句中使用「清除值」選項可以創建具有多個字段的複雜條件。 您可以添加 Else 語句以添加其他條件
+編寫 When 規則時，可以觸發清除值操作。 清除值動作會清除指定物件的值。 在When陳述式中將的清除值作為選項可讓您建立具有多個欄位的複雜條件。 您可以新增Else陳述式以進一步新增條件
 
-![清除值](assets/clearvalueof.png)
+![清除](assets/clearvalueof.png)的值
 
 >[!NOTE]
 >
@@ -107,9 +107,9 @@ _
 
 ![在When](/help/forms/assets/allowed-multiple-field-when.png)中允許多個欄位
 
-**在When條件功能**&#x200B;中使用允許多個欄位時的考量事項
+**在「當條件」功能中使用允許的多個字段時的注意事項**
 
-* [確保核心元件設置為版本 3.0.14 或更高版本](https://github.com/adobe/aem-core-forms-components)，以便在規則 編輯者中使用此功能。
+* [確保核心元件設置為版本 3.0.14 或更高版本](https://github.com/adobe/aem-core-forms-components)，以便在 規則 編輯者中使用此功能。
 * 如果將規則應用於 When 條件中的不同欄位，則僅更改其中一個字段時，規則觸發平均。
 
 
@@ -130,10 +130,10 @@ Allowed Multiple fields in When condition feature is disabled by default. To ena
    * value: deps
 1. Click **[!UICONTROL Done]**. -->
 
-如果「當條件」功能中允許的多個字段遇到任何問題，請將故障排除步驟追隨為：
+如果「條件」功能中允許的多個欄位發生任何問題，請遵循下列疑難排解步驟：
 
-1. 在編輯模式下打開表單。
-1. 開啟「內容」瀏覽器，然後選擇 **[!UICONTROL 最適化表單的「引導容器]** 」元件。
+1. 在編輯模式中開啟表單。
+1. 開啟內容瀏覽器，然後選取最適化表單的&#x200B;**[!UICONTROL 指南容器]**&#x200B;元件。
 1. 按一下「指引容器」屬性 ![指引屬性](/help/forms/assets/configure-icon.svg) 圖示。此時會開啟「最適化表單容器」對話框。
 1. 按一下完成，然後再次儲存對話方塊。
 
@@ -163,10 +163,10 @@ Allowed Multiple fields in When condition feature is disabled by default. To ena
 * 已啟用（布林值）
 * readOnly （布林值）
 * 必要（布林值）
-* screenReaderText （字串）
+* screenReaderText （字符串）
 * 合法 （布林值 ）
 * 錯誤訊息 （字串）
-* 預設 （數字、字串、日期）
+* 預設（數字、字串、日期）
 * enumNames （字串[]）
 * chartType （字串）
 
@@ -184,11 +184,11 @@ Allowed Multiple fields in When condition feature is disabled by default. To ena
 
 ![物件屬性](assets/object_property_set_property_new.png)
 
-**[!UICONTROL 清除值]**&#x200B;清除指定物件的值。
+**[!UICONTROL 清除值]** 清除指定物件的值。
 
 **[!UICONTROL 在指定的物件上設定焦點]** 集聚焦。
 
-**[!UICONTROL 提交表單]**&#x200B;提交表單。
+**[!UICONTROL 提交表單]** 。
 
 ****&#x200B;重設 重置表單或指定的物件。
 
@@ -196,7 +196,7 @@ Allowed Multiple fields in When condition feature is disabled by default. To ena
 
 **[!UICONTROL 新增實例]** 新增指定重複面板或表格列的執行個體。
 
-**[!UICONTROL 移除例項]** 移除指定可重複面板或表格列的執行個體。
+**[!UICONTROL 移除執行個體]**&#x200B;移除指定之可重複面板或表格列的執行個體。
 
 **[!UICONTROL 函式輸出]**&#x200B;根據預先定義的函式或自訂函式定義規則。
 
@@ -218,7 +218,7 @@ Allowed Multiple fields in When condition feature is disabled by default. To ena
 （數學運算式的值） OR
 （資料模型服務的輸出值）；
 
-當（選擇性）：
+時間（選擇）：
 
 （條件 1 和條件 2 和條件 3） 為 TRUE;
 
@@ -226,7 +226,7 @@ Allowed Multiple fields in When condition feature is disabled by default. To ena
 
 ![Set-value-web-service](assets/set-value-web-service.png)
 
-使用表格數據模型服務設定值 規則的範例。
+使用表單資料模型服務的設定值規則範例。
 
 #### [!UICONTROL 節目] {#show}
 
@@ -309,6 +309,50 @@ Allowed Multiple fields in When condition feature is disabled by default. To ena
 >如果指定的值不符合驗證規則，您可以向使用者顯示驗證訊息。 您可以在側邊欄中元件屬性的&#x200B;**[!UICONTROL 指令碼驗證訊息]**&#x200B;欄位中指定訊息。
 
 ![指令碼驗證](assets/script-validation.png)
+
+#### [!UICONTROL 在面板之間導覽]
+
+**[!UICONTROL 在面板之間導覽]**&#x200B;規則型別可讓您在表單的不同面板之間切換焦點。 例如，您可以建立運算式，將焦點移至下一個面板。
+
+在面板之間導覽&#x200B;**會將焦點移至下一個面板的規則，其結構如下：**
+
+`Navigate among the panels`
+
+`Shift focus to the next item Object A;`
+
+`When:`
+
+`(Condition 1 OR Condition 2 OR Condition 3) is TRUE;`
+
+同樣，您可以在面板&#x200B;**之間編寫**「導航」規則以將聚焦移動到上一個面板：
+
+`Navigate among the panels`
+
+`Shift focus to the previous item Object A;`
+
+`When:`
+
+`(Condition 1 OR Condition 2 OR Condition 3) is TRUE;`
+
+有關如何創建規則以在面板中導航的更多詳細資訊， [請按兩下此處](/help/forms/rule-editor-core-components-usecases.md#navigating-between-panels-using-buttons)。
+
+#### [!UICONTROL 異步函數呼叫]
+
+<span class="preview">這是一項預先發佈功能，可透過我們的[預先發佈管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features)存取。</span>
+
+**[!UICONTROL 非同步函式呼叫]**&#x200B;規則型別可讓您執行非同步函式。 它可讓您啟動獨立於主要執行緒運作的函式呼叫，讓其他處理程式繼續執行，而不需要等候非同步函式完成。
+
+用來執行非同步函式的典型Async函式呼叫規則的結構如下：
+
+`When:`
+
+`(Condition 1 OR Condition 2 OR Condition 3) is TRUE;`
+
+`Async Function call`
+
+`[Callback Function];`
+
+如需如何在視覺規則編輯器中使用非同步函式呼叫的詳細資訊，請參閱規則編輯器](/help/forms/using-async-funct-in-rule-editor.md)中的[使用非同步函式呼叫一文。
 
 <!--
 ### [!UICONTROL Set Options Of] {#setoptionsof}

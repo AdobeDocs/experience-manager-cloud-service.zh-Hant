@@ -1,8 +1,8 @@
 ---
-source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
+source-git-commit: d761370dcf6530bf557de6f8a0e7b6e111eb9e35
 workflow-type: tm+mt
-source-wordcount: '1202'
-ht-degree: 97%
+source-wordcount: '1260'
+ht-degree: 95%
 
 ---
 # 代碼片段 {#snippets}
@@ -111,6 +111,12 @@ ht-degree: 97%
    <td><b>設定值</b>選項不支援在規則編輯器中叫用 API 的<b>服務輸出</b>屬性。
    </td>
    </tr>
+   <tr>
+   <td>在面板之間導覽</td>
+   <td> 提供<b>下一個按鈕</b>和<b>上一個按鈕</b>元件，以便在面板之間導覽。 置於容器內的導覽按鈕可在其子元素上運作</td>
+   <td> 在規則編輯器中可以使用面板</b>中的<b>導覽，允許使用者建立用於在面板的子項之間導覽的規則。
+   </td>
+   </tr>
    </tr>
    </tr>
   </tbody>
@@ -126,6 +132,7 @@ ht-degree: 97%
 * [規則編輯器各個版本的差異](/help/forms/rule-editor-core-components-difference-tables.md)
 * [以核心元件為主之最適化表單的自訂函數簡介](/help/forms/create-and-use-custom-functions.md)
 * [建立以核心元件為主之最適化表單的自訂函數](/help/forms/custom-function-core-component-create-function.md)
+* [自訂函式中的範圍物件](/help/forms/custom-function-core-component-scope-function.md)
 * [開發和使用自訂函數的範例](/help/forms/custom-function-core-components-use-cases.md)
 
 
@@ -162,7 +169,7 @@ ht-degree: 97%
 >
 >[通用編輯器](/help/implementing/universal-editor/introduction.md)與 IP 允許清單不相容。
 >
->如果您想使用通用編輯器，則不能啟用IP允許清單。
+>如果您想要使用通用編輯器，則不得啟用 IP 允許清單。
 
 ## 通用編輯器和 IP 允許清單 {#ue-ip-allow-lists}
 
@@ -170,7 +177,7 @@ ht-degree: 97%
 >
 >通用編輯器與 [IP 允許清單](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)不相容。
 >
->如果您想使用通用編輯器，則不能啟用IP允許清單。
+>如果您想要使用通用編輯器，則不得啟用 IP 允許清單。
 
 ## 使用 Dynamic Media {#work-with-dynamic-media}
 
@@ -197,7 +204,7 @@ ht-degree: 97%
 >* 提供[支援互動式 3D 的體驗](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/assets/dynamic-media/3d/dynamic-media-3d-feature-video)。
 >* 其他 [Dynamic Media 資源庫](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use)。
 
-## 記錄支援票證 {#support-ticket}
+## 記錄支援服務單 {#support-ticket}
 
 如果產品問題需要額外調查和疑難排解，並且必須符合回應 SLT，您可以提交支援服務單。
 

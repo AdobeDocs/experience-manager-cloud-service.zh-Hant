@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的運作方式以及該軟體可以為您做哪些事。
 breadcrumb-title: 使用手冊
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 0e7c58b2a4d0f0704f8693c0dddae0b1a033ec83
+source-git-commit: d256fe6c551943727c7e953a6dbd6443789616c3
 workflow-type: tm+mt
-source-wordcount: '5729'
-ht-degree: 99%
+source-wordcount: '5741'
+ht-degree: 98%
 
 ---
 
@@ -746,9 +746,11 @@ ht-degree: 99%
                + [基礎規則編輯器與核心元件規則編輯器之間的差異](/help/forms/rule-editor-core-components-difference-tables.md)
                + [以核心元件為主之最適化表單的規則編輯器中可用的運算子和事件類型](/help/forms/rule-editor-core-components-events-operators.md)
                + [以核心元件為主之最適化表單的規則編輯器範例](/help/forms/rule-editor-core-components-usecases.md)
+               + [在最適化表單中使用非同步函式](/help/forms/using-async-funct-in-rule-editor.md)
             + 以核心元件為主之最適化表單的自訂函數簡介{#create-and-use-custom-function-core-component}
                + [以核心元件為主之最適化表單的自訂函數簡介](/help/forms/create-and-use-custom-functions.md)
                + [建立和使用以核心元件為主之最適化表單的自訂函數](/help/forms/custom-function-core-component-create-function.md)
+               + [自訂函式中的範圍物件](/help/forms/custom-function-core-component-scope-function.md)
                + [以核心元件為主之最適化表單的自訂函數範例](/help/forms/custom-function-core-components-use-cases.md)
             + Forms Portal 及其元件簡介 {#introduction-to-forms-portal}
                + [Forms Portal 元件簡介](/help/forms/configure-forms-portal.md)

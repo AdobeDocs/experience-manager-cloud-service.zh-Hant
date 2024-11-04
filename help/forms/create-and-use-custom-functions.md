@@ -7,15 +7,15 @@ content-type: reference
 feature: Adaptive Forms, Core Components
 exl-id: 24607dd1-2d65-480b-a831-9071e20c473d
 role: User, Developer
-source-git-commit: a35556164ace2245577c3e22da1bc276fc3d98d0
+source-git-commit: 747203ccd3c7e428e2afe27c56e47c3ec18699f6
 workflow-type: tm+mt
 source-wordcount: '1286'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
 
-# 根據核心元件之最適化Forms的自訂函式簡介
+# 以核心元件為主之最適化表單的自訂函數簡介
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
@@ -72,7 +72,7 @@ JavaScript註解是用來提供JavaScript程式碼的中繼資料。 其中包�
    * date[]：代表日期值的陣列。
    * array：代表包含各種型別值的泛型陣列。
    * object：代表傳遞至自訂函式的表單物件，而非直接傳遞其值。
-   * 範圍：代表全域物件，其中包含唯讀變數，例如表單例項、目標欄位例項，以及在自訂函式內執行表單修改的方法。 這會宣告為JavaScript註解中的最後一個引數，且不會顯示在最適化表單的規則編輯器中。 scope引數可存取表單或元件的物件，以觸發表單處理所需的規則或事件。 如需有關Globals物件及其使用方式的進一步資訊，[請按一下這裡](/help/forms/custom-function-core-component-create-function.md#field-and-global-scope-objects-support-in-custom-functions)。
+   * 範圍：代表全域物件，其中包含唯讀變數，例如表單例項、目標欄位例項，以及在自訂函式內執行表單修改的方法。 這會宣告為JavaScript註解中的最後一個引數，且不會顯示在最適化表單的規則編輯器中。 scope引數可存取表單或元件的物件，以觸發表單處理所需的規則或事件。 如需有關Globals物件及其使用方式的進一步資訊，[請按一下這裡](/help/forms/custom-function-core-component-scope-function.md)。
 
 引數型別不區分大小寫，而且引數名稱中不允許使用空格。
 

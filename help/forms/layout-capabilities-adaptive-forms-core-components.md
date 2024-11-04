@@ -4,13 +4,13 @@ description: Adaptive Forms在各種裝置上的版面配置與外觀是由版�
 feature: Adaptive Forms, Core Components
 keywords: 根據核心元件的調適型表單佈局、表單的不同佈局、動態表單佈局AEM、AEM Cloud Service表單佈局、AEM核心元件中的表單佈局型別、調適型表單佈局
 role: User, Developer, Admin
-source-git-commit: 9f14950170cc92d1ab433fdaa1a5d68b4dc53484
+exl-id: dcc01d84-0d39-4fa8-ac47-71a9aba91b1e
+source-git-commit: 3ab7ff01201a7da790fe556bfe68c8c76aff9698
 workflow-type: tm+mt
 source-wordcount: '2107'
 ht-degree: 1%
 
 ---
-
 
 # 根據核心元件的最適化Forms版面配置功能
 
@@ -261,7 +261,6 @@ ht-degree: 1%
    ![第三面板元件](/help/forms/assets/panel-3-component.png)
 
 1. 按一下編寫環境右上角的&#x200B;**[!UICONTROL 預覽]**。
-
    ![水準配置](/help/forms/assets/horizontal-layout.gif)
 
 您也可以[拖放元件](#extra-bytes)，將表單元件新增至每個面板。

@@ -4,15 +4,15 @@ description: 本文概述根據核心元件在最適化表單中自訂功能的�
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
-source-git-commit: 580e206427f2205fa8ca537ab4988a90c988171b
+exl-id: df92b91e-f3b0-4a08-bd40-e99edc9a50a5
+source-git-commit: 747203ccd3c7e428e2afe27c56e47c3ec18699f6
 workflow-type: tm+mt
 source-wordcount: '2108'
 ht-degree: 0%
 
 ---
 
-
-# 開發及使用自訂函式的範例
+# 自訂函數的開發和使用範例
 
 本文提供根據核心元件的最適化表單的詳細自訂函式範例，對於在各種情況下有效實施提供寶貴的見解。 自訂函式用於AEM Forms的規則編輯器，可讓開發人員定義及控制控制表單行為的邏輯。
 本文探討自訂函式的不同實作，說明如何使用這些函式來量身打造表單以符合特定需求並增強整體功能。
@@ -264,7 +264,7 @@ ht-degree: 0%
 
 讓我們瞭解自訂函式如何在`Contact Us`表單的協助下，使用欄位和全域物件來覆寫提交處理常式。
 
-新增下列程式碼行（如[create-custom-function](/help/forms/custom-function-core-component-create-function.md)區段中所述），以自訂表單提交的提交或失敗訊息，並在強制回應方塊中顯示表單提交訊息：
+新增下列程式碼行（如[create-custom-functionas](/help/forms/custom-function-core-component-create-function.md)區段中所述），以自訂表單提交的提交或失敗訊息，並在強制回應方塊中顯示表單提交訊息：
 
 ```javascript
 /**

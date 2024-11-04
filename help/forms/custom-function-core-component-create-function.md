@@ -4,15 +4,15 @@ description: AEM Forms支援自訂函式，可讓使用者在規則編輯器中�
 keywords: 新增自訂函式、使用自訂函式、建立自訂函式，以及在規則編輯器中使用自訂函式。
 feature: Adaptive Forms, Core Components
 role: User, Developer
-source-git-commit: f5c17382052b4d116deaae564f1a2b9fdbb5ea0a
+exl-id: e7ab4233-2e91-45c6-9377-0c9204d03ee9
+source-git-commit: 747203ccd3c7e428e2afe27c56e47c3ec18699f6
 workflow-type: tm+mt
-source-wordcount: '1523'
-ht-degree: 3%
+source-wordcount: '1340'
+ht-degree: 5%
 
 ---
 
-
-# 根據核心元件建立最適化表單的自訂函式
+# 建立以核心元件為主之最適化表單的自訂函數
 
 以核心元件為基礎的最適化Forms會根據使用者輸入調整內容和行為，以提供動態使用者體驗。 自訂函式可讓開發人員擴充功能，確保表單符合特定需求。 透過整合自訂函式，開發人員可以實作複雜的邏輯、自動化流程，並匯入符合特定業務需求或使用者期望的獨特互動。 這可確保表單不僅適應各種條件，還可為各種使用案例提供更精確有效的解決方案。
 本文會逐步引導您使用核心元件，針對Adaptive Forms建立自訂函式。
@@ -226,7 +226,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
-> 您可以參考下列[自訂函式](/help/forms/assets//customfunctions.zip)資料夾。 使用[封裝管理員](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager)下載此資料夾，並將其安裝在您的AEM執行個體中。
+> 您可以參考下列[自訂函式](/help/forms/assets//customfunctions.zip)資料夾。 使用[封裝管理員](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager)下載此資料夾，並將其安裝在您的AEM執行個體中。
 
 ## 自訂函式的功能
 
@@ -238,49 +238,7 @@ AEM表單中的自訂函式提供強大的解決方案，可擴充及個人化�
 
 ### 自訂函式中的非同步支援 {#support-of-async-functions}
 
-非同步自訂函式未出現在規則編輯器清單中。 不過，您也可以在使用同步函式運算式建立的自訂函式中叫用非同步函式。
-
-![同步和非同步自訂函式](/help/forms/assets/workflow-for-sync-async-custom-fumction.png)
-
->[!NOTE]
->
-> 在自訂函式中呼叫非同步函式的優點在於，非同步函式允許同時執行多個任務，而自訂函式中使用的每個函式的結果都是如此。
-
-檢視以下程式碼，瞭解如何使用自訂函式叫用非同步函式：
-
-```javascript
-    
-    async function asyncFunction() {
-    const response = await fetch('https://petstore.swagger.io/v2/store/inventory');
-    const data = await response.json();
-    return data;
-    }
-
-    /**
-    * callAsyncFunction
-    * @name callAsyncFunction callAsyncFunction
-    */
-    function callAsyncFunction() {
-    asyncFunction()
-        .then(responseData => {
-        console.log('Response data:', responseData);
-        })
-        .catch(error => {
-         console.error('Error:', error);
-    });
-}
-```
-
-在上述範例中，asyncFunction函式是`asynchronous function`。 它透過向`https://petstore.swagger.io/v2/store/inventory`發出`GET`請求來執行非同步操作。 它會使用`await`等待回應、使用`response.json()`將回應本文剖析為JSON，然後傳回資料。 `callAsyncFunction`函式是同步自訂函式，會叫用`asyncFunction`函式並在主控台中顯示回應資料。 雖然`callAsyncFunction`函式是同步的，但它會呼叫非同步asyncFunction函式，並以`then`和`catch`陳述式處理其結果。
-
-若要檢視其運作情況，讓我們新增按鈕，並為按鈕建立規則，此規則會在按鈕按一下時叫用非同步函式。
-
-![為非同步函式建立規則](/help/forms/assets/rule-for-async-funct.png)
-
-請參考下方主控台視窗的圖例，以示範當使用者按一下`Fetch`按鈕時，會叫用自訂函式`callAsyncFunction`，進而呼叫非同步函式`asyncFunction`。 Inspect主控台視窗中，檢視對按鈕點按的回應：
-
-![主控台視窗](/help/forms/assets/async-custom-funct-console.png)
-
+您可以使用自訂函式，在規則編輯器中實作非同步函式。 如需如何執行此動作的指引，請參閱文章[在調適型表單中使用非同步函式](/help/forms/using-async-funct-in-rule-editor.md)。
 
 ### 自訂函式中支援的欄位和全域範圍物件 {#support-field-and-global-objects}
 
@@ -289,6 +247,8 @@ AEM表單中的自訂函式提供強大的解決方案，可擴充及個人化�
 >[!NOTE]
 >
 > `param {scope} globals`必須是最後一個引數，且不會顯示在調適型表單的規則編輯器中。
+
+如需範圍物件的詳細資訊，請參閱自訂函式中的[範圍物件](/help/forms/custom-function-core-component-scope-function.md)文章。
 
 ### 自訂函式中的快取支援
 

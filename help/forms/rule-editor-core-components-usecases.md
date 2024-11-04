@@ -5,9 +5,9 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 8191e113-f768-4b1e-a191-e3c722f19054
-source-git-commit: 34be2ca89433e36a68e7d8eae42c6bd9ad6e623f
+source-git-commit: e5f22d925f9b9ec3a5f80f9506353e42e8879da3
 workflow-type: tm+mt
-source-wordcount: '1125'
+source-wordcount: '1384'
 ht-degree: 0%
 
 ---
@@ -17,6 +17,26 @@ ht-degree: 0%
 本文提供根據核心元件之最適化表單的規則編輯器詳細範例，深入瞭解其針對不同情境的正確實施。 規則編輯器可讓開發人員定義和管理控制表單行為的邏輯。
 現在，讓我們討論規則編輯器的不同實作。
 
+
+## 使用按鈕在面板之間導覽
+
+規則編輯器可讓您將導覽按鈕新增至面板版面，例如「水準標籤」、「垂直標籤」、「摺疊式功能表」或「精靈」。 這些按鈕透過簡化表單中不同面板之間的轉換，將焦點移至所選面板，來增強使用者體驗。
+
+想像您正在與應用程式的設定檔設定區段互動，其中導覽是由按鈕而非索引標籤來協助。 從主儀表板進入設定檔設定時，您會遇到一系列專為其設定檔不同層面的面板： **個人資訊**、**帳戶安全性**&#x200B;和&#x200B;**通知偏好設定**。
+
+每個面板都包含更新特定資訊的相關欄位和選項。 導覽按鈕（例如`Next`和`Back`）位於顯眼位置，可讓您在這些面板之間移動。 按一下`Next`將使用者推進至&#x200B;**帳戶安全性**&#x200B;面板，然後按一下`Back`返回&#x200B;**個人資訊**&#x200B;面板。 此導覽方法可確保區段之間的無縫轉換，而不會失去內容，提供順暢且直覺的使用者體驗。 使用導覽按鈕可簡化管理設定檔設定的程式，讓互動更加有組織且方便使用。
+
+您可以使用`Navigate among the panels`規則，為允許在不同面板之間切換的按鈕建立導覽規則。  選取`Shift focus to the next item`屬性，將焦點移至版面配置中的下一個面板。
+
+![下一個面板規則](/help/forms/assets/rule-editor-navigate-in-panel-next.png){width=50%}
+
+按一下`Next`按鈕時，焦點會移至配置中的後續面板。
+
+![使用[下一步]按鈕在面板中導覽](/help/forms/assets/navigate-in-panel.gif)
+
+同樣地，您可以建立`Previous`按鈕的規則，將焦點移至前一個面板。
+
+![上一個面板規則](/help/forms/assets/rule-editor-navigate-in-panel-previous.png){width=50%}
 
 ## 在具有函式的可重複面板中簡化複雜的計算
 
