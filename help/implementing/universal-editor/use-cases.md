@@ -4,9 +4,9 @@ description: 瞭解Universal Editor的主要使用案例，以及如何最好地
 exl-id: 398ad0e2-c299-4c49-9784-05c84c67bec2
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 7ad9a959592f1e8cebbcad9a67d280d5b2119866
+source-git-commit: 2db4428065b3611a43137514864573947d32fff7
 workflow-type: tm+mt
-source-wordcount: '863'
+source-wordcount: '858'
 ht-degree: 0%
 
 ---
@@ -29,10 +29,10 @@ ht-degree: 0%
 
 Universal Editor為您的內容作者提供方便、直觀的視覺編輯器，無論他們建立什麼型別的內容。 兩個主要使用案例為：
 
-* [所見即所得](#wysiwyg-authoring) — 使用AEM Sites主控台，使用通用編輯器在AEM中管理您的內容與作者頁面
+* [WYSIWYG製作](#wysiwyg-authoring) — 使用AEM Sites主控台，使用通用編輯器在AEM中管理您的內容和製作頁面
 * [Headless製作](#headless-authoring) — 使用通用編輯器在您自己的自訂Headless應用程式中製作內容。
 
-### 所見即所得 {#wysiwyg-authoring}
+### WYSIWYG 製作 {#wysiwyg-authoring}
 
 如果您已熟悉AEM，您可以使用Sites主控台建立和管理您的頁面，然後使用通用編輯器進行編輯。
 
@@ -40,9 +40,9 @@ Universal Editor為您的內容作者提供方便、直觀的視覺編輯器，�
 
 如果您有此使用案例，作為緊接著的下一步，請參閱下列檔案，瞭解如何在AEM中啟動並執行通用編輯器的完整總覽。
 
-1. [使用Edge Delivery Services進行WYSIWYG編寫的開發人員快速入門手冊](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) — 開始使用AEM中的第一個Universal Editor專案
+1. [使用Edge Delivery Services進行WYSIWYG編寫的開發人員快速入門手冊](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) — 開始使用您在AEM中的第一個Universal Editor專案
 1. [建立已檢測成可與通用編輯器搭配使用的區塊](/help/edge/wysiwyg-authoring/create-block.md) — 瞭解如何檢測區塊，使您的內容可在通用編輯器中編輯
-1. [使用Edge Delivery Services專案進行WYSIWYG製作的內容模型化](/help/edge/wysiwyg-authoring/content-modeling.md) — 瞭解區塊結構的詳細資訊，以有效模型化您的內容，以便與通用編輯器搭配使用。
+1. [使用Edge Delivery Services專案進行WYSIWYG製作的內容模型化](/help/edge/wysiwyg-authoring/content-modeling.md) — 瞭解區塊結構的詳細資訊，以有效地模型化您的內容以供搭配通用編輯器使用。
 
 閱讀這些檔案後，您可以返回本頁，瞭解Headless編寫使用案例以及Universal Editor的一般運作方式。
 
@@ -63,19 +63,22 @@ Universal Editor的強大功能是能夠就地撰寫任何內容，因此無論�
 Universal Editor的運作方式如下。
 
 1. 開發人員會測試應用程式或頁面，以使用通用編輯器。 此檢測會告知編輯器哪些內容可編輯以及如何將其保留。
-   * 對於WYSIWYG製作，使用樣版範本建立的頁面會自動進行檢測。
+   * 如果您遵循[使用Edge Delivery Services進行WYSIWYG編寫的開發人員快速入門手冊](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)檔案，您的頁面會自動進行檢測。
    * 針對Headless編寫，可輕鬆檢測您的應用程式。
 1. 內容作者會載入通用編輯器，接著再載入您的頁面進行編輯。 由於是儀器式的，因此它知道哪些內容可以編輯，以及如何表示和持續儲存內容。
-1. 內容作者可在直覺式WYSIWYG介面中編輯頁面內容，就地編輯。
-1. 通用編輯器會自動將變更儲存回AEM。
+1. 內容作者可在直覺式的WYSIWYG介面中編輯頁面內容，就地編輯。
+1. Universal Editor會自動將變更儲存回資料來源。
 
 如果您想深入瞭解通用編輯器的架構，請參閱檔案[通用編輯器架構。](/help/implementing/universal-editor/architecture.md)
 
 ## Universal Editor概念 {#concepts}
 
-若要讓通用編輯器可編輯頁面或應用程式，必須正確檢測該頁面或應用程式。 一旦開始檢測，它可以進一步調整以符合您的專案需求。
+若要讓通用編輯器可編輯頁面或應用程式，必須正確檢測該頁面或應用程式。
 
 * [屬性和型別](/help/implementing/universal-editor/attributes-types.md) — 若要讓通用編輯器可編輯應用程式或頁面，必須正確檢測它。 這包括包含適當的中繼資料，以便編輯器可以編輯應用程式的內容。
-* [模型定義、欄位和元件型別](/help/implementing/universal-editor/field-types.md) — 當中繼資料顯示以啟用元件編輯功能後，您即可在編輯器的屬性邊欄中定義它們可以操作的欄位和元件型別。 若要這麼做，請建立模型並從元件連結至模型。
-* [自訂通用編輯器編寫體驗](/help/implementing/universal-editor/customizing.md) — 一旦應用程式或頁面完成檢測，可以透過篩選可用元件或擴充編輯器的功能來進一步調整通用編輯器體驗。
-* [Universal Editor事件](/help/implementing/universal-editor/events.md) — 您可以進一步自訂應用程式，方法是回應Universal傳送給內容和UI變更的標準事件。
+* [模型定義、欄位和元件型別](/help/implementing/universal-editor/field-types.md) — 當中繼資料顯示以啟用元件編輯功能後，您即可在編輯器的屬性邊欄中定義它們可以操作的欄位和元件型別。
+* [通用編輯器事件](/help/implementing/universal-editor/events.md) — 您可以透過使用通用編輯器在內容或UI互動上發出的事件，來增強應用程式中的編輯體驗，進而自訂您的應用程式。
+
+通用編輯器也可以根據您的專案需求進行調整。
+
+* [自訂Universal Editor Authoring Experience](/help/implementing/universal-editor/customizing.md) - Universal Editor體驗可以藉由篩選編輯器的不同方面或擴充編輯器的功能來調整。

@@ -1,20 +1,20 @@
 ---
-title: 使用 Universal Editor 進行本機 AEM 開發
-description: 了解 Universal Editor 如何支援為開發目的在本機 AEM 執行個體上進行編輯。
+title: 執行您自己的Universal Editor服務
+description: 瞭解如何執行您自己的Universal Editor服務，以供本機開發或作為您自己基礎結構的一部分。
 exl-id: ba1bf015-7768-4129-8372-adfb86e5a120
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 5a6795056090908652a72730939024e974a9a697
+source-git-commit: 54d1cdec9b30c08f28d4c9b2fbd97446f3ff05b3
 workflow-type: tm+mt
-source-wordcount: '819'
-ht-degree: 50%
+source-wordcount: '894'
+ht-degree: 41%
 
 ---
 
 
-# 使用 Universal Editor 進行本機 AEM 開發 {#local-dev-ue}
+# 執行您自己的Universal Editor服務 {#local-ue-service}
 
-了解 Universal Editor 如何支援為開發目的在本機 AEM 執行個體上進行編輯。
+瞭解如何執行您自己的Universal Editor服務，以供本機開發或作為您自己基礎結構的一部分。
 
 ## 概觀 {#overview}
 
@@ -24,11 +24,20 @@ Universal Editor 服務綁定 Universal Editor 和後端系統。若要能夠在
 * 使用本機AEM SDK進行開發時，無法從網際網路存取Adobe的通用編輯器服務。
 * 如果您的AEM執行個體有IP限制，而Adobe的Universal Editor服務不在定義的IP範圍內，則您可以自行託管。
 
-本檔案說明如何在HTTPS中搭配通用編輯器服務的本機復本執行AEM，以便您可以在AEM上本機開發以與通用編輯器搭配使用。
+## 使用案例 {#use-cases}
+
+如果您想要：
+
+* 在AEM上本機開發，以便與通用編輯器搭配使用。
+* 執行您自己的通用編輯器服務，作為您自己的基礎結構的一部分，獨立於Adobe的通用編輯器服務。
+
+支援這兩個使用案例。 本檔案說明如何在HTTPS中搭配Universal Editor服務的本機復本執行AEM。
+
+如果您想要將自己的通用編輯器服務當做自己基礎結構的一部分來執行，您將遵循與本機開發範例相同的步驟。
 
 ## 將 AEM 設定為在 HTTPS 上執行 {#aem-https}
 
-在以HTTPS固定的外部框架中，無法載入不安全的HTTP框架。 Universal Editor 服務會在 HTTPS 上執行，因此 AEM 或任何其他遠端頁面也必須在 HTTPS 上執行。
+在使用HTTPS固定的外部框架中，無法載入不安全的HTTP框架。 Universal Editor 服務會在 HTTPS 上執行，因此 AEM 或任何其他遠端頁面也必須在 HTTPS 上執行。
 
 為此，您需要將 AEM 設定為在 HTTPS 上執行。出於開發目的，您可以使用自我簽署憑證。
 
