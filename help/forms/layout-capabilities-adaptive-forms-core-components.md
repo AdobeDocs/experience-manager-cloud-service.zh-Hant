@@ -5,9 +5,9 @@ feature: Adaptive Forms, Core Components
 keywords: 根據核心元件的調適型表單佈局、表單的不同佈局、動態表單佈局AEM、AEM Cloud Service表單佈局、AEM核心元件中的表單佈局型別、調適型表單佈局
 role: User, Developer, Admin
 exl-id: dcc01d84-0d39-4fa8-ac47-71a9aba91b1e
-source-git-commit: 3ab7ff01201a7da790fe556bfe68c8c76aff9698
+source-git-commit: 7cb963794ca0d7a12d8007564c9fd6e49b53d5c4
 workflow-type: tm+mt
-source-wordcount: '2107'
+source-wordcount: '2104'
 ht-degree: 1%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 1%
 
 最適化Forms提供第一流的元件，讓您有效率地佈局和設計表單。 版面配置可控制元件在表單中的顯示方式。 最適化Forms支援各種版面：面板、精靈、摺疊式功能表、上/水準索引標籤上的索引標籤，以及左/垂直索引標籤上的索引標籤。
 
-![配置型別](/help/forms/assets/generic-layout-hero-image.png){align="center"}
+<!-- ![Types of Layout](/help/forms/assets/generic-layout-hero-image.png){align="center"}-->
 
 ## 先決條件
 
