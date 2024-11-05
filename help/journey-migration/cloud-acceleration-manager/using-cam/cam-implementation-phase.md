@@ -4,10 +4,10 @@ description: 本頁提供Cloud Acceleration Manager實施階段的概觀。
 exl-id: e6ac88f0-4b3f-43a1-98bc-8c6608713784
 feature: Migration
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: f86d681c8f8cb6d602058ef30b648c53ff7bad69
 workflow-type: tm+mt
-source-wordcount: '620'
-ht-degree: 5%
+source-wordcount: '648'
+ht-degree: 3%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 5%
 
 按一下您的專案卡片，以便您可以開啟專案登入頁面，並導覽至&#x200B;**實作**&#x200B;區段，如下圖所示。
 
-![影像](/help/journey-migration/cloud-acceleration-manager/assets/implementation-1.png)
+![專案登陸頁面 — 實作](/help/journey-migration/cloud-acceleration-manager/assets/implementation-1.png)
 
 >[!NOTE]
 >請參閱[在Cloud Acceleration Manager中建立和管理專案](getting-started-cam.md#create-project)以瞭解更多資訊。
@@ -37,11 +37,11 @@ ht-degree: 5%
 
 1. 從&#x200B;**本機開發**&#x200B;卡片按一下&#x200B;**檢視**。
 
-   ![影像](/help/journey-migration/cloud-acceleration-manager/assets/implementation-2.png)
+   ![本機開發卡](/help/journey-migration/cloud-acceleration-manager/assets/implementation-2.png)
 
 1. 內容輪播會顯示移轉歷程這個階段的相關資訊。
 
-   ![影像](/help/journey-migration/cloud-acceleration-manager/assets/implementation-3.png)
+   ![本機開發轉盤](/help/journey-migration/cloud-acceleration-manager/assets/implementation-3.png)
 
 
 ## 使用程式碼重構卡 {#code-refactoring}
@@ -52,7 +52,7 @@ ht-degree: 5%
 
 1. 從&#x200B;**程式碼重構**&#x200B;活動卡中，按一下&#x200B;**檢閱**。
 
-   ![影像](/help/journey-migration/cloud-acceleration-manager/assets/implementation-4.png)
+   ![程式碼重構卡](/help/journey-migration/cloud-acceleration-manager/assets/implementation-4.png)
 
 1. 頁面會顯示依嚴重性層級組織的程式碼重構活動清單。 您可以按一下兩個醒目提示的圖示以瞭解更多資訊。
 
@@ -67,11 +67,11 @@ ht-degree: 5%
 
 **Dispatcher**&#x200B;索引標籤提供如何建構AEM as a Cloud Service Apache和Dispatcher設定，以及如何在部署至雲端環境之前，先在本機驗證和執行設定的相關資訊。 同時也說明如何在雲端環境中進行除錯。
 
-![影像](/help/journey-migration/cloud-acceleration-manager/assets/coderefactoring-2.png)
+![Dispatcher索引標籤](/help/journey-migration/cloud-acceleration-manager/assets/coderefactoring-2.png)
 
 **測試**&#x200B;索引標籤提供功能、體驗稽核和UI測試的資訊。
 
-![影像](/help/journey-migration/cloud-acceleration-manager/assets/coderefactoring-3.png)
+![測試索引標籤](/help/journey-migration/cloud-acceleration-manager/assets/coderefactoring-3.png)
 
 
 ## 使用AEM as a Cloud Service部署卡 {#aem-as-a-cloud-service-deployment}
@@ -82,11 +82,11 @@ AEM as a Cloud Service部署卡片提供所有相關內容，可協助您將程�
 
 1. 從&#x200B;**AEM as a Cloud Service部署**&#x200B;活動卡中，按一下&#x200B;**檢視**。
 
-   ![影像](/help/journey-migration/cloud-acceleration-manager/assets/implementation-6.png)
+   ![AEM as a Cloud Service部署 — 卡片](/help/journey-migration/cloud-acceleration-manager/assets/implementation-6.png)
 
 1. 內容輪播會顯示移轉歷程這個階段的相關資訊。
 
-   ![影像](/help/journey-migration/cloud-acceleration-manager/assets/aem-deployment-card.png)
+   ![AEM as a Cloud Service部署 — 輪播](/help/journey-migration/cloud-acceleration-manager/assets/aem-deployment-card.png)
 
 
 ## 使用內容轉移卡 {#content-transfer}
@@ -97,11 +97,11 @@ AEM as a Cloud Service部署卡片提供所有相關內容，可協助您將程�
 
 1. 從&#x200B;**內容轉移**&#x200B;活動卡按一下&#x200B;**檢閱**。
 
-   ![影像](/help/journey-migration/cloud-acceleration-manager/assets/contenttransfer-1.png)
+   ![內容轉移 — 檢閱](/help/journey-migration/cloud-acceleration-manager/assets/contenttransfer-1.png)
 
 1. 若要開始內容轉移，您必須建立移轉集。 按一下&#x200B;**建立移轉集**。 移轉集可讓內容傳輸至AEM as a Cloud Service。
 
-   ![影像](/help/journey-migration/cloud-acceleration-manager/assets/contenttransfer-2.png)
+   ![建立移轉集](/help/journey-migration/cloud-acceleration-manager/assets/contenttransfer-2.png)
 
    >[!NOTE]
    >移轉集會在長時間不活動後過期。 如需詳細資訊，請參閱[移轉集到期日](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry)。
@@ -109,17 +109,17 @@ AEM as a Cloud Service部署卡片提供所有相關內容，可協助您將程�
    >[!NOTE]
    >使用「內容轉移工具」之前，請先參閱[必要條件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html)以及[最佳實務和指導方針](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html)。
 
-1. 下載並安裝內容轉移工具以填入移轉集並完成內容轉移的提取階段。 檢閱[內容轉移工具快速入門](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=zh-Hant)以瞭解如何使用內容轉移工具。
+1. 下載並安裝內容轉移工具以填入移轉集並完成內容轉移的提取階段。 檢閱[內容轉移工具快速入門](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html)以瞭解如何使用內容轉移工具。
 
 1. 若要將內容從移轉集內嵌至AEM as a Cloud Service上的環境，您必須開始內嵌。 導覽至&#x200B;**擷取工作**，然後按一下&#x200B;**新增擷取**。 檢閱[將內容擷取至Target](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)，以瞭解如何完成內容轉移的擷取階段。
 
-   ![影像](/help/journey-migration/cloud-acceleration-manager/assets/contenttransfer-3.png)
+   ![內嵌工作](/help/journey-migration/cloud-acceleration-manager/assets/contenttransfer-3.png)
 
 <!--### Estimating Content Transfer Time {#calculating}
 
 A Content Transfer Tool calculator has been provided to estimate how long it could take to complete the content transfer activity. You can use the content repository size slider to select the size that applies to your project. The transfer times vary for the extraction and ingestion phases. 
 
-   ![image](/help/journey-migration/cloud-acceleration-manager/assets/contenttransfer-4.png)
+   ![Content Transfer Tool calculator](/help/journey-migration/cloud-acceleration-manager/assets/contenttransfer-4.png)
 
    >[!NOTE]
    >These times are estimates only. Factor such as network speeds and time to scale up instances have not been accounted for in these estimates.
