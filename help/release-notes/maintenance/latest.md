@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的目前維�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 9278ec9bb5bccd7b40cd65a120f296faba454b9c
-workflow-type: ht
-source-wordcount: '569'
-ht-degree: 100%
+source-git-commit: c638039ea957f5f7ae0dc64f49c3ace4381cb040
+workflow-type: tm+mt
+source-wordcount: '583'
+ht-degree: 26%
 
 ---
 
@@ -16,61 +16,58 @@ ht-degree: 100%
 
 下節是 Experience Manager as a Cloud Service 目前維護版本的技術版本發行說明。
 
-## 版本 18311 {#18311}
+## 版本 18459 {#18459}
 
-下面是 18311 維護版本持續改善的內容，該版本於 2024 年 10 月 22 日公開發佈。前一個維護版本是版本 18175。
+以下摘要說明維護版本18459數的持續改善，該版本於2024年11月5日公開發佈。 前一個維護版本是版本 18311。
 
-2024.10.0 功能啟用將提供此維護版本的完整功能集。如需詳細資訊，請參閱 [Experience Manager 發行藍圖](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)。
+2024.11.0 功能啟用將提供此維護版本的完整功能集。如需詳細資訊，請參閱 [Experience Manager 發行藍圖](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)。
 
-### 增強功能 {#enhancements-18311}
+### 增強功能 {#enhancements-18459}
 
-* ASSETS-41820：用於處理監控程式的索引功能改進。
-* ASSETS-43720：用於處理監控程式的功能改進。
-* ASSETS-42554：大型資料夾的效能改進。
-* SKYOPS-77603：業務使用者的重新導向管理。
+* CQ-4357471：在AEMaaCS中新增對i18n字典翻譯的支援。
+* SITES-23591：內容片段：UUID支援的內容片段升級。
+* SITES-25440：內容片段：CFM搜尋API以顯示復寫狀態。
+* SITES-24369：內容片段：OpenAPI檔案改善。
+* SITES-25478：內容片段：新增外部資產參考的後端支援。
+* SITES-26119：內容片段：新增對參考型別中外部資產參考的支援。
+* SITES-21199：使用通用編輯器的Edge Delivery：新增對從頁面建立的範本的支援。
+* SITES-20311：使用通用編輯器的Edge Delivery：新增將CSV匯入試算表的支援。
+* SITES-24821：使用通用編輯器的Edge Delivery：將aem.page / aem.live設為與Edge Delivery整合的預設值。
 
-### 已修正的問題 {#fixed-issues-18311}
+### 已修正的問題 {#fixed-issues-18459}
 
-* ASSETS-37534：變更搜尋以不公開用於核准目標的屬性。
-* ASSETS-38322：移除發佈條件提供者設定移除發佈事件功能。
-* ASSETS-40482：Scene7 視訊播放器中播放/暫停和靜音/取消靜音按鈕的輔助功能問題。
-* ASSETS-40593：按一下「資產 > 檔案」中的「屬性」按鈕後出現錯誤頁面。
-* ASSETS-40598：將未同步的資產移至啟用同步的資料夾時同步智慧裁切。
-* ASSETS-40743：當檔案名稱中存在某些字元時，觸發「取代資產」對話框時出現問題。
-* ASSETS-40825：編輯搜尋表單後資產搜尋面向消失。
-* ASSETS-41007：AEM 上的刪除有時會在傳遞時留下孤立資產。
-* ASSETS-41172：Dynamic Media 範本名稱中不允許使用特殊字元。
-* ASSETS-41896：資料夾上的 cq:discarded 屬性中所提及的資產不應發佈到 Brand Portal。
-* ASSETS-42067：Dynamic Media 範本 - 下載出現錯誤。
-* ASSETS-42070：Dynamic Media 範本 - 非管理員使用者應具有範本建立/編輯存取權限。
-* ASSETS-42344：連接的資產同步已中斷 - 重新連接並為客戶提供建議。
-* ASSETS-42620：資產版本的預覽選項發生問題 - 當我們開啟資產時顯示空白預覽。
-* ASSETS-42701：Web 最佳化的影像傳遞和裁切問題。
-* ASSETS-42966：如果多個工作共用相同路徑，非同步防護柵欄可能會錯誤地解除鎖定。
-* ASSETS-43072：Dynamic Media 範本 - 參考無效時，範本參考查詢會中斷。
-* ASSETS-43212：後設資料結構編輯器的國際化問題。
-* ASSETS-43202：修正從時間軸選取要列印的註解的問題。
-* ASSETS-43502：AEM CS 現有影像預設名稱未顯示在編輯頁面上。
-* ASSETS-43538：非同步複製資產工作使用了錯誤的來源路徑屬性。
-* ASSETS-43798：在複製資產之前，先檢查目標路徑。
-* ASSETS-43945：將非同步資產工作佇列的重試延遲增加到 20 分鐘。
-* ASSETS-44025：選取單一資產時，非同步刪除資產工作會失敗。
-* SITES-26128：CreateLiveCopyStep 中發生類別轉換例外狀況。
-* SCRNS-4551：[SG Pools Screens] 頻道中包含視訊元件時，瀏覽器預覽和播放器顯示「一般頁面錯誤」。
+* CQ-4358730：超過10個要轉譯的索引鍵時，CQPagePreviewGenerator會失敗。
+* Forms-14978：為主題編輯器的核心元件式表單啟用頁面載入。
+* Forms-16596：協助工具問題：熒幕Reader無法辨識已停用的按鈕。
+* SITES-10575： MSM：Blueprint Bloomfilter載入器嘗試載入>100,000列。
+* SITES-20755：內容片段：具有UUID重新整理的資產參考未顯示縮圖。
+* SITES-26253：內容片段： UUID移轉：將Sling作業主題變更為通用。
+* SITES-21338：內容片段：referencedBy端點未傳回正確的頁面參考。
+* SITES-24421：內容片段：編輯CF端點不適用於透過GETCF擷取的CF。
+* SITES-25461：內容片段：在搜尋CF時依模型篩選應該不區分大小寫。
+* SITES-25471：內容片段：修正ModelValidatorServlet中全域模型的驗證。
+* SITES-25795：內容片段：沒有cq日期集時，CF模型API會失敗。
+* SITES-25817：內容片段：增強promoteLaunch： CF啟動項的更新上次促銷活動。
+* SITES-26030：內容片段：端點/referencesTree未傳回所需的標頭。
+* SITES-26031：內容片段：CFM搜尋端點未傳回覆寫狀態。
+* SITES-26213：內容片段：取消發佈內容片段應該僅驗證已發佈的引用。
+* SITES-26226：內容片段：指定路徑皆無效時，出現開始工作流程問題。
+* SITES-26238：內容片段： API傳回的資產參考與JCR的順序不同。
+* SITES-25456：事件：移動頁面時，除了頁面移動事件外，也會產生頁面刪除事件。
+* SITES-25658：事件：頁面內容狀態事件中未填入tier和sourceUrl。
+* SITES-6497：啟動：在啟動中建立頁面無法運作。
+* SITES-25393：使用通用編輯器的Edge Delivery：呈現具有單一段落的格式化RTF文字時，文位元組點遺失。
+* SITES-24643：使用通用編輯器的Edge Delivery：OpenGraph和twitter中繼資料屬性在頁面中繼資料模型中無法運作。
 
-### 已知問題 {#known-issues-18311}
+### 已知問題 {#known-issues-18459}
 
-* FORMS-15818：元件描述項條目 `OSGI-INF/com.adobe.aemfd.docmanager.impl.*.xml` 在伺服器記錄中找不到陳述式。這些是無害的記錄陳述式。
+無。
 
-### 已過時的功能和 API {#deprecated-18311}
+### 已過時的功能和 API {#deprecated-18459}
 
-[「已過時和已移除的功能及 API」](/help/release-notes/deprecated-removed-features.md)文件中詳細介紹 AEM as a Cloud Service 中已過時和已移除的功能及 API。
+ [已過時和移除的功能和 API](/help/release-notes/deprecated-removed-features.md) 文件中詳細介紹了 AEM as a Cloud Service 已過時和移除的功能和 API。
 
-### 安全性修正 {#security-18311}
-
-AEM as a Cloud Service 專門負責將您的平台的安全性與效能最佳化。此維護版本解決了 3 個已確認的漏洞，強化我們提供健全系統保護的承諾。
-
-### 內嵌技術 {#embedded-tech-18311}
+### 內嵌技術 {#embedded-tech-18459}
 
 | 技術 | 版本 | 連結 |
 |---|---|---|
