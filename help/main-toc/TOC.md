@@ -651,7 +651,7 @@ ht-degree: 98%
       + [使用 Content Hub 下載資產](/help/assets/download-assets-content-hub.md)
       + [在Content Hub上管理授權的Assets](/help/assets/manage-licensed-assets-on-content-hub.md)
       + [在 Content Hub 中管理收藏集](/help/assets/collections-content-hub.md)
-      + [在 Content Hub 中使用 Adob&#x200B;&#x200B;e Express 編輯影像](/help/assets/edit-images-content-hub.md)
+      + [在 Content Hub 中使用 Adobe Express 編輯影像](/help/assets/edit-images-content-hub.md)
       + [Content Hub 中的資產深入分析](/help/assets/insights-content-hub.md)
       + [Content Hub 的常見問題](/help/assets/frequently-asked-questions-content-hub.md)
    + 最佳做法{#best-practices}
@@ -1321,7 +1321,7 @@ ht-degree: 98%
       + [使用 Dispatcher 工具舊版進行驗證和偵錯](/help/implementing/dispatcher/validation-debug-legacy.md)
       + [AEM as a Cloud Service 中的 CDN](/help/implementing/dispatcher/cdn.md)
       + [設定 CDN 上的流量](/help/implementing/dispatcher/cdn-configuring-traffic.md)
-      + [管道專用URL重新導向](/help/implementing/dispatcher/pipeline-free-url-redirects.md)
+      + [無管道 URL 重新導向](/help/implementing/dispatcher/pipeline-free-url-redirects.md)
       + [Edge Side 包括](/help/implementing/dispatcher/edge-side-includes.md)
       + [設定內容傳遞網路憑證和身份驗證](/help/implementing/dispatcher/cdn-credentials-authentication.md)
       + [設定內容傳遞網路錯誤頁面](/help/implementing/dispatcher/cdn-error-pages.md)
