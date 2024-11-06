@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的目前維�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: c638039ea957f5f7ae0dc64f49c3ace4381cb040
+source-git-commit: dc7f95ac98fd300a803e307ce11a51937d604a07
 workflow-type: tm+mt
-source-wordcount: '583'
-ht-degree: 26%
+source-wordcount: '613'
+ht-degree: 30%
 
 ---
 
@@ -65,7 +65,11 @@ ht-degree: 26%
 
 ### 已過時的功能和 API {#deprecated-18459}
 
- [已過時和移除的功能和 API](/help/release-notes/deprecated-removed-features.md) 文件中詳細介紹了 AEM as a Cloud Service 已過時和移除的功能和 API。
+[「已過時和已移除的功能及 API」](/help/release-notes/deprecated-removed-features.md)文件中詳細介紹 AEM as a Cloud Service 中已過時和已移除的功能及 API。
+
+### 安全性修正 {#security-18459}
+
+AEM as a Cloud Service 專門負責將您的平台的安全性與效能最佳化。此維護版本解決了 21 個已確認的漏洞，強化我們提供健全系統保護的承諾。
 
 ### 內嵌技術 {#embedded-tech-18459}
 
