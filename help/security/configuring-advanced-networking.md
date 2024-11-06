@@ -4,10 +4,10 @@ description: 了解如何為 AEM as a Cloud Service 設定進階網路功能，�
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
 feature: Security
 role: Admin
-source-git-commit: e1ac26b56623994dfbb5636993712844db9dae64
+source-git-commit: 2a7d46e91bbd6ca96bd8b7fd5d4d84cf69bdee36
 workflow-type: tm+mt
-source-wordcount: '5618'
-ht-degree: 100%
+source-wordcount: '5524'
+ht-degree: 99%
 
 ---
 
@@ -398,7 +398,7 @@ public JSONObject getJsonObject(String relativePath, String queryString) throws 
 
 ## 虛擬私人網路 (VPN) {#vpn}
 
-VPN 允許從製作、發佈或預覽執行個體連線到內部部署基礎結構或資料中心。例如，這對於保護資料庫存取很有用。VPN 還允許連線到 SaaS 廠商，例如支援 VPN 的 CRM 廠商，或從公司網路連線到 AEM as a Cloud Service 製作、預覽或發佈執行個體。
+VPN 允許從製作、發佈或預覽執行個體連線到內部部署基礎結構或資料中心。例如，這對於保護資料庫存取很有用。它也可以連線至SaaS廠商，例如支援VPN的CRM廠商。
 
 支援大多數採用 IPSec 技術的 VPN 裝置。請查閱[本裝置清單內 **RouteBased 設定指示**&#x200B;欄中的資訊。](https://learn.microsoft.com/zh-tw/azure/vpn-gateway/vpn-gateway-about-vpn-devices#devicetable) 按照表中所述設定裝置。
 
@@ -558,7 +558,9 @@ VPN 允許從製作、發佈或預覽執行個體連線到內部部署基礎結�
 
 ### 供設定的實用網域 {#vpn-useful-domains-for-configuration}
 
-下表描述了一組網域和 IP，對設定和開發很有幫助。
+下圖提供了一組網域和相關聯的 IP 的視覺化表示，對設定和開發很有幫助。圖表下方的表格描述了這些網域和 IP。
+
+![VPN 網域設定](/help/security/assets/AdvancedNetworking.jpg)
 
 <table>
 <thead>
@@ -581,21 +583,6 @@ VPN 允許從製作、發佈或預覽執行個體連線到內部部署基礎結�
   </tr>
 </tbody>
 </table>
-
-### 將 VPN 限制為輸入連線 {#restrict-vpn-to-ingress-connections}
-
-如果您只想允許 VPN 存取 AEM，則可以在 Cloud Manager 中設定環境允許清單，如此只有由 `p{PROGRAM_ID}.external.adobeaemcloud.com` 定義的 IP 允許與環境交談。就像 Cloud Manager 中任何其他基於 IP 的允許清單一樣，這也可以相同方式完成。
-
-如果規則必須基於路徑，請在 Dispatcher 層級使用標準的 http 指令來拒絕或允許某些 IP。他們同時應該確保所要的路徑不可快取在 CDN 上，讓請求始終可到達來源。
-
-#### Httpd 設定範例 {#httpd-example}
-
-```
-Order deny,allow
-Deny from all
-Allow from 192.168.0.1
-Header always set Cache-Control private
-```
 
 ## 在「環境」中，啟用「進階網路設定」 {#enabling}
 
