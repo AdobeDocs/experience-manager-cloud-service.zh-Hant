@@ -4,11 +4,10 @@ description: 瞭解如何為 [!DNL AEM Forms] as a Cloud Service設定Adobe Acro
 feature: Adaptive Forms, Acrobat Sign
 role: Admin, User
 level: Intermediate
-exl-id: 609c3072-1c3d-43fa-898a-b4e62db8483b
-source-git-commit: 2128dac489c270d296f86b56ae811556fb5fe87e
+source-git-commit: 551123925e43c98f8870f4a5da028d211f5c8ffb
 workflow-type: tm+mt
-source-wordcount: '2117'
-ht-degree: 24%
+source-wordcount: '2195'
+ht-degree: 23%
 
 ---
 
@@ -57,7 +56,8 @@ ht-degree: 24%
 
 1. 現在您可以&#x200B;**[!UICONTROL 選取方案]**&#x200B;以選取[!DNL Adobe Acrobat Sign]。
 
-   ![Adobe Acrobat Sign Solutions](assets/adobe-sign-solution.png)
+   <!--![Adobe Acrobat Sign Solutions](assets/adobe-sign-solution.png)-->
+   ![Adobe Acrobat Sign Solutions設定](assets/adobe-sign-solution-config.png)
 
 <!--
 
@@ -104,11 +104,17 @@ ht-degree: 24%
    * [!DNL widget_write]
    * [!DNL workflow_read]
 
+   
+   > 您可以直接從AEM UI將範圍修飾元從`self`變更為`account`，如步驟12中所述。
+
    如需設定 [!DNL Adobe Acrobat Sign] 應用程式的 OAuth 設定並取得金鑰的逐步資訊，請參閱「[設定應用程式的 OAuth 設定](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/gstarted/configure_oauth.md)」開發人員文件。
 
    ![OAuth Config](/help/forms/assets/oauthconfig-new.png)
 
 1. 返回&#x200B;**[!UICONTROL 建立Adobe Acrobat Sign設定]**&#x200B;頁面。 在&#x200B;**[!UICONTROL 設定]**&#x200B;索引標籤中，指定[**[!UICONTROL 使用者端識別碼]** （也稱為應用程式識別碼）和&#x200B;**[!UICONTROL 使用者端密碼]**]。 使用您在上一步建立的Adobe Acrobat Sign應用程式](https://opensource.adobe.com/acrobat-sign/developer_guide/helloworld.html#get-the-app-id-and-secret)的[使用者端ID和使用者端密碼。
+
+1. 在[!UICONTROL 授權範圍]區段中，您可以視需要將前置詞「self」或「account」新增至範圍，將範圍修改為「account」或「self」。
+   ![授權範圍](/help/forms/assets/authorization-scope.png)
 
 1. 選取&#x200B;**[!UICONTROL 為附件啟用Adobe Acrobat Sign]**&#x200B;選項，以將最適化表單附加的檔案附加至要簽名的對應[!DNL Adobe Acrobat Sign]檔案。
 
@@ -263,6 +269,10 @@ AEM Formsas a Cloud Service提供排程器服務，可依定義的間隔檢查�
 
 若要設定值，[請使用 AEM SDK 產生 OSGi Configurations](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=en#generating-osgi-configurations-using-the-aem-sdk-quickstart)，並將[設定部署至](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en#deployment-process)您的 Cloud Service 執行個體。
 
+## 常見問題
+
+* **問：我是否可以在iframe中轉譯Adobe Sign GovCloud簽章頁面？**
+* **A：**&#x200B;是，您可以在iframe中轉譯Adobe Sign GovCloud簽章頁面。
 
 >[!MORELIKETHIS]
 >
