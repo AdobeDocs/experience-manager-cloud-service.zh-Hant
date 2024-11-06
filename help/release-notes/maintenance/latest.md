@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的目前維�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: dc7f95ac98fd300a803e307ce11a51937d604a07
+source-git-commit: 90e1ca38bd517215a631573987462a716bfed160
 workflow-type: tm+mt
-source-wordcount: '613'
-ht-degree: 30%
+source-wordcount: '629'
+ht-degree: 29%
 
 ---
 
@@ -56,8 +56,11 @@ ht-degree: 30%
 * SITES-25456：事件：移動頁面時，除了頁面移動事件外，也會產生頁面刪除事件。
 * SITES-25658：事件：頁面內容狀態事件中未填入tier和sourceUrl。
 * SITES-6497：啟動：在啟動中建立頁面無法運作。
+* SITES-25938：啟動：翻譯後專案發生未預期的刪除。
 * SITES-25393：使用通用編輯器的Edge Delivery：呈現具有單一段落的格式化RTF文字時，文位元組點遺失。
 * SITES-24643：使用通用編輯器的Edge Delivery：OpenGraph和twitter中繼資料屬性在頁面中繼資料模型中無法運作。
+* SITES-25401：體驗片段：XF參考更新緩慢
+
 
 ### 已知問題 {#known-issues-18459}
 
