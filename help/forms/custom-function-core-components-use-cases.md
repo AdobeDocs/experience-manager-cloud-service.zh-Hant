@@ -5,9 +5,9 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: df92b91e-f3b0-4a08-bd40-e99edc9a50a5
-source-git-commit: 747203ccd3c7e428e2afe27c56e47c3ec18699f6
+source-git-commit: 88b9686a1ceec6729d9657d4bb6f458d9c411065
 workflow-type: tm+mt
-source-wordcount: '2108'
+source-wordcount: '2134'
 ht-degree: 0%
 
 ---
@@ -17,11 +17,12 @@ ht-degree: 0%
 本文提供根據核心元件的最適化表單的詳細自訂函式範例，對於在各種情況下有效實施提供寶貴的見解。 自訂函式用於AEM Forms的規則編輯器，可讓開發人員定義及控制控制表單行為的邏輯。
 本文探討自訂函式的不同實作，說明如何使用這些函式來量身打造表單以符合特定需求並增強整體功能。
 
-## 使用自訂函式設定下拉式清單選項
+## 使用自訂函式填入下拉式清單選項
 
-核心元件中的規則編輯器不支援&#x200B;**屬性的**&#x200B;設定選項以在執行階段設定下拉式清單選項。 不過，您可以使用自訂函式來設定下拉式清單選項。
+核心元件中的規則編輯器不支援&#x200B;**Set Options**&#x200B;屬性，無法在執行階段動態填入下拉式清單選項。 不過，您可以使用自訂函式填入下拉式清單選項，這可讓您根據特定邏輯擷取選項。 自訂函式可讓您更靈活地控制下拉式清單選項的填入方式和時間，進而增強使用者體驗。
 
-依照[create-custom-function](/help/forms/custom-function-core-component-create-function.md)區段中的說明，在自訂函式中新增下列程式碼，以使用自訂函式設定下拉式清單選項：
+若要使用自訂函式填入下拉式清單選項，請新增下列程式碼，如[create-custom-function](/help/forms/custom-function-core-component-create-function.md)區段中所述：
+
 
 ```javascript
     /**
