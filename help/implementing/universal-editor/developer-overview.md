@@ -4,7 +4,7 @@ description: 如果您是AEM開發人員，且對Universal Editor的運作方式
 exl-id: d6f9ed78-f63f-445a-b354-f10ea37b0e9b
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
 workflow-type: tm+mt
 source-wordcount: '3139'
 ht-degree: 1%
@@ -240,7 +240,7 @@ WKND頁面現在會在Universal Editor中成功載入，且JavaScript程式庫�
 
 1. 在通用編輯器中，按一下頁面頂端的Teaser元件，檢視您現在可以選取它。
 
-1. 如果您按一下通用編輯器屬性邊欄中的&#x200B;**內容樹狀結構**&#x200B;圖示，您會發現編輯器已辨識出頁面上所有的Teaser（您已偵測到它）。 您選取的Teaser是反白顯示的。
+1. 如果您按一下通用編輯器屬性面板中的&#x200B;**內容樹狀結構**&#x200B;圖示，您會看到編輯器已辨識出頁面上所有的Teaser（您已偵測到它）。 您選取的Teaser是反白顯示的。
 
    ![選取檢測的Teaser元件](assets/dev-select-teaser.png)
 
@@ -355,13 +355,13 @@ WKND頁面現在會在Universal Editor中成功載入，且JavaScript程式庫�
 >
 >基本驗證標頭範例`Basic YWRtaW46YWRtaW4=`適用於本機AEM開發中常見的`admin:admin`使用者/密碼組合。
 
-## 為屬性邊欄檢測應用程式 {#properties-rail}
+## 為屬性面板檢測應用程式 {#properties-rail}
 
 現在，您有一個應用程式，經檢測可以使用通用編輯器進行編輯！
 
-編輯目前僅限於Teaser標題的內嵌編輯。 但是，在某些情況下，就地編輯並不足夠。 在鍵盤輸入所在的位置可以編輯Teaser標題等文字。 不過，更複雜的專案必須能夠顯示並允許編輯結構化資料，而不需將其呈現在瀏覽器中。 這是屬性邊欄的用途。
+編輯目前僅限於Teaser標題的內嵌編輯。 但是，在某些情況下，就地編輯並不足夠。 在鍵盤輸入所在的位置可以編輯Teaser標題等文字。 不過，更複雜的專案必須能夠顯示並允許編輯結構化資料，而不需將其呈現在瀏覽器中。 這是屬性面板的用途。
 
-若要更新應用程式以使用屬性邊欄進行編輯，請返回應用程式頁面元件的標題檔案。 這是您已建立與本機AEM開發執行個體和本機Universal Editor服務之連線的位置。 您必須在此處定義可在應用程式中編輯的元件及其資料模型。
+若要更新應用程式以使用屬性面板進行編輯，請返回應用程式頁面元件的標題檔案。 這是您已建立與本機AEM開發執行個體和本機Universal Editor服務之連線的位置。 您必須在此處定義可在應用程式中編輯的元件及其資料模型。
 
 1. 開啟 CRXDE Lite。
 
@@ -462,7 +462,7 @@ WKND頁面現在會在Universal Editor中成功載入，且JavaScript程式庫�
 
 ## 這是什麼意思？ {#what-does-it-mean-2}
 
-若要使用屬性邊欄進行編輯，必須將元件指派給`groups`，因此每個定義都會以包含元件的群組清單開始。
+若要使用屬性面板編輯，必須將元件指派給`groups`，因此每個定義都會以包含元件的群組清單開始。
 
 * `title`是群組的名稱。
 * `id`是群組的唯一識別碼，在此案例中是組成頁面內容的一般元件，而不是頁面配置的進階元件。
@@ -487,7 +487,7 @@ WKND頁面現在會在Universal Editor中成功載入，且JavaScript程式庫�
 * `label`是出現在編輯器UI中的欄位說明。
 * `valueType`是資料型別。
 
-## 為屬性邊欄檢測元件 {#properties-rail-component}
+## 為屬性面板檢測元件 {#properties-rail-component}
 
 您還需要在元件層級定義元件應使用的模型。
 
@@ -509,17 +509,17 @@ WKND頁面現在會在Universal Editor中成功載入，且JavaScript程式庫�
 
 1. 按一下工具列中的「儲存全部&#x200B;**」**，然後重新載入通用編輯器。
 
-現在您已準備好測試針對元件所檢測的屬性邊欄。
+現在您已準備好測試針對元件檢測的屬性面板。
 
 1. 在通用編輯器中，按一下Teaser的標題以再次編輯。
 
-1. 按一下屬性邊欄以顯示屬性標籤，並檢視您剛才檢測的欄位。
+1. 按一下屬性面板以顯示屬性標籤，並檢視您剛才檢測的欄位。
 
-   ![檢測的屬性邊欄](assets/dev-properties-rail-instrumented.png)
+   ![檢測的屬性面板](assets/dev-properties-rail-instrumented.png)
 
-您現在可以像之前一樣內嵌編輯Teaser標題，或在屬性邊欄中編輯。 在這兩種情況下，變更會保留回本機AEM開發執行個體。
+您現在可以像之前一樣內嵌或在「屬性」面板中編輯Teaser的標題。 在這兩種情況下，變更會保留回本機AEM開發執行個體。
 
-## 新增其他欄位至屬性邊欄 {#add-fields}
+## 新增其他欄位至屬性面板 {#add-fields}
 
 使用已實作之元件的資料模型基本結構，可以依照相同模型新增其他欄位。
 
@@ -555,9 +555,9 @@ WKND頁面現在會在Universal Editor中成功載入，且JavaScript程式庫�
 
 1. 按一下Teaser的標題可再次編輯。
 
-1. 按一下「屬性」邊欄，檢視是否有新欄位可調整元件的樣式。
+1. 按一下屬性面板，然後檢視是否有新欄位可調整元件的樣式。
 
-   ![具樣式欄位](assets/dev-style-instrumented.png)的檢測屬性邊欄
+   ![具樣式欄位的檢測屬性面板](assets/dev-style-instrumented.png)
 
 可透過此方式在Universal Editor中公開元件JCR中的任何欄位。
 
@@ -580,8 +580,8 @@ WKND頁面現在會在Universal Editor中成功載入，且JavaScript程式庫�
 1. [您已檢測Teaser元件。](#instrumenting-components)
 1. [您檢測了Teaser的子元件。](#subcomponents)
 1. [您定義了自訂驗證標頭，以便使用本機Universal Editor服務儲存變更。](#auth-header)
-1. [您指示應用程式使用屬性邊欄。](#properties-rail)
-1. [您檢測Teaser元件以使用屬性邊欄。](#properties-rail-component)
+1. [您指示應用程式使用屬性面板。](#properties-rail)
+1. [您檢測Teaser元件以使用屬性面板。](#properties-rail-component)
 
 您可以依照這些相同步驟來檢測您自己的應用程式，以便與通用編輯器搭配使用。 JCR中的任何屬性都可以向通用編輯器公開。
 

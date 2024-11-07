@@ -4,10 +4,10 @@ description: 瞭解內容模型如何搭配Edge Delivery Services專案用於WYS
 exl-id: e68b09c5-4778-4932-8c40-84693db892fd
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: 058f3c24ac883315dfaa9206a8c2caa4bb005d07
+source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
 workflow-type: tm+mt
 source-wordcount: '2196'
-ht-degree: 80%
+ht-degree: 79%
 
 ---
 
@@ -112,7 +112,7 @@ ht-degree: 80%
 * 必須定義區塊名稱，該名稱將呈現在區塊標頭中。
    * 區塊名稱是用來擷取正確的樣式和指令碼來裝飾區塊。
 * 可以定義一個[模式 ID。](/help/implementing/universal-editor/field-types.md#model-structure)
-   * 模式 ID 是元件模式的參考編號，旨在定義作者在屬性邊欄中可用的欄位。
+   * 模型ID是元件模型的參考，其定義屬性面板中作者可用的欄位。
 * 可以定義一個[篩選器 ID。](/help/implementing/universal-editor/customizing.md#filtering-components)
    * 篩選器 ID 是元件篩選器的參考編號，旨在允許變更製作行為，例如透過限制可以將哪些子系新增至區塊或區段，或啟用哪些 RTE 功能。
 

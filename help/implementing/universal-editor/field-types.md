@@ -1,10 +1,10 @@
 ---
 title: 模型定義、欄位和元件類型
-description: 透過範例瞭解屬性邊欄中通用編輯器可編輯的欄位和元件型別。 瞭解如何建立模型定義並連結至元件，以裝備您自己的應用程式。
+description: 透過範例瞭解通用編輯器可在屬性面板中編輯的欄位和元件型別。 瞭解如何建立模型定義並連結至元件，以裝備您自己的應用程式。
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 5153d18b6bb8934479a02cbaa5236acef7c80cd1
+source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
 workflow-type: tm+mt
 source-wordcount: '1281'
 ht-degree: 11%
@@ -14,11 +14,11 @@ ht-degree: 11%
 
 # 模型定義、欄位和元件類型 {#field-types}
 
-透過範例瞭解屬性邊欄中通用編輯器可編輯的欄位和元件型別。 瞭解如何建立模型定義並連結至元件，以裝備您自己的應用程式。
+透過範例瞭解通用編輯器可在屬性面板中編輯的欄位和元件型別。 瞭解如何建立模型定義並連結至元件，以裝備您自己的應用程式。
 
 ## 概觀 {#overview}
 
-調整您自己的應用程式以與通用編輯器搭配使用時，您必須檢測元件，並定義元件可在編輯器的屬性邊欄中操作的欄位和元件型別。 若要這麼做，請建立模型並從元件連結至模型。
+調整您自己的應用程式以與通用編輯器搭配使用時，您必須檢測元件，並定義元件可在編輯器的「屬性」面板中操作的欄位和元件型別。 若要這麼做，請建立模型並從元件連結至模型。
 
 本檔案提供模型定義、欄位和可用元件型別的概觀，以及設定範例。
 
@@ -28,7 +28,7 @@ ht-degree: 11%
 
 ## 模型定義結構 {#model-structure}
 
-若要透過通用編輯器中的屬性邊欄設定元件，模型定義必須存在且連結至元件。
+若要透過通用編輯器中的屬性面板設定元件，模型定義必須存在且必須連結至元件。
 
 模型定義是JSON結構，從模型的陣列開始。
 
@@ -36,7 +36,7 @@ ht-degree: 11%
 [
   {
     "id": "model-id",        // must be unique
-    "fields": []             // array of fields which shall be rendered in the properties rail
+    "fields": []             // array of fields which shall be rendered in the properties panel
   }
 ]
 ```

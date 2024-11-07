@@ -4,10 +4,10 @@ description: 了解內容製作如何與 Edge Delivery Services 搭配使用，�
 feature: Edge Delivery Services
 exl-id: 963ff71a-8176-4d9d-8240-dc429405d139
 role: User
-source-git-commit: 7e8446bec18eaeb4eb017dd63436a066d3a90fed
+source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
 workflow-type: tm+mt
 source-wordcount: '452'
-ht-degree: 64%
+ht-degree: 61%
 
 ---
 
@@ -44,7 +44,7 @@ Universal Editor提供現代且直覺式的GUI，讓您透過新增和排列區�
 
 ![在通用編輯器中新增及排列區塊](assets/blocks.png)
 
-然後，在屬性邊欄內可設定區塊的詳細資訊。
+接著，您即可在屬性面板中設定區塊的詳細資料。
 
 ![設定區塊屬性](assets/block-properties.png)
 

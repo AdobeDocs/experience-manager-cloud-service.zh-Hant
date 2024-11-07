@@ -4,7 +4,7 @@ description: 瞭解Universal Editor的主要使用案例，以及如何最好地
 exl-id: 398ad0e2-c299-4c49-9784-05c84c67bec2
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 2db4428065b3611a43137514864573947d32fff7
+source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
 workflow-type: tm+mt
 source-wordcount: '858'
 ht-degree: 0%
@@ -76,7 +76,7 @@ Universal Editor的運作方式如下。
 若要讓通用編輯器可編輯頁面或應用程式，必須正確檢測該頁面或應用程式。
 
 * [屬性和型別](/help/implementing/universal-editor/attributes-types.md) — 若要讓通用編輯器可編輯應用程式或頁面，必須正確檢測它。 這包括包含適當的中繼資料，以便編輯器可以編輯應用程式的內容。
-* [模型定義、欄位和元件型別](/help/implementing/universal-editor/field-types.md) — 當中繼資料顯示以啟用元件編輯功能後，您即可在編輯器的屬性邊欄中定義它們可以操作的欄位和元件型別。
+* [模型定義、欄位和元件型別](/help/implementing/universal-editor/field-types.md) — 當中繼資料顯示以啟用元件編輯功能後，您即可在編輯器的屬性面板中定義它們可以操作的欄位和元件型別。
 * [通用編輯器事件](/help/implementing/universal-editor/events.md) — 您可以透過使用通用編輯器在內容或UI互動上發出的事件，來增強應用程式中的編輯體驗，進而自訂您的應用程式。
 
 通用編輯器也可以根據您的專案需求進行調整。

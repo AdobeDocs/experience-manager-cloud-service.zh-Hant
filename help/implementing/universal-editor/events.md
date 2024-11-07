@@ -4,7 +4,7 @@ description: 瞭解通用編輯器傳送的不同事件，您可用這些事件�
 exl-id: c9f7c284-f378-4725-a4e6-e4799f0f8175
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
 workflow-type: tm+mt
 source-wordcount: '575'
 ht-degree: 2%
@@ -55,7 +55,7 @@ ht-degree: 2%
 
 ### aue：content-details {#content-details}
 
-在屬性邊欄中載入元件時會觸發`aue:content-details`事件。
+將元件載入屬性面板時，就會觸發`aue:content-details`事件。
 
 裝載是元件的內容，並可選擇是其結構。
 
@@ -91,7 +91,7 @@ ht-degree: 2%
 
 ### aue：content-patch {#content-patch}
 
-當在屬性邊欄中更新元件的資料時，就會觸發`aue:content-patch`事件。
+當在屬性面板中更新元件的資料時，就會觸發`aue:content-patch`事件。
 
 裝載是已更新屬性的JSON修補程式。
 

@@ -5,10 +5,10 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90ca80925351157e766f8400c2b1d80db6161bf0
+source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
 workflow-type: tm+mt
 source-wordcount: '1375'
-ht-degree: 38%
+ht-degree: 36%
 
 ---
 
@@ -41,7 +41,7 @@ Universal Editor 支援在任意實作中編輯任何方面的內容，以便提
 >
 >依預設，點選或按一下內容會選取內容以進行編輯。 如果您想透過下列連結導覽內容，請切換至[預覽模式。](/help/sites-cloud/authoring/universal-editor/navigation.md#preview-mode)
 
-根據您選取的內容，您可能有不同的就地編輯選項，而且您可能會在[屬性邊欄中針對內容提供額外的資訊和選項。](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
+根據您選取的內容，您可能有不同的就地編輯選項，而且您可能會針對[屬性面板中的內容提供其他資訊和選項。](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
 
 ### 編輯純文字 {#edit-plain-text}
 
@@ -51,11 +51,11 @@ Universal Editor 支援在任意實作中編輯任何方面的內容，以便提
 
 薄的藍色輪廓會變成粗的藍色輪廓來指示選取，並且會出現游標。 進行變更，然後按下Enter/Return或在文字方塊外選取，以儲存變更。
 
-當您選取選取文字元件時，其詳細資訊會顯示在[屬性邊欄中。](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)您也可以編輯邊欄中的文字。
+當您選取選取文字元件時，其詳細資訊會顯示在[屬性面板中。](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)您也可以在面板中編輯文字。
 
-![正在編輯屬性邊欄中的文字](assets/ue-editing-text-component-rail.png)
+![正在編輯屬性面板中的文字](assets/ue-editing-text-component-rail.png)
 
-此外，屬性邊欄中也提供您文字的詳細資料。 一旦焦點離開屬性邊欄中已編輯的欄位，變更就會自動儲存。
+此外，「屬性」面板中也提供您文字的詳細資料。 一旦焦點離開屬性面板中已編輯的欄位，變更會自動儲存。
 
 ### 編輯 RTF 文字 {#edit-rich-text}
 
@@ -73,9 +73,9 @@ Universal Editor 支援在任意實作中編輯任何方面的內容，以便提
 
 一旦焦點離開已編輯的欄位，變更會自動儲存。
 
-#### 屬性邊欄 {#properties-rail}
+#### 屬性面板 {#properties-rail}
 
-[屬性邊欄](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)會顯示所選文字的專案。 點選專案以開啟對話方塊，顯示較大的畫布以編輯文字。
+[屬性面板](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)會顯示所選文字的專案。 點選專案以開啟對話方塊，顯示較大的畫布以編輯文字。
 
 ![RTF編輯對話方塊](assets/rich-text-canvas.png)
 
@@ -83,30 +83,30 @@ Universal Editor 支援在任意實作中編輯任何方面的內容，以便提
 
 ### 編輯媒體 {#edit-media}
 
-您可以在[屬性邊欄中檢視其詳細資料。](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
+您可以在[屬性面板中檢視其詳細資料。](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
 
 ![編輯媒體](assets/ue-edit-media.png)
 
-1. 在屬性邊欄中，點選或按一下所選影像的預覽。
+1. 在屬性面板中，點選或按一下所選影像的預覽。
 1. [資產選擇器](/help/assets/overview-asset-selector.md#using-asset-selector)視窗會開啟，讓您可選取資產。
 1. 選取「 」以選取新資產。
-1. 選取&#x200B;**選取**&#x200B;以返回取代資產的屬性邊欄。
+1. 選取&#x200B;**選取**&#x200B;以返回取代資產的屬性面板。
 
 變更會自動儲存到您的內容中。
 
 ### 編輯內容片段 {#edit-content-fragment}
 
-如果您選取[內容片段，](/help/sites-cloud/administering/content-fragments/overview.md)，您可以在[屬性邊欄中編輯其詳細資料。](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
+如果您選取[內容片段，](/help/sites-cloud/administering/content-fragments/overview.md)，您可以在[屬性面板](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)中編輯其詳細資料。
 
 ![編輯內容片段](assets/ue-edit-cf.png)
 
-在選定內容片段的內容模型中定義的欄位會在屬性邊欄中顯示和編輯。
+在所選內容片段的內容模型中定義的欄位會在屬性面板中顯示和編輯。
 
-如果您選取與內容片段相關的欄位，則內容片段會載入到元件邊欄中，且會自動捲動到該欄位。
+如果您選取與內容片段相關的欄位，內容片段會載入元件面板中，且欄位會自動捲動到。
 
-一旦焦點離開屬性邊欄中已編輯的欄位，變更就會自動儲存。
+一旦焦點離開屬性面板中已編輯的欄位，變更會自動儲存。
 
-如果您想改在[內容片段編輯器](/help/sites-cloud/administering/content-fragments/authoring.md)中編輯您的內容片段，請點選或按一下屬性邊欄中的&#x200B;[**在CF編輯器中開啟**&#x200B;按鈕](/help/sites-cloud/authoring/universal-editor/navigation.md#edit)。
+如果您想改用[內容片段編輯器](/help/sites-cloud/administering/content-fragments/authoring.md)編輯您的內容片段，請點選或按一下屬性面板中的&#x200B;[**在CF編輯器中開啟**&#x200B;按鈕](/help/sites-cloud/authoring/universal-editor/navigation.md#edit)。
 
 >[!TIP]
 >
@@ -123,7 +123,7 @@ Universal Editor 支援在任意實作中編輯任何方面的內容，以便提
 ### 新增元件到容器中 {#adding-components}
 
 1. 在[內容樹狀結構](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode)或編輯器中選取容器元件。
-1. 接著，在屬性邊欄中選取新增圖示。
+1. 然後，在「屬性」面板中選取「新增」圖示。
 
    ![選取要新增到容器的元件](assets/ue-add-component.png)
 
@@ -136,7 +136,7 @@ Universal Editor 支援在任意實作中編輯任何方面的內容，以便提
 ### 在容器中複製元件 {#duplicating-components}
 
 1. 使用[內容樹狀結構](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode)或編輯器選取容器中的元件。
-1. 然後在屬性邊欄中選取&#x200B;**複製**&#x200B;圖示。
+1. 然後在屬性面板中選取&#x200B;**複製**&#x200B;圖示。
 
    ![選取要新增到容器的元件](assets/ue-duplicate-component.png)
 1. 元件會複製並插入選取元件的下方。
@@ -148,7 +148,7 @@ Universal Editor 支援在任意實作中編輯任何方面的內容，以便提
 1. 在[內容樹狀結構](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode)或編輯器中選取容器元件。
 1. 選取容器的>形箭號圖示，展開內容樹狀結構中的內容。
 1. 然後，在內容樹中，選取容器內的元件。
-1. 在屬性邊欄中選取刪除圖示。
+1. 在「屬性」面板中選取「刪除」圖示。
 
    ![刪除元件](assets/ue-delete-component.png)
 

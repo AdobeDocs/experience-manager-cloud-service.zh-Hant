@@ -4,10 +4,10 @@ description: 瞭解如何建立在WYSIWYG製作中與Edge Delivery Services專�
 exl-id: 65a5600a-8d16-4943-b3cd-fe2eee1b4abf
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: 3419fa943eb865d87467443527ea97fcd64909c2
+source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
 workflow-type: tm+mt
 source-wordcount: '1445'
-ht-degree: 57%
+ht-degree: 54%
 
 ---
 
@@ -165,7 +165,7 @@ Adobe 建議您採用三階段方法來開發區塊：
 
    * 為了載入該頁面，您可能需要點選或按一下「**使用 Adob&#x200B;&#x200B;e 登入**」，並在 Universal Editor 中對 AEM 進行驗證。
 
-1. 在 Universal Editor 中，選取一個區段。在屬性邊欄中，點選或按一下「**新增**」圖示，然後從選單中選取新的&#x200B;**引述** 區塊。
+1. 在 Universal Editor 中，選取一個區段。在屬性面板中，點選或按一下「**新增**」圖示，然後從功能表中選取新的&#x200B;**Quote**&#x200B;區塊。
 
    *  **新增**&#x200B;圖示是一個加號。
    * 如果所選物件的藍色外框有一個標為「**區段**」的標記，表示您已選取了一個區段。
@@ -175,7 +175,7 @@ Adobe 建議您採用三階段方法來開發區塊：
 
 1. 頁面重新加載，且引述區塊將新增至所選區段的底部，以及成為 `component-definitions.json` 檔案中指定的預設內容。
 
-   * 與任何其他區塊一樣，引述區塊可在原處或屬性邊欄中供選取和編輯。
+   * 引號區塊可以像任何其他區塊一樣就地或在「屬性」面板中選取和編輯。
    * 樣式將在下一步中套用。
 
    ![所選區段中包含新引述區塊的頁面](assets/create-block/quote-added.png)

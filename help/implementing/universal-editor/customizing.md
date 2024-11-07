@@ -4,7 +4,7 @@ description: 瞭解不同的擴充點和其他功能，這些功能可讓您自�
 exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 6612abbd95599791ff9571b59154aa8ab34fb5f8
+source-git-commit: 732b0648e7114594cb8d35df03f83b842d62736e
 workflow-type: tm+mt
 source-wordcount: '646'
 ht-degree: 1%
@@ -75,9 +75,9 @@ data-aue-filter="container-filter"
 ]
 ```
 
-### 有條件地顯示和隱藏屬性邊欄中的元件 {#conditionally-hide}
+### 有條件地顯示和隱藏屬性面板中的元件 {#conditionally-hide}
 
-雖然元件通常可供作者使用，但在某些情況下卻可能沒有意義。 在這種情況下，您可以將`condition`屬性新增至元件模型的[欄位，以隱藏屬性邊欄中的元件。](/help/implementing/universal-editor/field-types.md#fields)
+雖然元件通常可供作者使用，但在某些情況下卻可能沒有意義。 在這種情況下，您可以將`condition`屬性新增至元件模型的[欄位，以隱藏屬性面板中的元件。](/help/implementing/universal-editor/field-types.md#fields)
 
 可以使用[JsonLogic結構描述定義條件。](https://jsonlogic.com/)如果條件為true，則會顯示欄位。 如果條件為false，則會隱藏欄位。
 
@@ -132,7 +132,7 @@ data-aue-filter="container-filter"
 
 作為Adobe Experience Cloud服務，Universal Editor的UI可以使用App Builder和Experience Manager進行擴充。
 
-UI擴充功能是使用Adobe App Builder建置的JavaScript應用程式，可嵌入在Adobe Experience Cloud unified shell底下執行的UI應用程式（例如Universal Editor）中。 您可以將自己的按鈕和動作新增到頁首功能表和屬性邊欄，並為通用編輯器建立自己的事件。
+UI擴充功能是使用Adobe App Builder建置的JavaScript應用程式，可嵌入在Adobe Experience Cloud unified shell底下執行的UI應用程式（例如Universal Editor）中。 您可以將自己的按鈕和動作新增到頁首功能表和屬性面板，以及為通用編輯器建立自己的事件。
 
 如果您想探索這些可能性，請參閱下列資源：
 

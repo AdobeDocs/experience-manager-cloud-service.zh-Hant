@@ -5,10 +5,10 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: 90ca80925351157e766f8400c2b1d80db6161bf0
+source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
 workflow-type: tm+mt
 source-wordcount: '1615'
-ht-degree: 41%
+ht-degree: 38%
 
 ---
 
@@ -63,7 +63,7 @@ UI分為以下幾個主要區域。
 * [Experience Cloud 標頭](#experience-cloud-header)
 * [通用編輯器工具列](#universal-editor-toolbar)
 * [編輯器](#editor)
-* [屬性邊欄](#properties-rail)
+* [屬性面板](#properties-rail)
 
 ![Universal Editor UI](assets/ui.png)
 
@@ -224,19 +224,19 @@ Universal Editor提供可自訂且可擴充的撰寫體驗。 如果您在工具
 
 如果編輯器在[預覽模式，](#preview-mode)內容即為可瀏覽，而且您可以點選連結，但無法編輯內容。
 
-### 屬性邊欄 {#properties-rail}
+### 屬性面板 {#properties-rail}
 
-屬性邊欄一律會沿著編輯器的右側顯示。 視其模式而定，可能會顯示在內容或頁面內容之階層中選取的元件詳細資訊。
+屬性面板會一直沿著編輯器的右側顯示。 視其模式而定，可能會顯示在內容或頁面內容之階層中選取的元件詳細資訊。
 
-![屬性邊欄](assets/properties-rail.png)
+![屬性面板](assets/properties-rail.png)
 
 #### 屬性模式 {#properties-mode}
 
-在屬性模式下，邊欄會顯示編輯器中目前選取的元件屬性。這是載入頁面時屬性邊欄的預設模式。
+在屬性模式中，面板會顯示編輯器中目前所選元件的屬性。 這是載入頁面時屬性面板的預設模式。
 
 ![屬性模式](assets/properties-mode.png)
 
-依您所選取的元件類型而定，可在屬性邊欄中顯示和修改詳細資料。
+根據您選取的元件型別，詳細資訊可在「屬性」面板中顯示和修改。
 
 ![元件詳細資料](assets/component-details.png)
 
@@ -248,7 +248,7 @@ Universal Editor提供可自訂且可擴充的撰寫體驗。 如果您在工具
 
 #### 內容樹模式 {#content-tree-mode}
 
-在內容樹模式下，邊欄會顯示頁面內容的階層。
+在內容樹狀結構模式中，面板會顯示頁面內容的階層。
 
 ![內容樹模式](assets/content-tree-mode.png)
 
@@ -262,7 +262,7 @@ Universal Editor提供可自訂且可擴充的撰寫體驗。 如果您在工具
 
 ##### 在 CF 編輯器中開啟 {#edit}
 
-編輯時，所選元件的選項會顯示在屬性邊欄中，您可在此編輯所選元件。 如果選取的元件是內容片段，您也可以選取&#x200B;**在CF編輯器中開啟**&#x200B;按鈕。
+編輯時，所選元件的選項會顯示在「屬性」面板中，您可以在此編輯所選元件。 如果選取的元件是內容片段，您也可以選取&#x200B;**在CF編輯器中開啟**&#x200B;按鈕。
 
 ![在CF編輯器中開啟圖示](assets/open-in-cf-editor.png)
 
@@ -276,7 +276,7 @@ Universal Editor提供可自訂且可擴充的撰寫體驗。 如果您在工具
 
 ##### 新增 {#add}
 
-如果您在內容樹狀結構或編輯器中選取容器元件，「屬性」邊欄會出現「新增」選項。
+如果您在內容樹或編輯器中選取容器元件，「屬性」面板上就會顯示「新增」選項。
 
 ![「新增」圖示](assets/ue-add-component-icon.png)
 
@@ -290,7 +290,7 @@ Universal Editor提供可自訂且可擴充的撰寫體驗。 如果您在工具
 
 ##### 複製 {#duplicate}
 
-如果您在內容樹狀結構或編輯器中選取容器元件內的元件，屬性邊欄中會顯示重複選項。
+如果在內容樹或編輯器中選取容器元件內的元件，屬性面板上會顯示重複選項。
 
 ![圖示重複](assets/duplicate.png)
 
@@ -298,7 +298,7 @@ Universal Editor提供可自訂且可擴充的撰寫體驗。 如果您在工具
 
 ##### 刪除 {#delete}
 
-如果在內容樹狀結構或編輯器中選取容器元件內的元件，屬性邊欄會顯示刪除選項。
+如果在內容樹或編輯器中選取容器元件內的元件，屬性面板上會顯示刪除選項。
 
 ![「刪除」圖示](assets/ue-delete-component-icon.png)
 
@@ -310,7 +310,7 @@ Universal Editor提供可自訂且可擴充的撰寫體驗。 如果您在工具
 
 #### 其他按鈕 {#additional-properties-rail-buttons}
 
-Universal Editor提供可自訂且可擴充的撰寫體驗。 如果您在屬性邊欄中看到其他按鈕，表示您的通用編輯器已擴充。
+Universal Editor提供可自訂且可擴充的撰寫體驗。 如果您在屬性面板中看到其他按鈕，表示您的通用編輯器已擴充。
 
 * 如需擴充功能的詳細資訊，請參閱[自訂及擴充通用編輯器。](/help/implementing/universal-editor/customizing.md)
 * 如需個別擴充功能運作方式的詳細資訊，請參閱[Extension Manager檔案。](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/)
