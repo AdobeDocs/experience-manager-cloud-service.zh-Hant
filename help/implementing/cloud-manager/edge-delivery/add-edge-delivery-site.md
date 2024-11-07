@@ -3,13 +3,13 @@ title: 新增 Edge Delivery 網站至 Cloud Manager
 description: 瞭解如何將Edge Delivery網站新增到您的生產計畫或沙箱計畫。
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
+exl-id: 17e842c9-599a-4877-9834-1e7220f508a8
+source-git-commit: db661281831dcb07491dca16e73e835b487814a6
 workflow-type: tm+mt
 source-wordcount: '495'
 ht-degree: 5%
 
 ---
-
 
 # 將Edge Delivery網站新增至Cloud Manager {#adding}
 
@@ -57,5 +57,3 @@ ht-degree: 5%
 驗證存放庫後，其在Edge Delivery網站表格中的狀態會更新。 內部帶有白色勾號的綠色圓圈表示狀態。
 
 在相同表格中，按一下![Edge Delivery網站的相關資訊](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg)以檢視網站詳細資訊。 此資訊包括已驗證的存放庫URL，以及預覽和生產網站URL。
-
-

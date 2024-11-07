@@ -1,18 +1,18 @@
 ---
-title: Cloud Manager中的Edge Delivery Services簡介
+title: Cloud Manager 的 Edge Delivery Services 簡介
 description: 瞭解如何使用Edge Delivery Services傳遞Cloud Manager專案。
 exl-id: f33bd6f0-62fc-4ecc-b8d2-65d1f1c44d82
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 2b384a4233672d69de09b922fcdef6d0f84ff7df
+source-git-commit: 3941b7f97d434946a3cb796633f306b89e68c0a4
 workflow-type: tm+mt
-source-wordcount: '746'
-ht-degree: 6%
+source-wordcount: '756'
+ht-degree: 10%
 
 ---
 
 
-# Cloud Manager中的Edge Delivery Services簡介 {#edge-delivery-services}
+# Cloud Manager 的 Edge Delivery Services 簡介 {#edge-delivery-services}
 
 Edge Delivery Services 是一組可組合的服務，可讓您以高度靈活的方式在網站上製作內容。此功能可讓您進行以下工作：
 
@@ -20,7 +20,7 @@ Edge Delivery Services 是一組可組合的服務，可讓您以高度靈活的
 * 透過RUM （即時監控）持續監控效能。
 * 透過分離內容來源來提高撰寫效率。
 
-您可以使用通用編輯器和檔案式編寫，同時使用AEM內容管理和WYSIWYG編寫。
+您可以使用通用編輯器來使用AEM內容管理和WYSIWYG製作，也可以使用檔案式製作。
 
 AEM as a Cloud Service中的Cloud Manager可讓您為專案啟用Edge Delivery服務。
 
@@ -78,11 +78,12 @@ AEM as a Cloud Service中的Cloud Manager可讓您為專案啟用Edge Delivery�
 | 3 | 新增Edge Delivery網站 | 請參閱[新增Edge Delivery網站](#eds-add-site)。 |
 | 4 | 新增網域 | 請參閱[新增自訂網域名稱](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)。 |
 | 5 | 新增 SSL 憑證 | 請參閱[新增SSL憑證](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)。 |
-| 6 | 設定Edge Delivery網站的CDN | 請參閱[新增CDN組態](#add-cdn)。 |
+| 6 | 設定Edge Delivery網站的CDN | 請參閱[新增CDN組態](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)。 |
+| 7 | 上線 | 完成上線中的最後一個步驟。 |
 
 >[!VIDEO](https://video.tv.adobe.com/v/3428020?learn=on)
 
-## 記錄支援票證 {#eds-support-ticket}
+## 記錄支援服務單 {#eds-support-ticket}
 
 {{support-ticket}}
 
