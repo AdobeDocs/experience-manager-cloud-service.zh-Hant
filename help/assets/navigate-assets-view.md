@@ -4,16 +4,16 @@ description: 了解  [!DNL Assets view] 中的使用者介面和導覽
 role: User
 exl-id: 1e71ea7d-fee7-4ed0-bb80-d537b57fc823
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: d542df9ae943d03a56b5d85b1bd189f81c35fe28
 workflow-type: tm+mt
-source-wordcount: '984'
-ht-degree: 86%
+source-wordcount: '998'
+ht-degree: 74%
 
 ---
 
 # 導覽至檔案和資料夾，並檢視資產 {#view-assets-and-details}
 
-| [搜尋最佳實務](/help/assets/search-best-practices.md) | [中繼資料最佳實務](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [具有OpenAPI功能的Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets開發人員檔案](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| [搜尋最佳實務](/help/assets/search-best-practices.md) | [中繼資料最佳實務](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [具有 OpenAPI 功能的 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 開發人員文件](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
 <!-- TBD: Give screenshots of all views with many assets. Zoom out to showcase how the thumbnails/tiles flow on the UI in different views. -->
@@ -34,7 +34,7 @@ ht-degree: 86%
 
 ## 瀏覽和檢視資產和資料夾 {#browse-repository}
 
-您可以從主要使用者介面或左側邊欄瀏覽資料夾。現在，當瀏覽或搜尋內容時，Experience Manager Assets 會在資料夾縮圖上顯示資料夾內容的視覺化預覽，這提高了 AEM Assets 存放庫中可用資產的可發現性。此資料夾縮圖可讓您節省在AEM Assets存放庫的資料夾中搜尋特定資產所花費的時間。
+您可以從主要使用者介面或左側邊欄瀏覽資料夾。瀏覽或搜尋內容時，Experience Manager Assets會在資料夾縮圖上顯示資料夾內容的視覺預覽。 這麼做可改善AEM Assets存放庫中可用資產的可發現性。 此資料夾縮圖可讓您節省在AEM Assets存放庫的資料夾中搜尋特定資產所花費的時間。
 在資料夾中瀏覽資產時，您可以使用該介面檢視資產縮圖以瀏覽存放庫或檢視資產詳細資料，以便快速找到您想要的資產。在左側邊欄中的可用選項有：
 
 * [我的工作區](/help/assets/my-workspace-assets-view.md)：Assets 現在包含一個可自訂的工作區，提供 Widget 以方便存取資產使用者介面的關鍵區域以及與您最相關的資訊。 此頁面可用作一站式解決方案，提供工作項目的概觀並讓您快速存取關鍵工作流程。更方便地存取這些選項可以提高您的效率和內容速度。
@@ -77,9 +77,9 @@ ht-degree: 86%
 
 若要預覽資產，請選取該資產，然後從頂部的工具列按一下「[!UICONTROL 詳細資訊]」![詳細資訊圖示](assets/do-not-localize/edit-in-icon.png)。您不僅可檢視資產，也可檢視其詳細的中繼資料並採取其他動作。
 
-![預覽資產](assets/preview-asset-2.png)
+![預覽資產](/help/assets/assets/navigate-file-folder-dm.png)
 
-**A**：返回目前資料夾或存放庫中的目前搜尋結果 **B**：您正在預覽的檔案名稱和格式 **C**：指派任務 **D**：進階中繼資料 **E**：關鍵字與智慧標記 **F**：註解和註釋 **G**：檢視與所選資產相關的任務 **H**：檢視和管理版本 **I**：檢視影像轉譯 **J**：編輯影像 **K**：基本中繼資料 **L**：進階中繼資料 **M**：關鍵字和智慧標記 **N**：更加仔細預覽。縮放、全螢幕和其他選項 **O**：繼續至目前資料夾內的上一個或下一個資產，不需要返回資料夾。
+**A**：回到儲存庫中的目前資料夾或目前的搜尋結果&#x200B;**B**：您正在預覽的檔案的名稱和格式&#x200B;**C**：指派工作&#x200B;**D**：進階中繼資料&#x200B;**E**：關鍵字和智慧標籤&#x200B;**F**：註解及註釋&#x200B;**G**：檢視與所選資產相關的工作&#x200B;**H**：檢視及管理版本&#x200B;**I**：檢視影像轉譯&#x200B;**J**：編輯影象&#x200B;**K**：檢視具有OpenAPI功能的Dynamic Media呈現版本，包括Smart Crop和Dynamic Media。 **L**：基本中繼資料&#x200B;**M**：進階中繼資料&#x200B;**N**：關鍵字和智慧標籤&#x200B;**O**：繼續目前資料夾中的上一個或下一個資產，而不返回資料夾&#x200B;**P**：更密切地預覽。 縮放、全螢幕和其他選項。
 
 您也可以預覽影片。
 

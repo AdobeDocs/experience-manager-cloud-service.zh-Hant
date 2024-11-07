@@ -3,16 +3,16 @@ title: 在Experience Manager中核准資產
 description: 瞭解如何核准 [!DNL Experience Manager]中的資產。
 role: User
 exl-id: fe61a0f1-94d3-409a-acb9-195979668c25
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: d542df9ae943d03a56b5d85b1bd189f81c35fe28
 workflow-type: tm+mt
-source-wordcount: '694'
-ht-degree: 2%
+source-wordcount: '713'
+ht-degree: 4%
 
 ---
 
 # 核准[!DNL Experience Manager]中的資產
 
-| [搜尋最佳實務](/help/assets/search-best-practices.md) | [中繼資料最佳實務](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [具有OpenAPI功能的Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets開發人員檔案](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| [搜尋最佳實務](/help/assets/search-best-practices.md) | [中繼資料最佳實務](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [具有 OpenAPI 功能的 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 開發人員文件](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
 品牌經理和行銷人員對品牌資產維持嚴格的控制。 該資產僅供經核准和最新版本的使用，以確保所有管道和應用程式的品牌一致性。
@@ -96,13 +96,15 @@ ht-degree: 2%
 
 1. 選取資產並按一下&#x200B;**[!UICONTROL 詳細資料]**。
 
-1. 按一下右窗格中的「轉譯」圖示。
+1. 按一下右側窗格中可用的Dynamic Media圖示。
 
-1. 選取&#x200B;**[!UICONTROL 動態]**&#x200B;區段中可用的具有OpenAPI ]**的**[!UICONTROL  Dynamic Media。
+1. 選取&#x200B;**[!UICONTROL Dynamic Media]**&#x200B;面板中可用的具有OpenAPI的&#x200B;**[!UICONTROL Dynamic Media]**。
 
 1. 按一下&#x200B;**[!UICONTROL 複製URL]**以複製資產的傳遞URL。
-   ![複製傳遞URL](/help/assets/assets/copy-delivery-url.png)
+   ![動態轉譯](/help/assets/assets/dm-with-openapi-non-image-assets.png)
 
    >[!NOTE]
    >
    >在Assets檢視中，剛提供複製已核准資產之傳送URL的選項。
+
+如需顯示在Dynamic Media面板中的其他轉譯資訊，請參閱[檢視和下載Dynamic Media轉譯](/help/assets/renditions.md#view-download-dm-renditions)。
