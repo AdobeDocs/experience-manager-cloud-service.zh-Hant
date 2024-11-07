@@ -4,10 +4,10 @@ description: 瞭解AEM as a Cloud Service中的Cloud Manager 2024.11.0版。
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: db661281831dcb07491dca16e73e835b487814a6
+source-git-commit: 87293526ca9c10a142bc1d1d3a35562b171da385
 workflow-type: tm+mt
-source-wordcount: '799'
-ht-degree: 29%
+source-wordcount: '784'
+ht-degree: 30%
 
 ---
 
@@ -38,9 +38,9 @@ AEM as a Cloud Service中的Cloud Manager 2024.11.0發行日期是2024年11月7�
 
 ### AEM首頁 {#aem-home}
 
-AEM首頁是全新的集中式起點，可讓您開始在Adobe Experience Manager中管理內容、資產和網站。 AEM Home為提供個人化體驗量身打造，協助使用者根據其角色和目標順暢瀏覽AEM生態系統。 其設計旨在成為您的指南，提供重要見解和建議動作，以有效實現預期結果。 AEM首頁透過展示清晰、以人物為導向的藍圖，確保使用者快速找到達成目標所需的內容，並透過所有AEM功能支援更簡化且有效的體驗。
+AEM首頁推出管理Adobe Experience Manager內容、資產和網站的集中式起點。 AEM首頁旨在提供個人化體驗，可讓您根據自己的角色和目標，順暢地瀏覽AEM生態系統。 它可作為指南，提供重要深入分析和建議動作，以幫助您有效達成目標。 AEM首頁擁有清晰、以人物為導向的版面配置，可確保快速存取基本工具，支援所有AEM功能中精簡而有效的體驗。
 
-AEM Home可供早期採用者客戶使用，以最佳化工作流程、區分目標優先順序及推動結果的進階體驗，帶給您全新的體驗。 透過選擇加入，您有機會塑造AEM首頁的發展，提供意見回饋會影響其演化，以最好地為AEM社群服務。
+AEM Home可供早期採用者使用，提供專注於改善工作流程、安排目標優先順序及實現結果的最佳化體驗。 選擇加入可讓您提供意見回饋，協助塑造未來，並提升整個AEM社群的價值，從而影響AEM首頁的開發。
 
 如果您有興趣測試這項新功能並分享您的意見回饋，請從與Adobe ID相關聯的電子郵件地址傳送電子郵件至[Grp-AemHome@adobe.com](mailto:Grp-AemHome@adobe.com)。 請務必加入下列資訊：
 
