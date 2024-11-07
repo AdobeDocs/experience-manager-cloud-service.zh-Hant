@@ -4,9 +4,9 @@ description: 瞭解不同的擴充點和其他功能，這些功能可讓您自�
 exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 34ae1d57e77e209e179aca5c556954dbfb170498
+source-git-commit: 6612abbd95599791ff9571b59154aa8ab34fb5f8
 workflow-type: tm+mt
-source-wordcount: '647'
+source-wordcount: '646'
 ht-degree: 1%
 
 ---
@@ -120,7 +120,7 @@ data-aue-filter="container-filter"
 
 您可以透過`urn:adobe:aue:config:preview`中繼設定來指定自訂預覽URL，按一下[編輯器右上角工具列中的&#x200B;**開啟頁面**&#x200B;按鈕時，將會開啟此設定。](/help/sites-cloud/authoring/universal-editor/navigation.md#universal-editor-toolbar)
 
-這對於具有特定預覽需求的應用程式特別有用，例如那些使用WYSIWYG編寫的Edge Delivery Services的[。](/help/edge/wysiwyg-authoring/authoring.md)
+這對於具有特定預覽需求的應用程式特別有用，例如那些將Edge Delivery Services與WYSIWYG編寫搭配使用的[。](/help/edge/wysiwyg-authoring/authoring.md)
 
 若要這麼做，只需將所需的預覽URL加入所檢測應用程式的中繼標籤中，例如下列範例。
 
