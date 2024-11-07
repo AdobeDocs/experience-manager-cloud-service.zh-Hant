@@ -4,13 +4,13 @@ description: 瞭解存取和導覽Universal Editor的基本知識。
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
+exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
+source-git-commit: 90ca80925351157e766f8400c2b1d80db6161bf0
 workflow-type: tm+mt
-source-wordcount: '1576'
-ht-degree: 42%
+source-wordcount: '1615'
+ht-degree: 41%
 
 ---
-
 
 # 存取及導覽通用編輯器 {#navigating}
 
@@ -54,7 +54,7 @@ Universal Editor 支援在任意實作中編輯任何方面的內容，以便提
 
 1. 登入通用編輯器。 您需要Adobe ID才能登入，[才能存取通用編輯器。](/help/implementing/universal-editor/getting-started.md#request-access)
 
-1. 登入後，請在[位置列中輸入您要編輯的頁面 URL。](#location-bar)這樣一來，您就可以開始編輯內容，例如[文字內容](#text-mode)或[媒體內容](#media-mode)。
+1. 登入後，請在[位置列中輸入您要編輯的頁面 URL。](#location-bar)讓您開始編輯文字內容或媒體內容等內容。
 
 ## 了解 UI {#ui}
 
@@ -280,7 +280,7 @@ Universal Editor提供可自訂且可擴充的撰寫體驗。 如果您在工具
 
 ![「新增」圖示](assets/ue-add-component-icon.png)
 
-點選或按一下「新增」按鈕即會開啟元件的下拉選單，可用於[新增到選取的容器。](#adding-components)
+點選或按一下「新增」按鈕即會開啟元件的下拉選單，可用於[新增到選取的容器。](/help/sites-cloud/authoring/universal-editor/authoring.md#adding-components)
 
 ![新增內容功能表](assets/add-context-menu.png)
 
@@ -288,13 +288,21 @@ Universal Editor提供可自訂且可擴充的撰寫體驗。 如果您在工具
 >
 >使用快速鍵`a`將元件新增到選取的容器元件中。
 
+##### 複製 {#duplicate}
+
+如果您在內容樹狀結構或編輯器中選取容器元件內的元件，屬性邊欄中會顯示重複選項。
+
+![圖示重複](assets/duplicate.png)
+
+點選或按一下重複按鈕[會重複選取的元件。](/help/sites-cloud/authoring/universal-editor/authoring.md#duplicating-components)
+
 ##### 刪除 {#delete}
 
 如果在內容樹狀結構或編輯器中選取容器元件內的元件，屬性邊欄會顯示刪除選項。
 
 ![「刪除」圖示](assets/ue-delete-component-icon.png)
 
-點選或按一下刪除按鈕[刪除該元件。](#deleting-components)
+點選或按一下刪除按鈕[刪除該元件。](/help/sites-cloud/authoring/universal-editor/authoring.md#deleting-components)
 
 >[!TIP]
 >
