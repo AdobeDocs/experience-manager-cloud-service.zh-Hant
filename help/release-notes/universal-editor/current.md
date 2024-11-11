@@ -7,7 +7,7 @@ exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
 source-git-commit: 7ace83e0df1d917c359f07a806da638739b4a4a6
 workflow-type: tm+mt
 source-wordcount: '151'
-ht-degree: 0%
+ht-degree: 12%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 >[!TIP]
 >
->如需Adobe Experience Manager as a Cloud Service目前的發行說明，請參閱[此頁面。](/help/release-notes/release-notes-cloud/release-notes-current.md)
+>如需有關 Adobe Experience Manager as a Cloud Service 的最新發行說明，請參閱[此頁面](/help/release-notes/release-notes-cloud/release-notes-current.md)。
 
 ## 新增功能 {#what-is-new}
 
