@@ -5,9 +5,9 @@ exl-id: 05b9e51f-467e-4c8e-baea-b1cf832597cd
 feature: Release Information
 role: Admin
 source-git-commit: 45d0d96e686d4e6c4d6cf96a8897533701665c64
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '345'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 89%
 * [功能發行以可預測的每月頻率進行，並專注於新功能和產品創新。](/help/release-notes/release-notes-cloud/release-notes-current.md)
 * [維護發行會時常進行，並專注於安全性更新、錯誤修正和效能增強。](/help/release-notes/maintenance/latest.md)這可確保 [!DNL Adobe Experience Manager] as a Cloud Service 始終保持最新狀態並包含任何關鍵修正。
 
-除了創新的速度，[!DNL Adobe Experience Manager] as a Cloud Service 還提供了靈活性，可以在功能發行到生產環境之前提前整整一個月預覽即將推出的功能。這可讓您在自己的自訂環境中測試功能，並提前培訓/準備內部使用者，以評估即將發行的版本對其組織的影響。 如果您有 AEM 附加元件，您可以通過在[計畫設定](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)中選取解決方案來確保此附加元件也得到更新。
+除了創新的速度，[!DNL Adobe Experience Manager] as a Cloud Service 還提供了靈活性，可以在功能發行到生產環境之前提前整整一個月預覽即將推出的功能。這樣可讓您事先在自己的自訂環境中測試功能以及對內部使用者提供訓練/準備，以評估即將發行的版本對組織的影響。如果您有 AEM 附加元件，您可以通過在[計畫設定](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)中選取解決方案來確保此附加元件也得到更新。
 
 >[!NOTE]
 >
@@ -35,7 +35,7 @@ ht-degree: 89%
 
 要準備發行：
 
-1. 標示您的行事曆：檢查 [Experience Manager 發行藍圖](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap#aem-as-cloud-service)上每月發行的重要日期，並標示您的行事曆，為關鍵活動做好籌備以準備發行。
+1. 標示您的行事曆：檢查 [Experience Manager 發行藍圖](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap#aem-as-cloud-service)上每月發行的重要日期，並標示您的行事曆，為關鍵活動做好籌備以準備發行。
 1. 檢閱發行說明：閱讀[目前的發行說明](/help/release-notes/release-notes-cloud/release-notes-current.md)，熟悉發行和發行前功能。
 1. 存取並試用新功能：在您的非生產環境中啟用[發行前管道](/help/release-notes/prerelease.md)，並開始試著在您的自訂環境中評估的功能。
 1. 訓練您的使用者：使用文件和 Experience League 資源讓使用者快速熟悉新功能。

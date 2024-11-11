@@ -6,9 +6,9 @@ exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
 source-git-commit: 9bb2d38feea2690bc112611d429dad22e7bcd278
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1514'
-ht-degree: 55%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 55%
 
 ## 發行日期 {#release-date}
 
-[!DNL Adobe Experience Manager]作為[!DNL Cloud Service]目前功能版本(2024.10.0)的發行日期是2024年10月31日。 下一個功能版本(2024.11.0)計畫於2024年11月21日發行。
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 最新功能版本 (2024.10.0) 的發行日期為 2024 年 10 月 31 日。下一個功能版本 (2024.11.0) 規劃於 2024 年 11 月 21 日發行。
 
 ## 維護版本發行說明 {#maintenance}
 
@@ -44,9 +44,9 @@ Have a look at the October 2024 Release Overview video for a summary of the feat
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
-**現代化頁面事件**
+**現代化的頁面事件**
 
-下列AEM Sites頁面事件現在可作為基於AEM as a Cloud Service事件平台的外部消耗性事件使用。 事件可透過Adobe I/O處理，以與外部程式互動。
+以下 AEM Sites 頁面事件現在可作為以 AEM as a Cloud Service 事件平台為基礎的外部可使用事件。這些事件可以透過 Adobe I/O 處理，以便與外部程序互動。
 * 頁面已發佈
 * 頁面已取消發佈
 * 頁面已刪除
@@ -57,9 +57,9 @@ Have a look at the October 2024 Release Overview video for a summary of the feat
 
 透過 AEM 新功能「[產生變化版本](/help/generative-ai/generate-variations.md)」運用 GenAI；此功能現在可於雲端服務中存取。產生變化版本可協助您透過使用生成式 AI 來產生和擴展內容建立。請聯絡您的 Adob&#x200B;&#x200B;e 客戶團隊以考慮參與該計劃。
 
-**用於內容片段傳送的AEM REST OpenAPI**
+**用於內容片段傳送的 AEM REST OpenAPI**
 
-內容片段傳送的[AEM REST OpenAPI](/help/headless/aem-rest-openapi-content-fragment-delivery.md)現在可用於AEM as a Cloud Service。
+[用於內容片段傳送的 AEM REST OpenAPI](/help/headless/aem-rest-openapi-content-fragment-delivery.md) 現在已可用於 AEM as a Cloud Service。
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -71,31 +71,31 @@ Adobe Dynamic Media 中以 AI 產生的影片字幕，是使用人工智慧來�
 
 若要在您的 Dynamic Media 帳戶搶先體驗 AI 產生的字幕支援，請[建立並提交 Adobe 客戶支援案例](/help/assets/dynamic-media/video.md##enable-dash)。
 
-### 使用 Assets 檢視的新功能 {#assets-view-new-features}
+### 資產檢視的新功能 {#assets-view-new-features}
 
 **排程報告**
 
-現在可以根據週期排程或在未來日期在Assets檢視中自動產生報表，減少發掘資料導向深入分析的工作。
+現在起，可以按照定期排程或在未來的日期，在資產檢視中自動產生報告，從而減少發掘資料導向深入解析所需的工作量。
 
-![排程報告 — ](/help/assets/assets/scheduled-reports-tab.png)
+![排程報告-](/help/assets/assets/scheduled-reports-tab.png)
 
-### 全新的 Content Hub 功能 {#content-hub-new-features}
+### Content Hub 的新功能 {#content-hub-new-features}
 
-已授權資產的&#x200B;**數位版權管理**
+**授權資產的 Digital Rights Management**
 
-組織現在可以利用DRM為Content Hub的使用者授權資產，提高授權規範並儘可能降低與授權條款共用資產的風險，這要求使用者必須先檢閱並接受授權條款，才能開始下載授權資產。 如需詳細資訊，請參閱[在Content Hub上管理授權的資產](/help/assets/manage-licensed-assets-on-content-hub.md)。
+組織現在可以利用 Content Hub 使用者授權資產的 DRM，要求使用者在開始下載授權資產前檢閱並接受授權條款，以提高授權合規性，且將具有授權條款之資產的共用風險降至最低。如需詳細資訊，請參閱[管理 Content Hub 上的授權資產](/help/assets/manage-licensed-assets-on-content-hub.md)。
 
-![下載多重授權](/help/assets/assets/download-multiple-license.png)
+![下載多個授權](/help/assets/assets/download-multiple-license.png)
 
-**資產卡中繼資料組態**
+**資產卡片中繼資料設定**
 
-Content Hub現在可讓您設定關鍵中繼資料欄位，以顯示在資產卡上，最多6個欄位。 如需詳細資訊，請參閱[設定Content Hub](/help/assets/configure-content-hub-ui-options.md#asset-card)中的資產卡一節。
+現在起，Content Hub 可讓您設定需要在資產卡片上顯示的重要中繼資料欄位，最多可設定 6 個欄位。如需詳細資訊，請參閱[設定 Content Hub](/help/assets/configure-content-hub-ui-options.md#asset-card) 中的「資產卡片」區段。
 
-資產卡上的![金鑰中繼資料](/help/assets/assets/asset-card-key-metadata.png)
+![資產卡片上的重要中繼資料](/help/assets/assets/asset-card-key-metadata.png)
 
-**設定過期資產的可見度和下載**
+**設定已到期之資產的可見度與下載操作**
 
-管理員現在可以控制是否需要在 Content Hub 顯示過期資產。如果過期資產已顯示，則也可定義使用者是否可以下載資產。 如需詳細資訊，請參閱[設定Content Hub](/help/assets/configure-content-hub-ui-options.md#expired-assets-content-hub)中的「過期的Assets」一節。
+管理員現在可以控制是否需要在 Content Hub 上顯示已到期的資產。如果顯示已到期的資產，管理員還可以定義使用者是否可以下載這些資產。如需詳細資訊，請參閱[設定 Content Hub](/help/assets/configure-content-hub-ui-options.md#expired-assets-content-hub) 中的「已到期的資產」區段。
 
 ![Content Hub 上的過期資產](/help/assets/assets/expired-assets-content-hub.png)
 
@@ -139,45 +139,45 @@ AEM Forms 搶先體驗計劃為您提供獨一無二的機會，獲得先進創�
 
 ### 錯誤修正 {#bug-fixes-cif}
 
-* 修正UI測試，使其可正確搭配核心CIF元件運作。
-* 已解決類別URL格式在雲端例項中無法如預期運作的問題。
+* 修正使用者介面測試，以便與核心 CIF 元件正常搭配運作。
+* 解決類別 URL 格式在雲端執行個體中未如預期運作的問題。
 
-## [!DNL Experience Manager] as a [!DNL Cloud Service] 基礎 {#foundation}
+## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
-### 控制表單提交的設定 {#configuration-submissions}
+### 表單提交的控制設定 {#configuration-submissions}
 
-為了控制Coral或Foundation表單在特定位置的表單提交，AEM已引入新的設定： `com.adobe.granite.ui.components.FormRestrict`。 此設定包含兩個欄位：
+為了控制特定位置的 Coral 或 Foundation 表單提交，AEM 引進了一個新設定：`com.adobe.granite.ui.components.FormRestrict`。此項設定由兩個欄位組成：
 
 1. **新增允許的路徑**：指定允許表單動作的路徑。
-1. **限制行為**：決定限制路徑（未包含在允許清單中的路徑）的行為。 您可以選擇兩個選項：
-   * **快顯視窗** （預設）：顯示快顯通知。
-   * **防止**：封鎖表單提交。
+1. **限制行為**：決定限制路徑 (未包含在允許清單中之路徑) 的行為。您可以在以下兩個選項中進行選擇：
+   * **快顯視窗** (預設)：顯示快顯視窗通知。
+   * **阻擋**：封鎖表單提交。
 
 >[!NOTE]
 >
->位於`/apps`、`/libs`、`/mnt/overlay`和`/mnt/override`下的所有Coral或Foundation表單都不支援此設定。
+>位於 `/apps`、`/libs`、`/mnt/overlay` 和 `/mnt/override` 下的所有 Coral 或 Foundation 表單，均不支援此設定。
 
-### 具有進階網路選項的自助式記錄檔轉送 {#log-forwarding}
+### 具備進階網路選項的自助式記錄轉送功能 {#log-forwarding}
 
-雖然可以從Cloud Manager下載AEM (包括Apache/Dispatcher)和CDN記錄，但許多組織認為將這些記錄串流到偏好的記錄目的地會很有幫助。 AEM現在支援[記錄轉送](/help/implementing/developing/introduction/log-forwarding.md)至Azure Blob Storage、Datadog、HTTPS、Elasticsearch （和OpenSearch）和Splunk。 AEM記錄檔可選擇透過進階網路設定進行轉送，例如使用專用IP位址。
+雖然可以從 Cloud Manager 下載 AEM (包括 Apache/Dispatcher) 和內容傳遞網路記錄，但許多組織發現將這些記錄串流至偏好的記錄目標是有益處的。AEM 現在支援將[記錄轉送](/help/implementing/developing/introduction/log-forwarding.md)到 Azure Blob 儲存體、Datadog、HTTPS、Elasticsearch (和 OpenSearch) 以及 Splunk。可選擇透過進階網路設定轉送 AEM 記錄，例如使用專屬的 IP 位址。
 
-此功能由使用者以自助方式設定，並使用[設定管道](/help/operations/config-pipeline.md)進行部署。
+此功能由使用者以自助方式設定，並透過[設定管道](/help/operations/config-pipeline.md)進行部署。
 
-### 適用於企業使用者的管道免費URL重新導向 {#pipeline-free-redirects}
+### 適合商業使用者的無管道 URL 重新導向 {#pipeline-free-redirects}
 
-當網頁已停止或移動，或其他情況時，瀏覽器端重新導向相當實用。 透過[沒有管道的URL重新導向](/help/implementing/dispatcher/pipeline-free-url-redirects.md)，您可以將Apache重寫對應檔案放置在AEM發佈位置，該檔案會自動載入 — 不需要將檔案認可到原始檔控制或起始Cloud Manager管道。
+網頁遭撤下、移動或發生其他情況時，瀏覽器端的重新導向就非常實用。透過[無管道 URL 重新導向](/help/implementing/dispatcher/pipeline-free-url-redirects.md)，您可以將 Apache 重心寫入對應檔案放置在 AEM 發佈位置，該檔案會在其中自動載入，無需將其提交到來源控制或啟動 Cloud Manager 管道。
 
-發佈重寫檔案的選項包括將其上傳為資產、使用ACS Commons Rewrite Map Manager，或與自訂使用者介面互動。
+發佈重新寫入檔案的選項包括將其作為資產上傳、使用 ACS Commons Rewrite Map Manager，或與自訂使用者介面互動。
 
-### RDE的設定管道 {#config-pipeline-rdes}
+### 設定 RDE 的管道 {#config-pipeline-rdes}
 
-快速開發環境是一款強大的工具，可在雲端環境中快速部署和測試程式碼和設定。 RDE現在支援[同步設定YAML檔案](/help/implementing/developing/introduction/rapid-development-environments.md#deploy-config-pipeline)，包括流量篩選規則、要求/回應轉換、記錄轉送及其他設定選項等CDN設定。 [如需詳細資訊，請參閱支援的組態選項完整清單](/help/operations/config-pipeline.md)。
+快速開發環境是一項強大的工具，用來在雲端環境中快速部署及測試程式碼與設定。RDE 現在支援[同步設定 YAML 檔案](/help/implementing/developing/introduction/rapid-development-environments.md#deploy-config-pipeline)，包括流量篩選規則和請求/回應轉換等內容傳遞網路設定，以及記錄轉送和其他設定選項。如需更多詳細資訊，請參閱支援之設定選項的[完整清單](/help/operations/config-pipeline.md)。
 
-### 新的產品設定檔 {#new-product-profiles}
+### 全新產品設定檔 {#new-product-profiles}
 
-建立新的AEM環境時，產品設定檔會自動出現在Adobe Admin Console中，讓管理員指派存取權給授權的解決方案和功能。
+建立新的 AEM 環境時，產品設定檔會自動顯示在 Adobe Admin Console 中，使管理員能夠指派對授權解決方案與功能的存取權。
 
-新環境現在包含一組更新的產品設定檔，使其與未來的功能相容，包括在Adobe Developer Console中產生API認證。 現有環境將能夠更新其在未來版本中的產品設定檔。 [了解更多](/help/onboarding/aem-cs-team-product-profiles.md)。
+現在起，新的環境包含一組更新的產品設定檔，使其能與未來的功能相容，包括在 Adobe Developer Console 中產生 API 認證。現有環境將能夠在未來版本中更新其產品設定檔。[了解更多](/help/onboarding/aem-cs-team-product-profiles.md)。
 
 ### 全新 AEM Developer Console (公共 Beta 版) {#aem-developer-console-beta}
 
@@ -189,7 +189,7 @@ AEM Forms 搶先體驗計劃為您提供獨一無二的機會，獲得先進創�
 
 ## [!DNL Experience Manager] Guides {#guides}
 
-您可以在[這裡](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2410-release/2410-0-release/whats-new-2024-10-0)找到最新版 Adobe Experience Manager Guides 的新功能和增強功能完整清單。
+您可以在[這裡](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2410-release/2410-0-release/whats-new-2024-10-0)找到最新版 Adobe Experience Manager Guides 的新功能和增強功能完整清單。
 
 ## Cloud Manager {#cloud-manager}
 
