@@ -5,7 +5,7 @@ exl-id: 3f3d7631-2bc9-440b-9888-50f6529bcd42
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f64a551bc18b53d0026736ece2a44e48cd0cfb4c
+source-git-commit: 767f6609b3f585630d45aee0d61483dbe66f66cf
 workflow-type: tm+mt
 source-wordcount: '1661'
 ht-degree: 39%
@@ -13,9 +13,9 @@ ht-degree: 39%
 ---
 
 
-# 導覽 Cloud Manger UI {#navigation}
+# 導覽Cloud Manager UI {#navigation}
 
-了解 Cloud Manager UI 的組織方式以及如何導覽此 UI 來管理您的方案和環境。
+了解 Cloud Manager UI 的組織方式以及如何導覽以管理您的方案和環境。
 
 Cloud Manager UI 主要由兩個圖形介面組成：
 
