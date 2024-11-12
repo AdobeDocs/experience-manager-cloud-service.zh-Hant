@@ -5,7 +5,7 @@ exl-id: 77264562-e76a-40c8-9878-847a8878fb8e
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 6e13244d7ba7bb6e7a51525b66274427fe21d664
+source-git-commit: dbe4cd619f4dc680e6fc4826f6a4fea92bab9707
 workflow-type: tm+mt
 source-wordcount: '477'
 ht-degree: 1%
@@ -40,7 +40,7 @@ ht-degree: 1%
 1. 從精靈的第一階段，您可以：
 
    * 選取您要用來建立新頁面的範本，然後選取&#x200B;**下一步**&#x200B;以繼續，或選取&#x200B;**取消**&#x200B;以中止程式。
-   * [頁面編輯器](/help/sites-cloud/authoring/page-editor/introduction.md)以及[通用編輯器](/help/edge/wysiwyg-authoring/templates.md)都支援範本。
+   * [頁面編輯器](/help/sites-cloud/authoring/page-editor/introduction.md)以及[通用編輯器](/help/sites-cloud/authoring/universal-editor/templates.md)都支援範本。
 
    ![選取新頁面的範本](/help/sites-cloud/authoring/assets/organizing-create-page-template.png)
 

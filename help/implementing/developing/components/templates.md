@@ -1,46 +1,60 @@
 ---
-title: 頁面範本
-description: 建立作為新頁面基礎的頁面時，會使用頁面範本
+title: 可編輯的範本
+description: 瞭解在建立頁面、定義其初始內容、結構化內容、編寫原則和版面配置時，如何使用可編輯範本。
 exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
+source-git-commit: 33eb71b2828314ee2c75206ef7034313e2638360
 workflow-type: tm+mt
-source-wordcount: '3268'
+source-wordcount: '3443'
 ht-degree: 1%
 
 ---
 
-# 頁面範本 {#page-templates}
+# 可編輯的範本 {#editable-templates}
 
-建立頁面時，您需要選取範本。 頁面範本會用作新頁面的基礎。 範本會定義結果頁面的結構、任何初始內容以及可以使用的元件（設計屬性）。 這具備數個優點：
+瞭解在建立頁面、定義其初始內容、結構化內容、編寫原則和版面配置時，如何使用可編輯範本。
 
-* 頁面範本可讓專業作者[建立及編輯範本](/help/sites-cloud/authoring/page-editor/templates.md)。
-   * 這類特殊作者稱為&#x200B;**範本作者**
-   * 範本作者必須是`template-authors`群組的成員。
-* 頁面範本會保留與任何由其建立之頁面的動態連線。 這可確保對範本所做的任何變更都會反映在頁面本身中。
-* 頁面範本讓頁面元件變得更通用，以便無需自訂即可使用核心頁面元件。
+## 概觀 {#overview}
 
-使用「頁面範本」，建立頁面的片段會隔離在元件中。 您可以在UI中設定必要的元件組合，因此不需要為每個頁面變數開發新的頁面元件。
+建立頁面時，您需要選取範本。 頁面範本會用作新頁面的基礎。 範本可以定義結果頁面的結構、任何初始內容以及可以使用的元件（設計屬性）。
+
+* 可編輯的範本可讓作者建立和使用範本。
+* 可編輯的範本可用來建立可透過兩者編輯的頁面
+   * [頁面編輯器](/help/sites-cloud/authoring/page-editor/templates.md)和
+   * [通用編輯器](/help/sites-cloud/authoring/universal-editor/templates.md)
+
+用來建立可透過通用編輯器編輯之頁面的頁面範本使用可編輯範本功能的有限子集。 因此，本檔案的其餘部分側重於用於建立可使用頁面編輯器編輯的頁面的可編輯範本。
+
+## 使用頁面編輯器編輯的可編輯範本和頁面 {#page-editor}
+
+建立範本以建立可使用「頁面編輯器」編輯的頁面時，通常會識別專門的作者。
+
+* 這類特殊作者稱為&#x200B;**範本作者**
+* 範本作者必須是`template-authors`群組的成員。
+* 可編輯的範本會保留與任何建立頁面的動態連線。 這可確保對範本所做的任何變更都會反映在頁面本身中。
+* 可編輯的範本讓頁面元件變得更通用，以便無需自訂即可使用核心頁面元件。
+
+使用可編輯的範本，建立頁面的片段會隔離在元件中。 您可以在UI中設定必要的元件組合，因此不需要為每個頁面變數開發新的頁面元件。
 
 本檔案：
 
-* 提供建立頁面範本的概觀
+* 提供建立可編輯範本的概觀
 * 說明建立可編輯範本所需的管理員/開發人員工作
 * 說明可編輯範本的技術基礎
 * 說明AEM如何評估範本的可用性
 
 >[!NOTE]
 >
->本檔案假設您已熟悉建立和編輯範本。 請參閱撰寫檔案[建立頁面範本](/help/sites-cloud/authoring/page-editor/templates.md)，其中詳細列出範本作者所看到的可編輯範本功能。
+>本檔案假設您已熟悉建立和編輯範本。 請參閱編寫檔案[使用頁面編輯器建立可編輯頁面的範本](/help/sites-cloud/authoring/page-editor/templates.md)，其中詳細說明了範本作者所看到的可編輯範本功能。
 
 >[!TIP]
 >
->[WKND教學課程](/help/implementing/developing/introduction/develop-wknd-tutorial.md)會透過實作範例深入探討如何使用頁面範本，對於瞭解如何在新的專案中設定範本非常有用
+>[WKND教學課程](/help/implementing/developing/introduction/develop-wknd-tutorial.md)會透過實作範例深入探討如何使用可編輯的範本，對於瞭解如何在新的專案中設定範本非常有用
 
-## 建立新範本 {#creating-a-new-template}
+## 建立新的可編輯範本 {#creating-a-new-template}
 
-建立頁面範本主要是由範本作者使用[範本主控台和範本編輯器](/help/sites-cloud/authoring/page-editor/templates.md)完成。 本節提供此程式的概述，並接著說明在技術層級進行的工作。
+建立可編輯的範本主要是由範本作者使用[範本主控台和範本編輯器](/help/sites-cloud/authoring/page-editor/templates.md)完成。 本節提供此程式的概述，並接著說明在技術層級進行的工作。
 
 建立可編輯的範本時，您可以：
 
@@ -60,7 +74,7 @@ ht-degree: 1%
    * 如果您希望頁面作者能夠新增和移除元件，請新增段落系統至範本。
    * 您可以解鎖元件，然後再將其鎖定，以便定義初始內容。
 
-   如需範本作者如何定義結構的詳細資訊，請參閱[建立頁面範本](/help/sites-cloud/authoring/page-editor/templates.md#editing-a-template-structure-template-author)。
+   如需範本作者如何定義結構的詳細資訊，請參閱[建立可使用頁面編輯器編輯的頁面的範本](/help/sites-cloud/authoring/page-editor/templates.md#editing-a-template-structure-template-author)。
 
    如需結構的技術細節，請參閱本檔案中的[結構](#structure)。
 
@@ -72,7 +86,7 @@ ht-degree: 1%
 
    * 這些適用於範本（以及使用範本建立的頁面）。
 
-   如需範本作者如何定義原則的詳細資訊，請參閱[建立頁面範本](/help/sites-cloud/authoring/page-editor/templates.md#editing-a-template-structure-template-author)。
+   如需範本作者如何定義原則的詳細資訊，請參閱[建立可使用頁面編輯器編輯的頁面的範本](/help/sites-cloud/authoring/page-editor/templates.md#editing-a-template-structure-template-author)。
 
    如需原則的技術詳細資訊，請參閱本檔案中的[內容原則](#content-policies)。
 
@@ -81,7 +95,7 @@ ht-degree: 1%
    * 初始內容定義首次根據範本建立頁面時顯示的內容。
    * 然後，頁面作者可以編輯初始內容。
 
-   如需範本作者如何定義結構的詳細資訊，請參閱[建立頁面範本](/help/sites-cloud/authoring/page-editor/templates.md#editing-a-template-initial-content-author)。
+   如需範本作者如何定義結構的詳細資訊，請參閱[建立可使用頁面編輯器編輯的頁面的範本](/help/sites-cloud/authoring/page-editor/templates.md#editing-a-template-initial-content-author)。
 
    如需初始內容的技術細節，請參閱本檔案中的[初始內容](#initial-content)。
 
@@ -90,7 +104,7 @@ ht-degree: 1%
    * 您可以為一系列裝置定義範本配置。
    * 範本的回應式版面運作方式與頁面製作相同。
 
-   如需範本作者如何定義範本配置的詳細資訊，請參閱[建立頁面範本](/help/sites-cloud/authoring/page-editor/templates.md#editing-a-template-layout-template-author)。
+   如需範本作者如何定義範本配置的詳細資訊，請參閱[建立可使用頁面編輯器編輯的頁面的範本](/help/sites-cloud/authoring/page-editor/templates.md#editing-a-template-layout-template-author)。
 
    如需範本配置的技術詳細資訊，請參閱本檔案中的[配置](#layout)。
 
@@ -99,7 +113,7 @@ ht-degree: 1%
    * 您可以啟用或停用範本，讓頁面作者可以使用或無法使用此範本。
    * 範本可以供某些頁面分支使用或無法使用。
 
-   如需範本作者如何啟用範本的詳細資訊，請參閱[建立頁面範本](/help/sites-cloud/authoring/page-editor/templates.md#enabling-and-allowing-a-template-template-author)。
+   如需範本作者如何啟用範本的詳細資訊，請參閱[範本以建立可使用頁面編輯器編輯的頁面](/help/sites-cloud/authoring/page-editor/templates.md#enabling-and-allowing-a-template-template-author)。
 
    如需啟用範本的技術詳細資訊，請參閱本檔案中的[啟用和允許我們使用範本](#enabling-and-allowing-a-template-for-use)e
 
@@ -129,8 +143,6 @@ ht-degree: 1%
 >所有範例內容頁面都包含`cq.shared`，因此任何以這些頁面為基礎的內容都會自動包含`cq.shared`。 但是，如果您決定從頭開始建立自己的內容頁面，而不根據範例內容，則必須確定包括`cq.shared`名稱空間。
 >
 >如需進一步資訊，請參閱[使用使用者端資料庫](/help/implementing/developing/introduction/clientlibs.md)。
-
-
 
 ## 範本資料夾 {#template-folders}
 
@@ -357,7 +369,7 @@ When creating an editable template, the value is copied from the template type t
 
 如果您已建立可作為其他範本基礎的範本，則可以複製此範本作為範本型別。
 
-1. 建立範本，就像建立任何頁面範本一樣。 請參閱[建立頁面範本](/help/sites-cloud/authoring/page-editor/templates.md#creating-a-new-template-template-author)。 這會作為範本型別的基礎。
+1. 建立範本，就像建立任何頁面範本一樣。 請參閱[範本，以建立可使用頁面編輯器](/help/sites-cloud/authoring/page-editor/templates.md#creating-a-new-template-template-author)編輯的頁面。 這會作為範本型別的基礎。
 1. 使用CRXDE Lite，將建立的範本從`templates`節點複製到[範本資料夾](#template-folders)下的`template-types`節點。
 1. 從[範本資料夾](#template-folders)下的`templates`節點中刪除範本。
 1. 在`template-types`節點下的範本復本中，從所有`jcr:content`節點刪除所有`cq:template`和`cq:templateType`屬性。
@@ -455,9 +467,7 @@ GITHUB上的程式碼
 
 ### 版面配置 {#layout}
 
-當[編輯範本時，您可以定義配置](/help/sites-cloud/authoring/page-editor/templates.md)，這會使用[標準回應式配置](/help/sites-cloud/authoring/page-editor/responsive-layout.md)。
-
-<!-- that can also be [configured](/help/sites-administering/configuring-responsive-layout.md). -->
+當[編輯範本時，您可以定義配置](/help/sites-cloud/authoring/page-editor/templates.md)，這會使用[標準回應式配置，](/help/sites-cloud/administering/responsive-layout.md)，內容作者可以在頁面上對其進行[設定。](/help/sites-cloud/authoring/page-editor/responsive-layout.md)
 
 ### 內容原則 {#content-policies}
 

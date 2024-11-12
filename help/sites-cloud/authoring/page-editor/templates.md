@@ -1,27 +1,31 @@
 ---
-title: 建立頁面範本
-description: 範本會定義結果頁面的結構，且使用範本編輯器，建立和維護範本不再是開發人員專屬的工作
+title: 建立可透過頁面編輯器編輯的頁面的範本
+description: 您可以使用範本編輯器建立範本，內容作者可使用該範本建立可透過「頁面編輯器」編輯的頁面。
 exl-id: 4c9dbf26-5852-45ab-b521-9f051c153b2e
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
+source-git-commit: 41abdfcf142a3f39854978c5acf0e5d28872b3c4
 workflow-type: tm+mt
-source-wordcount: '4524'
-ht-degree: 9%
+source-wordcount: '4415'
+ht-degree: 7%
 
 ---
 
-# 建立頁面範本 {#creating-page-templates}
 
-建立頁面時，您必須選取範本，作為建立新頁面的基礎。 範本會定義結果頁面的結構、任何初始內容以及可以使用的元件。
+# 建立可透過頁面編輯器編輯的頁面的範本 {#creating-page-templates}
 
-使用范 **本編輯器**，建立和維護範本不再是開發人員專屬的工作。也可以涉及一種稱為模板作 **者的權**&#x200B;力用戶。開發人員仍需要設定環境、建立用戶端程式庫和建立要使用的元件，但是當這些基本功能準備就緒後，範本作者就可以彈性地建立和設定範本，而不需要開發專案。****
+您可以使用範本編輯器建立範本，內容作者可使用該範本建立可透過「頁面編輯器」編輯的頁面。
 
-**範本主控台**&#x200B;允許範本作者：
+## 概觀 {#overview}
 
-* 建立新範本或複製現有範本。
-* 管理範本的生命週期。
+作者建立頁面時，必須選取範本，作為新頁面的基礎。 範本會定義結果頁面的結構、任何初始內容，以及在頁面編輯器中編輯頁面時可使用的元件。
+
+>[!NOTE]
+>
+>[範本也可用於建立可透過通用編輯器編輯的頁面。](/help/sites-cloud/authoring/universal-editor/templates.md)
+
+使用&#x200B;**範本編輯器**，建立和維護範本不是開發人員專屬的工作。 稱為&#x200B;**範本作者**&#x200B;的超級使用者型別可以建立範本。 開發人員必須設定環境、建立使用者端程式庫和建立要使用的元件，但是當這些基本功能準備就緒後，**範本作者**&#x200B;就可以彈性地建立和設定範本，而不需要開發人員介入。
 
 **範本編輯器**&#x200B;允許範本作者：
 
@@ -29,9 +33,9 @@ ht-degree: 9%
 * 預先設定元件。
 * 定義在使用範本建立的頁面上可編輯哪些元件。
 
-本檔案說明&#x200B;**範本作者**&#x200B;如何使用範本主控台和編輯器來建立和管理可編輯的範本。
+本檔案說明&#x200B;**範本作者**&#x200B;如何使用&#x200B;**範本編輯器**&#x200B;來建立和管理可編輯的範本。
 
-如需技術層面可編輯範本如何運作的詳細資訊，請參閱開發人員檔案[頁面範本](/help/implementing/developing/components/templates.md)以取得詳細資訊。
+如需技術層面可編輯範本如何運作的詳細資訊，請參閱開發人員檔案[可編輯範本](/help/implementing/developing/components/templates.md)以取得詳細資訊。
 
 >[!NOTE]
 >
@@ -39,15 +43,15 @@ ht-degree: 9%
 
 ## 在您開始之前 {#before-you-start}
 
+開始之前，請務必考慮到建立範本需要共同作業。 因此，每個工作都會顯示[角色](#roles)。 這不會影響您實際使用範本來建立頁面的方式，但會影響頁面與其範本的關聯方式。
+
 >[!NOTE]
 >
 >管理員必須在&#x200B;**設定瀏覽器**&#x200B;中設定範本資料夾，並套用適當的許可權，範本作者才能在該資料夾中建立範本。
 
-開始之前，請務必考慮到建立範本需要共同作業。 因此，每個工作都會顯示[角色](#roles)。 這不會影響您實際使用範本來建立頁面的方式，但會影響頁面與其範本的關聯方式。
-
 ### 角色 {#roles}
 
-使用「模板控制台」和「模 **板編輯器** 」建立新模板時 **** ，需要在以下角色之間協作：
+建立新範本需要下列角色之間的共同作業：
 
 * **管理員**：
    * 建立範本的新資料夾需要`admin`許可權。
@@ -72,9 +76,6 @@ ht-degree: 9%
 
 建立可編輯的範本時，您可以：
 
-* 使用&#x200B;**範本**&#x200B;主控台。 這可在&#x200B;**工具**&#x200B;主控台的&#x200B;**一般**&#x200B;區段中取得。
-   * 或直接在： `https://<host>:<port>/libs/wcm/core/content/sites/templates.html/conf`
-* 如有必要，可以[為範本](#creating-a-template-folder-admin)建立資料夾
 * [建立新的範本](#creating-a-new-template-template-author)，一開始會是空的
 * [必要時為範本定義其他屬性](#defining-template-properties-template-author)
 * [編輯範本](#editing-templates-template-authors)以定義：
@@ -92,7 +93,7 @@ ht-degree: 9%
 
 >[!TIP]
 >
->切勿在範本中輸入任何必須國際化的資訊。<!-- Never enter any information that must be [internationalized](/help/sites-developing/i18n.md) into a template.-->
+>切勿在範本中輸入任何必須是[國際化](/help/implementing/developing/extending/i18n/dev.md)的資訊。
 >
 >對於必須本地化的範本元素（例如頁首和頁尾），請使用核心元件的[本地化功能。](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html)
 
@@ -102,7 +103,7 @@ ht-degree: 9%
 
 ### 建立新範本 — 範本作者 {#creating-a-new-template-template-author}
 
-1. 開啟&#x200B;**範本主控台** （透過&#x200B;**工具>** **一般**），然後導覽至所需的資料夾。
+1. 開啟&#x200B;**[範本主控台](/help/sites-cloud/administering/templates-console.md)**，然後導覽至所需的資料夾。
 
    >[!NOTE]
    >
@@ -129,7 +130,7 @@ ht-degree: 9%
    >
    >建立新範本時，會在主控台中將其標示為&#x200B;**草稿**，這表示頁面作者還不能使用此範本。
 
->[!NOTE]
+>[!TIP]
 >
 >範本是簡化頁面建立工作流程的強大工具。 然而，太多的範本會讓作者不知所措，並使頁面建立變得混亂。 一個好的經驗法則是將範本數保持在100以下。
 >
@@ -148,15 +149,7 @@ ht-degree: 9%
 * 說明
    * 選用的說明，可提供範本及其使用方式的詳細資訊，例如&#x200B;**建立頁面**&#x200B;精靈中顯示的說明。
 
-若要檢視和/或編輯屬性：
-
-1. 在&#x200B;**範本主控台**&#x200B;中，選取範本。
-1. 從工 **具欄中選擇** 「查看屬性」(View Properties)或快速選項以開啟對話框。
-1. 您現在可以檢視或編輯範本屬性。
-
->[!NOTE]
->
->主控台中會指出範本的狀態（草稿、已啟用或已停用）。
+建立範本後，請使用&#x200B;**[範本主控台](/help/sites-cloud/administering/templates-console.md)**&#x200B;檢視或編輯範本屬性。
 
 #### 範本縮圖影像 {#template-thumbnail-image}
 
@@ -181,17 +174,11 @@ ht-degree: 9%
 
 可以啟用或停用範本，使其在&#x200B;**建立頁面**&#x200B;精靈中可用或無法使用。
 
+使用&#x200B;**[範本主控台](/help/sites-cloud/administering/templates-console.md)**&#x200B;來啟用或停用範本。
+
 >[!CAUTION]
 >
 >啟用範本後，當範本作者開始進一步更新範本時，會顯示警告。 這是為了通知使用者可能會參考範本，所以任何變更都可能影響參考範本的頁面。
-
-1. 在&#x200B;**範本主控台**&#x200B;中，選取範本。
-1. 從工具列選取&#x200B;**啟用**&#x200B;或&#x200B;**停用**，然後在確認對話方塊中再次選取。
-1. 您現在可以在[建立頁面](/help/sites-cloud/authoring/sites-console/creating-pages.md#creating-a-new-page)時使用範本，不過您可能想要根據自己的需求[編輯範本](#editing-templates-template-authors)。
-
->[!NOTE]
->
->主控台中會指出範本的狀態（草稿、已啟用或已停用）。
 
 #### 允許範本 — 作者 {#allowing-a-template-author}
 
@@ -211,7 +198,6 @@ ht-degree: 9%
    >
    >如果&#x200B;**允許的範本**&#x200B;清單為空白，則樹狀結構會遞增，直到找到值/清單為止。
    >
-   >
    >請參閱[範本可用性](/help/implementing/developing/components/templates.md#template-availability) — 允許範本的原則保持不變。
 
 1. 按一下&#x200B;**儲存**&#x200B;以儲存頁面屬性的變更。
@@ -224,10 +210,7 @@ ht-degree: 9%
 
 由於範本在轉譯頁面時為參考狀態，因此必須發佈已完整設定的範本，才能用於發佈環境。
 
-1. 在&#x200B;**範本主控台**&#x200B;中，選取範本。
-1. 從工具列選取&#x200B;**Publish**&#x200B;以開啟精靈。
-1. 選取要同時發佈的&#x200B;**內容原則**。
-1. 從工具列選取&#x200B;**Publish**&#x200B;以完成動作。
+使用&#x200B;**[範本主控台的Publish範本。](/help/sites-cloud/administering/templates-console.md)**
 
 ## 編輯範本 — 範本作者 {#editing-templates-template-authors}
 
@@ -664,4 +647,4 @@ ht-degree: 9%
    >變更不再是草稿之範本上元件的鎖定狀態時，AEM會發出明確警告。
 
 1. [為您網站特定的範本建立您自己的資料夾](#creating-a-template-folder-admin)。
-1. 從&#x200B;**範本**&#x200B;主控台[Publish您的範本](#publishing-a-template-template-author)。
+1. 從&#x200B;**[範本主控台[Publish您的範本](#publishing-a-template-template-author)。]**(/help/sites-cloud/administering/templates-console.md)

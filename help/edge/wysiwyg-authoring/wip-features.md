@@ -4,13 +4,13 @@ description: 瞭解哪些AEM Sites功能和使用案例正在進行，並探索�
 solution: Experience Manager Sites
 feature: Edge Delivery Services
 role: User
-source-git-commit: 50421f55444f61d64cd2ecd046bd7bc5f1f859e3
+exl-id: 21745f53-a7ef-4eec-9170-b267c2f4314e
+source-git-commit: dbe4cd619f4dc680e6fc4826f6a4fea92bab9707
 workflow-type: tm+mt
 source-wordcount: '473'
 ht-degree: 4%
 
 ---
-
 
 # Edge Delivery Services的進行中網站功能 {#wip-sites-features}
 
@@ -35,7 +35,7 @@ ht-degree: 4%
 | [語言副本](/help/sites-cloud/administering/translation/overview.md) | 部分可用 | 元件會繼承內容，但繼承只能在頁面層級還原 | 通用編輯器中的[內容繼承](/help/sites-cloud/authoring/universal-editor/inheritance.md) |
 | [多網站管理](/help/sites-cloud/administering/msm/overview.md) | 部分可用 | 元件會繼承內容，但繼承只能在頁面層級還原 | 通用編輯器中的[內容繼承](/help/sites-cloud/authoring/universal-editor/inheritance.md) |
 | [啟動](/help/sites-cloud/authoring/launches/overview.md) | 部分可用 | 元件會繼承內容，但繼承只能在頁面層級還原 | 通用編輯器中的[內容繼承](/help/sites-cloud/authoring/universal-editor/inheritance.md) |
-| [頁面範本](/help/sites-cloud/authoring/page-editor/templates.md) | 即將推出！ | 從範本建立的頁面是原始範本的獨立副本。 | [將頁面範本與通用編輯器搭配使用](/help/edge/wysiwyg-authoring/templates.md) |
+| [頁面範本](/help/sites-cloud/authoring/page-editor/templates.md) | 即將推出！ | 從範本建立的頁面是原始範本的獨立副本。 | [將頁面範本與通用編輯器搭配使用](/help/sites-cloud/authoring/universal-editor/templates.md) |
 | [內容中心與目標](/help/sites-cloud/authoring/personalization/overview.md) | 無法使用 |  |  |
 | [時間扭曲](/help/sites-cloud/authoring/launches/preview.md) | 無法使用 |  |  |
 | [相關聯的內容](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#associated-content-browser) | 無法使用 |  |  |
