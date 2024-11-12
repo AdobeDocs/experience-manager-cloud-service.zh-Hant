@@ -4,9 +4,9 @@ description: 瞭解如何使用Edge Delivery Services傳遞Cloud Manager專案�
 exl-id: f33bd6f0-62fc-4ecc-b8d2-65d1f1c44d82
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 3941b7f97d434946a3cb796633f306b89e68c0a4
+source-git-commit: bb225fcb931c6e9014ab18e6efbb0620262bcd76
 workflow-type: tm+mt
-source-wordcount: '756'
+source-wordcount: '752'
 ht-degree: 10%
 
 ---
@@ -32,7 +32,7 @@ AEM as a Cloud Service中的Cloud Manager可讓您為專案啟用Edge Delivery�
 
 如果您已將Edge Delivery Services授權為Adobe Experience Manager Sites的一部分，則可以直接在Cloud Manager中使用Edge Delivery Services上線您的網站，並使用引導式自助服務體驗[上線](/help/implementing/cloud-manager/managing-code/private-repositories.md)。
 
-此外，您可以存取統一體驗來管理所有AEM屬性，同時確保關鍵工作流程的一致性。 這些功能包括網域名稱管理、SSL憑證管理和CDN對應。
+此外，您可以存取統一體驗來管理所有AEM屬性，同時確保關鍵工作流程的一致性。 這些工作流程包括網域名稱管理、SSL憑證管理和CDN對應。
 
 ## 對Edge Delivery Services使用Adobe建議路徑的好處 {#recommended-path-eds}
 
@@ -74,12 +74,13 @@ AEM as a Cloud Service中的Cloud Manager可讓您為專案啟用Edge Delivery�
 |   | 任務 | 說明 |
 | --- | --- | --- |
 | 1 | 加入產品協作頻道 | 按一下&#x200B;**立即提交請求**&#x200B;提交請求給Adobe以建立貴公司的管道。 如果頻道已存在，則會將您轉送到公司的頻道。 |
-| 2 | 完成先決條件 | 按一下&#x200B;**檢視快速入門教學課程**，會將您導向[快速入門 — 開發人員教學課程](https://www.aem.live/developer/tutorial)。 |
+| 2 | 完成先決條件 | 請參閱[檢視快速入門教學課程](https://www.aem.live/developer/tutorial)。 |
 | 3 | 新增Edge Delivery網站 | 請參閱[新增Edge Delivery網站](#eds-add-site)。 |
 | 4 | 新增網域 | 請參閱[新增自訂網域名稱](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)。 |
 | 5 | 新增 SSL 憑證 | 請參閱[新增SSL憑證](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)。 |
 | 6 | 設定Edge Delivery網站的CDN | 請參閱[新增CDN組態](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)。 |
-| 7 | 上線 | 完成上線中的最後一個步驟。 |
+| 7 | 設定推播驗證 | 請參閱[安裝程式推播驗證](/help/implementing/cloud-manager/cdn-configurations/cdn-setup-push-invalidation.md)。 |
+| 8 | 入門 | 檢視[上線檢查清單](/help/edge/docs/go-live-checklist.md)。 |
 
 >[!VIDEO](https://video.tv.adobe.com/v/3428020?learn=on)
 

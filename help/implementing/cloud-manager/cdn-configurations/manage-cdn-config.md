@@ -4,13 +4,13 @@ description: 瞭解如何使用Cloud Manager編輯和更新，或刪除Edge Deli
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
+exl-id: 2ec16c91-0195-4732-a26d-ac223e10afb9
+source-git-commit: cd15fd36b8baf8e693ae449031a51fa1febefaee
 workflow-type: tm+mt
-source-wordcount: '797'
-ht-degree: 9%
+source-wordcount: '773'
+ht-degree: 8%
 
 ---
-
 
 # 管理CDN設定 {#manage-cdn-configurations}
 
@@ -33,8 +33,6 @@ ht-degree: 9%
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織和方案。
 1. 在左側功能表的&#x200B;**服務**&#x200B;下方，按一下![社交網路圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SocialNetwork_18_N.svg) **CDN設定**。
 1. 在&#x200B;**CDN設定**&#x200B;表格中，按一下您想要更新CDN設定的資料列結尾的![更多圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)。
-
-   ![編輯CDN設定](/help/implementing/cloud-manager/assets/cdn-config-edit.png)
 
 1. 從下拉式功能表，按一下&#x200B;**編輯**。
 
@@ -61,8 +59,6 @@ ht-degree: 9%
 
 1. 在環境詳細資訊頁面上，在CDN設定群組中，按一下與您要編輯的CDN設定相對應的![更多圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)。
 
-   ![在環境詳情頁面輸入網域名稱](/help/implementing/cloud-manager/assets/cdn/environments-cdn-config.png)
-
 1. 在快顯功能表中按一下&#x200B;**編輯**。
 
 1. 在&#x200B;**編輯CDN組態**&#x200B;對話方塊中，設定個別下拉式清單中的一或多個選項。
@@ -87,11 +83,9 @@ ht-degree: 9%
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織和方案。
 
-1. 在左側功能表的&#x200B;**服務**&#x200B;底下，按一下&#x200B;**CDN設定**。
+1. 在左側功能表的&#x200B;**服務**&#x200B;下方，按一下&#x200B;**CDN組態**。
 
 1. 在CDN設定表格中，按一下對應至您要移除之CDN之資料列結尾的![更多圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)，然後按一下&#x200B;**刪除**。
-
-   ![正在刪除CDN設定](/help/implementing/cloud-manager/assets/cdn-config-delete.png)
 
 1. 在&#x200B;**刪除CDN組態**&#x200B;對話方塊中，按一下&#x200B;**刪除**。
 
@@ -112,10 +106,6 @@ ht-degree: 9%
 
 1. 在環境詳細資訊頁面上，在&#x200B;**CDN設定**&#x200B;群組中，按一下與您要移除的CDN設定相對應的![更多圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)，然後按一下&#x200B;**刪除**。
 
-   環境詳細資料頁面上的![CDN設定群組](/help/implementing/cloud-manager/assets/cdn/environments-cdn-config.png)
-
 1. 在&#x200B;**刪除CDN組態**&#x200B;對話方塊中，按一下&#x200B;**刪除**。
 
 1. 再按一下&#x200B;**[刪除**]以確認移除網站的CDN。
-
-

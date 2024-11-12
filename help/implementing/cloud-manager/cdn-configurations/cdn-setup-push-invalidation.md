@@ -4,17 +4,16 @@ description: 瞭解如何設定推送失效，以建置您自己的生產CDN。
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-hide: true
-source-git-commit: 3941b7f97d434946a3cb796633f306b89e68c0a4
+source-git-commit: bb225fcb931c6e9014ab18e6efbb0620262bcd76
 workflow-type: tm+mt
-source-wordcount: '147'
+source-wordcount: '160'
 ht-degree: 2%
 
 ---
 
 # 設定推送失效
 
-推播失效可確保作者所做的內容更新在發佈時自動從託管內容傳遞網路(CDN)中移除，因此僅提供最新的內容。
+推播失效可確保作者所做的內容更新在發佈時自動從託管內容傳遞網路(CDN)中移除。 這麼做可確保只提供最新的內容。
 
 系統會根據特定URL和快取標籤或索引鍵清除內容，確保清除過時的版本。
 
@@ -28,3 +27,5 @@ ht-degree: 2%
 | `cdn.prod.type` | 已管理 |   |
 
 一旦對組態工作表進行變更，使用者必須使用[Sidekick工具](/help/edge/docs/sidekick.md)預覽並啟動它們以套用更新。
+
+另請參閱[Cloud ManagerEdge Delivery Services簡介](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md#ed-todo-list)。

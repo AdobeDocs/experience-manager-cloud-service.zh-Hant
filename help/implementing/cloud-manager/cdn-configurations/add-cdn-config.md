@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 672513d7-ee0a-4f6e-9ef0-7a41fabbaf9a
-source-git-commit: 42b30c12f17106610cfb7f7b4c04c5ab703bab45
+source-git-commit: cd15fd36b8baf8e693ae449031a51fa1febefaee
 workflow-type: tm+mt
-source-wordcount: '448'
-ht-degree: 8%
+source-wordcount: '440'
+ht-degree: 10%
 
 ---
 
@@ -31,7 +31,7 @@ ht-degree: 8%
 
    | 使用案例 | 步驟 |
    | --- | --- |
-   | 我要將CDN設定新增至Cloud Manager中的&#x200B;*現有*&#x200B;個Edge Delivery網站 | a.在左側功能表的&#x200B;**服務**&#x200B;下方，按一下&#x200B;**Edge Delivery網站**。<br>b。在Edge Delivery表格中，在沒有相關網域的資料列結尾按一下![更多圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)。<br>c。按一下&#x200B;**設定CDN**。  ![按一下「設定Edge Delivery網站的CDN」](/help/implementing/cloud-manager/assets/cm-eds-config-cdn.png) |
+   | 我要將CDN設定新增至Cloud Manager中的&#x200B;*現有*&#x200B;個Edge Delivery網站 | a.在左側功能表的&#x200B;**服務**&#x200B;下方，按一下&#x200B;**Edge Delivery網站**。<br>b。在Edge Delivery表格中，在沒有相關網域的資料列結尾按一下![更多圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)。<br>c。按一下&#x200B;**設定CDN**。 |
    | 我想要在Cloud Manager中新增CDN設定 | a.在左側功能表的&#x200B;**服務**&#x200B;下方，按一下&#x200B;**CDN組態**。<br>b。在「CDN設定」頁面的右上角附近，按一下「**新增**」。 |
 
 1. 在&#x200B;**設定CDN**&#x200B;對話方塊的&#x200B;**來源**&#x200B;下拉式清單中，選取下列其中一項：

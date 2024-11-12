@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的運作方式以及該軟體可以為您做哪些事。
 breadcrumb-title: 使用手冊
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 3ebfc556a2b7edeb245f3f039a54c7c561da66dd
+source-git-commit: bb225fcb931c6e9014ab18e6efbb0620262bcd76
 workflow-type: tm+mt
-source-wordcount: '5791'
+source-wordcount: '5794'
 ht-degree: 98%
 
 ---
@@ -1163,6 +1163,7 @@ ht-degree: 98%
          + [管理 SSL 憑證](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
       + 內容傳遞網路設定 {#cdn-configurations}
          + [新增內容傳遞網路設定](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)
+         + [設定推播驗證](/help/implementing/cloud-manager/cdn-configurations/cdn-setup-push-invalidation.md)
          + [管理內容傳遞網路設定](/help/implementing/cloud-manager/cdn-configurations/manage-cdn-config.md)
       + IP 允許清單 {#ip-allow-lists}
          + [IP 允許清單簡介](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
