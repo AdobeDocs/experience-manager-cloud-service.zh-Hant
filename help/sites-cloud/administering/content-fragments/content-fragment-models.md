@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: 8ab5b15f-cefc-45bf-a388-928e8cc8c603
 solution: Experience Manager Sites
-source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
+source-git-commit: 862a1f67782775cc1b2ee6e3d3d66ae5560a15ab
 workflow-type: tm+mt
-source-wordcount: '3209'
+source-wordcount: '3284'
 ht-degree: 3%
 
 ---
@@ -151,9 +151,12 @@ Adobe Experience Manager (AEM)中的內容片段模型as a Cloud Service定義[�
 定義模型時可選用多種資料型別：
 
 * **單行文字**
-   * 新增一行或多行文字的欄位；可以定義最大長度
+   * 為單行文字新增欄位；可以定義最大長度
+   * 欄位可設定為允許片段作者建立欄位的新執行個體
+
 * **多行文字**
    * 可能是RTF、純文字或Markdown的文字區域
+   * 欄位可設定為允許片段作者建立欄位的新執行個體
 
   >[!NOTE]
   >
@@ -162,28 +165,40 @@ Adobe Experience Manager (AEM)中的內容片段模型as a Cloud Service定義[�
   此格式無法從[內容片段編輯器](/help/sites-cloud/administering/content-fragments/authoring.md)變更，只能從模型變更。
 
 * **數字**
-   * 新增一或多個數值欄位
+   * 新增數值欄位
+   * 欄位可設定為允許片段作者建立欄位的新執行個體
+
 * **布林值**
    * 新增布林值核取方塊
+
 * **日期和時間**
-   * 新增日期和/或時間
+   * 新增日期和/或時間欄位
+
 * **分項清單**
    * 新增一組核取方塊、選項按鈕或下拉式清單欄位
+      * 您可以指定片段作者可用的選項
+
 * **標籤**
    * 允許片段作者存取及選取標籤區域
+
 * **內容參考**
    * 參考任何型別的其他內容；可用於[建立巢狀內容](#using-references-to-form-nested-content)
    * 如果參照了影像，您可以選擇顯示縮圖
+   * 欄位可設定為允許片段作者建立欄位的新執行個體
+
 * **片段參考**
    * 參考其他內容片段；可用於[建立巢狀內容](#using-references-to-form-nested-content)
-   * 可以設定此資料類型以允許片段作者：
-      * 直接編輯參考的片段。
+   * 欄位可設定為允許片段作者：
+      * 直接編輯參照的片段
       * 根據適當的模式建立新的內容片段
+      * 建立欄位的新執行個體
+
 * **JSON物件**
    * 允許內容片段作者在片段的對應元素中輸入JSON語法。
       * 允許AEM儲存您從其他服務複製/貼上的直接JSON。
       * JSON會傳遞，並在GraphQL中輸出為JSON。
       * 在內容片段編輯器中包括JSON語法醒目提示、自動完成和錯誤醒目提示。
+
 * **索引標籤預留位置**
    * 允許引進索引標籤，以在編輯內容片段內容時使用。
       * 這些在模型編輯器中顯示為分隔線，分隔內容資料型別清單的區段。 每個例項代表新索引標籤的開始。

@@ -5,9 +5,9 @@ exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
 feature: Content Fragments
 role: User
 solution: Experience Manager Sites
-source-git-commit: 7afa76f62791cf7f34c39a09c5b80c6459028e5b
+source-git-commit: 86a2c5f35d82010c84b74b6b5f0da09fd87c2b7a
 workflow-type: tm+mt
-source-wordcount: '2220'
+source-wordcount: '2231'
 ht-degree: 4%
 
 ---
@@ -41,7 +41,7 @@ ht-degree: 4%
 >
 >目前主要透過&#x200B;**[內容片段](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console)**&#x200B;主控台管理，但仍可從&#x200B;**Assets**&#x200B;主控台管理。 本節涵蓋&#x200B;**Assets**&#x200B;主控台的管理功能。
 >
->編寫內容片段有兩個編輯器。 本節涵蓋原始編輯器，主要是從&#x200B;**Assets**&#x200B;主控台存取。 請參閱網站檔案[內容片段 — 製作](/help/sites-cloud/administering/content-fragments/authoring.md)，以取得新編輯器的詳細資訊（主要從&#x200B;**內容片段**&#x200B;主控台存取）。 兩個編輯器在頂部工具欄中都有一個切換開關，用於提供對另一個編輯器的快速存取。
+>編寫內容片段有兩個編輯器；雖然基本功能相同，但有一些差異。 本節涵蓋原始編輯器，主要是從&#x200B;**Assets**&#x200B;主控台存取。 請參閱網站檔案[內容片段 — 製作](/help/sites-cloud/administering/content-fragments/authoring.md)，以取得新編輯器的詳細資訊（主要從&#x200B;**內容片段**&#x200B;主控台存取）。 兩個編輯器在頂部工具欄中都有一個切換開關，用於提供對另一個編輯器的快速存取。
 
 此和下列頁面涵蓋建立、設定、維護及使用內容片段的任務：
 

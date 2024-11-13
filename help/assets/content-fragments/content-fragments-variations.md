@@ -5,9 +5,9 @@ exl-id: af05aae6-d535-4007-ba81-7f41213ff152
 feature: Content Fragments
 role: User
 solution: Experience Manager Sites
-source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
+source-git-commit: 86a2c5f35d82010c84b74b6b5f0da09fd87c2b7a
 workflow-type: tm+mt
-source-wordcount: '2474'
+source-wordcount: '2504'
 ht-degree: 6%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 6%
 >
 >內容片段是 Sites 的一項功能，但儲存為&#x200B;**資產**。
 >
->編寫內容片段有兩個編輯器。 本節涵蓋原始編輯器，主要是從&#x200B;**Assets**&#x200B;主控台存取。 請參閱網站檔案[內容片段 — 製作](/help/sites-cloud/administering/content-fragments/authoring.md)，以取得新編輯器的詳細資訊（主要從&#x200B;**內容片段**&#x200B;主控台存取）。
+>編寫內容片段有兩個編輯器；雖然基本功能相同，但有一些差異。 本節涵蓋原始編輯器，主要是從&#x200B;**Assets**&#x200B;主控台存取。 請參閱網站檔案[內容片段 — 製作](/help/sites-cloud/administering/content-fragments/authoring.md)，以取得新編輯器的詳細資訊（主要從&#x200B;**內容片段**&#x200B;主控台存取）。
 
 您可以從&#x200B;**變數**&#x200B;標籤執行下列動作：
 
@@ -56,6 +56,8 @@ ht-degree: 6%
 您可以：
 
 * 直接在&#x200B;**變數**&#x200B;索引標籤中對您的內容進行編輯；每種資料型別提供不同的編輯選項，例如：
+
+   * 當在模型中設定為（多個）時，各種資料型別可讓您&#x200B;**新增**&#x200B;相關欄位的例項
 
    * 針對&#x200B;**多行文字**&#x200B;欄位，您也可以開啟[全熒幕編輯器](#full-screen-editor)以：
 

@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
+source-git-commit: 86a2c5f35d82010c84b74b6b5f0da09fd87c2b7a
 workflow-type: tm+mt
-source-wordcount: '2685'
+source-wordcount: '2704'
 ht-degree: 5%
 
 ---
@@ -60,6 +60,7 @@ ht-degree: 5%
    * 在「**屬性**」標籤中，您可以更新片段的「**標題**」和「**說明**」，或者更新「**變數**」
 * 中央面板：顯示所選變數的實際欄位和內容
    * 允許您編輯內容
+      * 當在模型中設定為（多個）時，各種資料型別可讓您&#x200B;**新增**&#x200B;相關欄位的例項
    * 如果&#x200B;**標籤預留位置**&#x200B;欄位已在模型中定義，則會顯示在這裡，且可用於導覽；這些欄位將會水準顯示，或作為下拉式清單顯示。
 
   >[!NOTE]

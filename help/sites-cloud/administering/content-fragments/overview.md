@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: ce9cb811-57d2-4a57-a360-f56e07df1b1a
 solution: Experience Manager Sites
-source-git-commit: 7afa76f62791cf7f34c39a09c5b80c6459028e5b
+source-git-commit: 86a2c5f35d82010c84b74b6b5f0da09fd87c2b7a
 workflow-type: tm+mt
-source-wordcount: '1807'
+source-wordcount: '1818'
 ht-degree: 4%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 4%
 >
 >可以從兩個主控台存取內容片段： **內容片段**&#x200B;和&#x200B;**Assets**。
 >
->此外，還有兩個編輯器可用於內容片段。 （兩個編輯器都可從兩個主控台存取。）
+>編寫內容片段時也有兩個編輯器；雖然基本功能相同，但有一些差異。 兩個編輯器都可從兩個主控台存取。
 >
 >本節處理&#x200B;**內容片段**&#x200B;主控台和&#x200B;*新*&#x200B;內容片段編輯器。 這些是針對Headless內容傳送開發的（儘管可用於所有情境）
 >
