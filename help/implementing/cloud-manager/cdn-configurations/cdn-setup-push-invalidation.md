@@ -4,9 +4,10 @@ description: 瞭解如何設定推送失效，以建置您自己的生產CDN。
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: bb225fcb931c6e9014ab18e6efbb0620262bcd76
+exl-id: 7cded93c-325c-4a4b-8644-e6a2379d5179
+source-git-commit: 0ac6856e8f3e664fcc7e3c08faac4c4f5c16af18
 workflow-type: tm+mt
-source-wordcount: '160'
+source-wordcount: '161'
 ht-degree: 2%
 
 ---
@@ -28,4 +29,4 @@ ht-degree: 2%
 
 一旦對組態工作表進行變更，使用者必須使用[Sidekick工具](/help/edge/docs/sidekick.md)預覽並啟動它們以套用更新。
 
-另請參閱[Cloud ManagerEdge Delivery Services簡介](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md#ed-todo-list)。
+另請參閱[關於Cloud Manager中的Edge Delivery待辦事項清單](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md#ed-todo-list)。

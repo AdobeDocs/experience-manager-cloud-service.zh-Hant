@@ -5,7 +5,7 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 2ec16c91-0195-4732-a26d-ac223e10afb9
-source-git-commit: cd15fd36b8baf8e693ae449031a51fa1febefaee
+source-git-commit: ea478d73307c3b57b0a12e35b247bb1c46b33595
 workflow-type: tm+mt
 source-wordcount: '773'
 ht-degree: 8%
@@ -63,7 +63,7 @@ ht-degree: 8%
 
 1. 在&#x200B;**編輯CDN組態**&#x200B;對話方塊中，設定個別下拉式清單中的一或多個選項。
 
-對話方塊中顯示的選項取決於您使用的是&#x200B;**Adobe管理的CDN**&#x200B;或&#x200B;**其他CDN提供者** （客戶管理的CDN）。
+   對話方塊中顯示的選項取決於您使用的是&#x200B;**Adobe管理的CDN**&#x200B;或&#x200B;**其他CDN提供者** （客戶管理的CDN）。
 
 1. 按一下&#x200B;**更新**。
 
