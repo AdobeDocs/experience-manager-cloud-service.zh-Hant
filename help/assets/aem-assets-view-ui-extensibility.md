@@ -3,9 +3,10 @@ title: AEM Assets檢視UI擴充性
 description: 瞭解AEM Assets檢視的UI擴充功能。 AEM Assets檢視UI可讓您新增自訂UI元件，以符合特定的業務需求。
 feature: App Builder
 role: User, Developer
-source-git-commit: c1446200898102881a20508031d4853c61f7c964
+exl-id: a11f7043-17cf-4331-b76c-d3db099c2411
+source-git-commit: e47a8fc65e58ae2ffff805966d7dae8c6edc7aac
 workflow-type: tm+mt
-source-wordcount: '582'
+source-wordcount: '581'
 ht-degree: 3%
 
 ---
@@ -26,7 +27,7 @@ AEM Assets檢視具有UI擴充功能。 此功能可讓使用者新增自訂UI�
 以下列方式存取Assets檢視：
 ![access-assets-view-ui](/help/assets/assets/access-assets-view.jpg)
 
-## 新增的UI擴充性元件會顯示在Assets檢視UI上的何處？ {#ui-extensibility-panel-assets-view}
+## UI擴充功能會在Assets檢視UI上的哪裡顯示？ {#ui-extensibility-panel-assets-view}
 
 在Assets檢視中，導覽至資產、資料夾或集合的「詳細資訊」頁面。 此「詳細資訊」頁面有一個專用面板，可顯示新增的UI擴充功能。
 ![我的工作區](/help/assets/assets/my-workspace-assets-view3.png)
@@ -52,5 +53,3 @@ AEM Assets檢視具有UI擴充功能。 此功能可讓使用者新增自訂UI�
 1. 設定您的本機環境，並透過建立您的第一個UI擴充功能，體驗在Assets檢視中開發UI擴充功能的程式。 如需詳細資訊，請參閱[逐步的AEM Assets檢視擴充功能開發](https://developer.adobe.com/uix/docs/services/aem-assets-view/extension-development/)。
 1. 使用AIO CLI設定應用程式，以產生基本擴充功能結構和必要的程式碼。 如需詳細資訊，請參閱AEM Assets檢視的[程式碼產生](https://developer.adobe.com/uix/docs/services/aem-assets-view/code-generation/)。
 1. 在本機測試您的擴充功能，確保它們在部署前可如預期般運作。 在完全隔離的環境中或以部分隔離的方式執行擴充功能，並將擴充功能連線至生產AEM Assets檢視進行測試。 如需詳細資訊，請參閱[疑難排解 — AEM Assets檢視擴充性](https://developer.adobe.com/uix/docs/services/aem-assets-view/debug/)。
-
-
