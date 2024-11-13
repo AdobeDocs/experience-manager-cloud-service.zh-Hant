@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 9bb2d38feea2690bc112611d429dad22e7bcd278
-workflow-type: ht
-source-wordcount: '1514'
-ht-degree: 100%
+source-git-commit: 428942c8fd4a4b83dc5d226e48eda190165768d4
+workflow-type: tm+mt
+source-wordcount: '1670'
+ht-degree: 89%
 
 ---
 
@@ -101,11 +101,19 @@ Adobe Dynamic Media 中以 AI 產生的影片字幕，是使用人工智慧來�
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
+### AEM Forms 的新功能 {#forms-new-features}
+
+* **使用面板配置中的導覽按鈕來增強使用者體驗**：您現在可以將導覽按鈕新增到面板配置中，例如「水準」標籤、「垂直」標籤、「收合式選單」或「精靈」。 這些按鈕透過簡化面板之間的轉換來增強使用者體驗，將焦點放在選取的面板上。
+
+* **指定記錄檔案(DoR)元件的顯示樣式**：在XFA檔案中，您現在可以指定記錄檔案元件的顯示樣式。 這些樣式稍後可套用至最適化Forms編輯器中的對應元件。
+
 ### AEM Forms 的全新預發行功能 {#forms-new-prerelease-features}
 
-#### 自動儲存以核心元件為主的最適化表單草稿
+* **自動儲存以核心元件為基礎的最適化Forms的草稿**：使用者現在可以受益於自動儲存功能，該功能會自動將部分完成的表單儲存為草稿。 他們可以稍後再回來，使用同一部裝置或其他裝置完成填寫。此功能可改善組織的轉換率，因為使用者不需要從頭開始填寫表單，因此能減少放棄表單的情況。
 
-使用者現在可以享受自動儲存功能帶來的好處，此功能會將部分完成的表單自動儲存為草稿。他們可以稍後再回來，使用同一部裝置或其他裝置完成填寫。此功能可改善組織的轉換率，因為使用者不需要從頭開始填寫表單，因此能減少放棄表單的情況。
+* **輕鬆更新Adobe Sign範圍**：您可以直接從AEM Cloud Configurations頁面修改Adobe Sign設定的範圍，讓您更快速輕鬆地更新現有設定。
+
+* **最適化Forms的非同步函式支援**：當您的最適化表單需要非同步操作（例如等待外部程式或資料擷取）時，您可以使用自訂函式實作這些操作，並在規則編輯器中設定它們。
 
 ### AEM Forms 的搶先體驗功能 {#forms-new-early-access-features}
 
