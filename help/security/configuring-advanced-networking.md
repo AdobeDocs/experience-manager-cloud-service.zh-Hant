@@ -5,9 +5,9 @@ exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
 feature: Security
 role: Admin
 source-git-commit: 2a7d46e91bbd6ca96bd8b7fd5d4d84cf69bdee36
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '5524'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -398,7 +398,7 @@ public JSONObject getJsonObject(String relativePath, String queryString) throws 
 
 ## 虛擬私人網路 (VPN) {#vpn}
 
-VPN 允許從製作、發佈或預覽執行個體連線到內部部署基礎結構或資料中心。例如，這對於保護資料庫存取很有用。它也可以連線至SaaS廠商，例如支援VPN的CRM廠商。
+VPN 允許從製作、發佈或預覽執行個體連線到內部部署基礎結構或資料中心。例如，這對於保護資料庫存取很有用。VPN 還允許連線到 SaaS 廠商，例如支援 VPN 的 CRM 廠商。
 
 支援大多數採用 IPSec 技術的 VPN 裝置。請查閱[本裝置清單內 **RouteBased 設定指示**&#x200B;欄中的資訊。](https://learn.microsoft.com/zh-tw/azure/vpn-gateway/vpn-gateway-about-vpn-devices#devicetable) 按照表中所述設定裝置。
 
@@ -584,7 +584,7 @@ VPN 允許從製作、發佈或預覽執行個體連線到內部部署基礎結�
 </tbody>
 </table>
 
-## 在「環境」中，啟用「進階網路設定」 {#enabling}
+## 在環境中啟用進階網路設定 {#enabling}
 
 為程式設定好進階網路選項後，無論是[彈性連接埠輸出、](#flexible-port-egress) [專用輸出 IP 位址](#dedicated-egress-ip-address) 或 [VPN](#vpn)，若要使用，您必須在環境層級啟用。
 
