@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 428942c8fd4a4b83dc5d226e48eda190165768d4
+source-git-commit: 4e74efa73f0f7d6d9db13001dbc5ebc2ddba98cd
 workflow-type: tm+mt
-source-wordcount: '1670'
+source-wordcount: '1633'
 ht-degree: 89%
 
 ---
@@ -101,19 +101,19 @@ Adobe Dynamic Media 中以 AI 產生的影片字幕，是使用人工智慧來�
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-### AEM Forms 的新功能 {#forms-new-features}
+### AEM Forms新功能 {#forms-new-features}
 
-* **使用面板配置中的導覽按鈕來增強使用者體驗**：您現在可以將導覽按鈕新增到面板配置中，例如「水準」標籤、「垂直」標籤、「收合式選單」或「精靈」。 這些按鈕透過簡化面板之間的轉換來增強使用者體驗，將焦點放在選取的面板上。
+* [使用面板配置中的導覽按鈕來增強使用者體驗](/help/forms/rule-editor-core-components-usecases.md#navigating-among-panels-using-button)：您現在可以將導覽按鈕新增到面板配置中，例如「水準」標籤、「垂直」標籤、「收合式選單」或「精靈」。 這些按鈕透過簡化面板之間的轉換來增強使用者體驗，將焦點放在選取的面板上。
 
-* **指定記錄檔案(DoR)元件的顯示樣式**：在XFA檔案中，您現在可以指定記錄檔案元件的顯示樣式。 這些樣式稍後可套用至最適化Forms編輯器中的對應元件。
+<!--* **Specify Display Styles for Document of Record (DoR) Components**: In an XFA file, you can now specify the display styles for Document of Record components. These styles can later be applied to the corresponding components in Adaptive Forms Editor.-->
 
 ### AEM Forms 的全新預發行功能 {#forms-new-prerelease-features}
 
-* **自動儲存以核心元件為基礎的最適化Forms的草稿**：使用者現在可以受益於自動儲存功能，該功能會自動將部分完成的表單儲存為草稿。 他們可以稍後再回來，使用同一部裝置或其他裝置完成填寫。此功能可改善組織的轉換率，因為使用者不需要從頭開始填寫表單，因此能減少放棄表單的情況。
+* [自動儲存以核心元件為基礎的最適化Forms的草稿](/help/forms/save-core-component-based-form-as-draft.md)：使用者現在可以受益於自動儲存功能，該功能會自動將部分完成的表單儲存為草稿。 他們可以稍後再回來，使用同一部裝置或其他裝置完成填寫。此功能可改善組織的轉換率，因為使用者不需要從頭開始填寫表單，因此能減少放棄表單的情況。
 
-* **輕鬆更新Adobe Sign範圍**：您可以直接從AEM Cloud Configurations頁面修改Adobe Sign設定的範圍，讓您更快速輕鬆地更新現有設定。
+* [輕鬆更新Adobe Sign範圍](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/services/adobe-sign-integration-adaptive-forms)：您可以直接從AEM Cloud Configurations頁面修改Adobe Sign設定的範圍，讓您更快速輕鬆地更新現有設定。
 
-* **最適化Forms的非同步函式支援**：當您的最適化表單需要非同步操作（例如等待外部程式或資料擷取）時，您可以使用自訂函式實作這些操作，並在規則編輯器中設定它們。
+* [最適化Forms的非同步函式支援](/help/forms/using-async-funct-in-rule-editor.md)：當您的最適化表單需要非同步操作（例如等待外部程式或資料擷取）時，您可以使用自訂函式實作這些操作，並在規則編輯器中設定它們。
 
 ### AEM Forms 的搶先體驗功能 {#forms-new-early-access-features}
 
@@ -123,7 +123,7 @@ AEM Forms 搶先體驗計劃為您提供獨一無二的機會，獲得先進創�
 
 #### AEM Forms AI 助理
 
-最適化表單的生成式 AI 全面提升表單開發流程的功能和易用性。它使您能夠建置更好的表單，速度也比以往更快。
+[最適化Forms的創作AI](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/forms-overview/early-access-ea-features#aem-forms-ai-assistant-gen-ai)為您的表單開發流程帶來全新的功能與便利程度。 它使您能夠建置更好的表單，速度也比以往更快。
 
 ![生成式 AI 助理、最適化表單](/help/forms/assets/generative-ai-assistant.png)
 
