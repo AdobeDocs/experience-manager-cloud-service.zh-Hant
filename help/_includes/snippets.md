@@ -1,8 +1,8 @@
 ---
-source-git-commit: 54d1cdec9b30c08f28d4c9b2fbd97446f3ff05b3
+source-git-commit: f3502de1aebd44a056e1263b059e1588243f5845
 workflow-type: tm+mt
-source-wordcount: '1274'
-ht-degree: 93%
+source-wordcount: '1259'
+ht-degree: 92%
 
 ---
 # 代碼片段 {#snippets}
@@ -214,7 +214,7 @@ ht-degree: 93%
 
 若要記錄支援服務單，您必須先在 Cloud Manager 中註冊 Edge Delivery 網站。建議所有 AEM as a Cloud Service 使用者都透過 Cloud Manager 註冊您的網站，[可享有許多好處](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)。如果您尚未註冊網站，請參閱 [Cloud Manager 文件](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md)以了解詳細資訊。
 
-使用 Cloud Manager 註冊您的網站後，請遵循下列流程，使用 Admin Console 提交支援服務單：
+**若要記錄支援票證：**
 
 1. [遵循標準支援流程](https://experienceleague.adobe.com/?support-tab=home#support)並建立服務單。
 1. 將 **Edge Delivery** 加入服務單標題中。
