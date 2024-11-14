@@ -1,20 +1,20 @@
 ---
-title: Universal Editor 2024.11.13發行說明
-description: 這些是2024.11.13版通用編輯器的發行說明。
+title: 通用編輯器 2024.11.13 發行說明
+description: 此為通用編輯器 2024.11.13 版本的發行說明。
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
 source-git-commit: 98795cab471470442cf5c424a67ce2846cfe85dc
 workflow-type: tm+mt
 source-wordcount: '370'
-ht-degree: 5%
+ht-degree: 16%
 
 ---
 
 
-# Universal Editor 2024.11.13發行說明 {#release-notes}
+# 通用編輯器 2024.11.13 發行說明 {#release-notes}
 
-以下是2024年11月13日發行的Universal Editor的發行說明。
+此為通用編輯器 2024 年 11 月 13 日版本的發行說明。
 
 >[!TIP]
 >
