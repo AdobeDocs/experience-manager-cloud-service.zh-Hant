@@ -4,7 +4,8 @@ description: 瞭解如何為 [!DNL AEM Forms] as a Cloud Service設定Adobe Acro
 feature: Adaptive Forms, Acrobat Sign
 role: Admin, User
 level: Intermediate
-source-git-commit: 551123925e43c98f8870f4a5da028d211f5c8ffb
+exl-id: 609c3072-1c3d-43fa-898a-b4e62db8483b
+source-git-commit: 31a4a8b5b86439483b058c1fb132979476aab2e5
 workflow-type: tm+mt
 source-wordcount: '2195'
 ht-degree: 23%
@@ -104,7 +105,7 @@ ht-degree: 23%
    * [!DNL widget_write]
    * [!DNL workflow_read]
 
-   
+   >[!NOTE]
    > 您可以直接從AEM UI將範圍修飾元從`self`變更為`account`，如步驟12中所述。
 
    如需設定 [!DNL Adobe Acrobat Sign] 應用程式的 OAuth 設定並取得金鑰的逐步資訊，請參閱「[設定應用程式的 OAuth 設定](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/gstarted/configure_oauth.md)」開發人員文件。
