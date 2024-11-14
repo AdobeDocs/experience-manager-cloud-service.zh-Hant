@@ -4,9 +4,9 @@ description: 瞭解如何使用Edge Delivery Services傳遞Cloud Manager專案�
 exl-id: f33bd6f0-62fc-4ecc-b8d2-65d1f1c44d82
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: abd0fa0ea3e6e18187bcb60731ec6fe823a98e45
+source-git-commit: 0fb5476b4cff9e26971696bd8352181a71e7b3e4
 workflow-type: tm+mt
-source-wordcount: '757'
+source-wordcount: '766'
 ht-degree: 10%
 
 ---
@@ -63,13 +63,13 @@ AEM as a Cloud Service中的Cloud Manager可讓您為專案啟用Edge Delivery�
 >* 一旦Edge Delivery Services授權套用至計畫或從計畫中移除，變更就會立即生效，而無需執行管道。
 
 
-## 關於Edge Delivery待辦事項清單 {#ed-todo-list}
+## 關於Cloud Manager中的Edge Delivery待辦事項清單 {#ed-todo-list}
 
 <!-- &#x2460; for "1" inside circle -->
 
-**Edge Delivery待辦事項清單**&#x200B;是入門工作檢查清單，旨在引導您完成入門、管理您的Edge Delivery網站直到[上線](/help/journey-onboarding/go-live-checklist.md)。
+Cloud Manager中的&#x200B;**Edge Delivery待辦事項清單**&#x200B;是入門工作檢查清單，旨在引導您完成入門、管理您的Edge Delivery網站直到[上線](/help/journey-onboarding/go-live-checklist.md)。
 
-![Edge Delivery網站待辦事項清單](/help/implementing/cloud-manager/assets/cm-eds-todo-list.png)
+在Cloud Manager中![Edge Delivery網站待辦事項清單](/help/implementing/cloud-manager/assets/cm-eds-todo-list.png)
 
 |   | 任務 | 說明 |
 | --- | --- | --- |
