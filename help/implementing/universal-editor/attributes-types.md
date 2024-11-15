@@ -4,10 +4,10 @@ description: 瞭解Universal Editor所需的資料屬性和專案型別。
 exl-id: 02795a31-244a-42b4-8297-2649125d7777
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
+source-git-commit: edef86c67becf3b8094196d39baa9e69d6c81777
 workflow-type: tm+mt
-source-wordcount: '538'
-ht-degree: 73%
+source-wordcount: '574'
+ht-degree: 53%
 
 ---
 
@@ -31,8 +31,8 @@ ht-degree: 73%
 | `data-aue-resource` | 資源的 URN，請參閱 [AEM 中 Universal Editor 快速入門文件的檢測頁面](getting-started.md#instrument-thepage)章節 |
 | `data-aue-prop` | 資源的屬性，請參閱 [AEM 中 Universal Editor 快速入門文件的檢測頁面](getting-started.md#instrument-thepage)章節 |
 | `data-aue-type` | [可編輯專案的型別](#item-types) （例如，文字、影像和參考） |
-| `data-aue-filter` | 定義可以使用哪些參考 |
-| `data-aue-label` | 為編輯器中顯示的可選項目定義自訂標籤，<br>如果`data-aue-model`已經設定了，會透過模型擷取標籤 |
+| `data-aue-filter` | 定義：<br> — 已啟用哪些RTE功能<br> — 可以將哪些元件新增到容器<br> — 可以將哪些資產新增到媒體型別 |
+| `data-aue-label` | 為編輯器中顯示的可選取專案定義自訂標籤 |
 | `data-aue-model` | 定義在屬性面板中用於表單式編輯的模型 |
 | `data-aue-behavior` | 定義檢測工具](#behaviors)的[行為，例如，獨立文字或影像也可以模擬元件，使其可移動或刪除 |
 
@@ -47,10 +47,14 @@ ht-degree: 73%
 | `component` | 可編輯的是元件。它不會新增額外功能。必須指出DOM的可移動/可刪除部分，以及開啟屬性面板及其欄位時 | 必要 | N/A | N/A | 選用 | 選用 | N/A |
 | `reference` | 可編輯是參考資料，例如內容片段、體驗片段或產品 | 視情況而定 <br> (請參閱下文)。 | 視情況而定 <br> (請參閱下文)。 | 傳遞給參考選擇器的選擇性<br>內容片段、產品或體驗片段篩選條件清單 | 選用 | 選用 | N/A |
 
-根據使用案例 `data-aue-prop` 或 `data-aue-resource`，可能需要也可能不需要。例如：
+`data-aue-resource`永遠是必要的，因為它是表示內容變更寫入位置的主索引鍵。
 
-* `data-aue-resource`如果您透過 GraphQL 查詢內容片段，並且希望清單可在內容中編輯，則需要。
-* `data-aue-prop`如果您有元件呈現參考內容片段的內容，並且您想要更新元件中的參考，則需要。
+* 不需要直接在設定`data-aue-type`的標籤上進行。
+* 如果未設定，則會使用最接近父項的`data-aue-resource`屬性。
+
+當您想要在中編輯時，`data-aue-prop`為必要專案，但容器為選用專案除外（若設定容器為內容片段且prop指向多重參考欄位）。
+
+* `data-aue-prop`是`data-aue-resource`之主索引鍵要更新的屬性。
 
 ## 行為 {#behaviors}
 
