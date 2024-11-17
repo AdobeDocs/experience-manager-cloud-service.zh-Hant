@@ -5,16 +5,16 @@ contentOwner: AG
 feature: Asset Reports, Asset Management
 role: Admin, User
 exl-id: ef617b01-0019-4379-8d58-c03215d7e28f
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 311230e2d6a395f9382af80df1cbe0fb25427874
 workflow-type: tm+mt
-source-wordcount: '960'
-ht-degree: 9%
+source-wordcount: '991'
+ht-degree: 10%
 
 ---
 
 # 資產報表 {#asset-reports}
 
-| [搜尋最佳實務](/help/assets/search-best-practices.md) | [中繼資料最佳實務](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [具有OpenAPI功能的Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets開發人員檔案](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| [搜尋最佳實務](/help/assets/search-best-practices.md) | [中繼資料最佳實務](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [具有 OpenAPI 功能的 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 開發人員文件](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
 | 版本 | 文章連結 |
@@ -26,7 +26,7 @@ ht-degree: 9%
 
 使用報告中的資訊取得關鍵成功度量，以測量企業內和客戶對[!DNL Assets]的採用程度。
 
-[!DNL Assets]報告架構使用[!DNL Sling]個工作，以循序方式非同步處理報告要求。 其可擴展至大型存放庫。 非同步報表處理可提高報表產生的效率和速度。
+[!DNL Assets]報告架構以非同步方式使用[!DNL Sling]個工作，以循序方式處理報告要求。 其可擴展至大型存放庫。 非同步報表處理可提高報表產生的效率和速度。
 
 報表管理介面是直覺式的，並包含存取已封存報表和檢視報表執行狀態（成功、失敗和已排入佇列）的細微選項和控制項。
 
@@ -65,11 +65,11 @@ ht-degree: 9%
    ![用於導覽資產報告的工具頁面](assets/navigation.png)
 
 1. 在[!UICONTROL 資產報表]頁面上，按一下工具列中的&#x200B;**[!UICONTROL 建立]**。
-1. 從&#x200B;**[!UICONTROL 建立報告]**&#x200B;頁面，選擇要建立的報告並按一下&#x200B;**[!UICONTROL 下一步]**。
+1. 從&#x200B;**[!UICONTROL 建立報告]**&#x200B;頁面，選擇要建立的報告並按一下&#x200B;**[!UICONTROL 下一步]**。 授權您使用&#x200B;**AEM管理員產品設定檔**&#x200B;來建立&#x200B;**下載**&#x200B;報告。 請參閱[指派AEM產品設定檔](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem)，賦予您使用AEM管理員產品設定檔的許可權。
 
    ![選取報表型別](assets/choose_report.png)
 
-1. 設定標題、說明、縮圖和資料夾路徑等報表詳細資訊。 預設的資料夾路徑為`/content/dam`。 您可以指定不同的路徑，以在特定資料夾上執行報表。
+1. 設定報告詳細資訊，例如，標題、說明、縮圖和資料夾路徑。 預設的資料夾路徑為`/content/dam`。 您可以指定不同的路徑，以在特定資料夾上執行報表。
 
    ![新增報告詳細資訊的頁面](assets/report_configuration.png)
 
@@ -108,7 +108,7 @@ ht-degree: 9%
    ![選取或取消選取報告欄](assets/custom_columns.png)
 
 1. 從工具列按一下&#x200B;**[!UICONTROL 「建立]**」。 訊息會通知已啟動報表產生作業。
-1. 在[!UICONTROL 資產報表]頁面上，報表產生狀態是以報表工作的目前狀態為基礎，例如[!UICONTROL 成功]、[!UICONTROL 失敗]、[!UICONTROL 已排入佇列]或[!UICONTROL 已排程]。 相同的狀態會顯示在通知收件匣中。若要檢視報告頁面，請按一下報告連結。 或者，選取報告，然後按一下工具列中的&#x200B;**[!UICONTROL 檢視]**。
+1. 在[!UICONTROL 資產報表]頁面上，報表產生狀態是以報表工作的目前狀態為基礎，例如[!UICONTROL 成功]、[!UICONTROL 失敗]、[!UICONTROL 已排入佇列]或[!UICONTROL 已排程]。 通知收件匣中會顯示相同的狀態。 若要檢視報表頁面，請按一下報表連結。 或者，選取報告，然後按一下工具列中的&#x200B;**[!UICONTROL 檢視]**。
 
    <!--![A generated report](assets/report_page.png)-->
    ![產生的報告狀態](assets/report-status.JPG)
