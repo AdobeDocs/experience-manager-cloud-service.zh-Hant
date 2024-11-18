@@ -4,10 +4,10 @@ description: 瞭解如何執行您自己的Universal Editor服務，以供本機
 exl-id: ba1bf015-7768-4129-8372-adfb86e5a120
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 54d1cdec9b30c08f28d4c9b2fbd97446f3ff05b3
+source-git-commit: 4fedb7a812b53fd9ebd9c82e86fa8f05394d464f
 workflow-type: tm+mt
-source-wordcount: '894'
-ht-degree: 41%
+source-wordcount: '932'
+ht-degree: 40%
 
 ---
 
@@ -76,9 +76,17 @@ UES_PORT=8000
 UES_PRIVATE_KEY=./key.pem
 UES_CERT=./certificate.pem
 UES_TLS_REJECT_UNAUTHORIZED=false
+UES_CORS_PRIVATE_NETWORK=true
 ```
 
-這些是範例中本機開發所需的最小值。 下表詳細說明這些值和可用的其他值。
+這些是範例中本機開發所需的最小值。
+
+>[!NOTE]
+>
+>如果您執行Chrome 130+版，您必須使用`UES_CORS_PRIVATE_NETWORK`選項為[私人網路存取](https://wicg.github.io/private-network-access/#private-network-request)啟用傳送CORS標頭。
+
+
+下表詳細說明這些值和可用的其他值。
 
 | 值 | 選用 | 預設 | 說明 |
 |---|---|---|---|
@@ -93,6 +101,7 @@ UES_TLS_REJECT_UNAUTHORIZED=false
 | `UES_SPLUNK_TOKEN` | 是 | 無 | Splunk權杖 |
 | `UES_SPLUNK_INDEX` | 是 | 無 | 要寫入記錄的索引 |
 | `UES_SPLUNK_SOURCE` | 是 | `universal-editor-service` | splunk記錄檔中的來源名稱 |
+| `UES_CORS_PRIVATE_NETWORK` | 是 | `false` | 啟用傳送CORS標頭以允許[私人網路。Chrome 130版以上的使用者需要](https://wicg.github.io/private-network-access/#private-network-request) |
 
 >[!NOTE]
 >
