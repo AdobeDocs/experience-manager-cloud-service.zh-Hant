@@ -4,9 +4,9 @@ description: 瞭解使用「內容轉移工具」的准則與最佳實務。
 exl-id: d1975c34-85d4-42e0-bb1a-968bdb3bf85d
 feature: Migration
 role: Admin
-source-git-commit: 208a4de5aab5326490908fade8f12f17b8f3c0d7
+source-git-commit: 943685ed9c33ba42c4dd1cb941b2eca1cce8bfe8
 workflow-type: tm+mt
-source-wordcount: '1368'
+source-wordcount: '1389'
 ht-degree: 12%
 
 ---
@@ -70,8 +70,6 @@ ht-degree: 12%
 
 * 如果設定&#x200B;**在擷取之前擦除雲端執行個體上的現有內容**&#x200B;選項已啟用，它會刪除整個現有存放庫並建立新的存放庫以將內容擷取到。 這表示它會重設所有設定，包括目標Cloud Service執行個體的許可權。 對於新增到&#x200B;**管理員**&#x200B;群組的管理員使用者也是這樣。 必須將該使用者讀入&#x200B;**管理員**&#x200B;群組，才能擷取「內容轉移工具」的存取權杖。
 
-* 如果來自兩個來源的內容移動到目標上的相同路徑，則內嵌不支援將來自多個來源的內容合併到目標Cloud Service例項中。 若要將多個來源的內容移至單一目標Cloud Service例項，請確定來源的內容路徑沒有重疊。
-
 * 擷取金鑰的有效期為從建立或更新後的14天。 可隨時續約。 如果擷取金鑰已過期，您將無法執行擷取。
 
 * 在將內容從來源例項轉移至目標例項之前，內容轉移工具(CTT)不會執行任何型別的內容分析。 例如，將內容擷取至Publish環境時，CTT不會區分已發佈和未發佈的內容。 移轉集中指定的任何內容都會擷取到所選的目標例項。 使用者可以將移轉集內嵌至「作者」例項或「Publish」例項，或兩者皆內嵌。 Adobe建議，將內容移動至生產執行個體時，CTT應安裝在來源製作執行個體上，以將內容移動至目標製作執行個體。 同樣地，請在來源Publish例項上安裝CTT，將內容移至目標Publish例項。 如需詳細資訊，請參閱[在Publish執行個體上執行內容轉移工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html#running-tool)。
@@ -89,6 +87,8 @@ ht-degree: 12%
 * 如果您打算進行追加提取，則現有內容的內容結構決不能從初次提取的時間變更為執行追加提取的時間。 追加無法針對自初始擷取以來結構已變更的內容執行。 請務必在移轉程式期間限制此專案。
 
 * 如果您打算將版本納入移轉集，並使用`wipe=false`執行追加作業，則由於「內容轉移工具」目前的限制，您必須停用版本清除功能。 如果您偏好啟用版本清除，並且正在移轉集中執行追加作業，則必須以`wipe=true`身分執行內嵌。
+
+* 內容轉移工具(CTT)不支援合併擷取。 若要將來自多個系統的內容整合至單一Cloud Service例項，只能移轉來自單一來源系統的版本。 此程式需要使用具有wipe=false引數的移轉，由於作業的增量性質，這可能會導致擷取時間延長。 可能的話，請在開始移轉前將內容整合至單一來源系統，免除合併內容的必要。
 
 * 移轉集會在長時間不活動後過期，之後其資料就無法再使用。 檢閱[移轉集到期日](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html#migration-set-expiry)以取得詳細資料。
 
