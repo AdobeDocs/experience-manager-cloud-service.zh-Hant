@@ -2,9 +2,9 @@
 title: 批准 Content Hub 的資產
 description: 瞭解如何在Assets as a Cloud Service中核准資產，以便在Content Hub中使用。
 exl-id: fc849028-ab56-4388-b8d6-e36cac8f868f
-source-git-commit: 189fc257fed1115f66559d0f9063885ae527a0fa
+source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
 workflow-type: tm+mt
-source-wordcount: '746'
+source-wordcount: '774'
 ht-degree: 6%
 
 ---
@@ -15,6 +15,12 @@ ht-degree: 6%
 | ------------- | --------------------------- |---------|----|-----|
 
 ![核准Content Hub的資產](assets/content-hub-approve-assets.png)
+
+>[!AVAILABILITY]
+>
+>Content Hub指南現在提供PDF格式。 下載整份指南，並使用Adobe Acrobat AI Assistant回答您的疑問。
+>
+>[!BADGE Content Hub指南PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
 
 品牌經理和行銷人員對品牌資產維持嚴格的控制。 Content Hub內只能使用已核准且最新的資產版本，確保所有管道和應用程式的品牌一致性。
 
@@ -34,7 +40,7 @@ Assetsas a Cloud Service中標示為`approved`的資產會自動在Content Hub�
 
 >[!NOTE]
 >
->Assets as a Cloud Service和Content Hub必須使用相同的組織，資產才能在Content Hub中顯示。
+Assets as a Cloud Service和Content Hub必須使用相同的組織，資產才能在Content Hub中顯示。
 
 若要使用AEM as a Cloud Service中的Assets檢視將資產狀態設為`approved`：
 
@@ -89,7 +95,7 @@ Assetsas a Cloud Service中標示為`approved`的資產會自動在Content Hub�
 
 >[!NOTE]
 > 
->此方法會核准資料夾中新建立的資產。 針對資料夾中的現有資產，您需要手動選取並核准它們。
+此方法會核准資料夾中新建立的資產。 針對資料夾中的現有資產，您需要手動選取並核准它們。
 
 ## 管理使用Content Hub上傳的資產 {#manage-assets-uploaded-using-content-hub}
 

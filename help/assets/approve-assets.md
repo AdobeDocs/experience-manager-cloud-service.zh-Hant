@@ -3,9 +3,9 @@ title: 在Experience Manager中核准資產
 description: 瞭解如何核准 [!DNL Experience Manager]中的資產。
 role: User
 exl-id: fe61a0f1-94d3-409a-acb9-195979668c25
-source-git-commit: d542df9ae943d03a56b5d85b1bd189f81c35fe28
+source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
 workflow-type: tm+mt
-source-wordcount: '713'
+source-wordcount: '747'
 ht-degree: 4%
 
 ---
@@ -14,6 +14,12 @@ ht-degree: 4%
 
 | [搜尋最佳實務](/help/assets/search-best-practices.md) | [中繼資料最佳實務](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [具有 OpenAPI 功能的 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 開發人員文件](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
+
+>[!AVAILABILITY]
+>
+>Dynamic Media搭配OpenAPI功能指南現在提供PDF格式。 下載整份指南，並使用Adobe Acrobat AI Assistant回答您的疑問。
+>
+>[!BADGE 具有OpenAPI功能的Dynamic Media指南PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/dynamic-media-with-openapi-capabilities.pdf"}
 
 品牌經理和行銷人員對品牌資產維持嚴格的控制。 該資產僅供經核准和最新版本的使用，以確保所有管道和應用程式的品牌一致性。
 
@@ -36,7 +42,7 @@ ht-degree: 4%
 
 >[!NOTE]
 >
->如果您的資產或資料夾具有不同的預設結構描述，請務必在該特定結構描述中進行此更新。
+如果您的資產或資料夾具有不同的預設結構描述，請務必在該特定結構描述中進行此更新。
 
 ## 核准資產 {#approve-assets}
 
@@ -78,7 +84,7 @@ ht-degree: 4%
 
 >[!NOTE]
 > 
->此方法會核准資料夾中新建立的資產。 針對資料夾中的現有資產，您需要手動選取並核准它們。 <br>或者，您可以使用&#x200B;**[!UICONTROL 重新處理]**&#x200B;選項，將中繼資料設定檔的變更套用至較舊的資產。
+此方法會核准資料夾中新建立的資產。 針對資料夾中的現有資產，您需要手動選取並核准它們。 <br>或者，您可以使用&#x200B;**[!UICONTROL 重新處理]**&#x200B;選項，將中繼資料設定檔的變更套用至較舊的資產。
 
 同樣地，若要在Assets檢視中大量核准資料夾內的資產：
 
@@ -105,6 +111,6 @@ ht-degree: 4%
 
    >[!NOTE]
    >
-   >在Assets檢視中，剛提供複製已核准資產之傳送URL的選項。
+   在Assets檢視中，剛提供複製已核准資產之傳送URL的選項。
 
 如需顯示在Dynamic Media面板中的其他轉譯資訊，請參閱[檢視和下載Dynamic Media轉譯](/help/assets/renditions.md#view-download-dm-renditions)。

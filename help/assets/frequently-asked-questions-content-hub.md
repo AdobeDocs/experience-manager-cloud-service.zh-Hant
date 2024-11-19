@@ -1,9 +1,10 @@
 ---
 title: Content Hub常見問題集(FAQ)
 description: 取得Content Hub部分最常見問題(FAQ)的回應。
-source-git-commit: 3b8a80e346fe63450f9b57733c67de2e4b52b2b8
+exl-id: 74b5c308-c1d3-4787-9f1f-f64cf09d298a
+source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
 workflow-type: tm+mt
-source-wordcount: '1100'
+source-wordcount: '1128'
 ht-degree: 1%
 
 ---
@@ -14,6 +15,12 @@ ht-degree: 1%
 | ------------- | --------------------------- |---------|----|-----|
 
 ![Content Hub常見問題](assets/content-hub-faqs.png)
+
+>[!AVAILABILITY]
+>
+>Content Hub指南現在提供PDF格式。 下載整份指南，並使用Adobe Acrobat AI Assistant回答您的疑問。
+>
+>[!BADGE Content Hub指南PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
 
 ## 什麼是Content Hub？ {#what-is-content-hub}
 
@@ -87,5 +94,3 @@ Adobe提供從Brand Portal到Content Hub的移轉支援，您可透過建立Adob
 ## 為什麼在Content Hub中看不到「產品設定/組態」選項？ {#ui-configuration-option-missing}
 
 若要存取[設定使用者介面](/help/assets/configure-content-hub-ui-options.md)，您必須是[Content Hub管理員](/help/assets/deploy-content-hub.md##onboard-content-hub-administrator)。 如果您在Adobe Admin Console的生產製作執行個體中被指派給AEM管理員產品設定檔，而且您仍然看不到設定選項，請確保AEM管理員產品設定檔未重新命名。 如需詳細資訊，請參閱[AEM as a Cloud Service團隊和產品設定檔](/help/onboarding/aem-cs-team-product-profiles.md)。
-
-

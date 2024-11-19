@@ -2,9 +2,9 @@
 title: 設定 Content Hub 使用者介面
 description: 設定 Content Hub 使用者介面
 exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
-source-git-commit: 76337282b7d3008864763541a957c44327e1a5be
+source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
 workflow-type: tm+mt
-source-wordcount: '1526'
+source-wordcount: '1557'
 ht-degree: 15%
 
 ---
@@ -18,9 +18,16 @@ ht-degree: 15%
 >id="configure_content_hub"
 >title="設定 Content Hub 使用者介面"
 >abstract="Experience Manager Assets 可讓管理員設定 Content Hub 使用者介面上的可用選項。根據管理員選取的設定選項，Content Hub 使用者可以查看 Content Hub 上的欄位。設定選項包括匯入資產時的中繼資料、篩選器、資產屬性、搜尋資產時的中繼資料、個人化品牌和任何自訂連結。"
+>additional-url="https://images-tv.adobe.com/mpcv3/4477/98bce651-721c-442e-98b8-c43e7708e44c_1698834577.854x480at800_h264.mp4" text="觀看影片"
 
 <!-- ![Download assets](assets/download-asset.jpg) -->
 ![在Content Hub上設定資產](assets/configure-assets.png)
+
+>[!AVAILABILITY]
+>
+>Content Hub指南現在提供PDF格式。 下載整份指南，並使用Adobe Acrobat AI Assistant回答您的疑問。
+>
+>[!BADGE Content Hub指南PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
 
 Experience Manager Assets 可讓管理員設定 Content Hub 使用者介面上的可用選項。根據管理員選取的設定選項，Content Hub 使用者可以查看 Content Hub 上的欄位。組態選項包括：
 
@@ -112,7 +119,7 @@ Content Hub可讓管理員設定在搜尋資產時顯示的篩選器。 執行�
 
    >[!NOTE]
    >
-   >只有在存放庫中有另一個資產符合篩選條件時，新篩選器才會顯示在「搜尋」頁面上。
+   只有在存放庫中有另一個資產符合篩選條件時，新篩選器才會顯示在「搜尋」頁面上。
 
 同樣地，您可以按一下每個可用篩選器旁的![編輯圖示](assets/do-not-localize/edit_icon.svg)來編輯標籤，或按一下刪除圖示來刪除任何現有的篩選器。 完成所有修改以套用變更後，按一下&#x200B;**[!UICONTROL 儲存]**。
 
@@ -148,7 +155,7 @@ Content Hub可讓管理員設定在搜尋資產時顯示的篩選器。 執行�
 
 您也可以設定需要顯示在&#x200B;**資產卡**&#x200B;上的關鍵中繼資料欄位，最多可顯示6個欄位。 若要如此做，請執行以下步驟：
 
-資產卡上的![金鑰中繼資料](/help/assets/assets/asset-card-key-metadata.png)
+![資產卡片上的重要中繼資料](/help/assets/assets/asset-card-key-metadata.png)
 
 1. 在[組態](#access-configuration-options-content-hub)使用者介面上，按一下&#x200B;**資產卡**。
 2. 按一下&#x200B;**新增中繼資料**。 **新增資產卡中繼資料**&#x200B;對話方塊隨即顯示。

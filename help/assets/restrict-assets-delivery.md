@@ -3,9 +3,9 @@ title: 使用具有OpenAPI功能的Dynamic Media限制資產傳送
 description: 瞭解如何使用OpenAPI功能限制資產傳送。
 role: User
 exl-id: 3fa0b75d-c8f5-4913-8be3-816b7fb73353
-source-git-commit: 03e13d29629c5e0305401179502cd1fc24f9ad75
+source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
 workflow-type: tm+mt
-source-wordcount: '1117'
+source-wordcount: '1151'
 ht-degree: 2%
 
 ---
@@ -14,6 +14,12 @@ ht-degree: 2%
 
 | [搜尋最佳實務](/help/assets/search-best-practices.md) | [中繼資料最佳實務](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [具有 OpenAPI 功能的 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 開發人員文件](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
+
+>[!AVAILABILITY]
+>
+>Dynamic Media搭配OpenAPI功能指南現在提供PDF格式。 下載整份指南，並使用Adobe Acrobat AI Assistant回答您的疑問。
+>
+>[!BADGE 具有OpenAPI功能的Dynamic Media指南PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/dynamic-media-with-openapi-capabilities.pdf"}
 
 Experience Manager的中央資產控管可讓DAM管理員或品牌管理員透過Dynamic Media的OpenAPI功能管理可用資產的存取權。 他們可以透過在AEM as a Cloud Service作者服務上的資產上設定某些中繼資料，將已核准的資產（精確到個別資產）的傳送限製為所選的[AdobeIdentity Management系統(IMS)使用者或群組](https://helpx.adobe.com/in/enterprise/using/users.html#user-mgt-strategy)。
 
@@ -34,7 +40,7 @@ Experience Manager的中央資產控管可讓DAM管理員或品牌管理員透�
 
 >[!NOTE]
 >
-> 此功能目前不是自助式。 若要限制IMS [使用者](https://helpx.adobe.com/in/enterprise/using/manage-directory-users.html)和[群組](https://helpx.adobe.com/in/enterprise/using/user-groups.html)的資產傳遞，請洽詢您的企業支援團隊，以取得如何從[Adobe Admin Console](https://adminconsole.adobe.com/)入口網站擷取限制存取所需的資訊，以及如何在AEM as a Cloud Service作者服務中設定存取許可權的相關指引。
+此功能目前不是自助式。 若要限制IMS [使用者](https://helpx.adobe.com/in/enterprise/using/manage-directory-users.html)和[群組](https://helpx.adobe.com/in/enterprise/using/user-groups.html)的資產傳遞，請洽詢您的企業支援團隊，以取得如何從[Adobe Admin Console](https://adminconsole.adobe.com/)入口網站擷取限制存取所需的資訊，以及如何在AEM as a Cloud Service作者服務中設定存取許可權的相關指引。
 
 ### 使用開啟和關閉日期與時間限制資產傳遞 {#restrict-delivery-assets-date-time}
 
@@ -82,7 +88,7 @@ DAM作者也可以定義資產屬性中可用的啟動開啟或關閉時間，�
 
 >[!NOTE]
 >
->若要進一步瞭解如何在AEM Asset Selector型整合上啟用IMS驗證，請聯絡企業支援
+若要進一步瞭解如何在AEM Asset Selector型整合上啟用IMS驗證，請聯絡企業支援
 
 1. 對於非Asset Selector型體驗，AEM as a Cloud Service和具有OpenAPI功能的Dynamic Media目前支援伺服器端API整合，且可產生IMS持有人權杖。
    * 依照[這裡](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis#the-server-to-server-flow)的指示，執行可透過[AEM as a Cloud Service Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines#crxde-lite-and-developer-console)擷取IMS持有人權杖的服務對伺服器API整合

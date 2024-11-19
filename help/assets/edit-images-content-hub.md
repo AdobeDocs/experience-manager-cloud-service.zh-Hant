@@ -2,19 +2,25 @@
 title: 使用Adobe Express在Content Hub中編輯影像
 description: 使用Adobe Express在Content Hub中編輯影像
 exl-id: c9777862-226c-4d39-87da-9c4a30437dc5
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
 workflow-type: tm+mt
-source-wordcount: '408'
-ht-degree: 2%
+source-wordcount: '436'
+ht-degree: 6%
 
 ---
 
 # 在Content Hub中編輯影像 {#edit-images-content-hub}
 
-| [搜尋最佳實務](/help/assets/search-best-practices.md) | [中繼資料最佳實務](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [具有OpenAPI功能的Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets開發人員檔案](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| [搜尋最佳實務](/help/assets/search-best-practices.md) | [中繼資料最佳實務](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [具有 OpenAPI 功能的 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 開發人員文件](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
 ![在Content Hub中使用Adobe Express編輯影像](assets/edit-images-content-hub.png)
+
+>[!AVAILABILITY]
+>
+>Content Hub指南現在提供PDF格式。 下載整份指南，並使用Adobe Acrobat AI Assistant回答您的疑問。
+>
+>[!BADGE Content Hub指南PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
 
 Content Hub可讓您使用Adobe Express建立新內容。 您可以使用簡單易用的工具編輯現有內容、使用範本和品牌元素產生品牌上的變化，以及從Adobe Firefly使用最新GenAI功能建立新內容。
 
@@ -24,7 +30,7 @@ Content Hub可讓您使用Adobe Express建立新內容。 您可以使用簡單�
 
 >[!NOTE]
 >
->您可以使用[!DNL Adobe Express]編輯PNG和JPG/JPEG檔案型別的影像。
+您可以使用[!DNL Adobe Express]編輯PNG和JPG/JPEG檔案型別的影像。
 
 ## 使用 [!DNL Adobe Express] 編輯影像 {#edit-images-using-content-hub}
 

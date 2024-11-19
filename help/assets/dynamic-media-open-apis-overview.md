@@ -3,17 +3,23 @@ title: 具有OpenAPI功能的Dynamic Media
 description: 瞭解重要概念，例如為何將Dynamic Media與OpenAPI功能搭配使用，以及如何啟用它。
 role: User
 exl-id: 658b6eff-9f5a-4166-9ff6-5dc8eb92ada3
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
 workflow-type: tm+mt
-source-wordcount: '1075'
-ht-degree: 1%
+source-wordcount: '1109'
+ht-degree: 2%
 
 ---
 
 # 具有OpenAPI功能的Dynamic Media {#new-dynaminc-media-apis-overview}
 
-| [搜尋最佳實務](/help/assets/search-best-practices.md) | [中繼資料最佳實務](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [AEM Assets開發人員檔案](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| [搜尋最佳實務](/help/assets/search-best-practices.md) | [中繼資料最佳實務](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [AEM Assets 開發人員文件](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|-----|
+
+>[!AVAILABILITY]
+>
+>Dynamic Media搭配OpenAPI功能指南現在提供PDF格式。 下載整份指南，並使用Adobe Acrobat AI Assistant回答您的疑問。
+>
+>[!BADGE 具有OpenAPI功能的Dynamic Media指南PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/dynamic-media-with-openapi-capabilities.pdf"}
 
 在當今快節奏的數位世界中，釋放品牌數位資產的全部潛力對於在競爭中保持領先地位至關重要。 整體數位Assets管理(DAM)解決方案有助於資產控管、促進品牌一致性，並加快內容交付，同時確保品牌完整性和卓越的客戶體驗。
 
@@ -65,7 +71,7 @@ Dynamic Media搭配OpenAPI功能提供下列主要優點：
 
   >[!NOTE]
   >
-  > 若要與非Adobe應用程式整合，請提供網域名稱以允許列出託管應用程式的位置。
+  若要與非Adobe應用程式整合，請提供網域名稱以允許列出託管應用程式的位置。
 
 * 整合專案中涉及之主要客戶聯絡人的詳細資訊。
 
@@ -75,7 +81,7 @@ Dynamic Media搭配OpenAPI功能提供下列主要優點：
 
 >[!NOTE]
 >
->從任何內容套件中排除`/conf/global/settings/dam/assets-configurations/assetdelivery`，以避免停用OpenAPI功能的Dynamic Media。
+從任何內容套件中排除`/conf/global/settings/dam/assets-configurations/assetdelivery`，以避免停用OpenAPI功能的Dynamic Media。
 
 ## 深入瞭解主要功能 {#learn-more-key-capabilities}
 
