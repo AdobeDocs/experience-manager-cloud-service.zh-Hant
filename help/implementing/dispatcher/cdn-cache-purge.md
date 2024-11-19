@@ -4,9 +4,9 @@ description: 瞭解如何設定清除API權杖（其可用於API呼叫），從A
 feature: CDN Cache
 exl-id: 4d091677-b817-4aeb-b131-7a5407ace3e0
 role: Admin
-source-git-commit: 5b777171cb9246c2a0174985e060d7d1b6ed8591
+source-git-commit: e5e0606c83f144f92f9ae57e5380a30389e8df1b
 workflow-type: tm+mt
-source-wordcount: '450'
+source-wordcount: '469'
 ht-degree: 1%
 
 ---
@@ -74,6 +74,19 @@ curl
 ```
 
 請注意，`X-AEM-Purge`標頭必須包含「all」值。
+
+## 與客戶管理的CDN互動
+
+若是[客戶管理的CDN](/help/implementing/dispatcher/cdn.md#point-to-point-CDN)，也需要提供`X-Forwarded-Host`和`X-AEM-Edge-Key`：
+
+```
+curl
+-X PURGE "https://publish-p1234-e5467.adobeaemcloud.com/resource-path" \
+-H 'X-AEM-Purge-Key: <my_purge_key>' \
+-H 'X-AEM-Edge-Key: <my_edge_key>' \
+-H 'X-Forwarded-Host: <my_forwarded_domain>'
+```
+
 
 ## 與Apache/Dispatcher層的互動 {#apache-layer}
 
