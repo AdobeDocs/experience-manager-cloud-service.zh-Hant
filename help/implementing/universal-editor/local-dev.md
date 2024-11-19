@@ -4,7 +4,7 @@ description: 瞭解如何執行您自己的Universal Editor服務，以供本機
 exl-id: ba1bf015-7768-4129-8372-adfb86e5a120
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 4fedb7a812b53fd9ebd9c82e86fa8f05394d464f
+source-git-commit: ccdb43c31e3ba1365a514bff696c9ec11dbbc21e
 workflow-type: tm+mt
 source-wordcount: '932'
 ht-degree: 40%
@@ -154,7 +154,7 @@ Universal Editor 會根據頁面的偵測方式，知道要使用哪個 Universa
 
 有了[本機執行的 Universal Editor 服務](#running-ue)和[經檢測可使用本機服務的內容頁面](#using-loca-ue)，現在您可以啟動編輯器。
 
-1. 開啟您的瀏覽器，前往 `https://localhost:8000/corslib/LATEST`。
+1. 開啟您的瀏覽器，前往 `https://localhost:8000/ping`。
 1. 指示您的瀏覽器接受[您的自我簽署憑證。](#ue-https)
 1. 一旦自我簽署憑證受到信任，您就可以使用本機 Universal Editor 服務編輯頁面。
 
