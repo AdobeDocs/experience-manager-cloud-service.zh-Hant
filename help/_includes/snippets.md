@@ -1,8 +1,8 @@
 ---
-source-git-commit: f3502de1aebd44a056e1263b059e1588243f5845
+source-git-commit: 60cf4c34f3b4d7c7a757f2274f1a02de8ae51e11
 workflow-type: tm+mt
-source-wordcount: '1259'
-ht-degree: 92%
+source-wordcount: '1323'
+ht-degree: 88%
 
 ---
 # 代碼片段 {#snippets}
@@ -53,6 +53,7 @@ ht-degree: 92%
 * [提交至 Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
 * [將最適化表單連接到 Salesforce 應用程式](/help/forms/aem-forms-salesforce-integration.md)
 * [將最適化表單連接到 Microsoft](/help/forms/ms-dynamics-odata-configuration.md)
+* [將最適化表單連線至Adobe Marketo Engage](/help/forms/integrate-form-to-marketo-engage.md)
 * [建立自訂提交動作](/help/forms/custom-submit-action-for-adaptive-forms-based-on-core-components.md)
 
 ## 另請參閱 {#see-more-forms-eds}
@@ -131,6 +132,8 @@ ht-degree: 92%
 * [以核心元件為主之最適化表單的規則編輯器使用者介面](/help/forms/rule-editor-core-components-user-interface.md)
 * [以核心元件為主之最適化表單的規則編輯器不同使用案例](/help/forms/rule-editor-core-components-usecases.md)
 * [規則編輯器各個版本的差異](/help/forms/rule-editor-core-components-difference-tables.md)
+* [在最適化表單中使用非同步函式](/help/forms/using-async-funct-in-rule-editor.md)
+* [針對以核心元件為基礎的表單，在視覺化規則編輯器中叫用服務增強功能](/help/forms/invoke-service-enhancements-rule-editor.md)
 * [以核心元件為主之最適化表單的自訂函數簡介](/help/forms/create-and-use-custom-functions.md)
 * [建立以核心元件為主之最適化表單的自訂函數](/help/forms/custom-function-core-component-create-function.md)
 * [自訂函式中的範圍物件](/help/forms/custom-function-core-component-scope-function.md)
@@ -144,6 +147,12 @@ ht-degree: 92%
 * [將您的表單儲存為草稿](/help/forms/save-core-component-based-form-as-draft.md)
 * [新增表單連結至 Sites 頁面](/help/forms/add-form-link-to-aem-sites-page.md)
 
+## Marketo Engage{#marketo-engage-see-also}
+
+* [將Marketo Engage與AEM Forms整合](/help/forms/integrate-form-to-marketo-engage.md)
+* [設定新表單以與Marketo Engage](/help/forms/integrate-adaptive-form-with-marketo-engage.md)整合
+* [設定現有最適化Forms的Marketo Engage資料來源](/help/forms/use-marketo-engage-data-source-in-form.md)
+* [設定提交動作以Marketo Engage現有表單](/help/forms/submit-adaptive-form-to-marketo-engage.md)
 
 ## Cloud Manager IP 允許清單和前端管道 {#allowlist-frontend-pipeline}
 

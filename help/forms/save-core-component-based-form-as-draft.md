@@ -4,9 +4,9 @@ description: 瞭解如何將基於核心元件的最適化表單另存為草稿�
 feature: Adaptive Forms, Core Components
 exl-id: c0653bef-afeb-40c1-b131-7d87ca5542bc
 role: User, Developer
-source-git-commit: 2933b3be569724800a77b4ea93e91441046746f6
+source-git-commit: 2e4c9a7d30b954045082baf242737ac2f7426c70
 workflow-type: tm+mt
-source-wordcount: '1384'
+source-wordcount: '1387'
 ht-degree: 2%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 2%
 
 # 將表單另存為草稿並列在網站頁面上
 
-<span class="preview">本文包含關於&#x200B;**自動儲存**&#x200B;功能（發行前功能）的內容。 只能透過我們的[發行前通道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features).</span>存取發行前功能
+<span class="preview">本文包含有關&#x200B;**草稿**&#x200B;功能（發行前功能）的內容。 只能透過我們的[發行前通道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features).</span>存取發行前功能
 
 假設使用者開始填寫表單，但需要暫停並在稍後返回。 AEM提供`save-as-draft`選項，允許使用者將表單儲存為草稿以供日後完成。 為方便起見，AEM提供現成的&#x200B;**草稿與提交** Forsm Portal元件，可在AEM Sites頁面上顯示草稿與提交。 元件會列出已儲存為草稿以供稍後完成的表單，以及已提交的表單。 只有登入的使用者可以編輯其草稿或檢視其提交的表單。 但是，如果匿名使用者使用&#x200B;**搜尋與清單製作者**&#x200B;元件瀏覽表單清單，並將表單儲存為草稿，則&#x200B;**草稿與提交**&#x200B;元件不會列出該草稿。 若要檢視草稿和提交，使用者必須在提交表單時登入。
 
@@ -137,7 +137,7 @@ ht-degree: 2%
 
 當您預覽最適化表單並填寫時，按一下&#x200B;**儲存表單**&#x200B;按鈕，表單會儲存為草稿。
 
-### 自動儲存
+### 草稿
 
 >[!NOTE]
 >
@@ -147,13 +147,13 @@ ht-degree: 2%
 
 1. 在作者執行個體中，以編輯模式開啟調適型表單。
 1. 開啟內容瀏覽器，然後選取最適化表單的「**[!UICONTROL 指引容器]**」元件。
-1. 按一下節目表容器屬性![節目表屬性](/help/forms/assets/configure-icon.svg)圖示，然後開啟&#x200B;**[!UICONTROL 自動儲存]**&#x200B;標籤。
+1. 按一下節目表容器屬性![節目表屬性](/help/forms/assets/configure-icon.svg)圖示，然後開啟&#x200B;**[!UICONTROL 草稿]**&#x200B;標籤。
 
    ![自動儲存](/help/forms/assets/auto-save.png)
 
-1. 選取&#x200B;**[!UICONTROL 啟用]**&#x200B;核取方塊以啟用表單的自動儲存。
-1. 將&#x200B;**[!UICONTROL 觸發器]**&#x200B;設定為&#x200B;**以時間為基礎**，以在特定時間間隔後自動儲存表單<!--based on the occurrence of an event or-->。
-1. 以&#x200B;**[!UICONTROL 自動儲存此間隔（秒）]**&#x200B;指定時間間隔，以設定在定義的間隔觸發自動儲存表單的持續時間。
+1. 選取&#x200B;**[!UICONTROL 自動儲存草稿]**&#x200B;核取方塊，以啟用將表單自動儲存為草稿。
+1. 將&#x200B;**[!UICONTROL 儲存喜好設定]**&#x200B;設定為&#x200B;**定期儲存草稿**，以在特定時間間隔後自動儲存表單<!--based on the occurrence of an event or-->。
+1. 以&#x200B;**[!UICONTROL 儲存間隔頻率（秒）]**&#x200B;指定時間間隔，以設定在定義的間隔觸發自動儲存表單的持續時間。
 1. 按一下&#x200B;**[!UICONTROL 「完成」]**。
 
 ## 使用草稿和提交元件在「網站」頁面上檢視草稿/提交的表單

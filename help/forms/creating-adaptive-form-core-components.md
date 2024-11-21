@@ -5,10 +5,10 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
 exl-id: 1e812d93-4ba5-4589-b59b-2f564d754b0f
-source-git-commit: 619cf91e3d1cc5504d8de0e70eb88e9ae7285af9
+source-git-commit: 66fd6f506aa8dddc2a948b3c7a07134b9ae3df54
 workflow-type: tm+mt
-source-wordcount: '2341'
-ht-degree: 52%
+source-wordcount: '2368'
+ht-degree: 51%
 
 ---
 
@@ -35,7 +35,7 @@ ht-degree: 52%
 
 您必須符合以下條件才能建立最適化表單：
 
-* **為您的環境啟用最適化Forms核心元件**：當您建立方案時，最適化Forms核心元件已為您的環境啟用。 如果您有以 Archetype 39 或更早版本為基礎的 Forms as a Cloud Service 環境，請[為您的環境啟用最適化表單核心元件](enable-adaptive-forms-core-components.md)。為您的環境啟用核心元件後，**最適化表單 (核心元件)** 範本和畫布主題就會新增到您的環境中。如果您的 AEM SDK 版本比 2023.02.0 更舊，[請確定已`prerelease`在您的環境中啟用標幟](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=zh-Hant#new-features)，因為最適化表單核心元件是 2023.02.0 版本之前搶鮮版的一部分。
+* **為您的環境啟用最適化Forms核心元件**：當您建立方案時，最適化Forms核心元件已為您的環境啟用。 如果您有以 Archetype 39 或更早版本為基礎的 Forms as a Cloud Service 環境，請[為您的環境啟用最適化表單核心元件](enable-adaptive-forms-core-components.md)。為您的環境啟用核心元件時，**最適化Forms （核心元件）**&#x200B;範本和主題會新增到您的環境中。 如果您的 AEM SDK 版本比 2023.02.0 更舊，[請確定已`prerelease`在您的環境中啟用標幟](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=zh-Hant#new-features)，因為最適化表單核心元件是 2023.02.0 版本之前搶鮮版的一部分。
 
 * **最適化表單範本**：此範本會提供基本結構並定義最適化表單的外觀 (版面和樣式)。其中具有包含特定屬性和內容結構的預先格式化元件。它也會提供定義主題和提交動作的選項。主題會定義外觀，而提交動作會定義提交最適化表單時要採取的動作。例如，將所收集的資料傳送到資料來源。雲端服務會提供一個名為 blank 的 OOTB 範本：
 
@@ -106,6 +106,10 @@ ht-degree: 52%
 1. 選擇 **[!UICONTROL 建立]**。此時已建立最適化表單，並在最適化表單編輯器中開啟。編輯器會顯示範本中可用的內容。根據最適化表單的型別，相關<!--XFA form template, XML schema or --> JSON結構描述或表單資料模型(FDM)中存在的表單元素會顯示在側邊欄中&#x200B;**[!UICONTROL 內容瀏覽器]**&#x200B;的&#x200B;**[!UICONTROL 資料模型物件]**&#x200B;索引標籤中。 您也可以拖放這些元素以建置自己的最適化表單。
 
 現在，您可以將[最適化Forms核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)拖放至最適化Forms容器來設計和建立表單。 您也可以造訪[https://aemcomponents.dev/](https://aemcomponents.dev/)，檢視作用中的可用核心元件。
+
+>[!NOTE]
+>
+> 您也可以[使用XFA表單範本（*.XDP檔案）建立最適化Forms](/help/forms/create-adaptive-form-using-xfa-templates.md)。 它讓您透過直接在調適型Forms中重複使用XDP檔案的欄位來節省時間。
 
 ## 為最適化表單設定提交動作 {#configure-submit-action-for-form}
 
@@ -216,6 +220,6 @@ ht-degree: 52%
 ## 另請參閱 {#see-also}
 
 {{see-also}}
-* [使用規則編輯器將動態行為新增至表單](rule-editor.md)
+* [使用規則編輯器將動態行為新增至表單](/help/forms/rule-editor-core-components.md)
 * [設定不同熒幕大小和裝置型別的表單版面](/help/sites-cloud/authoring/page-editor/responsive-layout.md)
 

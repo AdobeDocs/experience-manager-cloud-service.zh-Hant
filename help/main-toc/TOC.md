@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的運作方式以及該軟體可以為您做哪些事。
 breadcrumb-title: 使用手冊
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 87acfc03c4497fcbfb94ff43cdd380cd6725bcf2
+source-git-commit: 6653a761ee8d0cb1d7b07acd263121422d419a8b
 workflow-type: tm+mt
-source-wordcount: '5801'
-ht-degree: 98%
+source-wordcount: '5873'
+ht-degree: 97%
 
 ---
 
@@ -32,6 +32,7 @@ ht-degree: 98%
    + AEMaaCS 功能發行說明{#release-notes}
       + [最新發行說明](/help/release-notes/release-notes-cloud/release-notes-current.md)
       + 2024 {#2024}
+         + [2024.10.0 版發行說明](/help/release-notes/release-notes-cloud/2024/release-notes-2024-10-0.md)
          + [2024.9.0 版發行說明](/help/release-notes/release-notes-cloud/2024/release-notes-2024-9-0.md)
          + [2024.8.0 版發行說明](/help/release-notes/release-notes-cloud/2024/release-notes-2024-8-0.md)
          + [2024.7.0 版發行說明](/help/release-notes/release-notes-cloud/2024/release-notes-2024-7-0.md)
@@ -719,6 +720,11 @@ ht-degree: 98%
          + [處理表單資料模型](/help/forms/work-with-form-data-model.md)
          + [使用表單資料模型](/help/forms/using-form-data-model.md)
          + [設計最適化表單的 XML 綱要](/help/forms/adaptive-form-xml-schema-form-model.md)
+         + 整合Adaptive Forms與Adobe Marketo Engage{#integrate-adaptive-form-with-market-engage}
+            + [將Adobe Marketo Engage與AEM Forms整合](/help/forms/integrate-form-to-marketo-engage.md)
+            + [設定新表單以與Marketo Engage](/help/forms/integrate-adaptive-form-with-marketo-engage.md)整合
+            + [為現有的Adaptive Forms設定Adobe Marketo Engage資料來源](/help/forms/use-marketo-engage-data-source-in-form.md)
+            + [設定提交動作以Marketo Engage現有表單](/help/forms/submit-adaptive-form-to-marketo-engage.md)
    + 最適化 Forms {#adaptive-forms-authoring}
       + [建立最適化表單](/help/forms/create-an-adaptive-form.md)
       + [建立最適化表單片段](/help/forms/adaptive-form-fragments.md)
@@ -730,6 +736,7 @@ ht-degree: 98%
             + [建立最適化表單片段](/help/forms/adaptive-form-fragments-core-components.md)
             + [為最適化表單建立主題 - 核心元件](/help/forms/using-themes-in-core-components.md)
             + [建立以核心元件為基礎的最適化表單範本](/help/forms/template-editor-core-components.md)
+            + [根據XFA表單範本建立最適化表單（核心元件）](/help/forms/create-adaptive-form-using-xfa-templates.md)
             + [為最適化 Forms 產生記錄文件](/help/forms/generate-document-of-record-core-components.md)
             + [使用機器翻譯或人工翻譯來翻譯最適化表單](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
             + [設定重新導向頁面或感謝訊息](/help/forms/configure-redirect-page-or-thank-you-message.md)
@@ -758,6 +765,7 @@ ht-degree: 98%
                + [以核心元件為主之最適化表單的規則編輯器中可用的運算子和事件類型](/help/forms/rule-editor-core-components-events-operators.md)
                + [以核心元件為主之最適化表單的規則編輯器範例](/help/forms/rule-editor-core-components-usecases.md)
                + [在最適化表單中使用非同步函式](/help/forms/using-async-funct-in-rule-editor.md)
+               + [針對以核心元件為基礎的表單，在視覺化規則編輯器中叫用服務增強功能](/help/forms/invoke-service-enhancements-rule-editor.md)
             + 以核心元件為主之最適化表單的自訂函數簡介{#create-and-use-custom-function-core-component}
                + [以核心元件為主之最適化表單的自訂函數簡介](/help/forms/create-and-use-custom-functions.md)
                + [建立和使用以核心元件為主之最適化表單的自訂函數](/help/forms/custom-function-core-component-create-function.md)

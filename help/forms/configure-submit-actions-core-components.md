@@ -5,10 +5,10 @@ keywords: 如何選取最適化表單的提交動作、將最適化表單連線�
 feature: Adaptive Forms, Core Components
 exl-id: 495948e8-30a7-4e7c-952f-c71de15520f0
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: 6266da34305bc5d8b2bbb0d336028f4fede6c165
 workflow-type: tm+mt
-source-wordcount: '678'
-ht-degree: 46%
+source-wordcount: '701'
+ht-degree: 44%
 
 ---
 
@@ -21,7 +21,8 @@ ht-degree: 46%
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
 | AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html) |
-| AEM as a Cloud Service  | 本文章 |
+| AEM as a Cloud Service （基礎元件） | [按一下這裡](/help/forms/configuring-submit-actions.md) |
+| AEM as a Cloud Service （核心元件） | 本文章 |
 
 提交動作讓您可選擇透過最適化表單擷取的資料目標。使用者按一下最適化表單上的「**[!UICONTROL 提交]**」按鈕時，就會加以觸發。針對以核心元件為基礎的最適化表單，Forms as a Cloud Service 提供了一系列預先建立的提交動作。這些現成可用的提交動作可讓您：
 
@@ -68,11 +69,13 @@ ht-degree: 46%
 * [提交到 REST 端點](/help/forms/configure-submit-action-restpoint.md)
 * [提交到 OneDrive](/help/forms/configure-submit-action-onedrive.md)
 * [叫用 AEM 工作流程](/help/forms/configure-submit-action-workflow.md)
+* [提交至Marketo enagage](/help/forms/submit-adaptive-form-to-marketo-engage.md)
 
 您也可以將最適化表單提交至其他儲存設定：
 
 * [將最適化表單連接到 Salesforce 應用程式](/help/forms/aem-forms-salesforce-integration.md)
 * [將最適化表單連接到 Microsoft® Dynamics OData](/help/forms/ms-dynamics-odata-configuration.md)
+* [將最適化表單連線至Adobe Marketo Engage](/help/forms/integrate-form-to-marketo-engage.md)
 
 您可以[自訂預設提交動作](custom-submit-action-form.md)。 此外，您可以自訂「提交動作」以符合特定的組織需求。
 

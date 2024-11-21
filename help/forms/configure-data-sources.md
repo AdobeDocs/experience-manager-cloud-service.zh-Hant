@@ -5,7 +5,7 @@ feature: Adaptive Forms, Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
-source-git-commit: 7b31a2ea016567979288c7a8e55ed5bf8dfc181d
+source-git-commit: 6266da34305bc5d8b2bbb0d336028f4fede6c165
 workflow-type: tm+mt
 source-wordcount: '2129'
 ht-degree: 2%
@@ -29,7 +29,7 @@ ht-degree: 2%
 * SOAP型網站服務
 * OData服務（4.0版）
 * Microsoft® Dynamics
-* SalesForce
+* Salesforce
 * Microsoft® Azure Blob儲存體
 
 資料整合可支援OAuth2.0（[授權代碼](https://oauth.net/2/grant-types/authorization-code/)、[使用者端認證](https://oauth.net/2/grant-types/client-credentials/)）、基本驗證及API金鑰驗證型別，並且允許實作自訂驗證以存取Web服務。 在[!DNL Experience Manager]個as a Cloud Service中設定RESTful、SOAP型和OData服務時，在[!DNL Experience Manager]網頁主控台中設定關聯式資料庫的JDBC和[!DNL Experience Manager]使用者設定檔的聯結器。
@@ -329,7 +329,6 @@ When you enable mutual authentication for form data model (FDM), both the data s
 ## 後續步驟 {#next-steps}
 
 您已設定資料來源。 接下來，您可以建立表單資料模型(FDM)，或者，如果您已建立不含資料來源的表單資料模型(FDM)，則可以將其與您設定的資料來源建立關聯。 如需詳細資訊，請參閱[建立表單資料模型](create-form-data-models.md)。
-
 
 <!--
 

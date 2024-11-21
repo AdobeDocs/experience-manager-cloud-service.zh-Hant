@@ -1,0 +1,104 @@
+---
+Title: How to integrate Marketo Engage with AEM Forms using Form wizard?
+Description: Learn how to integrate your Marketo Engage instance with AEM Forms using form wizard.
+Keywords: How to connect a Marketo instance with form? , Connect a form to Marketo, Integrate a form with Marketo Engage, Integrate an Adaptive Form with a Marketo instance.
+Feature: Adaptive Forms, Form Data Model
+Role: User, Developer
+source-git-commit: 681c194f997ab66f93beedad4eea273614e6797d
+workflow-type: tm+mt
+source-wordcount: '577'
+ht-degree: 1%
+
+---
+
+
+# 設定新表單以與Marketo Engage整合
+
+<span class="preview">此功能可在早期採用者方案下使用。 您可以從您的官方電子郵件ID寫信到aem-forms-ea@adobe.com ，以加入率先採用者計畫並請求存取該功能。</span>
+
+![工作流程](/help/forms/assets/workflow-marketo-4.png)
+
+建立雲端服務設定以將Marketo Engage與AEM Forms整合後，您可以設定最適化表單以與[Adobe Marketo Engage](https://experienceleague.adobe.com/en/docs/marketo/using/home)整合。
+
+您可以使用表單精靈將Marketo Engage連線至調適型表單，透過引導您完成每個步驟來簡化設定流程。 其中包括選擇範本、樣式和資料欄位，以及設定資料對應以確保您的表單在建立後可以與Marketo Engage通訊。 使用表單精靈，您也可以設定最適化表單，在提交時直接將資料提交至Adobe Marketo Engage。
+
+## 設定表單Marketo Engage資料來源的考量
+
+設定表單的Marketo Engage資料來源時，請考量下列事項：
+
+* 無法將Edge Delivery Services Forms與Marketo Engage連線。
+
+## 連線Marketo Engage與表單的先決條件
+
+連線Marketo Engage與表單的先決條件：
+
+* 建立[雲端服務設定以整合Marketo Engage與表單](/help/forms/integrate-form-to-marketo-engage.md)。
+
+## 如何設定新的最適化表單以與Marketo Engage整合？
+
+若要設定新的最適化表單以與Marketo Engage整合，請執行以下步驟：
+
+1. 選取&#x200B;**[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms與檔案]**。
+
+   ![選取Forms和檔案](/help/forms/assets/select-forms.png)
+
+1. 選取&#x200B;**[!UICONTROL 建立]** > **[!UICONTROL 最適化Forms]**。 表單建立精靈隨即開啟。
+
+   ![選取AF](/help/forms/assets/select-create-forms.png)
+
+1. 在&#x200B;**[!UICONTROL Source]**&#x200B;索引標籤中，選取範本
+
+   ![選取範本](/help/forms/assets/select-template.png)
+
+1. 從&#x200B;**[!UICONTROL 樣式]**，選取主題。
+
+   ![選取主題](/help/forms/assets/select-form-theme.png)
+
+
+1. 在&#x200B;**[!UICONTROL 資料]**&#x200B;索引標籤中，選取資料模型做為&#x200B;**Marketo Engage**。
+
+1. 從熒幕右窗格中顯示的下拉式清單中選取&#x200B;**[!UICONTROL 雲端設定]**。
+依預設，關聯組態的所有欄位都會顯示。 此精靈可讓您透過使用核取方塊，選擇性地選擇應包含在調適型表單中的欄位。
+
+   ![選取資料模型](/help/forms/assets/select-marketo-data.png)
+
+1. 在&#x200B;**[!UICONTROL 提交]**&#x200B;索引標籤中，選取提交動作作為&#x200B;**[!UICONTROL 提交至Marketo]**。
+
+   當您選取資料模型為&#x200B;**Marketo Engage**&#x200B;時，則會自動選取提交動作為&#x200B;**提交至Marketo**。 您可以從&#x200B;**[!UICONTROL 提交]**&#x200B;索引標籤中選取不同的提交動作。 **[!UICONTROL 提交]**&#x200B;索引標籤會顯示所有可用的提交動作。
+
+   ![提交至Marketo engage](/help/forms/assets/select-marketo-engage.png)
+
+1. 選擇 **[!UICONTROL 建立]**。指定標題、名稱和位置以儲存最適化表單。
+
+   ![建立表單](/help/forms/assets/create-marketo-form.png)
+
+1. 選取「**[!UICONTROL 建立]**」。
+
+最適化表單現在已設定為與Marketo Engage執行個體連線。 或者，您也可以編輯最適化表單屬性，以變更其相關聯的設定。
+
+## 常見問題集(FAQs)
+
+**問：您可以變更表單的提交動作，以設定為與Marketo Engage結構描述連線嗎？**
+**A：**&#x200B;依預設，當表單設定為與Marketo Engage結構描述連線時，會選取&#x200B;**送出至Marketo**&#x200B;動作。 不過，您可以視需要變更表單的提交動作。
+
+
+**問：變更表單的聯結器會發生什麼事？**\
+**A：**&#x200B;如果您變更表單的聯結器，現有的繫結就會變成無效。
+
+**問：規則編輯器的Invoke Service中針對與Marketo Engage整合的表單可用的三種操作是什麼？**\
+**A：** **Invoke Service** (針對與Marketo Engage整合的表單)中可用的三個現成作業是：
+* 同步處理銷售機會
+* 依ID取得銷售機會
+* 依篩選器型別取得銷售機會
+
+## 下一步
+
+您也可以將最適化表單與[Munchkin資料庫](https://experienceleague.adobe.com/en/docs/marketo/using/product-docs/administration/setup/munchkin)連線，以追蹤造訪次數、點按次數和表單提交次數。
+
+## 相關的文章
+
+{{af-submit-action}}
+
+## 另請參閱
+
+{{marketo-engage-see-also}}

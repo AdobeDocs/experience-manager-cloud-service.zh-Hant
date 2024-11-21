@@ -5,9 +5,9 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: ac85ff04-25dc-4566-a986-90ae374bf383
-source-git-commit: f6e1de0c2cc2c056b3bfcea6ce5d7aaed041f6f8
+source-git-commit: 7acbf2099a2b47b5f42885e8f9a9e1727a8112b5
 workflow-type: tm+mt
-source-wordcount: '2106'
+source-wordcount: '2148'
 ht-degree: 2%
 
 ---
@@ -36,7 +36,7 @@ ht-degree: 2%
 * **不是空的**
 * **已選取：**&#x200B;當使用者選取核取方塊、下拉式清單單選按鈕的特定選項時，傳回True。
 * **已初始化（事件）：**&#x200B;當表單物件在瀏覽器中呈現時傳回True。
-* **已變更 （事件）：** 當用戶變更表單物件的輸入值或選取選項時，會傳回 true。
+* **已變更（事件）：**&#x200B;當使用者變更表單物件的輸入值或選取的選項時，傳回true。
 
 <!--
 * **Navigation(event):** Returns true when the user clicks a navigation object. Navigation objects are used to move between panels. 
@@ -44,9 +44,9 @@ ht-degree: 2%
 * **Successful Submission(event):** Returns true on successful submission of data to a form data model.
 * **Error in Submission(event):**  Returns true on unsuccessful submission of data to a form data model. -->
 
-### 規則 編輯者 中可用的規則類型 {#available-rule-types-in-rule-editor}
+### 規則編輯器中的可用規則型別 {#available-rule-types-in-rule-editor}
 
-規則編輯者提供了一組可用于編寫規則的預定義規則類型。 讓我們詳細看一下每種規則類型。 如需有關在規則編輯器中寫入規則的詳細資訊，請參閱[寫入規則](/help/forms/rule-editor-core-components-user-interface.md#write-rules)。
+規則編輯器提供了一組預先定義的規則型別，您可以使用這些型別來撰寫規則。 讓我們來詳細瞭解一下每種規則型別。 如需有關在規則編輯器中寫入規則的詳細資訊，請參閱[寫入規則](/help/forms/rule-editor-core-components-user-interface.md#write-rules)。
 
 #### [!UICONTROL 時間] {#whenruletype}
 
@@ -63,27 +63,25 @@ ht-degree: 2%
 `Then, do the following:`
 
 `Action 2 on Object B;`
-`AND`
-&#39;物件C上的動作3；
+`AND`&#39;關於物件C的行動3;
 
 `Else, do the following:`
 
-`Action 2 on Object C;`
-_
+`Action 2 on Object C;`_
 
 當您有多值元件（如單選按鈕或清單）時，為該元件建立規則時，會自動擷取選項，並讓規則建立者可以使用這些選項。 您不需要再次輸入選項值。
 
 例如，清單有四個選項：紅色、藍色、綠色和黃色。 建立規則時，系統會自動擷取選項（選項按鈕），供規則建立者使用，如下所示：
 
-![多值顯示選項](assets/multivaluefcdisplaysoptions.png)
+![多重值顯示選項](assets/multivaluefcdisplaysoptions.png)
 
-編寫 When 規則時，可以觸發清除值操作。 清除值動作會清除指定物件的值。 在When陳述式中將的清除值作為選項可讓您建立具有多個欄位的複雜條件。 您可以新增Else陳述式以進一步新增條件
+撰寫When規則時，您可以觸發「清除值」動作。 清除值操作將清除指定物件的值。 在 When 語句中使用「清除值」選項可以創建具有多個字段的複雜條件。 您可以添加 Else 語句以添加其他條件
 
-![清除](assets/clearvalueof.png)的值
+![清除值](assets/clearvalueof.png)
 
 >[!NOTE]
 >
-> 當規則型別僅支援單一層級then-else陳述式時。
+> 當 規則 類型僅支持單級 then-else 語句時。
 
 ##### [!UICONTROL When]中允許多個欄位 {#allowed-multiple-fields}
 
@@ -97,20 +95,20 @@ _
 
 和/或
 
-（物件B條件2）
+（物件 B 條件 2）
 
-接著，執行下列動作：
+然後，執行以下操作：
 
-物件A上的動作1
+物件 A 上的動作 1
 
 _
 
-![在When](/help/forms/assets/allowed-multiple-field-when.png)中允許多個欄位
+![允許的多個字段 時間](/help/forms/assets/allowed-multiple-field-when.png)
 
-**在「當條件」功能中使用允許的多個字段時的注意事項**
+**在When條件功能**&#x200B;中使用允許多個欄位時的考量事項
 
-* [確保核心元件設置為版本 3.0.14 或更高版本](https://github.com/adobe/aem-core-forms-components)，以便在 規則 編輯者中使用此功能。
-* 如果將規則應用於 When 條件中的不同欄位，則僅更改其中一個字段時，規則觸發平均。
+* 請確定[核心元件設定為3.0.14版或更新版本](https://github.com/adobe/aem-core-forms-components)，以便在規則編輯器中使用此功能。
+* 如果規則套用至When條件內的不同欄位，即使這些欄位中只有一個已變更，規則也會觸發。
 
 
 <!--
@@ -130,10 +128,10 @@ Allowed Multiple fields in When condition feature is disabled by default. To ena
    * value: deps
 1. Click **[!UICONTROL Done]**. -->
 
-如果「條件」功能中允許的多個欄位發生任何問題，請遵循下列疑難排解步驟：
+如果「當條件」功能中允許的多個字段遇到任何問題，請將故障排除步驟追隨為：
 
-1. 在編輯模式中開啟表單。
-1. 開啟內容瀏覽器，然後選取最適化表單的&#x200B;**[!UICONTROL 指南容器]**&#x200B;元件。
+1. 在編輯模式下打開表單。
+1. 開啟「內容」瀏覽器，然後選擇 **[!UICONTROL 最適化表單的「引導容器]** 」元件。
 1. 按一下「指引容器」屬性 ![指引屬性](/help/forms/assets/configure-icon.svg) 圖示。此時會開啟「最適化表單容器」對話框。
 1. 按一下完成，然後再次儲存對話方塊。
 
@@ -145,7 +143,13 @@ Allowed Multiple fields in When condition feature is disabled by default. To ena
 
 **[!UICONTROL 停用]**&#x200B;停用指定的物件。
 
-**[!UICONTROL 啟動服務]**&#x200B;啟動表單資料模型(FDM)中設定的服務。 選擇「啟動服務」作業時，會出現一個欄位。 點選欄位時，它會顯示您[!DNL Experience Manager]執行個體上所有表單資料模型(FDM)中設定的所有服務。 選擇表單資料模型服務時，會出現更多欄位，您可在其中對應具有指定服務的輸入和輸出引數的表單物件。 請參閱叫用表單資料模型(FDM)服務的規則範例。
+**[!UICONTROL 啟動服務]**&#x200B;啟動表單資料模型(FDM)中設定的服務。 選擇「啟動服務」作業時，會出現一個欄位。 點選欄位時，它會顯示您[!DNL Experience Manager]執行個體上所有表單資料模型(FDM)中設定的所有服務。 選擇表單資料模型服務時，會出現更多欄位，您可在其中使用指定服務的輸入引數對應表單物件。 您可以透過指定服務的事件裝載選項對應輸出引數。 您也可以使用規則編輯器，建立處理叫用服務作業成功和失敗回應的規則。
+
+>[!NOTE]
+>
+> 若要進一步瞭解Invoke服務，[請按一下這裡](/help/forms/invoke-service-enhancements-rule-editor.md)。
+
+請參閱叫用表單資料模型(FDM)服務的規則範例。
 
 除了「表單資料模型」服務之外，您還可以指定直接的WSDL URL來叫用Web服務。 不過，表單資料模型服務有許多優點，且建議叫用服務的方法。
 
@@ -163,14 +167,14 @@ Allowed Multiple fields in When condition feature is disabled by default. To ena
 * 已啟用（布林值）
 * readOnly （布林值）
 * 必要（布林值）
-* screenReaderText （字符串）
-* 合法 （布林值 ）
-* 錯誤訊息 （字串）
+* screenReaderText （字串）
+* 有效（布林值）
+* errorMessage （字串）
 * 預設（數字、字串、日期）
 * enumNames （字串[]）
 * chartType （字串）
 
-例如，這可讓您定義規則，以便在按一下按鈕時顯示文字方塊。 您可以使用自訂函式、表單物件、物件屬性或服務輸出來定義規則。
+例如，它使您能夠定義規則以在按下按鈕時顯示文字框。 您可以使用自定義函數、表單對象、物件屬性或服務輸出來定義規則。
 
 ![設定屬性](assets/set_property_rule_new.png)
 
@@ -184,29 +188,29 @@ Allowed Multiple fields in When condition feature is disabled by default. To ena
 
 ![物件屬性](assets/object_property_set_property_new.png)
 
-**[!UICONTROL 清除值]** 清除指定物件的值。
+**[!UICONTROL 清除值]**&#x200B;清除指定物件的值。
 
-**[!UICONTROL 在指定的物件上設定焦點]** 集聚焦。
+**[!UICONTROL 設定焦點]**&#x200B;將焦點設定在指定的物件上。
 
-**[!UICONTROL 提交表單]** 。
+**[!UICONTROL 提交表單]**&#x200B;提交表單。
 
-****&#x200B;重設 重置表單或指定的物件。
+**[!UICONTROL 重設]**&#x200B;重設表單或指定的物件。
 
-**[!UICONTROL 驗證]** 驗證表單或指定的物件。
+**[!UICONTROL 驗證]**&#x200B;驗證表單或指定的物件。
 
-**[!UICONTROL 新增實例]** 新增指定重複面板或表格列的執行個體。
+**[!UICONTROL 新增執行個體]**&#x200B;新增指定之可重複面板或表格列的執行個體。
 
 **[!UICONTROL 移除執行個體]**&#x200B;移除指定之可重複面板或表格列的執行個體。
 
 **[!UICONTROL 函式輸出]**&#x200B;根據預先定義的函式或自訂函式定義規則。
 
-**[!UICONTROL 導覽至]**&#x200B;導覽至其他最適化Forms、影像或檔案片段等其他資產，或外部URL。<!-- For more information, see [Add button to the Interactive Communication](create-interactive-communication.md#addbuttontothewebchannel). -->
+**[!UICONTROL 導航到]** 導航到導航到其他自適應Forms、其他資產（例如圖像或文件片段）或外部URL。 <!-- For more information, see [Add button to the Interactive Communication](create-interactive-communication.md#addbuttontothewebchannel). -->
 
-**[!UICONTROL 分派事件]**&#x200B;根據預先定義的條件或事件觸發特定動作或行為。
+**[!UICONTROL 調度事件]** 根據預先定義的條件或事件觸發特定的動作或行為。
 
 #### [!UICONTROL 設定值] {#set-value-of}
 
-]**規則型別的**[!UICONTROL &#x200B;設定值可讓您依據指定的條件是否符合，來設定表單物件的值。 值可以設定為另一個物件的值、常值字串、衍生自數學運算式或函式的值、另一個物件的屬性值，或表單資料模型服務的輸出。 同樣地，您可以檢查元件、字串、屬性或衍生自函式或數學運算式的值的條件。
+規則 **[!UICONTROL 類型的「設置值]** 」允許您根據是否滿足指定的條件來設置表單物件的值。 該值可以設置為另一個物件的值、文本字串、從數學運算式或函數派生的值、另一個物件的屬性值或表單數據模型服務的輸出。 同樣地，您可以檢查元件、字串、屬性或衍生自函式或數學運算式的值的條件。
 
 **Set Value Of**&#x200B;規則型別不適用於所有表單物件，例如面板和工具列按鈕。 標準的「設定值」規則具有以下結構：
 
@@ -324,7 +328,7 @@ Allowed Multiple fields in When condition feature is disabled by default. To ena
 
 `(Condition 1 OR Condition 2 OR Condition 3) is TRUE;`
 
-同樣，您可以在面板&#x200B;**之間編寫**「導航」規則以將聚焦移動到上一個面板：
+同樣地，您可以撰寫&#x200B;**在面板之間導覽**&#x200B;將焦點移至上一個面板的規則：
 
 `Navigate among the panels`
 
@@ -334,9 +338,9 @@ Allowed Multiple fields in When condition feature is disabled by default. To ena
 
 `(Condition 1 OR Condition 2 OR Condition 3) is TRUE;`
 
-有關如何創建規則以在面板中導航的更多詳細資訊， [請按兩下此處](/help/forms/rule-editor-core-components-usecases.md#navigating-between-panels-using-buttons)。
+如需有關如何建立規則以在面板中導覽的詳細資訊，[請按一下這裡](/help/forms/rule-editor-core-components-usecases.md#navigating-between-panels-using-buttons)。
 
-#### [!UICONTROL 異步函數呼叫]
+#### [!UICONTROL 非同步函式呼叫]
 
 <span class="preview">這是一項預先發佈功能，可透過我們的[預先發佈管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features)存取。</span>
 

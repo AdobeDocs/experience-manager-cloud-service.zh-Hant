@@ -4,9 +4,9 @@ description: 最適化表單提供多個提交動作。提交動作會定義提�
 feature: Adaptive Forms, Foundation Components
 exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: db0487ab11f48690cb36b410b895324e0d4cf684
 workflow-type: tm+mt
-source-wordcount: '3914'
+source-wordcount: '3929'
 ht-degree: 72%
 
 ---
@@ -16,7 +16,8 @@ ht-degree: 72%
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
 | AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html) |
-| AEM as a Cloud Service  | 本文章 |
+| AEM as a Cloud Service （核心元件） | [按一下這裡](/help/forms/configure-submit-actions-core-components.md) |
+| AEM as a Cloud Service （基礎元件） | 本文章 |
 
 **套用至**： ✔️最適化表單基礎元件。 ❌ [最適化表單核心元件](/help/forms/configure-submit-actions-core-components.md)。 Adobe建議使用核心元件[將最適化Forms新增至AEM Sites頁面](create-or-add-an-adaptive-form-to-aem-sites-page.md)或[建立獨立的最適化Forms](creating-adaptive-form-core-components.md)。
 
@@ -31,6 +32,7 @@ ht-degree: 72%
 * [提交到 Azure Blob 儲存體](#azure-blob-storage)
 * [提交至 Power Automate](#microsoft-power-automate)
 * [提交至 Workfront Fusion](#workfront-fusion)
+* [提交至 Marketo Engage](/help/forms/integrate-form-to-marketo-engage.md)
 
 您也可以[擴充預設提交動作](custom-submit-action-form.md)以建立您自己的提交動作。
 
