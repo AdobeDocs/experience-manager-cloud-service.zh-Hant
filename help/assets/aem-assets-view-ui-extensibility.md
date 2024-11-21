@@ -4,9 +4,9 @@ description: 瞭解AEM Assets檢視的UI擴充功能。 AEM Assets檢視UI可讓
 feature: App Builder
 role: User, Developer
 exl-id: a11f7043-17cf-4331-b76c-d3db099c2411
-source-git-commit: e47a8fc65e58ae2ffff805966d7dae8c6edc7aac
+source-git-commit: af7e6ab40212dfa3d91cda80a76b1b6b01dd65a3
 workflow-type: tm+mt
-source-wordcount: '581'
+source-wordcount: '598'
 ht-degree: 3%
 
 ---
@@ -17,10 +17,13 @@ ht-degree: 3%
 | ------------- | --------------------------- |---------|----|-----|
 
 AEM Assets檢視具有UI擴充功能。 此功能可讓使用者新增自訂UI元件至Assets檢視UI，以符合AEM Assets檢視現成功能無法滿足的特定業務需求。 此擴充功能增強了AEM Assets檢視的彈性，可讓組織根據特定工作流程和需求調整介面。
-您可以將擴充功能新增至資產、資料夾和集合層級。 新增的擴充功能會顯示在資產、集合或資料夾詳細資訊頁面的專用面板中。
+您可以將擴充功能新增至資產、資料夾和集合層級。 新增的擴充功能會顯示在「資產」、「集合」或「資料夾詳細資訊」頁面的專用面板中。
 
 >[!IMPORTANT]
-> [AEM Assets Ultimate](/help/assets/assets-ultimate-overview.md)提供Assets檢視UI擴充功能。
+>
+> * [AEM Assets Ultimate](/help/assets/assets-ultimate-overview.md)提供Assets檢視UI擴充功能。
+> * Assets檢視UI擴充性可供Beta版本使用。 若要搶先使用Assets檢視UI擴充功能，請[建立並提交Adobe客戶支援案例](https://helpx.adobe.com/tw/enterprise/using/support-for-experience-cloud.html)。
+> * 您可以展開「詳細意見回饋」選項並按一下「報告問題」，以提供檔案意見回饋。
 
 ## <a id="1"></a>如何存取Assets檢視
 
@@ -32,9 +35,6 @@ AEM Assets檢視具有UI擴充功能。 此功能可讓使用者新增自訂UI�
 在Assets檢視中，導覽至資產、資料夾或集合的「詳細資訊」頁面。 此「詳細資訊」頁面有一個專用面板，可顯示新增的UI擴充功能。
 ![我的工作區](/help/assets/assets/my-workspace-assets-view3.png)
 
->[!NOTE]
->
-> AEM Assets檢視UI擴充性可供Beta版本使用。 您可以展開「詳細意見回饋」選項並按一下「報告問題」，以提供檔案意見回饋。
 
 ## 新增擴充性元件的先決條件
 
