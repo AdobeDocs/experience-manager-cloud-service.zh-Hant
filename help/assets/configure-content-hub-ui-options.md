@@ -2,7 +2,7 @@
 title: 設定 Content Hub 使用者介面
 description: 設定 Content Hub 使用者介面
 exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
-source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
+source-git-commit: 794d8f51f0a44b708538c491b8945c564382f1c5
 workflow-type: tm+mt
 source-wordcount: '1557'
 ht-degree: 15%
@@ -18,7 +18,7 @@ ht-degree: 15%
 >id="configure_content_hub"
 >title="設定 Content Hub 使用者介面"
 >abstract="Experience Manager Assets 可讓管理員設定 Content Hub 使用者介面上的可用選項。根據管理員選取的設定選項，Content Hub 使用者可以查看 Content Hub 上的欄位。設定選項包括匯入資產時的中繼資料、篩選器、資產屬性、搜尋資產時的中繼資料、個人化品牌和任何自訂連結。"
->additional-url="https://images-tv.adobe.com/mpcv3/4477/98bce651-721c-442e-98b8-c43e7708e44c_1698834577.854x480at800_h264.mp4" text="觀看影片"
+>additional-url="https://images-tv.adobe.com/mpcv3/4477/74a81d1c-0cfe-41f4-8a06-18ff70604e45_1732023385.854x480at800_h264.mp4" text="觀看影片"
 
 <!-- ![Download assets](assets/download-asset.jpg) -->
 ![在Content Hub上設定資產](assets/configure-assets.png)
