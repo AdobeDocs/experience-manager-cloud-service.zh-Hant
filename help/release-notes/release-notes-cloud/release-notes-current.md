@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: b72d5fca4113f6d3b9cbabab655e36f2370231d9
+source-git-commit: 083e334c2ac248e15168ae3ec4c8daf2b2888ee5
 workflow-type: tm+mt
-source-wordcount: '1721'
+source-wordcount: '1722'
 ht-degree: 40%
 
 ---
@@ -171,7 +171,7 @@ intuitive and improving the mobile form-filling experience.
 
 開發人員可將AEM作為Cloud Service功能深入整合到他們自己的應用計畫和工具中。 新的AEM as a Cloud Service API將遵循OpenAPI規格，目標是保持一致、詳細記錄且方便使用。 需要驗證的端點的憑證將由建立Adobe Developer Console專案產生。
 
-深入瞭解OpenAPI型AEM API，並嘗試端對端教學課程，以說明設定和使用方式。
+深入瞭解[以OpenAPI為基礎的AEM API](/help/implementing/developing/open-api-based-apis.md)，並嘗試使用[端對端教學課程](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis)來說明設定和使用方式。
 
 具體來說，底下列出的API端點屬於率先採用者計畫的一部分。 如有興趣，請傳送電子郵件至[aem-apis@adobe.com](mailto:aem-apis@adobe.com)，說明您打算如何使用這些工具。
 * [網站內容片段API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/)
