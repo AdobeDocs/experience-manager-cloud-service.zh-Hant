@@ -1,12 +1,12 @@
 ---
-title: 使用\s
+title: 使用設定管道
 description: 瞭解如何使用設定管道來部署不同的設定AEM as a Cloud Service，例如記錄轉送設定、清除相關的維護任務和各種CDN設定。
 feature: Operations
 role: Admin
 exl-id: bd121d31-811f-400b-b3b8-04cdee5fe8fa
-source-git-commit: 4d8f6f37541c0d712019f21a5684ec4bd5133de3
+source-git-commit: 20338fde4b0875f9f40a2f3f1702b8e1c01a0a88
 workflow-type: tm+mt
-source-wordcount: '997'
+source-wordcount: '998'
 ht-degree: 1%
 
 ---

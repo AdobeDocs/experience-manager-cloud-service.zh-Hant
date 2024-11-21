@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的運作方式以及該軟體可以為您做哪些事。
 breadcrumb-title: 使用手冊
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 2652582ce2a740c958c10bea42c7674513706735
+source-git-commit: 87acfc03c4497fcbfb94ff43cdd380cd6725bcf2
 workflow-type: tm+mt
-source-wordcount: '5799'
+source-wordcount: '5801'
 ht-degree: 98%
 
 ---
@@ -1095,7 +1095,7 @@ ht-degree: 98%
    + [為 AEM as a Cloud Service 實施應用程式](/help/implementing/home.md)
    + 使用 Cloud Manager {#using-cloud-manager}
       + [導覽](/help/implementing/cloud-manager/navigation.md)
-      + [AEM首頁](/help/implementing/cloud-manager/aem-home.md)
+      + [AEM 首頁](/help/implementing/cloud-manager/aem-home.md)
       + 方案 {#programs}
          + [方案和方案類型](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
          + [生產方案](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md)
@@ -1186,6 +1186,7 @@ ht-degree: 98%
       + [設定和設定瀏覽器](/help/implementing/developing/introduction/configurations.md)
       + [AEM 技術基礎](/help/implementing/developing/introduction/aem-technologies.md)
       + [API 參考資料](/help/implementing/developing/reference-materials.md)
+      + [OpenAPI型API](/help/implementing/developing/open-api-based-apis.md)
       + [為伺服器端 API 產生存取權杖](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md)
       + [為伺服器端 API 產生存取權杖 (舊版)](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis-legacy.md)
       + [快速網站建立和前端自訂](/help/implementing/developing/introduction/quick-site-creation.md)
