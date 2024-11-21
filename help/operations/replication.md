@@ -4,9 +4,9 @@ description: 瞭解AEM as a Cloud Service中的散佈和疑難排解復寫問題
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
 feature: Operations
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+source-git-commit: 60006b0e0b5215263b53cbb7fec840c47fcef1a8
 workflow-type: tm+mt
-source-wordcount: '1312'
+source-wordcount: '1701'
 ht-degree: 1%
 
 ---
@@ -23,11 +23,10 @@ Adobe Experience Manager as a Cloud Service使用[Sling內容發佈](https://sli
 
 >[!NOTE]
 >
->如果您想要大量發佈內容，請使用[Publish內容樹工作流程](#publish-content-tree-workflow)。
->此工作流程步驟是專為Cloud Service建置的，可有效處理大型負載。
+>如果您有興趣大量發佈內容，請使用[樹狀啟動工作流程步驟](#tree-activation)建立工作流程，以有效處理大量負載。
 >不建議建置您自己的大量發佈自訂程式碼。
->如果您因任何原因必須自訂，則可使用現有的工作流程API來觸發此工作流程/工作流程步驟。
->只發佈必須發佈的內容永遠是好的做法。 如果不需要的話，也請謹慎行事，不要嘗試發佈大量內容。 不過，您可以透過Publish內容樹工作流程傳送的內容數量沒有限制。
+>如果您因任何原因必須自訂，則可使用現有的工作流程API，透過此步驟觸發工作流程。
+>只發佈必須發佈的內容永遠是好的做法。 如果不需要的話，也不要嘗試發佈大量內容。 不過，您可以使用樹狀啟動工作流程步驟在工作流程中傳送的內容數量並無限制。
 
 ### 快速取消/Publish — 計畫取消/Publish {#publish-unpublish}
 
@@ -51,7 +50,84 @@ Adobe Experience Manager as a Cloud Service使用[Sling內容發佈](https://sli
 
 您可以在[出版基礎檔案](/help/sites-cloud/authoring/sites-console/publishing-pages.md#manage-publication)中找到有關管理出版的詳細資訊。
 
+### 樹狀結構啟動工作流程步驟 {#tree-activation}
+
+「樹啟動」工作流程步驟旨在有效複製內容節點的深層階層。 當佇列變得太大時，它會自動暫停，以允許其他複製以最小的延遲並行進行。
+
+建立使用`TreeActivation`程式步驟的工作流程模型：
+
+1. 從AEM as a Cloud Service首頁，移至&#x200B;**工具 — 工作流程 — 模型**。
+1. 在「工作流程模型」頁面中，按畫面右上角的&#x200B;**建立**。
+1. 新增標題和名稱至您的模型。 如需詳細資訊，請參閱[建立工作流程模型](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html)。
+1. 從清單中選取建立的模型，然後按&#x200B;**編輯**
+1. 在下列視窗中，刪除預設顯示的「步驟」
+1. 將「處理步驟」拖放至目前的模型流程：
+
+   ![處理步驟](/help/operations/assets/processstep.png)
+
+1. 在流程中選取「處理」步驟，並按扳手圖示選取&#x200B;**設定**。
+1. 選取「**處理序**」標籤，並從下拉式清單中選取「`Publish Content Tree`」，然後核取「**處理常式進階**」核取方塊
+
+   ![樹狀結構啟動](/help/operations/assets/new-treeactivationstep.png)
+
+1. 在&#x200B;**引數**&#x200B;欄位中設定任何其他引數。 多個以逗號分隔的引數可串連在一起。 例如：
+
+   `enableVersion=false,agentId=publish,chunkSize=50,maxTreeSize=500000,dryRun=false,filters=onlyModified,maxQueueSize=10`
+
+   >[!NOTE]
+   >
+   >如需引數清單，請參閱下方的&#x200B;**引數**&#x200B;區段。
+
+1. 按下&#x200B;**完成**&#x200B;以儲存工作流程模型。
+
+**引數**
+
+| 名稱 | 預設 | 說明 |
+| -------------- | ------- | --------------------------------------------------------------- |
+| 路徑 |         | 要開始的根路徑 |
+| agentId | 發佈 | 要使用的復寫代理程式名稱 |
+| chunkSize | 50 | 要繫結到單一復寫中的路徑數量 |
+| maxTreeSize | 500000 | 樹狀結構可視為小型的最大節點數 |
+| maxQueueSize | 10 | 復寫佇列中的專案數上限 |
+| enableVersion | false | 啟用版本設定 |
+| 練習版 | false | 設定為true時，實際上不會呼叫復寫 |
+| userId |         | 僅適用於工作。 在工作流程中，會使用呼叫工作流程的使用者 |
+| 個篩選條件 |         | 節點篩選器名稱清單。 請參閱下方支援的篩選器 |
+
+**支援篩選器**
+
+| 名稱 | 說明 |
+| ------------- | ------------------------------------------- |
+| onlyModified | 自上次發佈後修改的節點 |
+| onlyPublished | 之前發佈的節點 |
+
+
+**繼續支援**
+
+工作流程會以區塊處理內容，每個區塊代表要發佈的完整內容子集。  如果系統停止工作流程，則會從中斷處繼續。
+
+**監視工作流程進度**
+
+1. 從AEM as a Cloud Service首頁，移至&#x200B;**工具 — 一般 — 工作**。
+1. 檢視與工作流程對應的列。 *progress*&#x200B;資料行會顯示復寫進度。 例如，它可能會顯示41/564，而在重新整理時，它可能會更新為52/564。
+
+   ![樹狀啟動進度](/help/operations/assets/treeactivation-progress.png)
+
+
+1. 選取列並開啟它可提供工作流程執行狀態的更多詳細資訊。
+
+   ![樹狀啟動狀態詳細資料](/help/operations/assets/treeactivation-progress-details.png)
+
+
+
 ### 發佈內容樹狀工作流程 {#publish-content-tree-workflow}
+
+>[!NOTE]
+>
+>此功能已淘汰，以支援更高效能的樹狀結構啟動步驟（可包含在自訂工作流程中）。
+
+<details>
+<summary>按一下這裡以深入瞭解這項已棄用的功能。</summary>
 
 您可以選擇&#x200B;**工具 — 工作流程 — 模型**&#x200B;並複製&#x200B;**Publish內容樹狀結構**&#x200B;現成的工作流程模型，以觸發樹狀結構復寫，如下所示：
 
@@ -61,7 +137,7 @@ Adobe Experience Manager as a Cloud Service使用[Sling內容發佈](https://sli
 
 如同所有工作流程，您也可以透過API叫用。 如需詳細資訊，請參閱[以程式設計方式與工作流程互動](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-program-interaction.html#extending-aem)。
 
-或者，您可以建立使用`Publish Content Tree`處理步驟的工作流程模型：
+或者，您也可以建立使用`Publish Content Tree`處理步驟的工作流程模型。
 
 1. 從AEM as a Cloud Service首頁，移至&#x200B;**工具 — 工作流程 — 模型**。
 1. 在「工作流程模型」頁面中，按畫面右上角的&#x200B;**建立**。
@@ -117,10 +193,7 @@ Adobe Experience Manager as a Cloud Service使用[Sling內容發佈](https://sli
 ```
 21.04.2021 19:14:58.541 [cm-p123-e456-aem-author-797aaaf-wkkqt] *INFO* [JobHandler: /var/workflow/instances/server60/2021-04-20/brian-tree-replication-test-2_1:/content/wknd/us/en/adventures] com.day.cq.wcm.workflow.process.impl.ChunkedReplicator closing chunkedReplication-VolatileWorkItem_node1_var_workflow_instances_server60_2021-04-20_brian-tree-replication-test-2_1, 17 paths replicated in 2971 ms
 ```
-
-**繼續支援**
-
-工作流程會以區塊處理內容，每個區塊代表要發佈的完整內容子集。 如果系統停止工作流程，則會重新啟動並處理尚未處理的區塊。 記錄陳述式指出內容已從特定路徑恢復。
+</details>
 
 ### 復寫API {#replication-api}
 

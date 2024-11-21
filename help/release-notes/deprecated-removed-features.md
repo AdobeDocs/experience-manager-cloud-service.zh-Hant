@@ -4,10 +4,10 @@ description: 特定於  [!DNL Adobe Experience Manager] as a [!DNL Cloud Service
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: de73e38580895e3d8fe2029b59907d4c722556db
+source-git-commit: 644228b1bdae20c1ed6ca1de71b4c60d75f2cc4a
 workflow-type: tm+mt
-source-wordcount: '2576'
-ht-degree: 96%
+source-wordcount: '2603'
+ht-degree: 93%
 
 ---
 
@@ -42,9 +42,11 @@ Adobe 會持續評估產品功能，逐漸利用更現代化的替代方案重�
 | [!DNL Assets] | 直接將資產上傳到 [!DNL Experience Manager]。請參閱[已過時的資產上傳 API](/help/assets/developer-reference-material-apis.md#deprecated-asset-upload-api)。 | 使用[直接二進位上傳](/help/assets/add-assets.md)。如需技術詳細資訊，請參閱[直接上傳 API](/help/assets/developer-reference-material-apis.md#upload-binary)。 |
 | [!DNL Assets] | 不支援 [ 工作流程中的](/help/assets/developer-reference-material-apis.md#post-processing-workflows-steps)某些工作流程步驟`DAM Asset Update`，包括呼叫命令列工具，例如 [!DNL ImageMagick]. | [資產微服務](/help/assets/asset-microservices-overview.md)可取代許多工作流程。若要自訂處理程序，請使用[後期處理工作流程](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows)。 |
 | [!DNL Assets] | FFmpeg 影片轉碼。 | 若要產生 FFmpeg 縮圖，請使用[資產微服務](/help/assets/asset-microservices-overview.md)。若是 FFmpeg 轉碼，請使用 [Dynamic Media](/help/assets/manage-video-assets.md)。 |
-| [!DNL Foundation] | 複寫代理程式的「散發」標籤下的樹狀結構複寫 UI (2021 年 9 月 30 日後移除) | [管理出版物](/help/operations/replication.md#manage-publication)或[發佈內容樹工作流程](/help/operations/replication.md#publish-content-tree-workflow)方法 |
-| [!DNL Foundation] | 複寫代理程式管理員畫面的「散發」標籤和複寫 API 都不能用於複寫超過 10MB 的內容套件。請改用[管理出版物](/help/operations/replication.md#manage-publication)或[發佈內容樹工作流程](/help/operations/replication.md#publish-content-tree-workflow) |
+| [!DNL Foundation] | 複寫代理程式的「散發」標籤下的樹狀結構複寫 UI (2021 年 9 月 30 日後移除) | [管理出版物](/help/operations/replication.md#manage-publication)或[樹狀結構啟動工作流程步驟](/help/operations/replication.md#tree-activation)方法。 |
+| [!DNL Foundation] | 復寫代理程式管理畫面的「散發」標籤和復寫API都不能用於復寫超過10MB的內容套件。 | [管理出版物](/help/operations/replication.md#manage-publication)或[樹狀結構啟動工作流程步驟](/help/operations/replication.md#tree-activation) |
 | [!DNL Foundation] | 使用從 Adob&#x200B;&#x200B;e Developer Console 專案產生的憑證來整合，將逐漸失去對服務帳戶 (JWT) 憑證的支援。2024 年 5 月 1 日或之後，無法在 Adobe Developer Console 中建立新的服務帳戶(JWT) 憑證，但在 2025 年 1 月 1 日之前，現有服務帳戶 (JWT) 憑證仍可用於已設定的整合，到那時候，現有服務帳戶 (JWT) 憑證將不再有效，且客戶必須移轉到 OAuth Server-to-Server 憑證。[了解更多](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/security/jwt-credentials-deprecation-in-adobe-developer-console)。 | [移轉](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#migration-overview)至 OAuth Server-to-Server 憑證。 |
+| [!DNL Foundation] | Publish內容樹工作流程和相關的Publish內容樹工作流程步驟，用於複製內容的階層。 | 使用[樹狀結構啟動工作流程步驟](/help/operations/replication.md#tree-activation)，其效能更高。 |
+
 
 ## 移除的功能 {#removed-features}
 
