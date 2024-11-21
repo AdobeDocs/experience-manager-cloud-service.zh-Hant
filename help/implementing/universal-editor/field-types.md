@@ -4,10 +4,10 @@ description: 透過範例瞭解通用編輯器可在屬性面板中編輯的欄�
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
+source-git-commit: 13e5d573d7522d9772f5a4080c2b2f0b460b5513
 workflow-type: tm+mt
-source-wordcount: '1281'
-ht-degree: 11%
+source-wordcount: '1343'
+ht-degree: 10%
 
 ---
 
@@ -139,7 +139,7 @@ AEM標籤元件型別會啟用AEM標籤選擇器，其可用來將標籤附加�
 
 #### AEM內容 {#aem-content}
 
-AEM內容元件型別會啟用AEM內容選擇器，其可用於設定內容參照。 它提供額外的驗證型別。
+AEM內容元件型別會啟用AEM內容選擇器，其可用於選取任何AEM資源。 不同於[參考元件](#reference) （僅能選取資產），AEM內容元件可參考任何AEM內容。 它提供額外的驗證型別。
 
 | 驗證類型 | 數值類型 | 說明 | 必填 |
 |---|---|---|---|
@@ -636,6 +636,8 @@ AEM內容元件型別會啟用AEM內容選擇器，其可用於設定內容參�
 >[!ENDTABS]
 
 #### 參考 {#reference}
+
+參考元件型別會啟用AEM資產選取器，這可讓您選取要參考的任何AEM資產。 與可以選取任何AEM資源的[AEM內容元件](#aem-content)不同，參考元件只能參考資產。 它提供額外的驗證型別。
 
 參照元件型別允許參照目前物件中的其他資料物件。
 
