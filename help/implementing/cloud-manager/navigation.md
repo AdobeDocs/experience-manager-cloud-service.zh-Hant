@@ -5,9 +5,9 @@ exl-id: 3f3d7631-2bc9-440b-9888-50f6529bcd42
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 767f6609b3f585630d45aee0d61483dbe66f66cf
+source-git-commit: f24b2672431ecf7b7b0ed11b6dc9b09344946239
 workflow-type: tm+mt
-source-wordcount: '1661'
+source-wordcount: '1659'
 ht-degree: 39%
 
 ---
@@ -249,7 +249,7 @@ Cloud Manager UI 主要由兩個圖形介面組成：
 
 ### 管道資訊卡 {#pipelines}
 
-「**管道**」卡片為您提供管道的概觀以及快速動作的連結。
+「**管道**」卡片為您提供管道的概觀和快速動作的連結。
 
 「**管道**」卡片只列出了三個管道。按一下「**全部顯示**」按鈕即可查看方案的所有管道。
 

@@ -6,9 +6,9 @@ exl-id: 4aff5a84-134a-43fa-8de8-8d564f4edd16
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f7a8e823f058115f11241f0864517432a7dea5ab
+source-git-commit: f24b2672431ecf7b7b0ed11b6dc9b09344946239
 workflow-type: tm+mt
-source-wordcount: '1164'
+source-wordcount: '1162'
 ht-degree: 34%
 
 ---
@@ -62,7 +62,7 @@ ht-degree: 34%
 
 ## 活動頁面 {#activity}
 
-**活動**&#x200B;頁面會顯示所選方案以及其他重要方案事件的所有管道執行的完整清單。
+**活動**&#x200B;頁面會顯示所選方案和其他重要方案事件的所有管道執行的完整清單。
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織和方案。
 
