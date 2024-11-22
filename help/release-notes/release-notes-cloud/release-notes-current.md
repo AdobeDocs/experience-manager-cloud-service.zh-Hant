@@ -5,7 +5,7 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 5d2c09a3e1c67e6c2435d84112546107d284259f
+source-git-commit: 83bc4e09cc7b6c420eee64091fab773ee1dcbd85
 workflow-type: tm+mt
 source-wordcount: '1778'
 ht-degree: 39%
@@ -54,7 +54,7 @@ Have a look at the November 2024 Release Overview video for a summary of the fea
 
 ### AEM Sites中的發行前功能
 
-透過不重複ID型參考增強內容片段參考，確保即使移動資產或片段時穩定連結仍保持有效，無需更新或重新發佈。 目前的限制：不支援使用唯一ID的頁面參考。 如果頁面在內容片段中參照，則不應使用此功能。
+使用不重複ID型參考資料增強[內容片段參考](/help/headless/graphql-api/uuid-reference-upgrade.md)，確保即使移動資產或片段時仍可保持有效的穩定連結，無需更新或重新發佈。 目前的限制：不支援使用唯一ID的頁面參考。 如果頁面在內容片段中參照，則不應使用此功能。
 
 ### 早期採用者計劃 {#sites-early-adopter}
 
