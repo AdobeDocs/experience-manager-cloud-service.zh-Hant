@@ -5,14 +5,20 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: 8ab5b15f-cefc-45bf-a388-928e8cc8c603
 solution: Experience Manager Sites
-source-git-commit: 862a1f67782775cc1b2ee6e3d3d66ae5560a15ab
+source-git-commit: e59c432a2f6b0f2034829b3cb3f88679aa182048
 workflow-type: tm+mt
-source-wordcount: '3284'
+source-wordcount: '3591'
 ht-degree: 3%
 
 ---
 
 # 內容片段模型 {#content-fragment-models}
+
+>[!IMPORTANT]
+>
+>透過早期採用者計畫可以使用內容片段模型的各種功能。
+>
+>若要檢視狀態，以及如果您有興趣要如何套用，請檢視[發行說明](/help/release-notes/release-notes-cloud/release-notes-current.md)。
 
 Adobe Experience Manager (AEM)中的內容片段模型as a Cloud Service定義[內容片段](/help/sites-cloud/administering/content-fragments/overview.md)的內容結構。 這些片段隨後可用於頁面製作，或用作Headless內容的基礎。
 
@@ -180,18 +186,33 @@ Adobe Experience Manager (AEM)中的內容片段模型as a Cloud Service定義[�
 
 * **標籤**
    * 允許片段作者存取及選取標籤區域
+* **片段參考**
+   * 參考其他內容片段；可用於[建立巢狀內容](#using-references-to-form-nested-content)
+   * 可以設定此資料類型以允許片段作者：
+      * 直接編輯參考的片段。
+      * 根據適當的模式建立新的內容片段
+      * 建立欄位的新執行個體
+   * 參考指定參考資源的路徑；例如`/content/dam/path/to/resource`
+* **片段參考(UUID)**
+   * 參考其他內容片段；可用於[建立巢狀內容](#using-references-to-form-nested-content)
+   * 可以設定此資料類型以允許片段作者：
+      * 直接編輯參考的片段。
+      * 根據適當的模式建立新的內容片段
+      * 建立欄位的新執行個體
+   * 在編輯器中，參考會指定參考資源的路徑；在內部參考會儲存為參考資源的通用唯一ID (UUID)
+      * 您不需要知道UUID；在片段編輯器中，您可以瀏覽到所需的片段
 
 * **內容參考**
    * 參考任何型別的其他內容；可用於[建立巢狀內容](#using-references-to-form-nested-content)
    * 如果參照了影像，您可以選擇顯示縮圖
    * 欄位可設定為允許片段作者建立欄位的新執行個體
-
-* **片段參考**
-   * 參考其他內容片段；可用於[建立巢狀內容](#using-references-to-form-nested-content)
-   * 欄位可設定為允許片段作者：
-      * 直接編輯參照的片段
-      * 根據適當的模式建立新的內容片段
-      * 建立欄位的新執行個體
+   * 參考指定參考資源的路徑；例如`/content/dam/path/to/resource`
+* **內容參考(UUID)**
+   * 參考任何型別的其他內容；可用於[建立巢狀內容](#using-references-to-form-nested-content)
+   * 如果參照了影像，您可以選擇顯示縮圖
+   * 欄位可設定為允許片段作者建立欄位的新執行個體
+   * 在編輯器中，參考會指定參考資源的路徑；在內部參考會儲存為參考資源的通用唯一ID (UUID)
+      * 您不需要知道UUID；在片段編輯器中，您可以瀏覽到所需的資產資源
 
 * **JSON物件**
    * 允許內容片段作者在片段的對應元素中輸入JSON語法。
@@ -293,17 +314,28 @@ Adobe Experience Manager (AEM)中的內容片段模型as a Cloud Service定義[�
 
 內容片段可使用下列任一種資料型別來形成巢狀內容：
 
-* **[內容參考](#content-reference)**
+* [內容參考](#content-reference)
    * 提供其他內容的簡單參照；任何型別。
+   * 由資料型別提供：
+      * **內容參考** — 以路徑為基礎
+      * **內容參考(UUID)** — 以UUID為基礎
    * 可以為一個或多個參考（在產生的片段中）設定。
 
-* **[片段參考](#fragment-reference-nested-fragments)** （巢狀片段）
+* [片段參考](#fragment-reference-nested-fragments) （巢狀片段）
    * 根據指定的特定模型，參考其他片段。
+   * 由資料型別提供：
+      * **片段參考** — 以路徑為基礎
+      * **片段參考(UUID)** — 以UUID為基礎
    * 可讓您包含/擷取結構化資料。
+
      >[!NOTE]
      >
      當您透過GraphQL](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md)使用內容片段的[Headless內容傳遞時，此方法特別令人感興趣。
    * 可以為一個或多個參考（在產生的片段中）設定。
+
+>[!NOTE]
+>
+請參閱[升級您的UUID參考內容片段](/help/headless/graphql-api/uuid-reference-upgrade.md)，以取得有關內容/片段參考和內容/片段參考(UUID)以及升級為UUID型資料型別的進一步資訊。
 
 >[!NOTE]
 >
@@ -323,11 +355,11 @@ AEM針對下列專案提供週期性保護：
 
 ### 內容參考 {#content-reference}
 
-內容參考可讓您轉譯來自其他來源的內容；例如，影像、頁面或體驗片段。
+**內容參考**&#x200B;和&#x200B;**內容參考(UUID)**&#x200B;資料型別可讓您轉譯來自其他來源的內容；例如，影像、頁面或體驗片段。
 
 除了標準屬性之外，您還可以指定：
 
-* **根路徑**，指定儲存任何參考內容的位置
+* **根路徑**，指定或代表要儲存任何參考內容的位置
   >[!NOTE]
   >
   如果您想在使用內容片段編輯器時直接在此欄位上傳和參考影像，則必須使用此選項。
@@ -350,7 +382,7 @@ AEM針對下列專案提供週期性保護：
 
 ### 片段參考（巢狀片段） {#fragment-reference-nested-fragments}
 
-片段參考會參考一或多個內容片段。 此功能可讓您擷取多個圖層的結構化資料，在擷取應用程式中使用的內容時特別感興趣。
+**片段參考**&#x200B;和&#x200B;**片段參考(UUID)**&#x200B;資料型別可以參考一或多個內容片段。 此功能可讓您擷取多個圖層的結構化資料，在擷取應用程式中使用的內容時特別感興趣。
 
 例如：
 
@@ -387,7 +419,7 @@ type CompanyModel {
 可選取多個模型。 將參照新增至內容片段時，任何參照的片段都必須使用這些模型建立。
 
 * **根路徑**
-這會指定所參考之任何片段的根路徑。
+這會指定或表示任何參考片段的根路徑。
 
 * **允許建立片段**
 

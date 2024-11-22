@@ -4,16 +4,22 @@ description: 透過探索範例內容和查詢，了解如何搭配使用 GraphQ
 feature: Headless, Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
 role: Admin, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
-workflow-type: ht
-source-wordcount: '1826'
-ht-degree: 100%
+source-git-commit: afff23f505b789667e4d34683d0dfd11b1a436a8
+workflow-type: tm+mt
+source-wordcount: '1940'
+ht-degree: 94%
 
 ---
 
 # 了解搭配使用 GraphQL 與 AEM - 範例內容和查詢 {#learn-graphql-with-aem-sample-content-queries}
 
 透過探索範例內容和查詢，了解如何搭配使用 GraphQL 與 AEM 以提供 Headless 內容。
+
+>[!IMPORTANT]
+>
+>適用於內容片段的GraphQL API各項功能，可透過早期採用者計畫取得。
+>
+>若要檢視狀態，以及如果您有興趣要如何套用，請檢視[發行說明](/help/release-notes/release-notes-cloud/release-notes-current.md)。
 
 >[!NOTE]
 >
@@ -1479,6 +1485,79 @@ query {
         ... on ArchiveRef {
           _path
           format
+        }
+      }
+    }
+  }
+}
+```
+
+### 使用UUID參考的特定模型內容片段範例查詢 {#sample-wknd-fragment-specific-model-uuid-references}
+
+<!-- CQDOC-21487 - need more details on both, text must be checked too -->
+
+此查詢會質詢：
+
+* 內容片段以及參考的內容片段或資產的UUID
+* 透過JSON屬性`_id`傳回結果
+
+#### 使用UUID參考的特定模型的內容片段範例查詢 {#sample-wknd-fragment-specific-model-using-a-uuid-reference}
+
+下列查詢使用`_id`和`_path`傳回所有內容參考：
+
+```graphql
+{
+  articleList {
+    items {
+        _id
+        _path
+        title
+        featuredImage {
+          ... on ImageRef {
+            _id
+            _path           
+          }
+        }
+        authorFragment {
+          firstName
+          lastName
+          profilePicture {
+            ... on ImageRef {
+              _id
+              _path
+            }
+          }
+        }
+      }
+  }
+}
+```
+
+#### 依UUID參考的內容片段範例查詢 {#sample-wknd-fragment-specific-model-by-uuid-reference}
+
+下列查詢會傳回與特定`_id`相關的所有內容參考：
+
+```graphql
+{
+  articleById(_id: "3ce2bf53-7436-4d3e-b19a-2793bc2ca63e") {
+    item {
+      _id
+      _path
+      title
+      featuredImage {
+        ... on ImageRef {
+          _id
+          _path
+        }
+      }
+      authorFragment {
+        firstName
+        lastName
+        profilePicture {
+          ... on ImageRef {
+            _id
+            _path
+          }
         }
       }
     }

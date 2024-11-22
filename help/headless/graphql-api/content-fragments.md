@@ -4,15 +4,21 @@ description: 了解如何將 Adobe Experience Manager (AEM) as a Cloud Service �
 feature: Headless, Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 role: Admin, Developer
-source-git-commit: 575b626447f6b88c1be601fbbd4de7eeb0264019
+source-git-commit: e44872277c4bda66fafd074416ea5253c365cc2f
 workflow-type: tm+mt
-source-wordcount: '5582'
-ht-degree: 98%
+source-wordcount: '5814'
+ht-degree: 95%
 
 ---
 
 
 # 與內容片段搭配使用的 AEM GraphQL API {#graphql-api-for-use-with-content-fragments}
+
+>[!IMPORTANT]
+>
+>適用於內容片段的GraphQL API各項功能，可透過早期採用者計畫取得。
+>
+>若要檢視狀態，以及如果您有興趣要如何套用，請檢視[發行說明](/help/release-notes/release-notes-cloud/release-notes-current.md)。
 
 了解如何將 Adobe Experience Manager (AEM) as a Cloud Service 中的內容片段與 AEM GraphQL API 搭配使用，以實現 Headless 內容傳遞。
 
@@ -252,6 +258,8 @@ Sites GraphQL 服務偵聽 (在背景) 對內容片段模型所做的任何修�
 
 GraphQL for AEM 支援類型清單。表示所有支援的內容片段模型資料類型和對應的 GraphQL 類型：
 
+<!-- CQDOC-21487 - check additions to table -->
+
 | 內容片段模型 - 資料類型 | GraphQL 類型 | 說明 |
 |--- |--- |--- |
 | 單行文字 | `String`、`[String]` | 用於簡單的字串，例如作者姓名、位置名稱等。 |
@@ -262,7 +270,9 @@ GraphQL for AEM 支援類型清單。表示所有支援的內容片段模型資�
 | 列舉 | `String` | 用於顯示模型建立時定義之選項清單中的選項 |
 | 標記 | `[String]` | 用於顯示字串清單，字串代表 AEM 中使用的標記 |
 | 內容參考 | `String`、`[String]` | 用於顯示 AEM 中另一個資產的路徑 |
+| 內容參考 (UUID) | `String`、`[String]` | 用於顯示路徑，以AEM中通往其他資產的UUID表示 |
 | 片段參考 |  *模型類型* <br><br>單一欄位：`Model` - 模型類型，直接參考<br><br>多個欄位，具單一參考類型：`[Model]` - `Model` 類型陣列，從陣列直接參考<br><br>多個欄位，具多個參考類型：`[AllFragmentModels]` - 所有模型類型陣列，從聯合類型的陣列參考 | 用於參考特定模型類型的一個或多個內容片段，在建立模型時定義 |
+| 片段參考 (UUID) |  *模型類型* <br><br>單一欄位：`Model` - 模型類型，直接參考<br><br>多個欄位，具單一參考類型：`[Model]` - `Model` 類型陣列，從陣列直接參考<br><br>多個欄位，具多個參考類型：`[AllFragmentModels]` - 所有模型類型陣列，從聯合類型的陣列參考 | 用於參考特定模型類型的一個或多個內容片段，在建立模型時定義 |
 
 {style="table-layout:auto"}
 
@@ -306,6 +316,27 @@ GraphQL for AEM 支援類型清單。表示所有支援的內容片段模型資�
 ```
 
 請參閱[範例查詢 - 單一特定城市片段](/help/headless/graphql-api/sample-queries.md#sample-single-specific-city-fragment)。
+
+#### ID (UUID) {#id-uuid}
+
+此ID欄位也會用作AEM GraphQL中的識別碼。 它代表AEM存放庫中內容片段資產的路徑，但不會儲存實際路徑，而是儲存代表資源的UUID。 我們選擇它作為內容片段的標識符，因為它：
+
+* 在 AEM 中是唯一的，
+* 可以輕鬆擷取，
+* 不會變更資源移動的時間。
+
+內容片段和參照內容片段或資產的UUID，可透過JSON屬性`_id`傳回。
+
+```graphql
+{
+  articleList {
+    items {
+        _id
+        _path
+    }
+  }
+}
+```
 
 #### 中繼資料 {#metadata}
 
@@ -1112,6 +1143,11 @@ query allTeams {
 
       * `_path`：存放庫中內容片段的路徑
          * 請參閱[範例查詢 - 單一特定城市片段](/help/headless/graphql-api/sample-queries.md#sample-single-specific-city-fragment)
+
+      * `_id_` ：存放庫中內容片段的UUID
+        <!-- CQDOC-21487 -->
+         * 檢視具有UUID參考之特定模型的內容片段的[範例查詢](/help/headless/graphql-api/sample-queries.md#sample-wknd-fragment-specific-model-uuid-references)
+         * [請參閱依UUID參考的內容片段範例查詢](/help/headless/graphql-api/sample-queries.md#sample-wknd-fragment-specific-model-uuid-reference)
 
       * `_reference`：顯示參考；包含 RTF 編輯器中的內聯參考
          * 請參閱[預先擷取參考之多個內容片段的範例查詢](/help/headless/graphql-api/sample-queries.md#sample-wknd-multiple-fragments-prefetched-references)
