@@ -4,9 +4,9 @@ description: 特定於  [!DNL Adobe Experience Manager] as a [!DNL Cloud Service
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: 644228b1bdae20c1ed6ca1de71b4c60d75f2cc4a
+source-git-commit: 0ab75d1e49e06152cf3f4e8effe7d6d918b262c8
 workflow-type: tm+mt
-source-wordcount: '2603'
+source-wordcount: '2709'
 ht-degree: 93%
 
 ---
@@ -501,16 +501,71 @@ Adobe 會持續評估產品功能，逐漸利用更現代化的替代方案重�
       * 類型：布林值
 +++
 
-## Java執行階段更新至21版 {#java-runtime-update-21}
+## Java Runtime 更新至 21 版 {#java-runtime-update-21}
 
-AEM as a Cloud Service將移至Java 21執行階段。 為了確保相容性，必須進行下列調整：
+AEM as a Cloud Service 將移至 Java 21 Runtime。為確保相容性，必須進行以下調整：
 
-### org.objectweb.asm {#org.objectweb.asm}的最低版本
+### 建置時間要求：
 
-將org.objectweb.asm的使用更新至9.5版或更新版本，以確保支援更新的JVM執行階段。
+#### org.objectweb.asm 的最低版本{#org.objectweb.asm}
 
-### org.apache.groovy {#org.apache.groovy}的最低版本
+將 org.objectweb.asm 使用更新至 9.5 版以上，以確保支援新版的 JVM Runtime。
 
-將org.apache.groovy的使用更新至4.0.22版或更新版本，以確保支援更新的JVM執行階段。
+#### org.apache.groovy 的最低版本{#org.apache.groovy}
 
-可以透過新增第三方相依性(例如AEM Groovy Console)來間接包含此套件。
+將 org.apache.groovy 使用更新至 4.0.22 版以上，以確保支援新版 JVM Runtime。
+
+新增第三方相依性 (例如 AEM Groovy 主控台) 可以間接包含此搭售方案。
+
+#### bnd-maven-plugin的最低版本 {#bnd-maven-plugin}
+
+將bnd-maven-plugin的使用更新至6.4.0版或更新版本，以確保支援更新的JVM執行階段。
+
+#### aemanalyzer-maven-plugin的最低版本 {#aemanalyser-maven-plugin}
+
+將aemanalyser-maven-plugin的使用更新至1.6.6版或更新版本，以確保支援更新的JVM執行階段。
+
+#### maven-bundle-plugin的最低版本  {#maven-bundle-plugin}
+
+將maven-bundle-plugin的使用更新至5.1.5版或更新版本，以確保支援更新的JVM執行階段。
+
+#### 更新maven-scr-plugin中的相依性  {#maven-scr-plugin}
+
+`maven-scr-plugin`與Java 17和21不直接相容。 不過，您可以更新外掛程式組態內的ASM相依性版本，來產生描述項檔案，類似於下列程式碼片段：
+
+```
+[source,xml]
+ <project>
+   ...
+   <build>
+     ...
+     <plugins>
+       ...
+       <plugin>
+         <groupId>org.apache.felix</groupId>
+         <artifactId>maven-scr-plugin</artifactId>
+         <version>1.26.4</version>
+         <executions>
+           <execution>
+             <id>generate-scr-scrdescriptor</id>
+             <goals>
+               <goal>scr</goal>
+             </goals>
+           </execution>
+         </executions>
+         <dependencies>
+           <dependency>
+             <groupId>org.ow2.asm</groupId>
+             <artifactId>asm-analysis</artifactId>
+             <version>9.7.1</version>
+             <scope>compile</scope>
+           </dependency>
+         </dependencies>
+       </plugin>
+       ...
+     </plugins>
+     ...
+   </build>
+   ...
+ </project>
+```
