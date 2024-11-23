@@ -7,7 +7,7 @@ role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
 exl-id: 1bfa47e1-fb2f-4b68-ac69-4618a9e4a5f4
-source-git-commit: 0ca20c601a640e7acea5b49c7d399475e7af9fbc
+source-git-commit: ecf42a4bda424bb344e1b348924f1435a99f26c7
 workflow-type: tm+mt
 source-wordcount: '384'
 ht-degree: 34%
@@ -52,5 +52,6 @@ Widget也可以在頁面上調整大小和重新定位，以更符合您的需�
 如果沒有可用的生產AEM Cloud Service環境，則使用者的選項會顯示為暗灰色（無法使用）。
 
 ![](/help/implementing/cloud-manager/assets/aem-home-no-prod-environs.png)
+
 
 
