@@ -3,9 +3,9 @@ title: 傳遞 API
 description: 瞭解如何使用傳送API。
 role: User
 exl-id: 806ca38f-2323-4335-bfd8-a6c79f6f15fb
-source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
+source-git-commit: 7727aa87693cc96e3497dcda71190866b198975d
 workflow-type: tm+mt
-source-wordcount: '589'
+source-wordcount: '619'
 ht-degree: 3%
 
 ---
@@ -40,6 +40,11 @@ Experience Manager資產存放庫中所有可用的[已核准資產](approve-ass
 | [資產中繼資料](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetMetadata) | 傳回與資產關聯的屬性，例如，標題、說明、CreateDate、ModifyDate等。 |
 | 視訊資產的[播放器容器](https://adobe-aem-assets-delivery.redoc.ly/#operation/videoPlayerDelivery) | 傳回視訊資產的播放器容器。 您可以將播放器內嵌至iframeHTML元素中，並播放視訊。 |
 | [播放資料清單為選取的輸出格式](https://adobe-aem-assets-delivery.redoc.ly/#operation/videoManifestDelivery) | 以選取的輸出格式傳回指定視訊資產的播放資訊清單檔案。 您必須建置能夠透過HLS或DASH通訊協定進行自我調整資料流的自訂播放器，才能提取播放資訊清單檔案並播放視訊。 |
+
+
+>[!NOTE]
+>
+[影像預設集、智慧型影像以及其他影像修飾元](https://adobe-aem-assets-delivery-advancemodifiers.redoc.ly/)是您可用的有限功能。 若要取得存取權，請[建立並提交Adobe客戶支援案例](https://helpx.adobe.com/tw/enterprise/using/support-for-experience-cloud.html)。
 
 ## 傳送API端點 {#delivery-apis-endpoint}
 
