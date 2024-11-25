@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: f9f3d1fcb32445269e5ca4b9479b8e9075c73c10
 workflow-type: tm+mt
 source-wordcount: '852'
-ht-degree: 72%
+ht-degree: 98%
 
 ---
 
@@ -18,16 +18,16 @@ ht-degree: 72%
 
 ## 版本 18598 {#18598}
 
-以下摘要說明維護版本18598數的持續改善，該版本於2024年11月13日公開發佈。 之前的維護版本是版本 18311。由於問題，版本 18459 已設為私人版本。
+以下是維護版本 18598 持續改善內容的摘要；此版本於 2024 年 11 月 13 日公開發行。之前的維護版本是版本 18311。由於發生問題，版本 18459 已設為私人版本。
 
 2024.11.0 功能啟用將提供此維護版本的完整功能集。如需詳細資訊，請參閱 [Experience Manager 發行藍圖](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)。
 
 ### 增強功能 {#enhancements-18598}
 
 * CQ-4357471：在 AEMaaCS 中新增對 i18n 字典翻譯的支援。
-* Forms-11646：為AEM Forms相關頁面設定globalContext變數。
-* Forms-14833： AEM Forms現在能在最終記錄檔案(DoR)中包含最適化表單片段。
-* Forms-14255：使用者現在可以受益於自動儲存功能，該功能會自動將部分完成的表單儲存為草稿。 他們可以稍後再回來，在相同或其他裝置上完成填寫。
+* FORMS-11646：為 AEM Forms 相關頁面設定 globalContext 變數。
+* FORMS-14833：AEM Forms 現在可以將最適化表單的片段包含在最終記錄文件 (DoR) 中。
+* FORMS-14255：使用者現在可以享受自動儲存的好處，此功能會將部分完成的表單自動儲存為草稿。使用者可以稍後再使用同一部裝置或其他裝置完成填寫。
 * SITES-23591：內容片段：UUID 支援的內容片段升級。
 * SITES-25440：內容片段：CFM 搜尋 API 可顯示複寫狀態。
 * SITES-24369：內容片段：OpenAPI 文件改善。
@@ -41,14 +41,14 @@ ht-degree: 72%
 ### 已修正的問題 {#fixed-issues-18598}
 
 * CQ-4358730：有超過 10 個索引鍵需要翻譯時，CQPagePreviewGenerator 會失敗。
-* CQ-4358028：當只有專案管理員群組的使用者在專案建立頁面上上傳新縮圖時，AEM專案建立失敗。
-* FORMS-14978：為主題編輯器的核心元件式表單啟用頁面載入。
-* Forms-15682：問題與AEM Forms和Dynamics FDM整合有關。 當使用者提交表單時，記錄檔案(DOR)未作為PDF附件傳送到指定實體欄位。
-* Forms-15799： Adobe Sign GovCloud簽名頁面不會在iframe中轉譯。
-* Forms-16113：當身為Adobe Sign帳戶管理員的使用者嘗試存取由另一個使用者（也是管理員）傳送的檔案時，取得合約API可能會傳回與最初建立合約時產生的合約ID不同的合約ID。
-* FORMS-16596：協助工具問題：螢幕閱讀器無法識別停用按鈕。
-* GRANITE-53907：無法將服務使用者識別為工作流程超級使用者。
-* SKYOPS-90560：最新Sling模型版本影響Sling模型匯出的效能。
+* CQ-4358028：當僅具有專案管理員群組的使用者在專案建立頁面上傳新縮圖時，無法建立 AEM 專案。
+* FORMS-14978：讓主題編輯器基於核心元件的表單啟用頁面載入。
+* FORMS-15682：此問題涉及 AEM Forms 和 Dynamics FDM 整合。當使用者提交表單時，記錄文件 (DOR) 不會以 PDF 附件傳送到指定的實體欄位。
+* FORMS-15799：Adobe Sign GovCloud 簽章頁面不會在 iframe 中轉譯。
+* FORMS-16113：作為 Adobe Sign 帳戶管理員的使用者嘗試存取其他使用者 (同時也是管理員) 發送的文件時，取得協議 API 所傳回的協議 ID 可能與建立協議時最初產生的協議 ID 不同。
+* FORMS-16596：協助工具問題：螢幕閱讀器無法識別停用的按鈕。
+* GRANITE - 53907：無法將服務使用者識別為工作流程超級使用者。
+* SKYOPS-90560：最新 Sling 模型版本會影響 Sling 模型匯出的效能。
 * SITES-10575：MSM：Blueprint Bloomfilter 載入程式嘗試載入 > 100,000 行。
 * SITES-20755：內容片段：具有 UUID 重新整理的資產參考無法顯示縮圖。
 * SITES-26253：內容片段：UUID 移轉：將 Sling 工作主題變更為一般。
@@ -69,7 +69,7 @@ ht-degree: 72%
 * SITES-25938：啟動：在翻譯專案後意外刪除。
 * SITES-25393：Edge Delivery 搭配通用編輯器：使用單一段落轉譯格式化的 RTF 時，文字節點遺失。
 * SITES-24643：Edge Delivery 搭配通用編輯器：OpenGraph 和 Twitter 中繼資料屬性無法在頁面中繼資料模型中運作。
-* SITES-25401：體驗片段：XF參考更新緩慢。
+* SITES-25401：體驗片段：XF 參考更新緩慢。
 
 ### 已知問題 {#known-issues-18598}
 
