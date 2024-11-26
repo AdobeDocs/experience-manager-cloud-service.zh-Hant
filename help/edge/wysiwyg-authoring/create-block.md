@@ -1,33 +1,33 @@
 ---
-title: 建立經檢測適用 Universal Editor 的區塊
-description: 瞭解如何建立在WYSIWYG製作中與Edge Delivery Services專案結合使用並搭配通用編輯器的區塊。
+title: 建立經檢測適用通用編輯器的區塊
+description: 了解如何在使用 Edge Delivery Services 專案進行的 WYSIWYG 製作環境中，建立經檢測適用通用編輯器的區塊。
 exl-id: 65a5600a-8d16-4943-b3cd-fe2eee1b4abf
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
+source-git-commit: 487d918059e85e3f5dd19d2248b3a8365da41dee
 workflow-type: tm+mt
-source-wordcount: '1445'
-ht-degree: 54%
+source-wordcount: '1428'
+ht-degree: 97%
 
 ---
 
 
-# 建立經檢測適用 Universal Editor 的區塊 {#create-block}
+# 建立經檢測適用通用編輯器的區塊 {#create-block}
 
-瞭解如何建立在WYSIWYG製作中與Edge Delivery Services專案結合使用並搭配通用編輯器的區塊。
+了解如何在使用 Edge Delivery Services 專案進行的 WYSIWYG 製作環境中，建立經檢測適用通用編輯器的區塊。
 
 ## 先決條件 {#prerequisites}
 
-本指南提供逐步指示，說明如何透過Edge Delivery Services專案在WYSIWYG製作中建立針對通用編輯器檢測的區塊。 內容包括新增元件、載入 Universal Editor 中的元件定義、發佈頁面、實施區塊裝飾和樣式、將變更引入生產以及進行變更驗證。完成本指南後，您可以為自己的專案建立和部署新區塊。
+本指南提供逐步說明，讓您了解如何在使用 Edge Delivery Services 專案進行的 WYSIWYG 製作環境中，建立經檢測適用通用編輯器的區塊。內容包括新增元件、載入 Universal Editor 中的元件定義、發佈頁面、實施區塊裝飾和樣式、將變更引入生產以及進行變更驗證。完成本指南後，您可以為自己的專案建立和部署新區塊。
 
-本指南需要與Edge Delivery Services專案及通用編輯器搭配使用的WYSIWYG編寫的現有知識。 在開始執行本指南之前，您應該有 Edge Delivery Services 存取權並熟悉基本使用需知，包括：
+本指南需要具備使用 Edge Delivery Services 專案進行 WYSIWYG 製作及通用編輯器的知識。在開始執行本指南之前，您應該有 Edge Delivery Services 存取權並熟悉基本使用需知，包括：
 
 * 您已完成 [Edge Delivery Service 教學課程。](/help/edge/developer/tutorial.md)
 * 您有權存取 [AEM Cloud Service 沙箱。](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)
 * 您已[在同一沙箱環境中啟用 Universal Editor。](/help/implementing/universal-editor/getting-started.md)
-* 您已完成使用Edge Delivery Services進行WYSIWYG製作的[開發人員快速入門手冊](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)。
+* 您已完成[使用 Edge Delivery Services 進行 WYSIWYG 製作的開發人員快速入門手冊](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)指南。
 
-本指南以[使用Edge Delivery Services進行WYSIWYG編寫的開發人員快速入門手冊](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)中完成的工作為基礎。
+本指南是以在[使用 Edge Delivery Services 進行 WYSIWYG 製作的開發人員快速入門手冊](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)指南中完成的工作為基礎。
 
 ## 為您的專案新增區塊 {#add-block}
 
@@ -45,17 +45,17 @@ Adobe 建議您採用三階段方法來開發區塊：
 
 ### 建立區塊定義和模式 {#create-block-model}
 
-1&amp;amp；period；在本機複製您在[使用Edge Delivery Services進行WYSIWYG編寫的開發人員快速入門手冊](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)中建立的GitHub專案，並在您選擇的編輯器中開啟。
+1&amp;period; 將您在[使用 Edge Delivery Services 進行 WYSIWYG 製作的開發人員快速入門手冊](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)指南中建立的 GitHub 專案原地複製到本機，並在您選擇的編輯器中將其開啟。
 
 * 此處使用 Microsoft 程式碼是為了說明目的。
 
 ![複製專案。](assets/create-block/clone.png)
 
-2&amp;amp；句點；編輯專案根目錄中的`component-definition.json`檔案，並為您的新報價區塊新增下列定義並儲存檔案。
+2&amp;period; 編輯專案根目錄下的 `component-definition.json` 檔案，為新引述區塊新增以下定義，並儲存檔案。
 
 >[!BEGINTABS]
 
->[!TAB JSON範例]
+>[!TAB JSON 範例]
 
 ```json
 {
@@ -77,19 +77,19 @@ Adobe 建議您採用三階段方法來開發區塊：
 }
 ```
 
->[!TAB 熒幕擷圖]
+>[!TAB 螢幕擷圖]
 
 ![編輯 component-definitions.json 檔案以定義引述區塊](assets/create-block/component-definitions.png)
 
 >[!ENDTABS]
 
-3&amp;amp；句點；編輯專案根目錄中的`component-models.json`檔案，並為您的新報價區塊新增下列[模型定義](/help/implementing/universal-editor/field-types.md#model-structure)並儲存檔案。
+3&amp;period; 編輯專案根目錄下的 `component-models.json` 檔案，為新引述區塊新增以下[模型定義](/help/implementing/universal-editor/field-types.md#model-structure)，並儲存檔案。
 
-* 請參閱檔案[使用Edge Delivery Services專案進行WYSIWYG製作的內容模型](/help/edge/wysiwyg-authoring/content-modeling.md)，以取得建立內容模型時務必要考量的詳細資訊。
+* 請參閱[使用 Edge Delivery Services 專案進行 WYSIWYG 製作的內容模型](/help/edge/wysiwyg-authoring/content-modeling.md)文件，了解有關建立內容模型時需要考慮的重要事項詳細資訊。
 
 >[!BEGINTABS]
 
->[!TAB JSON範例]
+>[!TAB JSON 範例]
 
 ```json
 {
@@ -113,17 +113,17 @@ Adobe 建議您採用三階段方法來開發區塊：
 }
 ```
 
->[!TAB 熒幕擷圖]
+>[!TAB 螢幕擷圖]
 
-![編輯 component-models.json 檔案以定義引述區塊的模式](assets/create-block/component-models.png)
+![編輯 component-models.json 檔案以定義引述區塊的模型](assets/create-block/component-models.png)
 
 >[!ENDTABS]
 
-4&amp;amp；句點；編輯專案根目錄中的`component-filters.json`檔案，並將引號區塊新增至[篩選定義](/help/implementing/universal-editor/customizing.md#filtering-components)，以允許將區塊新增至任何區段並儲存檔案。
+4&amp;period; 編輯專案根目錄下的 `component-filters.json` 檔案，並將引述區塊新增至[篩選器定義](/help/implementing/universal-editor/customizing.md#filtering-components)中，以允許將該區塊新增至任何區段，並儲存檔案。
 
 >[!BEGINTABS]
 
->[!TAB JSON範例]
+>[!TAB JSON 範例]
 
 ```json
 {
@@ -141,13 +141,13 @@ Adobe 建議您採用三階段方法來開發區塊：
 }
 ```
 
->[!TAB 熒幕擷圖]
+>[!TAB 螢幕擷圖]
 
 ![編輯 component-filters.json 檔案以定義引述區塊的篩選器](assets/create-block/component-filters.png)
 
 >[!ENDTABS]
 
-5&amp;amp；句點；使用Git，將這些變更提交至您的`main`分支。
+5&amp;period; 使用 git，將這些變更認可提交到您的 `main` 分支。
 
 * 提交至`main`僅是為了說明目的。[遵照最佳實務](https://www.aem.live/docs/dev-collab-and-good-practices)，並在實際專案工作中使用提取請求。
 
@@ -155,7 +155,7 @@ Adobe 建議您採用三階段方法來開發區塊：
 
 現在您的基本引述區塊已定義並提交給範例專案，您可以將引述區塊新增至現有頁面。
 
-1. 在瀏覽器中，登入 AEM as a Cloud Service。[使用Sites主控台，](/help/sites-cloud/authoring/basic-handling.md)導覽至您在[使用Edge Delivery Services進行WYSIWYG編寫的開發人員快速入門手冊](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)指南中建立的網站，並選取頁面。
+1. 在瀏覽器中，登入 AEM as a Cloud Service。[使用 Sites 主控台，](/help/sites-cloud/authoring/basic-handling.md)導覽至您在[使用 Edge Delivery Services 進行 WYSIWYG 製作的開發人員快速入門手冊](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)指南中建立的網站，然後選取一個頁面。
 
    * 在本案例中，`index`是用於說明目的。
 
@@ -190,17 +190,17 @@ Adobe 建議您採用三階段方法來開發區塊：
 
 現在您已經有了一個可用的引述區塊，您可以對區塊套用樣式。
 
-1&amp;amp；句號；返回專案的編輯器。
+1&amp;period; 返回您專案的編輯器。
 
-2&amp;amp；句點；在`blocks`資料夾下建立`quote`資料夾。
+2&amp;period; 在 `blocks` 資料夾下建立一個 `quote` 資料夾。
 
-![建立引述檔案夾](assets/create-block/new-folder.png)
+![建立引述資料夾](assets/create-block/new-folder.png)
 
-3&amp;amp；句點；在新的`quote`資料夾中，新增`quote.js`檔案以新增下列JavaScript並儲存檔案來實施區塊裝飾。
+3&amp;period; 在新的 `quote` 資料夾中，透過新增以下 JavaScript 來新增 `quote.js` 檔案，以實施區塊裝飾，然後儲存檔案。
 
 >[!BEGINTABS]
 
->[!TAB JavaScript範例]
+>[!TAB JavaScript 範例]
 
 ```javascript
 export default function decorate(block) {
@@ -212,17 +212,17 @@ export default function decorate(block) {
 }
 ```
 
->[!TAB 熒幕擷圖]
+>[!TAB 螢幕擷圖]
 
 ![新增 JavaScript 以裝飾區塊](assets/create-block/quote-js.png)
 
 >[!ENDTABS]
 
-4&amp;amp；period；在`quote`資料夾中，新增一個`quote.css`檔案，藉由新增下列CSS程式碼來定義區塊的樣式並儲存檔案。
+4&amp;period; 在 `quote` 資料夾中，透過新增以下 CSS 程式碼來新增 `quote.css` 檔案，以定義區塊樣式，然後儲存檔案。
 
 >[!BEGINTABS]
 
->[!TAB CSS範例]
+>[!TAB CSS 範例]
 
 ```css
 .block.quote {
@@ -257,23 +257,23 @@ export default function decorate(block) {
 }
 ```
 
->[!TAB 熒幕擷圖]
+>[!TAB 螢幕擷圖]
 
 ![新增 CSS 以定義區塊樣式](assets/create-block/quote-css.png)
 
 >[!ENDTABS]
 
-5&amp;amp；句點；使用Git，將這些變更提交至您的`main`分支。
+5&amp;period; 使用 git，將這些變更認可提交到您的 `main` 分支。
 
 * 提交至`main`僅是為了說明目的。[遵照最佳實務](https://www.aem.live/docs/dev-collab-and-good-practices)，並在實際專案工作中使用提取請求。
 
-6&amp;amp；句號；返回至Universal Editor的瀏覽器索引標籤（您編輯專案的頁面），並重新載入頁面以檢視您設定樣式的區塊。
+6&amp;period; 返回您剛剛編輯專案頁面所在之通用編輯器的瀏覽器索引標籤，並重新載入頁面以檢視附有樣式的區塊。
 
-7&amp;amp；句點；請參閱頁面上目前樣式的引號區塊。
+7&amp;period; 現在可查看頁面上附有樣式的引述區塊。
 
-![Universal Editor 中附有樣式的引述區塊](assets/create-block/quote-styled.png)
+![通用編輯器中附有樣式的引述區塊](assets/create-block/quote-styled.png)
 
-8&amp;amp；period；導覽至發佈的頁面，確認變更已推送至生產環境。 該連結類似 `https://<branch>--<repo>--<owner>.hlx.page`
+8&amp;period; 導覽到已發佈的頁面，驗證變更是否已推至生產。該連結類似 `https://<branch>--<repo>--<owner>.hlx.page`
 
 ![已發布且附樣式的引述區塊](assets/create-block/quote-styled-published.png)
 
@@ -281,9 +281,9 @@ export default function decorate(block) {
 
 ### 區塊選項 {#block-options}
 
-如果您需要區塊的外觀或行為因特定情況而略有不同，但差異不足以成為新的區塊，您可以讓作者從[區塊選項中進行選擇。](content-modeling.md#type-inference)
+如果您需要一個區塊的外觀或行為在某些情況下略有不同，但又不足以使其本身成為一個新區塊，您可以讓作者從[區塊選項](content-modeling.md#type-inference)中進行選擇。
 
-將`classes`屬性新增至區塊後，該屬性會呈現在簡單區塊的表格標頭中，或呈現為容器區塊中專案的值清單。
+在區塊中新增一個 `classes` 屬性，簡單區塊的屬性會轉譯於表格標頭中，而容器區塊的項目則會轉譯為值清單。
 
 ```json
 {
@@ -329,21 +329,19 @@ export default function decorate(block) {
 
 當你是在`main`分支上開發時，您可以在 Universal Editor 位置列中附加 `?ref=<branch>`，以便從您的分支載入頁面。`<branch>` 是分支名稱，因為此分支會用於專案的預覽或即時 URL，例如 `https://<branch>--<repo>--<owner>.hlx.page`。
 
-只有模式合併到`main`分支時，才支援發佈內容及新模式。
+## 重新使用區塊進行文件型製作 {#reusing-blocks}
 
-## 重複使用您的區塊以進行檔案式編寫 {#reusing-blocks}
+如果您遵循相同的內容模型，則可以使用為 WYSIWYG 製作所建立的區塊，使用通用編輯器進行文件型製作。
 
-如果您遵循相同的內容模型，可以使用透過通用編輯器為WYSIWYG編寫建立的區塊，以進行檔案式編寫。
-
-如需詳細資訊，請參閱檔案[WYSIWYG和檔案式編寫的區塊](/help/edge/wysiwyg-authoring/wysiwyg-doc-blocks.md)。
+如需更多資訊，請參閱[用於 WYSIWYG 和文件型製作的區塊](/help/edge/wysiwyg-authoring/wysiwyg-doc-blocks.md)文件。
 
 ## 後續步驟 {#next-steps}
 
 既然您已經知道如何建立區塊，那麼了解如何以語義方式建立內容模式並實現精益開發人員體驗就很重要。
 
-請參閱檔案[使用Edge Delivery Services專案進行WYSIWYG製作的內容模型](/help/edge/wysiwyg-authoring/content-modeling.md)，瞭解內容模型如何用於使用Edge Delivery Services專案進行WYSIWYG製作。
+請參閱[使用 Edge Delivery Services 專案為 WYSIWYG 製作建立內容模型](/help/edge/wysiwyg-authoring/content-modeling.md)文件，了解建立內容模型如何用來使用 Edge Delivery Services 專案進行 WYSIWYG 製作。
 
 >[!TIP]
 >
->如需使用AEM as a Cloud Service作為內容來源來建立啟用WYSIWYG撰寫的新Edge Delivery Services專案的端對端逐步解說，請檢視[此AEM GEM網路研討會。](https://experienceleague.adobe.com/en/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)
+>有關建立新的 Edge Delivery Services 專案的端對端操作示範，該專案支援使用 AEM as a Cloud Service 作為內容來源進行 WYSIWYG 製作，請觀看[這場 AEM GEM 網路研討會](https://experienceleague.adobe.com/zh-hant/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)。
 
