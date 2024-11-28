@@ -3,10 +3,10 @@ title: 傳遞 API
 description: 瞭解如何使用傳送API。
 role: User
 exl-id: 806ca38f-2323-4335-bfd8-a6c79f6f15fb
-source-git-commit: 7727aa87693cc96e3497dcda71190866b198975d
+source-git-commit: 870f3f1826ea88cae0fc1fa31177bb9ffc8646f3
 workflow-type: tm+mt
-source-wordcount: '619'
-ht-degree: 3%
+source-wordcount: '627'
+ht-degree: 6%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 3%
 
 Experience Manager資產存放庫中所有可用的[已核准資產](approve-assets.md)都可以進行[搜尋](search-assets-api.md)，然後使用傳遞URL傳遞至整合式下游應用程式。
 
-對DAM中已核准的資產所做的任何變更（包括版本更新和中繼資料修改）都會自動反映在傳送URL中。 由於透過CDN為資產傳送設定的短存留時間(TTL)值為10分鐘，因此在10分鐘內，所有編寫和發佈介面中都會顯示更新。
+對 DAM 中已核准資產所做的任何變更 (包括版本更新和中繼資料修改)，都會自動反映在傳遞 URL 中。由於透過CDN為資產傳送設定的短存留時間(TTL)值為10分鐘，因此在10分鐘內，所有編寫和發佈介面中都會顯示更新。
 
 下圖說明可用的傳送URL：
 
@@ -44,7 +44,8 @@ Experience Manager資產存放庫中所有可用的[已核准資產](approve-ass
 
 >[!NOTE]
 >
-[影像預設集、智慧型影像以及其他影像修飾元](https://adobe-aem-assets-delivery-advancemodifiers.redoc.ly/)是您可用的有限功能。 若要取得存取權，請[建立並提交Adobe客戶支援案例](https://helpx.adobe.com/tw/enterprise/using/support-for-experience-cloud.html)。
+* [影像預設集、智慧型影像以及其他影像修飾元](https://adobe-aem-assets-delivery-advancemodifiers.redoc.ly/)是您可用的有限功能。 若要取得存取權，請[建立並提交Adobe客戶支援案例](https://helpx.adobe.com/tw/enterprise/using/support-for-experience-cloud.html)。
+* [Assets Prime](/help/assets/assets-ultimate-overview.md)無法使用智慧型裁切。
 
 ## 傳送API端點 {#delivery-apis-endpoint}
 

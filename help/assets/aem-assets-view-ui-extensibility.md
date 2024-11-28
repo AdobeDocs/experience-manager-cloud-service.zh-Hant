@@ -4,9 +4,9 @@ description: 瞭解AEM Assets檢視的UI擴充功能。 AEM Assets檢視UI可讓
 feature: App Builder
 role: User, Developer
 exl-id: a11f7043-17cf-4331-b76c-d3db099c2411
-source-git-commit: af7e6ab40212dfa3d91cda80a76b1b6b01dd65a3
+source-git-commit: 870f3f1826ea88cae0fc1fa31177bb9ffc8646f3
 workflow-type: tm+mt
-source-wordcount: '598'
+source-wordcount: '589'
 ht-degree: 3%
 
 ---
@@ -39,7 +39,7 @@ AEM Assets檢視具有UI擴充功能。 此功能可讓使用者新增自訂UI�
 ## 新增擴充性元件的先決條件
 
 * [存取Assets檢視](#1)。
-* 存取[Assets Ultimate](/help/assets/assets-ultimate-overview.md)預設包含的[Adobe應用程式產生器](https://developer.adobe.com/app-builder/docs/overview/)。
+* 存取[Adobe應用程式產生器](https://developer.adobe.com/app-builder/docs/overview/)。
 * 有權取得組織內系統管理員開發人員的角色。 如需詳細資訊，請參閱[這個](https://developer.adobe.com/uix/docs/guides/get-access/)。
 * AdobeIO命令列工具(AIO CLI)必須安裝在您的本機電腦上。 此工具對於建立和部署擴充功能專案至關重要。 如需詳細資訊，請參閱[這個](https://developer.adobe.com/app-builder/docs/getting_started/#local-environment-set-up)。
 * 充分瞭解JavaScript、Node.js和React技術。
