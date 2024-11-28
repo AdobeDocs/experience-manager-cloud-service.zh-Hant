@@ -4,10 +4,10 @@ description: 瞭解如何使用Cloud Acceleration Manager將移轉集中的內�
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 feature: Migration
 role: Admin
-source-git-commit: 1add389e1bba181757229ca73252f1fcaa9d049a
+source-git-commit: 114b7e795df6267d76d1bd923a7dff8826c67029
 workflow-type: tm+mt
-source-wordcount: '3187'
-ht-degree: 12%
+source-wordcount: '3296'
+ht-degree: 11%
 
 ---
 
@@ -169,6 +169,17 @@ ht-degree: 12%
 
 ![影像](/help/journey-migration/content-transfer-tool/assets-ctt/error_releaseorchestrator_active.png)
 
+### 由於雲端環境未處於就緒狀態，擷取失敗 {#ingestion-failure-due-to-cloud-environment-not-in-ready-state}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_cam_ingestion_troubleshooting_cloud_environment_not_in_ready_state"
+>title="雲端環境未處於就緒狀態"
+>abstract="在罕見的情況下，目標雲端環境可能會遇到未預期的問題，進而導致擷取失敗。"
+
+在罕見的情況下，內嵌的目標Cloud Service環境可能會遇到未預期的問題。 因此，內嵌將失敗，因為環境未處於預期的就緒狀態。 檢查內嵌記錄檔，以顯示所遇到錯誤狀態的更多詳細資料。
+
+請確保製作環境可用，並等候幾分鐘再重新嘗試內嵌。 如果問題仍然存在，請和客戶支援聯絡，以瞭解遇到的錯誤狀態。
+
 ### 由於違反唯一條件限制而導致填滿擷取失敗 {#top-up-ingestion-failure-due-to-uniqueness-constraint-violation}
 
 >[!CONTEXTUALHELP]
@@ -239,7 +250,7 @@ AEM中的每個節點都必須有唯一的uuid。 此錯誤指出正在擷取的
 
 有時，非預期的間歇性問題可能會導致擷取失敗，很遺憾，唯一的補救方法就是重試擷取。 調查擷取記錄以找出失敗的原因，並檢視它是否符合下面列出的任何錯誤，其中應嘗試重試。
 
-## MongoDB問題 {#mongo-db-issues}
+#### MongoDB問題 {#mongo-db-issues}
 
 * `Atlas prescale timeout error` — 擷取階段會嘗試預先縮放目標雲端資料庫，使其大小與正在擷取的移轉集內容大小相符。 少數情況下，此作業未在預期時間範圍內完成。
 * `Exhausted mongo restore retries` — 嘗試將擷取的移轉集內容還原到雲端資料庫的本機傾印已經用盡。 這表示MongoDB的整體健康情況/網路問題，通常會在幾分鐘後自行解決。
@@ -261,7 +272,7 @@ AEM中的每個節點都必須有唯一的uuid。 此錯誤指出正在擷取的
 
 在先前移轉的資產被刪除，且下次內嵌是在記憶體回收行程完成刪除資產之前執行的情境中，內嵌相同的移轉集將不會還原已刪除的資產。 當內嵌檢查雲端環境上的資產時，沒有節點資料；因此，內嵌會將節點資料複製到雲端環境。 不過，在檢查blob存放區時，它會看到blob存在，並略過複製blob。 這就是為什麼中繼資料會在您從觸控式UI檢視資產時出現在擷取後，但影像卻沒有。 請記住，移轉集和內容擷取並非設計用於處理這種情況。 他們的目標是將新內容新增到雲端環境，而不是還原先前移轉的內容。
 
-## 下一步 {#whats-next}
+## 後續步驟 {#whats-next}
 
 擷取成功後，AEM索引會自動開始。 如需詳細資訊，請參閱移轉內容後的[索引](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/indexing-content.md)。
 
