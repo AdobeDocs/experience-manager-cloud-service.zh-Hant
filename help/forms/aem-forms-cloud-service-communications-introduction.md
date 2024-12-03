@@ -5,7 +5,7 @@ Keywords: How to generate document?, Generate PDF document, Manipulation PDF doc
 feature: Adaptive Forms, APIs & Integrations
 role: Admin, Developer, User
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: dcf7bde3bc73b70002f87f14d905cd294280ff94
+source-git-commit: 13c1febf55c9b15eab49d356fc1ba3f3d91ad055
 workflow-type: tm+mt
 source-wordcount: '2374'
 ht-degree: 38%
@@ -33,6 +33,9 @@ ht-degree: 38%
 * 用於輕鬆地與外部系統整合的 HTTP API。包括個別的 API 用於隨需 (低延遲) 和批次操作 (高輸送量操作)。
 
 * 安全存取資料。通訊 API 僅連接到客戶指定的資料存放庫並從中存取資料，從而使通訊高度安全。
+
+[API參考檔案](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/)提供API提供的所有引數、驗證方法和各種服務的詳細資訊。 API參考檔案也以.yaml格式提供。 您可以下載.yaml並將其上傳到Postman以檢查API的功能。
+
 
 <!-- 
 ![A sample credit card statement](assets/statement.png)
@@ -304,8 +307,6 @@ The Remove Signature Field API is tailored for removing signature fields from a 
 
 * **訊息**：開啟套用了一或多個使用許可權的PDF檔案時，Adobe Acrobat Reader中顯示的訊息。
 * **解除鎖定密碼**：開啟加密PDF檔案所需的密碼。 通常這是檔案開啟密碼，但如果PDF檔案受到許可權密碼的額外保護，則其中之一可能用於開啟檔案。
-
-[API參考檔案](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/)提供API提供的所有引數、驗證方法和各種服務的詳細資訊。 API參考檔案也以.yaml格式提供。 您可以下載.yaml並將其上傳到Postman以檢查API的功能。
 
 ## 通訊 API 類型 {#types}
 
