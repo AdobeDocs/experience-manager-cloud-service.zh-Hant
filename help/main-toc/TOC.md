@@ -5,11 +5,11 @@ sub-product: Adobe Experience Manager as a Cloud Service
 solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的運作方式以及該軟體可以為您做哪些事。
 breadcrumb-title: 使用手冊
-user-guide-title: AEM as a Cloud Service
-source-git-commit: e454581a2e6f2b8184a54d6550daec60e58bbc6c
+user-guide-title: 'AEM as a Cloud Service '
+source-git-commit: 47ee6803146acd93ed62b7eef1419d52f870ae90
 workflow-type: tm+mt
-source-wordcount: '5886'
-ht-degree: 96%
+source-wordcount: '5890'
+ht-degree: 97%
 
 ---
 
@@ -205,6 +205,7 @@ ht-degree: 96%
    + 通用編輯器發行說明 {#univeral-editor}
       + [通用編輯器的最新發行說明](/help/release-notes/universal-editor/current.md)
       + 2024 {#2024}
+         + [2024.11.13 發行說明](/help/release-notes/universal-editor/2024/2024-11-13.md)
          + [2024.11.05 發行說明](/help/release-notes/universal-editor/2024/2024-11-05.md)
          + [2024.10.29 發行說明](/help/release-notes/universal-editor/2024/2024-10-29.md)
          + [2024.09.27 發行說明](/help/release-notes/universal-editor/2024/2024-09-27.md)
@@ -473,10 +474,10 @@ ht-degree: 96%
    + [支援的檔案格式](/help/assets/file-format-support.md)
    + [資產微服務概觀](/help/assets/asset-microservices-overview.md)
    + [ [!DNL Assets] 中的協助工具](/help/assets/accessibility.md)
-   + [Assetsas a Cloud Service旗艦版](/help/assets/assets-ultimate-overview.md)
-   + [啟用Assetsas a Cloud Service旗艦版](/help/assets/enable-assets-ultimate.md)
+   + [Assets as a Cloud Service Ultimate](/help/assets/assets-ultimate-overview.md)
+   + [啟用 Assets as a Cloud Service Ultimate](/help/assets/enable-assets-ultimate.md)
    + [Assets as a Cloud Service Prime](/help/assets/assets-prime.md)
-   + [Assets Collaborator使用者](/help/assets/assets-collaborator-users.md)
+   + [資產協作者使用者](/help/assets/assets-collaborator-users.md)
    + 管理數位資產 {#manage}
       + 微前端資產選擇器{#asset-selector}
          + [資產選擇器概觀](/help/assets/overview-asset-selector.md)
@@ -655,7 +656,7 @@ ht-degree: 96%
       + [資產屬性](/help/assets/asset-properties-content-hub.md)
       + [在 Content Hub 中分享資產](/help/assets/share-assets-content-hub.md)
       + [使用 Content Hub 下載資產](/help/assets/download-assets-content-hub.md)
-      + [在Content Hub上管理授權的Assets](/help/assets/manage-licensed-assets-on-content-hub.md)
+      + [管理 Content Hub 上的已授權資產](/help/assets/manage-licensed-assets-on-content-hub.md)
       + [在 Content Hub 中管理收藏集](/help/assets/collections-content-hub.md)
       + [在 Content Hub 中使用 Adobe Express 編輯影像](/help/assets/edit-images-content-hub.md)
       + [Content Hub 中的資產深入分析](/help/assets/insights-content-hub.md)
@@ -757,19 +758,19 @@ ht-degree: 96%
             + [在最適化表單中新增版本設定、評論和附註](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md)
             + [比較最適化表單](/help/forms/compare-forms.md)
             + [建立自訂提交動作](/help/forms/custom-submit-action-for-adaptive-forms-based-on-core-components.md)
-            + [使用移轉公用程式將基礎元件型最適化表單轉換為核心元件型表單。](/help/forms/migration-utility-tool-for-af-core-components.md)
+            + [使用移轉公用程式工具將基礎元件型最適化表單轉換為核心元件型表單](/help/forms/migration-utility-tool-for-af-core-components.md)
             + 以核心元件為主之最適化表單的規則編輯器簡介{#rule-editor-core-components}
                + [以核心元件為主之最適化表單的規則編輯器簡介](/help/forms/rule-editor-core-components.md)
                + [以核心元件為主之最適化表單的規則編輯器使用者介面](/help/forms/rule-editor-core-components-user-interface.md)
                + [基礎規則編輯器與核心元件規則編輯器之間的差異](/help/forms/rule-editor-core-components-difference-tables.md)
                + [以核心元件為主之最適化表單的規則編輯器中可用的運算子和事件類型](/help/forms/rule-editor-core-components-events-operators.md)
                + [以核心元件為主之最適化表單的規則編輯器範例](/help/forms/rule-editor-core-components-usecases.md)
-               + [在最適化表單中使用非同步函式](/help/forms/using-async-funct-in-rule-editor.md)
+               + [在最適化表單中使用非同步函數](/help/forms/using-async-funct-in-rule-editor.md)
                + [針對以核心元件為基礎的表單，在視覺化規則編輯器中叫用服務增強功能](/help/forms/invoke-service-enhancements-rule-editor.md)
             + 以核心元件為主之最適化表單的自訂函數簡介{#create-and-use-custom-function-core-component}
                + [以核心元件為主之最適化表單的自訂函數簡介](/help/forms/create-and-use-custom-functions.md)
                + [建立和使用以核心元件為主之最適化表單的自訂函數](/help/forms/custom-function-core-component-create-function.md)
-               + [自訂函式中的範圍物件](/help/forms/custom-function-core-component-scope-function.md)
+               + [自訂函數中的範圍物件](/help/forms/custom-function-core-component-scope-function.md)
                + [以核心元件為主之最適化表單的自訂函數範例](/help/forms/custom-function-core-components-use-cases.md)
             + Forms Portal 及其元件簡介 {#introduction-to-forms-portal}
                + [Forms Portal 元件簡介](/help/forms/configure-forms-portal.md)
@@ -1043,7 +1044,7 @@ ht-degree: 96%
          + [Markdown 編輯器](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html?lang=zh-hant)
       + [樹狀結構](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html?lang=zh-hant)
       + [JSON 預覽](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-json-preview.html?lang=zh-hant)
-   + [適用於結構化內容傳遞與管理的AEM API](/help/headless/apis-headless-and-content-fragments.md)
+   + [用於傳遞和管理結構化內容的 AEM API](/help/headless/apis-headless-and-content-fragments.md)
    + GraphQL API{#graphql-api}
       + [用於內容片段的 GraphQL API](/help/headless/graphql-api/content-fragments.md)
       + [管理 GraphQL 端點](/help/headless/graphql-api/graphql-endpoint.md)
@@ -1054,7 +1055,7 @@ ht-degree: 96%
       + [升級您的內容片段以供UUID參考使用](/help/headless/graphql-api/uuid-reference-upgrade.md)
       + [範例 GraphQL 查詢](/help/headless/graphql-api/sample-queries.md)
       + [疑難排解 GraphQL 查詢](/help/headless/graphql-api/persisted-queries-troubleshoot.md)
-   + [用於內容片段傳送的AEM REST OpenAPI](/help/headless/aem-rest-openapi-content-fragment-delivery.md)
+   + [用於傳遞內容片段的 AEM REST OpenAPI](/help/headless/aem-rest-openapi-content-fragment-delivery.md)
    + [內容片段和模型 OpenAPI](/help/headless/content-fragment-openapis.md)
    + [Assets HTTP API 中的內容片段支援](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/assets-api-content-fragments.html?lang=zh-hant)
    + 安全性 {#security}

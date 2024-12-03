@@ -1,20 +1,20 @@
 ---
-title: 通用編輯器 2024.11.13 發行說明
-description: 這是通用編輯器 2024.11.13 版本的發行說明。
+title: 通用編輯器 2024.12.02 發行說明
+description: 此為通用編輯器 2024.12.02 版本的發行說明。
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 98795cab471470442cf5c424a67ce2846cfe85dc
-workflow-type: ht
-source-wordcount: '370'
-ht-degree: 100%
+source-git-commit: 2aae8c63358680758e4f5324f38dea1bc2c47155
+workflow-type: tm+mt
+source-wordcount: '300'
+ht-degree: 16%
 
 ---
 
 
-# 通用編輯器 2024.11.13 發行說明 {#release-notes}
+# 通用編輯器 2024.12.02 發行說明 {#release-notes}
 
-這是通用編輯器 2024 年 11 月 13 日版本的發行說明。
+這些是2024年12月2日發行的Universal Editor的發行說明。
 
 >[!TIP]
 >
@@ -22,22 +22,18 @@ ht-degree: 100%
 
 ## 新增功能 {#what-is-new}
 
-* **CORS 逾時的重試選項：**&#x200B;在 [2024 年 9 月 26 日的發行版本中，](/help/release-notes/universal-editor/2024/2024-09-26.md)當編輯器無法與已載入的頁面建立連線時會引入錯誤面板，以防止無限載入狀態。
-   * 在此版本中，編輯器會自動不斷重試，一旦建立連線即可繼續編輯。
-   * 對於可能需要超過一分鐘逾時才能完成初始化的頁面而言，這個功能尤其實用。
-* **為開發者增強可擴展性：**&#x200B;通用編輯器現在支援對擴充功能廣播事件，允許擴充功能開發者訂閱[事件。](/help/implementing/universal-editor/events.md)
-   * 這樣一來，開發者便能夠在其自訂的擴充功能內[對編輯器事件作出反應。](/help/implementing/universal-editor/customizing.md#extending)
-* **永久選取元件：**&#x200B;即使重新整理瀏覽器後，在編輯器中選取的元件將持續不變。
-   * 這樣可確保使用者在重新載入頁面後不會遺失其內容並可繼續工作。
-* **本地化快速連結：**&#x200B;首頁畫面上的&#x200B;**快速連結**&#x200B;區段現在提供文件的本地化連結，協助使用者根據自己的語言偏好設定輕鬆存取相關指南。
-* **用於進階偵錯的請求 ID：**&#x200B;錯誤通知現在於詳細資訊區段包括&#x200B;**請求 ID**，而此區段與 `x-request-id header` 相關聯。
-   * 只要將這些錯誤與內部日誌進行比對，Adobe 工程團隊便可以輕鬆地追蹤和診斷問題。
+* **內容樹狀結構的鍵盤導覽**： [可在側面板中使用的內容樹狀結構](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode)，現在可透過鍵盤完整存取。
+   * 作者可以使用標準鍵盤控制項，依循[WCAG 2.1指南](/help/sites-cloud/authoring/page-editor/accessible-content.md)的協助工具，導覽及互動樹狀檢視專案。
+   * 此增強功能可確保樹狀結構中的所有互動式元素都可使用鍵盤操作，提高依賴鍵盤導覽的使用者的包容性。
+* **取消選取可編輯專案**：作者現在可以取消選取頁面上先前選取的可編輯專案。
+   * 當作者想要檢視沒有使用中選取範圍框線的頁面時，這可以消除干擾。
+* **片段選擇器**：在AEM as a Cloud Service執行個體上，片段參考現在會開啟片段選擇器做為內容選擇器，提供改良的功能，例如遵循允許的內容片段模式、搜尋內容片段，以及改良的整體體驗。
+   * 如此可與其他AdobeUI保持一致，並增強一致性。
+   * [若是AEM 6.5環境，](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction)現有的內容選擇器仍在使用中。
+* **容器描述**： [在[屬性面板](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-panel-properties-rail)中用於參考內容的容器元件](/help/implementing/universal-editor/field-types.md#container)現在支援顯示在容器欄位上方的描述屬性。
+   * 這項新增功能透過為作者提供他們正在編輯的群組欄位相關情境，強化了清晰度。
 
 ## 其他改良功能 {#other-improvements}
 
-* **修正內容樹長標籤：**&#x200B;已經解決&#x200B;**內容樹**&#x200B;面板中長標籤被截斷的問題
-   * 修正此問題可確保在重新排定內容順序時總是看得見拖放控制點。
-* **修正屬性長標籤：**&#x200B;已經解決&#x200B;**屬性**&#x200B;面板中欄位長標籤和欄位驗證資訊重疊的錯誤
-* **「屬性」面板的水平捲動：**&#x200B;已經修正&#x200B;**屬性**&#x200B;面板中的寬元素導致水平捲動的問題
-* **修正通知期間工具列非使用中的問題：**&#x200B;顯示[快顯](https://spectrum.adobe.com/page/toast/)通知時，**Adobe Experience Cloud** 頂端工具列功能完全正常。
-* **改良穩定性：**&#x200B;新增錯誤邊界以處理非預期值，防止單一轉譯器或驗證工具無法使用時導致整個使用者介面當機，藉此提高穩定性
+* **RTF欄位同步**：已改善屬性面板中RTF欄位內原始和演算內容的同步，解決RTF內容和演算後的表示方式可能不同的Edge Delivery Services專案問題。
+* **編輯模式事件**：通用編輯器現在會可靠地發出編輯模式事件，包括在重新載入遠端應用程式之後。
