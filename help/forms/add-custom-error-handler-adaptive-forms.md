@@ -7,10 +7,10 @@ content-type: reference
 feature: Adaptive Forms, Foundation Components
 exl-id: 198a26a9-d6bb-457d-aab8-0a5d15177c48
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: e1e122b730de07d9fff36828bb85ceec7c0b101b
 workflow-type: tm+mt
-source-wordcount: '2378'
-ht-degree: 90%
+source-wordcount: '2336'
+ht-degree: 86%
 
 ---
 
@@ -222,19 +222,24 @@ AEM Forms 為表單提交提供現成可用的成功和錯誤處理常式。這�
 若要了解如何建立和使用採用[規則編輯器調用服務](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=en#invoke)動作的自訂錯誤處理常式，讓我們以含有兩個欄位的簡單最適化表單為例 (**寵物 ID** 和&#x200B;**寵物名稱**)，並在「**寵物 ID**」欄位使用自訂的錯誤處理程式，查看為調用外部服務所設定 REST 端點傳回的各種錯誤，例如 `200 - OK`、`404 - Not Found`、`400 - Bad Request`。
 
 若要在最適化表單中新增和使用自訂錯誤處理常式，請執行以下步驟：
-1. [建立自訂錯誤處理常式](#create-custom-error-message)
-1. [使用規則編輯器設定自訂錯誤處理常式](#use-custom-error-handler)
+1. [新增錯誤處理常式的自訂函式](#1-add-custom-function-for-error-handler)
+2. [使用規則編輯器設定自訂錯誤處理常式](#use-custom-error-handler)
 
-#### 1. 建立自訂錯誤處理常式 {#create-custom-error-message}
+#### 1.新增錯誤處理常式的自訂函式
 
-若要建立自訂錯誤函數，請執行以下步驟：
+>[!NOTE]
+>
+> 若要瞭解如何新增自訂函式，請按一下[根據核心元件在適用性表單中建立自訂函式](/help/forms/custom-function-core-component-create-function.md#create-a-custom-function)。
 
-1. [複製AEM Formsas a Cloud Service存放庫](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=zh-Hant#accessing-git)。
-1. 在 `[AEM Forms as a Cloud Service repository folder]/apps/` 檔案夾中建立一個檔案夾。例如，建立一個名為 `experience-league` 的檔案夾
-1. 導覽至 `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/experience-league/` 並建立一個名為 `clientlibs` 的 `ClientLibraryFolder` 檔案夾。
-1. 建立一個名為 `js` 的檔案夾。
-1. 導覽至 `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/clientlibs/js` 檔案夾。
-1. 新增JavaScript檔案，例如`function.js`。 該檔案包含自訂錯誤處理常式的代碼。
+<!-- To create a custom error function, perform the following steps:
+
+1. [Clone your AEM Forms as a Cloud Service Repository](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#accessing-git). 
+2. Create a folder under the `[AEM Forms as a Cloud Service repository folder]/apps/` folder. For example, create a folder named as `experience-league`
+3. Navigate to `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/experience-league/` and create a `ClientLibraryFolder` as `clientlibs`.
+4. Create a folder named `js`.
+5. Navigate to the `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/clientlibs/js` folder. -->
+
+1. 在JavaScript檔案中新增以下自訂錯誤處理常式的程式碼，例如`function.js`。 該檔案包含自訂錯誤處理常式的代碼。
 讓我們將以下代碼新增至 JavaScript 檔案中，以便在瀏覽器主控台中顯示從 REST 服務端點接收到的回應和標頭。
 
    ```javascript
@@ -253,43 +258,45 @@ AEM Forms 為表單提交提供現成可用的成功和錯誤處理常式。這�
        }
    ```
 
-   若要從自訂錯誤處理常式調用預設的錯誤處理常式，請使用以下範例代碼行：
-   `guidelib.dataIntegrationUtils.defaultErrorHandler(response, headers) `
+<!--
+1. Save the `function.js` file.
+1. Navigate to the `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/clientlibs/js` folder.
+2. Add a text file as `js.txt`. The file contains:
 
-   >[!NOTE]
-   >
-   > 在`.content.xml`檔案中，新增`allowProxy`和`categories`屬性。
-   >
-   > * `allowProxy = [Boolean]true`
-   > * `categories= customfunctionsdemo`
-   >例如，在這種情況下，提供 [自訂-錯誤處理常式-名稱] 為 `customfunctionsdemo`。
+    ```javascript
+        #base=js
+        functions.js
+    ```
 
-1. 儲存 `function.js` 檔案。
-1. 導覽至 `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/clientlibs/js` 檔案夾。
-1. 新增文字檔案為`js.txt`。該檔案包含：
+3. Save the `js.txt` file.    
+The created folder structure looks like:
 
-   ```javascript
-       #base=js
-       functions.js
-   ```
+    ![Created Client Library Folder Structure](/help/forms/assets/customclientlibrary_folderstructure.png) -->
 
-1. 儲存 `js.txt` 檔案。\
-   已建立的檔案夾結構如下所示：
 
-   ![已建立的用戶端資料庫檔案夾結構](/help/forms/assets/customclientlibrary_folderstructure.png)
+    >[！NOTE]
+    >
+    > *若要從您的自訂錯誤處理常式呼叫預設錯誤處理常式，會使用下列程式碼列： &#39;guidelib.dataIntegrationUtils.defaultErrorHandler(response， headers) &#39;
+    > *在&#39;.content.xml&#39;檔案中，新增&#39;allowProxy&#39;和&#39;categories&#39;屬性，以使用最適化表單中的自訂錯誤處理常式使用者端程式庫。
+    >
+    >   * &#39;allowProxy = [Boolean]true&#39;
+    >   * &#39;categories= customfunctionsdemo&#39;
+    >       例如，在此情況下，[custom-errorhandler-name]會以&#39;customfunctionsdemo&#39;的形式提供。
 
-   >[!NOTE]
-   >
-   > 若要了解更多有關如何建立自訂函數，請按一下[規則編輯器中的自訂函數](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-rules-and-use-expressions-in-an-adaptive-form/rule-editor.html?lang=zh-Hant#write-rules)。
 
-1. 使用以下命令在存放庫中新增、提交和推播變更：
+1. 新增、認可及推送存放庫中的變更。
 
-   ```javascript
-       git add .
-       git commit -a -m "Adding error handling files"
-       git push
-   ```
+<!--
+    using the below commands:
+         
+    ```javascript
 
+        git add .
+        git commit -a -m "Adding error handling files"
+        git push
+    ```
+
+-->
 1. [執行管道.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#setup-pipeline)
 
 成功執行管道後，自訂錯誤處理常式將可在最適化表單規則編輯器中使用。現在，讓我們了解如何使用 AEM Forms 規則編輯器的調用服務來設定和使用自訂錯誤處理常式。

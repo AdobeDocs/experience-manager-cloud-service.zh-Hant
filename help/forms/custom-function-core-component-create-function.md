@@ -5,7 +5,7 @@ keywords: 新增自訂函式、使用自訂函式、建立自訂函式，以及�
 feature: Adaptive Forms, Core Components
 role: User, Developer
 exl-id: e7ab4233-2e91-45c6-9377-0c9204d03ee9
-source-git-commit: 747203ccd3c7e428e2afe27c56e47c3ec18699f6
+source-git-commit: 249c60c6b4a888b8d32bbb6bebf159c972f82f94
 workflow-type: tm+mt
 source-wordcount: '1340'
 ht-degree: 5%
@@ -40,7 +40,7 @@ ht-degree: 5%
 * **Git：**&#x200B;管理程式碼變更需要此版本控制系統。 如果您尚未安裝，請從https://git-scm.com下載。
 
 
-## 建立自訂函數 {#create-custom-function}
+## 建立自訂函數
 
 建立使用者端程式庫以呼叫規則編輯器中的自訂函式。 如需詳細資訊，請參閱[使用使用者端資料庫](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html#developing)。
 
