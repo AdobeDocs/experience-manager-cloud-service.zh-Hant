@@ -4,10 +4,10 @@ description: 善用行動中心，方便處理事件和其他重要資訊
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
 feature: Operations
 role: Admin
-source-git-commit: 41e06c75229d78827e35164eca37a96d6feeb730
+source-git-commit: 1bfa9ff24d3515a450216f3569b1e8b0b1e31ecc
 workflow-type: tm+mt
-source-wordcount: '1098'
-ht-degree: 51%
+source-wordcount: '1118'
+ht-degree: 50%
 
 ---
 
@@ -86,4 +86,5 @@ AEM as a Cloud Service 有多種類型的通知，但只有一部分出現在行
 | 直接新增到自訂群組的使用者 | 主動 | 使用者需要新增到相關的IMS群組，這些IMS群組需要新增為AEM群組的成員。 符合[IMS最佳實務](/help/security/ims-support.md) | |
 | 缺少JCR內容 | 主動 | 新增遺失的JCR內容節點。 請參閱[Assets內容驗證器檔案](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/acv) | |
 | 已完成的工作流程未清除 | 主動 | 將工作流程例項的數目降至最低，並透過清除超過90天之前的工作流程例項來改善效能。 瞭解如何[設定維護工作](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/operations/maintenance) | |
-| 頁面中缺少Sling資源型別 | 主動 | 新增缺少的Sling資源型別節點。 請參閱[Assets內容驗證器檔案](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/acv) |
+| 頁面中缺少Sling資源型別 | 主動 | 新增缺少的Sling資源型別節點。 請參閱[Assets內容驗證器檔案](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/acv) | |
+| 緩慢查詢 | 主動 | 依照[JCQ查詢速查表](https://experienceleague.adobe.com/docs/experience-manager-65/assets/JCR_query_cheatsheet-v1.1.pdf)的建議，定義正確的索引定義，以修正緩慢查詢 |
