@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: 1ff3a9a0ff6b408794956323f12194f136d6b2ad
 workflow-type: tm+mt
 source-wordcount: '2800'
-ht-degree: 90%
+ht-degree: 96%
 
 ---
 
@@ -42,10 +42,10 @@ Adobe 會持續評估產品功能，逐漸利用更現代化的替代方案重�
 | [!DNL Assets] | 直接將資產上傳到 [!DNL Experience Manager]。請參閱[已過時的資產上傳 API](/help/assets/developer-reference-material-apis.md#deprecated-asset-upload-api)。 | 使用[直接二進位上傳](/help/assets/add-assets.md)。如需技術詳細資訊，請參閱[直接上傳 API](/help/assets/developer-reference-material-apis.md#upload-binary)。 |
 | [!DNL Assets] | 不支援 [ 工作流程中的](/help/assets/developer-reference-material-apis.md#post-processing-workflows-steps)某些工作流程步驟`DAM Asset Update`，包括呼叫命令列工具，例如 [!DNL ImageMagick]. | [資產微服務](/help/assets/asset-microservices-overview.md)可取代許多工作流程。若要自訂處理程序，請使用[後期處理工作流程](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows)。 |
 | [!DNL Assets] | FFmpeg 影片轉碼。 | 若要產生 FFmpeg 縮圖，請使用[資產微服務](/help/assets/asset-microservices-overview.md)。若是 FFmpeg 轉碼，請使用 [Dynamic Media](/help/assets/manage-video-assets.md)。 |
-| [!DNL Foundation] | 複寫代理程式的「散發」標籤下的樹狀結構複寫 UI (2021 年 9 月 30 日後移除) | [管理出版物](/help/operations/replication.md#manage-publication)或[樹狀結構啟動工作流程步驟](/help/operations/replication.md#tree-activation)方法。 |
-| [!DNL Foundation] | 復寫代理程式管理畫面的「散發」標籤和復寫API都不能用於復寫超過10MB的內容套件。 | [管理出版物](/help/operations/replication.md#manage-publication)或[樹狀結構啟動工作流程步驟](/help/operations/replication.md#tree-activation) |
+| [!DNL Foundation] | 複寫代理程式的「散發」標籤下的樹狀結構複寫 UI (2021 年 9 月 30 日後移除) | [管理出版物](/help/operations/replication.md#manage-publication)或[啟用樹狀工作流程步驟](/help/operations/replication.md#tree-activation)方法。 |
+| [!DNL Foundation] | 複寫代理程式管理員畫面的「散發」標籤和複寫 API 都不能用來複寫超過 10MB 的內容套件。 | [管理出版物](/help/operations/replication.md#manage-publication)或[啟用樹狀工作流程步驟](/help/operations/replication.md#tree-activation) |
 | [!DNL Foundation] | 使用從 Adob&#x200B;&#x200B;e Developer Console 專案產生的憑證來整合，將逐漸失去對服務帳戶 (JWT) 憑證的支援。2024 年 5 月 1 日或之後，無法在 Adobe Developer Console 中建立新的服務帳戶(JWT) 憑證，但在 2025 年 1 月 1 日之前，現有服務帳戶 (JWT) 憑證仍可用於已設定的整合，到那時候，現有服務帳戶 (JWT) 憑證將不再有效，且客戶必須移轉到 OAuth Server-to-Server 憑證。[了解更多](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/security/jwt-credentials-deprecation-in-adobe-developer-console)。 | [移轉](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#migration-overview)至 OAuth Server-to-Server 憑證。 |
-| [!DNL Foundation] | Publish內容樹工作流程和相關的Publish內容樹工作流程步驟，用於複製內容的階層。 | 使用[樹狀結構啟動工作流程步驟](/help/operations/replication.md#tree-activation)，其效能更高。 |
+| [!DNL Foundation] | 用於複寫內容階層的發佈內容樹狀工作流程和相關的發佈內容樹狀工作流程步驟。 | 使用[啟用樹狀工作流程步驟](/help/operations/replication.md#tree-activation)，其效能更佳。 |
 
 
 ## 移除的功能 {#removed-features}
@@ -523,21 +523,21 @@ AEM as a Cloud Service 將移至 Java 21 Runtime。為確保相容性，必須�
 
 必須進行這些調整，才能使用較新版本的Java建置專案，但執行階段相容性並不需要這些調整。 Maven外掛程式可與舊版Java相容，隨時更新。
 
-#### bnd-maven-plugin的最低版本 {#bnd-maven-plugin}
+#### bnd-maven-plugin 的最低版本 {#bnd-maven-plugin}
 
 將bnd-maven-plugin的使用更新至6.4.0版，以確保支援更新的JVM執行階段。 版本7或更新版本與Java 11或更低版本不相容，因此目前不建議升級至該版本。
 
-#### aemanalyzer-maven-plugin的最低版本 {#aemanalyser-maven-plugin}
+#### aemanalyser-maven-plugin 的最低版本 {#aemanalyser-maven-plugin}
 
-將aemanalyser-maven-plugin的使用更新至1.6.6版或更新版本，以確保支援更新的JVM執行階段。
+將 aemanalyser-maven-plugin 的使用更新至 1.6.6 版或更高版本，以確保支援新版的 JVM Runtime。
 
-#### maven-bundle-plugin的最低版本  {#maven-bundle-plugin}
+#### maven-bundle-plugin 的最低版本  {#maven-bundle-plugin}
 
-將maven-bundle-plugin的使用更新至5.1.5版或更新版本，以確保支援更新的JVM執行階段。
+將 maven-bundle-plugin 使用更新至 5.1.5 版或更高版本，以確保支援新版的 JVM Runtime。
 
-#### 更新maven-scr-plugin中的相依性  {#maven-scr-plugin}
+#### 更新 maven-scr-plugin 中的相依性  {#maven-scr-plugin}
 
-`maven-scr-plugin`與Java 17和21不直接相容。 不過，您可以更新外掛程式組態內的ASM相依性版本，來產生描述項檔案，類似於下列程式碼片段：
+`maven-scr-plugin` 與 Java 17 和 21 不直接相容。但是，可以透過更新外掛程式設定中的 ASM 相依性版本來產生描述項檔案，類似於下面的程式碼片段：
 
 ```
 [source,xml]
