@@ -4,9 +4,9 @@ description: 本頁提供Cloud Acceleration Manager整備階段的概觀。
 exl-id: 2583985b-0358-433c-9d31-38e2c60dc3dc
 feature: Migration
 role: Admin
-source-git-commit: f86d681c8f8cb6d602058ef30b648c53ff7bad69
+source-git-commit: 3a0576e62518240b89290a75752386128b1ab082
 workflow-type: tm+mt
-source-wordcount: '1084'
+source-wordcount: '1096'
 ht-degree: 7%
 
 ---
@@ -60,7 +60,7 @@ ht-degree: 7%
    ![取得上傳金鑰](/help/journey-migration/cloud-acceleration-manager/assets/readiness-3b.png)
 
    >[!IMPORTANT]
-   >報表仍可手動上傳，但使用上傳金鑰可簡化作業。 請注意，如果您處於瀏覽器的無痕模式，則無法手動上傳報表。
+   >報表仍可手動上傳，但使用上傳金鑰可簡化作業。 請注意，如果報表大小約為200MB或更大，則無法手動上傳報表。 也無法使用瀏覽器的無痕模式上傳報告。
 
 1. 上傳新報告後，您可以在CAM中看到「最佳實務分析」報告。
 
@@ -220,6 +220,6 @@ ht-degree: 7%
 
    ![刪除](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view6a.png)
 
-## 下一步 {#whats-next}
+## 後續步驟 {#whats-next}
 
 瞭解如何登入Cloud Acceleration Manager以及如何建立專案後，您現在已準備好繼續檢閱[實作階段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-implementation-phase.html)的下一個步驟。

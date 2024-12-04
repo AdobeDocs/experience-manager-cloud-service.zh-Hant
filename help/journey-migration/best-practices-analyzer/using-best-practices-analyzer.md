@@ -4,10 +4,10 @@ description: 瞭解如何使用Best Practices Analyzer以瞭解升級整備程�
 exl-id: e8498e17-f55a-4600-87d7-60584d947897
 feature: Migration
 role: Admin
-source-git-commit: 9f5d7ee97da1c92d3a3d4573fa3ec737356f54a9
+source-git-commit: 3a0576e62518240b89290a75752386128b1ab082
 workflow-type: tm+mt
-source-wordcount: '2701'
-ht-degree: 39%
+source-wordcount: '2724'
+ht-degree: 38%
 
 ---
 
@@ -85,6 +85,9 @@ ht-degree: 39%
 
 >[!NOTE]
 >您可選擇略過自動上傳至CAM，方法是選取&#x200B;**略過報告自動上傳至CAM**。 如果您選擇略過，則需要以逗號分隔的值檔案手動下載BPA報表，然後以CAM上傳該檔案。 建議您使用上傳金鑰選項，因為這可簡化作業。
+
+>[!IMPORTANT]
+>手動上傳至CAM時，報表大小限製為約200MB。 如需大型報告，您必須運用自動上傳。
 
 1. 提供有效金鑰時，**產生**&#x200B;按鈕會變成使用中。 按一下&#x200B;**產生**&#x200B;以開始產生報表。
 
