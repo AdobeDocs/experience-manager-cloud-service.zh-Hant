@@ -5,9 +5,9 @@ exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 9d169ad7a2982ee44d9b47a418d50b2806942ce2
+source-git-commit: b2852673ad313e5ea6be6dc0ed185d60a46fedeb
 workflow-type: tm+mt
-source-wordcount: '1016'
+source-wordcount: '1020'
 ht-degree: 16%
 
 ---
@@ -86,7 +86,7 @@ ht-degree: 16%
 
 若要驗證使用中的網域，您必須新增及驗證CNAME。
 
-`CNAME`或記錄一旦布建，就會將網域的所有網際網路流量路由到它指向的任何地方。 如果未佈建該位置來處理流量，則會發生中斷。如果未經測試，內容可能會存在錯誤。這就是為什麼這個步驟總是在完成測試且準備好上線之後才完成。
+`CNAME`記錄型別或`A`記錄型別布建後，會將網域的所有網際網路流量路由到它指向的任何位置。 如果未佈建該位置來處理流量，則會發生中斷。如果未經測試，內容可能會存在錯誤。這就是為什麼這個步驟總是在完成測試且準備好上線之後才完成。
 
 若要設定這些設定，請確定是否必須設定`CNAME`或Apex記錄以將您的自訂網域名稱指向Cloud Manager網域名稱。 本檔案的下列章節可協助您判斷適合您DNS設定的記錄型別。
 
@@ -130,7 +130,7 @@ Apex 網域是不包含子網域的自訂網域，例如`example.com`。Apex網�
 
 >[!TIP]
 >
->可在管理DNS伺服器上設定&#x200B;*CNAME*&#x200B;或&#x200B;*A記錄*，以節省您的時間。
+>可以在管理DNS伺服器上設定&#x200B;*CNAME記錄*&#x200B;或&#x200B;*A記錄*，以節省您的時間。
 
 <!--
 ![Customer managed certificate steps](/help/implementing/cloud-manager/assets/cdn/cdn-create-customer-cert.png)

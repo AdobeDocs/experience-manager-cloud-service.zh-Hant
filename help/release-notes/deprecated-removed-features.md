@@ -4,10 +4,10 @@ description: 特定於  [!DNL Adobe Experience Manager] as a [!DNL Cloud Service
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: 1ff3a9a0ff6b408794956323f12194f136d6b2ad
+source-git-commit: 9d58d9342a8c0337b1fa0c80b40f1cf6d07c2eee
 workflow-type: tm+mt
-source-wordcount: '2800'
-ht-degree: 96%
+source-wordcount: '2513'
+ht-degree: 79%
 
 ---
 
@@ -15,10 +15,10 @@ ht-degree: 96%
 
 >[!CONTEXTUALHELP]
 >id="aem_cloud_deprecated_features"
->title="AEM as a Cloud Service 中已過時和已移除的功能"
->abstract="AEM as a Cloud Service 具有雲端原生部署模型。某些功能和特性已由對應的雲端原生功能取代，此標籤顯示了這些功能。"
+>title="AEM as a Cloud Service中已過時和已移除的功能"
+>abstract="AEM as a Cloud Service 具有雲端原生部署模型。此索引標籤強調已由對應的雲端原生功能取代的特性和功能。"
 
-Adobe 會持續評估產品功能，逐漸利用更現代化的替代方案重塑或取代舊功能，藉此提升整體客戶價值，也會隨時謹慎考量是否回溯相容性。此外，由於 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 提供雲端原生部署模型，因此某些功能已由對應的雲端原生功能取代。
+Adobe 會持續評估產品功能，逐漸利用更現代化的替代方案重塑或取代舊功能，藉此提升整體客戶價值，也會隨時謹慎考量是否回溯相容性。由於[!DNL Adobe Experience Manager] as a [!DNL Cloud Service]使用雲端原生部署模型，因此會以對應的雲端原生功能取代某些功能和特性。
 
 若要傳達 [!DNL Experience Manager] 功能即將移除/取代的訊息，請套用下列規則：
 
@@ -36,15 +36,15 @@ Adobe 會持續評估產品功能，逐漸利用更現代化的替代方案重�
 | 功能 | 汰除功能 | 替代方案 |
 | ------------ | ------------------ | ----------- |
 | [!DNL Sites] | [JavaScript Use API](https://github.com/adobe/htl-spec/blob/master/SPECIFICATION.md#42-javascript-use-api) | [Java Use API](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-htl/content/java-use-api) |
-| [!DNL Sites] | **社交媒體狀態**&#x200B;的體驗片段屬性。 | 該功能不久將移除。 |
+| [!DNL Sites] | **社交媒體狀態**&#x200B;的體驗片段屬性。 | 此功能預計不久將會移除。 |
 | [!DNL Sites] | 基於範例的簡單內容片段。 | 現在[基於模型的結構化內容片段](/help/assets/content-fragments/content-fragments-models.md)。 |
 | [!DNL Assets] | 處理所擷取影像的 `DAM Asset Update` 工作流程。 | 資產擷取現在使用[資產微服務](/help/assets/asset-microservices-overview.md)。 |
 | [!DNL Assets] | 直接將資產上傳到 [!DNL Experience Manager]。請參閱[已過時的資產上傳 API](/help/assets/developer-reference-material-apis.md#deprecated-asset-upload-api)。 | 使用[直接二進位上傳](/help/assets/add-assets.md)。如需技術詳細資訊，請參閱[直接上傳 API](/help/assets/developer-reference-material-apis.md#upload-binary)。 |
 | [!DNL Assets] | 不支援 [ 工作流程中的](/help/assets/developer-reference-material-apis.md#post-processing-workflows-steps)某些工作流程步驟`DAM Asset Update`，包括呼叫命令列工具，例如 [!DNL ImageMagick]. | [資產微服務](/help/assets/asset-microservices-overview.md)可取代許多工作流程。若要自訂處理程序，請使用[後期處理工作流程](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows)。 |
 | [!DNL Assets] | FFmpeg 影片轉碼。 | 若要產生 FFmpeg 縮圖，請使用[資產微服務](/help/assets/asset-microservices-overview.md)。若是 FFmpeg 轉碼，請使用 [Dynamic Media](/help/assets/manage-video-assets.md)。 |
-| [!DNL Foundation] | 複寫代理程式的「散發」標籤下的樹狀結構複寫 UI (2021 年 9 月 30 日後移除) | [管理出版物](/help/operations/replication.md#manage-publication)或[啟用樹狀工作流程步驟](/help/operations/replication.md#tree-activation)方法。 |
-| [!DNL Foundation] | 複寫代理程式管理員畫面的「散發」標籤和複寫 API 都不能用來複寫超過 10MB 的內容套件。 | [管理出版物](/help/operations/replication.md#manage-publication)或[啟用樹狀工作流程步驟](/help/operations/replication.md#tree-activation) |
-| [!DNL Foundation] | 使用從 Adob&#x200B;&#x200B;e Developer Console 專案產生的憑證來整合，將逐漸失去對服務帳戶 (JWT) 憑證的支援。2024 年 5 月 1 日或之後，無法在 Adobe Developer Console 中建立新的服務帳戶(JWT) 憑證，但在 2025 年 1 月 1 日之前，現有服務帳戶 (JWT) 憑證仍可用於已設定的整合，到那時候，現有服務帳戶 (JWT) 憑證將不再有效，且客戶必須移轉到 OAuth Server-to-Server 憑證。[了解更多](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/security/jwt-credentials-deprecation-in-adobe-developer-console)。 | [移轉](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#migration-overview)至 OAuth Server-to-Server 憑證。 |
+| [!DNL Foundation] | 復寫代理程式「散發」標籤下的樹狀結構復寫UI （2021年9月30日後移除） | [管理出版物](/help/operations/replication.md#manage-publication)或[啟用樹狀工作流程步驟](/help/operations/replication.md#tree-activation)方法。 |
+| [!DNL Foundation] | 復寫代理程式管理畫面的「散發」標籤和復寫API無法復寫大於10MB的內容套件。 | [管理出版物](/help/operations/replication.md#manage-publication)或[啟用樹狀工作流程步驟](/help/operations/replication.md#tree-activation) |
+| [!DNL Foundation] | 使用從Adobe Developer Console專案產生的認證進行整合時，服務帳戶(JWT)認證支援將逐漸喪失。 自2024年5月1日起，無法在Adobe Developer Console中建立新的服務帳戶(JWT)憑證。 在2025年1月1日之前，現有的服務帳戶(JWT)憑證可用於已設定的整合，但在之後這些憑證停止運作，需要客戶移轉至OAuth伺服器對伺服器憑證。 [了解更多](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/security/jwt-credentials-deprecation-in-adobe-developer-console)。 | [移轉](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#migration-overview)至 OAuth Server-to-Server 憑證。 |
 | [!DNL Foundation] | 用於複寫內容階層的發佈內容樹狀工作流程和相關的發佈內容樹狀工作流程步驟。 | 使用[啟用樹狀工作流程步驟](/help/operations/replication.md#tree-activation)，其效能更佳。 |
 
 
@@ -55,10 +55,10 @@ Adobe 會持續評估產品功能，逐漸利用更現代化的替代方案重�
 | 區域 | 功能 | 替代方案 | 目標移除日期 |
 | ------------ | ------------------ | ----------- | ------------------- |
 | 使用者介面 | 傳統 UI 已從產品使用者介面中移除。一些傳統 UI 對話框可用於一些選定的功能，例如連結檢查器、版本清除和一些 Cloud Service 設定。即將推出的[產品更新](/help/release-notes/home.md)可能會進一步移除傳統 UI 可用性。 | 標準 UI | 已移除 |
-| [!DNL Dynamic Media] | 先前與 [Dynamic Media Classic](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/scene7.html#integration) 和 [Dynamic Media 混合模式](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/config-dynamic.html#dynamic)整合無法在 [!DNL Experience Manager] as a [!DNL Cloud Service]中使用。 | 請使用 [Dynamic Media](/help/assets/dynamic-media/dynamic-media.md) (隨 [!DNL Experience Manager] as a [!DNL Cloud Service] 提供)。 | 已移除 |
+| [!DNL Dynamic Media] | 先前與 [Dynamic Media Classic](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/sites/administering/integration/scene7#integration) 和 [Dynamic Media 混合模式](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/dynamic/config-dynamic#dynamic)整合無法在 [!DNL Experience Manager] as a [!DNL Cloud Service]中使用。 | 請使用 [Dynamic Media](/help/assets/dynamic-media/dynamic-media.md) (隨 [!DNL Experience Manager] as a [!DNL Cloud Service] 提供)。 | 已移除 |
 | [!DNL Sites] | Portal Director 和 Portlet 元件 | 這些功能在 [!DNL Experience Manager] 6.4 中已過時，並已從 [!DNL Experience Manager] 中移除。 | 已移除 |
 | [!DNL Sites] | Design Importer | 此功能已移除，因為無法在執行階段存取 [!DNL Experience Manager] 存放庫的不可修改區段。 | 已移除 |
-| [!DNL Assets] | [!DNL Assets] 無法與 Marketing Cloud Assets 核心服務和 Creative Cloud 服務共用。 | 若要與 [!DNL Adobe Creative Cloud] 整合，請使用 [Adobe Asset Link](https://helpx.adobe.com/tw/enterprise/using/adobe-asset-link.html)。 | 已移除 |
+| [!DNL Assets] | 無法與Assets核心服務和Creative Cloud服務共用[!DNL Assets]。 | 若要與 [!DNL Adobe Creative Cloud] 整合，請使用 [Adobe Asset Link](https://helpx.adobe.com/tw/enterprise/using/adobe-asset-link.html)。 | 已移除 |
 | [!DNL Foundation] | 支援 Apache Sling 資料來源 (OSGi 套件組合 org.apache.sling.datasource) | 不適用 | 已移除 |
 | [!DNL Foundation] | 支援 JST 指令碼範例 (OSGi 套件組合 org.apache.sling.scripting.jst) | 不適用 | 已移除 |
 | [!DNL Foundation] | 支援 Apache Felix Http Whiteboard | OSGi Http Whiteboard | 2022 年 3 月 |
@@ -68,7 +68,7 @@ Adobe 會持續評估產品功能，逐漸利用更現代化的替代方案重�
 
 ## AEM API {#aem-apis}
 
-以下是已過時的 AEM API 及其預期移除日期的詳盡清單。客戶應在目標移除日期之前從他們的程式碼中移除 API。在移除日期之後使用 API 將在本機 SDK/開發環境和 Cloud Manager 組建過程中產生錯誤。
+以下是已過時的 AEM API 及其預期移除日期的詳盡清單。客戶應在目標移除日期之前從他們的程式碼中移除 API。在移除日期之後使用API時，可能會在本機SDK/開發環境和Cloud Manager建置程式中產生錯誤。
 
 <details>
   <summary>展開以查看已過時的 API 清單。</summary>
@@ -82,7 +82,7 @@ Adobe 會持續評估產品功能，逐漸利用更現代化的替代方案重�
 <tbody>
   <tr>
     <td>org.apache.sling.commons.auth<br> org.apache.sling.commons.auth.spi</td>
-    <td>使用 Sling 的 Auth Core / Auth Core SPI 介面作為替代方法。<a href="#org.apache.sling.commons.auth">請參閱下面的移除說明。</a></td>
+    <td>使用Sling的Auth Core/Auth Core SPI介面作為替代方法。 <a href="#org.apache.sling.commons.auth">請參閱下面的移除說明。</a></td>
     <td>2015</td>
     <td>7/30/21</td>
   </tr>
@@ -200,54 +200,54 @@ Adobe 會持續評估產品功能，逐漸利用更現代化的替代方案重�
   </tr>
   <tr>
     <td>org.apache.jackrabbit.vault.util.xml<br>org.apache.jackrabbit.vault.util.xml.serialize</td>
-    <td>與 Apache Xerces 相關的 Util 類別已在後續版本中移除，導致主要版本變更。由於這些 Util 供 Filevault 內部使用，該 API 已從公用 API 表面淘汰。</td>
+    <td>與 Apache Xerces 相關的 Util 類別已在後續版本中移除，導致主要版本變更。由於這些Util供File Vault內部使用，該API已從公用API表面淘汰。</td>
     <td>9/1/21</td>
     <td>已移除</td>
   <tr>
     <td>org.apache.sling.atom.taglib<br>org.apache.sling.atom.taglib.media</td>
     <td>舊版 AEM 6.x API。<a href="#org.apache.abdera_or_org.apache.sling.atom.taglib">請參閱下面的移除說明。</a></td>
     <td>4/8/19</td>
-    <td>09/29/21</td>
+    <td>9/29/21</td>
   </tr>
   <tr>
     <td>org.apache.felix.http.whiteboard</td>
     <td>不再支援 Apache Felix Http Whiteboard。將您的程式碼移轉到 OSGi Http Whiteboard。<a href="#org.apache.felix.http.whiteboard">請參閱下面的移除說明。</a></td>
     <td>1/27/2022</td>
-    <td>03/24/2022</td>
+    <td>3/24/2022</td>
   </tr>
   <tr>
     <td>org.apache.cocoon.xml.dom<br>org.apache.cocoon.xml.sax</td>
-    <td>此 API 已過時，將您的程式碼移轉到 JDK 提供的 XML API。</td>
+    <td>此 API 已過時。將您的程式碼移轉至JDK提供的XML API。</td>
     <td>1/27/2022</td>
     <td>3/24/2022</td>
   </tr>
   <tr>
     <td>ch.qos.logback.classic<br>ch.qos.logback.classic.boolex<br>ch.qos.logback.classic.db.names<br>ch.qos.logback.classic.db.script<br>ch.qos.logback.classic.encoder<br>ch.qos.logback.classic.filter<br>ch.qos.logback.classic.helpers<br>ch.qos.logback.classic.html<br>ch.qos.logback.classic.jmx<br>ch.qos.logback.classic.joran<br>ch.qos.logback.classic.joran.action<br>ch.qos.logback.classic.jul<br>ch.qos.logback.classic.layout<br>ch.qos.logback.classic.log4j<br>ch.qos.logback.classic.net<br>ch.qos.logback.classic.net.server<br>ch.qos.logback.classic.pattern<br>ch.qos.logback.classic.pattern.color<br>ch.qos.logback.classic.selector<br>ch.qos.logback.classic.selector.servlet<br>ch.qos.logback.classic.servlet<br>ch.qos.logback.classic.sift<br>ch.qos.logback.classic.spi<br>ch.qos.logback.classic.turbo<br>ch.qos.logback.classic.util<br>ch.qos.logback.core<br>ch.qos.logback.core.boolex<br>ch.qos.logback.core.encoder<br>ch.qos.logback.core.filter<br>ch.qos.logback.core.helpers<br>ch.qos.logback.core.hook<br>ch.qos.logback.core.html<br>ch.qos.logback.core.joran<br>ch.qos.logback.core.joran.action<br>ch.qos.logback.core.joran.conditional<br>ch.qos.logback.core.joran.event<br>ch.qos.logback.core.joran.event.stax<br>ch.qos.logback.core.joran.node<br>ch.qos.logback.core.joran.spi<br>ch.qos.logback.core.joran.util<br>ch.qos.logback.core.joran.util.beans<br>ch.qos.logback.core.layout<br>ch.qos.logback.core.net<br>ch.qos.logback.core.net.server<br>ch.qos.logback.core.net.ssl<br>ch.qos.logback.core.pattern<br>ch.qos.logback.core.pattern.color<br>ch.qos.logback.core.pattern.parser<br>ch.qos.logback.core.pattern.util<br>ch.qos.logback.core.property<br>ch.qos.logback.core.read<br>ch.qos.logback.core.recovery<br>ch.qos.logback.core.rolling<br>ch.qos.logback.core.rolling.helper<br>ch.qos.logback.core.sift<br>ch.qos.logback.core.spi<br>ch.qos.logback.core.status<br>ch.qos.logback.core.subst<br>ch.qos.logback.core.util</td>
-    <td>AEM as a Cloud Service 不支援此內部 Logback API。</td>
+    <td>AEM as a Cloud Service不支援此內部回登API。</td>
     <td>1/27/2022</td>
     <td>3/24/2022</td>
   </tr>
   <tr>
     <td>org.slf4j.spi</td>
-    <td>AEM as a Cloud Service 不支援此內部 log4j API。</td>
+    <td>AEM as a Cloud Service不支援此內部log4j API。</td>
     <td>1/27/2022</td>
     <td>3/24/2022</td>
   </tr>
   <tr>
     <td>org.apache.log4j<br>org.apache.log4j.helpers<br>org.apache.log4j.spi<br>org.apache.log4j.xml</td>
-    <td>Apache Log4j 1 已於 2015 年結束生命週期，不再受支援。</td>
+    <td>Apache Log4j 1已於2015年結束生命週期，不再受支援。</td>
     <td>1/27/2022</td>
     <td>3/24/2022</td>
   </tr>
   <tr>
     <td>org.apache.sling.commons.log.logback<br>org.apache.sling.commons.log.logback.webconsole</td>
-    <td>AEM as a Cloud Service 不支援此內部 Logback API。</td>
+    <td>AEM as a Cloud Service不支援此內部回登API。</td>
     <td>1/27/2022</td>
     <td>已移除</td>
   </tr>
   <tr>
     <td>com.github.jknack.handlebars.js</td>
-    <td>由於安全性漏洞，Handlebars 必須從 4.0.5 升級到 4.3.0。此套件不再出現在升級後的 Handlebars 中。</td>
+    <td>由於安全性漏洞，Handlebars必須從4.0.5升級至4.3.0。 此套件不再出現在升級的Handlebars中。</td>
     <td>5/5/2022</td>
     <td>8/5/2022</td>
   </tr>
@@ -261,10 +261,10 @@ Adobe 會持續評估產品功能，逐漸利用更現代化的替代方案重�
     <td>com.day.cq.contentsync.handler.util</td>
     <td>此 API 已過時。請改用 Apache Sling 的產生器。</td>
     <td>10/31/2022</td>
-    <td>01/01/2023</td>
+    <td>1/01/2023</td>
   </tr>
   <tr><td>org.apache.sling.commons.json<br>org.apache.sling.commons.json.http<br>org.apache.sling.commons.json.io<br>org.apache.sling.commons.json.jcr<br>org.apache.sling.commons.json.sling<br>org.apache.sling.commons.json.util<br>org.apache.sling.commons.json.xml</td>
-    <td>AEM as a Cloud Service 不支援此 API。</td>
+    <td>AEM as a Cloud Service不支援此API。</td>
     <td>5/15/2023</td>
     <td>6/15/2023</td>
   </tr><td>com.google.common.annotations<br>com.google.common.base<br>com.google.common.cache<br>com.google.common.collect<br>com.google.common.escape<br>com.google.common.eventbus<br>com.google.common.hash<br>com.google.common.html<br>com.google.common.io<br>com.google.common.math<br>com.google.common.net<br>com.google.common.primitives<br>com.google.common.reflect<br>com.google.common.util.concurrent<br>com.google.common.xml</td>
@@ -274,7 +274,7 @@ Adobe 會持續評估產品功能，逐漸利用更現代化的替代方案重�
   </tr>
   <tr>
     <td>org.slf4j.event    </td>
-    <td>AEM as a Cloud Service 不支援此內部 slf4j API</td>
+    <td>AEM as a Cloud Service不支援此內部slf4j API。</td>
     <td>2022 年 4 月 11 日</td>
     <td>2024 年 8 月 30 日</td>
   </tr>
@@ -314,18 +314,20 @@ Adobe 會持續評估產品功能，逐漸利用更現代化的替代方案重�
 
 ### 移除 `org.apache.sling.commons.auth*` {#org.apache.sling.commons.auth}
 
-如果您正在使用 `org.apache.sling.commons.auth` 和/或 `org.apache.sling.commons.auth.spi`，這類使用可以分別透過將程式碼移轉至 `org.apache.sling.auth` 來代替。`org.apache.sling.auth.spi`。如果您使用舊版本 [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/)，請務必更新至最新版本。
+如果您正在使用`org.apache.sling.commons.auth`或`org.apache.sling.commons.auth.spi`，或同時使用兩者，則可將程式碼移轉至`org.apache.sling.auth`回應以取代此用法。 `org.apache.sling.auth.spi`。如果您使用舊版[ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/)，請務必更新至最新版本。
 
 動作清單：
+
 * 將 ACS AEM Commons 更新至最新版本
 * 從 `org.apache.sling.commons.auth` 和/或 `org.apache.sling.commons.auth.spi` 分別移轉至 `org.apache.sling.auth` `org.apache.sling.auth.spi`。
 
 ### 移除 `org.eclipse.jetty*` {#org.eclipse.jetty}
 
-如果您使用套件 `org.eclipse.jetty` 中的任何項目或其子套件中的一項，您可能會想要移轉至具備類似功能的其他第三方程式庫。如果移轉不可行，請將下面清單中所需的套件組合新增至您的專案。
+如果您使用封裝`org.eclipse.jetty`或其子封裝中的任何專案，您可能想要移轉至具有類似功能的其他協力廠商程式庫。 如果移轉不可行，請將下面清單中所需的套件組合新增至您的專案。
 
 動作清單：
-* 將使用 `org.eclipse.jetty` 套件更換為其他第三方程式庫/自己的程式碼或
+
+* 將`org.eclipse.jetty`套件的使用方式取代為其他協力廠商程式庫/自己的程式碼或
 * 從此清單中選取所需的套件組合，並將其新增至您的專案：
    * `org.eclipse.jetty:jetty-client:9.4.54.v20240208`
    * `org.eclipse.jetty:jetty-http:9.4.54.v20240208`
@@ -341,37 +343,41 @@ Adobe 會持續評估產品功能，逐漸利用更現代化的替代方案重�
 將 Mongo 用戶端 API 新增到您的專案中。
 
 動作清單：
+
 * 將此套件組合新增至您的專案
    * `org.mongodb:mongo-java-driver:3.12.7`
 
 ### 使用 `org.apache.abdera*` 和 `org.apache.sling.atom.taglib` {#org.apache.abdera_or_org.apache.sling.atom.taglib}
 
-將使用來自 `org.apache.abdera` 和 `org.apache.sling.atom.taglib` 的任何套件更換為提供類似功能的第三方程式庫或您自己的程式碼。
+使用提供類似功能或您自己的程式碼的協力廠商程式庫取代`org.apache.abdera`和`org.apache.sling.atom.taglib`的任何套件。
 
 動作清單：
-* 將使用來自 `org.apache.abdera` 和 `org.apache.sling.atom.taglib` 的套件更換為其他第三方程式庫/自己的程式碼。
+
+* 以其他協力廠商程式庫/自己的程式碼取代來自`org.apache.abdera`和`org.apache.sling.atom.taglib`之套件的使用方式。
 
 ### 使用 `org.apache.felix.http.whiteboard` {#org.apache.felix.http.whiteboard}
 
 將使用 `org.apache.felix.http.whiteboard` 更換為 [OSGi Http Whiteboard](https://docs.osgi.org/specification/osgi.cmpn/7.0.0/service.http.whiteboard.html)。官方 OSGi API 具備類似的功能，且更換通常只需要變更服務註冊屬性。
 
 動作清單：
+
 * 將使用 `org.apache.felix.http.whiteboard` 更換為 [OSGi Http Whiteboard](https://docs.osgi.org/specification/osgi.cmpn/7.0.0/service.http.whiteboard.html)
 
 ## OSGI 設定 {#osgi-configuration}
 
 以下兩個清單列出了 AEM as a Cloud Service OSGi 設定介面，說明客戶可以設定的內容。
 
-1. 不得由客戶代碼設定的 OSGi 設定清單
+1. 客戶程式碼不可設定列出的OSGi設定。
 1. 可以設定其屬性的 OSGi 設定清單，但必須遵守指定的驗證規則。這些規則包括是否需要聲明屬性、其類型以及在某些情況下允許的值範圍。
 
-如果有 OSGI 設定未列出，則可由客戶代碼進行設定。
+客戶程式碼可設定任何未列出的OSGi設定。
 
-這些規則會在 Cloud Manager 建置程序中進行驗證。未來可能會新增其他規則，預計執行日期已註明在表格中。客戶應在目標執行日期後遵守這些規則。在移除日期之後不遵守規則將會在 Cloud Manager 建置程序中發生錯誤。Maven 專案應包含 [AEM as a Cloud Service SDK 建置分析器 Maven 外掛程式](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html)，以在本機 SDK 開發期間標記 OSGI 設定錯誤。
+這些規則會在 Cloud Manager 建置程序中進行驗證。未來可能會新增其他規則，預計執行日期已註明在表格中。客戶應在目標執行日期後遵守這些規則。在移除日期之後不遵守規則會在Cloud Manager建置程式中產生錯誤。 Maven 專案應包含 [AEM as a Cloud Service SDK 建置分析器 Maven 外掛程式](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin)，以在本機 SDK 開發期間標記 OSGI 設定錯誤。
 
 有關 OSGI 設定的其他資訊可以在[此位置](/help/implementing/deploying/configuring-osgi.md)找到。
 
 +++無法修改的 OSGi 設定。
+
 * **`org.apache.felix.webconsole.internal.servlet.OsgiManager`**(公告日期：2021 年 4 月 30 日，執行日期：2021 年 7 月 31 日)
 * **`com.day.cq.auth.impl.cug.CugSupportImpl`**(公告日期：2021 年 4 月 30 日，執行日期：2021 年 7 月 31 日)
 * **`com.day.cq.jcrclustersupport.ClusterStartLevelController`**(公告日期：2021 年 4 月 30 日，執行日期：2021 年 7 月 31 日)
@@ -380,6 +386,7 @@ Adobe 會持續評估產品功能，逐漸利用更現代化的替代方案重�
 +++
 
 +++OSGi 設定須遵守建置驗證規則。
+
 * **`org.apache.felix.eventadmin.impl.EventAdmin`**(公告日期：2021 年 4 月 30 日，執行日期：2021 年 7 月 31 日)
 * `org.apache.felix.eventadmin.ThreadPoolSize`
    * 類型：整數
@@ -501,77 +508,6 @@ Adobe 會持續評估產品功能，逐漸利用更現代化的替代方案重�
       * 類型：布林值
 +++
 
-## Java Runtime 更新至 21 版 {#java-runtime-update-21}
+## Java執行階段更新至21版 {#java-runtime-update-21}
 
-AEM as a Cloud Service 將移至 Java 21 Runtime。為確保相容性，必須進行以下調整：
-
-### 執行階段需求
-
-必須進行這些調整，才能確保與Java 21執行階段相容。 程式庫可隨時更新，以與舊版Java相容。
-
-#### org.objectweb.asm 的最低版本{#org.objectweb.asm}
-
-將 org.objectweb.asm 使用更新至 9.5 版以上，以確保支援新版的 JVM Runtime。
-
-#### org.apache.groovy 的最低版本{#org.apache.groovy}
-
-將 org.apache.groovy 使用更新至 4.0.22 版以上，以確保支援新版 JVM Runtime。
-
-新增第三方相依性 (例如 AEM Groovy 主控台) 可以間接包含此搭售方案。
-
-### 建置時間需求
-
-必須進行這些調整，才能使用較新版本的Java建置專案，但執行階段相容性並不需要這些調整。 Maven外掛程式可與舊版Java相容，隨時更新。
-
-#### bnd-maven-plugin 的最低版本 {#bnd-maven-plugin}
-
-將bnd-maven-plugin的使用更新至6.4.0版，以確保支援更新的JVM執行階段。 版本7或更新版本與Java 11或更低版本不相容，因此目前不建議升級至該版本。
-
-#### aemanalyser-maven-plugin 的最低版本 {#aemanalyser-maven-plugin}
-
-將 aemanalyser-maven-plugin 的使用更新至 1.6.6 版或更高版本，以確保支援新版的 JVM Runtime。
-
-#### maven-bundle-plugin 的最低版本  {#maven-bundle-plugin}
-
-將 maven-bundle-plugin 使用更新至 5.1.5 版或更高版本，以確保支援新版的 JVM Runtime。
-
-#### 更新 maven-scr-plugin 中的相依性  {#maven-scr-plugin}
-
-`maven-scr-plugin` 與 Java 17 和 21 不直接相容。但是，可以透過更新外掛程式設定中的 ASM 相依性版本來產生描述項檔案，類似於下面的程式碼片段：
-
-```
-[source,xml]
- <project>
-   ...
-   <build>
-     ...
-     <plugins>
-       ...
-       <plugin>
-         <groupId>org.apache.felix</groupId>
-         <artifactId>maven-scr-plugin</artifactId>
-         <version>1.26.4</version>
-         <executions>
-           <execution>
-             <id>generate-scr-scrdescriptor</id>
-             <goals>
-               <goal>scr</goal>
-             </goals>
-           </execution>
-         </executions>
-         <dependencies>
-           <dependency>
-             <groupId>org.ow2.asm</groupId>
-             <artifactId>asm-analysis</artifactId>
-             <version>9.7.1</version>
-             <scope>compile</scope>
-           </dependency>
-         </dependencies>
-       </plugin>
-       ...
-     </plugins>
-     ...
-   </build>
-   ...
- </project>
-```
+Adobe Experience Manager as a Cloud Service正在轉換至Java 21執行階段。 若要確保相容性，必須更新[執行階段需求](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)中概述的程式庫版本。

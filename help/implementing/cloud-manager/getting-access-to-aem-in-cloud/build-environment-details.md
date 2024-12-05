@@ -5,10 +5,10 @@ exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f5f7830ac6d7f5b65203b12bb1775e64379c7d14
+source-git-commit: 7b9b9f3b957b27812c4a7e8f2dbcf96d8786b73e
 workflow-type: tm+mt
-source-wordcount: '776'
-ht-degree: 58%
+source-wordcount: '1277'
+ht-degree: 37%
 
 ---
 
@@ -24,8 +24,8 @@ Cloud Manager 使用專門的構建環境構建和測試您的程式碼。
 * 建置環境以 Linux 為基礎，衍生自 Ubuntu 22.04。
 * 已安裝 Apache Maven 3.9.4。
    * Adobe 建議使用者[更新其 Maven 存放庫以使用 HTTPS 而非 HTTP](#https-maven)。
-* 安裝的Java版本為OracleJDK 11.0.22和OracleJDK 8u401。
-* **重要**：依預設，`JAVA_HOME`環境變數設為`/usr/lib/jvm/jdk1.8.0_401`，其中包含OracleJDK 8u401。 *_AEM雲端專案應覆寫此預設以使用JDK 11_*。 如需詳細資訊，請參閱[設定Maven JDK版本](#alternate-maven-jdk-version)區段。
+* 已安裝的Java版本為OracleJDK 11.0.22、OracleJDK 17.0.10和OracleJDK 21.0.4。
+* **重要：**&#x200B;依預設，`JAVA_HOME`環境變數設為`/usr/lib/jvm/jdk1.8.0_401`，其中包含OracleJDK 8u401。 ***AEM Cloud專案應覆寫此預設以使用JDK 21 （偏好設定）、17或11***。 如需詳細資訊，請參閱[設定Maven JDK版本](#alternate-maven-jdk-version)區段。
 * 安裝了一些必要的附加系統套件。
    * `bzip2`
    * `unzip`
@@ -54,13 +54,107 @@ Cloud Manager [2023.10.0 版](/help/implementing/cloud-manager/release-notes/202
 
 ### 使用特定的Java版本 {#using-java-support}
 
-Cloud Manager建置流程預設會使用Oracle8 JDK來建置專案，但AEM Cloud Service客戶應將Maven執行JDK版本設定為`11`。
+Cloud Manager建置流程預設會使用Oracle8 JDK來建置專案，但AEM Cloud Service客戶應將Maven執行JDK版本設定為21 （偏好設定）、17或11。
 
 #### 設定Maven JDK版本 {#alternate-maven-jdk-version}
 
-Adobe建議您將整個Maven執行的JDK版本設定為`.cloudmanager/java-version`檔案中的`11`。
+Adobe建議在`.cloudmanager/java-version`檔案中將Maven執行JDK版本設定為`21`或`17`。
 
-若要這麼做，請在管道使用的Git存放庫分支中建立名為`.cloudmanager/java-version`的檔案。 編輯檔案，使其僅包含文字`11`。 雖然Cloud Manager也接受`8`的值，但AEM Cloud Service專案不再支援此版本。 任何其他值會受到忽略。指定`11`時，會使用Oracle11，且`JAVA_HOME`環境變數設為`/usr/lib/jvm/jdk-11.0.22`。
+若要這麼做，請在管道使用的Git存放庫分支中建立名為`.cloudmanager/java-version`的檔案。 編輯檔案，使其僅包含文字`21`或`17`。 雖然Cloud Manager也接受`8`的值，但AEM Cloud Service專案不再支援此版本。 任何其他值會受到忽略。指定`21`或`17`時，會使用OracleJava 21或OracleJava 17，且`JAVA_HOME`環境變數設為`/usr/lib/jvm/jdk-21`或`/usr/lib/jvm/jdk-17`。
+
+#### 移轉至使用Java 21或Java 17建置的先決條件 {#prereq-for-building}
+
+>[!NOTE]
+>
+>*將應用程式移轉至新的Java組建版本和執行階段版本時，請先在開發和預備環境中徹底測試，然後再部署到生產環境。
+>請注意，下列功能尚未正式通過Java 21執行階段驗證： [Forms](/help/forms/home.md)、[工作流程](/help/sites-cloud/authoring/workflows/overview.md)、[收件匣](/help/sites-cloud/authoring/inbox.md)以及[專案](/help/sites-cloud/authoring/projects/overview.md)。 如果您的應用程式依賴這些功能，請確定完整的測試以驗證功能。*
+
+##### 關於某些翻譯功能 {#translation-features}
+
+使用Java 21或Java 17建立時，以下功能可能無法正常運作，Adobe預計在2025年初解決這些問題：
+
+* 使用人工翻譯時，`XLIFF` （XML本地化交換檔案格式）失敗。
+* `I18n` （國際化）無法正確處理希伯來文(`he`)、印尼(`in`)和意第緒文(`yi`)的語言環境，因為較新Java版本中的語言環境建構函式有所變更。
+
+#### 執行階段需求 {#runtime-requirements}
+
+從2025年2月開始，Java 21執行階段將用於在Java 21、Java 17和Java 11上建置。 為確保相容性，必須進行下列調整。
+
+程式庫更新可隨時套用，因為維持與舊版Java相容。
+
+* **最低版本`org.objectweb.asm`：**
+將`org.objectweb.asm`的使用更新至9.5版或更新版本，以確保支援較新的JVM執行階段。
+
+* **最低版本`org.apache.groovy`：**
+將`org.apache.groovy`的使用更新至4.0.22版或更新版本，以確保支援較新的JVM執行階段。
+
+  新增第三方相依性 (例如 AEM Groovy 主控台) 可以間接包含此搭售方案。
+
+* **編輯執行階段引數：**
+使用Java 21在本機執行AEM時，由於`MaxPermSize`引數，啟動指令碼（`crx-quickstart/bin/start`或`crx-quickstart/bin/start.bat`）會失敗。 作為補救方法，請從指令碼移除`-XX:MaxPermSize=256M`或定義環境變數`CQ_JVM_OPTS`，將其設定為`-Xmx1024m -Djava.awt.headless=true`。
+
+  Adobe計畫在未來版本中解決此問題。
+
+>[!NOTE]
+>
+>當`.cloudmanager/java-version`設定為`21`或`17`時，就會部署Java 21執行階段。 在2025年2月或3月，計畫將Java 21執行階段部署到所有客戶，即使使用Java 11建置您的計畫碼。
+
+#### 建置時間需求
+
+需要進行下列調整，才能使用Java 21和Java 17建置專案。 可隨時更新，因與舊版Java相容。
+
+* **最低版本`bnd-maven-plugin`：**
+將`bnd-maven-plugin`的使用更新至6.4.0版，以確保支援較新的JVM執行階段。
+
+  版本7或更新版本與Java 11或更低版本不相容，因此不建議升級至該版本。
+
+* **最低版本`aemanalyser-maven-plugin`：**
+將`aemanalyser-maven-plugin`的使用更新至1.6.6版或更新版本，以確保支援較新的JVM執行階段。
+
+* **最低版本`maven-bundle-plugin`：**
+將`maven-bundle-plugin`的使用更新至5.1.5版或更新版本，以確保支援較新的JVM執行階段。
+
+  版本6或更高版本與Java 11或更低版本不相容，因此不建議升級至該版本。
+
+* **更新`maven-scr-plugin`中的相依性：**
+`maven-scr-plugin`與Java 21或Java 17不直接相容。 不過，可以透過更新外掛程式組態中的ASM相依性版本來產生描述項檔案，如下列範例所示：
+
+```XML
+<project>
+  ...
+  <build>
+    ...
+    <plugins>
+      ...
+      <plugin>
+        <groupId>org.apache.felix</groupId>
+        <artifactId>maven-scr-plugin</artifactId>
+        <version>1.26.4</version>
+        <executions>
+          <execution>
+            <id>generate-scr-scrdescriptor</id>
+            <goals>
+              <goal>scr</goal>
+            </goals>
+          </execution>
+        </executions>
+        <dependencies>
+          <dependency>
+            <groupId>org.ow2.asm</groupId>
+            <artifactId>asm-analysis</artifactId>
+            <version>9.7.1</version>
+            <scope>compile</scope>
+          </dependency>
+        </dependencies>
+      </plugin>
+      ...
+    </plugins>
+    ...
+  </build>
+  ...
+</project>
+```
+
 
 ## 環境變數 — 標準 {#environment-variables}
 

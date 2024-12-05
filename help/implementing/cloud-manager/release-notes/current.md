@@ -1,19 +1,18 @@
 ---
-title: Adobe Experience Manager as a Cloud Service 中 Cloud Manager 2024.11.0 的發行說明
-description: 了解 AEM as a Cloud Service 中 Cloud Manager 2024.11.0 的發行資訊。
+title: Adobe Experience Manager as a Cloud Service 中 Cloud Manager 2024.12.0 的發行說明
+description: 了解 AEM as a Cloud Service 中 Cloud Manager 2024.12.0 的發行資訊。
 feature: Release Information
 role: Admin
-exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: e454581a2e6f2b8184a54d6550daec60e58bbc6c
+source-git-commit: ea1aa471a4fcb2ace6e4079715ac88af2d296e18
 workflow-type: tm+mt
-source-wordcount: '784'
-ht-degree: 100%
+source-wordcount: '735'
+ht-degree: 37%
 
 ---
 
-# Adobe Experience Manager as a Cloud Service 中 Cloud Manager 2024.11.0 的發行說明 {#release-notes}
+# Adobe Experience Manager as a Cloud Service 中 Cloud Manager 2024.12.0 的發行說明 {#release-notes}
 
-了解 AEM (Adobe Experience Manager) as a Cloud Service 中 Cloud Manager 2024.11.0 的發行資訊。
+了解 AEM (Adobe Experience Manager) as a Cloud Service 中 Cloud Manager 2024.12.0 的發行資訊。
 
 >[!NOTE]
 >
@@ -21,37 +20,42 @@ ht-degree: 100%
 
 ## 發行日期 {#release-date}
 
-AEM as a Cloud Service 中的 Cloud Manager 2024.11.0 發行日期是 2024 年 11 月 7 日。
+AEM as a Cloud Service中的Cloud Manager 2024.12.0發行日期是2024年12月5日星期四。
 
-下一次預計發行日期為 2024 年 12 月 5 日。
+下一個預計發行日期為2024年1月。
 
 ## 新增功能 {#what-is-new}
 
-* 透過 AEM Cloud Service 體驗最新的 Edge Delivery Services 創新 - 現在可以在您的沙箱計畫中進行探索。[了解更多](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md#auto-creation)<!-- (CMGR-62319) -->
-* AEM Cloud Manager 中的「網域設定」頁面現在包含搜尋功能，可讓您依照名稱迅速找到網域。您可以在搜尋欄位中輸入關鍵字以篩選並顯示相符的網域，從而更輕鬆地以有效率的方式管理多個網域。此外，該頁面也提供狀態篩選器，例如「**已驗證**」和「**未驗證**」，以進一步縮小搜尋結果的範圍。<!-- (CMGR-62615) -->
+* **Java 21支援：**&#x200B;客戶現在可以選擇使用Java 17或Java 21建置，受益於效能改善和新語言功能。 請參閱[建置環境](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)以取得設定步驟，包括更新您的Maven專案說明和某些程式庫版本。 當組建版本設定為Java 17或Java 21時，執行階段預設為Java 21。
 
-![「網域設定」中的「搜尋」欄位](/help/implementing/cloud-manager/assets/domain-settings-search.png)
+  從2025年2月開始，沙箱和開發環境升級至Java 21執行階段，無論版本為何（Java 8、11、17或21）。 生產環境隨後在2025年4月升級。
+
+* **已新增A記錄型別：**&#x200B;對A記錄型別的支援，以使用AEM Cloud Manager中的CDN設定來改善網域的上線整備。 您現在可以選擇新增CNAME記錄型別或代表Fastly的IP的A記錄型別來上線，以簡化網域路由。 此增強功能消除了僅依賴CNAME記錄進行Fastly網域設定的限制。
+
+  請參閱[新增自訂網域名稱](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)。<!-- CMGR-63076 -->
+
+* **將多個網域新增至Edge Delivery網站：**&#x200B;您現在可以在AEM Cloud Manager中將多個網域（包括Apex及非Apex網域）新增至Edge Delivery網站(EDS)。 此增強功能解決了先前限制將多個網域與EDS來源建立關聯的能力限制。 此更新可確保更靈活地管理網域設定，並簡化具有複雜網域設定的網站的上線流程。<!-- CMGR-63007 -->
+
+* **進階篩選選項：**&#x200B;已在AEM Cloud Manager的管道執行頁面和SSL憑證頁面上引入進階篩選選項。 您現在可以依多個條件進行篩選，讓您更快速地存取相關資料，並提高部署效率。<!-- CMGR-26263 -->
+
+   * **管道活動篩選：**包含管道活動篩選，讓您精簡特定管道活動的搜尋結果。 可用的篩選器包括管道、動作和狀態。
+     ![管道活動篩選](/help/implementing/cloud-manager/assets/filters-pipeline.png)
+
+
+   * **SSL憑證篩選：**包含SSL憑證篩選，讓您精簡特定憑證的搜尋結果。 可用的篩選器包括SSL憑證名稱、擁有權和狀態。
+     ![SSL憑證篩選](/help/implementing/cloud-manager/assets/filters-ssl-certificates.png)
 
 ## 早期採用方案 {#early-adoption}
 
 成為 Cloud Manager 早期採用方案的一部分，並有機會測試即將推出的功能。
 
-### AEM 首頁 {#aem-home}
-
-AEM 首頁推出一個集中化的起點，用於在 Adobe Experience Manager 中管理內容、資產和網站。AEM 首頁旨在提供個人化體驗，可讓您根據自己的角色和目標順暢地導覽 AEM 生態系統。它以指南的方式提供關鍵的深入解析和建議的動作，協助您有效率地達成目標。AEM 首頁具備以角色為導向的清晰版面，確保快速存取基本工具，有助於在所有 AEM 功能中提供簡化且有效的體驗。
-
-AEM 首頁可供早期採用者使用，提供專注於提升工作流程、確定目標優先順序和交付結果的最佳化體驗。如果選擇加入，您可以提供回饋意見來影響 AEM 首頁的開發，協助塑造其未來並提升其對整個 AEM 社群的價值。
-
-如果您有興趣測試這個新功能並分享回饋意見，請使用與您的 Adobe ID 相關聯的電子郵件地址寄送電子郵件至 [Grp-AemHome@adobe.com](mailto:Grp-AemHome@adobe.com)。請務必包含以下資訊：
-
-* 最適合您個人資料的角色：內容作者、開發人員、業務負責人、管理員或其他 (請提供說明)。
-* 您的主要 AEM 存取表面：AEM Sites、AEM Assets、AEM Forms、Cloud Manager 或其他 (請提供說明)。
-
 ### 自備 Git - 現在支援 GitLab 和 Bitbucket {#gitlab-bitbucket}
 
 <!-- BOTH CS & AMS -->
 
-**自備 Git** 功能已進行擴展，包括對 GitLab 和 Bitbucket 等外部存放庫的支援。這項新的支援功能是對私人和企業 GitHub 存放庫現有支援的補充。當您新增這些新存放庫時，也可以將它們直接連結到您的管道。您可以將這些存放庫託管在公有雲平台上或私有雲或基礎架構內。這項整合也消除了與 Adobe 存放庫持續進行代碼同步的需求，並提供了在提取請求合併到主分支之前，驗證提取請求的功能。
+**自備Git**&#x200B;功能已擴充為包含對外部存放庫（例如GitLab和Bitbucket）的支援。 這項新的支援功能是對私人和企業 GitHub 存放庫現有支援的補充。當您新增這些新存放庫時，也可以將它們直接連結到您的管道。您可以將這些存放庫託管在公有雲平台上或私有雲或基礎架構內。這項整合也消除了與 Adobe 存放庫持續進行代碼同步的需求，並提供了在提取請求合併到主分支之前，驗證提取請求的功能。
+
+使用外部存放庫（不包括GitHub託管的存放庫）且&#x200B;**部署觸發程式**&#x200B;設為&#x200B;**在Git變更上**&#x200B;的管道現在會自動啟動。
 
 請查看[在 Cloud Manager 中新增外部存放庫](/help/implementing/cloud-manager/managing-code/external-repositories.md)。
 
@@ -63,15 +67,10 @@ AEM 首頁可供早期採用者使用，提供專注於提升工作流程、確�
 
 如果您有興趣測試此新功能並分享您的意見回饋，請使用與您的 Adobe ID 關聯的電子郵件地址向 [Grp-CloudManager_BYOG@adobe.com](mailto:Grp-CloudManager_BYOG@adobe.com) 傳送電子郵件。請務必包含您要使用的 Git 平台以及您是否使用私人/公開或企業存放庫結構。
 
-
 ## 錯誤修正
 
-* 最近的更新解決了 SonarQube 在特定情況下未偵測到硬式編碼密碼的問題。該修正現在包括擴充的模式檢查，並與 SonarQube 的預設偵測標準保持一致。<!-- CMGR-62682 -->
-* 嘗試在 Cloud Manager 中更新 SSL 憑證時，按一下「**[!UICONTROL 更新]**」(在「**[!UICONTROL 檢視和更新 SSL 憑證]**」對話框中) 之後會出現未知的錯誤。<!-- CMGR-62848 -->
-* 在 Cloud Manager 中，即使網域相同但字母大小寫不同，SSL 憑證更新也會失敗，並顯示錯誤「新憑證不符合現有網域」。該更新現在會將網域識別為不區分大小寫，與 RFC 標準保持一致。<!-- CMGR-62844 -->
-* 在 Cloud Manager 中，IP 允許清單綁定停滯在執行狀態，因為缺少連結至網域設定的外部索引鍵。此修正現在可確保 IP 允許清單綁定正確地連結到相關聯的網域設定。<!-- CMGR-62838 -->
-* Cloud Manager 會驗證 SSL 憑證的 OCSP (線上憑證狀態通訊協定) 狀態。Adobe 建議在透過 Cloud Manager 安裝之前，也要在本機上使用如 `openssl verify -untrusted intermediate.pem certificate.pem` 等工具來驗證憑證的完整性。有關更多詳細資訊，請參閱 [SSL 憑證要求文件](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/introduction-to-ssl-certificates#requirements)。<!-- CMGR-62341  -->
-
+* 已新增保護機制，以防止刪除在AEM Cloud Manager中具有作用中網域對應的網域。 嘗試刪除這類網域的使用者現在會收到錯誤訊息，指示他們先刪除網域對應，然後再繼續刪除網域。 此工作流程可確保網域完整性並防止意外錯誤設定。<!-- CMGR-63033 -->
+* 少數情況下，使用者無法新增網域名稱或更新SSL憑證，因為個別案例中的相關狀態不正確。<!-- CMGR-62816 -->
 
 
 <!-- ## Known issues {#known-issues} -->
