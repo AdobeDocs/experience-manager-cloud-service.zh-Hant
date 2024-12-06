@@ -4,9 +4,9 @@ description: 瞭解如何在設定檔案中宣告規則和篩選器，並使用C
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: e5e0606c83f144f92f9ae57e5380a30389e8df1b
+source-git-commit: 4e65a0fb32273548860731c09e27cb58fab93ab4
 workflow-type: tm+mt
-source-wordcount: '1351'
+source-wordcount: '1377'
 ht-degree: 1%
 
 ---
@@ -241,7 +241,7 @@ data:
 
 ## 回應轉換 {#response-transformations}
 
-回應轉換規則可讓您設定和取消設定CDN傳出回應的標頭。 另請參閱上述範例，以參考先前在請求轉換規則中設定的變數。
+回應轉換規則可讓您設定和取消設定CDN傳出回應的標頭。 另請參閱上述範例，以參考先前在請求轉換規則中設定的變數。 亦可設定回應的狀態碼。
 
 設定範例：
 
@@ -282,6 +282,15 @@ data:
           - type: set
             respHeader: x-resp-header-2
             value: value-set-by-resp-rule-2
+      # Example: setting status code
+      - name: status-code-rule
+        when:
+          reqProperty: path
+          like: status-code
+        actions:
+          - type: set
+            respProperty: status
+            value: '410'        
 ```
 
 **動作**
@@ -291,6 +300,7 @@ data:
 | 名稱 | 屬性 | 含義 |
 |-----------|--------------------------|-------------|
 | **設定** | reqHeader，值 | 將指定的標頭設定為回應中的指定值。 |
+|          | respProperty，值 | 設定回應屬性。 僅支援「status」屬性以設定狀態代碼。 |
 | **取消設定** | respHeader | 從回應中移除指定的標頭。 |
 
 ## 來源選取器 {#origin-selectors}
