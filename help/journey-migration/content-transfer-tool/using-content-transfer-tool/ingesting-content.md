@@ -4,9 +4,9 @@ description: 瞭解如何使用Cloud Acceleration Manager將移轉集中的內�
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 feature: Migration
 role: Admin
-source-git-commit: 114b7e795df6267d76d1bd923a7dff8826c67029
+source-git-commit: 550d84f43cba472d74c7be6323bd69ba808c96f8
 workflow-type: tm+mt
-source-wordcount: '3296'
+source-wordcount: '3322'
 ht-degree: 11%
 
 ---
@@ -64,8 +64,9 @@ ht-degree: 11%
    >[!IMPORTANT]
    > 您必須屬於目的地Cloud Service作者服務上的本機&#x200B;**AEM管理員**&#x200B;群組，才能起始內嵌至目的地。 如果您無法開始內嵌，請參閱[無法開始內嵌](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#unable-to-start-ingestion)以取得詳細資料。
 
-1. 選取擷取選擇後，將會顯示預估的持續時間。 這是根據類似擷取之歷史資料盡力估計的結果。
+1. 選取擷取選擇後，便會顯示預估持續時間。 這是根據類似擷取之歷史資料盡力估計的結果。
 
+   * 系統不會針對&#x200B;**非擦去**&#x200B;擷取計算或顯示此預估值，因為在此情況下，CAM不知道目標系統上有多少內容。
    * 只有在擷取的「檢查大小」值已收集到並且可供使用時，才會計算並顯示此預估值。
    * 此值是預估值，雖然計算方式很聰明，但不應視為精確。 不同的因素可能會改變實際持續時間。
    * 在執行內嵌期間，此值也會在期間對話方塊中提供，該對話方塊可透過內嵌的&quot;**檢視期間**&quot;動作存取。
