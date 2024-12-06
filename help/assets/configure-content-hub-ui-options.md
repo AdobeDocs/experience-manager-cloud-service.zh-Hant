@@ -2,10 +2,10 @@
 title: 設定 Content Hub 使用者介面
 description: 設定 Content Hub 使用者介面
 exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
-source-git-commit: 794d8f51f0a44b708538c491b8945c564382f1c5
+source-git-commit: deeb1487ce51f2a91e556b32f9db2a644656d828
 workflow-type: tm+mt
-source-wordcount: '1557'
-ht-degree: 15%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -73,6 +73,8 @@ Experience Manager Assets 可讓管理員設定 Content Hub 使用者介面上�
 * [品牌元素](#configure-branding-content-hub)
 
 * [已到期的資產](#expired-assets-content-hub)
+
+* [轉譯](#renditions-content-hub)
 
 * [自訂連結](#configure-custom-links-content-hub)
 
@@ -165,7 +167,6 @@ Content Hub可讓管理員設定在搜尋資產時顯示的篩選器。 執行�
 
 同樣地，按一下每個可用屬性旁邊可用的![編輯](/help/assets/assets/edit-content-hub.svg)，以進行任何必要的修改，或按一下![刪除](/help/assets/assets/delete-content-hub.svg)，刪除任何現有的中繼資料屬性。 完成所有修改以套用變更後，按一下&#x200B;**儲存**。
 
-
 ### 搜尋 {#configure-metadata-search-content-hub}
 
 管理員可定義當使用者在Content Hub上指定搜尋條件時所搜尋的中繼資料欄位。 執行以下步驟：
@@ -223,6 +224,23 @@ Content Hub預設不會顯示過期的資產。
 
 如果已啟用過期資產的可見度，Content Hub也會使用資產卡上的`Expiring in n days`訊息，強調在未來15天內過期的資產。
 
+### 轉譯 {#renditions-content-hub}
+
+轉譯是數位資產（例如影像、檔案等）的自訂版本，專為不同裝置和平台而設計，可確保最佳效能。 檢視更多有關Adobe Experience Manager Assets](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/renditions)中[轉譯的資訊。
+
+Content Hub可下載靜態轉譯。 靜態轉譯是資產原始檔案（以原生方式產生）的不同表示方式。 範例包括縮圖或行動最佳化的轉譯。 管理員可以管理和控制資產轉譯的可用性；以及管理您是否可以下載原始資產。
+
+若要如此做，請執行以下步驟：
+
+在[組態](#access-configuration-options-content-hub)使用者介面上，按一下&#x200B;**[!UICONTROL 轉譯]**。 下列選項可供使用：
+
+* 啟用[!UICONTROL 啟用靜態轉譯可用性]切換按鈕，讓所有靜態轉譯在Content Hub上可見。
+
+* 啟用或停用&#x200B;**[!UICONTROL 允許使用者下載原始資產]**&#x200B;切換功能，以控制下載原始資產的可用性。
+
+  ![在Content Hub上設定轉譯](assets/config-renditions.png)
+
+如需如何在Content Hub中檢視及下載靜態轉譯的詳細資訊，請參閱[在Content Hub中下載資產](/help/assets/download-assets-content-hub.md)。
 
 ### 自訂連結 {#configure-custom-links-content-hub}
 
