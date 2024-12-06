@@ -3,10 +3,11 @@ title: Adobe Experience Manager as a Cloud Service 中 Cloud Manager 2024.12.0 �
 description: 了解 AEM as a Cloud Service 中 Cloud Manager 2024.12.0 的發行資訊。
 feature: Release Information
 role: Admin
-source-git-commit: ea1aa471a4fcb2ace6e4079715ac88af2d296e18
+exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
+source-git-commit: 8e89adcaadbc53c3d525d57ef452f671137a619f
 workflow-type: tm+mt
-source-wordcount: '735'
-ht-degree: 37%
+source-wordcount: '645'
+ht-degree: 42%
 
 ---
 
@@ -22,17 +23,20 @@ ht-degree: 37%
 
 AEM as a Cloud Service中的Cloud Manager 2024.12.0發行日期是2024年12月5日星期四。
 
-下一個預計發行日期為2024年1月。
+下一個預計發行日期為2025年1月23日。
+
 
 ## 新增功能 {#what-is-new}
 
-* **Java 21支援：**&#x200B;客戶現在可以選擇使用Java 17或Java 21建置，受益於效能改善和新語言功能。 請參閱[建置環境](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)以取得設定步驟，包括更新您的Maven專案說明和某些程式庫版本。 當組建版本設定為Java 17或Java 21時，執行階段預設為Java 21。
+<!-- * **Java 21 support:** Customers can now optionally build with Java 17 or Java 21, benefiting from performance improvements and new language features. See [Build environment](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) for configuration steps, including updating your Maven project description, and certain library versions. When the build version is set to Java 17 or Java 21, the runtime defaults to Java 21.
 
-  從2025年2月開始，沙箱和開發環境升級至Java 21執行階段，無論版本為何（Java 8、11、17或21）。 生產環境隨後在2025年4月升級。
+    Starting February 2025, sandboxes and dev environments upgrade to the Java 21 runtime, regardless of the build version (Java 8, 11, 17, or 21). Production environments follow with an upgrade in April 2025. -->
 
 * **已新增A記錄型別：**&#x200B;對A記錄型別的支援，以使用AEM Cloud Manager中的CDN設定來改善網域的上線整備。 您現在可以選擇新增CNAME記錄型別或代表Fastly的IP的A記錄型別來上線，以簡化網域路由。 此增強功能消除了僅依賴CNAME記錄進行Fastly網域設定的限制。
 
   請參閱[新增自訂網域名稱](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)。<!-- CMGR-63076 -->
+
+<!-- * The AEM Code Quality step now uses SonarQube 9.9 Server, replacing the older 7.4 version. This upgrade brings additional security, performance, and code quality checks, offering more comprehensive analysis and coverage for your projects. -->
 
 * **將多個網域新增至Edge Delivery網站：**&#x200B;您現在可以在AEM Cloud Manager中將多個網域（包括Apex及非Apex網域）新增至Edge Delivery網站(EDS)。 此增強功能解決了先前限制將多個網域與EDS來源建立關聯的能力限制。 此更新可確保更靈活地管理網域設定，並簡化具有複雜網域設定的網站的上線流程。<!-- CMGR-63007 -->
 

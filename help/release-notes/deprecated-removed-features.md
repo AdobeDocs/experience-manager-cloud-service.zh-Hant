@@ -4,10 +4,10 @@ description: 特定於  [!DNL Adobe Experience Manager] as a [!DNL Cloud Service
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: 9d58d9342a8c0337b1fa0c80b40f1cf6d07c2eee
+source-git-commit: 33dd48cc6484675ca54cfba19f741d23ee4f5ff1
 workflow-type: tm+mt
-source-wordcount: '2513'
-ht-degree: 79%
+source-wordcount: '2768'
+ht-degree: 78%
 
 ---
 
@@ -510,4 +510,77 @@ Adobe 會持續評估產品功能，逐漸利用更現代化的替代方案重�
 
 ## Java執行階段更新至21版 {#java-runtime-update-21}
 
-Adobe Experience Manager as a Cloud Service正在轉換至Java 21執行階段。 若要確保相容性，必須更新[執行階段需求](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)中概述的程式庫版本。
+<!-- NEW but needed to be removed for now; removed 12/5/24 LEAVE HERE, DO NOT DELETE Adobe Experience Manager as a Cloud Service is transitioning to the Java 21 runtime. To ensure compatibility, updating library versions as outlined in [Runtime requirements](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements) is essential. -->
+
+AEM as a Cloud Service 將移至 Java 21 Runtime。為確保相容性，必須進行以下調整：
+
+### 執行階段需求
+
+必須進行這些調整，才能確保與Java 21執行階段相容。 程式庫可隨時更新，以與舊版Java相容。
+
+#### org.objectweb.asm 的最低版本{#org.objectweb.asm}
+
+將 org.objectweb.asm 使用更新至 9.5 版以上，以確保支援新版的 JVM Runtime。
+
+#### org.apache.groovy 的最低版本{#org.apache.groovy}
+
+將 org.apache.groovy 使用更新至 4.0.22 版以上，以確保支援新版 JVM Runtime。
+
+新增第三方相依性 (例如 AEM Groovy 主控台) 可以間接包含此搭售方案。
+
+### 建置時間需求
+
+必須進行這些調整，才能使用較新版本的Java建置專案，但執行階段相容性並不需要這些調整。 Maven外掛程式可與舊版Java相容，隨時更新。
+
+#### bnd-maven-plugin 的最低版本 {#bnd-maven-plugin}
+
+將bnd-maven-plugin的使用更新至6.4.0版，以確保支援更新的JVM執行階段。 版本7或更新版本與Java 11或更低版本不相容，因此目前不建議升級至該版本。
+
+#### aemanalyser-maven-plugin 的最低版本 {#aemanalyser-maven-plugin}
+
+將 aemanalyser-maven-plugin 的使用更新至 1.6.6 版或更高版本，以確保支援新版的 JVM Runtime。
+
+#### maven-bundle-plugin 的最低版本  {#maven-bundle-plugin}
+
+將 maven-bundle-plugin 使用更新至 5.1.5 版或更高版本，以確保支援新版的 JVM Runtime。
+
+#### 更新 maven-scr-plugin 中的相依性  {#maven-scr-plugin}
+
+`maven-scr-plugin` 與 Java 17 和 21 不直接相容。但是，可以透過更新外掛程式設定中的 ASM 相依性版本來產生描述項檔案，類似於下面的程式碼片段：
+
+```
+[source,xml]
+ <project>
+   ...
+   <build>
+     ...
+     <plugins>
+       ...
+       <plugin>
+         <groupId>org.apache.felix</groupId>
+         <artifactId>maven-scr-plugin</artifactId>
+         <version>1.26.4</version>
+         <executions>
+           <execution>
+             <id>generate-scr-scrdescriptor</id>
+             <goals>
+               <goal>scr</goal>
+             </goals>
+           </execution>
+         </executions>
+         <dependencies>
+           <dependency>
+             <groupId>org.ow2.asm</groupId>
+             <artifactId>asm-analysis</artifactId>
+             <version>9.7.1</version>
+             <scope>compile</scope>
+           </dependency>
+         </dependencies>
+       </plugin>
+       ...
+     </plugins>
+     ...
+   </build>
+   ...
+ </project>
+```
