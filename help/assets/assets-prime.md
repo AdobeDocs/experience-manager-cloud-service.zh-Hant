@@ -3,10 +3,11 @@ title: Assets Prime
 description: 進一步瞭解Assets Prime的主要方面，例如主要優點、使用者型別及其許可權。
 feature: Asset Management
 role: User, Admin
-source-git-commit: f033efd954ea7f9d27a891bfb9c0226e9d9c1432
+exl-id: 012f94c5-b1c3-4799-8eaf-af68d06c036f
+source-git-commit: 92faabc50ce4b83ad1015bbbadeac416d66c3b0b
 workflow-type: tm+mt
-source-wordcount: '1073'
-ht-degree: 2%
+source-wordcount: '1124'
+ht-degree: 15%
 
 ---
 
@@ -19,21 +20,27 @@ ht-degree: 2%
 
 Assets as a Cloud Service Prime包含輕量版DAM，可讓您執行各種關鍵功能，例如：
 
-* **資產管理和程式庫服務**&#x200B;：可讓使用者在集中式存放庫中擷取、儲存、編目、控制、管理及控管品牌數位資產的工具
+* **資產管理和資料庫服務**：這些工具可讓使用者能夠在集中存放庫中收錄、儲存、編目、控制、管理，及控管品牌的數位資產
 
-* **搜尋、探索和Collaboration**：可讓使用者瀏覽、探索、共用及共同使用所需資產的工具，以建立豐富的客戶體驗。
+* **搜尋、發現和共同作業**：此工具可讓使用者瀏覽、發現、共用，以及協作建立豐富客戶體驗所需的資產。
 
-* **安全性與Rights Management**：用來管理存取、許可權、許可權與安全性的工具，以確保遵循法規、一致性及品牌完整性。
+* **安全性和 Rights Management**：此工具可管理存取、授權、權限及安全性，以確保合規性、一致性與品牌完整性。
 
-* **Creative Cloud連線**：可讓行銷與創意團隊透過簡化的存取、評論、稽核和註解進行共同作業，以更新或完成數位資產的工具。
+* **Creative Cloud 連線**：這些工具可讓行銷與創意團隊透過簡化的存取、評論、審查及註解來進行協作，以更新或完成數位資產。
 
-* **Experience Cloud連線**：支援從其他Experience Cloud應用程式和服務原生存取數位資產的工具。
+* **Experience Cloud 連線**：這些工具可支援從其他 Experience Cloud 應用程式和服務，對數位資產進行原生存取。
 
 * **沒有擴充性選項的分發入口網站體驗(Content Hub)**：工具可擴充對品牌已核准數位資產的存取權，以延伸利害關係人，以確保使用情況和品牌一致性。
 
-* **整合**：與其他Adobe和非Adobe應用程式的整合。
+* **整合**：與其他 Adobe 及非 Adobe 應用程式整合。
 
-* **Dynamic Media （附加元件）**：可轉換及傳遞影像、視訊和其他新興內容的工具，適用於任何大規模裝置的豐富互動式多媒體體驗。
+* **Dynamic Media (附加元件)**：此工具可用來轉換和傳遞影像、影片及其他新興內容，以大規模為任何裝置提供豐富的互動式多媒體體驗。
+
+  >[!NOTE]
+  >
+  >Dynamic Media具備OpenAPI功能，可讓您存取基本的影像修飾元，例如旋轉、裁切（僅限手動 — 無智慧型裁切）、翻轉、大小、偏好webp、高度、寬度、品質、格式和自我調整視訊串流，這些功能也隨Assets Prime提供。 請聯絡Adobe客戶團隊以進一步瞭解。
+
+1. [建立新程式](/help/journey-onboarding/create-program.md)。
 
 然而，隨著您的DAM需求增長以及您需要更多功能，例如UI擴充性、API導向的自動化和自訂程式碼部署，您必須考慮升級至[Assets Ultimate](/help/assets/assets-ultimate-overview.md)。
 
@@ -77,13 +84,13 @@ Assets Prime現已啟用Experience Manager Assetsas a Cloud Service。
 
 Admin Console上的AEM as a Cloud Service執行個體包含下列產品設定檔：
 
-* AEM管理員
+* AEM 管理員
 
 * AEM 使用者
 
-* [AEM Assets Collaborator使用者](#onboard-collaborator-users)
+* [AEM Assets 協作者使用者](#onboard-collaborator-users)
 
-* [AEM Assets超級使用者](#onboard-power-users)
+* [AEM Assets 進階使用者](#onboard-power-users)
 
 
 ![AEM Assets產品設定檔](assets/aem-assets-product-profiles.png)
