@@ -6,8 +6,8 @@ feature: Migration
 role: Admin
 source-git-commit: 550d84f43cba472d74c7be6323bd69ba808c96f8
 workflow-type: tm+mt
-source-wordcount: '3322'
-ht-degree: 11%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -170,12 +170,12 @@ ht-degree: 11%
 
 ![影像](/help/journey-migration/content-transfer-tool/assets-ctt/error_releaseorchestrator_active.png)
 
-### 由於雲端環境未處於就緒狀態，擷取失敗 {#ingestion-failure-due-to-cloud-environment-not-in-ready-state}
+### 雲端環境處於未就緒狀態而導致擷取失敗 {#ingestion-failure-due-to-cloud-environment-not-in-ready-state}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_cam_ingestion_troubleshooting_cloud_environment_not_in_ready_state"
->title="雲端環境未處於就緒狀態"
->abstract="在罕見的情況下，目標雲端環境可能會遇到未預期的問題，進而導致擷取失敗。"
+>title="雲端環境處於未就緒狀態"
+>abstract="在極少數的情況下，目標雲端環境可能會遇到非預期的問題而導致擷取失敗。"
 
 在罕見的情況下，內嵌的目標Cloud Service環境可能會遇到未預期的問題。 因此，內嵌將失敗，因為環境未處於預期的就緒狀態。 檢查內嵌記錄檔，以顯示所遇到錯誤狀態的更多詳細資料。
 
