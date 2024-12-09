@@ -4,7 +4,7 @@ description: 了解如何在使用 Edge Delivery Services 專案進行的 WYSIWY
 exl-id: 65a5600a-8d16-4943-b3cd-fe2eee1b4abf
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: 487d918059e85e3f5dd19d2248b3a8365da41dee
+source-git-commit: 01966d837391d13577956a733c2ee7dc02f88103
 workflow-type: tm+mt
 source-wordcount: '1428'
 ht-degree: 97%
@@ -182,7 +182,7 @@ Adobe 建議您採用三階段方法來開發區塊：
 
 1. 當您對引述內容感到滿意時，可以在 Universal Editor 工具列中點選或按一下「**發佈**」按鈕。
 
-1. 導覽至已發佈的頁面，驗證內容是否已發佈。該連結類似 `https://<branch>--<repo>--<owner>.hlx.page`
+1. 導覽至已發佈的頁面，驗證內容是否已發佈。該連結類似 `https://<branch>--<repo>--<owner>.aem.page`
 
    ![發佈的引述](assets/create-block/quote-published.png)
 
@@ -273,7 +273,7 @@ export default function decorate(block) {
 
 ![通用編輯器中附有樣式的引述區塊](assets/create-block/quote-styled.png)
 
-8&amp;period; 導覽到已發佈的頁面，驗證變更是否已推至生產。該連結類似 `https://<branch>--<repo>--<owner>.hlx.page`
+8&amp;period; 導覽到已發佈的頁面，驗證變更是否已推至生產。該連結類似 `https://<branch>--<repo>--<owner>.aem.page`
 
 ![已發布且附樣式的引述區塊](assets/create-block/quote-styled-published.png)
 
@@ -327,7 +327,7 @@ export default function decorate(block) {
 
 為了簡單起見，本指南會讓您直接使用`main`分支。對於範例存放庫中的實驗，這通常不是問題。進行實際專案工作時[應該遵照開發最佳實務](https://www.aem.live/docs/dev-collab-and-good-practices)進行，在不同的分支上進行開發，並在合併到`main`之前透過提取請求檢查所有變更。
 
-當你是在`main`分支上開發時，您可以在 Universal Editor 位置列中附加 `?ref=<branch>`，以便從您的分支載入頁面。`<branch>` 是分支名稱，因為此分支會用於專案的預覽或即時 URL，例如 `https://<branch>--<repo>--<owner>.hlx.page`。
+當你是在`main`分支上開發時，您可以在 Universal Editor 位置列中附加 `?ref=<branch>`，以便從您的分支載入頁面。`<branch>` 是分支名稱，因為此分支會用於專案的預覽或即時 URL，例如 `https://<branch>--<repo>--<owner>.aem.page`。
 
 ## 重新使用區塊進行文件型製作 {#reusing-blocks}
 
