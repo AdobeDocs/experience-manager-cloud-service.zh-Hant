@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: d7156a79f004a454b7689b2085a97d4c513d52b7
 workflow-type: tm+mt
 source-wordcount: '1802'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 99%
 
 ## 發行日期 {#release-date}
 
-[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 目前功能版本 (2024.11.0) 的發行日期是 2024 年 11 月 21 日。下一個功能版本(2025.1.0)計畫於2024年1月30日發行。
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 目前功能版本 (2024.11.0) 的發行日期是 2024 年 11 月 21 日。計劃於 2024 年 1 月 30 日發行下一個功能版本 (2025.1.0)。
 
 ## 維護版本發行說明 {#maintenance}
 
