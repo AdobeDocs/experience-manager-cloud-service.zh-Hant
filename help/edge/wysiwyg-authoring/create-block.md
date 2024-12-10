@@ -4,10 +4,10 @@ description: 了解如何在使用 Edge Delivery Services 專案進行的 WYSIWY
 exl-id: 65a5600a-8d16-4943-b3cd-fe2eee1b4abf
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: 01966d837391d13577956a733c2ee7dc02f88103
+source-git-commit: fb7da1530f916ec63d5993446fd0c328af09ae7c
 workflow-type: tm+mt
-source-wordcount: '1428'
-ht-degree: 97%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -45,13 +45,13 @@ Adobe 建議您採用三階段方法來開發區塊：
 
 ### 建立區塊定義和模式 {#create-block-model}
 
-1&amp;period; 將您在[使用 Edge Delivery Services 進行 WYSIWYG 製作的開發人員快速入門手冊](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)指南中建立的 GitHub 專案原地複製到本機，並在您選擇的編輯器中將其開啟。
+1\. 在本機複製您在[使用Edge Delivery Services進行WYSIWYG編寫的開發人員快速入門手冊](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)中建立的GitHub專案，並在您選擇的編輯器中開啟。
 
 * 此處使用 Microsoft 程式碼是為了說明目的。
 
 ![複製專案。](assets/create-block/clone.png)
 
-2&amp;period; 編輯專案根目錄下的 `component-definition.json` 檔案，為新引述區塊新增以下定義，並儲存檔案。
+2\. 編輯專案根目錄下的 `component-definition.json` 檔案，為新引述區塊新增以下定義並儲存檔案。
 
 >[!BEGINTABS]
 
@@ -83,7 +83,7 @@ Adobe 建議您採用三階段方法來開發區塊：
 
 >[!ENDTABS]
 
-3&amp;period; 編輯專案根目錄下的 `component-models.json` 檔案，為新引述區塊新增以下[模型定義](/help/implementing/universal-editor/field-types.md#model-structure)，並儲存檔案。
+3\. 編輯專案根目錄下的 `component-models.json` 檔案，為新引述區塊新增以下[模式定義](/help/implementing/universal-editor/field-types.md#model-structure)並儲存檔案。
 
 * 請參閱[使用 Edge Delivery Services 專案進行 WYSIWYG 製作的內容模型](/help/edge/wysiwyg-authoring/content-modeling.md)文件，了解有關建立內容模型時需要考慮的重要事項詳細資訊。
 
@@ -119,7 +119,7 @@ Adobe 建議您採用三階段方法來開發區塊：
 
 >[!ENDTABS]
 
-4&amp;period; 編輯專案根目錄下的 `component-filters.json` 檔案，並將引述區塊新增至[篩選器定義](/help/implementing/universal-editor/customizing.md#filtering-components)中，以允許將該區塊新增至任何區段，並儲存檔案。
+4\. 編輯專案根目錄下的 `component-filters.json` 檔案，並將引述區塊新增至[篩選器定義](/help/implementing/universal-editor/customizing.md#filtering-components)中，以允許將該區塊新增至任何區段並且儲存檔案。
 
 >[!BEGINTABS]
 
@@ -147,7 +147,7 @@ Adobe 建議您採用三階段方法來開發區塊：
 
 >[!ENDTABS]
 
-5&amp;period; 使用 git，將這些變更認可提交到您的 `main` 分支。
+5\. 使用 git，將這些變更提交到您的 `main` 分支。
 
 * 提交至`main`僅是為了說明目的。[遵照最佳實務](https://www.aem.live/docs/dev-collab-and-good-practices)，並在實際專案工作中使用提取請求。
 
@@ -190,13 +190,13 @@ Adobe 建議您採用三階段方法來開發區塊：
 
 現在您已經有了一個可用的引述區塊，您可以對區塊套用樣式。
 
-1&amp;period; 返回您專案的編輯器。
+1\. 返回您的專案編輯器。
 
-2&amp;period; 在 `blocks` 資料夾下建立一個 `quote` 資料夾。
+2\. 在`blocks`檔案夾中，建立一個`quote`檔案夾。
 
-![建立引述資料夾](assets/create-block/new-folder.png)
+![建立引述檔案夾](assets/create-block/new-folder.png)
 
-3&amp;period; 在新的 `quote` 資料夾中，透過新增以下 JavaScript 來新增 `quote.js` 檔案，以實施區塊裝飾，然後儲存檔案。
+3\. 在新的`quote`檔案夾中，透過新增以下 JavaScript，新增一個 `quote.js` 檔案以實施區塊裝飾，然後儲存檔案。
 
 >[!BEGINTABS]
 
@@ -218,7 +218,7 @@ export default function decorate(block) {
 
 >[!ENDTABS]
 
-4&amp;period; 在 `quote` 資料夾中，透過新增以下 CSS 程式碼來新增 `quote.css` 檔案，以定義區塊樣式，然後儲存檔案。
+4\. 在`quote`檔案夾中，透過新增以下 CSS 程式碼，新增一個 `quote.css` 檔案以定義區塊樣式，然後儲存檔案。
 
 >[!BEGINTABS]
 
@@ -263,17 +263,17 @@ export default function decorate(block) {
 
 >[!ENDTABS]
 
-5&amp;period; 使用 git，將這些變更認可提交到您的 `main` 分支。
+5\. 使用 git，將這些變更提交到您的 `main` 分支。
 
 * 提交至`main`僅是為了說明目的。[遵照最佳實務](https://www.aem.live/docs/dev-collab-and-good-practices)，並在實際專案工作中使用提取請求。
 
-6&amp;period; 返回您剛剛編輯專案頁面所在之通用編輯器的瀏覽器索引標籤，並重新載入頁面以檢視附有樣式的區塊。
+6\. 返回 Universal Editor 的瀏覽器標記，您可在此編輯專案頁面，並重新載入頁面以查看附有樣式的區塊。
 
-7&amp;period; 現在可查看頁面上附有樣式的引述區塊。
+7\. 請參閱頁面上現在附有樣式的引述區塊。
 
-![通用編輯器中附有樣式的引述區塊](assets/create-block/quote-styled.png)
+![Universal Editor 中附有樣式的引述區塊](assets/create-block/quote-styled.png)
 
-8&amp;period; 導覽到已發佈的頁面，驗證變更是否已推至生產。該連結類似 `https://<branch>--<repo>--<owner>.aem.page`
+8\. 導覽至已發佈的頁面，驗證變更是否已推至生產。該連結類似 `https://<branch>--<repo>--<owner>.aem.page`
 
 ![已發布且附樣式的引述區塊](assets/create-block/quote-styled-published.png)
 
@@ -344,4 +344,3 @@ export default function decorate(block) {
 >[!TIP]
 >
 >有關建立新的 Edge Delivery Services 專案的端對端操作示範，該專案支援使用 AEM as a Cloud Service 作為內容來源進行 WYSIWYG 製作，請觀看[這場 AEM GEM 網路研討會](https://experienceleague.adobe.com/zh-hant/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)。
-
