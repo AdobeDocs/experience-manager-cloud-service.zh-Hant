@@ -1,20 +1,20 @@
 ---
-title: Content Hub常見問題集(FAQ)
-description: 取得Content Hub部分最常見問題(FAQ)的回應。
+title: Content Hub 常見問題 (FAQ)
+description: 了解一些 Content Hub 最常見問題 (FAQ) 的回覆。
 exl-id: 74b5c308-c1d3-4787-9f1f-f64cf09d298a
-source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
+source-git-commit: a509cb6b2d6fea0d8c53c570c46b1feef2a15191
 workflow-type: tm+mt
-source-wordcount: '1128'
-ht-degree: 1%
+source-wordcount: '1113'
+ht-degree: 91%
 
 ---
 
-# Content Hub常見問題 {#content-hub-frequently-asked-questions}
+# Content Hub 常見問題 {#content-hub-frequently-asked-questions}
 
 | [搜尋最佳實務](/help/assets/search-best-practices.md) | [中繼資料最佳實務](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [具有 OpenAPI 功能的 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 開發人員文件](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
-![Content Hub常見問題](assets/content-hub-faqs.png)
+![Content Hub 常見問題](assets/content-hub-faqs.png)
 
 >[!AVAILABILITY]
 >
@@ -22,75 +22,73 @@ ht-degree: 1%
 >
 >[!BADGE Content Hub指南PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
 
-## 什麼是Content Hub？ {#what-is-content-hub}
+## 什麼是 Content Hub？ {#what-is-content-hub}
 
-Content Hub是Adobe Experience Manager Assetsas a Cloud Service的一項功能。
+Content Hub 是 Adobe Experience Manager Assets as a Cloud Service 的一項功能。
 
-Content Hub可讓更廣大的團隊透過直覺式的入口網站，輕鬆探索相關、已核准的資產，並快速因應其需求進行調整。  此外，Content Hub提供內嵌機制，讓這些使用者可在將資產上傳至DAM時輕鬆自助。 這直接符合組織對於更高內容建立速度的需求，同時保留品牌一致性和合規性，並具備適當的保護措施。
+Content Hub 可讓更廣大的團隊透過直覺式的入口網站，輕鬆找到相關且已核准的資產，並快速根據自己的需求來加以調整。此外，Content Hub 提供了一種擷取機制，可讓使用者將資產上傳至 DAM 時，能夠輕鬆地自助進行。這直接滿足了組織對於加快內容建立速度的需求，同時保持品牌一致性，並遵守適當的保護措施。
 
-## 為何無法在Cloud Manager程式/環境中啟用Content Hub？ {#cannot-enable-content-hub}
+## 為什麼我無法在 Cloud Manager 方案/環境中啟用 Content Hub？ {#cannot-enable-content-hub}
 
-目前Content Hub僅適用於AEM Cloud Manager生產程式，其中包括Assets授權。 當您按一下[Content Hub](/help/assets/deploy-content-hub.md#enable-content-hub)以啟用時，它會進行部署，並與此程式中AEM的製作生產環境建立關聯。 請參閱[部署Content Hub](/help/assets/deploy-content-hub.md)以取得詳細資訊和先決條件。
+目前Content Hub僅適用於AEM Cloud Manager生產程式，其中包括Assets授權(AssetsCloud Service、Assets Ultimate、Assets Prime)。 您按一下 [Content Hub](/help/assets/deploy-content-hub.md#enable-content-hub) 加以啟用時，系統就會加以部署，並與該方案中 AEM 的編寫生產環境建立關聯。請參閱[部署 Content Hub](/help/assets/deploy-content-hub.md) 以了解詳細資訊和先決條件。
 
-有一個在沙箱程式/創作生產環境中搶先使用Content Hub的程式。 如需詳細資訊，請參閱[沙箱計畫簡介](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)。 若要進一步瞭解搶先體驗方案，請洽詢您的Adobe帳戶團隊。
+## 我在生產方案/環境中啟用了 Content Hub，我可以停用它嗎？ {#can-i-disable-content-hub}
 
-在此階段，Content Hub不適用於非生產環境（中繼、開發等）。
+在生產方案上啟用 Content Hub 會將其部署為生產基礎結構的一部分。AEM Cloud Manager 不允許移除或停用生產基礎結構，藉此盡量降低人為錯誤對生產使用帶來的風險。
 
-## 我在生產程式/環境中啟用了Content Hub，可以停用它嗎？ {#can-i-disable-content-hub}
+如果您不希望部署完畢後為使用者提供 Content Hub，則請不要在 Admin Console 中將任何使用者指派至 Content Hub 產品設定檔。請參閱[部署 Content Hub](/help/assets/deploy-content-hub.md#content-hub-instance-product-profile) 以了解詳細資訊。
 
-在生產計畫上啟用Content Hub會將其部署為生產基礎結構的一部分。 AEM Cloud Manager不允許移除或停用生產基礎架構，以將人為錯誤導致的生產使用風險降至最低。
+## 如果 Content Hub 僅適用於生產方案/生產製作環境，我該如何評估組織中的 Content Hub？ {#how-can-i-evaluate-content-hub}
 
-如果您不想在部署後將Content Hub提供給您的使用者，請勿在Admin Console中將任何使用者指派給Content Hub產品設定檔。 請參閱[部署Content Hub](/help/assets/deploy-content-hub.md#content-hub-instance-product-profile)以取得詳細資料。
+Content Hub 是 Adobe 提供和維護的功能，沒有任何需要透過開發/中繼/生產進行典型驗證的自訂程式碼。此外，使用者對該功能的存取權完全由管理員控制，因此您可以對其進行評估，而無需將其向所有使用者開放。
 
-## 我如何在組織中評估Content Hub （因為它僅適用於生產計畫/生產製作環境）？ {#how-can-i-evaluate-content-hub}
+可以在不影響 AEM as a Cloud Service Assets 中管理之使用者/生產內容的情況下評估 Content Hub。評估程序可能如下所示：
 
-Content Hub是Adobe提供和維護的功能，其沒有任何需要透過dev/stage/production進行典型驗證的自訂程式碼。 此外，使用者的功能存取權完全由管理員控制，因此您可以評估該功能，而不會向所有使用者公開。
+* 在生產環境中[啟用 Content Hub](/help/assets/deploy-content-hub.md#enable-content-hub) (Cloud Manager 方案)
+* 從生產編寫中[新增 AEM 管理員使用者](/help/assets/deploy-content-hub.md#onboard-content-hub-administrator)至 Content Hub 產品設定檔。
+* AEM 管理員[設定 Content Hub](/help/assets/configure-content-hub-ui-options.md)
+* AEM 管理員或 AEM 生產編寫上的 AEM 使用者會[核准 Content Hub 的多項資產](/help/assets/approve-assets-content-hub.md)；若您不想變更 DAM 中的任何生產內容，就可能需要在 AEM 作者實例中建立單獨的評估資料夾，並將 DAM 中的一些資產上傳/標記或複製到其中。
+* Admin Console 管理員會將[一些選定的使用者](/help/assets/deploy-content-hub.md#onboard-content-hub-users)新增到 Content Hub 產品設定檔，以便他們開始評估。
+* 評估完成後，作者實例中的 AEM 使用者可以移除測試資產的核准、對 Content Hub 核准生產資產，然後 Admin Console 管理員可以新增所有需要存取 Content Hub 和已核准內容的使用者。恭喜，您的 Content Hub 現在已上線了。
 
-您可以評估Content Hub，而不會影響您在AEM as a Cloud Service Assets中管理的使用者/生產內容。 評估程式可能如下所示：
+有一個可在沙箱程式及其製作生產環境中搶先使用Content Hub的程式。 如需更多資訊，請參閱[沙箱方案簡介](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)。若要了解更多有關搶先體驗方案的資訊，請聯絡您的 Adobe 帳戶團隊。
 
-* 在生產環境中[啟用Content Hub](/help/assets/deploy-content-hub.md#enable-content-hub) (Cloud Manager程式)
-* [從生產作者將AEM管理員使用者](/help/assets/deploy-content-hub.md#onboard-content-hub-administrator)新增到Content Hub產品設定檔。
-* AEM管理員[設定Content Hub](/help/assets/configure-content-hub-ui-options.md)
-* AEM生產作者的AEM管理員或AEM使用者[核准Content Hub](/help/assets/approve-assets-content-hub.md)的許多資產；如果您不想變更DAM中的任何生產內容，您可能會想要在AEM製作執行個體中建立個別的評估資料夾，然後上傳/標籤或將DAM的部分資產複製到其中。
-* Admin Console管理員將[一些選取的使用者](/help/assets/deploy-content-hub.md#onboard-content-hub-users)新增到Content Hub產品設定檔，以便他們開始評估。
-* 評估完成後，作者執行個體中的AEM使用者可以從測試資產中移除核准、核准Content Hub的生產資產，然後Admin Console管理員可以新增所有需要存取Content Hub和核准內容的使用者。 恭喜，您的Content Hub現已上線。
+Content Hub尚未可用於非生產環境（中繼和開發）。 Assets Ultimate的stage/dev環境預計於2025年3月推出。
 
-Adobe也提供在預備環境中搶先使用Content Hub的方案 — 請參閱問題[為什麼我無法在Cloud Manager方案/環境中啟用Content Hub？](#cannot-enable-content-hub)以取得詳細資料。
+## 為什麼我登入 Content Hub 後看不到任何資產？ {#no-assets-in-content-hub}
 
-## 為何登入Content Hub後看不到任何資產？ {#no-assets-in-content-hub}
+在 Assets as a Cloud Service 中標記為已核准的資產會自動顯示在 Content Hub 中。如果您登入 Content Hub 後看不到任何資產，請使用 AEM as a Cloud Service 編寫環境核准資產，使其顯示於 Content Hub 中。如需更多資訊，請參閱[批准 Content Hub 的資產](/help/assets/approve-assets-content-hub.md)。
 
-在Assetsas a Cloud Service中標示為已核准的資產會自動在Content Hub中使用。 如果您在登入Content Hub後看不到任何資產，請使用AEM as a Cloud Service製作環境核准資產，以便在Content Hub中使用。 如需詳細資訊，請參閱[核准Content Hub的資產](/help/assets/approve-assets-content-hub.md)。
+## 為什麼我看不到我直接使用 Content Hub 上傳或是使用 Content Hub 從 Dropbox 或 OneDrive 帳戶匯入的資產？ {#no-assets-uploaded-from-content-hub}
 
-## 為何我無法看到使用Content Hub直接上傳，或使用Content Hub從Dropbox或OneDrive帳戶匯入的資產？ {#no-assets-uploaded-from-content-hub}
+使用 Content Hub 上傳的資產是否會顯示出來，取決於您是否已啟用「設定」使用者介面上提供的[自動核准](/help/assets/configure-content-hub-ui-options.md#configure-import-options-content-hub)切換開關：
 
-是否顯示使用Content Hub上傳的資產，取決於您已啟用「設定」使用者介面上的[自動核准](/help/assets/configure-content-hub-ui-options.md#configure-import-options-content-hub)切換功能：
+* 如果啟用&#x200B;**自動核准**&#x200B;切換開關，您使用 Content Hub 上傳的資產就會自動顯示。
 
-* 如果已啟用&#x200B;**自動核准**&#x200B;切換，則您使用Content Hub上傳的資產會自動可供使用。
+* 如果停用&#x200B;**自動核准**&#x200B;切換開關，您使用 Content Hub 上傳的資產就不會自動顯示。這些資產會顯示在您 Assets as a Cloud Service 環境的 `hydrated-assets` 資料夾中。導覽至該資料夾，並將資產狀態[大量編輯](/help/assets/approve-assets-content-hub.md)為 `Approved`，使資產顯示於 Content Hub 中。
 
-* 如果&#x200B;**自動核准**&#x200B;切換功能已停用，您使用Content Hub上傳的資產不會自動顯示。 這些資產可在Assetsas a Cloud Service環境的`hydrated-assets`資料夾中使用。 導覽至資料夾，然後[大量編輯](/help/assets/approve-assets-content-hub.md)這些資產的狀態到`Approved`，以便這些資產顯示在Content Hub中。
+## 如何在 AEM as a Cloud Service 環境中快速找到使用 Content Hub 上傳的資產？ {#find-uploaded-assets-on-aem-cloud}
 
-## 如何在AEM as a Cloud Service環境中快速找到使用Content Hub上傳的資產？ {#find-uploaded-assets-on-aem-cloud}
+您可透過以下方法，在 AEM as a Cloud Service 環境中快速找到使用 Content Hub 上傳的資產：
 
-您可以在AEM as a Cloud Service環境中透過以下方式，快速找到使用Content Hub上傳的資產：
+1. 導覽至 `hydrated-assets` 資料夾。
 
-1. 瀏覽至`hydrated-assets`資料夾。
+1. 按一下「**[!UICONTROL 篩選器]**」，並將「**[!UICONTROL 資產狀態]**」欄位設定為「**[!UICONTROL 無狀態]**」。
 
-1. 按一下&#x200B;**[!UICONTROL 篩選器]**&#x200B;並在&#x200B;**[!UICONTROL 資產狀態]**&#x200B;欄位中設定&#x200B;**[!UICONTROL 無狀態]**。
+1. 使用「**[!UICONTROL 修改日期]**」欄位對資產進行排序。
 
-1. 使用&#x200B;**[!UICONTROL 修改日期]**&#x200B;欄位排序資產。
+## 為什麼我不能使用資產卡片上的 Adobe Express 選項來檢視編輯內容，藉此混編資產以建立新的變化版本？ {#edit-using-express-not-available}
 
-## 為何我無法在資產卡上檢視使用Adobe Express編輯選項，以混合資產建立新變數？ {#edit-using-express-not-available}
+若要使用資產卡片上的 Adobe Express 選項來檢視編輯內容，除了 [Content Hub 使用者的權限 (有權將資產混編為新的變化版本)](#onboard-content-hub-users-add-assets) 之外，您還必須擁有 Adobe Express 授權。Adobe Express 必須部署在與 Adobe Experience Manager 部署位置相同之 Adobe Admin Console 的組織中。
 
-若要檢視資產卡上的使用Adobe Express編輯選項，除了擁有[Content Hub使用者許可權之外，您還必須擁有Adobe Express權益，該使用者有權將資產重新混合成新的變數](#onboard-content-hub-users-add-assets)。 Adobe Express必須在部署Adobe Experience Manager的Adobe Admin Console中的相同組織中部署。
+## 我可以設定 Content Hub，讓我組織的品牌指導方針在首頁上顯示為連結嗎？ {#content-hub-setup-brand-guidelines}
 
-## 我可以設定Content Hub，好讓我的組織的品牌指導方針在首頁上顯示為連結嗎？ {#content-hub-setup-brand-guidelines}
+除了 Content Hub 首頁上標準的「所有資產」、「集合」和「分析」索引標籤之外，您還可以新增自訂連結作為單獨的索引標籤。如需有關如何進行設定的資訊，請參閱[自訂連結](/help/assets/configure-content-hub-ui-options.md#configure-custom-links-content-hub)。
 
-除了Content Hub首頁上的標準「所有Assets」、「集合」和「前瞻分析」標籤之外，您還可以新增自訂連結作為單獨的標籤。 如需如何設定的詳細資訊，請參閱[自訂連結](/help/assets/configure-content-hub-ui-options.md#configure-custom-links-content-hub)。
+## 是否有任何計劃將現有的 Brand Portal 客戶移轉到 Content Hub？ {#migration-brand-portal}
 
-## 是否計畫將現有Brand Portal客戶移轉至Content Hub？ {#migration-brand-portal}
+Adobe 提供從 Brand Portal 到 Content Hub 的移轉支援，您可以透過建立 Adobe 支援服務單來使用該支援。
 
-Adobe提供從Brand Portal到Content Hub的移轉支援，您可透過建立Adobe支援票證來使用。
+## 為什麼我在 Content Hub 中看不到「產品設定/設定」選項？ {#ui-configuration-option-missing}
 
-## 為什麼在Content Hub中看不到「產品設定/組態」選項？ {#ui-configuration-option-missing}
-
-若要存取[設定使用者介面](/help/assets/configure-content-hub-ui-options.md)，您必須是[Content Hub管理員](/help/assets/deploy-content-hub.md##onboard-content-hub-administrator)。 如果您在Adobe Admin Console的生產製作執行個體中被指派給AEM管理員產品設定檔，而且您仍然看不到設定選項，請確保AEM管理員產品設定檔未重新命名。 如需詳細資訊，請參閱[AEM as a Cloud Service團隊和產品設定檔](/help/onboarding/aem-cs-team-product-profiles.md)。
+若要存取[「設定」使用者介面](/help/assets/configure-content-hub-ui-options.md)，您必須是 [Content Hub 管理員](/help/assets/deploy-content-hub.md##onboard-content-hub-administrator)。如果您獲指派至 Adobe Admin Console 中生產作者實例上的 AEM 管理員產品設定檔，但仍看不到設定選項，請確定 AEM 管理員產品設定檔未被重新命名。如需更多詳細資訊，請參閱 [AEM as a Cloud Service 團隊和產品設定檔](/help/onboarding/aem-cs-team-product-profiles.md)。
