@@ -4,10 +4,10 @@ description: 瞭解如何使用Cloud Acceleration Manager將移轉集中的內�
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 feature: Migration
 role: Admin
-source-git-commit: 550d84f43cba472d74c7be6323bd69ba808c96f8
+source-git-commit: 67b04abfc0213ac175afca34b9424dafbe150a25
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '3412'
+ht-degree: 12%
 
 ---
 
@@ -48,6 +48,9 @@ ht-degree: 0%
 
    >[!NOTE]
    > 如果目標層是`Author`，則作者執行個體會在擷取期間關閉，且無法供使用者（例如，作者或執行維護的任何人）使用。 原因是為了保護系統，並防止任何可能遺失或導致擷取衝突的變更。 確保您的團隊知道這個事實。 另請注意，環境在作者擷取期間似乎處於休眠狀態。
+
+   >[!NOTE]
+   > 如果目標層是`Publish`，則發佈執行個體會在擷取期間繼續執行。  不過，如果擷取期間正在執行壓縮程式，則兩個程式之間可能會發生衝突。  因此，擷取程式1)會停用壓縮計時指令碼，以便在擷取期間不會開始壓縮，而2)會檢查壓縮目前是否正在執行，如果正在執行，則會等待壓縮完成後再繼續擷取。  如果發佈擷取所花的時間比預期長，請檢查擷取記錄檔中的相關記錄陳述式。
 
    * **擦除：**&#x200B;選擇`Wipe`值
       * **擦去**&#x200B;選項會設定目的地的擷取起點。 如果啟用&#x200B;**擦去**，包含其所有內容的目的地會重設為Cloud Manager中指定的AEM版本。 如果未啟用，目的地會維持目前內容為起點。

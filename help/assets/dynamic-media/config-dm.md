@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: Configuration,Dynamic Media
 role: Admin,User
 exl-id: 8e07bc85-ef26-4df4-8e64-3c69eae91e11
-source-git-commit: 6ad46350906c3b8a36a8e361714fa5fffdbf8e82
+source-git-commit: 45eecefbb39476671e90218cd502e0242172c1a1
 workflow-type: tm+mt
-source-wordcount: '3811'
-ht-degree: 2%
+source-wordcount: '3625'
+ht-degree: 3%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 2%
 
 {{work-with-dynamic-media}}
 
-如果您將Adobe Experience Manager用於不同的環境，例如開發、測試和即時生產，請為每個環境設定Dynamic MediaCloud Service。
+如果您將Adobe Experience Manager as a Cloud Service用於不同的環境，例如開發、測試和即時生產，請為每個環境設定Dynamic MediaCloud Service。
 
 另請參閱[設定Dynamic Media公司別名帳戶](/help/assets/dynamic-media/dm-alias-account.md)
 
@@ -200,32 +200,35 @@ Dynamic Media中的密碼到期日設為目前系統日期起的100年。
 
 -->
 
-### （選用）在Dynamic Media中啟用存取控制清單許可權 {#optional-enable-acl}
+<!-- Removed as per CQDOC-20701 - May need to revisit and update. In Adobe Experience Manager (AEM) as a Cloud Service, enabling Access Control List (ACL) permissions for Dynamic Media requires a different approach compared to on-premise versions (which was described below), as direct editing of OSGi configurations via the UI is not supported. Not sure how this is done now. For example, you can manage ACLs using tools like the Netcentric Access Control Tool (AC Tool), which simplifies the specification and deployment of complex ACLs in AEM but I doubt that's the recommended method.
 
-當您在AEM上執行Dynamic Media時，它目前會將`/is/image`個要求轉送至「安全預覽影像伺服」，而不檢查PlatformServerServlet上的ACL （存取控制清單）許可權。 但是，您可以&#x200B;_啟用_ ACL許可權。 這樣做會轉寄授權的`/is/image`要求。 如果使用者無權存取資產，則會顯示「403 — 禁止」錯誤。
+### (Optional) Enable Access Control List permissions in Dynamic Media {#optional-enable-acl}
 
-**若要在Dynamic Media中啟用ACL許可權：**
+When you run Dynamic Media on AEM as a Cloud Service, it currently forwards `/is/image` requests to Secure Preview Image Serving without checking ACL (Access Control List) permissions on the PlatformServerServlet. You can, however, _enable_ ACL permissions. Doing so forwards the authorized `/is/image` requests. If a user is not authorized to access the asset, a "403 - Forbidden" error is displayed.
 
-1. 從Experience Manager，瀏覽至&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 作業]** > **[!UICONTROL 網頁主控台]**。
+**To enable Access Control List permissions in Dynamic Media on AEM as a Cloud Service:**
+
+1. From Adobe Experience Manager, navigate to **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**.
 
    ![2019-08-02_16-13-14](assets/2019-08-02_16-13-14.png)
 
-1. 新的瀏覽器標籤會開啟&#x200B;**[!UICONTROL Adobe Experience Manager Web主控台組態]**&#x200B;頁面。
+1. A new browser tab opens to the **[!UICONTROL Adobe Experience Manager Web Console Configuration]** page.
 
    ![2019-08-02_16-17-29](assets/2019-08-02_16-17-29.png)
 
-1. 在頁面上，捲動至名稱&#x200B;_Adobe CQ Scene7 PlatformServer_。
+1. On the page, scroll to the name _Adobe CQ Scene7 PlatformServer_.
 
-1. 在名稱的右側，選取鉛筆圖示（**[!UICONTROL 編輯組態值]**）。
+1. To the right of the name, select the pencil icon (**[!UICONTROL Edit the configuration values]**).
 
-1. 在&#x200B;**com.adobe.cq.dam.s7imaging.impl.ps.PlatformServerServlet.name**&#x200B;頁面上，選取下列兩個設定的核取方塊：
+1. On the **com.adobe.cq.dam.s7imaging.impl.ps.PlatformServerServlet.name** page, select the check box for the following two settings:
 
-   * `com.adobe.cq.dam.s7imaging.impl.ps.PlatformServerServlet.cache.enable.name` — 啟用時，此設定會快取許可權結果兩分鐘（預設）以儲存。
-   * `com.adobe.cq.dam.s7imaging.impl.ps.PlatformServerServlet.validate.userAccess.name` — 啟用時，此設定會在使用者透過Dynamic Media影像伺服器預覽資產時，驗證使用者的存取權。
+   * `com.adobe.cq.dam.s7imaging.impl.ps.PlatformServerServlet.cache.enable.name` &ndash; When enabled, this setting caches permission results for two minutes (default) to save.
+   * `com.adobe.cq.dam.s7imaging.impl.ps.PlatformServerServlet.validate.userAccess.name` &ndash; When enabled, this setting validates a user's access while they preview assets by way of Dynamic Media Image Server.
 
-   ![在Dynamic Media - Scene7模式中啟用存取控制清單設定](/help/assets/dynamic-media/assets/acl.png)
+   ![Enable Access Control List settings in Dynamic Media - Scene7 mode](/help/assets/dynamic-media/assets/acl.png)
 
-1. 在頁面的右下角附近，選取&#x200B;**[!UICONTROL 儲存]**。
+1. Near the lower-right corner of the page, select **[!UICONTROL Save]**.
+-->
 
 ### （可選） Dynamic Media設定的設定和組態 {#optional-setup-and-configuration-of-dynamic-media-scene-mode-settings}
 
