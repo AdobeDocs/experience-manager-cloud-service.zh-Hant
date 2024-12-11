@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的目前維�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: f9f3d1fcb32445269e5ca4b9479b8e9075c73c10
+source-git-commit: c8a798e1f1b7234f91682b6e5ef7072e024df022
 workflow-type: tm+mt
-source-wordcount: '852'
-ht-degree: 98%
+source-wordcount: '693'
+ht-degree: 33%
 
 ---
 
@@ -16,78 +16,76 @@ ht-degree: 98%
 
 下節是 Experience Manager as a Cloud Service 目前維護版本的技術版本發行說明。
 
-## 版本 18598 {#18598}
+## 版本 18751 {#18751}
 
-以下是維護版本 18598 持續改善內容的摘要；此版本於 2024 年 11 月 13 日公開發行。之前的維護版本是版本 18311。由於發生問題，版本 18459 已設為私人版本。
+以下摘要說明維護版本18751數的持續改善，該版本於2024年12月11日公開發佈。 前一個維護版本是版本 18598。
 
-2024.11.0 功能啟用將提供此維護版本的完整功能集。如需詳細資訊，請參閱 [Experience Manager 發行藍圖](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)。
+2025.1.0 功能啟用將提供此維護版本的完整功能集。如需詳細資訊，請參閱 [Experience Manager 發行藍圖](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)。
 
-### 增強功能 {#enhancements-18598}
+### 增強功能 {#enhancements-18751}
 
-* CQ-4357471：在 AEMaaCS 中新增對 i18n 字典翻譯的支援。
-* FORMS-11646：為 AEM Forms 相關頁面設定 globalContext 變數。
-* FORMS-14833：AEM Forms 現在可以將最適化表單的片段包含在最終記錄文件 (DoR) 中。
-* FORMS-14255：使用者現在可以享受自動儲存的好處，此功能會將部分完成的表單自動儲存為草稿。使用者可以稍後再使用同一部裝置或其他裝置完成填寫。
-* SITES-23591：內容片段：UUID 支援的內容片段升級。
-* SITES-25440：內容片段：CFM 搜尋 API 可顯示複寫狀態。
-* SITES-24369：內容片段：OpenAPI 文件改善。
-* SITES-25478：內容片段：新增對外部資產參考的後端支援。
-* SITES-26119：內容片段：在參考類型中新增對外部資產參考的支援。
-* SITES-24609：內容片段：刪除內容片段時增強驗證。
-* SITES-21199：Edge Delivery 搭配通用編輯器：新增支援從頁面建立的範本。
-* SITES-20311：Edge Delivery 搭配通用編輯器：新增將 CSV 匯入試算表的支援。
-* SITES-24821：Edge Delivery 搭配通用編輯器：將 aem.page / aem.live 設定為與 Edge Delivery 整合的預設值。
+* SKYOPS-88509：AEM SDK的Java 21支援。
 
-### 已修正的問題 {#fixed-issues-18598}
+### 已修正的問題 {#fixed-issues-18751}
 
-* CQ-4358730：有超過 10 個索引鍵需要翻譯時，CQPagePreviewGenerator 會失敗。
-* CQ-4358028：當僅具有專案管理員群組的使用者在專案建立頁面上傳新縮圖時，無法建立 AEM 專案。
-* FORMS-14978：讓主題編輯器基於核心元件的表單啟用頁面載入。
-* FORMS-15682：此問題涉及 AEM Forms 和 Dynamics FDM 整合。當使用者提交表單時，記錄文件 (DOR) 不會以 PDF 附件傳送到指定的實體欄位。
-* FORMS-15799：Adobe Sign GovCloud 簽章頁面不會在 iframe 中轉譯。
-* FORMS-16113：作為 Adobe Sign 帳戶管理員的使用者嘗試存取其他使用者 (同時也是管理員) 發送的文件時，取得協議 API 所傳回的協議 ID 可能與建立協議時最初產生的協議 ID 不同。
-* FORMS-16596：協助工具問題：螢幕閱讀器無法識別停用的按鈕。
-* GRANITE - 53907：無法將服務使用者識別為工作流程超級使用者。
-* SKYOPS-90560：最新 Sling 模型版本會影響 Sling 模型匯出的效能。
-* SITES-10575：MSM：Blueprint Bloomfilter 載入程式嘗試載入 > 100,000 行。
-* SITES-20755：內容片段：具有 UUID 重新整理的資產參考無法顯示縮圖。
-* SITES-26253：內容片段：UUID 移轉：將 Sling 工作主題變更為一般。
-* SITES-21338：內容片段：referencedBy 端點未傳回正確的頁面參考。
-* SITES-24421：內容片段：編輯 CF 端點無法用於透過 GET CF 擷取的 CF。
-* SITES-25461：內容片段：依照模型篩選來搜尋 CF 時，應不區分大小寫。
-* SITES-25471：內容片段：修正 ModelValidatorServlet 中全域模型的驗證。
-* SITES-25795：內容片段：未設定 cq 日期時，CF 模型 API 會失敗。
-* SITES-25817：內容片段：增強 promotionLaunch：更新 CF 啟動的最後促銷活動。
-* SITES-26030：內容片段：端點 /referencesTree 未傳回所需的標頭。
-* SITES-26031：內容片段：CFM 搜尋端點未傳回複寫狀態。
-* SITES-26213：內容片段：取消發佈內容片段應僅驗證已發佈的參考。
-* SITES-26226：內容片段：在指定的路徑都無法使用時開始工作流程的問題。
-* SITES-26238：內容片段：API 傳回的資產參考的順序與 JCR 的順序不同。
-* SITES-25456：事件：移動頁面時，除了頁面移動事件之外，還會產生頁面刪除事件。
-* SITES-25658：事件：頁面內容狀態事件中未填入層級和 sourceUrl。
-* SITES-6497：啟動：無法在啟動中建立頁面。
-* SITES-25938：啟動：在翻譯專案後意外刪除。
-* SITES-25393：Edge Delivery 搭配通用編輯器：使用單一段落轉譯格式化的 RTF 時，文字節點遺失。
-* SITES-24643：Edge Delivery 搭配通用編輯器：OpenGraph 和 Twitter 中繼資料屬性無法在頁面中繼資料模型中運作。
-* SITES-25401：體驗片段：XF 參考更新緩慢。
+* Assets-42802： MFE上的「上一步」按鈕永遠無法運作，且會顯示額外的對話方塊。
+* Assets-44148：修正AEM中的NODE_MOVED事件可能導致NPE。
+* Assets-44418：未在Skyline上設定修正的環境。
+* Assets-44821：修正更新事件篩選器，針對上傳事件納入表單URL編碼資料。
+* CNTBF-298：固定內容複製因UUID衝突而失敗。
+* CNTBF-331： [content-copy-bundle]版本2.0.14。
+* Forms-16572：移除Java 21 SDK組建的工作流程測試失敗。
+* GRANITE-36205：QS內部Oak版本的自動更新。
+* GRANITE-53704：重新評估存放庫服務上的Sling探索。
+* GRANITE-54300：更新 Oak 至最新的公開版本 (1.70.0)。
+* GRANITE-54416：更新 Filevault 至 3.8.2 版。
+* GRANITE-54462：設定SubscriberAgents以使用「systemready」的hc.tags。
+* GRANITE-54542：將commons-io相依性更新為2.17.0。
+* GRANITE-54658：在QS中為fullGC新增delayFactor和批次大小OSGi設定。
+* GRANITE-54696：加寬Jackrabbit API的匯入範圍。
+* GRANITE-54803：當imsauth作用中時，在AEM中停用ClusterAtExchange。
+* GRANITE-55095：更新 Oak 至最新的公開版本 (1.72.0)。
+* GUIDES-20006：在儲存新版本之前，標籤為「完成」的檔案狀態會回復到「草稿」，導致「完成」狀態不會持續在任何檔案版本中。
+* GUIDES-21840：在原生PDF輸出中，目錄中有章節標題遺失，導致階層不正確。
+* GUIDES-19558：如果基線具有大量主題或地圖，請在1分鐘後編輯並在雲端設定上儲存基線，如此將會逾時。
+* GUIDES-19733：使用基準線的對映轉譯會變慢，最終無法載入所有關聯主題和對映檔案的清單。
+* SITES-26798：「啟動自動促銷」未更新「促銷狀態（促銷日期）」。
+* SITES-27137：從MSM核心移除Sling Commons量度相依性。
+* SKYOPS-75446：修正AEM有時會傳回404或遺失內容的頁面。
+* SKYOPS-76366：AEM發行說15977和更新版本中沒有Jetty Threadpool量度。
+* SKYOPS-82371： java.io.IOException： classFile.delete()失敗。
+* SKYOPS-83369：如果轉換工作執行未產生組合，AEM部署將無法啟動。
+* SKYOPS-83910：修正SKYOPS-82371中發現的並行問題。
+* SKYOPS-84821：將Sling主要Servlet的sling.include.checkcontenttype設定設為true。
+* SKYOPS-85798：固定轉換作業會產生空的索引定義。
+* SKYOPS-86251：升級至AEM Analyzer核心1.5.6，並在轉換工作中啟用產品套件匯入分析器。
+* SKYOPS-86710：移除Java 21 sdk組建的最小測試失敗。
+* SKYOPS-86745：Sling ResourceResolver 1.12.2的更新。
+* SKYOPS-89616：修正無法在Adobe Developer Console中建立技術帳戶的問題。
+* SKYOPS-89691：修正用於ASM警告的不正確成品ID。
+* SKYOPS-89699：遺漏內嵌在Groovy主控台「orbinson」風格中的舊Groovy版本警告。
+* SKYOPS-88664：記錄並保護已下載地圖檔案行超過1024限制的情況。
+* SKYOPS-89734：發行Dispatcher image 2.0.235。
 
-### 已知問題 {#known-issues-18598}
+如需更多有關 Experience Manager Guides 中新增功能和增強功能以及已修復問題的資訊，請查看 [Experience Manager Guides 版本藍圖](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap)。
+
+### 已知問題 {#known-issues-18751}
 
 無。
 
-### 已過時的功能和 API {#deprecated-18598}
+### 已過時的功能和 API {#deprecated-18751}
 
 [「已過時和已移除的功能及 API」](/help/release-notes/deprecated-removed-features.md)文件中詳細介紹 AEM as a Cloud Service 中已過時和已移除的功能及 API。
 
-### 安全性修正 {#security-18598}
+### 安全性修正 {#security-18751}
 
-AEM as a Cloud Service 專門負責將您的平台的安全性與效能最佳化。此維護版本解決了 21 個已確認的漏洞，從而強化我們提供健全系統保護的承諾。
+AEM as a Cloud Service 專門負責將您的平台的安全性與效能最佳化。此維護版本解決了 3 個已確認的漏洞，強化我們提供健全系統保護的承諾。
 
-### 內嵌技術 {#embedded-tech-18598}
+### 內嵌技術 {#embedded-tech-18751}
 
 | 技術 | 版本 | 連結 |
 |---|---|---|
-| AEM Oak | 1.70.0 | [Oak API 1.70.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.70.0/index.html) |
+| AEM Oak | 1.72.0 | [Oak API 1.72.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.72.0/index.html) |
 | AEM SLING API | 2.27.6 | [Apache Sling API 2.27.6 API](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html) |
 | AEM HTL | 1.4.24-1.4.0 | [HTML 範本語言規格](https://github.com/adobe/htl-spec) |
 | AEM 核心元件 | 2.27.0 | [AEM WCM 核心元件](https://github.com/adobe/aem-core-wcm-components) |
