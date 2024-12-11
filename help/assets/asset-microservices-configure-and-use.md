@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Compute Microservices, Asset Processing, Asset Management
 role: Architect, Admin
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
-source-git-commit: 979c4accca8b271ba2ff0ba176985c94b6d469c7
+source-git-commit: 55ee7f866bcfc4ecc2e203102872af9752240019
 workflow-type: tm+mt
-source-wordcount: '2926'
+source-wordcount: '2909'
 ht-degree: 2%
 
 ---
@@ -74,8 +74,6 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 
 ### 建立標準設定檔 {#create-standard-profile}
 
-若要建立標準處理設定檔，請遵循下列步驟：
-
 1. 管理員存取&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL Assets]** > **[!UICONTROL 處理設定檔]**。 按一下&#x200B;**[!UICONTROL 建立]**。
 1. 提供可協助您在套用至資料夾時唯一識別設定檔的名稱。
 1. 若要產生FPO轉譯，請在&#x200B;**[!UICONTROL 影像]**&#x200B;索引標籤上啟用&#x200B;**[!UICONTROL 建立FPO轉譯]**。 輸入1-100的&#x200B;**[!UICONTROL 品質]**&#x200B;值。
@@ -124,8 +122,6 @@ The following video demonstrates the usefulness and usage of standard profile.
 >您無法使用自訂應用程式編輯標準中繼資料。 您只能修改自訂中繼資料。
 
 ### 建立自訂設定檔 {#create-custom-profile}
-
-若要建立自訂設定檔，請遵循下列步驟：
 
 1. 管理員存取&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL Assets]** > **[!UICONTROL 處理設定檔]** > **[!UICONTROL 建立]**。
 1. 在處理設定檔頁面上，按一下&#x200B;**[!UICONTROL 自訂]**&#x200B;標籤，然後按一下&#x200B;**[!UICONTROL 新增]**。
