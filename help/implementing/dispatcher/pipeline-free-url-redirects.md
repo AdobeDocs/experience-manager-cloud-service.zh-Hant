@@ -4,10 +4,10 @@ description: 瞭解如何宣告301或302重新導向，而不需要存取Git或C
 feature: Dispatcher
 role: Admin
 exl-id: dacb1eda-79e0-4e76-926a-92b33bc784de
-source-git-commit: c80454204837529007c1fda7eef4486c213eb509
+source-git-commit: 639a8927fb232f7d4a18e0f49b1221c184066787
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '699'
+ht-degree: 1%
 
 ---
 
@@ -30,11 +30,14 @@ AEM as a Cloud Service提供[數個實作使用者端重新導向的方法](http
 此功能的核心是AEM Apache/Dispatcher可載入（或重新載入）一或多個已放置在發佈存放庫內指定位置中的重寫對應檔案。 請務必注意，檔案的傳送方式並不屬於此功能的範圍，但您可以考慮下列其中一個方法：
 
 * 在作者使用者介面中擷取重新寫入對映作為資產並進行發佈。
-* 安裝[ACS Commons Rewrite Map Manager](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-map-manager/index.html)，其中包含管理URL對應的使用者介面，也可以發佈重寫對應檔案。
+* 安裝[ACS Commons Rewrite Map Manager](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-map-manager/index.html)（[至少6.7.0版或更新版本](https://github.com/Adobe-Consulting-Services/acs-aem-commons/releases)），其中包含管理URL對應的使用者介面，也可以發佈重寫對應檔案。
 * 撰寫自訂應用程式，提供完整的彈性。 例如，使用使用者介面或命令列介面來管理url對應，或者使用表單來上傳重寫對應，然後使用AEM API來發佈重寫對應檔案。
 
 >[!NOTE]
 > 此功能需要AEM版本&#x200B;**18311或更新版本**。
+
+>[!NOTE]
+> 此功能使用「重寫對應管理員」需要ACS Commons **6.7.0或更新版本**。
 
 ## 重寫對應 {#rewrite-map}
 
