@@ -4,9 +4,9 @@ description: 如果您是AEM開發人員，且對Universal Editor的運作方式
 exl-id: d6f9ed78-f63f-445a-b354-f10ea37b0e9b
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
+source-git-commit: d82a88e5b7337e9d81a91e812f6a90237e80b1ea
 workflow-type: tm+mt
-source-wordcount: '3139'
+source-wordcount: '3160'
 ht-degree: 1%
 
 ---
@@ -150,7 +150,7 @@ X-Frame選項`sameorigin`可防止在框架中呈現AEM頁面。 您必須移除
 1. 將JavaScript程式庫新增至檔案結尾。
 
    ```html
-   <script src="https://universal-editor-service.experiencecloud.live/corslib/LATEST"></script>
+   <script src="https://universal-editor-service.adobe.io/cors.js" async></script>
    ```
 
 1. 按一下&#x200B;**儲存全部**，然後重新載入通用編輯器。
@@ -160,7 +160,12 @@ X-Frame選項`sameorigin`可防止在框架中呈現AEM頁面。 您必須移除
 >[!TIP]
 >
 >* 程式庫可載入頁首或頁尾。
->* `universal-editor-embedded.js`程式庫[可在NPM](https://www.npmjs.com/package/@adobe/universal-editor-cors)上使用，您可以視需要自行代管，或直接放入您的應用程式中。
+
+>[!NOTE]
+>
+>由於封裝已過時，因此不再建議使用先前建議的方法加入JavaScript程式庫`<script src="https://universal-editor-service.experiencecloud.live/corslib/LATEST"></script>`或透過npmjs.com。
+>
+>如果應用程式仍使用已棄用的套件，通用編輯器會在UI中顯示偵測到過時套件的警告。
 
 ## 定義連線以保留變更 {#connection}
 

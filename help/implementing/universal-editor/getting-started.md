@@ -4,10 +4,10 @@ description: 了解如何存取 Universal Editor，以及如何開始檢測您�
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: edef86c67becf3b8094196d39baa9e69d6c81777
+source-git-commit: 8357caf2b0d396f6a1bd7b6160d6b48d8d6c026c
 workflow-type: tm+mt
-source-wordcount: '574'
-ht-degree: 72%
+source-wordcount: '627'
+ht-degree: 62%
 
 ---
 
@@ -24,7 +24,17 @@ ht-degree: 72%
 
 ## 檢測頁面 {#instrument-page}
 
-Universal Editor 服務需要[統一資源名稱 (URN)](https://en.wikipedia.org/wiki/Uniform_Resource_Name) 來識別和使用正確的後端系統來處理應用程式中正在編輯的內容。因此，需要 URN 模式將內容對應回內容資源。
+Universal Editor需要JavaScript程式庫，才能在編輯器中轉譯和編輯頁面。
+
+此外，Universal Editor服務需要[統一資源名稱(URN)](https://en.wikipedia.org/wiki/Uniform_Resource_Name)，才能識別及使用所編輯應用程式內容的正確後端系統。 因此，需要 URN 模式將內容對應回內容資源。
+
+### 包含通用編輯器CORS資料庫 {#cors-library}
+
+為了讓Universal Editor連線至您的應用程式，您的應用程式必須包含Universal Editor CORS資料庫。 將下列指令碼新增至您的應用程式。
+
+```html
+ <script src="https://universal-editor-service.adobe.io/cors.js" async></script>
+```
 
 ### 建立連線 {#connections}
 
