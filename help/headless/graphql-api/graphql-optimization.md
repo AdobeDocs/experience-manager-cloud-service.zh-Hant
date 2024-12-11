@@ -4,9 +4,9 @@ description: 了解如何為了提供 Headless 內容在 Adobe Experience Manage
 exl-id: 67aec373-4e1c-4afb-9c3f-a70e463118de
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
-workflow-type: ht
-source-wordcount: '1874'
+source-git-commit: e8f992df5a270e7335af466a524daa013bff5f42
+workflow-type: tm+mt
+source-wordcount: '1824'
 ht-degree: 100%
 
 ---
@@ -82,16 +82,6 @@ ht-degree: 100%
 
 * [快取持續性查詢](/help/headless/graphql-api/persisted-queries.md#caching-persisted-queries)
 * [管理持續性查詢的快取](/help/headless/graphql-api/graphiql-ide.md#managing-cache)
-
-#### 使用 AEM GraphQL 預先快取 {#use-aem-graphql-pre-caching}
-
-**推薦**
-
-此功能可讓 AEM 進一步快取 GraphQL 查詢範圍內的內容，然後可以將這些內容組裝為 JSON 輸出中的區塊，而不是逐行組裝。
-
-**進一步參考**
-
-請聯絡 Adobe 為您的 AEM Cloud Service 方案和環境啟用此功能。
 
 ### GraphQL 查詢最佳化 {#graphql-query-optimization}
 
