@@ -1,6 +1,6 @@
 ---
 title: 配置Dynamic Media一般設定
-description: 瞭解如何在Dynamic Media中管理一般設定。 您可以在此處設定您的發佈伺服器名稱和原始伺服器名稱，並設定影像覆寫選項。 此外，還有預設的上傳選項可讓您對影像進行遮色片銳利化調整，以及上傳選項讓您以何種方式處理PostScript、Adobe Photoshop、PDF和Adobe Illustrator檔案。
+description: 瞭解如何在Dynamic Media中管理一般設定。 您可以設定發佈和原始伺服器名稱，並設定影像覆寫選項。 針對PostScript、Photoshop、PDF和Illustrator檔案，調整遮色片銳利化和檔案處理的預設上傳設定。
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: administering
@@ -9,9 +9,9 @@ feature: Image Profiles
 role: User, Admin
 mini-toc-levels: 4
 exl-id: a4d28786-cffa-42ab-98d3-90a15313e401
-source-git-commit: 6ad46350906c3b8a36a8e361714fa5fffdbf8e82
+source-git-commit: 6251b9bb6f56d387fa1a158ac62ef3b25b1ab56b
 workflow-type: tm+mt
-source-wordcount: '2525'
+source-wordcount: '2506'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ hidefromtoc: yes -->
 * 您在Adobe Experience Manager as a Cloud Service中有&#x200B;*現有* **[!UICONTROL Dynamic Media設定]** (在&#x200B;**[!UICONTROL 個Cloud Service]**&#x200B;中)。 請參閱[在Cloud Service](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services)中建立Dynamic Media設定。
 * 您是具有管理員許可權的Experience Manager系統管理員。
 
-Dynamic Media一般設定適用於有經驗的網站開發人員和程式設計人員。 Adobe Dynamic Media建議變更這些發佈設定的使用者熟悉Adobe Experience Manager上的Dynamic Media和基本影像技術。
+經驗豐富的網站開發人員和程式設計師是Dynamic Media一般設定的目標受眾。 Adobe Dynamic Media建議變更發佈設定的使用者熟悉Adobe Experience Manager上的Dynamic Media和基本影像技術。
 
 建立帳戶時，AdobeDynamic Media會自動提供指派給貴公司的伺服器。 這些伺服器可用來建構您網站和應用程式的URL字串。 這些URL呼叫特定於您的帳戶。
 
@@ -43,7 +43,7 @@ Dynamic Media Publish設定頁面會建立預設設定，用來決定如何從Ad
 **若要設定Dynamic Media一般設定：**
 
 1. 在Experience Manager作者模式中，選取Experience Manager標誌以存取全域導覽主控台。
-1. 在左側邊欄中，選取「工具」圖示，然後前往&#x200B;**[!UICONTROL Assets]** > **[!UICONTROL Dynamic Media一般設定]**。
+1. 在左側邊欄中，按一下![工具圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Hammer_18_N.svg) > **[!UICONTROL Assets]** > ![齒輪編輯](https://spectrum.adobe.com/static/icons/workflow_18/Smock_GearsEdit_18_N.svg) **[!UICONTROL Dynamic Media一般設定]**。
 1. 在「伺服器」頁面中，設定您的&#x200B;**[!UICONTROL 已發佈的伺服器名稱]**&#x200B;和&#x200B;**[!UICONTROL 原始伺服器名稱]**，然後使用這五個索引標籤來設定「影像編輯」以及Postscript、Photoshop、PDF和Illustrator檔案的預設上傳選項。
 
    * [伺服器](#server-general-setting)
@@ -57,7 +57,7 @@ Dynamic Media Publish設定頁面會建立預設設定，用來決定如何從Ad
    ![Dynamic Media一般設定頁面](/help/assets/assets-dm/dm-general-settings.png)
    *Dynamic Media一般設定頁面，已選取&#x200B;**[!UICONTROL 影像編輯]**索引標籤。*<br><br>
 
-1. 完成後，在頁面的右上角附近，選取&#x200B;**[!UICONTROL 儲存]**。
+1. 完成後，在頁面的右上角附近，按一下[儲存]。****
 
 ## 伺服器 {#server-general-setting}
 
@@ -65,8 +65,8 @@ Dynamic Media Publish設定頁面會建立預設設定，用來決定如何從Ad
 
 | 選項 | 說明 |
 | --- | --- |
-| **[!UICONTROL 已發佈的伺服器名稱]** | 必填。<br>名稱在路徑中必須使用`https://`。<br>此伺服器是所有系統產生、特定於您帳戶的URL呼叫中所使用的即時CDN （內容傳遞網路）伺服器。 請勿變更此伺服器名稱，除非Adobe技術支援指示您這麼做。 |
-| **[!UICONTROL 原始伺服器名稱]** | 必填。<br>此伺服器僅用於品質保證測試。 除非得到Adobe技術支援的指示，否則請勿變更此伺服器名稱。 |
+| **[!UICONTROL 已發佈的伺服器名稱]** | 必填。<br>名稱在路徑中必須使用`https://`。<br>此伺服器是所有系統產生、特定於您帳戶的URL呼叫中所使用的即時CDN （內容傳遞網路）伺服器。 只有在Adobe技術支援指示變更此伺服器名稱時，才可以變更。 |
+| **[!UICONTROL 原始伺服器名稱]** | 必填。<br>此伺服器僅用於品質保證測試。 只有在Adobe技術支援指示變更此伺服器名稱時，才可以變更。 |
 
 ## 上傳至應用程式 {#upload-to-application}
 
@@ -76,12 +76,12 @@ Dynamic Media Publish設定頁面會建立預設設定，用來決定如何從Ad
 
   >[!NOTE]
   >
-  >若要維持與Experience Manager的一致性，請選取[覆寫影像]選項&#x200B;**[!UICONTROL 在目前檔案夾中以相同的基本名稱/副檔名]**&#x200B;覆寫。
+  >若要維持與Experience Manager的一致性，請選取[覆寫影像]選項&#x200B;**[!UICONTROL 在目前資料夾中覆寫，基底名稱/副檔名相同]**。
 
   | 覆寫影像選項 | 說明 |
   | --- | --- |
   | **[!UICONTROL 在目前資料夾中有相同的基本名稱/副檔名時覆寫]** | *僅針對新Dynamic Media帳戶預設*。<br>此選項是最嚴格的取代規則。 您需要將取代影像上傳到與原始影像相同的資料夾，而且取代影像的副檔名必須與原始影像相同。 如果不符合這些要求，則會建立副本。<br>*若要與Experience Manager保持一致，請選取此選項*。 |
-  | **[!UICONTROL 在目前檔案夾中覆寫相同的基本名稱，無論副檔名是否相同]** | 需要您將取代影像上傳到與原始影像相同的資料夾，但副檔名可能與原始影像不同。 例如，chair.tif會取代chair.jpg。 |
+  | **[!UICONTROL 在目前檔案夾中覆寫相同的基本名稱，無論副檔名是否相同]** | 您需要將取代影像上傳到與原始影像相同的資料夾，但副檔名可能與原始影像不同。 例如，chair.tif會取代chair.jpg。 |
   | **[!UICONTROL 在任何資料夾中以相同的基本資產名稱/副檔名覆寫]** | 取代影像的副檔名必須與原始影像相同（例如，chair.jpg必須取代chair.jpg，而非chair.tif）。 不過，您可以將取代影像上傳到與原始影像不同的資料夾。 更新後的影像位於新資料夾中；檔案無法再在其原始位置找到。 |
   | **[!UICONTROL 在任何資料夾中覆寫相同的基本資產名稱（無論副檔名為何）]** | 此選項是最具包容性的取代規則。 您可以將取代影像上傳到與原始檔案不同的資料夾、上傳副檔名不同的檔案，以及取代原始檔案。 如果原始檔案位於不同的資料夾中，則取代影像會位於其上載至的新資料夾中。 |
 
@@ -89,7 +89,7 @@ Dynamic Media Publish設定頁面會建立預設設定，用來決定如何從Ad
 
   控制任何現有手動裁切定義的保留。
 
-  另請參閱Dynamic Media檢視器參考指南中的[UploadPostJob](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-upload-post-job.html)和[ReprocessAssetsJob](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-reprocess-assets-job.html)中的`preserveCrop`。
+  另請參閱Dynamic Media檢視器參考指南中的[UploadPostJob](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-production-api/data-types/r-upload-post-job)和[ReprocessAssetsJob](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-production-api/data-types/r-reprocess-assets-job)中的`preserveCrop`。
 
 ## 預設上傳選項 {#default-upload-options}
 
@@ -101,7 +101,7 @@ Dynamic Media Publish設定頁面會建立預設設定，用來決定如何從Ad
 
 | 「不銳利化遮色片」選項 | 說明 |
 | --- | --- |
-| **[!UICONTROL 金額]** | 必填。<br>控制套用至邊緣畫素的對比量。<br>將其視為效果的強度。 Adobe Dynamic Media中「遮色片銳利化」的量值與Adobe Photoshop中的量值的主要差異在於，Photoshop的量範圍是1%到500%。 而在Adobe Dynamic Media中，值範圍為`0.0`到`5.0`。 Adobe Dynamic Media中的5.0值約略等同於Photoshop中的500%；0.9值等同於90%，以此類推。 |
+| **[!UICONTROL 金額]** | 必填。<br>它會控制套用至邊緣畫素的對比量。<br>將其視為效果的強度。 「不銳利化遮色片」的量值在AdobeDynamic Media和Adobe Photoshop之間有所不同。 Photoshop提供的金額範圍是1%到500%。 而在Adobe Dynamic Media中，值範圍為`0.0`到`5.0`。 Adobe Dynamic Media中的5.0值約略等同於Photoshop中的500%；0.9值等同於90%，以此類推。 |
 | **[!UICONTROL 半徑]** | 必填。<br>控制效果的半徑。<br>值範圍為`0`到`250`。 此效果會在影像中的所有畫素上執行，並從所有方向的所有畫素向外輻射。 半徑是以畫素來測量。 例如，若要針對2000 x 2000畫素影像和500 x 500畫素影像取得類似的銳利化效果，您可以在2000 x 2000畫素影像上設定兩個畫素的半徑。 然後在500 x 500畫素影像上設定一個畫素的半徑值。 較大的值適用於畫素較多的影像。 |
 | **[!UICONTROL 閾值]** | 必填。<br>臨界值是套用「遮色片銳利化調整」濾鏡時忽略的對比範圍。 此效果很重要，因此使用此濾鏡時，影像不會引入「雜訊」。 值範圍是`0` - `255`，這是灰階影像中的亮度階數。 `0`=黑色，`128`=50%灰色和`255`=白色。<br>閾值為`12`時，會忽略膚色亮度的細微變化，以避免增加雜訊，但還是會增加邊緣對比度，讓相異區域如睫毛與皮膚相遇的區域。<br>如果您有某個人的臉部像片，「遮色片銳利化調整」會影響影像的反差部分。 例如，睫毛和皮膚會合，以建立明顯的對比區域，以及平滑的皮膚本身。 即使最平滑的皮膚也會顯示亮度值的細微變化。 如果您不使用臨界值，濾鏡會強調外觀畫素中的這些細微變化。 反過來，會建立雜訊和不想要的效果，同時增加睫毛的對比，增強銳利度。<br>為了避免此問題，系統引入臨界值，告訴濾鏡忽略不會大幅改變對比度的畫素，例如平滑外觀。<br>在先前顯示的拉鍊圖形中，請注意拉鍊旁的紋理。 因為臨界值太低，無法抑制雜訊，所以會顯示影像雜訊。 |
 | **[!UICONTROL 單色]** | 選取「 」以取消遮色片影像亮度（強度）的銳利化。<br>取消選取以分別取消銳利化遮色片每個色彩元件。 |
@@ -119,9 +119,9 @@ Dynamic Media Publish設定頁面會建立預設設定，用來決定如何從Ad
 | PostScript選項 | 說明 |
 | --- | --- |
 | **[!UICONTROL 正在處理]** | 選擇「點陣化」，將檔案中的向量圖形轉換為點陣圖格式。 |
-| **[!UICONTROL 在演算後的影像中保留透明背景]** | 保留檔案的背景透明度。 |
+| **[!UICONTROL 在演算後的影像中維持透明背景]** | 它會保留檔案的背景透明度。 |
 | **[!UICONTROL 解析度（畫素/英吋）]** | 決定解析度設定。 此設定決定檔案中每英吋顯示的畫素數目。 |
-| **[!UICONTROL 色域]** | · **[!UICONTROL 自動偵測]** — 保留檔案的色域。<br>· **[!UICONTROL 強製為RGB]** — 轉換為RGB色域。<br>· **[!UICONTROL 強製為CMYK]** — 轉換為CMYK色域。<br>· **[!UICONTROL 強製為灰階]** — 轉換為灰階色域。 |
+| **[!UICONTROL 色域]** | · **[!UICONTROL 自動偵測]** — 保留檔案的色域。<br>· **[!UICONTROL 強製為RGB]** — 它轉換為RGB色域。<br>· **[!UICONTROL 強製為CMYK]** — 轉換為CMYK色域。<br>· **[!UICONTROL 強製為灰階]** — 它會轉換為灰階色域。 |
 
 ### Photoshop索引標籤 {#photoshop-tab}
 
@@ -145,9 +145,9 @@ Dynamic Media Publish設定頁面會建立預設設定，用來決定如何從Ad
 | PDF選項 | 說明 |
 | --- | --- |
 | **[!UICONTROL 正在處理]** | · **[!UICONTROL 無]** — 未完成任何PDF處理。<br>· **[!UICONTROL 縮圖]** — 擷取PDF檔案中的每個頁面，並將其轉換為縮圖影像。<br> · **[!UICONTROL 點陣化]** — 擷取PDF檔案中的頁面，並將向量影象轉換為點陣圖影像。 若要建立eCatalog，請選擇此選項。 |
-| **[!UICONTROL 擷取]** | · **[!UICONTROL 無]** — 未從PDF中擷取任何搜尋字詞或連結。<br>· **[!UICONTROL 搜尋字詞]** — 從PDF檔案中擷取搜尋字詞，以便在eCatalog檢視器中依關鍵字搜尋檔案。<br>· **[!UICONTROL 連結]** — 從PDF檔案中擷取連結，並將其轉換成eCatalog檢視器中使用的影像地圖。<br>· **[!UICONTROL 搜尋字詞和連結]** — 擷取搜尋字詞和連結，以用於eCatalog檢視器。 |
+| **[!UICONTROL 擷取]** | · **[!UICONTROL 無]** — 未從PDF中擷取任何搜尋字詞或連結。<br>· **[!UICONTROL 搜尋字詞]** — 系統會從PDF檔案中擷取搜尋字詞，以便在eCatalog檢視器中搜尋關鍵字。<br>· **[!UICONTROL 連結]** — 從PDF檔案中擷取連結，並將其轉換成eCatalog檢視器中使用的影像地圖。<br>· **[!UICONTROL 搜尋字詞和連結]** — 擷取搜尋字詞和連結，以用於eCatalog檢視器。 |
 | **[!UICONTROL 解析度（畫素/英吋）]** | 決定解析度設定。 此設定決定PDF檔案中每英吋顯示的畫素數目。 預設值為150。 |
-| **[!UICONTROL 色域]** | · **[!UICONTROL 自動偵測]** — 保留PDF檔案的色域。<br>· **[!UICONTROL 強製為RGB]** — 轉換為RGB色域。<br>· **[!UICONTROL 強製為CMYK]** — 轉換為CMYK色域。<br>· **[!UICONTROL 強製為灰階]** — 轉換為灰階色域。 |
+| **[!UICONTROL 色域]** | · **[!UICONTROL 自動偵測]** — 保留PDF檔案的色域。<br>· **[!UICONTROL 強製為RGB]** — 它轉換為RGB色域。<br>· **[!UICONTROL 強製為CMYK]** — 它轉換為CMYK色域。<br>· **[!UICONTROL 強製為灰階]** — 轉換為灰階色域。 |
 
 ### Illustrator索引標籤 {#illustrator-tab}
 
@@ -161,6 +161,6 @@ Dynamic Media Publish設定頁面會建立預設設定，用來決定如何從Ad
 | Illustrator選項 | 說明 |
 | --- | --- |
 | **[!UICONTROL 正在處理]** | 選擇「點陣化」，將檔案中的向量圖形轉換為點陣圖格式。 |
-| **[!UICONTROL 在演算後的影像中保留透明背景]** | 保留檔案的背景透明度。 |
+| **[!UICONTROL 在演算後的影像中維持透明背景]** | 它會保留檔案的背景透明度。 |
 | **[!UICONTROL 解析度（畫素/英吋）]** | 決定解析度設定。 此設定決定檔案中每英吋顯示的畫素數目。 |
-| **[!UICONTROL 色域]** | · **[!UICONTROL 自動偵測]** — 保留檔案的色域。<br>· **[!UICONTROL 強製為RGB]** — 轉換為RGB色域。<br>· **[!UICONTROL 強製為CMYK]** — 轉換為CMYK色域。<br>· **[!UICONTROL 強製為灰階]** — 轉換為灰階色域。 |
+| **[!UICONTROL 色域]** | · **[!UICONTROL 自動偵測]** — 保留檔案的色域。<br>· **[!UICONTROL 強製為RGB]** — 它轉換為RGB色域。<br>· **[!UICONTROL 強製為CMYK]** — 轉換為CMYK色域。<br>· **[!UICONTROL 強製為灰階]** — 轉換為灰階色域。 |
