@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的運作方式以及該軟體可以為您做哪些事。
 breadcrumb-title: 使用手冊
 user-guide-title: 'AEM as a Cloud Service '
-source-git-commit: eb3dbdc8107075cb5f6955f549bc9370f319588a
+source-git-commit: 5d0af9f7eaea4ad1aa6a979f46713d735f3a461a
 workflow-type: tm+mt
 source-wordcount: '5901'
 ht-degree: 97%
@@ -711,6 +711,11 @@ ht-degree: 97%
          + [在 AEM Sites 頁面中內嵌最適化表單](/help/forms/embed-adaptive-form-aem-sites.md)
          + [將根據核心元件的最適化表單內嵌至外部網頁](/help/forms/embed-adaptive-form-core-components-external-web-page.md)
          + [將根據基礎元件的最適化表單內嵌至外部網頁](/help/forms/embed-adaptive-form-external-web-page.md)
+         + 整合Adaptive Forms與Adobe Marketo Engage{#integrate-adaptive-form-with-market-engage}
+            + [將Adobe Marketo Engage與AEM Forms整合](/help/forms/integrate-form-to-marketo-engage.md)
+            + [設定新表單以與Marketo Engage](/help/forms/integrate-adaptive-form-with-marketo-engage.md)整合
+            + [為現有的Adaptive Forms設定Adobe Marketo Engage資料來源](/help/forms/use-marketo-engage-data-source-in-form.md)
+            + [設定提交動作以Marketo Engage現有表單](/help/forms/submit-adaptive-form-to-marketo-engage.md)
       + 表單資料模式 {#use-form-data-model}
          + [將 AEM Forms 連接到資料庫或資料來源](/help/forms/data-integration.md)
          + [設定資料來源](/help/forms/configure-data-sources.md)
@@ -722,11 +727,6 @@ ht-degree: 97%
          + [處理表單資料模型](/help/forms/work-with-form-data-model.md)
          + [使用表單資料模型](/help/forms/using-form-data-model.md)
          + [設計最適化表單的 XML 綱要](/help/forms/adaptive-form-xml-schema-form-model.md)
-         + 整合Adaptive Forms與Adobe Marketo Engage{#integrate-adaptive-form-with-market-engage}
-            + [將Adobe Marketo Engage與AEM Forms整合](/help/forms/integrate-form-to-marketo-engage.md)
-            + [設定新表單以與Marketo Engage](/help/forms/integrate-adaptive-form-with-marketo-engage.md)整合
-            + [為現有的Adaptive Forms設定Adobe Marketo Engage資料來源](/help/forms/use-marketo-engage-data-source-in-form.md)
-            + [設定提交動作以Marketo Engage現有表單](/help/forms/submit-adaptive-form-to-marketo-engage.md)
    + 最適化 Forms {#adaptive-forms-authoring}
       + [建立最適化表單](/help/forms/create-an-adaptive-form.md)
       + [建立最適化表單片段](/help/forms/adaptive-form-fragments.md)
