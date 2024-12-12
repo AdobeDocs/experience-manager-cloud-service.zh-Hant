@@ -4,10 +4,10 @@ description: 瞭解通用編輯器如何讓您看到即得(WYSIWYG)編輯任何H
 exl-id: d4fc2384-a0f5-4a6f-9572-62749786be4c
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 54d1cdec9b30c08f28d4c9b2fbd97446f3ff05b3
+source-git-commit: b8d56873b7bc23295fefc35a826b8047c626649e
 workflow-type: tm+mt
-source-wordcount: '1001'
-ht-degree: 52%
+source-wordcount: '992'
+ht-degree: 53%
 
 ---
 
@@ -87,8 +87,7 @@ Universal Editor 可以用於任何實作、任何內容和任何方面的內容
 當您探索通用編輯器並在您自己的專案中進一步實作時，請記住以下限制。
 
 * 不應超過25個AEM資源(內容片段、頁面、體驗片段、Assets等)在單一頁面上作為檢測參照。
-* AEM as a Cloud Service是唯一受支援的AEM後端。
-   * [AEM 6.5的支援屬於搶先採用計畫的一部分。](/help/release-notes/universal-editor/current.md#early-adoption)
+* AEM as a Cloud Service和[AEM 6.5](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction)是唯一支援的AEM後端。
 * 需要AEM as a Cloud Service版本`2023.8.13099`或更新版本。
 * 內容作者必須擁有自己的個別Experience Cloud帳戶。
 * 在AEM中，通用編輯器支援與AEM相同的案頭瀏覽器。
