@@ -5,16 +5,16 @@ role: User, Leader, Admin, Architect, Developer
 contentOwner: AG
 exl-id: 7264e8d1-fc8f-4eb3-93a9-a6066ca3f851
 feature: Metadata
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 1252814d99927cb8fff81b66f6e7caca92bb6e9a
 workflow-type: tm+mt
-source-wordcount: '1801'
-ht-degree: 86%
+source-wordcount: '1904'
+ht-degree: 82%
 
 ---
 
 # 資產檢視的中繼資料 {#metadata}
 
-| [搜尋最佳實務](/help/assets/search-best-practices.md) | [中繼資料最佳實務](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [具有OpenAPI功能的Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets開發人員檔案](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| [搜尋最佳實務](/help/assets/search-best-practices.md) | [中繼資料最佳實務](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [具有 OpenAPI 功能的 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 開發人員文件](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
 中繼資料為資料或資料相關的說明。例如，作為資產的影像可以包含其所按一下的相機資訊或任何版權資訊。此資訊是影像的中繼資料。中繼資料是進行高效率資產管理的關鍵所在。中繼資料雖然是資產所有可用資料的集合，但並不一定包含在資產內。
@@ -169,6 +169,19 @@ MIME 子類型 > MIME 類型 > `default` 表單 > 現成可用的表單
 1. 選取資料夾並按一下「**[!UICONTROL 移除]**」。您也可以從清單中選取多個資料夾。
 
 您也可以導覽至資料夾詳細資料頁面，然後從「**[!UICONTROL 中繼資料表單]**」欄位中選取「**[!UICONTROL 系統對應中繼資料表單]**」，即可從資料夾中刪除已指派的中繼資料表單。
+
+### 在中繼資料表單中使用連結元件 {#link-component-metadata-form}
+
+連結元件可用來啟用外部URL，包括儲存連結、版權資訊、連絡人表單等。 若要在中繼資料表單上使用連結元件，您需要[設定中繼資料表單](#metadata-forms)。
+
+請依照下列步驟，在中繼資料表單上使用連結元件：
+
+1. 前往資產詳細資訊頁面，並導覽至&#x200B;**[!UICONTROL 連結URL]**。
+1. 新增您想要用來針對所選資產重新導向的URL。
+1. 按一下&#x200B;**[!UICONTROL 新增連結]**。 執行下列其中一個動作：
+   * 按一下![復製圖示](assets/do-not-localize/copy.svg)以複製URL。
+   * 按一下![編輯圖示](assets/do-not-localize/edit.svg)以編輯URL。
+1. 按一下[儲存]儲存變更。****
 
 ## 後續步驟 {#next-steps}
 
