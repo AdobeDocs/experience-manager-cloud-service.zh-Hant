@@ -4,10 +4,10 @@ description: 了解 Adobe Developer Console 中已取代 JWT 憑證對 AEM 的�
 exl-id: 7c811081-484c-41f7-a289-4e9a10a837b3
 feature: Security
 role: Admin
-source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
-workflow-type: ht
-source-wordcount: '483'
-ht-degree: 100%
+source-git-commit: d3c00c33925a23ad5b1080c1e864cfdb5a8d1c1b
+workflow-type: tm+mt
+source-wordcount: '769'
+ht-degree: 63%
 
 ---
 
@@ -59,3 +59,35 @@ AEM 客戶使用 AEM 來設定所有與許多其他 Adobe 解決方案的整合�
 當 Cloud Manager 佈建 AEM as a Cloud Service 環境時，它會自動產生具有 JWT 憑證的 Adobe Developer Console 專案。該專案會標記為唯讀，如以下螢幕截圖所示。客戶不能也不應嘗試將這些專案移轉到 OAuth 伺服器對伺服器認證。相反地，Adobe 會在認證無法繼續使用之前自行移轉這些專案。
 
 ![自動產生的專案](/help/security/assets/jwt-deprecation-autogen-projects.png)
+
+## 自動產生的專案常見問題集 {#autogen-projects-faqs}
+
+本節針對AEM as a Cloud Service中自動產生專案的JWT憑證淘汰，提供最常見問題的解答。
+
+**我要如何自動產生哪些專案？**
+導覽至Adobe Developer Console | 專案區段。  AEM as a Cloud Service自動產生的專案會有含有「自動產生」識別碼的鎖定圖示。  自動產生的專案會遵循AEM-p#####-e####格式，且由技術帳戶使用者建立。
+
+<img width="439" alt="影像" src="https://git.corp.adobe.com/storage/user/16149/files/6b20a8a3-3711-4741-8f2c-ec5e36fe97cc">
+
+
+**如果我們自動產生的專案發生問題，該怎麼辦？**
+
+連絡[Adobe客戶服務](https://helpx.adobe.com/tw/enterprise/using/support-for-experience-cloud.html)。
+
+**我應該移轉自動產生的專案嗎？**
+
+不需要採取任何動作，因為Adobe會針對具有AEM發行說17258（2024年8月）及更新的環境移轉代表您自動產生的。
+
+**移轉自動產生的專案的時間表為何？**
+
+Adobe將於2025年第1季開始分階段移轉方法，從開發環境開始。
+
+**如果我們的AEM版本比AEM版本17258本（2024年8月）舊，我們的AEM as a Cloud Service執行個體會受到什麼影響？**
+
+如果自動產生的專案整合在2025年6月前未移轉至OAuth，系統將停止運作。
+
+若要確保順利轉換，客戶應立即連絡[Adobe客戶服務](https://helpx.adobe.com/tw/enterprise/using/support-for-experience-cloud.html)，並開始更新至[最新AEM版本](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/release-notes/maintenance/latest)的程式。 這將提供充足的時間進行回歸測試，並允許Adobe有效管理專案的移轉。
+
+**我可以升級至支援的OAuth版本而不升級我的AEM as a Cloud Service AEM版本嗎？**
+
+否。若要確保順利轉換，客戶應立即連絡[Adobe客戶服務](https://helpx.adobe.com/tw/enterprise/using/support-for-experience-cloud.html)，並開始更新至[最新AEM版本](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/release-notes/maintenance/latest)的程式。 這將提供充足的時間進行回歸測試，並允許Adobe有效管理專案的移轉。
