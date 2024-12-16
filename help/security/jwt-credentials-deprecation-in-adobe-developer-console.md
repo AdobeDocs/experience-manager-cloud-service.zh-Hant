@@ -4,9 +4,9 @@ description: 了解 Adobe Developer Console 中已取代 JWT 憑證對 AEM 的�
 exl-id: 7c811081-484c-41f7-a289-4e9a10a837b3
 feature: Security
 role: Admin
-source-git-commit: d3c00c33925a23ad5b1080c1e864cfdb5a8d1c1b
+source-git-commit: 18e9daad8bec6749d493994264792c0cd3b55d15
 workflow-type: tm+mt
-source-wordcount: '769'
+source-wordcount: '770'
 ht-degree: 63%
 
 ---
@@ -64,11 +64,11 @@ AEM 客戶使用 AEM 來設定所有與許多其他 Adobe 解決方案的整合�
 
 本節針對AEM as a Cloud Service中自動產生專案的JWT憑證淘汰，提供最常見問題的解答。
 
-**我要如何自動產生哪些專案？**
+**如何自動產生哪些專案？**
+
 導覽至Adobe Developer Console | 專案區段。  AEM as a Cloud Service自動產生的專案會有含有「自動產生」識別碼的鎖定圖示。  自動產生的專案會遵循AEM-p#####-e####格式，且由技術帳戶使用者建立。
 
-<img width="439" alt="影像" src="https://git.corp.adobe.com/storage/user/16149/files/6b20a8a3-3711-4741-8f2c-ec5e36fe97cc">
-
+![自動產生的專案](/help/security/assets/jwt-alert.png)
 
 **如果我們自動產生的專案發生問題，該怎麼辦？**
 
