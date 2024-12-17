@@ -2,10 +2,10 @@
 title: 批准 Content Hub 的資產
 description: 瞭解如何在Assets as a Cloud Service中核准資產，以便在Content Hub中使用。
 exl-id: fc849028-ab56-4388-b8d6-e36cac8f868f
-source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
+source-git-commit: 95bf82ceead9d06bc0f5720f1a6af945afc27622
 workflow-type: tm+mt
-source-wordcount: '774'
-ht-degree: 6%
+source-wordcount: '837'
+ht-degree: 17%
 
 ---
 
@@ -59,9 +59,9 @@ Assets as a Cloud Service和Content Hub必須使用相同的組織，資產才�
 
 若要在Assets檢視中，大量核准資料夾內的資產：
 
-1. 選取資產並按一下&#x200B;**[!UICONTROL 大量中繼資料編輯]**。
+1. 選取資產，然後按一下「**[!UICONTROL 大量中繼資料編輯]**」。
 
-1. 在右窗格的[!UICONTROL 屬性]區段中可用的&#x200B;**[!UICONTROL 狀態]**&#x200B;欄位中選取&#x200B;**[!UICONTROL 已核准]**。
+1. 在右側面板「[!UICONTROL 屬性]」區段內提供的「**[!UICONTROL 狀態]**」欄位中，選取「**[!UICONTROL 已核准]**」。
 
 1. 按一下「**[!UICONTROL 儲存]**」。
 
@@ -85,6 +85,12 @@ Assets as a Cloud Service和Content Hub必須使用相同的組織，資產才�
    1. 將&#x200B;**[!UICONTROL 對應更新至屬性]**&#x200B;至&#x200B;_。/jcr：content/metadata/dam：status_。
    1. 將預設值變更為&#x200B;_已核准_。
 
+1. 與步驟6類似，將&#x200B;**[!UICONTROL 單行文字欄位]**&#x200B;從右側的&#x200B;**[!UICONTROL 建置表單]**&#x200B;區段拖曳到表單的中繼資料區段。
+1. 按一下新新增的欄位，然後在&#x200B;**[!UICONTROL 設定]**&#x200B;面板中執行下列更新：
+   1. 將&#x200B;**[!UICONTROL 欄位標籤]**&#x200B;變更為&#x200B;_啟用目標_。
+   1. 將&#x200B;**[!UICONTROL 對應更新至屬性]**&#x200B;至&#x200B;_。/jcr：content/metadata/dam：activationTarget_。
+   1. 將預設值變更為&#x200B;_contenthub_。
+
 1. 按一下「**[!UICONTROL 儲存]**」。
 1. 在&#x200B;**[!UICONTROL 中繼資料設定檔]**&#x200B;頁面中，選取新建立的中繼資料設定檔。
 1. 按一下頂端動作列中的&#x200B;**[!UICONTROL 套用中繼資料設定檔至資料夾]**。
@@ -103,8 +109,8 @@ Assets as a Cloud Service和Content Hub必須使用相同的組織，資產才�
 
 是否顯示使用Content Hub上傳的資產，取決於您是否已啟用[自動核准切換](/help/assets/configure-content-hub-ui-options.md#configure-import-options-content-hub)：
 
-* 如果已啟用&#x200B;**[!UICONTROL 自動核准]**&#x200B;切換，則您使用Content Hub上傳的資產會自動可供使用。
+* 如果啟用&#x200B;**[!UICONTROL 自動核准]**&#x200B;切換開關，您使用 Content Hub 上傳的資產就會自動顯示。
 
-* 如果&#x200B;**[!UICONTROL 自動核准]**&#x200B;切換功能已停用，您使用Content Hub上傳的資產不會自動顯示。 這些資產可在Assetsas a Cloud Service環境的`hydrated-assets`資料夾中使用。 導覽至資料夾，然後[大量編輯](#bulk-approve-assets-content-hub)這些資產的狀態到`Approved`，以便這些資產顯示在Content Hub中。
+* 如果停用&#x200B;**[!UICONTROL 自動核准]**&#x200B;切換開關，您使用 Content Hub 上傳的資產就不會自動顯示。這些資產會顯示在您 Assets as a Cloud Service 環境的 `hydrated-assets` 資料夾中。導覽至該資料夾，並將資產狀態[大量編輯](#bulk-approve-assets-content-hub)為 `Approved`，使資產顯示於 Content Hub 中。
 
 ![Content Hub核准流程](/help/assets/assets/content-hub-approval.png)
