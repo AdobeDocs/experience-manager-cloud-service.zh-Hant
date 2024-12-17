@@ -2,7 +2,8 @@
 title: 在 [!DNL Assets view]中重新命名並大量重新命名資產
 description: 瞭解如何使用新的Assets UI (Assets檢視)大量重新命名資產。 它提供一次重新命名多個資產的能力。
 role: User
-source-git-commit: 8a62db7ecae8b90e05939b031344c226000bb304
+exl-id: e041811b-0246-408f-9246-248da55f66a1
+source-git-commit: 97be9d7eafe5baa55c1314ca431cb0fabca06b5e
 workflow-type: tm+mt
 source-wordcount: '440'
 ht-degree: 15%
@@ -50,7 +51,7 @@ ht-degree: 15%
 * 移除前置詞和後置詞，只保留名稱的中間部分。
 * 在檔案前面加上001、002等 並翻譯成英文。
 
-  >[!VIDEO](https://video.tv.adobe.com/v/3440975)
+>[!VIDEO](https://video.tv.adobe.com/v/3440975)
 
 >[!NOTE]
 >
