@@ -1,10 +1,10 @@
 ---
 title: 為Edge Delivery Services製作內容時整合AEM Assets
-description: 瞭解如何將AEM Assets與Edge Delivery Services整合。 此整合可讓您將AEM Assets與Microsoft Word和Google檔案整合、將AEM Assets與Universal Editor整合、將Dynamic Media與OpenAPI功能與Universal Editor整合，以及將Dynamic Media與OpenAPI功能與Microsoft Word和Google檔案整合。 完成這項整合後，您可以在Microsoft Word和Google檔案內使用AEM Assets，在Universal Editor內使用AEM Assets，在Universal Editor內使用Dynamic Media搭配OpenAPI功能來傳送資產，並在Microsoft Word和Google檔案內使用Dynamic Media搭配OpenAPI功能來傳送資產。
+description: 瞭解如何將AEM Assets與Edge Delivery Services整合。 此整合可讓您將AEM Assets與Microsoft Word和Google檔案整合、將AEM Assets與Universal Editor整合、將Dynamic Media與OpenAPI功能與Universal Editor整合，以及將Dynamic Media與OpenAPI功能與Microsoft Word和Google檔案整合。
 exl-id: e58db2ce-a55a-49b3-ae8e-709b5ea8d095
-source-git-commit: 87acadf3664a180df758ee40e5f5e35c68aef7b8
+source-git-commit: def807c2bb1b2fe337879b3abe2c0a5d1b5f1dea
 workflow-type: tm+mt
-source-wordcount: '744'
+source-wordcount: '696'
 ht-degree: 0%
 
 ---
