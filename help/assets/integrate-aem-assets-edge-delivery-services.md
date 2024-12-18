@@ -2,9 +2,9 @@
 title: 為Edge Delivery Services製作內容時整合AEM Assets
 description: 瞭解如何將AEM Assets與Edge Delivery Services整合。 此整合可讓您將AEM Assets與Microsoft Word和Google檔案整合、將AEM Assets與Universal Editor整合、將Dynamic Media與OpenAPI功能與Universal Editor整合，以及將Dynamic Media與OpenAPI功能與Microsoft Word和Google檔案整合。
 exl-id: e58db2ce-a55a-49b3-ae8e-709b5ea8d095
-source-git-commit: def807c2bb1b2fe337879b3abe2c0a5d1b5f1dea
+source-git-commit: 9e7701152e1da4afc73d3d5ba271b04df2054397
 workflow-type: tm+mt
-source-wordcount: '696'
+source-wordcount: '697'
 ht-degree: 0%
 
 ---
@@ -60,11 +60,11 @@ AEM Assets與檔案型撰寫工具(例如Microsoft Word或Google Docs)的整合�
 * 有權使用已啟用具開放API功能的Dynamic Media的AssetsCloud Service環境。
 * Dynamic Media授權。
 * 已啟用AEM Assets sidekick外掛程式，並啟用影像資產的複製參考。 如需詳細資訊，請參閱檔案式撰寫的[這個](https://www.aem.live/developer/configuring-aem-assets-sidekick-plugin#copymode)，以及萬用編輯器式撰寫的[這個](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/configurable-asset-picker/#extension-overview)。
-* 已核准的Assets。 已核准的Assets透過AssetsCloud Service後端或UI動作具有`dam:status=Approved`。
+* 已核准的Assets。 已核准的資產透過AssetsCloud Service後端或UI動作有`dam:status=Approved`。
 
 ### 使用具有OpenAPI功能的Dynamic Media所傳送的資產{#how-to-use-Dynamic-Media-with-OpenAPI-assets}
 
-若要在製作內容時使用具有OpenAPI功能的Dynamic Media所傳送的資產，請參閱：
+若要在製作內容時使用透過Dynamic Media及OpenAPI功能傳送的資產，請參閱：
 
 * [使用影像參考](https://www.aem.live/docs/aem-assets-sidekick-plugin#using-image-references-when-authoring-content)
 * [使用視訊參考](https://www.aem.live/docs/aem-assets-sidekick-plugin#using-video-references-when-authoring-content)
