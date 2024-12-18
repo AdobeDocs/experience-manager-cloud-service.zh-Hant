@@ -3,13 +3,13 @@ title: 跨網站重複使用程式碼
 description: 如果您有許多相似的網站，大部分外觀和行為相同，但內容不同，請瞭解如何在一個重寫模式中跨多個網站共用程式碼。
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: e25e21984ebadde7076d95c6051b8bfca5b2ce03
+exl-id: a6bc0f35-9e76-4b5a-8747-b64e144c08c4
+source-git-commit: 7b37f3d387f0200531fe12cde649b978f98d5d49
 workflow-type: tm+mt
-source-wordcount: '1010'
+source-wordcount: '1041'
 ht-degree: 0%
 
 ---
-
 
 # 跨網站重複使用程式碼 {#repoless}
 
@@ -45,7 +45,7 @@ AEM支援從相同程式碼基底執行多個網站，而不需建立多個GitHu
 
 1. [擷取存取權杖](#access-token)
 1. [設定組態服務](#config-service)
-1. [設定存取控制](#access-control)
+1. [新增網站設定和技術帳戶](#access-control)
 1. [更新AEM設定](#update-aem)
 1. [驗證網站](#authenticate-site)
 
@@ -126,9 +126,9 @@ curl  --location 'https://admin.hlx.page/config/<your-github-org>.json' \
 
 建立公用組態之後，您可以透過類似`https://main--<your-aem-project>--<your-github-org>.aem.page/config.json`的URL存取它，以便驗證。
 
-### 設定存取控制 {#access-control}
+### 新增網站設定的路徑對應並設定技術帳戶 {#access-control}
 
-若要設定存取控制，您必須提供技術帳戶。
+您需要建立網站設定，並將其新增至路徑對應。
 
 1. 在網站的根目錄建立新頁面，並選擇&#x200B;[**組態**&#x200B;範本。](/help/edge/wysiwyg-authoring/tabular-data.md#other)
    * 您可以讓設定保持空白，只保留預先定義的`key`和`value`欄。 您只需要建立它。
@@ -156,28 +156,31 @@ curl  --location 'https://admin.hlx.page/config/<your-github-org>.json' \
    ```text
    curl 'https://main--<your-aem-project>--<your-github-org>.aem.live/config.json'
    ```
-1. 在瀏覽器中，您現在可以擷取技術帳戶，以回應下列連結。
+
+對應網站設定後，您可以定義技術帳戶以設定存取控制，使其具有發佈許可權。
+
+1. 在您的瀏覽器中，擷取技術帳戶以回應下列連結。
 
    ```text
    https://author-p<programID>-e<envionmentID>.adobeaemcloud.com/bin/franklin.delivery/<your-github-org>/<your-aem-project>/main/.helix/config.json
    ```
 
-回應將與以下內容類似。
+1. 回應將與以下內容類似。
 
-```json
-{
-  "total": 1,
-  "offset": 0,
-  "limit": 1,
-  "data": [
-    {
-      "key": "admin.role.publish",
-      "value": "<tech-account-id>@techacct.adobe.com"
-    }
-  ],
-  ":type": "sheet"
-}
-```
+   ```json
+   {
+     "total": 1,
+     "offset": 0,
+     "limit": 1,
+     "data": [
+       {
+         "key": "admin.role.publish",
+         "value": "<tech-account-id>@techacct.adobe.com"
+       }
+     ],
+     ":type": "sheet"
+   }
+   ```
 
 1. 使用類似以下的cURL命令在您的設定中設定技術帳戶。
 
