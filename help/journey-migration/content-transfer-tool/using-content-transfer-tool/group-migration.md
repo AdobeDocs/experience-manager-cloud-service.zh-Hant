@@ -2,9 +2,9 @@
 title: 群組移轉
 description: AEM as a Cloud Service中的群組移轉概觀。
 exl-id: 4a35fc46-f641-46a4-b3ff-080d090c593b
-source-git-commit: 7e7b311d425ae6cdee9eb9311c0a12af84f81096
+source-git-commit: bb041cf13d5e82fc4135f0849b03eeeed9a5d009
 workflow-type: tm+mt
-source-wordcount: '1447'
+source-wordcount: '1476'
 ht-degree: 4%
 
 ---
@@ -37,16 +37,16 @@ AEM as a Cloud Service的一項重大變更是完全整合式使用AdobeID來存
 
 「內容轉移工具」和Cloud Acceleration Manager會移轉與要移轉至雲端系統的內容相關聯的任何群組。 「內容轉移工具」會在提取程式期間從來源AEM系統複製所有群組，以達成此目的。 CAM擷取接著只選取和移轉特定群組：
 
+* 如果群組位於已移轉內容的ACL或CUG原則上，該群組將會移轉，但以下列出一些例外。
 * 有許多內建的群組已存在於目標雲端系統中；這些群組永遠都不會移轉。
-* 任何內建群組的直接成員群組（在已移轉內容的ACL或CUG原則中直接或間接參照）將會移轉，以確保使用者是這類群組的直接或間接成員，能夠繼續存取已移轉的內容。
-* 如果群組位於已移轉內容的ACL或CUG原則上，則會移轉該群組。
+   * 某些內建群組可能包含&#x200B;_非_&#x200B;內建的成員群組；移轉內容的ACL或CUG原則中參考的任何此類成員群組（直接成員或成員成員等）將會進行移轉，以確保屬於這些群組成員的使用者（直接或間接）維持其對移轉內容的存取權。
 * 其他群組，例如在ACL或CUG原則中找不到的群組、在目標系統上的群組，以及目標系統上具有任何唯一性限制資料的群組，將不會進行移轉。
 
 請注意，為群組記錄/報告的路徑只是觸發該群組移轉的第一個路徑，且該群組可能也在其他內容路徑上。
 
 大部分已移轉的群組已設定為由IMS管理。  這表示IMS中具有相同名稱的群組將連結至AEM中的群組，而IMS群組中的任何IMS使用者都會成為AEM中的AEM使用者和群組成員。  這可讓這些使用者根據群組的ACL或CUG原則存取內容。
 
-請注意，移轉的群組不再視為「本機群組」；它們是IMS群組，且必須在IMS中重新建立，以便在AEM和IMS之間同步。  群組可以透過Admin Console等方式在IMS中個別或大量建立。  請參閱[管理使用者群組](https://helpx.adobe.com/ca/enterprise/using/user-groups.html)，以取得在Admin Console上個別或大量建立群組的詳細資訊。
+請注意，已移轉的群組不再被視為AEM的「本機群組」；在AEM中是IMS就緒的群組，但可能尚不存在於IMS中。  它們必須在IMS中另外重新建立，以便在AEM和IMS之間同步。  群組可以透過Admin Console等方式在IMS中個別或大量建立。  請參閱[管理使用者群組](https://helpx.adobe.com/ca/enterprise/using/user-groups.html)，以取得在Admin Console上個別或大量建立群組的詳細資訊。
 
 此IMS設定的例外情況是Assets集合建立的群組。 在AEM上建立集合時，會建立群組以供存取該集合；此類群組會移轉至雲端系統，但不會設定為由IMS管理。  若要將IMS使用者新增至這些群組，他們就必須在Assets UI的群組屬性頁面中新增使用者，且以個別或集體方式新增至其他IMS群組。
 
