@@ -5,7 +5,7 @@ topic-tags: Adaptive Forms, author
 feature: Adaptive Forms, Core Components
 role: User, Developer
 exl-id: e9c13228-0857-4936-9c39-12ed2bddf429
-source-git-commit: 709b3381eedefe7619cb961f345f202cadf512f3
+source-git-commit: eba6aec89e645e443ba6f4ca5aff66a39288ff1e
 workflow-type: tm+mt
 source-wordcount: '913'
 ht-degree: 3%
@@ -98,6 +98,7 @@ Cloudflare的Turnstile驗證碼是一種安全性措施，旨在保護表單和�
       * **錯誤訊息：**&#x200B;提供驗證碼提交失敗時向使用者顯示的錯誤訊息。
         >[!NOTE]
         >* 只有在使用者端已填入驗證碼時，才會顯示錯誤訊息。
+
 1. 按一下&#x200B;**[!UICONTROL 「完成」]**。
 
 
