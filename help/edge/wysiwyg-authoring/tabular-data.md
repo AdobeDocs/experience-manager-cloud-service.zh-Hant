@@ -7,7 +7,7 @@ role: Admin, Architect, Developer
 source-git-commit: 4e4234c1aaf0a410cb419140e9e353348ce118c1
 workflow-type: tm+mt
 source-wordcount: '1284'
-ht-degree: 73%
+ht-degree: 78%
 
 ---
 
@@ -44,7 +44,7 @@ ht-degree: 73%
 
 為了在「使用 Edge Delivery Services 的 AEM」專案中使用試算表來建立應對，您需要使用最新的網站範本建立網站。
 
-如需詳細資訊，請參閱檔案[使用Edge Delivery Services進行WYSIWYG編寫的開發人員快速入門手冊](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)。
+請參閱文件：[使用 Edge Delivery Services 進行所見即所得製作的開發人員快速入門手冊](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)，以了解更多資訊。
 
 ## 建立試算表 {#spreadsheet}
 
@@ -54,11 +54,11 @@ ht-degree: 73%
 
    ![建立頁面](assets/tabular-data/tabular-data-create-page.png)
 
-1. 在建立頁面精靈的「**範本**」標籤上，點選或按一下「**重新導向**」範本並選取，然後點選或按一下「**下一步**」。
+1. 在建立頁面精靈的「**範本**」索引標籤上，點選或按一下「**重新導向**」範本並選取，然後點選或按一下「**下一步**」。
 
    ![選取範本](assets/tabular-data/tabular-data-create-page-teamplate-redirects.png)
 
-1. 精靈的「**屬性**」標籤顯示重新導向試算表的預設值。點選或按一下「**建立**」。
+1. 精靈的「**屬性**」索引標籤顯示重新導向試算表的預設值。點選或按一下「**建立**」。
 
    * **標題** - 保留此值不變。
    * **欄** - 需要預先填入重新導向的最少欄。
@@ -71,7 +71,7 @@ ht-degree: 73%
 
    ![成功對話框](assets/tabular-data/tabular-data-success.png)
 
-1. 新標籤開啟且有試算表載入編輯器中，其中包含預先定義的&#x200B;**來源**&#x200B;和&#x200B;**目的地**&#x200B;欄。若要定義您的重新導向，請點選或按一下&#x200B;**來源**&#x200B;欄的空白列。當您編輯試算表時，變更會自動儲存。
+1. 新索引標籤開啟且有試算表載入編輯器中，其中包含預先定義的&#x200B;**來源**&#x200B;和&#x200B;**目的地**&#x200B;欄。若要定義您的重新導向，請點選或按一下&#x200B;**來源**&#x200B;欄的空白列。當您編輯試算表時，變更會自動儲存。
 
    ![編輯試算表](assets/tabular-data/tabular-data-edit-redirects.png)
 
@@ -150,7 +150,7 @@ https://<aem-instance>/bin/asynccommand?optype=JOBINF&jobid=2024/10/24/14/1/8da6
 
    >[!NOTE]
    >
-   >此`paths.json`專案是以使用表格資料建立重新導向的範例為基礎。 請確定更新適合您正在建立之[型別試算表的路徑。](#other)
+   >此 `paths.json` 項目是依據使用表格資料建立重新導向的範例。請確保根據[您要建立的試算表類型](#other)更新適合的路徑。
 
 1. 按一下「**提交變更...**」，將變更儲存到 `main`。
 
@@ -174,7 +174,7 @@ https://<aem-instance>/bin/asynccommand?optype=JOBINF&jobid=2024/10/24/14/1/8da6
 
 >[!TIP]
 >
->如需有關路徑對應的詳細資訊，請參閱檔案[Edge Delivery Services的路徑對應。](/help/edge/wysiwyg-authoring/path-mapping.md)
+>如需更多有關路徑對應的資訊，請參閱文件：[Edge Delivery Services 的路徑對應](/help/edge/wysiwyg-authoring/path-mapping.md)。
 
 ## 其他試算表類型 {#other}
 
@@ -186,14 +186,14 @@ https://<aem-instance>/bin/asynccommand?optype=JOBINF&jobid=2024/10/24/14/1/8da6
 * 設定
 * [分類法](/help/edge/wysiwyg-authoring/taxonomy.md)
 
-只需按照「[建立試算表](#spreadsheet)」和「[更新 paths.json](#paths-json)」等節中的相同步驟進行，並選擇適當範本及相關的 `paths.json` 檔案。
+只需按照[建立試算表](#spreadsheet)和[更新 paths.json](#paths-json) 等部分中的相同步驟進行，並選擇適當範本且正確更新 `paths.json` 檔案即可。
 
 對於 [設定](https://www.aem.live/docs/configuration)、[標頭](https://www.aem.live/docs/custom-headers) 和 [中繼資料](https://www.aem.live/docs/bulk-metadata)，確保新增對應以將其發佈到預設位置：
 
 * 設定：`/.helix/config.json`
 * 標頭：`/.helix/headers.json`
 * 中繼資料：`/metadata.json`
-* 分類：如需詳細資訊，請參閱檔案[管理分類資料](/help/edge/wysiwyg-authoring/taxonomy.md)。
+* 分類法：如需更多資訊，請參閱文件：[管理分類資料](/help/edge/wysiwyg-authoring/taxonomy.md)。
 
 此外，您還可以[建立自己的試算表](#own-spreadsheet)，以及供您自己使用的任意資料欄。
 
@@ -209,7 +209,7 @@ https://<aem-instance>/bin/asynccommand?optype=JOBINF&jobid=2024/10/24/14/1/8da6
 
 1. 選取範本時，要選擇「**試算表**」。
 
-1. 在精靈的「**屬性**」標籤中，您可以新增自己的欄。
+1. 在精靈的「**屬性**」索引標籤中，您可以新增自己的欄。
 
    ![新增您自己的欄](assets/tabular-data/tabular-data-own-spreadsheet.png)
 

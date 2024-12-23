@@ -269,7 +269,7 @@ ht-degree: 97%
 + AEM as a Cloud Service 移轉歷程 {#migration-journey}
    + [移動 AEM as a Cloud Service 快速入門](/help/journey-migration/getting-started.md)
    + [整備階段](/help/journey-migration/readiness.md)
-   + [實施階段](/help/journey-migration/implementation.md)
+   + [實作階段](/help/journey-migration/implementation.md)
    + [上線](/help/journey-migration/go-live.md)
    + [上線後](/help/journey-migration/post-go-live.md)
    + [Experience Manager as a Cloud Service 合作夥伴移轉指南](/help/journey-migration/getting-started-partners.md)
@@ -280,7 +280,7 @@ ht-degree: 97%
       + 使用 Cloud Acceleration Manager {#using-cam}
          + [Cloud Acceleration Manager 快速入門](/help/journey-migration/cloud-acceleration-manager/using-cam/getting-started-cam.md)
          + [整備階段](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-readiness-phase.md)
-         + [實施階段](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-implementation-phase.md)
+         + [實作階段](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-implementation-phase.md)
          + [上線階段](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-golive-phase.md)
    + 雲端轉換工具 {#cloud-migration}
       + 最佳做法分析工具 {#best-practices-analyzer}
@@ -478,7 +478,7 @@ ht-degree: 97%
    + [Assets as a Cloud Service Ultimate](/help/assets/assets-ultimate-overview.md)
    + [啟用 Assets as a Cloud Service Ultimate](/help/assets/enable-assets-ultimate.md)
    + [Assets as a Cloud Service Prime](/help/assets/assets-prime.md)
-   + [資產協作者使用者](/help/assets/assets-collaborator-users.md)
+   + [Assets 協作者使用者](/help/assets/assets-collaborator-users.md)
    + [為Edge Delivery Services製作內容時整合AEM Assets](/help/assets/integrate-aem-assets-edge-delivery-services.md)
    + 管理數位資產 {#manage}
       + 微前端資產選擇器{#asset-selector}
@@ -655,7 +655,7 @@ ht-degree: 97%
       + [部署 Content Hub](/help/assets/deploy-content-hub.md)
       + [將品牌核准的資產上傳或匯入 Content Hub](/help/assets/upload-brand-approved-assets.md)
       + [設定 Content Hub 使用者介面](/help/assets/configure-content-hub-ui-options.md)
-      + [批准 Content Hub 的資產](/help/assets/approve-assets-content-hub.md)
+      + [核准 Content Hub 的資產](/help/assets/approve-assets-content-hub.md)
       + [在 Content Hub 中搜尋資產](/help/assets/search-assets-content-hub.md)
       + [資產屬性](/help/assets/asset-properties-content-hub.md)
       + [在 Content Hub 中分享資產](/help/assets/share-assets-content-hub.md)
@@ -763,7 +763,7 @@ ht-degree: 97%
             + [在最適化表單中新增版本設定、評論和附註](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md)
             + [比較最適化表單](/help/forms/compare-forms.md)
             + [建立自訂提交動作](/help/forms/custom-submit-action-for-adaptive-forms-based-on-core-components.md)
-            + [使用移轉公用程式工具將基礎元件型最適化表單轉換為核心元件型表單](/help/forms/migration-utility-tool-for-af-core-components.md)
+            + [使用遷移公用程式工具將基礎元件型最適化表單轉換為核心元件型表單](/help/forms/migration-utility-tool-for-af-core-components.md)
             + 以核心元件為主之最適化表單的規則編輯器簡介{#rule-editor-core-components}
                + [以核心元件為主之最適化表單的規則編輯器簡介](/help/forms/rule-editor-core-components.md)
                + [以核心元件為主之最適化表單的規則編輯器使用者介面](/help/forms/rule-editor-core-components-user-interface.md)
@@ -862,7 +862,7 @@ ht-degree: 97%
       + [已知問題、最佳做法和常見問題集](/help/forms/communications-known-issues-limitations.md)
    + 交易報告{#using-communications}
       + [交易報告計費 API](/help/forms/transaction-reports-billable-apis.md)
-      + [記錄自訂實施的交易](/help/forms/record-transaction-custom-implementation.md)
+      + [記錄自訂實作的交易](/help/forms/record-transaction-custom-implementation.md)
       + [了解您的價值實現儀表板](/help/forms/aem-forms-value-realization-dashboard.md)
    + 開發人員 API 參考 {#aem-forms-developer-api-reference}
       + [最適化 Forms API 參考](https://developer-stage.adobe.com/experience-cloud/experience-manager-apis/api/stable/forms/)
@@ -1110,8 +1110,8 @@ ht-degree: 97%
 + 生成式 AI {#generative-ai}
    + [產生變化版本](/help/generative-ai/generate-variations.md)
    + [助理(有限Beta)](/help/implementing/cloud-manager/aem-ai-assistant.md)
-+ 實施 {#implementing}
-   + [為 AEM as a Cloud Service 實施應用程式](/help/implementing/home.md)
++ 實作 {#implementing}
+   + [為 AEM as a Cloud Service 實作應用程式](/help/implementing/home.md)
    + 使用 Cloud Manager {#using-cloud-manager}
       + [導覽](/help/implementing/cloud-manager/navigation.md)
       + [AEM Launchpad](/help/implementing/cloud-manager/aem-home.md)
@@ -1240,7 +1240,7 @@ ht-degree: 97%
          + 搜尋 {#search}
             + [查詢產生器 API](/help/implementing/developing/introduction/query-builder-api.md)
             + [查詢產生器述詞參考](/help/implementing/developing/introduction/query-builder-predicates.md)
-            + [實施自訂述詞求值器](/help/implementing/developing/introduction/query-builder-custom-predicate.md)
+            + [實作自訂述詞求值器](/help/implementing/developing/introduction/query-builder-custom-predicate.md)
          + [自訂錯誤頁面](/help/implementing/developing/introduction/custom-error-page.md)
          + [AEM 節點類型](/help/implementing/developing/introduction/node-types.md)
       + 通用編輯器 {#universal-editor}
@@ -1356,7 +1356,7 @@ ht-degree: 97%
       + [清除內容傳遞網路快取](/help/implementing/dispatcher/cdn-cache-purge.md)
       + [AEM as a Cloud Service 中的快取](/help/implementing/dispatcher/caching.md)
 + 連接器 {#connectors}
-   + [實施 AEM 連接器](/help/connectors/implement.md)
+   + [實作 AEM 連接器](/help/connectors/implement.md)
    + [提交 AEM 連接器](/help/connectors/submit.md)
    + [維護 AEM 連接器](/help/connectors/maintain.md)
 + 運作 {#operations}

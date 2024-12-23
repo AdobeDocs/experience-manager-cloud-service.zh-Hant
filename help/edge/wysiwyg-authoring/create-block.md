@@ -1,33 +1,33 @@
 ---
 title: 建立經檢測適用通用編輯器的區塊
-description: 了解如何在使用 Edge Delivery Services 專案進行的 WYSIWYG 製作環境中，建立經檢測適用通用編輯器的區塊。
+description: 了解如何在使用 Edge Delivery Services 專案進行的所見即所得製作環境中，建立經檢測適用通用編輯器的區塊。
 exl-id: 65a5600a-8d16-4943-b3cd-fe2eee1b4abf
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 source-git-commit: fb7da1530f916ec63d5993446fd0c328af09ae7c
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1415'
+ht-degree: 94%
 
 ---
 
 
 # 建立經檢測適用通用編輯器的區塊 {#create-block}
 
-了解如何在使用 Edge Delivery Services 專案進行的 WYSIWYG 製作環境中，建立經檢測適用通用編輯器的區塊。
+了解如何在使用 Edge Delivery Services 專案進行的所見即所得製作環境中，建立經檢測適用通用編輯器的區塊。
 
 ## 先決條件 {#prerequisites}
 
-本指南提供逐步說明，讓您了解如何在使用 Edge Delivery Services 專案進行的 WYSIWYG 製作環境中，建立經檢測適用通用編輯器的區塊。內容包括新增元件、載入 Universal Editor 中的元件定義、發佈頁面、實施區塊裝飾和樣式、將變更引入生產以及進行變更驗證。完成本指南後，您可以為自己的專案建立和部署新區塊。
+本指南提供逐步說明，讓您了解如何在使用 Edge Delivery Services 專案進行的所見即所得製作環境中，建立經檢測適用通用編輯器的區塊。內容包括新增元件、載入通用編輯器中的元件定義、發佈頁面、實作區塊裝飾和樣式、將變更引入生產以及進行變更驗證。完成本指南後，您可以為自己的專案建立和部署新區塊。
 
-本指南需要具備使用 Edge Delivery Services 專案進行 WYSIWYG 製作及通用編輯器的知識。在開始執行本指南之前，您應該有 Edge Delivery Services 存取權並熟悉基本使用需知，包括：
+本指南需要具備使用 Edge Delivery Services 專案進行所見即所得製作及通用編輯器的知識。在開始執行本指南之前，您應該有 Edge Delivery Services 存取權並熟悉基本使用需知，包括：
 
 * 您已完成 [Edge Delivery Service 教學課程。](/help/edge/developer/tutorial.md)
 * 您有權存取 [AEM Cloud Service 沙箱。](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)
-* 您已[在同一沙箱環境中啟用 Universal Editor。](/help/implementing/universal-editor/getting-started.md)
-* 您已完成[使用 Edge Delivery Services 進行 WYSIWYG 製作的開發人員快速入門手冊](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)指南。
+* 您已[在同一沙箱環境中啟用通用編輯器。](/help/implementing/universal-editor/getting-started.md)
+* 您已完成[使用 Edge Delivery Services 進行所見即所得製作的開發人員快速入門手冊](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)指南。
 
-本指南是以在[使用 Edge Delivery Services 進行 WYSIWYG 製作的開發人員快速入門手冊](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)指南中完成的工作為基礎。
+本指南是以在[使用 Edge Delivery Services 進行所見即所得製作的開發人員快速入門手冊](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)指南中完成的工作為基礎。
 
 ## 為您的專案新增區塊 {#add-block}
 
@@ -39,7 +39,7 @@ Adobe 建議您採用三階段方法來開發區塊：
 
 1. 建立區塊的定義和模式、審查區塊，然後將區塊投入生產。
 1. 使用新區塊建立內容。
-1. 實施新區塊的裝飾和風格。
+1. 實作新區塊的裝飾和風格。
 
 以下引述區塊範例即遵照此方法進行。
 
@@ -85,7 +85,7 @@ Adobe 建議您採用三階段方法來開發區塊：
 
 3\. 編輯專案根目錄下的 `component-models.json` 檔案，為新引述區塊新增以下[模式定義](/help/implementing/universal-editor/field-types.md#model-structure)並儲存檔案。
 
-* 請參閱[使用 Edge Delivery Services 專案進行 WYSIWYG 製作的內容模型](/help/edge/wysiwyg-authoring/content-modeling.md)文件，了解有關建立內容模型時需要考慮的重要事項詳細資訊。
+* 請參閱文件：[使用 Edge Delivery Services 專案進行所見即所得製作的內容模型](/help/edge/wysiwyg-authoring/content-modeling.md)，了解有關建立內容模型時需要考慮的重要事項詳細資訊。
 
 >[!BEGINTABS]
 
@@ -155,23 +155,23 @@ Adobe 建議您採用三階段方法來開發區塊：
 
 現在您的基本引述區塊已定義並提交給範例專案，您可以將引述區塊新增至現有頁面。
 
-1. 在瀏覽器中，登入 AEM as a Cloud Service。[使用 Sites 主控台，](/help/sites-cloud/authoring/basic-handling.md)導覽至您在[使用 Edge Delivery Services 進行 WYSIWYG 製作的開發人員快速入門手冊](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)指南中建立的網站，然後選取一個頁面。
+1. 在瀏覽器中，登入 AEM as a Cloud Service。[使用 Sites 主控台，](/help/sites-cloud/authoring/basic-handling.md)導覽至您在[使用 Edge Delivery Services 進行所見即所得製作的開發人員快速入門手冊](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)指南中建立的網站，然後選取一個頁面。
 
    * 在本案例中，`index`是用於說明目的。
 
    ![在 Sites 控制台中選取索引頁面](assets/create-block/sites-console.png)
 
-1. 點選或按一下控制台工具列中的「**編輯**」，Universal Editor 將會開啟。
+1. 點選或按一下控制台工具列中的「**編輯**」，通用編輯器隨即開啟。
 
-   * 為了載入該頁面，您可能需要點選或按一下「**使用 Adob&#x200B;&#x200B;e 登入**」，並在 Universal Editor 中對 AEM 進行驗證。
+   * 為了載入該頁面，您可能需要點選或按一下「**使用 Adobe 登入**」，並在通用編輯器中對 AEM 進行驗證。
 
-1. 在 Universal Editor 中，選取一個區段。在屬性面板中，點選或按一下「**新增**」圖示，然後從功能表中選取新的&#x200B;**Quote**&#x200B;區塊。
+1. 在通用編輯器中，選取一個區段。在屬性面板中，點選或按一下「**新增**」圖示，然後從功能表中選取新的&#x200B;**Quote**&#x200B;區塊。
 
    *  **新增**&#x200B;圖示是一個加號。
    * 如果所選物件的藍色外框有一個標為「**區段**」的標記，表示您已選取了一個區段。
    * 在此範例中，在「**Lorem Ipsum**」標題上方輕輕點選或按一下，即可選取包含標題和 lorem ipsum 文字的區段。
 
-   ![在 Universal Editor 中選取一個區段](assets/create-block/add-quote-block.png)
+   ![在通用編輯器中選取一個區段](assets/create-block/add-quote-block.png)
 
 1. 頁面重新加載，且引述區塊將新增至所選區段的底部，以及成為 `component-definitions.json` 檔案中指定的預設內容。
 
@@ -180,7 +180,7 @@ Adobe 建議您採用三階段方法來開發區塊：
 
    ![所選區段中包含新引述區塊的頁面](assets/create-block/quote-added.png)
 
-1. 當您對引述內容感到滿意時，可以在 Universal Editor 工具列中點選或按一下「**發佈**」按鈕。
+1. 當您對引述內容感到滿意時，可以在通用編輯器工具列中點選或按一下「**發佈**」按鈕。
 
 1. 導覽至已發佈的頁面，驗證內容是否已發佈。該連結類似 `https://<branch>--<repo>--<owner>.aem.page`
 
@@ -327,20 +327,20 @@ export default function decorate(block) {
 
 為了簡單起見，本指南會讓您直接使用`main`分支。對於範例存放庫中的實驗，這通常不是問題。進行實際專案工作時[應該遵照開發最佳實務](https://www.aem.live/docs/dev-collab-and-good-practices)進行，在不同的分支上進行開發，並在合併到`main`之前透過提取請求檢查所有變更。
 
-當你是在`main`分支上開發時，您可以在 Universal Editor 位置列中附加 `?ref=<branch>`，以便從您的分支載入頁面。`<branch>` 是分支名稱，因為此分支會用於專案的預覽或即時 URL，例如 `https://<branch>--<repo>--<owner>.aem.page`。
+當你是在`main`分支上開發時，您可以在通用編輯器位置列中附加 `?ref=<branch>`，以便從您的分支載入頁面。`<branch>` 是分支名稱，因為此分支會用於專案的預覽或即時 URL，例如 `https://<branch>--<repo>--<owner>.aem.page`。
 
 ## 重新使用區塊進行文件型製作 {#reusing-blocks}
 
-如果您遵循相同的內容模型，則可以使用為 WYSIWYG 製作所建立的區塊，使用通用編輯器進行文件型製作。
+如果您遵循相同的內容模型，則可以使用為所見即所得製作所建立的區塊，使用通用編輯器進行文件型製作。
 
-如需更多資訊，請參閱[用於 WYSIWYG 和文件型製作的區塊](/help/edge/wysiwyg-authoring/wysiwyg-doc-blocks.md)文件。
+如需更多資訊，請參閱文件：[用於所見即所得和文件型製作的區塊](/help/edge/wysiwyg-authoring/wysiwyg-doc-blocks.md)。
 
 ## 後續步驟 {#next-steps}
 
 既然您已經知道如何建立區塊，那麼了解如何以語義方式建立內容模式並實現精益開發人員體驗就很重要。
 
-請參閱[使用 Edge Delivery Services 專案為 WYSIWYG 製作建立內容模型](/help/edge/wysiwyg-authoring/content-modeling.md)文件，了解建立內容模型如何用來使用 Edge Delivery Services 專案進行 WYSIWYG 製作。
+請參閱文件：[使用 Edge Delivery Services 專案為所見即所得製作建立內容模型](/help/edge/wysiwyg-authoring/content-modeling.md)，了解建立內容模型如何用於使用 Edge Delivery Services 專案進行所見即所得製作。
 
 >[!TIP]
 >
->有關建立新的 Edge Delivery Services 專案的端對端操作示範，該專案支援使用 AEM as a Cloud Service 作為內容來源進行 WYSIWYG 製作，請觀看[這場 AEM GEM 網路研討會](https://experienceleague.adobe.com/zh-hant/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)。
+>有關建立新的 Edge Delivery Services 專案的端對端操作示範，該專案支援使用 AEM as a Cloud Service 作為內容來源進行所見即所得製作，請觀看[這場 AEM GEM 網路研討會](https://experienceleague.adobe.com/zh-hant/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)。

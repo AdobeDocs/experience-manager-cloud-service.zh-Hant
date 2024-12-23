@@ -2,7 +2,7 @@
 source-git-commit: 60cf4c34f3b4d7c7a757f2274f1a02de8ae51e11
 workflow-type: tm+mt
 source-wordcount: '1323'
-ht-degree: 88%
+ht-degree: 95%
 
 ---
 # 代碼片段 {#snippets}
@@ -115,8 +115,8 @@ ht-degree: 88%
    </tr>
    <tr>
    <td>在面板之間導覽</td>
-   <td> 提供<b>下一個按鈕</b>和<b>上一個按鈕</b>元件，以便在面板之間導覽。 置於容器內的導覽按鈕可在其子元素上運作</td>
-   <td> 在規則編輯器中可以使用面板</b>中的<b>導覽，允許使用者建立用於在面板的子項之間導覽的規則。
+   <td> 提供<b>下一個按鈕</b>和<b>前一個按鈕</b>元件，以便在面板之間導覽。置於容器內的導覽按鈕會作用於其下層元素</td>
+   <td> 規則編輯器中會提供<b>在面板中導覽</b>的規則，讓使用者能夠建立於面板子系之間導覽的規則。
    </td>
    </tr>
    </tr>
@@ -132,11 +132,11 @@ ht-degree: 88%
 * [以核心元件為主之最適化表單的規則編輯器使用者介面](/help/forms/rule-editor-core-components-user-interface.md)
 * [以核心元件為主之最適化表單的規則編輯器不同使用案例](/help/forms/rule-editor-core-components-usecases.md)
 * [規則編輯器各個版本的差異](/help/forms/rule-editor-core-components-difference-tables.md)
-* [在最適化表單中使用非同步函式](/help/forms/using-async-funct-in-rule-editor.md)
+* [在最適化表單中使用非同步函數](/help/forms/using-async-funct-in-rule-editor.md)
 * [針對以核心元件為基礎的表單，在視覺化規則編輯器中叫用服務增強功能](/help/forms/invoke-service-enhancements-rule-editor.md)
 * [以核心元件為主之最適化表單的自訂函數簡介](/help/forms/create-and-use-custom-functions.md)
 * [建立以核心元件為主之最適化表單的自訂函數](/help/forms/custom-function-core-component-create-function.md)
-* [自訂函式中的範圍物件](/help/forms/custom-function-core-component-scope-function.md)
+* [自訂函數中的範圍物件](/help/forms/custom-function-core-component-scope-function.md)
 * [開發和使用自訂函數的範例](/help/forms/custom-function-core-components-use-cases.md)
 
 
@@ -187,10 +187,10 @@ ht-degree: 88%
 >
 >通用編輯器與 [IP 允許清單](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)不相容。
 >
->如果要使用通用編輯器，您必須：
+>如果您想使用通用編輯器，您必須採取下列其中一項動作：
 >
->* 未啟用IP允許清單。
->* [執行您自己的Universal Editor服務執行個體。](/help/implementing/universal-editor/local-dev.md)
+>* 不啟用 IP 允許清單。
+>* [執行您自己的通用編輯器服務執行個體。](/help/implementing/universal-editor/local-dev.md)
 
 ## 使用 Dynamic Media {#work-with-dynamic-media}
 

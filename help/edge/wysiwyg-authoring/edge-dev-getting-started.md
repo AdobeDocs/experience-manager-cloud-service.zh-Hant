@@ -1,6 +1,6 @@
 ---
-title: 使用 Edge Delivery Services 進行 WYSIWYG 製作的開發人員快速入門手冊
-description: 本手冊會協助您啟動並執行新的 Adobe Experience Manager 網站，使用 Edge Delivery Services 和通用編輯器進行 WYSIWYG 內容製作。
+title: 使用 Edge Delivery Services 進行所見即所得製作的開發人員快速入門手冊
+description: 本手冊會協助您啟動並執行新的 Adobe Experience Manager 網站，使用 Edge Delivery Services 和通用編輯器進行所見即所得內容製作。
 feature: Edge Delivery Services
 exl-id: a71184a7-c954-442e-b276-99edc6d2acd8
 role: Admin, Architect, Developer
@@ -12,9 +12,9 @@ ht-degree: 100%
 ---
 
 
-# 使用 Edge Delivery Services 進行 WYSIWYG 製作的開發人員快速入門手冊 {#edge-dev-getting-started}
+# 使用 Edge Delivery Services 進行所見即所得製作的開發人員快速入門手冊 {#edge-dev-getting-started}
 
-本手冊會協助您啟動並執行新的 Adobe Experience Manager 網站，使用 Edge Delivery Services 和通用編輯器進行 WYSIWYG 內容製作。
+本手冊會協助您啟動並執行新的 Adobe Experience Manager 網站，使用 Edge Delivery Services 和通用編輯器進行所見即所得內容製作。
 
 ## 先決條件 {#prerequisites}
 
@@ -22,7 +22,7 @@ ht-degree: 100%
 
 * 您已完成 [Edge Delivery Service 教學課程。](/help/edge/developer/tutorial.md)
 * 您有權存取 [AEM Cloud Service 沙箱。](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)
-* 您已[在同一沙箱環境中啟用 Universal Editor。](/help/implementing/universal-editor/getting-started.md)
+* 您已[在同一沙箱環境中啟用通用編輯器。](/help/implementing/universal-editor/getting-started.md)
 
 ## 開發 Edge Delivery Services 時的核心概念 {#core-concepts}
 
@@ -42,7 +42,7 @@ AEM 會提供標準區塊，作為本產品在專案範本中的一部分。這�
 
 Edge Delivery 運用 GitHub，可讓您直接從自己的 GitHub 存放庫管理和部署程式碼。
 
-您的作者可以使用以文件為主的製作來建立內容，或使用 Universal Editor 在 AEM 中建立內容。無論作者如何建立他們的內容，開發人員都可以使用 GitHub 中的 CSS 和 JavaScript 來自訂網站的功能。
+您的作者可以使用以文件為主的製作來建立內容，或使用通用編輯器在 AEM 中建立內容。無論作者如何建立他們的內容，開發人員都可以使用 GitHub 中的 CSS 和 JavaScript 來自訂網站的功能。
 
 系統會自動為您的每個分部建立網站，從內容預覽到生產都包括在內。您放入 GitHub 存放庫的每個資源都可以在您的網站上使用，無需任何建置程序。
 
@@ -50,9 +50,9 @@ Edge Delivery 運用 GitHub，可讓您直接從自己的 GitHub 存放庫管理
 >
 >請參閱 Edge Delivery Services 文件的[「建置」區段](/help/edge/developer/block-collection.md) ，了解有關區塊以及如何開發 Edge Delivery Services 更多詳細資訊。
 
-## WYSIWYG 製作和 Edge Delivery Services 快速入門 {#getting-started}
+## 所見即所得製作和 Edge Delivery Services 快速入門 {#getting-started}
 
-滿足[先決條件](#prerequisites)並選擇[使用Universal Editor](#editor-choice) 後，您就可以開始製作自己的專案。
+滿足[先決條件](#prerequisites)並選擇[使用通用編輯器](#editor-choice)後，您就可以開始製作自己的專案。
 
 ### 建立您的 GitHub 專案 {#create-github-project}
 
@@ -68,7 +68,7 @@ Edge Delivery 運用 GitHub，可讓您直接從自己的 GitHub 存放庫管理
 
    ![建立存放庫](assets/edge-dev-getting-started/create-repo.png)
 
-1. 在同一瀏覽器的新標籤中，瀏覽至 [`https://github.com/apps/aem-code-sync`](https://github.com/apps/aem-code-sync)，然後按一下「**設定**」。
+1. 在同一瀏覽器的新索引標籤中，瀏覽至 [`https://github.com/apps/aem-code-sync`](https://github.com/apps/aem-code-sync)，然後按一下「**設定**」。
 
    ![Code Sync](assets/edge-dev-getting-started/configure-code-sync.png)
 
@@ -80,7 +80,7 @@ Edge Delivery 運用 GitHub，可讓您直接從自己的 GitHub 存放庫管理
 
    ![授予 AEM Code Sync 存取權](assets/edge-dev-getting-started/grant-code-sync-acces.png)
 
-1. 安裝 AEM Code Sync 後，您會收到確認畫面。返回新存放庫的瀏覽器標籤。
+1. 安裝 AEM Code Sync 後，您會收到確認畫面。返回新存放庫的瀏覽器索引標籤。
 
    ![Code Sync 安裝確認](assets/edge-dev-getting-started/confirmation.png)
 
@@ -116,7 +116,7 @@ Edge Delivery 運用 GitHub，可讓您直接從自己的 GitHub 存放庫管理
 
 >[!TIP]
 >
->如需更多有關路徑對應的資訊，請參閱 [Edge Delivery Services 的路徑對應](/help/edge/wysiwyg-authoring/path-mapping.md)文件。
+>如需更多有關路徑對應的資訊，請參閱文件：[Edge Delivery Services 的路徑對應](/help/edge/wysiwyg-authoring/path-mapping.md)。
 
 ### 建立和編輯新的 AEM 網站 {#create-aem-site}
 
@@ -124,19 +124,19 @@ Edge Delivery 運用 GitHub，可讓您直接從自己的 GitHub 存放庫管理
 
 >[!NOTE]
 >
->若要使用 Universal Editor 編輯您的網站，您必須使用 Chromium 式瀏覽器。
+>若要使用通用編輯器編輯您的網站，您必須使用 Chromium 式瀏覽器。
 
-1. 從 GitHub 下載最新的「使用 Edge Delivery Services 進行 WYSIWYG 製作」網站範本：[`https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases`](https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases)。
+1. 從 GitHub 下載最新的「使用 Edge Delivery Services 進行所見即所得製作」網站範本：[`https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases`](https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases)。
 
 1. 登入您的 AEM as a Cloud Service 製作執行個體，並瀏覽至 Sites 主控台，然後點選或按一下「**建立** -> **根據範本的網站**」。
 
    ![從主控台建立新網站](assets/edge-dev-getting-started/create-site-console.png)
 
-1. 在建立網站精靈的「**選取網站範本**」標籤上，按一下「**匯入**」按鈕以匯入新範本。
+1. 在建立網站精靈的「**選取網站範本**」索引標籤上，按一下「**匯入**」按鈕以匯入新範本。
 
    ![匯入範本](assets/edge-dev-getting-started/site-templates.png)
 
-1. 上傳您從 GitHub 下載的「使用 Edge Delivery Services 進行 WYSIWYG 製作」網站範本。
+1. 上傳您從 GitHub 下載的「使用 Edge Delivery Services 進行所見即所得製作」網站範本。
 
    * 該範本只能上傳一次。上傳後，可以重複使用它來建立其他網站。
 
@@ -160,15 +160,15 @@ Edge Delivery 運用 GitHub，可讓您直接從自己的 GitHub 存放庫管理
 
    ![編輯新網站](assets/edge-dev-getting-started/new-site.png)
 
-1. Universal Editor 會在新標籤中開啟。您可能需要點選或按一下「**使用 Adobe 登入**」進行身分驗證以編輯您的頁面。
+1. 通用編輯器會在新索引標籤中開啟。您可能需要點選或按一下「**使用 Adobe 登入**」進行身分驗證以編輯您的頁面。
 
-   ![Universal Editor](assets/edge-dev-getting-started/universal-editor.png)
+   ![通用編輯器](assets/edge-dev-getting-started/universal-editor.png)
 
-現在您可以使用 Universal Editor 編輯您的網站。如需詳細資訊，請參閱 [Universal Editor 文件](/help/sites-cloud/authoring/universal-editor/authoring.md)。
+現在您可以使用通用編輯器編輯您的網站。如需詳細資訊，請參閱[通用編輯器文件](/help/sites-cloud/authoring/universal-editor/authoring.md)。
 
 ### 發佈您的新網站 {#publishing}
 
-使用 Universal Editor 編輯完新網站後，您就可以發佈內容。
+使用通用編輯器編輯完新網站後，您就可以發佈內容。
 
 1. 在網站主控台上，選取所有您為新網站建立的頁面，然後點選或按一下工具列中的「**快速發佈**」。
 
@@ -178,7 +178,7 @@ Edge Delivery 運用 GitHub，可讓您直接從自己的 GitHub 存放庫管理
 
    ![發佈對話方塊](assets/edge-dev-getting-started/publish-confirmation.png)
 
-1. 在同一瀏覽器中開啟一個新標籤並瀏覽到新網站的 URL。
+1. 在同一瀏覽器中開啟一個新索引標籤並瀏覽到新網站的 URL。
 
    * `https://main--<repository-name>--<owner>.aem.page`
 
@@ -188,10 +188,10 @@ Edge Delivery 運用 GitHub，可讓您直接從自己的 GitHub 存放庫管理
 
 ## 後續步驟 {#next-steps}
 
-現在您已經有使用 Edge Delivery Services 專案進行的 WYSIWYG 製作環境，您可以開始建立自己的區塊並設計其樣式。
+現在您已經有使用 Edge Delivery Services 專案進行的所見即所得製作環境，您可以開始建立自己的區塊並設計其樣式。
 
 如需更多資訊，請參閱[建立經檢測適用通用編輯器的區塊](/help/edge/wysiwyg-authoring/create-block.md)指南。
 
 >[!TIP]
 >
->有關建立新的 Edge Delivery Services 專案的端對端操作示範，該專案支援使用 AEM as a Cloud Service 作為內容來源進行 WYSIWYG 製作，請觀看[這場 AEM GEM 網路研討會](https://experienceleague.adobe.com/zh-hant/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)。
+>有關建立新的 Edge Delivery Services 專案的端對端操作示範，該專案支援使用 AEM as a Cloud Service 作為內容來源進行所見即所得製作，請觀看[這場 AEM GEM 網路研討會](https://experienceleague.adobe.com/zh-hant/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)。

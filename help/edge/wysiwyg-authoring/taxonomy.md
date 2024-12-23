@@ -17,7 +17,7 @@ ht-degree: 100%
 
 ## 簡介 {#introduction}
 
-標記是一項重要功能，可協助您組織和管理頁面。AEM 中的[標記主控台](/help/sites-cloud/administering/tags.md#tagging-console)可讓您建立豐富的標記分類來組織頁面。
+標記是一項重要功能，可協助貴組織和管理頁面。AEM 中的[標記主控台](/help/sites-cloud/administering/tags.md#tagging-console)可讓您建立豐富的標記分類來組織頁面。
 
 這些標記不僅對您和您的作者在組織內容方面很實用，對您的讀者來說也很實用。標記及其分類可以在頁面的元件中使用，幫助您的讀者導覽您的內容。
 
@@ -111,7 +111,7 @@ ht-degree: 100%
 
 >[!TIP]
 >
->如需更多有關路徑對應的資訊，請參閱 [Edge Delivery Services 的路徑對應](/help/edge/wysiwyg-authoring/path-mapping.md)文件。
+>如需更多有關路徑對應的資訊，請參閱文件：[Edge Delivery Services 的路徑對應](/help/edge/wysiwyg-authoring/path-mapping.md)。
 
 ## 發佈分類 {#publishing}
 

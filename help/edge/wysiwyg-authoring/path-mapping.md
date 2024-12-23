@@ -1,6 +1,6 @@
 ---
 title: Edge Delivery Services 的路徑對應
-description: 了解如何將 AEM 製作執行個體上使用的頁面路徑，對應到網站上使用的公開頁面路徑，以及控制要將哪些內容發佈到 Edge Delivery Services。
+description: 了解如何將 AEM 製作執行個體上使用的頁面路徑對應到網站上使用的公開頁面路徑，並管控要將哪些內容發佈到 Edge Delivery Services。
 feature: Edge Delivery Services
 role: User
 exl-id: 3d68135d-e84c-4bf4-93d1-38a0be70ce4a
@@ -13,11 +13,11 @@ ht-degree: 100%
 
 # Edge Delivery Services 的路徑對應 {#path-mapping}
 
-了解如何將 AEM 製作執行個體上使用的頁面路徑，對應到網站上使用的公開頁面路徑，以及控制要將哪些內容發佈到 Edge Delivery Services。
+了解如何將 AEM 製作執行個體上使用的頁面路徑對應到網站上使用的公開頁面路徑，並控制要將哪些內容發佈到 Edge Delivery Services。
 
 ## 概觀 {#overview}
 
-為了能夠使用 AEM 製作 WYSIWYG 內容，並將其發佈到 Edge Delivery Services，您必須設定專案的路徑對應。這樣的對應有兩個目的。
+為了能夠使用 AEM 製作所見即所得內容，並將其發佈到 Edge Delivery Services，您必須設定專案的路徑對應。這樣的對應有兩個目的。
 
 * 對應並建立您 AEM 製作執行個體上使用的頁面路徑與您網站上使用的公開頁面路徑之間的關係。
 * 控制要將哪些內容 (頁面、工作表、資產等) 發佈到 Edge Delivery Services。
@@ -26,7 +26,7 @@ ht-degree: 100%
 
 ## 設定格式 {#configuration-format}
 
-路徑對應設定的格式包含兩個區段 (`mappings` 和 `includes`)，類似於以下範例。
+路徑對應設定的格式包含兩個部分 (`mappings` 和 `includes`)，類似於以下範例。
 
 ```json
 {
@@ -55,7 +55,7 @@ ht-degree: 100%
 >
 >所有以試算表形式管理的表格資料 (例如，中繼資料、重新導向以及分類法)，通常會在 Edge Delivery Services 上發佈為 `.json` API URL。為此，必須在對應設定中將其單獨列出。
 >
->如需更多資訊，請參閱[使用試算表管理表格資料](/help/edge/wysiwyg-authoring/tabular-data.md)文件。
+>如需更多資訊，請參閱文件：[使用試算表管理表格資料](/help/edge/wysiwyg-authoring/tabular-data.md)。
 
 ### 包含 {#includes}
 
@@ -67,7 +67,7 @@ Edge Delivery Services 頁面上使用的資產通常會與網頁一起發佈。
 >
 >如果您的使用案例是希望將資產直接發佈到 Edge Delivery Services (例如，您希望可以在頁面環境之外，直接由影像或 PDF 的 URL 進行存取)，則同時也必須將 DAM 路徑新增至設定中的 `includes` 區段。
 >
->例如，若要使一個資產根資料夾 (例如包含一組 PDF 的 `/content/dam/my-site/documents`) 能透過 `/assets/...` 公開存取，則必須在設定中的 `includes` 區段新增一個項目。
+>例如，若要使一個資產根資料夾 (例如包含一組 PDF 的 `/content/dam/my-site/documents`) 能透過 `/assets/...` 公開存取，則必須在設定中的 `includes` 部分新增一個項目。
 
 ## 如何設定 {#how-to-configure}
 
