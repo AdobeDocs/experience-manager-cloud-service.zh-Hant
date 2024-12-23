@@ -1,58 +1,58 @@
 ---
-title: 移轉後管理主體
+title: 遷移後管理主體
 description: 了解如何在 IMS 和 AEM 中設定使用者和群組
 exl-id: 46c4abfb-7e28-4f18-a6d4-f729dd42ea7b
 source-git-commit: a5bec2c05b46f8db55762b7ee1f346f3bb099d24
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '773'
-ht-degree: 5%
+ht-degree: 100%
 
 ---
 
-# 移轉後管理主體 {#managing-principals-after-migration}
+# 遷移後管理主體 {#managing-principals-after-migration}
 
 >[!CONTEXTUALHELP]
 >id="managing-principals"
->title="移轉後管理主體"
+>title="遷移後管理主體"
 >abstract="了解如何在 IMS 和 AEM 中設定使用者和群組"
 
-本檔案說明客戶應該採取的高層級步驟，以便在IMS和AEM中設定使用者和群組，以便使用其AEM as a Cloud Service環境。
+本文件說明客戶若希望其使用者和群組能搭配其 AEM as a Cloud Service 環境，則在 IMS 和 AEM 中設定時應採取的高層級步驟。
 
 ## 管理主體 {#managing-principals}
 
-對於AEM as a Cloud Service，使用者和群組管理時主要必須使用Admin Console。  考慮移轉時，某些工作可在內容移轉發生之前執行。  基本上是這些主要任務群組中的
+對於 AEM as a Cloud Service，必須主要使用 Admin Console 來管理使用者和群組。考慮進行遷移時，其中的一些任務可以在內容遷移實作之前執行。基本上，在以下主要任務群組中
 
-* 在IMS中建立使用者和群組
-* 將使用者指派給IMS中的群組
-* 指派IMS群組至AEM群組（如有必要）
+* 在 IMS 中建立使用者和群組
+* 在 IMS 中將使用者指派至群組
+* 將 IMS 群組指派至 AEM 群組 (如有必要)
 
-前兩個可能會在內容移轉之前或之後執行。  這些步驟只會影響IMS中的使用者和群組，可能包括與外部IDP （例如Active Directory或LDAP）的整合。  在[使用Admin Console](/help/journey-migration/managing-principals.md)在IMS中管理主參與者(Principals)中說明這些步驟。
+前兩項可以在內容遷移之前或之後進行。這些步驟僅會影響 IMS 中的使用者和群組，可能包含與外部 IDP (例如 Active Directory 或 LDAP) 的整合。關於這些步驟的說明，請參閱[透過 Admin Console 管理 IMS 中的主體](/help/journey-migration/managing-principals.md)。
 
-內容移轉至AEM as a Cloud Service環境後，第三個步驟即可執行。
+一旦內容遷移到 AEM as a Cloud Service 環境，即可執行第三步驟。
 
-### 正在移轉群組
+### 遷移群組
 
-在移轉的擷取階段中，如果群組需要符合已移轉內容的ACL或CUG原則，則會移轉群組。  如需詳細資訊，請參閱[群組移轉](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/group-migration.md)。
+在遷移的攝取階段，如果需要滿足遷移內容的 ACL 或 CUG 原則，就會遷移群組。請參閱[群組遷移](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/group-migration.md)以了解更多詳細資訊。
 
-已移轉的群組(不是由Assets集合建立所建立的 — 請參閱下方的集合)會設定為IMS群組。  這表示在IMS中建立的相同名稱的任何群組(例如，透過Admin Console)都會連結至AEM中的群組，而屬於IMS群組成員的使用者也會成為AEM中的群組成員。  為了進行此連結，必須先在IMS中建立群組。  使用Admin Console在您的AEM執行個體中個別或大量建立群組，如[使用Admin Console管理IMS中的主體](/help/journey-migration/managing-principals.md)中所述。
+遷移的群組 (非透過資產集合建立的群組；請參閱下方的「集合」區段) 會設定為 IMS 群組。這表示在 IMS 中建立的任何同名群組 (例如透過 Admin Console) 都會連結到 AEM 中的群組，而且屬於 IMS 群組成員的使用者也將成為 AEM 中群組的成員。為了達成這項連結，也必須先在 IMS 中建立群組。使用 Admin Console 在 AEM 執行個體中單獨或大量建立群組，如[透過 Admin Console 管理 IMS 中的主體](/help/journey-migration/managing-principals.md)內容所述。
 
-使用AEM安全性UI指派IMS群組至本機AEM群組。  請參閱[建立和設定群組](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/administrator-help/setup-organize-users/creating-configuring-groups#edit-a-group)。  雖然本檔案適用於AEM 6.5，但亦適用於將群組新增至AEM as a Cloud Service中的其他群組。
+使用 AEM 安全性使用者介面將 IMS 群組指派到本機 AEM 群組。請參閱[建立和設定群組](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-65/content/forms/administrator-help/setup-organize-users/creating-configuring-groups#edit-a-group)。雖然本文件內容是針對 AEM 6.5，但也適用於在 AEM as a Cloud Service 中新增群組至其他群組。
 
-### IMS使用者
+### IMS 使用者
 
-由於使用者並未移轉，因此必須在IMS中建立這些使用者，才能在AEM中使用。  有數種方法可以達成此目的，但重要的是，必須將建立的使用者指派給正確的IMS群組，以便使用者能有與先前AEM系統中相同的內容存取權。  可用於此作業的其中一項工具是Admin Console中的大量上傳功能；使用大量上傳程式可上傳使用者及其必須所屬的群組。  在執行此操作之前，必須先在IMS中建立群組，如上所述。
+由於使用者未遷移，因此必須在 IMS 中建立使用者，才能在 AEM 中加以使用。有數種方法可以達到此目的，但重要的是，所建立的使用者應指派到正確的 IMS 群組，使用者才能對他們在先前 AEM 系統中擁有的內容具有相同的存取權。可用於此目的的工具之一是 Admin Console 中的大量上傳功能；使用大量上傳工具可上傳使用者及其必須隸屬的群組。執行此操作之前，必須先在 IMS 中建立群組，如上所述。
 
-若要知道每個使用者應該屬於哪些群組，您可以使用使用者報告（請參閱[群組移轉](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/group-migration.md)）。  此報告會列出每個使用者應成為其成員的群組，此清單可包含在Admin Console大量上傳功能的輸入檔案中。
+若要了解每位使用者應屬於哪些群組，您可以運用使用者報告 (請參閱[群組遷移](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/group-migration.md))。此報告列出了每位使用者應隸屬的群組，且此清單可以包含在 Admin Console 大量上傳功能的輸入檔案中。
 
 ### 集合
 
-建立Assets集合時，也會自動建立一些群組以管理對該集合的存取權。  如果在已移轉的集合中提及這些群組，則會移轉這些群組，但未將其設定為直接連結至IMS群組；在AEM中，這些群組仍為「本機群組」，且無法透過IMS管理。
+建立資產集合也會自動建立一些群組來管理對該集合的存取權。如果在已遷移的集合中提及這些群組，便會遷移這些群組，但它們未設定為直接連結到 IMS 群組；在 AEM 中，它們仍然是「本機群組」，而且無法透過 IMS 進行管理。
 
-由於這些群組不在IMS中，因此無法使用大量上傳工具將使用者建立為其直接成員。  也在AEM中的IMS使用者可以個別新增到這些群組，但大量執行此動作需要額外的步驟。  以下是可行方法之一：
-* 在Admin Console/IMS中建立一個或多個新群組以存取集合，並為AEM設定它們。
-* 以群組成員身分登入，以便在AEM中建立群組。
-* 對於已移轉的集合，請使用Assets集合UI，將新群組新增為編輯器/擁有者/檢視者。
-* 新增（或大量上傳）使用者至Admin Console中的新群組。
-* 當使用者首次登入時，他們的IMS使用者將在AEM中建立，並且他們應該有權存取新群組，從而存取原始收集群組。
+由於這些群組不在 IMS 中，因此無法使用大量上傳工具建立使用者作為其直接成員。同樣位於 AEM 中的 IMS 使用者可以單獨新增到這些群組中，但大量執行此操作需要額外的步驟。以下為可以完成此操作的一種方法：
+* 在 Admin Console/IMS 中建立一或多個新群組，以存取集合並將其設定為適用於 AEM。
+* 以群組成員身分登入，便會在 AEM 中建立群組。
+* 對於已遷移的集合，使用資產集合使用者介面將新群組增加為編輯者/擁有者/檢視者。
+* 將使用者新增 (或大量上傳) 到 Admin Console 中的新群組。
+* 使用者首次登入時，便會在 AEM 中建立他們的 IMS 使用者，然後應該就能夠存取新群組，進而存取原始集合群組。
 
-注意：若要大量指派使用者，必須使用上述步驟在IMS中建立使用者；已存在於IMS中的使用者無法透過大量上傳再次建立。
+注意：若要大量指派使用者，必須使用上述步驟在 IMS 中建立使用者；已存在於 IMS 中的使用者無法透過大量上傳再次建立。

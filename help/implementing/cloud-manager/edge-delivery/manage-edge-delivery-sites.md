@@ -1,65 +1,64 @@
 ---
 title: 在 Cloud Manager 中管理 Edge Delivery 網站
-description: 瞭解如何將CDN設定新增至Edge Delivery網站或刪除Edge Delivery網站。
+description: 了解如何將內容傳遞網路設定新增至 Edge Delivery 網站或刪除 Edge Delivery 網站。
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: f64a551bc18b53d0026736ece2a44e48cd0cfb4c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '538'
-ht-degree: 2%
+ht-degree: 100%
 
 ---
 
-# 在Cloud Manager中管理Edge Delivery網站 {#manage-edge-delivery-sites}
+# 在 Cloud Manager 中管理 Edge Delivery 網站 {#manage-edge-delivery-sites}
 
-瞭解如何將CDN設定新增至現有網站，以在Cloud Manager中管理Edge Delivery網站。 或者，刪除Edge Delivery網站。
+了解如何透過將內容傳遞網路設定新增至現有網站，藉此在 Cloud Manager 中管理 Edge Delivery 網站。或了解如何刪除 Edge Delivery 網站。
 
-## 將CDN設定新增至現有的Edge Delivery站台 {#add-cdn-to-edge-delivery-site}
+## 將內容傳遞網路設定新增至現有的 Edge Delivery 網站 {#add-cdn-to-edge-delivery-site}
 
-請參閱[新增CDN組態](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)。
+請參閱[新增內容傳遞網路設定](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)。
 
-## 重新命名Edge Delivery網站(#rename-edge-delivery-site)
+## 將 Edge Delivery 網站重新命名 (#rename-edge-delivery-site)
 
-在AdobeCloud Manager中，您可能想要重新命名Edge Delivery網站，原因如下：
+在 Adobe Cloud Manager 中，您可能會因為多種原因而想要將 Edge Delivery 網站重新命名：
 
-* **清晰度與組織**：更清楚描述網站目的或其相關環境（例如，生產、測試）。
-* **避免混淆**：如果正在使用多個網站，重新命名可協助輕鬆區分它們，減少將設定或更新套用至錯誤網站的機會。
-* **標準化**：遵循一致的命名慣例，符合您組織的准則，以便更輕鬆地進行管理和稽核。
+* **清晰度和組織性**：以更好的方式說明網站的用途或其相關環境 (例如，生產、中繼)。
+* **避免混淆**：如果正在使用多個網站，重新命名有助於輕鬆區分它們，進而減少將設定或更新套用到錯誤網站上的機會。
+* **標準化**：遵循與組織指導方針相符的一致命名慣例，以便更輕鬆管理和稽核。
 
-**若要重新命名Edge Delivery網站：**
+**若要將 Edge Delivery 網站重新命名：**
 
-1. 在[my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)登入Cloud Manager並選取適當的程式。
-1. 在&#x200B;**[我的程式](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;主控台上，選取已設定Edge Delivery Services的程式，您要在此新增Edge Delivery網站。
-1. 執行下列任一項作業：
+1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager，然後選取適當的程式。
+1. 在「**[我的程式](/help/implementing/cloud-manager/navigation.md#my-programs)**」控制台上，選取設定有 Edge Delivery Services 且您要在其中新增 Edge Delivery 網站的程式。
+1. 執行下列任一項：
 
-   * 從&#x200B;**計畫總覽**&#x200B;頁面，按一下&#x200B;**Edge Delivery**標籤。 在Edge Delivery網站表格中，按一下您要重新命名其網站的列末尾的省略符號。
-按一下**重新命名**。
-   * 在頁面的左上角，按一下![顯示功能表圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)以顯示左側功能表。 在&#x200B;**服務**&#x200B;標題下，按一下![網頁圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_WebPages_18_N.svg) **Edge Delivery網站**。
-在Edge Delivery網站表格中，在您要重新命名其網站的資料列結尾按一下![更多圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)。 按一下&#x200B;**重新命名**。
+   * 在「**程式概觀**」頁面上，按一下「**Edge Delivery**」索引標籤。在 Edge Delivery 網站表格中，按一下要重新命名之網站行尾的省略符號。
+按一下「**重新命名**」。
+   * 在頁面左上角，按一下 ![顯示選單圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) 以顯示左側選單。在「**服務**」標頭下方，按一下 ![網頁頁面圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_WebPages_18_N.svg)「**Edge Delivery 網站**」。在 Edge Delivery 網站表格中，按一下要重新命名之網站行尾的 ![「更多」圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)。按一下「**重新命名**」。
 
-1. 在&#x200B;**編輯Edge Delivery網站**&#x200B;對話方塊的&#x200B;**網站名稱**&#x200B;文字欄位中，輸入網站的新名稱。
+1. 在「**編輯 Edge Delivery 網站**」對話框中，於「**網站名稱**」文字欄位輸入網站的新名稱。
 
-1. 按一下&#x200B;**編輯**。
+1. 按一下「**編輯**」。
 
-## 刪除Edge Delivery網站 {#delete-edge-delivery-site}
+## 刪除 Edge Delivery 網站 {#delete-edge-delivery-site}
 
-如果您刪除Edge Delivery Services網站，則會一併移除任何相關聯的CDN設定。 此動作會中斷自訂網域與網站之間的連線。 如需詳細資訊，請參閱CDN設定。<!-- https://wiki.corp.adobe.com/display/DMSArchitecture/%5BKT%5D+Cloud+Manager+2024.9.0+Release -->
+如果刪除 Edge Delivery Services 網站，所有關聯的內容傳遞網路設定也都會移除。此動作會中斷自訂網域和網站之間的連線。如需更多詳細資訊，請參閱內容傳遞網路設定。<!-- https://wiki.corp.adobe.com/display/DMSArchitecture/%5BKT%5D+Cloud+Manager+2024.9.0+Release -->
 
-**若要刪除Edge Delivery網站：**
+**若要刪除 Edge Delivery 網站：**
 
-1. 在[my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)登入Cloud Manager並選取適當的程式。
-1. 在&#x200B;**[我的程式](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;主控台上，選取已設定Edge Delivery Services的程式，您要在此新增Edge Delivery網站。
-1. 執行下列任一項作業：
+1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager，然後選取適當的程式。
+1. 在「**[我的程式](/help/implementing/cloud-manager/navigation.md#my-programs)**」控制台上，選取設定有 Edge Delivery Services 且您要在其中新增 Edge Delivery 網站的程式。
+1. 執行下列任一項：
 
-   * 從&#x200B;**計畫總覽**&#x200B;頁面，按一下&#x200B;**Edge Delivery**&#x200B;標籤。 在Edge Delivery網站表格中，在您要移除其網站的資料列結尾按一下![更多圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)。
-按一下[刪除Edge Delivery網站]![](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg)**{刪除}**，然後再次按一下[刪除]****&#x200B;以確認移除網站。
+   * 在「**程式概觀**」頁面上，按一下「**Edge Delivery**」索引標籤。在 Edge Delivery 網站表格中，按一下要移除之網站行尾的 ![「更多」圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)。
+按一下 ![刪除 Edge Delivery 網站](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg)「**刪除**」，然後再按一下「**刪除**」以確認移除網站。
 
-     ![從Edge Delivery索引標籤新增Edge Delivery網站](/help/implementing/cloud-manager/assets/cm-eds-delete1.png)
+     ![從「Edge Delivery」索引標籤新增 Edge Delivery 網站](/help/implementing/cloud-manager/assets/cm-eds-delete1.png)
 
-   * 在頁面的左上角，按一下![顯示功能表圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)以顯示左側功能表。 在&#x200B;**服務**&#x200B;標題下，按一下Edge Delivery網站的![網頁](https://spectrum.adobe.com/static/icons/workflow_18/Smock_WebPages_18_N.svg) **Edge Delivery網站**。
-在Edge Delivery網站表格中，在您要移除其網站的資料列結尾按一下![更多圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)。 按一下[刪除Edge Delivery網站]![](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg)**{刪除}**，然後再次按一下[刪除]****&#x200B;以確認移除網站。
+   * 在頁面左上角，按一下 ![顯示選單圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) 以顯示左側選單。在「**服務**」標頭下方，按一下 ![Edge Delivery 網站的網頁頁面](https://spectrum.adobe.com/static/icons/workflow_18/Smock_WebPages_18_N.svg)「**Edge Delivery 網站**」。
+在 Edge Delivery 網站表格中，按一下要移除之網站行尾的 ![「更多」圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)。按一下 ![刪除 Edge Delivery 網站](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg)「**刪除**」，然後再按一下「**刪除**」以確認移除網站。
 
-     ![從Edge Delivery Sites按鈕](/help/implementing/cloud-manager/assets/cm-eds-delete2.png)新增Edge Delivery網站
+     ![從「Edge Delivery 網站」按鈕新增 Edge Delivery 網站](/help/implementing/cloud-manager/assets/cm-eds-delete2.png)
 
 ## 記錄支援服務單 {#eds-support-ticket}
 
