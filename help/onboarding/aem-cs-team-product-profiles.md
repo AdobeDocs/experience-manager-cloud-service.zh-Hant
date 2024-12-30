@@ -5,9 +5,9 @@ exl-id: 7b1474c9-aca0-4354-8798-1abdcda2f6dd
 feature: Onboarding
 role: Admin, User, Developer
 source-git-commit: c8534ddf84998377ee63575403417165ccec2dbd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2059'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -276,25 +276,25 @@ AEM 中與該服務相關聯的 AEM 群組會有一組彙總的使用者，且�
 >* 若要深入了解 AEM 產品設定檔，請參閱「[指派 AEM 產品設定檔](/help/journey-onboarding/assign-profiles-aem.md)」。
 >* 如需上線流程的詳細資訊，請參閱[上線歷程](/help/journey-onboarding/overview.md)
 
-### 新增現有環境的產品設定檔 {#adding-product-profiles-for-existing-environments}
+### 為現有環境新增產品設定檔 {#adding-product-profiles-for-existing-environments}
 
-在2024年11月初之前建立的環境可能遺失上述章節所述的組織層級產品執行個體，以及某些產品設定檔。 現有的產品設定檔也將遺失服務切換。 建議更新這些產品設定檔，這是存取某些未來API的先決條件。
+2024 年 11 月初以前建立的環境，可能缺少上面各區段中描述的組織級產品執行個體以及某些產品設定檔。現有的產品設定檔也會缺少服務切換功能。建議更新這些產品設定檔，因為這是存取某些未來 API 的先決條件。
 
-如果計畫中的一個或多個環境需要其產品設定檔更新，Cloud Manager將顯示以下通知。 請注意，環境必須是最新的AEM版本，才能更新其產品設定檔。
+如果方案中的一個或多個環境需要更新其產品設定檔，Cloud Manager 會顯示以下通知。請注意，環境必須處於最新的 AEM 版本才能更新其產品設定檔。
 
-![更新產品設定檔](/help/onboarding/assets/modernize-product-profiles.png)
+![現代化產品設定檔](/help/onboarding/assets/modernize-product-profiles.png)
 
-按一下&#x200B;**新增產品設定檔**&#x200B;按鈕將會開啟一個功能表，其中顯示將新產品設定檔新增到計畫或個別環境中所有可用環境的選項。
+按一下「**新增產品設定檔**」按鈕會開啟一個選單，其中顯示用於將新產品設定檔新增至程式中的所有可用環境或個別環境的選項。
 
-![取代環境](/help/onboarding/assets/choose-env-r.png)
+![更換環境](/help/onboarding/assets/choose-env-r.png)
 
-按一下&#x200B;**所有環境**，將新的產品設定檔新增至方案中的所有環境。 或者，按一下「**個別環境**」以將產品設定檔新增至選取的環境；這會將使用者導覽至「環境」清單頁面，其中可從&#x200B;**更多選項**&#x200B;圖示選取&#x200B;**新增產品設定檔**&#x200B;動作。
+按一下「**所有環境**」，將新產品設定檔新增至方案中的所有環境。或者，按一下「**個別環境**」，將新產品設定檔新增至選定的環境；這會讓使用者導覽至環境清單頁面，於此頁面中可使用「**更多選項**」圖示選取「**新增產品設定檔**」動作。
 
 ![個別環境](/help/onboarding/assets/individual-environments.png)
 
-您還可以將產品設定檔新增到選定的環境，方法是瀏覽到計畫總覽頁面的環境區段，按一下與環境對應的更多選項圖示，然後選擇新增產品設定檔。
+您也可以將產品設定檔新增至選定的環境，方法是導覽至方案概觀頁面的「環境」區段，按一下與環境對應的「更多選項」圖示，然後選取「新增產品設定檔」。
 
-在新產品設定檔被新增時，環境的狀態會顯示新增產品設定檔，並在流程完成時隨後顯示執行中。
+新增產品設定檔時，環境狀態會顯示「正在新增產品設定檔」，隨後於流程完成時，會顯示「正在執行」。
 
 
 ## Cloud Manager 產品設定檔 {#cloud-manager-product-profiles}

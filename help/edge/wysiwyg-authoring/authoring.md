@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 exl-id: 963ff71a-8176-4d9d-8240-dc429405d139
 role: User
 source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '452'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -44,7 +44,7 @@ ht-degree: 97%
 
 ![在通用編輯器中新增和排列區塊](assets/blocks.png)
 
-接著，您即可在屬性面板中設定區塊的詳細資料。
+然後可以在「屬性」面板內設定區塊的詳細資訊。
 
 ![設定區塊屬性](assets/block-properties.png)
 

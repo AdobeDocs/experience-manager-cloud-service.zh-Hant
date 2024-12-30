@@ -5,9 +5,9 @@ feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 17e842c9-599a-4877-9834-1e7220f508a8
 source-git-commit: db661281831dcb07491dca16e73e835b487814a6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '495'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -54,6 +54,6 @@ ht-degree: 96%
 
 1. 按一下「**驗證**」。
 
-驗證存放庫後，其在Edge Delivery網站表格中的狀態會更新。 綠色圓圈內有白色勾選標記，呈現出狀態。
+當存放庫通過驗證，它在 Edge Delivery 網站表格中的狀態就會更新。綠色圓圈內有白色勾選標記，呈現出狀態。
 
 在同一個表格中，按一下「![Edge Delivery 網站的相關資訊](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg)」可檢視網站詳細資訊。此資訊包括通過驗證的存放庫 URL，以及預覽和生產網站 URL。

@@ -7,9 +7,9 @@ user-guide-description: 了解 Experience Manager as a Cloud Service 的運作�
 breadcrumb-title: 使用手冊
 user-guide-title: 'AEM as a Cloud Service '
 source-git-commit: 9388187a14129420d17d5ccdadd20313f123d870
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '5938'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -458,7 +458,7 @@ ht-degree: 97%
             + [翻譯最佳做法](/help/sites-cloud/administering/translation/best-practices.md)
       + [管理標記](/help/sites-cloud/administering/tags.md)
       + [管理工作流程](/help/sites-cloud/administering/workflows-administering.md)
-      + [範本主控台](/help/sites-cloud/administering/templates-console.md)
+      + [範本控制台](/help/sites-cloud/administering/templates-console.md)
    + 整合 AEM as a Cloud Service {#integrations}
       + [整合 Adobe Analytics](/help/sites-cloud/integrating/integrating-adobe-analytics.md)
       + [整合 Adobe Analytics 自動化設定](/help/sites-cloud/integrating/adobe-analytics-exc-setup-automation.md)
@@ -479,7 +479,7 @@ ht-degree: 97%
    + [啟用 Assets as a Cloud Service Ultimate](/help/assets/enable-assets-ultimate.md)
    + [Assets as a Cloud Service Prime](/help/assets/assets-prime.md)
    + [Assets 協作者使用者](/help/assets/assets-collaborator-users.md)
-   + [為Edge Delivery Services製作內容時整合AEM Assets](/help/assets/integrate-aem-assets-edge-delivery-services.md)
+   + [為 Edge Delivery Services 製作內容時，將 AEM Assets 進行整合](/help/assets/integrate-aem-assets-edge-delivery-services.md)
    + 管理數位資產 {#manage}
       + 微前端資產選擇器{#asset-selector}
          + [資產選擇器概觀](/help/assets/overview-asset-selector.md)
@@ -649,7 +649,7 @@ ht-degree: 97%
       + [管理標記](/help/assets/tagging-management-assets-view.md)
       + [Content Credentials](/help/assets/content-credentials.md)
       + [發佈資產至 AEM 和 Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
-      + [AEM Assets檢視UI擴充性](/help/assets/aem-assets-view-ui-extensibility.md)
+      + [AEM Assets 視圖使用者介面可擴展性](/help/assets/aem-assets-view-ui-extensibility.md)
    + Content Hub {#content-hub}
       + [概觀](/help/assets/product-overview.md)
       + [部署 Content Hub](/help/assets/deploy-content-hub.md)
@@ -714,11 +714,11 @@ ht-degree: 97%
          + [在 AEM Sites 頁面中內嵌最適化表單](/help/forms/embed-adaptive-form-aem-sites.md)
          + [將根據核心元件的最適化表單內嵌至外部網頁](/help/forms/embed-adaptive-form-core-components-external-web-page.md)
          + [將根據基礎元件的最適化表單內嵌至外部網頁](/help/forms/embed-adaptive-form-external-web-page.md)
-         + 整合Adaptive Forms與Adobe Marketo Engage{#integrate-adaptive-form-with-market-engage}
-            + [將Adobe Marketo Engage與AEM Forms整合](/help/forms/integrate-form-to-marketo-engage.md)
-            + [設定新表單以與Marketo Engage](/help/forms/integrate-adaptive-form-with-marketo-engage.md)整合
-            + [為現有的Adaptive Forms設定Adobe Marketo Engage資料來源](/help/forms/use-marketo-engage-data-source-in-form.md)
-            + [設定提交動作以Marketo Engage現有表單](/help/forms/submit-adaptive-form-to-marketo-engage.md)
+         + 將最適化表單與 Adobe Marketo Engage 進行整合{#integrate-adaptive-form-with-market-engage}
+            + [將 Adobe Marketo Engage 與 AEM Forms 進行整合](/help/forms/integrate-form-to-marketo-engage.md)
+            + [設定新表單以與 Marketo Engage 進行整合](/help/forms/integrate-adaptive-form-with-marketo-engage.md)
+            + [針對現有的最適化表單設定 Adobe Marketo Engage 資料來源](/help/forms/use-marketo-engage-data-source-in-form.md)
+            + [針對現有表單設定提交至 Marketo Engage 的動作](/help/forms/submit-adaptive-form-to-marketo-engage.md)
       + 表單資料模式 {#use-form-data-model}
          + [將 AEM Forms 連接到資料庫或資料來源](/help/forms/data-integration.md)
          + [設定資料來源](/help/forms/configure-data-sources.md)
@@ -741,7 +741,7 @@ ht-degree: 97%
             + [建立最適化表單片段](/help/forms/adaptive-form-fragments-core-components.md)
             + [為最適化表單建立主題 - 核心元件](/help/forms/using-themes-in-core-components.md)
             + [建立以核心元件為基礎的最適化表單範本](/help/forms/template-editor-core-components.md)
-            + [根據XFA表單範本建立最適化表單（核心元件）](/help/forms/create-adaptive-form-using-xfa-templates.md)
+            + [以 XFA Form 範本為基礎建立最適化表單 (核心元件)](/help/forms/create-adaptive-form-using-xfa-templates.md)
             + [為最適化 Forms 產生記錄文件](/help/forms/generate-document-of-record-core-components.md)
             + [使用機器翻譯或人工翻譯來翻譯最適化表單](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
             + [設定重新導向頁面或感謝訊息](/help/forms/configure-redirect-page-or-thank-you-message.md)
@@ -755,8 +755,8 @@ ht-degree: 97%
             + [設定提交到最適化表單的 REST 端點提交動作](/help/forms/configure-submit-action-restpoint.md)
             + [設定最適化表單的傳送電子郵件提交動作](/help/forms/configure-submit-action-send-email.md)
             + [在最適化表單中使用 Google reCAPTCHA](/help/forms/captcha-adaptive-forms-core-components.md)
-            + [在最適化表單核心元件中使用驗證碼](/help/forms/integrate-adaptive-forms-hcaptcha-core-components.md)
-            + [在最適化表單核心元件中使用Turnstile驗證碼](/help/forms/integrate-adaptive-forms-turnstile-core-components.md)
+            + [在最適化表單核心元件中使用 hCaptcha](/help/forms/integrate-adaptive-forms-hcaptcha-core-components.md)
+            + [於最適化表單核心元件中使用 Turnstile 驗證碼](/help/forms/integrate-adaptive-forms-turnstile-core-components.md)
             + [在最適化表單中新增自訂的錯誤處理常式](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
             + [為以核心元件為主的最適化表單新增地區設定](/help/forms/supporting-new-language-localization-core-components.md)
             + [設計自適應表單的 JSON 綱要 (核心元件)](/help/forms/adaptive-form-core-components-json-schema-form-model.md)
@@ -770,8 +770,8 @@ ht-degree: 97%
                + [基礎規則編輯器與核心元件規則編輯器之間的差異](/help/forms/rule-editor-core-components-difference-tables.md)
                + [以核心元件為主之最適化表單的規則編輯器中可用的運算子和事件類型](/help/forms/rule-editor-core-components-events-operators.md)
                + [以核心元件為主之最適化表單的規則編輯器範例](/help/forms/rule-editor-core-components-usecases.md)
-               + [在最適化表單中使用非同步函數](/help/forms/using-async-funct-in-rule-editor.md)
-               + [針對以核心元件為基礎的表單，在視覺化規則編輯器中叫用服務增強功能](/help/forms/invoke-service-enhancements-rule-editor.md)
+               + [在最適化 Form 中使用非同步函數](/help/forms/using-async-funct-in-rule-editor.md)
+               + [對於基於核心元件的表單，在視覺規則編輯器中調用服務增強功能](/help/forms/invoke-service-enhancements-rule-editor.md)
             + 以核心元件為主之最適化表單的自訂函數簡介{#create-and-use-custom-function-core-component}
                + [以核心元件為主之最適化表單的自訂函數簡介](/help/forms/create-and-use-custom-functions.md)
                + [建立和使用以核心元件為主之最適化表單的自訂函數](/help/forms/custom-function-core-component-create-function.md)
@@ -803,7 +803,7 @@ ht-degree: 97%
          + 將元件新增至最適化表單{#add-components-to-an-adaptive-form}
             + [在最適化表單中使用驗證碼](/help/forms/captcha-adaptive-forms.md)
             + [在最適化表單中使用 hCaptcha](/help/forms/integrate-adaptive-forms-hcaptcha.md)
-            + [在最適化表單中使用Turnstile驗證碼](/help/forms/integrate-adaptive-forms-turnstile.md)
+            + [在最適化表單中使用 Turnstile 驗證碼](/help/forms/integrate-adaptive-forms-turnstile.md)
             + [使用核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-hant)
             + [套用手寫簽名](/help/forms/signing-forms-using-scribble.md)
             + [將表格新增至最適化表單](/help/forms/adaptive-forms-tables.md)
@@ -965,11 +965,11 @@ ht-degree: 97%
       + [表格資料和試算表](/help/edge/wysiwyg-authoring/tabular-data.md)
       + [管理分類資料](/help/edge/wysiwyg-authoring/taxonomy.md)
       + [WYSIWYG 和文件式區塊](/help/edge/wysiwyg-authoring/wysiwyg-doc-blocks.md)
-      + [具有DAM Assets的頁面](/help/edge/wysiwyg-authoring/dam-assets.md)
+      + [含有 DAM 資產的頁面](/help/edge/wysiwyg-authoring/dam-assets.md)
       + [WIP Sites 功能](/help/edge/wysiwyg-authoring/wip-features.md)
       + [跨網站重複使用程式碼](/help/edge/wysiwyg-authoring/repoless.md)
-      + [重新整理多網站管理](/help/edge/wysiwyg-authoring/repoless-msm.md)
-      + [重新報告Stage和Prod環境](/help/edge/wysiwyg-authoring/repoless-stage-prod.md)
+      + [無存放庫多網站管理](/help/edge/wysiwyg-authoring/repoless-msm.md)
+      + [無存放庫階段及生產環境](/help/edge/wysiwyg-authoring/repoless-stage-prod.md)
    + 文件型的製作 {#document-authoring}
       + [製作](/help/edge/docs/authoring.md)
       + [大量中繼資料](/help/edge/docs/bulk-metadata.md)
@@ -1060,8 +1060,8 @@ ht-degree: 97%
       + [持續性 GraphQL 查詢](/help/headless/graphql-api/persisted-queries.md)
       + [最佳化 GraphQL 查詢](/help/headless/graphql-api/graphql-optimization.md)
       + [更新您的內容片段，以達到最佳化 GraphQL 篩選](/help/headless/graphql-api/graphql-optimized-filtering-content-update.md)
-      + [升級您的內容片段以供UUID參考使用](/help/headless/graphql-api/uuid-reference-upgrade.md)
-      + [範例 GraphQL 查詢](/help/headless/graphql-api/sample-queries.md)
+      + [升級 UUID 參考的內容片段](/help/headless/graphql-api/uuid-reference-upgrade.md)
+      + [GraphQL 查詢範例](/help/headless/graphql-api/sample-queries.md)
       + [疑難排解 GraphQL 查詢](/help/headless/graphql-api/persisted-queries-troubleshoot.md)
    + [用於傳遞內容片段的 AEM REST OpenAPI](/help/headless/aem-rest-openapi-content-fragment-delivery.md)
    + [內容片段和模型 OpenAPI](/help/headless/content-fragment-openapis.md)
@@ -1109,12 +1109,12 @@ ht-degree: 97%
          + [了解如何為內容片段定義中繼資料和標記](/help/journey-headless/author/metadata-tagging.md)
 + 生成式 AI {#generative-ai}
    + [產生變化版本](/help/generative-ai/generate-variations.md)
-   + [助理(有限Beta)](/help/implementing/cloud-manager/aem-ai-assistant.md)
+   + [助理 (限量測試版)](/help/implementing/cloud-manager/aem-ai-assistant.md)
 + 實作 {#implementing}
    + [為 AEM as a Cloud Service 實作應用程式](/help/implementing/home.md)
    + 使用 Cloud Manager {#using-cloud-manager}
       + [導覽](/help/implementing/cloud-manager/navigation.md)
-      + [AEM Launchpad](/help/implementing/cloud-manager/aem-home.md)
+      + [AEM 啟動台](/help/implementing/cloud-manager/aem-home.md)
       + 方案 {#programs}
          + [方案和方案類型](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
          + [生產方案](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md)
@@ -1133,7 +1133,7 @@ ht-degree: 97%
          + [管理 Cloud Manager 中的存放庫](/help/implementing/cloud-manager/managing-code/managing-repositories.md)
          + [新增 Adobe 存放庫](/help/implementing/cloud-manager/managing-code/adobe-repositories.md)
          + [新增私人存放庫](/help/implementing/cloud-manager/managing-code/private-repositories.md)
-         + [新增外部存放庫(受限的Beta)](/help/implementing/cloud-manager/managing-code/external-repositories.md)
+         + [新增外部存放庫 (限量測試版)](/help/implementing/cloud-manager/managing-code/external-repositories.md)
          + [存取存放庫](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
          + [Git 子模組支援](/help/implementing/cloud-manager/managing-code/git-submodules.md)
          + [將 Git 與 Cloud Manager 一起使用](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)
@@ -1168,7 +1168,7 @@ ht-degree: 97%
       + Edge Delivery Sites {#edge-delivery-sites}
          + [Cloud Manager 的 Edge Delivery Services 簡介](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)
          + [新增 Edge Delivery 網站至 Cloud Manager](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md)
-         + [設定Edge Delivery網站的推播驗證](/help/implementing/cloud-manager/edge-delivery/cdn-setup-push-invalidation.md)
+         + [為 Edge Delivery 網站設定推播驗證](/help/implementing/cloud-manager/edge-delivery/cdn-setup-push-invalidation.md)
          + [在 Cloud Manager 中管理 Edge Delivery 網站](/help/implementing/cloud-manager/edge-delivery/manage-edge-delivery-sites.md)
       + 網域設定 {#custom-domain-names}
          + [網域設定簡介](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
@@ -1205,7 +1205,7 @@ ht-degree: 97%
       + [設定和設定瀏覽器](/help/implementing/developing/introduction/configurations.md)
       + [AEM 技術基礎](/help/implementing/developing/introduction/aem-technologies.md)
       + [API 參考資料](/help/implementing/developing/reference-materials.md)
-      + [OpenAPI型API](/help/implementing/developing/open-api-based-apis.md)
+      + [基於 OpenAPI 的 API](/help/implementing/developing/open-api-based-apis.md)
       + [為伺服器端 API 產生存取權杖](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md)
       + [為伺服器端 API 產生存取權杖 (舊版)](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis-legacy.md)
       + [快速網站建立和前端自訂](/help/implementing/developing/introduction/quick-site-creation.md)

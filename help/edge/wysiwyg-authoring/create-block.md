@@ -5,9 +5,9 @@ exl-id: 65a5600a-8d16-4943-b3cd-fe2eee1b4abf
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 source-git-commit: fb7da1530f916ec63d5993446fd0c328af09ae7c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1415'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -45,7 +45,7 @@ Adobe 建議您採用三階段方法來開發區塊：
 
 ### 建立區塊定義和模式 {#create-block-model}
 
-1\. 在本機複製您在[使用Edge Delivery Services進行WYSIWYG編寫的開發人員快速入門手冊](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)中建立的GitHub專案，並在您選擇的編輯器中開啟。
+1\. 將您在[使用 Edge Delivery Services 進行所見即所得製作的開發人員快速入門手冊](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)指南中建立的 GitHub 專案原地複製到本機，並在您選擇的編輯器中將其開啟。
 
 * 此處使用 Microsoft 程式碼是為了說明目的。
 
@@ -165,7 +165,7 @@ Adobe 建議您採用三階段方法來開發區塊：
 
    * 為了載入該頁面，您可能需要點選或按一下「**使用 Adobe 登入**」，並在通用編輯器中對 AEM 進行驗證。
 
-1. 在通用編輯器中，選取一個區段。在屬性面板中，點選或按一下「**新增**」圖示，然後從功能表中選取新的&#x200B;**Quote**&#x200B;區塊。
+1. 在通用編輯器中，選取一個區段。在屬性面板中，點選或按一下「**新增**」圖示，然後從選單中選取新的「**引述**」區塊。
 
    *  **新增**&#x200B;圖示是一個加號。
    * 如果所選物件的藍色外框有一個標為「**區段**」的標記，表示您已選取了一個區段。
@@ -175,7 +175,7 @@ Adobe 建議您採用三階段方法來開發區塊：
 
 1. 頁面重新加載，且引述區塊將新增至所選區段的底部，以及成為 `component-definitions.json` 檔案中指定的預設內容。
 
-   * 引號區塊可以像任何其他區塊一樣就地或在「屬性」面板中選取和編輯。
+   * 與任何其他區塊一樣，引述區塊可在原處或屬性面板中供選取和編輯。
    * 樣式將在下一步中套用。
 
    ![所選區段中包含新引述區塊的頁面](assets/create-block/quote-added.png)
@@ -196,7 +196,7 @@ Adobe 建議您採用三階段方法來開發區塊：
 
 ![建立引述檔案夾](assets/create-block/new-folder.png)
 
-3\. 在新的`quote`檔案夾中，透過新增以下 JavaScript，新增一個 `quote.js` 檔案以實施區塊裝飾，然後儲存檔案。
+3\. 在新的 `quote` 資料夾中，透過新增以下 JavaScript，新增一個 `quote.js` 檔案以實施區塊裝飾，然後儲存檔案。
 
 >[!BEGINTABS]
 
@@ -218,7 +218,7 @@ export default function decorate(block) {
 
 >[!ENDTABS]
 
-4\. 在`quote`檔案夾中，透過新增以下 CSS 程式碼，新增一個 `quote.css` 檔案以定義區塊樣式，然後儲存檔案。
+4\. 在 `quote` 資料夾中，透過新增以下 CSS 程式碼，新增一個 `quote.css` 檔案以定義區塊樣式，然後儲存檔案。
 
 >[!BEGINTABS]
 
@@ -267,7 +267,7 @@ export default function decorate(block) {
 
 * 提交至`main`僅是為了說明目的。[遵照最佳實務](https://www.aem.live/docs/dev-collab-and-good-practices)，並在實際專案工作中使用提取請求。
 
-6\. 返回 Universal Editor 的瀏覽器標記，您可在此編輯專案頁面，並重新載入頁面以查看附有樣式的區塊。
+6\. 返回通用編輯器的瀏覽器分頁，即您之前編輯專案頁面處，並重新載入頁面以檢視已設定樣式的區塊。
 
 7\. 請參閱頁面上現在附有樣式的引述區塊。
 

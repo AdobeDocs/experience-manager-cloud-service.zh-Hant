@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 exl-id: 26d4db90-3e4b-4957-bf21-343c76322cdc
 role: Admin, Architect, Developer
 source-git-commit: 4e4234c1aaf0a410cb419140e9e353348ce118c1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1284'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
@@ -83,24 +83,24 @@ ht-degree: 78%
 
 ## 匯入試算表資料 {#importing}
 
-除了在AEM頁面編輯器中編輯試算表之外，您也可以從CSV檔案匯入資料。
+除了在 AEM 頁面編輯器中編輯試算表以外，您也可以從 CSV 檔案匯入資料。
 
-1. 在AEM中編輯試算表時，點選或按一下畫面左上方的&#x200B;**上傳**&#x200B;按鈕。
-1. 在下拉式清單中，選取要如何匯入資料。
-   * **取代Doc**，將整個試算表的內容取代為您要上傳的CSV檔案內容。
-   * **附加至檔案**，將您要上傳之CSV檔案的資料附加至現有的試算表內容。
-1. 在開啟的對話方塊中，選取您的CSV檔案，然後點選或按一下&#x200B;**開啟**。
+1. 在 AEM 中編輯試算表時，點選或按一下畫面左上角的「**上傳**」按鈕。
+1. 在下拉式選單中選取匯入資料的方式。
+   * 選取「**取代文件**」，將整個試算表的內容替換為您上傳之 CSV 檔案的內容。
+   * 選取「**附加至文件**」，將您上傳之 CSV 檔案的資料附加到現有的試算表內容中。
+1. 在開啟的對話框中，選取您的 CSV 檔案，然後點選或按一下「**開啟**」。
 
-處理匯入時會開啟一個對話方塊。 完成後，CSV檔案中的資料會新增至試算表內容或取代試算表內容。 如果遇到任何錯誤（例如欄不匹配），則會報告這些錯誤，以便您可以更正CSV檔案。
+處理匯入時會開啟一個對話框。處理完成後，CSV 檔案中的資料會新增試算表至或取代試算表的內容。如果出現任何錯誤，例如欄不相符，系統會提供錯誤回報，以便您可以修正 CSV 檔案。
 
 >[!NOTE]
 >
->* CSV檔案中的標題必須與試算表中的欄完全相符。
->* 匯入整個CSV不會修改欄標題，只會修改內容列。
->* 如果您需要更新欄，必須先在AEM頁面編輯器中執行此動作，才能執行CSV的匯入。
->* CSV檔案的匯入大小不能超過10 MB。
+>* CSV 檔案中的標題必須與試算表中的欄完全符合。
+>* 匯入整個 CSV 不會修改欄標題，只會修改內容列。
+>* 如果您需要更新欄的內容，必須在匯入 CSV 之前在 AEM 頁面編輯器中進行更改。
+>* 要匯入的 CSV 檔案大小不能超過 10 MB。
 
-根據您選取的`mode`，您也可以`create`、`replace`或`append`使用類似下列的CSV和cURL命令來加入試算表。
+根據您選取的 `mode`，您也可以使用 CSV 和類似以下的 cURL 指令，對試算表執行 `create`、`replace` 或 `append`。
 
 ```text
 curl --request POST \
@@ -115,13 +115,13 @@ curl --request POST \
   --form mode=append
 ```
 
-呼叫會傳回HTML頁面，其中包含工作ID的相關資訊。
+此呼叫會傳回一個 HTML 頁面，其中包含有關工作 ID 的資訊。
 
 ```text
 Message | Job(Id:2024/9/18/15/27/5cb0cacc-585d-4176-b018-b684ad2dfd02_90) created successfully. Please check status at Async Job Status Navigation.
 ```
 
-[您可以使用&#x200B;**工作**&#x200B;主控台](/help/operations/asynchronous-jobs.md)來檢視工作的狀態，或使用傳回的ID來查詢它。
+[您可以使用&#x200B;**工作**&#x200B;控制台](/help/operations/asynchronous-jobs.md)檢視工作的狀態，或使用傳回的 ID 進行查詢。
 
 ```text
 https://<aem-instance>/bin/asynccommand?optype=JOBINF&jobid=2024/10/24/14/1/8da63f9e-066b-4134-95c9-21a9c57836a5_1

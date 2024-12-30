@@ -1,15 +1,15 @@
 ---
 source-git-commit: 60cf4c34f3b4d7c7a757f2274f1a02de8ae51e11
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1323'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 # 代碼片段 {#snippets}
 
 ## Headless 試用版促銷 {#headless-trials-promotion}
 
-[![透過 30 天試用版了解我們的 Headless CMS](./assets/aem-headless-trial-promo.png){align="left"}](https://commerce.adobe.com/business-trial/sign-up?items%5B0%5D%5Bid%5D=649A1AF5CBC5467A25E84F2561274821&amp;cli=headless_exl_banner_campaign&amp;co=US&amp;lang=en)
+[![透過 30 天試用版了解我們的 Headless CMS](./assets/aem-headless-trial-promo.png){align="left"}](https://commerce.adobe.com/business-trial/sign-up?items%5B0%5D%5Bid%5D=649A1AF5CBC5467A25E84F2561274821&amp;cli=headless_exl_banner_campaign&amp;co=US&amp;lang-zh-hant)
 
 ## Edge Delivery Services 製作 {#edge-delivery-authoring}
 
@@ -53,7 +53,7 @@ ht-degree: 95%
 * [提交至 Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
 * [將最適化表單連接到 Salesforce 應用程式](/help/forms/aem-forms-salesforce-integration.md)
 * [將最適化表單連接到 Microsoft](/help/forms/ms-dynamics-odata-configuration.md)
-* [將最適化表單連線至Adobe Marketo Engage](/help/forms/integrate-form-to-marketo-engage.md)
+* [將最適化表單連接到 Adobe Marketo Engage](/help/forms/integrate-form-to-marketo-engage.md)
 * [建立自訂提交動作](/help/forms/custom-submit-action-for-adaptive-forms-based-on-core-components.md)
 
 ## 另請參閱 {#see-more-forms-eds}
@@ -133,7 +133,7 @@ ht-degree: 95%
 * [以核心元件為主之最適化表單的規則編輯器不同使用案例](/help/forms/rule-editor-core-components-usecases.md)
 * [規則編輯器各個版本的差異](/help/forms/rule-editor-core-components-difference-tables.md)
 * [在最適化表單中使用非同步函數](/help/forms/using-async-funct-in-rule-editor.md)
-* [針對以核心元件為基礎的表單，在視覺化規則編輯器中叫用服務增強功能](/help/forms/invoke-service-enhancements-rule-editor.md)
+* [對於基於核心元件的表單，在視覺規則編輯器中調用服務增強功能](/help/forms/invoke-service-enhancements-rule-editor.md)
 * [以核心元件為主之最適化表單的自訂函數簡介](/help/forms/create-and-use-custom-functions.md)
 * [建立以核心元件為主之最適化表單的自訂函數](/help/forms/custom-function-core-component-create-function.md)
 * [自訂函數中的範圍物件](/help/forms/custom-function-core-component-scope-function.md)
@@ -149,10 +149,10 @@ ht-degree: 95%
 
 ## Marketo Engage{#marketo-engage-see-also}
 
-* [將Marketo Engage與AEM Forms整合](/help/forms/integrate-form-to-marketo-engage.md)
-* [設定新表單以與Marketo Engage](/help/forms/integrate-adaptive-form-with-marketo-engage.md)整合
-* [設定現有最適化Forms的Marketo Engage資料來源](/help/forms/use-marketo-engage-data-source-in-form.md)
-* [設定提交動作以Marketo Engage現有表單](/help/forms/submit-adaptive-form-to-marketo-engage.md)
+* [將 Marketo Engage 與 AEM Forms 進行整合](/help/forms/integrate-form-to-marketo-engage.md)
+* [設定新表單以與 Marketo Engage 進行整合](/help/forms/integrate-adaptive-form-with-marketo-engage.md)
+* [針對現有的最適化表單設定 Marketo Engage 資料來源](/help/forms/use-marketo-engage-data-source-in-form.md)
+* [針對現有表單設定提交至 Marketo Engage 的動作](/help/forms/submit-adaptive-form-to-marketo-engage.md)
 
 ## Cloud Manager IP 允許清單和前端管道 {#allowlist-frontend-pipeline}
 
@@ -223,7 +223,7 @@ ht-degree: 95%
 
 若要記錄支援服務單，您必須先在 Cloud Manager 中註冊 Edge Delivery 網站。建議所有 AEM as a Cloud Service 使用者都透過 Cloud Manager 註冊您的網站，[可享有許多好處](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)。如果您尚未註冊網站，請參閱 [Cloud Manager 文件](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md)以了解詳細資訊。
 
-**若要記錄支援票證：**
+**若要記錄支援服務單：**
 
 1. [遵循標準支援流程](https://experienceleague.adobe.com/?support-tab=home#support)並建立服務單。
 1. 將 **Edge Delivery** 加入服務單標題中。

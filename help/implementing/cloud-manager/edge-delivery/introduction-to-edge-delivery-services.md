@@ -5,9 +5,9 @@ exl-id: f33bd6f0-62fc-4ecc-b8d2-65d1f1c44d82
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: 0fb5476b4cff9e26971696bd8352181a71e7b3e4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '766'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -32,7 +32,7 @@ AEM as a Cloud Service 中的 Cloud Manager 可讓您為專案啟用 Edge Delive
 
 如果您已在 Adobe Experience Manager Sites 中獲得 Edge Delivery Services 授權，現在可以直接在 Cloud Manager 中使用 Edge Delivery Services 讓您的網站上線，並[使用引導式自助服務體驗](/help/implementing/cloud-manager/managing-code/private-repositories.md)來啟用網站。
 
-此外，您還可以獲得整合的體驗來管理所有 AEM 屬性，同時確保重要工作流程的一致性。這些工作流程包括網域名稱管理、SSL憑證管理和CDN對應。
+此外，您還可以獲得整合的體驗來管理所有 AEM 屬性，同時確保重要工作流程的一致性。這些工作流程包括網域名稱管理、SSL 憑證管理和內容傳遞網路對應。
 
 ## 將 Adobe 建議路徑用於 Edge Delivery Services 的優勢 {#recommended-path-eds}
 
@@ -63,24 +63,24 @@ AEM as a Cloud Service 中的 Cloud Manager 可讓您為專案啟用 Edge Delive
 >* 將 Edge Delivery Services 授權套用至程式中或從程式中移除後，變更會立即生效，無需執行管道。
 
 
-## 關於Cloud Manager中的Edge Delivery待辦事項清單 {#ed-todo-list}
+## 關於 Cloud Manager 中的 Edge Delivery 待辦事項清單 {#ed-todo-list}
 
 <!-- &#x2460; for "1" inside circle -->
 
-Cloud Manager中的&#x200B;**Edge Delivery待辦事項清單**&#x200B;是入門工作檢查清單，旨在引導您完成入門、管理您的Edge Delivery網站直到[上線](/help/journey-onboarding/go-live-checklist.md)。
+Cloud Manager 中的 **Edge Delivery 待辦事項清單**&#x200B;是上線任務檢查清單，目的為全程引導您上線，管理您的 Edge Delivery 網站一直到[上線](/help/journey-onboarding/go-live-checklist.md)。
 
-在Cloud Manager中![Edge Delivery網站待辦事項清單](/help/implementing/cloud-manager/assets/cm-eds-todo-list.png)
+![Cloud Manager 中的 Edge Delivery 網站待辦事項清單](/help/implementing/cloud-manager/assets/cm-eds-todo-list.png)
 
 |   | 任務 | 說明 |
 | --- | --- | --- |
 | 1 | 加入生產共同作業管道 | 按一下「**立即提交請求**」，向 Adobe 提交為貴公司建立管道的請求。如果管道已存在，會將您轉至貴公司的管道。 |
-| 2 | 完成先決條件 | 請參閱[檢視快速入門教學課程](https://www.aem.live/developer/tutorial)。 |
+| 2 | 完成先決條件 | 請參閱「[檢視快速入門教學課程](https://www.aem.live/developer/tutorial)」。 |
 | 3 | 新增 Edge Delivery 網站 | 請參閱[新增 Edge Delivery 網站](#eds-add-site)。 |
 | 4 | 新增網域 | 請參閱[新增自訂網域名稱](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)。 |
 | 5 | 新增 SSL 憑證 | 請參閱[新增 SSL 憑證](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)。 |
 | 6 | 設定 Edge Delivery 網站的內容傳遞網路 | 請參閱[新增內容傳遞網路設定](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)。 |
-| 7 | 設定推播驗證 | 請參閱[設定Edge Delivery網站的推播驗證](/help/implementing/cloud-manager/edge-delivery/cdn-setup-push-invalidation.md)。 |
-| 8 | 入門 | 檢視[上線檢查清單](/help/edge/docs/go-live-checklist.md)。 |
+| 7 | 設定推播驗證 | 請參閱「[為 Edge Delivery 網站設定推播驗證](/help/implementing/cloud-manager/edge-delivery/cdn-setup-push-invalidation.md)」。 |
+| 8 | 上線 | 請參閱「[上線檢查清單](/help/edge/docs/go-live-checklist.md)」。 |
 
 >[!VIDEO](https://video.tv.adobe.com/v/3428020?learn=on)
 
