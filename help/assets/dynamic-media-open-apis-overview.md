@@ -71,7 +71,7 @@ ht-degree: 100%
 
   >[!NOTE]
   >
-  若要與非 Adobe 應用程式整合，請提供應用程式的託管網域名稱以允許清單。
+  >若要與非 Adobe 應用程式整合，請提供應用程式的託管網域名稱以允許清單。
 
 * 參與整合專案之主要客戶的聯絡人詳細資訊。
 
@@ -81,7 +81,7 @@ ht-degree: 100%
 
 >[!NOTE]
 >
-自所有內容套件中排除 `/conf/global/settings/dam/assets-configurations/assetdelivery`，以避免停用具有 OpenAPI 功能的 Dynamic Media。
+>自所有內容套件中排除 `/conf/global/settings/dam/assets-configurations/assetdelivery`，以避免停用具有 OpenAPI 功能的 Dynamic Media。
 
 ## 更進一步了解重要功能 {#learn-more-key-capabilities}
 
