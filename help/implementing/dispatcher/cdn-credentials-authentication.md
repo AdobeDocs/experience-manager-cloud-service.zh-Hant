@@ -4,9 +4,9 @@ description: 瞭解如何在設定檔案中宣告規則，再使用Cloud Manager
 feature: Dispatcher
 exl-id: a5a18c41-17bf-4683-9a10-f0387762889b
 role: Admin
-source-git-commit: 37d399c63ae49ac201a01027069b25720b7550b9
+source-git-commit: d6484393410d32f348648e13ad176ef5136752f2
 workflow-type: tm+mt
-source-wordcount: '1486'
+source-wordcount: '1497'
 ht-degree: 4%
 
 ---
@@ -28,9 +28,11 @@ Adobe提供的CDN具有多項功能和服務，部分功能和服務需仰賴憑
 
 如AEM as a Cloud Service](/help/implementing/dispatcher/cdn.md#point-to-point-CDN)頁面中的[CDN中所述，客戶可以選擇透過自己的CDN路由流量，這稱為「客戶CDN」（有時也稱為BYOCDN）。
 
-在設定過程中，AdobeCDN和客戶CDN必須同意`X-AEM-Edge-Key` HTTP標頭的值。 此值是在每個請求中在客戶CDN處設定的，之後再傳送至AdobeCDN，由其驗證值是否如預期般符合，因此它可以信任其他HTTP標頭，包括有助於將請求傳送至適當AEM來源的那些標頭。
+在設定過程中，AdobeCDN和客戶CDN必須同意`X-AEM-Edge-Key` HTTP標頭的值。 此值在傳送至AdobeCDN之前，會先在客戶CDN的每個要求上設定，接著系統會驗證值是否如預期般符合，因此可信任其他HTTP標頭，包括有助於將要求傳送至適當AEM來源的那些標頭。
 
 *X-AEM-Edge-Key*&#x200B;值由名為`cdn.yaml`或類似檔案中的`edgeKey1`和`edgeKey2`屬性參考，位於最上層`config`資料夾的某處。 閱讀[使用設定管道](/help/operations/config-pipeline.md#folder-structure)，以取得資料夾結構以及如何部署設定的詳細資訊。  以下範例說明語法。
+
+如需進一步偵錯資訊和常見錯誤，請檢查[常見錯誤](/help/implementing/dispatcher/cdn.md#common-errors)。
 
 >[!WARNING]
 >不符合條件的所有要求（在以下範例中，代表對發佈層級的所有要求）將會拒絕沒有正確X-AEM-Edge-Key的直接存取。 如果您需要逐步引入驗證，請參閱[安全移轉以降低封鎖流量的風險](#migrating-safely)區段。
@@ -147,7 +149,7 @@ data:
    * name — 描述性字串。
    * 型別 — 必須是永久刪除。
    * purgeKey1 — 其值必須參考[Cloud Manager秘密型別的環境變數](/help/operations/config-pipeline.md#secret-env-vars)。 在「已套用服務」欄位中，選取全部。 建議值（例如`${{CDN_PURGEKEY_031224}}`）反映新增日期。
-   * purgeKey2 — 用於輪換密碼，如下面的[輪換密碼區段](#rotating-secrets)部分所述。 至少必須宣告`purgeKey1`和`purgeKey2`其中之一。
+   * purgeKey2 — 用於輪換密碼，在下方[輪換密碼](#rotating-secrets)一節中有所說明。 至少必須宣告`purgeKey1`和`purgeKey2`其中之一。
 * 規則：可讓您宣告應該使用哪一個驗證器，以及它是否用於發佈和/或預覽層。  內容包括：
    * 名稱 — 描述性字串
    * when — 根據[流量篩選規則](/help/security/traffic-filter-rules-including-waf.md)文章中的語法，決定何時應該評估規則的條件。 通常包括目前階層的比較（例如，發佈）。
@@ -202,7 +204,7 @@ data:
    * 名稱 — 描述性字串
    * 型別 — 必須是`basic`
    * 最多10個憑證的陣列，每個憑證都包含以下名稱/值組，一般使用者可在基本驗證對話方塊中輸入這些名稱/值組：
-      * user — 使用者的名稱
+      * user — 使用者的名稱。
       * 密碼 — 其值必須參考[Cloud Manager密碼型別環境變數](/help/operations/config-pipeline.md#secret-env-vars)，並選取&#x200B;**全部**&#x200B;做為服務欄位。
 * 規則：可讓您宣告應使用哪些驗證者，以及應保護哪些資源。 每個規則包含：
    * 名稱 — 描述性字串

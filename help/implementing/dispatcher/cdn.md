@@ -4,10 +4,10 @@ description: 瞭解如何使用AEM管理的CDN以及如何將您自己的CDN指�
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 role: Admin
-source-git-commit: c31441baa6952d92be4446f9035591b784091324
+source-git-commit: 6600f5c1861e496ae8ee3b6d631ed8c033c4b7ef
 workflow-type: tm+mt
-source-wordcount: '1602'
-ht-degree: 12%
+source-wordcount: '1745'
+ht-degree: 11%
 
 ---
 
@@ -23,12 +23,12 @@ AEM as a Cloud Service隨附整合式CDN，旨在從接近使用者瀏覽器的�
 
 AEM管理的CDN符合大部分客戶的效能與安全性需求。 對於發佈層級，客戶可以選擇透過他們自己的CDN路由流量，他們必須管理此CDN。 此選項依具體情況而定，尤其是當客戶與難以取代的CDN提供者已有舊版整合時。
 
-想要發佈至Edge Delivery Services階層的客戶，可利用Adobe的受管理CDN。 檢視[Adobe管理的CDN](#aem-managed-cdn)。<!-- CQDOC-21758, 5b -->
+想要發佈至Edge Delivery Services階層的客戶，可利用Adobe的受管理CDN。 檢視[AdobeManaged CDN](#aem-managed-cdn)。<!-- CQDOC-21758, 5b -->
 
 
 <!-- ERROR: NEITHER URL IS FOUND (HTTP ERROR 404) Also, see the following videos [Cloud 5 AEM CDN Part 1](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-aem-cdn-part1.html) and [Cloud 5 AEM CDN Part 2](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-aem-cdn-part2.html) for additional information about CDN in AEM as a Cloud Service. -->
 
-## Adobe 管理的 CDN {#aem-managed-cdn}
+## Adobe管理的CDN {#aem-managed-cdn}
 
 <!-- CQDOC-21758, 5a -->
 
@@ -120,7 +120,7 @@ curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com --header "X-Forwa
 
 >[!NOTE]
 >
->使用您自己的CDN時，您不需要在Cloud Manager中安裝網域和憑證。 AdobeCDN中的路由是使用預設網域`publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`完成的，該預設網域應在請求`Host`標頭中傳送。 以自訂網域名稱覆寫要求`Host`標頭可能會透過AdobeCDN將要求錯誤路由。
+>使用您自己的CDN時，您不需要在Cloud Manager中安裝網域和憑證。 AdobeCDN中的路由是使用預設網域`publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`完成的，該預設網域應在請求`Host`標頭中傳送。 使用自訂網域名稱覆寫要求`Host`標頭可能會透過AdobeCDN將要求錯誤路由或導致421錯誤。
 
 >[!NOTE]
 >
@@ -133,6 +133,30 @@ curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com --header "X-Forwa
 只有在發生快取遺失時，才需要客戶CDN和AEM CDN之間的額外躍點。 使用本文所述的快取最佳化策略，新增客戶CDN應該只會帶來可忽略的延遲。
 
 發佈層級支援此客戶CDN設定，但製作層級前不支援。
+
+### 偵錯設定
+
+為了偵錯BYOCDN設定，請使用值為`edge=true`的`x-aem-debug`標頭。 例如：
+
+在Linux®中：
+
+```
+curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com -v -H "X-Forwarded-Host: example.com" -H "X-AEM-Edge-Key: <PROVIDED_EDGE_KEY>" -H "x-aem-debug: edge=true"
+```
+
+在Windows中：
+
+```
+curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com -v --header "X-Forwarded-Host: example.com" --header "X-AEM-Edge-Key: <PROVIDED_EDGE_KEY>" --header "x-aem-debug: edge=true"
+```
+
+這會反映`x-aem-debug`回應標頭中要求使用的特定屬性。 例如：
+
+```
+x-aem-debug: byocdn=true,edge=true,edge-auth=edge-auth,edge-key=edgeKey1,X-AEM-Edge-Key=set,host=publish-p87058-e257304-cmstg.adobeaemcloud.com,x-forwarded-host=wknd.site,adobe_unlocked_byocdn=true
+```
+
+舉例來說，使用此項可驗證主機的值（如果已設定邊緣驗證），以及x-forwarded-host標頭值（如果已設定邊緣金鑰，且已使用哪個金鑰，則一個金鑰相符）。
 
 ### CDN廠商設定範例 {#sample-configurations}
 
@@ -160,6 +184,11 @@ curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com --header "X-Forwa
 **重新導向至發佈服務端點**
 
 當請求收到403禁止的回應時，表示請求缺少某些必要的標頭。 發生此情況的常見原因是CDN同時管理Apex和`www`網域流量，但未為`www`網域新增正確的標頭。 可透過檢查您的AEM as a Cloud Service CDN記錄並驗證所需的請求標頭來測試此問題。
+
+**錯誤421錯誤導向重新導向**
+
+當要求收到421錯誤，且內文在`Requested host does not match any Subject Alternative Names (SANs) on TLS certificate`左右時，表示HTTP `Host`集合不符合主機憑證上的任何主機。 這通常表示`Host`或SNI設定錯誤。 確定`Host`以及SNI設定都指向publish-p&lt;PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com主機。
+
 
 **太多重新導向回圈**
 
