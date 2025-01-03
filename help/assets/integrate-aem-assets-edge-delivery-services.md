@@ -2,9 +2,9 @@
 title: 為 Edge Delivery Services 製作內容時，將 AEM Assets 進行整合
 description: 瞭解如何將AEM Assets與Edge Delivery Services整合。 此整合可讓您將AEM Assets與Microsoft Word和Google檔案整合、將AEM Assets與Universal Editor整合、將Dynamic Media與OpenAPI功能與Universal Editor整合，以及將Dynamic Media與OpenAPI功能與Microsoft Word和Google檔案整合。
 exl-id: e58db2ce-a55a-49b3-ae8e-709b5ea8d095
-source-git-commit: fc19e2bf43237418f3636d982c46915c8013cbfa
+source-git-commit: e6fd7b1d16aac5e7021a8c309f6483f98746e85e
 workflow-type: tm+mt
-source-wordcount: '698'
+source-wordcount: '743'
 ht-degree: 3%
 
 ---
@@ -27,9 +27,11 @@ ht-degree: 3%
 
 AEM Assets與檔案型撰寫工具(例如Microsoft Word或Google Docs)的整合功能，可直接在您的編輯器中提供資產選擇器。 使用此資產選擇器來存取AEM Assets，並將核准的資產插入您的檔案。
 
+如果您已有Edge Delivery Services網站，請參閱[AEM Assets外掛程式](https://github.com/adobe-rnd/aem-assets-plugin/blob/main/README.md)，將AEM Assets與您現有的AEM專案整合。 如果您沒有Edge Delivery Services網站，請參閱以下的[必要條件](#integrate-aem-assets-with-microsoft-word-and-google-docs)和[整合AEM Assets與檔案式製作環境](#integrate-aem-assets-with-microsoft-word-or-google-docs-to-use-aem-assets-with-microsoft-word-or-google-docs)章節。
+
 ### 先決條件{#integrate-aem-assets-with-microsoft-word-and-google-docs}
 
-開始之前，請確定您的檔案式製作環境已準備就緒：
+在開始之前，請確定您的檔案式製作環境已準備就緒：
 
 * 將AEM與檔案式製作工具整合，以設定製作環境。 請參閱[快速入門 — 開發人員教學課程](https://www.aem.live/developer/tutorial)以設定編寫環境。
 
