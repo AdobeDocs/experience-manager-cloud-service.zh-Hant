@@ -2,7 +2,7 @@
 title: 為 Edge Delivery Services 製作內容時，將 AEM Assets 進行整合
 description: 瞭解如何將AEM Assets與Edge Delivery Services整合。 此整合可讓您將AEM Assets與Microsoft Word和Google檔案整合、將AEM Assets與Universal Editor整合、將Dynamic Media與OpenAPI功能與Universal Editor整合，以及將Dynamic Media與OpenAPI功能與Microsoft Word和Google檔案整合。
 exl-id: e58db2ce-a55a-49b3-ae8e-709b5ea8d095
-source-git-commit: e6fd7b1d16aac5e7021a8c309f6483f98746e85e
+source-git-commit: f57edede03cf55110122c59f2874a5f40ffa9c76
 workflow-type: tm+mt
 source-wordcount: '743'
 ht-degree: 3%
@@ -78,7 +78,7 @@ AEM Assets與檔案型撰寫工具(例如Microsoft Word或Google Docs)的整合�
 
 ## 範例Edge Delivery Services網站{#example-of-an-Edge-Delivery-Services-site}
 
-請參閱[WKND旅遊](https://aem-dynamicmedia-demo--dm--hlxsites.aem.live/travel-hospitality/wknd-trvl-home)。 此網站是使用Edge Delivery Services的檔案型製作功能所建置。 使用Dynamic Media搭配資產傳送的OpenAPI功能，在[Google Docs](https://drive.google.com/drive/folders/1HCCHRWp4HJIXW_cUv5cRDQ5DzzqiZsXT)中編寫網站內容。 一旦編寫完成，內容會直接從檔案發佈。 對於此檔案式撰寫設定，所有必要的檔案、資料夾、設定、網站樣式和功能程式碼都儲存在此[Git存放庫](https://github.com/hlxsites/franklin-assets-selector/tree/aem-dynamicmedia-demo/blocks)中。
+請參閱[WKND旅遊](http://bit.ly/3DExLnf)。 此網站是使用Edge Delivery Services的檔案型製作功能所建置。 使用Dynamic Media搭配資產傳送的OpenAPI功能，在[Google Docs](https://drive.google.com/drive/folders/1HCCHRWp4HJIXW_cUv5cRDQ5DzzqiZsXT)中編寫網站內容。 一旦編寫完成，內容會直接從檔案發佈。 對於此檔案式撰寫設定，所有必要的檔案、資料夾、設定、網站樣式和功能程式碼都儲存在此[Git存放庫](https://github.com/hlxsites/franklin-assets-selector/tree/aem-dynamicmedia-demo/blocks)中。
 
 ## 將AEM Assets與通用編輯器型Edge Delivery Services製作流程整合 {#integrate-aem-assets-with-universal-editor}
 
