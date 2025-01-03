@@ -2,9 +2,9 @@
 title: 為 Edge Delivery Services 製作內容時，將 AEM Assets 進行整合
 description: 瞭解如何將AEM Assets與Edge Delivery Services整合。 此整合可讓您將AEM Assets與Microsoft Word和Google檔案整合、將AEM Assets與Universal Editor整合、將Dynamic Media與OpenAPI功能與Universal Editor整合，以及將Dynamic Media與OpenAPI功能與Microsoft Word和Google檔案整合。
 exl-id: e58db2ce-a55a-49b3-ae8e-709b5ea8d095
-source-git-commit: b908cb1e8d9c7814f4b23142aee589af74047cd8
+source-git-commit: fc19e2bf43237418f3636d982c46915c8013cbfa
 workflow-type: tm+mt
-source-wordcount: '697'
+source-wordcount: '698'
 ht-degree: 3%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 3%
 
 ![EDS2](/help/assets/assets/EDS2.png)
 
-Edge Delivery Services是一組可撰寫的服務，讓您在網站上製作和傳遞內容的方式上擁有高度彈性。 您可以使用通用編輯器和檔案式編寫，同時使用[AEM內容管理](/help/sites-cloud/authoring/author-publish.md)和[WYSIWYG編寫](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/authoring)。
+[Edge Delivery Services](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/edge-delivery/overview)是一組可撰寫的服務，可讓您在網站上撰寫及傳遞內容的方式上擁有高度彈性。 您可以使用通用編輯器和檔案式編寫，同時使用[AEM內容管理](/help/sites-cloud/authoring/author-publish.md)和[WYSIWYG編寫](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/authoring)。
 
 您可以在下列位置編輯內容：
 
