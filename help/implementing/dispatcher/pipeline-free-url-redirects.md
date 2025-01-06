@@ -4,9 +4,9 @@ description: 瞭解如何宣告301或302重新導向，而不需要存取Git或C
 feature: Dispatcher
 role: Admin
 exl-id: dacb1eda-79e0-4e76-926a-92b33bc784de
-source-git-commit: e30a9fbe74f1f5cd8a924dc3fec140fad5e0a164
+source-git-commit: 8f5dd529b5f317326d9742be1dd3a3104fe6957a
 workflow-type: tm+mt
-source-wordcount: '750'
+source-wordcount: '758'
 ht-degree: 1%
 
 ---
@@ -27,7 +27,7 @@ AEM as a Cloud Service提供[數個實作使用者端重新導向的方法](http
 * 重新導向的次數範圍從數到數萬不等。
 * 您想要使用者介面的選項，建立為自訂專案或使用[ACS Commons重新導向對應管理員](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-map-manager/index.html)或[ACS Commons重新導向管理員](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-manager/subpages/rewritemap.html)。
 
-此功能的核心是AEM Apache/Dispatcher可載入（或重新載入）一或多個已放置在發佈存放庫內指定位置中的重寫對應檔案。 請務必注意，檔案的傳送方式並不屬於此功能的範圍，但您可以考慮下列其中一個方法：
+此功能的核心是AEM Apache/Dispatcher可載入（或重新載入）一或多個已放置在發佈存放庫內指定位置中的重寫對應檔案(以便從AEM發佈下載)。 請務必注意，檔案的傳送方式並不屬於此功能的範圍，但您可以考慮下列其中一個方法：
 
 * 在作者使用者介面中擷取重新寫入對映作為資產並進行發佈。
 * 安裝[ACS Commons重新導向對應管理員](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-map-manager/index.html) （[至少6.7.0版或更新版本](https://github.com/Adobe-Consulting-Services/acs-aem-commons/releases)），其中包含管理URL對應的使用者介面，也可以發佈重寫對應檔案。
