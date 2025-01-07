@@ -4,10 +4,10 @@ description: 了解 Adobe Developer Console 中已取代 JWT 認證對 AEM 的�
 exl-id: 7c811081-484c-41f7-a289-4e9a10a837b3
 feature: Security
 role: Admin
-source-git-commit: 18e9daad8bec6749d493994264792c0cd3b55d15
-workflow-type: ht
-source-wordcount: '770'
-ht-degree: 100%
+source-git-commit: 957dedd81d14e921aa8a64de80ef21fd11f713ab
+workflow-type: tm+mt
+source-wordcount: '768'
+ht-degree: 93%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 >
 >AEM 6.5 客戶應參考 [AEM 6.5 的類似文件](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-65/content/security/jwt-credentials-deprecation-in-adobe-developer-console)以了解更多資訊。
 
-Adobe 客戶使用 [Adobe Developer Console](https://developer.adobe.com/console) 來產生可存取各種 API 的認證。客戶可以選擇各種認證類型，包括 OAuth 伺服器到伺服器和單頁應用程式。其中一種認證類型 (服務帳戶 (JWT) 認證) 已被已取代，取而代之的是 OAuth 伺服器到伺服器認證。2024 年 6 月 3 日或之後無法建立新的服務帳戶 (JWT) 認證，現有的 JWT 認證自 2025 年 1 月 27 日起將無法再使用。您可以[閱讀已取代項目的資訊](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/)。
+Adobe 客戶使用 [Adobe Developer Console](https://developer.adobe.com/console) 來產生可存取各種 API 的認證。客戶可以選擇各種認證類型，包括 OAuth 伺服器到伺服器和單頁應用程式。其中一種認證類型 (服務帳戶 (JWT) 認證) 已被已取代，取而代之的是 OAuth 伺服器到伺服器認證。2024年6月3日或之後無法建立新的服務帳戶(JWT)憑證，且現有的JWT憑證在2025年6月30日或之後將無法運作。 您可以[閱讀已取代項目的資訊](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/)。
 
 本文說明 AEM as a Cloud Service 應如何處理已取代項目的其他背景資訊。
 
@@ -48,7 +48,7 @@ AEM 客戶使用 AEM 來設定所有與許多其他 Adobe 解決方案的整合�
 
 **相關 AEM 版本**：AEM as a Cloud Service
 
-客戶可建立 Adobe Developer Console 專案，以便叫用 [Cloud Manager API](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/create-api-integration/)。在已棄用的 JWT 認證於 2025 年 1 月到期之前，應將 Adobe Developer 專案中的認證移轉到 OAuth 伺服器對伺服器認證類型。
+客戶可建立 Adobe Developer Console 專案，以便叫用 [Cloud Manager API](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/create-api-integration/)。Adobe Developer專案中的憑證應移轉至OAuth伺服器對伺服器憑證型別，已遭取代的JWT憑證才會於2025年6月到期。
 
 ## 自動產生的專案 {#autogen-projects}
 
