@@ -5,10 +5,10 @@ exl-id: e2981be9-fb14-451c-ad1e-97c487e6dc46
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 6f17afc82b2d26fd6025a9ba8449a0cb1b368d48
 workflow-type: tm+mt
-source-wordcount: '1173'
-ht-degree: 96%
+source-wordcount: '1169'
+ht-degree: 79%
 
 ---
 
@@ -29,21 +29,23 @@ ht-degree: 96%
 
 ## 程式碼品質規則 {#understanding-code-quality-rules}
 
-程式碼品質測試會掃描原始程式碼以確保其符合特定的品質標準。這是透過 SonarQube 和使用 OakPAL 的內容包級別檢查的組合來實現的。有超過 100 條規則結合了通用 Java 規則和 AEM 特定規則。部分 AEM 特定規則是根據 AEM 工程團隊的最佳做法建立的，並被稱為[自訂程式碼品質規則](/help/implementing/cloud-manager/custom-code-quality-rules.md)。
+程式碼品質測試會掃描原始程式碼以確保其符合特定的品質標準。SonarQube和使用OakPAL的內容套件層級檢查的組合會實作此步驟。 有超過 100 條規則結合了通用 Java 規則和 AEM 特定規則。部分 AEM 特定規則是根據 AEM 工程團隊的最佳做法建立的，並被稱為[自訂程式碼品質規則](/help/implementing/cloud-manager/custom-code-quality-rules.md)。
 
->[!NOTE]
+您可以使用此連結](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx)下載目前完整的規則[清單。
+
+>[!IMPORTANT]
 >
->若要下載完整的規則清單，[使用此連結](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx)。
+>自2025年2月13日星期四起(Cloud Manager 2025.2.0)，Cloud Manager程式碼品質使用更新的SonarQube 9.9版本和更新的規則清單，您可以[在此下載](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS-2024-12-0.xlsx)。
 
 ### 三層級評等 {#three-tiered-gate}
 
 程式碼品質測試確定的問題被指派到三個類別之一。
 
-* **嚴重** - 這些問題會導致管道立即失敗。
+* **嚴重** - 會導致管道立即失敗的問題。
 
-* **重要** - 這些問題會導致管道進入暫停狀態。部署管理員、專案管理員或業務負責人可以覆寫問題，這種情況下管道會繼續進行，或者他們也可以接受問題，這種情況下管道則會因失敗而停止。
+* **重要** - 會導致管道進入暫停狀態的問題。部署管理員、專案管理員或企業所有者可以覆寫此問題，讓管道繼續。 或者，他們可以接受這些問題，導致管道因失敗而停止。
 
-* **資訊** - 這些問題純粹是為了參考目的而提供，對管道執行沒有影響。
+* **資訊** — 純粹為了參考目的而提供，對管道執行沒有影響的問題
 
 >[!NOTE]
 >
@@ -51,7 +53,7 @@ ht-degree: 96%
 
 ### 評等 {#ratings}
 
-此步驟的結果交付為&#x200B;**評級**。
+此步驟的結果以&#x200B;**評等**&#x200B;傳遞。
 
 下表總結了各關鍵、重要和資訊類別的評級和故障閾值。
 
@@ -68,7 +70,7 @@ ht-degree: 96%
 
 >[!NOTE]
 >
->如需更詳細的定義，請參閱 [SonarQube 的量度定義](https://docs.sonarqube.org/latest/user-guide/metric-definitions/)。
+>如需更詳細的定義，請參閱 [SonarQube 的量度定義](https://docs.sonarsource.com/sonarqube-server/latest/user-guide/code-metrics/metrics-definition/)。
 
 >[!NOTE]
 >
@@ -76,7 +78,7 @@ ht-degree: 96%
 
 ## 處理誤判 {#dealing-with-false-positives}
 
-品質掃描流程並非完美無瑕，有時會錯誤地識別出實際上不構成問題的問題。這即稱為&#x200B;**誤判**。
+品質掃描流程並非完美無瑕，有時會錯誤地識別出實際上不是問題的問題。 此狀態稱為&#x200B;**誤判**。
 
 在這些情況下，可以使用標準 Java `@SuppressWarnings` 註解來標註原始程式碼，將規則 ID 指定為註解屬性。例如，一種常見的誤判是用於偵測硬式編碼密碼的 SonarQube 規則可能對如何識別硬式編碼密碼過於積極。
 
@@ -87,7 +89,7 @@ ht-degree: 96%
 private static final String PROP_SERVICE_PASSWORD = "password";
 ```
 
-SonarQube 因此會提出阻斷式漏洞。但在查看程式碼後，您會發現這並非漏洞，然後可以使用適當的規則 ID 標註程式碼。
+SonarQube提出阻斷式漏洞。 但在查看程式碼後，您會發現這個問題並非漏洞，然後可以使用適當的規則 ID 標註程式碼。
 
 ```java
 @SuppressWarnings("squid:S2068")
@@ -95,7 +97,7 @@ SonarQube 因此會提出阻斷式漏洞。但在查看程式碼後，您會發�
 private static final String PROP_SERVICE_PASSWORD = "password";
 ```
 
-但如果程式碼確實有此問題：
+但如果程式碼實際上如下：
 
 ```java
 @Property(label = "Service Password", value = "mysecretpassword")
@@ -106,14 +108,14 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 
 >[!NOTE]
 >
->雖然最佳做法是使 `@SuppressWarnings` 註解盡可能具體 (即僅標註導致問題的特定陳述式或區塊)，但可以在分類層級進行註解。
+>雖然最佳做法是使`@SuppressWarnings`註解儘可能具體 — 例如僅標註導致問題的陳述式或區塊 — 但也可以在類別層級進行註解。
 
 >[!NOTE]
 >雖然沒有明確的安全測試步驟，但在程式碼品質步驟中評估了與安全相關的程式碼品質規則。請參閱 [AEM as a Cloud Service 安全性概觀](/help/security/cloud-service-security-overview.md)，深入了解雲端服務的安全性。
 
 ## 掃描最佳化的內容套件 {#content-package-scanning-optimization}
 
-在品質分析流程中，Cloud Manager 會對 Maven 組建產生的內容套件進行分析。Cloud Manager 可提供最佳化功能以加速此流程，若需遵守某些套件限制，前述功能即有助益。最顯著的是針對輸出單一內容套件（通常稱為「全」套件）的專案執行的最佳化，該套件包含由組建產生的數個其他內容套件（這些內容套件標籤為已略過）。 當 Cloud Manager 偵測到這種情況時，會直接掃描個別內容套件並根據相依性進行排序，而不是將「全」套件解除封裝。例如，考慮以下組建輸出。
+在品質分析流程中，Cloud Manager 會對 Maven 組建產生的內容套件進行分析。Cloud Manager提供最佳化功能，可加速此流程，若需遵守某些套件限制，前述功能即有助益。 最顯著的最佳化目標為產生單一「全」套件的專案，其中包含組建中的多個內容套件，這些套件標示為已略過。 當 Cloud Manager 偵測到這種情況時，會直接掃描個別內容套件並根據相依性進行排序，而不是將「全」套件解除封裝。例如，考慮以下組建輸出。
 
 * `all/myco-all-1.0.0-SNAPSHOT.zip` (content-package)
 * `ui.apps/myco-ui.apps-1.0.0-SNAPSHOT.zip` (skipped-content-package)
@@ -128,4 +130,4 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 >[!NOTE]
 >
 >* 此最佳化並不會影響部署到 AEM 的套件。
->* 由於嵌入的內容套件和已略過的內容套件之間的對應是根據檔案名稱，因此若有多個已略過的內容套件檔案名稱完全相同或嵌入時檔案名稱變更，即無法進行此最佳化。
+>* 內嵌內容套件和略過的內容套件之間的比對取決於檔案名稱。 如果多個略過的套件共用相同的檔案名稱，或檔案名稱在嵌入期間有所變更，則無法進行此最佳化。
