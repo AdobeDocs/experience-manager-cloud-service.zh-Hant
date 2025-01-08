@@ -63,7 +63,7 @@ ht-degree: 40%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_migrationset_expiry"
->title="移轉集到期"
+>title="移轉集過期"
 >abstract="了解移轉集到期。"
 
 所有移轉集都將在約45天的長時間不活動後最終到期。 指標在專案卡片和移轉工作表格列中顯示一段時間後，移轉集將到期，其資料將不再可用。 透過以下方式根據移轉集採取行動，可輕鬆延長到期時間：
@@ -77,6 +77,6 @@ ht-degree: 40%
 
 ![影像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam29.png)
 
-## 下一步 {#whats-next}
+## 後續步驟 {#whats-next}
 
 瞭解內容轉移工具及其概述後，瞭解此工具可用來將現有內容從來源AEM執行個體（內部部署或AMS）移至目標AEM Cloud Service執行個體時，您必須檢閱[內容轉移工具的先決條件](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md)。
