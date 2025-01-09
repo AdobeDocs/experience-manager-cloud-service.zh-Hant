@@ -5,10 +5,10 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
+source-git-commit: e4db952e8284dba578c6b3ac86405e9ab640e7c0
 workflow-type: tm+mt
-source-wordcount: '1375'
-ht-degree: 36%
+source-wordcount: '1378'
+ht-degree: 37%
 
 ---
 
@@ -118,14 +118,17 @@ Universal Editor 支援在任意實作中編輯任何方面的內容，以便提
 >
 >通用編輯器[根據其模型](/help/assets/content-fragments/content-fragments-models.md#validation)驗證內容片段欄位，可讓您強制執行資料完整性規則，例如規則運算式模式和唯一性限制。
 >
->這可確保您的內容在發佈之前符合特定的業務需求。
+>這可在發佈之前確保您的內容符合特定業務要求。
 
 ### 新增元件到容器中 {#adding-components}
 
 1. 在[內容樹狀結構](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode)或編輯器中選取容器元件。
-1. 然後，在「屬性」面板中選取「新增」圖示。
 
    ![選取要新增到容器的元件](assets/ue-add-component.png)
+
+1. 然後，在「屬性」面板中選取「新增」圖示。
+
+   ![選取新增圖示](assets/add-icon.png)
 
 該元件會被插入到容器中並可在編輯器中對其進行編輯。
 

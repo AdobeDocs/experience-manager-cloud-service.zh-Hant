@@ -4,10 +4,10 @@ description: 了解使用 Edge Delivery Services 專案進行所見即所得製�
 exl-id: e68b09c5-4778-4932-8c40-84693db892fd
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: dce661331c42ba2cc082553e1e344c73556ce18d
-workflow-type: ht
-source-wordcount: '2196'
-ht-degree: 100%
+source-git-commit: 7f54d2ee61d2b92e7a0f02c66ce8ee5cdbedd73c
+workflow-type: tm+mt
+source-wordcount: '2195'
+ht-degree: 99%
 
 ---
 
@@ -84,7 +84,7 @@ ht-degree: 100%
 
 請注意，並非每個區塊都必須有模式。有些區塊只是子系清單的[容器](#container) ，其中每個子系都有自己的模式。
 
-還需要定義哪些區塊存在並可以使用通用編輯器新增到頁面中。[`component-definitions.json`](https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/component-definition.json) 檔案列有通用編輯器提供的元件。
+還需要定義哪些區塊存在並可以使用通用編輯器新增到頁面中。[`component-definitions.json`](/help/implementing/universal-editor/component-definition.md)檔案會列出通用編輯器所提供的元件。
 
 ```json
 {

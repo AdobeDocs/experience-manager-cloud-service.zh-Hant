@@ -4,10 +4,10 @@ description: 了解如何在使用 Edge Delivery Services 專案進行的所見�
 exl-id: 65a5600a-8d16-4943-b3cd-fe2eee1b4abf
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: fb7da1530f916ec63d5993446fd0c328af09ae7c
-workflow-type: ht
+source-git-commit: 7f54d2ee61d2b92e7a0f02c66ce8ee5cdbedd73c
+workflow-type: tm+mt
 source-wordcount: '1415'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -51,7 +51,7 @@ Adobe 建議您採用三階段方法來開發區塊：
 
 ![複製專案。](assets/create-block/clone.png)
 
-2\. 編輯專案根目錄下的 `component-definition.json` 檔案，為新引述區塊新增以下定義並儲存檔案。
+2\. 編輯專案根目錄中的[`component-definition.json`檔案](/help/implementing/universal-editor/component-definition.md)，並為您的新報價區塊新增下列定義並儲存檔案。
 
 >[!BEGINTABS]
 
@@ -119,7 +119,7 @@ Adobe 建議您採用三階段方法來開發區塊：
 
 >[!ENDTABS]
 
-4\. 編輯專案根目錄下的 `component-filters.json` 檔案，並將引述區塊新增至[篩選器定義](/help/implementing/universal-editor/customizing.md#filtering-components)中，以允許將該區塊新增至任何區段並且儲存檔案。
+4\. 編輯專案根目錄中的[`component-filters.json`檔案](/help/implementing/universal-editor/customizing.md#filtering-components)，並將引號區塊新增至[篩選定義](/help/implementing/universal-editor/customizing.md#filtering-components)，以允許將區塊新增至任何區段並儲存檔案。
 
 >[!BEGINTABS]
 
