@@ -5,9 +5,9 @@ feature: Security
 role: Admin
 hide: true
 hidefromtoc: true
-source-git-commit: c3e3905d3896d79149a386241d798f78631184b3
+source-git-commit: 32ce30ce136a714e277e00197d38ea380c777377
 workflow-type: tm+mt
-source-wordcount: '399'
+source-wordcount: '344'
 ht-degree: 0%
 
 ---
@@ -19,16 +19,15 @@ ht-degree: 0%
 
 在1月28日，為了降低UI雜湊並最佳化效能，同步行為將會有一些變更，導致在AEM中出現的群組減少。 將移除兩種AEM群組：
 
-1. 尾碼為`GROUP_NAME_SUFFIX`的AEM群組。 這些群組未出現在Adobe Developer Console中，但出現在「AEM群組管理」畫面中，如下所示。 若您的AEM應用程式參考這些群組（可能性很低），請務必改用Adobe Admin Console使用者群組。
+1. 尾碼為`GROUP_NAME_SUFFIX`的AEM群組。 這些群組未出現在Adobe Developer Console中，但出現在「AEM群組管理」畫面中，如下所示。 若您的AEM應用程式參考這些群組（可能性很低），請務必參考不含該尾碼的Adobe Admin Console使用者群組。
 
    ![已移除群組1](/help/security/assets/removed-groups-1.png)
 
-1. 與特定AEM層級或環境組合（例如，`author`或`e4535`）無關的Adobe Admin Console產品設定檔相關聯的AEM群組。 這可能包括下列產品設定檔：
+1. 與特定環境無關的Adobe Admin Console產品設定檔相關聯的AEM群組。 這可能包括下列產品設定檔：
 
    * 與其他Adobe產品相關
    * 和其他AEM程式相關
    * 和同一AEM計畫中的其他AEM環境相關
-   * 與相同AEM環境中的不同階層（例如，`author`與`publish`）相關
    * 與Cloud Manager相關（例如，`Business Owner - Cloud Service`）
 
    例如，在下圖中，有許多列具有模式`AEM Administrators-<suffix>`或`AEM Users-<suffix>`，其尾碼與目前環境無關。
@@ -43,11 +42,4 @@ ht-degree: 0%
 
 Admin Console](/help/security/assets/admin-console-profile-suffixes.png)中的![尾碼
 
-若您的AEM應用程式參考這些群組（可能性很低），請務必改用Adobe Admin Console使用者群組。
-
->[!NOTE]
->
->請特別留意這些潛在的陷阱：
->
->1. 您的AEM應用程式依賴從Cloud Manager產品設定檔同步的AEM群組
->1. 您的AEM應用程式的發佈層級仰賴從製作層級產品設定檔同步的AEM群組。 相反的情況（製作層級依賴發佈層級）也是如此。
+在罕見的情況下，您的AEM應用程式會參照將不再出現在AEM中的群組，請務必改用i)來自正確AEM例項的產品設定檔或ii) Adobe Admin Console使用者群組。
