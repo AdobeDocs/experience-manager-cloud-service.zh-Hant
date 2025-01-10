@@ -5,13 +5,13 @@ feature: Security
 role: Admin
 hide: true
 hidefromtoc: true
-source-git-commit: 32ce30ce136a714e277e00197d38ea380c777377
+exl-id: 0b097ab3-bf1d-4d43-9e19-d544594844ef
+source-git-commit: ccfcecb77c7999784d6eaf6c1c6cfcb4269f5c80
 workflow-type: tm+mt
 source-wordcount: '344'
 ht-degree: 0%
 
 ---
-
 
 # 同步處理使用者群組和產品設定檔的變更 {#changes-in-user-group-and-product-profile-synchronization}
 
@@ -43,3 +43,4 @@ ht-degree: 0%
 Admin Console](/help/security/assets/admin-console-profile-suffixes.png)中的![尾碼
 
 在罕見的情況下，您的AEM應用程式會參照將不再出現在AEM中的群組，請務必改用i)來自正確AEM例項的產品設定檔或ii) Adobe Admin Console使用者群組。
+
