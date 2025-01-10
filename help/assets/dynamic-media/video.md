@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: Video Profiles,Best Practices
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: c142ac7ad12179dd842ce6c81cc4d97ece36a197
+source-git-commit: 222636f9520c17203df632778d3f60b62369a47b
 workflow-type: tm+mt
-source-wordcount: '10543'
-ht-degree: 1%
+source-wordcount: '10564'
+ht-degree: 2%
 
 ---
 
@@ -31,7 +31,8 @@ ht-degree: 1%
 
    * 建立您自己的視訊編碼設定檔。 或者，您只需使用Dynamic Media隨附的預先定義&#x200B;_最適化視訊編碼_&#x200B;設定檔即可。
 
-      * [建立視訊編碼設定檔](/help/assets/dynamic-media/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming)。
+      * [建立視訊編碼設定檔](/help/assets/dynamic-media/video-profiles。
+      * 最大輸出視訊編碼解析度為8,192 × 4,320或4,320 × 8,192.md#creating-a-video-encoding-profile-for-adaptive-streaming)。
       * 深入瞭解[視訊編碼的最佳實務](#best-practices-for-encoding-videos)。
 
    * 將視訊處理設定檔與您要上傳主要來源視訊的一或多個資料夾建立關聯。
@@ -41,7 +42,8 @@ ht-degree: 1%
 
    * 將您的主要來源視訊上傳至指定的資料夾。 在新增視訊後，會根據指派給資料夾的視訊處理設定檔來編碼視訊。
 
-      * Dynamic Media主要支援長度上限為30分鐘，最小解析度大於25 x 25的短片影片。
+      * Dynamic Media主要支援長度上限為30分鐘，最小解析度大於25×25的短片影片。
+      * 支援的最大輸入視訊解析度是16,384 × 16,384。
       * 您可以上傳每個大小最多15 GB的視訊檔案。
       * [上傳您的視訊](/help/assets/manage-video-assets.md#upload-and-preview-video-assets)。
       * 深入瞭解[支援的輸入檔案格式](/help/assets/file-format-support.md)。
@@ -104,7 +106,7 @@ ht-degree: 1%
 
 Dynamic Media中的視訊是端對端解決方案，可讓您輕鬆發佈高品質的最適化視訊，以跨多個熒幕（包括桌上型電腦、平板電腦和行動裝置）串流。 「最適化視訊集」會將使用不同位元速率和格式（例如400 kbps、800 kbps和1000 kbps）編碼的相同視訊版本分組。 桌上型電腦或行動裝置會偵測可用的頻寬。
 
-例如，在iOS行動裝置上，它會偵測3G、4G或Wi-Fi等頻寬。 之後，它會從「自我調整視訊集」中的各種視訊位元速率中，自動選取正確的編碼視訊。 影片會串流至桌上型電腦、行動裝置或平板電腦。
+例如，在iOS行動裝置上，它會偵測頻寬，例如3G、4G或Wi-Fi。 之後，它會從「自我調整視訊集」中的各種視訊位元速率中，自動選取正確的編碼視訊。 影片會串流至桌上型電腦、行動裝置或平板電腦。
 
 此外，如果桌上型電腦或行動裝置上的網路狀況改變，視訊品質會自動動態切換。 此外，如果客戶在桌上型電腦上進入全熒幕模式，Adaptive Video Set會使用更好的解析度來回應，進而改善客戶的觀看體驗。 如果客戶需要在多個熒幕和裝置上播放Dynamic Media視訊，使用最適化視訊集可為您提供最佳檢視體驗。
 
@@ -168,9 +170,9 @@ Dynamic Media HTML5視訊檢視器預設集是強大的視訊播放器。 您可
 
 就桌上型電腦和行動最適化視訊串流而言，用於位元速率切換的視訊均以最適化視訊集中的所有MP4視訊為基礎。
 
-使用HLS或DASH或漸進式視訊下載進行視訊播放。 在舊版Experience Manager （例如6.0、6.1和6.2）中，影片會透過HTTP進行串流處理。
+使用HLS或DASH或漸進式視訊下載程式進行視訊播放。 在舊版Experience Manager （例如6.0、6.1和6.2）中，影片會透過HTTP進行串流處理。
 
-不過，在Experience Manager6.3及更新版本中，視訊現在會透過HTTPS （亦即HLS或DASH）進行串流，因為DM閘道服務URL也一律使用HTTPS。 此預設行為不會影響客戶。 如果瀏覽器支援，視訊串流一律會透過HTTPS進行。 請參閱下表。
+不過，在Experience Manager6.3及更新版本中，視訊現在會透過HTTPS (亦即HLS或DASH)進行串流，因為DM閘道服務URL也一律使用HTTPS。 此預設行為不會影響客戶。 如果瀏覽器支援，視訊串流一律會透過HTTPS進行。 請參閱下表。
 
 因此，
 
@@ -198,7 +200,7 @@ DASH是國際標準，HLS是Apple標準。 兩者都用於自我調整視訊串�
   <tr>
    <td>桌上型電腦</td>
    <td>Internet Explorer 11+</td>
-   <td>在Windows® 8和Windows® 10上 — 只要要求DASH或HLS，就強制使用HTTPS。 已知限制： DASH或HLS上的HTTP在此瀏覽器/作業系統組合中無法運作<br /> <br /> Windows® 7上的 — 漸進式下載。 對HTTP與HTTPS通訊協定使用標準邏輯。</td>
+   <td>在Windows® 8和Windows® 10上 — 每當要求DASH或HLS時，強制使用HTTPS。 已知限制： DASH或HLS上的HTTP在此瀏覽器/作業系統組合中無法運作<br /> <br /> Windows® 7上的 — 漸進式下載。 對HTTP與HTTPS通訊協定使用標準邏輯。</td>
   </tr>
   <tr>
    <td>桌上型電腦</td>
@@ -284,16 +286,16 @@ DASH是國際標準，HLS是Apple標準。 兩者都用於自我調整視訊串�
 
 編碼視訊檔案時，請使用最高品質的來源視訊檔案。 避免使用先前編碼的視訊檔案，因為這些檔案已經過壓縮，進一步編碼會產生品質不佳的視訊。
 
-* Dynamic Media主要支援長度上限為30分鐘，最小解析度大於25 x 25的短片影片。
+* Dynamic Media主要支援長度上限為30分鐘，最小解析度大於25×25的短片影片。
 * 您可以上傳每個大小最高達15 GB的主要來源視訊檔案。
 
 下表說明編碼來源視訊檔案前，其建議的大小、外觀比例和最低位元速率等資訊：
 
 | 大小 | 外觀比例 | 最小位元速率 |
 |--- |--- |--- |
-| 1024 X 768 | 4:3 | 大部分的視訊為4500 kbps。 |
-| 1280 X 720 | 16:9 | 3000 - 6000 kbps （視視訊中的移動量而定）。 |
-| 1920 X 1080 | 16:9 | 6000 - 8000 kbps （視視訊中的移動量而定）。 |
+| 1024 × 768 | 4:3 | 大部分的視訊為4500 kbps。 |
+| 1280 × 720 | 16:9 | 3000 - 6000 kbps （視視訊中的移動量而定）。 |
+| 1920 × 1080 | 16:9 | 6000 - 8000 kbps （視視訊中的移動量而定）。 |
 
 ### 取得檔案的中繼資料 {#obtaining-a-file-s-metadata}
 
@@ -320,7 +322,7 @@ DASH是國際標準，HLS是Apple標準。 兩者都用於自我調整視訊串�
 | 1.78 | 16:9 |
 | 0.56 | 9:16 |
 
-例如，視訊的寬度為1440 x高度為1080，其外觀比例為1440/1080，即1.33。在這種情況下，您可以選擇外觀比例為4:3的視訊編碼預設集來編碼視訊檔案。
+例如，1440寬度×1080高度的視訊的外觀比例為1440/1080，即1.33。在這種情況下，您可以選擇外觀比例為4:3的視訊編碼預設集來編碼視訊檔案。
 
 ### 位元速率 {#bitrate}
 
@@ -354,16 +356,16 @@ VBR需要更長的時間來編碼，但會產生最有利的結果；媒體檔�
 
 ### 解決方法 {#resolution}
 
-**解析度**&#x200B;描述視訊檔案的高度和寬度（畫素）。 大部分的來源視訊都是以高解析度儲存（例如1920 x 1080）。 為了串流目的，來源視訊會壓縮成較小的解析度（640 x 480或更小）。
+**解析度**&#x200B;描述視訊檔案的高度和寬度（畫素）。 大部分的來源視訊都是以高解析度儲存(例如1920 × 1080)。 為了串流目的，來源視訊會壓縮成較小的解析度(640 × 480或更小)。
 
-解析度和資料速率是決定視訊品質的兩個整合因素。 若要維持相同的視訊品質，視訊檔案中的畫素數越高（解析度越高），資料速率就必須越高。 例如，假設在320 x 240解析度和640 x 480解析度視訊檔案中，每個影格的畫素數：
+解析度和資料速率是決定視訊品質的兩個整合因素。 若要維持相同的視訊品質，視訊檔案中的畫素數越高（解析度越高），資料速率就必須越高。 例如，請考慮320 × 240解析度和640 × 480解析度視訊檔案中每幀的畫素數：
 
 | 解決方法 | 每個影格的畫素 |
 |--- |--- |
-| 320 x 240 | 76,800 |
-| 640 x 480 | 307,200 |
+| 320 × 240 | 76,800 |
+| 640 × 480 | 307,200 |
 
-640 x 480檔案的每個影格畫素會增加4倍。 若要讓這兩個範例解析度達到相同的資料速率，您可以對640 x 480檔案套用四倍的壓縮，這會降低視訊的品質。 因此，250 Kbps的視訊資料速率可以以320 x 240的解析度提供高品質的觀賞效果，但無法以640 x 480的解析度提供。
+640×480檔案的每個影格有四倍多的畫素。 若要讓這兩個範例解析度達到相同的資料速率，您可以對640 × 480檔案套用四倍的壓縮，這會降低視訊的品質。 因此，250 Kbps的視訊資料速率可以以320 × 240的解析度呈現高品質的視覺效果，但無法以640 × 480的解析度呈現。
 
 一般而言，您使用的資料速率越高，視訊顯示效果就越好，而且您使用的解析度越高，您必須維持的檢視品質資料速率就越高（相較於解析度較低的情況）。
 
@@ -383,6 +385,8 @@ VBR需要更長的時間來編碼，但會產生最有利的結果；媒體檔�
 | 720p | 720 | 大熒幕 |
 | 1080p | 1080 | 高解析度大熒幕 |
 
+支援的最大輸入視訊解析度是16,384 × 16,384。 最大輸出視訊編碼解析度為8,192 × 4,320或4,320 × 8,192。
+
 ### Fps （每秒影格數） {#fps-frames-per-second}
 
 在美國和日本，大部分的影片拍攝速度為29.97 fps；在歐洲，大部分影片拍攝速度為25 fps。 電影的拍攝速度為24 fps。
@@ -397,14 +401,14 @@ VBR需要更長的時間來編碼，但會產生最有利的結果；媒體檔�
 
 如果產生的比例是整數，表示影片會以最佳方式縮放。 如果產生的比率不是整數，則會影響視訊品質，在顯示區留下多餘的畫素不自然感。 當視訊中含有文字時，此效果最為明顯。
 
-例如，假設您的來源視訊是1920 x 1080。 在下表中，三個已編碼的視訊提供要使用的最佳編碼設定。
+例如，假設您的來源視訊是1920 × 1080。 在下表中，三個已編碼的視訊提供要使用的最佳編碼設定。
 
-| 視訊型別 | 寬x高 | 寬度比例 | 高度比例 |
+| 視訊型別 | 寬度×高度 | 寬度比例 | 高度比例 |
 |--- |--- |--- |--- |
-| 來源 | 1920 x 1080 | 1 | 1 |
-| 已編碼 | 960 x 540 | 2 | 2 |
-| 已編碼 | 640 x 360 | 3 | 3 |
-| 已編碼 | 480 x 270 | 4 | 4 |
+| 來源 | 1920 × 1080 | 1 | 1 |
+| 已編碼 | 960 × 540 | 2 | 2 |
+| 已編碼 | 640 × 360 | 3 | 3 |
+| 已編碼 | 480 × 270 | 4 | 4 |
 
 ### 已編碼的視訊檔案格式 {#encoded-video-file-format}
 
@@ -532,7 +536,7 @@ See [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8
 
 | 功能 | 說明 |
 | --- | --- |
-| 虛線 | DASH (Digital Adaptive Streaming over HTTP)是視訊串流的國際標準，被廣泛採用於不同的視訊檢視器中。 當您的帳戶啟用DASH時，您可以選擇使用DASH或HLS進行最適化視訊串流。 或者，當您在檢視器預設集中選取&#x200B;**[!UICONTROL auto]**&#x200B;作為播放型別時，可以選擇在播放器之間自動切換。<br>在您的帳戶上啟用DASH的一些主要優點包括：<ul><li>封裝DASH串流視訊，以進行最適化位元速率串流。 此方法可提高傳遞效率。 最適化串流可確保為客戶提供最佳檢視體驗。</li><li>使用Dynamic Media播放器最佳化的瀏覽器串流可在HLS和DASH串流之間切換，以確保最佳服務品質。 使用Safari瀏覽器時，視訊播放器會自動切換至HLS。</li><li>您可以編輯視訊檢視器預設集，以設定您偏好的串流方法（HLS或DASH）。</li><li>最佳化的視訊編碼可確保啟用DASH功能時不會使用額外的儲存空間。 會針對HLS和DASH建立單一視訊編碼集，以最佳化視訊儲存成本。</li><li>協助讓客戶更容易存取視訊傳送。</li><li>也透過API取得串流URL。</li></ul> |
+| 虛線 | DASH (Digital Adaptive Streaming over HTTP)是視訊串流的國際標準，被廣泛採用於不同的視訊檢視器中。 在您的帳戶上啟用DASH後，您就可以選擇使用DASH或HLS進行最適化視訊串流。 或者，當您在檢視器預設集中選取&#x200B;**[!UICONTROL auto]**&#x200B;作為播放型別時，可以選擇在播放器之間自動切換。<br>在您的帳戶上啟用DASH的一些主要優點包括：<ul><li>封裝DASH串流視訊，以進行最適化位元速率串流。 此方法可提高傳遞效率。 最適化串流可確保為客戶提供最佳檢視體驗。</li><li>使用Dynamic Media播放器將瀏覽器最佳化的串流在HLS和DASH串流之間切換，以確保最佳服務品質。 使用Safari瀏覽器時，視訊播放器會自動切換至HLS。</li><li>您可以編輯視訊檢視器預設集，以設定您偏好的串流方法(HLS或DASH)。</li><li>最佳化的視訊編碼可確保啟用DASH功能時不會使用額外的儲存空間。 會為HLS和DASH建立單一視訊編碼集，以最佳化視訊儲存成本。</li><li>協助讓客戶更容易存取視訊傳送。</li><li>也透過API取得串流URL。</li></ul> |
 | 多字幕和音訊曲目 | 自動啟用多重註解和音訊追蹤支援，讓您受益匪淺。 啟用後，您上傳的所有後續視訊都會透過新的後端架構進行處理，包括支援在視訊中新增多個註解和音訊曲目。 |
 | AI產生的註解（可用性限制） | 為AI支援的視訊建立註解。 它會使用AI建立視訊的文字稿，並將其轉換為註解。 甚至時間軸也會定義。 |
 
@@ -898,7 +902,7 @@ Dynamic Media支援透過URL修飾元在視訊中新增單一標題。 請參閱
 | 處理中 | 新增並儲存新的註解或音訊曲目檔案時，檔案會進入「正在處理」狀態。 Dynamic Media會將串流資訊清單附加至主要視訊，以處理檔案。 |
 | 已處理 | 處理完成後，註解或音訊曲目檔案，或與主要視訊相關的原始音訊曲目會以「已處理」狀態出現。 您可以預覽標題和音訊曲目檔案，這些檔案在您發佈視訊上線&#x200B;*之前*&#x200B;顯示為「已處理」。 |
 | 已發佈 | 「已發佈」狀態代表與主要視訊「已發佈」類似的狀態。 Assets會在主要影片發佈時發佈，並可在公開Dynamic Media URL上使用。 |
-| 已失敗 | 「失敗」狀態表示字幕或音訊曲目檔案的處理未完成。 請刪除註解或音訊曲目檔案，然後重新上傳。 |
+| 失敗 | 「失敗」狀態表示字幕或音訊曲目檔案的處理未完成。 請刪除註解或音訊曲目檔案，然後重新上傳。 |
 | 已取消發佈 | 明確取消發佈已發佈的主要視訊時，您新增至視訊的任何註解或音訊追蹤檔案也會取消發佈。 |
 
 
@@ -975,7 +979,7 @@ Dynamic Media支援透過URL修飾元在視訊中新增單一標題。 請參閱
 1. 在資產選擇模式中，從![檢視卡片圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewCard_18_N.svg) （卡片檢視）或![檢視清單圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewList_18_N.svg) （清單檢視），選取視訊資產。
 1. 在工具列上，按一下![資訊圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Info_18_N.svg)屬性。
 1. 在[內容]頁面上，選取&#x200B;**[!UICONTROL 註解與音軌]**&#x200B;標籤。
-1. 執行下列任一項作業：
+1. 執行下列任一項：
 
    * 註解 — 在&#x200B;**註解**&#x200B;標題下，選取一或多個要從視訊中刪除的註解檔案，然後按一下![刪除圖示](https://spectrum.adobe.com/static/icons/workflow_22/Smock_Delete_22_N.svg) **[!UICONTROL 刪除]**。
    * 音訊曲目 — 在&#x200B;**音訊曲目**&#x200B;標題下，選取一或多個您要從視訊中刪除的音訊曲目檔案，然後按一下![刪除圖示](https://spectrum.adobe.com/static/icons/workflow_22/Smock_Delete_22_N.svg) **[!UICONTROL 刪除]**。
@@ -997,7 +1001,7 @@ Dynamic Media支援透過URL修飾元在視訊中新增單一標題。 請參閱
 1. 在資產選擇模式中，從![檢視卡片圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewCard_18_N.svg) （卡片檢視）或![檢視清單圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewList_18_N.svg) （清單檢視），選取視訊資產。
 1. 在工具列上，按一下![資訊圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Info_18_N.svg)屬性。
 1. 在&#x200B;**屬性**&#x200B;頁面上，選取&#x200B;**[!UICONTROL 註解與音軌]**&#x200B;索引標籤。
-1. 執行下列任一項作業：
+1. 執行下列任一項：
 
    * 註解 — 在&#x200B;**註解**&#x200B;標題下，選取您要從視訊下載的一或多個註解檔案，然後按一下![下載圖示](https://spectrum.adobe.com/static/icons/workflow_22/Smock_Download_22_N.svg) **[!UICONTROL 下載]**。
    * 音訊曲目 — 在&#x200B;**音訊曲目**&#x200B;標題下，選取您要從視訊下載的一或多個音訊曲目檔案，然後按一下![下載圖示](https://spectrum.adobe.com/static/icons/workflow_22/Smock_Download_22_N.svg) **[!UICONTROL 下載]**。
@@ -1224,7 +1228,7 @@ Based on the total time of the video, Dynamic Media captures ten (default) thumb
 
 Ideally, you can add a video thumbnail anytime after you upload your video but before you publish the video on your website.
 
-If you prefer, you can choose to upload a custom thumbnail to represent your video instead of using a thumbnail generated by Dynamic Media. For example, you could create a custom thumbnail image that has the title of your video, an eye-catching opening image, or a very specific image captured from your video. The custom video thumbnail image that you upload should have a maximum resolution of 1280 x 720 pixels (minimum width of 640 pixels) and be no larger than 2MB.
+If you prefer, you can choose to upload a custom thumbnail to represent your video instead of using a thumbnail generated by Dynamic Media. For example, you could create a custom thumbnail image that has the title of your video, an eye-catching opening image, or a very specific image captured from your video. The custom video thumbnail image that you upload should have a maximum resolution of 1280 &times; 720 pixels (minimum width of 640 pixels) and be no larger than 2MB.
 
 See also [About video thumbnails](/help/assets/dynamic-media/video.md#about-video-thumbnails-in-dynamic-media-scene-mode).
 
