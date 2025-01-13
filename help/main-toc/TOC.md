@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的運作方式以及該軟體可以為您做哪些事。
 breadcrumb-title: 使用手冊
 user-guide-title: 'AEM as a Cloud Service '
-source-git-commit: c3e3905d3896d79149a386241d798f78631184b3
+source-git-commit: 07539e1f0907b87d0b866a2cbcd534bb2c87692b
 workflow-type: tm+mt
-source-wordcount: '5948'
+source-wordcount: '5957'
 ht-degree: 99%
 
 ---
@@ -232,6 +232,7 @@ ht-degree: 99%
    + [Adobe Developer Console 中的 JWT 憑證已被取代](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md)
    + [為 AEM as a Cloud Service 設定 IMS 整合](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md)
    + [Sling Service 使用者對應和服務使用者定義的最佳實務](/help/security/best-practices-for-sling-service-user-mapping-and-service-user-definition.md)
+   + [Adobeas a Cloud Service的客戶自控金鑰](/help/security/customer-managed-keys.md)
 + 上線 {#onboarding}
    + [從這裡開始](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html?lang=zh-hant)
    + 上線歷程 {#journey}
