@@ -6,7 +6,7 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 0b097ab3-bf1d-4d43-9e19-d544594844ef
-source-git-commit: ccfcecb77c7999784d6eaf6c1c6cfcb4269f5c80
+source-git-commit: 605a8032430b1be4aacebfcf73cfc16ba7691349
 workflow-type: tm+mt
 source-wordcount: '344'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 每當使用者登入AEM as a Cloud Service或使用存取權杖時，Adobe Admin Console使用者群組、產品設定檔和產品設定檔服務都會以群組的形式同步至AEM存放庫。
 
-在1月28日，為了降低UI雜湊並最佳化效能，同步行為將會有一些變更，導致在AEM中出現的群組減少。 將移除兩種AEM群組：
+在1月27日，為了降低UI雜湊並最佳化效能，同步行為將會有一些變更，導致在AEM中出現的群組減少。 將移除兩種AEM群組：
 
 1. 尾碼為`GROUP_NAME_SUFFIX`的AEM群組。 這些群組未出現在Adobe Developer Console中，但出現在「AEM群組管理」畫面中，如下所示。 若您的AEM應用程式參考這些群組（可能性很低），請務必參考不含該尾碼的Adobe Admin Console使用者群組。
 
