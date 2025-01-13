@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Video Profiles,Best Practices
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 222636f9520c17203df632778d3f60b62369a47b
+source-git-commit: 91a1fb46d4300540eeecf38f7f049a2991513d29
 workflow-type: tm+mt
-source-wordcount: '10564'
+source-wordcount: '10560'
 ht-degree: 2%
 
 ---
@@ -31,8 +31,8 @@ ht-degree: 2%
 
    * 建立您自己的視訊編碼設定檔。 或者，您只需使用Dynamic Media隨附的預先定義&#x200B;_最適化視訊編碼_&#x200B;設定檔即可。
 
-      * [建立視訊編碼設定檔](/help/assets/dynamic-media/video-profiles。
-      * 最大輸出視訊編碼解析度為8,192 × 4,320或4,320 × 8,192.md#creating-a-video-encoding-profile-for-adaptive-streaming)。
+      * [建立視訊編碼設定檔](/help/assets/dynamic-media/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming)。
+      * 最大輸出視訊編碼解析度為8,192 × 4,320或4,320 × 8,192.md。
       * 深入瞭解[視訊編碼的最佳實務](#best-practices-for-encoding-videos)。
 
    * 將視訊處理設定檔與您要上傳主要來源視訊的一或多個資料夾建立關聯。

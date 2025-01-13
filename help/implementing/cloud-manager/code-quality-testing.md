@@ -5,10 +5,10 @@ exl-id: e2981be9-fb14-451c-ad1e-97c487e6dc46
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 6f17afc82b2d26fd6025a9ba8449a0cb1b368d48
+source-git-commit: 91a1fb46d4300540eeecf38f7f049a2991513d29
 workflow-type: tm+mt
-source-wordcount: '1169'
-ht-degree: 79%
+source-wordcount: '1166'
+ht-degree: 80%
 
 ---
 
@@ -29,13 +29,13 @@ ht-degree: 79%
 
 ## 程式碼品質規則 {#understanding-code-quality-rules}
 
-程式碼品質測試會掃描原始程式碼以確保其符合特定的品質標準。SonarQube和使用OakPAL的內容套件層級檢查的組合會實作此步驟。 有超過 100 條規則結合了通用 Java 規則和 AEM 特定規則。部分 AEM 特定規則是根據 AEM 工程團隊的最佳做法建立的，並被稱為[自訂程式碼品質規則](/help/implementing/cloud-manager/custom-code-quality-rules.md)。
+程式碼品質測試會掃描原始程式碼以確保其符合特定的品質標準。SonarQube和使用OakPAL的內容套件層級檢查的組合會實作此步驟。 有超過100條規則結合了通用Java規則和AEM特定規則。 部分AEM特定規則是根據AEM Engineering的最佳實務，稱為[自訂程式碼品質規則](/help/implementing/cloud-manager/custom-code-quality-rules.md)。
 
-您可以使用此連結](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx)下載目前完整的規則[清單。
+你可以[使用此連結](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx)下載目前完整的規則清單。
 
 >[!IMPORTANT]
 >
->自2025年2月13日星期四起(Cloud Manager 2025.2.0)，Cloud Manager程式碼品質使用更新的SonarQube 9.9版本和更新的規則清單，您可以[在此下載](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS-2024-12-0.xlsx)。
+>從 2025 年 2 月 13 日 (星期四) (Cloud Manager 2025.2.0) 開始，Cloud Manager 程式碼品質將使用更新後的 SonarQube 9.9 版本和更新後的規則清單 (可[在此處下載](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS-2024-12-0.xlsx))。
 
 ### 三層級評等 {#three-tiered-gate}
 
