@@ -5,14 +5,20 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: ce9cb811-57d2-4a57-a360-f56e07df1b1a
 solution: Experience Manager Sites
-source-git-commit: 86a2c5f35d82010c84b74b6b5f0da09fd87c2b7a
+source-git-commit: 2daddd852f4cfcbcd6b1d4aea9cd96e045c93ca0
 workflow-type: tm+mt
-source-wordcount: '1818'
+source-wordcount: '1857'
 ht-degree: 4%
 
 ---
 
 # 使用內容片段的概觀 {#overview-working-with-content-fragments}
+
+>[!IMPORTANT]
+>
+>透過早期採用者計畫提供內容片段和內容片段模型的各種功能。
+>
+>若要檢視狀態，以及如果您有興趣要如何套用，請檢視[發行說明](/help/release-notes/release-notes-cloud/release-notes-current.md)。
 
 透過Adobe Experience Manager (AEM)as a Cloud Service，內容片段允許您設計、建立、管理和發佈獨立於頁面的內容。 它們可讓您準備內容以用於多個位置及多個管道，非常適合[Headless傳遞](/help/headless/what-is-headless.md)及[頁面製作](/help/sites-cloud/authoring/fragments/content-fragments.md)。
 
@@ -91,8 +97,11 @@ ht-degree: 4%
 
 建立片段後，您可以：
 
-* [使用內容片段主控台](/help/sites-cloud/administering/content-fragments/managing.md) — 存取、發佈（預覽或生產），以及參考您的片段
-* [使用內容片段編輯器](/help/sites-cloud/administering/content-fragments/authoring.md) — 編輯、發佈（預覽或生產）並參考您的片段
+* [使用內容片段主控台](/help/sites-cloud/administering/content-fragments/managing.md) -：
+   * 存取、發佈（以預覽或生產）和參考您的片段
+* [使用內容片段編輯器](/help/sites-cloud/administering/content-fragments/authoring.md) -：
+   * 編輯、發佈（以預覽或生產）和參考您的片段
+   * 使用評論與其他作者共同作業
 * [使用編輯器分析](/help/sites-cloud/administering/content-fragments/analysis.md)內容片段的結構
 * [使用GraphQL存取您的片段，以將Headless傳遞至您的應用程式](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md)。
 * [或使用您的片段進行頁面製作](/help/sites-cloud/authoring/fragments/content-fragments.md)

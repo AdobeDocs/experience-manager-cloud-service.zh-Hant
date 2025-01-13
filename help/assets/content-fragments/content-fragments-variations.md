@@ -5,9 +5,9 @@ exl-id: af05aae6-d535-4007-ba81-7f41213ff152
 feature: Content Fragments
 role: User
 solution: Experience Manager Sites
-source-git-commit: abc114373f5db501bb8709fd2d4c33aebc1c5ec9
+source-git-commit: b018c1948d479c78e1ef25b2248f3674ec1fcf92
 workflow-type: tm+mt
-source-wordcount: '2504'
+source-wordcount: '2518'
 ht-degree: 6%
 
 ---
@@ -119,13 +119,13 @@ ht-degree: 6%
 
 編輯多行文字的選項取決於所選的格式：
 
-* [RTF](#rich-text)
+* [RTF 文字](#rich-text)
 * [純文字](#plain-text)
 * [Markdown](#markdown)
 
 使用全熒幕編輯器時，可選取格式。
 
-### RTF {#rich-text}
+### RTF 文字 {#rich-text}
 
 RTF編輯可讓您設定格式：
 
@@ -314,6 +314,10 @@ RTF編輯可讓您設定格式：
 1. 關閉全熒幕編輯器時，註解仍會反白顯示。 如果選取，會開啟一個對話方塊，以便您進一步編輯註釋。
 
    ![註釋](assets/cfm-variations-07c.png)
+
+>[!NOTE]
+>
+>註解功能不會顯示在新[內容片段編輯器](/help/sites-cloud/administering/content-fragments/authoring.md#commenting-on-your-fragment)中輸入的註解。
 
 ### 檢視、編輯和刪除註解 {#viewing-editing-deleting-annotations}
 

@@ -5,14 +5,20 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
-source-git-commit: 86a2c5f35d82010c84b74b6b5f0da09fd87c2b7a
+source-git-commit: 6a971fd5d0e071f72c17cf0a42f3dd8da0b476ae
 workflow-type: tm+mt
-source-wordcount: '2704'
+source-wordcount: '2841'
 ht-degree: 5%
 
 ---
 
 # 製作內容片段 {#authoring-content-fragments}
+
+>[!IMPORTANT]
+>
+>透過早期採用者計畫可以使用內容片段編輯器的各種功能。
+>
+>若要檢視狀態，以及如果您有興趣要如何套用，請檢視[發行說明](/help/release-notes/release-notes-cloud/release-notes-current.md)。
 
 編寫您的內容片段時同時注重Headless傳送和頁面編寫。
 
@@ -58,6 +64,7 @@ ht-degree: 5%
    * 這些連結可用於[瀏覽內容片段結構](#navigate-structure)
 * 右側面板：顯示標籤[，其中顯示屬性（中繼資料）和標籤](#view-properties-tags)、有關[版本歷程記錄](#view-version-history)的資訊，以及與任何[語言副本](#view-language-copies)相關的資訊
    * 在「**屬性**」標籤中，您可以更新片段的「**標題**」和「**說明**」，或者更新「**變數**」
+   * 您可以在&#x200B;**註解**&#x200B;索引標籤中新增及讀取註解，協助您與其他作者共同作業
 * 中央面板：顯示所選變數的實際欄位和內容
    * 允許您編輯內容
       * 當在模型中設定為（多個）時，各種資料型別可讓您&#x200B;**新增**&#x200B;相關欄位的例項
@@ -222,7 +229,7 @@ ht-degree: 5%
 
 * 純文字
 * [Markdown](/help/sites-cloud/administering/content-fragments/markdown.md)
-* [RTF](#edit-multi-line-text-fields-rich-text)
+* [RTF 文字](#edit-multi-line-text-fields-rich-text)
 
 定義為純文字或Markdown的欄位具有簡單的文字方塊，不含（熒幕上）格式選項：
 
@@ -466,6 +473,25 @@ ht-degree: 5%
 >
 >如需有關翻譯內容片段和建立語言副本的詳細資訊，請參閱[AEM Headless翻譯歷程](/help/journey-headless/translation/overview.md)。
 
+## 註解您的片段 {#commenting-on-your-fragment}
+
+右側面板中的&#x200B;**註解**&#x200B;索引標籤提供下列功能：
+
+* 新增評論
+* 在評論中標籤特定使用者
+   * 他們將會收到通知，其中包含直接開啟片段的連結
+* 喜歡現有註解
+* 回複評論
+* 格式化您的註解；可使用基本格式
+* 透過現有註解執行文字搜尋
+* 編輯現有註解
+* 刪除評論
+
+![內容片段編輯器 — 「註解」標籤](assets/cf-authoring-comments.png)
+
+>[!NOTE]
+>
+>這些註解在原始編輯器](/help/assets/content-fragments/content-fragments-managing.md#annotating-a-content-fragment)中不會顯示為[註解，在Assets主控台的[時間軸](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments)中也不會顯示。
 
 ## 預覽您的片段 {#preview-content-fragment}
 
