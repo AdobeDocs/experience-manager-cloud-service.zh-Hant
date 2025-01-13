@@ -1,17 +1,17 @@
 ---
-title: 重新整理多網站管理
+title: 無存放庫多網站管理
 description: 瞭解最佳實務建議，瞭解如何透過利用單一程式碼基底(由Edge Delivery Services提供)的本地化網站，以粗略方式設定專案。
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: e25e21984ebadde7076d95c6051b8bfca5b2ce03
+exl-id: f6b861ed-18e4-4c81-92d2-49fadfe4669a
+source-git-commit: 42218450ab03201c69c59053f720954183f4b652
 workflow-type: tm+mt
 source-wordcount: '1222'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
-
-# 重新整理多網站管理 {#repoless-msm}
+# 無存放庫多網站管理 {#repoless-msm}
 
 瞭解最佳實務建議，瞭解如何透過利用單一程式碼基底(由Edge Delivery Services提供)的本地化網站，以粗略方式設定專案。
 
@@ -140,7 +140,7 @@ ht-degree: 1%
                    "admin": [
                        "*@adobe.com"
                    ],
-                   "publish": [
+                   "config_admin": [
                        "<tech-account-id>@techacct.adobe.com"
                    ]
                },

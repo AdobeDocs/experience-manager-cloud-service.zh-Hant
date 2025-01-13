@@ -1,17 +1,17 @@
 ---
-title: 重新報告Stage和Prod環境
+title: 無存放庫階段及生產環境
 description: 瞭解如何以重寫方式運用單一程式碼基底，為您的中繼和生產環境設定個別網站。
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: 709d0661286d023c5cec51be2c51a1123ef7deb6
+exl-id: 701bd9bc-30e8-4654-8248-a06d441d1504
+source-git-commit: 42218450ab03201c69c59053f720954183f4b652
 workflow-type: tm+mt
 source-wordcount: '654'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
-
-# 重新報告Stage和Prod環境 {#repoless-stage-prod}
+# 無存放庫階段及生產環境 {#repoless-stage-prod}
 
 瞭解如何以重寫方式運用單一程式碼基底，為您的中繼和生產環境設定個別網站。
 
@@ -73,7 +73,7 @@ ht-degree: 1%
                    "admin": [
                        "*@adobe.com"
                    ],
-                   "publish": [
+                   "config_admin": [
                        "<tech-account-id>@techacct.adobe.com"
                    ]
                },
