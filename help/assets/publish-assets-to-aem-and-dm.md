@@ -4,9 +4,9 @@ description: Assets檢視中的快速Publish可讓您同時或分別將資產發
 exl-id: 147c1c35-0d81-4458-b4ed-7541d2b0dd54
 feature: Publishing, Dynamic Media
 role: User
-source-git-commit: 8ab19fe82fc390d28d33b17222177fd8486c8fc7
+source-git-commit: 991888d532b3396054bd04c11c7257b61c337725
 workflow-type: tm+mt
-source-wordcount: '1209'
+source-wordcount: '1212'
 ht-degree: 2%
 
 ---
@@ -33,7 +33,7 @@ Experience Manager Assets檢視可讓您靈活地將資產同時發佈至AEM或D
 
 ## 上傳期間的Publish Assets {#piblish-assets-during-upload}
 
-將資產上傳至資料夾時，您可以將資產發佈至AEM和Dynamic Media。 顯示的發佈選項取決於在資產上傳到的資料夾上設定的Dynamic Media發佈模式。 Dynamic Media發佈模式可以設為：
+將資產上傳至資料夾時，您可以將資產發佈至AEM和Dynamic Media。 顯示的發佈選項取決於上傳資產所在資料夾的Dynamic Media發佈模式設定。 Dynamic Media發佈模式可以設為：
 
 * **啟動時：**&#x200B;將資產上傳至此資料夾時，您必須先明確發佈資產，才能提供URL/內嵌連結。
 
@@ -42,7 +42,7 @@ Experience Manager Assets檢視可讓您靈活地將資產同時發佈至AEM或D
 
 ### Dynamic Media Publish模式設定為「啟動時」 {#dynamic-media-publish-mode-set-to-upon-activation}
 
-若要在上傳至資料夾期間發佈資產，並將Dynamic Media Publish模式設定為&#x200B;**啟動時**：
+若要將資產上傳至資料夾(其Dynamic Media Publish模式設定為&#x200B;**啟動時**)時發佈資產：
 
 1. 按一下「**新增Assets**」>「**瀏覽**」>「**瀏覽檔案**」以瀏覽至適當的資料夾以上傳資產。 **Publish選項**&#x200B;區段會將&#x200B;**DM Publish模式**&#x200B;顯示為&#x200B;**啟動時**。
    ![啟動時上傳影像](/help/assets/assets/upload-uactivation.svg)
@@ -50,15 +50,15 @@ Experience Manager Assets檢視可讓您靈活地將資產同時發佈至AEM或D
 
 ### Dynamic Media Publish模式設為「立即」 {#dynamic-media-publish-mode-set-to-immediate}
 
-若要在上傳至資料夾期間發佈資產，且Dynamic Media Publish模式設定為&#x200B;**立即**：
+若要在資產上傳至Dynamic Media Publish模式設為&#x200B;**立即**&#x200B;的資料夾時發佈資產：
 
-1. 按一下「**新增Assets**」>「**瀏覽**」>「**瀏覽檔案**」以瀏覽至適當的資料夾以上傳資產。 Publish選項區段會將&#x200B;**DM Publish模式**&#x200B;顯示為&#x200B;**立即**。
+1. 按一下「**新增Assets**」>「**瀏覽**」>「**瀏覽檔案**」以瀏覽至適當的資料夾以上傳資產。 **Publish選項**&#x200B;區段會將&#x200B;**DM Publish模式**&#x200B;顯示為&#x200B;**立即**。
    ![檔案上傳影像 — 立即模式](/help/assets/assets/resized-image-pdf-svg-new.svg)
 
 
    由於Dynamic Media Publish模式為&#x200B;**立即**，當您按一下&#x200B;**上傳**&#x200B;時，已上傳的資產會自動發佈至Dynamic Media。
 
-2. 選取Publish以&#x200B;**AEM將已上傳的資產發佈至AEM**，然後按一下「上傳」。
+2. 選取&#x200B;**Publish至AEM**&#x200B;以將上傳的資產發佈至AEM，然後按一下「上傳」。
 
    如果您選取&#x200B;**將Publish發佈至AEM**，資產會發佈至AEM和Dynamic Media，否則資產會發佈至Dynamic Media。
 
@@ -68,7 +68,7 @@ Experience Manager Assets檢視可讓您靈活地將資產同時發佈至AEM或D
 
 若要在上傳至資料夾期間發佈資產，且Dynamic Media Publish模式設定為&#x200B;**選擇性Publish**：
 
-1. 按一下「**新增Assets**」>「**瀏覽**」>「**瀏覽檔案**」以瀏覽至適當的資料夾以上傳資產。 Publish選項區段會將&#x200B;**DM Publish模式**&#x200B;顯示為&#x200B;**選擇性Publish**。
+1. 按一下「**新增Assets**」>「**瀏覽**」>「**瀏覽檔案**」以瀏覽至適當的資料夾以上傳資產。 **Publish選項**&#x200B;區段會將&#x200B;**DM Publish模式**&#x200B;顯示為&#x200B;**選擇性Publish**。
    ![上傳影像選擇性筆畫模式](/help/assets/assets/upload-selective.svg)
 
 2. 根據您的需求，選取&#x200B;**Publish到AEM**、**Publish到Dynamic Media**&#x200B;或兩者，然後按一下&#x200B;**上傳**。
