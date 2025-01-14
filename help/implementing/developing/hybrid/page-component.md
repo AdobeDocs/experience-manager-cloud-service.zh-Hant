@@ -4,7 +4,7 @@ description: 在SPA中，頁面元件不提供其子元件的HTML元素，而是
 exl-id: 41b56a60-ebb8-499d-a0ab-a2e920f26227
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: e06766160009eaa1bbc41bbf7cfad967a5195e71
 workflow-type: tm+mt
 source-wordcount: '602'
 ht-degree: 7%
@@ -14,6 +14,8 @@ ht-degree: 7%
 # SPA 頁面元件 {#spa-page-component}
 
 SPA的頁面元件不會透過JSP或HTL檔案和資源物件提供其子元件的HTML元素。 此操作委派給 SPA 框架。子元件的表示會擷取為JSON資料結構（即模型）。 SPA元件會接著根據提供的JSON模型新增至頁面。 因此，頁面元件初始內文構成與其預先演算的HTML對應內容不同。
+
+{{ue-over-spa}}
 
 ## 頁面模型管理 {#page-model-management}
 

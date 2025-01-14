@@ -4,7 +4,7 @@ description: Adobe Experience Platform Launch是在SPA中實作Analytics、Targe
 exl-id: 95008563-c1e5-4685-9c6d-5226d4a66c53
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: e06766160009eaa1bbc41bbf7cfad967a5195e71
 workflow-type: tm+mt
 source-wordcount: '161'
 ht-degree: 0%
@@ -14,6 +14,8 @@ ht-degree: 0%
 # SPA與Adobe Experience Platform Launch整合 {#spa-and-adobe-experience-platform-launch-integration}
 
 Adobe Experience Platform Launch是在單頁應用程式(SPA)中實作Analytics、Target和Audience Manager的建議方式。
+
+{{ue-over-spa}}
 
 ## 教學課程 {#tutorial}
 

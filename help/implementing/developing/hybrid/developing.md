@@ -4,7 +4,7 @@ description: 本文介紹當聘請前端開發人員為AEM開發SPA時應考慮�
 exl-id: f6c6f31a-69ad-48f6-b995-e6d0930074df
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: e06766160009eaa1bbc41bbf7cfad967a5195e71
 workflow-type: tm+mt
 source-wordcount: '2028'
 ht-degree: 8%
@@ -16,6 +16,8 @@ ht-degree: 8%
 單頁應用程式 (SPA) 可為網站使用者提供引人入勝的體驗。開發人員希望能使用 SPA 框架建立網站，而作者則想在 AEM 中為使用這類框架建立網站，順暢地編輯內容。
 
 本文介紹當請前端開發人員為AEM開發SPA時應考慮的重要問題，並概述有關在AEM上部署SPA的AEM架構。
+
+{{ue-over-spa}}
 
 ## AEM的SPA開發原則 {#spa-development-principles-for-aem}
 
@@ -72,7 +74,7 @@ SPA應該僅依賴內容的動態呈現。 此預期是AEM擷取並轉譯內容�
    <th><strong>缺點</strong></th>
   </tr>
   <tr>
-   <td>使用AEM做為Headless CMS，而不使用<a href="/help/implementing/developing/hybrid/reference-materials.md">SPA Editor SDK架構。</a></td>
+   <td>AEM用作Headless CMS，而不使用<a href="/help/implementing/developing/hybrid/reference-materials.md">SPA Editor SDK架構。</a></td>
    <td>前端開發人員可完全控制應用程式。</td>
    <td><p>內容作者無法使用AEM的內容製作體驗。</p> <p>如果程式碼包含靜態參照或路由，就無法移植或重複使用。</p> <p>不允許使用範本編輯器，因此前端開發人員必須透過JCR維護可編輯的範本。</p> </td>
   </tr>
@@ -82,7 +84,7 @@ SPA應該僅依賴內容的動態呈現。 此預期是AEM擷取並轉譯內容�
    <td><p>內容作者受限於有限的AEM內容製作體驗。</p> <p>如果程式碼包含靜態參考或路由，則可能無法移植或重複使用。</p> <p>不允許使用範本編輯器，因此前端開發人員必須透過JCR維護可編輯的範本。</p> </td>
   </tr>
   <tr>
-   <td>專案會完全使用SPA編輯器SDK，而前端元件會開發為程式庫，而應用程式的內容結構會委派給AEM。</td>
+   <td>專案會完全使用SPA編輯器SDK，前端元件會開發為程式庫，而應用程式的內容結構會委派給AEM。</td>
    <td><p>應用程式可重複使用且可移植。</p> <p>內容作者可以使用AEM的內容製作體驗來編輯應用程式。<br /> </p> <p>SPA與範本編輯器相容。</p> </td>
    <td><p>開發人員無法控制應用程式的結構和委派給AEM的內容部分。</p> <p>開發人員仍可保留應用程式的區域，以供不應使用AEM編寫的內容使用。</p> </td>
   </tr>
@@ -100,7 +102,7 @@ SPA應該僅依賴內容的動態呈現。 此預期是AEM擷取並轉譯內容�
 請依照下列步驟操作，讓現有的SPA準備好搭配AEM使用。
 
 1. **將您的JS元件模組化。** — 使它們能夠以任何順序、位置和大小呈現。
-1. **使用SDK提供的容器，將您的元件放置在熒幕上。** - AEM提供頁面和段落系統元件供您使用。
+1. **使用SDK提供的容器，將您的元件放在熒幕上。** - AEM提供頁面和段落系統元件供您使用。
 1. **為每個JS元件建立AEM元件。** - AEM元件會定義對話方塊和JSON輸出。
 
 ## 面向前端開發人員的說明 {#instructions-for-front-end-developers}
@@ -212,4 +214,4 @@ AEM的一般架構（包括開發、編寫和發佈環境）在使用SPA時不�
 * [SPA 編輯器概述](editor-overview.md)更深入地介紹 AEM 和 SPA 之間的通訊模型。
 * [WKND SPA專案](wknd-tutorial.md)是在AEM中實作簡單SPA專案的逐步教學課程。
 * [SPA的動態模型到元件對應](model-to-component-mapping.md)說明動態模型到元件對應，以及它在AEM中SPA內的運作方式。
-* [SPA Blueprint](blueprint.md)讓您深入瞭解SPA SDK for AEM的運作方式，以防您想要在AEM中針對React或Angular以外的架構實作SPA。 或者，您只是想要更深入的瞭解。
+* [SPA Blueprint](blueprint.md)讓您深入瞭解適用於AEM的SPA SDK如何運作，以防您想要在AEM中針對React或Angular以外的架構實作SPA。 或者，您只是想要更深入的瞭解。

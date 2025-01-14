@@ -5,9 +5,9 @@ exl-id: d74848f2-683e-49e1-9374-32596ca5d7d7
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: a69658d5657f4e1a4feed20cf7eda5e9899aaa3d
 workflow-type: tm+mt
-source-wordcount: '1259'
+source-wordcount: '1250'
 ht-degree: 100%
 
 ---
@@ -127,7 +127,6 @@ RemotePage 元件允許在 AEM 中呈現外部 SPA。
 * [SPA 簡介和逐步解說](/help/implementing/developing/hybrid/introduction.md)- 對 AEM 中的 SPA 有很好的介紹。
 * [開發 SPA 以在 AEM 中使用](/help/implementing/developing/hybrid/developing.md) - 說明如何開發 SPA 以在 AEM 中使用
 * [SPA 編輯器概述](/help/implementing/developing/hybrid/editor-overview.md) - 詳細說明 SPA 編輯器的運作原理
-* [伺服器端呈現作業](/help/implementing/developing/hybrid/ssr.md) - 如何為 AEM SPA 設定 SSR
 * [SPA 參考文件](/help/implementing/developing/hybrid/reference-materials.md) - 開放原始碼 AEM SPA GitHub 專案的 JavaScript API 參考和連結
 * [內容片段](/help/sites-cloud/administering/content-fragments/managing.md#creating-content-fragments) - 如何建立內容片段
 * [AEM 專案原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) - 一種 Maven 範本，其依照最佳做法建立簡化的 Adobe Experience Manager (AEM) 專案，作為您網站的起點。

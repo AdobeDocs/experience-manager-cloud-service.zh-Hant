@@ -4,7 +4,7 @@ description: AEM SPA Editor SDK曾在一系列AEM Gems研討會中亮相。 此�
 exl-id: 93c950be-be80-42d5-93eb-805a91b6ebba
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 1ad37259616147113a222267ffeb3956cb5ac9bf
+source-git-commit: 9441c4e489cc338548aa632a568f45dc567d66cf
 workflow-type: tm+mt
 source-wordcount: '266'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 # SPA 深入探討 {#spa-deep-dives}
 
 AEM SPA Editor SDK曾在一系列AEM Gems研討會中亮相。 [Adobe Experience Manager Gems](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-index.html)是Adobe專家提供的一系列技術深入探討。 此系列是由Adobe工程師所託管，可以作為一個絕佳的指南，讓您從較低層級更深入地瞭解AEM SPA Editor SDK。
+
+{{ue-over-spa}}
 
 ## Gem研討會 {#gem-sessions}
 

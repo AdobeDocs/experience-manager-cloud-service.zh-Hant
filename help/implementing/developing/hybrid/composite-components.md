@@ -4,7 +4,7 @@ description: 瞭解如何建立自己的複合元件，也就是由AEM單頁應�
 exl-id: fa1ab1dd-9e8e-4e2c-aa9a-5b46ed8a02cb
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
+source-git-commit: e06766160009eaa1bbc41bbf7cfad967a5195e71
 workflow-type: tm+mt
 source-wordcount: '782'
 ht-degree: 1%
@@ -18,6 +18,8 @@ ht-degree: 1%
 當在AEM單頁應用程式(SPA)編輯器架構中正確實作複合元件時，內容作者可以拖放此類元件（就像拖放任何其他元件一樣），但還是可以個別編輯組成複合元件的每個元件。
 
 本文示範如何將複合元件新增至單頁應用程式，以便順暢地與AEM SPA編輯器搭配運作。
+
+{{ue-over-spa}}
 
 ## 使用案例 {#use-case}
 

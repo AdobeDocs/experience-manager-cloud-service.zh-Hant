@@ -1,10 +1,10 @@
 ---
 title: SPA的動態模型至元件對應
-description: 本文說明適用於AEM的JavaScript SPA SDK中如何進行動態模型到元件的對應。
+description: 本文說明適用於AEM的JavaScript SPA SDK中如何產生動態模型到元件的對應。
 exl-id: 3a7b3f26-4a09-40c1-af03-bb8408a68e57
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: e06766160009eaa1bbc41bbf7cfad967a5195e71
 workflow-type: tm+mt
 source-wordcount: '315'
 ht-degree: 0%
@@ -14,6 +14,8 @@ ht-degree: 0%
 # SPA的動態模型至元件對應 {#dynamic-model-to-component-mapping-for-spas}
 
 本檔案說明適用於AEM的JavaScript SPA SDK中元件對映的動態模型如何發生。
+
+{{ue-over-spa}}
 
 ## 元件對應模組 {#componentmapping-module}
 

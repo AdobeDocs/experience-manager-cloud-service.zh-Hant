@@ -4,7 +4,7 @@ description: 本文介紹了一個SPA應用計畫範例，說明它是如何組�
 exl-id: 13998526-65e7-4d1b-bd47-452bad3780a2
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
+source-git-commit: e06766160009eaa1bbc41bbf7cfad967a5195e71
 workflow-type: tm+mt
 source-wordcount: '1127'
 ht-degree: 5%
@@ -20,6 +20,8 @@ SPA編寫功能提供全方位的解決方案，可支援AEM中的SPA。 本文�
 >[!NOTE]
 >
 >本文章內容以React架構為基礎。 有關Angular架構的對應檔案，請參閱[AEM中的SPA快速入門 — Angular](getting-started-angular.md)。
+
+{{ue-over-spa}}
 
 ## 簡介 {#introduction}
 
@@ -268,4 +270,4 @@ export default MapTo('my-react-app/react/components/structure/page')(PageClass, 
 * [SPA 編輯器概述](editor-overview.md)更深入地介紹 AEM 和 SPA 之間的通訊模型。
 * [WKND SPA專案](wknd-tutorial.md)是在AEM中實作簡單SPA專案的逐步教學課程。
 * [SPA的動態模型到元件對應](model-to-component-mapping.md)說明動態模型到元件對應，以及它在AEM中SPA內的運作方式。
-* [SPA Blueprint](blueprint.md)讓您深入瞭解AEM適用的SPA SDK如何運作，以防您想要在AEM中針對React或Angular以外的架構實作SPA，或只是想深入瞭解。
+* [SPA Blueprint](blueprint.md)讓您深入瞭解適用於AEM的SPA SDK如何運作，以防您想要在AEM中針對React或Angular以外的架構實作SPA，或只是想要更深入的瞭解。

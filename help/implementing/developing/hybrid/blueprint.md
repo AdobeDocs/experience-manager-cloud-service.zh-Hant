@@ -4,7 +4,7 @@ description: 本檔案說明任何SPA架構都應該履行的一般且獨立於�
 exl-id: 9d47c0e9-600c-4f45-9169-b3c9bbee9152
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: e06766160009eaa1bbc41bbf7cfad967a5195e71
 workflow-type: tm+mt
 source-wordcount: '2022'
 ht-degree: 0%
@@ -14,6 +14,8 @@ ht-degree: 0%
 # SPA 藍圖 {#spa-blueprint}
 
 若要讓作者能夠使用AEM SPA編輯器來編輯SPA的內容，SPA必須滿足幾項要求。
+
+{{ue-over-spa}}
 
 ## 簡介 {#introduction}
 
@@ -51,7 +53,7 @@ ht-degree: 0%
 
 #### 動態模型到元件對應 {#dynamic-model-to-component-mapping}
 
-如需如何在AEM的JavaScript SPA SDK中發生動態模型到元件對應的詳細資訊，請參閱文章[SPA的動態模型到元件對應](model-to-component-mapping.md)。
+如需有關在AEM的JavaScript SPA SDK中如何發生動態模型到元件對應的詳細資訊，請參閱文章[SPA的動態模型到元件對應](model-to-component-mapping.md)。
 
 ### 框架特定層 {#framework-specific-layer}
 

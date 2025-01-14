@@ -4,9 +4,9 @@ description: 本檔案說明將獨立SPA上傳到AEM執行個體、新增內容�
 exl-id: 7978208d-4a6e-4b3a-9f51-56d159ead385
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
+source-git-commit: a69658d5657f4e1a4feed20cf7eda5e9899aaa3d
 workflow-type: tm+mt
-source-wordcount: '2374'
+source-wordcount: '2370'
 ht-degree: 1%
 
 ---
@@ -14,6 +14,8 @@ ht-degree: 1%
 # 在 AEM 中編輯外部 SPA {#editing-external-spa-within-aem}
 
 決定要在外部SPA和AEM之間進行[何種程度的整合](/help/implementing/developing/headful-headless.md)時，請考量您通常必須能夠編輯和檢視AEM中的SPA。
+
+{{ue-over-spa}}
 
 ## 概觀 {#overview}
 
@@ -79,7 +81,7 @@ npm install --save @adobe/aem-spa-component-mapping @adobe/aem-spa-page-model-ma
 
 * `path` — 初始化時，會擷取定義路徑上的模型並儲存在`ModelStore`中。 如有需要，可使用此路徑在初始化時擷取`rootModel`。
 * `modelClient` — 允許提供負責擷取模型的自訂使用者端。
-* `model` — 作為引數傳遞的`model`物件通常在使用SSR](/help/implementing/developing/hybrid/ssr.md)的[時填入。
+* `model` — 使用SSR時，通常會填入作為引數傳遞的`model`物件。
 
 ### AEM Authorable Leaf元件 {#authorable-leaf-components}
 
@@ -375,4 +377,3 @@ RemotePage元件預期實作會提供資產資訊清單，例如GitHub](https://
 * [SPA參考資料（API參考）](/help/implementing/developing/hybrid/reference-materials.md)
 * [SPA Blueprint和PageModelManager](/help/implementing/developing/hybrid/blueprint.md#pagemodelmanager)
 * [SPA模型路由](/help/implementing/developing/hybrid/routing.md)
-* [SPA和伺服器端轉譯](/help/implementing/developing/hybrid/ssr.md)
