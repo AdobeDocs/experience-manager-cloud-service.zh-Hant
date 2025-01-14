@@ -4,15 +4,15 @@ Description: Learn how to integrate your Marketo Engage instance with AEM Forms.
 Keywords: How to connect a Marketo instance with form? , Connect a form to Marketo, Integrate a form with Marketo Engage, Integrate an Adaptive Form with a Marketo instance.
 Feature: Adaptive Forms, Form Data Model
 Role: User, Developer
-source-git-commit: 681c194f997ab66f93beedad4eea273614e6797d
+exl-id: 74cd25f9-1ee1-4f3f-8e02-8714071e7c86
+source-git-commit: e46c5afac945620cc44e9064956848acecc786bf
 workflow-type: tm+mt
 source-wordcount: '731'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
-
-# 將Marketo Engage與AEM Forms整合
+# 將 Marketo Engage 與 AEM Forms 進行整合
 
 <span class="preview">此功能可在早期採用者方案下使用。 您可以從您的官方電子郵件ID寫信到aem-forms-ea@adobe.com ，以加入率先採用者計畫並請求存取該功能。</span>
 
@@ -66,24 +66,26 @@ ht-degree: 1%
 
 ![工作流程](/help/forms/assets/workflow-marketo-1.png)
 
+>[!VIDEO](https://video.tv.adobe.com/v/3442865/engage-marketo-aem-forms-aem)
+
 雲端設定會將您的Experience Manager執行個體連線至Adobe Marketo Engage執行個體。 執行以下步驟來建立Marketo Engage雲端設定：
 
 1. 移至&#x200B;**工具** > **Cloud Service** > **Marketo Engage**。
 
    ![Marketo Engage](/help/forms/assets/marketo-engage.png)
 
-1. 開啟資料夾以裝載組態，然後按一下[建立]。**** **建立Marketo Engage組態**&#x200B;視窗會出現。
+2. 開啟資料夾以裝載組態，然後按一下[建立]。**** **建立Marketo Engage組態**&#x200B;視窗會出現。
 
    >[!NOTE]
    >
    > 您也可以[設定雲端服務設定的資料夾](/help/forms/configure-data-sources.md#configure-folder-for-cloud-service-configurations)。
 
-1. 指定組態的&#x200B;**標題**&#x200B;和要連線至服務的認證。 您可以從Adobe Marketo Engage儀表板擷取驗證認證：
+3. 指定組態的&#x200B;**標題**&#x200B;和要連線至服務的認證。 您可以從Adobe Marketo Engage儀表板擷取驗證認證：
    * **使用者端識別碼**&#x200B;和&#x200B;**使用者端密碼**&#x200B;可在&#x200B;**管理員** > **整合** > **LaunchPoint**&#x200B;中使用，方法是選取自訂服務並按一下&#x200B;**檢視詳細資料**。
    * **身分URL**&#x200B;可在&#x200B;**管理員** > **整合** > **網頁服務**&#x200B;中使用，在&#x200B;**REST API**&#x200B;區段中做為&#x200B;**身分**。
 
-1. 按一下&#x200B;**連線**。  連結成功後，就會顯示 `Authentication Successful` 訊息。
-1. 按一下&#x200B;**[!UICONTROL 建立]**&#x200B;以儲存雲端組態設定。
+4. 按一下&#x200B;**連線**。  連結成功後，就會顯示 `Authentication Successful` 訊息。
+5. 按一下&#x200B;**[!UICONTROL 建立]**&#x200B;以儲存雲端組態設定。
 
 ![Marketo Engage雲端設定](/help/forms/assets/marketo-engage-cloud-configuration.png)
 
@@ -102,6 +104,3 @@ ht-degree: 1%
 ## 另請參閱
 
 {{marketo-engage-see-also}}
-
-
-

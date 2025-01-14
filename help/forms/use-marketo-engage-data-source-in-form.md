@@ -4,15 +4,15 @@ Description: Learn how to use Marketo Engage schema in Adaptive Forms.
 Keywords: Use Marketo Engage data source in Adaptive Forms, How to connect a Marketo instance data source with form? , Connect a form to Marketo.
 Feature: Adaptive Forms, Form Data Model
 Role: User, Developer
-source-git-commit: 681c194f997ab66f93beedad4eea273614e6797d
+exl-id: 4656ec65-f1ad-4e97-8d93-25933cdc7f7b
+source-git-commit: e46c5afac945620cc44e9064956848acecc786bf
 workflow-type: tm+mt
 source-wordcount: '463'
-ht-degree: 1%
+ht-degree: 3%
 
 ---
 
-
-# 設定現有最適化Forms的Marketo Engage資料來源
+# 針對現有的最適化表單設定 Marketo Engage 資料來源
 
 <span class="preview">此功能可在早期採用者方案下使用。 您可以從您的官方電子郵件ID寫信到aem-forms-ea@adobe.com ，以加入率先採用者計畫並請求存取該功能。</span>
 
@@ -36,16 +36,18 @@ ht-degree: 1%
 
 ## 如何為Marketo Engage資料來源設定現有的最適化表單？
 
+>[!VIDEO](https://video.tv.adobe.com/v/3442871/marketo-aem-forms-aem-marketo-engage)
+
 若要使用Marketo Engage資料來源設定最適化表單，請執行以下步驟：
 1. 登入您的[!DNL Experience Manager Forms]作者執行個體。
 
-1. 開啟最適化表單進行編輯。
-1. 開啟內容樹狀結構並選取&#x200B;**[!UICONTROL 參考線容器]**。
-1. 按一下最適化表單容器屬性![最適化表單容器屬性](/help/forms/assets/configure-icon.svg)圖示。 可設定資料來源的最適化表單容器對話方塊隨即開啟。
-1. 開啟&#x200B;**[!UICONTROL 資料模型]**&#x200B;標籤，並選取表單模型做為&#x200B;**聯結器**。
-1. 從下拉式清單中選取&#x200B;**[!UICONTROL 聯結器]**。
+2. 開啟最適化表單進行編輯。
+3. 開啟內容樹狀結構並選取&#x200B;**[!UICONTROL 參考線容器]**。
+4. 按一下最適化表單容器屬性![最適化表單容器屬性](/help/forms/assets/configure-icon.svg)圖示。 可設定資料來源的最適化表單容器對話方塊隨即開啟。
+5. 開啟&#x200B;**[!UICONTROL 資料模型]**&#x200B;標籤，並選取表單模型做為&#x200B;**聯結器**。
+6. 從下拉式清單中選取&#x200B;**[!UICONTROL 聯結器]**。
 
-1. 選取&#x200B;**[!UICONTROL 聯結器]**&#x200B;之後，您可以選取雲端設定。
+7. 選取&#x200B;**[!UICONTROL 聯結器]**&#x200B;之後，您可以選取雲端設定。
 
    ![選取Marketo聯結器](/help/forms/assets/select-marketo-connector.png)
 
@@ -53,7 +55,7 @@ ht-degree: 1%
 
    ![Marketo Data Source](/help/forms/assets/marketo-engage-data-source.png)
 
-1. 按一下&#x200B;**[!UICONTROL 「完成」]**。
+8. 按一下&#x200B;**[!UICONTROL 「完成」]**。
 
 或者，您也可以編輯最適化表單屬性，以變更其相關聯的設定。
 
@@ -81,5 +83,3 @@ ht-degree: 1%
 ## 另請參閱
 
 {{marketo-engage-see-also}}
-
-

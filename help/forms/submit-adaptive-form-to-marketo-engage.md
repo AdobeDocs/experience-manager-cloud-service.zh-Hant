@@ -4,15 +4,15 @@ Description: Learn how to configure the submit action of Adaptive Form to send d
 Keywords: Submit data to Marketo engage, Configure submit action as Submit to Marketo Engage
 Feature: Adaptive Forms, Form Data Model
 Role: User, Developer
-source-git-commit: 681c194f997ab66f93beedad4eea273614e6797d
+exl-id: 0683564b-1ac4-42b4-bc08-101c4fdef286
+source-git-commit: e46c5afac945620cc44e9064956848acecc786bf
 workflow-type: tm+mt
 source-wordcount: '433'
-ht-degree: 2%
+ht-degree: 4%
 
 ---
 
-
-# 設定提交動作以Marketo Engage現有表單
+# 針對現有表單設定提交至 Marketo Engage 的動作
 
 <span class="preview">此功能可在早期採用者方案下使用。 您可以從您的官方電子郵件ID寫信到aem-forms-ea@adobe.com ，以加入率先採用者計畫並請求存取該功能。</span>
 
@@ -34,13 +34,15 @@ ht-degree: 2%
 
 ## 如何設定提交動作以Marketo Engage現有表單？
 
+>[!VIDEO](https://video.tv.adobe.com/v/3442866/submit-action-marketo-engage-marketo-aem-aem-forms-engage)
+
 您可以設定最適化表單的提交動作，將資料提交至Adobe Marketo Engage。 若要將提交動作設定為Marketo Engage，請執行下列步驟：
 
 1. 開啟最適化表單進行編輯。
-1. 開啟內容樹狀結構並選取&#x200B;**[!UICONTROL 參考線容器]**。
-1. 按一下最適化表單容器屬性![最適化表單容器屬性](/help/forms/assets/configure-icon.svg)圖示。 用於設定提交動作的調適型表單容器對話方塊開啟。
-1. 開啟&#x200B;**[!UICONTROL 提交]**&#x200B;標籤，並選取提交動作作為&#x200B;**提交至Marketo Engage**。
-1. 按一下&#x200B;**[!UICONTROL 「完成」]**。
+2. 開啟內容樹狀結構並選取&#x200B;**[!UICONTROL 參考線容器]**。
+3. 按一下最適化表單容器屬性![最適化表單容器屬性](/help/forms/assets/configure-icon.svg)圖示。 用於設定提交動作的調適型表單容器對話方塊開啟。
+4. 開啟&#x200B;**[!UICONTROL 提交]**&#x200B;標籤，並選取提交動作作為&#x200B;**提交至Marketo Engage**。
+5. 按一下&#x200B;**[!UICONTROL 「完成」]**。
 
 ![Marketo提交動作](/help/forms/assets/marketo-engage-submit-action.png){width=50%， height=50%}
 
