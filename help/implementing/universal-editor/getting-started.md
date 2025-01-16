@@ -4,10 +4,10 @@ description: 了解如何存取 Universal Editor，以及如何開始檢測您�
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 8357caf2b0d396f6a1bd7b6160d6b48d8d6c026c
+source-git-commit: 75acf37e7804d665e38e9510cd976adc872f58dd
 workflow-type: tm+mt
-source-wordcount: '627'
-ht-degree: 62%
+source-wordcount: '956'
+ht-degree: 41%
 
 ---
 
@@ -119,6 +119,51 @@ data-aue-resource="urn:<referenceName>:<resource>"
 ```html
 <meta name="urn:adobe:aue:config:extensions" content="<url>,<url>,<url>">
 ```
+
+## 定義應開啟通用編輯器的內容路徑或`sling:resourceType`。 (可選) {#content-paths}
+
+如果您有使用[頁面編輯器，](/help/sites-cloud/authoring/page-editor/introduction.md)的現有AEM專案，內容作者編輯頁面時，頁面會使用頁面編輯器自動開啟。 您可以根據內容路徑或`sling:resourceType`定義AEM應開啟的編輯器，讓您的作者體驗順暢無礙，無論所選內容需要哪個編輯器。
+
+1. 開啟Configuration Manager。
+
+   `http://<host>:<port>/system/console/configMgr`
+
+1. 在清單中找到&#x200B;**通用編輯器URL服務**，然後按一下&#x200B;**編輯設定值**。
+
+1. 定義應開啟通用編輯器的內容路徑或`sling:resourceType`。
+
+   * 在&#x200B;**Universal Editor Opening Mapping**&#x200B;欄位中，提供開啟Universal Editor的路徑。
+   * 在應由通用編輯器開啟的&#x200B;**Sling：resourceTypes**&#x200B;欄位中，提供由通用編輯器直接開啟的資源清單。
+
+1. 按一下「**儲存**」。
+
+AEM將根據此設定，以下列順序開啟頁面的通用編輯器。
+
+1. AEM將會檢查`Universal Editor Opening Mapping`底下的對應，如果內容位於此處定義的任何路徑下，則會為其開啟Universal Editor。
+1. 對於不在`Universal Editor Opening Mapping`中定義的路徑下的內容，AEM會檢查內容的`resourceType`是否與&#x200B;**Sling：resourceTypes中定義的內容相符（應由通用編輯器**&#x200B;開啟），如果內容符合其中一個型別，則在`${author}${path}.html`為其開啟通用編輯器。
+1. 否則，AEM會開啟頁面編輯器。
+
+下列變數可用於在&#x200B;**Universal Editor Opening Mapping**&#x200B;欄位中定義您的對應。
+
+* `path`：要開啟之資源的內容路徑
+* `localhost`： `localhost`的Externalizer專案沒有結構描述，例如`localhost:4502`
+* `author`：沒有結構描述的作者的Externalizer專案，例如`localhost:4502`
+* `publish`：用於沒有結構描述的發行的Externalizer專案，例如`localhost:4503`
+* `preview`：預覽的外部化程式專案，不含結構描述，例如`localhost:4504`
+* `env`： `prod`、`stage`、`dev`根據定義的Sling執行模式
+* `token`： `QueryTokenAuthenticationHandler`所需的查詢權杖
+
+### 範例對應 {#example-mappings}
+
+* 在AEM作者上開啟`/content/foo`下的所有頁面：
+
+   * `/content/foo:${author}${path}.html?login-token=${token}`
+   * 這會導致開啟`https://localhost:4502/content/foo/x.html?login-token=<token>`
+
+* 在遠端NextJS伺服器上開啟`/content/bar`下的所有頁面，提供所有變數作為資訊：
+
+   * `/content/bar:nextjs.server${path}?env=${env}&author=https://${author}&publish=https://${publish}&login-token=${token}`
+   * 這會導致開啟`https://nextjs.server/content/bar/x?env=prod&author=https://localhost:4502&publish=https://localhost:4503&login-token=<token>`
 
 ## 您已準備好使用 Universal Editor {#youre-ready}
 
