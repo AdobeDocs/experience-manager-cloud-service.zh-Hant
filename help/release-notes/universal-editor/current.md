@@ -1,20 +1,20 @@
 ---
-title: 通用編輯器 2024.12.02 發行說明
-description: 這是通用編輯器 2024.12.02 版本的發行說明。
+title: 通用編輯器 2054.01.16 發行說明
+description: 此文件為通用編輯器 2025.01.16 版本的發行說明。
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 2aae8c63358680758e4f5324f38dea1bc2c47155
-workflow-type: ht
-source-wordcount: '300'
-ht-degree: 100%
+source-git-commit: 14bc45917f56ecf358278848e7e830afb1fedccd
+workflow-type: tm+mt
+source-wordcount: '236'
+ht-degree: 19%
 
 ---
 
 
-# 通用編輯器 2024.12.02 發行說明 {#release-notes}
+# 通用編輯器 2025.01.16 發行說明 {#release-notes}
 
-這是通用編輯器 2024 年 12 月 2 日版本的發行說明。
+這些是2025年1月16日發行的Universal Editor的發行說明。
 
 >[!TIP]
 >
@@ -22,18 +22,15 @@ ht-degree: 100%
 
 ## 新增功能 {#what-is-new}
 
-* **內容樹的鍵盤導覽**：位於側面板的[內容樹](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode)現在可以完全透過鍵盤存取。
-   * 作者可以使用標準鍵盤控制來導覽樹狀檢視項目及進行互動，符合 [WCAG 2.1 準則](/help/sites-cloud/authoring/page-editor/accessible-content.md)的無障礙標準。
-   * 此增強功能確保樹狀結構中所有互動式元素均能透過鍵盤操作，藉此提高包容性，方便依賴鍵盤進行瀏覽的使用者。
-* **取消選取可編輯元素**：作者現在可以取消選取頁面上先前選取的可編輯元素。
-   * 當作者想要檢視頁面但不想看到使用中的選取邊框時，這項功能可以消除相關干擾。
-* **片段選擇器**：在 AEM as a Cloud Service 執行個體上，片段參考現在開啟片段選擇器作為內容選擇器，能提供更好的功能，例如遵守允許的內容片段模型、搜尋內容片段，以及提升整體體驗。
-   * 這與其他 Adobe 使用者介面保持一致並增強一致性。
-   * [AEM 6.5 環境](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction)仍繼續使用現有的內容選取器。
-* **容器說明**：[屬性面板](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-panel-properties-rail)中用於參考內容的[容器元件](/help/implementing/universal-editor/field-types.md#container)，現在支援說明屬性，顯示於容器欄位上方。
-   * 此新增功能為作者提供其正在編輯的分組欄位的背景資訊，讓相關內容更加清楚。
+* **棄用CORS程式庫&lt; 3.0.0** — 為了確保未來的相容性並增強安全性，通用編輯器現在僅支援3.0.0版或更新版本的
+  `@Adobe Express/universal-editor-cors`資料庫。
+   * 程式庫現在僅透過[`universal-editor-service.adobe.io/cors.js`.](http://universal-editor-service.adobe.io/cors.js)傳遞
+   * 使用者開啟使用舊版CORS程式庫的頁面時，系統會顯示淘汰通知，提示使用者更新。
+* **登陸頁面的擴充點** - [已引入新的擴充點](/help/implementing/universal-editor/customizing.md#extending)，擴充功能會顯示在Universal Editor登陸頁面的側邊欄中。
+   * 現在，開發人員可指定擴充功能是否適用於編輯器、登陸頁面或兩者，以提供更優異的自訂和可用性。
 
 ## 其他改良功能 {#other-improvements}
 
-* **RTF 文字欄位同步**：屬性面板中 RTF 文字欄位內原始內容和呈現內容的同步有所改善，解決了 Edge Delivery Services 專案中 RTF 文字內容與呈現之表示方式有所不同的問題。
-* **編輯模式事件**：通用編輯器現在能夠可靠地發出編輯模式事件，包括在重新載入遠端應用程式之後。
+* **修正登陸頁面上「最近」專案中的無效URL** — 已解決在Universal Editor登陸頁面上「最近」清單中顯示的URL損毀的問題。
+* **Unified Shell中的佈景主題同步處理** — 通用編輯器現在會動態同步處理佈景主題與系統的Unified Shell設定，並自動在明暗模式之間進行調整。
+   * 這可確保跨微前端（包括片段和資產選擇器）的一致視覺外觀。
