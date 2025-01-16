@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的運作方式以及該軟體可以為您做哪些事。
 breadcrumb-title: 使用手冊
 user-guide-title: 'AEM as a Cloud Service '
-source-git-commit: bd2162d7b2187637d76a5182a0cae39b5bac8791
+source-git-commit: b491afccbd9e92b59c3d752c0d066efd34f2c776
 workflow-type: tm+mt
-source-wordcount: '5958'
+source-wordcount: '5960'
 ht-degree: 99%
 
 ---
@@ -1255,6 +1255,7 @@ ht-degree: 99%
          + [模型定義、欄位和元件類型](/help/implementing/universal-editor/field-types.md)
          + [SecurBank 範例應用程式](/help/implementing/universal-editor/securbank.md)
          + [事件](/help/implementing/universal-editor/events.md)
+         + [篩選元件](/help/implementing/universal-editor/filtering.md)
          + [自訂](/help/implementing/universal-editor/customizing.md)
          + [架構](/help/implementing/universal-editor/architecture.md)
          + [驗證](/help/implementing/universal-editor/authentication.md)

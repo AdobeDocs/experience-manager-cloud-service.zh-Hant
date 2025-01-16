@@ -5,7 +5,7 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: e4db952e8284dba578c6b3ac86405e9ab640e7c0
+source-git-commit: 384f8a1301ea488e0b2aa493389d090896fe3b33
 workflow-type: tm+mt
 source-wordcount: '1378'
 ht-degree: 37%
@@ -176,7 +176,7 @@ Universal Editor 支援在任意實作中編輯任何方面的內容，以便提
 
 >[!NOTE]
 >
->如果在來源和目標容器之間設定不同的[元件篩選器](/help/implementing/universal-editor/customizing.md#filtering-components)，則無法在容器之間移動元件。
+>如果在來源和目標容器之間設定不同的[元件篩選器](/help/implementing/universal-editor/filtering.md)，則無法在容器之間移動元件。
 
 ## 預覽內容 {#previewing-content}
 

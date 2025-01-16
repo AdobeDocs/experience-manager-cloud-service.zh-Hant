@@ -3,13 +3,13 @@ title: 元件定義
 description: 詳細瞭解元件定義與通用編輯器之間的JSON合約。
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 7f54d2ee61d2b92e7a0f02c66ce8ee5cdbedd73c
+exl-id: e1bb1a54-50c0-412a-a8fd-8167c6f47d2b
+source-git-commit: 384f8a1301ea488e0b2aa493389d090896fe3b33
 workflow-type: tm+mt
 source-wordcount: '545'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
-
 
 # 元件定義 {#component-definition}
 
@@ -79,7 +79,7 @@ ht-degree: 0%
 * `title`會定義UI中所顯示元件的文字說明。
 * `id`可唯一識別元件。
    * 相同`id`的[元件模型](/help/implementing/universal-editor/field-types.md#model-structure)定義了元件的欄位。
-   * 因為它是唯一的，所以例如可以在[篩選定義](/help/implementing/universal-editor/customizing.md#filtering-components)中使用它來決定哪些元件可以新增到容器中。
+   * 因為它是唯一的，所以例如可以在[篩選定義](/help/implementing/universal-editor/filtering.md)中使用它來決定哪些元件可以新增到容器中。
 
 ## `plugins` {#plugins}
 

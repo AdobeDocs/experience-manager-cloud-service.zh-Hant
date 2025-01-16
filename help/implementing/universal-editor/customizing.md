@@ -4,10 +4,10 @@ description: 瞭解不同的擴充點和其他功能，這些功能可讓您自�
 exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 732b0648e7114594cb8d35df03f83b842d62736e
+source-git-commit: afcb3cbc2b0868de7bac9446eb07ae30c033de66
 workflow-type: tm+mt
-source-wordcount: '646'
-ht-degree: 1%
+source-wordcount: '579'
+ht-degree: 4%
 
 ---
 
@@ -41,39 +41,7 @@ Universal Editor提供數個內建選項，可用於自訂其功能。
 
 ### 篩選元件 {#filtering-components}
 
-使用通用編輯器時，您可以限制每個容器元件允許的元件。 若要這麼做，您必須引入其他指令碼標籤，該標籤會指向篩選定義。
-
-```html
-<script type="application/vnd.adobe.aue.filter+json" src="/static/filter-definition.json"></script>
-```
-
-篩選定義可能如下所示，將容器限製為僅允許新增文字和影像。
-
-```json
-[
-  {
-    "id": "container-filter",
-     "components": ["text", "image"]
-   }
-]
-```
-
-然後，您可以新增屬性`data-aue-filter`，傳遞您先前定義的篩選器ID，以參照容器元件的篩選器定義。
-
-```html
-data-aue-filter="container-filter"
-```
-
-將篩選定義中的`components`屬性設定為`null`可允許所有元件，就像沒有篩選一樣。
-
-```json
-[
-  {
-    "id": "another-container-filter",
-     "components": null
-   }
-]
-```
+您可以使用元件篩選器，在通用編輯器中限制每個容器允許的元件。 如需詳細資訊，請參閱檔案[篩選元件](/help/implementing/universal-editor/filtering.md)。
 
 ### 有條件地顯示和隱藏屬性面板中的元件 {#conditionally-hide}
 
@@ -120,7 +88,7 @@ data-aue-filter="container-filter"
 
 您可以透過`urn:adobe:aue:config:preview`中繼設定來指定自訂預覽URL，按一下[編輯器右上角工具列中的&#x200B;**開啟頁面**&#x200B;按鈕時，將會開啟此設定。](/help/sites-cloud/authoring/universal-editor/navigation.md#universal-editor-toolbar)
 
-這對於具有特定預覽需求的應用程式特別有用，例如那些將Edge Delivery Services與WYSIWYG編寫搭配使用的[。](/help/edge/wysiwyg-authoring/authoring.md)
+這對於具有特定預覽要求的應用程式來說特別實用，例如[使用 Edge Delivery Services 進行所見即所得製作](/help/edge/wysiwyg-authoring/authoring.md)的應用程式。
 
 若要這麼做，只需將所需的預覽URL加入所檢測應用程式的中繼標籤中，例如下列範例。
 
