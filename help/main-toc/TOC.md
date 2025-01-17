@@ -733,7 +733,7 @@ ht-degree: 99%
          + [建立表單資料模型](/help/forms/create-form-data-models.md)
          + [處理表單資料模型](/help/forms/work-with-form-data-model.md)
          + [使用表單資料模型](/help/forms/using-form-data-model.md)
-         + [設計最適化表單的 XML 綱要](/help/forms/adaptive-form-xml-schema-form-model.md)
+         + [設計最適化表單的 XML 結構](/help/forms/adaptive-form-xml-schema-form-model.md)
    + 最適化 Forms {#adaptive-forms-authoring}
       + [建立最適化表單](/help/forms/create-an-adaptive-form.md)
       + [建立最適化表單片段](/help/forms/adaptive-form-fragments.md)
@@ -763,7 +763,7 @@ ht-degree: 99%
             + [於最適化表單核心元件中使用 Turnstile 驗證碼](/help/forms/integrate-adaptive-forms-turnstile-core-components.md)
             + [在最適化表單中新增自訂的錯誤處理常式](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
             + [為以核心元件為主的最適化表單新增地區設定](/help/forms/supporting-new-language-localization-core-components.md)
-            + [設計自適應表單的 JSON 綱要 (核心元件)](/help/forms/adaptive-form-core-components-json-schema-form-model.md)
+            + [設計自適應表單的 JSON 結構 (核心元件)](/help/forms/adaptive-form-core-components-json-schema-form-model.md)
             + [在最適化表單中新增版本設定、評論和附註](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md)
             + [比較最適化表單](/help/forms/compare-forms.md)
             + [建立自訂提交動作](/help/forms/custom-submit-action-for-adaptive-forms-based-on-core-components.md)
@@ -801,7 +801,7 @@ ht-degree: 99%
             + [參照最適化表單片段](/help/forms/reference-adaptive-form-fragments.md)
             + [將最適化 Forms 與 XFA Form 範本同步](/help/forms/synchronizing-adaptive-forms-xfa.md)
             + [XFA 支援基於 XDP 的最適化 Forms](/help/forms/xfa-api-supported-in-adaptive-form.md)
-            + [為最適化表單設計 JSON 綱要](/help/forms/adaptive-form-json-schema-form-model.md)
+            + [為最適化表單設計 JSON 結構](/help/forms/adaptive-form-json-schema-form-model.md)
             + [透過延遲載入改善大型表單的效能](/help/forms/lazy-loading-adaptive-forms.md)
             + [發佈和取消發佈表單和文件](/help/forms/publishing-unpublishing-forms.md)
          + 將元件新增至最適化表單{#add-components-to-an-adaptive-form}
