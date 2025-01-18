@@ -1,15 +1,15 @@
 ---
-title: 在Assets檢視中編輯大量中繼資料
+title: 資產檢視中的大量中繼資料編輯
 description: 瞭解如何在Assets檢視上同時更新多個資產的預先定義標準中繼資料欄位集。
 exl-id: f5fee1b3-2855-4010-ae4a-216beb20920d
-source-git-commit: 692ff4fbb5b7e703f727d6e20d87c4fc0abdb350
+source-git-commit: f986cbc979ecdb9e704257a8b94db9de0d67d4f1
 workflow-type: tm+mt
 source-wordcount: '457'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
-# 在Assets檢視中編輯大量中繼資料{#how-to-edit-the-metadata-of-multiple-assets-simultaneously}
+# 資產檢視中的大量中繼資料編輯{#how-to-edit-the-metadata-of-multiple-assets-simultaneously}
 
 Assets檢視中的&#x200B;**大量中繼資料編輯**&#x200B;功能可讓使用者同時編輯多個資產檔案的預定義標準中繼資料欄位集。 選取多個資產並一次大量更新其預先定義的標準中繼資料集，而非針對每個資產個別更新這些標準中繼資料。 此功能可提升大量資產標準中繼資料屬性的效率、一致性和準確性，進而改善資產搜尋能力及組織架構。
 
@@ -34,7 +34,7 @@ Assets檢視中的&#x200B;**大量中繼資料編輯**&#x200B;功能可讓使用
      >
      >您可以一次編輯100個資產的中繼資料。
 
-若要檢視已套用至資產的中繼資料更新內容，請瀏覽至資產詳細資料頁面（選取資產，然後按一下&#x200B;**詳細資料**），然後按一下![](/help/assets/assets/info-icon-solid-black.svg)，在&#x200B;**資訊**&#x200B;面板中檢視資產的中繼資料。
+若要檢視套用至資產的中繼資料更新，請瀏覽至資產詳細資料頁面（選取資產，然後按一下&#x200B;**詳細資料**），然後按一下![](/help/assets/assets/info-icon-solid-black.svg)，在&#x200B;**資訊**&#x200B;面板中檢視資產的中繼資料。
 
 >[!NOTE]
 >
