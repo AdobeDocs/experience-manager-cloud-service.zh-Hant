@@ -4,10 +4,10 @@ description: 發佈 AEM Forms 適用的 Edge Delivery Services
 feature: Edge Delivery Services
 exl-id: dcb16da1-dcc2-4529-8859-0716e727b54d
 role: Admin, Architect, Developer
-source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
-workflow-type: ht
-source-wordcount: '549'
-ht-degree: 100%
+source-git-commit: 4e6045aadd7d927851e431e2204cb2d56767a5a3
+workflow-type: tm+mt
+source-wordcount: '594'
+ht-degree: 80%
 
 ---
 
@@ -30,7 +30,7 @@ ht-degree: 100%
 
 1. 開啟 Microsoft SharePoint 或 Google Drive 帳戶，然後導覽至您的 AEM Edge Delivery 專案目錄。
 
-1. 開啟包含您表單的試算表。例如， `enquiry`表單 Microsoft Excel 工作簿。
+1. 開啟包含您表單的試算表。例如，[查詢](/help/edge/assets/enquiry.xlsx)表單Microsoft Excel活頁簿。
 
 1. 使用 [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) 來預覽工作表。
 
@@ -44,16 +44,16 @@ ht-degree: 100%
 
 
    ```JSON
-       https://<branch>--<repository>--<owner>.hlx.live/<form>.json
+       https://<branch>--<repository>--<owner>.aem.live/<form>.json
    ```
 
    * `<branch>`是指 GitHub 存放庫的分支。
    * `<repository>`表示您的 GitHub 存放庫。
    * `<owner>`是指託管 GitHub 存放庫的 GitHub 帳戶使用者名稱。
 
-   例如，如果您的專案存放庫名為 “portal” (位於帳戶 “wkndforms” 下面)，並且您使用的是「主要」分支，則 URL 如下所示：
+   例如，如果專案的存放庫命名為「wefinance」，位在帳戶「wkndform」底下，而您使用「main」分支和表單作為「enquiry」，則URL如下所示：
 
-   `https://main--portal--wkndforms.hlx.page/enquiry.json`
+   [https://main--wefinance--wkndform.aem.live/enquiry.json](https://main--wefinance--wkndform.aem.live/enquiry.json)
 
 +++
 
@@ -66,15 +66,15 @@ ht-degree: 100%
 
 1. 存取您的 Microsoft SharePoint 或 Google Drive 帳戶並導覽到您的 `[AEM Edge Delivery project directory]`。
 
-1. 開啟要嵌入表單的文件檔案。例如，您可以開啟 `index.docx` 檔案，或建立一個新文件。
+1. 開啟要嵌入表單的文件檔案。例如，您可以開啟[inquiry-form.docx](/help/edge/assets/enquiry-form.docx)檔案，或是建立新檔案。
 
 1. 確定文件中要插入表單的所要區段，然後導覽至該區段。
 
-1. 新增名為 &#39;Form&#39; 的區塊至檔案中，類似於下面提供的範例。
+1. 將名為&#39;Form&#39;的區塊新增至檔案。 例如，如果專案的存放庫命名為「wefinance」，則位於帳戶擁有者「wknform」下方，而您使用的是「主要」分支。
 
    | 表單 |
    |---|
-   | [https://main--wefinance--wkndforms.hlx.live/enquiry.json](https://main--wefinance--wkndforms.hlx.live/enquiry.json) |
+   | [https://main--wefinance--wkndform.aem.live/enquiry.json](https://main--wefinance--wkndform.aem.live/enquiry.json) |
 
    ![將名為「表單」的區塊新增至檔案中](/help/edge/assets/enquiry-doc-to-embed-form.png)
 
@@ -85,25 +85,29 @@ ht-degree: 100%
    >
    > 確保 URL 的格式為超連接，而不是顯示為純文字。
 
-   使用預覽 URL (.page URL) 進行開發或測試，或使用發佈 URL (.live) 進行生產。以下是帶有預覽和發佈 URL 的範例：
+   使用預覽 URL (.page URL) 進行開發或測試，或使用發佈 URL (.live) 進行生產。
+
+   例如，如果專案的存放庫命名為「wefinance」，則位於帳戶擁有者「wknform」下方，而您使用的是「主要」分支。
+
+   以下是帶有預覽和發佈 URL 的範例：
 
    **預覽 URL**
 
    | 表單 |
    |---|
-   | [https://main--wefinance--wkndforms.hlx.page/enquiry.json](https://main--wefinance--wkndforms.hlx.page/enquiry.json) |
+   | [https://main--wefinance--wkndform.aem.page/enquiry.json](https://main--wefinance--wkndform.aem.page/enquiry.json) |
 
 
    **發佈 URL**
 
    | 表單 |
    |---|
-   | [https://main--wefinance--wkndforms.hlx.live/enquiry.json](https://main--wefinance--wkndforms.hlx.live/enquiry.json) |
+   | [https://main--wefinance--wkndform.aem.live/enquiry.json](https://main--wefinance--wkndform.aem.live/enquiry.json) |
 
-1. 使用 [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) 來預覽網頁。頁面現在會顯示表單。例如，這是以[查詢試算表](https://docs.google.com/spreadsheets/d/196lukD028RDK_evBelkOonPxC7w0l_IiJ-Yx3DvMfNk/edit#gid=0)為主的表單：
+1. 使用 [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) 來預覽網頁。頁面現在會顯示表單。例如，這是以[查詢試算表](/help/edge/assets/enquiry.xlsx)為主的表單：
 
 
-   ![EDS Forms 範本](/help/edge/assets/eds-form.png)
+   ![EDS Forms 範本](/help/edge/assets/updated-form.png)
 
 1. 使用 AEM Sidekick 來發佈表單。現在，您的客戶可以填寫表格並提交。
 

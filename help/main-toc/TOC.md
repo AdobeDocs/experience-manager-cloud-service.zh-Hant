@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的運作方式以及該軟體可以為您做哪些事。
 breadcrumb-title: 使用手冊
 user-guide-title: 'AEM as a Cloud Service '
-source-git-commit: 69cb4bb962e495725dfffff89bcddc16ce65cab1
+source-git-commit: 74b0c51c00601b645e9eba537c632efb3f48fb79
 workflow-type: tm+mt
-source-wordcount: '5961'
+source-wordcount: '5967'
 ht-degree: 99%
 
 ---
@@ -1020,6 +1020,7 @@ ht-degree: 99%
          + [使用 reCAPTCHA 保護您的表單](/help/edge/docs/forms/recaptacha-forms.md)
          + [自訂元件](/help/edge/docs/forms/custom-components-forms.md)
          + [表單的實際使用監視](/help/edge/docs/forms/real-use-monitoring-for-forms.md)
+         + [發佈Forms for Edge Delivery Services](/help/edge/docs/forms/publishing-forms.md)
       + 參考資料 {#forms-references}
          + [最適化表單區塊元件及其屬性](/help/edge/docs/forms/form-components.md)
    + Edge Delivery 資源 {#resources}

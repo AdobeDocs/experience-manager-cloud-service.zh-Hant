@@ -4,10 +4,10 @@ description: 本教學課程可協助您啟動並執行新的 Adob​​e Experi
 feature: Edge Delivery Services
 exl-id: bb7e93ee-0575-44e1-9c5e-023284c19490
 role: Admin, Architect, Developer
-source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
-workflow-type: ht
-source-wordcount: '1850'
-ht-degree: 100%
+source-git-commit: 8cf72ab1958b313196341bef4f3ece121721ac14
+workflow-type: tm+mt
+source-wordcount: '1806'
+ht-degree: 92%
 
 ---
 
@@ -61,27 +61,27 @@ AEM Forms 範本可協助您很快開始使用預先設定最適化表單區塊�
    >
    > 如果您使用有 IP 篩選功能的 GitHub Enterprise，可以將下列 IP 新增至允許清單：3.227.118.73
 
-   恭喜！您有一個在  `https://<branch>--<repo>--<owner>.hlx.page/` 上執行的新網站。
+   恭喜！您有一個在  `https://<branch>--<repo>--<owner>.aem.page/` 上執行的新網站。
 
    * `<branch>`是指 GitHub 存放庫的分支。
    * `<repository>`表示您的 GitHub 存放庫。
    * `<owner>`是指託管 GitHub 存放庫的 GitHub 帳戶使用者名稱。
 
-   例如，如果分支名稱為 `main`，則存放庫為 `wefinance`、所有者為 `wkndforms`，網站將在 [https://main--wefinance--wkndforms.hlx.page/](https://main--wefinance--wkndforms.hlx.page/) 啟動並運作。
+   例如，如果分支名稱為`main`，存放庫為`wefinance`，擁有者為`wkndform`，網站將會在[https://main--wefinance--wkndforms.aem.page/](https://main--wefinance--wkndform.aem.page/)上啟動並執行
 
 
 
 ### 連結您自己的內容來源
 
-您新建立的 GitHub 存放庫指向[儲存在 Google Drive 資料夾的範例內容](https://drive.google.com/drive/folders/1bvjfi6TqpYA7DvbX6kKc-m7FgHuJ4RUQ)。此唯讀內容是建立您表單的最佳起點。隨時可將內容複製到您自己的 Google Drive 中，並根據您的需求來自訂內容。
+<!--Your newly created GitHub repository points to [example content stored in a Google Drive folder](https://drive.google.com/drive/folders/1bvjfi6TqpYA7DvbX6kKc-m7FgHuJ4RUQ). This read-only content provides a great starting point for your forms. Feel free to copy it into your own Google Drive and customize it to fit your needs.
 
-![Google Drive 上的範例內容](/help/edge/assets/folder-with-sample-content.png)
+![Sample Content on Google Drive](/help/edge/assets/folder-with-sample-content.png)-->
 
 若要將範例內容複製到您自己的內容資料夾，並將 GitHub 存放庫指向您自己的內容資料夾：
 
 1. 在 Google Drive 或 Microsoft SharePoint 中專為您的 AEM 內容建立一個新資料夾。本文件是使用建立在 Microsoft SharePoint 的資料夾。
 
-1. 與 Adob&#x200B;&#x200B;e Experience Manager 使用者 (helix@adobe.com) 共用該資料夾。
+1. 與Adobe Experience Manager使用者共用資料夾(forms@adobe.com)。
 
    ![使用「管理存取」選項與 AEM 使用者共用資料夾 - SharePoint](/help/edge/assets/share-folder-with-aem-user.png)
 
@@ -90,13 +90,13 @@ AEM Forms 範本可協助您很快開始使用預先設定最適化表單區塊�
 
    確保您已向 Adob&#x200B;&#x200B;e Experience Manager 使用者提供該資料夾的編輯權限。
 
-   ![與 AEM 使用者共用資料夾，提供編輯權限-SharePoint](/help/edge/assets/share-folder-with-aem-user-provide-editing-access.png)
+   ![與AEM使用者共用資料夾，提供編輯許可權 — SharePoint](/help/edge/assets/share-folder-with-aem-user-provide-editing-access.png){width=50%}
 
-   ![與 AEM 使用者共用資料夾，提供編輯權限 - Google Drive](/help/edge/assets/add-aem-user-google-folder.png)
+   ![與AEM使用者共用資料夾，提供編輯許可權 — Google磁碟機](/help/edge/assets/add-aem-user-google-folder.png){width=50%}
 
-1. [將儲存在 Google Drive 資料夾中的範例內容](https://drive.google.com/drive/folders/17LSiMZC77N8tCJRW45TnHHGcG8V3SLG_)複製到您的資料夾中。若要複製：
+1. 將[範例內容](/help/edge/assets/wefinance1.zip)複製到您的資料夾。 若要複製：
 
-   1. 下載全部檔案或下載個別檔案。
+   1. 解壓縮下載的資料夾並複製內容。
 
       ![下載範例內容](/help/edge/assets/download-sample-content.png)
 
@@ -113,7 +113,7 @@ AEM Forms 範本可協助您很快開始使用預先設定最適化表單區塊�
 
    1. 前往您先前使用 AEM Forms 範本建立的 GitHub 存放庫。
    1. 開啟 `fstab.yaml` 進行編輯。
-   1. 將現有參照更換為您與 AEM 使用者共用的資料夾路徑 (helix@adobe.com)。
+   1. 以您與AEM使用者共用的資料夾路徑(forms@adobe.com)取代現有參照。
 
       ![Google Drive 上的範例內容](/help/edge/assets/replace-path-in-fstab-yaml-with-your-content-folder.png)
 
@@ -175,7 +175,7 @@ AEM Forms 範本可協助您很快開始使用預先設定最適化表單區塊�
 
 
    ```HTML
-   https://<branch>--<repository>--<owner>.hlx.live
+   https://<branch>--<repository>--<owner>.aem.live
    ```
 
    * `<branch>`是指 GitHub 存放庫的分支。
@@ -183,11 +183,9 @@ AEM Forms 範本可協助您很快開始使用預先設定最適化表單區塊�
    * `<owner>`是指託管 GitHub 存放庫的 GitHub 帳戶使用者名稱。
 
 
-   `https://<branch>--<repo>--<owner>.hlx.page/enquiry` URL.
+   `https://<branch>--<repo>--<owner>.aem.page/enquiry` URL.
 
-   例如，如果您的專案存放庫名為 “wefinance” (位於帳戶所有者 “wkndforms” 下面)，並且您使用的是「主要」分支，URL 如下：
-
-   [https://main--wefinance--wkndforms.hlx.page](https://main--wefinance--wkndforms.hlx.page).
+   例如，若您專案的存放庫名稱為「wefinance」，位於帳戶擁有者「wkndform」下方，而您使用「主要」分支和表單名稱作為`enquiry`，則URL為： [https://main--wefinance--wkndform.aem.live/enquiry](https://main--wefinance--wkndform.aem.live/enquiry)。
 
 ### 建立表單
 
@@ -195,11 +193,11 @@ AEM Forms 範本可協助您很快開始使用預先設定最適化表單區塊�
 
 ![查詢表單](/help/edge/docs/forms/assets/enquiry-form-microsoft-sharepoint.png)
 
-讓我們從更新欄位標籤開始。 開啟「查詢」表進行編輯，將提交按鈕的標籤變更為`Let's Chat`，並使用 AEM Sidekick 預覽和發佈檔案。
+讓我們從更新欄位標籤開始。 開啟「查詢」表進行編輯，將提交按鈕的標籤變更為`Let's Talk`，並使用 AEM Sidekick 預覽和發佈檔案。
 
 ![查詢表單](/help/edge/assets/enquiry-form-preview-publish.png)
 
-當您預覽或發佈檔案時，該檔案的 JSON 版本將顯示在新標籤中。 複製檔案的預覽 (.hlx.page) 或發布 (.hlx.live) URL。
+當您預覽或發佈檔案時，該檔案的 JSON 版本將顯示在新標籤中。 複製檔案的預覽(.aem.page)或發佈(.aem.live) URL。
 
 ![表單試算表的 JSON](/help/edge/assets//preview-and-publish-enquiry-form.png)
 
@@ -216,13 +214,16 @@ AEM Forms 範本可協助您很快開始使用預先設定最適化表單區塊�
 
 
 ```HTML
-    https://<branch>--<repository>--<owner>.hlx.page/enquiry
+    https://<branch>--<repository>--<owner>.aem.page/enquiry
        
 ```
 
-提交按鈕的標籤更新為 `Let's Chat`。
+提交按鈕的標籤更新為 `Let's Talk`。
 
-![查詢表單](/help/edge/assets/updated-form.png)
+[![查詢表單](/help/edge/assets/updated-form.png)](https://main--wefinance--wkndform.aem.live/enquiry)
+
+URL： [https://main--wefinance--wkndform.aem.live/enquiry](https://main--wefinance--wkndform.aem.live/enquiry)
+
 
 若需要建立和發佈新表單的詳細資訊，請參閱「[建立表單](/help/edge/docs/forms/create-forms.md)」指南。
 
@@ -254,8 +255,8 @@ AEM Forms 範本可協助您很快開始使用預先設定最適化表單區塊�
 
 準備好展示您的創作了嗎？使用 Git 提交並推播您的變更。這將更新可在這些 URL 存取的預覽和生產環境 (將預留位置更換為您的專案詳細資訊)：
 
-預覽：`https://<branch>--<repo>--<owner>.hlx.page/`
-生產：`https://<branch>--<repo>--<owner>.hlx.live/`
+預覽：`https://<branch>--<repo>--<owner>.aem.page/`
+生產：`https://<branch>--<repo>--<owner>.aem.live/`
 
 恭喜！您已成功設定本機開發環境並部署好您的變更。
 
