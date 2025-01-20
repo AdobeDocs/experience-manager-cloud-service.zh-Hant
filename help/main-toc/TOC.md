@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的運作方式以及該軟體可以為您做哪些事。
 breadcrumb-title: 使用手冊
 user-guide-title: 'AEM as a Cloud Service '
-source-git-commit: 74b0c51c00601b645e9eba537c632efb3f48fb79
+source-git-commit: 72f2b67c805f964c93a8a3e2883b3d3160fe5723
 workflow-type: tm+mt
-source-wordcount: '5967'
+source-wordcount: '5971'
 ht-degree: 99%
 
 ---
@@ -398,7 +398,7 @@ ht-degree: 99%
          + [如何架構目標內容的多網站管理](/help/sites-cloud/authoring/personalization/multisite-structure.md)
          + [管理活動](/help/sites-cloud/authoring/personalization/activities.md)
          + [管理客群](/help/sites-cloud/authoring/personalization/audiences.md)
-         + [建立和管理選件 (選件主控台)](/help/sites-cloud/authoring/personalization/offers.md)
+         + [建立和管理產品建議 (產品建議主控台)](/help/sites-cloud/authoring/personalization/offers.md)
          + [了解分段](/help/sites-cloud/authoring/personalization/segmentation.md)
          + [使用 ContextHub 設定分段](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
          + [註冊、登入和使用者個人資料](/help/sites-cloud/authoring/personalization/user-and-group-sync-for-publish-tier.md)
@@ -1013,6 +1013,7 @@ ht-degree: 99%
          + [使用規則為表單新增動態行為](/help/edge/docs/forms/rules-forms.md)
          + [用於驗證的規則運算式](/help/edge/docs/forms/regex-forms.md)
          + [提交表單後顯示自訂感謝訊息](/help/edge/docs/forms/thank-you-page-form.md)
+         + [使用Forms提交服務](/help/forms/forms-submission-service.md)
       + 功能 {#advanced-features-edge-delivery-services-forms}
          + [使用表單片段](/help/edge/docs/forms/form-fragments.md)
          + [將可重複區段新增到表單](/help/edge/docs/forms/repeatable-forms.md)

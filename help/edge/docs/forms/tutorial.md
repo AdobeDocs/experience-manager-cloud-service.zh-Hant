@@ -4,7 +4,7 @@ description: 本教學課程可協助您啟動並執行新的 Adob​​e Experi
 feature: Edge Delivery Services
 exl-id: bb7e93ee-0575-44e1-9c5e-023284c19490
 role: Admin, Architect, Developer
-source-git-commit: 8cf72ab1958b313196341bef4f3ece121721ac14
+source-git-commit: 72f2b67c805f964c93a8a3e2883b3d3160fe5723
 workflow-type: tm+mt
 source-wordcount: '1806'
 ht-degree: 92%
@@ -67,7 +67,7 @@ AEM Forms 範本可協助您很快開始使用預先設定最適化表單區塊�
    * `<repository>`表示您的 GitHub 存放庫。
    * `<owner>`是指託管 GitHub 存放庫的 GitHub 帳戶使用者名稱。
 
-   例如，如果分支名稱為`main`，存放庫為`wefinance`，擁有者為`wkndform`，網站將會在[https://main--wefinance--wkndforms.aem.page/](https://main--wefinance--wkndform.aem.page/)上啟動並執行
+   例如，如果分支名稱為`main`，存放庫為`wefinance`，擁有者為`wkndform`，網站將會在[https://main--wefinance--wkndform.aem.page](https://main--wefinance--wkndform.aem.page)上啟動並執行
 
 
 

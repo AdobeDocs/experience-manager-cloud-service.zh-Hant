@@ -1,7 +1,7 @@
 ---
-source-git-commit: f6be839d58b796b3791342375ff61d17b1f8cb0f
+source-git-commit: 72f2b67c805f964c93a8a3e2883b3d3160fe5723
 workflow-type: tm+mt
-source-wordcount: '1367'
+source-wordcount: '1371'
 ht-degree: 96%
 
 ---
@@ -66,6 +66,7 @@ ht-degree: 96%
 * [將可重複區段新增到表單](/help/edge/docs/forms/repeatable-forms.md)
 * [提交表單後顯示自訂感謝訊息](/help/edge/docs/forms/thank-you-page-form.md)
 * [最適化表單區塊元件及其屬性](/help/edge/docs/forms/form-components.md)
+* [使用表單提交服務](/help/forms/forms-submission-service.md)
 
 
 ## 核心元件和基礎元件的規則編輯器之間的差異 {#rule-editor-diff}
