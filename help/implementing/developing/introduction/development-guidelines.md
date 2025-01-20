@@ -1,21 +1,21 @@
 ---
-title: AEM as a Cloud Service 開發指導方針
+title: AEM as a Cloud Service 開發指南
 description: 了解在 AEM as a Cloud Service 上進行開發的準則，以及它和內部部署的 AEM 以及 AMS 中的 AEM 的重要區別。
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 16379d9cb7cdf876502205c12a233a95b410a67a
+source-git-commit: 9c684e3a82353c9e241efc9ee1f3bed694d8635a
 workflow-type: tm+mt
 source-wordcount: '2770'
 ht-degree: 3%
 
 ---
 
-# AEM as a Cloud Service 開發指導方針 {#aem-as-a-cloud-service-development-guidelines}
+# AEM as a Cloud Service 開發指南 {#aem-as-a-cloud-service-development-guidelines}
 
 >[!CONTEXTUALHELP]
 >id="development_guidelines"
->title="AEM as a Cloud Service 開發指導方針"
+>title="AEM as a Cloud Service 開發指南"
 >abstract="了解在 AEM as a Cloud Service 上進行開發的準則，以及它和內部部署的 AEM 以及 AMS 中的 AEM 的重要區別。"
 >additional-url="https://video.tv.adobe.com/v/330555/" text="套件結構示範"
 
@@ -174,7 +174,7 @@ DEBUG 3 WebApp Panel: WebApp successfully deployed
 
 對於本機開發，開發人員擁有CRXDE Lite(`/crx/de`)和AEM Web主控台(`/system/console`)的完整存取權。
 
-在本機開發（使用SDK）中，`/apps`和`/libs`可以直接寫入中，這與那些頂層資料夾不可變的雲端環境不同。
+在本機開發(使用SDK)中，`/apps`和`/libs`可以直接寫入到，這與那些頂層資料夾不可變的雲端環境不同。
 
 ### AEM as a Cloud Service 開發工具 {#aem-as-a-cloud-service-development-tools}
 
@@ -191,7 +191,7 @@ DEBUG 3 WebApp Panel: WebApp successfully deployed
 
 AEM as a Cloud Service Developer Console中針對RDE、開發、測試和生產環境提供了一組用於偵錯AEM as a Cloud Service開發人員環境的工具。 可藉由調整作者或Publish服務URL來決定URL，如下所示：
 
-`https://dev-console/-<namespace>.<cluster>.dev.adobeaemcloud.com`
+`https://dev-console-<namespace>.<cluster>.dev.adobeaemcloud.com`
 
 下列Cloud Manager CLI命令當作捷徑，可用來根據下列所述的環境引數啟動AEM as a Cloud Service Developer Console：
 
