@@ -4,10 +4,10 @@ description: 內容複製工具可讓使用者根據需求，從AEM as a Cloud S
 exl-id: 5883e4bc-9861-498e-bd35-32ff03d901cc
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: dfd44fc637e60f48c3d13430f1f4b9b7b9427d3d
+source-git-commit: fef97af53726d45cae36e2c9c6a5d82aa2f872c2
 workflow-type: tm+mt
-source-wordcount: '1347'
-ht-degree: 34%
+source-wordcount: '1286'
+ht-degree: 36%
 
 ---
 
@@ -86,7 +86,7 @@ ht-degree: 34%
    1. 按一下已排除子路徑旁邊的X，以便刪除它們。
    1. 按一下路徑旁的省略符號按鈕，即可顯示&#x200B;**編輯**&#x200B;和&#x200B;**刪除**&#x200B;選項。
 
-   ![正在編輯路徑清單](assets/add-content-set-excluded-paths.png)
+   ![編輯路徑清單](assets/add-content-set-excluded-paths.png)
 
 1. 選取&#x200B;**建立**&#x200B;以建立內容集。
 
@@ -200,10 +200,3 @@ ht-degree: 34%
 * 內容複製工具沒有版本設定功能，且自上次內容復製作業以來，無法自動在內容集中的來源環境中偵測修改的內容或建立的內容。
    * 如果您只想使用內容變更來更新目的地環境，則自上次內容復製作業以來，您必須建立內容集。 然後，指定自上次內容復製作業以來進行變更的來源例項上的路徑。
 * 版本資訊不包含在內容副本中。
-
-## 已知問題 {#known-issues}
-
-使用[內容複製功能時，請注意下列已知問題。](/help/implementing/developing/tools/content-copy.md)
-
-* 如果重新命名來源環境中的資源，可能會導致內容復製作業因目標環境中的衝突UUID而失敗。
-   * 為避免此錯誤，請首先刪除資源，然後使用所需的新資源名稱重新建立，而不是重新命名資源。
