@@ -1,13 +1,13 @@
 ---
 title: 製作內容片段
-description: 瞭解如何為內容片段製作內容，並根據用途建立該內容的變體。 這為Headless傳送和頁面製作增加了靈活性。
+description: 瞭解如何為內容片段製作內容，並根據用途建立該內容的變體。 內容片段為Headless傳送和頁面製作提供新增的彈性。
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
-source-git-commit: 6a971fd5d0e071f72c17cf0a42f3dd8da0b476ae
+source-git-commit: 84e329e893ead1d67a3a0f651d0d2d4b24021b12
 workflow-type: tm+mt
-source-wordcount: '2841'
+source-wordcount: '2851'
 ht-degree: 5%
 
 ---
@@ -68,7 +68,9 @@ ht-degree: 5%
 * 中央面板：顯示所選變數的實際欄位和內容
    * 允許您編輯內容
       * 當在模型中設定為（多個）時，各種資料型別可讓您&#x200B;**新增**&#x200B;相關欄位的例項
-   * 如果&#x200B;**標籤預留位置**&#x200B;欄位已在模型中定義，則會顯示在這裡，且可用於導覽；這些欄位將會水準顯示，或作為下拉式清單顯示。
+   * 如果&#x200B;**索引標籤預留位置**&#x200B;欄位已在模型中定義，則會顯示在這裡，並且：
+      * 可用於導覽
+      * 將會水準顯示或以下拉式清單顯示
 
   >[!NOTE]
   >
@@ -102,7 +104,7 @@ ht-degree: 5%
 
 ### 追蹤連結 {#follow-links}
 
-在編輯器的各個部分中，您可以看到連結圖示。 這可用來開啟顯示的專案；例如，內容片段模型、父參照或參照的片段：
+在編輯器的各個部分中，您可以看到連結圖示。 此圖示可用來開啟顯示的專案；例如，內容片段模型、父參考或參考的片段：
 
 ![內容片段編輯器 — 連結圖示](assets/cf-authoring-link-icon.png)
 
@@ -475,7 +477,7 @@ ht-degree: 5%
 
 ## 註解您的片段 {#commenting-on-your-fragment}
 
-右側面板中的&#x200B;**註解**&#x200B;索引標籤提供下列功能：
+若要讓您在產品內和內容內共同作業，右側面板中的&#x200B;**註解**&#x200B;索引標籤提供下列功能：
 
 * 新增評論
 * 在評論中標籤特定使用者
