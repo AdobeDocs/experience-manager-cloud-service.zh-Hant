@@ -8,7 +8,7 @@ hide: true
 hidefromtoc: true
 exl-id: ee71a576-96a7-4c81-b3a3-1d678f010cba
 feature: Adaptive Forms, Core Components
-source-git-commit: c374d95e6b64b8f35f89d469d698add8b95e01eb
+source-git-commit: 92a5599ac94d5bf09311d34dd0287def46b14353
 workflow-type: tm+mt
 source-wordcount: '1060'
 ht-degree: 4%
@@ -31,7 +31,7 @@ Forms轉換公用程式會將以舊版基礎元件為基礎的最適化Forms轉�
 
 >[!NOTE]
 > 
-> 建議在本機AEM設定上安裝AEM現代化工具。 將以基礎元件為基礎的最適化Forms移轉至以核心元件為基礎的表單。 下載表單及其資產。 然後，將表單及其資產上傳到所需的環境。
+>建議在本機AEM設定上安裝AEM現代化工具。 將以基礎元件為基礎的最適化Forms移轉至以核心元件為基礎的表單。 下載表單及其資產。 然後，將表單及其資產上傳到所需的環境。
 
 ## 使用AEM現代化工具時的注意事項 {#considerations}
 
@@ -39,6 +39,7 @@ Forms轉換公用程式會將以舊版基礎元件為基礎的最適化Forms轉�
 * 原始表單中使用的翻譯設定不會延續。 重新設定轉換表單的翻譯。
 * 如果以Foundation元件建置的表單包含指令碼或自訂函式規則，您必須根據核心元件將這些指令碼或規則重寫為轉換後的表單。
 * 核心元件尚未支援下列OOTB基礎元件，因此會以轉換後的形式刪除：
+
    * Adobe Sign 區塊
    * 圖表
    * 檔案附件清單
@@ -54,10 +55,9 @@ Forms轉換公用程式會將以舊版基礎元件為基礎的最適化Forms轉�
 
 * [設定AEM Forms的本機開發環境](/help/forms/setup-local-development-environment.md)
 * [為您的環境啟用最適化Forms核心元件。](/help/forms/enable-adaptive-forms-core-components.md)
-
 * 將您的使用者新增至[!DNL forms-users]群組。 [!DNL forms-users]群組的成員具有建立最適化表單的許可權。
-
 * 具有下列角色的使用者有權在AEM環境中安裝AEM現代化工具：
+
    * 開發人員角色
    * 管理員角色
 
@@ -68,7 +68,7 @@ Forms轉換公用程式會將以舊版基礎元件為基礎的最適化Forms轉�
 若要安裝和設定AEM現代化工具：
 
 1. [安裝AEM現代化工具至您的本機AEM Forms環境](#install-aem-modernize-Tools)
-2. [為您的本機AEM Forms環境啟用AEM現代化工具](#enable-aem-modernize-Tools)
+1. [為您的本機AEM Forms環境啟用AEM現代化工具](#enable-aem-modernize-Tools)
 
 ### 安裝AEM現代化工具至您的本機AEM Forms環境 {#install-aem-modernize-Tools}
 
@@ -93,6 +93,7 @@ Forms轉換公用程式會將以舊版基礎元件為基礎的最適化Forms轉�
    ```Shell
        mvn clean install 
    ```
+
 ![成功安裝映像](/help/forms/assets/aem-modernize-install-steps.png)
 
 成功安裝後，AEM現代化工具將可供您的環境使用。
@@ -128,10 +129,12 @@ Forms轉換公用程式會將以舊版基礎元件為基礎的最適化Forms轉�
 
 1. 指定&#x200B;**[!UICONTROL 工作名稱]**。
 1. 在&#x200B;**[!UICONTROL 表單]**&#x200B;索引標籤中，您可以選取下列其中一個選項：
+
    * **無** ：如果您不想在開始表單轉換之前建立以Foundation元件為基礎的表單副本，請選取選項。
    * **還原** ：選取選項，將表單還原至開始表單轉換前的狀態。
    * **複製到Target**：選取選項，在開始表單轉換之前建立Foundation元件式表單的副本。
-在本例中，已選取**複製到目標**&#x200B;選項。 如果選取&#x200B;**複製到目標**&#x200B;選項，**[!UICONTROL Source路徑]**&#x200B;和&#x200B;**[!UICONTROL 目標路徑]**&#x200B;選項就會變成可見。
+
+   在本例中，已選取&#x200B;**複製到目標**&#x200B;選項。 如果選取&#x200B;**複製到目標**&#x200B;選項，**[!UICONTROL Source路徑]**&#x200B;和&#x200B;**[!UICONTROL 目標路徑]**&#x200B;選項就會變成可見。
 
 1. 在&#x200B;**[!UICONTROL Source路徑]**&#x200B;中指定`source folder`名稱。
 1. 在&#x200B;**[!UICONTROL 目標路徑]**&#x200B;中指定`target folder`名稱。
@@ -152,6 +155,7 @@ Forms轉換公用程式會將以舊版基礎元件為基礎的最適化Forms轉�
    ![AEM現代化工具成功](/help/forms/assets/aem-modernize-tools-success.png)
 
 1. 選取最適化表單，然後選取> **[!UICONTROL 屬性]**。 此時會開啟「表單屬性」頁面。
+
    ![AEM現代化工具目的地資料夾](/help/forms/assets/aem-modernize-tools-destination-folder.png)
 
 1. 選取&#x200B;**[!UICONTROL 儲存並關閉]**以再次儲存轉換表單的內容。
