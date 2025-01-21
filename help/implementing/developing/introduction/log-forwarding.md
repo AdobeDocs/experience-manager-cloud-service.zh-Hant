@@ -4,10 +4,10 @@ description: 瞭解如何在AEM as a Cloud Service中將記錄轉送給記錄廠
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: f6de6b6636d171b6ab08fdf432249b52c2318c45
+source-git-commit: 6e91ad839de6094d7f6abd47881dabc6357a80ff
 workflow-type: tm+mt
-source-wordcount: '1781'
-ht-degree: 0%
+source-wordcount: '1975'
+ht-degree: 1%
 
 ---
 
@@ -31,23 +31,21 @@ AEM和Apache/Dispatcher記錄檔可選擇透過AEM的進階網路基礎結構路
 
 請注意，與傳送至記錄目的地的記錄檔相關聯的網路頻寬，會視為您組織網路I/O使用量的一部分。
 
-
 ## 本文的結構方式 {#how-organized}
 
 本文章的編排方式如下：
 
 * 設定 — 適用於所有記錄目的地
+* 傳輸與進階網路 — 在建立記錄組態之前，應考慮網路設定
 * 記錄目的地設定 — 每個目的地的格式稍有不同
 * 記錄專案格式 — 記錄專案格式的相關資訊
-* 進階網路 — 透過專用出口或VPN傳送AEM和Apache/Dispatcher記錄
 * 從舊版記錄轉送移轉 — 如何從先前由Adobe設定的記錄轉送移至自助方法
-
 
 ## 設定 {#setup}
 
 1. 建立名為`logForwarding.yaml`的檔案。 它應該包含中繼資料，如[設定管道文章](/help/operations/config-pipeline.md#common-syntax)中所述（**kind**&#x200B;應該設定為`LogForwarding`且版本設定為&quot;1&quot;），其設定類似於以下內容（我們使用Splunk作為範例）。
 
-   ```
+   ```yaml
    kind: "LogForwarding"
    version: "1"
    metadata:
@@ -71,7 +69,7 @@ AEM和Apache/Dispatcher記錄檔可選擇透過AEM的進階網路基礎結構路
 
 您可以在CDN記錄檔與AEM記錄檔(包括Apache/Dispatcher)之間設定不同的值，方法是在&#x200B;**預設**&#x200B;區塊之後加入額外的&#x200B;**cdn**&#x200B;和/或&#x200B;**aem**&#x200B;區塊，其中的屬性可以覆寫&#x200B;**預設**&#x200B;區塊中定義的屬性；只需要啟用的屬性。 一個可能的使用案例是對CDN記錄使用不同的Splunk索引，如以下範例所示。
 
-```
+```yaml
    kind: "LogForwarding"
    version: "1"
    metadata:
@@ -91,7 +89,7 @@ AEM和Apache/Dispatcher記錄檔可選擇透過AEM的進階網路基礎結構路
 
 另一種情況是停用CDN記錄或AEM記錄(包括Apache/Dispatcher)的轉送。 例如，若只要轉送CDN記錄檔，即可設定下列專案：
 
-```
+```yaml
    kind: "LogForwarding"
    version: "1"
    metadata:
@@ -107,13 +105,90 @@ AEM和Apache/Dispatcher記錄檔可選擇透過AEM的進階網路基礎結構路
          enabled: false
 ```
 
+## 傳輸與進階網路 {#transport-advancednetworking}
+
+有些組織會選擇限制記錄目的地可以接收哪些流量，有些組織則可能需要使用HTTPS (443)以外的連線埠。  如果是，則必須先設定[進階網路](/help/security/configuring-advanced-networking.md)，才能部署記錄轉送設定。
+
+根據您是否使用連線埠443，以及您是否需要在固定IP位址顯示日誌，使用下表檢視進階網路和記錄組態的需求。
+<html>
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-align: center;
+}
+</style>
+<table>
+  <tbody>
+    <tr>
+      <th>目的地連線埠</th>
+      <th>需要從固定IP顯示記錄嗎？</th>
+      <th>需要進階網路</th>
+      <th>需要LogForwarding.yaml連線埠定義</th>
+    </tr>
+    <tr>
+      <td rowspan="2">HTTPS (443)</td>
+      <td>否</td>
+      <td>否</td>
+      <td>否</td>
+    </tr>
+    <tr>
+      <td>是</td>
+      <td>是，<a href="/help/security/configuring-advanced-networking.md#dedicated-egress-ip-address-dedicated-egress-ip-address">專用輸出</a></td>
+      <td>否</td>
+    <tr>
+    <tr>
+      <td rowspan="2">非標準連線埠（例如8088）</td>
+      <td>否</td>
+      <td>是，<a href="/help/security/configuring-advanced-networking.md#flexible-port-egress-flexible-port-egress">彈性輸出</a></td>
+      <td>是</td>
+    </tr>
+    <tr>
+      <td>是</td>
+      <td>是，<a href="/help/security/configuring-advanced-networking.md#dedicated-egress-ip-address-dedicated-egress-ip-address">專用輸出</a></td>
+      <td>是</td>
+  </tbody>
+</table>
+</html>
+
+>[!NOTE]
+>是否從單一IP位址顯示記錄取決於您選擇的進階網路設定。  必須使用專用輸出來處理這個問題。
+>
+> 進階網路設定是[兩步驟程式](/help/security/configuring-advanced-networking.md#configuring-and-enabling-advanced-networking-configuring-enabling)，需要在程式和環境層級啟用。
+
+對於AEM記錄檔(包括Apache/Dispatcher)，如果您已設定[進階網路](/help/security/configuring-advanced-networking.md)，則可以使用`aem.advancedNetworking`屬性從專用輸出IP位址或透過VPN轉送記錄檔。
+
+以下範例說明如何使用進階網路在標準HTTPS連線埠上設定登入。
+
+```yaml
+kind: "LogForwarding"
+version: "1"
+metadata:
+  envTypes: ["dev"]
+data:
+  splunk:
+    default:
+      enabled: true
+      host: "splunk-host.example.com"
+      port: 443
+      token: "${{SPLUNK_TOKEN}}"
+      index: "aemaacs"
+    aem:
+      advancedNetworking: true
+```
+
+針對CDN記錄，您可以將IP位址加入允許清單，如[Fastly檔案 — 公用IP清單](https://www.fastly.com/documentation/reference/api/utils/public-ip-list/)中所述。 如果共用IP位址清單太大，請考慮傳送流量至https伺服器或(非Adobe) Azure Blob存放區，其中可寫入邏輯，以將已知IP的記錄傳送至其最終目的地。
+
+>[!NOTE]
+>CDN記錄無法顯示來自您AEM記錄顯示來源的IP位址，因為記錄會直接從Fastly傳送，而非AEM Cloud Service。
+
 ## 記錄目的地組態 {#logging-destinations}
 
 以下列出支援的記錄目的地的設定以及任何特定考量。
 
 ### Azure Blob儲存體 {#azureblob}
 
-```
+```yaml
 kind: "LogForwarding"
 version: "1"
 metadata:
@@ -147,7 +222,7 @@ SAS權杖應該用於驗證。 應從共用存取權杖頁面而非共用存取�
 
 例如，在某個時間點：
 
-```
+```text
 aemcdn/
    2024-03-04T10:00:00.000-abc.log
    2024-03-04T10:00:00.000-def.log
@@ -155,7 +230,7 @@ aemcdn/
 
 然後30秒後：
 
-```
+```text
 aemcdn/
    2024-03-04T10:00:00.000-abc.log
    2024-03-04T10:00:00.000-def.log
@@ -164,7 +239,7 @@ aemcdn/
    2024-03-04T10:00:30.000-mno.log
 ```
 
-每個檔案包含多個json記錄專案，每個專案位於一行中。 記錄專案格式在[AEM as a Cloud Service的記錄](/help/implementing/developing/introduction/logging.md)下描述，每個記錄專案也包含以下[記錄專案格式](#log-format)區段中提及的其他屬性。
+每個檔案包含多個json記錄專案，每個專案位於一行中。 記錄專案格式在[AEM as a Cloud Service的記錄](/help/implementing/developing/introduction/logging.md)下描述，每個記錄專案也包含以下[記錄專案格式](#log-formats)區段中提及的其他屬性。
 
 #### Azure Blob儲存體AEM記錄檔 {#azureblob-aem}
 
@@ -181,10 +256,9 @@ AEM記錄(包括Apache/Dispatcher)會顯示在具有以下命名慣例的資料�
 
 請參閱[AEM as a Cloud Service](/help/implementing/developing/introduction/logging.md)的記錄下的記錄專案格式。 記錄專案也會包含以下[記錄專案格式](#log-formats)區段中提及的其他屬性。
 
-
 ### Datadog {#datadog}
 
-```
+```yaml
 kind: "LogForwarding"
 version: "1"
 metadata:
@@ -210,11 +284,9 @@ data:
 * Datadog服務標籤已設定為`adobeaemcloud`，但您可以在標籤區段中覆寫它
 * 如果您的內嵌管道使用Datadog標籤來決定轉送記錄的適當索引，請確認這些標籤已在記錄轉送YAML檔案中正確設定。 如果管道相依於缺少標籤，則這些標籤可能會阻止成功的記錄擷取。
 
-
-
 ### Elasticsearch和OpenSearch {#elastic}
 
-```
+```yaml
 kind: "LogForwarding"
 version: "1"
 metadata:
@@ -239,7 +311,7 @@ data:
 * 對於AEM記錄檔，`index`設定為`aemaccess`、`aemerror`、`aemrequest`、`aemdispatcher`、`aemhttpdaccess`或`aemhttpderror`其中之一
 * 選用管線屬性應設為Elasticsearch或OpenSearch擷取管線的名稱，可將其設定為將記錄專案路由至適當的索引。 管道的處理器型別必須設定為&#x200B;*指令碼*，而且指令碼語言應設定為&#x200B;*無痛苦的*。 以下是指令碼片段範例，可將記錄專案路由至索引，例如aemaccess_dev_26_06_2024：
 
-```
+```text
 def envType = ctx.aem_env_type != null ? ctx.aem_env_type : 'unknown';
 def sourceType = ctx._index;
 def date = new SimpleDateFormat('dd_MM_yyyy').format(new Date());
@@ -248,7 +320,7 @@ ctx._index = sourceType + "_" + envType + "_" + date;
 
 ### HTTPS {#https}
 
-```
+```yaml
 kind: "LogForwarding"
 version: "1"
 metadata:
@@ -279,7 +351,7 @@ Web要求(POST)將持續傳送，其有json裝載（記錄專案陣列），其�
 
 #### HTTPS AEM記錄 {#https-aem}
 
-對於AEM記錄檔（包括apache/dispacher），網路要求(POST)將持續傳送，其包含記錄專案陣列的json裝載，並具有各種記錄專案格式，如[AEM as a Cloud Service的記錄](/help/implementing/developing/introduction/logging.md)中所述。 以下[Log Entry Formats](#log-format)區段中提及其他屬性。
+對於AEM記錄檔（包括apache/dispacher），網路要求(POST)將持續傳送，其包含記錄專案陣列的json裝載，並具有各種記錄專案格式，如[AEM as a Cloud Service的記錄](/help/implementing/developing/introduction/logging.md)中所述。 以下[Log Entry Formats](#log-formats)區段中提及其他屬性。
 
 也有名為`Source-Type`的屬性，其設定為下列其中一個值：
 
@@ -292,7 +364,7 @@ Web要求(POST)將持續傳送，其有json裝載（記錄專案陣列），其�
 
 ### Splunk {#splunk}
 
-```
+```yaml
 kind: "LogForwarding"
 version: "1"
 metadata:
@@ -313,16 +385,14 @@ data:
   *aemrequest*，*aemdispatcher*，*aemhttpdaccess*，*aemhttpderror*，*aemcdn*
 * 如果必要的IP已加入允許清單，但尚未傳遞記錄，請確認沒有防火牆規則強制執行Splunk權杖驗證。 Fastly會執行初始驗證步驟，其中有意傳送無效的Splunk權杖。 如果您的防火牆設定為終止使用無效Splunk權杖的連線，則驗證程式將失敗，導致Fastly無法將記錄傳送給您的Splunk執行個體。
 
-
 >[!NOTE]
 >
 > [如果將](#legacy-migration)從舊版記錄轉送移轉到此自助模型，則傳送至您的Splunk索引的`sourcetype`欄位值可能已變更，因此請適當的調整。
 
-
 <!--
 ### Sumo Logic {#sumologic}
 
-   ```
+   ```yaml
    kind: "LogForwarding"
    version: "1"
    metadata:
@@ -351,36 +421,11 @@ data:
 
 例如，屬性可以有下列值：
 
-```
+```text
 aem_env_id: 1242
 aem_env_type: dev
 aem_program_id: 12314
 aem_tier: author
-```
-
-## 進階網路 {#advanced-networking}
-
-有些組織會選擇限制記錄目的地可接收哪些流量。
-
-對於CDN記錄檔，您可以將IP位址加入允許清單，如[fastly檔案 — 公用IP清單](https://www.fastly.com/documentation/reference/api/utils/public-ip-list/)中所述。 如果共用IP位址清單太大，請考慮傳送流量至https伺服器或(非Adobe) Azure Blob存放區，其中可寫入邏輯，以將已知IP的記錄傳送至其最終目的地。
-
-對於AEM記錄檔(包括Apache/Dispatcher)，如果您已設定[進階網路](/help/security/configuring-advanced-networking.md)，則可使用advancedNetworking屬性從專用輸出IP位址或透過VPN轉送記錄檔。
-
-```
-kind: "LogForwarding"
-version: "1"
-metadata:
-  envTypes: ["dev"]
-data:
-  splunk:
-    default:
-      enabled: true
-      host: "splunk-host.example.com"
-      port: 443
-      token: "${{SPLUNK_TOKEN}}"
-      index: "aemaacs"
-    aem:
-      advancedNetworking: true
 ```
 
 ## 從舊版記錄檔轉送移轉 {#legacy-migration}
@@ -399,10 +444,6 @@ data:
 我們建議（但非必要）將設定部署到所有環境，以便它們都處於自助控制之下。 如果沒有，您可能會忘記哪些環境已由Adobe設定，哪些是以自助方式設定。
 
 >[!NOTE]
->
 >傳送至您Splunk索引的`sourcetype`欄位值可能已變更，因此請適當的調整。
-
->[!NOTE]
 >
 >當記錄轉送部署至先前由Adobe支援設定的環境時，您可能會收到長達數小時的重複記錄。 這最終會自動解決。
-
