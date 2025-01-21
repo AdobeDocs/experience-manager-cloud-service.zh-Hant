@@ -2,7 +2,7 @@
 source-git-commit: 72f2b67c805f964c93a8a3e2883b3d3160fe5723
 workflow-type: tm+mt
 source-wordcount: '1371'
-ht-degree: 96%
+ht-degree: 99%
 
 ---
 # 代碼片段 {#snippets}
@@ -233,11 +233,11 @@ ht-degree: 96%
    * 已上線網站的 URL。例如：`www.mydomain.com`。
    * 原始網站的 URL (`.hlx` URL)。
 
-## 偏好使用通用編輯器而非SPA編輯器 {#ue-over-spa}
+## 通用編輯器優先於 SPA 編輯器 {#ue-over-spa}
 
 >[!IMPORTANT]
 >
->Adobe仍支援SPA編輯器，但現在在AEM中管理Headless內容的偏好編輯器為：
+>Adobe 仍然支援 SPA 編輯器，但是現在 AEM 中用於管理 Headless 內容的偏好編輯器是：
 >
->* [用於以視覺化方式編輯Headless內容的通用編輯器](/help/edge/wysiwyg-authoring/authoring.md)。
->* [內容片段編輯器](/help/assets/content-fragments/content-fragments-managing.md)，用於表單式編輯Headless內容。
+>* [通用編輯器](/help/edge/wysiwyg-authoring/authoring.md)：用於視覺化編輯 Headless 內容。
+>* [內容片段編輯器](/help/assets/content-fragments/content-fragments-managing.md)：用於 Headless 內容的表單型編輯。
