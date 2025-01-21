@@ -4,9 +4,9 @@ description: 本教學課程可協助您啟動並執行新的 Adob​​e Experi
 feature: Edge Delivery Services
 exl-id: bb7e93ee-0575-44e1-9c5e-023284c19490
 role: Admin, Architect, Developer
-source-git-commit: 72f2b67c805f964c93a8a3e2883b3d3160fe5723
+source-git-commit: cb914f76b0b785a89b20ef5eaacbc36e8217944b
 workflow-type: tm+mt
-source-wordcount: '1806'
+source-wordcount: '1803'
 ht-degree: 92%
 
 ---
@@ -67,9 +67,8 @@ AEM Forms 範本可協助您很快開始使用預先設定最適化表單區塊�
    * `<repository>`表示您的 GitHub 存放庫。
    * `<owner>`是指託管 GitHub 存放庫的 GitHub 帳戶使用者名稱。
 
-   例如，如果分支名稱為`main`，存放庫為`wefinance`，擁有者為`wkndform`，網站將會在[https://main--wefinance--wkndform.aem.page](https://main--wefinance--wkndform.aem.page)上啟動並執行
-
-
+   例如，如果分支名稱為`main`，存放庫為`wefinance`，擁有者為`wkndforms`，則網站將在`https://main--wefinance--wkndforms.aem.page`啟動並執行
+&lt;！—(https://main--wefinance--wkndform.aem.page)-->
 
 ### 連結您自己的內容來源
 
@@ -135,8 +134,6 @@ AEM Forms 範本可協助您很快開始使用預先設定最適化表單區塊�
 
    1. 您更新參照且一切看起來沒問題，就可提交更新的 `fsatb.yaml` 檔案。 如果您遇到任何建置問題，請參閱「[解決 GitHub 建置問題](#troubleshooting-github-build-issues)」。
 
-
-
       ![提交更新的 fsatab.yaml 檔案](/help/edge/assets/commit-updated-fstab-yaml.png)
 
       這樣即可將您的內容資料夾連接到您的網站。 更新參照後，您最初可能會遇到「404 Not Found」錯誤。 這是因為您的內容還沒過預覽。 下一部分將介紹如何開始製作和預覽內容。
@@ -185,7 +182,8 @@ AEM Forms 範本可協助您很快開始使用預先設定最適化表單區塊�
 
    `https://<branch>--<repo>--<owner>.aem.page/enquiry` URL.
 
-   例如，若您專案的存放庫名稱為「wefinance」，位於帳戶擁有者「wkndform」下方，而您使用「主要」分支和表單名稱作為`enquiry`，則URL為： [https://main--wefinance--wkndform.aem.live/enquiry](https://main--wefinance--wkndform.aem.live/enquiry)。
+   例如，如果專案的存放庫名為「wefinance」，位於帳戶擁有者「wkndform」下方，而您使用「主要」分支和表單名稱作為`enquiry`，則URL為： `https://main--wefinance--wkndform.aem.live/enquiry`。
+&lt;！—(https://main--wefinance--wkndform.aem.live/enquiry).-->
 
 ### 建立表單
 
@@ -199,7 +197,7 @@ AEM Forms 範本可協助您很快開始使用預先設定最適化表單區塊�
 
 當您預覽或發佈檔案時，該檔案的 JSON 版本將顯示在新標籤中。 複製檔案的預覽(.aem.page)或發佈(.aem.live) URL。
 
-![表單試算表的 JSON](/help/edge/assets//preview-and-publish-enquiry-form.png)
+![表單試算表的 JSON](/help/edge/assets/preview-and-publish-enquiry-form.png)
 
 開啟 `enquiry` 檔案，並將表單區塊中的 URL 更換為上一個步驟中複製的檔案 URL。 確保 URL 是超連結。
 
@@ -220,9 +218,12 @@ AEM Forms 範本可協助您很快開始使用預先設定最適化表單區塊�
 
 提交按鈕的標籤更新為 `Let's Talk`。
 
-[![查詢表單](/help/edge/assets/updated-form.png)](https://main--wefinance--wkndform.aem.live/enquiry)
+![查詢表單](/help/edge/assets/updated-form.png)
 
-URL： [https://main--wefinance--wkndform.aem.live/enquiry](https://main--wefinance--wkndform.aem.live/enquiry)
+&lt;！—(https://main--wefinance--wkndform.aem.live/enquiry)-->
+
+URL： `https://main--wefinance--wkndform.aem.live/enquiry`
+&lt;！—(https://main--wefinance--wkndform.aem.live/enquiry)-->
 
 
 若需要建立和發佈新表單的詳細資訊，請參閱「[建立表單](/help/edge/docs/forms/create-forms.md)」指南。

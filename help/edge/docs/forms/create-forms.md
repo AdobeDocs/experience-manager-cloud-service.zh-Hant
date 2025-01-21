@@ -4,10 +4,10 @@ description: 快速製作完美表單！⚡ AEM Forms Edge Delivery 文件型製
 feature: Edge Delivery Services
 exl-id: 0cf881a2-3784-45eb-afe8-3435e5e95cf4
 role: Admin, Architect, Developer
-source-git-commit: 4dcc580a6e3b49b1839fbb0f101c172bddf5cfcc
+source-git-commit: cb914f76b0b785a89b20ef5eaacbc36e8217944b
 workflow-type: tm+mt
-source-wordcount: '790'
-ht-degree: 88%
+source-wordcount: '782'
+ht-degree: 86%
 
 ---
 
@@ -60,8 +60,6 @@ Ensure a smooth GitHub build process by addressing potential issues:
 * **Handle Linting Errors:**
     Should you come across any linting errors, you can bypass them. Open the [EDS Project]/package.json file and modify the "lint" script from "lint": "npm run lint:js && npm run lint:css" to "lint": "echo 'skipping linting for now'". Save the file and commit the changes to your GitHub project. -->
 
-+++
-
 +++ 步驟 1：使用 Microsoft Excel 或 Google Sheet 製作表單。
 
 使用試算表可輕鬆地製作表單，而無需瀏覽複雜的流程。您可以定義構成表單結構的列和欄。每列代表一個單獨的[表單欄位](/help/edge/docs/forms/form-components.md#available-components)，欄標題定義對應的[欄位屬性](/help/edge/docs/forms/form-components.md#components-properties)。
@@ -76,15 +74,15 @@ Ensure a smooth GitHub build process by addressing potential issues:
 
 1. 在 AEM Edge Delivery 專案目錄內的任意位置，建立 Microsoft Excel 活頁簿或 Google Sheet。例如，在 Google Drive 上的 AEM Edge Delivery 專案目錄中，建立一個名為 `enquiry` 的試算表。
 
-   ![Google Drive 上的範例內容](/help/edge/assets/upload-sample-files-to-your-content-folder.png)
+   <!-- ![Sample Content on Google Drive](/help/edge/assets/upload-sample-files-to-your-content-folder.png)-->
 
 1. [根據為您專案指定的設定](https://www.aem.live/docs/setup-customer-sharepoint)，確保讓相關 AEM 使用者 (例如 `forms@adobe.com`) 共用工作表。授予使用者關於工作表的編輯權限。
 
-1. 開啟建立的試算表並將預設工作表重新命名為「共享預設」。
+1. 開啟建立的試算表，並將預設工作表重新命名為「shared-aem」。
 
    ![將預設試算表重新命名為「共用預設」](/help/edge/assets/rename-sheet-to-shared-default.png)
 
-1. 若要新增表單欄位，請將列和欄標題插入「共用預設」工作表中。每列應該代表一個 [表單欄位](/help/edge/docs/forms/form-components.md#available-components)，且有定義對應欄[屬性](/help/edge/docs/forms/form-components.md#components-properties)的欄標題。
+1. 若要新增表單欄位，請在「shared-aem」工作表中插入列和欄標題。 每列應該代表一個 [表單欄位](/help/edge/docs/forms/form-components.md#available-components)，且有定義對應欄[屬性](/help/edge/docs/forms/form-components.md#components-properties)的欄標題。
 
 
    為了快速開始，請考慮複製[查詢試算表](/help/edge/assets/enquiry.xlsx)內容至您的試算表中。複製內容後，請儲存試算表。
@@ -109,7 +107,8 @@ Ensure a smooth GitHub build process by addressing potential issues:
 
    例如，如果專案的存放庫命名為「wefinance」，位於帳戶「wkndform」下，而您使用的是「main」分支，則URL如下所示：
 
-   [https://main--wefinance--wkndform.aem.page/enquiry.json](https://main--wefinance--wkndform.aem.page/enquiry.json)
+`https://main--wefinance--wkndform.aem.page/enquiry.json`
+&lt;！—(https://main--wefinance--wkndform.aem.page/enquiry.json)-->
 
 
 +++
@@ -131,7 +130,7 @@ Ensure a smooth GitHub build process by addressing potential issues:
 
    | 表單 |
    |---|
-   | [https://main--wefinance--wkndform.aem.live/enquiry.json](https://main--wefinance--wkndform.aem.page/enquiry.json) |
+   | `https://main--wefinance--wkndform.aem.live/enquiry.json` |
 
 
    ![將最適化 Forms 區塊新增至您的網頁](/help/edge/assets/enquiry-doc-to-embed-form.png)

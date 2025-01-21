@@ -4,17 +4,17 @@ description: 使用試算表和最適化表單區塊欄位更快地製作強大�
 feature: Edge Delivery Services
 exl-id: 0643aee5-3a7f-449f-b086-ed637ae53b5a
 role: Admin, Architect, Developer
-source-git-commit: 086706a1b9ab211738ea2978b73e1681b04ddac2
+source-git-commit: cb914f76b0b785a89b20ef5eaacbc36e8217944b
 workflow-type: tm+mt
-source-wordcount: '425'
-ht-degree: 84%
+source-wordcount: '426'
+ht-degree: 65%
 
 ---
 
 # 設定您的 Google 表單或 Microsoft Excel 檔案以開始接受資料
 
 
- [建立並預覽表單](/help/edge/docs/forms/create-forms.md)後，就可以啟用對應的試算表以開始接收資料。您可以手動啟用試算表以接受資料，或使用管理 API 啟用試算表以接受資料。
+一旦您[建立並預覽表單](/help/edge/docs/forms/create-forms.md)後，就可以啟用對應的試算表開始接收資料。 您可以手動啟用試算表以接受資料，或使用管理 API 啟用試算表以接受資料。
 
 ![文件型製作生態系統](/help/edge/assets/document-based-authoring-workflow-enable-sheet-to-accept-data.png)
 
@@ -34,19 +34,19 @@ ht-degree: 84%
    >
    > 如果 `incoming` 工作表不存在，AEM 不會向試算表傳送任何資料。
 
-2. 在此工作表中，插入一個名為 &quot;intake_form&quot; 的表。選取與表單欄位名稱相符所需的欄數。然後，在工具列中前往「插入 > 表格」，並按一下「確定」。
+1. 在此工作表中，插入一個名為 &quot;intake_form&quot; 的表。選取與表單欄位名稱相符所需的欄數。然後，在工具列中前往「插入 > 表格」，並按一下「確定」。
 
-3. 將表格的名稱更改為 “intake_form”。在 Microsoft Excel 中，若要變更表格的名稱，請選取該表格並按一下「表格設計」。
+1. 將表格的名稱更改為 “intake_form”。在 Microsoft Excel 中，若要變更表格的名稱，請選取該表格並按一下「表格設計」。
 
-4. 接下來，新增表單欄位名稱作為表格標題。為了確保這些欄位完全相同，您可以從「共用預設」工作表中複製並貼上名稱。在「共用預設」工作表中，選取並複製「名稱」欄下所列的表單 ID (提交欄位除外)。
+1. 接下來，新增表單欄位名稱作為表格標題。為確保欄位完全相同，您可以從「共用AEM」工作表複製並貼上欄位。  在「共用AEM」工作表中，選取並複製「名稱」欄下列出的表單ID （提交欄位除外）。
 
-5. 在「傳入」工作表中，選取「選擇性貼上 > 將列調換為欄」，以便將欄位 ID 複製為該新工作表中的欄標題。只保留需要擷取資料的欄位，其他可以忽略。
+1. 在「傳入」工作表中，選取「選擇性貼上 > 將列調換為欄」，以便將欄位 ID 複製為該新工作表中的欄標題。只保留需要擷取資料的欄位，其他可以忽略。
 
-   `shared-default` 工作表 `Name` 欄的每個值 (不包含提交按鈕) 可以成為  `incoming` 工作表的標題。例如，請考慮以下影像說明「查詢」表單的標題：
+   `shared-aem` 工作表 `Name` 欄的每個值 (不包含提交按鈕) 可以成為  `incoming` 工作表的標題。例如，請考慮以下影像說明「查詢」表單的標題：
 
    ![聯絡我們表單的欄位](/help/edge/assets/contact-us-form-excel-sheet-fields.png)
 
-6. 使用[AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content)延伸以預覽表單更新。 您的工作表已準備好接受傳入的表單提交。
+1. 使用[AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content)延伸以預覽表單更新。 您的工作表已準備好接受傳入的表單提交。
 
    >[!NOTE]
    >
@@ -59,7 +59,7 @@ ht-degree: 84%
 
 >[!WARNING]
 >
->  「共用預設」工作表絕不會包含您不願意開放存取的任何個人識別資料或敏感資料。
+>  「共用AEM」工作表不應包含您不想公開存取的任何個人識別資訊或敏感資料。
 
 <!--
 ### Use Admin APIs to enable a spreadsheet to accept data

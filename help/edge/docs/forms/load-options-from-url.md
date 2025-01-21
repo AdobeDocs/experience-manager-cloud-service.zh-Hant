@@ -4,10 +4,10 @@ description: 下拉式清單選項包含在不同的試算表中，然後透過�
 feature: Edge Delivery Services
 exl-id: 5b0bc1b6-6e33-41f3-b7c1-4d997787b6cd
 role: Admin, Architect, Developer
-source-git-commit: 35fe88437dd86d490feeafe5bfc25ffda23234fb
+source-git-commit: cb914f76b0b785a89b20ef5eaacbc36e8217944b
 workflow-type: tm+mt
-source-wordcount: '472'
-ht-degree: 93%
+source-wordcount: '506'
+ht-degree: 87%
 
 ---
 
@@ -56,7 +56,8 @@ ht-degree: 93%
 1. 使用 [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) 來預覽和發佈`shared-country`工作表。
 
    例如，如果專案的存放庫命名為「wefinance」，則位於帳戶擁有者「wkndform」下方，而您使用的是「主要」分支，即顯示`shared-country`工作表的URL：
-   [https://main--wefinance--wkndform.aem.live/enquiry.json?sheet=country](https://main--wefinance--wkndform.aem.live/enquiry.json?sheet=country)
+   `https://main--wefinance--wkndform.aem.live/enquiry.json?sheet=country`
+   <!--(https://main--wefinance--wkndform.aem.live/enquiry.json?sheet=country)  -->
 
 >[!NOTE]
 >
@@ -80,9 +81,10 @@ ht-degree: 93%
 
 將 URL 整合到表單定義並載入下拉式清單選項後，`Destination`下拉式清單的選項一開始會從 URL 顯示。
 
-<!-- For example, if your project's repository is named "wefinance", it's located under the account owner "wkndform", and you're using the "main" branch, the below URL displays the `enquiry` form displaying the options saved in the separate sheet:
+例如，如果專案的存放庫命名為「wefinance」，它位於帳戶擁有者「wkndform」下方，而您使用的是「main」分支，以下URL會顯示`enquiry`表單，其中顯示儲存在個別工作表中的選項：
 
-[https://main--wefinance--wkndform.aem.live/enquiry-form](https://main--wefinance--wkndform.aem.live/enquiry-form) 
+`https://main--wefinance--wkndform.aem.live/enquiry-form`
+<!--(https://main--wefinance--wkndform.aem.live/enquiry-form) 
 -->
 
 ## 另請參閱
