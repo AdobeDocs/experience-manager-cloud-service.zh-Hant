@@ -4,9 +4,9 @@ description: 瞭解如何使用快速開發環境在雲端環境中進行快速�
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 33a30ea29023f90cc6ce1c8b64ed4f9cfdd4f4a7
+source-git-commit: 24c34daebf7d45d9262181890310eb196c58a7db
 workflow-type: tm+mt
-source-wordcount: '4863'
+source-wordcount: '4990'
 ht-degree: 3%
 
 ---
@@ -548,23 +548,23 @@ RDE CLI也有自己的記錄命令，可用來快速設定應該記錄哪些類�
 
 重設會將RDE設定為最新可用的AEM版本。
 
-<!-- Alexandru: hiding for now, do not delete
+重設可透過[Cloud Manager](#reset-the-rde-cloud-manager)或透過[命令列](#reset-the-rde-command-line)完成。 重設需要幾分鐘的時間，而且所有現有內容和程式碼都會從RDE中刪除。
 
-Resetting can be done by way of [Cloud Manager](#reset-the-rde-cloud-manager) or by way of the [command line](#reset-the-rde-command-line). Resetting takes a few minutes and all existing content and code is deleted from the RDE.
-
->[NOTE!]
+>[備註！]
 >
->You must be assigned the Cloud Manager Developer role to use the reset feature. If not, a reset action results in an error.
+>您必須獲指派Cloud Manager開發人員角色才能使用重設功能。 如果沒有，重設動作會導致錯誤。
 
-### Reset the RDE by way of Command Line {#reset-the-rde-command-line}
+### 透過命令列重設RDE {#reset-the-rde-command-line}
 
-You can reset the RDE and return it to a default state by running:
+您可以透過執行以下動作來重設RDE並將其恢復為預設狀態：
 
 `aio aem:rde:reset`
 
-This usually takes a few minutes. Use the [status command](#checking-rde-status) to check when the environment is ready again.
+這通常需要幾分鐘的時間，並在成功時報告```Environment reset.```或錯誤時報告```Failed to reset the environment.```。 如需結構化輸出，請參閱以下有關```--json```輸出的章節。
 
-### Reset the RDE in Cloud Manager {#reset-the-rde-cloud-manager} -->
+使用[status命令](#checking-rde-status)來檢查環境何時再次準備就緒。
+
+### 在Cloud Manager中重設RDE {#reset-the-rde-cloud-manager}
 
 您可以使用Cloud Manager來重設RDE，步驟如下：
 
@@ -942,7 +942,7 @@ RDE重設程式啟動後，通常需要幾分鐘才能完成並將環境恢復�
 }
 ```
 
-#### 等待完成 {#wait}
+#### 等待完成，已成功重設 {#wait-success}
 
 ```$ aio aem rde reset --json```
 
@@ -951,6 +951,18 @@ RDE重設程式啟動後，通常需要幾分鐘才能完成並將環境恢復�
   "programId": "myProgram",
   "environmentId": "myEnv",
   "status": "reset"
+}
+```
+
+#### 等待完成，重設失敗 {#wait-failed}
+
+```$ aio aem rde reset --json```
+
+```json
+{
+  "programId": "myProgram",
+  "environmentId": "myEnv",
+  "status": "reset_failed"
 }
 ```
 
