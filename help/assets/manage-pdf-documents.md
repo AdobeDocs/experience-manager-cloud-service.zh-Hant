@@ -4,28 +4,29 @@ description: 管理 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]中
 feature: Asset Management
 role: User, Admin
 exl-id: 29660869-6902-4093-845b-cd629be59d4d
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: e22e4e530c2d023724b360c488cab2b59ec22fc4
 workflow-type: tm+mt
-source-wordcount: '856'
-ht-degree: 5%
+source-wordcount: '853'
+ht-degree: 6%
 
 ---
 
 # 在Experience Manager Assetsas a Cloud Service中管理PDF檔案 {#add-assets-to-experience-manager}
 
-| [搜尋最佳實務](/help/assets/search-best-practices.md) | [中繼資料最佳實務](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [具有OpenAPI功能的Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets開發人員檔案](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| [搜尋最佳實務](/help/assets/search-best-practices.md) | [中繼資料最佳實務](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [具有 OpenAPI 功能的 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 開發人員文件](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
 Experience Manager Assets與Document CloudPDF檢視器緊密整合，可讓您預覽PDF檔案的多個頁面。 此外，您也可以使用進階Document CloudPDF檢視器功能，例如註解、搜尋文字、使用書籤和縮圖導覽PDF檔案，以及同一屋頂下的更多功能。 Experience Manager Assets也可讓您上傳其他支援格式的檔案，並以PDF格式預覽。
 
 Document CloudPDF檢視器可透過下列方式為AEM Assets提供好處：
+
 * [支援PDFDocument Cloud檢視器元件](#pdf-doc-cloud)
 * [支援PDF資產的多頁預覽和註解](#multi-page)
 * [支援其他格式檔案的多頁預覽](#multi-format)
 
-> 提示
-> 如果您無法取得先前上傳之PDF檔案的多頁預覽，請選取該PDF，然後按一下[重新處理] **![](/help/assets/assets/Reprocess.svg) [重新處理Assets]**。
+>[!TIP]
 >
+> 如果您無法取得先前上傳之PDF檔案的多頁預覽，請選取該PDF，然後按一下[重新處理] ![ ](/help/assets/assets/Reprocess.svg) **[重新處理Assets]**。
 
 ## 支援PDFDocument Cloud檢視器元件 {#pdf-doc-cloud}
 
@@ -57,9 +58,9 @@ Adobe Experience Manager Assets可讓您預覽包含數個頁面的PDF檔案。 
 
 您也可以在多頁預覽中將[註解](#pdf-annotations)套用至PDF檔案。
 
-> 注意
-> 您可以預覽的資產大小上限為100 MB。
+>[!NOTE]
 >
+> 您可以預覽的資產大小上限為100 MB。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3409355)
 
@@ -72,6 +73,7 @@ Adobe Experience Manager Assets可讓您預覽包含數個頁面的PDF檔案。 
 Experience Manager Assets可讓您將註解新增至PDF檔案。 一個PDF檔案可以有多個附註。
 
 若要為PDF檔案加上註釋，請執行下列步驟：
+
 1. 前往Assets介面，導覽至您要加上註解的PDF檔案。 原生PDF檢視器會在右側開啟，顯示所選PDF檔案的預覽。
 1. 按一下頂端功能表中的&#x200B;**註釋**。
 以下是可套用至PDF檔案的註解：
@@ -126,15 +128,16 @@ Experience Manager Assets可讓您將註解新增至PDF檔案。 一個PDF檔案
 ![其他格式的檔案的多頁預覽](/help/assets/assets/multi-page-other-formats.png)
 
 對於其他支援檔案格式的多頁預覽，請執行下列步驟：
+
 1. 請依照步驟[在AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/add-assets.html?lang=en)中上傳資產。
 1. 瀏覽您要上傳和預覽的檔案。
 1. 開啟檔案。
 1. 在左側面板中，選取靜態區段下的「PDF」 。 右側面板會顯示資產的多個頁面預覽。 從左側面板中選取縮圖，以選擇要預覽的頁面。
 
-> 注意
+>[!NOTE]
+>
 > * 您可以預覽的資產大小上限為100 MB。
 > * 要預覽的XLS或XLSX檔案大小上限為20 MB。
->
 
 **另請參閱**
 

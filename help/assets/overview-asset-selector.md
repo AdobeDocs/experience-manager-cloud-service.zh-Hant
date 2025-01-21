@@ -3,10 +3,10 @@ title: 適用於  [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 的�
 description: 在應用程式內使用資產選擇器進行搜尋、尋找和取得資產的中繼資料與轉譯。
 role: Admin, User
 exl-id: 62b0b857-068f-45b7-9018-9c59fde01dc3
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
-workflow-type: ht
+source-git-commit: e22e4e530c2d023724b360c488cab2b59ec22fc4
+workflow-type: tm+mt
 source-wordcount: '1332'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -159,10 +159,10 @@ import { AssetSelector } from 'https://experience.adobe.com/solutions/CQ-assets-
 
 資產選擇器可讓您在四種不同的視圖中檢視資產：
 
-* **![清單視圖](assets/do-not-localize/list-view.png) [!UICONTROL 清單視圖]** 清單視圖會在單一欄中顯示可捲動的檔案和資料夾。
-* **![網格視圖](assets/do-not-localize/grid-view.png) [!UICONTROL 網格視圖]** 網格視圖會在列與欄的網格中顯示可捲動的檔案和資料夾。
-* **![圖庫視圖](assets/do-not-localize/gallery-view.png) [!UICONTROL 圖庫視圖]** 圖庫視圖會在居中鎖定的水平清單中顯示檔案或資料夾。
-* **![瀑布視圖](assets/do-not-localize/waterfall-view.png) [!UICONTROL 瀑布視圖]** 瀑布視圖會以 Bridge 的形式顯示檔案或資料夾。
+* ![清單視圖](assets/do-not-localize/list-view.png) [!UICONTROL **清單視圖**] 清單視圖會在單一欄中顯示可捲動的檔案和資料夾。
+* ![網格視圖](assets/do-not-localize/grid-view.png) [!UICONTROL **網格視圖**] 網格視圖會在列與欄的網格中顯示可捲動的檔案和資料夾。
+* ![圖庫視圖](assets/do-not-localize/gallery-view.png) [!UICONTROL **圖庫視圖**] 圖庫視圖會在居中鎖定的水平清單中顯示檔案或資料夾。
+* ![瀑布圖檢視](assets/do-not-localize/waterfall-view.png) [!UICONTROL **瀑布圖**&#x200B;檢視]瀑布圖檢視以Bridge的形式顯示檔案或資料夾。
 
 **概觀圖形**
 

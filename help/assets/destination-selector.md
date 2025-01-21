@@ -5,16 +5,16 @@ contentOwner: Adobe
 role: Admin, User
 exl-id: 7e7bc1ee-d580-4c88-b550-273e8b0620ba
 feature: Selectors
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: e22e4e530c2d023724b360c488cab2b59ec22fc4
 workflow-type: tm+mt
 source-wordcount: '1905'
-ht-degree: 84%
+ht-degree: 85%
 
 ---
 
 # 微前端目標選擇器 {#Overview}
 
-| [搜尋最佳實務](/help/assets/search-best-practices.md) | [中繼資料最佳實務](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [具有OpenAPI功能的Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets開發人員檔案](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| [搜尋最佳實務](/help/assets/search-best-practices.md) | [中繼資料最佳實務](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [具有 OpenAPI 功能的 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 開發人員文件](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
 微前端目標選擇器在您的應用程式中提供了一個使用者介面，可輕鬆地和 [!DNL Experience Manager Assets as a Cloud Service] 存放庫整合。您可以搜尋或瀏覽到 [!DNL Experience Manager Assets as a Cloud Service] 存放庫中的適當資料夾，並從您的應用程式上傳資產。
@@ -96,7 +96,7 @@ import { AssetSelector } from 'https://experience.adobe.com/solutions/CQ-assets-
 
 目標選擇器會接收來自 `onItemSelect`、`onTreeToggleItem` 或者 `onTreeSelectionChange` 的回呼，以及包含物件 (目錄、影像等) 的選取目錄。
 
-**綱要語法**
+**結構語法**
 
 ```
 interface SelectedDestination {
@@ -271,10 +271,10 @@ interface SelectedDestination {
 
 目的地選擇器可讓您以四種不同的檢視檢視檢視資產：
 
-* **![清單檢視](assets/do-not-localize/list-view.png)[!UICONTROL 清單檢視]**：清單檢視在單一欄中顯示可捲動的檔案和資料夾。
-* **![格線檢視](assets/do-not-localize/grid-view.png)[!UICONTROL 格線檢視]**：格線檢視在列與欄的格線中顯示可捲動的檔案和資料夾。
-* **![圖庫檢視](assets/do-not-localize/gallery-view.png)[!UICONTROL 圖庫檢視]**：圖庫檢視在居中鎖定的水平清單中顯示檔案或資料夾。
-* **![瀑布檢視](assets/do-not-localize/waterfall-view.png)[!UICONTROL 瀑布檢視]**：瀑布檢視以 Bridge 的形式顯示檔案或資料夾。
+* ![清單檢視](assets/do-not-localize/list-view.png)[!UICONTROL **清單檢視**]：清單檢視在單一欄中顯示可捲動的檔案和資料夾。
+* ![格線檢視](assets/do-not-localize/grid-view.png)[!UICONTROL **格線檢視**]：格線檢視在列與欄的格線中顯示可捲動的檔案和資料夾。
+* ![圖庫檢視](assets/do-not-localize/gallery-view.png)[!UICONTROL **圖庫檢視**]：圖庫檢視在居中鎖定的水平清單中顯示檔案或資料夾。
+* ![瀑布檢視](assets/do-not-localize/waterfall-view.png)[!UICONTROL **瀑布檢視**]：瀑布檢視以 Bridge 的形式顯示檔案或資料夾。
 
 ### 資訊 {#info}
 
