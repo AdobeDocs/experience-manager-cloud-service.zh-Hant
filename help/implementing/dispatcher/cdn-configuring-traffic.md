@@ -4,9 +4,9 @@ description: 瞭解如何在設定檔案中宣告規則和篩選器，並使用C
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: cb1581e96f1cfeadf6ee37cae4738d9d51177504
+source-git-commit: c57fba06f23fa57fbf26796e747bb76f6a7a4203
 workflow-type: tm+mt
-source-wordcount: '1377'
+source-wordcount: '1390'
 ht-degree: 1%
 
 ---
@@ -158,6 +158,7 @@ data:
 | **取消設定** | reqProperty | 將指定的請求引數（僅支援「path」屬性），或請求標頭、查詢引數或Cookie移除至指定值，該值可為字串常值或請求引數。 |
 |         | 變數 | 移除指定的變數。 |
 |         | queryParamMatch | 移除符合指定規則運算式的所有查詢引數。 |
+|         | queryParamDoesNotMatch | 移除不符合指定規則運算式的所有查詢引數。 |
 | **轉換** | op：replace， （reqProperty或reqHeader、queryParam或reqCookie或var），match，replacement | 以新值取代部分請求引數（僅支援「path」屬性）、請求標頭、查詢引數、Cookie或變數。 |
 |              | op：tolower， （reqProperty或reqHeader、queryParam或reqCookie或var） | 將請求引數（僅支援「path」屬性）、請求標頭、查詢引數、Cookie或變數設定為小寫值。 |
 
@@ -449,7 +450,7 @@ redirects:
       action:
         type: redirect
         location:
-          reqProperty: path
+          reqProperty: url
           transform:
             - op: replace
               match: '^/(.*)$'
