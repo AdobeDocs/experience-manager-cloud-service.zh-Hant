@@ -4,14 +4,16 @@ description: 了解 AEM as a Cloud Service 中 Cloud Manager 2025.1.0 的發行�
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 4ec2f22b399528f35c07a95d7487264149521338
+source-git-commit: f6c1aa32647bcabeb0781973f81b75c11edc6a5d
 workflow-type: tm+mt
-source-wordcount: '367'
-ht-degree: 20%
+source-wordcount: '412'
+ht-degree: 18%
 
 ---
 
 # Adobe Experience Manager as a Cloud Service 中 Cloud Manager 2025.1.0 的發行說明 {#release-notes}
+
+<!-- https://wiki.corp.adobe.com/pages/viewpage.action?pageId=3389843928 -->
 
 了解 AEM (Adobe Experience Manager) as a Cloud Service 中 Cloud Manager 2025.1.0 的發行資訊。
 
@@ -28,7 +30,7 @@ AEM as a Cloud Service中的Cloud Manager 2025.1.0發行日期是2025年1月22�
 
 ## 新增功能 {#what-is-new}
 
-* **程式碼品質規則：** Cloud Manager程式碼品質步驟將開始使用SonarQube Server 9.9搭配Cloud Manager 2025.2.0版本（排定於2025年2月13日星期四）。
+* **程式碼品質規則 — SonarQube伺服器升級：** Cloud Manager程式碼品質步驟將開始使用SonarQube Server 9.9搭配Cloud Manager 2025.2.0版，預計於2025年2月13日星期四執行。
 
 若要準備，更新的SonarQube規則現在可在[程式碼品質規則](/help/implementing/cloud-manager/code-quality-testing.md#understanding-code-quality-rules)取得。
 
@@ -56,6 +58,10 @@ AEM as a Cloud Service中的Cloud Manager 2025.1.0發行日期是2025年1月22�
       * 使用Java 17或Java 21建置時，會部署Java 21執行階段。
       * Cloud Manager沙箱和開發環境的逐步推出將於2月開始，並持續到4月的生產環境。
       * 使用Java 11建置的客戶若想採用Java 21執行階段&#x200B;*較早*，可以透過[aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com)聯絡Adobe。
+
+* **「CDN設定」已重新命名為「網域對應」：**&#x200B;隨著AEM Cloud Manager的使用者介面改善，標籤「CDN設定」現在已重新命名為「網域對應」，以改善術語與功能的對應。<!-- CMGR-64738 -->
+
+  ![「CDN設定」在使用者介面](/help/implementing/cloud-manager/release-notes/assets/domain-mappings.png)中重新命名為「網域對應」
 
 
 <!-- ## Early adoption program {#early-adoption}
