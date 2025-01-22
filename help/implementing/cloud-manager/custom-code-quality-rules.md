@@ -5,10 +5,10 @@ exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 2573eb5f8a8ff21a8e30b94287b554885cd1cd89
+source-git-commit: 30d128c914b1eea19fb324f6587a364da3ebba1d
 workflow-type: tm+mt
-source-wordcount: '4421'
-ht-degree: 67%
+source-wordcount: '4384'
+ht-degree: 66%
 
 ---
 
@@ -21,9 +21,11 @@ ht-degree: 67%
 
 瞭解Cloud Manager以Adobe Experience Manager工程最佳實務為基礎的自訂程式碼品質規則，透過徹底測試確保高品質的程式碼。 另請參閱[程式碼品質測試](/help/implementing/cloud-manager/code-quality-testing.md)。
 
->[!NOTE]
+由於 Adobe 專屬資訊，完整的 SonarQube 規則無法下載。您可以使用此連結](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx)下載&#x200B;*目前*&#x200B;規則[的完整清單。 繼續閱讀本文件以取得規則的說明和範例。
+
+>[!IMPORTANT]
 >
->由於 Adobe 專屬資訊，完整的 SonarQube 規則無法下載。若要下載完整的規則清單，可[使用此連結](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx)。繼續閱讀本文件以取得規則的說明和範例。
+>從 2025 年 2 月 13 日 (星期四) (Cloud Manager 2025.2.0) 開始，Cloud Manager 程式碼品質將使用更新後的 SonarQube 9.9 版本和更新後的規則清單 (可[在此處下載](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS-2024-12-0.xlsx))。
 
 >[!NOTE]
 >
@@ -187,7 +189,7 @@ public void orDoThis () {
 ### 一律關閉 ResourceResolver 物件 {#resourceresolver-objects-should-always-be-closed}
 
 * **索引碼**：CQRules:CQBP-72
-* **類型**：程式碼異味
+* **類型**：`Code Smell`
 * **嚴重度**：重大
 * **始自**：2018.4.0 版本
 
@@ -229,7 +231,7 @@ public void orDoThis(Session session) throws Exception {
 ### 請勿使用 Sling Servlet 路徑來註冊 Servlet {#do-not-use-sling-servlet-paths-to-register-servlets}
 
 * **索引碼**：CQRules:CQBP-75
-* **類型**：程式碼異味
+* **類型**：`Code Smell`
 * **嚴重度**：重大
 * **始自**：2018.4.0 版本
 
@@ -249,7 +251,7 @@ public class DontDoThis extends SlingAllMethodsServlet {
 ### 應記錄或擲回攔截到的例外狀況，而非執行兩者。 {#caught-exceptions-should-be-logged-or-thrown-but-not-both}
 
 * **索引碼**：CQRules:CQBP-44---CatchAndEitherLogOrThrow
-* **類型**：程式碼異味
+* **類型**：`Code Smell`
 * **嚴重度**：輕微
 * **始自**：2018.4.0 版本
 
@@ -291,7 +293,7 @@ public void orDoThis() throws MyCustomException {
 ### 避免 Log 陳述式後緊跟著 Throw 陳述式 {#avoid-having-a-log-statement-immediately-followed-by-a-throw-statement}
 
 * **索引碼**：CQRules:CQBP-44---ConsecutivelyLogAndThrow
-* **類型**：程式碼異味
+* **類型**：`Code Smell`
 * **嚴重度**：輕微
 * **始自**：2018.4.0 版本
 
@@ -317,7 +319,7 @@ public void doThis() throws Exception {
 ### 處理 GET 或 HEAD 要求時避免在 INFO 上進行記錄 {#avoid-logging-at-info-when-handling-get-or-head-requests}
 
 * **索引碼**：CQRules:CQBP-44---LogInfoInGetOrHeadRequests
-* **類型**：程式碼異味
+* **類型**：`Code Smell`
 * **嚴重度**：輕微
 
 一般而言，應該使用 INFO 記錄層級來區分重要操作，並且預設情況下，會將 Experience Manager 設定為在 INFO 或以上層級記錄。GET 和 HEAD 方法應僅能唯讀操作，因此不構成重要操作。在 INFO 層級記錄以回應 GET 或 HEAD 要求可能會產生大量記錄雜訊，而使得在記錄檔中識別有用資訊變得更加困難。在處理GET或HEAD請求時，如果出現錯誤，請記錄在WARN或ERROR層級。 如果需要詳細的疑難排解資訊，請使用DEBUG或TRACE層級。
@@ -345,7 +347,7 @@ public void doGet() throws Exception {
 ### 請勿使用 Exception.getMessage() 作為記錄陳述式的第一個參數 {#do-not-use-exception-getmessage-as-the-first-parameter-of-a-logging-statement}
 
 * **索引碼**：CQRules:CQBP-44---ExceptionGetMessageIsFirstLogParam
-* **類型**：程式碼異味
+* **類型**：`Code Smell`
 * **嚴重度**：輕微
 * **始自**：2018.4.0 版本
 
@@ -378,7 +380,7 @@ public void doThis() {
 ### Catch 區塊中的記錄應在 WARN 或 ERROR 層級進行 {#logging-in-catch-blocks-should-be-at-the-warn-or-error-level}
 
 * **索引碼**：CQRules:CQBP-44---WrongLogLevelInCatchBlock
-* **類型**：程式碼異味
+* **類型**：`Code Smell`
 * **嚴重度**：輕微
 * **始自**：2018.4.0 版本
 
@@ -411,7 +413,7 @@ public void doThis() {
 ### 不可將堆疊追蹤列印到控制台 {#do-not-print-stack-traces-to-the-console}
 
 * **索引碼**：CQRules:CQBP-44---ExceptionPrintStackTrace
-* **類型**：程式碼異味
+* **類型**：`Code Smell`
 * **嚴重度**：輕微
 * **始自**：2018.4.0 版本
 
@@ -444,7 +446,7 @@ public void doThis() {
 ### 不可輸出到標準輸出或標準錯誤 {#do-not-output-to-standard-output-or-standard-error}
 
 * **索引碼**：CQRules:CQBP-44—LogLevelConsolePrinters
-* **類型**：程式碼異味
+* **類型**：`Code Smell`
 * **嚴重度**：輕微
 * **始自**：2018.4.0 版本
 
@@ -477,7 +479,7 @@ public void doThis() {
 ### 避免硬式編碼應用程式和程式庫路徑 {#avoid-hardcoded-apps-and-libs-paths}
 
 * **索引碼**：CQRules:CQBP-71
-* **類型**：程式碼異味
+* **類型**：`Code Smell`
 * **嚴重度**：輕微
 * **始自**：2018.4.0 版本
 
@@ -502,7 +504,7 @@ public void doThis(Resource resource) {
 ### 請勿使用 Sling 排程器 {#sonarqube-sling-scheduler}
 
 * **索引碼**：CQRules:AMSCORE-554
-* **類型**：程式碼異味/雲端服務相容性
+* **型別**： `Code Smell`/Cloud Service相容性
 * **嚴重度**：輕微
 * **始自**：2020.5.0 版本
 
@@ -513,7 +515,7 @@ public void doThis(Resource resource) {
 ### 請勿使用 Experience Manager 已過時的 API {#sonarqube-aem-deprecated}
 
 * **索引碼**：AMSCORE-553
-* **類型**：程式碼異味/雲端服務相容性
+* **型別**： `Code Smell`/Cloud Service相容性
 * **嚴重度**：輕微
 * **始自**：2020.5.0 版本
 
@@ -800,7 +802,7 @@ public class DontDoThis implements Page {
 ### 預設的撰寫模式不應該是傳統UI {#oakpal-default-authoring}
 
 * **索引碼**：ClassicUIAuthoringMode
-* **類型**：程式碼異味/雲端服務相容性
+* **型別**： `Code Smell`/Cloud Service相容性
 * **嚴重度**：輕微
 * **始自**：2020.5.0 版本
 
@@ -809,7 +811,7 @@ OSGi 設定 `com.day.cq.wcm.core.impl.AuthoringUIModeServiceImpl` 會定義 Expe
 ### 包含對話方塊的元件應該有Touch UI對話方塊 {#oakpal-components-dialogs}
 
 * **索引碼**：ComponentWithOnlyClassicUIDialog
-* **類型**：程式碼異味/雲端服務相容性
+* **型別**： `Code Smell`/Cloud Service相容性
 * **嚴重度**：輕微
 * **始自**：2020.5.0 版本
 
@@ -824,7 +826,7 @@ Experience Manager 現代化工具文件提供了有關如何將元件從 Classi
 ### 套件不應該混合可變和不可變的內容 {#oakpal-packages-immutable}
 
 * **索引碼**：ImmutableMutableMixedPackage
-* **類型**：程式碼異味/雲端服務相容性
+* **型別**： `Code Smell`/Cloud Service相容性
 * **嚴重度**：輕微
 * **始自**：2020.5.0 版本
 
@@ -839,7 +841,7 @@ Experience Manager 現代化工具文件提供了有關如何將元件從 Classi
 ### 不應使用反向複寫代理 {#oakpal-reverse-replication}
 
 * **索引碼**：ReverseReplication
-* **類型**：程式碼異味/雲端服務相容性
+* **型別**： `Code Smell`/Cloud Service相容性
 * **嚴重度**：輕微
 * **始自**：2020.5.0 版本
 
@@ -892,7 +894,7 @@ Experience Manager 用戶端資料庫可能包含影像和字體之類的靜態�
 ### 不建議使用靜態範本而支持可編輯範本 {#oakpal-static-template}
 
 * **索引碼**：StaticTemplateUsage
-* **類型**：程式碼異味
+* **類型**：`Code Smell`
 * **嚴重度**：輕微
 * **始自**：2021.2.0 版本
 
@@ -903,7 +905,7 @@ Experience Manager 用戶端資料庫可能包含影像和字體之類的靜態�
 ### 不建議使用舊版基礎元件 {#oakpal-usage-legacy}
 
 * **索引碼**：LegacyFoundationComponentUsage
-* **類型**：程式碼異味
+* **類型**：`Code Smell`
 * **嚴重度**：輕微
 * **始自**：2021.2.0 版本
 
@@ -914,7 +916,7 @@ Experience Manager 用戶端資料庫可能包含影像和字體之類的靜態�
 ### 僅使用受支援的執行模式名稱和順序 {#oakpal-supported-runmodes}
 
 * **索引碼**：SupportedRunmode
-* **類型**：程式碼異味
+* **類型**：`Code Smell`
 * **嚴重度**：輕微
 * **始自**：2021.2.0 版本
 
@@ -923,7 +925,7 @@ Experience Manager as a Cloud Service 對執行模式名稱實施嚴格的命名
 ### 自訂搜尋索引定義節點必須是 `/oak:index` 的直接子節點 {#oakpal-custom-search}
 
 * **索引碼**：OakIndexLocation
-* **類型**：程式碼異味
+* **類型**：`Code Smell`
 * **嚴重度**：輕微
 * **始自**：2021.2.0 版本
 
@@ -932,7 +934,7 @@ Experience Manager as a Cloud Service 要求自訂搜尋索引定義 (即類型 
 ### 自訂搜尋索引定義節點的 compatVersion 必須為 2 {#oakpal-custom-search-compatVersion}
 
 * **索引碼**：IndexCompatVersion
-* **類型**：程式碼異味
+* **類型**：`Code Smell`
 * **嚴重度**：輕微
 * **始自**：2021.2.0 版本
 
@@ -941,7 +943,7 @@ Experience Manager as a Cloud Service 要求自訂搜尋索引定義 (例如類�
 ### 自訂搜尋索引定義節點的子孫節點必須屬於 `nt:unstructured ` 類型{#oakpal-descendent-nodes}
 
 * **索引碼**：IndexDescendantNodeType
-* **類型**：程式碼異味
+* **類型**：`Code Smell`
 * **嚴重度**：輕微
 * **始自**：2021.2.0 版本
 
@@ -950,7 +952,7 @@ Experience Manager as a Cloud Service 要求自訂搜尋索引定義 (例如類�
 ### 自訂搜尋索引定義節點必須包含名為 indexRules 並有子系的子節點 {#oakpal-custom-search-index}
 
 * **索引碼**：IndexRulesNode
-* **類型**：程式碼異味
+* **類型**：`Code Smell`
 * **嚴重度**：輕微
 * **始自**：2021.2.0 版本
 
@@ -959,7 +961,7 @@ Experience Manager as a Cloud Service 要求自訂搜尋索引定義 (例如類�
 ### 自訂搜尋索引定義節點必須遵循命名慣例 {#oakpal-custom-search-definitions}
 
 * **索引碼**：IndexName
-* **類型**：程式碼異味
+* **類型**：`Code Smell`
 * **嚴重度**：輕微
 * **始自**：2021.2.0 版本
 
@@ -977,7 +979,7 @@ Experience Manager as a Cloud Service 要求自訂搜尋索引定義 (即類型 
 ### 自訂搜尋索引定義節點不得包含名為 seed 的屬性 {#oakpal-property-name-seed}
 
 * **索引碼**：IndexSeedProperty
-* **類型**：程式碼異味
+* **類型**：`Code Smell`
 * **嚴重度**：輕微
 * **始自**：2021.2.0 版本
 
@@ -986,7 +988,7 @@ Experience Manager as a Cloud Service 禁止自訂搜尋索引定義 (即 `oak:Q
 ### 自訂搜尋索引定義節點不得包含名為 reindex 的屬性 {#oakpal-reindex-property}
 
 * **索引碼**：IndexReindexProperty
-* **類型**：程式碼異味
+* **類型**：`Code Smell`
 * **嚴重度**：輕微
 * **始自**：2021.2.0 版本
 
@@ -1031,7 +1033,7 @@ Cloud Service。 如需詳細資訊，請參閱[內容搜尋和索引](/help/ope
 ### 如果自訂搜尋索引定義包含`compatVersion`，則必須將其設為2 {#oakpal-compatVersion}
 
 * **索引碼**：IndexCompatVersion
-* **類型**：程式碼異味
+* **類型**：`Code Smell`
 * **嚴重度**：重大
 * **始自**：2022.1.0 版本
 
@@ -1039,7 +1041,7 @@ Cloud Service。 如需詳細資訊，請參閱[內容搜尋和索引](/help/ope
 ### 指定`includedPaths`的索引節點也應該指定具有相同值的`queryPaths` {#oakpal-included-paths-without-query-paths}
 
 * **索引鍵**： IndexIncludedPathsWithoutQueryPaths
-* **類型**：程式碼異味
+* **類型**：`Code Smell`
 * **嚴重度**：輕微
 * **始自**：2023.1.0 版本
 
@@ -1048,7 +1050,7 @@ Cloud Service。 如需詳細資訊，請參閱[內容搜尋和索引](/help/ope
 ### 在泛型節點型別上指定`nodeScopeIndex`的索引節點也應該指定`includedPaths`和`queryPaths` {#oakpal-full-text-on-generic-node-type}
 
 * **Key**： IndexFulltextOnGenericType
-* **類型**：程式碼異味
+* **類型**：`Code Smell`
 * **嚴重度**：輕微
 * **始自**：2023.1.0 版本
 
@@ -1094,7 +1096,7 @@ Cloud Service。 如需詳細資訊，請參閱[內容搜尋和索引](/help/ope
 ### 不應覆寫查詢引擎的queryLimitReads屬性 {#oakpal-query-limit-reads}
 
 * **索引鍵**： OverrideOfQueryLimitReads
-* **類型**：程式碼異味
+* **類型**：`Code Smell`
 * **嚴重度**：輕微
 * **始自**：2023.1.0 版本
 
@@ -1103,7 +1105,7 @@ Cloud Service。 如需詳細資訊，請參閱[內容搜尋和索引](/help/ope
 ### 相同索引的多個作用中版本 {#oakpal-multiple-active-versions}
 
 * **索引鍵**： IndexDetectMultipleActiveVersionsOfSameIndex
-* **類型**：程式碼異味
+* **類型**：`Code Smell`
 * **嚴重度**：輕微
 * **始自**：2023.1.0 版本
 
@@ -1130,7 +1132,7 @@ Cloud Service。 如需詳細資訊，請參閱[內容搜尋和索引](/help/ope
 ### 完整自訂索引定義的名稱應符合官方方針 {#oakpal-fully-custom-index-name}
 
 * **Key**： IndexValidFullyCustomName
-* **類型**：程式碼異味
+* **類型**：`Code Smell`
 * **嚴重度**：輕微
 * **始自**：2023.1.0 版本
 
@@ -1191,7 +1193,7 @@ Cloud Service。 如需詳細資訊，請參閱[內容搜尋和索引](/help/ope
 ### 標籤屬性 {#tags-property}
 
 * **Key**： IndexHasValidTagsProperty
-* **類型**：程式碼異味
+* **類型**：`Code Smell`
 * **嚴重度**：輕微
 * **始自**：2023.1.0 版本
 

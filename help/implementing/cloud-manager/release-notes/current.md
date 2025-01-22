@@ -1,19 +1,18 @@
 ---
-title: Adobe Experience Manager as a Cloud Service 中 Cloud Manager 2024.12.0 的發行說明
-description: 了解 AEM as a Cloud Service 中 Cloud Manager 2024.12.0 的發行資訊。
+title: Adobe Experience Manager as a Cloud Service 中 Cloud Manager 2025.1.0 的發行說明
+description: 了解 AEM as a Cloud Service 中 Cloud Manager 2025.1.0 的發行資訊。
 feature: Release Information
 role: Admin
-exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 6f17afc82b2d26fd6025a9ba8449a0cb1b368d48
+source-git-commit: bf12306969581723e4e9ce1517a8f0d445f26521
 workflow-type: tm+mt
-source-wordcount: '700'
-ht-degree: 92%
+source-wordcount: '363'
+ht-degree: 20%
 
 ---
 
-# Adobe Experience Manager as a Cloud Service 中 Cloud Manager 2024.12.0 的發行說明 {#release-notes}
+# Adobe Experience Manager as a Cloud Service 中 Cloud Manager 2025.1.0 的發行說明 {#release-notes}
 
-了解 AEM (Adobe Experience Manager) as a Cloud Service 中 Cloud Manager 2024.12.0 的發行資訊。
+了解 AEM (Adobe Experience Manager) as a Cloud Service 中 Cloud Manager 2025.1.0 的發行資訊。
 
 >[!NOTE]
 >
@@ -21,64 +20,50 @@ ht-degree: 92%
 
 ## 發行日期 {#release-date}
 
-AEM as a Cloud Service 中 Cloud Manager 2024.12.0 的發行日期是 2024 年 12 月 5 日星期四。
+AEM as a Cloud Service中的Cloud Manager 2025.1.0發行日期是2025年1月22日星期三。
 
-下一個版本預計於 2025 年 1 月 23 日發行。
+下一個預計發行日期為2025年2月13日星期四。
 
 
 ## 新增功能 {#what-is-new}
 
-* **程式碼品質規則：**&#x200B;從2025年2月13日星期四開始，Cloud Manager程式碼品質步驟現在使用升級的SonarQube 9.9.5.90363版。
+* **程式碼品質規則：** Cloud Manager程式碼品質步驟將開始使用SonarQube Server 9.9搭配Cloud Manager 2025.2.0版本（排定於2025年2月13日星期四）。
 
-  更新的規則適用於AEM as a Cloud Service上的Cloud Manager （位於[此連結](/help/implementing/cloud-manager/code-quality-testing.md#understanding-code-quality-rules)），可決定Cloud Manager管道的安全性分數和程式碼品質。 此更新可能會影響您的品質閘道，潛在地封鎖部署。
+若要準備，更新的SonarQube規則現在可在[程式碼品質規則](/help/implementing/cloud-manager/code-quality-testing.md#understanding-code-quality-rules)取得。
 
-<!-- * **Java 21 support:** Customers can now optionally build with Java 17 or Java 21, benefiting from performance improvements and new language features. See [Build environment](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) for configuration steps, including updating your Maven project description, and certain library versions. When the build version is set to Java 17 or Java 21, the runtime defaults to Java 21.
+您可以設定下列管道文字變數，以「提前檢查」新規則：
 
-    Starting February 2025, sandboxes and dev environments upgrade to the Java 21 runtime, regardless of the build version (Java 8, 11, 17, or 21). Production environments follow with an upgrade in April 2025. -->
+`CM_BUILD_IMAGE_OVERRIDE` = `self-service-build:sonar-99-upgrade-java17or21`
 
-* **A 記錄類型：**&#x200B;新增 A 記錄類型支援，以改善 AEM Cloud Manager 中使用內容傳遞網路設定之網域的上線準備度。您現在可以選擇透過新增 CNAME 記錄類型或代表 Fastly 之 IP 的 A 記錄類型來執行上線，藉此簡化網域路由。此增強功能可以免除在使用 Fastly 進行網域設定時，僅能依賴 CNAME 記錄的限制。
+此外，設定下列變數，以確保程式碼品質步驟會針對相同的認可執行（通常針對相同的`commitId`略過）：
 
-  請參閱[新增自訂網域名稱](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)。<!-- CMGR-63076 -->
+`CM_DISABLE_BUILD_REUSE` = `true`
 
-<!-- * The AEM Code Quality step now uses SonarQube 9.9 Server, replacing the older 7.4 version. This upgrade brings additional security, performance, and code quality checks, offering more comprehensive analysis and coverage for your projects. -->
-
-* **將多個網域新增至 Edge Delivery 網站：**&#x200B;您現在可以將多個網域 (包括 apex 和非 apex 網域) 新增至 AEM Cloud Manager 中的 Edge Delivery 網站 (EDS)。此增強功能會解決先前將多個網域與 EDS 來源建立關聯的能力限制。此更新可確保在網域設定管理方面有更佳的靈活性，並簡化具有複雜網域設定之網站的上線流程。<!-- CMGR-63007 -->
-
-* **進階篩選選項：** AEM Cloud Manager 中的管道執行頁面以及 SSL 憑證頁面導入了進階過濾選項。您現在可以使用多個條件進行篩選，從而更快地存取相關資料並提升部署效率。<!-- CMGR-26263 -->
-
-   * **管道活動篩選：**納入管道活動篩選，讓您能夠針對特定管道活動調整搜尋結果的範圍。可用的篩選條件包括管道、動作和狀態。
-     ![管道活動篩選](/help/implementing/cloud-manager/assets/filters-pipeline.png)
-
-
-   * **SSL 憑證篩選：**納入 SSL 憑證篩選，可讓您針對特定憑證調整搜尋結果範圍。可用的篩選條件包括 SSL 憑證名稱、所有權和狀態。
-     ![SSL 憑證篩選](/help/implementing/cloud-manager/assets/filters-ssl-certificates.png)
-
-## 早期採用方案 {#early-adoption}
-
-成為 Cloud Manager 早期採用方案的一部分，並有機會測試即將推出的功能。
-
-### 自備 Git - 現在支援 GitLab 和 Bitbucket {#gitlab-bitbucket}
-
-<!-- BOTH CS & AMS -->
-
-**自備 Git** 功能已擴充，以納入對 GitLab 和 Bitbucket 等外部存放庫的支援。這項新的支援功能是對私人和企業 GitHub 存放庫現有支援的補充。當您新增這些新存放庫時，也可以將它們直接連結到您的管道。您可以將這些存放庫託管在公有雲平台上或私有雲或基礎架構內。這項整合也消除了與 Adobe 存放庫持續進行代碼同步的需求，並提供了在提取請求合併到主分支之前，驗證提取請求的功能。
-
-對於使用外部存放庫 (不包括 GitHub 託管的存放庫) 且&#x200B;**部署觸發程序**&#x200B;設定為「**在 Git 變更時**」的管道，現在會自動啟動。
-
-請查看[在 Cloud Manager 中新增外部存放庫](/help/implementing/cloud-manager/managing-code/external-repositories.md)。
-
-![新增存放庫對話框](/help/implementing/cloud-manager/release-notes/assets/repositories-add-release-notes.png)
+![變數設定頁面](/help/implementing/cloud-manager/release-notes/assets/variables-config.png)
 
 >[!NOTE]
 >
->目前，立即可用的提取請求代碼品質檢查僅限於 GitHub 託管的存放庫，但我們正在進行一項更新以將此功能擴展到其他 Git 供應商。
+>Adobe建議建立新的CI/CD程式碼品質管道，並設定至與您的主要生產管道相同的分支。 在2025年2月13日發行版本之前&#x200B;*設定適當的變數*，以驗證新的強制規則不會引入封鎖程式。
 
-如果您有興趣測試此新功能並分享您的意見回饋，請使用與您的 Adobe ID 關聯的電子郵件地址向 [Grp-CloudManager_BYOG@adobe.com](mailto:Grp-CloudManager_BYOG@adobe.com) 傳送電子郵件。請務必包含您要使用的 Git 平台以及您是否使用私人/公開或企業存放庫結構。
+* **Java 17和Java 21版本支援：**&#x200B;客戶現在可以使用Java 17或Java 21版本進行版本建立，以取得效能增強功能和新的語言功能。 如需設定步驟，包括更新您的Maven專案和程式庫版本，請參閱[組建環境](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)。 當組建版本設定為Java 17或Java 21時，部署的執行階段為Java 21。
 
-## 錯誤修正
+   * **功能啟用**
+      * 此功能將在2025年2月13日星期四對所有客戶啟用，同時預設推出新的SonarQube版本。
+      * 客戶可以設定上述升級SonarQube 9.9版的兩個變數設定，立即&#x200B;*啟用*。
 
-* 已新增防護措施，以避免刪除 AEM Cloud Manager 內具有使用中網域對應的網域。現在起，嘗試刪除此類網域的使用者會收到一則錯誤訊息，指示其先刪除網域對應後再繼續進行網域刪除。此工作流程能夠確保網域完整性，並防止意外的錯誤設定。<!-- CMGR-63033 -->
-* 在罕見的情況下，由於個別案例中相關聯的狀態不正確，使用者會無法新增網域名稱或更新 SSL 憑證。<!-- CMGR-62816 -->
+   * **Java 21執行階段部署**
+      * 使用Java 17或Java 21建置時，會部署Java 21執行階段。
+      * Cloud Manager沙箱和開發環境的逐步推出將於2月開始，並持續到4月的生產環境。
+      * 想要採用Java 21執行階段&#x200B;*較早*&#x200B;的客戶可以透過[aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com)聯絡Adobe。
+
+
+<!-- ## Early adoption program {#early-adoption}
+
+Be a part of Cloud Manager's early adoption program and have a chance to test upcoming features. -->
+
+<!-- ## Bug fixes -->
+
+
 
 
 <!-- ## Known issues {#known-issues} -->
