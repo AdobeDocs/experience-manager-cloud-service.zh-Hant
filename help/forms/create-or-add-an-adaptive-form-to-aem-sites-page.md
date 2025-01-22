@@ -5,7 +5,7 @@ feature: Adaptive Forms, Foundation Components
 Keywords: AF in Sites editor, af in aem sites, aem sites af, add af to a sites page, af aem sites, af sites, create af in a sites page, adaptive form in aem sites, forms aem sites, add form to a sites page, adaptive forms aem sites, add adaptive forms to aem page, create forms in an aem sites page
 exl-id: a1846c5d-7b0f-4f48-9d15-96b2a8836a9d
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: 64a8b363cff079aa0a6f56effd77830ac797deca
 workflow-type: tm+mt
 source-wordcount: '3184'
 ht-degree: 18%
@@ -41,7 +41,7 @@ AEM FormsCloud Service提供最適化表單容器和Adaptive Forms — 內嵌元
 * **標籤：** AEM Sites頁面可讓您[將標籤或標籤指派給頁面、資產或其他內容](/help/implementing/developing/introduction/tagging-framework.md)。 標籤是關鍵字或中繼資料標籤，提供根據特定條件分類及組織內容的方式。 您可以指派一或多個標籤給AEM內的頁面、資產或任何其他內容專案，以改善搜尋並將資產分類。
 * **鎖定和解鎖內容：** AEM Sites可讓使用者[控制AEM Sites環境中對頁面](/help/sites-cloud/authoring/page-editor/edit-content.md)的存取與修改。 頁面鎖定時，即表示頁面可免受其他使用者未經授權的變更或編輯作業。 只有已鎖定內容的使用者或指定的管理員可以解除鎖定內容以允許修改。
 
-此外，AEM頁面編輯器中的最適化Forms使用[最適化Forms核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html#features)。 這些核心元件提供標準且更簡單的方法來樣式化和自訂元件，與[AEM Sites WCM元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hant)相同。
+此外，AEM頁面編輯器中的最適化Forms使用[最適化Forms核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html#features)。 這些核心元件提供標準且更簡單的方法來樣式化和自訂元件，與[AEM Sites WCM元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-hant)相同。
 
 
 ## 如何在AEM Sites頁面或AEM體驗片段中建立或新增最適化表單？ {#various-options-to-creat-or-add-an-adaptive-form-in-aem-sites-page-or-aem-experience-fragment}
@@ -72,13 +72,11 @@ AEM FormsCloud Service提供最適化表單容器和Adaptive Forms — 內嵌元
 
 開始建立最適化表單之前，請啟用最適化Forms核心元件，並將最適化Forms使用者端程式庫新增到AEM Sites頁面：
 
-+++  為您的AEM Cloud Service環境啟用最適化Forms核心元件
+### 為您的AEM Cloud Service環境啟用最適化Forms核心元件
 
 確保[已為您的 AEM Forms as a Cloud Service environment 環境啟用調適型表單核心元件](enable-adaptive-forms-core-components.md)。
 
-+++
-
-+++  新增Adaptive Forms使用者端資料庫至您的AEM Sites頁面或體驗片段
+### 新增Adaptive Forms使用者端資料庫至您的AEM Sites頁面或體驗片段
 
 若要啟用調適型表單容器元件的完整功能，請使用部署管道將 Customheaderlibs 和 Customfooterlibs 客戶端資料庫新增至您的 AEM Sites 頁面。 若要新增資料庫：
 
@@ -123,9 +121,7 @@ AEM FormsCloud Service提供最適化表單容器和Adaptive Forms — 內嵌元
 
 1. [執行部署管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/enable-front-end-pipeline.html)，將客戶端資料庫部署到您的 AEM as a Cloud Service 環境。
 
-+++
-
-+++ 為您的AEM Sites頁面或體驗片段啟用最適化Forms容器
+### 為您的AEM Sites頁面或體驗片段啟用最適化Forms容器
 
 若要啟用範本原則中的[!UICONTROL 調適型表單容器]元件，需執行以下步驟：
 

@@ -5,7 +5,7 @@ feature: Adaptive Forms
 role: Admin, User, Developer
 Keywords: Forms AEM Sites, Embed Form to a Sites page, Adaptive Forms AEM Sites, Embed Adaptive Forms to AEM Page, Embed Forms in an AEM Sites page
 exl-id: 359b05e8-d8c1-4a77-9e70-6f6b6e668560
-source-git-commit: 5321fed58f66b2beabcacc2de4b7dfb2dc3754f1
+source-git-commit: 64a8b363cff079aa0a6f56effd77830ac797deca
 workflow-type: tm+mt
 source-wordcount: '3145'
 ht-degree: 5%
@@ -75,13 +75,11 @@ In addition, Adaptive Forms in AEM Page Editor use [Adaptive Forms Core Componen
 
 開始使用&#x200B;**[!UICONTROL 最適化Forms — 內嵌(v2)]**&#x200B;內嵌新的最適化表單或現有的最適化表單之前，請啟用&#x200B;**最適化Forms核心元件**&#x200B;並將&#x200B;**最適化Forms使用者端資料庫**&#x200B;新增到AEM Sites頁面：
 
-+++  為您的AEM Cloud Service環境啟用最適化Forms核心元件
+### 為您的AEM Cloud Service環境啟用最適化Forms核心元件
 
 確保[已為您的 AEM Forms as a Cloud Service environment 環境啟用調適型表單核心元件](enable-adaptive-forms-core-components.md)。
 
-+++
-
-+++  新增Adaptive Forms使用者端資料庫至您的AEM Sites頁面或體驗片段
+### 新增Adaptive Forms使用者端資料庫至您的AEM Sites頁面或體驗片段
 
 在&#x200B;**[!UICONTROL 表單容器]**&#x200B;設定對話方塊中選取&#x200B;**[!UICONTROL 當表單涵蓋整個頁面寬度]**&#x200B;選項，並使用使用核心元件的調適型Forms時，必須在您對應的網站頁面上包含使用者端資料庫。
 
@@ -130,9 +128,7 @@ In addition, Adaptive Forms in AEM Page Editor use [Adaptive Forms Core Componen
 
 1. [執行部署管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/enable-front-end-pipeline.html)，將客戶端資料庫部署到您的 AEM as a Cloud Service 環境。
 
-+++
-
-+++ 啟用您的AEM Sites頁面或體驗片段的&#x200B;**[!UICONTROL 最適化Forms — 內嵌(v2)]**
+### 啟用最適化Forms — 為您的AEM Sites頁面或體驗片段內嵌(v2)
 
 若要在範本的原則中啟用&#x200B;**[!UICONTROL Adaptive Forms - Embed(v2)]**&#x200B;元件，請執行下列步驟：
 
@@ -142,8 +138,6 @@ In addition, Adaptive Forms in AEM Page Editor use [Adaptive Forms Core Componen
 1. 按一下&#x200B;**[!UICONTROL 「完成」]**。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419369?quality=12&learn=on)
-
-+++
 
 ## 使用最適化Forms - Embed(v2)元件內嵌最適化表單 {#embed-an-adaptive-form-in-sites-editor-or-experience-fragment}
 
@@ -249,7 +243,7 @@ In addition, Adaptive Forms in AEM Page Editor use [Adaptive Forms Core Componen
 您可以自訂&#x200B;**[!UICONTROL 最適化表單 — 內嵌(v2)]**&#x200B;元件的進階設定。 在「**[!UICONTROL 編輯最適化Forms — 內嵌]**」對話方塊中，您可以指定下列專案：
 
 * **資產路徑**：瀏覽並選取要內嵌的最適化表單。 如果您從Assets瀏覽器中將其刪除，則會自動填入。
-* **Post提交** ：選取要在提交表單時觸發的動作。 您可以選擇顯示感謝訊息或感謝頁面。
+* **發佈提交** ：選取要在提交表單時觸發的動作。 您可以選擇顯示感謝訊息或感謝頁面。
    * **顯示感謝訊息**：使用RTF編輯器撰寫訊息，以在表單提交時顯示。 只有當您選擇顯示感謝訊息時，才能使用此選項。
    * **顯示感謝頁面**：瀏覽並選取要在表單提交時顯示的頁面。 只有當您選擇顯示感謝頁面時，才能使用此選項。
    * **重新導向以感謝您的頁面**：啟用選項，以感謝頁面取代包含內嵌最適化表單的頁面。 否則，感謝頁面會取代&#x200B;**[!UICONTROL 最適化Forms — 內嵌(v2)]**&#x200B;元件中的最適化表單，而不會重新整理頁面上的基礎網站。 只有當您選擇顯示感謝頁面時，才能使用此選項。
