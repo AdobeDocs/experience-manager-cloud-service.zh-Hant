@@ -5,7 +5,7 @@ Keywords: Use form submission service, Submit form using form submission service
 feature: Edge Delivery Services
 Role: User, Developer
 exl-id: 12b4edba-b7a1-4432-a299-2f59b703d583
-source-git-commit: 42db7e5d4896a4a488643cb54f0b77cf4db86f3e
+source-git-commit: 4f2dcb02c3ad00ef9735679d8bd4cce568bfabb5
 workflow-type: tm+mt
 source-wordcount: '835'
 ht-degree: 1%
@@ -31,7 +31,7 @@ Forms提交服務可讓您將表單提交的資料儲存在任何試算表中(�
 以下是使用Forms提交服務的先決條件：
 
 * 請確定您的AEM專案具有最新最適化表單區塊。
-* 確認您的Git存放庫已新增至允許清單，以使用Forms提交服務。 請將mailto:aem-forms-ea@adobe.com連同您的GitHub組織名稱和存放庫名稱，新增至使用Forms提交服務的允許清單。
+* 確認您的Git存放庫已新增至允許清單，以使用Forms提交服務。 請使用您的GitHub組織名稱和存放庫名稱[mailto:aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)，將這些組織名稱和存放庫名稱新增至允許清單，以便使用Forms提交服務。
 
 ## 設定Forms提交服務
 
