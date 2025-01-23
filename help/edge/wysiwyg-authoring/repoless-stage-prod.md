@@ -4,9 +4,9 @@ description: 瞭解如何以重寫方式運用單一程式碼基底，為您的�
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 701bd9bc-30e8-4654-8248-a06d441d1504
-source-git-commit: 42218450ab03201c69c59053f720954183f4b652
+source-git-commit: 5715a07dc3e90e3781afa8d837394533ba419483
 workflow-type: tm+mt
-source-wordcount: '654'
+source-wordcount: '693'
 ht-degree: 2%
 
 ---
@@ -45,6 +45,10 @@ ht-degree: 2%
    * `code`設定應該與您用於初始專案建立的設定相同。
    * `content` > `source` > `url`必須調整為您正在建立的新網站的名稱。 在此範例中，它是`wknd-prod`。
    * 也就是說，POSTURL中的網站名稱必須與`content` > `source` > `url`相同。
+   * 調整`admin`區塊以定義應具備網站完整管理存取權的使用者。
+      * 這是一系列電子郵件地址。
+      * 可以使用萬用字元`*`。
+      * 如需詳細資訊，請參閱檔案[為作者設定驗證](https://www.aem.live/docs/authentication-setup-authoring#default-roles)。
 
    ```text
    curl --request POST \
@@ -71,7 +75,7 @@ ht-degree: 2%
            "admin": {
                "role": {
                    "admin": [
-                       "*@adobe.com"
+                       "<email>@<domain>.<tld>"
                    ],
                    "config_admin": [
                        "<tech-account-id>@techacct.adobe.com"

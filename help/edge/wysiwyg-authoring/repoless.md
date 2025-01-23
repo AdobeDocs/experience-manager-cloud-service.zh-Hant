@@ -4,10 +4,10 @@ description: 如果您有許多相似的網站，大部分外觀和行為相同�
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: a6bc0f35-9e76-4b5a-8747-b64e144c08c4
-source-git-commit: 7b37f3d387f0200531fe12cde649b978f98d5d49
+source-git-commit: e7f7c169e7394536fc2968ecf1418cd095177679
 workflow-type: tm+mt
-source-wordcount: '1041'
-ht-degree: 0%
+source-wordcount: '971'
+ht-degree: 2%
 
 ---
 
@@ -34,10 +34,11 @@ AEM支援從相同程式碼基底執行多個網站，而不需建立多個GitHu
 * 依照檔案[使用Edge Delivery Services進行WYSIWYG編寫的開發人員快速入門手冊，您的網站已完整設定。](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)
 * 您至少要執行AEM as a Cloud Service 2024.08。
 
-您還需要要求Adobe為您設定兩個專案。 請透過您的Slack管道聯絡Adobe，或提出支援問題以提出這些請求。
+您還需要要求Adobe為您設定下列專案。 透過您的Slack管道聯絡或提出支援問題以要求Adobe進行這些變更：
 
-* [aem.live設定服務](https://www.aem.live/docs/config-service-setup#prerequisites)在您的環境中使用中，而且您已設定為管理員。
-* 必須依Adobe為您的方案啟用重新導向功能。
+* 要求啟用您環境的[aem.live設定服務](https://www.aem.live/docs/config-service-setup#prerequisites)，而且您已設定為管理員。
+* 請依Adobe要求為您的方案啟用重新導向功能。
+* 要求Adobe為您建立組織。
 
 ## 啟動重新導向功能 {#activate}
 
@@ -64,67 +65,6 @@ AEM支援從相同程式碼基底執行多個網站，而不需建立多個GitHu
 ```text
 --header 'x-auth-token: <your-token>'
 ```
-
-### 設定您的設定服務 {#config-service}
-
-如[必要條件](#prerequisites)中所述，必須為您的環境啟用組態服務。 您可以使用此cURL命令檢查您的組態服務設定。
-
-```text
-curl  --location 'https://admin.hlx.page/config/<your-github-org>.json' \
---header 'x-auth-token: <your-token>'
-```
-
-如果設定服務已正確設定，則會傳回類似以下的JSON。
-
-```json
-{
-  "title": "<your-github-org>",
-  "description": "Your GitHub Org",
-  "lastModified": "2024-11-14T12:14:04.230Z",
-  "created": "2024-11-14T12:13:37.032Z",
-  "version": 1,
-  "users": [
-    {
-      "email": "justthisguyyouknow@adobe.com",
-      "roles": [
-        "admin"
-      ],
-      "id": "<your-id>"
-    }
-  ]
-}
-```
-
-請透過您的專案Slack頻道聯絡Adobe，或如果您的設定服務未啟用，則提出支援問題。 取得Token並確認啟用設定服務後，您就可以繼續設定。
-
-1. 檢查您的內容來源是否已正確設定。
-
-   ```text
-   curl --request GET \
-   --url https://admin.hlx.page/config/<your-github-org>/sites/<your-aem-project>.json \
-   --header 'x-auth-token: <your-token>'
-   ```
-
-1. 新增路徑對應至公用設定。
-
-   ```text
-   curl --request POST \
-     --url https://admin.hlx.page/config/<your-github-org>/sites/<your-aem-project>/public.json \
-     --header 'x-auth-token: <your-token>' \
-     --header 'Content-Type: application/json' \
-     --data '{
-       "paths": {
-           "mappings": [
-               "/content/<your-site-content>/:/"
-      ],
-           "includes": [
-               "/content/<your-site-content>/"
-           ]
-       }
-   }'
-   ```
-
-建立公用組態之後，您可以透過類似`https://main--<your-aem-project>--<your-github-org>.aem.page/config.json`的URL存取它，以便驗證。
 
 ### 新增網站設定的路徑對應並設定技術帳戶 {#access-control}
 
@@ -184,6 +124,11 @@ curl  --location 'https://admin.hlx.page/config/<your-github-org>.json' \
 
 1. 使用類似以下的cURL命令在您的設定中設定技術帳戶。
 
+   * 調整`admin`區塊以定義應具備網站完整管理存取權的使用者。
+      * 這是一系列電子郵件地址。
+      * 可以使用萬用字元`*`。
+      * 如需詳細資訊，請參閱檔案[為作者設定驗證](https://www.aem.live/docs/authentication-setup-authoring#default-roles)。
+
    ```text
    curl --request POST \
      --url https://admin.hlx.page/config/<your-github-org>/sites/<your-aem-project>/access.json \
@@ -193,7 +138,7 @@ curl  --location 'https://admin.hlx.page/config/<your-github-org>.json' \
        "admin": {
            "role": {
                "admin": [
-                   "*@adobe.com"
+                   "<email>@<domain>.<tld>"
                ],
                "config_admin": [
                    "<tech-account-id>@techacct.adobe.com"
@@ -229,8 +174,8 @@ curl  --location 'https://admin.hlx.page/config/<your-github-org>.json' \
 
 現在，您的基本網站已設定為可重複使用，您可以建立其他利用相同程式碼庫的網站。 根據您的使用案例，請參閱以下檔案。
 
-* [重新整理多網站管理](/help/edge/wysiwyg-authoring/repoless-msm.md)
-* [重新報告Stage和Prod環境](/help/edge/wysiwyg-authoring/repoless-stage-prod.md)
+* [無存放庫多網站管理](/help/edge/wysiwyg-authoring/repoless-msm.md)
+* [無存放庫階段及生產環境](/help/edge/wysiwyg-authoring/repoless-stage-prod.md)
 
 ## 疑難排解 {#troubleshooting}
 
