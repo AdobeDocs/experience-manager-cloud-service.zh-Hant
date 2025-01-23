@@ -5,16 +5,16 @@ mini-toc-levels: 3
 exl-id: c27134f5-178c-4db1-a8e6-ec45d020f2b5
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 role: User
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: f64f6d90c6ae2490be4be5067df0f96e9df6be38
 workflow-type: tm+mt
-source-wordcount: '990'
+source-wordcount: '984'
 ht-degree: 68%
 
 ---
 
 # Assets檢視簡介 {#assets-view}
 
-| [搜尋最佳實務](/help/assets/search-best-practices.md) | [中繼資料最佳實務](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [具有OpenAPI功能的Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets開發人員檔案](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| [搜尋最佳實務](/help/assets/search-best-practices.md) | [中繼資料最佳實務](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [具有 OpenAPI 功能的 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 開發人員文件](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
 ![部署 Assets Essentials](assets/banner-image.jpg)
@@ -68,7 +68,7 @@ Assets檢視提供下列「管理員」檢視中未提供的關鍵優點：
 
 ![我的工作區概觀](assets/my-workspace-demo.gif)
 
-[![請參閱指南](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](my-workspace-assets-view.md)
+[![檢視指南](assets/see-the-guide-sm.png)](my-workspace-assets-view.md)
 
 ### 做出資訊導向決策的深入解析 {#insights-data}
 
@@ -76,7 +76,7 @@ Assets檢視提供下列「管理員」檢視中未提供的關鍵優點：
 
 ![深入解析概觀](assets/insights-overview.gif)
 
-[![請參閱指南](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](manage-reports-assets-view.md#view-live-statistics)
+[![檢視指南](assets/see-the-guide-sm.png)](manage-reports-assets-view.md#view-live-statistics)
 
 ### Adobe Photoshop Express 整合可以加速共同作業 {#accelerate-collaboration}
 
@@ -86,7 +86,7 @@ Assets檢視提供下列「管理員」檢視中未提供的關鍵優點：
 
 >[!VIDEO](https://video.tv.adobe.com/v/3420922)
 
-[![請參閱指南](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](edit-images-assets-view.md)
+[![檢視指南](assets/see-the-guide-sm.png)](edit-images-assets-view.md)
 
 即將發行的Assetsas a Cloud Service版本也包含[透過Adobe Express的Adobe Firefly整合](https://firefly.adobe.com/?gclid=EAIaIQobChMIlZeKuNfj_wIVeyCtBh3e5g2cEAAYASAAEgL56_D_BwE&amp;sdid=JM4FW6VL&amp;mv=search&amp;mv2=paidsearch&amp;ef_id=EAIaIQobChMIlZeKuNfj_wIVeyCtBh3e5g2cEAAYASAAEgL56_D_BwE:G:s&amp;s_kwcid=AL!3085!3!652077237594!e!!g!!adobe%20firefly!19870733758!148140507838)。
 
@@ -96,7 +96,7 @@ Assets檢視提供下列「管理員」檢視中未提供的關鍵優點：
 
 ![上傳資料夾](assets/folder-uploads.gif)
 
-[![請參閱指南](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](add-delete-assets-view.md)
+[![檢視指南](assets/see-the-guide-sm.png)](add-delete-assets-view.md)
 
 ### 搜尋優先方法可提高效率 {#search-first}
 
@@ -110,7 +110,7 @@ Assets檢視可讓您監視對存放庫中可用的資產、資料夾或集合�
 
 ![接收通知](assets/notifications.gif)
 
-[![請參閱指南](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](manage-notifications-assets-view.md)
+[![檢視指南](assets/see-the-guide-sm.png)](manage-notifications-assets-view.md)
 
 ### 軟刪除資產，為管理員提供更好的控制 {#soft-delete-assets}
 
@@ -118,7 +118,7 @@ Assets 檢視中的垃圾桶資料夾列出了從根 Assets 資料夾刪除的�
 
 ![軟刪除](assets/soft-delete.gif)
 
-[![請參閱指南](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](navigate-assets-view.md)
+[![檢視指南](assets/see-the-guide-sm.png)](navigate-assets-view.md)
 
 除了這些功能之外，Assets 檢視也讓您能夠執行管理員檢視中所沒有的以下功能：
 
