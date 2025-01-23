@@ -4,9 +4,9 @@ description: 瞭解AEM as a Cloud Service中的快取基本概念
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
 role: Admin
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
+source-git-commit: fc555922139fe0604bf36dece27a2896a1a374d9
 workflow-type: tm+mt
-source-wordcount: '2897'
+source-wordcount: '2924'
 ht-degree: 1%
 
 ---
@@ -31,7 +31,7 @@ Define DISABLE_DEFAULT_CACHING
 
 例如，當您的商業邏輯需要微調年齡標題（具有以行事曆日期為基準的值）時，此方法很有用，因為依預設，年齡標題設為0。 也就是說，**關閉預設快取時要小心。**
 
-* 可使用AEM as a Cloud Service SDK Dispatcher工具在`global.vars`中定義`EXPIRATION_TIME`變數，以覆寫所有HTML/文字內容。
+* 可以使用AEM as a Cloud Service SDK Dispatcher工具在`global.vars`中定義`EXPIRATION_TIME`變數，以覆寫所有HTML/文字內容。
 * 可以使用下列Apache `mod_headers`指令在較精細的層級上覆寫，包括獨立控制CDN和瀏覽器快取：
 
   ```
@@ -240,12 +240,24 @@ AEM層預設不會快取blob內容。
 對於在2023年10月或之後建立的環境，為了更好的快取要求，CDN將移除常見的行銷相關查詢引數，特別是符合下列規則運算式模式的引數：
 
 ```
-^(utm_.*|gclid|gdftrk|_ga|mc_.*|trk_.*|dm_i|_ke|sc_.*|fbclid)$
+^(utm_.*|gclid|gdftrk|_ga|mc_.*|trk_.*|dm_i|_ke|sc_.*|fbclid|msclkid|ttclid)$
 ```
 
-如果您希望停用此行為，請提交支援票證。
+可以使用[CDN設定](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic#request-transformations)中的`requestTransformations`旗標來開啟或關閉此功能。
 
-對於2023年10月之前建立的環境，建議設定Dispatcher設定的`ignoreUrlParams`屬性；請參閱[設定Dispatcher — 忽略URL引數](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#ignoring-url-parameters)。
+例如，若要停止移除CDN層級一的行銷引數，應使用包含下列區段的設定來部署`removeMarketingParams: false`。
+
+```
+kind: "CDN"
+version: "1"
+metadata:
+  envTypes: ["dev", "stage", "prod"]
+data:
+  requestTransformations:
+    removeMarketingParams: false
+```
+
+如果CDN層級的`removeMarketingParams`功能已停用，仍建議設定Dispatcher設定的`ignoreUrlParams`屬性；請參閱[設定Dispatcher — 忽略URL引數](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#ignoring-url-parameters)。
 
 忽略行銷引數有兩種可能性。 （其中第一個偏好使用查詢引數來忽略防快取）：
 
@@ -304,7 +316,7 @@ Adobe建議您仰賴標準快取標頭來控制內容傳送生命週期。 不�
   <tr>
     <th>不適用</th>
     <th>階層可用性</th>
-    <th>去重複化 </th>
+    <th>重複資料刪除 </th>
     <th>保證 </th>
     <th>動作 </th>
     <th>影響 </th>
