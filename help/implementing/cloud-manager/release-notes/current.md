@@ -4,10 +4,10 @@ description: 了解 AEM as a Cloud Service 中 Cloud Manager 2025.1.0 的發行�
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: f6c1aa32647bcabeb0781973f81b75c11edc6a5d
+source-git-commit: ee01e5a2b805330f47af7ff563ca1ac90036f0bf
 workflow-type: tm+mt
-source-wordcount: '412'
-ht-degree: 18%
+source-wordcount: '695'
+ht-degree: 10%
 
 ---
 
@@ -32,15 +32,15 @@ AEM as a Cloud Service中的Cloud Manager 2025.1.0發行日期是2025年1月22�
 
 * **程式碼品質規則 — SonarQube伺服器升級：** Cloud Manager程式碼品質步驟將開始使用SonarQube Server 9.9搭配Cloud Manager 2025.2.0版，預計於2025年2月13日星期四執行。
 
-若要準備，更新的SonarQube規則現在可在[程式碼品質規則](/help/implementing/cloud-manager/code-quality-testing.md#understanding-code-quality-rules)取得。
+  若要準備，更新的SonarQube規則現在可在[程式碼品質規則](/help/implementing/cloud-manager/code-quality-testing.md#understanding-code-quality-rules)取得。
 
-您可以設定下列管道文字變數，以「提前檢查」新規則：
+  您可以設定下列管道文字變數，以「提前檢查」新規則：
 
-`CM_BUILD_IMAGE_OVERRIDE` = `self-service-build:sonar-99-upgrade-java17or21`
+  `CM_BUILD_IMAGE_OVERRIDE` = `self-service-build:sonar-99-upgrade-java17or21`
 
-此外，設定下列變數，以確保程式碼品質步驟會針對相同的認可執行（通常針對相同的`commitId`略過）：
+  此外，設定下列變數，以確保程式碼品質步驟會針對相同的認可執行（通常針對相同的`commitId`略過）：
 
-`CM_DISABLE_BUILD_REUSE` = `true`
+  `CM_DISABLE_BUILD_REUSE` = `true`
 
 ![變數設定頁面](/help/implementing/cloud-manager/release-notes/assets/variables-config.png)
 
@@ -59,9 +59,27 @@ AEM as a Cloud Service中的Cloud Manager 2025.1.0發行日期是2025年1月22�
       * Cloud Manager沙箱和開發環境的逐步推出將於2月開始，並持續到4月的生產環境。
       * 使用Java 11建置的客戶若想採用Java 21執行階段&#x200B;*較早*，可以透過[aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com)聯絡Adobe。
 
-* **「CDN設定」已重新命名為「網域對應」：**&#x200B;隨著AEM Cloud Manager的使用者介面改善，標籤「CDN設定」現在已重新命名為「網域對應」，以改善術語與功能的對應。<!-- CMGR-64738 -->
+* **「CDN設定」已重新命名為「網域對應」：**&#x200B;隨著AEM Cloud Manager的使用者介面改善，標籤「CDN設定」現在已重新命名為「網域對應」。 這項變更可改善術語與功能的協調性。<!-- CMGR-64738 -->
 
   ![「CDN設定」在使用者介面](/help/implementing/cloud-manager/release-notes/assets/domain-mappings.png)中重新命名為「網域對應」
+
+* **只要按一下即可布建Edge Delivery網站：** Cloud Manager現在可讓具有適當許可權和授權的使用者只要按一下即可建立範例Edge Delivery Services網站。 此簡化程式提供下列自動化功能：
+
+   * **GitHub整合** — 在現有組織內自動建立GitHub存放庫，並預先設定Edge Delivery Services的樣板範本。
+   * **AEM Code Sync App安裝** — 在存放庫上安裝AEM Code Sync App，確保順暢的同步和部署。
+   * **內容Collaboration安裝程式** — 連結指定的Google磁碟機資料夾以儲存內容，提供內容管理的協同合作環境。
+   * **內容發佈** — 使用者現在可以直接從Cloud Manager使用者介面發佈已布建網站的內容，簡化工作流程並提升效率。
+   * **增強型Collaboration** — 此平台可讓使用者將多位共同作業人員新增至Google Drive內容儲存資料夾，以利團隊合作及貢獻內容。
+
+  這些增強功能旨在改善自動化、簡化設定流程，並增強Edge Delivery Services使用者的共同作業。<!-- CMGR-59362 -->
+
+  ![布建Edge Delivery網站](/help/implementing/cloud-manager/release-notes/assets/eds-one-click-60.png)
+
+  ![布建Edge Delivery網站對話方塊](/help/implementing/cloud-manager/release-notes/assets/eds-provision-60.png)
+
+* **Edge Delivery Services網站的增強支援：** Cloud Manager現在支援加入最新的Edge Delivery Services網站。 此更新包含了CDN和傳遞棧疊的全面重構，進而改善了健全性和可維護性。
+
+* **早期採用者程式更新 — Bitbucket和GitLab的PR驗證支援：** Cloud Manager現在同時支援Bitbucket和GitLab的雲端和自控版本的提取請求(PR)驗證。 此功能可讓客戶在合併PR之前，根據Adobe的程式碼品質臨界值測試其程式碼變更。 透過在合併之前確保更高的計畫碼品質，此增強功能可大幅改善生產管道中計畫碼變更的成功率，縮短上市時間並簡化開發工作流程。
 
 
 <!-- ## Early adoption program {#early-adoption}

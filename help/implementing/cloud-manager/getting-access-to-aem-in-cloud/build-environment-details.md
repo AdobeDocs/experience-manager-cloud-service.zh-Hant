@@ -5,7 +5,7 @@ exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 14162af8ab209b04645502546912af106c67f2b1
+source-git-commit: ee01e5a2b805330f47af7ff563ca1ac90036f0bf
 workflow-type: tm+mt
 source-wordcount: '1313'
 ht-degree: 36%
@@ -117,7 +117,7 @@ Java 21執行階段用於具有Java 21和Java 17的組建，並將逐步套用�
 >當`.cloudmanager/java-version`設定為`21`或`17`時，就會部署Java 21執行階段。 Java 21執行階段已排定從2025年2月13日星期四開始逐步推出至所有環境（不僅僅是使用Java 11建置程式碼的那些環境）。 推出將從沙箱和開發環境開始，然後在2025年4月推出到所有生產環境。 想要採用Java 21執行階段&#x200B;*較早*&#x200B;的客戶可以透過[aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com)聯絡Adobe。
 
 
-#### 建置時間需求
+#### 建置時間需求 {#build-time-reqs}
 
 需要進行下列調整，才能使用Java 21和Java 17建置專案。 甚至在您執行Java 21和Java 17之前，這些檔案就已經可以更新了，因為它們與舊版Java相容。
 
