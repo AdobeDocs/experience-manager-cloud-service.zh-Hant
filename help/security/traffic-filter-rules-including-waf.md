@@ -4,10 +4,10 @@ description: 設定流量篩選規則，包括 Web 應用程式防火牆 (WAF) �
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
-source-git-commit: 1b4c427a36ee26522e9da499156f78276e099bd0
+source-git-commit: f2616fb8f27d4f966243c3a43abedcc46ceff477
 workflow-type: tm+mt
-source-wordcount: '4037'
-ht-degree: 99%
+source-wordcount: '4053'
+ht-degree: 98%
 
 ---
 
@@ -184,7 +184,7 @@ data:
 
 | **屬性** | **類型** | **說明** |
 |---|---|---|
-| reqProperty | `string` | 要求屬性。<br><br>之一：<br><ul><li>`path`：傳回不含查詢引數之URL的完整路徑。 （針對未逸出的變體使用`pathRaw`）</li><li>`url`：傳回包含查詢引數的完整URL。 （針對未逸出的變體使用`urlRaw`）</li><li>`queryString`：傳回 URL 的查詢部分</li><li>`method`：傳回要求中所使用的 HTTP 方法。</li><li>`tier`：傳回 `author`、`preview` 或 `publish` 其中之一。</li><li>`domain`：傳回小寫的網域屬性 (如 `Host` 標頭的定義)</li><li>`clientIp`：傳回用戶端 IP 位址。</li><li>`clientCountry`：傳回兩個字母的代碼 ([區域指示器符號](https://zh.wikipedia.org/wiki/tw/Regional_indicator_symbol))，可識別客戶位於哪個國家/地區。</li></ul> |
+| reqProperty | `string` | 要求屬性。<br><br>之一：<br><ul><li>`path`：傳回不含查詢引數之URL的完整路徑。 （針對未逸出的變體使用`pathRaw`）</li><li>`url`：傳回包含查詢引數的完整URL。 （針對未逸出的變體使用`urlRaw`）</li><li>`queryString`：傳回 URL 的查詢部分</li><li>`method`：傳回要求中所使用的 HTTP 方法。</li><li>`tier`：傳回 `author`、`preview` 或 `publish` 其中之一。</li><li>`domain`：傳回小寫的網域屬性 (如 `Host` 標頭的定義)</li><li>`clientIp`：傳回用戶端 IP 位址。</li><li>`forwardedDomain`：傳回在`X-Forwarded-Host`標頭中定義的第一個網域（小寫）</li><li>`forwardedIp`：傳回`X-Forwarded-For`標頭中的第一個IP。</li><li>`clientCountry`：傳回兩個字母的代碼 ([區域指示器符號](https://zh.wikipedia.org/wiki/tw/Regional_indicator_symbol))，可識別客戶位於哪個國家/地區。</li></ul> |
 | reqHeader | `string` | 傳回具有指定名稱的要求標頭 |
 | queryParam | `string` | 傳回具有指定名稱的查詢參數 |
 | reqCookie | `string` | 傳回具有指定名稱的 Cookie |
