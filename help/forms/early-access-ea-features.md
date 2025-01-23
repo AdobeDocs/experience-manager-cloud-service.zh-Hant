@@ -6,7 +6,7 @@ Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: 2c70f7aec042c384cd37985877954b627d95879e
+source-git-commit: 7654289713246e894388bcd9bfa995248aeb3c38
 workflow-type: tm+mt
 source-wordcount: '1735'
 ht-degree: 30%
@@ -90,7 +90,7 @@ WYSIWYG製作提供WYSIWYG介面(通用編輯器和調適型Forms編輯器)，�
 
 ### AEM Forms至Marketo聯結器
 
-AEM Forms至Marketo聯結器橋接了使用Adobe Experience Manager (AEM)建立的網路表單(最適化Forms)與行銷自動化平台Marketo之間的差距。
+[AEM Forms至Marketo聯結器](/help/forms/integrate-adaptive-form-with-marketo-engage.md)彌合了使用Adobe Experience Manager (AEM)建立的網路表單(最適化Forms)與行銷自動化平台Marketo之間的差距。
 
 當有人在使用AEM Adaptive Forms建立的網站上提交表單時，聯結器會確保提交的資料會自動傳送至Marketo。 如此一來，您就不需要手動輸入資料，並降低錯誤風險。
 
