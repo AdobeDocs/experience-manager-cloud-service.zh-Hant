@@ -5,10 +5,10 @@ exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: fa99656e0dd02bb97965e8629d5fa657fbae9424
+source-git-commit: 3d9ad70351bfdedb6d81e90d9d193fac3088a3ec
 workflow-type: tm+mt
-source-wordcount: '928'
-ht-degree: 22%
+source-wordcount: '1025'
+ht-degree: 19%
 
 ---
 
@@ -73,20 +73,47 @@ OV和EV另外在Cloud Manager中透過DV憑證提供這些功能。
 >
 >如果您有多個自訂網域，則可能不希望每次新增網域時都上傳憑證。 在這種情況下，您可以透過取得涵蓋多個網域的單一憑證受益。
 
->[!NOTE]
->
->如果已安裝兩個涵蓋相同網域的憑證，則會套用更精確的憑證。
->
->例如，如果您的網域是`dev.adobe.com`，而您有`*.adobe.com`的一個憑證和`dev.adobe.com`的另一個憑證，則會使用更具體的憑證(`dev.adobe.com`)。
-
 #### 客戶管理的OV/EV SSL憑證需求 {#requirements}
 
 如果您選擇新增您自己的客戶託管OV/EV SSL憑證，該憑證必須符合下列要求：
 
-* AEM as a Cloud Service接受符合OV （組織驗證）或EV （擴展驗證）原則的憑證。
+* 憑證必須符合OV （組織驗證）或EV （擴展驗證）政策。
    * Cloud Manager不支援新增您自己的DV （網域驗證）憑證。
+* 不支援自我簽署憑證。
 * 任何憑證都必須是來自受信任憑證授權單位的X.509 TLS憑證，並具有相符的2048位元RSA私密金鑰。
-* 不接受自我簽署憑證。
+
+#### 憑證管理的最佳實務
+
+* **避免憑證重疊：**
+
+   * 若要確保順暢的憑證管理，請避免部署與相同網域相符的重疊憑證。 例如，搭配使用萬用字元憑證(*.example.com)和特定憑證(dev.example.com)可能會導致混淆。
+   * TLS層會優先處理最近部署的特定憑證。
+
+  案例範例：
+
+   * 「開發憑證」涵蓋`dev.example.com`，並部署為`dev.example.com`的網域對應。
+   * 「中繼憑證」涵蓋`stage.example.com`，並部署為`stage.example.com`的網域對應。
+   * 如果「中繼憑證」在&#x200B;*「開發憑證」之後部署/更新*，它也會為`dev.example.com`提供要求。
+
+     若要避免這類衝突，請確保將憑證的適用範圍仔細限定到其預期的網域。
+
+* **萬用字元憑證：**
+
+  雖然支援萬用字元憑證（例如`*.example.com`），但只有在必要時才應該使用。 在重疊的情況下，以更具體的憑證優先。 例如，特定憑證提供`dev.example.com`，而非萬用字元(`*.example.com`)。
+
+* **驗證和疑難排解：**
+嘗試使用Cloud Manager安裝憑證之前，Adobe建議您使用`openssl`等工具在本機驗證憑證的完整性。 例如，
+
+  `openssl verify -untrusted intermediate.pem certificate.pem`
+
+
+<!--
+>[!NOTE]
+>
+>If two certificates cover the same domain are installed, the one that is more exact is applied.
+>
+>For example, if your domain is `dev.adobe.com` and you have one certificate for `*.adobe.com` and another for `dev.adobe.com`, the more specific one (`dev.adobe.com`) is used.
+-->
 
 #### 客戶管理的憑證格式 {#certificate-format}
 
@@ -112,13 +139,9 @@ SSL 憑證文件必須是 PEM 格式才能與 Cloud Manager 一起安裝。PEM�
   openssl x509 -inform der -in certificate.cer -out certificate.pem
   ```
 
->[!TIP]
->
->Adobe建議您在嘗試使用Cloud Manager安裝憑證之前，先使用`openssl verify -untrusted intermediate.pem certificate.pem`之類的工具在本機驗證憑證的完整性。
-
 ## 已安裝SSL憑證數量的限制 {#limitations}
 
-在任何指定時間，Cloud Manager允許最多安裝50個SSL憑證。 這些憑證可以與您的計畫中的一個或多個環境相關聯，並且還包括任何過期的憑證。
+在任何指定時間，Cloud Manager最多可支援50個已安裝的憑證。 這些憑證可以與您的計畫中的一個或多個環境相關聯，並且還包括任何過期的憑證。
 
 如果您已達到限制，請檢視您的憑證並考慮刪除任何過期的憑證。 或者，將多個網域群組在同一個憑證中，因為一個憑證可以涵蓋多個網域（最多100個SAN）。
 
