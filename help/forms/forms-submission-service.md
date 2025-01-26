@@ -5,7 +5,7 @@ Keywords: Use form submission service, Submit form using form submission service
 feature: Edge Delivery Services
 Role: User, Developer
 exl-id: 12b4edba-b7a1-4432-a299-2f59b703d583
-source-git-commit: 4f2dcb02c3ad00ef9735679d8bd4cce568bfabb5
+source-git-commit: ae31df22c723c58addd13485259e92abb4d4ad54
 workflow-type: tm+mt
 source-wordcount: '835'
 ht-degree: 1%
@@ -100,7 +100,7 @@ Forms提交服務可讓您將表單提交的資料儲存在任何試算表中(�
 > * 與Adobe Experience Manager共用`incoming`工作表`forms@adobe.com`並授與編輯存取權。
 > * 在Sidekick中預覽並發佈`incoming`工作表。
 
-若要瞭解如何格式化POST要求以設定工作表，請參閱[API檔案](https://main--afb--adobe.hlx.page/docs/index.html#/paths/~1%7Bid%7D/post)。 您可以查看下方提供的範例：
+若要瞭解如何格式化POST要求以設定工作表，請參閱[API檔案](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/references/aem-forms-submission-service/)。 您可以查看下方提供的範例：
 
 您可以使用curl或Postman之類的工具來執行此POST請求，如下所示。
 
