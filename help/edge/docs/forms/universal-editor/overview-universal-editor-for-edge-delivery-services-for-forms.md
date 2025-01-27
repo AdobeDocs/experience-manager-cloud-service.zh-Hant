@@ -5,10 +5,10 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: ae31df22c723c58addd13485259e92abb4d4ad54
+source-git-commit: 7122022c4245887ec576d4c1cd9af288b440f0c2
 workflow-type: tm+mt
-source-wordcount: '1144'
-ht-degree: 11%
+source-wordcount: '1009'
+ht-degree: 14%
 
 ---
 
@@ -17,78 +17,117 @@ ht-degree: 11%
 
 通用編輯器旨在協助內容建立者和表單作者輕鬆建立、管理和編輯表單。 它提供簡單、視覺化且有效率的編輯體驗，著重於Edge Delivery Services(EDS)。
 
-透過通用編輯器，使用者可以拖放表單元素（如文字欄位、核取方塊和選項按鈕）以在What You See Is What You Get (WYSIWYG)介面中建立表單。 此方法可讓表單建立變得直覺且易於使用，即使對於沒有技術專業知識的人也是如此。
+透過通用編輯器，使用者可以使用表單元素（如文字欄位、核取方塊和選項按鈕）在What You See Is What You Get (WYSIWYG)介面中建立表單。 此方法可讓表單建立變得直覺且易於使用，即使對於沒有技術專業知識的人也是如此。
 
 ![通用編輯器](/help/edge/docs/forms/universal-editor/assets/universal-editor.png)
 
-Universal Editor可讓內容建立者和表單作者以簡化且有效率的方式建置、管理和編輯表單。 此編輯器特別針對Edge Delivery Services(EDS)。 通用編輯器為建立表單提供使用者易記的視覺化編輯體驗。 您可以輕鬆拖放表單元素（如文字欄位、核取方塊、選項按鈕等），並在WYSIWYG (What You See Is What You Get)樣式介面中加以設定。
+Universal Editor可讓內容建立者和表單作者以簡化且有效率的方式建置、管理和編輯表單。 此編輯器特別針對Edge Delivery Services(EDS)。
 
-Universal Editor的核心優勢在於其強大的功能集，其中包括進階表單建立功能、動態規則編輯以及與各種資料來源的無縫整合。 使用者可使用預先建立的元件、可自訂的範本和廣泛的表單元素資料庫，快速設計回應式表單。
-
-技術功能經過精心設計，以維持輕量型使用者端轉譯、跨瀏覽器相容性，並嚴格遵守協助工具標準。 Universal Editor for EDS Forms Block為尋求靈活、強大的表單建立和管理平台的組織提供全方位的解決方案。
+Universal Editor的核心優勢在於其強大的功能集，其中包括進階表單建立功能、動態規則編輯以及與各種資料來源的無縫整合。 使用者可使用預先建立的元件、可自訂的範本和廣泛的表單元素資料庫，快速設計回應式表單。 這些功能經過精心設計，以維持輕量型使用者端轉譯、跨瀏覽器相容性，並嚴格遵守協助工具標準。
 
 ## EDS Forms適用的Universal Editor的主要功能
 
 
 <div>
-  <div class="card" style="display: inline-block; width: calc(33.33% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/universal-editor.png" alt="WYSIWYG介面"> 
+  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
+    <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="WYSIWYG介面"> 
     <h3>WYSIWYG介面</h3>
     <p>Universal Editor為表單設計提供WYSIWYG介面。 它提供預先建立的元件資料庫、回應式設計支援，以及範本式表單建立。 您可以立即新增或移除表單欄位，並修改欄位屬性（如標籤、資料繫結、驗證）。 您也可以將自訂表單元件外掛至通用編輯器。</p>
   </div>
-  <div class="card" style="display: inline-block; width: calc(33.33% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="https://via.placeholder.com/150" alt="規則編輯器">
+  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
+    <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="WYSIWYG介面" alt="規則編輯器">
     <h3>規則編輯器</h3>
     <p>規則編輯器可讓您透過輕量型的JavaScript和JSON型定義，使用事件導向的規則、即時驗證和錯誤處理來建立複雜的表單互動。</p>
   </div>
-  <div class="card" style="display: inline-block; width: calc(33.33% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="https://via.placeholder.com/150" alt="提交動作">
-    <h3>提交動作</h3>
-    <p>提交動作透過後端整合選項、資料前置處理器、條件提交邏輯和安全端點連線，協助表單提交工作流程。</p>
+  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
+    <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="WYSIWYG介面" alt="提交動作">
+    <h3>響應式模式 </h3>
+    <p>設計可在各種裝置（桌上型電腦、平板電腦和行動裝置）上順暢調整的表單。 使用回應式模式來預覽各種熒幕大小的表單。</p>
+  </div>
+</div>
+<div>
+  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
+    <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="WYSIWYG介面alt=" WYSIWYG Interface"> 
+    <h3>個人化</h3>
+    <p>個人化</p>
+  </div>
+  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
+    <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="WYSIWYG介面" alt="規則編輯器">
+    <h3>驗證標頭</h3>
+    <p>規則編輯器可讓您透過輕量型的JavaScript和JSON型定義，使用事件導向的規則、即時驗證和錯誤處理來建立複雜的表單互動。</p>
+  </div>
+  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
+    <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="WYSIWYG介面" alt="提交動作">
+    <h3> 發佈/取消發佈 </h3>
+    <p>按幾下即可發佈和取消發佈表單，輕鬆控制表單的可見度。</p>
   </div>
 </div>
 
 <div>
-  <div class="card" style="display: inline-block; width: calc(33.33% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="https://via.placeholder.com/150" alt="預填服務">
+  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
+    <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="WYSIWYG介面" alt="預填服務">
     <h3>預填服務</h3>
     <p>預先填寫服務可聰明地使用來自各種來源的相關資料填入表單欄位，減少手動資料輸入，進而增強使用者體驗。</p>
   </div>
-  <div class="card" style="display: inline-block; width: calc(33.33% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="https://via.placeholder.com/150" alt="資料繫結">
+  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
+    <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="WYSIWYG介面" alt="資料繫結">
     <h3>資料繫結</h3>
     <p>資料繫結可啟用表單欄位與後端資料來源之間的直接、動態連線，支援即時同步和複雜的資料對應。</p>
   </div>
-  <div class="card" style="display: inline-block; width: calc(33.33% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="https://via.placeholder.com/150" alt="國際化/本地化">
-    <h3>國際化/本地化</h3>
+  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
+    <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="WYSIWYG介面" alt="國際化/本地化">
+    <h3>本地化</h3>
     <p>國際化支援可透過多語言轉譯、從右至左的語言相容性以及地區設定特定格式來確保全球協助工具。</p>
   </div>
 </div>
 
 <div>
-  <div class="card" style="display: inline-block; width: calc(33.33% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="https://via.placeholder.com/150" alt="Analytics與Tracking">
+  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
+    <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="WYSIWYG介面" alt="Analytics與Tracking">
     <h3>Analytics與Tracking</h3>
     <p>內建的分析和追蹤機制可提供表單互動、提交率和使用者行為的深入分析，進而實現持續最佳化。</p>
   </div>
-  <div class="card" style="display: inline-block; width: calc(33.33% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="https://via.placeholder.com/150" alt="實驗（A/B測試）">
+  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
+    <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="WYSIWYG介面" alt="實驗（A/B測試）">
     <h3>實驗（A/B測試）</h3>
     <p>實驗可讓組織對表單設計執行A/B測試，以識別表現最佳的版面配置或功能。</p>
   </div>
-  <div class="card" style="display: inline-block; width: calc(33.33% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="https://via.placeholder.com/150" alt="任務管理">
+  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
+    <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="WYSIWYG介面" alt="任務管理">
     <h3>任務管理</h3>
     <p>與Adobe Workfront整合可讓團隊管理與表單建立和維護相關的工作，確保簡化共同作業。</p>
   </div>
 </div>
 
 <div>
-  <div class="card" style="display: inline-block; width: calc(33.33% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="https://via.placeholder.com/150" alt="編輯器自訂">
+  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
+    <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="WYSIWYG介面" alt="編輯器自訂">
     <h3>編輯器自訂</h3>
     <p>開發人員可透過UI擴充功能擴充通用編輯器的功能，讓量身打造的解決方案符合特定組織需求。</p>
+  </div>
+  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
+    <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="WYSIWYG介面" alt="內嵌Forms">
+    <h3>內嵌Forms</h3>
+    <p>Universal Editor支援將表單直接內嵌到Edge Deliver Services Sites頁面。 您可以使用隨附立即可用的內嵌元件完成這項作業。</p>
+  </div>
+  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
+    <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="WYSIWYG介面" alt="自訂元件">
+    <h3>自訂元件</h3>
+    <p>自訂元件可讓開發人員建立針對特定使用案例量身打造的獨特表單元素，藉此擴充表單的功能 
+    </p>
+  </div>
+</div>
+
+<div>
+  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
+    <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="WYSIWYG介面" alt="感謝您的設定">
+    <h3>感謝您的設定</h3>
+    <p>自訂表單提交後顯示的認可訊息或頁面。</p>
+  </div>
+    <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
+    <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="WYSIWYG介面" alt="提交動作">
+    <h3>提交動作</h3>
+    <p>提交動作透過後端整合選項、資料前置處理器、條件提交邏輯和安全端點連線，協助表單提交工作流程。</p>
   </div>
 </div>
 
@@ -230,28 +269,29 @@ Universal Editor提供下列立即可用的表單元件：
 
 * Title: Adds a text-based heading or label to improve form clarity and organization.
 
+
+In-addtion to pre-built form components, the Universal editor also provides support for:
+
+* **Embedding Forms in Another Webpage**: The Universal Editor supports embedding forms directly into Edge Deliver Services Sites pages. This can be done using the embed component provided out of the box.
+
+* **Validation Messages**: Validation messages provide real-time feedback to users when they enter incorrect or incomplete data. Features include:
+    * Dynamic Error Display: Instantly alerts users to errors, such as invalid email addresses or missing required fields.
+    * Customizable Messages: Allows form authors to define user-friendly error texts.
+    * Rule-Based Validation: Supports advanced validation logic, such as checking dependencies between fields or implementing conditional rules.
+
+* **Hidden Fields**: Hidden fields store data invisibly within the form, often for backend processing or prefilled values. Use cases include:
+    * Passing contextual information (e.g., user ID or session data) to the backend without displaying it to users.
+    * Capturing metadata like timestamps or tracking IDs.
+    * Hidden fields are not visible to end-users but can be prefilled, updated dynamically, or used in workflows.
+
+* **Custom Components**: Custom components allow developers to extend the functionality of forms by creating specialized or third-party integrations. Features include:
+    * Flexibility: Developers can design unique form elements tailored to specific use cases.
+    * Third-Party Integration: Embed widgets or tools like payment gateways, analytics trackers, or AI-driven input fields.
+    * Seamless Compatibility: Custom components can integrate with the Universal Editor's drag-and-drop interface and existing features like data binding or validation.
+
+* **Thank you Configuration**: Customize the acknowledgment message or page shown after form submission.
 -->
 
-除了預先建立的表單元件外，通用編輯器也提供下列支援：
-
-* **將Forms內嵌在其他網頁中**： Universal Editor支援將表單直接內嵌到Edge Deliver Services Sites頁面。 您可以使用隨附立即可用的內嵌元件完成這項作業。
-
-* **驗證訊息**：當使用者輸入不正確或不完整的資料時，驗證訊息會提供即時回饋。 功能包含：
-   * 動態錯誤顯示：立即警示使用者發生錯誤，例如電子郵件地址無效或遺失必要欄位。
-   * 可自訂的訊息：可讓表單作者定義好記的錯誤文字。
-   * 規則型驗證：支援進階驗證邏輯，例如檢查欄位之間的相依性或實作條件式規則。
-
-* **隱藏欄位**：隱藏欄位會在表單中以不可見的方式儲存資料，通常用於後端處理或預填的值。 使用案例包括：
-   * 將內容相關資訊（例如使用者ID或工作階段資料）傳遞至後端，而不向使用者顯示。
-   * 擷取如時間戳記或追蹤ID等中繼資料。
-   * 一般使用者看不到隱藏欄位，但可以預先填寫、動態更新，或用於工作流程。
-
-* **自訂元件**：自訂元件可讓開發人員透過建立專業化或協力廠商整合來擴充表單功能。 功能包含：
-   * 彈性：開發人員可針對特定使用案例設計獨一無二的表單元素。
-   * 第三方整合：內嵌Widget或工具，例如支付閘道、分析追蹤器或AI導向的輸入欄位。
-   * 緊密相容：自訂元件可與Universal Editor的拖放介面和現有功能（如資料繫結或驗證）整合。
-
-* **感謝您的設定**：自訂表單提交後顯示的認可訊息或頁面。
 
 ## 上線
 
@@ -279,7 +319,7 @@ Universal Editor提供下列立即可用的表單元件：
 
   <style>
     .card-container {
-        width: calc(33.33% - 10px);;
+        width: calc(30% - 10px);;
         margin: 5px;
         border: 1px solid #ccc;
         border-radius: 5px;
