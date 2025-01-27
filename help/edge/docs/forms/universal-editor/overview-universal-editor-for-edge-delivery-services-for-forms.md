@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 7122022c4245887ec576d4c1cd9af288b440f0c2
+source-git-commit: 64270a0d3b65ac327b14826117631deeb749c95f
 workflow-type: tm+mt
-source-wordcount: '1009'
+source-wordcount: '1000'
 ht-degree: 14%
 
 ---
@@ -32,12 +32,13 @@ Universal Editor的核心優勢在於其強大的功能集，其中包括進階�
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="WYSIWYG介面"> 
     <h3>WYSIWYG介面</h3>
-    <p>Universal Editor為表單設計提供WYSIWYG介面。 它提供預先建立的元件資料庫、回應式設計支援，以及範本式表單建立。 您可以立即新增或移除表單欄位，並修改欄位屬性（如標籤、資料繫結、驗證）。 您也可以將自訂表單元件外掛至通用編輯器。</p>
+    <p>Universal Editor為表單設計提供WYSIWYG介面，其中包含預先建立的元件資料庫、回應式設計、範本式建立及即時欄位修改。
+ </p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="WYSIWYG介面" alt="規則編輯器">
     <h3>規則編輯器</h3>
-    <p>規則編輯器可讓您透過輕量型的JavaScript和JSON型定義，使用事件導向的規則、即時驗證和錯誤處理來建立複雜的表單互動。</p>
+    <p>設計回應式表單，順暢地調整跨裝置。 使用回應式模式預覽和測試桌上型電腦、平板電腦和行動裝置的設計。</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="WYSIWYG介面" alt="提交動作">
@@ -49,17 +50,17 @@ Universal Editor的核心優勢在於其強大的功能集，其中包括進階�
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="WYSIWYG介面alt=" WYSIWYG Interface"> 
     <h3>個人化</h3>
-    <p>個人化</p>
+    <p>Personalization會使用使用者資料來提供量身打造的表單體驗，以及根據使用者偏好動態調整內容、版面或選項。</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="WYSIWYG介面" alt="規則編輯器">
-    <h3>驗證標頭</h3>
-    <p>規則編輯器可讓您透過輕量型的JavaScript和JSON型定義，使用事件導向的規則、即時驗證和錯誤處理來建立複雜的表單互動。</p>
+    <h3>A/B測試</h3>
+    <p>A/B測試（實驗）可讓組織實驗不同的表單設計、版面和功能，以識別表現最佳的變體。</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="WYSIWYG介面" alt="提交動作">
-    <h3> 發佈/取消發佈 </h3>
-    <p>按幾下即可發佈和取消發佈表單，輕鬆控制表單的可見度。</p>
+    <h3> 任務管理 </h3>
+    <p>與Adobe Workfront整合可讓團隊管理表單建立和維護工作，確保緊密合作並簡化工作流程。</p>
   </div>
 </div>
 
@@ -67,17 +68,17 @@ Universal Editor的核心優勢在於其強大的功能集，其中包括進階�
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="WYSIWYG介面" alt="預填服務">
     <h3>預填服務</h3>
-    <p>預先填寫服務可聰明地使用來自各種來源的相關資料填入表單欄位，減少手動資料輸入，進而增強使用者體驗。</p>
+    <p>預先填寫服務會自動將各種來源的相關使用者資料填入表單欄位，減少手動輸入並增強使用者體驗。</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="WYSIWYG介面" alt="資料繫結">
     <h3>資料繫結</h3>
-    <p>資料繫結可啟用表單欄位與後端資料來源之間的直接、動態連線，支援即時同步和複雜的資料對應。</p>
+    <p>資料繫結可讓表單欄位和後端資料來源之間直接連線，支援即時更新和進階資料對應。</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="WYSIWYG介面" alt="國際化/本地化">
-    <h3>本地化</h3>
-    <p>國際化支援可透過多語言轉譯、從右至左的語言相容性以及地區設定特定格式來確保全球協助工具。</p>
+    <h3>發佈/取消發佈</h3>
+    <p>輕鬆控制表單的可見度 — 只需按幾下滑鼠，即可發佈或取消發佈表單，以動態管理可用性、使用者存取權和內容更新。</p>
   </div>
 </div>
 
@@ -85,17 +86,17 @@ Universal Editor的核心優勢在於其強大的功能集，其中包括進階�
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="WYSIWYG介面" alt="Analytics與Tracking">
     <h3>Analytics與Tracking</h3>
-    <p>內建的分析和追蹤機制可提供表單互動、提交率和使用者行為的深入分析，進而實現持續最佳化。</p>
+    <p>透過內建分析和追蹤，深入瞭解使用者行為、表單互動和提交率，以啟用資料導向表單最佳化。</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="WYSIWYG介面" alt="實驗（A/B測試）">
-    <h3>實驗（A/B測試）</h3>
-    <p>實驗可讓組織對表單設計執行A/B測試，以識別表現最佳的版面配置或功能。</p>
+    <h3>提交動作</h3>
+    <p>提交動作支援後端整合、條件式提交邏輯、安全端點和前置處理器，可簡化提交工作流程。</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="WYSIWYG介面" alt="任務管理">
-    <h3>任務管理</h3>
-    <p>與Adobe Workfront整合可讓團隊管理與表單建立和維護相關的工作，確保簡化共同作業。</p>
+    <h3>自訂元件</h3>
+    <p>自訂元件可讓開發人員建立適合特定組織使用案例的獨特元素，以擴充表單功能。</p>
   </div>
 </div>
 
@@ -108,12 +109,12 @@ Universal Editor的核心優勢在於其強大的功能集，其中包括進階�
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="WYSIWYG介面" alt="內嵌Forms">
     <h3>內嵌Forms</h3>
-    <p>Universal Editor支援將表單直接內嵌到Edge Deliver Services Sites頁面。 您可以使用隨附立即可用的內嵌元件完成這項作業。</p>
+    <p>使用通用編輯器的內建內嵌元件將表單直接內嵌到Edge Delivery Services Sites頁面中，提供順暢的使用者體驗。</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="WYSIWYG介面" alt="自訂元件">
     <h3>自訂元件</h3>
-    <p>自訂元件可讓開發人員建立針對特定使用案例量身打造的獨特表單元素，藉此擴充表單的功能 
+    <p>自訂元件可讓開發人員建立適合特定組織使用案例的獨特元素，以擴充表單功能。
     </p>
   </div>
 </div>
@@ -122,12 +123,12 @@ Universal Editor的核心優勢在於其強大的功能集，其中包括進階�
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="WYSIWYG介面" alt="感謝您的設定">
     <h3>感謝您的設定</h3>
-    <p>自訂表單提交後顯示的認可訊息或頁面。</p>
+    <p>在成功提交表單後，輕鬆自訂對使用者顯示的認可訊息或頁面。</p>
   </div>
     <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="WYSIWYG介面" alt="提交動作">
     <h3>提交動作</h3>
-    <p>提交動作透過後端整合選項、資料前置處理器、條件提交邏輯和安全端點連線，協助表單提交工作流程。</p>
+    <p>提交動作透過後端整合和安全端點連線，促進表單提交工作流程。</p>
   </div>
 </div>
 
