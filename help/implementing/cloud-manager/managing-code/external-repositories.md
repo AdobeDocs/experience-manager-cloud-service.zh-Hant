@@ -4,10 +4,10 @@ description: 了解如何將外部存放庫新增至 Cloud Manager。Cloud Manag
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
-source-git-commit: 9d58d9342a8c0337b1fa0c80b40f1cf6d07c2eee
+source-git-commit: befb092169e2278a9e84c183d342003ef325c71e
 workflow-type: tm+mt
-source-wordcount: '717'
-ht-degree: 94%
+source-wordcount: '740'
+ht-degree: 91%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 94%
 
 >[!NOTE]
 >
->此功能僅適用於[早期採用方案](/help/implementing/cloud-manager/release-notes/current.md#early-adoption)。
+>此功能只能透過早期採用計畫使用。 如需詳細資訊以及註冊成為早期採用者，請參閱[自攜Git — 現在支援GitLab和Bitbucket](/help/implementing/cloud-manager/release-notes/2024/2024-10-0.md#gitlab-bitbucket)。
 
 ## 設定外部存放庫
 
