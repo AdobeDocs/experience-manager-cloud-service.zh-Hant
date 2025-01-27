@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的運作方式以及該軟體可以為您做哪些事。
 breadcrumb-title: 使用手冊
 user-guide-title: 'AEM as a Cloud Service '
-source-git-commit: ae31df22c723c58addd13485259e92abb4d4ad54
+source-git-commit: b9364394f683fa8af5d28723e5f10b20b001ea37
 workflow-type: tm+mt
-source-wordcount: '5993'
+source-wordcount: '5998'
 ht-degree: 99%
 
 ---
@@ -771,6 +771,7 @@ ht-degree: 99%
             + [比較最適化表單](/help/forms/compare-forms.md)
             + [建立自訂提交動作](/help/forms/custom-submit-action-for-adaptive-forms-based-on-core-components.md)
             + [使用遷移公用程式工具將基礎元件型最適化表單轉換為核心元件型表單](/help/forms/migration-utility-tool-for-af-core-components.md)
+            + [最適化Forms中的電子郵件範本](/help/forms/html-email-templates-in-adaptive-forms.md)
             + 以核心元件為主之最適化表單的規則編輯器簡介{#rule-editor-core-components}
                + [以核心元件為主之最適化表單的規則編輯器簡介](/help/forms/rule-editor-core-components.md)
                + [以核心元件為主之最適化表單的規則編輯器使用者介面](/help/forms/rule-editor-core-components-user-interface.md)
@@ -1016,7 +1017,7 @@ ht-degree: 99%
          + [使用規則為表單新增動態行為](/help/edge/docs/forms/rules-forms.md)
          + [用於驗證的規則運算式](/help/edge/docs/forms/regex-forms.md)
          + [提交表單後顯示自訂感謝訊息](/help/edge/docs/forms/thank-you-page-form.md)
-         + [使用Forms提交服務](/help/forms/forms-submission-service.md)
+         + [使用表單提交服務](/help/forms/forms-submission-service.md)
       + WYSIWYG {#universal-editor}
          + [概述 — FormsEdge Delivery Services適用的通用編輯器](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
       + 功能 {#advanced-features-edge-delivery-services-forms}
@@ -1026,7 +1027,7 @@ ht-degree: 99%
          + [使用 reCAPTCHA 保護您的表單](/help/edge/docs/forms/recaptacha-forms.md)
          + [自訂元件](/help/edge/docs/forms/custom-components-forms.md)
          + [表單的實際使用監視](/help/edge/docs/forms/real-use-monitoring-for-forms.md)
-         + [發佈Forms for Edge Delivery Services](/help/edge/docs/forms/publishing-forms.md)
+         + [為 Edge Delivery Services 發佈表單](/help/edge/docs/forms/publishing-forms.md)
       + 參考資料 {#forms-references}
          + [最適化表單區塊元件及其屬性](/help/edge/docs/forms/form-components.md)
    + Edge Delivery 資源 {#resources}
