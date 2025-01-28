@@ -5,10 +5,10 @@ exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
+source-git-commit: 8b15b203d0d6a5947a80c9bd217c7fdcdb8f494c
 workflow-type: tm+mt
-source-wordcount: '1027'
-ht-degree: 13%
+source-wordcount: '1045'
+ht-degree: 12%
 
 ---
 
@@ -33,15 +33,15 @@ ht-degree: 13%
 
 1. 在&#x200B;*讓我們建立您的程式*&#x200B;精靈，在&#x200B;**程式名稱**&#x200B;文字欄位中，輸入您要程式的名稱。
 
-1. 在&#x200B;**方案目標**&#x200B;下，選取&#x200B;**`Set up for production`**。
+1. 在&#x200B;**方案目標**&#x200B;下，選取![全域圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Globe_18_N.svg)**為生產設定**。
 
    ![建立計畫精靈](assets/create-production-program.png)
 
 1. （選擇性）在精靈對話方塊的右下角，執行下列任一項作業：
 
-   * 將影像檔案拖放到&#x200B;**新增程式影像**&#x200B;目標上。
-   * 按一下&#x200B;**新增程式影像**，然後從檔案瀏覽器中選取影像。
-   * 按一下垃圾桶圖示可刪除您新增的影像。
+   * 將影像檔案拖放到![影像圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Image_18_N.svg) **新增程式影像**&#x200B;目標上。
+   * 按一下![影像圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Image_18_N.svg) **新增程式影像**，然後從檔案瀏覽器中選取影像。
+   * 按一下![刪除圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DeleteOutline_18_N.svg)以移除您新增的影像。
 
 1. 按一下「**繼續**」。
 
@@ -52,13 +52,13 @@ ht-degree: 13%
    * 針對最佳化數位體驗的完整受管理CDN解決方案，選取&#x200B;**Edge Deliver Services**。 請參閱[關於使用Edge Delivery Services傳遞您的Cloud Manager專案](#edge-overview)
    * 如果您選取了&#x200B;**[啟用增強式安全性](#security)**&#x200B;選項，您只能選取可使用HIPAA許可權的解決方案。
 
-   ![選取解決方案](/help/implementing/cloud-manager/assets/add-production-program-with-edge.png)
+     ![選取解決方案](/help/implementing/cloud-manager/assets/add-production-program-with-edge.png)
 
-1. 按一下解決方案名稱左側的>形箭號，即可顯示任何選用的附加元件，例如&#x200B;**網站**&#x200B;下的&#x200B;**Commerce**&#x200B;附加元件選項。
+   * 按一下解決方案名稱左邊的![V形大小300圖示](https://spectrum.adobe.com/static/icons/ui_18/ChevronSize300.svg)，即可顯示任何選用的附加元件，例如&#x200B;**Sites**&#x200B;下的&#x200B;**Commerce**&#x200B;附加選項。
 
    ![選取附加元件](assets/setup-prod-commerce.png)
 
-1. 選擇您的解決方案和附加組件後，按一下&#x200B;**繼續**。
+1. 選取完解決方案和附加元件後，請按一下[繼續]。****
 
 1. 在&#x200B;**上線日期**&#x200B;索引標籤上，輸入您計畫讓生產計畫上線的日期。
 
@@ -69,7 +69,7 @@ ht-degree: 13%
 
 1. 按一下「**建立**」。Cloud Manager會建立您的程式，並將其顯示在登陸頁面上以供選取。
 
-![Cloud Manager 概覽](assets/navigate-cm.png)
+   ![Cloud Manager 概覽](assets/navigate-cm.png)
 
 ## 其他生產計畫選項 {#options}
 
@@ -98,7 +98,7 @@ ht-degree: 13%
 
 ![SLA選項](assets/create-production-program-sla.png)
 
-AEM Sites和Forms提供標準的99.9%服務等級合約(SLA)。 **99.99%服務等級協定**&#x200B;選項可針對您的Sites及/或Forms生產環境啟用99.99%的最低運作時間百分比。
+AEM Sites和Forms提供標準的99.9% service level agreement (SLA)。 **99.99% Service level agreement**&#x200B;選項可為您的網站和/或Forms生產環境啟用99.99%的最低運作時間百分比。
 
 99.99%的SLA提供更高的可用性和較低的延遲，並需要將[額外的發佈區域](/help/implementing/cloud-manager/manage-environments.md#multiple-regions)套用至方案中的生產環境。
 
