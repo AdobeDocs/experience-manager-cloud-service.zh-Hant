@@ -1,45 +1,45 @@
 ---
-title: 發佈Forms for Edge Delivery Services
-description: 瞭解表單發佈如何與Edge Delivery Services搭配使用，以及如何使用Edge Delivery Services發佈AEM表單。
+title: 為 Edge Delivery Services 發佈表單
+description: 了解表單發佈如何與 Edge Delivery Services 搭配使用，以及如何使用 Edge Delivery Services 發佈 AEM 表單。
 feature: Edge Delivery Services
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: bdc0e51a8b16df432f1f1aeabed11135fb8c8e0c
-workflow-type: tm+mt
+exl-id: b90c27e3-22ea-4b18-b16e-a5c5a0ed58b8
+source-git-commit: 67384a9141ced3bf5be63c8489dd5c329a288056
+workflow-type: ht
 source-wordcount: '993'
-ht-degree: 1%
+ht-degree: 100%
 
 ---
 
+# 為 Edge Delivery Services 發佈表單
 
-# 發佈Forms for Edge Delivery Services
-
-本文會引導您完成將表單發佈至AEMEdge Delivery Services的程式。
-若要將表單發佈至Edge Delivery Services，您必須先建立AEM環境與GitHub存放庫之間的連線。 連線後，您可以使用通用編輯器編寫表單，其會遵循WYSIWYG (What You See Is What You Get)方法，提供順暢且一致的Sites使用者體驗。
+本文會引導您完成將表單發佈到 AEM Edge Delivery Services 的流程。
+若要將表單發佈到 Edge Delivery Services，您必須先在 AEM 環境和 GitHub 存放庫之間建立連線。連線後，您即可使用通用編輯器製作表單，該編輯器會依照 WYSIWYG (所見即所得) 方法為 Sites 提供無縫且一致的使用者體驗。
 
 ## 必要條件
 
-* 剛開始使用最適化Forms？ 依照提供的[教學課程](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project)設定您的GitHub存放庫。
-* 如果您已在使用Edge Delivery Services，請將最新版本的[最適化Forms區塊](/help/edge/docs/forms/tutorial.md#)新增至您的GitHub存放庫。
-* AEM Forms製作例項包含以Edge Delivery Services為基礎的範本。 請確定您的環境中已安裝[最新版本的核心元件](https://github.com/adobe/aem-core-forms-components)。
-* 讓您的AEM Formsas a Cloud Service編寫執行個體和GitHub存放庫的URL隨時待命。
+* 第一次使用最適化表單？請依照所提供的[教學課程](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project)設定 GitHub 存放庫。
+* 如果您已使用 Edge Delivery Services，請將最新版本的[最適化表單區塊](/help/edge/docs/forms/tutorial.md#)新增至您的 GitHub 存放庫。
+* AEM 表單作者執行個體包括根據 Edge Delivery Services 建立的範本。請確保您的環境中安裝了[最新版本的核心元件](https://github.com/adobe/aem-core-forms-components)。
+* 將 AEM Forms 作為雲端服務作者執行個體的 URL 和 GitHub 存放庫保持便於使用。
 
-## 適用於Edge Delivery Services的Publish Forms
+## 為 Edge Delivery Services 發佈表單
 
-若要發佈Edge Delivery Services表單，請執行以下步驟：
+若要為 Edge Delivery Services 發佈表單，請執行下列步驟：
 
-[1.將GitHub存放庫連結至AEM執行個體](#link-github-repository-to-aem-instance)
+[1. 將 GitHub 存放庫連結到 AEM 執行個體](#link-github-repository-to-aem-instance)
 
-[2.將AEM執行個體連結至GitHub存放庫](#link-aem-instance-to-github-repository)
+[2. 將 AEM 執行個體連結到 GitHub 存放庫](#link-aem-instance-to-github-repository)
 
-### 將GitHub存放庫連結至AEM執行個體
+### 將 GitHub 存放庫連結到 AEM 執行個體
 
-若要將GitHub存放庫](/help/edge/docs/forms/tutorial.md)上的[專案連結至AEM Forms Author執行個體，請執行下列步驟：
+若要將[您在 GitHub 存放庫上的專案](/help/edge/docs/forms/tutorial.md)連結到 AEM Forms 作者執行個體，請執行下列步驟：
 
-1. 前往您為Edge Delivery Services建立或設定的GitHub存放庫。
+1. 請前往您為 Edge Delivery Services 建立或設定的 GitHub 存放庫。
 1. 開啟 `fstab.yaml` 檔案進行編輯。
-1. 以您AEM Formsas a Cloud Service執行個體的URL更新您GitHub存放庫中的`fstab.yaml`檔案。
+1. 使用 AEM Forms 作為雲端服務執行個體的 URL 來更新 GitHub 存放庫中的 `fstab.yaml` 檔案。
 
    ```javascript
     mountpoints:
@@ -49,7 +49,7 @@ ht-degree: 1%
         suffix: ".html"
    ```
 
-   例如，如果您的GitHub存放庫名為「aemcrossswalk」，位於帳戶「wkndform」下方，而您使用的是「主要」分支，則作者執行個體URL看起來會像這樣：
+   例如，如果您的 GitHub 存放庫名為 &quot;aemcrosswalk&quot; (位於帳戶 &quot;wkndform&quot; 下面)，並且您使用的是 &quot;main&quot; 分支，則作者執行個體 URL 會如下所示：
 
    ```
         mountpoints:
@@ -59,114 +59,112 @@ ht-degree: 1%
             suffix: ".html"
    ```
 
-1. 認可對`fstab.yaml`檔案的變更。
+1. 認可對 `fstab.yaml` 檔案的變更。
 
-### 將AEM執行個體連結至GitHub存放庫
+### 將 AEM 執行個體連結到 GitHub 存放庫
 
-若要將AEM Forms Author執行個體連結至[您在GitHub存放庫上的專案](/help/edge/docs/forms/tutorial.md)，請執行下列步驟：
+若要將 AEM Forms 作者執行個體連結到[您在 GitHub 存放庫上的專案](/help/edge/docs/forms/tutorial.md)，請執行下列步驟：
 
-[1.根據Edge Delivery Services範本建立最適化表單](#1-create-an-adaptive-form-based-on-the-edge-delivery-services-template)
+[1. 根據 Edge Delivery Services 範本建立最適化表單](#1-create-an-adaptive-form-based-on-the-edge-delivery-services-template)
 
-[2.在AEM編寫執行個體中找到您的表單設定容器](#2-locate-your-forms-configuration-container-in-aem-author-instance)
+[2. 在 AEM 作者執行個體中找到表單的設定容器](#2-locate-your-forms-configuration-container-in-aem-author-instance)
 
-[3.在通用編輯器中編寫表單](#3-author-the-form-in-the-universal-editor)
+[3. 在通用編輯器中編寫表單](#3-author-the-form-in-the-universal-editor)
 
-[4. Publish並預覽表單](#4-publish-and-preview-the-form)
+[4. 發佈和預覽表單](#4-publish-and-preview-the-form)
 
-#### 1.根據Edge Delivery Services範本建立最適化表單
+#### 1. 根據 Edge Delivery Services 範本建立最適化表單
 
-1. 存取您的AEM Formsas a Cloud Service編寫執行個體。
-1. 選取&#x200B;**[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms與檔案]**。1.選取&#x200B;**[!UICONTROL 建立]** > **[!UICONTROL 最適化Forms]**。 此時會開啟精靈。在Source標籤中，選取以Edge Delivery Services為基礎的formtemplate：
+1. 存取您的 AEM Forms 作為雲端服務作者執行個體。
+1.  選取 **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL 表單]** > **[!UICONTROL 表單與文件]**。1. 選取&#x200B;**[!UICONTROL 建立]**  > **[!UICONTROL 最適化表單]**。此時會開啟精靈。在「來源」索引標籤中，選擇根據 Edge Delivery Services 的 formtemplate：
 
-   ![建立EDS Forms](/help/edge/assets/create-eds-forms.png){width=50%， align-center}
+   ![建立 EDS Forms](/help/edge/assets/create-eds-forms.png){width=50%, align-center}
 
-1. 按一下「**[!UICONTROL 建立]**」，就會顯示「**建立表單**」精靈。
-1. 指定&#x200B;**GitHub URL**。 舉例來說，如果您的GitHub存放庫名為「aemcrossswalk」，且位於帳戶「wkndform」下方，則URL會是：
+1. 按一下&#x200B;**[!UICONTROL 建立]**，即會出現&#x200B;**建立表單**&#x200B;精靈。
+1. 指定 **GitHub URL**。例如，如果您的 GitHub 存放庫名為 “aemcrosswalk” (位於帳戶 “wkndform” 下面)，則 URL 為：
    `https://github.com/wkndform/aemcrosswalk`
 1. 按一下&#x200B;**[!UICONTROL 建立]**。
 
-   ![建立表單精靈](/help/edge/assets/create-form-wizard.png){width=50%， align-center}
+   ![建立表單精靈](/help/edge/assets/create-form-wizard.png){width=50%, align-center}
 
-   按一下&#x200B;**[!UICONTROL 建立]**&#x200B;後，表單就會在Universal編輯器中開啟以進行編寫。
+   您按一下&#x200B;**[!UICONTROL 建立]**，表單即會在通用編輯器中開啟以供編寫。
 
-   ![編寫表單](/help/edge/assets/author-form.png){width=50%， align-center}
+   ![編寫表單](/help/edge/assets/author-form.png){width=50%, align-center}
 
    >[!NOTE]
    >
-   > Edge Delivery Services系統會根據表單的設定容器自動建立表單的Edge Delivery Services設定。
+   > 根據 Edge Delivery Services 範本的表單的 Edge Delivery Services 設定會在表單的設定容器中自動建立。
 
-#### 2.在AEM編寫執行個體中找到您的表單設定容器
+#### 2. 在 AEM 作者執行個體中找到表單的設定容器
 
-1. 導覽至您AEM Formsas a Cloud Service作者執行個體上的&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Edge Delivery Services設定]**。
-1. 選取符合表單名稱的資料夾。 例如，如果您的表單名為&#39;contact-us&#39;，請選擇資料夾`forms/contact-us`並選取設定併發佈設定：
+1. 在您的 AEM Forms 作為雲端服務作者執行個體上，瀏覽至&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 雲端服務]** > **[!UICONTROL Edge Delivery Services 設定]**。
+1. 選取與表單名稱相符的資料夾。例如，如果您的表單稱為 “contact-us”，請選擇資料夾 `forms/contact-us` 並選取設定和發佈設定：
 
-   ![Edge Delivery Services組態](/help/forms/assets/aem-instance-eds-configuration.png){width=50%， align-center}
+   ![Edge Delivery Services 設定](/help/forms/assets/aem-instance-eds-configuration.png){width=50%, align-center}
 
-1. 按一下&#x200B;**[!UICONTROL 屬性]**&#x200B;檢視組態。\
-   ![自動建立的組態](/help/edge/assets/aem-forms-create-configuration-github.png){width=50%， align-center}
+1. 按一下&#x200B;**[!UICONTROL 屬性]**，以查看設定。\
+   ![自動建立的設定](/help/edge/assets/aem-forms-create-configuration-github.png){width=50%, align-center}
 
-   Edge主機選項維持原狀。 表單會發佈到預覽(.page)和即時(.live)環境。
+   您可以將 Edge Host 選項保留不變。該表單會發佈到預覽 (.page) 和即時 (.live) 環境。
 
 1. 按一下&#x200B;**[!UICONTROL 儲存並關閉]**。設定已儲存。
 
-#### 3.在通用編輯器中編寫表單
+#### 3. 在通用編輯器中編寫表單
 
-當您按一下&#x200B;**[!UICONTROL 建立]**&#x200B;時，表單會在Universal Editor中開啟以進行編寫。
+當您按一下&#x200B;**[!UICONTROL 建立]**&#x200B;時，表單即會在通用編輯器中開啟以供編寫。
 
-1. 開啟內容瀏覽器，並導覽至&#x200B;**內容樹狀結構**&#x200B;中的&#x200B;**[!UICONTROL 最適化表單]**&#x200B;元件。
+1. 開啟內容瀏覽器，然後瀏覽至&#x200B;**[!UICONTROL 最適化表單]**&#x200B;元件 (在&#x200B;**內容樹**&#x200B;中)。
 
-   ![內容樹狀結構](/help/edge/assets/content-tree.png){width=50%， align-center}
+   ![內容樹](/help/edge/assets/content-tree.png){width=50%, align-center}
 
-1. 按一下「**[!UICONTROL 新增]**」圖示，並從「**最適化表單元件**」清單新增所需的元件。
+1. 按一下&#x200B;**[!UICONTROL 新增]**&#x200B;圖示，然後從&#x200B;**最適化表單元件**&#x200B;清單新增所需元件。
 
-   ![新增元件](/help/edge/assets/add-component.png){width=50%， align-center}
+   ![新增元件](/help/edge/assets/add-component.png){width=50%, align-center}
 
-1. 選取新增的最適化表單元件，並使用&#x200B;**[!UICONTROL 屬性]**&#x200B;更新其屬性。
+1. 選取新增的最適化表單元件並使用&#x200B;**[!UICONTROL 屬性]**&#x200B;更新其屬性。
 
-   ![開啟屬性](/help/edge/assets/component-properties.png){width=50%， align-center}
+   ![開啟屬性](/help/edge/assets/component-properties.png){width=50%, align-center}
 
-   下面的熒幕擷圖顯示了在通用編輯器中編寫的簡單「聯絡我們」表單：
+   下列螢幕擷取畫面會顯示在通用編輯器中編寫的簡單「聯絡我們」表單：
 
-   ![與我們連絡表單](/help/edge/assets/contact-us.png){width=50%， align-center}
+   ![聯絡我們表單](/help/edge/assets/contact-us.png){width=50%, align-center}
 
-#### 4. Publish並預覽表單
+#### 4. 發佈和預覽表單
 
-現在，按一下Universal Editor右上角的&#x200B;**[!UICONTROL Publish]**&#x200B;按鈕，將表單發佈到Edge Delivery Services。
+現在，按一下通用編輯器右上角的&#x200B;**[!UICONTROL 發佈]**&#x200B;按鈕，即可將表單發佈到 Edge Delivery Services。
 
-![發佈表單](/help/edge/assets/publish-form.png){width=50%， align-center}
+![發佈表單](/help/edge/assets/publish-form.png){width=50%, align-center}
 
 
-以下說明如何存取Edge Delivery Services上的表單：
+以下是存取 Edge Delivery Services 上的表單的方法：
 
-* **階段版本（用於測試）**：階段版本顯示表單的未發佈、運作中版本以用於測試目的。 在表單上線之前，請使用下列URL格式來預覽表單：
+* **暫存版本 (用於測試)**：暫存版本會顯示表單未發佈的工作版本，以用於測試目的。使用下列 URL 格式在表單上線之前預覽表單：
 
   `https://<branch>--<repo>--<owner>.aem.page/content/forms/af/<form_name>`
 
-  例如，如果專案的存放庫命名為「aemcrossswalk」，位於帳戶「wkndform」下方，而您使用「主要」分支和表單作為「聯絡我們」，則分段版本URL如下所示：
-https://main--aemcrosswalk--wkndform.aem.page/content/forms/af/contact-us
+  例如，如果您的專案存放庫名為 &quot;aemcrosswalk&quot; (位於帳戶 &quot;wkndform&quot; 下面)，並且您使用的是 &quot;main&quot; 分支和 &quot;contact us&quot; 表單，則暫存版本 URL 會如下所示：https://main--aemcrosswalk--wkndform.aem.page/content/forms/af/contact-us
 
-* **即時版本（已發佈的表單）**：   即時版本會顯示最新發佈的表單版本，以供一般使用者存取。 使用下列URL格式存取已發佈的即時表單版本：
+* **即時版本 (發佈形式)**：即時版本會顯示表單的最新發佈版本，可供終端使用者存取。使用以下 URL 格式存取表單的已發佈即時版本：
 
   `https://<branch>--<repo>--<owner>.aem.live/content/forms/af/<form_name>`
 
-  例如，如果專案的存放庫命名為「aemcrossswalk」，位於帳戶「wkndform」下方，而您使用「主要」分支和表單作為「聯絡我們」，則分段版本URL如下所示：
-https://main--aemcrosswalk--wkndform.aem.live/content/forms/af/contact-us
+  例如，如果您的專案存放庫名為 &quot;aemcrosswalk&quot; (位於帳戶 &quot;wkndform&quot; 下面)，並且您使用的是 &quot;main&quot; 分支和 &quot;contact us&quot; 表單，則暫存版本 URL 會如下所示：https://main--aemcrosswalk--wkndform.aem.live/content/forms/af/contact-us
 
-各階段版本和即時版本的URL結構都維持相同。 不過，您看到的內容會因內容而異：
+暫存和即時版本的 URL 結構都保持不變。但是，您看到的內容會根據內容而有所不同：
 
-![檢視已發佈的表單](/help/edge/assets/eds-view-publish-form.png){width=50%， align-center}
+![檢視已發佈表單](/help/edge/assets/eds-view-publish-form.png){width=50%, align-center}
 
 ## 疑難排解
 
-載入表單時發生問題？ 以下是一些常見問題以及如何加以修正：
+載入表單時是否遇到問題？以下是一些常見問題以及修正的方法：
 
-* **表單URL**：仔細檢查表單URL的結尾是否不包含「.html」副檔名。 Edge Deliver Service不需要此擴充功能。
+* **表單 URL**：仔細確認您表單的 URL 尾端並未包括副檔名 &quot;.html&quot;。Edge Deliver Service 不需要此副檔名。
 
-* **AEM作者URL** L：請確定`fstab.yaml`檔案中所列的AEM作者URL格式正確。 其中應包括下列詳細資訊：
+* **AEM 作者 UR** L：確保 `fstab.yaml` 檔案中所列的 AEM 作者 URL 格式正確。它應包括下列詳細資料：
 
-   * 正確的GitHub擁有者
+   * 正確的 GitHub 所有者
    * 正確的存放庫名稱
-   * 您用於Edge Delivery Services的特定分支
+   * 您用於 Edge Delivery Services 的特定分支
 
 <!-- * **JSON Display**: If you see only JSON data instead of the actual form, your form block might be outdated. You can update it to the latest version available on https://github.com/adobe-rnd/aem-boilerplate-forms.
 -->
