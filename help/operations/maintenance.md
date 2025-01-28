@@ -4,9 +4,9 @@ description: 瞭解AEM as a Cloud Service中的維護任務以及如何進行設
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 feature: Operations
 role: Admin
-source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
+source-git-commit: 3692cf1b14fda80f35eb34583fbbf6b256a89917
 workflow-type: tm+mt
-source-wordcount: '2053'
+source-wordcount: '2043'
 ht-degree: 8%
 
 ---
@@ -267,7 +267,7 @@ data:
 * 必須定義所有屬性。 沒有繼承的預設值。
 * 下方屬性表格中的型別（整數、字串、布林值等）必須遵守。
 
-**4** — 在Cloud Manager中建立設定管道，如[設定管道文章所述。](/help/operations/config-pipeline.md#managing-in-cloud-manager)沙箱和快速開發環境(RDE)不支援清除。
+**4** — 在Cloud Manager中建立設定管道，如[設定管道文章所述。](/help/operations/config-pipeline.md#managing-in-cloud-manager)
 
 ### 版本清除 {#version-purge}
 
@@ -373,4 +373,4 @@ minimumVersions = 1
 | 多項規則 | - | - | 是 | 物件 | 下列一或多個節點：復寫、頁面、dam。 這些節點中的每一個都會定義規則，其屬性如下。 所有屬性都必須宣告。 |
 | maximumAgeDays | 7 天 | 2557年（7年以上2個閏日） | 是 | 整數 | 對於復寫、頁面或dam：稽核記錄的保留天數。 系統會清除早於設定值的稽核記錄。 |
 | 內容路徑 | 「/content」 | 「/content」 | 是 | 字串 | 相關型別稽核記錄清除的路徑。 必須設定為「/content」。 |
-| 型別 | 所有值 | 所有值 | 是 | 列舉陣列 | 針對&#x200B;**復寫**，列舉值為：啟用、停用、刪除、測試、反向、內部輪詢。 對於&#x200B;**頁面**，列舉值為： PageCreated、PageModified、PageMoved、PageDeleted、VersionCreated、PageRestored、PageRolled、PageValid、PageInvalid。 對於&#x200B;**dam**，列舉值為：ASSET_EXPIRING、METADATA_UPDATED、ASSET_EXPIRED、ASSET_REMOVED、RESTORED、ASSET_MOVED、ASSET_VIEWED、PROJECT_VIEWED、PUBLISHED_EXTERNAL、COLLECTION_VIEWED、VERSIONED、ADDED_COMMENT、RENDITION_UPDATED、ACCEPTED、DOWNATED、DOWNATED、DOWNATED、DOWNATED、SUBONED、SUBASSET、SUBASSET_UPDATED、RATED、RATED_RATED、ASSET_RATED、RATED、ASSET_REMOVED、ASSET_RATED、ASSET_ASSET已共用、RENDITION_REMOVED、ASSET_PUBLISHED、ORIGINAL_UPDATED、RENDITION_DOWNLOADED、REJECTED。 |
+| 型別 | 所有值 | 所有值 | 是 | 列舉陣列 | 針對&#x200B;**復寫**，列舉值為：啟用、停用、刪除、測試、反向、內部輪詢。 對於&#x200B;**頁面**，列舉值為： PageCreated、PageModified、PageMoved、PageDeleted、VersionCreated、PageRestored、PageRolled、PageValid、PageInvalid。 對於&#x200B;**dam**，列舉值為：ASSET_EXPIRING、METADATA_UPDATED、ASSET_EXPIRED、ASSET_REMOVED、RESTORED、ASSET_MOVED、ASSET_VIEWED、PROJECT_VIEWED、PUBLISHED_EXTERNAL、COLLECTION_VIEWED、VERSIONED、ADDED_COMMENT、RENDITION_UPDATED、ACCEPTED、DOWNATED、DOWNATED、DOWNATED、DOWNATED、SUBONED、SUBASSET、SUBASSET_UPDATED、RATED、RATED、RATED、ASSET_RATED、RATED_RATED、ASSET_RATED Shared、RENDITION_REMOVED、ASSET_PUBLISHED、ORIGINAL_UPDATED、RENDITION_DOWNLOADED、REJECTED。 |

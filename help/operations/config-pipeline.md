@@ -4,9 +4,9 @@ description: 瞭解如何使用設定管道來部署不同的設定AEM as a Clou
 feature: Operations
 role: Admin
 exl-id: bd121d31-811f-400b-b3b8-04cdee5fe8fa
-source-git-commit: 20338fde4b0875f9f40a2f3f1702b8e1c01a0a88
+source-git-commit: 5e96d5d71abf78a0dba179cb37cad0322688351b
 workflow-type: tm+mt
-source-wordcount: '998'
+source-wordcount: '994'
 ht-degree: 1%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 1%
 
 Cloud Manager設定管道將設定檔案（以YAML格式建立）部署到目標環境。 AEM as a Cloud Service中的許多功能可以這樣設定，包括記錄轉送、清除相關的維護任務和數個CDN功能。
 
-設定管道可以透過Cloud Manager部署到生產（非沙箱）計畫中的開發、測試和生產環境型別。 組態檔可以使用[命令列工具](/help/implementing/developing/introduction/rapid-development-environments.md#deploy-config-pipeline)部署至快速開發環境(RDE)。
+設定管道可以透過Cloud Manager部署到開發、測試和生產環境型別。 組態檔可以使用[命令列工具](/help/implementing/developing/introduction/rapid-development-environments.md#deploy-config-pipeline)部署至快速開發環境(RDE)。
 
 本檔案的以下章節提供了有關如何使用設定管道以及如何為其構建配置的重要資訊的概述。 它說明在配置管道所支援的所有功能或功能子集之間共用的一般概念。
 

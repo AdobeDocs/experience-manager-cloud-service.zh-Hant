@@ -4,9 +4,9 @@ description: 瞭解如何在AEM as a Cloud Service中將記錄轉送給記錄廠
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 6e91ad839de6094d7f6abd47881dabc6357a80ff
+source-git-commit: 9c258e2906c37ee9b91d2faa78f7dfdaa5956dc2
 workflow-type: tm+mt
-source-wordcount: '1975'
+source-wordcount: '1985'
 ht-degree: 1%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 1%
 * HTTPS
 * Splunk
 
-以自助方式設定記錄轉送，方法是在Git中宣告設定，並透過Cloud Manager設定管道將其部署到生產（非沙箱）程式中的RDE、開發、中繼和生產環境型別。
+記錄轉送是透過在Git中宣告設定以自助方式設定，並可透過Cloud Manager設定管道部署至開發、中繼和生產環境型別。 可使用命令列工具將設定檔案部署到快速開發環境(RDE)。
 
 AEM和Apache/Dispatcher記錄檔可選擇透過AEM的進階網路基礎結構路由，例如專用輸出IP。
 
