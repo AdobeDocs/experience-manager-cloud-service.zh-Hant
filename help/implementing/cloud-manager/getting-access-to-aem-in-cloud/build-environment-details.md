@@ -5,10 +5,10 @@ exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 0723d7a3166650d10f8af0210f24bb9b6c5cf325
+source-git-commit: 7098f8aacf42e84f40b266ecae2c6fe28c84b0d3
 workflow-type: tm+mt
-source-wordcount: '1374'
-ht-degree: 34%
+source-wordcount: '1489'
+ht-degree: 31%
 
 ---
 
@@ -84,6 +84,12 @@ Cloud Manager建置流程預設會使用Oracle8 JDK來建置專案，但AEM Clou
 
 將應用程式移轉至新的Java組建版本和執行階段版本時，請先在開發和測試環境中徹底測試，然後再部署到生產環境。
 
+我們建議使用下列部署策略：
+
+1. 使用Java 21執行您的本機SDK (可從https://experience.adobe.com/#/downloads下載)，並將您的應用程式部署至其中並驗證其功能。 檢查記錄檔中是否有錯誤，指出類別載入或位元組碼編排發生問題。
+1. 在您的Cloud Manager存放庫中設定分支以使用Java 21作為建置時間Java版本，設定開發管道以使用此分支並執行管道。 執行驗證測試。
+1. 如果看起來不錯，請將您的stage/prod管道設定為使用Java 21做為buildtime Java版本並執行管道。
+
 ##### 關於某些翻譯功能 {#translation-features}
 
 使用Java 21或Java 17建立時，以下功能可能無法正常運作，Adobe預計在2025年初解決這些問題：
@@ -93,7 +99,7 @@ Cloud Manager建置流程預設會使用Oracle8 JDK來建置專案，但AEM Clou
 
 #### 執行階段需求 {#runtime-requirements}
 
-Java 21執行階段用於具有Java 21和Java 17的組建，並將逐步套用至Java 11組建（請參閱下方的注意事項）。 為確保相容性，需要進行下列調整。
+Java 21執行階段用於具有Java 21和Java 17的組建，並將逐步套用至Java 11組建（請參閱下方的注意事項）。 環境必須位於AEM版本17098本或更高版本上才能接收Java 21更新。 為確保相容性，需要進行下列調整。
 
 程式庫更新可隨時套用，因為維持與舊版Java相容。
 
