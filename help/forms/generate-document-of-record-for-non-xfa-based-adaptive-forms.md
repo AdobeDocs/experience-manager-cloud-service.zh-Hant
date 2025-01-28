@@ -4,16 +4,18 @@ description: 瞭解如何產生最適化Forms的記錄檔案(DoR)範本。
 feature: Adaptive Forms, Foundation Components
 exl-id: 16d07932-3308-4b62-8fa4-88c4e42ca7b6
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
 workflow-type: tm+mt
 source-wordcount: '4170'
-ht-degree: 3%
+ht-degree: 2%
 
 ---
 
 # 為最適化表單產生記錄文件
 
-<span class="preview">Adobe 建議使用新式且可擴充的資料擷取[核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)，用來[建立新的最適化表單](/help/forms/creating-adaptive-form-core-components.md)或[將最適化表單新增到 AEM Sites 頁面](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)。這些元件代表最適化表單建立方面的重大進步，可確保令人印象深刻的使用者體驗。本文會介紹使用基礎元件編寫最適化表單的舊方法。</span>
+>[!NOTE]
+>
+> Adobe建議針對[建立新的Adaptive Forms](/help/forms/creating-adaptive-form-core-components.md)或[將Adaptive Forms新增至AEM Sites頁面](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)，使用現代且可擴充的資料擷取[核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)。 這些元件代表最適化表單建立方面的重大進步，可確保令人印象深刻的使用者體驗。本文說明使用基礎元件製作最適化Forms的舊方法。
 
 
 | 版本 | 文章連結 |
@@ -173,7 +175,7 @@ When you select a form model, configure Document of Record using options availab
    <th>最適化表單元件</th>
    <th>對應的XFA元件</th>
    <th>預設包含在記錄檔案範本中？</th>
-   <th>附註</th>
+   <th>備註</th>
   </tr>
   <tr>
    <td>按鈕</td>
@@ -263,7 +265,7 @@ When you select a form model, configure Document of Record using options availab
   <tr>
    <th>最適化表單元件</th>
    <th>對應的XFA元件</th>
-   <th>附註</th>
+   <th>備註</th>
   </tr>
   <tr>
    <td>面板<br /> </td>
@@ -275,7 +277,7 @@ When you select a form model, configure Document of Record using options availab
 
 ### 靜態元件 {#static-components}
 
-| 最適化表單元件 | 對應的XFA元件 | 附註 |
+| 最適化表單元件 | 對應的XFA元件 | 備註 |
 |---|---|---|
 | 影像 | 影像 | 除非使用記錄檔案設定加以排除，否則TextDraw和Image元件（無論繫結或未繫結）一律顯示在XSD型調適型表單的記錄檔案中。 |
 | 文字 | 文字 |
@@ -512,7 +514,7 @@ XCI檔案可協助您設定檔案的各種屬性。 Formsas a Cloud Service有�
 ### 在本機Formsas a Cloud Service開發環境中使用自訂XCI檔案
 
 1. 上傳XCI檔案至您的本機開發環境。
-1. 開啟Cloud Service SDK設定管理員。 預設URL為： <http://localhost:4502/system/console/configMgr>。
+1. 開啟Cloud ServiceSDK設定管理員。 預設URL為： <http://localhost:4502/system/console/configMgr>。
 1. 找到並開啟&#x200B;**[!UICONTROL 最適化Forms和互動式通訊Web Channel]**&#x200B;設定。
 1. 指定XCI檔案的路徑，然後按一下&#x200B;**[!UICONTROL 儲存]**。
 

@@ -5,14 +5,14 @@ feature: Adaptive Forms, Foundation Components
 role: User, Developer
 level: Beginner
 exl-id: 38ca5eea-793b-420b-ae60-3a0bd83caf00
-source-git-commit: 619cf91e3d1cc5504d8de0e70eb88e9ae7285af9
+source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
 workflow-type: tm+mt
 source-wordcount: '1560'
-ht-degree: 68%
+ht-degree: 66%
 
 ---
 
-# 建立最適化表單（基礎元件） {#creating-an-adaptive-form}
+# 建立最適化表單 (基礎元件) {#creating-an-adaptive-form}
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
@@ -20,7 +20,9 @@ ht-degree: 68%
 | AEM as a Cloud Service  | 本文章 |
 
 
-<span class="preview">Adobe 建議使用新式且可擴充的資料擷取[核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)，用來[建立新的最適化表單](/help/forms/creating-adaptive-form-core-components.md)或[將最適化表單新增到 AEM Sites 頁面](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)。這些元件代表最適化表單建立方面的重大進步，可確保令人印象深刻的使用者體驗。本文會介紹使用基礎元件編寫最適化表單的舊方法。</span>
+>[!NOTE]
+>
+> Adobe建議針對[建立新的Adaptive Forms](/help/forms/creating-adaptive-form-core-components.md)或[將Adaptive Forms新增至AEM Sites頁面](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)，使用現代且可擴充的資料擷取[核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)。 這些元件代表最適化表單建立方面的重大進步，可確保令人印象深刻的使用者體驗。本文說明使用基礎元件製作最適化Forms的舊方法。
 
 最適化表單可讓您建立吸引人、回應式、動態且最適化的表單。AEM Forms為商業使用者提供好用的精靈，以便快速撰寫最適化Forms。 此精靈具有快速的標籤導覽，可輕鬆選取預先設定的範本、樣式、欄位和提交選項，以建立最適化表單。
 
@@ -72,7 +74,7 @@ Adaptive Forms allow you to create forms that are engaging, responsive, dynamic,
 
 
 
-## 建立最適化表單（基礎元件） {#create-an-adaptive-form-foundation-components}
+## 建立最適化表單 (基礎元件) {#create-an-adaptive-form-foundation-components}
 
 1. 存取 [!DNL Experience Manager Forms] 作者執行個體；可以是 Cloud 執行個體或本機開發執行個體。
 

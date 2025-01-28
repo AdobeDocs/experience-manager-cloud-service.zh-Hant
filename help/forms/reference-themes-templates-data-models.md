@@ -4,10 +4,10 @@ description: AEM Forms提供範例調適型表單主題、範本和表單資料�
 feature: Adaptive Forms, Foundation Components
 exl-id: 81588759-22da-4123-92fe-5ca97e97f1e4
 role: User, Developer, Admin
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
 workflow-type: tm+mt
 source-wordcount: '778'
-ht-degree: 9%
+ht-degree: 4%
 
 ---
 
@@ -19,7 +19,9 @@ ht-degree: 9%
 | 根據核心元件的最適化表單 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html) |
 | 根據Foundation元件的最適化表單 | 本文章 |
 
-<span class="preview">Adobe 建議使用新式且可擴充的資料擷取[核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)，用來[建立新的最適化表單](/help/forms/creating-adaptive-form-core-components.md)或[將最適化表單新增到 AEM Sites 頁面](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)。這些元件代表最適化表單建立方面的重大進步，可確保令人印象深刻的使用者體驗。本文會介紹使用基礎元件編寫最適化表單的舊方法。</span>
+>[!NOTE]
+>
+> Adobe建議針對[建立新的Adaptive Forms](/help/forms/creating-adaptive-form-core-components.md)或[將Adaptive Forms新增至AEM Sites頁面](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)，使用現代且可擴充的資料擷取[核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)。 這些元件代表最適化表單建立方面的重大進步，可確保令人印象深刻的使用者體驗。本文說明使用基礎元件製作最適化Forms的舊方法。
 
 AEM Formsas a Cloud Service提供多種參考主題、範本和表單資料模型(FDM)，可幫助您快速開始建立最適化Forms。 您可以從軟體發佈入口網站](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip)下載[參考內容套件，並使用[套件管理員](/help/implementing/developing/tools/package-manager.md)在您的生產、開發或本機開發環境中安裝[參考內容套件](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip)，以將這些參考資產傳送到您的環境。
 
@@ -117,7 +119,7 @@ FSI主題強調表單的極簡和功能外觀。 當您將FSI主題套用至表�
 
 最適化Forms然後可以與Microsoft Dynamics 365和Salesforce伺服器互動，以啟用業務工作流程。 例如：
 
-* 將資料寫入Microsoft Dynamics 365和Salesforce on Adaptive Form提交。
+* 提交最適化表單時將資料寫入Microsoft Dynamics 365和Salesforce。
 * 透過表單資料模型(FDM)中定義的自訂實體將資料寫入Microsoft Dynamics 365和Salesforce，反之亦然。
 * 查詢Microsoft Dynamics 365和Salesforce伺服器以取得資料，並預先填入Adaptive Forms。
 * 從Microsoft Dynamics 365和Salesforce伺服器讀取資料。
