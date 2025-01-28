@@ -5,10 +5,10 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: ef6f00203241c12fce08cf81495b36f47e64613e
+source-git-commit: eb2c451019e1c9d6f48558154ee58598bd1f2e02
 workflow-type: tm+mt
-source-wordcount: '958'
-ht-degree: 13%
+source-wordcount: '980'
+ht-degree: 12%
 
 ---
 
@@ -78,7 +78,7 @@ Universal Editor的功能經過精心設計，可維持輕量型使用者端轉�
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/publish-unpublish.svg" alt="WYSIWYG介面" alt="國際化/本地化">
     <h3>發佈/取消發佈</h3>
-    <p>輕鬆控制表單的可見度 — 只需按幾下滑鼠，即可發佈或取消發佈表單，以動態管理可用性和內容更新。</p>
+    <p>輕鬆控制表單的可見度 — 只需按幾下滑鼠，即可直接從編輯器發佈或取消發佈表單，讓您即時動態管理可用性、使用者存取和內容更新，確保表單隨時保持最新狀態並可視需要存取。</p>
   </div>
 </div>
 
@@ -104,7 +104,7 @@ Universal Editor的功能經過精心設計，可維持輕量型使用者端轉�
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/editor-customization.svg" alt="WYSIWYG介面" alt="編輯器自訂">
     <h3>編輯器自訂</h3>
-    <p>開發人員可透過UI擴充功能擴充通用編輯器的功能，讓量身打造的解決方案符合特定組織需求。</p>
+    <p>開發人員可透過UI擴充功能來擴充編輯器的功能，讓量身打造的解決方案符合特定組織需求。</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/embedding-forms.svg" alt="WYSIWYG介面" alt="內嵌Forms">

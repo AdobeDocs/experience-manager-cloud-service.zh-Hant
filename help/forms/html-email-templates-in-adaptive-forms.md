@@ -5,9 +5,9 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: ef6f00203241c12fce08cf81495b36f47e64613e
+source-git-commit: eb2c451019e1c9d6f48558154ee58598bd1f2e02
 workflow-type: tm+mt
-source-wordcount: '776'
+source-wordcount: '756'
 ht-degree: 0%
 
 ---
@@ -43,10 +43,13 @@ ht-degree: 0%
 1. 開啟最適化表單進行編輯。
 1. 移至&#x200B;**內容瀏覽器**，選取&#x200B;**節目表容器**，然後點選屬性圖示。 標題為`Adaptive Form Container`的對話方塊隨即顯示。
 1. 移至&#x200B;**提交**&#x200B;標籤，並選取&#x200B;**傳送電子郵件**&#x200B;提交動作。
+
+   ![傳送電子郵件提交動作](/help/forms/assets/send-email-action.png)
+
 1. 啟用&#x200B;**使用外部範本**&#x200B;選項。
 1. 啟用&#x200B;**使用HTML範本**&#x200B;選項。
 1. 按一下「外部範本路徑」選項的資料夾圖示，並瀏覽以選取您的HTML範本。
-1. 按一下「完成」以儲存設定。
+1. 按一下&#x200B;**完成**&#x200B;以儲存組態。
 
 您的HTML範本現在已設定為最適化表單。
 
@@ -55,7 +58,6 @@ ht-degree: 0%
 1. 開啟最適化表單進行編輯。
 1. 移至&#x200B;**內容瀏覽器**，選取&#x200B;**節目表容器**，然後點選屬性圖示。 標題為`Adaptive Form Container`的對話方塊隨即顯示。
 1. 移至&#x200B;**提交**&#x200B;標籤，並選取&#x200B;**傳送電子郵件**&#x200B;提交動作。
-1. 啟用&#x200B;**使用外部範本**&#x200B;選項。
 1. 啟用&#x200B;**使用HTML範本**&#x200B;選項。
 1. 直接在提供的&#x200B;**電子郵件範本**&#x200B;方塊中輸入或貼上HTML程式碼。
 
@@ -149,8 +151,6 @@ ht-degree: 0%
     Best regards,
     Your Team
 ```
-
-將預留位置（${name}、${email}等）取代為您最適化表單中的對應表單欄位名稱。
 
 ## HTML電子郵件範本的最佳作法
 
