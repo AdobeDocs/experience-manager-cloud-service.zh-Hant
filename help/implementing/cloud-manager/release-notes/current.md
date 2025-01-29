@@ -4,10 +4,10 @@ description: 了解 AEM as a Cloud Service 中 Cloud Manager 2025.1.0 的發行�
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 43fa46ad6c424b9622ce00a65aed7f18006ef3ba
+source-git-commit: 17f6c359a0396c3ee68b43d0140d637856f7f502
 workflow-type: tm+mt
 source-wordcount: '923'
-ht-degree: 10%
+ht-degree: 19%
 
 ---
 
@@ -25,28 +25,28 @@ ht-degree: 10%
 
 AEM as a Cloud Service中的Cloud Manager 2025.1.0發行日期是2025年1月22日星期三。
 
-下一個預計發行日期為2025年2月13日星期四。
+下一個版本預計於 2025 年 2 月 13 日星期四發行。
 
 
 ## 新增功能 {#what-is-new}
 
 * **程式碼品質規則 — SonarQube伺服器升級：** Cloud Manager程式碼品質步驟將開始使用SonarQube Server 9.9搭配Cloud Manager 2025.2.0版，預計於2025年2月13日星期四執行。
 
-  若要準備，更新的SonarQube規則現在可在[程式碼品質規則](/help/implementing/cloud-manager/code-quality-testing.md#understanding-code-quality-rules)取得。
+  為了做好準備，更新的 SonarQube 規則現已在 [程式碼品質規則中提供](/help/implementing/cloud-manager/code-quality-testing.md#understanding-code-quality-rules)。
 
   您可以設定下列管道文字變數，以「提前檢查」新規則：
 
   `CM_BUILD_IMAGE_OVERRIDE` = `self-service-build:sonar-99-upgrade-java17or21`
 
-  此外，設定下列變數，以確保程式碼品質步驟會針對相同的認可執行（通常針對相同的`commitId`略過）：
+  此外，設定以下變數以確保程式碼品質步驟執行相同認可 (通常會跳過相同`commitId`)：
 
   `CM_DISABLE_BUILD_REUSE` = `true`
 
-![變數設定頁面](/help/implementing/cloud-manager/release-notes/assets/variables-config.png)
+![設定變數頁面](/help/implementing/cloud-manager/release-notes/assets/variables-config.png)
 
 >[!NOTE]
 >
->Adobe建議建立新的CI/CD程式碼品質管道，並設定至與您的主要生產管道相同的分支。 在2025年2月13日發行版本之前&#x200B;*設定適當的變數*，以驗證新的強制規則不會引入封鎖程式。
+>Adobe 建議建立一個新的 CI/CD 程式碼品質管道，並將其配置到與主生產管道相同的分支。在 *2025 年 2 月 13 日發布之前設定適當的變數* ，以驗證新的強制規則不會引入阻止程序。
 
 * **Java 17和Java 21版本支援：**&#x200B;客戶現在可以使用Java 17或Java 21版本進行版本建立，以取得效能增強功能和新的語言功能。 如需設定步驟，包括更新您的Maven專案和程式庫版本，請參閱[組建環境](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)。 當組建版本設定為Java 17或Java 21時，部署的執行階段為Java 21。
 
@@ -100,7 +100,7 @@ AEM as a Cloud Service中的Cloud Manager 2025.1.0發行日期是2025年1月22�
 
 * **進階測試環境：**&#x200B;專門建置的解決方案，旨在縮短開發及生產之間的差距。 此環境針對企業需求量身打造，可複製生產層級的規格，以支援精確的使用者驗收測試(UAT)和完整的效能評估。
 
-如果您有興趣加入Early Adopter計畫，請[完成此表單](https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Furldefense.com%2Fv3%2F__https%3A%2Fwww.feedbackprogram.adobe.com%2Fh%2Fs%2F6N425LYG1jQ1Nc0F20Zllt__%3B!!OgNkHJCYlf_CHg！fIp-QrZ9si3kcUIjRCniEzqAAa8FcU1iN34SGQFtlcQ36eUQXOZWbDHP7oZajqdgpuOMAVL5CQpkZ6ths76A qks8%24&amp;data=05%7C02%7Cpanchapa%40adobe.com%7Cf81bcaa4b20544f1818b08dccd07c78c%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C638610680502164019%7CUnknown%7CTWFpbGZsb3d8eyJWIawMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;sdata=aGo6zz2ldPrta4lpvo3CLNENR5ghHDDCPbG1adUaNZQ%3D&amp;reserved=0)，並寄電子郵件給我們（詳細資訊請關注）與您的`OrgID`。
+如果您有興趣加入Early Adopter計畫，請[完成此表單](https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Furldefense.com%2Fv3%2F__https%3A%2Fwww.feedbackprogram.adobe.com%2Fh%2Fs%2F6N425LYG1jQ1Nc0F20Zllt__%3B!!OgNkHJCYlf_CHg！fIp-QrZ9si3kcUIjRCniEzqAAa8FcU1iN34SGQFtlcQ36eUQXOZWbDHP7oZajqdgpuOMAVL5CQpkZ6ths76A qks8%24&amp;data=05%7C02%7Cpanchapa%40adobe.com%7Cf81bcaa4b20544f1818b08dccd07c78c%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C638610680502164019%7CUnknown%7CTWFpbGZsb3d8eyJWIawMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;sdata=aGo6zz2ldPrta4lpvo3CLNENR5ghHDDCPbG1adUaNZQ%3D&amp;reserved=0)，並傳送電子郵件至[earlyadopter_cs_advtestenvironment@adobe.com](mailto:earlyadopter_cs_advtestenvironment@adobe.com) （含您的`OrgID`）。
 
 
 
