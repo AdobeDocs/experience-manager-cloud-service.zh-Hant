@@ -5,9 +5,9 @@ feature: Administering
 role: Admin
 exl-id: 55d54d72-f87b-47c9-955f-67ec5244dd6e
 solution: Experience Manager Sites
-source-git-commit: d6ecdae8dd78c3c93a410ca2c8b80322340f439e
+source-git-commit: a5661b6b75180dd77eb794eb5d215fd2e1d5eed0
 workflow-type: tm+mt
-source-wordcount: '544'
+source-wordcount: '625'
 ht-degree: 0%
 
 ---
@@ -66,3 +66,14 @@ AEM可以自動調整您的現有網站以使用前端管道。 若要執行此�
 * [使用網站邊欄管理您的網站主題](site-rail.md)
 * [快速網站建立歷程](/help/journey-sites/quick-site/overview.md) — 此檔案歷程為您提供使用前端管道和快速網站建立工具來快速部署網站的程式從頭到尾的概觀。
 * [CI/CD管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) — 本檔案說明完整棧疊和Web層管道內容中的前端管道。
+
+## 前端管道和自訂網域 {#custom-domains}
+
+如[技術詳細資料](#technical-details)區段中所述，啟用網站的前端管道功能會在`/conf/<site-name>/sling:configs`下建立`SiteConfig`和`HtmlPageItemsConfig`節點。
+
+如果您想要將[Cloud Manager的自訂網域功能](/help/implementing/cloud-manager/custom-domain-names/introduction.md)與前端管道一起用於您的網站，則必須將其他屬性新增到這些節點。
+
+1. 設定網站`SiteConfig`中的`customFrontendPrefix`屬性。
+1. 這會以自訂網域更新`HtmlPageItemsConfig`的`prefixPath`值。
+
+接著網站的頁面會參照該更新URL中的主題人工因素。

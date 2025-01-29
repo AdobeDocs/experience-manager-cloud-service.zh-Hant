@@ -5,10 +5,10 @@ exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 41a67b0747ed665291631de4faa7fb7bb50aa9b9
+source-git-commit: a5661b6b75180dd77eb794eb5d215fd2e1d5eed0
 workflow-type: tm+mt
-source-wordcount: '704'
-ht-degree: 45%
+source-wordcount: '720'
+ht-degree: 44%
 
 ---
 
@@ -75,6 +75,7 @@ AEM as a Cloud Service提供內建的CDN （內容傳遞網路）服務，也可
 * 一次只能新增一個網域名稱。
 * AEM as a Cloud Service 不支援萬用字元網域，例如 `*.example.com`。
 * 在新增自訂網域名稱之前，必須為您的計畫安裝包含自訂網域名稱的有效SSL憑證（萬用字元憑證有效）。
+* 使用包含[前端管道功能的自訂網域名稱需要額外的設定步驟。](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md#custom-domains)
 
 ## 開始 {#get-started}
 
