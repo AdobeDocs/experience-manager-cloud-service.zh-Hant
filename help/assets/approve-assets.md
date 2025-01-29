@@ -3,10 +3,10 @@ title: 在Experience Manager中核准資產
 description: 瞭解如何核准 [!DNL Experience Manager]中的資產。
 role: User
 exl-id: fe61a0f1-94d3-409a-acb9-195979668c25
-source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
+source-git-commit: 28ba98828cfa34933a2ec4f5d9b7d9681d42fa5a
 workflow-type: tm+mt
-source-wordcount: '747'
-ht-degree: 4%
+source-wordcount: '1115'
+ht-degree: 11%
 
 ---
 
@@ -17,11 +17,11 @@ ht-degree: 4%
 
 >[!AVAILABILITY]
 >
->Dynamic Media搭配OpenAPI功能指南現在提供PDF格式。 下載整份指南，並使用Adobe Acrobat AI Assistant回答您的疑問。
+>具有 OpenAPI 功能的 Dynamic Media 指南現已提供 PDF 格式。下載完整指南，並使用 Adobe Acrobat AI 助理來回答您的查詢問題。
 >
->[!BADGE 具有OpenAPI功能的Dynamic Media指南PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/dynamic-media-with-openapi-capabilities.pdf"}
+>[!BADGE 具有 OpenAPI 功能的 Dynamic Media 指南 PDF]{type=Informative url="https://helpx.adobe.com/tw/content/dam/help/en/experience-manager/aem-assets/dynamic-media-with-openapi-capabilities.pdf"}
 
-品牌經理和行銷人員對品牌資產維持嚴格的控制。 該資產僅供經核准和最新版本的使用，以確保所有管道和應用程式的品牌一致性。
+品牌經理和行銷人員對品牌資產維持嚴格的控制。 唯有經核准且最新版本的資產才可供使用，以確保所有管道和應用程式間的品牌一致性。
 
 您可以在AEM Assets中核准資產，以簡化資產管理，確保處理資產的程式受到控制且有效率。
 
@@ -37,8 +37,19 @@ ht-degree: 4%
 1. 選取適用的中繼資料結構描述，然後按一下&#x200B;**[!UICONTROL 編輯]**。 <br>開啟&#x200B;**[!UICONTROL 中繼資料結構表單編輯器]**，並反白顯示&#x200B;**[!UICONTROL 基本]**&#x200B;索引標籤。
 1. 向下捲動並按一下&#x200B;**[!UICONTROL 檢閱狀態]**。
 1. 按一下右側面板上的&#x200B;**[!UICONTROL 規則]**&#x200B;標籤。
-1. 取消勾選&#x200B;**[!UICONTROL 停用編輯]**，然後按一下&#x200B;**[!UICONTROL 儲存]**。
+1. 取消勾選&#x200B;**[!UICONTROL 停用編輯]**。
 如果您需要檢視**[!UICONTROL 檢閱狀態]**&#x200B;欄位對應到的屬性，請瀏覽至&#x200B;**[!UICONTROL 設定]**&#x200B;標籤，並檢視&#x200B;**[!UICONTROL 對應到屬性]**&#x200B;欄位中的`./jcr:content/metadata/dam:status`值。
+1. 將&#x200B;**[!UICONTROL 下拉式清單]**&#x200B;欄位從右側的&#x200B;**[!UICONTROL 建置表單]**&#x200B;區段拖放到表單的中繼資料區段。
+1. 按一下新新增的欄位，然後在&#x200B;**[!UICONTROL 設定]**&#x200B;面板中執行下列更新：
+   1. 將&#x200B;**[!UICONTROL 欄位標籤]**&#x200B;變更為&#x200B;_核准目標_。
+   1. 將&#x200B;**[!UICONTROL 對應更新至屬性]**&#x200B;至&#x200B;_。/jcr：content/metadata/dam：activationTarget_。
+   1. 以`contenthub`和`delivery`作為選項值新增選項。
+
+   >[!NOTE]
+   >
+   當您使用Assets檢視選取核准目標為Content Hub時，屬於相同組織的使用者可在Content Hub中使用資產。 當您選取核准目標為傳送時，資產可供所有使用者使用。
+
+1. 按一下「**[!UICONTROL 儲存]**」。
 
 >[!NOTE]
 >
@@ -49,10 +60,10 @@ ht-degree: 4%
 若要在[!DNL Experience Manager Admin view]中核准資產，請執行下列步驟：
 
 1. 選取資產並按一下頂端窗格中的&#x200B;**[!UICONTROL 屬性]**。
-1. 在&#x200B;**[!UICONTROL 基本]**&#x200B;索引標籤中，向下捲動至&#x200B;**[!UICONTROL 檢閱狀態]**。
-1. 將稽核狀態變更為&#x200B;**[!UICONTROL 已核准]**。
+1. 在「**[!UICONTROL 基本]**」索引標籤中，向下捲動至「**[!UICONTROL 審查狀態]**」。
+1. 將審查狀態變更為「**[!UICONTROL 已核准]**」。
    ![影像](/help/assets/assets/approve-old-ui.png)
-1. 按一下&#x200B;**[!UICONTROL 「儲存並關閉」]**。
+1. 按一下「**[!UICONTROL 儲存並關閉]**」。
 
    >[!VIDEO](https://video.tv.adobe.com/v/3427430)
 
@@ -74,6 +85,15 @@ ht-degree: 4%
    1. 將&#x200B;**[!UICONTROL 對應更新至屬性]**&#x200B;至&#x200B;_。/jcr：content/metadata/dam：status_。
    1. 將預設值變更為&#x200B;_已核准_。
 
+1. 將&#x200B;**[!UICONTROL 下拉式清單]**&#x200B;欄位從右側的&#x200B;**[!UICONTROL 建置表單]**&#x200B;區段拖放到表單的中繼資料區段。
+1. 按一下新新增的欄位，然後在&#x200B;**[!UICONTROL 設定]**&#x200B;面板中執行下列更新：
+   1. 將&#x200B;**[!UICONTROL 欄位標籤]**&#x200B;變更為&#x200B;_核准目標_。
+   1. 將&#x200B;**[!UICONTROL 對應更新至屬性]**&#x200B;至&#x200B;_。/jcr：content/metadata/dam：activationTarget_。
+   1. 以`contenthub`和`delivery`作為選項值新增選項。
+
+   >[!NOTE]
+   >
+   當您使用Assets檢視選取核准目標為Content Hub時，屬於相同組織的使用者可在Content Hub中使用資產。 當您選取核准目標為傳送時，資產可供所有使用者使用。
 1. 按一下「**[!UICONTROL 儲存]**」。
 1. 在&#x200B;**[!UICONTROL 中繼資料設定檔]**&#x200B;頁面中，選取新建立的中繼資料設定檔。
 1. 按一下頂端動作列中的&#x200B;**[!UICONTROL 套用中繼資料設定檔至資料夾]**。
@@ -88,9 +108,22 @@ ht-degree: 4%
 
 同樣地，若要在Assets檢視中大量核准資料夾內的資產：
 
-1. 選取資產並按一下&#x200B;**[!UICONTROL 大量中繼資料編輯]**。
+1. 選取資產，然後按一下「**[!UICONTROL 大量中繼資料編輯]**」。
 
-1. 在右窗格的[!UICONTROL 屬性]區段中可用的&#x200B;**[!UICONTROL 狀態]**&#x200B;欄位中選取&#x200B;**[!UICONTROL 已核准]**。
+1. 在右側面板「[!UICONTROL 屬性]」區段內提供的「**[!UICONTROL 狀態]**」欄位中，選取「**[!UICONTROL 已核准]**」。
+
+   如果您將狀態選取為`Approved`，而且已針對您的Experience Manager Assets啟用[具有OpenAPI功能的Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md)或[Content Hub](/help/assets/product-overview.md)，或兩者皆已啟用，則您可以在&#x200B;**[!UICONTROL 核准目標]**&#x200B;欄位中檢視`Delivery`和`Content Hub`可用選項。
+
+   * 選取&#x200B;**[!UICONTROL 傳送]**，讓具有OpenAPI功能的Dynamic Media與Content Hub都能使用資產。 如果您未啟用Content Hub，選取此選項會讓資產僅供具有OpenAPI功能的Dynamic Media使用。
+   * 選取&#x200B;**[!UICONTROL Content Hub]**，讓資產可供Content Hub使用。
+
+   ![核准狀態](/help/assets/assets/approval-status-delivery.png)
+
+   如果您未使用預設的中繼資料表單，且無法檢視&#x200B;**[!UICONTROL 核准目標]**&#x200B;欄位，請[編輯您的中繼資料表單](/help/assets/metadata-assets-view.md#metadata-forms)，將&#x200B;**[!UICONTROL 的]**&#x200B;核准欄位從可用元件拖曳到中繼資料表單，然後按一下&#x200B;**[!UICONTROL 儲存]**。
+
+   >[!NOTE]
+   >
+   如果您使用組織內的Assets檢視選取核准目標為`Content Hub`，則屬於相同組織的使用者可在Content Hub中使用資產。
 
 1. 按一下「**[!UICONTROL 儲存]**」。
 

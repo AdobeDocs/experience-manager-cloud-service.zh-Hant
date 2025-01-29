@@ -5,16 +5,16 @@ role: User, Leader
 contentOwner: AG
 exl-id: 2459d482-828b-4410-810c-ac55ef0a2119
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 28ba98828cfa34933a2ec4f5d9b7d9681d42fa5a
 workflow-type: tm+mt
-source-wordcount: '1222'
-ht-degree: 92%
+source-wordcount: '1633'
+ht-degree: 73%
 
 ---
 
 # 管理資產 {#manage-assets}
 
-| [搜尋最佳實務](/help/assets/search-best-practices.md) | [中繼資料最佳實務](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [具有OpenAPI功能的Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets開發人員檔案](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| [搜尋最佳實務](/help/assets/search-best-practices.md) | [中繼資料最佳實務](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [具有 OpenAPI 功能的 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 開發人員文件](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
 您可以使用 [!DNL Assets view] 的人性化介面，輕鬆進行各種數位資產管理 (DAM) 任務。新增資產後，即可搜尋、下載、移動、複製、重新命名、刪除、更新和編輯您的資產。
@@ -139,15 +139,62 @@ Assets檢視可讓您對存放庫中可用的資產設定狀態。 設定資產�
    >[!VIDEO](https://video.tv.adobe.com/v/342495)
 
 
-### 設定資產到期日 {#set-asset-expiration-date}
 
-Assets檢視也可讓您設定存放庫中可用資產的有效日期。 您可以[](search-assets-view.md#refine-search-results) 根據`Expired`資產狀態來篩選搜尋結果。此外，您可以指定資產的有效日期範圍以進一步篩選搜尋結果。
+### 設定核准目標 {#set-approval-target}
 
-若要設定資產到期日：
+Assets檢視可讓您根據您在「資產詳細資料」頁面上的&#x200B;**核准目標**&#x200B;欄位中設定的值，使用OpenAPI功能、Content Hub或兩者將已核准的資產發佈到Dynamic Media。
+
+若要設定核准目標：
 
 1. 選取該資產，然後按一下工具列中的「**[!UICONTROL 詳細資料]**」。
 
-1. 在「**[!UICONTROL 基本]**」標籤中，使用「**[!UICONTROL 到期日]**」欄位設定資產的到期日。
+1. 在&#x200B;**[!UICONTROL 基本]**&#x200B;索引標籤中，從&#x200B;**[!UICONTROL 狀態]**&#x200B;下拉式清單中選取資產狀態。 可能的值包括「已核准」、「已拒絕」以及「無狀態」(預設)。
+
+1. 如果您在步驟2中選取&#x200B;**已核准**，請選取核准目標。 可能的值包括「傳送」和「Content Hub」。
+
+   * **傳送**&#x200B;是下拉式功能表中選取的預設選項，而且會透過OpenAPI](/help/assets/dynamic-media-open-apis-overview.md)將資產發佈至[Dynamic Media和[Content Hub](/help/assets/product-overview.md) (如果兩者皆已啟用Experience Manager Assets)。
+
+   * 選取&#x200B;**Content Hub**&#x200B;會將資產發佈至Content Hub。 只有在為Experience Manager Assets啟用Content Hub時，它才會顯示為選項。
+
+   * 如果您未從下拉式清單中選取選項，則為您的AEM as a Cloud Service環境啟用的預設選項會自動套用至資產。
+
+
+   如需可用選項的詳細資訊，請參閱[已核准資產的預設核准目標和發佈目的地](#default-approval-target-options-publish-destinations)。
+
+   >[!NOTE]
+   >
+   >設定核准目標是一項有限的可用性功能。 您可以透過建立支援票證來啟用或停用它。 如果您已啟用具有OpenAPI的Dynamic Media，則預設會啟用。
+
+   ![核准狀態](/help/assets/assets/approval-status-delivery.png)
+
+1. 指定其他資產屬性，然後按一下&#x200B;**[!UICONTROL 儲存]**。
+
+其他需要注意的要點包括：
+
+* 當您未使用預設的中繼資料表單且無法檢視&#x200B;**[!UICONTROL 核准目標]**&#x200B;欄位時，[編輯您的中繼資料表單](/help/assets/metadata-assets-view.md#metadata-forms)以將&#x200B;**[!UICONTROL 的]**&#x200B;核准欄位從可用元件拖曳到中繼資料表單，然後按一下&#x200B;**[!UICONTROL 儲存]**。
+
+* 當您使用Assets檢視選取核准目標為`Content Hub`時，資產便可在Content Hub中提供給屬於相同組織的使用者使用。
+
+#### 已核准資產的預設核准目標和發佈目的地 {#default-approval-target-options-publish-destinations}
+
+下表說明在您的AEM as a Cloud Service環境中使用OpenAPI和Content Hub啟用DM而顯示`Approval Target`下拉式清單和預設核准目標的先決條件：
+
+| Dynamic Media與OpenAPI | Content Hub | 是否要顯示核准目標下拉式清單？ | 已核准資產的預設核准目標 | Publish目的地 |
+| --- | --- | --- | --- |---|
+| 已啟用 | 已啟用 | 是 | 傳遞 | Dynamic Media搭配OpenAPI與Content Hub |
+| 未啟用 | 已啟用 | 是 | Content Hub | Content Hub |
+| 已啟用 | 未啟用 | 是 | 傳遞 | Dynamic Media與OpenAPI |
+| 未啟用 | 未啟用 | 否 | N/A | N/A |
+
+### 設定資產過期日 {#set-asset-expiration-date}
+
+Assets檢視也可讓您設定存放庫中可用資產的有效日期。 您可以[](search-assets-view.md#refine-search-results) 根據`Expired`資產狀態來篩選搜尋結果。此外，您可以指定資產的過期日期範圍以進一步篩選搜尋結果。
+
+若要設定資產過期日：
+
+1. 選取該資產，然後按一下工具列中的「**[!UICONTROL 詳細資料]**」。
+
+1. 在「**[!UICONTROL 基本]**」標籤中，使用「**[!UICONTROL 過期日]**」欄位設定資產的過期日。
 
 `Expired` 資產卡指標便會覆寫為資產所設定的 `Approved` 或 `Rejected` 指標。
 
@@ -165,9 +212,9 @@ Assets檢視預設會提供許多標準中繼資料欄位。 組織擁有其他�
 
 若要將資產狀態中繼資料欄位新增至表單，請將「**[!UICONTROL 資產狀態]**」元件從左側邊欄拖曳至表單。對應屬性會自動預先填入。儲存表單以確認變更。
 
-**將到期日中繼資料欄位新增至表單**
+**將過期日中繼資料欄位新增至表單**
 
-若要將到期日中繼資料欄位新增至表單，請將「**[!UICONTROL 日期]**」元件從左側邊欄拖曳至表單。將「**到期日**」指定為標籤，並將 `pur:expirationDate` 指定為對應屬性。儲存表單以確認變更。
+若要將過期日中繼資料欄位新增至表單，請將「**[!UICONTROL 日期]**」元件從左側邊欄拖曳至表單。將「**過期日**」指定為標籤，並將 `pur:expirationDate` 指定為對應屬性。儲存表單以確認變更。
 
 ## 後續步驟 {#next-steps}
 
