@@ -6,10 +6,10 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 0b097ab3-bf1d-4d43-9e19-d544594844ef
-source-git-commit: cddfcddc0ca3652270bdb735e580386ac9ff1fc7
+source-git-commit: 5c103fcce1ae47bc89f4f572d89967c62c1f7603
 workflow-type: tm+mt
-source-wordcount: '361'
-ht-degree: 87%
+source-wordcount: '385'
+ht-degree: 79%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 87%
 
 每當使用者登入 AEM as a Cloud Service 或有人使用存取權杖時，Adobe Admin Console 使用者群組、產品設定檔和產品設定檔服務都會以群組的形式同步到 AEM 存放庫。
 
-AEM版本高於18751時（維護版本將於1月27日開始在生產環境中推出），為了減少UI雜亂和最佳化效能，同步行為將會有一些變更，導致AEM中出現的群組減少。 將移除兩種類別的 AEM 群組：
+從AEM維護發行說19149開始，群組同步行為已變更，以降低UI雜湊並最佳化效能。 具體來說，下列兩個AEM群組類別的使用者群組成員資格將不再同步：
 
 1. 字尾是 `GROUP_NAME_SUFFIX` 的 AEM 群組。這些群組並未顯示在 Adobe Developer Console，但是顯示在 AEM 群組管理畫面，如下所示。萬一您的 AEM 應用程式參考這些群組，請務必參考未使用該字尾的 Adobe Admin Console 使用者群組。
 
@@ -44,3 +44,4 @@ AEM版本高於18751時（維護版本將於1月27日開始在生產環境中推
 
 萬一您的 AEM 應用程式參考的群組在 AEM 中不會再顯示，請務必改用 i) 來自正確的 AEM 執行個體的產品設定檔，或 ii) Adobe Admin Console 使用者群組。
 
+使用者的群組成員資格會在使用者登入環境時進行同步，且會從與目前環境無關的群組中移除。 群組本身會保留，並包含自功能啟用後未登入的使用者。
