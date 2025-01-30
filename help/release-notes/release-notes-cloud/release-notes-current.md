@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 75a011ed952e1801f0988942d4501a52d348bb3f
+source-git-commit: 3b7a77fd77226f79510b61f9bb20ad9477b6654e
 workflow-type: tm+mt
-source-wordcount: '1759'
-ht-degree: 44%
+source-wordcount: '1812'
+ht-degree: 42%
 
 ---
 
@@ -59,7 +59,7 @@ Have a look at the January 2025 Release Overview video for a summary of the feat
 
 **增強的內容片段**
 
-使用不重複ID型參考資料增強[內容片段參考](/help/headless/graphql-api/uuid-reference-upgrade.md)，確保即使移動資產或片段，也能保持有效的穩定連結，不需要更新或重新發佈。 目前限制：唯一 ID 尚未支援頁面參考。如果內容片段中已參考頁面，則不應使用此功能。
+使用以唯一ID為基礎的參考增強[內容片段參考](/help/headless/graphql-api/uuid-reference-upgrade.md)，即使片段移至其他位置，仍可協助確保個別內容片段的GraphQL查詢可保持穩定。 「ByID」查詢現在可以這樣做。 雖然路徑可以變更，這可能會中斷「ByPath」查詢，但UUID是穩定的。 新的ID也可以在任何查詢或其他適用的API請求中作為屬性傳回。 目前限制(2025.1)：不支援使用唯一ID的頁面參考。 如果頁面在內容片段中參照，則不應使用此功能。 此限制計畫在下一個AEM as a Cloud Service版本中移除。
 
 **用於內容片段傳送的 AEM REST OpenAPI**
 
