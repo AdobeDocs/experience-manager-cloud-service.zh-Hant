@@ -4,10 +4,10 @@ description: 特定於  [!DNL Adobe Experience Manager] as a [!DNL Cloud Service
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: b0bc2eb4298a88c6dc421390dd9527e181386b5d
+source-git-commit: 32cc525d5443f455f1579ef027c08796ffc209e7
 workflow-type: tm+mt
-source-wordcount: '2513'
-ht-degree: 98%
+source-wordcount: '2543'
+ht-degree: 97%
 
 ---
 
@@ -35,6 +35,8 @@ Adobe 會持續評估產品功能，以逐漸利用更現代化的替代方案�
 
 | 功能 | 汰除功能 | 替代方案 |
 | ------------ | ------------------ | ----------- |
+| Sites | [PWA功能](/help/sites-cloud/authoring/sites-console/enable-pwa.md) | 無 |
+| Sites | [SPA編輯器](/help/implementing/developing/hybrid/introduction.md) | 在AEM中管理Headless內容的偏好編輯器為： <br>- [用於視覺化編輯的通用編輯器](/help/edge/wysiwyg-authoring/authoring.md)。<br>- [用於表單式編輯的內容片段編輯器](/help/assets/content-fragments/content-fragments-managing.md)。 |
 | [!DNL Sites] | [JavaScript Use API](https://github.com/adobe/htl-spec/blob/master/SPECIFICATION.md#42-javascript-use-api) | [Java Use API](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-htl/content/java-use-api) |
 | [!DNL Sites] | **社交媒體狀態**&#x200B;的體驗片段屬性。 | 此功能規劃於近日移除。 |
 | [!DNL Sites] | 基於範例的簡單內容片段。 | 現在[基於模型的結構化內容片段](/help/assets/content-fragments/content-fragments-models.md)。 |

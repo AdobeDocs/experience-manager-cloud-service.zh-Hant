@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的目前維�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: a091dd6b1b69d77f9eeb50065e8946af0133f4f9
+source-git-commit: a3c414f9b5e575856a942e02661e8c70a7083495
 workflow-type: tm+mt
-source-wordcount: '476'
-ht-degree: 39%
+source-wordcount: '541'
+ht-degree: 35%
 
 ---
 
@@ -55,14 +55,24 @@ ht-degree: 39%
 
 ### 已過時的功能和 API {#deprecated-19149}
 
+ [已過時和移除的功能和 API](/help/release-notes/deprecated-removed-features.md) 文件中詳細介紹了 AEM as a Cloud Service 已過時和移除的功能和 API。
+
+#### 使用者群組和產品設定檔同步的變更
+
 使用Adobe Admin Console進行許可權管理時，下列群組不得使用，因為系統將不再將它們與AEM同步：
 * 以_GROUP_NAME_SUFFIX結尾的AEM群組。
 * 來自其他環境、計畫或產品的產品設定檔。
 
 如需詳細資訊，請檢查使用者群組與產品設定檔同步中的[變更](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/changes-in-user-group-and-product-profile-synchronization)。
 
+#### 棄用SPA編輯器 {#deprecate-spa-editor}
 
-[「已過時和已移除的功能及 API」](/help/release-notes/deprecated-removed-features.md)文件中詳細介紹 AEM as a Cloud Service 中已過時和已移除的功能及 API。
+[自2025.1.0版開始的新專案已棄用SPA編輯器](/help/implementing/developing/hybrid/introduction.md)。SPA編輯器仍支援現有專案，但不應用於新專案。
+
+在AEM中管理Headless內容的首選編輯器包括：
+
+* [用於視覺化編輯的通用編輯器](/help/edge/wysiwyg-authoring/authoring.md)。
+* [用於表單式編輯的內容片段編輯器](/help/assets/content-fragments/content-fragments-managing.md)。
 
 ### 安全性修正 {#security-19149}
 

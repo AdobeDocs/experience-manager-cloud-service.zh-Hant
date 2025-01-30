@@ -1,8 +1,8 @@
 ---
-source-git-commit: 72f2b67c805f964c93a8a3e2883b3d3160fe5723
+source-git-commit: 7b4bb513b928bf94b4ada4e1a06a1e254f33aafa
 workflow-type: tm+mt
-source-wordcount: '1371'
-ht-degree: 99%
+source-wordcount: '1388'
+ht-degree: 97%
 
 ---
 # 代碼片段 {#snippets}
@@ -35,7 +35,7 @@ ht-degree: 99%
 * [將最適化表單資料傳送到資料庫](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/data-integration)
 * [將最適化表單資料傳送到 REST 端點](/help/forms/configure-submit-actions-core-components.md#submit-to-rest-endpoint)
 * [將最適化表單資料傳送到 AEM 工作流程](/help/forms/configure-submit-actions-core-components.md#invoke-an-aem-workflow)
-* [使用 Forms 入口網站在 AEM 網站上列出 AEM 最適化 Forms](/help/forms/configure-forms-portal.md)
+* [使用 Forms 入口網站在 AEM 網站上列出 AEM 最適化表單](/help/forms/configure-forms-portal.md)
 * [在最適化表單中新增版本設定、評論和附註](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md)
 * [比較最適化表單](/help/forms/compare-forms.md)
 
@@ -128,7 +128,7 @@ ht-degree: 99%
 
 ## 規則編輯器，另請參閱 {#see-also-rule-editor}
 
-* [以核心元件為主之最適化 Forms 的規則編輯器簡介](/help/forms/rule-editor-core-components.md)
+* [以核心元件為主之最適化表單的規則編輯器簡介](/help/forms/rule-editor-core-components.md)
 * [以核心元件為主之最適化表單的規則編輯器中的運算子和事件類型](/help/forms/rule-editor-core-components-events-operators.md)
 * [以核心元件為主之最適化表單的規則編輯器使用者介面](/help/forms/rule-editor-core-components-user-interface.md)
 * [以核心元件為主之最適化表單的規則編輯器不同使用案例](/help/forms/rule-editor-core-components-usecases.md)
@@ -237,7 +237,7 @@ ht-degree: 99%
 
 >[!IMPORTANT]
 >
->Adobe 仍然支援 SPA 編輯器，但是現在 AEM 中用於管理 Headless 內容的偏好編輯器是：
+>已為新專案棄用SPA編輯器[](/help/release-notes/release-notes-cloud/release-notes-current.md#sites-deprecated)。 Adobe仍支援此專案用於現有專案，但不應用於新專案。 在AEM中管理Headless內容的首選編輯器現在是：
 >
 >* [通用編輯器](/help/edge/wysiwyg-authoring/authoring.md)：用於視覺化編輯 Headless 內容。
 >* [內容片段編輯器](/help/assets/content-fragments/content-fragments-managing.md)：用於 Headless 內容的表單型編輯。

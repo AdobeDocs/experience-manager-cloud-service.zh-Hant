@@ -4,12 +4,13 @@ description: 了解如何管理分類資料，以便將標記與使用 Edge Deli
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 017982e4-a4c8-4097-8751-9619cc4639d0
-source-git-commit: 01966d837391d13577956a733c2ee7dc02f88103
-workflow-type: ht
-source-wordcount: '845'
-ht-degree: 100%
+source-git-commit: 701a7c08d591d9a3ffabfe041745748194c923b2
+workflow-type: tm+mt
+source-wordcount: '974'
+ht-degree: 85%
 
 ---
+
 
 # 管理分類資料 {#managing-taxonomy-data}
 
@@ -77,7 +78,7 @@ ht-degree: 100%
 
 頁面編輯器中顯示的頁面是唯讀的，因為分類內容是根據選定的標記和命名空間自動產生。它們就像篩選器一般，會自動產生分類內容。因此沒有理由直接在編輯器中編輯頁面。
 
-當您更新根本的標記和命名空間時，AEM 會自動更新分類頁面的內容。但是，您必須在進行任何變更後[重新發佈分類](#publishing)，您的使用者才能使用這些變更。
+當您更新根本的標記和命名空間時，AEM 會自動更新分類頁面的內容。不過，您必須在任何變更後[重新發佈分類](#publishing)，才能讓使用者可以使用這些變更。
 
 ## 更新 paths.json 以發佈分類 {#paths-json}
 
@@ -155,6 +156,10 @@ ht-degree: 100%
       "title": "Translate"
     }
   ],
+  "columns": [
+    "tag",
+    "title"
+  ],
   ":type": "sheet"
 }
 ```
@@ -162,3 +167,47 @@ ht-degree: 100%
 您更新分類並重新發佈時，此 JSON 資料會自動更新。您的應用程式可以透過程式設計方式為您的使用者存取此資訊。
 
 [如果您維護多種語言的標記，](/help/sites-cloud/administering/tags.md#managing-tags-in-different-languages)就可以透過傳入 ISO2 語言代碼作為 `sheet=` 參數的值來存取這些語言。
+
+## 公開其他標籤屬性 {#additional-properties}
+
+依預設，您的分類將包含`tag`和`title`值，如上一個範例中的[所示。](#accessing)您可以設定分類以公開其他標籤屬性。 在此範例中，我們將公開標籤說明。
+
+1. 使用網站主控台選取您建立的分類法。
+1. 點選或按一下工具列中的&#x200B;**屬性**&#x200B;圖示。
+1. 在&#x200B;**其他屬性**&#x200B;區段中，點選或按一下&#x200B;**新增**&#x200B;以新增欄位。
+1. 在新欄位中輸入要公開的JRC屬性名稱。 在此情況下，請輸入`jcr:description`作為標籤描述。
+1. 點選或按一下「**儲存並關閉**」。
+1. 在分類法仍被選取的情況下，點選或按一下工具列中的「快速Publish **」。**
+
+現在[當您存取分類法時，](#accessing)標籤描述（或您選擇公開的任何屬性）包含在JSON中。
+
+```json
+{
+  "total": 3,
+  "offset": 0,
+  "limit": 3,
+  "data": [
+    {
+      "tag": "default:",
+      "title": "Standard Tags",
+      "jcr:description": "These are the standard tags"
+    },
+    {
+      "tag": "do-not-translate",
+      "title": "Do Not Translate",
+      "jcr:description": "Tag to mark pages that should not be translated"
+    },
+    {
+      "tag": "translate",
+      "title": "Translate",
+      "jcr:description": "Tag to mark pages that should be translated"
+    }
+  ],
+  "columns": [
+    "tag",
+    "title",
+    "jcr:description"
+  ],
+  ":type": "sheet"
+}
+```

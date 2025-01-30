@@ -5,9 +5,9 @@ exl-id: 1552a4ce-137a-4208-b7f6-2fc06db8dc39
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 4c4e05ae636701d914b654b7342a4bc2403c56c0
 workflow-type: tm+mt
-source-wordcount: '1896'
+source-wordcount: '1926'
 ht-degree: 0%
 
 ---
@@ -26,6 +26,12 @@ ht-degree: 0%
 >* 來自開發團隊的支援
 >
 >在使用此功能之前，Adobe建議您與開發團隊討論此問題，以定義用於專案的最佳方式。
+
+>[!IMPORTANT]
+>
+>AEM Sites的漸進式網頁應用程式(PWA)功能已淘汰。
+>
+>使用此功能的現有專案將繼續獲得支援，但新專案不應使用此功能。
 
 ## 簡介 {#introduction}
 
