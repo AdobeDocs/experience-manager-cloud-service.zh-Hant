@@ -5,9 +5,9 @@ exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 7098f8aacf42e84f40b266ecae2c6fe28c84b0d3
+source-git-commit: d5461217cfec894a922b2f476aabfc04df45d9d0
 workflow-type: tm+mt
-source-wordcount: '1489'
+source-wordcount: '1488'
 ht-degree: 31%
 
 ---
@@ -92,7 +92,7 @@ Cloud Manager建置流程預設會使用Oracle8 JDK來建置專案，但AEM Clou
 
 ##### 關於某些翻譯功能 {#translation-features}
 
-使用Java 21或Java 17建立時，以下功能可能無法正常運作，Adobe預計在2025年初解決這些問題：
+以下功能在Java 21執行階段部署時可能無法正常運作，Adobe預計可在2025年初解決這些問題：
 
 * 使用人工翻譯時，`XLIFF` （XML本地化交換檔案格式）失敗。
 * `I18n` （國際化）無法正確處理希伯來文(`he`)、印尼(`in`)和意第緒文(`yi`)的語言環境，因為較新Java版本中的語言環境建構函式有所變更。
