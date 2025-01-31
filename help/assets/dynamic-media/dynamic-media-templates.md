@@ -3,9 +3,10 @@ title: 如何管理Dynamic Media範本？
 description: 瞭解如何使用Dynamic Media範本編輯器建立WYSIWYG範本，並包含多個影像和文字圖層，以快速建立橫幅和傳單，並將其用於下游應用程式。
 hide: true
 role: User
-source-git-commit: ada339567716a126d3288246c148c551dff298f4
+exl-id: 07de648e-4ae2-4524-8e05-3cf10bb6006d
+source-git-commit: ea903daafedb420602700f4b1b4a3ad6bd8ede97
 workflow-type: tm+mt
-source-wordcount: '2592'
+source-wordcount: '2590'
 ht-degree: 0%
 
 ---
@@ -55,18 +56,17 @@ Dynamic Media範本的一些主要優點包括：
 1. [編輯或刪除圖層](#edit-or-delete-a-layer)
 1. [引數化圖層](#parameterise-a-layer)
 
-
 ### 建立空白畫布{#create-a-canvas}
 
 執行以下步驟來建立空白畫布：
 
-1. 導覽至Assets檢視，然後按一下左側面板中可用的&#x200B;**Dynamic Media Assets**。
+1. 導覽至Assets檢視，然後按一下左側面板中可用的&#x200B;**[!UICONTROL Dynamic Media Assets]**。
 
    ![](/help/assets/assets/dm-templates/DM-Assets1.png)
 
-1. 按一下&#x200B;**「建立範本**」，將範本儲存在Dynamic Media Assets下，或導覽至資料夾，然後按一下&#x200B;**「建立範本**」，將範本儲存在該資料夾中。 **新範本**對話方塊隨即顯示。
+1. 按一下&#x200B;**[!UICONTROL 「建立範本]**」，將範本儲存在Dynamic Media Assets下，或導覽至資料夾，然後按一下&#x200B;**[!UICONTROL 「建立範本]**」，將範本儲存在該資料夾中。 **[!UICONTROL 新範本]**對話方塊隨即顯示。
    ![](/help/assets/assets/dm-templates/new-template.png)
-若要[在&#x200B;**Dynamic Media Assets**&#x200B;下建立資料夾](/help/assets/add-delete-assets-view.md)，請在&#x200B;**Assets**&#x200B;下建立資料夾。 **Assets**&#x200B;下的資料夾樹狀結構會復寫至&#x200B;**Dynamic Media Assets**&#x200B;下。
+若要[在&#x200B;**[!UICONTROL Dynamic Media Assets]**&#x200B;下建立資料夾](/help/assets/add-delete-assets-view.md)，請在&#x200B;**[!UICONTROL Assets]**&#x200B;下建立資料夾。 **[!UICONTROL Assets]**&#x200B;下的資料夾樹狀結構會復寫至&#x200B;**[!UICONTROL Dynamic Media Assets]**&#x200B;下。
 1. 指定範本名稱、定義畫布寬度和高度，然後按一下[建立]。**** 空白畫布顯示，兩側都有選單選項以用於建立範本。 將游標停留在選單選項上可檢視其工具提示。
    ![](/help/assets/assets/dm-templates/blank-canvas-page.png)
 
@@ -91,7 +91,7 @@ Dynamic Media範本的一些主要優點包括：
 * ![](/help/assets/assets/dm-templates/zoomout.svg)：按一下以縮小畫布或按&#x200B;**Ctrl** + **-** (Windows)或&#x200B;**Cmd** + **-** (Mac)。
 * 如果沒有編輯文字或屬性，請按&#x200B;**退格鍵**&#x200B;或&#x200B;**刪除**&#x200B;刪除選取的圖層。
 
-在畫布圖層上按一下![](/help/assets/assets/dm-templates/show-layers-list.svg)和更多選項(![](/help/assets/assets/dm-templates/three-dots.svg))，在建立範本時隨時編輯畫布維度。
+在畫布圖層上按一下![](/help/assets/assets/dm-templates/show-layers-list.svg) **>其他**&#x200B;個選項(![](/help/assets/assets/dm-templates/three-dots.svg))，即可在建立範本時隨時編輯畫布維度。
 ![](/help/assets/assets/dm-templates/edit-canvas1.png)
 
 >[!NOTE]
@@ -104,7 +104,7 @@ Dynamic Media範本的一些主要優點包括：
 
 1. 按一下![](/help/assets/assets/dm-templates/add-image.svg)以顯示[資產選擇器](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector)面板。 面板會顯示AEM Assets執行個體中同步至Dynamic Media的影像。
 1. 瀏覽面板或使用搜尋列中的關鍵字來尋找特定影像。
-1. 將影像拖放到畫布上以使用。 請參閱[屬性面板](#4)，以調整畫布上的圖層大小或重新定點陣圖層。
+1. 將影像拖放到畫布上以使用。 請參閱[**[!UICONTROL 屬性面板]**](#reposition-resize-delete-a-layer)，以調整畫布上的圖層大小或重新定點陣圖層。
    ![](/help/assets/assets/dm-templates/add-image-to-canvas.png)
 
 ### 新增文字圖層至畫布{#add-text-to-the-canvas}
@@ -113,10 +113,10 @@ Dynamic Media範本的一些主要優點包括：
 
 1. 按一下![](/help/assets/assets/dm-templates/add-text.svg)將文字圖層新增至畫布並開啟「屬性」面板。
 1. 選取圖層並按一下文字進行更新。
-1. 啟用「屬性」面板中的&#x200B;**智慧型文字調整大小**，自動調整文字長度和字型大小，以最佳方式符合指定的區域。
+1. 啟用「屬性」面板中的&#x200B;**[!UICONTROL 智慧型文字調整大小]**，自動調整文字長度和字型大小，以最佳方式符合指定的區域。
    ![](/help/assets/assets/dm-templates/add-text-layer.png)
 
-請參閱[屬性面板](#4)來重新定位、調整大小、旋轉或刪除圖層。 在面板的&#x200B;**文字**&#x200B;區段下的個別欄位中變更文字的值，將文字格式設定為您所需的字型、大小、顏色、樣式、對齊方式（在圖層中）。
+請參閱[**[!UICONTROL 屬性面板]**](#reposition-resize-delete-a-layer)來重新定位、調整大小、旋轉或刪除圖層。 在面板的&#x200B;**[!UICONTROL 文字]**&#x200B;區段下的個別欄位中變更文字的值，將文字格式設定為您所需的字型、大小、顏色、樣式、對齊方式（在圖層中）。
 
 >[!NOTE]
 >
@@ -128,8 +128,8 @@ Dynamic Media範本的一些主要優點包括：
 
 1. 按一下「![](/help/assets/assets/dm-templates/show-layers-list.svg)」，然後在畫布上或從「圖層」清單中選取圖層。
 1. 按一下&#x200B;**更多選項** (![](/help/assets/assets/dm-templates/three-dots.svg))以編輯或刪除圖層。
-1. 按一下&#x200B;**刪除**&#x200B;以刪除圖層。
-1. 按一下「**編輯**」以使用「[屬性」面板](#4)編輯圖層。
+1. 按一下&#x200B;**[!UICONTROL 刪除]**&#x200B;以刪除圖層。
+1. 按一下「**[!UICONTROL 編輯]**」以使用「[**[!UICONTROL 屬性面板]**](#reposition-resize-delete-a-layer)」編輯圖層。
    ![](/help/assets/assets/dm-templates/edit-delete-layer.png)
 
 ### 屬性面板{#properties-panel}
@@ -144,7 +144,7 @@ Dynamic Media範本的一些主要優點包括：
 ![](/help/assets/assets/dm-templates/properties-panel.png)
 
 從圖層的屬性面板中，選取畫布上的另一個圖層以導覽至其屬性面板。
-<a id="4"></a>
+
 
 #### 重新定位、調整大小、旋轉或刪除圖層{#reposition-resize-delete-a-layer}
 
@@ -153,27 +153,27 @@ Dynamic Media範本的一些主要優點包括：
 * **重新定點陣圖層：**&#x200B;拖曳圖層以將它移動到畫布上的任何位置。 此動作會更新屬性面板中的X和Y值。
 * **調整圖層大小：**&#x200B;選取圖層並拖曳其邊緣控點以調整其大小。 此動作會更新屬性面板中的W （寬度）和H （高度）值。
 * **旋轉圖層：**&#x200B;拖曳垂直放置在圖層上方的方形控點，使其繞其中心旋轉。 這個動作會更新屬性面板中的角度值。
-* **刪除圖層：**&#x200B;按&#x200B;**退格鍵**&#x200B;或&#x200B;**刪除**，然後按一下&#x200B;**確認**&#x200B;刪除選取的圖層。
+* **刪除圖層：**&#x200B;按&#x200B;**退格鍵**&#x200B;或&#x200B;**刪除**，然後按一下&#x200B;**[!UICONTROL 確認]**&#x200B;刪除選取的圖層。
 
 #### 文字格式選項{#text-formatting-options-on-properties-panel}
 
-在面板的&#x200B;**文字**&#x200B;區段下的個別欄位中變更文字的值，將文字格式設定為您所需的字型、大小、顏色、樣式、對齊方式（在圖層中）。
+在面板的&#x200B;**[!UICONTROL 文字]**&#x200B;區段下的個別欄位中變更文字的值，將文字格式設定為您所需的字型、大小、顏色、樣式、對齊方式（在圖層中）。
 
-**智慧型文字調整大小：**&#x200B;請確定包含&#x200B;**智慧型文字調整大小** ([Copyfitting](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/text-formatting/r-copy-fitting))，以最佳方式調整字型大小和長度，讓任何文字元合指定區域。 此功能可防止文字溢位，或將文字底部的額外空格縮到最少。
+**[!UICONTROL 智慧型文字調整大小]**&#x200B;請確定包含&#x200B;**[!UICONTROL 智慧型文字調整大小]** ([Copyfitting](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/text-formatting/r-copy-fitting))以最佳方式調整字型大小和長度，讓任何文字元合指定區域。 此功能可防止文字溢位，或將文字底部的額外空格縮到最少。
 ![](/help/assets/assets/dm-templates/smart-text-resize.png)
 
 ### 引數化圖層 {#parameterise-a-layer}
 
 建立包含多圖層影像和文字的範本後，將選取的圖層引數化。 將圖層或其屬性引數化後，它會取得索引鍵/值組（也稱為引數）。 此引數可包含在範本URL中，以即時更新圖層的位置、大小或內容，從而即時自訂範本。
 
-若要引數化圖層： <a id="1"></a>
+欲引數化圖層：
 
-1. 按一下![](/help/assets/assets/dm-templates/show-layers-list.svg)，選取圖層並按一下&#x200B;**引數**。 **引數**&#x200B;面板隨即顯示。
-1. 切換&#x200B;**包含引數**&#x200B;以引數化屬性。 請參閱[這個](#parameterisation-options-or-allowed-parameters)以瞭解引數化後的屬性行為。
+1. 按一下![](/help/assets/assets/dm-templates/show-layers-list.svg)，選取圖層並按一下&#x200B;**[!UICONTROL 引數]**。 **[!UICONTROL 引數]**&#x200B;面板隨即顯示。
+1. 切換&#x200B;**[!UICONTROL 包含引數]**&#x200B;以引數化屬性。 請參閱[這個](#parameterisation-options-or-allowed-parameters)以瞭解引數化後的屬性行為。
 1. **選擇性：**&#x200B;重新命名引數名稱。 引數名稱具有圖層名稱及尾碼。 對於選取的圖層，其所有引數化屬性會共用相同的圖層名稱，後面跟著不同的尾碼。 依照語意命名慣例重新命名圖層名稱，這樣當您在URL中包含引數時，引數名稱就會自行說明圖層的內容或其用途。
-1. 按一下「**儲存**」。
+1. 按一下「**[!UICONTROL 儲存]**」。
    ![](/help/assets/assets/dm-templates/parameterise-a-layer.png)
-若要在影像和文字圖層的「引數」面板之間切換，請選取畫布上的圖層，然後按一下**引數**。
+若要在影像和文字圖層的「引數」面板之間切換，請選取畫布上的圖層，然後按一下**[!UICONTROL 引數]**。
 
 #### 引數面板選項 {#parameterisation-options-or-allowed-parameters}
 
@@ -203,32 +203,32 @@ Dynamic Media範本的一些主要優點包括：
 
 請依照下列步驟，為多個圖層的隱藏引數(![](/help/assets/assets/dm-templates/Visibility-icon.svg))指定相同的名稱，讓您同時隱藏或顯示它們。
 
-1. 導覽至圖層的[引數面板](#1)。
-1. 若之前未設定引數，請切換&#x200B;**隱藏**&#x200B;引數。
+1. 導覽至圖層的[**[!UICONTROL 屬性面板]**](#parameterise-a-layer)。
+1. 若之前未設定引數，請切換&#x200B;**[!UICONTROL 隱藏]**&#x200B;引數。
 1. **選擇性：**&#x200B;重新命名Hide引數。
 1. 複製隱藏引數名稱。
-1. 從畫布中選取其他圖層的「引數」面板，然後切換其&#x200B;**隱藏**&#x200B;引數（如果未設定引數），即可移至這些圖層。
-1. 以複製名稱取代其&#x200B;**隱藏引數**&#x200B;名稱。
-1. 按一下&#x200B;**儲存**&#x200B;將圖層分組。
-1. 在[預覽和Publish](#2)區段中執行步驟3然後執行步驟4，以檢視您的變更。
+1. 從畫布中選取其他圖層的「引數」面板，然後切換其&#x200B;**[!UICONTROL 隱藏]**&#x200B;引數（如果未設定引數），即可移至這些圖層。
+1. 以複製名稱取代其&#x200B;**[!UICONTROL 隱藏引數]**&#x200B;名稱。
+1. 按一下&#x200B;**[!UICONTROL 儲存]**&#x200B;將圖層分組。
+1. 在[**[!UICONTROL 預覽和Publish]**](#preview-and-publish-template-and-copy-template-deliver-url)區段中執行步驟3然後執行步驟4，以檢視您的變更。
 
 ## 預覽並發佈範本以複製傳遞URL{#preview-and-publish-template-and-copy-template-deliver-url}
 
 執行以下步驟來預覽和發佈範本，並複製傳送URL：
 
-1. 在畫布頁面上，按一下&#x200B;**預覽**。 您也可以導覽至&#x200B;**Assets檢視> Dynamic Media Assets >**&#x200B;尋找並選取您的範本&#x200B;**>**&#x200B;按一下&#x200B;**編輯範本>**&#x200B;按一下&#x200B;**預覽**。 預覽頁面會顯示範本、其引數（引數化的圖層和屬性）、發佈狀態以及&#x200B;**Publish**&#x200B;選項。<a id="3"></a>
-1. 從&#x200B;**範本引數**&#x200B;面板中選取引數，以編輯其值，並立即更新預覽中對應範本圖層的內容、大小、位置或文字格式。 例如：
+1. 在畫布頁面上，按一下&#x200B;**[!UICONTROL 預覽]**。 您也可以瀏覽至&#x200B;**[!UICONTROL Assets檢視]** **>** **[!UICONTROL Dynamic Media Assets]** **>**&#x200B;尋找並選取您的範本&#x200B;**>**&#x200B;按一下&#x200B;**[!UICONTROL 編輯範本]** **>**&#x200B;按一下&#x200B;**[!UICONTROL 預覽]**。 預覽頁面會顯示範本、其引數（引數化的圖層和屬性）、發佈狀態以及&#x200B;**[!UICONTROL Publish]**&#x200B;選項。
+1. 從&#x200B;**[!UICONTROL 範本引數]**&#x200B;面板中選取引數，以編輯其值，並立即更新預覽中對應範本圖層的內容、大小、位置或文字格式。 例如：
    1. 選取文字圖層並編輯其文字，或
-   1. 選取影像層，按一下![](/help/assets/assets/dm-templates/add-image.svg)，從資產選擇器選取影像，然後按一下&#x200B;**重新整理**。
+   1. 選取影像層，按一下![](/help/assets/assets/dm-templates/add-image.svg)，從資產選擇器選取影像，然後按一下&#x200B;**[!UICONTROL 重新整理]**。
 
-   範本會立即更新，顯示編輯過的文字，並將先前的影像取代為新影像。 此外，影像引數值會反映新的影像路徑。 同樣地，您可以調整圖層的值來調整其大小，變更會即時套用至範本。<a id="2"></a>
+   範本會立即更新，顯示編輯過的文字，並將先前的影像取代為新影像。 此外，影像引數值會反映新的影像路徑。 同樣地，您可以調整圖層的值來調整其大小，變更會即時套用至範本。
 1. 從清單中選取[群組圖層](#group-layers)的隱藏引數，以便在範本中顯示或隱藏它們。
-1. **選擇性：**&#x200B;將&#x200B;**隱藏引數**&#x200B;值在0到1之間變更，然後按一下&#x200B;**重新整理**&#x200B;檢視變更。 具有相同隱藏引數的圖層會一起隱藏或顯示。 同樣地，您可以從URL控制圖層的可見度。
+1. **選擇性：**&#x200B;將&#x200B;**[!UICONTROL 隱藏]**&#x200B;引數值變更為0到1，然後按一下&#x200B;**[!UICONTROL 重新整理]**&#x200B;檢視變更。 具有相同隱藏引數的圖層會一起隱藏或顯示。 同樣地，您可以從URL控制圖層的可見度。
 
    ![](/help/assets/assets/dm-templates-publish-status.png)
-您也可以切換**包含所有引數**以編輯所有顯示的引數值，並在範本預覽中檢視更新。
+您也可以切換**[!UICONTROL 包含所有引數]**以編輯所有顯示的引數值，並在範本預覽中檢視更新。
    <br>
-1. 若要在預覽頁面上發佈範本，請按一下&#x200B;**Publish**&#x200B;並確認發佈。 Publish完成訊息隨即顯示，且發佈狀態會更新為「已發佈」。
+1. 若要在預覽頁面上發佈範本，請按一下&#x200B;**[!UICONTROL Publish]**&#x200B;並確認發佈。 Publish完成訊息隨即顯示，且發佈狀態會更新為「已發佈」。
 
 >[!NOTE]
 >
@@ -236,12 +236,12 @@ Dynamic Media範本的一些主要優點包括：
 
 ### 複製傳遞URL
 
-在&#x200B;**預覽**&#x200B;頁面上選取的引數會成為範本URL中的URL引數。
+在&#x200B;**[!UICONTROL 預覽]**&#x200B;頁面上選取的引數會成為範本URL中的URL引數。
 
 若要複製預覽中顯示的已發佈範本的URL：
 
-1. 按一下&#x200B;**複製URL**。 **複製URL**&#x200B;對話方塊隨即顯示。 選取並複製顯示的URL。 請注意，URL中的第一個引數在問號&#x200B;**(？)之後開始**&#x200B;和索引鍵值配對的開頭為&#x200B;**$**，結尾為&#x200B;**&amp;**。 金鑰和值由等號&#x200B;**(=)**&#x200B;分隔，金鑰在左側，值在右側。
-1. 將此URL貼到瀏覽器標籤中，即可檢視您的即時範本。 直接在URL中更新所需引數的值（索引鍵值），即時自訂範本，如&#x200B;**預覽和Publish**&#x200B;區段的[步驟2](#3)所示。
+1. 按一下&#x200B;**[!UICONTROL 複製URL]**。 **[!UICONTROL 複製URL]**&#x200B;對話方塊隨即顯示。 選取並複製顯示的URL。 請注意，URL中的第一個引數在問號&#x200B;**(？)之後開始**&#x200B;和索引鍵值配對的開頭為&#x200B;**$**，結尾為&#x200B;**&amp;**。 金鑰和值由等號&#x200B;**(=)**&#x200B;分隔，金鑰在左側，值在右側。
+1. 將此URL貼到瀏覽器標籤中，即可檢視您的即時範本。 直接在URL中更新所需引數的值（索引鍵值），即時自訂範本，如&#x200B;**預覽和Publish**&#x200B;區段的[步驟2](#preview-and-publish-template-and-copy-template-deliver-url)所示。
 1. 使用此URL來快速銷售您的產品或服務。 您可以與客戶共用此URL，或將其整合至您的網站或任何下游第三方應用程式，以顯示橫幅並即時更新以反映持續優惠。
 
 瞭解如何在本影片中逐步建立Dynamic Media範本。
@@ -264,10 +264,10 @@ Dynamic Media範本的一些主要優點包括：
 
 請依照下列步驟編輯範本：
 
-1. 在Assets檢視中，按一下&#x200B;**Dynamic Media Assets**。
+1. 在Assets檢視中，按一下&#x200B;**[!UICONTROL Dynamic Media Assets]**。
 2. 導覽至範本位置。
 3. 選取範本。
-4. 按一下&#x200B;**編輯範本**。 範本畫布會在「圖層」面板中顯示範本及其所有圖層的清單。 開始視需要編輯您的範本。
+4. 按一下&#x200B;**[!UICONTROL 編輯範本]**。 範本畫布會在「圖層」面板中顯示範本及其所有圖層的清單。 根據您的需求開始編輯範本。
 
 ## 需要注意的重要事項 {#important-points-to-note}
 
