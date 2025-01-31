@@ -6,10 +6,10 @@ Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: b4ed1039e199f520a1d7b44ae9af11ecdf52f5c3
+source-git-commit: 3bd7b574b34d09b3a205cf72b307d459efc00eab
 workflow-type: tm+mt
-source-wordcount: '1779'
-ht-degree: 30%
+source-wordcount: '1998'
+ht-degree: 26%
 
 ---
 
@@ -109,6 +109,11 @@ WYSIWYG製作提供WYSIWYG介面(通用編輯器和調適型Forms編輯器)，�
 
 ## 其他早期存取創新
 
+### 在最適化Forms中HTML電子郵件範本
+
+最適化Forms可讓您使用HTML電子郵件範本。 HTML電子郵件範本可讓您在提交表單時，傳送豐富、個人化且吸引目光的電子郵件。 這些電子郵件可使用表單資料自訂，並使用各種電子郵件標籤（例如影像和連結）進行強化。 透過Adaptive Forms，您可以上傳包含HTML範本的檔案，或使用純文字編輯器來建立這些範本。
+
+
 ### 由右至左(RTL)語言支援
 
 最適化Forms現在能以由右至左(RTL)語言顯示，提供更具包容性的使用者體驗並方便使用。
@@ -170,6 +175,20 @@ Forms 服務會產生用於資料擷取的互動式 PDF forms。它也可以用�
 * **資料擷取和匯入**：將資料匯入現有 PDF 表單，以及從已填妥的 PDF 表單中擷取資料。支援 XDP 和 XML 資料格式，而匯入至非 XFA PDF forms (又稱為 AcroForms) 可額外支援 FDF 和 XFDF 資料。
 
 * **資料驗證**：根據使用 AEM Forms Designer 建立的範本驗證以 XDP 或 XML 格式提交的資料。
+
+### 檔案產生API
+
+檔案產生API包含選擇性功能，可讓系統直接將產生的PDF上傳至Azure Blob儲存體。 使用檔案產生API直接將PDF上傳到Azure Blob儲存體的一些主要優點包括：
+
+* **與雲端儲存空間緊密整合**：
+直接將產生的PDF上傳到Azure Blob Storage後，就不需要額外的手動或程式化步驟來傳輸檔案、簡化工作流程及提升效率。
+
+* **集中式檔案管理**：
+將PDF儲存在Azure Blob Storage可集中管理檔案，讓您更輕鬆地組織、擷取和管理各種使用案例中產生的檔案。
+
+* **改善安全性**：藉由運用Azure的內建安全性功能，例如靜態加密和角色型存取控制(RBAC)，在儲存期間仍可保護機密檔案。
+
+* **可自訂的儲存路徑**：定義自訂目錄路徑的功能可確保產生的PDF儲存在有條理且特定於應用程式的位置，進而改善檔案管理。
 
 ## 另請參閱
 
