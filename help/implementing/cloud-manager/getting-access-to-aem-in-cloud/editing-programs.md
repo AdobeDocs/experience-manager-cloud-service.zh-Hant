@@ -5,10 +5,10 @@ exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
+source-git-commit: f0cf9fa7da7e89d42ab90dee0e8400b26f004574
 workflow-type: tm+mt
-source-wordcount: '427'
-ht-degree: 45%
+source-wordcount: '420'
+ht-degree: 42%
 
 ---
 
@@ -21,12 +21,12 @@ ht-degree: 45%
 
 * 將 Sites 解決方案新增到有 Assets 現有方案中，反之亦然。
 * 從包含 Sites 和 Assets 的現有計畫中移除 Sites 或 Assets。
-* 將第二個未使用的解決方案權利新增到現有計畫，或作為新計畫。
+* 將未使用的解決方案權利新增到現有計畫或建立新計畫。
 * 刪除沙箱計畫。
 
 ## 權限 {#permissions}
 
-您必須是&#x200B;**業務負責人**&#x200B;角色的成員才能編輯計畫或刪除沙箱計畫以及存取授權儀表板。
+您必須擁有&#x200B;**業務負責人**&#x200B;角色才能編輯計畫、刪除沙箱計畫和存取授權儀表板。
 
 ## 編輯方案 {#editing}
 
@@ -46,7 +46,7 @@ ht-degree: 45%
 
    ![「一般」索引標籤](assets/edit-program-prod1.png)
 
-1. 可用於編輯方案的選項與建立方案時的選項相同。
+1. 可用來編輯程式的選項與用來建立程式的選項相同。
    * 如需個別選項的詳細資訊，請參閱[建立生產計畫](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)和[建立沙箱計畫](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md)。
    * 根據您組織的權益，您的生產計畫可能有[其他選項](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#options)可用。
 
@@ -70,7 +70,7 @@ ht-degree: 45%
 
    ![刪除計畫選項](assets/delete-sandbox1.png)
 
-或者，您可以從Cloud Manager概觀頁面按一下計畫卡上的https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg ，然後選取「**刪除計畫**」。
+或者，您可以從Cloud Manager概觀頁面按一下計畫卡上的![更多圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)，然後選取&#x200B;**刪除計畫**。
 
 ![從計畫卡中刪除沙箱](assets/delete-sandbox2.png)
 

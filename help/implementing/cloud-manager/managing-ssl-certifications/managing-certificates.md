@@ -5,10 +5,10 @@ exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
+source-git-commit: f0cf9fa7da7e89d42ab90dee0e8400b26f004574
 workflow-type: tm+mt
-source-wordcount: '1029'
-ht-degree: 9%
+source-wordcount: '1023'
+ht-degree: 14%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 9%
 
 Cloud Manager會提供程式中所有憑證狀態的概觀。
 
-1. 在[my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)登入Cloud Manager並選取適當的程式。
+1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager，然後選取適當的程式。
 1. 在「**[我的程式](/help/implementing/cloud-manager/navigation.md#my-programs)**」控制台中，選取程式。
 1. 在頁面的左上角，按一下![顯示功能表圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)以顯示側邊功能表。
 1. 在&#x200B;**服務**&#x200B;標題下，按一下![鎖定已關閉圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_LockClosed_18_N.svg) **SSL憑證**。
@@ -42,11 +42,11 @@ Cloud Manager會提供程式中所有憑證狀態的概觀。
 
 **若要更新已過期的客戶管理的SSL憑證：**
 
-1. 在[my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)登入Cloud Manager並選取適當的程式。
+1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager，然後選取適當的程式。
 1. 在「**[我的程式](/help/implementing/cloud-manager/navigation.md#my-programs)**」控制台中，選取程式。
 1. 在頁面的左上角，按一下![顯示功能表圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)以顯示側邊功能表。
 1. 在&#x200B;**服務**&#x200B;標題下，按一下![鎖定已關閉圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_LockClosed_18_N.svg) **SSL憑證**。
-1. 在您要更新的過期客戶管理憑證列中，按一下最右邊的https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg，然後按一下&#x200B;**[檢視並更新]**。
+1. 在您要更新的過期客戶管理憑證列中，按一下最右邊的![更多圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)，然後按一下&#x200B;**檢視和更新**。
 
    ![更新過期的客戶管理的SSL認證](/help/implementing/cloud-manager/assets/ssl/ssl-cert-update.png)
 
@@ -62,7 +62,7 @@ Cloud Manager會提供程式中所有憑證狀態的概觀。
 
 >[!NOTE]
 >
->如果您有兩個以上涵蓋相同SAN網域專案的SAN憑證，若該網域由其中一個憑證涵蓋，且另一個憑證已更新，則後者會針對該網域安裝。
+>如果有兩個或更多SAN憑證涵蓋相同的SAN網域專案，且其中一個憑證已更新，則系統會為網域安裝更新的憑證。
 >
 >如需詳細資訊，請參閱[疑難排解SSL憑證問題](/help/implementing/cloud-manager/managing-ssl-certifications/troubleshoot-ssl-cert.md#wrong-san-cert)。
 
@@ -80,7 +80,7 @@ Cloud Manager會提供程式中所有憑證狀態的概觀。
 
 **若要重新命名Adobe管理的SSL憑證：**
 
-1. 在[my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)登入Cloud Manager並選取適當的程式。
+1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager，然後選取適當的程式。
 
 1. 在「**[我的程式](/help/implementing/cloud-manager/navigation.md#my-programs)**」控制台中，選取程式。
 
@@ -94,7 +94,7 @@ Cloud Manager會提供程式中所有憑證狀態的概觀。
 
 1. 在&#x200B;**重新命名DV憑證**&#x200B;對話方塊的&#x200B;**憑證名稱**&#x200B;文字欄位中，輸入憑證的新名稱。
 
-1. 按一下&#x200B;**重新命名**。
+1. 按一下「**重新命名**」。
 
 
 ## 刪除SSL憑證 {#deleting-an-ssl-certificate}
@@ -109,7 +109,7 @@ Cloud Manager會提供程式中所有憑證狀態的概觀。
 
 **若要刪除SSL憑證：**
 
-1. 在[my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)登入Cloud Manager並選取適當的程式。
+1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager，然後選取適當的程式。
 
 1. 在「**[我的程式](/help/implementing/cloud-manager/navigation.md#my-programs)**」控制台中，選取程式。
 

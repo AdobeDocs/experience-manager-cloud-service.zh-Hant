@@ -5,9 +5,9 @@ exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 8f8662360d23926df91e91881e78dadea33504f0
+source-git-commit: a078d45f81fc7081012ebf24fa8f46dc1a218cd7
 workflow-type: tm+mt
-source-wordcount: '1812'
+source-wordcount: '1818'
 ht-degree: 42%
 
 ---
@@ -49,7 +49,7 @@ Adobe 非常重視應用程式的監控、可用性和效能。AEM as a Cloud Se
 
 1. 在&#x200B;**[我的程式](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;主控台上，按一下您要管理New Relic One使用者的程式。
 
-1. 在計畫總覽頁面的&#x200B;**環境**&#x200B;卡片底部，按一下https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg並選取&#x200B;**啟用New Relic**。
+1. 在計畫總覽頁面的&#x200B;**環境**&#x200B;卡片底部，按一下![更多圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)並選取&#x200B;**啟用New Relic**。
 
    ![管理使用者](assets/newrelic-activate-sub-account.png)
 
@@ -71,7 +71,7 @@ Adobe 非常重視應用程式的監控、可用性和效能。AEM as a Cloud Se
 
 1. 按一下您要為其管理New Relic One使用者的計畫。
 
-1. 在計畫總覽頁面的&#x200B;**環境**&#x200B;卡片底部，按一下https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg並選取&#x200B;**管理使用者**。
+1. 在計畫總覽頁面的&#x200B;**環境**&#x200B;卡片底部，按一下![更多圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)並選取&#x200B;**管理使用者**。
 
    ![管理使用者](assets/newrelic-manage-users.png)
 
@@ -121,7 +121,7 @@ Adobe 非常重視應用程式的監控、可用性和效能。AEM as a Cloud Se
 
 1. 按一下您要存取New Relic One的方案。
 
-1. 在計畫總覽頁面的&#x200B;**環境**&#x200B;卡片底部，按一下https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg並選取&#x200B;**開啟New Relic**。
+1. 在計畫總覽頁面的&#x200B;**環境**&#x200B;卡片底部，按一下![更多圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)並選取&#x200B;**開啟New Relic**。
 
    ![管理使用者](assets/newrelic-access.png)
 
@@ -201,7 +201,7 @@ Adobe 透過 New Relic One 的 Java 外掛程式監視 AEM as a Cloud Service �
 
 * 每個應用程式使用一個授權密鑰。
 * AEM as a Cloud Service環境僅向一個 New Relic One 帳戶報告。
-* New Relic One的完整監控量度和事件會保留三個月。 &lt;！— CQDOC-22238 — 從七天更新至三個月。 >
+* New Relic One的完整監控量度和事件會保留三個月。 &lt;!— CQDOC-22238 — 從七天更新至三個月。 >
 +++
 
 +++**Adobe是否從New Relic One傳送警示通知？** {#alerting-new-relic}

@@ -5,9 +5,9 @@ exl-id: c0771078-ea68-4d0d-8d41-2d9be86408a4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 88b4864da30fbf201dbd5bde1ac17d3be977648f
+source-git-commit: f0cf9fa7da7e89d42ab90dee0e8400b26f004574
 workflow-type: tm+mt
-source-wordcount: '696'
+source-wordcount: '698'
 ht-degree: 42%
 
 ---
@@ -30,7 +30,7 @@ ht-degree: 42%
 
 您可以從 Developer Console 手動休眠您的沙箱計畫。Cloud Manager的任何使用者都可以存取沙箱程式的Developer Console。
 
-**若要手動休眠沙箱程式環境：**
+**手動休眠沙箱計畫環境：**
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織。
 
@@ -60,7 +60,7 @@ ht-degree: 42%
 
 ![要休眠的環境清單](assets/hibernate-1b.png)
 
-## 從Developer Console手動解除沙箱計畫休眠 {#de-hibernation-introduction}
+## 手動從Developer Console解除沙箱計畫休眠 {#de-hibernation-introduction}
 
 您可以從Developer Console手動休眠沙箱計畫。
 
@@ -68,13 +68,13 @@ ht-degree: 42%
 >
 >一個使用者&#x200B;**開發人員**&#x200B;角色可以解除沙箱計畫環境的休眠。
 
-**若要從Developer Console手動解除沙箱方案的休眠：**
+**若要手動從Developer Console解除沙箱方案的休眠：**
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織。
 
 1. 在&#x200B;**[我的程式](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;主控台上，按一下您要解除休眠的程式以顯示其詳細資料。
 
-1. 在&#x200B;**環境**&#x200B;卡上，按一下https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg並按一下&#x200B;**Developer Console**。
+1. 在&#x200B;**環境**&#x200B;卡片上，按一下![更多圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)，然後按一下&#x200B;**Developer Console**。
 
    * 如需 Developer Console 的更多詳細資訊，請參閱[存取 Developer Console ](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console)。
 
