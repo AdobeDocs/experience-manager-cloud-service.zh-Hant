@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 52c3c780802025e0895bacc675ba60e97fdce4c5
+source-git-commit: 190e68ebcd3c2a7ba7b995690c802a04728e6962
 workflow-type: tm+mt
-source-wordcount: '1750'
+source-wordcount: '1749'
 ht-degree: 40%
 
 ---
@@ -78,7 +78,7 @@ Have a look at the January 2025 Release Overview video for a summary of the feat
 
 #### PWA功能 {#pwa-features}
 
-[自2025.1.0版開始的新專案現已棄用AEM Sites的漸進式網頁應用程式(PWA)功能](/help/sites-cloud/authoring/sites-console/enable-pwa.md)。此功能仍受現有專案支援，但不應用於新專案
+[自2025.1.0版開始的新專案已棄用AEM Sites的漸進式網頁應用程式(PWA)功能](/help/sites-cloud/authoring/sites-console/enable-pwa.md)。此功能仍受現有專案支援，但不應用於新專案
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
