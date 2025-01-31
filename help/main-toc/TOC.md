@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的運作方式以及該軟體可以為您做哪些事。
 breadcrumb-title: 使用手冊
 user-guide-title: 'AEM as a Cloud Service '
-source-git-commit: 32cc525d5443f455f1579ef027c08796ffc209e7
+source-git-commit: d6cbfb2b374aba6ce52a8ac7e1af37d687cc13d9
 workflow-type: tm+mt
-source-wordcount: '6003'
+source-wordcount: '6006'
 ht-degree: 99%
 
 ---
@@ -576,6 +576,7 @@ ht-degree: 99%
       + [Experience League 的 Dynamic Media 電子報](/help/assets/dynamic-media/dynamic-media-newsletter.md)
       + [設定 Dynamic Media](/help/assets/dynamic-media/administering-dynamic-media.md)
       + [使用 Dynamic Media](/help/assets/dynamic-media/dynamic-media.md)
+      + [Dynamic Media範本](/help/assets/dynamic-media/dynamic-media-templates.md)
       + [設定 Dynamic Media](/help/assets/dynamic-media/config-dm.md)
       + [選擇性 - 設定 Dynamic Media，一般設定](/help/assets/dynamic-media/dm-general-settings.md)
       + [選擇性 - 設定 Dynamic Media，發佈設定](/help/assets/dynamic-media/dm-publish-settings.md)
