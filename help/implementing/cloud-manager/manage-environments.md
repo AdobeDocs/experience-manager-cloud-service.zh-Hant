@@ -5,9 +5,9 @@ exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: a078d45f81fc7081012ebf24fa8f46dc1a218cd7
+source-git-commit: 1683d53491e06ebe2dfcc96184ce251539ecf732
 workflow-type: tm+mt
-source-wordcount: '2367'
+source-wordcount: '2374'
 ht-degree: 44%
 
 ---
@@ -194,9 +194,9 @@ Cloud Manager 為每個 AEM as a Cloud Service 環境提供預覽服務 (作為�
 
 您也可以從「**環境**」標籤存取相同的資訊。
 
-1. 在「**概觀**」頁面上，選取「**環境**」標籤。
+1. 在&#x200B;**總覽**&#x200B;頁面上，按一下![資料圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **環境**。
 
-1. 在&#x200B;**環境**&#x200B;索引標籤上，在左側功能表中選取您要查詢的環境。
+1. 在&#x200B;**環境**&#x200B;頁面上，在左側功能表中選取您要查詢的環境。
 
 1. 選取環境後：
 
@@ -306,7 +306,7 @@ Cloud Manager 為每個 AEM as a Cloud Service 環境提供預覽服務 (作為�
 
      ![本機登入](assets/environ-login-locally.png)
 
-   * 從左側面板，按一下&#x200B;**環境**。 在&#x200B;**環境**&#x200B;頁面上，按一下![更多圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)，然後按一下&#x200B;**本機登入**。
+   * 從左側面板，按一下![資料圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **環境**。 在&#x200B;**環境**&#x200B;頁面上，按一下![更多圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)，然後按一下&#x200B;**本機登入**。
 
      ![從環境索引標籤本機登入](assets/environ-login-locally-2.png)
 
@@ -322,7 +322,7 @@ Sites計畫的Cloud Manager支援發佈和預覽服務的自訂網域名稱。
 
 Cloud Manager支援IP允許清單，用於Sites計畫的作者、發佈和預覽服務。
 
-若要管理IP允許清單，請導覽至您程式的&#x200B;**總覽**&#x200B;頁面的&#x200B;**環境**&#x200B;標籤。 按一下單個環境，以便您可以管理其詳細資訊。
+若要管理IP允許清單，請瀏覽至您程式的&#x200B;**總覽**&#x200B;頁面的![資料圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **環境**&#x200B;頁面。 按一下單個環境，以便您可以管理其詳細資訊。
 
 ### 套用IP允許清單 {#apply-ip-allow-list}
 

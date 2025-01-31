@@ -5,10 +5,10 @@ exl-id: 6cab8cf2-22c0-4f4b-9c54-a1425e74ddd0
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f64a551bc18b53d0026736ece2a44e48cd0cfb4c
+source-git-commit: 1683d53491e06ebe2dfcc96184ce251539ecf732
 workflow-type: tm+mt
-source-wordcount: '791'
-ht-degree: 19%
+source-wordcount: '795'
+ht-degree: 20%
 
 ---
 
@@ -33,11 +33,11 @@ Cloud Manager可讓您編輯、更新、取代、驗證和刪除自訂網域名�
 
 1. 在頁面的左上角，按一下![顯示功能表圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)以顯示左側功能表。
 
-1. 在&#x200B;**服務**&#x200B;標題下，按一下&#x200B;**CDN組態**。
+1. 在&#x200B;**服務**&#x200B;標題下，按一下![社交網路圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SocialNetwork_18_N.svg) **網域對應**。
 
-1. 在&#x200B;**CDN設定**&#x200B;頁面上，在您要編輯其CDN的資料列結尾按一下![顯示功能表圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)。
+1. 在&#x200B;**網域對應**&#x200B;頁面上，在您要編輯其CDN的資料列結尾按一下![顯示功能表圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)。
 
-1. 按一下&#x200B;**編輯**。
+1. 按一下「**編輯**」。
 
 1. 在&#x200B;**編輯CDN組態**&#x200B;對話方塊中，執行下列動作：
 
@@ -60,7 +60,7 @@ Cloud Manager可讓您編輯、更新、取代、驗證和刪除自訂網域名�
 
 另請參閱[新增自訂網域名稱](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)。
 
-1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織和方案。
+1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager，並選取適當的組織和方案。
 
 1. 從&#x200B;**總覽**&#x200B;畫面瀏覽至&#x200B;**網域設定**&#x200B;頁面。
 
@@ -91,7 +91,7 @@ Cloud Manager可讓您編輯、更新、取代、驗證和刪除自訂網域名�
 
 ### 從所有關聯環境刪除自訂網域名稱 {#delete-cdn-all}
 
-1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織和方案。
+1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager，並選取適當的組織和方案。
 
 1. 從&#x200B;**總覽**&#x200B;畫面瀏覽至&#x200B;**網域設定**&#x200B;頁面。
 

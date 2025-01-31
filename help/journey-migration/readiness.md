@@ -4,9 +4,9 @@ description: 瞭解您必須執行的步驟，以便確定AEM安裝已準備好�
 exl-id: 3bc8c037-d82a-4455-bce6-3c80c359a4ae
 feature: Migration
 role: Admin
-source-git-commit: 913b1beceb974243f0aa7486ddd195998d5e9439
+source-git-commit: 1683d53491e06ebe2dfcc96184ce251539ecf732
 workflow-type: tm+mt
-source-wordcount: '1913'
+source-wordcount: '1915'
 ht-degree: 5%
 
 ---
@@ -196,7 +196,7 @@ Adobe建議您參閱[已棄用的功能](https://experienceleague.adobe.com/docs
 * 詳細說明特定AEM安裝功能集的檔案
 * AEM自訂設定和程式碼的詳細資料
 * 生產Dispatcher設定
-* CDN設定（如果有的話）
+* 網域對應（CDN設定） （如果有的話）
 
 **將報告社交化**
 
@@ -212,7 +212,7 @@ Best Practices Analyzer報表完成之後，請與相關團隊共用，以便您
 
 請參閱[開發KPI](https://experienceleague.adobe.com/welcome/aem/part6.html)，以便瞭解如何為您的企業目標選擇正確的KPI。
 
-## 下一步 {#what-is-next}
+## 後續步驟 {#what-is-next}
 
 一旦您瞭解移轉至AEM as a Cloud Service所需的變更範圍，實際執行移轉之前，應該[讓您的程式碼和內容雲端就緒](/help/journey-migration/implementation.md)。
 

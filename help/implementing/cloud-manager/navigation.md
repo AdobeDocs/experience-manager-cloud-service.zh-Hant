@@ -5,10 +5,10 @@ exl-id: 3f3d7631-2bc9-440b-9888-50f6529bcd42
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f24b2672431ecf7b7b0ed11b6dc9b09344946239
+source-git-commit: 1683d53491e06ebe2dfcc96184ce251539ecf732
 workflow-type: tm+mt
-source-wordcount: '1659'
-ht-degree: 39%
+source-wordcount: '1665'
+ht-degree: 38%
 
 ---
 
@@ -133,7 +133,7 @@ Cloud Manager UI 主要由兩個圖形介面組成：
 
 * ![WAF-DDOS徽章](assets/waf-ddos-protection.png) [WAF-DDOS保護](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#security)
 
-* [99.99% SLA （服務等級協定）](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#sla)
+* [99.99% SLA (Service level agreement)](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#sla)
 
 透過資訊圖示，還可以快速存取有關方案的其他資訊 (在清單檢視中很實用)。
 
@@ -215,7 +215,7 @@ Cloud Manager UI 主要由兩個圖形介面組成：
 * ![網頁圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_WebPages_18_N.svg) [Edge Delivery網站](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md) — 管理Edge Delivery網站
 * ![設定圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg) [網域設定](/help/implementing/cloud-manager/custom-domain-names/introduction.md) — 管理程式的自訂網域名稱
 * ![鎖定已關閉圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_LockClosed_18_N.svg) [SSL憑證](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md) — 管理程式的SSL憑證
-* ![社交網路圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SocialNetwork_18_N.svg) [CDN設定](/help/implementing/cloud-manager/custom-domain-names/introduction.md) — 管理CDN設定
+* ![社交網路圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SocialNetwork_18_N.svg) [網域對應](/help/implementing/cloud-manager/custom-domain-names/introduction.md) — 管理網域對應
 * ![工作清單圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_TaskList_18_N.svg) [IP允許清單](/help/implementing/cloud-manager/ip-allow-lists/introduction.md) — 為特定IP位址定義允許清單
 * ![方塊圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Box_18_N.svg) [內容集](/help/implementing/developing/tools/content-copy.md) — 為複製目的建立的內容集
 * ![歷程圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_History_18_N.svg) [複製內容活動](/help/implementing/developing/tools/content-copy.md) — 內容複製活動
@@ -243,7 +243,7 @@ Cloud Manager UI 主要由兩個圖形介面組成：
 
 「**環境**」卡片為您提供環境的概觀和快速動作的連結。
 
-「**環境**」卡片只會列出三個環境。按一下「**全部顯示**」按鈕即可查看方案的所有環境。
+「**環境**」卡片只會列出三個環境。按一下![工作流程圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg) **全部顯示**&#x200B;以檢視計畫的所有環境。
 
 另請參閱[管理環境](/help/implementing/cloud-manager/manage-environments.md)。
 
@@ -251,7 +251,7 @@ Cloud Manager UI 主要由兩個圖形介面組成：
 
 「**管道**」卡片為您提供管道的概觀和快速動作的連結。
 
-「**管道**」卡片只列出了三個管道。按一下「**全部顯示**」按鈕即可查看方案的所有管道。
+「**管道**」卡片只列出了三個管道。按一下![工作流程圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg) **全部顯示**&#x200B;以檢視方案的所有管道。
 
 如需有關如何管理管道的詳細資訊，另請參閱[管理管道](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md)。
 
