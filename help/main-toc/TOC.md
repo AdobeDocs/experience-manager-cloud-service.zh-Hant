@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的運作方式以及該軟體可以為您做哪些事。
 breadcrumb-title: 使用手冊
 user-guide-title: 'AEM as a Cloud Service '
-source-git-commit: d6cbfb2b374aba6ce52a8ac7e1af37d687cc13d9
+source-git-commit: c27b8e413c060de601a72a669d86c4add2a4167d
 workflow-type: tm+mt
-source-wordcount: '6006'
+source-wordcount: '6020'
 ht-degree: 99%
 
 ---
@@ -708,6 +708,7 @@ ht-degree: 99%
       + [從  [!DNL AEM 6.5 Forms]  或更早版本移轉至  [!DNL AEM Forms] as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
       + [群組與權限](/help/forms/forms-groups-privileges-tasks.md)
       + [匯入、匯出及組織最適化表單、PDF 表單和其他資產](/help/forms/import-export-forms-templates.md)
+      + [使用「管理發布」的Publish最適化Forms](/help/forms/manage-publication.md)
    + 快速入門 {#getting-started-forms}
       + [使用案例和設定開發環境](/help/forms/create-adaptive-form-tutorial-getting-started.md)
       + [建立貸款申請表](/help/forms/create-adaptive-form-tutorial.md)
@@ -773,7 +774,7 @@ ht-degree: 99%
             + [比較最適化表單](/help/forms/compare-forms.md)
             + [建立自訂提交動作](/help/forms/custom-submit-action-for-adaptive-forms-based-on-core-components.md)
             + [使用遷移公用程式工具將基礎元件型最適化表單轉換為核心元件型表單](/help/forms/migration-utility-tool-for-af-core-components.md)
-            + [最適化Forms中的電子郵件範本](/help/forms/html-email-templates-in-adaptive-forms.md)
+            + [最適化表單中的電子郵件範本](/help/forms/html-email-templates-in-adaptive-forms.md)
             + 以核心元件為主之最適化表單的規則編輯器簡介{#rule-editor-core-components}
                + [以核心元件為主之最適化表單的規則編輯器簡介](/help/forms/rule-editor-core-components.md)
                + [以核心元件為主之最適化表單的規則編輯器使用者介面](/help/forms/rule-editor-core-components-user-interface.md)
@@ -1021,7 +1022,9 @@ ht-degree: 99%
          + [提交表單後顯示自訂感謝訊息](/help/edge/docs/forms/thank-you-page-form.md)
          + [使用表單提交服務](/help/forms/forms-submission-service.md)
       + WYSIWYG {#universal-editor}
-         + [概述 — FormsEdge Delivery Services適用的通用編輯器](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
+         + [概觀：Edge Delivery Services for Forms 的通用編輯器](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
+         + [快速入門](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
+         + [使用規則編輯器新增規則到](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
       + 功能 {#advanced-features-edge-delivery-services-forms}
          + [使用表單片段](/help/edge/docs/forms/form-fragments.md)
          + [將可重複區段新增到表單](/help/edge/docs/forms/repeatable-forms.md)
