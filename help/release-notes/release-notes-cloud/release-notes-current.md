@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 3b7a77fd77226f79510b61f9bb20ad9477b6654e
+source-git-commit: 52c3c780802025e0895bacc675ba60e97fdce4c5
 workflow-type: tm+mt
-source-wordcount: '1812'
-ht-degree: 42%
+source-wordcount: '1750'
+ht-degree: 40%
 
 ---
 
@@ -150,12 +150,6 @@ AEM Forms 搶先體驗計劃為您提供獨一無二的機會，獲得先進創�
 #### 增強型雲端儲存空間支援：直接PDF上傳至Azure Blob儲存空間
 
 AEM Forms Document Generation API現在支援直接將產生的PDF檔案上傳到Azure Blob儲存體。 此增強功能可簡化儲存和擷取，提高效率並與雲端工作流程整合。
-
-* **[檔案附件的 Base64 編碼字串支援](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment#basic-tab)**：以核心元件為基礎之最適化表單中的檔案附件元件，現在包含一個將附件作為 Base64 編碼字串提交的選項。
-
->[!IMPORTANT]
->
-> 有興趣加入任何 Forms 創新的搶先體驗計劃？從您的官方地址發送電子郵件至 [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)，並附上您感興趣的功能清單。## CIF 附加元件 {#cloud-services-cif}
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 

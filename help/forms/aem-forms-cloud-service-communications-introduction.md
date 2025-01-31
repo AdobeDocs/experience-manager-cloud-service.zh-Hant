@@ -5,10 +5,10 @@ Keywords: How to generate document?, Generate PDF document, Manipulation PDF doc
 feature: Adaptive Forms, APIs & Integrations
 role: Admin, Developer, User
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: 13c1febf55c9b15eab49d356fc1ba3f3d91ad055
+source-git-commit: 52c3c780802025e0895bacc675ba60e97fdce4c5
 workflow-type: tm+mt
-source-wordcount: '2374'
-ht-degree: 38%
+source-wordcount: '2435'
+ht-degree: 37%
 
 ---
 
@@ -62,9 +62,16 @@ A credit card statement can be created using Communications APIs. This sample st
 ![建立 PDF 文件](assets/outPutPDF_popup.png)
 圖：建立 PDF 文件的典型工作流程
 
+檔案產生API會傳回產生的PDF檔案。 您也可以選擇將產生的PDF上傳至Azure Blob儲存體。
+
+<span class="preview">使用Document Generation API將產生的PDF上傳到Azure Blob Storage功能在[早期採用者計畫](/help/forms/early-access-ea-features.md)之下。 您可以從您的官方電子郵件ID寫信到aem-forms-ea@adobe.com ，以加入率先採用者計畫並請求存取該功能。</span>
+
+
 ### 建立 PostScript (PS)、印表機命令語言 (PCL)、Zebra 列印語言 (ZPL) 文件 {#create-PS-PCL-ZPL-documents}
 
 您可以使用檔案產生API來建立以XDP表單設計或PDF檔案為基礎的PostScript (PS)、印表機命令語言(PCL)和Zebra列印語言(ZPL)檔案。 這些 API 可協助將表單設計與表單資料合併以產生文件。您可以將文件儲存到檔案和開發自訂流程將其傳送到印表機。
+
+
 
 <!-- ### Processing batch data to create multiple documents
 
