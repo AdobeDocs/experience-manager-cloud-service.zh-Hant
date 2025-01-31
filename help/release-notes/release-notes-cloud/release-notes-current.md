@@ -141,7 +141,7 @@ AEM Forms 搶先體驗計劃為您提供獨一無二的機會，獲得先進創�
 
 本發行說明列出目前版本提供的創新功能。如需搶先體驗計劃提供之創新的完整清單，請參閱 [AEM Forms 搶先體驗計劃文件](/help/forms/early-access-ea-features.md)。
 
-#### 在最適化Forms中[HTML電子郵件範本](/help/forms/html-email-templates-in-adaptive-forms.md)
+#### [在最適化Forms中HTML電子郵件範本](/help/forms/html-email-templates-in-adaptive-forms.md)
 
 最適化Forms可讓您使用HTML電子郵件範本。 HTML電子郵件範本可讓您在提交表單時，傳送豐富、個人化且吸引目光的電子郵件。 這些電子郵件可使用表單資料自訂，並使用各種電子郵件標籤（例如影像和連結）進行強化。 透過Adaptive Forms，您可以上傳包含HTML範本的檔案，或使用純文字編輯器來建立這些範本。
 
