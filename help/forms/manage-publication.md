@@ -6,23 +6,26 @@ feature: Adaptive Forms
 feature-set: Experience Manager Assets,Experience Manager Sites,Experience Manager, Experience Manager Forms, Experience Manager Cloud Manager
 role: User, Developer
 level: Intermediate
-source-git-commit: d3c089dcca80255f53c0888d46ee1b4b6246741e
+exl-id: 6ade40f1-bad5-4f5e-aa0e-84b7c6a82e02
+source-git-commit: 64f4e62201c590e5da2f3b1f7e570a018dc8135c
 workflow-type: tm+mt
-source-wordcount: '970'
-ht-degree: 0%
+source-wordcount: '945'
+ht-degree: 1%
 
 ---
 
-
 # 在Experience Manager Forms中管&#x200B;理發佈
 
-作為Adobe Experience Manager Forms管理員，您可以從作者執行個體發佈表單至Experience Manager Forms。 您可以排程在稍後的日期或時間發佈表單或資料夾。 發佈後，使用者即可存取及填寫表單。
+身為Adobe Experience Manager (AEM) Forms管理員，您可以從編寫執行個體發佈表單至Experience Manager Forms。 您也可以選擇將表單或資料夾的發佈排程在之後的日期或時間。 發佈後，使用者即可存取及填寫表單。
 
-在Experience Manager Forms介面中，您可以使用以下功能發佈表單：
+在Experience Manager Forms中，您可以使用下列其中一種方法發佈表單：
 * [Publish選項](#publish-forms-using-the-publish-option)
 * [管理發布選項](#publish-forms-using-the-manage-publication-option)
 
-如果您對Experience Manager Forms中的原始表單或資料夾進行後續修改，則在您從Experience Manager Forms重新發佈之前，這些變更不會反映在&#x200B;**Publish**&#x200B;執行個體中。 這可確保在&#x200B;**Publish**&#x200B;執行個體中無法使用進行中的變更。 **Publish**&#x200B;執行個體中只能使用管理員發佈的變更。
+## 注意事項
+
+* 只有`forms-users`群組的成員可以使用&#x200B;**管理出版物**&#x200B;選項來發佈表單。
+* 對Experience Manager Forms中的表單或資料夾所做的變更，在重新發佈前不會顯示在&#x200B;**Publish**&#x200B;執行個體中。 這可確保在&#x200B;**Publish**&#x200B;執行個體中無法使用進行中的更新。 只有管理員明確發佈的變更才會反映在&#x200B;**Publish**&#x200B;執行個體中。
 
 ## 使用Publish選項的Publish表單
 
@@ -34,7 +37,8 @@ ht-degree: 0%
 
    ![Publish與取消發佈表單](/help/edge/docs/forms/assets/publish-form-option.png)
 
-   成功發佈表單及其相關資產後，**成功**&#x200B;對話方塊就會顯示。 按一下&#x200B;**關閉**&#x200B;以關閉對話方塊。
+   成功發佈表單及其相關資產後，**成功**&#x200B;對話方塊就會顯示。
+1. 按一下&#x200B;**關閉**。
 
    ![成功對話框](/help/forms/assets/publish-success.png)
 
@@ -49,24 +53,25 @@ ht-degree: 0%
 
    ![解除對話方塊](/help/forms/assets/unpublish-asset.png)
 
-   一旦表單及其相關資產成功取消發佈，就會顯示&#x200B;**成功**&#x200B;對話方塊。 按一下&#x200B;**關閉**&#x200B;以關閉對話方塊。
+   一旦表單及其相關資產成功取消發佈，就會顯示&#x200B;**成功**&#x200B;對話方塊。
+1. 按一下&#x200B;**關閉**。
 
    ![取消發佈成功](/help/forms/assets/unpublishing-start.png)
 
 ## 使用管理發布選項的Publish表單
 
-管理出版物可讓您向選定目標發佈內容或從中取消發佈內容、在表單與檔案資料夾中將內容新增到發佈清單、選取要發佈的引用，以及排程發佈到更晚的日期或時間。  若要使用管理發布選項發佈表單，請執行下列動作：
+管理出版物可讓您向所選目的地發佈或取消發佈內容、從`forms&documents`資料夾新增內容至發佈清單、選取要發佈的引用，以及排程發佈到更晚的日期或時間。  若要使用&#x200B;**管理出版物**&#x200B;選項發佈表單，請執行下列動作：
 
 1. 從Experience Manager Forms主控台，導覽至上層資料夾，並選取您要發佈的表單。
 1. 按一下工具列中的&#x200B;**[!UICONTROL 管理出版物]**&#x200B;選項。
 
    ![管理出版物選項](/help/forms/assets/manage-publication-option.png)
 
-   **管理出版物**&#x200B;介面出現：
+   **管理出版物** UI出現：
 
    ![管理出版物](/help/forms/assets/manage-publication.png)
 
-   **管理出版物**&#x200B;介面中有以下選項：
+   **管理出版物** UI中有以下選項：
 
    * **動作**
 
@@ -76,7 +81,7 @@ ht-degree: 0%
    * **目的地**
 
       * **Publish**： Publish表單至Experience Manager Forms (AEM) Publish執行個體。
-      * **預覽**： Publish forms到Experience Manager Forms (AEM)預覽執行個體。
+      * **預覽**： Publish Forms到Experience Manager Forms (AEM)預覽執行個體。
 
    * **排程**
 
@@ -84,28 +89,33 @@ ht-degree: 0%
       * **稍後**：根據&#x200B;**啟用日期**&#x200B;或時間的Publish表單
 
 1. 按一下[下一步]****&#x200B;繼續。
-1. 在&#x200B;**範圍**&#x200B;索引標籤中，使用[新增內容](#add-content)選項來新增更多發佈內容。 例如，您可以新增更多Forms或記錄檔案檔案。
+1. （選擇性）在&#x200B;**範圍**&#x200B;索引標籤中，使用[新增內容](#add-content)選項來新增更多發佈內容。 例如，您可以新增更多Forms或記錄檔案檔案。
    ![範圍標籤](/help/forms/assets/scope-tab.png)
 1. 按一下&#x200B;**[!UICONTROL Publish]**發佈表單和相關資產，成功訊息就會出現。
    ![成功發佈訊息](/help/forms/assets/publish-successful.png)
 
 ### 新增內容
 
-發佈至Experience Manager Forms可讓您進一步新增更多內容（表單和資料夾）至發佈清單。 您可以從`formsanddocuments`資料夾新增更多表單或資料夾至清單。 但您無法一次從多個資料夾新增表單。 若要新增更多表單以進行發佈：
+發佈至Experience Manager Forms可讓您進一步新增更多內容（表單）至發佈清單。
+若要新增更多表單以進行發佈：
 
 1. 按一下「**新增內容**」按鈕以新增更多內容。
 
    ![新增內容](/help/forms/assets/add-content.png)
 
-1. 從&#x200B;**選取路徑**&#x200B;畫面中選取表單。 您可以從資料夾新增多個表單，或一次新增多個資料夾。 但您無法一次從多個資料夾新增表單。
+2. 從&#x200B;**選取路徑**&#x200B;畫面中選取表單。
 
    ![新增內容](/help/forms/assets/add-assets.png)
 
-1. 若要設定要發佈或不發佈表單的參考，請選取表單並按一下&#x200B;**[!UICONTROL 已發佈參考]**。
+   >[!NOTE]
+   >
+   > 您可以從`formsanddocuments`資料夾新增更多表單或資料夾至清單。 但您無法一次從多個資料夾新增表單。
+
+3. 若要設定要發佈或不發佈表單的參考，請選取表單並按一下&#x200B;**[!UICONTROL 已發佈參考]**。
 
    ![已發佈的參考](/help/forms/assets/published-references.png)
 
-1. 在&#x200B;**已發佈的參考**&#x200B;對話方塊中，取消勾選您計畫不發佈的資產，然後按一下&#x200B;**[!UICONTROL 完成]**。
+4. 在&#x200B;**已發佈的參考**&#x200B;對話方塊中，取消勾選您計畫不發佈的資產，然後按一下&#x200B;**[!UICONTROL 完成]**。
    ![已發佈的參考對話方塊](/help/forms/assets/published-references-dialog.png)
 
 <!--
@@ -135,27 +145,30 @@ By default, publishing a folder to Experience Manager Forms publishes all the as
 
 ### Publish或稍後取消發佈表單
 
-除了可讓您在稍後日期和時間發佈或取消發佈表單外，稍後發佈或取消發佈選項也可讓您設定工作流程。 在工作流程完成後，會發佈或取消發佈表單。 若要排程表單以供發佈或取消發佈：
+除了可讓您在稍後日期和時間發佈或取消發佈表單外，稍後發佈或取消發佈選項也可讓您設定工作流程。 在工作流程完成後，會發佈或取消發佈表單。
+
+若要排程表單以供發佈或取消發佈：
 
 1. 從Experience Manager Forms主控台，導覽至上層資料夾，並選取您要排程發佈的表單。
 1. 按一下工具列中的&#x200B;**[!UICONTROL 管理出版物]**&#x200B;選項。
 
    ![管理出版物](/help/forms/assets/manage-publication.png)
 
-1. 按一下&#x200B;**Publish**&#x200B;或&#x200B;**從**[!UICONTROL &#x200B;動作&#x200B;]**取消發佈**，然後選取您要發佈或取消發佈內容的&#x200B;**[!UICONTROL 目的地]**。
+1. 按一下&#x200B;**Publish**&#x200B;或&#x200B;**從**[!UICONTROL &#x200B;動作&#x200B;]**取消發佈**。
+1. 選取您要發佈或取消發佈內容的&#x200B;**[!UICONTROL 目的地]**。
    * **預覽**：使用&#x200B;**預覽**&#x200B;選項來發佈或取消發佈至Experience Manager Forms預覽環境。 Experience Manager Forms預覽環境用於測試開發表單。
-   * **Publish**：使用Experience Manager Forms Publish選項，在表單準備好用於生產環境後，將表單傳送至Experience Manager Forms發佈環境。
+   * **Publish**：使用Experience Manager Forms **Publish**&#x200B;選項，在表單準備好用於生產環境後，將表單傳送至Experience Manager Forms發佈環境。
 
-1. 從排程中選取&#x200B;**[!UICONTROL 稍後]**。
+1. 從&#x200B;**排程**&#x200B;中選取&#x200B;**[!UICONTROL 稍後]**。
 
    ![稍後再管理出版物](/help/forms/assets/manage-publication-later.png)
 
 1. 選取&#x200B;**[!UICONTROL 啟用日期]**&#x200B;並指定日期和時間。
 1. 按一下&#x200B;**[!UICONTROL 下一步]**。
-1. 在&#x200B;**領域**&#x200B;索引標籤中，**[!UICONTROL 新增內容]** （如有必要）。
+1. （選擇性）在&#x200B;**範圍**&#x200B;索引標籤中，使用&#x200B;**[!UICONTROL 新增內容]**來新增內容。
    ![稍後再管理出版物新增內容](/help/forms/assets/publish-later-add-content.png)
 1. 按一下「**[!UICONTROL 下一步]**」。
-1. （選擇性）在&#x200B;**工作流程**&#x200B;索引標籤中，指定&#x200B;**[!UICONTROL 工作流程標題]**。
+1. 在&#x200B;**工作流程**&#x200B;索引標籤中，指定&#x200B;**[!UICONTROL 工作流程標題]**。
 1. 按一下&#x200B;**[!UICONTROL 稍後]**&#x200B;的Publish。
 
    ![管理發布工作流程](/help/forms/assets/manage-publication-workflows.png)
