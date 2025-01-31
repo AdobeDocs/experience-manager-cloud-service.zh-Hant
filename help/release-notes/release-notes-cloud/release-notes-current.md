@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 190e68ebcd3c2a7ba7b995690c802a04728e6962
+source-git-commit: 20db0990c506aeb473b71132813cec053009275f
 workflow-type: tm+mt
-source-wordcount: '1749'
-ht-degree: 40%
+source-wordcount: '1750'
+ht-degree: 36%
 
 ---
 
@@ -126,13 +126,21 @@ Adobe Dynamic Media 中以 AI 產生的影片字幕，是使用人工智慧來�
 
 ### AEM Forms 的新功能 {#forms-new-features}
 
-* **管理發布**：您可以使用「管理發布」工作流程來發佈或取消發佈跨環境的表單，通常從作者執行個體到發佈和預覽執行個體。 它可讓使用者以簡化的方式發佈、取消發佈或排程內容發佈。
+#### 管理發佈
 
-* **[自動儲存基於核心元件的最適化表單草稿](/help/forms/save-core-component-based-form-as-draft.md)**：使用者現在可以享受自動儲存的好處，此功能會將部分完成的表單自動儲存為草稿。使用者可以稍後再使用同一部裝置或其他裝置完成填寫。此功能可改善組織的轉換率，因為使用者不需要從頭開始填寫表單，因此能減少放棄表單的情況。
+您可以使用「管理發布」工作流程來發佈或取消發佈跨環境的表單，通常從製作執行個體到發佈和預覽執行個體。 它可讓使用者以簡化的方式發佈、取消發佈或排程內容發佈。
 
-* **[規則編輯器增強功能](/help/forms/invoke-service-enhancements-rule-editor.md)**：針對以核心元件為基礎的最適化Forms，您可以使用Invoke Service的輸出來填入下拉式選項，並設定可重複或個別面板。 此外，此輸出可用於驗證其他欄位。
+#### 自動儲存以核心元件為主的最適化表單草稿
 
-* **[使用面板版面的導覽按鈕增強使用者體驗](/help/forms/rule-editor-core-components-usecases.md#navigating-among-panels-using-button)**：您現在可以在面板版面新增導覽按鈕，例如水平標籤、垂直標籤、摺疊式面板或精靈。這些按鈕簡化轉換不同面板的操作，專注於所選取的面板，藉此增強使用者體驗。
+使用者現在可以利用[自動儲存功能](/help/forms/save-core-component-based-form-as-draft.md)，將部分完成的表單自動儲存為草稿。 使用者可以稍後再使用同一部裝置或其他裝置完成填寫。此功能可改善組織的轉換率，因為使用者不需要從頭開始填寫表單，因此能減少放棄表單的情況。
+
+#### 規則編輯器增強功能
+
+針對以核心元件為基礎的最適化Forms，您可以使用Invoke Service的[輸出來填入下拉式選項，並設定可重複或個別面板](/help/forms/invoke-service-enhancements-rule-editor.md)。 此外，此輸出可用於驗證其他欄位。
+
+#### 使用面板配置中的導覽按鈕增強使用者體驗
+
+您現在可以將導覽按鈕新增至面板版面，例如「水準標籤」、「垂直標籤」、「摺疊式功能表」或「精靈」。 這些按鈕[透過簡化面板之間的轉換來增強使用者體驗，將焦點放在選取的面板](/help/forms/rule-editor-core-components-usecases.md#navigating-among-panels-using-button)。
 
 
 ### AEM Forms 的搶先體驗功能 {#forms-new-early-access-features}
@@ -141,15 +149,15 @@ AEM Forms 搶先體驗計劃為您提供獨一無二的機會，獲得先進創�
 
 本發行說明列出目前版本提供的創新功能。如需搶先體驗計劃提供之創新的完整清單，請參閱 [AEM Forms 搶先體驗計劃文件](/help/forms/early-access-ea-features.md)。
 
-#### [在最適化Forms中HTML電子郵件範本](/help/forms/html-email-templates-in-adaptive-forms.md)
+#### 在最適化Forms中HTML電子郵件範本
 
-最適化Forms可讓您使用HTML電子郵件範本。 HTML電子郵件範本可讓您在提交表單時，傳送豐富、個人化且吸引目光的電子郵件。 這些電子郵件可使用表單資料自訂，並使用各種電子郵件標籤（例如影像和連結）進行強化。 透過Adaptive Forms，您可以上傳包含HTML範本的檔案，或使用純文字編輯器來建立這些範本。
+最適化Forms可讓您使用[HTML電子郵件範本](/help/forms/html-email-templates-in-adaptive-forms.md)。 HTML電子郵件範本可讓您在提交表單時，傳送豐富、個人化且吸引目光的電子郵件。 這些電子郵件可使用表單資料自訂，並使用各種電子郵件標籤（例如影像和連結）進行強化。 透過Adaptive Forms，您可以上傳包含HTML範本的檔案，或使用純文字編輯器來建立這些範本。
 
 ![HTML電子郵件範本](/help/forms/assets/html-email.png)
 
 #### 增強型雲端儲存空間支援：直接PDF上傳至Azure Blob儲存空間
 
-AEM Forms Document Generation API現在支援直接將產生的PDF檔案上傳到Azure Blob儲存體。 此增強功能可簡化儲存和擷取，提高效率並與雲端工作流程整合。
+AEM Forms Document Generation API現在可讓您[直接將產生的PDF檔案上傳到Azure Blob儲存體](/help/forms/early-access-ea-features.md#doc-generation-api)。 此增強功能可簡化儲存和擷取，提高效率並與雲端工作流程整合。
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
