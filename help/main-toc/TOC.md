@@ -658,7 +658,7 @@ ht-degree: 99%
       + [管理標記](/help/assets/tagging-management-assets-view.md)
       + [Content Credentials](/help/assets/content-credentials.md)
       + [發佈資產至 AEM 和 Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
-      + [AEM Assets 視圖使用者介面可擴展性](/help/assets/aem-assets-view-ui-extensibility.md)
+      + [AEM Assets檢視使用者介面可擴展性](/help/assets/aem-assets-view-ui-extensibility.md)
    + Content Hub {#content-hub}
       + [概觀](/help/assets/product-overview.md)
       + [部署 Content Hub](/help/assets/deploy-content-hub.md)
@@ -1207,7 +1207,7 @@ ht-degree: 99%
          + [套用和取消套用 IP 允許清單](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)
          + [管理 IP 允許清單](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md)
       + [授權儀表板](/help/implementing/cloud-manager/license-dashboard.md)
-      + [了解 Cloud Service 內容請求](/help/implementing/cloud-manager/content-requests.md)
+      + [了解 Cloud Service 內容要求](/help/implementing/cloud-manager/content-requests.md)
       + [CDN 效能儀表板](/help/implementing/cloud-manager/cdn-performance.md)
       + [Cloud Manager 常見問題集](/help/implementing/cloud-manager/faqs.md)
    + 為 AEM as a Cloud Service 開發 {#developing}

@@ -1,18 +1,19 @@
 ---
-title: FormsEdge Delivery Services的通用編輯器(EDS Forms區塊)
-description: 使用Universal Editor for Forms (EDS Forms Block)Edge Delivery Services來建立最適化Forms。
+title: Edge Delivery Services for Forms 的通用編輯器 (EDS Forms 區塊)
+description: 使用 Edge Delivery Services for Forms 的通用編輯器 (EDS Forms 區塊) 建立最適化表單。
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
+exl-id: d711e0d1-a2fc-4aa6-af87-6e77a7bc5d2e
+source-git-commit: 5059437eca1dcfbfb26d1ff7b12d532472951568
 workflow-type: tm+mt
 source-wordcount: '1114'
-ht-degree: 11%
+ht-degree: 63%
 
 ---
 
-# FormsEdge Delivery Services的通用編輯器(EDS Forms區塊)
+# Edge Delivery Services for Forms 的通用編輯器 (EDS Forms 區塊)
 
 Universal Editor提供簡單、視覺化且直覺式的Adobe Edge (WYSIWYG)介面，徹底革新What You See Is What You Get Delivery Services (EDS)的表單建立作業。 專為內容建立者和表單作者所設計，消除了傳統表單建立流程的複雜性，讓非技術使用者也能存取。
 
@@ -22,60 +23,60 @@ Universal Editor提供簡單、視覺化且直覺式的Adobe Edge (WYSIWYG)介�
 
 ![通用編輯器](/help/edge/docs/forms/universal-editor/assets/universal-editor.png){width=80%， align-center} —>
 
-## EDS Forms適用的Universal Editor的主要功能
+## EDS Forms 通用編輯器的主要功能
 
 
 <div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="WYSIWYG介面"> 
-    <h3>WYSIWYG介面</h3>
-    <p>Universal Editor為表單設計提供WYSIWYG介面，其中包含預先建立的元件資料庫、回應式設計、範本式建立及即時欄位修改。
+    <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="WYSIWYG 介面"> 
+    <h3>WYSIWYG 介面</h3>
+    <p>通用編輯器為表單設計提供 WYSIWYG 介面，具有預先建立的元件資料庫、回應式設計、範本式建立和即時欄位修改。
  </p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/rule-editor.svg" alt="規則編輯器">
     <h3>規則編輯器</h3>
-    <p>規則編輯器可讓使用者透過輕量型JavaScript和JSON，使用事件導向規則、即時驗證和錯誤處理來建立動態表單互動。</p>
+    <p>規則編輯器讓使用者能夠透過事件驅動的規則、即時驗證，以及藉由輕量級 JavaScript 和 JSON 進行錯誤處理，來建立動態表單互動。</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/responsive.svg" alt="響應式模式">
-    <h3>響應式模式 </h3>
-    <p>設計可在各種裝置（桌上型電腦、平板電腦和行動裝置）上順暢調整的表單。 使用回應式模式來預覽和測試各種熒幕大小的表單。</p>
+    <img src="/help/edge/docs/forms/universal-editor/assets/responsive.svg" alt="回應式模式">
+    <h3>回應式模式 </h3>
+    <p>設計可跨裝置 (桌上型電腦、平板電腦和行動裝置) 順暢適應的表單。使用回應式模式預覽和測試各種螢幕尺寸的表單。</p>
   </div>
 </div>
 <div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/personalization.svg" alt="個人化"> 
     <h3>個人化</h3>
-    <p>Personalization會使用使用者資料來提供量身打造的表單體驗，以及根據使用者偏好動態調整內容、版面或選項。</p>
+    <p>個人化功能會透過使用者資料來提供量身打造的表單體驗，能根據使用者偏好而動態調整內容、版面或選項。</p>
   </div>
     <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/prefill-services.svg" alt="預填服務">
     <h3>預填服務</h3>
-    <p>預先填寫服務會自動將各種來源的相關使用者資料填入表單欄位，減少手動輸入並增強使用者體驗。</p>
+    <p>預填服務會自動使用來自各來源的相關使用者資料填寫表單欄位，減少手動輸入過程並增強使用者體驗。</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/experimentation-ab-testing.svg" alt="規則編輯器">
-    <h3>A/B測試</h3>
-    <p>A/B測試（實驗）可讓組織實驗不同的表單設計、版面和功能，以識別表現最佳的變體。</p>
+    <h3>A/B 測試</h3>
+    <p>A/B 測試 (實驗) 讓組織能夠實驗不同的表單設計、版面和功能，以尋得最佳表現的變體。</p>
   </div>
 </div>
 
 <div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/analyticsandtracking.svg" alt="Analytics與Tracking">
-    <h3>Analytics與Tracking</h3>
-    <p>透過內建分析和追蹤，深入瞭解使用者行為、表單互動和提交率，以啟用資料導向表單最佳化。</p>
+    <img src="/help/edge/docs/forms/universal-editor/assets/analyticsandtracking.svg" alt="分析與追蹤">
+    <h3>分析與追蹤</h3>
+    <p>透過內建的分析與追蹤功能，深入了解使用者行為、表單互動和提交率，以達到資料驅動的表單最佳化。</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/adobe-workfront.svg" alt="與Adobe Workfront整合">
+    <img src="/help/edge/docs/forms/universal-editor/assets/adobe-workfront.svg" alt="與 Adobe Workfront 整合">
     <h3> 任務管理 </h3>
-    <p>與Adobe Workfront整合可讓團隊管理表單建立和維護工作，確保簡化工作流程。</p>
+    <p>與 Adobe Workfront 進行整合，讓團隊能夠管理表單建立與維護任務，確保簡化工作流程。</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/data-binding.svg" alt="資料繫結">
     <h3>資料繫結</h3>
-    <p>資料繫結可讓表單欄位和後端資料來源之間直接連線，支援即時更新和進階資料對應，用於結構化投訴資料儲存。</p>
+    <p>資料繫結功能讓表單欄位和後端資料來源能直接連線，支援結構化申訴資料儲存的即時更新和進階資料對應。</p>
   </div>
 </div>
 
@@ -88,12 +89,12 @@ Universal Editor提供簡單、視覺化且直覺式的Adobe Edge (WYSIWYG)介�
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/submit-actions.svg" alt="提交動作">
     <h3>提交動作</h3>
-    <p>提交動作支援後端整合、條件式提交邏輯、安全端點和前置處理器，可簡化提交工作流程。</p>
+    <p>提交動作功能支援後端整合、條件式提交邏輯、安全端點和預處理器，能簡化提交工作流程。</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/custom-components.svg" alt="任務管理">
     <h3>自訂元件</h3>
-    <p>自訂元件可讓開發人員建立適合特定組織使用案例的獨特元素，以擴充表單功能。</p>
+    <p>自訂元件功能讓開發人員得以透過建立針對特定組織使用案例而自訂的不重複元素，擴展表單功能。</p>
   </div>
 </div>
 
@@ -101,17 +102,17 @@ Universal Editor提供簡單、視覺化且直覺式的Adobe Edge (WYSIWYG)介�
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/editor-customization.svg" alt="編輯器自訂">
     <h3>編輯器自訂</h3>
-    <p>開發人員可透過UI擴充功能來擴充編輯器的功能，讓量身打造的解決方案符合特定組織需求。</p>
+    <p>開發人員可以透過使用者介面擴充功能來擴展編輯器的功能，進而開發出符合特定組織需求的量身打造解決方案。</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/embedding-forms.svg" alt="內嵌Forms">
-    <h3>內嵌Forms</h3>
-    <p>使用通用編輯器的內建內嵌元件將表單直接內嵌到Edge Delivery Services Sites頁面中，提供順暢的使用者體驗。</p>
+    <img src="/help/edge/docs/forms/universal-editor/assets/embedding-forms.svg" alt="嵌入表單">
+    <h3>嵌入表單</h3>
+    <p>使用通用編輯器的內建嵌入元件，將表單直接嵌入到 Edge Delivery Services Sites 頁面中，形成順暢的使用者體驗。</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/thank-you.svg" alt="自訂元件">
-    <h3>感謝您的設定</h3>
-    <p>在成功提交表單後，輕鬆自訂對使用者顯示的認可訊息或頁面。
+    <h3>感謝設定</h3>
+    <p>輕鬆自訂在成功提交表單後，欲呈現給使用者看的確認訊息或頁面。
     </p>
   </div>
 </div>
@@ -141,45 +142,45 @@ Universal Editor提供簡單、視覺化且直覺式的Adobe Edge (WYSIWYG)介�
 
 ## 預先建立的表單元件
 
-Universal Editor提供下列立即可用的表單元件：
+通用編輯器提供以下立即可用的表單元件：
 
 <table>
   <thead>
     <tr>
       <th></th> 
-      <th>表單元件 </th>
+      <th>表單元件</th>
       <th>說明</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td rowspan="22"><img src="/help/edge/docs/forms/universal-editor/assets/adaptive-forms-components.png" alt="表單元件 " style="width: 100%;"></td> 
+      <td rowspan="22"><img src="/help/edge/docs/forms/universal-editor/assets/adaptive-forms-components.png" alt="表單元件" style="width: 100%;"></td> 
       <td><b>折疊面板</b></td>
-      <td>用於組織內容的可摺疊面板結構。</td>
+      <td>用於將內容進行組織的可收摺面板結構。</td>
     </tr>
     <tr>
       <td><b>按鈕</b></td>
-      <td>為導覽或自訂邏輯等動作新增互動元素。</td>
+      <td>替導覽或自訂邏輯等動作新增互動式元素。</td>
     </tr>
     <tr>
-      <td><b>Captcha</b></td>
-      <td>透過要求使用者使用Google reCaptcha或HCaptcha完成人工驗證任務來防止垃圾郵件。</td>
+      <td><b>驗證碼</b></td>
+      <td>要求使用者透過 Google reCaptcha 或 HCaptcha 完成人工驗證任務，以避免垃圾郵件。</td>
     </tr>
     <tr>
       <td><b>核取方塊</b></td>
-      <td>允許使用者設定核取方塊。</td>
+      <td>讓使用者能夠設定核取方塊。</td>
     </tr>
     <tr>
       <td><b>核取方塊群組</b></td>
-      <td>允許使用者從群組選取多個選項。</td>
+      <td>讓使用者能夠從一個群組中選取多個選項。</td>
     </tr>
     <tr>
       <td><b>日期挑選器</b></td>
-      <td>允許使用者使用行事曆介面選取日期。</td>
+      <td>讓使用者能夠利用行事曆介面選取日期。</td>
     </tr>
     <tr>
       <td><b>下拉式清單</b></td>
-      <td>從預先定義的清單中提供單一或多重選取選項。</td>
+      <td>提供預定義清單中的單選或多選選項。</td>
     </tr>
     <tr>
       <td><b>電子郵件</b></td>
@@ -187,19 +188,19 @@ Universal Editor提供下列立即可用的表單元件：
     </tr>
     <tr>
       <td><b>檔案附件</b></td>
-      <td>可上傳檔案、影像或其他檔案型別。</td>
+      <td>允許上傳文件、影像或其他類型的檔案。</td>
     </tr>
     <tr>
       <td><b>表單片段</b></td>
-      <td>位址列位或聯絡人詳細資料等區段的可重複使用表單元件。</td>
+      <td>地址欄位或聯絡方式等區段的可重複使用表單元件。</td>
     </tr>
     <tr>
       <td><b>影像</b></td>
-      <td>支援在表單內上傳和顯示影像。</td>
+      <td>支援在表單中上傳和顯示影像。</td>
     </tr>
     <tr>
       <td><b>模型</b></td>
-      <td>顯示快顯對話方塊，通常用於警示、其他資訊或確認。</td>
+      <td>呈現快顯視窗對話框，通常用於警報、附加資訊或確認。</td>
     </tr>
     <tr>
       <td><b>數值欄位</b></td>
@@ -207,39 +208,39 @@ Universal Editor提供下列立即可用的表單元件：
     </tr>
     <tr>
       <td><b>面板</b></td>
-      <td>使用可展開/可摺疊的面板組織表單區段。</td>
+      <td>使用可展開/可收摺面板將表單區段進行組織。</td>
     </tr>
     <tr>
       <td><b>選項按鈕</b></td>
-      <td>啟用從選項群組中選取單一選項。</td>
+      <td>允許從一個群組的選項中進行單項選取。</td>
     </tr>
     <tr>
       <td><b>評等</b></td>
-      <td>允許使用者提供星級評等。</td>
+      <td>讓使用者能夠提供星級式評等。</td>
     </tr>
     <tr>
       <td><b>重設按鈕</b></td>
-      <td>將表單欄位重設為預設狀態。</td>
+      <td>將表單欄位重設為其預設狀態。</td>
     </tr>
     <tr>
       <td><b>提交按鈕</b></td>
-      <td>觸發表單提交並起始定義的工作流程。</td>
+      <td>觸發表單提交並啟動定義好的工作流程。</td>
     </tr>
     <tr>
       <td><b>電話號碼欄位</b></td>
-      <td>根據國家/地區以格式擷取電話號碼。</td>
+      <td>擷取具有國家/地區格式的電話號碼。</td>
     </tr>
     <tr>
       <td><b>文字</b></td>
-      <td>提供透過核取方塊顯示法律條款及收集使用者協定的專屬區段。</td>
+      <td>提供專門的區段來顯示法律條款，並透過核取方塊取得使用者同意。</td>
     </tr>
     <tr>
       <td><b>文字欄位</b></td>
-      <td>DCaptures單行輸入，例如名稱或電子郵件地址。</td>
+      <td>DCapture 擷取單行輸入，例如姓名或電子郵件地址。</td>
     </tr>
     <tr>
       <td><b>精靈</b></td>
-      <td>引導使用者逐步完成多部分表單程式。</td>
+      <td>引導使用者逐步完成多部分形式表單的流程。</td>
     </tr>
   </tbody>
 </table>
