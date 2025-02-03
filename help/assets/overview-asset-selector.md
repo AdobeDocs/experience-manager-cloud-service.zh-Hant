@@ -4,9 +4,9 @@ description: 在應用程式內使用資產選擇器進行搜尋、尋找和取�
 role: Admin, User
 exl-id: 62b0b857-068f-45b7-9018-9c59fde01dc3
 source-git-commit: e22e4e530c2d023724b360c488cab2b59ec22fc4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1332'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 98%
 * 簡易的自訂功能，因為有可以控制應用程式中資產選擇器顯示的可用屬性。
 * 全文搜尋、開箱即用和自訂篩選器，可快速找到要在編寫體驗中使用的資產。
 * 能夠在 IMS 組織內切換存放庫以選擇資產。
-* 能夠依照名稱、維度和大小對資產進行排序，並以清單、網格、圖庫或瀑布視圖檢視。
+* 能夠依照名稱、維度和大小對資產進行排序，並以清單、網格、圖庫或瀑布檢視檢視。
 
 <!--Perform the following tasks to integrate and use Asset Selector with your [!DNL Experience Manager Assets] repository:
 
@@ -108,7 +108,7 @@ import { AssetSelector } from 'https://experience.adobe.com/solutions/CQ-assets-
 * **E**：[搜尋列](#search-bar)
 * **F**：[排序](#sorting)
 * **G**：[按遞增或遞減順序排序](#sorting)
-* **H**：[視圖](#types-of-view)
+* **H**：[檢視](#types-of-view)
 
 ### 隱藏/顯示面板 {#hide-show-panel}
 
@@ -141,7 +141,7 @@ import { AssetSelector } from 'https://experience.adobe.com/solutions/CQ-assets-
 
 ### 自訂搜尋
 
-除了全文搜尋外，資產選擇器也可讓您使用自訂搜尋來搜尋檔案中的資產。您可以在模組視圖和邊欄視圖模式下，使用自訂搜尋篩選器。
+除了全文搜尋外，資產選擇器也可讓您使用自訂搜尋來搜尋檔案中的資產。您可以在模組檢視和邊欄檢視模式下，使用自訂搜尋篩選器。
 
 ![custom-search](assets/custom-search1.png)
 
@@ -155,14 +155,14 @@ import { AssetSelector } from 'https://experience.adobe.com/solutions/CQ-assets-
 
 您可以按資產的名稱、維度或大小對資產選擇器中的資產進行排序。您可以依照遞增或遞減順序排序資產。
 
-### 視圖的類型 {#types-of-view}
+### 檢視的類型 {#types-of-view}
 
-資產選擇器可讓您在四種不同的視圖中檢視資產：
+資產選擇器可讓您在四種不同的檢視中檢視資產：
 
-* ![清單視圖](assets/do-not-localize/list-view.png) [!UICONTROL **清單視圖**] 清單視圖會在單一欄中顯示可捲動的檔案和資料夾。
-* ![網格視圖](assets/do-not-localize/grid-view.png) [!UICONTROL **網格視圖**] 網格視圖會在列與欄的網格中顯示可捲動的檔案和資料夾。
-* ![圖庫視圖](assets/do-not-localize/gallery-view.png) [!UICONTROL **圖庫視圖**] 圖庫視圖會在居中鎖定的水平清單中顯示檔案或資料夾。
-* ![瀑布圖檢視](assets/do-not-localize/waterfall-view.png) [!UICONTROL **瀑布圖**&#x200B;檢視]瀑布圖檢視以Bridge的形式顯示檔案或資料夾。
+* ![清單檢視](assets/do-not-localize/list-view.png) [!UICONTROL **清單檢視**] 清單檢視會在單一欄中顯示可捲動的檔案和資料夾。
+* ![網格檢視](assets/do-not-localize/grid-view.png) [!UICONTROL **網格檢視**] 網格檢視會在列與欄的網格中顯示可捲動的檔案和資料夾。
+* ![圖庫檢視](assets/do-not-localize/gallery-view.png) [!UICONTROL **圖庫檢視**] 圖庫檢視會在居中鎖定的水平清單中顯示檔案或資料夾。
+* ![瀑布檢視](assets/do-not-localize/waterfall-view.png) [!UICONTROL **瀑布**&#x200B;檢視] 瀑布檢視會以 Bridge 的形式顯示檔案或資料夾。
 
 **概觀圖形**
 
