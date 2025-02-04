@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: 32cc525d5443f455f1579ef027c08796ffc209e7
 workflow-type: tm+mt
 source-wordcount: '2543'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -512,7 +512,7 @@ Adobe 會持續評估產品功能，以逐漸利用更現代化的替代方案�
 
 ## Java Runtime 更新至 21 版 {#java-runtime-update-21}
 
-Adobe Experience Manager as a Cloud Service正在轉換至Java 21執行階段。 若要確保相容性，必須更新[執行階段需求](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)中概述的程式庫版本。
+Adobe Experience Manager as a Cloud Service 正在轉變為 Java 21 執行階段。為了確保相容性，一定要按照「[執行階段需求](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)」中所述更新資料庫版本 。
 
 <!-- (OLD Removed from here to end of topic 1/16/25 as per instruction in https://wiki.corp.adobe.com/pages/viewpage.action?pageId=3359689801) AEM as a Cloud Service will be moving to Java 21 runtime. In order to ensure compatibility, it is essential to make the following adjustments:
 

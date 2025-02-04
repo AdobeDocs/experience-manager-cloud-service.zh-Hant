@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: bc5dbee5b5accc747288638fd8e22ed8f2d12fd5
 workflow-type: tm+mt
 source-wordcount: '4049'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -184,7 +184,7 @@ data:
 
 | **屬性** | **類型** | **說明** |
 |---|---|---|
-| reqProperty | `string` | 要求屬性。<br><br>之一：<br><ul><li>`path`：傳回不含查詢引數之URL的完整路徑。 （針對未逸出的變體使用`pathRaw`）</li><li>`url`：傳回包含查詢引數的完整URL。 （針對未逸出的變體使用`urlRaw`）</li><li>`queryString`：傳回 URL 的查詢部分</li><li>`method`：傳回要求中所使用的 HTTP 方法。</li><li>`tier`：傳回 `author`、`preview` 或 `publish` 其中之一。</li><li>`domain`：傳回小寫的網域屬性 (如 `Host` 標頭的定義)</li><li>`clientIp`：傳回用戶端 IP 位址。</li><li>`forwardedDomain`：傳回在`X-Forwarded-Host`標頭中定義的第一個網域（小寫）</li><li>`forwardedIp`：傳回`X-Forwarded-For`標頭中的第一個IP。</li><li>`clientCountry`：傳回兩個字母的代碼 ([區域指示器符號](https://zh.wikipedia.org/wiki/tw/Regional_indicator_symbol))，可識別客戶位於哪個國家/地區。</li></ul> |
+| reqProperty | `string` | 要求屬性。<br><br>之一：<br><ul><li>`path`：傳回不包含查詢參數的 URL 完整路徑。(使用未轉義變體的 `pathRaw`)</li><li>`url`：傳回含查詢參數的完整 URL。(使用未轉義變體的 `urlRaw`)</li><li>`queryString`：傳回 URL 的查詢部分</li><li>`method`：傳回要求中所使用的 HTTP 方法。</li><li>`tier`：傳回 `author`、`preview` 或 `publish` 其中之一。</li><li>`domain`：傳回小寫的網域屬性 (如 `Host` 標頭的定義)</li><li>`clientIp`：傳回用戶端 IP 位址。</li><li>`forwardedDomain`：傳回`X-Forwarded-Host` 標頭內定義的第一個小寫網域</li><li>`forwardedIp`：傳回 `X-Forwarded-For` 標頭中的第一個 IP 位址。</li><li>`clientCountry`：傳回兩個字母的代碼 ([區域指示器符號](https://zh.wikipedia.org/wiki/tw/Regional_indicator_symbol))，可識別客戶位於哪個國家/地區。</li></ul> |
 | reqHeader | `string` | 傳回具有指定名稱的要求標頭 |
 | queryParam | `string` | 傳回具有指定名稱的查詢參數 |
 | reqCookie | `string` | 傳回具有指定名稱的 Cookie |

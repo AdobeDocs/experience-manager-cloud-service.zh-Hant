@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: a3c414f9b5e575856a942e02661e8c70a7083495
 workflow-type: tm+mt
 source-wordcount: '541'
-ht-degree: 35%
+ht-degree: 89%
 
 ---
 
@@ -18,35 +18,35 @@ ht-degree: 35%
 
 ## 版本 19149 {#19149}
 
-以下摘要說明維護版本19149數的持續改善，該版本於2025年1月21日公開發佈。 前一個維護版本是版本 18751。
+下面是 19149 維護版本持續改善的內容，該版本於 2025 年 1 月 21 日公開發佈。前一個維護版本是版本 18751。
 
 2025.1.0 功能啟用將提供此維護版本的完整功能集。如需詳細資訊，請參閱 [Experience Manager 發行藍圖](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)。
 
 ### 增強功能 {#enhancements-19149}
 
-* Assets-45286：顯示下載封存非同步工作的精細進度。
-* Assets-46296：資產選擇器支援Dynamic Media範本。
-* Assets-44796：為DAM非同步資產作業引發Assets事件。
+* ASSETS-45286：顯示下載封存同步工作的精細進度。
+* ASSETS-46296：資產選擇器中支援動態媒體範本。
+* ASSETS-44796：DAM 非同步資產工作的觸發資產事件。
 
 ### 已修正的問題 {#fixed-issues-19149}
 
-* GRANITE-55074：確保在錯誤回應上設定CORS回應標題。
-* Assets-43755：改善大量資產的相關擴充性。
-* Assets-45399：建立資產即時副本後，重新導向至Assets主控台。
-* Assets-45462：自訂資料夾縮圖出現瀏覽器快取問題。
-* Assets-46398：隱藏DM範本的下載和重新處理動作。
-* Assets-44484：重新儲存連線Assets設定時發生問題。
-* Assets-44122：非同步複製資產作業在複製到目前資料夾時不會重新命名目的地資料夾。
-* Assets-44463：成功匯出中繼資料時，「下載CSV」按鈕不可見。
-* Assets-45134：以目的地標題移動工作會覆寫所有資料夾標題。
-* Assets-45137：與透過Assets檢視的大量上傳衝突。
-* Assets-45758：資產關係在新增關係後獲得無窮多的忙碌/載入動畫。
-* Assets-44148： AEM中的NODE_MOVED事件可能會導致記錄中出現假的NPE。
-* Assets-28607：設定自訂視訊縮圖時出現JS錯誤。
-* GRANITE-55781：改善Adobe Developer Console與AEM之間的群組同步。 [使用者群組和產品設定檔同步處理中的變更](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/changes-in-user-group-and-product-profile-synchronization)中有更多詳細資料。
-* GRANITE-55754：確保SDK啟動指令碼支援Java 21。
-* GRANITE-54248：無法捲動大型資產資料夾中的所有專案。
-* SCRNS-4597：搜尋結果清單檢視改進。
+* GRANITE-55074：確保在錯誤回應上設定 CORS 回應標頭。
+* ASSETS-43755：大量資產相關的擴充性改善。
+* ASSETS-45399：建立資產即時副本後重新導向至 Assets Console。
+* ASSETS-45462：自訂資料夾縮圖的瀏覽器快取問題。
+* ASSETS-46398：隱藏 DM 範本的下載和重新處理動作。
+* ASSETS-44484：重新儲存所連接資產設定的問題。
+* ASSETS-44122：在複製到目前資料夾時，非同步複製資源工作不會重新命名目標資料夾。
+* ASSETS-44463：成功匯出中繼資料時，看不到下載 CSV 按鈕。
+* ASSETS-45134：移動有目標標題的工作會覆寫所有資料夾標題。
+* ASSETS-45137：與透過資產視圖大量上傳發生衝突。
+* ASSETS-45758：新增關係後，資產關係會出現無限繁忙/載入動畫。
+* ASSETS-44148：AEM 中的 NODE_MOVED 事件可能會導致記錄出現虛假 NPE。
+* ASSETS-28607：設定自訂影片縮圖時出現 JS 錯誤。
+* GRANITE-55781：改善 Adob&#x200B;&#x200B;e Developer Console 和 AEM 之間的群組同步。「[使用者群組和產品設定檔同步的變更](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/security/changes-in-user-group-and-product-profile-synchronization)」內的更多詳細資訊。
+* GRANITE-55754：確保 SDK 啟動指令碼支援 Java 21。
+* GRANITE-54248：無法捲動大型資源資料夾中的所有項目。
+* SCRNS-4597：搜尋結果清單視圖改善。
 
 
 ### 已知問題 {#known-issues-19149}
@@ -59,11 +59,11 @@ ht-degree: 35%
 
 #### 使用者群組和產品設定檔同步的變更
 
-使用Adobe Admin Console進行許可權管理時，下列群組不得使用，因為系統將不再將它們與AEM同步：
-* 以_GROUP_NAME_SUFFIX結尾的AEM群組。
-* 來自其他環境、計畫或產品的產品設定檔。
+使用 Adob&#x200B;&#x200B;e Admin Console 進行權限管理時，不得使用下列群組，因為這些群組將不再同步至 AEM：
+* 以 _GROUP_NAME_SUFFIX 結尾的 AEM 群組。
+* 來自其他環境、程式或產品的產品設定檔。
 
-如需詳細資訊，請檢查使用者群組與產品設定檔同步中的[變更](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/changes-in-user-group-and-product-profile-synchronization)。
+若要了解更多詳情，請查看「[使用者群組和產品設定檔同步的變更](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/security/changes-in-user-group-and-product-profile-synchronization)」。
 
 #### 棄用SPA編輯器 {#deprecate-spa-editor}
 
