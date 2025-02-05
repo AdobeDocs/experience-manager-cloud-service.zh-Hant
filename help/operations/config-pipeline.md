@@ -4,9 +4,9 @@ description: 瞭解如何使用設定管道來部署不同的設定AEM as a Clou
 feature: Operations
 role: Admin
 exl-id: bd121d31-811f-400b-b3b8-04cdee5fe8fa
-source-git-commit: 5e96d5d71abf78a0dba179cb37cad0322688351b
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
-source-wordcount: '994'
+source-wordcount: '991'
 ht-degree: 1%
 
 ---
@@ -50,7 +50,7 @@ Cloud Manager設定管道將設定檔案（以YAML格式建立）部署到目標
 
 ## 建立和管理設定管道 {#creating-and-managing}
 
-有關如何建立和設定管道的資訊，請參閱檔案[CI/CD管道。](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline)
+如需有關如何建立和設定管道的資訊，請參閱[CI/CD管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline)。
 
 在Cloud Manager中建立設定管道時，在設定管道時請務必選取&#x200B;**目標部署**，而不是&#x200B;**完整棧疊代碼**。
 
@@ -95,7 +95,7 @@ Cloud Manager設定管道將設定檔案（以YAML格式建立）部署到目標
     cdn.yaml
 ```
 
-`/config`下的資料夾名稱和檔案名稱是任意的。 但是，YAML檔案必須包含有效的[`kind`屬性值。](#configurations)
+`/config`下的資料夾名稱和檔案名稱是任意的。 但是，YAML檔案必須包含有效的[`kind`屬性值](#configurations)。
 
 通常，設定會部署到所有環境。 如果每個環境的所有屬性值都相同，則單個YAML檔案就足夠了。 不過，屬性值通常會在環境之間有所不同，例如在測試較低環境時。
 

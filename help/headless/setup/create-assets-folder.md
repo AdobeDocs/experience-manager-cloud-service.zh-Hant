@@ -4,10 +4,10 @@ description: 使用 AEM 內容片段模型定義內容片段的結構，這是 H
 exl-id: 9a156a17-8403-40fc-9bd0-dd82fb7b2235
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
-workflow-type: ht
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+workflow-type: tm+mt
 source-wordcount: '375'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -38,7 +38,7 @@ ht-degree: 100%
    ![建立資料夾](../assets/assets-folder-create.png)
 1. 透過將游標停留並點選核取記號來選取剛建立的資料夾。然後從工具列中選取「**屬性**」(或使用 `p`[ 鍵盤快速鍵](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md))。
 1. 在&#x200B;**屬性**&#x200B;視窗中，選擇&#x200B;**雲端服務**&#x200B;索引標籤。
-1. 對於&#x200B;**雲端設定**，選擇您之前建立的[設定。](create-configuration.md)
+1. 針對&#x200B;**雲端設定**，選取您先前建立的[設定](create-configuration.md)。
    ![設定資產資料夾](../assets/assets-folder-configure.png)
 1. 選取「**儲存並關閉**」。
 1. 在確認視窗中選取「**確定**」。

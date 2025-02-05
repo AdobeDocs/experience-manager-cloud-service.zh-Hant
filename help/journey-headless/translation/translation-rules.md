@@ -5,10 +5,10 @@ exl-id: 878ffd5d-0f10-4990-9779-bdf55cd95fac
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '912'
-ht-degree: 100%
+ht-degree: 91%
 
 ---
 
@@ -79,7 +79,7 @@ ht-degree: 100%
 1. 選取您剛剛建立的內容，然後選取「**編輯**」。這將開啟&#x200B;**翻譯規則編輯器** 以設定屬性。
    ![翻譯規則編輯器](assets/translation-rules-editor.png)
 1. 依預設，所有設定都繼承自父路徑，在此案例中為 `/content/dam`。取消勾選&#x200B;**繼承自`/content/dam`** 選項，以新增其他欄位至設定。
-1. 取消勾選後，在清單的「**一般**」區段下，新增您[先前確認為翻譯欄位](getting-started.md#content-models)之內容片段模型的屬性名稱。
+1. 取消勾選後，在清單的&#x200B;**一般**&#x200B;區段下，新增您[先前識別為翻譯欄位](getting-started.md#content-models)的內容片段模型的屬性名稱。
    1. 在「**新屬性**」欄位中輸入屬性名稱。請注意，選項「**翻譯**」和「**繼承**」會自動勾選。
    1. 選取「**新增**」。
    1. 對必須翻譯的所有欄位重複這些步驟。
@@ -105,6 +105,6 @@ ht-degree: 100%
 
 ## 其他資源 {#additional-resources}
 
-雖然建議您查閱文件[翻譯內容](translate-content.md)來繼續 Headless 翻譯歷程的下個部分，以下也有一些其他選擇性資源，在深入探究本文件提到的一些概念，但不是繼續 Headless 歷程的必要條件。
+我們建議您檢閱檔案[翻譯內容](translate-content.md)，以繼續無頭式翻譯歷程的下一部分，以下是一些其他可選資源，這些資源對檔案中提到的一些概念進行了更深入的探究，但並非繼續無頭式歷程所必需的。
 
 * [識別要翻譯的內容](/help/sites-cloud/administering/translation/rules.md) - 了解翻譯規則如何識別需要翻譯的內容。

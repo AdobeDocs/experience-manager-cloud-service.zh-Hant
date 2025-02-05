@@ -4,7 +4,7 @@ description: 瞭解在建立頁面、定義其初始內容、結構化內容、�
 exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 33eb71b2828314ee2c75206ef7034313e2638360
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '3443'
 ht-degree: 1%
@@ -467,7 +467,7 @@ GITHUB上的程式碼
 
 ### 版面配置 {#layout}
 
-當[編輯範本時，您可以定義配置](/help/sites-cloud/authoring/page-editor/templates.md)，這會使用[標準回應式配置，](/help/sites-cloud/administering/responsive-layout.md)，內容作者可以在頁面上對其進行[設定。](/help/sites-cloud/authoring/page-editor/responsive-layout.md)
+當[編輯範本時，您可以定義配置](/help/sites-cloud/authoring/page-editor/templates.md)，這會使用[標準回應式配置](/help/sites-cloud/administering/responsive-layout.md)，內容作者可以在頁面上對其進行[設定](/help/sites-cloud/authoring/page-editor/responsive-layout.md)。
 
 ### 內容原則 {#content-policies}
 

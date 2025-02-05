@@ -5,7 +5,7 @@ feature: Multi Site Manager
 role: Admin
 exl-id: 733e9411-50a7-42a5-a5a8-4629f6153f10
 solution: Experience Manager Sites
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '919'
 ht-degree: 2%
@@ -59,7 +59,7 @@ Adobe Experience Manager (AEM)的預設現成行為是發佈內容不受影響�
 
 這是使用&#x200B;**Day CQ WCM轉出管理員**&#x200B;的[OSGi組態](/help/implementing/deploying/configuring-osgi.md)完成的。 如果轉出管理員應處理在Live Copy中建立的頁面與Blueprint中已存在的名稱發生的衝突，則將值&#x200B;**處理與手動建立的頁面**&#x200B;的衝突(`rolloutmgr.conflicthandling.enabled`)設定為true。
 
-當衝突管理已停用時，AEM有[預先定義的行為。](#behavior-when-conflict-handling-deactivated)
+已停用衝突管理時，AEM有[預先定義的行為](#behavior-when-conflict-handling-deactivated)。
 
 ## 衝突處理常式 {#conflict-handlers}
 
@@ -118,7 +118,7 @@ AEM提供：
 
 ### 停用衝突處理時的行為 {#behavior-when-conflict-handling-deactivated}
 
-如果您手動[停用衝突處理，](#rollout-manager-and-conflict-handling) AEM不會對任何衝突頁面執行任何動作。 非衝突頁面會如預期轉出。
+如果您手動[停用衝突處理](#rollout-manager-and-conflict-handling)，AEM不會對任何衝突頁面執行任何動作。 非衝突頁面會如預期轉出。
 
 >[!CAUTION]
 >

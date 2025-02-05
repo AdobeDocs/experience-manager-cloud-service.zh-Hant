@@ -5,7 +5,7 @@ exl-id: c57096ca-34fe-4b19-98e0-8f3cd43cf24e
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '799'
 ht-degree: 4%
@@ -15,7 +15,7 @@ ht-degree: 4%
 
 # 組織頁面 {#creating-and-organizing-pages}
 
-瞭解如何使用AEM組織您的網站。 瞭解如何組織您的頁面後，您可以[建立新頁面](/help/sites-cloud/authoring/sites-console/creating-pages.md)和[管理現有頁面。](/help/sites-cloud/authoring/sites-console/managing-pages.md)
+瞭解如何使用AEM組織您的網站。 瞭解如何組織您的頁面後，您可以[建立新頁面](/help/sites-cloud/authoring/sites-console/creating-pages.md)和[管理現有頁面](/help/sites-cloud/authoring/sites-console/managing-pages.md)。
 
 {{edge-delivery-authoring}}
 

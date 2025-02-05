@@ -5,7 +5,7 @@ feature: Language Copy
 role: Admin
 exl-id: afc577a2-2791-481a-ac77-468011e4302e
 solution: Experience Manager Sites
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '756'
 ht-degree: 1%
@@ -18,7 +18,7 @@ ht-degree: 1%
 
 >[!TIP]
 >
->如果不熟悉如何翻譯內容，請參閱[網站翻譯歷程](/help/journey-sites/translation/overview.md)，其中會指引您使用AEM強大的翻譯工具來翻譯您的AEM Sites內容，非常適合沒有AEM或翻譯經驗的人士。
+>如果不熟悉如何翻譯內容，請參閱[網站翻譯歷程](/help/journey-sites/translation/overview.md)，此歷程將引導您使用AEM強大的翻譯工具來翻譯您的AEM Sites內容，非常適合沒有AEM或翻譯經驗的人士。
 
 [WKND教學課程網站](/help/implementing/developing/introduction/develop-wknd-tutorial.md)包含數個語言分支，並使用下列結構：
 
@@ -61,7 +61,7 @@ ht-degree: 1%
 1. 編寫語言主版的內容。
 1. 建立網站每個語言副本的語言根。 例如，WKND範例網站的法文復本為`/content/wknd/language-masters/fr`。
 
-準備要翻譯的內容後，您可以在語言副本和相關翻譯專案中自動建立遺失的頁面。 （請參閱[建立翻譯專案](managing-projects.md)。） 如需AEM內容翻譯程式的概述，請參閱[翻譯多語言網站的內容](overview.md)。
+準備要翻譯的內容後，您可以在語言副本和相關翻譯專案中自動建立遺失的頁面。 （請參閱[建立翻譯專案](managing-projects.md)。）如需AEM內容翻譯程式的概述，請參閱[翻譯多語言網站的內容](overview.md)。
 
 ## 建立語言根目錄 {#creating-a-language-root}
 

@@ -5,7 +5,7 @@ feature: Administering
 role: Admin
 exl-id: 55d54d72-f87b-47c9-955f-67ec5244dd6e
 solution: Experience Manager Sites
-source-git-commit: a5661b6b75180dd77eb794eb5d215fd2e1d5eed0
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '625'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 ## 概觀 {#overview}
 
-前端管道是一種機制，可根據[網站主題](site-themes.md)和[網站範本，快速部署您網站的前端程式碼。](site-templates.md)
+前端管道是一種機制，可根據[網站主題](site-themes.md)和[網站範本](site-templates.md)，快速部署您網站的前端程式碼。
 
 此管道僅處理前端計畫碼，這使得部署過程比完整棧疊部署更快。 它可讓前端開發人員輕鬆自訂您的網站，而不需要瞭解AEM。
 
@@ -44,7 +44,7 @@ AEM可將您的網站設定為載入使用前端管道部署的主題，即使�
 
 ## 要求 {#requirements}
 
-AEM可以自動調整您的現有網站以使用前端管道。 若要執行此工作流程，您的網站必須使用[v2或更新版本的核心元件頁面元件。](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/wcm-components/page)
+AEM可以自動調整您的現有網站以使用前端管道。 若要執行此工作流程，您的網站必須使用[v2或更新版本的核心元件](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/wcm-components/page)的頁面元件。
 
 ## 啟用前端管道 {#enabling}
 

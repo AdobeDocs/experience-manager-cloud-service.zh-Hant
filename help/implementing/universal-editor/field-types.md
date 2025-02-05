@@ -4,7 +4,7 @@ description: 透過範例瞭解通用編輯器可在屬性面板中編輯的欄�
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 2e22a2570a11df8d5f82037414f689f20b6fdb94
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1343'
 ht-degree: 12%
@@ -24,7 +24,7 @@ ht-degree: 12%
 
 >[!TIP]
 >
->如果您不熟悉如何針對通用編輯器檢測您的應用程式，請參閱檔案： [適用於AEM開發人員的通用編輯器概述。](/help/implementing/universal-editor/developer-overview.md)
+>如果您不熟悉如何針對通用編輯器檢測您的應用程式，請參閱檔案： [AEM開發人員的通用編輯器概觀](/help/implementing/universal-editor/developer-overview.md)。
 
 ## 模型定義結構 {#model-structure}
 
@@ -139,7 +139,7 @@ AEM標籤元件型別會啟用AEM標籤選擇器，其可用來將標籤附加�
 
 #### AEM內容 {#aem-content}
 
-AEM內容元件型別會啟用AEM內容選擇器，其可用於選取任何AEM資源。 不同於[參考元件](#reference) （僅能選取資產），AEM內容元件可參考任何AEM內容。 它提供額外的驗證型別。
+AEM內容元件型別會啟用AEM內容選擇器，其可用於選取任何AEM資源。 與只能選取資產的[參考元件](#reference)不同，AEM內容元件可以參考任何AEM內容。 它提供額外的驗證型別。
 
 | 驗證類型 | 數值類型 | 說明 | 必填 |
 |---|---|---|---|

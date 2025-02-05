@@ -5,10 +5,10 @@ exl-id: 3bfbf186-d684-4742-8c5c-34c34ff3adb5
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '2120'
-ht-degree: 100%
+ht-degree: 93%
 
 ---
 
@@ -72,7 +72,7 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->假設已經為翻譯語言建立了必要的語言結構，做為[內容結構定義的一部分。](getting-started.md#content-structure)這應該與內容架構師協力完成。
+>假設已建立翻譯語言的必要語言結構，做為內容結構](getting-started.md#content-structure)的[定義的一部分。 應與內容架構者共同作業來完成此操作。
 >
 >如果未先建立語言資料夾，您將無法按照前述步驟建立語言副本。
 
@@ -187,7 +187,7 @@ AEM 現在與您的翻譯設定和連接器通訊，以將內容傳送到翻譯�
 >
 >路徑瀏覽器是功能強大的工具，可讓您搜尋、篩選和導覽您的內容。選取「**僅內容/篩選器**」按鈕以切換側面板並顯示進階篩選器，例如「**修改日期**」或「**翻譯狀態**」。
 >
->若要進一步了解路徑瀏覽器，請參閱[其他資源章節](#additional-resources)。
+>您可以在[其他資源區段](#additional-resources)中進一步瞭解路徑瀏覽器。
 
 您可以使用前述步驟將必要的內容新增至專案的所有語言 (工作) 中。選取所有內容後，您可以開始翻譯。
 
@@ -205,7 +205,7 @@ AEM 現在與您的翻譯設定和連接器通訊，以將內容傳送到翻譯�
 
 ## 檢閱翻譯後的內容 {#reviewing}
 
-[如前所述，](#using-translation-project)機器翻譯的內容會流回 AEM，狀態為&#x200B;**已核准**，因為已假設使用了機器翻譯，所以不需人為介入。然而，仍然可以檢閱翻譯後的內容。
+[如先前所見](#using-translation-project)，機器翻譯的內容會以&#x200B;**已核准**&#x200B;的狀態流回AEM，因為假設使用的是機器翻譯，所以不需要人為干預。 然而，仍然可以檢閱翻譯後的內容。
 
 只需前往已完成的翻譯工作，然後點選或按一下核取方塊來選取一個行項目。**在內容片段中顯示**&#x200B;圖示會出現在工具列中。
 
@@ -249,7 +249,7 @@ AEM 的翻譯框架從翻譯連接器接收翻譯，然後根據語言根並使�
 
 ## 其他資源 {#additional-resources}
 
-雖然建議您查閱文件[發佈已翻譯內容](publish-content.md)來繼續 Headless 翻譯歷程的下個部分，以下也有一些其他選擇性資源，在深入探究本文件提到的一些概念，但不是繼續 Headless 歷程的必要條件。
+我們建議您檢閱檔案[Publish已翻譯內容](publish-content.md)，以繼續無頭式翻譯歷程的下一部分，以下是一些其他選擇性資源，這些資源會對本檔案中提到的一些概念進行更深入的探究，但並非繼續無頭式歷程所必需的。
 
 * [管理翻譯專案](/help/sites-cloud/administering/translation/managing-projects.md) - 了解翻譯專案的詳細資料和其他功能，例如人工翻譯工作流程和多語言專案。
 * [製作環境和工具](/help/sites-cloud/authoring/path-selection.md#path-selection) - AEM 提供各種機制來組織和編輯您的內容，包括強大的路徑瀏覽器。

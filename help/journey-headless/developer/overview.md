@@ -6,10 +6,10 @@ exl-id: d14a1e30-dd04-49a8-8cda-27c80a4bb0f5
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1070'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -75,9 +75,9 @@ AEM Headless 實作使用內容片段模型和內容片段來專注於建位結�
 
 {style="table-layout:auto"}
 
-## 下一步 {#what-is-next}
+## 後續步驟 {#what-is-next}
 
-查看下一篇文章以開始使用：[了解 CMS Headless 開發。](learn-about.md)
+開始檢視下一篇文章： [瞭解CMS Headless開發](learn-about.md)，
 
 ### 選擇你自己的冒險 {#choose-your-path}
 

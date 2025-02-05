@@ -4,7 +4,7 @@ description: 詳細瞭解元件定義與通用編輯器之間的JSON合約。
 feature: Developing
 role: Admin, Architect, Developer
 exl-id: e1bb1a54-50c0-412a-a8fd-8167c6f47d2b
-source-git-commit: 384f8a1301ea488e0b2aa493389d090896fe3b33
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '545'
 ht-degree: 1%
@@ -21,7 +21,7 @@ ht-degree: 1%
 
 >[!TIP]
 >
->如需內容模型程式的概述，請參閱檔案[使用Edge Delivery Services專案進行WYSIWYG編寫的內容模型。](/help/edge/wysiwyg-authoring/content-modeling.md)
+>如需內容模型程式的概述，請參閱檔案[使用Edge Delivery Services專案進行WYSIWYG編寫的內容模型](/help/edge/wysiwyg-authoring/content-modeling.md)。
 
 >[!TIP]
 >
@@ -67,7 +67,7 @@ ht-degree: 1%
 
 ## `groups` {#groups}
 
-`groups`定義作者在通用編輯器中按一下編輯器屬性面板中的&#x200B;**新增**&#x200B;圖示以將新元件[新增到頁面時，看到的元件群組。](/help/sites-cloud/authoring/universal-editor/authoring.md#adding-components)群組有助於組織元件。 通用群組可能是&#x200B;**一般元件**&#x200B;和&#x200B;**進階元件**。
+`groups`定義作者在通用編輯器中按一下編輯器屬性面板中的&#x200B;**新增**&#x200B;圖示以[將新元件新增到頁面](/help/sites-cloud/authoring/universal-editor/authoring.md#adding-components)時看到的元件群組。 群組有助於組織元件。 通用群組可能是&#x200B;**一般元件**&#x200B;和&#x200B;**進階元件**。
 
 * `title`定義編輯器UI中所顯示群組的文字說明。
 * `id`可唯一識別群組。

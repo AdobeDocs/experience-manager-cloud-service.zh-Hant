@@ -4,10 +4,10 @@ description: 了解 AEM as a Cloud Service 提供用來自訂頁面編寫功能�
 exl-id: 98d3c7ab-46d2-4e8d-b0da-5c8a7b398135
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '937'
-ht-degree: 94%
+ht-degree: 88%
 
 ---
 
@@ -54,7 +54,7 @@ Clientlib 讓您可擴充預設實作以啟用新功能，同時會重複使用�
 
 這是一個範例套件，顯示如何建立 MSM 檢視的圖層 (模式)。
 
-您可以在以下位置找到此頁面的程式碼：[GitHub。](https://github.com/Adobe-Marketing-Cloud/aem-authoring-new-layer-mode)
+您可以在[GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-new-layer-mode)上找到此頁面的程式碼。
 
 ## 將新選擇類別新增到資產瀏覽器 {#add-new-selection-category-to-asset-browser}
 
@@ -64,7 +64,7 @@ Clientlib 讓您可擴充預設實作以啟用新功能，同時會重複使用�
 
 `aem-authoring-extension-assetfinder-flickr` 是一種範例套件，會顯示如何將群組新增到資產尋找器。此範例會連接到 [Flickr](https://www.flickr.com) 的公用串流並在側邊面板中顯示它們。
 
-您可以在以下位置找到此頁面的程式碼：[GitHub。](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-assetfinder-flickr)
+您可以在[GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-assetfinder-flickr)上找到此頁面的程式碼。
 
 ## 篩選資源 {#filtering-resources}
 
@@ -75,7 +75,7 @@ Clientlib 讓您可擴充預設實作以啟用新功能，同時會重複使用�
 * 透過實作 [`com.day.cq.commons.predicate.AbstractNodePredicate`](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/commons/predicate/package-summary.html) 介面實作自訂述詞。
 * 指定述詞的名稱，並在使用 `pathbrowser` 時參照該名稱。
 
-如需有關建立自訂述詞的更多詳細資料，請參閱[本文。](/help/implementing/developing/introduction/query-builder-custom-predicate.md)
+如需建立自訂述詞的詳細資訊，請參閱[本文章](/help/implementing/developing/introduction/query-builder-custom-predicate.md)。
 
 ## 將新動作新增到元件工具列 {#add-new-action-to-a-component-toolbar}
 
@@ -85,7 +85,7 @@ Clientlib 讓您可擴充預設實作以啟用新功能，同時會重複使用�
 
 `aem-authoring-extension-toolbar-screenshot` 是一種範例套件，會顯示如何建立可轉譯元件的自訂工具列動作。
 
-您可以在以下位置找到此頁面的程式碼：[GitHub。](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-toolbar-screenshot)
+您可以在[GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-toolbar-screenshot)上找到此頁面的程式碼。
 
 ## 新增就地編輯器 {#add-new-in-place-editor}
 
@@ -156,7 +156,7 @@ Clientlib 讓您可擴充預設實作以啟用新功能，同時會重複使用�
 
 `aem-authoring-extension-inplace-editor` 是一種範例套件，會顯示如何在 AEM 中建立就地編輯器。
 
-您可以在以下位置找到此頁面的程式碼：[GitHub。](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-inplace-editor)
+您可以在[GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-inplace-editor)上找到此頁面的程式碼。
 
 ## 新增「新頁面動作」。 {#add-a-new-page-action}
 
@@ -166,7 +166,7 @@ Clientlib 讓您可擴充預設實作以啟用新功能，同時會重複使用�
 
 `aem-authoring-extension-header-backtosites` 是一種範例套件，會顯示如何建立自訂標頭列動作以跳回 Sites 主控台。
 
-您可以在以下位置找到此頁面的程式碼：[GitHub。](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-header-backtosites)
+您可以在[GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-header-backtosites)上找到此頁面的程式碼。
 
 ## 自訂要求啟動工作流程 {#customizing-the-request-for-activation-workflow}
 

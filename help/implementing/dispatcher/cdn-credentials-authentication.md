@@ -4,7 +4,7 @@ description: 瞭解如何在設定檔案中宣告規則，再使用Cloud Manager
 feature: Dispatcher
 exl-id: a5a18c41-17bf-4683-9a10-f0387762889b
 role: Admin
-source-git-commit: d6484393410d32f348648e13ad176ef5136752f2
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1497'
 ht-degree: 4%
@@ -14,7 +14,7 @@ ht-degree: 4%
 
 # 設定內容傳遞網路憑證和身份驗證 {#cdn-credentials-authentication}
 
-Adobe提供的CDN具有多項功能和服務，部分功能和服務需仰賴憑證和驗證，以確保適當等級的企業安全性。 透過在使用Cloud Manager [設定管道部署的設定檔案中宣告規則，](/help/operations/config-pipeline.md)客戶可以自助方式設定以下專案：
+Adobe提供的CDN具有多項功能和服務，部分功能和服務需仰賴憑證和驗證，以確保適當等級的企業安全性。 透過在使用Cloud Manager [設定管道](/help/operations/config-pipeline.md)部署的設定檔案中宣告規則，客戶可以自助方式設定以下專案：
 
 * AdobeCDN用來驗證來自客戶管理CDN之請求的X-AEM-Edge-Key HTTP標題值。
 * 用來清除CDN快取中資源的API權杖。

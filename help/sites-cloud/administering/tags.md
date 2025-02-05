@@ -5,10 +5,10 @@ exl-id: 42480699-b7a7-4678-a763-569a9b7573e2
 solution: Experience Manager Sites
 feature: Workflow
 role: Admin
-source-git-commit: 913b1beceb974243f0aa7486ddd195998d5e9439
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '2200'
-ht-degree: 73%
+ht-degree: 68%
 
 ---
 
@@ -75,8 +75,8 @@ ht-degree: 73%
 建立並使用標籤來組織內容有數個步驟。
 
 1. [建立標記的命名空間](#creating-namespaces) (或選擇現有的以重複使用)。
-1. [建立新的標記。](#creating-tags)
-1. [發佈標記。](#publishing-tags)
+1. [建立新標籤](#creating-tags)。
+1. [Publish標籤](#publishing-tags)。
 
 ### 建立命名空間 {#creating-namespaces}
 
@@ -96,7 +96,7 @@ ht-degree: 73%
 
 命名空間即建立完成。在標籤主控台中，名稱空間位於最低層級（在主控台中最左側的欄），並由資料夾圖示表示，這反映了它們作為「容器」或其他標籤分組的性質。
 
-你現在即可在此命名空間中[建立新標記](#creating-tags)或是[管理現有標記。](#managing-tags)
+您現在可以[在此名稱空間中建立新標籤](#creating-tags)，或[管理現有標籤](#managing-tags)。
 
 命名空間不需要包含任何子標記。由於命名空間本身就是一種標記，因此可以像任何其他標記一樣用於編排您的內容。但是，若要繼續建立結構化標記分類法，您可以根據專案需求在該命名空間內[建立子標記](#creating-tags)。
 
@@ -104,7 +104,7 @@ ht-degree: 73%
 
 標記通常會新增到命名空間中。
 
-1. 若要建立標籤，請開啟[標籤主控台。](#tagging-console)
+1. 若要建立標籤，請開啟[標籤主控台](#tagging-console)。
 
 1. 選取您要建立標籤的名稱空間。 或者選取另一個標記，在其下方建立子標記。
 
@@ -132,7 +132,7 @@ ht-degree: 73%
 
 就像在AEM中建立任何其他內容一樣，在您建立標籤（或名稱空間）後，它只存在於編寫環境中。 為了讓您的標記可供使用者使用，您必須發佈標記。
 
-1. 若要發佈標記，請開啟[標記主控台。](#tagging-console)
+1. 若要發佈標籤，請開啟[標籤主控台](#tagging-console)。
 
 1. 選取您要發佈的一個或多個標籤，然後在工具列中選取&#x200B;**Publish**。
 
@@ -176,7 +176,7 @@ Be sure to [apply permissions](#setting-tag-permissions) to the namespace before
 
 將主控台切換到「**屬性**」檢視，即可檢視標記的詳細資料，包括最後發佈者以及時間。
 
-1. 若要檢視標記的屬性，請開啟[標記主控台。](#tagging-console)
+1. 若要檢視標籤的內容，請開啟[標籤主控台](#tagging-console)。
 
 1. 選取您要檢視其屬性的標籤，然後在左側邊欄中選取&#x200B;**屬性**。
 
@@ -192,7 +192,7 @@ Be sure to [apply permissions](#setting-tag-permissions) to the namespace before
 
 建立標記和命名空間後可進行編輯。
 
-1. 若要編輯標記，請開啟[標記主控台。](#tagging-console)
+1. 若要編輯標籤，請開啟[標籤主控台](#tagging-console)。
 
 1. 選取您要編輯的標籤，然後在工具列中選取&#x200B;**編輯**。
 
@@ -206,13 +206,13 @@ Be sure to [apply permissions](#setting-tag-permissions) to the namespace before
 
 如需如何新增語言翻譯的詳細資料，請參閱「[管理不同語言的標記](#managing-tags-in-different-languages)」一節。
 
-如果您所做的變更是針對已發佈的標記，您可能需要[將其重新發佈。](#publishing-tags)
+如果您對已發佈的標籤所做的變更，您可能要[重新發佈](#publishing-tags)。
 
 ### 取消發佈標記 {#unpublishing-tags}
 
 若要停用作者執行個體上的標籤並將其從發佈執行個體中移除，您可以將其取消發佈。
 
-1. 若要取消發佈標記，請開啟[標記主控台。](#tagging-console)
+1. 若要取消發佈標籤，請開啟[標籤主控台](#tagging-console)。
 
 1. 選取您要取消發佈的標籤，然後在工具列中選取&#x200B;**取消發佈**。
 
@@ -232,7 +232,7 @@ Be sure to [apply permissions](#setting-tag-permissions) to the namespace before
 
 若要查看特定標記套用於哪些內容，這可能很實用。在標記主控台中使用&#x200B;**參考**&#x200B;檢視，即可進行此動作。
 
-1. 若要檢視標記的參考，請開啟[標記主控台。](#tagging-console)
+1. 若要檢視標籤的參考，請開啟[標籤主控台](#tagging-console)。
 
 1. 選取您要檢視其參照的標籤，然後在左側邊欄中選取&#x200B;**參照**。
 
@@ -258,7 +258,7 @@ Be sure to [apply permissions](#setting-tag-permissions) to the namespace before
 >
 >最佳做法是只有管理員有權限可移動標記並將其重新命名。
 
-1. 若要移動標記或將其重新命名，請開啟[標記主控台。](#tagging-console)
+1. 若要移動或重新命名標籤，請開啟[標籤主控台](#tagging-console)。
 
 1. 選取您要移動或重新命名的標籤，然後在工具列中選取&#x200B;**移動**。
 
@@ -281,7 +281,7 @@ Be sure to [apply permissions](#setting-tag-permissions) to the namespace before
 
 如果您的標記分類法有重複或類似的標記，則合併這些標記可能會有幫助。將標記 `A` 合併到標記 `B` 時，所有以標記 `A` 標記的頁面會變成以標記 `B` 標記，而標記 `A` 即不再供作者使用。
 
-1. 若要合併兩個標記，請開啟[標記主控台。](#tagging-console)
+1. 若要合併兩個標籤，請開啟[標籤主控台](#tagging-console)。
 
 1. 選取您要合併到其他標籤的標籤，然後在工具列選取&#x200B;**合併**。
 
@@ -297,7 +297,7 @@ Be sure to [apply permissions](#setting-tag-permissions) to the namespace before
 
 如果您的標記分類法變更並使得標記或命名空間變得不必要，則可以將其刪除。
 
-1. 若要刪除標記，請開啟[標記主控台。](#tagging-console)
+1. 若要刪除標籤，請開啟[標籤主控台](#tagging-console)。
 
 1. 選取您要刪除的標籤，然後在工具列中選取&#x200B;**刪除**。
 
@@ -358,7 +358,7 @@ Tag permissions are ['secure (by default)'](/help/sites-administering/production
 
 假設我們有一個名為`Animals`的標籤，且我們要將其翻譯成德文和法文。
 
-1. 請開啟[標記主控台。](#tagging-console)
+1. 開啟[標籤主控台](#tagging-console)。
 
 1. 選取您要翻譯的標籤，然後在工具列中選取&#x200B;**編輯**。
 

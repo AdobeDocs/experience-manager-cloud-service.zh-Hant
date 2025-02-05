@@ -5,7 +5,7 @@ topic-tags: best-practices
 exl-id: 37eae99d-542d-4580-b93f-f454008880b1
 feature: Operations
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '3088'
 ht-degree: 0%
@@ -30,7 +30,7 @@ ht-degree: 0%
 
 ### 元件中的查詢 {#queries-in-components}
 
-由於查詢可能是在AEM系統上執行的最繁重的操作之一，因此最好在元件中避免查詢。 每次轉譯頁面時執行數個查詢通常會降低系統效能。 有兩種策略可用來在轉譯元件時避免執行查詢： **[周遊節點](#traversing-nodes)**&#x200B;和&#x200B;**[預先擷取結果。](#prefetching-results)**
+由於查詢可能是在AEM系統上執行的最繁重的操作之一，因此最好在元件中避免查詢。 每次轉譯頁面時執行數個查詢通常會降低系統效能。 有兩種策略可用來在轉譯元件時避免執行查詢： **[周遊節點](#traversing-nodes)**&#x200B;和&#x200B;**[預先擷取結果](#prefetching-results)**。
 
 ### 周遊節點 {#traversing-nodes}
 
@@ -62,14 +62,14 @@ ht-degree: 0%
 
 ## 正在最佳化查詢 {#optimizing-queries}
 
-Oak檔案提供[查詢執行方式的高層級概觀。](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#query-processing)這是本檔案中所有最佳化活動的基礎。
+Oak檔案提供[查詢執行方式的高層級概觀](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#query-processing)。 這是本檔案所述所有最佳化活動的基礎。
 
 AEM as a Cloud Service提供[查詢效能工具](#query-performance-tool)，其設計可支援實作有效率的查詢。
 
 * 它會顯示已執行的查詢及其相關效能特性及查詢計畫。
 * 它允許在不同層級執行特定查詢，從僅顯示查詢計畫到執行完整查詢。
 
-查詢效能工具可透過Cloud Manager中的[Developer Console存取。](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html#queries) AEM as a Cloud Service的查詢效能工具提供比AEM 6.x版更詳細的查詢執行資訊。
+查詢效能工具可透過Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html#queries)中的[Developer Console存取。 與AEM 6.x版相比，AEM as a Cloud Service的查詢效能工具可提供更多有關查詢執行細節的資訊。
 
 此圖表說明使用查詢效能工具最佳化查詢的一般流程。
 

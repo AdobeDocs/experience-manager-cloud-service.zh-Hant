@@ -4,13 +4,13 @@ description: 瞭解範本主控台如何作為檢視和管理頁面範本的中�
 solution: Experience Manager Sites
 feature: Administering
 role: User
-source-git-commit: 993f81e0ff2b71ce2edf59a2c74398db3abe8f06
+exl-id: d11d7176-dd35-4855-9dcd-dd40ff096510
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '863'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
-
 
 # 範本主控台 {#templates-console}
 
@@ -20,7 +20,7 @@ ht-degree: 1%
 
 建立頁面時，您需要選取範本。 頁面範本會用作新頁面的基礎。 [AEM可編輯的範本](/help/implementing/developing/components/templates.md)可以定義結果頁面的結構、任何初始內容，以及可以使用的元件（設計屬性）。
 
-內容作者在網站主控台[建立新頁面時，會看到一系列可用的範本。](/help/sites-cloud/authoring/sites-console/creating-pages.md)範本可用來建立可編輯的頁面：
+內容作者在網站主控台[建立新頁面時，](/help/sites-cloud/authoring/sites-console/creating-pages.md)會看到一系列可用的範本。 範本可用來建立可編輯的頁面：
 
 * [頁面編輯器](/help/sites-cloud/authoring/page-editor/templates.md)或
 * [通用編輯器](/help/sites-cloud/authoring/universal-editor/templates.md)
@@ -73,7 +73,7 @@ ht-degree: 1%
 
 ## 屬性 {#properties}
 
-您可以編輯範本](/help/sites-cloud/authoring/page-editor/templates.md)的[屬性，其方式與您[編輯頁面屬性的方式非常相同。](/help/sites-cloud/authoring/sites-console/page-properties.md)範本屬性包括：
+您可以編輯範本](/help/sites-cloud/authoring/page-editor/templates.md)的[屬性，其方式與您[編輯頁面屬性](/help/sites-cloud/authoring/sites-console/page-properties.md)的方式非常相同。範本屬性包括：
 
 * 範本標題
 * 說明
@@ -135,6 +135,6 @@ ht-degree: 1%
 
 ## 建立範本 {#create}
 
-使用主控台中的&#x200B;**建立**&#x200B;按鈕，在您的目前位置中建立新範本。 如需建立範本的詳細資訊，請參閱檔案[建立可透過頁面編輯器編輯的頁面的範本。](/help/sites-cloud/authoring/page-editor/templates.md)
+使用主控台中的&#x200B;**建立**&#x200B;按鈕，在您的目前位置中建立新範本。 如需建立範本的詳細資訊，請參閱檔案[建立可透過頁面編輯器編輯的頁面的範本](/help/sites-cloud/authoring/page-editor/templates.md)。
 
 **Create**&#x200B;按鈕僅用於建立可透過「頁面編輯器」編輯的範本。 請參閱檔案[建立可使用通用編輯器編輯的頁面的範本](/help/sites-cloud/authoring/universal-editor/templates.md)，瞭解如何根據使用通用編輯器建立的頁面建立範本。

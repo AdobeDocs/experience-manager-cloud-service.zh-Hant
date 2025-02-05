@@ -4,9 +4,9 @@ description: 瞭解如何使用Cloud Acceleration Manager將移轉集中的內�
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 feature: Migration
 role: Admin
-source-git-commit: 67b04abfc0213ac175afca34b9424dafbe150a25
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
-source-wordcount: '3412'
+source-wordcount: '3411'
 ht-degree: 12%
 
 ---
@@ -182,7 +182,7 @@ ht-degree: 12%
 
 在罕見的情況下，內嵌的目標Cloud Service環境可能會遇到未預期的問題。 因此，內嵌將失敗，因為環境未處於預期的就緒狀態。 檢查內嵌記錄檔，以顯示所遇到錯誤狀態的更多詳細資料。
 
-請確保製作環境可用，並等候幾分鐘再重新嘗試內嵌。 如果問題仍然存在，請和客戶支援聯絡，以瞭解遇到的錯誤狀態。
+請確保製作環境可用，並等候幾分鐘再重新嘗試內嵌。 如果問題仍然存在，請聯絡客戶支援並遇到錯誤狀態。
 
 ### 由於違反唯一條件限制而導致填滿擷取失敗 {#top-up-ingestion-failure-due-to-uniqueness-constraint-violation}
 

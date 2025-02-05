@@ -5,9 +5,9 @@ feature: Authoring
 exl-id: ef482843-451b-474e-a8d0-d0bfcc17221b
 solution: Experience Manager Sites
 role: User
-source-git-commit: 7ad9a959592f1e8cebbcad9a67d280d5b2119866
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
-source-wordcount: '570'
+source-wordcount: '567'
 ht-degree: 0%
 
 ---
@@ -20,9 +20,9 @@ ht-degree: 0%
 
 AEM as a Cloud Service提供數種不同的編輯器，可編輯不同型別的內容並支援不同的編寫使用案例。
 
-* [使用頁面編輯器進行WYSIWYG製作](#page-editor) — 頁面編輯器是AEM中製作內容的傳統編輯器，已嘗試並信任數千個網站。
-* [使用通用編輯器進行WYSIWYG編寫](#universal-editor) — 通用編輯器是現代化的UI，可讓您以無內容的方式編寫AEM內容，可用於利用Edge Delivery Services的AEM專案。
-* [檔案式製作](#document-based) — 如果您使用Edge Delivery服務，您可以選擇在AEM主控台之外完全以傳統檔案的形式製作內容，例如Microsoft Word或Google Docs。
+* [使用頁面編輯器進行WYSIWYG製作](#page-editor) — 頁面編輯器是在AEM中製作內容的傳統編輯器，已嘗試並信任數千個網站。
+* [使用通用編輯器進行WYSIWYG編寫](#universal-editor) — 通用編輯器是一種現代化的UI，可讓您以無內容的方式進行AEM內容編寫，可用於利用Edge Delivery Services的AEM專案。
+* [檔案式撰寫](#document-based) — 如果您使用Edge Delivery服務，您可以選擇在AEM主控台之外完全以Microsoft Word或Google Docs等傳統檔案的形式撰寫內容。
 * [AEM內容片段編輯器](#cf-editor) — 這是建立Headless內容的選擇編輯器。
 
 由於AEM的整合與可擴充性質，這些方法可依據您的專案需求專門使用或相互組合。
@@ -37,7 +37,7 @@ AEM as a Cloud Service提供數種不同的編輯器，可編輯不同型別的�
 
 AEM頁面編輯器提供整合式環境，讓您可使用「所見即所得」(WYSIWYG)介面創作內容。 拖放預先定義的元件，就地建置頁面及編輯內容。
 
-若要深入瞭解AEM頁面編輯器，請參閱檔案[AEM頁面編輯器。](/help/sites-cloud/authoring/page-editor/introduction.md)
+若要深入瞭解AEM頁面編輯器，請參閱檔案[AEM頁面編輯器](/help/sites-cloud/authoring/page-editor/introduction.md)。
 
 ## 使用通用編輯器進行WYSIWYG製作 {#universal-editor}
 
@@ -47,17 +47,17 @@ Universal Editor是現代化的UI，可讓您以不受內容限制的方式創�
 
 通用編輯器可透過AEM內的Sites主控台存取，但提供強大且與內容無關的靈活性，不僅可編寫您的AEM內容，還可編寫正確儀表化的外部內容。
 
-若要深入瞭解通用編輯器，請參閱檔案[使用通用編輯器編寫內容。](/help/sites-cloud/authoring/universal-editor/authoring.md)
+若要深入瞭解通用編輯器，請參閱檔案[使用通用編輯器編寫內容](/help/sites-cloud/authoring/universal-editor/authoring.md)。
 
-## 以文件為主的製作  {#document-based}
+## 文件型製作  {#document-based}
 
-如果您使用Edge Delivery服務，您可以選擇在[AEM **Sites**&#x200B;主控台之外將您的內容製作為傳統檔案，例如Microsoft Word或Google Docs。](/help/sites-cloud/authoring/sites-console/introduction.md)
+如果您使用Edge Delivery服務，您可以選擇在[AEM **Sites**&#x200B;主控台](/help/sites-cloud/authoring/sites-console/introduction.md)之外將您的內容製作為傳統檔案，例如Microsoft Word或Google Docs。
 
 ![編輯檔案型內容](assets/authoring-methods-document.jpg)
 
 透過檔案式撰寫，作者可以使用他們已有的工具，並且仍可受益於AEMEdge Delivery Services的速度和效能，以發佈其內容。 檔案式撰寫不需要使用AEM主控台。
 
-若要深入瞭解檔案式撰寫，請參閱檔案[撰寫與發佈內容。](/help/edge/docs/authoring.md)
+若要深入瞭解檔案式撰寫，請參閱[撰寫與發佈內容](/help/edge/docs/authoring.md)。
 
 ## AEM內容片段編輯器 {#cf-editor}
 

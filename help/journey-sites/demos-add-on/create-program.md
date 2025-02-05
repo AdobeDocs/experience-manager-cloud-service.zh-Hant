@@ -4,10 +4,10 @@ description: 了解如何設定新方案和管道以部署附加元件。
 exl-id: 06287618-0328-40b1-bba8-84002283f23f
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '688'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 
 ## 目前進度 {#story-so-far}
 
-Adobe Experience Manager (AEM) 參考示範附加元件歷程的上一個文件「[了解參考示範附加元件安裝](installation.md)」中，您會了解參考示範附加元件的安裝過程，其中說明不同的部分如何搭配運作。您現在應該：
+在Adobe Experience Manager (AEM)參考示範附加元件歷程的上一個檔案[瞭解參考示範附加元件安裝](installation.md)中，您已瞭解參考示範附加元件的安裝程式如何運作，說明不同部分如何共同運作。 您現在應該：
 
 * 對 Cloud Manager 有基本的了解。
 * 了解管道如何將內容和設定傳遞到 AEM。

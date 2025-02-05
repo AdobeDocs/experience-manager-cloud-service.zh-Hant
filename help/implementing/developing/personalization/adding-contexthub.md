@@ -4,7 +4,7 @@ description: 將ContextHub新增至您的頁面，以啟用ContextHub功能並�
 exl-id: 8bfe2cff-3944-4e86-a95c-ebf1cb13913c
 feature: Developing, Personalization
 role: Admin, Architect, Developer
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '898'
 ht-degree: 0%
@@ -145,7 +145,7 @@ ContextHub區段安裝在`/conf/<site>/settings/wcm/segments`節點下方。
 
 ## 偵錯ContextHub {#debugging-contexthub}
 
-偵錯ContextHub有數個選項，包括產生記錄檔。 如需詳細資訊，請參閱[設定ContextHub。](configuring-contexthub.md#logging-debug-messages-for-contexthub)
+偵錯ContextHub有數個選項，包括產生記錄檔。 如需詳細資訊，請參閱[設定ContextHub](configuring-contexthub.md#logging-debug-messages-for-contexthub)。
 
 ## 請參閱ContextHub架構的概觀 {#see-an-overview-of-the-contexthub-framework}
 

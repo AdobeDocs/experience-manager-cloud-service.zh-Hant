@@ -4,13 +4,13 @@ description: 您可以使用主題來設定樣式，並使用核心元件來將�
 keywords: 最適化表單樣式化核心元件。 在核心元件中使用主題、設計最適化表單的樣式、自訂主題
 feature: Adaptive Forms, Core Components
 role: User, Developer
-source-git-commit: 076ee3616ad56b4d463d93e407a9e7e67e54b4ac
+exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '2816'
 ht-degree: 4%
 
 ---
-
 
 # 使用主題來設定以核心元件為基礎的最適化Forms的樣式{#themes-for-af-using-core-components}
 
@@ -65,7 +65,7 @@ Forms如Cloud Service所提供，以下列出核心元件型最適化Forms的最
 
 * 熟悉[在Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#setup-pipeline)中設定管道，並瞭解如何設定管道的基本知識，可協助您有效率地管理和部署您的主題自訂。
 * 瞭解如何[設定具有貢獻者角色](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem.html)的使用者。 瞭解如何使用投稿人角色設定使用者，可讓您授與佈景主題自訂的必要許可權。
-* 安裝最新版的[Apache Maven。](https://maven.apache.org/download.cgi) Apache Maven是常用於Java™專案的組建自動化工具。 安裝最新版本可確保您擁有佈景主題自訂的必要相依性。
+* 安裝最新版的[Apache Maven](https://maven.apache.org/download.cgi)。 Apache Maven是常用於Java™專案的組建自動化工具。 安裝最新版本可確保您擁有佈景主題自訂的必要相依性。
 * 安裝純文字編輯器。 例如，Microsoft® Visual Studio Code。 使用純文字編輯器(例如Microsoft® Visual Studio Code)可提供方便使用的環境，用於編輯和修改佈景主題檔案。
 
 ### 設定您的環境
@@ -373,7 +373,7 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 
 ##### 5.3執行前端管道 {#run-a-frontend-pipeline}
 
-使用[前端管道部署主題。](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/enable-frontend-pipeline-devops/create-frontend-pipeline.html)。若要部署佈景主題，請執行下列步驟：
+使用[前端管道](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/enable-frontend-pipeline-devops/create-frontend-pipeline.html)部署主題。 若要部署佈景主題，請執行下列步驟：
 
 1. 登入您的AEM Cloud Manager存放庫。
 1. 按一下&#x200B;**[!UICONTROL 管道]**&#x200B;區段中的&#x200B;**[!UICONTROL 新增]**&#x200B;按鈕。

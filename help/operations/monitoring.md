@@ -4,7 +4,7 @@ description: AEM as a Cloud Service 中的基礎結構和服務監視
 exl-id: 82432c11-37ec-48ac-a52b-487abdc859fa
 feature: Operations
 role: Admin
-source-git-commit: c7488b9a10704570c64eccb85b34f61664738b4e
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '562'
 ht-degree: 5%
@@ -29,7 +29,7 @@ AEM as a Cloud Service使用數百台雲端原生監視器，一年365天持續�
 
 ### 服務Edge {#service-edge}
 
-您的所有AEM as a Cloud Service環境都會受到可用性監控。 但是，服務Edge監控僅針對生產環境設定，並且會使用量度來計算客戶的SLA。 這會考量到環境執行階段和AEM as a Cloud Service CDN。 服務Edge監控會採用離您所選地區較近的五個不同位置，並定期檢查可用性。 網站的不可用性會觸發警報，並讓Adobe的隨叫隨到支援團隊和程式參與互動。
+您的所有AEM as a Cloud Service環境都會受到可用性監控。 不過，「服務Edge監控」僅針對生產環境設定，且量度會用於計算客戶的SLA。 這會考量到環境執行階段和AEM as a Cloud Service CDN。 服務Edge監控會採用離您所選地區較近的五個不同位置，並定期檢查可用性。 網站的不可用性會觸發警報，並讓Adobe的隨叫隨到支援團隊和程式參與互動。
 
 ### 自訂監視 {#custom-monitoring}
 
@@ -37,13 +37,13 @@ AEM as a Cloud Service使用數百台雲端原生監視器，一年365天持續�
 
 >[!NOTE]
 >
-> 此功能僅適用於生產環境以及具有[進階雲端支援的客戶。](https://experienceleague.adobe.com/docs/support-resources/data-sheets/overview.html#support-add-ons)如果您有任何問題，請聯絡您的Adobe客戶團隊。
+> 此功能僅提供給具有[進階雲端支援](https://experienceleague.adobe.com/docs/support-resources/data-sheets/overview.html#support-add-ons)的生產環境和客戶。 如有任何問題，請聯絡您的Adobe客戶團隊。
 
 ## 內部模組監控 {#module-monitoring}
 
 雖然外部可用性側重於使用者監控，但內部模組監控可觀察架構子系統是否名義上運作且功能或效能未降低。 如果發生問題，就會觸發警示，因此可自動進行修復，或透過作業團隊的參與進行修復，以防止可用性受損。 監視器有各種類別，下面顯示一些範例檢查：
 
-* CPU iowait百分比未超過特定臨界值。
+* CPU iowait百分比不會超過特定臨界值。
 * 執行個體重新部署不會超過特定頻率。
 * 磁碟使用量低於某個臨界值。
 * 作者存放庫大小在特定範圍內。

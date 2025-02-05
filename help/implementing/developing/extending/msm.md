@@ -4,10 +4,10 @@ description: 了解如何擴充多網站管理員的功能。
 exl-id: 4b7a23c3-65d1-4784-9dea-32fcceca37d1
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '2337'
-ht-degree: 93%
+ht-degree: 92%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 93%
 
 >[!TIP]
 >
->若希望更容易理解本頁面，請參閱以下文件的內容：[「重複使用內容：多網站管理員」。](/help/sites-cloud/administering/msm/overview.md)
+>在檔案[重複使用內容：多網站管理員](/help/sites-cloud/administering/msm/overview.md)的內容中，更容易理解此頁面。
 
 >[!CAUTION]
 >
@@ -255,7 +255,7 @@ Node sourcenode = source.adaptTo(javax.jcr.Node.class);
    * **`artifactName`**: `MyLiveActionFactory package`
    * **`packageGroup`**: `myPackages`
 
-1. 啟動 Eclipse 並[匯入 Maven 專案。](/help/implementing/developing/tools/eclipse.md#import-the-maven-project-into-eclipse)
+1. 啟動Eclipse並[匯入Maven專案](/help/implementing/developing/tools/eclipse.md#import-the-maven-project-into-eclipse)。
 
 ### 新增相依性到 POM 檔案 {#add-dependencies-to-the-pom-file}
 

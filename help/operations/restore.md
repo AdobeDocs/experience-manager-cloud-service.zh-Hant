@@ -4,10 +4,10 @@ description: 瞭解如何使用 Cloud Manager 從備份中還原 AEM as a Cloud 
 exl-id: 921d0c5d-5c29-4614-ad4b-187b96518d1f
 feature: Operations
 role: Admin
-source-git-commit: c7488b9a10704570c64eccb85b34f61664738b4e
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
-source-wordcount: '1339'
-ht-degree: 64%
+source-wordcount: '1338'
+ht-degree: 63%
 
 ---
 
@@ -31,7 +31,7 @@ Cloud Manager 提供兩種型別的備份，您可以從中還原內容。
 
 >[!TIP]
 >
->也可以[使用公用 API 還原備份](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/)
+>也可以使用公用API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/)還原備份[。
 
 >[!WARNING]
 >
@@ -44,9 +44,9 @@ Cloud Manager 提供兩種型別的備份，您可以從中還原內容。
 在還原至完整內容還原之前，請考慮以下選項以更輕鬆地還原您的內容。
 
 * 如果已刪除路徑的封裝可用，請使用[封裝管理員](/help/implementing/developing/tools/package-manager.md)再次安裝封裝。
-* 如果刪除的路徑是Sites中的頁面，請使用[Restore Tree函式。](/help/sites-cloud/authoring/sites-console/page-versions.md)
-* 如果刪除的路徑是資產資料夾，且原始檔案可供使用，請透過[Assets主控台重新上傳。](/help/assets/add-assets.md)
-* 如果刪除內容為資產，請考慮還原[資產的舊版本。](/help/assets/manage-digital-assets.md)
+* 如果刪除的路徑是Sites中的頁面，請使用[還原樹狀結構功能](/help/sites-cloud/authoring/sites-console/page-versions.md)。
+* 如果刪除的路徑是資產資料夾，且原始檔案可供使用，請透過[Assets主控台](/help/assets/add-assets.md)重新上傳。
+* 如果刪除內容為資產，請考慮還原[資產的舊版本](/help/assets/manage-digital-assets.md)。
 
 如果上述選項都無法運作，且已刪除路徑的內容很重要，請依下列各節所述執行內容還原。
 
@@ -93,7 +93,7 @@ Cloud Manager 提供兩種型別的備份，您可以從中還原內容。
 
    ![可用的備份](assets/backup-available.png)
 
-1. 使用資訊圖示來尋找您要還原的備份，以檢視有關該備份中包含的程式碼版本和AEM版本的資訊，並在[選擇備份時考慮還原的影響。](#choosing-the-right-backup)
+1. 使用資訊圖示來尋找您要還原的備份，以檢視有關該備份中包含的程式碼版本和AEM版本的資訊，並在[選擇備份](#choosing-the-right-backup)時考慮還原的影響。
 
    ![備份資訊](assets/backup-info.png)
 

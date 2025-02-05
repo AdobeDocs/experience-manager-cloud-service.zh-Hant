@@ -5,16 +5,16 @@ exl-id: 84120856-fd1d-40f7-8df4-73d4cdfcc43b
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1083'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
 # 如何透過 AEM Assets API 更新您的內容 {#update-your-content}
 
-在 [AEM Headless 開發人員歷程](overview.md)的這一部分中，了解如何使用 REST API 存取和更新內容片段的內容。
+在[AEM Headless開發人員歷程](overview.md)的這一部分，瞭解如何使用REST API來存取和更新您的內容片段內容。
 
 ## 目前進度 {#story-so-far}
 
@@ -28,7 +28,7 @@ ht-degree: 100%
 
 ## 目標 {#objective}
 
-* **對象**：進階
+* **客群**：進階
 * **目標**：了解如何使用 REST API 存取和更新內容片段的內容：
    * 介紹 AEM Assets HTTP API。
    * 介紹和討論 API 支援內容片段。

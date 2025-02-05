@@ -4,10 +4,10 @@ description: 建立設定是在 AEM as a Cloud Service 中開始使用 Headless 
 exl-id: 48801599-f279-4e55-8033-9c418d2af5bb
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Developer
-source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
-workflow-type: ht
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+workflow-type: tm+mt
 source-wordcount: '325'
-ht-degree: 100%
+ht-degree: 82%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 100%
 
 在 AEM Headless 內容管理的環境中，將設定視為 AEM 中的工作區，您可以在其中建立內容模型，該內容模型定義未來內容和內容片段的結構。您可以有多個設定來將這些模型分開。
 
-如果您熟悉[全堆疊 AEM 實作中的頁面範本](/help/sites-cloud/authoring/page-editor/templates.md)，用於管理內容模型之設定的用法是類似的。
+如果您熟悉[全棧疊AEM實作](/help/sites-cloud/authoring/page-editor/templates.md)中的頁面範本，使用組態來管理內容模型的方式會類似。
 
 ## 如何建立設定 {#how-to-create-a-configuration}
 
@@ -49,8 +49,8 @@ ht-degree: 100%
 
 ## 後續步驟 {#next-steps}
 
-使用此設定，您現在可以繼續閱讀快速入門指南的第二部分，並[建立內容片段模型。](create-content-model.md)
+使用此設定，您現在可以移至快速入門手冊的第二部分，並[建立內容片段模型](create-content-model.md)。
 
 >[!TIP]
 >
->如需設定瀏覽器的完整詳細資訊，[請參閱設定瀏覽器文件](/help/implementing/developing/introduction/configurations.md)。
+>如需有關組態瀏覽器的完整詳細資訊，請參閱[組態瀏覽器檔案](/help/implementing/developing/introduction/configurations.md)。

@@ -4,10 +4,10 @@ description: 了解如何使用 AEM 的內容片段來設計、建立、規劃�
 exl-id: a227ae2c-f710-4968-8a00-bfe48aa66145
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
-workflow-type: ht
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+workflow-type: tm+mt
 source-wordcount: '341'
-ht-degree: 100%
+ht-degree: 85%
 
 ---
 
@@ -29,7 +29,7 @@ ht-degree: 100%
 
 1. 登入 AEM as a Cloud Service，然後從主選單中選取&#x200B;**導覽** > **內容片段**。
 
-1. 選取[您之前建立的資料夾。](create-assets-folder.md)
+1. 選取您先前建立的[資料夾](create-assets-folder.md)。
 1. 選取「**建立**」。
 1. 建立內容片段以顯示為對話框。
 選取您想用於建立內容片段的位置和模型。
@@ -49,8 +49,8 @@ ht-degree: 100%
 
 ## 後續步驟 {#next-steps}
 
-現在您已經建立了一個內容片段，您可以繼續閱讀快速入門指南的最後一部分，[建立 API 要求以存取和傳遞內容片段。](create-api-request.md)
+現在您已建立內容片段，您可以繼續快速入門手冊的最後一部分，並[建立API要求來存取及傳遞內容片段](create-api-request.md)。
 
 >[!TIP]
 >
->如需有關管理內容片段的完整詳細資訊，請參閱[內容片段文件](/help/sites-cloud/administering/content-fragments/overview.md)
+>如需有關管理內容片段的完整詳細資訊，請參閱[內容片段檔案](/help/sites-cloud/administering/content-fragments/overview.md)。

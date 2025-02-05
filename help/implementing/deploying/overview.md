@@ -1,13 +1,13 @@
 ---
-title: 部署至 AEM as a Cloud Service
+title: '部署至 AEM as a Cloud Service '
 description: 了解部署至 AEM as a Cloud Service 的基礎知識和最佳做法
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
 role: Admin
-source-git-commit: 1ad144fb630eca51f2004300c71d75f627cf9977
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '3440'
-ht-degree: 95%
+ht-degree: 94%
 
 ---
 
@@ -112,7 +112,7 @@ GitHub](https://github.com/apache/sling-org-apache-sling-feature-cpconverter)上
    * 內容感知設定 (`/conf` 下的任何內容) (新增、修改、移除)
    * 指令碼 (可以在套件安裝流程的各個階段觸發安裝 Hook。請參閱 [Jackrabbit Filevault 文件](https://jackrabbit.apache.org/filevault/installhooks.html)，瞭解如何安裝 Hook。AEM CS 目前使用 Filevault 版本 3.4.0，它將安裝 Hook 限制為管理員使用者、系統使用者和管理員群組的成員))。
 
-透過在 `/apps`下的 install.author 或 install.publish 資料夾中嵌入套件，可以將可變內容安裝限制在編寫或發佈。在 AEM 6.5 中進行了重組以反映這種分離，有關建議的專案重組的詳細資料位在 [AEM 6.5 文件。](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html)
+透過在 `/apps`下的 install.author 或 install.publish 資料夾中嵌入套件，可以將可變內容安裝限制在編寫或發佈。反映此分隔的重組已在AEM 6.5中完成，建議的專案重組詳細資訊可在[AEM 6.5檔案](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html)中找到。
 
 >[!NOTE]
 >內容套件部署到所有環境類型 (開發、中繼、生產)。不可能將部署限制在特定環境中。此限制的目的是在確保可以選擇對自動執行進行測試執行。特定於環境的內容需要透過 [封裝管理員](/help/implementing/developing/tools/package-manager.md) 手動安裝
@@ -121,7 +121,7 @@ GitHub](https://github.com/apache/sling-org-apache-sling-feature-cpconverter)上
 
 任何包含的協力廠商套件都必須驗證為與 AEM as a Cloud Service 相容，否則包含該套件會導致部署失敗。
 
-如上所述，擁有現有程式碼庫的客戶應遵守 [AEM 6.5 文件](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html)中描述的 6.5 存放庫變更所需的存放庫重組工作。
+如上所述，擁有現有程式碼庫的客戶應符合[AEM 6.5檔案](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html)中說明的6.5存放庫變更所需的存放庫重組作業。
 
 ## repoinit {#repoinit}
 

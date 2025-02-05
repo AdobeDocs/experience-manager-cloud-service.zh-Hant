@@ -4,9 +4,9 @@ description: 如果您是AEM開發人員，且對Universal Editor的運作方式
 exl-id: d6f9ed78-f63f-445a-b354-f10ea37b0e9b
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: d82a88e5b7337e9d81a91e812f6a90237e80b1ea
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
-source-wordcount: '3160'
+source-wordcount: '3179'
 ht-degree: 1%
 
 ---
@@ -33,17 +33,17 @@ ht-degree: 1%
 若要遵循本概述，您需要下列可用專案。
 
 * [AEM as a Cloud Service的本機開發執行個體](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html)
-   * 您的本機開發執行個體必須在`localhost`.](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/use-the-ssl-wizard.html)上以HTTPS設定為開發目的[
-   * [必須安裝WKND示範網站。](https://github.com/adobe/aem-guides-wknd)
-* [存取通用編輯器](/help/implementing/universal-editor/getting-started.md#onboarding)
-* [本機通用編輯器服務](/help/implementing/universal-editor/local-dev.md)正在執行以進行開發
-   * 請確定將瀏覽器導向至[接受本機服務自我簽署憑證。](/help/implementing/universal-editor/local-dev.md#editing)
+   * 您的本機開發執行個體必須在`localhost`](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/use-the-ssl-wizard.html)上以HTTPS設定[，以進行開發。
+   * [必須安裝WKND示範網站](https://github.com/adobe/aem-guides-wknd)。
+* [存取通用編輯器](/help/implementing/universal-editor/getting-started.md#onboarding)。
+* [本機通用編輯器服務](/help/implementing/universal-editor/local-dev.md)正在執行以進行開發。
+   * 請確定將您的瀏覽器導向至[接受本機服務自我簽署憑證](/help/implementing/universal-editor/local-dev.md#editing)。
 
-除了對Web開發的一般熟悉以外，本檔案假設您對AEM開發具有基本的熟悉。 如果您沒有使用AEM開發的經驗，請考慮先檢閱[WKND教學課程再繼續。](/help/implementing/developing/introduction/develop-wknd-tutorial.md)
+除了對Web開發的一般熟悉以外，本檔案假設您對AEM開發具有基本的熟悉。 如果您沒有使用AEM開發的經驗，請考慮先檢閱[WKND教學課程，然後再繼續](/help/implementing/developing/introduction/develop-wknd-tutorial.md)。
 
 ## 啟動AEM並登入通用編輯器 {#sign-in}
 
-如果您尚未安裝WKND，則必須安裝本機AEM開發執行個體，並啟用HTTPS作為[ （在先決條件中詳述）。](#prerequisites)此概觀假設您的執行個體在`https://localhost:8443`執行。
+如果您尚未安裝，則必須安裝本機AEM開發執行個體，並安裝WKND及啟用HTTPS，如先決條件](#prerequisites)所詳述。 [此概觀假設您的執行個體在`https://localhost:8443`執行。
 
 1. 在AEM編輯器中開啟WKND英文主版頁面。
 
@@ -189,7 +189,7 @@ WKND頁面現在會在Universal Editor中成功載入，且JavaScript程式庫�
    <meta name="urn:adobe:aue:system:aem" content="aem:https://localhost:8443">
    ```
 
-   * 一律建議使用最新版本的程式庫。 如果您需要舊版，請參閱檔案[AEM中的通用編輯器快速入門。](/help/implementing/universal-editor/getting-started.md#alternative)
+   * 一律建議使用最新版本的程式庫。 如果您需要較舊的版本，請參閱檔案[AEM](/help/implementing/universal-editor/getting-started.md#alternative)中的Universal Editor入門。
 
 1. 將連線至本機Universal Editor服務的必要中繼資料新增至檔案結尾。
 
@@ -572,21 +572,21 @@ WKND頁面現在會在Universal Editor中成功載入，且JavaScript程式庫�
 
 當您開始檢測自己的應用程式時，請牢記您在本範例中執行的基本步驟。
 
-1. [您可以設定開發環境。](#prerequisites)
+1. [您已設定您的開發環境](#prerequisites)。
    * 在已安裝WKND的HTTPS上本機執行的AEM
    * 在HTTPS上本機執行的Universal Editor服務
 1. 您已更新AEM OSGi設定，允許從遠端載入其內容。
    * [&#39;org.apache.sling.engine.impl.SlingMainServlet&#39;](#sameorigin)
    * [&#39;com.day.crx.security.token.impl.impl.TokenAuthenticationHandler&#39;](#samesite-cookies)
-1. [您已新增 ](#ue-connect-remote-frame)
-1. [您定義了一個連線，以將變更保留在 ](#connection)
+1. [您已將`universal-editor-embedded.js`資料庫新增至應用程式](#ue-connect-remote-frame)之頁面元件的`customheaderlibs.html`檔案。
+1. [您定義了一個連線，以將變更保留在應用程式](#connection)之頁面元件的`customheaderlibs.html`檔案中。
    * 您已定義與本機AEM開發執行個體的連線。
    * 您也定義了與本機Universal Editor服務的連線。
-1. [您已檢測Teaser元件。](#instrumenting-components)
-1. [您檢測了Teaser的子元件。](#subcomponents)
-1. [您定義了自訂驗證標頭，以便使用本機Universal Editor服務儲存變更。](#auth-header)
-1. [您指示應用程式使用屬性面板。](#properties-rail)
-1. [您檢測Teaser元件以使用屬性面板。](#properties-rail-component)
+1. [您已檢測Teaser元件](#instrumenting-components)。
+1. [您已檢測Teaser的子元件](#subcomponents)。
+1. [您定義了自訂驗證標頭，因此可以使用本機通用編輯器服務儲存變更](#auth-header)。
+1. [您已檢測應用程式以使用屬性面板](#properties-rail)。
+1. [您已檢測Teaser元件以使用屬性面板](#properties-rail-component)。
 
 您可以依照這些相同步驟來檢測您自己的應用程式，以便與通用編輯器搭配使用。 JCR中的任何屬性都可以向通用編輯器公開。
 

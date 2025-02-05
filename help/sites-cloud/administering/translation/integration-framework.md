@@ -5,10 +5,10 @@ feature: Language Copy
 role: Admin
 exl-id: 6e74cdee-7965-4087-a733-e9d81c4aa7c2
 solution: Experience Manager Sites
-source-git-commit: c4cb466bf6a9b6f8f4a28943d28bdb524610f5ad
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1447'
-ht-degree: 10%
+ht-degree: 9%
 
 ---
 
@@ -16,15 +16,15 @@ ht-degree: 10%
 
 翻譯整合框架會與協力廠商翻譯服務整合，以協調AEM內容的翻譯。 它涉及三個基本步驟。
 
-1. [連接到您的翻譯服務提供者。](#connecting-to-a-translation-service-provider)
-1. [建立翻譯整合框架設定。](#creating-a-translation-integration-configuration)
-1. [將雲端設定與您的頁面建立關聯。](#configuring-pages-for-translation)
+1. [連線到您的翻譯服務提供者](#connecting-to-a-translation-service-provider)。
+1. [建立翻譯整合框架組態](#creating-a-translation-integration-configuration)。
+1. [將雲端設定與您的頁面建立關聯](#configuring-pages-for-translation)。
 
 如需AEM內容翻譯功能的概述，請參閱[翻譯多語言網站的內容](overview.md)。
 
 >[!TIP]
 >
->如果不熟悉如何翻譯內容，請參閱[網站翻譯歷程](/help/journey-sites/translation/overview.md)，其中會指引您使用AEM強大的翻譯工具來翻譯您的AEM Sites內容，非常適合沒有AEM或翻譯經驗的人士。
+>如果不熟悉如何翻譯內容，請參閱[網站翻譯歷程](/help/journey-sites/translation/overview.md)，此歷程將引導您使用AEM強大的翻譯工具來翻譯您的AEM Sites內容，非常適合沒有AEM或翻譯經驗的人士。
 
 ## 連接到翻譯服務提供者 {#connecting-to-a-translation-service-provider}
 
@@ -58,7 +58,7 @@ AEM預設包含[連線至Microsoft® Translator](connect-ms-translator.md)的功
 
 架構的單一設定可控制頁面內容和資產的翻譯方式。 若要建立翻譯設定：
 
-1. 在[全域導覽功能表中，](/help/sites-cloud/authoring/basic-handling.md#global-navigation)選取&#x200B;**工具>Cloud Service與翻譯Cloud Service**。
+1. 在[全域導覽功能表](/help/sites-cloud/authoring/basic-handling.md#global-navigation)中，選取&#x200B;**工具>Cloud Service與翻譯Cloud Service**。
 1. 導覽至您要在內容結構中建立設定的位置。這通常以特定網站為基礎，或可能是全域的。
 1. 在欄位中提供下列資訊，然後選取&#x200B;**建立**：
    1. 在下拉式清單中選取&#x200B;**組態型別**。

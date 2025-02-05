@@ -5,7 +5,7 @@ exl-id: 224928dd-e365-4f3e-91af-4d8d9f47efdd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1305'
 ht-degree: 1%
@@ -113,7 +113,7 @@ AEM中實際執行的只有最後三個步驟。 這表示所有必要的CSS和J
 
 核心元件2版和更新版本已完全啟用，以運用樣式系統，無需額外設定。
 
-若要為您自己的自訂元件啟用樣式系統，或[在「編輯」對話方塊中啟用選用的「樣式」索引標籤，則只需執行下列步驟。](#enable-styles-tab-edit)
+若要為您自己的自訂元件啟用樣式系統，或[在[編輯]對話方塊](#enable-styles-tab-edit)中啟用選用的[樣式]索引標籤，則只需執行下列步驟。
 
 ### 在設計對話方塊中啟用樣式標籤 {#enable-styles-tab-design}
 

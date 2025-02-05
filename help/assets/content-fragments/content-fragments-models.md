@@ -5,7 +5,7 @@ exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
 feature: Content Fragments, GraphQL API
 role: User, Admin, Architect
 solution: Experience Manager Sites
-source-git-commit: 862a1f67782775cc1b2ee6e3d3d66ae5560a15ab
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '3120'
 ht-degree: 5%
@@ -14,7 +14,7 @@ ht-degree: 5%
 
 # 內容片段模型 {#content-fragment-models}
 
-AEM中的內容片段模型定義了您[內容片段，](/help/assets/content-fragments/content-fragments.md)作為您Headless內容基礎的內容結構。
+AEM中的內容片段模型定義了您[內容片段](/help/assets/content-fragments/content-fragments.md)的內容結構，可作為您Headless內容的基礎。
 
 若要使用內容片段模式，您可以：
 

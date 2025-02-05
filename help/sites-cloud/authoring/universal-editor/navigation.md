@@ -5,10 +5,10 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
-source-wordcount: '1615'
-ht-degree: 38%
+source-wordcount: '1613'
+ht-degree: 29%
 
 ---
 
@@ -24,8 +24,8 @@ Universal Editor 支援在任意實作中編輯任何方面的內容，以便提
 
 >[!TIP]
 >
->* 如需有關使用通用編輯器編寫的詳細資訊，請參閱檔案[使用通用編輯器編寫內容。](/help/sites-cloud/authoring/universal-editor/authoring.md)
->* 如需 Universal Editor 的更詳細介紹，請參閱 [Universal Editor 簡介](/help/implementing/universal-editor/introduction.md)文件。
+>* 如需有關使用通用編輯器編寫的詳細資訊，請參閱檔案[使用通用編輯器編寫內容](/help/sites-cloud/authoring/universal-editor/authoring.md)。
+>* 如需Universal Editor的詳細介紹，請參閱[Universal Editor簡介](/help/implementing/universal-editor/introduction.md)。
 
 ## 準備應用程式 {#prepare-app}
 
@@ -48,13 +48,13 @@ Universal Editor 支援在任意實作中編輯任何方面的內容，以便提
 
 >[!NOTE]
 >
->在&#x200B;[**網站**&#x200B;主控台中編輯頁面時，](/help/sites-cloud/authoring/sites-console/introduction.md)主控台將開啟適合頁面[範本：](/help/sites-cloud/authoring/page-editor/templates.md)的編輯器，可以是本檔案中說明的通用編輯器，或[頁面編輯器。](/help/sites-cloud/authoring/page-editor/introduction.md)
+>在&#x200B;[**網站**&#x200B;主控台](/help/sites-cloud/authoring/sites-console/introduction.md)中編輯頁面時，主控台將開啟適合頁面[範本](/help/sites-cloud/authoring/page-editor/templates.md)的編輯器，可以是本檔案中說明的通用編輯器，或[頁面編輯器](/help/sites-cloud/authoring/page-editor/introduction.md)。
 
 ### 直接存取 {#accessing-directly}
 
-1. 登入通用編輯器。 您需要Adobe ID才能登入，[才能存取通用編輯器。](/help/implementing/universal-editor/getting-started.md#request-access)
+1. 登入通用編輯器。 您需要Adobe ID才能登入，[才能存取通用編輯器](/help/implementing/universal-editor/getting-started.md#request-access)。
 
-1. 登入後，請在[位置列中輸入您要編輯的頁面 URL。](#location-bar)讓您開始編輯文字內容或媒體內容等內容。
+1. 登入後，請在[位置列](#location-bar)中輸入您要編輯的頁面URL，以便開始編輯文字內容或媒體內容等內容。
 
 ## 了解 UI {#ui}
 
@@ -75,7 +75,7 @@ Experience Cloud 標頭會始終顯示在畫面頂端。這是一個錨點，說
 
 #### Experience Manager {#experience-manager}
 
-選取標頭左側的 Adobe Experience Cloud 連結，導覽至 Experience Manager 解決方案的根目錄，以存取 [Cloud Manager](/help/onboarding/cloud-manager-introduction.md)、[Cloud Acceleration Manager](/help/journey-migration/cloud-acceleration-manager/introduction/overview-cam.md) 和 [Software Distribution](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html) 等工具。
+選取標頭左側的Adobe Experience Cloud連結，以導覽至您Experience Manager解決方案的根目錄，以存取工具，例如[Cloud Manager](/help/onboarding/cloud-manager-introduction.md)、[Cloud Acceleration Manager](/help/journey-migration/cloud-acceleration-manager/introduction/overview-cam.md)和[Software Distribution](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html)。
 
 ![全域導覽按鈕](assets/global-navigation.png)
 
@@ -99,7 +99,7 @@ Experience Cloud 標頭會始終顯示在畫面頂端。這是一個錨點，說
 
 #### 通知 {#notifications}
 
-此圖示會標有目前已指派之未完成的[通知](/help/implementing/cloud-manager/notifications.md)數量。
+此圖示標有目前已分配的未完成[通知](/help/implementing/cloud-manager/notifications.md)的數目。
 
 ![通知](assets/notifications.png)
 
@@ -111,7 +111,7 @@ Experience Cloud 標頭會始終顯示在畫面頂端。這是一個錨點，說
 
 ### 通用編輯器工具列 {#universal-editor-toolbar}
 
-Universal Editor工具列一律出現在熒幕頂端[Experience Cloud標頭正下方。](#experience-cloud-header)它可讓您快速存取，以導覽到另一個頁面進行編輯和發佈目前的頁面。
+Universal Editor工具列一律出現在熒幕頂端[Experience Cloud標頭](#experience-cloud-header)的正下方。 它可讓您快速瀏覽至其他頁面以編輯及發佈目前頁面。
 
 ![通用編輯器工具列](assets/universal-editor-toolbar.png)
 
@@ -127,7 +127,7 @@ Universal Editor工具列一律出現在熒幕頂端[Experience Cloud標頭正�
 
 >[!NOTE]
 >
->您要使用通用編輯器編輯的任何頁面都必須進行[檢測以支援通用編輯器。](/help/implementing/universal-editor/getting-started.md)
+>您要使用通用編輯器編輯的任何頁面都必須進行[檢測以支援通用編輯器](/help/implementing/universal-editor/getting-started.md)。
 
 #### 位置列 {#location-bar}
 
@@ -141,11 +141,11 @@ Universal Editor工具列一律出現在熒幕頂端[Experience Cloud標頭正�
 
 >[!NOTE]
 >
->您要使用通用編輯器編輯的任何頁面都必須進行[檢測以支援通用編輯器。](/help/implementing/universal-editor/getting-started.md)
+>您要使用通用編輯器編輯的任何頁面都必須進行[檢測以支援通用編輯器](/help/implementing/universal-editor/getting-started.md)。
 
 #### 驗證標題設定 {#authentication-settings}
 
-如果您需要[設定本機開發目的的自訂驗證標頭，請選取驗證標頭設定圖示。](/help/implementing/universal-editor/developer-overview.md#auth-header)
+如果您需要[設定本機開發目的的自訂驗證標頭](/help/implementing/universal-editor/developer-overview.md#auth-header)，請選取驗證標頭設定圖示。
 
 ![驗證標題設定按鈕](assets/authentication-header-settings.png)
 
@@ -189,7 +189,7 @@ Universal Editor工具列一律出現在熒幕頂端[Experience Cloud標頭正�
 
 >[!TIP]
 >
->您可以自訂應用程式[的預覽URL。](/help/implementing/universal-editor/customizing.md#custom-preview-urls)
+>您應用程式[的預覽URL可以自訂](/help/implementing/universal-editor/customizing.md#custom-preview-urls)。
 
 #### 發佈 {#publish}
 
@@ -213,8 +213,8 @@ Universal Editor工具列一律出現在熒幕頂端[Experience Cloud標頭正�
 
 Universal Editor提供可自訂且可擴充的撰寫體驗。 如果您在工具列中看到其他按鈕，表示您的通用編輯器已擴展。
 
-* 如需擴充功能的詳細資訊，請參閱[自訂及擴充通用編輯器。](/help/implementing/universal-editor/customizing.md)
-* 如需個別擴充功能運作方式的詳細資訊，請參閱[Extension Manager檔案。](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/)
+* 如需擴充功能的詳細資訊，請參閱[自訂及擴充通用編輯器](/help/implementing/universal-editor/customizing.md)。
+* 如需個別擴充功能運作方式的詳細資訊，請參閱[Extension Manager檔案](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/)。
 
 ### 編輯器 {#editor}
 
@@ -222,7 +222,7 @@ Universal Editor提供可自訂且可擴充的撰寫體驗。 如果您在工具
 
 ![編輯器](assets/editor.png)
 
-如果編輯器在[預覽模式，](#preview-mode)內容即為可瀏覽，而且您可以點選連結，但無法編輯內容。
+如果編輯器處於[預覽模式](#preview-mode)，內容將可供瀏覽，您可以關注連結，但您無法編輯內容。
 
 ### 屬性面板 {#properties-rail}
 
@@ -280,7 +280,7 @@ Universal Editor提供可自訂且可擴充的撰寫體驗。 如果您在工具
 
 ![「新增」圖示](assets/ue-add-component-icon.png)
 
-點選或按一下「新增」按鈕即會開啟元件的下拉選單，可用於[新增到選取的容器。](/help/sites-cloud/authoring/universal-editor/authoring.md#adding-components)
+點選或按一下新增按鈕會開啟元件的下拉式功能表，這些元件可用於[新增至選取的容器](/help/sites-cloud/authoring/universal-editor/authoring.md#adding-components)。
 
 ![新增內容功能表](assets/add-context-menu.png)
 
@@ -294,7 +294,7 @@ Universal Editor提供可自訂且可擴充的撰寫體驗。 如果您在工具
 
 ![圖示重複](assets/duplicate.png)
 
-點選或按一下重複按鈕[會重複選取的元件。](/help/sites-cloud/authoring/universal-editor/authoring.md#duplicating-components)
+點選或按一下重複按鈕[會重複選取的元件](/help/sites-cloud/authoring/universal-editor/authoring.md#duplicating-components)。
 
 ##### 刪除 {#delete}
 
@@ -302,7 +302,7 @@ Universal Editor提供可自訂且可擴充的撰寫體驗。 如果您在工具
 
 ![「刪除」圖示](assets/ue-delete-component-icon.png)
 
-點選或按一下刪除按鈕[刪除該元件。](/help/sites-cloud/authoring/universal-editor/authoring.md#deleting-components)
+點選或按一下刪除按鈕[會刪除元件](/help/sites-cloud/authoring/universal-editor/authoring.md#deleting-components)。
 
 >[!TIP]
 >
@@ -312,9 +312,9 @@ Universal Editor提供可自訂且可擴充的撰寫體驗。 如果您在工具
 
 Universal Editor提供可自訂且可擴充的撰寫體驗。 如果您在屬性面板中看到其他按鈕，表示您的通用編輯器已擴充。
 
-* 如需擴充功能的詳細資訊，請參閱[自訂及擴充通用編輯器。](/help/implementing/universal-editor/customizing.md)
-* 如需個別擴充功能運作方式的詳細資訊，請參閱[Extension Manager檔案。](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/)
+* 如需擴充功能的詳細資訊，請參閱[自訂及擴充通用編輯器](/help/implementing/universal-editor/customizing.md)。
+* 如需個別擴充功能運作方式的詳細資訊，請參閱[Extension Manager檔案](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/)。
 
 ## 後續步驟 {#next-steps}
 
-現在您已經知道如何存取和瀏覽通用編輯器，您就可以使用它[創作內容了。](/help/sites-cloud/authoring/universal-editor/authoring.md)
+現在您已經知道如何存取和瀏覽通用編輯器，您已經準備好可以使用它[編寫內容](/help/sites-cloud/authoring/universal-editor/authoring.md)。

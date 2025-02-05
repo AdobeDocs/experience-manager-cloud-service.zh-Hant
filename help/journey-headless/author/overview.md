@@ -5,10 +5,10 @@ exl-id: fe124c6b-932a-44fc-a87b-12691aefea56
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '860'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 
 ## 簡介 {#introduction}
 
-Headless 實作對於傳遞體驗給對象而言越來越重要，無論對象身在何處，使用何種管道。
+Headless 實作對於傳遞體驗給客群而言越來越重要，無論客群身在何處，使用何種管道。
 
 Headless 內容不是以傳統的頁面和元件結構為基礎。相反，是以建立管道中立、可重複使用的內容片段及其跨管道傳遞為基礎。
 
@@ -40,7 +40,7 @@ Headless 內容不是以傳統的頁面和元件結構為基礎。相反，是�
 
 如果您想了解 Adobe 如何建議如何使用 AEM 解決 Headless 商務案例，[AEM Headless 歷程](/help/journey-documentation/documentation-journeys.md)是理想起點。
 
-## 對象 {#audience}
+## 客群 {#audience}
 
 此歷程專為內容作者角色所設計。作為內容作者，您會在內容片段中建立實際內容。
 
@@ -64,7 +64,7 @@ Headless 內容不是以傳統的頁面和元件結構為基礎。相反，是�
 
 ## 下一步 {#what-is-next}
 
-您現在已準備好開始您的 Adobe Headless 歷程。我們鼓勵您繼續歷程的下一部分並閱讀文章[AEM Headless as a Cloud Service 製作 - 簡介。](introduction.md)
+您現在已準備好開始您的 Adobe Headless 歷程。我們鼓勵您繼續下一段歷程並閱讀文章[為AEM Headless編寫as a Cloud Service — 簡介](introduction.md)。
 
 <!--
 ### Choose Your Own Adventure {#choose-your-path}

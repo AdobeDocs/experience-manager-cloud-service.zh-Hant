@@ -4,7 +4,7 @@ description: 禁止透過 Sling 模型匯出工具序列化 ResourceResolvers
 exl-id: 63972c1e-04bd-4eae-bb65-73361b676687
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: a64c17943332782814bdacd7484e056cd445d3a9
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '526'
 ht-degree: 5%
@@ -15,7 +15,7 @@ ht-degree: 5%
 
 Sling模型匯出工具功能允許將Sling模型物件序列化為JSON格式。 此功能廣泛使用，因為它可讓SPA （單頁應用程式）輕鬆從AEM存取資料。 實施方面，Jackson Databind資料庫是用來序列化這些物件。
 
-序列化是遞回作業。 從「根物件」開始，它會遞回循環遍歷所有合格的物件，並將它們及其子件序列化。 您可以在文章[Jackson — 決定要序列化/還原序列化的欄位](https://www.baeldung.com/jackson-field-serializable-deserializable-or-not)中找到哪些欄位的描述。
+序列化是遞回作業。 從「根物件」開始，它會遞回循環遍歷所有合格的物件，並將它們及其子件序列化。 您可以在文章[Jackson — 決定哪些欄位要序列化/還原序列化](https://www.baeldung.com/jackson-field-serializable-deserializable-or-not)中找到哪些欄位的描述。
 
 此方法會將所有型別的物件序列化為JSON。 自然地，它也可以序列化Sling `ResourceResolver`物件（如果序列化規則涵蓋此物件）。 這是問題所在，因為`ResourceResolver`服務（因此也是代表它的服務物件）包含潛在的敏感資訊，這些資訊不應公開。 例如：
 
@@ -49,6 +49,6 @@ Adobe計畫以兩步驟方式停用`ResourceResolvers`的序列化：
 
 Adobe會要求所有客戶檢查其應用程式記錄和程式碼庫，以檢視他們是否受此問題影響，並視需要變更自訂應用程式，讓此警告訊息不再出現在記錄中。
 
-我們假設在大多數情況下，這些必要的變更是直接的。 JSON輸出中完全不需要`ResourceResolver`物件，因為包含在該處的資訊通常不是前端應用程式所必需的，這表示在大多數情況下，應該足以排除Jackson不會考慮`ResourceResolver`物件（請參閱[規則。](https://www.baeldung.com/jackson-field-serializable-deserializable-or-not)）
+我們假設在大多數情況下，這些必要的變更是直接的。 JSON輸出中完全不需要`ResourceResolver`物件，因為包含在該處的資訊通常不是前端應用程式所必需的，這表示在大多數情況下，應該足以排除Jackson不會考慮`ResourceResolver`物件（請參閱[規則](https://www.baeldung.com/jackson-field-serializable-deserializable-or-not)）。
 
 如果Sling模型受到此問題影響但未變更，則明確停用`ResourceResolver`物件的序列化(作為第二個步驟由Adobe執行)將會強制在JSON輸出中進行變更。

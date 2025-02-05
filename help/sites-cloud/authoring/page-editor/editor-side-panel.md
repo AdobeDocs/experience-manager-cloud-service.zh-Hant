@@ -5,7 +5,7 @@ exl-id: 5f025828-f2ca-4cbb-9cdf-a199e9e90cc7
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1122'
 ht-degree: 0%
@@ -79,7 +79,7 @@ ht-degree: 0%
 
 ![元件瀏覽器資訊](assets/editor-side-panel-component-description.png)
 
-如需有關可用元件的詳細資訊，請參閱[元件主控台。](/help/sites-cloud/authoring/components-console.md)
+如需有關可用元件的詳細資訊，請參閱[元件主控台](/help/sites-cloud/authoring/components-console.md)
 
 ## Assets瀏覽器 {#assets-browser}
 
@@ -182,4 +182,4 @@ ht-degree: 0%
 
 ## 關聯的內容瀏覽器 {#associated-content-browser}
 
-如果您的頁面包含內容片段，您也可以存取相關內容的[瀏覽器。](/help/sites-cloud/authoring/fragments/content-fragments.md#using-associated-content)
+如果您的頁面包含內容片段，您也可以存取關聯內容的[瀏覽器](/help/sites-cloud/authoring/fragments/content-fragments.md#using-associated-content)。

@@ -5,7 +5,7 @@ feature: Multi Site Manager
 role: Admin
 exl-id: 53ed574d-e20d-4e73-aaa2-27168b9d05fe
 solution: Experience Manager Sites
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '4270'
 ht-degree: 2%
@@ -348,7 +348,7 @@ Blueprint頁面（在Blueprint設定中參照）為您提供使用目前(Bluepri
 
 您可以隨時新增元件至即時副本頁面。 即時副本及其段落系統的繼承狀態不會控制您新增元件的能力。
 
-當即時副本頁面與來源頁面同步時，新增的元件將維持不變。 另請參閱[變更即時副本頁面上的元件順序。](#changing-the-order-of-components-on-a-live-copy-page)
+當即時副本頁面與來源頁面同步時，新增的元件將維持不變。 另請參閱[變更即時副本頁面上的元件順序](#changing-the-order-of-components-on-a-live-copy-page)。
 
 >[!TIP]
 >

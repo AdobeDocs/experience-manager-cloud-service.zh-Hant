@@ -4,7 +4,7 @@ description: 將ContextHub元件新增至頁面後，指令碼即可使用Contex
 exl-id: ec35bef5-610c-4e85-a43a-d4201b5eb03e
 feature: Developing, Personalization
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '4602'
 ht-degree: 2%
@@ -483,7 +483,7 @@ ContextHub.Store.JSONPStore擴充[ContextHub.Store.Core](#contexthub-store-core)
 
 ## ContextHub.Store.PersistedJSONPStore {#contexthub-store-persistedjsonpstore}
 
-`ContextHub.Store.PersistedJSONPStore`擴充[ContextHub.Store.JSONPStore](#contexthub-store-jsonpstore)，因此繼承該類別的所有函式。 不過，從JSONP服務擷取的資料會根據ContextHub持續性的設定持續存在。 （請參閱[持續模式：](adding-contexthub.md#persistence-modes)）
+`ContextHub.Store.PersistedJSONPStore`擴充[ContextHub.Store.JSONPStore](#contexthub-store-jsonpstore)，因此繼承該類別的所有函式。 不過，從JSONP服務擷取的資料會根據ContextHub持續性的設定持續存在。 （請參閱[持續性模式](adding-contexthub.md#persistence-modes)）
 
 ## ContextHub.Store.PersistedStore {#contexthub-store-persistedstore}
 
@@ -1033,7 +1033,7 @@ ContextHub.Utils.JSON.tree.sanitizeKey(key)
 
 #### setItem(tree， key， value) {#setitem-tree-key-value}
 
-將索引鍵/值配對新增至物件復本的資料樹狀結構。 如需資料樹狀結構的相關資訊，請參閱[持續性。](contexthub.md#persistence)
+將索引鍵/值配對新增至物件復本的資料樹狀結構。 如需資料樹狀結構的相關資訊，請參閱[持續性](contexthub.md#persistence)。
 
 ##### 參數 {#parameters-setitem-2}
 

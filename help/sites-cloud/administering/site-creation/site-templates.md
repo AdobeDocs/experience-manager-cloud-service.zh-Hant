@@ -5,7 +5,7 @@ feature: Administering
 role: Admin
 exl-id: 42eec922-b02e-4f2c-8107-7336192919c7
 solution: Experience Manager Sites
-source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '556'
 ht-degree: 19%
@@ -20,7 +20,7 @@ ht-degree: 19%
 
 使用預先定義的結構很方便，可根據一組現有標準快速部署新網站。 網站範本是一種將基本網站內容結合成方便且可重複使用之封裝的方法。
 
-網站範本通常包含基本網站內容和結構以及網站樣式資訊，稱為[網站主題](site-themes.md)，以快速啟動新網站。 管理員在網站建立過程中選取網站[所依據的網站範本。](create-site.md)
+網站範本通常包含基本網站內容和結構以及網站樣式資訊，稱為[網站主題](site-themes.md)，以便快速啟動新網站。 管理員在網站建立程式](create-site.md)期間，選取網站[所依據的網站範本。
 
 範本可重複使用且可自訂，因此功能強大。 由於您可以在AEM安裝中使用多個範本，因此可以彈性地建立不同的網站以符合各種業務需求。
 
@@ -67,7 +67,7 @@ ht-degree: 19%
 
 ## 標準網站範本 {#standard-site-template}
 
-Adobe提供最佳實務參考範本，您可以依據此範本建立自己的範本。 [標準網站範本可在GitHub上取得。](https://github.com/adobe/aem-site-template-standard)
+Adobe提供最佳實務參考範本，您可以依據此範本建立自己的範本。 [標準網站範本可在GitHub上取得](https://github.com/adobe/aem-site-template-standard)。
 
 [可以下載最新版本的標準網站範本](https://github.com/adobe/aem-site-template-standard/releases)，並直接用於[建立新網站](create-site.md)。
 

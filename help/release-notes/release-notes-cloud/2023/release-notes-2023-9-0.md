@@ -4,7 +4,7 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2023.9.0 版�
 exl-id: d747f58b-8d6c-418d-9d2b-ec3ae4b6dc03
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1440'
 ht-degree: 95%
@@ -58,7 +58,7 @@ Edge Delivery 是一組可組合的新服務，著重在最大限度地發揮內
 
 ### 管理員檢視中的新功能 {#admin-view-features}
 
-* **整合AEM Assetsas a Cloud Service與Edge Delivery Services的檔案式製作**：整合AEM Assets與檔案式製作以進行Edge Delivery Services，讓網站作者在Microsoft Word或Google檔案中製作檔案時，可以[使用AEM Assets存放庫中可用的影像](/help/edge/using.md#integrate-assets-edge)。
+* **將AEM Assetsas a Cloud Service與Edge Delivery Services的檔案式製作整合**：將AEM Assets與檔案式製作整合以供Edge Delivery Services使用，讓網站作者在Microsoft Word或Google Docs中製作檔案時，可以[使用AEM Assets存放庫中可用的影像](/help/edge/using.md#integrate-assets-edge)。
 
 * **擷取 ZIP 封存**：能夠選取在 Experience Manager 中管理的 ZIP 存檔，並可[將檔案直接擷取至 Experience Manager 中的檔案](/help/assets/manage-digital-assets.md#extract-zip-archives)無需下載。
 
@@ -66,7 +66,7 @@ Edge Delivery 是一組可組合的新服務，著重在最大限度地發揮內
 
 ### [!DNL Experience Manager Assets] 中可用的搶鮮版功能 {#prerelease-features-assets}
 
-* **Dynamic Media**：[Dynamic Media 中的影片現有多語言字幕和多語言音訊支援](/help/assets/dynamic-media/video.md#about-msma) - 您現在可以輕鬆地將多語字幕和多語言音訊新增至主要影片中。此功能表示全球對象都可以存取您的影片。您可以以多種語言向全球對象自訂單一已發佈的主要影片，並遵守不同地理區域的輔助功能指南。此外，作者還可以在使用者介面的單一標籤管理字幕和音軌。
+* **Dynamic Media**：[Dynamic Media 中的影片現有多語言字幕和多語言音訊支援](/help/assets/dynamic-media/video.md#about-msma) - 您現在可以輕鬆地將多語字幕和多語言音訊新增至主要影片中。此功能表示全球觀眾都可以存取您的影片。您可以以多種語言向全球客群自訂單一已發佈的主要影片，並遵守不同地理區域的輔助功能指南。此外，作者還可以在使用者介面的單一標籤管理字幕和音軌。
 
   ![所選影片資產「屬性」頁面上的「字幕和音訊」標籤。](/help/release-notes/assets/msma-aem-cs.png)*所選影片資產「屬性」頁面上的「字幕和音訊」標籤。*
 
@@ -80,7 +80,7 @@ Edge Delivery 是一組可組合的新服務，著重在最大限度地發揮內
 
   >[!VIDEO](https://video.tv.adobe.com/v/3424577/enable-adobe-analytics/?quality=12&learn=on)
 
-* [**適用於最適化表單的 Adobe Analytics 報告範本**](/help/forms/view-understand-aem-forms-analytics-reports.md)：Forms as a Cloud Service 現在提供 Adobe Analytics 報告 OOTB。這可幫助您輕鬆了解表單的效能。表單層級的量度可讓您深入了解表單在多個關鍵效能指標 (KPI) 上的表現，例如呈現、訪客、提交、平均填寫時間。透過追蹤使用者行為和意見回饋，您可以識別表單中造成混亂的部份，並指引表單設計和功能的改善。
+* [**適用於最適化表單的 Adobe Analytics 報告範本**](/help/forms/view-understand-aem-forms-analytics-reports.md)：Forms as a Cloud Service 現在提供 Adobe Analytics 報告 OOTB。這可幫助您輕鬆了解表單的效能。表單層級的量度可讓您深入了解表單在多個關鍵績效指標 (KPI) 上的表現，例如呈現、訪客、提交、平均填寫時間。透過追蹤使用者行為和意見回饋，您可以識別表單中造成混亂的部份，並指引表單設計和功能的改善。
 
   ![最適化表單使用者參與 Adobe Analytics 報告](/help/forms/assets/forms-analytics-report.png)
 
@@ -118,7 +118,7 @@ Edge Delivery 是一組可組合的新服務，著重在最大限度地發揮內
 
 ### 行銷活動相關 URL 參數的新 CDN 快取行為 {#cache-url-params}
 
-針對新環境，CDN預設會移除行銷相關查詢引數，以提高行銷活動效能和快取命中率。 既有環境不受影響。[深入了解.](/help/implementing/dispatcher/caching.md#marketing-parameters)
+針對新環境，CDN預設會移除行銷相關查詢引數，以提高行銷活動效能和快取命中率。 既有環境不受影響。[了解更多](/help/implementing/dispatcher/caching.md#marketing-parameters)。
 
 ### 流量篩選規則 (包括 WAF 規則) 早期採用者計劃 {#waf-early-adopter}
 

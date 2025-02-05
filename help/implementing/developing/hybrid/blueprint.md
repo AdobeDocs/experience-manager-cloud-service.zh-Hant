@@ -4,7 +4,7 @@ description: 本檔案說明任何SPA架構都應該履行的一般且獨立於�
 exl-id: 9d47c0e9-600c-4f45-9169-b3c9bbee9152
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: e06766160009eaa1bbc41bbf7cfad967a5195e71
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '2022'
 ht-degree: 0%
@@ -81,7 +81,7 @@ SPA元件必須和頁面模型同步，並更新以相應地變更其內容。 �
 * `:itemsOrder`：子項的已排序清單。 JSON對應物件無法保證其欄位的順序。 透過同時使用對應和目前的陣列，API的取用者便擁有兩種結構的優點
 * `:path`：專案的內容路徑（存在於代表頁面的專案上）
 
-另請參閱[AEM Content Services快速入門。](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)
+另請參閱[AEM Content Services快速入門](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)。
 
 ### 框架特定模組 {#framework-specific-module}
 

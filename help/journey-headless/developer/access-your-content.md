@@ -5,16 +5,16 @@ exl-id: 1adecc69-5f92-4007-8a2a-65bf1e960645
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1344'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
 # 如何透過 AEM Delivery API 存取您的內容 {#access-your-content}
 
-在 [AEM Headless 開發人員歷程](overview.md)的這一部分中，您可以了解如何使用 GraphQL 查詢來存取您的內容片段內容並提供給您的應用程式 ( Headless 傳遞)。
+在[AEM Headless開發人員歷程](overview.md)的這一部分，您可以瞭解如何使用GraphQL查詢來存取您的內容片段的內容，並將其饋送至您的應用程式（headless傳送）。
 
 ## 目前進度 {#story-so-far}
 
@@ -27,7 +27,7 @@ ht-degree: 100%
 
 本文章以這些基本知識為基礎，以便您了解如何使用 AEM GraphQL API 在 AEM 存取您現有的 Headless 內容。
 
-* **對象**：初學者
+* **客群**：初學者
 * **目標**：了解如何使用 GraphQL 查詢來存取內容片段的內容。
    * 介紹 GraphQL 和 AEM GraphQL API。
    * 深入了解 AEM GraphQL API 的詳細資訊。

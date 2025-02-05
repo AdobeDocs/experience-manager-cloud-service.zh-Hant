@@ -4,10 +4,10 @@ description: 了解如何為 AEM as a Cloud Service 設定進階網路功能，�
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
 feature: Security
 role: Admin
-source-git-commit: 2a7d46e91bbd6ca96bd8b7fd5d4d84cf69bdee36
-workflow-type: ht
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+workflow-type: tm+mt
 source-wordcount: '5524'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 
 >[!TIP]
 >
->除了本文件以之外，還有一系列教學課程專門引導您了解此[位置的每個進階網路選項。](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/cloud-service/networking/advanced-networking)
+>除了這份檔案之外，還有一系列教學課程，旨在逐步引導您瞭解此[位置](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/cloud-service/networking/advanced-networking)的每個進階網路選項。
 
 ## 概觀 {#overview}
 
@@ -41,7 +41,7 @@ AEM as a Cloud Service 提供以下進階網路選項：
 設定進階網路功能時，有以下限制。
 
 * 一個程式可以提供單一進階網路選項 (彈性連接埠輸出、專用輸出 IP 位址或 VPN)。
-* 進階網路不適用於[沙箱程式。](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
+* 進階網路不適用於[沙箱程式](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)。
 * 使用者必須擔任&#x200B;**管理員**&#x200B;角色，才能在您的程式中新增和設定網路基礎架構。
 * 必須先建立生產環境，然後才能將網路基礎架構加入您的程式。
 * 您的網路基礎設施必須與生產環境的主要區域位於相同區域內。
@@ -54,8 +54,8 @@ AEM as a Cloud Service 提供以下進階網路選項：
 
 使用進階網路功能需要兩個步驟：
 
-1. 設定進階網路選項必須先在程式層級完成，無論是[彈性連接埠輸出、](#flexible-port-egress) [專用輸出 IP 位址](#dedicated-egress-ip-address)或 [VPN](#vpn) 都一樣 。
-1. 若要使用進階網路選項，必須[在環境層級啟用。](#enabling)
+1. 進階網路選項的設定，不論是[彈性連線埠輸出](#flexible-port-egress)、[專用輸出IP位址](#dedicated-egress-ip-address)或[VPN](#vpn)，都必須先在程式層級完成。
+1. 若要使用，進階網路選項必須在環境層級](#enabling)啟用[。
 
 這兩個步驟都可以使用 Cloud Manager UI 或 Cloud Manager API 來完成。
 
@@ -109,7 +109,7 @@ AEM as a Cloud Service 提供以下進階網路選項：
 
 >[!TIP]
 >
->完整的參數集和確切的語法，以及如哪些參數之後不能變更等重要資訊，[可在 API 文件中引用。](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure)
+>完整的引數集、確切的語法以及如哪些引數之後不能變更等重要資訊，可以在API檔案](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure)中參照[。
 
 ### 流量路由 {#flexible-port-egress-traffic-routing}
 
@@ -220,7 +220,7 @@ ProxyPassReverse "/somepath" "https://example.com:8443"
 
 如果沒有啟用專用 IP 位址功能，來自 AEM as a Cloud Service 的流量會流經與其他 AEM as a Cloud Service 客戶共用的一組 IP。
 
-設定專用輸出 IP 位址類似[彈性連接埠輸出。](#flexible-port-egress) 主要區別在於設定後，流量一律從專用的唯一 IP 輸出。若要尋找該 IP，請使用 DNS 解析器識別與 `p{PROGRAM_ID}.external.adobeaemcloud.com` 相關聯的 IP 位址。該 IP 位址預期不會變更，但如果必須變更會事先通知。
+設定專用輸出IP位址類似於[彈性連線埠輸出](#flexible-port-egress)。 主要差異在於設定後，流量一律會從專用的唯一IP輸出。 若要尋找該 IP，請使用 DNS 解析器識別與 `p{PROGRAM_ID}.external.adobeaemcloud.com` 相關聯的 IP 位址。該 IP 位址預期不會變更，但如果必須變更會事先通知。
 
 >[!TIP]
 >
@@ -270,7 +270,7 @@ ProxyPassReverse "/somepath" "https://example.com:8443"
 
 >[!TIP]
 >
->完整的參數集和確切的語法，以及如哪些參數之後不能變更等重要資訊，[可在 API 文件中引用。](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure)
+>完整的引數集、確切的語法以及如哪些引數之後不能變更等重要資訊，可以在API檔案](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure)中參照[。
 
 ### 流量路由 {#dedicated-egress-ip-traffic-routing}
 
@@ -400,7 +400,7 @@ public JSONObject getJsonObject(String relativePath, String queryString) throws 
 
 VPN 允許從製作、發佈或預覽執行個體連線到內部部署基礎結構或資料中心。例如，這對於保護資料庫存取很有用。VPN 還允許連線到 SaaS 廠商，例如支援 VPN 的 CRM 廠商。
 
-支援大多數採用 IPSec 技術的 VPN 裝置。請查閱[本裝置清單內 **RouteBased 設定指示**&#x200B;欄中的資訊。](https://learn.microsoft.com/zh-tw/azure/vpn-gateway/vpn-gateway-about-vpn-devices#devicetable) 按照表中所述設定裝置。
+支援大多數採用 IPSec 技術的 VPN 裝置。請參閱[這個裝置清單](https://learn.microsoft.com/zh-tw/azure/vpn-gateway/vpn-gateway-about-vpn-devices#devicetable)中的&#x200B;**RouteBased設定指示**&#x200B;資料行中的資訊。 按照表中所述設定裝置。
 
 >[!NOTE]
 >
@@ -465,7 +465,7 @@ VPN 允許從製作、發佈或預覽執行個體連線到內部部署基礎結�
 
 >[!TIP]
 >
->完整的參數集和確切的語法，以及如哪些參數之後不能變更等重要資訊，[可在 API 文件中引用。](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure)
+>完整的引數集、確切的語法以及如哪些引數之後不能變更等重要資訊，可以在API檔案](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure)中參照[。
 
 ### 流量路由 {#vpn-traffic-routing}
 
@@ -653,11 +653,11 @@ API 應該會在幾秒鐘內做出回應，指示 `updating` 的狀態。約 10 
 
 >[!TIP]
 >
->完整的參數集和確切的語法，以及如哪些參數之後不能變更等重要資訊，[可在 API 文件中引用。](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure)
+>完整的引數集、確切的語法以及如哪些引數之後不能變更等重要資訊，可以在API檔案](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure)中參照[。
 
 ## 編輯並刪除環境中的進階網路設定 {#editing-deleting-environments}
 
- [為環境啟用進階網路設定後，](#enabling) 您可以更新這些設定的詳細資訊或將其刪除。
+在[啟用環境的進階網路設定](#enabling)之後，您可以更新這些設定的詳細資訊或刪除它們。
 
 >[!NOTE]
 >
@@ -675,7 +675,7 @@ API 應該會在幾秒鐘內做出回應，指示 `updating` 的狀態。約 10 
 
 1. 在省略號選單中，選取「**編輯**」或「**刪除**」。
 
-   * 如果您選擇「**編輯**」，請按照上一節「[啟用使用者介面](#enabling-ui)」中所述的步驟更新資訊，然後按一下「**儲存**」。
+   * 如果您選擇&#x200B;**編輯**，請依照上一節[使用UI啟用](#enabling-ui)中所述的步驟更新資訊，然後按一下&#x200B;**儲存**。
    * 如果您選擇「**刪除**」，請在「**刪除網路設定**」對話框中使用「**刪除**」來確認刪除，或使用「**取消**」來中止。
 
 變更會反映在「**環境**」標籤上。
@@ -686,7 +686,7 @@ API 應該會在幾秒鐘內做出回應，指示 `updating` 的狀態。約 10 
 
 >[!TIP]
 >
->完整的參數集和確切的語法，以及如哪些參數之後不能變更等重要資訊，[可在 API 文件中引用。](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure)
+>完整的引數集、確切的語法以及如哪些引數之後不能變更等重要資訊，可以在API檔案](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure)中參照[。
 
 ## 編輯和刪除程式的網路基礎結構 {#editing-deleting-program}
 
@@ -729,10 +729,10 @@ API 應該會在幾秒鐘內做出回應，指示 `updating` 的狀態。約 10 
 
 如果您決定需要其他進階網路基礎架構類型，而不需要已設定的網路基礎架構類型，可刪除現有的網路基礎架構類型並建立另一個網路基礎架構類型。請執行下列動作：
 
-1. [在所有環境中刪除進階網路](#editing-deleting-environments)
-1. [刪除進階網路基礎結構。](#editing-deleting-program)
-1. 建立您現在需要的進階網路基礎架構類型， [彈性連接埠輸出、](#flexible-port-egress) [專用輸出 IP 位址](#dedicated-egress-ip-address)或[ VPN。](#vpn)
-1. [在環境層級重新啟用進階網路。](#enabling)
+1. [刪除所有環境中的進階網路](#editing-deleting-environments)。
+1. [刪除進階網路基礎結構](#editing-deleting-program)。
+1. 建立您現在需要的進階網路基礎結構型別： [彈性連線埠輸出](#flexible-port-egress)、[專用輸出IP位址](#dedicated-egress-ip-address)或[VPN](#vpn)。
+1. [在環境層級](#enabling)重新啟用進階網路。
 
 >[!WARNING]
 >

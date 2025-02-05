@@ -4,10 +4,10 @@ description: 瞭解如何在AEM Assets檢視中搜尋和探索資產。 強大�
 role: User
 exl-id: abfe6a91-1699-436f-8bf4-0d0bf2369f46
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '2020'
-ht-degree: 95%
+ht-degree: 94%
 
 ---
 
@@ -142,7 +142,7 @@ Assets檢視提供下列自訂篩選器：
 
    ![Firefly 整合](assets/firefly-integration.png)
 
-   已成功產生新資產。此外，您可以在描述框中輸入新的文字提示以變更影像描述。[了解如何撰寫良好的 AI 提示以產生傑出且相關的內容。](https://helpx.adobe.com/tw/firefly/using/tips-and-tricks.html)或者，您也可以[使用各種其他功能編輯影像，例如：變更樣式、影像尺寸等。](https://helpx.adobe.com/tw/firefly/using/text-to-image.html)
+   已成功產生新資產。此外，您可以在描述框中輸入新的文字提示以變更影像描述。[瞭解如何撰寫良好的AI提示，以產生非凡的相關內容](https://helpx.adobe.com/tw/firefly/using/tips-and-tricks.html)。 或者，您也可以[使用各種其他功能（例如變更樣式、影像尺寸等等）編輯影像](https://helpx.adobe.com/tw/firefly/using/text-to-image.html)。
 
    ![Firefly 整合](assets/bugatti-type-57.png)
 

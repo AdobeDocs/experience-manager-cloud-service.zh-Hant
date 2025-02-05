@@ -4,7 +4,7 @@ description: 瞭解如何將基於核心元件的最適化表單另存為草稿�
 feature: Adaptive Forms, Core Components
 exl-id: c0653bef-afeb-40c1-b131-7d87ca5542bc
 role: User, Developer
-source-git-commit: 2e4c9a7d30b954045082baf242737ac2f7426c70
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1387'
 ht-degree: 2%
@@ -22,7 +22,7 @@ ht-degree: 2%
 
 ## 必要條件
 
-* [為您的環境啟用最適化Forms核心元件。](/help/forms/enable-adaptive-forms-core-components.md)
+* [為您的環境啟用最適化Forms核心元件](/help/forms/enable-adaptive-forms-core-components.md)。
 
   將最新核心元件部署至您的環境後，您便可在編寫環境中存取Forms Portal元件。
 

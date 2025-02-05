@@ -4,20 +4,20 @@ description: 了解如何使用 Cloud Manager 來建立您的第一個方案。
 role: Admin, User, Developer
 exl-id: ade4bb43-5f48-4938-ac75-118009f0a73b
 feature: Onboarding
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '669'
-ht-degree: 100%
+ht-degree: 92%
 
 ---
 
 # 建立方案 {#create-program}
 
-在[上線歷程](overview.md)的這一部分，您將了解如何使用 Cloud Manager 建立您的第一個方案。
+在[入門歷程](overview.md)的這一部分，您將學習如何使用Cloud Manager建立您的第一個計畫。
 
 ## 目標 {#objective}
 
-在查看了此上線過程中的上一個文件後，[ Access 雲管理器，](cloud-manager.md)您已確保您擁有對 Cloud Manager 的適當存取權限。現在您可以建立您的第一個方案。
+在檢視了此上線過程中的上一個檔案後，[存取Cloud Manager](cloud-manager.md)，您已確保您擁有對Cloud Manager的適當存取權。 現在您可以建立您的第一個方案。
 
 閱讀本文件後，您可以：
 
@@ -68,7 +68,7 @@ Cloud Manager 方案代表一組 Cloud Manager 環境。這些方案支援業務
 
 ## 下一步 {#whats-next}
 
-現在您的第一個程序已建立，您可以為其建立環境。透過下一次查看文件來繼續您的上線之旅[建立環境。](create-environments.md)
+現在您的第一個程序已建立，您可以為其建立環境。繼續您的上線之旅，接下來檢視檔案[建立環境](create-environments.md)。
 
 ## 其他資源 {#additional-resources}
 

@@ -4,7 +4,7 @@ description: AEM技術基礎的概觀，包括AEM的結構和基本技術，如J
 exl-id: ab6e7fe9-a25d-4351-a005-f4466cc0f40e
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '2130'
 ht-degree: 0%
@@ -17,7 +17,7 @@ AEM是建構在經驗證、可擴充且彈性技術上的強大平台。 本檔�
 
 >[!TIP]
 >
->在深入探討AEM的核心技術之前，Adobe建議完成[開發AEM Sites快速入門 — WKND教學課程。](develop-wknd-tutorial.md)
+>在深入探討AEM的核心技術之前，Adobe建議完成[開發AEM Sites - WKND快速入門教學課程](develop-wknd-tutorial.md)。
 
 ## 基礎知識 {#fundamentals}
 

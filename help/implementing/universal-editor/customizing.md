@@ -4,10 +4,10 @@ description: 瞭解不同的擴充點和其他功能，這些功能可讓您自�
 exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: afcb3cbc2b0868de7bac9446eb07ae30c033de66
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '579'
-ht-degree: 4%
+ht-degree: 1%
 
 ---
 
@@ -45,9 +45,9 @@ Universal Editor提供數個內建選項，可用於自訂其功能。
 
 ### 有條件地顯示和隱藏屬性面板中的元件 {#conditionally-hide}
 
-雖然元件通常可供作者使用，但在某些情況下卻可能沒有意義。 在這種情況下，您可以將`condition`屬性新增至元件模型的[欄位，以隱藏屬性面板中的元件。](/help/implementing/universal-editor/field-types.md#fields)
+雖然元件通常可供作者使用，但在某些情況下卻可能沒有意義。 在這種情況下，您可以將`condition`屬性新增至元件模型](/help/implementing/universal-editor/field-types.md#fields)的[欄位，以隱藏屬性面板中的元件。
 
-可以使用[JsonLogic結構描述定義條件。](https://jsonlogic.com/)如果條件為true，則會顯示欄位。 如果條件為false，則會隱藏欄位。
+可以使用[JsonLogic結構描述](https://jsonlogic.com/)定義條件。 如果條件為true，則會顯示欄位。 如果條件為false，則會隱藏欄位。
 
 >[!BEGINTABS]
 
@@ -86,9 +86,9 @@ Universal Editor提供數個內建選項，可用於自訂其功能。
 
 ### 自訂預覽URL {#custom-preview-urls}
 
-您可以透過`urn:adobe:aue:config:preview`中繼設定來指定自訂預覽URL，按一下[編輯器右上角工具列中的&#x200B;**開啟頁面**&#x200B;按鈕時，將會開啟此設定。](/help/sites-cloud/authoring/universal-editor/navigation.md#universal-editor-toolbar)
+您可以透過`urn:adobe:aue:config:preview`中繼設定來指定自訂預覽URL，按一下[編輯器右上角工具列](/help/sites-cloud/authoring/universal-editor/navigation.md#universal-editor-toolbar)中的&#x200B;**開啟頁面**&#x200B;按鈕時，將會開啟該設定。
 
-這對於具有特定預覽要求的應用程式來說特別實用，例如[使用 Edge Delivery Services 進行所見即所得製作](/help/edge/wysiwyg-authoring/authoring.md)的應用程式。
+這對於具有特定預覽需求的應用程式特別有用，例如那些將Edge Delivery Services與WYSIWYG編寫](/help/edge/wysiwyg-authoring/authoring.md)搭配使用的[。
 
 若要這麼做，只需將所需的預覽URL加入所檢測應用程式的中繼標籤中，例如下列範例。
 
@@ -110,6 +110,6 @@ UI擴充功能是使用Adobe App Builder建置的JavaScript應用程式，可嵌
 
 >[!TIP]
 >
->如果您偏好以範例學習，請參閱[AEM UI擴充性教學課程。](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/extensibility/ui/overview)雖然其著重於擴充內容片段主控台，但在通用編輯器中實作UI擴充功能的概念是相同的。
+>如果您偏好以範例學習，請參閱[AEM UI擴充性教學課程](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/extensibility/ui/overview)。 雖然重點在於擴充內容片段主控台，但在通用編輯器中實作UI擴充功能的概念是相同的。
 
-[在AEM Sites中使用Extension Manager，](https://developer.adobe.com/uix/docs/extension-manager/)您可以根據執行個體來啟用或停用擴充功能、存取Adobe的第一方擴充功能（包括Universal Editor的擴充功能）等等。
+[在AEM Sites中使用Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/)，您可以根據每個執行個體來啟用或停用擴充功能、存取Adobe的第一方擴充功能（包括Universal Editor的擴充功能）等等。

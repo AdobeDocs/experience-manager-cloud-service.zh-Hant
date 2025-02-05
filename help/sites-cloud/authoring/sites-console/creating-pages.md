@@ -5,10 +5,10 @@ exl-id: 77264562-e76a-40c8-9878-847a8878fb8e
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: dbe4cd619f4dc680e6fc4826f6a4fea92bab9707
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '477'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 1%
 
 >[!TIP]
 >
->開始建立新頁面之前，請熟悉[在AEM中組織頁面的方式。](/help/sites-cloud/authoring/sites-console/organizing-pages.md)
+>開始建立新頁面之前，請熟悉[在AEM](/help/sites-cloud/authoring/sites-console/organizing-pages.md)中組織頁面的方式。
 
 ## 存取許可權 {#access-privileges}
 
@@ -31,7 +31,7 @@ ht-degree: 1%
 
 除非所有頁面都已預先為您建立，否則您必須先建立頁面，然後才能開始建立內容：
 
-1. 開啟[ **網站**&#x200B;主控台。](/help/sites-cloud/authoring/sites-console/introduction.md)
+1. 開啟[ **網站**&#x200B;主控台](/help/sites-cloud/authoring/sites-console/introduction.md)。
 1. 導覽至您要建立新頁面的位置。
 1. 使用工具列中的&#x200B;**Create**&#x200B;開啟下拉式選取器，然後從清單中選取&#x200B;**Page**：
 

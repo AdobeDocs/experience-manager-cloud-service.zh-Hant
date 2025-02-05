@@ -4,7 +4,7 @@ description: 使用Content Package Maven外掛程式來部署AEM應用程式
 exl-id: d631d6df-7507-4752-862b-9094af9759a0
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: d757c94475f257ee4b05092671ae5e6384b8342e
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1235'
 ht-degree: 4%
@@ -15,7 +15,7 @@ ht-degree: 4%
 
 使用Adobe內容套件Maven外掛程式，將套件部署和管理任務整合到您的Maven專案中。
 
-將建構的封裝部署到AEM是由AdobeContent Package Maven外掛程式執行，並且允許自動化通常使用AEM [封裝管理員：](/help/implementing/developing/tools/package-manager.md)執行的工作
+將建構的封裝部署到AEM是由AdobeContent Package Maven外掛程式執行，並且允許自動化通常使用AEM [封裝管理員](/help/implementing/developing/tools/package-manager.md)執行的工作
 
 * 從檔案系統中的檔案建立新封裝。
 * 在AEM上安裝及解除安裝套件。
@@ -23,7 +23,7 @@ ht-degree: 4%
 * 取得AEM上安裝的套件清單。
 * 從AEM移除套件。
 
-本檔案詳細說明如何使用Maven管理這些任務。 不過，瞭解[AEM專案及其封裝的結構方式也很重要。](#aem-project-structure)
+本檔案詳細說明如何使用Maven管理這些任務。 不過，瞭解[AEM專案及其封裝的結構方式也很重要](#aem-project-structure)。
 
 >[!NOTE]
 >
@@ -31,7 +31,7 @@ ht-degree: 4%
 
 >[!NOTE]
 >
->套件&#x200B;**建立**&#x200B;現在由[Apache Jackrabbit FileVault Package Maven外掛程式擁有。](https://jackrabbit.apache.org/filevault-package-maven-plugin/)
+>套件&#x200B;**建立**&#x200B;現在由[Apache Jackrabbit FileVault Package Maven外掛程式](https://jackrabbit.apache.org/filevault-package-maven-plugin/)擁有。
 >
 >本文說明由Adobe內容套件Maven外掛程式執行的將已建構套件部署至AEM的&#x200B;**部署**。
 
@@ -45,7 +45,7 @@ AEM as a Cloud Service遵循由最新AEM專案原型實作的套件管理和專�
 
 ## 取得內容套件Maven外掛程式 {#obtaining-the-content-package-maven-plugin}
 
-外掛程式可從[Maven中央存放庫取得。](https://mvnrepository.com/artifact/com.day.jcr.vault/content-package-maven-plugin?repo=adobe-public)
+外掛程式可從[Maven中央存放庫](https://mvnrepository.com/artifact/com.day.jcr.vault/content-package-maven-plugin?repo=adobe-public)取得。
 
 ## 內容套件Maven外掛程式目標與引數
 

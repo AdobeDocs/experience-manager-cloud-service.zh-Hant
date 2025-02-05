@@ -4,10 +4,10 @@ description: 瞭解Adobe Experience Manager (AEM) as a Cloud Service如何使用
 feature: Deploying
 exl-id: 36989913-69db-4f4d-8302-57c60f387d3d
 role: Admin
-source-git-commit: 73fac04561f43a4053e1694da9e096a2ecbc1484
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '997'
+ht-degree: 2%
 
 ---
 
@@ -55,7 +55,7 @@ AEM 版本更新有兩種類型：
 
 >[!NOTE]
 >
-> 檢查[Experience Manager發行藍圖](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=zh-Hant#aem-as-cloud-service)上每月發行的重要日期，並標示您的行事曆，為關鍵活動做好準備以便發行。
+> 檢查[Experience Manager發行藍圖](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=zh-Hant#aem-as-cloud-service)上每月發行的重要日期，並標示您的行事曆，為關鍵活動做好準備以便發行。
 
 ## 更新失敗 {#update-failure}
 
@@ -97,7 +97,7 @@ AEM更新會通過密集且完全自動化的產品驗證管道，涉及多個�
 
 ## 複合節點存放區 {#composite-node-store}
 
-通常，更新會產生零停機時間，包括編寫執行個體（節點叢集）的更新。 因為[Oak中的複合節點存放區功能，所以可能會進行滾動更新。](https://jackrabbit.apache.org/oak/docs/nodestore/compositens.html)
+通常，更新會產生零停機時間，包括編寫執行個體（節點叢集）的更新。 因為[Oak](https://jackrabbit.apache.org/oak/docs/nodestore/compositens.html)中的複合節點存放區功能，所以可能會進行滾動更新。
 
 此功能可讓AEM同時參照多個存放庫。 在[滾動式部署](/help/implementing/deploying/overview.md#how-rolling-deployments-work)中，新的AEM版本包含它自己的`/libs` （以TarMK為基礎的不可變存放庫）。 它與舊版AEM不同，不過兩者都參考共用DocumentMK型可變存放庫，其中包含`/content`、`/conf`、`/etc`等區域。
 

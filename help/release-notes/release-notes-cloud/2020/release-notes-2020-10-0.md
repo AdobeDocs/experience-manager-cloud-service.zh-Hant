@@ -1,10 +1,10 @@
 ---
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2020.10.0 版發行說明。'
-description: "[!DNL Adobe Experience Manager]個2020.10.0as a Cloud Service發行說明。"
+description: '[!DNL Adobe Experience Manager] 2020.10.0as a Cloud Service發行說明。'
 exl-id: ac741744-5b47-47a4-b5af-e1089e92c3f0
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1103'
 ht-degree: 24%
@@ -24,9 +24,9 @@ ht-degree: 24%
 
 ### [!DNL Sites] 的新增功能 {#what-is-new-sites}
 
-* **[核心元件2.12.0](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hant)**： Adobe Experience Manager as a Cloud Service受益於核心元件最新版本的自動更新。 版本2.12.0包含社群貢獻的最新改善。 改良功能包括[新的POST表單處理常式；](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/forms/form-container.html#post-data)可透過內容感知組態包含自訂CSS、JavaScript和中繼資料[標籤；](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/including-clientlibs.html#context-aware-loading)以及[`DataLayerBuilder`](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/integrations.html#enabling-custom-components)公用程式，以簡化自訂元件中的Adobe資料層整合。 檢視2.12.0中的[變更清單](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.12.0)。
+* **[核心元件2.12.0](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-hant)**： Adobe Experience Manager as a Cloud Service受益於核心元件最新版本的自動更新。 版本2.12.0包含社群貢獻的最新改善。 改良功能包括[新的POST表單處理常式；](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/forms/form-container.html#post-data)可透過內容感知組態包含自訂CSS、JavaScript和中繼資料[標籤；](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/including-clientlibs.html#context-aware-loading)以及[`DataLayerBuilder`](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/integrations.html#enabling-custom-components)公用程式，以簡化自訂元件中的Adobe資料層整合。 檢視2.12.0中的[變更清單](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.12.0)。
 
-* **[專案原型24](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)**：啟動新Experience Manager專案的建議基礎已有所改善。 它現在包含新的[Adobe使用者端資料層](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html)、[以AMP傳遞網站的選項，](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/amp.html)以及新增專案CSS/JS的新[延伸點。](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/including-clientlibs.html#context-aware-loading)
+* **[專案原型24](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)**：啟動新Experience Manager專案的建議基礎已有所改善。 它現在包含新的[Adobe使用者端資料層](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html)、[在AMP中傳遞網站的選項](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/amp.html)，以及新增專案CSS/JS](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/including-clientlibs.html#context-aware-loading)的新[延伸功能點。
 
 * **[ContextHub資料夾](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md#organizing-segments)**：能夠建立對象資料夾，以輕鬆組織、尋找和選取要用於ContextHub選件鎖定目標功能的對象區段。
 

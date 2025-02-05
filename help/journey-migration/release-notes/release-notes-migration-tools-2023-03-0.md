@@ -1,19 +1,19 @@
 ---
-title: AEM as a Cloud Service 2023.03.0版中移轉工具的發行說明
-description: AEM as a Cloud Service 2023.03.0版中移轉工具的發行說明
+title: AEM as a Cloud Service 版本 2023.03.0 中移轉工具的發行說明
+description: AEM as a Cloud Service 版本 2023.03.0 中移轉工具的發行說明
 feature: Release Information
 exl-id: cdc57cca-e10a-4b0d-b803-910ccc9350a6
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '301'
-ht-degree: 5%
+ht-degree: 25%
 
 ---
 
-# AEM as a Cloud Service 2023.03.0版中移轉工具的發行說明 {#release-notes}
+# AEM as a Cloud Service 版本 2023.03.0 中移轉工具的發行說明 {#release-notes}
 
-本頁面總覽AEM as a Cloud Service 2023.03.0中移轉工具的發行說明。
+本頁面概述 AEM as a Cloud Service 2023.03.0 中移轉工具的發行說明。
 
 ## 最佳做法分析工具 {#bpa-release}
 
@@ -38,8 +38,8 @@ Best Practices Analyzer v2.1.40的發行日期為2023年3月3日。
 
 ### 新增功能 {#what-is-new-ctt}
 
-* 使用者對應已經過簡化，並整合至內容擷取步驟。 不需要任何設定，預設情況下，當使用者起始內容擷取時，會自動完成使用者對應。 如有需要，使用者可以選擇停用使用者對應。 在此瞭解更多[。](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/user-mapping-and-migration.html#user-mapping-detail)
-* 使用[AzCopy](https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10)的預先複製步驟已與「內容轉移工具」整合，以大幅加快內容擷取速度。 安裝此CTT版本時，會自動設定並安裝預先複製。 根據預設，在起始擷取作業時，將會對大於200 GB的移轉集自動執行預先複製。 使用者可以選擇視需要將其停用。 在此瞭解更多[。](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/handling-large-content-repositories.html)
+* 使用者對應已經過簡化，並整合至內容擷取步驟。 不需要任何設定，預設情況下，當使用者起始內容擷取時，會自動完成使用者對應。 如有需要，使用者可以選擇停用使用者對應。 在[此處](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/user-mapping-and-migration.html#user-mapping-detail)瞭解更多資訊。
+* 使用[AzCopy](https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10)的預先複製步驟已與「內容轉移工具」整合，以大幅加快內容擷取速度。 安裝此CTT版本時，會自動設定並安裝預先複製。 根據預設，在起始擷取作業時，將會對大於200 GB的移轉集自動執行預先複製。 使用者可以選擇視需要將其停用。 在[此處](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/handling-large-content-repositories.html)瞭解更多資訊。
 * CTT現在可用於Windows伺服器。
 
 ### 錯誤修正 {#bug-fixes-ctt}

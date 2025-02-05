@@ -4,10 +4,10 @@ description: 瞭解如何執行您自己的Universal Editor服務，以供本機
 exl-id: ba1bf015-7768-4129-8372-adfb86e5a120
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: ccdb43c31e3ba1365a514bff696c9ec11dbbc21e
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '932'
-ht-degree: 40%
+ht-degree: 37%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 40%
 Universal Editor 服務綁定 Universal Editor 和後端系統。若要能夠在本機開發Universal Editor，您必須執行Universal Editor服務的本機復本。 原因如下：
 
 * Adobe的官方Universal Editor服務託管於全球各地，而您的本機AEM執行個體必須向網際網路公開。
-* 使用本機AEM SDK進行開發時，無法從網際網路存取Adobe的通用編輯器服務。
+* 使用本機AEM SDK進行開發時，無法從網際網路存取Adobe的Universal Editor Service 。
 * 如果您的AEM執行個體有IP限制，而Adobe的Universal Editor服務不在定義的IP範圍內，則您可以自行託管。
 
 ## 使用案例 {#use-cases}
@@ -101,7 +101,7 @@ UES_CORS_PRIVATE_NETWORK=true
 | `UES_SPLUNK_TOKEN` | 是 | 無 | Splunk權杖 |
 | `UES_SPLUNK_INDEX` | 是 | 無 | 要寫入記錄的索引 |
 | `UES_SPLUNK_SOURCE` | 是 | `universal-editor-service` | splunk記錄檔中的來源名稱 |
-| `UES_CORS_PRIVATE_NETWORK` | 是 | `false` | 啟用傳送CORS標頭以允許[私人網路。Chrome 130版以上的使用者需要](https://wicg.github.io/private-network-access/#private-network-request) |
+| `UES_CORS_PRIVATE_NETWORK` | 是 | `false` | 啟用傳送CORS標頭以允許[私人網路](https://wicg.github.io/private-network-access/#private-network-request)。 Chrome 130+版使用者的必要專案 |
 
 >[!NOTE]
 >
@@ -152,9 +152,9 @@ Universal Editor 會根據頁面的偵測方式，知道要使用哪個 Universa
 
 ## 使用本機 Universal Editor 服務編輯頁面 {#editing}
 
-有了[本機執行的 Universal Editor 服務](#running-ue)和[經檢測可使用本機服務的內容頁面](#using-loca-ue)，現在您可以啟動編輯器。
+透過[Universal Editor Service在本機執行](#running-ue)，且您的[內容頁面已設定為使用本機服務](#using-loca-ue)，您現在可以啟動編輯器。
 
 1. 開啟您的瀏覽器，前往 `https://localhost:8000/ping`。
-1. 指示您的瀏覽器接受[您的自我簽署憑證。](#ue-https)
+1. 指示瀏覽器接受[您的自我簽署憑證](#ue-https)。
 1. 一旦自我簽署憑證受到信任，您就可以使用本機 Universal Editor 服務編輯頁面。
 

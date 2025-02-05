@@ -6,7 +6,7 @@ feature: Adaptive Forms, Foundation Components
 role: User, Developer
 level: Intermediate
 exl-id: cde9523e-5409-4edd-af0f-2c2575cc22ea
-source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '3243'
 ht-degree: 1%
@@ -93,7 +93,7 @@ ht-degree: 1%
 
    * 如果您沒有自訂表格範本，請選取&#x200B;**[!UICONTROL 產生記錄檔案]**&#x200B;選項。 當您使用選項時，傳送以供簽署的檔案會顯示最適化表單的所有欄位。
 
-1. 選取&#x200B;**[!UICONTROL 建立。]**&#x200B;已建立啟用簽署的最適化表單。 您可以將[!DNL Adobe Sign]欄位新增至表單，並傳送以進行簽署。
+1. 選擇 **[!UICONTROL 建立]**。系統隨即會建立可啟用簽名的最適化表單。 您可以將[!DNL Adobe Sign]欄位新增至表單，並傳送以進行簽署。
 
 #### 為最適化表單啟用[!DNL Adobe Sign] {#editafsign}
 

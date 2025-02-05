@@ -3,10 +3,10 @@ title: 使用具有OpenAPI功能的Dynamic Media限制資產傳送
 description: 瞭解如何使用OpenAPI功能限制資產傳送。
 role: User
 exl-id: 3fa0b75d-c8f5-4913-8be3-816b7fb73353
-source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
-source-wordcount: '1151'
-ht-degree: 2%
+source-wordcount: '1150'
+ht-degree: 5%
 
 ---
 
@@ -17,9 +17,9 @@ ht-degree: 2%
 
 >[!AVAILABILITY]
 >
->Dynamic Media搭配OpenAPI功能指南現在提供PDF格式。 下載整份指南，並使用Adobe Acrobat AI Assistant回答您的疑問。
+>具有 OpenAPI 功能的 Dynamic Media 指南現已提供 PDF 格式。下載完整指南，並使用 Adobe Acrobat AI 助理來回答您的查詢問題。
 >
->[!BADGE 具有OpenAPI功能的Dynamic Media指南PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/dynamic-media-with-openapi-capabilities.pdf"}
+>[!BADGE 具有 OpenAPI 功能的 Dynamic Media 指南 PDF]{type=Informative url="https://helpx.adobe.com/tw/content/dam/help/en/experience-manager/aem-assets/dynamic-media-with-openapi-capabilities.pdf"}
 
 Experience Manager的中央資產控管可讓DAM管理員或品牌管理員透過Dynamic Media的OpenAPI功能管理可用資產的存取權。 他們可以透過在AEM as a Cloud Service作者服務上的資產上設定某些中繼資料，將已核准的資產（精確到個別資產）的傳送限製為所選的[AdobeIdentity Management系統(IMS)使用者或群組](https://helpx.adobe.com/in/enterprise/using/users.html#user-mgt-strategy)。
 

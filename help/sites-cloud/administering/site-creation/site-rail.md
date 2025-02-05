@@ -5,7 +5,7 @@ feature: Administering
 role: Admin
 exl-id: 45785e5a-4fa2-4cf2-a300-f1865f6f5807
 solution: Experience Manager Sites
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '583'
 ht-degree: 1%
@@ -34,7 +34,7 @@ ht-degree: 1%
 
 ## 下載主題來源 {#downloading-theme-sources}
 
-當您根據[網站範本，](site-templates.md)在AEM中建立網站時，可以使用網站面板下載[網站主題](site-themes.md)。
+當您根據[網站範本](site-templates.md)在AEM中建立網站時，可以使用網站面板下載[網站主題](site-themes.md)。
 
 在網站主控台中顯示的「網站」面板中，選取網站的根以顯示有關網站的主題資訊。
 
@@ -44,7 +44,7 @@ ht-degree: 1%
 
 ## 正在下載範本資源 {#downloading-template-resources}
 
-[網站範本](site-templates.md)可以包含您的網站內容結構和[網站主題的資訊。例如，](site-themes.md)網站範本可包含線框設計或其他網站相關檔案。
+[網站範本](site-templates.md)除了包含您的網站內容結構和[網站主題](site-themes.md)之外，還可以包含資訊。 例如，網站範本可包含線框設計或其他網站相關檔案。
 
 如果您的網站是以網站範本為基礎，利用網站主控台中顯示的網站面板，選取網站的根以顯示有關網站的主題資訊，包括其他網站資源。
 
@@ -84,4 +84,4 @@ ht-degree: 1%
 
 ![正在啟用前端管道](/help/sites-cloud/administering/assets/enable-fep.png)
 
-如需詳細資訊，請參閱檔案[啟用前端管道。](enable-front-end-pipeline.md)
+如需詳細資訊，請參閱檔案[啟用前端管道](enable-front-end-pipeline.md)。

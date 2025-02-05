@@ -6,7 +6,7 @@ google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
 keywords: 使用AEM工作流程、使用指派工作步驟、轉換為PDF/A步驟、產生記錄步驟的檔案、使用工作流程、簽署檔案步驟、產生列印輸出步驟、產生非互動式PDF輸出
 feature: Adaptive Forms, Workflow
 role: Admin, User
-source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '7379'
 ht-degree: 0%
@@ -121,7 +121,7 @@ ht-degree: 0%
     -->
 
 * **[!UICONTROL 受指派人]** > **[!UICONTROL 指派選項]**：指定將工作指派給使用者的方法。 您可以使用「參與者選擇器」指令碼，以動態方式將工作指派給使用者或群組，或將工作指派給特定的AEM使用者或群組。
-* **[!UICONTROL 參與者選擇器]**：在[指派選項]欄位中選取&#x200B;**[!UICONTROL 動態至使用者或群組]**&#x200B;選項時，即可使用此選項。 您可以使用ECMAScript或服務來動態選取使用者或群組。 如需詳細資訊，請參閱[動態指派工作流程給使用者](https://helpx.adobe.com/experience-manager/kb/HowToAssignAWorkflowDynamicallyToParticipants.html)和[建立自訂Adobe Experience Manager動態參與者步驟。](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=en&amp;CID=RedirectAEMCommunityKautuk)
+* **[!UICONTROL 參與者選擇器]**：在[指派選項]欄位中選取&#x200B;**[!UICONTROL 動態至使用者或群組]**&#x200B;選項時，即可使用此選項。 您可以使用ECMAScript或服務來動態選取使用者或群組。 如需詳細資訊，請參閱[動態指派工作流程給使用者](https://helpx.adobe.com/experience-manager/kb/HowToAssignAWorkflowDynamicallyToParticipants.html)和[建立自訂Adobe Experience Manager動態參與者步驟](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=en&amp;CID=RedirectAEMCommunityKautuk)。
 
 * **[!UICONTROL 參與者]**：在&#x200B;**[!UICONTROL 參與者選擇器]**&#x200B;欄位中選取&#x200B;**[!UICONTROL com.adobe.granite.workflow.core.process.RandomParticipantChooser]**&#x200B;選項時，即可使用此欄位。 欄位可讓您為RandomParticipantChooser選項選取使用者或群組。
 
@@ -554,7 +554,7 @@ Send a document directly to a printer. It supports the following printing access
 
 * **[!UICONTROL 地區設定]**：指定用來產生PDF檔案的語言。 如果您提供常值，請從清單中選取語言或選取下列其中一個值：
    * **[!UICONTROL 要使用伺服器預設值]**：
-（預設）使用[!DNL AEM Forms]伺服器上設定的地區設定。 地區設定是使用Administration Console來設定。 (請參閱[Designer說明](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/using-designer.pdf)。)
+（預設）使用[!DNL AEM Forms]伺服器上設定的地區設定。 地區設定是使用Administration Console來設定。 (請參閱[Designer說明](https://helpx.adobe.com/tw/content/dam/help/en/experience-manager/6-5/forms/pdf/using-designer.pdf)。)
 
    * **[!UICONTROL 若要使用自訂值]**：
 在常值方塊中輸入地區設定代碼，或選取包含地區設定代碼的字串變數。 如需支援地區設定代碼的完整清單，請參閱https://docs.oracle.com/javase/1.5.0/docs/guide/intl/locale.doc.html。

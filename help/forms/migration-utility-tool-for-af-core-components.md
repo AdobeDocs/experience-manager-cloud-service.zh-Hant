@@ -8,7 +8,7 @@ hide: true
 hidefromtoc: true
 exl-id: ee71a576-96a7-4c81-b3a3-1d678f010cba
 feature: Adaptive Forms, Core Components
-source-git-commit: 92a5599ac94d5bf09311d34dd0287def46b14353
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1060'
 ht-degree: 4%
@@ -53,8 +53,8 @@ Forms轉換公用程式會將以舊版基礎元件為基礎的最適化Forms轉�
 
 ## 使用AEM現代化工具的先決條件
 
-* [設定AEM Forms的本機開發環境](/help/forms/setup-local-development-environment.md)
-* [為您的環境啟用最適化Forms核心元件。](/help/forms/enable-adaptive-forms-core-components.md)
+* [設定AEM Forms的本機開發環境](/help/forms/setup-local-development-environment.md)。
+* [為您的環境啟用最適化Forms核心元件](/help/forms/enable-adaptive-forms-core-components.md)。
 * 將您的使用者新增至[!DNL forms-users]群組。 [!DNL forms-users]群組的成員具有建立最適化表單的許可權。
 * 具有下列角色的使用者有權在AEM環境中安裝AEM現代化工具：
 

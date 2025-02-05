@@ -5,7 +5,7 @@ exl-id: a9cb9745-8140-4795-a5f9-fb3a1a299bd8
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '676'
 ht-degree: 0%
@@ -69,7 +69,7 @@ ht-degree: 0%
    * 輸入註解文字。
    * 建立草圖（線條和形狀）以反白元件的某個區域。
 
-     ![註解Sketch按鈕](/help/sites-cloud/authoring/assets/annotation-sketch.png)
+     ![註釋草圖按鈕](/help/sites-cloud/authoring/assets/annotation-sketch.png)
 
      建立草繪時，游標會變成十字線。 您可以繪製多條不同的線條。 草繪線會反映註釋顏色，可以是箭頭、圓或橢圓形。
 
@@ -83,7 +83,7 @@ ht-degree: 0%
 
 1. 編輯完特定註解後，您可以：
 
-   * 選取文字標籤以開啟附註。 開啟後，您可以檢視全文、進行變更或[刪除附註。](#deleting-annotations)
+   * 選取文字標籤以開啟附註。 開啟後，您可以檢視全文、進行變更或[刪除附註](#deleting-annotations)。
    * 重新定位文字標籤。
    * 選取草繪線以選取該草繪，並將其拖曳至所需位置。
    * 移動或複製元件

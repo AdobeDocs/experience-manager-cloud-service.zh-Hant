@@ -3,13 +3,13 @@ title: 使用Edge Delivery Services透過DAM Assets發佈頁面
 description: 瞭解確保將您頁面的DAM資產無縫發佈到Edge Delivery Services所需的設定。
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: 65a3b4d923a91702e7ea9b13356802836fa4ce0b
+exl-id: 160f0474-a72d-4183-a2b2-2f8ba177605d
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '433'
 ht-degree: 1%
 
 ---
-
 
 # 使用Edge Delivery Services透過DAM Assets發佈頁面 {#dam-assets}
 
@@ -21,8 +21,8 @@ ht-degree: 1%
 
 為確保這種順暢的行為，AEM和Edge Delivery Services必須擁有適當的DAM存取權才能發佈。 其中包括：
 
-* [確保資產資料夾可供存取。](#accessible)
-* [確保資產資料夾已指派適當的設定（如需要）。](#configuration)
+* [確定資產資料夾可以存取](#accessible)。
+* [確定資產資料夾已指派適當的設定（視需要）](#configuration)。
 
 ## 確保Assets資料夾可供存取 {#accessible}
 
@@ -54,4 +54,4 @@ ht-degree: 1%
 1. 在屬性視窗中，點選或按一下「**取消**」，並導覽至&#x200B;**Assets** -> **檔案**，然後選取您的DAM資料夾。
 1. 在工具列中點選或按一下&#x200B;**屬性**。
 1. 在屬性視窗的&#x200B;**Cloud Service**&#x200B;標籤上，在&#x200B;**雲端組態**&#x200B;欄位中，選取您先前指出的相同組態。
-1. 點選或按一下&#x200B;**儲存並關閉**。
+1. 點選或按一下「**儲存並關閉**」。

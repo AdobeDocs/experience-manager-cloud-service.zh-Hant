@@ -5,7 +5,7 @@ exl-id: 294fd1ed-9b4a-42cb-8f9e-e7a5d7e6930e
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '13685'
 ht-degree: 2%
@@ -50,11 +50,11 @@ ht-degree: 2%
 
 ## 准則1：可感知 {#principle-perceivable}
 
-[原則1：可感知 — 資訊和使用者介面元件必須以使用者可感知的方式呈現給使用者。](https://www.w3.org/TR/WCAG/#perceivable)
+[原則1：可感知 — 資訊和使用者介面元件必須以使用者可感知](https://www.w3.org/TR/WCAG/#perceivable)的方式呈現給使用者。
 
 ### 替代文字(1.1) {#text-alternatives}
 
-[指南1.1替代文字：為任何非文字內容提供替代文字，以便將其變更為人們需要的其他形式，例如大字型、盲文、語音、符號或更簡單的語言。](https://www.w3.org/TR/WCAG/#text-alternatives)
+[指南1.1替代文字：為任何非文字內容提供替代文字，以便將其變更為人們需要的其他形式，例如大字型、盲文、語音、符號或更簡單的語言](https://www.w3.org/TR/WCAG/#text-alternatives)。
 
 ### 非文字內容(1.1.1) {#non-text-content}
 
@@ -117,9 +117,9 @@ The [W3C draft: HTML5 Techniques for providing useful text alternatives](https:/
 
 #### 更多資訊 — 非文字內容(1.1.1) {#more-information-non-text-content}
 
-* [瞭解成功標準1.1.1](https://www.w3.org/WAI/WCAG21/Understanding/non-text-content.html)
-* [如何達到成功標準1.1.1](https://www.w3.org/WAI/WCAG21/quickref/#non-text-content)
-* [驗證碼的W3C說明和替代方案](https://www.w3.org/TR/turingtest/)
+* [瞭解成功標準1.1.1](https://www.w3.org/WAI/WCAG21/Understanding/non-text-content.html)。
+* [如何達到成功標準1.1.1](https://www.w3.org/WAI/WCAG21/quickref/#non-text-content)。
+* [驗證碼](https://www.w3.org/TR/turingtest/)的W3C說明和替代方案。
 
 <!--
 * [W3C: HTML5 Techniques for providing useful text alternatives (draft)](https://dev.w3.org/html5/alt-techniques/)
@@ -127,7 +127,7 @@ The [W3C draft: HTML5 Techniques for providing useful text alternatives](https:/
 
 ### 時間型媒體(1.2) {#time-based-media}
 
-[指南1.2以時間為基礎的媒體：為以時間為基礎的媒體提供替代方案。](https://www.w3.org/TR/WCAG/#time-based-media)
+[指南1.2以時間為基礎的媒體：為以時間為基礎的媒體提供替代方案](https://www.w3.org/TR/WCAG/#time-based-media)。
 
 此專案處理&#x200B;*以時間為基礎*&#x200B;的網頁內容。 這涵蓋使用者可播放的內容（例如視訊、音訊和動畫內容），並可預先錄製或即時資料流。
 
@@ -173,8 +173,8 @@ The [W3C draft: HTML5 Techniques for providing useful text alternatives](https:/
 
 #### 更多資訊 — 純音訊和純視訊（預先錄製）(1.2.1) {#more-information-audio-only-and-video-only-prerecorded}
 
-* [瞭解成功標準1.2.1](https://www.w3.org/WAI/WCAG21/Understanding/audio-only-and-video-only-prerecorded.html)
-* [如何達到成功標準1.2.1](https://www.w3.org/WAI/WCAG21/quickref/#audio-only-and-video-only-prerecorded)
+* [瞭解成功標準1.2.1](https://www.w3.org/WAI/WCAG21/Understanding/audio-only-and-video-only-prerecorded.html)。
+* [如何達到成功標準1.2.1](https://www.w3.org/WAI/WCAG21/quickref/#audio-only-and-video-only-prerecorded)。
 
 ### 註解（預先錄製） (1.2.2) {#captions-prerecorded}
 
@@ -195,18 +195,18 @@ The [W3C draft: HTML5 Techniques for providing useful text alternatives](https:/
 
 儘可能使用隱藏式字幕，因為使用者可以選擇是否檢視字幕。
 
-對於隱藏式字幕，您必須以適當的格式（例如[SMIL](https://www.w3.org/AudioVideo/)）與視訊檔案一起建立並提供同步化的字幕檔案(如何操作的詳細資訊不在本指南的範圍之內，但是在[更多資訊 — 字幕（預先錄製） (1.2.2)](#more-information-captions-prerecorded)下提供了一些教學課程的連結。 請務必提供註解或在視訊播放器中啟用註解功能，讓使用者知道視訊有註解可以使用。
+對於隱藏式字幕，您必須以適當的格式（例如[SMIL](https://www.w3.org/AudioVideo/)）與視訊檔案一起建立並提供同步化的字幕檔案(如何操作的詳細資訊不在本指南的範圍之內，但是在[更多資訊 — 字幕（預先錄製） (1.2.2)](#more-information-captions-prerecorded)下提供了某些教學課程的連結。 請務必提供註解或在視訊播放器中啟用註解功能，讓使用者知道視訊有註解可以使用。
 
 如果您必須使用開啟的註解，請將文字內嵌到視訊曲目中。 您可以使用視訊編輯應用程式來達到此目的，該應用程式允許將標題重疊在視訊上。
 
 #### 更多資訊 — 字幕（預先錄製）(1.2.2) {#more-information-captions-prerecorded}
 
-* [瞭解成功標準1.2.2](https://www.w3.org/WAI/WCAG21/Understanding/captions-prerecorded.html)
-* [如何達到成功標準1.2.2](https://www.w3.org/WAI/WCAG21/quickref/#captions-prerecorded)
+* [瞭解成功標準1.2.2](https://www.w3.org/WAI/WCAG21/Understanding/captions-prerecorded.html)。
+* [如何達到成功標準1.2.2](https://www.w3.org/WAI/WCAG21/quickref/#captions-prerecorded)。
 
 c
-* [W3C：同步的多媒體](https://www.w3.org/AudioVideo/)
-* [字幕、文字記錄及音訊說明 — 依WebAIM](https://webaim.org/techniques/captions/)
+* [W3C：同步的多媒體](https://www.w3.org/AudioVideo/)。
+* [字幕、文字記錄及音訊說明 — 依WebAIM](https://webaim.org/techniques/captions/)。
 —>
 
 ### 音訊描述或替代媒體（預先錄製） (1.2.3) {#audio-description-or-media-alternative-prerecorded}
@@ -235,8 +235,8 @@ c
 
 #### 更多資訊 — 音訊說明或替代媒體（預先錄製） (1.2.3) {#more-information-audio-description-or-media-alternative-prerecorded}
 
-* [瞭解成功標準1.2.3](https://www.w3.org/WAI/WCAG21/Understanding/audio-description-or-media-alternative-prerecorded.html)
-* [如何達到成功標準1.2.3](https://www.w3.org/WAI/WCAG21/quickref/#audio-description-or-media-alternative-prerecorded)
+* [瞭解成功標準1.2.3](https://www.w3.org/WAI/WCAG21/Understanding/audio-description-or-media-alternative-prerecorded.html)。
+* [如何達到成功標準1.2.3](https://www.w3.org/WAI/WCAG21/quickref/#audio-description-or-media-alternative-prerecorded)。
 
 <!--
 * [Adobe Encore](https://www.adobe.com/products/encore.html) - a DVD authoring software tool
@@ -288,7 +288,7 @@ c
 
 ### 可調整(1.3) {#adaptable}
 
-[建議1.3可調整：建立可以不同方式呈現的內容（例如，更簡單的版面），而不會遺失資訊或結構。](https://www.w3.org/TR/WCAG/#adaptable)
+[建議1.3可調整：建立可以不同方式呈現的內容（例如，更簡單的版面），而不會遺失資訊或結構](https://www.w3.org/TR/WCAG/#adaptable)。
 
 本指引涵蓋支援以下人員所需的需求：
 
@@ -454,12 +454,12 @@ AEM可讓您使用適當的HTML元素，輕鬆建構語義上有意義的網頁�
 
 #### 更多資訊 — 感官特性(1.3.3) {#more-information-sensory-characteristics}
 
-* [瞭解成功標準1.3.3](https://www.w3.org/WAI/WCAG21/Understanding/sensory-characteristics.html)
-* [如何達到成功標準1.3.3](https://www.w3.org/WAI/WCAG21/quickref/#sensory-characteristics)
+* [瞭解成功標準1.3.3](https://www.w3.org/WAI/WCAG21/Understanding/sensory-characteristics.html)。
+* [如何達到成功標準1.3.3](https://www.w3.org/WAI/WCAG21/quickref/#sensory-characteristics)。
 
 ### 可區分(1.4) {#distinguishable}
 
-[准則1.4可區分：讓使用者更容易檢視和聆聽內容，包括將前景與背景分開。](https://www.w3.org/TR/WCAG/#distinguishable)
+[准則1.4可區分：讓使用者更容易檢視和聆聽內容，包括將前景與背景分開](https://www.w3.org/TR/WCAG/#distinguishable)。
 
 ### 使用顏色(1.4.1)  {#use-of-color}
 
@@ -491,8 +491,8 @@ AEM可讓您使用適當的HTML元素，輕鬆建構語義上有意義的網頁�
 
 #### 更多資訊 — 使用顏色(1.4.1) {#more-information-use-of-color}
 
-* [瞭解成功標準1.4.1](https://www.w3.org/WAI/WCAG21/Understanding/use-of-color.html)
-* [如何達到成功標準1.4.1](https://www.w3.org/WAI/WCAG21/quickref/#use-of-color)
+* [瞭解成功標準1.4.1](https://www.w3.org/WAI/WCAG21/Understanding/use-of-color.html)。
+* [如何達到成功標準1.4.1](https://www.w3.org/WAI/WCAG21/quickref/#use-of-color)。
 
 ### 音訊控制(1.4.2)  {#audio-control}
 
@@ -516,8 +516,8 @@ AEM可讓您使用適當的HTML元素，輕鬆建構語義上有意義的網頁�
 
 #### 更多資訊 — 音訊控制(1.4.2) {#more-information-audio-control}
 
-* [瞭解成功標準1.4.2](https://www.w3.org/WAI/WCAG21/Understanding/audio-control.html)
-* [如何達到成功標準1.4.2](https://www.w3.org/WAI/WCAG21/quickref/#audio-control)
+* [瞭解成功標準1.4.2](https://www.w3.org/WAI/WCAG21/Understanding/audio-control.html)。
+* [如何達到成功標準1.4.2](https://www.w3.org/WAI/WCAG21/quickref/#audio-control)。
 
 ### 對比（最小） (1.4.3) {#contrast-minimum}
 
@@ -573,8 +573,8 @@ AEM可讓您使用適當的HTML元素，輕鬆建構語義上有意義的網頁�
 
 #### 更多資訊 — 對比（最小） (1.4.3) {#more-information-contrast-minimum}
 
-* [瞭解成功標準1.4.3](https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html)
-* [如何達到成功標準1.4.3](https://www.w3.org/WAI/WCAG21/quickref/#contrast-minimum)
+* [瞭解成功標準1.4.3](https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html)。
+* [如何達到成功標準1.4.3](https://www.w3.org/WAI/WCAG21/quickref/#contrast-minimum)。
 
 ### 調整文字大小(1.4.4)  {#resize-text}
 
@@ -592,8 +592,8 @@ AEM可讓您使用適當的HTML元素，輕鬆建構語義上有意義的網頁�
 
 #### 更多資訊 — 調整文字大小(1.4.4) {#more-information-resize-text}
 
-* [瞭解成功標準1.4.4](https://www.w3.org/WAI/WCAG21/Understanding/resize-text.html)
-* [如何達到成功標準1.4.4](https://www.w3.org/WAI/WCAG21/quickref/#resize-text)
+* [瞭解成功標準1.4.4](https://www.w3.org/WAI/WCAG21/Understanding/resize-text.html)。
+* [如何達到成功標準1.4.4](https://www.w3.org/WAI/WCAG21/quickref/#resize-text)。
 
 ### 文字的影像(1.4.5) {#images-of-text}
 
@@ -617,16 +617,16 @@ AEM可讓您使用適當的HTML元素，輕鬆建構語義上有意義的網頁�
 
 #### 更多資訊 — 文字影像(1.4.5) {#more-information-images-of-text}
 
-* [瞭解成功標準1.4.5](https://www.w3.org/WAI/WCAG21/Understanding/images-of-text.html)
-* [如何達到成功標準1.4.5](https://www.w3.org/WAI/WCAG21/quickref/#images-of-text)
+* [瞭解成功標準1.4.5](https://www.w3.org/WAI/WCAG21/Understanding/images-of-text.html)。
+* [如何達到成功標準1.4.5](https://www.w3.org/WAI/WCAG21/quickref/#images-of-text)。
 
 ## 准則2：可操作 {#principle-operable}
 
-[原則2：可操作 — 使用者介面元件和導覽必須可操作。](https://www.w3.org/TR/WCAG/#operable)
+[原則2：可操作 — 使用者介面元件和導覽必須可操作](https://www.w3.org/TR/WCAG/#operable)。
 
 ### 無障礙鍵盤(2.1) {#keyboard-accessible}
 
-[無障礙鍵盤2.1：讓所有功能都可使用鍵盤。](https://www.w3.org/TR/WCAG/#keyboard-accessible)
+[無障礙鍵盤2.1：讓所有功能都可使用鍵盤](https://www.w3.org/TR/WCAG/#keyboard-accessible)。
 
 此准則涉及的是，確保使用者可以使用鍵盤存取所有功能。
 
@@ -646,8 +646,8 @@ AEM可讓您使用適當的HTML元素，輕鬆建構語義上有意義的網頁�
 
 #### 更多資訊 — 鍵盤(2.1.1) {#more-information-keyboard}
 
-* [瞭解成功標準2.1.1](https://www.w3.org/WAI/WCAG21/Understanding/no-keyboard-trap.html)
-* [如何達到成功標準2.1.1](https://www.w3.org/WAI/WCAG21/quickref/#keyboard)
+* [瞭解成功標準2.1.1](https://www.w3.org/WAI/WCAG21/Understanding/no-keyboard-trap.html)。
+* [如何達到成功標準2.1.1](https://www.w3.org/WAI/WCAG21/quickref/#keyboard)。
 
 ### 無鍵盤陷阱(2.1.2)  {#no-keyboard-trap}
 
@@ -667,12 +667,12 @@ AEM可讓您使用適當的HTML元素，輕鬆建構語義上有意義的網頁�
 
 #### 更多資訊 — 無鍵盤陷阱(2.1.2) {#more-information-no-keyboard-trap}
 
-* [瞭解成功標準2.1.2](https://www.w3.org/WAI/WCAG21/Understanding/no-keyboard-trap.html)
-* [如何達到成功標準2.1.2](https://www.w3.org/WAI/WCAG21/quickref/#no-keyboard-trap)
+* [瞭解成功標準2.1.2](https://www.w3.org/WAI/WCAG21/Understanding/no-keyboard-trap.html)。
+* [如何達到成功標準2.1.2](https://www.w3.org/WAI/WCAG21/quickref/#no-keyboard-trap)。
 
 ### 充足的時間(2.2) {#enough-time}
 
-[指引2.2充足的時間：為使用者提供充足的時間來閱讀及使用內容。](https://www.w3.org/TR/WCAG/#enough-time)
+[指引2.2充足的時間：為使用者提供充足的時間來閱讀及使用內容](https://www.w3.org/TR/WCAG/#enough-time)。
 
 此准則涉及的是，確保使用者有充足的時間進行閱讀和行動。
 
@@ -692,8 +692,8 @@ AEM可讓您使用適當的HTML元素，輕鬆建構語義上有意義的網頁�
 
 #### 更多資訊 — 計時可調(2.2.1) {#more-information-timing-adjustable}
 
-* [瞭解成功標準2.2.1](https://www.w3.org/WAI/WCAG21/Understanding/timing-adjustable.html)
-* [如何達到成功標準2.2.1](https://www.w3.org/WAI/WCAG21/quickref/#timing-adjustable)
+* [瞭解成功標準2.2.1](https://www.w3.org/WAI/WCAG21/Understanding/timing-adjustable.html)。
+* [如何達到成功標準2.2.1](https://www.w3.org/WAI/WCAG21/quickref/#timing-adjustable)。
 
 ### 暫停、停止、隱藏(2.2.2)  {#pause-stop-hide}
 
@@ -726,12 +726,12 @@ AEM可讓您使用適當的HTML元素，輕鬆建構語義上有意義的網頁�
 
 #### 更多資訊 — 暫停、停止、隱藏(2.2.2) {#more-information-pause-stop-hide}
 
-* [瞭解成功標準2.2.2](https://www.w3.org/WAI/WCAG21/Understanding/pause-stop-hide.html)
-* [如何達到成功標準2.2.2](https://www.w3.org/WAI/WCAG21/quickref/#pause-stop-hide)
+* [瞭解成功標準2.2.2](https://www.w3.org/WAI/WCAG21/Understanding/pause-stop-hide.html)。
+* [如何達到成功標準2.2.2](https://www.w3.org/WAI/WCAG21/quickref/#pause-stop-hide)。
 
 ### 癲癇發作和生理反應(2.3) {#seizures-and-physcial-reactions}
 
-[指南2.3癲癇發作：請勿設計會導致癲癇發作或生理反應的內容。](https://www.w3.org/TR/WCAG/#seizures-and-physical-reactions)
+[指南2.3癲癇發作：請勿設計會導致癲癇發作或生理反應的內容](https://www.w3.org/TR/WCAG/#seizures-and-physical-reactions)。
 
 ### 三個Flash或低於臨界值(2.3.1) {#three-flashes-or-below-threshold}
 
@@ -756,12 +756,12 @@ AEM可讓您使用適當的HTML元素，輕鬆建構語義上有意義的網頁�
 
 #### 更多資訊 — 三個Flash或低於臨界值(2.3.1) {#more-information-three-flashes-or-below-threshold}
 
-* [瞭解成功標準2.3.1](https://www.w3.org/WAI/WCAG21/Understanding/three-flashes-or-below-threshold.html)
-* [如何達到成功標準2.3.1](https://www.w3.org/WAI/WCAG21/quickref/#three-flashes-or-below-threshold)
+* [瞭解成功標準2.3.1](https://www.w3.org/WAI/WCAG21/Understanding/three-flashes-or-below-threshold.html)。
+* [如何達到成功標準2.3.1](https://www.w3.org/WAI/WCAG21/quickref/#three-flashes-or-below-threshold)。
 
 ### 可導覽(2.4) {#navigable}
 
-[指引2.4可導覽：提供協助使用者導覽、尋找內容及判斷其所在位置的方法。](https://www.w3.org/TR/WCAG/#navigable)
+[指引2.4可導覽：提供協助使用者導覽、尋找內容及判斷其所在位置的方法](https://www.w3.org/TR/WCAG/#navigable)。
 
 此准則涉及的是，確保內容簡單明瞭，讓使用者易於瀏覽。
 
@@ -781,8 +781,8 @@ AEM可讓您使用適當的HTML元素，輕鬆建構語義上有意義的網頁�
 
 #### 更多資訊 — 略過區塊(2.4.1) {#more-information-bypass-blocks}
 
-* [瞭解成功標準2.4.1](https://www.w3.org/WAI/WCAG21/Understanding/bypass-blocks.html)
-* [如何達到成功標準2.4.1](https://www.w3.org/WAI/WCAG21/quickref/#bypass-blocks)
+* [瞭解成功標準2.4.1](https://www.w3.org/WAI/WCAG21/Understanding/bypass-blocks.html)。
+* [如何達到成功標準2.4.1](https://www.w3.org/WAI/WCAG21/quickref/#bypass-blocks)。
 
 ### 頁面帶有標題(2.4.2)  {#page-titled}
 
@@ -802,8 +802,8 @@ AEM可讓您使用適當的HTML元素，輕鬆建構語義上有意義的網頁�
 
 #### 更多資訊 — 頁面帶有標題(2.4.2) {#more-information-page-titled}
 
-* [瞭解成功標準2.4.2](https://www.w3.org/WAI/WCAG21/Understanding/page-titled.html)
-* [如何達到成功標準2.4.2](https://www.w3.org/WAI/WCAG21/quickref/#page-titled)
+* [瞭解成功標準2.4.2](https://www.w3.org/WAI/WCAG21/Understanding/page-titled.html)。
+* [如何達到成功標準2.4.2](https://www.w3.org/WAI/WCAG21/quickref/#page-titled)。
 
 ### 焦點順序(2.4.3)  {#focus-order}
 
@@ -821,8 +821,8 @@ AEM可讓您使用適當的HTML元素，輕鬆建構語義上有意義的網頁�
 
 #### 更多資訊 — 焦點順序(2.4.3) {#more-information-focus-order}
 
-* [瞭解成功標準2.4.3](https://www.w3.org/WAI/WCAG21/Understanding/focus-order.html)
-* [如何達到成功標準2.4.3](https://www.w3.org/WAI/WCAG21/quickref/#focus-order)
+* [瞭解成功標準2.4.3](https://www.w3.org/WAI/WCAG21/Understanding/focus-order.html)。
+* [如何達到成功標準2.4.3](https://www.w3.org/WAI/WCAG21/quickref/#focus-order)。
 
 ### 連結目的（在內容中） (2.4.4)  {#link-purpose-in-context}
 
@@ -884,8 +884,8 @@ John Smith's publications
 
 #### 更多資訊 — 連結目的（在內容中） (2.4.4) {#more-information-link-purpose-in-context}
 
-* [瞭解成功標準2.4.4](https://www.w3.org/WAI/WCAG21/Understanding/link-purpose-in-context.html)
-* [如何達到成功標準2.4.4](https://www.w3.org/WAI/WCAG21/quickref/#link-purpose-in-context)
+* [瞭解成功標準2.4.4](https://www.w3.org/WAI/WCAG21/Understanding/link-purpose-in-context.html)。
+* [如何達到成功標準2.4.4](https://www.w3.org/WAI/WCAG21/quickref/#link-purpose-in-context)。
 
 <!--
 * [C7: Using CSS to hide a portion of the link text](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/C7)
@@ -909,8 +909,8 @@ John Smith's publications
 
 #### 更多資訊 — 多種方式(2.4.5) {#more-information-multiple-ways}
 
-* [瞭解成功標準2.4.5](https://www.w3.org/WAI/WCAG21/Understanding/multiple-ways.html)
-* [如何達到成功標準2.4.5](https://www.w3.org/WAI/WCAG21/quickref/#multiple-ways)
+* [瞭解成功標準2.4.5](https://www.w3.org/WAI/WCAG21/Understanding/multiple-ways.html)。
+* [如何達到成功標準2.4.5](https://www.w3.org/WAI/WCAG21/quickref/#multiple-ways)。
 
 ### 標題和標籤(2.4.6)  {#headings-and-labels}
 
@@ -928,8 +928,8 @@ John Smith's publications
 
 #### 更多資訊 — 標題和標籤(2.4.6) {#more-information-headings-and-labels}
 
-* [瞭解成功標準2.4.6](https://www.w3.org/WAI/WCAG21/Understanding/headings-and-labels.html)
-* [如何達到成功標準2.4.6](https://www.w3.org/WAI/WCAG21/quickref/#headings-and-labels)
+* [瞭解成功標準2.4.6](https://www.w3.org/WAI/WCAG21/Understanding/headings-and-labels.html)。
+* [如何達到成功標準2.4.6](https://www.w3.org/WAI/WCAG21/quickref/#headings-and-labels)。
 
 ### 焦點可見(2.4.7)  {#focus-visible}
 
@@ -956,11 +956,11 @@ John Smith's publications
 
 ## 准則3：可理解 {#principle-understandable}
 
-[原則3：可理解 — 使用者介面的資訊和操作必須是可理解的。](https://www.w3.org/TR/WCAG/#understandable)
+[原則3：可理解 — 使用者介面的資訊和操作必須是可理解的](https://www.w3.org/TR/WCAG/#understandable)。
 
 ### 讓文字內容可讀取及理解(3.1) {#make-text-content-readable-and-understandable}
 
-[准則3.1可讀取：讓文字內容可讀取且可理解。](https://www.w3.org/TR/WCAG/#readable)
+[准則3.1可讀取：讓文字內容可讀取且可理解](https://www.w3.org/TR/WCAG/#readable)。
 
 ### 頁面語言(3.1.1) {#language-of-page}
 
@@ -1043,7 +1043,7 @@ John Smith's publications
 
 ### 可預測(3.2) {#predictable}
 
-[指引3.2可預測：讓網頁以可預見的方式顯示和運作。](https://www.w3.org/TR/WCAG/#predictable)
+[指引3.2可預測：讓網頁以可預見的方式顯示和運作](https://www.w3.org/TR/WCAG/#predictable)。
 
 此准則涉及的是，確保網頁的外觀和運作方式一致。
 
@@ -1141,7 +1141,7 @@ John Smith's publications
 
 ### 輸入協助(3.3) {#input-assistance}
 
-[建議3.3輸入協助：協助使用者避免和更正錯誤。](https://www.w3.org/TR/WCAG/#input-assistance)
+[建議3.3輸入協助：協助使用者避免和更正錯誤](https://www.w3.org/TR/WCAG/#input-assistance)。
 
 ### 錯誤識別(3.3.1)  {#error-identification}
 
@@ -1182,7 +1182,7 @@ John Smith's publications
 
 提供指示以幫助人們完成表單是介面可用性良好實務的基本部分。 這麼做有助於視障或認知障礙人士瞭解表單的版面以及在特定表單欄位中要提供的資料類別，否則他們可能會有困難。
 
-##### 表單
+##### Forms
 
 在AEM WKND示範專案中，當您新增表單元件（例如&#x200B;**文字欄位**）至頁面時，會新增預設標籤。 此預設標題取決於元件型別。 您可以在該欄位編輯對話方塊的&#x200B;**標題與文字**&#x200B;索引標籤中新增自己的標題。 請務必確保標籤可協助使用者瞭解與每個表單元件相關聯的資料。
 
@@ -1275,11 +1275,11 @@ John Smith's publications
 
 ## 原則4：強健 {#principle-robust}
 
-[原則4：強健 — 內容必須足夠強健，以供包括輔助技術在內的各種使用者代理程式解譯。](https://www.w3.org/TR/WCAG/#robust)
+[原則4：強健 — 內容必須足夠強健，以供包括輔助技術在內的各種使用者代理程式解譯](https://www.w3.org/TR/WCAG/#robust)。
 
 ### 相容(4.1) {#compatible}
 
-[指南4.1相容性：儘可能與目前和未來的使用者代理程式相容，包括輔助技術。](https://www.w3.org/TR/WCAG/#compatible)
+[指南4.1相容：儘可能與目前和未來的使用者代理程式相容，包括輔助技術](https://www.w3.org/TR/WCAG/#compatible)。
 
 儘可能與目前和未來的使用者代理程式相容，包括輔助技術。
 

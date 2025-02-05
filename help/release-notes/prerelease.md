@@ -4,10 +4,10 @@ description: 了解如何使用發行前通道來取得即將推出的 AEM as a 
 exl-id: cfc91699-0087-40fa-a76c-0e5e1e03a5bd
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1264'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 
 ## 簡介 {#introduction}
 
-Adobe Experience Manager as a Cloud Service 會根據 [Experience Manager 發行藍圖](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html#aem-as-cloud-service)定期提供新功能。
+Adobe Experience Manager as a Cloud Service會根據[Experience Manager發行藍圖](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html#aem-as-cloud-service)，定期提供新功能。
 
 若要熟悉排定在下個功能發行上線的功能，您可以訂閱發行前通道，您可藉由設定您的開發環境或任何沙箱環境來存取該通道。您可以預覽可透過 AEM 使用者介面存取的變更，也可以針對任何新的發行前 API 建置程式碼。
 
@@ -50,7 +50,7 @@ AEM as a Cloud Service 有兩種發行。
 
 ## 標示您的行事曆 {#mark-calendars}
 
-功能發行都會事先安排好，並於 [Adobe Experience League](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html#aem-as-cloud-service) 上發佈功能發行啟用日期。
+功能發行已提前排程，功能發行啟用日期發佈於[Adobe Experience League](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html#aem-as-cloud-service)。
 
 記下發行日期，以便您可以規劃時間來檢閱和測試即將推出的功能。
 
@@ -83,7 +83,7 @@ AEM as a Cloud Service 有兩種發行。
 
 1. 選取您要啟用發行前版本的環境，並透過&#x200B;**計畫** > **環境** > **環境設定**&#x200B;存取其設定。
 
-1. 增加一個新的[環境變數](../implementing/cloud-manager/environment-variables.md)：
+1. 新增新的[環境變數](../implementing/cloud-manager/environment-variables.md)
 
    | 名稱 | 值 | 套用的服務 | 類型 |
    |------|-------|-----------------|------|
@@ -97,7 +97,7 @@ AEM as a Cloud Service 有兩種發行。
 
 您也可以使用 Cloud Manager API 和 CLI 來更新環境變數。
 
-* 使用 [Cloud Manager API 的環境變數端點](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/patchEnvironmentVariables)，將 `AEM_RELEASE_CHANNEL` 環境變數設定為值 `prerelease`。
+* 使用[Cloud Manager API的環境變數端點](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/patchEnvironmentVariables)，將`AEM_RELEASE_CHANNEL`環境變數設定為值`prerelease`。
 
   ```text
   PATCH /program/{programId}/environment/{environmentId}/variables

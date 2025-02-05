@@ -4,10 +4,10 @@ description: 瞭解Adobe Experience Manager HTTP API支援內容片段，這是A
 feature: Content Fragments, Assets HTTP API
 exl-id: d72cc0c0-0641-4fd6-9f87-745af5f2c232
 role: User, Admin
-source-git-commit: 7386298ee83eef5693ce00077659bbc4a1a70d24
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
-source-wordcount: '1829'
-ht-degree: 15%
+source-wordcount: '1827'
+ht-degree: 14%
 
 ---
 
@@ -39,7 +39,7 @@ ht-degree: 15%
 
 >[!NOTE]
 >
->如需 Experience Manager API 的最新資訊，另請造訪「[Adobe Experience Manager as a Cloud Service API](https://developer.adobe.com/experience-cloud/experience-manager-apis/)」。
+>如需Experience Manager API的最新資訊，請造訪[Adobe Experience Manager as a Cloud Service API](https://developer.adobe.com/experience-cloud/experience-manager-apis/)。
 
 [Assets REST API](/help/assets/mac-api-assets.md)可讓Adobe Experience Manager as a Cloud Service的開發人員透過CRUD （建立、讀取、更新、刪除）作業，直接透過HTTP API存取內容(儲存在AEM中)。
 

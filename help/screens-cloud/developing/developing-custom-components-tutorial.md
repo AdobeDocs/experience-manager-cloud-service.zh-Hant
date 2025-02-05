@@ -4,7 +4,7 @@ description: 下列教學課程將逐步說明為AEM Screens建立自訂元件�
 exl-id: fe8e7bf2-6828-4a5a-b650-fb3d9c172b97
 feature: Developing Screens
 role: Admin, Developer, User
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '2042'
 ht-degree: 2%
@@ -30,7 +30,7 @@ ht-degree: 2%
 
 1. 本機開發環境
 
-教學課程步驟和熒幕擷取畫面使用&#x200B;**CRXDE Lite**&#x200B;執行。 您也可以使用IDE來完成本教學課程。 有關使用IDE來開發[搭配AEM的詳細資訊，請參閱此處。](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html)
+教學課程步驟和熒幕擷取畫面使用&#x200B;**CRXDE Lite**&#x200B;執行。 您也可以使用IDE來完成本教學課程。 有關使用IDE開發[搭配AEM的詳細資訊，請參閱此處](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html)。
 
 
 ## 專案設定 {#project-setup}

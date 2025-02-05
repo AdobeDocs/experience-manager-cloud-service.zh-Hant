@@ -5,7 +5,7 @@ exl-id: 355b60c5-a82e-4bbb-98ea-bfcc0126b7fd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1271'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 >[!TIP]
 >
->開始管理您的頁面之前，請熟悉[在AEM中組織頁面的方式。](/help/sites-cloud/authoring/sites-console/organizing-pages.md)
+>開始管理您的頁面之前，請熟悉[在AEM](/help/sites-cloud/authoring/sites-console/organizing-pages.md)中您的頁面組織方式。
 
 >[!TIP]
 >
@@ -32,9 +32,9 @@ ht-degree: 0%
 
 ## 開啟頁面進行編輯 {#opening-a-page-for-editing}
 
-在[建立頁面](/help/sites-cloud/authoring/sites-console/creating-pages.md)或使用[Sites **主控台](/help/sites-cloud/authoring/sites-console/introduction.md)導覽至現有頁面後，您可以開啟它以進行編輯。**
+在[建立頁面](/help/sites-cloud/authoring/sites-console/creating-pages.md)或使用[Sites **主控台](/help/sites-cloud/authoring/sites-console/introduction.md)導覽至現有頁面之後，您可以開啟它以進行編輯。**
 
-1. 開啟[ **網站**&#x200B;主控台。](/help/sites-cloud/authoring/sites-console/introduction.md)
+1. 開啟[ **網站**&#x200B;主控台](/help/sites-cloud/authoring/sites-console/introduction.md)。
 1. 導覽以尋找您要編輯的頁面。
 1. 使用下列任一專案選取您的頁面：
 
@@ -53,7 +53,7 @@ ht-degree: 0%
 
 您可以將頁面及其所有子頁面複製到新位置：
 
-1. 開啟[ **網站**&#x200B;主控台。](/help/sites-cloud/authoring/sites-console/introduction.md)
+1. 開啟[ **網站**&#x200B;主控台](/help/sites-cloud/authoring/sites-console/introduction.md)。
 1. 導覽以尋找您要複製的頁面。
 1. 使用以下其中一種方式選取您的頁面：
 
@@ -95,7 +95,7 @@ ht-degree: 0%
 
 AEM提供可更新任何內部連結的功能，這些連結會參照正在重新命名/移動的頁面。 您可以逐頁進行，提供完整的彈性。
 
-1. 開啟[ **網站**&#x200B;主控台。](/help/sites-cloud/authoring/sites-console/introduction.md)
+1. 開啟[ **網站**&#x200B;主控台](/help/sites-cloud/authoring/sites-console/introduction.md)。
 1. 導覽以尋找您要移動的頁面。
 1. 使用以下其中一種方式選取您的頁面：
 
@@ -181,7 +181,7 @@ AEM提供可更新任何內部連結的功能，這些連結會參照正在重�
 
 ### 刪除頁面 {#deleting-a-page}
 
-1. 開啟[ **網站**&#x200B;主控台。](/help/sites-cloud/authoring/sites-console/introduction.md)
+1. 開啟[ **網站**&#x200B;主控台](/help/sites-cloud/authoring/sites-console/introduction.md)。
 1. 導覽至您要刪除的頁面。
 1. 使用[選取模式](/help/sites-cloud/authoring/basic-handling.md#viewing-and-selecting-resources)來選取必要的頁面，然後使用工具列中的&#x200B;**刪除**：
 
@@ -213,7 +213,7 @@ AEM提供可更新任何內部連結的功能，這些連結會參照正在重�
 
 您可以建立資料夾來協助組織您的檔案和頁面。
 
-1. 開啟[ **網站**&#x200B;主控台。](/help/sites-cloud/authoring/sites-console/introduction.md)
+1. 開啟[ **網站**&#x200B;主控台](/help/sites-cloud/authoring/sites-console/introduction.md)。
 1. 導覽至所需位置。
 1. 若要開啟選項清單，請從工具列選取&#x200B;**建立**
 1. 選取&#x200B;**資料夾**&#x200B;以開啟對話方塊。 您可以在這裡輸入&#x200B;**名稱**&#x200B;和&#x200B;**標題**：

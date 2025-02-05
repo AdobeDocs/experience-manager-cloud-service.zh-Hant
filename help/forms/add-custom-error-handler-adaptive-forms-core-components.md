@@ -7,7 +7,7 @@ content-type: reference
 feature: Adaptive Forms, Core Components
 exl-id: 4496c4cc-a5d7-4f34-91f9-13eded77b362
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '2332'
 ht-degree: 95%
@@ -232,7 +232,7 @@ AEM Forms 為表單提交提供現成可用的成功和錯誤處理常式。這�
 
 若要建立自訂錯誤函數，請執行以下步驟：
 
-1. [原地複製您的 AEM Forms as a Cloud Service 存放庫.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=zh-Hant#accessing-git).
+1. [複製AEM Formsas a Cloud Service存放庫](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=zh-Hant#accessing-git)。
 1. 在 `[AEM Forms as a Cloud Service repository folder]/apps/` 檔案夾中建立一個檔案夾。例如，建立一個名為 `experience-league` 的檔案夾
 1. 導覽至 `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/experience-league/` 並建立一個名為 `clientlibs` 的 `ClientLibraryFolder` 檔案夾。
 1. 建立一個名為 `js` 的檔案夾。
@@ -290,7 +290,7 @@ AEM Forms 為表單提交提供現成可用的成功和錯誤處理常式。這�
        git push
    ```
 
-1. [執行管道.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=zh-Hant#setup-pipeline)
+1. [執行管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=zh-Hant#setup-pipeline)。
 
 成功執行管道後，自訂錯誤處理常式將可在最適化表單規則編輯器中使用。現在，讓我們了解如何使用 AEM Forms 規則編輯器的調用服務來設定和使用自訂錯誤處理常式。
 

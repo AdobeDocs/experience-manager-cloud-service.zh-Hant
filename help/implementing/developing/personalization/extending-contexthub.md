@@ -4,7 +4,7 @@ description: 當提供的ContextHub存放區和模組不符合您的解決方案
 exl-id: ba817c18-f8bd-485d-b043-87593a6a93b5
 feature: Developing, Personalization
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '625'
 ht-degree: 0%
@@ -60,7 +60,7 @@ ContextHub.Utils.storeCandidates.registerStoreCandidate(myStoreCandidate,
                                 'contexthub.mystorecandidate', 0);
 ```
 
-在大多數情況下，只需要一個候選者，而且優先順序可以設定為`0`，但如果您有興趣，可以瞭解[更多進階註冊，](contexthub-api.md#registerstorecandidate-store-storetype-priority-applies)，這允許根據javascript條件(`applies`)和候選者優先順序來選擇少數幾個商店實作之一。
+在大多數情況下，只需要一個候選者，而且優先順序可以設定為`0`，但如果您有興趣，可以瞭解更多進階註冊](contexthub-api.md#registerstorecandidate-store-storetype-priority-applies)，這可讓您根據javascript條件(`applies`)和候選者優先順序，選擇少數幾個商店實作之一。[
 
 ## 建立ContextHub UI模組型別 {#creating-contexthub-ui-module-types}
 

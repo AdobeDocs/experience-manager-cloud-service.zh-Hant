@@ -5,9 +5,9 @@ feature: Multi Site Manager
 role: Admin
 exl-id: 61b8ded8-3b9e-423f-85a9-7280e1a721cc
 solution: Experience Manager Sites
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
-source-wordcount: '1413'
+source-wordcount: '1414'
 ht-degree: 3%
 
 ---
@@ -99,7 +99,7 @@ MSM可以透過兩種方式協助建立多語言網站：
 * 在Blueprint中移動&#x200B;**頁面將**&#x200B;不會&#x200B;**導致在採用標準轉出設定的轉出後，在即時副本中移動對應的頁面：**
    * 此行為的原因是頁面移動隱含包含頁面刪除。 這可能會導致發佈時產生非預期的行為，因為刪除作者上的頁面會自動停用發佈上的對應內容。 這也可能對相關專案（例如連結、書籤等）產生其他影響。
       * 個別即時副本頁面中的內容繼承會更新，以反映其來源在Blueprint中的新位置。
-      * 若要完全實現從Blueprint到即時副本的頁面移動，請考慮[頁面移動最佳實務。](#page-move)
+      * 若要完全實現從Blueprint到即時副本的頁面移動，請考慮[頁面移動最佳實務]。(#page-move)
 
 ### 頁面移動最佳實務 {#page-move}
 

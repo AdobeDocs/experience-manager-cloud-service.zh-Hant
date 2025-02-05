@@ -4,10 +4,10 @@ description: 了解如何使用 Edge Delivery Services 傳遞您的 Cloud Manage
 exl-id: f33bd6f0-62fc-4ecc-b8d2-65d1f1c44d82
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 0fb5476b4cff9e26971696bd8352181a71e7b3e4
-workflow-type: ht
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+workflow-type: tm+mt
 source-wordcount: '766'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -69,7 +69,7 @@ AEM as a Cloud Service 中的 Cloud Manager 可讓您為專案啟用 Edge Delive
 
 Cloud Manager 中的 **Edge Delivery 待辦事項清單**&#x200B;是上線任務檢查清單，目的為全程引導您上線，管理您的 Edge Delivery 網站一直到[上線](/help/journey-onboarding/go-live-checklist.md)。
 
-![Cloud Manager 中的 Edge Delivery 網站待辦事項清單](/help/implementing/cloud-manager/assets/cm-eds-todo-list.png)
+![Cloud Manager中的Edge Delivery網站待辦事項清單。](/help/implementing/cloud-manager/assets/cm-eds-todo-list.png)
 
 |   | 任務 | 說明 |
 | --- | --- | --- |

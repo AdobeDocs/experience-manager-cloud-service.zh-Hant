@@ -5,10 +5,10 @@ exl-id: 58e95c92-b859-4bb9-aa62-7766510486fd
 solution: Experience Manager Sites
 feature: Developing
 role: Admin, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '776'
-ht-degree: 100%
+ht-degree: 82%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 
 ## 目前進度 {#story-so-far}
 
-在 AEM 快速建立網站歷程的上一個文件「[設定您的管道](pipeline-setup.md)」中，您已學習如何建立前端管道來管理網站主題的自訂內容，現在您應該：
+在AEM快速網站建立歷程的上一個檔案[設定您的管道](pipeline-setup.md)中，您已瞭解如何建立前端管道來管理網站主題的自訂，現在應：
 
 * 了解什麼是前端管道。
 * 了解如何在 Cloud Manager 中設定前端管道。
@@ -101,10 +101,10 @@ ht-degree: 100%
 * 如何將前端開發人員新增為使用者。
 * 如何向前端開發人員授予所需的角色。
 
-以此知識為基礎並繼續您的 AEM 快速建立網站歷程，接著檢閱文件「[擷取 Git 存放庫存取資訊](retrieve-access.md)」，切換至前端開發人員的獨特角度，並說明前端開發人員如何使用 Cloud Manager 來存取 Git 存放庫資訊。
+在此基礎上繼續您的AEM快速網站建立歷程，接下來檢閱檔案[擷取Git存放庫存取資訊](retrieve-access.md)，此檔案會將視角專門切換到前端開發人員，並說明前端開發人員如何使用Cloud Manager存取Git存放庫資訊。
 
 ## 其他資源 {#additional-resources}
 
-因為我們建議您檢閱文件「[擷取前端開發人員認證](retrieve-access.md)」來繼續快速建立網站歷程的下個部分，所以提供以下其他選用資源，協助深入瞭解本文件提及的一些概念，但是這些並非繼續執行歷程的必要條件。
+我們建議您檢閱檔案[擷取前端開發人員憑證](retrieve-access.md)來繼續快速網站建立歷程的下一部分，以下是一些其他選擇性資源，這些資源會對本檔案中提到的一些概念進行更深入的探究，但並非繼續此歷程所必需的。
 
 * [上線歷程](/help/journey-onboarding/overview.md) - 本指南可作為您的起點，確保您的團隊已設定完成並可存取 AEM as a Cloud Service。

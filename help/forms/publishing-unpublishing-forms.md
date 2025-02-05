@@ -8,15 +8,15 @@ feature: Adaptive Forms
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: 937bd4653e454beea3111cfc7ef7b4bbc1ace193
+exl-id: 9496e4f5-ed74-4b40-b8f9-17153170af66
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1328'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
-
-# 發佈和取消發佈表單和檔案{#publishing-and-unpublishing-forms-and-documents}
+# 發佈和取消發佈表單和文件{#publishing-and-unpublishing-forms-and-documents}
 
 [!DNL AEM Forms]可讓您輕鬆建立、發佈和取消發佈表單。 [!DNL AEM Forms]伺服器提供兩個執行個體： Author和Publish。 製作例項用於建立及管理表單資產和資源。 Publish例項用來保留可供一般使用者使用的資產和相關資源。
 
@@ -122,7 +122,7 @@ ht-degree: 0%
 
 ## 自動發佈和取消發佈Forms和檔案 {#automate-publishing-and-unpublishing-for-forms-amp-documents}
 
-[!DNL AEM Forms]可讓您排程Forms和檔案的資產發佈和取消發佈。 您可以在中繼資料編輯器中指定排程。 如需有關管理表單中繼資料的詳細資訊，請參閱[管理表單中繼資料。](manage-form-metadata.md)
+[!DNL AEM Forms]可讓您排程Forms和檔案的資產發佈和取消發佈。 您可以在中繼資料編輯器中指定排程。 如需有關管理表單中繼資料的詳細資訊，請參閱[管理表單中繼資料](manage-form-metadata.md)。
 
 請依照下列步驟，排程發佈和取消發佈Forms &amp; Documents資產的日期和時間：
 

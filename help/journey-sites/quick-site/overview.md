@@ -1,14 +1,14 @@
 ---
-title: AEM 快速網站建立歷程
+title: 'AEM 快速網站建立歷程 '
 description: 從這裡開始，此歷程會逐步引導您了解簡單易用的 AEM 快速建立網站工具，以簡化 AEM 網站的前端開發，並在沒有 AEM 後端知識的情況下快速自訂您的網站。
 exl-id: b8218232-0298-4b16-9dab-fa59be592a24
 solution: Experience Manager Sites
 feature: Developing
 role: Admin, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1020'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 
 ## 簡介 {#introduction}
 
-AEM Sites 是用於建立和管理數位體驗的強大工具集。內容作者可以使用網站編輯器輕鬆建立數位體驗，並使用Sites 主控台組織內容，同時能夠查看 AEM 跨管道傳遞給您對象的即時內容。
+AEM Sites 是用於建立和管理數位體驗的強大工具集。內容作者可以使用網站編輯器輕鬆建立數位體驗，並使用Sites 主控台組織內容，同時能夠查看 AEM 跨管道傳遞給您客群的即時內容。
 
 AEM 快速建立網站工具讓非開發人員使用網站範本從頭開始快速建立網站。建立後，快速建立網站工具還可讓您快速為 AEM 網站自訂主題並建立風格 (JavaScript、CSS 和靜態資源)。這使得前端開發人員即使不懂 AEM 也能與內容建立者分開且並行工作。AEM 管理員只需下載網站主題並將其提供給前端開發人員，前端開發人員使用他們偏好的工具自訂主題，然後將變更提交到 AEM 程式碼存放庫，然後進行部署。
 
@@ -26,7 +26,7 @@ AEM 快速建立網站工具讓非開發人員使用網站範本從頭開始快�
 
 ## 影片概觀 {#video-overview}
 
-如需快速了解此功能的實際運作，[您可以觀看這個五分鐘的簡介。](https://www.youtube.com/watch?v=NQeQ1jZ7ZBw)
+若要快速瞭解此功能的運作概況，[您可以觀看這五分鐘的簡介](https://www.youtube.com/watch?v=NQeQ1jZ7ZBw)。
 
 此文件歷程將逐步詳細地引導您了解影片中的所有功能，以便您了解工作流程，可在您自己的環境中重新建立此流程。
 
@@ -38,9 +38,9 @@ AEM 快速建立網站工具讓非開發人員使用網站範本從頭開始快�
 
 如果您想了解 Adobe 建議如何使用 AEM 解決網站業務案例，AEM Sites 歷程是理想的出發點。
 
-## 對象 {#audience}
+## 客群 {#audience}
 
-此歷程闡述自訂 AEM Sites 主題的要求、步驟和方法。主要對象是不需具備 AEM 知識的前端開發人員。但是，為了說明整個過程，該歷程涉及管理員，並假設他們具有基本的 AEM Sites 和 Cloud Manager 知識。在實務上，多個人可以擔任多個角色，此歷程以管理員和前端開發人員的角度出發。
+此歷程闡述自訂 AEM Sites 主題的要求、步驟和方法。主要客群是不需具備 AEM 知識的前端開發人員。但是，為了說明整個過程，該歷程涉及管理員，並假設他們具有基本的 AEM Sites 和 Cloud Manager 知識。在實務上，多個人可以擔任多個角色，此歷程以管理員和前端開發人員的角度出發。
 
 | 角色 | 說明 | 歷程中的角色 |
 |---|---|---|
@@ -70,7 +70,7 @@ AEM 快速建立網站工具讓非開發人員使用網站範本從頭開始快�
 
 * 如果您是 AEM 或 Cloud Manager 管理員，或者如果您同時擔任前端開發人員和管理員角色，或者如果您只是想了解 AEM 中的端到端流程，請從歷程的開頭：[了解 Cloud Manager](cloud-manager.md) 開始進行。
 * 如果您只負責前端開發，會與 AEM 和 Cloud Manager 管理員互動，可以直接跳到「[擷取 Git 存放庫存取權資訊](retrieve-access.md)」，以取得 AEM Git 存放庫存取權並開始自訂。
-* 如果您已經了解 AEM Sites 和 Cloud Manager 如何協同運作，而想直接開始設定，您可以直接跳到「[使用範本建立網站](create-site.md)」。
+* 如果您已瞭解AEM Sites和Cloud Manager的搭配運作，並且想要直接從設定開始，您可以[直接跳至從範本建立網站](create-site.md)。
 
 ## 其他資源 {#additional-resources}
 

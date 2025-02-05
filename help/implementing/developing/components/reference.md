@@ -4,7 +4,7 @@ description: 開發人員參考指南，瞭解元件及其結構的詳細資訊
 exl-id: 45e5265b-39d6-4a5c-be1a-e66bb7ea387d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '3481'
 ht-degree: 1%
@@ -92,7 +92,7 @@ AEM元件的結構既強大又靈活。 主要部分為：
 
 元件的定義可劃分如下：
 
-* AEM元件以[Sling.](https://sling.apache.org/documentation.html)為基礎
+* AEM元件是以[Sling](https://sling.apache.org/documentation.html)為基礎。
 * AEM元件位於`/libs/core/wcm/components`之下。
 * 專案/網站特定元件位於`/apps/<myApp>/components`下方。
 * AEM標準元件已定義為`cq:Component`，並具有關鍵元素：
@@ -105,32 +105,32 @@ AEM元件的結構既強大又靈活。 主要部分為：
 * **根節點**：
    * `<mycomponent> (cq:Component)` — 元件的階層節點。
 * **重要屬性**：
-   * `jcr:title` — 元件標題；例如，當元件列在[元件瀏覽器](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser)和[元件主控台](/help/sites-cloud/authoring/components-console.md)中時，做為標籤
-   * `jcr:description` — 元件的說明；在元件瀏覽器和元件主控台中作為滑鼠移過提示使用
-   * 如需詳細資訊，請參閱[元件圖示](#component-icon)一節
+   * `jcr:title` — 元件標題；例如，當元件列在[元件瀏覽器](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser)和[元件主控台](/help/sites-cloud/authoring/components-console.md)中時，做為標籤。
+   * `jcr:description` — 元件的說明；在元件瀏覽器和元件主控台中做為滑鼠移過提示。
+   * 如需詳細資訊，請參閱[元件圖示](#component-icon)一節。
 * **重要的子節點**：
-   * `cq:editConfig (cq:EditConfig)` — 定義元件的編輯屬性，並讓元件出現在元件瀏覽器中
+   * `cq:editConfig (cq:EditConfig)` — 定義元件的編輯屬性，並讓元件出現在元件瀏覽器中。
       * 如果元件有對話方塊，即使cq：editConfig不存在，它也會自動出現在「元件」瀏覽器或Sidekick中。
    * `cq:childEditConfig (cq:EditConfig)` — 控制未定義自己`cq:editConfig`之子元件的作者UI方面。
    * `cq:dialog (nt:unstructured)` — 此元件的對話方塊。 定義允許使用者設定元件及/或編輯內容的介面。
-   * `cq:design_dialog (nt:unstructured)` — 此元件的設計編輯
+   * `cq:design_dialog (nt:unstructured)` — 為此元件設計編輯。
 
 #### 元件圖示 {#component-icon}
 
 元件的圖示或縮寫可在開發人員建立元件時，透過元件的JCR屬性來定義。 系統會依下列順序評估這些屬性，並使用找到的第一個有效屬性。
 
-1. `cq:icon` — 字串屬性，指向[Coral UI程式庫](https://opensource.adobe.com/coral-spectrum/examples/#icon)中要顯示在元件瀏覽器中的標準圖示
+1. `cq:icon` — 字串屬性，指向[Coral UI程式庫](https://opensource.adobe.com/coral-spectrum/examples/#icon)中要顯示在元件瀏覽器中的標準圖示。
    * 使用Coral圖示的HTML屬性值。
-1. `abbreviation` — 字串屬性，用於自訂元件瀏覽器中元件名稱的縮寫
+1. `abbreviation` — 字串屬性，用於自訂元件瀏覽器中元件名稱的縮寫。
    * 縮寫應限製為兩個字元。
    * 提供空字串將會從`jcr:title`屬性的前兩個字元建立縮寫。
-      * 例如，「Image」的「Im」
+      * 例如，「Im」代表「影像」。
       * 使用當地語系化的標題來建置縮寫。
    * 只有當元件具有`abbreviation_commentI18n`屬性（然後用作轉譯提示）時，才會轉譯縮寫。
-1. `cq:icon.png`或`cq:icon.svg` — 此元件的圖示，會顯示在元件瀏覽器中
+1. `cq:icon.png`或`cq:icon.svg` — 此元件的圖示，會顯示在元件瀏覽器中。
    * 20 x 20畫素是標準元件的圖示大小。
       * 較大的圖示會縮小（使用者端）。
-   * 建議的色彩為rgb(112， 112， 112) > #707070
+   * 建議的色彩為rgb(112， 112， 112) > #707070。
    * 標準元件圖示的背景是透明的。
    * 僅支援`.png`和`.svg`個檔案。
    * 如果透過Eclipse外掛程式從檔案系統匯入，檔案名稱需要以`_cq_icon.png`或`_cq_icon.svg`逸出。
@@ -172,7 +172,7 @@ AEM元件的結構既強大又靈活。 主要部分為：
 | `cq:isContainer` | `Boolean` | 這表示元件是否為容器元件，因此可包含其他元件，例如段落系統。 |
 | `cq:dialog` | `nt:unstructured` | 這是元件之「編輯」對話方塊的定義。 |
 | `cq:design_dialog` | `nt:unstructured` | 這是元件之「設計」對話方塊的定義。 |
-| `cq:editConfig` | `cq:EditConfig` | 這會定義元件的[編輯組態。](#edit-behavior) |
+| `cq:editConfig` | `cq:EditConfig` | 這會定義元件](#edit-behavior)的[編輯組態。 |
 | `cq:htmlTag` | `nt:unstructured` | 這會傳回新增至周圍HTML標籤的其他標籤屬性。 啟用向自動產生的div新增屬性。 |
 | `cq:noDecoration` | `Boolean` | 如果為true，則元件不會使用自動產生的div和css類別轉譯。 |
 | `cq:template` | `nt:unstructured` | 如果找到，從元件瀏覽器新增元件時，會將此節點作為內容範本使用。 |
@@ -256,7 +256,7 @@ Content not found
 
 `/libs/granite/ui/components/coral/foundation/form/field`
 
-更具體來說，Granite UI提供一系列適合用於對話方塊的欄位元件，或更一般地說就是[表單。](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/form/index.html)
+更具體來說，Granite UI提供一系列適合用於對話方塊的欄位元件，或更一般地說就是[表單](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/form/index.html)。
 
 建立資源型別後，您可以在對話方塊中新增節點，讓屬性`sling:resourceType`參照您剛才介紹的資源型別，將欄位具現化。
 
@@ -339,7 +339,7 @@ AEM中有許多現有設定。 您可以使用&#x200B;**CRXDE Lite**&#x200B;中�
 
 在上一個範例中，`isEmpty`是變數，只有在元件沒有內容且作者無法看到時，才會成立。
 
-為避免重複，Adobe建議元件的實作者對這些預留位置使用HTL範本，[就像核心元件所提供的範本。](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/commons/v1/templates.html)
+為避免重複，Adobe建議元件的實作者對這些預留位置使用HTL範本，[就像核心元件](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/commons/v1/templates.html)提供的範本。
 
 接著，使用先前連結中的範本並使用下列HTL行：
 
@@ -350,7 +350,7 @@ AEM中有許多現有設定。 您可以使用&#x200B;**CRXDE Lite**&#x200B;中�
 
 在上一個範例中，`model.text`是變數，只有在內容具有內容且可見時才為真。
 
-此範本的範例使用可在核心元件[中看到，例如在標題元件中。](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/title/v2/title/title.html#L27)
+此範本的範例使用可在核心元件[中看到，例如在標題元件](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/title/v2/title/title.html#L27)中。
 
 ### 使用cq：EditConfig子節點進行配置 {#configuring-with-cq-editconfig-child-nodes}
 

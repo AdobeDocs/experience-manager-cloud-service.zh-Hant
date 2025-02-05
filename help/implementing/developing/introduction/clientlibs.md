@@ -4,7 +4,7 @@ description: AEM提供使用者端程式庫資料夾，可讓您將使用者端�
 exl-id: 370db625-09bf-43fb-919d-4699edaac7c8
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '2497'
 ht-degree: 1%
@@ -14,7 +14,7 @@ ht-degree: 1%
 
 # 在AEM as a Cloud Service上使用使用者端資料庫 {#using-client-side-libraries}
 
-數位體驗高度依賴由複雜的JavaScript和CSS程式碼驅動的使用者端處理。 AEM使用者端資料庫(clientlibs)可讓您整理並集中儲存存放庫中的這些使用者端資料庫。 結合AEM專案原型中的[前端建置程式，](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html)管理您AEM專案的前端程式碼變得簡單。
+數位體驗高度依賴由複雜的JavaScript和CSS程式碼驅動的使用者端處理。 AEM使用者端資料庫(clientlibs)可讓您整理並集中儲存存放庫中的這些使用者端資料庫。 結合AEM專案原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html)中的[前端建置程式，管理您的AEM專案的前端程式碼變得很簡單。
 
 在AEM中使用clientlibs的優點包括：
 
@@ -27,7 +27,7 @@ Clientlibs是內建的解決方案，可從AEM傳遞CSS和JavaScript。
 
 >[!TIP]
 >
->為AEM專案建立CSS和JavaScript的前端開發人員也應該熟悉[AEM專案原型及其自動化前端建置程式。](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html)
+>為AEM專案建立CSS和JavaScript的前端開發人員也應該熟悉[AEM專案原型及其自動化前端建置流程](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html)。
 
 ## 什麼是使用者端資料庫 {#what-are-clientlibs}
 
@@ -37,7 +37,7 @@ AEM會將網站的CSS和JavaScript收集至單一檔案（位於中央位置）�
 
 ## AEM as a Cloud Service的前端開發 {#fed-for-aemaacs}
 
-所有JavaScript、CSS和其他前端資產都應在AEM專案原型的[ui.frontend模組中維護。](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html)原型的彈性可讓您使用您選擇的現代網路工具來建立和管理這些資源。
+所有JavaScript、CSS和其他前端資產都應在AEM專案原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html)的[ui.frontend模組中維護。 原型的彈性可讓您使用所選擇的現代化Web工具來建立和管理這些資源。
 
 然後，原型可以將資源編譯為單一CSS和JS檔案，並自動將其嵌入儲存庫中的`cq:clientLibraryFolder`。
 
@@ -92,7 +92,7 @@ AEM會將網站的CSS和JavaScript收集至單一檔案（位於中央位置）�
 1. 如果您需要管理靜態資源，請在使用者端程式庫資料夾底下建立名為`resources`的子資料夾。
    * 如果您將靜態資源儲存在資料夾`resources`下以外的任何位置，則無法在發佈執行個體上參考這些資源。
 1. 將來源檔案新增至程式庫資料夾。
-   * 這通常由[AEM專案原型的前端建置流程完成。](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html)
+   * 這通常由[AEM專案原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html)的前端建置流程完成。
    * 您可以視需要在子資料夾中組織來源檔案。
 1. 選取使用者端程式庫資料夾，然後按一下&#x200B;**建立>建立檔案**。
 1. 在「檔案名稱」方塊中，輸入下列其中一個檔案名稱，然後按一下「確定」：
@@ -109,7 +109,7 @@ AEM會將網站的CSS和JavaScript收集至單一檔案（位於中央位置）�
 
 ## 服務使用者端程式庫 {#serving-clientlibs}
 
-您的使用者端程式庫資料夾一旦[視需要設定，](#creating-clientlib-folders)您就可以透過Proxy要求clientlibs。 例如：
+一旦您的使用者端程式庫資料夾設定為[必要](#creating-clientlib-folders)後，即可透過Proxy要求您的clientlibs。 例如：
 
 * 您在`/apps/myproject/clientlibs/foo`中有clientlib
 * 您在`/apps/myprojects/clientlibs/foo/resources/icon.png`中有靜態影像
@@ -137,7 +137,7 @@ This is possible. Still need detail.
 
 ## 作者與Publish上的使用者端資料庫 {#clientlibs-author-publish}
 
-大部分的clientlibs在AEM發佈執行個體上都是必要的。 也就是說，大部分clientlibs的目的是製作內容的一般使用者體驗。 對於發佈執行個體上的clientlibs，[前端建置工具](#fed-for-aemaacs)可以透過[使用者端資料庫資料夾使用和部署，如上所述。](#creating-clientlib-folders)
+大部分的clientlibs在AEM發佈執行個體上都是必要的。 也就是說，大部分clientlibs的目的是製作內容的一般使用者體驗。 對於發佈執行個體上的clientlibs，[前端建置工具](#fed-for-aemaacs)可以透過[使用者端資料庫資料夾使用和部署，如上所述](#creating-clientlib-folders)。
 
 不過，有時可能需要使用使用者端資料庫來自訂編寫體驗。 例如，自訂對話方塊可能需要將少量的CSS或JS部署至AEM編寫執行個體。
 
@@ -352,4 +352,4 @@ YUI已設定為AEM中的預設縮制器。 若要將此變更為GCC，請按照�
 1. 啟用&#x200B;**最小化**&#x200B;選項（如果尚未啟用）。
 1. 將&#x200B;**JS處理器預設組態**&#x200B;的值設定為`min:gcc`。
    * 如果以分號分隔，例如`min:gcc;obfuscate=true`，則可以傳遞選項。
-1. 按一下[儲存]儲存變更。****
+1. 按一下「**儲存**」以儲存變更。

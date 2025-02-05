@@ -4,7 +4,7 @@ description: ContextHub是一種用於儲存、操控和呈現內容資料的架
 exl-id: 604477c6-d96a-441f-b5fc-5def93832478
 feature: Developing, Personalization
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '289'
 ht-degree: 1%
@@ -25,7 +25,7 @@ ContextHub允許您：
 
 ## 簡報 {#presentation}
 
-[ContextHub工具列](/help/sites-cloud/authoring/personalization/contexthub.md)可讓行銷人員和作者檢視並操控存放區資料，以模擬製作頁面時的使用者體驗。 工具列由提供存取[ContextHub存放區，](#persistence)的UI模組群組組成，這些模組會將ContextHub資料保留在使用者端上。
+[ContextHub工具列](/help/sites-cloud/authoring/personalization/contexthub.md)可讓行銷人員和作者檢視並操控存放區資料，以模擬製作頁面時的使用者體驗。 工具列包含提供存取[ContextHub存放區](#persistence)的UI模組群組，這些模組會將ContextHub資料保留在使用者端上。
 
 每個ContextHub UI模組都是預先定義模組型別的例項：
 

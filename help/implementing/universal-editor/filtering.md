@@ -3,13 +3,13 @@ title: 篩選元件
 description: 瞭解如何使用元件篩選器，限制通用編輯器中每個容器允許的元件。
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 48c1a109c060db4ce19bf645723357008d51c572
+exl-id: eeae8d7c-c563-4d9b-8c54-1098a4e98c18
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '151'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
-
 
 # 篩選元件 {#filtering-components}
 

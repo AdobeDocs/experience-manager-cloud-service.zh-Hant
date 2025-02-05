@@ -4,10 +4,10 @@ description: 了解如何管理分類資料，以便將標記與使用 Edge Deli
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 017982e4-a4c8-4097-8751-9619cc4639d0
-source-git-commit: 701a7c08d591d9a3ffabfe041745748194c923b2
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '974'
-ht-degree: 85%
+ht-degree: 65%
 
 ---
 
@@ -26,9 +26,9 @@ ht-degree: 85%
 
 ## 建立分類頁面 {#creating}
 
-建立分類的方式與 [AEM 中的任何其他頁面](/help/sites-cloud/authoring/sites-console/creating-pages.md)類似。
+分類法的建立方式與AEM](/help/sites-cloud/authoring/sites-console/creating-pages.md)中的[任何其他頁面相同。
 
-1. 導覽至 [**Sites** 主控台](/help/sites-cloud/authoring/sites-console/introduction.md)。
+1. 導覽至&#x200B;[**網站**&#x200B;主控台](/help/sites-cloud/authoring/sites-console/introduction.md)。
 
 1. 選取您想要建立分類的位置。
 
@@ -46,7 +46,7 @@ ht-degree: 85%
 
 1. 點選或按一下「**建立**」。
 
-分類頁面建立完成。在「**成功**」對話框中，您可以點選或按一下「**完成**」對話框以關閉該訊息，或選取「**開啟**」以在[頁面編輯器](/help/sites-cloud/authoring/page-editor/introduction.md)中編輯頁面。
+分類頁面建立完成。在&#x200B;**成功**&#x200B;對話方塊中，您可以點選或按一下&#x200B;**完成**&#x200B;對話方塊以關閉訊息，或是&#x200B;**開啟**&#x200B;以在[頁面編輯器](/help/sites-cloud/authoring/page-editor/introduction.md)中編輯頁面。
 
 記下分類頁面的結果頁面名稱，以便在以下步驟中使用。
 
@@ -54,7 +54,7 @@ ht-degree: 85%
 
 您會像編輯 AEM 中任何其他頁面一樣的方式來開始編輯分類頁面。
 
-1. 導覽至 [**Sites** 主控台](/help/sites-cloud/authoring/sites-console/introduction.md)。
+1. 導覽至&#x200B;[**網站**&#x200B;主控台](/help/sites-cloud/authoring/sites-console/introduction.md)。
 
 1. 選取您要編輯的分類。
 
@@ -82,7 +82,7 @@ ht-degree: 85%
 
 ## 更新 paths.json 以發佈分類 {#paths-json}
 
-就像[為 Edge Delivery Services 網站管理和發佈表格資料](/help/edge/wysiwyg-authoring/tabular-data.md)時一樣，您需要更新專案的 `paths.json` 檔案，才能允許發佈分類資料。
+就像在[管理和發佈Edge Delivery Services網站](/help/edge/wysiwyg-authoring/tabular-data.md)的表格式資料時，您需要更新專案的`paths.json`檔案，以允許發佈分類資料。
 
 1. 在 GitHub 中開啟專案的根目錄。
 
@@ -101,7 +101,7 @@ ht-degree: 85%
    }
    ```
 
-   * `<taxonomy-page-name>` 必須符合[您建立的分類頁面](#creating)名稱。
+   * `<taxonomy-page-name>`必須符合您建立的[分類頁面](#creating)的名稱。
    * `<taxonomy-json-name>` 可以是您選擇的任何有效名稱。
 
 1. 按一下「**提交變更...**」，將變更儲存到 `main`。
@@ -112,20 +112,20 @@ ht-degree: 85%
 
 >[!TIP]
 >
->如需更多有關路徑對應的資訊，請參閱文件：[Edge Delivery Services 的路徑對應](/help/edge/wysiwyg-authoring/path-mapping.md)。
+>如需有關路徑對應的詳細資訊，請參閱檔案[Edge Delivery Services的路徑對應](/help/edge/wysiwyg-authoring/path-mapping.md)。
 
 ## 發佈分類 {#publishing}
 
 在發佈之前，通用編輯器或您的使用者皆無法使用該分類。
 
-分類頁面的發佈方式與任何其他頁面一樣，方法是[使用工具列中的「**快速發佈**」或「**管理發佈**」圖示](/help/sites-cloud/authoring/sites-console/publishing-pages.md)。
+[使用工具列](/help/sites-cloud/authoring/sites-console/publishing-pages.md)中的&#x200B;**快速Publish**&#x200B;或&#x200B;**管理出版物**&#x200B;圖示，像發佈其他任何頁面一樣發佈分類頁面。
 
 每次您執行以下操作時，都必須重新發佈分類頁面：
 
 * 編輯分類頁面。
 * 編輯或新增至分類頁面中包含的標記和命名空間。
 
-如果您建立新的分類頁面，就必須先[在專案中的 `paths.json` 檔案內新增對應到該分類頁面](#paths-json)。
+如果您建立新的分類頁面，您必須先將對應新增至專案](#paths-json)中的`paths.json`檔案[。
 
 ## 存取分類資訊 {#accessing}
 
@@ -135,7 +135,7 @@ ht-degree: 85%
 
 `https://<branch>--<repository>--<owner>.aem.page/<taxonomy-json-name>.json`
 
-使用您[將分類對應到專案中之 `paths.json` 檔案時定義的 `<taxonomy-json-name>`。](#paths-json)分類資料會以 JSON 資料形式回傳，如以下範例所示。
+使用您在[將分類對應至專案](#paths-json)中的`paths.json`檔案時所定義的`<taxonomy-json-name>`。 如以下範例所示，分類資料會以JSON資料傳回。
 
 ```json
 {
@@ -166,11 +166,11 @@ ht-degree: 85%
 
 您更新分類並重新發佈時，此 JSON 資料會自動更新。您的應用程式可以透過程式設計方式為您的使用者存取此資訊。
 
-[如果您維護多種語言的標記，](/help/sites-cloud/administering/tags.md#managing-tags-in-different-languages)就可以透過傳入 ISO2 語言代碼作為 `sheet=` 參數的值來存取這些語言。
+[如果您維護多種語言的標籤](/help/sites-cloud/administering/tags.md#managing-tags-in-different-languages)，您可以將ISO2語言代碼作為`sheet=`引數的值傳入，以存取這些語言。
 
 ## 公開其他標籤屬性 {#additional-properties}
 
-依預設，您的分類將包含`tag`和`title`值，如上一個範例中的[所示。](#accessing)您可以設定分類以公開其他標籤屬性。 在此範例中，我們將公開標籤說明。
+依預設，您的分類將包含`tag`和`title`值，如上一個範例](#accessing)中的[所示。 您可以設定分類法以公開其他標籤屬性。 在此範例中，我們將公開標籤說明。
 
 1. 使用網站主控台選取您建立的分類法。
 1. 點選或按一下工具列中的&#x200B;**屬性**&#x200B;圖示。
@@ -179,7 +179,7 @@ ht-degree: 85%
 1. 點選或按一下「**儲存並關閉**」。
 1. 在分類法仍被選取的情況下，點選或按一下工具列中的「快速Publish **」。**
 
-現在[當您存取分類法時，](#accessing)標籤描述（或您選擇公開的任何屬性）包含在JSON中。
+現在[當您存取分類法](#accessing)時，標籤描述（或您選擇公開的任何屬性）會包含在JSON中。
 
 ```json
 {

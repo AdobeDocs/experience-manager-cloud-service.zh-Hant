@@ -5,7 +5,7 @@ exl-id: a8118329-1330-49b0-a3f8-a27774f1c5df
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '335'
 ht-degree: 2%
@@ -26,7 +26,7 @@ AEM隨附多種現成可用的元件，可為網站作者提供全方位功能�
 
 ## 一般使用 {#general-usage}
 
-當[編輯頁面時，元件可在頁面編輯器側面板的&#x200B;**元件**&#x200B;標籤上使用。](/help/sites-cloud/authoring/page-editor/edit-content.md)
+當[編輯頁面](/help/sites-cloud/authoring/page-editor/edit-content.md)時，元件可在頁面編輯器側面板的&#x200B;**元件**&#x200B;索引標籤上使用。
 
 您可以選取元件並將其拖曳至頁面上的所需位置。 您接著可以使用下列專案加以編輯：
 
@@ -34,7 +34,7 @@ AEM隨附多種現成可用的元件，可為網站作者提供全方位功能�
 * [編輯內容](/help/sites-cloud/authoring/page-editor/edit-content.md)
 * [編輯內容 — 全熒幕模式](/help/sites-cloud/authoring/page-editor/edit-content.md#edit-content-full-screen-mode)
 
-如需新增元件至頁面的詳細資訊，請參閱[編輯頁面內容。](/help/sites-cloud/authoring/page-editor/edit-content.md)
+如需新增元件至頁面的詳細資訊，請參閱[編輯頁面內容](/help/sites-cloud/authoring/page-editor/edit-content.md)。
 
 ## 所有元件概觀 {#overview-of-all-components}
 

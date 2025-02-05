@@ -4,7 +4,7 @@ description: 了解 AEM as a Cloud Service 如何支援額外發佈區域以提�
 exl-id: b9ac3c6a-eb8b-461d-8f1d-a0356046a3f9
 feature: Operations
 role: Admin
-source-git-commit: c7362a77fd929d812db3cd40bf01763ed3bef02c
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '663'
 ht-degree: 71%
@@ -24,7 +24,7 @@ ht-degree: 71%
 >[!NOTE]
 >
 >* 此功能適用於Sites和Forms解決方案。
->* 此功能無法套用至[沙箱程式。](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)
+>* 此功能無法套用至[沙箱程式](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)。
 >* 此功能需要您的程式更新至AEM發行版本12142或更高版本。
 
 ## 使用案例 {#use-cases}
@@ -33,7 +33,7 @@ ht-degree: 71%
 
 1. 對於接收到來自遠離主要區域的使用者的重要或業務關鍵型流量的組織，額外發佈區域可減少這些訪客的延遲體驗。
 1. 對於若無法使用網站即可能蒙受重大金錢或聲譽損失的組織，使用額外的發佈區域可讓 AEM 發佈階層在面臨區域失敗時能更快恢復，並從而減少損失。
-1. 對於其內容作者位於遠離大多數發佈階層訪客的地理位置的組織，則可以選擇內容作者位置附近的主要區域，同時可以在發佈端流量附近設定額外發佈區域，觀眾也能從最佳化體驗中受惠。
+1. 對於內容作者遠離大多數發布層訪客的組織，可以選擇內容作者附近的位置為主要區域。可以在發布端流量附近配置其他發佈區域。此設定可確保雙方都能從優化的體驗中受益。
 
 ## 啟用和設定 {#enabling-and-configuring}
 

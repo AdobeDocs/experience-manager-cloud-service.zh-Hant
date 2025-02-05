@@ -4,10 +4,10 @@ description: 了解 Cloud Manager 以及如何使用它來安裝附加元件。
 exl-id: 9418aac6-a8c4-43f7-b329-b02149fe2d53
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '941'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -104,7 +104,7 @@ AEM 參考示範附加元件包含多個範本，滿足各種測試和示範需�
 * 了解管道如何將內容和設定傳遞到 AEM。
 * 了解如何透過數次點選即可建立預填示範內容的網站。
 
-以此知識為基礎並繼續您的 AEM 快速建立網站歷程，接著檢閱「[建立方案和管道](create-program.md)」，從中了解如何設定新方案和管理來部署附加元件。
+在此知識的基礎上繼續您的AEM快速網站建立歷程，方法是檢閱[建立程式和管道](create-program.md)，瞭解如何設定新程式和管道以部署附加元件。
 
 ## 其他資源 {#additional-resources}
 

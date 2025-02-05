@@ -5,7 +5,7 @@ feature: Administering
 role: Admin
 exl-id: 53d4afb3-d091-47a1-ba12-5bcec99f46b9
 solution: Experience Manager Sites
-source-git-commit: 92c0e556eb1f92dadd396a479a8bf933715935a7
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '364'
 ht-degree: 10%
@@ -30,7 +30,7 @@ AEM網站主題是包含CSS、JavaScript和靜態資源的套件，可定義AEM�
 
 網站主題有兩種不同的使用方式：
 
-* 在[建立網站時，它們會作為網站範本的一部分用來定義樣式。](create-site.md)
+* 在[建立網站](create-site.md)時，它們會作為網站範本的一部分用來定義樣式。
 * 它們會在根據網站範本建立網站後下載，以便前端開發人員可以進一步自訂樣式。
 
 >[!TIP]

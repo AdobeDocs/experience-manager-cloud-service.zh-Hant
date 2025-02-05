@@ -4,7 +4,7 @@ description: 對於最適化Forms，除了現成可用的語言之外，您還�
 feature: Adaptive Forms, Foundation Components
 exl-id: 4c7d6caa-1adb-4663-933f-b09129b9baef
 role: User, Developer
-source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1220'
 ht-degree: 3%
@@ -56,7 +56,7 @@ AEM FormsForms目前支援英文(en)、西班牙文(es)、法文(fr)、義大利
 #### 1.複製存放庫 {#clone-the-repository}
 
 1. 從命令列，導覽至您要複製FormsCloud Service存放庫的位置。
-1. 執行[從Cloud Manager擷取的命令。](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git)它類似於`git clone https://git.cloudmanager.adobe.com/<my-org>/<my-program>/`。
+1. 執行您[從Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git)擷取的命令。 它類似於`git clone https://git.cloudmanager.adobe.com/<my-org>/<my-program>/`。
 1. 使用Git使用者名稱和密碼來複製存放庫。
 1. 在您偏好的編輯器中，開啟複製的FormsCloud Service存放庫資料夾。
 

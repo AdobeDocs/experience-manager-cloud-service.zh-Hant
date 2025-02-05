@@ -4,10 +4,10 @@ description: 了解如何將 AEM 製作執行個體上使用的頁面路徑對�
 feature: Edge Delivery Services
 role: User
 exl-id: 3d68135d-e84c-4bf4-93d1-38a0be70ce4a
-source-git-commit: 01966d837391d13577956a733c2ee7dc02f88103
-workflow-type: ht
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+workflow-type: tm+mt
 source-wordcount: '567'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 100%
 * 對應並建立您 AEM 製作執行個體上使用的頁面路徑與您網站上使用的公開頁面路徑之間的關係。
 * 控制要將哪些內容 (頁面、工作表、資產等) 發佈到 Edge Delivery Services。
 
-必須根據專案的內容和 URL 結構，為每個專案獨立設定路徑對應。路徑對應會在內容發佈期間以及在[通用編輯器](/help/sites-cloud/authoring/universal-editor/navigation.md)中編輯內容時，由 AEM 使用。
+必須根據專案的內容和 URL 結構，為每個專案獨立設定路徑對應。AEM在內容發佈期間以及在[通用編輯器](/help/sites-cloud/authoring/universal-editor/navigation.md)中編輯內容時，會使用它。
 
 ## 設定格式 {#configuration-format}
 

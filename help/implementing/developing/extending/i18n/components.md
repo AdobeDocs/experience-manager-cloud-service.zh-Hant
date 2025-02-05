@@ -5,10 +5,11 @@ topic-tags: components
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: b55f7260628f759de2718290624cdc82da7a2961
+exl-id: 0276b310-b9a9-44b6-b295-06c51ef17208
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '349'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -20,7 +21,7 @@ ht-degree: 0%
 
 使用以下程式將您的元件國際化，並提供不同語言的UI：
 
-1. [使用將字串國際化的程式碼實作您的元件。](/help/implementing/developing/extending/i18n/dev.md)您的程式碼會識別要翻譯的字串，並選取要在執行階段顯示的語言。
+1. [使用將字串國際化的程式碼實作您的元件](/help/implementing/developing/extending/i18n/dev.md)。 您的程式碼會識別要翻譯的字串，並選取要在執行階段顯示的語言。
 1. 建立字典並新增英文字串以供翻譯。
 1. 將字典匯出為XLIFF格式，翻譯字串，然後將XLIFF檔案匯回AEM。
 1. 將字典合併至應用程式的發行管理程式中。

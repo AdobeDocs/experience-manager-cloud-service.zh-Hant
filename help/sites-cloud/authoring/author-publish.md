@@ -5,7 +5,7 @@ exl-id: ee9e4952-e075-4398-b31f-d7886153efff
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '438'
 ht-degree: 1%
@@ -31,7 +31,7 @@ ht-degree: 1%
 
 ![作者、發行者和Dispatcher的圖表](assets/author-publish.jpg)
 
-如需AEM as a Cloud Service技術架構的詳細資訊，請參閱檔案[Adobe Experience Manager as a Cloud Service架構簡介。](/help/overview/architecture.md)
+如需AEM as a Cloud Service技術架構的詳細資訊，請參閱檔案[Adobe Experience Manager as a Cloud Service架構簡介](/help/overview/architecture.md)。
 
 {{edge-delivery-authoring}}
 

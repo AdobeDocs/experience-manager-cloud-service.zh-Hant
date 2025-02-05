@@ -5,7 +5,7 @@ exl-id: eacfda02-ff53-42ed-b5b2-88be3879a5e9
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1612'
 ht-degree: 2%
@@ -54,8 +54,8 @@ AEM頁面編輯器除了可存取更進階的功能外，還提供直覺式UI來
 
 您可以使用[元件瀏覽器](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser)來新增元件。 [元件預留位置](#component-placeholder)會顯示您放置元件的位置。
 
-1. 確定頁面編輯器處於&#x200B;[**編輯**&#x200B;模式。](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector)
-1. 開啟[元件瀏覽器。](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser)
+1. 確定頁面編輯器處於&#x200B;[**編輯**&#x200B;模式](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector)。
+1. 開啟[元件瀏覽器](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser)。
 1. 將必要的元件拖曳到[必要的位置](#component-placeholder)並釋放。
 1. [編輯](#edit-content)新放置的元件。
 
@@ -67,7 +67,7 @@ AEM頁面編輯器除了可存取更進階的功能外，還提供直覺式UI來
 
 您可以使用段落系統的&#x200B;**將元件拖曳到這裡**&#x200B;預留位置來新增元件：
 
-1. 確定頁面編輯器處於&#x200B;[**編輯**&#x200B;模式。](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector)
+1. 確定頁面編輯器處於&#x200B;[**編輯**&#x200B;模式](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector)。
 1. 有兩種方式可以從段落系統選取和新增元件：
 
    * 從現有元件的工具列或&#x200B;**拖曳元件到此處**&#x200B;方塊中選取&#x200B;**插入元件**&#x200B;選項(+)。
@@ -87,13 +87,13 @@ AEM頁面編輯器除了可存取更進階的功能外，還提供直覺式UI來
 
 ## 新增資產 {#adding-asset}
 
-您也可以從[資產瀏覽器拖曳資產，將新元件新增至頁面。](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#assets-browser)這會自動建立適當型別的元件（並包含資產）。
+您也可以從[資產瀏覽器](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#assets-browser)拖曳資產，將新元件新增至頁面。 這會自動建立適當型別的元件（並包含資產）。
 
 您可針對您的安裝設定此行為。 如需詳細資訊，請參閱檔案[元件參考指南](/help/implementing/developing/components/reference.md#component-placeholders)。
 
 若要拖曳上述任一資產型別來建立元件：
 
-1. 確定您的頁面處於&#x200B;[**編輯**&#x200B;模式。](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector)
+1. 確定您的頁面處於&#x200B;[**編輯**&#x200B;模式](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector)。
 1. 開啟[資產瀏覽器](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#assets-browser)。
 1. 將所需的資產拖曳至所需的位置。 [元件預留位置](#component-placeholder)會顯示元件的放置位置，而目標會顯示插入後的位置。
 1. 將資產發佈至目標。 適合資產型別的元件會在包含所選資產的所需位置建立。
@@ -133,7 +133,7 @@ AEM頁面編輯器除了可存取更進階的功能外，還提供直覺式UI來
 
   ![刪除按鈕](assets/edit-content-delete.png)
 
-* **插入元件**&#x200B;開啟對話方塊以[新增元件。](#adding-a-component-from-the-paragraph-system)
+* **插入元件**&#x200B;開啟對話方塊以[新增元件](#adding-a-component-from-the-paragraph-system)。
 
   ![插入按鈕](assets/edit-content-insert-component.png)
 
@@ -219,7 +219,7 @@ AEM頁面編輯器除了可存取更進階的功能外，還提供直覺式UI來
 
    ![元件工具列的[配置]按鈕](assets/edit-content-layout.png)
 
-1. 選取「配置」動作後，您就可以修改元件的配置，就像在[配置模式中一樣。](/help/sites-cloud/authoring/page-editor/responsive-layout.md#defining-layouts-layout-mode)
+1. 選取「配置」動作後，您可以修改元件的配置，就像在[配置模式](/help/sites-cloud/authoring/page-editor/responsive-layout.md#defining-layouts-layout-mode)中一樣。
 
    * 元件顯示的調整大小控點。
    * 模擬器工具列會顯示在畫面頂端。

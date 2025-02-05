@@ -4,7 +4,7 @@ description: 瞭解AEM as a Cloud Service中的維護任務以及如何進行設
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 feature: Operations
 role: Admin
-source-git-commit: 3692cf1b14fda80f35eb34583fbbf6b256a89917
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '2043'
 ht-degree: 8%
@@ -267,7 +267,7 @@ data:
 * 必須定義所有屬性。 沒有繼承的預設值。
 * 下方屬性表格中的型別（整數、字串、布林值等）必須遵守。
 
-**4** — 在Cloud Manager中建立設定管道，如[設定管道文章所述。](/help/operations/config-pipeline.md#managing-in-cloud-manager)
+**4** — 在Cloud Manager中建立設定管道，如[設定管道文章](/help/operations/config-pipeline.md#managing-in-cloud-manager)所述。
 
 ### 版本清除 {#version-purge}
 

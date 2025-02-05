@@ -5,7 +5,7 @@ exl-id: 4c9dbf26-5852-45ab-b521-9f051c153b2e
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 41abdfcf142a3f39854978c5acf0e5d28872b3c4
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '4415'
 ht-degree: 7%
@@ -23,7 +23,7 @@ ht-degree: 7%
 
 >[!NOTE]
 >
->[範本也可用於建立可透過通用編輯器編輯的頁面。](/help/sites-cloud/authoring/universal-editor/templates.md)
+>[範本也可用於建立可透過通用編輯器編輯的頁面](/help/sites-cloud/authoring/universal-editor/templates.md)。
 
 使用&#x200B;**範本編輯器**，建立和維護範本不是開發人員專屬的工作。 稱為&#x200B;**範本作者**&#x200B;的超級使用者型別可以建立範本。 開發人員必須設定環境、建立使用者端程式庫和建立要使用的元件，但是當這些基本功能準備就緒後，**範本作者**&#x200B;就可以彈性地建立和設定範本，而不需要開發人員介入。
 
@@ -95,7 +95,7 @@ ht-degree: 7%
 >
 >切勿在範本中輸入任何必須是[國際化](/help/implementing/developing/extending/i18n/dev.md)的資訊。
 >
->對於必須本地化的範本元素（例如頁首和頁尾），請使用核心元件的[本地化功能。](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html)
+>對於必須本地化的範本元素（例如頁首和頁尾），請使用核心元件的[本地化功能](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html)。
 
 ### 建立範本資料夾 — 管理員 {#creating-a-template-folder-admin}
 
@@ -210,7 +210,7 @@ ht-degree: 7%
 
 由於範本在轉譯頁面時為參考狀態，因此必須發佈已完整設定的範本，才能用於發佈環境。
 
-使用&#x200B;**[範本主控台的Publish範本。](/help/sites-cloud/administering/templates-console.md)**
+使用&#x200B;**[範本主控台](/help/sites-cloud/administering/templates-console.md)**&#x200B;的Publish範本。
 
 ## 編輯範本 — 範本作者 {#editing-templates-template-authors}
 
@@ -305,7 +305,7 @@ ht-degree: 7%
 
 >[!NOTE]
 >
->將元件和資產新增至範本時，雖然並不完全相同，但在[頁面編寫時，與類似的動作有許多相似之處。](/help/sites-cloud/authoring/page-editor/edit-content.md)
+>將元件和資產新增至範本時，雖然並不完全相同，但在[頁面製作](/help/sites-cloud/authoring/page-editor/edit-content.md)時，與類似的動作有許多相似之處。
 
 #### 元件動作 {#component-actions}
 
@@ -647,4 +647,4 @@ ht-degree: 7%
    >變更不再是草稿之範本上元件的鎖定狀態時，AEM會發出明確警告。
 
 1. [為您網站特定的範本建立您自己的資料夾](#creating-a-template-folder-admin)。
-1. 從&#x200B;**[範本主控台[Publish您的範本](#publishing-a-template-template-author)。]**(/help/sites-cloud/administering/templates-console.md)
+1. 從&#x200B;**[範本主控台]**(/help/sites-cloud/administering/templates-console.md) [Publish您的範本](#publishing-a-template-template-author)。

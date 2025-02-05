@@ -5,7 +5,7 @@ feature: Language Copy
 role: Admin
 exl-id: 24cc6aa6-5b3c-462b-a10a-8b25277229dc
 solution: Experience Manager Sites
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1288'
 ht-degree: 1%
@@ -18,11 +18,11 @@ ht-degree: 1%
 
 >[!TIP]
 >
->如果不熟悉如何翻譯內容，請參閱[網站翻譯歷程](/help/journey-sites/translation/overview.md)，其中會指引您使用AEM強大的翻譯工具來翻譯您的AEM Sites內容，非常適合沒有AEM或翻譯經驗的人士。
+>如果不熟悉如何翻譯內容，請參閱[網站翻譯歷程](/help/journey-sites/translation/overview.md)，此歷程將引導您使用AEM強大的翻譯工具來翻譯您的AEM Sites內容，非常適合沒有AEM或翻譯經驗的人士。
 
 ## 內容片段和翻譯規則 {#content-fragments}
 
-只有在[翻譯整合架構組態層級尚未啟用&#x200B;**啟用翻譯的內容模型欄位**&#x200B;選項時，本檔案描述的翻譯規則才會套用至內容片段。](integration-framework.md#assets-configuration-properties)
+只有在[翻譯整合架構組態層級](integration-framework.md#assets-configuration-properties)尚未啟用&#x200B;**啟用翻譯的內容模型欄位**&#x200B;選項時，本檔案描述的翻譯規則才會套用至內容片段。
 
 如果&#x200B;**啟用翻譯的內容模型欄位**&#x200B;選項作用中，AEM將會使用[內容片段模型](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#properties)上的&#x200B;**可翻譯**&#x200B;欄位來決定是否要翻譯該欄位並相應地自動建立翻譯規則。 此選項會取代您可能已建立的任何翻譯規則，而且不需要介入或額外的步驟。
 

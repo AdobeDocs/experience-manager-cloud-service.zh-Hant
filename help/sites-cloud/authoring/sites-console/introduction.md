@@ -5,9 +5,9 @@ exl-id: b666e62a-c3dc-4be3-8932-d5fe67b178d6
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
-source-wordcount: '1628'
+source-wordcount: '1625'
 ht-degree: 6%
 
 ---
@@ -45,7 +45,7 @@ ht-degree: 6%
 
 ![側面板選擇器範例](assets/sites-console-side-panel-selector.png)
 
-如需側面板的詳細資訊，請參閱檔案[網站主控台側面板。](/help/sites-cloud/authoring/sites-console/console-side-panel.md)
+如需側面板的詳細資訊，請參閱[網站主控台側面板](/help/sites-cloud/authoring/sites-console/console-side-panel.md)。
 
 ### 導覽列 {#breadcrumbs}
 
@@ -194,7 +194,7 @@ AEM工具列最右邊的&#x200B;**檢視**&#x200B;圖示表示目前選取的檢
 ![清單檢視](assets/sites-console-list-view.png)
 
 * 您可以點選/按一下資源名稱，在樹狀結構中向下導覽，並使用標頭](#the-header)中的[階層連結進行備份。
-* 若要輕鬆選取清單中的所有專案，請使用工具列中的&#x200B;[**全選**&#x200B;核取方塊。](#select-all)
+* 若要輕鬆選取清單中的所有專案，請使用工具列](#select-all)中的&#x200B;[**全選**&#x200B;核取方塊。
 
 * 使用位於[檢視]按鈕下方的&#x200B;**檢視設定**&#x200B;選項來選取要顯示的欄。 下列欄可供顯示：
 

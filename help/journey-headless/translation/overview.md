@@ -5,10 +5,10 @@ exl-id: b677f691-5257-43c3-a4b9-c34932577b31
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1024'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -18,9 +18,9 @@ ht-degree: 100%
 
 ## 簡介 {#introduction}
 
-Headless 實作對於將體驗傳遞給您的對象而言越來越重要，無論您的對象身在何處，無論管道、區域或地區設定為何。
+Headless 實作對於將體驗傳遞給您的客群而言越來越重要，無論您的客群身在何處，無論管道、區域或地區設定為何。
 
-Headless 實作放棄了全堆疊解決方案中的傳統頁面和元件管理，專注於建立管道中立、可重複使用的內容片段及其跨管道傳遞。透過使用 AEM 強大的翻譯工具，這些可重複使用的片段可以輕鬆翻譯並傳遞給您的對象，無論他們身在何處。
+Headless 實作放棄了全堆疊解決方案中的傳統頁面和元件管理，專注於建立管道中立、可重複使用的內容片段及其跨管道傳遞。透過使用 AEM 強大的翻譯工具，這些可重複使用的片段可以輕鬆翻譯並傳遞給您的客群，無論他們身在何處。
 
 本指南將引導您了解最重要的 Headless 翻譯主題，完成後您將會：
 
@@ -31,7 +31,7 @@ Headless 實作放棄了全堆疊解決方案中的傳統頁面和元件管理�
 
 目標是讓您對 Headless 技術、AEM 如何提供 Headless 內容以及如何翻譯它，有廣泛的了解。如果這些主題有任何一個您不熟悉，那麼這就是您理想的起點。
 
-如果您已經熟悉 AEM、 Headless 和翻譯，那麼您可能已經掌握了此歷程的基本知識。請考慮參閱下方[其他資源章節](#additional-resources)下的已連結技術文件。
+如果您已經熟悉 AEM、 Headless 和翻譯，那麼您可能已經掌握了此歷程的基本知識。請考慮參閱以下的[其他資源區段連結的技術檔案](#additional-resources)。
 
 ## AEM 文件歷程 {#documentation-journeys}
 
@@ -41,7 +41,7 @@ Headless 實作放棄了全堆疊解決方案中的傳統頁面和元件管理�
 
 如果您想了解 Adobe 如何建議如何使用 AEM 解決 Headless 商務案例，[AEM Headless 歷程](/help/journey-documentation/documentation-journeys.md)是理想起點。
 
-## 對象 {#audience}
+## 客群 {#audience}
 
 此歷程專為翻譯專家角色 (通常稱為翻譯專案經理或 TPM) 所設計。此歷程闡述在 AEM 中翻譯 Headless 內容的要求、步驟和方法。此歷程定義了翻譯專家必須與之互動的其他角色，但此歷程是以翻譯專家的角度出發。
 
@@ -51,7 +51,7 @@ Headless 實作放棄了全堆疊解決方案中的傳統頁面和元件管理�
 
 | 角色 | 說明 | 歷程中的角色 |
 |---|---|---|
-| 翻譯專家 | 定義應翻譯的內容並管理這些工作流程 | 此歷程的對象 |
+| 翻譯專家 | 定義應翻譯的內容並管理這些工作流程 | 此歷程的客群 |
 | 內容作者 | 建立並管理 Headless 傳遞的內容 | 內容作者建立翻譯專家必須翻譯的內容。 |
 | 管理員 | 管理 AEM 的基本設定和配置 | 翻譯專家與管理員一起進行翻譯作業所需的設定變更，例如安裝翻譯連接器。 |
 | 內容架構師 | 分析必須以 Headless 方式傳遞之資料的要求並定義該資料的結構 | 翻譯專家與內容架構師一起定義內容的組織，以便輕鬆翻譯。 |

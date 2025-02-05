@@ -4,10 +4,10 @@ description: 瞭解Adobe Experience Manager (AEM)設定，以及這些設定如�
 exl-id: 0ade04df-03a9-4976-a4b7-c01b4748474d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1482'
-ht-degree: 4%
+ht-degree: 5%
 
 ---
 
@@ -78,7 +78,7 @@ AEM管理員和作者可以將設定視為工作區。 藉由實作這些功能�
 
    * **標題** 應該是描述性的。
    * **名稱**&#x200B;會成為存放庫中的節點名稱。
-      * 它會根據標題自動產生，並根據[AEM命名慣例進行調整。](naming-conventions.md)
+      * 它會根據標題自動產生，並根據 [AEM 命名慣例](naming-conventions.md)進行調整。
       * 如有需要，可加以調整。
 1. 檢查您要允許的設定型別。
    * [上下文中心區段](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
@@ -200,7 +200,7 @@ String bgkcolor = imageServerSettings.get("bgkcolor", "FFFFFF");
 
 AEM中的設定是根據Sling內容感知設定。 Sling套件組合提供的服務API可用於取得內容感知設定。 內容感知組態是與內容資源或資源樹狀結構相關的組態，如上一個範例](#developer-example)所述[。
 
-如需內容感知設定、範例及使用方式的詳細資訊，請參閱[Sling檔案。](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration.html)。
+如需內容感知設定、範例及使用方式的詳細資訊，請參閱[Sling檔案](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration.html)。
 
 ### ConfMgr Web主控台 {#confmgr-web-console}
 

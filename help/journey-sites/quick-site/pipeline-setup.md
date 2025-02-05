@@ -5,10 +5,10 @@ exl-id: 0d77d1a6-98f3-4961-9283-f52c1b5b2a7b
 solution: Experience Manager Sites
 feature: Developing
 role: Admin, Developer
-source-git-commit: a5179851af8ec88e23d79a74265b10cbce2d50f1
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '949'
-ht-degree: 100%
+ht-degree: 85%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 
 ## 目前進度 {#story-so-far}
 
-在 AEM 快速建立網站歷程的上一個文件「[使用範本建立網站](create-site.md)」中，您已了解如何使用網站範本快速建立 AEM 網站，並可以使用前端工具進一步自訂，現在您應該：
+在AEM快速網站建立歷程的上一個檔案[從範本建立網站](create-site.md)中，您已瞭解如何使用網站範本快速建立可以使用前端工具進一步自訂的AEM網站，現在您應：
 
 * 了解如何取得 AEM 網站範本。
 * 了解如何使用範本建立網站。
@@ -114,11 +114,11 @@ ht-degree: 100%
 * 了解什麼是前端管道。
 * 了解如何在 Cloud Manager 中設定前端管道。
 
-以此知識為基礎並繼續您的 AEM 快速建立網站歷程，接著檢閱文件「[授予前端開發人員存取權](grant-access.md)」，您會讓前端開發人員上線使用 Cloud Manager，讓他們可以存取您的 AEM 網站 Git 存放庫和管道。
+在此基礎上繼續您的AEM快速網站建立歷程，接下來檢閱檔案[授予前端開發人員存取權](grant-access.md)，您將在其中將前端開發人員加入Cloud Manager，讓他們能夠存取您的AEM網站Git存放庫和管道。
 
 ## 其他資源 {#additional-resources}
 
-因為我們建議您檢閱文件「[自訂網站主題](customize-theme.md)」並繼續快速建立網站歷程的下一部分，所以提供以下其他選用資源，協助深入瞭解本文件提及的一些概念，但是這些並非繼續執行歷程的必要條件。
+我們建議您檢閱檔案[自訂網站主題](customize-theme.md)，以繼續快速網站建立歷程的下一部分，以下是一些其他可選資源，這些資源對檔案中提到的一些概念進行了更深入的探究，但並非繼續此歷程所必需的。
 
 * [Cloud Manager 文件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html) - 如果您想要 Cloud Manager 功能的更多詳細資訊，您可能想直接查閱深入的技術文件。
 * [Cloud Manager 存放庫](/help/implementing/cloud-manager/managing-code/managing-repositories.md) - 如果您需要有關如何為 AEMaaCS 專案設定和管理 Git 存放庫的更多資訊，請參閱此文件。

@@ -4,10 +4,10 @@ description: 透過此快速入門指南，了解 AEM as a Cloud Service 強大 
 exl-id: 26c05122-5930-4b4e-91dd-287b7cc865ee
 feature: Headless
 role: Admin, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
-workflow-type: ht
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+workflow-type: tm+mt
 source-wordcount: '278'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 
@@ -44,4 +44,4 @@ ht-degree: 100%
 
 ## 下一步 {#next-step}
 
-準備了解更多嗎？那麼請開始閱讀 Headless 設定的第一部分：[建立設定](create-configuration.md)。
+準備了解更多嗎？接著開始閱讀Headless設定的第一部分： [建立設定](create-configuration.md)。

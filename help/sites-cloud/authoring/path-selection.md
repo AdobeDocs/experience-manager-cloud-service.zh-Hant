@@ -5,7 +5,7 @@ exl-id: 8eb52793-b709-4e66-832d-533ef06bc0e1
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '322'
 ht-degree: 4%
@@ -18,7 +18,7 @@ ht-degree: 4%
 
 ## 路徑欄位 {#path-fields}
 
-此處用來說明的範例是影像元件。 如需使用和編輯元件的詳細資訊，請參閱[頁面編寫的元件。](/help/sites-cloud/authoring/page-editor/components.md)
+此處用來說明的範例是影像元件。 如需使用和編輯元件的詳細資訊，請參閱[頁面編寫的元件](/help/sites-cloud/authoring/page-editor/components.md)。
 
 路徑欄位具有自動完成和先行等功能，可更輕鬆找到資源。
 
@@ -32,7 +32,7 @@ ht-degree: 4%
 
 ## 路徑瀏覽器 {#path-browser}
 
-路徑瀏覽器的組織方式類似於&#x200B;[**Sites**&#x200B;主控台的[欄檢視](/help/sites-cloud/authoring/basic-handling.md#column-view)，](/help/sites-cloud/authoring/sites-console/introduction.md)允許更詳細的資源選擇。
+路徑瀏覽器的組織方式類似於&#x200B;[**網站**&#x200B;主控台](/help/sites-cloud/authoring/sites-console/introduction.md)的[欄檢視](/help/sites-cloud/authoring/basic-handling.md#column-view)，允許更詳細的資源選擇。
 
 ![路徑瀏覽器](/help/sites-cloud/authoring/assets/path-browser.png)
 

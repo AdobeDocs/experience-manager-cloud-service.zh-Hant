@@ -4,7 +4,7 @@ description: 瞭解如何在設定檔案中宣告規則和篩選器，並使用C
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: c57fba06f23fa57fbf26796e747bb76f6a7a4203
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1390'
 ht-degree: 1%
@@ -25,7 +25,7 @@ AEM as a Cloud Service提供可在[Adobe管理的CDN](/help/implementing/dispatc
 
 此外，如果CDN無法連絡其來源，您可以撰寫規則來參考自行託管的自訂錯誤頁面（然後呈現）。 閱讀[設定CDN錯誤頁面](/help/implementing/dispatcher/cdn-error-pages.md)文章以進一步瞭解此專案。
 
-所有這些在原始檔控制的設定檔案中宣告的規則，都是使用Cloud Manager [設定管道來部署。](/help/operations/config-pipeline.md)請注意，組態檔（包括流量篩選規則）的累積大小不能超過100KB。
+所有這些在原始檔控制的設定檔案中宣告的規則，都是使用Cloud Manager [設定管道](/help/operations/config-pipeline.md)來部署。 請注意，設定檔案的累積大小（包括流量篩選規則）不得超過100KB。
 
 ## 評估順序 {#order-of-evaluation}
 

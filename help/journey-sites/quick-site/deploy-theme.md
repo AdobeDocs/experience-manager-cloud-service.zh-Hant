@@ -5,10 +5,10 @@ exl-id: fe065972-39db-4074-a802-85895c701efd
 solution: Experience Manager Sites
 feature: Developing
 role: Admin, Developer
-source-git-commit: a5179851af8ec88e23d79a74265b10cbce2d50f1
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1002'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 
 ## 目前進度 {#story-so-far}
 
-在 AEM 快速建立網站歷程的上一個文件「[自訂網站主題](customize-theme.md)」中，您已了解建置主題的方式、如何自訂主題以及如何使用即時 AEM 內容對主題進行測試，現在您應該：
+在AEM快速網站建立歷程的上一個檔案[自訂網站主題](customize-theme.md)中，您已瞭解如何建置主題、如何自訂主題，以及如何使用即時AEM內容來測試主題，您現在應：
 
 * 了解網站主題的基本結構以及如何編輯。
 * 了解如何透過本機 Proxy 測試使用真實 AEM 內容的主題自訂內容。
@@ -78,7 +78,7 @@ ht-degree: 100%
 管道完成後，您可以通知管理員驗證變更。然後管理員將：
 
 1. 開啟 AEM 製作環境。
-1. 導航至[管理員之前建立的網站。](create-site.md)
+1. 瀏覽至[管理員先前建立的網站](create-site.md)。
 1. 編輯其中一個內容頁面。
 1. 查看所套用的變更。
 

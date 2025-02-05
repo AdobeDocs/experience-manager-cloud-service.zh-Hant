@@ -4,7 +4,7 @@ description: 透過使用SecurBank應用程式來瞭解具有實作體驗的通�
 exl-id: 97e1395f-b51e-4cee-b1d0-2466a08f96af
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '902'
 ht-degree: 1%
@@ -24,12 +24,12 @@ ht-degree: 1%
 
 SecurBank應用程式的安裝很簡單，但由於涉及AEM as a Cloud Service的許多領域，因此需要執行許多步驟。 以下是主要步驟的概觀。
 
-1. [在Cloud Manager中建立沙箱計畫。](#create-sandbox-program)
-1. [複製計畫的Git存放庫並更新SecurBank AEM專案內容。](#clone-and-update)
-1. [執行管道以部署SecurBank AEM專案。](#run-pipeline)
-1. [擷取Cloud Manager認證，用於本機Web應用程式開發。](#retrieve-credentials)
-1. [下載及設定SecurBank網頁應用程式。](#download-web-app)
-1. [執行SecurBank網頁應用程式。](#run-web-app)
+1. [在Cloud Manager中建立沙箱計畫](#create-sandbox-program)。
+1. [復製程式的Git存放庫並更新為SecurBank AEM專案內容](#clone-and-update)。
+1. [執行管道以部署SecurBank AEM專案](#run-pipeline)。
+1. [擷取Cloud Manager認證以進行本機Web應用程式開發](#retrieve-credentials)。
+1. [下載並設定SecurBank網頁應用程式](#download-web-app)。
+1. [執行SecurBank網頁應用程式](#run-web-app)。
 
 以下小節詳細說明所需的個別工作。
 
@@ -42,13 +42,13 @@ SecurBank應用程式的安裝很簡單，但由於涉及AEM as a Cloud Service�
 1. 為SecurBank應用程式建立新的沙箱計畫。
 
    * 選取&#x200B;**解決方案和附加元件**&#x200B;時使用預設選項。
-   * 如需有關如何建立沙箱計畫的詳細資訊，請參閱檔案[建立沙箱計畫。](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md)
+   * 如需有關如何建立沙箱計畫的詳細資訊，請參閱檔案[建立沙箱計畫](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md)。
 
 ### 複製計畫的Git存放庫並更新SecurBank AEM專案內容。 {#clone-and-update}
 
 1. 建立程式後，請開啟該程式，並在&#x200B;**存放庫**&#x200B;索引標籤上，點選或按一下&#x200B;**存取存放庫資訊**&#x200B;按鈕，以開啟&#x200B;**存放庫資訊**&#x200B;對話方塊，並檢視存取沙箱環境的Git存放庫所需的認證。
 
-   * 如需有關如何存取存放庫資訊的詳細資訊，請參閱檔案[存取存放庫。](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
+   * 如需有關如何存取存放庫資訊的詳細資訊，請參閱檔案[存取存放庫](/help/implementing/cloud-manager/managing-code/accessing-repos.md)。
 
 1. 使用&#x200B;**存放庫資訊**&#x200B;對話方塊中的認證，在本機電腦上複製存放庫。
 
@@ -71,7 +71,7 @@ SecurBank的AEM專案已送交沙箱存放庫後，便可隨管道部署。
 1. 返回Cloud Manager中沙箱程式的&#x200B;**總覽**&#x200B;標籤，並執行完整棧疊非生產管道。
 
    * 取消勾選管道執行的所有選項。
-   * 如需有關執行管道的詳細資訊，請參閱檔案[管理管道。](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#running-pipelines)
+   * 如需有關執行管道的詳細資訊，請參閱檔案[管理管道](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#running-pipelines)。
 
 ### 擷取Cloud Manager認證，用於本機Web應用程式開發。 {#retrieve-credentials}
 

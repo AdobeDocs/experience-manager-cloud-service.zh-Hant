@@ -4,7 +4,7 @@ description: 瞭解如何搭配最適化表單使用DocuSign來收集電子簽�
 exl-id: fb2e75d6-e454-4999-a079-f663af79051f
 feature: Adaptive Forms, Acrobat Sign
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1534'
 ht-degree: 7%
@@ -185,7 +185,7 @@ AEM Formsas a Cloud Service提供DocuSign的自訂提交動作。 提交動作�
 
    - 如果您沒有自訂表格範本，請選取&#x200B;**[!UICONTROL 產生記錄檔案]**&#x200B;選項。 當您使用選項時，傳送以供簽署的檔案會顯示最適化表單的所有欄位。
 
-1. 選取&#x200B;**[!UICONTROL 建立。]**&#x200B;已建立啟用簽署的最適化表單。 您可以將[!DNL DocuSign]欄位新增至表單，並傳送以進行簽署。
+1. 選擇 **[!UICONTROL 建立]**。系統隨即會建立可啟用簽名的最適化表單。 您可以將[!DNL DocuSign]欄位新增至表單，並傳送以進行簽署。
 1. 在編輯模式中開啟最適化表單。 在&#x200B;**[!UICONTROL 內容]**&#x200B;索引標籤中，選取&#x200B;**[!UICONTROL 表單容器]**，然後選取![設定](assets/configure-icon.svg)。
 
 1. 在&#x200B;**[!UICONTROL 提交]**&#x200B;區段中，從&#x200B;**[!UICONTROL 提交動作]**&#x200B;下拉式清單中選取&#x200B;**[!UICONTROL 使用DocuSign電子簽章提交]**。

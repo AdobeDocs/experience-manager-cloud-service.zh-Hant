@@ -4,7 +4,7 @@ description: Externalizer是一項OSGi服務，可讓您以程式設計方式將
 exl-id: 06efb40f-6344-4831-8ed9-9fc49f2c7a3f
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '630'
 ht-degree: 0%
@@ -50,7 +50,7 @@ Externalizer服務可讓您集中定義網域，以程式設計方式為資源�
 
 >[!NOTE]
 >
->如同為AEM as a Cloud Service套用任何[OSGi設定一樣，](/help/implementing/deploying/overview.md#osgi-configuration)下列步驟應該在本機開發人員執行個體上執行，然後提交至您的專案程式碼以進行部署。
+>如同為AEM as a Cloud Service](/help/implementing/deploying/overview.md#osgi-configuration)套用任何[OSGi設定一樣，下列步驟應該在本機開發人員執行個體上執行，然後提交至您的專案程式碼以進行部署。
 
 若要定義Externalizer服務的網域對應：
 

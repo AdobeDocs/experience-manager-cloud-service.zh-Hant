@@ -4,7 +4,7 @@ description: Asset Share Query Builder的功能透過Java&amp；trade； API和R
 exl-id: d5f22422-c9da-4c9d-b81c-ffa5ea7cdc87
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1830'
 ht-degree: 0%
@@ -487,7 +487,7 @@ Query loadedQuery = builder.loadQuery("/mypath/getfiles", session);
 >
 >記錄器的設定在檔案[記錄](/help/implementing/developing/introduction/logging.md)中說明。
 
-執行上一節[測試與偵錯：](#testing-and-debugging)中說明的查詢時，查詢產生器實作的記錄輸出（資訊層級）
+執行上一節[測試與偵錯](#testing-and-debugging)中說明的查詢時，查詢產生器實作的記錄輸出（資訊層級）
 
 ```xml
 com.day.cq.search.impl.builder.QueryImpl executing query (predicate tree):

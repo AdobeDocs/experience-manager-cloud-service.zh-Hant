@@ -4,7 +4,7 @@ description: AEM as a Cloud Service中查詢產生器API的述詞參考。
 exl-id: 77118ef7-4d29-470d-9c4b-20537a408940
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '2270'
 ht-degree: 1%
@@ -171,7 +171,7 @@ group.2_group.type=dam:Asset
 
 ### hasPermission {#haspermission}
 
-此述詞將結果限製為目前工作階段具有指定[JCR許可權的專案。](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html#16.2.3%20Standard%20Privileges)
+此述詞將結果限製為目前工作階段具有指定[JCR許可權](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html#16.2.3%20Standard%20Privileges)的專案。
 
 僅限篩選的述詞，且無法使用搜尋索引。 不支援多面向擷取。
 
@@ -249,7 +249,7 @@ group.2_group.type=dam:Asset
 * **`path`** — 定義路徑模式。
    * 根據`exact`屬性，可能是整個子樹狀結構相符（例如在xpath中附加`//*`，但請注意，它不包含基底路徑），或是隻符合一個完全相符的路徑，其中可包含萬用字元(`*`)。
       * 預設為`true`。
-&lt;！—   *如果設定了`self`屬性，則會搜尋包含基底節點的整個子樹狀結構。—>
+&lt;!—   *如果設定了`self`屬性，則會搜尋包含基底節點的整個子樹狀結構。—>
 * **`exact`** — 如果`exact`是`true`，則確切的路徑必須相符，但它可以包含符合名稱的簡單萬用字元(`*`)，但不包含`/`；如果是`false` （預設），則包含所有子代（選擇性）。
 * **`flat`** — 僅搜尋直接子系（例如在xpath中附加`/*`） （僅在`exact`不是true時才使用，為選用）。
 * **`self`** — 搜尋子樹狀結構，但包含以路徑指定的基底節點（無萬用字元）。

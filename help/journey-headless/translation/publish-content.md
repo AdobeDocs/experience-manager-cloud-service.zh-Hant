@@ -5,10 +5,10 @@ exl-id: eb8d1152-ed37-47ca-86a8-6a66c010ee62
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1359'
-ht-degree: 100%
+ht-degree: 92%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 
 ## 目前進度 {#story-so-far}
 
-在 AEM Headless 歷程的上一個文件「[翻譯內容](configure-connector.md)」中，您已了解如何使用 AEM 翻譯專案來翻譯您的 Headless 內容。您現在應該：
+在AEM Headless翻譯歷程的上一個檔案[翻譯內容](configure-connector.md)中，您已瞭解如何使用AEM翻譯專案來翻譯Headless內容。 您現在應該：
 
 * 了解什麼是翻譯專案。
 * 能夠建立新的翻譯專案。
@@ -119,7 +119,7 @@ ht-degree: 100%
 
 您可能會注意到新卡片上列出的統計資料 (資產和內容片段數量) 有所不同。這是因為 AEM 會識別自上次翻譯以來發生的變更，並且僅包括必須翻譯的內容。這包括更新內容的重新翻譯以及新內容的首次翻譯。
 
-從這時開始，您[開始和管理您的翻譯工作，就像您最初的做法一樣。](translate-content.md#using-translation-project)
+從此時起，您[開始並管理您的翻譯工作，就像您處理原始翻譯工作一樣](translate-content.md#using-translation-project)。
 
 ### 更新手動建立的翻譯專案 {#updating-manual-project}
 
@@ -141,15 +141,15 @@ ht-degree: 100%
    ![選取目標語言](assets/select-target-language.png)
 
 1. 設定好新翻譯工作的目標語言後，選取工作卡片底部的省略符號按鈕可檢視工作的詳細資料。
-1. 工作首次建立時是空的。點選或按一下&#x200B;**新增**&#x200B;按鈕並使用路徑瀏覽器[新增內容到工作，就像最初建立翻譯專案時的做法一樣。](translate-content.md##manually-creating)
+1. 工作首次建立時是空的。點選或按一下「**新增**」按鈕，並使用路徑瀏覽器[，將內容新增至工作，就像您最初建立翻譯專案](translate-content.md##manually-creating)時所做的一樣。
 
 >[!TIP]
 >
 >路徑瀏覽器強大的篩選器可以再次高效地只尋找已更新的內容。
 >
->若要進一步了解路徑瀏覽器，請參閱[其他資源章節](#additional-resources)
+>您可以在[其他資源區段](#additional-resources)中進一步瞭解路徑瀏覽器。
 
-從這時開始，您[開始和管理您的翻譯工作，就像您最初的做法一樣。](translate-content.md#using-translation-project)
+從此時起，您[開始並管理您的翻譯工作，就像您處理原始翻譯工作一樣](translate-content.md#using-translation-project)。
 
 ## 歷程結尾？ {#end-of-journey}
 

@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Publishing,Upload,Viewer Presets,Image Presets,Video
 role: User
 exl-id: 3cd3f4d5-ebf0-4318-9a0d-1ea69453d57b
-source-git-commit: 26afff3a39a2a80c1f730287b99f3fb33bff0673
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1281'
 ht-degree: 5%
@@ -16,7 +16,7 @@ ht-degree: 5%
 
 您的網站和應用程式會透過URL呼叫來存取Dynamic Media服務。 發佈資產後，Dynamic Media會啟用參考該資產的URL字串。 您可以將這些URL貼到網頁瀏覽器以進行測試。
 
-只有在您&#x200B;*不是*&#x200B;使用Adobe Experience Manager做為WCM時，您才會連結至URL。 當您想要以快顯視窗或模型視窗形式傳送視訊播放器時，會使用連結（而非內嵌）。 如果您使用Experience Manager做為WCM，[請直接在頁面上新增資產。](adding-dynamic-media-assets-to-pages.md)
+只有在您&#x200B;*不是*&#x200B;使用Adobe Experience Manager做為WCM時，您才會連結至URL。 當您想要以快顯視窗或模型視窗形式傳送視訊播放器時，會使用連結（而非內嵌）。 如果您使用Experience Manager做為WCM，[請直接在頁面上新增資產](adding-dynamic-media-assets-to-pages.md)。
 
 若要將這些URL字串放置在網頁和應用程式中，請從Dynamic Media複製它們。
 

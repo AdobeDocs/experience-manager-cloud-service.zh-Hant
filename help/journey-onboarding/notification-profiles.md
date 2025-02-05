@@ -4,10 +4,10 @@ description: 了解如何在 Admin Console 中建立使用者設定檔來管理�
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: 4edecfcd-6301-4a46-98c7-eb5665f48995
-source-git-commit: 53a3a4c47becf58f8874083e2878fa3458d6cad7
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1130'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -23,7 +23,7 @@ Adobe 不定時會就 AEM as a Cloud Service 環境相關情況聯絡使用者�
 * **事件通知** - 這些通知是在事件期間或 Adobe 發現您的 AEM as a Cloud Service 環境存在潛在可用性問題時傳送的。
 * **主動通知** - 當 Adobe 支援團隊成員想要提供有關可使您的 AEM as a Cloud Service 環境受益的潛在最佳化或建議的指引時，將傳送這些通知。
 
-使用者也可以根據其[自訂群組權限](/help/implementing/cloud-manager/custom-permissions.md)收到特定方案的這些通知。
+使用者也可以根據其[自訂群組許可權](/help/implementing/cloud-manager/custom-permissions.md)，接收特定程式的這些通知。
 
 此外，還支援將群組指派給主動通知，並且可以將使用者和群組直接指派給產品設定檔。
 
@@ -43,7 +43,7 @@ Adobe 不定時會就 AEM as a Cloud Service 環境相關情況聯絡使用者�
 
 要正確設定接收通知，您需要建立兩個使用者設定檔。這些步驟僅執行一次。
 
-1. 請上 [`https://adminconsole.adobe.com` 登入 Admin Console。](https://adminconsole.adobe.com)
+1. 在[`https://adminconsole.adobe.com`](https://adminconsole.adobe.com)登入Admin Console。
 
 1. 確認您位於正確的組織。
 
@@ -103,7 +103,7 @@ Adobe 不定時會就 AEM as a Cloud Service 環境相關情況聯絡使用者�
 
    ![使用者](assets/product_services.png)
 
-1. 如果您的團隊成員尚未設定 Federated ID，請從頂端導覽區域中選取「**使用者**」標籤，然後選取「**新增使用者**」。否則請跳到[將現有使用者新增至設定檔](#existing-users)一節。
+1. 如果您的團隊成員尚未設定 Federated ID，請從頂端導覽區域中選取「**使用者**」標籤，然後選取「**新增使用者**」。否則請跳到區段[新增現有使用者到設定檔](#existing-users)。
 
    ![使用者](assets/cloud_manager_add_user.png)
 
@@ -136,7 +136,7 @@ Adobe 不定時會就 AEM as a Cloud Service 環境相關情況聯絡使用者�
 
 1. 在頂端導覽區域中選取「**使用者**」標籤。
 
-1. 如果要新增到通知設定檔之團隊成員的 Federated ID 已經存在，請在清單中找出並按一下它。否則請跳到[將新的使用者新增至設定檔](#add-user)一節。
+1. 如果要新增到通知設定檔之團隊成員的 Federated ID 已經存在，請在清單中找出並按一下它。否則請跳到區段[新增使用者到設定檔](#add-user)。
 
 1. 在使用者詳細資料視窗的「**產品**」區段，按下省略號按鈕，然後選取「**編輯**」。
 

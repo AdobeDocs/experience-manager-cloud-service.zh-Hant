@@ -4,10 +4,10 @@ description: 了解在您的示範網站上啟用完整 AEM Screens as a Cloud S
 exl-id: 369eea9f-2e81-4b87-841c-188b67657bab
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
-workflow-type: ht
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+workflow-type: tm+mt
 source-wordcount: '2666'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 100%
 
 ## 目前進度 {#story-so-far}
 
-在 AEM 參考示範附加元件歷程的上一個文件「[建立示範網站](create-site.md)」中，您根據參考示範附加元件的範本建立一個示範網站。您現在應該：
+在AEM參考示範附加元件歷程的上一個檔案[建立示範網站](create-site.md)中，您已根據參考示範附加元件的範本建立示範網站。 您現在應該：
 
 * 了解如何存取 AEM 製作環境。
 * 了解如何根據範本建立網站。
@@ -104,8 +104,8 @@ We.Cafe 位置的格局如下。
 
 現在您已經有 We.Cafe 示範內容，您可以選擇 AEM Screens 的測試方式：
 
-* 如果您只想探索 AEM Sites 主控台中的內容，請開始探索「[其他資源](#additional-resources)」區段並搜尋更多資訊！無需採取更多動作。
-* 如果您想體驗 AEM Screens 的完整動態功能，請繼續閱讀下一區段「[動態變更 Screens 內容](#dynamically-change)」。
+* 如果您只想探索AEM Sites主控台中的內容，只要在[其他資源](#additional-resources)區段中開始探索和探索更多內容即可；無需其他動作。
+* 如果您想要體驗AEM Screens的完整動態功能，請繼續下一節，[動態變更Screens內容](#dynamically-change)。
 
 ## 動態變更 Screens 內容 {#dynamically-change}
 
@@ -390,7 +390,7 @@ AEM Screens 可以根據環境動態變更內容。We.Cafe 示範具備已設定
 * 了解 We.Cafe 示範內容。
 * 了解如何針對 We.Cafe 設定 AEM Screens。
 
-現在您已準備好使用自己的示範網站探索 AEM Screens 的功能。繼續歷程的下個區段「[管理您的示範網站](manage.md)」，從中了解可協助您管理示範網站的工具以及如何移除它們。
+現在您已準備好使用自己的示範網站探索 AEM Screens 的功能。繼續歷程的下一個區段[管理您的示範網站](manage.md)，瞭解可用於協助您管理示範網站的工具，以及如何移除它們。
 
 您也可以查看「[其他資源](#additional-resources)」區段提供的其他資源，詳細了解您在此歷程中看到的功能。
 

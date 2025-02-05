@@ -4,7 +4,7 @@ description: 標籤內容，並使用AEM標籤基礎結構來分類及組織內�
 exl-id: 25418d44-aace-4e73-be1a-4b1902f40403
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1562'
 ht-degree: 0%
@@ -24,9 +24,9 @@ ht-degree: 0%
 
 若要標籤內容並使用AEM標籤基礎架構：
 
-* 標籤必須存在為[分類根節點下型別[`cq:Tag`](#cq-tag-node-type)的節點。](#taxonomy-root-node)
+* 標籤必須以[分類根節點](#taxonomy-root-node)下型別[`cq:Tag`](#cq-tag-node-type)的節點存在。
 * 標籤的內容節點的`NodeType`必須包含[`cq:Taggable`](#taggable-content-cq-taggable-mixin) mixin。
-* [`TagID`](#tagid)已新增至內容節點的[`cq:tags`](#cq-tags-property)屬性，並解析成型別[`cq:Tag`.](#cq-tag-node-type)的節點
+* [`TagID`](#tagid)已新增至內容節點的[`cq:tags`](#cq-tags-property)屬性，並解析為型別[`cq:Tag`](#cq-tag-node-type)的節點。
 
 ## cq：Tag節點型別 {#cq-tag-node-type}
 
@@ -41,18 +41,18 @@ ht-degree: 0%
 ### 標籤特性 {#tag-characteristics}
 
 * 節點型別為`cq:Tag`。
-* 節點名稱是[`TagID`.](#tagid)的元件
-* [`TagID`](#tagid)一律包含[名稱空間。](#tag-namespace)
+* 節點名稱是[`TagID`](#tagid)的元件。
+* [`TagID`](#tagid)一律包含[名稱空間](#tag-namespace)。
 * `jcr:title`屬性（顯示在UI中的標題）是選用的。
 * `jcr:description`屬性是選用的。
-* 包含子節點時，會稱為[容器標籤。](#container-tags)
-* 標籤儲存在稱為[分類根節點的基底路徑下方的儲存庫中。](#taxonomy-root-node)
+* 包含子節點時，會稱為[容器標籤](#container-tags)。
+* 標籤儲存在稱為[分類根節點](#taxonomy-root-node)的基底路徑下方的儲存庫中。
 
 ### 標記 ID {#tagid}
 
 `TagID`會識別解析成存放庫中的標籤節點的路徑。
 
-一般而言，`TagID`是以名稱空間開頭的速記`TagID`，或者可以是從[分類根節點開頭的絕對`TagID`。](#taxonomy-root-node)
+一般而言，`TagID`是以名稱空間開頭的速記`TagID`，或者可以是從[分類根節點](#taxonomy-root-node)開始的絕對`TagID`。
 
 標籤內容時，如果內容尚不存在，[`cq:tags`](#cq-tags-property)屬性會新增至內容節點，而`TagID`會新增至屬性的`String`陣列值。
 
@@ -68,7 +68,7 @@ ht-degree: 0%
 
 名稱空間可讓您將專案分組。 最典型的使用案例是每個網站或大型應用程式(例如網站或Assets)都有一個名稱空間（例如公用與內部），但名稱空間可用於各種其他需求。 在使用者介面中使用名稱空間，以僅顯示適用於目前內容的標籤子集（即特定名稱空間的標籤）。
 
-標籤的名稱空間是分類子樹狀結構中的第一個層級，也就是[分類根節點正下方的節點。](#taxonomy-root-node)名稱空間是型別`cq:Tag`的節點，其父項不是`cq:Tag`節點型別。
+標籤的名稱空間是分類子樹狀結構中的第一個層級，它是[分類根節點](#taxonomy-root-node)正下方的節點。 名稱空間是型別`cq:Tag`的節點，其父系不是`cq:Tag`節點型別。
 
 所有標籤都有名稱空間。 如果未指定名稱空間，則會將標籤指派給預設名稱空間`TagID` `default`，即`/content/cq:tags/default`。 在這種情況下，標題會預設為`Standard Tags`。
 
@@ -107,7 +107,7 @@ ht-degree: 0%
 
 ### 存取控制 {#access-control}
 
-標籤在[分類根節點下的存放庫中作為節點存在。](#taxonomy-root-node)若要允許或拒絕作者和網站訪客在指定的名稱空間中建立標籤，可在存放庫中設定適當的ACL。
+標籤在[分類根節點](#taxonomy-root-node)下的儲存庫中作為節點存在。 若要允許或拒絕作者和網站訪客在指定的名稱空間中建立標籤，可在存放庫中設定適當的ACL。
 
 拒絕某些標籤或名稱空間的讀取許可權會控制將標籤套用至特定內容的能力。
 

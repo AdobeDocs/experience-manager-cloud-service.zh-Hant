@@ -5,7 +5,7 @@ exl-id: da7d5933-f6c9-4937-a483-ec4352fba86b
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1431'
 ht-degree: 3%
@@ -14,11 +14,11 @@ ht-degree: 3%
 
 # AEM頁面編輯器 {#editing-page-content}
 
-在&#x200B;[**網站**&#x200B;主控台中建立您的頁面後，](/help/sites-cloud/authoring/sites-console/introduction.md)您可以使用AEM頁面編輯器來編輯頁面的內容，這是製作內容的強大工具。
+在&#x200B;[**網站**&#x200B;主控台](/help/sites-cloud/authoring/sites-console/introduction.md)中建立頁面後，您就可以使用AEM頁面編輯器來編輯頁面的內容，這是製作內容的強大工具。
 
 >[!NOTE]
 >
->在&#x200B;[**網站**&#x200B;主控台中編輯頁面時，](/help/sites-cloud/authoring/sites-console/introduction.md)主控台將開啟適合頁面[範本：](/help/sites-cloud/authoring/page-editor/templates.md)的編輯器，可以是本檔案中說明的頁面編輯器，或[通用編輯器。](/help/sites-cloud/authoring/universal-editor/authoring.md)
+>在&#x200B;[**網站**&#x200B;主控台](/help/sites-cloud/authoring/sites-console/introduction.md)中編輯頁面時，主控台將開啟適合頁面[範本](/help/sites-cloud/authoring/page-editor/templates.md)的編輯器，可以是本檔案中說明的頁面編輯器，或[通用編輯器](/help/sites-cloud/authoring/universal-editor/authoring.md)。
 
 >[!NOTE]
 >
@@ -44,7 +44,7 @@ AEM頁面編輯器主要由三個區段組成：
 
 #### 側面板 {#side-panel-button}
 
-這會開啟/關閉[側面板](/help/sites-cloud/authoring/page-editor/editor-side-panel.md)，其中包含資產瀏覽器、元件瀏覽器和內容樹。
+這會開啟/關閉[側面板](/help/sites-cloud/authoring/page-editor/editor-side-panel.md)，其中包含資產瀏覽器、元件瀏覽器和內容樹狀結構。
 
 ![側面板切換](assets/page-editor-side-panel-toggle.png)
 
@@ -78,7 +78,7 @@ AEM頁面編輯器主要由三個區段組成：
 
 #### ContextHub {#context-hub}
 
-這會開啟[ContextHub。](/help/sites-cloud/authoring/personalization/contexthub.md)它只能在&#x200B;**預覽**&#x200B;模式中使用。
+這會開啟[ContextHub](/help/sites-cloud/authoring/personalization/contexthub.md)。 它僅適用於&#x200B;**預覽**&#x200B;模式。
 
 ![Context Hub按鈕](assets/page-editor-context-hub.png)
 
@@ -114,7 +114,7 @@ AEM頁面編輯器主要由三個區段組成：
 
 #### 預覽 {#preview}
 
-**預覽**&#x200B;按鈕會啟用[預覽模式。](#preview-mode)，顯示發佈時顯示的頁面。
+**預覽**&#x200B;按鈕啟用[預覽模式](#preview-mode)，顯示發佈時顯示的頁面。
 
 ![預覽按鈕](assets/page-editor-preview.png)
 

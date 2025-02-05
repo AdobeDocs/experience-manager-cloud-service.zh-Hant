@@ -5,10 +5,10 @@ exl-id: 3ef1cf86-6da4-4c09-9cfc-acafc8f6dd5c
 solution: Experience Manager Sites
 feature: Developing
 role: Admin, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '874'
-ht-degree: 100%
+ht-degree: 82%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 100%
 
 如果您是只負責自訂網站主題的前端開發人員，則不需要了解 AEM 的設定方式，可以跳到本文件的「[目標](#objective)」區段。
 
-如果您還擔任 Cloud Manager 或 AEM 管理員和前端開發人員的角色，您在 AEM 快速建立網站歷程的上一個文件「[授予前端開發人員存取權](grant-access.md)」中已了解如何讓前端開發人員上線，使他們能夠存取 Git 存放庫，您現在應該知道：
+如果您還擔任Cloud Manager或AEM管理員以及前端開發人員的角色，您已在AEM快速網站建立歷程的上一個檔案[向前端開發人員授予存取權](grant-access.md)中瞭解如何載入前端開發人員，以便他們能夠存取Git存放庫，現在您應知道：
 
 * 如何將前端開發人員新增為使用者。
 * 如何向前端開發人員授予所需的角色。
@@ -114,10 +114,10 @@ Cloud Manager 管理員將讓您上線成為 Cloud Manager 使用者。您應該
 * 深入了解 Cloud Manager 是什麼。
 * 已擷取您的認證來存取 AEM Git，以便您可以提交自訂。
 
-以此知識為基礎並繼續您的 AEM 快速建立網站歷程，接著檢閱文件「[自訂網站主題](customize-theme.md)」，從中了解如何建置網站主題、如何自訂以及如何使用即時 AEM 內容進行測試。
+在此知識的基礎上繼續您的AEM快速網站建立歷程，接下來檢閱檔案[自訂網站主題](customize-theme.md)，瞭解如何使用即時AEM內容建立、自訂及測試網站主題。
 
 ## 其他資源 {#additional-resources}
 
-因為我們建議您檢閱文件「[自訂網站主題](customize-theme.md)」並繼續快速建立網站歷程的下一部分，所以提供以下其他選用資源，協助深入瞭解本文件提及的一些概念，但是這些並非繼續執行歷程的必要條件。
+我們建議您檢閱檔案[自訂網站主題](customize-theme.md)，以繼續快速網站建立歷程的下一部分，以下是一些其他可選資源，這些資源對檔案中提到的一些概念進行了更深入的探究，但並非繼續此歷程所必需的。
 
 * [Adobe Experience Manager Cloud Manager 文件](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) - 瀏覽 Cloud Manager 文件以了解其功能的完整詳細資訊。

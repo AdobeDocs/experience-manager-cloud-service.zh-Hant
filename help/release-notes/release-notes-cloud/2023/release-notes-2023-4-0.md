@@ -4,7 +4,7 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2023.4.0 版�
 exl-id: c34aedee-e45a-4e2a-ae7f-930bc0cc026f
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1122'
 ht-degree: 100%
@@ -39,7 +39,7 @@ ht-degree: 100%
 
 ### [!DNL Experience Manager Sites] 中的新功能 {#sites-features}
 
-* 將 AEM as a Cloud Service 中的內容片段以 JSON 格式匯出到 Adobe Target，並在 Target 中建立對應的 JSON 選件。
+* 將 AEM as a Cloud Service 中的內容片段以 JSON 格式匯出到 Adobe Target，並在 Target 中建立對應的 JSON 產品建議。
 * 支援 GraphQL 分頁和排序，以及內部快取增強功能，現在可協助提升分離的用戶端應用程式在使用複雜 GraphQL 查詢和篩選器從 AEM 擷取大型內容集時的工作效能。
 
 ### [!DNL Experience Manager Sites] 發行前版本的新功能 {#prerelease-sites}
@@ -122,7 +122,7 @@ ht-degree: 100%
 
 ## Cloud Manager {#cloud-manager}
 
-您可以在[此處](/help/implementing/cloud-manager/release-notes/current.md)找到 Cloud Manager 每月發行的完整清單。
+您可以在[這裡](/help/implementing/cloud-manager/release-notes/current.md)找到 Cloud Manager 每月發行的完整清單。
 
 ## 移轉工具 {#migration-tools}
 

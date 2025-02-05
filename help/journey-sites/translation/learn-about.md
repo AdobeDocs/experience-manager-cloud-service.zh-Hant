@@ -8,10 +8,10 @@ exl-id: 1e5e739a-1fbd-49cf-b529-335696d7e2f4
 solution: Experience Manager Sites
 feature: Translation
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '491'
-ht-degree: 100%
+ht-degree: 88%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 100%
 
 ## AEM Sites 概觀 {#aem-sites}
 
-AEM Sites 是一個用於建立、管理和傳遞數位體驗的綜合平台。內容作者使用簡單的所見即所得拖放工具在直覺易用的編輯器中建立頁面，該編輯器會按照受眾取用的方式呈現內容。
+AEM Sites 是一個用於建立、管理和傳遞數位體驗的綜合平台。內容作者使用簡單的所見即所得拖放工具在直覺易用的編輯器中建立頁面，該編輯器會按照客群取用的方式呈現內容。
 
 構成使用體驗的頁面可以在Sites 主控台中輕鬆管理，以易於理解的階層為您提供內容概觀，從而可以輕鬆地重新排列、複製和發佈內容。
 
@@ -40,7 +40,7 @@ AEM Sites 是一個用於建立、管理和傳遞數位體驗的綜合平台。�
 
 ## 在 AEM 翻譯網站內容 {#translating-in-aem}
 
-AEM 不僅使建立和管理內容變得簡單，而且還使您可以輕鬆地為受眾翻譯內容，無論他們身在何處。
+AEM 不僅使建立和管理內容變得簡單，而且還使您可以輕鬆地為客群翻譯內容，無論他們身在何處。
 
 概括地說，AEM 的翻譯由四個簡單步驟組成：
 
@@ -63,7 +63,7 @@ AEM 不僅使建立和管理內容變得簡單，而且還使您可以輕鬆地�
 
 ## 其他資源 {#additional-resources}
 
-因為我們建議您檢閱文件「[開始使用 AEM Sites 翻譯](getting-started.md)」並繼續快速建立網站歷程的下個部分，所以提供以下其他選用資源，協助深入瞭解本文件提及的一些概念，但是這些並非繼續執行歷程的必要條件。
+我們建議您檢閱檔案[開始使用AEM Sites翻譯](getting-started.md)，以繼續網站翻譯歷程的下一部分，以下是一些其他選擇性資源，這些資源會更深入地研究本檔案中提到的一些概念，但並非繼續此歷程所必需的。
 
 * [製作頁面快速入門指南](/help/sites-cloud/authoring/quick-start.md) - 使用 AEM Sites 建立內容的最重要概念的簡易概觀
 * [MSM 和翻譯](/help/sites-cloud/administering/msm-and-translation.md) - 詳細說明 AEM 多網站管理員以及它如何與其翻譯工具一起工作

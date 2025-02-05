@@ -4,7 +4,7 @@ description: 瞭解如何在自行託管的儲存體(例如Amazon S3或Azure Blo
 feature: Dispatcher
 exl-id: 1ecc374c-b8ee-41f5-a565-5b36445d3c7c
 role: Admin
-source-git-commit: 137ea509de353f9f800f0b64bb8f2f6375e7d83d
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '388'
 ht-degree: 1%
@@ -14,7 +14,7 @@ ht-degree: 1%
 
 # 設定CDN錯誤頁面 {#cdn-error-pages}
 
-萬一[Adobe管理的CDN](/help/implementing/dispatcher/cdn.md#aem-managed-cdn)無法連線至AEM來源，CDN預設會提供不記名的一般錯誤頁面，指出無法連線至伺服器。 您可以在自行託管的儲存體(例如Amazon S3或Azure Blob儲存體)中託管靜態檔案，並在使用Cloud Manager [設定管道部署的設定檔案中參照這些檔案，藉此覆寫預設錯誤頁面。](/help/operations/config-pipeline.md#managing-in-cloud-manager)
+萬一[Adobe管理的CDN](/help/implementing/dispatcher/cdn.md#aem-managed-cdn)無法連線至AEM來源，CDN預設會提供不記名的一般錯誤頁面，指出無法連線至伺服器。 您可以在自行託管的儲存體(例如Amazon S3或Azure Blob儲存體)中託管靜態檔案，並在使用Cloud Manager [設定管道](/help/operations/config-pipeline.md#managing-in-cloud-manager)部署的設定檔案中參照這些檔案，藉此覆寫預設錯誤頁面。
 
 ## 設定 {#setup}
 

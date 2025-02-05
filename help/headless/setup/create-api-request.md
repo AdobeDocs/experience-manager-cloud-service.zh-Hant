@@ -4,10 +4,10 @@ description: 了解如何使用 GraphQL API Headless 傳遞內容片段，以及
 exl-id: 2b72f222-2ba5-4a21-86e4-40c763679c32
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Developer
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
-workflow-type: ht
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+workflow-type: tm+mt
 source-wordcount: '677'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 
 ## 什麼是 GraphQL 和 Assets REST API？ {#what-are-the-apis}
 
-[現在您已經建立一些內容片段，](create-content-fragment.md)您可以使用 AEM 的 API Headless 傳遞內容片段。
+[現在您已建立一些內容片段](create-content-fragment.md)，您可以使用AEM API來無頭傳送。
 
 * [GraphQL API](/help/headless/graphql-api/content-fragments.md) 可讓您建立存取和傳遞內容片段的要求。這個 API 提供了一組最強大的功能來查詢和取用內容片段內容。
    * 若要使用 API，[在 AEM 中定義和啟用端點](/help/headless/graphql-api/graphql-endpoint.md)，如果需要，[安裝 GraphiQL 介面](/help/headless/graphql-api/graphiql-ide.md)。

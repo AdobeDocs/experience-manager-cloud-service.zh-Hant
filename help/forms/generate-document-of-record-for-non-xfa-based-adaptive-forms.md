@@ -4,10 +4,10 @@ description: 瞭解如何產生最適化Forms的記錄檔案(DoR)範本。
 feature: Adaptive Forms, Foundation Components
 exl-id: 16d07932-3308-4b62-8fa4-88c4e42ca7b6
 role: User, Developer
-source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '4170'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -55,7 +55,7 @@ ht-degree: 2%
 1. 在[內容]視窗中，選取&#x200B;**[!UICONTROL 表單模型]**。
 1. 在&#x200B;**[!UICONTROL 表單模型]**&#x200B;標籤的&#x200B;**[!UICONTROL 選取自]**&#x200B;下拉式清單中，選取&#x200B;**[!UICONTROL 結構描述]**&#x200B;或&#x200B;**[!UICONTROL 無]**。 您也可以在建立表單時選取表單模型。
 1. 在[表單模型]索引標籤的[記錄檔案範本組態]區段中，選取[**關聯表單範本作為記錄檔案範本**]。 選取此選項時，會顯示電腦上可用的所有XFA範本（XDP檔案）。 選取適當的檔案。 此外，請確定最適化表單和選取的XFA範本（XDP檔案）使用的是相同結構描述（資料結構描述）。
-1. 按一下&#x200B;**[!UICONTROL 完成。]**
+1. 按一下&#x200B;**[!UICONTROL 完成]**
 
 您的最適化表單現在已設定為使用XDP檔案作為記錄檔案的範本。 下一個步驟是[繫結最適化表單元件與對應的範本欄位](#bind-adaptive-form-components-with-template-fields)。
 
@@ -68,7 +68,7 @@ ht-degree: 2%
 1. 在[內容]視窗中，選取&#x200B;**[!UICONTROL 表單模型]**。
 1. 在&#x200B;**[!UICONTROL 表單模型]**&#x200B;標籤的&#x200B;**[!UICONTROL 選取自]**&#x200B;下拉式清單中，選取&#x200B;**[!UICONTROL 結構描述]**&#x200B;或&#x200B;**[!UICONTROL 無]**。 您也可以在建立表單時選取表單模型。
 1. 在[表單模型]索引標籤的[記錄檔案範本組態]區段中，選取[**關聯表單範本作為記錄檔案範本**]。 選取此選項時，會顯示電腦上可用的所有AcrobatPDF(Acroform)。 選取適當的檔案。
-1. 按一下&#x200B;**[!UICONTROL 完成。]**
+1. 按一下&#x200B;**[!UICONTROL 完成]**
 
 您的最適化表單現在已設定為使用Acroform作為記錄檔案的範本。 下一個步驟是[繫結最適化表單元件與對應的範本欄位](#bind-adaptive-form-components-with-template-fields)。
 
@@ -89,7 +89,7 @@ ht-degree: 2%
 1. 在[內容]視窗中，選取&#x200B;**[!UICONTROL 表單模型]**。
 1. 在&#x200B;**[!UICONTROL 表單模型]**&#x200B;標籤的&#x200B;**[!UICONTROL 選取自]**&#x200B;下拉式清單中，選取&#x200B;**[!UICONTROL 結構描述]**&#x200B;或&#x200B;**[!UICONTROL 無]**。 您也可以在建立表單時選取表單模型。
 1. 在[表單模型]索引標籤的[記錄檔案範本組態]區段中，選取[**產生記錄檔案**]。
-1. 按一下&#x200B;**[!UICONTROL 完成。]**
+1. 按一下&#x200B;**[!UICONTROL 完成]**
 
 ## 繫結最適化表單元件與範本欄位 {#bind-adaptive-form-components-with-template-fields}
 

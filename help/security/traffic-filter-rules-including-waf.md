@@ -4,10 +4,10 @@ description: 設定流量篩選規則，包括 Web 應用程式防火牆 (WAF) �
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
-source-git-commit: bc5dbee5b5accc747288638fd8e22ed8f2d12fd5
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '4049'
-ht-degree: 99%
+ht-degree: 97%
 
 ---
 
@@ -63,7 +63,7 @@ Adobe 邀請您透過傳送電子郵件至：**aemcs-waf-adopter@adobe.com**，�
 
 例如，在 Apache 層，客戶可以設定 [Dispatcher 模組](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration#configuring-access-to-content-filter)或 [ModSecurity](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/foundation/security/modsecurity-crs-dos-attack-protection) 以限制對特定內容的存取。
 
-如本文所述，可以將流量篩選器規則部署到 Adobe Managed CDN，方法是使用 Cloud Manager 的[設定管道。](/help/operations/config-pipeline.md)除了根據 IP 位址、路徑和標頭等屬性的流量篩選規則，或根據設定速率限制的規則之外，客戶也可以授權稱為 WAF 規則的強大流量篩選規則子類別。
+如本文所述，流量篩選器規則可以使用Cloud Manager的[設定管道](/help/operations/config-pipeline.md)部署到Adobe管理的CDN。 除了根據 IP 位址、路徑和標頭等屬性的流量篩選規則，或根據設定速率限制的規則之外，客戶也可以授權稱為 WAF 規則的強大流量篩選規則子類別。
 
 ## 建議的流程 {#suggested-process}
 
@@ -105,11 +105,11 @@ Adobe 邀請您透過傳送電子郵件至：**aemcs-waf-adopter@adobe.com**，�
 
 1. 如果 WAF 規則已獲得授權，則應在 Cloud Manager 中啟用該功能 (如下所述)，對於新的和現有的計畫案例都適用。
 
-   1. 若要對新計畫設定 WAF，在新增生產計畫時，請勾選「**WAF-DDOS 防護**」核取方塊 (在&#x200B;**安全性**&#x200B;標籤中) [。](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
+   1. 若要在新程式上設定WAF，請在[新增生產程式](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)時，核取&#x200B;**安全性**&#x200B;索引標籤上的&#x200B;**WAF-DDOS保護**&#x200B;核取方塊。
 
    1. 若要在現有的計畫上設定 WAF，[編輯您的計畫](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)並在「**安全性**」標籤隨時取消勾選或勾選 **WAF-DDOS** 選項。
 
-1. 在 Cloud Manager 中建立設定管道，依照此文章中所述執行：[設定管道文章。](/help/operations/config-pipeline.md#managing-in-cloud-manager)管道將參考頂層 `config` 資料夾，並將 `cdn.yaml` 檔案放在下方的某個位置，請參閱[「使用設定管道」](/help/operations/config-pipeline.md#folder-structure)。
+1. 在Cloud Manager中建立設定管道，如[設定管道文章](/help/operations/config-pipeline.md#managing-in-cloud-manager)所述。 管道將參照最上層`config`資料夾，並將`cdn.yaml`檔案放在下方，請參閱[使用設定管道](/help/operations/config-pipeline.md#folder-structure)。
 
 ## 流量篩選規則語法 {#rules-syntax}
 

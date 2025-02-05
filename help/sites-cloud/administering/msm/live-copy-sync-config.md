@@ -5,7 +5,7 @@ feature: Multi Site Manager
 role: Admin
 exl-id: 0c97652c-edac-436e-9b5b-58000bccf534
 solution: Experience Manager Sites
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '2414'
 ht-degree: 2%
@@ -46,7 +46,7 @@ Adobe Experience Manager提供數種立即可用的同步設定。 在使用即�
 
 下表列出隨AEM一起提供的現成轉出設定。 此表格包含每個轉出設定的觸發器和同步動作。
 
-如果安裝的轉出組態動作不符合您的需求，您可以[建立轉出組態。](#creating-a-rollout-configuration)
+如果安裝的轉出組態動作不符合您的需求，您可以[建立轉出組態](#creating-a-rollout-configuration)。
 
 | 名稱 | 說明 | 觸發程序 | [同步處理動作](#synchronization-actions) |
 |---|---|---|---|
@@ -61,7 +61,7 @@ Adobe Experience Manager提供數種立即可用的同步設定。 在使用即�
 
 下表列出隨AEM一起提供的現成同步動作。
 
-如果安裝的動作不符合您的需求，您可以[建立新的同步化動作。](/help/implementing/developing/extending/msm.md#creating-a-new-synchronization-action)
+如果安裝的動作不符合您的需求，您可以[建立新的同步化動作](/help/implementing/developing/extending/msm.md#creating-a-new-synchronization-action)。
 
 | 動作名稱 | 說明 | 屬性 |
 |---|---|---|
@@ -88,7 +88,7 @@ Adobe Experience Manager提供數種立即可用的同步設定。 在使用即�
 當安裝的轉出設定不符合您的應用程式需求時，您可以[建立轉出設定](/help/implementing/developing/extending/msm.md#creating-a-new-rollout-configuration)，方法是執行下列步驟。
 
 1. [建立轉出設定 — ](/help/implementing/developing/extending/msm.md#create-the-rollout-configuration)
-1. [將同步化動作新增到轉出設定。](/help/implementing/developing/extending/msm.md#add-synchronization-actions-to-the-rollout-configuration)
+1. [將同步處理動作新增至轉出設定](/help/implementing/developing/extending/msm.md#add-synchronization-actions-to-the-rollout-configuration)。
 
 然後，當您在Blueprint或即時副本頁面上設定轉出設定時，便可使用新的轉出設定。
 

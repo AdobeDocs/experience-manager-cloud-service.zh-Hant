@@ -4,16 +4,16 @@ description: 一旦您了解了上線所需的準備工作和 AEMaaCS 結構的�
 exl-id: 0ccce328-a356-4ba9-b7fe-f67abc25b924
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1071'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
 # 存取 Admin Console {#accessing-admin-console}
 
-透過這部分的[上線歷程](overview.md)，您會了解在首次登入系統之前所需的準備工作。
+在[入門歷程](overview.md)的這一部分，您將瞭解首次登入系統之前所需的準備工作。
 
 ## 目標 {#objective}
 

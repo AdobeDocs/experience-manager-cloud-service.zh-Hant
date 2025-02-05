@@ -4,7 +4,7 @@ description: CRXDE Lite是AEM快速入門的一部分，可供您在瀏覽器中
 exl-id: 1581a7e5-6f84-4a45-8e8f-c83692ea077a
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1678'
 ht-degree: 1%
@@ -42,7 +42,7 @@ CRXDE Lite的使用者介面有許多部分且有許多功能。
 
 ### 頂端切換器列 {#top-switcher-bar}
 
-頂端切換器列可讓您在CRXDE Lite和[封裝管理員之間快速切換。](package-manager.md)
+頂端切換器列可讓您在CRXDE Lite和[封裝管理員](package-manager.md)之間快速切換。
 
 ### 節點路徑Widget {#node-path-widget}
 
@@ -183,7 +183,7 @@ CRXDE Lite的使用者介面有許多部分且有許多功能。
 若要建立具有CRXDE Lite的節點：
 
 1. 在瀏覽器中開啟CRXDE Lite。
-1. 在&#x200B;[**探索者窗格**&#x200B;中，](#explorer-pane)用滑鼠右鍵按一下您要建立新節點的節點，選取&#x200B;**建立**，然後選取&#x200B;**建立節點**。
+1. 在&#x200B;[**探索者窗格**](#explorer-pane)&#x200B;中，用滑鼠右鍵按一下您要建立新節點的節點，選取&#x200B;**建立**，然後選取&#x200B;**建立節點**。
 1. 輸入&#x200B;**名稱**&#x200B;並選取&#x200B;**型別**。
 1. 按一下&#x200B;**「確定」**。
 1. 按一下[儲存全部]按鈕&#x200B;**](#save-all-button)，將變更儲存在伺服器上。[**
@@ -201,7 +201,7 @@ CRXDE Lite的使用者介面有許多部分且有許多功能。
 若要使用CRXDE Lite建立屬性：
 
 1. 在瀏覽器中開啟CRXDE Lite。
-1. 在&#x200B;[**Explorer窗格**，](#explorer-pane)中，選取您要新增屬性的節點。
+1. 在&#x200B;[**Explorer窗格**](#explorer-pane)&#x200B;中，選取您要新增屬性的節點。
 1. 在底部窗格的&#x200B;[**屬性標籤**](#properties-tab)&#x200B;中，輸入&#x200B;**名稱**、**型別**&#x200B;和&#x200B;**值**。
 1. 按一下&#x200B;**新增**。
 1. 按一下[儲存全部]按鈕&#x200B;**](#save-all-button)，將變更儲存在伺服器上。[**
@@ -211,10 +211,10 @@ CRXDE Lite的使用者介面有許多部分且有許多功能。
 若要建立具有CRXDE Lite的檔案：
 
 1. 在瀏覽器中開啟CRXDE Lite。
-1. 在&#x200B;[**探索者窗格**&#x200B;中，](#explorer-pane)用滑鼠右鍵按一下您要建立檔案的元件，選取&#x200B;**建立**，然後選取&#x200B;**建立檔案**。
+1. 在&#x200B;[**Explorer窗格**](#explorer-pane)&#x200B;中，用滑鼠右鍵按一下您要建立檔案的元件，選取&#x200B;**建立**，然後選取&#x200B;**建立檔案**。
 1. 輸入包含副檔名的檔案&#x200B;**名稱**。
 1. 按一下&#x200B;**「確定」**。
-1. 新檔案會在&#x200B;[**編輯窗格**.](#edit-pane)中開啟為索引標籤
+1. 新檔案會在&#x200B;[**編輯窗格**](#edit-pane)&#x200B;中開啟為索引標籤。
 1. 編輯檔案。
 1. 按一下「[**儲存全部」按鈕**](#save-all-button)&#x200B;以儲存變更。
 

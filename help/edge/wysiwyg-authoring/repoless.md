@@ -4,7 +4,7 @@ description: 如果您有許多相似的網站，大部分外觀和行為相同�
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: a6bc0f35-9e76-4b5a-8747-b64e144c08c4
-source-git-commit: e7f7c169e7394536fc2968ecf1418cd095177679
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '971'
 ht-degree: 2%
@@ -21,7 +21,7 @@ ht-degree: 2%
 
 AEM支援從相同程式碼基底執行多個網站，而不需建立多個GitHub存放庫並在專用GitHub存放庫之外執行每個網站，同時保持同步。
 
-這個簡化的設定可免除程式碼復寫的需求，也稱為[「repoless」，](https://www.aem.live/docs/repoless)，因為除了您的第一個網站以外，其他網站不需要自己的GitHub存放庫。
+這個簡化的設定可免除程式碼復寫的需求，也稱為[「repoless」](https://www.aem.live/docs/repoless)，因為除了您的第一個網站以外，其他網站不需要自己的GitHub存放庫。
 
 如果您的專案需要重複使用跨網站程式碼的靈活性，您可以啟動該功能。
 
@@ -31,7 +31,7 @@ AEM支援從相同程式碼基底執行多個網站，而不需建立多個GitHu
 
 若要利用此功能，請確定您已完成下列操作。
 
-* 依照檔案[使用Edge Delivery Services進行WYSIWYG編寫的開發人員快速入門手冊，您的網站已完整設定。](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)
+* 依照檔案[使用Edge Delivery Services進行WYSIWYG編寫的開發人員快速入門手冊](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)，您的網站已完整設定。
 * 您至少要執行AEM as a Cloud Service 2024.08。
 
 您還需要要求Adobe為您設定下列專案。 透過您的Slack管道聯絡或提出支援問題以要求Adobe進行這些變更：
@@ -70,7 +70,7 @@ AEM支援從相同程式碼基底執行多個網站，而不需建立多個GitHu
 
 您需要建立網站設定，並將其新增至路徑對應。
 
-1. 在網站的根目錄建立新頁面，並選擇&#x200B;[**組態**&#x200B;範本。](/help/edge/wysiwyg-authoring/tabular-data.md#other)
+1. 在網站的根目錄建立新頁面，並選擇&#x200B;[**組態**&#x200B;範本](/help/edge/wysiwyg-authoring/tabular-data.md#other)。
    * 您可以讓設定保持空白，只保留預先定義的`key`和`value`欄。 您只需要建立它。
 1. 使用類似下列的cURL命令，在公用組態中建立與站台組態的對應。
 

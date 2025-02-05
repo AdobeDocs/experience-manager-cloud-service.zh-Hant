@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2021.5.0 版�
 exl-id: 3f9d7339-7e37-4702-821e-f2b03cd7e224
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1355'
-ht-degree: 43%
+ht-degree: 44%
 
 ---
 
@@ -70,7 +70,7 @@ ht-degree: 43%
 
 #### Dynamic Media的新增功能 {#what-is-new-dm}
 
-* 智慧型影像DPR （裝置畫素比）和網路頻寬最佳化可讓您在具有高解析度顯示器且網路頻寬受限的裝置上，有效率地提供最佳品質影像。 如需詳細資訊，請參閱[智慧型影像常見問題集](/help/assets/dynamic-media/imaging-faq.md)和[使用新一代影像格式WebP和AVIF的影像最佳化。](https://medium.com/adobetech/image-optimisation-with-next-gen-image-formats-webp-and-avif-248c75afacc4)
+* 智慧型影像DPR （裝置畫素比）和網路頻寬最佳化可讓您在具有高解析度顯示器且網路頻寬受限的裝置上，有效率地提供最佳品質影像。 如需詳細資訊，請參閱[智慧型影像常見問題集](/help/assets/dynamic-media/imaging-faq.md)和[使用新一代影像格式WebP和AVIF的影像最佳化](https://medium.com/adobetech/image-optimisation-with-next-gen-image-formats-webp-and-avif-248c75afacc4)。
 * 在Dynamic Media傳送中推出對新一代影像格式AVIF的支援（fmt URL修飾元）。
 
 ## [!DNL Adobe Experience Manager Forms] as a [!DNL Cloud Service] {#forms}

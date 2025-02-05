@@ -8,13 +8,13 @@ feature: Adaptive Forms
 role: User, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: d661f869f1264e4a2317692ab6fd22263c89e072
+exl-id: f0fec4a9-b214-4931-bf09-5898b082481e
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '2335'
 ht-degree: 1%
 
 ---
-
 
 # OSGi上以Forms為中心的工作流程 {#forms-centric-workflow-on-osgi}
 
@@ -78,8 +78,8 @@ AEM提供直覺式使用者介面，讓您使用提供的工作流程步驟建�
 1. 啟用電子郵件通知。 您可以在OSGi上設定以Forms為中心的工作流程，以傳送電子郵件通知給使用者或受指派人。 執行以下設定以啟用電子郵件通知：
 
    1. 前往`https://[server]:[port]/system/console/configMgr`的AEM設定管理員。
-   1. 開啟&#x200B;**[!UICONTROL 天CQ郵件服務]**&#x200B;設定。 指定&#x200B;**[!UICONTROL SMTP伺服器主機名稱]**、**[!UICONTROL SMTP伺服器連線埠、]**&#x200B;和&#x200B;**[!UICONTROL 「寄件者」位址]**&#x200B;欄位的值。 按一下&#x200B;**[!UICONTROL 儲存]**。
-   1. 開啟&#x200B;**[!UICONTROL Day CQ Link Externalizer]**&#x200B;設定。 在&#x200B;**[!UICONTROL 網域]**&#x200B;欄位中，指定本機、作者和發佈執行個體的實際主機名稱/IP位址和連線埠號碼。 按一下&#x200B;**[!UICONTROL 儲存]**。
+   1. 開啟&#x200B;**[!UICONTROL 天CQ郵件服務]**&#x200B;設定。 指定&#x200B;**[!UICONTROL SMTP伺服器主機名稱]**、**[!UICONTROL SMTP伺服器連線埠]**&#x200B;和&#x200B;**[!UICONTROL 「寄件者」位址]**&#x200B;欄位的值。 按一下「**[!UICONTROL 儲存]**」。
+   1. 開啟&#x200B;**[!UICONTROL Day CQ Link Externalizer]**&#x200B;設定。 在&#x200B;**[!UICONTROL 網域]**&#x200B;欄位中，指定本機、作者和發佈執行個體的實際主機名稱/IP位址和連線埠號碼。 按一下「**[!UICONTROL 儲存]**」。
 
 1. 建立工作流程階段。 一個工作流程可以有多個階段。 這些階段會顯示在AEM收件匣中，並報告工作流程的進度。
 
@@ -268,7 +268,7 @@ You can associate and execute a Forms-centric workflow on OSGi on submission of 
 You can use the Assign Task and Send Email steps of AEM Workflows to send an email. Perform the following steps to specify email servers and other configurations required to send email:
 
 1. Go to AEM configuration manager at `https://[server]:[port]/system/console/configMgr`.
-1. Open the **[!UICONTROL Day CQ Mail Service]** configuration. Specify a value for the **[!UICONTROL SMTP server host name]**, **[!UICONTROL SMTP server port,]** and **[!UICONTROL "From" address]** fields. Click **[!UICONTROL Save]**.
+1. Open the **[!UICONTROL Day CQ Mail Service]** configuration. Specify a value for the **[!UICONTROL SMTP server host name]**, **[!UICONTROL SMTP server port]**, and **[!UICONTROL "From" address]** fields. Click **[!UICONTROL Save]**.
 1. Open the **[!UICONTROL Day CQ Link Externalizer]** configuration. In the **[!UICONTROL Domains]** field, specify the actual hostname/IP address and port number for local, author, and publish instances. Click **[!UICONTROL Save]**. -->
 
 ### 清除工作流程例項 {#purge-workflow-instances}

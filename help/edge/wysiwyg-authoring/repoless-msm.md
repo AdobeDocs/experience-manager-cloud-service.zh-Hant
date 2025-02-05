@@ -4,7 +4,7 @@ description: 瞭解最佳實務建議，瞭解如何透過利用單一程式碼�
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: f6b861ed-18e4-4c81-92d2-49fadfe4669a
-source-git-commit: 5715a07dc3e90e3781afa8d837394533ba419483
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1261'
 ht-degree: 2%
@@ -26,7 +26,7 @@ ht-degree: 2%
 若要在重複使用案例中設定MSM，您必須先完成一些工作。
 
 * 本檔案假設您已根據[使用Edge Delivery Services進行WYSIWYG編寫的開發人員快速入門手冊](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)為專案建立網站。
-* 您必須已[啟用專案的重新導向功能。](/help/edge/wysiwyg-authoring/repoless.md)
+* 您必須已[啟用專案的重新導向功能](/help/edge/wysiwyg-authoring/repoless.md)。
 
 ## 使用案例 {#use-case}
 
@@ -55,9 +55,9 @@ ht-degree: 2%
 
 設定MSM重新導向使用案例有數個步驟。
 
-1. [更新AEM網站設定。](#update-aem-configurations)
-1. [為您的本地化頁面建立新的Edge Delivery Services網站。](#create-edge-sites)
-1. [為您本地化的網站更新AEM中的雲端設定。](#update-cloud-configurations)
+1. [更新AEM網站設定](#update-aem-configurations)。
+1. [為您的本地化頁面建立新的Edge Delivery Services網站](#create-edge-sites)。
+1. [在AEM中更新本地化網站的雲端設定](#update-cloud-configurations)。
 
 ### 更新AEM網站設定 {#update-aem-configurations}
 

@@ -8,10 +8,10 @@ exl-id: 831009b8-8e09-4b0f-b0fd-4e21221c1455
 solution: Experience Manager Sites
 feature: Translation
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '776'
-ht-degree: 100%
+ht-degree: 93%
 
 ---
 
@@ -104,6 +104,6 @@ AEM 自動為所有內容建立翻譯規則。要檢視這些規則：
 
 ## 其他資源 {#additional-resources}
 
-因為我們建議您檢閱文件「[翻譯內容](translate-content.md)」來繼續翻譯歷程的下個部分，所以提供以下其他選用資源，協助深入瞭解本文件提及的一些概念，但是這些並非繼續執行歷程的必要條件。
+我們建議您檢閱檔案[翻譯內容](translate-content.md)，以繼續翻譯歷程的下一部分，以下是一些其他選擇性資源，這些資源會更深入地研究本檔案中提到的一些概念，但並非繼續此歷程所必需的。
 
 * [識別要翻譯的內容](/help/sites-cloud/administering/translation/rules.md) - 了解翻譯規則如何識別需要翻譯的內容。

@@ -5,7 +5,7 @@ exl-id: 469e8151-8231-4ccc-b7f6-855545f87440
 solution: Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1250'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # 設定配置容器和配置模式 {#configuring-layout-container-and-layout-mode}
 
-[回應式佈局](/help/sites-cloud/authoring/page-editor/responsive-layout.md)是一種實現[回應式網頁設計的機制。](https://en.wikipedia.org/wiki/Responsive_web_design)這可讓內容作者建立網頁，這些網頁的版面配置和維度與其使用者使用的裝置有關。
+[回應式佈局](/help/sites-cloud/authoring/page-editor/responsive-layout.md)是一種實現[回應式網頁設計](https://en.wikipedia.org/wiki/Responsive_web_design)的機制。 這可讓內容作者建立根據使用者使用之裝置而具有版面和維度的網頁。
 
 AEM使用一組機製為頁面實現回應式佈局：
 
@@ -228,4 +228,4 @@ AEM使用LESS來產生必要CSS的部分，這些需要包含在您的專案中�
 
 ### 設定配置容器的格線 {#configure-the-grid-of-the-layout-container}
 
-您可以編輯您的頁面範本，設定配置容器[的每個特定執行個體可用的欄數。](/help/sites-cloud/authoring/page-editor/templates.md)
+您可以編輯您的頁面範本](/help/sites-cloud/authoring/page-editor/templates.md)，設定配置容器[的每個特定執行個體可用的欄數。

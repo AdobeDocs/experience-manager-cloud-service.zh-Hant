@@ -5,10 +5,10 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 384f8a1301ea488e0b2aa493389d090896fe3b33
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
-source-wordcount: '1378'
-ht-degree: 37%
+source-wordcount: '1370'
+ht-degree: 35%
 
 ---
 
@@ -25,11 +25,11 @@ Universal Editor 支援在任意實作中編輯任何方面的內容，以便提
 
 >[!NOTE]
 >
->本檔案假設您已熟悉如何存取和導覽通用編輯器。 如果您沒有，請參閱檔案[存取及導覽通用編輯器。](/help/sites-cloud/authoring/universal-editor/navigation.md)
+>本檔案假設您已熟悉如何存取和導覽通用編輯器。 如果沒有，請參閱[存取及導覽通用編輯器](/help/sites-cloud/authoring/universal-editor/navigation.md)。
 
 >[!TIP]
 >
->如需 Universal Editor 的更詳細介紹，請參閱 [Universal Editor 簡介](/help/implementing/universal-editor/introduction.md)文件。
+>如需Universal Editor的詳細介紹，請參閱[Universal Editor簡介](/help/implementing/universal-editor/introduction.md)。
 
 ## 編輯內容 {#editing-content}
 
@@ -39,9 +39,9 @@ Universal Editor 支援在任意實作中編輯任何方面的內容，以便提
 
 >[!TIP]
 >
->依預設，點選或按一下內容會選取內容以進行編輯。 如果您想透過下列連結導覽內容，請切換至[預覽模式。](/help/sites-cloud/authoring/universal-editor/navigation.md#preview-mode)
+>依預設，點選或按一下內容會選取內容以進行編輯。 如果您想透過下列連結導覽內容，請切換至[預覽模式](/help/sites-cloud/authoring/universal-editor/navigation.md#preview-mode)。
 
-根據您選取的內容，您可能有不同的就地編輯選項，而且您可能會針對[屬性面板中的內容提供其他資訊和選項。](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
+根據您選取的內容，您可能有不同的就地編輯選項，而且您可能會在[屬性面板](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)中針對內容提供額外的資訊和選項。
 
 ### 編輯純文字 {#edit-plain-text}
 
@@ -51,7 +51,7 @@ Universal Editor 支援在任意實作中編輯任何方面的內容，以便提
 
 薄的藍色輪廓會變成粗的藍色輪廓來指示選取，並且會出現游標。 進行變更，然後按下Enter/Return或在文字方塊外選取，以儲存變更。
 
-當您選取選取文字元件時，其詳細資訊會顯示在[屬性面板中。](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)您也可以在面板中編輯文字。
+當您選取選取文字元件時，其詳細資料會顯示在[屬性面板](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)中。 您也可以在面板中編輯文字。
 
 ![正在編輯屬性面板中的文字](assets/ue-editing-text-component-rail.png)
 
@@ -83,7 +83,7 @@ Universal Editor 支援在任意實作中編輯任何方面的內容，以便提
 
 ### 編輯媒體 {#edit-media}
 
-您可以在[屬性面板中檢視其詳細資料。](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
+您可以在[屬性面板](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)中檢視其詳細資料。
 
 ![編輯媒體](assets/ue-edit-media.png)
 
@@ -96,7 +96,7 @@ Universal Editor 支援在任意實作中編輯任何方面的內容，以便提
 
 ### 編輯內容片段 {#edit-content-fragment}
 
-如果您選取[內容片段，](/help/sites-cloud/administering/content-fragments/overview.md)，您可以在[屬性面板](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)中編輯其詳細資料。
+如果您選取[內容片段](/help/sites-cloud/administering/content-fragments/overview.md)，您可以在[屬性面板](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)中編輯其詳細資料。
 
 ![編輯內容片段](assets/ue-edit-cf.png)
 
@@ -163,7 +163,7 @@ Universal Editor 支援在任意實作中編輯任何方面的內容，以便提
 
 ### 將容器中的元件重新排序 {#reordering-components}
 
-1. 如果尚未變成[內容樹模式，](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode)切換至該模式。
+1. 如果尚未處於[內容樹狀結構模式](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode)，請切換至該模式。
 1. 在內容樹或編輯器中選取容器元件。
 1. 選取容器的>形箭號圖示，展開內容樹狀結構中的內容。
 1. 拖曳容器內的元件旁的手柄圖示證明您可以將它們重新排序。拖曳元件，在容器內將它們重新排序。
@@ -182,7 +182,7 @@ Universal Editor 支援在任意實作中編輯任何方面的內容，以便提
 
 內容編輯完成後，您通常會希望瀏覽其內容，以查看它在其他頁面內容中的樣子。在[預覽模式](/help/sites-cloud/authoring/universal-editor/navigation.md#preview-mode)中，您可以點選連結，像讀者一樣瀏覽您的內容。內容在編輯器中呈現的樣子就是將會發佈的樣子。
 
-在預覽模式中，點選或按一下內容的反應就像對內容的讀者一樣。 若要選取要編輯的內容，請切換出[預覽模式。](/help/sites-cloud/authoring/universal-editor/navigation.md#preview-mode)
+在預覽模式中，點選或按一下內容的反應就像對內容的讀者一樣。 若要選取要編輯的內容，請切換出[預覽模式](/help/sites-cloud/authoring/universal-editor/navigation.md#preview-mode)。
 
 ## 其他資源 {#additional-resources}
 
@@ -204,4 +204,4 @@ Universal Editor 支援在任意實作中編輯任何方面的內容，以便提
 
 使用通用編輯器，您只需更新內容即可取消內容的繼承。 編輯器會自動停用該頁面上作者所做所有變更的繼承，以確保在從Blueprint同步更新時保留修改的內容。
 
-如需有關使用通用編輯器繼承如何運作的詳細資訊，請參閱檔案： [通用編輯器中的內容繼承。](/help/sites-cloud/authoring/universal-editor/inheritance.md)
+如需有關使用通用編輯器繼承如何運作的詳細資訊，請參閱[通用編輯器中的內容繼承](/help/sites-cloud/authoring/universal-editor/inheritance.md)。

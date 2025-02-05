@@ -5,7 +5,7 @@ exl-id: 7f2571d6-b847-4cce-8e94-94ba0d2e04a5
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '827'
 ht-degree: 5%
@@ -24,7 +24,7 @@ ht-degree: 5%
 
 * [僅限內容](#content-only)
 * [內容樹狀結構](#content-tree)
-* [時間表](#timeline)
+* [時間軸](#timeline)
 * [參考](#references)
 * [網站](#site)
 * [篩選條件](#filter)
@@ -60,7 +60,7 @@ ht-degree: 5%
 >* 選取階層檢視中的專案後，可使用方向鍵來快速瀏覽階層。
 >* 如需詳細資訊，請參閱[鍵盤快速鍵](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md)。
 
-## 時間表 {#timeline}
+## 時間軸 {#timeline}
 
 時間軸可用於檢視影響所選資源的事件。 您也可以用它來啟動某些事件，例如工作流程或版本。
 
@@ -108,11 +108,11 @@ ht-degree: 5%
 
 ## 網站 {#site}
 
-側面板的&#x200B;**網站**&#x200B;檢視會顯示使用網站範本建立的網站[的詳細資料。](/help/sites-cloud/administering/site-creation/create-site.md)
+側面板的&#x200B;**網站**&#x200B;檢視會顯示使用網站範本](/help/sites-cloud/administering/site-creation/create-site.md)建立的網站[的詳細資料。
 
 ![網站面板](assets/console-side-panel-site-paenl.png)
 
-請參閱檔案[使用網站面板管理您的網站主題](/help/sites-cloud/administering/site-creation/site-rail.md)，以取得有關如何使用面板管理網站[主題的詳細資訊。](/help/sites-cloud/administering/site-creation/site-themes.md)。
+請參閱檔案[使用網站面板管理您的網站主題](/help/sites-cloud/administering/site-creation/site-rail.md)，以取得有關如何使用面板管理網站[主題](/help/sites-cloud/administering/site-creation/site-themes.md)的詳細資訊。
 
 如果您尚未設定前端管道以啟用主題型網站建立，側面板將提供該選項。
 

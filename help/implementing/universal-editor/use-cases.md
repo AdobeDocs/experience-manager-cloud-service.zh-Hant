@@ -4,7 +4,7 @@ description: 瞭解Universal Editor的主要使用案例，以及如何最好地
 exl-id: 398ad0e2-c299-4c49-9784-05c84c67bec2
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '858'
 ht-degree: 0%
@@ -69,7 +69,7 @@ Universal Editor的運作方式如下。
 1. 內容作者可在直覺式的WYSIWYG介面中編輯頁面內容，就地編輯。
 1. Universal Editor會自動將變更儲存回資料來源。
 
-如果您想深入瞭解通用編輯器的架構，請參閱檔案[通用編輯器架構。](/help/implementing/universal-editor/architecture.md)
+如果您想深入瞭解通用編輯器的架構，請參閱檔案[通用編輯器架構](/help/implementing/universal-editor/architecture.md)。
 
 ## Universal Editor概念 {#concepts}
 

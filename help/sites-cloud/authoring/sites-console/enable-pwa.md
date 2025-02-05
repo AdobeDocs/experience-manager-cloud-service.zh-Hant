@@ -5,7 +5,7 @@ exl-id: 1552a4ce-137a-4208-b7f6-2fc06db8dc39
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 190e68ebcd3c2a7ba7b995690c802a04728e6962
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1926'
 ht-degree: 0%
@@ -29,7 +29,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->已棄用AEM Sites [的漸進式網頁應用程式(PWA)功能。](/help/release-notes/release-notes-cloud/release-notes-current.md#pwa-features)
+>AEM Sites [的漸進式網頁應用程式(PWA)功能已過時](/help/release-notes/release-notes-cloud/release-notes-current.md#pwa-features)。
 >
 >使用此功能的現有專案將繼續獲得支援，但新專案不應使用此功能。
 
@@ -46,7 +46,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->漸進式網頁應用程式是一項不斷發展的技術，而且支援本機應用程式安裝和其他功能[取決於您使用的瀏覽器。](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Tutorials/js13kGames/Installable_PWAs#summary)
+>漸進式網頁應用程式是一項不斷發展的技術，而且支援本機應用程式安裝和其他功能[取決於您使用的瀏覽器](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Tutorials/js13kGames/Installable_PWAs#summary)。
 
 ## 先決條件 {#prerequisites}
 
@@ -63,9 +63,9 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Adobe不建議在自訂元件或未從核心元件[延伸的元件上使用PWA功能。](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html)
+>Adobe不建議在自訂元件或未從核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html)延伸的[元件上使用PWA功能。
 <!--
-Your components need to include the [manifest files](https://developer.mozilla.org/en-US/docs/Web/Manifest) and [service worker,](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API) which supports the PWA features.
+Your components need to include the [manifest files](https://developer.mozilla.org/en-US/docs/Web/Manifest) and [service worker](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API), which supports the PWA features.
 
  To do this, the developer adds the following link to the `customheaderlibs.html` file of your page component.
 
@@ -134,11 +134,11 @@ RewriteCond %{REQUEST_URI} (.html|.jpe?g|.png|.svg|.webmanifest)$
 
 1. 選取「**儲存並關閉**」。
 
-您的網站現在已設定，您可以[將它安裝為本機應用程式。](#using-pwa-enabled-site)
+您的網站現在已設定，您可以[將它安裝為本機應用程式](#using-pwa-enabled-site)。
 
 ## 使用已啟用PWA的網站 {#using-pwa-enabled-site}
 
-現在您已將[設定您的網站以支援PWA，](#enabling-pwa-for-your-site)您可以親自體驗它。
+現在您已將[設定您的網站以支援PWA](#enabling-pwa-for-your-site)，您可以自行體驗。
 
 1. 在[支援的瀏覽器](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Tutorials/js13kGames/Installable_PWAs#summary)中存取網站。
 1. 您會在瀏覽器的位址列看到新圖示，表示網站可安裝為本機應用程式。
@@ -149,7 +149,7 @@ RewriteCond %{REQUEST_URI} (.html|.jpe?g|.png|.svg|.webmanifest)$
 
 ## 詳細選項 {#detailed-options}
 
-以下章節提供當[設定您的網站以進行PWA時，可用選項的詳細資訊。](#enabling-pwa-for-your-site)
+以下章節提供當[設定您的網站以進行PWA](#enabling-pwa-for-your-site)時可用的選項的詳細資訊。
 
 ### 設定安裝體驗 {#configure-installable-experience}
 
