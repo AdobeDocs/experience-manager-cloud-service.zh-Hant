@@ -5,13 +5,13 @@ feature: Release Information
 role: Admin
 hide: true
 hidefromtoc: true
-source-git-commit: 4ae213f212864d83bf6f999de616c6e3376c3f63
+exl-id: 7656d6fb-8727-491d-8216-7770b78ff854
+source-git-commit: 32558fc6cd0e325132230b09f7f00a0dfaf7af0d
 workflow-type: tm+mt
-source-wordcount: '306'
-ht-degree: 2%
+source-wordcount: '366'
+ht-degree: 3%
 
 ---
-
 
 # 互動式通訊
 
@@ -45,11 +45,22 @@ ht-degree: 2%
 | **雲端整合** | 直接在AEM Forms中編輯檔案as a Cloud Service |
 
 
-## 快速入門
+## 上線
 
 1. **要求存取權**：從您的正式地址傳送電子郵件[aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)
 2. **系統管理員安裝程式**：Adobe將啟用存取並提供系統管理員許可權
 3. **開始建立**：使用我們的[直覺式編輯器](https://video.tv.adobe.com/v/3444094/)，從您的第一封通訊開始。
+
+## 常見問題
+
+**問：我可以將現有的XDP匯入互動式通訊編輯器嗎？**
+可以，您可以匯入現有的XDP並將其用作起點。 匯入過程中會反白任何不支援的功能。
+
+**問：互動式通訊編輯器是否適用於內部部署？**
+否，此編輯器僅適用於Formsas a Cloud Service部署。
+
+
+
 
 
 
@@ -128,4 +139,3 @@ With Interactive Communication, you can integrate PDF documents into existing wo
 * 互動式通訊編輯器逐步解說
 * 建立片段
 * 預覽和測試通訊
-
