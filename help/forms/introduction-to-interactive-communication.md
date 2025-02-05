@@ -5,13 +5,13 @@ feature: Release Information
 role: Admin
 hide: true
 hidefromtoc: true
-exl-id: 7656d6fb-8727-491d-8216-7770b78ff854
-source-git-commit: 32558fc6cd0e325132230b09f7f00a0dfaf7af0d
+source-git-commit: a771aa7e683cfbcacc8a9d5765c63d50169a2756
 workflow-type: tm+mt
-source-wordcount: '366'
+source-wordcount: '332'
 ht-degree: 3%
 
 ---
+
 
 # 互動式通訊
 
@@ -21,11 +21,7 @@ ht-degree: 3%
 
 從產生帳戶報表的金融機構到精簡福利通知的政府機構，互動式通訊是製作高品質、安全且符合法律規範的信件，以及輕鬆有效率的首選工具。
 
->[!VIDEO](https://video.tv.adobe.com/v/3444094/)
-
-<!-- ![Interactive Communication Editor](/help/assets/ic-editor.png)
-
--->
+![互動式通訊編輯器](/help/forms/assets/ic-editor.png)
 
 ## 核心功能
 
@@ -47,17 +43,9 @@ ht-degree: 3%
 
 ## 上線
 
-1. **要求存取權**：從您的正式地址傳送電子郵件[aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)
-2. **系統管理員安裝程式**：Adobe將啟用存取並提供系統管理員許可權
-3. **開始建立**：使用我們的[直覺式編輯器](https://video.tv.adobe.com/v/3444094/)，從您的第一封通訊開始。
+可在Formsas a Cloud Service部署的搶先存取計畫下使用的互動式通訊編輯器。 若要透過電子郵件要求存取您的組織ID，以及從您的正式地址將Formsas a Cloud Service部署的方案詳細資料傳送至[aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)。 取得存取權後，開始[建立您的第一封郵件](/help/forms/create-your-first-communication.md)
 
-## 常見問題
 
-**問：我可以將現有的XDP匯入互動式通訊編輯器嗎？**
-可以，您可以匯入現有的XDP並將其用作起點。 匯入過程中會反白任何不支援的功能。
-
-**問：互動式通訊編輯器是否適用於內部部署？**
-否，此編輯器僅適用於Formsas a Cloud Service部署。
 
 
 
@@ -134,8 +122,10 @@ With Interactive Communication, you can integrate PDF documents into existing wo
 
 ## 下一步
 
-* 建立您的第一封通訊
+* [建立您的第一封通訊](/help/forms/create-your-first-communication.md)
+* [常見問題](/help/forms/interactive-communications-faq.md)
 * 熟悉術語和概念
 * 互動式通訊編輯器逐步解說
 * 建立片段
 * 預覽和測試通訊
+
