@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的運作方式以及該軟體可以為您做哪些事。
 breadcrumb-title: 使用手冊
 user-guide-title: 'AEM as a Cloud Service '
-source-git-commit: 4ae213f212864d83bf6f999de616c6e3376c3f63
+source-git-commit: e5a318bf19fd63767c486e5ad0843a658130c8a9
 workflow-type: tm+mt
 source-wordcount: '6026'
 ht-degree: 99%
@@ -855,7 +855,7 @@ ht-degree: 99%
       + [最適化表單關鍵字](/help/forms/adaptive-forms-keywords.md)
       + [預覽表單](/help/forms/previewing-forms.md)
    + 互動式通訊{#interactive-communocation}
-+[互動式通訊簡介](/help/forms/introduction-to-interactive-communication.md)
+      + [互動式通訊簡介](/help/forms/introduction-to-interactive-communication.md)
    + 以 Forms 為中心的工作流程 {#create-form-centric-workflows}
       + [以 Forms 為中心的工作流程簡介](/help/forms/aem-forms-workflow.md)
       + [在工作流程中使用以 Forms 為中心的步驟 + 步驟參考](/help/forms/aem-forms-workflow-step-reference.md)
