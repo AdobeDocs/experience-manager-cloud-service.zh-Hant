@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的目前維�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: a3c414f9b5e575856a942e02661e8c70a7083495
+source-git-commit: 77d8ebeaa3914f4a91d2cf27ccc5b048e64d6b38
 workflow-type: tm+mt
-source-wordcount: '541'
-ht-degree: 89%
+source-wordcount: '887'
+ht-degree: 20%
 
 ---
 
@@ -16,69 +16,89 @@ ht-degree: 89%
 
 下節是 Experience Manager as a Cloud Service 目前維護版本的技術版本發行說明。
 
-## 版本 19149 {#19149}
+## 版本 19352 {#19352}
 
-下面是 19149 維護版本持續改善的內容，該版本於 2025 年 1 月 21 日公開發佈。前一個維護版本是版本 18751。
+以下摘要說明維護版本19352數的持續改善，該版本於2025年2月5日公開發佈。 前一個維護版本是版本 19149。
 
-2025.1.0 功能啟用將提供此維護版本的完整功能集。如需詳細資訊，請參閱 [Experience Manager 發行藍圖](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)。
+2025.2.0 功能啟用將提供此維護版本的完整功能集。如需詳細資訊，請參閱 [Experience Manager 發行藍圖](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)。
 
-### 增強功能 {#enhancements-19149}
+### 增強功能 {#enhancements-19352}
 
-* ASSETS-45286：顯示下載封存同步工作的精細進度。
-* ASSETS-46296：資產選擇器中支援動態媒體範本。
-* ASSETS-44796：DAM 非同步資產工作的觸發資產事件。
+* Forms-13998：新增摺疊式功能表元件。
+* Forms-17913：新增無線電群組的卡片變體。
+* Forms-17333：在AEM表單提交中啟用HTML電子郵件範本。
+* Forms-17702：啟用將Output Sync API中產生的PDF上傳至Azure Blob儲存體。
+* SITES-28282：使用通用編輯器的Edge Delivery：提供基本路徑、網站名稱和組織，作為任何頁面的頁面資訊。
+* SITES-27055：使用通用編輯器的Edge Delivery：支援反向Proxy servlet中的查詢引數。
+* SITES-26796：使用通用編輯器的Edge Delivery：支援分類試算表的自訂欄。
+* SITES-26087：使用通用編輯器的Edge Delivery：支援試算表的CSV匯出。
+* SITES-26265：使用通用編輯器的Edge Delivery：顯示要在設定UI中與Edge Delivery整合的TA帳戶。
+* SITES-20372：使用通用編輯器的Edge Delivery：啟用試算表的基本MSM使用案例。
+* SITES-26681：使用通用編輯器的Edge Delivery：支援作者上分類試算表的？sheet=引數。
+* SITES-26479： [結構描述]內容片段模型排程發佈狀態端點。
+* SITES-25944： [即時副本概觀]新增狀態「即時副本為最新且繼承受限」。
+* SITES-28713： [V2]新增結構化資料支援至內容刮刀。
+* SITES-27896：在通知時自動開啟CommentsTab。
+* SITES-26720：不應允許使用者從資產選擇器中選擇整個集合。
+* SITES-27875：預設可移動容器內的任何可編輯專案。
+* SITES-28340：Dark Alley通用編輯器服務外掛程式。
+* SITES-26098：在發佈Content-Fragment時避免發佈參考頁面的可能性。
+* SITES-27789：在DOM中支援資料屬性data-aue-component。
+* SITES-25997：增強變數以支援修改日期。
+* SITES-28023：遠端資產參考的GraphQL輸出（存放庫+資產ID）。
+* SITES-26058：內容片段模型已排程發佈狀態端點。
+* SITES-25108：UUID參考的模型移轉。
+* SITES-26630：多個內容片段的內容片段已排程發佈狀態端點。
+* SITES-23432：改善刪除參考功能。
+* SITES-25797：支援外部資產參考 — GraphQL。
+* SITES-17514：刪除端點增強功能以取消發佈Content-Fragment。
+* SITES-14633：安裝前驗證內容片段模型建立裝載 — 試執行。
 
-### 已修正的問題 {#fixed-issues-19149}
+### 已修正的問題 {#fixed-issues-19352}
 
-* GRANITE-55074：確保在錯誤回應上設定 CORS 回應標頭。
-* ASSETS-43755：大量資產相關的擴充性改善。
-* ASSETS-45399：建立資產即時副本後重新導向至 Assets Console。
-* ASSETS-45462：自訂資料夾縮圖的瀏覽器快取問題。
-* ASSETS-46398：隱藏 DM 範本的下載和重新處理動作。
-* ASSETS-44484：重新儲存所連接資產設定的問題。
-* ASSETS-44122：在複製到目前資料夾時，非同步複製資源工作不會重新命名目標資料夾。
-* ASSETS-44463：成功匯出中繼資料時，看不到下載 CSV 按鈕。
-* ASSETS-45134：移動有目標標題的工作會覆寫所有資料夾標題。
-* ASSETS-45137：與透過資產視圖大量上傳發生衝突。
-* ASSETS-45758：新增關係後，資產關係會出現無限繁忙/載入動畫。
-* ASSETS-44148：AEM 中的 NODE_MOVED 事件可能會導致記錄出現虛假 NPE。
-* ASSETS-28607：設定自訂影片縮圖時出現 JS 錯誤。
-* GRANITE-55781：改善 Adob&#x200B;&#x200B;e Developer Console 和 AEM 之間的群組同步。「[使用者群組和產品設定檔同步的變更](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/security/changes-in-user-group-and-product-profile-synchronization)」內的更多詳細資訊。
-* GRANITE-55754：確保 SDK 啟動指令碼支援 Java 21。
-* GRANITE-54248：無法捲動大型資源資料夾中的所有項目。
-* SCRNS-4597：搜尋結果清單視圖改善。
+* SITES-28415：使用通用編輯器的Edge Delivery：修正試算表的「開啟屬性」按鈕。
+* SITES-26669：使用通用編輯器的Edge Delivery：修正以試算表BOM上傳以UTF-8編碼的CSV檔案時的問題。
+* SITES-26543：使用通用編輯器的Edge Delivery：修正沒有模型呈現錯誤標籤的空白區塊。
+* SITES-26857：使用通用編輯器的Edge Delivery：針對檔案型設定，修正UI中顯示的網站驗證權杖。
+* SITES-26662：使用通用編輯器的Edge Delivery：修正區分大小寫的大量中繼資料的問題。
+* SITES-28133： Publish若設為「預覽」，導致內容可用於生產環境。
+* SITES-27187：排程的頁面/資產啟用，包括參考（實驗）未命中發佈參考。
+* SITES-27264： 2個與Content-Fragment-LiveCopy-Creation相關的Selenium測試在主版上一致失敗。
+* SITES-26559：將內容片段模型的查詢釘選到cqPageLucene索引。
+* SITES-24469：無法透過鍵盤存取互動式元素。
+* SITES-24518：「父參照」表格中的「名稱」和「模型」按鈕無法使用鍵盤。
+* SITES-27937：更新模型後，UISchema限制會設定為null。
+* SITES-27852：模型UISchema缺少分類。
+* SITES-27904：完整投影的清單/搜尋內容片段模型中缺少MetadataSchema。
+* SITES-26827：列出片段最後會進入無限回圈。
+* SITES-27678： [效能]防止不必要擷取_references。
+* SITES-27589：具有多個內容/片段參考欄位的內容片段模型的UUID升級失敗。
+* SITES-26679：取消發佈內容片段模型應僅驗證已發佈的引用。
+* SITES-26666：referencesTree和參照端點傳回不同的結果。
+* SITES-26499：標籤欄位值在GET片段中的順序錯誤，且PATCH會隨機排列順序。
+* SITES-26585：修正結構描述中的小型說明錯誤。
+* SITES-26647：非管理員使用者的刪除端點和UnpublishFragments參考驗證可能會失敗。
+* SITES-26458： [搜尋內容片段模型]依復寫狀態修正篩選。
+* SITES-23513： [Content-Fragment Model Editor] 「Fragment Reference」 — 「Allowed Content Fragment Model」屬性的驗證失敗。
+* SITES-26575：從預覽中取消發佈片段應該會更新previewStatus。
+* SITES-26571：啟用FT_SITES-12435時無法儲存頁面參考。
+* SITES-26660：當@ContentType為「字串」型別時，內容片段版本比較可能會中斷。
+* SITES-26626：數字和布林值欄位上缺少customErrorMessage。
+* SITES-26268：如果在建立片段時參考無效，則會傳回錯誤的狀態代碼。
 
-
-### 已知問題 {#known-issues-19149}
+### 已知問題 {#known-issues-19352}
 
 無。
 
-### 已過時的功能和 API {#deprecated-19149}
+### 已過時的功能和 API {#deprecated-19352}
 
- [已過時和移除的功能和 API](/help/release-notes/deprecated-removed-features.md) 文件中詳細介紹了 AEM as a Cloud Service 已過時和移除的功能和 API。
+[「已過時和已移除的功能及 API」](/help/release-notes/deprecated-removed-features.md)文件中詳細介紹 AEM as a Cloud Service 中已過時和已移除的功能及 API。
 
-#### 使用者群組和產品設定檔同步的變更
+### 安全性修正 {#security-19352}
 
-使用 Adob&#x200B;&#x200B;e Admin Console 進行權限管理時，不得使用下列群組，因為這些群組將不再同步至 AEM：
-* 以 _GROUP_NAME_SUFFIX 結尾的 AEM 群組。
-* 來自其他環境、程式或產品的產品設定檔。
+AEM as a Cloud Service 專門負責將您的平台的安全性與效能最佳化。此維護版本解決了 36 個已確認的漏洞，從而強化我們提供健全系統保護的承諾。
 
-若要了解更多詳情，請查看「[使用者群組和產品設定檔同步的變更](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/security/changes-in-user-group-and-product-profile-synchronization)」。
-
-#### 棄用SPA編輯器 {#deprecate-spa-editor}
-
-[自2025.1.0版開始的新專案已棄用SPA編輯器](/help/implementing/developing/hybrid/introduction.md)。SPA編輯器仍支援現有專案，但不應用於新專案。
-
-在AEM中管理Headless內容的首選編輯器包括：
-
-* [用於視覺化編輯的通用編輯器](/help/edge/wysiwyg-authoring/authoring.md)。
-* [用於表單式編輯的內容片段編輯器](/help/assets/content-fragments/content-fragments-managing.md)。
-
-### 安全性修正 {#security-19149}
-
-AEM as a Cloud Service 專門負責將您的平台的安全性與效能最佳化。此維護版本解決了 4 個已確認的漏洞，強化我們提供健全系統保護的承諾。
-
-### 內嵌技術 {#embedded-tech-19149}
+### 內嵌技術 {#embedded-tech-19352}
 
 | 技術 | 版本 | 連結 |
 |---|---|---|
