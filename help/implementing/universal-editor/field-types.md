@@ -4,7 +4,7 @@ description: 透過範例瞭解通用編輯器可在屬性面板中編輯的欄�
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: f6ae3160fc2f12519f840f646f852169b2dcb57c
+source-git-commit: 2e22a2570a11df8d5f82037414f689f20b6fdb94
 workflow-type: tm+mt
 source-wordcount: '1343'
 ht-degree: 12%
@@ -158,7 +158,10 @@ AEM內容元件型別會啟用AEM內容選擇器，其可用於選取任何AEM�
       "name": "reference",
       "value": "",
       "label": "AEM Content Picker",
-      "valueType": "string"
+      "valueType": "string",
+      "validation": {
+            "rootPath": "/content/refresh"
+        }
     }
   ]
 }
@@ -332,7 +335,10 @@ AEM內容元件型別會啟用AEM內容選擇器，其可用於選取任何AEM�
         "name": "picker",
         "label": "Content Fragment Picker",
         "valueType": "string",
-        "variationName": "contentFragmentVariation"
+        "variationName": "contentFragmentVariation",
+        "validation": {
+            "rootPath": "/content/refresh"
+        }
       }
     ]
   }
