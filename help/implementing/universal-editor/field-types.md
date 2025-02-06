@@ -4,9 +4,9 @@ description: 透過範例瞭解通用編輯器可在屬性面板中編輯的欄�
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: a27da2d6d675d68d69071d0b393ad5e0f82bb7ae
 workflow-type: tm+mt
-source-wordcount: '1343'
+source-wordcount: '1353'
 ht-degree: 12%
 
 ---
@@ -305,11 +305,13 @@ AEM內容元件型別會啟用AEM內容選擇器，其可用於選取任何AEM�
 
 #### 內容片段 {#content-fragment}
 
-內容片段選擇器可用來選取[內容片段](/help/sites-cloud/authoring/fragments/content-fragments.md)及其變數（如果需要）。 它提供額外的設定和驗證。
+內容片段選擇器可用來選取[內容片段](/help/sites-cloud/authoring/fragments/content-fragments.md)及其變數（如果需要）。 它提供額外設定。
 
 | 設定 | 數值類型 | 說明 | 必填 |
 |---|---|---|---|
 | `variationName` | `string` | 儲存所選變數的變數名稱。 如果未定義，則不會顯示變數選擇器 | 否 |
+
+此外，還提供其他驗證型別。
 
 | 驗證類型 | 數值類型 | 說明 | 必填 |
 |---|---|---|---|
@@ -444,11 +446,13 @@ AEM內容元件型別會啟用AEM內容選擇器，其可用於選取任何AEM�
 
 #### 體驗片段 {#experience-fragment}
 
-體驗片段選擇器可用來選取[體驗片段](/help/sites-cloud/authoring/fragments/experience-fragments.md)及其變數（如果需要）。 它提供額外的設定和驗證。
+體驗片段選擇器可用來選取[體驗片段](/help/sites-cloud/authoring/fragments/experience-fragments.md)及其變數（如果需要）。 它提供額外設定。
 
 | 設定 | 數值類型 | 說明 | 必填 |
 |---|---|---|---|
 | `variationName` | `string` | 儲存所選變數的變數名稱。 如果未定義，則不會顯示變數選擇器 | 否 |
+
+此外，還提供其他驗證型別。
 
 | 驗證類型 | 數值類型 | 說明 | 必填 |
 |---|---|---|---|
