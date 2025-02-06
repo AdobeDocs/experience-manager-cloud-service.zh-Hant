@@ -3,12 +3,13 @@ title: 互動式通訊簡介
 description: 透過AEM Forms互動式通訊，輕鬆設計動態的資料導向通訊
 feature: Release Information
 role: Admin
-source-git-commit: f7aa50d8a2fa80489c56571caa9a75bc50715368
+source-git-commit: ae64d8acac3dee938db8ecbc1c8f5c9149b70365
 workflow-type: tm+mt
-source-wordcount: '306'
+source-wordcount: '313'
 ht-degree: 2%
 
 ---
+
 
 # 互動式通訊
 
@@ -18,11 +19,7 @@ ht-degree: 2%
 
 從產生帳戶報表的金融機構到精簡福利通知的政府機構，互動式通訊是製作高品質、安全且符合法律規範的信件，以及輕鬆有效率的首選工具。
 
->[!VIDEO](https://video.tv.adobe.com/v/3444094/)
-
-<!-- ![Interactive Communication Editor](/help/assets/ic-editor.png)
-
--->
+![互動式通訊編輯器](/help/forms/assets/ic-editor.png)
 
 ## 核心功能
 
@@ -42,86 +39,20 @@ ht-degree: 2%
 | **雲端整合** | 直接在AEM Forms中編輯檔案as a Cloud Service |
 
 
-## 快速入門
+## 上線
 
-1. **要求存取權**：從您的正式地址傳送電子郵件[aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)
-2. **系統管理員安裝程式**：Adobe將啟用存取並提供系統管理員許可權
-3. **開始建立**：使用我們的[直覺式編輯器](https://video.tv.adobe.com/v/3444094/)，從您的第一封通訊開始。
+可在Formsas a Cloud Service部署的搶先存取計畫下使用的互動式通訊編輯器。 若要透過電子郵件要求存取您的組織ID，以及從您的正式地址將Formsas a Cloud Service部署的方案詳細資料傳送至[aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)。 取得存取權後，開始[建立您的第一封通訊](https://video.tv.adobe.com/v/3444094/)。
 
-
-
-<!-- 
-
-
-The Interactive Communication editor runs in any modern browser. It can be used to: 
-
-* generate dynamic data-driven documents or correspondences and customized business documents or correspondences for print, web, or archival. 
-
-* develop PDF documents for integration into existing workflows by binding communications to adaptive forms, XML schemas, XML sample files, databases, and web services. 
-
-* integrate business data and render communications as a number of file types, including Adobe PDF, HTML, and printing for PCL, Adobe PostScript&reg; and Zebra (ZPL) printers.
-
-* create interactive data capture applications by leading users through a series of visually appealing and streamlined panels, improving usability and reducing data entry errors.
-
-## Key Features of the editor 
-
-* **User-Friendly Interface**: The Interactive Communication editor features a point-and-click design tool that is easy to use, allowing designers to create professional communications without extensive technical knowledge.
-
-* **Design Flexibility**: Users can design communications that match both paper and digital formats, ensuring consistency and compliance with legislative requirements.
-
-* **Data Integration**: The tool seamlessly connects communication fields to various data sources, including XML schemas, sample files, databases, and web services.
-
-* **Logic Definition**: Designers can define intricate logic within their communications, enhancing functionality and interactivity. 
-
-* **Communication Creation**: Create a communication from scratch or from a template, offering flexibility and efficiency in document generation.
-
-* **Rich Media Integration**: Add text, images, and art to your communications, creating visually appealing and engaging communication.
-
-* **Seamless Editing**: Edit your communication documents saved in AEM Forms as a Cloud Service, ensuring easy access and continuous updates.
-
-* **Change Tracking**: Track and review changes, maintaining a clear record of document modifications and ensuring version control.
-
-
-![Output Formats and Usages](/help/assets/interactive-communication.png){align="center"}
-
-## Usage across AEM Forms
-
-Documents, templates, or designs created in Interactive Communication editor offer several key applications:
-
-| **Usage**                                      | **Description**                                                                 |
-|-------------------------------------------------|---------------------------------------------------------------------------------|
-| PDF Document or Correspondence Creation                          | Used to generate PDF documents or correspondence for various business needs.                      |
-| Document of Record Templates                   | Serves as custom templates for Documents of Record.                    |
-| AEM Forms Communication APIs                   | Used as a template for various AEM Forms Communication APIs for seamless integration and automation. |
-
-
-## Onboarding
-
-The Interactive Communication editor is available for free to AEM Forms as a Cloud Service customers. You can write to mailto:aem-forms-ea@adobe.com from your official address to request access.
-
-Adobe enables access for your organization and provide required privileges to the person designated as administrator in your organization. 
-
-## Supported languages 
-
-You can use the editor to create communication in languages of your choice. You can also use custom fonts in a communication. 
-
-
-<!-- Communications that are created in Interactive Communication Editor can be merged with business data and rendered as a number of file types, including Adobe PDF, HTML, and printing for PCL, Adobe PostScript&reg; and Zebra (ZPL) printers.
-
-Communication author can fill fields of a communication to personalize it for a reciever and print it, or print and fill the communication by hand. 
-
-Communication developers can also use Interactive Communication Editor to create applications that generate dynamic, data-driven documents and produce customized business documents for print, web, or archival. 
-
-Using communication designs, developers can create, interactive data capture applications by leading users through a series of visually appealing and streamlined panels, improving usability and reducing data entry errors. 
-
-You can also build and maintain data capture solutions that read from, validate against, and add to corporate data sources. 
-
-With Interactive Communication, you can integrate PDF documents into existing workflows by binding forms to XML schemas, XML sample files, databases, and web services. Forms and documents that are created in Designer can be merged with business data and rendered as a number of file types, including Adobe PDF, HTML, and printing for PCL, Adobe PostScript&reg; and Zebra (ZPL) printers. -->
 
 ## 下一步
 
 * 建立您的第一封通訊
-* 熟悉術語和概念
-* 互動式通訊編輯器逐步解說
-* 建立片段
-* 預覽和測試通訊
+* 常見問題
+
+<!-- 
+* Familiarize yourself with terminology and concepts
+* Walkthrough of interactive communications editor
+* Create a fragment
+* Preview and test a correspondence
+
+-->

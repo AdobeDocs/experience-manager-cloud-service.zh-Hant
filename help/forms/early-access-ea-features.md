@@ -6,9 +6,9 @@ Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: 3bd7b574b34d09b3a205cf72b307d459efc00eab
+source-git-commit: ae64d8acac3dee938db8ecbc1c8f5c9149b70365
 workflow-type: tm+mt
-source-wordcount: '1998'
+source-wordcount: '2056'
 ht-degree: 26%
 
 ---
@@ -111,7 +111,19 @@ WYSIWYG製作提供WYSIWYG介面(通用編輯器和調適型Forms編輯器)，�
 
 ### 在最適化Forms中HTML電子郵件範本
 
-最適化Forms可讓您使用HTML電子郵件範本。 HTML電子郵件範本可讓您在提交表單時，傳送豐富、個人化且吸引目光的電子郵件。 這些電子郵件可使用表單資料自訂，並使用各種電子郵件標籤（例如影像和連結）進行強化。 透過Adaptive Forms，您可以上傳包含HTML範本的檔案，或使用純文字編輯器來建立這些範本。
+
+最適化Forms可讓您使用[HTML電子郵件範本](/help/forms/html-email-templates-in-adaptive-forms.md)。 HTML電子郵件範本可讓您在提交表單時，傳送豐富、個人化且吸引目光的電子郵件。 這些電子郵件可使用表單資料自訂，並使用各種電子郵件標籤（例如影像和連結）進行強化。 透過Adaptive Forms，您可以上傳包含HTML範本的檔案，或使用純文字編輯器來建立這些範本。
+
+![HTML電子郵件範本](/help/forms/assets/html-email.png)
+
+### RESTful Web服務提交動作
+
+最適化Forms現在可以使用新的RESTful Web服務提交動作，順暢地將擷取的資料傳送至已驗證的外部REST端點：
+
+* 支援的標準：Swagger 2.0和3.0可輕鬆整合API
+* 安全驗證：OAuth 2.0、基本驗證、API金鑰以及自訂驗證
+* 彈性的資料格式：多部分表單資料、JSON和URL編碼（索引鍵值配對）
+
 
 
 ### 由右至左(RTL)語言支援
