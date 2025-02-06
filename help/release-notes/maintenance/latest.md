@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的目前維�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: f7aa50d8a2fa80489c56571caa9a75bc50715368
+source-git-commit: 636183e0597bed24b3e437ed53a35c9e64ac0504
 workflow-type: tm+mt
-source-wordcount: '919'
-ht-degree: 20%
+source-wordcount: '950'
+ht-degree: 19%
 
 ---
 
@@ -56,6 +56,11 @@ ht-degree: 20%
 
 ### 已修正的問題 {#fixed-issues-19352}
 
+* CQ-4356756：請勿翻譯對相關資產的支援。
+* CQ-4358206：重複翻譯排程器不適用於翻譯專案。
+* CQ-4358126：無法在翻譯雲端服務中選取設定子資料夾。
+* Forms-18098、FORMS-17954：最適化Forms無法在Microsoft Edge瀏覽器的Internet Explorer模式中載入。
+* Forms-17162：發佈資產會導致執行OOTB查詢，進而降低發佈效能。
 * SITES-28415：使用通用編輯器的Edge Delivery：修正試算表的「開啟屬性」按鈕。
 * SITES-26669：使用通用編輯器的Edge Delivery：修正以試算表BOM上傳以UTF-8編碼的CSV檔案時的問題。
 * SITES-26543：使用通用編輯器的Edge Delivery：修正沒有模型呈現錯誤標籤的空白區塊。
@@ -85,8 +90,6 @@ ht-degree: 20%
 * SITES-26660：當@ContentType為「字串」型別時，內容片段版本比較可能會中斷。
 * SITES-26626：數字和布林值欄位上缺少customErrorMessage。
 * SITES-26268：如果在建立片段時參考無效，則會傳回錯誤的狀態代碼。
-* Forms-18098、FORMS-17954：最適化Forms無法在Microsoft Edge瀏覽器的Internet Explorer模式中載入。
-* Forms-17162：發佈資產會導致執行OOTB查詢，進而降低發佈效能。
 
 ### 已知問題 {#known-issues-19352}
 
