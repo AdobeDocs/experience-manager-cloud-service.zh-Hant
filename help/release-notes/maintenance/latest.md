@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的目前維�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 77d8ebeaa3914f4a91d2cf27ccc5b048e64d6b38
+source-git-commit: f7aa50d8a2fa80489c56571caa9a75bc50715368
 workflow-type: tm+mt
-source-wordcount: '887'
+source-wordcount: '919'
 ht-degree: 20%
 
 ---
@@ -85,6 +85,8 @@ ht-degree: 20%
 * SITES-26660：當@ContentType為「字串」型別時，內容片段版本比較可能會中斷。
 * SITES-26626：數字和布林值欄位上缺少customErrorMessage。
 * SITES-26268：如果在建立片段時參考無效，則會傳回錯誤的狀態代碼。
+* Forms-18098、FORMS-17954：最適化Forms無法在Microsoft Edge瀏覽器的Internet Explorer模式中載入。
+* Forms-17162：發佈資產會導致執行OOTB查詢，進而降低發佈效能。
 
 ### 已知問題 {#known-issues-19352}
 

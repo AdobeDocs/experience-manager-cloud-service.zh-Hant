@@ -3,7 +3,7 @@ title: 互動式通訊簡介
 description: 透過AEM Forms互動式通訊，輕鬆設計動態的資料導向通訊
 feature: Release Information
 role: Admin
-source-git-commit: 2f4fd0c380c612042cfe5d755b0b1e5ddc7e7c88
+source-git-commit: f7aa50d8a2fa80489c56571caa9a75bc50715368
 workflow-type: tm+mt
 source-wordcount: '306'
 ht-degree: 2%
@@ -18,12 +18,12 @@ ht-degree: 2%
 
 從產生帳戶報表的金融機構到精簡福利通知的政府機構，互動式通訊是製作高品質、安全且符合法律規範的信件，以及輕鬆有效率的首選工具。
 
-
-[!VIDEO](https://video.tv.adobe.com/v/3444094/)
+>[!VIDEO](https://video.tv.adobe.com/v/3444094/)
 
 <!-- ![Interactive Communication Editor](/help/assets/ic-editor.png)
 
 -->
+
 ## 核心功能
 
 互動式通訊編輯器的核心功能包括：
