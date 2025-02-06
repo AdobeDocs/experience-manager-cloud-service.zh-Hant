@@ -3,15 +3,12 @@ title: 互動式通訊簡介
 description: 透過AEM Forms互動式通訊，輕鬆設計動態的資料導向通訊
 feature: Release Information
 role: Admin
-hide: true
-hidefromtoc: true
-source-git-commit: a771aa7e683cfbcacc8a9d5765c63d50169a2756
+source-git-commit: 2f4fd0c380c612042cfe5d755b0b1e5ddc7e7c88
 workflow-type: tm+mt
-source-wordcount: '332'
-ht-degree: 3%
+source-wordcount: '306'
+ht-degree: 2%
 
 ---
-
 
 # 互動式通訊
 
@@ -21,8 +18,12 @@ ht-degree: 3%
 
 從產生帳戶報表的金融機構到精簡福利通知的政府機構，互動式通訊是製作高品質、安全且符合法律規範的信件，以及輕鬆有效率的首選工具。
 
-![互動式通訊編輯器](/help/forms/assets/ic-editor.png)
 
+[!VIDEO](https://video.tv.adobe.com/v/3444094/)
+
+<!-- ![Interactive Communication Editor](/help/assets/ic-editor.png)
+
+-->
 ## 核心功能
 
 互動式通訊編輯器的核心功能包括：
@@ -41,14 +42,11 @@ ht-degree: 3%
 | **雲端整合** | 直接在AEM Forms中編輯檔案as a Cloud Service |
 
 
-## 上線
+## 快速入門
 
-可在Formsas a Cloud Service部署的搶先存取計畫下使用的互動式通訊編輯器。 若要透過電子郵件要求存取您的組織ID，以及從您的正式地址將Formsas a Cloud Service部署的方案詳細資料傳送至[aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)。 取得存取權後，開始[建立您的第一封郵件](/help/forms/create-your-first-communication.md)
-
-
-
-
-
+1. **要求存取權**：從您的正式地址傳送電子郵件[aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)
+2. **系統管理員安裝程式**：Adobe將啟用存取並提供系統管理員許可權
+3. **開始建立**：使用我們的[直覺式編輯器](https://video.tv.adobe.com/v/3444094/)，從您的第一封通訊開始。
 
 
 
@@ -122,10 +120,8 @@ With Interactive Communication, you can integrate PDF documents into existing wo
 
 ## 下一步
 
-* [建立您的第一封通訊](/help/forms/create-your-first-communication.md)
-* [常見問題](/help/forms/interactive-communications-faq.md)
+* 建立您的第一封通訊
 * 熟悉術語和概念
 * 互動式通訊編輯器逐步解說
 * 建立片段
 * 預覽和測試通訊
-
