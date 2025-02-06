@@ -5,9 +5,9 @@ feature: Language Copy
 role: Admin
 exl-id: dc2f3958-72b5-4ae3-a224-93d8b258bc80
 solution: Experience Manager Sites
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 17489f3f65a71c6fc0f805af37cb233ab1c5470a
 workflow-type: tm+mt
-source-wordcount: '4011'
+source-wordcount: '4129'
 ht-degree: 1%
 
 ---
@@ -275,6 +275,28 @@ AEM中的翻譯專案使用標準[AEM專案主控台](/help/sites-cloud/authorin
 >[!TIP]
 >
 >此方法會將頁面/資產及其子系新增至專案。 如果您只想新增父項，請選取&#x200B;**資產/頁面（不含子項）**。
+
+### 新增i18n字典至翻譯工作 {#adding-i-n-dictionaries-to-a-translation-job}
+
+您可以將頁面、資產、標籤或i18n字典新增至翻譯專案的翻譯工作。 新增i18n字典：
+
+1. 在翻譯專案的「翻譯工作」方塊底部，按一下省略符號。
+
+   ![翻譯工作拼貼](../assets/translation-job.png)
+
+1. 按一下「新增」和「I18N字典」。
+
+   ![新增i18n字典](../assets/add-i18n.png)
+
+1. 選取要新增的&#x200B;**根目錄**&#x200B;和字典（如有必要），然後選取&#x200B;**新增**。
+
+   ![選取i18N字典](../assets/select-i18n.png)
+
+您的字典現在正在翻譯工作中，然後可以啟動翻譯程式，在`/content/cq:i18n`中建立字典語言副本，並傳送這些字典語言副本以供翻譯。
+
+>[!NOTE]
+>
+>如需i18n字典的詳細資訊，請閱讀[使用翻譯工具管理字典](/help/implementing/developing/extending/i18n/translator.md)。
 
 ### 新增標籤至翻譯工作 {#adding-tags-to-a-translation-job}
 
