@@ -5,9 +5,9 @@ feature: Adaptive Forms, Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
-source-git-commit: 6266da34305bc5d8b2bbb0d336028f4fede6c165
+source-git-commit: c20b8909bb884f14bd7fe59f190de3cd375a7111
 workflow-type: tm+mt
-source-wordcount: '2129'
+source-wordcount: '2339'
 ht-degree: 2%
 
 ---
@@ -123,7 +123,10 @@ You can configure [!DNL Experience Manager] user profile using User Profile Conn
 
 ## 設定RESTful Web服務 {#configure-restful-web-services}
 
-可在[!DNL Swagger]定義檔中使用JSON或YAML格式的[Swagger規格](https://swagger.io/specification/v2/)來描述RESTful Web服務。 若要以[!DNL Experience Manager]as a Cloud Service設定RESTful Web服務，請確定您的檔案系統上有[!DNL Swagger]檔案（[Swagger 2.0](https://swagger.io/specification/v2/)版）或[!DNL Swagger]檔案（[Swagger 3.0](https://swagger.io/specification/v3/)版），或是裝載該檔案的URL。
+可在[!DNL Swagger]定義檔或服務端點中使用JSON或YAML格式的[Swagger規格](https://swagger.io/specification/v2/)來描述RESTful Web服務。
+
+>[!NOTE]
+> 若要以[!DNL Experience Manager]as a Cloud Service設定RESTful Web服務，請確定您的檔案系統上有[!DNL Swagger]檔案（[Swagger 2.0](https://swagger.io/specification/v2/)版）或[!DNL Swagger]檔案（[Swagger 3.0](https://swagger.io/specification/v3/)版），或是裝載該檔案的URL。
 
 ### 設定Open API規格版本2.0 {#configure-restful-services-open-api-2.0}的RESTful服務
 
@@ -177,6 +180,31 @@ RESTful Services Open API Specification 3.0版不支援的作業包括：
 * 針對單一作業的不同MIME型別，有不同的要求內文
 
 如需詳細資訊，請參閱[OpenAPI 3.0規格](https://swagger.io/specification/v3/)。
+
+### 使用服務端點設定RESTful服務 {#configure-restful-services-service-endpoint}
+
+<span class="preview"> Service Endpoint功能在Early Adopter Program之下，僅適用於核心元件。 您可以從您的官方電子郵件ID寫信到aem-forms-ea@adobe.com ，以加入率先採用者計畫並請求存取該功能。</span>
+
+1. 移至&#x200B;**[!UICONTROL 工具>Cloud Service>資料來源]**。 選取以選取您要建立雲端設定的資料夾。
+
+   請參閱[設定雲端服務設定的資料夾](configure-data-sources.md#cloud-folder)，以取得關於建立和設定雲端服務設定的資料夾的資訊。
+
+1. 選取&#x200B;**[!UICONTROL 建立]**&#x200B;以開啟&#x200B;**[!UICONTROL 建立資料Source設定精靈]**。
+
+1. 指定設定的名稱及標題，從&#x200B;**[!UICONTROL 服務型別]**&#x200B;下拉式清單中選取&#x200B;**[!UICONTROL RESTful服務]**，選擇性地瀏覽並選取設定的縮圖影像，然後選取&#x200B;**[!UICONTROL 下一步]**。
+
+1. 在下一個頁面，從&#x200B;**[!UICONTROL RESTful服務下拉式清單]**&#x200B;中選取&#x200B;**[!UICONTROL 服務端點]**。
+
+   ![服務端點](/help/forms/assets/select-service-endpoint.png)
+
+1. 指定&#x200B;**[!UICONTROL 服務端點URL]**。
+
+   >[!NOTE]
+   > 依預設，「方法型別」為POST。
+1. 選取您要從下拉式清單中選擇的其中一個「內容型別」。 內容型別為多部分表單資料、JSON和URL編碼（索引鍵值配對）。
+1. 現在，您可以從下拉式清單中選取任一驗證型別，例如OAuth 2.0、基本驗證、API金鑰、自訂驗證。
+   ![服務端點驗證型別](/help/forms/assets/service-endpoint-authtype.png)
+1. 按一下「建立」。
 
 ### 表單資料模型(FDM) HTTP使用者端設定可最佳化效能 {#fdm-http-client-configuration}
 

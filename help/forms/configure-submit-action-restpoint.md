@@ -1,15 +1,14 @@
 ---
 Title: How to configure submit to Rest Endpoint submit action for an Adaptive Form?
 Description: Discover the steps to set up Rest Endpoint when submitting an Adaptive Form.
-keywords: AEM Forms REST端點、提交至REST端點、Post資料至REST URL、設定REST端點動作
+keywords: AEM Forms REST端點、提交至REST端點、將資料發佈至REST URL、設定REST端點動作
 feature: Adaptive Forms, Core Components
-exl-id: 58c63ba6-aec5-4961-a70a-265990ab9cc8
-title: 「如何設定最適化表單的提交動作？」
+title: 如何設定最適化表單的提交動作？
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: c20b8909bb884f14bd7fe59f190de3cd375a7111
 workflow-type: tm+mt
-source-wordcount: '560'
-ht-degree: 60%
+source-wordcount: '703'
+ht-degree: 53%
 
 ---
 
@@ -30,7 +29,7 @@ AEM as a Cloud Service提供多種立即可用的提交動作，用於處理表�
 
 ## 設定提交至REST端點提交動作 {#steps-to-configure-submit-to-restendpoint-submit-action}
 
-若要設定提交動作：
+若要根據Swagger Open API規格設定提交動作：
 
 1. 開啟內容瀏覽器，然後選取最適化表單的「**[!UICONTROL 指引容器]**」元件。
 1. 按一下「指引容器」屬性 ![指引屬性](/help/forms/assets/configure-icon.svg) 圖示。此時會開啟「最適化表單容器」對話框。
@@ -68,6 +67,20 @@ AEM as a Cloud Service提供多種立即可用的提交動作，用於處理表�
    您也可以「**[!UICONTROL 啟用 POST 要求]**」並提供用於發佈要求的 URL。若要將資料提交到託管表單的 AEM 伺服器，請使用對應至 AEM 伺服器根路徑的相對路徑。例如 `/content/forms/af/SampleForm.html`。若要將資料提交到任何其他伺服器，請使用絕對路徑。
 
 1. 按一下&#x200B;**[!UICONTROL 「完成」]**。
+
+### 根據Service Rest端點設定提交動作 {#config-service-endpoint-auth}
+
+<span class="preview"> Service Endpoint功能在Early Adopter Program之下，僅適用於核心元件。 您可以從您的官方電子郵件ID寫信到aem-forms-ea@adobe.com ，以加入率先採用者計畫並請求存取該功能。</span>
+
+1. 開啟內容瀏覽器，然後選取最適化表單的「**[!UICONTROL 指引容器]**」元件。
+1. 按一下「指引容器」屬性 ![指引屬性](/help/forms/assets/configure-icon.svg) 圖示。此時會開啟「最適化表單容器」對話框。
+1. 按一下「**[!UICONTROL 提交]**」標籤。
+1. 從&#x200B;**[!UICONTROL 提交動作]**&#x200B;下拉式清單中，選取&#x200B;**[!UICONTROL 提交至Rest端點]**。
+1. 啟用POST請求。
+1. 指定REST端點URL
+1. 選取您為服務Rest端點驗證型別和內容型別建立的組態。 若要進一步瞭解驗證型別和內容型別，請造訪[設定資料來源](/help/forms/configure-data-sources.md#configure-restful-services-using-service-endpoint-configure-restful-services-service-endpoint)。
+   ![正在設定Rest端點](assets/rest-service-endpoint-config.png)
+1. 按一下「完成」。
 
 ## 最佳做法
 
