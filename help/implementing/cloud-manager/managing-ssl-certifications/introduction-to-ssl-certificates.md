@@ -5,10 +5,10 @@ exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 3d9ad70351bfdedb6d81e90d9d193fac3088a3ec
+source-git-commit: a91b15836d0ca0308fbc860ec57aacda908f610d
 workflow-type: tm+mt
-source-wordcount: '1025'
-ht-degree: 19%
+source-wordcount: '1088'
+ht-degree: 16%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 19%
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_sslcert"
 >title="管理 SSL 憑證"
->abstract="了解 Cloud Manager 如何提供自助服務工具來安裝和管理 SSL 憑證，為您的使用者保護您的網站。Cloud Manager 使用平台 TLS 服務來管理客戶擁有並從第三方憑證授權單位獲得的 SSL 憑證和私密金鑰。"
+>abstract="瞭解Cloud Manager如何提供自助服務工具來安裝和管理SSL憑證，以便為使用者保護您的網站。 Cloud Manager 使用平台 TLS 服務來管理客戶擁有並從第三方憑證授權單位獲得的 SSL 憑證和私密金鑰。"
 >additional-url="https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates" text="檢視、更新和取代 SSL 憑證"
 >additional-url="https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates" text="檢查 SSL 憑證狀態"
 
@@ -40,7 +40,7 @@ Cloud Manager提供自助服務工具來安裝和管理SSL憑證，確保使用�
 
 | | 模型 | 說明 |
 | --- | --- | --- |
-| A | **[Adobe受管理的SSL憑證(DV)](#adobe-managed)** | Cloud Manager可讓使用者設定Adobe所提供的DV （網域驗證）憑證，以進行快速網域設定。 |
+| A | **[Adobe管理的SSL憑證(DV)](#adobe-managed)** | Cloud Manager可讓使用者設定Adobe所提供的DV （網域驗證）憑證，以進行快速網域設定。 |
 | B | **[客戶管理的SSL憑證(OV/EV)](#customer-managed)** | Cloud Manager提供平台TLS （傳輸層安全性）服務，可讓您管理您所擁有的OV和EV SSL憑證，以及來自協力廠商憑證授權單位的私密金鑰，例如&#x200B;*Let&#39;s Encrypt*。 |
 
 這兩種模式都提供下列管理憑證的一般功能：
@@ -59,7 +59,7 @@ DV憑證是最基本的SSL憑證等級，通常用於測試目的或透過基本
 
 建立DV憑證後，Adobe每三個月會自動更新一次，除非憑證被刪除。
 
-### 客戶管理的OV/EV SSL憑證 {#customer-managed}
+### 客戶管理的(OV/EV) SSL憑證 {#customer-managed}
 
 OV和EV憑證提供CA驗證的資訊。 這類資訊可協助使用者評估網站所有者、電子郵件寄件者或程式碼或PDF檔案的數位簽署者是否可信。 DV 憑證不允許此類所有權驗證。
 
@@ -75,12 +75,23 @@ OV和EV另外在Cloud Manager中透過DV憑證提供這些功能。
 
 #### 客戶管理的OV/EV SSL憑證需求 {#requirements}
 
-如果您選擇新增您自己的客戶託管OV/EV SSL憑證，該憑證必須符合下列要求：
+如果您選擇新增自己的客戶管理SSL憑證，該憑證必須符合下列更新要求：
 
+* 不支援網域驗證(DV)憑證和自簽憑證。
 * 憑證必須符合OV （組織驗證）或EV （擴展驗證）政策。
-   * Cloud Manager不支援新增您自己的DV （網域驗證）憑證。
-* 不支援自我簽署憑證。
-* 任何憑證都必須是來自受信任憑證授權單位的X.509 TLS憑證，並具有相符的2048位元RSA私密金鑰。
+* 憑證必須是受信任的憑證授權單位(CA)所核發的X.509 TLS憑證。
+* 支援的密碼編譯金鑰型別包括：
+
+   * RSA 2048位元，標準支援。
+目前不支援大於2048位元的RSA金鑰（例如3072位元或4096位元的RSA金鑰）。
+   * 橢圓曲線(EC)索引鍵`prime256v1` (`secp256r1`)和`secp384r1`
+   * 橢圓曲線數位簽章演演算法(ECDSA)憑證。 Adobe建議您使用這類憑證來取代RSA，以提升效能、安全性和效率。
+
+* 憑證的格式必須正確才能通過驗證。 私密金鑰必須為`PKCS#8`格式。
+
+>[!NOTE]
+>如果您的組織需要使用3072位元RSA金鑰的規範遵循，Adobe建議的替代方法是使用ECDSA憑證（`secp256r1`或`secp384r1`）。
+
 
 #### 憑證管理的最佳實務
 
