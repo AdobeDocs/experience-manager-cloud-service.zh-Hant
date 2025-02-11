@@ -7,7 +7,7 @@ exl-id: 017982e4-a4c8-4097-8751-9619cc4639d0
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '974'
-ht-degree: 65%
+ht-degree: 75%
 
 ---
 
@@ -78,7 +78,7 @@ ht-degree: 65%
 
 頁面編輯器中顯示的頁面是唯讀的，因為分類內容是根據選定的標記和命名空間自動產生。它們就像篩選器一般，會自動產生分類內容。因此沒有理由直接在編輯器中編輯頁面。
 
-當您更新根本的標記和命名空間時，AEM 會自動更新分類頁面的內容。不過，您必須在任何變更後[重新發佈分類](#publishing)，才能讓使用者可以使用這些變更。
+當您更新根本的標記和命名空間時，AEM 會自動更新分類頁面的內容。但是，您必須在進行任何變更後[重新發佈分類](#publishing)，您的使用者才能使用這些變更。
 
 ## 更新 paths.json 以發佈分類 {#paths-json}
 
@@ -112,13 +112,13 @@ ht-degree: 65%
 
 >[!TIP]
 >
->如需有關路徑對應的詳細資訊，請參閱檔案[Edge Delivery Services的路徑對應](/help/edge/wysiwyg-authoring/path-mapping.md)。
+>如需有關路徑對應的詳細資訊，請參閱檔案： [Edge Delivery Services的路徑對應](/help/edge/wysiwyg-authoring/path-mapping.md)。
 
 ## 發佈分類 {#publishing}
 
 在發佈之前，通用編輯器或您的使用者皆無法使用該分類。
 
-[使用工具列](/help/sites-cloud/authoring/sites-console/publishing-pages.md)中的&#x200B;**快速Publish**&#x200B;或&#x200B;**管理出版物**&#x200B;圖示，像發佈其他任何頁面一樣發佈分類頁面。
+[使用工具列](/help/sites-cloud/authoring/sites-console/publishing-pages.md)中的&#x200B;**快速發佈**&#x200B;或&#x200B;**管理出版物**&#x200B;圖示，以與其他頁面相同的方式發佈分類頁面。
 
 每次您執行以下操作時，都必須重新發佈分類頁面：
 
@@ -168,16 +168,16 @@ ht-degree: 65%
 
 [如果您維護多種語言的標籤](/help/sites-cloud/administering/tags.md#managing-tags-in-different-languages)，您可以將ISO2語言代碼作為`sheet=`引數的值傳入，以存取這些語言。
 
-## 公開其他標籤屬性 {#additional-properties}
+## 公開其他標記屬性 {#additional-properties}
 
-依預設，您的分類將包含`tag`和`title`值，如上一個範例](#accessing)中的[所示。 您可以設定分類法以公開其他標籤屬性。 在此範例中，我們將公開標籤說明。
+依預設，您的分類將包含`tag`和`title`值，如上一個範例](#accessing)中的[所示。 您可以設定分類法以公開其他標籤屬性。 在此範例中，我們將公開標記說明。
 
-1. 使用網站主控台選取您建立的分類法。
-1. 點選或按一下工具列中的&#x200B;**屬性**&#x200B;圖示。
-1. 在&#x200B;**其他屬性**&#x200B;區段中，點選或按一下&#x200B;**新增**&#x200B;以新增欄位。
-1. 在新欄位中輸入要公開的JRC屬性名稱。 在此情況下，請輸入`jcr:description`作為標籤描述。
+1. 使用 Sites 主控台以選取您建立的分類。
+1. 點選或按一下工具列中的「**屬性**」圖示。
+1. 在「**其他屬性**」區段中，點選或按一下「**新增**」以新增一個欄位。
+1. 在新欄位中輸入 JRC 屬性名稱以進行公開。在此例中，標記說明請輸入 `jcr:description`。
 1. 點選或按一下「**儲存並關閉**」。
-1. 在分類法仍被選取的情況下，點選或按一下工具列中的「快速Publish **」。**
+1. 在仍選取分類的情況下，點選或按一下工具列中的「**快速發佈**」。
 
 現在[當您存取分類法](#accessing)時，標籤描述（或您選擇公開的任何屬性）會包含在JSON中。
 

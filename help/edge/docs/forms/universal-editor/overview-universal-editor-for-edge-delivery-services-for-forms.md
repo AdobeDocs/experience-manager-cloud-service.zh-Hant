@@ -9,19 +9,19 @@ exl-id: d711e0d1-a2fc-4aa6-af87-6e77a7bc5d2e
 source-git-commit: 5059437eca1dcfbfb26d1ff7b12d532472951568
 workflow-type: tm+mt
 source-wordcount: '1114'
-ht-degree: 63%
+ht-degree: 100%
 
 ---
 
 # Edge Delivery Services for Forms 的通用編輯器 (EDS Forms 區塊)
 
-Universal Editor提供簡單、視覺化且直覺式的Adobe Edge (WYSIWYG)介面，徹底革新What You See Is What You Get Delivery Services (EDS)的表單建立作業。 專為內容建立者和表單作者所設計，消除了傳統表單建立流程的複雜性，讓非技術使用者也能存取。
+通用編輯器提供簡單、視覺化且直覺易用的所見即所得 (WYSIWYG) 介面，徹底改變 Adobe Edge Delivery Services (EDS) 建立表單的方式。這是專為內容創作者和表單製作者而設計，消除傳統表單建置流程的複雜性，讓非技術使用者也可以存取使用。
 
-透過通用編輯器，您可以使用預先建立的元件（例如文字欄位、核取方塊和選項按鈕）來快速設計回應式互動式表單。 其強大的功能集支援動態規則、順暢的資料整合和進階的個人化，確保每個表單都根據您的需求量身打造。
+使用通用編輯器，您可以使用預先建立的元件 (如文字欄位、核取方塊和選項按鈕) 快速設計回應式、互動式表單。其強大的功能集支援動態規則、無縫資料整合和進階的個人化功能，確保每種表單都符合您的需求。
 
-無論您是要管理輕量版使用者端轉譯、確保跨瀏覽器相容性，還是要遵循嚴格的協助工具標準，Universal Editor都能提供簡化的解決方案，方便您建立及管理表單。
+無論您是管理客戶端的輕量轉譯、確保跨瀏覽器相容性，或者遵守嚴格的無障礙標準，通用編輯器皆是建立和管理表單的精簡型解決方案。
 
-![通用編輯器](/help/edge/docs/forms/universal-editor/assets/universal-editor.png){width=80%， align-center} —>
+![通用編輯器](/help/edge/docs/forms/universal-editor/assets/universal-editor.png){width=80%, align-center} -->
 
 ## EDS Forms 通用編輯器的主要功能
 
@@ -84,7 +84,7 @@ Universal Editor提供簡單、視覺化且直覺式的Adobe Edge (WYSIWYG)介�
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/publish-unpublish.svg" alt="國際化/本地化">
     <h3>發佈/取消發佈</h3>
-    <p>輕鬆控制表單的可見度 — 只需按幾下滑鼠，即可直接從編輯器發佈或取消發佈表單，讓您即時動態管理可用性和內容更新。</p>
+    <p>輕鬆控制表單的可見度 - 只需點選幾下即可直接從編輯器發佈或取消發佈表單，您可以即時動態管理可用性和內容更新。</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/submit-actions.svg" alt="提交動作">
@@ -102,7 +102,7 @@ Universal Editor提供簡單、視覺化且直覺式的Adobe Edge (WYSIWYG)介�
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/editor-customization.svg" alt="編輯器自訂">
     <h3>編輯器自訂</h3>
-    <p>開發人員可以透過使用者介面擴充功能來擴展編輯器的功能，進而開發出符合特定組織需求的量身打造解決方案。</p>
+    <p>開發人員可以透過使用者介面延伸模組來擴展編輯器的功能，進而開發出符合特定組織需求的量身打造解決方案。</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/embedding-forms.svg" alt="嵌入表單">
@@ -282,28 +282,28 @@ In-addtion to pre-built form components, the Universal editor also provides supp
 
 ## 上線
 
-若要啟用Universal Editor及其進階功能（例如Rule Editor），請從您的正式電子郵件ID寫信至aem-forms-ea@adobe.com 。 Adobe團隊在此協助您轉換表單建置體驗。
+若要啟用通用編輯器及其進階功能 (如規則編輯器)，請使用您的官方電子郵件 ID 寫信至 aem-forms-ea@adobe.com。Adobe 團隊隨時可協助您轉換表單建置體驗。
 
-## 常見問題集(FAQ)
+## 常見問題集 (FAQ)
 
-**Q.誰可以使用通用編輯器？**
-Universal Editor是專為廣泛對象所設計，包括：
+**問：誰可以使用通用編輯器？**
+通用編輯器旨在供廣泛客群使用，包括：
 
-* 希望建立有視覺吸引力的表單的內容建立者。
+* 想要建置具有視覺吸引力的表單的內容創作者。
 * 需要進階自訂和整合功能的開發人員。
-* 具有下列需求的機構：需要可擴充、安全且符合規範的表單解決方案。
+* 尋求可擴充、安全且合規的表單解決方案之組織。
 
-**問：我可以將使用通用編輯器建立的表單整合到現有的系統中嗎？**
-當然可以。 Universal Editor支援與後端系統無縫的資料繫結，可進行即時更新和進階資料對應。 它還與Adobe Workfront等工具整合，用於任務管理，並支援資料提交工作流程的安全端點。
+**問：我可否將使用通用編輯器建立的表單整合至現有的系統中？**
+當然可以。通用編輯器支援資料與後端系統無縫連結，以利即時更新和進階資料對應。通用編輯器亦與 Adobe Workfront 等工具整合以進行任務管理，並支援供資料提交工作流程使用的安全端點。
 
-**問：是否可以自訂表單元件？**
-可以，通用編輯器可讓開發人員建立符合特定組織需求的自訂元件。 此外，您可以透過UI擴充功能和自訂工作流程擴充編輯器的功能。
+**問：可以自訂表單元件嗎？**
+可以，通用編輯器可讓開發人員建立符合特定組織需求的自訂元件。此外，您可以透過使用者介面延伸模組和自訂工作流程來擴充編輯器的功能。
 
-**問：通用編輯器如何處理協助工具？**
-通用編輯器的設計嚴格遵守協助工具標準，包括WCAG （網頁內容協助工具准則）。 這可確保表單可供殘障人士使用，提供包容性的體驗。
+**問：通用編輯器如何滿足無障礙要求？**
+通用編輯器的設計嚴格遵守無障礙標準，包括 WCAG (網頁內容無障礙指南)。這樣可以確保身心障礙人士可以使用這些表單，提供包容性體驗。
 
-**問：我可以從表單中取得什麼型別的分析？**
-通用編輯器包含內建分析和追蹤工具，用於監視使用者互動、表單提交率和轉換量度。 這些見解有助於將您的表單最佳化，以獲得更優異的效能。
+**問：我可以從表單中獲得哪類型的分析？**
+通用編輯器包括內建分析和追蹤工具，用於監視使用者互動情形、表單提交率和轉換量度。這些深入分析有助於最佳化您的表單，以達到更好的效能。
 
 
 ## 開始建立表單

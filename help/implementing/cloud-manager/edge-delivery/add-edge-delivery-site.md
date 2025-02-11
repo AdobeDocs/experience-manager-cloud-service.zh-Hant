@@ -7,7 +7,7 @@ exl-id: 17e842c9-599a-4877-9834-1e7220f508a8
 source-git-commit: a078d45f81fc7081012ebf24fa8f46dc1a218cd7
 workflow-type: tm+mt
 source-wordcount: '498'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -48,12 +48,12 @@ ht-degree: 92%
 
    | 步驟編號 | 說明 |
    | - | - |
-   | **1** | 將路徑和名稱為 `well-known/adobe/cloudmanager-challenge.txt` 的檔案新增至 Git 存放庫的 `main` 分支 (列於「**存放庫 URL**」欄位中)。請&#x200B;*勿*&#x200B;在位置路徑的開頭加上句點。<br>如有必要，請按一下![復製圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg)將路徑複製到剪貼簿。 |
-   | **2** | 將步驟 2 文字欄位中顯示的程式碼，新增至您剛剛在步驟 1 建立的檔案中。<br>如有必要，請按一下![復製圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg)將代碼複製到剪貼簿。 |
+   | **1** | 將路徑和名稱為 `well-known/adobe/cloudmanager-challenge.txt` 的檔案新增至 Git 存放庫的 `main` 分支 (列於「**存放庫 URL**」欄位中)。請&#x200B;*勿*&#x200B;在位置路徑的開頭加上句點。<br>如有需要，請按一下![複製圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg)以複製路徑至剪貼簿。 |
+   | **2** | 將步驟 2 文字欄位中顯示的程式碼，新增至您剛剛在步驟 1 建立的檔案中。<br>如有需要，請按一下![複製圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg)以複製程式碼至剪貼簿。 |
    | **3** | 在 Git 存放庫中為您剛建立的變更建立一項提取請求，然後將其合併到 `main` 以提交程式碼。 |
 
 1. 按一下「**驗證**」。
 
-當存放庫通過驗證，它在 Edge Delivery 網站表格中的狀態就會更新。綠色圓圈內有白色勾選標記，呈現出狀態。
+當存放庫通過驗證，它在 Edge Delivery 網站表格中的狀態就會更新。內有白色核取記號的綠色圓圈表示該狀態。
 
-在相同表格中，按一下![Edge Delivery網站圖示的相關資訊](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg)以檢視網站詳細資訊。 此資訊包括通過驗證的存放庫 URL，以及預覽和生產網站 URL。
+在同一個表格中，按一下![Edge Delivery 網站相關資訊圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg)以檢視網站詳細資訊。此資訊包括通過驗證的存放庫 URL，以及預覽和生產網站 URL。

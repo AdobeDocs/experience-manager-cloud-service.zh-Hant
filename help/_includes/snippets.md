@@ -2,10 +2,10 @@
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1388'
-ht-degree: 96%
+ht-degree: 98%
 
 ---
-# 代碼片段 {#snippets}
+# 程式碼片段 {#snippets}
 
 ## Headless 試用版促銷 {#headless-trials-promotion}
 
@@ -197,13 +197,13 @@ ht-degree: 96%
 
 >[!TIP]
 >
->您是 Dynamic Media 的新手嗎？有關 Dynamic Media 的快速、高階概觀，請參閱[使用 Dynamic Media](/help/assets/dynamic-media/dynamic-media.md)。
+>您是 Dynamic Media 的新手嗎？如需 Dynamic Media 的快速、高階概觀，請參閱[使用 Dynamic Media](/help/assets/dynamic-media/dynamic-media.md)。
 
 ## 另請參閱 Dynamic Media {#see-also-dm}
 
 >[!NOTE]
 >
->* 您是 Dynamic Media 的新手嗎？有關 Dynamic Media 的快速、高階概觀，請參閱[使用 Dynamic Media](/help/assets/dynamic-media/dynamic-media.md)。
+>* 您是 Dynamic Media 的新手嗎？如需 Dynamic Media 的快速、高階概觀，請參閱[使用 Dynamic Media](/help/assets/dynamic-media/dynamic-media.md)。
 >
 >* 請遵循 [Dynamic Media 最佳實務](/help/assets/dynamic-media/dm-best-practices.md)以實現最大價值。
 >
@@ -237,7 +237,7 @@ ht-degree: 96%
 
 >[!IMPORTANT]
 >
->已為新專案棄用SPA編輯器[](/help/release-notes/release-notes-cloud/release-notes-current.md#sites-deprecated)。 Adobe仍支援此專案用於現有專案，但不應用於新專案。 在AEM中管理Headless內容的首選編輯器現在是：
+>新專案中[已棄用](/help/release-notes/release-notes-cloud/release-notes-current.md#sites-deprecated) SPA 編輯器。Adobe 仍支援現有專案使用此編輯器，但不應用於新專案。目前，AEM 中用於管理 Headless 內容的首選編輯器為：
 >
 >* [通用編輯器](/help/edge/wysiwyg-authoring/authoring.md)：用於視覺化編輯 Headless 內容。
 >* [內容片段編輯器](/help/assets/content-fragments/content-fragments-managing.md)：用於 Headless 內容的表單型編輯。

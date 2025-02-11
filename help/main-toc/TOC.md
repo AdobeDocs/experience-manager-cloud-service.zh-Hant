@@ -576,7 +576,7 @@ ht-degree: 99%
       + [Experience League 的 Dynamic Media 電子報](/help/assets/dynamic-media/dynamic-media-newsletter.md)
       + [設定 Dynamic Media](/help/assets/dynamic-media/administering-dynamic-media.md)
       + [使用 Dynamic Media](/help/assets/dynamic-media/dynamic-media.md)
-      + [Dynamic Media範本](/help/assets/dynamic-media/dynamic-media-templates.md)
+      + [Dynamic Media 範本](/help/assets/dynamic-media/dynamic-media-templates.md)
       + [設定 Dynamic Media](/help/assets/dynamic-media/config-dm.md)
       + [選擇性 - 設定 Dynamic Media，一般設定](/help/assets/dynamic-media/dm-general-settings.md)
       + [選擇性 - 設定 Dynamic Media，發佈設定](/help/assets/dynamic-media/dm-publish-settings.md)
@@ -708,7 +708,7 @@ ht-degree: 99%
       + [從  [!DNL AEM 6.5 Forms]  或更早版本移轉至  [!DNL AEM Forms] as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
       + [群組與權限](/help/forms/forms-groups-privileges-tasks.md)
       + [匯入、匯出及組織最適化表單、PDF 表單和其他資產](/help/forms/import-export-forms-templates.md)
-      + [使用「管理發布」的Publish最適化Forms](/help/forms/manage-publication.md)
+      + [使用管理發佈來發佈最適化表單](/help/forms/manage-publication.md)
    + 快速入門 {#getting-started-forms}
       + [使用案例和設定開發環境](/help/forms/create-adaptive-form-tutorial-getting-started.md)
       + [建立貸款申請表](/help/forms/create-adaptive-form-tutorial.md)
@@ -1028,7 +1028,7 @@ ht-degree: 99%
       + WYSIWYG {#universal-editor}
          + [概觀：Edge Delivery Services for Forms 的通用編輯器](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
          + [快速入門](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
-         + [使用規則編輯器新增規則到](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
+         + [使用規則編輯器來新增規則](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
       + 功能 {#advanced-features-edge-delivery-services-forms}
          + [使用表單片段](/help/edge/docs/forms/form-fragments.md)
          + [將可重複區段新增到表單](/help/edge/docs/forms/repeatable-forms.md)
@@ -1042,14 +1042,14 @@ ht-degree: 99%
    + Edge Delivery 資源 {#resources}
       + Sidekick {#sidekick}
          + [使用 Sidekick](/help/edge/docs/sidekick.md)
-         + [安裝擴充功能](/help/edge/docs/sidekick-extension.md)
+         + [安裝延伸模組](/help/edge/docs/sidekick-extension.md)
          + [專案設定器](https://www.aem.live/tools/sidekick/)
          + [Sidekick 庫](/help/edge/docs/sidekick-library.md)
       + [常見問題集](/help/edge/docs/faq.md)
       + [管理 API](https://www.aem.live/docs/admin.html)
       + [AEM 狀態](https://www.aemstatus.net)
       + 工具 {#tools}
-         + [AEM Sidekick Chrome 擴充功能](https://chrome.google.com/webstore/detail/aem-sidekick/ccfggkjabjahcjoljmgmklhpaccedipo)
+         + [AEM Sidekick Chrome 延伸模組](https://chrome.google.com/webstore/detail/aem-sidekick/ccfggkjabjahcjoljmgmklhpaccedipo)
          + [Github 機器人](https://github.com/apps/aem-code-sync)
          + [稽核記錄](/help/edge/docs/auditlog.md)
 + Headless {#headless}
@@ -1202,7 +1202,7 @@ ht-degree: 99%
          + [新增 SSL 憑證](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)
          + [SSL 憑證錯誤疑難排解](/help/implementing/cloud-manager/managing-ssl-certifications/troubleshoot-ssl-cert.md)
          + [管理 SSL 憑證](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
-      + 網域對應{#cdn-configurations}
+      + 網域對應 {#cdn-configurations}
          + [新增內容傳遞網路設定](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)
          + [管理網域對應](/help/implementing/cloud-manager/cdn-configurations/manage-cdn-config.md)
       + IP 允許清單 {#ip-allow-lists}
@@ -1363,7 +1363,7 @@ ht-degree: 99%
       + [資源對應](/help/implementing/deploying/resource-mapping.md)
    + 製作層 {#author-tier}
       + [存取製作層](/help/implementing/author-tier/accessing-the-author-tier.md)
-      + [保護編寫階層](/help/implementing/author-tier/securing-the-author-tier.md)
+      + [保護製作層](/help/implementing/author-tier/securing-the-author-tier.md)
    + 內容傳遞概觀 {#content-delivery}
       + [內容傳遞流程](/help/implementing/dispatcher/overview.md)
       + [雲端中的 Dispatcher](/help/implementing/dispatcher/disp-overview.md)
