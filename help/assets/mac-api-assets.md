@@ -5,14 +5,14 @@ contentOwner: AG
 feature: Assets HTTP API
 role: Developer, Architect, Admin
 exl-id: a3b7374d-f24b-4d6f-b6db-b9c9c962bb8d
-source-git-commit: 4cec40947f1b50dd627321cabfbe43033a224f8b
+source-git-commit: 2f4c5db2b40d55e2e46e14cb5309754969b5bdea
 workflow-type: tm+mt
-source-wordcount: '1720'
+source-wordcount: '1693'
 ht-degree: 6%
 
 ---
 
-# [!DNL Adobe Experience Manager Assets] HTTP API {#assets-http-api}
+# 使用[!DNL Adobe Experience Manager Assets] HTTP API管理數位資產{#assets-http-api}
 
 | [搜尋最佳實務](/help/assets/search-best-practices.md) | [中繼資料最佳實務](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [具有 OpenAPI 功能的 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 開發人員文件](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
@@ -24,7 +24,7 @@ ht-degree: 6%
 
 ## 概觀 {#overview}
 
-[!DNL Assets] HTTP API允許對數位資產進行建立 — 讀取 — 更新 — 刪除(CRUD)作業，包括對中繼資料、轉譯和評論的作業，以及使用[!DNL Experience Manager]內容片段的結構化內容。 它在`/api/assets`公開，並實作為REST API。 它包含對內容片段的[支援](/help/assets/content-fragments/assets-api-content-fragments.md)。
+AEM [!DNL Assets] HTTP API透過/`api/assets`的REST介面啟用數位資產的CRUD （建立、讀取、更新和刪除）作業。 這些操作適用於資產中繼資料、轉譯和註解。 它包含對內容片段的[支援](/help/assets/content-fragments/assets-api-content-fragments.md)。
 
 >[!NOTE]
 >
@@ -43,7 +43,7 @@ API回應是部分MIME型別的JSON檔案，以及所有MIME型別的回應代�
 
 ## 內容片段 {#content-fragments}
 
-[內容片段](/help/assets/content-fragments/content-fragments.md)是特殊型別的資產。 它可用來存取結構化資料，例如文字、數字、日期等。 由於`standard`資產（例如影像或檔案）有幾項差異，因此處理內容片段會套用一些其他規則。
+[內容片段](/help/assets/content-fragments/content-fragments.md)是儲存文字、數字和日期的結構化資產。 由於`standard`資產（例如影像或檔案）有幾項差異，因此處理內容片段會套用一些其他規則。
 
 如需詳細資訊，請參閱 [!DNL Experience Manager Assets] HTTP API](/help/assets/content-fragments/assets-api-content-fragments.md)中的[內容片段支援。
 
@@ -55,7 +55,7 @@ API回應是部分MIME型別的JSON檔案，以及所有MIME型別的回應代�
 
 ## 資料模型 {#data-model}
 
-[!DNL Assets] HTTP API公開兩個主要元素：資料夾和資產（適用於標準資產）。 此外，它會公開自訂資料模型的更詳細元素，這些模型說明內容片段中的結構化內容。 如需進一步資訊，請參閱[內容片段資料模型](/help/assets/content-fragments/assets-api-content-fragments.md#content-models-and-content-fragments)。
+[!DNL Assets] HTTP API主要公開兩個元素：資料夾和標準資產。 此外，也為內容片段中使用的自訂資料模型提供詳細元素。 如需詳細資訊，請參閱內容片段資料模型。 如需進一步資訊，請參閱[內容片段資料模型](/help/assets/content-fragments/assets-api-content-fragments.md#content-models-and-content-fragments)。
 
 >[!NOTE]
 >
@@ -63,14 +63,14 @@ API回應是部分MIME型別的JSON檔案，以及所有MIME型別的回應代�
 
 ### 資料夾 {#folders}
 
-資料夾與傳統檔案系統中的目錄類似。 資料夾可以只包含資產，只有資料夾或資料夾和資產。 資料夾包含下列元件：
+資料夾與傳統檔案系統中的目錄類似。 資料夾可包含資產、子資料夾或兩者。 資料夾包含下列元件：
 
 **實體**：資料夾的實體是其子元素，可以是資料夾和資產。
 
 **屬性**：
 
-* `name`是資料夾的名稱。 這與URL路徑中沒有副檔名的最後一個區段相同。
-* `title`是資料夾的選用標題，可顯示而非其名稱。
+* `name`：資料夾名稱（URL路徑的最後一個區段，不含副檔名）。
+* `title`：以選擇性標題取代資料夾名稱。
 
 >[!NOTE]
 >
@@ -78,18 +78,18 @@ API回應是部分MIME型別的JSON檔案，以及所有MIME型別的回應代�
 
 **連結**&#x200B;資料夾公開三個連結：
 
-* `self`：連結到本身。
-* `parent`：連結至父資料夾。
-* `thumbnail`： （選用）連結至資料夾縮圖影像。
+* `self`：資料夾本身的連結。
+* `parent`：父資料夾的連結。
+* `thumbnail` （選用）：資料夾縮圖影像的連結。
 
 ### Assets {#assets}
 
 在[!DNL Experience Manager]中，資產包含下列元素：
 
-* 資產的屬性和中繼資料。
-* 原本是上傳資產的二進位檔案。
-* 已設定多個轉譯。 這些可能是不同大小的影像、不同編碼的視訊，或是從PDF或[!DNL Adobe InDesign]檔案擷取的頁面。
-* 選擇性註解。
+* **屬性和中繼資料：**&#x200B;資產的描述性資訊。
+* **二進位檔案：**&#x200B;原始上傳的檔案。
+* **轉譯：**&#x200B;多個已設定的轉譯(例如，各種大小的影像、不同的視訊編碼，或從PDF/Adobe InDesign檔案擷取的頁面)。
+* **註解（選擇性）：**&#x200B;使用者提供的註解。
 
 如需內容片段中元素的詳細資訊，請參閱[Experience Manager Assets HTTP API中的內容片段支援](/help/assets/content-fragments/assets-api-content-fragments.md)。
 
@@ -159,7 +159,7 @@ API回應是部分MIME型別的JSON檔案，以及所有MIME型別的回應代�
 
 **引數**： `name`是資料夾名稱。
 
-**請求**
+**要求**
 
 * `POST /api/assets/myFolder -H"Content-Type: application/json" -d '{"class":"assetFolder","properties":{"title":"My Folder"}}'`
 * `POST /api/assets/* -F"name=myfolder" -F"title=My Folder"`
@@ -173,7 +173,7 @@ API回應是部分MIME型別的JSON檔案，以及所有MIME型別的回應代�
 
 ## 建立資產 {#create-an-asset}
 
-如需如何建立資產的詳細資訊，請參閱[資產上傳](developer-reference-material-apis.md)。 您無法使用HTTP API建立資產。
+不支援透過此HTTP API建立資產。 若要建立資產，請使用[資產上傳](developer-reference-material-apis.md) API。
 
 ## 更新資產二進位檔 {#update-asset-binary}
 
@@ -181,7 +181,7 @@ API回應是部分MIME型別的JSON檔案，以及所有MIME型別的回應代�
 
 ## 更新資產的中繼資料 {#update-asset-metadata}
 
-更新資產中繼資料屬性。 如果您更新`dc:`名稱空間中的任何屬性，API會更新`jcr`名稱空間中的相同屬性。 此API不會同步兩個名稱空間下的屬性。
+此操作會更新資產的中繼資料。 更新`dc:`名稱空間中的屬性時，會更新對應的`jcr:`屬性。 不過，API不會同步兩個名稱空間下的屬性。
 
 **要求**： `PUT /api/assets/myfolder/myAsset.png -H"Content-Type: application/json" -d '{"class":"asset", "properties":{"dc:title":"My Asset"}}'`
 
@@ -196,9 +196,12 @@ API回應是部分MIME型別的JSON檔案，以及所有MIME型別的回應代�
 
 建立資產的轉譯。 如果未提供請求引數名稱，則會使用檔案名稱作為轉譯名稱。
 
-**引數**：轉譯名稱的引數為`name`，且為檔案參考的`file`。
+**引數**：引數為：
 
-**請求**
+`name`：用於轉譯名稱。
+`file`：作為參考的轉譯二進位檔案。
+
+**要求**
 
 * `POST /api/assets/myfolder/myasset.png/renditions/web-rendition -H"Content-Type: image/png" --data-binary "@myRendition.png"`
 * `POST /api/assets/myfolder/myasset.png/renditions/* -F"name=web-rendition" -F"file=@myRendition.png"`
@@ -278,7 +281,7 @@ API回應是部分MIME型別的JSON檔案，以及所有MIME型別的回應代�
 
 在提供的路徑刪除資源(-tree)。
 
-**請求**
+**要求**
 
 * `DELETE /api/assets/myFolder`
 * `DELETE /api/assets/myFolder/myAsset.png`
@@ -292,9 +295,9 @@ API回應是部分MIME型別的JSON檔案，以及所有MIME型別的回應代�
 
 ## 提示、最佳實務和限制 {#tips-limitations}
 
-* 在[!UICONTROL 關閉時間]之後，無法透過[!DNL Assets]網頁介面及HTTP API使用資產及其轉譯。 如果[!UICONTROL 開啟時間]是未來時間，或[!UICONTROL 關閉時間]是過去時間，API會傳回404錯誤訊息。
+* 當達到[!UICONTROL 關閉時間]時，透過[!DNL Assets]網頁介面和HTTP API，Assets及其轉譯將無法使用。 如果[!UICONTROL 開啟時間]是未來時間，或[!UICONTROL 關閉時間]是過去時間，API會傳回404錯誤。
 
-* Assets HTTP API未傳回完整的中繼資料。 系統會以硬式編碼撰寫名稱空間，而且只會傳回這些名稱空間。 如需完整的中繼資料，請參閱資產路徑`/jcr_content/metadata.json`。
+* Assets HTTP API只會傳回中繼資料的子集。 系統會以硬式編碼撰寫名稱空間，而且只會傳回這些名稱空間。 如需完整的中繼資料，請參閱資產路徑`/jcr_content/metadata.json`。
 
 * 使用API更新時，資料夾或資產的某些屬性會對應至不同的首碼。 `jcr:title`、`jcr:description`和`jcr:language`的`jcr`首碼已取代為`dc`首碼。 因此，在傳回的JSON中，`dc:title`和`dc:description`分別包含`jcr:title`和`jcr:description`的值。
 

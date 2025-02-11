@@ -1,22 +1,32 @@
 ---
 title: 回應式版面
-description: AEM可讓您實現頁面的回應式版面
+description: AEM可讓您使用版面容器元件，為您的頁面實現回應式版面。
 exl-id: 87202742-5bed-4e87-a427-456a1a0e72cc
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 70a35cfeb163967b0f627d3ac6495f112d922974
 workflow-type: tm+mt
-source-wordcount: '1740'
+source-wordcount: '1789'
 ht-degree: 5%
 
 ---
+
 
 # 回應式版面 {#responsive-layout}
 
 AEM可讓您使用&#x200B;**配置容器**&#x200B;元件，為您的頁面設定回應式配置。
 
-如此可提供段落系統，讓您在回應式格線內放置元件。 此格線可根據裝置/視窗大小和格式重新排列版面。 此元件可搭配&#x200B;[**配置**&#x200B;模式](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector)使用，讓您建立和編輯相依於裝置的回應式配置。
+>[!TIP]
+>
+>本檔案提供內容作者可用的配置容器功能概觀。 其他資源可供使用：
+>
+>* 對於網站管理員，在[設定配置容器和配置模式檔案中會說明如何設定網站的配置容器的詳細資訊。](/help/sites-cloud/administering/responsive-layout.md)
+>* 開發人員可在[回應式設計檔案](/help/implementing/developing/introduction/responsive-design.md)中瞭解佈局容器和回應式格線的詳細資訊，其中提供設計網站時使用佈局容器和回應式格線的相關提示。
+
+## 概觀 {#overview}
+
+**配置容器**&#x200B;元件提供段落系統，讓您在回應式格線中放置元件。 此格線可根據裝置/視窗大小和格式重新排列版面。 此元件可搭配&#x200B;[**配置**&#x200B;模式](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector)使用，讓您建立和編輯相依於裝置的回應式配置。
 
 配置容器：
 
@@ -49,10 +59,6 @@ AEM使用一組機製為頁面實現回應式佈局：
 * 實現欄控制。
 
 根據您的專案，可能會將「版面容器」用作頁面的預設段落系統，或用作可透過元件瀏覽器新增至頁面的元件（或同時用作兩者）。
-
->[!TIP]
->
->Adobe提供回應式版面的[GitHub檔案](https://adobe-marketing-cloud.github.io/aem-responsivegrid/)，作為前端開發人員參考之用，讓他們能夠在AEM之外使用AEM網格，例如在為未來的AEM網站建立靜態HTML模型時。
 
 >[!NOTE]
 >
