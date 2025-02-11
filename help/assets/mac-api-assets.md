@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Assets HTTP API
 role: Developer, Architect, Admin
 exl-id: a3b7374d-f24b-4d6f-b6db-b9c9c962bb8d
-source-git-commit: 2f4c5db2b40d55e2e46e14cb5309754969b5bdea
+source-git-commit: 3143ca304ec7ff56d45502a3fd5e49b3b9ed6ce4
 workflow-type: tm+mt
-source-wordcount: '1693'
+source-wordcount: '1709'
 ht-degree: 6%
 
 ---
@@ -22,9 +22,9 @@ ht-degree: 6%
 | AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/mac-api-assets.html?lang=en) |
 | AEM as a Cloud Service  | 本文章 |
 
-## 概觀 {#overview}
+## 開始使用AEM [!DNL Assets] HTTP API {#overview}
 
-AEM [!DNL Assets] HTTP API透過/`api/assets`的REST介面啟用數位資產的CRUD （建立、讀取、更新和刪除）作業。 這些操作適用於資產中繼資料、轉譯和註解。 它包含對內容片段的[支援](/help/assets/content-fragments/assets-api-content-fragments.md)。
+AEM [!DNL Assets] HTTP API透過/`api/assets`提供的REST介面啟用數位資產的CRUD （建立、讀取、更新和刪除）作業。 這些操作適用於資產中繼資料、轉譯和註解。 它包含對內容片段的[支援](/help/assets/content-fragments/assets-api-content-fragments.md)。
 
 >[!NOTE]
 >
@@ -41,7 +41,7 @@ API回應是部分MIME型別的JSON檔案，以及所有MIME型別的回應代�
 >
 >與上傳或更新一般資產或二進位檔（如轉譯）相關的所有API呼叫已針對[!DNL Experience Manager]棄用作為[!DNL Cloud Service]部署。 若要上傳二進位檔，請改用[直接二進位上傳API](developer-reference-material-apis.md#asset-upload)。
 
-## 內容片段 {#content-fragments}
+## 管理內容片段 {#content-fragments}
 
 [內容片段](/help/assets/content-fragments/content-fragments.md)是儲存文字、數字和日期的結構化資產。 由於`standard`資產（例如影像或檔案）有幾項差異，因此處理內容片段會套用一些其他規則。
 
@@ -53,7 +53,7 @@ API回應是部分MIME型別的JSON檔案，以及所有MIME型別的回應代�
 >
 >也提供[內容片段和內容片段模型 OpenAPI](/help/headless/content-fragment-openapis.md)。
 
-## 資料模型 {#data-model}
+## 檢查資料模型 {#data-model}
 
 [!DNL Assets] HTTP API主要公開兩個元素：資料夾和標準資產。 此外，也為內容片段中使用的自訂資料模型提供詳細元素。 如需詳細資訊，請參閱內容片段資料模型。 如需進一步資訊，請參閱[內容片段資料模型](/help/assets/content-fragments/assets-api-content-fragments.md#content-models-and-content-fragments)。
 
@@ -61,7 +61,7 @@ API回應是部分MIME型別的JSON檔案，以及所有MIME型別的回應代�
 >
 >也提供[內容片段和內容片段模型 OpenAPI](/help/headless/content-fragment-openapis.md)。
 
-### 資料夾 {#folders}
+### 管理資料夾 {#folders}
 
 資料夾與傳統檔案系統中的目錄類似。 資料夾可包含資產、子資料夾或兩者。 資料夾包含下列元件：
 
@@ -82,7 +82,7 @@ API回應是部分MIME型別的JSON檔案，以及所有MIME型別的回應代�
 * `parent`：父資料夾的連結。
 * `thumbnail` （選用）：資料夾縮圖影像的連結。
 
-### Assets {#assets}
+### 管理資產 {#assets}
 
 在[!DNL Experience Manager]中，資產包含下列元素：
 
@@ -103,7 +103,7 @@ API回應是部分MIME型別的JSON檔案，以及所有MIME型別的回應代�
 * 屬性。
 * 連結。
 
-## 可用功能 {#available-features}
+## 探索可用的API作業 {#available-features}
 
 [!DNL Assets] HTTP API包含下列功能：
 
@@ -293,7 +293,7 @@ API回應是部分MIME型別的JSON檔案，以及所有MIME型別的回應代�
 * 412 - PRECONDITION FAILED — 如果找不到或無法存取根集合。
 * 500 — 內部伺服器錯誤 — 如果發生其他錯誤。
 
-## 提示、最佳實務和限制 {#tips-limitations}
+## 遵循最佳實務並注意限制 {#tips-limitations}
 
 * 當達到[!UICONTROL 關閉時間]時，透過[!DNL Assets]網頁介面和HTTP API，Assets及其轉譯將無法使用。 如果[!UICONTROL 開啟時間]是未來時間，或[!UICONTROL 關閉時間]是過去時間，API會傳回404錯誤。
 
@@ -301,7 +301,7 @@ API回應是部分MIME型別的JSON檔案，以及所有MIME型別的回應代�
 
 * 使用API更新時，資料夾或資產的某些屬性會對應至不同的首碼。 `jcr:title`、`jcr:description`和`jcr:language`的`jcr`首碼已取代為`dc`首碼。 因此，在傳回的JSON中，`dc:title`和`dc:description`分別包含`jcr:title`和`jcr:description`的值。
 
-**另請參閱**
+**探索相關資源**
 
 * [翻譯資產](translate-assets.md)
 * [資產支援的檔案格式](file-format-support.md)
