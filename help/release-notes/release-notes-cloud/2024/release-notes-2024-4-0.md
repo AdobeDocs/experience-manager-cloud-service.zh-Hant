@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2024.4.0 版�
 exl-id: 153a3172-676f-4434-94d4-12fab8e17734
 feature: Release Information
 role: Admin
-source-git-commit: 8d5d8910a906e2adf17fa9c75f17634602c2e0b9
+source-git-commit: bc0ae042c378f24b88da84768cdcc9573926ac89
 workflow-type: tm+mt
-source-wordcount: '2727'
+source-wordcount: '2707'
 ht-degree: 97%
 
 ---
@@ -74,7 +74,7 @@ Experience Manager Assets 現在包含[簡單直觀的影片編輯工具 (由 Ad
 
 **動態轉譯**
 
-現在，您可以在 Experience Manager Assets 中[檢視和下載動態轉譯版 (包括智慧型裁切)](/help/assets/renditions.md) 。動態轉譯版是即時建立的影像資產自訂版本，可滿足特定需求，例如根據裝置解析度調整影像大小或裁切以適應不同的外觀比例。這些轉譯版使組織能夠根據不同對象的需求提供個人化和最佳化體驗。
+現在，您可以在 Experience Manager Assets 中[檢視和下載動態轉譯版 (包括智慧型裁切)](/help/assets/renditions.md) 。動態轉譯版是即時建立的影像資產自訂版本，可滿足特定需求，例如根據裝置解析度調整影像大小或裁切以適應不同的外觀比例。這些轉譯版使組織能夠根據不同客群的需求提供個人化和最佳化體驗。
 
 ![動態轉譯](/help/assets/assets/preset_smart_crop.png)
 
@@ -157,7 +157,7 @@ Experience Manager Assets 現在有項功能[讓您按一下即可重新命名�
 
 * **[Reader 延伸模組服務](/help/forms/aem-forms-cloud-service-communications-introduction.md#reader-extension-service)**：AEM Forms Communication API 引入了 Reader 延伸模組服務，讓您可以為一般的 PDF 新增表單填寫和評論等功能，讓免費 Adob&#x200B;&#x200B;e Reader 的使用者可使用這些功能。
 
-* [從右至左語言支援](/help/forms/supporting-new-language-localization-core-components.md)：以核心元件為主的最適化表單現在可以呈現從右至左 (RTL) 語言 (如阿拉伯文、波斯文和烏都文)。全球有超過 20 億人使用 RTL 語言。使用 RTL 語言的表單可讓您擴展最適化表單的範圍，以滿足這些不同的受眾並選擇進入 RTL 市場。在某些地區，法律也強制要求以當地語言提供表單。透過適應當地語言，您不僅可以向更廣泛的受眾敞開大門，還可以確保遵守相關法律和法規。
+* [從右至左語言支援](/help/forms/supporting-new-language-localization-core-components.md)：以核心元件為主的最適化表單現在可以呈現從右至左 (RTL) 語言 (如阿拉伯文、波斯文和烏都文)。全球有超過 20 億人使用 RTL 語言。使用 RTL 語言的表單可讓您擴展最適化表單的範圍，以滿足這些不同的客群並選擇進入 RTL 市場。在某些地區，法律也強制要求以當地語言提供表單。透過適應當地語言，您不僅可以向更廣泛的客群敞開大門，還可以確保遵守相關法律和法規。
 
 * **[使用 DocAssurance API (通訊 API 的一部分) 保護您的文件](/help/forms/aem-forms-cloud-service-communications-introduction.md#document-assurance-doc-assurance)**：DocAssurance API 可讓您透過在文件上簽名和加密來保護敏感資訊。透過加密，文件內容會被轉換為不可讀的格式，確保只有授權的使用者才能存取。這個強化的保護層不僅可以防止重要資料受到未經授權的查看，還可以讓您高枕無憂。簽名 API 可讓您的組織保護所分發和接收 Adobe PDF 文件的安全和隱私。這項服務使用數位簽名和認證來確保只有預期的收件人才能變更文件。
 
@@ -168,7 +168,7 @@ Real Use Monitoring (RUM) Data Service提供使用者互動的更精確反映，
 
   如果您有興趣測試此新功能並分享意見回饋，請使用與您的 Adobe ID 相關聯的電子郵件地址，傳送電子郵件至 `aemcs-rum-adopter@adobe.com`，並在郵件中附上要啟用 RUM 的每個環境網域名稱。Adobe的產品團隊會為您啟用即時監控(RUM)資料服務。
 
-## [!DNL Experience Manager] as a [!DNL Cloud Service] 基礎 {#foundation}
+## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
 ### CDN 設定 {#cdn-config}
 
@@ -286,9 +286,7 @@ Experience Manager Guides 現在允許您建立語言群組並輕鬆將您的內
 身為管理員，您可以為某些連接器 (例如通用 REST 用戶端、Salsify、Akeneo 和 Microsoft Azure DevOps Boards (ADO)) 設定多個資源 URL。
 然後，作為作者，連接資料來源以使用產生器建立內容片段或主題。此功能很方便，因為您不必為每個 URL 建立資料來源。它可以幫助您快速從單一內容片段或主題中特定資料來源的任何資源中擷取資料。檢視有關資料來源連接器的詳細資訊，以及如何[從使用者介面設定資料來源連接器](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-guides/using/install-guide/cs-ig/web-editor-configs-cs/conf-data-source-connector-tools)。了解如何 [使用資料來源中的資料](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-guides/using/user-guide/author-content/create-preview-topics/author-content-aem-guides/work-with-web-editor/web-editor-content-snippet)。
 
-如需新功能和增強功能的詳細資訊，請參閱 [2024.04.0 版本中的新增功能](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2404-release/whats-new-2024-04-0)。
-
-有關此版本中的問題修正清單，請查看 [2024.4.0 版本中修正的問題](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2404-release/fixed-issues-2024-04-0)。
+如需新功能和增強功能的詳細資訊，請檢視[Experience Manager Guides發行資訊](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap)。
 
 ## Cloud Manager {#cloud-manager}
 

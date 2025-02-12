@@ -3,7 +3,8 @@ title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2024.9.0 版發行�
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2024.9.0 版發行說明。'
 feature: Release Information
 role: Admin
-source-git-commit: 0c4db1b70aa665e1802a316ece26db1e06f40b24
+exl-id: 75ecd154-112a-4468-9962-de50bb1f4cd0
+source-git-commit: b0208964fc193e0e839bccaaf8245c86f280767d
 workflow-type: tm+mt
 source-wordcount: '1324'
 ht-degree: 91%
@@ -59,7 +60,7 @@ AEM 翻譯工作流程和 API 動作現在會觸發事件，並提供有關翻�
 
 **以 AI 產生的影片字幕**
 
-Adobe Dynamic Media 中以 AI 產生的影片字幕，是使用人工智慧來自動產生影片內容的字幕。此功能旨在透過提供準確的即時字幕來改善可存取性並增強使用者體驗。AI 分析影片的音軌以轉錄語音並建立針對準確性或自訂可進行編輯的字幕。這些字幕有助於滿足可存取性的要求，並改善依賴或偏好文字式影片支援之客群的影片參與度。
+Adobe Dynamic Media 中以 AI 產生的影片字幕，是使用人工智慧來自動產生影片內容的字幕。透過提供準確的即時字幕，這項功能可以改善無障礙輔助並增強使用者體驗。AI 分析影片的音軌以轉錄語音並建立針對準確性或自訂可進行編輯的字幕。這些字幕有助於滿足可存取性的要求，並改善依賴或偏好文字式影片支援之客群的影片參與度。
 
 若要在您的 Dynamic Media 帳戶搶先體驗 AI 產生的字幕支援，請[建立並提交 Adobe 客戶支援案例](/help/assets/dynamic-media/video.md##enable-dash)。
 
@@ -80,7 +81,7 @@ Adobe Dynamic Media 中以 AI 產生的影片字幕，是使用人工智慧來�
 
 #### 自動儲存以核心元件為主的最適化表單草稿
 
-使用者現在可以享受自動儲存功能帶來的好處，此功能會將部分完成的表單自動儲存為草稿。他們可以稍後再回來，使用同一部裝置或其他裝置完成填寫。此功能可改善組織的轉換率，因為使用者不需要從頭開始填寫表單，因此能減少放棄表單的情況。
+使用者現在可以享受自動儲存功能帶來的好處，此功能會將部分完成的表單自動儲存為草稿。使用者可以稍後再使用同一部裝置或其他裝置完成填寫。此功能可改善組織的轉換率，因為使用者不需要從頭開始填寫表單，因此能減少放棄表單的情況。
 
 
 ### AEM Forms 的搶先體驗功能 {#forms-new-early-access-features}
@@ -157,7 +158,7 @@ Adobe 管理的內容傳遞網路現在支援 [Edge Side Includes (ESI)](/help/i
 
 ## [!DNL Experience Manager] Guides {#guides}
 
-您可以在[這裡](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2406-release/whats-new-2024-06-0)找到最新版 Adobe Experience Manager Guides 的新功能和增強功能完整清單。
+您可以在[這裡](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap)找到最新版 Adobe Experience Manager Guides 的新功能和增強功能完整清單。
 
 ## Cloud Manager {#cloud-manager}
 

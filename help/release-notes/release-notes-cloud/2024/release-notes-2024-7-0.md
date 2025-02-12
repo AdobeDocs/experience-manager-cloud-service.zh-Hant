@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2024.7.0 版�
 feature: Release Information
 role: Admin
 exl-id: 6194df9d-8c3c-4c7f-be59-099b970a565a
-source-git-commit: 79bf9d669c1b8757f456b83aad87550df306c78b
+source-git-commit: ce6b0db34488a49d15d4c1197bdee80c63a2e0fa
 workflow-type: tm+mt
 source-wordcount: '1626'
-ht-degree: 76%
+ht-degree: 83%
 
 ---
 
@@ -63,15 +63,15 @@ ht-degree: 76%
 
 Asset Selector現在提供內容作者直接從選取器上傳最終資產的功能，方法是拖曳或瀏覽本機檔案系統。 此功能允許您從所選的應用程式將最終資產上傳到DAM。
 
-### Dynamic Media的早期存取功能 {#dm-early-access}
+### Dynamic Media 的搶先體驗功能 {#dm-early-access}
 
-**AI產生的視訊字幕**
+**以 AI 產生的影片字幕**
 
-Adobe Dynamic Media中AI產生的視訊字幕會使用人工智慧，自動為視訊內容產生字幕。 此功能旨在改善協助工具，並透過提供準確的即時註解來增強使用者體驗。 AI會分析視訊的音軌以轉譯語音並建立字幕，您可以編輯這些內容以提高準確性或加以自訂。 這些註解有助於滿足協助工具要求，並提升依賴或偏好文字型視訊支援之對象的視訊參與度。
+Adobe Dynamic Media 中以 AI 產生的影片字幕，是使用人工智慧來自動產生影片內容的字幕。透過提供準確的即時字幕，這項功能可以改善無障礙輔助並增強使用者體驗。AI 分析影片的音軌以轉錄語音並建立針對準確性或自訂可進行編輯的字幕。這些字幕有助於滿足可存取性的要求，並改善依賴或偏好文字式影片支援之客群的影片參與度。
 
-若要搶先使用您Dynamic Media帳戶的AI產生註解支援，請[建立並提交Adobe客戶支援案例](/help/assets/dynamic-media/video.md##enable-dash)。
+若要在您的 Dynamic Media 帳戶搶先體驗 AI 產生的字幕支援，請[建立並提交 Adobe 客戶支援案例](/help/assets/dynamic-media/video.md##enable-dash)。
 
-### 資產視圖的新功能 {#assets-view-new-features}
+### 資產檢視的新功能 {#assets-view-new-features}
 
 **Content Credentials 整合**
 
@@ -190,7 +190,7 @@ Adobe 管理的內容傳遞網路現在支援 [Edge Side Includes (ESI)](/help/i
 
 ## [!DNL Experience Manager] Guides {#guides}
 
-您可以在[這裡](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2406-release/whats-new-2024-06-0)找到最新版 Adobe Experience Manager Guides 的新功能和增強功能完整清單。
+您可以在[這裡](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap)找到最新版 Adobe Experience Manager Guides 的新功能和增強功能完整清單。
 
 ## Cloud Manager {#cloud-manager}
 

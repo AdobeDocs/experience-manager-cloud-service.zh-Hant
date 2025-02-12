@@ -3,7 +3,8 @@ title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2024.6.0 版發行�
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2024.6.0 版發行說明。'
 feature: Release Information
 role: Admin
-source-git-commit: 81aacb0c616490eed4589cb8927ea1316ca1670e
+exl-id: 4033abf4-7094-4ce4-ba93-c936062667e3
+source-git-commit: 6d548f10caa32bb5a7a6b0afe762f60058eca2fe
 workflow-type: tm+mt
 source-wordcount: '1972'
 ht-degree: 100%
@@ -132,7 +133,7 @@ When looking at the asset details, any image with content credentials added, suc
 
 AEM Forms 優先體驗計劃為您提供獨一無二的機會，讓您比其他人更早獲得尖端創新的獨家存取權，並協助推動相關開發。您可以透過該計劃存取多項創新。
 
-本發行說明列出目前版本提供的創新功能。如需優先體驗計劃提供之創新的完整清單，請參閱 [AEM Forms 優先體驗計劃文件](/help/forms/early-access-ea-features.md)。
+本發行說明列出目前版本提供的創新功能。如需搶先體驗計劃提供之創新的完整清單，請參閱 [AEM Forms 搶先體驗計劃文件](/help/forms/early-access-ea-features.md)。
 
 #### 強化機器人保護方法
 
@@ -230,7 +231,7 @@ Adobe 管理的內容傳遞網路現在支援 [Edge Side Includes (ESI)](/help/i
 
 ## [!DNL Experience Manager] Guides {#guides}
 
-您可以在[這裡](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2406-release/whats-new-2024-06-0)找到最新版 Adobe Experience Manager Guides 的新功能和增強功能完整清單。
+您可以在[這裡](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap)找到最新版 Adobe Experience Manager Guides 的新功能和增強功能完整清單。
 
 ## Cloud Manager {#cloud-manager}
 
