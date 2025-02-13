@@ -3,13 +3,13 @@ title: 互動式通訊簡介
 description: 透過AEM Forms互動式通訊，輕鬆設計動態的資料導向通訊
 feature: Release Information
 role: Admin
-source-git-commit: ae64d8acac3dee938db8ecbc1c8f5c9149b70365
+exl-id: 4f28c260-9842-467e-8abb-bcca224280b8
+source-git-commit: 2b0231b960c7e7ded0fc891124f170feb45f9f2c
 workflow-type: tm+mt
 source-wordcount: '313'
 ht-degree: 2%
 
 ---
-
 
 # 互動式通訊
 
@@ -19,7 +19,17 @@ ht-degree: 2%
 
 從產生帳戶報表的金融機構到精簡福利通知的政府機構，互動式通訊是製作高品質、安全且符合法律規範的信件，以及輕鬆有效率的首選工具。
 
+
+<!--  >[!VIDEO](https://video.tv.adobe.com/v/3444094)
+
+[!VIDEO](https://video.tv.adobe.com/v/3444094/)
+
+ ![Interactive Communication Editor](/help/assets/ic-editor.png)
+
+-->
+
 ![互動式通訊編輯器](/help/forms/assets/ic-editor.png)
+
 
 ## 核心功能
 
@@ -36,12 +46,12 @@ ht-degree: 2%
 | **多媒體** | 順暢地整合文字、影像和互動元素 |
 | **版本控制** | 追蹤變更和維護檔案歷史記錄 |
 | **範本支援** | 從頭開始建立或使用範本來有效率地產生檔案 |
-| **雲端整合** | 直接在AEM Forms中編輯檔案as a Cloud Service |
+| **雲端整合** | 直接在AEM Forms as a Cloud Service中編輯檔案 |
 
 
 ## 上線
 
-可在Formsas a Cloud Service部署的搶先存取計畫下使用的互動式通訊編輯器。 若要透過電子郵件要求存取您的組織ID，以及從您的正式地址將Formsas a Cloud Service部署的方案詳細資料傳送至[aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)。 取得存取權後，開始[建立您的第一封通訊](https://video.tv.adobe.com/v/3444094/)。
+可在Forms as a Cloud Service部署的搶先存取計畫下使用的互動式通訊編輯器。 若要透過電子郵件要求存取許可權，請從您的正式地址將您組織ID以及Forms as a Cloud Service部署的方案詳細資料傳送至[aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)。 取得存取權後，開始[建立您的第一封通訊](https://video.tv.adobe.com/v/3444094/)。
 
 
 ## 下一步
