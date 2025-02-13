@@ -3,10 +3,10 @@ title: 如何為最適化Forms設定立即可用的Microsoft Dynamics 365表單�
 description: 瞭解如何整合Microsoft Dynamics 365與最適化Forms。
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
-source-git-commit: fadbe44e0dba4e7dcbad230c286d6126e68910bc
+source-git-commit: 25284474793742a1af28e3c81976a3061d9eaf3e
 workflow-type: tm+mt
 source-wordcount: '915'
-ht-degree: 2%
+ht-degree: 1%
 
 ---
 
@@ -68,8 +68,9 @@ AEM as a Cloud Service提供多種立即可用的提交動作，用於處理表�
 
 設定好上述必要條件後，您就可以繼續整合Adaptive Forms與Microsoft® Dynamics 365。 若要在提交表單時傳送資料至Microsoft® Dynamics 365，請遵循下列步驟：
 
-[1. 設定Microsoft Dynamics](#1-configure-cloud-service-configuration-for-microsoft-dynamics)的雲端服務組態
-[2。 建立表單資料模型(FDM)](#2-create-form-data-model-fdm)
+[1.設定Microsoft Dynamics的雲端服務設定](#1-configure-cloud-service-configuration-for-microsoft-dynamics)
+
+[2.建立表單資料模型(FDM)](#2-create-form-data-model-fdm)
 
 ### 1.設定Microsoft Dynamics的雲端服務設定
 
