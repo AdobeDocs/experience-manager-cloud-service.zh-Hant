@@ -1,54 +1,41 @@
 ---
-title: Adobe Experience Manager as a Cloud Service 中 Cloud Manager 2025.1.0 的發行說明
-description: 了解 AEM as a Cloud Service 中 Cloud Manager 2025.1.0 的發行資訊。
+title: Adobe Experience Manager as a Cloud Service 中 Cloud Manager 2025.2.0 的發行說明
+description: 了解 AEM as a Cloud Service 中 Cloud Manager 2025.2.0 的發行資訊。
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: c2a0961cae6d36d8ea3116c6e7982889257f90c8
 workflow-type: tm+mt
-source-wordcount: '922'
-ht-degree: 97%
+source-wordcount: '720'
+ht-degree: 32%
 
 ---
 
-# Adobe Experience Manager as a Cloud Service 中 Cloud Manager 2025.1.0 的發行說明 {#release-notes}
+# Adobe Experience Manager as a Cloud Service 中 Cloud Manager 2025.2.0 的發行說明 {#release-notes}
 
 <!-- https://wiki.corp.adobe.com/pages/viewpage.action?pageId=3389843928 -->
 
-了解 AEM (Adobe Experience Manager) as a Cloud Service 中 Cloud Manager 2025.1.0 的發行資訊。
+了解 AEM (Adobe Experience Manager) as a Cloud Service 中 Cloud Manager 2025.2.0 的發行資訊。
 
->[!NOTE]
->
->請參閱 [Adobe Experience Manager as a Cloud Service 最新發行說明](/help/release-notes/release-notes-cloud/release-notes-current.md)。
+
+另請參閱Adobe Experience Manager as a Cloud Service ](/help/release-notes/release-notes-cloud/release-notes-current.md)的[最新發行說明。
 
 ## 發行日期 {#release-date}
 
-AEM as a Cloud Service 中 Cloud Manager 2025.1.0 的發行日期是 2025 年 1 月 22 日星期三。
+AEM as a Cloud Service中的Cloud Manager 2025.2.0發行日期是2025年2月13日星期四。
 
-下一個版本預計於 2025 年 2 月 13 日星期四發行。
-
+下一個預計發行日期為2025年3月13日星期四。
 
 ## 新增功能 {#what-is-new}
 
-* **程式碼品質規則 - SonarQube 伺服器升級：** Cloud Manager 程式碼品質步驟將從 Cloud Manager 2025.2.0 版本 (預定於 2025 年 2 月 13 日星期四發行) 開始使用 SonarQube Server 9.9。
+* **程式碼品質規則的更新。**
+從2025年2月13日星期四開始，Cloud Manager程式碼品質步驟現在使用升級的SonarQube 9.9.5.90363版。
 
-  為了做好準備，更新的 SonarQube 規則現已在 [程式碼品質規則中提供](/help/implementing/cloud-manager/code-quality-testing.md#understanding-code-quality-rules)。
+  更新後的規則 (可透過[此連結](/help/implementing/cloud-manager/code-quality-testing.md#understanding-code-quality-rules)供 AEM as a Cloud Service 的 Cloud Manager 使用) 會決定 Cloud Manager 管道的安全性評分和程式碼品質。此更新可能會影響您的品質門檻，也可能會阻礙部署。
 
-  您可以透過設定以下管道文字變數來「提前檢查」新規則：
+* **Java 17和Java 21組建支援。**
 
-  `CM_BUILD_IMAGE_OVERRIDE` = `self-service-build:sonar-99-upgrade-java17or21`
-
-  此外，設定以下變數以確保程式碼品質步驟執行相同認可 (通常會跳過相同 `commitId`)：
-
-  `CM_DISABLE_BUILD_REUSE` = `true`
-
-![設定變數頁面](/help/implementing/cloud-manager/release-notes/assets/variables-config.png)
-
->[!NOTE]
->
->Adobe 建議建立一個新的 CI/CD 程式碼品質管道，並將其配置到與主生產管道相同的分支。在 *2025 年 2 月 13 日發布之前設定適當的變數* ，以驗證新的強制規則不會引入阻止程序。
-
-* **Java 17 和 Java 21 版本編號支援：** 客戶現在可以使用 Java 17 或 Java 21 版本建置，因此有權使用效能增強和新語言等功能。若要了解設定步驟 (包括更新 Maven 專案和資料庫版本)，請參閱「[建置環境](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)」。當建置版本設定為 Java 17 或 Java 21 時，部署的執行階段為 Java 21。
+  客戶現在可以使用Java 17或Java 21進行建置，以獲得效能增強功能和新語言功能。 若要了解設定步驟 (包括更新 Maven 專案和資料庫版本)，請參閱「[建置環境](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)」。當建置版本設定為 Java 17 或 Java 21 時，部署的執行階段為 Java 21。
 
    * **功能啟用**
       * 此功能將於 2025 年 2 月 13 日星期四為所有客戶啟用，同時預設為新的 SonarQube 版本。
@@ -59,52 +46,46 @@ AEM as a Cloud Service 中 Cloud Manager 2025.1.0 的發行日期是 2025 年 1 
       * 沙盒和開發環境從 2 月開始將逐步推展至所有 Cloud Manager 環境，並於 4 月擴大至生產環境。
       * 客戶使用 Java 11 建置時，如果希望&#x200B;*提早*&#x200B;採用 Java 21 執行階段，可以透過 [aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com)&lt;/oba144>聯絡 Adobe。
 
-* **「內容傳遞網路設定」重新命名為「網域對應」：**&#x200B;為了改善 AEM Cloud Manager 的使用者介面，標籤「內容傳遞網路設定」現已重新命名為「網域對應」。這項變更可改善術語與功能的一致性。 <!-- CMGR-64738 -->
+* Edge Delivery Services的&#x200B;**99.99%正常運作時間報告。**
+高可用性99.99%的連續運作時間報告現在可用於符合資格的Edge Delivery Services計畫。 若要啟用此功能，客戶必須成功上線其Edge Delivery Services網站，並在Cloud Manager中套用其99.99%的Service level agreement (SLA)。
 
-  ![使用者介面中的「內容傳遞網路設定」重新命名為「網域對應」](/help/implementing/cloud-manager/release-notes/assets/domain-mappings.png)
+  另請參閱[SLA](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#sla)。
 
-* **使用一個按鍵來佈建 Edge Delivery 網站：** 對於擁有適當權限和授權的使用者，Cloud Manager 目前允許只需使用一個按鍵即可建立範本 Edge Delivery Services 網站。這個簡化流程可提供以下自動化功能：
+* **改善Edge Delivery Services的使用者邀請體驗。**
+邀請使用者加入與Edge Delivery Services相關聯的內容存放庫的體驗已有所改善。<!-- CMGR-65331 -->
 
-   * **GitHub 整合**  - 在現有組織內自動建立 GitHub 存放庫，並預先設定 Edge Delivery Services 的樣板範本。
-   * **AEM Code Sync 應用程式安裝** - 在存放庫上安裝 AEM Code Sync 應用程式，確保可緊密地進行同步和部署。
-   * **內容共同作業設定**  - 連結指定的 Google Drive 資料夾進行內容儲存，為內容管理提供共同作業環境。
-   * **內容發佈**  - 使用者現在可以直接從 Cloud Manager 使用者介面發佈已佈建網站的內容，這樣可簡化工作流程並提高效率。
-   * **增強共同作業**  - 此平台允許使用者將多位共同作業者新增至 Google Drive 內容儲存資料夾中，這樣有利團隊合作並提供內容。
+* **在發佈執行個體上自動建立管理員設定檔。**
+之前，Cloud Manager允許在發佈執行個體上手動建立管理員設定檔，但預設不支援自動建立。 透過此更新，現在可在發佈執行個體上自動建立管理員設定檔，從而提高可用性並縮短客戶的設定時間。
 
-  這些增強功能旨在提高自動化、簡化設定流程，並增強 Edge Delivery Services 使用者的共同作業。 <!-- CMGR-59362 -->
+  如需詳細資訊，請參閱[自訂許可權](/help/implementing/cloud-manager/custom-permissions.md)。
 
-  請參閱「![佈建 Edge Delivery 網站](/help/implementing/cloud-manager/release-notes/assets/eds-one-click-60.png)」。
+  ![管道活動篩選](/help/implementing/cloud-manager/release-notes/assets/product-profiles.png)
 
-  ![佈建 Edge Delivery 網站對話框](/help/implementing/cloud-manager/release-notes/assets/eds-provision-60.png)
+* **轉換至Cloud Service環境的OAuth。**
+新的Cloud Service環境現在會針對Adobe Developer Console整合專案使用OAuth型服務對服務驗證，而非先前使用的JWT驗證方法。 JWT驗證已過時，並計畫於2025年6月終止服務。
 
-* **已增強對 Edge Delivery Services 網站的支援：** Cloud Manager 現在可支援最新 Edge Delivery Services 網站的上線。這項更新包括對 CDN 和傳遞堆疊的全面重建，進而提高穩健性和可維護性。
+* **支援EC （橢圓曲線）私密金鑰(secp384r1)。**
+Cloud Manager現在支援`secp384r1`橢圓曲線(EC)私密金鑰，提供客戶管理的OV/EV SSL憑證的改良安全性與合規性。
+如需詳細資訊，請參閱[客戶管理的OV/EV SSL憑證需求](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md)。<!-- CMGR-63636 -->
 
-* **管道的進階篩選選項：** Cloud Manager 現在在管道頁面上提供進階篩選選項，讓您快速存取相關資料並提高部署效率。一些關鍵功能包括：
+<!--
+## Early adoption program {#early-adoption}
 
-   * **多重標準篩選：** 使用如管道名稱、環境和部署代碼等篩選器來縮小搜尋結果。
-   * **簡化的管道搜尋：** 輕鬆找到特定管道，以更快進行導覽並改善工作流程管理。
-
-  總而言之，這些增強功能可讓管理和部署管道更具效率並更易使用。
-
-  ![管道篩選器功能](/help/implementing/cloud-manager/release-notes/assets/pipeline-filters.png)
-
-* **Edge Delivery Service 的自助 CDN 設定：** Edge Delivery Service 的新採用者現在可以透過 Cloud Manager 單獨設定他們的 CDN。此更新會將服務支援從 `.hlx.page/live` 擴展到新的 `.aem.page/live`，為使用者提供更佳靈活性和簡化的設定。
-
-## 早期採用方案 {#early-adoption}
-
-成為 Cloud Manager 早期採用方案的一部分，並有機會測試即將推出的功能。
-
-* **早期採用者計畫更新 - Bitbucket 和 GitLab 的 PR 驗證支援：** Cloud Manager 現在支援對 Bitbucket 和 GitLab 的雲端版本和自行託管版本進行提取請求 (PR) 驗證。透過此功能，客戶可以在合併 PR 之前根據 Adob&#x200B;&#x200B;e 的程式碼品質臨界值測試其程式碼變更。在合併之前確保更高的程式碼品質，這項增強功能可明顯提高生產管道中程式碼變更的成功率，縮短了上市時間並簡化了開發工作流程。
-
-  有關「自備 Git」(現已支援 GitLab 和 Bitbucket) 以及註冊成為早期採用者的進一步資訊，請參閱 [Cloud Manager 2024 年 10 月發行說明](/help/implementing/cloud-manager/release-notes/2024/2024-10-0.md##gitlab-bitbucket)。
-
-* **進階測試環境：**&#x200B;專為縮短開發與生產之間的差距而設計的解決方案。這個環境根據企業需求量身打造，能複製生產級規範，支援準確的使用者驗收測試 (UAT) 和全面的效能評估。
-
-  如果您有興趣加入Early Adopter計畫，請[完成此表單](https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Furldefense.com%2Fv3%2F__https%3A%2Fwww.feedbackprogram.adobe.com%2Fh%2Fs%2F6N425LYG1jQ1Nc0F20Zllt__%3B!!OgNkHJCYlf_CHg!fIp-QrZ9si3kcUIjRCniEzqAAa8FcU1iN34SGQFtlcQ36eUQXOZWbDHP7oZajqddgpuOMAVL5CQpkZ6ths76Qks8%24&amp;data=05%7C02%7Cpanchapa%40adobe.com%7Cf81bcaa4b20544f1818b08dccd07c78c%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C638610680502164019%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;sdata=aGo6zz2ldPrta4lpvo3CLNENR5ghHDDCPbG1adUaNZQ%3D&amp;reserved=0)，並傳送電子郵件至[earlyadopter_cs_advtestenvironment@adobe.com](mailto:earlyadopter_cs_advtestenvironment@adobe.com) （含您的`OrgID`）。
+Be a part of Cloud Manager's early adoption program and have a chance to test upcoming features. -->
 
 
+## 錯誤修正
 
-<!-- ## Bug fixes -->
+* **(UI)修正Cloud Manager中無法設定網域CDN的問題。**
+客戶嘗試在Cloud Manager中新增CDN設定時，從下拉式選單中選取網域時遭遇熒幕錯誤。 這個使用者介面的錯誤使得生產環境中的網域對應無法進行，進而封鎖了設定程式。
+
+  此外，儘管已從使用者介面中移除某些網域，這些網域在後端仍無法存取。 此問題會導致與現有CDN設定衝突。
+
+  透過此修正，您現在可以從下拉式清單中成功選取網域，而不會發生錯誤。 已解決阻止重新配置網域的後端不一致。 最後，改善的驗證現在可確保衝突網域在重新新增之前已正確移除。<!-- CMGR-64888 -->
+* **（後端）修正導致SSL到期通知多次傳送的問題。**
+已識別出以下錯誤：SSL到期通知排程器（設計為在午夜每日執行一次）每天錯誤地觸發兩次(在午夜觸發一次，然後在午夜12:30再次觸發。 此問題導致傳送多個有關過期SSL憑證的重複通知。
+
+  通知排程器現在每天只能正確執行一次。 而且，您不會再收到重複的SSL到期通知。<!-- CMGR-64748 -->
 
 
 
