@@ -5,9 +5,9 @@ exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
 source-git-commit: 32cc525d5443f455f1579ef027c08796ffc209e7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2543'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -35,8 +35,8 @@ Adobe 會持續評估產品功能，以逐漸利用更現代化的替代方案�
 
 | 功能 | 汰除功能 | 替代方案 |
 | ------------ | ------------------ | ----------- |
-| Sites | [PWA功能](/help/sites-cloud/authoring/sites-console/enable-pwa.md) | 無 |
-| Sites | [SPA編輯器](/help/implementing/developing/hybrid/introduction.md) | 在AEM中管理Headless內容的偏好編輯器為： <br>- [用於視覺化編輯的通用編輯器](/help/edge/wysiwyg-authoring/authoring.md)。<br>- [用於表單式編輯的內容片段編輯器](/help/assets/content-fragments/content-fragments-managing.md)。 |
+| Sites | [PWA 功能](/help/sites-cloud/authoring/sites-console/enable-pwa.md) | 無 |
+| Sites | [SPA 編輯器](/help/implementing/developing/hybrid/introduction.md) | AEM 中用於管理 Headless 內容的首選編輯器為：<br>- [通用編輯器](/help/edge/wysiwyg-authoring/authoring.md)，用於視覺化編輯。<br>- [內容片段編輯器](/help/assets/content-fragments/content-fragments-managing.md)，用於表單型編輯。 |
 | [!DNL Sites] | [JavaScript Use API](https://github.com/adobe/htl-spec/blob/master/SPECIFICATION.md#42-javascript-use-api) | [Java Use API](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-htl/content/java-use-api) |
 | [!DNL Sites] | **社交媒體狀態**&#x200B;的體驗片段屬性。 | 此功能規劃於近日移除。 |
 | [!DNL Sites] | 基於範例的簡單內容片段。 | 現在[基於模型的結構化內容片段](/help/assets/content-fragments/content-fragments-models.md)。 |
