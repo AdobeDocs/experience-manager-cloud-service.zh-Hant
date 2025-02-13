@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的運作方式以及該軟體可以為您做哪些事。
 breadcrumb-title: 使用手冊
 user-guide-title: 'AEM as a Cloud Service '
-source-git-commit: 901172d201e968ec00eb8c988107a6a9fb7a5e7b
+source-git-commit: 3ab46e78581893591f56793bc0561aea4f2fbef5
 workflow-type: tm+mt
-source-wordcount: '6058'
+source-wordcount: '6077'
 ht-degree: 99%
 
 ---
@@ -737,7 +737,8 @@ ht-degree: 99%
          + [設定 [!DNL Microsoft Dynamics] OData](/help/forms/ms-dynamics-odata-configuration.md)
          + [使用 OAuth 2.0 用戶端憑證流將最適化表單連接到 Salesforce 應用程式](/help/forms/aem-forms-salesforce-integration.md)
          + [設定 [!DNL Azure] 儲存空間](/help/forms/configure-azure-storage.md)
-         + [設定 [!DNL Microsoft Dynamics 365] 和 [!DNL Salesforce] 雲端服務](/help/forms/configure-msdynamics-salesforce.md)
+         + [設定 [!DNL Microsoft Dynamics 365] 雲端服務](/help/forms/configure-msdynamics.md)
+         + [設定Salesforce雲端服務](/help/forms/configure-salesforce.md)
          + [建立表單資料模型](/help/forms/create-form-data-models.md)
          + [處理表單資料模型](/help/forms/work-with-form-data-model.md)
          + [使用表單資料模型](/help/forms/using-form-data-model.md)
@@ -761,8 +762,11 @@ ht-degree: 99%
             + [為最適化表單設定提交動作](/help/forms/configure-submit-actions-core-components.md)
             + [將最適化表單提交至 Azure Blob 儲存體](/help/forms/configure-submit-action-azure-blob-storage.md)
             + [將最適化表單提交至 Microsoft](/help/forms/configure-submit-action-onedrive.md)
-            + [將最適化表單連接到 Microsoft](/help/forms/configure-submit-action-sharepoint.md)
-            + [使用授權範圍設定具有有限存取權限的 SharePoint 網站](/help/forms/configure-sharepoint-site-limited-access.md)
+            + 將最適化表單連線至Microsoft® SharePoint{#connect-to-sharepoint}
+               + [將最適化表單連接到 Microsoft](/help/forms/configure-submit-action-sharepoint.md)
+               + [提交至SharePoint檔案庫](/help/forms/connect-forms-to-sharepoint-document-library.md)
+               + [提交至SharePoint清單](/help/forms/connect-forms-to-sharepoint-list.md)
+               + [使用授權範圍設定具有有限存取權限的 SharePoint 網站](/help/forms/configure-sharepoint-site-limited-access.md)
             + [將 AEM 最適化表單與 AEM 工作流程整合](/help/forms/configure-submit-action-workflow.md)
             + [設定提交到最適化表單的 REST 端點提交動作](/help/forms/configure-submit-action-restpoint.md)
             + [設定最適化表單的傳送電子郵件提交動作](/help/forms/configure-submit-action-send-email.md)
