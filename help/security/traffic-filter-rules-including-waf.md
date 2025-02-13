@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '4049'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 97%
 
 流量篩選規則的子類別需要增強的安全性授權或 WAF-DDoS 保護授權。這些強大的規則也稱為 WAF (Web 應用程式防火牆) 流量篩選規則 (或簡稱 WAF 規則)，且可以存取本文稍後將進行說明 [WAF 標幟](#waf-flags-list)。
 
-流量篩選器規則可透過Cloud Manager設定管道部署至開發、測試和生產環境型別。 可使用命令列工具將設定檔案部署到快速開發環境(RDE)。
+流量篩選器規則可以透過 Cloud Manager 設定管道，部署至開發、中繼和生產環境類型。可以使用命令列工具將設定檔案部署至快速開發環境 (RDE) 中。
 
 [按照教學課程進行操作](#tutorial)，快速建立此功能的具體專業知識。
 
@@ -63,7 +63,7 @@ Adobe 邀請您透過傳送電子郵件至：**aemcs-waf-adopter@adobe.com**，�
 
 例如，在 Apache 層，客戶可以設定 [Dispatcher 模組](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration#configuring-access-to-content-filter)或 [ModSecurity](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/foundation/security/modsecurity-crs-dos-attack-protection) 以限制對特定內容的存取。
 
-如本文所述，流量篩選器規則可以使用Cloud Manager的[設定管道](/help/operations/config-pipeline.md)部署到Adobe管理的CDN。 除了根據 IP 位址、路徑和標頭等屬性的流量篩選規則，或根據設定速率限制的規則之外，客戶也可以授權稱為 WAF 規則的強大流量篩選規則子類別。
+如本文所述，流量篩選器規則可以使用Cloud Manager的[設定管道](/help/operations/config-pipeline.md)部署到Adobe Managed CDN。 除了根據 IP 位址、路徑和標頭等屬性的流量篩選規則，或根據設定速率限制的規則之外，客戶也可以授權稱為 WAF 規則的強大流量篩選規則子類別。
 
 ## 建議的流程 {#suggested-process}
 

@@ -27,7 +27,7 @@ ht-degree: 19%
 * Forms-13998：新增摺疊式功能表元件。
 * Forms-17913：新增無線電群組的卡片變體。
 * Forms-17333：在AEM表單提交中啟用HTML電子郵件範本。
-* Forms-17702：啟用將Output Sync API中產生的PDF上傳至Azure Blob儲存體。
+* Forms-17702：啟用將Output Sync API中產生的PDF上傳至Azure Blob儲存體的功能。
 * SITES-28282：使用通用編輯器的Edge Delivery：提供基本路徑、網站名稱和組織，作為任何頁面的頁面資訊。
 * SITES-27055：使用通用編輯器的Edge Delivery：支援反向Proxy servlet中的查詢引數。
 * SITES-26796：使用通用編輯器的Edge Delivery：支援分類試算表的自訂欄。
@@ -66,7 +66,7 @@ ht-degree: 19%
 * SITES-26543：使用通用編輯器的Edge Delivery：修正沒有模型呈現錯誤標籤的空白區塊。
 * SITES-26857：使用通用編輯器的Edge Delivery：針對檔案型設定，修正UI中顯示的網站驗證權杖。
 * SITES-26662：使用通用編輯器的Edge Delivery：修正區分大小寫的大量中繼資料的問題。
-* SITES-28133： Publish若設為「預覽」，導致內容可用於生產環境。
+* SITES-28133：發佈到「預覽」會造成內容可用於生產環境。
 * SITES-27187：排程的頁面/資產啟用，包括參考（實驗）未命中發佈參考。
 * SITES-27264： 2個與Content-Fragment-LiveCopy-Creation相關的Selenium測試在主版上一致失敗。
 * SITES-26559：將內容片段模型的查詢釘選到cqPageLucene索引。
@@ -80,7 +80,7 @@ ht-degree: 19%
 * SITES-27589：具有多個內容/片段參考欄位的內容片段模型的UUID升級失敗。
 * SITES-26679：取消發佈內容片段模型應僅驗證已發佈的引用。
 * SITES-26666：referencesTree和參照端點傳回不同的結果。
-* SITES-26499：標籤欄位值在GET片段中的順序錯誤，且PATCH會隨機排列順序。
+* SITES-26499：GET片段中的標籤欄位值順序錯誤，PATCH將順序隨機化。
 * SITES-26585：修正結構描述中的小型說明錯誤。
 * SITES-26647：非管理員使用者的刪除端點和UnpublishFragments參考驗證可能會失敗。
 * SITES-26458： [搜尋內容片段模型]依復寫狀態修正篩選。

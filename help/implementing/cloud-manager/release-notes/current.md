@@ -7,7 +7,7 @@ exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '922'
-ht-degree: 87%
+ht-degree: 97%
 
 ---
 
@@ -59,7 +59,7 @@ AEM as a Cloud Service 中 Cloud Manager 2025.1.0 的發行日期是 2025 年 1 
       * 沙盒和開發環境從 2 月開始將逐步推展至所有 Cloud Manager 環境，並於 4 月擴大至生產環境。
       * 客戶使用 Java 11 建置時，如果希望&#x200B;*提早*&#x200B;採用 Java 21 執行階段，可以透過 [aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com)&lt;/oba144>聯絡 Adobe。
 
-* **「CDN設定」已重新命名為「網域對應」：**&#x200B;隨著AEM Cloud Manager的使用者介面改良專案，「CDN設定」標籤現在已重新命名為「網域對應」。 這項變更可改善術語與功能的一致性。 <!-- CMGR-64738 -->
+* **「內容傳遞網路設定」重新命名為「網域對應」：**&#x200B;為了改善 AEM Cloud Manager 的使用者介面，標籤「內容傳遞網路設定」現已重新命名為「網域對應」。這項變更可改善術語與功能的一致性。 <!-- CMGR-64738 -->
 
   ![使用者介面中的「內容傳遞網路設定」重新命名為「網域對應」](/help/implementing/cloud-manager/release-notes/assets/domain-mappings.png)
 
@@ -96,11 +96,11 @@ AEM as a Cloud Service 中 Cloud Manager 2025.1.0 的發行日期是 2025 年 1 
 
 * **早期採用者計畫更新 - Bitbucket 和 GitLab 的 PR 驗證支援：** Cloud Manager 現在支援對 Bitbucket 和 GitLab 的雲端版本和自行託管版本進行提取請求 (PR) 驗證。透過此功能，客戶可以在合併 PR 之前根據 Adob&#x200B;&#x200B;e 的程式碼品質臨界值測試其程式碼變更。在合併之前確保更高的程式碼品質，這項增強功能可明顯提高生產管道中程式碼變更的成功率，縮短了上市時間並簡化了開發工作流程。
 
-  如需有關「自攜Git」（現在支援GitLab和Bitbucket）以及註冊為早期採用者的詳細資訊，請參閱[Cloud Manager 2024年10月發行說明](/help/implementing/cloud-manager/release-notes/2024/2024-10-0.md##gitlab-bitbucket)。
+  有關「自備 Git」(現已支援 GitLab 和 Bitbucket) 以及註冊成為早期採用者的進一步資訊，請參閱 [Cloud Manager 2024 年 10 月發行說明](/help/implementing/cloud-manager/release-notes/2024/2024-10-0.md##gitlab-bitbucket)。
 
-* **進階測試環境：**&#x200B;專門建置的解決方案，旨在縮短開發及生產之間的差距。 此環境針對企業需求量身打造，可複製生產層級的規格，以支援精確的使用者驗收測試(UAT)和完整的效能評估。
+* **進階測試環境：**&#x200B;專為縮短開發與生產之間的差距而設計的解決方案。這個環境根據企業需求量身打造，能複製生產級規範，支援準確的使用者驗收測試 (UAT) 和全面的效能評估。
 
-  如果您有興趣加入Early Adopter計畫，請[完成此表單](https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Furldefense.com%2Fv3%2F__https%3A%2Fwww.feedbackprogram.adobe.com%2Fh%2Fs%2F6N425LYG1jQ1Nc0F20Zllt__%3B!!OgNkHJCYlf_CHg！fIp-QrZ9si3kcUIjRCniEzqAAa8FcU1iN34SGQFtlcQ36eUQXOZWbDHP7oZajqdgpuOMAVL5CQpkZ6ths76A qks8%24&amp;data=05%7C02%7Cpanchapa%40adobe.com%7Cf81bcaa4b20544f1818b08dccd07c78c%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C638610680502164019%7CUnknown%7CTWFpbGZsb3d8eyJWIawMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;sdata=aGo6zz2ldPrta4lpvo3CLNENR5ghHDDCPbG1adUaNZQ%3D&amp;reserved=0)，並傳送電子郵件至[earlyadopter_cs_advtestenvironment@adobe.com](mailto:earlyadopter_cs_advtestenvironment@adobe.com) （含您的`OrgID`）。
+  如果您有興趣加入Early Adopter計畫，請[完成此表單](https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Furldefense.com%2Fv3%2F__https%3A%2Fwww.feedbackprogram.adobe.com%2Fh%2Fs%2F6N425LYG1jQ1Nc0F20Zllt__%3B!!OgNkHJCYlf_CHg!fIp-QrZ9si3kcUIjRCniEzqAAa8FcU1iN34SGQFtlcQ36eUQXOZWbDHP7oZajqddgpuOMAVL5CQpkZ6ths76Qks8%24&amp;data=05%7C02%7Cpanchapa%40adobe.com%7Cf81bcaa4b20544f1818b08dccd07c78c%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C638610680502164019%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;sdata=aGo6zz2ldPrta4lpvo3CLNENR5ghHDDCPbG1adUaNZQ%3D&amp;reserved=0)，並傳送電子郵件至[earlyadopter_cs_advtestenvironment@adobe.com](mailto:earlyadopter_cs_advtestenvironment@adobe.com) （含您的`OrgID`）。
 
 
 
