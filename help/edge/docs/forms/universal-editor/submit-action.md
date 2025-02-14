@@ -5,13 +5,13 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: ac005e5bc143c35eb29ba177a26aa6cc33897db4
+exl-id: beee9be7-8215-496b-9fb9-61fba000a055
+source-git-commit: ba38294710553145a670ea42dd2b7571fa4eba7b
 workflow-type: tm+mt
-source-wordcount: '739'
+source-wordcount: '733'
 ht-degree: 12%
 
 ---
-
 
 # 最適化表單提交動作
 
@@ -44,7 +44,7 @@ ht-degree: 12%
 1. 指定REST端點URL
 1. 您也可以&#x200B;**啟用POST要求**，並提供URL以張貼要求。
 
-{width=50%，height=50%}![啟用最適化表單的POST要求](/help/forms/assets/enable-post-request-ue.png)
+![啟用最適化表單的POST要求](/help/forms/assets/enable-post-request-ue.png)
 
 >[!NOTE]
 >
@@ -59,7 +59,7 @@ ht-degree: 12%
 1. 它有助於透過直接將表單提交整合到電子郵件通知中來簡化工作流程。
 1. 它可協助組織自訂電子郵件內容，使其適合特定通訊需求。
 
-通用編輯器中的{width=50%，height=50%}![最適化表單屬性](/help/forms/assets/submit-actions-ue.png)
+通用編輯器中的![最適化表單屬性](/help/forms/assets/submit-actions-ue.png)
 
 
 若要將提交動作設定為表單提交的電子郵件：
@@ -140,5 +140,3 @@ ht-degree: 12%
 1. 按一下後，您會看到下列選項：
    * **[!UICONTROL 提交時]**：提交時可協助您自訂要在提交表單時顯示的訊息。 依預設，成功提交表單時，會向使用者顯示「感謝您提交表單」自訂訊息。
 您也可以選取**[!UICONTROL 顯示訊息]**&#x200B;的選項，並在RTF **編輯器**&#x200B;中新增/編輯您的訊息，自訂表格提交時的感謝訊息。
-
-
