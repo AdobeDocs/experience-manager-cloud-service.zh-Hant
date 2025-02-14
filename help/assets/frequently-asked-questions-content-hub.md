@@ -3,9 +3,9 @@ title: Content Hub 常見問題 (FAQ)
 description: 了解一些 Content Hub 最常見問題 (FAQ) 的答案。
 exl-id: 74b5c308-c1d3-4787-9f1f-f64cf09d298a
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1112'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -51,7 +51,7 @@ Content Hub 是 Adobe 提供和維護的功能，沒有任何需要透過開發/
 * Admin Console 管理員會將[一些選定的使用者](/help/assets/deploy-content-hub.md#onboard-content-hub-users)新增到 Content Hub 產品設定檔，以便他們開始評估。
 * 評估完成後，作者執行個體中的 AEM 使用者可以移除測試資產的核准、為 Content Hub 核准生產資產，然後 Admin Console 管理員可以新增所有需要存取 Content Hub 和已核准內容的使用者。恭喜，您的 Content Hub 現已上線。
 
-在沙箱程式或其編寫生產環境中有一項 Content Hub 的搶先體驗方案。如需更多資訊，請參閱[沙箱程式簡介](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)。若要進一步瞭解搶先體驗方案，請洽詢您的Adobe帳戶團隊。
+在沙箱程式或其編寫生產環境中有一項 Content Hub 的搶先體驗方案。如需更多資訊，請參閱[沙箱程式簡介](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)。若要了解有關搶先體驗方案的詳細資訊，請聯絡您的 Adobe 客戶團隊。
 
 Content Hub 目前尚不適用於非生產環境 (中繼和開發)。Assets Ultimate 的中繼/開發環境預計將於 2025 年 3 月推出。
 

@@ -5,9 +5,9 @@ exl-id: 9418aac6-a8c4-43f7-b329-b02149fe2d53
 feature: Onboarding
 role: Admin, User, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '941'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -19,11 +19,11 @@ ht-degree: 96%
 >
 >如果您熟悉 Cloud Manager 或想直接跳到附加元件的設定和使用，請跳至「[建立方案和管道](create-program.md)」。
 >
->如果您想了解 Cloud Manager 和 AEM 如何搭配運作以建立示範環境，以及如何設定並使用您自己的環境，請繼續閱讀目前文件。
+>如果您想了解 Cloud Manager 和 AEM 如何共同運作以建立示範環境，以及如何設定並使用您自己的環境，請繼續閱讀目前文件。
 
 ## 目標 {#objective}
 
-本文件協助您了解參考示範附加元件的安裝流程如何運作，並說明不同部分如何搭配。閱讀文件後，您應該：
+本文件協助您了解參考示範附加元件的安裝流程如何運作，並說明不同部分如何共同運作。閱讀文件後，您應該：
 
 * 對 Cloud Manager 有基本的了解。
 * 了解管道如何將內容和設定傳遞到 AEM。
@@ -104,11 +104,11 @@ AEM 參考示範附加元件包含多個範本，滿足各種測試和示範需�
 * 了解管道如何將內容和設定傳遞到 AEM。
 * 了解如何透過數次點選即可建立預填示範內容的網站。
 
-在此知識的基礎上繼續您的AEM快速網站建立歷程，方法是檢閱[建立程式和管道](create-program.md)，瞭解如何設定新程式和管道以部署附加元件。
+以此知識為基礎並接著檢閱「[建立方案和管道](create-program.md)」，以繼續您的 AEM 快速建立網站歷程，您可在該文件中了解如何設定新方案和管理來部署附加元件。
 
 ## 其他資源 {#additional-resources}
 
-因為我們建議您檢閱「[建立方案和管理](create-program.md)」並繼續快速建立網站歷程的下個部分，所以提供以下其他可用資源。這些資源深入探討本文件提及的概念。但是這並不是繼續執行歷程的必要條件。
+雖然建議您檢閱「[建立方案和管理](create-program.md)」以繼續快速建立網站歷程的下一部分，但下列是一些其他選用資源。這些資源深入探討本文件提及的概念。但是這並不是繼續執行歷程的必要條件。
 
 * [了解方案和方案類型](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/program-types.html) - 從這裡開始了解即時方案和沙箱方案之間的差異。
 * [網站範本](/help/sites-cloud/administering/site-creation/site-templates.md) - 如果您想了解有關網站範本的結構以及如何使用它們建立網站的更多資訊，請參閱本文件。

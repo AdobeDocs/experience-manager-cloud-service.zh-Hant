@@ -5,9 +5,9 @@ exl-id: 9106ccf5-dc90-4ccb-95bd-7dd5392cd174
 feature: Release Information
 role: Admin
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '832'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -76,7 +76,7 @@ ht-degree: 98%
 
 <br>
 
-![水準長條圖顯示虛擬角色及其在AEM Assets團隊中的參與層級](/help/overview/assets/team_involvement2.png)。
+![顯示虛構角色及其在 AEM Assets 團隊之參與等級的橫條圖](/help/overview/assets/team_involvement2.png)。
 
 >[!TIP]
 >

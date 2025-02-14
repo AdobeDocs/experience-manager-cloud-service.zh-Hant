@@ -5,9 +5,9 @@ feature: Onboarding
 role: Admin, User, Developer
 exl-id: c00f5d28-85af-4bd3-a50c-913d1342241c
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '878'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -18,11 +18,11 @@ ht-degree: 93%
 >title="指派 AEM 產品設定檔"
 >abstract="您無權使用 Experience Manager Assets。請聯絡您的管理員。"
 
-在[入門歷程](overview.md)的這一部分，您將瞭解如何使用AEM產品設定檔授與您的團隊對AEM的存取權。
+在這個部分的[上線歷程](overview.md)中，您會了解如何使用 AEM 產品設定檔授予您的團隊存取 AEM 的權限。
 
 ## 目標 {#objective}
 
-閱讀此上線過程中的上一個檔案[建立環境](create-environments.md)並設定您的雲端資源後，使用AEM產品設定檔授與您的團隊對AEM的存取權。 作為系統管理員，您可以透過指派 AEM 產品設定檔來執行此操作。
+閱讀此上線歷程中的上一份文件「[建立環境](create-environments.md)」並設定雲端資源後，使用 AEM 產品設定檔授予您的團隊存取 AEM 的權限。作為系統管理員，您可以透過指派 AEM 產品設定檔來執行此操作。
 
 閱讀本文件後，您應會了解：
 
@@ -64,7 +64,7 @@ ht-degree: 93%
 
 按照以下步驟從 Admin Console 查看 AEM 產品設定檔。
 
-1. 在[`https://adminconsole.adobe.com`](https://adminconsole.adobe.com)登入Admin Console。
+1. 請上 [`https://adminconsole.adobe.com`](https://adminconsole.adobe.com) 登入 Admin Console。
 
 1. 在&#x200B;**概觀**&#x200B;頁面，從&#x200B;**產品和服務**&#x200B;卡選取 **Adobe Experience Manager as a Cloud Service**。
 

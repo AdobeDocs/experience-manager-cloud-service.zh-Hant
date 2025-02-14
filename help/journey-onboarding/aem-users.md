@@ -5,20 +5,20 @@ feature: Onboarding
 role: Admin, User, Developer
 exl-id: 86700cce-139f-451e-9c21-b38b6332f773
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '576'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
 
 # AEM 使用者工作 {#aem-user-tasks}
 
-在[入門歷程](overview.md)的這個選擇性部分中，您將瞭解AEM使用者如何存取AEM as a Cloud Service以創作內容。
+在此選用部分的「[上線歷程](overview.md)」中，您會了解 AEM 使用者如何存取 AEM as a Cloud Service 來製作內容。
 
 ## 目前進度 {#story-so-far}
 
-您已在上線歷程中走了很長一段路！恭喜！系統管理員已透過設定必要的雲端資源，並在檔案[指派AEM產品設定檔](assign-profiles-aem.md)中授與存取權，來完成入門歷程。
+您已在上線歷程中走了很長一段路！恭喜！系統管理員已透過設定必要的雲端資源，並在文件「[指派 AEM 產品設定檔](assign-profiles-aem.md)」中授與存取權，來完成上線歷程。
 
 此時，您的 AEM 使用者可以開始建立內容。從這個角度上說，您的上線已經完成，現在是時候使用您的新 AEM as a Cloud Service 系統了，本文件將對此進行說明。
 
@@ -48,9 +48,9 @@ ht-degree: 81%
 
 作為 AEM 作者，您需要登入 AEM 才能開始建立內容。
 
-1. 瀏覽至[`https://my.cloudmanager.adobe.com`](https://my.cloudmanager.adobe.com/)的Cloud Manager登入頁面。
+1. 瀏覽至 Cloud Manager 登入頁面 [`https://my.cloudmanager.adobe.com`](https://my.cloudmanager.adobe.com/)。
 
-1. 從Cloud Manager的&#x200B;**程式和產品**&#x200B;頁面選取適當的程式，以啟動&#x200B;**總覽**&#x200B;頁面。 如果您不確定要存取哪個方案，請諮詢您的系統管理員。
+1. 從 Cloud Manager 的&#x200B;**方案和產品**&#x200B;頁面選取合適的方案，以啟動&#x200B;**概觀**&#x200B;頁。如果您不確定要存取哪個方案，請諮詢您的系統管理員。
 
 1. 從 Cloud Manager 的「**概觀**」頁面，按一下「**環境**」卡片中的製作連結。
 
@@ -71,9 +71,9 @@ ht-degree: 81%
 * 存取 Cloud Manager。
 * 登入 AEM as a Cloud Service 執行個體。
 
-恭喜！您現在已準備好製作和發布 AEM 內容。請參閱[其他資源](#additional-resources)章節，深入了解如何在 AEM 中製作內容以及如何管理內容。
+恭喜！您現在已準備好製作和發布 AEM 內容。請參閱[其他資源](#additional-resources)區段，深入了解如何在 AEM 中製作內容以及如何管理內容。
 
-如果您對開發人員和部署管理員如何為AEM as a Cloud Service建立和管理自訂應用程式感興趣，請繼續進入上線歷程的第二個可選部分，[AEM開發人員任務](developers.md)。
+如果您對開發人員和部署管理員如何為 AEM as a Cloud Service 建立和管理自訂應用程式感興趣，請繼續進入上線歷程的第二個可選部分「[ AEM 開發人員任務](developers.md)」。
 
 >[!TIP]
 >

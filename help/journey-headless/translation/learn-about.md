@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '737'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -78,8 +78,8 @@ AEM 的強大功能使其能夠以 Headless 方式、全堆疊方式或同時以
 
 ## 其他資源 {#additional-resources}
 
-我們建議您檢閱檔案[開始使用AEM Headless翻譯](getting-started.md)，以繼續無頭翻譯歷程的下一部分，以下是一些其他可選資源，這些資源對檔案中提到的一些概念進行了更深入的探究，但並非繼續無頭翻譯歷程所必需的。
+雖然建議您檢閱文件「[AEM Headless 翻譯快速入門](getting-started.md)」以繼續 Headless 翻譯歷程的下一部分，但下列是一些其他選用資源，深入探究了本文件提到的一些概念，不過這些資源並非繼續 Headless 歷程的必要條件。
 
-* [MSM 和翻譯](/help/sites-cloud/administering/msm-and-translation.md) - 詳細說明 AEM 多網站管理員以及它如何與其翻譯工具一起工作
+* [MSM 和翻譯](/help/sites-cloud/administering/msm-and-translation.md) - 詳細說明 AEM 多網站管理員以及它如何與其翻譯工具一起運作
 * [AEM as a Headless CMS 簡介](/help/headless/introduction.md)
 * [AEM 中的 Headless 教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)

@@ -6,15 +6,15 @@ solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1626'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
 # 了解 CMS Headless 開發 {#learn-about}
 
-在[AEM Headless開發人員歷程](overview.md)的這一部分，瞭解Headless技術以及您使用它的原因。
+在這部分的 [AEM Headless 開發人員歷程](overview.md)中，了解 headless 技術和使用原因。
 
 ## 目標 {#objective}
 
@@ -127,7 +127,7 @@ Headless 為傳遞數位體驗帶來了靈活性。但這種靈活性本身也�
 
 ## 其他資源 {#additional-resources}
 
-我們建議您檢閱檔案[AEM Headlessas a Cloud Service快速入門](getting-started.md)來繼續無頭開發歷程的下一部分，以下是一些其他可選資源，這些資源對檔案中提到的一些概念進行了更深入的探究，但並非繼續無頭開發歷程所必需的。
+雖然建議您檢閱文件「[AEM Headless as a Cloud Service 快速入門](getting-started.md)」以繼續 Headless 開發歷程的下一部分，但下列是一些其他選用資源，深入探究了本文件提到的一些概念，不過這些資源並非繼續 Headless 歷程的必要條件。
 
 * [Adobe Experience Manager as a Cloud Service 架構簡介](/help/overview/architecture.md) - 了解 AEM as a Cloud Service 的架構
 * [AEM as a Headless CMS 簡介](/help/headless/introduction.md)

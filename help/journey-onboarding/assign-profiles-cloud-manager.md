@@ -5,20 +5,20 @@ feature: Onboarding
 role: Admin, User, Developer
 exl-id: 555688e5-f937-462c-9fcc-b90685f1882b
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1520'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
 
 # 將團隊成員指派給 Cloud Manager 產品設定檔 {#assign-team-members}
 
-在[入門歷程](overview.md)的這一部分，您將瞭解如何將團隊成員指派給Cloud Manager產品設定檔。
+在此部分的[上線歷程](overview.md)中，您會了解如何將團隊成員指派給 Cloud Manager 產品設定檔。
 
 ## 目標 {#objective}
 
-在此歷程的上一步[存取Admin Console](admin-console.md)中，您已學習了登入Admin Console並驗證您作為系統管理員的許可權。 現在您已準備好允許您的團隊成員存取 Cloud Manager。您可以透過指派產品設定檔來執行此操作。
+在此歷程的上一步「[存取 Admin Console](admin-console.md)」中，您已了解如何登入 Admin Console 並驗證您作為系統管理員的權限。現在您已準備好允許您的團隊成員存取 Cloud Manager。您可以透過指派產品設定檔來執行此操作。
 
 在授與使用者 Adobe 解決方案的存取權時，您不一定要授與他們完整的存取權。產品設定檔使每個解決方案都可以擁有自己的一組使用者權限。您可以使用 Admin Console 指派產品設定檔。
 
@@ -177,7 +177,7 @@ Cloud Manager 是 AEM as a Cloud Service 不可或缺的一部分，用於管理
 * 了解三個重要的 Cloud Manager 產品設定檔：**業務負責人**、**部署管理員**&#x200B;和&#x200B;**開發人員**。
 * 能夠將團隊成員指派給 Cloud Manager 產品設定檔。
 
-您現在已準備好繼續您的入門歷程，接下來檢視檔案[存取Cloud Manager](cloud-manager.md)，瞭解如何存取Cloud Manager和建立專案資源。
+您現在已準備好繼續上線歷程，接著檢閱文件「[存取 Cloud Manager](cloud-manager.md)」，您可在此了解如何存取 Cloud Manager 和建立專案資源。
 
 ## 其他資源 {#additional-resources}
 

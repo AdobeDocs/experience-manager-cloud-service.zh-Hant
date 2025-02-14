@@ -5,9 +5,9 @@ exl-id: e68b09c5-4778-4932-8c40-84693db892fd
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2195'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 86%
 
 ## 先決條件 {#prerequisites}
 
-搭配Edge Delivery Services使用WYSIWYG編寫的專案會繼承任何其他Edge Delivery Services專案的大部分機制，與內容來源或[編寫方法](/help/edge/wysiwyg-authoring/authoring.md)無關。
+使用 Edge Delivery Services 進行所見即所得製作的專案會繼承任何其他 Edge Delivery Services 專案的大部分機制，而且不受內容來源或[製作方法](/help/edge/wysiwyg-authoring/authoring.md)的影響。
 
 在開始為專案的內容建立模式之前，請確保先閱讀以下文件。
 
@@ -39,7 +39,7 @@ ht-degree: 86%
 * **影像**：來源、描述
 * **按鈕**：文字、標題、url、類型 (預設、主要、次要)
 
-這些元件的模型是使用Edge Delivery Services](https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/component-models.json#L2-L112)進行WYSIWYG製作的[樣板的一部分。
+這些元件的模型屬於[使用 Edge Delivery Services 進行所見即所得製作之範本](https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/component-models.json#L2-L112)的一部分。
 
 ## 區塊 {#blocks}
 
@@ -111,9 +111,9 @@ ht-degree: 86%
 * 必須使用 `core/franklin/components/block/v1/block` 資源類型，這是在 AEM 中通用的區塊邏輯實作。
 * 必須定義區塊名稱，該名稱將呈現在區塊標頭中。
    * 區塊名稱是用來擷取正確的樣式和指令碼來裝飾區塊。
-* 可以定義[模型識別碼](/help/implementing/universal-editor/field-types.md#model-structure)。
+* 可以定義[模式 ID](/help/implementing/universal-editor/field-types.md#model-structure)。
    * 模式 ID 是元件模式的參考編號，旨在定義作者在屬性面板中可用的欄位。
-* 可以定義[篩選器ID](/help/implementing/universal-editor/filtering.md)。
+* 可以定義[篩選器 ID](/help/implementing/universal-editor/filtering.md)。
    * 篩選器 ID 是元件篩選器的參考編號，旨在允許變更製作行為，例如透過限制可以將哪些子系新增至區塊或區段，或啟用哪些 RTE 功能。
 
 當將區塊新增至頁面時，所有這些資訊都會儲存在 AEM 中。如果缺少資源類型或區塊名稱，該區塊將不會在頁面上呈現。
@@ -181,7 +181,7 @@ ht-degree: 86%
 
 >[!ENDTABS]
 
-您可能會注意到，有些類型的值允許推斷標記語言中的語義，並且屬性會合併到單一儲存格中。此行為在[型別推斷](#type-inference)一節中說明。
+您可能會注意到，有些類型的值允許推斷標記語言中的語義，並且屬性會合併到單一儲存格中。行為描述列於[「類型推斷」](#type-inference)區段中。
 
 #### 鍵值區塊 {#key-value}
 
@@ -189,7 +189,7 @@ ht-degree: 86%
 
 然而，在其他情況下，區塊被讀取為類似鍵值對的配定。
 
-例如，[節中繼資料](/help/edge/developer/markup-sections-blocks.md#sections)。 在此使用案例中，區塊可設定為呈現為機碼值組表格。 請參閱「[區段和區段中繼資料](#sections-metadata)」部份，了解更多資訊。
+其中一個範例為[區段中繼資料](/help/edge/developer/markup-sections-blocks.md#sections)。在此使用案例中，可以將區塊設定為呈現為鍵值組表格。請參閱「[區段和區段中繼資料](#sections-metadata)」部份，了解更多資訊。
 
 >[!BEGINTABS]
 
@@ -322,9 +322,9 @@ ht-degree: 86%
 
 ### 為區塊建立語義內容模式 {#creating-content-models}
 
-說明區塊結構的[機制](#block-structure)後，就可以建立內容模型，將AEM中儲存的內容一對一對應到傳遞層。
+使用[所說明的區塊結構機制](#block-structure)，即有可能建立一個內容模式，將 AEM 持續擁有的內容一對一對應到傳遞層。
 
-在每項專案早期，必須仔細考慮每個區塊的內容模式。模式必須與內容來源和製作體驗無關，以便允許作者在重複使用區塊實作和樣式時切換或組合這些實作。在[David的模型(Take 2)](https://www.aem.live/docs/davidsmodel)中可以找到更多詳細資訊和一般指引。 更具體來說，[區塊集合](/help/edge/developer/block-collection.md)包含一組廣泛的內容模型，適用於一般使用者介面模式的特定使用案例。
+在每項專案早期，必須仔細考慮每個區塊的內容模式。模式必須與內容來源和製作體驗無關，以便允許作者在重複使用區塊實作和樣式時切換或組合這些實作。更多詳細資訊和一般指導可瀏覽 [David 模式 (第 2 步)](https://www.aem.live/docs/davidsmodel)。更具體地說，[區塊集合](/help/edge/developer/block-collection.md)包含廣泛的內容模式組，用於常見使用者介面模式的特定使用案例。
 
 使用 Edge Delivery Services 進行所見即所得製作時，會有一個問題：當資訊是以由多個欄位組成的表單所製作，而不是在上下文中編輯語義標記語言 (如 RTF 文字) 時，如何提供令人信服的語義內容模型。
 
@@ -345,7 +345,7 @@ ht-degree: 86%
 * **影像** - 如果 AEM 中的資源參照是 MIME 類型並且是以 `image/` 為開頭的資產，參照會呈現為 `<picture><img src="${reference}"></picture>`。
 * **連結** - 如果參照存在於 AEM 中且不是影像，或該值是以 `https?://` 或者 `#` 為開頭，則參照呈現為 `<a href="${reference}">${reference}</a>`。
 * **RTF 文字** - 如果裁剪後的值以段落 (`p`, `ul`、`ol`、`h1` -`h6` 等) 為開頭，則該值呈現為 RTF 文字。
-* **類別名稱** - `classes`屬性會視為[區塊選項](/help/edge/developer/markup-sections-blocks.md#block-options)，並在[簡單區塊](#simple)的資料表標頭中呈現，或是[容器區塊](#container)中專案的值清單。 如果您要[以不同方式設定區塊](/help/edge/wysiwyg-authoring/create-block.md#block-options)的樣式，但不需要建立全新的區塊，這個功能會很有用。
+* **類別名稱** - `classes` 屬性被視為[區塊選項](/help/edge/developer/markup-sections-blocks.md#block-options)並呈現在[簡單區塊](#simple)的表格標頭中，或呈現為[容器區塊](#container)中項目的值清單。如果您希望[以不同的方式設計區塊](/help/edge/wysiwyg-authoring/create-block.md#block-options)，此功能即很實用，但不需要建立全新的區塊。
 * **值清單** - 如果某個值是多值屬性，且第一個值不是前面的任何一個值，則所有值將連接為逗號分隔清單。
 
 其他所有內容都將呈現為純文字。
@@ -532,11 +532,11 @@ _[adobe.com](https://www.adobe.com "Navigate to adobe.com")_
 
 ## 區段和區段中繼資料 {#sections-metadata}
 
-開發人員可以定義並模型化多個[區塊](#blocks)，相同的方式下，他們也可以定義不同的區段。
+開發人員可以使用相同的方式定義多個[區塊](#blocks)並建立模式，這些可以定義不同的區段。
 
 Edge Delivery Services 內容模式本來就是只允許單一巢狀層級，這是任預設內容或含有一個區段的區塊。這意味著為了擁有可以包含其他元件的更複雜視覺元件，必須將這些模式建立為區段，並使用自動封鎖用戶端合併在一起。這個的一般範例是標記和如手風琴般的可摺疊區段。
 
-區段的定義方式與區塊相同，但資源類型為 `core/franklin/components/section/v1/section`。區段可以有僅由[通用編輯器](/help/implementing/universal-editor/introduction.md)使用的名稱和[篩選器ID](/help/implementing/universal-editor/filtering.md)，以及用於轉譯區段中繼資料的[模型ID](/help/implementing/universal-editor/field-types.md#model-structure)。 這樣的模型式就是區段中繼資料區塊的模式，如果不是為空，此模式會自動作為鍵值區塊附加到區段中。
+區段的定義方式與區塊相同，但資源類型為 `core/franklin/components/section/v1/section`。區段可以有一個名稱和一個[篩選器 ID，](/help/implementing/universal-editor/filtering.md) 限供 [Universal Editor](/help/implementing/universal-editor/introduction.md) 使用；以及有一個[模式 ID ](/help/implementing/universal-editor/field-types.md#model-structure)，可用於呈現區段中繼資料。這樣的模型式就是區段中繼資料區塊的模式，如果不是為空，此模式會自動作為鍵值區塊附加到區段中。
 
 預設區段的[模式 ID](/help/implementing/universal-editor/field-types.md#model-structure) 和 [篩選器 ID](/help/implementing/universal-editor/filtering.md) 是 `section`。這可用於更改預設區段的行為。以下範例將一些樣式和背景影像新增至區段中繼資料模式。
 
@@ -595,7 +595,7 @@ Edge Delivery Services 內容模式本來就是只允許單一巢狀層級，這
 
 ## 頁面繼資料 {#page-metadata}
 
-檔案可以有頁面[中繼資料區塊](https://www.aem.live/developer/block-collection/metadata)，用來定義要在頁面的`<head>`中轉譯的`<meta>`個元素。 AEM as a Cloud Service 中的頁面屬性會對應到 Edge Delivery Services 現成可用的頁面屬性，例如 `title`, `description`、`keywords` 等。
+文件可以有[中繼資料區塊](https://www.aem.live/developer/block-collection/metadata)頁面，可用於定義要哪個 `<meta>` 元素呈現在頁面的 `<head>` 中。AEM as a Cloud Service 中的頁面屬性會對應到 Edge Delivery Services 現成可用的頁面屬性，例如 `title`, `description`、`keywords` 等。
 
 在進一步探索如何定義自己的中繼資料之前，請先查看以下文件以了解頁面中繼資料的概念。
 
@@ -645,5 +645,5 @@ AEM 中提供的許多預設頁面屬性都會對應到文件中各別的頁面�
 
 >[!TIP]
 >
->如需使用AEM as a Cloud Service作為內容來源來建立啟用WYSIWYG撰寫的新Edge Delivery Services專案的端對端逐步解說，請檢視[此AEM GEM網路研討會](https://experienceleague.adobe.com/zh-hant/docs/events/experience-manager-gems-recordings/gems2024/wysiwyg-authoring-and-edge-delivery)。
+>如需建立新的 Edge Delivery Services 專案的端對端操作示範，該專案支援使用 AEM as a Cloud Service 作為內容來源進行所見即所得製作，請觀看[此 AEM GEM 網路研討會](https://experienceleague.adobe.com/zh-hant/docs/events/experience-manager-gems-recordings/gems2024/wysiwyg-authoring-and-edge-delivery)。
 

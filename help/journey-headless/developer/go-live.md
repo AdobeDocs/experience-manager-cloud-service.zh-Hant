@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1071'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 97%
 
 ## 目前進度 {#story-so-far}
 
-在 AEM Headless 歷程的上一個文件「[如何在 AEM Headless 中將您的應用程式和內容組合在一起](put-it-all-together.md)」中，您已了解如何使用 AEM 開發工具將您專案的所有面向組合在一起。
+在 AEM Headless 歷程的上一份文件「[如何在 AEM Headless 中將您的應用程式和內容組合在一起](put-it-all-together.md)」中，您已了解如何使用 AEM 開發工具將您專案的所有面向組合在一起。
 
 本文章以這些基本知識為基礎，以便您了解如何準備您自己的 AEM Headless 專案並方案上線。
 
@@ -129,7 +129,7 @@ ht-degree: 97%
 
 不過，AEM Headless 存放區不需要就此停止。您可能還記得，在[歷程的快速入門部分](getting-started.md#integration-levels)中，我們簡短討論到 AEM 如何不僅支援 Headless 傳遞和傳統的全堆疊模型，還可以支援結合兩者優點的混合模型。
 
-如果您的專案需要這種彈性，請繼續進行[如何使用AEM建立單頁應用程式(SPA) ](create-spa.md)歷程的額外選擇性部分。
+如果您的專案需要這種靈活性，請繼續學習此歷程的額外部分 (選用)：[如何使用 AEM 建立單一頁面應用程式 (SPA)](create-spa.md)。
 
 ## 其他資源 {#additional-resources}
 

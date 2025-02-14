@@ -5,15 +5,15 @@ exl-id: 86139b1a-c22a-4716-a0f9-cf142cbc6c53
 feature: Onboarding
 role: Admin, User, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '760'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
 # 入門準備 {#onboarding-preparation}
 
-現在您已透過閱讀文章[AEM as a Cloud Service入門歷程簡介](overview.md)，瞭解入門流程中為您準備的內容，您已經準備就緒了。 在開始入門流程之前，系統管理員在登入系統前必須了解一些準備步驟。
+由於您已閱讀文章「[AEM as a Cloud Service 上線歷程簡介](overview.md)」，了解上線流程中為您準備的內容，因此已經準備就緒了。在開始入門流程之前，系統管理員在登入系統前必須了解一些準備步驟。
 
 ## 目標 {#objective}
 

@@ -9,9 +9,9 @@ solution: Experience Manager Sites
 feature: Translation
 role: Admin
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '919'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ AEM Sites 是用於建立和管理數位體驗的強大工具集。內容作者�
 
 AEM 提供同樣強大的工具來翻譯您的內容，使您能夠盡快將內容傳遞給其他區域或地區設定的客群。此文件歷程介紹了製作工具，讓您了解如何在 AEM 中建立和管理內容，然後深入探討管理您自己的翻譯專案所需的知識。
 
-如果您已經熟悉 AEM Sites 和您的翻譯要求，那麼您可能已經掌握了此歷程的基本知識。若是如此，請考慮參閱以下](#additional-resources)的[其他資源區段下連結的技術檔案。
+如果您已經熟悉 AEM Sites 和您的翻譯要求，那麼您可能已經掌握了此歷程的基本知識。倘若如此，請參閱[下方其他資源區段](#additional-resources)下的已連結技術文件。
 
 ## AEM 文件歷程 {#documentation-journeys}
 
@@ -43,7 +43,7 @@ AEM 提供同樣強大的工具來翻譯您的內容，使您能夠盡快將內�
 
 以下是在此歷程中會互動的角色。
 
-| 角色 | 說明 | 歷程中的角色 |
+| 角色 | 描述 | 歷程中的角色 |
 |---|---|---|
 | 翻譯專家 | 定義應翻譯的內容並管理這些工作流程 | 此歷程的客群 |
 | 內容作者 | 建立和管理作為網站傳遞的內容 | 內容作者建立翻譯專家必須翻譯的內容。 |
@@ -58,7 +58,7 @@ AEM 提供同樣強大的工具來翻譯您的內容，使您能夠盡快將內�
 
 儘管您可以直接進入歷程的特定部分，但許多概念都是以先前文章中的概念為基礎。因此，如果您剛接觸 AEM 翻譯，Adobe 建議您從頭開始，然後循序漸進。
 
-| # | 文章 | 說明 |
+| # | 文章 | 描述 |
 |---|---|---|
 | 0 | AEM Sites 翻譯歷程 | 本文件 |
 | 1 | [了解網站內容與如何在 AEM 翻譯網站內容](learn-about.md) | 了解網站概念和 AEM 翻譯理論。 |
@@ -74,7 +74,7 @@ AEM 提供同樣強大的工具來翻譯您的內容，使您能夠盡快將內�
 
 ## 其他資源 {#additional-resources}
 
-查看這些其他資源，進一步了解 AEM 的強大功能如何協同運作。
+查看這些其他資源，進一步了解 AEM 的強大功能如何共同運作。
 
 * [Headless 製作歷程](/help/journey-headless/author/overview.md) - 從這裡開始，此歷程會逐步引導您了解 AEM 強大且靈活的 Headless 特性、其功能，以及如何在您的第一個 Headless 專案中建立內容模型。
 * [Headless 架構師歷程](/help/journey-headless/architect/overview.md) - 從這裡開始介紹 Adobe Experience Manager as a Cloud Service 的強大、靈活、 Headless 功能，以及如何為您的專案建立內容模型。

@@ -9,9 +9,9 @@ solution: Experience Manager Sites
 feature: Translation
 role: Admin
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1326'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 92%
 
 ## 目前進度 {#story-so-far}
 
-在AEM Sites翻譯歷程的上一個檔案[翻譯內容](configure-connector.md)中，您已瞭解如何使用AEM翻譯專案來翻譯您的內容。 您現在應該：
+在 AEM Sites 翻譯歷程的上一份文件「[翻譯內容](configure-connector.md)」中，您已了解如何使用 AEM 翻譯專案來翻譯內容。您現在應該：
 
 * 了解什麼是翻譯專案。
 * 能夠建立新的翻譯專案。
@@ -86,7 +86,7 @@ ht-degree: 92%
 >
 >您可以在發佈時選取多個項目 (即多個語言資料夾)，以便一次發佈多個翻譯。
 
-發佈內容時還有其他選項可用，例如排程發佈時間，這不在本歷程的討論範圍內。如需更多資訊息，請參閱文件結尾處的[其他資源](#additional-resources)章節。
+發佈內容時還有其他選項可用，例如排程發佈時間，這不在本歷程的討論範圍內。如需更多資訊息，請參閱文件結尾處的[其他資源](#additional-resources)區段。
 
 ## 更新您的翻譯內容 {#updating-translations}
 
@@ -122,7 +122,7 @@ ht-degree: 92%
 
 您可能會注意到新卡片上列出不同的統計數據。這是因為 AEM 會識別自上次翻譯以來發生的變更，並且僅包括必須翻譯的內容。這包括更新內容的重新翻譯以及新內容的首次翻譯。
 
-從此時起，您[開始並管理您的翻譯工作，就像您處理原始翻譯工作一樣](translate-content.md#using-translation-project)。
+從這時開始，您[開始和管理您的翻譯工作，就像您最初的做法一樣](translate-content.md#using-translation-project)。
 
 ### 更新手動建立的翻譯專案 {#updating-manual-project}
 
@@ -144,15 +144,15 @@ ht-degree: 92%
    ![選取目標語言](assets/select-target-language.png)
 
 1. 設定好新翻譯工作的目標語言後，選取工作卡片底部的省略符號按鈕可檢視工作的詳細資料。
-1. 工作首次建立時是空的。點選或按一下「**新增**」按鈕，並使用路徑瀏覽器[，將內容新增至工作，就像您最初建立翻譯專案](translate-content.md##manually-creating)時所做的一樣。
+1. 工作首次建立時是空的。點選或按一下&#x200B;**新增**&#x200B;按鈕並使用路徑瀏覽器[新增內容到工作，就像最初建立翻譯專案時的做法一樣](translate-content.md##manually-creating)。
 
 >[!TIP]
 >
 >路徑瀏覽器強大的篩選器可以再次高效地只尋找已更新的內容。
 >
->您可以在[其他資源區段](#additional-resources)中進一步瞭解路徑瀏覽器。
+>若要進一步了解路徑瀏覽器，請參閱[其他資源區段](#additional-resources)。
 
-從此時起，您[開始並管理您的翻譯工作，就像您處理原始翻譯工作一樣](translate-content.md#using-translation-project)。
+從這時開始，您[開始和管理您的翻譯工作，就像您最初的做法一樣](translate-content.md#using-translation-project)。
 
 ## 歷程結尾？ {#end-of-journey}
 
@@ -162,7 +162,7 @@ ht-degree: 92%
 * 了解 AEM 的翻譯功能及其與您的網站內容有何關係。
 * 能夠開始翻譯您自己的內容。
 
-您現在已準備好在 AEM 中翻譯您自己的內容。但是，AEM 是一個強大的工具，還有許多其他選項可用。查看[其他資源章節](#additional-resources)提供的一些其他資源，以詳細了解您在此歷程中看到的功能。
+您現在已準備好在 AEM 中翻譯您自己的內容。但是，AEM 是一個強大的工具，還有許多其他選項可用。查看[其他資源區段](#additional-resources)提供的一些其他資源，以詳細了解您在此歷程中看到的功能。
 
 ## 其他資源 {#additional-resources}
 

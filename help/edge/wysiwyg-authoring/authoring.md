@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 exl-id: 963ff71a-8176-4d9d-8240-dc429405d139
 role: User
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '452'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -48,7 +48,7 @@ ht-degree: 95%
 
 ![設定區塊屬性](assets/block-properties.png)
 
-有關如何使用通用編輯器編寫內容的詳細資訊，請參閱檔案[使用通用編輯器編寫內容](/help/sites-cloud/authoring/universal-editor/authoring.md)。
+如需有關如何使用通用編輯器的詳細資訊，請參閱文件「[使用通用編輯器製作內容](/help/sites-cloud/authoring/universal-editor/authoring.md)」。
 
 請參閱[使用 Edge Delivery Services 進行所見即所得製作的開發人員快速入門手冊](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)，了解如何展開您自己的專案，並使用 AEM 和 Edge Delivery Services 進行製作。
 

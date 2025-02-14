@@ -6,9 +6,9 @@ solution: Experience Manager Sites
 feature: Developing
 role: Admin, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '954'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 83%
 
 ## 目前進度 {#story-so-far}
 
-在AEM快速網站建立歷程的上一個檔案[擷取Git存放庫存取資訊](retrieve-access.md)中，您已瞭解前端開發人員如何使用Cloud Manager存取Git存放庫資訊，您現在應：
+在 AEM 快速建立網站歷程的上一份文件「[擷取 Git 存放庫存取資訊](retrieve-access.md)」中，您已了解前端開發人員如何使用 Cloud Manager 來存取 Git 存放庫資訊，而您現在應該：
 
 * 深入了解 Cloud Manager 是什麼。
 * 已擷取您的認證來存取 AEM git，以便您可以提交自訂。
@@ -111,7 +111,7 @@ ht-degree: 83%
 自訂完成後，您可以將它們提交到 AEM Git 存放庫。首先您必須將存放庫原地複製到本機電腦。
 
 1. 從命令列導航到您想要原地複製存放庫的位置。
-1. 執行您[先前從Cloud Manager](retrieve-access.md)擷取的命令。 它應該類似於`git clone https://git.cloudmanager.adobe.com/<my-org>/<my-program>/`。 使用您[在此歷程的上一部分擷取的Git使用者名稱和密碼](retrieve-access.md)。
+1. 執行您[之前從 Cloud Manager 擷取的](retrieve-access.md)命令。它應該類似於 `git clone https://git.cloudmanager.adobe.com/<my-org>/<my-program>/`。使用[您在此歷程的前一部分擷取](retrieve-access.md)的 Git 使用者名稱和密碼。
 
    ![原地複製存放庫](assets/clone-repo.png)
 
@@ -138,11 +138,11 @@ ht-degree: 83%
 * 了解如何透過本機 Proxy 測試使用真實 AEM 內容的主題自訂內容。
 * 了解如何將變更提交至 AEM Git 存放庫。
 
-在此知識的基礎上繼續您的AEM快速網站建立歷程，接下來檢視檔案[部署您的自訂主題](deploy-theme.md)，瞭解如何使用前端管道部署主題。
+以此知識為基礎並接著檢閱文件「[部署您的自訂主題](deploy-theme.md)」，以繼續您的 AEM 快速建立網站歷程，您可在該文件中了解如何使用前端管道部署主題。
 
 ## 其他資源 {#additional-resources}
 
-我們建議您檢閱檔案[部署自訂主題](deploy-theme.md)，以繼續快速網站建立歷程的下一部分，以下是一些其他可選資源，這些資源對檔案中提到的一些概念進行了更深入的探究，但並非繼續此歷程所必需的。
+雖然建議您檢閱文件「[部署您的自訂主題](deploy-theme.md)」以繼續快速建立網站歷程的下一部分，但下列是一些其他選用資源，深入探究了本文件提到的一些概念，不過這些資源並非繼續該歷程的必要條件。
 
 * [AEM 網站主題](https://github.com/adobe/aem-site-template-standard-theme-e2e)- 這是 AEM 網站主題的 GitHub 存放庫。
 * [npm](https://www.npmjs.com) - 用於快速建立網站的 AEM 主題以 npm 為基礎。

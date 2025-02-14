@@ -6,19 +6,19 @@ solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3068'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
 # AEM Headless as a Cloud Service 快速入門 {#getting-started}
 
-在[AEM Headless開發人員歷程](overview.md)的這一部分，瞭解開始使用AEM Headless時所需的資訊。
+在這部分的 [AEM Headless 開發人員歷程](overview.md)中，了解需要滿足哪些條件才能使用 AEM Headless 開始您自己的專案。
 
 ## 目前進度 {#story-so-far}
 
-在 AEM Headless 歷程的上一個文件「[了解 CMS Headless 開發](learn-about.md)」中，您已了解了 Headless CMS 的基本理論，現在您應該：
+在 AEM Headless 歷程的上一份文件「[了解 CMS Headless 開發](learn-about.md)」中，您已了解了 Headless CMS 的基本理論，現在您應該：
 
 * 了解 Headless 內容傳遞的基本概念和術語
 * 了解為何與何時需要 Headless 
@@ -41,7 +41,7 @@ ht-degree: 94%
 
 ### 製作執行個體 {#author}
 
-最簡單的情況是，AEM 由一個製作執行個體和一個[發佈執行個體](#publish)組成，它們協同工作以建立、管理和發佈您的內容。
+最簡單的情況是，AEM 由一個製作執行個體和一個[發佈執行個體](#publish)組成，它們會共同運作以建立、管理和發佈您的內容。
 
 內容從製作執行個體開始。這是內容作者建立內容的地方。製作環境為作者提供了各種工具來建立、組織和重複使用他們的內容。
 
@@ -65,7 +65,7 @@ ht-degree: 94%
 1. 當此內容準備就緒時，它會被複製到發佈執行個體。
 1. 然後可以呼叫 API 來擷取此內容。
 
-AEM Headless藉由提供強大的工具來管理Headless內容（下節將說明[），建構此技術基礎。](#aem-headless-basics)
+AEM Headless 可提供強大的工具來管理 Headless 內容 ([將在下一區段中介紹。](#aem-headless-basics))，從而建置此技術基礎。
 
 ## AEM Headless 基本概念 {#aem-headless-basics}
 
@@ -186,7 +186,7 @@ AEM 支援 CMS 的全 Headless 模型和傳統的全堆疊或 Headful 模型。�
 
 可以使用您的「[內容階層](#content-hierarchy)」讓翻譯變輕鬆。
 
-請參閱[其他資源](#additional-resources)章節，了解有關 AEM 工作流程和翻譯工具的其他文件，包括指向 AEM Headless 翻譯歷程的連結。
+請參閱[其他資源](#additional-resources)區段，了解有關 AEM 工作流程和翻譯工具的其他文件，包括指向 AEM Headless 翻譯歷程的連結。
 
 ##### 利用內容階層 {#content-hierarchy}
 
@@ -195,7 +195,7 @@ AEM 支援 CMS 的全 Headless 模型和傳統的全堆疊或 Headful 模型。�
 * [翻譯](#translation) - AEM 透過在地區設定資料夾中維護內容副本，來管理內容翻譯。
 * 組織 - 資料夾用於定義支援翻譯需求和邏輯管理內容片段所需的內容階層。
 
-AEM 允許靈活的內容結構，階層可以任意擴大。不過，請務必注意，資料夾結構中的任何變更可能會對[依賴內容路徑](#developer)的現有查詢造成非預期的後果。 因此，預先清楚定義的階層架構對內容作者很有幫助。
+AEM 允許靈活的內容結構，階層可以任意擴大。但是，重要的是要認識到，資料夾結構的任何變更都可能對[依賴於內容路徑](#developer)的現有查詢造成未預期的後果。因此，事先明確設定的定義完善的階層可能對您的內容作者有所幫助。
 
 資料夾也可以限制為只允許某些類型的內容 (根據內容片段模型)。建議一律明確指定階層中的所有資料夾允許哪些模型。為特定資料夾指定允許的內容：
 
@@ -211,7 +211,7 @@ AEM 允許靈活的內容結構，階層可以任意擴大。不過，請務必�
 * 錯誤名稱：`cta_btn_1`
 * 良好名稱：`Call To Action Button`
 
-如需有關 AEM 頁面命名慣例的其他文件，請參閱[其他資源](#additional-resources)章節。
+如需有關 AEM 頁面命名慣例的其他文件，請參閱[其他資源](#additional-resources)區段。
 
 ##### 不要過度擴展內容巢狀 {#content-nesting}
 
@@ -241,7 +241,7 @@ GraphQL 可作為 AEM 和 Headless 內容取用者之間的「黏著劑」。Gra
 * 為獲得最佳查詢效能，在 AEM 一律使用持續性查詢。這些將在歷程後續部分中討論。
 * GraphQL 以宣告方式遵循此座右銘「準確地詢問你需要什麼，並準確地得到它」。這表示在建立 GraphQL 查詢時，務必避免可能在關聯式資料庫建立的 `select *` 類型查詢。
 
-對於使用AEM](#level-1)的[典型Headless實作，開發人員不需要AEM的編碼知識。
+對於[使用 AEM 的典型 Headless 實作，](#level-1)，開發人員不需要 AEM 的製作程式碼知識。
 
 ### 效能要求 {#performance-requirements}
 
@@ -280,7 +280,7 @@ GraphQL 可作為 AEM 和 Headless 內容取用者之間的「黏著劑」。Gra
 
 ## 其他資源 {#additional-resources}
 
-我們建議您檢閱檔案[使用AEM Headless的第一次體驗路徑](path-to-first-experience.md)，以繼續無頭式開發歷程的下一部分，以下是一些其他可選資源，這些資源對檔案中提到的一些概念進行了更深入的探究，但並非繼續無頭式歷程所必需的。
+雖然建議您參閱文件「[踏上首次使用 AEM Headless 之路](path-to-first-experience.md)」以繼續 Headless 開發歷程的下一部份，但下列是一些其他選用資源，深入探究了本文件提到的一些概念，不過這些資源並非繼續 Headless 歷程的必要條件。
 
 * [ AEM Headless 翻譯歷程](/help/journey-headless/translation/overview.md) - 此文件歷程讓您對 Headless 技術、AEM 如何提供 Headless 內容以及如何翻譯它，有廣泛的了解。
 * [Adobe Experience Manager as a Cloud Service 架構簡介](/help/overview/architecture.md) - 了解 AEM as a Cloud Service 的架構

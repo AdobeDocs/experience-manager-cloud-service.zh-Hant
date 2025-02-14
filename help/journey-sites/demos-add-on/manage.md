@@ -5,9 +5,9 @@ exl-id: 988c6e09-c43e-415f-8d61-998c294c5a11
 feature: Onboarding
 role: Admin, User, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '927'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -17,13 +17,13 @@ ht-degree: 95%
 
 ## 目前進度 {#story-so-far}
 
-在AEM參考示範附加元件歷程的上一個檔案[建立網站](create-site.md)中，您已根據參考示範附加元件的範本建立新的示範網站。 您現在應該：
+在 AEM 參考示範附加元件歷程的上一份文件「[建立網站](create-site.md)」中，您已根據參考示範附加元件的範本建立了一個新的示範網站。您現在應該：
 
 * 了解如何存取 AEM 製作環境。
 * 了解如何根據範本建立網站。
 * 了解導覽網站結構和編輯頁面的基礎知識。
 
-如果您也[為示範網站](screens.md)啟用AEM Screens，您也應：
+如果您也[為您的示範網站啟用了 AEM Screens](screens.md)，您還應該：
 
 * 了解 AEM Screens 的基礎知識。
 * 了解 We.Cafe 示範內容。
@@ -101,7 +101,7 @@ ht-degree: 95%
 * 了解如何存取自助服務示範公用程式。
 * 知道如何刪除現有的示範網站或範本。
 
-現在您已準備好使用自己的示範網站探索 AEM 的功能。但是，AEM 是一個強大的工具，還有許多其他選項可用。查看[其他資源章節](#additional-resources)提供的一些其他資源，以詳細了解您在此歷程中看到的功能。
+現在您已準備好使用自己的示範網站探索 AEM 的功能。但是，AEM 是一個強大的工具，還有許多其他選項可用。查看[其他資源區段](#additional-resources)提供的一些其他資源，以詳細了解您在此歷程中看到的功能。
 
 ## 其他資源 {#additional-resources}
 

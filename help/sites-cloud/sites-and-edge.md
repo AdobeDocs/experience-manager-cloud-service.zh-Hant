@@ -6,9 +6,9 @@ feature: Authoring
 role: User
 exl-id: 7747d6f7-18e4-4713-baea-bcfa94f54934
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '618'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 97%
 
 ## 什麼是 Edge Delivery Services？ {#what-is-edge}
 
-Edge Delivery Services 提供卓越的體驗，透過提供快速製作及開發的高影響力體驗來提高參與度和轉換。這是一組可組合的服務，有助於建立快速開發環境；作者可在其中快速更新和發佈，而且能快速推出新網站。在檔案[Edge Delivery Services總覽](/help/edge/overview.md)中進一步瞭解Edge Delivery Services。
+Edge Delivery Services 提供卓越的體驗，透過提供快速製作及開發的高影響力體驗來提高參與度和轉換。這是一組可組合的服務，有助於建立快速開發環境；作者可在其中快速更新和發佈，而且能快速推出新網站。如需了解更多有關 Edge Delivery Services 的資訊，請參閱文件「[Edge Delivery Services 概觀](/help/edge/overview.md)」。
 
 使用 Edge Delivery Services 以及 AEM Sites as a Cloud Service，您的專案可以受益於：
 

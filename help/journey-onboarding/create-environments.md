@@ -5,19 +5,19 @@ role: Admin, User, Developer
 exl-id: 31940e1e-fe27-4c5f-b67f-41affebea63a
 feature: Onboarding
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '725'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
 # 建立環境 {#create-environments}
 
-在[入門歷程](overview.md)的這一部分，您將瞭解如何使用Cloud Manager建立您的第一個環境。
+在這部分的[上線歷程](overview.md)中，您會了解如何使用 Cloud Manager 建立您的第一個環境。
 
 ## 目標 {#objective}
 
-在閱讀了此上線過程中的上一個檔案後，[建立計畫](create-program.md)，您現在擁有自己的Cloud Manager計畫。 了解如何使用 Cloud Manager 來建立您的首個環境。
+在閱讀了此上線歷程中的上一份文件「[建立程序](create-program.md)」後，您現在擁有自己的 Cloud Manager 程序。了解如何使用 Cloud Manager 來建立您的首個環境。
 
 閱讀本文件後，您將了解：
 

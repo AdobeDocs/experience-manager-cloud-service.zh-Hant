@@ -6,19 +6,19 @@ solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1083'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
 # 如何透過 AEM Assets API 更新您的內容 {#update-your-content}
 
-在[AEM Headless開發人員歷程](overview.md)的這一部分，瞭解如何使用REST API來存取和更新您的內容片段內容。
+在這部分的 [AEM Headless 開發人員歷程](overview.md)中，了解如何使用 REST API 存取和更新內容片段的內容。
 
 ## 目前進度 {#story-so-far}
 
-在 AEM Headless 歷程的上一個文件「[如何透過 AEM Delivery API 存取您的內容](access-your-content.md)」中，您已了解如何透過 AEM GraphQL API 存取 AEM 中的 Headless 內容，現在您應該：
+在 AEM Headless 歷程的上一份文件「[如何透過 AEM Delivery API 存取您的內容](access-your-content.md)」中，您已了解如何透過 AEM GraphQL API 存取 AEM 中的 Headless 內容，現在您應該：
 
 * 對 GraphQL 有概略的了解。
 * 了解 AEM GraphQL API 運作方式。
@@ -40,7 +40,7 @@ ht-degree: 97%
 
 ## 為什麼您需要 Assets HTTP API 用於內容片段？ {#why-http-api}
 
-在 Headless 歷程的上一個文件中，您已了解如何使用 AEM GraphQL API 透過查詢擷取您的內容。
+在 Headless 歷程的上一份文件中，您已了解如何使用 AEM GraphQL API 透過查詢擷取您的內容。
 
 那麼為什麼需要另一個 API？
 

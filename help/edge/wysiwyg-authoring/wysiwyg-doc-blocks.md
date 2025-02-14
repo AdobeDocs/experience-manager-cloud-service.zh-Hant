@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 role: User
 exl-id: f039c70a-e1a0-4fcc-8f42-dfa0f8bb3764
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '235'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 82%
 
 ## 概觀 {#overview}
 
-在某些專案中，您可能會想要同時支援使用Universal Editor](/help/edge/wysiwyg-authoring/authoring.md)的[WYSIWYG撰寫以及[以檔案為基礎的撰寫](/help/edge/docs/authoring.md)。 為了將開發時間降到最低並確保相同的網站體驗，您可以建立一組區塊來支援這兩個使用案例。
+在某些專案中，您可能會希望同時支援[使用通用編輯器的所見即所得製作](/help/edge/wysiwyg-authoring/authoring.md)以及[文件型製作](/help/edge/docs/authoring.md)。為了盡量縮短開發時程並確保相同的網站體驗，您可以建立一組區塊來支援這兩種使用案例。
 
 若要做到這一點，您必須對所見即所得製作設定和文件型製作設定使用相同的內容建模方法。
 

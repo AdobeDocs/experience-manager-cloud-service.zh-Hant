@@ -6,19 +6,19 @@ solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1956'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
 # 踏上首次使用 AEM Headless 之路 {#path-to-first-experience}
 
-在[AEM Headless開發人員歷程](overview.md)的這一部分，您將瞭解在AEM中實作第一個Headless體驗的步驟（包括規劃考量），並瞭解使您的路徑儘可能流暢的最佳實務。
+在這部分的 [AEM Headless 開發人員歷程](overview.md)中，您將了解在 AEM 中實作您的第一個 Headless 體驗的步驟 (包括規劃考量事項)，並學習最佳做法以讓您的路徑盡可能順利。
 
 ## 目前進度 {#story-so-far}
 
-在 AEM Headless 歷程的上一個文件「[AEM Headless as a Cloud Service 快速入門](getting-started.md)」中，您已了解 Headless CMS 的基本理論，您現在應該：
+在 AEM Headless 歷程的上一份文件「[AEM Headless as a Cloud Service 快速入門](getting-started.md)」中，您已了解 Headless CMS 的基本理論，您現在應該：
 
 * 了解 AEM Headless 功能的基本概念。
 * 了解 AEM Headless 功能的使用先決條件。
@@ -77,7 +77,7 @@ Headless 專案的中繼環境用於在新的 AEM 產品版本推送到生產環
 
 ## 設定 {#setup}
 
-在 AEM 中開始使用 Headless 技術之前，您需要確保已啟用所有必要的功能。本章節概述相關要求。完成這些步驟的實際步驟稍後會在[AEM Headless開發人員歷程](#overview.md)中詳細說明。
+在 AEM 中開始使用 Headless 技術之前，您需要確保已啟用所有必要的功能。本區段概述相關要求。完成這些步驟的實際步驟會在 [AEM Headless 開發人員歷程](#overview.md)的後續部分詳細說明。
 
 您也可以選擇參閱[其他資源](#additional-resources)以取得個別主題的詳細資訊。
 
@@ -143,7 +143,7 @@ Headless 專案的中繼環境用於在新的 AEM 產品版本推送到生產環
 
 ## 其他資源 {#additional-resources}
 
-我們建議您檢閱檔案[如何將您的內容模型化為AEM內容模型](model-your-content.md)，以繼續無頭式開發歷程的下一部分，以下是一些其他可選資源，這些資源對檔案中提到的一些概念進行了更深入的探究，但並非繼續無頭式歷程所必需的。
+雖然建議您檢閱文件「[如何為您的內容建立 AEM 內容模型](model-your-content.md)」以繼續 Headless 開發歷程的下一部分，但下列是一些其他選用資源，深入探究了本文件提到的一些概念，不過這些資源並非繼續 Headless 歷程的必要條件。
 
 * [AEM Headless 翻譯歷程](/help/journey-headless/translation/overview.md) - 此文件歷程讓您對 Headless 技術、AEM 如何提供 Headless 內容以及如何翻譯它，有廣泛的了解。
 * [AEM Sites as a Cloud Service 的 Headless 開發](/help/headless/introduction.md) - 快速介紹讓 AEM Headless 開發人員熟悉必要的功能

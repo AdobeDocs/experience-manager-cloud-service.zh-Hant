@@ -5,20 +5,20 @@ feature: Onboarding
 role: Admin, User, Developer
 exl-id: f57a856b-0932-4e8f-be59-a19fe692e2ab
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1397'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
 
 # 開發人員和部署管理員工作 {#developer-deployment-manager}
 
-在[上線歷程](overview.md)的這個選擇性部分中，您將瞭解開發人員和部署管理員如何存取Git來開發應用計畫，並使用管道來部署它們。
+在此選用部分的[上線歷程](overview.md)中，您會了解開發人員和部署管理員如何存取 Git 來開發應用程式，並使用管道來進行部署。
 
 ## 目前進度 {#story-so-far}
 
-您已在上線歷程中走了很長一段路！恭喜！系統管理員已透過設定必要的雲端資源，並在檔案[指派AEM產品設定檔](assign-profiles-aem.md)中授與存取權，來完成入門歷程。
+您已在上線歷程中走了很長一段路！恭喜！系統管理員已透過設定必要的雲端資源，並在文件「[指派 AEM 產品設定檔](assign-profiles-aem.md)」中授與存取權，來完成上線歷程。
 
 此時，您的開發人員和部署管理員可以開始建立您自己的應用程式，而您的 AEM 使用者可以開始建立內容。從這個角度上說，您的上線工作已經完成，現在是時候使用您的新 AEM as a Cloud Service 系統了，本文件將對此進行說明。
 
@@ -136,7 +136,7 @@ ht-degree: 94%
 
 作為開發人員或部署管理員，您不僅具備 Cloud Manager 的工作知識，還具備工作環境、存放庫和管道的知識！但 AEM as a Cloud Service 的強大 CI/CD 工具還有許多值得深入了解之處。如需更多詳細資訊，請參閱[其他資源](#additional-resources)一節。
 
-如果您對內容作者如何存取和使用AEM as a Cloud Service感興趣，請繼續進行入門歷程的最後一部分，[AEM使用者任務](aem-users.md)。
+如果您對內容作者如何存取和使用 AEM as a Cloud Service 感興趣，請繼續進行上線歷程的最後一部分：[AEM 使用者任務](aem-users.md)。
 
 >[!TIP]
 >

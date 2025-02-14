@@ -9,9 +9,9 @@ solution: Experience Manager Sites
 feature: Translation
 role: Admin
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '776'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 93%
 
 ## 目前進度 {#story-so-far}
 
-在 AEM Sites 翻譯歷程的上一個文件「[設定翻譯連接器](configure-connector.md)」中，您已了解如何安裝和設定翻譯連接器，您現在應該：
+在 AEM Sites 翻譯歷程的上一份文件「[設定翻譯連接器](configure-connector.md)」中，您已了解如何安裝和設定翻譯連接器，您現在應該：
 
 * 了解 AEM 中翻譯整合框架的重要參數。
 * 能夠為您的翻譯服務設定您自己的連接。
@@ -100,10 +100,10 @@ AEM 自動為所有內容建立翻譯規則。要檢視這些規則：
 * 了解翻譯規則的作用。
 * 能夠定義您自己的翻譯規則。
 
-以這些知識為基礎並繼續您的 AEM Sites 翻譯歷程，接著檢閱文件「[翻譯內容](translate-content.md)」，從中了解連接器和規則如何搭配運作以翻譯內容。
+以這些知識為基礎並繼續您的 AEM Sites 翻譯歷程，接著檢閱文件「[翻譯內容](translate-content.md)」，從中了解連接器和規則如何共同運作以翻譯內容。
 
 ## 其他資源 {#additional-resources}
 
-我們建議您檢閱檔案[翻譯內容](translate-content.md)，以繼續翻譯歷程的下一部分，以下是一些其他選擇性資源，這些資源會更深入地研究本檔案中提到的一些概念，但並非繼續此歷程所必需的。
+雖然建議您檢閱文件「[翻譯內容](translate-content.md)」以繼續翻譯歷程的下一部分，但下列是一些其他選用資源，深入探究了本文件提到的一些概念，不過這些資源並非繼續該歷程的必要條件。
 
 * [識別要翻譯的內容](/help/sites-cloud/administering/translation/rules.md) - 了解翻譯規則如何識別需要翻譯的內容。

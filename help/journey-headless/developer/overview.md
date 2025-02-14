@@ -7,9 +7,9 @@ solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1070'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -34,12 +34,12 @@ AEM Headless 實作使用內容片段模型和內容片段來專注於建位結�
 本指南將引導您完成 AEM Headless 實施主題，完成後您便可以：
 
 * 充分了解什麼是 Headless 內容傳遞及其優勢。
-* 了解 AEM 的 Headless 功能以及它們如何協同工作以傳遞 Headless 體驗。
+* 了解 AEM 的 Headless 功能以及它們如何共同運作以傳遞 Headless 體驗。
 * 邁出實施第一個 AEM Headless 專案的第一步。
 
 >[!TIP]
 >
-> 如果您偏好&#x200B;**做中學**&#x200B;並具備 AEM 現有知識，請造訪 AEM Headless 教學課程，其由 API 和框架所組織，位在此文件結尾處的[其他資源章節](#additional-resources)。
+> 如果您偏好&#x200B;**做中學**&#x200B;並具備 AEM 現有知識，請造訪 AEM Headless 教學課程，其由 API 和框架所組織，位在此文件結尾處的[其他資源區段](#additional-resources)。
 
 ## 客群 {#audience}
 
@@ -77,7 +77,7 @@ AEM Headless 實作使用內容片段模型和內容片段來專注於建位結�
 
 ## 後續步驟 {#what-is-next}
 
-開始檢視下一篇文章： [瞭解CMS Headless開發](learn-about.md)，
+查看下一篇文章以開始使用：[了解 CMS Headless 開發。](learn-about.md)，
 
 ### 選擇你自己的冒險 {#choose-your-path}
 
@@ -90,7 +90,7 @@ AEM Headless 實作使用內容片段模型和內容片段來專注於建位結�
 
 文件歷程藉由描述文字指引您完成相關流程和功能，向您說明 AEM 如何解決業務問題。此歷程說明了多個功能如何共同運作以解決單一業務需求。
 
-查看這些額外的歷程，進一步了解 AEM 的強大功能如何協同工作。
+查看這些額外的歷程，進一步了解 AEM 的強大功能如何共同運作。
 
 * [AEM 開發人員入口網站](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
 * [AEM Headless 教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html) - 如果您偏好做中學並具備 AEM 現有知識，請參閱我們的實作教學課程，其由 API 和框架所組織，其在探索如何建立並使用在 AEM Headless 建立的應用程式。

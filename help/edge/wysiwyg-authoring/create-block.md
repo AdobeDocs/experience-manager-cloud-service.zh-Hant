@@ -5,9 +5,9 @@ exl-id: 65a5600a-8d16-4943-b3cd-fe2eee1b4abf
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1415'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -22,9 +22,9 @@ ht-degree: 91%
 
 本指南需要具備使用 Edge Delivery Services 專案進行所見即所得製作及通用編輯器的知識。在開始執行本指南之前，您應該有 Edge Delivery Services 存取權並熟悉基本使用需知，包括：
 
-* 您已完成[Edge Delivery服務教學課程](/help/edge/developer/tutorial.md)。
-* 您可以存取[AEM Cloud Service沙箱](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)。
-* 您已在相同沙箱環境中[啟用通用編輯器](/help/implementing/universal-editor/getting-started.md)。
+* 您已完成 [Edge Delivery Service 教學課程](/help/edge/developer/tutorial.md)。
+* 您有權存取 [AEM Cloud Service 沙箱](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)。
+* 您已[在同一沙箱環境中啟用通用編輯器](/help/implementing/universal-editor/getting-started.md)。
 * 您已完成[使用 Edge Delivery Services 進行所見即所得製作的開發人員快速入門手冊](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)指南。
 
 本指南是以在[使用 Edge Delivery Services 進行所見即所得製作的開發人員快速入門手冊](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)指南中完成的工作為基礎。
@@ -155,7 +155,7 @@ Adobe 建議您採用三階段方法來開發區塊：
 
 現在您的基本引述區塊已定義並提交給範例專案，您可以將引述區塊新增至現有頁面。
 
-1. 在瀏覽器中，登入 AEM as a Cloud Service。[使用Sites主控台](/help/sites-cloud/authoring/basic-handling.md)，導覽至您在[使用Edge Delivery Services進行WYSIWYG編寫的開發人員快速入門手冊](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)指南中建立的網站，並選取頁面。
+1. 在瀏覽器中，登入 AEM as a Cloud Service。[使用 Sites 主控台](/help/sites-cloud/authoring/basic-handling.md)，瀏覽至您在[使用 Edge Delivery Services 進行所見即所得製作的開發人員快速入門手冊](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)指南中建立的網站，然後選取一個頁面。
 
    * 在本案例中，`index`是用於說明目的。
 
@@ -281,7 +281,7 @@ export default function decorate(block) {
 
 ### 區塊選項 {#block-options}
 
-如果您需要區塊的外觀或行為因特定情況而略有不同，但差異不足以成為新的區塊，您可以讓作者從[區塊選項](content-modeling.md#type-inference)中進行選擇。
+如果您需要區塊的外觀或行為在某些情況下略有不同，但又不足以使其本身成為一個新區塊，您可以讓作者從[區塊選項](content-modeling.md#type-inference)中進行選擇。
 
 在區塊中新增一個 `classes` 屬性，簡單區塊的屬性會轉譯於表格標頭中，而容器區塊的項目則會轉譯為值清單。
 
@@ -343,4 +343,4 @@ export default function decorate(block) {
 
 >[!TIP]
 >
->如需使用AEM as a Cloud Service作為內容來源來建立啟用WYSIWYG撰寫的新Edge Delivery Services專案的端對端逐步解說，請檢視[此AEM GEM網路研討會](https://experienceleague.adobe.com/zh-hant/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)。
+>如需建立新的 Edge Delivery Services 專案的端對端操作示範，該專案支援使用 AEM as a Cloud Service 作為內容來源進行所見即所得製作，請觀看[此 AEM GEM 網路研討會](https://experienceleague.adobe.com/zh-hant/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)。

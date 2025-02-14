@@ -9,9 +9,9 @@ solution: Experience Manager Sites
 feature: Translation
 role: Admin
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1147'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 90%
 
 ## 目前進度 {#story-so-far}
 
-在 AEM Sites 翻譯歷程的上一個文件「[開始使用 AEM Sites 翻譯](learn-about.md)」中，您已了解如何組織您的內容以及 AEM 翻譯工具的運作方式，現在您應該：
+在 AEM Sites 翻譯歷程的上一份文件「[開始使用 AEM Sites 翻譯](learn-about.md)」中，您已了解如何組織您的內容以及 AEM 翻譯工具的運作方式，現在您應該：
 
 * 了解內容結構對翻譯的重要性。
 * 了解 AEM 如何儲存內容。
@@ -44,17 +44,17 @@ AEM 的翻譯整合框架 (TIF) 整合協力廠商翻譯服務以協調 AEM 內�
 1. 建立翻譯整合框架設定。
 1. 將設定與您的內容相關聯。
 
-以下章節將更詳細地描述這些步驟。
+以下區段將更詳細地描述這些步驟。
 
 ## 連接到翻譯服務提供者 {#connect-translation-provider}
 
-第一步是選擇您要使用哪一種翻譯服務。有多種人工和機器翻譯服務可供 AEM 使用。大部分提供者都提供要安裝的翻譯套件。請參閱[其他資源](#additional-resources)章節，了解一系列可選用的翻譯服務。
+第一步是選擇您要使用哪一種翻譯服務。有多種人工和機器翻譯服務可供 AEM 使用。大部分提供者都提供要安裝的翻譯套件。請參閱[其他資源](#additional-resources)區段，了解一系列可選用的翻譯服務。
 
 >[!NOTE]
 >
 >翻譯專家通常負責選擇要使用的翻譯服務，但管理員通常負責安裝所需的翻譯連接器套件。
 
-基於此歷程的目的，我們使用 AEM 有提供試用版授權的 Microsoft Translator，立即可用。如需更多此提供者的資訊，請參閱[其他資源](#additional-resources)章節。
+基於此歷程的目的，我們使用 AEM 有提供試用版授權的 Microsoft Translator，立即可用。如需更多此提供者的資訊，請參閱[其他資源](#additional-resources)區段。
 
 如果您選擇其他提供者，您的管理員必須按照該翻譯服務提供的說明安裝連接器套件。
 
@@ -62,7 +62,7 @@ AEM 的翻譯整合框架 (TIF) 整合協力廠商翻譯服務以協調 AEM 內�
 >
 >在 AEM 中使用立即可用的 Microsoft Translator 不需要額外的設定，也無需額外的連接器設定即可按原狀工作。
 >
->如果您選擇使用Microsoft Translator聯結器進行測試，則不需要執行下列兩個區段的步驟： [建立翻譯整合設定](#create-config)和[將設定與您的內容建立關聯](#associate)。 不過，建議您閱讀這些檔案，以熟悉需要設定偏好聯結器時的步驟。
+>如果您選擇使用 Microsoft Translator 連接器進行測試，則無需執行接下來兩個區段中的步驟：[建立翻譯整合設定](#create-config)和[將設定與您的內容相關聯](#associate)。但是，建議您閱讀這兩個章節，以便熟悉相關步驟，在您需要設定偏好的連接器時就能派上用場。
 >
 >Microsoft Translator Connector 的試用版授權不適用於生產用途，如果您決定取得授權，系統管理員必須按照本文件結尾的「[其他資源](#additional-resources)」區段中詳述的步驟來設定該授權。
 
@@ -123,7 +123,7 @@ AEM 是一種靈活而強大的工具，透過多個連接器和多個設定，�
 1. 前往全域導覽，然後前往「**導覽**」>「**資產**」>「**檔案**」。
 1. 在資產主控台中，選取要設定的語言根，然後選取「**屬性**」。
 1. 選取「**雲端服務**」標籤。
-1. 在「**雲端服務設定**」之下 (位在「**新增設定**」下拉式清單)，選取您的連接器。當您以先前描述的[安裝其套件時，它應該會出現在下拉式清單中](#connect-translation-provider)。
+1. 在「**雲端服務設定**」之下 (位在「**新增設定**」下拉式清單)，選取您的連接器。如果您已依照[先前描述](#connect-translation-provider)安裝其套件，連接器應隨即出現在下拉式清單中。
 1. 在「**雲端服務設定**」之下 (位於「**新增設定**」下拉式清單)，亦請選取您的設定。
 1. 選取「**儲存並關閉**」。
 
@@ -136,11 +136,11 @@ AEM 是一種靈活而強大的工具，透過多個連接器和多個設定，�
 * 了解 AEM 中翻譯整合框架的重要參數。
 * 能夠為您的翻譯服務設定您自己的連接。
 
-在此知識的基礎上繼續您的AEM Sites翻譯歷程，接下來檢視檔案[設定翻譯規則](translation-rules.md)，瞭解如何定義要翻譯的內容。
+以此知識為基礎並接著檢閱文件「[設定翻譯規則](translation-rules.md)」，以繼續您的 AEM Sites 翻譯歷程，您可在該文件中了解如何定義要翻譯哪些內容。
 
 ## 其他資源 {#additional-resources}
 
-因為我們建議您檢閱文件「[設定翻譯規則](translation-rules.md)」，繼續翻譯歷程的下個部分，故提供下列一些其他選用資源，協助深入瞭解本文件提及的一些概念，但是這些並非繼續執行歷程的必要條件。
+雖然建議您檢閱文件「[設定翻譯規則](translation-rules.md)」以繼續翻譯歷程的下一部分，但下列是一些其他選用資源，深入探究了本文件提到的一些概念，不過這些資源並非繼續該歷程的必要條件。
 
 * [設定翻譯整合框架](/help/sites-cloud/administering/translation/integration-framework.md) - 檢視所選翻譯連接器清單，了解如何設定翻譯整合框架以與協力廠商翻譯服務整合。
 * [連接到 Microsoft Translator](/help/sites-cloud/administering/translation/connect-ms-translator.md) - AEM 提供 Microsoft Translator 試用版帳戶用於測試目的。

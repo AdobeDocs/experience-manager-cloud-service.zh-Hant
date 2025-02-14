@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 exl-id: 26d4db90-3e4b-4957-bf21-343c76322cdc
 role: Admin, Architect, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1284'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -34,11 +34,11 @@ ht-degree: 94%
 
 >[!TIP]
 >
->如需一般試算表如何與Edge Delivery Services搭配使用的詳細資訊，請參閱檔案[試算表與JSON](/help/edge/developer/spreadsheets.md)。
+>如需試算表一般如何與 Edge Delivery Services 配合使用的詳細資訊，請參閱文件「[試算表和 JSON](/help/edge/developer/spreadsheets.md)」。
 
 >[!TIP]
 >
->試算表只能用來維護表格資料。若要儲存結構化資料，[請檢視AEM的Headless功能](/help/headless/introduction.md)。
+>試算表只能用來維護表格資料。若要儲存結構化資料，請[查看 AEM 的 Headless 功能](/help/headless/introduction.md)」。
 
 ## 先決條件 {#prerequisites}
 
@@ -150,7 +150,7 @@ https://<aem-instance>/bin/asynccommand?optype=JOBINF&jobid=2024/10/24/14/1/8da6
 
    >[!NOTE]
    >
-   >此 `paths.json` 項目是依據使用表格資料建立重新導向的範例。請確定更新適合您正在建立的[型別試算表的路徑](#other)。
+   >此 `paths.json` 項目是依據使用表格資料建立重新導向的範例。請確保根據[您要建立的試算表類型](#other)更新適合的路徑。
 
 1. 按一下「**提交變更...**」，將變更儲存到 `main`。
 
@@ -174,7 +174,7 @@ https://<aem-instance>/bin/asynccommand?optype=JOBINF&jobid=2024/10/24/14/1/8da6
 
 >[!TIP]
 >
->如需有關路徑對應的詳細資訊，請參閱檔案[Edge Delivery Services的路徑對應](/help/edge/wysiwyg-authoring/path-mapping.md)。
+>如需有關路徑對應的詳細資訊，請參閱文件「[Edge Delivery Services 的路徑對應](/help/edge/wysiwyg-authoring/path-mapping.md)」。
 
 ## 其他試算表類型 {#other}
 
@@ -205,7 +205,7 @@ https://<aem-instance>/bin/asynccommand?optype=JOBINF&jobid=2024/10/24/14/1/8da6
 
 ## 建立您自己的試算表 {#own-spreadsheet}
 
-1. 請依照區段[建立試算表](#spreadsheet)中的相同步驟操作。
+1. 請依照「[建立試算表](#spreadsheet)」區段中的相同步驟進行。
 
 1. 選取範本時，要選擇「**試算表**」。
 

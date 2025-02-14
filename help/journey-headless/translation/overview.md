@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1024'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -31,7 +31,7 @@ Headless 實作放棄了全堆疊解決方案中的傳統頁面和元件管理�
 
 目標是讓您對 Headless 技術、AEM 如何提供 Headless 內容以及如何翻譯它，有廣泛的了解。如果這些主題有任何一個您不熟悉，那麼這就是您理想的起點。
 
-如果您已經熟悉 AEM、 Headless 和翻譯，那麼您可能已經掌握了此歷程的基本知識。請考慮參閱以下的[其他資源區段連結的技術檔案](#additional-resources)。
+如果您已經熟悉 AEM、 Headless 和翻譯，那麼您可能已經掌握了此歷程的基本知識。請考慮參閱[下方其他資源區段](#additional-resources)下的已連結技術文件。
 
 ## AEM 文件歷程 {#documentation-journeys}
 
@@ -49,7 +49,7 @@ Headless 實作放棄了全堆疊解決方案中的傳統頁面和元件管理�
 
 以下是在此歷程中會互動的角色。
 
-| 角色 | 說明 | 歷程中的角色 |
+| 角色 | 描述 | 歷程中的角色 |
 |---|---|---|
 | 翻譯專家 | 定義應翻譯的內容並管理這些工作流程 | 此歷程的客群 |
 | 內容作者 | 建立並管理 Headless 傳遞的內容 | 內容作者建立翻譯專家必須翻譯的內容。 |
@@ -64,7 +64,7 @@ Headless 實作放棄了全堆疊解決方案中的傳統頁面和元件管理�
 
 儘管您可以直接進入歷程的特定部分，但許多概念都是以先前文章中的概念為基礎。因此，如果您剛接觸 AEM Headless 翻譯，Adobe 建議您從頭開始，然後循序漸進。
 
-| # | 文章 | 說明 |
+| # | 文章 | 描述 |
 |---|---|---|
 | 0 | AEM Headless 翻譯歷程 | 本文件 |
 | 1 | [了解 Headless 內容以及如何在 AEM 中翻譯](learn-about.md) | 了解 Headless 概念、它們如何對應到 AEM 以及 AEM 翻譯理論。 |
@@ -81,7 +81,7 @@ Headless 實作放棄了全堆疊解決方案中的傳統頁面和元件管理�
 
 文件歷程會透過敘述方式，指導您完成複雜的相關流程和功能，向您展示 AEM 如何解決業務問題。此歷程說明了多個功能如何共同運作以解決單一業務需求。
 
-因為這樣的歷程是設計成獨立的。然而，其中數個可以相互關聯。查看這些額外的歷程，進一步了解 AEM 的強大功能如何協同工作。
+因為這樣的歷程是設計成獨立的。然而，其中數個可以相互關聯。查看這些額外的歷程，進一步了解 AEM 的強大功能如何共同運作。
 
 * [Headless 製作歷程](/help/journey-headless/author/overview.md) - 從這裡開始，此歷程會逐步引導您了解 AEM 強大且靈活的 Headless 特性、其功能，以及如何在您的第一個 Headless 專案中建立內容模型。
 * [Headless 架構師歷程](/help/journey-headless/architect/overview.md) - 從這裡開始介紹 Adobe Experience Manager as a Cloud Service 的強大、靈活、 Headless 功能，以及如何為您的專案建立內容模型。

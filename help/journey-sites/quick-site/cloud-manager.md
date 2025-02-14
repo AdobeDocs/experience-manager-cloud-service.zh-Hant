@@ -6,9 +6,9 @@ solution: Experience Manager Sites
 feature: Developing
 role: Admin, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1113'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -26,12 +26,12 @@ ht-degree: 88%
 
 本文件協助您了解 AEM 快速建立網站工具的工作原理，並概述從開始到結束的流程。閱讀本文件後，您應該：
 
-* 了解 AEM Sites 和 Cloud Manager 如何搭配運作以促進前端開發
+* 了解 AEM Sites 和 Cloud Manager 如何共同運作以促進前端開發
 * 了解前端自訂步驟如何與 AEM 完全分離並且不需要瞭解 AEM 亦可操作。
 
 本文件的重點在於先瞭解快速建立網站解決方案的這些基本部分，然後再繼續歷程的下一步，即開始設定。
 
-雖然我們建議您逐步完成此歷程，但如果您已瞭解AEM Sites和Cloud Manager的搭配使用，且希望直接從設定開始進行，您可以[跳至歷程的下一步](create-site.md)。
+雖然建議您逐步完成此歷程，但如果您已經了解 AEM Sites 和 Cloud Manager 如何共同運作並想直接開始設定，您可以[跳至歷程的下一步](create-site.md)。
 
 ## 負責角色 {#responsible-role}
 
@@ -119,14 +119,14 @@ Cloud Manager 是 AEM as a Cloud Service 的重要元件，是使用平台的單
 
 現在您已完成 AEM 快速建立網站歷程的這個部分，您應該：
 
-* 了解 AEM Sites 和 Cloud Manager 如何搭配運作以促進前端開發
+* 了解 AEM Sites 和 Cloud Manager 如何共同運作以促進前端開發
 * 了解前端自訂步驟如何與 AEM 完全分離並且不需要瞭解 AEM 亦可操作。
 
-在此知識的基礎上繼續您的AEM快速網站建立歷程，接下來檢閱檔案[從範本建立網站](create-site.md)，瞭解如何使用範本快速建立新的AEM網站。
+以此知識為基礎並繼續您的 AEM 快速建立網站歷程，接著檢閱文件「[使用範本建立網站](create-site.md)」，您可以在此了解如何使用範本快速建立新的 AEM 網站。
 
 ## 其他資源 {#additional-resources}
 
-我們建議您檢閱檔案[從範本建立網站](create-site.md)，以繼續快速網站建立歷程的下一部分，以下是一些其他選擇性資源，這些資源會更深入地研究本檔案中提到的一些概念，但並非繼續此歷程所必需的。
+雖然建議您檢閱文件「[自訂網站主題](create-site.md)」以繼續快速建立網站歷程的下一部分，但下列是一些其他選用資源，深入探究了本文件提到的一些概念，不過這些資源並非繼續該歷程的必要條件。
 
 * [Cloud Manager 文件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html) - 如果您想要 Cloud Manager 功能的更多詳細資訊，您可能想直接查閱深入的技術文件。
 * [角色型權限](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/role-based-permissions.html) - Cloud Manager 已預先設定角色並授予適當權限。有關這些角色以及如何管理它們的詳細資訊，請參閱本文件。

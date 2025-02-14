@@ -5,19 +5,19 @@ exl-id: d02776a7-836a-4894-a5d5-ae88cc7e4e76
 feature: Onboarding
 role: Admin, User, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '463'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
 # AEM as a Cloud Service 技術 {#terminology}
 
-在[上線歷程](overview.md)的這一部分，您將瞭解AEM as a Cloud Service的一些術語及其基本結構。
+在這個部分的[上線歷程](overview.md)中，您可了解 AEM as a Cloud Service 的一些術語及其基本結構。
 
 ## 目標 {#objective}
 
-現在您已閱讀檔案[入門準備](preparation.md)，瞭解入門流程的內容，那麼在登入前瞭解系統的一些術語及其基本結構會很有幫助。
+由於您已閱讀文件「[上線準備](preparation.md)」並了解入門流程的內容，則在登入前了解系統的一些術語及其基本結構會很有幫助。
 
 AEM as a Cloud Service 是一種功能強大且靈活的工具，要使用任何工具，您應該熟悉它的組織以及用於描述它的術語和語言。本文件總結了您在開始使用該系統之前需要了解的一些關鍵術語。
 

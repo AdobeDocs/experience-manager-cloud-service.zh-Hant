@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 exl-id: a71184a7-c954-442e-b276-99edc6d2acd8
 role: Admin, Architect, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1212'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -20,9 +20,9 @@ ht-degree: 86%
 
 在開始執行本指南之前，您應該要熟悉 Edge Delivery Services 的基礎知識並有權存取 Edge Delivery Services，其內容包括：
 
-* 您已完成[Edge Delivery服務教學課程](/help/edge/developer/tutorial.md)。
-* 您可以存取[AEM Cloud Service沙箱](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)。
-* 您已在相同沙箱環境中[啟用通用編輯器](/help/implementing/universal-editor/getting-started.md)。
+* 您已完成 [Edge Delivery Service 教學課程](/help/edge/developer/tutorial.md)。
+* 您有權存取 [AEM Cloud Service 沙箱](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)。
+* 您已[在同一沙箱環境中啟用通用編輯器](/help/implementing/universal-editor/getting-started.md)。
 
 ## 開發 Edge Delivery Services 時的核心概念 {#core-concepts}
 
@@ -52,7 +52,7 @@ Edge Delivery 運用 GitHub，可讓您直接從自己的 GitHub 存放庫管理
 
 ## 所見即所得製作和 Edge Delivery Services 快速入門 {#getting-started}
 
-當您滿足[必要條件](#prerequisites)並做出選擇[使用通用編輯器](#editor-choice)後，您就可以開始自己的專案。
+滿足[必要條件](#prerequisites)並選擇[使用通用編輯器](#editor-choice)後，您即可開始製作自己的專案。
 
 ### 建立您的 GitHub 專案 {#create-github-project}
 
@@ -116,7 +116,7 @@ Edge Delivery 運用 GitHub，可讓您直接從自己的 GitHub 存放庫管理
 
 >[!TIP]
 >
->如需有關路徑對應的詳細資訊，請參閱檔案[Edge Delivery Services的路徑對應](/help/edge/wysiwyg-authoring/path-mapping.md)。
+>如需更多有關路徑對應的資訊，請參閱文件「[Edge Delivery Services 的路徑對應](/help/edge/wysiwyg-authoring/path-mapping.md)」。
 
 ### 建立和編輯新的 AEM 網站 {#create-aem-site}
 
@@ -128,7 +128,7 @@ Edge Delivery 運用 GitHub，可讓您直接從自己的 GitHub 存放庫管理
 
 1. 從 GitHub 下載最新的「使用 Edge Delivery Services 進行所見即所得製作」網站範本：[`https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases`](https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases)。
 
-1. 登入您的AEM as a Cloud Service編寫執行個體，並導覽至Sites主控台，然後按一下「從範本建立&#x200B;**>**&#x200B;網站&#x200B;**」。**
+1. 登入您的 AEM as a Cloud Service 製作執行個體，並瀏覽至 Sites 主控台，然後按一下「**建立** > **根據範本的網站**」。
 
    ![從主控台建立新網站](assets/edge-dev-getting-started/create-site-console.png)
 
@@ -140,23 +140,23 @@ Edge Delivery 運用 GitHub，可讓您直接從自己的 GitHub 存放庫管理
 
    * 該範本只能上傳一次。上傳後，可以重複使用它來建立其他網站。
 
-1. 匯入範本後，該範本將出現在精靈中。按一下以選取它，然後按一下[下一步]****。
+1. 匯入範本後，該範本將出現在精靈中。按一下以將其選取，然後按一下「**下一步**」。
 
    ![選取範本](assets/edge-dev-getting-started/select-template.png)
 
 1. 提供以下欄位，然後點選或按一下「**建立**」。
 
    * **網站標題** - 為網站新增描述性標題。
-   * **網站標題** — 使用您在[先前的步驟](#create-github-project)中定義的`<site-name>`。
+   * **網站標題** - 使用您在[上一個步驟](#create-github-project)中已定義的 `<site-name>`。
    * **GitHub URL** - 使用您在上一個步驟中建立的 GitHub 專案的 URL。
 
    ![網站詳細資訊](assets/edge-dev-getting-started/create-site-details.png)
 
-1. AEM 會透過對話方塊確認建立網站。按一下[確定] **關閉。**
+1. AEM 會透過對話方塊確認建立網站。按一下&#x200B;**「確定」**&#x200B;即可關閉。
 
    ![網站建立確認](assets/edge-dev-getting-started/site-creation-confirmation.png)
 
-1. 在網站主控台上，導覽至新建立網站的`index.html`，然後按一下工具列中的&#x200B;**編輯**。
+1. 在網站主控台上，瀏覽到新建立網站的 `index.html`，然後在工具列中按一下「**編輯**」。
 
    ![編輯新網站](assets/edge-dev-getting-started/new-site.png)
 
@@ -194,4 +194,4 @@ Edge Delivery 運用 GitHub，可讓您直接從自己的 GitHub 存放庫管理
 
 >[!TIP]
 >
->如需使用AEM as a Cloud Service作為內容來源來建立啟用WYSIWYG撰寫的新Edge Delivery Services專案的端對端逐步解說，請檢視[此AEM GEM網路研討會](https://experienceleague.adobe.com/zh-hant/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)。
+>如需建立新的 Edge Delivery Services 專案的端對端操作示範，該專案支援使用 AEM as a Cloud Service 作為內容來源進行所見即所得製作，請觀看[此 AEM GEM 網路研討會](https://experienceleague.adobe.com/zh-hant/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)。

@@ -5,9 +5,9 @@ exl-id: e76fd283-12b2-4139-9e71-2e145b9620b1
 feature: Onboarding
 role: Admin, User, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '809'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 86%
 
 ## 目前進度 {#story-so-far}
 
-在AEM參考示範附加元件歷程的上一個檔案[建立方案](create-program.md)中，您執行了第一個設定步驟來建立方案以進行測試並使用管道來部署附加元件內容。 您現在應該：
+在 AEM 參考示範附加元件歷程的上一份文件「[建立方案](create-program.md)」中，您已執行第一個設定步驟，建立測試用的方案，並使用管道來部署附加內容。您現在應該：
 
 * 了解如何使用 Cloud Manager 建立方案。
 * 了解如何啟動新方案的參考示範附加元件。
@@ -105,8 +105,8 @@ ht-degree: 86%
 
 現在您可以使用附加內容測試 AEM 的功能。要繼續進行歷程，您有兩個選項：
 
-* 如果您想要完整示範和測試AEM Screens內容，請確定您已依照先前所述部署以&#x200B;**We.Cafe網站範本**&#x200B;為基礎的網站，並繼續[為您的示範網站啟用AEM Screens](screens.md)。
-* 如果您只想要示範Sites內容，請繼續[管理您的示範網站](manage.md)，瞭解可用來協助您管理示範網站的工具，以及如何移除這些工具。
+* 如果您想要完整示範並測試 AEM Screens 內容，請確保您已依照前述內容根據「**We.Cafe 網站範本**」部署網站，並繼續「[為您的示範網站啟用 AEM Screens](screens.md)」。
+* 如果您只想示範網站內容，請繼續「[管理您的示範網站](manage.md)」，您可以在此了解可協助您管理示範網站的各項工具以及如何刪除它們。
 
 ## 其他資源 {#additional-resources}
 

@@ -6,9 +6,9 @@ solution: Experience Manager Sites
 feature: Developing
 role: Admin, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1485'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -18,9 +18,9 @@ ht-degree: 89%
 
 ## 目前進度 {#story-so-far}
 
-在AEM快速網站建立歷程的上一個檔案[瞭解Cloud Manager和快速網站建立工作流程](cloud-manager.md)中，您已瞭解Cloud Manager以及它如何將新的快速網站建立流程連結在一起，您現在應：
+在 AEM 快速建立網站歷程的上一份文件「[了解 Cloud Manager 和快速建立網站工作流程](cloud-manager.md)」中，您已了解 Cloud Manager 以及它如何與快速建立網站的新流程連結在一起，而您現在應該：
 
-* 了解 AEM Sites 和 Cloud Manager 如何搭配運作以促進前端開發
+* 了解 AEM Sites 和 Cloud Manager 如何共同運作以促進前端開發
 * 了解前端自訂步驟如何與 AEM 完全分離並且不需要瞭解 AEM 亦可操作。
 
 本文章以這些基礎知識為基礎，協助您執行第一個設定步驟並使用範本建立一個網站，而您之後可以使用前端工具進行自訂。
@@ -54,7 +54,7 @@ ht-degree: 89%
 
 ## 取得網站範本 {#obtaining-template}
 
-最簡單的入門方法是[從其GitHub存放庫](https://github.com/adobe/aem-site-template-standard/releases)下載最新版本的AEM標準網站範本。
+開始使用的最簡單方法是[從 GitHub 存放庫下載最新版本的 AEM 標準網站範本](https://github.com/adobe/aem-site-template-standard/releases)。
 
 下載後，您可以將其上傳到您的 AEM 環境，就像上傳任何其他套件一樣。若您想要此一主題的更多資訊，請參閱[「其他資源」區段](#additional-resources)了解如何使用套件的詳細資訊。
 
@@ -177,11 +177,11 @@ ht-degree: 89%
 * 了解如何使用範本建立網站。
 * 了解如何從新網站下載範本以提供給前端開發人員。
 
-在此知識的基礎上繼續您的AEM快速網站建立歷程，接下來檢視檔案[設定您的管道](pipeline-setup.md)，您將在此建立前端管道來管理網站主題的自訂。
+以此知識為基礎並接著檢閱文件「[設定您的管道](pipeline-setup.md)」，以繼續您的 AEM 快速建立網站歷程，您將會建立前端管道來管理網站主題的自訂內容。
 
 ## 其他資源 {#additional-resources}
 
-我們建議您檢閱檔案[設定您的管道](pipeline-setup.md)，以繼續快速網站建立歷程的下一部分，以下是一些其他選擇性資源，這些資源對檔案中提到的一些概念進行了更深入的探究，但並非繼續此歷程所必需的。
+雖然建議您檢閱文件「[設定您的管道](pipeline-setup.md)」以繼續快速建立網站歷程的下一部分，但下列是一些其他選用資源，深入探究了本文件提到的一些概念，不過這些資源並非繼續該歷程的必要條件。
 
 * [AEM 標準網站範本](https://github.com/adobe/aem-site-template-standard) - 這是 AEM 標準網站範本的 GitHub 存放庫。
 * [組織頁面](/help/sites-cloud/authoring/sites-console/organizing-pages.md)  - 本指南詳細介紹如何組織 AEM 網站的頁面。

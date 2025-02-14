@@ -6,19 +6,19 @@ solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1344'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
 # 如何透過 AEM Delivery API 存取您的內容 {#access-your-content}
 
-在[AEM Headless開發人員歷程](overview.md)的這一部分，您可以瞭解如何使用GraphQL查詢來存取您的內容片段的內容，並將其饋送至您的應用程式（headless傳送）。
+在這個部分的 [AEM Headless 開發人員歷程](overview.md)中，您可以了解如何使用 GraphQL 查詢來存取您的內容片段內容並提供給您的應用程式 ( Headless 傳遞)。
 
 ## 目前進度 {#story-so-far}
 
-在 AEM Headless 歷程的上一個文件「[如何建立內容模型](model-your-content.md)」中，您已了解在 AEM 中建立內容模型的基本知識，所以現在您應該了解如何建立內容結構模型，然後使用 AEM 內容片段模型和內容片段實現該結構。
+在 AEM Headless 歷程的上一份文件「[如何建立內容模型](model-your-content.md)」中，您已了解在 AEM 中建立內容模型的基本知識，所以現在您應該了解如何建立內容結構模型，然後使用 AEM 內容片段模型和內容片段實現該結構。
 
 * 認識內容模型相關的概念和術語。
 * 了解為什麼 Headless 內容傳遞需要內容模型。
