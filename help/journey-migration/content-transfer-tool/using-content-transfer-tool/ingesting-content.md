@@ -1,12 +1,12 @@
 ---
 title: 將內容引入雲端服務
-description: 瞭解如何使用Cloud Acceleration Manager將移轉集中的內容擷取至目的地Cloud Service例項。
+description: 瞭解如何使用Cloud Acceleration Manager將移轉集中的內容擷取至目標Cloud Service例項。
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 feature: Migration
 role: Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 01c2bda6b688bb85a214991f7594585f87850ec2
 workflow-type: tm+mt
-source-wordcount: '3411'
+source-wordcount: '3441'
 ht-degree: 12%
 
 ---
@@ -43,7 +43,7 @@ ht-degree: 12%
       * 內嵌不支援快速開發環境(RDE)或預覽型別的目的地，並且即使使用者有權存取，也不會顯示為可能的目的地選擇。
       * 雖然移轉集可同時內嵌至多個目的地，但目的地一次只能是一個執行或等待內嵌的目標。
 
-   * **層：**&#x200B;選取層。 (作者/Publish)。
+   * **層：**&#x200B;選取層。 （作者/發佈）。
       * 如果來源是`Author`，建議將其擷取到目標上的`Author`層。 同樣地，如果來源為`Publish`，目標也應為`Publish`。
 
    >[!NOTE]
@@ -58,14 +58,14 @@ ht-degree: 12%
       * 非擦去擷取是專為追加擷取使用案例而設計。 這些內嵌專案旨在遞增數量的新內容，這些內容自現有移轉集中最後一次內嵌以來已變更。 若在此使用案例之外執行非擦去擷取，可能會導致擷取時間非常長。
 
    >[!IMPORTANT]
-   > 如果已為內嵌啟用設定&#x200B;**擦去**，它會重設整個現有的存放庫，包括目標Cloud Service執行個體的使用者許可權。 此重設對於新增到&#x200B;**管理員**&#x200B;群組的管理員使用者也是true，必須將該使用者再次新增到管理員群組才能開始內嵌。
+   > 如果已為內嵌啟用設定&#x200B;**擦去**，則會重設整個現有的存放庫，包括目標Cloud Service執行個體的使用者許可權。 此重設對於新增到&#x200B;**管理員**&#x200B;群組的管理員使用者也是true，必須將該使用者再次新增到管理員群組才能開始內嵌。
 
    * **預先複製：**&#x200B;選擇`Pre-copy`值
       * 您可以執行選用的預先複製步驟，大幅加快內嵌速度。 如需詳細資訊，請參閱[使用AzCopy擷取](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#ingesting-azcopy)。
       * 如果使用預先複製擷取（用於S3或Azure資料存放區），建議先單獨執行`Author`擷取。 如此可加快`Publish`擷取稍後執行的速度。
 
    >[!IMPORTANT]
-   > 您必須屬於目的地Cloud Service作者服務上的本機&#x200B;**AEM管理員**&#x200B;群組，才能起始內嵌至目的地。 如果您無法開始內嵌，請參閱[無法開始內嵌](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#unable-to-start-ingestion)以取得詳細資料。
+   > 您必須屬於目的地Cloud Service作者服務上的本機&#x200B;**AEM管理員**&#x200B;群組，才能起始內嵌至目的地環境。 如果您無法開始內嵌，請參閱[無法開始內嵌](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#unable-to-start-ingestion)以取得詳細資料。
 
 1. 選取擷取選擇後，便會顯示預估持續時間。 這是根據類似擷取之歷史資料盡力估計的結果。
 
@@ -130,17 +130,17 @@ ht-degree: 12%
 
 >[!NOTE]
 >
->該權杖可供屬於目的地Cloud Service作者服務上本機&#x200B;**AEM管理員**&#x200B;群組的使用者使用。
+>此權杖可供屬於目的地Cloud Service作者服務上本機&#x200B;**AEM管理員**&#x200B;群組的使用者使用。
 
 ### 無法開始內嵌 {#unable-to-start-ingestion}
 
-您必須屬於目的地Cloud Service作者服務上的本機&#x200B;**AEM管理員**&#x200B;群組，才能起始內嵌至目的地。 如果您不屬於AEM管理員群組，當您嘗試開始內嵌時，會看到如下所示的錯誤。 您可以要求您的系統管理員將您新增至本機&#x200B;**AEM系統管理員**，或要求您取得權杖本身，然後您可以將權杖貼到&#x200B;**移轉權杖輸入**&#x200B;欄位中。
+您必須屬於目的地Cloud Service作者服務上的本機&#x200B;**AEM管理員**&#x200B;群組，才能起始內嵌至目的地環境。 如果您不屬於AEM管理員群組，當您嘗試開始內嵌時，會看到如下所示的錯誤。 您可以要求您的管理員將您新增至本機&#x200B;**AEM管理員**，或要求權杖本身，然後您可以將權杖貼到&#x200B;**移轉權杖輸入**&#x200B;欄位。
 
 ![影像](/help/journey-migration/content-transfer-tool/assets-ctt/error_nonadmin_ingestion.png)
 
 ### 無法連線至移轉服務 {#unable-to-reach-migration-service}
 
-請求內嵌後，可能會向使用者顯示類似以下訊息：「無法聯絡目標環境上的移轉服務。 如果是這樣的話，請稍後再試或聯絡Adobe支援。」
+請求內嵌後，可能會向使用者顯示類似以下訊息：「無法聯絡目標環境上的移轉服務。 若是如此，請稍後再試或聯絡Adobe支援人員。」
 
 ![影像](/help/journey-migration/content-transfer-tool/assets-ctt/error_cannot_reach_migser.png)
 
@@ -165,7 +165,7 @@ ht-degree: 12%
 >
 > 您不再需要記錄支援票證來停用「AEM版本更新」。
 
-如果「AEM版本更新」作用中（即更新正在執行或排入佇列等待執行），則擷取不會開始，且使用者介面會顯示下列訊息。 更新完成後，即可開始內嵌。 Cloud Manager可用來檢視方案管道的目前狀態。
+如果「AEM版本更新」作用中（也就是說，更新正在執行或排入佇列等待執行），內嵌將不會開始，且使用者介面會顯示下列訊息。 更新完成後，即可開始內嵌。 Cloud Manager可用來檢視方案管道的目前狀態。
 
 >[!NOTE]
 >
@@ -196,7 +196,7 @@ ht-degree: 12%
 
 >java.lang.RuntimeException： org.apache.jackrabbit.oak.api.CommitFailedException： OakConstraint0030：唯一性條件約束違反了屬性[jcr：uuid]，其值為a1a1a1a1-b2b2-c3c3-d4d4-e5e5e5e5e5： /some/path/jcr：content， /some/other/path/jcr：content
 
-AEM中的每個節點都必須有唯一的uuid。 此錯誤指出正在擷取的節點與目的地執行個體上不同路徑中存在的節點具有相同的uuid。 發生此狀況有兩個原因：
+AEM中的每個節點都必須有一個唯一的uuid。 此錯誤指出正在擷取的節點與目的地執行個體上不同路徑中存在的節點具有相同的uuid。 發生此狀況有兩個原因：
 
 * 節點在來源上從擷取到後續[追加擷取](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process)之間移動
    * _記住_：對於追加擷取，即使節點不再存在於來源上，仍會存在於移轉集中。
@@ -258,6 +258,7 @@ AEM中的每個節點都必須有唯一的uuid。 此錯誤指出正在擷取的
 
 * `Atlas prescale timeout error` — 擷取階段會嘗試預先縮放目標雲端資料庫，使其大小與正在擷取的移轉集內容大小相符。 少數情況下，此作業未在預期時間範圍內完成。
 * `Exhausted mongo restore retries` — 嘗試將擷取的移轉集內容還原到雲端資料庫的本機傾印已經用盡。 這表示MongoDB的整體健康情況/網路問題，通常會在幾分鐘後自行解決。
+* `Mongo network error` — 有時，建立與MongoDB的連線可能會失敗，導致擷取程式提早結束並回報為失敗。 應嘗試簡單的擷取重試。
 
 ### 擷取已撤銷 {#ingestion-rescinded}
 
@@ -280,4 +281,4 @@ AEM中的每個節點都必須有唯一的uuid。 此錯誤指出正在擷取的
 
 擷取成功後，AEM索引會自動開始。 如需詳細資訊，請參閱移轉內容後的[索引](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/indexing-content.md)。
 
-完成將內容擷取到Cloud Service中後，您可以檢視每個步驟的記錄（擷取和擷取）並尋找錯誤。 請參閱[檢視移轉集記錄](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/viewing-logs.md)以瞭解更多資訊。
+完成將內容內嵌至Cloud Service後，您可以檢視每個步驟的記錄（擷取和內嵌）並尋找錯誤。 請參閱[檢視移轉集記錄](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/viewing-logs.md)以瞭解更多資訊。
