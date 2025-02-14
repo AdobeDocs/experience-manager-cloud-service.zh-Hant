@@ -6,10 +6,10 @@ role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
 exl-id: beee9be7-8215-496b-9fb9-61fba000a055
-source-git-commit: ba38294710553145a670ea42dd2b7571fa4eba7b
+source-git-commit: da2f673319dd5cec764408b4517698a9d39031bb
 workflow-type: tm+mt
-source-wordcount: '733'
-ht-degree: 12%
+source-wordcount: '735'
+ht-degree: 13%
 
 ---
 
@@ -140,3 +140,8 @@ ht-degree: 12%
 1. 按一下後，您會看到下列選項：
    * **[!UICONTROL 提交時]**：提交時可協助您自訂要在提交表單時顯示的訊息。 依預設，成功提交表單時，會向使用者顯示「感謝您提交表單」自訂訊息。
 您也可以選取**[!UICONTROL 顯示訊息]**&#x200B;的選項，並在RTF **編輯器**&#x200B;中新增/編輯您的訊息，自訂表格提交時的感謝訊息。
+
+
+## 另請參閱
+
+{{see-more-forms-eds}}

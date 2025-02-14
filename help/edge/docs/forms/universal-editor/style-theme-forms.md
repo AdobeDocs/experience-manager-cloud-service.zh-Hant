@@ -6,10 +6,10 @@ role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
 exl-id: ac780399-34fe-457d-aaf4-b675656c024d
-source-git-commit: c7f973e373137654bd9c2084bd592ed392896cf1
+source-git-commit: 4fc312fe8a52b7c5733a68014136e297479ab2a0
 workflow-type: tm+mt
 source-wordcount: '1843'
-ht-degree: 88%
+ht-degree: 89%
 
 ---
 
@@ -46,6 +46,29 @@ ht-degree: 88%
 * [方塊模型](https://www.w3schools.com/css/css_boxmodel.asp)：CSS 方塊模型描述 HTML 元素結構為由邊框間距、邊框和邊界包圍的內容區域。
 * Flexbox/Grid：CSS [Flexbox](https://www.w3schools.com/css/css3_flexbox.asp) 和[ Grid 版面](https://www.w3schools.com/css/css_grid.asp)是建立回應式和靈活性設計的強大工具。
 
+## 為最適化表單區塊設定表單樣式
+
+最適化區塊提供了標準化的 HTML 結構，簡化了選取表單元件和設定表單元件樣式的程序：
+
+* **更新預設樣式**：您可以透過編輯 `/blocks/form/form.css file` 來修改表單的預設樣式。此檔案提供了表單的全面樣式，支援多步驟精靈表單。它著重在使用自訂 CSS 變數來輕鬆自訂、維護和跨表單的統一樣式。&lt;! — 如需將最適化Forms區塊新增至專案的指示，請參閱[建立表單](/help/edge/docs/forms/create-forms.md)。
+
+* **適用於Forms的CSS樣式**：若要確保正確套用您的樣式，請在`main .form form`選取器中包裝表單特定的CSS。 這可確保您的樣式僅以主要內容區域中的表單元素為目標，以避免與網站的其他部分衝突。
+
+  範例：
+
+  ```css
+  main .form form input {
+    /* Add styles specific to input fields inside the form */
+  }
+  
+  main .form form button {
+    /* Add styles specific to buttons inside the form */
+  }
+  
+  main .form form label {
+    /* Add styles specific to labels inside the form */
+  }
+  ```
 
 ## 元件結構
 
@@ -137,30 +160,6 @@ main .form form .field-first-name input {
   border-radius: 4px;
 }
 ```
-
-**為最適化Forms區塊設定表單樣式**
-
-最適化區塊提供了標準化的 HTML 結構，簡化了選取表單元件和設定表單元件樣式的程序：
-
-* **更新預設樣式**：您可以透過編輯 `/blocks/form/form.css file` 來修改表單的預設樣式。此檔案提供了表單的全面樣式，支援多步驟精靈表單。它著重在使用自訂 CSS 變數來輕鬆自訂、維護和跨表單的統一樣式。&lt;! — 如需將最適化Forms區塊新增至專案的指示，請參閱[建立表單](/help/edge/docs/forms/create-forms.md)。
-
-* **適用於Forms的CSS樣式**：若要確保正確套用您的樣式，請在`main .form form`選取器中包裝表單特定的CSS。 這可確保您的樣式僅以主要內容區域中的表單元素為目標，以避免與網站的其他部分衝突。
-
-  範例：
-
-  ```css
-  main .form form input {
-    /* Add styles specific to input fields inside the form */
-  }
-  
-  main .form form button {
-    /* Add styles specific to buttons inside the form */
-  }
-  
-  main .form form label {
-    /* Add styles specific to labels inside the form */
-  }
-  ```
 
 +++
 
