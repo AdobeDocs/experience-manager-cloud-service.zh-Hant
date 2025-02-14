@@ -4,7 +4,7 @@ description: 了解 AEM as a Cloud Service 中 Cloud Manager 2025.2.0 的發行�
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: ee7a99c5bf08b39a743d4b326ac23cc8546c512e
+source-git-commit: aaef376b733c10643e44205e55a0921c22008990
 workflow-type: tm+mt
 source-wordcount: '639'
 ht-degree: 15%
@@ -65,7 +65,7 @@ AEM as a Cloud Service中的Cloud Manager 2025.2.0發行日期是2025年2月13�
 * **支援EC （橢圓曲線）私密金鑰(secp384r1)**
 
   Cloud Manager現在支援`secp384r1`橢圓曲線(EC)私密金鑰，提供客戶管理的OV/EV SSL憑證的改良安全性與合規性。
-如需詳細資訊，請參閱[客戶管理的OV/EV SSL憑證需求](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md)。<!-- CMGR-63636 -->
+如需詳細資訊，請參閱[客戶管理的OV/EV SSL憑證需求](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md#requirements)。<!-- CMGR-63636 -->
 
 * **專門的測試環境**
 
