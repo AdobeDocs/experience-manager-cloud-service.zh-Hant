@@ -2,7 +2,7 @@
 source-git-commit: 3a12fff170f521f6051f0c24a4eb28a12439eec1
 workflow-type: tm+mt
 source-wordcount: '1394'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 # 程式碼片段 {#snippets}
@@ -187,12 +187,12 @@ ht-degree: 97%
 
 >[!IMPORTANT]
 >
->通用編輯器與[IP允許清單](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)不相容。
+>通用編輯器和 [IP 允許清單](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)不相容。
 >
 >如果您想使用通用編輯器，您必須採取下列其中一項動作：
 >
 >* 不啟用 IP 允許清單。
->* [執行您自己的Universal Editor服務執行個體](/help/implementing/universal-editor/local-dev.md)。
+>* [執行您自己的通用編輯器服務執行個體](/help/implementing/universal-editor/local-dev.md)。
 
 ## 使用 Dynamic Media {#work-with-dynamic-media}
 
