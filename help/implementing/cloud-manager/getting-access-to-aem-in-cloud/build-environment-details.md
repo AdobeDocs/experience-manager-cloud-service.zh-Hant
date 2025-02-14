@@ -5,10 +5,10 @@ exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: d5461217cfec894a922b2f476aabfc04df45d9d0
+source-git-commit: e5404de6baae5373aefe5d03894864965b47b049
 workflow-type: tm+mt
-source-wordcount: '1488'
-ht-degree: 31%
+source-wordcount: '1526'
+ht-degree: 30%
 
 ---
 
@@ -16,6 +16,10 @@ ht-degree: 31%
 # 建置環境 {#build-environment}
 
 了解 Cloud Manager 的構建環境以及它如何構建和測試您的程式碼。
+
+>[!TIP]
+>
+>本檔案說明Cloud Manager為開發AEM as a Cloud Service專案而建立的組建環境。 如需AEM as a Cloud Service支援的內容製作使用者端平台的詳細資料，請參閱檔案[支援的使用者端平台。](/help/overview/supported-platforms.md)
 
 ## 建置環境詳細資訊 {#build-environment-details}
 
@@ -25,10 +29,10 @@ Cloud Manager 使用專門的構建環境構建和測試您的程式碼。
 * 已安裝 Apache Maven 3.9.4。
    * Adobe 建議使用者[更新其 Maven 存放庫以使用 HTTPS 而非 HTTP](#https-maven)。
 <!-- OLD Removed 1/16/25 * The Java versions installed are Oracle JDK 11.0.22 and Oracle JDK 8u401. -->
-* 已安裝的Java版本為OracleJDK 11.0.22、OracleJDK 17.0.10和OracleJDK 21.0.4。
+* 已安裝的Java版本為Oracle JDK 11.0.22、Oracle JDK 17.0.10和Oracle JDK 21.0.4。
 
 <!-- OLD Removed 1/16/25 * **IMPORTANT:** By default, the JAVA_HOME environment variable is set to `/usr/lib/jvm/jdk1.8.0_401`, which contains Oracle JDK 8u401. This default should be overridden for AEM Cloud Projects to use JDK 11. See the Setting the Maven JDK Version section for more details. -->
-* **重要：**&#x200B;依預設，`JAVA_HOME`環境變數設為`/usr/lib/jvm/jdk1.8.0_401`，其中包含OracleJDK 8u401。 ***AEM Cloud專案應覆寫此預設以使用JDK 21 （偏好設定）、17或11***。 如需詳細資訊，請參閱[設定Maven JDK版本](#alternate-maven-jdk-version)區段。
+* **重要：**&#x200B;依預設，`JAVA_HOME`環境變數設為`/usr/lib/jvm/jdk1.8.0_401`，其中包含Oracle JDK 8u401。 ***AEM雲端專案應覆寫此預設以使用JDK 21 （偏好設定）、17或11***。 如需詳細資訊，請參閱[設定Maven JDK版本](#alternate-maven-jdk-version)區段。
 * 安裝了一些必要的附加系統套件。
    * `bzip2`
    * `unzip`
@@ -71,11 +75,11 @@ To do so, create a file named `.cloudmanager/java-version` in the git repository
 
 ### 使用特定的Java版本 {#using-java-support}
 
-Cloud Manager建置流程預設會使用Oracle8 JDK來建置專案，但AEM Cloud Service客戶應將Maven執行JDK版本設定為21 （偏好設定）、17或11。
+Cloud Manager建置流程預設會使用Oracle 8 JDK建置專案，但AEM Cloud Service客戶應將Maven執行JDK版本設為21 （偏好設定）、17或11。
 
 #### 設定Maven JDK版本 {#alternate-maven-jdk-version}
 
-若要設定Maven執行JDK，請在管道使用的Git存放庫分支中建立名為`.cloudmanager/java-version`的檔案。 編輯檔案，使其僅包含文字`21`或`17`。 雖然Cloud Manager也接受`8`的值，但AEM Cloud Service專案不再支援此版本。 任何其他值會受到忽略。指定`21`或`17`時，會使用OracleJava 21或OracleJava 17。
+若要設定Maven執行JDK，請在管道使用的Git存放庫分支中建立名為`.cloudmanager/java-version`的檔案。 編輯檔案，使其僅包含文字`21`或`17`。 雖然Cloud Manager也接受`8`的值，但AEM Cloud Service專案不再支援此版本。 任何其他值會受到忽略。指定`21`或`17`時，會使用Oracle Java 21或Oracle Java 17。
 
 
 #### 移轉至使用Java 21或Java 17建置的先決條件 {#prereq-for-building}
@@ -92,7 +96,7 @@ Cloud Manager建置流程預設會使用Oracle8 JDK來建置專案，但AEM Clou
 
 ##### 關於某些翻譯功能 {#translation-features}
 
-以下功能在Java 21執行階段部署時可能無法正常運作，Adobe預計可在2025年初解決這些問題：
+在Java 21執行階段上部署下列功能時，這些功能可能會無法正常運作，而Adobe預計可在2025年初解決這些問題：
 
 * 使用人工翻譯時，`XLIFF` （XML本地化交換檔案格式）失敗。
 * `I18n` （國際化）無法正確處理希伯來文(`he`)、印尼(`in`)和意第緒文(`yi`)的語言環境，因為較新Java版本中的語言環境建構函式有所變更。
@@ -111,23 +115,23 @@ Java 21執行階段用於具有Java 21和Java 17的組建，並將逐步套用�
 
   新增第三方相依性 (例如 AEM Groovy 主控台) 可以間接包含此搭售方案。
 
-AEM Cloud Service SDK與Java 21相容，並可在執行Cloud Manager管道前用來驗證專案與Java 21的相容性。
+AEM雲端服務SDK與Java 21相容，可用來在執行Cloud Manager管道之前驗證專案與Java 21的相容性。
 
 * **編輯執行階段引數：**
 使用Java 21在本機執行AEM時，由於`MaxPermSize`引數，啟動指令碼（`crx-quickstart/bin/start`或`crx-quickstart/bin/start.bat`）會失敗。 作為補救方法，請從指令碼移除`-XX:MaxPermSize=256M`或定義環境變數`CQ_JVM_OPTS`，將其設定為`-Xmx1024m -Djava.awt.headless=true`。
 
-  AEM Cloud Service SDK版本19149和更新版本已解決此問題。
+  AEM Cloud Service SDK版本19149和更新版本可解決此問題。
 
 >[!IMPORTANT]
 >
->當`.cloudmanager/java-version`設定為`21`或`17`時，就會部署Java 21執行階段。 Java 21執行階段已排定從2025年2月4日星期二開始逐步推出至所有環境（不僅僅是使用Java 11建置程式碼的那些環境）。 推出將從沙箱和開發環境開始，然後在2025年4月推出到所有生產環境。 想要採用Java 21執行階段&#x200B;*較早*&#x200B;的客戶可以透過[aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com)聯絡Adobe。
+>當`.cloudmanager/java-version`設定為`21`或`17`時，就會部署Java 21執行階段。 Java 21執行階段已排定從2025年2月4日星期二開始逐步推出至所有環境（不僅僅是使用Java 11建置程式碼的那些環境）。 推出將從沙箱和開發環境開始，然後在2025年4月推出到所有生產環境。 想要採用Java 21執行階段&#x200B;*較早*&#x200B;的客戶可透過[aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com)聯絡Adobe。
 
 
 #### 建置時間需求 {#build-time-reqs}
 
 需要進行下列調整，才能使用Java 21和Java 17建置專案。 甚至在您執行Java 21和Java 17之前，這些檔案就已經可以更新了，因為它們與舊版Java相容。
 
-建議您儘早使用Java 21建立AEM Cloud Service客戶的專案，以運用新的語言功能。
+AEM Cloud Service客戶建議儘早使用Java 21建置專案，以運用新的語言功能。
 
 * **最低版本`bnd-maven-plugin`：**
 將`bnd-maven-plugin`的使用更新至6.4.0版，以確保支援較新的JVM執行階段。

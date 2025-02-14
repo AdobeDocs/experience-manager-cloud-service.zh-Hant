@@ -4,7 +4,7 @@ description: 瞭解通用編輯器如何讓您看到即得(WYSIWYG)編輯任何H
 exl-id: d4fc2384-a0f5-4a6f-9572-62749786be4c
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: b8d56873b7bc23295fefc35a826b8047c626649e
+source-git-commit: 2947c4cb1fad7e1c7635a0e423a4adfe23013f79
 workflow-type: tm+mt
 source-wordcount: '992'
 ht-degree: 53%
@@ -20,9 +20,9 @@ ht-degree: 53%
 
 Universal Editor提供有效率且直覺的內容撰寫體驗，只需最少的訓練。 有了它，作者可以直接在網頁體驗的內容中管理其內容，以及它給訪客呈現的確切外觀。 作為一個真正的編輯器服務和整體上更靈活，它打算最終取代頁面編輯器。
 
-由於通用編輯器支援對所有形式的AEM內容進行相同一致的視覺編輯，因此作者可受益於通用編輯器的彈性：內容片段和頁面元件同樣可以進行就地編輯和版面配置。 當在網路體驗中並排顯示時，甚至可以編輯這兩種形式的內容，作者不必切換內容。 相較於AEM先前的編輯者，這是大幅度的改善，僅支援一種型別的內容。
+由於通用編輯器支援對所有形式的AEM內容進行相同一致的視覺編輯，因此作者可受益於通用編輯器的彈性：內容片段和頁面元件同樣可以進行就地編輯和版面配置。 當在網路體驗中並排顯示時，甚至可以編輯這兩種形式的內容，作者不必切換內容。 相較於AEM先前的編輯者，這是大幅改善之處，因為先前的編輯者僅支援一種內容型別。
 
-開發人員可受益於Universal Editor的多功能性，因為它也支援實作的真正分離。 它可讓開發人員運用幾乎任何他們選擇的架構或架構，而不需要施加任何SDK或技術限制。 此彈性甚至可讓您輕鬆針對通用編輯器檢測現有的網頁應用程式，而無需重新架構。
+開發人員可受益於Universal Editor的多功能性，因為它也支援實作的真正分離。 它可讓開發人員利用他們選擇的任何架構或架構，而不受任何SDK或技術限制。 此彈性甚至可讓您輕鬆針對通用編輯器檢測現有的網頁應用程式，而無需重新架構。
 
 ## 真正通用 {#universal}
 
@@ -87,10 +87,10 @@ Universal Editor 可以用於任何實作、任何內容和任何方面的內容
 當您探索通用編輯器並在您自己的專案中進一步實作時，請記住以下限制。
 
 * 不應超過25個AEM資源(內容片段、頁面、體驗片段、Assets等)在單一頁面上作為檢測參照。
-* AEM as a Cloud Service和[AEM 6.5](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction)是唯一支援的AEM後端。
+* AEM as a Cloud Service和[AEM 6.5](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction)是唯一受支援的AEM後端。
 * 需要AEM as a Cloud Service版本`2023.8.13099`或更新版本。
 * 內容作者必須擁有自己的個別Experience Cloud帳戶。
-* 在AEM中，通用編輯器支援與AEM相同的案頭瀏覽器。
+* 作為AEM的一部分，通用編輯器[支援與AEM相同的案頭瀏覽器。](/help/overview/supported-platforms.md)
    * 不支援這些瀏覽器的行動版本。
 
 {{ue-ip-allow-lists}}
