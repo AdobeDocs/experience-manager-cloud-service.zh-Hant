@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的運作方式以及該軟體可以為您做哪些事。
 breadcrumb-title: 使用手冊
 user-guide-title: 'AEM as a Cloud Service '
-source-git-commit: e25b08e824ba5f0ba6d60b334ebb50d13442f590
+source-git-commit: 770cbea467128ce00465a4094efe3a07fc59eca8
 workflow-type: tm+mt
-source-wordcount: '6077'
+source-wordcount: '6071'
 ht-degree: 99%
 
 ---
@@ -32,7 +32,6 @@ ht-degree: 99%
    + AEMaaCS 功能發行說明{#release-notes}
       + [最新發行說明](/help/release-notes/release-notes-cloud/release-notes-current.md)
       + 2024 {#2024}
-         + [2024.11.0 版發行說明](/help/release-notes/release-notes-cloud/2024/release-notes-2024-11-0.md)
          + [2024.10.0 版發行說明](/help/release-notes/release-notes-cloud/2024/release-notes-2024-10-0.md)
          + [2024.9.0 版發行說明](/help/release-notes/release-notes-cloud/2024/release-notes-2024-9-0.md)
          + [2024.8.0 版發行說明](/help/release-notes/release-notes-cloud/2024/release-notes-2024-8-0.md)
@@ -578,7 +577,6 @@ ht-degree: 99%
       + [Experience League 的 Dynamic Media 電子報](/help/assets/dynamic-media/dynamic-media-newsletter.md)
       + [設定 Dynamic Media](/help/assets/dynamic-media/administering-dynamic-media.md)
       + [使用 Dynamic Media](/help/assets/dynamic-media/dynamic-media.md)
-      + [Dynamic Media 範本](/help/assets/dynamic-media/dynamic-media-templates.md)
       + [設定 Dynamic Media](/help/assets/dynamic-media/config-dm.md)
       + [選擇性 - 設定 Dynamic Media，一般設定](/help/assets/dynamic-media/dm-general-settings.md)
       + [選擇性 - 設定 Dynamic Media，發佈設定](/help/assets/dynamic-media/dm-publish-settings.md)
@@ -710,7 +708,6 @@ ht-degree: 99%
       + [從  [!DNL AEM 6.5 Forms]  或更早版本移轉至  [!DNL AEM Forms] as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
       + [群組與權限](/help/forms/forms-groups-privileges-tasks.md)
       + [匯入、匯出及組織最適化表單、PDF 表單和其他資產](/help/forms/import-export-forms-templates.md)
-      + [使用管理發佈來發佈最適化表單](/help/forms/manage-publication.md)
    + 快速入門 {#getting-started-forms}
       + [使用案例和設定開發環境](/help/forms/create-adaptive-form-tutorial-getting-started.md)
       + [建立貸款申請表](/help/forms/create-adaptive-form-tutorial.md)
@@ -860,7 +857,7 @@ ht-degree: 99%
          + [建立和管理最適化表單的評論](/help/forms/review-adaptiveforms-in-sites-page.md)
       + [最適化表單關鍵字](/help/forms/adaptive-forms-keywords.md)
       + [預覽表單](/help/forms/previewing-forms.md)
-   + 互動式通訊{#interactive-communocation}
+   + 互動式通訊 {#interactive-communocation}
       + [互動式通訊簡介](/help/forms/introduction-to-interactive-communication.md)
       + [建立您的第一個互動式通訊](/help/forms/create-your-first-communication.md)
       + [常見問題](/help/forms/interactive-communications-faq.md)
@@ -1038,6 +1035,9 @@ ht-degree: 99%
          + [使用規則編輯器將規則新增到](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
          + [建立自訂元件](/help/edge/docs/forms/universal-editor/create-custom-component.md)
          + [在表單中使用reCAPTCHA](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
+         + [提交動作](/help/edge/docs/forms/universal-editor/submit-action.md)
+         + [發佈Forms](/help/edge/docs/forms/universal-editor/publish-forms.md)
+         + [自訂表單樣式](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
       + 功能 {#advanced-features-edge-delivery-services-forms}
          + [使用表單片段](/help/edge/docs/forms/form-fragments.md)
          + [將可重複區段新增到表單](/help/edge/docs/forms/repeatable-forms.md)
@@ -1211,9 +1211,9 @@ ht-degree: 99%
          + [新增 SSL 憑證](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)
          + [SSL 憑證錯誤疑難排解](/help/implementing/cloud-manager/managing-ssl-certifications/troubleshoot-ssl-cert.md)
          + [管理 SSL 憑證](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
-      + 網域對應 {#cdn-configurations}
+      + 內容傳遞網路設定 {#cdn-configurations}
          + [新增內容傳遞網路設定](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)
-         + [管理網域對應](/help/implementing/cloud-manager/cdn-configurations/manage-cdn-config.md)
+         + [管理內容傳遞網路設定](/help/implementing/cloud-manager/cdn-configurations/manage-cdn-config.md)
       + IP 允許清單 {#ip-allow-lists}
          + [IP 允許清單簡介](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
          + [新增 IP 允許清單](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)
@@ -1363,7 +1363,7 @@ ht-degree: 99%
       + 國際化{#internationalization}
          + [國際化元件](/help/implementing/developing/extending/i18n/components.md)
          + [國際化使用者介面字串](/help/implementing/developing/extending/i18n/dev.md)
-         + [使用Translator管理字典](/help/implementing/developing/extending/i18n/translator.md)
+         + [使用翻譯工具來管理字典](/help/implementing/developing/extending/i18n/translator.md)
          + [擷取字串進行翻譯](/help/implementing/developing/extending/i18n/extract.md)
    + 部署至 AEM as a Cloud Service {#deploying}
       + [部署至 AEM as a Cloud Service ](/help/implementing/deploying/overview.md)
