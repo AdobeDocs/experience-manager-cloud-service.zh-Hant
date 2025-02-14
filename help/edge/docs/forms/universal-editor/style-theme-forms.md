@@ -6,7 +6,7 @@ role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
 exl-id: ac780399-34fe-457d-aaf4-b675656c024d
-source-git-commit: 4fc312fe8a52b7c5733a68014136e297479ab2a0
+source-git-commit: d09dce45efb7d8d881420cf724de493837b6ae71
 workflow-type: tm+mt
 source-wordcount: '1843'
 ht-degree: 89%
@@ -53,8 +53,7 @@ ht-degree: 89%
 * **更新預設樣式**：您可以透過編輯 `/blocks/form/form.css file` 來修改表單的預設樣式。此檔案提供了表單的全面樣式，支援多步驟精靈表單。它著重在使用自訂 CSS 變數來輕鬆自訂、維護和跨表單的統一樣式。&lt;! — 如需將最適化Forms區塊新增至專案的指示，請參閱[建立表單](/help/edge/docs/forms/create-forms.md)。
 
 * **適用於Forms的CSS樣式**：若要確保正確套用您的樣式，請在`main .form form`選取器中包裝表單特定的CSS。 這可確保您的樣式僅以主要內容區域中的表單元素為目標，以避免與網站的其他部分衝突。
-
-  範例：
+範例：
 
   ```css
   main .form form input {
@@ -68,9 +67,8 @@ ht-degree: 89%
   main .form form label {
     /* Add styles specific to labels inside the form */
   }
-  ```
-
-## 元件結構
+  
+##元件結構
 
 最適化表單區塊為各種表單元素提供一致的 HTML 結構，確保輕鬆進行樣式設定和管理。您可以使用 CSS 進行樣式設定，藉此操控元件。
 
