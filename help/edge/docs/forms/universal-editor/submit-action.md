@@ -5,7 +5,7 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 2cb18eb1bf755df48e2d9d10fabf3cdb95e79e57
+source-git-commit: ac005e5bc143c35eb29ba177a26aa6cc33897db4
 workflow-type: tm+mt
 source-wordcount: '739'
 ht-degree: 12%
@@ -46,7 +46,7 @@ ht-degree: 12%
 
 {width=50%，height=50%}![啟用最適化表單的POST要求](/help/forms/assets/enable-post-request-ue.png)
 
->
+>[!NOTE]
 >
 > * 若要將資料發佈到內部伺服器，請提供資源的路徑。 資料會張貼到資源的路徑。 例如 `/content/restEndPoint`。對於此類發佈要求，會使用提交要求的驗證資訊。
 > * 若要將資料發佈到外部伺服器，請提供 URL。URL 的格式是：`https://host:port/path_to_rest_end_point`。請確保設定以匿名方式處理 POST 要求的路徑。

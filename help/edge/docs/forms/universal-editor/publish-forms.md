@@ -5,7 +5,7 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: a765af62628d8b6308d6f712f450a5a1e62640d9
+source-git-commit: ac005e5bc143c35eb29ba177a26aa6cc33897db4
 workflow-type: tm+mt
 source-wordcount: '465'
 ht-degree: 0%
@@ -39,7 +39,7 @@ ht-degree: 0%
 1. 若要檢查表單的發佈狀態，請再按一下&#x200B;**發佈**。
    ![發佈狀態](/help/forms/assets/publish-status.png)
 
-1. 若要&#x200B;**取消發佈**&#x200B;表單，請在編輯器中開啟您的表單，按一下右上角的三個點功能表，然後選取&#x200B;**取消發佈**。
+1. 若要&#x200B;**取消發佈**&#x200B;表單，請在編輯器中開啟您的表單，按一下右上角的三個點功能表，然後按一下&#x200B;**取消發佈**。
    ![取消發佈](/help/forms/assets/unpublish--form.png)
 
 ## 為Edge Delivery Publisher設定反向連結篩選條件，以在AEM上啟用表單提交
