@@ -4,43 +4,43 @@ description: 管理 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]中
 feature: Asset Management
 role: User, Admin
 exl-id: 29660869-6902-4093-845b-cd629be59d4d
-source-git-commit: e22e4e530c2d023724b360c488cab2b59ec22fc4
+source-git-commit: 1652df9e774d8212b1bcc2898ca5d57e2a0d13bc
 workflow-type: tm+mt
 source-wordcount: '853'
 ht-degree: 6%
 
 ---
 
-# 在Experience Manager Assetsas a Cloud Service中管理PDF檔案 {#add-assets-to-experience-manager}
+# 在Experience Manager Assets as a Cloud Service中管理PDF檔案 {#add-assets-to-experience-manager}
 
 | [搜尋最佳實務](/help/assets/search-best-practices.md) | [中繼資料最佳實務](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [具有 OpenAPI 功能的 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 開發人員文件](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
-Experience Manager Assets與Document CloudPDF檢視器緊密整合，可讓您預覽PDF檔案的多個頁面。 此外，您也可以使用進階Document CloudPDF檢視器功能，例如註解、搜尋文字、使用書籤和縮圖導覽PDF檔案，以及同一屋頂下的更多功能。 Experience Manager Assets也可讓您上傳其他支援格式的檔案，並以PDF格式預覽。
+Experience Manager Assets與Document Cloud PDF Viewer緊密整合，可讓您預覽PDF檔案的多個頁面。 此外，您也可以使用進階Document Cloud PDF檢視器功能，例如註解、搜尋文字、使用書籤和縮圖導覽PDF檔案，以及其他位於相同屋頂的功能。 Experience Manager Assets也可讓您上傳其他支援格式的檔案，以及以PDF格式預覽檔案。
 
-Document CloudPDF檢視器可透過下列方式為AEM Assets提供好處：
+Document Cloud PDF檢視器可透過下列方式為AEM Assets提供好處：
 
-* [支援PDFDocument Cloud檢視器元件](#pdf-doc-cloud)
+* [支援PDF Document Cloud Viewer元件](#pdf-doc-cloud)
 * [支援PDF資產的多頁預覽和註解](#multi-page)
 * [支援其他格式檔案的多頁預覽](#multi-format)
 
 >[!TIP]
 >
-> 如果您無法取得先前上傳之PDF檔案的多頁預覽，請選取該PDF，然後按一下[重新處理] ![ ](/help/assets/assets/Reprocess.svg) **[重新處理Assets]**。
+> 如果您無法取得先前上傳之PDF檔案的多頁預覽，請選取PDF並按一下「重新處理![」](/help/assets/assets/Reprocess.svg)**「重新處理Assets**」。
 
-## 支援PDFDocument Cloud檢視器元件 {#pdf-doc-cloud}
+## 支援PDF Document Cloud Viewer元件 {#pdf-doc-cloud}
 
-原生PDFDoc Cloud檢視器在AEM Assets中有下列元件：
+原生PDF Doc Cloud檢視器在AEM Assets中有下列元件：
 
 * 使用頁面縮圖的&#x200B;**PDF檢視器**&#x200B;縮圖檢視是PDF檔案頁面的小型預覽。 使用縮圖，您可以直接跳至所需的頁面。 您可以透過左窗格上的![縮圖](/help/assets/assets/thumbnail.svg)存取所選PDF檔案的縮圖。
 
-* **使用書籤的PDF檢視器**&#x200B;書籤是直接連結，可讓您瀏覽至檔案中的內容。 您可以透過左窗格上的![書籤](/help/assets/assets/bookmark.svg)存取所選PDF檔案的書籤。
+* **使用書籤的PDF檢視器**&#x200B;書籤是直接連結，可引導您前往檔案中的內容。 您可以透過左窗格上的![書籤](/help/assets/assets/bookmark.svg)存取所選PDF檔案的書籤。
 
 * **在PDF中搜尋**&#x200B;您可以使用搜尋![搜尋](/help/assets/assets/Search.svg)在PDF檔案中尋找文字。
 
 * **Page Up/Page Down**&#x200B;使用Page Up ![Page Up](/help/assets/assets/ArrowUp.svg)或Page Down ![Page Down](/help/assets/assets/ArrowDown.svg)捲動檔案。
 
-* **縮小/放大**&#x200B;使用縮小![縮小](/help/assets/assets/ZoomOut.svg)或放大![放大](/help/assets/assets/ZoomIn.svg)以串連檔案。
+* **縮小/放大**&#x200B;使用縮小![縮小](/help/assets/assets/Zoom-out.svg)或放大![放大](/help/assets/assets/zoom-in.svg)以串連檔案。
 
 * **頁面符合**&#x200B;使用寬度或高度尺寸，以符合您熒幕大小的檔案大小。
 
@@ -51,9 +51,9 @@ Document CloudPDF檢視器可透過下列方式為AEM Assets提供好處：
 Adobe Experience Manager Assets可讓您預覽包含數個頁面的PDF檔案。 若要預覽PDF檔案的多個頁面，請考量下列步驟：
 
 1. 請依照步驟[在AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/add-assets.html?lang=en)中上傳資產。
-1. 瀏覽您要上傳和預覽的PDF檔案。
+1. 瀏覽您要上傳及預覽的PDF檔案。
 1. 開啟檔案。
-1. 預設會載入PDF檔案檢視器。 您也可以在「轉譯」面板下選取「PDF轉譯」 。
+1. 依預設，PDF檔案檢視器會載入。 您也可以在「轉譯」面板下選取「PDF轉譯」 。
 1. 在「轉譯」下拉式清單中，選取&#x200B;**所有轉譯**。
 
 您也可以在多頁預覽中將[註解](#pdf-annotations)套用至PDF檔案。
@@ -70,9 +70,9 @@ Adobe Experience Manager Assets可讓您預覽包含數個頁面的PDF檔案。 
 
 **PDF註解{#pdf-annotations}**
 
-Experience Manager Assets可讓您將註解新增至PDF檔案。 一個PDF檔案可以有多個附註。
+Experience Manager Assets可讓您將註解新增至PDF檔案。 PDF檔案可以有多個附註。
 
-若要為PDF檔案加上註釋，請執行下列步驟：
+若要為PDF檔案加上註釋，請執行以下步驟：
 
 1. 前往Assets介面，導覽至您要加上註解的PDF檔案。 原生PDF檢視器會在右側開啟，顯示所選PDF檔案的預覽。
 1. 按一下頂端功能表中的&#x200B;**註釋**。
@@ -81,7 +81,7 @@ Experience Manager Assets可讓您將註解新增至PDF檔案。 一個PDF檔案
 <table>
         <tr>
              <th> 註解 </th>
-            <th> 說明 </th>
+            <th> 描述 </th>
         </tr>
         <tr>
            <td> <img src="/help/assets/assets/Comment.svg">個註解 </td>
@@ -93,7 +93,7 @@ Experience Manager Assets可讓您將註解新增至PDF檔案。 一個PDF檔案
         </tr>
         <tr>
             <td> <img src="/help/assets/assets/Note.svg">註解 </td>
-            <td> 新增小文字或提醒，您可以將其新增到PDF上的特定區域。 </td>
+            <td> 新增小文字或提醒，提醒您可以新增到PDF上的特定區域。 </td>
         </tr>
         <tr>
             <td> <img src="/help/assets/assets/Comment.svg">文字熒光筆 </td>
@@ -109,7 +109,7 @@ Experience Manager Assets可讓您將註解新增至PDF檔案。 一個PDF檔案
         </tr>
         <tr>
             <td> <img src="/help/assets/assets/Draw.svg">繪圖 </td>
-            <td> 將視覺效果插圖插入至PDF。 </td>
+            <td> 將視覺效果插圖插入PDF。 </td>
         </tr>
         <tr>
             <td> <img src="/help/assets/assets/Erase.svg">拭除工程圖 </td>
@@ -119,7 +119,7 @@ Experience Manager Assets可讓您將註解新增至PDF檔案。 一個PDF檔案
 
 >[!NOTE]
 >
->您新增至PDF檔案的註解可在預覽模式下使用。 但是，當您下載或列印PDF檔案時，不會顯示註解。
+>您新增至PDF檔案的註解可在預覽模式下使用。 不過，當您下載或列印PDF檔案時，不會顯示註解。
 
 ## 支援其他格式檔案的多頁預覽 {#multi-format}
 
@@ -132,7 +132,7 @@ Experience Manager Assets可讓您將註解新增至PDF檔案。 一個PDF檔案
 1. 請依照步驟[在AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/add-assets.html?lang=en)中上傳資產。
 1. 瀏覽您要上傳和預覽的檔案。
 1. 開啟檔案。
-1. 在左側面板中，選取靜態區段下的「PDF」 。 右側面板會顯示資產的多個頁面預覽。 從左側面板中選取縮圖，以選擇要預覽的頁面。
+1. 在左側面板的靜態區段下選取PDF 。 右側面板會顯示資產的多個頁面預覽。 從左側面板中選取縮圖，以選擇要預覽的頁面。
 
 >[!NOTE]
 >

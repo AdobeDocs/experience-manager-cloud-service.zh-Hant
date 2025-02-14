@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的運作方式以及該軟體可以為您做哪些事。
 breadcrumb-title: 使用手冊
 user-guide-title: 'AEM as a Cloud Service '
-source-git-commit: 203286407113ac5d277e72f071ec9c30495e58b3
+source-git-commit: dfd6384c15ae28556b2366e9230d96a324ed3644
 workflow-type: tm+mt
-source-wordcount: '6074'
+source-wordcount: '6077'
 ht-degree: 99%
 
 ---
@@ -598,6 +598,7 @@ ht-degree: 99%
       + [智慧型影像](/help/assets/dynamic-media/imaging-faq.md)
       + [具有用戶端裝置像素比的智慧型影像](/help/assets/dynamic-media/client-side-dpr.md)
       + [傳遞 Dynamic Media 資產](/help/assets/dynamic-media/delivering-dynamic-media-assets.md)
+      + [Dynamic Media 範本](/help/assets/dynamic-media/dynamic-media-templates.md)
       + [在 Dynamic Media 中啟動直接連結保護](/help/assets/dynamic-media/hotlink-protection.md)
       + [3D 支援](/help/assets/dynamic-media/assets-3d.md)
       + [Dynamic Media 限制](/help/assets/dynamic-media/limitations.md)
