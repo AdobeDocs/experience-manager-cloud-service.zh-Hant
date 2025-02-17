@@ -5,13 +5,13 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 role: Admin, Architect, Developer
-source-git-commit: d71c5d6488935de4a02c8d3828f287542b979d0f
+exl-id: 2bbe3f95-d5d0-4dc7-a983-7a20c93e2906
+source-git-commit: ee5171e36c24526f331b3722fcd9bd7a1c72072b
 workflow-type: tm+mt
-source-wordcount: '1561'
+source-wordcount: '1736'
 ht-degree: 5%
 
 ---
-
 
 # 在WYSIWYG製作中建立自訂元件
 
@@ -173,24 +173,25 @@ Edge Delivery Services Forms提供自訂功能，可讓前端開發人員建立�
 
 若要新增Step Value自訂屬性，請在` _<component>.json`檔案中附加元件模型，並使用下列幾行程式碼：
 
-```javascript
+    「javascript
     {
-    "component": "number",
-    "name": "stepValue",
-    "label": "Step Value",
-    "valueType": "number"
+    」元件： &quot;number&quot;，
+    &quot;name&quot;： &quot;stepValue&quot;，
+    &quot;label&quot;： &quot;Step Value&quot;，
+    &quot;valueType&quot;： &quot;number&quot;
     }
-    ```
-The JSON snippet defines a custom property called **Step Value** for a **Range** component. Below is a breakdown of each field:
+    &quot;&#39;
 
-* **component**: Specifies the type of input field used in the Property dialog. In this case, `number` indicates that the field accepts numeric values.
-* **name**: The identifier for the property, used to reference it in the component’s logic. Here, the `stepValue` represents the step value setting for the range.
-* **label**: The display name of the property as seen in the Property dialog. 
-* **valueType**: Defines the data type expected for the property. The `number` ensures that only numeric inputs are allowed.
+JSON程式碼片段為&#x200B;**範圍**&#x200B;元件定義名為&#x200B;**步驟值**&#x200B;的自訂屬性。 每個欄位的劃分如下：
 
-You can now use `stepValue` as a custom property in the JSON properties of `range.js` and implement dynamic behavior based on its value at runtime.
+* **元件**：指定在屬性對話方塊中使用的輸入欄位型別。 在此案例中，`number`表示欄位接受數值。
+* **name**：屬性的識別碼，用來在元件的邏輯中參照它。 在此，`stepValue`代表範圍的步驟值設定。
+* **label**：在屬性對話方塊中看到的屬性顯示名稱。
+* **valueType**：定義屬性預期的資料型別。 `number`可確保只允許數值輸入。
 
-Hence, the final `_range.json` file, after adding the component definition, component model and custom properties, is as follows:
+您現在可以在`range.js`的JSON屬性中使用`stepValue`作為自訂屬性，並根據其執行階段的值實作動態行為。
+
+因此，新增元件定義、元件模型和自訂屬性後，最後的`_range.json`檔案如下：
 
 ```javascript
  {
@@ -322,6 +323,10 @@ const OOTBComponentDecorators = ['file-input',
 完成上述步驟後，自訂元件會出現在通用編輯器的表單元件清單中。 然後您可以將其拖放到表單區段中。
 
 ![範圍元件](/help/edge/docs/forms/universal-editor/assets/custom-component-range.png)
+
+底下熒幕擷圖顯示新增至元件模型的`range`元件屬性，其指定表單作者可設定的屬性：
+
+![範圍元件](/help/edge/docs/forms/universal-editor/assets/range-properties.png)的屬性
 
 您現在可以透過新增樣式和功能來定義自訂元件的執行階段行為。
 
