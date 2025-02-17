@@ -4,8 +4,8 @@ description: 自訂 AEM Forms 適用的 Edge Delivery Services 主題和樣式
 feature: Edge Delivery Services
 exl-id: c214711c-979b-4833-9541-8e35b2aa8e09
 role: Admin, Architect, Developer
-source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
-workflow-type: ht
+source-git-commit: 3b6ffd391b36f2f0d09fe054140b08bca6f0c941
+workflow-type: tm+mt
 source-wordcount: '2016'
 ht-degree: 100%
 
@@ -324,7 +324,7 @@ first-name input {
   }
 ```
 
-* 根據名稱定位來針對欄位集中的所有單選按鈕標籤
+* 根據名稱鎖定來針對欄位集中的所有單選按鈕標籤
 
 ```CSS
 .field-color .radio-wrapper label {
