@@ -4,9 +4,9 @@ description: 瞭解如何使用元件篩選器，限制通用編輯器中每個�
 feature: Developing
 role: Admin, Architect, Developer
 exl-id: eeae8d7c-c563-4d9b-8c54-1098a4e98c18
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: cdad4954b13f5582bebfd604220da90529231ccd
 workflow-type: tm+mt
-source-wordcount: '151'
+source-wordcount: '153'
 ht-degree: 3%
 
 ---
@@ -53,4 +53,7 @@ data-aue-filter="container-filter"
 
 >[!TIP]
 >
->在檔案[自訂和擴充通用編輯器](/help/implementing/universal-editor/customizing.md)中瞭解通用編輯器可用的其他自訂和擴充選項。
+>瞭解檔案中通用編輯器可用的其他自訂和擴充功能選項：
+>
+>* [自訂通用編輯器](/help/implementing/universal-editor/customizing.md)
+>* [擴充通用編輯器](/help/implementing/universal-editor/extending.md)

@@ -1,70 +1,84 @@
 ---
 title: Universal Editor 簡介
-description: 瞭解通用編輯器如何讓您看到即得(WYSIWYG)編輯任何Headless和Headful體驗。 了解它如何幫助內容作者提供卓越的體驗、提高其內容速度，以及如何提供最先進的開發人員體驗。
+description: Universal Editor是現代化的視覺化撰寫工具，旨在讓您的行銷組織能夠產生具影響力的Web體驗。
 exl-id: d4fc2384-a0f5-4a6f-9572-62749786be4c
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 2947c4cb1fad7e1c7635a0e423a4adfe23013f79
+source-git-commit: ae962d89b842b0708c1ac8633bb49c86cb2edfda
 workflow-type: tm+mt
-source-wordcount: '992'
-ht-degree: 53%
+source-wordcount: '949'
+ht-degree: 13%
 
 ---
 
 
 # Universal Editor 簡介 {#introduction}
 
-通用編輯器是多功能的視覺化編輯器，屬於Adobe Experience Manager Sites的一部分。 它可讓作者對任何Headless或Headful體驗進行即席即得(WYSIWYG)編輯。 瞭解它如何協助內容作者提供卓越的體驗，以及如何為開發人員提供無與倫比的自由。
+Universal Editor是現代化的視覺化撰寫工具，旨在讓您的行銷組織能夠產生具影響力的Web體驗。
 
-## 背景 {#background}
+## 概觀 {#overview}
 
-Universal Editor提供有效率且直覺的內容撰寫體驗，只需最少的訓練。 有了它，作者可以直接在網頁體驗的內容中管理其內容，以及它給訪客呈現的確切外觀。 作為一個真正的編輯器服務和整體上更靈活，它打算最終取代頁面編輯器。
+通用編輯器是多功能的視覺化編輯器，屬於Adobe Experience Manager Sites的一部分。 它可讓作者對任何Headless或Headful體驗執行「所見即所得」(WYSIWYG)編輯。 它提供：
 
-由於通用編輯器支援對所有形式的AEM內容進行相同一致的視覺編輯，因此作者可受益於通用編輯器的彈性：內容片段和頁面元件同樣可以進行就地編輯和版面配置。 當在網路體驗中並排顯示時，甚至可以編輯這兩種形式的內容，作者不必切換內容。 相較於AEM先前的編輯者，這是大幅改善之處，因為先前的編輯者僅支援一種內容型別。
+* **即時編輯**：作者可以直接在預覽體驗中編輯內容，不需要尋找並導覽至個別內容來源。
+* **Visual Editing**：進行變更時，作者會立即看到變更如何影響實際訪客體驗，將摩擦減至最低。
+* **可探索的選項**：標籤清楚的選項和直覺式UI可讓作者輕鬆設定中繼資料和撰寫版面配置。
+* **非技術性**：不需要專業知識即可進行編輯，而公司品牌指引會自動強制執行，方便您組織內內容工作的擴展。
+* **整合與擴充性**：與AEM完全整合，Universal Editor的彈性[擴充點](#extensibility)可讓所有重要工具在單一內建介面中整合。 從AI支援的功能，到根據您獨特業務需求量身打造的自訂擴充功能，讓團隊能夠輕鬆簡化工作流程並提高生產力。
 
-開發人員可受益於Universal Editor的多功能性，因為它也支援實作的真正分離。 它可讓開發人員利用他們選擇的任何架構或架構，而不受任何SDK或技術限制。 此彈性甚至可讓您輕鬆針對通用編輯器檢測現有的網頁應用程式，而無需重新架構。
+摘要：
 
-## 真正通用 {#universal}
+* **作者受益於**&#x200B;通用編輯器的彈性，因為它支援對所有形式的AEM內容進行相同一致的視覺化編輯。
+* **開發人員受益於** Universal Editor的多功能性，因為它支援實作的真正解耦。
 
-Universal Editor 可以用於任何實作、任何內容和任何方面的內容。
+作為真正的editor-as-a-service並且整體上更靈活，通用編輯器打算最終取代[頁面編輯器。](/help/sites-cloud/authoring/page-editor/introduction.md)
 
-![為何麼它可以通用](assets/universal.png)
+## 支援的架構 {#supported-architectures}
 
-### 任何實作 {#any-implementation}
+Universal Editor支援下列兩個AEM主要設定：
 
-由於體驗可透過多種不同方式建置，因此任何實作都可以使用 Universal Editor，讓作者可以執行內容中編輯。
+1. **[Edge Delivery Services](/help/edge/overview.md)**：這是首選的方法，因為其簡單性、更快的價值實現和增強效能。
+1. **[Headless實作](/help/headless/introduction.md)**：如果您有現有的Headless專案或分離轉譯的特定需求，通用編輯器可讓您進行企業級視覺化編輯，而不需要重構整個專案。 它幾乎與任何架構(SSR、CSR)、Web架構（Next.js、React、Astro等）和託管模型（「自備應用程式」）相容。
 
-使用者通常會認為 Headless 實作會限制作者在表單型 UI 中編輯所有的內容，但 Universal Editor 的情況並非如此
+>[!TIP]
+>
+>如需有關受支援架構的詳細資訊，請參閱檔案[通用編輯器使用案例和學習路徑](/help/implementing/universal-editor/use-cases.md)。
 
-實作使用 Universal Editor 的要求簡單且支援：
+## 支援的AEM版本 {#aem-versions}
 
-* **任何架構** — 伺服器端轉譯、邊緣端轉譯、使用者端轉譯等。
-* **任何架構** - Vanilla AEM或任何協力廠商架構，例如React、Next.js、Angular等。
-* **任何託管** - 可以在本機託管到 AEM，或託管在遠端網域上
+下列專案支援通用編輯器：
 
-### 任何內容 {#any-content}
+* AEM as a Cloud Service （版本`2023.8.13099`或更新版本）
+* AEM 6.5 （service pack 21或22 plus a feature pack）
 
-內容作者也會擁有 AEM 頁面編輯器先前提供的強大編輯體驗。但是 Universal Editor 可讓內容作者在內容中視覺化編輯&#x200B;**任何**&#x200B;內容，並支援：
+本檔案用於搭配使用Universal Editor與AEM as a Cloud Service。 若要搭配AEM 6.5使用通用編輯器，[請參閱AEM 6.5檔案。](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction?lang=en)
 
-* **AEM 頁面結構** - `cq:Pages` 的嵌套`cq:Components`，包括體驗片段
-* **AEM內容片段** — 編輯內容片段在體驗內容中出現的內容。
-* **文件** - 概念驗證表明 Word、Excel、Google 文件或 Markdown 文件也可以用相同的方式進行編輯 (這是 WIP)。
+## 功能 {#features}
 
-### 任何方面 {#any-aspect}
+Universal Editor提供許多功能，可支援各種使用案例，以實現有效的內容管理。
 
-對於內容作者而言，內容不僅僅是包含的資訊，還包括呈現和接收資訊的方式。內容帶有額外的中繼資料和檢測規則，Universal Editor 可以理解和編輯這些規則，包括：
+* **[WYSIWYG](/help/sites-cloud/authoring/universal-editor/authoring.md)**：對任何形式的網頁內容（包括純文字、RTF、媒體和中繼資料）執行您看到的編輯。
+* **[構成](/help/sites-cloud/authoring/universal-editor/authoring.md#editing-content)**：建立、編輯、重新排序、巢狀內嵌或刪除各種型別（標題、按鈕、Teaser、區段、內嵌等）的內容區塊。
+* **[版面配置](/help/sites-cloud/authoring/universal-editor/templates.md)**：利用頁面範本、套用視覺樣式，並以欄、輪播和摺疊式功能表等區塊撰寫版面配置。
+* **[裝置模擬](/help/sites-cloud/authoring/universal-editor/navigation.md#emulator)**：編輯時預覽並最佳化不同訪客裝置的內容。
+* **全管道**：在多個管道中重複使用結構化和非結構化內容。
+* **[本地化](/help/sites-cloud/authoring/universal-editor/inheritance.md)**：透過多網站管理員，簡化內容翻譯工作流程，並有效處理本地化的內容繼承。
+* **一致性**：確保符合品牌方針，並維持所有內容的一致性。
+* **安全性**： [強制存取控制](/help/implementing/universal-editor/authentication.md)、保護內容完整性，以及使用[健全的版本設定追蹤變更。](/help/sites-cloud/authoring/sites-console/page-versions.md)
+* **[發佈](/help/sites-cloud/authoring/universal-editor/publishing.md)**：直接在編輯器中整合檢閱、核准和發佈工作流程。
+* **整合**：與AEM工具（例如[網站主控台、](/help/sites-cloud/authoring/sites-console/introduction.md) [內容片段編輯器、](/help/sites-cloud/administering/content-fragments/overview.md)等等）完全整合，提供整合式撰寫體驗。
 
-* **套用版面配置與樣式** — 透過使用樣式系統，行銷從業人員和內容作者可以套用不同的樣式至其內容，並為內容建立不同的版面配置，例如欄、輪播、索引標籤、摺疊式功能表等。
+## 擴充性 {#extensibility}
 
-## 值 {#value}
+Universal Editor不僅提供立即可用的強大功能，更提供多種擴充功能。
 
-透過將內容編輯體驗與任何特定的內容傳遞系統分離，編輯器變得更通用和靈活，並可讓內容作者提供卓越的體驗，提高內容速度，並提供最先進的開發人員體驗。
+* **擴充功能**&#x200B;數量眾多且已準備好支援需求，例如支援工作流程、產生變數以及啟用實驗以列舉一些專案。
+* **可擴充的UI**&#x200B;可讓您使用與現成擴充功能相同的基礎架構，建立自己的擴充功能，讓擴充功能具備極致彈性，可因應您的專案需求。
+* **擴充功能點** （例如區塊、自訂資料型別和事件）允許在UI之外順暢整合自訂業務需求。
 
-![Universal Editor 的值](assets/value.png)
-
-* **提供卓越的體驗** - 為了使從業人員能夠為造訪者創造吸引人的體驗，Universal Editor 可讓從業人員在預覽的內容中建立和編輯內容。這可讓他們建立適合體驗設計的內容，並建構對造訪者有意義的旅程。
-* **提高內容速度** - 為了簡化從業人員的管理工作流程，Universal Editor 可在預覽中編輯內容，透過僅顯示與該內容相關的選項來引導從業人員，並使工作流程獨立於內容來源。
-* **最先進的開發人員體驗** - 為了支援真實生活的異質應用程式環境，Universal Editor 具備低耦合且與技術無關的特性，可讓開發人員使用他們喜歡的技術堆棧來實施體驗。
+>[!TIP]
+>
+>如需通用編輯器擴充性的詳細資訊，請參閱檔案[擴充通用編輯器。](/help/implementing/universal-editor/extending.md)
 
 ## Universal Editor 和內容片段編輯器 {#universal-editor-content-fragment-editor}
 
@@ -88,7 +102,7 @@ Universal Editor 可以用於任何實作、任何內容和任何方面的內容
 
 * 不應超過25個AEM資源(內容片段、頁面、體驗片段、Assets等)在單一頁面上作為檢測參照。
 * AEM as a Cloud Service和[AEM 6.5](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction)是唯一受支援的AEM後端。
-* 需要AEM as a Cloud Service版本`2023.8.13099`或更新版本。
+* AEM as a Cloud Service需要版本`2023.8.13099`或更新版本。
 * 內容作者必須擁有自己的個別Experience Cloud帳戶。
 * 作為AEM的一部分，通用編輯器[支援與AEM相同的案頭瀏覽器。](/help/overview/supported-platforms.md)
    * 不支援這些瀏覽器的行動版本。

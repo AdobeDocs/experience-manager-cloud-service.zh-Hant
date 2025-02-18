@@ -1,25 +1,35 @@
 ---
-title: 使用 Universal Editor 發佈內容
+title: 使用通用編輯器發佈內容
 description: 了解 Universal Editor 如何發佈內容以及您的應用程式如何處理已發佈的內容。
 exl-id: aee34469-37c2-4571-806b-06c439a7524a
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 73b1a318325e7641ee0fd7a76a3a73a7299c8b91
 workflow-type: tm+mt
-source-wordcount: '521'
-ht-degree: 69%
+source-wordcount: '591'
+ht-degree: 61%
 
 ---
 
 
-# 使用 Universal Editor 發佈內容 {#publishing}
+# 使用通用編輯器發佈內容 {#publishing}
 
 了解 Universal Editor 如何發佈內容以及您的應用程式如何處理已發佈的內容。
 
+## 以作者身分發佈內容 {#publishing-content}
+
+當您作為內容作者準備發佈您的內容時，您只需要點選或按一下通用編輯器工具列中的[「發佈」**圖示**&#x200B;即可。](/help/sites-cloud/authoring/universal-editor/navigation.md#publish)
+
+您也可以從Sites主控台](/help/sites-cloud/authoring/sites-console/publishing-pages.md)發佈[，當您想要發佈多個內容頁面時，這會很有用。
+
+>[!NOTE]
+>
+>通用編輯器支援[擴充功能和UI擴充功能](/help/implementing/universal-editor/extending.md)，以允許工作流程支援您的發佈程式。
+
 ## 與 AEM 的相似之處 {#similarities}
 
-使用AEM時，使用Universal Editor發佈內容的程式會依您慣用的方式運作：在AEM中發佈時，內容會從製作層級複製到發佈層級。
+對於AEM的使用者，使用通用編輯器發佈內容的程式會依您慣用的方式運作：在AEM中發佈時，內容會從製作層級複製到發佈層級。
 
 ## 差異 {#differences}
 

@@ -5,9 +5,9 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 9daa4ea54e87694c297a42748aa8705eb712d182
 workflow-type: tm+mt
-source-wordcount: '1613'
+source-wordcount: '1616'
 ht-degree: 29%
 
 ---
@@ -75,7 +75,7 @@ Experience Cloud 標頭會始終顯示在畫面頂端。這是一個錨點，說
 
 #### Experience Manager {#experience-manager}
 
-選取標頭左側的Adobe Experience Cloud連結，以導覽至您Experience Manager解決方案的根目錄，以存取工具，例如[Cloud Manager](/help/onboarding/cloud-manager-introduction.md)、[Cloud Acceleration Manager](/help/journey-migration/cloud-acceleration-manager/introduction/overview-cam.md)和[Software Distribution](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html)。
+選取標頭左側的Adobe Experience Cloud連結，即可導覽至Experience Manager解決方案的根目錄，以存取如[Cloud Manager](/help/onboarding/cloud-manager-introduction.md)、[Cloud Acceleration Manager](/help/journey-migration/cloud-acceleration-manager/introduction/overview-cam.md)和[Software Distribution](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html)之類的工具。
 
 ![全域導覽按鈕](assets/global-navigation.png)
 
@@ -111,7 +111,7 @@ Experience Cloud 標頭會始終顯示在畫面頂端。這是一個錨點，說
 
 ### 通用編輯器工具列 {#universal-editor-toolbar}
 
-Universal Editor工具列一律出現在熒幕頂端[Experience Cloud標頭](#experience-cloud-header)的正下方。 它可讓您快速瀏覽至其他頁面以編輯及發佈目前頁面。
+Universal Editor工具列永遠出現在熒幕頂端[Experience Cloud標題](#experience-cloud-header)的正下方。 它可讓您快速瀏覽至其他頁面以編輯及發佈目前頁面。
 
 ![通用編輯器工具列](assets/universal-editor-toolbar.png)
 
@@ -207,13 +207,13 @@ Universal Editor工具列一律出現在熒幕頂端[Experience Cloud標頭](#ex
 
 ![省略符號按鈕](assets/ellipsis.png)
 
-例如，可透過省略符號按鈕存取取消發佈頁面的功能(亦即反轉&#x200B;[**Publish**&#x200B;按鈕](#publish)的動作)。
+例如，可透過省略符號按鈕存取取消發佈頁面的功能（亦即反轉&#x200B;[**發佈**&#x200B;按鈕](#publish)的動作）。
 
 #### 其他按鈕 {#additional-toolbar-buttons}
 
 Universal Editor提供可自訂且可擴充的撰寫體驗。 如果您在工具列中看到其他按鈕，表示您的通用編輯器已擴展。
 
-* 如需擴充功能的詳細資訊，請參閱[自訂及擴充通用編輯器](/help/implementing/universal-editor/customizing.md)。
+* 如需擴充功能的詳細資訊，請參閱[擴充通用編輯器](/help/implementing/universal-editor/extending.md)。
 * 如需個別擴充功能運作方式的詳細資訊，請參閱[Extension Manager檔案](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/)。
 
 ### 編輯器 {#editor}
@@ -308,9 +308,9 @@ Universal Editor提供可自訂且可擴充的撰寫體驗。 如果您在工具
 >
 >使用快速鍵`Shift+Backspace`從容器中刪除選取的元件。
 
-#### 其他按鈕 {#additional-properties-rail-buttons}
+## 其他功能 {#additional-features}
 
-Universal Editor提供可自訂且可擴充的撰寫體驗。 如果您在屬性面板中看到其他按鈕，表示您的通用編輯器已擴充。
+Universal Editor提供可自訂和可擴充的撰寫體驗。 如果您在屬性面板或工具列中看到其他按鈕或選項，表示已擴充您的通用編輯器。
 
 * 如需擴充功能的詳細資訊，請參閱[自訂及擴充通用編輯器](/help/implementing/universal-editor/customizing.md)。
 * 如需個別擴充功能運作方式的詳細資訊，請參閱[Extension Manager檔案](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/)。
