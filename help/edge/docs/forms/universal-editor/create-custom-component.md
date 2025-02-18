@@ -6,9 +6,9 @@ hide: true
 hidefromtoc: true
 role: Admin, Architect, Developer
 exl-id: 2bbe3f95-d5d0-4dc7-a983-7a20c93e2906
-source-git-commit: ee5171e36c24526f331b3722fcd9bd7a1c72072b
+source-git-commit: bf70adcb95ddf88d0ea9a496efe3ae47f71f6a1d
 workflow-type: tm+mt
-source-wordcount: '1736'
+source-wordcount: '1725'
 ht-degree: 5%
 
 ---
@@ -173,14 +173,14 @@ Edge Delivery Services Forms提供自訂功能，可讓前端開發人員建立�
 
 若要新增Step Value自訂屬性，請在` _<component>.json`檔案中附加元件模型，並使用下列幾行程式碼：
 
-    「javascript
-    {
-    」元件： &quot;number&quot;，
-    &quot;name&quot;： &quot;stepValue&quot;，
-    &quot;label&quot;： &quot;Step Value&quot;，
-    &quot;valueType&quot;： &quot;number&quot;
-    }
-    &quot;&#39;
+```javascript
+      {
+      "component": "number",
+      "name": "stepValue",
+      "label": "Step Value",
+      "valueType": "number"
+      }
+```
 
 JSON程式碼片段為&#x200B;**範圍**&#x200B;元件定義名為&#x200B;**步驟值**&#x200B;的自訂屬性。 每個欄位的劃分如下：
 

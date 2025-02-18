@@ -1,13 +1,13 @@
 ---
-title: 根據核心元件的適用性表單的規則編輯器中可用的各種運運算元型別和事件有哪些？
-description: 最適化Forms規則編輯器支援各種運運算元型別和事件。
+title: 基於核心元件規則自適應窗體的編輯者中可用的各種運算符類型和事件有哪些？
+description: 自適應Forms規則編輯者支持各種運算符類型和事件。
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: ac85ff04-25dc-4566-a986-90ae374bf383
-source-git-commit: 7acbf2099a2b47b5f42885e8f9a9e1727a8112b5
+source-git-commit: dab2b94d1e456622f061741ba1b5192c9163c295
 workflow-type: tm+mt
-source-wordcount: '2148'
+source-wordcount: '2171'
 ht-degree: 2%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 2%
 
 最適化表單的規則編輯器中可用的運運算元型別，提供完善的結構來建構精確條件。 它們可讓您以邏輯且一致的方式操控資料、執行計算以及結合多個條件。 無論您是要比較值、執行算術運算或操控字串，這些運運算元都能確保您的規則既靈活又強大。
 
-規則編輯器中的事件會作為啟動規則的觸發器。 它們定義當滿足某些條件時會發生的特定動作。 運用不同型別的事件，您可以自動回應廣泛的情境，例如使用者互動、排程時間、資料變更和系統狀態。 有了指定這些觸發器的功能，您可以建立動態且回應式規則，以符合您的特定需求。
+規則編輯器中的事件會作為啟動規則的觸發器。 它們定義了在滿足某些條件時發生的特定作。 通過利用不同類型的事件，您可以自動響應各種方案，例如，用戶交互、計劃時間、數據更改和系統狀態。 通過指定這些觸發器，您可以創建滿足特定要求的動態和回應式規則。
 
 透過瞭解並使用可用的運運算元型別和事件，您可以解鎖規則編輯器的完整潛能，這可讓您建立有效率且有效的規則，以滿足您獨特的需求並改善整體系統功能。
 
@@ -63,11 +63,13 @@ ht-degree: 2%
 `Then, do the following:`
 
 `Action 2 on Object B;`
-`AND`&#39;關於物件C的行動3;
+`AND`
+&#39;物件C上的動作3；
 
 `Else, do the following:`
 
-`Action 2 on Object C;`_
+`Action 2 on Object C;`
+_
 
 當您有多值元件（如單選按鈕或清單）時，為該元件建立規則時，會自動擷取選項，並讓規則建立者可以使用這些選項。 您不需要再次輸入選項值。
 
@@ -75,41 +77,41 @@ ht-degree: 2%
 
 ![多重值顯示選項](assets/multivaluefcdisplaysoptions.png)
 
-撰寫When規則時，您可以觸發「清除值」動作。 清除值操作將清除指定物件的值。 在 When 語句中使用「清除值」選項可以創建具有多個字段的複雜條件。 您可以添加 Else 語句以添加其他條件
+撰寫When規則時，您可以觸發「清除值」動作。 清除值動作會清除指定物件的值。 在When陳述式中將的清除值作為選項可讓您建立具有多個欄位的複雜條件。 您可以新增Else陳述式以進一步新增條件
 
-![清除值](assets/clearvalueof.png)
+![清除](assets/clearvalueof.png)的值
 
 >[!NOTE]
 >
-> 當 規則 類型僅支持單級 then-else 語句時。
+> 當規則型別僅支援單一層級then-else陳述式時。
 
-##### [!UICONTROL When]中允許多個欄位 {#allowed-multiple-fields}
+##### 允許的多個字段 [!UICONTROL 時間] {#allowed-multiple-fields}
 
-在&#x200B;**When**&#x200B;條件中，您可以選擇新增套用規則的欄位以外的其他欄位。
+在 When **** 条件中，您可以選擇添加除應用規則的欄位之外的其他字段。
 
-例如，使用When規則型別，您可以評估不同表單物件的條件並執行動作：
+例如，使用 When 規則 類型，可以評估不同表單物件上的條件並執行作：
 
-時間：
+什麼時候：
 
-（物件A條件1）
+（物件 A 條件 1）
 
 和/或
 
-（物件 B 條件 2）
+（物件B條件2）
 
-然後，執行以下操作：
+接著，執行下列動作：
 
-物件 A 上的動作 1
+物件A上的動作1
 
 _
 
-![允許的多個字段 時間](/help/forms/assets/allowed-multiple-field-when.png)
+![在When](/help/forms/assets/allowed-multiple-field-when.png)中允許多個欄位
 
 **在When條件功能**&#x200B;中使用允許多個欄位時的考量事項
 
 * 請確定[核心元件設定為3.0.14版或更新版本](https://github.com/adobe/aem-core-forms-components)，以便在規則編輯器中使用此功能。
 * 如果規則套用至When條件內的不同欄位，即使這些欄位中只有一個已變更，規則也會觸發。
-
+* 您只能為&#x200B;**AND**&#x200B;規則在&#x200B;**When**&#x200B;條件中新增多個欄位。 **OR**&#x200B;規則無法執行。
 
 <!--
 * It is not possible to add multiple fields in the When condition while applying rules to a button.
@@ -128,12 +130,12 @@ Allowed Multiple fields in When condition feature is disabled by default. To ena
    * value: deps
 1. Click **[!UICONTROL Done]**. -->
 
-如果「當條件」功能中允許的多個字段遇到任何問題，請將故障排除步驟追隨為：
+如果「條件」功能中允許的多個欄位發生任何問題，請遵循下列疑難排解步驟：
 
 1. 在編輯模式下打開表單。
 1. 開啟「內容」瀏覽器，然後選擇 **[!UICONTROL 最適化表單的「引導容器]** 」元件。
 1. 按一下「指引容器」屬性 ![指引屬性](/help/forms/assets/configure-icon.svg) 圖示。此時會開啟「最適化表單容器」對話框。
-1. 按一下完成，然後再次儲存對話方塊。
+1. 按兩下完成，再次儲存對話框。
 
 **[!UICONTROL 隱藏]**&#x200B;隱藏指定的物件。
 
@@ -143,7 +145,7 @@ Allowed Multiple fields in When condition feature is disabled by default. To ena
 
 **[!UICONTROL 停用]**&#x200B;停用指定的物件。
 
-**[!UICONTROL 啟動服務]**&#x200B;啟動表單資料模型(FDM)中設定的服務。 選擇「啟動服務」作業時，會出現一個欄位。 點選欄位時，它會顯示您[!DNL Experience Manager]執行個體上所有表單資料模型(FDM)中設定的所有服務。 選擇表單資料模型服務時，會出現更多欄位，您可在其中使用指定服務的輸入引數對應表單物件。 您可以透過指定服務的事件裝載選項對應輸出引數。 您也可以使用規則編輯器，建立處理叫用服務作業成功和失敗回應的規則。
+**[!UICONTROL 啟動服務]**&#x200B;啟動表單資料模型(FDM)中設定的服務。 選擇「啟動服務」作業時，會出現一個欄位。 點擊該欄位時，它會顯示執行個體 [!DNL Experience Manager] 上所有表單數據模型 （FDM） 中配置的所有服務。 選擇表單數據模型服務時，將顯示更多欄位，您可以在其中將表單物件與指定服務的輸入參數進行映射。 您可以通過指定服務的事件有效負載選項映射輸出參數。 您也可以使用規則編輯器，建立處理叫用服務作業成功和失敗回應的規則。
 
 >[!NOTE]
 >
@@ -174,7 +176,7 @@ Allowed Multiple fields in When condition feature is disabled by default. To ena
 * enumNames （字串[]）
 * chartType （字串）
 
-例如，它使您能夠定義規則以在按下按鈕時顯示文字框。 您可以使用自定義函數、表單對象、物件屬性或服務輸出來定義規則。
+例如，這可讓您定義規則，以便在按一下按鈕時顯示文字方塊。 您可以使用自訂函式、表單物件、物件屬性或服務輸出來定義規則。
 
 ![設定屬性](assets/set_property_rule_new.png)
 
@@ -204,13 +206,13 @@ Allowed Multiple fields in When condition feature is disabled by default. To ena
 
 **[!UICONTROL 函式輸出]**&#x200B;根據預先定義的函式或自訂函式定義規則。
 
-**[!UICONTROL 導航到]** 導航到導航到其他自適應Forms、其他資產（例如圖像或文件片段）或外部URL。 <!-- For more information, see [Add button to the Interactive Communication](create-interactive-communication.md#addbuttontothewebchannel). -->
+**[!UICONTROL 導覽至]**&#x200B;導覽至其他最適化Forms、影像或檔案片段等其他資產，或外部URL。<!-- For more information, see [Add button to the Interactive Communication](create-interactive-communication.md#addbuttontothewebchannel). -->
 
-**[!UICONTROL 調度事件]** 根據預先定義的條件或事件觸發特定的動作或行為。
+**[!UICONTROL 分派事件]**&#x200B;根據預先定義的條件或事件觸發特定動作或行為。
 
 #### [!UICONTROL 設定值] {#set-value-of}
 
-規則 **[!UICONTROL 類型的「設置值]** 」允許您根據是否滿足指定的條件來設置表單物件的值。 該值可以設置為另一個物件的值、文本字串、從數學運算式或函數派生的值、另一個物件的屬性值或表單數據模型服務的輸出。 同樣地，您可以檢查元件、字串、屬性或衍生自函式或數學運算式的值的條件。
+]**規則型別的**[!UICONTROL &#x200B;設定值可讓您依據指定的條件是否符合，來設定表單物件的值。 值可以設定為另一個物件的值、常值字串、衍生自數學運算式或函式的值、另一個物件的屬性值，或表單資料模型服務的輸出。 同樣地，您可以檢查元件、字串、屬性或衍生自函式或數學運算式的值的條件。
 
 **Set Value Of**&#x200B;規則型別不適用於所有表單物件，例如面板和工具列按鈕。 標準的「設定值」規則具有以下結構：
 
@@ -222,7 +224,7 @@ Allowed Multiple fields in When condition feature is disabled by default. To ena
 （數學運算式的值） OR
 （資料模型服務的輸出值）；
 
-時間（選擇）：
+當（選擇性）：
 
 （條件 1 和條件 2 和條件 3） 為 TRUE;
 
@@ -230,11 +232,11 @@ Allowed Multiple fields in When condition feature is disabled by default. To ena
 
 ![Set-value-web-service](assets/set-value-web-service.png)
 
-使用表單資料模型服務的設定值規則範例。
+使用表單數據模型服務設定值規則的範例。
 
-#### [!UICONTROL 節目] {#show}
+#### [!UICONTROL 顯示] {#show}
 
-使用&#x200B;**[!UICONTROL 顯示]**&#x200B;規則型別，您可以撰寫規則來根據條件是否滿足來顯示或隱藏表單物件。 Show規則型別也會觸發Hide動作，以防條件未滿足或傳回`False`。
+**[!UICONTROL 使用 顯示]** 規則 類型，您可以編寫一個規則，以根據是否滿足條件來显示或隱藏表單物件。Show規則型別也會觸發Hide動作，以防條件未滿足或傳回`False`。
 
 典型的Show規則結構如下：
 
@@ -250,9 +252,9 @@ Allowed Multiple fields in When condition feature is disabled by default. To ena
 
 #### [!UICONTROL 隱藏] {#hide}
 
-與「顯示」規則型別類似，您可以使用&#x200B;**[!UICONTROL 隱藏]**&#x200B;規則型別，根據是否符合條件來顯示或隱藏表單物件。 Hide規則型別也會觸發Show動作，以防條件不滿足或傳回`False`。
+與「顯示」規則型別類似，您可以使用&#x200B;**[!UICONTROL 隱藏]**&#x200B;規則型別，根據是否符合條件來顯示或隱藏表單物件。 隱藏規則類型也會在條件不滿足或返回 `False`時觸發顯示作。
 
-典型的「隱藏」規則結構如下：
+典型的隱藏規則結構如下：
 
 `Hide Object A;`
 
