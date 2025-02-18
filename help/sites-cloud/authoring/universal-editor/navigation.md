@@ -5,9 +5,9 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: 9daa4ea54e87694c297a42748aa8705eb712d182
+source-git-commit: e87447922b856d4cbbd09fb4dcd4ae2b5da6ff50
 workflow-type: tm+mt
-source-wordcount: '1616'
+source-wordcount: '1623'
 ht-degree: 29%
 
 ---
@@ -193,7 +193,7 @@ Universal Editor工具列永遠出現在熒幕頂端[Experience Cloud標題](#ex
 
 #### 發佈 {#publish}
 
-選取「發佈」按鈕，讓您可以發佈內容的變更供讀者即時使用。
+選取發佈按鈕，以便將變更發佈到內容上線以供讀者使用或發佈到預覽環境以供稽核。
 
 ![發佈按鈕](assets/publish.png)
 

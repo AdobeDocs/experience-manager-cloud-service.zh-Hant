@@ -5,10 +5,10 @@ exl-id: aee34469-37c2-4571-806b-06c439a7524a
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 73b1a318325e7641ee0fd7a76a3a73a7299c8b91
+source-git-commit: 64c257adc7e1f22531c0fe45b44b27ab4e0badb8
 workflow-type: tm+mt
-source-wordcount: '591'
-ht-degree: 61%
+source-wordcount: '857'
+ht-degree: 42%
 
 ---
 
@@ -17,19 +17,46 @@ ht-degree: 61%
 
 了解 Universal Editor 如何發佈內容以及您的應用程式如何處理已發佈的內容。
 
-## 以作者身分發佈內容 {#publishing-content}
-
-當您作為內容作者準備發佈您的內容時，您只需要點選或按一下通用編輯器工具列中的[「發佈」**圖示**&#x200B;即可。](/help/sites-cloud/authoring/universal-editor/navigation.md#publish)
-
-您也可以從Sites主控台](/help/sites-cloud/authoring/sites-console/publishing-pages.md)發佈[，當您想要發佈多個內容頁面時，這會很有用。
-
->[!NOTE]
+>[!TIP]
 >
->通用編輯器支援[擴充功能和UI擴充功能](/help/implementing/universal-editor/extending.md)，以允許工作流程支援您的發佈程式。
+>此處說明的發佈程式是Universal Editor的標準現成功能。
+>
+>通用編輯器也支援[擴充功能和UI擴充功能](/help/implementing/universal-editor/extending.md)，讓工作流程支援您的發佈程式，因此您的發佈流程可能會有所不同。
 
-## 與 AEM 的相似之處 {#similarities}
+## 從通用編輯器發佈內容 {#publishing-content}
 
-對於AEM的使用者，使用通用編輯器發佈內容的程式會依您慣用的方式運作：在AEM中發佈時，內容會從製作層級複製到發佈層級。
+當您作為內容作者準備發佈您的內容時，您只需要點選或按一下通用編輯器工具列中的&#x200B;**發佈**&#x200B;圖示。
+
+![正在發佈頁面](assets/publish-menu.png)
+
+1. 在Universal Editor中，點選或按一下Universal Editor工具列中的[ **Publish**&#x200B;圖示。](/help/sites-cloud/authoring/universal-editor/navigation.md#publish)
+1. 如果您有可用的[預覽服務](/help/sites-cloud/authoring/sites-console/previewing-content.md)，您可以選擇將內容發佈到的位置： **預覽**&#x200B;或&#x200B;**發佈**。
+1. **專案**&#x200B;區段列出包含在出版物中的內容，包括：
+   * **新的**&#x200B;專案尚未發佈。
+   * **已修改已發佈但自上次發佈以來修改的**&#x200B;內容。
+   * **已發佈**&#x200B;自該發佈以來未曾修改的內容。
+
+   視需要點選或按一下這些專案旁的核取方塊，以包含/排除它們。 點選或按一下「延伸&#x200B;****」，檢視三個類別總計中包含的個別專案，以及能夠個別加入/排除它們。
+
+   ![發佈專案](assets/publish-items.png)
+
+   點選或按一下&#x200B;**專案**&#x200B;標題旁的返回箭頭可返回概觀。
+
+1. 點選或按一下&#x200B;**發佈**&#x200B;以進行發佈，或點選或按一下&#x200B;**取消**&#x200B;以中止。
+
+## 從通用編輯器中取消發佈內容 {#unpublishing-content}
+
+取消發佈內容的運作方式與發佈內容類似。 當您作為內容作者準備從出版物中移除內容時，請點選或按一下通用編輯器工具列中的省略符號圖示，然後&#x200B;**取消發佈**。
+
+然後，您可以使用與[發佈內容時相同的選項來取消發佈內容。](#publishing-content)包括從預覽執行個體取消發佈（如果可用），以及要包含在取消發佈中的專案。
+
+## 從網站主控台發佈與取消發佈 {#publishing-sites-console}
+
+您也可以從Sites主控台](/help/sites-cloud/authoring/sites-console/publishing-pages.md)發佈[，當您想要發佈多個內容頁面，或排程發佈或取消發佈時，這會很有用。
+
+## 與頁面編輯器的相似之處 {#similarities}
+
+對於[AEM頁面編輯器的使用者，](/help/sites-cloud/authoring/page-editor/introduction.md)使用通用編輯器發佈內容的程式會依您慣用的方式運作：在AEM中發佈時，內容會從製作層級復寫到發佈層級。
 
 ## 差異 {#differences}
 

@@ -4,7 +4,7 @@ description: 了解如何存取 Universal Editor，以及如何開始檢測您�
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 0ee6689460ac0ecc5c025fb6a940d69a16699c85
 workflow-type: tm+mt
 source-wordcount: '956'
 ht-degree: 38%
@@ -102,7 +102,7 @@ data-aue-resource="urn:<referenceName>:<resource>"
 
 您可以視需要使用連線URN中的`config`首碼來設定服務和擴充端點。
 
-如果您不想使用由Adobe託管（但您自己的託管版本）的通用編輯器服務，可以在中繼標籤中設定此專案。 若要覆寫Universal Editor提供的預設服務端點，請設定您自己的服務端點：
+如果您不想使用由Adobe託管但您自己託管版本的通用編輯器服務，可以在中繼標籤中設定此專案。 若要覆寫Universal Editor提供的預設服務端點，請設定您自己的服務端點：
 
 * 中繼名稱 — `urn:adobe:aue:config:service`
 * 中繼內容 — `content="https://adobe.com"` （範例）
@@ -122,7 +122,7 @@ data-aue-resource="urn:<referenceName>:<resource>"
 
 ## 定義應開啟通用編輯器的內容路徑或`sling:resourceType`。 (可選) {#content-paths}
 
-如果您有使用[頁面編輯器](/help/sites-cloud/authoring/page-editor/introduction.md)的現有AEM專案，內容作者編輯頁面時，頁面會自動使用頁面編輯器開啟。 您可以根據內容路徑或`sling:resourceType`定義AEM應開啟的編輯器，讓您的作者體驗順暢無礙，無論所選內容需要哪個編輯器。
+如果您有使用[頁面編輯器](/help/sites-cloud/authoring/page-editor/introduction.md)的現有AEM專案，內容作者編輯頁面時，頁面會自動使用頁面編輯器開啟。 您可以根據內容路徑或`sling:resourceType`定義應開啟AEM的編輯器，讓您的作者獲得流暢的體驗，無論所選內容需要哪個編輯器。
 
 1. 開啟Configuration Manager。
 
@@ -137,10 +137,10 @@ data-aue-resource="urn:<referenceName>:<resource>"
 
 1. 按一下「**儲存**」。
 
-AEM將根據此設定，以下列順序開啟頁面的通用編輯器。
+AEM將根據此設定，依下列順序開啟頁面的通用編輯器。
 
-1. AEM將會檢查`Universal Editor Opening Mapping`底下的對應，如果內容位於此處定義的任何路徑下，則會為其開啟Universal Editor。
-1. 對於不在`Universal Editor Opening Mapping`中定義的路徑下的內容，AEM會檢查內容的`resourceType`是否與&#x200B;**Sling：resourceTypes中定義的內容相符（應由通用編輯器**&#x200B;開啟），如果內容符合其中一個型別，則在`${author}${path}.html`為其開啟通用編輯器。
+1. AEM將檢查`Universal Editor Opening Mapping`底下的對應，如果內容位於該處定義的任何路徑下，則會為其開啟通用編輯器。
+1. 對於不在`Universal Editor Opening Mapping`中定義的路徑下的內容，AEM會檢查內容的`resourceType`是否與&#x200B;**Sling：resourceTypes （應由通用編輯器**&#x200B;開啟）中定義的內容相符，如果內容符合其中一個型別，則在`${author}${path}.html`為其開啟通用編輯器。
 1. 否則，AEM會開啟頁面編輯器。
 
 下列變數可用於在&#x200B;**Universal Editor Opening Mapping**&#x200B;欄位中定義您的對應。
@@ -177,7 +177,7 @@ AEM將根據此設定，以下列順序開啟頁面的通用編輯器。
 
 * [Universal Editor 簡介](introduction.md) - 了解 Universal Editor 如何在任意實作中編輯任何方面的內容，以便提供卓越的體驗、提高內容速度並提供最先進的開發人員體驗。
 * [使用 Universal Editor 編寫內容](/help/sites-cloud/authoring/universal-editor/authoring.md) - 了解內容作者使用 Universal Editor 建立內容有多簡單和直覺。
-* [使用通用編輯器發佈內容](/help/sites-cloud/authoring/universal-editor/publishing.md) — 瞭解通用編輯器如何發佈內容，以及您的應用程式如何處理已發佈的內容。
+* [使用通用編輯器發佈內容](/help/implementing/universal-editor/publishing.md) — 瞭解通用編輯器如何發佈內容，以及您的應用程式如何處理已發佈的內容。
 * [Universal Editor 架構](architecture.md) - 了解 Universal Editor 的架構，以及資料如何在其服務和階層之間流動。
 * [屬性和類型](attributes-types.md) - 了解 Universal Editor 需要的資料屬性和類型。
 * [Universal Editor 驗證](authentication.md) - 了解 Universal Editor 如何進行驗證。

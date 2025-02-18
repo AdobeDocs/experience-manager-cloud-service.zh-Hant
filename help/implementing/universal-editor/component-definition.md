@@ -4,9 +4,9 @@ description: 詳細瞭解元件定義與通用編輯器之間的JSON合約。
 feature: Developing
 role: Admin, Architect, Developer
 exl-id: e1bb1a54-50c0-412a-a8fd-8167c6f47d2b
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 0053c874e6e7a2782e03a37fe3928baa9cd5bdba
 workflow-type: tm+mt
-source-wordcount: '545'
+source-wordcount: '600'
 ht-degree: 1%
 
 ---
@@ -33,35 +33,42 @@ ht-degree: 1%
 
 ```json
 {
-  "groups": [
+  "groups":[
     {
-      "title": "General Components",
-      "id": "general",
-      "components": [
+      "title":"General Components",
+      "id":"general",
+      "components":[
         {
-          "title": "Text",
-          "id": "text",
-          "plugins": {
-            "aem": {
-              "page": {
-                "resourceType": "wknd/components/text",
-                "template": {
-                  "text": "Default Text"
+          "title":"Text",
+          "id":"text",
+          "plugins":{
+            "aem":{
+              "page":{
+                "resourceType":"wknd/components/text",
+                "template":{
+                  "text":"Default Text",
+                  "name":"Text",
+                  "model":"text",
+                  "filter":"texts"
                 }
               }
             },
-            "aem65": {
-              "page": {
-                "resourceType": "wknd/components/text",
-                "template": {
-                  "text": "Default Text"
+            "aem65":{
+              "page":{
+                "resourceType":"wknd/components/text",
+                "template":{
+                  "text":"Default Text",
+                  "name":"Text",
+                  "model":"text",
+                  "filter":"texts"
                 }
               }
             }
           }
-        },
-      }
-   ]
+        }
+      ]
+    }
+  ]
 }
 ```
 
@@ -100,11 +107,18 @@ ht-degree: 1%
 
 如果元件是頁面上的內容，您可以提供下列資訊。
 
-* `name`會為新建立的元件定義儲存至JCR的可選名稱。
-   * 僅供參考，通常不會在UI中顯示為`title`。
 * `resourceType`定義用於轉譯元件的[Sling](/help/implementing/developing/introduction/sling-cheatsheet.md) `resourceType`。
-* `template`定義要自動寫入新建立元件的選用索引鍵/值。
+* `template`定義要自動寫入新建立元件的選用索引鍵/值，並定義應該套用至元件的篩選條件和/或模型。
    * 適用於說明、範例或預留位置文字。
+
+#### `template` {#template}
+
+藉由提供選用的索引鍵/值組，`template`可以自動將這些索引鍵/值組寫入新元件。 此外，也可以指定下列可選值。
+
+* `model`定義元件使用哪個[模型](/help/implementing/universal-editor/field-types.md#model-structure)。
+   * 因此，模型會集中維護在元件定義中，而不需要[指定檢測。](/help/implementing/universal-editor/field-types.md#instrumentation)
+   * 這可讓您跨容器移動元件。
+* `filter`定義元件應使用哪個[篩選器](/help/implementing/universal-editor/filtering.md)。
 
 ### `cf` {#cf}
 

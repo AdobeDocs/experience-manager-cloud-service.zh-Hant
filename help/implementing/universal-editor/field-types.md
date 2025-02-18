@@ -4,10 +4,10 @@ description: 透過範例瞭解通用編輯器可在屬性面板中編輯的欄�
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: a27da2d6d675d68d69071d0b393ad5e0f82bb7ae
+source-git-commit: 0053c874e6e7a2782e03a37fe3928baa9cd5bdba
 workflow-type: tm+mt
-source-wordcount: '1353'
-ht-degree: 12%
+source-wordcount: '1496'
+ht-degree: 11%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 12%
 
 >[!TIP]
 >
->如果您不熟悉如何針對通用編輯器檢測您的應用程式，請參閱檔案： [AEM開發人員的通用編輯器概觀](/help/implementing/universal-editor/developer-overview.md)。
+>如果您不熟悉如何針對通用編輯器檢測您的應用程式，請參閱檔案： [適用於AEM開發人員的通用編輯器概觀](/help/implementing/universal-editor/developer-overview.md)。
 
 ## 模型定義結構 {#model-structure}
 
@@ -43,11 +43,41 @@ ht-degree: 12%
 
 請參閱本檔案的&#x200B;**[欄位](#fields)**&#x200B;區段，以取得如何定義`fields`陣列的詳細資訊。
 
+您可以使用兩種方式將模型連結至元件：使用[元件定義](#component-definition)或透過檢測使用[。](#instrumentation)
+
+### 使用元件定義連結 {#component-definition}
+
+這是將模型連結至元件的偏好方法。 如此可讓您集中維護元件定義中的連結，並啟用跨容器拖曳元件。
+
+只要在component-definition.json檔案的`template`指示詞中包含`model`屬性即可。
+
+```json
+...
+"template":{
+                  "text":"Default Text",
+                  "name":"Text",
+                  "model":"text",
+                  ...
+           }
+...
+```
+
+如需詳細資訊，請參閱檔案[元件定義。](/help/implementing/universal-editor/component-definition.md)
+
+### 使用檢測連結 {#instrumentation}
+
 若要搭配元件使用模型定義，可以使用`data-aue-model`屬性。
 
 ```html
 <div data-aue-resource="urn:datasource:/content/path" data-aue-type="component"  data-aue-model="model-id">Click me</div>
 ```
+
+>[!NOTE]
+>
+>在檢查元件定義之前，Universal Editor會先檢查模型是否透過檢測連結並使用模型。 這表示：
+>
+>* 已透過檢測實作連結至模型的專案將照原樣繼續運作，無需變更。
+>* 如果您在[元件定義](#component-definition)以及檢測中定義模型，則一律會使用檢測。
 
 ## 載入模型定義 {#loading-model}
 
@@ -69,7 +99,7 @@ ht-degree: 12%
 
 欄位物件具有下列型別定義。
 
-| 設定 | 數值類型 | 說明 | 必填 |
+| 設定 | 數值類型 | 描述 | 必填 |
 |---|---|---|---|
 | `component` | `ComponentType` | 元件的轉譯器 | 是 |
 | `name` | `string` | 應儲存資料的屬性 | 是 |
@@ -90,7 +120,7 @@ ht-degree: 12%
 
 以下是可用於呈現欄位的元件型別。
 
-| 說明 | 元件類型 |
+| 描述 | 元件類型 |
 |---|---|
 | [AEM標籤](#aem-tag) | `aem-tag` |
 | [AEM內容](#aem-content) | `aem-content` |
@@ -111,7 +141,7 @@ ht-degree: 12%
 
 #### AEM標籤 {#aem-tag}
 
-AEM標籤元件型別會啟用AEM標籤選擇器，其可用來將標籤附加至元件。
+AEM標籤元件型別會啟用AEM標籤選取器，其可用來將標籤附加至元件。
 
 >[!BEGINTABS]
 
@@ -139,9 +169,9 @@ AEM標籤元件型別會啟用AEM標籤選擇器，其可用來將標籤附加�
 
 #### AEM內容 {#aem-content}
 
-AEM內容元件型別會啟用AEM內容選擇器，其可用於選取任何AEM資源。 與只能選取資產的[參考元件](#reference)不同，AEM內容元件可以參考任何AEM內容。 它提供額外的驗證型別。
+AEM內容元件型別會啟用AEM內容選擇器，可用來選取任何AEM資源。 與只能選取資產的[參考元件](#reference)不同，AEM內容元件可參考任何AEM內容。 它提供額外的驗證型別。
 
-| 驗證類型 | 數值類型 | 說明 | 必填 |
+| 驗證類型 | 數值類型 | 描述 | 必填 |
 |---|---|---|---|
 | `rootPath` | `string` | 內容選擇器將開啟供使用者選取AEM內容的路徑，將選取範圍限制在該目錄和子目錄中 | 否 |
 
@@ -177,7 +207,7 @@ AEM內容元件型別會啟用AEM內容選擇器，其可用於選取任何AEM�
 
 布林值元件型別會儲存簡單的true/false值，呈現為切換按鈕。 它提供額外的驗證型別。
 
-| 驗證類型 | 數值類型 | 說明 | 必填 |
+| 驗證類型 | 數值類型 | 描述 | 必填 |
 |---|---|---|---|
 | `customErrorMsg` | `string` | 如果輸入的值不是布林值，則會顯示的訊息 | 否 |
 
@@ -260,7 +290,7 @@ AEM內容元件型別會啟用AEM內容選擇器，其可用於選取任何AEM�
 
 容器元件型別允許將元件分組。 它提供額外設定。
 
-| 設定 | 數值類型 | 說明 | 必填 |
+| 設定 | 數值類型 | 描述 | 必填 |
 |---|---|---|---|
 | `collapsible` | `boolean` | 容器是否可摺疊 | 否 |
 
@@ -307,13 +337,13 @@ AEM內容元件型別會啟用AEM內容選擇器，其可用於選取任何AEM�
 
 內容片段選擇器可用來選取[內容片段](/help/sites-cloud/authoring/fragments/content-fragments.md)及其變數（如果需要）。 它提供額外設定。
 
-| 設定 | 數值類型 | 說明 | 必填 |
+| 設定 | 數值類型 | 描述 | 必填 |
 |---|---|---|---|
 | `variationName` | `string` | 儲存所選變數的變數名稱。 如果未定義，則不會顯示變數選擇器 | 否 |
 
 此外，還提供其他驗證型別。
 
-| 驗證類型 | 數值類型 | 說明 | 必填 |
+| 驗證類型 | 數值類型 | 描述 | 必填 |
 |---|---|---|---|
 | `rootPath` | `string` | 內容選擇器將開啟供使用者選擇內容片段的路徑，將選擇限制在該目錄和子目錄中 | 否 |
 
@@ -357,14 +387,14 @@ AEM內容元件型別會啟用AEM內容選擇器，其可用於選取任何AEM�
 
 日期時間元件型別可指定日期、時間或其組合。 它提供其他設定。
 
-| 設定 | 數值類型 | 說明 | 必填 |
+| 設定 | 數值類型 | 描述 | 必填 |
 |---|---|---|---|
 | `displayFormat` | `string` | 日期字串顯示格式 | 是 |
 | `valueFormat` | `string` | 儲存日期字串的格式 | 是 |
 
 此外，還提供其他驗證型別。
 
-| 驗證類型 | 數值類型 | 說明 | 必填 |
+| 驗證類型 | 數值類型 | 描述 | 必填 |
 |---|---|---|---|
 | `customErrorMsg` | `string` | 未滿足`valueFormat`時將顯示的訊息 | 否 |
 
@@ -448,13 +478,13 @@ AEM內容元件型別會啟用AEM內容選擇器，其可用於選取任何AEM�
 
 體驗片段選擇器可用來選取[體驗片段](/help/sites-cloud/authoring/fragments/experience-fragments.md)及其變數（如果需要）。 它提供額外設定。
 
-| 設定 | 數值類型 | 說明 | 必填 |
+| 設定 | 數值類型 | 描述 | 必填 |
 |---|---|---|---|
 | `variationName` | `string` | 儲存所選變數的變數名稱。 如果未定義，則不會顯示變數選擇器 | 否 |
 
 此外，還提供其他驗證型別。
 
-| 驗證類型 | 數值類型 | 說明 | 必填 |
+| 驗證類型 | 數值類型 | 描述 | 必填 |
 |---|---|---|---|
 | `rootPath` | `string` | 內容選擇器將開啟供使用者選擇體驗片段的路徑，將選擇限制在該目錄和子目錄中 | 否 |
 
@@ -561,7 +591,7 @@ AEM內容元件型別會啟用AEM內容選擇器，其可用於選取任何AEM�
 
 數字元件型別允許輸入數字。 它提供額外的驗證型別。
 
-| 驗證類型 | 數值類型 | 說明 | 必填 |
+| 驗證類型 | 數值類型 | 描述 | 必填 |
 |---|---|---|---|
 | `numberMin` | `number` | 允許的最小數量 | 否 |
 | `numberMax` | `number` | 允許的最大數量 | 否 |
@@ -650,7 +680,7 @@ AEM內容元件型別會啟用AEM內容選擇器，其可用於選取任何AEM�
 
 #### 參考 {#reference}
 
-參考元件型別會啟用AEM資產選取器，這可讓您選取要參考的任何AEM資產。 與可以選取任何AEM資源的[AEM內容元件](#aem-content)不同，參考元件只能參考資產。 它提供額外的驗證型別。
+參考元件型別會啟用AEM資產選取器，其可用來選取要參考的任何AEM資產。 與可選取任何AEM資源的[AEM內容元件](#aem-content)不同，參考元件只能參考資產。 它提供額外的驗證型別。
 
 參照元件型別允許參照目前物件中的其他資料物件。
 
@@ -682,7 +712,7 @@ AEM內容元件型別會啟用AEM內容選擇器，其可用於選取任何AEM�
 
 RTF允許多行RTF輸入。 它提供額外的驗證型別。
 
-| 驗證類型 | 數值類型 | 說明 | 必填 |
+| 驗證類型 | 數值類型 | 描述 | 必填 |
 |---|---|---|---|
 | `maxSize` | `number` | 允許的最大字元數 | 否 |
 | `customErrorMsg` | `string` | 超過`maxSize`時顯示的訊息 | 否 |
@@ -763,7 +793,7 @@ RTF允許多行RTF輸入。 它提供額外的驗證型別。
 
 >[!ENDTABS]
 
-#### 標籤 {#tab}
+#### 定位符號 {#tab}
 
 索引標籤元件型別可讓您將其他輸入欄位分組在多個索引標籤上，以改善作者的版面配置組織。
 
@@ -815,7 +845,7 @@ RTF允許多行RTF輸入。 它提供額外的驗證型別。
 
 文字允許單行文字輸入。  它包含其他驗證型別。
 
-| 驗證類型 | 數值類型 | 說明 | 必填 |
+| 驗證類型 | 數值類型 | 描述 | 必填 |
 |---|---|---|---|
 | `minLength` | `number` | 允許的最小字元數 | 否 |
 | `maxLength` | `number` | 允許的最大字元數 | 否 |

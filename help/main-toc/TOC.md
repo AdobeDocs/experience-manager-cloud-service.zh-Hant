@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的運作方式以及該軟體可以為您做哪些事。
 breadcrumb-title: 使用手冊
 user-guide-title: 'AEM as a Cloud Service '
-source-git-commit: 22a0f65a4136fcf90ff9c19825d6d2bf37578045
+source-git-commit: e2ff4c3c8cfa9f4aa78d8ee02dcd242a10003438
 workflow-type: tm+mt
-source-wordcount: '6098'
+source-wordcount: '6081'
 ht-degree: 99%
 
 ---
@@ -374,10 +374,10 @@ ht-degree: 99%
          + [樣式系統](/help/sites-cloud/authoring/page-editor/style-system.md)
          + [取消復原還原限制](/help/sites-cloud/authoring/page-editor/undo-redo.md)
       + 通用編輯器 {#universal-editor}
-         + [瀏覽通用編輯器](/help/sites-cloud/authoring/universal-editor/navigation.md)
-         + [使用通用編輯器製作內容](/help/sites-cloud/authoring/universal-editor/authoring.md)
-         + [使用通用編輯器發佈內容](/help/sites-cloud/authoring/universal-editor/publishing.md)
-         + [通用編輯器中的內容繼承](/help/sites-cloud/authoring/universal-editor/inheritance.md)
+         + [導覽](/help/sites-cloud/authoring/universal-editor/navigation.md)
+         + [製作](/help/sites-cloud/authoring/universal-editor/authoring.md)
+         + [發佈](/help/sites-cloud/authoring/universal-editor/publishing.md)
+         + [繼承](/help/sites-cloud/authoring/universal-editor/inheritance.md)
          + [頁面範本](/help/sites-cloud/authoring/universal-editor/templates.md)
       + 片段 {#fragments}
          + [內容片段](/help/sites-cloud/authoring/fragments/content-fragments.md)
@@ -1287,6 +1287,7 @@ ht-degree: 99%
          + [屬性和項目類型](/help/implementing/universal-editor/attributes-types.md)
          + [元件定義](/help/implementing/universal-editor/component-definition.md)
          + [模型定義、欄位和元件類型](/help/implementing/universal-editor/field-types.md)
+         + [發佈](/help/implementing/universal-editor/publishing.md)
          + [SecurBank 範例應用程式](/help/implementing/universal-editor/securbank.md)
          + [事件](/help/implementing/universal-editor/events.md)
          + [篩選元件](/help/implementing/universal-editor/filtering.md)

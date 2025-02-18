@@ -5,9 +5,9 @@ exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: c738a123eccbb9b8c011f75ac60d79aba7a2a2d8
 workflow-type: tm+mt
-source-wordcount: '1936'
+source-wordcount: '1926'
 ht-degree: 5%
 
 ---
@@ -16,26 +16,26 @@ ht-degree: 5%
 
 在作者環境中建立並檢閱您的內容後，目標就是[讓內容可在您的公用網站](/help/sites-cloud/authoring/author-publish.md) （您的發佈環境）上使用。
 
-這稱為發佈頁面。 從發佈環境中移除頁面時，系統會將其稱為取消發佈。 發佈和取消發佈頁面時，作者環境仍會提供進一步的變更，直到您刪除它為止。
+這稱為發佈頁面。 從發佈環境中移除頁面時，系統會將其稱為取消發佈。 發佈和取消發佈時，除非您將其刪除，否則頁面仍可在作者環境中用於進一步的變更。
 
 您可以立即發佈/取消發佈頁面，或在預先定義的未來日期/時間發佈/取消發佈頁面。
 
 >[!NOTE]
 >
->發佈體驗片段的程式基本上與發佈頁面的程式相同，不過是從體驗片段控制檯或編輯器中進行。
+>發佈[體驗片段](/help/sites-cloud/authoring/fragments/experience-fragments.md)基本上會遵循與發佈頁面相同的程式，不過是從體驗片段主控台或編輯器中進行。
 
 ## 術語 {#terminology}
 
-在使用Adobe Experience Manager (AEM)as a Cloud Service時，您可能會遇到與發佈相關的不同詞語。
+在使用Adobe Experience Manager (AEM) as a Cloud Service時，您可能會遇到與發佈相關的不同詞語。
 
-* **Publish /取消發佈**
-   * 這些是讓您的內容在發佈環境中公開使用（或不公開使用）的動作主要詞語。
+* **發佈/取消發佈**
+   * 這些是讓您的內容在發佈和/或預覽環境（或不在）中公開可用的動作主要詞語。
    * 這些是AEM檔案中使用的術語。
 * **啟用/停用**
    * 這些辭彙與發佈/取消發佈同義。
-   * 這些詞語在舊版AEM中使用。
+   * 這些詞語用於舊版AEM。
 * **復寫/復寫**
-   * 這些是技術術語，說明發佈頁面時資料（例如頁面內容、檔案、程式碼、使用者評論）從一個環境移動到另一個環境。
+   * 這些是技術術語，說明發佈頁面時（例如從作者到預覽）資料（例如頁面內容、檔案、程式碼、使用者評論）從一項服務移動到另一項服務。
    * 這些詞語主要由開發人員使用。
 
 ## 發佈頁面 {#publishing-pages-1}
@@ -59,33 +59,30 @@ ht-degree: 5%
 >如果要保留頁面順序，您必須使用[管理出版物](#manage-publication)，在單一動作中將父頁面與任何子頁面一起發佈。
 >
 >無法保證頁面順序：
+>
 >* 若僅選取子頁面以供發佈（因為訂單資訊會保留在父頁面上）
 >* 如果父頁面和子頁面是以不同動作發佈
-
->[!NOTE]
->
-> 如需其他可能性，請參閱頁面屬性的[基本索引標籤](/help/sites-cloud/authoring/sites-console/page-properties.md#basic)中的&#x200B;**開啟時間**&#x200B;和&#x200B;**關閉時間**
 
 ### 從頁面編輯器發佈 {#publishing-from-the-page-editor}
 
 如果您在[頁面編輯器](/help/sites-cloud/authoring/page-editor/introduction.md)中編輯頁面，可以直接從編輯器發佈該頁面。
 
-1. 選取&#x200B;**頁面資訊**&#x200B;圖示以開啟功能表，然後選取&#x200B;**Publish頁面**&#x200B;選項。
+1. 選取&#x200B;**頁面資訊**&#x200B;圖示以開啟功能表，然後選取&#x200B;**發佈頁面**&#x200B;選項。
 
    ![透過頁面選項發佈頁面](/help/sites-cloud/authoring/assets/publishing-page-options.png)
 
 1. 視頁面是否有需要發佈的參照而定：
 
    * 如果沒有要發佈的引用，則會直接發佈頁面。
-   * 如果頁面含有需要發佈的參考，這些參考會列在&#x200B;**Publish**&#x200B;精靈中，您可以在其中執行以下作業：
-      * 指定您要與頁面一起發佈的資產或標籤等，然後使用&#x200B;**Publish**&#x200B;完成程式。
+   * 如果頁面含有需要發佈的參考，這些參考會列在&#x200B;**發佈**&#x200B;精靈中，您可以在其中執行下列任一操作：
+      * 指定您要與頁面一起發佈的資產或標籤等，然後使用&#x200B;**發佈**&#x200B;來完成程式。
       * 使用&#x200B;**取消**&#x200B;中止動作。
 
    ![使用頁面](/help/sites-cloud/authoring/assets/publishing-references.png)發佈參考
 
-1. 選取&#x200B;**Publish**&#x200B;會將頁面復寫至發佈環境。 在頁面編輯器中，會顯示確認發佈動作的資訊橫幅。
+1. 選取&#x200B;**發佈**&#x200B;會將頁面復寫至發佈環境。 在頁面編輯器中，會顯示確認發佈動作的資訊橫幅。
 
-   ![Publish狀態資訊橫幅](/help/sites-cloud/authoring/assets/publishing-info.png)
+   ![發佈狀態資訊橫幅](/help/sites-cloud/authoring/assets/publishing-info.png)
 
    在主控台中檢視相同頁面時，會顯示更新的發佈狀態。
 
@@ -97,7 +94,7 @@ ht-degree: 5%
 
 >[!NOTE]
 >
->無法發佈編輯器中由[別名](/help/sites-cloud/authoring/sites-console/page-properties.md#advanced)存取的頁面。 編輯器中的Publish選項僅適用於透過實際路徑存取的頁面。
+>無法發佈編輯器中由[別名](/help/sites-cloud/authoring/sites-console/page-properties.md#advanced)存取的頁面。 編輯器中的發佈選項僅適用於透過實際路徑存取的頁面。
 
 ### 從網站主控台發佈 {#publishing-from-the-sites-console}
 
@@ -108,15 +105,15 @@ ht-degree: 5%
 
 #### 快速發佈 {#quick-publish}
 
-**快速Publish**&#x200B;適用於簡單案例，可立即發佈選取的頁面，無需任何進一步的互動。 因此，任何未發佈的參考也會自動發佈。
+**快速發佈**&#x200B;適用於簡單的情況，並且會立即發佈選取的頁面，而不會進行任何進一步的互動。 因此，任何未發佈的參考也會自動發佈。
 
-若要使用Quick Publish發佈頁面：
+若要使用「快速發佈」功能發佈頁面：
 
-1. 在網站主控台中選取一個或多個頁面，然後按一下&#x200B;**快速Publish**&#x200B;按鈕。
+1. 在網站主控台中選取一個或多個頁面，然後按一下&#x200B;**快速發佈**&#x200B;按鈕。
 
    ![選取要發行的頁面](/help/sites-cloud/authoring/assets/publishing-select-pages.png)
 
-1. 在「快速Publish」對話方塊中，按一下&#x200B;**Publish**&#x200B;以確認出版物，或按一下&#x200B;**取消**&#x200B;以取消出版物。 請記住，任何未發佈的參考也會自動發佈。
+1. 在[快速發佈]對話方塊中，按一下[發佈]****&#x200B;以確認發佈，或按一下[取消]****&#x200B;以取消發佈。 請記住，任何未發佈的參考也會自動發佈。
 
    ![快速發佈確認](/help/sites-cloud/authoring/assets/publishing-quick-publish.png)
 
@@ -124,19 +121,11 @@ ht-degree: 5%
 
 >[!NOTE]
 >
->快速Publish是淺層發佈，也就是說，只會發佈選定的一個或多個頁面，而不會發佈任何子頁面。
+>快速發佈是淺層發佈，也就是說，只會發佈選取的頁面，而不會發佈任何子頁面。
 
 #### 管理發佈 {#manage-publication}
 
-**管理出版物**&#x200B;提供比&#x200B;**快速Publish**&#x200B;更多的選項，允許包含子頁面、自訂參考以及啟動任何適用的工作流程，並提供在以後發佈的選項。
-
->[!NOTE]
->
->如果要保留頁面順序，您必須使用&#x200B;**管理出版物**，在單一動作中將父頁面與任何子頁面一起發佈。
->
->無法保證頁面順序：
->* 若僅選取子頁面以供發佈（因為訂單資訊會保留在父頁面上）
->* 如果父頁面和子頁面是以不同動作發佈
+**管理出版物**&#x200B;提供比&#x200B;**快速發佈**&#x200B;更多的選項，允許包含子頁面、自訂參考、發佈到預覽服務（如果有的話），以及啟動任何適用的工作流程，並提供在以後發佈的選項。
 
 若要使用「管理發布」來發佈或取消發佈頁面：
 
@@ -150,6 +139,10 @@ ht-degree: 5%
 
      選擇發佈或取消發佈選取的頁面。
 
+   * **目的地**
+
+     選擇您要發佈至發佈服務（預設）或預覽服務。 僅當您已設定[預覽服務時可用。](/help/sites-cloud/authoring/sites-console/previewing-content.md)
+
    * **排程**
 
      選擇現在或稍後採取該動作。
@@ -159,6 +152,10 @@ ht-degree: 5%
      >[!NOTE]
      >
      >如果您要稍後再取消發佈/取消發佈，請移至[工作流程主控台](/help/sites-cloud/administering/workflows-administering.md#suspending-resuming-and-terminating-a-workflow-instance)以終止對應的工作流程。
+
+     >[!NOTE]
+     >
+     >排程發佈的內容與頁面屬性](/help/sites-cloud/authoring/sites-console/page-properties.md#basic)中可用的&#x200B;[**開啟時間**&#x200B;和&#x200B;**關閉時間**&#x200B;不同，但可用於類似的情況。
 
    ![管理出版物選項](/help/sites-cloud/authoring/assets/publishing-manage-publication-options.png)
 
@@ -213,7 +210,7 @@ ht-degree: 5%
 
    ![管理包含子項的出版物](/help/sites-cloud/authoring/assets/publishing-include-children.png)
 
-1. 按一下&#x200B;**Publish**&#x200B;以完成。
+1. 按一下&#x200B;**發佈**&#x200B;以完成。
 
    回到網站主控台，系統會傳送通知訊息確認發佈。
 
@@ -233,6 +230,8 @@ ht-degree: 5%
 
 1. 按一 **下「發佈** 」或「 **稍後發佈** 」以完成出版。
 
+
+
 ## 取消發佈頁面 {#unpublishing-pages}
 
 取消發佈頁面會將其從您的發佈或[預覽](/help/sites-cloud/authoring/sites-console/previewing-content.md)環境中移除，因此不再將其提供給您的讀者。
@@ -248,7 +247,7 @@ ht-degree: 5%
 
 >[!NOTE]
 >
->無法取消發佈編輯器中由[別名](/help/sites-cloud/authoring/sites-console/page-properties.md#advanced)存取的頁面。 編輯器中的Publish選項僅適用於透過實際路徑存取的頁面。
+>無法取消發佈編輯器中由[別名](/help/sites-cloud/authoring/sites-console/page-properties.md#advanced)存取的頁面。 編輯器中的發佈選項僅適用於透過實際路徑存取的頁面。
 
 ### 從主控台取消發佈 {#unpublishing-from-the-console}
 
