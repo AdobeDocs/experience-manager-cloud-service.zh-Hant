@@ -4,7 +4,7 @@ description: 詳細瞭解元件定義與通用編輯器之間的JSON合約。
 feature: Developing
 role: Admin, Architect, Developer
 exl-id: e1bb1a54-50c0-412a-a8fd-8167c6f47d2b
-source-git-commit: 0053c874e6e7a2782e03a37fe3928baa9cd5bdba
+source-git-commit: afb59345b48b39376b62a13cce8910bc9bc42c38
 workflow-type: tm+mt
 source-wordcount: '600'
 ht-degree: 1%
@@ -41,15 +41,15 @@ ht-degree: 1%
         {
           "title":"Text",
           "id":"text",
+          "model": "text",
+          "filter": "texts",
           "plugins":{
             "aem":{
               "page":{
                 "resourceType":"wknd/components/text",
                 "template":{
                   "text":"Default Text",
-                  "name":"Text",
-                  "model":"text",
-                  "filter":"texts"
+                  "name":"Text"
                 }
               }
             },
@@ -58,9 +58,7 @@ ht-degree: 1%
                 "resourceType":"wknd/components/text",
                 "template":{
                   "text":"Default Text",
-                  "name":"Text",
-                  "model":"text",
-                  "filter":"texts"
+                  "name":"Text"
                 }
               }
             }
@@ -87,6 +85,10 @@ ht-degree: 1%
 * `id`可唯一識別元件。
    * 相同`id`的[元件模型](/help/implementing/universal-editor/field-types.md#model-structure)定義了元件的欄位。
    * 因為它是唯一的，所以例如可以在[篩選定義](/help/implementing/universal-editor/filtering.md)中使用它來決定哪些元件可以新增到容器中。
+* `model`定義元件使用哪個[模型](/help/implementing/universal-editor/field-types.md#model-structure)。
+   * 因此，模型會集中維護在元件定義中，而不需要[指定檢測。](/help/implementing/universal-editor/field-types.md#instrumentation)
+   * 這可讓您跨容器移動元件。
+* `filter`定義元件應使用哪個[篩選器](/help/implementing/universal-editor/filtering.md)。
 
 ## `plugins` {#plugins}
 
@@ -114,11 +116,6 @@ ht-degree: 1%
 #### `template` {#template}
 
 藉由提供選用的索引鍵/值組，`template`可以自動將這些索引鍵/值組寫入新元件。 此外，也可以指定下列可選值。
-
-* `model`定義元件使用哪個[模型](/help/implementing/universal-editor/field-types.md#model-structure)。
-   * 因此，模型會集中維護在元件定義中，而不需要[指定檢測。](/help/implementing/universal-editor/field-types.md#instrumentation)
-   * 這可讓您跨容器移動元件。
-* `filter`定義元件應使用哪個[篩選器](/help/implementing/universal-editor/filtering.md)。
 
 ### `cf` {#cf}
 
