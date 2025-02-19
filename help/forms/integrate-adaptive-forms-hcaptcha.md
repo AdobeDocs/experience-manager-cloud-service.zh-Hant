@@ -5,7 +5,8 @@ topic-tags: Adaptive Forms, author
 keywords: 驗證碼&amp；reg；服務，最適化Forms， CAPTCHA挑戰，機器人預防，表單提交安全性，表單垃圾郵件預防
 feature: Adaptive Forms, Foundation Components
 role: User, Developer
-source-git-commit: 553f456f0eab43cee11fb9e66ce9e1dbacdc2b5c
+exl-id: dc7ca723-1008-472a-b6eb-8e9ed6332a16
+source-git-commit: 914139a6340f15ee77024793bf42fa30c913931e
 workflow-type: tm+mt
 source-wordcount: '981'
 ht-degree: 1%
@@ -18,7 +19,7 @@ ht-degree: 1%
 
 CAPTCHA （完全自動化公用圖靈測試來區分電腦和人之間的差異）是一種常用於線上交易的程式，以區分人和自動化程式或機器人。 這會帶來挑戰，並評估使用者的回應，以判斷其是否為人類或機器人與網站互動。 它可防止使用者在測試失敗時繼續進行，並透過防止機器人張貼垃圾郵件或惡意目的來確保線上交易的安全。
 
-AEM Formsas a Cloud Service支援下列CAPTCHA解決方案：
+AEM Forms as a Cloud Service支援下列驗證碼解決方案：
 
 * [驗證碼](#integrate-aem-forms-environment-with-hcaptcha-captcha)
 * [Cloudflare Turnstile](/help/forms/integrate-adaptive-forms-turnstile.md)
@@ -28,7 +29,7 @@ AEM Formsas a Cloud Service支援下列CAPTCHA解決方案：
 
 hCaptcha®服務可保護您的表單免受機器人、垃圾郵件和自動濫用的侵擾。 這會提出核取方塊Widget質詢，並評估使用者回應，以判斷它是人類還是機器人與表單互動。 它可防止使用者在測試失敗時繼續進行，並透過防止機器人張貼垃圾郵件或惡意活動來確保線上交易的安全。
 
-AEM Formsas a Cloud Service支援最適化Forms中的hCaptcha®。 您可以用它來在表單提交時顯示核取方塊Widget挑戰。
+AEM Forms as a Cloud Service支援最適化Forms中的hCaptcha®。 您可以用它來在表單提交時顯示核取方塊Widget挑戰。
 
 <!-- ![hCaptcha&reg;](assets/hCaptcha&reg;-challenge.png)-->
 
@@ -38,8 +39,8 @@ AEM Formsas a Cloud Service支援最適化Forms中的hCaptcha®。 您可以用�
 
 ## 設定hCaptcha的步驟® {#steps-to-configure-hcaptcha}
 
-1. 在您的AEM Formsas a Cloud Service環境中建立設定容器。 設定容器內含用來將AEM連線至外部服務的雲端設定。 若要建立並設定設定設定容器以使用hCaptcha連線您的AEM Forms環境®：
-   1. 開啟您的AEM Formsas a Cloud Service執行個體。
+1. 在您的AEM Forms as a Cloud Service環境中建立設定容器。 設定容器內含用來將AEM連線至外部服務的雲端設定。 若要建立並設定設定設定容器以使用hCaptcha連線您的AEM Forms環境®：
+   1. 開啟您的AEM Forms as a Cloud Service執行個體。
    1. 前往&#x200B;**[!UICONTROL 工具 > 一般 > 設定瀏覽器]**。
    1. 在組態瀏覽器中，您可以選取現有資料夾或建立資料夾。 您可以建立檔案夾並為其啟用「雲端設定」選項，或為現有檔案夾啟用「雲端設定」選項：
 
@@ -53,7 +54,7 @@ AEM Formsas a Cloud Service支援最適化Forms中的hCaptcha®。 您可以用�
          1. 選取&#x200B;**[!UICONTROL 儲存並關閉]**&#x200B;以儲存設定並結束對話方塊。
 
 1. 設定Cloud Service：
-   1. 在您的AEM作者執行個體上，移至![tools-1](assets/tools-1.png) > **[!UICONTROL Cloud Service]**&#x200B;並選取&#x200B;**[!UICONTROL hCaptcha®]**。
+   1. 在您的AEM作者執行個體上，前往![tools-1](assets/tools-1.png) > **[!UICONTROL 雲端服務]**&#x200B;並選取&#x200B;**[!UICONTROL hCaptcha®]**。
       ui中的![hCaptcha®](assets/hcaptcha-in-ui.png)
    1. 選取已建立或已更新的設定容器，如上一節所述。 選取「**[!UICONTROL 建立]**」。
       ![組態hCaptcha®](assets/config-hcaptcha.png)
@@ -68,7 +69,7 @@ AEM Formsas a Cloud Service支援最適化Forms中的hCaptcha®。 您可以用�
 
 ## 在最適化表單{#using-hCaptcha®-foundation-components}中使用hCaptcha®
 
-1. 開啟您的AEM Formsas a Cloud Service執行個體。
+1. 開啟您的AEM Forms as a Cloud Service執行個體。
 1. 移至&#x200B;**[!UICONTROL Forms]** > **[!UICONTROL Forms和檔案]**。
 1. 選取最適化表單並選取&#x200B;**[!UICONTROL 屬性]**。 針對&#x200B;**[!UICONTROL 組態容器]**&#x200B;選項，選取包含連線AEM Forms與hCaptcha®的雲端組態的組態容器，然後選取&#x200B;**[!UICONTROL 儲存並關閉]**。
 
@@ -91,8 +92,10 @@ AEM Formsas a Cloud Service支援最適化Forms中的hCaptcha®。 您可以用�
       * 使用者動作時。
    * **[!UICONTROL 驗證碼服務]：**&#x200B;選取您的驗證碼服務，這裡選取hCaptcha®服務。
    * **[!UICONTROL 驗證碼組態]：**&#x200B;選取為hCaptcha®設定的雲端組態。
+
      >[!NOTE]
-     >基於類似目的，您的環境中可以有多個雲端設定。 因此，請謹慎選擇服務。 如果未列出任何服務，請參閱[使用hCaptcha®](#connect-your-forms-environment-with-hcaptcha-service)連線您的AEM Forms環境，以瞭解如何建立將AEM Forms環境與hCaptcha®服務連線的Cloud Service。
+     >
+     > 基於類似目的，您的環境中可以有多個雲端設定。 因此，請謹慎選擇服務。 如果未列出任何服務，請參閱[使用hCaptcha®](#connect-your-forms-environment-with-hcaptcha-service)連線您的AEM Forms環境，以瞭解如何建立將AEM Forms環境與hCaptcha®服務連線的Cloud Service。
 
    * **錯誤訊息：**&#x200B;提供驗證碼提交失敗時向使用者顯示的錯誤訊息。
    * **驗證碼大小：**&#x200B;您選取hCaptcha®挑戰對話方塊的顯示大小。 使用&#x200B;**[!UICONTROL Compact]**&#x200B;選項可顯示較小的大小，使用&#x200B;**[!UICONTROL Normal]**&#x200B;選項可顯示相對較大的hCaptcha®挑戰對話方塊，或使用&#x200B;**[!UICONTROL Invisible]**&#x200B;驗證hCaptcha®而不需在使用者介面上明確轉譯核取方塊Widget。

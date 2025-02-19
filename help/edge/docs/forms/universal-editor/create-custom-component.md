@@ -6,7 +6,7 @@ hide: true
 hidefromtoc: true
 role: Admin, Architect, Developer
 exl-id: 2bbe3f95-d5d0-4dc7-a983-7a20c93e2906
-source-git-commit: bf70adcb95ddf88d0ea9a496efe3ae47f71f6a1d
+source-git-commit: 76301ca614ae2256f5f8b00c41399298c761ee33
 workflow-type: tm+mt
 source-wordcount: '1725'
 ht-degree: 5%
@@ -157,6 +157,7 @@ Edge Delivery Services Forms提供自訂功能，可讓前端開發人員建立�
    }
    ]
    ```
+
    >[!NOTE]
    >
    > 若要新增欄位到自訂元件的&#x200B;**屬性**&#x200B;對話方塊，請遵循[定義的結構描述](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/field-types#loading-model)。

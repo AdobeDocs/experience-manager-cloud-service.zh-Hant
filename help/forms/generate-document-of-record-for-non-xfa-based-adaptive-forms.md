@@ -4,7 +4,7 @@ description: 瞭解如何產生最適化Forms的記錄檔案(DoR)範本。
 feature: Adaptive Forms, Foundation Components
 exl-id: 16d07932-3308-4b62-8fa4-88c4e42ca7b6
 role: User, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 76301ca614ae2256f5f8b00c41399298c761ee33
 workflow-type: tm+mt
 source-wordcount: '4170'
 ht-degree: 3%
@@ -25,7 +25,7 @@ ht-degree: 3%
 
 ## 概觀 {#overview}
 
-填寫或提交表單時，您可以以列印或檔案格式保留表單記錄。 此記錄稱為記錄檔案(DoR)。 這是一份容易列印的已提交表格。 您也可以參考記錄檔案以瞭解客戶在稍後日期填寫的資訊，或使用「記錄檔案」以「PDF格式」將表單與內容一起封存。
+填寫或提交表單時，您可以以列印或檔案格式保留表單記錄。 此記錄稱為記錄檔案(DoR)。 這是一份容易列印的已提交表格。 您也可以參考記錄檔案以瞭解客戶在稍後日期填寫的資訊，或使用記錄檔案以PDF格式將表單和內容一起封存。
 
 ![記錄檔案](assets/document-of-record.png)
 
@@ -35,7 +35,7 @@ ht-degree: 3%
 您可以：
 
 * [產生以XFA為基礎的記錄檔案](#generate-an-XFA-based-document-of-record)
-* [產生以Acroform為基礎的(Acrobat表單PDF)記錄檔案](#generate-an-Acroform-based-document-of-record)
+* [產生以Acroform為基礎的(Acrobat Form PDF)記錄檔案](#generate-an-Acroform-based-document-of-record)
 * [自動生成記錄檔案](#auto-generate-a-document-of-record)
 
 ## 開始之前 {#components-to-automatically-generate-a-document-of-record}
@@ -61,13 +61,13 @@ ht-degree: 3%
 
 ## 產生以Acroform為基礎的記錄檔案 {#generate-an-Acroform-based-document-of-record}
 
-將Adobe AcrobatPDF(Acroform)上傳至AEM Forms執行個體。 執行以下步驟來設定最適化表單，以使用Adobe AcrobatPDF(Acroform)作為記錄檔案的範本：
+將Adobe Acrobat PDF (Acroform)上傳至AEM Forms執行個體。 執行以下步驟來設定最適化表單，以使用Adobe Acrobat PDF (Acroform)作為記錄檔案的範本：
 
 1. 在Experience Manager作者執行個體中，按一下&#x200B;**[!UICONTROL Forms]** > **[!UICONTROL Forms和檔案]。**
 1. 選取表單，然後按一下&#x200B;**[!UICONTROL 屬性]**。
 1. 在[內容]視窗中，選取&#x200B;**[!UICONTROL 表單模型]**。
 1. 在&#x200B;**[!UICONTROL 表單模型]**&#x200B;標籤的&#x200B;**[!UICONTROL 選取自]**&#x200B;下拉式清單中，選取&#x200B;**[!UICONTROL 結構描述]**&#x200B;或&#x200B;**[!UICONTROL 無]**。 您也可以在建立表單時選取表單模型。
-1. 在[表單模型]索引標籤的[記錄檔案範本組態]區段中，選取[**關聯表單範本作為記錄檔案範本**]。 選取此選項時，會顯示電腦上可用的所有AcrobatPDF(Acroform)。 選取適當的檔案。
+1. 在[表單模型]索引標籤的[記錄檔案範本組態]區段中，選取[**關聯表單範本作為記錄檔案範本**]。 選取此選項時，會顯示電腦上可用的所有Acrobat PDF (Acroform)。 選取適當的檔案。
 1. 按一下&#x200B;**[!UICONTROL 完成]**
 
 您的最適化表單現在已設定為使用Acroform作為記錄檔案的範本。 下一個步驟是[繫結最適化表單元件與對應的範本欄位](#bind-adaptive-form-components-with-template-fields)。
@@ -110,7 +110,7 @@ ht-degree: 3%
 In the following video, Adaptive Form components are bound with corresponding Acroform template fields and the Document of Record is sent as an email attachment.
 -->
 
-您可以使用傳送電子郵件、Experience Manager工作流程提交動作搭配[記錄檔案步驟，以及其他提交動作](configuring-submit-actions.md)來接收記錄檔案。
+您可以使用傳送電子郵件、Experience Manager工作流程提交動作搭配[記錄檔案步驟以及其他提交動作](configuring-submit-actions.md)來接收記錄檔案。
 
 ## 記錄檔案範本的增量更新 {#document-of-record-template-incremental-updates}
 
@@ -131,6 +131,7 @@ In the following video, Adaptive Form components are bound with corresponding Ac
 ![繫結錯誤](assets/we-retail-binding-error.png)
 
 表單開發人員會將最適化Forms欄位與對應的記錄檔案範本繫結。
+
 >[!VIDEO](assets/we-retail-binding.mp4)
 
 現在，當最適化表單被提交時，會建立一個更新的記錄檔案。
@@ -346,12 +347,12 @@ When you select a form model, configure Document of Record using options availab
 
    1. **基本屬性**：
       * **範本**：如果您選擇選取自訂範本，請在[!DNL AEM Forms]伺服器上瀏覽選取XDP。 如果您想使用未在[!DNL AEM Forms]伺服器上的範本，您應該先將XDP上傳到您的[!DNL AEM Forms]伺服器。
-      * **強調色**：在檔案或記錄PDF中呈現標頭文字和分隔線的色彩。
-      * **字型系列**：記錄檔案PDF中文字的字型系列。
+      * **強調色**：在PDF檔案或記錄中呈現標頭文字和分隔線的色彩。
+      * **字型系列**：記錄檔案PDF中的文字字型系列。
 
         >[!NOTE]
         >
-        > AEM Forms提供多種內建字型，可與PDF檔案緊密整合。 若要檢視支援的字型清單，[請按一下這裡](/help/forms/supported-out-of-the-box-fonts.md)。
+        > AEM Forms提供多種內建字型，可順暢地與PDF檔案整合。 若要檢視支援的字型清單，[請按一下這裡](/help/forms/supported-out-of-the-box-fonts.md)。
 
       * **包含未繫結至資料模型的表單物件**：設定屬性會包含記錄檔案中結構描述型最適化表單中未繫結的欄位。
       * **從記錄檔案排除隱藏欄位**：設定屬性可識別從記錄檔案排除的隱藏欄位。
@@ -420,7 +421,7 @@ When you select a form model, configure Document of Record using options availab
 
 ## 記錄檔案中面板的表格和欄配置 {#table-and-column-layouts-for-panels-in-document-of-record}
 
-您的調適型表單可能很長，包含多個表單欄位。 您可能不想將記錄檔案儲存為最適化表單的精確副本。 現在您可以選擇表格或欄版面配置，以將一或多個最適化表單面板儲存在記錄檔案PDF中。
+您的調適型表單可能很長，包含多個表單欄位。 您可能不想將記錄檔案儲存為最適化表單的精確副本。 現在您可以選擇表格或欄版面配置，以將一個或多個最適化表單面板儲存在記錄檔案PDF中。
 
 在產生記錄檔案之前，在面板的設定中，選取該面板的「記錄檔案配置」(Layout For The Document of Record)為「表格」或「欄」。 面板中的欄位會在記錄檔案中進行相應的組織。
 
@@ -453,9 +454,9 @@ When you select a form model, configure Document of Record using options availab
 
 ## 使用自訂XCI檔案
 
-XCI檔案可協助您設定檔案的各種屬性。 Formsas a Cloud Service有主XCI檔案。 您可以使用自訂XCI檔案來覆寫主XCI檔案中指定的一個或多個預設屬性。 例如，您可以選擇將字型內嵌到檔案中，或是為所有檔案啟用標籤屬性。 下表指定XCI選項：
+XCI檔案可協助您設定檔案的各種屬性。 Forms as a Cloud Service有主XCI檔案。 您可以使用自訂XCI檔案來覆寫主XCI檔案中指定的一個或多個預設屬性。 例如，您可以選擇將字型內嵌到檔案中，或是為所有檔案啟用標籤屬性。 下表指定XCI選項：
 
-| XCI選項 | 說明 |
+| XCI選項 | 描述 |
 |--- |--- |
 | config/present/pdf/creator | 使用檔案資訊字典中的建立者專案來識別檔案建立者。 如需此字典的相關資訊，請參閱[PDF參考指南](https://opensource.adobe.com/dc-acrobat-sdk-docs/acrobatsdk/)。 |
 | config/present/pdf/producer | 使用檔案資訊字典中的製作者專案來識別檔案製作者。 如需此字典的相關資訊，請參閱[PDF參考指南](https://opensource.adobe.com/dc-acrobat-sdk-docs/acrobatsdk/)。 |
@@ -473,24 +474,24 @@ XCI檔案可協助您設定檔案的各種屬性。 Formsas a Cloud Service有�
 | config/present/common/log/to | 控制記錄資料或輸出資料寫入的位置。 |
 | config/present/output/to | 控制記錄資料或輸出資料寫入的位置。 |
 | config/present/script/currentPage | 指定開啟檔案時的初始頁面。 |
-| config/present/script/exclude | 通知Formsas a Cloud Service忽略哪些事件。 |
+| config/present/script/exclude | 通知Forms as a Cloud Service要忽略哪些事件。 |
 | config/present/pdf/linearized | 控制是否將輸出PDF檔案線性化。 |
-| config/present/script/runScripts | 控制Forms as a Cloud Service執行的指令碼集。 |
-| config/present/pdf/tagged | 控制標籤在輸出PDF檔案中是否包含。 在PDF的內容中，標籤是包含在檔案中的其他資訊，用於公開檔案的邏輯結構。 標籤有助於協助協助工具及重新格式化。 例如，頁碼可能會被標籤為成品，這樣熒幕閱讀器就不會在文字中間朗讀它。 雖然標籤讓檔案變得更實用，但它們也會增加檔案的大小，以及建立檔案的處理時間。 |
+| config/present/script/runScripts | 控制Forms as a Cloud Service要執行哪一組指令碼。 |
+| config/present/pdf/tagged | 控制標籤在輸出PDF檔案中是否包含。 在PDF中，標籤是包含在檔案中的其他資訊，用於公開檔案的邏輯結構。 標籤有助於協助協助工具及重新格式化。 例如，頁碼可能會被標籤為成品，這樣熒幕閱讀器就不會在文字中間朗讀它。 雖然標籤讓檔案變得更實用，但它們也會增加檔案的大小，以及建立檔案的處理時間。 |
 | config/present/pdf/fontInfo/alwaysEmbed | 指定內嵌在輸出檔案中的字型。 |
 | config/present/pdf/fontInfo/neverEmbed | 指定不得嵌入至輸出檔案的字型。 |
-| config/present/pdf/pdfa/part | 指定檔案符合的PDF/A規格的版本號碼。 |
-| config/present/pdf/pdfa/amd | 指定PDF/A規格的修訂層次。 |
-| config/present/pdf/pdfa/conformance | 指定符合PDF/A規格的等級。 |
+| config/present/pdf/pdfa/part | 指定檔案符合的PDF/A規格版本號碼。 |
+| config/present/pdf/pdfa/amd | 指定PDF/A規格的修訂等級。 |
+| config/present/pdf/pdfa/conformance | 指定與PDF/A規格一致的等級。 |
 | config/present/pdf/version | 指定要產生的PDF檔案版本 |
 | config/present/pdf/version/map | 指定檔案的回覆字型 |
 
 >[!NOTE]
 >
-> AEM Forms提供多種內建字型，可與PDF檔案緊密整合。 若要檢視支援的字型清單，[請按一下這裡](/help/forms/supported-out-of-the-box-fonts.md)。
+> AEM Forms提供多種內建字型，可順暢地與PDF檔案整合。 若要檢視支援的字型清單，[請按一下這裡](/help/forms/supported-out-of-the-box-fonts.md)。
 
 
-### 在您的Formsas a Cloud Service環境中使用自訂XCI檔案
+### 在您的Forms as a Cloud Service環境中使用自訂XCI檔案
 
 1. 將自訂XCI檔案新增至您的開發專案。
 1. 指定下列[內嵌屬性](/help/implementing/deploying/configuring-osgi.md)：
@@ -511,10 +512,10 @@ XCI檔案可協助您設定檔案的各種屬性。 Formsas a Cloud Service有�
 
 1. 將專案部署至您的Cloud Service環境。
 
-### 在本機Formsas a Cloud Service開發環境中使用自訂XCI檔案
+### 在本機Forms as a Cloud Service開發環境中使用自訂XCI檔案
 
 1. 上傳XCI檔案至您的本機開發環境。
-1. 開啟Cloud ServiceSDK設定管理員。 預設URL為： <http://localhost:4502/system/console/configMgr>。
+1. 開啟Cloud Service SDK設定管理員。 預設URL為： <http://localhost:4502/system/console/configMgr>。
 1. 找到並開啟&#x200B;**[!UICONTROL 最適化Forms和互動式通訊Web Channel]**&#x200B;設定。
 1. 指定XCI檔案的路徑，然後按一下&#x200B;**[!UICONTROL 儲存]**。
 

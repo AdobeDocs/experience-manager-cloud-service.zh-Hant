@@ -4,7 +4,7 @@ description: 在最適化表單中的註腳使用RTF編輯器(RTE) 。
 feature: Adaptive Forms, Foundation Components
 exl-id: f04dae84-daab-42f8-876f-02fe426f62be
 role: User, Developer
-source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
+source-git-commit: 76301ca614ae2256f5f8b00c41399298c761ee33
 workflow-type: tm+mt
 source-wordcount: '429'
 ht-degree: 3%
@@ -51,6 +51,7 @@ ht-degree: 3%
    >* 如果有重複的註腳，則所有重複的註腳的編號相同。
 
 1. 從元件瀏覽器中，將&#x200B;**[!UICONTROL 註腳預留位置]**&#x200B;元件拖放至最適化表單上。
+
    >[!NOTE]
    >
    >* 在發佈執行個體中，註腳會顯示在&#x200B;**[!UICONTROL 註腳預留位置]**&#x200B;元件放置到調適型表單上的位置。

@@ -1,13 +1,13 @@
 ---
 title: 如何建立表單資料模型(FDM)？
-description: 瞭解如何使用自適應表單或AEM工作流程建立表單資料模型(FDM)，以及傳送或擷取資料至資料來源。
+description: 瞭解如何使用自適應表單或AEM工作流程建立表單資料模型(FDM)，並將資料傳送或擷取到資料來源。
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: b17b7441-912c-44c7-a835-809f014a8c86
-source-git-commit: 7b31a2ea016567979288c7a8e55ed5bf8dfc181d
+source-git-commit: 76301ca614ae2256f5f8b00c41399298c761ee33
 workflow-type: tm+mt
-source-wordcount: '1543'
+source-wordcount: '1542'
 ht-degree: 1%
 
 ---
@@ -110,7 +110,7 @@ ht-degree: 1%
 1. 整合[!DNL Experience Manager]原型專案中的雲端設定。
    1. 將下載的套件解壓縮。
    1. 複製「`jcr_root`」資料夾並放置您的「`ui.content` > `src` > `main` > `content`」。
-   1. 更新`ui.content` > `src` > `main` > `content` > `META-INF` > `vault` > `filter.xml`以包含篩選器`/conf/{foldername}/settings/cloudconfigs/fdm`。 如需詳細資訊，請參閱AEM專案原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uicontent.html)的[ui.content模組。 透過CM管道部署此原型專案時，相同的雲端設定會安裝在所有環境（或runmodes）上。 若要根據環境變更雲端設定的欄位值（例如URL），請使用以下步驟中討論的OSGi設定。
+   1. 更新`ui.content` > `src` > `main` > `content` > `META-INF` > `vault` > `filter.xml`以包含篩選器`/conf/{foldername}/settings/cloudconfigs/fdm`。 如需詳細資訊，請參閱AEM專案原型的[ui.content模組](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uicontent.html)。 透過CM管道部署此原型專案時，相同的雲端設定會安裝在所有環境（或runmodes）上。 若要根據環境變更雲端設定的欄位值（例如URL），請使用以下步驟中討論的OSGi設定。
 
 1. 建立Apache Sling內容感知設定。 若要建立OSGi設定：
    1. **在[!DNL Experience Manager] Archetype專案中設定OSGi設定檔。**
@@ -123,14 +123,15 @@ ht-degree: 1%
       1. 在覆寫下，根據sling覆寫語法中的環境，提供需要變更的欄位。 如需詳細資訊，請參閱[Apache Sling內容感知設定 — 覆寫](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration-override.html#override-syntax)。 例如，`cloudconfigs/fdm/{configName}/url="newURL"`。
 選取**[!UICONTROL +]**&#x200B;可新增多個覆寫。
       1. 選取「**[!UICONTROL 儲存]**」。
-      1. 若要取得OSGi設定JSON，請依照[使用AEM SDK快速入門](/help/implementing/deploying/configuring-osgi.md#generating-osgi-configurations-using-the-aem-sdk-quickstart)產生OSGi設定中的步驟操作。
+      1. 若要取得OSGi設定JSON，請依照[使用AEM SDK快速入門產生OSGi設定](/help/implementing/deploying/configuring-osgi.md#generating-osgi-configurations-using-the-aem-sdk-quickstart)中的步驟操作。
       1. 將JSON放在上一步建立的OSGi Factory設定檔案中。
       1. 根據環境（或執行模式）變更`newURL`的值。
       1. 若要根據執行模式變更密碼值，可使用[Cloud Manager API](/help/implementing/deploying/configuring-osgi.md#cloud-manager-api-format-for-setting-properties)建立密碼變數，以後可在[OSGi設定](/help/implementing/deploying/configuring-osgi.md#secret-configuration-values)中參照。
 透過CM管道部署此原型專案時，覆寫將在不同的環境（或執行模式）上提供不同的值。
+
       >[!NOTE]
       >
-      >[!DNL Adobe Managed Service]使用者可以使用加密支援來加密密碼值(如需詳細資訊，請參閱[設定屬性的encryption支援](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/encryption-support-for-configuration-properties.html#enabling-encryption-support)，並將加密的文字置於service pack 6.5.13.0](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html#runmode-specific-context-aware-config)中提供[內容感知設定後的值。
+      >[!DNL Adobe Managed Service]使用者可以使用加密支援來加密密碼值，以取得詳細資料，請參閱[設定屬性的encryption支援](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/encryption-support-for-configuration-properties.html#enabling-encryption-support)，並在[Service Pack 6.5.13.0](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html#runmode-specific-context-aware-config)中有內容感知設定之後，將加密文字置於值中。
 
 1. 使用在[表單資料模型編輯器](#data-sources)中重新整理資料來源定義的選項來重新整理資料來源定義，透過FDM UI重新整理FDM快取並取得最新組態。
 

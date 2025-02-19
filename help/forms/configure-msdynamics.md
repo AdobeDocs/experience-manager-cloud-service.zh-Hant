@@ -3,7 +3,8 @@ title: 如何為最適化Forms設定立即可用的Microsoft Dynamics 365表單�
 description: 瞭解如何整合Microsoft Dynamics 365與最適化Forms。
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
-source-git-commit: 25284474793742a1af28e3c81976a3061d9eaf3e
+exl-id: 29ee324c-cd4c-403b-bb3d-b1eda8e8ad88
+source-git-commit: 76301ca614ae2256f5f8b00c41399298c761ee33
 workflow-type: tm+mt
 source-wordcount: '915'
 ht-degree: 1%
@@ -51,6 +52,7 @@ AEM as a Cloud Service提供多種立即可用的提交動作，用於處理表�
    * 啟用Microsoft Dynamics 365應用
 
    依照影片中的步驟，在Power Platform管理中心建立帳戶。 在此影片中，已建立試用帳戶以供示範之用。
+
    >[!VIDEO](https://video.tv.adobe.com/v/3444388)
 
 1. **在Azure Active Directory中註冊[!DNL Microsoft® Dynamics 365]的應用程式**

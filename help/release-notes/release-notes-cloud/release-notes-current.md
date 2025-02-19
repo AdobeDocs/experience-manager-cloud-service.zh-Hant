@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 7c65208b948345ea185032a04595ffe65e95876d
+source-git-commit: f81e8434029ade26dd2c30b249537699971e9a4b
 workflow-type: tm+mt
 source-wordcount: '1750'
-ht-degree: 99%
+ht-degree: 98%
 
 ---
 
@@ -128,7 +128,7 @@ Adobe Dynamic Media 中以 AI 產生的影片字幕，是使用人工智慧來�
 
 #### 管理發佈
 
-您可以使用「管理發佈」工作流程橫跨多個環境發佈或取消發佈表單，通常是作者實例到發佈和預覽實例。此功能讓使用者可以用精簡的方式發佈、取消發佈或排程內容發佈。
+您可以使用[管理發布](/help/forms/manage-publication.md#publish-forms-using-the-manage-publication-option)工作流程來發佈或取消發佈跨環境的表單，通常是從作者執行個體到發佈和預覽執行個體。 此功能讓使用者可以用精簡的方式發佈、取消發佈或排程內容發佈。
 
 #### 自動儲存以核心元件為基礎的最適化表單草稿
 
@@ -202,7 +202,7 @@ AEM Forms 搶先體驗計劃為您提供獨一無二的機會，獲得先進創�
 
 ## [!DNL Experience Manager] Guides {#guides}
 
-您可以在[這裡](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2410-0-release/whats-new-2024-10-0)找到最新版 Adobe Experience Manager Guides 的新功能和增強功能完整清單。
+您可以在[這裡](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2410-0-release/whats-new-2024-10-0)找到最新版 Adobe Experience Manager Guides 的新功能和增強功能完整清單。
 
 ## Cloud Manager {#cloud-manager}
 

@@ -4,7 +4,7 @@ description: 瞭解如何在最適化表單中建立一個或多個可重複的�
 role: Architect, Developer, Admin, User
 feature: Adaptive Forms, Core Components
 exl-id: 02521bf3-83c1-40a0-8fe6-23af240727e9
-source-git-commit: f28f212574dda0ece2cedb56a714d381e5bd7d3c
+source-git-commit: 76301ca614ae2256f5f8b00c41399298c761ee33
 workflow-type: tm+mt
 source-wordcount: '1258'
 ht-degree: 8%
@@ -98,6 +98,7 @@ ht-degree: 8%
    * 若要建立刪除面板按鈕，請指定`this.panel.instanceManager.removeInstance(this.panel.instanceIndex)`
 
    按一下&#x200B;**「完成」**。
+
 >[!VIDEO](https://video.tv.adobe.com/v/3421620/adaptive-forms-repeatable-sections)
 
 >[!NOTE]
