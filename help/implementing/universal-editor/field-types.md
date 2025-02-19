@@ -4,9 +4,9 @@ description: 透過範例瞭解通用編輯器可在屬性面板中編輯的欄�
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 0053c874e6e7a2782e03a37fe3928baa9cd5bdba
+source-git-commit: 8ced236b9bbbae498c46e14a265f7cfa29499f53
 workflow-type: tm+mt
-source-wordcount: '1496'
+source-wordcount: '1499'
 ht-degree: 11%
 
 ---
@@ -49,18 +49,7 @@ ht-degree: 11%
 
 這是將模型連結至元件的偏好方法。 如此可讓您集中維護元件定義中的連結，並啟用跨容器拖曳元件。
 
-只要在component-definition.json檔案的`template`指示詞中包含`model`屬性即可。
-
-```json
-...
-"template":{
-                  "text":"Default Text",
-                  "name":"Text",
-                  "model":"text",
-                  ...
-           }
-...
-```
+只要在`component-definition.json`檔案的`components`陣列中的元件物件中包含`model`屬性即可。
 
 如需詳細資訊，請參閱檔案[元件定義。](/help/implementing/universal-editor/component-definition.md)
 
