@@ -5,7 +5,7 @@ exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
 feature: Content Fragments, GraphQL API
 role: User, Admin, Architect
 solution: Experience Manager Sites
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 883eadc8ce2c84eba526b081ef90c678845989aa
 workflow-type: tm+mt
 source-wordcount: '3120'
 ht-degree: 5%
@@ -14,7 +14,7 @@ ht-degree: 5%
 
 # 內容片段模型 {#content-fragment-models}
 
-AEM中的內容片段模型定義了您[內容片段](/help/assets/content-fragments/content-fragments.md)的內容結構，可作為您Headless內容的基礎。
+AEM中的內容片段模型定義您[內容片段](/help/assets/content-fragments/content-fragments.md)的內容結構，可作為您Headless內容的基礎。
 
 若要使用內容片段模式，您可以：
 
@@ -261,6 +261,7 @@ AEM中的內容片段模型定義了您[內容片段](/help/assets/content-fragm
 * **[片段參考](#fragment-reference-nested-fragments)** （巢狀片段）
    * 根據指定的特定模型，參考其他片段。
    * 可讓您包含/擷取結構化資料。
+
      >[!NOTE]
      >
      此方法與搭配GraphQL](/help/assets/content-fragments/content-fragments-graphql.md)使用內容片段的[Headless內容傳遞特別相關。
@@ -268,7 +269,7 @@ AEM中的內容片段模型定義了您[內容片段](/help/assets/content-fragm
 
 >[!NOTE]
 >
-AEM對下列專案具有週期性保護：
+AEM對下列專案提供週期性保護：
 >
 * 內容參照
 這可防止使用者新增對目前片段的引用。 這可能會導致空的片段參考選擇器對話方塊。
@@ -434,9 +435,10 @@ GraphQL中也有片段參考的週期性保護。 如果您在兩個相互參照
 1. **儲存**&#x200B;任何變更。
 
 允許用於資料夾的內容片段模型的解析如下：
+
 * **允許的內容片段模型**&#x200B;的&#x200B;**原則**。
 * 如果空白，請嘗試使用繼承規則來決定原則。
-* 如果繼承鏈結未傳遞結果，請檢視該資料夾的&#x200B;**Cloud Service**&#x200B;設定（也請先直接再透過繼承）。
+* 如果繼承鏈結未傳遞結果，請檢視該資料夾的&#x200B;**雲端服務**&#x200B;設定（也請先直接再透過繼承）。
 * 如果以上所有內容均未提供任何結果，則該資料夾不允許使用模型。
 
 ## 刪除內容片段模型 {#deleting-a-content-fragment-model}
@@ -465,7 +467,7 @@ GraphQL中也有片段參考的週期性保護。 如果您在兩個相互參照
 1. 導覽至&#x200B;**工具**、**一般**，然後開啟&#x200B;**內容片段模型**。
 
 1. 導覽至容納您的內容片段模式的資料夾。
-1. 選取您的模型，然後從工具列選取&#x200B;**Publish**。
+1. 選取您的模型，然後從工具列選取&#x200B;**發佈**。
 主控台會指出發佈狀態。
 
    >[!NOTE]
@@ -500,7 +502,7 @@ GraphQL中也有片段參考的週期性保護。 如果您在兩個相互參照
 
 * 內容片段模型決定AEM中GraphQL查詢的結構描述。
 
-   * AEM GraphQL結構描述會在建立內容片段模型後立即建立，而且可存在於製作和發佈環境中。
+   * AEM GraphQL結構描述會在建立內容片段模型後立即建立，且可同時存在於製作和發佈環境中。
 
    * 發佈上的結構描述最為關鍵，因為它們為JSON格式的內容片段內容的即時傳送奠定了基礎。
 
@@ -510,7 +512,7 @@ GraphQL中也有片段參考的週期性保護。 如果您在兩個相互參照
 
 ### 需求 {#the-requirements}
 
-* 讓使用者瞭解在編輯已用於即時內容傳送的模型（即已發佈的模型）時的風險。
+* 讓使用者瞭解在編輯已用於即時內容傳送的模型時的風險，換言之，就是已發佈的模型。
 
 * 此外，也可避免非預期的變更。
 
