@@ -6,7 +6,7 @@ role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
 exl-id: ac780399-34fe-457d-aaf4-b675656c024d
-source-git-commit: d055ac12b8f36deb4e0244df7b6d5df8ec627557
+source-git-commit: 7f4257433c441eb6b0109f22545b3ef708c9323b
 workflow-type: tm+mt
 source-wordcount: '1828'
 ht-degree: 89%
@@ -29,7 +29,7 @@ ht-degree: 89%
 
 ## 了解表單欄位類型
 
-在深入研究樣式之前，讓我們回顧一下最適化表單區塊支援的常見表單[欄位類型](/help/edge/docs/forms/form-components.md)：
+在深入研究樣式之前，讓我們回顧一下最適化表單區塊支援的常見表單[欄位類型](/help/edge/docs/forms/universal-editor/create-custom-component.md#supported-fieldtypes)：
 
 * 輸入欄位：包括文字輸入、電子郵件輸入、密碼輸入等。
 * 核取方塊群組：用於選取多個選項。
@@ -57,17 +57,17 @@ ht-degree: 89%
 範例：
 
   ```css
-  main .form form input {
-    /* Add styles specific to input fields inside the form */
-  }
+    main .form form input {
+        /* Add styles specific to input fields inside the form */
+    }
   
-  main .form form button {
-    /* Add styles specific to buttons inside the form */
-  }
+    main .form form button {
+        /* Add styles specific to buttons inside the form */
+    }
   
-  main .form form label {
-    /* Add styles specific to labels inside the form */
-  }
+    main .form form label {
+        /* Add styles specific to labels inside the form */
+    }
   
 ##元件結構
 
@@ -90,10 +90,10 @@ ht-degree: 89%
 ```
 
 * 類別：div 元素有幾個目標為特定元素和樣式的類別。您需要 `{Type}-wrapper` 或 `field-{Name}` 類別以開發 CSS 選取器來設定表單欄位樣式：
-   * {Type}：根據欄位類型識別元件。例如，文字 (text-wrapper)、數字 (number-wrapper)、日期 (date-wrapper)。
-   * {Name}：根據名稱識別元件。欄位名稱只能包含英數字元，名稱中的多個連續破折號將替換為單個破折號 `(-)`，並且欄位名稱中的開頭和結尾破折號將被刪除。例如，名字 (field-first-name field-wrapper)。
-   * {FieldId}：這是欄位的唯一識別碼，會自動產生。
-   * {Required}：它是一個布林值，表示該欄位是否為必填欄位。
+* {Type}：根據欄位類型識別元件。例如，文字 (text-wrapper)、數字 (number-wrapper)、日期 (date-wrapper)。
+* {Name}：根據名稱識別元件。欄位名稱只能包含英數字元，名稱中的多個連續破折號將替換為單個破折號 `(-)`，並且欄位名稱中的開頭和結尾破折號將被刪除。例如，名字 (field-first-name field-wrapper)。
+* {FieldId}：這是欄位的唯一識別碼，會自動產生。
+* {Required}：它是一個布林值，表示該欄位是否為必填欄位。
 * 標籤：的 `label` 元素提供欄位的描述性文字，並使用 `for` 屬性將其與輸入元素相關聯。
 * 輸入：`input` 元素定義要輸入的資料類型。例如，文字、數字、電子郵件。
 * 描述 (選擇性)：`div` 與類別 `field-description` 為使用者提供額外資訊或說明。
