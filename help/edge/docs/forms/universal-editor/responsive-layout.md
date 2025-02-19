@@ -4,9 +4,9 @@ description: 本文說明如何使用通用編輯器中的不同模擬器預覽�
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 hide: true
-source-git-commit: ae0ec8135c7f7f644e2116be9177e7d7677b8dc7
+source-git-commit: 1abc1092872d4a3e0253ddf0388d23e39a6c2de9
 workflow-type: tm+mt
-source-wordcount: '431'
+source-wordcount: '425'
 ht-degree: 18%
 
 ---
@@ -23,16 +23,16 @@ ht-degree: 18%
 
 ## 在不同裝置的回應模式下預覽Forms
 
-通用編輯器提供位於熒幕右上角的&#x200B;**模擬器**&#x200B;圖示![模擬器圖示](/help/edge/docs/forms/universal-editor/assets/emulator.png){height-3%，width=3%}，可讓您預覽不同裝置大小的頁面，並測試回應式設計的行為，以獲得更佳的使用者體驗。
+通用編輯器在熒幕右上角提供&#x200B;**模擬器**&#x200B;圖示，可讓您預覽不同裝置大小的頁面，並測試回應式設計的行為，以獲得更佳的使用者體驗。
 
 若要檢視Universal Editor在不同熒幕大小上呈現表單的方式，請執行以下步驟：
 
 1. 在通用編輯器中開啟表單以進行編輯。
-1. 選取通用編輯器工具列上可用的![模擬器圖示](/help/edge/docs/forms/universal-editor/assets/emulator.png){height=3%，width=3%}，然後按一下模擬器圖示以顯示選項。
+2. 選取通用編輯器工具列上可用的![模擬器圖示](/help/edge/docs/forms/universal-editor/assets/emulator.png){height=2%，width=2%}，然後按一下模擬器圖示以顯示選項。
 
    ![回應模式](/help/edge/docs/forms/universal-editor/assets/universal-editor-emulator.png)
 
-1. 選取在Universal Editor中模擬行動裝置和的選項
+3. 選取在Universal Editor中模擬行動裝置和的選項
 
    ![回應式模式](/help/edge/docs/forms/universal-editor/assets/ue-responsivemode.png){width=40%，height=40%}
 
@@ -47,19 +47,19 @@ ht-degree: 18%
     </tr>
     <tr>
         <td>桌上型電腦</td>
-        <td><img src="/help/edge/docs/forms/universal-editor/assets/universal-editor-desktop.png" alt="案頭模擬器"></td>
+        <td><img src="/help/edge/docs/forms/universal-editor/assets/universal-editor-desktop.png" alt="案頭模擬器" style="width: auto; height: auto"></td>
     </tr>
     <tr>
         <td>平板電腦</td>
-        <td><img src="/help/edge/docs/forms/universal-editor/assets/universal-editor-tab.png" alt="平板電腦模擬器"></td>
+        <td><img src="/help/edge/docs/forms/universal-editor/assets/universal-editor-tab.png" alt="平板電腦模擬器" style="width: auto; height: auto"></td>
     </tr>
     <tr>
         <td>行動</td>
-        <td><img src="/help/edge/docs/forms/universal-editor/assets/universal-editor-mobile.png" alt="行動模擬器" "></td>
+        <td><img src="/help/edge/docs/forms/universal-editor/assets/universal-editor-mobile.png" alt="行動模擬器" style="width: auto; height: auto"></td>
     </tr>
     <tr>
         <td>自訂裝置</td>
-        <td><img src="/help/edge/docs/forms/universal-editor/assets/universal-editor-custom.png" alt="自訂裝置模擬器"></td>
+        <td><img src="/help/edge/docs/forms/universal-editor/assets/universal-editor-custom.png" alt="自訂裝置模擬器" style="width: auto; height: auto"></td>
     </tr>
 </table>
 
