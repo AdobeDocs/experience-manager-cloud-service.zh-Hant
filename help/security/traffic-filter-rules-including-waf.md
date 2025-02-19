@@ -5,9 +5,9 @@ exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4049'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -63,7 +63,7 @@ Adobe 邀請您透過傳送電子郵件至：**aemcs-waf-adopter@adobe.com**，�
 
 例如，在 Apache 層，客戶可以設定 [Dispatcher 模組](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration#configuring-access-to-content-filter)或 [ModSecurity](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/foundation/security/modsecurity-crs-dos-attack-protection) 以限制對特定內容的存取。
 
-如本文所述，流量篩選器規則可以使用Cloud Manager的[設定管道](/help/operations/config-pipeline.md)部署到Adobe Managed CDN。 除了根據 IP 位址、路徑和標頭等屬性的流量篩選規則，或根據設定速率限制的規則之外，客戶也可以授權稱為 WAF 規則的強大流量篩選規則子類別。
+如本文所述，使用 Cloud Manager 的[設定管道](/help/operations/config-pipeline.md)可以將流量篩選規則部署到 Adobe 管理的內容傳遞網路。除了根據 IP 位址、路徑和標頭等屬性的流量篩選規則，或根據設定速率限制的規則之外，客戶也可以授權稱為 WAF 規則的強大流量篩選規則子類別。
 
 ## 建議的流程 {#suggested-process}
 
@@ -103,13 +103,13 @@ Adobe 邀請您透過傳送電子郵件至：**aemcs-waf-adopter@adobe.com**，�
    請參閱[「使用設定管道」](/help/operations/config-pipeline.md#common-syntax)，取得 `data` 節點上方屬性的描述。`kind` 屬性值應設定為 *CDN*，版本應設定為 `1`。
 
 
-1. 如果 WAF 規則已獲得授權，則應在 Cloud Manager 中啟用該功能 (如下所述)，對於新的和現有的計畫案例都適用。
+1. 如果 WAF 規則已獲得授權，您應該在 Cloud Manager 中啟用該功能，如下針對新方案案例和現有方案案例所述。
 
-   1. 若要在新程式上設定WAF，請在[新增生產程式](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)時，核取&#x200B;**安全性**&#x200B;索引標籤上的&#x200B;**WAF-DDOS保護**&#x200B;核取方塊。
+   1. 若要對新方案設定 WAF，在[新增生產方案](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)時，請在「**安全性**」標籤中勾選「**WAF-DDOS 防護**」核取方塊。
 
-   1. 若要在現有的計畫上設定 WAF，[編輯您的計畫](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)並在「**安全性**」標籤隨時取消勾選或勾選 **WAF-DDOS** 選項。
+   1. 若要在現有方案上設定 WAF，[編輯您的方案](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)並在「**安全性**」標籤隨時取消勾選或勾選「**WAF-DDOS**」選項。
 
-1. 在Cloud Manager中建立設定管道，如[設定管道文章](/help/operations/config-pipeline.md#managing-in-cloud-manager)所述。 管道將參照最上層`config`資料夾，並將`cdn.yaml`檔案放在下方，請參閱[使用設定管道](/help/operations/config-pipeline.md#folder-structure)。
+1. 在 Cloud Manager 中建立設定管道，依照[設定管道文章](/help/operations/config-pipeline.md#managing-in-cloud-manager)所述。管道將參考頂層 `config` 資料夾，並將 `cdn.yaml` 檔案放在下方的某個位置，請參閱「[使用設定管道](/help/operations/config-pipeline.md#folder-structure)」。
 
 ## 流量篩選規則語法 {#rules-syntax}
 
