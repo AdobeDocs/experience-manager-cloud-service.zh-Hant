@@ -4,7 +4,7 @@ description: 使用最適化表單主題來設定樣式並為最適化表單提�
 feature: Adaptive Forms, Foundation Components
 exl-id: 99c3d1f7-5756-49d2-98ee-72dd62063110
 role: User, Developer, Admin
-source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
+source-git-commit: 449ff970f3b1e4479309e52d16aacf0979a0ec41
 workflow-type: tm+mt
 source-wordcount: '5558'
 ht-degree: 1%
@@ -43,11 +43,11 @@ ht-degree: 1%
 
 1. 指定表單以預覽此佈景主題&#x200B;]**欄位的**[!UICONTROL &#x200B;預設預覽。 按一下&#x200B;**[!UICONTROL 使用預設值]**&#x200B;以使用預設表單來預覽主題。
 
-1. 指定&#x200B;**[!UICONTROL 設定容器]**。 您可以選擇包含帳戶Adobe字型組態詳細資料的&#x200B;**[!UICONTROL 組態容器]**。 您也可以暫時保留空白選項，稍後再從[佈景主題屬性](#metadata-of-a-theme)指定詳細資料。
+1. 指定&#x200B;**[!UICONTROL 設定容器]**。 您可以選擇包含您帳戶之Adobe字型組態詳細資料的&#x200B;**[!UICONTROL 組態容器]**。 您也可以暫時保留空白選項，稍後再從[佈景主題屬性](#metadata-of-a-theme)指定詳細資料。
 
 1. 按一下&#x200B;**[!UICONTROL [建立]]**，然後按一下&#x200B;**[!UICONTROL [編輯]]**&#x200B;以開啟主題編輯器中的主題，或按一下&#x200B;**[!UICONTROL [完成]]**&#x200B;以返回主題頁面。
 
-### 與Experience Manager6.5 Forms和舊版的主題差異 {#difference-in-themes}
+### Experience Manager 6.5 Forms和舊版的主題差異 {#difference-in-themes}
 
 在Cloud Service例項上建立的主題：
 
@@ -59,13 +59,13 @@ ht-degree: 1%
 
 * 沒有/apps位置的寫入和更新許可權(Forms-user群組沒有/apps位置的寫入和更新許可權)。
 
-* 將建立於[!DNL Experience Manager Forms] 6.5或舊版的主題上傳到Cloud Service執行個體之前，請確定使用者端資料庫位置已設定為`etc/clientlibs/fd/themes`。 如果`etc`資料夾中不存在使用者端資料庫，請手動將位置更新為`etc/clientlibs/fd/themes`。  您可以在[!DNL Experience Manager Forms] 6.5或舊版執行個體上進行變更。 設定使用者端資源庫的位置後，管理員可以將主題上傳到Cloud Service執行個體，或使用「內容轉移工具」將主題從6.5或舊版執行個體移轉至Cloud Service執行個體。
+* 將以[!DNL Experience Manager Forms] 6.5或舊版建立的主題上傳到Cloud Service執行個體之前，請確定使用者端資料庫位置已設為`etc/clientlibs/fd/themes`。 如果`etc`資料夾中不存在使用者端資料庫，請手動將位置更新為`etc/clientlibs/fd/themes`。  您可以在[!DNL Experience Manager Forms] 6.5或舊版執行個體上進行變更。 設定使用者端資料庫的位置後，管理員可以將主題上傳到Cloud Service執行個體，或使用「內容轉移工具」將主題從6.5版或舊版執行個體移轉至Cloud Service執行個體。
 
   此外，請變更類別的名稱。 如果未變更名稱，可能會發生錯誤`theme with same category name exists`。 當您變更類別名稱時，不會影響使用主題的最適化Forms。
 
 ### 下載主題 {#downloading-a-theme}
 
-您可以將主題匯出為zip檔案，並在其他專案或Experience Manager例項中使用這些主題。 若要下載佈景主題：
+您可以將主題匯出為zip檔案，並在其他專案或Experience Manager執行個體中使用這些主題。 若要下載佈景主題：
 
 1. 按一下&#x200B;**[!UICONTROL Adobe Experience Manager]**，按一下&#x200B;**[!UICONTROL Forms]**，然後按一下&#x200B;**[!UICONTROL 主題]**。
 
@@ -109,7 +109,7 @@ ht-degree: 1%
   </tr>
   <tr>
    <td>2.</td>
-   <td>說明</td>
+   <td>描述</td>
    <td>是</td>
    <td>佈景主題的說明。</td>
   </tr>
@@ -149,13 +149,13 @@ ht-degree: 1%
   </tr>
   <tr>
    <td>8.</td>
-   <td>Publish準時</td>
+   <td>準時發佈</td>
    <td>是</td>
    <td>自動發佈佈景主題的時間。</td>
   </tr>
   <tr>
    <td>9.</td>
-   <td>Publish關閉時間</td>
+   <td>發佈關閉時間</td>
    <td>是</td>
    <td>自動取消發佈佈景主題的時間。</td>
   </tr>
@@ -228,7 +228,7 @@ ht-degree: 1%
      當您使用特定的背景顏色自訂所有欄位元件時，所有欄位（例如年齡、名稱和地址）都會繼承背景顏色。 當您選取數值方塊（例如年齡）並縮小其寬度時，所有數值方塊（例如年齡）的寬度都會縮小，家庭中的人數也會減少。 文字方塊的寬度不會變更。
 
    * **狀態：**&#x200B;可讓您自訂處於特定狀態的物件樣式。 例如，當物件處於預設、焦點、停用、暫留或錯誤狀態時，您可以指定物件的外觀。
-   * **屬性類別：**&#x200B;樣式屬性分為不同的類別。 例如，Dimension和位置、文字、背景、邊框和效果。 在每個類別下，您都會提供樣式資訊。 例如，在「背景」底下，您可以提供「背景顏色」和「影像與漸層」。
+   * **屬性類別：**&#x200B;樣式屬性分為不同的類別。 例如，Dimension &amp; Position、文字、背景、邊框和效果。 在每個類別下，您都會提供樣式資訊。 例如，在「背景」底下，您可以提供「背景顏色」和「影像與漸層」。
 
    * **進階：**&#x200B;可讓您將自訂CSS新增至物件，這會覆寫視覺控制項所定義的屬性（如果有重疊）。
 
@@ -491,12 +491,12 @@ ht-degree: 1%
 
 ### 在主題中使用Web Fonts {#using-web-fonts-in-a-theme}
 
-您現在可以在最適化表單<!-- or interactive communication -->中使用網頁服務中可用的字型。 Adobe的Web字型服務[Adobe Fonts](https://fonts.adobe.com/)現成可用的組態。 若要使用Adobe Fonts，請建立套件、在其中新增字型，以及從[Adobe Fonts](https://fonts.adobe.com/)取得套件ID。
+您現在可以在最適化表單<!-- or interactive communication -->中使用網頁服務中可用的字型。 Adobe的Web字型服務[Adobe Fonts](https://fonts.adobe.com/)現成可用為設定。 若要使用Adobe Fonts，請建立套件、在其中新增字型，以及從[Adobe Fonts](https://fonts.adobe.com/)取得套件ID。
 
 若要在Experience Manager中設定Adobe Fonts，請執行以下步驟：
 
-1. 在作者執行個體中，按一下![Adobe Experience Manager](assets/adobeexperiencemanager.png)**[!UICONTROL Adobe Experience Manager ]**>**[!UICONTROL &#x200B;工具&#x200B;]**![槌子](assets/hammer.png) >**[!UICONTROL &#x200B;部署&#x200B;]**>**[!UICONTROL  Cloud Service ]**。
-1. 在&#x200B;**[!UICONTROL Cloud Service]**&#x200B;頁面上，瀏覽並開啟&#x200B;**[!UICONTROL Adobe Fonts]**&#x200B;選項。 開啟設定資料夾，然後按一下[建立]。****
+1. 在作者執行個體中，按一下![Adobe Experience Manager](assets/adobeexperiencemanager.png) **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL 工具]** ![槌子](assets/hammer.png) > **[!UICONTROL 部署]** > **[!UICONTROL 雲端服務]**。
+1. 在&#x200B;**[!UICONTROL 雲端服務]**&#x200B;頁面上，瀏覽並開啟&#x200B;**[!UICONTROL Adobe Fonts]**&#x200B;選項。 開啟設定資料夾，然後按一下[建立]。****
 1. 在&#x200B;**[!UICONTROL 建立組態]**&#x200B;對話方塊中，指定組態的標題，然後按一下&#x200B;**[!UICONTROL 建立]**。
 
    系統會將您重新導向至設定頁面。
@@ -606,7 +606,7 @@ You can use the theme configuration service to add more fonts to the theme edito
 
 ## 對其他最適化表單使用案例的影響 {#impact-on-other-adaptive-form-use-cases}
 
-* **Publish/取消發佈表單：**&#x200B;發佈表單時，套用的主題也會發佈（如果尚未發佈）
+* **發佈/取消發佈表單：**&#x200B;發佈表單時，套用的主題也會發佈（如果尚未發佈）
 * **匯入/匯出表單：**&#x200B;匯入或匯出表單時，也會自動匯入或匯出與其關聯的主題。
 * **表單的參考：**&#x200B;表單參考中的「參考」區段包含額外的佈景主題專案。
 * **表單的上次修改時間：**&#x200B;關聯主題變更時更新。
