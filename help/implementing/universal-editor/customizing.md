@@ -4,10 +4,10 @@ description: 瞭解自訂Universal Editor的各種選項，以支援內容作者
 exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: cdad4954b13f5582bebfd604220da90529231ccd
+source-git-commit: 98879fe30482e042da05a390e75d11c0adf7dba9
 workflow-type: tm+mt
-source-wordcount: '297'
-ht-degree: 10%
+source-wordcount: '334'
+ht-degree: 8%
 
 ---
 
@@ -28,6 +28,16 @@ ht-degree: 10%
 
 ```html
 <meta name="urn:adobe:aue:config:disable" content="publish"/>
+```
+
+## 停用發佈以預覽 {#publish-preview}
+
+某些編寫工作流程可能會排除發行至[預覽服務](/help/sites-cloud/authoring/sites-console/previewing-content.md) （如果有的話）。
+
+因此，可以新增下列中繼資料，在應用程式中完全隱藏發佈視窗中的&#x200B;**預覽**&#x200B;選項。
+
+```html
+<meta name="urn:adobe:aue:config:disable" content="publish-preview"/>
 ```
 
 ## 篩選元件 {#filtering-components}
