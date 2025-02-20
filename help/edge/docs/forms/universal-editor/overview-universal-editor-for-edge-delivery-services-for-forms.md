@@ -6,10 +6,10 @@ role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
 exl-id: d711e0d1-a2fc-4aa6-af87-6e77a7bc5d2e
-source-git-commit: 7a868ddc3d13eaf3b5352e130b2026db64a02723
+source-git-commit: 7d0b735b367189852e4897702738eefc1e87d892
 workflow-type: tm+mt
-source-wordcount: '1108'
-ht-degree: 77%
+source-wordcount: '1038'
+ht-degree: 83%
 
 ---
 
@@ -36,9 +36,8 @@ ht-degree: 77%
 
 | ![發佈/取消發佈](/help/edge/docs/forms/universal-editor/assets/publish-unpublish.svg) | ![回應模式](/help/edge/docs/forms/universal-editor/assets/responsive.svg) | ![自訂元件](/help/edge/docs/forms/universal-editor/assets/custom-components.svg) |
 |:-------------:|:-------------:|:-------------:|
-
 | [**發佈/取消發佈**](/help/edge/docs/forms/universal-editor/publish-forms.md) | [**回應模式**](/help/edge/docs/forms/universal-editor/responsive-layout.md) | [**自訂元件**](/help/edge/docs/forms/universal-editor/create-custom-component.md) |
-| 輕鬆控制表單的可見度 — 只需按幾下滑鼠，即可直接從編輯器發佈或取消發佈表單。 | 設計可在各種裝置（桌上型電腦、平板電腦和行動裝置）上順暢調整的表單。 使用回應式模式來預覽和測試各種熒幕大小的表單。 | 自訂元件可讓開發人員建立適合特定組織使用案例的獨特元素，以擴充表單功能。 |
+| 輕鬆控制表單的可見度 — 只需按幾下滑鼠，即可直接從編輯器發佈或取消發佈表單。 | 設計可跨裝置 (桌上型電腦、平板電腦和行動裝置) 順暢適應的表單。使用回應式模式預覽和測試各種螢幕尺寸的表單。 | 自訂元件功能讓開發人員得以透過建立針對特定組織使用案例而自訂的不重複元素，擴展表單功能。 |
 
 | ![樣式](/help/edge/docs/forms/universal-editor/assets/personalization.svg) | ![預填服務](/help/edge/docs/forms/universal-editor/assets/prefill-services.svg) | ![A/B測試](/help/edge/docs/forms/universal-editor/assets/experimentation-ab-testing.svg) |
 |:-------------:|:-------------:|:-------------:|
@@ -52,9 +51,8 @@ ht-degree: 77%
 
 | ![驗證碼](/help/edge/docs/forms/universal-editor/assets/captcha.svg) | ![內嵌Forms](/help/edge/docs/forms/universal-editor/assets/embedding-forms.svg) | ![感謝您的設定](/help/edge/docs/forms/universal-editor/assets/thank-you.svg) |
 |:-------------:|:-------------:|:-------------:|
-
 | **編輯器自訂** | **內嵌Forms** | [**感謝您的設定**](/help/edge/docs/forms/universal-editor/submit-action.md#show-a-custom-thank-you-message-on-adaptive-form-submission-submit-action-message-ue) |
-| 開發人員可透過UI擴充功能來擴充編輯器的功能，讓量身打造的解決方案符合特定組織需求。 | 使用通用編輯器的內建內嵌元件，直接將表單內嵌至Edge Delivery Services Sites頁面。 | 在成功提交表單後，輕鬆自訂對使用者顯示的認可訊息或頁面。 |
+| 開發人員可以透過使用者介面延伸模組來擴展編輯器的功能，進而開發出符合特定組織需求的量身打造解決方案。 | 使用通用編輯器的內建內嵌元件，直接將表單內嵌至Edge Delivery Services Sites頁面。 | 輕鬆自訂在成功提交表單後，欲呈現給使用者看的確認訊息或頁面。 |
 
 
 <!-- ![Universal Editor](/help/edge/docs/forms/universal-editor/assets/generate-forms.svg)  **WYSIWYG interface for Form creation**: Universal Editor provides a WYSIWYG interface for form design. It provides pre-built component library, responsive design support, and template-based form creation. You can instantly add or remove form fields and modify field properties (like label, data binding, validation). You can also plugin custom form components to Universal Editor.
@@ -246,13 +244,5 @@ In-addtion to pre-built form components, the Universal editor also provides supp
 
 ## 開始建立表單
 
-* [開始使用 AEM Forms 適用的 Edge Delivery Services](/help/edge/docs/forms/tutorial.md)
-* [使用 Google Sheets 或 Microsoft Excel 建立表單](/help/edge/docs/forms/create-forms.md)
-* [設定您的 Google 表單或 Microsoft Excel 檔案以開始接受資料](/help/edge/docs/forms/submit-forms.md)
-* [發佈您的表單並開始收集資料](/help/edge/docs/forms/publish-forms.md)
-* [自訂表單的外觀](/help/edge/docs/forms/style-theme-forms.md)
-* [將可重複區段新增到表單](/help/edge/docs/forms/repeatable-forms.md)
-* [提交表單後顯示自訂感謝訊息](/help/edge/docs/forms/thank-you-page-form.md)
-* [最適化表單區塊元件及其屬性](/help/edge/docs/forms/form-components.md)
-* [實際使用監視](https://www.aem.live/developer/rum#authentication)
+{{universal-editor-see-also}}
 

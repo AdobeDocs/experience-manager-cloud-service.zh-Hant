@@ -6,10 +6,10 @@ role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
 exl-id: 846f56e1-3a98-4a69-b4f7-40ec99ceb348
-source-git-commit: 320ab86bc73e874705d985b927e90eec3cad1cf9
+source-git-commit: ba42a99e6138616ab6a7564c4bf58400844bdcc4
 workflow-type: tm+mt
-source-wordcount: '2236'
-ht-degree: 77%
+source-wordcount: '2166'
+ht-degree: 76%
 
 ---
 
@@ -384,12 +384,4 @@ export { getFullName, days };
 
 ## 另請參閱
 
-* [開始使用 AEM Forms 適用的 Edge Delivery Services](/help/edge/docs/forms/tutorial.md)
-* [使用 Google Sheets 或 Microsoft Excel 建立表單](/help/edge/docs/forms/create-forms.md)
-* [設定您的 Google 表單或 Microsoft Excel 檔案以開始接受資料](/help/edge/docs/forms/submit-forms.md)
-* [發佈您的表單並開始收集資料](/help/edge/docs/forms/publish-forms.md)
-* [自訂表單的外觀](/help/edge/docs/forms/style-theme-forms.md)
-* [將可重複區段新增到表單](/help/edge/docs/forms/repeatable-forms.md)
-* [提交表單後顯示自訂感謝訊息](/help/edge/docs/forms/thank-you-page-form.md)
-* [最適化表單區塊元件及其屬性](/help/edge/docs/forms/form-components.md)
-* [實際使用監視](https://www.aem.live/developer/rum#authentication)
+{{universal-editor-see-also}}
