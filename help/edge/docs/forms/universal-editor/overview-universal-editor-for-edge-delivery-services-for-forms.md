@@ -6,10 +6,10 @@ role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
 exl-id: d711e0d1-a2fc-4aa6-af87-6e77a7bc5d2e
-source-git-commit: 4828e1965514a5ce5cd6d8528c72af33b7b748ea
+source-git-commit: 5680e2381f5826a48e731906aa8aab9d06a0e944
 workflow-type: tm+mt
-source-wordcount: '1116'
-ht-degree: 83%
+source-wordcount: '1109'
+ht-degree: 84%
 
 ---
 
@@ -31,17 +31,17 @@ ht-degree: 83%
 
 | ![WYSIWYG介面](/help/edge/docs/forms/universal-editor/assets/generate-forms.svg) | ![規則編輯器](/help/edge/docs/forms/universal-editor/assets/rule-editor.svg) | ![提交動作](/help/edge/docs/forms/universal-editor/assets/submit-actions.svg) |
 |:-------------:|:-------------:|:-------------:|
-| [**WYSIWYG介面**](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/universal-editor/universal-editor-user-interface) | [**規則編輯器**](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/universal-editor/rule-editor-universal-editor) | [**提交動作**](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/universal-editor/submit-action) |
+| [**WYSIWYG介面**](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md) | [**規則編輯器**](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md) | [**提交動作**](/help/edge/docs/forms/universal-editor/submit-action.md) |
 | 通用編輯器為表單設計提供 WYSIWYG 介面，具有預先建立的元件資料庫、回應式設計、範本式建立和即時欄位修改。 | 規則編輯器讓使用者能夠透過事件驅動的規則、即時驗證，以及藉由輕量級 JavaScript 和 JSON 進行錯誤處理，來建立動態表單互動。 | 提交動作功能支援後端整合、條件式提交邏輯、安全端點和預處理器，能簡化提交工作流程。 |
 
 | ![發佈/取消發佈](/help/edge/docs/forms/universal-editor/assets/publish-unpublish.svg) | ![回應模式](/help/edge/docs/forms/universal-editor/assets/responsive.svg) | ![自訂元件](/help/edge/docs/forms/universal-editor/assets/custom-components.svg) |
 |:-------------:|:-------------:|:-------------:|
-| [**發佈/取消發佈**](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/universal-editor/publish-forms) | **回應模式** | [**自訂元件**](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/universal-editor/create-custom-component) |
+| [**發佈/取消發佈**](/help/edge/docs/forms/universal-editor/publish-forms.md) | [**回應模式**](/help/edge/docs/forms/universal-editor/responsive-layout.md) | [**自訂元件**](/help/edge/docs/forms/universal-editor/create-custom-component.md) |
 | 輕鬆控制表單的可見度 — 只需按幾下滑鼠，即可直接從編輯器發佈或取消發佈表單。 | 設計可跨裝置 (桌上型電腦、平板電腦和行動裝置) 順暢適應的表單。使用回應式模式預覽和測試各種螢幕尺寸的表單。 | 自訂元件功能讓開發人員得以透過建立針對特定組織使用案例而自訂的不重複元素，擴展表單功能。 |
 
 | ![樣式](/help/edge/docs/forms/universal-editor/assets/personalization.svg) | ![預填服務](/help/edge/docs/forms/universal-editor/assets/prefill-services.svg) | ![A/B測試](/help/edge/docs/forms/universal-editor/assets/experimentation-ab-testing.svg) |
 |:-------------:|:-------------:|:-------------:|
-| [**樣式**](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/universal-editor/style-theme-forms) | **預填服務** （即將推出） | [**A/B測試**](https://github.com/adobe/aem-experimentation/blob/main/documentation/experiments.md) |
+| [**樣式**](/help/edge/docs/forms/universal-editor/style-theme-forms.md) | **預填服務** （即將推出） | [**A/B測試**](https://github.com/adobe/aem-experimentation/blob/main/documentation/experiments.md) |
 | 使用CSS進行樣式設定可讓開發人員自訂表單元素的外觀，並建立與網站美學相一致的美觀設計。 | 預填服務會自動使用來自各來源的相關使用者資料填寫表單欄位，減少手動輸入過程並增強使用者體驗。 | A/B測試可讓組織實驗不同的表單設計、版面配置和功能，以識別表現最佳的變體。 |
 
 | ![分析和追蹤](/help/edge/docs/forms/universal-editor/assets/analyticsandtracking.svg) | ![任務管理](/help/edge/docs/forms/universal-editor/assets/adobe-workfront.svg) | ![資料繫結](/help/edge/docs/forms/universal-editor/assets/data-binding.svg) |
@@ -51,7 +51,7 @@ ht-degree: 83%
 
 | ![編輯器自訂](/help/edge/docs/forms/universal-editor/assets/editor-customization.svg) | ![內嵌Forms](/help/edge/docs/forms/universal-editor/assets/embedding-forms.svg) | ![感謝您的設定](/help/edge/docs/forms/universal-editor/assets/thank-you.svg) |
 |:-------------:|:-------------:|:-------------:|
-| **編輯器自訂** | **內嵌Forms** | [**感謝您的設定**](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/universal-editor/submit-action#submit-action-message-ue) |
+| **編輯器自訂** | **內嵌Forms** | [**感謝您的設定**](/help/edge/docs/forms/universal-editor/submit-action.md#show-a-custom-thank-you-message-on-adaptive-form-submission-submit-action-message-ue) |
 | 開發人員可以透過使用者介面延伸模組來擴展編輯器的功能，進而開發出符合特定組織需求的量身打造解決方案。 | 使用通用編輯器的內建內嵌元件，直接將表單內嵌至Edge Delivery Services Sites頁面。 | 輕鬆自訂在成功提交表單後，欲呈現給使用者看的確認訊息或頁面。 |
 
 
