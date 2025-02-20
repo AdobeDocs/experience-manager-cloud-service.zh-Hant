@@ -6,7 +6,7 @@ role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
 exl-id: ac780399-34fe-457d-aaf4-b675656c024d
-source-git-commit: 7f4257433c441eb6b0109f22545b3ef708c9323b
+source-git-commit: b51be0344d0a7bc4958aee4c99e08630aec7ce41
 workflow-type: tm+mt
 source-wordcount: '1828'
 ht-degree: 89%
@@ -845,6 +845,9 @@ main .form form .field-otp input {
 此 CSS 的目標是位於具有類別 `field-otp` 的元素內的所有輸入元素。您表單的 HTML 結構遵循最適化表單區塊的慣例，這表示有一個標有「field-otp」類別的容器包含名為「otp」的欄位。
 
 +++
+
+
+
 
 ## 另請參閱
 
