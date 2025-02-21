@@ -3,10 +3,10 @@ title: 在Cloud Manager中建立Edge Delivery網站
 description: 瞭解如何透過按一下按鈕在Cloud Manager中快速建立Edge Delivery網站。
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 0e1248ee8ceb324ee44dce296135d651d28c9f97
+source-git-commit: 1e4e07d2690bcbd44ffe994a571ffc0a8ae7eb50
 workflow-type: tm+mt
-source-wordcount: '1048'
-ht-degree: 31%
+source-wordcount: '1101'
+ht-degree: 30%
 
 ---
 
@@ -78,7 +78,7 @@ ht-degree: 31%
    | 網站的GitHub存放庫 | <ul><li>在&#x200B;**Edge Delivery網站**&#x200B;清單方塊的&#x200B;**存放庫**&#x200B;欄標題下，按一下您剛建立的網站URL。<br>您可能需要使用您的使用者名稱或電子郵件地址及密碼登入GitHub。</li> |
    | 發佈網站 | <ul><li> 在&#x200B;**Edge Delivery網站**&#x200B;清單方塊中，按一下網站名稱最右邊的![更多圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)以開啟下拉式功能表。</li><li>在下拉式功能表中按一下![發佈檢查圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_PublishCheck_18_N.svg) **發佈網站**。<br>會顯示快顯通知訊息，讓您知道已成功開始發佈網站。</li></ul> |
    | 預覽已發佈的網站 | <ul><li>在&#x200B;**Edge Delivery網站**&#x200B;清單方塊的&#x200B;**網站名稱**&#x200B;欄標題下，按一下您剛建立和發佈的網站URL。<br>在瀏覽器的URL位址列中，請注意，網站的URL結尾是`.page`，表示您看到網站預覽。</li><li>若要即時檢視網站，請在URL位址列中手動將`.page`變更為`.live`。</li></ul> |
-   | 授予使用者存取Google Drive上內容存放庫的許可權 | <ul><li> 在&#x200B;**Edge Delivery網站**&#x200B;清單方塊中，按一下網站名稱最右邊的![更多圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)以開啟下拉式功能表。</li><li>在下拉式功能表中按一下![使用者新增圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_UsersAdd_18_N.svg) **取得內容存放庫的存取權**。</li><li>在&#x200B;**新增共同作業人員至您的網站**&#x200B;對話方塊中，輸入貢獻者的電子郵件地址，然後按一下![核取記號圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Checkmark_18_N.svg)。</li><li>視需要繼續新增投稿人電子郵件。</li><li>完成時，按一下&#x200B;**新增共同作業人員**。</li><li>若要與您的內容共同作業人員共用連結，請在&#x200B;**Collaboration成功新增**&#x200B;對話方塊中，按一下&#x200B;**確定**。<br>共同作業人員會收到電子郵件邀請，要求您按一下電子郵件中的&#x200B;**開啟**，即可加入共用的Google磁碟機資料夾；不需要登入。 他們可以編輯和更新共用資料夾中的檔案，然後按一下Cloud Manager中的&#x200B;**發佈網站**，如上所述。 他們也可以預覽所做的變更，如上所述。</li></ul> |
-   | 授予使用者存取GitHub上基本存放庫的許可權 | <ul><li> 在&#x200B;**Edge Delivery網站**&#x200B;清單方塊中，按一下網站名稱最右邊的![更多圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)以開啟下拉式功能表。</li><li>按一下下拉式功能表中的![程式碼圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Code_18_N.svg) **取得基本存放庫的存取權**。</li><li>在&#x200B;**存取您網站的基本存放庫**&#x200B;對話方塊中，輸入共同作業人員的GitHub使用者名稱，然後按一下![核取記號圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Checkmark_18_N.svg)。</li><li>視需要繼續新增GitHub使用者名稱。</li><li>完成時，按一下&#x200B;**新增共同作業人員**。</li> |
+   | 授予使用者存取Google Drive上內容存放庫的許可權 | <ul><li> 在&#x200B;**Edge Delivery網站**&#x200B;清單方塊中，按一下網站名稱最右邊的![更多圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)以開啟下拉式功能表。</li><li>在下拉式功能表中按一下![使用者新增圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_UsersAdd_18_N.svg) **取得內容存放庫的存取權**。</li><li>在&#x200B;**新增共同作業人員至您的網站**&#x200B;對話方塊中，輸入貢獻者的電子郵件地址，然後按一下![核取記號圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Checkmark_18_N.svg)。</li><li>視需要繼續新增投稿人電子郵件。</li><li>完成時，按一下&#x200B;**新增共同作業人員**。</li><li>若要與您的內容共同作業人員共用連結，請在&#x200B;**Collaboration成功新增**&#x200B;對話方塊中，按一下&#x200B;**確定**。</li><li>在Collaboration成功新增的對話方塊中，按一下![復製圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg)以複製連結，並與您的共同作業人員共用。<br>共用連結前，請確認共同作業人員是以與其IMS帳戶相關聯的電子郵件地址登入。 如果無法取得IMS電子郵件帳戶，則必須使用新增為共同作業人員的電子郵件地址。 如此可確保共同作業人員能夠存取連結，並在Google Drive上檢視要編輯或更新之內容。</li><li>完成編輯後，按一下Cloud Manager中的&#x200B;**發佈網站**，如上所述。<br>或者，預覽所做的變更，如上所述。</li></ul> |
+   | 授予使用者存取GitHub上基本存放庫的許可權 | <ul><li> 在&#x200B;**Edge Delivery網站**&#x200B;清單方塊中，按一下網站名稱最右邊的![更多圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)以開啟下拉式功能表。</li><li>按一下下拉式功能表中的![程式碼圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Code_18_N.svg) **取得基本存放庫的存取權**。</li><li>在&#x200B;**存取您網站的基本存放庫**&#x200B;對話方塊中，輸入共同作業人員的GitHub使用者名稱，然後按一下![核取記號圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Checkmark_18_N.svg)。</li><li>視需要繼續新增GitHub使用者名稱。</li><li>完成時，按一下&#x200B;**新增共同作業人員**。</li>使用者必須授與存取權給自己的GitHub使用者名稱，才能檢視存放庫。 |
 
 

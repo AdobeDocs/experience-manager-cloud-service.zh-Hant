@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的運作方式以及該軟體可以為您做哪些事。
 breadcrumb-title: 使用手冊
 user-guide-title: 'AEM as a Cloud Service '
-source-git-commit: 1f77a8adc461a78bb40efc608d39686e67a9811a
+source-git-commit: 1e4e07d2690bcbd44ffe994a571ffc0a8ae7eb50
 workflow-type: tm+mt
-source-wordcount: '6083'
+source-wordcount: '6091'
 ht-degree: 99%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 99%
    + [新增功能與不同之處](/help/overview/what-is-new-and-different.md)
    + [術語 - 雲端新功能](/help/overview/terminology.md)
    + [AEM as a Cloud Service 架構簡介](/help/overview/architecture.md)
-   + [支援的使用者端平台](/help/overview/supported-platforms.md)
+   + [支援的用戶端平台](/help/overview/supported-platforms.md)
    + [SEO 和 URL 管理](/help/overview/seo-and-url-management.md)
    + [Unified Shell 上的 AEM as a Cloud Service](/help/overview/aem-cloud-service-on-unified-shell.md)
    + [評估 KPI](/help/overview/assessing-kpis.md)
@@ -374,7 +374,7 @@ ht-degree: 99%
          + [樣式系統](/help/sites-cloud/authoring/page-editor/style-system.md)
          + [取消復原還原限制](/help/sites-cloud/authoring/page-editor/undo-redo.md)
       + 通用編輯器 {#universal-editor}
-         + [導覽](/help/sites-cloud/authoring/universal-editor/navigation.md)
+         + [瀏覽](/help/sites-cloud/authoring/universal-editor/navigation.md)
          + [製作](/help/sites-cloud/authoring/universal-editor/authoring.md)
          + [發佈](/help/sites-cloud/authoring/universal-editor/publishing.md)
          + [繼承](/help/sites-cloud/authoring/universal-editor/inheritance.md)
@@ -694,7 +694,7 @@ ht-degree: 99%
       + [與 Adobe Express 原生整合](/help/assets/native-integration-adobe-express.md)
 
    + 與 Creative Cloud {#integration-creative-cloud} 整合
-      + [將 AEM Assets 連接到 Creative Cloud](/help/assets/connect-assets-with-creative-cloud.md)
+      + [將 AEM Assets 連結到 Creative Cloud](/help/assets/connect-assets-with-creative-cloud.md)
 
 + Forms {#forms}
    + 概觀 {#forms-overview}
@@ -734,13 +734,13 @@ ht-degree: 99%
             + [針對現有的最適化表單設定 Adobe Marketo Engage 資料來源](/help/forms/use-marketo-engage-data-source-in-form.md)
             + [針對現有表單設定提交至 Marketo Engage 的動作](/help/forms/submit-adaptive-form-to-marketo-engage.md)
       + 表單資料模式 {#use-form-data-model}
-         + [將 AEM Forms 連接到資料庫或資料來源](/help/forms/data-integration.md)
+         + [將 AEM Forms 連結到資料庫或資料來源](/help/forms/data-integration.md)
          + [設定資料來源](/help/forms/configure-data-sources.md)
          + [設定 [!DNL Microsoft Dynamics] OData](/help/forms/ms-dynamics-odata-configuration.md)
-         + [使用 OAuth 2.0 用戶端憑證流將最適化表單連接到 Salesforce 應用程式](/help/forms/aem-forms-salesforce-integration.md)
+         + [使用 OAuth 2.0 用戶端憑證流將最適化表單連結到 Salesforce 應用程式](/help/forms/aem-forms-salesforce-integration.md)
          + [設定 [!DNL Azure] 儲存空間](/help/forms/configure-azure-storage.md)
          + [設定 [!DNL Microsoft Dynamics 365] 雲端服務](/help/forms/configure-msdynamics.md)
-         + [設定Salesforce雲端服務](/help/forms/configure-salesforce.md)
+         + [設定 Salesforce 雲端服務](/help/forms/configure-salesforce.md)
          + [建立表單資料模型](/help/forms/create-form-data-models.md)
          + [處理表單資料模型](/help/forms/work-with-form-data-model.md)
          + [使用表單資料模型](/help/forms/using-form-data-model.md)
@@ -764,10 +764,10 @@ ht-degree: 99%
             + [為最適化表單設定提交動作](/help/forms/configure-submit-actions-core-components.md)
             + [將最適化表單提交至 Azure Blob 儲存體](/help/forms/configure-submit-action-azure-blob-storage.md)
             + [將最適化表單提交至 Microsoft](/help/forms/configure-submit-action-onedrive.md)
-            + 將最適化表單連線至Microsoft® SharePoint{#connect-to-sharepoint}
-               + [將最適化表單連接到 Microsoft](/help/forms/configure-submit-action-sharepoint.md)
-               + [提交至SharePoint檔案庫](/help/forms/connect-forms-to-sharepoint-document-library.md)
-               + [提交至SharePoint清單](/help/forms/connect-forms-to-sharepoint-list.md)
+            + 將最適化表單連結到 Microsoft® SharePoint{#connect-to-sharepoint}
+               + [將最適化表單連結到 Microsoft](/help/forms/configure-submit-action-sharepoint.md)
+               + [提交至 SharePoint 文件庫](/help/forms/connect-forms-to-sharepoint-document-library.md)
+               + [提交至 SharePoint 清單](/help/forms/connect-forms-to-sharepoint-list.md)
                + [使用授權範圍設定具有有限存取權限的 SharePoint 網站](/help/forms/configure-sharepoint-site-limited-access.md)
             + [將 AEM 最適化表單與 AEM 工作流程整合](/help/forms/configure-submit-action-workflow.md)
             + [設定提交到最適化表單的 REST 端點提交動作](/help/forms/configure-submit-action-restpoint.md)
@@ -1022,7 +1022,7 @@ ht-degree: 99%
       + [重新導向](/help/edge/docs/redirects.md)
    + 建立表單 {#build-forms}
       + [概觀](/help/edge/docs/forms/overview.md)
-      + [Edge Delivery Services Forms如何運作？](/help/edge/docs/forms/universal-editor/edge-delivery-services-form.md)
+      + [Edge Delivery Services 表單如何運作？](/help/edge/docs/forms/universal-editor/edge-delivery-services-form.md)
       + 開始使用 {#getting-started-edge-delivery-services-forms}
          + [快速入門](/help/edge/docs/forms/tutorial.md)
          + [使用 Google Sheets 或 Microsoft Excel 建立表單](/help/edge/docs/forms/create-forms.md)
@@ -1039,11 +1039,11 @@ ht-degree: 99%
          + [概觀：Edge Delivery Services for Forms 的通用編輯器](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
          + [快速入門](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
          + [瞭解WYSIWYG介面](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md)
-         + [使用規則編輯器將規則新增到](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
+         + [使用規則編輯器來新增規則](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
          + [建立自訂元件](/help/edge/docs/forms/universal-editor/create-custom-component.md)
-         + [在表單中使用reCAPTCHA](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
+         + [在表單中使用 reCAPTCHA](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
          + [提交動作](/help/edge/docs/forms/universal-editor/submit-action.md)
-         + [發佈Forms](/help/edge/docs/forms/universal-editor/publish-forms.md)
+         + [發佈表單](/help/edge/docs/forms/universal-editor/publish-forms.md)
          + [自訂表單樣式](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
          + [回應式模式](/help/edge/docs/forms/universal-editor/responsive-layout.md)
       + 功能 {#advanced-features-edge-delivery-services-forms}
@@ -1151,7 +1151,7 @@ ht-degree: 99%
 + 實作 {#implementing}
    + [為 AEM as a Cloud Service 實作應用程式](/help/implementing/home.md)
    + 使用 Cloud Manager {#using-cloud-manager}
-      + [導覽](/help/implementing/cloud-manager/navigation.md)
+      + [瀏覽](/help/implementing/cloud-manager/navigation.md)
       + [AEM 啟動台](/help/implementing/cloud-manager/aem-home.md)
       + 方案 {#programs}
          + [方案和方案類型](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
@@ -1206,6 +1206,7 @@ ht-degree: 99%
       + Edge Delivery Sites {#edge-delivery-sites}
          + [Cloud Manager 的 Edge Delivery Services 簡介](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)
          + [新增 Edge Delivery 網站至 Cloud Manager](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md)
+         + [在Cloud Manager中建立Edge Delivery網站](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md)
          + [為 Edge Delivery 網站設定推播驗證](/help/implementing/cloud-manager/edge-delivery/cdn-setup-push-invalidation.md)
          + [在 Cloud Manager 中管理 Edge Delivery 網站](/help/implementing/cloud-manager/edge-delivery/manage-edge-delivery-sites.md)
       + 網域設定 {#custom-domain-names}
