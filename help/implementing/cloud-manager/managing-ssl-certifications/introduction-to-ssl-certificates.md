@@ -8,7 +8,7 @@ role: Admin, Architect, Developer
 source-git-commit: a91b15836d0ca0308fbc860ec57aacda908f610d
 workflow-type: tm+mt
 source-wordcount: '1088'
-ht-degree: 16%
+ht-degree: 18%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 16%
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_sslcert"
 >title="管理 SSL 憑證"
->abstract="瞭解Cloud Manager如何提供自助服務工具來安裝和管理SSL憑證，以便為使用者保護您的網站。 Cloud Manager 使用平台 TLS 服務來管理客戶擁有並從第三方憑證授權單位獲得的 SSL 憑證和私密金鑰。"
+>abstract="了解 Cloud Manager 如何利用自助服務工具來安裝和管理 SSL 憑證，協助您的使用者保護您的網站。Cloud Manager 使用平台 TLS 服務來管理客戶擁有並從第三方憑證授權單位獲得的 SSL 憑證和私密金鑰。"
 >additional-url="https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates" text="檢視、更新和取代 SSL 憑證"
 >additional-url="https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates" text="檢查 SSL 憑證狀態"
 
@@ -38,7 +38,7 @@ ht-degree: 16%
 
 Cloud Manager提供自助服務工具來安裝和管理SSL憑證，確保使用者的網站安全性。 Cloud Manager支援兩種管理憑證的模式。
 
-| | 模型 | 說明 |
+| | 模型 | 描述 |
 | --- | --- | --- |
 | A | **[Adobe管理的SSL憑證(DV)](#adobe-managed)** | Cloud Manager可讓使用者設定Adobe所提供的DV （網域驗證）憑證，以進行快速網域設定。 |
 | B | **[客戶管理的SSL憑證(OV/EV)](#customer-managed)** | Cloud Manager提供平台TLS （傳輸層安全性）服務，可讓您管理您所擁有的OV和EV SSL憑證，以及來自協力廠商憑證授權單位的私密金鑰，例如&#x200B;*Let&#39;s Encrypt*。 |
@@ -53,15 +53,15 @@ Cloud Manager提供自助服務工具來安裝和管理SSL憑證，確保使用�
 >
 >[若要新增自訂網域並與環境建立關聯](/help/implementing/cloud-manager/custom-domain-names/introduction.md)，您必須擁有涵蓋網域的有效SSL憑證。
 
-### Adobe管理(DV) SSL憑證 {#adobe-managed}
+### Adobe管理的(DV) SSL憑證 {#adobe-managed}
 
 DV憑證是最基本的SSL憑證等級，通常用於測試目的或透過基本加密保護網站。 DV憑證可在[生產程式和沙箱程式](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)中使用。
 
-建立DV憑證後，Adobe每三個月會自動更新一次，除非憑證被刪除。
+建立DV憑證後，Adobe會每三個月自動更新一次，除非該憑證被刪除。
 
 ### 客戶管理的(OV/EV) SSL憑證 {#customer-managed}
 
-OV和EV憑證提供CA驗證的資訊。 這類資訊可協助使用者評估網站所有者、電子郵件寄件者或程式碼或PDF檔案的數位簽署者是否可信。 DV 憑證不允許此類所有權驗證。
+OV和EV憑證提供CA驗證的資訊。 這類資訊可協助使用者評估網站所有者、電子郵件寄件者或程式碼或PDF檔案的數位簽署者是否值得信任。 DV 憑證不允許此類所有權驗證。
 
 OV和EV另外在Cloud Manager中透過DV憑證提供這些功能。
 
