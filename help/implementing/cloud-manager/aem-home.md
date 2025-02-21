@@ -1,5 +1,5 @@
 ---
-title: Adobe Experience Manager Launchpad （率先採用）
+title: 關於AEM Launchpad &amp；ndash；早期採用者
 description: 瞭解Adobe Experience Manager Launchpad頁面。
 solution: Experience Manager
 feature: Cloud Manager, Developing
@@ -7,14 +7,14 @@ role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
 exl-id: 1bfa47e1-fb2f-4b68-ac69-4618a9e4a5f4
-source-git-commit: 2c9dfbd55cbeb3f5a89388b259e5a9a280a55fb9
+source-git-commit: 9368fb64b1dd9ce83094117e184b532119ce22e4
 workflow-type: tm+mt
-source-wordcount: '390'
+source-wordcount: '391'
 ht-degree: 7%
 
 ---
 
-# 關於Adobe Experience Manager Launchpad {#aem-launchpad}
+# 關於AEM Launchpad — 率先採用者 {#aem-launchpad}
 
 AEM Launchpad為管理Adobe Experience Manager中的內容、資產和網站引進了一個集中的起點。 AEM Launchpad旨在提供個人化體驗，可讓您根據角色和目標順暢地在AEM生態系統中導覽。 它以指南的方式提供關鍵的深入解析和建議的動作，協助您有效率地達成目標。AEM Launchpad的版面配置清楚且以人物為導向，可確保快速存取基本工具，支援所有AEM功能簡化且有效的體驗。
 
