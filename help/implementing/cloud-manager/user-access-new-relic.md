@@ -5,10 +5,10 @@ exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: a078d45f81fc7081012ebf24fa8f46dc1a218cd7
+source-git-commit: 26a80ce68c5f6eee032ded355a8e5747ad6449a7
 workflow-type: tm+mt
-source-wordcount: '1818'
-ht-degree: 42%
+source-wordcount: '1809'
+ht-degree: 41%
 
 ---
 
@@ -179,29 +179,30 @@ Adobe 非常重視應用程式的監控、可用性和效能。AEM as a Cloud Se
 
 >[!NOTE]
 >
->如果在您的New Relic One子帳戶中超過90天未偵測到任何活動，則APM代理程式會停止。
+>如果在您的New Relic One子帳戶中超過30天未偵測到任何活動，則APM代理程式會停止。
 >
 >請依照本檔案中[啟用您的New Relic One子帳戶](#activate-sub-account)一節中的相同步驟，重新啟用您的New Relic One子帳戶。
 
-如需有關您AEM as a Cloud Service計畫之New Relic One方案的更多說明或其他指引，請透過[AEM支援入口網站](https://helpx.adobe.com/tw/enterprise/using/support-for-experience-cloud.html)開啟支援票證。
+如需有關您AEM as a Cloud Service計畫之New Relic One產品的更多說明或其他指引，請透過[AEM支援入口網站](https://helpx.adobe.com/tw/enterprise/using/support-for-experience-cloud.html)開啟支援票證。
 
 ## 常見問題 {#faqs}
 
-+++**Adobe使用New Relic One監視什麼？** {#adobe-monitor}
++++**Adobe使用New Relic One監控什麼？** {#adobe-monitor}
 
 Adobe 透過 New Relic One 的 Java 外掛程式監視 AEM as a Cloud Service 創作、發佈和預覽 (如果可用) 服務。Adobe 支援跨非生產和生產 AEM as a Cloud Service 環境的自訂 New Relic One APM 遙測和監控。
 
-您的 New Relic One 帳戶附加到 Adobe 維護的主帳戶，並有多個應用程式向其中報告：每個 AEM as a Cloud Service環境三個。
+您的New Relic One帳戶附加至Adobe維護的主要帳戶，並有多個應用程式向其中報告；每個AEM as a Cloud Service環境三個。
 
 * 每個環境一個作者服務應用程式
-* 每個環境一個`Publish`服務應用程式(包括Golden Publish)
+* 每個環境一個`Publish`服務應用程式（包括Golden Publish）
 * 每個環境一個預覽服務應用程式
 
 注意：
 
 * 每個應用程式使用一個授權密鑰。
 * AEM as a Cloud Service環境僅向一個 New Relic One 帳戶報告。
-* New Relic One的完整監控量度和事件會保留三個月。 &lt;!— CQDOC-22238 — 從七天更新至三個月。 >
+* New Relic One的完整監控量度和事件會保留三個月。
+
 +++
 
 +++**Adobe是否從New Relic One傳送警示通知？** {#alerting-new-relic}
@@ -235,5 +236,5 @@ Adobe支援使用New Relic One和其他工具監視AEM as a Cloud Service，而�
 
 +++**我的New Relic One帳戶的APM代理程式已停止。 發生什麼事？** {#deactivated}
 
-如果 90 天或更久沒有偵測到任何活動，[APM 代理會停止](#limitations)。請依照本檔案中[啟用您的New Relic One子帳戶](#activate-sub-account)一節中的相同步驟，重新啟用您的New Relic One子帳戶。
+如果 30 天或更久沒有偵測到任何活動，[APM 代理會停止](#limitations)。請依照本檔案中[啟用您的New Relic One子帳戶](#activate-sub-account)一節中的相同步驟，重新啟用您的New Relic One子帳戶。
 +++
