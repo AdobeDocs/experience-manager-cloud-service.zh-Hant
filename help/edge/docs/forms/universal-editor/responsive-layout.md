@@ -4,19 +4,20 @@ description: 本文說明如何使用通用編輯器中的不同模擬器預覽�
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 hide: true
-source-git-commit: ba42a99e6138616ab6a7564c4bf58400844bdcc4
+hidefromtoc: true
+source-git-commit: 0d28009332feccb4552e2cc42d7b1a8da43d579c
 workflow-type: tm+mt
 source-wordcount: '360'
 ht-degree: 2%
 
 ---
 
-
 # WYSIWYG製作中的回應式模式
 
 [通用編輯器](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)可讓您使用不同的模擬器預覽Edge Delivery Services Forms，以檢視表單在製作過程中的外觀。
 
 回應式模式可讓開發人員設計可自動適應不同熒幕大小的版面，包括桌上型電腦、平板電腦和行動裝置。 Universal Editor支援適用於桌上型電腦、平板電腦和行動裝置的模擬器。 您可以根據熒幕大小設定高度和寬度，並執行下列動作：
+
 * 設定方向
 * 指定寬度和高度
 * 變更方向
@@ -68,6 +69,3 @@ ht-degree: 2%
 ## 另請參閱
 
 {{universal-editor-see-also}}
-
-
-

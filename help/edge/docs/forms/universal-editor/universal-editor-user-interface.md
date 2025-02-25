@@ -4,11 +4,12 @@ description: 本教學課程可協助您啟動並執行通用編輯器介面。 
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 hide: true
+hidefromtoc: true
 exl-id: 90321e81-bb55-48b2-b329-4944bf926309
-source-git-commit: ba42a99e6138616ab6a7564c4bf58400844bdcc4
+source-git-commit: 0d28009332feccb4552e2cc42d7b1a8da43d579c
 workflow-type: tm+mt
 source-wordcount: '1425'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -107,7 +108,7 @@ Experience Cloud標題位於主控台頂端。 它會提供Experience Cloud中�
 
   >[!NOTE]
   >
-  > * 在Universal Editor中，預設不會啟用規則編輯器擴充功能。 若要啟用規則編輯器擴充功能，請從您的正式電子郵件識別碼寄信至[aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)。
+  > * 在通用編輯器中，規則編輯器延伸模組預設為未啟用。若要啟用規則編輯器延伸模組，請從您的官方電子郵件 ID 寫信至 [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) 來和我們聯絡。
   > * 若要瞭解如何建立規則，請參閱文章[ WYSIWYG Authoring中的規則編輯器簡介](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)。
 
 * **編輯表單屬性**
