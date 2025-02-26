@@ -4,9 +4,9 @@ description: 瞭解最佳實務建議，瞭解如何透過利用單一程式碼�
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: f6b861ed-18e4-4c81-92d2-49fadfe4669a
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: c9d0d3cd7e18b56db36a379b63f8fb48e18a40db
 workflow-type: tm+mt
-source-wordcount: '1261'
+source-wordcount: '1260'
 ht-degree: 2%
 
 ---
@@ -19,11 +19,11 @@ ht-degree: 2%
 
 [Multi Site Manager (MSM)](/help/sites-cloud/administering/msm/overview.md)及其Live Copy功能可讓您在多個位置使用相同的網站內容，同時允許變化。 您可以製作內容一次，並建立即時副本。 MSM會維護您的來源內容與其即時副本之間的即時關係，以便在您變更來源內容時，來源與即時副本可以同步。
 
-您可以使用MSM為您的品牌建立跨地區設定和語言的完整內容結構，並集中撰寫內容。 接著，Edge Delivery Services即可利用中央程式碼庫，提供每個當地語系化的網站。
+您可以使用MSM為您的品牌建立跨地區設定和語言的完整內容結構，並集中撰寫內容。 接著，您就可以利用中央程式碼庫，透過Edge Delivery Services提供每個當地語系化的網站。
 
 ## 要求 {#requirements}
 
-若要在重複使用案例中設定MSM，您必須先完成一些工作。
+若要在重複使用案例中設定MSM，您必須先完成下列工作：
 
 * 本檔案假設您已根據[使用Edge Delivery Services進行WYSIWYG編寫的開發人員快速入門手冊](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)為專案建立網站。
 * 您必須已[啟用專案的重新導向功能](/help/edge/wysiwyg-authoring/repoless.md)。
@@ -49,7 +49,7 @@ ht-degree: 2%
 /content/wknd/de/en
 ```
 
-`language-masters`中的內容是本地化網站的即時副本來源：德國(`de`)和瑞士(`ch`)。 本檔案的目標是建立所有針對每個本地化網站使用相同程式碼庫的Edge Delivery Services網站。
+`language-masters`中的內容是本地化網站的即時副本來源：德國(`de`)和瑞士(`ch`)。 本檔案的目標是建立Edge Delivery Services網站，讓所有網站都針對每個當地語系化網站使用相同的程式碼基底。
 
 ## 設定 {#configuration}
 
@@ -108,10 +108,10 @@ ht-degree: 2%
 1. 擷取您的驗證權杖和計畫的技術帳戶。
    * 請參閱檔案&#x200B;**跨網站重複使用程式碼**，以取得如何[取得您的存取權杖](/help/edge/wysiwyg-authoring/repoless.md#access-token)以及您程式的[技術帳戶](/help/edge/wysiwyg-authoring/repoless.md#access-control)的詳細資料。
 1. 對設定服務進行下列呼叫，以建立新網站。 請考慮：
-   * POSTURL中的專案名稱必須是您正在建立的新網站名稱。 在此範例中，它是`wknd-ch`。
+   * POST URL中的專案名稱必須是您正在建立的新網站名稱。 在此範例中，它是`wknd-ch`。
    * `code`設定應該與您用於初始專案建立的設定相同。
    * `content` > `source` > `url`必須調整為您正在建立的新網站的名稱。 在此範例中，它是`wknd-ch`。
-   * 也就是說，POSTURL中的網站名稱必須與`content` > `source` > `url`相同。
+   * 亦即，POST URL中的網站名稱必須與`content` > `source` > `url`相同。
    * 調整`admin`區塊以定義應具備網站完整管理存取權的使用者。
       * 這是一系列電子郵件地址。
       * 可以使用萬用字元`*`。
@@ -177,14 +177,14 @@ ht-degree: 2%
 
 重複這些步驟以建立其他本地化的網站。 若是wknd，您也需要為德文網站建立`wknd-de`網站。
 
-### 為您本地化的頁面更新AEM中的雲端設定 {#update-cloud-configurations}
+### 為您的本地化頁面更新AEM中的雲端設定 {#update-cloud-configurations}
 
-您在AEM中的頁面必須設定為使用您在上一節中建立的新Edge Delivery Sites，才能進行當地語系化顯示。 在此範例中，`/content/wknd/ch`下的內容需要知道如何使用您建立的`wknd-ch`網站。 `/content/wknd/de`下的內容同樣需要使用`wknd-de`網站。
+您在AEM中的頁面必須設定為使用您在上一節中建立的新Edge Delivery網站，才能進行當地語系化顯示。 在此範例中，`/content/wknd/ch`下的內容需要知道如何使用您建立的`wknd-ch`網站。 `/content/wknd/de`下的內容同樣需要使用`wknd-de`網站。
 
-1. 登入AEM作者執行個體並移至&#x200B;**工具** -> **Cloud Service** -> **Edge Delivery Services設定**。
+1. 登入AEM作者執行個體並移至&#x200B;**工具** -> **雲端服務** -> **Edge Delivery Services設定**。
 1. 選取為您的專案自動建立的設定，然後選取為當地語系化頁面建立的資料夾。 在此案例中，即為瑞士(`ch`)。
 1. 在工具列中點選或按一下&#x200B;**建立** > **組態**。
-1. 在&#x200B;**Edge Delivery Services組態**&#x200B;視窗中：
+1. 在&#x200B;**Edge Delivery Services設定**&#x200B;視窗中：
    * 在&#x200B;**組織**&#x200B;欄位中提供您的GitHub組織。
    * 將場地名稱變更為您在前一節中建立的場地名稱。 在這種情況下，應該是`wknd-ch`。
    * 將專案型別變更為&#x200B;**aem.live，使用重新設定設定**。
@@ -200,6 +200,6 @@ ht-degree: 2%
 1. 點選或按一下工具列中的&#x200B;**編輯**。
 1. 確保頁面在通用編輯器中正確轉譯，並使用與網站根目錄相同的程式碼。
 1. 變更頁面並重新發佈。
-1. 在`https://main--wknd-ch--<your-github-org>.aem.page`造訪您的新Edge Delivery Services網站以取得該本地化頁面。
+1. 請造訪您新的Edge Delivery Services網站，在`https://main--wknd-ch--<your-github-org>.aem.page`取得該當地語系化頁面。
 
 如果看到您所做的變更，表示您的MSM設定正常運作。

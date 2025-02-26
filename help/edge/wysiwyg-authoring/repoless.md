@@ -4,9 +4,9 @@ description: 如果您有許多相似的網站，大部分外觀和行為相同�
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: a6bc0f35-9e76-4b5a-8747-b64e144c08c4
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: c9d0d3cd7e18b56db36a379b63f8fb48e18a40db
 workflow-type: tm+mt
-source-wordcount: '971'
+source-wordcount: '976'
 ht-degree: 2%
 
 ---
@@ -31,13 +31,13 @@ AEM支援從相同程式碼基底執行多個網站，而不需建立多個GitHu
 
 若要利用此功能，請確定您已完成下列操作。
 
-* 依照檔案[使用Edge Delivery Services進行WYSIWYG編寫的開發人員快速入門手冊](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)，您的網站已完整設定。
+* 依照檔案[使用Edge Delivery Services編寫WYSIWYG的開發人員快速入門手冊](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)，您的網站已完整設定。
 * 您至少要執行AEM as a Cloud Service 2024.08。
 
-您還需要要求Adobe為您設定下列專案。 透過您的Slack管道聯絡或提出支援問題以要求Adobe進行這些變更：
+您還需要要求Adobe為您設定下列專案。 透過您的Slack管道聯絡或提出支援問題，以請求Adobe進行這些變更：
 
 * 要求啟用您環境的[aem.live設定服務](https://www.aem.live/docs/config-service-setup#prerequisites)，而且您已設定為管理員。
-* 請依Adobe要求為您的方案啟用重新導向功能。
+* 請求由Adobe為您的方案啟用重新導向功能。
 * 要求Adobe為您建立組織。
 
 ## 啟動重新導向功能 {#activate}
@@ -56,7 +56,7 @@ AEM支援從相同程式碼基底執行多個網站，而不需建立多個GitHu
 
 您首先需要存取Token才能使用設定服務，並針對重新導向使用案例進行設定。
 
-1. 移至`https://admin.hlx.page/login`並使用`login_adobe`位址登入Adobe識別提供者。
+1. 移至`https://admin.hlx.page/login`並使用`login_adobe`位址登入Adobe身分提供者。
 1. 您將會轉寄到`https://admin.hlx.page/profile`。
 1. 使用瀏覽器的開發人員工具，從`admin.hlx.page`頁面設定的JSON Web權杖Cookie複製`x-auth-token`的值。
 
@@ -161,9 +161,9 @@ AEM支援從相同程式碼基底執行多個網站，而不需建立多個GitHu
 
 現在您已準備好在AEM中對Edge Delivery Services進行必要的變更。
 
-1. 登入AEM作者執行個體並移至&#x200B;**工具** -> **Cloud Service** -> **Edge Delivery Services組態**，然後選取為您的網站自動建立的組態，並點選或按一下工具列中的&#x200B;**屬性**。
-1. 在&#x200B;**Edge Delivery Services組態**&#x200B;視窗中，將專案型別變更為&#x200B;**aem.live （使用重新設定組態）**，然後點選或按一下&#x200B;**儲存並關閉**。
-   ![Edge Delivery Services組態](/help/edge/wysiwyg-authoring/assets/repoless/edge-delivery-services-configuration.png)
+1. 登入AEM作者執行個體並移至&#x200B;**工具** -> **雲端服務** -> **Edge Delivery Services設定**，然後選取為您的網站自動建立的設定，並點選或按一下工具列中的&#x200B;**屬性**。
+1. 在&#x200B;**Edge Delivery Services設定**&#x200B;視窗中，將專案型別變更為&#x200B;**aem.live （使用重新設定設定）**，然後點選或按一下&#x200B;**儲存並關閉**。
+   ![Edge Delivery Services設定](/help/edge/wysiwyg-authoring/assets/repoless/edge-delivery-services-configuration.png)
 1. 使用通用編輯器返回您的網站，並確定它仍正確呈現。
 1. 修改部分內容並重新發佈。
 1. 請造訪您在`https://main--<your-aem-project>--<your-github-org>.aem.page/`發佈的網站，並確認變更已正確反映。
@@ -176,6 +176,7 @@ AEM支援從相同程式碼基底執行多個網站，而不需建立多個GitHu
 
 * [無存放庫多網站管理](/help/edge/wysiwyg-authoring/repoless-msm.md)
 * [無存放庫階段及生產環境](/help/edge/wysiwyg-authoring/repoless-stage-prod.md)
+* [用於內容製作的網站驗證](/help/edge/wysiwyg-authoring/site-authentication.md)
 
 ## 疑難排解 {#troubleshooting}
 
