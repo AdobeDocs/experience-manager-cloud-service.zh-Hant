@@ -5,23 +5,24 @@ exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: a078d45f81fc7081012ebf24fa8f46dc1a218cd7
+source-git-commit: cb9707e4f53e32ed6e5aec244b1ef2240fcf376c
 workflow-type: tm+mt
-source-wordcount: '1047'
-ht-degree: 12%
+source-wordcount: '1098'
+ht-degree: 11%
 
 ---
 
 
 # 建立生產計畫 {#create-production-program}
 
-生產計畫適用於熟悉AEM和Cloud Manager、準備好編寫、建置和測試計畫碼的使用者，目標是將其部署以處理即時流量。
+生產計畫適用於熟悉Adobe Experience Manager (AEM)和Cloud Manager、準備好編寫、建置和測試計畫碼的使用者，目標是將其部署以處理即時流量。
 
 在檔案[瞭解計畫和計畫型別](program-types.md)中瞭解有關計畫型別的更多資訊。
 
 ## 建立生產計畫 {#create}
 
-根據您組織的權益，新增您的方案時可能會看到[其他選項](#options)。
+根據您組織的權益，在新增程式時，您可能會看到其他生產程式選項。
+檢視[其他生產計畫選項](#options)。
 
 **若要建立生產計畫：**
 
@@ -31,7 +32,7 @@ ht-degree: 12%
 
    ![Cloud Manager 登陸頁面](assets/log-in.png)
 
-1. 在&#x200B;*讓我們建立您的程式*&#x200B;精靈，在&#x200B;**程式名稱**&#x200B;文字欄位中，輸入您要程式的名稱。
+1. 在&#x200B;*讓我們建立您的程式*&#x200B;精靈，在&#x200B;**程式名稱**&#x200B;文字欄位中，輸入您想要的程式名稱。
 
 1. 在&#x200B;**方案目標**&#x200B;下，選取![全域圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Globe_18_N.svg)**為生產設定**。
 
@@ -73,7 +74,7 @@ ht-degree: 12%
 
 ## 其他生產計畫選項 {#options}
 
-根據您的組織可用的權益，當您建立生產計畫時，可能有其他選項可供您使用。
+根據您的組織可用的權益，當您建立生產計畫時，可能有以下其他選項可供您使用。
 
 ### 安全性 {#security}
 
@@ -83,9 +84,9 @@ ht-degree: 12%
 
 **安全性**&#x200B;索引標籤提供選項來啟用您的生產程式的&#x200B;**HIPAA**&#x200B;或&#x200B;**WAF-DDOS保護**，或兩者皆啟用。
 
-符合HIPAA規範的Adobe和WAF-DDOS （Web應用程式防火牆 — 分散式拒絕服務）有助於雲端式安全性，是防範漏洞的多層方法的一部分。
+Adobe HIPAA相容和WAF-DDOS （Web應用程式防火牆 — 分散式拒絕服務）有助於雲端式安全性，是防範漏洞的多層方法的一部分。
 
-* **HIPAA** — 此選項會啟用Adobe的HIPPA就緒解決方案實作。
+* **HIPAA** — 此選項可啟用Adobe的HIPPA就緒解決方案實作。
    * [深入了解](https://www.adobe.com/trust/compliance/hipaa-ready.html) Adobe 的 HIPAA 就緒解決方案實作方式。
    * HIPAA無法在方案建立後啟用或停用。
 * **WAF-DDOS保護** — 此選項會透過規則啟用Web應用程式防火牆，以保護您的應用程式。
@@ -98,23 +99,25 @@ ht-degree: 12%
 
 ![SLA選項](assets/create-production-program-sla.png)
 
-AEM Sites和Forms提供標準的99.9% service level agreement (SLA)。 **99.99% Service level agreement**&#x200B;選項可為您的網站和/或Forms生產環境啟用99.99%的最低運作時間百分比。
+Sites和Forms提供標準的99.9% service level agreement (SLA)。 **99.99% Service level agreement**&#x200B;選項可保證您的生產環境(不論是Sites、Forms、Edge Delivery Services或這三種環境)最低運作時間為99.99%。
 
-99.99%的SLA提供更高的可用性和較低的延遲，並需要將[額外的發佈區域](/help/implementing/cloud-manager/manage-environments.md#multiple-regions)套用至方案中的生產環境。
+99.99% SLA的優點包括更高的可用性和更低的延遲。
 
-當符合啟用99.99% SLA的[需求](#sla-requirements)時，您必須執行[完整棧疊管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)才能啟用它。
+對於Sites和Forms方案，99.99% SLA要求將[額外的發佈區域](/help/implementing/cloud-manager/manage-environments.md#multiple-regions)套用至方案中的生產環境。 當符合啟用99.99% SLA的[需求](#sla-requirements)時，您必須執行[完整棧疊管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)才能啟用它。
+
+對於Edge Delivery Services，除了在程式上設定99.99%的SLA授權以外，還有&#x200B;*否*&#x200B;要求。
 
 #### SLA 99.99%的需求 {#sla-requirements}
 
-除了必要的權益之外，99.99%的SLA還有額外的使用需求。
+除了必要的權益之外，使用適用於Sites的99.99% SLA或Forms計畫還附帶下列額外要求：
 
 * 組織必須擁有99.99%的SLA，以及在將99.99%的SLA套用至方案時，可用的其他發佈區域權益。
 * Cloud Manager在將99.99%的SLA套用至方案之前，會驗證是否有未使用的[額外發佈區域](/help/implementing/cloud-manager/manage-environments.md#multiple-regions)權益可用。
 * 編輯方案時，如果方案已包含具有至少一個額外發佈區域的生產環境，則Cloud Manager僅會檢查99.99%SLA軟體權利檔案的可用性。
 * 為了啟用99.99%的SLA和報表，必須已建立[生產/中繼環境](/help/implementing/cloud-manager/manage-environments.md#adding-environments)，而且必須在生產/中繼環境中套用至少一個額外的發佈區域。
-   * 如果使用[進階網路](/help/security/configuring-advanced-networking.md)，請務必檢視[新增多個Publish區域至新環境](/help/implementing/cloud-manager/manage-environments.md#adding-regions)檔案以取得建議，以便在區域失敗時維持連線。
-* 您的99.99% SLA程式中必須至少保留一個額外的發佈區域。 不允許使用者從99.99%的SLA程式中刪除最後一個額外發佈區域。
-* 99.99% SLA支援用於已啟用Sites或Forms解決方案的生產計畫。
+   * 如果使用[進階網路](/help/security/configuring-advanced-networking.md)，請務必檢視[新增多個發佈區域至新環境](/help/implementing/cloud-manager/manage-environments.md#adding-regions)檔案以取得建議，以便在區域失敗時維持連線。
+* 您的99.99% SLA方案必須一律包含至少一個額外發佈區域。 不允許使用者從計畫中刪除最後剩餘的額外發佈區域。
+* 99.99%的SLA都支援已啟用Sites或Forms解決方案的生產程式。
 * 執行[完整棧疊管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)以啟動或在編輯程式時停用99.99%的SLA。
 
 ## 存取您的程式 {#accessing}
