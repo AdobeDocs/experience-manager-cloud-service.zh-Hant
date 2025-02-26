@@ -4,9 +4,9 @@ description: 瞭解AEM as a Cloud Service中的散佈和疑難排解復寫問題
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
 feature: Operations
 role: Admin
-source-git-commit: 68b21abbc00b6c766fc33bf70e259c8ad9fc8e59
+source-git-commit: 9dac0b63fec56bede7db9331d47ef479b29e67d0
 workflow-type: tm+mt
-source-wordcount: '1704'
+source-wordcount: '1711'
 ht-degree: 1%
 
 ---
@@ -96,10 +96,10 @@ Adobe Experience Manager as a Cloud Service使用[Sling內容發佈](https://sli
 
 **支援篩選器**
 
-| 名稱 | 說明 |
+| 名稱 | 描述 |
 | ------------- | ------------------------------------------- |
-| onlyModified | 自上次發佈後修改的節點（新的和預先存在的） |
-| onlyActivated | 之前發佈的節點 |
+| onlyModified | 節點：自上次發佈後已修改的新節點和預先存在的節點 |
+| onlyActivated | 節點：上次發佈前已發佈的節點 |
 
 
 **繼續支援**
