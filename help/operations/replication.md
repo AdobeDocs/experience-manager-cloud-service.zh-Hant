@@ -4,9 +4,9 @@ description: 瞭解AEM as a Cloud Service中的散佈和疑難排解復寫問題
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
 feature: Operations
 role: Admin
-source-git-commit: 4e57908ceebc820b64ce0ec5f8e5ba01ee6f5eb2
+source-git-commit: 68b21abbc00b6c766fc33bf70e259c8ad9fc8e59
 workflow-type: tm+mt
-source-wordcount: '1701'
+source-wordcount: '1704'
 ht-degree: 1%
 
 ---
@@ -28,7 +28,7 @@ Adobe Experience Manager as a Cloud Service使用[Sling內容發佈](https://sli
 >如果您因任何原因必須自訂，則可使用現有的工作流程API，透過此步驟觸發工作流程。
 >只發佈必須發佈的內容永遠是好的做法。 如果不需要的話，也不要嘗試發佈大量內容。 不過，您可以使用樹狀啟動工作流程步驟在工作流程中傳送的內容數量並無限制。
 
-### 快速取消/Publish — 計畫取消/Publish {#publish-unpublish}
+### 快速取消/發佈 — 計畫取消/發佈 {#publish-unpublish}
 
 此功能可讓您立即發佈所選頁面，無需透過「管理發布」方法選擇其他選項。
 
@@ -44,9 +44,9 @@ Adobe Experience Manager as a Cloud Service使用[Sling內容發佈](https://sli
 
 ### 管理發佈 {#manage-publication}
 
-管理發布提供的選項比快速Publish更多，允許包含子頁面、自訂引用，以及啟動任何適用的工作流程，並提供稍後發佈的選項。
+管理發布提供比「快速發佈」更多的選項，允許包含子頁面、自訂參照和啟動任何適用的工作流程，並提供稍後發佈的選項。
 
-針對「稍後發佈」選項包含資料夾的子項時，會叫用Publish內容樹工作流程，如本文所述。
+為「稍後發佈」選項包含資料夾的子項時，會叫用發佈內容樹狀工作流程，如本文所述。
 
 您可以在[出版基礎檔案](/help/sites-cloud/authoring/sites-console/publishing-pages.md#manage-publication)中找到有關管理出版的詳細資訊。
 
@@ -98,7 +98,7 @@ Adobe Experience Manager as a Cloud Service使用[Sling內容發佈](https://sli
 
 | 名稱 | 說明 |
 | ------------- | ------------------------------------------- |
-| onlyModified | 自上次發佈後修改的節點 |
+| onlyModified | 自上次發佈後修改的節點（新的和預先存在的） |
 | onlyActivated | 之前發佈的節點 |
 
 
@@ -129,9 +129,9 @@ Adobe Experience Manager as a Cloud Service使用[Sling內容發佈](https://sli
 <details>
 <summary>按一下這裡以深入瞭解這項已棄用的功能。</summary>
 
-您可以選擇&#x200B;**工具 — 工作流程 — 模型**&#x200B;並複製&#x200B;**Publish內容樹狀結構**&#x200B;現成的工作流程模型，以觸發樹狀結構復寫，如下所示：
+您可以選擇&#x200B;**工具 — 工作流程 — 模型**&#x200B;並複製&#x200B;**發佈內容樹狀結構**&#x200B;現成的工作流程模型，以觸發樹狀結構復寫，如下所示：
 
-![Publish內容樹狀工作流程卡](/help/operations/assets/publishcontenttreeworkflow.png)
+![發佈內容樹狀工作流程卡](/help/operations/assets/publishcontenttreeworkflow.png)
 
 請勿叫用原始模型。 相反，請務必先複製模型並叫用該副本。
 
@@ -180,7 +180,7 @@ Adobe Experience Manager as a Cloud Service使用[Sling內容發佈](https://sli
 
 在工作流程步驟已複製所有路徑之後，會記錄最終的INFO陳述式。
 
-此外，您也可以將記錄器的記錄層級增加至`com.day.cq.wcm.workflow.process.impl`以下，以偵錯/TRACE，取得更多記錄資訊。
+此外，您也可以將記錄器的記錄層級增加到`com.day.cq.wcm.workflow.process.impl`以下的DEBUG/TRACE，以取得更多記錄資訊。
 
 如果有錯誤，工作流程步驟會以`WorkflowException`結束，這會包裝基礎例外狀況。
 
@@ -269,9 +269,9 @@ ReplicationStatus previewStatus = afterStatus.getStatusForAgent(PREVIEW_AGENT); 
 
 ## 疑難排解 {#troubleshooting}
 
-若要疑難排解復寫問題，請導覽至AEM作者服務Web UI中的復寫佇列：
+若要進行復寫疑難排解，請導覽至AEM作者服務Web UI中的復寫佇列：
 
-1. 從AEM開始功能表，瀏覽至&#x200B;**工具** > **部署** > **發佈**
+1. 從AEM開始功能表，導覽至&#x200B;**工具** > **部署** > **發佈**
 1. 選取卡片&#x200B;**發佈**
 
    ![狀態](assets/publish-status.png "狀態")
@@ -282,6 +282,6 @@ ReplicationStatus previewStatus = afterStatus.getStatusForAgent(PREVIEW_AGENT); 
 
 ![個記錄檔](assets/publish-logs.png "個記錄檔")
 
-如果內容無法發佈，則整個發佈將從AEM Publish Service還原。
+如果內容無法發佈，則整個發佈將從AEM發佈服務中還原。
 
 在這種情況下，可編輯的主要佇列會顯示紅色狀態，應該加以檢閱以識別哪些專案導致取消發佈。 按一下該佇列，會顯示其暫止專案，如有需要，可從中清除單一專案或所有專案。
