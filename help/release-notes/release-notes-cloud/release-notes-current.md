@@ -48,7 +48,7 @@ Have a look at the January 2025 Release Overview video for a summary of the feat
 
 **內容片段編輯器評論功能現已正式推出**
 
-透過 AEM 內容片段編輯器中全新的現代化評論服務，於製作 AEM 內容片段時輕鬆地與同事協同合作。
+使用 AEM 內容片段編輯器中全新的現代化評論服務，在製作 AEM 內容片段時輕鬆地與同事協同合作。
 [閱讀更多](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring?#commenting-on-your-fragment)。
 
 **內容片段編輯器和管理員使用者介面，已更新 AEM as a Cloud Service 版本支援**
@@ -59,7 +59,7 @@ Have a look at the January 2025 Release Overview video for a summary of the feat
 
 **增強的內容片段**
 
-增強[以唯一識別碼為參照基礎的內容片段參照](/help/headless/graphql-api/uuid-reference-upgrade.md)，有助於確保即使片段移動到另一個位置，個別內容片段的 GraphQL 查詢仍能保持穩定。現在可以透過「ByID」查詢來達成。雖然路徑可能會改變，並可能因此破壞「ByPath」查詢，但 UUID 是穩定不變的。在任何查詢或其他適用 API 請求中，新的 ID 也可以作為屬性回傳。目前限制 (2025.1)：唯一識別碼尚未支援頁面參照。如果內容片段中有參照頁面，則不應使用此功能。計劃於下一個 AEM as a Cloud Service 版本中移除此限制。
+增強[以唯一識別碼為參照基礎的內容片段參照](/help/headless/graphql-api/uuid-reference-upgrade.md)，有助於確保即使片段移動到另一個位置，個別內容片段的 GraphQL 查詢仍能保持穩定。您現在可以透過「ByID」查詢來實現此功能。雖然路徑可能會改變，並可能因此破壞「ByPath」查詢，但 UUID 是穩定不變的。在任何查詢或其他適用 API 請求中，新的 ID 也可以作為屬性回傳。目前限制 (2025.1)：唯一識別碼尚未支援頁面參照。如果內容片段中有參照頁面，則不應使用此功能。計劃於下一個 AEM as a Cloud Service 版本中移除此限制。
 
 **用於內容片段傳遞的 AEM REST OpenAPI**
 
@@ -69,7 +69,7 @@ Have a look at the January 2025 Release Overview video for a summary of the feat
 
 #### SPA 編輯器 {#spa-editor}
 
-自 2025.1.0 版本開始，新專案不再使用 [SPA 編輯器](/help/implementing/developing/hybrid/introduction.md)。現有專案仍支援 SPA 編輯器，但不應用於新專案。
+自 2025.1.0 版本開始，新專案已汰除 [SPA 編輯器](/help/implementing/developing/hybrid/introduction.md)。現有專案仍支援 SPA 編輯器，但新專案不應使用。
 
 目前，AEM 中用於管理 Headless 內容的首選編輯器為：
 
@@ -78,7 +78,7 @@ Have a look at the January 2025 Release Overview video for a summary of the feat
 
 #### PWA 功能 {#pwa-features}
 
-自 2025.1.0 版本開始，新專案不再使用 AEM Sites 的[漸進式網頁應用程式 (PWA) 功能](/help/sites-cloud/authoring/sites-console/enable-pwa.md)。現有專案仍支援這項功能，但不應用於新專案
+自 2025.1.0 版本開始，新專案已汰除 AEM Sites 的[漸進式網頁應用程式 (PWA) 功能](/help/sites-cloud/authoring/sites-console/enable-pwa.md)。現有專案仍支援這項功能，但新專案不應使用
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -86,7 +86,7 @@ Have a look at the January 2025 Release Overview video for a summary of the feat
 
 **Dynamic Media 範本**
 
-透過易於使用的 WYSIWYG Dynamic Media 範本編輯器，即時編輯個人化的影像和文字橫幅，將 URL 嵌入任何第一方或第三方應用程式，藉由橫幅內容即時更新提供極具吸引力的體驗。
+透過易於使用的 WYSIWYG Dynamic Media 範本編輯器，即時編輯個人化的影像和文字橫幅。只需將 URL 嵌入任何第一方或第三方應用程式，即可實現橫幅內容即時更新，提供極具吸引力的體驗。
 
 ![動態轉譯](/help/assets/assets/dm-templates-smart-text-resize.png)
 
@@ -98,19 +98,19 @@ Have a look at the January 2025 Release Overview video for a summary of the feat
 
 **Dynamic Media 多語言音訊和字幕**
 
-[Dynamic Media 中的影片支援多語言字幕和多語言音軌](/help/assets/dynamic-media/video.md#about-msma)，您現在可以輕鬆地將多語言字幕和多語言音軌新增至主要影片中。具備此功能代表全球客群都可以存取您的影片。您能夠使用多種語言針對全球客群客製化一部已發佈的主要影片，並遵守不同地理區域的無障礙指南。此外，作者還可以在使用者介面的單一標籤管理字幕和音軌。
+[Dynamic Media 中的影片支援多語言字幕和多語言音軌](/help/assets/dynamic-media/video.md#about-msma) - 您現在可以輕鬆地為主要影片新增多語言字幕和多語言音軌。擁有此功能代表全球觀眾都可以存取您的影片。您可以著手自訂一部已發佈的主要影片，以多種語言提供給全球觀眾，並遵守不同地理區域的無障礙指南。此外，作者還可以透過使用者介面的單一標籤管理字幕和音軌。
 
-**支援基於 HTTP 的動態自適應串流**
+**支援 Dynamic Adaptive Streaming over HTTP**
 
 針對 Dynamic Media 影片傳遞 (啟用 CMAF) 中的自適應串流推出新支援的通訊協定 (DASH - Dynamic Adaptive Streaming over HTTP，即基於 HTTP 的動態自適應串流)：
 
 * 自適應串流 (DASH/HLS) 可確保使用者能擁有更好的影片觀看體驗。
 
-* DASH 是自適應影片串流的國際標準通訊協定，而且在業界獲得廣泛使用
+* DASH 是自適應影片串流的國際標準通訊協定，並在業界獲得廣泛使用
 
 **資產關係**
 
-資產視圖現在支援於簡化的資產詳細資料面板中檢視和編輯資產關係。輕鬆地將來源和衍生等關係加入到內容中，讓使用者能更有效地找到相關的主要內容。
+資產視圖現在支援在簡化的資產詳細資料面板中檢視和編輯資產關係。輕鬆地為內容加入來源和衍生等關係，讓使用者能夠更有效率地找到相關的主要內容。
 
 **重新處理資產**
 
@@ -118,9 +118,9 @@ Have a look at the January 2025 Release Overview video for a summary of the feat
 
 ### AEM Assets 的搶先體驗功能 {#early-access-features-assets}
 
-**以 AI 產生的影片字幕**
+**AI 生成影片字幕**
 
-Adobe Dynamic Media 中以 AI 產生的影片字幕，是使用人工智慧來自動產生影片內容的字幕。透過提供準確的即時字幕，這項功能可以改善無障礙輔助並增強使用者體驗。字幕是根據原始音訊、任何附加音軌，或影片屬性頁面上的「字幕和音訊」標籤中所提供之額外字幕所產生的。支援超過 60 種語言，可以在影片發佈之前審閱及預覽字幕。
+Adobe Dynamic Media 中的 AI 生成影片字幕功能會使用人工智慧，為影片內容自動生成字幕。透過提供準確的即時字幕，這項功能可改善可存取性並增強使用者體驗。字幕是根據原始音訊、任何附加音軌，或影片屬性頁面上的「字幕和音訊」標籤中所提供之額外字幕所產生的。支援超過 60 種語言，可以在影片發佈之前審閱及預覽字幕。
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
