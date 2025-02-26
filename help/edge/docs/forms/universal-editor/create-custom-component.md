@@ -2,20 +2,21 @@
 title: 為 EDS Forms 建立自訂元件
 description: 為 EDS Forms 建立自訂元件
 feature: Edge Delivery Services
-hide: true
-hidefromtoc: true
 role: Admin, Architect, Developer
 exl-id: 2bbe3f95-d5d0-4dc7-a983-7a20c93e2906
-source-git-commit: d5ba87ec6199522f026d572d1bdb1bfbeb9849ee
+source-git-commit: 0c6f024594e1b1fd98174914d2c0714dffecb241
 workflow-type: tm+mt
-source-wordcount: '1725'
-ht-degree: 5%
+source-wordcount: '1773'
+ht-degree: 87%
 
 ---
 
-# 在WYSIWYG製作中建立自訂元件
+# 在 WYSIWYG 製作中建立自訂元件
 
-Edge Delivery Services Forms提供自訂功能，可讓前端開發人員建立自訂的表單元件。 這些自訂元件可順暢地整合至WYSIWYG製作體驗，讓表單作者可在表單編輯器中輕鬆新增、設定和管理這些元件。 藉由自訂元件，作者可增強功能，同時確保製作程式順暢且直覺。
+<span class="preview">此功能可透過搶先存取計畫使用。 若要要求存取權，請從您的正式地址傳送電子郵件至<a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a>，其中包含您的GitHub組織名稱和存放庫名稱。 例如，如果存放庫URL是https://github.com/adobe/abc，組織名稱是adobe，存放庫名稱是abc。</span>
+
+
+Edge Delivery Services 表單可提供自訂，讓前端開發人員可以建置量身打造的表單元件。這些自訂元件可無縫整合到 WYSIWYG 製作體驗中，使表單作者能夠在表單編輯器中輕鬆地進行新增、設定和管理。使用自訂元件，作者即可提升功能，同時可確保平順、直覺的製作流程。
 
 本文件概述透過設定原生 HTML 表單元件的樣式來建立自訂元件的步驟，以改善使用者體驗並增加表單的視覺吸引力。
 
@@ -28,53 +29,53 @@ Edge Delivery Services Forms提供自訂功能，可讓前端開發人員建立�
 
 ## 建立自訂元件
 
-在通用編輯器中新增自訂元件，表示讓表單作者可在設計表單時使用新元件。 這需要註冊元件、定義其屬性，以及設定可在何處使用它。 建立自訂元件的步驟如下：
+在通用編輯器中新增自訂元件指在設計表單時為表單作者提供新元件。這包含註冊元件、定義其屬性以及設定其使用位置。建立自訂元件的步驟包括：
 
-[1. 正在加入新自訂元件](#1-adding-structure-for-new-custom-component)的結構
-[2。 定義用於編寫](#2-defining-the-properties-of-your-custom-component-for-authoring)的自訂元件屬性
-[3。  讓您的自訂元件顯示在WYSIWYG元件清單中](#3-making-your-custom-component-visible-in-the-wysiwyg-component-list)
-[4。 正在登入您的自訂元件](#4-registering-your-custom-component)
-[5。 正在新增自訂元件](#5-adding-the-runtime-behaviour-for-your-custom-component)的執行階段行為
+[1. 為新的自訂元件新增結構](#1-adding-structure-for-new-custom-component)
+[2.定義自訂元件的屬性以供製作](#2-defining-the-properties-of-your-custom-component-for-authoring)
+[3.使您的自訂元件在 WYSIWYG 元件清單中可見](#3-making-your-custom-component-visible-in-the-wysiwyg-component-list)
+[4.註冊您的自訂元件](#4-registering-your-custom-component)
+[5.為自訂元件新增執行階段行為](#5-adding-the-runtime-behaviour-for-your-custom-component)
 
-讓我們以建立名為&#x200B;**range**&#x200B;的新自訂元件為例。 範圍元件會顯示為直線，並顯示最小值、最大值或選取值等值。
+讓我們以建立名為 **range** 的新自訂元件為例。該 range 元件會顯示為一條直線，並顯示最小值、最大值或選取值等值。
 
-![範圍元件樣式](/help/edge/docs/forms/universal-editor/assets/custom-component-range-style.png)
+![Range 元件樣式](/help/edge/docs/forms/universal-editor/assets/custom-component-range-style.png)
 
-在本文結束時，您將瞭解如何從頭開始建立自訂元件。
+在本文結束時，您會了解如何從頭開始建立自訂元件。
 
-### 1.新增新自訂元件的結構
+### 1. 為新的自訂元件新增結構
 
-您必須先註冊自訂元件，以便Universal Editor將其辨識為可用選項，才能使用該自訂元件。 這是透過元件定義來達成，該定義包含唯一識別碼、預設屬性和元件結構。執行下列步驟，讓自訂元件可用於表單撰寫：
+在使用自訂元件之前，必須先進行註冊，以便通用編輯器將其識別為可用選項。這會透過元件定義實現，元件定義包括唯一識別碼、預設屬性和元件的結構。執行下列步驟以使自訂元件可用於表單製作：
 
 1. **新增資料夾和檔案**
-在AEM專案中為新的自訂元件新增資料夾和檔案。
-   1. 開啟您的AEM專案，並導覽至`../blocks/form/components/`。
-   1. 在`../blocks/form/components/<component_name>`為您的自訂元件新增資料夾。 在此範例中，我們會建立名為`range`的資料夾。
-   1. 導覽至`../blocks/form/components/<component_name>`新建立的資料夾。 例如，瀏覽至`../blocks/form/components/range`，然後新增下列檔案：
+在 AEM 專案中為新的自訂元件新增資料夾和檔案。
+   1. 開啟您的 AEM 專案並瀏覽至 `../blocks/form/components/`。
+   1. 在 `../blocks/form/components/<component_name>` 為您的自訂元件新增資料夾。在此範例中，我們會建立名為 `range` 的資料夾。
+   1. 瀏覽到在 `../blocks/form/components/<component_name>` 新建立的資料夾。例如，瀏覽至 `../blocks/form/components/range`，並新增下列檔案：
       * `/blocks/form/components/range/_range.json`：包含自訂元件的定義。
       * `../blocks/form/components/range/range.css`：定義自訂元件的樣式。
       * `../blocks/form/components/range/range.js`：在執行階段自訂自訂元件。
 
-        ![正在新增用於編寫的自訂元件](/help/edge/docs/forms/universal-editor/assets/adding-custom-component.png)
+        ![新增自訂元件以供製作](/help/edge/docs/forms/universal-editor/assets/adding-custom-component.png)
 
         >[!NOTE]
         >
-        > 請確定json檔案的檔案名稱中包含底線(_)當作首碼。
+        > 確保 json 檔案的檔案名稱包括底線 (_) 作為前置詞。
 
-1. 導覽至`/blocks/form/components/range/_range.json`檔案，並新增自訂元件的元件定義。
+1. 瀏覽至 `/blocks/form/components/range/_range.json` 檔案並新增自訂元件的元件定義。
 
 1. **新增元件定義**
 
-   若要新增定義，`_range.json`檔案中必須新增的欄位為：
+   若要新增定義，需要在 `_range.json` 檔案中新增下列欄位：
 
-   * **title**：在通用編輯器中顯示的元件標題。
+   * **title**：在通用編輯器中顯示的元件的標題。
    * **id**：元件的唯一識別碼。
-   * **fieldType**： Forms支援各種&#x200B;**fieldType**，以擷取特定型別的使用者輸入。 您可以在[額外位元組]區段](#supported-fieldtypes)中找到[支援的fieldType。
-   * **resourceType**：每個自訂元件都有根據其fieldType的關聯資源型別。 您可以在[額外位元組]區段](#supported-resourcetype)中找到[支援的resourceType。
+   * **fieldType**：表單可支援各種 **fieldType** 來擷取特定類型的使用者輸入。您可以找到[支援的 fieldType (在 Extra Byte 區段中)](#supported-fieldtypes)。
+   * **resourceType**：每個自訂元件都有一個以其 fieldType 為基礎的相關聯資源類型。您可以找到[支援的 resourceType (在 Extra Byte 區段中)](#supported-resourcetype)。
    * **jcr：title**：它類似於標題，但儲存在元件的結構中。
-   * **fd：viewType**：它代表自訂元件的名稱。 這是元件的唯一識別碼。 必須為元件建立自訂檢視。
+   * **fd:viewType**：這表示自訂元件的名稱。這是元件的唯一識別碼。需要為元件建立自訂檢視。
 
-新增元件定義後，`_range.json`檔案如下：
+新增元件定義之後的 `_range.json` 檔案如下所示：
 
 ```javascript
 {
@@ -103,33 +104,33 @@ Edge Delivery Services Forms提供自訂功能，可讓前端開發人員建立�
 
 >[!NOTE]
 >
-> 將區塊新增至通用編輯器時，所有表單相關元件會遵循與Sites相同的方法。 如需詳細資訊，請參考[Creating Blocks Instrumented for use with the Universal Editor](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/create-block)一文。
+> 為通用編輯器新增區塊時，所有與表單相關的元件都會遵循與 Sites 相同的方法。如需更多資訊，您可參閱「[建立經檢測適用通用編輯器的區塊](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/create-block)」一文。
 
-### 2.定義用於編寫的自訂元件的屬性
+### 2. 定義自訂元件的屬性以供製作
 
-自訂元件包括元件模型，指定哪些屬性可由表單作者設定。 這些屬性會顯示在Universal Editor的&#x200B;**屬性**&#x200B;對話方塊中，可讓作者調整標籤、驗證規則、樣式和其他屬性等設定。 若要定義屬性，請執行下列動作：
+自訂元件包括元件模型，該模型會指定表單作者可以設定哪些屬性。這些屬性隨即會出現在通用編輯器的「**屬性**」對話框中，讓作者可以調整標籤、驗證規則、樣式和其他屬性等設定。若要定義屬性：
 
-1. 導覽至`/blocks/form/components/range/_range.json`檔案，並為自訂元件新增元件模型。
+1. 瀏覽至 `/blocks/form/components/range/_range.json` 檔案並新增自訂元件的元件模型。
 
 1. **新增元件模型**
 
-   若要定義自訂元件的元件模型，您必須將相關欄位新增至`_range.json`檔案。
+   若要定義自訂元件的元件模型，您需要將相關欄位新增至 `_range.json` 檔案。
 
    1. **建立新模型**
 
-      * 在模型陣列中，新增物件並設定元件模型的`id`以符合元件定義中先前設定的`fd:viewType`屬性。
-      * 在此物件中包含欄位陣列。
+      * 在模型陣列中，新增物件並設定元件模型的 `id`，以和元件定義中之前所設定的 `fd:viewType` 屬性相符。
+      * 在此物件內包括欄位陣列。
 
-   2. **定義屬性對話方塊的欄位**
+   2. **定義「屬性」對話框的欄位**
 
-      * 欄位陣列中的每個物件都應該是一個容器型別元件，以便在&#x200B;**屬性**&#x200B;對話方塊中顯示為索引標籤。
-      * 某些欄位可參照`models/form-common`中可用的可重複使用屬性。
+      * 欄位陣列中的每個物件都應該是 container-type 元件，使其可在「**屬性**」對話框中顯示為索引標籤。
+      * 部分欄位可以參照 `models/form-common` 中可用的可重複使用屬性。
 
-   3. **使用現有的元件模型作為參考**
+   3. **使用現有元件模型作為參考**
 
-      * 您可以複製與您所選`fieldType`對應的現有元件模型的內容，並視需要加以修改。 例如，`number-input`元件已延伸以建立&#x200B;**範圍**&#x200B;元件，因此我們可以從`models/form-components/_number-input.json`使用模型陣列作為參考。
+      * 您可以複製與您選擇的 `fieldType` 對應的現有元件模型，並根據需要進行修改。例如，`number-input` 元件會經過擴展以建立 **range** 元件，以便我們可以使用來自 `models/form-components/_number-input.json` 的模型陣列作為參考。
 
-   新增元件模型後的`_range.json`檔案如下：
+   新增元件模型之後的 `_range.json` 檔案如下所示：
 
    ```javascript
    "models": [
@@ -160,19 +161,19 @@ Edge Delivery Services Forms提供自訂功能，可讓前端開發人員建立�
 
    >[!NOTE]
    >
-   > 若要新增欄位到自訂元件的&#x200B;**屬性**&#x200B;對話方塊，請遵循[定義的結構描述](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/field-types#loading-model)。
+   > 若要將新欄位新增至自訂元件的「**屬性**」對話框，需遵守[已定義的結構描述](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/field-types#loading-model)。
 
-   您也可以[新增自訂屬性](#adding-custom-properties-for-your-custom-component)至自訂元件，以擴充其功能。
+   您還可以[新增自訂屬性](#adding-custom-properties-for-your-custom-component)到自訂元件來擴展其功能。
 
-#### 新增自訂元件的自訂屬性
+#### 為自訂元件新增自訂屬性
 
-自訂屬性可讓您根據元件的「屬性」對話方塊中設定的值來定義特定行為。 這有助於擴充元件的功能和自訂選項。
+自訂屬性可讓您根據元件的屬性對話框中設定的值定義特定行為。這有助於擴展元件的功能和自訂選項。
 
-在此範例中，我們將「步驟值」作為自訂屬性新增到Range元件中。
+在此範例中，我們將 Step Value 作為自訂屬性新增到 Range 元件。
 
-![步驟值自訂屬性](/help/edge/docs/forms/universal-editor/assets/customcomponent-stepvalue.png)
+![Step Value 自訂屬性](/help/edge/docs/forms/universal-editor/assets/customcomponent-stepvalue.png)
 
-若要新增Step Value自訂屬性，請在` _<component>.json`檔案中附加元件模型，並使用下列幾行程式碼：
+若要新增 Step Value 自訂屬性，請在 ` _<component>.json` 檔案中使用下列程式碼附加元件模型：
 
 ```javascript
       {
@@ -249,18 +250,18 @@ JSON程式碼片段為&#x200B;**範圍**&#x200B;元件定義名為&#x200B;**步�
 }
 ```
 
-![元件定義與模型](/help/edge/docs/forms/universal-editor/assets/custom-component-json-file.png)
+![元件定義和模型](/help/edge/docs/forms/universal-editor/assets/custom-component-json-file.png)
 
 
-### 3.在WYSIWYG元件清單中顯示自訂元件
+### 3. 使您的自訂元件在 WYSIWYG 元件清單中可見
 
-篩選器會定義自訂元件可在通用編輯器中使用的區段。 這樣可確保元件僅能在適當的區段中使用，並保持結構和可用性。
+篩選器會定義自訂元件可以用於通用編輯器中的哪個區段。這確保了元件僅能用於適當區段，同時保持結構和可用性。
 
-若要確保自訂元件在WYSIWYG表單製作期間會顯示在可用元件清單中：
+為了確保自訂元件在 WYSIWYG 表單製作過程中出現在可用元件清單中：
 
-1. 瀏覽至`/blocks/form/_form.json`檔案。
-1. 在具有`id="form"`的物件中找出元件陣列。
-1. 從`definitions[]`將`fd:viewType`值新增至具有`id="form"`之物件的元件陣列。
+1. 瀏覽至 `/blocks/form/_form.json` 檔案。
+1. 在具有 `id="form"` 的物件中找到元件陣列。
+1. 將 `definitions[]` 中的 `fd:viewType` 值新增到 `id="form"` 物件的元件陣列。
 
 ```javascript
  "filters": [
@@ -298,13 +299,13 @@ JSON程式碼片段為&#x200B;**範圍**&#x200B;元件定義名為&#x200B;**步�
 
 ![元件篩選器](/help/edge/docs/forms/universal-editor/assets/custom-component-form-file.png)
 
-### 4.註冊您的自訂元件
+### 4. 註冊您的自訂元件
 
-若要讓表單區塊識別自訂元件，並在表單編寫期間載入元件模型中定義的屬性，請從元件定義新增`fd:viewType`值至`mappings.js`檔案。
-註冊元件：
-1. 瀏覽至`/blocks/form/mappings.js`檔案。
-1. 找到`customComponents[]`陣列。
-1. 從`definitions[]`陣列新增`fd:viewType`值至`customComponents[]`陣列。
+為了讓表單區塊能夠識別自訂元件並載入在表單製作期間在元件模型中定義的屬性，請將元件定義中的 `fd:viewType` 值新增到 `mappings.js` 檔案。
+若要註冊元件：
+1. 瀏覽至 `/blocks/form/mappings.js` 檔案。
+1. 找到 `customComponents[]` 陣列。
+1. 將 `definitions[]` 陣列中的 `fd:viewType` 值新增到 `customComponents[]` 陣列。
 
 ```javascript
 let customComponents = ["range"];
@@ -321,9 +322,9 @@ const OOTBComponentDecorators = ['file-input',
 
 ![元件對應](/help/edge/docs/forms/universal-editor/assets/custom-component-mapping-file.png)
 
-完成上述步驟後，自訂元件會出現在通用編輯器的表單元件清單中。 然後您可以將其拖放到表單區段中。
+完成上述步驟後，自訂元件隨即會出現在通用編輯器內的表單元件清單中。然後您即可將其拖曳到表單區段。
 
-![範圍元件](/help/edge/docs/forms/universal-editor/assets/custom-component-range.png)
+![range 元件](/help/edge/docs/forms/universal-editor/assets/custom-component-range.png)
 
 底下熒幕擷圖顯示新增至元件模型的`range`元件屬性，其指定表單作者可設定的屬性：
 
@@ -331,11 +332,11 @@ const OOTBComponentDecorators = ['file-input',
 
 您現在可以透過新增樣式和功能來定義自訂元件的執行階段行為。
 
-### 5.新增自訂元件的執行階段行為
+### 5. 為自訂元件新增執行階段行為
 
-您可以使用預先定義的標示來修改自訂元件，如表單欄位[樣式](/help/edge/docs/forms/style-theme-forms.md)中所述。 這可透過自訂CSS （階層式樣式表）和自訂程式碼來完成，以增強元件的外觀。 若要新增元件的執行階段行為：
+您可以使用預先定義標記來修改自訂元件，如「[表單欄位的樣式](/help/edge/docs/forms/style-theme-forms.md)」中的說明。這可以透過自訂 CSS (階層式樣式表) 和自訂程式碼來實現，以美化元件的外觀。若要為元件新增執行階段行為：
 
-1. 若要新增樣式，請導覽至`/blocks/form/components/range/range.css`檔案並新增下列程式碼行：
+1. 若要新增樣式，請瀏覽至 `/blocks/form/components/range/range.css` 檔案，並新增下列程式碼：
 
    ```javascript
    /** Styling for range */
@@ -393,7 +394,7 @@ const OOTBComponentDecorators = ['file-input',
    ```
    程式碼可協助您定義自訂元件的樣式和視覺外觀。
 
-1. 若要新增功能，請瀏覽至`/blocks/form/components/range/range.js`檔案並新增下列程式碼行：
+1. 若要新增功能，請瀏覽至 `/blocks/form/components/range/range.js` 檔案，並新增下列程式碼：
 
    ```javascript
    function updateBubble(input, element) {
@@ -450,34 +451,34 @@ const OOTBComponentDecorators = ['file-input',
    }
    ```
 
-   它會控制自訂元件與使用者輸入互動、處理資料以及與通用編輯器中的表單區塊整合的方式。
+   這會控制自訂元件如何與使用者輸入互動、處理資料以及和通用編輯器中的表單區塊整合。
 
-   結合自訂樣式和功能後，範圍元件的外觀和行為會增強。 更新後的設計會反映套用的樣式，而新增的功能可確保提供更動態、互動式的使用者體驗。
-以下熒幕擷圖說明更新的範圍元件。
+   合併自訂樣式和功能後，range 元件的外觀和行為即會提升。更新後的設計會反映套用後的樣式，而新增的功能則可確保更動態和互動的使用者體驗。
+下列螢幕擷圖提供更新後 range 元件的圖解。
 
-![範圍元件樣式](/help/edge/docs/forms/universal-editor/assets/custom-component-range-1.png)
+![Range 元件樣式](/help/edge/docs/forms/universal-editor/assets/custom-component-range-1.png)
 
-## 常問的問題
+## 常見問題
 
-* **如果我同時在component.css和forms.css中新增樣式，哪一個優先？**
-同時在`component.css`和&#x200B;**forms.css**&#x200B;中定義樣式時，`component.css`優先順序。 這是因為元件層級樣式比較具體，而且會覆寫來自`forms.css`的全域樣式。
+* **如果我要在 component.css 和 forms.css 中新增樣式，優先考慮哪一個？**
+在 `component.css` 和 **forms.css** 中都有定義樣式時，優先考慮 `component.css`。這是因為元件層級樣式更為具體，並會覆寫 `forms.css` 的全域樣式。
 
-* **我的自訂元件在通用編輯器的可用元件清單中不可見。 如何解決此問題？**
-如果您的自訂元件未出現，請檢查以下檔案，確保元件已正確註冊：
+* **我的自訂元件在通用編輯器中的可用元件清單中不可見。我要如何修正這個問題？**
+如果您的自訂元件未出現，請檢查下列檔案，以確保元件已正確註冊：
    * **component-definition.json**：確認元件已正確定義。
-   * **component-filters.json**：請確定在適當的區段中允許該元件。
+   * **component-filters.json**：確保在適當區段中可允許該元件。
    * **component-models.json**：確認元件模型已正確設定。
 
 ## 最佳做法
 
-* 建議[設定本機AEM開發環境](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#set-up-local-aem-development-environment)，以便在本機開發自訂樣式和元件。
+* 建議您[設定本機 AEM 開發環境](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#set-up-local-aem-development-environment)，以在本機開發自訂樣式和元件。
 
 
-## 額外的位元組
+## Extra Byte
 
-### 支援的resourceType
+### 支援的 resourceType
 
-| 欄位型別 | 資源類型 |
+| 欄位類型 | 資源類型 |
 |--------------|------------------------------------------------------------------|
 | 文字輸入 | core/fd/components/form/textinput/v1/textinput |
 | 數字輸入 | core/fd/components/form/numberinput/v1/numberinput |
@@ -485,23 +486,23 @@ const OOTBComponentDecorators = ['file-input',
 | 面板 | core/fd/components/form/panelcontainer/v1/panelcontainer |
 | 核取方塊 | core/fd/components/form/checkbox/v1/checkbox |
 | 下拉式清單 | core/fd/components/form/dropdown/v1/dropdown |
-| radio-group | core/fd/components/form/radiobutton/v1/radiobutton |
+| 單選按鈕群組 | core/fd/components/form/radiobutton/v1/radiobutton |
 | 純文字 | core/fd/components/form/text/v1/text |
 | 檔案輸入 | core/fd/components/form/fileinput/v2/fileinput |
 | 電子郵件 | core/fd/components/form/emailinput/v1/emailinput |
 | 影像 | core/fd/components/form/image/v1/image |
 | 按鈕 | core/fd/components/form/button/v1/button |
 
-### 支援的fieldType
+### 支援的 fieldTypes
 
-表單支援的fieldTypes包括：
+表單支援的 fieldTypes 包括：
 * 文字輸入
 * 數字輸入
 * 日期輸入
 * 面板
 * 核取方塊
 * 下拉式清單
-* radio-group
+* 單選按鈕群組
 * 純文字
 * 檔案輸入
 * 電子郵件

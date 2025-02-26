@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的運作方式以及該軟體可以為您做哪些事。
 breadcrumb-title: 使用手冊
 user-guide-title: 'AEM as a Cloud Service '
-source-git-commit: 3a3713cdf2910492385b96b89038095c3642a2ec
+source-git-commit: 0c6f024594e1b1fd98174914d2c0714dffecb241
 workflow-type: tm+mt
-source-wordcount: '6094'
-ht-degree: 99%
+source-wordcount: '6193'
+ht-degree: 95%
 
 ---
 
@@ -1024,37 +1024,36 @@ ht-degree: 99%
    + 建立表單 {#build-forms}
       + [概觀](/help/edge/docs/forms/overview.md)
       + [Edge Delivery Services 表單如何運作？](/help/edge/docs/forms/universal-editor/edge-delivery-services-form.md)
-      + 開始使用 {#getting-started-edge-delivery-services-forms}
-         + [快速入門](/help/edge/docs/forms/tutorial.md)
-         + [使用 Google Sheets 或 Microsoft Excel 建立表單](/help/edge/docs/forms/create-forms.md)
-         + [設定您的 Google 表單或 Microsoft Excel 檔案以開始接受資料](/help/edge/docs/forms/submit-forms.md)
-         + [發佈您的表單並開始收集資料](/help/edge/docs/forms/publish-forms.md)
-         + [新增驗證至表單欄位](/help/edge/docs/forms/validate-forms.md)
-         + [從 URL 將選項載入表單](/help/edge/docs/forms/load-options-from-url.md)
-         + [自訂表單的外觀](/help/edge/docs/forms/style-theme-forms.md)
-         + [使用規則為表單新增動態行為](/help/edge/docs/forms/rules-forms.md)
-         + [用於驗證的規則運算式](/help/edge/docs/forms/regex-forms.md)
-         + [提交表單後顯示自訂感謝訊息](/help/edge/docs/forms/thank-you-page-form.md)
-         + [使用表單提交服務](/help/forms/forms-submission-service.md)
+      + 以檔案為基礎的製作{#getting-started-edge-delivery-services-forms}
+         + [建立您的第一個表單：使用Google工作表和Excel快速入門手冊](/help/edge/docs/forms/tutorial.md)
+         + [如何使用Google工作表或Excel建立Forms：逐步指南](/help/edge/docs/forms/create-forms.md)
+         + [將表單連線至Google Sheets：資料收集設定指南](/help/edge/docs/forms/submit-forms.md)
+         + [讓您的表單上線：發佈和資料收集指南](/help/edge/docs/forms/publish-forms.md)
+         + [表單欄位驗證：將錯誤檢查新增至您的Forms](/help/edge/docs/forms/validate-forms.md)
+         + [設計精美的Forms：樣式與自訂指南](/help/edge/docs/forms/style-theme-forms.md)
+         + [建立成功訊息：自訂您的表單感謝頁面](/help/edge/docs/forms/thank-you-page-form.md)
+         + [表單提交指南：使用Forms提交服務](/help/forms/forms-submission-service.md)
+         + [動態表單欄位：從URL載入選項](/help/edge/docs/forms/load-options-from-url.md)
+         + [新增智慧行為：表單規則和邏輯指南](/help/edge/docs/forms/rules-forms.md)
+         + [進階表單驗證：規則運算式指南](/help/edge/docs/forms/regex-forms.md)
+         + [建立可重複使用的Forms：表單片段指南](/help/edge/docs/forms/form-fragments.md)
+         + [建立動態Forms：新增可重複區段](/help/edge/docs/forms/repeatable-forms.md)
+         + [將表單設為全域：表單翻譯指南](/help/edge/docs/forms/translate-forms.md)
+         + [保護您的Forms：新增reCAPTCHA安全性](/help/edge/docs/forms/recaptacha-forms.md)
+         + [建置自訂表單元件：開發人員指南](/help/edge/docs/forms/custom-components-forms.md)
+         + [監督表單效能：Real Use Monitoring指南](/help/edge/docs/forms/real-use-monitoring-for-forms.md)
+         + [在Edge上部署Forms：Edge Delivery Services的發佈指南](/help/edge/docs/forms/publishing-forms.md)
       + WYSIWYG {#universal-editor}
-         + [概觀：Edge Delivery Services for Forms 的通用編輯器](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
-         + [快速入門](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
-         + [瞭解WYSIWYG介面](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md)
-         + [使用規則編輯器來新增規則](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
-         + [建立自訂元件](/help/edge/docs/forms/universal-editor/create-custom-component.md)
-         + [在表單中使用 reCAPTCHA](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
-         + [提交動作](/help/edge/docs/forms/universal-editor/submit-action.md)
-         + [發佈表單](/help/edge/docs/forms/universal-editor/publish-forms.md)
-         + [自訂表單樣式](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
-         + [回應式模式](/help/edge/docs/forms/universal-editor/responsive-layout.md)
-      + 功能 {#advanced-features-edge-delivery-services-forms}
-         + [使用表單片段](/help/edge/docs/forms/form-fragments.md)
-         + [將可重複區段新增到表單](/help/edge/docs/forms/repeatable-forms.md)
-         + [翻譯您的表單](/help/edge/docs/forms/translate-forms.md)
-         + [使用 reCAPTCHA 保護您的表單](/help/edge/docs/forms/recaptacha-forms.md)
-         + [自訂元件](/help/edge/docs/forms/custom-components-forms.md)
-         + [表單的實際使用監視](/help/edge/docs/forms/real-use-monitoring-for-forms.md)
-         + [為 Edge Delivery Services 發佈表單](/help/edge/docs/forms/publishing-forms.md)
+         + [Edge Delivery Services適用的Forms Universal Editor簡介 — 完整指南](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
+         + [如何使用通用編輯器建立您的第一個表單 — 逐步教學課程](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
+         + [通用編輯器介面指南：工具、功能和導覽說明](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md)
+         + [在通用編輯器中讓您的Forms支援行動裝置：回應式設計](/help/edge/docs/forms/universal-editor/responsive-layout.md)
+         + [設計精美的Forms：通用編輯器的樣式和主題設定指南](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
+         + [將動態行為新增至Forms：規則編輯器的完整指南](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
+         + [表單提交指南：設定和自訂表單提交動作](/help/edge/docs/forms/universal-editor/submit-action.md)
+         + [保護您的Forms遠離垃圾訊息：新增reCAPTCHA安全性](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
+         + [如何發佈和部署Forms： Universal Editor發佈指南](/help/edge/docs/forms/universal-editor/publish-forms.md)
+         + [建置自訂表單元件：通用編輯器的開發人員指南](/help/edge/docs/forms/universal-editor/create-custom-component.md)
       + 參考資料 {#forms-references}
          + [最適化表單區塊元件及其屬性](/help/edge/docs/forms/form-components.md)
    + Edge Delivery 資源 {#resources}

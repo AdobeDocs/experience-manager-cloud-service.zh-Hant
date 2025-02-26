@@ -3,18 +3,19 @@ title: 如何使用規則編輯器將規則套用至表單欄位，讓使用 WYS
 description: 透過通用編輯器的規則編輯器，您不需要編寫程式碼或指令碼，即可在表單中加入動態行為和建置複雜的邏輯。
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-hide: true
-hidefromtoc: true
 exl-id: 846f56e1-3a98-4a69-b4f7-40ec99ceb348
-source-git-commit: ba42a99e6138616ab6a7564c4bf58400844bdcc4
+source-git-commit: 0c6f024594e1b1fd98174914d2c0714dffecb241
 workflow-type: tm+mt
-source-wordcount: '2166'
-ht-degree: 76%
+source-wordcount: '2214'
+ht-degree: 96%
 
 ---
 
 
-# WYSIWYG製作中的規則編輯器簡介
+# WYSIWYG 製作中的規則編輯器簡介
+
+<span class="preview">此功能可透過搶先存取計畫使用。 若要要求存取權，請從您的正式地址傳送電子郵件至<a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a>，其中包含您的GitHub組織名稱和存放庫名稱。 例如，如果存放庫URL是https://github.com/adobe/abc，組織名稱是adobe，存放庫名稱是abc。</span>
+
 
 您可以使用規則編輯器來建立規則，藉此新增動態表單行為。這些規則會顯示條件式欄位、根據使用者輸入自動進行計算，並改善整體使用者體驗。規則編輯器將表格填寫流程簡化，有助於確保準確性和效率。
 
@@ -42,23 +43,23 @@ ht-degree: 76%
 
 ## 如何啟用規則編輯器延伸模組？
 
-在Universal Editor中，預設不會啟用規則編輯器擴充功能。 若要啟用規則編輯器擴充功能，請從您的正式電子郵件識別碼寄信至[aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)。
+在通用編輯器中，規則編輯器延伸模組預設為未啟用。若要啟用規則編輯器延伸模組，請從您的官方電子郵件 ID 寫信至 [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) 來和我們聯絡。
 
 在您的環境中啟用規則編輯器延伸模組後，![編輯規則](/help/forms/assets/edit-rules-icon.svg)圖示會顯示在編輯器的右上角。
 
 ![通用編輯器的規則編輯器](/help/edge/docs/forms/assets/universal-editor-rule-editor.png)
 
-選取您要編寫規則的表單元件，然後按一下![edit-rules](/help/forms/assets/edit-rules-icon.svg)圖示。 接著顯示規則編輯器使用者介面。
+選取要編寫規則的表單元件，然後按一下![編輯規則](/help/forms/assets/edit-rules-icon.svg)圖示。接著顯示規則編輯器使用者介面。
 
 ![規則編輯器使用者介面](/help/edge/docs/forms/assets/rule-editor-for-field.png)
 
-在本文中，`form object`和`form component`可互換使用。
+在本文中，`form object` 和 `form component` 可互換使用。
 
 您可以立即開始使用[規則編輯器中可用的規則類型](#available-rule-types-in-rule-editor)，為所選取的表單欄位編寫規則或商業邏輯。
 
 ## 了解規則編輯器使用者介面
 
-當您按一下![edit-rules](/help/forms/assets/edit-rules-icon.svg)圖示時，規則編輯器的編輯器會開啟：
+按一下「![編輯規則](/help/forms/assets/edit-rules-icon.svg)」圖示，規則編輯器的編輯器會隨即開啟：
 
 ![規則編輯器使用者介面](/help/edge/docs/forms/assets/rule-editor-interface.png)
 
@@ -71,20 +72,20 @@ ht-degree: 76%
   </thead>
   <tbody>
     <tr>
-      <td>1.標題</td>
-      <td>顯示表單元件的標題和選取的規則型別。 例如，「輸入薪資總額」是選取「何時」規則型別的文字方塊元件。 </td>
+      <td>1. 標題</td>
+      <td>顯示表單元件的標題和選取的規則類型。例如，「輸入薪資總額」是選取了「何時」規則類型的文字方塊元件。 </td>
     </tr>
     <tr>
       <td>2. 表單物件和函數</td>
-      <td><b>Forms物件</b>索引標籤會顯示表單中包含之所有元件的階層檢視。 <b>函式</b>索引標籤包含規則編輯器中的一組內建函式。</td>
+      <td>「<b>表單物件</b>」索引標籤會顯示表單中所包含的所有元件的階層式檢視。「<b>函數</b>」索引標籤會包括一組規則編輯器中的內建函數。</td>
     </tr>
     <tr>
       <td>3. 表單物件和函數切換</td>
-      <td>切換按鈕會交替顯示或隱藏表單物件和函式窗格。 </td>
+      <td>切換按鈕會交替顯示或隱藏表單物件和功能窗格。 </td>
     </tr>
     <tr>
       <td>4. 視覺化規則編輯器</td>
-      <td>視覺化規則編輯器是您可為表單元件建立規則的介面。</td>
+      <td>視覺化規則編輯器是您可以為表單元件建立規則的介面。</td>
     </tr>
     <tr>
       <td>5. 完成和取消按鈕</td>
@@ -93,7 +94,7 @@ ht-degree: 76%
   </tbody>
 </table>
 
-選取表單元件時，會列出表單元件上的任何現有規則。 您可以在規則編輯器中檢視標題和預覽規則摘要。 此外，您可以變更規則的順序、編輯規則、啟用/停用規則或刪除規則。
+當您選取元件時，該表單元件的全部現有規則即會列出。您可以在規則編輯器上檢視標題和預覽規則摘要。此外，您可以變更規則的順序、編輯規則、啟用/停用規則或刪除規則。
 
 ![顯示表單物件的可用規則](/help/edge/docs/forms/assets/rule-editor15.png)
 
@@ -111,7 +112,7 @@ ht-degree: 76%
   <tbody>
     <tr>
       <td>設定值</td>
-      <td>根據是否滿足指定的條件來設定表單元件的值。</td>
+      <td>根據是否滿足指定條件來設定表單元件的值。</td>
     </tr>
     <tr>
       <td>清除值</td>
@@ -127,19 +128,19 @@ ht-degree: 76%
     </tr>
     <tr>
       <td>驗證</td>
-      <td>根據條件檢查表單元件，如果不符合條件，則顯示錯誤。 </td>
+      <td>根據條件檢查表單元件，如果未滿足條件即顯示錯誤。 </td>
     </tr>
     <tr>
       <td>條件</td>
-      <td>這會指定評估條件，之後會在滿足條件時觸發動作。 它遵循<i>condition-action-alternate</i>動作規則結構或<i>condition-action</i>規則結構。 </td>
+      <td>這會指定評估的條件，以及在滿足條件時要觸發的動作。其會遵循<i>條件-動作-替代</i>動作規則結構或<i>條件-動作</i>規則結構。 </td>
     </tr>
     <tr>
       <td>格式</td>
-      <td> 當表單元件的值變更時，使用指定的運算式來修改表單元件的顯示值。</td>
+      <td> 當表單元件的值變更時，使用指定的運算式修改其顯示值。</td>
     </tr>
     <tr>
       <td>叫用服務</td>
-      <td>叫用使用外部API、表單資料模型或RESTful Web服務設定的服務。</td>
+      <td>叫用使用外部 API、表單資料模型或 RESTful Web 服務所設定的服務。</td>
     </tr>
     <tr>
       <td>設定屬性</td>
@@ -147,11 +148,11 @@ ht-degree: 76%
     </tr>
     <tr>
       <td>設定焦點</td>
-      <td>將焦點設定在指定的表單元件。</td>
+      <td>在指定的表單元件上設定焦點。</td>
     </tr>
     <tr>
       <td>儲存表單</td>
-      <td>它可讓使用者使用草稿和提交Forms入口網站元件，將表單儲存為草稿。 </td>
+      <td>這讓使用者可以使用草稿和提交表單入口網站元件將表單儲存為草稿。 </td>
     </tr>
     <tr>
       <td>提交表單</td>
@@ -166,15 +167,15 @@ ht-degree: 76%
       <td>新增或移除指定的可重複面板或表格列執行個體。</td>
     </tr>
     <tr>
-      <td>導覽至</td>
-      <td>導覽至其他最適化表單、其他資產 (例如影像或文件片段) 或外部 URL。</td>
+      <td>瀏覽至</td>
+      <td>瀏覽至其他最適化表單、其他資產 (例如影像或文件片段) 或外部 URL。</td>
     </tr>
     <tr>
       <td>分派事件</td>
       <td>根據預先定義的條件或事件觸發指定動作。</td>
     </tr>
     <tr>
-      <td>在面板之間導覽</td>
+      <td>在面板之間瀏覽</td>
       <td>您可於表單中的不同面板之間切換焦點。</td>
     </tr>
   </tbody>
@@ -185,7 +186,7 @@ ht-degree: 76%
 
 ## 編寫規則
 
-若要了解如何在視覺化規則編輯器中編寫規則，我們以簡單的稅額計算表單為例：
+若要瞭解如何在「視覺規則編輯器」中編寫規則，讓我們來看看稅捐計算表單的簡單範例：
 
 ![規則編輯器範例](/help/edge/docs/forms/assets/rule-editor-1.png)
 
@@ -215,10 +216,10 @@ ht-degree: 76%
 1. 在通用編輯器中開啟表單以進行編輯。
 1. 新增下列表單元件：
    * 稅額計算表 (標題)
-   * 薪資毛額（數字輸入）
-   * 額外扣除（數字輸入）
-   * 應課稅收入（數字輸入）
-   * 應付稅金（輸入數字）
+   * 薪資總額 (數字輸入)
+   * 其他扣除額 (數字輸入)
+   * 應稅所得 (數字輸入)
+   * 應納稅額 (數字輸入)
    * 提交 (提交按鈕)
 1. 透過開啟其 `Properties`，隱藏 `Additional Deduction` 表單欄位。
 
@@ -228,10 +229,10 @@ ht-degree: 76%
 
 製作表單後，請編寫第一條規則，只有在薪資總額超過 $50,000 時才顯示 `Additional Deduction` 欄位。若要新增條件式規則：
 
-1. 在Universal Editor中開啟表單以進行編輯，並選取內容樹狀結構中的&#x200B;**[!UICONTROL Gross Salary]**&#x200B;欄位，然後選取![edit-rules](/help/forms/assets/edit-rules-icon.svg)。 或者，您可以直接從&#x200B;**[!UICONTROL Forms物件]**&#x200B;窗格選取&#x200B;**[!UICONTROL 薪資總額]**欄位。
+1. 在通用編輯器中開啟表單以進行編輯，然後選取內容樹中的「**[!UICONTROL 薪資總額]**」，並選取「![編輯規則](/help/forms/assets/edit-rules-icon.svg)」。或者，您可以直接從「**[!UICONTROL 表單物件]**」窗格選取「**[!UICONTROL 薪資總額]**」欄位。
    ![規則編輯器範例 1](/help/edge/docs/forms/assets/rule-editor3.png)
 顯示規則編輯器視覺化介面。
-1. 按一下&#x200B;**[!UICONTROL 建立]**以建立規則。
+1. 按一下「**[!UICONTROL 建立]**」，即可建立規則。
    ![規則編輯器範例 2](/help/edge/docs/forms/assets/rule-editor4.png)
 依預設已選取 `Set Value Of` 規則類型。雖然您無法變更或修改所選物件，但可以使用規則下拉式清單以選取其他規則類型。\
    ![規則編輯器範例 3](/help/edge/docs/forms/assets/rule-editor5.png)
@@ -263,8 +264,8 @@ ht-degree: 76%
 
 接下來，編寫規則來計算 `Taxable Income`，即 `Gross Salary` 和 `Additional Deduction` 之間的差額 (如適用)。若要在「**[!UICONTROL 應稅所得]**」欄位中新增計算規則，請執行下列步驟：
 
-1. 在製作模式中，選取「**[!UICONTROL 應稅所得]**」欄位，並選取![編輯規則](/help/forms/assets/edit-rules-icon.svg)圖示。或者，您可以直接從&#x200B;**[!UICONTROL Forms物件]**&#x200B;窗格中選取&#x200B;**[!UICONTROL 應稅收入]**&#x200B;欄位。
-1. 接著，選取&#x200B;**[!UICONTROL 建立]**以建立規則。
+1. 在製作模式中，選取「**[!UICONTROL 應稅所得]**」欄位，並選取![編輯規則](/help/forms/assets/edit-rules-icon.svg)圖示。或者，您可以直接從「**[!UICONTROL 表單物件]**」窗格選取「**[!UICONTROL 應稅所得]**」欄位。
+1. 接下來，選取「**[!UICONTROL 建立]**」，即可建立規則。
    ![規則編輯器範例 13](/help/edge/docs/forms/assets/rule-editor16.png)
 1. 選取「**[!UICONTROL 選取選項]**」，並選取「**[!UICONTROL 數學運算式]**」。開啟用於編寫數學運算式的欄位。
    ![規則編輯器範例 14](/help/edge/docs/forms/assets/rule-editor17.png)
@@ -282,7 +283,7 @@ ht-degree: 76%
 
    現在為「`Tax Payable `」欄位新增規則，而此欄位是由應稅所得乘以稅率計算得出。為簡單起見，假設固定稅率為 `10%`。
 
-1. 在製作模式中，選取「**[!UICONTROL 應納稅額]**」欄位，並選取![編輯規則](/help/forms/assets/edit-rules-icon.svg)圖示。接著，選取&#x200B;**[!UICONTROL 建立]**以建立規則。
+1. 在製作模式中，選取「**[!UICONTROL 應納稅額]**」欄位，並選取![編輯規則](/help/forms/assets/edit-rules-icon.svg)圖示。接下來，選取「**[!UICONTROL 建立]**」，即可建立規則。
    ![規則編輯器範例 16](/help/edge/docs/forms/assets/rule-editor19.png)
 1. 選取「**[!UICONTROL 選取選項]**」，並選取「**[!UICONTROL 數學運算式]**」。開啟用於編寫數學運算式的欄位。
    ![規則編輯器範例 17](/help/edge/docs/forms/assets/rule-editor20.png)
@@ -370,15 +371,15 @@ export { getFullName, days };
 
    ![規則編輯器中的自訂函數](/help/edge/docs/forms/assets/custom-function-rule-editor.png)
 
-1. **預覽表單**：使用新實作的函式預覽您的表單。
+1. **預覽表單**：預覽您的表單和新實作的函數。
 
 ## 其他資訊
 
 >[!NOTE]
 >
-> 在Universal Editor中，自訂函式指令碼不支援靜態和動態匯入。 您必須在`../[blocks]/form/functions.js`檔案中新增完整程式碼。
+> 在通用編輯器中，自訂函數指令碼不支援靜態和動態匯入。您需要在 `../[blocks]/form/functions.js` 檔案中新增完整的程式碼。
 
-本文提供通用編輯器中可用規則編輯器的有限資訊。 若要進一步瞭解規則編輯器和自訂函式，請參閱下列文章：
+本文可提供有關通用編輯器中可用的規則編輯器的有限資訊。若要了解規則編輯器和自訂函數的詳細資訊，請參閱下列文章：
 
 {{see-also-rule-editor}}
 

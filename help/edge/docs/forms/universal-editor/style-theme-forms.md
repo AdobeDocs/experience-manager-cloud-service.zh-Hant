@@ -1,19 +1,20 @@
 ---
 title: 自訂 AEM Forms 適用的 Edge Delivery Services 主題和樣式
-description: 有效自訂透過Edge Delivery Services提供的AEM Forms主題和風格，確保一致和品牌化的使用者體驗。
+description: 有效地自訂透過 Edge Delivery Services 交付的 AEM Forms 的主題和樣式，從而確保具有凝聚力和品牌化的使用者體驗。
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-hide: true
-hidefromtoc: true
 exl-id: ac780399-34fe-457d-aaf4-b675656c024d
-source-git-commit: ba42a99e6138616ab6a7564c4bf58400844bdcc4
+source-git-commit: 0c6f024594e1b1fd98174914d2c0714dffecb241
 workflow-type: tm+mt
-source-wordcount: '1828'
-ht-degree: 89%
+source-wordcount: '1876'
+ht-degree: 96%
 
 ---
 
 # 自訂表單的外觀
+
+<span class="preview">此功能可透過搶先存取計畫使用。 若要要求存取權，請從您的正式地址傳送電子郵件至<a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a>，其中包含您的GitHub組織名稱和存放庫名稱。 例如，如果存放庫URL是https://github.com/adobe/abc，組織名稱是adobe，存放庫名稱是abc。</span>
+
 
 表單對於網站上的使用者互動至關重要，可讓使用者輸入資料。您可以使用階層式樣式表 (CSS) 來設定表單欄位的樣式，增強表單的視覺呈現效果並提升使用者體驗。
 
@@ -24,7 +25,7 @@ ht-degree: 89%
 在文章的最後：
 
 * 您可以了解最適化表單區塊中包含的預設 CSS 檔案的結構。
-* 您對Adaptive Forms區塊所提供的表單元件的HTML結構已有瞭解，包括一般元件和特定元件，例如下拉式清單、選項群組及核取方塊群組。
+* 您可以了解最適化表單區塊所提供的表單元件的 HTML 結構，包括一般元件和特定元件，例如下拉式清單、單選按鈕群組和核取方塊群組。
 * 您將學習如何使用 CSS 選擇器根據欄位類型和欄位名稱設定表單欄位的樣式，從而根據需求實現一致或獨特的樣式。
 
 ## 了解表單欄位類型
@@ -53,7 +54,7 @@ ht-degree: 89%
 
 * **更新預設樣式**：您可以透過編輯 `/blocks/form/form.css file` 來修改表單的預設樣式。此檔案提供了表單的全面樣式，支援多步驟精靈表單。它強調使用自訂CSS變數來輕鬆進行自訂、維護以及跨表單的統一樣式。
 
-* **適用於Forms的CSS樣式**：若要確保正確套用您的樣式，請在`main .form form`選取器中包裝表單特定的CSS。 這可確保您的樣式僅以主要內容區域中的表單元素為目標，以避免與網站的其他部分衝突。
+* **表單的 CSS 樣式**：為了確保正確套用樣式，請將表單特定的 CSS 包覆在 `main .form form` 選取器中。這可確保您的樣式只會以主內容區域內的表單元素為目標，避免與網站的其他部分發生衝突。
 範例：
 
   ```css
@@ -69,7 +70,7 @@ ht-degree: 89%
         /* Add styles specific to labels inside the form */
     }
   
-##元件結構
+## 元件結構
 
 最適化表單區塊為各種表單元素提供一致的 HTML 結構，確保輕鬆進行樣式設定和管理。您可以使用 CSS 進行樣式設定，藉此操控元件。
 
@@ -92,7 +93,7 @@ ht-degree: 89%
 * 類別：div 元素有幾個目標為特定元素和樣式的類別。您需要 `{Type}-wrapper` 或 `field-{Name}` 類別以開發 CSS 選取器來設定表單欄位樣式：
 * {Type}：根據欄位類型識別元件。例如，文字 (text-wrapper)、數字 (number-wrapper)、日期 (date-wrapper)。
 * {Name}：根據名稱識別元件。欄位名稱只能包含英數字元，名稱中的多個連續破折號將替換為單個破折號 `(-)`，並且欄位名稱中的開頭和結尾破折號將被刪除。例如，名字 (field-first-name field-wrapper)。
-* {FieldId}：這是欄位的唯一識別碼，會自動產生。
+* {FieldId}：該欄位的唯一識別碼，會自動產生。
 * {Required}：它是一個布林值，表示該欄位是否為必填欄位。
 * 標籤：的 `label` 元素提供欄位的描述性文字，並使用 `for` 屬性將其與輸入元素相關聯。
 * 輸入：`input` 元素定義要輸入的資料類型。例如，文字、數字、電子郵件。
@@ -140,7 +141,7 @@ ht-degree: 89%
   
 ```
 * `.{Type}-wrapper`：根據欄位類型以外部 `div` 元素為目標。例如，`.text-wrapper` 以所有文字欄位為目標。
-* `.field-{Name}`：根據特定欄位名稱進一步選取元素。例如，`.field-first-name` 以「名字」文字欄位為目標。雖然此選擇器可用來為含有 field-{Name} 類別的元素進行目標定位，但請務必謹慎。在此特定情況下，它對於樣式化輸入欄位將沒有幫助，因為它不僅會鎖定輸入本身，還會鎖定標籤和說明元素。 建議使用更具體的選取器，例如您用於鎖定文字輸入欄位（.text-wrapper輸入）的選取器。
+* `.field-{Name}`：根據特定欄位名稱進一步選取元素。例如，`.field-first-name` 以「名字」文字欄位為目標。雖然此選擇器可用來為含有 field-{Name} 類別的元素進行目標定位，但請務必謹慎。在這種特定情況下，這對於設定輸入欄位的樣式並不是很有用，因為其不僅以輸入本身為目標，而且還會以標籤和描述元素為目標。建議使用更特定的選取器，例如，用於為文字輸入欄位 (.text-wrapper 輸入) 的選取器進行目標定位。
 
 **一般元件的 CSS 選取器範例**
 
@@ -338,9 +339,9 @@ main .form form .field-color .radio-wrapper label {
 
 +++
 
-+++ 核取方塊群組的 CSS 選擇器
++++ 核取方塊群組的 CSS 選取器
 
-* 鎖定外部包裝函式：這些選取器會鎖定選項和核取方塊群組最外層的容器，讓您套用一般樣式至整個群組結構。 這對於設定間距、對齊方式或其他版面相關的屬性非常有用。
+* 以外部包裝函式為目標：這些選取器的目標為單選按鈕和核取方塊群組的最外層容器，讓您可將一般樣式套用至整個群組結構。這對於設定間距、對齊方式或其他版面相關的屬性非常有用。
 
 ```CSS
   
@@ -460,7 +461,7 @@ main .form form .checkbox-group-wrapper input[type="checkbox"]:checked + label::
 
 * Fieldset 元素可用作含有 panel-wrapper 類別和其他類別的面板容器，以便根據面板名稱 (field-login) 設定樣式。
 * 圖例元素 (<legend>) 可用作面板標題，其中包含文字「登入資訊」和 field-label 類別。data-visible=&quot;false&quot; 屬性可以與 JavaScript 一起用來控制標題的可見度。
-* 在欄位集內，多個。{Type}-wrapper 元素 (在本例中為 .text-wrapper 和 .password-wrapper) 代表面板中的個別表單欄位。
+* 在 fieldset 內部、多個。{Type}-wrapper 元素 (在本例中為 .text-wrapper 和 .password-wrapper) 代表面板中的個別表單欄位。
 * 每個包裝函式都包含一個標籤、輸入欄位和說明，與前面的範例類似。
 
 +++

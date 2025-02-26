@@ -3,10 +3,8 @@ title: 瞭解Universal Editor — 開發人員教學課程
 description: 本教學課程可協助您啟動並執行通用編輯器介面。 它會引導您瞭解使用者介面，以便在Universal Editor中建立您自己的Edge Delivery Services表單。
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-hide: true
-hidefromtoc: true
 exl-id: 90321e81-bb55-48b2-b329-4944bf926309
-source-git-commit: 0d28009332feccb4552e2cc42d7b1a8da43d579c
+source-git-commit: 0c6f024594e1b1fd98174914d2c0714dffecb241
 workflow-type: tm+mt
 source-wordcount: '1425'
 ht-degree: 2%

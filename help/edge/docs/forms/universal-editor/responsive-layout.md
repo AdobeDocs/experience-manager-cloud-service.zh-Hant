@@ -3,16 +3,17 @@ title: 瞭解通用編輯器 — 回應式模式
 description: 本文說明如何使用通用編輯器中的不同模擬器預覽表單，以視覺化方式呈現表單在製作期間的外觀。
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-hide: true
-hidefromtoc: true
-source-git-commit: 0d28009332feccb4552e2cc42d7b1a8da43d579c
+source-git-commit: 0c6f024594e1b1fd98174914d2c0714dffecb241
 workflow-type: tm+mt
-source-wordcount: '360'
-ht-degree: 2%
+source-wordcount: '408'
+ht-degree: 1%
 
 ---
 
 # WYSIWYG製作中的回應式模式
+
+<span class="preview">此功能可透過搶先存取計畫使用。 若要要求存取權，請從您的正式地址傳送電子郵件至<a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a>，其中包含您的GitHub組織名稱和存放庫名稱。 例如，如果存放庫URL是https://github.com/adobe/abc，組織名稱是adobe，存放庫名稱是abc。</span>
+
 
 [通用編輯器](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)可讓您使用不同的模擬器預覽Edge Delivery Services Forms，以檢視表單在製作過程中的外觀。
 
