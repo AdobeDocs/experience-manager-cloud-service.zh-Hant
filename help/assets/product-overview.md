@@ -2,7 +2,7 @@
 title: 探索Content Hub
 description: 深入了解 Content Hub、其主要優勢、如何存取，以及如何針對 Content Hub 中的選項提供意見反應。
 exl-id: c5908058-f1ad-4aaa-9e8e-c0157e107ed1
-source-git-commit: 88926df720df2aae74312998773069aa4c017c31
+source-git-commit: cccfddd6600358bc7bd4d000d760d62626107426
 workflow-type: tm+mt
 source-wordcount: '705'
 ht-degree: 90%
@@ -84,7 +84,7 @@ Content Hub 需要 Experience Manager as a Cloud Service 的生產作者環境�
 
 1. [在Experience Manager Assets中將資產核准為DAM作者或管理員](approve-assets.md)。
 
-1. [設定其他使用者的Content Hub使用者介面做為管理員](configure-content-hub-ui-options.md)..
+1. [設定其他使用者的Content Hub使用者介面做為系統管理員](configure-content-hub-ui-options.md)。
 
 1. [將 Content Hub 存取權授予團隊中的更多使用者](deploy-content-hub.md#onboard-content-hub-consumer-users)。
 
