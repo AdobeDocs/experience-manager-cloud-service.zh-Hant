@@ -1,15 +1,15 @@
 ---
-title: Content Hub 概觀
+title: 探索Content Hub
 description: 深入了解 Content Hub、其主要優勢、如何存取，以及如何針對 Content Hub 中的選項提供意見反應。
 exl-id: c5908058-f1ad-4aaa-9e8e-c0157e107ed1
-source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
-workflow-type: ht
-source-wordcount: '704'
-ht-degree: 100%
+source-git-commit: 88926df720df2aae74312998773069aa4c017c31
+workflow-type: tm+mt
+source-wordcount: '705'
+ht-degree: 90%
 
 ---
 
-# Content Hub 概觀 {#overview-content-hub}
+# 探索Content Hub {#overview-content-hub}
 
 | [搜尋最佳實務](/help/assets/search-best-practices.md) | [中繼資料最佳實務](/help/assets/metadata-best-practices.md) | [具有 OpenAPI 功能的 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 開發人員文件](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |----|-----|
@@ -56,10 +56,10 @@ Content Hub 需要 Experience Manager as a Cloud Service 的生產作者環境�
 
   `https://experience.adobe.com/#/assets/contenthub`
 
-* 登入 experience.adobe com，並按一下「**[!UICONTROL Experience Manager Assets Content Hub]**」(在「**[!UICONTROL 快速存取]**」區段中)：
+* 登入[experience.adobe.com](https://auth.services.adobe.com/en_GB/index.html?callback=https%3A%2F%2Fims-na1.adobelogin.com%2Fims%2Fadobeid%2Fexc_app%2FAdobeID%2Ftoken%3Fredirect_uri%3Dhttps%253A%252F%252Fexperience.adobe.com%252F%2523old_hash%253Dold_hash%253D%252523%25252F%2526from_ims%253Dtrue%253Fclient_id%253Dexc_app%2526api%253Dauthorize%2526scope%253Dab.manage%252Caccount_cluster.read%252Cadditional_info%252Cadditional_info.job_function%252Cadditional_info.projectedProductContext%252Cadditional_info.roles%252CAdobeID%252Cadobeio.appregistry.read%252Cadobeio_api%252Caudiencemanager_api%252Ccreative_cloud%252Cmps%252Copenid%252Corg.read%252Cpps.read%252Cread_organizations%252Cread_pc%252Cread_pc.acp%252Cread_pc.dma_tartan%252Csession%26state%3D%257B%2522jslibver%2522%253A%2522v2-v0.31.0-2-g1e8a8a8%2522%252C%2522nonce%2522%253A%25222316022399331147%2522%257D%26code_challenge_method%3Dplain%26use_ms_for_expiry%3Dtrue&amp;client_id=exc_app&amp;scope=ab.manage%2Caccount_cluster.read%2Cadditional_info%2Cadditional_info.job_function%2Cadditional_info.projectedProductContext%2Cadditional_info.roles%2CAdobeID%2Cadobeio.appregistry.read%2Cadobeio_api%2Caudiencemanager_api%2Ccreative_cloud%2Cmps%2Copenid%2Corg.read%2Cpps.read%2Cread_organizations%2Cread_pc%2Cread_pc.acp%2Cread_pc.dma_tartan%2Csession&amp;state=%7B%22jslibver%22%3A%22v2-v0.31.0-2-g1e8a8a8%22%2C%22nonce%22%3A%222316022399331147%22%7D&amp;relay=64da7fa8-cd9e-47cf-9892-7f3ef3092f8c&amp;locale=en_GB&amp;flow_type=token&amp;dctx_id=v%3A2%2Cs%2Cf%2Cb8e64530-b013-11ee-a6c1-e721bdec0171&amp;idp_flow_type=login&amp;response_type=token&amp;profile_filter=%7B%22findFirst%22%3Atrue%2C+%22fallbackToAA%22%3Atrue%2C+%22preferForwardProfile%22%3Atrue%2C+%22searchEntireCluster%22%3Atrue%7D%3B+isOwnedByOrg%28%2776B329395DF155D60A495E2C%40AdobeOrg%27%29&amp;code_challenge_method=plain&amp;redirect_uri=https%3A%2F%2Fexperience.adobe.com%2F%23old_hash%3Dold_hash%3D%2523%252F%26from_ims%3Dtrue%3Fclient_id%3Dexc_app%26api%3Dauthorize%26scope%3Dab.manage%2Caccount_cluster.read%2Cadditional_info%2Cadditional_info.job_function%2Cadditional_info.projectedProductContext%2Cadditional_info.roles%2CAdobeID%2Cadobeio.appregistry.read%2Cadobeio_api%2Caudiencemanager_api%2Ccreative_cloud%2Cmps%2Copenid%2Corg.read%2Cpps.read%2Cread_organizations%2Cread_pc%2Cread_pc.acp%2Cread_pc.dma_tartan%2Csession&amp;use_ms_for_expiry=true#/)，然後按一下&#x200B;**[!UICONTROL 快速存取]**&#x200B;區段中可用的&#x200B;**[!UICONTROL Experience Manager Assets Content Hub]**：
   ![Content Hub 存取](assets/access-content-hub.png)
 
-* 登入 experience.adobe com，並按一下產品切換器中的「**[!UICONTROL Experience Manager Assets Content Hub]**」：
+* 登入[experience.adobe.com](https://auth.services.adobe.com/en_GB/index.html?callback=https%3A%2F%2Fims-na1.adobelogin.com%2Fims%2Fadobeid%2Fexc_app%2FAdobeID%2Ftoken%3Fredirect_uri%3Dhttps%253A%252F%252Fexperience.adobe.com%252F%2523old_hash%253Dold_hash%253D%252523%25252F%2526from_ims%253Dtrue%253Fclient_id%253Dexc_app%2526api%253Dauthorize%2526scope%253Dab.manage%252Caccount_cluster.read%252Cadditional_info%252Cadditional_info.job_function%252Cadditional_info.projectedProductContext%252Cadditional_info.roles%252CAdobeID%252Cadobeio.appregistry.read%252Cadobeio_api%252Caudiencemanager_api%252Ccreative_cloud%252Cmps%252Copenid%252Corg.read%252Cpps.read%252Cread_organizations%252Cread_pc%252Cread_pc.acp%252Cread_pc.dma_tartan%252Csession%26state%3D%257B%2522jslibver%2522%253A%2522v2-v0.31.0-2-g1e8a8a8%2522%252C%2522nonce%2522%253A%25222316022399331147%2522%257D%26code_challenge_method%3Dplain%26use_ms_for_expiry%3Dtrue&amp;client_id=exc_app&amp;scope=ab.manage%2Caccount_cluster.read%2Cadditional_info%2Cadditional_info.job_function%2Cadditional_info.projectedProductContext%2Cadditional_info.roles%2CAdobeID%2Cadobeio.appregistry.read%2Cadobeio_api%2Caudiencemanager_api%2Ccreative_cloud%2Cmps%2Copenid%2Corg.read%2Cpps.read%2Cread_organizations%2Cread_pc%2Cread_pc.acp%2Cread_pc.dma_tartan%2Csession&amp;state=%7B%22jslibver%22%3A%22v2-v0.31.0-2-g1e8a8a8%22%2C%22nonce%22%3A%222316022399331147%22%7D&amp;relay=64da7fa8-cd9e-47cf-9892-7f3ef3092f8c&amp;locale=en_GB&amp;flow_type=token&amp;dctx_id=v%3A2%2Cs%2Cf%2Cb8e64530-b013-11ee-a6c1-e721bdec0171&amp;idp_flow_type=login&amp;response_type=token&amp;profile_filter=%7B%22findFirst%22%3Atrue%2C+%22fallbackToAA%22%3Atrue%2C+%22preferForwardProfile%22%3Atrue%2C+%22searchEntireCluster%22%3Atrue%7D%3B+isOwnedByOrg%28%2776B329395DF155D60A495E2C%40AdobeOrg%27%29&amp;code_challenge_method=plain&amp;redirect_uri=https%3A%2F%2Fexperience.adobe.com%2F%23old_hash%3Dold_hash%3D%2523%252F%26from_ims%3Dtrue%3Fclient_id%3Dexc_app%26api%3Dauthorize%26scope%3Dab.manage%2Caccount_cluster.read%2Cadditional_info%2Cadditional_info.job_function%2Cadditional_info.projectedProductContext%2Cadditional_info.roles%2CAdobeID%2Cadobeio.appregistry.read%2Cadobeio_api%2Caudiencemanager_api%2Ccreative_cloud%2Cmps%2Copenid%2Corg.read%2Cpps.read%2Cread_organizations%2Cread_pc%2Cread_pc.acp%2Cread_pc.dma_tartan%2Csession&amp;use_ms_for_expiry=true#/)，然後按一下產品切換器中可用的&#x200B;**[!UICONTROL Experience Manager Assets Content Hub]**：
   ![Content Hub 存取方法 3](assets/access-content-hub-alternate.png)
 
 
@@ -82,9 +82,9 @@ Content Hub 需要 Experience Manager as a Cloud Service 的生產作者環境�
 
 1. [新增重要 Content Hub 使用者](deploy-content-hub.md#onboard-content-hub-consumer-users)。
 
-1. [DAM 作者或管理員使用 Experience Manager Assets 核准資產](approve-assets.md)。
+1. [在Experience Manager Assets中將資產核准為DAM作者或管理員](approve-assets.md)。
 
-1. [管理員可以為其他使用者設定 Content Hub 使用者介面](configure-content-hub-ui-options.md)。
+1. [設定其他使用者的Content Hub使用者介面做為管理員](configure-content-hub-ui-options.md)..
 
 1. [將 Content Hub 存取權授予團隊中的更多使用者](deploy-content-hub.md#onboard-content-hub-consumer-users)。
 
