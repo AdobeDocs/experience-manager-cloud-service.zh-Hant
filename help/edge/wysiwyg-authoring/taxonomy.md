@@ -4,10 +4,10 @@ description: 了解如何管理分類資料，以便將標記與使用 Edge Deli
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 017982e4-a4c8-4097-8751-9619cc4639d0
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
-source-wordcount: '974'
-ht-degree: 100%
+source-git-commit: d0a037090e4b31f18deb0a9bd3238cab0a8d185e
+workflow-type: tm+mt
+source-wordcount: '1003'
+ht-degree: 97%
 
 ---
 
@@ -23,6 +23,10 @@ ht-degree: 100%
 這些標記不僅對您和您的作者在組織內容方面很實用，對您的讀者來說也很實用。標記及其分類可以在頁面的元件中使用，幫助您的讀者導覽您的內容。
 
 通用編輯器僅適用於您標記的 ID。透過為內容建立分類頁面，您可以使用所有語言將這些標記的說明公開到通用編輯器，使其能夠在轉譯內容時使用該資訊。
+
+>[!TIP]
+>
+>請參閱檔案[模型定義、欄位和元件型別](/help/implementing/universal-editor/field-types.md)，以取得通用編輯器可用的AEM標籤欄位的詳細資訊，該編輯器可搭配您的分類法使用。
 
 ## 建立分類頁面 {#creating}
 
