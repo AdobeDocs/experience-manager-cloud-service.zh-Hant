@@ -4,18 +4,18 @@ description: 快速製作完美表單！⚡ AEM Forms Edge Delivery 文件型製
 feature: Edge Delivery Services
 exl-id: 0cf881a2-3784-45eb-afe8-3435e5e95cf4
 role: Admin, Architect, Developer
-source-git-commit: cb914f76b0b785a89b20ef5eaacbc36e8217944b
+source-git-commit: 744f505c8e97b6ca6947b685ddb1eba41b370cfa
 workflow-type: tm+mt
-source-wordcount: '782'
-ht-degree: 86%
+source-wordcount: '781'
+ht-degree: 98%
 
 ---
 
-# 使用最適化 Forms 區塊建立表單
+# 使用最適化表單區塊建立表單
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427881?quality=12&learn=on)
 
-AEM Forms Edge Delivery 會提供一個區塊 (名為最適化 Forms 區塊)，可協助您輕鬆建立表單來擷取和儲存擷取的資料。您可以[建立預先設定最適化 Forms 區塊的新 AEM 專案](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block)，或可以[將最適化 Forms 區塊新增至現有 AEM 專案](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project)。
+AEM Forms Edge Delivery 會提供一個區塊 (名為最適化表單區塊)，可協助您輕鬆建立表單來擷取和儲存擷取的資料。您可以[建立預先設定最適化表單區塊的新 AEM 專案](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block)，或可以[將最適化表單區塊新增至現有 AEM 專案](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project)。
 
 這些表單可直接提交資料至 Microsoft Excel 或 Google Sheets 檔案，讓您能夠使用由 Google Sheets、Microsoft Excel 和 Microsoft SharePoint 等強大 API 建構的活躍生態系統，以便輕鬆處理提交的資料或啟動現有的業務工作流程。
 
@@ -26,7 +26,8 @@ AEM Forms Edge Delivery 會提供一個區塊 (名為最適化 Forms 區塊)，�
 
 在開始之前，請確保您已完成以下步驟：
 
-* 使用AEM Forms範本設定[AEM專案](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) [已將Adaptive Forms區塊新增到您現有的AEM專案](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project)，並在本機電腦上複製對應的GitHub存放庫。
+* [使用 AEM Forms boilerplate 設定 AEM 專案](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block)，或[將最適化表單區塊新增至您現有的 AEM 專案](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project)，並複製本機電腦上的對應 GitHub 存放庫。
+
 <!--In this document, the local folder of your Edge Delivery Services (EDS) project is referred as `[EDS Project repository]`.  -->
 * 確保您可以存取 Google Sheets 或 Microsoft SharePoint。若要將 Microsoft SharePoint 設定為您的內容來源，請參閱[「如何使用 SharePoint」](https://www.aem.live/docs/setup-customer-sharepoint)。
 
@@ -64,7 +65,7 @@ Ensure a smooth GitHub build process by addressing potential issues:
 
 使用試算表可輕鬆地製作表單，而無需瀏覽複雜的流程。您可以定義構成表單結構的列和欄。每列代表一個單獨的[表單欄位](/help/edge/docs/forms/form-components.md#available-components)，欄標題定義對應的[欄位屬性](/help/edge/docs/forms/form-components.md#components-properties)。
 
-例如，考慮下列試算表，其中列大綱欄位用於[查詢](/help/edge/assets/enquiry.xlsx)試算表和欄標題定義其屬性：
+例如，考慮以下試算表，其中的資料列會概述[查詢](/help/edge/assets/enquiry.xlsx)試算表的欄位，而欄標題會定義其屬性：
 
 ![查詢試算表](/help/edge/assets/enquiry-form-spreadsheet.png)
 
@@ -78,11 +79,11 @@ Ensure a smooth GitHub build process by addressing potential issues:
 
 1. [根據為您專案指定的設定](https://www.aem.live/docs/setup-customer-sharepoint)，確保讓相關 AEM 使用者 (例如 `forms@adobe.com`) 共用工作表。授予使用者關於工作表的編輯權限。
 
-1. 開啟建立的試算表，並將預設工作表重新命名為「shared-aem」。
+1. 開啟建立的試算表並將預設工作表重新命名為 &quot;shared-aem&quot;。
 
-   ![將預設試算表重新命名為「共用預設」](/help/edge/assets/rename-sheet-to-shared-default.png)
+   ![將預設試算表重新命名為 &quot;shared-default&quot;](/help/edge/assets/rename-sheet-to-shared-default.png)
 
-1. 若要新增表單欄位，請在「shared-aem」工作表中插入列和欄標題。 每列應該代表一個 [表單欄位](/help/edge/docs/forms/form-components.md#available-components)，且有定義對應欄[屬性](/help/edge/docs/forms/form-components.md#components-properties)的欄標題。
+1. 若要新增表單欄位，請將列和欄標題插入 &quot;shared-aem&quot; 工作表中。每列應該代表一個 [表單欄位](/help/edge/docs/forms/form-components.md#available-components)，且有定義對應欄[屬性](/help/edge/docs/forms/form-components.md#components-properties)的欄標題。
 
 
    為了快速開始，請考慮複製[查詢試算表](/help/edge/assets/enquiry.xlsx)內容至您的試算表中。複製內容後，請儲存試算表。
@@ -105,15 +106,15 @@ Ensure a smooth GitHub build process by addressing potential issues:
    * `<repository>`表示您的 GitHub 存放庫。
    * `<owner>`是指託管 GitHub 存放庫的 GitHub 帳戶使用者名稱。
 
-   例如，如果專案的存放庫命名為「wefinance」，位於帳戶「wkndform」下，而您使用的是「main」分支，則URL如下所示：
+   例如，如果您的專案存放庫名為 &quot;wefinance&quot; (位於帳戶 &quot;wkndform&quot; 下面)，並且您使用的是 &quot;main&quot; 分支，則 URL 會如下所示：
 
 `https://main--wefinance--wkndform.aem.page/enquiry.json`
-&lt;！—(https://main--wefinance--wkndform.aem.page/enquiry.json)-->
+&lt;!--(https://main--wefinance--wkndform.aem.page/enquiry.json)-->
 
 
 +++
 
-+++ 步驟 2：使用 Edge Delivery Services (EDS) 頁面預覽表單。
++++ 步驟2：使用您的Edge Delivery Services頁面預覽表單。
 
 
 到目前為止，您已經準備好表單的結構。現在，若要預覽表單：
@@ -122,7 +123,7 @@ Ensure a smooth GitHub build process by addressing potential issues:
 
 
 
-1. 開啟文件檔案 (例如索引檔案) 以嵌入表單。或者，您可以[建立新檔案](/help/edge/assets/enquiry-form.docx)。
+1. 開啟文件檔案 (例如索引檔案) 以嵌入表單。或者，您可以[建立一個新文件](/help/edge/assets/enquiry-form.docx)。
 
 1. 移動至文件中要新增表單的預期位置。
 
@@ -133,7 +134,7 @@ Ensure a smooth GitHub build process by addressing potential issues:
    | `https://main--wefinance--wkndform.aem.live/enquiry.json` |
 
 
-   ![將最適化 Forms 區塊新增至您的網頁](/help/edge/assets/enquiry-doc-to-embed-form.png)
+   ![將最適化表單區塊新增至您的網頁](/help/edge/assets/enquiry-doc-to-embed-form.png)
 
    此區塊是用作嵌入表單的暫留位置。在該區塊的第二行中，新增 `<form>.json` 檔案的預覽 URL 作為超連結。
 

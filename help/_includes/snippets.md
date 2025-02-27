@@ -1,7 +1,7 @@
 ---
-source-git-commit: ba42a99e6138616ab6a7564c4bf58400844bdcc4
+source-git-commit: d06399fd63d38738e7aff8503aec9a72a2081b5c
 workflow-type: tm+mt
-source-wordcount: '1392'
+source-wordcount: '1390'
 ht-degree: 97%
 
 ---
@@ -25,11 +25,11 @@ ht-degree: 97%
 * [產生 AEM 最適化表單的 PDF 版本 (DoR)](/help/forms/generate-document-of-record-core-components.md)
 * [翻譯 AEM 最適化表單](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
 * [啟用 Adobe Analytics 讓最適化表單可追蹤表單使用情況](/help/forms/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.md)
-* [將最適化表單連接到 Microsoft SharePoint](/help/forms/configure-submit-actions-core-components.md#submit-to-sharedrive)
-* [將最適化表單連接到 Microsoft Power Automate](/help/forms/configure-submit-actions-core-components.md#microsoft-power-automate)
-* [將最適化表單連接到 Microsoft OneDrive](/help/forms/configure-submit-actions-core-components.md#create-a-onedrive-configuration)
+* [將最適化表單連結到 Microsoft SharePoint](/help/forms/configure-submit-actions-core-components.md#submit-to-sharedrive)
+* [將最適化表單連結到 Microsoft Power Automate](/help/forms/configure-submit-actions-core-components.md#microsoft-power-automate)
+* [將最適化表單連結到 Microsoft OneDrive](/help/forms/configure-submit-actions-core-components.md#create-a-onedrive-configuration)
 * [將最適化表單連接至 Microsoft® Azure Blob 儲存體](/help/forms/configure-submit-actions-core-components.md#azure-blob-storage)
-* [將最適化表單連接到 Salesforce](/help/forms/aem-forms-salesforce-integration.md)
+* [將最適化表單連結到 Salesforce](/help/forms/aem-forms-salesforce-integration.md)
 * [在 AEM 最適化表單中使用 Adobe Sign in](/help/forms/working-with-adobe-sign.md)
 * [為最適化表單新增地區設定](/help/forms/supporting-new-language-localization-core-components.md)
 * [將最適化表單資料傳送到資料庫](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/data-integration)
@@ -43,8 +43,8 @@ ht-degree: 97%
 ## 最適化表單提交動作 {#af-submit-action}
 
 * [寄送電子郵件](/help/forms/configure-submit-action-send-email.md)
-* [提交至SharePoint檔案庫](/help/forms/connect-forms-to-sharepoint-document-library.md)
-* [提交至SharePoint清單](/help/forms/connect-forms-to-sharepoint-list.md)
+* [提交至 SharePoint 文件庫](/help/forms/connect-forms-to-sharepoint-document-library.md)
+* [提交至 SharePoint 清單](/help/forms/connect-forms-to-sharepoint-list.md)
 * [使用表單資料模型提交](/help/forms/using-form-data-model.md#write-submitted-adaptive-form-data-into-data-sources-write-af)
 * [提交到 Azure Blob 儲存體](/help/forms/configure-submit-action-azure-blob-storage.md)
 * [提交到 REST 端點](/help/forms/configure-submit-action-restpoint.md)
@@ -52,21 +52,20 @@ ht-degree: 97%
 * [叫用 AEM 工作流程](/help/forms/configure-submit-action-workflow.md)
 * [提交至 Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
 * [提交至 Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
-* [將最適化表單連接到 Salesforce 應用程式](/help/forms/aem-forms-salesforce-integration.md)
-* [將最適化表單連接到 Microsoft](/help/forms/configure-msdynamics.md)
-* [將最適化表單連接到 Adobe Marketo Engage](/help/forms/integrate-form-to-marketo-engage.md)
+* [將最適化表單連結到 Salesforce 應用程式](/help/forms/aem-forms-salesforce-integration.md)
+* [將最適化表單連結到 Microsoft](/help/forms/configure-msdynamics.md)
+* [將最適化表單連結到 Adobe Marketo Engage](/help/forms/integrate-form-to-marketo-engage.md)
 * [建立自訂提交動作](/help/forms/custom-submit-action-for-adaptive-forms-based-on-core-components.md)
 
 ## 通用編輯器{#universal-editor-see-also}
 
-* [開始使用 AEM Forms 適用的 Edge Delivery Services](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
-* [發佈您的表單](/help/edge/docs/forms/universal-editor/publish-forms.md)
-* [提交您的表單](/help/edge/docs/forms/universal-editor/submit-action.md)
-* [自訂表單的外觀](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
-* [為您的表單建立規則](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
-* [在您的表單中使用reCAPTCHA](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
-* [為您的表單建立自訂元件](/help/edge/docs/forms/universal-editor/create-custom-component.md)
-* [在回應模式中預覽表單](/help/edge/docs/forms/universal-editor/responsive-layout.md)
+* [使用通用編輯器建立您的第一個表單](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
+* [將動態行為新增至Forms](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
+* [設定和自訂表單提交動作](/help/edge/docs/forms/universal-editor/submit-action.md)
+* [發佈和部署Forms](/help/edge/docs/forms/universal-editor/publish-forms.md)
+* [設計精美的Forms：樣式與主題指南](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
+* [建置自訂表單元件](/help/edge/docs/forms/universal-editor/create-custom-component.md)
+* [保護您的Forms遠離垃圾訊息：新增reCAPTCHA安全性](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
 
 ## 另請參閱 {#see-more-forms-eds}
 
@@ -127,9 +126,9 @@ ht-degree: 97%
    </td>
    </tr>
    <tr>
-   <td>在面板之間導覽</td>
-   <td> 提供<b>下一個按鈕</b>和<b>前一個按鈕</b>元件，以便在面板之間導覽。置於容器內的導覽按鈕會作用於其下層元素</td>
-   <td> 規則編輯器中會提供<b>在面板中導覽</b>的規則，讓使用者能夠建立於面板子系之間導覽的規則。
+   <td>在面板之間瀏覽</td>
+   <td> 提供<b>下一個按鈕</b>和<b>前一個按鈕</b>元件，以便在面板之間瀏覽。置於容器內的瀏覽按鈕會作用於其下層元素</td>
+   <td> 規則編輯器中會提供<b>在面板中瀏覽</b>的規則，讓使用者能夠建立於面板子系之間瀏覽的規則。
    </td>
    </tr>
    </tr>

@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的運作方式以及該軟體可以為您做哪些事。
 breadcrumb-title: 使用手冊
 user-guide-title: 'AEM as a Cloud Service '
-source-git-commit: 0c6f024594e1b1fd98174914d2c0714dffecb241
+source-git-commit: 744f505c8e97b6ca6947b685ddb1eba41b370cfa
 workflow-type: tm+mt
-source-wordcount: '6193'
+source-wordcount: '6195'
 ht-degree: 95%
 
 ---
@@ -1024,6 +1024,7 @@ ht-degree: 95%
    + 建立表單 {#build-forms}
       + [概觀](/help/edge/docs/forms/overview.md)
       + [Edge Delivery Services 表單如何運作？](/help/edge/docs/forms/universal-editor/edge-delivery-services-form.md)
+      + [常見問題集](/help/edge/docs/forms/adapttive-forms-for-edge-delivery-services-faq.md)
       + 以檔案為基礎的製作{#getting-started-edge-delivery-services-forms}
          + [建立您的第一個表單：使用Google工作表和Excel快速入門手冊](/help/edge/docs/forms/tutorial.md)
          + [如何使用Google工作表或Excel建立Forms：逐步指南](/help/edge/docs/forms/create-forms.md)
@@ -1043,7 +1044,7 @@ ht-degree: 95%
          + [建置自訂表單元件：開發人員指南](/help/edge/docs/forms/custom-components-forms.md)
          + [監督表單效能：Real Use Monitoring指南](/help/edge/docs/forms/real-use-monitoring-for-forms.md)
          + [在Edge上部署Forms：Edge Delivery Services的發佈指南](/help/edge/docs/forms/publishing-forms.md)
-      + WYSIWYG {#universal-editor}
+      + WYSIWYG 製作{#universal-editor}
          + [Edge Delivery Services適用的Forms Universal Editor簡介 — 完整指南](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
          + [如何使用通用編輯器建立您的第一個表單 — 逐步教學課程](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
          + [通用編輯器介面指南：工具、功能和導覽說明](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md)

@@ -4,20 +4,20 @@ description: 本教學課程可協助您啟動並執行新的 Adob​​e Experi
 feature: Edge Delivery Services
 exl-id: bb7e93ee-0575-44e1-9c5e-023284c19490
 role: Admin, Architect, Developer
-source-git-commit: 12ac8fd43d56fb95bf63b2ce92d1ec1a776e464a
+source-git-commit: 744f505c8e97b6ca6947b685ddb1eba41b370cfa
 workflow-type: tm+mt
-source-wordcount: '1658'
-ht-degree: 99%
+source-wordcount: '1656'
+ht-degree: 97%
 
 ---
 
 # 快速入門 - 開發人員教學課程
 
-身處今日數位時代，任何組織都需要建立對使用者友善的表單。AEM Forms 適用的 Edge Delivery Services (EDS) 讓您可以使用 Google Docs 和 Microsoft Office 等熟悉的工具建立表單。
+身處今日數位時代，任何組織都需要建立對使用者友善的表單。適用於AEM Forms的Edge Delivery Services可讓您使用熟悉的工具(如Google Docs和Microsoft Office)來建立表單。
 
 這些表單可直接提交資料至 Microsoft Excel 或 Google Sheets 檔案，讓您能夠使用由 Google Sheets、Microsoft Excel 和 Microsoft SharePoint 等強大 API 建構的活躍生態系統，以便輕鬆處理提交的資料或啟動現有的業務工作流程。
 
-AEM Forms 會提供一個區塊 (名為最適化表單區塊)，協助您輕鬆建立表單來擷取和儲存擷取的資料。您可以[建立已預先設定最適化AEM區塊的新Forms專案](#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) <!--or [add the Adaptive Forms Block to an existing AEM project](#add-adaptive-forms-block-to-your-existing-aem-project)-->。
+AEM Forms 會提供一個區塊 (名為最適化表單區塊)，協助您輕鬆建立表單來擷取和儲存擷取的資料。您可以[建立已預先設定最適化表單區塊的全新 AEM 專案](#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) <!--or [add the Adaptive Forms Block to an existing AEM project](#add-adaptive-forms-block-to-your-existing-aem-project)-->。
 
 此 AEM Forms 教學課程將引導您使用新的 Adob&#x200B;&#x200B;e Experience Manager (AEM) Forms 專案建立、預覽和發佈您自己的自訂表單。
 
@@ -59,7 +59,7 @@ AEM Forms 範本可協助您很快開始使用預先設定最適化表單區塊�
    >[!NOTE]
    >
    >
-   > 如果您使用有 IP 篩選功能的 GitHub Enterprise，可以將下列 IP 新增至允許清單：3.227.118.73
+   > 如果您使用GitHub Enterprise搭配IP篩選，您可以將下列IP新增至允許清單： 3.227.118.73
 
    恭喜！您有一個在  `https://<branch>--<repo>--<owner>.aem.page/` 上執行的新網站。
 
@@ -135,7 +135,7 @@ AEM Forms 範本可協助您很快開始使用預先設定最適化表單區塊�
 
       ![提交更新的 fsatab.yaml 檔案](/help/edge/assets/commit-updated-fstab-yaml.png)
 
-      這樣即可將您的內容資料夾連接到您的網站。 更新參照後，您最初可能會遇到「404 Not Found」錯誤。 這是因為您的內容還沒過預覽。 下一部分將介紹如何開始製作和預覽內容。
+      這樣即可將您的內容資料夾連結到您的網站。 更新參照後，您最初可能會遇到「404 Not Found」錯誤。 這是因為您的內容還沒過預覽。 下一部分將介紹如何開始製作和預覽內容。
 
 
 
@@ -244,7 +244,7 @@ URL：`https://main--wefinance--wkndform.aem.live/enquiry`
    git clone https://github.com/<owner>/<repo>
    ```
 
-1. 啟動您的本機環境：導覽至專案目錄並使用單一命令來啟動本機 AEM 執行個體：
+1. 啟動您的本機環境：瀏覽至專案目錄並使用單一命令來啟動本機 AEM 執行個體：
 
    ```
    cd <repo>
@@ -309,7 +309,7 @@ That's it! The Adaptive Forms Block is now part of your AEM project. You can sta
 解決潛在問題以確保 GitHub 建置流程順利進行：
 
 * **解決模組路徑錯誤：**
-如果遇到「無法解決 &quot;../../scripts/lib-franklin.js&quot; 模組的路徑」錯誤，請導覽至 [EDS Project]/blocks/forms/form.js 檔案。透過將 lib-franklin.js 檔案更換為 aem.js 檔案來更新匯入語句。
+如果遇到「無法解決 &quot;../../scripts/lib-franklin.js&quot; 模組的路徑」錯誤，請瀏覽至 [EDS Project]/blocks/forms/form.js 檔案。透過將 lib-franklin.js 檔案更換為 aem.js 檔案來更新匯入語句。
 
 * **處理 Linting 錯誤：**&#x200B;如果您遇到任何 linting 錯誤，您可以略過不予處理。開啟 [EDS Project]/package.json 檔案並將 &quot;lint&quot; 指令碼從 `"lint": "npm run lint:js && npm run lint:css"` 修改為 `"lint": "echo 'skipping linting for now'"`。儲存檔案並將變更提交至您的 GitHub 專案。
 
