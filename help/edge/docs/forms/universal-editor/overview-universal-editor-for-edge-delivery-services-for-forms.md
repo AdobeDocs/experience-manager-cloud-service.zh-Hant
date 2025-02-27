@@ -3,13 +3,11 @@ title: 適用於Forms的Edge Delivery Services的通用編輯器
 description: 使用Forms適用的Edge Delivery Services Universal Editor建立最適化Forms。
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-hide: true
-hidefromtoc: true
 exl-id: d711e0d1-a2fc-4aa6-af87-6e77a7bc5d2e
-source-git-commit: 744f505c8e97b6ca6947b685ddb1eba41b370cfa
+source-git-commit: 6b7ff166467a399502b63fd13b1f836213b7839b
 workflow-type: tm+mt
-source-wordcount: '1077'
-ht-degree: 71%
+source-wordcount: '1087'
+ht-degree: 69%
 
 ---
 
@@ -47,14 +45,14 @@ Universal Editor提供簡單、視覺化且直覺式的What You See Is What You 
 | [**樣式**](/help/edge/docs/forms/universal-editor/style-theme-forms.md) | **預填服務** （即將推出） | [**A/B測試**](https://github.com/adobe/aem-experimentation/blob/main/documentation/experiments.md) |
 | 使用CSS進行樣式設定可讓開發人員自訂表單元素的外觀，並建立與網站美學相一致的美觀設計。 | 預填服務會自動使用來自各來源的相關使用者資料填寫表單欄位，減少手動輸入過程並增強使用者體驗。 | A/B測試可讓組織實驗不同的表單設計、版面配置和功能，以識別表現最佳的變體。 |
 
-| ![分析和追蹤](/help/edge/docs/forms/universal-editor/assets/analyticsandtracking.svg) | ![任務管理](/help/edge/docs/forms/universal-editor/assets/adobe-workfront.svg) | ![資料繫結](/help/edge/docs/forms/universal-editor/assets/data-binding.svg) |
+| ![分析和追蹤](/help/edge/docs/forms/universal-editor/assets/analyticsandtracking.svg) | ![表單片段](/help/edge/docs/forms/universal-editor/assets/form-fragments.svg) | ![資料繫結](/help/edge/docs/forms/universal-editor/assets/data-binding.svg) |
 |:-------------:|:-------------:|:-------------:|
-| [**分析和追蹤**](https://www.aem.live/developer/martech-integration) | **任務管理** （即將推出） | **資料繫結** （即將推出） |
-| 透過內建的分析與追蹤功能，深入了解使用者行為、表單互動和提交率，以達到資料驅動的表單最佳化。 | 與 Adobe Workfront 進行整合，讓團隊能夠管理表單建立與維護任務，確保簡化工作流程。 | 資料繫結可讓表單欄位和後端資料來源之間直接連線，支援即時更新和進階資料對應。 |
+| [**分析和追蹤**](https://www.aem.live/developer/martech-integration) | **表單片段** （即將推出） | **資料繫結** （即將推出） |
+| 透過內建的分析與追蹤功能，深入了解使用者行為、表單互動和提交率，以達到資料驅動的表單最佳化。 | 表單片段可重複使用，允許常用區段建立一次，並跨多個表單重複使用，確保一致性並減少維護工作。 | 資料繫結可讓表單欄位和後端資料來源之間直接連線，支援即時更新和進階資料對應。 |
 
 | ![驗證碼](/help/edge/docs/forms/universal-editor/assets/captcha.svg) | ![內嵌Forms](/help/edge/docs/forms/universal-editor/assets/embedding-forms.svg) | ![感謝您的設定](/help/edge/docs/forms/universal-editor/assets/thank-you.svg) |
 |:-------------:|:-------------:|:-------------:|
-| [**驗證碼**](/help/edge/docs/forms/universal-editor/recaptcha-forms.md) | **內嵌Forms** | [**感謝您的設定**](/help/edge/docs/forms/universal-editor/submit-action.md#show-a-custom-thank-you-message-on-adaptive-form-submission-submit-action-message-ue) |
+| [**驗證碼**](/help/edge/docs/forms/universal-editor/recaptcha-forms.md) | **內嵌Forms** （即將推出） | [**感謝您的設定**](/help/edge/docs/forms/universal-editor/submit-action.md#show-a-custom-thank-you-message-on-adaptive-form-submission-submit-action-message-ue) |
 | 使用reCAPTCHA來保護表單不受自動機器人攻擊，確保安全可靠的資料收集。 | 使用通用編輯器的內建內嵌元件，直接將表單內嵌至Edge Delivery Services Sites頁面。 | 輕鬆自訂在成功提交表單後，欲呈現給使用者看的確認訊息或頁面。 |
 
 
