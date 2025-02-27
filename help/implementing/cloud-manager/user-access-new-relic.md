@@ -5,10 +5,10 @@ exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 26a80ce68c5f6eee032ded355a8e5747ad6449a7
+source-git-commit: 428c722ae65342a52339effe7c97fd6de10a4f58
 workflow-type: tm+mt
-source-wordcount: '1809'
-ht-degree: 41%
+source-wordcount: '1837'
+ht-degree: 39%
 
 ---
 
@@ -175,11 +175,11 @@ Adobe 非常重視應用程式的監控、可用性和效能。AEM as a Cloud Se
 
 * 最多可以新增 30 個使用者。如果已達到最大使用者數，請刪除使用者以便能夠新增新使用者。
 * 新增至New Relic的使用者為&#x200B;**Restricted**&#x200B;型別。 請參閱[New Relic檔案以取得詳細資料](https://docs.newrelic.com/docs/accounts/accounts-billing/new-relic-one-user-management/introduction-managing-users/#:~:text=In%20general%2C%20Admins%20take%20responsibility,Restricted%20Users%20can%20use%20them.&amp;text=One%20or%20more%20individuals%20who,change)。
-* AEM as a Cloud Service 僅提供 New Relic One APM 解決方案，不支援警報、記錄或 API 整合。
+* AEM as a Cloud Service僅提供&#x200B;**New Relic One APM**&#x200B;解決方案，不支援基礎架構監控、警報、記錄或API整合。
 
 >[!NOTE]
 >
->如果在您的New Relic One子帳戶中超過30天未偵測到任何活動，則APM代理程式會停止。
+>如果在您的New Relic One子帳戶中偵測不到30天或更久的&#x200B;**使用者登入**&#x200B;活動，APM代理程式會停止，且資料不會從AEM Cloud Service傳送至New Relic。  **在重新啟動您的子帳戶之前，將不會再傳送資料。**
 >
 >請依照本檔案中[啟用您的New Relic One子帳戶](#activate-sub-account)一節中的相同步驟，重新啟用您的New Relic One子帳戶。
 
@@ -187,7 +187,7 @@ Adobe 非常重視應用程式的監控、可用性和效能。AEM as a Cloud Se
 
 ## 常見問題 {#faqs}
 
-+++**Adobe使用New Relic One監控什麼？** {#adobe-monitor}
++++**Adobe使用New Relic One監控什麼？**
 
 Adobe 透過 New Relic One 的 Java 外掛程式監視 AEM as a Cloud Service 創作、發佈和預覽 (如果可用) 服務。Adobe 支援跨非生產和生產 AEM as a Cloud Service 環境的自訂 New Relic One APM 遙測和監控。
 
@@ -205,22 +205,22 @@ Adobe 透過 New Relic One 的 Java 外掛程式監視 AEM as a Cloud Service �
 
 +++
 
-+++**Adobe是否從New Relic One傳送警示通知？** {#alerting-new-relic}
++++**Adobe是否從New Relic One傳送警示通知？**
 
 Adobe僅出於可觀察性目的提供New Relic One存取權，不會將其用於客戶警報或內部營運警報。 使用[使用者通知設定檔](/help/journey-onboarding/notification-profiles.md)傳送任何事件的通知。
 +++
 
-+++**誰可以存取New Relic One雲端服務資料？** {#access-new-relic-cloud}
++++**誰可以存取New Relic One雲端服務資料？**
 
 會授予您團隊中最多 30 名成員的完全讀取權限。讀取許可權包含New Relic One代理程式收集的所有APM測量結果。
 +++
 
-+++**是否支援自訂SSO組態？** {#custom-sso}
++++**是否支援自訂SSO組態？**
 
 Adobe 提供的 New Relic One 帳戶不支援自訂 SSO 配置。
 +++
 
-+++**如果我已經有內部部署New Relic訂閱怎麼辦？** {#new-relic-subscription}
++++**如果我已經有內部部署New Relic訂閱怎麼辦？**
 
 New Relic One 是 New Relic 的新可觀察性平台，它使 Adobe 支援人員和您的團隊能夠在一個地方觀察、監控和查看指標和事件。
 
@@ -234,7 +234,7 @@ Adobe支援使用New Relic One和其他工具監視AEM as a Cloud Service，而�
 
 +++
 
-+++**我的New Relic One帳戶的APM代理程式已停止。 發生什麼事？** {#deactivated}
++++**我的New Relic One帳戶的APM代理程式已停止。 發生什麼事？**
 
 如果 30 天或更久沒有偵測到任何活動，[APM 代理會停止](#limitations)。請依照本檔案中[啟用您的New Relic One子帳戶](#activate-sub-account)一節中的相同步驟，重新啟用您的New Relic One子帳戶。
 +++
