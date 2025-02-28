@@ -4,10 +4,10 @@ description: 了解產生變化版本，可透過 AEM as a Cloud Service 和 Edg
 exl-id: 9114037f-37b9-4b2f-a714-10933f69b2c3
 feature: Generate Variations
 role: Admin, Architect, Developer
-source-git-commit: bbc51796c610af02b5260c063213cde2ef610ba2
-workflow-type: ht
-source-wordcount: '3262'
-ht-degree: 100%
+source-git-commit: def1b808be7e90b4cba79ccbfa81da936be58c54
+workflow-type: tm+mt
+source-wordcount: '3272'
+ht-degree: 99%
 
 ---
 
@@ -25,6 +25,10 @@ ht-degree: 100%
 >[!NOTE]
 >
 >在所有情況下，若要使用「產生變化版本」，您必須確保符合[存取權先決條件](#access-prerequisites)。
+
+>[!NOTE]
+>
+>您也可以存取整合至AEM編輯器的[產生變數](/help/generative-ai/generate-variations-integrated-editor.md)。
 
 然後，您可以：
 

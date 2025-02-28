@@ -4,10 +4,10 @@ description: 「產生變化版本」的發行說明可從 AEM as a Cloud Servic
 exl-id: caf85bae-3cce-4083-ab6e-e2637ff5afce
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
-workflow-type: ht
-source-wordcount: '218'
-ht-degree: 100%
+source-git-commit: def1b808be7e90b4cba79ccbfa81da936be58c54
+workflow-type: tm+mt
+source-wordcount: '266'
+ht-degree: 83%
 
 ---
 
@@ -21,7 +21,19 @@ ht-degree: 100%
 
 ## 版本重點 {#release-highlights}
 
-目前版本為 2.2.0 版。
+目前版本為 3.0.0 版。
+
+### 3.0.0 {#release-notes-3-0-0}
+
+您可以從下列編輯器[存取產生變數](/help/generative-ai/generate-variations-integrated-editor.md#access-generate-variations) （[設定變數後](#access-generate-variations)）：
+
+* [在AEM Edge Delivery Services的Sidekick中；針對檔案式撰寫](/help/generative-ai/generate-variations-integrated-editor.md#access-aem-sidekick)
+* [在通用編輯器內](/help/generative-ai/generate-variations-integrated-editor.md#access-aem-universal-editor)
+* [在內容片段編輯器中](/help/generative-ai/generate-variations-integrated-editor.md#access-aem-content-fragment-editor)
+
+>[!NOTE]
+>
+>仍可直接存取[ Generate Variations的先前版本](/help/generative-ai/generate-variations.md)。
 
 ### 2.2.0 {#release-notes-2-2-0}
 

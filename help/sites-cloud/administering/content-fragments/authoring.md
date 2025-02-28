@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
-source-git-commit: 84e329e893ead1d67a3a0f651d0d2d4b24021b12
+source-git-commit: def1b808be7e90b4cba79ccbfa81da936be58c54
 workflow-type: tm+mt
-source-wordcount: '2851'
+source-wordcount: '2657'
 ht-degree: 5%
 
 ---
@@ -33,7 +33,7 @@ ht-degree: 5%
 * [以內容參考的方式內嵌上傳資產](#reference-images)，無需先上傳至資產DAM。
 * [產生變數](#generate-variations-ai)以使用Generative AI根據提示加速內容建立。
 * 內容片段所傳遞呈現體驗的[預覽](#preview-content-fragment)。
-* 能夠從編輯器[Publish](#publish-content-fragment)和[取消發佈](#unpublish-content-fragment)。
+* 可從編輯器[發佈](#publish-content-fragment)和[取消發佈](#unpublish-content-fragment)。
 * 可在編輯器中[檢視及開啟相關的語言副本](#view-language-copies)。
 * 能夠在編輯器中[檢視版本詳細資料](#view-version-history)。 您也可以還原至選取的版本。
 * 能夠[檢視和開啟父系參考](#view-parent-references)。
@@ -41,7 +41,7 @@ ht-degree: 5%
 
 >[!WARNING]
 >
->本節中說明的編輯器&#x200B;*僅*&#x200B;可在&#x200B;*線上* Adobe Experience Manager (AEM)as a Cloud Service中使用。
+>本節中說明的編輯器&#x200B;*僅*&#x200B;可在&#x200B;*線上* Adobe Experience Manager (AEM) as a Cloud Service中使用。
 
 ## 內容片段編輯器 {#content-fragment-editor}
 
@@ -51,7 +51,7 @@ ht-degree: 5%
    * 內容片段主控台的連結 (首頁圖示)
    * 有關模型和檔案夾的資訊
    * [預覽的連結（如果為模型設定了預設預覽URL模式）](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#content-fragment-model-properties)
-   * [Publish](#publish-content-fragment)和[取消發佈](#unpublish-content-fragment)動作
+   * [發佈](#publish-content-fragment)和[取消發佈](#unpublish-content-fragment)動作
    * 顯示全部&#x200B;**父參考內容**&#x200B;的選項 (連結圖示)
    * **[狀態](/help/sites-cloud/administering/content-fragments/managing.md#statuses-content-fragments)**&#x200B;片段，以及最後儲存的資訊
    * 用來切換至原始 (以資產為主) 編輯器的切換開關
@@ -95,7 +95,7 @@ ht-degree: 5%
 
 * 已針對此片段建立的&#x200B;**[變數](#variations)**&#x200B;清單：
    * **Main**&#x200B;是第一次建立內容片段時出現的變數，您可以稍後新增其他變數
-   * 您可以使用「產生變數」(Generate Variations(#generate-variations))來使用Adobe針對特定使用案例建立的提示型範本。
+   * 您可以使用「產生變#generate-variations」，以使用Adobe針對特定使用案例建立的提示型範本。
    * 您也可以[建立變數](#create-variation)
 * 片段中的&#x200B;**欄位**&#x200B;及其變數：
    * 圖示表示[資料型別](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)
@@ -132,7 +132,7 @@ ht-degree: 5%
 
 * 建立&#x200B;**主要**&#x200B;內容的[變數](#create-variation)
 
-* [使用Generative Variations AI](#generate-variations-ai)來使用Generative AI，以使用Adobe針對特定使用案例建立的提示型範本。
+* [使用「產生變數AI」](#generate-variations-ai)來使用Generative AI，以使用Adobe針對特定使用案例建立的提示型範本。
 
 * 選取編輯內容所需的變數
 
@@ -174,40 +174,9 @@ ht-degree: 5%
 
 使用Generative Variations來利用Generative AI加速內容建立。
 
-在內容片段編輯器中使用產生式變數：
+開啟內容片段編輯器以尋找產生變異的進入點。
 
-1. 開啟內容片段編輯器。 在標題中，您會找到「產生變數」的進入點：
-
-   ![在內容片段編輯器中產生變數](assets/cfm-generate-variations1.png)
-
-1. 產生變數會在新標籤中開啟。 在左側欄中，您可以看到AEM Cloud例項以及您正在建立內容的內容片段。 選取您要使用的提示，或建立新提示。
-
-   >[!NOTE]
-   >
-   >目前可用的Adobe提示範本有限，但未來版本將會新增更多範本。
-
-   ![匯出以產生內容片段中的變化](assets/cfm-generate-variations2.png)
-
-1. 透過填寫提示產生內容。 片段中的內容模型將會使用GenAI自動用來產生內容。
-
-   >[!NOTE]
-   >
-   >我們目前僅支援文字欄位。
-
-   ![匯出以產生內容片段中的變化](assets/cfm-generate-variations3.png)
-
-1. 選取您喜歡的產生變體，然後選取「匯出變數」。 確認內容片段變數的名稱，並選取：
-
-   * **匯出**：將變數匯出至內容片段，並停留在產生變數應用程式中。
-   * **匯出並開啟**：將變數匯出至內容片段，並開啟新標籤，顯示具有GenAI新變數的內容片段。
-
-     ![匯出以產生內容片段中的變化](assets/cfm-generate-variations4.png)
-
-1. 產生的變化會顯示在主要內容片段編輯器中。
-
-   ![檢視內容片段中的產生變化](assets/cfm-generate-variations5.png)
-
-請參閱[產生變數](/help/generative-ai/generate-variations.md)以瞭解更多資訊。
+如需瞭解詳細資訊，請參閱[產生變數 — 整合至AEM編輯器](/help/generative-ai/generate-variations-integrated-editor.md)。
 
 ### 刪除變數 {#delete-variation}
 
@@ -339,7 +308,7 @@ ht-degree: 5%
 
 ### 內容參考 {#content-references}
 
-[內容參考](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#content-reference)用於參考其他AEM內容型別，例如影像、頁面和體驗片段。
+[內容參考](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#content-reference)是用來參考其他AEM內容型別，例如影像、頁面和體驗片段。
 
 #### 參考影像 {#reference-images}
 
@@ -506,12 +475,12 @@ ht-degree: 5%
 
 定義URL後，**預覽**&#x200B;按鈕會啟用。 您可以選取此按鈕來啟動外部應用程式（在單獨的索引標籤中）以呈現內容片段。
 
-## Publish您的片段 {#publish-content-fragment}
+## 發佈您的片段 {#publish-content-fragment}
 
-您可以&#x200B;**Publish**&#x200B;您的片段至：
+您可以&#x200B;**將您的片段**&#x200B;發佈到您的：
 
 * 預覽例項
-* Publish執行個體
+* 發佈執行個體
 
 您可以從編輯器或控制檯發佈您的片段。 如需完整詳細資訊，請參閱[發佈和預覽片段](/help/sites-cloud/administering/content-fragments/managing.md#publishing-and-previewing-a-fragment)。
 
@@ -520,7 +489,7 @@ ht-degree: 5%
 您也可以&#x200B;**取消發佈**&#x200B;您的片段，從以下任一項：
 
 * 預覽例項
-* Publish執行個體
+* 發佈執行個體
 
 您可以從編輯器或控制檯取消發佈您的片段。 如需完整詳細資訊，請參閱[取消發佈片段](/help/sites-cloud/administering/content-fragments/managing.md#unpublishing-a-fragment)。
 
