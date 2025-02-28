@@ -4,10 +4,10 @@ description: 了解如何將外部存放庫新增至 Cloud Manager。Cloud Manag
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
-source-git-commit: befb092169e2278a9e84c183d342003ef325c71e
+source-git-commit: bd05433bb4d92a4120b19ad99d211a4a5e1f06ca
 workflow-type: tm+mt
-source-wordcount: '740'
-ht-degree: 91%
+source-wordcount: '763'
+ht-degree: 87%
 
 ---
 
@@ -49,8 +49,8 @@ ht-degree: 91%
    | 欄位 | 說明 |
    | --- | --- |
    | **存放庫名稱** | 必要。您的新存放庫的生動名稱。 |
-   | **存放庫 URL** | 必要。存放庫的 URL。<br><br> 如果您使用 GitHub 託管的存放庫，則路徑為以 `.git` 結尾。<br>例如，*`https://github.com/org-name/repo-name.git`*(URL 路徑僅用於插圖目的)。<br><br>如果您正在使用外部存放庫，則必須遵循下列 URL 路徑格式：<br>`https://git-vendor-name.com/org-name/repo-name.git`<br> 或<br>`https://self-hosted-domain/org-name/repo-name.git`<br>，與您的 Git 廠商相符。 |
-   | S **選取存放庫型別** | 必要。選取您所使用的存放庫類型：**GitHub**、**GitLab** 或 **BitBucket**。若上述存放庫 URL 路徑包含 Git 廠商名稱，例如 GitLab 或 Bitbucket，則系統已為您預先選擇存放庫類型。 |
+   | **存放庫 URL** | 必要。存放庫的 URL。<br><br>如果您使用GitHub託管的存放庫，路徑必須在`.git`結尾。<br>例如，*`https://github.com/org-name/repo-name.git`*(URL 路徑僅用於插圖目的)。<br><br>如果您正在使用外部存放庫，則必須遵循下列 URL 路徑格式：<br>`https://git-vendor-name.com/org-name/repo-name.git`<br> 或<br>`https://self-hosted-domain/org-name/repo-name.git`<br>，與您的 Git 廠商相符。 |
+   | **選取存放庫類型** | 必要。選取您所使用的存放庫類型：**GitHub**、**GitLab** 或 **BitBucket**。若上述存放庫 URL 路徑包含 Git 廠商名稱，例如 GitLab 或 Bitbucket，則系統已為您預先選擇存放庫類型。 |
    | **說明** | 選擇性。存放庫的詳細描述。 |
 
 1. 選取&#x200B;**儲存**&#x200B;以新增存放庫。
@@ -64,7 +64,7 @@ ht-degree: 91%
    | --- | --- |
    | **使用現有的存取權杖** | 如果您已為組織提供存放庫存取權杖，且有權存取多個存放庫，您可以選取現有的權杖。使用&#x200B;**權杖名稱**&#x200B;下拉清單，選取想要套用至存放庫的權杖。否則，請新增新的存取權杖。 |
    | **新增新的存取權杖** | **存放庫類型：GitHub**<br>• 在&#x200B;**權杖名稱**&#x200B;文字欄位，輸入您建立的存取權杖名稱。<br>• 依照 [GitHub 文件](https://docs.github.com/en/enterprise-server@3.14/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens)中的指示，建立個人存取權杖。<br>• 需要權限：<br>  • `Read access to metadata`。<br>  • `Read and write access to code and pull requests`。<br>• 在&#x200B;**存取權杖**&#x200B;欄位，貼上您所建立的權杖。 |
-   |  | **存放庫類型：GitLab**<br>• 在&#x200B;**權杖名稱**&#x200B;文字欄位，輸入您建立的存取權杖名稱。<br>• 依照 [GitLab 文件](https://docs.gitlab.com/ee/user/profile/personal_access_tokens.html)中的指示，建立個人存取權杖。<br>• 需要權限：<br>  • `api`<br>  • `read_api`<br>  • `read_repository`<br>  • `write_repository`<br>• 在&#x200B;**存取權杖**&#x200B;欄位，貼上您所建立的權杖。 |
+   |  | **存放庫類型：GitLab**<br>• 在&#x200B;**權杖名稱**&#x200B;文字欄位，輸入您建立的存取權杖名稱。<br>• 依照 [GitLab 文件](https://docs.gitlab.com/user/profile/personal_access_tokens/)中的指示，建立個人存取權杖。<br>• 需要權限：<br>  • `api`<br>  • `read_api`<br>  • `read_repository`<br>  • `write_repository`<br>• 在&#x200B;**存取權杖**&#x200B;欄位，貼上您所建立的權杖。 |
    |  | **存放庫類型：Bitbucket**<br>• 在&#x200B;**權杖名稱**&#x200B;文字欄位，輸入您建立的存取權杖名稱。<br>• 使用 [Bitbucket 文件](https://support.atlassian.com/bitbucket-cloud/docs/create-a-repository-access-token/)建立存放庫存取權杖。<br>• 需要權限：<br>  • `Read and write access to code and pull requests`。 |
 
    >[!NOTE]
@@ -99,7 +99,9 @@ ht-degree: 91%
 
 ## 限制
 
-外部存放庫無法連結到設定管道。
+* 外部存放庫無法連結到設定管道。
+* 具有外部存放庫（非在GitHub上託管）和「在Git變更上」觸發器的管道不會自動啟動。 它們只能手動起始。
+
 
 <!-- THIS BULLET REMOVED AS PER https://wiki.corp.adobe.com/display/DMSArchitecture/Cloud+Manager+2024.12.0+Release. THEY CAN NOW START AUTOMATICALLY>
 * Pipelines using external repositories (excluding GitHub-hosted repositories) and the **Deployment Trigger** option [!UICONTROL **On Git Changes**], triggers are not automatically started. They must be manually started. -->
