@@ -4,9 +4,9 @@ description: 了解如何設定 Cloud Manager 與您自己的私人 GitHub 存�
 exl-id: 5232bbf5-17a5-4567-add7-cffde531abda
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: bd05433bb4d92a4120b19ad99d211a4a5e1f06ca
+source-git-commit: 7097ec755ff41d5440de62a757bf036ae336de67
 workflow-type: tm+mt
-source-wordcount: '930'
+source-wordcount: '940'
 ht-degree: 39%
 
 ---
@@ -38,6 +38,9 @@ In essence, a "Build your own GitHub" in Adobe Cloud Manager empowers teams to m
 1. [將私人GitHub存放庫](#add-repo)新增至選取的方案。
 1. 然後，[驗證私人GitHub存放庫的所有權](#validate-ownership)。
 
+>[!NOTE]
+>Cloud Manager僅支援GitHub Cloud (github.com)上的私人存放庫。<!-- As per request in https://wiki.corp.adobe.com/pages/viewpage.action?spaceKey=DMSArchitecture&title=%5B2025%5D+Cloud+Manager+-+Bring+Your+Own+Git+-+Pull+Request+validator+for+multiple+vendors -->
+
 ### 將私人GitHub存放庫新增到計畫 {#add-repo}
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織。
@@ -68,7 +71,6 @@ In essence, a "Build your own GitHub" in Adobe Cloud Manager empowers teams to m
 >[!TIP]
 >
 >如需關於在 Cloud Manager 管理存放庫的詳細資訊，請參閱「[Cloud Manager 存放庫](/help/implementing/cloud-manager/managing-code/managing-repositories.md)」。
-
 
 
 ### 驗證私人GitHub存放庫的所有權 {#validate-ownership}
