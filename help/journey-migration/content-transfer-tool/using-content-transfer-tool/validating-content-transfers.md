@@ -4,7 +4,7 @@ description: 使用內容轉移工具來驗證內容轉移
 exl-id: a12059c3-c15a-4b6d-b2f4-df128ed0eea5
 feature: Migration
 role: Admin
-source-git-commit: b7e485e3b7ce6f2d2fa7fe9b2953d2296186871d
+source-git-commit: e1089810b3bf3db0cc440bb397e5549ade6eac37
 workflow-type: tm+mt
 source-wordcount: '1189'
 ht-degree: 1%
@@ -31,7 +31,7 @@ ht-degree: 1%
 
    ![影像](/help/journey-migration/content-transfer-tool/assets/CTTvalidation1.png)
 
-啟用此設定且目標AEM Cloud Service環境執行相容版本時，將會在後續的所有擷取和內嵌期間進行移轉驗證。
+啟用此設定且目標AEM Cloud Service環境執行相容版本時，會在之後的所有擷取和內嵌期間進行移轉驗證。
 
 如需如何安裝內容轉移工具的詳細資訊，請參閱[內容轉移工具快速入門](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md)。
 
@@ -47,7 +47,7 @@ ht-degree: 1%
 
 * **擷取（覆寫）**
 
-  ![影像](/help/journey-migration/content-transfer-tool/assets-ctt/validation-01.png)
+  ![影像](/help/journey-migration/content-transfer-tool/assets-ctt/example1-extraction.png)
 
 * **內嵌（擦去）**
 
@@ -61,7 +61,7 @@ ht-degree: 1%
 
 * **擷取**
 
-  ![影像](/help/journey-migration/content-transfer-tool/assets-ctt/validation-03.png)
+  ![影像](/help/journey-migration/content-transfer-tool/assets-ctt/example2-extraction.png)
 
 * **內嵌**
 

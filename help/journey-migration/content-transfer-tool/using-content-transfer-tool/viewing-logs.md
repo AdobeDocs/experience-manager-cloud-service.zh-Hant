@@ -4,7 +4,7 @@ description: 在內容轉移工具中檢視移轉集記錄
 exl-id: aed1ac83-a2fb-425e-aca4-39cd0bb42fd3
 feature: Migration
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: e1089810b3bf3db0cc440bb397e5549ade6eac37
 workflow-type: tm+mt
 source-wordcount: '231'
 ht-degree: 36%
@@ -33,7 +33,7 @@ ht-degree: 36%
 
 1. 選取移轉集，然後按一下動作列中的&#x200B;**檢視記錄檔**。 這會顯示「記錄」對話方塊。 按一下&#x200B;**擷取記錄**，在新索引標籤中檢視記錄。
 
-   ![影像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam25.png) \
+   ![影像](/help/journey-migration/content-transfer-tool/assets-ctt/logs.png) \
    或者，按一下&#x200B;**已完成**&#x200B;狀態以在新索引標籤中檢視記錄。
 
 1. 若要追蹤記錄而不使用使用者介面，您可以透過 SSH 連線至來源 AEM 環境，並追蹤 `crx-quickstart/cloud-migration/extraction-XXXXX/output.log file`。

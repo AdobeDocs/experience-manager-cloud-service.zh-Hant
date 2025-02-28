@@ -4,10 +4,10 @@ description: 瞭解如何開始使用內容轉移工具
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
 feature: Migration
 role: Admin
-source-git-commit: d8730109f5cd7dab44f535b1de008ae09811f221
+source-git-commit: ccd96892ccce0ed896cd01978f07e2a556c18527
 workflow-type: tm+mt
-source-wordcount: '1362'
-ht-degree: 16%
+source-wordcount: '1572'
+ht-degree: 14%
 
 ---
 
@@ -46,7 +46,7 @@ ht-degree: 16%
 
 ### 啟用SSL記錄 {#enable-ssl-logging}
 
-瞭解SSL/TLS連線問題有時很困難。 若要在擷取程式期間疑難排解連線問題，您可以透過來源AEM環境的「系統主控台」啟用SSL記錄，步驟如下：
+瞭解SSL/TLS連線問題有時很困難。 若要疑難排解擷取程式期間的連線問題，您可以透過來源AEM環境的「系統主控台」啟用SSL記錄，步驟如下：
 
 1. 導覽至來源執行個體上的Adobe Experience Manager Web Console，方法是前往&#x200B;**工具>作業> Web Console**，或直接導覽至&#x200B;*https://serveraddress:serverport/system/console/configMgr*&#x200B;的URL
 1. 搜尋&#x200B;**內容轉移工具擷取服務組態**
@@ -117,7 +117,7 @@ ht-degree: 16%
 >abstract="建立移轉集後，需要填入來源執行個體中的內容，這些內容需要移至 AEM as a Cloud Service 環境。為此，內容轉移工具需要安裝在來源執行個體上。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/extracting-content.html" text="提取內容"
 
-若要填入您在Cloud Acceleration Manager中建立的移轉集，請在來源Adobe Experience Manager (AEM)例項上安裝最新版的「內容轉移工具」。 若要瞭解如何填入移轉集，請遵循本節。
+若要填入您在Cloud Acceleration Manager中建立的移轉集，請在來源Adobe Experience Manager (AEM)例項上安裝最新版的「內容轉移工具」 。 若要瞭解如何填入移轉集，請遵循本節。
 
 1. 在您的來源Adobe Experience Manager執行個體上安裝最新版的內容轉移工具後，請移至&#x200B;**作業 — 內容移轉**
 
@@ -131,26 +131,49 @@ ht-degree: 16%
    >
    >請確定擷取金鑰有效且不在到期日附近。 貼上擷取金鑰後，您可以在&#x200B;**建立移轉集**&#x200B;對話方塊中取得此資訊。 如果發生連線錯誤，請參閱[Source環境連線](#source-environment-connectivity)以取得詳細資訊。
 
-   ![影像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam6.png)
+   ![影像](/help/journey-migration/content-transfer-tool/assets-ctt/createMigrationSet.png)
 
 1. 接著，選取下列引數以建立移轉集：
 
    1. **包含版本**：視需要選取。 包含版本時，會自動包含路徑`/var/audit`以移轉稽核事件。
 
-      ![影像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam7.png)
+      ![影像](/help/journey-migration/content-transfer-tool/assets-ctt/includeVersion.png)
 
       >[!NOTE]
       >如果您打算將版本納入移轉集，並使用`wipe=false`執行追加作業，則由於「內容轉移工具」目前的限制，您必須停用版本清除功能。 如果您偏好啟用版本清除，並且正在移轉集中執行追加作業，則必須以`wipe=true`身分執行內嵌。
 
+      >[!NOTE]
+      >從CTT版本(3.0.24)開始，「內容轉移工具」已加入新功能，以強化包含和排除路徑的程式。 以前，必須逐一選擇路徑，這既繁瑣又耗時。 現在，使用者可以直接從UI加入路徑，或根據其偏好上傳CSV檔案。
 
-   1. **要包含的路徑**：使用路徑瀏覽器來選取需要移轉的路徑。 路徑選擇器透過輸入或選取來接受輸入。
-
+   1. **要包含的路徑**：使用路徑瀏覽器來選取需要移轉的路徑。 路徑選擇器透過輸入或選取來接受輸入。 使用者只能選取一個選項來包含路徑：從UI或上傳CSV檔案。
       >[!IMPORTANT]
       >建立移轉集時會限制下列路徑：
       >* `/apps`
       >* `/libs`
       >* `/home`
       >* `/etc` （在CTT中允許選取某些`/etc`路徑）
+
+      ![影像](/help/journey-migration/content-transfer-tool/assets-ctt/includeAndExcludePath.png)
+
+      1. 只允許選擇路徑，而且必須至少有一個路徑。如果未選擇路徑，則會發生伺服器錯誤。
+
+         ![影像](/help/journey-migration/content-transfer-tool/assets-ctt/ServerError.png)
+
+      1. 使用&#x200B;**CSV上傳選項**&#x200B;時，CSV檔案必須包含有效的路徑。
+
+         ![影像](/help/journey-migration/content-transfer-tool/assets-ctt/validCsvUpload.png)
+
+      1. 若要切換迴路徑選擇器，使用者必須重新整理頁面並重新開始。
+
+      1. 如果在上傳的CSV中找到&#x200B;**個無效的路徑**，則會顯示個別的對話方塊。
+
+         ![影像](/help/journey-migration/content-transfer-tool/assets-ctt/invalidPathsInCsv.png)
+
+      1. 使用者必須更正CSV檔案並再次上傳它，或重新整理UI以透過路徑選擇器選取路徑。
+
+   1. **要排除的路徑**：新功能可讓使用者排除不想包含的特定路徑。 例如，如果包含區段中的路徑是/content/dam，使用者現在可以排除/content/dam/catalogs等路徑。
+
+      ![影像](/help/journey-migration/content-transfer-tool/assets-ctt/excludePathHighlighted.png)
 
 1. 填入&#x200B;**建立移轉集**&#x200B;詳細資訊畫面中的所有欄位後，請按一下&#x200B;**儲存**。
 
@@ -184,7 +207,7 @@ ht-degree: 16%
 
 1. 這會開啟&#x200B;**檢查大小**&#x200B;對話方塊。
 
-   ![影像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam9.png)
+   ![影像](/help/journey-migration/content-transfer-tool/assets-ctt/checkMigrationSetSize.png)
 
 1. 按一下&#x200B;**檢查大小**&#x200B;以啟動程式。 然後，您將返回移轉集清單檢視，而且您應該會看到一則訊息，指出&#x200B;**檢查大小**&#x200B;正在執行。
 
@@ -192,7 +215,7 @@ ht-degree: 16%
 
 1. **檢查大小**&#x200B;程式完成後，狀態會變更為&#x200B;**已完成**。 選取相同的移轉集，然後按一下&#x200B;**檢查大小**&#x200B;以檢視結果。 以下是&#x200B;**檢查大小**&#x200B;結果無警告的範例。
 
-   ![影像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam11.png)
+   ![影像](/help/journey-migration/content-transfer-tool/assets-ctt/checkSizeAfterFinished.png)
 
 1. 如果&#x200B;**檢查大小**&#x200B;結果指出磁碟空間不足，或移轉集超過產品限制，或兩者皆超過，則會顯示&#x200B;**警告**&#x200B;狀態。
 
@@ -203,6 +226,6 @@ ht-degree: 16%
    ![image](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image7.png) -->
 
 
-## 下一步 {#whats-next}
+## 後續步驟 {#whats-next}
 
 瞭解如何建立移轉集後，您現在就能開始瞭解內容轉移工具中的擷取和擷取程式。 在學習這些程式之前，您必須檢閱[處理大型內容存放庫](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md)，以大幅加快內容轉移活動的擷取和擷取階段，將內容移至AEM as a Cloud Service。

@@ -4,10 +4,10 @@ description: 瞭解如何使用Best Practices Analyzer以瞭解升級整備程�
 exl-id: e8498e17-f55a-4600-87d7-60584d947897
 feature: Migration
 role: Admin
-source-git-commit: 3a0576e62518240b89290a75752386128b1ab082
+source-git-commit: e1089810b3bf3db0cc440bb397e5549ade6eac37
 workflow-type: tm+mt
-source-wordcount: '2724'
-ht-degree: 38%
+source-wordcount: '2796'
+ht-degree: 37%
 
 ---
 
@@ -78,6 +78,20 @@ ht-degree: 38%
 1. 按一下&#x200B;**產生報告**&#x200B;以執行Best Practices Analyzer。
 
    ![產生報表](/help/journey-migration/best-practices-analyzer/assets/BPA_pic2.png)
+
+>[!NOTE]
+> 從BPA 2.1.54版開始，已引入新功能以取得Lighthouse分數。
+1. 按一下&#x200B;**產生報表**&#x200B;後，會出現快顯視窗，要求AEM公用網站URL提供Lighthouse分數。 使用者必須在提供的欄位中輸入有效的URL。
+
+   ![影像](/help/journey-migration/best-practices-analyzer/assets/bpa_popup_url.png)
+
+   1. 如果URL有效，則會顯示成功訊息。
+
+      ![影像](/help/journey-migration/best-practices-analyzer/assets/valid_url.png)
+
+   1. 如果URL無效，便會顯示錯誤訊息。
+
+      ![影像](/help/journey-migration/best-practices-analyzer/assets/invalid_url.png)
 
 1. 提供BPA上傳金鑰以將產生的BPA報告自動上傳至[Cloud Acceleration Manager (CAM)](/help/journey-migration/cloud-acceleration-manager/introduction/benefits-cam.md)。 若要取得上傳金鑰，請瀏覽至[CAM中的最佳實務分析](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-readiness-phase.md#best-practices-analysis)
 
@@ -159,7 +173,7 @@ For Adobe Experience Manager 6.1, the tool is not functional and only the HTTP i
 
 * **報表概覽**：報表本身的相關資訊，包括下列資訊：
    * **報告時間**：產生報表內容並首次提供的時間。
-   * **到期時間**：報表內容快取的到期時間。
+   * **過期時間**：報表內容快取的過期時間。
    * **產生時段**：報表內容產生程序所花費的時間。
    * **結果計數**：報表中包含的結果總數。
 * **系統概覽**：執行BPA之AEM系統的相關資訊。
@@ -181,7 +195,7 @@ For Adobe Experience Manager 6.1, the tool is not functional and only the HTTP i
 
 ## 解譯Best Practices Analyzer CSV報表 {#cra-csv-report}
 
-當您按一下AEM執行個體的&#x200B;**CSV**&#x200B;選項時，將會從內容快取建置CSV格式的Best Practices Analyzer報告，並傳回至您的瀏覽器。 根據您的瀏覽器設定，此報表會自動下載為預設名稱為`results.csv`的檔案。
+當您按一下AEM執行個體中的&#x200B;**CSV**&#x200B;選項時，將會從內容快取建置CSV格式的Best Practices Analyzer報告並傳回至您的瀏覽器。 根據您的瀏覽器設定，此報表會自動下載為預設名稱為`results.csv`的檔案。
 
 如果快取已過期，則會在CSV檔案建置和下載之前重新產生報表。
 
@@ -242,7 +256,7 @@ HTTP 介面可用於多種方法中。
 要透過 HTTP 介面開始產生報表，有個簡單的方式是使用下列命令：
 `curl -u admin:admin 'http://localhost:4502/apps/best-practices-analyzer/analysis/report.json?max-age=0&respond-async=true'`。
 
-在提出要求後，用戶端無須維持作用中狀態，即可產生報表。報表產生作業可以由一個使用者端使用HTTPGET要求來起始，且報表產生後，可由另一個使用者端從快取加以檢視，或透過AEM使用者介面中的BPA工具檢視。
+在提出要求後，用戶端無須維持作用中狀態，即可產生報表。報表產生作業可以由一個使用者端使用HTTP GET要求來起始，且報表產生後，可由另一個使用者端從快取中檢視，或透過AEM使用者介面中的BPA工具檢視。
 
 ### 回應 {#http-responses}
 
@@ -259,7 +273,7 @@ HTTP 介面可用於多種方法中。
 
 ### 快取存留期調整 {#cache-adjustment}
 
-預設的BPA快取存留期為24小時。 在AEM執行個體和HTTP介面中使用重新整理報告及重新產生快取的選項時，此預設值可能適用於BPA的大部分使用。 如果AEM例項中的報表產生時間特別長，您可以調整快取存留期以最小化報表的重新產生。
+預設的BPA快取存留期為24小時。 在AEM例項和HTTP介面中使用重新整理報告及重新產生快取的選項時，此預設值可能適用於大多數BPA使用。 如果您AEM例項的報表產生時間特別長，您可以調整快取存留期以最小化報表的重新產生。
 
 快取存留期值會儲存為下列存放庫節點上的 `maxCacheAge` 屬性：
 `/apps/best-practices-analyzer/content/BestPracticesReport/jcr:content`

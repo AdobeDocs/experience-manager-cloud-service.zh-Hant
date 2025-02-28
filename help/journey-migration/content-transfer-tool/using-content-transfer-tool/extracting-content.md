@@ -1,13 +1,13 @@
 ---
 title: 自來源擷取內容
-description: 瞭解如何從來源Adobe Experience Manager (AEM)例項擷取內容，以便稍後將其傳輸至Cloud ServiceAEM例項。
+description: 瞭解如何從來源Adobe Experience Manager (AEM)例項擷取內容，以便稍後將其傳輸至Cloud Service AEM例項。
 exl-id: c5c08c4e-d5c3-4a66-873e-96986e094fd3
 feature: Migration
 role: Admin
-source-git-commit: 4408f15ef85d0fc2c6a0e2b45038dc900d212187
+source-git-commit: d568619bd8ebb42a6914211401df680352c921ab
 workflow-type: tm+mt
-source-wordcount: '728'
-ht-degree: 19%
+source-wordcount: '789'
+ht-degree: 17%
 
 ---
 
@@ -37,11 +37,11 @@ ht-degree: 19%
    >[!IMPORTANT]
    >
    >請確定擷取金鑰有效且不在到期日附近。 如果快到期了，您可以選取移轉集並按一下「屬性」，以續約擷取金鑰。 按一下&#x200B;**續約**。 這會將您帶往Cloud Acceleration Manager，您可以在其中按一下&#x200B;**複製擷取金鑰**。 每次按一下&#x200B;**複製擷取金鑰**時，就會產生新的擷取金鑰，從建立時起的14天有效。
-   >![影像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam13.png)
+   >![影像](/help/journey-migration/content-transfer-tool/assets-ctt/migrationSetDetails.png)
 
 1. 這會顯示擷取對話方塊。 按一下&#x200B;**擷取**&#x200B;以開始擷取階段。
 
-   ![影像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam14c.png)
+   ![影像](/help/journey-migration/content-transfer-tool/assets-ctt/migrationSetExtraction.png)
 
    >[!NOTE]
    >您可以選擇在提取階段期間覆寫預備容器。 如果&#x200B;**覆寫暫存容器**&#x200B;已停用，它可以加快後續移轉的擷取速度，因為內容路徑或包含版本設定尚未變更。 不過，如果內容路徑或包含版本設定已變更，則應啟用&#x200B;**覆寫暫存容器**。
@@ -52,7 +52,7 @@ ht-degree: 19%
 
    您可以按一下&#x200B;**檢視進度**&#x200B;以取得進行中擷取的精細檢視。
 
-   ![影像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam16.png)
+   ![影像](/help/journey-migration/content-transfer-tool/assets-ctt/viewProgress.png)
 
    您也可以造訪「內容轉移」頁面，以從Cloud Acceleration Manager監視擷取階段進度，並按一下&#x200B;**...** > **檢視詳細資料**&#x200B;以更詳細地檢視該頁面。
 
@@ -71,6 +71,12 @@ ht-degree: 19%
 >初始轉移內容後，建議您先頻繁地執行追加差異內容，以縮短最終差異化內容轉移的內容凍結時間，然後再於Cloud Service上線。 如果您已在第一次完整擷取中使用預先複製步驟，您可以略過後續追加擷取的預先複製（如果追加移轉集大小小於200 GB）。 原因是它可能會增加整個程式的時間。
 >此外，進行初始擷取到執行追加擷取期間，必須保持現有內容的內容結構不變。 追加無法針對自初始擷取以來結構已變更的內容執行。 請務必在移轉程式期間限制此專案。
 
+>[!NOTE]
+>一旦將內容路徑移轉至中繼容器，這些路徑或其中的任何子路徑就無法從後續的追加移轉中移除或排除。
+>範例：初始移轉： content/dam/weRetail，
+>下一次追加排除嘗試： content/dam/weRetail/ab。
+>在此案例中，無法排除content/dam/weRetail/ab，因為資料已移轉至中繼容器。
+
 提取程式一旦完成，您即可使用追加提取方法來轉移差異內容。
 
 請遵循下列步驟：
@@ -83,9 +89,9 @@ ht-degree: 19%
 
    >[!IMPORTANT]
    >您必須停用&#x200B;**在提取期間覆寫預備容器**選項。
-   >![影像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam20.png)
+   >![影像](/help/journey-migration/content-transfer-tool/assets-ctt/overwriteStagingContainer.png)
 
 
-## 下一步 {#whats-next}
+## 後續步驟 {#whats-next}
 
 您已在內容轉移工具中學習從Source擷取內容後，現在即可在內容轉移工具中學習擷取程式。 請參閱[將內容擷取至Target](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)，瞭解如何從「內容轉移工具」擷取移轉集。
