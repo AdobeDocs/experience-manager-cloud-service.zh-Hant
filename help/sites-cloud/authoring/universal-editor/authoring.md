@@ -5,10 +5,10 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: fced4707e781242132a018d28d4dd121960469eb
 workflow-type: tm+mt
-source-wordcount: '1370'
-ht-degree: 35%
+source-wordcount: '1410'
+ht-degree: 34%
 
 ---
 
@@ -177,6 +177,14 @@ Universal Editor 支援在任意實作中編輯任何方面的內容，以便提
 >[!NOTE]
 >
 >如果在來源和目標容器之間設定不同的[元件篩選器](/help/implementing/universal-editor/filtering.md)，則無法在容器之間移動元件。
+
+### 使用GenAI建立變化並產生變化 {#generate-variations-ai}
+
+使用Generative Variations來利用Generative AI加速內容建立。
+
+開啟「通用編輯器」以尋找「產生變化」的進入點。
+
+如需瞭解詳細資訊，請參閱[產生變數 — 整合至AEM編輯器](/help/generative-ai/generate-variations-integrated-editor.md)。
 
 ## 預覽內容 {#previewing-content}
 
