@@ -5,9 +5,9 @@ exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 8d4d60a2105915108393cc295949491e59e5fc2b
 workflow-type: tm+mt
-source-wordcount: '2268'
+source-wordcount: '2296'
 ht-degree: 3%
 
 ---
@@ -47,9 +47,9 @@ ht-degree: 3%
       * **覆寫值** — 要附加至頁面標題的品牌概要文字。
          * 此值會附加至頁面標題後的垂直號字元，例如「騎行Tuscany」 | 隨時準備使用WKND」
 
-* **HTML識別碼**
+* **HTML ID**
 
-   * **ID** — 要套用至元件的HTMLID。
+   * **ID** — 要套用至元件的HTML ID。
 
 * **更多標題和說明**
 
@@ -101,13 +101,13 @@ ht-degree: 3%
 
    * **語言** — 頁面語言
    * **語言根** — 如果頁面是語言副本的根，則必須檢查
-   * **重新導向** — 指出此頁面應自動重新導向的頁面，其狀態HTML為`302 Found`。
-      * **永久重新導向** — 選取後，頁面會重新導向至與HTML`301 Moved Permanently`狀態一起提供的目標路徑。
+   * **重新導向** — 指出此頁面應該以HTML `302 Found`狀態自動重新導向的頁面。
+      * **永久重新導向** — 選取後，頁面會重新導向至與HTML `301 Moved Permanently`狀態一起提供的目標路徑。
    * **設計** — 指出在產生的網站頁面導覽中顯示或隱藏頁面
    * **別名** — 指定要用於此頁面的別名
       * 例如，如果您為頁面`/content/wknd/us/en/magazine/members-only`定義別名`private`，則也可以透過`/content/wknd/us/en/magazine/private`存取此頁面
       * 建立別名會設定頁面節點上的`sling:alias`屬性，這只會影響資源，而不會影響存放庫路徑。
-      * 無法發佈編輯器中以別名存取的頁面。 編輯器中的[Publish選項](/help/sites-cloud/authoring/sites-console/publishing-pages.md)僅適用於透過實際路徑存取的頁面。
+      * 無法發佈編輯器中以別名存取的頁面。 編輯器中的[發佈選項](/help/sites-cloud/authoring/sites-console/publishing-pages.md)僅適用於透過實際路徑存取的頁面。
       * 請參閱SEO和URL管理最佳實務下的[本地化頁面名稱](/help/overview/seo-and-url-management.md#localized-page-names)。
 
 * **組態**
@@ -119,6 +119,8 @@ ht-degree: 3%
 * **範本設定**
 
    * **允許的範本** - [定義此子分支內可用的範本清單](/help/sites-cloud/authoring/page-editor/templates.md#enabling-and-allowing-a-template-template-author)
+   * **使用頁面作為範本** - [根據目前頁面建立新範本。](/help/sites-cloud/authoring/universal-editor/templates.md)
+      * 僅適用於搭配Universal Editor (善用Edge Delivery Services)使用而建立的頁面。
 
 * **驗證需求**
 
@@ -247,14 +249,14 @@ ht-degree: 3%
    * **啟用PWA** — 啟用/停用此功能；允許使用者將網站安裝為PWA
    * **StartupURL** — 偏好的啟動URL
    * **顯示模式** — 如何隱藏瀏覽器或如何以其他方式顯示給本機裝置上的使用者
-   * **熒幕方向** -PWA如何處理裝置方向
+   * **熒幕方向** - PWA如何處理裝置方向
    * **佈景主題色彩** — 應用程式的色彩，會影響本機使用者的作業系統顯示原生UI工具列和導覽控制項的方式
    * **背景色彩** — 應用程式的背景色彩，會在應用程式載入時顯示
    * **圖示** — 代表使用者裝置上的應用程式的圖示
 
 * **快取管理（進階）**
 
-   * **快取策略與內容重新整理頻率** — 定義您PWA的快取模型
+   * **快取策略與內容重新整理頻率** — 定義PWA的快取模型
    * **要快取供離線使用的檔案**
       * **檔案預先快取（技術預覽）** — 在AEM上託管的檔案會在安裝Service Worker時和使用它之前儲存到本機瀏覽器快取
       * **使用者端資料庫** — 要快取以供離線體驗的使用者端資料庫
