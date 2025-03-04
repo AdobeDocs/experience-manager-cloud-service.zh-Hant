@@ -2,7 +2,8 @@
 title: 自訂搜尋篩選器
 description: 瞭解如何自訂搜尋篩選器表單
 role: User, Leader, Developer
-source-git-commit: 0f97264a3daf7a40ecbb619b5c686ffc279800fb
+exl-id: 383e8165-439e-447b-a19d-d5446238a13f
+source-git-commit: 8d3059f9cb92dc6c65eec33dcc69eed76b61546c
 workflow-type: tm+mt
 source-wordcount: '1279'
 ht-degree: 13%
@@ -375,7 +376,7 @@ Assets檢視提供下列可依需求重新配置的自訂篩選器：
         <ul>
         <li>按一下<b>新增</b>以新增值。 
         <li>按一下<span>✎</span>以編輯標籤。 
-        <li>按一下<img src="assets/do-not-localize/delete.svg">刪除選項值。 
+        <li>按一下<img src="assets/do-not-localize/delete-icon.png">刪除選項值。 
         <li>按一下<b>編輯</b>以修改編輯選項。 
         <li>您也可以透過保留選項來變更選項的順序。
         </td>
