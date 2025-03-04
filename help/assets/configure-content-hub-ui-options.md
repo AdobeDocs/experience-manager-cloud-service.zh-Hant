@@ -2,10 +2,10 @@
 title: 設定 Content Hub 使用者介面
 description: 設定 Content Hub 使用者介面
 exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
-source-git-commit: 323fe1ba95b027f3c0d625e122b1885723e94b0f
+source-git-commit: e0c459ce360837fa0031278804d8e7b46b15d0e5
 workflow-type: tm+mt
-source-wordcount: '1718'
-ht-degree: 14%
+source-wordcount: '1668'
+ht-degree: 16%
 
 ---
 
@@ -26,9 +26,9 @@ ht-degree: 14%
 
 >[!AVAILABILITY]
 >
->Content Hub指南現在提供PDF格式。 下載整份指南，並使用Adobe Acrobat AI Assistant回答您的疑問。
+>現已提供 PDF 格式的 Content Hub 指南。下載完整指南，並使用 Adobe Acrobat AI 助理來回答您的查詢問題。
 >
->[!BADGE Content Hub指南PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
+>[!BADGE Content Hub 指南 PDF]{type=Informative url="https://helpx.adobe.com/tw/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
 
 Experience Manager Assets 可讓管理員設定 Content Hub 使用者介面上的可用選項。根據管理員選取的設定選項，Content Hub 使用者可以查看 Content Hub 上的欄位。組態選項包括：
 
@@ -229,19 +229,17 @@ Content Hub預設不會顯示過期的資產。
 
 轉譯是數位資產（例如影像、檔案等）的自訂版本，專為不同裝置和平台而設計，可確保最佳效能。 檢視更多有關Adobe Experience Manager Assets](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/renditions)中[轉譯的資訊。
 
-Content Hub可下載靜態轉譯。 靜態轉譯是資產原始檔案（以原生方式產生）的不同表示方式。 範例包括縮圖或行動最佳化的轉譯。 管理員可以管理和控制資產轉譯的可用性；以及管理您是否可以下載原始資產。
-
 若要如此做，請執行以下步驟：
 
 在[組態](#access-configuration-options-content-hub)使用者介面上，按一下&#x200B;**[!UICONTROL 轉譯]**。 下列選項可供使用：
 
-* 啟用[!UICONTROL 啟用靜態轉譯可用性]切換按鈕，讓所有靜態轉譯在Content Hub上可見。
+* 啟用[!UICONTROL 啟用轉譯可用性]切換按鈕，讓所有轉譯都顯示在Content Hub上。
 
 * 啟用或停用&#x200B;**[!UICONTROL 允許使用者下載原始資產]**&#x200B;切換功能，以控制下載原始資產的可用性。
 
   ![在Content Hub上設定轉譯](assets/config-renditions.png)
 
-如需如何在Content Hub中檢視及下載靜態轉譯的詳細資訊，請參閱[在Content Hub中下載資產](/help/assets/download-assets-content-hub.md)。
+如需如何在Content Hub中檢視及下載轉譯的詳細資訊，請參閱[在Content Hub中下載資產](/help/assets/download-assets-content-hub.md)。
 
 ### 自訂連結 {#configure-custom-links-content-hub}
 

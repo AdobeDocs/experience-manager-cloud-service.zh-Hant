@@ -3,10 +3,10 @@ title: 從Content Hub下載資產
 description: 瞭解如何從Content Hub入口網站下載資產
 role: User
 exl-id: 96d4ffba-4e3e-4496-9da2-6eb36be8331f
-source-git-commit: 28424cb184d0378669498c78e571961227f6539a
+source-git-commit: 07d533962ae2922c8a467924361fdfefc5c594eb
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '770'
+ht-degree: 9%
 
 ---
 
@@ -20,13 +20,15 @@ ht-degree: 0%
 
 >[!AVAILABILITY]
 >
->Content Hub指南現在提供PDF格式。 下載整份指南，並使用Adobe Acrobat AI Assistant回答您的疑問。
+>現已提供 PDF 格式的 Content Hub 指南。下載完整指南，並使用 Adobe Acrobat AI 助理來回答您的查詢問題。
 >
->[!BADGE Content Hub指南PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
+>[!BADGE Content Hub 指南 PDF]{type=Informative url="https://helpx.adobe.com/tw/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
 
 Content Hub可讓您下載和共用資產。 Content Hub使用者介面只會顯示已核准的資產。 這些資產可能包括影像、影片或任何其他數位內容。 Content Hub可增強協助工具及適應能力，以進行有效的資產分發。
 
 您可以使用Content Hub下載單一或多個資產及其可用的轉譯。
+
+檢視Content Hub](#types-of-renditions)中可用的[轉譯型別。
 
 ## 下載資產及其轉譯 {#download-asset-renditions}
 
@@ -34,18 +36,23 @@ Content Hub可讓您下載和共用資產。 Content Hub使用者介面只會顯
 
 1. 按一下資產以檢視其屬性。
 
-1. 按一下![下載](/help/assets/assets/download-icon.svg)開始下載程式。 「下載」面板會列出所有可用的資產轉譯（原始+其他轉譯）。
+1. 按一下![下載](/help/assets/assets/download-icon.svg)開始下載程式。 「下載」面板會列出所有可用的資產轉譯。
 
    >[!NOTE]
    >
-   只有在使用[組態](/help/assets/configure-content-hub-ui-options.md#renditions-content-hub)使用者介面啟用轉譯的可見度時，才會顯示轉譯。
+   * 只有在使用[組態](/help/assets/configure-content-hub-ui-options.md#renditions-content-hub)使用者介面啟用轉譯的可見度時，才會顯示轉譯。
+   * 您可以在下載資產時下載所有[靜態、動態和智慧型裁切轉譯](#types-of-renditions)。
 
-1. 選取轉譯並按一下&#x200B;**[!UICONTROL 下載]**。
+1. 選取一或多個轉譯並按一下&#x200B;**[!UICONTROL 下載]**。
 
    ![下載單一資產轉譯](/help/assets/assets/download-single-asset-renditions.png)
 
 
-如果您正在下載授權資產，請選取&#x200B;**[!UICONTROL 我已閱讀並接受上述條款與條件]**，然後按一下&#x200B;**[!UICONTROL 下載]**。 您也可以按一下&#x200B;**[!UICONTROL 條款與條件]**&#x200B;以檢視資產授權。 只有在資產已使用Assetsas a Cloud Service製作環境核準時，才會顯示授權預覽。 如需詳細資訊，請參閱[管理 Content Hub 上的授權資產](/help/assets/manage-licensed-assets-on-content-hub.md)。
+如果您正在下載授權資產，請選取&#x200B;**[!UICONTROL 我已閱讀並接受上述條款與條件]**，然後按一下&#x200B;**[!UICONTROL 下載]**。 您也可以按一下&#x200B;**[!UICONTROL 條款與條件]**&#x200B;以檢視資產授權。 只有在資產已使用Assets as a Cloud Service製作環境核準時，才會顯示授權預覽。 如需詳細資訊，請參閱[管理 Content Hub 上的授權資產](/help/assets/manage-licensed-assets-on-content-hub.md)。
+
+>[!NOTE]
+>
+有權存取[具有Open API功能的Dynamic Media ](/help/assets/dynamic-media-open-apis-overview.md)的使用者可以檢視及下載動態和智慧型裁切轉譯。
 
 ## 下載多個資產及其轉譯 {#download-multiple-assets-renditions}
 
@@ -55,18 +62,19 @@ Content Hub可讓您下載和共用資產。 Content Hub使用者介面只會顯
 1. 按一下&#x200B;**[!UICONTROL 下載]**，從各種下載選項中選取開始下載：
 
    * **下載[!UICONTROL 原始資產]**：選取此選項即可以原始格式下載選取的資產。
-   * **僅下載[!UICONTROL 轉譯]**：選取此選項可下載原始資產以外所有可用的資產轉譯。
-   * **下載[!UICONTROL 原始與所有轉譯]**：選取此選項可下載所選資產的原始與轉譯。
+   * **僅下載[!UICONTROL 靜態轉譯]**：選取此選項可下載原始資產以外所有可用的資產靜態轉譯。
+   * **下載[!UICONTROL 原始和靜態轉譯]**：選取此選項可下載所選資產的原始和靜態轉譯。
 
      ![下載多個轉譯](/help/assets/assets/download-multiple-renditions.png)
 
      >[!NOTE]
      >
-     只有在使用[組態](/help/assets/configure-content-hub-ui-options.md#renditions-content-hub)使用者介面啟用轉譯的可見度時，才會顯示轉譯。
+     * 只有在使用[組態](/help/assets/configure-content-hub-ui-options.md#renditions-content-hub)使用者介面啟用轉譯的可見度時，才會顯示轉譯。
+     * 您只能在下載多個資產時下載[靜態轉譯](#types-of-renditions)。
 
-   如果任何選取的資產是授權資產，請按一下左窗格中的資產授權以檢視其預覽，這可讓您選取&#x200B;**[!UICONTROL 我已閱讀並接受上述條款與條件]**，然後按一下&#x200B;**[!UICONTROL 下載]**。 只有在資產已使用Assetsas a Cloud Service製作環境核準時，才會顯示授權預覽。 如需詳細資訊，請參閱[管理 Content Hub 上的授權資產](/help/assets/manage-licensed-assets-on-content-hub.md)。
+   如果任何選取的資產是授權資產，請按一下左窗格中的資產授權以檢視其預覽，這可讓您選取&#x200B;**[!UICONTROL 我已閱讀並接受上述條款與條件]**，然後按一下&#x200B;**[!UICONTROL 下載]**。 只有在資產已使用Assets as a Cloud Service製作環境核準時，才會顯示授權預覽。 如需詳細資訊，請參閱[管理 Content Hub 上的授權資產](/help/assets/manage-licensed-assets-on-content-hub.md)。
 
-   ![下載多個授權](/help/assets/assets/download-multiple-license.png)
+   <!--![download-multiple-license](/help/assets/assets/download-multiple-license.png)-->
 
 <!--1. On the Content Hub homepage, select the asset and click **Download**. The **Download assets** dialog box displays a license or list of licenses associated with the selected assets in the left pane. 
 1. Click a license in the left pane to see its PDF in the middle pane and the associated assets with it in the right pane. The license PDF preview is displayed only if the license is approved in your Assets as a Cloud Service environment. [Approve the license PDFs](/help/assets/approve-assets-content-hub.md) of the selected assets to see their previews.
@@ -101,8 +109,27 @@ The dialog box that displays depends on whether the download list includes expir
  To download non-licensed assets, select the assets and click ![download](/help/assets/assets/download-icon.svg) from the top rail.-->
 
 
+## 轉譯型別 {#types-of-renditions}
+
+資產轉譯是資產原始檔案的不同表示方式。 這些可能包括縮圖、網頁或行動裝置的最佳化版本、加注水標或受DRM保護的檔案，甚至包括動態元素，例如智慧型裁切。 它們不需要符合原始檔案型別，而是在各種使用案例中用於代表資產。
+
+深入瞭解[在Experience Manager Assets](/help/assets/renditions.md)中檢視及管理轉譯。
+
+[!DNL Experience Manager Assets]支援下列轉譯型別：
+
+* [靜態轉譯](/help/assets/renditions.md#static-renditions)：靜態轉譯是數位資產的預先建立版本，通常在資產擷取或修改期間產生。 它們針對特定用途和平台進行最佳化，例如網頁縮圖、回應式設計的行動裝置友好格式，或列印的高解析度檔案，提供簡化且一致的體驗。
+
+* [動態轉譯](/help/assets/renditions.md#dynamic-renditions)：動態轉譯是資產的即時、自訂版本，可執行各種動作，例如根據不同的裝置解析度調整影像大小或裁切以符合各種外觀比例。 這些轉譯可讓您根據更廣泛的需求，提供個人化和最佳化的體驗。 資產的動態轉譯是在[!DNL Adobe Experience Manager Assets]作者環境中建立。
+
+* [智慧型裁切](/help/assets/dynamic-media/image-profiles.md#creating-image-profiles)：智慧型裁切在裁切程式進行期間，只著重於資產的重要部分。 適用於的Dynamic Media智慧型裁切運用由Adobe Sensei提供支援的人工智慧來追蹤地標，確保我們的資產在所有熒幕大小上看起來都最理想。 [!DNL Adobe Experience Manager]智慧型裁切會顯示資產轉譯的寬度和高度以及標題。 如需詳細資訊，請參閱[搭配AEM Assets Dynamic Media使用智慧型裁切](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use)。
+
+  ![轉譯型別](/help/assets/assets/renditions-types.png)
 
 
+>[!NOTE]
+> 
+* 若要搶先使用Dynamic Media帳戶，請[建立並提交Adobe客戶支援案例](https://helpx.adobe.com/tw/enterprise/using/support-for-experience-cloud.html)。
+* 在[Dynamic Media Open API服務](/help/assets/dynamic-media-open-apis-overview.md)上新上線的客戶必須修訂其現有的影像預設集以進行核准。
 
 
 
