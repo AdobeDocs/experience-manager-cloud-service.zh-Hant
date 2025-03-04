@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的運作方式以及該軟體可以為您做哪些事。
 breadcrumb-title: 使用手冊
 user-guide-title: 'AEM as a Cloud Service '
-source-git-commit: 0a30591ba4ad1c73e5e6ca794dc7b84fd050c456
+source-git-commit: 27270875d9f66a3613ac042a450347439bb3baab
 workflow-type: tm+mt
-source-wordcount: '6208'
+source-wordcount: '6205'
 ht-degree: 95%
 
 ---
@@ -1045,10 +1045,10 @@ ht-degree: 95%
          + [保護您的Forms：新增reCAPTCHA安全性](/help/edge/docs/forms/recaptacha-forms.md)
          + [建置自訂表單元件：開發人員指南](/help/edge/docs/forms/custom-components-forms.md)
          + [監督表單效能：Real Use Monitoring指南](/help/edge/docs/forms/real-use-monitoring-for-forms.md)
-         + [在Edge上部署Forms：Edge Delivery Services的發佈指南](/help/edge/docs/forms/publishing-forms.md)
       + WYSIWYG 製作{#universal-editor}
          + [Edge Delivery Services適用的Forms Universal Editor簡介 — 完整指南](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
-         + [如何使用通用編輯器建立您的第一個表單 — 逐步教學課程](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
+         + [如何使用通用編輯器開始撰寫 — 逐步教學課程](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
+         + [如何使用通用編輯器建立您的第一個表單](/help/edge/docs/forms/universal-editor/create-forms.md)
          + [通用編輯器介面指南：工具、功能和導覽說明](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md)
          + [在通用編輯器中讓您的Forms支援行動裝置：回應式設計](/help/edge/docs/forms/universal-editor/responsive-layout.md)
          + [設計精美的Forms：通用編輯器的樣式和主題設定指南](/help/edge/docs/forms/universal-editor/style-theme-forms.md)

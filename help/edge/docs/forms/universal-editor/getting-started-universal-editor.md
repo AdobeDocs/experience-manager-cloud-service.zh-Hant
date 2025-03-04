@@ -4,10 +4,10 @@ description: 本教學課程可協助您啟動並執行新的 Adobe Experience M
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 24a23d98-1819-4d6b-b823-3f1ccb66dbd8
-source-git-commit: 0c6f024594e1b1fd98174914d2c0714dffecb241
+source-git-commit: 964fd32a7dbcb97190d40cb42100d0d66e69a0c4
 workflow-type: tm+mt
-source-wordcount: '1826'
-ht-degree: 97%
+source-wordcount: '1846'
+ht-degree: 96%
 
 ---
 
@@ -20,6 +20,8 @@ ht-degree: 97%
 身處現今的數位時代，所有組織均需要建立簡單易用的表單。Edge Delivery Services 表單是使用通用編輯器所建立，提供 WYSIWYG (所見即所得) 功能。它提供現代、直覺易用的介面，能提高表單製作的效率。
 
 AEM Forms 會提供一個區塊，稱為最適化表單區塊，協助您輕鬆建立 Edge Delivery Services 表單來擷取和儲存資料。您可以[建立使用最適化表單區塊預先設定的新 AEM 專案](#create-a-new-aem-project-pre-configured-with-adaptive-forms-block)，或[將最適化表單區塊新增至現有 AEM 專案](#add-adaptive-forms-block-to-your-existing-aem-project)。
+
+![Github存放庫工作流程](/help/edge/assets/repo-workflow.png)
 
 此教學課程將指導您使用通用編輯器的所見即所得製作功能，在新的或現有的 Adobe Experience Manager Site 專案中，建立、預覽和發佈您自己的表單。
 
@@ -251,6 +253,10 @@ AEM Forms 範本可協助您很快開始使用預先設定最適化表單區塊�
    ![索引頁面](/help/edge/docs/forms/assets/publish-index-page.png)
 
 您可以透過編輯最適化表單區塊中的 `.css` 和 `.js` 檔案，設定 Edge Delivery Services 表單的外觀樣式，並[設定本機 AEM 開發環境](#set-up-local-aem-development-environment) 以立即在瀏覽器中檢視變更。
+
+>[!NOTE]
+>
+> 您也可以[在Universal Editor中編寫獨立表單並將其發佈到Edge Delivery Services](/help/edge/docs/forms/universal-editor/create-forms.md)。
 
 ## 設定本機 AEM 開發環境
 

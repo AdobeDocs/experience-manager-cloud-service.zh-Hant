@@ -7,51 +7,51 @@ Role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: db58ce85-139a-4cc1-8e18-73da76357299
-source-git-commit: 320ab86bc73e874705d985b927e90eec3cad1cf9
+source-git-commit: bb01a76ae2bfd78ae648e91545f34f20fabebd10
 workflow-type: tm+mt
 source-wordcount: '1040'
-ht-degree: 57%
+ht-degree: 100%
 
 ---
 
 
-# Edge Delivery Services Forms
+# Edge Delivery Services 表單
 
-Adobe Edge Delivery Services Forms可轉換表單的製作、執行及處理方式。 運用Edge Delivery Services，組織可以建立快速、安全且高可用性的數位表單，透過快速開發環境提升使用者體驗和營運效率。 透過Edge Delivery Services Forms，您可以提高轉換率、降低成本和加速內容傳送。
+Adobe Edge Delivery Services 表單改造了編寫、執行和處理表單的方式。利用 Edge Delivery Services，組織即可建立快速、安全且高度可用的數位表單，並透過快速的開發環境增強使用者體驗和作業效率。透過 Edge Delivery Services Forms，您可以提高轉換率、降低成本並加速內容交付。
 
-## Edge Delivery Services Forms的優點
+## Edge Delivery Services 表單的優勢
 
-* **更快的表單建立速度**：使用完美的Lighthouse分數建立高效能表單，並使用真實使用者監控(RUM)持續監控其真實世界的效能。
+* **更快速建立表單**：使用完美的 Lighthouse 分數建立高效能表單，並使用真實使用者監控 (RUM) 持續監控其實際效能。
 
-* **簡化撰寫程式**：輕鬆管理來自多個來源的內容，提供更大的彈性。 開箱即用地使用WYSIWYG和檔案式製作來建立表單，讓各種內容格式無縫整合。
+* **簡化的製作流程**：可輕鬆管理來自多個來源的內容，並實現更大的彈性。您即刻就可以使用 WYSIWYG 和文件型製作來建立表單，從而讓各種內容格式緊密整合。
 
-* **方便非技術使用者使用**： Edge Delivery Services可讓非程式設計師輕鬆管理和發佈表單，而不需要廣泛的程式設計知識。
+* **非技術使用者可輕鬆上手**：使用 Edge Delivery Services 不需要廣泛的程式設計知識，因此非程式設計師也能輕鬆管理和發佈表單。
 
-* **改善的使用者體驗**：確保快速載入時間與順暢的互動，為使用者提供最小的等待時間與直覺式的表單填寫體驗。
+* **提升的使用者體驗**：可確保快速的載入時間和順暢的互動，因此可為使用者實現最短的等待時間和直覺式表單填寫體驗。
 
-* **無伺服器執行**： Edge Delivery Services啟用表單邏輯的無伺服器執行。 其中包括：
+* **無伺服器執行**：Edge Delivery Services 可支援表單邏輯的無伺服器執行。其中包括：
 
-   * **使用者端驗證**：表單欄位驗證在使用者端進行，減少來回延遲。
+   * **用戶端驗證**：表單欄位驗證會發生在用戶端，從而減少往返延遲。
 
-   * **預填與Personalization**：使用者端會處理表單資料預填，提供順暢的使用者體驗。
+   * **預先填入及個人化**：表單資料預先填入會在用戶端處理，以實現無縫的使用者體驗。
 
-   * **提交處理**：表單提交已驗證且轉寄安全，無需中央伺服器
+   * **提交處理**：表單提交會經過驗證並安全地轉寄，無需中央伺服器
 
-## Edge Delivery Services Forms如何運作？
+## Edge Delivery Services 表單如何運作？
 
-使用者可以使用檔案式製作工具(例如Edge Delivery Services Drive、SharePoint或Universal Editor (WYSIWYG製作))來製作Google Forms，同時利用GitHub存放庫中可用的基本樣式、行為和元件。 編寫完成後，Edge Delivery Services Forms可以使用Forms提交服務將資料傳送至任何平台。
+使用者可以使用 Google Drive、SharePoint 或通用編輯器 (WYSIWYG 製作) 等文件型製作工具來編寫 Edge Delivery Services 表單，同時可利用 GitHub 存放庫中可用的基本樣式、行為和元件。編寫完成後，Edge Delivery Services 表單即可使用表單提交服務將資料傳送到任何平台。
 
-![Edge Delivery Services Forms的運作方式](/help/edge/docs/forms/assets/eds-forms-working.png)
+![Edge Delivery Services 表單如何運作](/help/edge/docs/forms/assets/eds-forms-working.png)
 
-### Edge Delivery Services Forms的關鍵元件
+### Edge Delivery Service 表單的重要元件
 
-Edge Delivery服務Forms的關鍵元件包括：
+Edge Delivery Servies 表單的重要元件包括：
 
-* **GitHub存放庫**： GitHub存放庫可作為建立Edge Delivery Services Forms的樣板。 這些表單利用來自存放庫的基本樣式和功能，並允許使用者將自訂專案和自訂元件新增到Edge Delivery Services Forms。
+* **GitHub 存放庫**：GitHub 存放庫可作為建立 Edge Delivery Services 表單的範本。這些表單會利用存放庫中的基本樣式和功能，並讓使用者可在 Edge Delivery Services 表單中新增自訂內容和自訂元件。
 
-* **表單製作**： Edge Delivery Services Forms支援兩種型別的製作： WYSIWYG和檔案式製作。 檔案式製作可讓使用者使用熟悉的工具(例如Google Docs和Microsoft Office)來建立表單。 WYSIWYG製作可讓使用者使用通用編輯器以視覺化方式設計表單，讓非技術使用者輕鬆建立和管理表單。 Universal Editor提供直覺式表單建立體驗，並可存取多種表單功能。
+* **表單製作**：Edge Delivery Services 表單可支援兩種製作類型：WYSIWYG 和文件型製作。文件型製作讓使用者能夠使用 Google Docs 和 Microsoft Office 等熟悉的工具建立表單。WYSIWYG 製作則讓使用者可使用通用編輯器以視覺化方式設計表單，非技術使用者因此也可以輕鬆建立和管理表單。通用編輯器可提供直覺式表單建立體驗以及多種表單功能。
 
-* **Forms提交服務**： Forms提交服務可讓您在任何平台(例如OneDrive、SharePoint或Google Sheets)上儲存表單提交的資料，讓您在慣用系統中輕鬆存取和管理表單資料。
+* **表單提交服務**：表單提交服務讓您可在任何平台上儲存表單所提交的資料，例如 OneDrive、SharePoint 或 Google Sheets 等平台，從而讓您輕鬆地在慣用系統中存取和管理表單資料。
 
 ## 編寫表單
 
@@ -63,7 +63,7 @@ Adobe Experience Manager 可提供並支援多個編輯器來編寫表單。您�
 
 通用編輯器是多功能視覺化編輯器，可提供所見即所得 (WYSIWYG) 功能，確保直覺的表單建立體驗。建議在建立新表單時使用通用編輯器，因為它提供了新式、方便使用者的設計和便利的拖放介面。
 
-若要使用通用編輯器建立表單，可使用 AEM 環境中提供的 Edge Delivery Services 範本。這些表單繼承了 Edge Delivery Services GitHub 存放庫中的設定的外觀和樣式。建立[AEM 環境與 Edge Delivery Services GitHub 存放庫之間的連線](/help/edge/docs/forms/publishing-forms.md)是為了在 Edge Delivery Services 上發佈這些表單。
+若要使用通用編輯器建立表單，可使用 AEM 環境中提供的 Edge Delivery Services 範本。這些表單繼承了 Edge Delivery Services GitHub 存放庫中的設定的外觀和樣式。建立[AEM 環境與 Edge Delivery Services GitHub 存放庫之間的連線](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)是為了在 Edge Delivery Services 上發佈這些表單。
 
 如需有關如何使用通用編輯器進行編寫的詳細步驟，請參閱文件[「使用通用編輯器編寫內容」](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/sites/authoring/universal-editor/authoring)。
 
