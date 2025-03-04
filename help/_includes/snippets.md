@@ -1,5 +1,5 @@
 ---
-source-git-commit: d06399fd63d38738e7aff8503aec9a72a2081b5c
+source-git-commit: 3f656e592a4a7a46a1f868f8400f22fb47bcd160
 workflow-type: tm+mt
 source-wordcount: '1390'
 ht-degree: 97%
@@ -248,7 +248,7 @@ ht-degree: 97%
 
 >[!IMPORTANT]
 >
->新專案中[已棄用](/help/release-notes/release-notes-cloud/release-notes-current.md#sites-deprecated) SPA 編輯器。Adobe 仍支援現有專案使用此編輯器，但不應用於新專案。目前，AEM 中用於管理 Headless 內容的首選編輯器為：
+>新專案中[已棄用](/help/release-notes/release-notes-cloud/2025/release-notes-2025-1-0.md#spa-editor) SPA 編輯器。Adobe 仍支援現有專案使用此編輯器，但不應用於新專案。目前，AEM 中用於管理 Headless 內容的首選編輯器為：
 >
 >* [通用編輯器](/help/edge/wysiwyg-authoring/authoring.md)：用於視覺化編輯 Headless 內容。
 >* [內容片段編輯器](/help/assets/content-fragments/content-fragments-managing.md)：用於 Headless 內容的表單型編輯。

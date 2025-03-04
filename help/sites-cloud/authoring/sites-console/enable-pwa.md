@@ -5,7 +5,7 @@ exl-id: 1552a4ce-137a-4208-b7f6-2fc06db8dc39
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: dfa378e6ff8d0295a1e59cbf2cc71ca1a3eae9cb
 workflow-type: tm+mt
 source-wordcount: '1926'
 ht-degree: 0%
@@ -29,20 +29,20 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->AEM Sites [的漸進式網頁應用程式(PWA)功能已過時](/help/release-notes/release-notes-cloud/release-notes-current.md#pwa-features)。
+>已棄用AEM Sites [的漸進式網頁應用程式(PWA)功能](/help/release-notes/release-notes-cloud/2025/release-notes-2025-1-0.md#pwa-features)。
 >
 >使用此功能的現有專案將繼續獲得支援，但新專案不應使用此功能。
 
 ## 簡介 {#introduction}
 
-[漸進式網頁應用程式(PWA)](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps)可讓AEM網站在本機儲存在使用者電腦上，並可離線存取，藉此啟用類似應用程式的沈浸式體驗。 即使失去網際網路連線，使用者也可以在行動中瀏覽網站。 即使網路遺失或不穩定，PWA也能提供順暢的體驗。
+[漸進式網頁應用程式(PWA)](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps)可讓AEM網站在本機儲存在使用者電腦上，並可離線存取，藉此提供沈浸式應用程式般的體驗。 即使失去網際網路連線，使用者也可以在行動中瀏覽網站。 即使網路遺失或不穩定，PWA也能提供順暢的體驗。
 
-內容作者不需要重新錄製網站，而是能夠將PWA屬性設定為網站[頁面屬性](/help/sites-cloud/authoring/sites-console/page-properties.md)中的額外索引標籤。
+內容作者不需要重新錄製網站，而是可以將PWA屬性設定為網站[頁面屬性](/help/sites-cloud/authoring/sites-console/page-properties.md)中的額外索引標籤。
 
-* 儲存或發佈時，此設定會觸發寫出[資訊清單檔案](https://developer.mozilla.org/en-US/docs/Web/Manifest)的事件處理常式，以及啟用網站PWA功能的[Service Worker](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API)。
+* 儲存或發佈時，此設定會觸發寫出[資訊清單檔案](https://developer.mozilla.org/en-US/docs/Web/Manifest)的事件處理常式，以及啟用網站上PWA功能的[Service Worker](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API)。
 * 也會維護Sling對應，以確保從應用程式的根提供Service Worker，以啟用代理內容，允許應用程式內的離線功能。
 
-透過PWA，使用者擁有網站的本機副本，即使沒有網際網路連線，也能提供應用程式般的體驗。
+透過PWA，使用者可獲得網站的本機副本，即使沒有網際網路連線，也能提供應用程式般的體驗。
 
 >[!NOTE]
 >
@@ -50,7 +50,7 @@ ht-degree: 0%
 
 ## 先決條件 {#prerequisites}
 
-若要能夠針對您的網站使用PWA功能，您的專案環境有兩個要求：
+若要在網站上使用PWA功能，您的專案環境有兩個需求：
 
 1. [使用核心元件](#adjust-components)以利用此功能
 1. [調整您的Dispatcher](#adjust-dispatcher)規則以公開必要的檔案
@@ -108,7 +108,7 @@ RewriteCond %{REQUEST_URI} (.html|.jpe?g|.png|.svg|.webmanifest)$
 
 ## 為您的網站啟用PWA {#enabling-pwa-for-your-site}
 
-滿足[必要條件](#prerequisites)後，內容作者就可以輕鬆啟用網站PWA功能。 以下是如何進行此操作的基本概述。 個別選項在[詳細選項](#detailed-options)一節中詳細說明。
+滿足[必要條件](#prerequisites)後，內容作者就可以輕鬆地為網站啟用PWA功能。 以下是如何進行此操作的基本概述。 個別選項在[詳細選項](#detailed-options)一節中詳細說明。
 
 1. 登入AEM。
 1. 從主功能表中選取&#x200B;**導覽** > **網站**。
@@ -149,7 +149,7 @@ RewriteCond %{REQUEST_URI} (.html|.jpe?g|.png|.svg|.webmanifest)$
 
 ## 詳細選項 {#detailed-options}
 
-以下章節提供當[設定您的網站以進行PWA](#enabling-pwa-for-your-site)時可用的選項的詳細資訊。
+以下章節提供當[為PWA](#enabling-pwa-for-your-site)設定您的網站時可用的選項的詳細資訊。
 
 ### 設定安裝體驗 {#configure-installable-experience}
 
@@ -209,7 +209,7 @@ RewriteCond %{REQUEST_URI} (.html|.jpe?g|.png|.svg|.webmanifest)$
 
 * 如果使用者未使用應用程式，頁面不會自動同步或更新。
 
-實作Adobe時，PWA也建議下列事項。
+Adobe也建議您在實作PWA時進行下列操作。
 
 ### 將預先快取的資源數量減到最少。 {#minimize-precache}
 
@@ -218,9 +218,9 @@ Adobe建議您限制要預先快取的頁數。
 * 內嵌程式庫，以減少預先快取時要管理的專案數量。
 * 限制要預先快取的影像變化數量。
 
-### 在專案指令碼和樣式表穩定後啟用PWA。 {#pwa-stabilized}
+### 在穩定專案指令碼和樣式表後啟用PWA。 {#pwa-stabilized}
 
-使用者端程式庫已連同快取選擇器一起傳送，並遵循下列模式`lc-<checksumHash>-lc`。 每當構成程式庫的其中一個檔案（和相依性）變更時，此選取器就會變更。 如果您列出要由service-worker預先快取的使用者端程式庫，且想參照新版本，請手動擷取並更新專案。 因此，Adobe建議您在穩定專案指令碼和樣式表之後，將網站設定為PWA。
+使用者端程式庫已連同快取選擇器一起傳送，並遵循下列模式`lc-<checksumHash>-lc`。 每當構成程式庫的其中一個檔案（和相依性）變更時，此選取器就會變更。 如果您列出要由service-worker預先快取的使用者端程式庫，且想參照新版本，請手動擷取並更新專案。 因此，Adobe建議您在穩定專案指令碼和樣式表後，將網站設定為PWA。
 
 ### 將影像變數的數量減到最少。 {#minimize-variations}
 
@@ -230,4 +230,4 @@ AEM核心元件的影像元件會決定要擷取的前端最佳轉譯。 此機�
 
 若未妥善設定，記憶體與網路耗用量可能會嚴重影響PWA的效能。 此外，如果您打算預先快取50個影像，且每個影像有三個寬度，則維護網站的使用者必須在頁面屬性的PWA預先快取區段中，維護最多150個專案的清單。
 
-Adobe也建議您在使用影像的專案穩定後將網站設定為PWA。
+Adobe也建議您在專案穩定使用影像後，將網站設定為PWA。
