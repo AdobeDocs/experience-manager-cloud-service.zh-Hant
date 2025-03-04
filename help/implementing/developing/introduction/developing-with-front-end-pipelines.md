@@ -4,9 +4,9 @@ description: 前端管道增強了開發人員的獨立性，並加快了開發�
 exl-id: 996fb39d-1bb1-4dda-a418-77cdf8b307c5
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 8bda36d7aa86bd6b26ecaff9831f29d9e847837f
+source-git-commit: 8d21437b56af1d337e20b25b53fdd00ecb856bf1
 workflow-type: tm+mt
-source-wordcount: '1126'
+source-wordcount: '1123'
 ht-degree: 0%
 
 ---
@@ -32,9 +32,9 @@ ht-degree: 0%
 
 前端組建環境支援下列`Node.js`版本：
 
-* 23
+<!-- * 23
 * 22
-* 20
+* 20 -->
 * 18
 * 16
 * 14 （預設）
