@@ -3,10 +3,10 @@ title: 從Content Hub下載資產
 description: 瞭解如何從Content Hub入口網站下載資產
 role: User
 exl-id: 96d4ffba-4e3e-4496-9da2-6eb36be8331f
-source-git-commit: 07d533962ae2922c8a467924361fdfefc5c594eb
+source-git-commit: 523ba2ae59bfc0d35cca350a8daf3e20ac9e5332
 workflow-type: tm+mt
-source-wordcount: '770'
-ht-degree: 9%
+source-wordcount: '778'
+ht-degree: 8%
 
 ---
 
@@ -128,7 +128,7 @@ The dialog box that displays depends on whether the download list includes expir
 
 >[!NOTE]
 > 
-* 若要搶先使用Dynamic Media帳戶，請[建立並提交Adobe客戶支援案例](https://helpx.adobe.com/tw/enterprise/using/support-for-experience-cloud.html)。
+* 動態和智慧型裁切轉譯功能處於早期採用者階段。 若要存取此功能，[請建立並提交Adobe客戶支援案例](https://helpx.adobe.com/tw/enterprise/using/support-for-experience-cloud.html)。
 * 在[Dynamic Media Open API服務](/help/assets/dynamic-media-open-apis-overview.md)上新上線的客戶必須修訂其現有的影像預設集以進行核准。
 
 
