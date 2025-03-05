@@ -6,7 +6,7 @@ Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: babddee34b486960536ce7075684bbe660b6e120
+source-git-commit: ef6c113721ca6f84374ecd01df790a0b37d00192
 workflow-type: tm+mt
 source-wordcount: '2289'
 ht-degree: 26%
@@ -147,7 +147,7 @@ Universal Editor提供強大的WYSIWYG介面，結合視覺化設計簡易性與
 如需詳細資訊：
 
 * [瞭解您的價值實現儀表板](/help/forms/aem-forms-value-realization-dashboard.md)
-* [解讀表單與檔案使用方式深入分析](/help/forms/interpreting-form-usage-insights-from-your-vr-dashboard.md)
+* [解讀表單與檔案使用方式深入分析](/help/forms/using-the-value-realization-dashboard.md)
 
 ## 其他早期存取創新
 
