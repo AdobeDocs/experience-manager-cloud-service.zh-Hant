@@ -6,10 +6,10 @@ Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: ae64d8acac3dee938db8ecbc1c8f5c9149b70365
+source-git-commit: 85d788eeb5017b99ea4962105b63b20c487f363f
 workflow-type: tm+mt
-source-wordcount: '2056'
-ht-degree: 26%
+source-wordcount: '2155'
+ht-degree: 28%
 
 ---
 
@@ -74,7 +74,7 @@ Forms帶來的更多對話功能如下：
 對話式Forms不僅是一種新外觀 — 它還能改變使用者體驗的遊戲規則。  提升參與度、減少表單放棄率，並讓每個人都能更愉快地與您的網站互動。
 
 
-### Edge Delivery Services的WYSIWYG製作
+### 適用於Edge Delivery Services的WYSIWYG製作
 
 WYSIWYG製作提供WYSIWYG介面(通用編輯器和調適型Forms編輯器)，用以建置調適型表單並發佈至Edge Delivery Services。 WYSIWYG Authoring提供[Document-based Authoring](/help/edge/docs/forms/overview.md#document-based-authoring-features)的所有功能，以及各種其他功能：
 
@@ -104,17 +104,39 @@ WYSIWYG製作提供WYSIWYG介面(通用編輯器和調適型Forms編輯器)，�
 
 * [將 Marketo Engage 與 AEM Forms 進行整合](/help/forms/integrate-form-to-marketo-engage.md)
 * [整合最適化表單與Marketo Engage](/help/forms/integrate-adaptive-form-with-marketo-engage.md)
-* [設定現有最適化Forms的Marketo Engage廣告資料來源](/help/forms/use-marketo-engage-data-source-in-form.md)
-* [提交現有的最適化表單以Marketo Engage](/help/forms/submit-adaptive-form-to-marketo-engage.md)
+* [為現有的Adaptive Forms設定Marketo Engage廣告資料來源](/help/forms/use-marketo-engage-data-source-in-form.md)
+* [提交現有的最適化表單至Marketo Engage](/help/forms/submit-adaptive-form-to-marketo-engage.md)
+
+### 價值實現儀表板
+
+使用價值實現儀表板追蹤和分析表單的績效。 此分析工具可協助您進行資料導向式決策，以最佳化表單策略。
+
+![Forms使用分析控制面板](/help/forms/assets/forms-usage-insights.png)
+
+**主要功能：**
+
+* 監視表單提交、檔案轉譯和表單建立/發佈量度
+* 在整個組織中追蹤表單片段的使用和重複使用
+* 識別趨勢、尖峰時段和改善機會
+
+控制面板透過兩個主要區段提供深入分析：
+
+* **一段時間內的表單和檔案活動**：追蹤提交、轉譯和表單建立/發佈
+* **片段使用**：監視片段的採用和重複使用
+
+如需詳細資訊：
+
+* [瞭解您的價值實現儀表板](/help/forms/aem-forms-value-realization-dashboard.md)
+* [解讀表單與檔案使用方式深入分析](/help/forms/interpreting-form-usage-insights-from-your-vr-dashboard.md)
 
 ## 其他早期存取創新
 
-### 在最適化Forms中HTML電子郵件範本
+### 最適化表單中的 HTML 電子郵件範本
 
 
-最適化Forms可讓您使用[HTML電子郵件範本](/help/forms/html-email-templates-in-adaptive-forms.md)。 HTML電子郵件範本可讓您在提交表單時，傳送豐富、個人化且吸引目光的電子郵件。 這些電子郵件可使用表單資料自訂，並使用各種電子郵件標籤（例如影像和連結）進行強化。 透過Adaptive Forms，您可以上傳包含HTML範本的檔案，或使用純文字編輯器來建立這些範本。
+最適化表單讓您能夠使用 [HTML 電子郵件範本](/help/forms/html-email-templates-in-adaptive-forms.md)。HTML 電子郵件範本讓您能夠在提交表單時發送內容豐富又有視覺吸引力的個人化電子郵件。這些電子郵件可以使用表單資料進行自訂，並運用各種電子郵件標籤 (例如影像和連結) 加強內容。透過最適化表單，您可以上傳包含 HTML 範本的檔案，或使用純文字編輯器來建立這些範本。
 
-![HTML電子郵件範本](/help/forms/assets/html-email.png)
+![HTML 電子郵件範本](/help/forms/assets/html-email.png)
 
 ### RESTful Web服務提交動作
 
@@ -161,17 +183,17 @@ AEM Forms 新增對於 Cloudflare Turnstile 和 hCaptcha 兩種熱門驗證碼�
 ### 檔案Assurance API
 
 
-AEM Forms Doc Assurance API是AEM FormsCloud Service通訊API中的一組工具，可讓您管理PDF檔案的安全性和使用者互動。
+AEM Forms Doc Assurance API是AEM Forms Cloud Service Communication API中的一組工具，可讓您管理PDF檔案的安全性和使用者互動。
 
 以下為Doc Assurance API功能劃分：
 
-* **加密和解密檔案**：透過加密讓檔案的內容無法讀取，以Protect您的檔案。 您可以控制PDF的加密部分，包括整個檔案、特定內容、中繼資料或附件。
+* **加密和解密檔案**：透過加密使檔案的內容無法讀取，以保護您的檔案。 您可以控制PDF的加密部分，包括整個檔案、特定內容、中繼資料或附件。
 
 * **數位簽署檔案**：將數位簽章新增至您的檔案，以進行驗證和防篡改驗證。 這可用於認證目的或確保檔案完整性
 
-* **Reader擴充檔案(套用或編輯PDF檔案的使用許可權)**：透過擴充具有其他使用許可權的Adobe Reader功能，讓您的組織能夠輕鬆共用互動式PDF檔案。
+* **Reader擴充您的檔案(套用或編輯PDF檔案的使用許可權)**：透過擴充具有其他使用許可權的Adobe Reader功能，讓您的組織能夠輕鬆共用互動式PDF檔案。
 
-  Reader擴充功能（使用許可權） API將使用許可權新增至PDF檔案。 此動作會啟動在使用Adobe Reader開啟PDF檔案時通常無法使用的功能，例如新增註釋至檔案、填寫表單和儲存檔案。 協力廠商使用者不需要其他軟體或外掛程式即可使用啟用許可權的檔案。
+  Reader擴充功能（使用許可權） API將使用許可權新增至PDF檔案。 此動作會啟動使用Adobe Reader開啟PDF檔案時通常無法使用的功能，例如新增註釋至檔案、填寫表單及儲存檔案。 協力廠商使用者不需要其他軟體或外掛程式即可使用啟用許可權的檔案。
 
   當PDF檔案新增了適當的使用許可權時，收件者可以從Adobe Reader中執行啟用的活動。
 
@@ -180,7 +202,7 @@ AEM Forms Doc Assurance API是AEM FormsCloud Service通訊API中的一組工具�
 
 ### Forms服務API
 
-Forms 服務會產生用於資料擷取的互動式 PDF forms。它也可以用來匯入/匯出資料至現有的互動式PDF表單，以及驗證提交的資料。 以下是其功能的詳細介紹：
+Forms 服務會產生用於資料擷取的互動式 PDF forms。它也可以用來將資料匯入/匯出至現有的互動式PDF表單，以及驗證提交的資料。 以下是其功能的詳細介紹：
 
 * **轉譯表單**：從使用 AEM Forms Designer 建立的範本，並可以選擇搭配 XML 資料，產生互動式 PDF 表單。這實質上會產生一個可填寫的 PDF 表單，可選擇預先填入資料。
 
@@ -190,10 +212,10 @@ Forms 服務會產生用於資料擷取的互動式 PDF forms。它也可以用�
 
 ### 檔案產生API
 
-檔案產生API包含選擇性功能，可讓系統直接將產生的PDF上傳至Azure Blob儲存體。 使用檔案產生API直接將PDF上傳到Azure Blob儲存體的一些主要優點包括：
+檔案產生API包含選擇性功能，可讓您將產生的PDF直接上傳至Azure Blob儲存體。 使用Document Generation API直接將PDF上傳到Azure Blob Storage的一些主要優點包括：
 
 * **與雲端儲存空間緊密整合**：
-直接將產生的PDF上傳到Azure Blob Storage後，就不需要額外的手動或程式化步驟來傳輸檔案、簡化工作流程及提升效率。
+直接將產生的PDF上傳到Azure Blob Storage不需要額外的手動或程式化步驟來傳輸檔案、簡化工作流程及提高效率。
 
 * **集中式檔案管理**：
 將PDF儲存在Azure Blob Storage可集中管理檔案，讓您更輕鬆地組織、擷取和管理各種使用案例中產生的檔案。
@@ -208,5 +230,5 @@ Forms 服務會產生用於資料擷取的互動式 PDF forms。它也可以用�
 
 * [AEM Forms as a Cloud Service的功能](/help/forms/home.md)
 
-* [AEM 6.5 Forms （AMS和內部部署）與AEM Forms as a Cloud Service (AEM CS Forms)的差異](/help/forms/notable-changes.md)
+* [AEM 6.5 Forms （AMS和內部部署）與AEM Forms as a Cloud Services (AEM CS Forms)的差異](/help/forms/notable-changes.md)
 

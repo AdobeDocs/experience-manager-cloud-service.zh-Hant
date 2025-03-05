@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的運作方式以及該軟體可以為您做哪些事。
 breadcrumb-title: 使用手冊
 user-guide-title: 'AEM as a Cloud Service '
-source-git-commit: 3789904b4aa1ffa4a039e6b84af64f03f06a3206
+source-git-commit: 85d788eeb5017b99ea4962105b63b20c487f363f
 workflow-type: tm+mt
-source-wordcount: '6216'
+source-wordcount: '6222'
 ht-degree: 95%
 
 ---
@@ -892,7 +892,9 @@ ht-degree: 95%
    + 交易報告{#using-communications}
       + [交易報告計費 API](/help/forms/transaction-reports-billable-apis.md)
       + [記錄自訂實作的交易](/help/forms/record-transaction-custom-implementation.md)
-      + [了解您的價值實現儀表板](/help/forms/aem-forms-value-realization-dashboard.md)
+   + 值實現儀表板{#vr-dashboard}
+      + [瞭解您的價值實現儀表板](/help/forms/aem-forms-value-realization-dashboard.md)
+      + [解譯使用情況深入分析](/help/forms/interpreting-form-usage-insights-from-your-vr-dashboard.md)
    + 開發人員 API 參考 {#aem-forms-developer-api-reference}
       + [最適化表單 API 參考](https://developer-stage.adobe.com/experience-cloud/experience-manager-apis/api/stable/forms/)
       + [AEM Forms as a Cloud Service 通訊 API 參考](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)

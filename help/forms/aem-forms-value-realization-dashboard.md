@@ -5,35 +5,45 @@ feature: Adaptive Forms, Foundation Components, Core Components
 role: Admin, Developer, Leader, User
 hide: true
 hidefromtoc: true
-exl-id: 2c071f3c-b74a-4efc-808d-6aba9f294663
-source-git-commit: cd106c1970bf26eb590a418e3e6b79e3d3d9b5fe
+source-git-commit: 85d788eeb5017b99ea4962105b63b20c487f363f
 workflow-type: tm+mt
-source-wordcount: '477'
+source-wordcount: '512'
 ht-degree: 0%
 
 ---
 
-# 瞭解您的價值實現控制面板：充份運用Forms {#value-realization-dashboard}
+
+# 瞭解您的價值實現儀表板
+
+![Fvalue實現儀表板](/help/edge/docs/forms/universal-editor/assets/forms-insights-banner.svg)
+
 
 <span class="preview">此功能是測試版功能，僅對少數選定客戶啟用。</span>
 
 歡迎光臨一站式商店，瞭解表單帶來的價值！ 此儀表板可為您提供寶貴的見解，以最佳化您的表單、簡化工作流程，並最終更快地實現您的目標。
 
-## 控制面板上有什麼內容？ {#content-of-dashboard}
+本文提供「價值實現儀表板」及其優勢的概念概觀。 如需詳細的使用指示和量度解譯，請參閱[使用值實現儀表板](/help/forms/interpreting-form-usage-insights-from-your-vr-dashboard.md)解譯表單使用方式深入分析。
+
+
+![值實現儀表板](/help/forms/assets/forms-usage-insights.png)
+
+## 儀表板上的內容為何？ {#content-of-dashboard}
 
 此儀表板是您瞭解表單使用情形的視窗。 以下是主要區段的劃分：
 
-### 一段時間的表單活動：
+### 一段時間內的表單和檔案活動
 
 * **表單提交次數**：檢視表格完成頻率的趨勢。
 * **檔案轉譯**：追蹤一段時間內轉譯的檔案數目。
 * **Forms已建立和發佈**：監視建置和部署新表單的速率。
 * **表單建立與發佈時間**：分析建立與發佈表單的平均時間，以找出需要改善的領域。
 
-### 片段用途：
+### 片段用途
 
 * **使用中的表單片段數目**：檢視目前有多少可重複使用的表單區段已合併到使用中的表單中。
-* **重複使用的表單片段數目**：測量這些片段在不同表單間使用的頻率。
+* **重複使用表單片段**：測量這些片段在不同表單間使用的頻率。
+
+
 
 
 ## 這對您有何好處？ {#benefits-to-you}
@@ -62,3 +72,7 @@ ht-degree: 0%
 * **實驗與改進：**&#x200B;請放心嘗試不同的表單設計和片段使用。 儀表板可協助您評估變更的成效。
 
 請記住，這個儀表板是您的盟友！ 有效地使用它，您可以將表單從簡單的資料收集工具轉換為策略資產，為您和您的企業帶來成功。
+
+## 另請參閱
+
+* [解譯使用情況深入分析](/help/forms/interpreting-form-usage-insights-from-your-vr-dashboard.md)
