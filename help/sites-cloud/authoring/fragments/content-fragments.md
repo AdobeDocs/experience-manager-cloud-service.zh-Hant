@@ -5,7 +5,7 @@ exl-id: 7a44fc4e-3793-4aa3-8c21-db0567c93244
 solution: Experience Manager Sites
 feature: Authoring, Content Fragments
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 46b0af152d5f297419e7d1fa372975aded803bc7
 workflow-type: tm+mt
 source-wordcount: '1267'
 ht-degree: 2%
@@ -14,7 +14,7 @@ ht-degree: 2%
 
 # 內容片段 {#content-fragments}
 
-Adobe Experience Manager (AEM) as a Cloud Service中的內容片段是[建立並管理為不受頁面影響的資產](/help/sites-cloud/administering/content-fragments/overview.md)，可讓您建立管道中性內容，以及（可能特定於管道的）變數。 您可以在編寫內容頁面時使用這些片段及其變數。
+Adobe Experience Manager (AEM) as a Cloud Service中的內容片段是[建立並管理為不受頁面影響的資產](/help/sites-cloud/administering/content-fragments/overview.md)，可讓您建立管道中性內容，連同（可能是管道特定）變數。 您可以在編寫內容頁面時使用這些片段及其變數。
 
 >[!CAUTION]
 >
@@ -24,7 +24,7 @@ Adobe Experience Manager (AEM) as a Cloud Service中的內容片段是[建立並
 >
 >內容片段是&#x200B;**網站**&#x200B;功能，但儲存為&#x200B;**Assets**。
 >
->目前主要透過&#x200B;**[內容片段](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console)**&#x200B;主控台管理，但仍可從&#x200B;**[Assets](/help/assets/content-fragments/content-fragments-managing.md)**&#x200B;主控台管理。
+>目前主要透過&#x200B;**[內容片段](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console)**&#x200B;主控台管理，但仍可從&#x200B;**[Assets](/help/assets/content-fragments/content-fragments-managing.md)**&#x200B;主控台管理。
 >
 >編寫內容片段有兩個編輯器：
 >
@@ -111,7 +111,7 @@ Adobe Experience Manager (AEM) as a Cloud Service中的內容片段是[建立並
 
 * **識別碼**
 
-   * 要套用至元件的&#x200B;**HTML識別碼**&#x200B;屬性。
+   * 要套用至元件的&#x200B;**HTML ID**&#x200B;屬性。
 
 ### 快速連線到片段編輯器 {#quick-connection-to-fragment-editor}
 
@@ -123,7 +123,7 @@ Adobe Experience Manager (AEM) as a Cloud Service中的內容片段是[建立並
 
 ### 新增中間內容 {#adding-in-between-content}
 
-將特定內容片段新增到頁面時，片段的每個HTML段落（和上/下）之間會有&#x200B;**將元件拖曳到這裡**&#x200B;預留位置。
+將特定內容片段新增到頁面時，片段的每個HTML段落（和上/下）之間會有&#x200B;**拖曳元件到這裡**&#x200B;預留位置。
 
 這可讓您新增中間的[額外內容（亦即中間內容）](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments)片段內容（在任何可用點），而不需變更根片段。
 

@@ -4,7 +4,7 @@ description: 元件可調整為根據模組化架構產生其內容的JSON匯出
 exl-id: e9be5c0c-618e-4b56-a365-fcdd185ae808
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 07327f80b23e1e6fdbb3fb49d861221877724d39
 workflow-type: tm+mt
 source-wordcount: '421'
 ht-degree: 6%
@@ -30,7 +30,7 @@ JSON匯出是以[Sling模型](https://sling.apache.org/documentation/bundles/mod
 
 >[!NOTE]
 >
->如需使用Sling模型的範例，請參閱文章[在AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/develop-sling-model-exporter.html)中開發Sling模型匯出工具。
+>如需使用Sling模型的範例，請參閱文章[在AEM中開發Sling模型匯出工具](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/develop-sling-model-exporter.html)。
 
 Sling模型實作類別必須使用以下專案註釋：
 
@@ -72,13 +72,13 @@ https://<server>:<port>/content/page.model.selector1.selector2.json
 
 ## 範例 {#example}
 
-[核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hant)支援JSON匯出，可作為參考使用。
+[核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-hant)支援JSON匯出，可作為參考使用。
 
 如需範例，請參閱影像核心元件的Sling模型實作及其附註介面。
 
 ## 相關檔案 {#related-documentation}
 
 * [內容片段](/help/sites-cloud/administering/content-fragments/overview.md)
-* [內容片段模型](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
+* [內容片段模型](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)
 * [使用內容片段製作](/help/sites-cloud/authoring/fragments/content-fragments.md)
-* [核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hant)和[內容片段元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html)
+* [核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-hant)和[內容片段元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html)

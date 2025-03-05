@@ -5,9 +5,9 @@ exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
 feature: Content Fragments
 role: User
 solution: Experience Manager Sites
-source-git-commit: 86a2c5f35d82010c84b74b6b5f0da09fd87c2b7a
+source-git-commit: 5054b843a8bb6053bb6617e9efdfc16dd1eac6ca
 workflow-type: tm+mt
-source-wordcount: '2231'
+source-wordcount: '2247'
 ht-degree: 4%
 
 ---
@@ -39,7 +39,7 @@ ht-degree: 4%
 >
 >內容片段是 Sites 的一項功能，但儲存為&#x200B;**資產**。
 >
->目前主要透過&#x200B;**[內容片段](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console)**&#x200B;主控台管理，但仍可從&#x200B;**Assets**&#x200B;主控台管理。 本節涵蓋&#x200B;**Assets**&#x200B;主控台的管理功能。
+>內容片段和內容片段模型現在主要透過&#x200B;**[內容片段](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console)**&#x200B;主控台進行管理，不過內容片段仍可從&#x200B;**Assets**&#x200B;主控台進行管理，而內容片段模型可從&#x200B;**工具**&#x200B;主控台進行管理。 本節涵蓋&#x200B;**Assets**&#x200B;和&#x200B;**Tools**&#x200B;主控台中的管理。
 >
 >編寫內容片段有兩個編輯器；雖然基本功能相同，但有一些差異。 本節涵蓋原始編輯器，主要是從&#x200B;**Assets**&#x200B;主控台存取。 請參閱網站檔案[內容片段 — 製作](/help/sites-cloud/administering/content-fragments/authoring.md)，以取得新編輯器的詳細資訊（主要從&#x200B;**內容片段**&#x200B;主控台存取）。 兩個編輯器在頂部工具欄中都有一個切換開關，用於提供對另一個編輯器的快速存取。
 
@@ -98,7 +98,7 @@ ht-degree: 4%
 
 AEM Content Services的設計目的，是要概括AEM內/外部內容的說明和傳遞，而不只是關注網頁。
 
-它們使用可供任何使用者端使用的標準化方法，將內容傳送至非傳統AEM網頁的管道。 這些管道可能包括：
+這些頻道使用任何使用者端都能使用的標準化方法，將內容傳送至非傳統AEM網頁的管道。 這些管道可能包括：
 
 * 單頁應用程式
 * 原生行動應用程式
@@ -112,7 +112,7 @@ AEM內容片段可用於說明和管理結構化內容。 結構化內容在可�
 
 >[!NOTE]
 >
->請參閱[Headless與AEM](/help/headless/introduction.md)，瞭解AEM Sites的Headless開發as a Cloud Service。
+>請參閱[Headless與AEM](/help/headless/introduction.md)，瞭解AEM Sites as a Cloud Service的Headless開發簡介。
 
 >[!NOTE]
 >
@@ -131,7 +131,7 @@ AEM內容片段可用於說明和管理結構化內容。 結構化內容在可�
 
    * **內容片段**&#x200B;元件可供頁面作者使用。 它可讓他們以HTML或JSON格式參考及傳送所需的內容片段。
 
-* 可使用[AEM GraphQL API](/help/headless/graphql-api/content-fragments.md)存取。
+* 可使用[AEM GraphQL API](/help/headless/graphql-api/content-fragments.md)進行存取。
 
 內容片段是內容結構，具備以下功能：
 

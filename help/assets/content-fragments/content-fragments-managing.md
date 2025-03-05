@@ -5,7 +5,7 @@ exl-id: 333ad877-db2f-454a-a3e5-59a936455932
 feature: Content Fragments
 role: User, Admin
 solution: Experience Manager Sites
-source-git-commit: b018c1948d479c78e1ef25b2248f3674ec1fcf92
+source-git-commit: 715283a9b7c7930ba11063475dbc19f71baacb05
 workflow-type: tm+mt
 source-wordcount: '1907'
 ht-degree: 7%
@@ -39,7 +39,7 @@ ht-degree: 7%
 >
 >內容片段是 Sites 的一項功能，但儲存為&#x200B;**資產**。
 >
->目前主要透過&#x200B;**[內容片段](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console)**&#x200B;主控台管理，但仍可從&#x200B;**Assets**&#x200B;主控台管理。 本節涵蓋&#x200B;**Assets**&#x200B;主控台的管理功能。
+>目前主要透過&#x200B;**[內容片段](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console)**&#x200B;主控台管理，但仍可從&#x200B;**Assets**&#x200B;主控台管理。 本節涵蓋&#x200B;**Assets**&#x200B;主控台的管理功能。
 >
 >編寫內容片段有兩個編輯器；雖然基本功能相同，但有一些差異。 本節涵蓋原始編輯器，主要是從&#x200B;**Assets**&#x200B;主控台存取。 請參閱網站檔案[內容片段 — 製作](/help/sites-cloud/administering/content-fragments/authoring.md)，以取得新編輯器的詳細資訊（主要從&#x200B;**內容片段**&#x200B;主控台存取）。 兩個編輯器在頂部工具欄中都有一個切換開關，用於提供對另一個編輯器的快速存取。
 
@@ -118,7 +118,7 @@ ht-degree: 7%
 
    * 可讓您[開啟片段以編輯內容](/help/assets/content-fragments/content-fragments-variations.md)及其元素、變化、關聯的內容和中繼資料。
 
-* **快速Publish**
+* **快速發佈**
 * **管理發佈**
 * **管理標籤**
 * **至集合**
@@ -198,7 +198,7 @@ ht-degree: 7%
    * **已修改**：橙色
    * **已停用**：紅色
 
-* 按鈕可讓您&#x200B;**嘗試新的編輯器**，方法是直接開啟&#x200B;*新的* [內容片段編輯器](/help/sites-cloud/administering/content-fragments/authoring.md)，此編輯器可透過[內容片段主控台](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console)存取。
+* 按鈕可讓您&#x200B;**嘗試新的編輯器**，方法是直接開啟&#x200B;*新的* [內容片段編輯器](/help/sites-cloud/administering/content-fragments/authoring.md)，此編輯器可透過[內容片段主控台](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console)存取。
 
   >[!WARNING]
   >
@@ -246,7 +246,7 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 
   將結束編輯器，而不儲存最新變更（亦即自上次&#x200B;**儲存**&#x200B;後所做的變更）。
 
-編輯您的內容片段時，AEM會自動建立版本，以確保在您取消變更時可以還原先前的內容（使用&#x200B;**關閉**&#x200B;而不儲存）：
+在編輯您的內容片段時，AEM會自動建立版本，以確保在您取消變更時可以還原先前的內容（使用&#x200B;**關閉**&#x200B;而不儲存）：
 
 1. 開啟內容片段以編輯AEM時，會檢查是否存在Cookie式權杖，指出&#x200B;*編輯工作階段*&#x200B;是否存在：
 

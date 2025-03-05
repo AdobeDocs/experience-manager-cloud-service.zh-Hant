@@ -5,7 +5,7 @@ exl-id: 3eca973f-b210-41bb-98da-ecbd2bae9803
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 07327f80b23e1e6fdbb3fb49d861221877724d39
 workflow-type: tm+mt
 source-wordcount: '1727'
 ht-degree: 100%
@@ -22,7 +22,7 @@ ht-degree: 100%
 
 ## 目標 {#objective}
 
-* **對象**：初學者
+* **客群**：初學者
 * **目標**：介紹 Headless CMS 製作的基本知識：
    * 使用 AEMaaCS 製作簡介
    * 內容片段簡介
@@ -308,13 +308,13 @@ You can view additional information about items using the Rail Selector. This al
 
          * [發佈和預覽內容片段](/help/sites-cloud/administering/content-fragments/managing.md#publishing-and-previewing-a-fragment)
 
-   * [內容片段模型](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
+   * [內容片段模型](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)
 
       * [內容片段模型 - 資料類型](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)
 
       * [內容片段模型 - 屬性](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#properties)
 
-      * [內容片段模型 - 允許內容片段模型在資產資料夾上](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#allowing-content-fragment-models-assets-folder)
+      * [內容片段模型 - 允許內容片段模型在資產資料夾上](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#allowing-content-fragment-models-assets-folder)
 
 * [內容片段 - 來自資產主控台的原始編輯器](/help/assets/content-fragments/content-fragments-variations.md)
 

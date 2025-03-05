@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: ce9cb811-57d2-4a57-a360-f56e07df1b1a
 solution: Experience Manager Sites
-source-git-commit: 2daddd852f4cfcbcd6b1d4aea9cd96e045c93ca0
+source-git-commit: 715283a9b7c7930ba11063475dbc19f71baacb05
 workflow-type: tm+mt
-source-wordcount: '1857'
+source-wordcount: '2010'
 ht-degree: 4%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 4%
 >
 >若要檢視狀態，以及如果您有興趣要如何套用，請檢視[發行說明](/help/release-notes/release-notes-cloud/release-notes-current.md)。
 
-透過Adobe Experience Manager (AEM)as a Cloud Service，內容片段允許您設計、建立、管理和發佈獨立於頁面的內容。 它們可讓您準備內容以用於多個位置及多個管道，非常適合[Headless傳遞](/help/headless/what-is-headless.md)及[頁面製作](/help/sites-cloud/authoring/fragments/content-fragments.md)。
+透過Adobe Experience Manager (AEM) as a Cloud Service，內容片段可讓您設計、建立、管理和發佈獨立於頁面的內容。 它們可讓您準備內容以用於多個位置及多個管道，非常適合[Headless傳遞](/help/headless/what-is-headless.md)及[頁面製作](/help/sites-cloud/authoring/fragments/content-fragments.md)。
 
 >[!IMPORTANT]
 >
@@ -39,8 +39,8 @@ ht-degree: 4%
 
 內容片段包含結構化內容：
 
-* 每個片段都以[內容片段模型](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)為基礎。
-   * 內容片段模式會定義產生片段的結構。
+* 每個片段都以[內容片段模型](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)為基礎。
+   * [內容片段模型定義了結果片段的結構](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)。
 * 每個片段都包含：
    * **[Main](#main-and-variations)** — 包含核心內容的片段整體部分；永遠存在，無法刪除
    * **[變數](#main-and-variations)** — 作者建立的一或多個內容排列
@@ -92,7 +92,7 @@ ht-degree: 4%
 本頁和下列頁面涵蓋建立、設定、維護及使用內容片段的任務：
 
 * [為您的執行個體啟用內容片段功能](/help/sites-cloud/administering/content-fragments/setup.md)
-* [內容片段模型](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) — 啟用、建立和定義您的模型
+* [內容片段模型](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md) — 啟用、建立和[定義您的模型](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
 * [建立您的內容片段](/help/sites-cloud/administering/content-fragments/managing.md#creating-a-content-fragment) （使用內容片段主控台）
 
 建立片段後，您可以：
@@ -151,7 +151,7 @@ ht-degree: 4%
 
 AEM Content Services的設計目的，是要概括AEM內/外部內容的說明和傳遞，而不只是關注網頁。
 
-它們使用可供任何使用者端使用的標準化方法，將內容傳送至非傳統AEM網頁的管道。 這些管道可能包括：
+這些頻道使用任何使用者端都能使用的標準化方法，將內容傳送至非傳統AEM網頁的管道。 這些管道可能包括：
 
 * 單頁應用程式
 * 原生行動應用程式
@@ -165,7 +165,7 @@ AEM內容片段可用於說明和管理結構化內容。 結構化內容在可�
 
 >[!NOTE]
 >
->請參閱[Headless與AEM](/help/headless/introduction.md)，瞭解AEM Sites的Headless開發as a Cloud Service。
+>請參閱[Headless與AEM](/help/headless/introduction.md)，瞭解AEM Sites as a Cloud Service的Headless開發簡介。
 
 >[!NOTE]
 >
@@ -179,7 +179,7 @@ AEM內容片段可用於說明和管理結構化內容。 結構化內容在可�
 
 * 儲存為&#x200B;**Assets**：
 
-   * 內容片段（及其變數）可以從[內容片段主控台](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console)建立及維護。
+   * 內容片段（及其變數）可以從[內容片段主控台](#content-fragments-console)建立及維護。
    * 在[內容片段編輯器](/help/sites-cloud/administering/content-fragments/authoring.md)中編寫與編輯。
 
 * 可使用[AEM GraphQL API](/help/headless/graphql-api/content-fragments.md)進行內容傳送。
@@ -211,7 +211,7 @@ Assets可以透過數個方式與內容片段搭配使用；各有其優點：
 * **片段元素**
 
    * 元素會與儲存內容的資料欄位建立關聯。
-   * 您使用[內容片段模式](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)來建立內容片段。 模型中指定的元素（欄位）定義片段的結構。 這些元素（欄位）可以是各種資料型別。
+   * 您使用[內容片段模式](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)來建立內容片段。 模型中指定的元素（欄位） [定義片段](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)的結構。 這些元素（欄位）可以是各種資料型別。
 
 * **片段段落**
 
@@ -247,7 +247,7 @@ Assets可以透過數個方式與內容片段搭配使用；各有其優點：
 * **內容模型**
 
    * 是否使用組態瀏覽器](/help/sites-cloud/administering/content-fragments/setup.md)啟用[。
-   * [是使用工具](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)建立的。
+   * 是使用內容片段主控台](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#creating-a-content-fragment-model)建立的[。
    * 需要[建立片段](/help/sites-cloud/administering/content-fragments/managing.md#creating-content-fragments)。
    * 定義片段的結構（標題、內容元素、標籤定義）。
    * 內容片段模型定義需要標題和一個資料元素，其他內容都是選用的。
@@ -258,7 +258,7 @@ Assets可以透過數個方式與內容片段搭配使用；各有其優點：
 若要將您的內容片段用於Headless內容傳送，您還需要：
 
 * [GraphQL查詢](/help/headless/graphql-api/content-fragments.md)以請求必要的內容
-* 然後，此內容可用於開發您自己的SPA for AEM；如需詳細資訊，請檢閱下列檔案：
+* 接著，您就可以將此內容用於為AEM開發自己的SPA；如需詳細資訊，請參閱下列檔案：
 
    * [SPA WKND 教學課程](/help/implementing/developing/hybrid/wknd-tutorial.md)
    * [使用 React 快速入門](/help/implementing/developing/hybrid/getting-started-react.md)
@@ -274,6 +274,34 @@ Assets可以透過數個方式與內容片段搭配使用；各有其優點：
    * 片段需要一或多個專用元件來定義版面並傳遞部分或全部元素/變數和關聯內容。
    * 在製作中將片段拖曳到頁面上會自動建立所需元件的關聯。
    * 檢視[內容片段核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html)。
+
+## 內容片段主控台 {#content-fragments-console}
+
+內容片段主控台專用於管理、搜尋和建立[內容片段](/help/sites-cloud/administering/content-fragments/managing.md)、[內容片段模式](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)和[Assets](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md)。 它已針對在Headless內容中使用進行了最佳化，但在建立用於頁面編寫的內容片段和內容片段模型時也會使用。
+
+主控台可直接從全域導覽的頂層存取。
+
+![全域導覽 — 內容片段主控台](assets/cf-managing-global-navigation.png)
+
+您可以使用最左側的面板來選取要檢視、瀏覽及管理的資源型別：
+
+![內容片段主控台 — 導覽](/help/sites-cloud/administering/content-fragments/assets/cf-console-assets-navigation.png)
+
+如需詳細資訊，請參閱：
+
+* [內容片段](/help/sites-cloud/administering/content-fragments/managing.md)
+* [內容片段模型](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)
+* [Assets](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md)
+
+* 您可以在此主控台中使用一組[鍵盤快速鍵](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md)
+
+>[!CAUTION]
+>
+>此主控台&#x200B;*僅*&#x200B;可線上上Adobe Experience Manager (AEM) as a Cloud Service中使用。
+
+>[!NOTE]
+>
+>您的專案團隊可視需要自訂主控台和編輯器。 如需詳細資訊，請參閱[自訂內容片段主控台和編輯器](/help/implementing/developing/extending/content-fragments-console-and-editor.md)。
 
 ## 使用範例 {#example-usage}
 

@@ -5,7 +5,7 @@ landing-page-description: 了解如何使用及管理 Adobe Experience Manager a
 exl-id: 24300499-ae9c-49d0-aa25-f51e14d9cf79
 feature: Headless
 role: Admin, Developer
-source-git-commit: 7386298ee83eef5693ce00077659bbc4a1a70d24
+source-git-commit: b155ea4734a86e6ca9151a89d3ac6f76c3ad6420
 workflow-type: tm+mt
 source-wordcount: '701'
 ht-degree: 96%
@@ -44,7 +44,7 @@ AEM as a Cloud Service 是一種適用於無周邊實作模型的靈活工具，
 1. **內容片段**
    * 內容片段是根據內容片段模型建立的。
    * 內容片段由內容作者使用 AEM 內容片段編輯器建立。
-   * 內容片段會儲存為 AEM Assets，但可以透過資產主控台或[內容片段控制台](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console)進行管理。
+   * 內容片段會儲存為 AEM Assets，但可以透過資產主控台或[內容片段控制台](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console)進行管理。
 1. **用於傳遞的內容 API**
    * 請參閱[結構化內容傳遞與管理的AEM API](/help/headless/apis-headless-and-content-fragments.md)，以取得各種可用API的概觀，以及所涉及概念的比較。
 

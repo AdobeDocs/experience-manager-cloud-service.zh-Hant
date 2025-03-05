@@ -5,8 +5,8 @@ exl-id: 172ad8d8-5067-4452-bf91-1eea9a39a7bc
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
+source-git-commit: 46b0af152d5f297419e7d1fa372975aded803bc7
+workflow-type: tm+mt
 source-wordcount: '1956'
 ht-degree: 100%
 
@@ -153,6 +153,6 @@ Headless 專案的中繼環境用於在新的 AEM 產品版本推送到生產環
 * [AEM Guides WKND - GraphQL](https://github.com/adobe/aem-guides-wknd-graphql) - 此 GitHub 專案包含以 AEM GraphQL API 為重點的範例應用程式。
 * [Adobe Experience Manager as a Cloud Service 架構簡介](/help/overview/architecture.md) - AEM 架構的完整概述
 * [Headless 設定](/help/headless/introduction.md#getting-started) - 向熟悉 AEM 的使用者快速介紹 AEM 的 Headless 功能。
-* [建立內容片段模型](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) - 內容片段模型的技術文件
+* [建立內容片段模型](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md) - 內容片段模型的技術文件
 * [建立內容片段](/help/sites-cloud/administering/content-fragments/managing.md#creating-content-fragments) - 內容片段的技術文件
 * [使用 GraphQL 查詢內容](/help/headless/graphql-api/content-fragments.md) - GraphQL API 的技術文件

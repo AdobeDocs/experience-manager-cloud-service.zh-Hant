@@ -1,22 +1,35 @@
 ---
 title: 在內容片段主控台中檢視和管理Assets
-description: 瞭解如何在Adobe Experience Manager as a Cloud Service的**內容片段主控台**中檢視和管理Assets。
+description: 瞭解如何在Adobe Experience Manager as a Cloud Service的內容片段主控台中檢視和管理Assets。
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: 865e1fa8-2956-45cf-9dd7-034d491808fe
 solution: Experience Manager Sites
-source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
+source-git-commit: 175a7c069f57069b7a5ff1f0e5785147d9a4f6c9
 workflow-type: tm+mt
-source-wordcount: '212'
-ht-degree: 6%
+source-wordcount: '277'
+ht-degree: 5%
 
 ---
 
 # 在內容片段主控台中檢視和管理Assets {#viewing-managing-assets-content-fragments-console}
 
-依預設，Adobe Experience Manager as a Cloud Service的[內容片段主控台](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console)會顯示您的[內容片段](/help/sites-cloud/administering/content-fragments/overview.md)。
+依預設，Adobe Experience Manager as a Cloud Service的[內容片段主控台](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console)會顯示您的[內容片段](/help/sites-cloud/administering/content-fragments/overview.md)。
 
 不過，您也可以在此&#x200B;**內容片段主控台**&#x200B;中檢視及管理所有其他型別的&#x200B;**Assets**。
+
+>[!IMPORTANT]
+>
+>透過早期採用者計畫可以使用內容片段控制檯的各種功能。
+>
+>若要檢視狀態，以及如果您有興趣要如何套用，請檢視[發行說明](/help/release-notes/release-notes-cloud/release-notes-current.md)。
+
+>[!NOTE]
+>
+>本頁涵蓋（僅）顯示Assets的主控台區段。 如需其他面板，請參閱：
+>
+>* [管理內容片段](/help/sites-cloud/administering/content-fragments/managing.md)
+>* [管理內容片段模型](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)
 
 >[!NOTE]
 >
@@ -42,6 +55,7 @@ ht-degree: 6%
 * [建立資料夾](/help/assets/manage-digital-assets.md#creating-folders)
 * [上傳資產](/help/assets/add-delete-assets-view.md)
 * 設定檢視型別（「清單」、「格點」、「收藏館」、「瀑布」）；並在適當時設定可見欄
+* 您可以在此主控台中使用一組[鍵盤快速鍵](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md)
 
 您也可以針對一或多個選取的Assets採取動作：
 

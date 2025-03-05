@@ -5,7 +5,7 @@ exl-id: a65e8a5a-954b-4307-8027-ca8bac5f4261
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 07327f80b23e1e6fdbb3fb49d861221877724d39
 workflow-type: tm+mt
 source-wordcount: '705'
 ht-degree: 100%
@@ -24,7 +24,7 @@ ht-degree: 100%
 
 ## 目標 {#objective}
 
-* **對象**：進階
+* **客群**：進階
 * **目標**：介紹如何如何使用 Headless CMS 製作的參考。有哪些類型參考可用，它們的作用為何：
 
    * 內容參考
@@ -119,7 +119,7 @@ ht-degree: 100%
 
    * [製作內容片段](/help/sites-cloud/administering/content-fragments/authoring.md)
 
-   * [內容片段模型](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
+   * [內容片段模型](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)
 
       * [內容片段模型 - 資料類型](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)
 

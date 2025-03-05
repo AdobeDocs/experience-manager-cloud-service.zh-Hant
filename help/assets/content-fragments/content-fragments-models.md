@@ -5,9 +5,9 @@ exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
 feature: Content Fragments, GraphQL API
 role: User, Admin, Architect
 solution: Experience Manager Sites
-source-git-commit: 883eadc8ce2c84eba526b081ef90c678845989aa
+source-git-commit: 00b4fa64a2f5d7ddf7ea7af7350374a1f1bcb768
 workflow-type: tm+mt
-source-wordcount: '3120'
+source-wordcount: '3175'
 ht-degree: 5%
 
 ---
@@ -22,6 +22,12 @@ AEM中的內容片段模型定義您[內容片段](/help/assets/content-fragment
 1. [建立](#creating-a-content-fragment-model)，並[設定您的內容片段模型](#defining-your-content-fragment-model)
 1. [啟用您的內容片段模型](#enabling-disabling-a-content-fragment-model)，以便在建立內容片段時使用
 1. [藉由設定&#x200B;**原則**，在必要的Assets資料夾](#allowing-content-fragment-models-assets-folder)上允許您的內容片段模型。
+
+>[!NOTE]
+>
+>內容片段是 Sites 的一項功能，但儲存為&#x200B;**資產**。
+>
+>內容片段和內容片段模型現在主要透過&#x200B;**[內容片段](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console)**&#x200B;主控台進行管理，不過內容片段仍可從&#x200B;**Assets**&#x200B;主控台進行管理，而內容片段模型可從&#x200B;**工具**&#x200B;主控台進行管理。 本節涵蓋&#x200B;**Assets**&#x200B;和&#x200B;**Tools**&#x200B;主控台中的管理。
 
 ## 建立內容片段模型 {#creating-a-content-fragment-model}
 

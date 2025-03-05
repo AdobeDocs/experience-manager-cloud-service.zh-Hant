@@ -5,7 +5,7 @@ exl-id: f052183d-18fd-4615-a81e-e45db5928fc1
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 07327f80b23e1e6fdbb3fb49d861221877724d39
 workflow-type: tm+mt
 source-wordcount: '1814'
 ht-degree: 100%
@@ -31,7 +31,7 @@ ht-degree: 100%
 
 ## 目標 {#objective}
 
-* **對象**：初學者
+* **客群**：初學者
 * **目標**：了解如何建立內容結構模型，然後使用 AEM 內容片段模型和內容片段實現該結構：
    * 介紹與資料/內容模型相關的概念和術語。
    * 了解為什麼 Headless 內容傳遞需要建立內容模型。
@@ -271,7 +271,7 @@ tbc...
 
 * [使用內容片段](/help/sites-cloud/administering/content-fragments/overview.md) - 內容片段的引領頁面
    * [設定瀏覽器中的內容片段](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser) - 在設定瀏覽器中啟用內容片段功能
-   * [內容片段模型](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) - 建立及編輯新內容片段模型
+   * [內容片段模型](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md) - 建立及編輯新內容片段模型
    * [管理內容片段](/help/sites-cloud/administering/content-fragments/managing.md) - 建立和編寫內容片段，此頁面會引領您到其他詳細章節
 * [AEM GraphQL 結構描述](access-your-content.md) - GraphQL 如何實現模型
 * [範例內容片段結構](/help/headless/graphql-api/sample-queries.md#content-fragment-structure-graphql)

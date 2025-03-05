@@ -5,8 +5,8 @@ exl-id: 9661e17b-fa9f-4689-900c-412b068e942c
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
+source-git-commit: 46b0af152d5f297419e7d1fa372975aded803bc7
+workflow-type: tm+mt
 source-wordcount: '3068'
 ht-degree: 100%
 
@@ -295,7 +295,7 @@ GraphQL 可作為 AEM 和 Headless 內容取用者之間的「黏著劑」。Gra
 * [多網站管理員和翻譯](/help/sites-cloud/administering/msm-and-translation.md) - 關於 AEM 強大翻譯功能的技術文件
 * [AEM 工作流程](/help/sites-cloud/authoring/workflows/overview.md) - 關於如何在 AEM 中自動化工作流程的技術文件
 * [內容片段](/help/sites-cloud/administering/content-fragments/overview.md) - 關於內容片段的技術文件。
-* [內容片段模型](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) - 關於內容片段模型的技術文件。
+* [內容片段模型](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md) - 關於內容片段模型的技術文件。
 * [GraphQL 技術文件](https://graphql.org) - GraphQL 定義 (外部連結)
 * [GraphQL API](/help/headless/graphql-api/content-fragments.md) - 說明如何建立要求以存取和傳遞內容片段的技術文件
 * [資產 REST API](/help/assets/content-fragments/assets-api-content-fragments.md) - 說明如何建立和修改內容片段 (和其他資產) 的技術文件

@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
 solution: Experience Manager Sites
-source-git-commit: f5523968ef4548c287ec939b63db1cf914c7fbeb
+source-git-commit: 3789904b4aa1ffa4a039e6b84af64f03f06a3206
 workflow-type: tm+mt
-source-wordcount: '2686'
+source-wordcount: '2629'
 ht-degree: 2%
 
 ---
@@ -22,9 +22,18 @@ ht-degree: 2%
 
 瞭解如何從專用的[內容片段主控台](#content-fragments-console)和[內容片段編輯器](/help/sites-cloud/administering/content-fragments/authoring.md#content-fragment-editor)，在Adobe Experience Manager (AEM) as a Cloud Service中管理您的&#x200B;**內容片段**。 這些內容片段可用作Headless內容的基礎，或用於編寫頁面。
 
+>[!IMPORTANT]
+>
+>透過早期採用者計畫可以使用內容片段控制檯的各種功能。
+>
+>若要檢視狀態，以及如果您有興趣要如何套用，請檢視[發行說明](/help/release-notes/release-notes-cloud/release-notes-current.md)。
+
 >[!NOTE]
 >
->您的專案團隊可視需要自訂主控台和編輯器。 如需詳細資訊，請參閱[自訂內容片段主控台和編輯器](/help/implementing/developing/extending/content-fragments-console-and-editor.md)。
+>此頁面涵蓋（僅）顯示內容片段的主控台區段。 如需其他面板，請參閱：
+>
+>* [管理內容片段模型](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)
+>* [在內容片段主控台中檢視和管理Assets](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md)
 
 在定義您的[內容片段模式](#creating-a-content-model)後，您可以使用這些模式：
 
@@ -45,41 +54,13 @@ ht-degree: 2%
 >
 >內容片段儲存為&#x200B;**Assets**。 它們主要從&#x200B;**內容片段**&#x200B;主控台管理，但也可以從[Assets](/help/assets/content-fragments/content-fragments-managing.md)主控台管理。
 
-## 內容片段主控台 {#content-fragments-console}
+## 主控台中內容片段的基本結構和處理 {#basic-structure-handling-content-fragments-console}
 
-內容片段主控台專用於管理、搜尋和建立內容片段。 它已針對在Headless內容中使用進行了最佳化，但在建立用於頁面編寫的內容片段時也會使用。
+您可以使用[內容片段主控台](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console)最左側的面板，選取&#x200B;**內容片段**&#x200B;做為檢視、瀏覽及管理的資源型別：
 
-內容片段控制檯提供對片段和相關工作的直接存取。 主控台可直接從全域導覽的頂層存取。
-
-![全域導覽 — 內容片段主控台](assets/cf-managing-global-navigation.png)
-
-如需進一步的詳細資訊，請參閱：
-
-* [內容片段主控台的基本結構和處理](#basic-structure-handling-content-fragments-console)
-
-* [提供的有關您的內容片段的資訊](#information-content-fragments)
-
-* [內容片段控制檯中內容片段的動作](#actions-selected-content-fragment)
-
-* [選取主控台中顯示的欄](#select-columns-console)
-
-* [在內容片段控制檯中搜尋和篩選](#filtering-fragments)
-
-* 您可以在此主控台中使用一組[鍵盤快速鍵](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md)
-
->[!NOTE]
->
->此主控台僅顯示內容片段。 它不會顯示其他資產型別，例如影像和影片。
-
->[!CAUTION]
->
->此主控台&#x200B;*僅*&#x200B;可線上上Adobe Experience Manager (AEM) as a Cloud Service中使用。
-
-### 主控台的基本結構和處理 {#basic-structure-handling-content-fragments-console}
+![內容片段主控台 — 導覽](/help/sites-cloud/administering/content-fragments/assets/cf-console-assets-navigation.png)
 
 選取&#x200B;**內容片段**&#x200B;會在新索引標籤中開啟主控台。
-
-<!-- CQDOC-21349: screenshot -->
 
 ![內容片段主控台 — 概觀](assets/cf-managing-console-overview.png)
 
@@ -90,10 +71,11 @@ ht-degree: 2%
    * 也會顯示您的IMS組織
    * 提供各種[動作](#actions-unselected)
 * 左側面板
+   * 您可以在此壓縮或展開面板的連結
    * 您可以在此隱藏或顯示資料夾樹狀結構
    * 您可以選取樹的特定分支
    * 這可以調整大小以顯示巢狀資料夾
-   * 您可以在檢視內容片段或[Assets](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md)之間選擇
+   * 除了內容片段之外，您也可以檢視[內容片段模型](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)或[Assets](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md)；您也可以壓縮或展開面板的連結
 * 主要/右側面板 — 從這裡，您可以：
    * 檢視樹狀結構所選分支中的所有內容片段清單：
       * 所選資料夾的內容片段，以及所有子資料夾都會顯示：
@@ -105,7 +87,7 @@ ht-degree: 2%
          * 顯示參考的相關資訊
          * 顯示片段語言版本的相關資訊
       * [某些其他資訊欄位](#information-content-fragments)關於內容片段可用於[快速篩選](#fast-filtering)：
-         * 在欄中選取值，並立即套用為篩選器
+         * 在欄中選取值，該值會立即套用為篩選器
          * **模型**、**狀態**、**修改者**、**標籤**&#x200B;和&#x200B;**發佈者**&#x200B;資料行支援快速篩選。
       * 在欄標題上使用滑鼠游標時，下拉式動作選擇器和寬度滑桿隨即顯示。 這些功能可讓您：
          * 排序 — 以遞增或遞減方式選取適當的動作
@@ -114,58 +96,9 @@ ht-degree: 2%
       * 選取一個或多個片段以進一步執行[動作](#actions-selected-content-fragment)
    * 使用[搜尋](#searching-fragments)方塊
    * 開啟[篩選器面板](#filtering-fragments)
+   * 您可以在此主控台中使用一組[鍵盤快速鍵](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md)
 
-### 動作 {#actions}
-
-在主控台中，您可以直接或在選取特定片段後使用一系列動作：
-
-* 可以從主控台](#actions-unselected)直接使用各種動作[
-* 您可以[選取一或多個內容片段以顯示適當的動作](#actions-selected-content-fragment)
-
-#### 動作（未選取） {#actions-unselected}
-
-某些動作可從控制檯使用 — 無需選取特定內容片段：
-
-* **[建立](#creating-a-content-fragment)**&#x200B;新內容片段
-* [篩選](#filtering-fragments)內容片段，並儲存篩選供日後使用
-* [搜尋](#searching-fragments)內容片段
-* [自訂表格檢視以顯示選取的資訊欄](#select-columns-console)
-* 使用&#x200B;**在Assets中開啟**&#x200B;直接在&#x200B;**Assets**&#x200B;主控台中開啟目前位置
-
-  >[!NOTE]
-  >
-  >**Assets**&#x200B;主控台是用來存取資產，例如影像、影片等。  此主控台可以存取：
-  >
-  >* 使用&#x200B;**在Assets中開啟**&#x200B;連結（在內容片段主控台中）
-  >* 直接從全域&#x200B;**導覽**&#x200B;窗格
-
-#### （所選）內容片段的動作 {#actions-selected-content-fragment}
-
-選取特定片段會開啟工具列，其焦點為該片段可用的動作。 您也可以選取多個片段 — 動作的選擇將據此調整。
-
-<!-- CQDOC-21349: screenshot -->
-
-![內容片段主控台 — 所選片段的工具列](assets/cf-managing-console-fragment-toolbar.png)
-
-* **[在新編輯器中開啟](#editing-the-content-of-your-fragment)**
-* **[開啟](/help/assets/content-fragments/content-fragments-variations.md)** （在原始編輯器中）
-* **[發佈](#publishing-and-previewing-a-fragment)** (和&#x200B;**[取消發佈](#unpublishing-a-fragment)**)
-* **[管理標籤](#manage-tags)**
-* **[複製](/help/assets/manage-digital-assets.md)**
-* **[移動](/help/assets/manage-digital-assets.md)**
-* **[重新命名](/help/assets/manage-digital-assets.md)**
-* **[刪除](#deleting-a-fragment)**
-* **[取代](#find-and-replace)**
-
->[!NOTE]
->
->使用&#x200B;**開啟**&#x200B;在&#x200B;*原始*&#x200B;編輯器中開啟選取的片段。
-
->[!NOTE]
->
->「發佈」、「取消發佈」、「刪除」、「移動」、「重新命名」和「複製」等動作會分別觸發非同步作業。 可以透過 AEM 非同步作業 UI 監視該作業的進度。
-
-### 提供的有關您的內容片段的資訊 {#information-content-fragments}
+## 提供的有關您的內容片段的資訊 {#information-content-fragments}
 
 主控台的主/右側面板（表格檢視）提供一系列有關您的內容片段的資訊。 有些專案也會提供進一步動作和/或資訊的直接連結：
 
@@ -214,6 +147,53 @@ ht-degree: 2%
 
      ![內容片段主控台 — 語言對話方塊](assets/cf-managing-console-languages-dialog.png)
 
+## 動作 {#actions}
+
+在主控台中，您可以直接或在選取特定片段後使用一系列動作：
+
+* 可以從主控台](#actions-unselected)直接使用各種動作[
+* 您可以[選取一或多個內容片段以顯示適當的動作](#actions-selected-content-fragment)
+
+### 動作（未選取） {#actions-unselected}
+
+某些動作可從控制檯使用 — 無需選取特定內容片段：
+
+* **[建立](#creating-a-content-fragment)**&#x200B;新內容片段
+* [篩選](#filtering-fragments)內容片段，並儲存篩選供日後使用
+* [搜尋](#searching-fragments)內容片段
+* [自訂表格檢視以顯示選取的資訊欄](#select-columns-console)
+* 使用&#x200B;**在Assets中開啟**&#x200B;直接在&#x200B;**Assets**&#x200B;主控台中開啟目前位置
+
+  >[!NOTE]
+  >
+  >**Assets**&#x200B;主控台是用來存取資產，例如影像、影片等。  此主控台可以存取：
+  >
+  >* 使用&#x200B;**在Assets中開啟**&#x200B;連結（在內容片段主控台中）
+  >* 直接從全域&#x200B;**導覽**&#x200B;窗格
+
+### （所選）內容片段的動作 {#actions-selected-content-fragment}
+
+選取特定片段會開啟工具列，其焦點為該片段可用的動作。 您也可以選取多個片段 — 動作的選擇將據此調整。
+
+![內容片段主控台 — 所選片段的工具列](assets/cf-managing-console-fragment-toolbar.png)
+
+* **[在新編輯器中開啟](#editing-the-content-of-your-fragment)**
+* **[開啟](/help/assets/content-fragments/content-fragments-variations.md)** （在原始編輯器中）
+* **[發佈](#publishing-and-previewing-a-fragment)** (和&#x200B;**[取消發佈](#unpublishing-a-fragment)**)
+* **[管理標籤](#manage-tags)**
+* **[複製](/help/assets/manage-digital-assets.md)**
+* **[移動](/help/assets/manage-digital-assets.md)**
+* **[重新命名](/help/assets/manage-digital-assets.md)**
+* **[刪除](#deleting-a-fragment)**
+* **[取代](#find-and-replace)**
+
+>[!NOTE]
+>
+>使用&#x200B;**開啟**&#x200B;在&#x200B;*原始*&#x200B;編輯器中開啟選取的片段。
+
+>[!NOTE]
+>
+>「發佈」、「取消發佈」、「刪除」、「移動」、「重新命名」和「複製」等動作會分別觸發非同步作業。 可以透過 AEM 非同步作業 UI 監視該作業的進度。
 
 ## 建立內容片段 {#creating-content-fragments}
 
@@ -221,7 +201,7 @@ ht-degree: 2%
 
 ### 建立內容模型 {#creating-a-content-model}
 
-在建立具有結構化內容的內容片段之前，必須啟用並建立[內容片段模型](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)。
+在建立具有結構化內容的內容片段之前，必須啟用並建立[內容片段模型](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)。
 
 ### 建立內容片段 {#creating-a-content-fragment}
 
@@ -248,7 +228,7 @@ ht-degree: 2%
 
 ## 內容片段的狀態 {#statuses-content-fragments}
 
-內容片段在其存在期間可以有數個狀態，如[內容片段主控台](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console)和[內容片段編輯器](/help/sites-cloud/administering/content-fragments/authoring.md)中所示：
+內容片段在其存在期間可以有數個狀態，如[內容片段主控台](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console)和[內容片段編輯器](/help/sites-cloud/administering/content-fragments/authoring.md)中所示：
 
 * **新** （灰色）
 已建立新的內容片段，但沒有內容，因為它從未在內容片段編輯器中編輯或開啟。
@@ -319,7 +299,7 @@ ht-degree: 2%
 
 >[!CAUTION]
 >
->如果您的片段是以模型為基礎，則您應該確定[模型已發佈](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#publishing-a-content-fragment-model)。
+>如果您的片段是以模型為基礎，則您應該確定[模型已發佈](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#publishing-a-content-fragment-model)。
 >
 >如果您發佈的內容片段尚未發佈模式，選擇清單會指出這一點，模式會與片段一起發佈。
 
@@ -382,8 +362,6 @@ ht-degree: 2%
 
 ## 尋找並取代 {#find-and-replace}
 
-<!-- CQDOC-21349: screenshot -->
-
 **取代**&#x200B;動作可用（在頂端工具列中）在您的選取的內容片段中尋找及取代指定的文字。
 
 ![尋找並取代](assets/cf-managing-find-replace.png)
@@ -395,8 +373,6 @@ ht-degree: 2%
 >一次最多只能對20個選定的內容片段執行尋找和取代動作。
 >
 >如果您選取20個以上的內容片段，您會看到訊息&#x200B;**找不到及取代**。
-
-<!-- CQDOC-21349: screenshot -->
 
 ![確認取代](assets/cf-managing-confirm-replace.png)
 
@@ -464,8 +440,6 @@ ht-degree: 2%
 
 選取後，會顯示&#x200B;**篩選依據**&#x200B;選項（在「搜尋」方塊下）。 可以從那裡取消選取它們。 例如：
 
-<!-- CQDOC-21349: screenshot -->
-
 ![內容片段主控台 — 正在篩選](assets/cf-managing-console-filter.png)
 
 ### 快速篩選 {#fast-filtering}
@@ -488,13 +462,9 @@ ht-degree: 2%
 
 搜尋方塊支援全文檢索搜尋。 在搜尋方塊中輸入搜尋字詞：
 
-<!-- CQDOC-21349: screenshot -->
-
 ![內容片段主控台 — 正在搜尋](assets/cf-managing-console-search-specification.png)
 
 將提供選取的結果：
-
-<!-- CQDOC-21349: screenshot -->
 
 ![內容片段主控台 — 搜尋結果](assets/cf-managing-console-search-results.png)
 
