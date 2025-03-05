@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
-source-git-commit: def1b808be7e90b4cba79ccbfa81da936be58c54
+source-git-commit: 39a85c865c6c23043d77f5756a71764dc83be534
 workflow-type: tm+mt
-source-wordcount: '2657'
+source-wordcount: '2847'
 ht-degree: 5%
 
 ---
@@ -314,8 +314,9 @@ ht-degree: 5%
 
 在&#x200B;**內容參考**&#x200B;欄位中，您可以：
 
-* 已存在於存放庫中的參考資產
-* 將它們直接上傳到欄位；如此可避免需要使用&#x200B;**Assets**&#x200B;主控台來上傳
+* 參考已存在於您本機存放庫中的資產
+* 位於遠端存放庫中的參考資產
+* 將資產直接上傳至欄位；如此可避免需使用&#x200B;**Assets**&#x200B;主控台來上傳
 
   >[!NOTE]
   >
@@ -324,12 +325,48 @@ ht-degree: 5%
   >* 已定義&#x200B;**根路徑** （在[內容片段模型](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#content-reference)中）。 這會指定影像的儲存位置。
   >* 在接受的內容型別清單中包含&#x200B;**影像**
 
-若要新增資產，您可以：
+##### 參考本機Assets {#reference-local-assets}
+
+若要參考本機資產，您可以：
 
 * 將新的資產檔案直接拖放到&#x200B;**內容參考**&#x200B;欄位（例如，從您的檔案系統）
 * 使用&#x200B;**新增資產**&#x200B;動作，然後選取&#x200B;**瀏覽Assets**&#x200B;或&#x200B;**上傳**&#x200B;以開啟適當的選取器供您使用：
 
   ![內容片段編輯器 — 新增資產選項](assets/cf-authoring-add-asset-options.png)
+
+##### 參考遠端Assets {#reference-remote-assets}
+
+若要參照遠端資產：
+
+1. 瀏覽資產時指定遠端&#x200B;**存放庫**：
+
+   ![內容片段編輯器 — 從遠端選取資產](assets/cf-authoring-remote-asset-01.png)
+
+2. 選取後，即可在資產資訊中看到位置：
+
+   ![內容片段編輯器 — 來自遠端存放庫的資產](assets/cf-authoring-remote-asset-02.png)
+
+###### 遠端Assets — 限制 {#remote-assets-limitations}
+
+參照遠端資產時，有一些限制：
+
+* 只有[已核准的](/help/assets/approve-assets.md)個資產可供遠端資產存放庫參考。
+
+* 如果從遠端存放庫移除參照的資產，這將導致內容參照損毀。
+
+* 使用者有權存取的所有傳遞資產存放庫都可供選擇，可用的清單不可限制。
+
+* AEM執行個體和遠端資產存放庫執行個體都必須是相同版本。
+
+* 不會透過管理API或傳送API公開任何資產中繼資料。 您必須使用資產中繼資料API來擷取資產中繼資料詳細資訊：
+
+   * 個別資產中繼資料： [https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetMetadata](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetMetadata)
+
+   * 使用搜尋API （實驗性）取得大量中繼資料資訊： [https://adobe-aem-assets-delivery-experimental.redoc.ly/#operation/search](https://adobe-aem-assets-delivery-experimental.redoc.ly/#operation/search)
+
+>[!NOTE]
+>
+>另請參閱搭配內容片段使用的[AEM GraphQL API — 適用於OpenAPI資產支援的Dynamic Media (遠端Assets)](/help/headless/graphql-api/content-fragments.md#dynamic-media-for-openapi-asset-support)
 
 #### 參考頁面 {#reference-pages}
 

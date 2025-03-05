@@ -4,10 +4,10 @@ description: 了解如何將 Adobe Experience Manager (AEM) as a Cloud Service �
 feature: Headless, Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 role: Admin, Developer
-source-git-commit: b1b28cdc5fd1b697a2c2cd2893340d3c6afc8562
+source-git-commit: bc578aca8e07b010194143062322d9fd8820b408
 workflow-type: tm+mt
-source-wordcount: '5814'
-ht-degree: 95%
+source-wordcount: '6021'
+ht-degree: 92%
 
 ---
 
@@ -268,7 +268,7 @@ GraphQL for AEM 支援類型清單。表示所有支援的內容片段模型資�
 | 列舉 | `String` | 用於顯示模型建立時定義之選項清單中的選項 |
 | 標記 | `[String]` | 用於顯示字串清單，字串代表 AEM 中使用的標記 |
 | 內容參考 | `String`、`[String]` | 用於顯示 AEM 中另一個資產的路徑 |
-| 內容參考 (UUID) | `String`、`[String]` | 用於顯示路徑，以AEM中通往其他資產的UUID表示 |
+| 內容參考 (UUID) | `String`、`[String]` | 用來顯示路徑，以AEM中另一個資產的UUID表示 |
 | 片段參考 |  *模型類型* <br><br>單一欄位：`Model` - 模型類型，直接參考<br><br>多個欄位，具單一參考類型：`[Model]` - `Model` 類型陣列，從陣列直接參考<br><br>多個欄位，具多個參考類型：`[AllFragmentModels]` - 所有模型類型陣列，從聯合類型的陣列參考 | 用於參考特定模型類型的一個或多個內容片段，在建立模型時定義 |
 | 片段參考 (UUID) |  *模型類型* <br><br>單一欄位：`Model` - 模型類型，直接參考<br><br>多個欄位，具單一參考類型：`[Model]` - `Model` 類型陣列，從陣列直接參考<br><br>多個欄位，具多個參考類型：`[AllFragmentModels]` - 所有模型類型陣列，從聯合類型的陣列參考 | 用於參考特定模型類型的一個或多個內容片段，在建立模型時定義 |
 
@@ -962,9 +962,9 @@ GraphQL for AEM Content Fragments 可讓您要求 AEM Dynamic Media (Scene7) 資
 GraphQL 中的解決方案代表您可以：
 
 * 在 `ImageRef` 參考中使用 `_dmS7Url`
-   * 請參閱[依URL傳送Dynamic Media資產的範例查詢 — 影像參考](#sample-query-dynamic-media-asset-delivery-by-url-imageref)
+   * 檢視依URL的Dynamic Media資產傳遞的[範例查詢 — 影像參考](#sample-query-dynamic-media-asset-delivery-by-url-imageref)
 * 在多個參考上使用`_dmS7Url`；`ImageRef`、`MultimediaRef`和`DocumentRef`
-   * 請參閱[依URL傳送Dynamic Media資產的範例查詢 — 多個參考](#sample-query-dynamic-media-asset-delivery-by-url-multiple-refs)
+   * 檢視依URL的Dynamic Media資產傳遞的[範例查詢 — 多個參考](#sample-query-dynamic-media-asset-delivery-by-url-multiple-refs)
 
 * 搭配智慧型裁切功能使用`_dmS7Url`
 
@@ -1084,6 +1084,110 @@ query allTeams {
   }
 } 
 ```
+
+## 適用於OpenAPI資產支援的Dynamic Media (遠端Assets) {#dynamic-media-for-openapi-asset-support}
+
+[遠端資產](/help/sites-cloud/administering/content-fragments/authoring.md#reference-remote-assets)整合可讓您從內容片段編輯器參考非目前AEM執行個體本機的Assets。 它是由Dynamic Media在內容片段編輯器和GraphQL JSON中實作，以提供OpenAPI資產支援。
+
+### 適用於OpenAPI資產支援的Dynamic Media範例查詢(遠端Assets) {#sample-query-dynamic-media-for-openapi-asset-support}
+
+以下是範例要求：
+
+* 以說明參照遠端資產的概念
+
+  ```graphql
+  {
+    testModelList {
+      items {
+        remoteasset {
+          ... on RemoteRef {
+              repositoryId
+                  assetId
+          }
+        }
+        multiplecontent {
+          ... on ImageRef {
+            _path
+            _authorUrl
+            _publishUrl
+          }
+          ... on RemoteRef {
+              repositoryId
+              assetId
+          }
+        }
+      }
+      _references {
+        ... on ImageRef {
+            _path
+            _authorUrl
+            _publishUrl
+          }
+          ... on RemoteRef {
+              repositoryId
+              assetId
+          }
+      }
+    }
+  }
+  ```
+
+* 回應
+
+  ```graphql
+  {
+    "data": {
+      "testModelList": {
+        "items": [
+          {
+            "remoteasset": {
+              "repositoryId": "delivery-p123456-e123456.adobeaemcloud.com",
+              "assetId": "urn:aaid:aem:1fb05fe4-c12b-4f85-b1ca-aa92cdbd6a62"
+            },
+            "multiplecontent": [
+              {
+                "repositoryId": "delivery-p123456-e123456.adobeaemcloud.com",
+                "assetId": "urn:aaid:aem:1fb05fe4-c12b-4f85-b1ca-aa92cdbd6a62"
+              },
+              {
+                "_path": "/content/dam/test-folder/test.jpg",
+                "_authorUrl": "http://localhost:4502/content/dam/test-folder/test.jpg",
+                "_publishUrl": "http://localhost:4503/content/dam/test-folder/test.jpg"
+              }
+            ]
+          }
+        ],
+        "_references": [
+          {
+            "repositoryId": "delivery-p123456-e123456.adobeaemcloud.com",
+            "assetId": "urn:aaid:aem:1fb05fe4-c12b-4f85-b1ca-aa92cdbd6a62"
+          },
+          {
+            "_path": "/content/dam/test-folder/test.jpg",
+            "_authorUrl": "http://localhost:4502/content/dam/test-folder/test.jpg",
+            "_publishUrl": "http://localhost:4503/content/dam/test-folder/test.jpg"
+          }
+        ]
+      }
+    }
+  }  
+  ```
+
+**限制**
+
+目前的限製為：
+
+* GraphQL傳遞僅支援`repositoryId`和`assetId` （不會傳回其他資產中繼資料）
+
+  >[!NOTE]
+  >
+  >接著需要在使用者端根據[資產傳送API](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetSeoFormat)建構完整的URL。
+
+* 只有&#x200B;*個已核准的*&#x200B;個資產可供遠端存放庫參考
+* 如果從遠端存放庫移除所參考的資產，這將導致內容片段資產參考損毀。
+* 使用者有權存取的所有傳遞資產存放庫都將可供選擇，可用的清單無法限制。
+* AEM執行個體和遠端資產存放庫執行個體都必須是相同版本。
+* 沒有透過[管理API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/)和[傳送API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/sites/delivery/)公開的資產中繼資料。 您必須使用資產中繼資料API來擷取資產中繼資料詳細資訊。
 
 ## GraphQL for AEM - 擴充功能摘要 {#graphql-extensions}
 

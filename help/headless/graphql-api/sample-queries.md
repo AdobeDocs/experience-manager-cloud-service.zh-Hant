@@ -4,10 +4,10 @@ description: 透過探索範例內容和查詢，了解如何搭配使用 GraphQ
 feature: Headless, Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
 role: Admin, Developer
-source-git-commit: 83bc4e09cc7b6c420eee64091fab773ee1dcbd85
+source-git-commit: bc578aca8e07b010194143062322d9fd8820b408
 workflow-type: tm+mt
-source-wordcount: '1940'
-ht-degree: 94%
+source-wordcount: '1972'
+ht-degree: 92%
 
 ---
 
@@ -1886,6 +1886,10 @@ query {
 * 請參閱「[Dynamic Media 資產透過 URL 進行傳遞的範例查詢 - 影像參考](/help/headless/graphql-api/content-fragments.md#sample-query-dynamic-media-asset-delivery-by-url-imageref)」
 
 * 請參閱「[透過 URL 進行 Dynamic Media 資產傳遞的範例查詢 - 多個參考](/help/headless/graphql-api/content-fragments.md#sample-query-dynamic-media-asset-delivery-by-url-multiple-refs)」
+
+非目前AEM例項的本機遠端資產，可從內容片段編輯器進行傳送。
+
+* 請參閱[Dynamic Media的範例查詢，以取得OpenAPI資產支援(遠端Assets)](/help/headless/graphql-api/content-fragments.md#sample-query-dynamic-media-for-openapi-asset-support)
 
 ## 範例內容片段結構 (與 GraphQL 搭配使用) {#content-fragment-structure-graphql}
 
