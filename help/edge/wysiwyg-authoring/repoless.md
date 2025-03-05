@@ -4,9 +4,9 @@ description: 如果您有許多相似的網站，大部分外觀和行為相同�
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: a6bc0f35-9e76-4b5a-8747-b64e144c08c4
-source-git-commit: c9d0d3cd7e18b56db36a379b63f8fb48e18a40db
+source-git-commit: 7b46af35b202446fdea67e4125d74c3965d302d9
 workflow-type: tm+mt
-source-wordcount: '976'
+source-wordcount: '1039'
 ht-degree: 2%
 
 ---
@@ -99,30 +99,14 @@ AEM支援從相同程式碼基底執行多個網站，而不需建立多個GitHu
 
 對應網站設定後，您可以定義技術帳戶以設定存取控制，使其具有發佈許可權。
 
-1. 在您的瀏覽器中，擷取技術帳戶以回應下列連結。
+1. 登入AEM作者執行個體並移至&#x200B;**工具** -> **雲端服務** -> **Edge Delivery Services設定**，然後選取為您的網站自動建立的設定，並點選或按一下工具列中的&#x200B;**屬性**。
 
-   ```text
-   https://author-p<programID>-e<envionmentID>.adobeaemcloud.com/bin/franklin.delivery/<your-github-org>/<your-aem-project>/main/.helix/config.json
-   ```
+1. 在&#x200B;**Edge Delivery Services設定**&#x200B;視窗中，選取&#x200B;**驗證**&#x200B;標籤，並複製&#x200B;**技術帳戶ID**&#x200B;的值。
 
-1. 回應將與以下內容類似。
+   * 它看起來類似於`<tech-account-id>@techacct.adobe.com`
+   * 對於單一AEM作者環境中的所有網站，技術帳戶都相同。
 
-   ```json
-   {
-     "total": 1,
-     "offset": 0,
-     "limit": 1,
-     "data": [
-       {
-         "key": "admin.role.publish",
-         "value": "<tech-account-id>@techacct.adobe.com"
-       }
-     ],
-     ":type": "sheet"
-   }
-   ```
-
-1. 使用類似以下的cURL命令在您的設定中設定技術帳戶。
+1. 使用類似以下的cURL命令，使用您複製的技術帳戶ID，為您的重新配置設定技術帳戶。
 
    * 調整`admin`區塊以定義應具備網站完整管理存取權的使用者。
       * 這是一系列電子郵件地址。

@@ -3,13 +3,13 @@ title: 設定網站驗證以進行內容製作
 description: 瞭解AEM Live如何支援權杖式驗證，以及如何設定AEM以搭配WYSIWYG製作使用驗證。
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: 6d28b831fb902173bb5fbadd4aa2a52ba58e0a3b
+exl-id: b2838da2-79c7-49b1-a101-15c21e80197e
+source-git-commit: 7b46af35b202446fdea67e4125d74c3965d302d9
 workflow-type: tm+mt
-source-wordcount: '301'
+source-wordcount: '324'
 ht-degree: 2%
 
 ---
-
 
 # 設定網站驗證以進行內容製作 {#site-authentication}
 
@@ -46,11 +46,13 @@ AEM Live支援權杖型驗證。 網站驗證通常會同時套用至預覽和�
 設定網站驗證後，您就可以在AEM編寫環境中啟用它。
 
 1. 登入AEM作者執行個體並移至&#x200B;**工具** -> **雲端服務** -> **Edge Delivery Services設定**，然後選取為您的網站自動建立的設定，並點選或按一下工具列中的&#x200B;**屬性**。
-1. 在&#x200B;**Edge Delivery Services設定**&#x200B;視窗中，選取&#x200B;**驗證**&#x200B;索引標籤，並提供下列值，您在設定網站驗證時已記錄這些值。
-
-   * **技術帳戶ID**
-   * **網站驗證Token**
+1. 在&#x200B;**Edge Delivery Services設定**&#x200B;視窗中，選取&#x200B;**驗證**&#x200B;標籤，提供您先前複製的&#x200B;**網站驗證Token**。
 
    ![Edge Delivery Services設定](/help/edge/wysiwyg-authoring/assets/site-authentication/configure-aem-author.png)
+
+1. 確認&#x200B;**技術帳戶ID**&#x200B;與您先前複製的專案相符。
+
+   * 此欄位為唯讀並預先定義。
+   * 對於單一AEM作者環境中的所有網站，技術帳戶都相同。
 
 1. 點選或按一下「**儲存並關閉**」。
