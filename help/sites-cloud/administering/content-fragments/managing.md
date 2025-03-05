@@ -1,13 +1,13 @@
 ---
 title: 管理內容片段
-description: 瞭解如何從主控台和編輯器管理AEM內容片段、建立內容作為Headless內容的基礎或用於頁面製作。
+description: 瞭解如何從主控台和編輯器管理您的AEM內容片段，以建立內容作為Headless內容的基礎，或用於頁面製作。
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
 solution: Experience Manager Sites
-source-git-commit: 2daddd852f4cfcbcd6b1d4aea9cd96e045c93ca0
+source-git-commit: f5523968ef4548c287ec939b63db1cf914c7fbeb
 workflow-type: tm+mt
-source-wordcount: '2661'
+source-wordcount: '2686'
 ht-degree: 2%
 
 ---
@@ -73,7 +73,7 @@ ht-degree: 2%
 
 >[!CAUTION]
 >
->此主控台&#x200B;*僅*&#x200B;可線上上Adobe Experience Manager (AEM)as a Cloud Service中使用。
+>此主控台&#x200B;*僅*&#x200B;可線上上Adobe Experience Manager (AEM) as a Cloud Service中使用。
 
 ### 主控台的基本結構和處理 {#basic-structure-handling-content-fragments-console}
 
@@ -163,7 +163,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->Publish、取消發佈、刪除、移動、重新命名和複製等動作會分別觸發非同步作業。 可以透過 AEM 非同步作業 UI 監視該作業的進度。
+>「發佈」、「取消發佈」、「刪除」、「移動」、「重新命名」和「複製」等動作會分別觸發非同步作業。 可以透過 AEM 非同步作業 UI 監視該作業的進度。
 
 ### 提供的有關您的內容片段的資訊 {#information-content-fragments}
 
@@ -183,7 +183,7 @@ ht-degree: 2%
 * **預覽**
    * 僅供參考：
       * **同步**： **作者**&#x200B;和&#x200B;**預覽**&#x200B;服務上的內容片段同步。
-      * **不同步**： **作者**&#x200B;和&#x200B;**預覽**&#x200B;服務上的內容片段不同步。 您需要&#x200B;**Publish**&#x200B;到&#x200B;**預覽**，以確保兩個執行個體恢復同步。
+      * **不同步**： **作者**&#x200B;和&#x200B;**預覽**&#x200B;服務上的內容片段不同步。 您需要&#x200B;**發佈**&#x200B;到&#x200B;**預覽**，以確保兩個執行個體恢復同步。
       * 空白： **預覽**&#x200B;服務上不存在內容片段。
 * **已修改**
    * 僅供參考。
@@ -237,6 +237,7 @@ ht-degree: 2%
 
    * **位置** — 使用目前位置自動完成，但您可以視需要選取其他位置。
    * **內容片段模式** — 從下拉式清單中選取要作為片段基礎的模式。
+   * **自動標籤** — 選取此選項時，新內容片段會繼承並新增指派給內容片段模式的所有標籤。
    * **標題**
    * **名稱** — 根據&#x200B;**標題**&#x200B;自動完成，但您可以視需要加以編輯。
    * **說明**
@@ -304,13 +305,13 @@ ht-degree: 2%
 
 您可以將內容片段發佈至：
 
-* **[Publish服務](/help/headless/deployment/architecture.md)** — 完整公開存取
+* **[發佈服務](/help/headless/deployment/architecture.md)** — 完整公開存取權
 
 * **[預覽服務](/help/headless/deployment/architecture.md)** — 在完整可用性之前預覽內容
 
   >[!CAUTION]
   >
-  >只能從內容片段主控台使用&#x200B;**Publish**&#x200B;動作，將內容片段發佈至&#x200B;**預覽服務**。
+  >只能從「內容片段」主控台使用&#x200B;**發佈**&#x200B;動作，將內容片段發佈至&#x200B;**預覽服務**。
 
   >[!NOTE]
   >
@@ -324,7 +325,7 @@ ht-degree: 2%
 
 ### 發佈 {#publishing}
 
-您可從以下任一位置使用&#x200B;**Publish**&#x200B;選項發佈您的內容片段：
+您可從以下任一位置使用&#x200B;**發佈**&#x200B;選項發佈您的內容片段：
 
 * [內容片段主控台](#actions-selected-content-fragment)的工具列
 
@@ -332,11 +333,11 @@ ht-degree: 2%
 
 * [內容片段編輯器](/help/sites-cloud/administering/content-fragments/authoring.md#content-fragment-editor)的工具列
 
-選取&#x200B;**Publish**&#x200B;動作後：
+選取&#x200B;**發佈**&#x200B;動作後：
 
 1. 選取下列任一選項以開啟適當的對話方塊：
 
-   * **現在** — 選取&#x200B;**Publish服務**&#x200B;或&#x200B;**預覽服務**；確認後，片段將立即發佈
+   * **現在** — 選取&#x200B;**發佈服務**&#x200B;或&#x200B;**預覽服務**；確認後，將會立即發佈片段
    * **排程** — 除了必要的服務之外，您也可以選取要發佈片段的日期和時間
 
 1. 在對話方塊中提供所有詳細資料。 例如，對於已排程的發佈請求：
