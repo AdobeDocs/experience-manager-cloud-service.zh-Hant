@@ -6,10 +6,10 @@ Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: 85d788eeb5017b99ea4962105b63b20c487f363f
+source-git-commit: babddee34b486960536ce7075684bbe660b6e120
 workflow-type: tm+mt
-source-wordcount: '2155'
-ht-degree: 28%
+source-wordcount: '2289'
+ht-degree: 26%
 
 ---
 
@@ -74,9 +74,9 @@ Forms帶來的更多對話功能如下：
 對話式Forms不僅是一種新外觀 — 它還能改變使用者體驗的遊戲規則。  提升參與度、減少表單放棄率，並讓每個人都能更愉快地與您的網站互動。
 
 
-### 適用於Edge Delivery Services的WYSIWYG製作
+### 適用於Forms的Edge Delivery Services的WYSIWYG編寫（通用編輯器）
 
-WYSIWYG製作提供WYSIWYG介面(通用編輯器和調適型Forms編輯器)，用以建置調適型表單並發佈至Edge Delivery Services。 WYSIWYG Authoring提供[Document-based Authoring](/help/edge/docs/forms/overview.md#document-based-authoring-features)的所有功能，以及各種其他功能：
+Universal Editor提供強大的WYSIWYG介面，結合視覺化設計簡易性與進階功能，建置並發佈[最適化表單至Edge Delivery Services](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)。 WYSIWYG Authoring提供[Document-based Authoring](/help/edge/docs/forms/create-forms.md)的所有功能，以及各種其他功能：
 
 * 用來建立複雜邏輯的進階規則編輯器。
 * 提供自訂功能的伺服器端可擴充性。
@@ -86,6 +86,26 @@ WYSIWYG製作提供WYSIWYG介面(通用編輯器和調適型Forms編輯器)，�
 * 與各種資料來源整合，以預先填入表單和提交資料。
 * 用來定義資料結構並與各種資料來源互動的表單資料模型 (FDM)。
 * 能夠選擇多個提交動作以處理表單提交，包括提交資料至Microsoft SharePoint、Microsoft OneDrive、Adobe Workfront Fusion、Salesforce、Microsoft Dynamics和更多資料來源。
+
+![通用編輯器](/help/edge/docs/forms/universal-editor/assets/universal-editor.png)
+
+**優點：**
+
+* **加速實現價值(TTV)**：透過直覺式的視覺化撰寫功能，讓啟動表單的速度更快，免除複雜的程式碼需求。
+* **降低開發成本**：讓商務使用者能夠以最少的IT參與來建立和修改表格，藉此降低總體擁有成本。
+* **簡化的開發**：僅使用HTML、CSS和JavaScript建立自訂元件 — 不需要專門的架構知識。
+* **現代Web棧疊**：建置在前端開發人員熟悉的Web標準和現代技術上。
+* **快速原型設計**：在投資完整開發之前，快速建立及測試表單概念
+
+
+**瀏覽檔案以深入瞭解：**
+
+| | | |
+|:----------------------:|:---------------------:|:----------------------:|
+| [**主要功能**](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md#key-features-of-universal-editor-for-edge-delivery-services-for-forms) | [**使用回應式配置**](/help/edge/docs/forms/universal-editor/responsive-layout.md) | [**設定提交動作**](/help/edge/docs/forms/universal-editor/submit-action.md) |
+| [**開始使用最適化Forms的Universal Editor**](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md) | [**設定表單樣式**](/help/edge/docs/forms/universal-editor/style-theme-forms.md) | [**新增reCAPTCHA安全性**](/help/edge/docs/forms/universal-editor/recaptcha-forms.md) |
+| [**建立您的第一個表單**](/help/edge/docs/forms/universal-editor/create-forms.md) | [**使用規則編輯器**](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md) | [**發佈表單**](/help/edge/docs/forms/universal-editor/publish-forms.md) |
+| [**瞭解使用者介面**](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md) | | [**建立自訂元件**](/help/edge/docs/forms/universal-editor/create-custom-component.md) |
 
 
 ### AEM Forms至Marketo聯結器

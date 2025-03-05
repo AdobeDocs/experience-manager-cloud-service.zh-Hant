@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的運作方式以及該軟體可以為您做哪些事。
 breadcrumb-title: 使用手冊
 user-guide-title: 'AEM as a Cloud Service '
-source-git-commit: 85d788eeb5017b99ea4962105b63b20c487f363f
+source-git-commit: babddee34b486960536ce7075684bbe660b6e120
 workflow-type: tm+mt
-source-wordcount: '6222'
+source-wordcount: '6220'
 ht-degree: 95%
 
 ---
@@ -1032,9 +1032,22 @@ ht-degree: 95%
       + [概觀](/help/edge/docs/forms/overview.md)
       + [Edge Delivery Services 表單如何運作？](/help/edge/docs/forms/universal-editor/edge-delivery-services-form.md)
       + [常見問題集](/help/edge/docs/forms/adapttive-forms-for-edge-delivery-services-faq.md)
+      + WYSIWYG 製作{#universal-editor}
+         + [Edge Delivery Services適用的Forms Universal Editor簡介 — 完整指南](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
+         + [如何使用通用編輯器開始撰寫 — 逐步教學課程](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
+         + [如何使用通用編輯器建立您的第一個表單](/help/edge/docs/forms/universal-editor/create-forms.md)
+         + [通用編輯器介面指南：工具、功能和導覽說明](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md)
+         + [在通用編輯器中讓您的Forms支援行動裝置：回應式設計](/help/edge/docs/forms/universal-editor/responsive-layout.md)
+         + [設計精美的Forms：通用編輯器的樣式和主題設定指南](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
+         + [將動態行為新增至Forms：規則編輯器的完整指南](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
+         + [表單提交指南：設定和自訂表單提交動作](/help/edge/docs/forms/universal-editor/submit-action.md)
+         + [保護您的Forms遠離垃圾訊息：新增reCAPTCHA安全性](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
+         + [如何發佈和部署Forms： Universal Editor發佈指南](/help/edge/docs/forms/universal-editor/publish-forms.md)
+         + [建置自訂表單元件：通用編輯器的開發人員指南](/help/edge/docs/forms/universal-editor/create-custom-component.md)
       + 以檔案為基礎的製作{#getting-started-edge-delivery-services-forms}
          + [建立您的第一個表單：使用Google工作表和Excel快速入門手冊](/help/edge/docs/forms/tutorial.md)
          + [如何使用Google工作表或Excel建立Forms：逐步指南](/help/edge/docs/forms/create-forms.md)
+         + [最適化表單區塊的各種元件](/help/edge/docs/forms/form-components.md)
          + [將表單連線至Google Sheets：資料收集設定指南](/help/edge/docs/forms/submit-forms.md)
          + [讓您的表單上線：發佈和資料收集指南](/help/edge/docs/forms/publish-forms.md)
          + [表單欄位驗證：將錯誤檢查新增至您的Forms](/help/edge/docs/forms/validate-forms.md)
@@ -1049,21 +1062,7 @@ ht-degree: 95%
          + [將表單設為全域：表單翻譯指南](/help/edge/docs/forms/translate-forms.md)
          + [保護您的Forms：新增reCAPTCHA安全性](/help/edge/docs/forms/recaptacha-forms.md)
          + [建置自訂表單元件：開發人員指南](/help/edge/docs/forms/custom-components-forms.md)
-         + [監督表單效能：Real Use Monitoring指南](/help/edge/docs/forms/real-use-monitoring-for-forms.md)
-      + WYSIWYG 製作{#universal-editor}
-         + [Edge Delivery Services適用的Forms Universal Editor簡介 — 完整指南](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
-         + [如何使用通用編輯器開始撰寫 — 逐步教學課程](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
-         + [如何使用通用編輯器建立您的第一個表單](/help/edge/docs/forms/universal-editor/create-forms.md)
-         + [通用編輯器介面指南：工具、功能和導覽說明](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md)
-         + [在通用編輯器中讓您的Forms支援行動裝置：回應式設計](/help/edge/docs/forms/universal-editor/responsive-layout.md)
-         + [設計精美的Forms：通用編輯器的樣式和主題設定指南](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
-         + [將動態行為新增至Forms：規則編輯器的完整指南](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
-         + [表單提交指南：設定和自訂表單提交動作](/help/edge/docs/forms/universal-editor/submit-action.md)
-         + [保護您的Forms遠離垃圾訊息：新增reCAPTCHA安全性](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
-         + [如何發佈和部署Forms： Universal Editor發佈指南](/help/edge/docs/forms/universal-editor/publish-forms.md)
-         + [建置自訂表單元件：通用編輯器的開發人員指南](/help/edge/docs/forms/universal-editor/create-custom-component.md)
-      + 參考資料 {#forms-references}
-         + [最適化表單區塊元件及其屬性](/help/edge/docs/forms/form-components.md)
+         + [監視表單效能：實際使用監視指南](/help/edge/docs/forms/real-use-monitoring-for-forms.md)
    + Edge Delivery 資源 {#resources}
       + Sidekick {#sidekick}
          + [使用 Sidekick](/help/edge/docs/sidekick.md)

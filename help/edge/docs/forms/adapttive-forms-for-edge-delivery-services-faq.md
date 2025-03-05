@@ -5,16 +5,16 @@ feature: Edge Delivery Services
 role: User, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 0c6f024594e1b1fd98174914d2c0714dffecb241
+exl-id: b39601a1-7f37-4a7d-a4c8-7e79dca074e5
+source-git-commit: babddee34b486960536ce7075684bbe660b6e120
 workflow-type: tm+mt
 source-wordcount: '298'
 ht-degree: 0%
 
 ---
 
-
-
 # 常見問題集(FAQ)
+
 
 ## 多語言支援及全球使用
 
@@ -55,4 +55,3 @@ ht-degree: 0%
 - Forms行人穿越道檔案
 - 翻譯工作流程的標準AEM Sites檔案
 - 用於表單編寫的通用編輯器檔案
-

@@ -4,10 +4,10 @@ description: 使用Forms適用的Edge Delivery Services Universal Editor建立�
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: d711e0d1-a2fc-4aa6-af87-6e77a7bc5d2e
-source-git-commit: 6b7ff166467a399502b63fd13b1f836213b7839b
+source-git-commit: babddee34b486960536ce7075684bbe660b6e120
 workflow-type: tm+mt
-source-wordcount: '1087'
-ht-degree: 69%
+source-wordcount: '1078'
+ht-degree: 70%
 
 ---
 
@@ -22,13 +22,11 @@ Universal Editor提供簡單、視覺化且直覺式的What You See Is What You 
 
 無論您是管理客戶端的輕量轉譯、確保跨瀏覽器相容性，或者遵守嚴格的無障礙標準，通用編輯器皆是建立和管理表單的精簡型解決方案。
 
-![通用編輯器](/help/edge/docs/forms/universal-editor/assets/universal-editor.png){width=80%, align-center} -->
+![通用編輯器](/help/edge/docs/forms/universal-editor/assets/universal-editor.png){width=80%, align-center}
 
 ## 適用於Forms的Edge Delivery Services的Universal Editor的主要功能
 
 
-
-以下是等寬卡片的版面配置（使用固定寬度欄）：
 
 | ![WYSIWYG介面](/help/edge/docs/forms/universal-editor/assets/generate-forms.svg) | ![規則編輯器](/help/edge/docs/forms/universal-editor/assets/rule-editor.svg) | ![提交動作](/help/edge/docs/forms/universal-editor/assets/submit-actions.svg) |
 |:-------------:|:-------------:|:-------------:|

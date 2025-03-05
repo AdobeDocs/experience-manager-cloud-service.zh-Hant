@@ -1,229 +1,205 @@
 ---
-title: reCAPTCHA 與 AEM Forms as a Cloud Service 適用的 Edge Delivery Services 搭配使用
-description: 在 AEM Forms 適用的 Edge Delivery Services 表單中使用 Google reCAPTCHA
+title: 使用reCAPTCHA保護您的Forms — 視覺化指南
+description: 瞭解如何輕鬆將Google reCAPTCHA新增至Edge Delivery Services表單，以防止垃圾郵件和機器人提交
 feature: Edge Delivery Services
-keywords: 表單中的 reCAPTCHA，在通用編輯器中使用 reCAPTCHA，在表單中新增 reCAPTCHA
-role: Admin, Architect, Developer
+keywords: 在表單中使用reCAPTCHA，在通用編輯器中新增reCAPTCHA，表單安全性，垃圾郵件保護
+role: Developer
 exl-id: 1f28bd13-133f-487e-8b01-334be7c08a3f
-source-git-commit: 0c6f024594e1b1fd98174914d2c0714dffecb241
+source-git-commit: babddee34b486960536ce7075684bbe660b6e120
 workflow-type: tm+mt
-source-wordcount: '1273'
-ht-degree: 96%
+source-wordcount: '1085'
+ht-degree: 1%
 
 ---
 
 
-# 在 WYSIWYG 製作中使用 reCAPTCHA
+# 使用Google reCAPTCHA保護您的Forms免受垃圾郵件侵擾
 
-<span class="preview">此功能可透過搶先存取計畫使用。 若要要求存取權，請從您的正式地址傳送電子郵件至<a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a>，其中包含您的GitHub組織名稱和存放庫名稱。 例如，如果存放庫URL是https://github.com/adobe/abc，組織名稱是adobe，存放庫名稱是abc。</span>
+<span class="preview">此功能可透過搶先存取計畫使用。 若要要求存取權，請將您的正式地址電子郵件傳送至<a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a>，其中包含您的GitHub組織名稱和存放庫名稱。</span>
 
 
-CAPTCHA (用於區分電腦和人類的完全自動化公開圖靈測試) 是流行的工具，用於保護網站免於詐騙活動、垃圾郵件和濫用。
 
-例如，考慮一個根據其他扣除額和稅率計算稅額的表單。在這種情況下，惡意使用者可能會利用該表單來發送網路釣魚電子郵件，或使用垃圾郵件機器人將不相關或有害內容填滿表單。整合 CAPTCHA 可驗證提交內容是否來自真實使用者，從而提高安全性並有效地減少垃圾郵件。
+## 為何要在表單中使用reCAPTCHA？
 
-![Google recaptcha](/help/edge/docs/forms/universal-editor/assets/google-recaptcha.png)
+| ![安全性](/help/edge/docs/forms/universal-editor/assets/security.svg) | ![機器人保護](/help/edge/docs/forms/universal-editor/assets/bot-protection.svg) | ![使用者體驗](/help/edge/docs/forms/universal-editor/assets/user-experience.svg) |
+|:-------------:|:-------------:|:-------------:|
+| **增強式安全性** | **機器人與垃圾郵件預防** | **順暢的使用者體驗** |
+| 保護您的表單免受詐騙活動和惡意攻擊 | 阻止自動化機器人讓您的表單充斥著無關或有害的內容 | 隱藏的reCAPTCHA可在幕後運作，而不會干擾合法使用者 |
 
-在 Edge Delivery Services 表單中，表單區塊讓您可使用 **Captcha(Invisible)** 元件[將 Google reCAPTCHA 與表單連結](#connect-forms-with-recaptcha-service-by-google)，以區分人類和機器人。此功能可協助作者保護其表單免於垃圾郵件和濫用。
+例如，含有敏感財務資訊的稅捐計算表單需要保護，以免遭到濫用。 reCAPTCHA會驗證提交內容是否來自正版使用者，而非自動化系統。
 
-## 將表單與 Google 所提供的 reCAPTCHA 服務連結
+## 選擇您的reCAPTCHA解決方案
 
-您可以編寫 Edge Delivery Services 表單來實作 Google 所提供的 reCAPTCHA 服務。根據您的需要，您可以為您的 Edge Delivery Services 表單設定以下其中一種 reCAPTCHA 服務：
+Edge Delivery Services Forms支援兩個Google reCAPTCHA選項：
 
-* [reCAPTCHA Enterprise](#configure-recaptcha-enterprise)
-* [reCAPTCHA](#configure-recaptcha)
+| ![reCAPTCHA Enterprise](/help/edge/docs/forms/universal-editor/assets/enterprise.svg) | ![reCAPTCHA Standard](/help/edge/docs/forms/universal-editor/assets/standard.svg) |
+|:-------------:|:-------------:|
+| [**reCAPTCHA Enterprise**](#set-up-recaptcha-enterprise) | [**reCAPTCHA Standard**](#set-up-recaptcha-standard) |
+| 高階的企業級詐騙偵測，以及額外的功能和客製化 | 免費服務，提供以分數為基礎的偵測功能，可在背景以不可見的方式運作 |
+| 最適合：具有複雜安全性需求的大型組織 | 最適合：具有基本保護需求的中小型專案 |
 
->[!NOTE]
+這兩個選項都使用以分數為基礎的偵測（0.0到1.0）來識別人與機器人的互動，而不會中斷使用者體驗。
+
+## 設定reCAPTCHA Enterprise
+
+### 步驟1：取得您的Google Cloud認證
+
+設定reCAPTCHA Enterprise之前，您需要：
+
+- [Google Cloud專案](https://cloud.google.com/recaptcha/docs/prepare-environment#before-you-begin) （含您的[專案ID](https://support.google.com/googleapi/answer/7014113)）
+- [reCAPTCHA Enterprise API已啟用](https://cloud.google.com/recaptcha/docs/prepare-environment#enable-api)專案
+- 用於驗證的[API金鑰](https://console.cloud.google.com/apis/credentials)
+- 您網域的[網站金鑰](https://console.cloud.google.com/security/recaptcha)
+
+### 步驟2：建立雲端設定容器
+
+![逐步雲端組態設定](/help/edge/docs/forms/universal-editor/assets/recaptcha-general-configuration.png)
+
+1. 登入您的AEM作者執行個體
+2. 瀏覽至&#x200B;**工具** > **一般** > **設定瀏覽器**
+3. 尋找您的表單並選取&#x200B;**屬性**
+4. 在對話方塊中啟用&#x200B;**雲端設定**
+5. 儲存並發佈您的設定
+
+### 步驟3：設定reCAPTCHA Enterprise Service
+
+![reCAPTCHA Enterprise組態畫面](/help/edge/docs/forms/universal-editor/assets/recaptcha-enterprise.png)
+
+1. 移至&#x200B;**工具** > **雲端服務** > **reCAPTCHA**
+2. 導覽至您的表單，然後按一下&#x200B;**建立**
+3. 在對話方塊：
+   - 選取&#x200B;**ReCAPTCHA Enterprise**&#x200B;版本
+   - 輸入標題和名稱
+   - 新增您的專案ID、網站金鑰和API金鑰
+   - 選取&#x200B;**以分數為基礎的網站金鑰**&#x200B;作為金鑰型別
+   - 設定臨界值分數(0-1)以區分人類和機器人
+4. 按一下「**建立**」並發佈您的設定
+
+## 設定reCAPTCHA Standard
+
+### 步驟1：取得API金鑰
+
+開始之前，請從Google reCAPTCHA主控台[取得reCAPTCHA API金鑰組](https://www.google.com/recaptcha/admin) （網站金鑰和秘密金鑰）。
+
+>[!IMPORTANT]
 >
-> 如需有關 reCAPTCHA 運作方式的詳細資訊，請參閱 [Google reCAPTCHA](https://developers.google.com/recaptcha/)。
+>Edge Delivery Services 表單僅支援 **reCAPTCHA 分數型**&#x200B;版本。
 
-### 設定 reCAPTCHA Enterprise
+### 步驟2：建立雲端設定容器
 
-reCAPTCHA Enterprise 是進階版、由 Google 所提供的企業級詐欺偵測和預防服務。其建置在 reCAPTCHA (分數型) 的基礎上，但可提供更多功能、擴充性和自訂功能，以滿足企業的複雜需求。
+依照與Enterprise版本相同的步驟，建立和發佈雲端設定容器。
 
-#### 開始之前
+### 步驟3：設定reCAPTCHA標準服務
 
-在為 Edge Delivery Services 表單設定 Google reCAPTCHA Enterprise 之前，請確保已完成下列步驟：
+![reCAPTCHA標準組態畫面](/help/edge/docs/forms/universal-editor/assets/recaptcha.png)
 
-1. 建立或選取 [Google Cloud 專案](https://cloud.google.com/recaptcha/docs/prepare-environment#before-you-begin)，並擷取[專案 ID](https://support.google.com/googleapi/answer/7014113?hl=en#:~:text=To%20locate%20your%20project%20ID,a%20member%20of%20are%20displayed)。
+1. 移至&#x200B;**工具** > **雲端服務** > **reCAPTCHA**
+2. 導覽至您的表單，然後按一下&#x200B;**建立**
+3. 在對話方塊：
+   - 選取&#x200B;**ReCAPTCHA v2**&#x200B;版本
+   - 輸入標題和名稱
+   - 新增您的網站金鑰與秘密金鑰
+4. 按一下「**建立**」並發佈您的設定
 
-1. 為您的 Google Cloud 專案[啟用 reCAPTCHA Enterprise API](https://cloud.google.com/recaptcha/docs/prepare-environment#enable-api)，並[建立 API 金鑰](https://console.cloud.google.com/apis/credentials)。
+## 將reCAPTCHA新增至您的表單
 
-1. 建立[適用於您的 Google Cloud 專案的網站金鑰](https://console.cloud.google.com/security/recaptcha)，並複製該網站金鑰。
+現在您已設定reCAPTCHA，是時候將其新增至您的表單了：
 
-取得這些認證後，您即可繼續為您的表單設定 reCAPTCHA Enterprise：
+![正在新增reCAPTCHA元件至表單](/help/edge/docs/forms/universal-editor/assets/add-recaptcha-component.png)
 
-1. [建立雲端設定容器](#1-create-cloud-configuration-container)
-1. [為 reCAPTCHA Enterprise 建立雲端服務設定](#2-create-the-cloud-service-configuration-for-recaptcha-enterprise)
+1. 在通用編輯器中開啟您的表單
+2. 導覽至內容樹狀結構中的最適化表單區段
+3. 按一下&#x200B;**新增**&#x200B;圖示，然後從最適化表單元件清單中選取&#x200B;**驗證碼（隱藏）**
+   - *或者，將元件拖放到您的表單中*
+4. 按一下&#x200B;**發佈**&#x200B;以使用reCAPTCHA保護更新您的表單
 
-#### 1. 建立雲端設定容器
+您的表單現在已受保護！ 檢視位置：
+`https://<branch>--<repo>--<owner>.aem.live/content/forms/af/<form-name>`
 
-若要建立雲端設定容器，請執行下列步驟：
+![已啟用reCAPTCHA保護的表單](/help/edge/docs/forms/universal-editor/assets/form-with-recaptcha.png)
 
-1. 登入您的作者執行個體。
-1. 前往「**[!UICONTROL 工具]** ![tools-1](/help/forms/assets/tools-1.png) > **[!UICONTROL 一般]** > **[!UICONTROL 設定瀏覽器]**。
+## 驗證您的reCAPTCHA整合
 
-   ![雲端設定容器](/help/edge/docs/forms/universal-editor/assets/recaptcha-general-configuration.png)
+新增reCAPTCHA至您的表單後，必須確認其正常運作。 以下說明如何驗證實作：
 
-1. 在&#x200B;**[!UICONTROL 設定瀏覽器]**&#x200B;中，瀏覽至您的表單並選取「**[!UICONTROL 屬性]**」。
+### 視覺驗證
 
-   ![雲端設定屬性](/help/edge/docs/forms/universal-editor/assets/general-configuration-properties.png)
+reCAPTCHA v2 （以分數為基礎）以不可見方式運作，但您可以透過以下方式確認其存在：
 
-1. 在「**[!UICONTROL 設定屬性]**」對話框中，啟用&#x200B;**[!UICONTROL 雲端設定]**。
+1. **檢查頁面來源**：用滑鼠右鍵按一下您的表單頁面，然後選取[檢視頁面Source]
+   - 尋找包含您的網站金鑰的reCAPTCHA指令碼
+   - 範例： `<script src="https://www.google.com/recaptcha/api.js?render=YOUR_SITE_KEY"></script>`
 
-1. 選取「**[!UICONTROL 儲存並關閉]**」，即可儲存設定並退出對話框。
+2. **檢查網路要求**：使用瀏覽器開發人員工具(F12)
+   - 提交您的表單並尋找`google.com/recaptcha`的網路要求
+   - 這些請求表示您的表單上有reCAPTCHA作用中
 
-   ![啟用雲端設定屬性](/help/edge/docs/forms/universal-editor/assets/enable-cloud-configurations.png)
-`
-建立雲端設定容器後，將其發佈。
+### 功能測試
 
-   ![發佈雲端設定](/help/edge/docs/forms/universal-editor/assets/publish-cloud-configuration.png)
+若要確認reCAPTCHA是否確實在保護您的表單：
 
-#### 2. 為 reCAPTCHA Enterprise 建立雲端服務設定
+1. **正常提交測試**：
+   - 使用有效資料填寫您的表單
+   - 以正常的人工步調提交表單
+   - 驗證表單是否成功提交
 
-若要為 reCAPTCHA Enterprise 建立雲端服務設定，請執行下列步驟：
+2. **類似機器人的行為測試**：
+   - 在無痕瀏覽/私人瀏覽視窗中開啟您的表單
+   - 快速填寫表單（類似自動的行為）
+   - 連續快速提交多次
+   - 如果reCAPTCHA運作正常，這些提交內容可能會被封鎖或標幟
 
-1. 登入您的作者執行個體。
-1. 瀏覽至「**[!UICONTROL 工具]** ![tools-1](/help/forms/assets/tools-1.png) > **[!UICONTROL 雲端服務]** > **[!UICONTROL reCAPTCHA]**」。
+3. **檢查表單提交記錄**：
+   - 檢閱您的表單提交資料
+   - 每次提交都應包含reCAPTCHA分數
+   - 分數接近1.0表示可能是人類使用者
+   - 分數接近0.0表示潛在的機器人活動
 
-   ![Recaptcha 雲端設定](/help/edge/docs/forms/universal-editor/assets/recaptcha-cloud-configuration.png)
+### 使用Google reCAPTCHA管理控制檯
 
-   「**設定**」對話框隨即開啟。
+對於企業使用者，Google Cloud Console提供詳細分析：
 
-1. 瀏覽到您的表單並選取「**[!UICONTROL 建立]**」。
+1. 前往[Google Cloud Console](https://console.cloud.google.com/)
+2. 瀏覽至&#x200B;**安全性** > **reCAPTCHA**
+3. 選取您的網站金鑰
+4. 檢閱評定圖表和統計資料
+5. 尋找：
+   - 流量模式
+   - 評分分佈
+   - 潛在詐騙活動
 
-   ![驗證碼設定](/help/edge/docs/forms/universal-editor/assets/create-captcha-confguration.png)
+對於標準reCAPTCHA使用者，[reCAPTCHA Admin Console](https://www.google.com/recaptcha/admin/)中提供基本統計資料。
 
-   「**[!UICONTROL 建立 reCAPTCHA 設定]**」對話框隨即開啟。
+### 調整實施
 
-   ![reCaptcha Enterprise](/help/edge/docs/forms/universal-editor/assets/recaptcha-enterprise.png)
+根據您的驗證結果：
 
-1. 選取 [!DNL ReCAPTCHA Enterprise] 版本並指定標題、名稱、專案 ID、網站金鑰和 API 金鑰。
+- 如果合法使用者遭到封鎖，請考慮降低臨界值分數
+- 如果您仍收到垃圾郵件，請考慮提高您的臨界值分數
+- 對於持續性問題，請檢閱您的reCAPTCHA設定，並確保所有金鑰均已正確輸入
 
-   >[!NOTE]
-   >
-   > 您可以從 reCAPTCHA Enterprise 的「[開始之前](#before-you-start)」區段取得專案 ID、網站金鑰和 API 金鑰。
+請記住，reCAPTCHA會使用機器學習來隨時間改善，因此在學習您網站的流量模式時，其有效性可能會提高。
 
-1. 選取「**[!UICONTROL 金鑰類型]**」作為&#x200B;**分數型網站金鑰**。
-1. 指定 [0 到 1 範圍內的閥值分數](https://cloud.google.com/recaptcha/docs/interpret-assessment-website#interpret_scores)。大於或等於閾值分數的分數會識別為人類互動，否則會被視為機器人互動。
-1. 選取「**[!UICONTROL 建立]**」，以建立雲端服務設定。
+## 疑難排解和常見問題( FAQs)
 
-   建立 reCAPTCHA 雲端設定後，將其發佈。
+| ![問題](/help/edge/docs/forms/universal-editor/assets/question.svg) | ![答案](/help/edge/docs/forms/universal-editor/assets/answer.svg) |
+|:-------------:|:-------------:|
+| **如果未建立reCAPTCHA組態怎麼辦？** | 系統會在「全域容器」中尋找設定。 如果不存在任何專案，您將會收到錯誤。 |
+| **如果我建立多個設定會發生什麼事？** | 系統會自動使用第一個建立的組態。 |
+| **為什麼我的變更沒有顯示在已發佈的URL上？** | 進行變更後，請務必重新發佈表單。 |
+| **支援哪些reCAPTCHA服務？** | Edge Delivery Services Forms僅支援以分數為基礎的reCAPTCHA服務。 |
 
-   ![發佈 reCAPTCHA 設定](/help/edge/docs/forms/universal-editor/assets/publisg-recaptcha-configuration.png)
+## 後續步驟
 
-您現在可以建立或編輯表單並使用 WYSIWYG 型製作新增 reCAPTCHA 元件。如需有關如何將 Google reCAPTCHA 整合到表單的詳細說明，請參閱「[在表單中使用 reCAPTCHA](#use-recaptcha-in-your-form)」。
+現在您已使用reCAPTCHA保護您的表單：
 
-## 設定 reCAPTCHA
+- **驗證您的實作**：請依照[驗證步驟](#-validating-your-recaptcha-integration)操作，以確保reCAPTCHA正常運作
+- **監視效能**：定期檢查您的Google reCAPTCHA儀表板是否有可疑活動和分數分佈
+- **微調設定**：根據您的安全性需求和使用者體驗意見反應，調整您的臨界值分數
+- **保持更新**：透過Google的最新安全性建議，讓您的reCAPTCHA實作保持最新狀態
+- **教育您的團隊**：分享有關reCAPTCHA如何運作以及如何解譯分析的知識
+- **收集意見回饋**：監視使用者體驗，以確保不會封鎖合法的使用者
 
-reCAPTCHA 是 Google 所提供的免費服務，可協助網站偵測和防止流量濫用，包括機器人和垃圾郵件。其可支援分數型版本，該版本會在背景中運作並為每個使用者互動指派一個風險分數 (範圍從 0.0 到 1.0)。大於或等於閾值分數的分數會識別為人類互動，否則會被視為機器人互動。
+請記住，有效的表單保護是一項持續進行的程式，需要定期監控和調整。
 
-#### 開始之前
-
-在為 Edge Delivery Services 表單設定 Google reCAPTCHA 之前，請擷取[來自 Google 主控台的 reCAPTCHA API 金鑰組](https://www.google.com/recaptcha/admin)。該組會包括一個網站金鑰和一個秘密金鑰。
-
->[!NOTE]
->
-> * Edge Delivery Services 表單僅支援 **reCAPTCHA 分數型**&#x200B;版本。
-
-有了 API 金鑰組之後，您即可繼續為您的表單設定 reCAPTCHA：
-
-1. [建立雲端設定容器](#1-create-cloud-configuration-container-1)
-1. [為 reCAPTCHA 建立雲端服務設定](#2-create-the-cloud-service-configuration-for-recaptcha)
-
-#### 1. 建立雲端設定容器
-
-若要建立雲端設定容器，請執行下列步驟：
-
-1. 登入您的作者執行個體。
-1. 前往「**[!UICONTROL 工具]** ![tools-1](/help/forms/assets/tools-1.png) > **[!UICONTROL 一般]** > **[!UICONTROL 設定瀏覽器]**。
-
-   ![雲端設定容器](/help/edge/docs/forms/universal-editor/assets/recaptcha-general-configuration.png)
-
-1. 在&#x200B;**[!UICONTROL 設定瀏覽器]**&#x200B;中，瀏覽至您的表單並選取「**[!UICONTROL 屬性]**」。
-
-   ![雲端設定屬性](/help/edge/docs/forms/universal-editor/assets/general-configuration-properties.png)
-
-1. 在「**[!UICONTROL 設定屬性]**」對話框中，啟用&#x200B;**[!UICONTROL 雲端設定]**。
-
-1. 選取「**[!UICONTROL 儲存並關閉]**」，即可儲存設定並退出對話框。
-
-   ![啟用雲端設定屬性](/help/edge/docs/forms/universal-editor/assets/enable-cloud-configurations.png)
-
-   建立雲端設定容器後，將其發佈。
-
-   ![發佈雲端設定](/help/edge/docs/forms/universal-editor/assets/publish-cloud-configuration.png)
-
-#### 2. 為 reCAPTCHA 建立雲端服務設定
-
-若要為 reCAPTCHA 建立雲端服務設定，請執行下列步驟：
-
-1. 登入您的作者執行個體。
-1. 瀏覽至「**[!UICONTROL 工具]** ![tools-1](/help/forms/assets/tools-1.png) > **[!UICONTROL 雲端服務]** > **[!UICONTROL reCAPTCHA]**」。
-
-   ![Recaptcha 雲端設定](/help/edge/docs/forms/universal-editor/assets/recaptcha-cloud-configuration.png)
-
-   「**設定**」對話框隨即開啟。
-
-1. 瀏覽到您的表單並選取「**[!UICONTROL 建立]**」。
-
-   ![驗證碼設定](/help/edge/docs/forms/universal-editor/assets/create-captcha-confguration.png)
-
-   「**[!UICONTROL 建立 reCAPTCHA 設定]**」對話框隨即開啟。
-
-   ![reCaptcha Enterprise](/help/edge/docs/forms/universal-editor/assets/recaptcha.png)
-
-1. 選取 [!DNL ReCAPTCHA v2] 版本並指定標題和名稱。
-1. 指定網站金鑰和秘密金鑰。
-
-   >[!NOTE]
-   >
-   > 您可以從 reCAPTCHA 的「[開始之前](#before-you-begin)」區段取得網站金鑰和秘密金鑰。
-
-1. 選取「**[!UICONTROL 建立]**」，以建立雲端服務設定。
-
-   建立 reCAPTCHA 雲端設定後，將其發佈。
-
-   ![發佈 reCAPTCHA 設定](/help/edge/docs/forms/universal-editor/assets/publisg-recaptcha-configuration.png)
-
-您現在可以建立和編輯表單並使用 WYSIWYG 型製作新增 reCAPTCHA 元件。如需有關如何將 Google reCAPTCHA 整合到表單的詳細說明，請參閱「[在表單中使用 reCAPTCHA](#use-recaptcha-in-your-form)」。
-
-### 使用您的表單中的 reCAPTCHA
-
-若要編寫表單並新增 reCAPTCHA (不可見) 元件，請執行下列步驟：
-
-1. 在通用編輯器中開啟表單以進行編輯。
-1. 瀏覽至內容樹中已新增的最適化表單區段。
-1. 按一下「**[!UICONTROL 新增]**」圖示，然後從&#x200B;**最適化表單元件**&#x200B;清單新增&#x200B;**[!UICONTROL 驗證碼 (不可見)]** 元件。
-
-   ![新增 reCaptcha 元件](/help/edge/docs/forms/universal-editor/assets/add-recaptcha-component.png)
-
-   您也可以拖放所需的最適化表單元件，因為通用編輯器可提供直覺式拖放功能。
-
-1. 按一下「**發佈**」，以在新增&#x200B;**[!UICONTROL 驗證碼 (不可見)]** 元件後再次發佈表單。
-
-   ![重新發佈表單](/help/edge/docs/forms/universal-editor/assets/publish-form.png)
-
-您現在可以在以下 URL 使用 reCAPTCHA 服務來檢視表單：`https://<branch>--<repo>--<owner>.aem.live/content/forms/af/<form-name`。
-
-![reCAPTCHA 的表單](/help/edge/docs/forms/universal-editor/assets/form-with-recaptcha.png)
-
-## 常見問題
-
-* **如果使用者未建立 reCAPTCHA 雲端設定，會發生什麼情況？**
-
-  **答**：如果使用者未建立 reCAPTCHA 雲端設定，AEM 伺服器會在全域設定容器中搜尋 reCAPTCHA 雲端設定。如果全域設定容器中不存在任何設定，則 AEM 伺服器會拋出錯誤。
-
-* **如果使用者建立多個 reCAPTCHA 雲端設定，會發生什麼情況？**
-  **答**：如果使用者建立多個 reCAPTCHA 雲端設定，系統會自動選取第一個建立的 reCAPTCHA 設定。
-
-* **為什麼在已發佈的 URL 上看不到修改或變更？** 如果在已發佈的 URL 上看不到修改或變更，則需確保將表單重新發佈，以套用更新。
-
-* **Edge Delivery Services 表單可支援哪種 reCAPTCHA 服務？**
-  **答**：Edge Delivery Services 表單僅支援 Google 所提供的分數型 reCAPTCHA 服務。
-
-
-## 另請參閱
-
-{{universal-editor-see-also}}
 

@@ -5,14 +5,17 @@ Keywords: Use form submission service, Submit form using form submission service
 feature: Edge Delivery Services
 Role: User, Developer
 exl-id: 12b4edba-b7a1-4432-a299-2f59b703d583
-source-git-commit: ae31df22c723c58addd13485259e92abb4d4ad54
+source-git-commit: babddee34b486960536ce7075684bbe660b6e120
 workflow-type: tm+mt
-source-wordcount: '835'
+source-wordcount: '883'
 ht-degree: 1%
 
 ---
 
-# Forms提交服務搭配Edge Delivery Services Forms
+# 使用Edge Delivery Services Forms的Forms提交服務
+
+<span class="preview">此功能可透過搶先存取計畫使用。 若要要求存取權，請從您的正式地址傳送電子郵件至<a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a>，其中包含您的GitHub組織名稱和存放庫名稱。 例如，如果存放庫URL是https://github.com/adobe/abc，組織名稱是adobe，存放庫名稱是abc。</span>
+
 
 Forms提交服務可讓您將表單提交的資料儲存在任何試算表中(例如OneDrive、SharePoint或Google Sheets)，讓您在自己的試算表平台中輕鬆存取和管理表單資料。
 
@@ -35,7 +38,7 @@ Forms提交服務可讓您將表單提交的資料儲存在任何試算表中(�
 
 ## 設定Forms提交服務
 
-建立以最適化Forms區塊設定的新AEM專案。 請參閱[快速入門 — 開發人員教學課程](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial)文章，瞭解如何建立新的AEM專案。 更新專案中的`fstab.yaml`檔案。 將現有的參考取代為您與`forms@adobe.com`共用的資料夾路徑。
+建立以最適化AEM區塊設定的新Forms專案。 請參閱[快速入門 — 開發人員教學課程](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial)文章，瞭解如何建立新的AEM專案。 更新專案中的`fstab.yaml`檔案。 將現有的參考取代為您與`forms@adobe.com`共用的資料夾路徑。
 
 您可以[手動設定Forms提交服務](#configuring-the-forms-submission-service-manually)或[使用API設定Forms提交服務](#configuring-the-forms-submission-service-using-api)。
 
@@ -102,7 +105,7 @@ Forms提交服務可讓您將表單提交的資料儲存在任何試算表中(�
 
 若要瞭解如何格式化POST要求以設定工作表，請參閱[API檔案](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/references/aem-forms-submission-service/)。 您可以查看下方提供的範例：
 
-您可以使用curl或Postman之類的工具來執行此POST請求，如下所示。
+您可以使用curl或Postman之類的工具來執行此POST要求，如下所示。
 
 * **使用Postman**：
 
@@ -148,11 +151,11 @@ Forms提交服務可讓您將表單提交的資料儲存在任何試算表中(�
 >適用於macOS]的[!TAB 
 
     ``json
-    curl -XPOST&quot;https://forms.adobe.com/adobe/forms/af/submit/{id}&quot; \
-     — 標頭&quot;Content-Type： application/json&quot; \
-     — 標頭&quot;x-adobe-routing： tier=live，bucket=main—[site/repository]—[organization]&quot; \
+    curl -X POST &quot;https://forms.adobe.com/adobe/forms/af/submit/{id}&quot; \
+     — 標頭`Content-Type： application/json&quot; \
+     — 標頭`x-adobe-routing： tier=live，bucket=main—[site/repository]—[organization]&quot; \
      — 資料`{
-    `data&quot;： {
+    `data`： {
     `startDate&quot;： &quot;2025-01-10&quot;，
     `endDate&quot;： &quot;2025-01-25&quot;，
     `destination&quot;澳洲」，
@@ -172,7 +175,7 @@ Forms提交服務可讓您將表單提交的資料儲存在任何試算表中(�
 
     ``json
     
-    curl -XPOST&quot;https://forms.adobe.com/adobe/forms/af/submit/{id}&quot; ^
+    curl -X POST &quot;https://forms.adobe.com/adobe/forms/af/submit/{id}&quot; ^
      — 標頭&quot;Content-Type： application/json&quot; ^
      — 標頭&quot;x-adobe-routing： tier=live，bucket=main—[site/repository]—[organization]&quot; ^
      — 資料&quot;{\&quot;data\&quot;： {\&quot;startDate\&quot;： \&quot;2025-01-10\&quot;， \&quot;endDate\&quot;： \&quot;2025-015\&quot;： \&quot;Destinstination\&quot; australia\&quot;， \&quot;class\&quot;： \&quot;First Class\&quot;， \&quot;budget\&quot;： \&quot;2000\&quot;， \&quot;amount\&quot;： \&quot;1000000\&quot;， \&quot;name\&quot;： \&quot;Joe\&quot;， \&quot;age\&quot;： \&quot;35\&quot;， \&quot;subscribe\&quot;： null， \&quot;email\&quot;： \&quot;mary@gmail.com\&quot;}}&quot;

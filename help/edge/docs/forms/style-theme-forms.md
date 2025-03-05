@@ -1,60 +1,60 @@
 ---
-title: 自訂 AEM Forms 適用的 Edge Delivery Services 主題和樣式
-description: 自訂 AEM Forms 適用的 Edge Delivery Services 主題和樣式
+title: 為AEM Forms自訂Edge Delivery Services的主題和樣式
+description: 為AEM Forms自訂Edge Delivery Services的主題和樣式
 feature: Edge Delivery Services
 exl-id: c214711c-979b-4833-9541-8e35b2aa8e09
 role: Admin, Architect, Developer
-source-git-commit: 3b6ffd391b36f2f0d09fe054140b08bca6f0c941
+source-git-commit: babddee34b486960536ce7075684bbe660b6e120
 workflow-type: tm+mt
-source-wordcount: '2016'
-ht-degree: 100%
+source-wordcount: '1909'
+ht-degree: 72%
 
 ---
 
 
 # 自訂表單的外觀
 
-表單對於網站上的使用者互動至關重要，可讓使用者輸入資料。您可以使用階層式樣式表 (CSS) 來設定表單欄位的樣式，增強表單的視覺呈現效果並提升使用者體驗。
+表單對於網站上的使用者互動至關重要，可讓使用者輸入資料。您可以使用階層式樣式表(CSS)來設定表單欄位的樣式、增強表單的視覺呈現方式，並改善使用者體驗。
 
-最適化 Forms 區塊為所有表單欄位產生一致的結構。一致的結構使得開發 CSS 選擇器更加容易，以根據欄位類型和欄位名稱來選取表單欄位並設定其樣式。
+最適化 Forms 區塊為所有表單欄位產生一致的結構。這種一致的結構使得開發CSS選擇器更容易根據欄位型別和欄位名稱來選擇和設定表單欄位的樣式。
 
-本文件概述了各種表單元件的 HTML 結構，協助您了解如何為各種表單欄位建立 CSS 選擇器，以設定最適化表單區塊之表單欄位的樣式。
+本檔案會概述各種表單元件的HTML結構，協助您瞭解如何為各種表單欄位建立CSS選取器，以設定最適化Forms區塊的表單欄位樣式。
 
-在文章的最後：
+在文章結束時，您將瞭解：
 
-* 您可以了解最適化表單區塊中包含的預設 CSS 檔案的結構。
-* 您可以了解最適化表單區塊提供的表單元件的 HTML 結構，包括一般元件和特定元件，例如下拉式選單、單選按鈕群組和核取方塊群組。
-* 您將學習如何使用 CSS 選擇器根據欄位類型和欄位名稱設定表單欄位的樣式，從而根據需求實現一致或獨特的樣式。
+* 建置對於最適化Forms區塊所包含預設CSS檔案結構的瞭解
+* 逐步瞭解Adaptive Forms區塊所提供的表單元件的HTML結構，包括一般元件和特定元件，例如下拉式清單、選項群組及核取方塊群組
+* 瞭解如何使用CSS選取器根據欄位型別和欄位名稱來設定表單欄位的樣式，以根據要求允許一致或唯一的樣式
 
 
 ## 了解表單欄位類型
 
 在深入研究樣式之前，讓我們回顧一下最適化表單區塊支援的常見表單[欄位類型](/help/edge/docs/forms/form-components.md)：
 
-* 輸入欄位：包括文字輸入、電子郵件輸入、密碼輸入等。
-* 核取方塊群組：用於選取多個選項。
-* 單選按鈕群組：用於只能在一組選項中進行單選。
-* 下拉式選單：也稱為選取方塊，用於從清單中選取一個選項。
-* 面板/容器：用於將相關的表單元素群組在一起。
+* 輸入欄位：包括文字輸入、電子郵件輸入、密碼輸入等
+* 核取方塊群組：用於選取多個選項
+* 選項群組：僅用於從群組選取一個選項
+* 下拉式清單：也稱為選取方塊，用於從清單中選取一個選項
+* 面板/容器：用於將相關的表單元素分組在一起
 
 ## 基本樣式設定原則
 
 在設定特定表單欄位的樣式之前，了解[基本的 CSS 概念](https://www.w3schools.com/css/css_intro.asp)至關重要：
 
-* [選取器](https://www.w3schools.com/css/css_selectors.asp)：CSS 選擇器可讓您針對特定的 HTML 元素進行樣式設定。您可以使用元素選取器、類別選取器或 ID 選取器。
-* [屬性](https://www.w3schools.com/css/css_syntax.asp)：CSS 屬性定義元素的外觀。用於設定表單欄位樣式的常見屬性包括顏色、背景顏色、邊框、邊框間距、邊界等。
-* [方塊模型](https://www.w3schools.com/css/css_boxmodel.asp)：CSS 方塊模型描述 HTML 元素結構為由邊框間距、邊框和邊界包圍的內容區域。
-* Flexbox/Grid：CSS [Flexbox](https://www.w3schools.com/css/css3_flexbox.asp) 和[ Grid 版面](https://www.w3schools.com/css/css_grid.asp)是建立回應式和靈活性設計的強大工具。
+* [選取器](https://www.w3schools.com/css/css_selectors.asp)：CSS 選擇器可讓您針對特定的 HTML 元素進行樣式設定。您可以使用元素選取器、類別選取器或ID選取器
+* [屬性](https://www.w3schools.com/css/css_syntax.asp)：CSS 屬性定義元素的外觀。樣式化表單欄位的常見屬性包括顏色、背景顏色、邊框、邊框間距、邊界等等
+* [方塊模型](https://www.w3schools.com/css/css_boxmodel.asp)： CSS方塊模型會將HTML元素的結構描述成由邊框間距、邊框和邊界所包圍的內容區域
+* Flexbox/格線： CSS [Flexbox](https://www.w3schools.com/css/css3_flexbox.asp)和[格線版面配置](https://www.w3schools.com/css/css_grid.asp)是建立回應式且彈性設計的強大工具
 
 ## 為最適化表單區塊設定表單樣式
 
 最適化區塊提供了標準化的 HTML 結構，簡化了選取表單元件和設定表單元件樣式的程序：
 
-* **更新預設樣式**：您可以透過編輯 `/blocks/form/form.css file` 來修改表單的預設樣式。此檔案提供了表單的全面樣式，支援多步驟精靈表單。它著重在使用自訂 CSS 變數來輕鬆自訂、維護和跨表單的統一樣式。有關如何將最適化表單區塊新增至專案的說明，請參閱「[建立表單](/help/edge/docs/forms/create-forms.md)」。
+* **更新預設樣式**：您可以編輯`/blocks/form/form.css`檔案來修改表單的預設樣式。 此檔案提供了表單的全面樣式，支援多步驟精靈表單。它著重在使用自訂 CSS 變數來輕鬆自訂、維護和跨表單的統一樣式。有關如何將最適化表單區塊新增至專案的說明，請參閱「[建立表單](/help/edge/docs/forms/create-forms.md)」。
 
-* **自訂**：以預設 `forms.css` 為基礎，然後進行自訂以修改表單元件的外觀，使其具有視覺吸引力且方便使用。此檔案的結構鼓勵組織並維護表單的樣式，從而促進整個網站的設計一致。
+* **自訂**：使用預設`forms.css`做為基底並自訂它，以修改表單元件的外觀，使其視覺上吸引人且方便使用。 此檔案的結構鼓勵組織並維護表單的樣式，從而促進整個網站的設計一致。
 
-## forms.css 結構分解
+## forms.css結構的劃分
 
 * **全域變數：** 定義於 `:root` 層級，這些變數 (`--variable-name`) 儲存整個樣式表中使用的值，以保持一致性並易於更新。這些變數定義顏色、字體大小、邊框間距和其他屬性。您可以宣告自己的全域變數或修改現有變數來變更表單的樣式。
 
@@ -66,7 +66,7 @@ ht-degree: 100%
 
 * **媒體查詢：**&#x200B;其提供適用於不同螢幕尺寸的樣式，可相應地調整版面和樣式。
 
-* **其他樣式設定：**：本區段包含成功或錯誤訊息、檔案上傳區域以及表單中其他元素的樣式。
+* **其他樣式：**&#x200B;本節涵蓋成功或錯誤訊息的樣式、檔案上傳區域，以及您在表單中可能遇到的其他元素。
 
 
 ## 元件結構
@@ -75,28 +75,28 @@ ht-degree: 100%
 
 ### 一般元件 (不包含下拉式選單、單選按鈕群組和核取方塊群組)：
 
-所有表單欄位 (不包含下拉式選單、單選按鈕群組和核取方塊群組) 都具有以下 HTML 結構：
+除了下拉清單、選項群組及核取方塊群組之外，所有表單欄位都有下列HTML結構：
 
 +++ 一般元件的 HTML 結構
 
 ```HTML
 <div class="{Type}-wrapper field-{Name} field-wrapper" data-required={Required}>
    <label for="{FieldId}" class="field-label">First Name</label>
-   <input type="{Type}" placeholder="{Placeholder}" maxlength="{Max}" id={FieldId}" name="{Name}" aria-describedby="{FieldId}-description">
+   <input type="{Type}" placeholder="{Placeholder}" maxlength="{Max}" id="{FieldId}" name="{Name}" aria-describedby="{FieldId}-description">
    <div class="field-description" aria-live="polite" id="{FieldId}-description">
-    Hint - First name should be minimum 3 characters and a maximum of 10 characters.
+    Hint - First name should be a minimum of 3 characters and a maximum of 10 characters.
    </div>
 </div>
 ```
 
 * 類別：div 元素有幾個目標為特定元素和樣式的類別。您需要 `{Type}-wrapper` 或 `field-{Name}` 類別以開發 CSS 選取器來設定表單欄位樣式：
-   * {Type}：根據欄位類型識別元件。例如，文字 (text-wrapper)、數字 (number-wrapper)、日期 (date-wrapper)。
-   * {Name}：根據名稱識別元件。欄位名稱只能包含英數字元，名稱中的多個連續破折號將替換為單個破折號 `(-)`，並且欄位名稱中的開頭和結尾破折號將被刪除。例如，名字 (field-first-name field-wrapper)。
-   * {FieldId}：欄位的唯一識別碼，是自動產生的。
-   * {Required}：它是一個布林值，表示該欄位是否為必填欄位。
-* 標籤：的 `label` 元素提供欄位的描述性文字，並使用 `for` 屬性將其與輸入元素相關聯。
-* 輸入：`input` 元素定義要輸入的資料類型。例如，文字、數字、電子郵件。
-* 描述 (選擇性)：`div` 與類別 `field-description` 為使用者提供額外資訊或說明。
+   * {Type}：根據欄位類型識別元件。例如，文字（文字包裝函式）、數字（數字包裝函式）、日期（日期包裝函式）
+   * {Name}：根據名稱識別元件。欄位名稱只能有英數字元；名稱中的多個連續破折號會以單一破折號`(-)`取代，而欄位名稱中的開始和結束破折號則會被移除。 例如，名字(field-first-name field-wrapper)
+   * {FieldId}：這是欄位的唯一識別碼，會自動產生
+   * {Required}：表示欄位是否為必要欄位的布林值
+* 標籤： `label`專案提供欄位的描述文字，並使用`for`屬性將其與輸入專案建立關聯
+* 輸入：`input` 元素定義要輸入的資料類型。例如，文字、數字、電子郵件
+* 描述（選用）：類別為`field-description`的`div`為使用者提供其他資訊或指示
 
 **HTML 結構範例**
 
@@ -115,72 +115,64 @@ ht-degree: 100%
 +++ 一般元件的 CSS 選取器
 
 ```CSS
-  
-  /* Target all input fields within any .{Type}-wrapper  */
-  .{Type}-wrapper  {
-    /* Add your styles here */
-    border: 1px solid #ccc;
-    padding: 8px;
-    border-radius: 4px;
-  }
-  
-  /* Target all input fields within any .{Type}-wrapper  */
-  .{Type}-wrapper input {
-    /* Add your styles here */
-    border: 1px solid #ccc;
-    padding: 8px;
-    border-radius: 4px;
-  }
-  
-  /* Target any element with the class field-{Name}  */
-  .field-{Name} {
-    /* Add your styles here */
-    /* This could be used for styles specific to all elements with   field-{Name} class, not just inputs */
-  }
-  
-  
+/* Target all input fields within any .{Type}-wrapper */
+.{Type}-wrapper {
+  /* Add your styles here */
+  border: 1px solid #ccc;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+/* Target all input fields within any .{Type}-wrapper */
+.{Type}-wrapper input {
+  /* Add your styles here */
+  border: 1px solid #ccc;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+/* Target any element with the class field-{Name} */
+.field-{Name} {
+  /* Add your styles here */
+  /* This could be used for styles specific to all elements with field-{Name} class, not just inputs */
+}
 ```
 
-* `.{Type}-wrapper`：根據欄位類型以外部 `div` 元素為目標。例如，`.text-wrapper` 以所有文字欄位為目標。
-* `.field-{Name}`：根據特定欄位名稱進一步選取元素。例如，`.field-first-name` 以「名字」文字欄位為目標。雖然此選擇器可用來為含有 field-{Name} 類別的元素進行目標定位，但請務必謹慎。在這種特定情況下，這對於設定輸入欄位的樣式並不是很有用，因為這不僅針對輸入本身，而且還針對標籤和說明元素。建議使用更具體的選擇器，例如用來為文字輸入欄位 (.text-wrapper 輸入) 的選擇器進行目標定位。
-
-
+* `.{Type}-wrapper`：根據欄位類型以外部 `div` 元素為目標。例如，`.text-wrapper`會鎖定所有文字欄位
+* `.field-{Name}`：根據特定欄位名稱進一步選取元素。例如，`.field-first-name` 以「名字」文字欄位為目標。雖然此選擇器可用來為含有 field-{Name} 類別的元素進行目標定位，但請務必謹慎。在這種特定情況下，這對於設定輸入欄位的樣式並不是很有用，因為其不僅以輸入本身為目標，而且還會以標籤和描述元素為目標。建議使用更具體的選取器，例如您用於鎖定文字輸入欄位（.text-wrapper輸入）的選取器
 
 **一般元件的 CSS 選取器範例**
 
 ```CSS
-/*Target all text input fields */
-
-text-wrapper input {
+/* Target all text input fields */
+.text-wrapper input {
   border: 1px solid #ccc;
   padding: 8px;
   border-radius: 4px;
 }
 
-/*Target all fields with name first-name*/
-
-first-name input {
+/* Target all fields with name first-name */
+.field-first-name input {
   border: 1px solid #ccc;
   padding: 8px;
   border-radius: 4px;
 }
 ```
+
 +++
 
 ### 下拉式選單元件
 
 對於下拉式選單，使用 `select` 元素而非 `input` 元素：
 
-
-
 +++ 下拉式選單元件的 HTML 結構
 
 ```HTML
-<div class="{Type}-wrapper field-{Name} field-wrapper" data-required={required}>
-   <label for="{FieldId}" class="field-label">First Name</label>
+<div class="{Type}-wrapper field-{Name} field-wrapper" data-required={Required}>
+   <label for="{FieldId}" class="field-label">Country</label>
    <select id="{FieldId}" name="{Name}"><option></option><option></option></select>
    <div class="field-description" aria-live="polite" id="{FieldId}-description">
-    Hint - First name should be minimum 3 characters and a maximum of 10 characters.
+    Please select your country from the list.
    </div>
 </div>
 ```
@@ -203,9 +195,7 @@ first-name input {
 
 +++
 
-+++ 下拉式選單的 CSS 選取器
-
-以下 CSS 列出下拉式選單元件的一些範例 CSS 選擇器。
++++ 下拉式元件的CSS選取器
 
 ```CSS
 /* Target the outer wrapper */
@@ -241,22 +231,8 @@ first-name input {
 
 .drop-down-wrapper select::after {
   content: "\25BC";
-  font-size: 12px;
-  color: #ccc;
-  /* Adjust positioning as needed */
-  position: absolute;
-  right: 10px;
-  top: 50%;
-  transform: translateY(-50%);
 }
 ```
-
-* 以包裝函式為目標：第一個選取器 (`.drop-down-wrapper`) 以外部包裝函式元素為目標，確保樣式套用至整個下拉式選單元件。
-* Flexbox 版面：Flexbox 垂直排列標籤、下拉式選單和說明，以呈現簡潔的版面。
-* 標籤樣式設定：標籤以較粗字體和些微邊界呈現醒目效果。
-* 下拉式選單樣式設定：`select` 元素獲得邊框、邊框間距和圓角，具有精美的外觀。
-* 背景顏色：設定一致的背景顏色讓視覺更為和諧。
-* 箭頭自訂：選擇性樣式可隱藏預設下拉箭頭，並使用 Unicode 字元和定位建立自訂箭頭。
 
 +++
 
