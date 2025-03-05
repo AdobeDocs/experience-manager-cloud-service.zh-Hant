@@ -4,9 +4,9 @@ description: Universal Editor是現代化的視覺化撰寫工具，旨在讓您
 exl-id: d4fc2384-a0f5-4a6f-9572-62749786be4c
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: c88aa13c6bc75c8f9cd624d00ef768290981c840
+source-git-commit: 8d608d1ba00764613fbf4a5c1e1a0fcdc603283c
 workflow-type: tm+mt
-source-wordcount: '949'
+source-wordcount: '956'
 ht-degree: 13%
 
 ---
@@ -50,6 +50,7 @@ Universal Editor支援下列兩個AEM主要設定：
 
 * AEM as a Cloud Service （版本`2023.8.13099`或更新版本）
 * AEM 6.5 （service pack 21或22 plus a feature pack）
+   * 同時支援內部部署和AMS託管。
 
 本檔案用於搭配使用Universal Editor與AEM as a Cloud Service。 若要搭配AEM 6.5使用通用編輯器，[請參閱AEM 6.5檔案。](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction)
 
