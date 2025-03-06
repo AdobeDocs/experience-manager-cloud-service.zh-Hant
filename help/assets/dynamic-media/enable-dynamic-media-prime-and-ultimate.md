@@ -4,7 +4,7 @@ description: 瞭解如何啟用 [!DNL Dynamic Media] Prime和Ultimate方案。
 feature: Asset Management
 role: User, Admin
 exl-id: 0ee161f5-bf44-41f1-928e-c07574fd43cc
-source-git-commit: 3962b687a7d0d3f5551b23fbe5c2ee2c21bd1d89
+source-git-commit: 6ec63a4d1a1c0af71e597b18d5a52d0a53c94c8c
 workflow-type: tm+mt
 source-wordcount: '1074'
 ht-degree: 2%
@@ -28,9 +28,11 @@ ht-degree: 2%
 1. [設定 [!DNL Dynamic Media] 解決方案](#configure-dynamic-media-solutions)
 1. [建立並列出 [!DNL Dynamic Media] 公司](#create-and-list-dynamic-media-companies)
 1. [在傳遞層](#configure-custom-domain-in-delivery-tier)中設定自訂網域
+
 <!--
 1. [Onboard API keys using the [!DNL AEM] [!DNL Dynamic Media] API card](#onboarding-api-keys)
 -->
+
 如果您需要啟用[!DNL Dynamic Media Prime]，請參閱[啟用 [!DNL Dynamic Media Prime]](#enable-dynamic-media-prime)中提供的快速連結。
 
 ### 啟動[!DNL Dynamic Media with OpenAPI] {#activate-dynamic-media-with-openapi}
