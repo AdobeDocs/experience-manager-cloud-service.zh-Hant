@@ -4,9 +4,9 @@ description: 瞭解通用編輯器傳送的不同事件，您可用這些事件�
 exl-id: c9f7c284-f378-4725-a4e6-e4799f0f8175
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: fefbb01c786cc00a31602c4646ca8b015e16ed98
 workflow-type: tm+mt
-source-wordcount: '575'
+source-wordcount: '520'
 ht-degree: 2%
 
 ---
@@ -180,29 +180,6 @@ ht-degree: 2%
 
 ## UI事件 {#ui-events}
 
-### aue：ui-publish {#ui-publish}
-
-發佈內容時會觸發`aue:ui-publish`事件（在`BODY`層級進行引動）。
-
-裝載是專案ID及其發佈狀態的清單。
-
-### aue：ui-select {#ui-select}
-
-選取元件時會觸發`aue:ui-select`事件。
-
-裝載是所選元件的專案ID、專案屬性和專案型別。
-
-```json
-{
-    details: {
-        resource: string;       // resource of the selected
-        prop: string;           // prop of the selected
-        type: string;           // type of the selected
-        selected: boolean;      // was selected or unselected
-    }
-}
-```
-
 ### aue：ui-preview {#ui-preview}
 
 當頁面的編輯模式變更為&#x200B;**預覽**&#x200B;時，就會觸發`aue:ui-preview`事件。
@@ -271,7 +248,6 @@ ht-degree: 2%
 
 | 事件 | 行為 |
 |---|---|
-| `aue:ui-publish` | 不執行任何動作 |
 | `aue:ui-select` | 捲動至選取的元素 |
 | `aue:ui-preview` | 將`class="adobe-ue-preview"`新增至HTML標籤 |
 | `aue:ui-edit` | 將`class=adobe-ue-edit"`新增至HTML標籤 |
