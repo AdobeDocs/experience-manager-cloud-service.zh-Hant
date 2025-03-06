@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2023.4.0 版�
 exl-id: c34aedee-e45a-4e2a-ae7f-930bc0cc026f
 feature: Release Information
 role: Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
-source-wordcount: '1122'
+source-git-commit: b4ffcddddfcd990c359380071f19b5442dee9eb2
+workflow-type: tm+mt
+source-wordcount: '1112'
 ht-degree: 100%
 
 ---
@@ -67,7 +67,6 @@ ht-degree: 100%
 * 為 Dynamic Media 影片傳遞 (啟用 CMAF) 中的自適應串流推出新的通訊協定支援 (DASH - 基於 HTTP 的動態自適應串流)：
    * 自適應串流 (DASH/HLS) 可確保使用者擁有更好的觀看影片體驗。
    * DASH 是自適應影片串流的國際標準通訊協定，在業界被廣泛採用
-   * 「在所有區域提供」將透過支援票證啟用
 
 * Dynamic Media _快照_ - 對測試影像或 Dynamic Media URL 進行實驗，以查看不同影像修飾元的輸出，並針對檔案大小 (使用 WebP 和 AVIF 傳遞)、網路頻寬和裝置像素比來評估智慧型影像最佳化。請參閱 [Dynamic Media 快照](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot.html)。
 
