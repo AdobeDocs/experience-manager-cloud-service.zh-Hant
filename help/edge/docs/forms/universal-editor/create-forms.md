@@ -5,17 +5,17 @@ feature: Edge Delivery Services
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: d7e59c16e90e3632140eae08dc2c25b2dd1df5a7
+exl-id: 1eab3a3d-5726-4ff8-90b9-947026c17e22
+source-git-commit: 9127c58a72dc4942312907f9e8f0cdcc8de9aa4b
 workflow-type: tm+mt
 source-wordcount: '1016'
 ht-degree: 49%
 
 ---
 
-
 # 使用通用編輯器(WYSIWYG)製作獨立表單
 
-<span class="preview">此功能可透過搶先存取計畫使用。 若要要求存取權，請從您的正式地址傳送電子郵件至<a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a>，其中包含您的GitHub組織名稱和存放庫名稱。 例如，如果存放庫URL是https://github.com/adobe/abc，組織名稱是adobe，存放庫名稱是abc。</span>
+<span class="preview">此功能可透過搶先存取計畫使用。 若要要求存取權，請將您的GitHub組織名稱和存放庫名稱從您的官方地址傳送電子郵件至<a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> 。 例如，如果存放庫URL是https://github.com/adobe/abc，組織名稱是adobe，存放庫名稱是abc。</span>
 
 本文會透過從表單建立精靈中選取以Edge Delivery Services為基礎的範本，引導您完成使用通用編輯器製作獨立表單的程式。 您也可以將使用Universal Editor編寫的表單發佈到AEM Edge Delivery Services。
 
@@ -163,5 +163,3 @@ AEM Forms 會提供一個區塊，稱為最適化表單區塊，協助您輕鬆�
 ## 開始建立表單
 
 {{universal-editor-see-also}}
-
-

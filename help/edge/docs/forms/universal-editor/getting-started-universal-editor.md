@@ -4,7 +4,7 @@ description: 本教學課程可協助您啟動並執行新的 Adobe Experience M
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 24a23d98-1819-4d6b-b823-3f1ccb66dbd8
-source-git-commit: 964fd32a7dbcb97190d40cb42100d0d66e69a0c4
+source-git-commit: 9127c58a72dc4942312907f9e8f0cdcc8de9aa4b
 workflow-type: tm+mt
 source-wordcount: '1846'
 ht-degree: 96%
@@ -14,7 +14,7 @@ ht-degree: 96%
 
 # 使用通用編輯器 (WYSIWYG) 開始使用 AEM Forms 適用的 Edge Delivery Services
 
-<span class="preview">此功能可透過搶先存取計畫使用。 若要要求存取權，請從您的正式地址傳送電子郵件至<a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a>，其中包含您的GitHub組織名稱和存放庫名稱。 例如，如果存放庫URL是https://github.com/adobe/abc，組織名稱是adobe，存放庫名稱是abc。</span>
+<span class="preview">此功能可透過搶先存取計畫使用。 若要要求存取權，請將您的GitHub組織名稱和存放庫名稱從您的官方地址傳送電子郵件至<a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> 。 例如，如果存放庫URL是https://github.com/adobe/abc，組織名稱是adobe，存放庫名稱是abc。</span>
 
 
 身處現今的數位時代，所有組織均需要建立簡單易用的表單。Edge Delivery Services 表單是使用通用編輯器所建立，提供 WYSIWYG (所見即所得) 功能。它提供現代、直覺易用的介面，能提高表單製作的效率。
