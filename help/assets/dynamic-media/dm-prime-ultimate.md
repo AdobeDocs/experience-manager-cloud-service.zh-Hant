@@ -2,9 +2,10 @@
 title: Dynamic Media Prime和Ultimate
 description: 進一步瞭解Dynamic Media Prime和Ultimate、其優點以及兩者之間的差異。
 role: User
-source-git-commit: dce23f34cab2248d65e0e19d98fdfd529eadbdc6
+exl-id: fd049d9c-7940-4638-a17a-21d1f85e9c52
+source-git-commit: 0c0d33b3e022ff0265220bf3106b888b83e8af99
 workflow-type: tm+mt
-source-wordcount: '394'
+source-wordcount: '417'
 ht-degree: 14%
 
 ---
@@ -44,18 +45,16 @@ Dynamic Media Prime的其他主要優點包括：
 
 ## Dynamic Media Ultimate {#dynamic-media-ultimate}
 
-Dynamic Media Ultimate是Experience Manager Assets的啟用服務，包含具有OpenAPI基本和進階功能的Dynamic Media，以及AEM as a Cloud Service中的Dynamic Media解決方案。 透過其全球性、可擴充、效能最佳化的網路，可讓組織即時產生並提供多種多樣的豐富內容。
+Dynamic Media Ultimate是Experience Manager Assets的啟用服務，包含[具有OpenAPI](/help/assets/dynamic-media-open-apis-overview.md)基本和進階功能的Dynamic Media，以及[AEM as a Cloud Service中的Dynamic Media解決方案](/help/assets/dynamic-media/dynamic-media.md)。 透過其全球性、可擴充、效能最佳化的網路，可讓組織即時產生並提供多種多樣的豐富內容。
 
 除了Dynamic Media Prime功能(例如AEM Assets與Adobe或非Adobe應用程式的整合)、轉換（旋轉、裁切、翻轉、大小、偏好網頁、高度、寬度、品質）和最佳化傳送，Dynamic Media Ultimate也提供：
 
-* 具有OpenAPI功能的Dynamic Media進階功能，例如：
+* [具有OpenAPI功能的Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md)進階功能，例如：
 
    * 安全傳送資產，
    * [智慧型裁切、智慧型影像、影像預設集和其他影像修飾元](https://adobe-aem-assets-delivery-advancemodifiers.redoc.ly/)。
 
 * [AEM as a Cloud Service中的Dynamic Media解決方案](/help/assets/dynamic-media/dynamic-media.md)，其中也包含下列主要功能：
-
-   * [內容自動化](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/content-automation/overview)
 
    * [Dynamic Media 範本](/help/assets/dynamic-media/dynamic-media-templates.md)
 
@@ -70,3 +69,6 @@ Dynamic Media Ultimate是Experience Manager Assets的啟用服務，包含具有
 * [Assets as a Cloud Service Ultimate](/help/assets/assets-ultimate-overview.md)
 
 如需完整功能清單的詳細資訊，請參閱[具有OpenAPI功能的Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md)和[使用Dynamic Media](/help/assets/dynamic-media/dynamic-media.md)。
+
+如需如何為您的AEM as a Cloud Service環境啟用Dynamic Media Prime和Ultimate的相關資訊，請參閱[啟用Dynamic Media Prime和Ultimate](/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md)。
+
