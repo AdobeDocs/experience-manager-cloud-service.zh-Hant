@@ -1,15 +1,15 @@
 ---
-title: 探索Content Hub
+title: Content Hub 概觀
 description: 深入了解 Content Hub、其主要優勢、如何存取，以及如何針對 Content Hub 中的選項提供意見反應。
 exl-id: c5908058-f1ad-4aaa-9e8e-c0157e107ed1
-source-git-commit: cccfddd6600358bc7bd4d000d760d62626107426
+source-git-commit: db23c4309454c69b784405ef14b54166db7c7cf2
 workflow-type: tm+mt
 source-wordcount: '705'
-ht-degree: 90%
+ht-degree: 91%
 
 ---
 
-# 探索Content Hub {#overview-content-hub}
+# Content Hub 概觀 {#overview-content-hub}
 
 | [搜尋最佳實務](/help/assets/search-best-practices.md) | [中繼資料最佳實務](/help/assets/metadata-best-practices.md) | [具有 OpenAPI 功能的 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 開發人員文件](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |----|-----|
