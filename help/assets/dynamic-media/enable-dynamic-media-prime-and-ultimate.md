@@ -4,7 +4,7 @@ description: 瞭解如何啟用 [!DNL Dynamic Media] Prime和Ultimate方案。
 feature: Asset Management
 role: User, Admin
 exl-id: 0ee161f5-bf44-41f1-928e-c07574fd43cc
-source-git-commit: e32d4a3348e5202dc08f9e3cd587cf6accddb559
+source-git-commit: f2e8b57626af8302b2ce9b6cb6ec459f47025af0
 workflow-type: tm+mt
 source-wordcount: '1074'
 ht-degree: 2%
@@ -50,40 +50,26 @@ ht-degree: 2%
 #### 在您的Cloud Service環境中啟用[!DNL Dynamic Media with OpenAPI]功能 {#enable-dynamic-media-with-openapi-capabilites-in-your-CS-environment}
 
 執行這些步驟以啟用雲端服務環境的[!DNL Dynamic Media with OpenAPI]：
-
 1. [導覽至Cloud Manager UI](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager)。
-
 1. [如果您沒有現有環境的存取權，請建立環境](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/create-environments)。
-
 1. 在[環境]詳細資訊頁面上&#x200B;**[!UICONTROL 環境資訊]**&#x200B;區段的&#x200B;**[!UICONTROL 動態媒體]**&#x200B;列中，選取&#x200B;**[!UICONTROL 按一下以啟動]**。
-
    ![使用OpenAPI功能啟用Dynamic Media](/help/assets/assets/activate-adv-capabiliites-of-dm-openAPI.png)
-
 1. 在確認對話方塊上按一下[啟動&#x200B;****]以開始[!DNL Dynamic Media with OpenAPI]啟動程式。 成功啟用後，Cloud Manager會顯示下列狀態更新：
    1. **[!UICONTROL 環境階段]**： **[!UICONTROL 執行中]**
-   1. ![DM已啟用](/help/assets/assets/Images_icon.svg)**[!UICONTROL Dynamic Media ]**：**[!UICONTROL  OpenAPI功能已啟用&#x200B;]**
-
-      ![啟用成功](/help/assets/assets/activation-successful.png){width="700" align="center"}
+   1. ![DM已啟用](/help/assets/assets/Images_icon.svg)**[!UICONTROL Dynamic Media ]**：**[!UICONTROL  OpenAPI功能已啟用&#x200B;]**      ![啟用成功](/help/assets/assets/activation-successful.png){width="700" align="left"}
 
 #### 重試啟動 {#retry-activation}
 
 如果啟用失敗，Cloud Manager會顯示下列狀態更新：
 
 * **[!UICONTROL 環境階段]**： **[!UICONTROL DM with OpenAPI失敗]**
-* ![DM已啟用](/help/assets/assets/Images_icon.svg)**[!UICONTROL Dynamic Media ]**：**[!UICONTROL &#x200B;無法啟動OpenAPI功能&#x200B;]**
-
-  ![重試啟動](/help/assets/assets/retry-dm-openapi-failed-activation.png){width="700" align="center"}
-
-選取&#x200B;**[!UICONTROL 按一下以重試]**&#x200B;以重新啟動啟動。
+* ![DM已啟用](/help/assets/assets/Images_icon.svg)**[!UICONTROL Dynamic Media ]**：**[!UICONTROL &#x200B;無法啟動OpenAPI功能&#x200B;]**  ![重試啟動](/help/assets/assets/retry-dm-openapi-failed-activation.png){width="700" align="left"}
+選取**[!UICONTROL 按一下以重試]**&#x200B;以重新啟動啟動。
 
 或者，執行這些步驟以重新啟動啟動程式：
-
 1. 瀏覽到列出所有環境的頁面。
-
 1. 按一下環境列末尾的更多選項（![更多選項](/help/assets/assets/three-dots.svg)）。
-
-1. 選取&#x200B;**[!UICONTROL 使用OpenAPI啟用重試DM]**&#x200B;以重新啟動啟用。
-
+1. 選取&#x200B;**[!UICONTROL 使用OpenAPI啟用重試DM]**以重新啟動啟用。
    ![從環境詳細資訊頁面重試啟動](/help/assets/assets/restart-activation-process-from-list-environment-page.png)
 
 ### 設定[!DNL Dynamic Media]解決方案 {#configure-dynamic-media-solutions}
@@ -100,14 +86,10 @@ ht-degree: 2%
 #### 設定[!DNL Dynamic Media]個解決方案以進行資產傳遞 {#configure-dynamic-media-solutions-for-asset-delivery}
 
 執行以下步驟：
-
 1. [建立新程式](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/create-program)或瀏覽至現有的程式，然後按一下&#x200B;**[!UICONTROL 編輯]**。 **[!UICONTROL 為生產設定]**&#x200B;頁面顯示&#x200B;**[!UICONTROL 解決方案和附加元件]**&#x200B;標籤。
-
 1. 選取&#x200B;**[!UICONTROL Assets]**、**[!UICONTROL Assets Prime]**、**[!UICONTROL Assets Ultimate]**&#x200B;或&#x200B;**[!UICONTROL 網站]**，將&#x200B;**[!UICONTROL Dynamic Media]**&#x200B;解決方案新增至您的程式。
-
 1. 選取&#x200B;**[!UICONTROL Dynamic Media]**&#x200B;解決方案，然後按一下&#x200B;**[!UICONTROL 繼續]**，將&#x200B;**[!UICONTROL Dynamic Media]**&#x200B;解決方案新增至您的程式。 此動作會重新啟動您的程式中的所有現有環境，並將[!DNL Dynamic Media]解決方案新增到其中。 此外，您在程式下建立的任何新環境都會自動取得[!DNL Dynamic Media]。
-
-   ![已設定用於生產](/help/assets/assets/set-up-for-prod.png){width="500" align="center"}
+   ![已設定用於生產](/help/assets/assets/set-up-for-prod.png){width="500" align="left"}
 
 請參閱[啟動 [!DNL Dynamic Media with OpenAPI]](#activate-dynamic-media-with-openapi)以在您的環境中開始使用[!DNL Dynamic Media]與OpenAPI功能的功能。
 
@@ -118,46 +100,30 @@ ht-degree: 2%
 #### 準備開始使用 {#prerequisites-to-create-and-list-dynamic-media-companies}
 
 若要在您的IMS組織中檢視現有的公司（帳戶）或新增新的[!DNL Dynamic Media]公司（帳戶），您必須擁有：
-
 1. [存取Cloud Manager](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager)。
-
 1. 您組織中的[!DNL Dynamic Media with OpenAPI]積分。
 
 #### 在您的IMS組織中建立並列出[!DNL Dynamic Media]公司 {#create-and-list-dynamic-media-companies-in-your-ims-organisation}
 
 執行這些步驟，建立和列出可在您的[!DNL AEM]環境中設定的新[!DNL Dynamic Media]公司（帳戶）：
-
 1. 瀏覽至[Cloud Manager授權頁面](https://experience-stage.adobe.com/#/@ssahnichstage/cloud-manager/license)。
-
 1. 按一下&#x200B;**[!UICONTROL 新增公司]**，會顯示&#x200B;**[!UICONTROL 建立Dynamic Media公司]**&#x200B;對話方塊。
-
 1. 指定唯一的[!DNL Dynamic Media]公司名稱、選取公司地區並新增以逗號分隔的公司管理員電子郵件ID清單。
-
-   ![建立Dynamic Media公司](/help/assets/assets/create-dynamic-media-company.png){width="500" align="center"}
-
+   ![建立Dynamic Media公司](/help/assets/assets/create-dynamic-media-company.png){width="500" align="left"}
 1. 按一下[建立]****&#x200B;開始建立您的公司。 此動作將新資料列新增至&#x200B;**[!UICONTROL [!DNL Dynamic Media]公司]**&#x200B;區段，並顯示&#x200B;**[!UICONTROL 正在設定]**&#x200B;為公司的&#x200B;**[!UICONTROL 狀態]**。
-
    ![已起始Dynamic Media公司建立](/help/assets/assets/dm-company-creation-initiated.png)
-
 1. **選擇性：**&#x200B;按一下![資訊圖示](/help/assets/assets/info-icon-solid-black.svg)以檢視公司的詳細資料。 公司建立時，**[!UICONTROL 狀態]**&#x200B;會更新為&#x200B;**[!UICONTROL 就緒]**。
-
    ![Dynamic Media公司資訊](/help/assets/assets/dm-company-information.png)
-
 1. 身為Dynamic Media系統管理員，請檢視您的信箱以取得歡迎電子郵件，其中包含在[!DNL AEM] Cloud Service環境中[設定 [!DNL Dynamic Media]](/help/assets/dynamic-media/config-dm.md#architecture-diagram-of-dynamic-media)公司的步驟清單，以便開始使用。
-
    ![歡迎電子郵件](/help/assets/assets/welcome-email.png)
 
 #### 重試公司建立 {#retry-company-creation}
 
 如果[!DNL Dynamic Media]公司建立失敗，請根據失敗狀態執行以下步驟：
-
-1. 如果&#x200B;**[!UICONTROL 狀態]**&#x200B;為「擱置中」，則請向客戶支援團隊提出問題以尋求解決方案。
-
-   ![擱置狀態](/help/assets/assets/company-creation-pending-status.png){width="350" align="center"}
-
-1. 如果&#x200B;**[!UICONTROL 狀態]**&#x200B;失敗，則根據失敗原因重試。
-
-   ![失敗狀態](/help/assets/assets/company-creation-failure-status.png){width="380" align="center"}
+1. 如果&#x200B;**[!UICONTROL 狀態]**為「擱置中」，則請向客戶支援團隊提出問題以尋求解決方案。
+   ![擱置狀態](/help/assets/assets/company-creation-pending-status.png){width="350" align="left"}
+1. 如果&#x200B;**[!UICONTROL 狀態]**失敗，則根據失敗原因重試。
+   ![失敗狀態](/help/assets/assets/company-creation-failure-status.png){width="380" align="left"}
 
 ### 可選：在傳遞層級中設定自訂網域 {#configure-custom-domain-in-delivery-tier}
 
@@ -175,34 +141,18 @@ ht-degree: 2%
 #### 使用Cloud Manager在傳遞層級中設定自訂網域 {#configure-custom-domain-in-delivery-tier-using-cloud-manager}
 
 在Cloud Manager中執行以下步驟，在傳送層級中設定自訂網域：
-
 1. [新增客戶管理的SSL憑證](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/add-ssl-certificate#add-customer-managed-ssl-cert)。
-
 1. [新增自訂網域名稱](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/add-custom-domain-name#adding-cdn-settings)。
-
 1. 瀏覽到環境詳細資訊頁面，並[新增CDN設定](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cdn-configurations/add-cdn-config)。 新增設定時，請在&#x200B;**[!UICONTROL 設定CDN]**&#x200B;對話方塊的&#x200B;**[!UICONTROL 層]**&#x200B;欄位中選取&#x200B;**[!UICONTROL 傳遞]**。
-
    ![設定CDN](/help/assets/assets/select-delivery-tier-in-configure-cdn-form.png)
-
-   新增設定後，**[!UICONTROL CDN設定]**&#x200B;的&#x200B;**[!UICONTROL 狀態]**&#x200B;更新為&#x200B;**[!UICONTROL 已套用]**。
-
+新增設定後，**[!UICONTROL CDN設定]**&#x200B;的&#x200B;**[!UICONTROL 狀態]**&#x200B;更新為&#x200B;**[!UICONTROL 已套用]**。
    ![設定CDN部署狀態](/help/assets/assets/cdn-configuration-deployment-status.png)
-
-1. 按一下更多選項（![更多選項](/help/assets/assets/three-dots.svg)）並選取&#x200B;**[!UICONTROL 上線整備]**&#x200B;以顯示&#x200B;**[!UICONTROL 上線整備]**&#x200B;對話方塊。
-
+1. 按一下更多選項（![更多選項](/help/assets/assets/three-dots.svg)）並選取&#x200B;**[!UICONTROL 上線整備]**&#x200B;以顯示&#x200B;**[!UICONTROL 上線整備]**對話方塊。
    ![上線整備選項](/help/assets/assets/go-live-readiness-option.png)
-
 1. 執行&#x200B;**[!UICONTROL 設定CNAME]**&#x200B;步驟以對DNS服務提供者之DNS記錄中的[cdn.adobeaemcloud.com](http://cdn.adobeaemcloud.com/) （CNAME記錄）進行對應。 此對應程式可確保將從自訂網域收到的請求重新導向至Adobe的CDN。
-
-   ![上線整備對話方塊](/help/assets/assets/go-live-readiness-dialogbox.png){width="500" align="center"}
-
+   ![上線整備對話方塊](/help/assets/assets/go-live-readiness-dialogbox.png){width="500" align="left"}
 1. 按一下&#x200B;**[!UICONTROL 確定]**，**[!UICONTROL 狀態]**&#x200B;更新為&#x200B;**[!UICONTROL 已驗證]**。 自訂網域已準備好用於傳送URL。
-
-
    ![設定CDN](/help/assets/assets/cdn-configurations-varified.png)
-
-
-
 <!--
 ### Onboard API keys {#onboarding-api-keys}
 
@@ -271,7 +221,6 @@ TBD: Wiki in progress.
 ## 啟用[!DNL Dynamic Media] Prime {#enable-dynamic-media-prime}
 
 在雲端服務環境中執行下列步驟，以啟用[!DNL Dynamic Media] Prime：
-
 1. [使用OpenAPI啟動Dynamic Media](#activate-dynamic-media-with-openapi)
 1. [選用：設定傳遞層](#configure-custom-domain-in-delivery-tier)中的自訂網域
 
