@@ -6,20 +6,18 @@ level: Intermediate
 feature: Adaptive Forms, Foundation Components, Core Components
 hide: true
 hidefromtoc: true
-source-git-commit: ef6c113721ca6f84374ecd01df790a0b37d00192
+source-git-commit: 08db35af78d46db42e6e2b373f7278753529c37e
 workflow-type: tm+mt
 source-wordcount: '873'
 ht-degree: 1%
 
 ---
 
-
 # 使用價值實現儀表板來分析表單和檔案使用趨勢
 
 <span class="preview">此功能可透過搶先存取計畫使用。 若要要求存取權，請從您的官方地址傳送電子郵件至aem-forms-ea@adobe.com。<span>
 
 ![值實現儀表板](/help/edge/docs/forms/universal-editor/assets/forms-insights-banner.svg)
-
 
 透過定期監視「Forms使用深入分析」儀表板中顯示的量度，您可以獲得有關表單、檔案和表單片段效能的寶貴見解。 使用這些資料針對表單設計、片段管理和整體表單策略做出明智的決策。
 
