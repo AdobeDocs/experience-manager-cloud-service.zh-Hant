@@ -1,6 +1,6 @@
 ---
 title: Dynamic Media 最佳實務
-description: 瞭解Dynamic Media中處理影像和影片的最佳實務，以及Dynamic Media Viewers的最佳實務。
+description: 瞭解使用影像和影片的Dynamic Media最佳實務，以及Dynamic Media檢視器的最佳實務。
 contentOwner: Rick Brough
 products: Experience Manager as a Cloud Service
 topic-tags: introduction,administering
@@ -9,9 +9,9 @@ feature: Adaptive Streaming, Best Practices, Smart Imaging, Image Profiles, Rule
 role: User, Admin
 mini-toc-levels: 4
 exl-id: 39e491bb-367d-4c72-b4ca-aab38d513ac5
-source-git-commit: 9d4c8946dcdf0e175a54a1dcf55513f01e5648aa
+source-git-commit: 6cc21d0e7330b3dd4254ad15b64dc94c065417f7
 workflow-type: tm+mt
-source-wordcount: '4114'
+source-wordcount: '4071'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ Stage Business Problem Best Practice Recommendation: This section will outline s
 
 組織在與使用者互動時，面臨著頻道和裝置的爆炸式增長。 客戶歷程橫跨實體商店、網路、行動裝置、社群媒體、電子郵件和商務。 為滿足此需求，Adobe Experience Manager (AEM)上的Dynamic Media提供全方位的解決方案。 它會最佳化資產傳送、處理個人化，並確保跨頻道和裝置的一致性、效能表現和品牌一致性體驗。
 
-Dynamic Media的部分主要原則包括：
+Dynamic Media的部分重要原則包括：
 
 * **單一檔案方法：**&#x200B;使用Dynamic Media時，您會儲存一個主要來源檔案，而且所有大小變化和視覺效果都會在傳遞時動態建立並最佳化。 此方法可節省儲存成本並免除工作流程的複雜性。
 * **真正的全球化：**&#x200B;智慧型影像在內容傳遞期間套用，可大幅減少影像大小和頁面寬度，而不會影響視覺品質。 針對網路頻寬和裝置畫素比例進行最佳化。
@@ -59,22 +59,22 @@ Dynamic Media的部分主要原則包括：
 
 **業務案例：** *有效管理大量資產，並確保只將相關、核准的內容提供給一般使用者。*
 
-有效簡化您對大量資產的管理。 使用Dynamic Media的&#x200B;**選擇性同步處理**&#x200B;和&#x200B;**選擇性Publish**&#x200B;功能，確保只有適當的授權內容能到達您的使用者。
+有效簡化您對大量資產的管理。 使用Dynamic Media的&#x200B;**選擇性同步處理**&#x200B;和&#x200B;**選擇性發佈**&#x200B;功能，確保只有適當的授權內容能到達您的使用者。
 
 * **選擇性同步處理：**
 主動式功能，可讓您選擇要與Dynamic Media同步的資產。 例如，您可能決定只同步處理包含已獲得最終核准之資產的資料夾。 此工作流程可協助您持續控制正在準備傳送給客戶的資產。
 
 * **選擇性發佈：**
-同步您的資產後，選擇性Publish可讓您控制客戶可檢視哪些資產。 此功能表示您可以控管哪些已核准資產是實際透過您的管道傳送，確保您的客戶只會看到最佳且最相關的內容。
+同步您的資產後，選擇性發佈可讓您控制哪些資產可向客戶顯示。 此功能表示您可以控管哪些已核准資產是實際透過您的管道傳送，確保您的客戶只會看到最佳且最相關的內容。
 
 這兩個最佳實務可協助您對多媒體內容進行更好的控制、控管和生產力。
 
-想要進一步瞭解嗎？ 移至[在Dynamic Media](/help/assets/dynamic-media/selective-publishing.md)的資料夾層級設定選擇性Publish。
+想要進一步瞭解嗎？ 移至[在Dynamic Media](/help/assets/dynamic-media/selective-publishing.md)的資料夾層級設定選擇性發佈。
 
 
 ## Dynamic Media 檢視器
 
-Dynamic Media檢視器最佳實務是基本准則，旨在最佳化AEM上Dynamic Media資產的效能、功能和使用者體驗。 這些實務可確保資產正確同步、發佈和設定，以使用Dynamic Media的完整功能。
+Dynamic Media Viewer最佳實務是基本准則，旨在最佳化AEM上Dynamic Media資產的效能、功能和使用者體驗。 這些實務可確保資產正確同步、發佈和設定，以使用Dynamic Media的完整功能。
 
 透過遵循這些最佳實務，您可以實現緊密整合、有效率的資產管理並增強檢視器互動。 同步資產、使用智慧型裁切並遵循JavaScript檔案包含准則，這些都是重要的作法。 這些建議有助於維持各種平台與裝置間媒體傳送的完整性與可靠性。
 
@@ -84,19 +84,19 @@ Dynamic Media檢視器最佳實務是基本准則，旨在最佳化AEM上Dynamic
    * 存取位於`/libs/dam/gui/content/s7dam/samplemanager/samplemanager`的範例管理員頁面。 此頁面可讓您重新同步檢視器的資產，包括現成可用的圖示、CSS檔案和預設集。
    * 如果您遇到任何檢視器問題，請前往[疑難排解Dynamic Media檢視器](/help/assets/dynamic-media/troubleshoot-dm.md#viewers)文章。
 
-* **Publish Assets：**
+* **發佈Assets：**
 在傳遞檢視器中檢視資產之前，請確定資產已發佈。
 * **自動播放視訊已靜音：**
 如需視訊中的自動播放功能，請使用靜音視訊設定，因為瀏覽器會限制以大量播放視訊。
 * **智慧型裁切：**
 使用智慧型裁切的影像v3元件來增強影像資產簡報。
 * **JavaScript檔案包含：**
-在您的頁面上僅包含主要檢視器JavaScript檔案。 避免參照檢視器的執行階段邏輯可能下載的其他JavaScript檔案。 具體而言，請勿從`/s7viewers`內容路徑（稱為整合的SDK包含）直接連結至HTML5 SDK `Utils.js`資料庫。 檢視器的邏輯會管理`Utils.js`或類似的執行階段檢視器程式庫的位置，這些程式庫可能會在發行版本之間變更。 Adobe不會保留伺服器上較舊的次要檢視器版本，因此直接參照這些版本可能會在未來的更新中破壞檢視器功能。
+在您的頁面上僅包含主要檢視器JavaScript檔案。 避免參照檢視器的執行階段邏輯可能下載的其他JavaScript檔案。 具體而言，請勿從`/s7viewers`內容路徑(稱為整合的HTML包含)直接連結至SDK5 SDK `Utils.js`資料庫。 檢視器的邏輯會管理`Utils.js`或類似的執行階段檢視器程式庫的位置，這些程式庫可能會在發行版本之間變更。 Adobe不會保留伺服器上較舊的次要檢視器版本，因此直接參照這些版本可能會在日後的更新中破壞檢視器功能。
 * **內嵌准則：**
 使用本檔案內嵌每個檢視器特有的准則。
 想要進一步瞭解嗎？ 移至AEM Assets ](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers)的[檢視器。
 * **SDK教學課程與範例：**
-檢閱[Viewer SDK教學課程](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/c-tutorial)和[HTML5 SDK應用程式範例](https://s7d9.scene7.com/s7sdk/2024.5/docs/jsdoc/index.html)，以深入瞭解SDK元件API。
+檢閱[檢視器SDK教學課程](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/c-tutorial)和[HTML5 SDK應用程式範例](https://s7d9.scene7.com/s7sdk/2024.5/docs/jsdoc/index.html)，以深入瞭解SDK元件API。
 
 
 ## 準備資產以進行傳送
@@ -114,7 +114,7 @@ Dynamic Media檢視器最佳實務是基本准則，旨在最佳化AEM上Dynamic
 為資產加上標籤可增強搜尋能力、集合建立和搜尋排名。 Adobe Sensei的AI採用自我學習演演算法來進行精確標籤，進而實現快速資產擷取。 Adobe Sensei也會辨識並指派相關標籤（包括自訂標籤）給資產，以使用自動的描述性標籤來簡化資產管理。
 想要進一步瞭解嗎？ 移至[使用標籤](/help/assets/organize-assets.md#use-tags-to-organize-assets)組織資產。
 * **將資產組織成集合：**
-Dynamic Media搭配Experience Manager Assets可讓使用者之間有效率地建立、編輯和共用資產集合。 您可以建立各種集合型別，包括靜態清單和以搜尋為基礎的動態編譯。 這些集合型別可以透過可自訂的存取及編輯許可權在多種位置共用。
+Dynamic Media搭配Experience Manager Assets可在使用者之間有效率地建立、編輯和共用資產集合。 您可以建立各種集合型別，包括靜態清單和以搜尋為基礎的動態編譯。 這些集合型別可以透過可自訂的存取及編輯許可權在多種位置共用。
 想要進一步瞭解嗎？ 移至[將資產組織成集合](/help/assets/manage-collections.md)。
 * **使用設定檔組織資產：**
 處理設定檔可自動處理指定資料夾中的資產，精簡組織。 隨著數位資產集合的擴展，標準化中繼資料、檔案名稱和檔案夾結構可讓您一致且精確地應用這些設定檔。
@@ -130,13 +130,13 @@ Dynamic Media搭配Experience Manager Assets可讓使用者之間有效率地建
 
 想要進一步瞭解嗎？ 移至[最佳化影像品質的最佳實務](/help/assets/dynamic-media/best-practices-for-optimizing-the-quality-of-your-images.md)。
 
-由於對影像品質的感知會因人而異，有時候，系統性的實驗方法對於取得理想的結果至關重要。 Adobe Experience Manager使用100多個Dynamic Media命令來協助此程式，以進行影像增強。
+由於對影像品質的感知會因人而異，有時候，系統性的實驗方法對於取得理想的結果至關重要。 Adobe Experience Manager使用100多個用於影像增強的Dynamic Media命令來協助此程式。
 
 想要進一步瞭解嗎？ 觀看[Dynamic Media快照](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot) （3分鐘17秒）。
 
 若要評估這些不同命令對影像品質的影響，您可以將影像上傳到Dynamic Media、在指定的URL使用工具的介面，然後套用您要嘗試的命令。
 
-要試試嗎？ 啟動[Dynamic Media快照](https://snapshot.scene7.com/)
+要試試嗎？ 啟動[動態媒體快照](https://snapshot.scene7.com/)
 
 ### 標準化套用至影像的樣式
 
@@ -150,15 +150,15 @@ Dynamic Media搭配Experience Manager Assets可讓使用者之間有效率地建
 
 **業務案例：** *確保影像或視訊的主要興趣點在裝置間保持焦點。*
 
-智慧型裁切是Dynamic Media中的一項功能，可利用Adobe的AI和機器學習架構Adobe Sensei來自動裁切影像和視訊。 它會聰明地偵測並聚焦於影像或視訊中的主要主題或興趣點。 這項智慧可確保焦點在桌上型電腦和行動裝置上的各種熒幕大小之間維持不變。
+智慧型裁切是Dynamic Media中的功能，可利用Adobe Sensei、Adobe的AI和機器學習架構，自動裁切影像和視訊。 它會聰明地偵測並聚焦於影像或視訊中的主要主題或興趣點。 這項智慧可確保焦點在桌上型電腦和行動裝置上的各種熒幕大小之間維持不變。
 
 最佳實務是使用智慧型裁切建立影像設定檔。 在設定檔中，您可以定義各種熒幕大小並讓Adobe Sensei執行其餘工作，以確保您的影像和視訊一律為檢視者的裝置最佳化。
 
-想要進一步瞭解嗎？ 觀看[搭配AEM Assets Dynamic Media使用智慧型裁切](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use) （6分鐘35秒）和[使用Dynamic Media智慧型裁切視訊](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-smart-crop-video) （6分鐘22秒）。
+想要進一步瞭解嗎？ 觀看[搭配AEM Assets Dynamic Media使用智慧型裁切](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use) （6分鐘35秒）和[使用視訊的Dynamic Media智慧型裁切](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-smart-crop-video) （6分鐘22秒）。
 
 ### 改善SEO排名
 
-**商業案例：** *設定Dynamic Media以取得改善的SEO排名。*
+**業務案例：** *設定Dynamic Media以取得改善的SEO排名。*
 
 請定期使用下列建議，以確保您的影像可有效地對您的整體SEO策略作出貢獻。
 
@@ -182,7 +182,7 @@ Dynamic Media搭配Experience Manager Assets可讓使用者之間有效率地建
 想要進一步瞭解嗎？ 移至[使用規則集轉換URL](/help/assets/dynamic-media/using-rulesets-to-transform-urls.md)。
 * **智慧型影像與智慧型裁切：**
 使用Dynamic Media中的智慧型影像和智慧型裁切功能，提供最佳化和回應式影像。 這麼做不僅可改善頁面載入時間，也會對SEO排名產生正面影響。
-想要進一步瞭解嗎？ 移至[智慧型影像](/help/assets/dynamic-media/imaging-faq.md)，或觀看[搭配AEM Assets Dynamic Media使用智慧型裁切](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use) （6分鐘35秒）。
+想要進一步瞭解嗎？ 移至[智慧型影像](/help/assets/dynamic-media/imaging-faq.md)，或觀看[搭配AEM Assets Dynamic Media使用智慧型裁切](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use) （6分鐘35秒）
 
 請記住，這些最佳作法與Google的影像SEO最佳作法高度一致。 這些做法強調透過適當的命名慣例、結構化資料和最佳化的影像傳送，為搜尋引擎提供內容和清晰度的重要性。
 
@@ -216,7 +216,7 @@ Dynamic Media可讓您直接透過URL操作影像，使其成為建立動態數�
 
 #### 建立影像覆蓋圖
 
-如果您想在現有影像上疊加標誌或圖示，Dynamic Media會提供簡單明瞭的方法，讓您使用URL命令來達成此目的。 讓我們來劃分這些步驟。
+如果您想在現有影像上重疊標誌或圖示，Dynamic Media會提供簡單明瞭的方法，讓您使用URL命令來達成此目的。 讓我們來劃分這些步驟。
 
 | 步驟 | 該做什麼 |
 | --- | --- |
@@ -234,7 +234,7 @@ Dynamic Media可讓您直接透過URL操作影像，使其成為建立動態數�
 | 步驟 | 該做什麼 |
 | --- | --- |
 | **上傳並發佈基本影像** | 首先，上傳並發佈您要附加文字的基本影像。 您可以使用任何您喜歡的影像。 例如，以下是範例基本影像：<br>[https://s7g2.scene7.com/is/image/genaibeta/leather-sofa](https://s7g2.scene7.com/is/image/genaibeta/leather-sofa)<br> |
-| **套用Dynamic Media文字運運算元** | 使用Dynamic Media時，您可以套用文字運運算元，將動態文字直接覆蓋至影像上。 下列範例URL示範此能力：<br>[https://s7g10.scene7.com/is/image/genaibeta/leather-sofa?layer=1&amp;posN=-0.3,-0.455&amp;text=%7b\rtf1\ansi%7b\fonttbl%7b\f0+Arial；%7d%7d%7b\colortbl+\red255\green255\blue255；%7d\copyfit1000\vertalc\qc%7b\cf0\fs42+New+Collection%7d%7d&amp;size=370,70&amp;textAttr=130&amp;bgcolor=FF3333&amp;wid=600&amp;hei=600](https://s7g10.scene7.com/is/image/genaibeta/leather-sofa?layer=1&amp;posN=-0.3,-0.455&amp;text=%7b\rtf1\ansi%7b\fonttbl%7b\f0+Arial；%7d%7d%7b\colortbl+\red255\green255\blue255；%7d\copyfit1000\vertalc\qc%7b\cf0\fs42+New+Collection%7d%7d&amp;size=370,70&amp;textAttr=130&amp;bgcolor=FF3333&amp;wid=600&amp;hei=600) |
+| **套用Dynamic Media文字運運算元** | 使用Dynamic Media時，您可以套用文字運運算元，將動態文字直接覆蓋在影像上。 下列範例URL示範此能力：<br>[https://s7g10.scene7.com/is/image/genaibeta/leather-sofa?layer=1&amp;posN=-0.3,-0.455&amp;text=%7b\rtf1\ansi%7b\fonttbl%7b\f0+Arial；%7d%7d%7b\colortbl+\red255\green255\blue255；%7d\copyfit1000\vertalc\qc%7b\cf0\fs42+New+Collection%7d%7d&amp;size=370,70&amp;textAttr=130&amp;bgcolor=FF3333&amp;wid=600&amp;hei=600](https://s7g10.scene7.com/is/image/genaibeta/leather-sofa?layer=1&amp;posN=-0.3,-0.455&amp;text=%7b\rtf1\ansi%7b\fonttbl%7b\f0+Arial；%7d%7d%7b\colortbl+\red255\green255\blue255；%7d\copyfit1000\vertalc\qc%7b\cf0\fs42+New+Collection%7d%7d&amp;size=370,70&amp;textAttr=130&amp;bgcolor=FF3333&amp;wid=600&amp;hei=600) |
 
 #### 調整大小及裁切各種使用案例
 
@@ -280,9 +280,9 @@ Dynamic Media可讓您直接透過URL操作影像，使其成為建立動態數�
 
 ### 傳遞GIF影像
 
-**業務案例：** *使用Dynamic Media的串流GIF*
+**業務案例：** *使用Dynamic Media串流GIF*
 
-您可以透過Dynamic Media上傳和傳遞GIF。 若要呈現動畫GIF，請在URL中將`is/image`取代為`is/content`。 例如，如果您已上傳`abc.gif`，請使用下列專案：
+您可以透過Dynamic Media上傳及傳送GIF。 若要呈現動畫GIF，請在URL中將`is/image`取代為`is/content`。 例如，如果您已上傳`abc.gif`，請使用下列專案：
 
 * 此URL路徑會呈現GIF的靜態檢視：
 
@@ -300,7 +300,7 @@ Dynamic Media可讓您直接透過URL操作影像，使其成為建立動態數�
 >
 >在URL路徑中使用`is/content`時，影像轉換命令不會套用至資產。
 
-### Publish我的網站影片
+### 為我的網站發佈影片
 
 **業務案例：** *快速發佈行銷網站的視訊。*
 
@@ -318,7 +318,7 @@ Dynamic Media可讓您直接透過URL操作影像，使其成為建立動態數�
    * **直接連結：**
 使用提供的URL直接連結至影片。 在您的行銷網站上以適當方式建立超連結。
    * **內嵌視訊：**
-複製提供的內嵌程式碼，並將其貼到您要顯示視訊的網頁HTML中。 如此一來，影片就能直接在您的網站上播放。
+複製提供的內嵌程式碼，並將其貼到您要顯示影片之網頁的HTML中。 如此一來，影片就能直接在您的網站上播放。
 
 想要進一步瞭解嗎？ 移至[影片](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/video)。
 
@@ -331,10 +331,10 @@ Dynamic Media可讓您直接透過URL操作影像，使其成為建立動態數�
 * **使用內建的HTML5視訊檢視器：**
 Dynamic Media HTML5視訊檢視器預設集是強大的視訊播放器。 使用它們可避免HTML5視訊播放和行動裝置相關的常見問題。
 這些預設集可解決適應性位元速率串流傳送及有限的案頭瀏覽器觸及範圍等挑戰。
-想要進一步瞭解嗎？ 移至[最佳做法：使用HTML5視訊檢視器](/help/assets/dynamic-media/video.md#best-practice-using-the-html-video-viewer)。
+想要進一步瞭解嗎？ 移至[最佳做法：使用HTML 5視訊檢視器](/help/assets/dynamic-media/video.md#best-practice-using-the-html-video-viewer)。
 
 * **使用Dynamic Media視訊設定檔：**
-Dynamic Media中的視訊設定檔有助於有效率的視訊管理、一致的品質和調適型串流。
+Dynamic Media中的視訊設定檔有助於有效率的視訊管理、一致的品質和自我調整資料流。
 想要進一步瞭解嗎？ 移至[Dynamic Media視訊設定檔](/help/assets/dynamic-media/video-profiles.md)。
 
 * **遵循視訊編碼的最佳實務：**
@@ -346,11 +346,6 @@ Dynamic Media中的視訊設定檔有助於有效率的視訊管理、一致的�
 它使用HLS （HTTP即時資料流）或DASH (`Dynamic Adaptive Streaming over HTTP`)等通訊協定，以確保最佳播放品質。
 與以線性方式提供視訊的漸進式串流不同，適應性串流可儘量減少緩衝，並提供順暢的觀看體驗。
 
-* **在您的帳戶上啟用DASH （透過HTTP的數位最適化串流）：**
-DASH會透過最適化串流的方式動態提供視訊內容。
-若要啟用DASH，請為您的環境建立支援票證。
-想要進一步瞭解嗎？ 移至[在您的Dynamic Media帳戶上啟用DASH](/help/assets/dynamic-media/video.md#enable-dash)。
-
 ### 將影片國際化，以使用多語言
 
 **業務案例：** *讓視訊準備好供多語言使用。*
@@ -358,9 +353,9 @@ DASH會透過最適化串流的方式動態提供視訊內容。
 將多語言使用量視訊國際化，是觸及全球受眾的必要條件。 Dynamic Media提供的功能可協助您達成此目標。
 
 * **上傳您的視訊：**
-   * 首先，建立視訊編碼設定檔。 您可以使用Dynamic Media隨附的預先定義最適化視訊編碼設定檔，或建立您自己的自訂設定檔。
+   * 首先，建立視訊編碼設定檔。 您可以使用動態媒體隨附的預先定義最適化視訊編碼設定檔，或建立您自己的自訂設定檔。
    * 將視訊處理設定檔與您上傳主要來源視訊的一或多個資料夾建立關聯。
-   * 將您的主要來源視訊上傳至這些資料夾。 Dynamic Media會根據指派的視訊處理設定檔進行編碼。
+   * 將您的主要來源視訊上傳至這些資料夾。 Dynamic Media會根據指派的視訊處理設定檔，加以編碼。
    * Dynamic Media主要支援短視訊（最長30分鐘），最低解析度大於25×25。 最多可上傳15 GB的視訊檔案1.
 
 * **管理您的視訊：**
@@ -375,7 +370,7 @@ DASH會透過最適化串流的方式動態提供視訊內容。
    * 使用者播放視訊時，可以選擇自己偏好的音訊和字幕語言。
 
 * **發佈：**
-   * 如果您使用AEM作為網頁內容管理(WCM)系統，您可以直接將視訊新增至網頁。
+   * 如果您使用AEM作為網頁內容管理(WCM)系統，您可以直接新增視訊至網頁。
    * 如果您使用協力廠商WCM系統，可以使用URL或內嵌程式碼來連結或內嵌網頁上的影片。
 
 想要進一步瞭解嗎？ 移至[關於Dynamic Media中視訊的多重字幕與音訊曲目支援](/help/assets/dynamic-media/video.md#about-msma)或觀看[新增多重字幕與音訊曲目至視訊](https://delivery-p106302-e1008131.adobeaemcloud.com/adobe/assets/urn:aaid:aem:daf9a222-9f7f-4333-b167-98cb4c63a1f8/play) （1分鐘、41秒）。
@@ -389,7 +384,7 @@ DASH會透過最適化串流的方式動態提供視訊內容。
 
 Dynamic Media智慧型影像處理是一項功能強大的工具，可依據使用者端的瀏覽器功能，自動最佳化影像的格式、大小和品質，進而增強影像傳送效能。
 
-Adobe建議您使用智慧型影像的功能，而非手動將影像格式設定為`webp`或`avif`。 原因如下：
+Adobe建議您使用智慧型影像的功能，而非手動將影像格式設為`webp`或`avif`。 原因如下：
 
 * **瀏覽器相容性：**
 智慧型影像可確保提供的影像格式與使用者的瀏覽器相容。
@@ -408,7 +403,7 @@ Adobe建議您使用智慧型影像的功能，而非手動將影像格式設定
 
 **業務案例：** *發佈新內容或覆寫現有內容後，如何確保變更立即出現在CDN上？*
 
-CDN （內容傳遞網路）會快取Dynamic Media資產，以快速傳送給客戶。 更新這些資產時，必須讓變更立即在網站上生效。 透過清除或使CDN快取失效，Dynamic Media提供的資產可以快速更新。 此方法可免除根據TTL （存留時間）值（通常設定為10小時）等待快取到期的需求。 您可以根據您的特定使用案例，相應地更新CDN TTL （存留時間）設定。
+CDN （內容傳遞網路）會快取Dynamic Media資產，以快速傳送給客戶。 更新這些資產時，必須讓變更立即在網站上生效。 透過清除或使CDN快取失效，Dynamic Media傳送的資產可以快速更新。 此方法可免除根據TTL （存留時間）值（通常設定為10小時）等待快取到期的需求。 您可以根據您的特定使用案例，相應地更新CDN TTL （存留時間）設定。
 
-想要進一步瞭解嗎？ 移至[透過Dynamic Media](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)使CDN快取失效。
+想要進一步瞭解嗎？ 移至[透過Dynamic Media使CDN快取失效](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)。
 

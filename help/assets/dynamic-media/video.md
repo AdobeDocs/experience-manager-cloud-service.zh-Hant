@@ -1,13 +1,13 @@
 ---
 title: Dynamic Media 中的視訊
-description: 瞭解如何在Dynamic Media中使用影片。 檢閱編碼視訊、將視訊發佈至YouTube、檢視視訊報表，以及將隱藏式字幕或章節標籤新增至視訊的最佳作法。
+description: 瞭解如何在Dynamic Media中使用視訊。 檢閱編碼視訊、將視訊發佈至YouTube、檢視視訊報表，以及將隱藏式字幕或章節標籤新增至視訊的最佳作法。
 contentOwner: Rick Brough
 feature: Video Profiles,Best Practices
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 91a1fb46d4300540eeecf38f7f049a2991513d29
+source-git-commit: 6cc21d0e7330b3dd4254ad15b64dc94c065417f7
 workflow-type: tm+mt
-source-wordcount: '10560'
+source-wordcount: '9849'
 ht-degree: 2%
 
 ---
@@ -18,13 +18,13 @@ ht-degree: 2%
 
 ## 快速入門：影片 {#quick-start-videos}
 
-下列逐步工作流程說明可協助您快速上手並執行Dynamic Media中的Adaptive Video Sets。 每個步驟之後，都有主題標題的互動參照，您可以在其中找到更多資訊。
+下列逐步工作流程說明可協助您快速上手並執行Dynamic Media中的最適化視訊集。 每個步驟之後，都有主題標題的互動參照，您可以在其中找到更多資訊。
 
 >[!NOTE]
 >
->在Dynamic Media中處理視訊之前，請確定Adobe Experience Manager管理員已啟用並設定Dynamic MediaCloud Service。
+>在Dynamic Media中處理視訊之前，請確定您的Adobe Experience Manager管理員已啟用並設定Dynamic Media雲端服務。
 >
->* 請參閱「設定Dynamic Media」中的[設定Dynamic MediaCloud Service](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services)和[疑難排解Dynamic Media](/help/assets/dynamic-media/troubleshoot-dm.md)。
+>* 請參閱設定Dynamic Media中的[設定Dynamic Media雲端服務](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services)和[疑難排解Dynamic Media](/help/assets/dynamic-media/troubleshoot-dm.md)。
 >
 
 1. **執行下列動作，上傳您的Dynamic Media影片**：
@@ -42,7 +42,7 @@ ht-degree: 2%
 
    * 將您的主要來源視訊上傳至指定的資料夾。 在新增視訊後，會根據指派給資料夾的視訊處理設定檔來編碼視訊。
 
-      * Dynamic Media主要支援長度上限為30分鐘，最小解析度大於25×25的短片影片。
+      * Dynamic Media主要支援長度上限為30分鐘、最小解析度大於25×25的短視訊。
       * 支援的最大輸入視訊解析度是16,384 × 16,384。
       * 您可以上傳每個大小最多15 GB的視訊檔案。
       * [上傳您的視訊](/help/assets/manage-video-assets.md#upload-and-preview-video-assets)。
@@ -84,7 +84,7 @@ ht-degree: 2%
       * [檢閱資料夾資產](/help/assets/bulk-approval.md)
       * [專案](/help/sites-cloud/authoring/projects/overview.md)
 
-1. **執行下列其中一項作業，以Publish您的Dynamic Media影片**：
+1. **執行下列其中一項作業，以發佈您的Dynamic Media影片**：
 
    * 如果您使用Experience Manager做為WCM （Web內容管理）系統，可以直接將視訊新增至網頁。
 
@@ -108,7 +108,7 @@ Dynamic Media中的視訊是端對端解決方案，可讓您輕鬆發佈高品�
 
 例如，在iOS行動裝置上，它會偵測頻寬，例如3G、4G或Wi-Fi。 之後，它會從「自我調整視訊集」中的各種視訊位元速率中，自動選取正確的編碼視訊。 影片會串流至桌上型電腦、行動裝置或平板電腦。
 
-此外，如果桌上型電腦或行動裝置上的網路狀況改變，視訊品質會自動動態切換。 此外，如果客戶在桌上型電腦上進入全熒幕模式，Adaptive Video Set會使用更好的解析度來回應，進而改善客戶的觀看體驗。 如果客戶需要在多個熒幕和裝置上播放Dynamic Media視訊，使用最適化視訊集可為您提供最佳檢視體驗。
+此外，如果桌上型電腦或行動裝置上的網路狀況改變，視訊品質會自動動態切換。 此外，如果客戶在桌上型電腦上進入全熒幕模式，Adaptive Video Set會使用更好的解析度來回應，進而改善客戶的觀看體驗。 使用自我調整視訊集可以為在多重熒幕和裝置上播放Dynamic Media視訊的客戶提供最佳檢視體驗。
 
 視訊播放器用來決定要播放或播放期間要選取已編碼視訊的邏輯，是根據下列演演算法：
 
@@ -147,7 +147,7 @@ OUTDATED 2/28/22 BASED ON CQDOC-18692 You can find Windows&reg; devices that sup
 
 <!-- GIVES a 404 See [Dynamic video playback](https://s7d9.scene7.com/s7/uvideo.jsp?asset=GeoRetail/Mop_AVS&config=GeoRetail/Universal_Video1&stageSize=640,480) sample. -->
 
-另請參閱[Experience Manager Assets檢視器參考指南](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources)中的[Experience Manager Assets檢視器和Dynamic Media Classic ](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers#viewers-aem-assets-dmc)以及[僅適用於Dynamic Media的檢視器](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers#viewers-for-aem-assets-only)。
+另請參閱[Dynamic Media檢視器參考指南](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources)中的[Experience Manager Assets檢視器與Dynamic Media Classic ](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers#viewers-aem-assets-dmc)以及[僅適用於Experience Manager Assets的檢視器](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers#viewers-for-aem-assets-only)。
 
 ## 最佳實務：使用HTML5視訊檢視器 {#best-practice-using-the-html-video-viewer}
 
@@ -157,13 +157,9 @@ Dynamic Media HTML5視訊檢視器預設集是強大的視訊播放器。 您可
 
 在檢視器的播放端，會自動偵測瀏覽器的視訊功能。 然後它會使用HLS或DASH （也稱為最適化視訊串流）提供視訊。 或者，如果這些傳送方法不存在，則改用HTML5 progressive。
 
->[!NOTE]
->
->若要將DASH用於視訊，Adobe技術支援必須先在您的帳戶上啟用它。 請參閱[在您的帳戶上啟用DASH](#enable-dash)。
-
 您可以使用HTML5和CSS將設計播放元件的功能結合為單一播放器。 它可以內嵌播放，並根據瀏覽器的功能使用最適化和漸進式串流。 所有這些功能都表示您可以將多媒體內容的觸角伸展至桌上型電腦和行動使用者，並確保簡化的視訊體驗。
 
-另請參閱[Experience Manager Assets檢視器參考指南](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources)中的[僅適用於Dynamic Media的檢視器](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers#viewers-for-aem-assets-only)。
+另請參閱[Dynamic Media檢視器參考指南](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources)中的[僅適用於Experience Manager Assets的檢視器](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers#viewers-for-aem-assets-only)。
 
 
 ### 使用HTML5視訊檢視器在桌上型電腦和行動裝置上播放視訊 {#playback-of-video-on-desktop-computers-and-mobile-devices-using-the-html-video-viewer}
@@ -172,7 +168,7 @@ Dynamic Media HTML5視訊檢視器預設集是強大的視訊播放器。 您可
 
 使用HLS或DASH或漸進式視訊下載程式進行視訊播放。 在舊版Experience Manager （例如6.0、6.1和6.2）中，影片會透過HTTP進行串流處理。
 
-不過，在Experience Manager6.3及更新版本中，視訊現在會透過HTTPS (亦即HLS或DASH)進行串流，因為DM閘道服務URL也一律使用HTTPS。 此預設行為不會影響客戶。 如果瀏覽器支援，視訊串流一律會透過HTTPS進行。 請參閱下表。
+不過，在Experience Manager 6.3及更新版本中，視訊現在會透過HTTPS (亦即HLS或DASH)進行串流，因為DM閘道服務URL也一律使用HTTPS。 此預設行為不會影響客戶。 如果瀏覽器支援，視訊串流一律會透過HTTPS進行。 請參閱下表。
 
 因此，
 
@@ -250,10 +246,6 @@ DASH是國際標準，HLS是Apple標準。 兩者都用於自我調整視訊串�
  </tbody>
 </table>
 
->[!IMPORTANT]
->
->若要將DASH用於視訊，Adobe技術支援必須先在您的帳戶上啟用它。 請參閱[在您的帳戶上啟用DASH](#enable-dash)。
-
 <!--  THIS LINE WAS REMOVED FROM THE TABLE ABOVE ON FEB 28, 2022 BASED ON CQDOC 18692 -RSB <tr>
    <td>Mobile</td>
    <td>BlackBerry&reg;</td>
@@ -263,7 +255,7 @@ DASH是國際標準，HLS是Apple標準。 兩者都用於自我調整視訊串�
 
 ## Dynamic Media視訊解決方案的架構 {#architecture-of-dynamic-media-video-solution}
 
-下圖顯示透過DMGateway (在Dynamic Media混合模式中)上傳及編碼，並可供公眾使用的視訊整體製作工作流程。
+下圖顯示透過DMGateway （在Dynamic Media混合模式中）上傳及編碼，並可供公眾使用的視訊整體製作工作流程。
 
 ![chlimage_1-427](assets/chlimage_1-427.png)
 
@@ -273,7 +265,7 @@ DASH是國際標準，HLS是Apple標準。 兩者都用於自我調整視訊串�
 
 ## 視訊編碼最佳作法 {#best-practices-for-encoding-videos}
 
-如果您已啟用Dynamic Media並設定視訊Cloud Service，則&#x200B;**Dynamic Media編碼視訊**&#x200B;工作流程會對視訊進行編碼。 此工作流程會擷取工作流程處理歷程記錄和失敗資訊。如果您已啟用Dynamic Media並設定視訊Cloud Service，當您上傳視訊時，**[!UICONTROL Dynamic Media編碼視訊]**&#x200B;工作流程會自動生效。 (如果您未使用Dynamic Media，**[!UICONTROL DAM更新資產]**&#x200B;工作流程將會生效。)
+如果您已啟用動態媒體並設定視訊雲端服務，**動態媒體編碼視訊**&#x200B;工作流程會對視訊進行編碼。 此工作流程會擷取工作流程處理歷程記錄和失敗資訊。如果您已啟用Dynamic Media並設定視訊雲端服務，當您上傳視訊時，**[!UICONTROL Dynamic Media編碼視訊]**&#x200B;工作流程會自動生效。 （如果您未使用Dynamic Media，**[!UICONTROL DAM更新資產]**&#x200B;工作流程將會生效。）
 
 以下是編碼來源視訊檔案的最佳實務提示。
 
@@ -286,7 +278,7 @@ DASH是國際標準，HLS是Apple標準。 兩者都用於自我調整視訊串�
 
 編碼視訊檔案時，請使用最高品質的來源視訊檔案。 避免使用先前編碼的視訊檔案，因為這些檔案已經過壓縮，進一步編碼會產生品質不佳的視訊。
 
-* Dynamic Media主要支援長度上限為30分鐘，最小解析度大於25×25的短片影片。
+* Dynamic Media主要支援長度上限為30分鐘、最小解析度大於25×25的短視訊。
 * 您可以上傳每個大小最高達15 GB的主要來源視訊檔案。
 
 下表說明編碼來源視訊檔案前，其建議的大小、外觀比例和最低位元速率等資訊：
@@ -440,7 +432,7 @@ Dynamic Media建議使用MP4 H.264視訊編碼預設集。 由於MP4檔案使用
 
 根據預設，您首次輸入「視訊報表」時，報表會顯示從當月第一個日期開始，到當月日期結束的視訊資料。 不過，您可以指定自己的日期範圍來覆寫預設日期範圍。 下次在視訊報表中，將會使用您指定的日期範圍。
 
-為了讓視訊報表正常運作，設定Dynamic MediaCloud Service時會自動建立報表套裝ID。 同時，報表套裝ID會推送至Publish伺服器，以便您在預覽資產時可用於複製URL功能。 不過，若要使用此功能，必須先設定Publish伺服器。 如果Publish伺服器未設定，您仍可發佈以檢視視訊報表。 不過，您必須返回Dynamic Media雲端設定，並選取&#x200B;**[!UICONTROL 確定]**。
+為了讓視訊報表正常運作，設定Dynamic Media雲端服務時會自動建立報表套裝ID。 同時，報表套裝ID會推送至發佈伺服器，以便您在預覽資產時可用於複製URL功能。 不過，若要使用此功能，必須先設定發佈伺服器。 如果發佈伺服器未設定，您仍可發佈以檢視視訊報表。 不過，您必須返回Dynamic Media雲端設定，並選取&#x200B;**[!UICONTROL 確定]**。
 
 **若要檢視視訊報告：**
 
@@ -521,155 +513,9 @@ See [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8
    For more information, see *Using the TrackingManager Component* in the *Scene7 HTML5 Viewer SDK User Guide* available for download from [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html).
  -->
 
-
-## 在您的Dynamic Media帳戶上啟用DASH、多字幕和多音訊曲目，以及AI產生的字幕支援 {#enable-dash}
-
-您可以在Dynamic Media中啟用以下支援：
-
-* 虛線
-* 多字幕和音訊曲目
-* AI產生的註解（可用性限制）
-
-透過建立並提交Adobe客戶支援案例。
-
-啟用以上三種功能中的任一項，即可啟用所有功能。 因此，如果只想啟用DASH，您實際上是啟用以上列出的全部三個功能。
-
-| 功能 | 說明 |
-| --- | --- |
-| 虛線 | DASH (Digital Adaptive Streaming over HTTP)是視訊串流的國際標準，被廣泛採用於不同的視訊檢視器中。 在您的帳戶上啟用DASH後，您就可以選擇使用DASH或HLS進行最適化視訊串流。 或者，當您在檢視器預設集中選取&#x200B;**[!UICONTROL auto]**&#x200B;作為播放型別時，可以選擇在播放器之間自動切換。<br>在您的帳戶上啟用DASH的一些主要優點包括：<ul><li>封裝DASH串流視訊，以進行最適化位元速率串流。 此方法可提高傳遞效率。 最適化串流可確保為客戶提供最佳檢視體驗。</li><li>使用Dynamic Media播放器將瀏覽器最佳化的串流在HLS和DASH串流之間切換，以確保最佳服務品質。 使用Safari瀏覽器時，視訊播放器會自動切換至HLS。</li><li>您可以編輯視訊檢視器預設集，以設定您偏好的串流方法(HLS或DASH)。</li><li>最佳化的視訊編碼可確保啟用DASH功能時不會使用額外的儲存空間。 會為HLS和DASH建立單一視訊編碼集，以最佳化視訊儲存成本。</li><li>協助讓客戶更容易存取視訊傳送。</li><li>也透過API取得串流URL。</li></ul> |
-| 多字幕和音訊曲目 | 自動啟用多重註解和音訊追蹤支援，讓您受益匪淺。 啟用後，您上傳的所有後續視訊都會透過新的後端架構進行處理，包括支援在視訊中新增多個註解和音訊曲目。 |
-| AI產生的註解（可用性限制） | 為AI支援的視訊建立註解。 它會使用AI建立視訊的文字稿，並將其轉換為註解。 甚至時間軸也會定義。 |
-
->[!IMPORTANT]
->
->在&#x200B;*之前，您已在您的Dynamic Media帳戶[上啟用多重註解和音訊追蹤支援，因此您上傳的任何視訊都必須重新處理](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets)。*&#x200B;此視訊重新處理步驟是必要的，這樣使用者才能使用多個註解和音訊追蹤功能。 重新處理之後，視訊URL仍可繼續如常運作和播放。
-
-**若要在您的Dynamic Media帳戶上啟用DASH、多重字幕與多重音軌，以及AI產生的字幕支援：**
-
-1. [使用此Admin Console開始建立新的支援案例](https://helpx.adobe.com/tw/enterprise/using/support-for-experience-cloud.html)。
-1. 若要建立支援案例，請遵循指示，同時確保您提供下列資訊：
-
-   * 主要連絡人姓名、電子郵件、電話。
-   * 您的Cloud Service環境（方案ID和環境ID）。
-   * 您的Dynamic Media公司帳戶名稱。
-   * 您的Dynamic Media地區：北美(NA)、亞太(APAC)或歐洲 — 中東 — 亞洲(EMEA)。
-   * 指定您要在AEM as a Cloud Service的Dynamic Media帳戶上啟用DASH、多字幕和多音訊曲目，以及AI產生的字幕（可用性限制）支援。
-
-1. 「Adobe客戶支援」會根據提交請求的順序，將您新增至「客戶等候清單」。
-1. 當Adobe準備好處理您的請求時，客戶支援聯絡您以協調並設定啟用的目標日期。
-1. Adobe客戶支援會在完成後通知您。
-1. 現在，執行下列一或多個動作：
-
-   * 照常建立您的[視訊檢視器預設集](/help/assets/dynamic-media/managing-viewer-presets.md#creating-a-new-viewer-preset)。
-   * 照常建立您的[視訊設定檔](/help/assets/dynamic-media/video-profiles.md)。
-   * [新增多個字幕和音軌](#add-msma)到您的視訊。
-
-
-<!-- HIDDEN AS OF OCTOBER 7, 2024 AS PER EMAIL REQUEST FROM RIYA MIDHA ON SAME DATE 
-
-## About multiple caption and audio track support for videos in Dynamic Media{#about-msma}
-
-With multiple caption and audio track capability in Dynamic Media, you can easily add multiple captions and audio tracks to a primary video. This capability means that your videos are accessible to a global audience. You can customize a single, published primary video to a global audience in multiple languages and adhere with accessibility guidelines for different geographical regions. Authors can also manage the captions and audio tracks from a single tab in the user interface.
-
-   ![Captions and audio tracks tab in Dynamic Media along with a table showing uploaded .VTT caption files and uploaded .MP3 audio track files for a video.](/help/assets/dynamic-media/assets/msma-caption-audiotracks-tab2.png)
-
-
-Some of the use cases to consider for adding multiple captions and audio tracks to your primary video include the following:
-
-
-| Type | Use case | 
-| --- | --- |
-| Captions | Multiple language support<br>Descriptive text for accessibility |
-|Audio tracks | Multiple language support<br>Commentary tracks<br>Descriptive audio |
-
-
-All [video formats supported in Dynamic Media](/help/assets/file-format-support.md) and all Dynamic Media video viewers-except the Dynamic Media Video_360 viewer-are supported for use with multiple captions and audio tracks.
-
-Multi-caption and multi-audio track capability is available for your Dynamic Media account by way of a feature toggle that must be enabled (turned on) by Adobe Customer Support.
-
-### Add multiple captions and audio tracks to your video {#add-msma}
-
-Before you add multiple caption and audio tracks to your video, be sure you already have the following in-place:
-
-* Dynamic Media is set up in an AEM environment.
-* A [Dynamic Media Video profile is applied to the folder where your videos are ingested](/help/assets/dynamic-media/video-profiles.md#applying-a-video-profile-to-folders).
-* [Multi-caption, and multi-audio track is enabled on your Dynamic Media account](/help/assets/dynamic-media/video.md#enable-dash).
-
-Added captions and captions are supported with WebVTT and Adobe VTT formats. And, added audio track files are supported with MP3 format.
-
->[!IMPORTANT]
->
->Any videos that you uploaded before enabling multiple caption and audio track support on your Dynamic Media account, [must be reprocessed](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets). This video reprocessing step is necessary so that multiple caption and audio track capability is available to them. The video URLs continue to work and play as usual, after reprocessing.
-
-**To add multiple captions and audio tracks to your video:**
-
-1. [Upload your primary video to a folder](/help/assets/manage-video-assets.md#upload-and-preview-video-assets) that already has a video profile assigned to it.
-1. Navigate to the uploaded video asset that you want to add multiple caption and audio tracks.
-1. In asset selection mode, either from the List View or the Card View, select the video asset.
-1. On the toolbar, select the Properties icon (a circle with an "i" in it). 
-
-   ![Asset properties button.](/help/assets/dynamic-media/assets/msma-selectedasset-propertiesbutton.png)*Selected video asset in Card View.*
-
-1. On the video's Properties page, select the **[!UICONTROL Captions & Audio Tracks]** tab.
-
-
-   >[!TIP]
-   >If you do not see the [!UICONTROL Captions & Audio Tracks] tab, it means either one of two things:
-   >* The folder in which the selected video resides does not have a video profile assigned to it. In which case, see [Apply a video profile to the folder](/help/assets/dynamic-media/video-profiles.md#applying-video-profiles-to-specific-folders)
-   >* Or, Dynamic Media must reprocess the video. In which case, see [Reprocess Dynamic Media assets in a folder](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
-
-    When you have completed either one of the above tasks, return to these steps.
-
-   ![Asset properties](/help/assets/dynamic-media/assets/msma-audiotracks.png)*Captions and audio tracks tab on the video's Properties page.*
-
-1. (Optional) To add one or more caption files to a video, do the following:
-
-    * Select **[!UICONTROL Upload Captions]**.
-    * Navigate to, and select, one or more `.vtt` (Video Text Tracks) files and open them.
-    * For captions to be visible on the media player, you must add required details (metadata) about each caption file that you uploaded. Select the pencil icon to the right of a caption file name. In the Edit Caption dialog box, enter the following required details about the file, then select **[!UICONTROL Save]**. Repeat this process for each caption file that you uploaded:
-
-
-    | Caption metadata | Description | 
-    | --- | --- | 
-    Filename | The default filename is derived from the original filename. The filename can be changed only while uploading and cannot be changed later. Filename character requirements are the same as for AEM Assets.<br>The same filename cannot be used for additional caption files and audio track files. |
-    | Language | Select the language of the caption. |
-    | Type | Select the type of caption that you are using.<br>**Subtitle** - The caption text displayed with the video that translates or transcribes the dialogue.<br>**Caption** - The caption text includes background noises and speaker identification. It also includes other relevant details alongside the translation or transcription of dialogue. This functionality makes the content more accessible to individuals who are deaf or hard of hearing. |
-    | Label | The text that is displayed for the caption's name in the **[!UICONTROL Select audio or caption]** pop-up list in the media player. The label is what a customer sees that corresponds to a subtitle or caption track. For example, English (CC). |
-
-    You can change or edit caption metadata later, if necessary. When the video is published, these details are reflected on public URLs in published videos.
-
-1. (Optional) To add one or more audio tracks to a video, do the following:
-
-    * Select **[!UICONTROL Upload Audio Tracks]**.
-    * Navigate to, and select, one or more .mp3 files and open them.
-    * To make audio tracks visible in the **[!UICONTROL Select audio or caption]** pop-up list on the media player, add the required details for each audio track file. Ensure you include all necessary information for proper display. Select the pencil icon to the right of an audio track file name. In the Edit Audio Track dialog box, enter the following required details, then select **[!UICONTROL Save]**. Repeat this process for each audio track file that you uploaded.
-
-    | Audio Track metadata | Description |
-    | --- | --- |
-    | Filename | The default filename is derived from the original filename. The filename can be changed only while uploading and cannot be changed later. Filename character requirements are the same as for AEM Assets.<br>The same filename cannot be used for additional audio track files or caption files.| 
-    | Language | Select the language of the audio track. |
-    | Type | Select the type of audio track that you are using.<br>**Original** - The audio track originally attached to the video and represented as `[Original]` in the label with English language selected by default. While **[!UICONTROL Label]** and **[!UICONTROL Language]** can be changed in the **[!UICONTROL Edit Audio Track]** dialog box, it defaults to the original values if the primary video is reprocessed.<br>**Standard** - An add-on audio track for a language other than the original.<br>**Audio description** - An audio track that also includes a descriptive narration of non-verbal actions and gestures in the video, making content more accessible for individuals who are visually impaired. |
-    | Label | The text that is displayed as the audio track's name in the **[!UICONTROL Select audio or caption]** pop-up list in the media player. The label is what a customer sees that corresponds to an audio track. For example, `English [Original]`. The label of audio attached to a video is set to `[Original]` by default. |
-
-    You can change or edit this audio track metadata later, if necessary. When the video is published, these details are reflected on public URLs in published videos.
-
-1. In the upper-right corner of the page, from the **[!UICONTROL Save & Close]** drop-down list, select **[!UICONTROL Save]**. The files are uploaded and metadata processing begins, as seen in the Status column of the interface.
-
-    >[!NOTE]
-    >
-    >Based on the caching settings of your instance, the metadata processing can take several minutes before it is reflected in preview and in published URLs.
-
-1. (Optional) If you selected **[!UICONTROL Save & Close]** in the previous step, instead of selecting **[!UICONTROL Save]**, you can still view the processing status of the uploaded files. See [View the lifecycle status of uploaded caption and audio track files](/help/assets/dynamic-media/video.md#lifecycle-status-video).
-
-1. (Optional) Preview the video before publishing to ensure the captions and audio work as expected. See [Preview a video that has multiple captions and audio tracks](/help/assets/dynamic-media/video.md#preview-video-audio-subtitle).
-
-1. Publish the video. See [Publish assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md). -->
-
-
-
 ## 關於Dynamic Media中視訊的多重註解和音訊追蹤支援{#about-msma}
 
-透過Dynamic Media中的多重標題與音訊曲目功能，您可以輕鬆新增多重音訊曲目。 您也可以使用自己的`.vtt` （視訊文字軌）檔案或AI產生的註解檔案來新增多個註解檔案。 Dynamic Media中AI產生的字幕可自動產生精確且同步化的字幕，藉以增強視訊協助工具及參與度。 此技術使用進階AI演演算法將口語內容轉譯為文字，接著在視訊上顯示為註解。 這項技術的部分主要功能包括：
+透過Dynamic Media提供的多重標題與音訊追蹤功能，您可以輕鬆新增多重音訊。 您也可以使用自己的`.vtt` （視訊文字軌）檔案或AI產生的註解檔案來新增多個註解檔案。 Dynamic Media中AI產生的字幕可自動產生精確且同步化的字幕，藉以增強視訊協助工具及參與度。 此技術使用進階AI演演算法將口語內容轉譯為文字，接著在視訊上顯示為註解。 這項技術的部分主要功能包括：
 
 * **自動轉錄：** AI系統會將口語文字即時轉譯為文字，確保快速且準確地產生字幕。
 * **多語言支援：**&#x200B;註解可自動以60多種語言傳送，更易於觸及全球對象。
@@ -678,7 +524,7 @@ Added captions and captions are supported with WebVTT and Adobe VTT formats. And
 
 這些功能讓AI支援的註解成為內容創作者尋求提高其視訊內容可存取性和參與度的寶貴工具。
 
-![Dynamic Media中的註解與音訊曲目索引標籤，以及顯示已上傳的.VTT註解檔案和已上傳之視訊的.MP3音訊曲目檔案的表格。](/help/assets/dynamic-media/assets/msma-caption-audiotracks-tab2.png)
+![Dynamic Media中的註解與音訊曲目標籤，以及顯示已上傳視訊的.VTT註解檔案與已上傳的.MP3音訊曲目檔案的表格。](/help/assets/dynamic-media/assets/msma-caption-audiotracks-tab2.png)
 
 在主要視訊中新增多個字幕和音訊曲目時，需要考量的部分使用案例包括：
 
@@ -690,19 +536,16 @@ Added captions and captions are supported with WebVTT and Adobe VTT formats. And
 |  | 註解追蹤 |
 |  | 描述性音訊 |
 
-Dynamic Media](/help/assets/file-format-support.md)和所有Dynamic Media視訊檢視器(除了Dynamic Media *Video_360*&#x200B;檢視器)支援的所有[視訊格式都支援搭配多個字幕和音軌使用。
-
-您的Dynamic Media帳戶可使用多註解和多音訊追蹤功能，其方式為必須由Adobe客戶支援啟用（開啟）的功能切換。
+Dynamic Media ](/help/assets/file-format-support.md)和所有Dynamic Media視訊檢視器（Dynamic Media *Video_360*&#x200B;檢視器除外）支援的所有[視訊格式都可搭配多重字幕和音軌使用。
 
 ### 在視訊中新增多個註解和音訊曲目 {#add-msma}
 
 在將多個註解和音訊曲目加入視訊之前，請確定您已具備下列內容：
 
-* Dynamic Media是在AEM環境中設定的。
+* Dynamic Media是在AEM環境中設定。
 * [Dynamic Media視訊設定檔已套用至您擷取視訊的資料夾](/help/assets/dynamic-media/video-profiles.md#applying-a-video-profile-to-folders)。
-* [已在您的Dynamic Media帳戶上啟用多重註解/音訊曲目和AI產生的註解](#enable-dash)。
 
-新增的標題支援WebVTT和Adobe VTT格式。 此外，新增的音訊軌跡檔案也支援MP3格式。
+新增的字幕支援WebVTT和Adobe VTT格式。 此外，新增的音訊軌跡檔案也支援MP3格式。
 
 >[!IMPORTANT]
 >
@@ -733,7 +576,7 @@ Dynamic Media](/help/assets/file-format-support.md)和所有Dynamic Media視訊�
    1. 導覽至一或多個.mp3檔案並加以選取，然後開啟。
    1. 若要在媒體播放器的&#x200B;**[!UICONTROL 選取音訊或標題]**&#x200B;快顯清單中看到音訊曲目，您必須新增每個音訊曲目檔案的必要詳細資料。 這樣做可確保正確列出所有音訊曲目並加以存取。 按一下音軌檔案名稱右邊的![繪圖圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Draw_18_N.svg)。 在&#x200B;**編輯音軌**&#x200B;對話方塊中，輸入下列必要的詳細資料：
 
-      | 音訊曲目中繼資料 | 說明 |
+      | 音訊曲目中繼資料 | 描述 |
       |--- |--- |
       | 檔案名稱 | 預設檔案名稱衍生自原始檔案名稱。 檔案名稱只能在上傳時變更，以後無法變更。 檔案名稱字元需求與AEM Assets相同。<br>其他音訊曲目檔或標題檔不能使用相同的檔名。 |
       | 語言 | 選取音訊曲目的正確語言。 |
@@ -764,7 +607,7 @@ Dynamic Media](/help/assets/file-format-support.md)和所有Dynamic Media視訊�
    1. 瀏覽並選取一或多個既有的`.vtt`檔案，然後開啟這些檔案。
    1. 若要在媒體播放器上顯示註解，您&#x200B;*必須*&#x200B;新增您上傳的每個&#x200B;*註解檔案的必要詳細資料*。 按一下標題檔案名稱右側的![繪圖圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Draw_18_N.svg)。 在&#x200B;**編輯標題**&#x200B;對話方塊中，輸入下列檔案的必要詳細資訊：
 
-      | 標題中繼資料 | 說明 |
+      | 標題中繼資料 | 描述 |
       |--- |--- |
       | 檔案名稱 | 預設檔案名稱衍生自原始檔案名稱。 檔案名稱只能在上傳時變更，以後無法變更。 檔案名稱字元需求與AEM Assets相同。<br>其他註解檔和音訊曲目檔不能使用相同的檔名。 |
       | 語言 | 選取註解的語言。 處理註解檔案後，此語言欄位會變成無法編輯（灰色） |
@@ -793,7 +636,7 @@ Dynamic Media](/help/assets/file-format-support.md)和所有Dynamic Media視訊�
 
    1. 在&#x200B;**轉換音軌**&#x200B;對話方塊中，設定下列選項：
 
-      | 選項 | 說明 |
+      | 選項 | 描述 |
       |--- |--- |
       | 要轉換的音軌 | 按一下![「向下V形」圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronDown_18_N.svg)，然後選擇您要使用AI產生字幕的上傳音訊曲目檔案。 |
       | 輸出語言 | 按一下![向下V形圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronDown_18_N.svg)，然後選取您要顯示註解檔案的一或多個語言。<br>若要移除選取的語言，請按一下![關閉圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Close_18_N.svg)。<br>在視訊播放期間，語言清單會依照您在這裡選取的順序顯示在媒體播放器中。 |
@@ -827,7 +670,7 @@ Dynamic Media](/help/assets/file-format-support.md)和所有Dynamic Media視訊�
 
    1. 在&#x200B;**翻譯字幕**&#x200B;對話方塊中，設定下列選項：
 
-      | 選項 | 說明 |
+      | 選項 | 描述 |
       |--- |--- |
       | 要翻譯的標題 | 按一下![向下V形圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronDown_18_N.svg)，然後選擇您要使用AI產生註解的註解檔案。 |
       | 輸出語言 | 按一下![向下V形圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronDown_18_N.svg)，然後選取您要顯示註解檔案的一或多個語言。<br>若要移除選取的語言，請按一下![關閉圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Close_18_N.svg)。<br>在視訊播放期間，語言清單會依照您在這裡選取的順序顯示在媒體播放器中。 |
@@ -854,19 +697,19 @@ Dynamic Media](/help/assets/file-format-support.md)和所有Dynamic Media視訊�
 +++
 
 1. （可選）在發佈之前預覽視訊，以確保字幕和音訊如預期般運作。 請參閱[預覽含有多個字幕和音軌的視訊](#preview-video-audio-subtitle)。
-1. Publish影片。 檢視[Publish資產](publishing-dynamicmedia-assets.md)。
+1. 發佈視訊。 請參閱[發佈資產](publishing-dynamicmedia-assets.md)。
 
 #### 關於新增標題和音訊曲目檔案至已發佈的視訊
 
 將額外的註解或音訊曲目檔案上傳到已發佈的視訊後，這些檔案在準備就緒後會具有`Processed`狀態。 然後您可以在Dynamic Media中預覽視訊，以檢視或聆聽新檔案。
 
-不過，在預覽後，您必須&#x200B;*發佈*&#x200B;視訊，才能同時發佈新加入的註解或音訊曲目檔案。 發佈後，公開Dynamic Media URL即可使用註解或音訊。
+不過，在預覽後，您必須&#x200B;*發佈*&#x200B;視訊，才能同時發佈新加入的註解或音訊曲目檔案。 發佈後，註解或音訊便可在公用的Dynamic Media URL中使用。
 
 >[!NOTE]
 >
 >根據您執行個體的快取設定，中繼資料更新可能需要幾分鐘的時間才會反映在預覽和已發佈的URL中。
 
-在您設定立即發佈Dynamic Media的案例中，上傳其他註解或音訊檔案會立即觸發上傳註解或音訊檔案後的視訊發佈。
+在您已設定Dynamic Media立即發佈的案例中，上傳其他註解或音訊檔案會立即觸發上傳註解或音訊檔案後視訊的發佈。
 
 >[!CAUTION]
 >
@@ -874,7 +717,7 @@ Dynamic Media](/help/assets/file-format-support.md)和所有Dynamic Media視訊�
 
 #### 在具有現有URL和註解修飾元的視訊中新增多個註解
 
-Dynamic Media支援透過URL修飾元在視訊中新增單一標題。 請參閱[將註解新增至視訊](#adding-captions-to-video)。
+Dynamic Media支援透過URL修飾元在視訊中新增單一註解。 請參閱[將註解新增至視訊](#adding-captions-to-video)。
 
 多個註解變更的優先順序高於透過已發佈視訊URL修飾元新增的註解。
 
@@ -882,7 +725,7 @@ Dynamic Media支援透過URL修飾元在視訊中新增單一標題。 請參閱
 
 1. 上傳已新增為視訊修飾元的註解檔案，以便您明確管理檔案。
 1. 視需要上傳任何其他註解檔案。
-1. 照常使用Publish視訊。
+1. 照常發佈視訊。
 具有註解修飾元的現有URL現在可以載入多個註解。
 
 ### 檢視上傳的標題和音訊曲目檔案的生命週期狀態 {#lifecycle-status-video}
@@ -897,11 +740,11 @@ Dynamic Media支援透過URL修飾元在視訊中新增單一標題。 請參閱
 1. 在&#x200B;**屬性**&#x200B;頁面上，選取&#x200B;**[!UICONTROL 註解與音軌]**&#x200B;索引標籤。
 1. 在&#x200B;**[!UICONTROL 狀態]**&#x200B;欄中，記下每個註解或音訊檔案的狀態。
 
-| 註解與音訊曲目的狀態 | 說明 |
+| 註解與音訊曲目的狀態 | 描述 |
 | --- | --- |
 | 處理中 | 新增並儲存新的註解或音訊曲目檔案時，檔案會進入「正在處理」狀態。 Dynamic Media會將串流資訊清單附加至主要視訊，以處理檔案。 |
 | 已處理 | 處理完成後，註解或音訊曲目檔案，或與主要視訊相關的原始音訊曲目會以「已處理」狀態出現。 您可以預覽標題和音訊曲目檔案，這些檔案在您發佈視訊上線&#x200B;*之前*&#x200B;顯示為「已處理」。 |
-| 已發佈 | 「已發佈」狀態代表與主要視訊「已發佈」類似的狀態。 Assets會在主要影片發佈時發佈，並可在公開Dynamic Media URL上使用。 |
+| 已發佈 | 「已發佈」狀態代表與主要視訊「已發佈」類似的狀態。 Assets會在主要影片發佈時發佈，並可在公共Dynamic Media URL上使用。 |
 | 失敗 | 「失敗」狀態表示字幕或音訊曲目檔案的處理未完成。 請刪除註解或音訊曲目檔案，然後重新上傳。 |
 | 已取消發佈 | 明確取消發佈已發佈的主要視訊時，您新增至視訊的任何註解或音訊追蹤檔案也會取消發佈。 |
 
@@ -932,7 +775,7 @@ Dynamic Media支援透過URL修飾元在視訊中新增單一標題。 請參閱
    ![音訊曲目標題具有選取的音訊曲目檔案名稱，並反白顯示[設定為預設]按鈕。](/help/assets/dynamic-media/assets/msma-defaultaudiotrack.png)*正在設定視訊的預設音軌。*
 
 1. 按一下右上角的&#x200B;**[!UICONTROL 儲存並關閉]**。
-1. Publish影片。 檢視[Publish資產](publishing-dynamicmedia-assets.md)。
+1. 發佈視訊。 請參閱[發佈資產](publishing-dynamicmedia-assets.md)。
 
 ### 預覽含有多個字幕和音訊曲目的視訊 {#preview-video-audio-subtitle}
 
@@ -946,7 +789,7 @@ Dynamic Media支援透過URL修飾元在視訊中新增單一標題。 請參閱
 
 >[!NOTE]
 >
->預設的Experience Manager預覽索引標籤不會顯示多個標題和音訊曲目。 原因是這些曲目與Dynamic Media相關聯，而且只能使用Dynamic Media檢視器預覽來檢視。
+>預設的Experience Manager預覽索引標籤不會顯示多個標題和音訊曲目。 原因是這些曲目與Dynamic Media相關聯，且僅能使用Dynamic Media檢視器預覽檢視。
 
 **若要預覽含有多個字幕和音軌的視訊：**
 
@@ -985,7 +828,7 @@ Dynamic Media支援透過URL修飾元在視訊中新增單一標題。 請參閱
    * 音訊曲目 — 在&#x200B;**音訊曲目**&#x200B;標題下，選取一或多個您要從視訊中刪除的音訊曲目檔案，然後按一下![刪除圖示](https://spectrum.adobe.com/static/icons/workflow_22/Smock_Delete_22_N.svg) **[!UICONTROL 刪除]**。
 
 1. 在[刪除]對話方塊中，按一下[確定]。****
-1. Publish影片。
+1. 發佈視訊。
 
 ### 下載已上傳至視訊的註解或音訊曲目檔案
 
@@ -1008,7 +851,7 @@ Dynamic Media支援透過URL修飾元在視訊中新增單一標題。 請參閱
 
 1. 在「下載」對話方塊中，設定下列選項：
 
-   | 下載選項 | 說明 |
+   | 下載選項 | 描述 |
    |--- |--- |
    | 另存新檔 | 使用「另存新檔」文字欄位中指定的預設檔案名稱，或指定您自己的名稱。 |
    | 為每個資產建立個別的資料夾 | 為您選取要下載的每個註解檔或音訊追蹤檔建立一個資料夾。 |
@@ -1017,7 +860,7 @@ Dynamic Media支援透過URL修飾元在視訊中新增單一標題。 請參閱
    | 轉譯 | 轉譯是指原始檔案的替代版本或預覽，通常是較小或解析度較低的版本。 如果顯示為0 B，則可能表示沒有可用的替代版本，或太小而無法註冊大小。 |
 
 1. 選取&#x200B;**[!UICONTROL 下載]**。
-1. Publish影片。 檢視[Publish資產](publishing-dynamicmedia-assets.md)。
+1. 發佈視訊。 請參閱[發佈資產](publishing-dynamicmedia-assets.md)。
 
 <!-- ## About AI-generated captions for videos in Dynamic Media
 
@@ -1032,10 +875,6 @@ These features in Dynamic Media make AI-powered video aptions a valuable tool fo
 
 ## 新增隱藏式字幕至視訊 {#adding-captions-to-video}
 
->[!IMPORTANT]
->
->Adobe建議您在您的Dynamic Media帳戶上[啟用多重註解和音訊追蹤功能](#enable-dash)。 如此一來，您便可運用最新的Dynamic Media後端架構和簡化的工作流程，在視訊中新增註解、字幕和音訊曲目。
-
 您可以將隱藏式字幕新增至單一視訊或最適化視訊集，以將視訊觸及全球市場。 透過新增隱藏式字幕，您就不需要對音訊進行配音，或是使用母語者重新錄製每種語言的音訊。 視訊會以錄製的語言播放。 出現外語註解時，不同語言的人仍可瞭解音訊部分。
 
 隱藏式字幕還能讓耳聾或聽力缺佳的人有更出色的協助工具。
@@ -1044,7 +883,7 @@ These features in Dynamic Media make AI-powered video aptions a valuable tool fo
 >
 >您使用的視訊播放器必須支援隱藏式字幕的顯示。
 
-另請參閱[Dynamic Media中的協助工具](/help/assets/dynamic-media/accessibility-dm.md)。
+另請參閱Dynamic Media中的[協助工具](/help/assets/dynamic-media/accessibility-dm.md)。
 
 Dynamic Media可以將註解檔案轉換為JSON (JavaScript物件標籤法)格式。 此轉換表示您可以將JSON文字內嵌至網頁，做為影片隱藏但完整的文字記錄。 搜尋引擎接著可以編目/索引內容，讓影片更容易找到，並為客戶提供更多有關影片內容的詳細資料。
 
@@ -1058,13 +897,7 @@ Dynamic Media可以將註解檔案轉換為JSON (JavaScript物件標籤法)格�
 
    請參閱[WebVTT：網頁視訊文字追蹤格式](https://w3c.github.io/webvtt/)。
 
-   有許多網站提供免費和優質的工具與服務，讓您在Dynamic Media外部用來製作WebVTT插圖示題檔案。<!-- THE FOLLOWING LINK IS NO LONGER LIVE. CHECKED DECEMBER 13, 2023 For example, to create a simple video caption file with no styling, you can use the following free online caption authoring and editing tool: -->
-
-   <!-- [WebVTT Caption Maker](https://testdrive-archive.azurewebsites.net/Graphics/CaptionMaker/Default.html)
-
-   For best results, use the tool in Internet Explorer 9 or above, Google Chrome, or Safari.
-
-   In the tool, in the **[!UICONTROL Enter URL of video file]** field, paste the copied URL of your video file and then select **[!UICONTROL Load]**. See [Obtain a URL for an Asset](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset) to get the URL to the video file itself which you can then paste into the **[!UICONTROL Enter URL of video file field]**. Internet Explorer, Chrome, or Safari can then natively play back the video. -->
+   有許多網站同時提供免費和優質的工具與服務，讓您在Dynamic Media外部用來編寫WebVTT插圖示題檔案。
 
 依照網站上的熒幕指示製作及儲存您的WebVTT檔案。 完成後，複製註解檔案內容並貼到純文字編輯器中，以VTT副檔名儲存。
 
@@ -1074,12 +907,12 @@ Dynamic Media可以將註解檔案轉換為JSON (JavaScript物件標籤法)格�
 
 一般來說，您會想要將註解`.vtt`檔案的名稱與視訊檔案的名稱相同，並附加語言地區設定，例如 — EN、-FR或 — DE。 如此一來，即可協助您使用現有WCM系統自動化視訊URL的產生作業。
 
-1. 在Experience Manager中，將您的WebVTT標題檔案上傳至DAM。
+1. 在Experience Manager中，將WebVTT標題檔案上傳至DAM。
 1. 導覽至&#x200B;*已發佈*&#x200B;視訊資產，以將它與您上傳的註解檔案建立關聯。
 
    請記住，URL僅可在您首次發 *布資產* 後 *複製* 。
 
-   檢視[Publish資產](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)。
+   請參閱[發佈資產](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)。
 
 1. 執行下列任一項作業：
 
@@ -1101,7 +934,7 @@ Dynamic Media可以將註解檔案轉換為JSON (JavaScript物件標籤法)格�
 
 >[!NOTE]
 >
->使用的視訊播放器必須支援使用章節標籤。 Dynamic Media影片播放器不支援章節標籤，但使用協力廠商影片播放器可能不支援。
+>使用的視訊播放器必須支援使用章節標籤。 Dynamic Media影片播放器不支援章節標籤，但使用協力廠商影片播放器則不支援。
 
 <!-- OBSOLETE CONTENT OBSOLETE CONTENT If desired, you can create and brand your own custom video viewer with chapters instead of using a video viewer preset. For instructions on creating your own HTML5 viewer with chapter navigation, in the Adobe Scene7 Viewer SDK for HTML5 guide, reference the heading "Customizing Behavior Using Modifiers" under the classes `s7sdk.video.VideoPlayer` and `s7sdk.video.VideoScrubber`. The Adobe Scene7 Viewer SDK is available as a download from [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html). -->
 
@@ -1178,7 +1011,7 @@ Cost-efficient access to rapidly evolving technology.
 
 視訊縮圖是視訊影格的縮小版本，或是向客戶表示視訊的影像資產。 縮圖應該用於鼓勵客戶選擇影片。
 
-Experience Manager中的所有視訊都必須有關聯的縮圖。 根據預設，上傳視訊至Experience Manager時，會使用第一個影格作為縮圖。 不過，您可以自訂縮圖以用於品牌化目的或視覺搜尋。 自訂視訊縮圖時，您可以播放視訊並在要使用的影格上暫停。 或者，您可以選取已在數位資產管理器中上傳並&#x200B;*發佈*&#x200B;的影像資產。
+Experience Manager中的所有視訊都必須有關聯的縮圖。 根據預設，將視訊上傳至Experience Manager時，系統會使用第一個影格作為縮圖。 不過，您可以自訂縮圖以用於品牌化目的或視覺搜尋。 自訂視訊縮圖時，您可以播放視訊並在要使用的影格上暫停。 或者，您可以選取已在數位資產管理器中上傳並&#x200B;*發佈*&#x200B;的影像資產。
 
 當視訊的縮圖變更時，會略過重新處理視訊時透過Asset Compute服務產生縮圖。
 
@@ -1307,9 +1140,9 @@ T**o add a custom video thumbnail**,
 
 -->
 
-## 變更Dynamic Media資產的Dynamic Media URL
+## 變更動態媒體資產的Dynamic Media URL
 
-開箱即用的檢視器可播放Dynamic Media中處理的視訊。 您也可以直接存取資訊清單URL並使用您自己的自訂檢視器來播放。 以下是為影片擷取資訊清單URL的API。
+開箱即用的檢視器可播放在Dynamic Media中處理的視訊。 您也可以直接存取資訊清單URL並使用您自己的自訂檢視器來播放。 以下是為影片擷取資訊清單URL的API。
 
 ### 關於getVideoManifestURI API
 
@@ -1343,7 +1176,7 @@ String getVideoManifestURI(Resource resource, ManifestType manifestType, boolean
 
 ### 錯誤案例
 
-如果發生錯誤，API會傳回null。 例外狀況會記錄在Experience Manager錯誤記錄檔中。 所有這類記錄錯誤都以`Could not generate Video Manifest URI`開頭。 下列情況可能會導致此類錯誤：
+如果發生錯誤，API會傳回null。 Experience Manager錯誤記錄中會記錄例外狀況。 所有這類記錄錯誤都以`Could not generate Video Manifest URI`開頭。 下列情況可能會導致此類錯誤：
 
 * `IllegalArgumentException`會針對下列任一專案進行記錄：
 
@@ -1353,7 +1186,7 @@ String getVideoManifestURI(Resource resource, ManifestType manifestType, boolean
    * `onlyIfPublished`引數傳遞為true，但視訊未發佈。
    * 未使用Dynamic Media中的最適化視訊集擷取視訊。
 
-* 在連線到Dynamic Media時發生問題時，`IOException`會獲得記錄。
+* 在連線至Dynamic Media時發生問題時，`IOException`會獲得記錄。
 * 當傳遞的`manifestType`引數為`ManifestType.DASH`且未使用DASH格式處理視訊時，會記錄`UnsupportedOperationException`。
 
 <!-- THE REMAINING SECTION IS FOR 6.5 ONLY 
@@ -1645,6 +1478,151 @@ You can invoke the servlet in following ways:
 | Error: asset path is wrong | `http://sample-aem-author.com/dmSample/dynamicmedia/video/manifestUrl?manifestType=DASH&assetPath=/content/dam/video-example/scennnnnnery.mp4`<br><br>`{"errorString":"could not retrieve the resource from JCR"}` |
 
 -->
+
+
+<!-- REMOVED THE FOLLOWING TOPIC AS PER EMAIL FROM RIYA MIDHA, WEDNESDAY, MARCH 5, 2025; TOPIC IS OBSOLETE/NO LONGER NEEDED BECAUSE THE FEATURES IT DESCRIBES ARE NOW GA WITHIN THE SOFTWARE
+
+## Enable DASH, multi-captions and multi-audio tracks, and AI-generated captions support on your Dynamic Media account {#enable-dash}
+
+You can enable support in Dynamic Media for:
+
+* DASH
+* Multi-captions and audio tracks
+* AI-generated captions (Limited Availability)
+
+By creating and submitting an Adobe Customer Support case. 
+
+Enabling any of the above three capabilities, enables all of them. So, if you only want DASH enabled, you are actually enabling all three capabilities listed above.  
+
+| Capability | Description |
+| --- | --- |
+| DASH | DASH (Digital Adaptive Streaming over HTTP) is the international standard for video streaming and is widely adopted across different video viewers. When DASH is enabled on your account, you get the option to choose from either DASH or HLS for adaptive video streaming. Or, you can opt for both with automatic switching between players when **[!UICONTROL auto]** is selected as the playback type in the Viewer preset.<br>Some key benefits from enabling DASH on your account include the following:<ul><li>Package DASH stream video for adaptive bitrate streaming. This method leads to higher efficiency of delivery. Adaptive streaming ensures the best viewing experience for your customers.</li><li>Browser optimized streaming with Dynamic Media players switches between HLS and DASH streaming to ensure the best quality of service. The video player auto-switches to HLS when a Safari browser is used.</li><li>You can configure your preferred streaming method (HLS or DASH) by editing the video viewer preset.</li><li>Optimized video encoding ensures that no additional storage is used while enabling DASH capability. A single set of video encodings is created for both HLS and DASH to optimize video storage costs.</li><li>Helps make video delivery more accessible for your customers.</li><li>Get the streaming URL by way of APIs, too.</li></ul>|
+| Multi-captions and audio tracks | You can benefit from having multiple caption and audio track support automatically enabled. After enablement, all subsequent videos that you upload are processed with a new backend architecture that includes support for adding multiple caption and audio tracks to your videos. |
+| AI-generated captions (Limited Availability) | Create captions for your videos powered by AI. Using AI, it creates the transcript of the video and converts it into captions. Even the timeline is defined, too. |
+
+>[!IMPORTANT]
+>
+>Any videos that you uploaded *before* enabling multiple caption and audio track support on your Dynamic Media account, [must be reprocessed](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets). This video reprocessing step is necessary so that multiple caption and audio track capability is available to them. The video URLs continue to work and play as usual, after reprocessing.
+
+**To enable DASH, multi-captions and multi-audio tracks, and AI-generated captions support on your Dynamic Media account:** 
+
+1. [Use the Admin Console to start the creation of a new support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
+1. To create a support case, follow the instructions while ensuring you provide the following information:
+
+    * Primary contact name, email, phone.
+    * Your Cloud Services environment (program ID and environment ID).
+    * Your Dynamic Media company account name.
+    * Your Dynamic Media region: North America (NA), Asia-Pacific (APAC), or Europe-Middle East-Asia (EMEA).
+    * Specify that you want DASH, multi-captions and multi-audio tracks, and AI-generated captions (Limited Availability) support enabled on your Dynamic Media account, on AEM as a Cloud Service.
+   
+1. Adobe Customer Support adds you to the Customer Wait List based on the order in which requests are submitted.
+1. When Adobe is ready to handle your request, Customer Support contacts you to coordinate and set a target date for enablement.
+1. Adobe Customer Support notifies you after completion.
+1. Now, do one or more of the following:
+
+    * Create your [video viewer preset](/help/assets/dynamic-media/managing-viewer-presets.md#creating-a-new-viewer-preset) as usual.
+    * Create your [video profile](/help/assets/dynamic-media/video-profiles.md) as usual.
+    * [Add multiple captions and audio tracks](#add-msma) to your video. -->
+
+
+<!-- 
+## About multiple caption and audio track support for videos in Dynamic Media{#about-msma}
+
+With multiple caption and audio track capability in Dynamic Media, you can easily add multiple captions and audio tracks to a primary video. This capability means that your videos are accessible to a global audience. You can customize a single, published primary video to a global audience in multiple languages and adhere with accessibility guidelines for different geographical regions. Authors can also manage the captions and audio tracks from a single tab in the user interface.
+
+   ![Captions and audio tracks tab in Dynamic Media along with a table showing uploaded .VTT caption files and uploaded .MP3 audio track files for a video.](/help/assets/dynamic-media/assets/msma-caption-audiotracks-tab2.png)
+
+
+Some of the use cases to consider for adding multiple captions and audio tracks to your primary video include the following:
+
+| Type | Use case | 
+| --- | --- |
+| Captions | Multiple language support<br>Descriptive text for accessibility |
+| Audio tracks | Multiple language support<br>Commentary tracks<br>Descriptive audio |
+
+
+All [video formats supported in Dynamic Media](/help/assets/file-format-support.md) and all Dynamic Media video viewers-except the Dynamic Media Video_360 viewer-are supported for use with multiple captions and audio tracks.
+
+Multi-caption and multi-audio track capability is available for your Dynamic Media account by way of a feature toggle that must be enabled (turned on) by Adobe Customer Support.
+
+### Add multiple captions and audio tracks to your video {#add-msma}
+
+Before you add multiple caption and audio tracks to your video, be sure you already have the following in-place:
+
+* Dynamic Media is set up in an AEM environment.
+* A [Dynamic Media Video profile is applied to the folder where your videos are ingested](/help/assets/dynamic-media/video-profiles.md#applying-a-video-profile-to-folders).
+* [Multi-caption, and multi-audio track is enabled on your Dynamic Media account](/help/assets/dynamic-media/video.md#enable-dash).
+
+Added captions and captions are supported with WebVTT and Adobe VTT formats. And, added audio track files are supported with MP3 format.
+
+>[!IMPORTANT]
+>
+>Any videos that you uploaded before enabling multiple caption and audio track support on your Dynamic Media account, [must be reprocessed](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets). This video reprocessing step is necessary so that multiple caption and audio track capability is available to them. The video URLs continue to work and play as usual, after reprocessing.
+
+**To add multiple captions and audio tracks to your video:**
+
+1. [Upload your primary video to a folder](/help/assets/manage-video-assets.md#upload-and-preview-video-assets) that already has a video profile assigned to it.
+1. Navigate to the uploaded video asset that you want to add multiple caption and audio tracks.
+1. In asset selection mode, either from the List View or the Card View, select the video asset.
+1. On the toolbar, select the Properties icon (a circle with an "i" in it). 
+
+   ![Asset properties button.](/help/assets/dynamic-media/assets/msma-selectedasset-propertiesbutton.png)*Selected video asset in Card View.*
+
+1. On the video's Properties page, select the **[!UICONTROL Captions & Audio Tracks]** tab.
+
+
+   >[!TIP]
+   >If you do not see the [!UICONTROL Captions & Audio Tracks] tab, it means either one of two things:
+   >* The folder in which the selected video resides does not have a video profile assigned to it. In which case, see [Apply a video profile to the folder](/help/assets/dynamic-media/video-profiles.md#applying-video-profiles-to-specific-folders)
+   >* Or, Dynamic Media must reprocess the video. In which case, see [Reprocess Dynamic Media assets in a folder](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
+
+    When you have completed either one of the above tasks, return to these steps.
+
+   ![Asset properties](/help/assets/dynamic-media/assets/msma-audiotracks.png)*Captions and audio tracks tab on the video's Properties page.*
+
+1. (Optional) To add one or more caption files to a video, do the following:
+
+    * Select **[!UICONTROL Upload Captions]**.
+    * Navigate to, and select, one or more `.vtt` (Video Text Tracks) files and open them.
+    * For captions to be visible on the media player, you must add required details (metadata) about each caption file that you uploaded. Select the pencil icon to the right of a caption file name. In the Edit Caption dialog box, enter the following required details about the file, then select **[!UICONTROL Save]**. Repeat this process for each caption file that you uploaded:
+
+
+    | Caption metadata | Description | 
+    | --- | --- | 
+    Filename | The default filename is derived from the original filename. The filename can be changed only while uploading and cannot be changed later. Filename character requirements are the same as for AEM Assets.<br>The same filename cannot be used for additional caption files and audio track files. |
+    | Language | Select the language of the caption. |
+    | Type | Select the type of caption that you are using.<br>**Subtitle** - The caption text displayed with the video that translates or transcribes the dialogue.<br>**Caption** - The caption text includes background noises and speaker identification. It also includes other relevant details alongside the translation or transcription of dialogue. This functionality makes the content more accessible to individuals who are deaf or hard of hearing. |
+    | Label | The text that is displayed for the caption's name in the **[!UICONTROL Select audio or caption]** pop-up list in the media player. The label is what a customer sees that corresponds to a subtitle or caption track. For example, English (CC). |
+
+    You can change or edit caption metadata later, if necessary. When the video is published, these details are reflected on public URLs in published videos.
+
+1. (Optional) To add one or more audio tracks to a video, do the following:
+
+    * Select **[!UICONTROL Upload Audio Tracks]**.
+    * Navigate to, and select, one or more .mp3 files and open them.
+    * To make audio tracks visible in the **[!UICONTROL Select audio or caption]** pop-up list on the media player, add the required details for each audio track file. Ensure you include all necessary information for proper display. Select the pencil icon to the right of an audio track file name. In the Edit Audio Track dialog box, enter the following required details, then select **[!UICONTROL Save]**. Repeat this process for each audio track file that you uploaded.
+
+    | Audio Track metadata | Description |
+    | --- | --- |
+    | Filename | The default filename is derived from the original filename. The filename can be changed only while uploading and cannot be changed later. Filename character requirements are the same as for AEM Assets.<br>The same filename cannot be used for additional audio track files or caption files.| 
+    | Language | Select the language of the audio track. |
+    | Type | Select the type of audio track that you are using.<br>**Original** - The audio track originally attached to the video and represented as `[Original]` in the label with English language selected by default. While **[!UICONTROL Label]** and **[!UICONTROL Language]** can be changed in the **[!UICONTROL Edit Audio Track]** dialog box, it defaults to the original values if the primary video is reprocessed.<br>**Standard** - An add-on audio track for a language other than the original.<br>**Audio description** - An audio track that also includes a descriptive narration of non-verbal actions and gestures in the video, making content more accessible for individuals who are visually impaired. |
+    | Label | The text that is displayed as the audio track's name in the **[!UICONTROL Select audio or caption]** pop-up list in the media player. The label is what a customer sees that corresponds to an audio track. For example, `English [Original]`. The label of audio attached to a video is set to `[Original]` by default. |
+
+    You can change or edit this audio track metadata later, if necessary. When the video is published, these details are reflected on public URLs in published videos.
+
+1. In the upper-right corner of the page, from the **[!UICONTROL Save & Close]** drop-down list, select **[!UICONTROL Save]**. The files are uploaded and metadata processing begins, as seen in the Status column of the interface.
+
+    >[!NOTE]
+    >
+    >Based on the caching settings of your instance, the metadata processing can take several minutes before it is reflected in preview and in published URLs.
+
+1. (Optional) If you selected **[!UICONTROL Save & Close]** in the previous step, instead of selecting **[!UICONTROL Save]**, you can still view the processing status of the uploaded files. See [View the lifecycle status of uploaded caption and audio track files](/help/assets/dynamic-media/video.md#lifecycle-status-video).
+
+1. (Optional) Preview the video before publishing to ensure the captions and audio work as expected. See [Preview a video that has multiple captions and audio tracks](/help/assets/dynamic-media/video.md#preview-video-audio-subtitle).
+
+1. Publish the video. See [Publish assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md). -->
+
 
 
 
