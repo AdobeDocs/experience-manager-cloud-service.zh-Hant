@@ -5,7 +5,7 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: edfec41a9e33fbe818cb19f878ac42d435d62419
+source-git-commit: 896a2927c0f5733ab23ca9f6c9e975f8388daff9
 workflow-type: tm+mt
 source-wordcount: '1419'
 ht-degree: 47%
@@ -46,7 +46,6 @@ Have a look at the February 2025 Release Overview video for a summary of the fea
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
-
 ### AEM Sites中的新功能 {#new-features-sites}
 
 **內容片段自動標籤**
@@ -57,14 +56,13 @@ Have a look at the February 2025 Release Overview video for a summary of the fea
 
 內容片段UUID支援現已正式推出。 新功能不會改變AEM中作業以路徑為基礎的行為（例如移動、重新命名、轉出，路徑會自動調整），但可讓內容片段的外部使用更輕鬆且更穩定，尤其是使用以ByPath查詢直接鎖定個別片段的GraphQL查詢時。 如果片段路徑變更，此類查詢可能會中斷。 使用新的ById查詢型別時，查詢現在會保持穩定，因為路徑這樣做時，片段的UUID不會變更。
 
-內容片段編輯器和GraphQL中支援OpenAPI的**動態媒體**
+**在內容片段編輯器和GraphQL中支援OpenAPI的Dynamic Media**
 
 儲存在與內容片段不同AEM as a Cloud Service程式中的Assets，以及通過新的Dynamic Media （具有OpenAPI功能）啟用的，現在可用於內容片段。 新內容片段編輯器中的影像選擇器現在允許選取「遠端」存放庫作為片段中要參考的影像資產的來源。 在使用AEM GraphQL傳送此類內容片段時，JSON回應現在包含遠端資產(assetId、repositoryId)的必要屬性，讓使用者端應用程式能夠使用OpenAPI URL建立各自的動態媒體以擷取影像。
 
-** Translation HTTP API **
+**翻譯HTTP API**
 
 已處於早期採用者模式一段時間的AEM Translation HTTP REST API現在為GA。 檔案可在[這裡](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/translation/)找到。 此API允許在AEM中自動執行內容翻譯管理流程中的必要步驟。
-
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
