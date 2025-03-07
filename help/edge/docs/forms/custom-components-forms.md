@@ -5,10 +5,11 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 role: Admin, Architect, Developer
-source-git-commit: d71c5d6488935de4a02c8d3828f287542b979d0f
-workflow-type: tm+mt
+exl-id: 77e90657-38db-4a49-9aac-3f3774b62624
+source-git-commit: 62dfa8ad73bf6684bd93f6a26b98b1c193770214
+workflow-type: ht
 source-wordcount: '625'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -57,8 +58,8 @@ AEM Forms 適用的 Edge Delivery Services 讓您可以自訂[原生 HTML 表單
 
 若要新增自訂函數：
 
-1. 導覽至 `[../Form Block/components]`。
-1. 找到名為`range.js`的檔案。 如果不存在，請建立它。
+1. 瀏覽至 `[../Form Block/components]`。
+1. 找到一個名為 `range.js` 的檔案。如果不存在，則建立一個。
 1. 新增以下程式碼行：
 
    ```javascript
@@ -214,7 +215,7 @@ AEM Forms 適用的 Edge Delivery Services 讓您可以自訂[原生 HTML 表單
 
 ### 使用 AEM Sidekick 預覽表單
 
-使用新實作的函式預覽`range`元件的樣式。
+使用新實作的函數預覽您的表單，該函數可為 `range` 元件設定樣式。
 
 ![自訂元件樣式](/help/edge/assets/custom-componet-form.png)
 
@@ -361,7 +362,3 @@ Now, you can see your custom component in the WYSIWYG based authoring:
 ## 另請參閱
 
 {{see-more-forms-eds}}
-
-
-
-
