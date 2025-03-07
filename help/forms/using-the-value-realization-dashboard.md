@@ -6,7 +6,7 @@ level: Intermediate
 feature: Adaptive Forms, Foundation Components, Core Components
 hide: true
 hidefromtoc: true
-source-git-commit: 08db35af78d46db42e6e2b373f7278753529c37e
+source-git-commit: 09d383638d6caba596d22a7c6b544768de5245a0
 workflow-type: tm+mt
 source-wordcount: '873'
 ht-degree: 1%
@@ -29,7 +29,7 @@ ht-degree: 1%
 若要存取Forms使用分析控制面板：
 
 1. 導覽至&#x200B;**Forms** > **Forms和檔案**
-1. 按一下&#x200B;**前瞻分析儀表板**。 圖示板會在新視窗中開啟。
+1. 按一下&#x200B;**產品儀表板**。 圖示板會在新視窗中開啟。
 
    ![值實現儀表板](/help/forms/assets/forms-usage-insights.png)
 

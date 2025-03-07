@@ -6,9 +6,9 @@ role: Admin, Developer, Leader, User
 hide: true
 hidefromtoc: true
 exl-id: 9405ebd4-ae40-4edd-8f74-58eb421ab1b9
-source-git-commit: 08db35af78d46db42e6e2b373f7278753529c37e
+source-git-commit: 09d383638d6caba596d22a7c6b544768de5245a0
 workflow-type: tm+mt
-source-wordcount: '529'
+source-wordcount: '511'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,6 @@ ht-degree: 0%
 * **表單提交次數**：檢視表格完成頻率的趨勢。
 * **檔案轉譯**：追蹤一段時間內轉譯的檔案數目。
 * **Forms已建立和發佈**：監視建置和部署新表單的速率。
-* **表單建立與發佈時間**：分析建立與發佈表單的平均時間，以找出需要改善的領域。
 
 ### 片段用途
 
