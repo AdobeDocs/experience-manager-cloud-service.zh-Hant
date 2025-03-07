@@ -1,14 +1,14 @@
 ---
-title: AEM Forms價值實現儀表板
-description: 使用我們的直覺式追蹤控制面板，在AEM Forms執行個體上輕鬆監控表單提交。
+title: AEM Forms價值實現控制面板
+description: 使用直覺式追蹤儀表板，在AEM Forms執行個體上輕鬆監控表單提交。
 feature: Adaptive Forms, Foundation Components, Core Components
 role: Admin, Developer, Leader, User
 hide: true
 hidefromtoc: true
 exl-id: 9405ebd4-ae40-4edd-8f74-58eb421ab1b9
-source-git-commit: ef6c113721ca6f84374ecd01df790a0b37d00192
+source-git-commit: 08db35af78d46db42e6e2b373f7278753529c37e
 workflow-type: tm+mt
-source-wordcount: '526'
+source-wordcount: '529'
 ht-degree: 0%
 
 ---
@@ -23,9 +23,7 @@ ht-degree: 0%
 
 歡迎光臨一站式商店，瞭解表單帶來的價值！ 此儀表板可為您提供寶貴的見解，以最佳化您的表單、簡化工作流程，並最終更快地實現您的目標。
 
-本文提供「價值實現儀表板」及其優勢的概念概觀。 如需詳細的使用指示和量度解譯，請參閱[使用值實現儀表板](/help/forms/using-the-value-realization-dashboard.md)解譯表單使用方式深入分析。
-
-
+本文提供「價值實現儀表板」及其優勢的概念概觀。 如需詳細的使用指示與量度解釋，請參閱[使用值實現儀表板來分析表單與檔案使用趨勢](/help/forms/using-the-value-realization-dashboard.md)。
 
 
 ## 儀表板上的內容為何？ {#content-of-dashboard}
@@ -50,7 +48,7 @@ ht-degree: 0%
 
 此儀表板可讓您針對表單做出資料導向式決策。 方法如下：
 
-* **識別常用的Forms**：高提交率表示有價值的表單。 分析這些專案，以找出在其他專案中複製的最佳實務。
+* **識別常用的Forms**：高提交率表示有價值的表單。 分析這些表單，以便在其他表單中複製最佳實務。
 * **最佳化表單建立**：識別瓶頸以減少建立時間。 探索預先建立的範本或簡化工作流程。
 * **提升片段重複使用**：鼓勵共同作業和可重複使用片段的探索性。 井然有序的片段庫可以大幅提升效率。
 
