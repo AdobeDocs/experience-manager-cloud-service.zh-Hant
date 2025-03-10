@@ -4,10 +4,10 @@ description: 了解如何使用 Edge Delivery Services 傳遞您的 Cloud Manage
 exl-id: f33bd6f0-62fc-4ecc-b8d2-65d1f1c44d82
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
-source-wordcount: '766'
-ht-degree: 100%
+source-git-commit: 086aaf323291279d0782c71982baa1a5867784a1
+workflow-type: tm+mt
+source-wordcount: '812'
+ht-degree: 91%
 
 ---
 
@@ -47,13 +47,14 @@ AEM as a Cloud Service 中的 Cloud Manager 可讓您為專案啟用 Edge Delive
 
 ## 關於將 Edge Delivery Services 新增至生產程式或沙箱程式
 
-根據您開始專案的方式，可以透過多種不同的方法新增 Edge Delivery Services。
+Edge Delivery Services的新增方式有很多種，視您開始專案的方式或您想要建立網站的時間而定。
 
 | 使用案例 | 描述 |
 | --- | --- |
 | 我想將 Edge Delivery Services 新增到新的生產程式中。 | 請參閱[建立生產程式](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)。<br>在精靈中，於「**解決方案與附加元件**」索引標籤下方，選取「**Edge Delivery Services**」。 |
 | 我想將 Edge Delivery Services 新增到現有的生產程式中。 | 請參閱[編輯程式](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)。<br>在「**編輯程式**」對話框中，於「**解決方案與附加元件**」索引標籤下方，選取「**Edge Delivery Services**」。 |
 | 我想要新增 Edge Delivery 網站至 Cloud Manager | 請參閱[新增 Edge Delivery 網站](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md)。 |
+| 我要立即建立Edge Delivery網站 | 請參閱[按一下按鈕即可在Cloud Manager中快速建立Edge Delivery網站](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md)。 |
 | 我想將 Edge Delivery Services 新增到新的或現有的沙箱程式中。 | 請參閱[建立沙箱程式](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md)。<br>建立沙箱程式時，預設會將 Edge Delivery Services 新增至該程式；您不需要選取它。<br>在 Edge Delivery 全面推出之前，現有的沙箱程式會自動繼承 Edge Delivery Services。 |
 
 >[!NOTE]
@@ -75,7 +76,7 @@ Cloud Manager 中的 **Edge Delivery 待辦事項清單**&#x200B;是上線任務
 | --- | --- | --- |
 | 1 | 加入生產共同作業管道 | 按一下「**立即提交請求**」，向 Adobe 提交為貴公司建立管道的請求。如果管道已存在，會將您轉至貴公司的管道。 |
 | 2 | 完成先決條件 | 請參閱「[檢視快速入門教學課程](https://www.aem.live/developer/tutorial)」。 |
-| 3 | 新增 Edge Delivery 網站 | 請參閱[新增 Edge Delivery 網站](#eds-add-site)。 |
+| 3 | 新增Edge Delivery網站或立即<br>建立網站 | 請參閱[新增 Edge Delivery 網站](#eds-add-site)。<br>請參閱[在Cloud Manager中建立Edge Delivery網站](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md)。 |
 | 4 | 新增網域 | 請參閱[新增自訂網域名稱](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)。 |
 | 5 | 新增 SSL 憑證 | 請參閱[新增 SSL 憑證](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)。 |
 | 6 | 設定 Edge Delivery 網站的內容傳遞網路 | 請參閱[新增內容傳遞網路設定](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)。 |
