@@ -1,19 +1,19 @@
 ---
 title: 在Cloud Manager — 有限測試版中新增外部存放庫
-description: 了解如何將外部存放庫新增至 Cloud Manager。Cloud Manager 支援與 GitHub、GitLab 和 Bitbucket 存放庫整合。
+description: 了解如何將外部存放庫新增至 Cloud Manager。Cloud Manager支援與GitHub Enterprise Server、GitLab和Bitbucket存放庫整合。
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
-source-git-commit: 5e2db30d9a505000881a0781dd5c4c2412a17ca8
+source-git-commit: 7ce39020870943243e2d48aa66370f2cca9c2ac0
 workflow-type: tm+mt
-source-wordcount: '1614'
-ht-degree: 40%
+source-wordcount: '1618'
+ht-degree: 37%
 
 ---
 
 # 在Cloud Manager — 有限測試版中新增外部存放庫 {#external-repositories}
 
-了解如何將外部存放庫新增至 Cloud Manager。Cloud Manager 支援與 GitHub、GitLab 和 Bitbucket 存放庫整合。
+了解如何將外部存放庫新增至 Cloud Manager。Cloud Manager支援與GitHub Enterprise Server、GitLab和Bitbucket存放庫整合。
 
 >[!NOTE]
 >
@@ -64,9 +64,9 @@ ht-degree: 40%
    | 權杖類型 | 說明 |
    | --- | --- |
    | **使用現有的存取權杖** | 如果您已為組織提供存放庫存取權杖，且有權存取多個存放庫，您可以選取現有的權杖。使用&#x200B;**權杖名稱**&#x200B;下拉清單，選取想要套用至存放庫的權杖。否則，請新增新的存取權杖。 |
-   | **新增新的存取權杖** | **存放庫類型：GitHub**<br>• 在&#x200B;**權杖名稱**&#x200B;文字欄位，輸入您建立的存取權杖名稱。<br>• 依照 [GitHub 文件](https://docs.github.com/en/enterprise-server@3.14/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens)中的指示，建立個人存取權杖。<br>·如需必要的許可權，請參閱[為GitHub建立新的PAT](https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-venders/create-new-github-pat)。<br>• 在&#x200B;**存取權杖**&#x200B;欄位，貼上您所建立的權杖。 |
-   |  | **存放庫類型：GitLab**<br>• 在&#x200B;**權杖名稱**&#x200B;文字欄位，輸入您建立的存取權杖名稱。<br>• 依照 [GitLab 文件](https://docs.gitlab.com/user/profile/personal_access_tokens/)中的指示，建立個人存取權杖。<br>·如需必要的許可權，請參閱[為GitLab建立新的PAT](https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/create-new-gitlab-pat)。<br>• 在&#x200B;**存取權杖**&#x200B;欄位，貼上您所建立的權杖。 |
-   |  | **存放庫類型：Bitbucket**<br>• 在&#x200B;**權杖名稱**&#x200B;文字欄位，輸入您建立的存取權杖名稱。<br>• 使用 [Bitbucket 文件](https://support.atlassian.com/bitbucket-cloud/docs/create-a-repository-access-token/)建立存放庫存取權杖。<br>·如需必要的許可權，請參閱[為Bitbucket建立新的PAT](https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/create-new-bitbucket-pat)。 |
+   | **新增新的存取權杖** | **存放庫類型：GitHub**<br>• 在&#x200B;**權杖名稱**&#x200B;文字欄位，輸入您建立的存取權杖名稱。<br>• 依照 [GitHub 文件](https://docs.github.com/en/enterprise-server@3.14/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens)中的指示，建立個人存取權杖。<br>·如需必要的許可權，請參閱下列資訊： ![為GitHub建立新的PAT](/help/implementing/cloud-manager/managing-code/assets/webhook-github-enterprise-server.png)<br>·在&#x200B;**存取Token**&#x200B;欄位中，貼上您剛才建立的權杖。 |
+   |  | **存放庫類型：GitLab**<br>• 在&#x200B;**權杖名稱**&#x200B;文字欄位，輸入您建立的存取權杖名稱。<br>• 依照 [GitLab 文件](https://docs.gitlab.com/user/profile/personal_access_tokens/)中的指示，建立個人存取權杖。<br>·如需必要的許可權，請參閱下列資訊： ![為GitLab建立新的PAT](/help/implementing/cloud-manager/managing-code/assets/webhook-gitlab.png)<br>·在&#x200B;**存取權杖**&#x200B;欄位中，貼上您剛才建立的權杖。 |
+   |  | **存放庫類型：Bitbucket**<br>• 在&#x200B;**權杖名稱**&#x200B;文字欄位，輸入您建立的存取權杖名稱。<br>• 使用 [Bitbucket 文件](https://support.atlassian.com/bitbucket-cloud/docs/create-a-repository-access-token/)建立存放庫存取權杖。<br>·如需必要的許可權，請參閱下列資訊![為Bitbucket建立新的PAT](/help/implementing/cloud-manager/managing-code/assets/webhook-bitbucket.png)。 |
 
    >[!NOTE]
    >
