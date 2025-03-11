@@ -4,10 +4,10 @@ description: 了解如何將外部存放庫新增至 Cloud Manager。Cloud Manag
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
-source-git-commit: 7ce39020870943243e2d48aa66370f2cca9c2ac0
+source-git-commit: bfa059ed4e3f04ae6ee1e07910edc62635b03e5a
 workflow-type: tm+mt
-source-wordcount: '1618'
-ht-degree: 37%
+source-wordcount: '1597'
+ht-degree: 38%
 
 ---
 
@@ -136,6 +136,9 @@ Cloud Manager可讓您為已新增的外部Git存放庫設定webhook。 請參�
 將密碼貼入純文字檔。 您的Git廠商Webhook設定需要複製的密碼。
 1. 按一下&#x200B;**關閉**。
 1. 導覽至您的Git廠商解決方案（GitHub Enterprise、GitLab或Bitbucket）。
+
+   在[新增外部存放庫](#add-ext-repo)中可取得webhook組態的所有詳細資訊以及每個廠商所需的事件。 在步驟8下，檢視表格。
+
 1. 找到解決方案的&#x200B;**Webhook**&#x200B;設定區段。
 1. 將您先前複製的Webhook URL貼到URL文字欄位中。
    1. 將Webhook URL中的`api_key`查詢引數取代為您自己的實際API金鑰。
@@ -145,11 +148,6 @@ Cloud Manager可讓您為已新增的外部Git存放庫設定webhook。 請參�
 1. 將您先前複製的Webhook密碼貼到&#x200B;**密碼** （或&#x200B;**密碼金鑰**&#x200B;或&#x200B;**密碼權杖**）文字欄位中。
 1. 設定webhook以傳送Cloud Manager預期的適當事件。
 
-   有關webhook設定的所有詳細資料以及每個廠商所需的事件可在以下網址取得：
-
-   * [設定GitHub Enterprise Server的Webhook](https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/create-new-github-pat？id=webhook-events)。
-   * [設定GitLab的Webhook](https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/create-new-gitlab-pat？id=webhook-events)。
-   * [設定Bitbucket的Webhook](https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/create-new-bitbucket-pat？id=webhook-events)。
 
 ### 使用Webhook驗證提取請求
 
