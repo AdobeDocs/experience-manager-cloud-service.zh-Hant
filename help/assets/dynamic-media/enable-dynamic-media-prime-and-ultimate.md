@@ -4,7 +4,7 @@ description: 瞭解如何啟用 [!DNL Dynamic Media] Prime和Ultimate方案。
 feature: Asset Management
 role: User, Admin
 exl-id: 0ee161f5-bf44-41f1-928e-c07574fd43cc
-source-git-commit: e52e38eb5313f265d7e0765ea5b788b648d9710e
+source-git-commit: 42c90ae69af31b1b54f5b4ed01100df0cbe5dad2
 workflow-type: tm+mt
 source-wordcount: '1074'
 ht-degree: 2%
@@ -65,7 +65,7 @@ ht-degree: 2%
    1. **[!UICONTROL 環境階段]**： **[!UICONTROL 執行中]**
    1. ![DM已啟用](/help/assets/assets/Images_icon.svg)**[!UICONTROL Dynamic Media ]**：**[!UICONTROL  OpenAPI功能已啟用&#x200B;]**
 
-      ![啟用成功](/help/assets/assets/activation-successful.png){width="700" align="center"}
+      ![啟用成功](/help/assets/assets/activation-successful.png){width="700" align="left"}
 
 #### 重試啟動 {#retry-activation}
 
@@ -74,7 +74,7 @@ ht-degree: 2%
 * **[!UICONTROL 環境階段]**： **[!UICONTROL DM with OpenAPI失敗]**
 * ![DM已啟用](/help/assets/assets/Images_icon.svg)**[!UICONTROL Dynamic Media ]**：**[!UICONTROL &#x200B;無法啟動OpenAPI功能&#x200B;]**
 
-  ![重試啟動](/help/assets/assets/retry-dm-openapi-failed-activation.png){width="700" align="center"}
+  ![重試啟動](/help/assets/assets/retry-dm-openapi-failed-activation.png){width="700" align="left"}
 
 選取&#x200B;**[!UICONTROL 按一下以重試]**&#x200B;以重新啟動啟動。
 
@@ -109,7 +109,7 @@ ht-degree: 2%
 
 1. 選取&#x200B;**[!UICONTROL Dynamic Media]**&#x200B;解決方案，然後按一下&#x200B;**[!UICONTROL 繼續]**，將&#x200B;**[!UICONTROL Dynamic Media]**&#x200B;解決方案新增至您的程式。 此動作會重新啟動您的程式中的所有現有環境，並將[!DNL Dynamic Media]解決方案新增到其中。 此外，您在程式下建立的任何新環境都會自動取得[!DNL Dynamic Media]。
 
-   ![已設定用於生產](/help/assets/assets/set-up-for-prod.png){width="500" align="center"}
+   ![已設定用於生產](/help/assets/assets/set-up-for-prod.png){width="500" align="left"}
 
 請參閱[啟動 [!DNL Dynamic Media with OpenAPI]](#activate-dynamic-media-with-openapi)以在您的環境中開始使用[!DNL Dynamic Media]與OpenAPI功能的功能。
 
@@ -123,7 +123,7 @@ ht-degree: 2%
 
 1. [存取Cloud Manager](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager)。
 
-1. 您組織中的[!DNL Dynamic Media with OpenAPI]積分。
+1. 您有[!DNL Dynamic Media] Ultimate授權。
 
 #### 在您的IMS組織中建立並列出[!DNL Dynamic Media]公司 {#create-and-list-dynamic-media-companies-in-your-ims-organisation}
 
@@ -135,7 +135,7 @@ ht-degree: 2%
 
 1. 指定唯一的[!DNL Dynamic Media]公司名稱、選取公司地區並新增以逗號分隔的公司管理員電子郵件ID清單。
 
-   ![建立Dynamic Media公司](/help/assets/assets/create-dynamic-media-company.png){width="500" align="center"}
+   ![建立Dynamic Media公司](/help/assets/assets/create-dynamic-media-company.png){width="500" align="left"}
 
 1. 按一下[建立]****&#x200B;開始建立您的公司。 此動作將新資料列新增至&#x200B;**[!UICONTROL [!DNL Dynamic Media]公司]**&#x200B;區段，並顯示&#x200B;**[!UICONTROL 正在設定]**&#x200B;為公司的&#x200B;**[!UICONTROL 狀態]**。
 
@@ -155,11 +155,11 @@ ht-degree: 2%
 
 1. 如果&#x200B;**[!UICONTROL 狀態]**&#x200B;為「擱置中」，則請向客戶支援團隊提出問題以尋求解決方案。
 
-   ![擱置狀態](/help/assets/assets/company-creation-pending-status.png){width="350" align="center"}
+   ![擱置狀態](/help/assets/assets/company-creation-pending-status.png){width="350" align="left"}
 
 1. 如果&#x200B;**[!UICONTROL 狀態]**&#x200B;失敗，則根據失敗原因重試。
 
-   ![失敗狀態](/help/assets/assets/company-creation-failure-status.png){width="380" align="center"}
+   ![失敗狀態](/help/assets/assets/company-creation-failure-status.png){width="380" align="left"}
 
 ### 可選：在傳遞層級中設定自訂網域 {#configure-custom-domain-in-delivery-tier}
 
@@ -196,7 +196,7 @@ ht-degree: 2%
 
 1. 執行&#x200B;**[!UICONTROL 設定CNAME]**&#x200B;步驟以對DNS服務提供者之DNS記錄中的[cdn.adobeaemcloud.com](http://cdn.adobeaemcloud.com/) （CNAME記錄）進行對應。 此對應程式可確保將從自訂網域收到的請求重新導向至Adobe的CDN。
 
-   ![上線整備對話方塊](/help/assets/assets/go-live-readiness-dialogbox.png){width="500" align="center"}
+   ![上線整備對話方塊](/help/assets/assets/go-live-readiness-dialogbox.png){width="500" align="left"}
 
 1. 按一下&#x200B;**[!UICONTROL 確定]**，**[!UICONTROL 狀態]**&#x200B;更新為&#x200B;**[!UICONTROL 已驗證]**。 自訂網域已準備好用於傳送URL。
 
@@ -267,7 +267,7 @@ See [Search Assets API](https://experienceleague.adobe.com/en/docs/experience-ma
 
 ### Access Delivery tier backed Asset Selector {#access-delivery-tier-backed-asset-selector}
 
-TBD: Wiki in progress.
+TBD: Wiki in progress..
 -->
 
 ## 啟用[!DNL Dynamic Media] Prime {#enable-dynamic-media-prime}
