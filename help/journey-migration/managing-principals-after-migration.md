@@ -2,10 +2,10 @@
 title: 遷移後管理主體
 description: 了解如何在 IMS 和 AEM 中設定使用者和群組
 exl-id: 46c4abfb-7e28-4f18-a6d4-f729dd42ea7b
-source-git-commit: a5bec2c05b46f8db55762b7ee1f346f3bb099d24
-workflow-type: ht
-source-wordcount: '773'
-ht-degree: 100%
+source-git-commit: 1c638f3d1cca4f97eb1f760054febd405b5714f5
+workflow-type: tm+mt
+source-wordcount: '830'
+ht-degree: 79%
 
 ---
 
@@ -18,6 +18,10 @@ ht-degree: 100%
 
 本文件說明客戶若希望其使用者和群組能搭配其 AEM as a Cloud Service 環境，則在 IMS 和 AEM 中設定時應採取的高層級步驟。
 
+如需有關群組移轉的資訊，以及每次內嵌時可用的主體移轉報告，請參閱[群組移轉](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/group-migration.md)。
+
+如需在Admin Console中使用大量群組和使用者檔案的指南，請參閱[使用CTT之後將主體大量上傳至IMS](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/bulk-principal-uploading.md)。
+
 ## 管理主體 {#managing-principals}
 
 對於 AEM as a Cloud Service，必須主要使用 Admin Console 來管理使用者和群組。考慮進行遷移時，其中的一些任務可以在內容遷移實作之前執行。基本上，在以下主要任務群組中
@@ -26,7 +30,7 @@ ht-degree: 100%
 * 在 IMS 中將使用者指派至群組
 * 將 IMS 群組指派至 AEM 群組 (如有必要)
 
-前兩項可以在內容遷移之前或之後進行。這些步驟僅會影響 IMS 中的使用者和群組，可能包含與外部 IDP (例如 Active Directory 或 LDAP) 的整合。關於這些步驟的說明，請參閱[透過 Admin Console 管理 IMS 中的主體](/help/journey-migration/managing-principals.md)。
+前兩個可能會在內容移轉之前或之後執行。  這些步驟僅會影響 IMS 中的使用者和群組，可能包含與外部 IDP (例如 Active Directory 或 LDAP) 的整合。關於這些步驟的說明，請參閱[透過 Admin Console 管理 IMS 中的主體](/help/journey-migration/managing-principals.md)。
 
 一旦內容遷移到 AEM as a Cloud Service 環境，即可執行第三步驟。
 
@@ -36,13 +40,13 @@ ht-degree: 100%
 
 遷移的群組 (非透過資產集合建立的群組；請參閱下方的「集合」區段) 會設定為 IMS 群組。這表示在 IMS 中建立的任何同名群組 (例如透過 Admin Console) 都會連結到 AEM 中的群組，而且屬於 IMS 群組成員的使用者也將成為 AEM 中群組的成員。為了達成這項連結，也必須先在 IMS 中建立群組。使用 Admin Console 在 AEM 執行個體中單獨或大量建立群組，如[透過 Admin Console 管理 IMS 中的主體](/help/journey-migration/managing-principals.md)內容所述。
 
-使用 AEM 安全性使用者介面將 IMS 群組指派到本機 AEM 群組。請參閱[建立和設定群組](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-65/content/forms/administrator-help/setup-organize-users/creating-configuring-groups#edit-a-group)。雖然本文件內容是針對 AEM 6.5，但也適用於在 AEM as a Cloud Service 中新增群組至其他群組。
+使用AEM安全性UI指派IMS群組至本機AEM群組。 若要這麼做，請前往AEM中的「工具」頁面，按一下「安全性」，然後選擇「群組」。
 
 ### IMS 使用者
 
 由於使用者未遷移，因此必須在 IMS 中建立使用者，才能在 AEM 中加以使用。有數種方法可以達到此目的，但重要的是，所建立的使用者應指派到正確的 IMS 群組，使用者才能對他們在先前 AEM 系統中擁有的內容具有相同的存取權。可用於此目的的工具之一是 Admin Console 中的大量上傳功能；使用大量上傳工具可上傳使用者及其必須隸屬的群組。執行此操作之前，必須先在 IMS 中建立群組，如上所述。
 
-若要了解每位使用者應屬於哪些群組，您可以運用使用者報告 (請參閱[群組遷移](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/group-migration.md))。此報告列出了每位使用者應隸屬的群組，且此清單可以包含在 Admin Console 大量上傳功能的輸入檔案中。
+若要了解每位使用者應屬於哪些群組，您可以運用使用者報告 (請參閱[群組遷移](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/group-migration.md))。此報表會列出每位使用者應成為其成員的群組，而此清單通常會包含在大量使用者輸入檔案中，以搭配Admin Console大量上傳功能使用。
 
 ### 集合
 
@@ -55,4 +59,4 @@ ht-degree: 100%
 * 將使用者新增 (或大量上傳) 到 Admin Console 中的新群組。
 * 使用者首次登入時，便會在 AEM 中建立他們的 IMS 使用者，然後應該就能夠存取新群組，進而存取原始集合群組。
 
-注意：若要大量指派使用者，必須使用上述步驟在 IMS 中建立使用者；已存在於 IMS 中的使用者無法透過大量上傳再次建立。
+注意：若要大量指派使用者，必須使用上述步驟在IMS中建立使用者；已存在於IMS中的使用者無法透過大量上傳再次建立，不過大量編輯器可用於進行這些型別的變更(請參閱&#x200B;**編輯使用者詳細資訊**&#x200B;下的[Admin Console大量使用者上傳](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html))。

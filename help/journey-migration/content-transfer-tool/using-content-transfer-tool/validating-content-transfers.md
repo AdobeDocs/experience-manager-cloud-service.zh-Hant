@@ -4,9 +4,9 @@ description: 使用內容轉移工具來驗證內容轉移
 exl-id: a12059c3-c15a-4b6d-b2f4-df128ed0eea5
 feature: Migration
 role: Admin
-source-git-commit: e1089810b3bf3db0cc440bb397e5549ade6eac37
+source-git-commit: 9b05ed38e8eb337b3a07ee2051c6a0d530088af2
 workflow-type: tm+mt
-source-wordcount: '1189'
+source-wordcount: '1220'
 ht-degree: 1%
 
 ---
@@ -145,13 +145,14 @@ Migration validation took 0 minutes
 
 ![影像](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-principal-action.png)
 
-您會看到包含摘要資訊的對話方塊。 使用說明圖示可讀取更完整的說明。 按一下「**下載報表**」按鈕即可下載完整的逗號分隔報表(CSV)。  也請注意，此報表結尾是使用者報表，可用於移轉後使用者管理。
+您會看到包含摘要資訊的對話方塊。 使用說明圖示可讀取更完整的說明。 若要下載完整的逗號分隔(CSV)主體移轉報告，請從&#x200B;**下載檔案……**&#x200B;下的下拉式清單中選取&#x200B;**主體移轉報告**，然後按一下&#x200B;**下載**&#x200B;按鈕。 也請注意，此報表結尾是使用者報表，可用於移轉後使用者管理。
 
 ![影像](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-principal-dialog.png)
 
 「主要移轉」報告會報告：
 
 * 每個群組都已移轉，且是第一個觸發該群組移轉的內容路徑；群組也可能位於其他路徑上，但只報告為指定群組找到的第一個路徑。 它也會報告是否在ACL或CUG原則中找到它。
+* 每個作為本機群組移轉的群組都會在群組行上標示「本機」一詞。
 * 每個群組都沒有移轉，以及它沒有移轉的原因。  這通常是因為下列其中一個原因：
    * 這是一個內建群組
    * 它已經在目標系統上

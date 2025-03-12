@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的運作方式以及該軟體可以為您做哪些事。
 breadcrumb-title: 使用手冊
 user-guide-title: 'AEM as a Cloud Service '
-source-git-commit: 6a907b3d3241010e152669a70dec405215fbc6b1
+source-git-commit: 9b05ed38e8eb337b3a07ee2051c6a0d530088af2
 workflow-type: tm+mt
-source-wordcount: '6239'
-ht-degree: 95%
+source-wordcount: '6247'
+ht-degree: 94%
 
 ---
 
@@ -320,6 +320,7 @@ ht-degree: 95%
          + [刪除移轉集](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/deleting-migrationset.md)
          + [在發佈執行個體上執行內容轉移工具](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/running-content-transfer-tool-publish-instance.md)
          + [移轉後管理主體](/help/journey-migration/managing-principals-after-migration.md)
+         + [移轉後大量上傳主體至IMS](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/bulk-principal-uploading.md)
          + [內容轉移工具疑難排解](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/troubleshooting-content-transfer-tool.md)
          + 舊版使用者對應工具 (舊版){#legacy-user-mapping-tool}
             + [概觀](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/overview-user-mapping-tool-legacy.md)
