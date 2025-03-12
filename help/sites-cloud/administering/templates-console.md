@@ -5,9 +5,9 @@ solution: Experience Manager Sites
 feature: Administering
 role: User
 exl-id: d11d7176-dd35-4855-9dcd-dd40ff096510
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 7201cc90c0f698454d8ccda0eb83e433a330c1eb
 workflow-type: tm+mt
-source-wordcount: '863'
+source-wordcount: '857'
 ht-degree: 2%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 2%
 
 ## 概觀 {#overview}
 
-建立頁面時，您需要選取範本。 頁面範本會用作新頁面的基礎。 [AEM可編輯的範本](/help/implementing/developing/components/templates.md)可以定義結果頁面的結構、任何初始內容，以及可以使用的元件（設計屬性）。
+建立頁面時，您需要選取範本。 頁面範本會用作新頁面的基礎。 [AEM的可編輯範本](/help/implementing/developing/components/templates.md)可以定義結果頁面的結構、任何初始內容以及可以使用的元件（設計屬性）。
 
 內容作者在網站主控台[建立新頁面時，](/help/sites-cloud/authoring/sites-console/creating-pages.md)會看到一系列可用的範本。 範本可用來建立可編輯的頁面：
 
@@ -76,7 +76,7 @@ ht-degree: 2%
 您可以編輯範本](/help/sites-cloud/authoring/page-editor/templates.md)的[屬性，其方式與您[編輯頁面屬性](/help/sites-cloud/authoring/sites-console/page-properties.md)的方式非常相同。範本屬性包括：
 
 * 範本標題
-* 說明
+* 描述
 * 影像
 
 >[!TIP]
@@ -95,12 +95,12 @@ ht-degree: 2%
 
 必須先啟用範本，內容作者才能使用範本建立頁面。 如果不再需要範本，則可停用該範本，使其不再顯示在頁面建立精靈中。
 
-* 選取範本，然後按一下或點選「**停用**」以停用範本。
-* 選取範本，然後按一下或點選「**啟用**」以啟用範本。
+* 選取範本，然後按一下[停用]以停用範本。****
+* 選取範本，然後按一下[啟用] ****&#x200B;以啟用範本。
 
 ## 發佈 {#publish}
 
-使用範本編輯器建立的範本只能在發佈後使用。 選取範本，然後按一下或點選「**Publish**」以進行發佈。
+使用範本編輯器建立的範本只能在發佈後使用。 選取範本，然後按一下&#x200B;**發佈**&#x200B;以進行發佈。
 
 使用通用編輯器建立的範本不需要發佈即可使用。
 
@@ -117,7 +117,7 @@ ht-degree: 2%
 * [編輯範本](#edit)以視需要調整。
 * [使用屬性視窗](#properties)更新範本標題。
 * [啟用範本](#enable-disable)，以便用來建立頁面。
-* 如果需要，[Publish範本](#publish)。
+* [視需要發佈範本](#publish)。
 
 >[!TIP]
 >
