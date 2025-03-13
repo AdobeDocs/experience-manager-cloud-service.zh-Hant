@@ -5,9 +5,9 @@ exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 41a67b0747ed665291631de4faa7fb7bb50aa9b9
+source-git-commit: 5d35610b204cc2e06fefa93e048c16940cf1c47c
 workflow-type: tm+mt
-source-wordcount: '846'
+source-wordcount: '849'
 ht-degree: 22%
 
 ---
@@ -37,7 +37,7 @@ ht-degree: 22%
 
 >[!NOTE]
 >
->如果您正在搭配網域使用&#x200B;*Adobe受管理(DV) SSL憑證*，當您在[新增自訂網域名稱](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)時，Cloud Manager會在您按一下[驗證網域]對話方塊中的&#x200B;**驗證**&#x200B;時自動觸發驗證。
+>如果您正在搭配網域使用&#x200B;*Adobe Managed (DV) SSL憑證*，當您在[新增自訂網域名稱](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)時，Cloud Manager會在您按一下[驗證網域]對話方塊中的&#x200B;**驗證**&#x200B;時自動觸發驗證。
 >
 >如果您打算使用&#x200B;**客戶管理的(OV/EV) SSL憑證**，請在&#x200B;*之後*&#x200B;驗證您的網域[新增OV/EV SSL憑證](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)。
 
@@ -50,7 +50,7 @@ Cloud Manager透過客戶管理的(OV/EV) SSL憑證驗證網域所有權。 完�
 | --- | --- |
 | 網域驗證失敗 | 客戶管理的EV/OV憑證遺失或偵測到錯誤。<br>請依照狀態訊息中提供的指示解決問題。 準備就緒後，必須選擇狀態旁邊的&#x200B;**再次驗證**&#x200B;圖示。 |
 | 正在進行網域驗證 | 驗證進行中。<br>在您選取狀態旁邊的&#x200B;**再次驗證**&#x200B;圖示後，通常會看到此狀態。 由於 DNS 傳播延遲，DNS 驗證可能需要幾個小時才能完成。 |
-| 已驗證 — 部署失敗 | EV/OV憑證驗證成功，但CDN部署失敗。<br>若是這種情況，請聯絡您的Adobe代表。 |
+| 已驗證 — 部署失敗 | EV/OV憑證驗證成功，但CDN部署失敗。<br>如果遇到這種情況，請聯絡您的Adobe代表。 |
 | 網域已驗證和部署 | 此狀態代表您的自訂網域名稱隨時可使用。<br>此時，您的自訂網域名稱已準備好進行測試，並指向Cloud Manager網域名稱。 請參閱[新增自訂網域名稱](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)以瞭解更多資訊。 |
 | 刪除中 | 正在刪除自訂網域名稱。 |
 | 無法刪除 | 刪除自訂網域名稱失敗，必須重試。<br>請參閱[管理自訂網域名稱](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md)以瞭解更多資訊。 |
@@ -76,7 +76,7 @@ Fastly會將網域鎖定到首先註冊它的帳戶，而其他帳戶必須請�
 
 * 使用此選項可將頂點網域和所有子網域連結到 AEM as a Cloud Service Fastly 帳戶。如需詳細資訊，請參閱[在 Fastly 文件中使用網域](https://docs.fastly.com/en/guides/working-with-domains)。
 
-* 如果您的Apex網域有AEM as a Cloud Service和非AEM網站的多個子網域需要連結到不同的Fastly帳戶，請嘗試在Cloud Manager中安裝網域。 此過程有助於管理不同Fastly帳戶之間的子網域連線。 如果網域安裝失敗，請建立Fastly的客戶支援票證，讓Adobe可以代表您跟進Fastly。
+* 如果您的Apex網域有多個子網域供AEM as a Cloud Service和非AEM網站使用，需要連結到不同的Fastly帳戶，請嘗試在Cloud Manager中安裝網域。 此過程有助於管理不同Fastly帳戶之間的子網域連線。 如果網域安裝失敗，請建立Fastly的客戶支援票證，讓Adobe可以代表您跟進Fastly。
 
 >[!TIP]
 >
@@ -88,7 +88,7 @@ Fastly會將網域鎖定到首先註冊它的帳戶，而其他帳戶必須請�
 
 ## 自訂網域名稱的預先存在CDN設定 {#pre-existing-cdn}
 
-如果您已經有自訂網域名稱的CDN設定，則會在&#x200B;**自訂網域名稱**&#x200B;和&#x200B;**環境**&#x200B;頁面上顯示資訊訊息。 它鼓勵您透過UI新增這些設定，以便在Cloud Manager中管理和檢視這些設定。
+如果您已經有自訂網域名稱的CDN （內容傳遞網路）設定，**自訂網域名稱**&#x200B;和&#x200B;**環境**&#x200B;頁面上會顯示資訊訊息。 它鼓勵您透過UI新增這些設定，以便在Cloud Manager中管理和檢視這些設定。
 
 使用UI移轉所有預先存在的環境設定後，該訊息就會消失。 訊息可能需要 1-2 個工作日才能消失。
 
