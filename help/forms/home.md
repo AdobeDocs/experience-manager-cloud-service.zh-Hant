@@ -5,21 +5,24 @@ landing-page-description: 了解如何在 AEM as a Cloud Service 中使用表單
 role: Admin, Developer, User
 feature: Adaptive Forms, Release Information
 exl-id: aa5ef10c-ba78-4a9d-8b2b-a72a7a306888
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: f4b079837dee960401a16073293969954cad3e77
 workflow-type: tm+mt
-source-wordcount: '972'
-ht-degree: 100%
+source-wordcount: '1165'
+ht-degree: 70%
 
 ---
 
 
 # AEM Forms as a Cloud Service 簡介 {#introduction}
 
-| 版本 | 文章連結 |
-| -------- | ---------------------------- |
-| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/home.html) |
-| AEM as a Cloud Service  | 本文章 |
-
+<!-- Version Navigation -->
+<div class="version-selector">
+  <p><strong>在尋找其他版本的說明檔案嗎？</strong></p>
+  <ul>
+    <li><a href="https://experienceleague.adobe.com/docs/experience-manager-65/forms/home.html">AEM 6.5 Forms檔案</a></li>
+    <li><strong>AEM Forms as a Cloud Service</strong> （目前）</li>
+  </ul>
+</div>
 
 Adobe [!DNL Experience Manager Forms as a Cloud Service] 為企業提供了雲端原生的平台即服務 (PaaS) 解決方案，用於建立、管理、發佈和更新複雜的數位表單，同時將提交的資料與後端流程、業務規則相整合並將資料儲存在資料存放區中。
 
@@ -57,16 +60,46 @@ Adobe [!DNL Experience Manager Forms as a Cloud Service] 是一個以客戶為�
 
 ## 開始 {#key-features}
 
-|  |  |
-|---|---|
-| 最適化表單 | 為您的網站、應用程式和其他數位與列印管道建立和管理互動式、動態、回應式、行動友善和資料驅動的表單。查看以下內容以展開、了解和實作註冊體驗： <ul><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form.html">建立最適化表單</a></li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/themes.html">建立最適化表單樣式</a></li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html#enabling-server-side-validation-br"> 將資料提交到資料儲存或工作流程</a></li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/generate-document-of-record-for-non-xfa-based-adaptive-forms.html"> 建立表格記錄以供長期封存</a></li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/create-or-add-an-adaptive-form-to-aem-sites-page.html?lang=zh-Hant">新增最適化表單至 AEM Sites 頁面</a></li></ul> |
-| 通訊 API | 使用 RESTful API 按需求或按預定時間間隔 (如月度報表和帳戶通知) 自動建立、管理和傳遞個人化、資料驅動的通訊。查看以下內容並展開、了解和建立： <ul><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction.html?#document-generation"> 產生個人化通訊 </a> </li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction.html?#document-manipulation"> 組合或分解 PDF 文件</a> </li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction.html?#convert-to-and-validate-pdf%2Fa-compliant-documents">建立符合 PDF/A 標準的文件 </a></li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction.html">使用 DocAssurance API 保護您的文件</a></li></ul> |
-| 自動化表單轉換服務 | 將舊版 PDF 型表單轉換為可輕鬆上線管理和分發的最適化表單。查看以下內容以開始： <ul><li><a href="https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/configure-service.html">設定自動表單轉換服務</a></li><li><a href="https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html">將 PDF 表單轉換為最適化表單</a></li></ul> |
-| Forms - 工作流程 | 自動化涉及表單和文件服務的業務流程。在業務流程的不同階段移動時分配、傳送、審查和核准表單和文件。查看以下內容以開始：  <ul><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-reviews-forms.html">發送表單或文件以供審核</a></li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference.html?#assign-task-step">建立核准拒絕工作流程</a></li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference.html?#generate-document-of-record-step">將記錄文件</a>或<a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference.html?#sign-document-step">電子簽名</a>步驟加入商業工作流程</a></li></ul> |
-| 電子簽名 | 與 Adobe Sign 和 Adobe Sign Solutions for Government 整合，輕鬆向使用者發送表單和文件以進行電子簽名： <ul><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/use-adobe-sign/working-with-adobe-sign.html">使用 Adobe Sign 在最適化表單上進行電子簽名</a></li><li></a> <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference.html?lang=zh-Hant#sign-document-step">使用 Adobe Sign 和 AEM 工作流程對文件進行電子簽名</a></li></ul> |
-| Forms Analytics | 使用 Adobe Analytics 獲取有關使用者行為和偏好的寶貴見解： <ul><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/services/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.html">使用 Adobe Analytics 連結最適化表單</a></li></ul> |
-| 資料來源 | 輕鬆地將您的表單和文件與外部資料源連接起來，以檢索和發送資料： <ul><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-data-sources.html?lang=zh-Hant">連接到 RDBMS 或 Rest 端點</a></li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-msdynamics-salesforce.html?lang=zh-Hant">連接到 Microsoft® Dynamics 365 或 Salesforce 雲端服務</a></li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-azure-storage.html?lang=zh-Hant">連接至 Microsoft® Azure Blob 儲存體</a></li></ul> |
+AEM Forms as a Cloud Service提供了一組完整的功能，可歸類為下列類別：
 
+### 表單建立與製作 {#form-creation}
+
+使用各種製作選項，建立吸引人、回應式且資料導向的表單：
+
+| 功能 | 描述 |
+|---|---|
+| 調適型表單 | 為您的網站、應用程式和其他數位和列印管道建立並管理互動式、動態、回應式、適合行動使用且資料導向的表單： <ul><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form.html">建立最適化表單</a></li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/themes.html">建立最適化表單樣式</a></li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/create-or-add-an-adaptive-form-to-aem-sites-page.html?lang=zh-Hant">新增最適化表單至 AEM Sites 頁面</a></li></ul> |
+| 適用於Forms的Edge Delivery Services | 建立並提供具備卓越使用者體驗的高效能表單： <ul><li><a href="/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md">使用通用編輯器進行WYSIWYG製作</a> — 用於建立表單的強大視覺介面</li><li><a href="/help/edge/docs/forms/create-forms.md">檔案式撰寫</a> — 使用熟悉的工具(例如Microsoft Excel和Google Sheets)建立表單</li><li>用於建立複雜表單邏輯的進階規則編輯器</li><li>透過最佳化的表單載入達到近乎完美的Google Lighthouse分數</li><li>以最短的開發時間以更快的速度部署表單</li></ul> |
+| 自動化表單轉換服務 | 將舊版PDF式表單轉換為可輕鬆線上上管理和分發的最適化Forms： <ul><li><a href="https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/configure-service.html">設定自動表單轉換服務</a></li><li><a href="https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html">將 PDF 表單轉換為最適化表單</a></li></ul> |
+
+### 檔案處理與通訊 {#document-processing}
+
+產生、組合及傳遞個人化通訊：
+
+| 功能 | 描述 |
+|---|---|
+| 通訊 API | 隨選或依排程間隔，使用RESTful API自動建立、管理和傳送個人化的資料導向通訊： <ul><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction.html?#document-generation"> 產生個人化通訊 </a> </li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction.html?#document-manipulation"> 組合或分解 PDF 文件</a> </li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction.html?#convert-to-and-validate-pdf%2Fa-compliant-documents">建立符合 PDF/A 標準的文件 </a></li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction.html">使用 DocAssurance API 保護您的文件</a></li></ul> |
+| 記錄文件 | 建立並管理已提交表單的記錄，以進行封存及法規遵循： <ul><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/generate-document-of-record-for-non-xfa-based-adaptive-forms.html"> 建立表格記錄以供長期封存</a></li><li>自訂功能的伺服器端擴充性</li><li>用於防篡改封存檔的記錄檔案功能</li></ul> |
+
+### 工作流程與流程自動化 {#workflow}
+
+自動化業務流程和表單相關工作流程：
+
+| 功能 | 描述 |
+|---|---|
+| Forms - 工作流程 | 自動化涉及表單和檔案服務的業務流程： <ul><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-reviews-forms.html">發送表單或文件以供審核</a></li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference.html?#assign-task-step">建立核准拒絕工作流程</a></li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html#enabling-server-side-validation-br"> 將資料提交到資料儲存或工作流程</a></li></ul> |
+| 電子簽名 | 與 Adobe Sign 和 Adobe Sign Solutions for Government 整合，輕鬆向使用者發送表單和文件以進行電子簽名： <ul><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/use-adobe-sign/working-with-adobe-sign.html">使用 Adobe Sign 在最適化表單上進行電子簽名</a></li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference.html?#generate-document-of-record-step">將記錄文件</a>或<a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference.html?#sign-document-step">電子簽名</a>步驟加入商業工作流程</a></li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference.html?lang=zh-Hant#sign-document-step">使用 Adobe Sign 和 AEM 工作流程對文件進行電子簽名</a></li></ul> |
+
+### 資料整合與Analytics {#data-integration}
+
+將表單連線至資料來源，並取得表單效能的深入分析：
+
+| 功能 | 描述 |
+|---|---|
+| Forms Analytics | 使用 Adobe Analytics 獲取有關使用者行為和偏好的寶貴見解： <ul><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/services/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.html">使用 Adobe Analytics 連結最適化表單</a></li></ul> |
+| Adobe整合 | 將表單與其他Adobe解決方案連結： <ul><li><a href="/help/forms/submit-adaptive-form-to-workfront-fusion.md">連線至Adobe Workfront Fusion</a>並將資料提交至Workfront案例</li><li><a href="/help/forms/integrate-form-to-marketo-engage.md">連線至Adobe Marketo Engage</a>並<a href="/help/forms/submit-adaptive-form-to-marketo-engage.md">將資料提交至Marketo</a></li></ul> |
+| Microsoft整合 | 將表單與Microsoft服務連結： <ul><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-msdynamics-salesforce.html?lang=zh-Hant">連線到Microsoft® Dynamics 365</a></li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-azure-storage.html?lang=zh-Hant">連線到Microsoft® Azure Blob儲存體</a>並<a href="/help/forms/configure-submit-action-azure-blob-storage.md">將資料提交到Azure Blob儲存體</a></li><li><a href="/help/forms/connect-forms-to-sharepoint-document-library.md">連線至Microsoft® SharePoint檔案庫</a>並<a href="/help/forms/configure-submit-action-sharepoint.md">將資料提交至SharePoint</a></li><li><a href="/help/forms/configure-submit-action-onedrive.md">連線至Microsoft® OneDrive</a>並將資料提交至OneDrive</li><li><a href="/help/forms/forms-microsoft-power-automate-integration.md">連線至Microsoft® Power Automate</a>並在表單提交時觸發流程</li><li><a href="/help/forms/ms-dynamics-odata-configuration.md">連線到Microsoft® Dynamics OData</a></li></ul> |
+| 其他資料來源 | 連線到其他資料來源和端點： <ul><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-data-sources.html?lang=zh-Hant">連接到 RDBMS 或 Rest 端點</a></li><li><a href="/help/forms/aem-forms-salesforce-integration.md">連線至Salesforce</a>並將資料提交至Salesforce</li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html#submit-to-rest-endpoint">提交至REST端點</a></li></ul> |
 
 >[!MORELIKETHIS]
 >
@@ -74,4 +107,3 @@ Adobe [!DNL Experience Manager Forms as a Cloud Service] 是一個以客戶為�
 >* [Cloud Service 環境上線](/help/forms/setup-forms-cloud-service.md)
 >* [設定本機開發環境](/help/forms/setup-local-development-environment.md)
 >* [從 AEM 6.5 Forms 移轉到 Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
-
