@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 896a2927c0f5733ab23ca9f6c9e975f8388daff9
+source-git-commit: a2f26e7befe4aa23350cfdca6a2c342500a909db
 workflow-type: tm+mt
-source-wordcount: '1419'
-ht-degree: 85%
+source-wordcount: '1493'
+ht-degree: 95%
 
 ---
 
@@ -48,19 +48,23 @@ Have a look at the February 2025 Release Overview video for a summary of the fea
 
 ### AEM Sites 中的新功能 {#new-features-sites}
 
-**內容片段自動標籤**
+**內容片段自動標記**
 
 建立內容片段時，現在可自動繼承指派給內容模型的標記。這樣一來，儲存在內容片段中的內容便可以有效率地完成自動分類。
 
-**內容片段UUID支援**
+**內容片段 UUID 支援**
 
 內容片段 UUID 支援現在正式推出。新功能不會改變 AEM 中基於路徑的操作行為，例如移動、重新命名、轉出 (路徑會自動調整)，但它可讓外部使用內容片段的操作變得更輕鬆且更穩定，尤其是在使用 GraphQL 查詢直接針對個別片段進行 ByPath 查詢時。如果變更片段路徑，這類查詢可能無法進行。使用新的 ById 查詢類型時，即使路徑變更，片段的 UUID 也不會改變，所以此查詢現在可保持穩定。
 
-**在內容片段編輯器和GraphQL中支援OpenAPI的Dynamic Media**
+**內容片段編輯器和 GraphQL 中具有 OpenAPI 功能的 Dynamic Media 支援**
 
 儲存在不同的 AEM as a Cloud Service 方案而不是內容片段中的資產，以及具備擁有 OpenAPI 功能的 Dynamic Media 的資產，現在皆可在內容片段中使用。新的內容片段編輯器的影像選擇器，現在允許在片段中引用的影像資產選擇「遠端」存放庫作為其來源。使用 AEM GraphQL 傳遞此類內容片段時，JSON 回應現在包含遠端資產的必要屬性 (assetId、repositoryId)，因此用戶端應用程式可以建立相應的 Dynamic Media 並透過 OpenAPI URL 來擷取影像。
 
-**翻譯HTTP API**
+**內容片段編輯器轉出**
+
+我們將繼續在AEM as a Cloud Service中啟用新的頻譜UI型內容片段編輯器。 在2024年11月成為所有Cloud Service開發人員環境的預設後，它將在2025年4月1日成為所有中繼環境的預設值，並在2025年5月1日成為所有生產環境的預設值。 在所有情況下，使用者仍可選擇在AEM觸控式UI中回覆成傳統內容片段編輯器。
+
+**翻譯 HTTP API**
 
 在早期採用者模式中已開放使用一段時間的 AEM 翻譯 HTTP REST API 現在正式推出。相關文件請參閱[此處](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/translation/)。該 API 可以將 AEM 內容翻譯管理流程的必要步驟自動化。
 
@@ -120,27 +124,27 @@ AEM Forms 搶先體驗計劃為您提供獨一無二的機會，獲得先進創�
 
 ### 支援 Java 21 {#java21}
 
-如1月發行說明中所述，您現在可以使用Java 21建置計畫碼，其中包括新功能（例如切換陳述式的模式比對、密封類別）和效能改善；Java 17建置也是最新支援。 若要了解設定步驟 (包括更新 Maven 專案和資料庫版本)，請參閱「[建置環境](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#using-java-support)」文章。
+如 1 月發行說明中所述，您現在可以使用 Java 21 建置程式碼，其中包括新功能 (例如 switch 陳述式的模式比對、密封類別) 和效能改進；也為 Java 17 版本提供全新支援。若要了解設定步驟 (包括更新 Maven 專案和資料庫版本)，請參閱「[建置環境](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#using-java-support)」文章。
 
 當偵測到 Java 17 或 21 版本時，效能較佳的 Java 21 **執行階段**&#x200B;會自動部署。但是，對於建置在 Java 11 上的環境，我們也建議選擇使用 Java 21 執行階段，請寄送電子郵件至 [aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com)。了解 [Java 21 執行階段要求](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)。
 
 >[!IMPORTANT]
 >
-> 2月，Java 21 **執行階段**&#x200B;已部署至開發/RDE環境（除了已使用Java 17或21建置的之外，這些環境已具有Java 21執行階段）。 Java 21將於4月套用至中繼/生產環境。
+> 在 2 月，除了已經使用 Java 17 或 21 建置的環境之外 (這些環境已有 Java 21 執行階段)，Java 21 **執行階段**&#x200B;也已部署到開發/RDE 環境。Java 21 將於 4 月套用至中繼/生產環境。
 
 ### 邊緣運算 - 請求意見回饋！ {#edge-computing-feedback}
 
-邊緣運算可讓資料處理更接近瀏覽器，其優點包括減少延遲。Adobe很想知道您是否發現這項技術對AEM Publish Delivery和Edge Delivery Services專案很有用。 此外，讓我們知道您將其用作產品藍圖輸入內容的設想。
+邊緣運算可讓資料處理更接近瀏覽器，其優點包括減少延遲。Adobe 想要知道，您覺得這項技術對於 AEM Publish Delivery 和 Edge Delivery Services 專案來說是否實用。此外，我們也想知道您預計會如何使用它，以作為我們擬定產品路徑圖的參考。
 
-部分可能的使用案例：
-* 使用IdP進行驗證以閘道內容存取權
-* 根據地理位置、裝置型別、使用者屬性等呈現動態（個人化、本地化）內容。
-* 進階影像操作
-* CDN與來源之間的中介軟體
-* 瀏覽器和第三方API之間的圖層，可能會重新格式化API回應
-* 彙總來自多個來源的資料，讓使用者端瀏覽器更容易呈現
+一些可能的使用案例：
+* 使用 IdP 進行驗證以控制內容存取
+* 根據地理位置、裝置類型、使用者屬性等，轉譯動態 (個人化、本地化) 內容。
+* 進階影像處理
+* CDN 與來源之間的中介軟體
+* 瀏覽器和第三方 API 之間的一層，可能用於重新設定 API 回應的格式
+* 彙總來自多個來源的資料，讓用戶端瀏覽器更容易轉譯它
 
-請寄送電子郵件至 [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com)，並附上您的疑問和註解！
+請寄送電子郵件至 [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com)，並附上您的問題和評論！
 
 ### 基於 OpenAPI 的 API - 早期採用者方案 {#open-apis-earlyadopter}
 
