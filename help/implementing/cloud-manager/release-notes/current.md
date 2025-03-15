@@ -1,76 +1,48 @@
 ---
-title: Adobe Experience Manager as a Cloud Service 中 Cloud Manager 2025.2.0 的發行說明
-description: 了解 AEM as a Cloud Service 中 Cloud Manager 2025.2.0 的發行資訊。
+title: Adobe Experience Manager as a Cloud Service 中 Cloud Manager 2025.3.0 的發行說明
+description: 了解 AEM as a Cloud Service 中 Cloud Manager 2025.3.0 的發行資訊。
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: aaef376b733c10643e44205e55a0921c22008990
-workflow-type: ht
-source-wordcount: '639'
-ht-degree: 100%
+source-git-commit: 5983c8579dd8606bc8bedfe6fa2a3838493452cd
+workflow-type: tm+mt
+source-wordcount: '324'
+ht-degree: 25%
 
 ---
 
-# Adobe Experience Manager as a Cloud Service 中 Cloud Manager 2025.2.0 的發行說明 {#release-notes}
+# Adobe Experience Manager as a Cloud Service 中 Cloud Manager 2025.3.0 的發行說明 {#release-notes}
 
-<!-- https://wiki.corp.adobe.com/pages/viewpage.action?pageId=3389843928 -->
+<!-- https://wiki.corp.adobe.com/display/DMSArchitecture/Cloud+Manager+2025.03.0+Release -->
 
-了解 AEM (Adobe Experience Manager) as a Cloud Service 中 Cloud Manager 2025.2.0 的發行資訊。
+了解 AEM (Adobe Experience Manager) as a Cloud Service 中 Cloud Manager 2025.3.0 的發行資訊。
 
 
 另請參閱 [Adobe Experience Manager as a Cloud Service 最新發行說明](/help/release-notes/release-notes-cloud/release-notes-current.md)。
 
 ## 發行日期 {#release-date}
 
-AEM as a Cloud Service 中 Cloud Manager 2025.2.0 的發行日期是 2025 年 2 月 13 日 (星期四)。
+AEM as a Cloud Service中的Cloud Manager 2025.3.0發行日期是2025年3月13日星期四。
 
-下一個版本預計於 2025 年 3 月 13 日 (星期四) 發行。
+下一個預計發行日期為2025年4月10日星期四。
 
 ## 最新資訊 {#what-is-new}
 
-* **程式碼品質規則更新**
+* **執行多個管道**
 
-  從 2025 年 2 月 13 日 (星期四) 起，Cloud Manager 程式碼品質步驟現在會使用 SonarQube 9.9.5.90363。
+  在管道頁面上已引入同時執行多個管道的功能。 使用者必須至少選擇一個管道，但不能超過十個。 在管道頁面的右上角附近，按一下&#x200B;**執行選取的專案(x)**。 會出現一個模型對話方塊，其中列出任何無法啟動的管道。 按一下&#x200B;**執行**&#x200B;以起始所有有效的管道。
 
-  適用於 AEM as a Cloud Service 的 Cloud Manager 的更新後規則 (請參閱[此連結](/help/implementing/cloud-manager/code-quality-testing.md#understanding-code-quality-rules)) 會決定 Cloud Manager 管道的安全性評分和程式碼品質。
+  ![執行選取的管道對話方塊](/help/implementing/cloud-manager/release-notes/assets/run-selected-pipelines.png)
 
-* SonarQube 9.9 現在是所有客戶的預設程式碼品質掃描引擎。
+* **延伸至Node.js版本**&#x200B;的支援
 
-* **Java 17 和 Java 21 建置支援**
+  前端組建環境現在支援下列`Node.js`版本：
 
-  客戶現在可以使用 Java 17 或 Java 21 進行建置，從而獲得效能增強和新語言功能。若要了解設定步驟 (包括更新 Maven 專案和資料庫版本)，請參閱「[建置環境](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)」。當建置版本設定為 Java 17 或 Java 21 時，部署的執行階段為 Java 21。
+   * 23
+   * 22
+   * 20
 
-* **Edge Delivery Services 的 99.99% SLA 運作時間報告**
-
-  符合資格的 Edge Delivery Services 方案現已提供高可用性 99.99% 運作時間報告。若要啟用此功能，客戶必須成功將其 Edge Delivery Services 網站上線，並在 Cloud Manager 中套用其 99.99% 服務層級合約 (SLA)。
-
-  另請參閱 [SLA](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#sla)。
-
-* **改進了 Edge Delivery Services 的使用者邀請體驗**
-
-  邀請使用者存取與 Edge Delivery Services 相關聯之內容存放庫的體驗已獲得改善。<!-- CMGR-65331 -->
-
-* **在發佈執行個體上自動建立管理員設定檔**
-
-  以前，Cloud Manager 允許在發佈執行個體上手動建立管理員設定檔，但預設不支援自動建立。透過此更新，管理員設定檔現在會在發佈執行個體上自動建立，從而為客戶提高可用性和減少設定時間。
-
-  如需更多詳細資訊，請參閱[自訂權限](/help/implementing/cloud-manager/custom-permissions.md)。
-
-  ![管道活動篩選](/help/implementing/cloud-manager/release-notes/assets/product-profiles.png)
-
-* **轉換到適用於 Cloud Service 環境的 OAuth**
-
-  新的 Cloud Service 環境現在會對 Adobe Developer Console 整合專案使用 OAuth 型服務對服務驗證，而非先前使用的 JWT 驗證方法。JWT 驗證已過時，並計劃於 2025 年 6 月終止使用。
-
-* **支援 EC (Elliptic Curve，橢圓曲線) 私密金鑰 (secp384r1)**
-
-  Cloud Manager 現在支援 `secp384r1` 橢圓曲線 (EC) 私密金鑰，為客戶管理的 OV/EV SSL 憑證提供更高的安全性和合規性。
-如需更多詳細資訊，請參閱[客戶管理之 OV/EV SSL 憑證的要求](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md#requirements)。<!-- CMGR-63636 -->
-
-* **專用測試環境**
-
-  從 2025 年 2 月 27 日起，早期採用者可使用具有增強資源的全新開發環境。
-
+  另請參閱[使用前端管道](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md#node-versions)開發網站。<!-- CMGR-65307 -->
 
 <!--
 ## Early adoption program {#early-adoption}
@@ -80,16 +52,13 @@ Be a part of Cloud Manager's early adoption program and have a chance to test up
 
 ## 錯誤修正
 
-* **(UI) 修正了 Cloud Manager 中無法對網域進行 CDN 設定的問題。**
-嘗試在 Cloud Manager 中新增 CDN 配置設定的客戶從下拉式選單中選取網域時，會發生螢幕錯誤。此使用者介面錯誤導致無法在生產環境中進行網域對應，從而阻礙了設定程序。
+* Cloud Manager **中「進階網路設定」更新的**(UI)修正
 
-  此外，儘管一些網域已從使用者介面中移除，仍無法在後端存取。此問題導致與現有 CDN 設定發生衝突。
+  當有「可用更新」通知時，無法更新&#x200B;**進階網路設定**&#x200B;的罕見問題已解決。 之前，Cloud Manager會鎖定組態修改（包括進階網路設定），以防止在更新期間發生衝突。 客戶現在可以手動觸發擱置更新，不受限制地套用必要的變更。<!-- CMGR-65913 and CMGR-65788 -->
 
-  透過此修正，您現在可以在下拉式選單中成功選取網域，而不會遇到錯誤。導致網域無法重新設定的後端不一致問題已解決。最後，經過改進的驗證功能現在可以確保在重新新增網域之前，會先正確移除發生衝突的網域。<!-- CMGR-64888 -->
-* **(後端) 修正了導致 SSL 過期通知多次傳送的問題。**
-我們發現了一個錯誤，亦即 SSL 到期通知排程器 (設計為每天午夜執行一次) 每天會錯誤觸發兩次，一次在午夜，另一次在凌晨 12:30。此問題導致 SSL 憑證過期時，會傳送多個有關冗餘通知。
+* **(UI)修正IP允許清單更新卡在「更新」狀態**
 
-  通知排程器現在會按照預期每天僅正確執行一次。並且，您不會再收到重複的 SSL 到期通知。<!-- CMGR-64748 -->
+  解決了Cloud Manager中的IP允許清單更新由於環境的重複活動網域設定而卡在「更新」狀態的罕見問題。 以前，客戶在更新IP允許清單時會遇到無限的處理延遲，從而無法進行必要的網路存取調整。 此修正確保IP允許清單更新現在可以成功完成而不會卡住。<!-- CMGR-65786 -->
 
 
 
