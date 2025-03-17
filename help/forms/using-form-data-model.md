@@ -5,10 +5,10 @@ feature: Adaptive Forms, Form Data Model
 role: Admin, User
 level: Beginner, Intermediate
 exl-id: 827ce457-6585-46fb-8e28-1d970a40d949
-source-git-commit: 7b31a2ea016567979288c7a8e55ed5bf8dfc181d
+source-git-commit: 7c30c56ca7a4d8dbdadb2e54a1b7320477556fa5
 workflow-type: tm+mt
 source-wordcount: '1321'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
@@ -165,7 +165,7 @@ Edit Properties dialog for an interactive communication-->
 
 您可以使用自訂函式](/help/forms/rule-editor.md#custom-functions-in-rule-editor-custom-functions)，從規則編輯器[叫用表單資料模型。 若要叫用表單資料模型(FDM)，請將表單資料模型新增至允許清單。 若要將表單資料模型新增至允許清單：
 
-1. 前往`https://server:host/system/console/configMgr`的Experience ManagerWeb主控台。
+1. 前往`https://server:host/system/console/configMgr`的Experience Manager Web主控台。
 1. 尋找&#x200B;**[!UICONTROL 用於服務引動的最適化表單層級白名單 — 組態處理站]**。
 1. 按一下![加號圖示](/help/forms/assets/Smock_Add_18_N.svg)圖示以新增組態。
 1. 新增&#x200B;**[!UICONTROL 內容路徑模式]**&#x200B;以指定最適化Forms的位置。  預設值為`/content/forms/af/(.*)`，其中包含所有最適化Forms。 您也可以指定特定最適化表單的路徑。

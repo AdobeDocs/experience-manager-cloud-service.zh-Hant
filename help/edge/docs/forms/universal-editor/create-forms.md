@@ -6,10 +6,10 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 1eab3a3d-5726-4ff8-90b9-947026c17e22
-source-git-commit: 9127c58a72dc4942312907f9e8f0cdcc8de9aa4b
+source-git-commit: a95b0d4dd6db92e68bdb7059bdd4e0e5be936195
 workflow-type: tm+mt
-source-wordcount: '1016'
-ht-degree: 49%
+source-wordcount: '1069'
+ht-degree: 48%
 
 ---
 
@@ -58,7 +58,13 @@ AEM Forms 會提供一個區塊，稱為最適化表單區塊，協助您輕鬆�
 
       ![建立EDS Forms](/help/edge/assets/create-eds-forms.png)
 
+
+      當您選取以Edge Delivery Services為基礎的範本時，會啟用&#x200B;**[!UICONTROL 建立]**&#x200B;按鈕。
+   1. （選擇性）在&#x200B;**[!UICONTROL 資料Source]**&#x200B;或&#x200B;**[!UICONTROL 提交]**&#x200B;索引標籤中，您可以選取資料來源或提交動作。
+   1. (選用) 在「**[!UICONTROL 傳遞]**」標籤中，您可以為最適化表單指定發佈或取消發佈日期。
+
    1. 按一下&#x200B;**[!UICONTROL 建立]**，即會出現&#x200B;**建立表單**&#x200B;精靈。
+   1. 指定&#x200B;**名稱**&#x200B;和&#x200B;**標題**。
    1. 指定 **GitHub URL**。例如，如果您的GitHub存放庫名為`edsforms`，則位於帳戶`wkndforms`下，URL為：
       `https://github.com/wkndforms/edsforms`
    1. 按一下&#x200B;**[!UICONTROL 建立]**。
