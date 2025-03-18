@@ -6,10 +6,10 @@ exl-id: 4aff5a84-134a-43fa-8de8-8d564f4edd16
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f24b2672431ecf7b7b0ed11b6dc9b09344946239
+source-git-commit: fdf28905b16b4cc5c6947b8b216940b0c43b2a6a
 workflow-type: tm+mt
-source-wordcount: '1162'
-ht-degree: 34%
+source-wordcount: '1377'
+ht-degree: 29%
 
 ---
 
@@ -64,7 +64,7 @@ ht-degree: 34%
 
 **活動**&#x200B;頁面會顯示所選方案和其他重要方案事件的所有管道執行的完整清單。
 
-1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織和方案。
+1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager，並選取適當的組織和方案。
 
 1. 從&#x200B;**計畫總覽**&#x200B;頁面，按一下側邊功能表中的![鈴鐺圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Bell_18_N.svg) **活動**。
 
@@ -95,6 +95,23 @@ ht-degree: 34%
 您可以按一下![省略符號 — 其他圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)再按一下&#x200B;**[檢視詳細資料](#view-details)**&#x200B;來檢視執行的詳細資料。
 
 視管道型別而定，您也許可以取消執行，只要再按一下![省略符號 — 更多圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)並按一下&#x200B;**取消**。
+
+## 執行多個管道 {#run-multiple-pipelines}
+
+有了Cloud Manager，您可以同時執行多個管道，為AEM as a Cloud Service客戶提高部署效率。 **執行選取的**&#x200B;功能可讓您選取多個管道並觸發它們一次執行。 它可減少個別執行管道的手動工作量，並最佳化建置和部署工作流程。
+
+**若要執行多個管道：**
+
+1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager，並選取適當的組織和方案。
+1. 從左側功能表，按一下![工作流程圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg) **管道**。
+1. 在&#x200B;**管道**頁面的表格中，選取您要執行管道旁的核取方塊。
+如有必要，請按一下![篩選圖示、漏斗](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg) **篩選**，依名稱、環境、已部署的程式碼型別或這三個專案的組合來排序管道。
+1. 在頁面的右上角附近，按一下&#x200B;**執行選取的專案(x)**。
+1. 在&#x200B;**執行選取的管道(x)**&#x200B;對話方塊中，按一下&#x200B;**執行(x)**。
+
+   **執行**&#x200B;按鈕反映了可繼續的管道數。 例如，您可能選取了四個管道，但其中一個已經在執行。 或者，連結至所選管道的環境已不存在。 在這種情況下，系統會進行相應的調整。 按鈕更新為「執行(3)」，表示三個管道可以繼續。
+
+1. 管道開始執行，且已在&#x200B;**管道**&#x200B;清單中更新其狀態。
 
 ## 編輯管道 {#editing-pipelines}
 
@@ -173,7 +190,7 @@ ht-degree: 34%
 
 如果管道執行處於驗證或建置影像階段，您可以安全地取消它。
 
-1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織和方案。
+1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager，並選取適當的組織和方案。
 
 1. 從方案總覽頁面，在&#x200B;**管道**&#x200B;卡片上按一下您要取消的管道的![省略符號 — 更多圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)。
 
@@ -183,7 +200,7 @@ ht-degree: 34%
 
 或者，您可以從配管詳細資訊頁面取消配管。
 
-1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織和方案。
+1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager，並選取適當的組織和方案。
 
 1. 從&#x200B;**方案總覽**&#x200B;頁面瀏覽至![管道索引標籤 — 工作流程圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg) **管道**&#x200B;索引標籤，並選取您要取消的管道。
 
