@@ -4,10 +4,10 @@ description: 了解 AEM as a Cloud Service 中 Cloud Manager 2025.3.0 的發行�
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 5983c8579dd8606bc8bedfe6fa2a3838493452cd
+source-git-commit: 663234640f16e6aa653251399751abf5daa17f82
 workflow-type: tm+mt
-source-wordcount: '324'
-ht-degree: 25%
+source-wordcount: '329'
+ht-degree: 24%
 
 ---
 
@@ -33,6 +33,8 @@ AEM as a Cloud Service中的Cloud Manager 2025.3.0發行日期是2025年3月13�
   在管道頁面上已引入同時執行多個管道的功能。 使用者必須至少選擇一個管道，但不能超過十個。 在管道頁面的右上角附近，按一下&#x200B;**執行選取的專案(x)**。 會出現一個模型對話方塊，其中列出任何無法啟動的管道。 按一下&#x200B;**執行**&#x200B;以起始所有有效的管道。
 
   ![執行選取的管道對話方塊](/help/implementing/cloud-manager/release-notes/assets/run-selected-pipelines.png)
+
+  另請參閱[執行多個管道](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#run-multiple-pipelines)
 
 * **延伸至Node.js版本**&#x200B;的支援
 
