@@ -5,9 +5,9 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: fced4707e781242132a018d28d4dd121960469eb
+source-git-commit: 08bcf9a65854478d2ce057e31b4c27690d1bf240
 workflow-type: tm+mt
-source-wordcount: '1410'
+source-wordcount: '1405'
 ht-degree: 34%
 
 ---
@@ -161,7 +161,7 @@ Universal Editor 支援在任意實作中編輯任何方面的內容，以便提
 >
 >使用快速鍵 `Shift+Backspace` 從容器中刪除選取的元件。
 
-### 將容器中的元件重新排序 {#reordering-components}
+### 重新排序元件 {#reordering-components}
 
 1. 如果尚未處於[內容樹狀結構模式](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode)，請切換至該模式。
 1. 在內容樹或編輯器中選取容器元件。
@@ -176,7 +176,7 @@ Universal Editor 支援在任意實作中編輯任何方面的內容，以便提
 
 >[!NOTE]
 >
->如果在來源和目標容器之間設定不同的[元件篩選器](/help/implementing/universal-editor/filtering.md)，則無法在容器之間移動元件。
+>如果目標容器[元件篩選器](/help/implementing/universal-editor/filtering.md)允許選取的元件，則元件只能在容器之間移動。
 
 ### 使用GenAI建立變化並產生變化 {#generate-variations-ai}
 

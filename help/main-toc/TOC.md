@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的運作方式以及該軟體可以為您做哪些事。
 breadcrumb-title: 使用手冊
 user-guide-title: 'AEM as a Cloud Service '
-source-git-commit: 86c5ab645df0d94d4f9d538e8044b9ee7433a61b
+source-git-commit: c4b4bc50fc9530d0e1ed982185c38716299abbb0
 workflow-type: tm+mt
-source-wordcount: '6082'
-ht-degree: 94%
+source-wordcount: '6086'
+ht-degree: 99%
 
 ---
 
@@ -33,7 +33,7 @@ ht-degree: 94%
    + AEMaaCS 功能發行說明{#release-notes}
       + [最新發行說明](/help/release-notes/release-notes-cloud/release-notes-current.md)
       + 2025 {#2025}
-         + [2025.1.0](/help/release-notes/release-notes-cloud/2025/release-notes-2025-1-0.md)版發行說明
+         + [2025.1.0 版發行說明](/help/release-notes/release-notes-cloud/2025/release-notes-2025-1-0.md)
       + 2024 {#2024}
          + [2024.10.0 版發行說明](/help/release-notes/release-notes-cloud/2024/release-notes-2024-10-0.md)
          + [2024.9.0 版發行說明](/help/release-notes/release-notes-cloud/2024/release-notes-2024-9-0.md)
@@ -216,6 +216,7 @@ ht-degree: 94%
    + 通用編輯器發行說明 {#univeral-editor}
       + [通用編輯器的最新發行說明](/help/release-notes/universal-editor/current.md)
       + 2025 {#2025}
+         + [2025.02.25 發行說明](/help/release-notes/universal-editor/2025/2025-02-25.md)
          + [2025.02.17 發行說明](/help/release-notes/universal-editor/2025/2025-02-17.md)
          + [2025.01.16 發行說明](/help/release-notes/universal-editor/2025/2025-01-16.md)
       + 2024 {#2024}
@@ -379,7 +380,7 @@ ht-degree: 94%
          + [樣式系統](/help/sites-cloud/authoring/page-editor/style-system.md)
          + [取消復原還原限制](/help/sites-cloud/authoring/page-editor/undo-redo.md)
       + 通用編輯器 {#universal-editor}
-         + [瀏覽](/help/sites-cloud/authoring/universal-editor/navigation.md)
+         + [導覽](/help/sites-cloud/authoring/universal-editor/navigation.md)
          + [製作](/help/sites-cloud/authoring/universal-editor/authoring.md)
          + [發佈](/help/sites-cloud/authoring/universal-editor/publishing.md)
          + [繼承](/help/sites-cloud/authoring/universal-editor/inheritance.md)
@@ -588,8 +589,8 @@ ht-degree: 94%
       + [設定 Dynamic Media](/help/assets/dynamic-media/administering-dynamic-media.md)
       + [使用 Dynamic Media](/help/assets/dynamic-media/dynamic-media.md)
       + [設定 Dynamic Media](/help/assets/dynamic-media/config-dm.md)
-      + [Dynamic Media Prime和Ultimate](/help/assets/dynamic-media/dm-prime-ultimate.md)
-      + [啟用Dynamic Media Prime和Ultimate](/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md)
+      + [Dynamic Media Prime 與 Ultimate](/help/assets/dynamic-media/dm-prime-ultimate.md)
+      + [啟用 Dynamic Media Prime 與 Ultimate](/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md)
       + [選擇性 - 設定 Dynamic Media，一般設定](/help/assets/dynamic-media/dm-general-settings.md)
       + [選擇性 - 設定 Dynamic Media，發佈設定](/help/assets/dynamic-media/dm-publish-settings.md)
       + [Dynamic Media 疑難排解](/help/assets/dynamic-media/troubleshoot-dm.md)
@@ -790,7 +791,7 @@ ht-degree: 94%
             + [建立自訂提交動作](/help/forms/custom-submit-action-for-adaptive-forms-based-on-core-components.md)
             + [使用遷移公用程式工具將基礎元件型最適化表單轉換為核心元件型表單](/help/forms/migration-utility-tool-for-af-core-components.md)
             + [最適化表單中的電子郵件範本](/help/forms/html-email-templates-in-adaptive-forms.md)
-            + [在Experience Manager Forms中管&#x200B;理發佈](/help/forms/manage-publication.md)
+            + [於 Experience Manager Forms 中管理發佈](/help/forms/manage-publication.md)
             + 以核心元件為主之最適化表單的規則編輯器簡介{#rule-editor-core-components}
                + [以核心元件為主之最適化表單的規則編輯器簡介](/help/forms/rule-editor-core-components.md)
                + [以核心元件為主之最適化表單的規則編輯器使用者介面](/help/forms/rule-editor-core-components-user-interface.md)
@@ -894,9 +895,9 @@ ht-degree: 94%
    + 交易報告{#using-communications}
       + [交易報告計費 API](/help/forms/transaction-reports-billable-apis.md)
       + [記錄自訂實作的交易](/help/forms/record-transaction-custom-implementation.md)
-   + 值實現儀表板{#vr-dashboard}
-      + [瞭解您的價值實現儀表板](/help/forms/aem-forms-value-realization-dashboard.md)
-      + [使用價值實現儀表板來分析表單和檔案使用趨勢](/help/forms/using-the-value-realization-dashboard.md)
+   + 價值實現儀表板 {#vr-dashboard}
+      + [了解您的價值實現儀表板](/help/forms/aem-forms-value-realization-dashboard.md)
+      + [使用價值實現儀表板分析表單和文件的使用趨勢](/help/forms/using-the-value-realization-dashboard.md)
    + 開發人員 API 參考 {#aem-forms-developer-api-reference}
       + [最適化表單 API 參考](https://developer-stage.adobe.com/experience-cloud/experience-manager-apis/api/stable/forms/)
       + [AEM Forms as a Cloud Service 通訊 API 參考](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)
@@ -1035,35 +1036,35 @@ ht-degree: 94%
       + [Edge Delivery Services 表單如何運作？](/help/edge/docs/forms/universal-editor/edge-delivery-services-form.md)
       + [常見問題集](/help/edge/docs/forms/adapttive-forms-for-edge-delivery-services-faq.md)
       + WYSIWYG 製作{#universal-editor}
-         + [Edge Delivery Services適用的Forms Universal Editor簡介 — 完整指南](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
-         + [如何使用通用編輯器開始撰寫 — 逐步教學課程](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
+         + [Edge Delivery Services 的表單通用編輯器簡介：完整指南](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
+         + [如何使用通用編輯器開始製作：逐步教學課程](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
          + [如何使用通用編輯器建立您的第一個表單 — 逐步教學課程](/help/edge/docs/forms/universal-editor/create-forms.md)
          + [通用編輯器介面指南：工具、功能和導覽說明](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md)
-         + [在通用編輯器中讓您的Forms支援行動裝置：回應式設計](/help/edge/docs/forms/universal-editor/responsive-layout.md)
-         + [設計精美的Forms：通用編輯器的樣式和主題設定指南](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
-         + [將動態行為新增至Forms：規則編輯器的完整指南](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
-         + [表單提交指南：設定和自訂表單提交動作](/help/edge/docs/forms/universal-editor/submit-action.md)
-         + [保護您的Forms遠離垃圾訊息：新增reCAPTCHA安全性](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
-         + [如何發佈和部署Forms： Universal Editor發佈指南](/help/edge/docs/forms/universal-editor/publish-forms.md)
-         + [建置自訂表單元件：通用編輯器的開發人員指南](/help/edge/docs/forms/universal-editor/create-custom-component.md)
+         + [製作行動裝置適用的表單：通用編輯器中的回應式設計](/help/edge/docs/forms/universal-editor/responsive-layout.md)
+         + [設計精美表單：通用編輯器的樣式和主題指南](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
+         + [在表單中新增動態行為：規則編輯器完整指南](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
+         + [表單提交指南：設定與自訂表單提交動作](/help/edge/docs/forms/universal-editor/submit-action.md)
+         + [保護表單免受垃圾郵件騷擾：新增 reCAPTCHA 安全性](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
+         + [如何發佈及部署表單：通用編輯器發佈指南](/help/edge/docs/forms/universal-editor/publish-forms.md)
+         + [建置自訂表單元件：通用編輯器開發人員指南](/help/edge/docs/forms/universal-editor/create-custom-component.md)
          + [表單資料模型整合：整合Forms與表單資料模型](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md)
-      + 以檔案為基礎的製作{#getting-started-edge-delivery-services-forms}
-         + [建立您的第一個表單：使用Google工作表和Excel快速入門手冊](/help/edge/docs/forms/tutorial.md)
-         + [如何使用Google工作表或Excel建立Forms：逐步指南](/help/edge/docs/forms/create-forms.md)
-         + [最適化表單區塊的各種元件](/help/edge/docs/forms/form-components.md)
-         + [將表單連線至Google Sheets：資料收集設定指南](/help/edge/docs/forms/submit-forms.md)
-         + [讓您的表單上線：發佈和資料收集指南](/help/edge/docs/forms/publish-forms.md)
-         + [表單欄位驗證：將錯誤檢查新增至您的Forms](/help/edge/docs/forms/validate-forms.md)
-         + [設計精美的Forms：樣式與自訂指南](/help/edge/docs/forms/style-theme-forms.md)
-         + [建立成功訊息：自訂您的表單感謝頁面](/help/edge/docs/forms/thank-you-page-form.md)
-         + [表單提交指南：使用Forms提交服務](/help/forms/forms-submission-service.md)
-         + [動態表單欄位：從URL載入選項](/help/edge/docs/forms/load-options-from-url.md)
-         + [新增智慧行為：表單規則和邏輯指南](/help/edge/docs/forms/rules-forms.md)
+      + 文件型製作{#getting-started-edge-delivery-services-forms}
+         + [建置第一份表單：使用 Google Sheets 和 Excel 的快速入門指南](/help/edge/docs/forms/tutorial.md)
+         + [如何使用 Google Sheets 或 Excel 建立表單：逐步操作指南](/help/edge/docs/forms/create-forms.md)
+         + [自適應表單區塊的各種元件](/help/edge/docs/forms/form-components.md)
+         + [將您的表單連線至 Google Sheets：資料彙集設定指南](/help/edge/docs/forms/submit-forms.md)
+         + [將您的表單上線：發佈與資料彙集指南](/help/edge/docs/forms/publish-forms.md)
+         + [表單欄位驗證：在表單中加入錯誤檢查](/help/edge/docs/forms/validate-forms.md)
+         + [設計精美表單：樣式和自訂指南](/help/edge/docs/forms/style-theme-forms.md)
+         + [建立成功訊息：自訂表單的感謝頁面](/help/edge/docs/forms/thank-you-page-form.md)
+         + [表單提交指南：使用表單提交服務](/help/forms/forms-submission-service.md)
+         + [動態表單欄位：載入來自 URL 的選項](/help/edge/docs/forms/load-options-from-url.md)
+         + [新增智慧行為：表單規則與邏輯指南](/help/edge/docs/forms/rules-forms.md)
          + [進階表單驗證：規則運算式指南](/help/edge/docs/forms/regex-forms.md)
-         + [建立可重複使用的Forms：表單片段指南](/help/edge/docs/forms/form-fragments.md)
-         + [建立動態Forms：新增可重複區段](/help/edge/docs/forms/repeatable-forms.md)
-         + [將表單設為全域：表單翻譯指南](/help/edge/docs/forms/translate-forms.md)
-         + [保護您的Forms：新增reCAPTCHA安全性](/help/edge/docs/forms/recaptacha-forms.md)
+         + [建置可重複使用的表單：表單片段指南](/help/edge/docs/forms/form-fragments.md)
+         + [建立動態表單：新增可重複的區段](/help/edge/docs/forms/repeatable-forms.md)
+         + [製作全球適用的表單：表單翻譯指南](/help/edge/docs/forms/translate-forms.md)
+         + [保護表單：新增 reCAPTCHA 安全性](/help/edge/docs/forms/recaptacha-forms.md)
          + [建置自訂表單元件：開發人員指南](/help/edge/docs/forms/custom-components-forms.md)
          + [監視表單效能：實際使用監視指南](/help/edge/docs/forms/real-use-monitoring-for-forms.md)
    + Edge Delivery 資源 {#resources}
@@ -1157,12 +1158,12 @@ ht-degree: 94%
          + [了解如何為內容片段定義中繼資料和標記](/help/journey-headless/author/metadata-tagging.md)
 + 生成式 AI {#generative-ai}
    + [產生變化版本](/help/generative-ai/generate-variations.md)
-   + [產生變數 — 整合在AEM編輯器中](/help/generative-ai/generate-variations-integrated-editor.md)
+   + [產生變化版本：與 AEM 編輯器整合](/help/generative-ai/generate-variations-integrated-editor.md)
    + [助理 (限量測試版)](/help/implementing/cloud-manager/aem-ai-assistant.md)
 + 實作 {#implementing}
    + [為 AEM as a Cloud Service 實作應用程式](/help/implementing/home.md)
    + 使用 Cloud Manager {#using-cloud-manager}
-      + [瀏覽](/help/implementing/cloud-manager/navigation.md)
+      + [導覽](/help/implementing/cloud-manager/navigation.md)
       + [AEM 啟動台](/help/implementing/cloud-manager/aem-home.md)
       + 方案 {#programs}
          + [方案和方案類型](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
@@ -1217,7 +1218,7 @@ ht-degree: 94%
       + Edge Delivery Sites {#edge-delivery-sites}
          + [Cloud Manager 的 Edge Delivery Services 簡介](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)
          + [新增 Edge Delivery 網站至 Cloud Manager](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md)
-         + [在Cloud Manager中建立Edge Delivery網站](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md)
+         + [在 Cloud Manager 中建立 Edge Delivery 網站](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md)
          + [為 Edge Delivery 網站設定推播驗證](/help/implementing/cloud-manager/edge-delivery/cdn-setup-push-invalidation.md)
          + [在 Cloud Manager 中管理 Edge Delivery 網站](/help/implementing/cloud-manager/edge-delivery/manage-edge-delivery-sites.md)
       + 網域設定 {#custom-domain-names}
