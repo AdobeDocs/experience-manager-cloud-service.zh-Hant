@@ -1,57 +1,57 @@
 ---
-title: 使用Edge Delivery Services的AEM Forms常見問題集
-description: 取得使用Edge Delivery Services和Universal Editor的AEM Forms相關常見問題解答。 瞭解多語言表單、全域範本、表單片段、分析和資料整合功能。
+title: AEM Forms 與 Edge Delivery Services 常見問題集
+description: 針對 AEM Forms 與 Edge Delivery Services 和通用編輯器之常見問題獲得解答。了解多語言表單、全球範本、表單片段、分析以及資料整合功能。
 feature: Edge Delivery Services
 role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: b39601a1-7f37-4a7d-a4c8-7e79dca074e5
 source-git-commit: babddee34b486960536ce7075684bbe660b6e120
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '298'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# 常見問題集(FAQ)
+# 常見問題集 (FAQ)
 
 
-## 多語言支援及全球使用
+## 多語言支援和全球使用
 
-### 問：EDS和Universal Editor如何處理多語言表單？
+### 問：EDS 和通用編輯器如何處理多語言表單？
 
-**A：**&#x200B;多語言表單遵循與AEM Sites相同的翻譯工作流程。 Forms可透過標準AEM翻譯功能，以多種語言建立而成，滿足不同市場的需求。
+**答：**&#x200B;多語言表單遵循與 AEM Sites 相同的翻譯工作流程。使用標準 AEM 翻譯功能即可建立多種語言的表單以服務不同的市場。
 
-### 問：我可以建立並使用全域範本和表單片段嗎？
+### 問：我可以建立和使用全球範本及表單片段嗎？
 
-**A：**&#x200B;是，EDS和Universal Editor同時支援全域範本和表單片段。 這可讓您建立可在多個表單間共用的可重複使用元件。
+**答：**&#x200B;可以，EDS 和通用編輯器皆支援全球範本及表單片段。因此您可以建立可重複使用的元件並在多個表單之間共用。
 
-### 問：是否可以建立表單一次，並在多個網頁上使用？
+### 問：只建立表單一次，然後在多個網頁上使用該表單，是可行的做法嗎？
 
-**A：**&#x200B;是，您可以在一個位置建立表單，並在多個網頁上參照它，類似於最適化Forms中的表單內嵌元件功能。
+**答：**&#x200B;可以，您可以在一個位置建立表單，然後在多個網頁中引用該表單，類似於自適應表單中的表單嵌入元件功能。
 
 ## 資料整合與對應
 
-### 問：表單資料模型(FDM)整合如何與通用編輯器搭配運作？
+### 問：表單資料模型 (FDM) 整合如何與通用編輯器搭配運作？
 
-**A：**&#x200B;目前，可透過規則編輯器為個別欄位設定FDM整合。 自動欄位對應功能(類似Adaptive Forms中的表單資料模型精靈)正在開發中，即將推出。
+**答：**&#x200B;目前可以透過規則編輯器為個別欄位設定 FDM 整合。自動欄位對應功能 (類似於自適應表單中的表單資料模型精靈) 正在開發中，即將推出。
 
-## Analytics與Tracking
+## 分析與追蹤
 
-### 問：建議使用哪些選項進行表單分析和追蹤？
+### 問：表單分析與追蹤有哪些建議選項？
 
-**A：**&#x200B;有幾個分析和追蹤選項：
+**答：**&#x200B;有多種分析與追蹤選項：
 
-- Adobe Experience Platform Web SDK （主要建議）
-- 抽樣測量結果的真實使用者監視(RUM)
-- 視需要與其他分析系統整合
+- Adobe Experience Platform Web SDK (主要建議)
+- 針對取樣量度的真實使用者監視 (RUM)
+- 根據需要與其他分析系統整合
 
-## 檔案和資源
+## 文件與資源
 
-### 問：我可以在哪裡找到這些功能的相關檔案？
+### 問：我可以在哪裡找到這些功能的相關文件？
 
-**A：**&#x200B;您可以在下列位置找到詳細檔案：
+**答：**&#x200B;您可以在下列位置找到詳細的文件：
 
-- Forms行人穿越道檔案
-- 翻譯工作流程的標準AEM Sites檔案
-- 用於表單編寫的通用編輯器檔案
+- Forms Crosswalk 文件
+- 標準 AEM Sites 翻譯工作流程文件
+- 通用編輯器的表單製作文件
