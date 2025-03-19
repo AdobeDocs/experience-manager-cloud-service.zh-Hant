@@ -4,10 +4,10 @@ description: 本教學課程可協助您啟動並執行新的 Adobe Experience M
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 24a23d98-1819-4d6b-b823-3f1ccb66dbd8
-source-git-commit: 882e3e1340a6faaec8b4a8e26ff50007458b244a
+source-git-commit: 3db311812f6c4521baf1364523a0e0b1134fee65
 workflow-type: tm+mt
-source-wordcount: '1858'
-ht-degree: 96%
+source-wordcount: '1857'
+ht-degree: 98%
 
 ---
 
@@ -20,13 +20,13 @@ ht-degree: 96%
 | 文件型製作 | [按一下這裡](/help/edge/docs/forms/tutorial.md) |
 
 
-<span class="preview">此功能可透過搶先存取計畫使用。 若要要求存取權，請從您的正式地址傳送電子郵件至<a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a>，其中包含您的GitHub組織名稱和存放庫名稱。 例如，如果存放庫URL是https://github.com/adobe/abc，組織名稱是adobe，存放庫名稱是abc。</span>
+<span class="preview">您可以透過搶先體驗方案使用這項功能。若要要求存取權，請從您的正式地址傳送電子郵件至<a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a>，其中包含您的GitHub組織名稱和存放庫名稱。 例如，若存放庫 URL 為 https://github.com/adobe/abc,，則組織名稱為 adobe，存放庫名稱為 abc。</span>
 
 身處現今的數位時代，所有組織均需要建立簡單易用的表單。Edge Delivery Services 表單是使用通用編輯器所建立，提供 WYSIWYG (所見即所得) 功能。它提供現代、直覺易用的介面，能提高表單製作的效率。
 
-AEM Forms 會提供一個區塊，稱為最適化表單區塊，協助您輕鬆建立 Edge Delivery Services 表單來擷取和儲存資料。您可以[建立使用最適化表單區塊預先設定的新 AEM 專案](#create-a-new-aem-project-pre-configured-with-adaptive-forms-block)，或[將最適化表單區塊新增至現有 AEM 專案](#add-adaptive-forms-block-to-your-existing-aem-project)。
+AEM Forms 會提供一個稱為「自適應表單區塊」的區塊，協助您輕鬆建立 Edge Delivery Services 表單來擷取和儲存資料。您可以[建立使用最適化表單區塊預先設定的新 AEM 專案](#create-a-new-aem-project-pre-configured-with-adaptive-forms-block)，或[將最適化表單區塊新增至現有 AEM 專案](#add-adaptive-forms-block-to-your-existing-aem-project)。
 
-![Github存放庫工作流程](/help/edge/assets/repo-workflow.png){width="50%" align="center" height="50%"}
+![Github 存放庫工作流程](/help/edge/assets/repo-workflow.png){width="50%" align="center" height="50%"}
 
 此教學課程將指導您使用通用編輯器的所見即所得製作功能，在新的或現有的 Adobe Experience Manager Site 專案中，建立、預覽和發佈您自己的表單。
 
@@ -194,7 +194,7 @@ AEM Forms 範本可協助您很快開始使用預先設定最適化表單區塊�
 
 就是這樣！最適化表單區塊現在是您 AEM 專案的一部分。您可以[開始建立並新增表單至 AEM 專案](#add-edge-delivery-services-forms-to-aem-site-project)。
 
-## 使用 WYSIWYG 製作 AEM Forms
+## 使用WYSIWYG編寫Forms
 
 您可以在通用編輯器中開啟 AEM 專案進行 WYSIWYG 製作，您可以編輯專案並新增最適化表單區段，以在 AEM 專案頁面上包含 Edge Delivery Services 表單。
 
@@ -261,7 +261,7 @@ AEM Forms 範本可協助您很快開始使用預先設定最適化表單區塊�
 
 >[!NOTE]
 >
-> 您也可以[在Universal Editor中編寫獨立表單並將其發佈到Edge Delivery Services](/help/edge/docs/forms/universal-editor/create-forms.md)。
+> 您也可以[在通用編輯器中製作獨立表單，並將其發佈至 Edge Delivery Services](/help/edge/docs/forms/universal-editor/create-forms.md)。
 
 ## 設定本機 AEM 開發環境
 

@@ -1,17 +1,17 @@
 ---
-title: 如何在Universal Editor中為表單建立表單資料模型(FDM)？
+title: 如何在通用編輯器中為表單整合表單資料模型(FDM)？
 description: 瞭解如何根據表單資料模型(FDM)建立表單。 產生並編輯FDM中資料模型物件的範例資料。
 feature: Edge Delivery Services, Form Data Model
 role: Admin, User
 hide: true
 hidefromtoc: true
-source-git-commit: e2259e542df5a12748705af901d073e4486292c4
+exl-id: 9ce51223-57d0-47d8-8868-84b37d4e8e3e
+source-git-commit: 381aad580762fe957e1dc1d5824e4d35098f1ca4
 workflow-type: tm+mt
 source-wordcount: '1036'
-ht-degree: 5%
+ht-degree: 7%
 
 ---
-
 
 # 將表單與通用編輯器中的表單資料模型整合
 
@@ -66,15 +66,15 @@ ht-degree: 5%
 
 5. 按一下&#x200B;**[!UICONTROL 建立]**，即會出現&#x200B;**建立表單**&#x200B;精靈。
 6. 指定&#x200B;**名稱**&#x200B;和&#x200B;**標題**。
-7. 指定 **GitHub URL**。例如，如果您的GitHub存放庫名為`edsforms`，則位於帳戶`wkndforms`下，URL為：
+7. 指定 **GitHub URL**。例如，若您的 GitHub 存放庫名稱為 `edsforms`、位於帳戶 `wkndforms` 之下，則 URL 為：
    `https://github.com/wkndforms/edsforms`
-8. 按一下&#x200B;**[!UICONTROL 建立]**。
+8. 按一下「**[!UICONTROL 建立]**」。
 
    ![建立結構描述型表單](/help/edge/docs/forms/universal-editor/assets/create-schema-based-form.png)
 
-   您按一下&#x200B;**[!UICONTROL 建立]**，表單即會在通用編輯器中開啟以供編寫。
+   按一下「**[!UICONTROL 建立]**」，通用編輯器中便會開啟表單供您製作。
 
-   ![編寫表單](/help/edge/docs/forms/universal-editor/assets/schema-based-form-in-ue.png)
+   ![製作表單](/help/edge/docs/forms/universal-editor/assets/schema-based-form-in-ue.png)
 
    表單是使用關聯資料來源的資料元素所建立，且表單欄位具有預先設定的資料繫結。
 
@@ -128,7 +128,7 @@ ht-degree: 5%
 
    ![建置表單](/help/edge/docs/forms/universal-editor/assets/non-schema-form.png)
 
-   您也可以在表單元素的&#x200B;**繫結參考**屬性中指定資料繫結，以手動方式將資料繫結新增至表單元素。
+   您必須在表單元素的&#x200B;**繫結參考**屬性中指定資料繫結，以手動方式將資料繫結新增至表單元素。
 例如，我們將資料繫結參考新增至表單中已存在的**Pet名稱**&#x200B;文字方塊：
 
    ![手動為表單欄位新增資料](/help/edge/docs/forms/universal-editor/assets/non-schema-add-data-binding.png)

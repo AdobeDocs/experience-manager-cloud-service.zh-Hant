@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的運作方式以及該軟體可以為您做哪些事。
 breadcrumb-title: 使用手冊
 user-guide-title: 'AEM as a Cloud Service '
-source-git-commit: c4b4bc50fc9530d0e1ed982185c38716299abbb0
+source-git-commit: 381aad580762fe957e1dc1d5824e4d35098f1ca4
 workflow-type: tm+mt
-source-wordcount: '6086'
+source-wordcount: '6098'
 ht-degree: 99%
 
 ---
@@ -1047,7 +1047,8 @@ ht-degree: 99%
          + [保護表單免受垃圾郵件騷擾：新增 reCAPTCHA 安全性](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
          + [如何發佈及部署表單：通用編輯器發佈指南](/help/edge/docs/forms/universal-editor/publish-forms.md)
          + [建置自訂表單元件：通用編輯器開發人員指南](/help/edge/docs/forms/universal-editor/create-custom-component.md)
-         + [表單資料模型整合：整合Forms與表單資料模型](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md)
+         + [表單資料模型整合：將Forms與表單資料模型整合](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md)
+         + [可重複使用、模組化和獨立的區段：在表單中建立和使用表單片段](/help/edge/docs/forms/universal-editor/creating-form-fragments.md)
       + 文件型製作{#getting-started-edge-delivery-services-forms}
          + [建置第一份表單：使用 Google Sheets 和 Excel 的快速入門指南](/help/edge/docs/forms/tutorial.md)
          + [如何使用 Google Sheets 或 Excel 建立表單：逐步操作指南](/help/edge/docs/forms/create-forms.md)
