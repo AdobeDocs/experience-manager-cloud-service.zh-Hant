@@ -7,13 +7,13 @@ role: Admin, Architect, Developer
 source-git-commit: e2259e542df5a12748705af901d073e4486292c4
 workflow-type: tm+mt
 source-wordcount: '1907'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
 # 快速入門 - 開發人員教學課程
 
-身處今日數位時代，任何組織都需要建立對使用者友善的表單。適用於AEM Forms的Edge Delivery Services可讓您使用熟悉的工具(如Google Docs和Microsoft Office)來建立表單。
+身處今日數位時代，任何組織都需要建立對使用者友善的表單。AEM Forms 適用的 Edge Delivery Services 讓您可以使用 Google Docs 和 Microsoft Office 等熟悉的工具建立表單。
 
 這些表單可直接提交資料至 Microsoft Excel 或 Google Sheets 檔案，讓您能夠使用由 Google Sheets、Microsoft Excel 和 Microsoft SharePoint 等強大 API 建構的活躍生態系統，以便輕鬆處理提交的資料或啟動現有的業務工作流程。
 
@@ -59,7 +59,7 @@ AEM Forms 範本可協助您很快開始使用預先設定最適化表單區塊�
    >[!NOTE]
    >
    >
-   > 如果您使用GitHub Enterprise搭配IP篩選，您可以將下列IP新增至允許清單： 3.227.118.73
+   > 如果您使用有 IP 篩選功能的 GitHub Enterprise，可以將下列 IP 新增至允許清單：3.227.118.73
 
    恭喜！您有一個在  `https://<branch>--<repo>--<owner>.aem.page/` 上執行的新網站。
 
