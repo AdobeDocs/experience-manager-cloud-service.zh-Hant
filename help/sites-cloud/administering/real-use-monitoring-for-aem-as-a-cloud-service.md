@@ -4,9 +4,9 @@ description: 瞭解Real Use Monitoring (RUM) ，這是一項自動化服務，�
 exl-id: 91fe9454-3dde-476a-843e-0e64f6f73aaf
 feature: Administering
 role: Admin
-source-git-commit: fbc3358f1be3ae7ce3142cdc84815d304a2d6c38
+source-git-commit: e6a610c56b9ad7a684ea9f5ef72199d3bed28cc0
 workflow-type: tm+mt
-source-wordcount: '1009'
+source-wordcount: '1007'
 ht-degree: 1%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 1%
 
 >[!INFO]
 >
->使用者端監視僅適用於具有AEM (Adobe Experience Manager)Cloud Service版本&#x200B;**2024.5.16461**&#x200B;及更高版本的客戶。
+>使用者端監視僅適用於具有AEM (Adobe Experience Manager) Cloud Service **2024.5.16461**&#x200B;版及更高版本的客戶。
 
 ## 概觀 {#overview}
 
@@ -37,7 +37,7 @@ AEM中的Real Use Monitoring服務可保留訪客隱私權並將資料收集降�
 
 ## Real Use Monitoring服務資料抽樣 {#rum-service-data-sampling}
 
-傳統的網站分析解決方案會嘗試收集每位訪客的資料。 AEM Real Use Monitoring (RUM)服務只會從小部分的頁面檢視中擷取資訊。 此服務的用途是取樣和匿名處理，而非取代分析。 依預設，頁面的取樣比例為1:100。 網站運運算元目前無法增加或減少取樣速率。 為了準確估計總流量，每100次頁面檢視會從1收集資料，從而提供整體流量的可靠近似值。
+傳統的網站分析解決方案會嘗試收集每位訪客的資料。 AEM的Real Use Monitoring (RUM)服務只會從一小部分的頁面檢視中擷取資訊。 此服務的用途是取樣和匿名處理，而非取代分析。 依預設，頁面的取樣比例為1:100。 網站運運算元目前無法增加或減少取樣速率。 為了準確估計總流量，每100次頁面檢視會從1收集資料，從而提供整體流量的可靠近似值。
 
 在決定是否收集資料時，會依頁面檢視來決定，幾乎無法追蹤多個頁面上的互動。 在設計上，RUM沒有訪客或工作階段的概念，只有頁面檢視。
 
@@ -55,11 +55,11 @@ Real Use Monitoring服務可防止收集個人識別資訊。 RUM收集的完整
 * 載入頁面順序中特定事件的檢查點或名稱。 或者，以訪客身分與其互動
 * 使用者與上述查核點互動的DOM元素來源或識別碼。 例如，它可能是影像
 * 使用者與上述查核點互動的外部頁面或資源的目標或連結。 例如：`https://blog.adobe.com/jp/publish/2022/06/29/media_162fb947c7219d0537cce36adf22315d64fb86e94.png`
-* 核心Web Vitals (CWV)效能量度，包括最大內容繪製(LCP)、首次輸入延遲(FID)、累計版面位移(CLS)以及說明訪客體驗品質的首次位元組時間(TTFB)。
+* [核心Web Vitals (CWV)](https://web.dev/articles/lcp)效能量度[最大內容繪製(LCP)](https://web.dev/articles/lcp)、[與下一個繪製(INP)的互動](https://web.dev/articles/inp)以及描述訪客體驗品質的[累積版面配置轉換(CLS)](https://web.dev/articles/cls)。
 
 ## Real Use Monitoring如何為客戶運作 {#how-rum-works-for-a-customer}
 
-Real Use Monitoring會自動監視使用者端流量。 身為Adobe客戶，您無需執行任何其他步驟，因為此服務已順暢整合至您現有的設定。 隨著實際使用監控(RUM)服務正式推出，您將自動受益於這項新功能。 Real Use Monitoring服務目前不會公開任何受客戶影響的量度來進行監視。 我們正在努力儘快為您提供此功能。
+Real Use Monitoring會自動監視使用者端流量。 身為Adobe客戶，您不需要執行任何其他步驟，因為此服務已順暢整合至您現有的設定。 隨著實際使用監控(RUM)服務正式推出，您將自動受益於這項新功能。 Real Use Monitoring服務目前不會公開任何受客戶影響的量度來進行監視。 我們正在努力儘快為您提供此功能。
 
 <!-- Alexandru: hiding temporarily, until we figure out where this needs to be linked to 
 
@@ -107,6 +107,6 @@ Here are key considerations for customers to keep in mind when interpreting thei
 
 1. **我如何選擇退出？**
 
-   Adobe建議您使用「即時監控」(RUM)，因為這樣可帶來顯著的好處，並且可讓Adobe透過改善網站效能來協助您最佳化數位體驗。 此服務的設計是順暢無縫，不會影響網站的效能。
+   Adobe建議您使用「即時使用監控」(RUM)，因為這樣可帶來顯著的好處，且可讓Adobe透過改善網站效能，協助您最佳化數位體驗。 此服務的設計是順暢無縫，不會影響網站的效能。
 
    選擇退出可能代表您錯失了改善網站流量參與度的機會。 不過，如果您遇到任何問題，請聯絡Adobe支援。
