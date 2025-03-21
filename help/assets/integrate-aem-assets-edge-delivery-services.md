@@ -2,7 +2,7 @@
 title: '為 [!DNL Edge Delivery Services]編寫內容時整合 [!DNL AEM Assets] '
 description: 瞭解如何將 [!DNL AEM Assets] 與 [!DNL Edge Delivery Services]. This integration enables you to integrate [!DNL AEM Assets] 與 [!DNL Microsoft Word] 整合， [!DNL Google Docs], integrate [!DNL AEM Assets] 與 [!DNL Universal Editor], integrate [!DNL Dynamic Media with OpenAPI capabilities] 與 [!DNL Universal Editor] 整合，以及如何將 [!DNL Dynamic Media with OpenAPI capabilities] 與 [!DNL Microsoft Word] 與 [!DNL Google Docs]整合。
 exl-id: e58db2ce-a55a-49b3-ae8e-709b5ea8d095
-source-git-commit: 5d155ab940da84561ea52396e410b0cc15395310
+source-git-commit: 2de6352363959f4258c0786910eaef7babe68f15
 workflow-type: tm+mt
 source-wordcount: '668'
 ht-degree: 3%
@@ -58,7 +58,7 @@ ht-degree: 3%
 
 ## 將[!DNL AEM Assets]與[!DNL Edge Delivery Services]的檔案式編寫流程整合 {#integrate-aem-assets-with-document-based-authoring-tools}
 
-當[!DNL AEM Assets]與Document-Based Authoring工具（例如[!DNL Microsoft Word]或[!DNL Google Docs]）整合時，它會在您的編輯器中提供資產選擇器。 使用此資產選擇器來存取[!DNL AEM Assets]，並將核准的資產插入您的檔案中。
+當[!DNL AEM Assets]與您的檔案式編寫工具（例如[!DNL Microsoft Word]或[!DNL Google Docs]）整合時，它會在您的編寫工具中提供資產選擇器。 使用此資產選擇器來存取[!DNL AEM Assets]，並將核准的資產插入您的內容。
 如果您已有[!DNL Edge Delivery Services]網站，請參閱[[!DNL AEM Assets] 外掛程式](https://github.com/adobe-rnd/aem-assets-plugin/blob/main/README.md)檔案，以瞭解如何將[!DNL AEM Assets]與您現有的[!DNL AEM]專案整合。
 如果您沒有[!DNL Edge Delivery Services]網站，無法發佈使用檔案式編寫工具所編寫的[!DNL AEM Assets]內含式內容，請遵循下列[必要條件](#integrate-aem-assets-with-microsoft-word-and-google-docs)和[整合 [!DNL AEM Assets] 與檔案式編寫環境](#integrate-aem-assets-with-microsoft-word-or-google-docs-to-use-aem-assets-with-microsoft-word-or-google-docs)區段。
 
@@ -94,7 +94,7 @@ ht-degree: 3%
 
 * 已啟用[!DNL Dynamic Media with Open API capabilities]的Assets Cloud Service環境權益。
 * [!DNL Dynamic Media]授權。
-* [!DNL AEM Assets sidekick plugin]已啟用，並啟用影像資產的複製參考。 如需詳細資訊，請參閱檔案式撰寫的[這個](https://www.aem.live/developer/configuring-aem-assets-sidekick-plugin#copymode)，以及萬用編輯器式撰寫的[這個](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/configurable-asset-picker/#extension-overview)。
+* [!DNL AEM Assets sidekick plugin]已啟用，並啟用影像資產的複製參考。 如需詳細資訊，請參閱[此檔案以檔案為基礎的編寫](https://www.aem.live/developer/configuring-aem-assets-sidekick-plugin#copymode)，以及請參閱[此檔案以通用編輯器為基礎的編寫](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/configurable-asset-picker/#extension-overview)。
 * 已核准的Assets。 已核准的資產透過Assets Cloud Services後端或UI動作有`dam:status=Approved`。
 
 ### 使用使用[!DNL Dynamic Media with OpenAPI capabilities]傳遞的資產{#how-to-use-Dynamic-Media-with-OpenAPI-assets}

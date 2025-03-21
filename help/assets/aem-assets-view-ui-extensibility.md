@@ -4,9 +4,9 @@ description: 瞭解 [!DNL AEM Assets View]. [!DNL AEM Assets View] UI的UI擴充
 feature: App Builder
 role: User, Developer
 exl-id: a11f7043-17cf-4331-b76c-d3db099c2411
-source-git-commit: 5d155ab940da84561ea52396e410b0cc15395310
+source-git-commit: 2de6352363959f4258c0786910eaef7babe68f15
 workflow-type: tm+mt
-source-wordcount: '569'
+source-wordcount: '542'
 ht-degree: 3%
 
 ---
@@ -47,9 +47,7 @@ ht-degree: 3%
     </tr>
 </table>
 
-[!DNL AEM Assets View]支援UI擴充功能，可讓您針對[!DNL AEM Assets View]現成功能未滿足的特定工作流程和業務需求，將自訂UI元件新增至[!DNL Assets View] UI。 此[!DNL AEM Assets View]的UI擴充功能可增強其彈性，讓組織能夠針對特定工作流程和需求調整介面。
-
-在您的[!DNL AEM Assets View]中啟用UI擴充功能，以將自訂UI元件新增至您的[!DNL Assets View] UI，以符合[!DNL AEM Assets View]現成功能未滿足的特定業務需求。\
+[!DNL AEM Assets View]支援UI擴充功能，可讓您針對[!DNL AEM Assets View]現成功能未滿足的特定工作流程和業務需求，將自訂UI元件新增至[!DNL Assets View] UI。 此[!DNL AEM Assets View]的UI擴充功能可增強其彈性，讓組織能夠針對特定工作流程和需求調整介面。\
 您可以將擴充功能新增至&#x200B;**資產**、**資料夾**&#x200B;和&#x200B;**集合**&#x200B;層級。 新增的擴充功能會顯示在&#x200B;**資產**、**集合**&#x200B;或&#x200B;**資料夾** **[!UICONTROL 詳細資料]**&#x200B;頁面的專用面板上。
 
 >[!IMPORTANT]
