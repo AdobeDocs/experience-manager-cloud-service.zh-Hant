@@ -5,20 +5,57 @@ contentOwner: Rick Brough
 feature: Dynamic Media,Configuration,FAQ
 role: Admin,User
 exl-id: 0a8a5fd8-a341-4e7f-84a5-409e2de97efe
-source-git-commit: 26afff3a39a2a80c1f730287b99f3fb33bff0673
+source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
 workflow-type: tm+mt
-source-wordcount: '798'
-ht-degree: 1%
+source-wordcount: '844'
+ht-degree: 3%
 
 ---
 
 # HTTP2 傳送內容常見問題集{#http-delivery-of-content-faq}
 
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets與Edge Delivery Services整合</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI擴充性</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>啟用Dynamic Media Prime和Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>搜尋最佳實務</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>中繼資料最佳實務</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 開發人員文件</b></a>
+        </td>
+    </tr>
+</table>
+
 Adobe很高興宣佈推出HTTP/2內容傳送。 使用HTTP/2時，整體效能會提高。
 
 >[!NOTE]
 >
->此功能需要您使用Adobe Experience Manager - Dynamic Media隨附的現成內容傳遞網路。 此功能不支援任何其他自訂內容傳遞網路。
+>此功能需要您使用Adobe Experience Manager - Dynamic Media隨附的現成可用內容傳遞網路。 此功能不支援任何其他自訂內容傳遞網路。
 
 ## 什麼是HTTP/2？ {#what-is-http}
 
@@ -44,12 +81,12 @@ Adobe自己的測試產生以下結果：
 若要使用HTTP/2，您必須符合下列要求：
 
 * 針對您的多媒體請求使用安全HTTPS。
-* 使用Adobe套件式CDN （內容傳遞網路），作為Dynamic Media Classic授權的一部分。
-* 使用專用網域（即`images.company.com`或`mycompany.scene7.com`），而非一般Dynamic Media網域（即`s7d1.scene7.com`、`s7d2.scene7.com`或`s7d13.scene7.com`）。
+* 使用Adobe隨附的CDN （內容傳遞網路），作為Dynamic Media Classic授權的一部分。
+* 使用專用網域（即`images.company.com`或`mycompany.scene7.com`），而非一般的Dynamic Media網域（即`s7d1.scene7.com`、`s7d2.scene7.com`或`s7d13.scene7.com`）。
 
   若要尋找您的網域，請開啟[Dynamic Media Classic案頭應用程式](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)，然後登入您的帳戶。
 
-  移至&#x200B;**[!UICONTROL 設定]** > **[!UICONTROL 應用程式設定]** > **[!UICONTROL 一般設定]**。 尋找標示為&#x200B;**已發佈的伺服器名稱**&#x200B;的欄位。 如果您目前使用一般Dynamic Media網域，您可以在此轉換中要求移至您自己的自訂網域。
+  移至&#x200B;**[!UICONTROL 設定]** > **[!UICONTROL 應用程式設定]** > **[!UICONTROL 一般設定]**。 尋找標示為&#x200B;**已發佈的伺服器名稱**&#x200B;的欄位。 如果您目前使用一般的動態媒體網域，您可以在此轉變中要求移至您自己的自訂網域。
 
 ## 為我的Dynamic Media帳戶啟用HTTP/2的程式為何？ {#what-is-the-process-for-enabling-http-for-my-dm-account}
 
@@ -65,12 +102,12 @@ Adobe自己的測試產生以下結果：
    移至&#x200B;**[!UICONTROL 設定]** > **[!UICONTROL 應用程式設定]** > **[!UICONTROL 一般設定]**。 尋找標示為&#x200B;**[!UICONTROL 已發佈的伺服器名稱]**&#x200B;的欄位。
 
    * 確認您使用安全HTTPS處理多媒體請求。
-   * 確認您是透過Adobe使用CDN，且不受直接關係管理。
+   * 確認您是透過Adobe使用CDN，而不是透過直接關係管理。
    * 確認您使用專用網域。 即`images.company.com`或`mycompany.scene7.com`，不是一般Dynamic Media網域，例如`s7d1.scene7.com`、`s7d2.scene7.com`、`s7d13.scene7.com`。
 
    若要尋找您的網域，請開啟[Dynamic Media Classic案頭應用程式](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)，然後登入您的帳戶。
 
-   移至&#x200B;**[!UICONTROL 設定]** > **[!UICONTROL 應用程式設定]** > **[!UICONTROL 一般設定]**。 尋找標示為&#x200B;**[!UICONTROL 已發佈的伺服器名稱]**&#x200B;的欄位。 如果您目前使用一般Dynamic Media網域，您可以在此轉換中要求移至您自己的自訂網域。
+   移至&#x200B;**[!UICONTROL 設定]** > **[!UICONTROL 應用程式設定]** > **[!UICONTROL 一般設定]**。 尋找標示為&#x200B;**[!UICONTROL 已發佈的伺服器名稱]**&#x200B;的欄位。 如果您目前使用一般的動態媒體網域，您可以在此轉變中要求移至您自己的自訂網域。
 
    1. 客戶支援會根據提交請求的順序，將您新增至HTTP/2客戶輪候表。
    1. 當Adobe準備好處理您的請求時，客戶支援會聯絡您以協調轉換並設定目標日期。
@@ -92,4 +129,4 @@ Adobe自己的測試產生以下結果：
 
 ## 如何確認URL或網站是否以HTTP/2啟動？ {#how-can-you-verify-whether-a-url-or-website-is-activated-with-http}
 
-下載擴充功能以用於網頁瀏覽器。 Firefox和Chrome有一個名為&#x200B;**[!UICONTROL HTTP/2和SPDY Indicator]**&#x200B;的擴充功能。 瀏覽器僅安全地支援HTTP/2，因此有必要呼叫具有HTTPS的URL以進行驗證。 如果支援HTTP/2，則會以藍色Flash符號和標頭「X-Firefox-Spdy」的格式在擴充功能中標示：「h2」。
+下載擴充功能以用於網頁瀏覽器。 Firefox和Chrome有一個名為&#x200B;**[!UICONTROL HTTP/2和SPDY Indicator]**&#x200B;的擴充功能。 瀏覽器僅安全地支援HTTP/2，因此有必要呼叫具有HTTPS的URL以進行驗證。 如果支援HTTP/2，則會以藍色Flash符號和標頭「X-Firefox-Spdy」的格式加上擴充功能來表示：「h2」。

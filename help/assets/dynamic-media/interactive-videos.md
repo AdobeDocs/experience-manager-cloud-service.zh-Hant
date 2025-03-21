@@ -1,18 +1,55 @@
 ---
 title: 互動式影片
-description: 瞭解如何在Dynamic Media中使用互動式視訊和可購物視訊。
+description: 瞭解如何在Dynamic Media中使用互動式視訊和可訂購視訊。
 contentOwner: Rick Brough
 feature: Interactive Videos
 role: User
 exl-id: e4859223-91de-47a1-a789-c2a9447e5f71
-source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
+source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
 workflow-type: tm+mt
-source-wordcount: '5863'
+source-wordcount: '5909'
 ht-degree: 2%
 
 ---
 
 # 互動式影片{#interactive-videos}
+
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets與Edge Delivery Services整合</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI擴充性</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>啟用Dynamic Media Prime和Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>搜尋最佳實務</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>中繼資料最佳實務</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 開發人員文件</b></a>
+        </td>
+    </tr>
+</table>
 
 您可以輕鬆建立互動式視訊（也稱為可購物視訊），並直接從視訊推動轉換。 客戶與影片互動於影片播放器旁的面板中進行，相關服務、資訊或產品縮圖會根據影片中的功能捲動至檢視畫面中。 客戶可以選取縮圖並直接連結至服務，或將專案新增至購物車以立即購買，或連結至網頁以取得詳細資訊。
 
@@ -70,7 +107,7 @@ There was a link here that showed the video frame of an interactive video and wh
 1. **（選擇性）識別Quickview變數** — 從識別現有Quickview實作所使用的動態變數開始。 當您建立互動式視訊時，可使用變數將產品縮圖對應至其對應的產品快速檢視。 請參閱[（選擇性）識別Quickview變數](#optional-identifying-quickview-variables)。
    **只有符合下列所有條件時才需要此步驟：**
    * 您要透過觸發至快速檢視，將互動性新增至視訊。
-   * 您的Experience Manager實作&#x200B;*不*&#x200B;會使用電子商務整合架構，將產品資料從任何電子商務解決方案(例如IBM®WebSphere®Commerce、Elastic Path、SAP Hybris或Intershop)提取至Experience Manager。
+   * 您實作Experience Manager時，*不會*&#x200B;使用電子商務整合架構，將產品資料從任何電子商務解決方案(例如IBM®WebSphere®Commerce、Elastic Path、SAP Hybris或Intershop)提取至Experience Manager。
 
 1. **（選擇性）建立互動式視訊檢視器預設集** — 自訂組成播放器的各種元件的外觀和行為，例如視訊筆畫壓感和互動式縮圖。
 如果您打算使用現成的互動視訊檢視器預設集`Shoppable_Video_Light`或`Shoppable_Video_Dark`，則不需要建立自己的互動視訊檢視器預設集。
@@ -81,14 +118,14 @@ There was a link here that showed the video frame of an interactive video and wh
 
    >[!NOTE]
    >
-   >Dynamic Media中的「互動式視訊」尚不支援MXF視訊格式。
+   >Dynamic Media尚不支援MXF視訊格式用於互動式視訊。
 
 1. **將互動性新增至您的視訊** — 新增一或多個時間區段至視訊。 然後，在這些時間區段中建立影像縮圖的關聯。 將每個影像縮圖指派給動作，例如超連結、快速檢視或體驗片段。
 (如果您的互動式內容有具有相對URL的連結，尤其是指向Experience Manager Sites頁面的連結，則無法採用URL型連結方法。)
 完成發佈互動式視訊資產。 發佈作業會建立內嵌程式碼或URL，您最終會複製並套用至您的網站登陸頁面。 請參閱[將互動性新增至視訊](#adding-interactivity-to-your-video)。
-請參閱[Publish Assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)。
+請參閱[發佈Assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)。
 
-1. **在Experience Manager中將互動式視訊新增至您的網站或您的網站** — 如果您使用Experience Manager Sites或eCommerce或兩者，請在Experience Manager中將互動式視訊新增至網頁。 將互動媒體元件拖曳至頁面。 請參閱[將Dynamic Media Assets新增至頁面](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)。
+1. **在Experience Manager中，將互動式視訊新增至您的網站或網站** — 如果您使用Experience Manager Sites或eCommerce或兩者，請在Experience Manager中將互動式視訊新增至網頁。 將互動媒體元件拖曳至頁面。 請參閱[將Dynamic Media Assets新增至頁面](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)。
 使用內嵌程式碼或URL，將您的互動式視訊與網站體驗整合。 請參閱[將互動式視訊與您的網站整合](#integrating-an-interactive-video-with-your-website)。
 如果您使用協力廠商WCM （Web內容管理員），您必須將新的互動式視訊與網站上使用的現有Quickview實作整合。 請參閱[將互動式視訊與現有的快速檢視](#integrating-an-interactive-video-with-an-existing-quickview)整合。
    [將Dynamic Media Assets新增至頁面](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
@@ -100,7 +137,7 @@ There was a link here that showed the video frame of an interactive video and wh
 >只有在下列情況為真時才需要此工作：
 >
 >* 您要透過觸發至快速檢視，將互動性新增至視訊。
->* 您的Experience Manager實作&#x200B;*不*&#x200B;會使用電子商務整合架構，將產品資料從任何電子商務解決方案(例如IBM®WebSphere®Commerce、Elastic Path、SAP Hybris或Intershop)提取至Experience Manager。<!-- See [eCommerce concepts in Experience Manager Assets](/help/sites-administering/concepts.md).-->
+>* 您實作Experience Manager時，*不會*&#x200B;使用電子商務整合架構，將產品資料從任何電子商務解決方案(例如IBM®WebSphere®Commerce、Elastic Path、SAP Hybris或Intershop)提取至Experience Manager。<!-- See [eCommerce concepts in Experience Manager Assets](/help/sites-administering/concepts.md).-->
 >
 >如果您的Experience Manager實作使用電子商務，您可以略過此任務並繼續下一個任務。
 
@@ -135,9 +172,9 @@ There was a link here that showed the video frame of an interactive video and wh
 
 在此過程中，請務必使用不同的產品類別和型別，造訪您網站的不同區域。 原因在於「快速檢視」URL具有指定網站類別的共同部分，但只有在您造訪網站的其他區域時才會變更。
 
-最簡單的情況是，快速檢視URL中的唯一變數部分是產品SKU。 在此情況下，將縮圖新增至Experience Manager互動視訊中的時間區段時，只需要產品SKU值即可。
+最簡單的情況是，快速檢視URL中的唯一變數部分是產品SKU。 在此情況下，在Experience Manager的互動式視訊中，將縮圖新增至時間區段所需的唯一資料片段就是產品SKU值。
 
-不過，在複雜的情況下，除了產品SKU之外，快速檢視URL還有不同的變數元素，例如類別ID和顏色代碼。 在這種情況下，每個這類元素在Experience Manager的縮圖資料定義中都會變成個別變數。
+不過，在複雜的情況下，除了產品SKU之外，快速檢視URL還有不同的變數元素，例如類別ID和顏色代碼。 在這種情況下，在Experience Manager的縮圖資料定義中，每個這類元素都會變成個別變數。
 
 請考量下列快速檢視URL範例及其產生的縮圖變數：
 
@@ -160,7 +197,7 @@ There was a link here that showed the video frame of an interactive video and wh
       <li><p><code>https://server/product/6422350843</code></p> </li>
       <li><p><code>https://server/product/1607745002</code></p> </li>
       <li><p><code>https://server/product/0086724882</code></p> </li>
-    </ul> <p>變數部分位於路徑的最後一部分，並且變成Experience Manager縮圖的SKU值： <strong><code>6422350843</code></strong>、<strong><code>1607745002</code></strong>、<strong><code>0086724882</code></strong>。</p> </td>
+    </ul> <p>變數部分位於路徑的最後一部分，且會變成Experience Manager縮圖的SKU值： <strong><code>6422350843</code></strong>、<strong><code>1607745002</code></strong>、<strong><code>0086724882</code></strong>。</p> </td>
   </tr>
   <tr>
     <td><p>查詢字串中的SKU和類別ID。</p> </td>
@@ -243,7 +280,7 @@ There was a link here that showed the video frame of an interactive video and wh
 
 >[!NOTE]
 >
->Dynamic Media中的「互動式視訊」尚不支援MXF視訊格式。
+>Dynamic Media尚不支援MXF視訊格式用於互動式視訊。
 
 若您上傳了錯誤的影片或影像，或要刪除您不再需要的已上傳影片或影像，請參閱[刪除Assets](/help/assets/manage-digital-assets.md#delete-assets)。
 
@@ -354,7 +391,7 @@ There was a link here that showed the video frame of an interactive video and wh
 
    在上方的熒幕擷圖C中，「時間軸比例」設定已移動到8秒。 請注意包含產品縮圖的區段縮小方式。 如果您有長影片，而且您想要能夠看到更多一般符合頁面寬度的區段概觀，以此方式縮小會很有用。
 
-1. （可選）執行下列任一項作業：
+1. (選用) 執行以下任一操作：
 
    * 調整區段的開始時間和結束時間。
 
@@ -411,7 +448,7 @@ There was a link here that showed the video frame of an interactive video and wh
       <td>若要將選取的縮圖影像與快速檢視產生關聯</td> 
       <td><p>在動作型別下，選取<strong>快速檢視</strong>。</p> <p>如果您是Experience Manager Sites和電子商務客戶：</p> 
        <ul> 
-       <li>請注意，「SKU值」文字欄位已預先填入所選產品的SKU （庫存單位）。 SKU是您提供的每個不同產品或服務的唯一識別碼。 當影像與Experience ManagerCommerce中的產品相關聯時，會自動填入此欄位。</li> 
+       <li>請注意，「SKU值」文字欄位已預先填入所選產品的SKU （庫存單位）。 SKU是您提供的每個不同產品或服務的唯一識別碼。 當影像與Experience Manager Commerce中的產品相關聯時，會自動填入此欄位。</li> 
        <li>如果預先填入的SKU不正確，請選取「產品挑選器」圖示（放大鏡）以開啟「選取產品」頁面。 選取您要使用的產品，然後選取頁面右上角的核取標籤。 您會返回互動式視訊編輯器。</li> 
        </ul> <p> 如果您<em>不是</em> Experience Manager Sites或電子商務客戶</p> 
        <ul> 
@@ -495,11 +532,11 @@ There was a link here that showed the video frame of an interactive video and wh
    >
    >當您儲存互動式視訊時，會自動 `.vtt` 儲存相關的檔案。`.vtt`檔案已儲存至&#x200B;**[!UICONTROL Assets]**&#x200B;根目錄的`_VTT`資料夾。 您的互動式視訊必須有檔案和資料夾才能在網站上正確播放。因此，請勿移動、編輯或刪除資料夾 `_VTT` 或其內容。
 
-1. Publish互動視訊。 發佈作業會建立內嵌程式碼或URL，您最後會將其複製並貼到您的網站體驗中。
+1. 發佈互動式視訊。 發佈作業會建立內嵌程式碼或URL，您最後會將其複製並貼到您的網站體驗中。
 
    如果您新增與快速檢視的互動，則只能使用內嵌程式碼；如果您新增與超連結網頁的互動，則也可以使用已發佈的URL。 但請注意，如果您的互動式內容有具有相對URL的連結，尤其是指向Experience Manager Sites頁面的連結，則無法採用URL型連結方法。
 
-   檢視[Publish資產](publishing-dynamicmedia-assets.md)。
+   請參閱[發佈資產](publishing-dynamicmedia-assets.md)。
 
    >[!NOTE]
    >
@@ -507,9 +544,9 @@ There was a link here that showed the video frame of an interactive video and wh
 
    新增時間軸區段並發佈互動式視訊後，您就可以將其新增至您現有的網站登陸頁面。 請參閱[將互動式視訊與您的網站整合](#integrating-an-interactive-video-with-your-website)。
 
-## Publish互動式視訊資產 {#publishing-interactive-video-assets}
+## 發佈互動式視訊資產 {#publishing-interactive-video-assets}
 
-如需如何發佈互動式視訊資產的詳細資訊，請參閱[Publish Assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)。
+如需如何發佈互動式視訊資產的詳細資訊，請參閱[發佈Assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)。
 
 ## 將互動式視訊與您的網站整合 {#integrating-an-interactive-video-with-your-website}
 
@@ -566,7 +603,7 @@ There was a link here that showed the video frame of an interactive video and wh
 </script>
 ```
 
-整合就像移除視訊內嵌程式碼，並從Experience Manager中將它取代為互動式視訊內嵌程式碼一樣簡單。 您可以在以下URL看到結果。 雖然它會顯示頁面上顯示的互動視訊，但尚未與現有的快速檢視整合：
+整合就像移除視訊內嵌程式碼，並從Experience Manager將其取代為互動式視訊內嵌程式碼一樣簡單。 您可以在以下URL看到結果。 雖然它會顯示頁面上顯示的互動視訊，但尚未與現有的快速檢視整合：
 
 [https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-1.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-1.html)
 
@@ -585,7 +622,7 @@ There was a link here that showed the video frame of an interactive video and wh
 1. 前端程式碼會使用步驟2中取得的URL傳送AJAX要求。
 1. 後端邏輯會將對應的快速檢視資料或內容傳回前端程式碼。
 1. 前端程式碼會載入快速檢視資料或內容。
-1. 前端程式碼可選擇將載入的快速檢視資料轉換為HTML表示法。
+1. 前端程式碼可選擇性將載入的Quickview資料轉換為HTML表示法。
 1. 前端程式碼會顯示模型對話方塊或面板，並在畫面上為使用者呈現HTML內容。
 
 這些呼叫不代表網頁邏輯可從任意步驟呼叫的獨立公用API呼叫。 相反地，這是一種鏈結呼叫，下個步驟的每一個都會隱藏在上一個步驟的最後一個階段（回撥）。
@@ -600,7 +637,7 @@ There was a link here that showed the video frame of an interactive video and wh
 
 此外，互動式視訊檢視器支援全熒幕操作模式。 使用者透過選擇縮圖而不離開全熒幕來觸發快速檢視。 若要實現此功能，請修改前端程式碼，以便將「快速檢視」強制回應對話方塊附加至檢視器的容器。 請勿新增當檢視器處於全熒幕模式時無法使用的檔案BODY或其他網頁元素。 執行此工作的程式碼會監聽另一個檢視器回呼，此回呼會在檢視器載入頁面後傳送。
 
-Experience Manager傳回的內嵌程式碼已有現成的事件處理常式。 如下列醒目提示的程式碼片段所示，系統會將它標籤為已註解：
+Experience Manager傳回的內嵌程式碼已備有立即可用的事件處理常式。 如下列醒目提示的程式碼片段所示，系統會將它標籤為已註解：
 
 ```js {.line-numbers}
 <style type="text/css">

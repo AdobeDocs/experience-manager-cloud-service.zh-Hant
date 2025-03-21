@@ -7,14 +7,51 @@ content-type: reference
 feature: Accessibility
 role: Admin,User
 exl-id: f8d2dcbf-f61a-4b27-a3fc-406e3662adcb
-source-git-commit: 6ad46350906c3b8a36a8e361714fa5fffdbf8e82
+source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
 workflow-type: tm+mt
-source-wordcount: '638'
-ht-degree: 1%
+source-wordcount: '684'
+ht-degree: 3%
 
 ---
 
 # Dynamic Media 無障礙內容 {#accessibility-in-dm}
+
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets與Edge Delivery Services整合</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI擴充性</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>啟用Dynamic Media Prime和Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>搜尋最佳實務</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>中繼資料最佳實務</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 開發人員文件</b></a>
+        </td>
+    </tr>
+</table>
 
 {{work-with-dynamic-media}}
 
@@ -22,9 +59,9 @@ Dynamic Media在編寫使用者介面中支援鍵盤控制和輔助技術，例�
 
 ## Dynamic Media中的鍵盤協助工具支援 {#keyboard-support-in-dm}
 
-由於Dynamic Media是[!DNL Experience Manager Assets]的外掛程式，因此大部分的鍵盤控制行為與[!DNL Experience Manager Assets]中的相同。 例如，Dynamic Media中的`Cancel`按鈕與[!DNL Experience Manager Assets]中的焦點反白顯示相同。 它也會回應`Spacebar`金鑰，如[!DNL Experience Manager Assets]。 請參閱Assets](/help/assets/accessibility.md#keyboard-shortcuts)中的[鍵盤快速鍵。
+因為Dynamic Media是[!DNL Experience Manager Assets]的外掛程式，所以大部分的鍵盤控制項行為與[!DNL Experience Manager Assets]中的相同。 例如，Dynamic Media中的`Cancel`按鈕與[!DNL Experience Manager Assets]中的焦點反白顯示相同。 它也會回應`Spacebar`金鑰，如[!DNL Experience Manager Assets]。 請參閱Assets](/help/assets/accessibility.md#keyboard-shortcuts)中的[鍵盤快速鍵。
 
-Dynamic Media中的個別使用者介面元素所支援的按鍵在大多數情況下顯而易見，很容易找到。 Dynamic Media中的鍵盤控制項約為下列專案：
+Dynamic Media中個別使用者介面元素支援的按鍵在大多數情況下顯而易見，很容易找到。 Dynamic Media中的鍵盤控制項與下列內容有關：
 
 * 能夠使用`Tab`和`Shift+Tab`按鍵在頁面上的互動式元素之間導覽。
 使用`Tab`將輸入焦點推進到Tab鍵順序中的下一個使用者介面元素；使用`Shift+Tab`將輸入焦點帶回上一個使用者介面元素。
@@ -47,20 +84,20 @@ Dynamic Media中的個別使用者介面元素所支援的按鍵在大多數情�
 
 <!-- I would not get into much of details of specific keyboard support logic of these editors. One of the reasons - chances are that accessibility support will receive Phase2-like attention, with more holistic approach. -->
 
-## Dynamic Media {#assistive-technology=support-for-dm}中的輔助技術支援
+## Dynamic Media {#assistive-technology=support-for-dm}的輔助技術支援
 
-Dynamic Media使用者介面元素可與熒幕助讀程式等輔助技術搭配使用。 例如，當您使用鍵盤快速鍵`D`瀏覽地標或使用鍵盤快速鍵`R`瀏覽區域時，它可以辨識頁面上的地標。 它也會在使用標題鍵盤快速鍵`H`導覽時提供標題旁白。
+Dynamic Media使用者介面元素可與熒幕閱讀器等輔助技術搭配使用。 例如，當您使用鍵盤快速鍵`D`瀏覽地標或使用鍵盤快速鍵`R`瀏覽區域時，它可以辨識頁面上的地標。 它也會在使用標題鍵盤快速鍵`H`導覽時提供標題旁白。
 
 ## Dynamic Media檢視器中的鍵盤協助工具支援 {#keyboard-accessibility-for-dm-viewers}
 
-所有現成的Dynamic Media檢視器元件都支援客戶的鍵盤協助工具。
+所有現成的Dynamic Media檢視器元件都支援客戶的鍵盤協助功能。
 
 請參閱Dynamic Media檢視器參考指南中的[鍵盤協助工具與導覽](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/c-keyboard-accessibility.html)。
 
 ## Dynamic Media檢視器{#assistive-technology=support-for-dm-viewers}中的輔助技術支援
 
 所有Dynamic Media檢視器元件都支援ARIA （可存取的豐富網際網路應用程式）角色和屬性，以改進與熒幕閱讀器等輔助技術的整合。
-請參閱Dynamic Media檢視器參考指南中任何自訂檢視器主題中的**輔助技術支援**&#x200B;說明主題。 例如，請參閱視訊檢視器的[輔助技術支援](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/r-html5-video-viewer-20-assistive.html)，或互動式影像檢視器的[輔助技術支援](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-assistive.html#viewers-for-aem-assets-only)。
+請參閱Dynamic Media檢視器參考指南中任何自訂檢視器主題的**輔助技術支援**&#x200B;說明主題。 例如，請參閱視訊檢視器的[輔助技術支援](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/r-html5-video-viewer-20-assistive.html)，或互動式影像檢視器的[輔助技術支援](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-assistive.html#viewers-for-aem-assets-only)。
 
 ## [!DNL Dynamic Media]中的隱藏式字幕支援 {#closed-caption-support}
 

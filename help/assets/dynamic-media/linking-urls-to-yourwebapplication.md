@@ -5,24 +5,61 @@ contentOwner: Rick Brough
 feature: Publishing,Upload,Viewer Presets,Image Presets,Video
 role: User
 exl-id: 3cd3f4d5-ebf0-4318-9a0d-1ea69453d57b
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
 workflow-type: tm+mt
-source-wordcount: '1281'
-ht-degree: 5%
+source-wordcount: '1327'
+ht-degree: 6%
 
 ---
 
 # 將 URL 連結至您的網頁應用程式 {#linking-urls-to-your-web-application}
 
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets與Edge Delivery Services整合</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI擴充性</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>啟用Dynamic Media Prime和Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>搜尋最佳實務</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>中繼資料最佳實務</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 開發人員文件</b></a>
+        </td>
+    </tr>
+</table>
+
 您的網站和應用程式會透過URL呼叫來存取Dynamic Media服務。 發佈資產後，Dynamic Media會啟用參考該資產的URL字串。 您可以將這些URL貼到網頁瀏覽器以進行測試。
 
 只有在您&#x200B;*不是*&#x200B;使用Adobe Experience Manager做為WCM時，您才會連結至URL。 當您想要以快顯視窗或模型視窗形式傳送視訊播放器時，會使用連結（而非內嵌）。 如果您使用Experience Manager做為WCM，[請直接在頁面上新增資產](adding-dynamic-media-assets-to-pages.md)。
 
-若要將這些URL字串放置在網頁和應用程式中，請從Dynamic Media複製它們。
+若要將這些URL字串置入網頁和應用程式中，請從Dynamic Media複製它們。
 
 >[!NOTE]
 >
->URL字串僅可用於資產的動態轉譯。 這些變數目前無法用於位於DAM中的靜態資產，也無法用於Dynamic Media伺服器。 靜態的轉譯不會出現URL按鈕。
+>URL字串僅可用於資產的動態轉譯。 它們目前無法用於位於DAM中的靜態資產，也無法用於動態媒體伺服器。 靜態的轉譯不會出現URL按鈕。
 
 另請參閱[將視訊或影像檢視器內嵌在網頁上](embed-code.md)。
 
@@ -40,11 +77,11 @@ ht-degree: 5%
 >
 >在您發佈選取的資產之前，無法複製URL。 此外，您也必須發佈檢視器預設集或影像預設集。
 >
->請參閱[Publish Assets](publishing-dynamicmedia-assets.md)。
+>請參閱[發佈Assets](publishing-dynamicmedia-assets.md)。
 >
->請參閱[Publish檢視器預設集](managing-viewer-presets.md#publishing-viewer-presets)。
+>請參閱[發佈檢視器預設集](managing-viewer-presets.md#publishing-viewer-presets)。
 >
->請參閱[Publish影像預設集](managing-image-presets.md#publishing-image-presets)。
+>請參閱[發佈影像預設集](managing-image-presets.md#publishing-image-presets)。
 
 有幾種不同的方法可以取得URL字串。 不過，下列步驟只顯示一個您可以使用的方法。
 
@@ -54,11 +91,11 @@ ht-degree: 5%
 
    請記住，URL僅可在您首次發 *布資產* 後 *複製* 。此外，檢視器預設集或影像預設集也必須發佈。
 
-   請參閱[Publish Assets](publishing-dynamicmedia-assets.md)。
+   請參閱[發佈Assets](publishing-dynamicmedia-assets.md)。
 
-   請參閱[Publish檢視器預設集](managing-viewer-presets.md#publishing-viewer-presets)。
+   請參閱[發佈檢視器預設集](managing-viewer-presets.md#publishing-viewer-presets)。
 
-   請參閱[Publish影像預設集](managing-image-presets.md#publishing-image-presets)。
+   請參閱[發佈影像預設集](managing-image-presets.md#publishing-image-presets)。
 
 1. 根據您選取的資產，執行下列任一項作業：
 
@@ -87,7 +124,7 @@ ht-degree: 5%
 Dynamic Media支援靜態資產的傳送，這是影像和視訊以外的其他資產。 支援的靜態資產傳送格式包括：
 
 * 3D檔案
-* 動畫GIF
+* GIF動畫
 * 音訊檔案
 * CSS
 * JavaScript （當貴公司設定自己的網域時）
@@ -118,8 +155,8 @@ Dynamic Media支援靜態資產的傳送，這是影像和視訊以外的其他�
 
 ## 取得已發佈影片轉譯的影片URL {#obtaining-a-video-url-for-a-published-video-rendition}
 
-1. 在Experience Manager中，瀏覽至&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 部署]** > **[!UICONTROL 雲端]** > **[!UICONTROL Cloud Service]**。
-1. 在&#x200B;**[!UICONTROL Cloud Service]**&#x200B;頁面上，向下捲動至&#x200B;**[!UICONTROL Dynamic MediaCloud Service]**&#x200B;標題，然後選取&#x200B;**[!UICONTROL 顯示設定]**。
+1. 在Experience Manager中，導覽至&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 部署]** > **[!UICONTROL 雲端]** > **[!UICONTROL 雲端服務]**。
+1. 在&#x200B;**[!UICONTROL 雲端服務]**&#x200B;頁面上，向下捲動至&#x200B;**[!UICONTROL Dynamic Media雲端服務]**&#x200B;標題，然後選取&#x200B;**[!UICONTROL 顯示設定]**。
 1. 在&#x200B;**[!UICONTROL 可用的組態]**&#x200B;下，選取您想要的組態名稱。
 
 1. 在&#x200B;**[!UICONTROL Dynamic Media雲端設定]**&#x200B;頁面的&#x200B;**[!UICONTROL 視訊服務URL]**&#x200B;下，複製整個URL路徑。 您稍後需要在步驟中複製URL路徑。
@@ -134,7 +171,7 @@ Dynamic Media支援靜態資產的傳送，這是影像和視訊以外的其他�
 
    例如，如果註冊ID為`87654321|MyCompany`，則客戶名稱將是`MyCompany`。
 
-1. 在頁面的左上角附近，選取&#x200B;**[!UICONTROL Cloud Service]**，然後選取Experience Manager圖示並導覽至&#x200B;**[!UICONTROL 一般]** > **[!UICONTROL CRXDE Lite]**。
+1. 在頁面的左上角附近，選取&#x200B;**[!UICONTROL 雲端服務]**，然後選取Experience Manager圖示並導覽至&#x200B;**[!UICONTROL 一般]** > **[!UICONTROL CRXDE Lite]**。
 1. 從JCR (Java™內容存放庫)向下複製整個視訊轉譯路徑。
 
    例如，視訊的轉譯路徑可能如下所示：
@@ -155,10 +192,10 @@ Dynamic Media支援靜態資產的傳送，這是影像和視訊以外的其他�
 
 ## 取得最適化位元速率串流(HLS)的視訊URL {#obtaining-a-video-url-for-adaptive-streaming-hls}
 
-1. 在Experience Manager中，瀏覽至&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 部署]** > **[!UICONTROL 雲端]** > **[!UICONTROL Cloud Service]**。
-1. 在&#x200B;**[!UICONTROL Cloud Service]**&#x200B;頁面上，向下捲動至&#x200B;**[!UICONTROL Dynamic MediaCloud Service]**&#x200B;標題，然後選取&#x200B;**[!UICONTROL 顯示設定]**。
+1. 在Experience Manager中，導覽至&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 部署]** > **[!UICONTROL 雲端]** > **[!UICONTROL 雲端服務]**。
+1. 在&#x200B;**[!UICONTROL 雲端服務]**&#x200B;頁面上，向下捲動至&#x200B;**[!UICONTROL Dynamic Media雲端服務]**&#x200B;標題，然後選取&#x200B;**[!UICONTROL 顯示設定]**。
 1. 在&#x200B;**[!UICONTROL 可用的組態]**&#x200B;下，選取您想要的組態名稱。
-1. 在&#x200B;**[!UICONTROL Dynamic MediaCloud Service設定]**&#x200B;頁面上，執行下列動作：
+1. 在&#x200B;**[!UICONTROL Dynamic Media雲端服務設定]**&#x200B;頁面上，執行下列動作：
 
    * 在&#x200B;**[!UICONTROL 視訊服務URL]**&#x200B;下，複製整個URL路徑。 您稍後需要這些步驟中複製的URL路徑。 例如，URL路徑可能如下所示：
 
@@ -211,4 +248,4 @@ Dynamic Media支援靜態資產的傳送，這是影像和視訊以外的其他�
 
 HTTP/2是新的、更新的Web通訊協定，可改善瀏覽器和伺服器的通訊方式。 它提供更快速的資訊傳輸，並減少所需的處理能力。 Dynamic Media資產的傳送現在可透過HTTP/2進行，以提供更理想的回應和載入時間。
 
-如需開始使用HTTP/2搭配您的Dynamic Media帳戶的完整詳細資訊，請參閱[HTTP2內容傳送](http2faq.md)。
+請參閱[HTTP2內容傳送](http2faq.md)，以取得有關透過您的Dynamic Media帳戶開始使用HTTP/2的完整詳細資料。

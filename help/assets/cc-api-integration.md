@@ -5,17 +5,51 @@ contentOwner: AG
 feature: Upload, Asset Processing, Publishing, Asset Compute Microservices
 role: User, Admin
 exl-id: 4cff355e-d12c-44c7-b519-4cc37f49e396
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '790'
-ht-degree: 5%
+source-wordcount: '818'
+ht-degree: 7%
 
 ---
 
 # 使用[!DNL Adobe Creative Cloud]整合產生資產的變體 {#content-automation}
 
-| [搜尋最佳實務](/help/assets/search-best-practices.md) | [中繼資料最佳實務](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [具有OpenAPI功能的Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets開發人員檔案](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets與Edge Delivery Services整合</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI擴充性</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>啟用Dynamic Media Prime和Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>搜尋最佳實務</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>中繼資料最佳實務</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 開發人員文件</b></a>
+        </td>
+    </tr>
+</table>
 
 內容自動化附加元件將[!DNL Adobe Experience Manager Assets]整合為[!DNL Cloud Service]和[!DNL Adobe Creative Cloud] API，以大規模創意處理您的資產。 [!DNL Experience Manager]使用雲端式[資產微服務](/help/assets/asset-microservices-overview.md)來使用[!DNL Adobe Creative Cloud]功能，並自動化資產的建立和媒體處理。
 
@@ -62,7 +96,7 @@ ht-degree: 5%
 1. 按一下&#x200B;**[!UICONTROL 新增程式]**&#x200B;並指定程式名稱。
 1. 按一下「**[!UICONTROL 繼續]**」。
 1. 展開&#x200B;**[!UICONTROL Assets]**&#x200B;並選取&#x200B;**[!UICONTROL Content Automation]**。
-1. 按一下&#x200B;**[!UICONTROL 建立]**。
+1. 按一下「**[!UICONTROL 建立]**」。
 1. 執行管道以[將變更部署到Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html)。
 
 如果您需要將Content Automation附加元件新增至Cloud Manager中的現有AEM as a Cloud Service程式：
@@ -83,7 +117,7 @@ ht-degree: 5%
 
 1. 選取&#x200B;**[!UICONTROL 建立]**，並指定&#x200B;**[!UICONTROL 名稱]**。
 
-1. 選取&#x200B;**[!UICONTROL 創意]**&#x200B;索引標籤，指定輸出資料夾，選取&#x200B;**[!UICONTROL 新增]**&#x200B;以新增創意設定。
+1. 選取&#x200B;**[!UICONTROL Creative]**&#x200B;索引標籤，指定輸出資料夾，選取&#x200B;**[!UICONTROL 新增]**&#x200B;以新增創意設定。
 
 1. 提供&#x200B;**[!UICONTROL 轉譯名稱]** （或輸出名稱）、**[!UICONTROL 副檔名]** （或檔案型別）、選取&#x200B;**[!UICONTROL 品質]** （或輸出引數）、選取&#x200B;**[!UICONTROL 包含]**&#x200B;和&#x200B;**[!UICONTROL 排除]** MIME型別清單（或輸入資產篩選），並選取必要的創意作業。
 

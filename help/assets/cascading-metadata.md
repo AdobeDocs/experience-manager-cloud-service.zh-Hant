@@ -5,17 +5,51 @@ contentOwner: AG
 feature: Metadata
 role: Admin, User
 exl-id: 1d3ad496-a964-476e-b1da-4aa6d8ad53b7
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '986'
-ht-degree: 8%
+source-wordcount: '1014'
+ht-degree: 10%
 
 ---
 
 # 階層式中繼資料 {#cascading-metadata}
 
-| [搜尋最佳實務](/help/assets/search-best-practices.md) | [中繼資料最佳實務](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [具有OpenAPI功能的Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets開發人員檔案](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets與Edge Delivery Services整合</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI擴充性</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>啟用Dynamic Media Prime和Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>搜尋最佳實務</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>中繼資料最佳實務</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 開發人員文件</b></a>
+        </td>
+    </tr>
+</table>
 
 擷取資產的中繼資料資訊時，使用者會在各種可用欄位中提供資訊。 您可以根據在其他欄位中選取的選項，顯示特定的中繼資料欄位或欄位值。 這類條件式顯示中繼資料稱為階層式中繼資料。 換言之，您可以在特定中繼資料欄位/值與一或多個欄位及/或其值之間建立相依性。
 
@@ -56,7 +90,7 @@ ht-degree: 8%
 
 1. 機碼值組是提供給表單使用者的選項。 您可以手動或從JSON檔案提供索引鍵/值組。
 
-   * 若要手動指定值，請選取&#x200B;**[!UICONTROL 手動新增]**，然後選取&#x200B;**[!UICONTROL 新增選項]**&#x200B;並指定選項文字和值。 例如，指定「視訊」、「PDF」、「Word」和「影像」資產型別。
+   * 若要手動指定值，請選取&#x200B;**[!UICONTROL 手動新增]**，然後選取&#x200B;**[!UICONTROL 新增選項]**&#x200B;並指定選項文字和值。 例如，指定視訊、PDF、Word和影像資產型別。
 
    * 若要從JSON檔案動態擷取值，請選取&#x200B;**[!UICONTROL 透過JSON路徑新增]**&#x200B;並提供JSON檔案的路徑。 當表單呈現給使用者時，[!DNL Experience Manager]會即時擷取機碼值組。
 
@@ -74,7 +108,7 @@ ht-degree: 8%
 
 1. （選用）新增其他必要欄位。 例如，資產型別視訊的格式、轉碼器和持續時間。
 
-   同樣地，為其他資產型別新增相依欄位。 例如，為檔案資產(如PDF和Word檔案)新增欄位頁數與作者。
+   同樣地，為其他資產型別新增相依欄位。 例如，為檔案資產(例如PDF和Word檔案)新增頁面計數和作者欄位。
 
    ![視訊相依欄位](assets/video_dependent_fields.png)
 
@@ -106,7 +140,7 @@ ht-degree: 8%
    >您可以套用 **[!UICONTROL 「需求]** 」條件 **[!UICONTROL 和「可見性]** 」條件，它們彼此獨立。
 
 1. 同樣地，在「資產型別」欄位中的「視訊」值與其他欄位（例如「轉碼器」和「持續時間」）之間建立相依性。
-1. 重複這些步驟，在[!UICONTROL Asset Type]欄位和[!UICONTROL Page Count]和[!UICONTROL Author]等欄位中，建立檔案資產(PDF和Word)之間的相依性。
+1. 重複這些步驟，在[!UICONTROL 資產型別]欄位和[!UICONTROL 頁面計數]和[!UICONTROL 作者]等欄位中，建立檔案資產(PDF和Word)之間的相依性。
 1. 按一下「**[!UICONTROL 儲存]**」。將中繼資料結構套用至資料夾。
 
 1. 導覽至您套用中繼資料結構的資料夾，並開啟資產的屬性頁面。 視您在「資產型別」欄位中的選擇而定，會顯示相關的階層式中繼資料欄位。

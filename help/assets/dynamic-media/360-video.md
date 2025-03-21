@@ -5,24 +5,61 @@ contentOwner: Rick Brough
 feature: 360 VR Video
 role: User
 exl-id: ffd092d3-2188-47b0-a475-8bfa660c03c1
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
 workflow-type: tm+mt
-source-wordcount: '1007'
-ht-degree: 0%
+source-wordcount: '1053'
+ht-degree: 1%
 
 ---
 
 # 360/VR影片 {#vr-video}
 
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets與Edge Delivery Services整合</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI擴充性</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>啟用Dynamic Media Prime和Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>搜尋最佳實務</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>中繼資料最佳實務</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 開發人員文件</b></a>
+        </td>
+    </tr>
+</table>
+
 360°影片會同時錄製每個方向的檢視。 它們使用全方位相機或一系列相機來拍攝。 在播放期間，在平面顯示器上，使用者可以控制視角；行動裝置上的播放通常套用其內建的陀螺儀控制項。
 
-Dynamic Media包含原生支援，可傳送360個視訊資產。 依預設，檢視或播放時不需要額外的設定。 您可使用標準視訊副檔名（例如.mp4、.mkv和.mov）來傳送360視訊。 最常見的轉碼器是H.264。
+Dynamic Media提供360個視訊資產傳送的原生支援。 依預設，檢視或播放時不需要額外的設定。 您可使用標準視訊副檔名（例如.mp4、.mkv和.mov）來傳送360視訊。 最常見的轉碼器是H.264。
 
 您可以使用360/VR視訊檢視器來轉譯等矩形視訊。 如此一來，您就能體驗到房間、屬性、位置、風景、醫療程式等的沈浸式視覺體驗。
 
 目前不支援空間音訊；如果音訊混合在立體聲中，平衡(L/R)不會隨著客戶變更相機視角而改變。
 
-請參閱[將Dynamic Media 360影片和自訂影片縮圖與AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-360-video-custom-thumbnail-feature-video-use.html#dynamic-media)搭配使用。
+請參閱[使用Dynamic Media 360影片和自訂影片縮圖與AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-360-video-custom-thumbnail-feature-video-use.html#dynamic-media)。
 
 另請參閱[管理檢視器預設集](/help/assets/dynamic-media/managing-viewer-presets.md)。
 
@@ -35,7 +72,7 @@ Dynamic Media包含原生支援，可傳送360個視訊資產。 依預設，檢
 
 ## 360/VR視訊與Adobe Premiere Pro {#vr-video-and-adobe-premiere-pro}
 
-您可以使用AdobePremier Pro來檢視和編輯360/VR素材。 例如，您可以在場景中正確放置標誌和文字，並套用專為等矩形媒體設計的效果和轉場。
+您可以使用Adobe Premier Pro來檢視和編輯360/VR素材。 例如，您可以在場景中正確放置標誌和文字，並套用專為等矩形媒體設計的效果和轉場。
 
 請參閱[編輯360/VR視訊](https://helpx.adobe.com/premiere-pro/how-to/edit-360-vr-video.html)。
 
@@ -53,12 +90,12 @@ Dynamic Media包含原生支援，可傳送360個視訊資產。 依預設，檢
 
    轉譯360度視訊內容對來源視訊解析度以及編碼轉譯解析度的需求，比標準的非360度視訊內容更高。
 
-   您可以使用隨Dynamic Media提供的現成最適化視訊設定檔。 不過，若使用非360視訊檢視器轉譯的相同設定進行編碼，360度視訊品質會明顯比非360度視訊低。 因此，如果需要高品質的360視訊，請執行下列動作：
+   您可以使用動態媒體隨附的現成最適化視訊設定檔。 不過，若使用非360視訊檢視器轉譯的相同設定進行編碼，360度視訊品質會明顯比非360度視訊低。 因此，如果需要高品質的360視訊，請執行下列動作：
 
    * 理想情況下，您原本的360度影片內容應該具備下列其中一種解析度：
 
       * 1080p - 1920 x 1080，稱為Full HD或FHD解析度，或
-      * 2160p - 3840 x 2160，稱為4k、UHD或UltraHD解析度。 這種大型顯示器解析度最常出現在高檔電視機和電腦熒幕上。 2160p解析度通常稱為「4k」，因為寬度接近4000畫素。 換句話說，它提供1080p的四倍畫素。
+      * 2160p - 3840 x 2160，稱為4k、UHD或超高解析度。 這種大型顯示器解析度最常出現在高檔電視機和電腦熒幕上。 2160p解析度通常稱為「4k」，因為寬度接近4000畫素。 換句話說，它提供1080p的四倍畫素。
 
    * [建立具有更高品質轉譯的自訂最適化視訊設定檔](/help/assets/dynamic-media/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming)。 例如，您可以建立包含下列三個設定的最適化視訊設定檔：
 
@@ -109,7 +146,7 @@ Start by uploading 360 Videos.
 
 1. 在&#x200B;**[!UICONTROL Assets]**&#x200B;中，導覽至您已建立的現有360影片。 若要以預覽模式開啟，請選取360視訊資產。
 
-   ![已上傳360視訊資產的熒幕擷取畫面，如Experience Manager的卡片檢視中所示。](assets/6_5_360video-selecttopreview-1.png)
+   ![在Experience Manager的卡片檢視中看到的已上傳360視訊資產的熒幕擷圖。](assets/6_5_360video-selecttopreview-1.png)
 
    若要預覽視訊，請選取360度視訊資產。
 
@@ -135,7 +172,7 @@ Start by uploading 360 Videos.
 
 ## 發佈360度影片 {#publishing-video}
 
-若要使用360視訊，您必須將其發佈。 發佈360影片會啟用URL和內嵌程式碼。 此外，該公司也會將360影片發佈至Dynamic Media雲端，此雲端已與CDN整合，可提供具備擴充能力及效能的傳送方式。
+若要使用360視訊，您必須將其發佈。 發佈360影片會啟用URL和內嵌程式碼。 此外，該公司也會將360影片發佈至Dynamic Media雲端，此雲端整合了CDN，提供具備擴充能力及高效能的傳送服務。
 
 如需如何發佈360視訊的詳細資訊，請參閱[發佈Dynamic Media Assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)。
 另請參閱[將視訊或影像檢視器內嵌在網頁上](/help/assets/dynamic-media/embed-code.md)。

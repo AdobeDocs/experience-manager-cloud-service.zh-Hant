@@ -1,31 +1,68 @@
 ---
-title: 關於Dynamic Media影像設定檔和視訊設定檔
+title: 關於Dynamic Media影像設定檔和影片設定檔
 description: 影像設定檔或視訊設定檔是將哪些選項套用至您上傳至資料夾之資產的配方。 例如，您可以指定要套用至上傳之Dynamic Media視訊資產的視訊編碼。 或是套用至Dynamic Media影像資產的影像設定檔，以正確加以裁切。
 contentOwner: Rick Brough
 feature: Asset Management,Image Profiles,Video Profiles
 role: Admin,User
 exl-id: 8c8f0a57-13f5-4903-8d76-bfb6ee83323c
-source-git-commit: 34038d954802b7f8e31441d5c5e4ea90380e7a20
+source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
 workflow-type: tm+mt
-source-wordcount: '1391'
-ht-degree: 0%
+source-wordcount: '1437'
+ht-degree: 1%
 
 ---
 
-# 關於Dynamic Media影像設定檔和視訊設定檔{#about-dm-image-video-profiles}
+# 關於Dynamic Media影像設定檔和影片設定檔{#about-dm-image-video-profiles}
+
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets與Edge Delivery Services整合</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI擴充性</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>啟用Dynamic Media Prime和Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>搜尋最佳實務</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>中繼資料最佳實務</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 開發人員文件</b></a>
+        </td>
+    </tr>
+</table>
 
 影像設定檔或視訊設定檔是套用至上傳至資料夾之資產的選項。 例如，您可以指定要套用至上傳之Dynamic Media視訊資產的視訊編碼。 或是套用至Dynamic Media影像資產的影像設定檔，以正確加以裁切。
 
-在Dynamic Media中，您可以建立兩種型別的設定檔，以下連結將詳細介紹這些設定檔：
+在Dynamic Media中，您可以建立兩種型別的設定檔，以下連結將詳細介紹這兩種設定檔：
 
 * [Dynamic Media影像設定檔](/help/assets/dynamic-media/image-profiles.md)
 * [Dynamic Media影片設定檔](/help/assets/dynamic-media/video-profiles.md)
 
 另請參閱[中繼資料設定檔](/help/assets/metadata-profiles.md)。
 
-您必須擁有管理員許可權，才能建立、編輯和刪除Dynamic Media影像設定檔或Dynamic Media視訊設定檔。
+您必須具有管理員許可權，才能建立、編輯和刪除Dynamic Media影像設定檔或Dynamic Media視訊設定檔。
 
-建立影像設定檔或視訊設定檔後，請將其指派至一或多個用於新上傳Dynamic Media資產的資料夾。
+建立影像設定檔或視訊設定檔後，請將其指派至一或多個用於新上傳之Dynamic Media資產的資料夾。
 
 另請參閱[組織數位Assets以使用處理設定檔的最佳實務](/help/assets/organize-assets.md)。
 
@@ -38,13 +75,13 @@ ht-degree: 0%
 
 ## 重新處理資料夾中的Dynamic Media資產 {#reprocessing-assets}
 
-若資料夾中已存在您後來變更過的Dynamic Media影像設定檔或Dynamic Media視訊設定檔，您可以重新處理該資料夾中的資產。
+若資料夾中已有您後來變更過的Dynamic Media影像設定檔或Dynamic Media視訊設定檔，您可以重新處理該資料夾中的資產。
 
-例如，假設您建立了Dynamic Media影像設定檔並將其指派至資料夾。 您上傳至資料夾的任何影像資產都會自動將影像設定檔套用至資產。 不過，您稍後會決定在「影像描述檔」中加入新的智慧型裁切比例。 現在，您只需執行&#x200B;*Dynamic Media重新處理*&#x200B;工作流程，而不需再次選取並重新上傳資產至資料夾。
+例如，假設您建立了動態媒體影像設定檔，並將其指派至資料夾。 您上傳至資料夾的任何影像資產都會自動將影像設定檔套用至資產。 不過，您稍後會決定在「影像描述檔」中加入新的智慧型裁切比例。 現在，您只需執行&#x200B;*Dynamic Media重新處理*&#x200B;工作流程，而不需再次選取並重新上傳資產至資料夾。
 
 您可以對首次處理失敗的資產執行重新處理工作流程。 即使您尚未編輯「影像設定檔」或「視訊設定檔」，或您已套用「影像設定檔」或「視訊設定檔」，您仍可隨時對資產的資料夾執行重新處理工作流程。
 
-您可以選擇調整重新處理工作流程的批次大小，從預設的50個資產調整為1000個資產。 當您在資料夾上執行&#x200B;_Dynamic Media重新處理_&#x200B;工作流程時，資產會依批次分組，然後傳送至Dynamic Media伺服器以供處理。 處理之後，整個批次集中每個資產的中繼資料會在[!DNL Adobe Experience Manager]上更新。 如果批次大小很大，您可能會遇到處理延遲。 或者，如果批次大小太小，可能會導致Dynamic Media伺服器的往返次數過多。
+您可以選擇調整重新處理工作流程的批次大小，從預設的50個資產調整為1000個資產。 當您在資料夾上執行&#x200B;_Dynamic Media重新處理_&#x200B;工作流程時，資產會以批次分組，然後傳送至Dynamic Media伺服器以供處理。 處理之後，整個批次集中每個資產的中繼資料會在[!DNL Adobe Experience Manager]上更新。 如果批次大小很大，您可能會遇到處理延遲。 或者，如果批次大小太小，可能會導致Dynamic Media伺服器的往返次數過多。
 
 請參閱[調整重新處理工作流程的批次大小](#adjusting-load)。
 
@@ -52,7 +89,7 @@ ht-degree: 0%
 >
 >如果您正在將資產從Dynamic Media Classic大量移轉至[!DNL Experience Manager]，請在Dynamic Media伺服器上啟用移轉復寫代理程式。 移轉完成後，請務必停用代理程式。
 >
->必須在Dynamic Media伺服器上停用移轉發佈代理程式，才能讓重新處理工作流程如預期般運作。
+>您必須在Dynamic Media伺服器上停用移轉發佈代理程式，才能讓重新處理工作流程如預期般運作。
 
 <!-- LEAVE IN PLACE, MAY BE USED IN THE FUTURE
 
@@ -62,7 +99,7 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 
 **若要重新處理資料夾中的Dynamic Media資產：**
 
-1. 在[!DNL Experience Manager]中，從Assets頁面，導覽至已指派影像設定檔或視訊設定檔且您要套用&#x200B;**Dynamic Media重新處理**&#x200B;工作流程的資產資料夾。
+1. 在[!DNL Experience Manager]中，從Assets頁面，導覽至已指派影像設定檔或視訊設定檔且您要套用&#x200B;**動態媒體重新處理**&#x200B;工作流程的資產資料夾。
 
    已指派影像設定檔或視訊設定檔的資料夾，其設定檔名稱會直接顯示在「卡片檢視」的資料夾名稱下方。
 
@@ -75,13 +112,13 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 1. 在頁面的左上角附近，從下拉式清單中選取&#x200B;**[!UICONTROL 時間表]**。
 1. 在頁面的左下角附近，[!UICONTROL 註解]欄位的右側，選取克拉圖示( **^** )。
 
-   ![Experience ManagerAssets熒幕擷圖顯示選取的資產資料夾、醒目提示「時間軸」下拉式清單、醒目提示「開始工作流程」按鈕，以及「註解」欄位右側的克拉圖示也醒目提示](/help/assets/dynamic-media/assets/reprocess-assets1.png)。
+   ![Experience Manager中Assets的熒幕擷圖顯示選取的資產資料夾、醒目提示「時間軸」下拉式清單、醒目提示「開始工作流程」按鈕，以及「註解」欄位右側的克拉圖示也醒目提示](/help/assets/dynamic-media/assets/reprocess-assets1.png)。
 
 1. 選取&#x200B;**[!UICONTROL 啟動工作流程]**。
 1. 從&#x200B;**[!UICONTROL 開始工作流程]**&#x200B;下拉式清單中，選擇&#x200B;**[!UICONTROL Dynamic Media重新處理]**。
 1. （選擇性）在&#x200B;**輸入工作流程的標題**&#x200B;文字欄位中，輸入工作流程的名稱。 如有必要，您可以使用名稱來參照工作流程例項。
 
-   ![從「開始工作流程」下拉式清單中選取「Dynamic Media重新處理」且「開始」按鈕反白顯示的時間表使用者介面熒幕擷圖](/help/assets/dynamic-media/assets/reprocess-assets2.png)。
+   ![從「開始工作流程」下拉式清單中選取「動態媒體重新處理」且「開始」按鈕反白顯示的時間軸使用者介面熒幕擷圖](/help/assets/dynamic-media/assets/reprocess-assets2.png)。
 
 1. 選取&#x200B;**[!UICONTROL 開始]**，然後選取&#x200B;**[!UICONTROL 確認]**。
 
@@ -89,20 +126,20 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 
 ### 調整重新處理工作流程的批次大小（選擇性） {#adjusting-load}
 
-（選用）重新處理工作流程中的預設批次大小是每個工作50個資產。 此最佳批次大小是由平均資產大小和執行重新處理的資產MIME型別所控制。 較高的值表示您在一個重新處理工作中擁有許多檔案。 因此，處理橫幅會在[!DNL Experience Manager]個資產上停留較長時間。 但是，如果平均檔案大小是小於1 MB或小於Adobe，建議您將值增加到幾個100，但絕不要超過1000。 如果平均檔案大小為數百MB，Adobe建議您減少批次大小，最多為10。
+（選用）重新處理工作流程中的預設批次大小是每個工作50個資產。 此最佳批次大小是由平均資產大小和執行重新處理的資產MIME型別所控制。 較高的值表示您在一個重新處理工作中擁有許多檔案。 因此，處理橫幅會在[!DNL Experience Manager]個資產上停留較長時間。 但是，如果平均檔案大小是小於1 MB或小於Adobe，建議您將值增加到幾個100，但不要超過1000。 如果平均檔案大小為數百兆位元組，Adobe建議您減少批次大小，上限為10。
 
 **若要選擇性地調整重新處理工作流程的批次大小：**
 
 1. 在[!DNL Experience Manager]中，選取&#x200B;**[!UICONTROL Adobe Experience Manager]**&#x200B;以存取全域導覽主控台，然後選取&#x200B;**[!UICONTROL 工具]** （槌子）圖示> **[!UICONTROL 工作流程>模型]**。
-1. 在「工作流程模型」頁面的「卡片檢視」或「清單檢視」中，選取&#x200B;**[!UICONTROL Dynamic Media重新處理]**。
+1. 在「工作流程模型」頁面的「卡片檢視」或「清單檢視」中，選取「**[!UICONTROL Dynamic Media重新處理]**」。
 
    ![在Experience Manager](/help/assets/dynamic-media/assets/reprocess-assets7.png)的卡片檢視中選取「Dynamic Media重新處理」工作流程的「工作流程模型」頁面熒幕擷圖。
 
 1. 在工具列中選取&#x200B;**[!UICONTROL 編輯]**。 新的瀏覽器標籤會開啟「Dynamic Media重新處理工作流程」模型頁面。
-1. 在「Dynamic Media重新處理工作流程」頁面的右上角附近，選取「**[!UICONTROL 編輯]**」以「解除鎖定」工作流程。
-1. 在工作流程中，選取「Scene7批次上傳」元件以開啟工具列，然後在工具列中選取&#x200B;**[!UICONTROL 設定]**。
+1. 在「動態媒體重新處理工作流程」頁面的右上角附近，選取「**[!UICONTROL 編輯]**」以「解除鎖定」工作流程。
+1. 在工作流程中，選取Scene7批次上傳元件以開啟工具列，然後在工具列中選取&#x200B;**[!UICONTROL 設定]**。
 
-   ![ 「Scene7重新處理」頁面上的「Dynamic Media批次上傳」元件熒幕擷圖，滑鼠指標停留在「設定」圖示上](/help/assets/dynamic-media/assets/reprocess-assets8.png)。
+   ![ 「Dynamic Media重新處理」頁面上的「Scene7批次上傳」元件熒幕擷圖，滑鼠指標停留在「設定」圖示上](/help/assets/dynamic-media/assets/reprocess-assets8.png)。
 
 1. 在&#x200B;**[!UICONTROL 批次上傳至Scene7 — 步驟屬性]**&#x200B;對話方塊上，設定下列專案：
    * 在&#x200B;**[!UICONTROL 標題]**&#x200B;和&#x200B;**[!UICONTROL 描述]**&#x200B;文字欄位中，視需要輸入新的標題和描述。
@@ -114,13 +151,13 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 
    ![「批次上傳至Scene7 — 步驟屬性」頁面的熒幕擷圖](/help/assets/dynamic-media/assets/reprocess-assets3.png)。
 
-1. 在&#x200B;**[!UICONTROL 批次上傳至Scene7 — 步驟屬性]**&#x200B;對話方塊的右上角，選取&#x200B;**[!UICONTROL 完成]**。
+1. 在&#x200B;**[!UICONTROL 批次上傳到Scene7 — 步驟屬性]**&#x200B;對話方塊的右上角，選取&#x200B;**[!UICONTROL 完成]**。
 
-1. 在「Dynamic Media重新處理工作流程模型」頁面的右上角，選取&#x200B;**[!UICONTROL 同步]**。 當您看到&#x200B;**[!UICONTROL 已同步]**&#x200B;時，工作流程執行階段模型已成功同步化，並準備好重新處理資料夾中的資產。
+1. 在「動態媒體重新處理工作流程」模型頁面的右上角，選取&#x200B;**[!UICONTROL 同步]**。 當您看到&#x200B;**[!UICONTROL 已同步]**&#x200B;時，工作流程執行階段模型已成功同步化，並準備好重新處理資料夾中的資產。
 
-   ![Experience ManagerAssets熒幕擷圖顯示選取的資產資料夾、醒目提示「時間軸」下拉式清單、醒目提示「開始工作流程」按鈕，以及「註解」欄位右側的克拉圖示也醒目提示](/help/assets/dynamic-media/assets/reprocess-assets1.png)。
+   ![Experience Manager中Assets的熒幕擷圖顯示選取的資產資料夾、醒目提示「時間軸」下拉式清單、醒目提示「開始工作流程」按鈕，以及「註解」欄位右側的克拉圖示也醒目提示](/help/assets/dynamic-media/assets/reprocess-assets1.png)。
 
-1. 關閉顯示Dynamic Media重新處理工作流程模型的瀏覽器標籤。
+1. 關閉顯示「動態媒體重新處理」工作流程模型的瀏覽器標籤。
 
 <!-- MAY BE NEEDED IN THE FUTURE
 

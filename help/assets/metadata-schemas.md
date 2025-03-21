@@ -5,17 +5,51 @@ contentOwner: AG
 feature: Metadata
 role: User, Admin
 exl-id: 9e94afeb-1c54-4653-bf52-b0910c0cb6c1
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '2652'
+source-wordcount: '2680'
 ht-degree: 10%
 
 ---
 
 # 中繼資料結構描述 {#metadata-schemas}
 
-| [搜尋最佳實務](/help/assets/search-best-practices.md) | [中繼資料最佳實務](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [具有OpenAPI功能的Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets開發人員檔案](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets與Edge Delivery Services整合</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI擴充性</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>啟用Dynamic Media Prime和Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>搜尋最佳實務</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>中繼資料最佳實務</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 開發人員文件</b></a>
+        </td>
+    </tr>
+</table>
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
@@ -44,7 +78,7 @@ ht-degree: 10%
 
 [!DNL Experience Manager]提供下列中繼資料結構表單範本。
 
-| 範本 | | 說明 |
+| 範本 | | 描述 |
 |---|---|---|
 | [!UICONTROL 預設] | | 資產的基本中繼資料結構表單。 |
 | | 下列子表單繼承[!UICONTROL 預設]表單的屬性： | |
@@ -55,7 +89,7 @@ ht-degree: 10%
 | [!UICONTROL 集合] | | 集合的結構表單。 |
 | [!UICONTROL contentfragment] | | 內容片段的結構描述表單。 |
 | [!UICONTROL 表單] | | 此結構描述表單與[!DNL Adobe Experience Manager Forms]相關。 |
-| [!UICONTROL ugc_contentfragment] | | 使用者產生的內容片段和資產的結構描述表單，可從社群媒體整合至Experience Manager。 |
+| [!UICONTROL ugc_contentfragment] | | 使用者產生的內容片段和資產的結構描述表單，從社群媒體整合至Experience Manager。 |
 
 >[!NOTE]
 >
@@ -153,7 +187,7 @@ ht-degree: 10%
 
 #### 在結構表單中新增或刪除索引標籤 {#add-delete-a-tab-in-the-schema-form}
 
-架構編輯器可讓您新增或刪除標籤。預設結構描述表單包含&#x200B;**[!UICONTROL Basic]**、**[!UICONTROL Advanced]**、**[!UICONTROL IPTC]**&#x200B;和&#x200B;**[!UICONTROL IPTC擴充功能]**&#x200B;標籤。
+結構描述編輯器可讓您新增或刪除標籤。預設結構描述表單包含&#x200B;**[!UICONTROL Basic]**、**[!UICONTROL Advanced]**、**[!UICONTROL IPTC]**&#x200B;和&#x200B;**[!UICONTROL IPTC擴充功能]**&#x200B;標籤。
 
 ![中繼資料結構表單中的預設標籤](assets/metadata-schema-form-tabs.png)
 
@@ -182,7 +216,7 @@ Experience Manager僅可讓您刪除自訂結構表單。 它不允許您刪除�
 
 ### 為MIME型別新增表單 {#adding-new-forms-for-mime-types}
 
-在適當的表單型別下建立表單。 例如，若要為`image/png`子型別新增範本，請在「影像」表單下建立表單。 方案表單的標題是子類型名稱。在此案例中，標題為`png`。
+在適當的表單型別下建立表單。 例如，若要為`image/png`子型別新增範本，請在「影像」表單下建立表單。 結構描述表單的標題是子類型名稱。在此案例中，標題為`png`。
 
 #### 針對各種MIME型別使用現有結構描述範本 {#use-an-existing-schema-template-for-various-mime-types}
 

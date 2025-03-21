@@ -4,17 +4,51 @@ description: 將您的數位資產新增至 [!DNL Adobe Experience Manager] 做�
 feature: Asset Ingestion, Asset Management, Asset Processing, Upload
 role: User, Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '3162'
-ht-degree: 9%
+source-wordcount: '3190'
+ht-degree: 10%
 
 ---
 
 # 將數位資產新增至[!DNL Adobe Experience Manager]做為[!DNL Cloud Service] [!DNL Assets] {#add-assets-to-experience-manager}
 
-| [搜尋最佳實務](/help/assets/search-best-practices.md) | [中繼資料最佳實務](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [具有OpenAPI功能的Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets開發人員檔案](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets與Edge Delivery Services整合</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI擴充性</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>啟用Dynamic Media Prime和Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>搜尋最佳實務</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>中繼資料最佳實務</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 開發人員文件</b></a>
+        </td>
+    </tr>
+</table>
 
 [!DNL Adobe Experience Manager Assets]接受許多來源的數位資產型別。 它會儲存二進位檔和已建立的轉譯，可以使用各種工作流程和[!DNL Adobe Sensei]服務進行資產處理，允許透過許多管道在多個表面進行分發。
 
@@ -26,14 +60,14 @@ ht-degree: 9%
 
 您也可以選擇對上傳的資產完成其他處理。 您可以在上傳資產的資料夾上設定數個資產處理設定檔，以新增特定中繼資料、轉譯或影像處理服務。 請參閱上傳時[處理資產](#process-when-uploaded)。
 
-[!DNL Assets]提供下列上傳方法。 Adobe建議您先瞭解上傳選項的使用案例及適用性，然後再使用。
+[!DNL Assets]提供下列上傳方法。 Adobe建議您先瞭解上傳選項的使用案例與適用性，再開始使用。
 
 | 上傳方法 | 何時使用？ | 主要角色 |
 |---------------------|----------------|-----------------|
 | [Assets主控台使用者介面](#upload-assets) | 偶爾上傳、輕鬆按壓和拖曳、尋找上傳。 請勿使用上傳許多資產。 | 所有使用者 |
 | [上傳API](#upload-using-apis) | 適用於上傳期間的動態決策。 | 開發人員 |
 | [[!DNL Experience Manager] 桌面應用程式](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) | 低流量資產擷取，但不適用於移轉。 | 管理員、行銷人員 |
-| [[!DNL Adobe Asset Link]](https://helpx.adobe.com/tw/enterprise/using/adobe-asset-link.html) | 當創意人員與行銷人員從支援的[!DNL Creative Cloud]案頭應用程式內處理資產時相當實用。 | 創意、行銷人員 |
+| [[!DNL Adobe Asset Link]](https://helpx.adobe.com/tw/enterprise/using/adobe-asset-link.html) | 當創意人員與行銷人員從支援的[!DNL Creative Cloud]案頭應用程式內處理資產時相當實用。 | Creative，行銷人員 |
 | [資產大量擷取](#asset-bulk-ingestor) | 建議用於大規模移轉及不定期的大量擷取。 僅適用於支援的資料存放區。 | 管理員、開發人員 |
 
 ## 上傳資產 {#upload-assets}
@@ -67,7 +101,7 @@ ht-degree: 9%
 >
 >您上傳至Experience Manager的Assets若檔案名稱超過100個字元，在Dynamic Media中使用時，其名稱會縮短。
 >
->檔案名稱中的前100個字元會依原樣使用；其餘字元會由英數字元字串取代。 此重新命名方法可確保在資產用於Dynamic Media時具有唯一的名稱。 其目的也在於適應Dynamic Media中允許的資產檔案名稱長度上限。
+>檔案名稱中的前100個字元會依原樣使用；其餘字元會由英數字元字串取代。 此重新命名方法可確保在Dynamic Media中使用資產時具有唯一名稱。 其用意也是為了適應Dynamic Media中允許的最大資產檔案名稱長度。
 
 
 1. 在[!DNL Assets]使用者介面中，導覽至您要新增數位資產的位置。
@@ -153,7 +187,7 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 
 >[!VIDEO](https://video.tv.adobe.com/v/329680/?quality=12&learn=on)
 
-下圖說明從資料存放區擷取資產以Experience Manager時的各個階段：
+下圖說明從資料存放區擷取資產至Experience Manager時的各個階段：
 
 ![大量擷取工具](assets/bulk-ingestion.png)
 
@@ -206,7 +240,7 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 
 ### 管理大量匯入工具設定 {#manage-bulk-import-configuration}
 
-建立大量匯入工具組態後，您可以先執行工作以評估組態，然後再將資產大量擷取到Experience Manager執行個體。 若要檢視可用來管理大量匯入工具組態的可用選項，請選取位於&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL Assets]** > **[!UICONTROL 大量匯入]**&#x200B;的可用組態。
+建立大量匯入工具設定後，您可以先執行工作以評估設定，然後再將資產大量擷取到Experience Manager執行個體。 若要檢視可用來管理大量匯入工具組態的可用選項，請選取位於&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL Assets]** > **[!UICONTROL 大量匯入]**&#x200B;的可用組態。
 
 ### 編輯設定 {#edit-configuration}
 
@@ -335,7 +369,7 @@ Following are the file naming conventions that are applied while uploading asset
 
 若要啟動大量匯入程式，請瀏覽至&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL Assets]** > **[!UICONTROL 大量匯入]**，選取[大量匯入設定](#configure-bulk-ingestor-tool)，然後按一下&#x200B;**[!UICONTROL 執行]**。 再按一下&#x200B;**[!UICONTROL 執行]**&#x200B;以確認。
 
-Experience Manager會在成功完成工作後，將工作的狀態更新為&#x200B;**處理中**&#x200B;和&#x200B;**成功**。 若要以Experience Manager檢視匯入的資產，請按一下[檢視Assets] ****。
+Experience Manager會在成功完成工作後，將工作的狀態更新為&#x200B;**處理中**&#x200B;和&#x200B;**成功**。 若要在Experience Manager中檢視匯入的資產，請按一下[檢視Assets]。****
 
 當工作正在進行時，您也可以選取組態並按一下[停止] **以停止大量擷取程式。**&#x200B;再按一下[執行&#x200B;****]繼續此程式。 您也可以按一下&#x200B;**試執行**，瞭解仍在等候匯入的資產詳細資訊。
 
@@ -354,7 +388,7 @@ Experience Manager會顯示工作歷史記錄。 在[大量匯入工作記錄]�
 
 除了網頁瀏覽器使用者介面，[!DNL Experience Manager]還支援案頭上的其他使用者端。 它們也提供上傳體驗，無需前往網頁瀏覽器。
 
-* [[!DNL Adobe Asset Link]](https://helpx.adobe.com/tw/enterprise/using/adobe-asset-link.html)可讓您存取Adobe Photoshop、Adobe Illustrator和Adobe InDesign案頭應用程式中[!DNL Experience Manager]的資產。 您可以直接從這些案頭應用程式中的Adobe Asset Link使用者介面，將目前開啟的檔案上傳到[!DNL Experience Manager]。
+* [[!DNL Adobe Asset Link]](https://helpx.adobe.com/tw/enterprise/using/adobe-asset-link.html)可讓您存取Adobe Photoshop、Adobe Illustrator和Adobe InDesign案頭應用程式中[!DNL Experience Manager]的資產。 您可以從這些案頭應用程式內，直接從Adobe Asset Link使用者介面將目前開啟的檔案上傳到[!DNL Experience Manager]。
 * [[!DNL Experience Manager] 案頭應用程式](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html)可簡化在案頭上處理資產的工作，不受其檔案型別或處理資產的原生應用程式影響。 從本機檔案系統上傳巢狀資料夾階層的檔案會很有用，因為瀏覽器上傳僅支援上傳一般檔案清單。
 
 ## 上傳時處理資產 {#process-when-uploaded}

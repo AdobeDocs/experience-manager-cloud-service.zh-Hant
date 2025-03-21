@@ -4,19 +4,53 @@ description: 使用 [!DNL Adobe Express] 支援的選項編輯視訊，並將更
 role: User
 exl-id: 42b25935-e2ff-444f-97c8-b4ed56f3ef9e
 feature: Best Practices, Video, Interactive Videos
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '797'
-ht-degree: 17%
+source-wordcount: '825'
+ht-degree: 19%
 
 ---
 
 # 在[!DNL Assets view]中編輯視訊 {#edit-videos}
 
-| [搜尋最佳實務](/help/assets/search-best-practices.md) | [中繼資料最佳實務](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [具有OpenAPI功能的Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets開發人員檔案](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets與Edge Delivery Services整合</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI擴充性</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>啟用Dynamic Media Prime和Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>搜尋最佳實務</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>中繼資料最佳實務</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 開發人員文件</b></a>
+        </td>
+    </tr>
+</table>
 
-使用內嵌的[!DNL Adobe Express]視訊快速動作，為Assets使用者輕鬆建立視訊內容的變體。 由[!DNL Adobe Express]支援的[!DNL Assets view]中的快速動作提供使用者易用的視訊編輯選項，包括裁切視訊、調整視訊大小、修剪視訊，以及將視訊轉換為GIF。
+使用內嵌的[!DNL Adobe Express]視訊快速動作，為Assets使用者輕鬆建立視訊內容的變體。 由[!DNL Adobe Express]提供支援的[!DNL Assets view]中的快速動作可提供方便使用的視訊編輯選項，包括裁切視訊、調整視訊大小、修剪視訊，以及將視訊轉換成GIF。
 
 若要編輯視訊，請移至視訊的詳細資料，然後按一下[編輯視訊]。 或者，選取資產並按一下詳細資訊，然後按一下右窗格中可用的![剪刀](assets/do-not-localize/cut.svg)圖示。 編輯視訊後，您可以將新視訊儲存為新版本或新資產。
 
@@ -74,14 +108,14 @@ DAM中的最終視訊內容通常需要調整大小，才能發佈到特定管�
 您可以使用Adobe Express快速將MP4視訊轉換為GIF格式。 執行以下步驟：
 
 1. 選取視訊並按一下&#x200B;**[!UICONTROL 編輯]**。
-2. 從左窗格中可用的快速動作，按一下&#x200B;**[!UICONTROL 轉換為GIF]**。
+2. 從左窗格中可用的快速動作，按一下&#x200B;**[!UICONTROL 「轉換成GIF]**」。
 3. 根據所需的品質選取適當的檔案大小。 此外，選擇橫向、直向或正方形方向。
 4. 拖曳視訊邊角的控點，以建立您想要的裁切。
 5. 按一下「**[!UICONTROL 套用]**」。
 
-   ![將視訊轉換成Adobe Express為](assets/adobe-express-convert-video-to-gif.png)的GIF
+   ![使用Adobe Express將視訊轉換成GIF](assets/adobe-express-convert-video-to-gif.png)
 
-您的視訊可以使用GIF格式下載。 您可以將編輯後的資產另存為同一資產的新版本，也可以將其另存為新資產。
+您的影片可以透過GIF格式下載。 您可以將編輯後的資產另存為同一資產的新版本，也可以將其另存為新資產。
 
 ## 限制 {#limitations-video-adobe-express}
 

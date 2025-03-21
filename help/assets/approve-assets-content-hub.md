@@ -1,42 +1,76 @@
 ---
-title: 批准 Content Hub 的資產
+title: 核准 Content Hub 的資產
 description: 瞭解如何在Assets as a Cloud Service中核准資產，以便在Content Hub中使用。
 exl-id: fc849028-ab56-4388-b8d6-e36cac8f868f
-source-git-commit: 95bf82ceead9d06bc0f5720f1a6af945afc27622
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '837'
-ht-degree: 17%
+source-wordcount: '865'
+ht-degree: 20%
 
 ---
 
-# 批准 Content Hub 的資產 {#approve-assets-content-hub}
+# 核准 Content Hub 的資產 {#approve-assets-content-hub}
 
-| [搜尋最佳實務](/help/assets/search-best-practices.md) | [中繼資料最佳實務](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [具有 OpenAPI 功能的 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 開發人員文件](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets與Edge Delivery Services整合</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI擴充性</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>啟用Dynamic Media Prime和Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>搜尋最佳實務</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>中繼資料最佳實務</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 開發人員文件</b></a>
+        </td>
+    </tr>
+</table>
 
 ![核准Content Hub的資產](assets/content-hub-approve-assets.png)
 
 >[!AVAILABILITY]
 >
->Content Hub指南現在提供PDF格式。 下載整份指南，並使用Adobe Acrobat AI Assistant回答您的疑問。
+>現已提供 PDF 格式的 Content Hub 指南。下載完整指南，並使用 Adobe Acrobat AI 助理來回答您的查詢問題。
 >
->[!BADGE Content Hub指南PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
+>[!BADGE Content Hub 指南 PDF]{type=Informative url="https://helpx.adobe.com/tw/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
 
 品牌經理和行銷人員對品牌資產維持嚴格的控制。 Content Hub內只能使用已核准且最新的資產版本，確保所有管道和應用程式的品牌一致性。
 
-您可以使用AEM Assets as a Cloud Service核准資產，以簡化資產管理，確保處理資產的程式受到控制且有效率。
+您可以使用AEM Assets as a Cloud Service核准資產，以簡化資產管理，確保處理資產的控制和有效率。
 
 ## 開始之前 {#pre-requisites}
 
 開始之前，您應該先執行以下操作：
 
-* 存取AEM Assetsas a Cloud Service
+* 存取AEM Assets as a Cloud Service
 
 * 寫入許可權可編輯資產中繼資料，以便能夠編輯資產[資產屬性](/help/assets/manage-organize-assets-view.md##manage-asset-status)中可用的&#x200B;**[!UICONTROL 狀態]**&#x200B;欄位。
 
-## 批准 Content Hub 的資產{#approve-assets-for-content-hub}
+## 核准 Content Hub 的資產{#approve-assets-for-content-hub}
 
-Assetsas a Cloud Service中標示為`approved`的資產會自動在Content Hub中使用。
+在Assets as a Cloud Service中標示為`approved`的資產會自動在Content Hub中使用。
 
 >[!NOTE]
 >
@@ -55,7 +89,7 @@ Assets as a Cloud Service和Content Hub必須使用相同的組織，資產才�
 
 ## 使用Assets檢視大量核准Content Hub的資產 {#bulk-approve-assets-content-hub}
 
-使用AEM Assetsas a Cloud Service的Assets檢視大量核准資產。 所有資產，經大量核准後，即可在Content Hub中使用。
+使用AEM Assets as a Cloud Service的Assets檢視大量核准資產。 所有資產，經大量核准後，即可在Content Hub中使用。
 
 若要在Assets檢視中，大量核准資料夾內的資產：
 
@@ -74,7 +108,7 @@ Assets as a Cloud Service和Content Hub必須使用相同的組織，資產才�
 
 請依照下列步驟，自動核准[!DNL Experience Manager Admin view]中新擷取的資產：
 
-1. 在作者環境中建立資料夾(https://author-pXXX-eYYY.adobeaemcloud.com)。 將&#x200B;_XXX_&#x200B;取代為您的方案識別碼，並將&#x200B;_YYY_&#x200B;取代為Experience Manager中的環境ID。
+1. 在作者環境中建立資料夾(https://author-pXXX-eYYY.adobeaemcloud.com)。 將&#x200B;_XXX_&#x200B;取代為您的方案ID，並將&#x200B;_YYYY_&#x200B;取代為Experience Manager中的環境ID。
 1. 導覽至&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL Assets]** > **[!UICONTROL 中繼資料設定檔]**。
 1. 按一下頁面右上方的&#x200B;**[!UICONTROL 「建立]**」。
 1. 新增設定檔標題並按一下&#x200B;**[!UICONTROL 建立]**。 已成功建立中繼資料設定檔。
@@ -105,11 +139,11 @@ Assets as a Cloud Service和Content Hub必須使用相同的組織，資產才�
 
 ## 管理使用Content Hub上傳的資產 {#manage-assets-uploaded-using-content-hub}
 
-[有權新增資產的Content Hub使用者](/help/assets/deploy-content-hub.md#onboard-content-hub-users-add-assets)可以從本機檔案系統，或從OneDrive或Dropbox資料來源匯入資產，將[資產新增到Content Hub](/help/assets/upload-brand-approved-assets.md)。 無論本機檔案系統或OneDrive和Dropbox資料來源提供的檔案夾結構為何，所有資產都會顯示在Content Hub的頂層，以增強搜尋功能。
+[有權新增資產的Content Hub使用者](/help/assets/deploy-content-hub.md#onboard-content-hub-users-add-assets)可以從本機檔案系統，或從OneDrive或Dropbox資料來源匯入資產，將[資產新增至Content Hub](/help/assets/upload-brand-approved-assets.md)。 不論本機檔案系統或OneDrive和Dropbox資料來源提供的檔案夾結構為何，所有資產都會顯示在Content Hub的頂層，以增強搜尋功能。
 
 是否顯示使用Content Hub上傳的資產，取決於您是否已啟用[自動核准切換](/help/assets/configure-content-hub-ui-options.md#configure-import-options-content-hub)：
 
-* 如果啟用&#x200B;**[!UICONTROL 自動核准]**&#x200B;切換開關，您使用 Content Hub 上傳的資產就會自動顯示。
+* 如果啟用&#x200B;**[!UICONTROL 自動核准]**&#x200B;切換開關，您使用 Content Hub 上傳的資產則會自動顯示。
 
 * 如果停用&#x200B;**[!UICONTROL 自動核准]**&#x200B;切換開關，您使用 Content Hub 上傳的資產就不會自動顯示。這些資產會顯示在您 Assets as a Cloud Service 環境的 `hydrated-assets` 資料夾中。導覽至該資料夾，並將資產狀態[大量編輯](#bulk-approve-assets-content-hub)為 `Approved`，使資產顯示於 Content Hub 中。
 

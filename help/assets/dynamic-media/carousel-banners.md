@@ -5,14 +5,51 @@ contentOwner: Rick Brough
 feature: Carousel Banners
 role: User
 exl-id: 34541302-6610-4f5e-af93-c95328dda910
-source-git-commit: 89f23a590338561b4cfeb10b54a260a135ec2f08
+source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
 workflow-type: tm+mt
-source-wordcount: '4492'
-ht-degree: 1%
+source-wordcount: '4538'
+ht-degree: 2%
 
 ---
 
 # 輪播橫幅{#carousel-banners}
+
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets與Edge Delivery Services整合</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI擴充性</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>啟用Dynamic Media Prime和Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>搜尋最佳實務</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>中繼資料最佳實務</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 開發人員文件</b></a>
+        </td>
+    </tr>
+</table>
 
 輪播橫幅可讓行銷人員輕鬆建立互動式輪播促銷內容，並將內容傳送至任何畫面，藉此促進轉換。
 
@@ -79,9 +116,9 @@ ht-degree: 1%
 
    請參閱[ （選擇性）預覽轉盤橫幅](#optional-previewing-carousel-banners) — 選擇性。 如有需要，您可以檢視轉盤集的表示方式，並測試其互動性。
 
-1. [Publish輪播橫幅](#publishing-carousel-banners)。
+1. [發佈轉盤橫幅](#publishing-carousel-banners)。
 
-   您可以像發佈任何資產一樣發佈轉盤集。 在Assets中，導覽至轉盤集並加以選取，然後選取「**[!UICONTROL Publish]**」。 發佈轉盤集時會啟用URL和內嵌字串。
+   您可以像發佈任何資產一樣發佈轉盤集。 在Assets中，導覽至轉盤集並加以選取，然後選取「**[!UICONTROL 發佈]**」。 發佈轉盤集時會啟用URL和內嵌字串。
 
 1. 執行下列任一項作業：
 
@@ -89,7 +126,7 @@ ht-degree: 1%
 
       * [將輪播橫幅與現有的快速檢視整合](#integrating-the-carousel-banner-with-an-existing-quickview)。 如果您使用協力廠商Web內容管理系統，則必須將新的轉盤橫幅與網站上現有的快速檢視實作整合。
 
-   * [在Experience Manager](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)中新增轉盤橫幅至您的網站。 如果您是Experience Manager Sites客戶，則可以使用互動媒體元件，將轉盤集直接新增至頁面。
+   * [在Experience Manager中新增輪播橫幅至您的網站](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)。 如果您是Experience Manager Sites客戶，則可以使用互動媒體元件，將轉盤集直接新增至頁面。
 
 如果您必須編輯轉盤集，請參閱[編輯轉盤集](#editing-carousel-sets)。 此外，您也可以檢視及編輯[轉盤集屬性](/help/assets/manage-digital-assets.md#editing-properties)。
 
@@ -209,7 +246,7 @@ ht-degree: 1%
    如需詳細資訊，請參閱[使用選取器](/help/assets/dynamic-media/working-with-selectors.md)。
 
 1. 繼續新增投影片，直到在轉盤集內新增所有要旋轉的影像為止。
-1. （可選）執行下列任一項作業：
+1. (選用) 執行以下任一操作：
 
    * 如有必要，請拖曳投影片以重新排序集合清單中的影像。
    * 若要刪除影像，請選取影像，然後在工具列中選取&#x200B;**[!UICONTROL 刪除投影片]**。
@@ -328,9 +365,9 @@ ht-degree: 1%
    您也可以預覽轉盤橫幅的外觀。 請參閱[ （選擇性）預覽轉盤橫幅](#optional-previewing-carousel-banners)。
 
 1. 選取「**[!UICONTROL 儲存]**」。
-1. Publish傳送集。 發佈作業會建立可在網站頁面上使用的內嵌程式碼或URL。 如果您是Experience Manager Sites客戶，請直接將輪播集新增至您的網頁。
+1. 發佈轉盤集。 發佈作業會建立可在網站頁面上使用的內嵌程式碼或URL。 如果您是Experience Manager Sites客戶，請直接將輪播集新增至您的網頁。
 
-   檢視[Publish資產](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)。
+   請參閱[發佈資產](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)。
 
    請參閱[將轉盤集新增至您的網站登陸頁面](#adding-a-carousel-banner-to-your-website-page)
 
@@ -402,9 +439,9 @@ ht-degree: 1%
 1. 在頁面左側面板中的&#x200B;**[!UICONTROL 檢視器]**&#x200B;清單中，選取您要使用的輪播橫幅檢視器預設集名稱。
 1. 若要測試其相關動作，請選取影像上的熱點或影像地圖。
 
-## Publish輪播橫幅 {#publishing-carousel-banners}
+## 發佈輪播橫幅 {#publishing-carousel-banners}
 
-若要使用輪播，您必須將其發佈。 發佈轉盤集時會啟用URL和內嵌程式碼。 它也會將轉盤發佈至Dynamic Media雲端，此雲端與CDN整合，用於可擴充和高效能的傳送。
+若要使用輪播，您必須將其發佈。 發佈轉盤集時會啟用URL和內嵌程式碼。 它也會將轉盤發佈至Dynamic Media雲端，此雲端已與CDN整合，以便提供可擴充且高效能的傳送方式。
 
 >[!NOTE]
 >
@@ -412,7 +449,7 @@ ht-degree: 1%
 >
 >此外，如果您修改轉盤橫幅中預先存在的已發佈互動影像，請發佈互動影像，以便這些變更會反映在轉盤橫幅中。
 
-如需如何發佈轉盤橫幅的詳細資訊，請參閱[Publish Dynamic Media Assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)。
+如需如何發佈轉盤橫幅的詳細資訊，請參閱[發佈Dynamic Media Assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)。
 
 ## 將輪播橫幅新增至您的網站頁面 {#adding-a-carousel-banner-to-your-website-page}
 
@@ -443,7 +480,7 @@ ht-degree: 1%
 1. 前端程式碼會使用在步驟2中取得的URL傳送Ajax要求。
 1. 後端邏輯會將對應的快速檢視資料或內容傳回前端程式碼。
 1. 前端程式碼會載入快速檢視資料或內容。
-1. 前端程式碼可選擇性將載入的快速檢視資料轉換為HTML表示法。
+1. 前端程式碼可選擇性將載入的快速檢視資料轉換為HTML呈現。
 1. 前端程式碼會顯示模型對話方塊或面板，並在畫面上為使用者呈現HTML內容。
 
 這些呼叫不代表網頁邏輯可從任意步驟呼叫的獨立公用API呼叫。 相反地，這是一種鏈結呼叫，下個步驟的每一個都會隱藏在上一個步驟的最後一個階段（回撥）。

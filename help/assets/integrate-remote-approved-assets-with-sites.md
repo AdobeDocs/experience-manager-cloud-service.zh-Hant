@@ -1,18 +1,52 @@
 ---
 title: 將遠端 AEM Assets 與 AEM Sites 整合
-description: 瞭解如何使用核准的AEM Assets來設定並連線AEM網站。
+description: 瞭解如何使用核准的AEM Assets來設定及連結AEM網站。
 exl-id: 382e6166-3ad9-4d8f-be5c-55a7694508fa
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '1028'
+source-wordcount: '1056'
 ht-degree: 7%
 
 ---
 
 # 將遠端 AEM Assets 與 AEM Sites 整合  {#integrate-approved-assets}
 
-| [搜尋最佳實務](/help/assets/search-best-practices.md) | [中繼資料最佳實務](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [具有 OpenAPI 功能的 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 開發人員文件](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets與Edge Delivery Services整合</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI擴充性</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>啟用Dynamic Media Prime和Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>搜尋最佳實務</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>中繼資料最佳實務</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 開發人員文件</b></a>
+        </td>
+    </tr>
+</table>
 
 >[!AVAILABILITY]
 >
@@ -20,9 +54,9 @@ ht-degree: 7%
 >
 >[!BADGE 具有 OpenAPI 功能的 Dynamic Media 指南 PDF]{type=Informative url="https://helpx.adobe.com/tw/content/dam/help/en/experience-manager/aem-assets/dynamic-media-with-openapi-capabilities.pdf"}
 
-有效管理數位資產對於跨各種線上平台提供吸引人且一致的品牌體驗至關重要。 Dynamic Media搭配OpenAPI功能，可啟用AEM Sites與AEM Assetsas a Cloud Service之間的緊密整合，進而增強數位資產管理。 這項創新功能可讓您輕鬆跨多個AEM環境共用和管理不同型別的已核准數位資產，精簡網站作者和內容編輯的工作流程。
+有效管理數位資產對於跨各種線上平台提供吸引人且一致的品牌體驗至關重要。 Dynamic Media具備OpenAPI功能，可啟用AEM Sites與AEM Assets as a Cloud Service之間的緊密整合，進而增強數位資產管理。 這項創新功能可讓您輕鬆在多個AEM環境中共用和管理不同型別的已核准數位資產，精簡網站作者和內容編輯的工作流程。
 
-透過OpenAPI功能的Dynamic Media，Sites作者可直接在AEM頁面編輯器和[內容片段](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/content-fragments/content-fragments.html)中使用遠端DAM的資產，藉此簡化內容建立和管理程式。
+具備OpenAPI功能的Dynamic Media可讓Sites作者直接在AEM頁面編輯器和[內容片段](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/content-fragments/content-fragments.html)中使用遠端DAM的資產，進而簡化內容建立和管理程式。
 
 使用者可以將多個AEM Sites執行個體（對最大數量沒有任何限制）連線到遠端DAM部署，這是優於[連線的Assets](use-assets-across-connected-assets-instances.md)功能的顯著優點。
 
@@ -30,7 +64,7 @@ ht-degree: 7%
 
 初始設定後，使用者可以在AEM Sites執行個體上建立頁面，並視需要新增資產。 新增資產時，他們可以選取儲存在本機DAM中的資產，或瀏覽並使用遠端DAM中可用的資產。
 
-Dynamic Media搭配OpenAPI功能提供數種其他好處，例如存取和使用內容片段中的遠端資產、擷取遠端資產的中繼資料等等。 進一步瞭解Dynamic Media的OpenAPI功能優於連線Assets](/help/assets/dynamic-media-open-apis-faqs.md)的其他[優點。
+具備OpenAPI功能的Dynamic Media提供數種其他優點，例如存取和使用內容片段中的遠端資產、擷取遠端資產的中繼資料等等。 進一步瞭解Dynamic Media （具有OpenAPI功能）優於Connected Assets](/help/assets/dynamic-media-open-apis-faqs.md)的其他[優點。
 
 ## 開始之前 {#pre-requisites-sites-integration}
 
@@ -55,7 +89,7 @@ Dynamic Media搭配OpenAPI功能提供數種其他好處，例如存取和使用
    1. 登入主控台並按一下&#x200B;**[!UICONTROL OSGi] >**或
 使用直接URL；例如： `https://localhost:4502/system/console/configMgr`
 
-   1. 依照以下方式設定&#x200B;**新一代Dynamic Media設定** (`NextGenDynamicMediaConfigImpl`) OSGi設定，將值取代為您遠端資產環境的值。
+   1. 依照以下方式設定&#x200B;**新一代動態媒體設定** (`NextGenDynamicMediaConfigImpl`) OSGi設定，將值取代為您遠端資產環境的值。
 
       ```text
         imsClient="<ims-client-ID>"
@@ -69,7 +103,7 @@ Dynamic Media搭配OpenAPI功能提供數種其他好處，例如存取和使用
 其中`pXXXX`參考了方案ID
       `eYYYY`參考環境識別碼
 
-      ![新一代Dynamic Media設定OSGi設定視窗](/help/assets/assets/remote-assets-osgi.png)
+      ![新一代動態媒體設定OSGi設定視窗](/help/assets/assets/remote-assets-osgi.png)
 
   深入瞭解[IMS驗證](https://experienceleague.adobe.com/docs/experience-manager-65/content/security/ims-config-and-admin-console.html)。
 
@@ -90,7 +124,7 @@ Dynamic Media搭配OpenAPI功能提供數種其他好處，例如存取和使用
 
 ## 從遠端DAM存取資產 {#fetch-assets}
 
-Dynamic Media搭配OpenAPI功能，可讓您在本機AEM Sites頁面編輯器和AEM內容片段上存取遠端DAM例項中可用的資產。
+具OpenAPI功能的Dynamic Media可讓您在本機AEM Sites頁面編輯器和AEM內容片段上，存取遠端DAM執行個體中可用的資產。
 
 ![影像](/help/assets/assets/open-APIs.png)
 
@@ -111,7 +145,7 @@ Dynamic Media搭配OpenAPI功能，可讓您在本機AEM Sites頁面編輯器和
 1. 新增替代文字並按一下&#x200B;**[!UICONTROL 完成]**。
    <br>遠端資產會出現在影像元件中。 您也可以在資產載入頁面時，或使用「預覽」索引標籤，驗證資產的傳送URL。 傳遞URL表示資產正由遠端存取。
 
-您只能針對「影像核心元件v3」和「Teaser核心元件v2」 ，使用開箱即用的AEM頁面編輯器來存取遠端資產。 若為其他元件（包括自訂元件），需進行自訂，才能將Asset Selector與這些元件整合。
+您只能針對「影像核心元件v3」和「Teaser核心元件v2」存取內建AEM頁面編輯器中的遠端資產。 若為其他元件（包括自訂元件），需進行自訂，才能將Asset Selector與這些元件整合。
 
 #### 影片：存取AEM頁面編輯器中的遠端資產
 
@@ -119,7 +153,7 @@ Dynamic Media搭配OpenAPI功能，可讓您在本機AEM Sites頁面編輯器和
 
 ### 存取AEM內容片段中的遠端資產 {#access-assets-content-fragment}
 
-請依照下列步驟，在您的AEM Sites執行個體上使用AEM內容片段中的遠端資產。 您可以在AEM 6.5中執行這項整合，但無法在AEM as a Cloud Service上執行。
+請依照下列步驟，在您的AEM Sites執行個體上使用AEM內容片段中的遠端資產。 您可以在AEM 6.5中執行這項整合，但無法在AEM as a Cloud Service中執行。
 
 1. 移至&#x200B;**[!UICONTROL Assets]** > **[!UICONTROL 檔案]**。
 1. 選取出現內容片段的資產資料夾。
@@ -144,4 +178,4 @@ Dynamic Media搭配OpenAPI功能，可讓您在本機AEM Sites頁面編輯器和
 
 ### 在Edge Delivery Services中存取遠端資產 {#access-assets-eds}
 
-您也可以存取Edge Delivery Services中的遠端資產。 如需詳細資訊，請參閱[使用透過Dynamic Media提供的Assets as a Cloud Service資產搭配OpenAPI功能](https://www.aem.live/docs/aem-assets-sidekick-plugin#utilizing-assets-from-assets-cloud-services-delivered-via-dynamic-media-with-openapi)。
+您也可以存取Edge Delivery Services中的遠端資產。 如需詳細資訊，請參閱[透過OpenAPI功能使用Dynamic Media提供的Assets as a Cloud Service資產](https://www.aem.live/docs/aem-assets-sidekick-plugin#utilizing-assets-from-assets-cloud-services-delivered-via-dynamic-media-with-openapi)。

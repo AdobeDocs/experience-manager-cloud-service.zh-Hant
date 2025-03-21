@@ -5,17 +5,51 @@ role: User, Leader
 contentOwner: AG
 exl-id: 2459d482-828b-4410-810c-ac55ef0a2119
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: 28ba98828cfa34933a2ec4f5d9b7d9681d42fa5a
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '1633'
-ht-degree: 73%
+source-wordcount: '1661'
+ht-degree: 71%
 
 ---
 
 # 管理資產 {#manage-assets}
 
-| [搜尋最佳實務](/help/assets/search-best-practices.md) | [中繼資料最佳實務](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [具有 OpenAPI 功能的 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 開發人員文件](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets與Edge Delivery Services整合</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI擴充性</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>啟用Dynamic Media Prime和Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>搜尋最佳實務</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>中繼資料最佳實務</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 開發人員文件</b></a>
+        </td>
+    </tr>
+</table>
 
 您可以使用 [!DNL Assets view] 的人性化介面，輕鬆進行各種數位資產管理 (DAM) 任務。新增資產後，即可搜尋、下載、移動、複製、重新命名、刪除、更新和編輯您的資產。
 
@@ -152,7 +186,7 @@ Assets檢視可讓您根據您在「資產詳細資料」頁面上的&#x200B;**�
 
 1. 如果您在步驟2中選取&#x200B;**已核准**，請選取核准目標。 可能的值包括「傳送」和「Content Hub」。
 
-   * **傳送**&#x200B;是下拉式功能表中選取的預設選項，而且會透過OpenAPI](/help/assets/dynamic-media-open-apis-overview.md)將資產發佈至[Dynamic Media和[Content Hub](/help/assets/product-overview.md) (如果兩者皆已啟用Experience Manager Assets)。
+   * **傳送**&#x200B;是下拉式功能表中選取的預設選項，而且會透過OpenAPI](/help/assets/dynamic-media-open-apis-overview.md)將資產發佈至[Dynamic Media與[Content Hub](/help/assets/product-overview.md) (如果兩者都針對Experience Manager Assets啟用)。
 
    * 選取&#x200B;**Content Hub**&#x200B;會將資產發佈至Content Hub。 只有在為Experience Manager Assets啟用Content Hub時，它才會顯示為選項。
 
@@ -163,7 +197,7 @@ Assets檢視可讓您根據您在「資產詳細資料」頁面上的&#x200B;**�
 
    >[!NOTE]
    >
-   >設定核准目標是一項有限的可用性功能。 您可以透過建立支援票證來啟用或停用它。 如果您已啟用具有OpenAPI的Dynamic Media，則預設會啟用。
+   >設定核准目標是一項有限的可用性功能。 您可以透過建立支援票證來啟用或停用它。 如果您已啟用動態媒體與OpenAPI，預設為啟用。
 
    ![核准狀態](/help/assets/assets/approval-status-delivery.png)
 
@@ -179,11 +213,11 @@ Assets檢視可讓您根據您在「資產詳細資料」頁面上的&#x200B;**�
 
 下表說明在您的AEM as a Cloud Service環境中使用OpenAPI和Content Hub啟用DM而顯示`Approval Target`下拉式清單和預設核准目標的先決條件：
 
-| Dynamic Media與OpenAPI | Content Hub | 是否要顯示核准目標下拉式清單？ | 已核准資產的預設核准目標 | Publish目的地 |
+| 動態媒體與OpenAPI | Content Hub | 是否要顯示核准目標下拉式清單？ | 已核准資產的預設核准目標 | 發佈目的地 |
 | --- | --- | --- | --- |---|
-| 已啟用 | 已啟用 | 是 | 傳遞 | Dynamic Media搭配OpenAPI與Content Hub |
+| 已啟用 | 已啟用 | 是 | 傳遞 | Dynamic Media (含OpenAPI和Content Hub) |
 | 未啟用 | 已啟用 | 是 | Content Hub | Content Hub |
-| 已啟用 | 未啟用 | 是 | 傳遞 | Dynamic Media與OpenAPI |
+| 已啟用 | 未啟用 | 是 | 傳遞 | 動態媒體與OpenAPI |
 | 未啟用 | 未啟用 | 否 | N/A | N/A |
 
 ### 設定資產過期日 {#set-asset-expiration-date}

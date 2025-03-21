@@ -5,14 +5,51 @@ contentOwner: Rick Brough
 feature: Interactive Images
 role: User
 exl-id: 89eef5e6-d508-4f33-b54e-24d4df49f8c3
-source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
+source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
 workflow-type: tm+mt
-source-wordcount: '4072'
+source-wordcount: '4118'
 ht-degree: 1%
 
 ---
 
 # 互動式影像{#interactive-images}
+
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets與Edge Delivery Services整合</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI擴充性</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>啟用Dynamic Media Prime和Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>搜尋最佳實務</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>中繼資料最佳實務</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 開發人員文件</b></a>
+        </td>
+    </tr>
+</table>
 
 您可以將「可購物」熱點拖放至影像上，輕鬆讓靜態影像豐富吸引客戶的體驗。 可購物熱點結合有關產品或服務的其他資訊與直接的銷售點「加入購物車」或「購買」功能。 客戶可以選擇這些連結至產品或服務的熱點、將其新增至購物車，或連結至網頁。 這類直接體驗可提升客戶參與度和您網站上的轉換率。
 
@@ -38,7 +75,7 @@ ht-degree: 1%
 
 互動影像步驟：
 
-1. **（選擇性）識別熱點變數**。 如果您使用Adobe Experience Manager Assets和Dynamic Media獨立，請識別在現有Quickview實作中使用的動態變數。 這麼做可確保您可以在建立互動式影像時輸入熱點資料。 請參閱[（選擇性）識別熱點變數](#optional-identifying-hotspot-variables)。
+1. **（選擇性）識別熱點變數**。 如果您使用Adobe Experience Manager Assets和獨立的Dynamic Media，請識別在現有Quickview實作中使用的動態變數。 這麼做可確保您可以在建立互動式影像時輸入熱點資料。 請參閱[（選擇性）識別熱點變數](#optional-identifying-hotspot-variables)。
 不過，如果您使用Experience Manager Sites或Experience Manager電子商務，或同時使用兩者，則不需要執行此步驟。
 
 1. **（選擇性）建立互動式影像檢視器預設集**。 自訂用來表示熱點的圖形影像。 如果您打算改用名為`Shoppable_Banner`的現成互動影像檢視器預設集，則不需要建立自己的互動影像檢視器預設集。
@@ -52,8 +89,8 @@ ht-degree: 1%
 請參閱[預覽互動式影像](#optional-previewing-interactive-images) — 選擇性。 如有需要，您可以檢視可購物橫幅的呈現方式，並測試其互動性。
 如需如何發佈互動式影像資產的詳細資訊，請參閱[發佈Assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)。
 
-1. **以Experience Manager**&#x200B;將互動式影像新增至您的網站或您的網站。 如果您使用Sites或eCommerce，或兩者都使用，您可以直接將互動式影像新增至Experience Manager的網頁。 將互動媒體元件拖曳至頁面。 請參閱[將Dynamic Media Assets新增至頁面](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)。
-如果您使用Experience Manager Assets和獨立式Dynamic Media，請複製網站上的內嵌程式碼。 然後，將其與您現有的快速檢視整合。 請參閱[將互動式影像與您的網站整合](#integrating-an-interactive-image-with-your-website)。
+1. **在Experience Manager中新增互動式影像至您的網站或網站**。 如果您使用Sites或eCommerce，或兩者都使用，您可以直接將互動式影像新增至Experience Manager中的網頁。 將互動媒體元件拖曳至頁面。 請參閱[將Dynamic Media Assets新增至頁面](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)。
+如果您是獨立使用Experience Manager Assets和Dynamic Media，請複製網站上的內嵌程式碼。 然後，將其與您現有的快速檢視整合。 請參閱[將互動式影像與您的網站整合](#integrating-an-interactive-image-with-your-website)。
 如果您使用協力廠商WCM （Web內容管理員），請將新的互動式視訊與網站上使用的現有快速檢視整合。 請參閱[將互動式影像與現有的快速檢視](#integrating-an-interactive-image-with-an-existing-quickview)整合。
 
 ## （可選）識別熱點變數 {#optional-identifying-hotspot-variables}
@@ -63,7 +100,7 @@ ht-degree: 1%
 >只有在下列情況為真時才需要此工作：
 >
 >* 您想要透過觸發至快速檢視，將互動性新增至影像。
->* 您的Experience Manager實作&#x200B;*不*&#x200B;使用電子商務整合架構，將產品資料從任何電子商務解決方案提取到Experience Manager中。 這類解決方案包括IBM®WebSphere®Commerce、Elastic Path、SAP Hybris或Intershop。
+>* 您實作Experience Manager時，*不會*&#x200B;使用電子商務整合架構，將產品資料從任何電子商務解決方案提取至Experience Manager。 這類解決方案包括IBM®WebSphere®Commerce、Elastic Path、SAP Hybris或Intershop。
 >
 >如果您的Experience Manager實作使用電子商務，您可以略過此任務並繼續下一個任務。
 
@@ -196,7 +233,7 @@ ht-degree: 1%
 
    請確定您發佈新的檢視器預設集。
 
-   請參閱[Publish檢視器預設集](/help/assets/dynamic-media/managing-viewer-presets.md#publishing-viewer-presets)。
+   請參閱[發佈檢視器預設集](/help/assets/dynamic-media/managing-viewer-presets.md#publishing-viewer-presets)。
 
    您現在已準備好上傳影像橫幅。
 
@@ -294,9 +331,9 @@ ht-degree: 1%
         >將檢視器內嵌在體驗片段中時，不支援互動影像中的社群媒體分享工具。 請改用或建立沒有社群媒體分享工具的檢視器預設集。 這類檢視器預設集可讓您成功將其嵌入體驗片段中。
 
 1. 選取&#x200B;**[!UICONTROL 儲存]**&#x200B;以儲存您的工作並返回[瀏覽]頁面。
-1. Publish互動式影像。 發佈功能會透過雲端傳送橫幅，也會產生內嵌程式碼，讓您與協力廠商網站整合。
+1. 發佈互動式影像。 發佈功能會透過雲端傳送橫幅，也會產生內嵌程式碼，讓您與協力廠商網站整合。
 
-   檢視[Publish資產](/help/assets/manage-digital-assets.md#publish-assets)。
+   請參閱[發佈資產](/help/assets/manage-digital-assets.md#publish-assets)。
 
    新增熱點並發佈互動式影像後，您現在就可以將其新增至現有網站了。
 
@@ -322,9 +359,9 @@ ht-degree: 1%
 1. 在檢視器清單中，選取&#x200B;**[!UICONTROL Shoppable_Banner]**&#x200B;或您已建立的互動式影像檢視器預設集名稱。
 1. 若要測試連結區的相關動作，請選取影像上的連結區。
 
-## Publish互動式影像資產 {#publishing-interactive-image-assets}
+## 發佈互動式影像資產 {#publishing-interactive-image-assets}
 
-如需如何發佈互動式影像資產的詳細資訊，請參閱[Publish Assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)。
+如需如何發佈互動式影像資產的詳細資訊，請參閱[發佈Assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)。
 
 ## 將互動式影像與您的網站整合 {#integrating-an-interactive-image-with-your-website}
 
@@ -377,7 +414,7 @@ ht-degree: 1%
 1. 前端程式碼會使用在步驟2中取得的URL傳送Ajax要求。
 1. 後端邏輯會將對應的快速檢視資料或內容傳回前端程式碼。
 1. 前端程式碼會載入快速檢視資料或內容。
-1. 前端程式碼可選擇將載入的快速檢視資料轉換為HTML表示法。
+1. 前端程式碼可選擇性將載入的Quickview資料轉換為HTML表示法。
 1. 前端程式碼會顯示模型對話方塊或面板，並在畫面上為使用者呈現HTML內容。
 
 這些呼叫不一定代表網頁邏輯從任意步驟呼叫的獨立公用API呼叫。 相反地，這是一種鏈結呼叫，下個步驟的每一個都會隱藏在上一個步驟的最後一個階段（回撥）。

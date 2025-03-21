@@ -4,17 +4,51 @@ description: 設定Adobe Experience Manager Assets以根據MIME型別限制使�
 exl-id: 094c31f3-f2e9-4b44-9995-c76fb78ca458
 feature: Upload, Asset Ingestion
 role: User, Admin, Developer
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '390'
-ht-degree: 13%
+source-wordcount: '418'
+ht-degree: 15%
 
 ---
 
 # 設定資產上傳限制 {#configure-asset-upload-restrictions}
 
-| [搜尋最佳實務](/help/assets/search-best-practices.md) | [中繼資料最佳實務](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [具有OpenAPI功能的Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets開發人員檔案](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets與Edge Delivery Services整合</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI擴充性</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>啟用Dynamic Media Prime和Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>搜尋最佳實務</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>中繼資料最佳實務</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 開發人員文件</b></a>
+        </td>
+    </tr>
+</table>
 
 您可以設定Adobe Experience Manager Assets根據MIME型別限制使用者可以上傳的資產型別。
 
@@ -40,13 +74,13 @@ ht-degree: 13%
 
 1. 按一下「**[!UICONTROL 儲存]**」。
 
-**範例1：允許將所有影像和PDF檔案上傳到Experience Manager Assets**
+**範例1：允許將所有影像和PDF檔案上傳至Experience Manager Assets**
 
 若要允許將所有格式的影像和PDF檔案上傳到Experience Manager Assets，請執行下列設定：
 
 ![資產上傳限制](assets/asset-upload-restrictions.png)
 
-`image/*`作為MIME型別允許上傳所有格式的影像。 `application/pdf`作為MIME型別，允許將PDF檔案上傳到Experience Manager Assets。
+`image/*`作為MIME型別允許上傳所有格式的影像。 `application/pdf`作為MIME型別，允許將PDF檔案上傳至Experience Manager Assets。
 
 如果您嘗試上傳未包含在允許MIME型別清單中的檔案，Experience Manager Assets會顯示下列錯誤訊息：
 
@@ -60,7 +94,7 @@ ht-degree: 13%
 
 ![資產限制](assets/asset-restrictions.png)
 
-根據影像中描述的設定，您可以將。JPG、.PNG和。GIF格式的影像上傳到Experience Manager Assets。
+您可以根據影像中描述的設定，將。JPG、.PNG及。GIF格式的影像上傳至Experience Manager Assets。
 
 **另請參閱**
 

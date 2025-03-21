@@ -5,28 +5,62 @@ contentOwner: Vishabh Gupta
 role: Admin
 feature: Renditions
 exl-id: 869c1c34-6287-4d62-bb7a-aa4df580ac0e
-source-git-commit: 979c4accca8b271ba2ff0ba176985c94b6d469c7
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '527'
-ht-degree: 13%
+source-wordcount: '555'
+ht-degree: 12%
 
 ---
 
 # 產生Adobe InDesign的「僅供刊登」轉譯 {#fpo-renditions}
 
-| [搜尋最佳實務](/help/assets/search-best-practices.md) | [中繼資料最佳實務](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [具有 OpenAPI 功能的 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 開發人員文件](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets與Edge Delivery Services整合</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI擴充性</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>啟用Dynamic Media Prime和Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>搜尋最佳實務</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>中繼資料最佳實務</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 開發人員文件</b></a>
+        </td>
+    </tr>
+</table>
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
 | AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/administer/configure-fpo-renditions) |
 | AEM as a Cloud Service  | 本文章 |
 
-從Experience Manager將大型資產放入Adobe InDesign檔案時，創意專業人士必須在他們[放置資產](https://helpx.adobe.com/indesign/using/placing-graphics.html)後等待相當長的時間。 同時，使用者會被封鎖而無法使用InDesign。 這會中斷創意流程，並對使用者體驗產生負面影響。 Adobe功能可暫時將小型轉譯置於InDesign檔案中。 當需要最終輸出時（例如對於列印和發佈工作流程），原始的完整解析度資產會取代背景中的暫時轉譯。 這種背景的非同步更新可加快設計流程以提高生產力，且不會影響創作流程。
+將大型資產從Experience Manager置入Adobe InDesign檔案時，創意專業人士在[置入資產](https://helpx.adobe.com/indesign/using/placing-graphics.html)後，必須等候相當長的時間。 同時，使用者被封鎖而無法使用InDesign。 這會中斷創意流程，並對使用者體驗產生負面影響。 Adobe一開始可讓您將小型轉譯暫時放入InDesign檔案。 當需要最終輸出時（例如對於列印和發佈工作流程），原始的完整解析度資產會取代背景中的暫時轉譯。 這種背景的非同步更新可加快設計流程以提高生產力，且不會影響創作流程。
 
 Assets提供僅用於刊登(FPO)的轉譯。 這些FPO轉譯的檔案大小較小，但外觀比例相同。 如果資產無法使用FPO轉譯，Adobe InDesign會改用原始資產。 此遞補機制可確保創意工作流程無任何中斷地進行。
 
-Experience Manageras a Cloud Service提供雲端原生資產處理功能，可產生FPO轉譯。 使用資產微服務來產生轉譯。 您可以設定產生新上傳的資產以及Experience Manager中存在的資產的轉譯。
+Experience Manager as a Cloud Service提供雲端原生資產處理功能，可產生FPO轉譯。 使用資產微服務來產生轉譯。 您可以設定轉譯產生新上傳的資產以及Experience Manager中存在的資產。
 
 以下是產生FPO轉譯的步驟：
 

@@ -8,14 +8,51 @@ geptopics: SG_SCENESEVENONDEMAND_PK/categories/ecatalogs
 feature: Dynamic Media Classic,Asset Management,Image Sets,Spin Sets,eCatalog
 role: User
 exl-id: fb63e2d4-2c8c-48dd-a0dc-fdfbbfb57b30
-source-git-commit: 973cec704b5e8f34e3b2c448fc10e09226ffa933
+source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
 workflow-type: tm+mt
-source-wordcount: '308'
-ht-degree: 9%
+source-wordcount: '354'
+ht-degree: 13%
 
 ---
 
 # Dynamic Media限制
+
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets與Edge Delivery Services整合</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI擴充性</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>啟用Dynamic Media Prime和Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>搜尋最佳實務</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>中繼資料最佳實務</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 開發人員文件</b></a>
+        </td>
+    </tr>
+</table>
 
 以下各節說明Dynamic Media的限制。
 
@@ -26,7 +63,7 @@ ht-degree: 9%
 
 ## Dynamic Media對資產型別的最佳實務和強制執行限制 {#best-practice-enforced-limits}
 
-當您建立迴轉集或影像集，或上傳頁面擷取的PDF時，Adobe會建議下列最佳作法並強制執行下列限制：
+當您建立迴轉集或影像集，或上傳要擷取頁面的PDF時，Adobe會建議下列最佳作法並強制實行下列限制：
 
 | 資產 — 限制型別 | 最佳實務 | 強加的限制 |
 | --- | --- | --- |
@@ -34,13 +71,13 @@ ht-degree: 9%
 | **所有集合** — 每個集合的重複資產數目 | 無重複專案 | 20 |
 | **所有集合** — 每個集合的資產數量上限 | 每組5至10個影像 | 1000 |
 | **迴轉集** — 每個2D集的列/欄數上限 | 每組12至18個影像 | 1000 |
-| **PDF** — 要視為擷取的PDF最大頁數 |  | 100 (適用於所有PDF) |
+| **PDF** — 要視為擷取的PDF最大頁數 |  | 100 （適用於所有PDF） |
 
 <!-- See also [Dynamic Media limitations](/help/assets/limitations.md). -->
 
 ## Dynamic Media不支援的網頁瀏覽器和作業系統組合 {#unsupported-browser-os}
 
-Dynamic Media不支援下列網頁瀏覽器和作業系統組合。
+Dynamic Media不支援下列Web瀏覽器和作業系統組合。
 
 * Internet Explorer 11 + Windows 7
 * Internet Explorer 11 + Windows 8.1
@@ -57,7 +94,7 @@ Dynamic Media不支援下列網頁瀏覽器和作業系統組合。
 <!-- CQDOC-19433 (original ticket)
 and CQDOC-19792 (removed as per this ticket December 5, 2022) -->
 
-自2024年4月30日起，Adobe Dynamic Media將停止支援下列專案：
+自2024年4月30日起，Adobe Dynamic Media將終止支援下列專案：
 
 * SSL (安全通訊端層) 2.0
 * SSL 3.0

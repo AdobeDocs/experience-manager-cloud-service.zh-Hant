@@ -1,6 +1,6 @@
 ---
 title: Dynamic Media歷程，第一部分
-description: Dynamic Media歷程涵蓋Dynamic Media的基礎知識、運作方式、可為您做的事情，以及可為您的工作和客戶帶來的價值。
+description: Dynamic Media歷程涵蓋Dynamic Media的基本概念、運作方式、可為您做哪些事，以及可為您的工作和客戶帶來哪些價值。
 contentOwner: Rick Brough
 products: Experience Manager as a Cloud Service
 topic-tags: introduction,administering
@@ -11,20 +11,57 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: f3472006-d5ae-4f70-af3e-44e73aee85cc
-source-git-commit: 74172fe7fcf9a22837645a154f2e85fd6fa6b40e
+source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
 workflow-type: tm+mt
-source-wordcount: '3615'
+source-wordcount: '3661'
 ht-degree: 0%
 
 ---
 
 # Dynamic Media歷程：基礎知識，第一部分 {#dm-journey-part1}
 
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets與Edge Delivery Services整合</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI擴充性</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>啟用Dynamic Media Prime和Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>搜尋最佳實務</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>中繼資料最佳實務</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 開發人員文件</b></a>
+        </td>
+    </tr>
+</table>
+
 {{see-also-dm}}
 
 歡迎使用Dynamic Media歷程。
 
-此歷程涵蓋Dynamic Media的基礎知識、運作方式、可為您做的事情以及可為您的工作和客戶帶來的價值。
+此歷程涵蓋Dynamic Media的基本概念、運作方式、可為您做的事情，以及可為您的工作和客戶帶來的價值。
 
 **_必備條件_**
 
@@ -43,12 +80,12 @@ _第一部分_
 
 _第二部分_
 
-* Dynamic Media URL剖析，以及Dynamic Media如何提供內容
+* Dynamic Media URL剖析，以及Dynamic Media如何傳遞內容
 * 建立影像預設集以轉譯資產的基礎知識
 * 影像集、迴轉集及混合媒體集
 
 **_對象_**
-最適合此歷程讀者的Experience Manager對象，是以下這些剛開始使用Dynamic Media的人：
+剛接觸Experience Manager上Dynamic Media的以下受眾最適合此歷程的讀者：
 
 * 管理員
 * 業務分析師
@@ -65,30 +102,30 @@ _第二部分_
 
 ## 什麼是Dynamic Media以及它如何協助您？ {#dm-journey-a}
 
-Dynamic Media可協助您隨選提供豐富的視覺化銷售和行銷資產。 此外，也能協助您建立及提供互動式檢視體驗，包括縮放、360度旋轉和視訊。 您的資產會動態調整規模，以因應網頁、行動裝置和社交網站上的使用量。 Dynamic Media使用影像、視訊和3D等一組主要來源資產，透過其全球性、可擴充、效能最佳化的CDN （內容傳遞網路）即時產生並傳遞這種豐富內容的多種變數。
+Dynamic Media可協助您隨選提供豐富的視覺化銷售和行銷資產。 此外，也能協助您建立及提供互動式檢視體驗，包括縮放、360度旋轉和視訊。 您的資產會動態調整規模，以因應網頁、行動裝置和社交網站上的使用量。 使用影像、視訊和3D等一組主要來源資產，Dynamic Media會透過其全球性、可擴充、效能最佳化的CDN （內容傳遞網路），即時產生並傳遞這種豐富內容的多種變數。
 
-Dynamic Media整合了Adobe Experience Manager Assets數位資產管理解決方案的工作流程，以簡化及簡化數位行銷活動管理流程。
+Dynamic Media整合Adobe Experience Manager Assets數位資產管理解決方案的工作流程，以簡化及簡化數位行銷活動管理程式。
 
 ### 單一檔案，提供無限可能
 
-有關Dynamic Media要瞭解的要點之一是&#x200B;_單一主要資產檔案的概念，其可能性無窮無盡_。
+有關Dynamic Media要瞭解的要點之一，就是&#x200B;_單一主要資產檔案的概念，具有無限可能性_。
 
 若要更深入瞭解此概念，請思考您傳統上使用單一資產（例如影像或影片）的方式。 您通常會建立一個主要資產。 接著，您可以為每個體驗、所需每個裝置、每個網頁及其使用處的每個屬性，手動建立相同資產的版本。 隨著時間過去，該單一資產可能會增加到20個、30個或更多版本，且沒有附加版本記錄。 現在，想像一下針對您擁有的每個影像或視訊執行此動作。 資產版本的數目將很快變得難以維護和更新，更不用說儲存成本的增加了。
 
-不過，Dynamic Media與其他系統截然不同，因為您會使用它來從單一、主要資產和URL呼叫動態傳遞您的媒體&#x200B;__。 您請求的Dynamic Media URL路徑包含指示，告知Adobe發佈伺服器如何在資產傳送至客戶熒幕時顯示資產。 例如，使用相同的單一主要資產，您可以讓資產以無限制的轉譯立即傳送，並變更大小、格式、解析度、重量、顏色、裁切和縮放檢視等效果。
+不過，Dynamic Media與其他系統截然不同，因為您會使用它，從單一、主要資產和URL呼叫，以動態方式傳送您的媒體&#x200B;__。 您請求的Dynamic Media URL路徑包含指示，告知Adobe發佈伺服器如何在資產傳送至客戶熒幕時顯示資產。 例如，使用相同的單一主要資產，您可以讓資產以無限制的轉譯立即傳送，並變更大小、格式、解析度、重量、顏色、裁切和縮放檢視等效果。
 
 這種獨特的傳送方式可確保將一致的品質體驗傳送至任何畫面，無論畫面大小或頻寬為何。 全尺寸視訊也針對所有熒幕型別最佳化，並以適應性串流處理，同時確保使用者體驗的一致性、品質。
 
 <!-- As part of building and publishing assets with Dynamic Media, you visually configure the effects that you want to apply to assets. In so doing, you are literally building the URL that correctly tells the publish server how to deliver your primary asset to the screen.  -->
 
-![AdobeDynamic Media會將相同的主要影像提供給不同大小和格式的不同媒體](/help/assets/dynamic-media/assets/dm-oneasset-multioutput.png)
-_AdobeDynamic Media可確保在任何熒幕都能提供一致的品質體驗，無論熒幕大小或頻寬為何。_
+![Adobe Dynamic Media會將相同的主要影像提供給不同大小和格式的不同媒體](/help/assets/dynamic-media/assets/dm-oneasset-multioutput.png)
+_Adobe Dynamic Media可確保在任何熒幕都能提供一致、高品質的體驗，無論熒幕大小或頻寬為何。_
 
 閱讀本文，您將深入瞭解「單一主要資產檔案，無限可能」的概念為何如此重要。
 
 ### 內容傳遞網路
 
-當您準備好使用影像資產或視訊資產時，Dynamic Media的骨幹網路即支援該功能，其中包含功能強大的頂級傳送網路。 該網路每天為全世界數百個使用者端提供服務。 資產會分散在由Akamai託管的內容傳遞網路（或CDN）上。 CDN是一種以網路連線方式的電腦服務系統，能以透明方式合作，將內容（尤其是大型多媒體內容）傳送給使用者。
+當您準備好使用影像資產或視訊資產時，Dynamic Media的中樞會提供支援，其中包括強大的頂層傳送網路。 該網路每天為全世界數百個使用者端提供服務。 資產會分散在由Akamai託管的內容傳遞網路（或CDN）上。 CDN是一種以網路連線方式的電腦服務系統，能以透明方式合作，將內容（尤其是大型多媒體內容）傳送給使用者。
 
 在CDN系統中，網頁內容會儲存在網際網路上的網頁快取中。 然後，它從網頁快取傳送給使用者，以加快傳送速度。 因此，第一次有人下載網頁時，他們看到的資產會傳送到CDN快取。 這些快取內容會儲存在伺服器上，以便下次同一區域中的某人存取網頁時，可以更快速地傳送相同的快取內容。 因為位置更接近使用者，所以可更快地提供內容。 CDN可加快網頁顯示速度，但會降低中央伺服器的頻寬需求，因為內容是由快取網路傳送，而非每個執行個體的中央伺服器。 此最佳化的流程意味著更佳的使用者體驗，進而提高銷售額。
 
@@ -98,7 +135,7 @@ _AdobeDynamic Media可確保在任何熒幕都能提供一致的品質體驗，�
 
 ### 智慧型影像
 
-Dynamic Media已透過CDN出色地最佳化資產，並確保每個資產都能快速載入行動與案頭系統。 為了達到此目的，Dynamic Media使用影像預設集來定義影像品質。 它們也會定義您要傳送的影像型別、其銳利度，以及您體驗或頁面不同部分的其他片段。
+Dynamic Media在最佳化資產以及確保每個資產可透過CDN在行動裝置和桌上型電腦系統上快速載入方面已經功不可沒。 為了達到此目的，Dynamic Media使用影像預設集來定義影像品質。 它們也會定義您要傳送的影像型別、其銳利度，以及您體驗或頁面不同部分的其他片段。
 
 但若要在影像預設集之外進一步增加Dynamic Media的價值，則有&#x200B;_智慧型影像_。
 
@@ -115,11 +152,11 @@ Dynamic Media已透過CDN出色地最佳化資產，並確保每個資產都能�
 ![智慧型影像](/help/assets/dynamic-media/assets/dm-smart-imaging.png)
 _智慧型影像處理會根據客戶的瀏覽器功能和網路速度，自動最佳化影像的格式和檔案大小。_
 
-智慧型影像處理預設不會開啟，因為您需要與Adobe Dynamic Media技術支援人員協調運作。 此外，啟用智慧型影像處理需要完全清除CDN快取，然後重新填入時間。 如果您有興趣使用智慧型影像，可以透過提交技術支援票證來與Adobe合作，以將其開啟。 然後，技術支援會提供URL引數，讓您預先嘗試智慧型影像。 您可以在任何網頁或影像上試用，瞭解獲得的效能和節省的成本。 接著，您就可以為完整網站開啟智慧型影像處理。
+智慧型影像處理預設不會開啟，因為您需要與Adobe Dynamic Media技術支援人員協調運作。 此外，啟用智慧型影像處理需要完全清除CDN快取，然後重新填入時間。 如果您有興趣使用智慧型影像，可以透過Adobe提交技術支援票證來開啟。 然後，技術支援會提供URL引數，讓您預先嘗試智慧型影像。 您可以在任何網頁或影像上試用，瞭解獲得的效能和節省的成本。 接著，您就可以為完整網站開啟智慧型影像處理。
 
 ### 最適化視訊集
 
-當頁面上或首頁面上出現影片時，您的客戶往往會與該內容互動更久，並在頁面上停留更久，這通常是好事。 此行為會透過Adobe已完成的分析呈現。 不過，影片可能很複雜。 首先，您通常有一個大型的主要檔案。 要決定視訊的大小和傳送方式相當複雜，這完全是為了確保體驗能順暢地執行，無論是在哪台裝置上觀看，也不論頻寬為何。
+當頁面上或首頁面上出現影片時，您的客戶往往會與該內容互動更久，並在頁面上停留更久，這通常是好事。 Adobe會透過分析展現此行為。 不過，影片可能很複雜。 首先，您通常有一個大型的主要檔案。 要決定視訊的大小和傳送方式相當複雜，這完全是為了確保體驗能順暢地執行，無論是在哪台裝置上觀看，也不論頻寬為何。
 
 為了解決此問題，Dynamic Media可讓您建立&#x200B;_最適化視訊集_。
 
@@ -131,11 +168,11 @@ _智慧型影像處理會根據客戶的瀏覽器功能和網路速度，自動�
 
 此外，視訊品質也會在網路狀況變更時自動切換。 此外，如果客戶在桌上型電腦上進入全熒幕模式，Adaptive Video Set會使用更好的解析度來回應，進而改善客戶的觀看體驗。
 
-使用自我調整視訊集可為客戶在多個熒幕和裝置上播放Dynamic Media視訊提供流暢、高品質的播放。 真正能省去視訊的複雜性。
+使用自我調整視訊集可為客戶在多重熒幕和裝置上播放Dynamic Media視訊提供流暢、高品質的播放。 真正能省去視訊的複雜性。
 
 ## Dynamic Media的使用案例 {#dm-journey-b}
 
-以下是Dynamic Media可協助您促進正面客戶參與、忠誠度、轉換和提高ROI的常見使用案例問題和解決方案。
+以下是常見的用例問題和解決方案，Dynamic Media可以幫助您實現積極的客戶參與、忠誠度、轉化和提高ROI。
 
 ### 使用案例：主要檔案方法
 
@@ -166,18 +203,18 @@ _手錶是一個主要資產檔案，但會即時建立多個轉譯（而非復�
 
 然後您必須確定已使用正確的影像，這可能會影響您維持品牌一致性的能力。 此外，如果您找不到影像，則必須返回並複製這些資產。
 
-Dynamic Media可讓您從起始影像立即建立各種影像。 它可讓您使用該主要資產發揮創意，而不需與平面設計藝術家或攝影工作室來回奔波，即可建立其他內容。 這樣就能節省金錢和時間。
+Dynamic Media可讓您從該起始影像即時建立影像的變體。 它可讓您使用該主要資產發揮創意，而不需與平面設計藝術家或攝影工作室來回奔波，即可建立其他內容。 這樣就能節省金錢和時間。
 
-使用單一檔案方法時，會使用單一主要檔案。 然後，只有在客戶交付或看到網站、屬性和體驗時，才建立所需的這些版本或轉譯。 如此的效率可大幅減少資產所需的儲存容量，並降低整體工作流程的複雜性。 藉由Dynamic Media的傳送系統，可確保每個影像和視訊都經過最佳化、迅速載入，並在所有熒幕和裝置上看起來都很好。
+使用單一檔案方法時，會使用單一主要檔案。 然後，只有在客戶交付或看到網站、屬性和體驗時，才建立所需的這些版本或轉譯。 如此的效率可大幅減少資產所需的儲存容量，並降低整體工作流程的複雜性。 藉由Dynamic Media的傳送系統，可確保每個影像和視訊都經過最佳化、快速載入，並在所有熒幕和裝置上看起來都不錯。
 
 ### 使用案例：影片
 
-Dynamic Media為解決的另一個使用案例是影片。 視訊很複雜。 很難管理。 視訊檔案因其本身的檔案大小而難以儲存和移動。
+Dynamic Media為解決的另一個使用案例是視訊。 視訊很複雜。 很難管理。 視訊檔案因其本身的檔案大小而難以儲存和移動。
 
 | **問題** | **Dynamic Media解決方案** |
 |---|---|
 | 難以管理和傳送針對各種裝置最佳化的視訊。 | 使用單一視訊來自動調整所有裝置的大小。 |
-| 由於使用者可用的頻寬，影片會以低品質停止播放或播放。 | 透過自動偵測可用頻寬並調整品質的HTML播放器，傳送視訊以確保高傳真度且順暢播放。 |
+| 由於使用者可用的頻寬，影片會以低品質停止播放或播放。 | 透過HTML播放器傳送視訊，自動偵測可用頻寬並調整品質，以確保高傳真度且順暢播放。 |
 | 手動建立所有視訊版本既不可行又耗時，只是為了確保裝置間能良好顯示和播放。 | 透過簡化的工作流程，省去數小時繁瑣的轉碼工作。 |
 | | 騰出時間處理更高價值的工作。 |
 
@@ -185,7 +222,7 @@ Dynamic Media為解決的另一個使用案例是影片。 視訊很複雜。 �
 
 「_我的企業擁有視訊，部門花費了大量資金製作它，但避免將它放在網頁上或送達。 原因是因為從測試來看，視訊品質無法得到保證，即便真的要播放。 最終，這會影響企業的品牌，以及其轉換角色。_」
 
-Dynamic Media的解決方案是取用那個主要視訊檔案，讓Dynamic Media透過轉碼程式完成所有大小。 接著，再搭配使用Dynamic Media的智慧型視訊播放器。 此工作流程可保證您在主要登陸頁面、類別或產品詳細資料頁面上使用該影片，其全程將保持一致，並提供高品質。
+Dynamic Media的解決方案是取用那個主要視訊檔案，讓Dynamic Media透過轉碼程式完成所有大小。 接著，請將其與Dynamic Media的智慧型視訊播放器配對。 此工作流程可保證您在主要登陸頁面、類別或產品詳細資料頁面上使用該影片，其全程將保持一致，並提供高品質。
 
 以下是其他幾個需考慮的使用案例。
 
@@ -221,36 +258,36 @@ _資產如何流經Dynamic Media系統。_
 
 從建立階段開始，主要目標是要將主要資產放在結尾。 這些主要資產可能來自像片拍攝、視訊廠商，或可能是您已建立的部分音訊檔案。 您可以使用Adobe的Creative Suite應用程式(例如Adobe InDesign、Adobe Photoshop、Adobe Illustrator)來協助您編寫內容。
 
-建立部分完成後，您需將資產上傳至Dynamic Media，即可將資產放入製作解決方案中。 在Dynamic Media中，請確定您已針對網站上的各種網頁正確排列影像預設集和檢視器。
+建立部分完成後，您需透過將資產上傳至Dynamic Media，將資產放入Authoring解決方案。 在Dynamic Media中，請確定您的網站針對各種網頁已設定適當的影像預設集和檢視器。
 
-最後，您將所有內容最佳化並發佈至Dynamic Media伺服器，以供網路、列印、電子郵件、桌上型電腦和行動裝置使用。
+最後，您會最佳化所有內容，並將其發佈至Dynamic Media伺服器，以便用於網路、列印、電子郵件、桌上型電腦和行動裝置。
 
 ### 將資產上傳至Dynamic Media
 
-建立完主要資產後，可將其上傳至Dynamic Media。 您上傳的檔案型別、檔案的格式與大小是Dynamic Media的重要屬性。 您想在上傳時確定從單一檔案支援中獲得最大值。
+完成建立主要資產後，可將其上傳至Dynamic Media。 上傳的檔案型別、檔案的格式與大小是Dynamic Media的重要屬性。 您想在上傳時確定從單一檔案支援中獲得最大值。
 
-例如，下面的手錶影像是4560 x 3020畫素。 雖然您絕不能使用這個大小的影像，但您仍可以上傳它。 影像越大，Dynamic Media提供的品質就越好，甚至包括縮圖轉譯。 請記住：您可以輕鬆&#x200B;_降低_&#x200B;現有影像的解析度。 但如果您嘗試&#x200B;_增加_&#x200B;影像的解析度，結果可能會不令人滿意。
+例如，下面的手錶影像是4560 x 3020畫素。 雖然您絕不能使用這個大小的影像，但您仍可以上傳它。 影像越大，Dynamic Media所能提供的品質就越好，甚至可低至縮圖轉譯。 請記住：您可以輕鬆&#x200B;_降低_&#x200B;現有影像的解析度。 但如果您嘗試&#x200B;_增加_&#x200B;影像的解析度，結果可能會不令人滿意。
 
 ![建議上傳至Dynamic Media的格式](/help/assets/dynamic-media/assets/dm-upload-formats.png)
 _資產上傳的考量事項。_
 
-Adobe建議您以無損格式上傳資產。 一般來說，最好避免JPEG，因為當您傳遞JPEG或繼續儲存JPEG時，會隨著時間逐漸失去影像品質。 您想要以無損格式從最高解析度的影像開始，讓您隨時都能存取。 該格式通常是TIFF或PNG檔案。
+Adobe建議您以無損格式上傳資產。 一般來說，最好避免JPEG，因為當您傳送JPEG或繼續儲存JPEG時，會隨著時間逐漸失去影像品質。 您想要以無損格式從最高解析度的影像開始，讓您隨時都能存取。 該格式通常是TIFF或PNG檔案。
 
-關於色域，當您考慮數位頻道或網頁檢視時，通常會考慮RGB（紅色、綠色、藍色）。
+關於色域，當您考慮數位頻道或Web檢視時，您通常會考慮RGB （紅色、綠色、藍色）。
 
-大部分使用者都不會考慮以CMYK傳送任何專案，或是您為何可能想要以CMYK傳送。 原因是色彩空間最常用於傳送列印專案。 但是，Dynamic Media可同時提供兩種色域。
+大部分使用者都不會考慮以CMYK傳送任何專案，或是您為何可能想要以CMYK傳送。 原因是色彩空間最常用於傳送列印專案。 但是，Dynamic Media可以在兩個色域中傳送。
 
-還有許多客戶仍會列印紙張，例如倉儲批發俱樂部。 此外還有雜貨店，他們通常每週列印傳單。 這類客戶要求將影像同時置於兩個色域中。 傳統上，這需要兩個不同的影像：一個是RGB，一個是CMYK。 不過，您可以直接將CMYK資產上傳至Dynamic Media，並讓Dynamic Media透過影像預設集或色彩設定檔自動傳遞RGB資產。 不需要建立多個版本的檔案，因此維護了&#x200B;_一個主要資產檔案的概念，並提供了無限可能性_。
+還有許多客戶仍會列印紙張，例如倉儲批發俱樂部。 此外還有雜貨店，他們通常每週列印傳單。 這類客戶要求將影像同時置於兩個色域中。 傳統上，這需要兩個不同的影像：一個在RGB中，另一個在CMYK中。 不過，您可以直接將CMYK資產上傳至Dynamic Media，讓Dynamic Media透過影像預設集或色彩設定檔自動傳遞RGB資產。 不需要建立多個版本的檔案，因此維護了&#x200B;_一個主要資產檔案的概念，並提供了無限可能性_。
 
 <!-- **The Value of Renditioning??? or Demo portion** -->
 
-### Publish和預覽資產
+### 發佈和預覽資產
 
-將資產上傳到Dynamic Media後，請選取資產，然後按一下Dynamic Media中的&#x200B;**[!UICONTROL Publish]**&#x200B;或&#x200B;**[!UICONTROL 快速Publish]**，以&#x200B;_發佈_&#x200B;這些資產，是建議的做法。 如果您想要在任何體驗中使用資產，則必須發佈資產。 發佈資產後，您可使用複製的由Dynamic Media產生的URL或透過將程式碼內嵌在頁面上，將資產納入網頁中。
+將資產上傳到Dynamic Media之後，請選取資產，然後按一下Dynamic Media中的&#x200B;**[!UICONTROL 發佈]**&#x200B;或&#x200B;**[!UICONTROL 快速發佈]**，以便&#x200B;_發佈_&#x200B;資產，這是不錯的作法。 如果您想要在任何體驗中使用資產，則必須發佈資產。 發佈資產後，您可使用複製的動態媒體產生URL或透過將程式碼內嵌在頁面上，將資產納入網頁中。
 
 除了手動發佈資產外，您可以設定Dynamic Media，以便在上傳時立即發佈資產（無需任何使用者介入）。
 
-上傳後，您可以在Dynamic Media中預覽資產轉譯的其他方式。 預覽轉譯可協助您瞭解客戶所看到的內容。 常見的預覽方法是選取資產，然後選取&#x200B;_影像預設集_，檢視其轉譯，如下所示。
+上傳後，有不同的方式可在Dynamic Media中預覽資產的轉譯。 預覽轉譯可協助您瞭解客戶所看到的內容。 常見的預覽方法是選取資產，然後選取&#x200B;_影像預設集_，檢視其轉譯，如下所示。
 
 ![根據大型影像預設集預覽資產的轉譯](/help/assets/dynamic-media/assets/dm-image-preset-with-url.png)
 _根據選取的「大」影像預設集預覽資產的轉譯。 已按一下URL按鈕。 產生的URL路徑包含「大」影像預設集名稱，且可用於網頁。_
@@ -282,10 +319,10 @@ _Dynamic Media Help topics_
 * [How to publish assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)
 * [Work with Selective Publish in Dynamic Media](/help/assets/dynamic-media/selective-publishing.md) -->
 
-_Dynamic Media教學課程_
+_動態媒體教學課程_
 
-* [使用Dynamic Media搭配Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html)
-* [Adobe Experience Manager內容庫](https://experienceleague.adobe.com/?lang=en#recommended/solutions/experience-manager) (搜尋&#x200B;_Dynamic Media_)
+* [搭配Experience Manager Assets使用Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html)
+* [Adobe Experience Manager內容庫](https://experienceleague.adobe.com/?lang=en#recommended/solutions/experience-manager) （在&#x200B;_Dynamic Media_&#x200B;上搜尋）
 
 _Dynamic Media檢視器_
 
@@ -293,7 +330,7 @@ _Dynamic Media檢視器_
 
 ## 此Dynamic Media歷程的下一步發展 {#whats-next}
 
-在此歷程的第二部分，您會詳細檢查Dynamic Media URL，以更清楚瞭解資產傳送時發生的情況。 您也會進一步瞭解建立影像預設集以轉譯資產背後的基礎知識，並瞭解影像集、迴轉集和混合媒體集及其建立方式。
+在此歷程的第二部分，您會詳細檢查Dynamic Media URL，以更清楚瞭解傳送資產時發生的情況。 您也會進一步瞭解建立影像預設集以轉譯資產背後的基礎知識，並瞭解影像集、迴轉集和混合媒體集及其建立方式。
 
 帶我前往[Dynamic Media歷程：基本知識，第二部分](/help/assets/dynamic-media/dm-journey-part2.md#dm-journey-d)。
 

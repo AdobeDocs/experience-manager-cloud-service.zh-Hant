@@ -1,26 +1,60 @@
 ---
-title: 設定Publish層的自訂網域
-description: 瞭解如何在AdobeCloud Manager中為發佈層設定自訂網域。
+title: 設定發佈層的自訂網域
+description: 瞭解如何在Adobe Cloud Manager中設定發佈層的自訂網域。
 exl-id: cc71c8c5-cf42-4092-b0e0-646a2ed0ee54
-source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '313'
-ht-degree: 11%
+source-wordcount: '341'
+ht-degree: 20%
 
 ---
 
 # 設定發佈層的自訂網域{#configure-custom-domain}
 
-| [搜尋最佳實務](/help/assets/search-best-practices.md) | [中繼資料最佳實務](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [具有 OpenAPI 功能的 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 開發人員文件](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets與Edge Delivery Services整合</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI擴充性</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>啟用Dynamic Media Prime和Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>搜尋最佳實務</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>中繼資料最佳實務</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 開發人員文件</b></a>
+        </td>
+    </tr>
+</table>
 
 >[!AVAILABILITY]
 >
->Dynamic Media搭配OpenAPI功能指南現在提供PDF格式。 下載整份指南，並使用Adobe Acrobat AI Assistant回答您的疑問。
+>具有 OpenAPI 功能的 Dynamic Media 指南現已提供 PDF 格式。下載完整指南，並使用 Adobe Acrobat AI 助理來回答您的查詢問題。
 >
->[!BADGE 具有OpenAPI功能的Dynamic Media指南PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/dynamic-media-with-openapi-capabilities.pdf"}
+>[!BADGE 具有 OpenAPI 功能的 Dynamic Media 指南 PDF]{type=Informative url="https://helpx.adobe.com/tw/content/dam/help/en/experience-manager/aem-assets/dynamic-media-with-openapi-capabilities.pdf"}
 
-在AdobeCloud Manager中，您可以新增自訂網域，讓您的網站脫穎而出。 雖然AEM as a Cloud Service隨附預設網域，但您可以視需求加以自訂。
+在Adobe Cloud Manager中，您可以新增自訂網域，讓您的網站脫穎而出。 雖然AEM as a Cloud Service隨附預設網域，但您可以視需求加以自訂。
 
 ## 開始之前
 
@@ -31,11 +65,11 @@ ht-degree: 11%
 
 ## 設定發佈層的自訂網域
 
-1. 移至&#x200B;**[!UICONTROL AdobeCloud Manager]** > **[!UICONTROL 計畫總覽]** > **[!UICONTROL SSL憑證]**，然後新增您的SSL憑證。
+1. 移至&#x200B;**[!UICONTROL Adobe Cloud Manager]** > **[!UICONTROL 計畫總覽]** > **[!UICONTROL SSL憑證]**，然後新增您的SSL憑證。
    ![影像](/help/assets/assets/ssl-certificate.png)
-瞭解如何在AdobeCloud Manager中新增[SSL憑證](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)。
+瞭解如何在Adobe Cloud Manager中新增[SSL憑證](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)。
 
-1. 新增SSL憑證後，請新增自訂網域。 按一下「**[!UICONTROL 網域設定]**」，並針對「**[!UICONTROL Publish服務]**」選項指定自訂網域。
+1. 新增SSL憑證後，請新增自訂網域。 按一下&#x200B;**[!UICONTROL 網域設定]**，並針對&#x200B;**[!UICONTROL 發佈服務]**選項指定自訂網域。
 深入瞭解[自訂網域](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)。
 
 1. 在對應發佈網域的DNS記錄中新增兩個[CNAME記錄](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)。

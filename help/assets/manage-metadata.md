@@ -6,17 +6,51 @@ mini-toc-levels: 1
 feature: Asset Management, Metadata
 role: User, Architect, Admin
 exl-id: 73a82bc2-1dda-4090-b7ee-29d1a632ba25
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '1962'
+source-wordcount: '1990'
 ht-degree: 9%
 
 ---
 
 # 管理數位資產的中繼資料 {#managing-metadata-for-digital-assets}
 
-| [搜尋最佳實務](/help/assets/search-best-practices.md) | [中繼資料最佳實務](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [具有OpenAPI功能的Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets開發人員檔案](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets與Edge Delivery Services整合</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI擴充性</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>啟用Dynamic Media Prime和Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>搜尋最佳實務</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>中繼資料最佳實務</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 開發人員文件</b></a>
+        </td>
+    </tr>
+</table>
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
@@ -130,14 +164,14 @@ The cost of manually creating descriptive metadata information is high. So, stan
 
 有多種方式可將中繼資料內嵌在檔案中。 支援一系列編碼標準：
 
-* XMP： [!DNL Assets]用來將擷取的中繼資料儲存在儲存庫中。
+* XMP： [!DNL Assets]用來將擷取的中繼資料儲存在存放庫中。
 * ID3：適用於音訊和視訊檔案。
 * Exif：適用於影像檔案。
 * 其他/舊版：來自[!DNL Microsoft Word]、[!DNL PowerPoint]、[!DNL Excel]等。
 
 ### XMP {#xmp}
 
-[!DNL Extensible Metadata Platform] (XMP)是[!DNL Experience Manager Assets]用於所有中繼資料管理的開放標準。 此標準提供通用中繼資料編碼，可嵌入至所有檔案格式。 Adobe和其他公司支援XMP標準，因為它提供豐富的內容模型。 XMP標準和[!DNL Experience Manager Assets]的使用者擁有強大的平台可建置。 如需詳細資訊，請參閱[XMP](https://www.adobe.com/products/xmp.html)。
+[!DNL Extensible Metadata Platform] (XMP)是[!DNL Experience Manager Assets]用於所有中繼資料管理的開放標準。 此標準提供通用中繼資料編碼，可嵌入至所有檔案格式。 Adobe和其他公司支援XMP標準，因為它提供豐富的內容模型。 XMP標準版和[!DNL Experience Manager Assets]版的使用者擁有強大的平台可建置。 如需詳細資訊，請參閱[XMP](https://www.adobe.com/products/xmp.html)。
 
 ### ID3 {#id}
 
@@ -267,7 +301,7 @@ To change the limit, access Web Console ( **[!UICONTROL Tools]** > **[!UICONTROL
 
 ### 列印特定中繼資料 {#print-specific-metadata}
 
-* PDF與PDF/X - Adobe PDF和協力廠商應用程式。
+* PDF和PDF/X - Adobe PDF和協力廠商應用程式。
 <!--THIS LINK IS 404 WITH NO SUITABLE REPLACEMENT * PRISM - [Publishing Requirements for Industry Standard Metadata](https://www.idealliance.org/prism-metadata). -->
 * XMP - [!DNL Extensible Metadata Platform]。
 * `xmpPG` — 分頁文字的XMP中繼資料。

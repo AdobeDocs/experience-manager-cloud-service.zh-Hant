@@ -1,19 +1,54 @@
 ---
-title: AEM Assets Collaborator使用者
+title: AEM Assets 協作者使用者
 description: 瞭解如何管理AEM Assets Collaborator使用者及其許可權。
 feature: Asset Management
 role: User, Admin
-source-git-commit: 16ce83409044ad54140754112eb4d35b97883b44
+exl-id: b0be28b8-821c-46a0-9437-2b2fccee95ee
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '161'
-ht-degree: 11%
+source-wordcount: '189'
+ht-degree: 36%
 
 ---
 
-# AEM Assets Collaborator使用者 {#assets-collaborator-users}
+# AEM Assets 協作者使用者 {#assets-collaborator-users}
 
-| [搜尋最佳實務](/help/assets/search-best-practices.md) | [中繼資料最佳實務](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [具有 OpenAPI 功能的 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 開發人員文件](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets與Edge Delivery Services整合</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI擴充性</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>啟用Dynamic Media Prime和Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>搜尋最佳實務</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>中繼資料最佳實務</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 開發人員文件</b></a>
+        </td>
+    </tr>
+</table>
 
 ![AEM Assets Collaborator使用者橫幅](/help/assets/assets/aem-assets-collaborator-users-banner.png)
 
@@ -21,9 +56,9 @@ Experience Manager Assets包含Collaborator使用者型別，管理員可以使�
 
 作為Collaborator使用者，您可以：
 
-* 透過貴組織在其他Adobe產品和非Adobe應用程式中可用的Assets整合，使用來自Experience Manager的資產。
+* 透過整合其他 Adobe 產品和非 Adobe 應用程式中可供貴組織使用的資產來運用 Experience Manager 中的資產。
 
-* 運用專業設計的範本、品牌套件、Adobe Stock資產等，以內建Adobe Express和Firefly建立及編輯資產。
+* 使用內建的 Adobe Express 和 Firefly，善用專業設計的範本、品牌套件、Adobe Stock 資產等等，以建立和編輯資產。
 
 
 此外，如果您的管理員已為貴組織設定Content Hub，您可以使用AEM Assets Content Hub入口網站存取並利用來自貴組織的已核准資產。 如需Content Hub功能的詳細資訊，請參閱[Content Hub概觀](/help/assets/product-overview.md)。

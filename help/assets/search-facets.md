@@ -4,24 +4,58 @@ description: 本文說明如何在Experience Manager中建立、修改和使用�
 feature: Metadata
 role: Admin, User
 exl-id: f994c1bf-3f9d-4cb2-88f4-72a9ad6fa999
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '2523'
+source-wordcount: '2551'
 ht-degree: 19%
 
 ---
 
 # 搜尋 Facet {#search-facets}
 
-| [搜尋最佳實務](/help/assets/search-best-practices.md) | [中繼資料最佳實務](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [具有OpenAPI功能的Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets開發人員檔案](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets與Edge Delivery Services整合</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI擴充性</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>啟用Dynamic Media Prime和Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>搜尋最佳實務</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>中繼資料最佳實務</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 開發人員文件</b></a>
+        </td>
+    </tr>
+</table>
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
 | AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/search-facets.html) |
 | AEM as a Cloud Service  | 本文章 |
 
-Adobe Experience Manager Assets的企業範圍部署可儲存許多資產。 有時候，如果您只使用Experience Manager的一般搜尋功能，尋找正確的資產可能會很困難且耗時。
+Adobe Experience Manager Assets的企業範圍部署可儲存許多資產。 有時候，如果您只使用Experience Manager的一般搜尋功能，尋找合適的資產可能會很困難且耗時。
 
 使用「篩選器」面板中的搜尋Facet為您的搜尋體驗新增更多精細度，並讓搜尋功能更有效率且更通用。 搜尋Facet會新增多個維度（述詞），讓您執行更複雜的搜尋。 「篩選器」面板包含幾個標準Facet。 您也可以新增自訂搜尋多面向。
 
@@ -72,7 +106,7 @@ Adobe Experience Manager Assets的企業範圍部署可儲存許多資產。 有
 
 ## 新增選項述詞 {#adding-an-options-predicate}
 
-選項述詞可讓您在「篩選器」面板中新增多個搜尋選項。 您可以在「篩選器」面板中選取這些選項中的一或多個來搜尋資產。 例如，若要根據檔案型別搜尋資產，請在搜尋表單中設定選項，例如「影像」、「多媒體」、「檔案」和「封存」。 設定這些選項後，當您在「濾鏡」面板中選取「影像」選項時，系統會對GIF、JPEG、PNG等型別的資產執行搜尋。
+選項述詞可讓您在「篩選器」面板中新增多個搜尋選項。 您可以在「篩選器」面板中選取這些選項中的一或多個來搜尋資產。 例如，若要根據檔案型別搜尋資產，請在搜尋表單中設定選項，例如「影像」、「多媒體」、「檔案」和「封存」。 設定這些選項後，當您在「篩選器」面板中選取「影像」選項時，將會對GIF、JPEG、PNG等型別的資產執行搜尋。
 
 若要將選項對應至個別屬性，請建立選項的節點結構，並在Options述詞的Property Name屬性中提供父節點的路徑。 父節點應屬於型別`sling`： `OrderedFolder`。 選項應屬於型別`nt:unstructured`。 選項節點應設定屬性`jcr:title`和`value`。
 
@@ -166,7 +200,7 @@ Adobe Experience Manager Assets的企業範圍部署可儲存許多資產。 有
  <tbody>
   <tr>
    <td><p><strong>述詞名稱</strong></p> </td>
-   <td><p><strong>說明</strong></p> </td>
+   <td><p><strong>描述</strong></p> </td>
    <td><p><strong>屬性</strong></p> </td>
   </tr>
   <tr>
@@ -187,7 +221,7 @@ Adobe Experience Manager Assets的企業範圍部署可儲存許多資產。 有
     <ul>
      <li>預留位置</li>
      <li>根路徑</li>
-     <li>說明</li>
+     <li>描述</li>
     </ul> </td>
   </tr>
   <tr>
@@ -197,11 +231,11 @@ Adobe Experience Manager Assets的企業範圍部署可儲存許多資產。 有
     <ul>
      <li>標籤</li>
      <li>路徑</li>
-     <li>說明</li>
+     <li>描述</li>
     </ul> </td>
   </tr>
   <tr>
-   <td><p>Publish狀態</p> </td>
+   <td><p>發佈狀態</p> </td>
    <td><p>搜尋述詞，以根據資產的發佈狀態進行搜尋</p> </td>
    <td>
     <ul>
@@ -240,7 +274,7 @@ Adobe Experience Manager Assets的企業範圍部署可儲存許多資產。 有
      <li>屬性名稱</li>
      <li>範圍文字（從）</li>
      <li>範圍文字（至）</li>
-     <li>說明</li>
+     <li>描述</li>
     </ul> </td>
   </tr>
   <tr>
@@ -261,7 +295,7 @@ Adobe Experience Manager Assets的企業範圍部署可儲存許多資產。 有
      <li>標籤</li>
      <li>屬性名稱</li>
      <li>路徑</li>
-     <li>說明</li>
+     <li>描述</li>
     </ul> </td>
   </tr>
   <tr>
@@ -271,11 +305,11 @@ Adobe Experience Manager Assets的企業範圍部署可儲存許多資產。 有
     <ul>
      <li>屬性名稱</li>
      <li>屬性值</li>
-     <li>說明</li>
+     <li>描述</li>
     </ul> </td>
   </tr>
   <tr>
-   <td>Publish狀態</td>
+   <td>發佈狀態</td>
    <td>搜尋述詞，以根據資產的發佈狀態來搜尋資產 </td>
    <td>
     <ul>
@@ -301,7 +335,7 @@ Adobe Experience Manager Assets的企業範圍部署可儲存許多資產。 有
     <ul>
      <li>屬性名稱</li>
      <li>屬性值</li>
-     <li>說明</li>
+     <li>描述</li>
     </ul> </td>
   </tr>
  </tbody>
@@ -309,7 +343,7 @@ Adobe Experience Manager Assets的企業範圍部署可儲存許多資產。 有
 
 ## 移除預設的搜尋Facet {#removing-default-search-facets}
 
-Adobe建議您在移除預設搜尋Facet時務必小心，以免出現效能問題。 移除預設搜尋Facet也可能會影響預設功能行為。
+Adobe建議您在移除預設的搜尋Facet時務必小心，以免出現效能問題。 移除預設搜尋Facet也可能會影響預設功能行為。
 
 請勿移除下列隱藏欄位，因為這會導致OmniSearch和智慧型集合出現查詢效能問題：
 

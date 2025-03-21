@@ -1,21 +1,55 @@
 ---
 title: XMP 中繼資料
-description: 瞭解用於中繼資料管理的XMP （可延伸中繼資料平台）中繼資料標準。 Experience Manager會將其用作建立、處理和交換中繼資料的標準化格式。
+description: 瞭解用於中繼資料管理的XMP （可延伸中繼資料平台）中繼資料標準。 Experience Manager將其用作建立、處理和交換中繼資料的標準化格式。
 contentOwner: AG
 feature: Metadata
 role: Admin, User
 exl-id: fd9af408-d2a3-4c7a-9423-c4b69166f873
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '1051'
-ht-degree: 17%
+source-wordcount: '1079'
+ht-degree: 18%
 
 ---
 
 # XMP 中繼資料 {#xmp-metadata}
 
-| [搜尋最佳實務](/help/assets/search-best-practices.md) | [中繼資料最佳實務](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [具有OpenAPI功能的Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets開發人員檔案](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets與Edge Delivery Services整合</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI擴充性</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>啟用Dynamic Media Prime和Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>搜尋最佳實務</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>中繼資料最佳實務</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 開發人員文件</b></a>
+        </td>
+    </tr>
+</table>
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
@@ -24,13 +58,13 @@ ht-degree: 17%
 
 XMP （可延伸中繼資料平台）是Experience Manager Assets用於所有中繼資料管理的中繼資料標準。 XMP為各種應用程式的中繼資料的建立、處理和交換提供標準格式。
 
-除了提供可內嵌至所有檔案格式的通用中繼資料編碼之外，XMP還提供豐富的[內容模型](#xmp-core-concepts)，並受到Adobe](#advantages-of-xmp)和其他公司的[支援，因此XMP與[!DNL Assets]結合的使用者擁有強大的平台可以建置。
+除了提供可內嵌至所有檔案格式的通用中繼資料編碼之外，XMP還提供豐富的[內容模型](#xmp-core-concepts)，並受到Adobe](#advantages-of-xmp)和其他公司的[支援，因此XMP與[!DNL Assets]結合的使用者擁有可建置的強大平台。
 
 ## XMP概觀和生態系統 {#xmp-ecosystem}
 
-[!DNL Assets]原生支援XMP中繼資料標準。 XMP是在數位資產中處理和儲存標準化和專屬中繼資料的標準。 XMP是共同標準，可讓多個應用程式有效處理中繼資料。
+[!DNL Assets]原生支援XMP中繼資料標準。 XMP是在數位資產中處理和儲存標準化和專屬中繼資料的標準。 XMP是專為允許多個應用程式有效使用中繼資料的通用標準而設計。
 
-例如，生產專業人員可使用Adobe應用程式內建的XMP支援，以跨多種檔案格式傳遞資訊。 [!DNL Assets]儲存庫會擷取XMP中繼資料，並使用它來管理內容生命週期，並提供建立自動化工作流程的功能。
+例如，專業製作人員可利用Adobe應用程式內建的XMP支援，以多種檔案格式傳遞資訊。 [!DNL Assets]儲存庫會擷取XMP中繼資料，並使用它來管理內容生命週期，並提供建立自動化工作流程的功能。
 
 XMP透過提供資料模型、儲存模型和結構描述，將中繼資料的定義、建立和處理標準化。 本章節將介紹所有這些概念。
 
@@ -44,31 +78,31 @@ XMP最常是使用 [W3C](https://en.wikipedia.org/wiki/World_Wide_Web_Consortium
 
 ### XMP的優點 {#advantages-of-xmp}
 
-XMP具有下列優於其他編碼標準和結構描述：
+與其他編碼標準和結構描述相比，XMP具有以下優勢：
 
 * XMP中繼資料功能非常強大，而且相當精細化。
 * XMP可讓您一個屬性有多個值。
 * XMP已標準化編碼，讓您輕鬆交換中繼資料。
 * XMP是可擴充的。 您可以將其他資訊新增至資產。
 
-XMP標準設計為可擴充，可讓您將自訂型別的中繼資料新增到XMP資料中。 另一方面，EXIF則不會 — 它具有無法擴充的固定屬性清單。
+XMP標準可擴充，可讓您將自訂的中繼資料型別新增到XMP資料中。 另一方面，EXIF則不會 — 它具有無法擴充的固定屬性清單。
 
 >[!NOTE]
 >
->XMP通常不允許內嵌二進位資料型別。 若要在XMP中攜帶二進位資料（例如縮圖影像），它們必須以XML易記格式（例如`Base64`）編碼。
+>XMP通常不允許內嵌二進位資料型別。 若要在XMP中攜帶二進位資料（例如縮圖影像），必須以XML易記格式（例如`Base64`）進行編碼。
 
 ### XMP核心概念 {#xmp-core-concepts}
 
 **名稱空間和結構描述**
 
-XMP結構描述是通用XML名稱空間中的一組屬性名稱，其中包括
+XMP結構描述是通用XML名稱空間中的一組屬性名稱，包括
 資料型別和描述性資訊。 XMP結構描述是由其XML名稱空間URI識別。 使用名稱空間可防止不同結構描述中名稱相同但含義不同的屬性之間發生衝突。
 
 例如，兩個獨立設計的結構描述中的&#x200B;**建立者**&#x200B;屬性可能代表建立資產的人，也可能代表建立資產的應用程式(例如Adobe Photoshop)。
 
 **XMP屬性和值**
 
-XMP可能包含一或多個結構描述的屬性。 例如，許多Adobe應用程式使用的典型子集可能包括以下內容：
+XMP可能包含一或多個結構描述的屬性。 例如，許多Adobe應用程式所使用的典型子集可能包括以下專案：
 
 * 都柏林核心結構描述： `dc:title`，`dc:creator`，`dc:subject`，`dc:format`，`dc:rights`
 * XMP基本結構描述： `xmp:CreateDate`，`xmp:CreatorTool`，`xmp:ModifyDate`，`xmp:metadataDate`
@@ -81,7 +115,7 @@ XMP可讓您新增`xml:lang`屬性至文字屬性，以指定文字的語言。
 
 ## XMP回寫至轉譯 {#xmp-writeback-to-renditions}
 
-[!DNL Adobe Experience Manager Assets]中的這個XMP回寫功能會將中繼資料變更復寫到原始資產的轉譯。
+[!DNL Adobe Experience Manager Assets]中的這個XMP回寫功能會將中繼資料變更復寫至原始資產的轉譯。
 當您從[!DNL Assets]內變更資產的中繼資料時，或上傳資產時，變更最初會儲存在資產階層中的中繼資料節點中。 回寫功能可讓您將中繼資料變更傳播到資產的所有或特定轉譯。 此功能只會回寫那些使用`jcr`名稱空間的中繼資料屬性，也就是回寫名為`dc:title`的屬性，但不回寫名為`mytitle`的屬性。
 
 例如，假設您將`Classic Leather`標題為`Nylon`之資產的[!UICONTROL Title]屬性修改為案例。
@@ -111,7 +145,7 @@ XMP可讓您新增`xml:lang`屬性至文字屬性，以指定文字的語言。
 
    ![選取DAM中繼資料回寫啟動器，以修改其屬性並加以啟用](assets/launcher-properties-metadata-writeback1.png)
 
-1. 在&#x200B;**[!UICONTROL 啟動器屬性]**&#x200B;頁面上選取&#x200B;**[!UICONTROL 啟動]**。 按一下&#x200B;**[!UICONTROL 「儲存並關閉」]**。
+1. 在&#x200B;**[!UICONTROL 啟動器屬性]**&#x200B;頁面上選取&#x200B;**[!UICONTROL 啟動]**。 按一下「**[!UICONTROL 儲存並關閉]**」。
 
 若要僅手動將工作流程套用至資產一次，請從左側邊欄套用[!UICONTROL DAM中繼資料回寫]工作流程。
 

@@ -1,27 +1,61 @@
 ---
 title: AEM中的Assets檢視如何造福您？
-description: 進一步瞭解AEM中Assets檢視的主要優點。 Adobe運用其在增強行銷和創意專業人士能力方面的專業知識，引進了改變遊戲規則的新使用者體驗。
+description: 進一步瞭解AEM中Assets檢視的主要優點。 Adobe運用其在增強行銷和創意專業人士能力方面的專業知識，推出改變遊戲規則的新使用者體驗。
 mini-toc-levels: 3
 exl-id: c27134f5-178c-4db1-a8e6-ec45d020f2b5
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 role: User
-source-git-commit: f64f6d90c6ae2490be4be5067df0f96e9df6be38
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '984'
+source-wordcount: '1012'
 ht-degree: 68%
 
 ---
 
 # Assets檢視簡介 {#assets-view}
 
-| [搜尋最佳實務](/help/assets/search-best-practices.md) | [中繼資料最佳實務](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [具有 OpenAPI 功能的 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 開發人員文件](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets與Edge Delivery Services整合</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI擴充性</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>啟用Dynamic Media Prime和Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>搜尋最佳實務</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>中繼資料最佳實務</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 開發人員文件</b></a>
+        </td>
+    </tr>
+</table>
 
 ![部署 Assets Essentials](assets/banner-image.jpg)
 
-在現今步調速迅的數位優先環境中，即時的內容創作和傳遞實屬不可或缺，針對下游行銷速度所設計的數位資產管理 (DAM) 體驗至關重要。Adobe運用其在增強行銷和創意專業人士能力方面的專業知識，引進了改變遊戲規則的新使用者體驗。 此工作流程優先的方法革新了企業處理動態數位資產的方式，讓行銷人員有能力在尋找、共同作業、個人化與傳遞資產方面，將效率提升到極致。這些簡化的工作流程加快內容速度，並將行銷作業推升到新的高度。
+在現今步調速迅的數位優先環境中，即時的內容創作和傳遞實屬不可或缺，針對下游行銷速度所設計的數位資產管理 (DAM) 體驗至關重要。Adobe運用其在增強行銷和創意專業人士能力方面的專業知識，推出改變遊戲規則的新使用者體驗。 此工作流程優先的方法革新了企業處理動態數位資產的方式，讓行銷人員有能力在尋找、共同作業、個人化與傳遞資產方面，將效率提升到極致。這些簡化的工作流程加快內容速度，並將行銷作業推升到新的高度。
 
-若要進一步瞭解Assetsas a Cloud Service的可用角色型體驗，請參閱[Assetsas a Cloud Service簡介](/help/assets/overview.md#persona-based-experiences)。
+若要進一步瞭解Assets as a Cloud Service可用的角色型體驗，請參閱[Assets as a Cloud Service簡介](/help/assets/overview.md#persona-based-experiences)。
 
 ## 如何存取 Assets 檢視？ {#access-assets-view}
 
@@ -68,7 +102,7 @@ Assets檢視提供下列「管理員」檢視中未提供的關鍵優點：
 
 ![我的工作區概觀](assets/my-workspace-demo.gif)
 
-[![檢視指南](assets/see-the-guide-sm.png)](my-workspace-assets-view.md)
+[![請參閱指南](assets/see-the-guide-sm.png)](my-workspace-assets-view.md)
 
 ### 做出資訊導向決策的深入解析 {#insights-data}
 
@@ -76,7 +110,7 @@ Assets檢視提供下列「管理員」檢視中未提供的關鍵優點：
 
 ![深入解析概觀](assets/insights-overview.gif)
 
-[![檢視指南](assets/see-the-guide-sm.png)](manage-reports-assets-view.md#view-live-statistics)
+[![請參閱指南](assets/see-the-guide-sm.png)](manage-reports-assets-view.md#view-live-statistics)
 
 ### Adobe Photoshop Express 整合可以加速共同作業 {#accelerate-collaboration}
 
@@ -86,9 +120,9 @@ Assets檢視提供下列「管理員」檢視中未提供的關鍵優點：
 
 >[!VIDEO](https://video.tv.adobe.com/v/3420922)
 
-[![檢視指南](assets/see-the-guide-sm.png)](edit-images-assets-view.md)
+[![請參閱指南](assets/see-the-guide-sm.png)](edit-images-assets-view.md)
 
-即將發行的Assetsas a Cloud Service版本也包含[透過Adobe Express的Adobe Firefly整合](https://firefly.adobe.com/?gclid=EAIaIQobChMIlZeKuNfj_wIVeyCtBh3e5g2cEAAYASAAEgL56_D_BwE&amp;sdid=JM4FW6VL&amp;mv=search&amp;mv2=paidsearch&amp;ef_id=EAIaIQobChMIlZeKuNfj_wIVeyCtBh3e5g2cEAAYASAAEgL56_D_BwE:G:s&amp;s_kwcid=AL!3085!3!652077237594!e!!g!!adobe%20firefly!19870733758!148140507838)。
+即將發行的Assets as a Cloud Service版本也包含[透過Adobe Express的Adobe Firefly整合](https://firefly.adobe.com/?gclid=EAIaIQobChMIlZeKuNfj_wIVeyCtBh3e5g2cEAAYASAAEgL56_D_BwE&amp;sdid=JM4FW6VL&amp;mv=search&amp;mv2=paidsearch&amp;ef_id=EAIaIQobChMIlZeKuNfj_wIVeyCtBh3e5g2cEAAYASAAEgL56_D_BwE:G:s&amp;s_kwcid=AL!3085!3!652077237594!e!!g!!adobe%20firefly!19870733758!148140507838)。
 
 ### 資料夾上傳以設定組織的階層式結構 {#folder-uploads}
 
@@ -96,7 +130,7 @@ Assets檢視提供下列「管理員」檢視中未提供的關鍵優點：
 
 ![上傳資料夾](assets/folder-uploads.gif)
 
-[![檢視指南](assets/see-the-guide-sm.png)](add-delete-assets-view.md)
+[![請參閱指南](assets/see-the-guide-sm.png)](add-delete-assets-view.md)
 
 ### 搜尋優先方法可提高效率 {#search-first}
 
@@ -110,7 +144,7 @@ Assets檢視可讓您監視對存放庫中可用的資產、資料夾或集合�
 
 ![接收通知](assets/notifications.gif)
 
-[![檢視指南](assets/see-the-guide-sm.png)](manage-notifications-assets-view.md)
+[![請參閱指南](assets/see-the-guide-sm.png)](manage-notifications-assets-view.md)
 
 ### 軟刪除資產，為管理員提供更好的控制 {#soft-delete-assets}
 
@@ -118,7 +152,7 @@ Assets 檢視中的垃圾桶資料夾列出了從根 Assets 資料夾刪除的�
 
 ![軟刪除](assets/soft-delete.gif)
 
-[![檢視指南](assets/see-the-guide-sm.png)](navigate-assets-view.md)
+[![請參閱指南](assets/see-the-guide-sm.png)](navigate-assets-view.md)
 
 除了這些功能之外，Assets 檢視也讓您能夠執行管理員檢視中所沒有的以下功能：
 

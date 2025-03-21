@@ -5,17 +5,51 @@ contentOwner: AG
 feature: Metadata
 role: User, Admin
 exl-id: eef90c6a-b354-4342-8b97-21d067ae2979
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '1421'
-ht-degree: 21%
+source-wordcount: '1449'
+ht-degree: 22%
 
 ---
 
 # 中繼資料設定檔 {#metadata-profiles}
 
-| [搜尋最佳實務](/help/assets/search-best-practices.md) | [中繼資料最佳實務](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [具有OpenAPI功能的Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets開發人員檔案](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets與Edge Delivery Services整合</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI擴充性</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>啟用Dynamic Media Prime和Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>搜尋最佳實務</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>中繼資料最佳實務</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 開發人員文件</b></a>
+        </td>
+    </tr>
+</table>
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
@@ -63,7 +97,7 @@ ht-degree: 21%
 1. 從&#x200B;**[!UICONTROL 中繼資料設定檔]**&#x200B;頁面中，選取一個中繼資料設定檔以製作其副本。
 1. 按一下工具列中的&#x200B;**[!UICONTROL 複製]**。
 1. 在&#x200B;**[!UICONTROL 複製中繼資料設定檔]**&#x200B;對話方塊中，輸入新中繼資料設定檔副本的標題。
-1. 按一下&#x200B;**[!UICONTROL 複製]**。 中繼資料設定檔的復本會顯示在「中繼資料設定檔」頁面的設定檔 **[!UICONTROL 清單中]** 。
+1. 按一下「**[!UICONTROL 複製]**」。中繼資料設定檔的復本會顯示在「中繼資料設定檔」頁面的設定檔 **[!UICONTROL 清單中]** 。
 
 ## 刪除中繼資料設定檔 {#deleting-a-metadata-profile}
 
@@ -111,7 +145,7 @@ ht-degree: 21%
 
 * 瀏覽至`https://[aem_server]/mnt/overlay/dam/gui/content/assets/v2/foldersharewizard.html/content/dam`並套用適當的設定檔，然後按一下&#x200B;**[!UICONTROL 儲存]**。
 
-* 瀏覽至CRXDE Lite到下列節點： `/content/dam/jcr:content`。 新增屬性`metadataProfile:/etc/dam/metadata/dynamicmedia/<name of metadata profile>`。 按一下&#x200B;**「儲存全部」**。
+* 導覽至CRXDE Lite至下列節點： `/content/dam/jcr:content`。 新增屬性`metadataProfile:/etc/dam/metadata/dynamicmedia/<name of metadata profile>`。 按一下&#x200B;**「儲存全部」**。
 
 ## 從資料夾中移除中繼資料設定檔 {#removing-a-metadata-profile-from-folders}
 

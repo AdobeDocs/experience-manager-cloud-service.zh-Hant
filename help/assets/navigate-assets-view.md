@@ -4,17 +4,51 @@ description: 了解  [!DNL Assets view] 中的使用者介面和導覽
 role: User
 exl-id: 1e71ea7d-fee7-4ed0-bb80-d537b57fc823
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: d542df9ae943d03a56b5d85b1bd189f81c35fe28
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '998'
-ht-degree: 74%
+source-wordcount: '1026'
+ht-degree: 72%
 
 ---
 
 # 導覽至檔案和資料夾，並檢視資產 {#view-assets-and-details}
 
-| [搜尋最佳實務](/help/assets/search-best-practices.md) | [中繼資料最佳實務](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [具有 OpenAPI 功能的 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 開發人員文件](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets與Edge Delivery Services整合</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI擴充性</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>啟用Dynamic Media Prime和Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>搜尋最佳實務</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>中繼資料最佳實務</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 開發人員文件</b></a>
+        </td>
+    </tr>
+</table>
 
 <!-- TBD: Give screenshots of all views with many assets. Zoom out to showcase how the thumbnails/tiles flow on the UI in different views. -->
 
@@ -37,14 +71,14 @@ ht-degree: 74%
 您可以從主要使用者介面或左側邊欄瀏覽資料夾。瀏覽或搜尋內容時，Experience Manager Assets會在資料夾縮圖上顯示資料夾內容的視覺預覽。 這麼做可改善AEM Assets存放庫中可用資產的可發現性。 此資料夾縮圖可讓您節省在AEM Assets存放庫的資料夾中搜尋特定資產所花費的時間。
 在資料夾中瀏覽資產時，您可以使用該介面檢視資產縮圖以瀏覽存放庫或檢視資產詳細資料，以便快速找到您想要的資產。在左側邊欄中的可用選項有：
 
-* [我的工作區](/help/assets/my-workspace-assets-view.md)：Assets 現在包含一個可自訂的工作區，提供 Widget 以方便存取資產使用者介面的關鍵區域以及與您最相關的資訊。 此頁面可用作一站式解決方案，提供工作項目的概觀並讓您快速存取關鍵工作流程。更方便地存取這些選項可以提高您的效率和內容速度。
+* [我的工作區](/help/assets/my-workspace-assets-view.md)：Assets 現在包含一個可自訂的工作區，提供小工具以方便存取資產使用者介面的關鍵區域以及與您最相關的資訊。 此頁面可用作一站式解決方案，提供工作項目的概觀並讓您快速存取關鍵工作流程。更方便地存取這些選項可以提高您的效率和內容速度。
 * [任務](/help/assets/my-workspace-assets-view.md)：您可以在&#x200B;**我的任務**&#x200B;標籤下檢視指派給您的任務。而您建立的任務則顯示在&#x200B;**指派的任務**&#x200B;標籤下。 此外，您完成的工作位於&#x200B;**已完成的工作**&#x200B;標籤下。
 * [資產](/help/assets/manage-organize-assets-view.md)：在樹狀目錄檢視中您可以存取的所有資料夾清單。
 * **最近檢視的項目**：您最近預覽的資產清單。[!DNL Assets view] 只會顯示您預覽的資產。在瀏覽存放庫檔案或資料夾時，不會顯示捲動過去的資產。
 * [集合](/help/assets/manage-collections-assets-view.md)：集合是Adobe Experience Manager Assets檢視中的一組資產、資料夾或其他集合。 使用集合在使用者之間共用資產。和檔案夾不同，集合可包含來自不同位置的資產。您可以和使用者共用多個集合。每個集合都包含資產的參考資料。資產的參考完整性會跨越集合來維護。
 
 * [Insights](/help/assets/manage-reports-assets-view.md#view-live-statistics)：在[!DNL Assets view]，您可以在儀表板上檢視即時深入分析。資產檢視使您能夠使用 Insights 儀表板查看資產檢視環境的即時資料。您可以查看過去 30 天或過去 12 個月的即時事件度量。
-* **垃圾桶**：列出從 **[!UICONTROL Assets]** 根資料夾刪除的資產。 您可以在「垃圾桶」資料夾中選取資產，將其還原到原來的位置或永久刪除。您可以指定關鍵字或套用篩選條件，例如資產狀態、檔案類型、MIME 類型、影像大小、資產建立、修改和到期日期，以及按目前使用者捨棄的資產進行篩選。您也可以套用自訂篩選條件，以搜尋「垃圾桶」資料夾中的適當資產。如需使用標準和自訂篩選器的詳細資訊，請參閱如何[在Assets檢視中搜尋資產](/help/assets/search-assets-view.md)。
+* **垃圾桶**：列出從 **[!UICONTROL Assets]** 根資料夾刪除的資產。 您可以在「垃圾桶」資料夾中選取資產，將其還原到原來的位置或永久刪除。您可以指定關鍵字或套用篩選條件，例如資產狀態、檔案類型、MIME 類型、影像大小、資產建立、修改和過期日期，以及按目前使用者捨棄的資產進行篩選。您也可以套用自訂篩選條件，以搜尋「垃圾桶」資料夾中的適當資產。如需使用標準和自訂篩選器的詳細資訊，請參閱如何[在Assets檢視中搜尋資產](/help/assets/search-assets-view.md)。
 * **設定**：您可以使用&#x200B;**設定**&#x200B;來設定Assets檢視的各種選項，例如中繼資料表單、報表和分類管理。
 
 <!-- TBD: Not sure if we want to publish these right now. CC Libs are beta as per Greg.
@@ -79,7 +113,7 @@ ht-degree: 74%
 
 ![預覽資產](/help/assets/assets/navigate-file-folder-dm.png)
 
-**A**：回到儲存庫中的目前資料夾或目前的搜尋結果&#x200B;**B**：您正在預覽的檔案的名稱和格式&#x200B;**C**：指派工作&#x200B;**D**：進階中繼資料&#x200B;**E**：關鍵字和智慧標籤&#x200B;**F**：註解及註釋&#x200B;**G**：檢視與所選資產相關的工作&#x200B;**H**：檢視及管理版本&#x200B;**I**：檢視影像轉譯&#x200B;**J**：編輯影象&#x200B;**K**：檢視具有OpenAPI功能的Dynamic Media呈現版本，包括Smart Crop和Dynamic Media。 **L**：基本中繼資料&#x200B;**M**：進階中繼資料&#x200B;**N**：關鍵字和智慧標籤&#x200B;**O**：繼續目前資料夾中的上一個或下一個資產，而不返回資料夾&#x200B;**P**：更密切地預覽。 縮放、全螢幕和其他選項。
+**A**：回到儲存庫中的目前資料夾或目前的搜尋結果&#x200B;**B**：您正在預覽的檔案的名稱和格式&#x200B;**C**：指派工作&#x200B;**D**：進階中繼資料&#x200B;**E**：關鍵字和智慧標籤&#x200B;**F**：註解及註釋&#x200B;**G**：檢視與所選資產相關的工作&#x200B;**H**：檢視及管理版本&#x200B;**I**：檢視影像轉譯&#x200B;**J**：編輯影象&#x200B;**K**：通過OpenAPI功能呈現檢視Dynamic Media呈現版本，包括Smart Crop和Dynamic Media。 **L**：基本中繼資料&#x200B;**M**：進階中繼資料&#x200B;**N**：關鍵字和智慧標籤&#x200B;**O**：繼續目前資料夾中的上一個或下一個資產，而不返回資料夾&#x200B;**P**：更密切地預覽。 縮放、全螢幕和其他選項。
 
 您也可以預覽影片。
 

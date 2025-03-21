@@ -5,18 +5,55 @@ contentOwner: Rick Brough
 feature: Spin Sets
 role: User
 exl-id: ed470472-62d9-4684-971b-30df3919c180
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
 workflow-type: tm+mt
-source-wordcount: '1956'
-ht-degree: 8%
+source-wordcount: '2002'
+ht-degree: 9%
 
 ---
 
 # 迴轉集{#spin-sets}
 
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets與Edge Delivery Services整合</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI擴充性</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>啟用Dynamic Media Prime和Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>搜尋最佳實務</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>中繼資料最佳實務</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 開發人員文件</b></a>
+        </td>
+    </tr>
+</table>
+
 「迴轉集」會模擬實際動作，即旋轉物件來檢查它。 「迴轉集」可讓您從任何角度檢視專案，從任何角度獲得關鍵的視覺細節。
 
-「迴轉集」可模擬360°的觀賞體驗。 Dynamic Media提供單軸旋轉集，檢視器可在此旋轉專案。 此外，使用者只要按幾下滑鼠即可隨意縮放及平移任何檢視。 如此一來，使用者可以從特定觀點更密切地檢查專案。
+「迴轉集」可模擬360°的觀賞體驗。 Dynamic Media提供單軸迴轉集，檢視器可在此旋轉專案。 此外，使用者只要按幾下滑鼠即可隨意縮放及平移任何檢視。 如此一來，使用者可以從特定觀點更密切地檢查專案。
 
 迴轉集由橫幅指定，其字詞為&#x200B;**[!UICONTROL 迴轉集]**。 此外，如果已發佈迴轉集，則會顯示以&#x200B;**[!UICONTROL World]**&#x200B;圖示表示的發佈日期與上次修改日期（以&#x200B;**[!UICONTROL 鉛筆]**&#x200B;圖示表示）在橫幅上。
 
@@ -26,7 +63,7 @@ ht-degree: 8%
 >
 >如需Assets使用者介面的相關資訊，請參閱[使用Touch UI管理資產](/help/assets/manage-digital-assets.md)，並將其套用至影像集資產已上傳的新資料夾。
 
-建立迴轉集時，Adobe會建議下列最佳作法並強制執行下列限制：
+建立迴轉集時，Adobe會建議下列最佳作法並強制進行下列限制：
 
 | 限制型別 | 最佳實務 | 強加的限制 |
 | --- | --- | --- |
@@ -38,7 +75,7 @@ ht-degree: 8%
 
 若要快速啟動並執行「迴轉集」，請遵循下列步驟：
 
-1. 選填。 [建立批次集預設集](/help/assets/dynamic-media/batch-set-presets-dm.md)，並將其套用至新的資產資料夾。
+1. 選擇性。[建立批次集預設集](/help/assets/dynamic-media/batch-set-presets-dm.md)，並將其套用至新的資產資料夾。
 
    批次集預設集可以幫助您自動建立迴轉集。
 
@@ -72,7 +109,7 @@ ht-degree: 8%
 
    選取「迴轉集」並加以預覽。 旋轉迴轉集。 您可以從&#x200B;**[!UICONTROL 檢視器]**&#x200B;功能表（可從左側導軌下拉式功能表取得）中選擇不同的檢視器。
 
-1. [Publish迴轉集](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)。
+1. [發佈迴轉集](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)。
 
    發佈迴轉集會啟用URL和內嵌字串。 此外，您必須[發佈檢視器預設集](/help/assets/dynamic-media/managing-viewer-presets.md)。
 
@@ -96,7 +133,7 @@ ht-degree: 8%
 
 ### 擷取迴轉集影像的准則 {#guidelines-for-shooting-spin-set-images}
 
-以下是關於迴轉集影像的一些最佳實務。 一般而言，您在「迴轉集」中的影像越多，影像迴轉效果就越好。 不過，在集合中包含許多影像也會增加影像載入所需的時間。 Experience Manager建議您在拍攝影像以用於「迴轉集」時，遵循下列准則：
+以下是關於迴轉集影像的一些最佳實務。 一般而言，您在「迴轉集」中的影像越多，影像迴轉效果就越好。 不過，在集合中包含許多影像也會增加影像載入所需的時間。 Experience Manager建議您在拍攝要用於迴轉集的影像時遵循以下准則：
 
 * 在一維迴轉集中至少使用8-12個影像，在二維迴轉集中至少使用16-24個影像。 至少需要8個影像才能旋轉360度。 由於建立二維迴轉集需要大量人力，因此一維迴轉集較常見。
 * 使用無損格式；建議使用TIFF和PNG。
@@ -118,7 +155,7 @@ ht-degree: 8%
 >
 >影像在迴轉集中出現的順序很重要。 請務必加以排序，讓旋轉成為平滑的360°檢視。
 
-建立迴轉集時，Adobe會建議下列最佳作法並強制執行下列限制：
+建立迴轉集時，Adobe會建議下列最佳作法並強制進行下列限制：
 
 | 限制型別 | 最佳實務 | 強加的限制 |
 | --- | --- | --- |
@@ -140,7 +177,7 @@ ht-degree: 8%
    >
    >建立迴轉集時，您可以變更迴轉集縮圖，或允許Experience Manager根據迴轉集中的資產自動選取縮圖。 若要選取縮圖，請選取&#x200B;**[!UICONTROL 變更縮圖]**&#x200B;並選取任何影像（您也可以導覽至其他資料夾以尋找影像）。 如果您已選取縮圖，然後決定要讓Experience Manager從迴轉集產生縮圖，請選取&#x200B;**[!UICONTROL 切換至自動縮圖]**。
 
-1. 執行下列任一項作業：
+1. 執行下列任一項：
 
    * 在「迴轉集編輯器」頁面的左上角附近，選取&#x200B;**[!UICONTROL 新增資產]**。
 
@@ -162,7 +199,7 @@ ht-degree: 8%
 
    將影格11拖曳至新位置，以重新排序迴轉集內的影格。
 
-1. （可選）執行下列任一項作業：
+1. (選用) 執行以下任一操作：
 
    * 若要刪除影像，請選取該影像，然後選取&#x200B;**[!UICONTROL 刪除資產]**。
 
@@ -218,7 +255,7 @@ ht-degree: 8%
    * 若要重新排序影像，請將影像拖曳至新位置（選取重新排序圖示以移動專案）。
    * 若要以遞增或遞減順序排序專案，請選取欄標題。
    * 若要新增資產或更新現有資產，請選取&#x200B;**[!UICONTROL 新增資產]**。 導覽至某個資產，選取該資產，然後選取右上角附近的&#x200B;**[!UICONTROL 選取]**。
-如果您刪除Experience Manager用於縮圖的影像，改為另一個影像，則仍會顯示原始資產。
+如果您刪除Experience Manager用於縮圖的影像，改為其他影像，仍會顯示原始資產。
    * 若要刪除資產，請選取該資產，然後選取&#x200B;**[!UICONTROL 刪除資產]**。
    * 若要套用預設集，請選取「預設集」圖示並選取預設集。
    * 若要刪除整個迴轉集，請導覽至該迴轉集，選取它，然後選取&#x200B;**[!UICONTROL 刪除]**
@@ -232,6 +269,6 @@ ht-degree: 8%
 
 請參閱[預覽資產](/help/assets/dynamic-media/previewing-assets.md)。
 
-## Publish迴轉集 {#publishing-spin-sets}
+## 發佈迴轉集 {#publishing-spin-sets}
 
-檢視[Publish資產](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)。
+請參閱[發佈資產](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)。

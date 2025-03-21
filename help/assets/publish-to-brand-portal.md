@@ -5,17 +5,51 @@ contentOwner: Adobe
 feature: Brand Portal, Asset Distribution, Configuration
 role: User
 exl-id: 1cc438bc-8cad-4421-af03-c1f6d750e0a8
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '1305'
+source-wordcount: '1333'
 ht-degree: 84%
 
 ---
 
-# 將Publish資產轉移至Brand Portal {#publish-assets-to-brand-portal}
+# 將資產發佈至Brand Portal {#publish-assets-to-brand-portal}
 
-| [搜尋最佳實務](/help/assets/search-best-practices.md) | [中繼資料最佳實務](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [具有OpenAPI功能的Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets開發人員檔案](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets與Edge Delivery Services整合</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI擴充性</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>啟用Dynamic Media Prime和Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>搜尋最佳實務</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>中繼資料最佳實務</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 開發人員文件</b></a>
+        </td>
+    </tr>
+</table>
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
@@ -28,9 +62,9 @@ ht-degree: 84%
 
 如果您對 AEM Assets 的原始資產、資料夾或集合進行後續修改，您必須從 AEM Assets 重新發佈，這些變更才會反映在 Brand Portal 中。這項功能可確保對進行中工作所作的變更不會出現在 Brand Portal 中。Brand Portal 僅提供管理員發佈的已核准變更。
 
-* [將Publish資產轉移至Brand Portal](#publish-assets-to-bp)
-* [Publish資料夾至Brand Portal](#publish-folders-to-brand-portal)
-* [Publish集合到Brand Portal](#publish-collections-to-brand-portal)
+* [將資產發佈至Brand Portal](#publish-assets-to-bp)
+* [將資料夾發佈至Brand Portal](#publish-folders-to-brand-portal)
+* [將集合發佈至Brand Portal](#publish-collections-to-brand-portal)
 
 >[!NOTE]
 >
@@ -38,7 +72,7 @@ ht-degree: 84%
 >Assets應批次發佈。 批次大小的建議為15K。
 > 將[!DNL Experience Manager Assets]當作[!DNL Cloud Service]，在實驗室條件下觀察到的傳輸速率為每小時1000個資產。 觀察到此速率，平均大小為10 MB資產。
 
-## 將Publish資產轉移至Brand Portal {#publish-assets-to-bp}
+## 將資產發佈至Brand Portal {#publish-assets-to-bp}
 
 以下是從 AEM Assets 發佈資產到 Brand Portal 的步驟：
 
@@ -50,7 +84,7 @@ ht-degree: 84%
    * [現在發佈](#publish-to-bp-now) (立即發佈資產)
    * [稍後發佈](#publish-to-bp-later) (安排資產發佈時段)
 
-### Publish資產立即 {#publish-to-bp-now}
+### 立即發佈資產 {#publish-to-bp-now}
 
 若要將所選資產發佈至 Brand Portal，請執行下列其中一項操作：
 
@@ -68,7 +102,7 @@ ht-degree: 84%
 
 系統會顯示訊息，指出資產已排入佇列，等候發佈至 Brand Portal。登入 Brand Portal 介面可查看已發佈的資產。
 
-### 稍後Publish資產 {#publish-to-bp-later}
+### 稍後發佈資產 {#publish-to-bp-later}
 
 若要將資產發佈至 Brand Portal 的動作安排在之後的日期或時間：
 
@@ -103,11 +137,11 @@ ht-degree: 84%
 >`/content : jcr:read, crx:replicate`
 >`/content/dam/ : jcr:read,modify, crx:replicate`
 
-## Publish資料夾至Brand Portal {#publish-folders-to-brand-portal}
+## 將資料夾發佈至Brand Portal {#publish-folders-to-brand-portal}
 
 您可以立即發佈或取消發佈資產資料夾，或安排至之後的日期或時間。
 
-### Publish資料夾至Brand Portal {#publish-folders-to-bp}
+### 將資料夾發佈至Brand Portal {#publish-folders-to-bp}
 
 1. 從 Assets 控制台選取您要發佈的資料夾，然後在工具列按一下&#x200B;**[!UICONTROL 快速發佈]**&#x200B;選項。
 
@@ -133,7 +167,7 @@ ht-degree: 84%
 
    系統會顯示訊息，指出資料夾已排入佇列，等候發佈至 Brand Portal。登入 Brand Portal 介面可查看已發佈的資料夾。
 
-1. **稍後的Publish資料夾**
+1. **稍後發佈資料夾**
 若要將資產資料夾的發佈動作安排在之後的日期或時間：
 
    1. 選取您要排程發佈的資料夾，然後在頂端的工具列選取&#x200B;**[!UICONTROL 管理出版物]**。
@@ -213,7 +247,7 @@ ht-degree: 84%
 
       ![unpublishworkflows](assets/unpublishworkflows.png)
 
-## Publish集合到Brand Portal {#publish-collections-to-brand-portal}
+## 將集合發佈至Brand Portal {#publish-collections-to-brand-portal}
 
 您可以從 AEM Assets 雲端例項發佈或取消發佈集合。
 
@@ -223,7 +257,7 @@ ht-degree: 84%
 >
 >如果從 AEM Assets 將含有內容片段的集合發佈至 Brand Portal，則除了內容片段以外，資料夾的所有內容都會複製至 Brand Portal 介面。
 
-### Publish集合 {#publish-collections}
+### 發佈集合 {#publish-collections}
 
 以下是從 AEM Assets 發佈集合到 Brand Portal 的步驟：
 

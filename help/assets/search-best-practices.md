@@ -5,27 +5,58 @@ contentOwner: KK
 exl-id: 446692de-5cea-4dbd-a98e-ec5177c7017e
 feature: Best Practices
 role: User
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
 workflow-type: tm+mt
-source-wordcount: '2542'
-ht-degree: 2%
+source-wordcount: '2570'
+ht-degree: 3%
 
 ---
 
 # AEM Assets搜尋最佳實務
 
-| [中繼資料最佳實務](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [具有OpenAPI功能的Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets開發人員檔案](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets與Edge Delivery Services整合</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI擴充性</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>啟用Dynamic Media Prime和Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>中繼資料最佳實務</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 開發人員文件</b></a>
+        </td>
+    </tr>
+</table>
 
 [!DNL Adobe Experience Manager Assets]提供強大的資產搜尋方法，協助您達到更高的內容速度。 有時候，尋找正確的資產可能會很困難且耗時。 因此，[!DNL Adobe Experience Manager Assets]中的搜尋資產功能是使用數位資產管理系統的核心，無論是供創意人員進一步使用、供業務使用者和行銷人員穩健管理資產，還是DAM管理員管理。
 
-本說明檔案包含AEM搜尋最佳實務，並提供各種案例的協助，以協助AEM使用者執行基本到進階層級的搜尋。
+本說明檔案包含AEM搜尋最佳實務，並透過各種案例協助AEM使用者執行基本到進階層級的搜尋。
 
 ## 存取Experience Manager搜尋 {#access-experience-manager-search}
 
-以下是開始搜尋前在Experience Manager中執行的基本步驟：
+以下是開始搜尋前需在Experience Manager中執行的基本步驟：
 
-* 在&#x200B;**管理員檢視**中，前往Assets >Experience Manager中的檔案，然後按一下頂端列中的搜尋圖示。 或者，使用正斜線(/)開啟「全搜尋」欄位。
+* 在&#x200B;**管理員檢視**中，前往Experience Manager中的Assets >檔案，然後按一下頂端列中的搜尋圖示。 或者，使用正斜線(/)開啟「全搜尋」欄位。
 在**Assets檢視**&#x200B;中，搜尋列會顯示在頂端，可以直接存取。
 * 已預先選取`Location:Assets`和`Path:/content/dam`，以將搜尋範圍限制在您的Experience Manager Assets存放庫。 如果您導覽至任何其他資料夾，`Path:/content/dam/<folder name>`會顯示在「全搜尋」欄位中，以將搜尋範圍限制在目前的資料夾。
 
@@ -41,7 +72,7 @@ ht-degree: 2%
 2. 符合智慧標籤中的`Classic Car`。
 3. 符合智慧標籤中的`Classic`或`Car`。
 
-指定`classic car`做為搜尋關鍵字，然後按一下[搜尋]。 輸入關鍵字時，您可以在下拉式清單中檢視搜尋建議。 搜尋建議是根據Experience Manager部署上的搜尋索引內容而定。 如果您無法在下拉式功能表中檢視適當的資產，請按下Enter鍵以檢視結果清單。 結果會依相關性排序，從最接近的相符專案開始。
+指定`classic car`做為搜尋關鍵字，然後按一下[搜尋]。 輸入關鍵字時，您可以在下拉式清單中檢視搜尋建議。 搜尋建議會根據您Experience Manager部署上的搜尋索引內容而定。 如果您無法在下拉式功能表中檢視適當的資產，請按下Enter鍵以檢視結果清單。 結果會依相關性排序，從最接近的相符專案開始。
 
 <!--![Performing basic search method 1](assets/simple-search-1.png)-->
 
@@ -110,7 +141,7 @@ AND運運算元是全域搜尋中兩個關鍵字之間的預設運運算元。 �
 
 ### 問號(？) {#question-mark}
 
-問號符號可作為條件運運算元使用，以簡化在Experience Manager中的搜尋。
+問號符號可作為條件運運算元使用，以方便您在Experience Manager中搜尋。
 
 * `car?`查詢與car後面有一個字元的字相符。 例如，購物車。
 * `?car`查詢符合汽車前有一個字元的文字。 例如，scar。
@@ -167,7 +198,7 @@ To perform a search on such a requirement, type 'classic car' in the search bar.
 1. 在搜尋列中輸入`classic car`。
 1. 前往「篩選器」。 在[!UICONTROL 檔案型別]下，展開[!UICONTROL 檔案]，再展開[!UICONTROL 文書處理]。
 1. 選取[!UICONTROL PDF]。
-1. 移至[!UICONTROL 狀態] > [!UICONTROL Publish] > [!UICONTROL 已取消發佈]。
+1. 移至[!UICONTROL 狀態] > [!UICONTROL 發佈] > [!UICONTROL 已取消發佈]。
 
 <!--![Filter example 2](assets/filter-2.png)-->
 
@@ -198,7 +229,7 @@ To perform a search on such a requirement, type 'classic car' in the search bar.
 
 AEM搜尋可讓您以更省力的方式製作複雜的搜尋查詢。 以下提供各種範例，協助您建立複雜的搜尋查詢：
 
-**案例6：搜尋Experience Manager儲存庫中所有中繼資料中有`classic car`的檔案。 檔案的內容必須包含`classic car`關鍵字。**
+**案例6：搜尋Experience Manager存放庫中所有中繼資料中有`classic car`的檔案。 檔案的內容必須包含`classic car`關鍵字。**
 
 Adobe Experience Manager可讓您將多個條件新增至搜尋。 您可以使用關鍵字、運運算元和篩選的組合來縮小搜尋結果的範圍。
 
@@ -380,7 +411,7 @@ The newly added assets are not indexed.
         </td>
     </tr>
      <tr>
-        <td> 檔案型別 </td>
+        <td> 檔案類型 </td>
         <td>
         支援的選項包括：
             <ul>

@@ -4,17 +4,51 @@ description: Adobe Experience Manager Assets可讓您區分影像中的顏色，
 exl-id: 3afa949b-ea1b-4b8e-ac94-06566e2c7147
 feature: Smart Imaging, Interactive Images, Asset Management
 role: User, Admin
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '1262'
-ht-degree: 6%
+source-wordcount: '1290'
+ht-degree: 7%
 
 ---
 
 # 影像的顏色標記 {#color-tag-images}
 
-| [搜尋最佳實務](/help/assets/search-best-practices.md) | [中繼資料最佳實務](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [具有OpenAPI功能的Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets開發人員檔案](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets與Edge Delivery Services整合</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI擴充性</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>啟用Dynamic Media Prime和Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>搜尋最佳實務</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>中繼資料最佳實務</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 開發人員文件</b></a>
+        </td>
+    </tr>
+</table>
 
 ![顏色標籤橫幅](assets/banner-image.png)
 
@@ -45,7 +79,7 @@ Adobe Experience Manager (AEM) Assets使用Adobe Sensei AI功能來區分影像�
 
    ![顏色標籤屬性](assets/color-tag-settings.png)
 
-1. 在&#x200B;**[!UICONTROL 顯示格式]**&#x200B;欄位中指定顏色標籤的顯示格式。 可能的選項包括顏色名稱、RGB或十六進位格式。
+1. 在&#x200B;**[!UICONTROL 顯示格式]**&#x200B;欄位中指定顏色標籤的顯示格式。 可能的選項包括顏色名稱、RGB或HEX格式。
 
 1. 在&#x200B;**[!UICONTROL 限制]**&#x200B;欄位中，指定您要為影像標籤的色彩數目。 當您檢視影像的屬性時，會顯示這些顏色。 您可以在此欄位中定義介於1到40之間的數字。 此欄位的預設值為10色。
 
@@ -179,7 +213,7 @@ DAM中的現有影像不會自動加上顏色標籤。 [!UICONTROL 手動重新�
 
 1. 選取[AEM Assets色彩述詞](#configure-search-predicate)。
 
-1. 拖曳檢色器以選取適當的顏色。 選取的顏色會顯示在檢色器下方的唯讀欄位中。 您可以選取RGB或十六進位作為顏色的顯示格式。
+1. 拖曳檢色器以選取適當的顏色。 選取的顏色會顯示在檢色器下方的唯讀欄位中。 您可以選取RGB或HEX作為顏色的顯示格式。
 
    ![檢色器](assets/color-picker-color-tags.png)
 

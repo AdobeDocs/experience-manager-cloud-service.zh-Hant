@@ -4,17 +4,51 @@ description: 了解如何使用新的 Assets UI (Assets 檢視) 大量匯入資�
 exl-id: 10f9d679-7579-4650-9379-bc8287cb2ff1
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 role: User
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '1899'
-ht-degree: 90%
+source-wordcount: '1927'
+ht-degree: 89%
 
 ---
 
 # 使用 Assets 檢視大量匯入資產  {#bulk-import-assets-view}
 
-| [搜尋最佳實務](/help/assets/search-best-practices.md) | [中繼資料最佳實務](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [具有OpenAPI功能的Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets開發人員檔案](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets與Edge Delivery Services整合</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI擴充性</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>啟用Dynamic Media Prime和Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>搜尋最佳實務</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>中繼資料最佳實務</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 開發人員文件</b></a>
+        </td>
+    </tr>
+</table>
 
 AEM Assets 檢視中的大量匯入能讓管理員將大量資產從資料來源匯入到 AEM Assets。管理員不再需要將單個資產或資料夾上傳到 AEM Assets。
 
@@ -37,7 +71,7 @@ AEM Assets 檢視中的大量匯入能讓管理員將大量資產從資料來源
 | Azure | <ul> <li>Azure 儲存體帳戶 </li> <li> Azure Blob 容器 <li> 根據驗證模式的 Azure 存取金鑰或 SAS 權杖 </li></ul> |
 | AWS | <ul> <li>AWS 區域 </li> <li> AWS 儲存貯體 <li> AWS 存取金鑰 </li><li> AWS 存取密碼 </li></ul> |
 | Google 雲端 | <ul> <li>GCP 貯體 </li> <li> GCP 服務帳戶電子郵件 <li> GCP 服務帳戶私密金鑰</li></ul> |
-| Dropbox | <ul> <li>Dropbox的使用者端ID （應用程式金鑰） </li> <li> Dropbox使用者端密碼（應用程式密碼）</li></ul> |
+| Dropbox | <ul> <li>Dropbox使用者端ID （應用程式金鑰） </li> <li> Dropbox使用者端密碼（應用程式密碼）</li></ul> |
 | OneDrive | <ul> <li>OneDrive 租用戶 ID  </li> <li> OneDrive 用戶端 ID</li><li> OneDrive 用戶端密碼</li></ul> |
 
 除了這些根據資料來源的先決條件之外，您也必須了解資料來源中可用的來源資料夾名稱，其中包含需要匯入到 AEM Assets 的所有資產。
@@ -99,7 +133,7 @@ AEM Assets 檢視中的大量匯入能讓管理員將大量資產從資料來源
 
 1. 按一下與「**[!UICONTROL 用戶端憑證]**」選項相對應的「**[!UICONTROL 新增憑證或密碼]**」。
 
-1. 按一下「**[!UICONTROL 新用戶端密碼]**」，提供用戶端密碼描述和有效期，然後點選「**[!UICONTROL 新增]**」。
+1. 按一下「**[!UICONTROL 新用戶端密碼]**」，提供用戶端密碼描述和有效期限，然後點選「**[!UICONTROL 新增]**」。
 
 1. 建立用戶端密碼後，複製「**[!UICONTROL 值]**」欄位 (不要複製「密碼 ID」欄位)。在 AEM Assets 中設定大量匯入工具時需要此值。
 

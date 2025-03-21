@@ -1,21 +1,55 @@
 ---
-title: 適用於  [!DNL Adobe Experience Manager]  as a  [!DNL Cloud Service] 的資產選擇器
-description: 將資產選擇器與各種Adobe、非Adobe和第三方應用程式整合。
+title: 適用於  [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 的資產選擇器
+description: 整合資產選擇器與各種Adobe、非Adobe及協力廠商應用程式。
 role: Admin, User
 exl-id: b01097f3-982f-4b2d-85e5-92efabe7094d
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '902'
-ht-degree: 4%
+source-wordcount: '930'
+ht-degree: 7%
 
 ---
 
-# Dynamic Media與OpenAPI功能的整合 {#integrate-asset-selector-dynamic-media-open-apis}
+# 整合Dynamic Media與OpenAPI功能 {#integrate-asset-selector-dynamic-media-open-apis}
 
-| [搜尋最佳實務](/help/assets/search-best-practices.md) | [中繼資料最佳實務](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [具有OpenAPI功能的Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets開發人員檔案](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets與Edge Delivery Services整合</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI擴充性</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>啟用Dynamic Media Prime和Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>搜尋最佳實務</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>中繼資料最佳實務</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 開發人員文件</b></a>
+        </td>
+    </tr>
+</table>
 
-Asset Selector可讓您使用各種Adobe應用程式進行整合，好讓他們順暢地共同作業。
+Asset Selector可讓您整合使用各種Adobe應用程式，讓這些應用程式緊密合作。
 
 
 ## 先決條件 {#prereqs-polaris}
@@ -24,13 +58,13 @@ Asset Selector可讓您使用各種Adobe應用程式進行整合，好讓他們�
 
 * [通訊方法](/help/assets/overview-asset-selector.md#prereqs)
 * 若要使用OpenAPI功能存取Dynamic Media，您必須擁有下列專案的授權：
-   * Assets存放庫(例如Experience Manager Assetsas a Cloud Service)。
+   * Assets存放庫(例如Experience Manager Assets as a Cloud Service)。
    * AEM Dynamic Media。
 * 只有[個核准的資產](/help/assets/approve-assets.md)可供使用，以確保品牌一致性。
 
-## Dynamic Media與OpenAPI功能的整合 {#adobe-app-integration-polaris}
+## 整合Dynamic Media與OpenAPI功能 {#adobe-app-integration-polaris}
 
-Asset Selector與Dynamic Media OpenAPI程式的整合涉及各種步驟，包括建立自訂的動態媒體URL或準備挑選動態媒體URL等。
+Asset Selector與Dynamic Media OpenAPI程式的整合涉及各種步驟，包括建立自訂的Dynamic Media URL或準備選取Dynamic Media URL等。
 
 ### 整合 Dynamic Media 的資產選擇器與 OpenAPI 功能 {#integrate-dynamic-media}
 
@@ -107,7 +141,7 @@ URL格式：
 
 ![動態傳遞URL](assets/dynamic-delivery-url.png)
 
-* **縮圖：**縮圖可為影像，資產為PDF、視訊、影像等。 不過，您可以使用資產縮圖的高度和寬度屬性作為動態傳送轉譯。
+* **縮圖：**縮圖可為影像，資產為PDF、影片、影像等。 不過，您可以使用資產縮圖的高度和寬度屬性作為動態傳送轉譯。
 下列轉譯集可用於PDF型別資產：
 在sidekick中選取PDF後，選取內容會提供以下資訊。 以下為遍歷JSON物件的方式：
 
@@ -124,7 +158,7 @@ URL格式：
   } 
   ```
 
-在上述熒幕擷圖中，如果需要PDF，而非其縮圖，則需要將PDF原始轉譯的傳送URL合併到目標體驗中。 例如 `https://delivery-pxxxxx-exxxxx-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:aem:8560f3a1-d9cf-429d-a8b8-d81084a42d41/original/as/algorithm design.pdf?accept-experimental=1`
+在上述熒幕擷圖中，如果需要PDF，而非其縮圖，則需要將PDF原始轉譯的傳送URL合併至目標體驗。 例如 `https://delivery-pxxxxx-exxxxx-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:aem:8560f3a1-d9cf-429d-a8b8-d81084a42d41/original/as/algorithm design.pdf?accept-experimental=1`
 
 * **影片：**您可以使用內嵌iFrame的影片型別資產，使用影片播放器URL。 您可以在目標體驗中使用下列陣列轉譯：
   <!--![Video dynamic delivery url](image.png)-->
@@ -140,13 +174,13 @@ URL格式：
 
   您可以在上方熒幕擷圖中，參考`selection[0].....selection[4]`以取得一系列轉譯連結。 例如，其中一個縮圖轉譯的關鍵屬性包括：
 
-  上述熒幕擷取畫面中的程式碼片段為視訊資產的範例。 其中包含轉譯連結陣列。 摘錄中的`selection[5]`是影像縮圖的範例，可做為目標體驗中視訊縮圖的預留位置。 轉譯陣列中的`selection[5]`適用於視訊播放器。 這提供一個HTML，可設為iframe的`src`。 它支援自我調整位元速率串流，這是網頁最佳化的視訊傳送方式。
+  上述熒幕擷取畫面中的程式碼片段為視訊資產的範例。 其中包含轉譯連結陣列。 摘錄中的`selection[5]`是影像縮圖的範例，可做為目標體驗中視訊縮圖的預留位置。 轉譯陣列中的`selection[5]`適用於視訊播放器。 此函式提供HTML，可設為iframe的`src`。 它支援自我調整位元速率串流，這是網頁最佳化的視訊傳送方式。
 
   在上述範例中，視訊播放器URL為`https://delivery-pxxxxx-exxxxx-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:aem:2fdef732-a452-45a8-b58b-09df1a5173cd/play?accept-experimental=1`
 
 ### 設定自訂篩選器 {#configure-custom-filters-dynamic-media-open-api}
 
-Dynamic Media的資產選擇器搭配OpenAPI功能，可讓您設定自訂屬性以及基於這些屬性的篩選器。 `filterSchema`屬性是用來設定這類屬性。 自訂可公開為`metadata.<metadata bucket>.<property name>.`，以便針對其設定篩選器，其中，
+具有OpenAPI功能的Dynamic Media資產選擇器可讓您設定自訂屬性，以及基於自訂屬性的篩選器。 `filterSchema`屬性是用來設定這類屬性。 自訂可公開為`metadata.<metadata bucket>.<property name>.`，以便針對其設定篩選器，其中，
 
 * `metadata`是資產的資訊
 * `embedded`是用於設定的靜態引數，並且

@@ -5,17 +5,51 @@ contentOwner: AG
 feature: Asset Management, Publishing, Collaboration, Video
 role: User
 exl-id: 91edce4a-dfa0-4eca-aba7-d41ac907b81e
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '5001'
-ht-degree: 6%
+source-wordcount: '5029'
+ht-degree: 7%
 
 ---
 
 # 管理影片資產 {#manage-video-assets}
 
-| [搜尋最佳實務](/help/assets/search-best-practices.md) | [中繼資料最佳實務](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [具有OpenAPI功能的Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets開發人員檔案](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets與Edge Delivery Services整合</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI擴充性</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>啟用Dynamic Media Prime和Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>搜尋最佳實務</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>中繼資料最佳實務</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 開發人員文件</b></a>
+        </td>
+    </tr>
+</table>
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
@@ -57,17 +91,17 @@ ht-degree: 6%
 * 即使產生轉譯，MXF檔案也不會顯示視訊預覽。
 * WebM檔案不會產生預覽轉譯，因為這些轉譯可由網頁瀏覽器以原生方式播放。
 
-## Publish視訊資產 {#publish-video-assets}
+## 發佈視訊資產 {#publish-video-assets}
 
 發佈後，您可以將視訊資產以URL形式納入網頁中，或直接內嵌資產。 如需詳細資訊，請參閱[發佈 [!DNL Dynamic Media] 資產](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)。
 
-## Publish影片至YouTube {#publishing-videos-to-youtube}
+## 將視訊發佈至YouTube {#publishing-videos-to-youtube}
 
 您可以將Experience Manager Assets中管理的視訊資產直接發佈至您先前建立的YouTube頻道。
 
-若要將視訊資產發佈至YouTube，請在Experience Manager Assets中使用標籤來標籤視訊資產。 您可以將這些標籤與YouTube頻道建立關聯。 如果視訊資產的標籤符合YouTube頻道的標籤，則視訊會發佈至YouTube。 只要使用關聯的標籤，Publish到YouTube就會與視訊的正常發佈同時發生。
+若要將視訊資產發佈至YouTube，請在Experience Manager Assets中使用標籤來標籤視訊資產。 您可以將這些標籤與YouTube頻道建立關聯。 如果視訊資產的標籤符合YouTube頻道的標籤，則視訊會發佈至YouTube。 只要使用關聯的標籤，發佈至YouTube就會與視訊的正常發佈同時發生。
 
-YouTube會自行編碼。 因此，上傳至Experience Manager的原始視訊檔案會發佈至YouTube，而不是Dynamic Media編碼建立的任何視訊轉譯。 雖然使用Dynamic Media處理視訊並非必要，但播放時若需要檢視器預設集，可預期使用此功能。
+YouTube會自行編碼。 因此，上傳至Experience Manager的原始視訊檔案會發佈至YouTube，而不會發佈至Dynamic Media編碼所建立的任何視訊轉譯。 雖然視訊不需要使用Dynamic Media來處理，但如果播放需要檢視器預設集，預計會予以處理。
 
 當您略過視訊處理設定檔並直接發佈至YouTube時，這僅代表您在Experience Manager資產中的視訊資產沒有取得可檢視的縮圖。 這也表示未編碼的視訊不適用於任何Dynamic Media資產型別。
 
@@ -78,7 +112,7 @@ YouTube會自行編碼。 因此，上傳至Experience Manager的原始視訊檔
 1. [新增標籤以供發佈](#adding-tags-for-publishing)
 1. [在Experience Manager中設定YouTube](#setting-up-youtube-in-aem)
 1. [（可選）為您上傳的視訊自動設定預設YouTube屬性](#optional-automating-the-setting-of-default-youtube-properties-for-your-uploaded-videos)
-1. [Publish影片至您的YouTube頻道](#publishing-videos-to-your-youtube-channel)
+1. [將影片發佈至您的YouTube頻道](#publishing-videos-to-your-youtube-channel)
 1. [（選用）驗證YouTube上的已發佈影片](/help/assets/dynamic-media/video.md#optional-verifying-the-published-video-on-youtube)
 1. [將YouTube URL連結至您的網頁應用程式](#linking-youtube-urls-to-your-web-application)
 
@@ -111,11 +145,11 @@ Google會定期變更其使用者介面。 因此，將視訊發佈至YouTube的
 1. 在&#x200B;**[!UICONTROL 選取專案]**&#x200B;對話方塊中，選取&#x200B;**[!UICONTROL 新增專案]**。
 1. 在&#x200B;**[!UICONTROL 新專案]**&#x200B;對話方塊的&#x200B;**[!UICONTROL 專案名稱]**&#x200B;欄位中，輸入新專案的名稱。
 
-   您的專案ID是以專案名稱為基礎。 因此，請謹慎選擇專案名稱；專案建立後即無法變更。 此外，當您稍後在Experience Manager中設定YouTube時，必須再次輸入相同的專案ID。 因此，請寫下來。
+   您的專案ID是以專案名稱為基礎。 因此，請謹慎選擇專案名稱；專案建立後即無法變更。 此外，您稍後在Experience Manager中設定YouTube時，必須再次輸入相同的專案ID。 因此，請寫下來。
 
 1. 選取「**[!UICONTROL 建立]**」。
 
-1. 執行下列任一項作業：
+1. 執行下列任一項：
 
    * 在您的專案的[儀表板]上，在&#x200B;**[!UICONTROL 開始使用]**&#x200B;卡片中，選取&#x200B;**[!UICONTROL 探索並啟用API]**。
    * 在您的專案的[儀表板]上，在&#x200B;**[!UICONTROL API]**&#x200B;卡片中，選取&#x200B;**[!UICONTROL 移至API總覽]**。
@@ -182,7 +216,7 @@ Google會定期變更其使用者介面。 因此，將視訊發佈至YouTube的
 
 >[!CAUTION]
 >
->請確定您已在YouTube *之前設定一或多個管道*&#x200B;並在Experience Manager的YouTube設定下新增管道(請參閱下方的[在Experience Manager中設定YouTube](#setting-up-youtube-in-aem))。 如果您無法設定頻道，則不會警告您沒有現有頻道。 不過，當您新增頻道時，Google驗證仍會發生，但無法選擇傳送視訊的頻道。
+>請確定您已在YouTube *中設定一或多個管道*&#x200B;之前，在Experience Manager的YouTube設定下新增管道(請參閱下方的[在Experience Manager中設定YouTube](#setting-up-youtube-in-aem))。 如果您無法設定頻道，則不會警告您沒有現有頻道。 不過，當您新增頻道時，Google驗證仍會發生，但無法選擇傳送視訊的頻道。
 
 **若要建立YouTube頻道：**
 
@@ -192,7 +226,7 @@ Google會定期變更其使用者介面。 因此，將視訊發佈至YouTube的
 1. 在[頻道]頁面上，選取&#x200B;**[!UICONTROL 建立新頻道]**。
 1. 在「品牌帳戶」頁面的「品牌帳戶名稱」欄位中，輸入您要發佈視訊資產的公司名稱或任何其他管道名稱，然後選取「**[!UICONTROL 建立]**」。
 
-   請記住您在這裡輸入的名稱；您必須在Experience Manager中設定YouTube時再次輸入此名稱。
+   請記住您在這裡輸入的名稱；當您必須在Experience Manager中設定YouTube時，必須再次輸入。
 
 1. （選用）如有需要，請新增更多管道。
 
@@ -206,7 +240,7 @@ Google會定期變更其使用者介面。 因此，將視訊發佈至YouTube的
 
 >[!NOTE]
 >
->設定Cloud Service後，此時啟用YouTube Publish復寫代理程式不需要其他設定。 原因是因為它是在儲存Cloud Service設定時啟用的。
+>設定Cloud Service後，此時啟用YouTube發佈復寫代理程式不需要其他設定。 原因是因為它在Cloud Service設定儲存時啟用。
 
 <!-- ### Enabling the YouTube Publish replication agent {#enabling-the-youtube-publish-replication-agent}
 
@@ -228,7 +262,7 @@ After you enable the YouTube Publish replication agent, if you want to test the 
 #### 在Experience Manager 6.4和更新版本中設定YouTube {#setting-up-youtube-in-aem-and-later}
 
 1. 請確定您以管理員身分登入您的Dynamic Media執行個體。
-1. 在Experience Manager的左上角，選取Experience Manager標誌，然後在左側導軌中，導覽至&#x200B;**[!UICONTROL 工具]** （槌子圖示） > **[!UICONTROL Cloud Service]** > **[!UICONTROL YouTube Publishing Configuration]**。
+1. 在Experience Manager的左上角，選取Experience Manager標誌，然後在左側導軌中，導覽至&#x200B;**[!UICONTROL 工具]** （槌子圖示） > **[!UICONTROL 雲端服務]** > **[!UICONTROL YouTube Publishing Configuration]**。
 1. 選取&#x200B;**[!UICONTROL 全域]** （不要選取它）。
 
 1. 在全域頁面的右上角附近，選取&#x200B;**[!UICONTROL 建立]**。
@@ -244,7 +278,7 @@ After you enable the YouTube Publish replication agent, if you want to test the 
 1. 返回YouTube帳戶設定對話方塊。在「 **[!UICONTROL JSON設定」欄位中]** ，貼上JSON文字。
 1. 在頁面的右上角附近，選取&#x200B;**[!UICONTROL 儲存]**。
 
-   現在在Experience Manager中設定YouTube管道。
+   現在請在Experience Manager中設定YouTube管道。
 
 1. 選取&#x200B;**[!UICONTROL 新增頻道]**。
 1. 在「頻道名稱」欄位中，輸入您在&#x200B;**[!UICONTROL 先前新增一或多個頻道至YouTube]**&#x200B;工作中建立的頻道名稱。
@@ -262,8 +296,8 @@ After you enable the YouTube Publish replication agent, if you want to test the 
 
    現在設定標籤以供發佈。
 
-1. **[!UICONTROL 設定標籤以供發佈]** — 在Cloud Service> YouTube頁面上，選取鉛筆圖示以編輯您要使用的標籤清單。
-1. 若要在Experience Manager中顯示可用標籤清單，請選取下拉式清單圖示（倒置插入號）。
+1. **[!UICONTROL 設定標籤以進行發佈]** — 在Cloud Services > YouTube頁面上，選取鉛筆圖示以編輯您要使用的標籤清單。
+1. 若要顯示Experience Manager中可用標籤的清單，請選取下拉式清單圖示（上下顛倒的插入號）。
 1. 若要新增這些標籤，請選取一或多個標籤。
 
    若要刪除您已新增的標籤，請選取標籤，然後選取&#x200B;**[!UICONTROL X]**。
@@ -276,7 +310,7 @@ After you enable the YouTube Publish replication agent, if you want to test the 
 
 1. 請確定您以管理員身分登入您的Dynamic Media執行個體。
 
-1. 在Experience Manager的左上角，選取Experience Manager標誌，然後在左側導軌中，導覽至&#x200B;**[!UICONTROL 工具]** （槌子圖示） > **[!UICONTROL 部署]** > **[!UICONTROL Cloud Service]**。
+1. 在Experience Manager的左上角，選取Experience Manager標誌，然後在左側導軌中，導覽至&#x200B;**[!UICONTROL 工具]** （槌子圖示） > **[!UICONTROL 部署]** > **[!UICONTROL 雲端服務]**。
 1. 在「協力廠商服務」標題的「YouTube」下方，選取&#x200B;**[!UICONTROL 立即設定]**。
 1. 在「建立組態」對話方塊的個別欄位中，輸入標題（必要）和名稱（選用）。
 1. 選取「**[!UICONTROL 建立]**」。
@@ -290,7 +324,7 @@ After you enable the YouTube Publish replication agent, if you want to test the 
 1. 返回YouTube帳戶設定對話方塊。在「 **[!UICONTROL JSON設定」欄位中]** ，貼上JSON文字。
 1. 選取&#x200B;**[!UICONTROL 確定]**。
 
-   現在在Experience Manager中設定YouTube管道。
+   現在請在Experience Manager中設定YouTube管道。
 
 1. 在&#x200B;**[!UICONTROL 可用頻道]**&#x200B;的右側，選取&#x200B;**+** （加號圖示）。
 1. 在「YouTube頻道設定」對話方塊的「標題」欄位中，輸入您在「先前新增一或多個頻道至YouTube」工作中建立的頻道名稱 **** 。
@@ -308,8 +342,8 @@ After you enable the YouTube Publish replication agent, if you want to test the 
 
    現在設定標籤以供發佈。
 
-1. **[!UICONTROL 設定標籤以供發佈]** — 在Cloud Service> YouTube頁面上，選取鉛筆圖示以編輯您要使用的標籤清單。
-1. 若要在Experience Manager中顯示可用標籤清單，請選取下拉式清單圖示（倒置插入號）。
+1. **[!UICONTROL 設定標籤以進行發佈]** — 在Cloud Services > YouTube頁面上，選取鉛筆圖示以編輯您要使用的標籤清單。
+1. 若要顯示Experience Manager中可用標籤的清單，請選取下拉式清單圖示（上下顛倒的插入號）。
 1. 若要新增這些標籤，請選取一或多個標籤。
 
    若要刪除您已新增的標籤，請選取標籤，然後選取&#x200B;**X**。
@@ -320,7 +354,7 @@ After you enable the YouTube Publish replication agent, if you want to test the 
 
 ### （可選）為您上傳的視訊自動設定預設YouTube屬性 {#optional-automating-the-setting-of-default-youtube-properties-for-your-uploaded-videos}
 
-您可以選擇在上傳視訊時自動設定YouTube屬性。 以Experience Manager建立中繼資料處理設定檔。
+您可以選擇在上傳視訊時自動設定YouTube屬性。 在Experience Manager中建立中繼資料處理設定檔。
 
 若要建立中繼資料處理設定檔，您必須先從「欄位標籤 **[!UICONTROL 」、「對應至屬性]********** 」和「選擇」欄位複製值，這些全都可在視訊的中繼資料結構中找到。然後，您可以新增這些值，以建立您的YouTube視訊中繼資料處理設定檔。
 
@@ -381,19 +415,19 @@ After you enable the YouTube Publish replication agent, if you want to test the 
 
    請參[閱中繼資料設定檔](/help/assets/metadata-profiles.md)和[視訊設定檔](/help/assets/dynamic-media/video-profiles.md)。
 
-### Publish影片至您的YouTube頻道 {#publishing-videos-to-your-youtube-channel}
+### 將影片發佈至您的YouTube頻道 {#publishing-videos-to-your-youtube-channel}
 
 現在，您將先前新增的標籤關聯至視訊資產。 此程式可讓Experience Manager知道要將哪些資產發佈至您的YouTube頻道。
 
 >[!NOTE]
 >
->Publish不會立即自動發佈至YouTube。 設定動態媒體時，有兩個發佈選項可供選擇：立 **[!UICONTROL 即或]****[!UICONTROL 啟動後]**。
+>立即發佈不會自動發佈至YouTube。 設定動態媒體時，有兩個發佈選項可供選擇：立 **[!UICONTROL 即或]****[!UICONTROL 啟動後]**。
 >
->**[!UICONTROL Publish立即]**&#x200B;表示上傳的資產（在與IPS同步之後）會自動發佈至傳遞系統。 Dynamic Media雖然如此，YouTube則否。 若要發佈至YouTube，您必須透過Experience Manager Author發佈。
+>**[!UICONTROL 立即發佈]**&#x200B;表示上傳的資產（在與IPS同步之後）會自動發佈至傳遞系統。 雖然這對Dynamic Media是如此，對YouTube則否。 若要發佈至YouTube，您必須透過Experience Manager Author發佈。
 
 >[!NOTE]
 >
->若要從YouTube發佈內容，Experience Manager會使用&#x200B;**[!UICONTROL Publish至YouTube]**&#x200B;工作流程，讓您監視進度並檢視任何失敗資訊。
+>若要從YouTube發佈內容，Experience Manager會使用&#x200B;**[!UICONTROL 發佈至YouTube]**&#x200B;工作流程，讓您監視進度並檢視任何失敗資訊。
 >
 >請參閱[監視視訊編碼和YouTube發佈進度](#monitoring-video-encoding-and-youtube-publishing-progress)。
 >
@@ -411,7 +445,7 @@ After you enable the YouTube Publish replication agent, if you want to test the 
 
 1. 在頁面的右上角，選取&#x200B;**[!UICONTROL 選取]**。
 1. 在視訊的屬性頁面的右上角，選取&#x200B;**[!UICONTROL 儲存並關閉]**。
-1. 在工具列上，選取&#x200B;**[!UICONTROL 快速Publish]**。
+1. 在工具列上，選取&#x200B;**[!UICONTROL 快速發佈]**。
 
    另請參閱[搭配Experience Manager Sites使用出版物管理](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/publication-management-feature-video-use.html#page-authoring)。
 
@@ -429,7 +463,7 @@ After you enable the YouTube Publish replication agent, if you want to test the 
 
 ### 將YouTube URL連結至您的網頁應用程式 {#linking-youtube-urls-to-your-web-application}
 
-您可以取得Dynamic Media在發佈影片後產生的YouTube URL字串。 當您複製YouTube URL時，它會貼到剪貼簿，以便您視需要將其貼到網站或應用程式中的頁面。
+您可以取得Dynamic Media在發佈視訊後產生的YouTube URL字串。 當您複製YouTube URL時，它會貼到剪貼簿，以便您視需要將其貼到網站或應用程式中的頁面。
 
 >[!NOTE]
 >
@@ -447,11 +481,11 @@ After you enable the YouTube Publish replication agent, if you want to test the 
 
 ### 取消發佈影片，以便從YouTube中將其移除 {#unpublishing-videos-to-remove-them-from-youtube}
 
-當您在Experience Manager中取消發佈視訊資產時，視訊會從YouTube中移除。
+在Experience Manager中取消發佈視訊資產時，會從YouTube中移除視訊。
 
 >[!CAUTION]
 >
->如果您直接從YouTube中移除視訊，Experience Manager會保持警覺，並繼續視訊發佈至YouTube。 一律透過Experience Manager從YouTube取消發佈視訊資產。
+>如果您直接從YouTube中移除視訊，Experience Manager不會察覺，並持續以視訊仍發佈至YouTube的方式處理。 一律透過Experience Manager從YouTube取消發佈視訊資產。
 
 >[!NOTE]
 >
@@ -501,7 +535,7 @@ After you enable the YouTube Publish replication agent, if you want to test the 
    >由於來自[https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)的&#x200B;**[!UICONTROL 重試]**、**[!UICONTROL 重試延遲]**&#x200B;及&#x200B;**[!UICONTROL 逾時]**&#x200B;有多個工作流程設定，因此最終記錄失敗/錯誤訊息可能需要較長時間，例如：
    >
    >* Apache Sling工作佇列設定
-   >* AdobeGranite工作流程外部程式工作處理常式
+   >* Adobe Granite工作流程外部程式工作處理常式
    >* Granite工作流程逾時佇列
    >
    >您可以調整這些組態中的&#x200B;**[!UICONTROL 重試]**、**[!UICONTROL 重試延遲]**&#x200B;和&#x200B;**[!UICONTROL 逾時]**&#x200B;屬性。
@@ -533,7 +567,7 @@ After you enable the YouTube Publish replication agent, if you want to test the 
    >由於來自[https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)的&#x200B;**[!UICONTROL 重試]**、**[!UICONTROL 重試延遲]**&#x200B;及&#x200B;**[!UICONTROL 逾時]**&#x200B;有多個工作流程組態，最終記錄錯誤訊息可能需要較長時間，例如：
    >
    >* Apache Sling工作佇列設定
-   >* AdobeGranite工作流程外部程式工作處理常式
+   >* Adobe Granite工作流程外部程式工作處理常式
    >* Granite工作流程逾時佇列
    >
    >您可以調整這些組態中的&#x200B;**[!UICONTROL 重試]**、**[!UICONTROL 重試延遲]**&#x200B;和&#x200B;**[!UICONTROL 逾時]**&#x200B;屬性。

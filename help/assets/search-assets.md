@@ -6,22 +6,56 @@ mini-toc-levels: 1
 feature: Selectors, Adobe Stock, Asset Distribution, Asset Management, Asset Processing
 role: User, Admin
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '5524'
+source-wordcount: '5552'
 ht-degree: 6%
 
 ---
 
 # 在AEM中搜尋資產 {#search-assets-in-aem}
 
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets與Edge Delivery Services整合</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI擴充性</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>啟用Dynamic Media Prime和Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>搜尋最佳實務</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>中繼資料最佳實務</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 開發人員文件</b></a>
+        </td>
+    </tr>
+</table>
+
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
 | AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/search-assets.html) |
 | AEM as a Cloud Service  | 本文章 |
-
-| [搜尋最佳實務](/help/assets/search-best-practices.md) | [中繼資料最佳實務](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [具有OpenAPI功能的Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets開發人員檔案](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
 
 [!DNL Adobe Experience Manager Assets]提供強大的資產搜尋方法，協助您達到更高的內容速度。 您的團隊可使用開箱即用的功能和自訂方法，透過順暢的智慧型資產搜尋體驗縮短上市時間。 搜尋資產功能是使用數位資產管理系統的核心，不論是供創意人員進一步使用、供業務使用者和行銷人員健全管理資產，還是DAM管理員管理。 您可以透過[!DNL Assets]使用者介面或其他應用程式和介面執行的簡單、進階和自訂搜尋，有助於完成這些使用案例。
 
@@ -94,7 +128,7 @@ Experience Manager Assets預設會顯示兩個屬性的Facet計數：
 
 ## 輸入時搜尋建議 {#searchsuggestions}
 
-當您開始輸入關鍵字時，Experience Manager會建議可能的搜尋關鍵字或片語。 這些建議是根據Experience Manager中的資產。 Experience Manager會編制所有中繼資料欄位的索引，以協助搜尋。 為了提供搜尋建議，系統會使用下列幾個中繼資料欄位的值。 若要提供搜尋建議，請考慮將適當的關鍵字填入下列欄位：
+當您開始輸入關鍵字時，Experience Manager會建議可能的搜尋關鍵字或片語。 這些建議是以Experience Manager中的資產為基礎。 Experience Manager會對所有中繼資料欄位編制索引，以協助進行搜尋。 為了提供搜尋建議，系統會使用下列幾個中繼資料欄位的值。 若要提供搜尋建議，請考慮將適當的關鍵字填入下列欄位：
 
 * 資產標籤。 （對應至`jcr:content/metadata/cq:tags`）
 * 資產標題。 （對應至`jcr:content/metadata/dc:title`）
@@ -209,12 +243,12 @@ Using Smart Tags adds an extra `OR` clause to find any of the search terms as th
 | 標題 | title：John |
 | 建立者 | 建立者：John |
 | 位置 | 位置：NA |
-| 說明 | description：&quot;Sample Image&quot; |
+| 描述 | description：&quot;Sample Image&quot; |
 | 建立者工具 | creatortool：&quot;Adobe Photoshop&quot; |
-| 版權擁有者 | 版權擁有者：「Adobe Systems」 |
+| 版權擁有者 | 版權擁有者：&quot;Adobe Systems&quot; |
 | 參與者 | 貢獻者：John |
 | 使用條款 | usageterms：&quot;CopyRights Reserved&quot; |
-| 已建立 | created：YYYY-MM-DDTHH |
+| 建立日期 | created：YYYY-MM-DDTHH |
 | 到期日期 | expires：YYYY-MM-DDTHH |
 | 準時 | ontime：YYYY-MM-DDTHH |
 | 關閉時間 | offtime：YYYY-MM-DDTHH |
@@ -251,7 +285,7 @@ Using Smart Tags adds an extra `OR` clause to find any of the search terms as th
 
 ### 從Adobe Asset Link面板搜尋資產 {#aal}
 
-使用Adobe Asset Link，創意專業人士現在無需離開支援的Adobe Creative Cloud應用程式，即可存取[!DNL Experience Manager Assets]中儲存的內容。 創意人員可以使用[!DNL Adobe Creative Cloud]應用程式中的應用程式內面板，順暢地瀏覽、搜尋、簽出和簽入資產： [!DNL Adobe Photoshop]、[!DNL Adobe Illustrator]和[!DNL Adobe InDesign]。 Asset Link也可讓使用者搜尋視覺上類似的結果。 視覺化搜尋顯示結果由Adobe Sensei的機器學習演演算法提供支援，並幫助使用者尋找在美學上相似的影像。 請參閱[使用Adobe資產連結搜尋和瀏覽資產](https://helpx.adobe.com/tw/enterprise/using/manage-assets-using-adobe-asset-link.html#UseAdobeAssetLink)。
+使用Adobe Asset Link，創意專業人士現在無需離開支援的Adobe Creative Cloud應用程式，即可存取[!DNL Experience Manager Assets]中儲存的內容。 創意人員可以使用[!DNL Adobe Creative Cloud]應用程式中的應用程式內面板，順暢地瀏覽、搜尋、簽出和簽入資產： [!DNL Adobe Photoshop]、[!DNL Adobe Illustrator]和[!DNL Adobe InDesign]。 Asset Link也可讓使用者搜尋視覺上類似的結果。 視覺化搜尋顯示結果由Adobe Sensei的機器學習演演算法提供支援，並幫助使用者尋找在美學上相似的影像。 請參閱[使用Adobe Asset Link搜尋和瀏覽資產](https://helpx.adobe.com/tw/enterprise/using/manage-assets-using-adobe-asset-link.html#UseAdobeAssetLink)。
 
 ### 搜尋[!DNL Experience Manager]案頭應用程式中的資產 {#desktop-app}
 
@@ -441,7 +475,7 @@ You can configure [!DNL Experience Manager] to extract the text from the assets 
 | MIME 類型 | 影像、檔案、多媒體、封存或其他。 |
 | 上次修改時間 | 小時、日、周、月或年。 |
 | 檔案大小 | 小、Medium或大。 |
-| Publish狀態 | 已發佈或已取消發佈。 |
+| 發佈狀態 | 已發佈或已取消發佈。 |
 | 已核准狀態 | 已核准或已拒絕。 |
 | 方向 | 水準、垂直或正方形。 |
 | 樣式 | 彩色或黑白。 |
@@ -471,7 +505,7 @@ You can configure [!DNL Experience Manager] to extract the text from the assets 
 
 排序搜尋結果以更快找到所需資產。 您只能在清單檢視中排序搜尋結果，而且必須從&#x200B;**[!UICONTROL 篩選器]**&#x200B;面板選取&#x200B;**[[!UICONTROL 檔案]](#searchui)**。 [!DNL Assets]使用伺服器端排序功能，快速排序資料夾或搜尋查詢結果中的所有資產（無論多少）。 伺服器端排序比用戶端排序提供更快速且更精確的結果。
 
-在清單檢視中，您可以排序搜尋結果，就像排序任何資料夾中的資產一樣。 排序功能適用於這些欄 — 名稱、標題、狀態、Dimension、大小、評等、使用狀況、（日期）建立時間、（日期）修改時間、（日期）發佈時間、工作流程和出庫。
+在清單檢視中，您可以排序搜尋結果，就像排序任何資料夾中的資產一樣。 排序功能適用於這些欄 — 名稱、標題、狀態、維度、大小、評等、使用狀況、（日期）建立時間、（日期）修改時間、（日期）發佈時間、工作流程和出庫。
 
 如需排序功能的限制，請參閱[限制](#limitations)。
 

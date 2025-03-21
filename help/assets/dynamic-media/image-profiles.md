@@ -5,20 +5,57 @@ contentOwner: Rick Brough
 feature: Asset Management,Image Profiles,Renditions,Best Practices
 role: User
 exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
-source-git-commit: 0ad506fc72cb73d3a6a8cdd9eee50f213b52665e
+source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
 workflow-type: tm+mt
-source-wordcount: '3518'
-ht-degree: 2%
+source-wordcount: '3564'
+ht-degree: 3%
 
 ---
 
 # Dynamic Media影像設定檔 {#image-profiles}
 
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets與Edge Delivery Services整合</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI擴充性</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>啟用Dynamic Media Prime和Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>搜尋最佳實務</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>中繼資料最佳實務</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 開發人員文件</b></a>
+        </td>
+    </tr>
+</table>
+
 上傳影像時，您可以套用影像設定檔至資料夾，在上傳時自動裁切影像。
 
 >[!IMPORTANT]
 >
->「影像設定檔」不適用於PDF、動畫GIF或INDD (Adobe InDesign)檔案。
+>影像設定檔不適用於PDF、動畫GIF或INDD (Adobe InDesign)檔案。
 
 ## 「不銳利化遮色片」選項 {#unsharp-mask}
 
@@ -34,7 +71,7 @@ ht-degree: 2%
  <tbody>
   <tr>
    <td><strong>選項</strong></td>
-   <td><strong>說明</strong></td>
+   <td><strong>描述</strong></td>
   </tr>
   <tr>
    <td>數量</td>
@@ -67,7 +104,7 @@ ht-degree: 2%
 
 智慧型裁切座標會根據外觀比例而定。 針對影像設定檔中的智慧型裁切設定，如果影像設定檔中新增維度的外觀比例相同，則會將相同的外觀比例傳送至Dynamic Media。 Adobe建議您使用相同的裁切區域。 這麼做可確保不會對「影像設定檔」中使用的不同維度造成影響。
 
-您建立的每個智慧型裁切產生都需要額外的處理。 例如，新增五個以上的智慧型裁切外觀比例可能會導致資產擷取速度緩慢。 它也會造成系統負載增加。 由於智慧型裁切可在資料夾層級套用，Adobe建議僅將其用於必要的資料夾。
+您建立的每個智慧型裁切產生都需要額外的處理。 例如，新增五個以上的智慧型裁切外觀比例可能會導致資產擷取速度緩慢。 它也會造成系統負載增加。 由於智慧型裁切可在檔案夾層級套用，Adobe建議僅將其用於必要的檔案夾。
 
 **定義影像設定檔中智慧型裁切的准則**
 為了控制智慧型裁切使用量，並最佳化裁切的處理時間和儲存空間，Adobe建議下列准則和提示：
@@ -86,11 +123,11 @@ ht-degree: 2%
 >
 >Adobe建議您檢閱任何產生的裁切和色票，確保它們適當且與您的品牌和價值相關。
 
-| 選項 | 使用時機 | 說明 |
+| 選項 | 使用時機 | 描述 |
 | --- | --- | --- |
 | **[!UICONTROL 畫素裁切]** | 僅根據尺寸大量裁切影像。 | 從&#x200B;**[!UICONTROL 裁切選項]**&#x200B;下拉式清單中，選取&#x200B;**[!UICONTROL 畫素裁切]**。<br>若要從影像側面裁切，請輸入影像任何側面或每一側面要裁切的畫素數。 裁切多少影像取決於影像檔案中的ppi （每英吋畫素）設定。<br>影像設定檔畫素裁切會以下列方式呈現：<br>·值為上、下、左和右。<br>·左上方會視為`0,0`，而畫素裁切是從此處計算的。<br>·裁切起點：左邊是X，上邊是Y<br>·水準計算：原始影像的水準畫素大小減去左邊，再減去右邊。<br>·垂直計算：垂直畫素高度減去「頂端」，然後減去「底部」。<br>例如，假設您有4000 x 3000畫素影像。 您使用下列值：Top=250、Bottom=500、Left=300、Right=700。<br>從左上角(300,250)裁切，使用（4000-300-700、3000-250-500或3000,2250）的填色空間。 |
 | **[!UICONTROL 智慧型裁切]** | 根據視覺焦點批次裁切影像。 | 智慧型裁切利用Adobe Sensei中人工智慧的強大功能，快速大量自動裁切影像。 智慧型裁切會自動偵測並裁切至任何影像中的焦點，以取得預期的目標點，無論熒幕大小為何。<br>從&#x200B;**[!UICONTROL 裁切選項]**&#x200B;下拉式清單中，選取&#x200B;**[!UICONTROL 智慧型裁切]**，然後在&#x200B;**[!UICONTROL 回應式影像裁切]**&#x200B;的右側，啟用（開啟）此功能。<br>預設中斷點大小(**[!UICONTROL 大]**、**[!UICONTROL Medium]**、**[!UICONTROL 小]**)涵蓋行動裝置和平板電腦、桌上型電腦及橫幅上大部分影像使用的完整大小。 如有需要，您可以編輯「大」、「Medium」和「小」的預設名稱。<br>若要新增更多中斷點，請選取&#x200B;**[!UICONTROL 新增裁切]**；若要刪除裁切，請選取「垃圾桶」圖示。 |
-| **[!UICONTROL 顏色和影像色票]** | 大量產生每個影像的影像色票。 | **注意**： Dynamic Media Classic不支援智慧型色票。<br>從顯示顏色或紋理的產品影像自動尋找並產生高品質色票。<br>從&#x200B;**[!UICONTROL 裁切選項]**&#x200B;下拉式清單中，選取&#x200B;**[!UICONTROL 智慧型裁切]**。 然後在&#x200B;**[!UICONTROL 顏色和影像色票]**&#x200B;的右側，啟用（開啟）此功能。 在&#x200B;**[!UICONTROL 寬度]**&#x200B;和&#x200B;**[!UICONTROL 高度]**&#x200B;文字方塊中輸入畫素值。<br>雖然所有影像裁切都可從「轉譯」邊欄取得，但色票只能透過&#x200B;**[!UICONTROL 複製URL]**&#x200B;功能使用。 使用您自己的檢視元件來呈現網站上的色票。 此規則的例外是輪播橫幅。 Dynamic Media為輪播橫幅中使用的色票提供檢視元件。<br><br>**使用影像色票**<br>&#x200B;影像色票的URL簡單明瞭：<br>`/is/image/company/&lt;asset_name&gt;:Swatch`<br>其中`:Swatch`已附加至資產要求。<br><br>**使用色票**<br>&#x200B;若要使用色票，您需提出包含下列內容的`req=userdata`要求：<br>`/is/image/&lt;company_name&gt;/&lt;swatch_asset_name&gt;:Swatch?req=userdata`<br><br>例如，下列是Dynamic Media Classic中的色票資產：<br>`https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch`<br>以下是色票資產對應的`req=userdata` URL：<br>`https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata`<br> `req=userdata`回應如下：<br>`SmartCropDef=Swatch`<br>`SmartCropHeight=200.0`<br>`SmartCropRect=0.421671,0.389815,0.0848564,0.0592593,200,200`<br>`SmartCropType=Swatch`<br>`SmartCropWidth=200.0`<br>`SmartSwatchColor=0xA56DB2`<br>您也可以要求XML或JSON格式的`req=userdata`回應，如下列個別URL範例所示：<br>·`https://my.company.com</code>:8080/is/image/DemoCo/Sleek:Swatch?req=userdata,json`<br>·`https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata,xml`<br><br>**注意**：您必須建立自己的WCM元件來要求回應對由24位RGB十六進位制值表示的`SmartSwatchColor`屬性進行樣本採集和分析。<br>另請參閱檢視器參考指南中的[`userdata`](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/req/r-userdata)。 |
+| **[!UICONTROL 顏色和影像色票]** | 大量產生每個影像的影像色票。 | **注意**： Dynamic Media Classic不支援智慧型色票。<br>從顯示顏色或紋理的產品影像自動尋找並產生高品質色票。<br>從&#x200B;**[!UICONTROL 裁切選項]**&#x200B;下拉式清單中，選取&#x200B;**[!UICONTROL 智慧型裁切]**。 然後在&#x200B;**[!UICONTROL 顏色和影像色票]**&#x200B;的右側，啟用（開啟）此功能。 在&#x200B;**[!UICONTROL 寬度]**&#x200B;和&#x200B;**[!UICONTROL 高度]**&#x200B;文字方塊中輸入畫素值。<br>雖然所有影像裁切都可從「轉譯」邊欄取得，但色票只能透過&#x200B;**[!UICONTROL 複製URL]**&#x200B;功能使用。 使用您自己的檢視元件來呈現網站上的色票。 此規則的例外是輪播橫幅。 Dynamic Media提供轉盤橫幅中所使用色票的檢視元件。<br><br>**使用影像色票**<br>&#x200B;影像色票的URL簡單明瞭：<br>`/is/image/company/&lt;asset_name&gt;:Swatch`<br>其中`:Swatch`已附加至資產要求。<br><br>**使用色票**<br>&#x200B;若要使用色票，您需提出包含下列內容的`req=userdata`要求：<br>`/is/image/&lt;company_name&gt;/&lt;swatch_asset_name&gt;:Swatch?req=userdata`<br><br>例如，下列是Dynamic Media Classic中的色票資產：<br>`https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch`<br>以下是色票資產對應的`req=userdata` URL：<br>`https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata`<br> `req=userdata`回應如下：<br>`SmartCropDef=Swatch`<br>`SmartCropHeight=200.0`<br>`SmartCropRect=0.421671,0.389815,0.0848564,0.0592593,200,200`<br>`SmartCropType=Swatch`<br>`SmartCropWidth=200.0`<br>`SmartSwatchColor=0xA56DB2`<br>您也可以要求XML或JSON格式的`req=userdata`回應，如下列個別URL範例所示：<br>·`https://my.company.com</code>:8080/is/image/DemoCo/Sleek:Swatch?req=userdata,json`<br>·`https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata,xml`<br><br>**注意**：您必須建立自己的WCM元件來要求回應取樣並分析`SmartSwatchColor`屬性，該屬性由24位RGB十六進位制值表示。<br>另請參閱檢視器參考指南中的[`userdata`](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/req/r-userdata)。 |
 | **[!UICONTROL 保留所有目標解析度的裁切內容]** | 若要維持相同外觀比例的裁切內容 | 當您建立智慧型裁切設定檔時使用。<br>若要針對不同解析度的指定外觀比例，產生新的裁切內容（同時仍維持焦點），請取消勾選此選項<br>如果您決定取消勾選此方塊，請確定原始影像解析度大於您為智慧型裁切描述檔定義的解析度。<br><br>例如，假設您已將外觀比例設定為600 x 600 （大）、400 x 400 (Medium)和300 x 300 （小）。<br>當&#x200B;**[!UICONTROL 保留所有目標解析度的裁切內容]**&#x200B;選項為&#x200B;*核取*&#x200B;時，您會看到所有三個解析度的相同裁切，類似於下列影像輸出範例（僅供說明用途）：<br>![核取選項](/help/assets/dynamic-media/assets/preserve-checked.png)<br><br>當&#x200B;**[!UICONTROL 保留所有目標解析度的裁切內容]**&#x200B;選項為&#x200B;*未核取*&#x200B;時，所有三個解析度的裁切內容都是新的，類似於以下影像輸出範例（僅供說明用途）：<br>![未核取選項](/help/assets/dynamic-media/assets/preserve-unchecked.png) |
 
 ### 智慧型裁切和色票支援的影像檔案格式
@@ -106,7 +143,7 @@ ht-degree: 2%
 | BMP | `.bmp` | image/bmp | sRGB | 4 GB | 是 |
 | CMYK | | | | | 是 |
 | EPS | | | | | 否 |
-| GIF | `.gif` | image/gif | sRGB | 15 GB | 是；動畫GIF的第一個影格用於轉譯。 您無法設定或變更第一個影格。 |
+| GIF | `.gif` | image/gif | sRGB | 15 GB | 是；動畫GIF的第一個影格會用於轉譯。 您無法設定或變更第一個影格。 |
 | JPEG | `.jpg`和`.jpeg` | image/jpeg | sRGB | 15 GB | 是 |
 | PNG | `.png` | image/png | sRGB | 15 GB | 是 |
 | PSD | `.psd` | image/vnd.adobe.photoshop | sRGB<br>CMYK | 2 GB | 是 |
@@ -118,7 +155,7 @@ ht-degree: 2%
 
 若要定義其他資產型別的進階處理引數，請參閱[設定資產處理](config-dm.md#configuring-asset-processing)。
 
-檢視[關於Dynamic Media影像設定檔和視訊設定檔](/help/assets/dynamic-media/about-image-video-profiles.md)。
+請參閱[關於Dynamic Media影像設定檔和視訊設定檔](/help/assets/dynamic-media/about-image-video-profiles.md)。
 
 另請參閱[組織數位Assets以使用處理設定檔的最佳實務](/help/assets/organize-assets.md)。
 
@@ -186,7 +223,7 @@ ht-degree: 2%
    * 在「卡片檢視」中，將指標暫留在資料夾上，然後選取核取記號以選取它。
    * 在「欄檢視」或「清單檢視」中，選取資料夾名稱左邊的核取方塊。
 1. 在工具列上，選取&#x200B;**[!UICONTROL 屬性]**。
-1. 選取「**[!UICONTROL Dynamic Media處理中]**」標籤。
+1. 選取&#x200B;**[!UICONTROL Dynamic Media處理]**&#x200B;標籤。
 1. 在&#x200B;**[!UICONTROL 影像設定檔]**&#x200B;下，從&#x200B;**[!UICONTROL 設定檔名稱]**&#x200B;下拉式清單中，選取要套用的設定檔。
 1. 在頁面的右上角附近，選取&#x200B;**[!UICONTROL 儲存並關閉]**。 具有指派設定檔的資料夾會在資料夾名稱正下方顯示設定檔名稱。
 
@@ -206,7 +243,7 @@ ht-degree: 2%
 
      ![chlimage_1-257](assets/chlimage_1-257.png)
 
-   * 瀏覽至CRXDE Lite到下列節點： `/content/dam/jcr:content`。
+   * 導覽至CRXDE Lite至下列節點： `/content/dam/jcr:content`。
 
      新增屬性`imageProfile:/conf/global/settings/dam/adminui-extension/imageprofile/<name of image profile>`並選取&#x200B;**[!UICONTROL 全部儲存]**。
 
@@ -216,7 +253,7 @@ ht-degree: 2%
 
 >[!IMPORTANT]
 >
->Adobe建議您檢閱任何產生的智慧型裁切和智慧型色票，以確保它們適當且與您的品牌和價值相關。
+>Adobe建議您檢閱任何產生的智慧型裁切和智慧型色票，以確保其適當且與您的品牌和價值相關。
 
 若要調整影像的焦點，您可以手動調整對齊方式或調整智慧型裁切視窗的大小。
 
@@ -256,7 +293,7 @@ ht-degree: 2%
 
 >[!IMPORTANT]
 >
->Adobe建議您檢閱任何產生的智慧型裁切和智慧型色票，以確保它們適當且與您的品牌和價值相關。
+>Adobe建議您檢閱任何產生的智慧型裁切和智慧型色票，以確保其適當且與您的品牌和價值相關。
 
 在您將「影像設定檔」（包含智慧型裁切）套用至資料夾後，該資料夾中的所有影像都會套用裁切。 如有需要，您可以手動調整多個影像上的對齊方式或調整智慧型裁切視窗大小，以進一步微調其焦點。
 
@@ -324,9 +361,9 @@ ht-degree: 2%
 
    您可以確認「影像設定檔」不再套用至資料夾，因為資料夾名稱下方不再有該名稱。
 
-### 透過「屬性」從資料夾中移除Dynamic Media影像設定檔 {#removing-image-profiles-from-folders-via-properties}
+### 透過「屬性」將動態媒體影像設定檔從資料夾中移除 {#removing-image-profiles-from-folders-via-properties}
 
-1. 選取Experience Manager標誌並導覽&#x200B;**[!UICONTROL Assets]**，然後移至您要移除其中之影像設定檔的資料夾。
+1. 選取Experience Manager標誌並導覽&#x200B;**[!UICONTROL Assets]**，然後導覽至您要移除其中之影像設定檔的資料夾。
 1. 在資料夾中，選取核取記號以選取資料夾，然後選取&#x200B;**[!UICONTROL 屬性]**。
 1. 選取&#x200B;**[!UICONTROL 影像設定檔]**&#x200B;標籤。
 1. 從&#x200B;**[!UICONTROL 設定檔名稱]**&#x200B;下拉式清單中，選取&#x200B;**[!UICONTROL 無]**，然後選取&#x200B;**[!UICONTROL 儲存並關閉]**。

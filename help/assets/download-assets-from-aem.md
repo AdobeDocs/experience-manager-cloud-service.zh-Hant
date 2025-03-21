@@ -5,17 +5,51 @@ contentOwner: Vishabh Gupta
 feature: Asset Management
 role: User
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '1354'
-ht-degree: 4%
+source-wordcount: '1382'
+ht-degree: 5%
 
 ---
 
 # 從[!DNL Adobe Experience Manager]下載資產 {#download-assets-from-aem}
 
-| [搜尋最佳實務](/help/assets/search-best-practices.md) | [中繼資料最佳實務](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [具有OpenAPI功能的Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets開發人員檔案](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets與Edge Delivery Services整合</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI擴充性</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>啟用Dynamic Media Prime和Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>搜尋最佳實務</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>中繼資料最佳實務</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 開發人員文件</b></a>
+        </td>
+    </tr>
+</table>
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
@@ -43,7 +77,7 @@ ht-degree: 4%
 
 ## 使用[!DNL Experience Manager]介面下載資產 {#download-assets}
 
-Experience Manager會根據資產數量和大小最佳化下載體驗。 從使用者介面即時下載較小的檔案。 [!DNL Experience Manager]會直接下載原始檔案的單一資產請求，而非將單一資產封存在ZIP封存檔中，以加快下載速度。 Experience Manager支援大量非同步要求的下載。 大於100 GB的下載請求會分割為多個ZIP封存檔，每個封存檔的大小上限為100 MB。
+Experience Manager會根據資產數量和大小來最佳化下載體驗。 從使用者介面即時下載較小的檔案。 [!DNL Experience Manager]會直接下載原始檔案的單一資產請求，而非將單一資產封存在ZIP封存檔中，以加快下載速度。 Experience Manager支援大量非同步請求的下載。 大於100 GB的下載請求會分割為多個ZIP封存檔，每個封存檔的大小上限為100 MB。
 
 根據預設，[!DNL Experience Manager]會在產生下載封存時在[[!DNL Experience Manager] 收件匣](/help/sites-cloud/authoring/inbox.md)中觸發通知。
 
@@ -58,7 +92,7 @@ Experience Manager會根據資產數量和大小最佳化下載體驗。 從使�
 * 如果下載大小超過100 MB
 * 如果下載需要30秒以上的準備時間
 
-當非同步下載在後端執行時，使用者可以繼續探索並進一步在Experience Manager中工作。 除了Experience Manager收件匣通知之外，Experience Manager還可以傳送電子郵件以在下載程式完成時通知使用者。 若要啟用此功能，系統管理員可以透過[設定SMTP伺服器連線](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html#sending-email)來設定電子郵件服務。
+雖然非同步下載會在後端執行，但使用者可以繼續探索，並在Experience Manager中進一步工作。 除了Experience Manager收件匣通知之外，Experience Manager還可以傳送電子郵件以在下載程式完成時通知使用者。 若要啟用此功能，系統管理員可以透過[設定SMTP伺服器連線](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html#sending-email)來設定電子郵件服務。
 
 設定電子郵件服務後，管理員和使用者可以從Experience Manager介面啟用電子郵件通知。
 
@@ -80,7 +114,7 @@ Experience Manager會根據資產數量和大小最佳化下載體驗。 從使�
 
 1. 在下載對話方塊中，選取您想要的下載選項。
 
-   | 下載選項 | 說明 |
+   | 下載選項 | 描述 |
    |---|---|
    | **[!UICONTROL 為每個資產建立個別的資料夾]** | 選取此選項，為每個資產建立一個資料夾，其中包含資產的所有已下載轉譯。 如果取消選取，則每個資產（以及如果選取要下載的其轉譯）都會包含在所產生封存檔的父資料夾中。 |
    | **[!UICONTROL 電子郵件]** | 選取此選項可將電子郵件通知（包含您下載的連結）傳送給其他使用者。 收件者使用者必須是`dam-users`群組的成員。 標準電子郵件範本可在下列位置取得：<ul><li>`/libs/settings/dam/workflow/notification/email/downloadasset`。</li><li>`/libs/settings/dam/workflow/notification/email/transientworkflowcompleted`。</li></ul> 您部署期間自訂的範本可在下列位置使用： <ul><li>`/apps/settings/dam/workflow/notification/email/downloadasset`。</li><li>`/apps/settings/dam/workflow/notification/email/transientworkflowcompleted`。</li></ul>您可以將租使用者特定的自訂範本儲存在下列位置：<ul><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/downloadasset`。</li><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/transientworkflowcompleted`。</li></ul> |
@@ -113,7 +147,7 @@ Experience Manager會根據資產數量和大小最佳化下載體驗。 從使�
 
 [!DNL Experience Manager]中的預設servlet可讓已驗證的使用者發出任意大型的並行下載請求，以建立資產的ZIP檔案。 下載準備可能會影響效能，甚至可能使伺服器和網路過載。 為了減少此功能造成的潛在DoS風險，`AssetDownloadServlet`個OSGi元件已為發佈執行個體停用。 如果您不需要作者執行個體的下載功能，請停用作者的servlet。
 
-若要允許從您的DAM下載資產，例如在使用Asset Share Commons或其他類似入口網站的實作時，請透過OSGi設定手動啟用servlet。 Adobe建議將允許的下載大小設定為儘可能的低，而不影響日常下載需求。 高值可能會影響效能。
+若要允許從您的DAM下載資產，例如在使用Asset Share Commons或其他類似入口網站的實作時，請透過OSGi設定手動啟用servlet。 Adobe建議將允許下載的大小設定為儘可能的低，以免影響日常下載需求。 高值可能會影響效能。
 
 1. 建立以發佈執行模式為目標的命名慣例資料夾，即`config.publish`：
 
@@ -167,4 +201,4 @@ Experience Manager會根據資產數量和大小最佳化下載體驗。 從使�
 >
 >* [下載DRM保護的資產](drm.md)
 >* 在Win或Mac案頭上使用Experience Manager案頭應用程式[下載資產](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html)
->* [從支援的Assets應用程式中使用AdobeAdobe Creative Cloud連結下載資產](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html)
+>* [從支援的Adobe Assets應用程式中使用Adobe Creative Cloud Link下載資產](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html)

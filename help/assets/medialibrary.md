@@ -1,14 +1,14 @@
 ---
 title: 使用Media Library進行基本的數位資產管理
-description: "[!DNL Experience Manager Assets]和Media Library的資產管理。"
+description: '[!DNL Experience Manager Assets]和媒體庫用於資產管理。'
 contentOwner: AG
 feature: Asset Management, Publishing
 role: User, Architect, Leader
 exl-id: 4737d5ee-9a93-49f3-9f20-d4368e60e9fb
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '603'
-ht-degree: 9%
+source-wordcount: '631'
+ht-degree: 11%
 
 ---
 
@@ -23,29 +23,63 @@ Define what is not included
 
 # 使用Media Library進行基本資產管理 {#manage-assets-using-media-library}
 
-| [搜尋最佳實務](/help/assets/search-best-practices.md) | [中繼資料最佳實務](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [具有OpenAPI功能的Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets開發人員檔案](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets與Edge Delivery Services整合</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI擴充性</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>啟用Dynamic Media Prime和Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>搜尋最佳實務</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>中繼資料最佳實務</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 開發人員文件</b></a>
+        </td>
+    </tr>
+</table>
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
 | AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/medialibrary.html?lang=zh-Hant) |
 | AEM as a Cloud Service  | 本文章 |
 
-[!DNL Adobe Experience Manager]平台提供管理資產的不同功能。 Media Library可讓使用者將少量資產上傳至存放庫、搜尋並使用網頁中的資產，以及完成資產的簡單資產管理任務。
+[!DNL Adobe Experience Manager]平台提供管理資產的不同功能。 媒體庫可讓使用者將少量資產上傳到存放庫、搜尋並使用網頁中的資產，以及完成資產的簡單資產管理任務。
 
-Media Library是輕量版的數位資產管理(DAM)解決方案，隨附[!DNL Adobe Experience Manager Sites]授權套件。 [!DNL Sites]是Web內容管理(WCM)產品。 Media Library可與Experience Manager的所有功能搭配使用。
+媒體庫是輕量版數位資產管理(DAM)解決方案，附帶[!DNL Adobe Experience Manager Sites]授權套件。 [!DNL Sites]是Web內容管理(WCM)產品。 媒體庫可與Experience Manager的所有功能搭配使用。
 
-[!DNL Adobe Experience Manager Assets]授權可單獨購買。 [!DNL Experience Manager Assets]可讓您透過企業使用案例、中繼資料、結構描述、搜尋和使用者介面的自訂，以及Media Library提供的功能以外的許多其他功能，以穩健的方式處理資產。
+[!DNL Adobe Experience Manager Assets]授權可單獨購買。 [!DNL Experience Manager Assets]可透過企業使用案例、中繼資料、結構描述、搜尋和使用者介面的自訂，以及Media Library提供的許多其他功能，提供強大的資產處理能力。
 
 ## 授權需求 {#avail-media-library-license}
 
-擁有[!DNL Sites]授權的客戶有權使用Media Library。 它適用於[!DNL Experience Manager]的所有元件。
+擁有[!DNL Sites]授權的客戶有權使用媒體庫。 它適用於[!DNL Experience Manager]的所有元件。
 
-Media Library會安裝為Sites的一部分。 除了Sites授權和安裝以外，不需要額外的授權或套件。
+媒體櫃會安裝為Sites的一部分。 除了Sites授權和安裝以外，不需要額外的授權或套件。
 
 ## [!DNL Assets]與Media Library {#assets-and-media-library}
 
-Experience Manager Assets提供企業級DAM功能。 Assets功能是在單一套件中與[!DNL Experience Manager]一併提供。 但是，尚未購買Assets授權的使用者無權使用進階DAM功能。 沒有Assets授權，只有[Media Library功能](#use-media-library)可用。
+Experience Manager Assets提供企業級DAM功能。 Assets功能是在單一套件中與[!DNL Experience Manager]一併提供。 但是，尚未購買Assets授權的使用者無權使用進階DAM功能。 如果沒有Assets授權，則只能使用[媒體庫功能](#use-media-library)。
 
 若要防止您未授權的[!DNL Assets]功能遭到非預期使用，請從[!DNL Experience Manager]移除所有[!DNL Assets]專屬的工作流程、元件、分類、選項及[!DNL Assets]管理員。 這麼做可防止您的使用者意外使用您未授權的[!DNL Assets]功能。
 
@@ -64,11 +98,11 @@ Media Library涵蓋下列使用案例：
 
 -->
 
-若要使用Media Library功能，您可以使用預設的[!DNL Experience Manager]使用者介面。 Media Library是[!DNL Experience Manager Sites]安裝的一部分，不需要單獨的介面或附加元件。 使用現有介面，Media Library使用者可完成下列工作：
+若要使用媒體櫃功能，您可以使用預設的[!DNL Experience Manager]使用者介面。 媒體櫃是[!DNL Experience Manager Sites]安裝的一部分，不需要個別介面或附加元件。 使用現有介面，「媒體庫」使用者有權完成下列工作：
 
 * 建立資料夾以組織資產。
 * 上傳資產。
-* Publish資產。
+* 發佈資產。
 * 編輯、移動和複製資產。
 * 瀏覽、篩選和搜尋（包括相似度搜尋）資產。
 * 新增值至中繼資料欄位，並編輯其中繼資料欄位中預設可在資產[!UICONTROL 屬性]頁面的[!UICONTROL 基本]索引標籤中取得的值（智慧標籤欄位除外）。
@@ -95,9 +129,9 @@ As per PM, we must avoid stating such a list, as we do not have a list that make
 
 >[!IMPORTANT]
 >
->許多進階DAM使用案例已由[!DNL Experience Manager Assets]履行。 Media Library授權可讓您使用Media Library僅履行列出的使用案例。 如果未列出使用案例，請勿將其與Media Library授權搭配使用。 如有任何疑問，請聯絡客戶支援。
+>許多進階DAM使用案例已由[!DNL Experience Manager Assets]履行。 媒體庫授權可讓您僅使用媒體庫履行列出的使用案例。 如果未列出使用案例，請勿將其與Media Library授權一起使用。 如有任何疑問，請聯絡客戶支援。
 
-在沒有[!DNL Assets]授權的情況下，您無法使用智慧標籤、[!DNL Asset]連結、[!DNL Asset]選取器、大量標籤、修改資產工作流程或標準[!DNL Adobe Experience Manager]使用者介面來存取Media Library。
+您無法使用智慧標籤、[!DNL Asset]連結、[!DNL Asset]選取器、大量標籤、修改資產工作流程或標準[!DNL Adobe Experience Manager]使用者介面來存取媒體庫，因為沒有[!DNL Assets]授權。
 
 <!-- TBD: Add a CTA - how to contact Adobe for queries. -->
 

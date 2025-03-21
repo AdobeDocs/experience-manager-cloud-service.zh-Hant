@@ -5,14 +5,51 @@ contentOwner: Rick Brough
 feature: Mixed Media Sets
 role: User
 exl-id: 7ccde741-38d2-44c9-9378-f2721384aab7
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
 workflow-type: tm+mt
-source-wordcount: '1507'
-ht-degree: 12%
+source-wordcount: '1553'
+ht-degree: 13%
 
 ---
 
 # 混合媒體集{#mixed-media-sets}
+
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets與Edge Delivery Services整合</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI擴充性</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>啟用Dynamic Media Prime和Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>搜尋最佳實務</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>中繼資料最佳實務</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 開發人員文件</b></a>
+        </td>
+    </tr>
+</table>
 
 混合媒體集可讓您在單一簡報中提供影像、影像集、迴轉集和視訊的混合。
 
@@ -52,7 +89,7 @@ ht-degree: 12%
 
    選取「混合媒體集」，您就可以預覽它。 若要在選取的檢視器中檢查您的混合媒體集，請選取縮圖圖示。 您可以從&#x200B;**[!UICONTROL 檢視器]**&#x200B;功能表（可從左側導軌下拉式功能表取得）中選擇不同的檢視器。
 
-1. [Publish混合媒體集](#publishing-mixed-media-sets)。
+1. [發佈混合媒體集](#publishing-mixed-media-sets)。
 
    發佈混合媒體集時會啟用URL和內嵌字串。 此外，您必須[發佈檢視器預設集](/help/assets/dynamic-media/managing-viewer-presets.md#publishing-viewer-presets)。
 
@@ -68,7 +105,7 @@ ht-degree: 12%
 
 >[!NOTE]
 >
->如果您無法建立集合，請參閱[疑難排解Dynamic Media](/help/assets/dynamic-media/troubleshoot-dm.md)。
+>如果您無法建立集合，請參閱[Dynamic Media疑難排解](/help/assets/dynamic-media/troubleshoot-dm.md)。
 
 ## 上傳資產 {#uploading-assets}
 
@@ -166,9 +203,9 @@ ht-degree: 12%
 
 如需如何預覽混合媒體集的詳細資訊，請參閱[預覽資產](/help/assets/dynamic-media/previewing-assets.md)。
 
-## Publish混合媒體集 {#publishing-mixed-media-sets}
+## 發佈混合媒體集 {#publishing-mixed-media-sets}
 
-如需如何發佈混合媒體集的詳細資訊，請參閱[Publish資產](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)。
+如需如何發佈混合媒體集的詳細資訊，請參閱[發佈資產](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)。
 
 >[!NOTE]
 >

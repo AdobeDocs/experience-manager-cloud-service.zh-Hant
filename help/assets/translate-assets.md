@@ -5,17 +5,51 @@ contentOwner: AG
 feature: Asset Management, Translation
 role: Admin, User
 exl-id: 98df1412-a957-48a3-81c2-7dfe1d5e6d31
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '2633'
-ht-degree: 17%
+source-wordcount: '2661'
+ht-degree: 18%
 
 ---
 
 # 在AEM中翻譯資產 {#multilingual-assets}
 
-| [搜尋最佳實務](/help/assets/search-best-practices.md) | [中繼資料最佳實務](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [具有OpenAPI功能的Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets開發人員檔案](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets與Edge Delivery Services整合</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI擴充性</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>啟用Dynamic Media Prime和Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>搜尋最佳實務</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>中繼資料最佳實務</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 開發人員文件</b></a>
+        </td>
+    </tr>
+</table>
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
@@ -26,7 +60,7 @@ ht-degree: 17%
 
 若要自動化AEM資產翻譯，您可以將翻譯服務提供商與Experience Manager整合，並建立專案以將資產翻譯成多種語言。 Experience Manager支援人工及機器翻譯工作流程。
 
-AEM中的人力資產翻譯：會傳回翻譯的資產並匯入至Experience Manager。 當您的翻譯提供者與Experience Manager整合時，資產會自動在Experience Manager和翻譯提供者之間傳送。
+AEM中的人力資產翻譯：已翻譯的資產會傳回並匯入至Experience Manager。 當您的翻譯提供者與Experience Manager整合時，資產會自動在Experience Manager和翻譯提供者之間傳送。
 
 AEM中的機器資產翻譯：機器翻譯服務會立即翻譯資產的中繼資料和標籤。
 
@@ -217,7 +251,7 @@ For tips on translating metadata for assets efficiently, see [5 Steps to efficie
 
 >[!NOTE]
 >
->如果您啟動複雜資產(例如PDF檔案和Adobe InDesign檔案)的翻譯工作流程，系統不會提交其子資產或轉譯（如果有的話）以供翻譯。
+>如果您啟動複雜資產(例如PDF檔案和Adobe InDesign檔案)的翻譯工作流程，系統不會提交其子資產或轉譯（如果有的話）進行翻譯。
 
 ### 建立及翻譯工作流程 {#create-and-translate-workflow}
 
@@ -255,7 +289,7 @@ Adobe Experience Manager可讓您從所選的翻譯提供者取得雲端型翻�
    ![chlimage_1-215](assets/chlimage_1-215.png)
 
 1. 導覽至「 **[!UICONTROL 雲端服務]** 」標籤。
-1. 從「Cloud Service設定」清單中，選擇所需的翻譯提供者。 例如，如果您想使用Microsoft的翻譯服務，請選擇&#x200B;**[!UICONTROL Microsoft翻譯工具]**。
+1. 從Cloud Service設定清單中，選擇所需的翻譯提供者。 例如，如果您想使用Microsoft的翻譯服務，請選擇&#x200B;**[!UICONTROL Microsoft翻譯工具]**。
 
    ![chlimage_1-216](assets/chlimage_1-216.png)
 
@@ -270,7 +304,7 @@ Adobe Experience Manager可讓您從所選的翻譯提供者取得雲端型翻�
 如果要為要用於翻譯工作流的翻譯服務應用自定義連接器。若要套用自訂聯結器，請先從[封裝管理員](/help/implementing/developing/tools/package-manager.md)安裝聯結器。 然後，從雲端服務主控台設定連接器。在您設定連接器後，「套用轉譯服務」中所述的「雲端服務」標籤中的連接器清 [單中會顯示此連接器](#applying-the-translation-services)。在您應用自定義連接器並運行翻譯工作流後，翻譯項目的「 **[!UICONTROL Translation Summary]** 」 (翻譯摘要) 表徵圖會在heads **[!UICONTROL Provider]** and **[!UICONTROL Method下顯示連接器詳細資訊]**。
 
 1. 從[封裝管理員](/help/implementing/developing/tools/package-manager.md)安裝聯結器。
-1. 選取Experience Manager標誌，並導覽至&#x200B;**[!UICONTROL 工具>部署>Cloud Service]**。
+1. 選取Experience Manager標誌，並導覽至&#x200B;**[!UICONTROL 工具>部署>雲端服務]**。
 1. 在「雲端服務」頁面的「 **[!UICONTROL 協力廠商服務]** 」下，找 **[!UICONTROL 出您安裝的連接器]** 。
 
    ![chlimage_1-218](assets/chlimage_1-218.png)

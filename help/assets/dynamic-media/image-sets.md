@@ -5,14 +5,51 @@ contentOwner: Rick Brough
 feature: Image Sets
 role: User
 exl-id: 2eb71f24-73d9-4b5c-8605-923a0e3d1505
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
 workflow-type: tm+mt
-source-wordcount: '2145'
-ht-degree: 3%
+source-wordcount: '2191'
+ht-degree: 5%
 
 ---
 
 # 影像集 {#image-sets}
+
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets與Edge Delivery Services整合</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI擴充性</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>啟用Dynamic Media Prime和Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>搜尋最佳實務</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>中繼資料最佳實務</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 開發人員文件</b></a>
+        </td>
+    </tr>
+</table>
 
 影像集為使用者提供整合式檢視體驗，使用者可按一下縮圖影像來檢視專案的不同檢視。 影像集可讓您呈現專案的替代檢視，而檢視器可提供縮放工具，以便更密切地檢查影像。
 
@@ -43,7 +80,7 @@ ht-degree: 3%
 
 快速上手並執行：
 
-1. 選填。 [建立批次集預設集](/help/assets/dynamic-media/batch-set-presets-dm.md)，並將其套用至上傳迴轉集影像的新資料夾。
+1. 選擇性。[建立批次集預設集](/help/assets/dynamic-media/batch-set-presets-dm.md)，並將其套用至上傳迴轉集影像的新資料夾。
 
    批次集預設集可以幫助您自動建立影像集。
 
@@ -78,7 +115,7 @@ ht-degree: 3%
 
    選取「影像集」，即可預覽。 若要在選取的檢視器中檢查影像集，請選取縮圖圖示。 您可以從&#x200B;**[!UICONTROL 檢視器]**&#x200B;功能表（可從左側邊欄下拉式清單取得）中選擇不同的檢視器。
 
-1. [Publish影像集](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)。
+1. [發佈影像集](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)。
 
    發佈影像集時會啟用URL和內嵌字串。 此外，您必須[發佈您已建立的任何自訂檢視器預設集](/help/assets/dynamic-media/managing-viewer-presets.md)。 現成可用的檢視器預設集已發佈。
 
@@ -92,7 +129,7 @@ ht-degree: 3%
 
 若要編輯影像集，請參閱[編輯影像集](#editing-image-sets)。 此外，您也可以檢視及編輯[影像集屬性](/help/assets/manage-digital-assets.md#editing-properties)。
 
-如果您無法建立影像集，請參閱[疑難排解Dynamic Media](/help/assets/dynamic-media/troubleshoot-dm.md#images-and-sets)中的影像和影像集。
+如果您無法建立集合，請參閱[Dynamic Media疑難排解](/help/assets/dynamic-media/troubleshoot-dm.md#images-and-sets)中的影像和集合。
 
 ## 上傳影像集的資產 {#uploading-assets-in-image-sets}
 
@@ -110,7 +147,7 @@ ht-degree: 3%
 
 若要建立多檢視「影像集」，您需要顯示不同檢視點的專案或顯示相同專案的不同外觀的影像。 目標是要強調專案的重要功能，讓檢視者能夠完整瞭解專案的顯示方式或用途。
 
-由於使用者可以在「影像集」中縮放影像，因此請確保影像在最大大小中至少為2000畫素。 Experience Manager Assets支援許多影像檔案格式，但建議使用不失真TIFF、PNG和EPS影像。
+由於使用者可以在「影像集」中縮放影像，因此請確保影像在最大大小中至少為2000畫素。 Experience Manager Assets支援許多影像檔案格式，但建議使用無損的TIFF、PNG和EPS影像。
 
 >[!NOTE]
 >
@@ -158,7 +195,7 @@ ht-degree: 3%
 
    ![6_5_imageset-creatingnewset](assets/6_5_imageset-creatingnewset.png)
 
-1. 執行下列任一項作業：
+1. 執行下列任一項：
 
    * 在「影像集編輯器」頁面的左上角附近，選取&#x200B;**[!UICONTROL 新增資產]**。
 
@@ -180,7 +217,7 @@ ht-degree: 3%
 
    如果您想要變更縮圖或色票，請按一 **下影像旁** 的+ **縮圖** 圖示，並導覽至您想要的縮圖或色票。選取完所有影像後，按一下「 **[!UICONTROL 儲存]**」。
 
-1. （可選）執行下列任一項作業：
+1. (選用) 執行以下任一操作：
 
    * 若要刪除影像，請選取該影像，然後選取&#x200B;**[!UICONTROL 刪除資產]**。
 
@@ -188,7 +225,7 @@ ht-degree: 3%
 
    >[!NOTE]
    >
-   >建立影像集時，您可以變更影像集縮圖。 或者，您可以讓Experience Manager根據影像集中的資產自動選取縮圖。 若要選取縮圖，請選取[影像集編輯器]頁面上[標題]欄位上方的&#x200B;**[!UICONTROL 變更縮圖]**。 然後，選取任何影像（您也可以導覽至其他資料夾以尋找影像）。 如果您選取縮圖，然後決定要讓Experience Manager從影像集產生縮圖，請選取&#x200B;**[!UICONTROL 切換至]** **[!UICONTROL 自動縮圖]**。
+   >建立影像集時，您可以變更影像集縮圖。 或者，您也可以讓Experience Manager根據影像集中的資產自動選取縮圖。 若要選取縮圖，請選取[影像集編輯器]頁面上[標題]欄位上方的&#x200B;**[!UICONTROL 變更縮圖]**。 然後，選取任何影像（您也可以導覽至其他資料夾以尋找影像）。 如果您已選取縮圖，然後決定要讓Experience Manager從影像集產生縮圖，請選取「**[!UICONTROL 切換至]**」**[!UICONTROL 「自動縮圖]**」。
 
 1. 按一下「**[!UICONTROL 儲存]**」。您建立的影像集會顯示在您建立的資料夾中。
 
@@ -212,7 +249,7 @@ ht-degree: 3%
 
 * 從搜尋中，您可以選取&#x200B;**[!UICONTROL 篩選器]**，然後展開&#x200B;**[!UICONTROL Dynamic Media]**&#x200B;並選取&#x200B;**[!UICONTROL 集合]**。
 
-  搜尋會傳回在UI中手動建立，或透過批次集預設集自動建立的相符集。 對於自動化集，搜尋查詢是使用「開頭為」進行。 此搜尋准則與使用「包含」為基礎的Experience Manager不同。 將篩選器設定為&#x200B;**[!UICONTROL 集]**&#x200B;是搜尋自動化集的唯一方法。
+  搜尋會傳回在UI中手動建立，或透過批次集預設集自動建立的相符集。 對於自動化集，搜尋查詢是使用「開頭為」進行。 此搜尋條件與以使用「包含」為基礎的Experience Manager不同。 將篩選器設定為&#x200B;**[!UICONTROL 集]**&#x200B;是搜尋自動化集的唯一方法。
 
   ![chlimage_1-134](assets/chlimage_1-134.png)
 
@@ -245,7 +282,7 @@ ht-degree: 3%
    * 若要新增資產或更新現有資產，請按一下&#x200B;**[!UICONTROL 新增資產]**。 導覽至某個資產，選取該資產，然後選取頁面右上角附近的&#x200B;**[!UICONTROL 選取]**。
      >[!NOTE]
      >
-     >如果您刪除Experience Manager用於縮圖的影像，改為另一個影像，則仍會顯示原始資產。
+     >如果您刪除Experience Manager用於縮圖的影像，改為其他影像，仍會顯示原始資產。
    * 若要刪除資產，請選取該資產，然後選取&#x200B;**[!UICONTROL 刪除資產]**。
    * 若要套用預設集，在頁面右上角附近，選取&#x200B;**[!UICONTROL 預設集]**，然後選取檢視器預設集。
    * 若要新增或變更縮圖，請選取資產右側旁的縮圖圖示。 導覽至新的縮圖或色票資產，選取它，然後選取&#x200B;**[!UICONTROL 選取]**。
@@ -263,4 +300,4 @@ ht-degree: 3%
 
 ## 發佈影像集 {#publishing-image-sets}
 
-請參閱[Publish Assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)。
+請參閱[發佈Assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)。

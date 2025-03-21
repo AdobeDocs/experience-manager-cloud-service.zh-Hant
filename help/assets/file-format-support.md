@@ -5,17 +5,51 @@ contentOwner: AG
 feature: Asset Management, Renditions
 role: User, Admin
 exl-id: e848aa77-7829-4adc-8b88-0279791a4525
-source-git-commit: 02caeb490ad99d8417eb2b5c91850c4ab822f57d
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '1441'
+source-wordcount: '1469'
 ht-degree: 34%
 
 ---
 
 # [!DNL Assets]支援的檔案格式 {#supported-file-formats}
 
-| [搜尋最佳實務](/help/assets/search-best-practices.md) | [中繼資料最佳實務](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [具有OpenAPI功能的Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets開發人員檔案](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets與Edge Delivery Services整合</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI擴充性</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>啟用Dynamic Media Prime和Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>搜尋最佳實務</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>中繼資料最佳實務</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 開發人員文件</b></a>
+        </td>
+    </tr>
+</table>
 
 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]支援任何二進位檔案的基本內容管理功能 — 儲存、線上管理中繼資料、版本設定、上傳和下載等，不受其格式限制。 [!DNL Adobe Experience Manager Assets]支援多種檔案格式，而且每種產品功能對於不同格式都有不同的支援。
 
@@ -23,7 +57,7 @@ ht-degree: 34%
 
 使用資產微服務的資產轉換重點包括：
 
-* 由Adobe應用程式和服務產生的金鑰[Adobe檔案格式](#adobe-formats)，包括[!DNL Adobe Photoshop]、[!DNL Adobe InDesign]、[!DNL Adobe Illustrator]、[!DNL Adobe XD]、[!DNL Adobe Dimension]和[!DNL Adobe Acrobat]或PDF。
+* Adobe應用程式和服務產生的金鑰[Adobe檔案格式](#adobe-formats)，包括[!DNL Adobe Photoshop]、[!DNL Adobe InDesign]、[!DNL Adobe Illustrator]、[!DNL Adobe XD]、[!DNL Adobe Dimension]和[!DNL Adobe Acrobat]或PDF。
 * 金鑰[影像檔案格式](#image-formats)。
 * [Camera Raw檔案格式](#camera-raw-formats)，適用於各種相機，包括Canon、Nikon、Fujifilm、Olympus和其他製造商(由Adobe Camera Raw提供)。
 * 常見的[檔案格式](#document-formats)，包括Microsoft® Office和Open Document格式。
@@ -76,7 +110,7 @@ ht-degree: 34%
 
 支援下列3D格式。
 
-另請參閱[在Dynamic Media](/help/assets/dynamic-media/assets-3d.md)中使用3D資產。
+另請參閱[在Dynamic Media中使用3D資產](/help/assets/dynamic-media/assets-3d.md)。
 
 | 格式 | 儲存空間 | 版本設定 | 工作流程 | 發佈 | 存取控制 | 縮圖預覽 | 3D預覽 | Dynamic Media傳遞 |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
@@ -197,12 +231,12 @@ ht-degree: 34%
 
 * 目前，中繼資料擷取的檔案大小限制約為15 GB。 上傳大型資產時，有時中繼資料擷取作業會失敗。
 
-## Dynamic Media — 支援的輸入視訊格式可轉碼 {#video-dynamic-media-transcoding}
+## Dynamic Media — 支援的輸入視訊格式以進行轉碼 {#video-dynamic-media-transcoding}
 
 | 視訊副檔名 | 容器 | 建議的視訊轉碼器 | 不支援的視訊轉碼器 |
 | --- | --- | --- | --- |
 | AVI | A/V交錯 | XVID、DIVX、HDV、MiniDV (DV25)、Techsmith Camtasia、Huffyuv、Fraps、Panasonic DVCPro | Indeo3 (IV30)、MJPEG、Microsoft®Video 1 (MS-CRAM) |
-| FLV、F4V | AdobeFlash | H264/AVC、Flix VP6、H263、Sorenson | SWF（向量動畫檔案） |
+| FLV、F4V | Adobe Flash | H264/AVC、Flix VP6、H263、Sorenson | SWF （向量動畫檔案） |
 | M4V | Apple iTunes | H264/AVC | − |
 | MKV | Matroska | H264/AVC | − |
 | MOV、QT | Apple QuickTime | H264/AVC、Apple ProRes422和HQ、Sony XDCAM、Sony DVCAM、HDV、Panasonic DVCPro、Apple DV (DV25)、Apple PhotoJPEG、Sorenson、Avid DNxHD、Avid AVR | Apple Intermediate， Apple Animation |
@@ -221,13 +255,13 @@ ht-degree: 34%
 | ------ | --------------------- | ----------------------------------- | ------------------------- | ------------------------- | -------------------------- |
 | AI | ✓ | - | - | - | - |
 | INDD | ✓ | - | - | - | - |
-| PDF（請參閱下方的注意事項） | ✓ | ✓ | ✓ | ✓ | ✓ |
+| PDF （請參閱下方的「附註」） | ✓ | ✓ | ✓ | ✓ | ✓ |
 
 >[!NOTE]
 >
->為了安全PDF，僅支援上傳。
+>若是安全的PDF，僅支援上傳。
 
-## Dynamic Media — 支援的點陣影像格式 {#image-support-dynamic-media}
+## Dynamic Media — 支援的光柵影像格式 {#image-support-dynamic-media}
 
 | 格式 | 上傳（輸入格式） | 建立影像預設集（輸出格式） | 預覽動態轉譯 | 傳遞動態轉譯 | 下載動態轉譯 | 設定支援此格式的型別 |
 |---|:---:|:---:|:---:|:---:|:---:| --- |
@@ -239,7 +273,7 @@ ht-degree: 34%
 | JPEG | ✓ | ✓ | ✓ | ✓ | ✓ | [影像](/help/assets/dynamic-media/image-sets.md)、[混合媒體](/help/assets/dynamic-media/mixed-media-sets.md)和[迴轉](/help/assets/dynamic-media/spin-sets.md) |
 | PICT | ✓ | − | − | − | − | − |
 | PNG | ✓ | ✓ | ✓ | ✓ | ✓ | [影像](/help/assets/dynamic-media/image-sets.md)、[混合媒體](/help/assets/dynamic-media/mixed-media-sets.md)和[迴轉](/help/assets/dynamic-media/spin-sets.md) |
-| PSD‡ | ✓ | − | − | − | − | − |
+| PSD ‡ | ✓ | − | − | − | − | − |
 | TIFF | ✓ | ✓ | ✓ | ✓ | ✓ | [影像](/help/assets/dynamic-media/image-sets.md)、[混合媒體](/help/assets/dynamic-media/mixed-media-sets.md)和[迴轉](/help/assets/dynamic-media/spin-sets.md) |
 | WEBP | − | − | − | ✓ | − | − |
 
@@ -247,22 +281,22 @@ ht-degree: 34%
 
 ‡合併的影像會從PSD檔案中擷取。 它是由[!DNL Adobe Photoshop]產生並包含在PSD檔案中的影像。 視設定而定，合併的影像不一定是實際影像。
 
-## Dynamic Media — 不支援的點陣影像格式 {#unsupported-raster-image-formats-dm}
+## Dynamic Media — 不支援的光柵影像格式 {#unsupported-raster-image-formats-dm}
 
 [!DNL Dynamic Media]不支援下列點陣影像檔案格式的子型別&#x200B;**：
 
 * IDAT區塊大小大於100 MB的PNG檔案。
 * PSB檔案。
 * 不支援色彩空間不是CMYK、RGB、灰階或點陣圖的PSD檔案。 不支援DuoTone、Lab和索引色域。
-* PSD位元深度大於16的檔案。
-* TIFF含有浮點資料的檔案。
-* TIFF具有Lab色域的檔案。
+* 位元深度大於16的PSD檔案。
+* 含有浮點數資料的TIFF檔案。
+* 具有Lab色域的TIFF檔案。
 
 ## Dynamic Media — 支援的3D檔案格式 {#support-3d-formats-dynamic-media}
 
 另請參閱[支援的3D格式](/help/assets/file-format-support.md#support-3d-formats)
 
-| 3D副檔名 | 檔案格式 | MIME型別 | 附註 |
+| 3D副檔名 | 檔案格式 | MIME型別 | 備註 |
 |---|---|---|---|
 | GLB | 二進位GL傳輸 | model/gltf-binary | 將材質和紋理納入為單一資產。 |
 | 物件 | WaveFront 3D物件檔案 | application/x-tgif | |

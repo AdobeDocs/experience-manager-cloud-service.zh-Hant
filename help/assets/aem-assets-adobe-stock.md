@@ -5,17 +5,51 @@ contentOwner: Vishabh Gupta
 feature: Adobe Stock
 role: Admin, User
 exl-id: 13f21d79-2a8d-4cb1-959e-c10cc44950ea
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '2478'
+source-wordcount: '2506'
 ht-degree: 5%
 
 ---
 
 # 在[!DNL Adobe Experience Manager Assets]中使用[!DNL Adobe Stock]個資產 {#use-adobe-stock-assets-in-aem-assets}
 
-| [搜尋最佳實務](/help/assets/search-best-practices.md) | [中繼資料最佳實務](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [具有OpenAPI功能的Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets開發人員檔案](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets與Edge Delivery Services整合</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI擴充性</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>啟用Dynamic Media Prime和Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>搜尋最佳實務</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>中繼資料最佳實務</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 開發人員文件</b></a>
+        </td>
+    </tr>
+</table>
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
@@ -38,12 +72,12 @@ ht-degree: 5%
 
 * 以[!DNL Cloud Service]執行個體形式啟動並執行[!DNL Experience Manager Assets]
 * [企業 [!DNL Adobe Stock] 計畫](https://stockenterprise.adobe.com/)
-* 具有預設Stock產品設定檔Admin Console許可權的使用者
+* 在Admin Console中擁有預設Stock產品設定檔許可權的使用者
 * 具有開發人員存取設定檔許可權的使用者，可在Adobe Developer Console中建立整合
 
 企業[!DNL Adobe Stock]計畫，
 
-* 提供[!DNL Adobe Stock]的產品權益(與Experience Manager相關的庫存)
+* 提供[!DNL Adobe Stock]的產品權益(與Experience Manager連結的庫存)
 * 針對您的股票權益購買到[!DNL Adobe Admin Console]的積分
 * 在[!DNL Adobe Developer Console]內為您的股票權益啟用服務帳戶(JWT)驗證
 * 啟用從[!DNL Adobe Admin Console]內全域管理信用額度與授權
@@ -215,7 +249,7 @@ IMS 設定包括兩個步驟：
 
 若要設定[!DNL Adobe Stock]雲端服務：
 
-1. 在[!DNL Experience Manager]使用者介面中，瀏覽至&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Adobe Stock]**。
+1. 在[!DNL Experience Manager]使用者介面中，瀏覽至&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 雲端服務]** > **[!UICONTROL Adobe Stock]**。
 
 1. 在[!DNL Adobe Stock Configurations]頁面中，按一下&#x200B;**[!UICONTROL 建立]**。
 
@@ -227,7 +261,7 @@ IMS 設定包括兩個步驟：
 
    ![aem-stock-cloud-config](assets/aem-stock-cloud-config.png)
 
-1. 按一下&#x200B;**[!UICONTROL 「儲存並關閉」]**。
+1. 按一下「**[!UICONTROL 儲存並關閉]**」。
 
    您的[!DNL Experience Manager Assets]作者執行個體現在已與[!DNL Adobe Stock]整合。 您可以建立多個[!DNL Adobe Stock]組態（例如地區設定組態）。 您現在可以從[!DNL Experience Manager]使用者介面存取、搜尋及授權[!DNL Adobe Stock]資產。
 
@@ -272,9 +306,9 @@ IMS 設定包括兩個步驟：
 
    ![使用者許可權](assets/aem-stock-user-permissions.png)
 
-1. 導覽至&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Adobe Stock]**。 選取[!DNL Adobe Stock]雲端設定，然後按一下&#x200B;**[!UICONTROL 屬性]**。
+1. 導覽至&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 雲端服務]** > **[!UICONTROL Adobe Stock]**。 選取[!DNL Adobe Stock]雲端設定，然後按一下&#x200B;**[!UICONTROL 屬性]**。
 
-1. 將已建立的使用者群組新增至[!DNL Adobe Stock]設定。 按一下&#x200B;**[!UICONTROL 「儲存並關閉」]**。
+1. 將已建立的使用者群組新增至[!DNL Adobe Stock]設定。 按一下「**[!UICONTROL 儲存並關閉]**」。
 
    ![指派使用者](assets/aem-stock-adduser.png)
 
@@ -334,7 +368,7 @@ IMS 設定包括兩個步驟：
 
 ![搜尋[!DNL Adobe Stock]資產，並從[!DNL Adobe Experience Manager]工作區篩選結果](assets/adobe-stock-search-results-workspace.png)
 
-**A.**&#x200B;搜尋與已提供[!DNL Adobe Stock] ID之資產的類似資產。 **B.** 搜尋與您選取的型態或方向相符的資產。**C.**&#x200B;搜尋一或多個支援的資產型別&#x200B;**D.**&#x200B;開啟或收合篩選器窗格&#x200B;**E.**&#x200B;授權並將選取的資產儲存在[!DNL Experience Manager] **F.**&#x200B;將資產儲存在[!DNL Experience Manager]中（含浮水印&#x200B;**G.**）探索[!DNL Adobe Stock]網站上與選取的資產類似的資產&#x200B;**H.**&#x200B;在[!DNL Adobe Stock]網站&#x200B;**I.**&#x200B;上檢視&#x200B;**網站上選取的資產從搜尋結果選取的資產數目** J。 19}在卡片檢視和清單檢視之間切換
+**A.**&#x200B;搜尋與已提供[!DNL Adobe Stock] ID之資產的類似資產。 **B.** 搜尋與您選取的型態或方向相符的資產。**C.**&#x200B;搜尋一或多個支援的資產型別&#x200B;**D.**&#x200B;開啟或收合篩選器窗格&#x200B;**E.**&#x200B;授權並將選取的資產儲存在[!DNL Experience Manager] **F.**&#x200B;將資產儲存在[!DNL Experience Manager]中(含浮水印&#x200B;**G.**&#x200B;在[!DNL Adobe Stock]網站上探索與選取的資產類似的資產&#x200B;**H.**&#x200B;在[!DNL Adobe Stock]網站上檢視選取的資產&#x200B;**I.**&#x200B;搜尋結果中選取的資產數目&#x200B;**H j.**&#x200B;在卡片檢視和清單檢視之間切換
 
 ### 尋找資產 {#find-assets}
 
@@ -384,7 +418,7 @@ IMS 設定包括兩個步驟：
 
 * **非管理員使用者必須手動啟用[!DNL Adobe Stock]雲端設定**：在&#x200B;**[!UICONTROL 使用者偏好設定]**&#x200B;視窗中，**[!UICONTROL Stock設定]**&#x200B;會將[!DNL Adobe Stock]雲端設定顯示為已啟用，但無法用於非管理員使用者。 使用者必須按一下&#x200B;**[!UICONTROL 接受]**&#x200B;按鈕才能啟用Stock設定。 如果沒有此步驟，系統會在存取&#x200B;**[!UICONTROL Assets]**&#x200B;時反映錯誤訊息。
 
-* **未顯示編輯影像警告**：授權影像時，使用者無法檢查影像是否僅限編輯使用。 為防止可能的誤用，管理員可以從Admin Console關閉編輯資產的存取權。
+* **未顯示編輯影像警告**：授權影像時，使用者無法檢查影像是否僅限編輯使用。 為避免可能誤用，管理員可以從Admin Console關閉編輯資產的存取權。
 
 * **顯示的授權型別錯誤**：資產的[!DNL Experience Manager]可能顯示不正確的授權型別。 使用者可以登入[!DNL Adobe Stock]網站以檢視授權型別。
 

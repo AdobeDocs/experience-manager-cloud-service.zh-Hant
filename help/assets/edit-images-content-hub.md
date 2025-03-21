@@ -2,31 +2,65 @@
 title: 使用Adobe Express在Content Hub中編輯影像
 description: 使用Adobe Express在Content Hub中編輯影像
 exl-id: c9777862-226c-4d39-87da-9c4a30437dc5
-source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '436'
-ht-degree: 6%
+source-wordcount: '464'
+ht-degree: 18%
 
 ---
 
 # 在Content Hub中編輯影像 {#edit-images-content-hub}
 
-| [搜尋最佳實務](/help/assets/search-best-practices.md) | [中繼資料最佳實務](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [具有 OpenAPI 功能的 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 開發人員文件](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets與Edge Delivery Services整合</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI擴充性</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>啟用Dynamic Media Prime和Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>搜尋最佳實務</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>中繼資料最佳實務</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 開發人員文件</b></a>
+        </td>
+    </tr>
+</table>
 
-![在Content Hub中使用Adobe Express編輯影像](assets/edit-images-content-hub.png)
+![使用Adobe Express在Content Hub中編輯影像](assets/edit-images-content-hub.png)
 
 >[!AVAILABILITY]
 >
->Content Hub指南現在提供PDF格式。 下載整份指南，並使用Adobe Acrobat AI Assistant回答您的疑問。
+>現已提供 PDF 格式的 Content Hub 指南。下載完整指南，並使用 Adobe Acrobat AI 助理來回答您的查詢問題。
 >
->[!BADGE Content Hub指南PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
+>[!BADGE Content Hub 指南 PDF]{type=Informative url="https://helpx.adobe.com/tw/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
 
-Content Hub可讓您使用Adobe Express建立新內容。 您可以使用簡單易用的工具編輯現有內容、使用範本和品牌元素產生品牌上的變化，以及從Adobe Firefly使用最新GenAI功能建立新內容。
+Content Hub可讓您使用Adobe Express建立新內容。 您可以使用易於使用的工具來編輯現有內容、使用範本和品牌元素製作品牌變化版本，並使用 Adobe Firefly 的最新 GenAI 功能來建立新內容。
 
 ## 先決條件 {#prereqs-edit-image-content-hub}
 
-有權存取Adobe Express以及有權將資產重新混合到新變化的[Content Hub使用者](/help/assets/deploy-content-hub.md#onboard-content-hub-users-remix-assets)可以使用Content Hub編輯影像。
+有權存取Adobe Express和有權將資產重新混合到新變化的[Content Hub使用者](/help/assets/deploy-content-hub.md#onboard-content-hub-users-remix-assets)可以使用Content Hub編輯影像。
 
 >[!NOTE]
 >
@@ -36,7 +70,7 @@ Content Hub可讓您使用Adobe Express建立新內容。 您可以使用簡單�
 
 若要使用Content Hub編輯影像：
 
-1. 按一下您需要編輯之影像的資產卡上可用的&#x200B;**[!DNL Open in Adobe Express]**。 或者，按一下影像以開啟其詳細資料，然後按一下[!DNL Adobe Express]標誌。 接著會載入用於Adobe Express的內嵌編輯器，而不會離開Content Hub。
+1. 按一下您需要編輯之影像的資產卡上可用的&#x200B;**[!DNL Open in Adobe Express]**。 或者，按一下影像以開啟其詳細資料，然後按一下[!DNL Adobe Express]標誌。 接著會載入適用於Adobe Express的內嵌編輯器，而不會離開Content Hub。
 
    您可以利用[!DNL Adobe Express]功能來執行所有與影像編輯相關的動作，例如[調整影像大小](https://helpx.adobe.com/express/using/resize-image.html)、[移除或變更背景顏色](https://helpx.adobe.com/express/using/remove-background.html)、[裁切影像](https://helpx.adobe.com/express/using/crop-image.html)、將影像與AI產生的影像或文字結合，等等。
 
@@ -52,7 +86,7 @@ Content Hub可讓您使用Adobe Express建立新內容。 您可以使用簡單�
 
 1. 使用&#x200B;**[!UICONTROL 促銷活動名稱]**&#x200B;欄位指定資產的促銷活動名稱。 您可以使用現有的名稱或建立新名稱。 輸入名稱時，Content Hub會提供您更多選項。<!--You can define multiple Campaign names for your upload. While you are typing a name, either click anywhere else within the dialog box or press the `,` (Comma) key to register the name.-->
 
-   作為最佳實務，Adobe建議您在其餘欄位中指定值，並為您上傳的資產建立增強的搜尋體驗。
+   作為最佳作法，Adobe建議您在其餘欄位中指定值，並為您上傳的資產建立增強的搜尋體驗。
 
 1. [選擇性]定義&#x200B;**[!UICONTROL 關鍵字]**、**[!UICONTROL 管道]**、**[!UICONTROL 時間範圍]**&#x200B;和&#x200B;**[!UICONTROL 地區]**&#x200B;欄位的值。 依關鍵字、管道和位置來標籤和分組資產，可讓使用您核准公司內容的每個人都能找到這些資產並保持其井然有序。
 

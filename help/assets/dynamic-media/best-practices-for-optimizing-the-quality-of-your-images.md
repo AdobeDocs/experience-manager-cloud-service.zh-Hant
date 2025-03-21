@@ -5,14 +5,51 @@ contentOwner: Rick Brough
 feature: Asset Management, Best Practices
 role: User
 exl-id: 2efc4a27-01d7-427f-9701-393497314402
-source-git-commit: 6ad46350906c3b8a36a8e361714fa5fffdbf8e82
+source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
 workflow-type: tm+mt
-source-wordcount: '1648'
-ht-degree: 1%
+source-wordcount: '1694'
+ht-degree: 2%
 
 ---
 
 # 影像品質最佳化的最佳做法 {#best-practices-for-optimizing-the-quality-of-your-images}
+
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets與Edge Delivery Services整合</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI擴充性</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>啟用Dynamic Media Prime和Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>搜尋最佳實務</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>中繼資料最佳實務</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 開發人員文件</b></a>
+        </td>
+    </tr>
+</table>
 
 {{work-with-dynamic-media}}
 
@@ -26,7 +63,7 @@ Adobe Experience Manager包含100多項Dynamic Media影像傳送命令，用於�
 
 **智慧型影像處理：**
 
-* 在Dynamic Media中啟用「智慧型影像」，可依據使用者端瀏覽器功能自動最佳化影像格式、大小和品質。
+* 在Dynamic Media中啟用智慧型影像可讓您根據使用者端瀏覽器功能，自動最佳化影像格式、大小和品質。
 想要進一步瞭解嗎？ 移至[智慧型影像](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/imaging-faq)。
 * 它可動態調整這些引數，藉以強化影像傳送效能。
 * 您可以使用自我評估工具[快照](https://snapshot.scene7.com/)來評估智慧型影像。
@@ -50,7 +87,7 @@ Adobe Experience Manager包含100多項Dynamic Media影像傳送命令，用於�
 使用來源影像的基本考量事項：
 
 * **Source影像格式：**
-   * 使用PNG、TIFF或PSD等無損格式可確保影像品質保持高品質，而不會出現任何壓縮成品。
+   * 使用PNG、TIFF或PSD等無損格式可確保影像品質維持高品質，不會出現任何壓縮成品。
    * 這些格式會保留所有原始資料，因此非常適合編輯和進一步處理。
 * **Source影像大小：**
    * 從高解析度影像開始，提供更多細節和彈性。
@@ -87,9 +124,9 @@ As a best practice for image format, start with the most common setting `&fmt=JP
 
 * 最佳實務白皮書[Adobe Dynamic Media Classic影像品質和銳利化最佳實務](/help/assets/dynamic-media/assets/sharpening_images.pdf)也適用於Experience Manager。
 
-* 觀看[在Experience Manager中使用影像銳利化 — Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-image-sharpening-feature-video-use#dynamic-media)。
+* 觀看[搭配Experience Manager - Dynamic Media使用影像銳利化](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-image-sharpening-feature-video-use#dynamic-media)。
 
-透過Experience Manager，您可以在內嵌和/或傳送時銳利化影像。 不過，通常最好只使用一種方法或另一種方法來銳利化影像，但不要同時使用兩者。 在URL上傳送影像時銳利化，通常能提供最佳結果。
+有了Experience Manager，您可以在內嵌和/或傳送時銳利化影像。 不過，通常最好只使用一種方法或另一種方法來銳利化影像，但不要同時使用兩者。 在URL上傳送影像時銳利化，通常能提供最佳結果。
 
 您可以使用兩種影像銳利化方法：
 
@@ -111,7 +148,7 @@ As a best practice for image format, start with the most common setting `&fmt=JP
 
       * 最佳實務白皮書[Adobe Dynamic Media Classic影像品質和銳利化最佳實務](/help/assets/dynamic-media/assets/sharpening_images.pdf)也適用於Experience Manager。
 
-      * 觀看[在Experience Manager中使用影像銳利化 — Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-image-sharpening-feature-video-use#dynamic-media)。
+      * 觀看[搭配Experience Manager - Dynamic Media使用影像銳利化](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-image-sharpening-feature-video-use#dynamic-media)。
 
       * Experience Manager也可讓您控制第四個引數：單色(0,1)。 此引數決定使用0值將遮色片銳利化調整分別套用至每個色彩元件，或是使用1值將影像亮度/強度套用至影像。
 
@@ -135,7 +172,7 @@ As a best practice for image format, start with the most common setting `&fmt=JP
 * 在`qlt=`中使用色度旗標
 
    * `qlt=`引數有第二個設定，可讓您使用值`,1`開啟RGB色度縮減取樣，或使用值`,0`關閉。
-   * 若要保持簡單，請從關閉RGB色度縮減取樣(`,0`)開始。 此設定通常會產生更好的影像品質，尤其是對於具有大量銳利邊緣和對比的人工合成影像。
+   * 若要保持簡單，請從RGB色度縮減取樣關閉(`,0`)開始。 此設定通常會產生更好的影像品質，尤其是對於具有大量銳利邊緣和對比的人工合成影像。
 
 JPG壓縮的最佳作法是使用`&qlt=85,0`。
 
@@ -163,5 +200,5 @@ JPG壓縮的最佳作法是使用`&qlt=85,0`。
 實驗時，以下一般建議有助於最佳化您的工作流程：
 
 * 請直接在URL上即時嘗試並測試不同的引數。
-* 如需參考最佳做法，請記得您可以將「Dynamic Media影像伺服」命令群組至影像預設集。 影像預設集基本上是含有自訂預設集名稱（例如`$thumb_low$`和`&product_high$`）的URL命令巨集。 URL路徑中的自訂預設集名稱會呼叫這些預設集。 這類功能可協助您針對網站上不同的影像使用模式管理命令和品質設定，並縮短URL的整體長度。
+* 如需參考最佳做法，請記得您可以將「動態媒體影像伺服」命令群組至影像預設集。 影像預設集基本上是含有自訂預設集名稱（例如`$thumb_low$`和`&product_high$`）的URL命令巨集。 URL路徑中的自訂預設集名稱會呼叫這些預設集。 這類功能可協助您針對網站上不同的影像使用模式管理命令和品質設定，並縮短URL的整體長度。
 * Experience Manager也提供更進階的方式來調整影像品質，例如在擷取時套用銳利化影像。 若要調整並最佳化演算結果，[Adobe的諮詢服務](https://business.adobe.com/customers/consulting-services/main.html)可協助您提供自訂的深入分析和最佳實務。

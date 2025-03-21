@@ -1,24 +1,58 @@
 ---
 title: 在Experience Manager Assets中檢視及管理轉譯
-description: 瞭解AEM Assets和Dynamic Media如何運用靜態和動態影像轉譯，簡化有效的影像管理。
+description: 瞭解AEM Assets和Dynamic Media如何使用靜態和動態影像轉譯，簡化有效的影像管理。
 exl-id: 006dc493-c400-4d0f-b314-c1978582b7fb
 feature: Renditions
 role: User
-source-git-commit: eb5886b5ed6a6f5b52303b4fccf5c266178b36f8
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '692'
+ht-degree: 3%
 
 ---
 
 # 在Experience Manager Assets中檢視及管理轉譯{#renditions}
 
-| [搜尋最佳實務](/help/assets/search-best-practices.md) | [中繼資料最佳實務](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [具有 OpenAPI 功能的 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 開發人員文件](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets與Edge Delivery Services整合</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI擴充性</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>啟用Dynamic Media Prime和Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>搜尋最佳實務</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>中繼資料最佳實務</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 開發人員文件</b></a>
+        </td>
+    </tr>
+</table>
 
 Adobe Experience Manager (AEM)中的轉譯是數位資產（例如影像）的自訂版本，專為不同裝置和平台而設計，以確保最佳效能。 AEM可協助您輕鬆建立和管理這些轉譯，進而改善使用者體驗。 您可以建立縮圖、針對網頁或行動裝置最佳化影像、新增浮水印、檢視及下載動態轉譯或智慧型裁切轉譯，以及執行更多工作。
 
-Dynamic Media影像預設集和智慧型裁切轉譯可根據品牌標準，促進系統化的影像管理，進而實現品牌凝聚力的最大化。 這可簡化快速找到及視需要使用動態影像轉譯的程式，而且不需要任何管理員存取。
+Dynamic Media影像預設集和智慧型裁切轉譯可促進符合品牌標準的系統影像管理，進而實現品牌凝聚力的最大化。 這可簡化快速找到及視需要使用動態影像轉譯的程式，而且不需要任何管理員存取。
 
 轉譯分為靜態與動態兩類，每種型別各有獨特功能，本節將對此進行詳細討論。
 
@@ -52,7 +86,7 @@ Dynamic Media影像預設集和智慧型裁切轉譯可根據品牌標準，促�
    * [影像預設集](/help/assets/dynamic-media/managing-image-presets.md)
 
   您可以[稍後切換檢視](/help/assets/assets-view-introduction.md#how-to-access-assets-view)以在Assets檢視中預覽動態轉譯。
-* Publish資產重新命名為Dynamic Media ，以便在Assets檢視中提供Dynamic Media轉譯。 如需詳細資訊，請參閱[Publish Assets到AEM和Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm)。
+* 將資產發佈至Dynamic Media，以便在Assets檢視中使用Dynamic Media轉譯。 如需詳細資訊，請參閱[將Assets發佈到AEM和Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm)。
 
 
 ### 檢視和下載Dynamic Media轉譯 {#view-download-dm-renditions}
@@ -65,7 +99,7 @@ Dynamic Media影像預設集和智慧型裁切轉譯可根據品牌標準，促�
 
 1. 按一下您需要檢視的資產，然後按一下&#x200B;**[!UICONTROL 詳細資料]**。
 
-1. 在右側功能表中，按一下&#x200B;**[!UICONTROL Dynamic Media]**&#x200B;圖示。 **[!UICONTROL Dynamic Media]**&#x200B;面板會顯示Dynamic Media和智慧型裁切轉譯。
+1. 在右方功能表中，按一下&#x200B;**[!UICONTROL Dynamic Media]**&#x200B;圖示。 **[!UICONTROL Dynamic Media]**&#x200B;面板會顯示Dynamic Media和智慧型裁切轉譯。
 
    ![動態轉譯](/help/assets/assets/dm-scene7-renditions.png)
    <!-- ![dynamic renditions](assets/preset_smart_crop_view.png) -->
@@ -84,14 +118,14 @@ Dynamic Media影像預設集和智慧型裁切轉譯可根據品牌標準，促�
 ### 開始之前
 
 * 您必須是授權的AEM Dynamic Media使用者。
-* Assets必須獲得核准，才能顯示具有OpenAPI功能轉譯的Dynamic Media。 如需詳細資訊，請參閱[核准Experience Manager](/help/assets/approve-assets.md#copy-delivery-url-approved-assets)中的資產
+* Assets必須獲得核准，才能顯示具有OpenAPI功能轉譯的Dynamic Media。 如需詳細資訊，請參閱[在Experience Manager中核准資產](/help/assets/approve-assets.md#copy-delivery-url-approved-assets)
 * 必須在您的AEM as a Cloud Service執行個體上啟用具有OpenAPI功能的Dynamic Media 。
 
-### 使用OpenAPI功能轉譯檢視Dynamic Media {#view-download-dm-with-openapi-renditions}
+### 使用OpenAPI功能檢視Dynamic Media轉譯 {#view-download-dm-with-openapi-renditions}
 
 1. 選取資產並按一下&#x200B;**詳細資料**。
-1. 按一下右側窗格中可用的Dynamic Media圖示。 Dynamic Media面板會為所有資產型別顯示具有OpenAPI功能的Dynamic Media。
+1. 按一下右窗格中可用的Dynamic Media圖示。 「動態媒體」面板為所有資產型別顯示「具有OpenAPI功能的動態媒體」轉譯。
    ![下載圖示](/help/assets/assets/dm-with-open-api-copy-url.png)
-1. 選取&#x200B;**具有OpenAPI的Dynamic Media**&#x200B;選項，然後按一下&#x200B;**複製URL**&#x200B;以複製資產的傳遞URL。
+1. 選取&#x200B;**Dynamic Media with OpenAPI**&#x200B;選項，然後按一下&#x200B;**複製URL**&#x200B;以複製資產的傳遞URL。
 
 

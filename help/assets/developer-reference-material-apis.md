@@ -5,17 +5,51 @@ contentOwner: AG
 feature: Assets HTTP API
 role: Developer, Architect, Admin
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '1956'
-ht-degree: 7%
+source-wordcount: '1984'
+ht-degree: 8%
 
 ---
 
 # [!DNL Adobe Experience Manager Assets]開發人員使用案例、API和參考資料 {#assets-cloud-service-apis}
 
-| [搜尋最佳實務](/help/assets/search-best-practices.md) | [中繼資料最佳實務](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [具有OpenAPI功能的Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets開發人員檔案](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets與Edge Delivery Services整合</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI擴充性</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>啟用Dynamic Media Prime和Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>搜尋最佳實務</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>中繼資料最佳實務</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 開發人員文件</b></a>
+        </td>
+    </tr>
+</table>
 
 文章包含[!DNL Assets]開發人員的建議、參考資料和資源，以[!DNL Cloud Service]形式提供。 其中包含新的資產上傳模組、API參考資料，以及有關後處理工作流程中所提供支援的資訊。
 
@@ -33,7 +67,7 @@ ht-degree: 7%
 | × | 不支援。 請勿使用。 |
 | - | 無法使用 |
 
-| 使用案例 | [aem-upload](https://github.com/adobe/aem-upload) | [Experience Manager/ Sling / JCR](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html) Java API | [Asset compute服務](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html) | [[!DNL Assets] HTTP API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html#create-an-asset) | Sling [GET](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) / [POST](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html) servlet | [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=zh-Hant) |
+| 使用案例 | [aem-upload](https://github.com/adobe/aem-upload) | [Experience Manager / Sling / JCR](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html) Java API | [資產計算服務](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html) | [[!DNL Assets] HTTP API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html#create-an-asset) | Sling [GET](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) / [POST](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html) servlet | [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=zh-Hant) |
 | ----------------|:---:|:---:|:---:|:---:|:---:|:---:|
 | **原始二進位檔** |  |  |  |  |  |  |
 | 建立原始檔案 | ✓ | × | - | × | × | - |
@@ -72,7 +106,7 @@ ht-degree: 7%
 在[!DNL Experience Manager]中以[!DNL Cloud Service]身分，您可以使用HTTP API直接將資產上傳到雲端儲存空間。 上傳二進位檔案的步驟如下。 在外部應用程式中執行這些步驟，而不是在[!DNL Experience Manager] JVM中執行。
 
 1. [提交HTTP要求](#initiate-upload)。 它會通知[!DNL Experience Manage]r部署您打算上傳新的二進位檔。
-1. [將二進位檔](#upload-binary)的內容PUT到起始要求提供的一或多個URI。
+1. [將二進位檔](#upload-binary)的內容PUT至起始要求提供的一或多個URI。
 1. [提交HTTP要求](#complete-upload)，通知伺服器已成功上傳二進位檔的內容。
 
 ![直接二進位上傳通訊協定概觀](assets/add-assets-technical.png)
@@ -92,11 +126,11 @@ ht-degree: 7%
 >
 >[!IMPORTANT]
 >
->在某些情況下，由於Experience Manager中儲存的最終一致性性質，變更可能不會在Cloud Service請求之間完全傳播。 這會導致404個起始或完成上傳呼叫的回應，因為必要的資料夾建立未傳播。 使用者端應該會收到404個回應，並透過實作附有後退策略的重試來處理這些回應。
+>在某些情況下，由於Cloud Service中的儲存最終具有一致的性質，變更可能不會在對Experience Manager的請求之間完全傳播。 這會導致404個起始或完成上傳呼叫的回應，因為必要的資料夾建立未傳播。 使用者端應該會收到404個回應，並透過實作附有後退策略的重試來處理這些回應。
 
 ### 啟動上傳 {#initiate-upload}
 
-將HTTPPOST請求提交到所需的資料夾。 在此資料夾中建立或更新Assets。 包含選擇器`.initiateUpload.json`，以表示要求將啟動二進位檔案的上傳。 例如，應建立資產的資料夾路徑為`/assets/folder`。 POST要求是`POST https://[aem_server]:[port]/content/dam/assets/folder.initiateUpload.json`。
+將HTTP POST請求提交至所需的資料夾。 在此資料夾中建立或更新Assets。 包含選擇器`.initiateUpload.json`，以表示要求將啟動二進位檔案的上傳。 例如，應建立資產的資料夾路徑為`/assets/folder`。 POST要求是`POST https://[aem_server]:[port]/content/dam/assets/folder.initiateUpload.json`。
 
 要求內文的內容型別應為`application/x-www-form-urlencoded`表單資料，包含下列欄位：
 
@@ -136,7 +170,7 @@ ht-degree: 7%
 
 ### 上傳二進位檔 {#upload-binary}
 
-起始上傳的輸出包含一或多個上傳URI值。 如果提供了多個URI，使用者端可以依序將二進位分割成多個部分，並向提供的上傳URI提出每個部分的PUT請求。 如果您選擇將二進位檔案分割成零件，請遵循下列准則：
+起始上傳的輸出包含一或多個上傳URI值。 如果提供超過一個URI，使用者端可以依序將二進位檔案分割成多個部分，並對提供的上傳URI提出每個部分的PUT請求。 如果您選擇將二進位檔案分割成零件，請遵循下列准則：
 
 * 除了最後一個零件外，每個零件的大小必須大於或等於`minPartSize`。
 * 每個部分的大小必須小於或等於`maxPartSize`。
@@ -166,9 +200,9 @@ CDN邊緣節點有助於加速要求的二進位檔上傳。
 
 ### 完成上傳 {#complete-upload}
 
-上傳二進位檔案的所有部分後，將HTTPPOST請求提交至初始化資料提供的完整URI。 要求內文的內容型別應為`application/x-www-form-urlencoded`表單資料，包含下列欄位。
+上傳二進位檔案的所有部分後，將HTTP POST要求提交至初始化資料提供的完整URI。 要求內文的內容型別應為`application/x-www-form-urlencoded`表單資料，包含下列欄位。
 
-| 欄位 | 類型 | 必要與否 | 說明 |
+| 欄位 | 類型 | 必要與否 | 描述 |
 |---|---|---|---|
 | `fileName` | 字串 | 必填 | 由初始資料提供的資產名稱。 |
 | `mimeType` | 字串 | 必填 | 由起始資料提供的二進位檔的HTTP內容型別。 |

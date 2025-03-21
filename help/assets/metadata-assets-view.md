@@ -5,17 +5,51 @@ role: User, Leader, Admin, Architect, Developer
 contentOwner: AG
 exl-id: 7264e8d1-fc8f-4eb3-93a9-a6066ca3f851
 feature: Metadata
-source-git-commit: fbf7321e0fc70627cc80d50d99ef5de4baf03e9b
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '1904'
-ht-degree: 82%
+source-wordcount: '1932'
+ht-degree: 85%
 
 ---
 
 # 資產檢視的中繼資料 {#metadata}
 
-| [搜尋最佳實務](/help/assets/search-best-practices.md) | [中繼資料最佳實務](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [具有 OpenAPI 功能的 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 開發人員文件](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets與Edge Delivery Services整合</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI擴充性</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>啟用Dynamic Media Prime和Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>搜尋最佳實務</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>中繼資料最佳實務</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 開發人員文件</b></a>
+        </td>
+    </tr>
+</table>
 
 中繼資料為資料或資料相關的說明。例如，作為資產的影像可以包含其所按一下的相機資訊或任何版權資訊。此資訊是影像的中繼資料。中繼資料是進行高效率資產管理的關鍵所在。中繼資料雖然是資產所有可用資料的集合，但並不一定包含在資產內。
 
@@ -170,18 +204,18 @@ MIME 子類型 > MIME 類型 > `default` 表單 > 現成可用的表單
 
 您也可以導覽至資料夾詳細資料頁面，然後從「**[!UICONTROL 中繼資料表單]**」欄位中選取「**[!UICONTROL 系統對應中繼資料表單]**」，即可從資料夾中刪除已指派的中繼資料表單。
 
-### 在中繼資料表單中使用連結元件 {#link-component-metadata-form}
+### 使用中繼資料表單的「連結」元件 {#link-component-metadata-form}
 
-連結元件可用來啟用外部URL，包括儲存連結、版權資訊、連絡人表單等。 若要在中繼資料表單上使用連結元件，您需要[設定中繼資料表單](#metadata-forms)。
+此連結元件是用來啟用外部 URL，包括儲存連結、版權資訊、聯絡表單等。若要在中繼資料表單上使用連結元件，您需要[設定中繼資料表單](#metadata-forms)。
 
 請依照下列步驟，在中繼資料表單上使用連結元件：
 
-1. 前往資產詳細資訊頁面，並導覽至&#x200B;**[!UICONTROL 連結URL]**。
-1. 新增您想要用來針對所選資產重新導向的URL。
-1. 按一下&#x200B;**[!UICONTROL 新增連結]**。 執行下列其中一個動作：
-   * 按一下![復製圖示](assets/do-not-localize/copy.svg)以複製URL。
-   * 按一下![編輯圖示](assets/do-not-localize/edit.svg)以編輯URL。
-1. 按一下[儲存]儲存變更。****
+1. 前往資產詳細資料頁面，並導覽至「**[!UICONTROL 連結 URL]**」。
+1. 新增要用來重新導向所選資產的 URL。
+1. 按一下「**[!UICONTROL 新增連結]**」。執行下列其中一個動作：
+   * 按一下 ![複製圖示](assets/do-not-localize/copy.svg) 以複製 URL。
+   * 按一下 ![編輯圖示](assets/do-not-localize/edit.svg) 以編輯 URL。
+1. 按一下「**[!UICONTROL 儲存]**」以儲存變更。
 
 ## 後續步驟 {#next-steps}
 

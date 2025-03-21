@@ -5,14 +5,51 @@ contentOwner: Rick Brough
 feature: Rulesets,Troubleshooting,Upload,Best Practices
 role: User
 exl-id: f8010125-ba89-406a-bede-f6aa2f858c70
-source-git-commit: 35f31c95e92148ff5f3472f26ea9c40fa5a17947
+source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
 workflow-type: tm+mt
-source-wordcount: '720'
-ht-degree: 0%
+source-wordcount: '766'
+ht-degree: 2%
 
 ---
 
 # 使用規則集轉換URL {#using-rulesets-to-transform-urls}
+
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets與Edge Delivery Services整合</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI擴充性</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>啟用Dynamic Media Prime和Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>搜尋最佳實務</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>中繼資料最佳實務</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 開發人員文件</b></a>
+        </td>
+    </tr>
+</table>
 
 您可以在Dynamic Media中部署規則集以轉換URL。 規則集是以指令碼語言(例如JavaScript)撰寫的指令集，可評估XML資料並在該資料符合特定條件時採取特定動作。 每個規則至少包含一個條件和至少一個動作。 規則會根據條件評估XML資料，如果符合條件，則會採取適當的動作。 規則集的範例包括：
 
@@ -36,7 +73,7 @@ ht-degree: 0%
 
 >[!CAUTION]
 >
->使用規則集時請務必小心，規則集可能會導致Dynamic Media內容無法在您的網站上顯示。
+>使用規則集時請務必小心，因為規則集可能會導致Dynamic Media內容無法在您的網站上顯示。
 
 有些範例規則集可協助您建立自己的規則集。
 請參閱[規則集參考](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/rule-set-reference/c-rule-set-reference.html)。
@@ -59,7 +96,7 @@ ht-degree: 0%
 
 1. 開啟[Dynamic Media Classic案頭應用程式](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)，然後登入您的帳戶。
 
-   布建時Adobe已提供您的認證和登入詳細資訊。 如果您沒有此資訊，請聯絡客戶支援。
+   布建時Adobe已提供您的憑證和登入詳細資訊。 如果您沒有此資訊，請聯絡客戶支援。
 
 1. 執行下列操作上傳規則集檔案：
 
@@ -68,16 +105,16 @@ ht-degree: 0%
    * 在&#x200B;**[!UICONTROL 開啟]**&#x200B;對話方塊中，瀏覽至您的規則集檔案(XML)。
    * 選取檔案，然後選取&#x200B;**[!UICONTROL 開啟]**。
    * 在&#x200B;**[!UICONTROL 上傳]**&#x200B;頁面的右側，選取規則集檔案的目標資料夾。
-   * 在頁面底部附近，請確定已勾選「上傳後的Publish」 。
+   * 在頁面底部附近，請確定已勾選「上傳後發佈」 。
    * 在頁面的右下角，選取&#x200B;**[!UICONTROL 送出上傳]**。
    * 在全域導覽列上，選取&#x200B;**[!UICONTROL 工作]**&#x200B;以檢查上載工作的狀態。 當&#x200B;**[!UICONTROL 工作]**&#x200B;頁面上的&#x200B;**[!UICONTROL 狀態]**&#x200B;資料行顯示「上載完成」時，請繼續後續步驟。
 
-1. 在靠近頁面頂端的導覽列上，導覽至&#x200B;**[!UICONTROL 設定]** > **[!UICONTROL 應用程式設定]** > **[!UICONTROL Publish設定]** > **[!UICONTROL 影像伺服器]**。
-1. 在&#x200B;**[!UICONTROL 影像伺服器Publish]**&#x200B;頁面的&#x200B;**[!UICONTROL 目錄管理]**&#x200B;群組下，找到&#x200B;**[!UICONTROL 規則集定義檔案路徑]**，然後選取&#x200B;**[!UICONTROL 選取]**。
+1. 在靠近頁面頂端的導覽列上，導覽至&#x200B;**[!UICONTROL 設定]** > **[!UICONTROL 應用程式設定]** > **[!UICONTROL 發佈設定]** > **[!UICONTROL 影像伺服器]**。
+1. 在&#x200B;**[!UICONTROL 影像伺服器發佈]**&#x200B;頁面的&#x200B;**[!UICONTROL 目錄管理]**&#x200B;群組下，找到&#x200B;**[!UICONTROL 規則集定義檔案路徑]**，然後選取&#x200B;**[!UICONTROL 選取]**。
 1. 在&#x200B;**[!UICONTROL 選取規則集定義檔案(XML)]**&#x200B;頁面上，瀏覽至您的規則集檔案，然後在頁面的右下角選取&#x200B;**[!UICONTROL 選取]**。
 1. 在[設定]頁面的右下角，選取&#x200B;**[!UICONTROL 關閉]**。
-1. 執行影像伺服器Publish工作。
+1. 執行影像伺服器發佈工作。
 
-   規則集條件會套用至即時Dynamic Media影像伺服器的請求。
+   規則集條件會套用到即時Dynamic Media影像伺服器的要求。
 
    如果您變更規則集檔案，當您重新上傳並重新發佈更新的規則集檔案時，變更會立即套用。

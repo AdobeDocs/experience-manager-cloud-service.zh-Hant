@@ -4,17 +4,51 @@ description: 設定 [!DNL Workfront for Experience Manager enhanced connector]
 role: Admin
 feature: Workfront Integrations and Apps
 exl-id: d4e1247a-342c-4bc4-83bf-4e4902468fb3
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '1785'
-ht-degree: 1%
+source-wordcount: '1813'
+ht-degree: 2%
 
 ---
 
 # 設定 [!DNL Workfront for Experience Manager enhanced connector] {#assets-integration-overview}
 
-| [搜尋最佳實務](/help/assets/search-best-practices.md) | [中繼資料最佳實務](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [具有OpenAPI功能的Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets開發人員檔案](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets與Edge Delivery Services整合</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI擴充性</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>啟用Dynamic Media Prime和Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>搜尋最佳實務</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>中繼資料最佳實務</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 開發人員文件</b></a>
+        </td>
+    </tr>
+</table>
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
@@ -25,11 +59,11 @@ ht-degree: 1%
 
 >[!IMPORTANT]
 >
-> 2022年6月，Adobe發行新的原生整合，用於將Workfront與Adobe Experience Manager Assetsas a Cloud Service連線。 此整合已成為連線這兩個解決方案的必要方法。 未來任何新實施的增強型聯結器（1.9.8及更新版本）都會遭到封鎖，以便將Workfront與AEM Assetsas a Cloud Service連線。
+> 自2022年6月起，Adobe已發行新的原生整合，用於將Workfront與Adobe Experience Manager Assets as a Cloud Service連線。 此整合已成為連線這兩個解決方案的必要方法。 日後任何新實施的增強型聯結器（1.9.8及更新版本）都會遭到封鎖，以便將Workfront與AEM Assets as a Cloud Service連線。
 
 >[!IMPORTANT]
 >
->* Adobe僅需要透過認證合作夥伴或[!DNL Adobe Professional Services]來部署和設定[!DNL Adobe Workfront for Experience Manager enhanced connector]。 如果未使用認證合作夥伴或[!DNL Adobe Professional Services]進行部署與設定，則Adobe不支援此功能。
+>* Adobe僅需要透過認證合作夥伴或[!DNL Adobe Professional Services]來部署及設定[!DNL Adobe Workfront for Experience Manager enhanced connector]。 如果未透過認證合作夥伴或[!DNL Adobe Professional Services]進行部署與設定，則Adobe不支援此功能。
 >
 >* Adobe可能會發行[!DNL Adobe Workfront]和[!DNL Adobe Experience Manager]的更新，使此聯結器成為多餘的；如果發生這種情況，客戶可能需要從使用此聯結器進行轉換。
 >
@@ -47,7 +81,7 @@ ht-degree: 1%
 
 若要使用這些功能，請啟用事件訂閱。
 
-* 編輯您在步驟5建立的[!UICONTROL Workfront工具]Cloud Service設定，並選取[!UICONTROL 事件訂閱]索引標籤。
+* 編輯您在步驟5建立的[!UICONTROL Workfront工具]雲端服務設定，並選取[!UICONTROL 事件訂閱]索引標籤。
 * 選取您在第6節中建立的[!UICONTROL Workfront自訂整合]。
 * 按一下[!UICONTROL 啟用Workfront活動訂閱]。
 
@@ -65,12 +99,12 @@ ht-degree: 1%
 
 1. 前往雲端服務中的專案連結資料夾索引標籤。
 1. 連結資料夾父路徑：在DAM中選取您要建立連結資料夾的資料夾。 如果留空，其將預設為/content/dam。 請確定Workfront工具中繼資料結構和Workfront連結資料夾中繼資料結構已套用至選取的資料夾。
-1. 連結的資料夾結構：輸入逗號分隔值。 每個值應該是`DE:<some-project-custom-form-field>`、Portfolio、方案、年份、名稱或某個「常值字串值」（最後一個值加上引號）。 目前設為Portfolio、方案、年、DE：專案型別、名稱。
+1. 連結的資料夾結構：輸入逗號分隔值。 每個值都應該是`DE:<some-project-custom-form-field>`、Portfolio、Program、Year、Name或某個「常值字串值」（最後這個值帶有引號）。 目前設為Portfolio、Program、Year、DE：Project Type、Name。
 1. 設定許可權：為`wf-workfront-users`群組新增`jcr:all permissions`許可權至`/conf/workfront-tools/settings/cloudconfigs`。
 1. 如果Workfront中的資料夾標題應包含結構中的所有資料夾，則應核取使用資料夾結構名稱在Workfront中建立連結資料夾標題。 否則，這是最後一個資料夾的標題。
 1. 子資料夾多欄位可讓您指定應建立為連結資料夾的子資料夾的資料夾清單。
 1. 專案狀態：選取專案必須設定的狀態，才能建立連結的資料夾。
-1. 在具有投資組合的專案中建立連結資料夾：專案必須屬於的Portfolio清單，以便您可以建立連結資料夾。 將此清單保留為空白可為所有專案組合建立連結資料夾。
+1. 在具有投資組合的專案中建立連結資料夾：專案必須屬於的投資組合清單，以便您建立連結資料夾。 將此清單保留為空白可為所有專案組合建立連結資料夾。
 1. 使用自訂表單欄位在專案中建立連結資料夾：自訂表單欄位及其專案必須有的對應值，以便您建立連結資料夾。 如果留為空白，則會忽略此設定。 選取`CUSTOM FORMS: Create DAM Linked Folder`作為欄位，並輸入`Yes`作為值。
 1. 設定許可權：為`wf-workfront-users group`設定這些許可權，`jcr:all permissions for /conf/workfront-tools/settings/cloudconfigs`。
 1. 按一下「啟用自動建立連結資料夾」。 如果您返回「事件訂閱」標籤，您會看到現在有一個建立事件。
@@ -89,10 +123,10 @@ Workfront專案與AEM資料夾之間的中繼資料對應是在AEM資料夾中�
 1. 導覽至&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL Assets]** > **[!UICONTROL 資料夾中繼資料結構]**。
 1. 選取您要編輯的資料夾中繼資料結構表單，然後按一下編輯。
 1. 選取您要編輯的資料夾中繼資料結構表單欄位，然後在右側面板上選取設定索引標籤。
-1. 在[!UICONTROL 從Workfront欄位對應]欄位中，選取您要對應到所選AEM資料夾屬性的Workfront欄位名稱。 可用的選項包括：
+1. 在[!UICONTROL 從Workfront欄位對應]欄位中，選取您要對應到所選Workfront資料夾屬性的AEM欄位名稱。 可用的選項包括：
 
    * 專案自訂表單欄位
-   * 專案概述欄位(識別碼、名稱、說明、參考編號、計畫完成日期、專案所有者、專案贊助者、Portfolio或方案)
+   * 專案概述欄位(ID、名稱、說明、參考編號、規劃完成日期、專案所有者、專案贊助者、Portfolio或方案)
 
 ![中繼資料對應設定](/help/assets/assets/wf-metadata-mapping-config2.png)
 
@@ -105,7 +139,7 @@ Adobe Workfront檔案與Assets之間的中繼資料對應是在AEM中繼資料�
 1. 導覽至&#x200B;**工具** > **Assets** > **中繼資料結構描述**。
 1. 選取您要編輯的中繼資料結構表單，然後按一下&#x200B;**編輯**&#x200B;或從頭開始建立中繼資料結構描述。
 1. 選取您要編輯的中繼資料結構表單欄位，然後選取右側面板上的&#x200B;**設定**&#x200B;索引標籤。
-1. 在[!DNL Workfront]自訂表單欄位中，選取您要對應至所選AEM屬性的[!DNL Workfront]欄位名稱。 可用的選項包括：
+1. 在「[!DNL Workfront]自訂表單欄位」中，選取您要對應至所選AEM屬性的[!DNL Workfront]欄位名稱。 可用的選項包括：
 
    * 記錄自訂表單欄位
    * 專案自訂表單欄位
@@ -157,11 +191,11 @@ Adobe Workfront檔案與Assets之間的中繼資料對應是在AEM中繼資料�
 
 ## 註解同步 {#comments-sync}
 
-1. 在[!DNL Experience Manager]中，存取&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Workfront工具組態]**，選取組態並選取&#x200B;**[!UICONTROL 屬性]**。
+1. 在[!DNL Experience Manager]中，存取&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 雲端服務]** > **[!UICONTROL Workfront工具組態]**，選取組態並選取&#x200B;**[!UICONTROL 屬性]**。
 
    ![個註解同步](/help/assets/assets/comments-sync1.png)
 
-1. 選取&#x200B;**[!UICONTROL 事件訂閱]**&#x200B;索引標籤，按一下&#x200B;**[!UICONTROL 將Workfront中的評論傳送至AEM]**&#x200B;選項上的&#x200B;**[!UICONTROL 啟用評論同步處理]**。
+1. 選取&#x200B;**[!UICONTROL 事件訂閱]**&#x200B;索引標籤，按一下&#x200B;**[!UICONTROL 將Workfront中的評論傳送至AEM]**&#x200B;選項上的&#x200B;**[!UICONTROL 啟用評論同步]**。
 
    ![同步處理已啟用](/help/assets/assets/wf-comment-sync-enabled.png)
 
@@ -177,7 +211,7 @@ Adobe Workfront檔案與Assets之間的中繼資料對應是在AEM中繼資料�
 
 若要維護AEM中的資產版本記錄，請在AEM中設定資產版本設定。
 
-1. 在Experience Manager中，存取&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Workfront工具組態]**，然後開啟&#x200B;**[!UICONTROL 進階]**&#x200B;標籤。
+1. 在Experience Manager中，存取&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 雲端服務]** > **[!UICONTROL Workfront工具設定]**，然後開啟&#x200B;**[!UICONTROL 進階]**&#x200B;標籤。
 
 1. 選取選項&#x200B;**[!UICONTROL 儲存與現有資產版本同名的資產]**。 選取後，此選項可讓您將以相同名稱上傳的資產儲存到與現有資產版本相同的位置。 如果未勾選，則會以不同的名稱（例如`asset-name.pdf`和`asset-name-1.pdf`）建立新資產。
 
@@ -199,11 +233,11 @@ Adobe Workfront檔案與Assets之間的中繼資料對應是在AEM中繼資料�
 
 ## 自動發佈資產 {#auto-publish-assets}
 
-1. 在Experience Manager中，存取&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Workfront工具組態]**，然後開啟&#x200B;**[!UICONTROL 進階]**&#x200B;標籤。
+1. 在Experience Manager中，存取&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 雲端服務]** > **[!UICONTROL Workfront工具設定]**，然後開啟&#x200B;**[!UICONTROL 進階]**&#x200B;標籤。
 
 1. 選取&#x200B;**[!UICONTROL 從Workfront]**&#x200B;傳送時自動發佈資產。 此選項可在資產從Workfront傳送至AEM時自動發佈資產。 此功能可透過指定Workfront自訂表單欄位及其應設定的值有條件地啟用。 每當檔案傳送至AEM時，如果符合條件，則會自動發佈資產。
 
-1. 選取&#x200B;**[!UICONTROL 在專案完成時，將所有專案資產Publish到Brand Portal]**。 此選項可讓您在資產所屬的Workfront專案狀態變更為`Complete`時，將資產自動發佈至[!DNL Brand Portal]。
+1. 選取&#x200B;**[!UICONTROL 在專案完成時將所有專案資產發佈到Brand Portal]**。 此選項可讓您在資產所屬的Workfront專案狀態變更為`Complete`時，將資產自動發佈至[!DNL Brand Portal]。
 
 ![設定自動發佈](/help/assets/assets/wf-auto-publish-config.png)
 

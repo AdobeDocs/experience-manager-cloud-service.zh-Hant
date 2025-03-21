@@ -5,14 +5,51 @@ contentOwner: Rick Brough
 feature: 3D Assets
 role: User
 exl-id: e873bd25-f841-4063-824f-7e48f40bb678
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
 workflow-type: tm+mt
-source-wordcount: '621'
-ht-degree: 5%
+source-wordcount: '667'
+ht-degree: 8%
 
 ---
 
 # 在Adobe Experience Manager中預覽3D資產{#previewing-3d-assets}
+
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets與Edge Delivery Services整合</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI擴充性</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>啟用Dynamic Media Prime和Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>搜尋最佳實務</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>中繼資料最佳實務</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 開發人員文件</b></a>
+        </td>
+    </tr>
+</table>
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
@@ -21,15 +58,15 @@ ht-degree: 5%
 
 Experience Manager Assets支援3D資產的擷取、管理、預覽和傳送。
 
-您可以使用自動產生的縮圖轉譯或互動式3D檢視器來預覽3D資產。 您可從Experience Manager的資產詳細資訊頁面使用互動式3D檢視器。 該檢視器包含一系列互動式相機控制項，可供您旋轉、縮放和平移3D場景。
+您可以使用自動產生的縮圖轉譯或互動式3D檢視器來預覽3D資產。 您可從Experience Manager的資產詳細資訊頁面取得互動式3D檢視器。 該檢視器包含一系列互動式相機控制項，可供您旋轉、縮放和平移3D場景。
 
 <!-- See also [Working with 3D assets in Dynamic Media](/help/assets/dynamic-media/assets-3d.md). -->
 
-## 支援的Experience Manager縮圖預覽格式{#supported-thumbnail-previewing-assets}
+## Experience Manager中縮圖預覽的支援格式{#supported-thumbnail-previewing-assets}
 
 Experience Manager預設會產生下列檔案格式的縮圖：
 
-| 3D副檔名 | 檔案格式 | MIME型別 | 附註 |
+| 3D副檔名 | 檔案格式 | MIME型別 | 備註 |
 |---|---|---|---|
 | GLB | 二進位GL傳輸 | model/gltf-binary |  |
 | FBX | Autodesk FBX | application/octet-stream |  |
@@ -37,11 +74,11 @@ Experience Manager預設會產生下列檔案格式的縮圖：
 | 3DS | 3D Studio模型 | application/x-3ds |  |
 | 美元z | 通用場景描述 | model/vnd.usdz+zip |  |
 
-## 支援的Experience Manager互動式3D預覽格式{#supported-3d-previewing-assets}
+## Experience Manager中支援的互動式3D預覽格式{#supported-3d-previewing-assets}
 
 Experience Manager原生支援下列檔案格式的Interactive 3D預覽：
 
-| 3D副檔名 | 檔案格式 | MIME型別 | 附註 |
+| 3D副檔名 | 檔案格式 | MIME型別 | 備註 |
 |---|---|---|---|
 | GLB | 二進位GL傳輸 | model/gltf-binary |  |
 | GLTF | 總帳傳輸格式 | model/gltf+json | 請參閱下方的&#x200B;**附註**。 |
@@ -66,11 +103,11 @@ Experience Manager原生支援下列檔案格式的Interactive 3D預覽：
 
 此外，使用者端電腦的功能（例如工作站、筆記型電腦或行動觸控裝置）也是您以互動方式操作相機時也必須考量的重要因素。 功能相當強大的系統，搭配良好的繪圖功能，可讓互動式3D觀賞體驗更順暢、更理想。
 
-**預覽Experience Manager中的3D資產：**
+**若要在Experience Manager中預覽3D資產：**
 
 1. 請確定您已將3D資產上傳至Experience Manager。
 檢視[支援的3D預覽格式](#supported-3d-previewing-assets)和[上傳資產](/help/assets/manage-digital-assets.md#uploading-assets)。
-1. 從Experience Manager，在&#x200B;**[!UICONTROL 導覽]**&#x200B;頁面，前往&#x200B;**[!UICONTROL Assets]** > **[!UICONTROL 檔案]**。
+1. 從Experience Manager，在&#x200B;**[!UICONTROL 導覽]**&#x200B;頁面上，前往&#x200B;**[!UICONTROL Assets]** > **[!UICONTROL 檔案]**。
 
    ![導覽頁面](/help/assets/dynamic-media/assets/navigation-assets.png)
 
@@ -85,7 +122,7 @@ Experience Manager原生支援下列檔案格式的Interactive 3D預覽：
    _資產詳細資料檢視頁面中的3D資產互動式預覽。_
 1. 在3D資產的資產詳細資料檢視頁面上，執行下列任一項作業：
 
-   | 檢視 | 說明 | 滑鼠動作 | 觸控熒幕動作 |
+   | 檢視 | 描述 | 滑鼠動作 | 觸控熒幕動作 |
    | --- | --- | --- | --- |
    | **轉動相機** | 使檢視畫面在 3D 場景和物件周圍環繞 | 按一下左鍵+拖曳。 | 單指按下+拖曳。 |
    | **平移相機** | 向左、向右、向上或向下平移檢視。 | 按一下右鍵+拖曳。 | 雙指按下+拖曳。 |

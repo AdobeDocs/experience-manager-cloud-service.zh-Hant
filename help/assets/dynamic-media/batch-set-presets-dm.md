@@ -5,14 +5,51 @@ contentOwner: Rick Brough
 feature: Image Presets,Viewer Presets
 role: User
 exl-id: 022ee347-54ec-4cec-b808-9eb3a9e51424
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
 workflow-type: tm+mt
-source-wordcount: '3434'
-ht-degree: 0%
+source-wordcount: '3480'
+ht-degree: 1%
 
 ---
 
 # 關於批次集預設集 {#about-bsp}
+
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets與Edge Delivery Services整合</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI擴充性</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>啟用Dynamic Media Prime和Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>搜尋最佳實務</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>中繼資料最佳實務</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 開發人員文件</b></a>
+        </td>
+    </tr>
+</table>
 
 當您個別或大量擷取將資產檔案上傳至資料夾時，可使用&#x200B;**[!UICONTROL 批次集預設集]**&#x200B;在影像集或迴轉集中建立及組織多個資產。 您可以讓預設集與您排程在[!DNL Dynamic Media]中的資產匯入工作一起執行。 每個預設集都是一組名稱唯一、內含的指示，定義如何使用符合預設集中定義的命名慣例的影像來建構影像集或迴轉集。
 
@@ -20,14 +57,14 @@ ht-degree: 0%
 >
 >您是否在[!DNL Dynamic Media Classic]中使用批次集預設集，並從[!DNL Dynamic Media Classic]移轉至Adobe Experience Manager as a Cloud Service？ 若是如此，您必須在[!DNL Adobe Experience Manager as a Cloud Service]內手動重新建立批次集預設集定義。
 
-**最佳實務** — 使用批次集預設集時，Adobe會建議下列工作流程：
+**最佳實務** — 使用批次集預設集時，Adobe建議使用下列工作流程：
 
 1. 建立批次集預設集。 請參閱[為影像集或迴轉集建立批次集預設集](#creating-bsp)。
 1. 建立資產資料夾或使用現有的資產資料夾，並確保它已同步至[!DNL Dynamic Media]。 請參閱[建立資料夾](/help/assets/manage-digital-assets.md#creating-folders)。
 1. 將批次集預設集套用至資產資料夾。 請參閱[關於將批次集預設集套用至資料夾](#apply-bsp)。
 1. 將影像上傳至資產資料夾。 請參閱[上傳影像集的資產](/help/assets/dynamic-media/image-sets.md#uploading-assets-in-image-sets)、[上傳迴轉集的資產](/help/assets/dynamic-media/spin-sets.md#uploading-assets-for-spin-sets)或[新增數位資產至Adobe Experience Manager](/help/assets/add-assets.md#add-assets-to-experience-manager)。
 1. 影像集或迴轉集會在所需的資料夾中自動產生。
-1. Publish您的影像集或迴轉集。 請參閱[Publish Dynamic Media Assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)。
+1. 發佈影像集或迴轉集。 請參閱[發佈Dynamic Media Assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)。
 
 ## 為影像集或迴轉集建立批次集預設集 {#creating-bsp}
 
@@ -66,7 +103,7 @@ ht-degree: 0%
 
 **若要建立影像集或迴轉集的批次集預設集：**
 
-1. 選取Experience Manager標誌，並移至&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL Assets]** > **[!UICONTROL 批次集預設集]**。
+1. 選取Experience Manager標誌，並前往&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL Assets]** > **[!UICONTROL 批次集預設集]**。
 
    ![bsp-create1.png](/help/assets/assets-dm/bsp-create1.png)
 
@@ -105,14 +142,14 @@ ht-degree: 0%
 
 請參閱[為影像集或迴轉集建立批次集預設集](#creating-bsp)或[編輯批次集預設集](#edit-bsp)。
 
-| **[!UICONTROL 預設集詳細資料]** | 說明 |
+| **[!UICONTROL 預設集詳細資料]** | 描述 |
 | --- | --- |
 | 預設集名稱 | 唯讀。 您第一次建立批次集時所指定的名稱。 如果您必須重新命名預設集，您可以複製現有的批次集預設集並指定新名稱。 請參閱[複製現有的批次集預設集](#copy-bsp)。 |
 | 類型 | 唯讀。 當您初次建立批次集時指定了型別。 複製現有的批次集預設集無法讓您變更其[!UICONTROL 型別]；您必須改為建立預設集。 |
-| 包括衍生資產 | 選填。 若要讓[!DNL Dynamic Media]的IPS （影像生產系統）包含使用您的迴轉集或影像集產生或「衍生」的影像，請選取&#x200B;**[!UICONTROL 是]** （預設）。 衍生資產是使用者未直接上傳的影像。 而是在上傳主要資產時，由IPS產生資產。 例如，IPS從PDF中的頁面產生的影像資產(在[!DNL Dynamic Media]中上傳PDF時)會被視為衍生資產。 |
-| 目的地資料夾 | 選填。 如果您定義大量影像集或迴轉集，Adobe建議您將這些集與包含資產本身的資料夾分開。 因此，請考慮建立「影像集」或「迴轉集」資料夾，並將應用程式重新導向，以在此放置批次集產生的集合。<br>在這種情況下，請指定Experience Manager Assets資料夾結構(`/content/dam`)中的哪個資料夾已啟用批次集預設集。 請確定資料夾已啟用[!DNL Dynamic Media]同步處理，以允許它作為目的地資料夾。 請參閱[在Dynamic Media](/help/assets/dynamic-media/selective-publishing.md#selective-publish-configure-folder)的資料夾層級設定選擇性發佈。<br>如果透過資料夾的&#x200B;**[!UICONTROL 屬性]**&#x200B;套用預設集，則可以為多個資料夾指派指定的批次集預設集。 請參閱[從資產資料夾的「屬性」頁面](#apply-bsp-to-folders-via-properties)套用批次集預設集。<br>如果您未指定資料夾，批次集預設集產生的影像集或迴轉集會建立在與您上傳至的資產資料夾相同的資料夾中。 |
+| 包括衍生資產 | 選擇性。若要讓[!DNL Dynamic Media]的IPS （影像生產系統）包含使用您的迴轉集或影像集產生或「衍生」的影像，請選取&#x200B;**[!UICONTROL 是]** （預設）。 衍生資產是使用者未直接上傳的影像。 而是在上傳主要資產時，由IPS產生資產。 例如，在[!DNL Dynamic Media]中上傳PDF時，IPS從PDF中的頁面產生的影像資產會視為衍生資產。 |
+| 目的地資料夾 | 選擇性。如果您定義大量影像集或迴轉集，Adobe建議您將這些影像集與包含資產本身的資料夾分開。 因此，請考慮建立「影像集」或「迴轉集」資料夾，並將應用程式重新導向，以在此放置批次集產生的集合。<br>在這種情況下，請指定Experience Manager Assets資料夾結構(`/content/dam`)中的哪個資料夾已啟用批次集預設集。 請確定資料夾已啟用[!DNL Dynamic Media]同步處理，以允許它作為目的地資料夾。 請參閱[在Dynamic Media中設定資料夾層級的選擇性發佈](/help/assets/dynamic-media/selective-publishing.md#selective-publish-configure-folder)。<br>如果透過資料夾的&#x200B;**[!UICONTROL 屬性]**&#x200B;套用預設集，則可以為多個資料夾指派指定的批次集預設集。 請參閱[從資產資料夾的「屬性」頁面](#apply-bsp-to-folders-via-properties)套用批次集預設集。<br>如果您未指定資料夾，批次集預設集產生的影像集或迴轉集會建立在與您上傳至的資產資料夾相同的資料夾中。 |
 | **[!UICONTROL 設定命名慣例]** |  |
-| 前置詞<br>或<br>後置詞 | 選填。 在個別欄位中輸入字首、字尾或兩者。<br>字首與字尾欄位可讓您使用特定內容集的替代自訂檔案命名慣例，建立許多批次集預設集。 在公司定義的預設命名配置有例外的情況下，此方法特別有用。<br>前置詞或尾碼已新增至您在&#x200B;**[!UICONTROL 資產命名慣例]**&#x200B;區域中定義的&#x200B;**[!UICONTROL 基底名稱]**。 新增首碼或尾碼可確保您的影像集或迴轉集是獨立於其他資產以獨佔方式建立的。 它也可以進一步協助其他人識別檔案型別。 例如，若要判斷所使用的色彩模式，您可以新增做為字首或字尾`rgb`或`cmyk`。<br>雖然使用批次集預設集功能不需要指定集合命名慣例，但最佳實務建議您使用集合命名慣例。 此作法可讓您定義要分組在集合中的命名慣例元素，以協助簡化批次集合的建立。 |
+| 前置詞<br>或<br>後置詞 | 選擇性。在個別欄位中輸入字首、字尾或兩者。<br>字首與字尾欄位可讓您使用特定內容集的替代自訂檔案命名慣例，建立許多批次集預設集。 在公司定義的預設命名配置有例外的情況下，此方法特別有用。<br>前置詞或尾碼已新增至您在&#x200B;**[!UICONTROL 資產命名慣例]**&#x200B;區域中定義的&#x200B;**[!UICONTROL 基底名稱]**。 新增首碼或尾碼可確保您的影像集或迴轉集是獨立於其他資產以獨佔方式建立的。 它也可以進一步協助其他人識別檔案型別。 例如，若要判斷所使用的色彩模式，您可以新增做為字首或字尾`rgb`或`cmyk`。<br>雖然使用批次集預設集功能不需要指定集合命名慣例，但最佳實務建議您使用集合命名慣例。 此作法可讓您定義要分組在集合中的命名慣例元素，以協助簡化批次集合的建立。 |
 | **[!UICONTROL 規則結果 — RegX]** |  |
 | 資產命名慣例 — 相符 | 唯讀。 根據您選擇的「符合」表單選項或您輸入的原始程式碼顯示規則運算式語法。 |
 | 資產命名慣例 — 基本名稱 | 唯讀。 根據您選擇的「基本名稱」表單選項或您輸入的原始程式碼顯示規則運算式語法。 |
@@ -150,11 +187,11 @@ ht-degree: 0%
 
 ### 從資產資料夾的「屬性」頁面套用批次集預設集 {#apply-bsp-to-folders-via-properties}
 
-1. 選取Experience Manager標誌，並移至&#x200B;**[!UICONTROL Assets]** > **[!UICONTROL 檔案]**。
+1. 選取Experience Manager標誌，並前往&#x200B;**[!UICONTROL Assets]** > **[!UICONTROL 檔案]**。
 1. 導覽至您要套用一或多個批次集預設集的資料夾。
 1. 在頁面的&#x200B;**[!UICONTROL Name]**&#x200B;欄左側，選取資料夾的核取方塊。
 1. 在工具列中選取&#x200B;**[!UICONTROL 屬性]**。
-1. 在資料夾的「屬性」頁面上，選取「**[!UICONTROL Dynamic Media處理中]**」標籤。
+1. 在資料夾的「屬性」頁面上，選取「**[!UICONTROL 動態媒體處理]**」標籤。
 
    ![bsp-apply-via-properties2.png](/help/assets/assets-dm/bsp-apply-via-properties2a.png)
 
@@ -178,7 +215,7 @@ ht-degree: 0%
 
 **若要編輯批次集預設集：**
 
-1. 選取Experience Manager標誌，並移至&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL Assets]** > **[!UICONTROL 批次集預設集]**。
+1. 選取Experience Manager標誌，並前往&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL Assets]** > **[!UICONTROL 批次集預設集]**。
 1. 在&#x200B;**[!UICONTROL 批次集預設集]**&#x200B;頁面的&#x200B;**[!UICONTROL 預設集名稱]**&#x200B;欄的左側，檢查您要變更的批次集預設集。
 1. 在工具列中選取&#x200B;**[!UICONTROL 編輯批次集預設集]**。
 1. 視需要編輯預設集。
@@ -192,7 +229,7 @@ ht-degree: 0%
 
 **複製現有的批次集預設集：**
 
-1. 選取Experience Manager標誌，並移至&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL Assets]** > **[!UICONTROL 批次集預設集]**。
+1. 選取Experience Manager標誌，並前往&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL Assets]** > **[!UICONTROL 批次集預設集]**。
 1. 在&#x200B;**[!UICONTROL 批次集預設集]**&#x200B;頁面的&#x200B;**[!UICONTROL 預設集名稱]**&#x200B;欄的左側，選取您要複製的批次集預設集核取方塊。
 1. 在工具列中選取&#x200B;**[!UICONTROL 複製]**。
 1. 在「**[!UICONTROL 複製批次集預設集]**」對話方塊的「**[!UICONTROL 標題]**」文字方塊中，輸入預設集的新名稱。
@@ -214,7 +251,7 @@ ht-degree: 0%
 
 ### 透過「批次集預設集」頁面，從資料夾中移除批次集預設集 {#remove-bsp-from-folders-via-bsp-page}
 
-1. 選取Experience Manager標誌，並移至&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL Assets]** > **[!UICONTROL 批次集預設集]**。
+1. 選取Experience Manager標誌，並前往&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL Assets]** > **[!UICONTROL 批次集預設集]**。
 1. 在&#x200B;**[!UICONTROL 批次集預設集]**&#x200B;頁面的&#x200B;**[!UICONTROL 預設集名稱]**&#x200B;欄的左側，選取一或多個批次集預設集的核取方塊，以從一或多個資料夾中移除這些預設集。
 1. 在工具列中選取&#x200B;**[!UICONTROL 從資料夾移除批次預設集]**。
 
@@ -231,7 +268,7 @@ ht-degree: 0%
 1. 導覽至您要移除一或多個批次集預設集的資料夾。
 1. 在頁面的&#x200B;**[!UICONTROL Name]**&#x200B;欄左側，選取資料夾的核取方塊。
 1. 在工具列中選取&#x200B;**[!UICONTROL 屬性]**。
-1. 在資料夾的「屬性」頁面上，選取&#x200B;**[!UICONTROL Dynamic Media處理中]**。
+1. 在資料夾的[內容]頁面上，選取[**[!UICONTROL 動態媒體處理]**]。
 
    ![bsp-apply-via-properties2.png](/help/assets/assets-dm/bsp-remove-via-properties2.png)
 
@@ -266,4 +303,4 @@ ht-degree: 0%
 >* [影像集](/help/assets/dynamic-media/image-sets.md)
 >* [迴轉集](/help/assets/dynamic-media/spin-sets.md)
 >* [在Dynamic Media中設定資料夾層級的選擇性發佈](/help/assets/dynamic-media/selective-publishing.md#selective-publish-configure-folder) — 如果您想深入瞭解將單一資料夾同步至[!DNL Dynamic Media]的相關資訊，請參閱主題中的「同步模式」。
->* [在Cloud Service中建立Dynamic Media設定](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services) — 如果您想深入瞭解將所有資料夾同步至[!DNL Dynamic Media]，請參閱主題中的「Dynamic Media同步模式」。
+>* [在Cloud Services中建立Dynamic Media設定](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services) — 如果您想深入瞭解將所有資料夾同步至[!DNL Dynamic Media]，請參閱主題中的「Dynamic Media同步模式」。

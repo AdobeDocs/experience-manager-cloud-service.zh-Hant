@@ -1,18 +1,55 @@
 ---
 title: 搭配使用者端裝置畫素比使用智慧型影像
-description: 瞭解如何在Adobe Experience Manager as a Cloud Service中搭配Dynamic Media使用使用者端裝置畫素比率和智慧型影像。
+description: 瞭解如何透過Dynamic Media在Adobe Experience Manager as a Cloud Service中將使用者端裝置畫素比與智慧型影像搭配使用。
 contentOwner: Rick Brough
 feature: Device Pixel Ratio,Smart Imaging
 role: Admin,User
 exl-id: 556710c7-133c-487a-8cd9-009a5912e94c
-source-git-commit: 26afff3a39a2a80c1f730287b99f3fb33bff0673
+source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
 workflow-type: tm+mt
-source-wordcount: '322'
-ht-degree: 0%
+source-wordcount: '368'
+ht-degree: 5%
 
 ---
 
 # 關於使用使用者端裝置畫素比(DPR)的智慧型影像 {#client-side-dpr}
+
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets與Edge Delivery Services整合</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI擴充性</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>啟用Dynamic Media Prime和Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>搜尋最佳實務</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>中繼資料最佳實務</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 開發人員文件</b></a>
+        </td>
+    </tr>
+</table>
 
 目前的智慧型影像處理解決方案是使用使用者代理字串來判斷所使用的裝置型別（桌上型電腦、平板電腦、行動裝置等）。
 
@@ -34,7 +71,7 @@ ht-degree: 0%
 
    Adobe建議您在&#x200B;_前載入此指令碼_&#x200B;任何其他指令碼，以便service worker立即開始初始化。
 
-1. 在HTML頁面內文區段頂端加入下列DPR影像標籤程式碼：
+1. 在HTML頁面內文區段的頂端加入下列DPR影像標籤程式碼：
 
    ```html
    <img src="aem_dm_dpr_1x.jpg" style="width:1px;height:1px;display:none"
@@ -45,7 +82,7 @@ ht-degree: 0%
        aem_dm_dpr_5x.jpg 5x">
    ```
 
-   您必須在HTML頁面中包含此DPR影像標籤代碼&#x200B;_before_。
+   您必須在HTML頁面的&#x200B;_前加入此DPR影像標籤代碼_。
 
 **使用者端轉譯的應用程式**
 
@@ -58,12 +95,11 @@ ht-degree: 0%
 
    您可以將兩個DPR指令碼合併為一個，以避免多個網路請求。
 
-   Adobe建議您在HTML頁面的&#x200B;_前載入這些指令碼_。
-Adobe也建議您將應用程式Bootstrap在不同HTML標籤下，而非使用內文元素。 原因在於`dprImageInjection.js`會在HTML頁面內文區段頂端動態地插入影像標籤。
+   Adobe建議您在HTML頁面的&#x200B;_之前，載入這些指令碼。_ Adobe也建議您在不同的HTML標籤下使用Bootstrap應用程式，而不是使用內文元素。 這是因為`dprImageInjection.js`會在HTML頁面的Body區段頂端動態地插入影像標籤。
 
 ## JavaScript檔案下載 {#client-side-dpr-script}
 
-下載中的下列JavaScript檔案僅供範例參考之用。 如果您要在HTML頁面中使用這些檔案，請務必編輯每個檔案的程式碼以符合您自己的需求。
+下載中的下列JavaScript檔案僅供範例參考之用。 如果您打算在HTML頁面中使用這些檔案，請務必編輯每個檔案的程式碼，以符合您自己的需求。
 
 * `dprImageInjection.js`
 * `srvinit.js`

@@ -3,17 +3,51 @@ title: 在Experience Manager中核准資產
 description: 瞭解如何核准 [!DNL Experience Manager]中的資產。
 role: User
 exl-id: fe61a0f1-94d3-409a-acb9-195979668c25
-source-git-commit: 28ba98828cfa34933a2ec4f5d9b7d9681d42fa5a
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '1115'
+source-wordcount: '1143'
 ht-degree: 11%
 
 ---
 
 # 核准[!DNL Experience Manager]中的資產
 
-| [搜尋最佳實務](/help/assets/search-best-practices.md) | [中繼資料最佳實務](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [具有 OpenAPI 功能的 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 開發人員文件](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets與Edge Delivery Services整合</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI擴充性</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>啟用Dynamic Media Prime和Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>搜尋最佳實務</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>中繼資料最佳實務</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 開發人員文件</b></a>
+        </td>
+    </tr>
+</table>
 
 >[!AVAILABILITY]
 >
@@ -27,7 +61,7 @@ ht-degree: 11%
 
 ## 開始之前 {#pre-requisites}
 
-您必須擁有AEM Assetsas a Cloud Service的存取權以及編輯資產&#x200B;**[!UICONTROL 檢閱狀態]**&#x200B;屬性的許可權。
+您必須擁有AEM Assets as a Cloud Service的存取權以及編輯資產&#x200B;**[!UICONTROL 檢閱狀態]**&#x200B;屬性的許可權。
 
 ## 設定
 
@@ -74,7 +108,7 @@ ht-degree: 11%
 一次快速核准多個資產，簡化工作流程。 您可以大量核准資產，以加快核准程式，節省時間並提高生產力。
 <br>請依照下列步驟在[!DNL Experience Manager Admin view]中核准大量資產：
 
-1. 在作者環境中建立資料夾(https://author-pXXX-eYYY.adobeaemcloud.com)。 將&#x200B;_XXX_&#x200B;取代為您的方案識別碼，並將&#x200B;_YYY_&#x200B;取代為Experience Manager中的環境ID。
+1. 在作者環境中建立資料夾(https://author-pXXX-eYYY.adobeaemcloud.com)。 將&#x200B;_XXX_&#x200B;取代為您的方案ID，並將&#x200B;_YYYY_&#x200B;取代為Experience Manager中的環境ID。
 1. 導覽至&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL Assets]** > **[!UICONTROL 中繼資料設定檔]**。
 1. 按一下頁面右上方的&#x200B;**[!UICONTROL 「建立]**」。
 1. 新增設定檔標題並按一下&#x200B;**[!UICONTROL 建立]**。 已成功建立中繼資料設定檔。
@@ -112,9 +146,9 @@ ht-degree: 11%
 
 1. 在右側面板「[!UICONTROL 屬性]」區段內提供的「**[!UICONTROL 狀態]**」欄位中，選取「**[!UICONTROL 已核准]**」。
 
-   如果您將狀態選取為`Approved`，而且已針對您的Experience Manager Assets啟用[具有OpenAPI功能的Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md)或[Content Hub](/help/assets/product-overview.md)，或兩者皆已啟用，則您可以在&#x200B;**[!UICONTROL 核准目標]**&#x200B;欄位中檢視`Delivery`和`Content Hub`可用選項。
+   如果您將狀態選取為`Approved`，並且已為您的Experience Manager Assets啟用[具有OpenAPI功能的Dynamic Media ](/help/assets/dynamic-media-open-apis-overview.md)或[Content Hub](/help/assets/product-overview.md)，或兩者皆已啟用，則您可以在&#x200B;**[!UICONTROL 核准目標]**&#x200B;欄位中檢視`Delivery`和`Content Hub`可用選項。
 
-   * 選取&#x200B;**[!UICONTROL 傳送]**，讓具有OpenAPI功能的Dynamic Media與Content Hub都能使用資產。 如果您未啟用Content Hub，選取此選項會讓資產僅供具有OpenAPI功能的Dynamic Media使用。
+   * 選取&#x200B;**[!UICONTROL 傳送]**，讓具備OpenAPI功能的Dynamic Media與Content Hub都能使用資產。 如果您未啟用Content Hub，選取此選項會讓資產僅供具有OpenAPI功能的Dynamic Media使用。
    * 選取&#x200B;**[!UICONTROL Content Hub]**，讓資產可供Content Hub使用。
 
    ![核准狀態](/help/assets/assets/approval-status-delivery.png)
@@ -135,9 +169,9 @@ ht-degree: 11%
 
 1. 選取資產並按一下&#x200B;**[!UICONTROL 詳細資料]**。
 
-1. 按一下右側窗格中可用的Dynamic Media圖示。
+1. 按一下右窗格中可用的Dynamic Media圖示。
 
-1. 選取&#x200B;**[!UICONTROL Dynamic Media]**&#x200B;面板中可用的具有OpenAPI的&#x200B;**[!UICONTROL Dynamic Media]**。
+1. 選取&#x200B;**[!UICONTROL Dynamic Media]**&#x200B;面板中可用的&#x200B;**[!UICONTROL Dynamic Media with OpenAPI]**。
 
 1. 按一下&#x200B;**[!UICONTROL 複製URL]**以複製資產的傳遞URL。
    ![動態轉譯](/help/assets/assets/dm-with-openapi-non-image-assets.png)
@@ -146,4 +180,4 @@ ht-degree: 11%
    >
    在Assets檢視中，剛提供複製已核准資產之傳送URL的選項。
 
-如需顯示在Dynamic Media面板中的其他轉譯資訊，請參閱[檢視和下載Dynamic Media轉譯](/help/assets/renditions.md#view-download-dm-renditions)。
+如需Dynamic Media面板中顯示之其他轉譯的相關資訊，請參閱[檢視及下載Dynamic Media轉譯](/help/assets/renditions.md#view-download-dm-renditions)。

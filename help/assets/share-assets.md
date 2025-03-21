@@ -4,17 +4,51 @@ description: 使用共用作為連結、下載和透過 [!DNL Brand Portal]、 [
 feature: Asset Management, Collaboration, Asset Distribution
 role: Admin, User
 exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '1847'
-ht-degree: 3%
+source-wordcount: '1875'
+ht-degree: 4%
 
 ---
 
 # 共用和散發在[!DNL Experience Manager]中管理的資產 {#share-assets-from-aem}
 
-| [搜尋最佳實務](/help/assets/search-best-practices.md) | [中繼資料最佳實務](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [具有OpenAPI功能的Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets開發人員檔案](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets與Edge Delivery Services整合</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI擴充性</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>啟用Dynamic Media Prime和Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>搜尋最佳實務</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>中繼資料最佳實務</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 開發人員文件</b></a>
+        </td>
+    </tr>
+</table>
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
@@ -115,9 +149,9 @@ Users with administrator privileges or with read permissions at `/var/dam/share`
 
 #### 自訂電子郵件範本的格式 {#format-of-custom-email-template}
 
-可使用純文字或HTML來自訂電子郵件範本。 可在`/libs/settings/dam/adhocassetshare/en.txt`找到預設的可編輯範本連結。 您可以建立檔案`/apps/settings/dam/adhocassetshare/en.txt`來覆寫範本。 您可以視需要多次修改電子郵件範本。
+可使用純文字或HTML自訂電子郵件範本。 可在`/libs/settings/dam/adhocassetshare/en.txt`找到預設的可編輯範本連結。 您可以建立檔案`/apps/settings/dam/adhocassetshare/en.txt`來覆寫範本。 您可以視需要多次修改電子郵件範本。
 
-| 預留位置 | 說明 |
+| 預留位置 | 描述 |
 |---|-----|
 | `${emailSubject}` | 電子郵件的主旨 |
 | `${emailInitiator}` | 建立電子郵件的使用者的電子郵件ID |
@@ -250,9 +284,9 @@ A message confirms that you unshared the asset. In addition, the entry for the a
 
 行銷人員和業務線使用者可透過輕鬆與其創意專業人士共用已核准的資產，
 
-* **Experience Manager案頭應用程式**：此應用程式可在Windows和Mac上運作。 請參閱[案頭應用程式總覽](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)。 若要瞭解任何授權案頭使用者如何輕鬆存取共用資產，請參閱[瀏覽、搜尋及預覽資產](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets)。 案頭使用者可以建立資產，並透過上傳新影像等方式與Experience Manager使用者的對應人員共用資產。 請參閱[使用案頭應用程式上傳資產](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem)。
+* **Experience Manager案頭應用程式**：此應用程式可在Windows和Mac上運作。 請參閱[案頭應用程式總覽](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)。 若要瞭解任何授權案頭使用者如何輕鬆存取共用資產，請參閱[瀏覽、搜尋及預覽資產](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets)。 案頭使用者可以建立資產，並透過上傳新影像等方式與身為Experience Manager使用者的同行共用資產。 請參閱[使用案頭應用程式上傳資產](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem)。
 
-* **AdobeAsset Link**：創意人員可以直接從[!DNL Adobe InDesign]、[!DNL Adobe Illustrator]和[!DNL Adobe Photoshop]中搜尋和使用資產。
+* **Adobe Asset Link**：創意專業人士可以直接從[!DNL Adobe InDesign]、[!DNL Adobe Illustrator]和[!DNL Adobe Photoshop]中搜尋和使用資產。
 
 ## 設定資產共用 {#configure-sharing}
 
@@ -305,14 +339,14 @@ Add content or link about how to configure sharing via BP, DA, AAL, etc.
 
 ### 使用[!DNL Adobe Asset Link]的設定 {#configure-asset-link}
 
-「Adobe資產連結」可簡化創意人員與行銷人員在內容建立過程中的合作流程。 它將[!DNL Adobe Experience Manager Assets]與[!DNL Creative Cloud]個案頭應用程式、[!DNL Adobe InDesign]、[!DNL Adobe Photoshop]和[!DNL Adobe Illustrator]連線。 [!DNL Adobe Asset Link]面板可讓創意人員存取及修改儲存在[!DNL Assets]中的內容，而不需離開他們最熟悉的創意應用程式。
+Adobe Asset Link可簡化創意人員與行銷人員在內容建立過程中的合作。 它將[!DNL Adobe Experience Manager Assets]與[!DNL Creative Cloud]個案頭應用程式、[!DNL Adobe InDesign]、[!DNL Adobe Photoshop]和[!DNL Adobe Illustrator]連線。 [!DNL Adobe Asset Link]面板可讓創意人員存取及修改儲存在[!DNL Assets]中的內容，而不需離開他們最熟悉的創意應用程式。
 
 請參閱[如何設定 [!DNL Assets] 以搭配 [!DNL Adobe Asset Link]](https://helpx.adobe.com/tw/enterprise/using/configure-aem-assets-for-asset-link.html)使用。
 
 ## 最佳作法和疑難排解 {#bestpractices}
 
 * 名稱中包含空白字元的資產資料夾或集合可能無法共用。
-* 如果使用者無法下載共用資產，請向您的Experience Manager管理員查詢下載限制是什麼。 預設值為100 MB。
+* 如果使用者無法下載共用資產，請洽詢Experience Manager管理員的下載限製為何。 預設值為100 MB。
 * 若要讓使用者預覽使用連結共用共用的視訊，該視訊必須在存放庫內視訊節點中的`/jcr:content/renditions`位置提供靜態視訊轉譯。 預覽不依存於[!DNL Dynamic Media]轉譯的可用性。
 * 透過連結共用下載視訊資產時，[!DNL Dynamic Media]轉譯未包含在已下載的封存檔中。
 

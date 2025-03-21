@@ -3,25 +3,59 @@ title: 在 [!DNL the Content Hub]中預覽資產及其屬性
 description: 瞭解如何預覽 [!DNL Content Hub]中的資產和屬性
 role: User
 exl-id: a85af980-4c51-4d30-9fad-afd16370e9db
-source-git-commit: 2be8d61f1f00444f01772515760d15f2a6f81cd9
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '682'
-ht-degree: 10%
+source-wordcount: '710'
+ht-degree: 14%
 
 ---
 
 # 在Content Hub中預覽資產及其屬性 {#asset-properties}
 
-| [搜尋最佳實務](/help/assets/search-best-practices.md) | [中繼資料最佳實務](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [具有 OpenAPI 功能的 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 開發人員文件](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets與Edge Delivery Services整合</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI擴充性</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>啟用Dynamic Media Prime和Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>搜尋最佳實務</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>中繼資料最佳實務</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 開發人員文件</b></a>
+        </td>
+    </tr>
+</table>
 
 ![中繼資料橫幅影像](assets/metadata-banner-image.png)
 
 >[!AVAILABILITY]
 >
->Content Hub指南現在提供PDF格式。 下載整份指南，並使用Adobe Acrobat AI Assistant回答您的疑問。
+>現已提供 PDF 格式的 Content Hub 指南。下載完整指南，並使用 Adobe Acrobat AI 助理來回答您的查詢問題。
 >
->[!BADGE Content Hub指南PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
+>[!BADGE Content Hub 指南 PDF]{type=Informative url="https://helpx.adobe.com/tw/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
 
 [!DNL The Content Hub]可讓您檢視對有效率資產發佈至關重要的資產相關資訊。 這是資產所有可用資料的集合。
 
@@ -61,16 +95,16 @@ ht-degree: 10%
 <table> 
     <tbody>
      <tr>
-      <th><strong>檔案型別</strong></th>
+      <th><strong>檔案類型</strong></th>
       <th><strong>支援的格式</strong></th>
      </tr>
      <tr>
       <td>影像</td>
       <td>
         <ul>
-            <li>[！UICONTROLJPEG]</li> 
+            <li>[！UICONTROL JPEG]</li> 
             <li>[！UICONTROL PNG]</li> 
-            <li>[！UICONTROLSVG]</li>
+            <li>[！UICONTROL SVG]</li>
         </ul>
       </td>
      </tr>
@@ -97,7 +131,7 @@ ht-degree: 10%
       <td>列印媒體</td>
       <td>
         <ul>
-            <li>[！UICONTROLPDF]</li>  
+            <li>[！UICONTROL PDF]</li>  
         </ul>
       </td>
      </tr>  
@@ -114,7 +148,7 @@ ht-degree: 10%
 
 * **智慧標籤：** [!DNL The Content Hub]使用Adobe Sensei的智慧內容服務，在標籤架構上使用辨識演演算法來訓練資產。 然後，此內容智慧可用來將相關標籤套用至不同的資產集。 智慧標籤可協助您快速找到相關資產，提升專案的內容速度。 智慧型標籤即是不含在影像中的資產資訊範例。 [!DNL Experience Manager Assets]預設會自動將智慧標籤套用至資產。
 
-* **顏色標籤：** [顏色標籤](#https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/color-tag-images.html?lang=en)可協助您使用在資產中自動識別顏色(使用Adobe的Sensei AI功能)來識別資產。
+* **色彩標籤：** [色彩標籤](#https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/color-tag-images.html?lang=en)可協助您使用Adobe的Sensei AI功能，在資產中自動識別的顏色，識別資產。
 
 * 上傳日期
 

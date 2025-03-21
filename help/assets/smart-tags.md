@@ -5,18 +5,52 @@ contentOwner: AG
 feature: Smart Tags
 role: Admin, User
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '2478'
+source-wordcount: '2506'
 ht-degree: 7%
 
 ---
 
 
-# 將智慧標籤新增至AEM中的資產 {#smart-tags-assets-aem}
+# 在AEM中新增智慧標籤至資產 {#smart-tags-assets-aem}
 
-| [搜尋最佳實務](/help/assets/search-best-practices.md) | [中繼資料最佳實務](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [具有OpenAPI功能的Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets開發人員檔案](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets與Edge Delivery Services整合</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI擴充性</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>啟用Dynamic Media Prime和Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>搜尋最佳實務</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>中繼資料最佳實務</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 開發人員文件</b></a>
+        </td>
+    </tr>
+</table>
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
@@ -45,7 +79,7 @@ ht-degree: 7%
 |----|-----|------|
 | image/jpeg | CSV | MP4 (H264/AVC) |
 | image/tiff | DOC | MKV (H264/AVC) |
-| image/png | DOCX | MOV (H264/AVC，運動JPEG) |
+| image/png | DOCX | MOV (H264/AVC、Motion JPEG) |
 | image/bmp | HTML | AVI (indeo4) |
 | image/gif | PDF | FLV (H264/AVC、vp6f) |
 | image/pjpeg | PPT | WMV (WMV2) |
@@ -97,7 +131,7 @@ AEM預設會將智慧標籤自動新增至文字型資產和影片。 若要將�
 
 ![說明性影像，以示範訓練准則](assets/do-not-localize/completeness.png)
 
-**標籤數目**：Adobe建議您使用至少兩個不同的標籤以及每個標籤至少十個不同的影像來訓練模型。 在單一標籤模型中，請勿新增超過50個標籤。
+**標籤數目**： Adobe建議您使用至少兩個不重複標籤以及每個標籤至少十個不同的影像來訓練模型。 在單一標籤模型中，請勿新增超過50個標籤。
 
 **範例數目**：請為每個標籤新增至少10個範例。 不過，Adobe建議使用約30個範例。 支援每個標籤最多50個範例。
 
@@ -194,7 +228,7 @@ AEM預設會將智慧標籤自動新增至文字型資產和影片。 若要將�
 
 ## 在AEM中使用智慧標籤來標籤資產 {#tag-assets}
 
-上傳時[!DNL Experience Manager Assets]會自動標籤所有支援的資產型別。 標籤功能預設為啟用並運作。 AEM會近乎即時套用適當的智慧標籤。<!-- TBD: You can also apply the tagging workflow on-demand. The workflow applies to both, assets and folders. -->
+上傳時[!DNL Experience Manager Assets]會自動標籤所有支援的資產型別。 標籤功能預設為啟用並運作。 AEM會以幾近即時的方式套用適當的智慧標籤。<!-- TBD: You can also apply the tagging workflow on-demand. The workflow applies to both, assets and folders. -->
 
 * 針對影像和影片，智慧標籤是以某些視覺方面為基礎。
 

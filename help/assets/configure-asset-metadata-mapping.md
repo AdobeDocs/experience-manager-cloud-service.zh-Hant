@@ -1,22 +1,56 @@
 ---
 title: 設定Workfront和Experience Manager Assets之間的資產中繼資料對應
-description: 在Adobe Workfront和Experience Manageras a Cloud Service應用程式之間對應資產中繼資料欄位。 對應中繼資料欄位後，當您從Workfront傳送資產至Experience Manager Assets時，可以在Experience Manager Assets中檢視對應的資產中繼資料。
+description: 在Adobe Workfront和Experience Manager as a Cloud Service應用程式之間對應資產中繼資料欄位。 對應中繼資料欄位後，當您從Workfront傳送資產至Experience Manager Assets時，可以在Experience Manager Assets中檢視對應的資產中繼資料。
 exl-id: 71400769-b2bc-4f5d-8b6b-a73598e837b4
 feature: Metadata, Workfront Integrations and Apps
 role: User, Admin
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '1030'
-ht-degree: 4%
+source-wordcount: '1058'
+ht-degree: 6%
 
 ---
 
 # 設定Adobe Workfront和Experience Manager Assets之間的資產中繼資料對應 {#asset-metadata-mapping-workfront-aem-assets}
 
-| [搜尋最佳實務](/help/assets/search-best-practices.md) | [中繼資料最佳實務](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [具有OpenAPI功能的Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets開發人員檔案](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets與Edge Delivery Services整合</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI擴充性</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>啟用Dynamic Media Prime和Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>搜尋最佳實務</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>中繼資料最佳實務</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 開發人員文件</b></a>
+        </td>
+    </tr>
+</table>
 
-您可以在Adobe Workfront和Experience Manageras a Cloud Service應用程式之間對應資產中繼資料欄位。 對應中繼資料欄位後，當您從Workfront傳送資產至Experience Manager Assets時，可以在Experience Manager Assets中檢視對應的資產中繼資料。
+您可以在Adobe Workfront和Experience Manager as a Cloud Service應用程式之間對應資產中繼資料欄位。 對應中繼資料欄位後，當您從Workfront傳送資產至Experience Manager Assets時，可以在Experience Manager Assets中檢視對應的資產中繼資料。
 
 例如，如果您需要保留影像的中繼資料欄位，例如名稱、說明，以及影像在Workfront中屬於的專案，則請在將影像傳送至Experience Manager Assets時設定這些欄位，並將其對應至Experience Manager Assets屬性。
 
@@ -32,9 +66,9 @@ ht-degree: 4%
 
 ## 先決條件 {#prerequisites}
 
-* 管理員存取Workfront和Experience Manager Assetsas a Cloud Service應用程式。
+* Workfront和Experience Manager Assets as a Cloud Service應用程式的管理員存取權。
 
-* [Workfront與Experience Manager Assetsas a Cloud Service應用程式](https://one.workfront.com/s/document-item?bundleId=the-new-workfront-experience&amp;topicId=Content%2FDocuments%2FAdobe_Workfront_for_Experience_Manager_Assets_Essentials%2Fsetup-asset-essentials.htm&amp;_LANG=enus)之間的整合。
+* [Workfront與Experience Manager Assets as a Cloud Service應用程式](https://one.workfront.com/s/document-item?bundleId=the-new-workfront-experience&amp;topicId=Content%2FDocuments%2FAdobe_Workfront_for_Experience_Manager_Assets_Essentials%2Fsetup-asset-essentials.htm&amp;_LANG=enus)之間的整合。
 
 ## 在Workfront中設定中繼資料對應 {#set-up-metadata-mapping}
 
@@ -73,13 +107,13 @@ ht-degree: 4%
 
 1. 按一下「**[!UICONTROL 儲存]**」。
 
-## 在Experience Manageras a Cloud Service中設定資產中繼資料對應 {#metadata-mapping-aem}
+## 在Experience Manager as a Cloud Service中設定資產中繼資料對應 {#metadata-mapping-aem}
 
-在[在Adobe Workfront](#set-up-metadata-mapping)中設定資產中繼資料對應後，您必須在Experience Manager Assetsas a Cloud Service應用程式中使用相同的對應，以顯示影像的適當中繼資料結果。
+在[在Adobe Workfront](#set-up-metadata-mapping)中設定資產中繼資料對應後，您必須在Experience Manager Assets as a Cloud Service應用程式中使用相同的對應，以顯示影像的適當中繼資料結果。
 
 在Experience Manager Assets中使用中繼資料結構描述來執行中繼資料對應。 您可以編輯新新增或現有的中繼資料結構表單。 中繼資料結構表單包含索引標籤以及索引標籤內的表單專案。 您可以將這些表單專案對應/設定至CRX存放庫中繼資料節點內的欄位。 您可以將索引標籤或表單專案新增到中繼資料結構表單。 如需詳細資訊，請參閱[中繼資料結構](metadata-schemas.md)。
 
-若要在Experience Manager Assets中使用新的中繼資料表單來設定中繼資料對應as a Cloud Service：
+若要在Experience Manager Assets as a Cloud Service中使用新的中繼資料表單來設定中繼資料對應：
 
 1. 導覽至&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL Assets]** > **[!UICONTROL 中繼資料結構描述]**。
 
@@ -116,13 +150,13 @@ ht-degree: 4%
    1. 在&#x200B;**[!UICONTROL 對應至屬性]**&#x200B;欄位中指定`./jcr:content/metadata/dc:description`。
 在Workfront中設定對應時，您將`dc:description`個Experience Manager Assets欄位對應至檔案>說明Workfront欄位。
 
-1. 按一下[儲存]儲存變更。****
+1. 按一下「**[!UICONTROL 儲存]**」以儲存變更。
 
    >[!VIDEO](https://video.tv.adobe.com/v/344314)
 
 ## 套用中繼資料設定至影像資料夾 {#apply-metadata-settings-image-folder}
 
-在Experience Manageras a Cloud Service應用程式中設定中繼資料設定後，將這些設定套用至包含從Workfront應用程式](#send-image-workfront-assets)傳送之影像的[資料夾。
+在Experience Manager as a Cloud Service應用程式中設定中繼資料設定後，將這些設定套用至包含從Workfront應用程式](#send-image-workfront-assets)傳送之影像的[資料夾。
 
 若要將中繼資料設定套用至影像資料夾：
 

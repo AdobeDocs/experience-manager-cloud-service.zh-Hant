@@ -1,19 +1,53 @@
 ---
-title: 適用於  [!DNL Adobe Experience Manager]  as a  [!DNL Cloud Service] 的資產選擇器
+title: 適用於  [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 的資產選擇器
 description: 使用函式來自訂應用程式內的資產選擇器。
 role: Admin, User
 exl-id: 0fd0a9f7-8c7a-4c21-9578-7c49409df609
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '1261'
-ht-degree: 24%
+source-wordcount: '1289'
+ht-degree: 26%
 
 ---
 
 # 資產選擇器自訂 {#asset-selector-customization}
 
-| [搜尋最佳實務](/help/assets/search-best-practices.md) | [中繼資料最佳實務](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [具有OpenAPI功能的Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets開發人員檔案](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets與Edge Delivery Services整合</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI擴充性</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>啟用Dynamic Media Prime和Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>搜尋最佳實務</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>中繼資料最佳實務</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 開發人員文件</b></a>
+        </td>
+    </tr>
+</table>
 
 Asset Selector可讓您根據偏好設定、需求或功能需求來自訂各種元件。 您可以自訂下列元件[微前端資產選擇器](#overview-asset-selector.md)：
 
@@ -138,7 +172,7 @@ selectionType: 'multiple' // 'single' for single selection
 // the `handleSelection` callback, always gets you the array of selected assets
 ```
 
-**綱要語法**
+**結構語法**
 
 ```
 interface SelectedAsset {
@@ -170,7 +204,7 @@ interface SelectedAsset {
 
 下表說明選取之資產物件的一些重要屬性。
 
-| 屬性 | 類型 | 說明 |
+| 屬性 | 類型 | 描述 |
 |---|---|---|
 | *repo:repositoryId* | 字串 | 儲存資產之存放庫的唯一識別碼。 |
 | *repo:id* | 字串 | 資產的唯一識別碼。 |
@@ -196,7 +230,7 @@ interface SelectedAsset {
 | *`_links.<https://ns.adobe.com/adobecloud/rel/rendition[].width>`* | 數字 | 轉譯的寬度。 |
 | *`_links.<https://ns.adobe.com/adobecloud/rel/rendition[].height>`* | 數字 | 轉譯的高度。 |
 
-### 使用物件綱要處理資產選擇 {#handling-selection}
+### 使用物件結構處理資產選擇 {#handling-selection}
 
 `handleSelection` 屬性用於處理資產選擇器中單個或多個資產選擇。下面的範例說明使用 `handleSelection` 的語法。
 
@@ -614,4 +648,4 @@ const ControlledUploadExample = () => {
 >* [資產選擇器屬性](/help/assets/asset-selector-properties.md)
 >* [整合資產選擇器與各種應用程式](/help/assets/integrate-asset-selector.md)
 >* [資產選擇器屬性](/help/assets/asset-selector-properties.md)
->* [整合Asset Selector與Dynamic Media以及OpenAPI功能](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
+>* [整合資產選擇器與具備 OpenAPI 功能的 Dynamic Media](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)

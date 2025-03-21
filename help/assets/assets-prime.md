@@ -4,17 +4,51 @@ description: 進一步瞭解Assets Prime的主要方面，例如主要優點、�
 feature: Asset Management
 role: User, Admin
 exl-id: 012f94c5-b1c3-4799-8eaf-af68d06c036f
-source-git-commit: 92faabc50ce4b83ad1015bbbadeac416d66c3b0b
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '1124'
-ht-degree: 15%
+source-wordcount: '1152'
+ht-degree: 16%
 
 ---
 
-# [!DNL Assets]個as a Cloud ServicePrime  {#assets-prime}
+# [!DNL Assets] as a Cloud Service Prime  {#assets-prime}
 
-| [搜尋最佳實務](/help/assets/search-best-practices.md) | [中繼資料最佳實務](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [具有 OpenAPI 功能的 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 開發人員文件](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets與Edge Delivery Services整合</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI擴充性</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>啟用Dynamic Media Prime和Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>搜尋最佳實務</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>中繼資料最佳實務</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 開發人員文件</b></a>
+        </td>
+    </tr>
+</table>
 
 ![AEM Assets Prime橫幅影像](/help/assets/assets/aem-assets-prime-package-banner.png)
 
@@ -38,7 +72,7 @@ Assets as a Cloud Service Prime包含輕量版DAM，可讓您執行各種關鍵�
 
   >[!NOTE]
   >
-  >Dynamic Media具備OpenAPI功能，可讓您存取基本的影像修飾元，例如旋轉、裁切（僅限手動 — 無智慧型裁切）、翻轉、大小、偏好webp、高度、寬度、品質、格式和自我調整視訊串流，這些功能也隨Assets Prime提供。 請聯絡Adobe客戶團隊以進一步瞭解。
+  >Assets Prime也提供具有OpenAPI功能的Dynamic Media，可讓您存取旋轉、裁切（僅限手動 — 無智慧型裁切）、翻轉、大小、偏好webp、高度、寬度、品質、格式和自我調整視訊串流等基本影像修飾元。 請聯絡Adobe帳戶團隊以進一步瞭解。
 
 1. [建立新程式](/help/journey-onboarding/create-program.md)。
 
@@ -48,7 +82,7 @@ Assets as a Cloud Service Prime包含輕量版DAM，可讓您執行各種關鍵�
 
 ## 啟用Assets as a Cloud Service Prime{#enable-assets-prime}
 
-使用Cloud Manager建立新計畫時啟用Assets Prime。 執行以下步驟：
+使用Assets建立新程式時啟用Cloud Manager Prime。 執行以下步驟：
 
 1. 以系統管理員身分登入Cloud Manager。 確保您在登入時選取正確的組織。
 
@@ -75,11 +109,11 @@ Assets as a Cloud Service Prime包含輕量版DAM，可讓您執行各種關鍵�
 >
 >Assets Prime僅允許您建立生產環境。 成功建立生產環境後，「新增環境」選項就無法再使用。
 
-Assets Prime現已啟用Experience Manager Assetsas a Cloud Service。
+Assets Prime現已為Experience Manager Assets as a Cloud Service啟用。
 
 ![AEM Assets Prime可供使用](assets/aem-assets-prime-setup-complete.png)
 
-系統管理員會自動獲得AEM管理員的許可權，並會收到電子郵件以導航到Admin Console來管理產品設定檔。
+系統管理員會自動獲得AEM管理員的許可權，並會收到一封電子郵件，讓您導覽至Admin Console以管理產品設定檔。
 
 
 Admin Console上的AEM as a Cloud Service執行個體包含下列產品設定檔：
@@ -97,7 +131,7 @@ Admin Console上的AEM as a Cloud Service執行個體包含下列產品設定檔
 
 您可以開始將使用者或使用者群組新增至AEM Assets Collaborator使用者和AEM Assets超級使用者產品設定檔。 如需詳細資訊，請參閱[加入AEM Assets Collaborator使用者](#onboard-collaborator-users)和[加入AEM Assets超級使用者](#onboard-power-users)。
 
-如果您已啟用適用於Assets的Content Hubas a Cloud Service，則在Admin Console的AEM Assetsas a Cloud Service中會建立一個新執行個體，並將`delivery`當作尾碼：
+如果您已啟用適用於Assets as a Cloud Service的Content Hub，則在Admin Console上的AEM Assets as a Cloud Service中會建立一個新執行個體，其尾碼為`delivery`：
 
 ![Content Hub的新執行個體](assets/new-instance-content-hub.png)
 
@@ -119,11 +153,11 @@ Admin Console上的AEM as a Cloud Service執行個體包含下列產品設定檔
 
 ## 上線AEM Assets Collaborator使用者 {#onboard-collaborator-users}
 
-AEM Assets Collaborator使用者可以透過貴組織在其他Adobe產品和非Adobe應用程式中提供的Assets整合來使用Experience Manager的資產，使用內建Adobe Express和Firefly來建立和編輯資產(運用專業設計的範本、品牌套件、Adobe Stock資產等)，以及使用AEM Assets Content Hub入口網站存取和利用貴組織核准的資產。
+AEM Assets Collaborator使用者可以透過貴組織在其他Assets產品和非Adobe應用程式中提供的Adobe整合來使用Experience Manager的資產，使用內建Adobe Express和Firefly來建立和編輯資產(利用專業設計的範本、品牌套件、Adobe Stock資產等)，以及使用AEM Assets Content Hub入口網站存取和利用貴組織核准的資產。
 
 若要加入Collaborator使用者：
 
-1. 按一下Admin Console上產品清單中的Experience Manager Assets產品名稱，存取AEM as a Cloud Service產品設定檔。
+1. 按一下Experience Manager Assets產品清單中的AEM as a Cloud Service產品名稱，存取Admin Console產品設定檔。
 
 1. 按一下AEM as a Cloud Service的生產製作例項：
    ![AEM as a Cloud Service的產品設定檔](assets/aem-cloud-service-instances.png)
@@ -131,21 +165,21 @@ AEM Assets Collaborator使用者可以透過貴組織在其他Adobe產品和非A
 1. 按一下Collaborators使用者產品設定檔，然後按一下&#x200B;**[!UICONTROL 新增使用者]**以將使用者新增至產品設定檔。
    ![使用者產品設定檔](assets/aem-assets-collaborator-user-permissions.png)
 
-1. 按一下[儲存]儲存變更。****
+1. 按一下「**[!UICONTROL 儲存]**」以儲存變更。
 
 您也可以存取及檢視指派給Collaborator使用者的服務，如下圖所示：
 
 為Collaborator使用者提供![服務](assets/aem-assets-collaborator-users.png)
 
-預設已啟用`Adobe Express`和`AEM Assets Collaborator Users`服務。 您可以視需要關閉和開啟切換按鈕，但Adobe建議使用為產品設定檔啟用的預設服務。
+預設已啟用`Adobe Express`和`AEM Assets Collaborator Users`服務。 您可以視需求開啟或關閉切換按鈕，但Adobe建議使用針對產品設定檔啟用的預設服務。
 
 ## 入門AEM Assets超級使用者 {#onboard-power-users}
 
-AEM Assets進階使用者可存取所有AEM Assets功能，包括管理資產、許可權、中繼資料以及有關數位資產的整體控管和自動化、透過其他Adobe和非Adobe應用程式中提供給您組織的Assets整合來使用Experience Manager中的資產、使用內建Adobe Express和Firefly來建立和編輯資產(利用專業設計的範本、品牌套件、Adobe Stock資產等)，以及使用AEM Assets Content Hub入口網站存取和利用您組織中已核准的資產。
+AEM Assets進階使用者可存取所有AEM Assets功能，包括管理資產、許可權、中繼資料以及有關數位資產的整體控管和自動化、透過您組織在其他Adobe和非Adobe應用程式中可用的Assets整合來使用Experience Manager中的資產、使用內建Adobe Express和Firefly利用專業設計的範本、品牌套件、Adobe Stock資產等建立和編輯資產，以及使用AEM Assets Content Hub入口網站存取和利用您組織中已核准的資產。
 
 若要內建進階使用者：
 
-1. 按一下Admin Console上產品清單中的Experience Manager Assets產品名稱，存取AEM as a Cloud Service產品設定檔。
+1. 按一下Experience Manager Assets產品清單中的AEM as a Cloud Service產品名稱，存取Admin Console產品設定檔。
 
 1. 按一下AEM as a Cloud Service的生產製作例項：
    ![AEM as a Cloud Service的產品設定檔](assets/aem-cloud-service-instances.png)
@@ -153,10 +187,10 @@ AEM Assets進階使用者可存取所有AEM Assets功能，包括管理資產、
 1. 按一下Power users產品設定檔，然後按一下&#x200B;**[!UICONTROL 新增使用者]**以將使用者新增至產品設定檔。
    ![使用者產品設定檔](assets/aem-assets-power-user-permissions.png)
 
-1. 按一下[儲存]儲存變更。****
+1. 按一下「**[!UICONTROL 儲存]**」以儲存變更。
 
 您也可以存取及檢視指派給超級使用者的服務，如下圖所示：
 
 超級使用者的![服務](assets/aem-assets-power-users.png)
 
-預設已啟用`Adobe Express`和`AEM Assets Power Users`服務。 您可以視需要關閉和開啟切換按鈕，但Adobe建議使用為產品設定檔啟用的預設服務。
+預設已啟用`Adobe Express`和`AEM Assets Power Users`服務。 您可以視需求開啟或關閉切換按鈕，但Adobe建議使用針對產品設定檔啟用的預設服務。
