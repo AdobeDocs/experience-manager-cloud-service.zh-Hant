@@ -5,10 +5,10 @@ exl-id: dc460490-dfc8-4a46-a468-3d03e593447d
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: 07327f80b23e1e6fdbb3fb49d861221877724d39
+source-git-commit: 6306ad88b889197aff377dc0a72ea232cd76ff9c
 workflow-type: tm+mt
-source-wordcount: '900'
-ht-degree: 100%
+source-wordcount: '943'
+ht-degree: 92%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 
 在[AEM Headless 內容架構師歷程](overview.md)一開始，[簡介](introduction.md)部分介紹了和建立 Headless 內容模型相關的基本概念和術語。
 
-本文以這些基本知識為基礎，以便您了解如何為您的 AEM Headless 專案建立內容模型。
+本文基於這些原則，讓您瞭解如何為AEM Headless專案建立內容模型。
 
 ## 目標 {#objective}
 
@@ -87,9 +87,12 @@ AEM 提供以下資料類型用於建立內容模型：
 * 日期和時間
 * 列舉
 * 標記
-* 內容參考
 * 片段參考
+* 片段參考 (UUID)
+* 內容參考
+* 內容參考 (UUID)
 * JSON 物件
+* 標籤預留位置
 
 >[!NOTE]
 >
@@ -99,12 +102,12 @@ AEM 提供以下資料類型用於建立內容模型：
 
 兩種資料類型允許您參考特定片段之外的內容：
 
-* **內容參考**
-這提供對任何類型之其他內容的簡單參考。
+* **內容參考**/**內容參考(UUID)**
+這可提供任何型別其他內容的簡單參考。
 例如，您可以參考在指定之位置的影像。
 
-* **片段參考**
-這提供對其他內容片段的參考。
+* **片段參考**/**片段參考(UUID)**
+這會提供其他內容片段的參考資料。
 此類型的參考用於建立巢狀內容，引入建立內容模型時所需的關係。
 可以設定此資料類型以允許片段作者：
    * 直接編輯參考的片段。
@@ -113,6 +116,10 @@ AEM 提供以下資料類型用於建立內容模型：
 >[!NOTE]
 >
 >您也可以使用文字區塊內的連結建立臨時參考。
+
+>[!NOTE]
+>
+>在編輯器中，UUID參照會指定參照資源的路徑；在內部此類參照會儲存為參照資源的通用唯一ID (UUID)。
 
 ## 結構階層 (巢狀片段) {#levels-of-structure-nested-fragments}
 
