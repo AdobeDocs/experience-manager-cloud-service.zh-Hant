@@ -4,10 +4,10 @@ description: 了解如何使用試算表管理各種值的表格資料，例如�
 feature: Edge Delivery Services
 exl-id: 26d4db90-3e4b-4957-bf21-343c76322cdc
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
-source-wordcount: '1284'
-ht-degree: 100%
+source-git-commit: fcbe7d79958301c39c8f894ff03ad39af6aded5b
+workflow-type: tm+mt
+source-wordcount: '1294'
+ht-degree: 99%
 
 ---
 
@@ -180,10 +180,10 @@ https://<aem-instance>/bin/asynccommand?optype=JOBINF&jobid=2024/10/24/14/1/8da6
 
 現在您已經知道如何建立重新導向試算表，您可以建立任何其他標準試算表類型：
 
-* 預留位置
-* 中繼資料
-* 標頭
-* 設定
+* [預留位置](https://www.aem.live/docs/placeholders)
+* [中繼資料](https://www.aem.live/docs/bulk-metadata)
+* [標頭](https://www.aem.live/docs/custom-headers)
+* [組態](https://www.aem.live/docs/configuration) — 例如[快取失效](https://www.aem.live/docs/byo-cdn-adobe-managed#setup-push-invalidation)
 * [分類法](/help/edge/wysiwyg-authoring/taxonomy.md)
 
 只需按照[建立試算表](#spreadsheet)和[更新 paths.json](#paths-json) 等部分中的相同步驟進行，並選擇適當範本且正確更新 `paths.json` 檔案即可。
