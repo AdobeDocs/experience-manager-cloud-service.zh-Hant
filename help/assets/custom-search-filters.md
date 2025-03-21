@@ -3,9 +3,9 @@ title: 自訂搜尋篩選器
 description: 瞭解如何自訂搜尋篩選器表單
 role: User, Leader, Developer
 exl-id: 383e8165-439e-447b-a19d-d5446238a13f
-source-git-commit: 0484b8ac158f0590d5ada7536cf8b547c71ab686
+source-git-commit: 859254142976f15f92df400f6d62cc0d89eaabb8
 workflow-type: tm+mt
-source-wordcount: '1280'
+source-wordcount: '1294'
 ht-degree: 13%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 13%
 搜尋篩選器可讓您根據各種引數（例如日期、檔案型別、標籤和相關性）來縮小搜尋結果，從而提高搜尋查詢的精確度。 透過套用篩選器，您可以快速篩選出最相關的結果。 這不僅可節省時間，還能根據特定偏好和需求定製結果，進而改善整體搜尋體驗。
 檢視有關[搜尋](search-assets-view.md)的更多資訊。
 
-自訂搜尋篩選條件只能對應至可搜尋屬性索引中的專案。 在設定自訂篩選器體驗之前，請確定包含任何自訂中繼資料。 [!DNL Assets view]協助自訂搜尋篩選器，以簡化搜尋程式。 若要自訂搜尋篩選依據範本，請執行下列步驟：
+自訂搜尋篩選器AEM Assets只能對應至您的可搜尋屬性索引中的專案。 在設定自訂篩選器體驗之前，請確定包含任何自訂中繼資料。 [!DNL Assets view]協助自訂搜尋篩選器，以簡化搜尋程式。 若要自訂AEM Assets自訂搜尋篩選器，請執行以下步驟：
 
 1. 瀏覽至「**[!UICONTROL 設定]**」>「**[!UICONTROL 一般設定]**」。
 1. 前往&#x200B;**[!UICONTROL 搜尋]**&#x200B;標籤。 按一下&#x200B;**[!UICONTROL 自訂]**&#x200B;設定您的搜尋表單。
@@ -39,7 +39,7 @@ Assets檢視提供下列可依需求重新配置的自訂篩選器：
 
 ### 篩選元素 {#filter-elements}
 
-您可以在自訂搜尋篩選畫布上使用篩選元素的集合。 這些元素會根據搜尋屬性屬性的可用性來重新配置。 不過，您可以根據自己的需求自訂[篩選器屬性](#filter-properties)。 [!DNL Assets view]中有以下篩選元素：
+自訂篩選器AEM Assets可讓您在自訂搜尋篩選器畫布上使用篩選器元素的集合。 這些元素會根據搜尋屬性屬性的可用性來重新配置。 不過，您可以根據自己的需求自訂[篩選器屬性](#filter-properties)。 [!DNL Assets view]中有以下篩選元素：
 
 <table>
     <tr>
@@ -328,7 +328,7 @@ Assets檢視提供下列可依需求重新配置的自訂篩選器：
 
 #### 篩選器屬性 {#filter-properties}
 
-每個篩選元素都與一組屬性相關聯。 篩選和預先設定的元素中使用下列屬性：
+每個篩選元素都與一組屬性相關聯。 AEM Assets自訂搜尋篩選器在篩選器和預先設定的元素中使用以下屬性：
 
 <table>
     <tr>
