@@ -2,9 +2,9 @@
 title: 為 Edge Delivery Services 製作內容時，將 AEM Assets 進行整合
 description: 瞭解如何將AEM Assets與Edge Delivery Services整合。 此整合可讓您將AEM Assets與Microsoft Word和Google Docs整合、將AEM Assets與Universal Editor整合、將Dynamic Media與OpenAPI功能與Universal Editor整合，以及將Dynamic Media與OpenAPI功能與Microsoft Word和Google Docs整合。
 exl-id: e58db2ce-a55a-49b3-ae8e-709b5ea8d095
-source-git-commit: 38d4ad078233fcb22422b8c771e7e553cc082c41
+source-git-commit: e4a71d1a513bebed67b9571a483871dc16c36daa
 workflow-type: tm+mt
-source-wordcount: '757'
+source-wordcount: '820'
 ht-degree: 3%
 
 ---
@@ -18,21 +18,21 @@ ht-degree: 3%
 您可以在下列位置編輯內容：
 
 * [Microsoft Word或Google Docs](#integrate-aem-assets-with-document-based-authoring-tools)
-* [通用編輯器](#integrate-aem-assets-with-universal-editor)
+* [通用編輯器](#integrate-aem-assets-with-UE-universal-editor)
 
 編輯內容後，您可以將其發佈到Edge Delivery Services。
 
 ## 將AEM Assets與Edge Delivery Services的檔案式製作流程整合 {#integrate-aem-assets-with-document-based-authoring-tools}
 
-AEM Assets與檔案型撰寫工具(例如Microsoft Word或Google Docs)的整合功能，可直接在您的編輯器中提供資產選擇器。 使用此資產選擇器來存取AEM Assets，並將核准的資產插入您的檔案。
-
-如果您已有Edge Delivery Services網站，請參閱[AEM Assets外掛程式](https://github.com/adobe-rnd/aem-assets-plugin/blob/main/README.md)，將AEM Assets與現有的AEM專案整合。 如果您沒有Edge Delivery Services網站，請參閱以下的[必要條件](#integrate-aem-assets-with-microsoft-word-and-google-docs)和[整合AEM Assets與檔案式製作環境](#integrate-aem-assets-with-microsoft-word-or-google-docs-to-use-aem-assets-with-microsoft-word-or-google-docs)章節。
+當AEM Assets與檔案式製作工具(例如Microsoft Word或Google Docs)整合時，它會在您的編輯器中提供資產選擇器。 使用此資產選擇器來存取AEM Assets，並將核准的資產插入您的檔案。
+如果您已有Edge Delivery Services網站，請參閱[AEM Assets外掛程式](https://github.com/adobe-rnd/aem-assets-plugin/blob/main/README.md)檔案，瞭解如何將AEM Assets與現有的AEM專案整合。
+如果您沒有AEM Assets網站，無法發佈使用檔案式撰寫工具撰寫的AEM Assets內含式內容，請遵循下列[必要條件](#integrate-aem-assets-with-microsoft-word-and-google-docs)和[整合Edge Delivery Services與檔案式撰寫環境](#integrate-aem-assets-with-microsoft-word-or-google-docs-to-use-aem-assets-with-microsoft-word-or-google-docs)區段。
 
 ### 先決條件{#integrate-aem-assets-with-microsoft-word-and-google-docs}
 
 在開始之前，請確定您的檔案式製作環境已準備就緒：
 
-* 將AEM與檔案式製作工具整合，以設定製作環境。 請參閱[快速入門 — 開發人員教學課程](https://www.aem.live/developer/tutorial)以設定編寫環境。
+* 將AEM與檔案式製作工具整合，以設定製作環境。 請參閱[快速入門 — 開發人員教學課程](https://www.aem.live/developer/tutorial)，瞭解如何設定撰寫環境。
 
 ### 將AEM Assets與檔案式製作環境整合{#integrate-aem-assets-with-microsoft-word-or-google-docs-to-use-aem-assets-with-microsoft-word-or-google-docs}
 
@@ -65,23 +65,23 @@ AEM Assets與檔案型撰寫工具(例如Microsoft Word或Google Docs)的整合�
 
 ### 使用具備OpenAPI功能的Dynamic Media所傳送的資產{#how-to-use-Dynamic-Media-with-OpenAPI-assets}
 
-若要在製作內容時使用搭配OpenAPI功能使用Dynamic Media傳送的資產，請參閱：
+選取下列連結，瞭解如何使用Dynamic Media搭配OpenAPI功能在您的內容中傳遞影像、影片和其他資產型別：
 
-* [使用影像參考](https://www.aem.live/docs/aem-assets-sidekick-plugin#using-image-references-when-authoring-content)
-* [使用視訊參考](https://www.aem.live/docs/aem-assets-sidekick-plugin#using-video-references-when-authoring-content)
-* [對非影像和視訊資產(例如PDF、Zip檔案等)使用資產參考](https://www.aem.live/docs/aem-assets-sidekick-plugin#using-asset-references-for-pdf-zip-etc-when-authoring-content)
+* [新增影像至您的內容](https://www.aem.live/docs/aem-assets-sidekick-plugin#using-image-references-when-authoring-content)
+* [新增視訊至您的內容](https://www.aem.live/docs/aem-assets-sidekick-plugin#using-video-references-when-authoring-content)
+* [新增非影像和視訊資產，例如PDF、Zip檔案等](https://www.aem.live/docs/aem-assets-sidekick-plugin#using-asset-references-for-pdf-zip-etc-when-authoring-content)
 
-請觀看此影片，瞭解如何使用Dynamic Media搭配OpenAPI功能傳遞資產。
+請觀看此影片，瞭解如何使用具有OpenAPI功能的Dynamic Media在您的內容中傳遞資產。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3441155)
 
 ## Edge Delivery Services網站範例{#example-of-an-Edge-Delivery-Services-site}
 
-請參閱[WKND旅遊](http://bit.ly/3DExLnf)。 此網站是使用Edge Delivery Services的檔案型製作功能所建置。 使用Dynamic Media搭配OpenAPI功能進行資產傳送，在[Google Docs](https://drive.google.com/drive/folders/1HCCHRWp4HJIXW_cUv5cRDQ5DzzqiZsXT)中編寫網站內容。 一旦編寫完成，內容會直接從檔案發佈。 對於此檔案式撰寫設定，所有必要的檔案、資料夾、設定、網站樣式和功能程式碼都儲存在此[Git存放庫](https://github.com/hlxsites/franklin-assets-selector/tree/aem-dynamicmedia-demo/blocks)中。
+請參閱[WKND Travel](http://bit.ly/3DExLnf)，此網站是使用Edge Delivery Services的檔案式撰寫功能建置的。 網站內容是在[Google Docs](https://drive.google.com/drive/folders/1HCCHRWp4HJIXW_cUv5cRDQ5DzzqiZsXT)中撰寫，而具有OpenAPI功能的Dynamic Media是用來傳遞內容中的資產。 完成製作後，內容會直接從檔案發佈。 探索此[Git存放庫](https://github.com/hlxsites/franklin-assets-selector/tree/aem-dynamicmedia-demo/blocks)，瞭解用於建立此Edge Delivery Services (EDS)網站的檔案式撰寫設定的所有基本檔案、資料夾、設定、網站樣式和功能程式碼。
 
-## 將AEM Assets與適用於Edge Delivery Services的Universal Editor式製作流程整合 {#integrate-aem-assets-with-universal-editor}
+## 將AEM Assets與適用於Edge Delivery Services的Universal Editor式製作流程整合 {#integrate-aem-assets-with-UE-universal-editor}
 
 設定通用編輯器以與AEM Assets整合。 此整合可讓您透過OpenAPI功能使用Dynamic Media來傳送資產。
 
-* 請參閱Edge Delivery網站中的[設定](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/configurable-asset-picker/#configuration-in-edge-delivery-site)，以在Universal Editor中新增自訂資產選擇器函式。 自訂資產選擇器可讓您將資產直接插入至Universal Editor內容。
+* 請參閱Edge Delivery網站中的[設定](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/configurable-asset-picker/#configuration-in-edge-delivery-site)，瞭解如何在Universal Editor中新增自訂資產選擇器功能。 自訂資產選擇器可讓您將資產直接插入至Universal Editor內容。
 * 請參閱[擴充功能概觀](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/configurable-asset-picker/#extension-overview)，瞭解如何在Universal Editor中編寫時存取AEM Assets和插入資產。

@@ -4,23 +4,23 @@ description: 快速且無縫地發佈您的 Edge Delivery Services 表單。
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: ba1c608d-36e9-4ca1-b87b-0d1094d978db
-source-git-commit: 9127c58a72dc4942312907f9e8f0cdcc8de9aa4b
+source-git-commit: e4a71d1a513bebed67b9571a483871dc16c36daa
 workflow-type: tm+mt
 source-wordcount: '514'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
 # 將最適化表單發佈到 Edge Delivery Services
 
-<span class="preview">此功能可透過搶先存取計畫使用。 若要要求存取權，請將您的GitHub組織名稱和存放庫名稱從您的官方地址傳送電子郵件至<a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> 。 例如，如果存放庫URL是https://github.com/adobe/abc，組織名稱是adobe，存放庫名稱是abc。</span>
+<span class="preview">您可以透過搶先體驗方案使用這項功能。若要請求存取權，請使用您的官方地址發送電子郵件至 <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a>，郵件內容須包含您的 GitHub 組織名稱和存放庫名稱。例如，若存放庫 URL 為 https://github.com/adobe/abc,，則組織名稱為 adobe，存放庫名稱為 abc。</span>
 
 
 當您的表單最終確定並可供使用時，您即可將其發佈，讓您的客戶可存取來進行資料的收集和提交。發佈可確保表單在 Edge Delivery 上可用，從而讓使用者能夠無縫地與其互動。此流程讓客戶可即時填寫並提交表單，確保高效的資料擷取並簡化處理流程。
 
 ## 先決條件
 
-* 使用&#x200B;**Edge Delivery Services範本**&#x200B;建立的表單。 [深入了解](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)如何建立 EDS 型表單。
+* 使用 **Edge Delivery Services 範本**&#x200B;建立的表單。[深入了解](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)如何建立 EDS 型表單。
 
 ## 發佈您的表單
 
@@ -38,7 +38,7 @@ ht-degree: 87%
 1. 再次按一下「**發佈**」，隨即出現確認快顯視窗，表示您的表單現已發佈。
    ![發佈成功](/help/forms/assets/publish-success.png)
 
-1. 若要檢查表單的發佈狀態，請再按一下&#x200B;**發佈**。
+1. 若要檢查表單的發佈狀態，請再次按一下「**發佈**」。
    ![發佈狀態](/help/forms/assets/publish-status.png)
 
 1. 若要&#x200B;**取消發佈**&#x200B;表單，請在編輯器中開啟表單，按一下右上角的三個點選單，然後按一下「**取消發佈**」。
