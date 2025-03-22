@@ -6,9 +6,9 @@ feature: Asset Management,Renditions,Best Practices
 role: User
 mini-toc-levels: 2
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
-source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
+source-git-commit: a495178529a0a4229095ea3a11f52b376c81715b
 workflow-type: tm+mt
-source-wordcount: '3289'
+source-wordcount: '3267'
 ht-degree: 1%
 
 ---
@@ -169,7 +169,7 @@ DPR和網路頻寬值是根據偵測到的套件式CDN使用者端值。 這些�
 * 使用Adobe Sensei技術，根據影像要求中指定的品質(`qlt`)進行轉換。
 * 不受TTL （存留時間）影響。 之前，智慧型影像處理至少必須有12小時的TTL才能運作。
 * 先前，原始和衍生影像都會經過快取，而且是使快取失效的兩步驟程式。 在最新的智慧型影像處理中，只會快取衍生專案，進行單一步驟的快取失效程式。
-* 在規則集中使用自訂標題的客戶可受益於最新的智慧型影像，因為這些標題不會遭到封鎖，不像舊版的智慧型影像。 例如，如[新增自訂標頭值至影像回應|Dynamic Media Classic](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/add-custom-header-val-image.html)中建議的「計時允許來源」和「X-Robot」。
+* 在規則集中使用自訂標題的客戶可受益於最新的智慧型影像，因為這些標題不會遭到封鎖，不像舊版的智慧型影像。
 
 ## 智慧型影像的運作方式{#how-smart-imaging-works}
 

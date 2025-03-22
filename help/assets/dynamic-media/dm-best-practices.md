@@ -9,9 +9,9 @@ feature: Adaptive Streaming, Best Practices, Smart Imaging, Image Profiles, Rule
 role: User, Admin
 mini-toc-levels: 4
 exl-id: 39e491bb-367d-4c72-b4ca-aab38d513ac5
-source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
+source-git-commit: a495178529a0a4229095ea3a11f52b376c81715b
 workflow-type: tm+mt
-source-wordcount: '4117'
+source-wordcount: '4095'
 ht-degree: 1%
 
 ---
@@ -355,7 +355,7 @@ Dynamic Media可讓您直接透過URL操作影像，使其成為建立動態數�
    * **直接連結：**
 使用提供的URL直接連結至影片。 在您的行銷網站上以適當方式建立超連結。
    * **內嵌視訊：**
-複製提供的內嵌程式碼，並將其貼到您要顯示影片之網頁的HTML中。 如此一來，影片就能直接在您的網站上播放。
+複製提供的內嵌程式碼，並將其貼到您要顯示視訊的網頁的HTML中。 如此一來，影片就能直接在您的網站上播放。
 
 想要進一步瞭解嗎？ 移至[影片](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/video)。
 
@@ -399,7 +399,7 @@ Dynamic Media中的視訊設定檔有助於有效率的視訊管理、一致的�
    * 在AEM中整理、瀏覽及搜尋視訊資產。
    * 預覽和發佈視訊資產。
    * 檢視來源視訊及其編碼的轉譯，以及相關的縮圖。
-   * 編輯視訊屬性，例如，標題、說明和標籤2。
+   * 編輯視訊屬性，例如標題、說明和標籤2。
 
 * **本地化：**
    * 針對每個目標地理/語言，建立音訊曲目和字幕。
@@ -410,7 +410,7 @@ Dynamic Media中的視訊設定檔有助於有效率的視訊管理、一致的�
    * 如果您使用AEM作為網頁內容管理(WCM)系統，您可以直接新增視訊至網頁。
    * 如果您使用協力廠商WCM系統，可以使用URL或內嵌程式碼來連結或內嵌網頁上的影片。
 
-想要進一步瞭解嗎？ 移至[關於Dynamic Media中視訊的多重字幕與音訊曲目支援](/help/assets/dynamic-media/video.md#about-msma)或觀看[新增多重字幕與音訊曲目至視訊](https://delivery-p106302-e1008131.adobeaemcloud.com/adobe/assets/urn:aaid:aem:daf9a222-9f7f-4333-b167-98cb4c63a1f8/play) （1分鐘、41秒）。
+想要進一步瞭解嗎？ 移至[關於Dynamic Media中視訊的多重標題與音訊追蹤支援](/help/assets/dynamic-media/video.md#about-msma)。
 
 
 ## 將資產遞送給客戶
