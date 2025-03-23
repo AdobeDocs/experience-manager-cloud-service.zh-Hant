@@ -3,7 +3,7 @@ title: 樣式Adobe Experience Manager CIF核心元件
 description: 瞭解如何設定Adobe Experience Manager (AEM) CIF核心元件的樣式。 本教學課程涵蓋如何使用使用者端資料庫或clientlibs來針對AEM Commerce實作部署及管理CSS和JavaScript。 本教學課程也涵蓋ui.frontend模組和webpack專案如何整合至端對端建置流程。
 sub-product: Commerce
 topics: Development
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 doc-type: tutorial
 activity: develop
 audience: developer
@@ -12,20 +12,20 @@ kt: 3456
 thumbnail: 3456-style-cif.jpg
 exl-id: 521c1bb8-7326-4ee8-aba3-f386727e2b34
 role: Admin
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
+source-git-commit: 1bd36e584d956c5ae8da7b1d618e155da86a74f5
 workflow-type: tm+mt
 source-wordcount: '2342'
 ht-degree: 0%
 
 ---
 
-# 建立AEM CIF核心元件的樣式 {#style-aem-cif-core-components}
+# 樣式AEM CIF核心元件 {#style-aem-cif-core-components}
 
 [CIF Venia專案](https://github.com/adobe/aem-cif-guides-venia)是使用[CIF核心元件](https://github.com/adobe/aem-core-cif-components)的參考程式碼基底。 在本教學課程中，您需檢查Venia參考專案，瞭解AEM CIF核心元件所使用的CSS和JavaScript如何進行組織整理。 您也可以使用CSS建立樣式，以更新&#x200B;**Product Teaser**&#x200B;元件的預設樣式。
 
 >[!TIP]
 >
-> 啟動您自己的商務實作時使用[AEM專案原型](https://github.com/adobe/aem-project-archetype)。
+> 開始您自己的商務實作時使用[AEM專案原型](https://github.com/adobe/aem-project-archetype)。
 
 ## 您將建置的內容
 
@@ -35,7 +35,7 @@ ht-degree: 0%
 
 ## 先決條件 {#prerequisites}
 
-本機開發環境是完成本教學課程的必要條件。 此環境包含設定並連線至Adobe Commerce執行個體的AEM執行個體。 檢閱[使用AEM as a Cloud Service SDK設定本機開發](../develop.md)的需求和步驟。
+本機開發環境是完成本教學課程的必要條件。 此環境包含已設定並連線至AEM執行個體的Adobe Commerce執行個體。 檢閱[使用AEM as a Cloud Service SDK](../develop.md)設定本機開發的需求和步驟。
 
 ## 原地複製Venia專案 {#clone-venia-project}
 
@@ -43,7 +43,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
-> **您可以隨意使用現有的專案** (根據包含CIF的AEM專案原型)並略過此區段。
+> **請隨時使用現有的專案** (根據包含CIF的AEM專案原型)並略過本節。
 
 1. 執行下列git命令，以便複製專案：
 
@@ -68,9 +68,9 @@ ht-degree: 0%
 
 ## 使用者端程式庫和ui.frontend模組 {#introduction-to-client-libraries}
 
-負責轉譯店面主題/樣式的CSS和JavaScript由[使用者端資料庫](/help/implementing/developing/introduction/clientlibs.md)或「clientlibs」（簡稱）在AEM中管理。 使用者端資料庫提供的機制，可讓您以專案的程式碼來整理CSS和JavaScript，然後將內容傳送至頁面。
+負責轉譯店面主題/樣式的CSS和JavaScript由[使用者端資料庫](/help/implementing/developing/introduction/clientlibs.md)或&quot;clientlibs&quot; （簡稱）在AEM中管理。 使用者端資料庫提供的機制，可讓您以專案的程式碼來整理CSS和JavaScript，然後將內容傳送至頁面。
 
-可透過新增和覆寫這些使用者端資料庫所管理的CSS，將品牌特定樣式套用至AEM CIF核心元件。 瞭解使用者端程式庫如何建構並包含在頁面上至關重要。
+您可以新增及覆寫這些使用者端程式庫管理的CSS，將品牌專屬樣式套用至AEM CIF核心元件。 瞭解使用者端程式庫如何建構並包含在頁面上至關重要。
 
 [ui.frontend](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html)是專用的[webpack](https://webpack.js.org/)專案，用於管理專案的所有前端資產。 此Webpack可讓前端開發人員使用任意數量的語言和技術，例如[TypeScript](https://www.typescriptlang.org/)、[Sass](https://sass-lang.com/)等等。
 
@@ -130,9 +130,9 @@ ht-degree: 0%
    [INFO] ------------------------------------------------------------------------
    ```
 
-   Inspect終端機輸出。 請注意，Maven命令已執行數個NPM指令碼，包括`npm run build`。 `npm run build`命令定義於`package.json`檔案中，會編譯webpack專案並觸發使用者端程式庫產生。
+   檢查終端機輸出。 請注意，Maven命令已執行數個NPM指令碼，包括`npm run build`。 `npm run build`命令定義於`package.json`檔案中，會編譯webpack專案並觸發使用者端程式庫產生。
 
-1. Inspect檔案`ui.frontend/dist/clientlib-site/site.css`：
+1. 檢查檔案`ui.frontend/dist/clientlib-site/site.css`：
 
    ![已編譯的網站CSS](../assets/style-cif-component/comiled-site-css.png)
 
@@ -142,7 +142,7 @@ ht-degree: 0%
    >
    > 原始檔控制會忽略這類檔案，因為它們應該在建置期間產生。
 
-1. Inspect檔案`ui.frontend/clientlib.config.js`。
+1. 檢查檔案`ui.frontend/clientlib.config.js`。
 
    ```js
    /* clientlib.config.js*/
@@ -167,7 +167,7 @@ ht-degree: 0%
 
    ![在ui.apps中編譯網站CSS](../assets/style-cif-component/comiled-css-ui-apps.png)
 
-   此檔案是`site.css`複製到`ui.apps`專案中。 它現在是名為`clientlib-site`的使用者端資料庫的一部分，類別為`venia.site`。 一旦檔案成為`ui.apps`模組的一部分，就可以將其部署到AEM。
+   此檔案是`site.css`複製到`ui.apps`專案中。 它現在是名為`clientlib-site`的使用者端資料庫的一部分，類別為`venia.site`。 一旦檔案成為`ui.apps`模組的一部分，即可將其部署到AEM。
 
    >[!NOTE]
    >
@@ -183,9 +183,9 @@ ht-degree: 0%
 
    **clientlib-cif** — 空白的使用者端程式庫，僅嵌入[AEM CIF核心元件](https://github.com/adobe/aem-core-cif-components)的必要相依性。 類別是`venia.cif`。
 
-   **clientlib-grid** — 包含CSS以啟用AEM回應式格線功能。 使用AEM格線會在AEM編輯器中啟用[佈局模式](/help/sites-cloud/authoring/page-editor/responsive-layout.md)，並讓內容作者能夠調整元件大小。 類別為`venia.grid`且內嵌於`venia.base`資料庫中。
+   **clientlib-grid** — 包含CSS以啟用AEM的回應式格線功能。 使用AEM格線會在AEM編輯器中啟用[佈局模式](/help/sites-cloud/authoring/page-editor/responsive-layout.md)，並讓內容作者能夠調整元件大小。 類別為`venia.grid`且內嵌於`venia.base`資料庫中。
 
-1. Inspect `ui.apps/src/main/content/jcr_root/apps/venia/components/page`下的檔案`customheaderlibs.html`和`customfooterlibs.html`：
+1. 檢查`ui.apps/src/main/content/jcr_root/apps/venia/components/page`底下的檔案`customheaderlibs.html`和`customfooterlibs.html`：
 
    ![自訂頁首與頁尾指令碼](../assets/style-cif-component/custom-header-footer-script.png)
 
@@ -204,7 +204,7 @@ ht-degree: 0%
 
 ## 編寫產品Teaser {#author-product-teaser}
 
-現在已部署程式碼更新，請使用AEM編寫工具將Product Teaser元件的執行個體新增到網站的首頁。 這麼做可讓我們檢視更新的樣式。
+現在已部署程式碼更新，請使用AEM編寫工具，將Product Teaser元件的例項新增到網站的首頁。 這麼做可讓我們檢視更新的樣式。
 
 1. 開啟新的瀏覽器分頁，並瀏覽至網站的&#x200B;**首頁**： [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html)。
 
@@ -228,7 +228,7 @@ ht-degree: 0%
 
    ![以發佈的形式檢視](../assets/style-cif-component/view-as-published.png)
 
-   此頁面會開啟，但不載入任何AEM作者JavaScript，如同發佈網站上顯示的一樣。 請注意，該url已附加查詢引數`?wcmmode=disabled`。 開發CSS和JavaScript時，最好使用此引數來簡化頁面，而無需AEM作者採取任何動作。
+   此頁面會開啟，不會載入任何AEM作者JavaScript，如同發佈網站上的顯示方式。 請注意，該url已附加查詢引數`?wcmmode=disabled`。 開發CSS和JavaScript時，最好使用此引數來簡化頁面，而無需AEM作者採取任何動作。
 
 1. 檢視頁面來源，您應該能夠識別已包含數個使用者端程式庫：
 
@@ -258,7 +258,7 @@ ht-degree: 0%
 
 包含使用者端程式庫有數個選項。 接著檢查產生的專案如何透過[頁面範本](/help/implementing/developing/components/templates.md)包含`clientlib-site`資料庫。
 
-1. 導覽至AEM編輯器內網站的&#x200B;**首頁**： [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html)。
+1. 在AEM編輯器中，導覽至網站的&#x200B;**首頁**： [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html)。
 
 1. 選取&#x200B;**頁面資訊**&#x200B;功能表，然後按一下&#x200B;**編輯範本**：
 
@@ -291,17 +291,17 @@ ht-degree: 0%
 
 在上一個練習中，已對`ui.frontend`模組中的Sass檔案進行更新，然後在執行Maven組建後，會將變更部署到AEM。 接下來，您會考慮使用webpack-dev-server來快速開發前端樣式。
 
-webpack-dev-server會代理來自AEM本機執行個體的影像和部分CSS/JavaScript，但允許開發人員修改`ui.frontend`模組中的樣式和JavaScript。
+webpack-dev-server會代理來自AEM本機執行個體的影像和部分CSS/JavaScript，但可讓開發人員修改`ui.frontend`模組中的樣式和JavaScript。
 
 1. 在瀏覽器中導覽至&#x200B;**首頁**&#x200B;和&#x200B;**以發佈的形式檢視**： [http://localhost:4502/content/venia/us/en.html?wcmmode=disabled](http://localhost:4502/content/venia/us/en.html?wcmmode=disabled)。
 
-1. 檢視頁面的來源，以及&#x200B;**複製**&#x200B;頁面的原始HTML。
+1. 檢視頁面來源，以及&#x200B;**複製**&#x200B;頁面的原始HTML。
 
 1. 在`ui.frontend`模組下方返回您選擇的IDE開啟檔案： `ui.frontend/src/main/static/index.html`
 
    ![靜態HTML檔案](../assets/style-cif-component/static-index-html.png)
 
-1. 覆寫`index.html`和&#x200B;**貼上**&#x200B;上一步中複製的HTML的內容。
+1. 覆寫`index.html`和&#x200B;**貼上** HTML在上一步中複製的內容。
 
 1. 尋找`clientlib-site.min.css`、`clientlib-site.min.js`和&#x200B;**移除**&#x200B;它們的「包含」。
 
@@ -450,7 +450,7 @@ webpack-dev-server會代理來自AEM本機執行個體的影像和部分CSS/Java
 
 ## 檢視更新的產品Teaser {#view-updated-product-teaser}
 
-將專案的程式碼部署到AEM後，您現在應該能夠檢視產品Teaser的變更。
+將專案的程式碼部署至AEM後，您現在應該能夠檢視產品Teaser的變更。
 
 1. 返回瀏覽器並重新整理首頁： [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html)。 您應該會看到已套用的更新產品Teaser樣式。
 
@@ -466,11 +466,11 @@ webpack-dev-server會代理來自AEM本機執行個體的影像和部分CSS/Java
 
 部署新的CSS檔案或JavaScript檔案（或兩者）時，請務必確保瀏覽器不會提供過時的檔案。 您可以清除瀏覽器快取或啟動新的瀏覽器工作階段，藉此消除此潛在問題。
 
-AEM也會嘗試快取使用者端程式庫以提高效能。 在程式碼部署後，偶爾會提供舊檔案。 您可以使用[Rebuild Client Libraries工具](http://localhost:4502/libs/granite/ui/content/dumplibs.rebuild.html)，手動使AEM的使用者端程式庫快取失效。 如果您懷疑AEM已快取舊版的使用者端程式庫，建議使用&#x200B;*使快取無效的方法。 重新建置程式庫效率低下且耗時。*
+AEM也會嘗試快取使用者端程式庫以提高效能。 在程式碼部署後，偶爾會提供舊檔案。 您可以使用[重新建置使用者端程式庫工具](http://localhost:4502/libs/granite/ui/content/dumplibs.rebuild.html)，手動讓AEM的使用者端程式庫快取失效。 如果您懷疑AEM已快取舊版的使用者端程式庫，建議使用&#x200B;*讓快取無效的方法。 重新建置程式庫效率低下且耗時。*
 
 ## 恭喜 {#congratulations}
 
-您已完成第一個AEM CIF核心元件的樣式，而且使用的是Webpack開發伺服器！
+您已完成第一個AEM CIF核心元件的樣式設定，而且使用的是webpack開發伺服器！
 
 ## 額外挑戰 {#bonus-challenge}
 

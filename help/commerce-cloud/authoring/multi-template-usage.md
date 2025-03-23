@@ -2,7 +2,7 @@
 title: 建立多個類別和產品頁面
 description: 瞭解如何使用目標式行銷內容豐富類別登陸和產品詳細資料頁面。
 sub-product: Commerce
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 doc-type: feature-video
 activity: use
 audience: marketer
@@ -11,7 +11,7 @@ kt: 3455
 thumbnail: 28969.jpg
 exl-id: 06417775-1a0b-4487-86f3-83f2fe12458e
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+source-git-commit: 1bd36e584d956c5ae8da7b1d618e155da86a74f5
 workflow-type: tm+mt
 source-wordcount: '178'
 ht-degree: 0%
@@ -33,7 +33,7 @@ ht-degree: 0%
 您可以從下列資源中找到有關此主題的詳細資訊：
 
 - [進階URL設定](../configuring/advanced-url-configuration.md)
-- [AEM CIF核心元件 — 多重目錄頁面設定](https://github.com/adobe/aem-core-cif-components/wiki/configuration#multi-catalog-page-template-configuration)
+- [AEM CIF核心元件 — 多目錄頁面設定](https://github.com/adobe/aem-core-cif-components/wiki/configuration#multi-catalog-page-template-configuration)
 
 ## 相關資源 {#related}
 

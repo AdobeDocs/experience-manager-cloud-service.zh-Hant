@@ -2,7 +2,7 @@
 title: Commerce多商店設定
 description: 瞭解如何從Adobe Commerce將多個商店檢視對應至Adobe Experience Manager。 如此一來，專案便可支援多租使用者和多語言使用案例。
 sub-product: Commerce
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 doc-type: technical-video
 activity: setup
 audience: administrator
@@ -11,7 +11,7 @@ kt: 3046
 thumbnail: 28952.jpg
 exl-id: 4385c9e5-2b25-4f95-952f-72349431cf94
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+source-git-commit: 1bd36e584d956c5ae8da7b1d618e155da86a74f5
 workflow-type: tm+mt
 source-wordcount: '364'
 ht-degree: 3%
@@ -30,7 +30,7 @@ Adobe Experience Manager (AEM) CIF核心元件可用於多個AEM網站結構，�
 
 建議的設定是使用AEM網站與Adobe Commerce商店檢視之間的1:1關係。
 
-若要將AEM網站和AEM CIF核心元件連線至專用的存放區檢視，請執行以下操作：
+若要將AEM網站和AEM CIF核心元件連線到專用的商店檢視，請執行以下操作：
 
 ## 設定 {#configuration}
 
@@ -38,7 +38,7 @@ Adobe Experience Manager (AEM) CIF核心元件可用於多個AEM網站結構，�
 
 2. 請確定AEM與Adobe Commerce之間的連線正常運作。
 
-3. 依照下列步驟建立CIFCloud Service設定的子設定：
+3. 依照下列步驟建立CIF Cloud Service設定的子設定：
 
    * 在AEM中，移至[工具] > [一般] > [設定瀏覽器] ](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)[
    * 選取您建立的基本組態
@@ -50,7 +50,7 @@ Adobe Experience Manager (AEM) CIF核心元件可用於多個AEM網站結構，�
    >
    > Commerce目錄可使用ID或UID來處理。 Adobe Commerce 2.4.2匯入了UID。只有在您的Commerce後端支援2.4.2版或更新版本的GraphQL結構描述時，才會啟用此功能。
 
-4. 將子組態指派至AEM站台
+4. 將子設定指派至AEM網站
 
    * 前往AEM Sites主控台
    * 導覽至您網站結構的區域或語言根目錄。 例如，Venia範例頁面為`/content/venia/us _or_ /content/venia/us/en`

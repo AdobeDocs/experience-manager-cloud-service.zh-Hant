@@ -2,7 +2,7 @@
 title: 利用關聯AEM內容豐富產品資料
 description: 瞭解行銷人員如何藉由動態新增行銷內容至產品頁面，以Adobe Experience Manager的關聯內容豐富產品資料。 這開啟了行銷人員以影像和視訊等其他內容鎖定特定產品頁面的廣泛可能性。
 sub-product: Commerce
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 doc-type: feature-video
 activity: use
 audience: marketer
@@ -11,7 +11,7 @@ kt: 7065
 thumbnail: 333205.jpg
 exl-id: d0062779-7e90-4f09-8878-eded877580ef
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+source-git-commit: 1bd36e584d956c5ae8da7b1d618e155da86a74f5
 workflow-type: tm+mt
 source-wordcount: '396'
 ht-degree: 1%

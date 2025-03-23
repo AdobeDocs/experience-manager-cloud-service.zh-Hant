@@ -2,7 +2,7 @@
 title: 進階URL設定
 description: 瞭解如何自訂產品和類別頁面的URL。 自訂可讓實作將搜尋引擎的URL最佳化並提升探索能力。
 sub-product: Commerce
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 doc-type: technical-video
 activity: setup
 audience: administrator
@@ -11,7 +11,7 @@ kt: 4933
 thumbnail: 34350.jpg
 exl-id: 314494c4-21a9-4494-9ecb-498c766cfde7
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+source-git-commit: 1bd36e584d956c5ae8da7b1d618e155da86a74f5
 workflow-type: tm+mt
 source-wordcount: '2059'
 ht-degree: 2%
@@ -22,7 +22,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
-> 搜尋引擎最佳化 (SEO) 已成為許多行銷人員的重點考量。因此，在Adobe Experience Manager (AEM)as a Cloud Service的許多專案中，SEO考量都是必須解決的問題。 如需詳細資訊，請參閱[SEO和URL管理最佳實務](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/seo-and-url-management.html)。
+> 搜尋引擎最佳化 (SEO) 已成為許多行銷人員的重點考量。因此，在Adobe Experience Manager (AEM) as a Cloud Service上的許多專案中，SEO考量都是必須解決的問題。 如需詳細資訊，請參閱[SEO和URL管理最佳實務](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/seo-and-url-management.html)。
 
 [AEM CIF核心元件](https://github.com/adobe/aem-core-cif-components)提供進階設定，可自訂產品和類別頁面的URL。 許多實施會針對搜尋引擎最佳化(SEO)目的自訂這些URL。 以下影片詳細說明如何設定`UrlProvider`服務和[Sling對應](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)的功能，以自訂產品和類別頁面的URL。
 
@@ -34,7 +34,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
-> 自AEM CIF核心元件2.0.0版開始，「URL提供者」設定僅提供預先定義的URL格式，而非1.x版已知的自由文字可設定格式。 此外，在URL中使用選取器傳遞資料的功能，已由尾碼取代。
+> 自AEM CIF核心元件2.0.0版以來，「URL提供者」設定僅提供預先定義的URL格式，而非1.x版已知的自由文字可設定格式。 此外，在URL中使用選取器傳遞資料的功能，已由尾碼取代。
 
 ### 產品頁面URL格式 {#product}
 
@@ -181,7 +181,7 @@ CIF設定中的![URL格式](assets/store-specific-url-formats.png)
 
 >[!NOTE]
 >
-> 依類別選取特定產品頁面需要[CIF Core Components 2.6.0](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.6.0)或更新版本。
+> 依類別選取特定產品頁面需要[CIF核心元件2.6.0](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.6.0)或更新版本。
 
 ### 深度連結 {#specific-pages-deep-linking}
 
@@ -199,7 +199,7 @@ CIF設定中的![URL格式](assets/store-specific-url-formats.png)
 
 >[!NOTE]
 >
-> 多重目錄頁面的完整支援需要[CIF Core Components 2.10.0](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.10.0)或更新版本。
+> 需要[CIF Core Components 2.10.0](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.10.0)或更新版本，才能完整支援多個目錄頁面。
 
 ## 自訂 {#customization}
 
@@ -211,7 +211,7 @@ CIF設定中的![URL格式](assets/store-specific-url-formats.png)
 
 ### 與Sling對應結合 {#sling-mapping}
 
-除了`UrlProvider`之外，也可以設定[Sling對應](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)來重寫及處理URL。 AEM Archetype專案也提供[範例組態](https://github.com/adobe/aem-cif-project-archetype/tree/master/src/main/archetype/samplecontent/src/main/content/jcr_root/etc/map.publish)，以便為連線埠4503 （發佈）和80 (Dispatcher)設定一些Sling對應。
+除了`UrlProvider`之外，也可以設定[Sling對應](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)來重寫及處理URL。 AEM Archetype專案也提供[範例設定](https://github.com/adobe/aem-cif-project-archetype/tree/master/src/main/archetype/samplecontent/src/main/content/jcr_root/etc/map.publish)，以為連線埠4503 （發佈）和80 (Dispatcher)設定一些Sling對應。
 
 ### 與AEM Dispatcher結合 {#dispatcher}
 
