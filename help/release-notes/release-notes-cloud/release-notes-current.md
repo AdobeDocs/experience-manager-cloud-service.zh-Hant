@@ -6,9 +6,9 @@ exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
 source-git-commit: a2f26e7befe4aa23350cfdca6a2c342500a909db
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1493'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -62,7 +62,7 @@ Have a look at the February 2025 Release Overview video for a summary of the fea
 
 **內容片段編輯器轉出**
 
-我們將繼續在AEM as a Cloud Service中啟用新的頻譜UI型內容片段編輯器。 在2024年11月成為所有Cloud Service開發人員環境的預設後，它將在2025年4月1日成為所有中繼環境的預設值，並在2025年5月1日成為所有生產環境的預設值。 在所有情況下，使用者仍可選擇在AEM觸控式UI中回覆成傳統內容片段編輯器。
+我們將會繼續在 AEM as a Cloud Service 中啟用全新的 Spectrum UI 型內容片段編輯器。繼在 2024 年 11 月成為所有雲端服務開發人員環境的預設選項後，此功能將在 2025 年 4 月 1 日成為所有中繼環境的預設選項，並在 2025 年 5 月 1 日成為所有生產環境的預設選項。在所有情況下，使用者仍然可以選擇恢復使用 AEM Touch UI 中的傳統內容片段編輯器。
 
 **翻譯 HTTP API**
 
