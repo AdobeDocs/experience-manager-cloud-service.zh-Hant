@@ -5,7 +5,7 @@ feature: Integration
 role: Admin
 exl-id: 23874955-bdf3-41be-8a06-53d2afdd7f2b
 solution: Experience Manager Sites
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: d62ac2e60062d3559d6a877dc830b8106f4bd0f6
 workflow-type: tm+mt
 source-wordcount: '148'
 ht-degree: 2%
@@ -19,7 +19,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->本檔案說明如何將Adobe Campaign與雲端原生AEM解決方案AEM as a Cloud Service整合。
+>本檔案說明如何整合Adobe Campaign與雲端原生AEM解決方案AEM as a Cloud Service 。
 >
 >如需整合Adobe Campaign與AEM 6.5、內部部署或AMS託管的AEM解決方案的詳細資訊，[請參閱此檔案](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/campaign.html)。
 
@@ -29,10 +29,9 @@ ht-degree: 2%
 
 | Campaign版本 | 與AEMaaCS整合 |
 |---|---|
-| [Campaign Classicv7](https://experienceleague.adobe.com/docs/campaign-classic.html) | 不支援 |
+| [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic.html) | 不支援 |
 | [Campaign v8 （使用者端主控台）](https://experienceleague.adobe.com/docs/campaign-v8.html) | 不支援 |
-| Campaign Web 使用者介面 | 支援。 [進一步瞭解](https://experienceleague.adobe.com/docs/campaign-web/v8/integrations/aem-assets.html) |
-
+| Campaign Web 使用者介面 | 支援。 [進一步瞭解](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/connect/ac-aem) |
 
 ## 與Adobe Campaign Standard整合 {#acs}
 
