@@ -1,8 +1,8 @@
 ---
-source-git-commit: babddee34b486960536ce7075684bbe660b6e120
+source-git-commit: e4ceba6510992f82b97effca27a98f442fff8f5c
 workflow-type: tm+mt
 source-wordcount: '1505'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 # 程式碼片段 {#snippets}
@@ -59,13 +59,13 @@ ht-degree: 94%
 
 ## 通用編輯器{#universal-editor-see-also}
 
-* [使用通用編輯器建立您的第一個表單](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
-* [將動態行為新增至Forms](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
-* [設定和自訂表單提交動作](/help/edge/docs/forms/universal-editor/submit-action.md)
-* [發佈和部署Forms](/help/edge/docs/forms/universal-editor/publish-forms.md)
-* [設計精美的Forms：樣式與主題指南](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
+* [使用通用編輯器建立第一份表單](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
+* [在表單中新增動態行為](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
+* [設定與自訂表單提交動作](/help/edge/docs/forms/universal-editor/submit-action.md)
+* [發佈及部署表單](/help/edge/docs/forms/universal-editor/publish-forms.md)
+* [設計精美表單：樣式和主題指南](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
 * [建置自訂表單元件](/help/edge/docs/forms/universal-editor/create-custom-component.md)
-* [保護您的Forms遠離垃圾訊息：新增reCAPTCHA安全性](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
+* [保護表單免受垃圾郵件騷擾：新增 reCAPTCHA 安全性](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
 
 ## 另請參閱 {#see-more-forms-eds}
 
@@ -175,7 +175,7 @@ ht-degree: 94%
 >為了避免前端管道運作中斷，在啟用管道&#x200B;*之前*，務必先將此 IP 允許清單新增至 Cloud Manager。
 >
 >**Cloud Manager IP 允許清單**
->52.254.106.192/28，20.186.185.181，52.254.106.240/28，52.254.107.128/28，52.254.105.192/28，52.254.106.176/28，20.186.185.227，52.254.106.144/28，52.254.107.64/28，20.186.185.239，20.22.83.112，52.254.107.80/28，52.254.107.144/28，52.254.106.224/28，20.14.241.153，52.254.107.0/28，52.254.107.32/28，52.254.106.208/28，40.70.154.136/29，52.254.106.160/28，52.254.107.16/28，52.254.106.0/28，4.152.211.251
+>52.254.106.192/28,20.186.185.181,52.254.106.240/28,52.254.107.128/28,52.254.105.192/28,52.254.106.176/28,20.186.185.227,52.254.106.144/28,52.254.107.64/28,20.186.185.239,20.22.83.112,52.254.107.80/28,52.254.107.144/28,52.254.106.224/28,20.14.241.153,52.254.107.0/28,52.254.107.32/28,52.254.106.208/28,40.70.154.136/29,52.254.106.160/28,52.254.107.16/28,52.254.106.0/28,4.152.211.251
 >   
 
 ## 新增 Cloud Manager IP 允許清單和前端管道 {#add-cm-allowlist-frontend-pipeline}
@@ -248,20 +248,20 @@ ht-degree: 94%
 
 >[!IMPORTANT]
 >
->新專案中[已棄用](/help/release-notes/release-notes-cloud/2025/release-notes-2025-1-0.md#spa-editor) SPA 編輯器。Adobe 仍支援現有專案使用此編輯器，但不應用於新專案。目前，AEM 中用於管理 Headless 內容的首選編輯器為：
+>新專案中[已棄用](/help/implementing/developing/hybrid/spa-editor-deprecation.md) SPA 編輯器。Adobe 仍支援現有專案使用此編輯器，但不應用於新專案。目前，AEM 中用於管理 Headless 內容的首選編輯器為：
 >
 >* [通用編輯器](/help/edge/wysiwyg-authoring/authoring.md)：用於視覺化編輯 Headless 內容。
 >* [內容片段編輯器](/help/assets/content-fragments/content-fragments-managing.md)：用於 Headless 內容的表單型編輯。
 
 ## 通用編輯器{#ue-see-also}
 
-* [使用通用編輯器建立您的第一個表單](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
-* [將動態行為新增至Forms](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
-* [設定和自訂表單提交動作](/help/edge/docs/forms/universal-editor/submit-action.md)
-* [發佈和部署Forms](/help/edge/docs/forms/universal-editor/publish-forms.md)
-* [設計精美的Forms：樣式與主題指南](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
+* [使用通用編輯器建立第一份表單](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
+* [在表單中新增動態行為](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
+* [設定與自訂表單提交動作](/help/edge/docs/forms/universal-editor/submit-action.md)
+* [發佈及部署表單](/help/edge/docs/forms/universal-editor/publish-forms.md)
+* [設計精美表單：樣式和主題指南](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
 * [建置自訂表單元件](/help/edge/docs/forms/universal-editor/create-custom-component.md)
-* [保護您的Forms遠離垃圾訊息：新增reCAPTCHA安全性](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
+* [保護表單免受垃圾郵件騷擾：新增 reCAPTCHA 安全性](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
 
 ## 另請參閱 {#see-more-eds-forms}
 
