@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Upload, Asset Processing, Publishing, Asset Compute Microservices
 role: User, Admin
 exl-id: 4cff355e-d12c-44c7-b519-4cc37f49e396
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: 1d8136b761528fe927b467320ebc7363de0d8a37
 workflow-type: tm+mt
-source-wordcount: '818'
+source-wordcount: '847'
 ht-degree: 7%
 
 ---
@@ -137,6 +137,8 @@ ht-degree: 7%
 
 * [!DNL Experience Manager]將資產處理限製為每個環境每分鐘300個請求，每個組織每分鐘700個請求。
 * [!DNL Adobe Photoshop] API作業的檔案大小限製為4 GB，[!DNL Adobe Lightroom]作業的檔案大小限製為1 GB。
+* Microsoft Office檔案(「.docx」、「.doc」、「.ppt」、「.pptx」、「.xls」、「.xlsx」)的PDF轉譯僅限於100MB以下的檔案。
+* 視訊轉碼僅限於15GB以下的輸入檔案。
 
 **另請參閱**
 
