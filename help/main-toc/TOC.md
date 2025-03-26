@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的運作方式以及該軟體可以為您做哪些事。
 breadcrumb-title: 使用手冊
 user-guide-title: 'AEM as a Cloud Service '
-source-git-commit: 6e6e171bf0df7735da2b8ec26c46b9376faf81b1
+source-git-commit: 6bce8f33f6588b49fc9165eeeedc8f4057222eb0
 workflow-type: tm+mt
 source-wordcount: '6106'
 ht-degree: 99%
@@ -114,8 +114,8 @@ ht-degree: 99%
          + [2023.4.0 維護版本發行說明](/help/release-notes/maintenance/2023/2023-4-0.md)
          + [2023.2.0 維護版本發行說明](/help/release-notes/maintenance/2023/2023-2-0.md)
          + [2023.1.0 維護版本發行說明](/help/release-notes/maintenance/2023/2023-1-0.md)
-   + Cloud Manager發行說明{#cloud-manager}
-      + [目前](/help/implementing/cloud-manager/release-notes/current.md)
+   + Cloud Manager 發行說明{#cloud-manager}
+      + [目前版本](/help/implementing/cloud-manager/release-notes/current.md)
       + 2025 {#2025}
          + [2025.2.0](/help/implementing/cloud-manager/release-notes/2025/2025-2-0.md)
          + [2025.1.0](/help/implementing/cloud-manager/release-notes/2025/2025-1-0.md)
@@ -322,7 +322,7 @@ ht-degree: 99%
          + [刪除移轉集](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/deleting-migrationset.md)
          + [在發佈執行個體上執行內容轉移工具](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/running-content-transfer-tool-publish-instance.md)
          + [移轉後管理主體](/help/journey-migration/managing-principals-after-migration.md)
-         + [移轉後大量上傳主體至IMS](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/bulk-principal-uploading.md)
+         + [移轉後將主體大量上傳到 IMS](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/bulk-principal-uploading.md)
          + [內容轉移工具疑難排解](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/troubleshooting-content-transfer-tool.md)
          + 舊版使用者對應工具 (舊版){#legacy-user-mapping-tool}
             + [概觀](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/overview-user-mapping-tool-legacy.md)
@@ -1038,7 +1038,7 @@ ht-degree: 99%
       + WYSIWYG 製作{#universal-editor}
          + [Edge Delivery Services 的表單通用編輯器簡介：完整指南](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
          + [如何使用通用編輯器開始製作：逐步教學課程](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
-         + [如何使用通用編輯器建立您的第一個表單 — 逐步教學課程](/help/edge/docs/forms/universal-editor/create-forms.md)
+         + [如何使用通用編輯器建立您的第一個表單 - 逐步操作教學課程](/help/edge/docs/forms/universal-editor/create-forms.md)
          + [通用編輯器介面指南：工具、功能和導覽說明](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md)
          + [製作行動裝置適用的表單：通用編輯器中的回應式設計](/help/edge/docs/forms/universal-editor/responsive-layout.md)
          + [設計精美表單：通用編輯器的樣式和主題指南](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
@@ -1047,8 +1047,8 @@ ht-degree: 99%
          + [保護表單免受垃圾郵件騷擾：新增 reCAPTCHA 安全性](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
          + [如何發佈及部署表單：通用編輯器發佈指南](/help/edge/docs/forms/universal-editor/publish-forms.md)
          + [建置自訂表單元件：通用編輯器開發人員指南](/help/edge/docs/forms/universal-editor/create-custom-component.md)
-         + [表單資料模型整合：將Forms與表單資料模型整合](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md)
-         + [可重複使用、模組化和獨立的區段：在表單中建立和使用表單片段](/help/edge/docs/forms/universal-editor/creating-form-fragments.md)
+         + [表單資料模型整合：整合表單與表單資料模型](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md)
+         + [可重複使用、模組化和獨立的片段：在表單中建立及使用表單片段](/help/edge/docs/forms/universal-editor/creating-form-fragments.md)
       + 文件型製作{#getting-started-edge-delivery-services-forms}
          + [建置第一份表單：使用 Google Sheets 和 Excel 的快速入門指南](/help/edge/docs/forms/tutorial.md)
          + [如何使用 Google Sheets 或 Excel 建立表單：逐步操作指南](/help/edge/docs/forms/create-forms.md)
@@ -1323,7 +1323,7 @@ ht-degree: 99%
          + [SPA WKND 教學課程](/help/implementing/developing/hybrid/wknd-tutorial.md)
          + [使用 React 快速入門](/help/implementing/developing/hybrid/getting-started-react.md)
          + [使用 Angular 快速入門](/help/implementing/developing/hybrid/getting-started-angular.md)
-         + [SPA 深入探討](/help/implementing/developing/hybrid/deep-dives.md)
+         + [SPA 深入探討](/help/implementing/developing/hybrid/deep-dives-gems.md)
          + [針對 AEM 開發 SPA](/help/implementing/developing/hybrid/developing.md)
          + [SPA 編輯器概觀](/help/implementing/developing/hybrid/editor-overview.md)
          + [SPA 藍圖](/help/implementing/developing/hybrid/blueprint.md)
