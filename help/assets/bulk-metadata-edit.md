@@ -1,10 +1,10 @@
 ---
-title: 在[DNL！中大量編輯中繼資料 Assets檢視]
+title: 在 [!DNL Assets View]中大量中繼資料編輯
 description: 瞭解如何為[DNL！提供的多個資產更新預先定義的標準中繼資料欄位集 同時Assets檢視]。
 exl-id: f5fee1b3-2855-4010-ae4a-216beb20920d
-source-git-commit: 9b5191bd05bfb06fb4eb1a9b710b98cc132ffeda
+source-git-commit: 46d64c089ff22492bc871ead36e8c08d683043b1
 workflow-type: tm+mt
-source-wordcount: '511'
+source-wordcount: '508'
 ht-degree: 3%
 
 ---
