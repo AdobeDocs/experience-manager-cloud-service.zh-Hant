@@ -2,9 +2,9 @@
 title: 在 [!DNL Assets View]中大量中繼資料編輯
 description: 瞭解如何為[DNL！提供的多個資產更新預先定義的標準中繼資料欄位集 同時Assets檢視]。
 exl-id: f5fee1b3-2855-4010-ae4a-216beb20920d
-source-git-commit: 46d64c089ff22492bc871ead36e8c08d683043b1
+source-git-commit: 19c5155363ef3f5083d36af880727a33c7224e84
 workflow-type: tm+mt
-source-wordcount: '508'
+source-wordcount: '496'
 ht-degree: 3%
 
 ---
@@ -48,7 +48,7 @@ ht-degree: 3%
     </tr>
 </table>
 
-[!DNL Assets View]的&#x200B;**[!DNL Bulk Metadata Edit]**&#x200B;功能可讓您同時編輯多個資產檔案的預定義標準中繼資料欄位集。 選取多個資產並一次大量更新其預先定義的標準中繼資料集，而非針對每個資產個別更新這些標準中繼資料。 此功能可一次大量編輯多個資產的標準中繼資料屬性集，維持大型資產集中這些標準中繼資料屬性的效率、一致性和準確性，進而改善這些資產的可搜尋性和組織性。
+[!DNL Assets View]的&#x200B;**[!DNL Bulk Metadata Edit]**&#x200B;功能可讓您同時編輯多個資產檔案的預定義標準中繼資料欄位集。 選取多個資產並一次大量更新其預先定義的標準中繼資料集，而非針對每個資產個別更新這些標準中繼資料。 此功能可跨大型資產集維持標準中繼資料屬性集的效率、一致性和準確性，並改善這些資產的可搜尋性和組織性。
 
 ## 大量編輯資產中繼資料 {#how-to-bulk-edit-the-metadata-of-multiple-assets-on-assets-view}
 
