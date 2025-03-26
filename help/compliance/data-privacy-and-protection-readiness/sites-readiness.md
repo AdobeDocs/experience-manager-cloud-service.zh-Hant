@@ -1,17 +1,17 @@
 ---
-title: 資料保護和資料隱私權法規 — AEM Sites整備
-description: 瞭解Experience Manager as a Cloud Service Sites對各種資料保護和資料隱私權法規的支援；包括歐盟一般資料保護規範(GDPR)、加州消費者隱私法，以及在實施新的AEM as a Cloud Service專案時如何遵守。
+title: 資料保護與資料隱私權法規 - AEM Sites 整備程度
+description: 了解 Experience Manager as a Cloud Service Sites 如何支援各種資料保護和資料隱私權法規；包括歐盟一般資料保護規範 (GDPR)、加州消費者隱私法，以及在實作新的 AEM as a Cloud Service 專案時如何遵守這些規定。
 exl-id: fdcad111-0cdd-46cc-964c-3f8669ca2030
 feature: Compliance
 role: Admin, Architect, Developer, Leader
 source-git-commit: 974f85b91a629ea6d4f34e2066d242c42a04015b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '989'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
-# Experience Manager Sites的資料保護與資料隱私權法規整備 {#aem-sites-readiness-for-data-protection-and-data-privacy-regulations}
+# Experience Manager Sites 的資料保護與資料隱私權法規整備程度 {#aem-sites-readiness-for-data-protection-and-data-privacy-regulations}
 
 >[!WARNING]
 >
@@ -98,7 +98,7 @@ AEM 透過 ContextHub 提供一個選用資料層。這會將訪客特定的資�
 
 ### 實作選擇加入/選擇退出 {#implementing-opt-in-opt-out}
 
-網站擁有者必須根據以下準則實施選擇退出元件。
+網站擁有者必須根據以下準則實作選擇退出元件。
 
 這些準則會將選擇加入實作為預設值。因此，網站訪客必須先明確同意，才會將任何個人資料儲存在瀏覽器 (用戶端) 的持續性中。
 

@@ -1,13 +1,13 @@
 ---
 title: 開始使用 AEM Forms 適用的 Edge Delivery Services - 開發人員教學課程
-description: 本教學課程可協助您啟動並執行新的 Adobe Experience Manager Forms (AEM) Forms 專案。10到20分鐘後，您就會建立自己的表格。
+description: 本教學課程可協助您啟動並執行新的 Adobe Experience Manager Forms (AEM) 專案。您將能在 10 到 20 分鐘內建立好自己的表單。
 feature: Edge Delivery Services
 exl-id: bb7e93ee-0575-44e1-9c5e-023284c19490
 role: Admin, Architect, Developer
 source-git-commit: e2259e542df5a12748705af901d073e4486292c4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1907'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -33,7 +33,7 @@ AEM Forms 會提供一個區塊 (名為最適化表單區塊)，協助您輕鬆�
 
 ## 建立一個預先設定最適化表單區塊的新 AEM 專案
 
-AEM Forms 範本可協助您很快開始使用預先設定最適化表單區塊的 AEM 專案。這是遵守 AEM 最佳實務進行，且是直接開始建立表單的最快、最簡單的方法。
+AEM Forms 範本可協助您很快開始使用預先設定最適化表單區塊的 AEM 專案。這是遵守 AEM 最佳做法進行，且是直接開始建立表單的最快、最簡單的方法。
 
 ### 開始使用 AEM Forms 範本的存放庫範本
 
