@@ -3,10 +3,11 @@ title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2025.1.0 版發行�
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2025.1.0 版發行說明。'
 feature: Release Information
 role: Admin
-source-git-commit: f899398182f9d0991123828ca217379653a4e397
+exl-id: 085629bf-fb24-4511-af6c-bbbeedcb6b98
+source-git-commit: 3b6b11a325246fe5e86ae37e95351d7701716491
 workflow-type: tm+mt
-source-wordcount: '1513'
-ht-degree: 87%
+source-wordcount: '1716'
+ht-degree: 92%
 
 ---
 
@@ -80,17 +81,33 @@ Have a look at the January 2025 Release Overview video for a summary of the feat
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### AEM Assets檢視中的新功能 {#new-features-assets}
+### AEM Assets 中的新功能 {#new-features-assets}
 
-**自訂搜尋篩選器**
+**Dynamic Media 傳遞報告**
 
-自訂搜尋篩選器可提升尋找相關資訊的精確度和效率。 它允許更量身打造的搜尋，並根據特定屬性（例如品牌、產品、類別或其他關鍵識別碼）篩選資料。 這可改善組織、減少花在篩選無關結果上的時間，並可加快決策過程。 它還支援擴充性，因為大型資料集更容易導覽和分析。
+取得透過 Dynamic Media 傳遞之資產的傳遞深入分析，包括資產層級傳遞計數、反向連結詳細資訊、AEM Assets 中的資產路徑和唯一資產 ID。為 AEM Assets 存放庫或特定資料夾階層中所有資產產生報告。您可以利用這些深入分析來測量已傳遞資產的 ROI、評估管道效能，並做出明智的資產管理決策。
 
-![自訂搜尋篩選器](/help/assets/assets/custom-search-filters.png)
+![動態轉譯](/help/assets/assets/referrer.png)
 
-### Content Hub 的新功能 {#new-features-content-hub}
+**Dynamic Media 多語言音訊和字幕**
 
-描述
+[Dynamic Media 中的影片支援多語言字幕和多語言音軌](/help/assets/dynamic-media/video.md#about-msma) - 您現在可以輕鬆地為主要影片新增多語言字幕和多語言音軌。擁有此功能代表全球觀眾都可以存取您的影片。您可以著手自訂一部已發佈的主要影片，以多種語言提供給全球觀眾，並遵守不同地理區域的無障礙指南。此外，作者還可以透過使用者介面的單一標籤管理字幕和音軌。
+
+**支援 Dynamic Adaptive Streaming over HTTP**
+
+針對 Dynamic Media 影片傳遞 (啟用 CMAF) 中的自適應串流推出新支援的通訊協定 (DASH - Dynamic Adaptive Streaming over HTTP，即基於 HTTP 的動態自適應串流)：
+
+* 自適應串流 (DASH/HLS) 可確保使用者能擁有更好的影片觀看體驗。
+
+* DASH 是自適應影片串流的國際標準通訊協定，並在業界獲得廣泛使用
+
+**資產關係**
+
+資產視圖現在支援在簡化的資產詳細資料面板中檢視和編輯資產關係。輕鬆地為內容加入來源和衍生等關係，讓使用者能夠更有效率地找到相關的主要內容。
+
+**重新處理資產**
+
+資產視圖現在支援重新處理資料夾中的資產。您可以選取&#x200B;**完整處理**&#x200B;選項，也可以使用進階選項，例如預設預覽轉譯、中繼資料、後處理工作流程，以及處理設定檔。
 
 ### AEM Assets 的搶先體驗功能 {#early-access-features-assets}
 
@@ -117,7 +134,7 @@ AEM Forms 搶先體驗計劃為您提供獨一無二的機會，獲得先進創�
 
 本發行說明列出目前版本提供的創新功能。如需搶先體驗計劃提供之創新的完整清單，請參閱 [AEM Forms 搶先體驗計劃文件](/help/forms/early-access-ea-features.md)。
 
-#### [最適化Forms中的HTML電子郵件範本](/help/forms/html-email-templates-in-adaptive-forms.md)
+#### 最適化Forms中的[HTML電子郵件範本](/help/forms/html-email-templates-in-adaptive-forms.md)
 
 最適化Forms可讓您使用HTML電子郵件範本。 HTML 電子郵件範本讓您能夠在提交表單時發送內容豐富又有視覺吸引力的個人化電子郵件。這些電子郵件可以使用表單資料進行自訂，並運用各種電子郵件標籤 (例如影像和連結) 加強內容。透過最適化表單，您可以上傳包含 HTML 範本的檔案，或使用純文字編輯器來建立這些範本。
 
