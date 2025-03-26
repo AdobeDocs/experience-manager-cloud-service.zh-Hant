@@ -19,7 +19,7 @@ ht-degree: 83%
 
 本文會透過從「表單建立精靈」中選取以Edge Delivery Services為基礎的範本，引導您使用通用編輯器來建立和編寫獨立表單。 您也可以透過通用編輯器，將製作好的表單發佈至 AEM Edge Delivery Services。
 
-AEM Forms 會提供一個稱為「自適應表單區塊」的區塊，協助您輕鬆建立 Edge Delivery Services 表單來擷取和儲存資料。您可以[建立使用自適應表單區塊預先設定的全新 AEM 專案](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block)，或者[將自適應表單區塊新增至現有的 AEM Site 專案](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#add-adaptive-forms-block-to-your-existing-aem-project)。
+AEM Forms 會提供一個稱為「最適化表單區塊」的區塊，協助您輕鬆建立 Edge Delivery Services 表單來擷取和儲存資料。您可以[建立使用最適化表單區塊預先設定的全新 AEM 專案](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block)，或者[將最適化表單區塊新增至現有的 AEM Site 專案](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#add-adaptive-forms-block-to-your-existing-aem-project)。
 
 ![Github 存放庫工作流程](/help/edge/assets/repo-workflow.png)
 
@@ -47,7 +47,7 @@ AEM Forms 會提供一個稱為「自適應表單區塊」的區塊，協助您�
 
 1. 登入您的 AEM Forms as a Cloud Service 作者實例。
 1. 選取「**[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL 表單]** > **[!UICONTROL 表單與文件]**」。
-1. 選取「**[!UICONTROL 建立]**  > **[!UICONTROL 自適應表單]**」。此時會開啟精靈。
+1. 選取「**[!UICONTROL 建立]**  > **[!UICONTROL 最適化表單]**」。此時會開啟精靈。
 1. 在「**來源**」索引標籤中，選取以 Edge Delivery Services 為基礎的表單範本：
 
    ![建立 EDS 表單](/help/edge/assets/create-eds-forms.png)
@@ -77,7 +77,7 @@ AEM Forms 會提供一個稱為「自適應表單區塊」的區塊，協助您�
 
 ### 撰寫表單
 
-1. 開啟內容瀏覽器，然後導覽至&#x200B;**內容樹**&#x200B;中的&#x200B;**[!UICONTROL 自適應表單]**&#x200B;元件。
+1. 開啟內容瀏覽器，然後導覽至&#x200B;**內容樹**&#x200B;中的&#x200B;**[!UICONTROL 最適化表單]**&#x200B;元件。
 
    ![內容樹](/help/edge/assets/content-tree.png)
 
@@ -85,7 +85,7 @@ AEM Forms 會提供一個稱為「自適應表單區塊」的區塊，協助您�
 
    ![新增元件](/help/edge/assets/add-component.png)
 
-1. 選取新增的自適應表單元件，然後使用「**[!UICONTROL 屬性]**」更新其屬性。
+1. 選取新增的最適化表單元件，然後使用「**[!UICONTROL 屬性]**」更新其屬性。
 
    ![開啟屬性](/help/edge/assets/component-properties.png)
 

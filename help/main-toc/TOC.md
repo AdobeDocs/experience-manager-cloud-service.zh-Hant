@@ -246,7 +246,7 @@ ht-degree: 99%
    + [AEM as a Cloud Service 安全性注意事項](/help/security/security-considerations.md)
    + [Adobe Developer Console 中的 JWT 憑證已被取代](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md)
    + [為 AEM as a Cloud Service 設定 IMS 整合](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md)
-   + [Sling Service 使用者對應和服務使用者定義的最佳實務](/help/security/best-practices-for-sling-service-user-mapping-and-service-user-definition.md)
+   + [Sling Service 使用者對應和服務使用者定義的最佳做法](/help/security/best-practices-for-sling-service-user-mapping-and-service-user-definition.md)
    + [Adobe as a Cloud Service 的客戶自控金鑰](/help/security/customer-managed-keys.md)
 + 上線 {#onboarding}
    + [從這裡開始](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html?lang=zh-hant)
@@ -584,7 +584,7 @@ ht-degree: 99%
       + Dynamic Media 歷程：基礎知識{#dm-journey}
          + [第一部分：什麼是 Dynamic Media - 使用案例 - 資產如何流經系統](/help/assets/dynamic-media/dm-journey-part1.md)
          + [第二部分：Dynamic Media URL 剖析 - 影像預設集基礎 - 關於影像集、迴轉集和混合媒體集](/help/assets/dynamic-media/dm-journey-part2.md)
-         + [Dynamic Media 最佳實務](/help/assets/dynamic-media/dm-best-practices.md)
+         + [Dynamic Media 最佳做法](/help/assets/dynamic-media/dm-best-practices.md)
       + [Experience League 的 Dynamic Media 電子報](/help/assets/dynamic-media/dynamic-media-newsletter.md)
       + [設定 Dynamic Media](/help/assets/dynamic-media/administering-dynamic-media.md)
       + [使用 Dynamic Media](/help/assets/dynamic-media/dynamic-media.md)
@@ -1052,7 +1052,7 @@ ht-degree: 99%
       + 文件型製作{#getting-started-edge-delivery-services-forms}
          + [建置第一份表單：使用 Google Sheets 和 Excel 的快速入門指南](/help/edge/docs/forms/tutorial.md)
          + [如何使用 Google Sheets 或 Excel 建立表單：逐步操作指南](/help/edge/docs/forms/create-forms.md)
-         + [自適應表單區塊的各種元件](/help/edge/docs/forms/form-components.md)
+         + [最適化表單區塊的各種元件](/help/edge/docs/forms/form-components.md)
          + [將您的表單連線至 Google Sheets：資料彙集設定指南](/help/edge/docs/forms/submit-forms.md)
          + [將您的表單上線：發佈與資料彙集指南](/help/edge/docs/forms/publish-forms.md)
          + [表單欄位驗證：在表單中加入錯誤檢查](/help/edge/docs/forms/validate-forms.md)
