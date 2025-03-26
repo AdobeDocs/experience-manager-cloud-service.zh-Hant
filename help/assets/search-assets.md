@@ -6,12 +6,13 @@ mini-toc-levels: 1
 feature: Selectors, Adobe Stock, Asset Distribution, Asset Management, Asset Processing
 role: User, Admin
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: 07cfbb643785127a45a1c7712a9f4ff81767b7e1
 workflow-type: tm+mt
-source-wordcount: '5552'
+source-wordcount: '5931'
 ht-degree: 6%
 
 ---
+
 
 # 在AEM中搜尋資產 {#search-assets-in-aem}
 
@@ -313,7 +314,7 @@ Using Smart Tags adds an extra `OR` clause to find any of the search terms as th
 
 ## 資產選擇器 {#asset-picker}
 
-資產選擇器（在舊版[!DNL Adobe Experience Manager]中稱為資產選擇器）可讓您以特殊方式搜尋、篩選和瀏覽DAM資產。 資產選擇器位於`https://[aem_server]:[port]/aem/assetpicker.html`。 您可以擷取使用資產選擇器所選取資產的中繼資料。 您可以使用支援的請求引數來啟動它，例如資產型別（影像、視訊、文字）和選取模式（單一或多個選取範圍）。 這些引數會為特定搜尋執行個體設定資產選擇器的內容，並在整個選取範圍中維持不變。
+[AEM資產選擇器](/help/assets/overview-asset-selector.md) （在舊版[!DNL Adobe Experience Manager]中稱為資產選擇器）可讓您以特殊方式搜尋、篩選和瀏覽DAM資產。 資產選擇器位於`https://[aem_server]:[port]/aem/assetpicker.html`。 您可以擷取使用資產選擇器所選取資產的中繼資料。 您可以使用支援的請求引數來啟動它，例如資產型別（影像、視訊、文字）和選取模式（單一或多個選取範圍）。 這些引數會為特定搜尋執行個體設定資產選擇器的內容，並在整個選取範圍中維持不變。
 
 資產選擇器會使用HTML5 `Window.postMessage`訊息，將所選資產的資料傳送給收件者。 它僅適用於瀏覽模式和Omnisearch結果頁面。
 
@@ -370,6 +371,8 @@ Using Smart Tags adds an extra `OR` clause to find any of the search terms as th
 
 * **索引**：搜尋結果中只會傳回已索引的中繼資料和資產。 為了獲得更好的涵蓋範圍和效能，請確保建立適當的索引並遵循最佳實務。 請參閱[索引](#searchindex)。
 
+檢視更多[搜尋最佳實務](search-best-practices.md)。
+
 ## 說明搜尋的一些範例 {#samples}
 
 在關鍵字周圍使用雙引號來尋找包含精確片語的資產，其順序與使用者指定的完全一致。
@@ -407,62 +410,56 @@ Using Smart Tags adds an extra `OR` clause to find any of the search terms as th
 
 *圖：使用破折號來搜尋不包含排除關鍵字的資產。*
 
-<!--
-## Configuration and administration tasks related to search functionality {#configadmin}
+## 與搜尋功能相關的設定和管理工作 {#configadmin}
 
-### Search index configurations {#searchindex}
+### 搜尋索引設定 {#searchindex}
 
-Asset discovery relies on indexing of DAM contents, including the metadata. Faster and accurate asset discovery relies on optimized indexing and appropriate configurations. See [indexing](/help/operations/indexing.md).
--->
+資產探索有賴於DAM內容的索引，包括中繼資料。 更快、更精確的資產探索有賴於最佳化的索引和適當的設定。 請參閱[索引](/help/operations/indexing.md)。
 
-<!--
-### Visual or similarity search {#configvisualsearch}
+### 視覺或相似性搜尋 {#configvisualsearch}
 
-Visual search uses Smart Tags. After configuring smart tagging functionality, follow these steps.
+視覺化搜尋使用智慧標籤。 設定智慧標籤功能後，請遵循下列步驟。
 
-1. In [!DNL Experience Manager] CRXDE, in `/oak:index/lucene` node, add the following properties and values and save the changes.
+1. 在[!DNL Experience Manager] CRXDE的`/oak:index/lucene`節點中，新增下列屬性和值並儲存變更。
 
-    * `costPerEntry` property of type `Double` with the value `10`.
+   * 值為`10`之型別`Double`的`costPerEntry`屬性。
 
-    * `costPerExecution` property of type `Double` with the value `2`.
+   * 值為`2`之型別`Double`的`costPerExecution`屬性。
 
-    * `refresh` property of type `Boolean` with the value `true`.
+   * 值為`true`之型別`Boolean`的`refresh`屬性。
 
-   This configuration allows searches from the appropriate index.
+   此設定允許從適當的索引進行搜尋。
 
-1. To create Lucene index, in CRXDE, at `/oak:index/damAssetLucene/indexRules/dam:Asset/properties`, create node named `imageFeatures` of type `nt-unstructured`. In `imageFeatures` node,
+1. 若要建立Lucene索引，請在CRXDE的`/oak:index/damAssetLucene/indexRules/dam:Asset/properties`建立型別為`nt-unstructured`且名為`imageFeatures`的節點。 在`imageFeatures`節點中，
 
-    * Add `name` property of type `String` with the value `jcr:content/metadata/imageFeatures/haystack0`.
+   * 新增值為`jcr:content/metadata/imageFeatures/haystack0`的型別`String`的`name`屬性。
 
-    * Add `nodeScopeIndex` property of type `Boolean` with the value of `true`.
+   * 新增值為`true`的型別`Boolean`的`nodeScopeIndex`屬性。
 
-    * Add `propertyIndex` property of type `Boolean` with the value of `true`.
+   * 新增值為`true`的型別`Boolean`的`propertyIndex`屬性。
 
-    * Add `useInSimilarity` property of type `Boolean` with the value `true`.
+   * 新增值為`true`的型別`Boolean`的`useInSimilarity`屬性。
 
-   Save the changes.
+   儲存變更。
 
-1. Access `/oak:index/damAssetLucene/indexRules/dam:Asset/properties/predictedTags` and add `similarityTags` property of type `Boolean` with the value of `true`.
-1. Apply Smart Tags to the assets in your [!DNL Experience Manager] repository. See [how to configure smart tags](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/configuring/tagging.html#configuring).
-1. In CRXDE, in `/oak-index/damAssetLucene` node, set the `reindex` property to `true`. Save the changes.
-1. (Optional) If you have customized search form then copy the `/libs/settings/dam/search/facets/assets/jcr%3Acontent/items/similaritysearch` node to `/conf/global/settings/dam/search/facets/assets/jcr:content/items`. Save the changes.
+1. 存取`/oak:index/damAssetLucene/indexRules/dam:Asset/properties/predictedTags`並新增值為`true`之型別`Boolean`的`similarityTags`屬性。
+1. 將智慧標籤套用至[!DNL Experience Manager]存放庫中的資產。 請參閱[如何設定智慧標籤](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/configuring/tagging.html#configuring)。
+1. 在CRXDE的`/oak-index/damAssetLucene`節點中，將`reindex`屬性設定為`true`。 儲存變更。
+1. （選擇性）如果您有自訂的搜尋表單，則將`/libs/settings/dam/search/facets/assets/jcr%3Acontent/items/similaritysearch`節點複製到`/conf/global/settings/dam/search/facets/assets/jcr:content/items`。 儲存變更。
 
-For related information, see [understand smart tags in Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html) and [how to manage smart tags](/help/assets/smart-tags.md).
--->
+如需相關資訊，請參閱[瞭解Experience Manager中的智慧標籤](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html)和[如何管理智慧標籤](/help/assets/smart-tags.md)。
 
-<!--
-### Mandatory metadata {#mandatorymetadata}
+### 必要中繼資料 {#mandatorymetadata}
 
-Business users, administrators, or DAM librarians can define some metadata as mandatory metadata that is a must for the business processes to work. For various reasons, some assets may be missing this metadata, such as legacy assets or assets migrated in bulk. Assets with missing or invalid metadata are detected and reported based on the indexed metadata property. To configure it, see [mandatory metadata](/help/assets/metadata-schemas.md#defining-mandatory-metadata).
+業務使用者、管理員或DAM程式庫管理員可以將一些中繼資料定義為業務程式正常運作的必要中繼資料。 由於各種原因，某些資產可能遺漏此中繼資料，例如舊版資產或大量移轉的資產。 系統會根據已編制索引的中繼資料屬性，偵測及報告含有遺失或無效中繼資料的Assets。 若要進行設定，請參閱[必要的中繼資料](/help/assets/metadata-schemas.md#defining-mandatory-metadata)。
 
-### Modify search facets {#searchfacets}
+### 修改搜尋多面向 {#searchfacets}
 
-To improve the speed of discovery, [!DNL Experience Manager Assets] offers search facets using which you can filter the search results. The Filters panel includes a few standard facets by default. Administrators can customize the Filters panel to modify the default facets using the in-built predicates. [!DNL Experience Manager] provides a good collection of in-built predicates and an editor to customize the facets. See [search facets](/help/assets/search-facets.md).
+為了提高探索速度，[!DNL Experience Manager Assets]提供搜尋Facet，您可以使用它來篩選搜尋結果。 依預設，「篩選器」面板包含一些標準多面。 管理員可以自訂「篩選器」面板，以使用內建述詞修改預設Facet。 [!DNL Experience Manager]提供內建述詞的集合以及自訂Facet的編輯器。 請參閱[搜尋Facet](/help/assets/search-facets.md)。
 
-### Extract text when uploading assets {#extracttextupload}
+### 上傳資產時擷取文字 {#extracttextupload}
 
-You can configure [!DNL Experience Manager] to extract the text from the assets when users upload assets, such as PSD or PDF files. [!DNL Experience Manager] indexes the extracted text and helps users search these assets based on the extracted text. See [upload assets](/help/assets/manage-digital-assets.md#uploading-assets).
--->
+您可以設定[!DNL Experience Manager]，在使用者上傳資產(例如PSD或PDF檔案)時從資產中擷取文字。 [!DNL Experience Manager]會為擷取的文字建立索引，並協助使用者根據擷取的文字搜尋這些資產。 請參閱[上傳資產](/help/assets/manage-digital-assets.md#uploading-assets)。
 
 ### 用於篩選搜尋結果的自訂述詞 {#custompredicates}
 
@@ -507,7 +504,7 @@ You can configure [!DNL Experience Manager] to extract the text from the assets 
 
 在清單檢視中，您可以排序搜尋結果，就像排序任何資料夾中的資產一樣。 排序功能適用於這些欄 — 名稱、標題、狀態、維度、大小、評等、使用狀況、（日期）建立時間、（日期）修改時間、（日期）發佈時間、工作流程和出庫。
 
-如需排序功能的限制，請參閱[限制](#limitations)。
+<!--For limitations of sort functionality, see [limitations](#limitations).-->
 
 ### 檢查資產的詳細資訊 {#checkinfo}
 
@@ -523,13 +520,13 @@ You can configure [!DNL Experience Manager] to extract the text from the assets 
 
 ### 下載搜尋的資產 {#download}
 
-您可以下載搜尋的資產及其轉譯，就像從資料夾下載一般資產一樣。 從搜尋結果中選取一或多個資產，然後按一下工具列中的[下載]。****
+您可以下載搜尋的資產及其轉譯，就像從資料夾下載一般資產一樣。 從搜尋結果中選取一或多個資產，然後按一下工具列中的[下載]。 ****&#x200B;檢視[下載資產](/help/assets/download-assets-from-aem.md)
 
 ### 大量更新中繼資料屬性 {#metadata-updates}
 
 您可以對多個資產的常見中繼資料欄位進行大量更新。 從搜尋結果中選取一或多個資產。 按一下工具列中的&#x200B;**[!UICONTROL 屬性]**，並視需要更新中繼資料。 完成時，按一下&#x200B;**[!UICONTROL 儲存並關閉]**。 更新欄位中先前存在的中繼資料會被覆寫。
 
-對於可在單一資料夾或集合中使用的資產，不使用搜尋功能，就更容易[大量](/help/assets/manage-metadata.md#manage-assets-metadata)更新中繼資料。 對於跨資料夾可用的資產或符合共同條件的資產，透過搜尋大量更新中繼資料會更快一些。
+對於可在單一資料夾或集合中使用的資產，不使用搜尋功能，就更容易[大量](/help/assets/bulk-metadata-edit.md)更新中繼資料。 對於跨資料夾可用的資產或符合共同條件的資產，透過搜尋大量更新中繼資料會更快一些。
 
 ### 智慧型集合 {#smart-collections}
 
@@ -578,7 +575,6 @@ You can configure [!DNL Experience Manager] to extract the text from the assets 
 
 * [搜尋最佳實務](search-best-practices.md)
 * [翻譯資產](translate-assets.md)
-* [Assets HTTP API](mac-api-assets.md)
 * [資產支援的檔案格式](file-format-support.md)
 * [連接的資產](use-assets-across-connected-assets-instances.md)
 * [資產報表](asset-reports.md)
