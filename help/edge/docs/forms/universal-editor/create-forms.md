@@ -6,9 +6,9 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 1eab3a3d-5726-4ff8-90b9-947026c17e22
-source-git-commit: 979aad24ebbd0ef1d4d1fc92d402fca20bc27a44
+source-git-commit: c81698c2d424d39688d1c9fad6c085223f5854a5
 workflow-type: tm+mt
-source-wordcount: '1078'
+source-wordcount: '1080'
 ht-degree: 83%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 83%
 
 AEM Forms 會提供一個稱為「最適化表單區塊」的區塊，協助您輕鬆建立 Edge Delivery Services 表單來擷取和儲存資料。您可以[建立使用最適化表單區塊預先設定的全新 AEM 專案](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block)，或者[將最適化表單區塊新增至現有的 AEM Site 專案](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#add-adaptive-forms-block-to-your-existing-aem-project)。
 
-![Github 存放庫工作流程](/help/edge/assets/repo-workflow.png)
+![Github存放庫工作流程](/help/edge/assets/repo-workflow.png){width=50%}
 
 ## 必要條件
 
