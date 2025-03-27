@@ -1,20 +1,18 @@
 ---
-title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 最新發行說明。'
-description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 最新發行說明。'
-mini-toc-levels: 1
-exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
+title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2025.2.0 版發行說明。'
+description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2025.2.0 版發行說明。'
 feature: Release Information
 role: Admin
-source-git-commit: 1964d4a40d1272baf661473641381ace900407d1
+source-git-commit: 43a9b29132aca8f5231634b845c55538b59f5ee4
 workflow-type: tm+mt
-source-wordcount: '1072'
-ht-degree: 74%
+source-wordcount: '1500'
+ht-degree: 100%
 
 ---
 
-# [!DNL Adobe Experience Manager] as a Cloud Service 最新發行說明 {#release-notes}
+# [!DNL Adobe Experience Manager] as a Cloud Service 2025.2.0 版發行說明 {#release-notes}
 
-以下章節概述 [!DNL Experience Manager] as a Cloud Service 目前 (最新) 版本的功能發行說明。
+以下章節概述 [!DNL Experience Manager] as a Cloud Service 2025.2.0 版的功能發行說明。
 
 >[!NOTE]
 >
@@ -28,7 +26,7 @@ ht-degree: 74%
 
 ## 發行日期 {#release-date}
 
-[!DNL Adobe Experience Manager]作為[!DNL Cloud Service]目前功能版本(2025.3.0)的發行日期是2025年3月27日。 下一個功能版本(2025.4.0)計畫於2025年4月24日發行。
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 最新功能版本 (2025.2.0) 的發行日期為 2025 年 3 月 4 日。下一個功能版本 (2025.3.0) 預計於 2025 年 3 月 27 日發行。
 
 ## 維護版本發行說明 {#maintenance}
 
@@ -44,20 +42,59 @@ Have a look at the February 2025 Release Overview video for a summary of the fea
 
 -->
 
+## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
+
+### AEM Sites 中的新功能 {#new-features-sites}
+
+**內容片段自動標記**
+
+建立內容片段時，現在可自動繼承指派給內容模型的標記。這樣一來，儲存在內容片段中的內容便可以有效率地完成自動分類。
+
+**內容片段 UUID 支援**
+
+內容片段 UUID 支援現在正式推出。新功能不會改變 AEM 中基於路徑的操作行為，例如移動、重新命名、轉出 (路徑會自動調整)，但它可讓外部使用內容片段的操作變得更輕鬆且更穩定，尤其是在使用 GraphQL 查詢直接針對個別片段進行 ByPath 查詢時。如果變更片段路徑，這類查詢可能無法進行。使用新的 ById 查詢類型時，即使路徑變更，片段的 UUID 也不會改變，所以此查詢現在可保持穩定。
+
+**內容片段編輯器和 GraphQL 中具有 OpenAPI 功能的 Dynamic Media 支援**
+
+儲存在不同的 AEM as a Cloud Service 方案而不是內容片段中的資產，以及具備擁有 OpenAPI 功能的 Dynamic Media 的資產，現在皆可在內容片段中使用。新的內容片段編輯器的影像選擇器，現在允許在片段中引用的影像資產選擇「遠端」存放庫作為其來源。使用 AEM GraphQL 傳遞此類內容片段時，JSON 回應現在包含遠端資產的必要屬性 (assetId、repositoryId)，因此用戶端應用程式可以建立相應的 Dynamic Media 並透過 OpenAPI URL 來擷取影像。
+
+**內容片段編輯器轉出**
+
+我們將會繼續在 AEM as a Cloud Service 中啟用全新的 Spectrum UI 型內容片段編輯器。繼在 2024 年 11 月成為所有雲端服務開發人員環境的預設選項後，此功能將在 2025 年 4 月 1 日成為所有中繼環境的預設選項，並在 2025 年 5 月 1 日成為所有生產環境的預設選項。在所有情況下，使用者仍然可以選擇恢復使用 AEM Touch UI 中的傳統內容片段編輯器。
+
+**翻譯 HTTP API**
+
+在早期採用者模式中已開放使用一段時間的 AEM 翻譯 HTTP REST API 現在正式推出。相關文件請參閱[此處](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/translation/)。該 API 可以將 AEM 內容翻譯管理流程的必要步驟自動化。
+
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### Dynamic Media中的新功能 {#new-features-dynamic-media}
+### AEM Assets 中的新功能 {#new-features-assets}
 
-使用Dynamic Media搭配Open API傳送的視訊的&#x200B;**長格式支援**
+**Dynamic Media 全新封裝結構**
 
-含OpenAPI的Dynamic Media現在支援長格式視訊。 長格式視訊最多可支援50 GB和2小時。
+Dynamic Media 全新封裝結構現已推出，更加符合市場預期且支援追蹤。全新封裝結構包括：
 
-### Assets 檢視的新功能 {#new-features-assets-view}
+* Dynamic Media Prime，其中包括支援 OpenAPI 的 Dynamic Media 和影片，可強化傳遞。
 
+* Dynamic Media Ultimate 新增傳遞和轉換功能，以滿足更高的使用要求。
 
-**支援根標籤**
+您必須擁有 Assets as a Cloud Service Prime 或 Ultimate 才能享受全新封裝結構的好處。
 
-AEM Assets現在支援將中繼資料表單中的標籤屬性對應至自訂中繼資料。 此外，身為管理員，您可以限制存取特定根標籤和根標籤下存在的標籤，藉此限制使用者的標籤可用性。
+**AI 生成影片字幕**
+
+Adobe Dynamic Media 中的 AI 生成影片字幕功能會使用人工智慧，為影片內容自動生成字幕。透過提供準確的字幕，這項功能可改善輔助工具的效能並增強使用者體驗。字幕是根據原始音訊所產生，而在影片屬性頁面的「字幕和音訊」標籤會提供任何其他音軌或額外的字幕。您可以在影片發佈之前審查及預覽字幕，其支援超過 60 種語言。
+
+**自訂搜尋篩選器**
+
+自訂搜尋篩選器可提高搜尋相關資訊的準確性和效率。您可以利用這項功能進行更精確的搜尋，根據特定屬性 (例如品牌、產品、類別或其他關鍵識別碼) 篩選資料。這樣可以改善組織效率，減少篩選無關結果所花費的時間，並可以加快決策過程。自訂搜尋篩選器亦支援擴充性，因為瀏覽和分析大型資料集變得更加簡單。
+
+![自訂搜尋篩選器](/help/assets/assets/custom-search-filters.png)
+
+### Content Hub 的搶先體驗功能 {#early-access-content-hub}
+
+除了現有的靜態轉譯，您現在使用 Content Hub 亦可以檢視和下載動態和智慧裁切轉譯。作為 Content Hub 管理員，您也可以使用「設定」使用者介面來設定使用者是否可使用這些轉譯。
+
+![動態轉譯](/help/assets/assets/download-single-asset-renditions-dynamic.png)
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -87,15 +124,7 @@ AEM Forms 搶先體驗計劃為您提供獨一無二的機會，獲得先進創�
 
 >[!IMPORTANT]
 >
-> Java 21 **執行階段**&#x200B;已在2月部署至您的開發/RDE環境；它將於4月28日和29日&#x200B;**套用至您的中繼/生產環境。**&#x200B;請注意，**使用Java 21 （或Java 17）建置程式碼**&#x200B;獨立於Java 21執行階段 — 您必須明確採取步驟使用Java 21 （或Java 17）建置程式碼。
-
-### AEM記錄轉寄到更多目的地 — Beta計畫 {#log-forwarding-earlyadopter}
-
-現在處於Beta版，您可以將AEM記錄轉送至New Relic （使用HTTPS）、Amazon S3和Sumo Logic。 請注意，支援AEM記錄(包括Apache/Dispatcher)，但不支援CDN記錄。 電子郵件[aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com)以取得存取權。
-
-雖然可從Cloud Manager下載記錄檔，但許多組織發現將這些記錄檔串流至偏好的記錄目的地會很有幫助。 AEM已支援(GA) AEM和CDN記錄轉送至Azure Blob Storage、Datadog、HTTPS、Elasticsearch （和OpenSearch）和Splunk。 此功能以自助方式設定，並使用設定管道進行部署。
-
-在[記錄檔轉送檔案](/help/implementing/developing/introduction/log-forwarding.md)中進一步瞭解。
+> 在 2 月，除了已經使用 Java 17 或 21 建置的環境之外 (這些環境已有 Java 21 執行階段)，Java 21 **執行階段**&#x200B;也已部署到開發/RDE 環境。Java 21 將於 4 月套用至中繼/生產環境。
 
 ### 邊緣運算 - 請求意見回饋！ {#edge-computing-feedback}
 
