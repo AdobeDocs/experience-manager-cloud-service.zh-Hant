@@ -4,9 +4,9 @@ description: 瞭解如何以重寫方式運用單一程式碼基底，為您的�
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 701bd9bc-30e8-4654-8248-a06d441d1504
-source-git-commit: c9d0d3cd7e18b56db36a379b63f8fb48e18a40db
+source-git-commit: beda1168323d511cd7b89bb5d0a6eccb742de36f
 workflow-type: tm+mt
-source-wordcount: '747'
+source-wordcount: '799'
 ht-degree: 2%
 
 ---
@@ -141,3 +141,9 @@ ht-degree: 2%
 1. 在`https://main--wknd-prod--<your-github-org>.aem.page`造訪您在該頁面的新Edge Delivery Services網站。
 
 如果看到您所做的變更，表示您的個別生產網站設定正常運作。
+
+## 使用情況 {#usage}
+
+在您將專案設定為使用重寫的測試和生產環境後，您可以單獨管理它們的程式碼。 下圖說明AEM、Edge Delivery Services網站和GitHub存放庫中各種環境中的內容關係。
+
+![AEM環境圖例和重新處理生產/中繼環境](assets/repoless/aem-edge-github.png)
