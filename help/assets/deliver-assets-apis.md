@@ -3,9 +3,9 @@ title: 傳遞 API
 description: 瞭解如何使用傳送API。
 role: User
 exl-id: 806ca38f-2323-4335-bfd8-a6c79f6f15fb
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: 2ec0b4125aa0990b6e022350a1f861fe394e6b1f
 workflow-type: tm+mt
-source-wordcount: '655'
+source-wordcount: '634'
 ht-degree: 11%
 
 ---
@@ -75,11 +75,7 @@ ht-degree: 11%
 | 視訊資產的[播放器容器](https://adobe-aem-assets-delivery.redoc.ly/#operation/videoPlayerDelivery) | 傳回視訊資產的播放器容器。 您可以將播放器內嵌至iframe HTML元素中，並播放影片。 |
 | [播放資料清單為選取的輸出格式](https://adobe-aem-assets-delivery.redoc.ly/#operation/videoManifestDelivery) | 以選取的輸出格式傳回指定視訊資產的播放資訊清單檔案。 您必須建置可透過HLS或DASH通訊協定自我調整資料流的自訂播放器，才能提取播放資訊清單檔案並播放視訊。 |
 
-
->[!NOTE]
->
-* [影像預設集、智慧型影像以及其他影像修飾元](https://adobe-aem-assets-delivery-advancemodifiers.redoc.ly/)是您可用的有限功能。 若要取得存取權，[請建立並提交Adobe客戶支援案例](https://helpx.adobe.com/tw/enterprise/using/support-for-experience-cloud.html)。
-* [Assets Prime](/help/assets/assets-ultimate-overview.md)無法使用智慧型裁切。
+如需有關可用的Dynamic Media產品專案及其功能的資訊，請參閱[Dynamic Media Prime和Ultimate](/help/assets/dynamic-media/dm-prime-ultimate.md)。
 
 ## 傳送API端點 {#delivery-apis-endpoint}
 

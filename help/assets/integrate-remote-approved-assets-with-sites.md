@@ -2,10 +2,10 @@
 title: 將遠端 AEM Assets 與 AEM Sites 整合
 description: 瞭解如何使用核准的AEM Assets來設定及連結AEM網站。
 exl-id: 382e6166-3ad9-4d8f-be5c-55a7694508fa
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: 2ec0b4125aa0990b6e022350a1f861fe394e6b1f
 workflow-type: tm+mt
-source-wordcount: '1056'
-ht-degree: 7%
+source-wordcount: '1085'
+ht-degree: 6%
 
 ---
 
@@ -178,4 +178,4 @@ ht-degree: 7%
 
 ### 在Edge Delivery Services中存取遠端資產 {#access-assets-eds}
 
-您也可以存取Edge Delivery Services中的遠端資產。 如需詳細資訊，請參閱[透過OpenAPI功能使用Dynamic Media提供的Assets as a Cloud Service資產](https://www.aem.live/docs/aem-assets-sidekick-plugin#utilizing-assets-from-assets-cloud-services-delivered-via-dynamic-media-with-openapi)。
+在Microsoft Word、Google Docs或Universal Editor中編寫內容時，您可以存取遠端資產，然後將內容發佈至Edge Delivery Services。 您也可以搭配OpenAPI使用Dynamic Media來提供品牌核准的資產，並利用其提供的許多其他優點。 如需詳細資訊，請參閱[在編寫AEM Assets的內容時整合Edge Delivery Services](/help/assets/integrate-aem-assets-edge-delivery-services.md)。
