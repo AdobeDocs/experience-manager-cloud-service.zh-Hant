@@ -4,7 +4,7 @@ description: 本文全面概述了 SPA 編輯器及其運作原理，包括 SPA 
 exl-id: 9814d86e-8d87-4f7f-84ba-6943fe6da22f
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: e06766160009eaa1bbc41bbf7cfad967a5195e71
+source-git-commit: 99c7e60976da540958b46cb24b2a470bcfd9e635
 workflow-type: tm+mt
 source-wordcount: '1633'
 ht-degree: 93%
@@ -30,8 +30,8 @@ AEM 中的 SPA 支援帶入一個薄 JS 層，在頁面編輯器中載入內容�
 如需AEM中SPA的詳細資訊，請參閱下列內容：
 
 * [SPA Blueprint](blueprint.md)，符合SPA的技術需求。
-* [使用React在AEM中開始使用SPA](getting-started-react.md)，快速瀏覽使用React的簡單SPA。
-* [使用Angular的AEM中的SPA快速入門](getting-started-angular.md)，快速瞭解使用Angular的簡單SPA。
+* [使用React在AEM中開始使用SPA](getting-started-react.md)，快速瞭解使用React的簡單SPA。
+* [使用Angular在AEM中開始使用SPA](getting-started-angular.md)，快速瞭解使用Angular的簡單SPA。
 
 ## 設計 {#design}
 
@@ -189,6 +189,6 @@ Adobe 完全支援 AEM SPA Editor SDK，並會持續增強和擴展。SPA 編輯
 * 編輯設定（例如監聽器）
 * 還原/取消復原
 * 頁面差異和時間彎曲
-* 執行HTML重寫伺服器端的功能，例如連結檢查器、CDN重寫器服務、URL縮短等。
+* 執行HTML重寫伺服器端的功能，例如[連結檢查器、](/help/operations/link-checker.md) CDN重寫程式服務、URL縮短等等。
 * 開發人員模式
 * AEM 啟動
