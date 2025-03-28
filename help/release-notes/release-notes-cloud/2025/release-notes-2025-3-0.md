@@ -1,20 +1,18 @@
 ---
-title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 最新發行說明。'
-description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 最新發行說明。'
-mini-toc-levels: 1
-exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
+title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2025.3.0 版發行說明。'
+description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2025.3.0 版發行說明。'
 feature: Release Information
 role: Admin
-source-git-commit: c5bf8f4f0ffa250bee9743bf1810abcf171f24d3
+source-git-commit: 4d7f72813a1806c7f20d5699f42170b9b49dbb3c
 workflow-type: tm+mt
-source-wordcount: '1072'
+source-wordcount: '1079'
 ht-degree: 74%
 
 ---
 
-# [!DNL Adobe Experience Manager] as a Cloud Service 最新發行說明 {#release-notes}
+# [!DNL Adobe Experience Manager] as a Cloud Service 2025.3.0 版發行說明 {#release-notes}
 
-以下章節概述 [!DNL Experience Manager] as a Cloud Service 目前 (最新) 版本的功能發行說明。
+以下章節概述 [!DNL Experience Manager] as a Cloud Service 2025.3.0 版的功能發行說明。
 
 >[!NOTE]
 >
@@ -28,7 +26,7 @@ ht-degree: 74%
 
 ## 發行日期 {#release-date}
 
-[!DNL Adobe Experience Manager]作為[!DNL Cloud Service]目前功能版本(2025.4.0)的發行日期是2025年4月24日。 下一個功能版本(2025.5.0)計畫於2025年5月29日發行。
+[!DNL Adobe Experience Manager]作為[!DNL Cloud Service]目前功能版本(2025.3.0)的發行日期是2025年3月27日。 下一個功能版本(2025.4.0)計畫於2025年4月24日發行。
 
 ## 維護版本發行說明 {#maintenance}
 
