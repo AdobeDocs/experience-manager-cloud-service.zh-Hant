@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的目前維�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 67b9a5f73f1f8c599e902a0ac0d8efbc614c7f75
+source-git-commit: 23ebeb259e5955bd51431844fd67db9b363034ea
 workflow-type: tm+mt
-source-wordcount: '517'
-ht-degree: 32%
+source-wordcount: '375'
+ht-degree: 100%
 
 ---
 
@@ -16,61 +16,47 @@ ht-degree: 32%
 
 下節是 Experience Manager as a Cloud Service 目前維護版本的技術版本發行說明。
 
-## 版本X {#X}
+## 版本 19823 {#19823}
 
-以下摘要說明維護版本X的持續改善，該版本於2025年4月1日公開發佈。 前一個維護版本是版本 19823。
+以下摘要說明於 2025 年 3 月 4 日公開發行的 19823 維護版本持續改善的內容。前一個維護版本是版本 19687。
 
-啟用 2025.4.0 功能將可使用此維護版本的完整功能集。如需詳細資訊，請參閱 [Experience Manager 發行藍圖](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)。
+啟用 2025.3.0 功能將可使用此維護版本的完整功能集。如需詳細資訊，請參閱 [Experience Manager 發行藍圖](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)。
 
-### 增強功能 {#enhancements-X}
+### 增強功能 {#enhancements-19823}
 
-Forms-19068：新增對Forms API中AEP Connector提交動作的支援，以增強表單資料整合功能。
+* ASSETS-46491：用於變更資產處理狀態的 OSGI 事件處理常式。
+* ASSETS-45613：資產被刪除或移動時發送取消發佈事件。
+* ASSETS-45131：Content Hub 支援自訂標記屬性。
 
-Forms-18513：在AEP Connector中實作資料樹狀結構轉換支援，以增強精靈功能和資料處理功能。
+### 已修正的問題 {#fixed-issues-19823}
 
-Forms-18432：實作表單專用（規則運算式）使用者端預填設定，以啟用選擇性預填功能而無OSGI層級變更。
+* ASSETS-20433：受密碼保護的 PDF 的 Dynamic Media 攝取問題。
+* ASSETS-24675：僅色票的影像設定檔不會顯示影像處理選項。
+* ASSETS-41257：資產版本比較使用不正確的外觀比例呈現資產。時間軸中資產版本順序顯示不正確。
+* ASSETS-44894：可能無法點按資產視圖書籤。
+* ASSETS-45015：如果找不到智慧裁切資產控制點，則智慧裁切寬度和高度會設定為零。
+* ASSETS-45192：降低 Pulse 請求頻率。
+* ASSETS-45724：如果沒有指派上傳工作，請確保重試 DM 上傳。
+* ASSETS-46425：Adobe Stock 整合搜尋問題。
+* ASSETS-27400：資料夾預覽產生器可能嘗試開啟原始檔案。
+* CQ-4358722：處理 Java 11 和 Java 17 中不同的地區代碼。
+* SITES-29369：資產啟用/停用時觸發頁面已發佈/取消發佈事件。
+* SITES-24074：修正在 Unified Shell 之下的鍵盤協助工具。
+* SITES-28058：資產資料夾標題未轉移至 Live Copy。
 
-Forms-17551：新增SharePoint清單整合的記錄檔案(DoR)支援。
-
-### 已修正的問題 {#fixed-issues-X}
-
-Forms-19028：使用者端預填功能會中斷表單事件處理，導致Value commit和DOMContentLoaded事件無法在表單載入時正確觸發。
-
-Forms-18360：在SharePoint檔案管理中增強團隊網站的Forms清單範圍管理，以改善資料組織和存取控制。
-
-Forms-18325：新增Adobe Experience Platform (AEP)雲端設定，以增強表單資料整合與處理功能。
-
-Forms-18213：實作功能以隱藏/排除記錄檔案(DoR)中已停用的欄位，以改善檔案清晰度和使用者體驗。
-
-Forms-18189：修改自訂函式處理，以防止空白使用者端程式庫的錯誤記錄，並改善UI中的錯誤顯示。
-
-Forms-18426：當清單名稱包含特殊字元（例如，「 — 」）時，SharePoint清單查詢功能會失敗，影響表單與SharePoint清單的整合。
-
-Forms-18375：當未選取特定組態容器時，基礎元件型表單從`conf/global`資料夾中錯誤地選取recaptcha組態。
-
-Forms-18304：在Acrobat和LiveCycle ES4中通過驗證的PDF/A-1b檔案在AEM 6.5 Forms中被錯誤地標籤為不相容，因為發生了與裝置相關的顏色錯誤。
-
-Forms-18271： Forms主題編輯器顯示未本地化的錯誤訊息，這會影響表單設定和主題自訂的使用者體驗。
-
-Forms-18068：使用RTF欄位的選項按鈕和核取方塊群組的記錄檔案(DoR)中出現粗體文字轉譯問題。
-
-Forms-7016：表單編輯器中的鍵盤焦點順序未依循邏輯導覽。
-
-Forms-6950：為檔案系統導覽器樹狀檢視元件新增必要的ARIA角色和屬性，以改進熒幕助讀程式的可存取性，並符合WCAG 4.1.2名稱、角色、值（A級）標準。
-
-### 已知問題 {#known-issues-X}
+### 已知問題 {#known-issues-19823}
 
 無。
 
-### 已過時的功能和 API {#deprecated-X}
+### 已過時的功能和 API {#deprecated-19823}
 
 [「已過時和已移除的功能及 API」](/help/release-notes/deprecated-removed-features.md)文件中詳細介紹 AEM as a Cloud Service 中已過時和已移除的功能及 API。
 
-### 安全性修正 {#security-X}
+### 安全性修正 {#security-19823}
 
-AEM as a Cloud Service 專門負責將您的平台的安全性與效能最佳化。此維護發行版本解決X所發現的弱點，強化我們對強大系統保護的承諾。
+AEM as a Cloud Service 專門負責將您的平台的安全性與效能最佳化。此維護版本解決了 6 個已確認的漏洞，強化我們提供健全系統保護的承諾。
 
-### 內嵌技術 {#embedded-tech-X}
+### 內嵌技術 {#embedded-tech-19823}
 
 | 技術 | 版本 | 連結 |
 |---|---|---|
