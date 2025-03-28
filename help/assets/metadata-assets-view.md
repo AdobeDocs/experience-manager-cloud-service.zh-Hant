@@ -5,10 +5,10 @@ role: User, Leader, Admin, Architect, Developer
 contentOwner: AG
 exl-id: 7264e8d1-fc8f-4eb3-93a9-a6066ca3f851
 feature: Metadata
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: 6d729c8e7f84dccce9c11f1ca13553763d0547f8
 workflow-type: tm+mt
-source-wordcount: '1932'
-ht-degree: 85%
+source-wordcount: '2124'
+ht-degree: 77%
 
 ---
 
@@ -216,6 +216,39 @@ MIME 子類型 > MIME 類型 > `default` 表單 > 現成可用的表單
    * 按一下 ![複製圖示](assets/do-not-localize/copy.svg) 以複製 URL。
    * 按一下 ![編輯圖示](assets/do-not-localize/edit.svg) 以編輯 URL。
 1. 按一下「**[!UICONTROL 儲存]**」以儲存變更。
+
+
+### 使用中繼資料表單中的標籤元件 {#tag-component-metadata-form}
+
+根元素代表標籤的樹狀結構，您可以與資產建立關聯，協助您根據指派給資產的標籤識別資產。 此外，在中繼資料編輯器中設定中繼資料表單時，您可以限制特定分類法的存取權。
+
+#### 標籤元件設定 {#tags-component-configuration}
+
+執行下列步驟來設定標籤元件：
+
+1. 前往中繼資料編輯器，導覽至&#x200B;**[!UICONTROL 標籤]**&#x200B;並將其置於畫布上。
+1. 重新命名畫布上的元件。 若要這麼做，請移至[設定]面板中[!UICONTROL 中繼資料屬性]下的&#x200B;**[!UICONTROL 標籤]**，並新增其識別文字。
+1. 在設定面板的[!UICONTROL 中繼資料屬性]下，搜尋您要指派給元件的中繼資料屬性。
+1. 按一下&#x200B;**[!UICONTROL 限製為特定分類]**&#x200B;以限制分類的根路徑。 要執行此操作，請瀏覽標籤並選擇特定路徑的分類法。
+1. 按一下「**[!UICONTROL 儲存]**」以儲存變更。
+
+   ![根標籤設定](assets/root-tag-config.png)
+
+1. [將中繼資料表單指派給資料夾](#assign-metadata-form-folder)。
+
+<!--
+#### Mapping between assets and taxonomy {#asset-taxonomy-mapping}
+
+See [Assign metadata form to folders](#assign-metadata-form-folder). Follow the steps below to perform mapping between folder and taxonomy:
+
+1. Go back to the Settings and click **[!UICONTROL Metadata forms]** 
+1. Select a Metadata form that needs mapping. 
+1. Click **[!UICONTROL Assign to folder(s)]**. **[!UICONTROL Select Folder(s)]** screen appears. 
+1. Navigate to the folder that you want to assign to the metadata form. You can select multiple folders.
+1. Click **[!UICONTROL Assign]**.
+-->
+
+若要檢視已設定的根標籤，請前往資產的詳細資訊頁面，其中執行中繼資料表單與根標籤之間的對應。
 
 ## 後續步驟 {#next-steps}
 
