@@ -16,7 +16,7 @@ ht-degree: 100%
 >[!CONTEXTUALHELP]
 >id="aemcloud_alignkpis"
 >title="調整 KPI"
->abstract="在數位世界中，幾乎一切都可以測量。為您的 Adobe Experience Manager 實施選擇正確的 KPI 將有助於您的團隊專注於最重要的事情。"
+>abstract="在數位世界中，幾乎一切都可以測量。為您的 Adobe Experience Manager 實作選擇正確的 KPI 將有助於您的團隊專注於最重要的事情。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/assessing-kpis.html" text="評估 KPI"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/choose-right-team.html" text="選擇合適的團隊"
 
@@ -38,7 +38,7 @@ ht-degree: 100%
 
 1. **為每個 KPI 建立可測量的方法。**&#x200B;選擇 KPI 後，請下載 Adobe 的 KPI 方法範本，它會引導您完成其餘的流程。
 
-1. **為每個 KPI 定義對象。**&#x200B;本週的最後一步是確定最在乎每個 KPI 的利益相關者群組。下週，您會與每個群組一起確認 KPI，改進方法，並就報告的格式和時間安排取得一致意見。
+1. **為每個 KPI 定義客群。**&#x200B;本週的最後一步是確定最在乎每個 KPI 的利益相關者群組。下週，您會與每個群組一起確認 KPI，改進方法，並就報告的格式和時間安排取得一致意見。
 
 >[!TIP]
 >

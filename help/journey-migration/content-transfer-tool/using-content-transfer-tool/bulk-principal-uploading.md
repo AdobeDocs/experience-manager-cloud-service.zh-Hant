@@ -1,20 +1,20 @@
 ---
 title: 使用CTT後將主體大量上傳到IMS
-description: 有關為群組和使用者大量上傳檔案，以及如何在Admin Console上使用這些檔案，以在IMS中建立群組和使用者的概觀。
+description: 群組和使用者的大量上傳檔案概觀，以及如何在 Admin Console 使用以建立群組和 IMS 使用者。
 exl-id: 43ebd6f1-1492-461a-8d9b-2b55dcde9052
 source-git-commit: b9c739a03b358de7c011e50ddbdd609c90f86b6f
 workflow-type: tm+mt
 source-wordcount: '2384'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
-# 使用CTT後大量上傳主體到IMS {#bulk-principal-uploading}
+# 使用 CTT 後將主體大量上傳至 IMS {#bulk-principal-uploading}
 
 >[!CONTEXTUALHELP]
 >id="bulk-principal-uploading"
->title="大量上傳主體"
->abstract="有關為群組和使用者大量上傳檔案，以及如何在Admin Console上使用這些檔案，以在IMS中建立群組和使用者的概觀。"
+>title="主體大量上傳"
+>abstract="群組和使用者的大量上傳檔案概觀，以及如何在 Admin Console 使用以建立群組和 IMS 使用者。"
 >additional-url="https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/onboarding/journey/admin-console" text="AEM Admin Console 文件"
 >additional-url="https://adminconsole.adobe.com/" text="AEM Admin Console"
 
