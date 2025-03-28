@@ -5,7 +5,7 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: c5bf8f4f0ffa250bee9743bf1810abcf171f24d3
+source-git-commit: 5a1c951813e026806aa3b5b23a912a48681f4505
 workflow-type: tm+mt
 source-wordcount: '1072'
 ht-degree: 74%
@@ -28,7 +28,7 @@ ht-degree: 74%
 
 ## 發行日期 {#release-date}
 
-[!DNL Adobe Experience Manager]作為[!DNL Cloud Service]目前功能版本(2025.4.0)的發行日期是2025年4月24日。 下一個功能版本(2025.5.0)計畫於2025年5月29日發行。
+[!DNL Adobe Experience Manager]作為[!DNL Cloud Service]目前功能版本(2025.3.0)的發行日期是2025年3月27日。 下一個功能版本(2025.4.0)計畫於2025年4月24日發行。
 
 ## 維護版本發行說明 {#maintenance}
 
