@@ -2,9 +2,9 @@
 title: 群組移轉
 description: AEM as a Cloud Service中的群組移轉概觀。
 exl-id: 4a35fc46-f641-46a4-b3ff-080d090c593b
-source-git-commit: c3a13f75757a478996918c6868a172d75158aafe
+source-git-commit: 50c8dd725e20cbd372a7d7858fc67b0f53a8d6d4
 workflow-type: tm+mt
-source-wordcount: '1914'
+source-wordcount: '1921'
 ht-degree: 3%
 
 ---
@@ -48,7 +48,7 @@ AEM as a Cloud Service的一項重大變更是完全整合使用Adobe ID來存�
 
 請注意，已移轉的群組不再被視為AEM的「本機群組」；在AEM中是IMS就緒的群組，雖然它們可能尚未存在於IMS中。  它們必須在IMS中另外重新建立，以便在AEM和IMS之間同步。  除了其他方法以外，可以透過Admin Console在IMS中個別或大量建立群組。  如需在Admin Console上個別或大量建立群組的詳細資訊，請參閱[管理使用者群組](https://helpx.adobe.com/tw/enterprise/using/user-groups.html)。
 
-此IMS設定的例外情況是Assets集合建立的群組。 在AEM上建立集合時，會建立群組以供存取該集合；此類群組會移轉至雲端系統，但不會設定為由IMS管理。  若要將IMS使用者新增至這些群組，他們就必須在Assets UI的群組屬性頁面中新增使用者，且以個別或集體方式新增至其他IMS群組。
+此IMS設定的例外情況是Assets集合和私人資料夾建立的群組。 在AEM上建立集合或私人資料夾時，會建立群組以供存取該內容；這類群組會移轉至雲端系統，但不會設定為由IMS管理。  若要將IMS使用者新增至這些群組，他們就必須在Assets UI的群組屬性頁面中新增使用者，且以個別或集體方式新增至其他IMS群組。
 
 
 ## 選擇退出群組移轉 {#group-migration-option}
