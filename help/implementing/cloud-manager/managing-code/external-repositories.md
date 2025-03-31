@@ -4,10 +4,10 @@ description: 了解如何將外部存放庫新增至 Cloud Manager。Cloud Manag
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
-source-git-commit: bfa059ed4e3f04ae6ee1e07910edc62635b03e5a
+source-git-commit: 167e6f01cd9bca6191dd47c33561d37a0633be77
 workflow-type: tm+mt
-source-wordcount: '1597'
-ht-degree: 38%
+source-wordcount: '1932'
+ht-degree: 26%
 
 ---
 
@@ -35,7 +35,7 @@ ht-degree: 38%
 
 1. 在&#x200B;**[我的程式](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;主控台上，選取要連結外部存放庫的程式。
 
-1. 在側邊功能表的&#x200B;**服務**&#x200B;下方，按一下![資料夾大綱圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_FolderOutline_18_N.svg) **存放庫**。
+1. 在側邊功能表的&#x200B;**方案**&#x200B;下，按一下![資料夾大綱圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_FolderOutline_18_N.svg) **存放庫**。
 
    ![儲存庫頁面](/help/implementing/cloud-manager/managing-code/assets/repositories-tab.png)
 
@@ -64,9 +64,9 @@ ht-degree: 38%
    | 權杖類型 | 說明 |
    | --- | --- |
    | **使用現有的存取權杖** | 如果您已為組織提供存放庫存取權杖，且有權存取多個存放庫，您可以選取現有的權杖。使用&#x200B;**權杖名稱**&#x200B;下拉清單，選取想要套用至存放庫的權杖。否則，請新增新的存取權杖。 |
-   | **新增新的存取權杖** | **存放庫類型：GitHub**<br>• 在&#x200B;**權杖名稱**&#x200B;文字欄位，輸入您建立的存取權杖名稱。<br>• 依照 [GitHub 文件](https://docs.github.com/en/enterprise-server@3.14/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens)中的指示，建立個人存取權杖。<br>·如需必要的許可權，請參閱下列資訊： ![為GitHub建立新的PAT](/help/implementing/cloud-manager/managing-code/assets/webhook-github-enterprise-server.png)<br>·在&#x200B;**存取Token**&#x200B;欄位中，貼上您剛才建立的權杖。 |
-   |  | **存放庫類型：GitLab**<br>• 在&#x200B;**權杖名稱**&#x200B;文字欄位，輸入您建立的存取權杖名稱。<br>• 依照 [GitLab 文件](https://docs.gitlab.com/user/profile/personal_access_tokens/)中的指示，建立個人存取權杖。<br>·如需必要的許可權，請參閱下列資訊： ![為GitLab建立新的PAT](/help/implementing/cloud-manager/managing-code/assets/webhook-gitlab.png)<br>·在&#x200B;**存取權杖**&#x200B;欄位中，貼上您剛才建立的權杖。 |
-   |  | **存放庫類型：Bitbucket**<br>• 在&#x200B;**權杖名稱**&#x200B;文字欄位，輸入您建立的存取權杖名稱。<br>• 使用 [Bitbucket 文件](https://support.atlassian.com/bitbucket-cloud/docs/create-a-repository-access-token/)建立存放庫存取權杖。<br>·如需必要的許可權，請參閱下列資訊![為Bitbucket建立新的PAT](/help/implementing/cloud-manager/managing-code/assets/webhook-bitbucket.png)。 |
+   | **新增新的存取權杖** | **存放庫型別： GitHub**<br><ul><li> 在&#x200B;**Token名稱**&#x200B;文字欄位中，輸入您要建立之存取權杖的名稱。<li>依照[GitHub檔案](https://docs.github.com/en/enterprise-server@3.14/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens)中的指示建立個人存取權杖。<li>如需必要許可權，請設定下列專案：<ul><li>**GitHub個人存取權杖(PAT)的必要許可權**<br>&#x200B;這些許可權確保Cloud Manager可以驗證提取請求、管理認可狀態檢查以及存取必要的存放庫詳細資料。 在GitHub中，當您產生個人存取權杖(PAT)時，請確定其包含下列專案：<ul><li>**存放庫許可權：**<ul><li>提取請求（讀取和寫入）<li>認可狀態（讀取和寫入）<li>儲存區域中繼資料（唯讀）</li></li></ul></ul><li>**必要的webhook事件（針對GitHub託管的存放庫）**<br>&#x200B;這些事件可讓Cloud Manager回應GitHub活動，例如提取要求驗證、管道的推播型觸發程式或Edge Delivery Services程式碼同步。 手動設定GitHub webhook時，請確定webhook已設定為在下列事件中觸發：<ul><li>**必要的webhook活動：**<ol><li>提取請求<li>推送<li>問題註解</li></li></ul></ul><ul><li>在&#x200B;**存取Token**&#x200B;欄位中，貼上您剛建立的權杖。 |
+   |  | **存放庫型別： GitLab**<ul><li>在&#x200B;**Token名稱**&#x200B;文字欄位中，輸入您要建立之存取權杖的名稱。<li>依照[GitLab檔案](https://docs.gitlab.com/user/profile/personal_access_tokens/)中的指示建立個人存取權杖。<li>如需必要許可權，請設定下列專案：<ul><li>**GitLab個人存取權杖(PAT)的必要許可權**<br>&#x200B;這些範圍允許Cloud Manager在驗證和webhook整合時，視需要存取存放庫資料和使用者資訊。 在GitLab中建立個人存取權杖時，請確定其包含下列範圍：<ul><li>**權杖範圍：**<ul><li>api<li>read_user</li></li></ul></ul><li>**必要的webhook事件（針對GitLab託管的存放庫）**<br>&#x200B;這些webhook事件允許Cloud Manager在推送程式碼或提交合併請求時觸發管道。 也會追蹤與提取請求驗證相關的註解（透過附註事件）。 在GitLab中手動設定webhook時，請務必加入下列事件：<ul><li>**必要的webhook活動：**<ol><li>推送事件<li>合併請求事件<li>附註事件</li></li></li></ul></ul></ul><ul><li>在&#x200B;**存取Token**&#x200B;欄位中，貼上您剛建立的權杖。 |
+   |  | **存放庫型別： Bitbucket**<ul><li>在&#x200B;**Token名稱**&#x200B;文字欄位中，輸入您要建立之存取權杖的名稱。<li>使用[Bitbucket檔案](https://support.atlassian.com/bitbucket-cloud/docs/create-a-repository-access-token/)建立存放庫存取權杖。<li>如需必要許可權，請設定下列專案：<ul><li>**Bitbucket個人存取權杖(PAT)的必要許可權**<br>&#x200B;這些許可權可讓Cloud Manager存取存放庫內容、管理提取請求，以及設定或回應webhook事件。 在Bitbucket中建立應用程式密碼時，請確定其包含下列專案：<ul><li>**必要的應用程式密碼許可權：**<ul><li>存放庫（唯讀）<li>提取請求（讀取和寫入）<li>Webhook （讀取和寫入）</li></li></ul></ul><li>**必要的webhook事件（針對Bitbucket託管的存放庫）**<br>&#x200B;這些事件確保Cloud Manager可以驗證提取請求、回應程式碼推送，以及與評論互動，以進行管道協調。 如果在Bitbucket中手動設定webhook，請將其設定為在以下事件中觸發：<ul><li>**必要的webhook活動：**<ol><li>提取請求：已建立<li>提取請求：已更新<li>提取請求：已合併<li>提取請求：註解<li>存放庫：推播</li></li></li></ul></ul></ul><ul><li>在&#x200B;**存取Token**&#x200B;欄位中，貼上您剛建立的權杖。 |
 
    >[!NOTE]
    >
