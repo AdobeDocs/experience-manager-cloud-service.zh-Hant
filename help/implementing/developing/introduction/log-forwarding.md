@@ -4,9 +4,9 @@ description: 瞭解如何在AEM as a Cloud Service中將記錄轉送給記錄廠
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 3727dc18b34f7a2eb307703c94fbc3a6ffe17437
+source-git-commit: d25c4aa5801d1ef2b746fc207d9c64ddf381bb8e
 workflow-type: tm+mt
-source-wordcount: '2275'
+source-wordcount: '2276'
 ht-degree: 1%
 
 ---
@@ -19,13 +19,13 @@ ht-degree: 1%
 
 擁有記錄廠商授權或託管記錄產品的客戶可以將AEM記錄(包括Apache/Dispatcher)和CDN記錄轉送至相關聯的記錄目的地。 AEM as a Cloud Service支援下列記錄目的地：
 
-* Amazon S3 （私人測試版，請參閱[^1]）
+* Amazon S3 （私人測試版，請參閱下方說明）
 * Azure Blob儲存體
 * Datadog
 * Elasticsearch或OpenSearch
 * HTTPS
 * Splunk
-* 相撲邏輯（私人測試版，請參閱[^1]）
+* Sumo Logic （私人測試版，請參閱下方說明）
 
 記錄轉送是透過在Git中宣告設定以自助方式設定，並可透過Cloud Manager設定管道部署至開發、中繼和生產環境型別。 可以使用命令列工具將設定檔案部署至快速開發環境 (RDE) 中。
 
@@ -33,7 +33,9 @@ AEM和Apache/Dispatcher記錄檔可選擇透過AEM的進階網路基礎結構（
 
 請注意，與傳送至記錄目的地的記錄檔相關聯的網路頻寬，會視為您組織網路I/O使用量的一部分。
 
-[^1] Amazon S3和Sumo Logic位於Private Beta中，僅支援AEM記錄(包括Apache/Dispatcher)。  HTTPS上的New Relic也提供私人測試版。 電子郵件[aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com)以要求存取權。
+>[!NOTE]
+>
+>Amazon S3和Sumo Logic位於Private Beta中，僅支援AEM記錄(包括Apache/Dispatcher)。  HTTPS上的New Relic也提供私人測試版。 電子郵件[aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com)以要求存取權。
 
 ## 本文的結構方式 {#how-organized}
 
@@ -192,6 +194,7 @@ data:
 
 ### Amazon S3 {#amazons3}
 
+>[!NOTE]
 >
 >記錄檔會定期寫入S3，每種記錄檔型別每10分鐘寫入一次。  此功能切換後，這可能會造成將記錄寫入S3的初始延遲。  在[此處](https://docs.fluentbit.io/manual/pipeline/outputs/s3#differences-between-s3-and-other-fluent-bit-outputs)可找到有關為什麼存在此行為的詳細資訊。
 
@@ -384,7 +387,7 @@ data:
 
 電子郵件[aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com)以要求存取權。
 
->
+>[!NOTE]
 >New Relic會根據您的New Relic帳戶布建位置，提供區域特定的端點。  如需New Relic檔案，請參閱[這裡](https://docs.newrelic.com/docs/logs/log-api/introduction-log-api/#endpoint)。
 
 #### HTTPS CDN記錄 {#https-cdn}
@@ -459,7 +462,7 @@ data:
       index: "aem-logs"
 ```
 
->
+>[!NOTE]
 > 您需要Sumo Logic Enterprise訂閱才能使用「索引」欄位功能。  非企業訂閱的記錄檔會以標準形式路由至`sumologic_default`資料分割。  如需詳細資訊，請參閱[Sumo邏輯分割檔案](https://help.sumologic.com/docs/search/optimize-search-partitions/)。
 
 ## 記錄專案格式 {#log-formats}
