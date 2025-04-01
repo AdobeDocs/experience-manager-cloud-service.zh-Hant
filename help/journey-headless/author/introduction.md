@@ -5,7 +5,7 @@ exl-id: 065b00cb-a82d-4bcb-b2c9-44542cee6303
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: cc2e73da123d3e0676a8e175a18c1dc0bdff1daa
 workflow-type: tm+mt
 source-wordcount: '680'
 ht-degree: 100%
@@ -16,11 +16,9 @@ ht-degree: 100%
 
 在 [AEM Headless 內容作者歷程](overview.md)的這一部分中，您可以學習必要的 (基本) 概念和術語，以了解如何使用 Adobe Experience Manager (AEM) as a Cloud Service as a Headless CMS 製作內容。這涉及架構和建立內容以進行 Headless 內容傳遞。
 
-{{headless-trials-promotion}}
-
 ## 目標 {#objective}
 
-* **對象**：初學者
+* **客群**：初學者
 * **Objective**：介紹與 Headless 製作相關的概念和術語。
 
 ## 內容管理系統 (CMS) {#content-management-system}
