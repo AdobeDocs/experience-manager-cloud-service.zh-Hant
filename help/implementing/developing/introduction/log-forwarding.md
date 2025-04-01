@@ -4,9 +4,9 @@ description: 瞭解如何在AEM as a Cloud Service中將記錄轉送給記錄廠
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 9c258e2906c37ee9b91d2faa78f7dfdaa5956dc2
+source-git-commit: 3727dc18b34f7a2eb307703c94fbc3a6ffe17437
 workflow-type: tm+mt
-source-wordcount: '1985'
+source-wordcount: '2275'
 ht-degree: 1%
 
 ---
@@ -15,21 +15,25 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->記錄轉送現在以自助方式設定，有別於傳統方法(需要提交Adobe支援票證)。 如果您的記錄轉送是由Adobe所設定，請參閱[移轉](#legacy-migration)區段。
+>記錄轉送現在以自助方式設定，有別於傳統方法(需要提交Adobe支援票證)。 如果您的記錄轉送是由Adobe設定，請參閱[移轉](#legacy-migration)區段。
 
 擁有記錄廠商授權或託管記錄產品的客戶可以將AEM記錄(包括Apache/Dispatcher)和CDN記錄轉送至相關聯的記錄目的地。 AEM as a Cloud Service支援下列記錄目的地：
 
+* Amazon S3 （私人測試版，請參閱[^1]）
 * Azure Blob儲存體
 * Datadog
 * Elasticsearch或OpenSearch
 * HTTPS
 * Splunk
+* 相撲邏輯（私人測試版，請參閱[^1]）
 
-記錄轉送是透過在Git中宣告設定以自助方式設定，並可透過Cloud Manager設定管道部署至開發、中繼和生產環境型別。 可使用命令列工具將設定檔案部署到快速開發環境(RDE)。
+記錄轉送是透過在Git中宣告設定以自助方式設定，並可透過Cloud Manager設定管道部署至開發、中繼和生產環境型別。 可以使用命令列工具將設定檔案部署至快速開發環境 (RDE) 中。
 
-AEM和Apache/Dispatcher記錄檔可選擇透過AEM的進階網路基礎結構路由，例如專用輸出IP。
+AEM和Apache/Dispatcher記錄檔可選擇透過AEM的進階網路基礎結構（例如專用輸出IP）進行路由。
 
 請注意，與傳送至記錄目的地的記錄檔相關聯的網路頻寬，會視為您組織網路I/O使用量的一部分。
+
+[^1] Amazon S3和Sumo Logic位於Private Beta中，僅支援AEM記錄(包括Apache/Dispatcher)。  HTTPS上的New Relic也提供私人測試版。 電子郵件[aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com)以要求存取權。
 
 ## 本文的結構方式 {#how-organized}
 
@@ -39,7 +43,7 @@ AEM和Apache/Dispatcher記錄檔可選擇透過AEM的進階網路基礎結構路
 * 傳輸與進階網路 — 在建立記錄組態之前，應考慮網路設定
 * 記錄目的地設定 — 每個目的地的格式稍有不同
 * 記錄專案格式 — 記錄專案格式的相關資訊
-* 從舊版記錄轉送移轉 — 如何從先前由Adobe設定的記錄轉送移至自助方法
+* 從舊版記錄轉送移轉 — 如何從Adobe先前設定的記錄轉送移至自助方法
 
 ## 設定 {#setup}
 
@@ -180,11 +184,48 @@ data:
 針對CDN記錄，您可以將IP位址加入允許清單，如[Fastly檔案 — 公用IP清單](https://www.fastly.com/documentation/reference/api/utils/public-ip-list/)中所述。 如果共用IP位址清單太大，請考慮傳送流量至https伺服器或(非Adobe) Azure Blob存放區，其中可寫入邏輯，以將已知IP的記錄傳送至其最終目的地。
 
 >[!NOTE]
->CDN記錄無法顯示來自您AEM記錄顯示來源的IP位址，因為記錄會直接從Fastly傳送，而非AEM Cloud Service。
+>CDN記錄無法顯示來自與您的AEM記錄顯示來源相同的IP位址，因為記錄會直接從Fastly傳送，而不是AEM Cloud Service。
 
 ## 記錄目的地組態 {#logging-destinations}
 
 以下列出支援的記錄目的地的設定以及任何特定考量。
+
+### Amazon S3 {#amazons3}
+
+>
+>記錄檔會定期寫入S3，每種記錄檔型別每10分鐘寫入一次。  此功能切換後，這可能會造成將記錄寫入S3的初始延遲。  在[此處](https://docs.fluentbit.io/manual/pipeline/outputs/s3#differences-between-s3-and-other-fluent-bit-outputs)可找到有關為什麼存在此行為的詳細資訊。
+
+```yaml
+kind: "LogForwarding"
+version: "1.0"
+data:
+  awsS3:
+    default:
+      enabled: true
+      region: "your-bucket-region"
+      bucket: "your_bucket_name"
+      accessKey: "${{AWS_S3_ACCESS_KEY}}"
+      secretAccessKey: "${{AWS_S3_SECRET_ACCESS_KEY}}"
+```
+
+若要使用S3記錄轉寄站，您需要預先設定AWS IAM使用者，並為該使用者提供存取S3儲存貯體的適當原則。  請參閱[這裡](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html)，瞭解如何建立IAM使用者認證。
+
+IAM原則應該允許使用者使用`s3:putObject`。  例如：
+
+```json
+{
+   "Version": "2012-10-17",
+   "Statement": [{
+       "Effect": "Allow",
+       "Action": [
+           "s3:PutObject"
+       ],
+       "Resource": "arn:aws:s3:::your_bucket_name/*"
+   }]
+}
+```
+
+請參閱[這裡](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucket-policies.html)，以取得有關AWS貯體原則實作的詳細資訊。
 
 ### Azure Blob儲存體 {#azureblob}
 
@@ -279,7 +320,7 @@ data:
 
 * 建立API金鑰，而不與特定雲端提供者進行任何整合。
 * 標籤屬性是選用的
-* 對於AEM記錄檔，Datadog來源標籤設定為`aemaccess`、`aemerror`、`aemrequest`、`aemdispatcher`、`aemhttpdaccess`或`aemhttpderror`其中之一
+* 對於AEM記錄檔，Datadog來源標籤設為`aemaccess`、`aemerror`、`aemrequest`、`aemdispatcher`、`aemhttpdaccess`或`aemhttpderror`其中之一
 * 對於CDN記錄，Datadog來源標籤設為`aemcdn`
 * Datadog服務標籤已設定為`adobeaemcloud`，但您可以在標籤區段中覆寫它
 * 如果您的內嵌管道使用Datadog標籤來決定轉送記錄的適當索引，請確認這些標籤已在記錄轉送YAML檔案中正確設定。 如果管道相依於缺少標籤，則這些標籤可能會阻止成功的記錄擷取。
@@ -308,8 +349,8 @@ data:
 
 ![彈性部署認證](/help/implementing/developing/introduction/assets/ec-creds.png)
 
-* 對於AEM記錄檔，`index`設定為`aemaccess`、`aemerror`、`aemrequest`、`aemdispatcher`、`aemhttpdaccess`或`aemhttpderror`其中之一
-* 選用管線屬性應設為Elasticsearch或OpenSearch擷取管線的名稱，可將其設定為將記錄專案路由至適當的索引。 管道的處理器型別必須設定為&#x200B;*指令碼*，而且指令碼語言應設定為&#x200B;*無痛苦的*。 以下是指令碼片段範例，可將記錄專案路由至索引，例如aemaccess_dev_26_06_2024：
+* 針對AEM記錄檔，`index`設定為`aemaccess`、`aemerror`、`aemrequest`、`aemdispatcher`、`aemhttpdaccess`或`aemhttpderror`其中之一
+* 選用管道屬性應該設定為Elasticsearch或OpenSearch擷取管道的名稱，可以將其設定為將記錄專案路由到適當的索引。 管道的處理器型別必須設定為&#x200B;*指令碼*，而且指令碼語言應設定為&#x200B;*無痛苦的*。 以下是指令碼片段範例，可將記錄專案路由至索引，例如aemaccess_dev_26_06_2024：
 
 ```text
 def envType = ctx.aem_env_type != null ? ctx.aem_env_type : 'unknown';
@@ -339,6 +380,13 @@ data:
 * URL字串必須包含&#x200B;**https://**，否則驗證將會失敗。
 * url可能包含連線埠。 例如 `https://example.com:8443/aem_logs/aem`。如果url字串中未包含任何連線埠，則會假設是連線埠443 （預設的HTTPS連線埠）。
 
+#### New Relic記錄API {#newrelic-https}
+
+電子郵件[aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com)以要求存取權。
+
+>
+>New Relic會根據您的New Relic帳戶布建位置，提供區域特定的端點。  如需New Relic檔案，請參閱[這裡](https://docs.newrelic.com/docs/logs/log-api/introduction-log-api/#endpoint)。
+
 #### HTTPS CDN記錄 {#https-cdn}
 
 Web要求(POST)將持續傳送，其有json裝載（記錄專案陣列），其記錄專案格式說明於[AEM as a Cloud Service記錄](/help/implementing/developing/introduction/logging.md#cdn-log)。 以下[Log Entry Formats](#log-formats)區段中提及其他屬性。
@@ -351,7 +399,7 @@ Web要求(POST)將持續傳送，其有json裝載（記錄專案陣列），其�
 
 #### HTTPS AEM記錄 {#https-aem}
 
-對於AEM記錄檔（包括apache/dispacher），網路要求(POST)將持續傳送，其包含記錄專案陣列的json裝載，並具有各種記錄專案格式，如[AEM as a Cloud Service的記錄](/help/implementing/developing/introduction/logging.md)中所述。 以下[Log Entry Formats](#log-formats)區段中提及其他屬性。
+對於AEM記錄檔（包括apache/dispacher），網路要求(POST)將會持續傳送，其json裝載為記錄專案陣列，並具有各種記錄專案格式，如[AEM as a Cloud Service記錄](/help/implementing/developing/introduction/logging.md)中所述。 以下[Log Entry Formats](#log-formats)區段中提及其他屬性。
 
 也有名為`Source-Type`的屬性，其設定為下列其中一個值：
 
@@ -389,28 +437,34 @@ data:
 >
 > [如果將](#legacy-migration)從舊版記錄轉送移轉到此自助模型，則傳送至您的Splunk索引的`sourcetype`欄位值可能已變更，因此請適當的調整。
 
-<!--
-### Sumo Logic {#sumologic}
+### 相撲邏輯 {#sumologic}
 
-   ```yaml
-   kind: "LogForwarding"
-   version: "1"
-   metadata:
-     envTypes: ["dev"]
-   data:
-     splunk:
-       default:
-         enabled: true
-         host: "https://collectors.de.sumologic.com"
-         uri: "/receiver/v1/http"
-         privateKey: "${{SomeOtherToken}}"
-   
-   ```   
--->
+在設定Sumo Logic以進行資料擷取時，您將會看到「HTTP Source位址」，該位址會在單一字串中提供主機、接收者URI和私密金鑰。  例如：
+
+`https://collectors.de.sumologic.com/receiver/v1/http/ZaVnC...`
+
+您需要複製URL的最後一個區段（沒有前置的`/`），並將其新增為[CloudManager秘密環境變數](/help/operations/config-pipeline.md#secret-env-vars)，如上方[設定](#setup)區段所述，然後在您的設定中參考該變數。  以下提供範例。
+
+```yaml
+kind: "LogForwarding"
+version: "1"
+metadata:
+  envTypes: ["dev"]
+data:
+  sumologic:
+    default:
+      enabled: true
+      collectorURL: "https://collectors.de.sumologic.com/receiver/v1/http"
+      privateKey: "${{SUMOLOGIC_PRIVATE_KEY}}"
+      index: "aem-logs"
+```
+
+>
+> 您需要Sumo Logic Enterprise訂閱才能使用「索引」欄位功能。  非企業訂閱的記錄檔會以標準形式路由至`sumologic_default`資料分割。  如需詳細資訊，請參閱[Sumo邏輯分割檔案](https://help.sumologic.com/docs/search/optimize-search-partitions/)。
 
 ## 記錄專案格式 {#log-formats}
 
-請參閱[AEM as a Cloud Service的記錄](/help/implementing/developing/introduction/logging.md)，以瞭解每個個別記錄型別(CDN記錄檔和包括Apache/Dispatcher在內的AEM記錄檔)的格式。
+請參閱[AEM as a Cloud Service的記錄](/help/implementing/developing/introduction/logging.md)，以瞭解每個個別記錄型別(CDN記錄檔和AEM記錄檔，包括Apache/Dispatcher)的格式。
 
 由於來自多個程式和環境的記錄可能會轉發到相同的記錄目標，除了記錄文章中所述的輸出之外，以下屬性將包含在每個記錄專案中：
 
@@ -432,7 +486,7 @@ aem_tier: author
 
 在透過自助模型完成記錄轉送設定之前，已要求客戶開啟支援票證，Adobe將在其中啟動整合。
 
-若客戶是透過Adobe以這種方式進行設定，歡迎在方便時調整為自助服務模式。 進行此轉換有幾個原因：
+若客戶是以Adobe的方式進行設定，歡迎他們在方便時改用自助服務模式。 進行此轉換有幾個原因：
 
 * 已布建新環境（例如，新的開發環境或RDE）。
 * 變更您現有的Splunk端點或認證。
