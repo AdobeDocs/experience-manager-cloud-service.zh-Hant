@@ -6,8 +6,8 @@ exl-id: d14a1e30-dd04-49a8-8cda-27c80a4bb0f5
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
+source-git-commit: ae873f8d61f3f6b79f09df100d62714e41e3b849
+workflow-type: tm+mt
 source-wordcount: '1070'
 ht-degree: 100%
 
@@ -18,8 +18,6 @@ ht-degree: 100%
 歡迎使用專為初學 Adobe Experience Manager Headless CMS 的開發人員製作的文件！
 
 了解強大且靈活的 Headless 特性、其功能，以及如何在您的第一個 Headless 開發專案中使用這些功能。此歷程為您提供了開發第一個 Headless 應用程式所需的所有資訊。
-
-{{headless-trials-promotion}}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_headless_developer_resources"
@@ -47,7 +45,7 @@ AEM Headless 實作使用內容片段模型和內容片段來專注於建位結�
 
 以下是在此歷程中會互動的角色。
 
-| 角色 | 說明 | 此歷程中的角色 |
+| 角色 | 描述 | 此歷程中的角色 |
 |---|---|---|
 | 開發人員 (目標客群) | 有經驗曾開發取用不同來源之內容的 Headless 應用程式 | 此歷程的目標客群 |
 | 內容作者 | 建立和管理以 Headless 方式傳遞的內容 | 內容作者建立開發人員以 Headless 方式傳遞的內容。 |
@@ -60,7 +58,7 @@ AEM Headless 實作使用內容片段模型和內容片段來專注於建位結�
 
 儘管您可以直接進入歷程的特定部分，但許多概念都是以先前文章中的概念為基礎。Adobe 建議您從頭開始，然後循序漸進。
 
-| # | 文章 | 說明 |
+| # | 文章 | 描述 |
 |---|---|---|
 | 0 | AEM Headless 開發人員歷程 | 本文件 |
 | 1 | [了解 CMS Headless 開發](learn-about.md) | 了解 Headless 技術以及使用時機。 |
