@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User, Developer, Architect
 solution: Experience Manager Sites
 exl-id: f94f75c2-12fa-47c0-a71b-327f4210077d
-source-git-commit: b8a56b73f8178c432941b50821be91777f203dec
+source-git-commit: 3e4775df58a03136e925be73dab6faf673e7215e
 workflow-type: tm+mt
-source-wordcount: '2288'
+source-wordcount: '2290'
 ht-degree: 2%
 
 ---
@@ -95,7 +95,7 @@ Adobe Experience Manager (AEM) as a Cloud Service中的內容片段模型定義[
 
 * **名稱**
    * 提供在編輯器中開啟模型的連結。
-* 鎖定
+* **已鎖定** （掛鎖圖示）
    * 當模型鎖定時，會以掛鎖圖示表示。
 * **路徑**
    * 提供路徑作為連結，以在主控台中開啟設定。
