@@ -2,13 +2,13 @@
 title: Adobe Experience Manager as a Cloud Service的微前端內容片段選擇器屬性
 description: 屬性可設定微前端內容片段選擇器，以搜尋、尋找及擷取您應用程式的內容片段。
 role: Admin, User
-source-git-commit: 32e1b3cef768b420f32b70202ddadc80db2b74e8
+exl-id: c81b5256-09fb-41ce-9581-f6d1ad316ca4
+source-git-commit: a3d8961b6006903c42d983c82debb63ce8abe9ad
 workflow-type: tm+mt
-source-wordcount: '890'
+source-wordcount: '894'
 ht-degree: 3%
 
 ---
-
 
 # 內容片段選擇器 — 相關屬性 {#content-fragment-selector-related-properties}
 
@@ -28,10 +28,10 @@ ht-degree: 3%
 | `filters` | Fragmentfilter | 否 | | 要套用於內容片段清單的篩選器。 依預設，`/content/dam`下的片段將會顯示。 預設值： `{ folder: "/content/dam" }` |
 | `isOpen` | 布林值 | 是 | `false` | 此旗標可觸發開啟或關閉選取器。 |
 | `onDismiss` | () =>無效 | 是 | | 選取&#x200B;**解除**&#x200B;時要呼叫的函式。 |
-| `onSubmit` | ({ contentFragments： `{id: string, path: string}[]`， domainNames： `string[]` }) => void | 選取一或多個內容片段後使用&#x200B;**Select**&#x200B;時要呼叫的函式。 <br><br>函式將接收：<br><ul><li> 具有`id`和`path`欄位的所選內容片段</li><li>與存放庫的計畫識別碼和環境識別碼相關的網域名稱，其狀態為`ready`和`tier`發佈</li></ul><br>如果沒有網域名稱，則會使用Publish執行個體做為遞補網域。 |
-| `theme` | &quot;light&quot; | &quot;dark&quot; | 否 | | 內容片段選擇器的主題。 預設主題已設定為UnifiedShell環境的主題。 |
-| `selectionType` | &quot;single&quot; | &quot;multiple&quot; | 否 | `single` | 可用來限制FragmentSelector選取範圍的選取型別。 |
-| `dialogSize` | &quot;fullscreen&quot; | &quot;fullscreenTakeover&quot; | 否 | `fullscreen` | 控制對話方塊大小的選用屬性。 |
+| `onSubmit` | ({ contentFragments： `{id: string, path: string}[]`， domainNames： `string[]` }) => void | 是 | | 選取一或多個內容片段後使用&#x200B;**Select**&#x200B;時要呼叫的函式。 <br><br>函式將接收：<br><ul><li> 具有`id`和`path`欄位的所選內容片段</li><li>與存放庫的計畫識別碼和環境識別碼相關的網域名稱，其狀態為`ready`和`tier`發佈</li></ul><br>如果沒有網域名稱，則會使用Publish執行個體做為遞補網域。 |
+| `theme` | &quot;light&quot;或&quot;dark&quot; | 否 | | 內容片段選擇器的主題。 預設主題已設定為UnifiedShell環境的主題。 |
+| `selectionType` | 「單一」或「多個」 | 否 | `single` | 可用來限制FragmentSelector選取範圍的選取型別。 |
+| `dialogSize` | &quot;fullscreen&quot;或&quot;fullscreenTakeover&quot; | 否 | `fullscreen` | 控制對話方塊大小的選用屬性。 |
 | `waitForImsToken` | 布林值 | 否 | `false` | 表示內容片段選擇器是否在SUSI流程的內容中呈現，且需要等待`imsToken`準備就緒。 |
 | `imsAuthInfo` | ImsAuthInfo | 否 | | 包含登入使用者的IMS驗證資訊的物件。 |
 | `runningInUnifiedShell` | 布林值 | 否 | | 指出內容片段選擇器是在UnifiedShell下執行，還是獨立執行。 |
