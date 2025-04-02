@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的運作方式以及該軟體可以為您做哪些事。
 breadcrumb-title: 使用手冊
 user-guide-title: 'AEM as a Cloud Service '
-source-git-commit: 53a28874de2dba193b37196de050871079b4d2a2
+source-git-commit: 97e0124303001757caef6420042b2652bb1593e0
 workflow-type: tm+mt
-source-wordcount: '6119'
+source-wordcount: '6132'
 ht-degree: 99%
 
 ---
@@ -1104,6 +1104,9 @@ ht-degree: 99%
          + [Markdown 編輯器](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html?lang=zh-hant)
       + [樹狀結構](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html?lang=zh-hant)
       + [JSON 預覽](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-json-preview.html?lang=zh-hant)
+   + 內容片段選擇器{#content-fragment-selector}
+      + [微前端內容片段選擇器 — 概觀](/help/headless/content-fragment-selector/content-fragment-selector-overview.md)
+      + [內容片段選擇器 — 相關屬性](/help/headless/content-fragment-selector/content-fragment-selector-properties.md)
    + [用於傳遞和管理結構化內容的 AEM API](/help/headless/apis-headless-and-content-fragments.md)
    + GraphQL API{#graphql-api}
       + [用於內容片段的 GraphQL API](/help/headless/graphql-api/content-fragments.md)
