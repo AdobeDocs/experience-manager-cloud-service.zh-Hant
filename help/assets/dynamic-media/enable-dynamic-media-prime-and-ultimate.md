@@ -4,10 +4,10 @@ description: 瞭解如何啟用 [!DNL Dynamic Media] Prime和Ultimate方案。
 feature: Asset Management
 role: User, Admin
 exl-id: 0ee161f5-bf44-41f1-928e-c07574fd43cc
-source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
+source-git-commit: c36938e80d0b159c5f89d450aaa228c37c4f5276
 workflow-type: tm+mt
-source-wordcount: '1095'
-ht-degree: 2%
+source-wordcount: '1077'
+ht-degree: 4%
 
 ---
 
@@ -16,16 +16,16 @@ ht-degree: 2%
 <table>
     <tr>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>全新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 與 Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>全新</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets與Edge Delivery Services整合</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>全新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets 與 Edge Delivery Services 整合</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI擴充性</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>全新</i></sup><a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>使用者介面可擴充性</b></a>
         </td>
         <td>
             <a href="/help/assets/search-best-practices.md"><b>搜尋最佳實務</b></a>
@@ -53,7 +53,7 @@ ht-degree: 2%
 
 ## 啟用[!DNL Dynamic Media] Ultimate {#enable-dynamic-media-ultimate}
 
-在雲端服務環境中執行下列步驟，以啟用[!DNL Dynamic Media] Ultimate：
+若要啟用[!DNL Dynamic Media] Ultimate：
 
 1. [啟動 [!DNL Dynamic Media with OpenAPI]](#activate-dynamic-media-with-openapi)
 1. [設定 [!DNL Dynamic Media] 解決方案](#configure-dynamic-media-solutions)
@@ -186,11 +186,14 @@ ht-degree: 2%
 
 1. 如果&#x200B;**[!UICONTROL 狀態]**&#x200B;為「擱置中」，則請向客戶支援團隊提出問題以尋求解決方案。
 
-   ![擱置狀態](/help/assets/assets/company-creation-pending-status.png){width="350" align="left"}
+
+   ![擱置狀態](/help/assets/assets/company-creation-pending-status.png){width="350" align="center"}
+
+
 
 1. 如果&#x200B;**[!UICONTROL 狀態]**&#x200B;失敗，則根據失敗原因重試。
 
-   ![失敗狀態](/help/assets/assets/company-creation-failure-status.png){width="380" align="left"}
+   ![失敗狀態](/help/assets/assets/company-creation-failure-status.png){width="380" align="center"}
 
 ### 可選：在傳遞層級中設定自訂網域 {#configure-custom-domain-in-delivery-tier}
 
@@ -303,7 +306,7 @@ TBD: Wiki in progress..
 
 ## 啟用[!DNL Dynamic Media] Prime {#enable-dynamic-media-prime}
 
-在雲端服務環境中執行下列步驟，以啟用[!DNL Dynamic Media] Prime：
+若要啟用[!DNL Dynamic Media] Prime：
 
 1. [使用OpenAPI啟動Dynamic Media](#activate-dynamic-media-with-openapi)
 1. [選用：設定傳遞層](#configure-custom-domain-in-delivery-tier)中的自訂網域
