@@ -1,27 +1,27 @@
 ---
 title: 新增 SSL 憑證
-description: 瞭解如何使用Cloud Manager的自助服務工具新增您自己的SSL憑證或Adobe受管理的DV （網域驗證）憑證。
+description: 瞭解如何使用Cloud Manager的自助服務工具新增您自己的SSL憑證或Adobe管理的DV （網域驗證）憑證。
 exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 9645ee21bc8c44020d5bb7cdd513d67429353c7d
+source-git-commit: bf903736e256bb9275bad6c0271b31b8dbdec625
 workflow-type: tm+mt
-source-wordcount: '996'
-ht-degree: 4%
+source-wordcount: '1021'
+ht-degree: 6%
 
 ---
 
 
 # 新增SSL憑證 {#add-ssl-cert}
 
-瞭解如何使用雲端新增您自己的SSL憑證或Adobe受管理的DV （網域驗證）憑證
+瞭解如何使用雲端新增您自己的SSL憑證或Adobe管理的DV （網域驗證）憑證
 
 >[!NOTE]
 >
 >如果您使用客戶管理的(OV/EV) SSL憑證和客戶管理的CDN提供者，您可以略過新增SSL憑證，並在就緒後直接前往[新增CDN設定](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)。
 
-布建憑證可能需要幾天時間。 因此，Adobe建議在任何期限或上線日期之前及早布建您自己的憑證，以避免延遲。
+布建憑證可能需要幾天時間。 因此，Adobe建議您在任何期限或上線日期之前及早布建自己的憑證，以避免延遲。
 
 若要瞭解如何在Cloud Manager中更新及管理SSL憑證，請參閱[管理SSL憑證](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)。
 
@@ -35,11 +35,11 @@ ht-degree: 4%
 
 ## 選擇要新增的SSL憑證 {#which-ssl-to-add}
 
-在[在AEM Cloud Manager中新增自訂網域名稱](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)後，下一步將取決於您選擇使用Adobe託管(DV) SSL憑證（建議）還是客戶託管(OV/EV) SSL憑證。
+在[在AEM Cloud Manager中新增自訂網域名稱](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)後，下一步將取決於您選擇使用Adobe受管理(DV) SSL憑證（建議）還是客戶受管理(OV/EV) SSL憑證。
 
-* **對於Adobe受管理(DV) SSL憑證：**
+* **若為Adobe Managed (DV) SSL憑證：**
    * 在新增自訂網域並在Cloud Manager中驗證後，網域驗證程式就會完成。
-   * 現在，您必須[新增Adobe受管理(DV) SSL憑證](#add-adobe-managed-ssl-cert)。
+   * 現在，您必須[新增Adobe Managed (DV) SSL憑證](#add-adobe-managed-ssl-cert)。
 新增至Cloud Manager後，請等待Adobe代表您核發及安裝DV SSL憑證。
    * 當憑證作用中時，您的自訂網域就可供使用。
 
@@ -53,13 +53,13 @@ ht-degree: 4%
 
 另請參閱[SSL憑證簡介](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md)。
 
-## 新增Adobe管理(DV) SSL憑證 {#add-adobe-managed-ssl-cert}
+## 新增Adobe managed (DV) SSL憑證 {#add-adobe-managed-ssl-cert}
 
 需要協助您選擇搭配您的網域使用Adobe管理的SSL憑證（建議）或客戶管理的SSL憑證嗎？ 請參閱[選擇要新增的SSL憑證](#which-ssl-to-add)
 
-**若要新增Adobe管理(DV) SSL憑證：**
+**若要新增Adobe Managed (DV) SSL憑證：**
 
-1. 在[my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)登入Cloud Manager並選取適當的程式。
+1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager，然後選取適當的程式。
 1. 在「**[我的程式](/help/implementing/cloud-manager/navigation.md#my-programs)**」控制台中，選取程式。
 1. 在頁面的左上角，按一下![顯示功能表圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)以顯示側邊功能表。
 
@@ -69,7 +69,7 @@ ht-degree: 4%
 
 1. 在[SSL憑證]頁面的右上角附近，按一下[新增SSL憑證]。****
 
-1. 在&#x200B;**新增SSL憑證**&#x200B;對話方塊中，根據[您的特定使用案例](#which-ssl-to-add)，選取&#x200B;**受管理的Adobe(DV)**。
+1. 在&#x200B;**新增SSL憑證**&#x200B;對話方塊中，根據[您的特定使用案例](#which-ssl-to-add)，選取&#x200B;**Adobe Managed (DV)**。
 
    ![新增DV憑證](/help/implementing/cloud-manager/assets/ssl/add-dv-certificate.png)
 
@@ -83,7 +83,7 @@ ht-degree: 4%
 
    成功發行SSL憑證後，**SSL憑證**&#x200B;表格中會顯示綠色的有效核取記號。
 
-您現在已為專案新增有效的Adobe託管DV SSL憑證。 此步驟通常是第一個設定自訂網域名稱的步驟。
+您現在已為專案新增有效的Adobe Managed DV SSL憑證。 此步驟通常是第一個設定自訂網域名稱的步驟。
 
 您現在已準備好新增[CDN設定](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)。
 
@@ -93,9 +93,13 @@ ht-degree: 4%
 
 需要協助您選擇搭配您的網域使用Adobe管理的SSL憑證（建議）或客戶管理的SSL憑證嗎？ 請參閱[選擇要新增的SSL憑證](#which-ssl-to-add)
 
+>[!IMPORTANT]
+>
+>新增或更新SSL憑證時，請勿在憑證鏈結中包含新憑證。 如果包含此引數，上傳將無法成功完成。
+
 **若要新增客戶管理的(OV/EV) SSL憑證：**
 
-1. 在[my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)登入Cloud Manager並選取適當的程式。
+1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager，然後選取適當的程式。
 
 1. 在「**[我的程式](/help/implementing/cloud-manager/navigation.md#my-programs)**」控制台中，選取程式。
 

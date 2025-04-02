@@ -5,10 +5,10 @@ exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f0cf9fa7da7e89d42ab90dee0e8400b26f004574
+source-git-commit: bf903736e256bb9275bad6c0271b31b8dbdec625
 workflow-type: tm+mt
-source-wordcount: '1023'
-ht-degree: 14%
+source-wordcount: '1048'
+ht-degree: 13%
 
 ---
 
@@ -28,7 +28,7 @@ Cloud Manager會提供程式中所有憑證狀態的概觀。
 
 **SSL憑證**&#x200B;頁面會提供您SSL憑證的狀態。
 
-| SSL憑證的狀態 | 說明 |
+| SSL憑證的狀態 | 描述 |
 | --- | --- |
 | 綠色 | 憑證從目前日期起至少14天有效。 |
 | 橙色 | 憑證將在14天內到期。<br>·確定您有更新憑證的計畫，並透過Cloud Manager使用者介面取代憑證，以避免可能的網站存取或中斷。<br>· Cloud Manager會在UI中定期傳送通知，提醒您憑證即將到期。 |
@@ -39,6 +39,10 @@ Cloud Manager會提供程式中所有憑證狀態的概觀。
 當客戶管理的憑證過期時，與過期憑證一起使用的任何網域都將不再運作。 更新憑證可確保您的網域繼續如期運作。
 
 使用者必須是&#x200B;**企業所有者**&#x200B;或&#x200B;**部署管理員**&#x200B;角色的成員才能完成此工作。
+
+>[!IMPORTANT]
+>
+>新增或更新SSL憑證時，請勿在憑證鏈結中包含新憑證。 如果包含此引數，上傳將無法成功完成。
 
 **若要更新已過期的客戶管理的SSL憑證：**
 
@@ -88,7 +92,7 @@ Cloud Manager會提供程式中所有憑證狀態的概觀。
 
 1. 在&#x200B;**服務**&#x200B;標題下，按一下![鎖定已關閉圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_LockClosed_18_N.svg) **SSL憑證**。
 
-1. 在&#x200B;**SSL憑證**&#x200B;頁面上，按一下資料列結尾的![更多圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)，該資料列的&#x200B;**Adobe受管理**&#x200B;您要重新命名的SSL憑證。
+1. 在&#x200B;**SSL憑證**&#x200B;頁面上，按一下資料列結尾的![更多圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)，該資料列的&#x200B;**Adobe已管理**&#x200B;您要重新命名的SSL憑證。
 
 1. 在下拉式功能表中，按一下&#x200B;**重新命名**。
 
@@ -99,11 +103,11 @@ Cloud Manager會提供程式中所有憑證狀態的概觀。
 
 ## 刪除SSL憑證 {#deleting-an-ssl-certificate}
 
-從Cloud Manager中刪除Adobe管理或客戶管理的SSL憑證是無法復原的永久性動作。 作為最佳實務，Adobe建議您先在本機儲存SSL檔案，然後再在Cloud Manager中刪除它們。
+從Cloud Manager中刪除Adobe Managed或客戶管理的SSL憑證是無法復原的永久性動作。 作為最佳實務，Adobe建議您先在本機儲存SSL檔案，然後再在Cloud Manager中刪除它們。
 
 >[!NOTE]
 >
->您無法刪除與一或多個使用中網域相關聯的Adobe託管SSL憑證。 在刪除SSL憑證之前，必須刪除所有關聯的使用中網域。 請參閱[管理自訂網域名稱](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md)以瞭解更多資訊。
+>您無法刪除與一或多個使用中網域相關聯的Adobe管理的SSL憑證。 在刪除SSL憑證之前，必須刪除所有關聯的使用中網域。 請參閱[管理自訂網域名稱](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md)以瞭解更多資訊。
 
 使用者必須是&#x200B;**企業所有者**&#x200B;或&#x200B;**部署管理員**&#x200B;角色的成員才能完成此工作。
 

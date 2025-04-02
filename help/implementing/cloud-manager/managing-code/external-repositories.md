@@ -1,19 +1,19 @@
 ---
 title: 在Cloud Manager — 有限測試版中新增外部存放庫
-description: 了解如何將外部存放庫新增至 Cloud Manager。Cloud Manager支援與GitHub Enterprise Server、GitLab和Bitbucket存放庫整合。
+description: 了解如何將外部存放庫新增至 Cloud Manager。Cloud Manager支援與GitHub Enterprise、GitLab和Bitbucket存放庫整合。
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
-source-git-commit: e18368b1f16033790c91038d746c96d04a05ba21
+source-git-commit: 4667a00a156b3a2f66ed87c64763f93397aad946
 workflow-type: tm+mt
-source-wordcount: '1928'
-ht-degree: 26%
+source-wordcount: '1890'
+ht-degree: 27%
 
 ---
 
 # 在Cloud Manager — 有限測試版中新增外部存放庫 {#external-repositories}
 
-了解如何將外部存放庫新增至 Cloud Manager。Cloud Manager支援與GitHub Enterprise Server、GitLab和Bitbucket存放庫整合。
+了解如何將外部存放庫新增至 Cloud Manager。Cloud Manager支援與GitHub Enterprise、GitLab和Bitbucket存放庫整合。
 
 >[!NOTE]
 >
@@ -26,6 +26,7 @@ ht-degree: 26%
 1. [新增外部存放庫](#add-external-repo)至所選方案。
 1. 為外部存放庫提供存取權杖。
 1. 驗證私人GitHub存放庫的所有權。
+1. [將webhook](#configure-webhook)設定到外部存放庫。
 
 
 
@@ -51,7 +52,7 @@ ht-degree: 26%
    | --- | --- |
    | **存放庫名稱** | 必要。您的新存放庫的生動名稱。 |
    | **存放庫 URL** | 必要。存放庫的 URL。<br><br>如果您使用GitHub託管的存放庫，路徑必須在`.git`結尾。<br>例如，*`https://github.com/org-name/repo-name.git`*(URL 路徑僅用於插圖目的)。<br><br>如果您正在使用外部存放庫，則必須遵循下列 URL 路徑格式：<br>`https://git-vendor-name.com/org-name/repo-name.git`<br> 或<br>`https://self-hosted-domain/org-name/repo-name.git`<br>，與您的 Git 廠商相符。 |
-   | **選取存放庫類型** | 必要。選取您正在使用的存放庫型別：<ul><li>**GitHub** （GitHub Enterprise Server和自控版GitHub）</li><li>**GitLab** （包括`gitlab.com`和自控的GitLab版本） </li><li>**Bitbucket** （`bitbucket.org`和Bitbucket伺服器兩者，以及Bitbucket的自我主控版本）</li></ul>若上述存放庫 URL 路徑包含 Git 廠商名稱，例如 GitLab 或 Bitbucket，則系統已為您預先選擇存放庫類型。 |
+   | **選取存放庫類型** | 必要。選取您正在使用的存放庫型別：<ul><li>**GitHub** （GitHub Enterprise和自控版GitHub）</li><li>**GitLab** （包括`gitlab.com`和自控的GitLab版本） </li><li>**Bitbucket** （`bitbucket.org`和Bitbucket伺服器兩者，以及Bitbucket的自我主控版本）</li></ul>若上述存放庫 URL 路徑包含 Git 廠商名稱，例如 GitLab 或 Bitbucket，則系統已為您預先選擇存放庫類型。 |
    | **說明** | 選擇性。存放庫的詳細描述。 |
 
 1. 選取&#x200B;**儲存**&#x200B;以新增存放庫。
@@ -64,9 +65,9 @@ ht-degree: 26%
    | 權杖類型 | 說明 |
    | --- | --- |
    | **使用現有的存取權杖** | 如果您已為組織提供存放庫存取權杖，且有權存取多個存放庫，您可以選取現有的權杖。使用&#x200B;**權杖名稱**&#x200B;下拉清單，選取想要套用至存放庫的權杖。否則，請新增新的存取權杖。 |
-   | **新增新的存取權杖** | **存放庫型別： GitHub**<br><ul><li> 在&#x200B;**Token名稱**&#x200B;文字欄位中，輸入您要建立之存取權杖的名稱。<li>依照[GitHub檔案](https://docs.github.com/en/enterprise-server@3.14/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens)中的指示建立個人存取權杖。<li>如需必要許可權，請設定下列專案：<ul><li>**GitHub個人存取權杖(PAT)的必要許可權**<br>&#x200B;這些許可權確保Cloud Manager可以驗證提取請求、管理認可狀態檢查以及存取必要的存放庫詳細資料。<br>在GitHub中，當您產生個人存取權杖(PAT)時，請確定其包含下列存放庫許可權：<ul><li>提取請求（讀取和寫入）<li>認可狀態（讀取和寫入）<li>儲存區域中繼資料（唯讀）</li></li></ul><li>**必要的webhook事件（針對GitHub託管的存放庫）**<br>&#x200B;這些事件可讓Cloud Manager回應GitHub活動，例如提取要求驗證、管道的推播型觸發程式或Edge Delivery Services程式碼同步。<br>手動設定GitHub webhook時，請確定webhook已設定為在下列必要webhook事件上觸發：<ul><li>提取請求<li>推送<li>問題註解</li></li></li></ul></ul></ul><ul><li>在&#x200B;**存取Token**&#x200B;欄位中，貼上您剛建立的權杖。 |
-   | | **存放庫型別： GitLab**<ul><li>在&#x200B;**Token名稱**&#x200B;文字欄位中，輸入您要建立之存取權杖的名稱。<li>依照[GitLab檔案](https://docs.gitlab.com/user/profile/personal_access_tokens/)中的指示建立個人存取權杖。<li>如需必要許可權，請設定下列專案：<ul><li>**GitLab個人存取權杖(PAT)的必要許可權**<br>&#x200B;這些範圍允許Cloud Manager在驗證和webhook整合時，視需要存取存放庫資料和使用者資訊。<br>在GitLab中建立個人存取權杖時，請確定該權杖包含下列權杖範圍：<ul><li>api<li>read_user</li></li></ul><li>**必要的webhook事件（針對GitLab託管的存放庫）**<br>&#x200B;這些webhook事件允許Cloud Manager在推送程式碼或提交合併請求時觸發管道。 也會追蹤與提取請求驗證相關的註解（透過附註事件）。<br>當您在GitLab中手動設定webhook時，請務必加入下列必要的webhook事件：<ul><li>推送事件<li>合併請求事件<li>附註事件</li></li></li></ul></ul></ul><ul><li>在&#x200B;**存取Token**&#x200B;欄位中，貼上您剛建立的權杖。 |
-   | | **存放庫型別： Bitbucket**<ul><li>在&#x200B;**Token名稱**&#x200B;文字欄位中，輸入您要建立之存取權杖的名稱。<li>使用[Bitbucket檔案](https://support.atlassian.com/bitbucket-cloud/docs/create-a-repository-access-token/)建立存放庫存取權杖。<li>如需必要許可權，請設定下列專案：<ul><li>**Bitbucket個人存取權杖(PAT)的必要許可權**<br>&#x200B;這些許可權可讓Cloud Manager存取存放庫內容、管理提取請求，以及設定或回應webhook事件。<br>在Bitbucket中建立應用程式密碼時，請確定它包含下列必要的應用程式密碼許可權：<ul><li>存放庫（唯讀）<li>提取請求（讀取和寫入）<li>Webhook （讀取和寫入）</li></li></ul><li>**必要的webhook事件（針對Bitbucket託管的存放庫）**<br>&#x200B;這些事件確保Cloud Manager可以驗證提取請求、回應程式碼推送，以及與評論互動，以進行管道協調。<br>如果在Bitbucket中手動設定webhook，請將其設定為在以下必要的webhook事件中觸發：<ul><li>提取請求：已建立<li>提取請求：已更新<li>提取請求：已合併<li>提取請求：註解<li>存放庫：推播</li></li></li></ul></ul></ul><ul><li>在&#x200B;**存取Token**&#x200B;欄位中，貼上您剛建立的權杖。 |
+   | **新增新的存取權杖** | **存放庫型別： GitHub Enterprise**<br><ul><li> 在&#x200B;**Token名稱**&#x200B;文字欄位中，輸入您要建立之存取權杖的名稱。<li>依照[GitHub檔案](https://docs.github.com/en/enterprise-server@3.14/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens)中的指示建立個人存取權杖。<li>GitHub Enterprise Personal Access Token (PAT)的必要許可權<br>這些許可權確保Cloud Manager可以驗證提取請求、管理認可狀態檢查以及存取必要的存放庫詳細資訊。<br>當您在GitHub Enterprise中產生PAT時，請確定它包含下列存放庫許可權：<ul><li>提取請求（讀取和寫入）<li>認可狀態（讀取和寫入）<li>儲存區域中繼資料（唯讀）</li></li></ul></li></ul></ul></ul><ul><li>在&#x200B;**存取Token**&#x200B;欄位中，貼上您剛建立的權杖。 |
+   | | **存放庫型別： GitLab**<ul><li>在&#x200B;**Token名稱**&#x200B;文字欄位中，輸入您要建立之存取權杖的名稱。<li>依照[GitLab檔案](https://docs.gitlab.com/user/profile/personal_access_tokens/)中的指示建立個人存取權杖。<li>GitLab個人存取權杖(PAT)的必要許可權<br>這些範圍允許Cloud Manager存取驗證和webhook整合所需的存放庫資料和使用者資訊。<br>當您在GitLab中產生PAT時，請確定它包含下列權杖範圍：<ul><li>api<li>read_user</li></li></ul></li></li></ul></ul></ul><ul><li>在&#x200B;**存取Token**&#x200B;欄位中，貼上您剛建立的權杖。 |
+   | | **存放庫型別： Bitbucket**<ul><li>在&#x200B;**Token名稱**&#x200B;文字欄位中，輸入您要建立之存取權杖的名稱。<li>使用[Bitbucket檔案](https://support.atlassian.com/bitbucket-cloud/docs/create-a-repository-access-token/)建立存放庫存取權杖。<li>Bitbucket個人存取Token (PAT)的必要許可權<br>這些許可權可讓Cloud Manager存取存放庫內容、管理提取請求，以及設定或回應webhook事件。<br>當您在Bitbucket中建立應用程式密碼時，請確定它包含下列必要的應用程式密碼許可權：<ul><li>存放庫（唯讀）<li>提取請求（讀取和寫入）<li>Webhook （讀取和寫入）</li></li></ul></li></li></ul></ul></ul><ul><li>在&#x200B;**存取Token**&#x200B;欄位中，貼上您剛建立的權杖。 |
 
    >[!NOTE]
    >
@@ -108,7 +109,8 @@ Cloud Manager可讓您為已新增的外部Git存放庫設定webhook。 請參�
 * 未來的評論型動作 — 允許工作流程，例如從PR直接部署至快速開發環境(RDE)。
 
 `GitHub.com`上託管的存放庫不需要Webhook設定，因為Cloud Manager會直接透過GitHub應用程式整合。
-對於已上線存取權杖的所有其他外部存放庫，例如GitHub Enterprise Server、GitLab和Bitbucket，webhook設定可用，且必須手動設定。
+
+對於已上線存取權杖的所有其他外部存放庫，例如GitHub Enterprise、GitLab和Bitbucket，webhook設定可用，且必須手動設定。
 
 **若要設定外部存放庫的webhook：**
 
@@ -135,7 +137,7 @@ Cloud Manager可讓您為已新增的外部Git存放庫設定webhook。 請參�
    1. 在&#x200B;**Webhook密碼**&#x200B;權杖/金鑰欄位旁邊，按一下&#x200B;**產生**，然後按一下![復製圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg)。
 將密碼貼入純文字檔。 您的Git廠商Webhook設定需要複製的密碼。
 1. 按一下&#x200B;**關閉**。
-1. 導覽至您的Git廠商解決方案（GitHub Enterprise、GitLab或Bitbucket）。
+1. 導覽至您的Git廠商解決方案（GitHub Enterpriser、GitLab或Bitbucket）。
 
    在[新增外部存放庫](#add-ext-repo)中可取得webhook組態的所有詳細資訊以及每個廠商所需的事件。 在步驟8下，檢視表格。
 
@@ -146,8 +148,13 @@ Cloud Manager可讓您為已新增的外部Git存放庫設定webhook。 請參�
       若要產生API金鑰，您必須在Adobe Developer Console中建立整合專案。 如需完整詳細資訊，請參閱[建立API整合專案](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/create-api-integration/)。
 
 1. 將您先前複製的Webhook密碼貼到&#x200B;**密碼** （或&#x200B;**密碼金鑰**&#x200B;或&#x200B;**密碼權杖**）文字欄位中。
-1. 設定webhook以傳送Cloud Manager預期的適當事件。
+1. 設定webhook以傳送Cloud Manager預期的所需事件。
 
+   | 存放庫 | 必要的webhook事件 |
+   | --- | --- |
+   | GitHub企業版 | 這些事件可讓Cloud Manager回應GitHub活動，例如提取請求驗證、管道的推播型觸發器或Edge Delivery Services程式碼同步。<br>請確定webhook已設定為在下列必要webhook事件上觸發：<ul><li>提取請求<li>推送<li>問題註解</li></li></li></ul></ul></ul> |
+   | GitLab | 這些webhook事件可讓Cloud Manager在推送程式碼或提交合併請求時觸發管道。 也會追蹤與提取請求驗證相關的註解（透過附註事件）。<br>請確定webhook已設定為在下列必要webhook事件上觸發<ul><li>推送事件<li>合併請求事件<li>附註事件</li></li></li></ul></ul></ul> |
+   | Bitbucket | 這些事件確保Cloud Manager可以驗證提取請求、回應程式碼推送，以及與評論互動以協調管道。<br>請確定webhook已設定為在下列必要webhook事件上觸發<ul><li>提取請求：已建立<li>提取請求：已更新<li>提取請求：已合併<li>提取請求：註解<li>存放庫：推播</li></li></li></ul></ul></ul> |
 
 ### 使用Webhook驗證提取請求
 
@@ -155,11 +162,11 @@ Cloud Manager可讓您為已新增的外部Git存放庫設定webhook。 請參�
 
 下列行為適用：
 
-* **GitHub Enterprise Server**
+* **GitHub Enterprise**
 
-  建立檢查時，其外觀類似下列熒幕擷圖。 與`GitHub.com`的主要差異在於`GitHub.com`使用檢查執行，而GitHub Enterprise Server （使用個人存取權杖）會產生認可狀態：
+  建立檢查時，其外觀類似下列熒幕擷圖。 與`GitHub.com`的主要差異在於`GitHub.com`使用檢查執行，而GitHub Enterprise （使用個人存取權杖）會產生認可狀態：
 
-  ![在GitHub Enterprise Server](/help/implementing/cloud-manager/managing-code/assets/repository-webhook-github-pr-validation.png)上顯示PR驗證程式的認可狀態
+  ![認可狀態以指示GitHub Enterprise上的PR驗證程式](/help/implementing/cloud-manager/managing-code/assets/repository-webhook-github-pr-validation.png)
 
 * **位元貯體**
 
