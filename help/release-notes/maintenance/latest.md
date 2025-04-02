@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的目前維�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 7d93af706d8b0556e9e26282d339794447eb0a41
+source-git-commit: 96084c84c45af54b1f152e22b8331f85dc6b583f
 workflow-type: tm+mt
-source-wordcount: '1514'
-ht-degree: 19%
+source-wordcount: '1501'
+ht-degree: 20%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 19%
 ### 增強功能 {#enhancements-20133}
 
 * Assets-47850：如果AEM CS已啟用ES，請限制新增Scene7設定。
-* CQ-4359547：從https://git.corp.adobe.com/target-sdk/tsdk-core存放庫完全移除Guava。
+* CQ-4359547：從Git存放庫完全移除Guava。
 * Forms-17551：新增SharePoint清單整合的記錄檔案(DoR)支援。
 * Forms-18432：實作表單專用（規則運算式）使用者端預填設定，以啟用選擇性預填功能而無OSGI層級變更。
 * Forms-18513：在AEP Connector中實作資料樹狀結構轉換支援，以增強精靈功能和資料處理功能。
@@ -57,16 +57,16 @@ ht-degree: 19%
 * SITES-28549：建立`/cf/domains`以根據AEM層傳回網域ID。
 * SITES-29026：新增選用引數，使用語言和國家/地區代碼指定內容片段的地區設定。
 * SITES-29031：改善PATCH執行片段的邏輯，因此提供較出色的效能。
-* SITES-29169：如果所有已發佈的資源（無論處於「已發佈」或「已修改」狀態）參照已移動、重新命名或刪除的資源，則會重新發佈。
+* SITES-29169：如果狀態為PUBLISHED的資源參考已移動、重新命名或刪除的資源，則會重新發佈。
 * SITES-29376：新增程式碼切換至驗證已發佈的資源刪除。
-* SITES-29417：更新/libs/cq/Page/proxy.jsp以將請求轉送至jcr：content節點而非include。
+* SITES-29417：更新`/libs/cq/Page/proxy.jsp`以將請求轉送至jcr：content節點而非include。
 * SITES-2947：建立/修改Kibana視覺效果以比較發佈rasp。
 * SITES-29733：依內容片段標籤提高模型搜尋效能。
 * SITES-8316：內容原則：快取ContentPolicyManager。
-* SITES-24906：使用通用編輯器的Edge Delivery：支援作者建立的試算表，但不含對應（搶先存取）
-* SITES-24907：具有通用編輯器的Edge Delivery：支援將Assets發佈到多個網站以供MSM使用案例（搶先存取）
-* SITES-27956：使用Universal Editor的Edge Delivery：改善發佈輸送量（搶先使用）
-* SITES-27956：使用通用編輯器的Edge Delivery：改善發佈至Edge Delivery Services的錯誤處理（搶先存取）
+* SITES-24906：使用通用編輯器的Edge Delivery：支援作者建立的試算表，但不含對應（搶先存取）。
+* SITES-24907：具有通用編輯器的Edge Delivery：支援將Assets發佈到多個網站以供MSM使用案例（搶先存取）。
+* SITES-27956：使用Universal Editor的Edge Delivery：改善發佈輸送量（搶先使用）。
+* SITES-27956：使用通用編輯器的Edge Delivery：改善發佈至Edge Delivery Services的錯誤處理（搶先存取）。
 
 ### 已修正的問題 {#fixed-issues-20133}
 
