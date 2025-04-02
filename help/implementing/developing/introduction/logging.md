@@ -4,9 +4,9 @@ description: 瞭解如何使用AEM as a Cloud Service的記錄來設定中央記
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
 feature: Log Files, Developing
 role: Admin, Architect, Developer
-source-git-commit: e1ac26b56623994dfbb5636993712844db9dae64
+source-git-commit: 60bf6c6077ecfc6700ed9284834cf13e3772e25a
 workflow-type: tm+mt
-source-wordcount: '2376'
+source-wordcount: '2364'
 ht-degree: 9%
 
 ---
@@ -18,8 +18,8 @@ AEM as a Cloud Service是客戶納入自訂程式碼的平台，可為他們的�
 AEM as a Cloud Service記錄設定和記錄層級是在組態檔中進行管理，這些組態檔會儲存為Git中AEM專案的一部分，並透過Cloud Manager部署為AEM專案的一部分。 登入AEM as a Cloud Service可分為三個邏輯集：
 
 * AEM記錄，可在AEM應用程式層級執行記錄
-* Apache HTTPD網頁伺服器/Dispatcher記錄，可在Publish層級上執行網頁伺服器和Dispatcher的記錄。
-* CDN記錄（如其名稱所示）會在CDN上執行記錄。 此功能將於9月初逐步向客戶推出。
+* Apache HTTPD網頁伺服器/Dispatcher記錄，可在發佈層級上執行網頁伺服器和Dispatcher的記錄。
+* CDN記錄（如其名稱所示）會在CDN上執行記錄。
 
 ## AEM記錄 {#aem-logging}
 
@@ -27,11 +27,11 @@ AEM應用程式層級的記錄由三個記錄檔處理：
 
 1. AEM Java記錄，可呈現AEM應用程式的Java記錄陳述式。
 1. HTTP請求記錄，會記錄有關AEM所服務的HTTP請求及其回應的資訊
-1. HTTP存取記錄檔，會記錄摘要資訊和AEM所服務的HTTP要求
+1. HTTP存取記錄，會記錄由AEM提供的摘要資訊和HTTP請求
 
 >[!NOTE]
 >
->從Publish層的Dispatcher快取或上游CDN提供的HTTP請求不會反映在這些記錄中。
+>從發佈層的Dispatcher快取或上游CDN提供的HTTP請求不會反映在這些記錄中。
 
 ## AEM Java記錄 {#aem-java-logging}
 
@@ -97,7 +97,7 @@ AEM as a Cloud Service可讓您存取Java記錄陳述式。 AEM應用程式的�
 
 雖然Java記錄支援數個其他層級的記錄粒度，但AEM as a Cloud Service建議使用上述三個層級。
 
-AEM記錄層級是透過OSGi設定根據環境型別設定，而這些設定又會提交至Git，並透過Cloud Manager部署至AEM as a Cloud Service。 因此，最好讓記錄陳述一致且為環境型別所熟知，以確保透過AEM作為Cloud Service提供的記錄可在最佳記錄層級使用，而不需要以更新的記錄層級設定重新部署應用程式。
+AEM記錄層級是透過OSGi設定根據環境型別設定，而這些設定又會提交至Git，並透過Cloud Manager部署至AEM as a Cloud Service。 因此，最好讓記錄陳述一致且對於環境型別而言是眾所周知的，以確保透過AEM as Cloud Service取得的記錄可在最佳記錄層級使用，而不需要以更新的記錄層級設定重新部署應用程式。
 
 **範例記錄輸出**
 
@@ -135,7 +135,7 @@ AEM記錄層級是透過OSGi設定根據環境型別設定，而這些設定又�
 </tr>
 <tr>
 <td>記錄訊息</td>
-<td>未指定核准者，預設為[創意核准者使用者群組]</td>
+<td>未指定核准者，預設為[ Creative核准者使用者群組]</td>
 </tr>
 </tbody>
 </table>
@@ -146,7 +146,7 @@ AEM Java記錄檔會定義為OSGi設定，因此可使用執行模式資料夾�
 
 透過Sling LogManager Factory的OSGi設定為自訂Java套件設定Java記錄。 有三個支援的組態屬性：
 
-| OSGi設定屬性 | 說明 |
+| OSGi設定屬性 | 描述 |
 |---|---|
 | `org.apache.sling.commons.log.names` | 要收集其記錄陳述式的Java套件。 |
 | `org.apache.sling.commons.log.level` | `org.apache.sling.commons.log.names`所指定的Java封裝記錄層級 |
@@ -194,7 +194,7 @@ AEM Java記錄檔會定義為OSGi設定，因此可使用執行模式資料夾�
 
 ## AEM HTTP要求記錄 {#aem-http-request-logging}
 
-AEM as a Cloud Service的HTTP請求記錄可讓您依時間順序深入分析向AEM發出的HTTP請求及其HTTP回應。 此記錄有助於瞭解向AEM發出的HTTP請求，以及這些請求被處理和回應的順序。
+AEM as a Cloud Service的HTTP請求記錄可讓您依時間順序深入分析向AEM提出的HTTP請求及其HTTP回應。 此記錄有助於瞭解向AEM發出的HTTP請求，以及這些請求被處理和回應的順序。
 
 瞭解此記錄的關鍵在於透過其ID （以方括弧中的數值表示）對應HTTP請求和回應配對。 通常請求及其對應的回應會在記錄中於其他HTTP請求和回應之間插入。
 
@@ -248,9 +248,9 @@ AEM as a Cloud Service的HTTP請求記錄可讓您依時間順序深入分析向
 
 ## AEM HTTP存取記錄 {#aem-http-access-logging}
 
-AEM as a Cloud Service HTTP存取記錄會依時間順序顯示HTTP要求。 每個記錄專案代表存取AEM的HTTP要求。
+AEM as Cloud Service HTTP存取記錄會依時間順序顯示HTTP請求。 每個記錄專案代表存取AEM的HTTP要求。
 
-此記錄有助於快速瞭解向AEM發出的HTTP要求（如果這些要求通過檢視隨附的HTTP回應狀態代碼成功）以及HTTP要求完成所需的時間。 此記錄檔也可依使用者篩選記錄檔專案，有助於對特定使用者的活動進行除錯。
+此記錄有助於快速瞭解向AEM發出的HTTP要求（如果這些要求透過檢視隨附的HTTP回應狀態代碼成功）以及HTTP要求完成所需的時間。 此記錄檔也可依使用者篩選記錄檔專案，有助於對特定使用者的活動進行除錯。
 
 **範例記錄輸出**
 
@@ -279,19 +279,19 @@ cm-p1234-e26813-aem-author-59555cb5b8-8kgr2 - example@adobe.com 30/Apr/2020:17:3
 
 ## Apache Web Server和Dispatcher記錄 {#apache-web-server-and-dispatcher-logging}
 
-AEM as a Cloud Service為Publish上的Apache Web Server和Dispatcher層提供三個記錄：
+AEM as a Cloud Service為發佈上的Apache Web Server和Dispatcher層提供三個記錄：
 
 * Apache HTTPD Web Server存取記錄
 * Apache HTTPD Web Server錯誤記錄
 * Dispatcher記錄
 
-這些記錄檔僅適用於Publish階層。
+這些記錄檔僅適用於發佈階層。
 
-這組記錄提供存取AEM應用程式之前，AEM as a Cloud Service Publish層級的HTTP請求深入分析。 請務必瞭解這點，因為理想情況下，對Publish層級伺服器的大部分HTTP請求都是由Apache HTTPD Web Server和AEM Dispatcher快取的內容所提供，而且絕對不會連線至AEM應用程式本身。 因此，AEM的Java、要求或存取記錄檔中並沒有這些要求的記錄陳述式。
+這組記錄提供存取AEM應用程式之前，AEM as a Cloud Service Publish層級的HTTP請求深入分析。 請務必瞭解這點，因為理想情況下，對發佈層級伺服器的大部分HTTP請求都是由Apache HTTPD Web Server和AEM Dispatcher快取的內容所提供，而且絕對不會連線至AEM應用程式本身。 因此，AEM的Java、請求或存取記錄檔中沒有這些請求的記錄陳述式。
 
 ### Apache HTTPD Web Server存取記錄檔 {#apache-httpd-web-server-access-log}
 
-Apache HTTP Web Server存取記錄檔會針對每個到Publish層級的Web伺服器/Dispatcher的HTTP要求提供陳述式。 從上游CDN提供的請求不會反映在這些記錄中。
+Apache HTTP Web Server存取記錄檔會針對到達發佈層級之Web伺服器/Dispatcher的每個HTTP要求提供陳述式。 從上游CDN提供的請求不會反映在這些記錄中。
 
 請參閱[官方apache檔案](https://httpd.apache.org/docs/2.4/logs.html#accesslog)中有關錯誤記錄檔格式的資訊。
 
@@ -360,7 +360,7 @@ cm-p1234-e5678-aem-publish-b86c6b466-qpfvp - - 17/Jul/2020:09:14:42 +0000  "GET 
 
 ## Apache HTTPD Web Server錯誤記錄 {#apache-httpd-web-server-error-log}
 
-Apache HTTP Web Server錯誤記錄針對Publish層的網頁伺服器/Dispatcher中的每個錯誤提供陳述式。
+Apache HTTP Web Server錯誤記錄針對發佈層級的Web伺服器/Dispatcher中的每個錯誤提供陳述式。
 
 請參閱[官方apache檔案](https://httpd.apache.org/docs/2.4/logs.html#errorlog)中有關錯誤記錄檔格式的資訊。
 
@@ -561,11 +561,11 @@ CDN記錄與其他記錄不同，因為它會遵循JSON格式。
 
 雲端服務的AEM as a Cloud Service記錄檔可透過以下方式存取：透過Cloud Manager介面下載，或使用Adobe I/O命令列介面在命令列追蹤記錄檔。 如需詳細資訊，請參閱[Cloud Manager記錄檔案](/help/implementing/cloud-manager/manage-logs.md)。
 
-### 其他Publish地區的記錄 {#logs-for-additional-publish-regions}
+### 其他發佈區域的記錄 {#logs-for-additional-publish-regions}
 
 如果針對特定環境啟用了其他發佈區域，則可以從Cloud Manager下載每個區域的記錄，如上所述。
 
-其他發佈區域的AEM記錄檔和Dispatcher記錄檔會在環境ID之後的前3個字母中指定區域，以下範例中的&#x200B;**nld2**&#x200B;即代表位於荷蘭的其他AEM發佈執行個體：
+其他發佈區域的AEM記錄和Dispatcher記錄將在環境ID之後的前3個字母中指定區域，以下範例中的&#x200B;**nld2**&#x200B;即代表位於荷蘭的其他AEM發佈執行個體：
 
 ```
 cm-p7613-e12700-nld2-aem-publish-bcbb77549-5qmmt 127.0.0.1 - 07/Nov/2023:23:57:11 +0000 "HEAD /libs/granite/security/currentuser.json HTTP/1.1" 200 - "-" "Java/11.0.19"
@@ -575,7 +575,7 @@ cm-p7613-e12700-nld2-aem-publish-bcbb77549-5qmmt 127.0.0.1 - 07/Nov/2023:23:57:1
 
 AEM as a Cloud Service SDK提供記錄檔以支援本機開發。
 
-AEM記錄檔位於`crx-quickstart/logs`資料夾，您可在此檢視下列記錄檔：
+AEM記錄位於資料夾`crx-quickstart/logs`中，您可在此檢視下列記錄：
 
 * AEM Java記錄檔： `error.log`
 * AEM HTTP要求記錄： `request.log`
@@ -589,7 +589,7 @@ Apache層記錄檔（包括Dispatcher）位於儲存Dispatcher的Docker容器中
 1. 若要登入容器，請輸入&quot;`docker exec -it <container> /bin/sh`&quot;，其中`<container>`是上一步驟的Dispatcher容器ID
 1. 瀏覽至`/mnt/var/www/html`下的快取根目錄
 1. 記錄檔在`/etc/httpd/logs`之下
-1. Inspect記錄：可在XYZ資料夾下存取記錄，您可在此檢視以下記錄：
+1. 檢查記錄：這些記錄可在XYZ資料夾下存取，您可在此檢視以下記錄：
    * Apache HTTPD Web伺服器存取記錄檔 — `httpd_access.log`
    * Apache HTTPD Web伺服器錯誤記錄檔 — `httpd_error.log`
    * Dispatcher記錄 — `dispatcher.log`
