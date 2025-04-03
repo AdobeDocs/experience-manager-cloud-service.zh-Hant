@@ -1,27 +1,29 @@
 ---
-title: 如何使用通用編輯器根據Edge Delivery Services範本建立獨立表單？
-description: 本文說明如何在表單建立精靈中選取以Edge Delivery Services為基礎的範本，使用通用編輯器建立表單。 您也可以將表單發佈至AEM Edge Delivery Services。
+title: 如何使用通用編輯器根據 Edge Delivery Services 範本建立獨立的表單？
+description: 此文章說明如何在表單建立精靈中選擇基於 Edge Delivery Services 的範本，並使用通用編輯器建立表單。您也可以將表單發佈到 AEM Edge Delivery Services。
 feature: Edge Delivery Services
 role: User
 hide: true
 hidefromtoc: true
 exl-id: 1eab3a3d-5726-4ff8-90b9-947026c17e22
-source-git-commit: c81698c2d424d39688d1c9fad6c085223f5854a5
+source-git-commit: b0cedf31a8759cdf403e1e7d6aadcab3bba03bab
 workflow-type: tm+mt
-source-wordcount: '1080'
-ht-degree: 83%
+source-wordcount: '1060'
+ht-degree: 87%
 
 ---
 
-# 在通用編輯器中建立獨立表單的逐步指南
+# 使用通用編輯器建立最適化Forms
 
 <span class="preview">您可以透過搶先體驗方案使用這項功能。若要請求存取權，請使用您的官方地址發送電子郵件至 <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a>，郵件內容須包含您的 GitHub 組織名稱和存放庫名稱。例如，若存放庫 URL 為 https://github.com/adobe/abc,，則組織名稱為 adobe，存放庫名稱為 abc。</span>
 
-本文會透過從「表單建立精靈」中選取以Edge Delivery Services為基礎的範本，引導您使用通用編輯器來建立和編寫獨立表單。 您也可以透過通用編輯器，將製作好的表單發佈至 AEM Edge Delivery Services。
+通用編輯器是一款多功能的視覺化編輯器，可提供編輯表單的隨心所欲體驗(WYSIWYG)。 它透過拖放功能，使用文字方塊、選項按鈕和核取方塊等可用的Adaptive Forms元件，簡化建立回應式且方便使用的表單。
 
-AEM Forms 會提供一個稱為「最適化表單區塊」的區塊，協助您輕鬆建立 Edge Delivery Services 表單來擷取和儲存資料。您可以[建立使用最適化表單區塊預先設定的全新 AEM 專案](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block)，或者[將最適化表單區塊新增至現有的 AEM Site 專案](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#add-adaptive-forms-block-to-your-existing-aem-project)。
+AEM提供稱為最適化Forms區塊的區塊，可協助您使用Universal Editor輕鬆建立Edge Delivery Services Forms以擷取和儲存資料。 您可以[建立使用最適化表單區塊預先設定的全新 AEM 專案](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block)，或者[將最適化表單區塊新增至現有的 AEM Site 專案](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#add-adaptive-forms-block-to-your-existing-aem-project)。
 
-![Github存放庫工作流程](/help/edge/assets/repo-workflow.png){width=50%}
+![Github 存放庫工作流程](/help/edge/assets/repo-workflow.png)
+
+本文會透過從「表單建立精靈」中選取以Edge Delivery Services為基礎的範本，引導您使用通用編輯器來建立和編寫獨立表單。
 
 ## 必要條件
 
@@ -30,11 +32,11 @@ AEM Forms 會提供一個稱為「最適化表單區塊」的區塊，協助您�
 * AEM 表單作者執行個體包括根據 Edge Delivery Services 建立的範本。請確保您的環境中安裝了[最新版本的核心元件](https://github.com/adobe/aem-core-forms-components)。
 * 將 AEM Forms 作為雲端服務作者執行個體的 URL 和 GitHub 存放庫保持便於使用。
 
-## 在通用編輯器中處理表單
+## 在通用編輯器中使用表單
 
-藉助通用編輯器，您可以使用已建立的元件 (例如文字欄位、核取方塊和選項按鈕)，輕鬆建立回應式及互動式的獨立表單。它提供強大的功能，例如動態規則、順暢的資料整合和自訂選項，可讓您根據確切的需求建立表單。 您也可以將表單發佈至AEM Edge Delivery Services。 您可以在通用編輯器中對表單執行下列動作：
+使用Universal Editor，您可以輕鬆建立回應式互動式獨立表單。 您可以透過通用編輯器對表單執行以下操作：
 * [建立表單](#create-a-form)
-* [撰寫表單](#author-a-form)
+* [製作表單](#author-a-form)
 * [發佈表單](#publish-a-form)
 * [管理表單](#manage-a-form)
 
@@ -55,7 +57,7 @@ AEM Forms 會提供一個稱為「最適化表單區塊」的區塊，協助您�
 
    當您選取 Edge Delivery Services 的範本時，便會啟用「**[!UICONTROL 建立]**」按鈕。
 1. (選用) 您在「**[!UICONTROL 資料來源]**」或「**[!UICONTROL 提交]**」標籤中可以選取資料來源或提交動作。
-1. （選擇性）在&#x200B;**[!UICONTROL 傳遞]**&#x200B;索引標籤中，您可以指定表單的發佈或取消發佈日期。
+1. (選用) 在「**[!UICONTROL 傳送]**」標籤中，您可以指定表單的發佈日期或取消發佈日期。
 
 1. 按一下「**[!UICONTROL 建立]**」，便會出現「**建立表單**」精靈。
 1. 設定「**名稱**」和「**標題**」。
@@ -75,7 +77,7 @@ AEM Forms 會提供一個稱為「最適化表單區塊」的區塊，協助您�
 
    當您按一下「**[!UICONTROL 建立]**」時，通用編輯器中便會開啟表單供您製作。
 
-### 撰寫表單
+### 製作表單
 
 1. 開啟內容瀏覽器，然後導覽至&#x200B;**內容樹**&#x200B;中的&#x200B;**[!UICONTROL 最適化表單]**&#x200B;元件。
 
@@ -93,7 +95,7 @@ AEM Forms 會提供一個稱為「最適化表單區塊」的區塊，協助您�
 
    ![聯絡我們表單](/help/edge/assets/contact-us.png)
 
-   您現在可以[設定與自訂表單提交動作](/help/edge/docs/forms/universal-editor/submit-action.md)。
+   現在您可以[設定和自訂表單](/help/edge/docs/forms/universal-editor/submit-action.md)的提交動作。
 
 
 <!--
