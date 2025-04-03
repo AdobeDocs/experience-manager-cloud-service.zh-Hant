@@ -6,10 +6,10 @@ Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: ef6c113721ca6f84374ecd01df790a0b37d00192
+source-git-commit: 664aa2091a3853fdcea792ba5015d685c9285764
 workflow-type: tm+mt
-source-wordcount: '2289'
-ht-degree: 26%
+source-wordcount: '2286'
+ht-degree: 27%
 
 ---
 
@@ -74,9 +74,9 @@ Forms帶來的更多對話功能如下：
 對話式Forms不僅是一種新外觀 — 它還能改變使用者體驗的遊戲規則。  提升參與度、減少表單放棄率，並讓每個人都能更愉快地與您的網站互動。
 
 
-### 適用於Forms的Edge Delivery Services的WYSIWYG編寫（通用編輯器）
+### 適用於Edge Delivery Services的WYSIWYG製作
 
-Universal Editor提供強大的WYSIWYG介面，結合視覺化設計簡易性與進階功能，建置並發佈[最適化表單至Edge Delivery Services](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)。 WYSIWYG Authoring提供[Document-based Authoring](/help/edge/docs/forms/create-forms.md)的所有功能，以及各種其他功能：
+WYSIWYG製作提供WYSIWYG介面(通用編輯器和調適型Forms編輯器)，用以建置調適型表單並發佈至Edge Delivery Services。 WYSIWYG Authoring提供[Document-based Authoring](/help/edge/docs/forms/overview.md#document-based-authoring-features)的所有功能，以及各種其他功能：
 
 * 用來建立複雜邏輯的進階規則編輯器。
 * 提供自訂功能的伺服器端可擴充性。
@@ -86,26 +86,6 @@ Universal Editor提供強大的WYSIWYG介面，結合視覺化設計簡易性與
 * 與各種資料來源整合，以預先填入表單和提交資料。
 * 用來定義資料結構並與各種資料來源互動的表單資料模型 (FDM)。
 * 能夠選擇多個提交動作以處理表單提交，包括提交資料至Microsoft SharePoint、Microsoft OneDrive、Adobe Workfront Fusion、Salesforce、Microsoft Dynamics和更多資料來源。
-
-![通用編輯器](/help/edge/docs/forms/universal-editor/assets/universal-editor.png)
-
-**優點：**
-
-* **加速實現價值(TTV)**：透過直覺式的視覺化撰寫功能，讓啟動表單的速度更快，免除複雜的程式碼需求。
-* **降低開發成本**：讓商務使用者能夠以最少的IT參與來建立和修改表格，藉此降低總體擁有成本。
-* **簡化的開發**：僅使用HTML、CSS和JavaScript建立自訂元件 — 不需要專門的架構知識。
-* **現代Web棧疊**：建置在前端開發人員熟悉的Web標準和現代技術上。
-* **快速原型設計**：在投資完整開發之前，快速建立及測試表單概念
-
-
-**瀏覽檔案以深入瞭解：**
-
-| | | |
-|:----------------------:|:---------------------:|:----------------------:|
-| [**主要功能**](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md#key-features-of-universal-editor-for-edge-delivery-services-for-forms) | [**使用回應式配置**](/help/edge/docs/forms/universal-editor/responsive-layout.md) | [**設定提交動作**](/help/edge/docs/forms/universal-editor/submit-action.md) |
-| [**開始使用最適化Forms的Universal Editor**](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md) | [**設定表單樣式**](/help/edge/docs/forms/universal-editor/style-theme-forms.md) | [**新增reCAPTCHA安全性**](/help/edge/docs/forms/universal-editor/recaptcha-forms.md) |
-| [**建立您的第一個表單**](/help/edge/docs/forms/universal-editor/create-forms.md) | [**使用規則編輯器**](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md) | [**發佈表單**](/help/edge/docs/forms/universal-editor/publish-forms.md) |
-| [**瞭解使用者介面**](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md) | | [**建立自訂元件**](/help/edge/docs/forms/universal-editor/create-custom-component.md) |
 
 
 ### AEM Forms至Marketo聯結器
@@ -127,27 +107,38 @@ Universal Editor提供強大的WYSIWYG介面，結合視覺化設計簡易性與
 * [為現有的Adaptive Forms設定Marketo Engage廣告資料來源](/help/forms/use-marketo-engage-data-source-in-form.md)
 * [提交現有的最適化表單至Marketo Engage](/help/forms/submit-adaptive-form-to-marketo-engage.md)
 
-### 價值實現儀表板
+### 雲端上的互動式通訊
 
-使用價值實現儀表板追蹤和分析表單的績效。 此分析工具可協助您進行資料導向式決策，以最佳化表單策略。
+Cloud上的互動式通訊是建立、管理和提供資料導向互動式通訊的強大解決方案，例如商務信函、檔案、對帳單、利益通知、行銷郵件、帳單和歡迎套件。
 
-![Forms使用分析控制面板](/help/forms/assets/forms-usage-insights.png)
+![互動式通訊編輯器](/help/forms/assets/ic-editor.png)
 
-**主要功能：**
+#### 主要功能：
 
-* 監視表單提交、檔案轉譯和表單建立/發佈量度
-* 在整個組織中追蹤表單片段的使用和重複使用
-* 識別趨勢、尖峰時段和改善機會
+* **雲端型編輯器**：不同於只能安裝在Windows電腦上的AEM Forms Desktop Designer，互動式通訊編輯器可在任何新式瀏覽器中執行，而不需要安裝。 這種雲端式方法可免除安裝麻煩、提供跨平台協助工具，並可透過網際網路存取從任何位置進行協同合作。
 
-控制面板透過兩個主要區段提供深入分析：
+* **方便使用的設計**：直覺式的點選式介面，需要最少的技術知識。
 
-* **一段時間內的表單和檔案活動**：追蹤提交、轉譯和表單建立/發佈
-* **片段使用**：監視片段的採用和重複使用
+* **資料整合**：連線至結構描述、資料庫和網頁服務，以產生動態內容。
 
-如需詳細資訊：
+* **豐富型媒體**：順暢地整合文字、影像和互動元素。
 
-* [瞭解您的價值實現儀表板](/help/forms/aem-forms-value-realization-dashboard.md)
-* [解讀表單與檔案使用方式深入分析](/help/forms/using-the-value-realization-dashboard.md)
+* **檔案片段**：重複使用多個檔案的模組化內容區塊，以維持一致性和效率。
+
+* **多頻道輸出**：建立符合法規要求的跨列印和數位格式的統一體驗。
+
+* **動態內容**：使用商業邏輯和資料繫結產生個人化內容。
+
+* **格式彈性**：輸出為PDF、HTML、PCL、PostScript®和ZPL格式。
+
+#### 使用案例：
+
+* 產生帳戶對帳單的金融機構
+* 精簡福利通知的政府機構
+* 建立高品質、安全且符合法律規範的通訊
+* 管理資料導向互動式對應關係的建立、組裝和傳遞
+
+準備好開始了嗎？ 互動式通訊編輯器可在Forms as a Cloud Service部署的搶先存取計畫下取得。 若要要求存取權，請從您的正式地址將您的組織ID和方案詳細資料以電子郵件傳送至[aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)。
 
 ## 其他早期存取創新
 
