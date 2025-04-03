@@ -4,9 +4,9 @@ description: 了解如何將外部存放庫新增至 Cloud Manager。Cloud Manag
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
-source-git-commit: 4667a00a156b3a2f66ed87c64763f93397aad946
+source-git-commit: cc307e8fbe71b65e25c7184b0b720708bcb6405f
 workflow-type: tm+mt
-source-wordcount: '1890'
+source-wordcount: '1866'
 ht-degree: 27%
 
 ---
@@ -206,16 +206,9 @@ Cloud Manager可讓您為已新增的外部Git存放庫設定webhook。 請參�
 * 如果PR驗證或管道觸發程式無法運作，請確認Cloud Manager和您的Git供應商中的Webhook密碼都是最新的。
 
 
-
-
-
-
-
-
 ## 限制
 
 * 外部存放庫無法連結到設定管道。
-* 具有外部存放庫（非在GitHub上託管）和「在Git變更上」觸發器的管道不會自動啟動。 它們只能手動起始。
 
 
 <!-- THIS BULLET REMOVED AS PER https://wiki.corp.adobe.com/display/DMSArchitecture/Cloud+Manager+2024.12.0+Release. THEY CAN NOW START AUTOMATICALLY>
