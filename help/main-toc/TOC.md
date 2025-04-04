@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的運作方式以及該軟體可以為您做哪些事。
 breadcrumb-title: 使用手冊
 user-guide-title: 'AEM as a Cloud Service '
-source-git-commit: dd7b09dc208f556a08d4a8960d9c71ec3c6e7651
+source-git-commit: 61992513d7c965d1c0b1f3d1134d35cc53bebe2f
 workflow-type: tm+mt
-source-wordcount: '6127'
+source-wordcount: '6132'
 ht-degree: 99%
 
 ---
@@ -36,6 +36,7 @@ ht-degree: 99%
          + [2025.2.0 版發行說明](/help/release-notes/release-notes-cloud/2025/release-notes-2025-2-0.md)
          + [2025.1.0 版發行說明](/help/release-notes/release-notes-cloud/2025/release-notes-2025-1-0.md)
       + 2024 {#2024}
+         + [2024.11.0 版發行說明](/help/release-notes/release-notes-cloud/2024/release-notes-2024-11-0.md)
          + [2024.10.0 版發行說明](/help/release-notes/release-notes-cloud/2024/release-notes-2024-10-0.md)
          + [2024.9.0 版發行說明](/help/release-notes/release-notes-cloud/2024/release-notes-2024-9-0.md)
          + [2024.8.0 版發行說明](/help/release-notes/release-notes-cloud/2024/release-notes-2024-8-0.md)
@@ -1322,7 +1323,7 @@ ht-degree: 99%
       + 混合式與 SPA 開發 {#hybrid}
          + [使用 AEM 的混合式和 SPA](https://business.adobe.com/content/dam/dx/us/en/products/experience-manager/sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
          + [為元件啟用 JSON 匯出](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html?lang=zh-hant)
-         + [SPA編輯器淘汰](/help/implementing/developing/hybrid/spa-editor-deprecation.md)
+         + [停止支援 SPA 編輯器](/help/implementing/developing/hybrid/spa-editor-deprecation.md)
          + [SPA 簡介和逐步解說](/help/implementing/developing/hybrid/introduction.md)
          + [SPA WKND 教學課程](/help/implementing/developing/hybrid/wknd-tutorial.md)
          + [使用 React 快速入門](/help/implementing/developing/hybrid/getting-started-react.md)
@@ -1394,7 +1395,7 @@ ht-degree: 99%
          + [國際化使用者介面字串](/help/implementing/developing/extending/i18n/dev.md)
          + [使用翻譯工具來管理字典](/help/implementing/developing/extending/i18n/translator.md)
          + [擷取字串進行翻譯](/help/implementing/developing/extending/i18n/extract.md)
-      + [擴充功能與Extension Manager](/help/implementing/developing/extending/extension-manager.md)
+      + [擴充功能與 Extension Manager](/help/implementing/developing/extending/extension-manager.md)
    + 部署至 AEM as a Cloud Service {#deploying}
       + [部署至 AEM as a Cloud Service ](/help/implementing/deploying/overview.md)
       + [AEM 版本更新](/help/implementing/deploying/aem-version-updates.md)
