@@ -3,10 +3,10 @@ title: 適用於  [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 的�
 description: 在應用程式內使用資產選擇器進行搜尋、尋找和取得資產的中繼資料與轉譯。
 role: Admin, User
 exl-id: 62b0b857-068f-45b7-9018-9c59fde01dc3
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: 97a432270c0063d16f2144d76beb437f7af2895a
 workflow-type: tm+mt
-source-wordcount: '1360'
-ht-degree: 97%
+source-wordcount: '1427'
+ht-degree: 94%
 
 ---
 
@@ -15,19 +15,19 @@ ht-degree: 97%
 <table>
     <tr>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>全新</i></sup><a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 與 Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>全新</i></sup><a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets與Edge Delivery Services整合</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>全新</i></sup><a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets 與 Edge Delivery Services 整合</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI擴充性</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>全新</i></sup><a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>使用者介面可擴充性</b></a>
         </td>
           <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>啟用Dynamic Media Prime和Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>全新</i></sup><a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>啟用 Dynamic Media Prime 與 Ultimate</b></a>
         </td>
     </tr>
     <tr>
@@ -81,7 +81,11 @@ ht-degree: 97%
 
 您必須確保以下通訊方式：
 
-* 該應用程式是在 HTTPS 上運作。
+* 主機應用程式正在HTTPS上執行。
+* 您無法在`localhost`上執行應用程式。 如果您想要在本機電腦上整合資產選擇器，您需要建立自訂網域（例如`[https://<your_campany>.localhost.com:<port_number>]`），並在`redirectUrl list`中新增此自訂網域。
+* 您可以使用個別`imsClientId`來設定`ADOBE_PROVIDED_CLIENT_ID`並新增至AEM Cloud Service環境變數。
+  ![資產選擇器IMS使用者端ID環境](assets/asset-selector-ims-client-id-env.png)
+* IMS範圍清單需要在環境設定中定義。
 * 應用程式的 URL 位於 IMS 用戶端的重新導向 URL 允許清單中。
 * IMS 登入流程是使用網頁瀏覽器上的快顯視窗進行設定和轉譯。因此，應在目標瀏覽器上啟用或允許快顯視窗。
 
@@ -91,7 +95,7 @@ ht-degree: 97%
 
 * [整合資產選擇器與 Adobe 應用程式](/help/assets/integrate-asset-selector-adobe-app.md)
 * [整合資產選擇器與非 Adobe 應用程式](/help/assets/integrate-asset-selector-non-adobe-app.md)
-* [整合資產選擇器 Dynamic Media Open API](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
+* [整合資產選擇器Dynamic Media Open API](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
 
 
 >[!IMPORTANT]
@@ -197,9 +201,6 @@ import { AssetSelector } from 'https://experience.adobe.com/solutions/CQ-assets-
 * ![網格檢視](assets/do-not-localize/grid-view.png) [!UICONTROL **網格檢視**] 網格檢視會在列與欄的網格中顯示可捲動的檔案和資料夾。
 * ![圖庫檢視](assets/do-not-localize/gallery-view.png) [!UICONTROL **圖庫檢視**] 圖庫檢視會在居中鎖定的水平清單中顯示檔案或資料夾。
 * ![瀑布檢視](assets/do-not-localize/waterfall-view.png) [!UICONTROL **瀑布**&#x200B;檢視] 瀑布檢視會以 Bridge 的形式顯示檔案或資料夾。
-
-**概觀圖形**
-
 
 ## 深入了解重要功能 {#key-capabilities-asset-selector}
 
