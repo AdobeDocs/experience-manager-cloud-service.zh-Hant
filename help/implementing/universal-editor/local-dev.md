@@ -4,10 +4,10 @@ description: 瞭解如何執行您自己的Universal Editor服務，以供本機
 exl-id: ba1bf015-7768-4129-8372-adfb86e5a120
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 300dc71969e8e1da32d4f86f0a987b7e2777ccf5
 workflow-type: tm+mt
-source-wordcount: '932'
-ht-degree: 37%
+source-wordcount: '950'
+ht-degree: 36%
 
 ---
 
@@ -16,22 +16,26 @@ ht-degree: 37%
 
 瞭解如何執行您自己的Universal Editor服務，以供本機開發或作為您自己基礎結構的一部分。
 
+>[!NOTE]
+>
+>使用AEM製作與Edge Delivery Services的專案不需要或支援本機通用編輯器服務。
+
 ## 概觀 {#overview}
 
 Universal Editor 服務綁定 Universal Editor 和後端系統。若要能夠在本機開發Universal Editor，您必須執行Universal Editor服務的本機復本。 原因如下：
 
-* Adobe的官方Universal Editor服務託管於全球各地，而您的本機AEM執行個體必須向網際網路公開。
+* Adobe的官方Universal Editor服務於全球各地託管，而您的本機AEM執行個體必須公開至網際網路。
 * 使用本機AEM SDK進行開發時，無法從網際網路存取Adobe的Universal Editor Service 。
-* 如果您的AEM執行個體有IP限制，而Adobe的Universal Editor服務不在定義的IP範圍內，則您可以自行託管。
+* 如果您的AEM執行個體有IP限制，而Adobe的Universal Editor服務不在定義的IP範圍內，您可以自行託管。
 
 ## 使用案例 {#use-cases}
 
 如果您想要：
 
 * 在AEM上本機開發，以便與通用編輯器搭配使用。
-* 執行您自己的通用編輯器服務，作為您自己的基礎結構的一部分，獨立於Adobe的通用編輯器服務。
+* 將您自己的Universal Editor服務當成您自己的基礎結構的一部分來執行，獨立於Adobe的Universal Editor服務。
 
-支援這兩個使用案例。 本檔案說明如何在HTTPS中搭配Universal Editor服務的本機復本執行AEM。
+支援這兩個使用案例。 本檔案說明如何在HTTPS中執行AEM以及通用編輯器服務的本機復本。
 
 如果您想要將自己的通用編輯器服務當做自己基礎結構的一部分來執行，您將遵循與本機開發範例相同的步驟。
 
@@ -41,11 +45,11 @@ Universal Editor 服務綁定 Universal Editor 和後端系統。若要能夠在
 
 為此，您需要將 AEM 設定為在 HTTPS 上執行。出於開發目的，您可以使用自我簽署憑證。
 
-[請參閱此檔案](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/use-the-ssl-wizard.html)，瞭解如何設定在HTTPS上執行的AEM，包括您可以使用的自我簽署憑證。
+[請參閱此檔案](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/use-the-ssl-wizard.html)，瞭解如何設定在HTTPS上執行的AEM，包括您可使用的自我簽署憑證。
 
 ## 安裝 Universal Editor 服務 {#install-ue-service}
 
-Universal Editor服務並非Universal Editor的完整復本，而是其功能的子集，以確保不會透過網際網路路由來自您本機AEM環境的呼叫，而是從您控制的已定義端點路由呼叫。
+Universal Editor服務並非Universal Editor的完整復本，而是其功能的子集，可確保不會透過網際網路路由來自本機AEM環境的呼叫，而會從您控制的已定義端點路由呼叫。
 
 需要[NodeJS版本20](https://nodejs.org/en/download/releases)才能執行通用編輯器服務的本機復本。
 
