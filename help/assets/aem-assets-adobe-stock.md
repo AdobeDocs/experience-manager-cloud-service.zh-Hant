@@ -5,9 +5,9 @@ contentOwner: Vishabh Gupta
 feature: Adobe Stock
 role: Admin, User
 exl-id: 13f21d79-2a8d-4cb1-959e-c10cc44950ea
-source-git-commit: 3d95dd29cf1b7d6c7056c91e062a5f7eb48cc322
+source-git-commit: fecaefbb6a02e944be38c3dfaa3baea5691219cd
 workflow-type: tm+mt
-source-wordcount: '2273'
+source-wordcount: '2254'
 ht-degree: 6%
 
 ---
@@ -68,16 +68,16 @@ ht-degree: 6%
 
 符合下列要求才能啟用此整合：
 
-* 以[!DNL Cloud Service]執行個體形式啟動並執行[!DNL Experience Manager Assets]
-* [企業 [!DNL Adobe Stock] 計畫](https://stockenterprise.adobe.com/)
-* 在[!DNL Admin Console]中擁有預設Stock產品設定檔許可權的使用者
-* 擁有在[!DNL Adobe Developer Console]中建立整合之[!DNL Developer Access profile]許可權的使用者
+* 以[!DNL Cloud Service]執行個體形式啟動並執行[!DNL Experience Manager Assets]。
+* 企業[!DNL Adobe Stock]計畫。
+* 在[!DNL Admin Console]中擁有預設Stock產品設定檔許可權的使用者。
+* 擁有在[!DNL Adobe Developer Console]中建立整合之[!DNL Developer Access profile]許可權的使用者。
 
 企業[!DNL Adobe Stock]計畫，
 
-* 提供[!DNL Adobe Stock]的產品權益(與Experience Manager連結的庫存)
-* 針對您的股票權益購買到[!DNL Adobe Admin Console]的積分
-* 啟用從[!DNL Adobe Admin Console]內全域管理信用額度與授權
+* 提供[!DNL Adobe Stock]的產品權益(與Experience Manager連結的庫存)。
+* 針對您的股票權益購買到[!DNL Adobe Admin Console]的積分。
+* 啟用從[!DNL Adobe Admin Console]內全域管理信用額度與授權。
 
 在權益中，[!DNL Adobe Stock]的預設產品設定檔存在於[!DNL Admin Console]中。 可建立多個設定檔，這些設定檔決定誰可以授權Stock資產。 直接存取產品設定檔的使用者可以存取[https://stock.adobe.com/](https://stock.adobe.com/)並授權Stock資產。 而有其他方法可使用開發人員存取權建立整合(API)。 此整合會驗證[!DNL Experience Manager Assets]與[!DNL Adobe Stock]之間的通訊。
 
@@ -91,9 +91,10 @@ ht-degree: 6%
 1. Click **[!UICONTROL Create new project]** and click **[!UICONTROL Add API]**. Select **[!UICONTROL Adobe Stock]** from the list of APIs that are available to you. Select [!UICONTROL OAUTH 2.0 Web].
 1. Provide **[!UICONTROL Default redirect URI]** and **[!UICONTROL Redirect URI pattern]** values. Click **[!UICONTROL Save configured API]**. Copy the generated ID and secret.
 1. In [!UICONTROL Adobe IMS Technical Account Configuration] screen, provide the values in the boxes titled **[!UICONTROL Title]**, **[!UICONTROL Authorization Server]**, **[!UICONTROL API Key]**, **[!UICONTROL Client Secret]**, and **[!UICONTROL Payload]**. For detailed information about these values, see [JWT authentication quick start](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/JWT/JWT.md).
-
 -->
-<!-- TBD: Update the URL to update the terminology when AIO team updates their documentation URL. Logged issue github.com/AdobeDocs/adobeio-auth/issues/63.
+
+<!-- 
+TBD: Update the URL to update the terminology when AIO team updates their documentation URL. Logged issue github.com/AdobeDocs/adobeio-auth/issues/63.
 -->
 
 <!--
@@ -268,10 +269,13 @@ To configure the IMS account:
    * **[!UICONTROL 雲端解決方案]**：選取&#x200B;**[!UICONTROL Adobe Stock]**。
    * **[!UICONTROL 標題]**：指定此整合的名稱。
    * **[!UICONTROL 授權伺服器]**：新增[https://ims-na1.adobelogin.com/](https://ims-na1.adobelogin.com/)做為授權伺服器。
-   * **[!UICONTROL 使用者端ID]**：瀏覽至您專案的&#x200B;**[!UICONTROL OAuth伺服器對伺服器認證詳細資料]**&#x200B;頁面，並複製&#x200B;**[!UICONTROL 使用者端ID]**，然後在此處貼上(請參閱[在Developer Console中設定程式](#set-up-a-program-in-developer-console)區段中的步驟7)。
-   * **[!UICONTROL 使用者端密碼]**：瀏覽至您專案的&#x200B;**[!UICONTROL OAuth伺服器對伺服器認證詳細資料]**&#x200B;頁面，然後按一下&#x200B;**[!UICONTROL 擷取使用者端密碼]**，複製&#x200B;**[!UICONTROL 使用者端密碼]**&#x200B;並貼到這裡(請參閱[在Developer Console](#set-up-a-program-in-developer-console)區段中設定程式區段中的步驟7)。
-   * **[!UICONTROL 範圍]**：瀏覽至專案的&#x200B;**[!UICONTROL OAuth伺服器對伺服器認證詳細資料]**&#x200B;頁面，複製&#x200B;**[!UICONTROL 範圍]**&#x200B;並在此處貼上(請參閱[在Developer Console中設定程式](#set-up-a-program-in-developer-console)區段中的步驟7)。
-   * **[!UICONTROL 組織ID]**：導覽至您專案的&#x200B;**[!UICONTROL OAuth伺服器對伺服器認證詳細資料]**&#x200B;頁面，複製&#x200B;**[!UICONTROL 組織ID]**&#x200B;並在此處貼上(請參閱[在Developer Console中設定程式](#set-up-a-program-in-developer-console)區段中的步驟7)。
+   * **[!UICONTROL 使用者端ID]**：瀏覽至您的專案儀表板，按一下左窗格中可用的&#x200B;**[!UICONTROL OAuth伺服器對伺服器]**&#x200B;選項，選取&#x200B;**[!UICONTROL 認證詳細資料]**，複製&#x200B;**[!UICONTROL 使用者端ID]**&#x200B;並貼至此處（請參閱[步驟7](#set-up-a-program-in-developer-console)）。
+
+   * **[!UICONTROL 使用者端密碼]**：瀏覽至您的專案儀表板，按一下左窗格中可用的&#x200B;**[!UICONTROL OAuth伺服器對伺服器]**&#x200B;選項，選取&#x200B;**[!UICONTROL 認證詳細資料]**，按一下&#x200B;**[!UICONTROL 擷取使用者端密碼]**，複製&#x200B;**[!UICONTROL 使用者端密碼]**&#x200B;並貼至此處（請參閱[步驟7](#set-up-a-program-in-developer-console)）。
+
+   * **[!UICONTROL 領域]**：瀏覽至您的專案儀表板，按一下左窗格中可用的&#x200B;**[!UICONTROL OAuth伺服器對伺服器]**&#x200B;選項，選取&#x200B;**[!UICONTROL 認證詳細資料]**，複製&#x200B;**[!UICONTROL 領域]**&#x200B;並貼至此處（請參閱[步驟7](#set-up-a-program-in-developer-console)）。
+
+   * **[!UICONTROL 組織ID]**：瀏覽至您的專案儀表板，按一下左窗格中可用的&#x200B;**[!UICONTROL OAuth伺服器對伺服器]**&#x200B;選項，選取&#x200B;**[!UICONTROL 認證詳細資料]**，複製&#x200B;**[!UICONTROL 組織ID]**&#x200B;並貼至此處（請參閱[步驟7](#set-up-a-program-in-developer-console)）。
      ![aem assets和adobe stock](/help/assets/assets/adobe-ims-technical-account-configuration.png)
 1. 按一下「**[!UICONTROL 建立]**」，**[!UICONTROL Adobe IMS設定]**&#x200B;頁面會開啟並顯示您建立的[!DNL Adobe Stock]整合。
 
@@ -283,7 +287,7 @@ To configure the IMS account:
 1. 按一下![aem assets和adobe stock](/help/assets/assets/Hammer.svg)，選取&#x200B;**[!UICONTROL 雲端服務]**，瀏覽並選取&#x200B;**[!UICONTROL Adobe Stock]**。
    ![搭配aem](/help/assets/assets/adding-cloud-config-to-adobe-stock.png)使用adobe stock
 1. 按一下「**[!UICONTROL 建立]**」，**[!UICONTROL Adobe Stock組態]**&#x200B;頁面會顯示多個欄位。 請依照下列指示，在這些欄位中指定詳細資料：
-   * **[!UICONTROL 標題]**：在[在您的AEM作者執行個體中設定Adobe Stock IMS設定時，請指定在&#x200B;**[!UICONTROL Adobe IMS技術帳戶設定]**&#x200B;頁面中使用的相同標題名稱](#set-up-adobe-stock-ims-configuration-in-aem-author-instance)。
+   * **[!UICONTROL 標題]**：導覽至&#x200B;**[!UICONTROL Adobe IMS技術帳戶設定]**&#x200B;頁面（請參閱[步驟3](#set-up-adobe-stock-ims-configuration-in-aem-author-instance)），複製標題並貼到這裡。
    * **[!UICONTROL 關聯的Adobe IMS設定]**：選取您建立的[!DNL Adobe Stock]整合。
    * **[!UICONTROL 地區設定]**：選取&#x200B;**[!UICONTROL 英文（美國）]**。
 1. 按一下「**[!UICONTROL 儲存並關閉]**」。
