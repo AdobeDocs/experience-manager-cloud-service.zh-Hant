@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 2ec16c91-0195-4732-a26d-ac223e10afb9
-source-git-commit: e3a8afaee6c3baeb593eb69a46648b0a8d2a069f
+source-git-commit: a764a9d1e7d9fcd0be6abf9e2fb409346dc0f549
 workflow-type: tm+mt
-source-wordcount: '1075'
+source-wordcount: '1073'
 ht-degree: 8%
 
 ---
@@ -87,7 +87,7 @@ ht-degree: 8%
    | 選項 | 步驟 |
    | --- | --- |
    | 設定 A 記錄 | 建議用於根網域，例如`example.com`<br><ol><li>登入您的DNS服務提供者的入口網站。<li>前往DNS記錄區段。<li>建立A記錄以指向所有列出的IP位址。</li></ol> |
-   | 設定 CNAME | 建議用於自訂網域，例如`www.example.com`<br><ol><li>登入您的DMS服務提供者的入口網站。<li>前往DNS記錄區段。<li>將[cdn.adobeaemcloud.com](https://cdn.adobeaemcloud.com/) （CNAME記錄）對應到DNS服務提供者（您的自訂網域）的DNS記錄中。 此對應程式可確保將從自訂網域收到的請求重新導向至Adobe的CDN。</li></ol> |
+   | 設定 CNAME | 建議用於自訂網域，例如`www.example.com`<br><ol><li>登入您的DMS服務提供者的入口網站。<li>前往DNS記錄區段。<li>對應DNS服務提供者（您的自訂網域）之DNS記錄中的`cdn.adobeaemcloud.com` （CNAME記錄）。 此對應程式可確保將從自訂網域收到的請求重新導向至Adobe的CDN。</li></ol> |
 
 1. 在&#x200B;**上線整備**&#x200B;對話方塊中，按一下&#x200B;**確定**&#x200B;以儲存記錄。
 
