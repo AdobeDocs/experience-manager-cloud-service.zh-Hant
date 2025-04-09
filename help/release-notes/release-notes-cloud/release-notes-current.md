@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 5a1c951813e026806aa3b5b23a912a48681f4505
+source-git-commit: bbf66195593032eb2ccf073ec78685c9d9726235
 workflow-type: tm+mt
-source-wordcount: '1072'
-ht-degree: 74%
+source-wordcount: '1092'
+ht-degree: 63%
 
 ---
 
@@ -50,9 +50,18 @@ Have a look at the February 2025 Release Overview video for a summary of the fea
 
 使用Dynamic Media搭配Open API傳送的視訊的&#x200B;**長格式支援**
 
-含OpenAPI的Dynamic Media現在支援長格式視訊。 長格式視訊最多可支援50 GB和2小時。
+含OpenAPI的Dynamic Media現在支援長格式視訊。 長格式視訊最多可支援50GB和2小時。
 
-### Assets 檢視的新功能 {#new-features-assets-view}
+### Dynamic Media Classic {#dmc}
+
+<!-- CARRY OVER TO APRIL 2025 RELEASE NOTES -->
+
+自2025年4月起，Dynamic Media Classic報告儀表板中的頻寬索引標籤不再受支援。
+
+請參閱[頻寬和儲存空間，報表型別](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/setup/administration-setup#types-of-reports)。
+
+
+## Assets 檢視的新功能 {#new-features-assets-view}
 
 
 **支援根標籤**
@@ -75,19 +84,19 @@ AEM Forms 搶先體驗計劃為您提供獨一無二的機會，獲得先進創�
 
 #### 增強雲端儲存空間支援：將 PDF 直接上傳至 Azure Blob 儲存體
 
-您現在可以透過 AEM Forms 的文件產生 API，[將產生的 PDF 文件直接上傳](/help/forms/early-access-ea-features.md#doc-generation-api)至 Azure Blob 儲存體。此增強功能簡化了儲存和檢索過程，進而提高效率並改善與雲端工作流程的整合。
+AEM Forms Document Generation API現在可讓您[直接將產生的PDF檔案](/help/forms/early-access-ea-features.md#doc-generation-api)上傳到Azure Blob儲存體。 此增強功能簡化了儲存和檢索過程，進而提高效率並改善與雲端工作流程的整合。
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
 ### 支援 Java 21 {#java21}
 
-如 1 月發行說明中所述，您現在可以使用 Java 21 建置程式碼，其中包括新功能 (例如 switch 陳述式的模式比對、密封類別) 和效能改進；也為 Java 17 版本提供全新支援。若要了解設定步驟 (包括更新 Maven 專案和資料庫版本)，請參閱「[建置環境](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#using-java-support)」文章。
+自1月發行版本起，您可以使用Java 21和Java 17來建置程式碼。 您可以存取新功能，例如模式比對、密封類別和各種效能改進。 如需設定步驟，包括更新您的Maven專案和程式庫版本，請參閱[組建環境](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#using-java-support)文章。
 
-當偵測到 Java 17 或 21 版本時，效能較佳的 Java 21 **執行階段**&#x200B;會自動部署。但是，對於建置在 Java 11 上的環境，我們也建議選擇使用 Java 21 執行階段，請寄送電子郵件至 [aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com)。了解 [Java 21 執行階段要求](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)。
+偵測到Java 17或21組建時，會自動部署效能較高的Java 21 **執行階段**。 不過，Adobe也建議選擇使用Java 11建立的環境使用Java 21執行階段，方法是傳送電子郵件至[aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com)。 了解 [Java 21 執行階段要求](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)。
 
 >[!IMPORTANT]
 >
-> Java 21 **執行階段**&#x200B;已在2月部署至您的開發/RDE環境；它將於4月28日和29日&#x200B;**套用至您的中繼/生產環境。**&#x200B;請注意，**使用Java 21 （或Java 17）建置程式碼**&#x200B;獨立於Java 21執行階段 — 您必須明確採取步驟使用Java 21 （或Java 17）建置程式碼。
+> Java 21 **執行階段**&#x200B;已在2月部署至您的開發/RDE環境；它將於4月28日和29 **套用至您的中繼/生產環境。**&#x200B;請注意，**使用Java 21 （或Java 17）建置程式碼**&#x200B;獨立於Java 21執行階段 — 您必須明確採取步驟使用Java 21 （或Java 17）建置程式碼。
 
 ### AEM記錄轉寄到更多目的地 — Beta計畫 {#log-forwarding-earlyadopter}
 
@@ -102,6 +111,7 @@ AEM Forms 搶先體驗計劃為您提供獨一無二的機會，獲得先進創�
 邊緣運算可讓資料處理更接近瀏覽器，其優點包括減少延遲。Adobe 想要知道，您覺得這項技術對於 AEM Publish Delivery 和 Edge Delivery Services 專案來說是否實用。此外，我們也想知道您預計會如何使用它，以作為我們擬定產品路徑圖的參考。
 
 一些可能的使用案例：
+
 * 使用 IdP 進行驗證以控制內容存取
 * 根據地理位置、裝置類型、使用者屬性等，轉譯動態 (個人化、本地化) 內容。
 * 進階影像處理
@@ -115,7 +125,7 @@ AEM Forms 搶先體驗計劃為您提供獨一無二的機會，獲得先進創�
 
 開發人員可以將 AEM as Cloud Service 功能深度整合到自己的應用程式和工具中。新的 AEM as a Cloud Service API 將會遵循 OpenAPI 規範，目標是維持一致性、妥善記錄且簡單易用。建立 Adobe Developer Console 專案，便會產生需要驗證之端點的憑證。
 
-了解更多有關 [基於 OpenAPI 的 AEM API](/help/implementing/developing/open-api-based-apis.md) 的資訊，並試用一堂說明設定和使用方法的[端對端教學課程](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis)。
+了解更多有關 [基於 OpenAPI 的 AEM API](/help/implementing/developing/open-api-based-apis.md) 的資訊，並試用一堂說明設定和使用方法的[端對端教學課程](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/openapis/invoke-api-using-oauth-s2s)。
 
 具體來說，以下列出的 API 端點可做為早期採用者方案的一部分。如果有興趣，請寄電子郵件至 [aem-apis@adobe.com](mailto:aem-apis@adobe.com)，並說明您預計如何使用它們。
 
@@ -132,7 +142,10 @@ AEM Forms 搶先體驗計劃為您提供獨一無二的機會，獲得先進創�
 
 ## [!DNL Experience Manager] Guides {#guides}
 
-您可以在[這裡](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2410-release/2410-0-release/whats-new-2024-10-0)找到最新版 Adobe Experience Manager Guides 的新功能和增強功能完整清單。
+您可以在[這裡](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2025-releases/2502-release/whats-new-2025-02-0)找到最新版 Adobe Experience Manager Guides 的新功能和增強功能完整清單。
+
+<!-- THE FOLLOWING URL WAS USED ABOVE BUT IT WAS 404. IT WAS REPLACED WITH THE URL ABOVE 
+(https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2410-release/2410-0-release/whats-new-2024-10-0). -->
 
 ## Cloud Manager {#cloud-manager}
 
