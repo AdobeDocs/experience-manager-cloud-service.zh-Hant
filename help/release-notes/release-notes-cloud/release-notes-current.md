@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: bbf66195593032eb2ccf073ec78685c9d9726235
 workflow-type: tm+mt
 source-wordcount: '1092'
-ht-degree: 63%
+ht-degree: 84%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 63%
 
 ## 發行日期 {#release-date}
 
-[!DNL Adobe Experience Manager]作為[!DNL Cloud Service]目前功能版本(2025.3.0)的發行日期是2025年3月27日。 下一個功能版本(2025.4.0)計畫於2025年4月24日發行。
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 最新功能版本 (2025.3.0) 的發行日期為 2025 年 3 月 27 日。下一個功能版本 (2025.4.0) 已規劃於 2025 年 4 月 24 日發行。
 
 ## 維護版本發行說明 {#maintenance}
 
@@ -46,11 +46,11 @@ Have a look at the February 2025 Release Overview video for a summary of the fea
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### Dynamic Media中的新功能 {#new-features-dynamic-media}
+### Dynamic Media 中的新功能 {#new-features-dynamic-media}
 
-使用Dynamic Media搭配Open API傳送的視訊的&#x200B;**長格式支援**
+**支援使用具有 Open API 功能的 Dynamic Media 傳送的長格式影片**
 
-含OpenAPI的Dynamic Media現在支援長格式視訊。 長格式視訊最多可支援50GB和2小時。
+具有 OpenAPI 功能的 Dynamic Media 現在支援長格式影片。長格式視訊最多可支援50GB和2小時。
 
 ### Dynamic Media Classic {#dmc}
 
@@ -64,9 +64,9 @@ Have a look at the February 2025 Release Overview video for a summary of the fea
 ## Assets 檢視的新功能 {#new-features-assets-view}
 
 
-**支援根標籤**
+**支援根標記**
 
-AEM Assets現在支援將中繼資料表單中的標籤屬性對應至自訂中繼資料。 此外，身為管理員，您可以限制存取特定根標籤和根標籤下存在的標籤，藉此限制使用者的標籤可用性。
+AEM Assets 現在支援將後設資料表單的標記屬性對應到自訂中繼資料。此外，身為管理員，您可以限制對特定根標記及其下存在的標記之存取，藉此限制使用者可以使用哪些標記。
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -96,15 +96,15 @@ AEM Forms Document Generation API現在可讓您[直接將產生的PDF檔案](/h
 
 >[!IMPORTANT]
 >
-> Java 21 **執行階段**&#x200B;已在2月部署至您的開發/RDE環境；它將於4月28日和29 **套用至您的中繼/生產環境。**&#x200B;請注意，**使用Java 21 （或Java 17）建置程式碼**&#x200B;獨立於Java 21執行階段 — 您必須明確採取步驟使用Java 21 （或Java 17）建置程式碼。
+> Java 21 **執行階段**&#x200B;已在2月部署至您的開發/RDE環境；它將於4月28日和29 **套用至您的中繼/生產環境。**&#x200B;請注意，使用 Java 21 (或 Java 17) **建置程式碼** 與 Java 21 執行階段無關 - 您必須明確地採取步驟，使用 Java 21 (或 Java 17) 來建置程式碼。
 
-### AEM記錄轉寄到更多目的地 — Beta計畫 {#log-forwarding-earlyadopter}
+### AEM 記錄轉送至更多目標 - Beta 版方案 {#log-forwarding-earlyadopter}
 
-現在處於Beta版，您可以將AEM記錄轉送至New Relic （使用HTTPS）、Amazon S3和Sumo Logic。 請注意，支援AEM記錄(包括Apache/Dispatcher)，但不支援CDN記錄。 電子郵件[aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com)以取得存取權。
+現在提供 Beta 版，您可以將 AEM 記錄轉送至 New Relic (使用 HTTPS)、Amazon S3 和 Sumo Logic。請注意，支援 AEM 記錄 (包括 Apache/Dispatcher)，但不支援 CDN 記錄。發送電子郵件至 [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) 以獲得存取權。
 
-雖然可從Cloud Manager下載記錄檔，但許多組織發現將這些記錄檔串流至偏好的記錄目的地會很有幫助。 AEM已支援(GA) AEM和CDN記錄轉送至Azure Blob Storage、Datadog、HTTPS、Elasticsearch （和OpenSearch）和Splunk。 此功能以自助方式設定，並使用設定管道進行部署。
+雖然可以從 Cloud Manager 下載記錄，但許多組織發現將這些記錄串流至偏好的記錄目標是很有幫助的。AEM 已經支援將 (GA) AEM 和 CDN 記錄轉送到 Azure Blob 儲存體、Datadog、HTTPS、Elasticsearch (和 OpenSearch) 以及 Splunk。此功能是以自助方式設定，並透過設定管道進行部署。
 
-在[記錄檔轉送檔案](/help/implementing/developing/introduction/log-forwarding.md)中進一步瞭解。
+如需了解更多，請參閱[記錄轉送文件](/help/implementing/developing/introduction/log-forwarding.md)。
 
 ### 邊緣運算 - 請求意見回饋！ {#edge-computing-feedback}
 
