@@ -4,7 +4,7 @@ description: 了解 AEM as a Cloud Service 中 Cloud Manager 2025.4.0 的發行�
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 75afe77aa52c4c308dc1a611e4ce544a9c9c3da2
+source-git-commit: 6dc92a0f824ca9bc3726b48581ace232302691e5
 workflow-type: tm+mt
 source-wordcount: '814'
 ht-degree: 60%
@@ -73,7 +73,6 @@ AEM 首頁可供早期採用者使用，提供專注於提升工作流程、確�
 * 最適合您個人資料的角色：內容作者、開發人員、業務負責人、管理員或其他 (請提供說明)。
 * 您的主要 AEM 存取表面：AEM Sites、AEM Assets、AEM Forms、Cloud Manager 或其他 (請提供說明)。
 
-
 ## 錯誤修正
 
 * **憑證遺失一般名稱(CN)欄位的問題**
@@ -90,3 +89,4 @@ AEM 首頁可供早期採用者使用，提供專注於提升工作流程、確�
 
 
 <!-- ## Known issues {#known-issues} -->
+
