@@ -4,10 +4,10 @@ description: 瞭解如何使用WYSIWYG範本編輯器建立動態媒體範本，
 hide: true
 role: User
 exl-id: 07de648e-4ae2-4524-8e05-3cf10bb6006d
-source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
+source-git-commit: 3d0e3430b886cefb9b18188641483d23ce66d442
 workflow-type: tm+mt
-source-wordcount: '2834'
-ht-degree: 1%
+source-wordcount: '3050'
+ht-degree: 2%
 
 ---
 
@@ -16,19 +16,19 @@ ht-degree: 1%
 <table>
     <tr>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>全新</i></sup><a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 與 Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>全新</i></sup><a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets與Edge Delivery Services整合</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>全新</i></sup><a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets 與 Edge Delivery Services 整合</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI擴充性</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>全新</i></sup><a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>使用者介面可擴充性</b></a>
         </td>
           <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>啟用Dynamic Media Prime和Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>全新</i></sup><a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>啟用 Dynamic Media Prime 與 Ultimate</b></a>
         </td>
     </tr>
     <tr>
@@ -305,6 +305,41 @@ Dynamic Media範本的一些主要優點包括：
 2. 導覽至範本位置。
 3. 選取範本。
 4. 按一下&#x200B;**[!UICONTROL 編輯範本]**。 範本畫布會在「圖層」面板中顯示範本及其所有圖層的清單。 根據您的需求開始編輯範本。
+
+## 將行動號召連結新增至範本層{#add-CTA-in-dynamic-media-templates}
+
+將Dynamic Media範本的任何影像或文字圖層轉換為超連結，方法是在其中新增CTA連結，將使用者導向目標頁面。 執行以下步驟，將CTA連結新增至圖層：
+
+1. 導覽至您的範本位置，選取範本並按一下![編輯](/help/assets/assets/edit-pen-icon.svg) **[!UICONTROL 編輯範本]**。 範本會顯示在畫布上。
+1. 選取範本圖層並[導覽至其屬性面板](#edit-or-delete-a-layer)以新增CTA連結至該圖層。
+1. 在屬性面板上，選取&#x200B;**[!UICONTROL 新增CTA]**，在&#x200B;**[!UICONTROL URL]**&#x200B;欄位中指定目的地URL，然後按一下&#x200B;**[!UICONTROL 儲存]**。
+   ![新增CTA](/help/assets/assets/add-cta.png){width="300" align="center"}
+1. 按一下&#x200B;**[!UICONTROL 預覽]**&#x200B;以預覽您的範本並檢視其定義的引數。
+1. 按一下&#x200B;**[!UICONTROL 發佈]**&#x200B;並選取&#x200B;**[!UICONTROL 是]**&#x200B;發佈您的範本（若未更早發佈）。
+1. 導覽至儲存此範本的資料夾，選取此範本並按一下![詳細資料頁面](/help/assets/assets/details-page-icon.svg) **[!UICONTROL 詳細資料]**。
+1. 按一下&#x200B;**[!UICONTROL 複製選項]**&#x200B;並選取&#x200B;**[!UICONTROL 複製內嵌程式碼]**。
+
+   ![複製內嵌程式碼](/help/assets/assets/copy-options1.png){width="300" align="center"}
+
+   以下是內嵌程式碼的範例：
+
+   ```json
+    <div class="adobe-dynamicmedia-template-embed-container">
+    <img id="adobe-dynamicmedia-template-image" src="http://s7ap1.scene7.com/is/image/abcd/dm-template-cta-v2?wid=800&hei=300&qlt=100&fit=constrain&cache=off" alt="adobe dynamicmedia template" usemap="#adobe-dynamicmedia-template-map" width="800" height="300">
+    <map name="adobe-dynamicmedia-template-map">
+    <area shape="rect" coords="417,-60,817,340" href="https://business.adobe.com/products.html" alt="Layer with CTA" title="https://business.adobe.com/products.html" target="_blank">
+    <area shape="rect" coords="6,206.57,129,231.43" href="https://business.adobe.com/products.html" alt="Layer with CTA" title="https://business.adobe.com/products.html" target="_blank">
+    </map>
+    </div>
+   ```
+
+1. 將複製的內嵌程式碼新增至網站的HTML檔案，並在瀏覽器中執行以顯示範本。
+
+按一下範本上的CTA元素，即可導覽至目的地頁面。
+
+觀看此逐步影片，瞭解如何將CTA連結新增至範本圖層。
+
+>[!VIDEO](https://video.tv.adobe.com/v/3457577)
 
 ## 需要注意的重要事項 {#important-points-to-note}
 
