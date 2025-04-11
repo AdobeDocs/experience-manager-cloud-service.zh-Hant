@@ -4,7 +4,7 @@ description: 瞭解如何使用WYSIWYG範本編輯器建立動態媒體範本，
 hide: true
 role: User
 exl-id: 07de648e-4ae2-4524-8e05-3cf10bb6006d
-source-git-commit: 362bbcf872a37781dfa849b703425f49c30660ac
+source-git-commit: 7bb15e0b8aa24f9737f70f86c78dc09be1ea4750
 workflow-type: tm+mt
 source-wordcount: '3050'
 ht-degree: 2%
@@ -314,7 +314,7 @@ Dynamic Media範本的一些主要優點包括：
 1. 選取範本圖層並[導覽至其屬性面板](#edit-or-delete-a-layer)以新增CTA連結至該圖層。
 1. 在屬性面板上，選取&#x200B;**[!UICONTROL 新增CTA]**，在&#x200B;**[!UICONTROL URL]**&#x200B;欄位中指定目的地URL，然後按一下&#x200B;**[!UICONTROL 儲存]**。
 
-![新增CTA](/help/assets/assets/add-cta.png)
+   ![新增CTA](/help/assets/assets/add-cta.png)
 
 1. 按一下&#x200B;**[!UICONTROL 預覽]**&#x200B;以預覽您的範本並檢視其定義的引數。
 1. 按一下&#x200B;**[!UICONTROL 發佈]**&#x200B;並選取&#x200B;**[!UICONTROL 是]**&#x200B;發佈您的範本（若未更早發佈）。
@@ -327,7 +327,7 @@ Dynamic Media範本的一些主要優點包括：
 
    ```json
     <div class="adobe-dynamicmedia-template-embed-container">
-    <img id="adobe-dynamicmedia-template-image" src="http://s7ap1.scene7.com/is/image/abcd/dm-template-cta-v2?wid=800&hei=300&qlt=100&fit=constrain&cache=off" alt="adobe dynamicmedia template" usemap="#adobe-dynamicmedia-template-map" width="800" height="300">
+    <img id="<Image ID>>" src="<Image Source>>" alt="adobe dynamicmedia template" usemap="#adobe-dynamicmedia-template-map" width="800" height="300">
     <map name="adobe-dynamicmedia-template-map">
     <area shape="rect" coords="417,-60,817,340" href="https://business.adobe.com/products.html" alt="Layer with CTA" title="https://business.adobe.com/products.html" target="_blank">
     <area shape="rect" coords="6,206.57,129,231.43" href="https://business.adobe.com/products.html" alt="Layer with CTA" title="https://business.adobe.com/products.html" target="_blank">
