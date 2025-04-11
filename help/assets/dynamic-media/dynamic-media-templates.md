@@ -4,7 +4,7 @@ description: 瞭解如何使用WYSIWYG範本編輯器建立動態媒體範本，
 hide: true
 role: User
 exl-id: 07de648e-4ae2-4524-8e05-3cf10bb6006d
-source-git-commit: 3d0e3430b886cefb9b18188641483d23ce66d442
+source-git-commit: 362bbcf872a37781dfa849b703425f49c30660ac
 workflow-type: tm+mt
 source-wordcount: '3050'
 ht-degree: 2%
@@ -313,13 +313,15 @@ Dynamic Media範本的一些主要優點包括：
 1. 導覽至您的範本位置，選取範本並按一下![編輯](/help/assets/assets/edit-pen-icon.svg) **[!UICONTROL 編輯範本]**。 範本會顯示在畫布上。
 1. 選取範本圖層並[導覽至其屬性面板](#edit-or-delete-a-layer)以新增CTA連結至該圖層。
 1. 在屬性面板上，選取&#x200B;**[!UICONTROL 新增CTA]**，在&#x200B;**[!UICONTROL URL]**&#x200B;欄位中指定目的地URL，然後按一下&#x200B;**[!UICONTROL 儲存]**。
-   ![新增CTA](/help/assets/assets/add-cta.png){width="300" align="center"}
+
+![新增CTA](/help/assets/assets/add-cta.png)
+
 1. 按一下&#x200B;**[!UICONTROL 預覽]**&#x200B;以預覽您的範本並檢視其定義的引數。
 1. 按一下&#x200B;**[!UICONTROL 發佈]**&#x200B;並選取&#x200B;**[!UICONTROL 是]**&#x200B;發佈您的範本（若未更早發佈）。
 1. 導覽至儲存此範本的資料夾，選取此範本並按一下![詳細資料頁面](/help/assets/assets/details-page-icon.svg) **[!UICONTROL 詳細資料]**。
 1. 按一下&#x200B;**[!UICONTROL 複製選項]**&#x200B;並選取&#x200B;**[!UICONTROL 複製內嵌程式碼]**。
 
-   ![複製內嵌程式碼](/help/assets/assets/copy-options1.png){width="300" align="center"}
+   ![複製內嵌程式碼](/help/assets/assets/copy-options1.png)
 
    以下是內嵌程式碼的範例：
 
