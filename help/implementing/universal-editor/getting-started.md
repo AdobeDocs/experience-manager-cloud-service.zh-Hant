@@ -4,10 +4,10 @@ description: 了解如何存取 Universal Editor，以及如何開始檢測您�
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 07a8ad6083dbb7cf69148773d266b33e8cf32a38
+source-git-commit: 722d9a14ccac2f9f1c6dd32455935bafc4897a68
 workflow-type: tm+mt
-source-wordcount: '1018'
-ht-degree: 36%
+source-wordcount: '981'
+ht-degree: 37%
 
 ---
 
@@ -124,9 +124,7 @@ data-aue-resource="urn:<referenceName>:<resource>"
 
 如果您有使用[頁面編輯器](/help/sites-cloud/authoring/page-editor/introduction.md)的現有AEM專案，內容作者編輯頁面時，頁面會自動使用頁面編輯器開啟。 您可以根據內容路徑或`sling:resourceType`定義應開啟AEM的編輯器，讓您的作者獲得流暢的體驗，無論所選內容需要哪個編輯器。
 
-1. 若要使用此設定功能，請聯絡Adobe客戶服務，為您的方案啟用對通用編輯器URL服務的存取權。
-
-1. 一旦客戶服務啟用了通用編輯器URL服務的存取權，請開啟Configuration Manager。
+1. 開啟Configuration Manager。
 
    `http://<host>:<port>/system/console/configMgr`
 
