@@ -4,10 +4,10 @@ description: 了解  [!DNL Assets view] 中的使用者介面和導覽
 role: User
 exl-id: 1e71ea7d-fee7-4ed0-bb80-d537b57fc823
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: f4d0364439d704d4f5611b5fa2f46428048005b0
 workflow-type: tm+mt
 source-wordcount: '1026'
-ht-degree: 72%
+ht-degree: 75%
 
 ---
 
@@ -16,19 +16,19 @@ ht-degree: 72%
 <table>
     <tr>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>全新</i></sup><a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 與 Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>全新</i></sup><a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets與Edge Delivery Services整合</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>全新</i></sup><a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets 與 Edge Delivery Services 整合</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI擴充性</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>全新</i></sup><a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>使用者介面可擴充性</b></a>
         </td>
           <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>啟用Dynamic Media Prime和Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>全新</i></sup><a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>啟用 Dynamic Media Prime 與 Ultimate</b></a>
         </td>
     </tr>
     <tr>
@@ -113,7 +113,7 @@ ht-degree: 72%
 
 ![預覽資產](/help/assets/assets/navigate-file-folder-dm.png)
 
-**A**：回到儲存庫中的目前資料夾或目前的搜尋結果&#x200B;**B**：您正在預覽的檔案的名稱和格式&#x200B;**C**：指派工作&#x200B;**D**：進階中繼資料&#x200B;**E**：關鍵字和智慧標籤&#x200B;**F**：註解及註釋&#x200B;**G**：檢視與所選資產相關的工作&#x200B;**H**：檢視及管理版本&#x200B;**I**：檢視影像轉譯&#x200B;**J**：編輯影象&#x200B;**K**：通過OpenAPI功能呈現檢視Dynamic Media呈現版本，包括Smart Crop和Dynamic Media。 **L**：基本中繼資料&#x200B;**M**：進階中繼資料&#x200B;**N**：關鍵字和智慧標籤&#x200B;**O**：繼續目前資料夾中的上一個或下一個資產，而不返回資料夾&#x200B;**P**：更密切地預覽。 縮放、全螢幕和其他選項。
+**A**：回到儲存庫中的目前資料夾或目前的搜尋結果&#x200B;**B**：您正在預覽的檔案的名稱和格式&#x200B;**C**：指派工作&#x200B;**D**：進階中繼資料&#x200B;**E**：關鍵字和智慧標籤&#x200B;**F**：註解與註釋&#x200B;**G**：檢視與所選資產相關的工作&#x200B;**H**： [檢視和管理版本](/help/assets/manage-organize-assets-view.md#versions-of-assets) **A i**：檢視影象&#x200B;**J**&#x200B;的演繹版：編輯影象&#x200B;**K**：檢視包含OpenAPI功能演繹版的Smart Crop和Dynamic Media的Dynamic Media演繹版。 **L**：基本中繼資料&#x200B;**M**：進階中繼資料&#x200B;**N**：關鍵字和智慧標籤&#x200B;**O**：繼續目前資料夾中的上一個或下一個資產，而不返回資料夾&#x200B;**P**：更密切地預覽。 縮放、全螢幕和其他選項。
 
 您也可以預覽影片。
 
