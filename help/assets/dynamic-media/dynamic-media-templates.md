@@ -4,9 +4,9 @@ description: 瞭解如何使用WYSIWYG範本編輯器建立動態媒體範本，
 hide: true
 role: User
 exl-id: 07de648e-4ae2-4524-8e05-3cf10bb6006d
-source-git-commit: 7bb15e0b8aa24f9737f70f86c78dc09be1ea4750
+source-git-commit: 808ee16dbda140fe5bf64ecae249712b17f957db
 workflow-type: tm+mt
-source-wordcount: '3050'
+source-wordcount: '3071'
 ht-degree: 2%
 
 ---
@@ -87,6 +87,7 @@ Dynamic Media範本的一些主要優點包括：
 
 若要建立DM範本，請遵循下列步驟：
 
+1. 導覽至您的[!DNL AEM Assets]首頁，然後[將您的影像上傳並發佈至 [!DNL AEM] 和 [!DNL Dynamic Media] 同時](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm#dynamic-media-publish-mode-set-to-upon-activation)，以使用這些影像來建立範本。
 1. [建立空白畫布](#create-a-canvas)
 1. [將影像新增至畫布](#add-images-to-the-canvas)
 1. [新增文字圖層至畫布](#add-text-to-the-canvas)
@@ -282,7 +283,7 @@ Dynamic Media範本的一些主要優點包括：
 1. 使用此URL來快速銷售您的產品或服務。 您可以與客戶共用此URL，或將其整合至您的網站或任何下游第三方應用程式，以顯示橫幅並即時更新以反映持續優惠。
 
 瞭解如何在本影片中逐步建立Dynamic Media範本。
->[!VIDEO](https://video.tv.adobe.com/v/3443281)
+>[!VIDEO](https://video.tv.adobe.com/v/3457616)
 
 ## 從URL即時更新範本{#update-the-template-from-the-url}
 
