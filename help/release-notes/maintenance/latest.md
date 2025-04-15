@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的目前維�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 3fb9e633da6269b5b9847a825951746ddeb532f9
+source-git-commit: c5152543550b5f81bf0b79741f288b0c16648584
 workflow-type: tm+mt
-source-wordcount: '1589'
-ht-degree: 94%
+source-wordcount: '452'
+ht-degree: 44%
 
 ---
 
@@ -16,145 +16,60 @@ ht-degree: 94%
 
 下節是 Experience Manager as a Cloud Service 目前維護版本的技術版本發行說明。
 
-## 版本 20133 {#20133}
+## 版本 20476 {#20476}
 
-下面是 20133 維護版本持續改善內容的摘要；該版本於 2025 年 4 月 1 日公開發行。前一個維護版本是版本 19823。
+以下摘要說明維護版本20476數的持續改善，該版本於2025年4月15日公開發佈。 前一個維護版本是版本 20133。
 
 啟用 2025.4.0 功能將可使用此維護版本的完整功能集。如需詳細資訊，請參閱 [Experience Manager 發行藍圖](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)。
 
-### 增強功能 {#enhancements-20133}
+### 增強功能 {#enhancements-20476}
 
-* ASSETS-47850：如果 AEM CS 啟用 ES，則限制新增 Scene7 設定。
-* CQ-4359547：從 git 存放庫中完全移除 Guava。
-* FORMS-17551：新增記錄文件 (DoR) 支援，適用於 SharePoint 清單整合。
-* FORMS-18432：已實作表單特定 (根據 regex) 用戶端預填設定，無需變更 OSGI 層級即可啟用選擇性預填功能。
-* FORMS-18513：在 AEP 連接器中實作資料樹轉換支援，以增強精靈功能和資料處理能力。
-* FORMS-19068：在 Forms Manager API 中新增對 AEP 連接器提交動作的支援，以增強表單資料整合功能。
-* GRANITE-57717：在 AEM 中更新用戶端套件組合。
-* SITES-10469：AdapterFactory 應該始終傳回相同的 PageManager 執行個體。
-* SITES-25130：核心元件 2.28.0 版。
-* SITES-25433：比較舊版本時支援完整頁面轉譯。
-* SITES-25923：不再儲存任何 URL 時，LinkInfoStorageImpl 可能無法繼續執行。
-* SITES-26208：透過工作流程刪除內容片段時，現在可以選擇透過移除最近刪除的片段來更新參考資源。
-* SITES-26500：新增透過工作流程移動內容片段的選項 - `move-fragments`。
-* SITES-26711：轉出觸發程序 - 連結尚未更新。
-* SITES-27583：體驗片段在移動後遺失版本歷史記錄。
-* SITES-27618：在頁面中搜尋片段的參考不會傳回所有的結果。
-* SITES-27781：已實作內容片段參考的模型級驗證，允許根據模型限制和必要的標記驗證參考的片段。
-* SITES-27784：更新 SQL 查詢產生功能，改為使用 PATH 函數而非 `jcr:path`。
-* SITES-28040：Adobe Target ExperienceFragmentsReplicationListener 損壞。
-* SITES-28051：取得目前使用者對內容片段的權限：GET /cf/fragments/{fragmentId}/permissions。
-* SITES-28190：預覽整合測試的設定。
-* SITES-28227：當新增資產做為片段的參考時，我們會驗證該資產是否存在。
-* SITES-28248：根據 OSGI 設定切換網站事件。
-* SITES-28255：所有 3 個稽核屬性 (建立、修改、發佈) 均缺少全名。
-* SITES-28390：PageImpl：最佳化 hasContent()。
-* SITES-28404：刪除關於作者的頁面應該從預覽服務中取消發佈。
-* SITES-28446：新增 2 個在回應中不可見的新欄位 - NumberModelField 中的預留位置和來自 LongTextModelField 的允許模型。
-* SITES-28536：建立內容片段的 `RENAME` 端點。
-* SITES-28537：新增透過工作流程重新命名內容片段的選項 - `rename-fragments`。
-* SITES-28538：必須重新發佈參考以維護關於作者和發佈的有效內容。
-* SITES-28549：建立 `/cf/domains` 以便根據 AEM 層級傳回網域 ID。
-* SITES-29026：新增一個選用參數，使用語言和國家代碼指定內容片段的地區設定。
-* SITES-29031：改善對片段執行 PATCH 更新的邏輯，進而提供更好的效能。
-* SITES-29169：處於「已發佈」狀態的資源，如果其參考的資源已經移動、重新命名或刪除，資源將重新發佈。
-* SITES-29376：新增程式碼切換，用來確認已發佈資源的刪除操作。
-* SITES-29417：更新 `/libs/cq/Page/proxy.jsp`，將請求轉送到 jcr:content 節點，而非包含該請求。
-* SITES-2947：建立/修改 kibana 視覺效果以比較發佈 rasp。
-* SITES-29733：透過內容片段的標記提高模型搜尋的效能。
-* SITES-8316：內容原則：快取 ContentPolicyManager。
-* SITES-24906：使用通用編輯器的 Edge Delivery：支援沒有對應的作者建立的試算表 (搶先體驗)。
-* SITES-24907：使用通用編輯器的 Edge Delivery：支援將資產發佈到多個網站以滿足 MSM 使用案例的要求 (搶先體驗)。
-* SITES-27956：使用通用編輯器的 Edge Delivery：提高發佈輸送量 (搶先體驗)。
-* SITES-27956：使用通用編輯器的 Edge Delivery：改善發佈到 Edge Delivery 服務的錯誤處理 (搶先體驗)。
-* SITES-29602：CIF：移除core-cif-components-core中的Guava使用量。
-* SITES-25785： CIF：新增CIF產品參考資料型別的產品變體選擇。
-* SITES-26392： CIF[實驗性]： PDP中CIF核心元件的JSON+LD。
-* SITES-21278： CIF[實驗性]： CIF清除快取的能力。
+* CNTBF-411：新增刪除sling作業的可能性，以防JCR捨棄該作業。
+* CQ-4359813： AEM翻譯套件：3月20日。
+* CQ-4359811：Granite翻譯套件：3月20日。
+* GRANITE-57863：更新 Filevault 至 3.8.4 版。
+* GRANITE-56154：在oak-segment-azure中設定指數重試。
+* GRANITE-55999：改善UserPropertiesService的效能。
+* GRANITE-55781：避免重複重新設定使用者成員資格。
+* GRANITE-53956：將Azure SDK V8升級為V12，以使用oak-segment-azure。
+* GRANITE-50654：在主參與者許可權索引標籤上，移除預設在前端載入的「所有人」。
+* SKYOPS-103444：更新至 Sling ResourceResolver 1.12.6。
+* SKYOPS-101147：更新Caconfig實作。
+* SKYOPS-97124：為過期版本的SPIFly套件組合新增分析器警告。
+* SKYOPS-95826：將執行階段Java版本更新為11.0.26和21.0.6。
+* SKYOPS-53671：在(RDE) AEM重新啟動時，使用功能模型中的客戶安裝成品。
 
-### 已修正的問題 {#fixed-issues-20133}
+### 已修正的問題 {#fixed-issues-20476}
 
-* CQ-4358378：處理翻譯執行中的授權錯誤。
-* CQ-4359263：作業完成時對話框中不會顯示任何訊息。
-* CQ-4359386：無法將 i18n 字典新增至 AEMaaCS 中的翻譯專案。
-* FORMS-18068：記錄文件 (DoR) 中使用 RTF 文字欄位之選項按鈕和核取方塊群組出現粗體文字轉譯問題。
-* FORMS-18189：修改自訂函數處理以避免空白用戶端程式庫的錯誤記錄，並改善 UI 的錯誤顯示。
-* FORMS-18213：已實作隱藏/排除記錄文件 (DoR) 停用欄位的功能，以改善文件清晰度和使用者體驗。
-* FORMS-18271：表單主題編輯器顯示未本地化的錯誤訊息，影響表單設定和主題自訂的使用者體驗。
-* FORMS-18304：由於裝置相關的顏色錯誤，在 Acrobat 和 LiveCycle ES4 中通過驗證的 PDF/A-1b 文件，在 AEM 6.5 Forms 中被錯誤地標記為不合規。
-* FORMS-18325：新增 Adobe Experience Platform (AEP) 雲端設定以增強表單資料整合和處理能力。
-* FORMS-18360：在表單文件管理中增強團隊網站的 SharePoint 清單範圍管理，以改善資料組織和存取控制。
-* FORMS-18375：在未選取特定的設定容器時，以 Foundation Components 為基礎的表單錯誤地從 `conf/global` 資料夾選取 recaptcha 設定。
-* FORMS-18426：當清單名稱包含特殊字元 (例如「-」) 時，SharePoint 清單尋找功能會失敗，影響與 SharePoint 清單的表單整合。
-* FORMS-19028：用戶端預填功能中斷表單事件處理，導致無法在表單載入時，正確觸發值認可和 DOMContentLoaded 事件。
-* FORMS-6950：在檔案系統導覽器樹狀圖元件新增必要的 ARIA 角色和屬性，讓螢幕閱讀器更加方便取用，而且符合 WCAG 4.1.2 名稱、角色、數值 (A 級) 標準。
-* FORMS-7016：表單編輯器的鍵盤焦點順序並未依循邏輯導覽。
-* SITES-1960：改善內容片段編輯器的 JSON 預覽操作效能。
-* SITES-24308：當內容大小調整為 400% 時會出現水平捲軸。
-* SITES-24493：互動式元素未具備必要的角色。
-* SITES-24669：參考軌道視窗分割器無法透過鍵盤存取。
-* SITES-26881：AEMaaCS 可存取性錯誤 - 提供給註解輸入欄位旁邊「三個點」圖示的角色不正確。
-* SITES-26956：追蹤 SITES-24920，無法在生產環境中移動頁面。
-* SITES-27707：由於資產名稱問題 (6.5 SP22 回歸)，內容尋找器資產條列失敗。
-* SITES-27757：使用通用編輯器的 Edge Delivery：根據 helix-html-pipeline 語義改寫圖示。
-* SITES-27780：在 SP22 中使用純文字 DefaultPasteMode 時，RTE 中出現非預期的 &lt;br> 標記。
-* SITES-27958：Linkchecker 擲回「此工作階段已關閉」錯誤。
-* SITES-28149：在 XF 匯出到目標期間未觸發自訂 ExperienceFragmentLinkRewriterProvider。
-* SITES-28449：工作流程小工具 UI 錯誤 - 在 AEM 中「包含子頁面」並未顯示所有子頁面。
-* SITES-28456：如果在 GraphiQL Explorer 中儲存不正確的持續性查詢，UI 上會缺少通知 (追蹤 - SITES-28313)。
-* SITES-28464：更新片段查詢以使用單位為毫秒的格式化日期。
-* SITES-28486：新內容片段編輯器中的原處編輯不會重新導向到舊編輯器。
-* SITES-28570：內容片段的 GraphQL 正確地處理缺少的資產中繼資料。
-* SITES-28580：升級到 SP22 後，經典影像資產尋找器損壞。
-* SITES-28600：啟動 - 內容重複。
-* SITES-28668：無法使用 LaunchPromotionParameters 提升啟動。
-* SITES-28820：在 rebase 上建立的新變化版本內新增兩個啟動前置詞。
-* SITES-28877：當未定義本機外部器端點時，UE URL 服務擲回異常訊息。
-* SITES-28956：如果內容片段參考標記，則標記刪除操作會顯示警告。
-* SITES-29208：當參考欄位包含無效路徑時，可以正確地傳回參考和變化版本。
-* SITES-29363：重設 Live Copy 按鈕不適用於巢狀的 Live Copy 內容階層。
-* SITES-29369：AIO 中的資產事件問題 | 錯誤地觸發頁面已發佈/未發佈事件。
-* SITES-29972：刪除和重新命名動作有時會產生不真實的工作流程註解。
-* SITES-24631： CIF：產品欄位發生搜尋問題。
-* SITES-24902： CIF：產品URL格式無法如#variant_sku預期運作。
-* SITES-29191： CIF：無法新增超過20個SKU至產品清單元件。
-
-### 已知問題 {#known-issues-20133}
-
+* Assets-49027： [回歸] AemRequestEventFilter中斷對OSGI Web主控台的POST要求。
+* Assets-44956：無法選取任何Dynamic Media轉譯 — 指令碼標籤應載入頂層元件。
+* CNTBF-410： ContentCopy套件組合中的CheckJob getId null指標。
+* CNTBF-341： ContentCopy匯出索引超出界限。
+* CQ-4355411：工具提示仍顯示在「使用者偏好設定」對話方塊中。
+* GRANITE-57265：未選取下拉式清單選擇值。
+* GRANITE-57067 - UI上缺少有效原則。
 * SITES-30727：AEM編輯器中的子元件拖放可能會失敗。
+* SKYOPS-90607：Sling作業會在非使用中部署/可變內容中執行。
+* SKYOPS-95722：從AEM-SDK中的快速入門標幟中移除`MaxPermSize`大小。
+* SKYOPS-103569：某些影像無法以Java 21載入： `javax.imageio.IIOException: Cannot create Sun JPEGImageReader backend`。
 
-### 已過時的功能和 API {#deprecated-20133}
+### 已知問題 {#known-issues-20476}
 
- [已過時和移除的功能和 API](/help/release-notes/deprecated-removed-features.md) 文件中詳細介紹了 AEM as a Cloud Service 已過時和移除的功能和 API。
+無。
 
-#### 使用者群組和產品設定檔同步的變更 {#changes-user-groups}
+### 已過時的功能和 API {#deprecated-20476}
 
-使用 Adob&#x200B;&#x200B;e Admin Console 進行權限管理時，不得使用下列群組，因為這些群組將不再同步至 AEM：
-* 以 _GROUP_NAME_SUFFIX 結尾的 AEM 群組。
-* 來自其他環境、程式或產品的產品設定檔。
+[「已過時和已移除的功能及 API」](/help/release-notes/deprecated-removed-features.md)文件中詳細介紹 AEM as a Cloud Service 中已過時和已移除的功能及 API。
 
-若要了解更多詳情，請查看「[使用者群組和產品設定檔同步的變更](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/security/changes-in-user-group-and-product-profile-synchronization)」。
+### 安全性修正 {#security-20476}
 
-#### 不再使用 SPA 編輯器 {#deprecate-spa-editor}
+AEM as a Cloud Service 專門負責將您的平台的安全性與效能最佳化。此維護版本解決了 5 個已確認的漏洞，強化我們提供健全系統保護的承諾。
 
-自 2025.4.0 版本開始，新專案已停止支援 [SPA 編輯器](/help/implementing/developing/hybrid/introduction.md)。現有專案仍支援 SPA 編輯器，但新專案不應使用。
-
-AEM 中用於管理 Headless 內容的首選編輯器為：
-
-* [通用編輯器](/help/edge/wysiwyg-authoring/authoring.md)，用於視覺化編輯。
-* [內容片段編輯器](/help/assets/content-fragments/content-fragments-managing.md)，用於表單型編輯。
-
-有關停止支援編輯器的更多詳細資訊，請參閱文件[停止支援 SPA 編輯器。](/help/implementing/developing/hybrid/spa-editor-deprecation.md)
-
-### 安全性修正 {#security-20133}
-
-AEM as a Cloud Service 專門負責將您的平台的安全性與效能最佳化。此維護版本解決了 34 個已確認的漏洞，強化我們提供健全系統保護的承諾。
-
-### 內嵌技術 {#embedded-tech-20133}
+### 內嵌技術 {#embedded-tech-20476}
 
 | 技術 | 版本 | 連結 |
 |---|---|---|
-| AEM Oak | 1.76.0 | [Oak API 1.76.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.76.0/index.html) |
+| AEM Oak | 1.78.0 | [Oak API 1.78.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.78.0/index.html) |
 | AEM SLING API | 2.27.6 | [Apache Sling API 2.27.6 API](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html) |
 | AEM HTL | 1.4.26-1.4.0 | [HTML 範本語言規格](https://github.com/adobe/htl-spec) |
 | AEM 核心元件 | 2.28.0 | [AEM WCM 核心元件](https://github.com/adobe/aem-core-wcm-components) |
