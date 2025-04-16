@@ -1,17 +1,17 @@
 ---
-title: 如何管理Dynamic Media範本？
-description: 瞭解如何使用WYSIWYG範本編輯器建立動態媒體範本，並包含多個影像和文字圖層，以快速建立橫幅和傳單，並將其用於下游應用程式。
+title: 如何管理 [!DNL Dynamic Media] 範本？
+description: 瞭解如何使用WYSIWYG範本編輯器建立 [!DNL Dynamic Media] 範本，並包含多個影像和文字圖層，以快速建立橫幅和傳單，並將其用於下游應用程式。
 hide: true
 role: User
 exl-id: 07de648e-4ae2-4524-8e05-3cf10bb6006d
-source-git-commit: 808ee16dbda140fe5bf64ecae249712b17f957db
+source-git-commit: 6223937acc317ea57a7e91c90bac36f1b1d4be67
 workflow-type: tm+mt
-source-wordcount: '3071'
-ht-degree: 2%
+source-wordcount: '3029'
+ht-degree: 1%
 
 ---
 
-# Dynamic Media 範本{#dynamic-media-templates}
+# [!DNL Dynamic Media]個範本{#dynamic-media-templates}
 
 <table>
     <tr>
@@ -50,17 +50,17 @@ ht-degree: 2%
     </tr>
 </table>
 
-使用WYSIWYG範本編輯器建立Dynamic Media範本，並包含多個影像和文字圖層，以快速建立橫幅和傳單，並將其用於下游應用程式。 您也可以將引數新增至範本中包含的影像和文字圖層，並使用[動態媒體URL](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/wysiwyg/storage/catalog-urls-dynamic-media)來即時更新這些圖層的值。
+使用[!DNL Dynamic Media]範本(WYSIWYG範本編輯器)，為您的橫幅和傳單建立即時可自訂的範本。 在下游應用程式中使用您的[!DNL Dynamic Media]範本。 [!DNL Dynamic Media]範本包含影像和文字圖層。 新增引數至範本的影像和文字圖層，並使用[[!DNL Dynamic Media] URL](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/wysiwyg/storage/catalog-urls-dynamic-media)來重新定位和調整圖層大小，並即時更新其內容。
 
 部分主要功能包括：
 
-* **Dynamic Media WYSIWYG範本編輯器：**&#x200B;建立可自訂的橫幅（包含影像與文字圖層）。
+* **[!DNL Dynamic Media]WYSIWYG範本編輯器：**&#x200B;建立可自訂的橫幅（包含影像與文字圖層）。
 * **圖層引數化：**&#x200B;定義圖層的動態索引鍵值配對，以啟用即時更新。
-* **Dynamic Media URL支援：**&#x200B;將Dynamic Media URL用於範本，整合來自第一方或第三方應用程式的個人化值。
+* **[!DNL Dynamic Media]URL支援：**&#x200B;使用[!DNL Dynamic Media] URL作為範本，整合來自第一方或第三方應用程式的個人化值。
 * **圖層可見性控制：**&#x200B;視需要動態隱藏或顯示圖層。
 * **智慧型文字調整大小：**&#x200B;自動調整文字大小以符合指定的區域。
 
-Dynamic Media範本的一些主要優點包括：
+[!DNL Dynamic Media]範本的一些主要優點包括：
 
 * **最佳化1:1 Personalization：**&#x200B;根據即時客戶訊號量身打造內容。
 * **減少手動工作：**&#x200B;自動化並加速內容建立和管理。
@@ -71,23 +71,24 @@ Dynamic Media範本的一些主要優點包括：
 
 >[!NOTE]
 >
->訂閱Enhanced Security SKU的客戶無法在該雲端服務方案中使用任何動態媒體功能，包括動態媒體範本。
+>訂閱Enhanced Security SKU的客戶無法在該雲端服務方案上使用任何[!DNL Dynamic Media]功能，包括[!DNL Dynamic Media]範本。
 
 ## 開始之前{#prerequisites-for-dynamic-media-wysiwyg-template}
 
-若要建立Dynamic Media範本，您必須擁有：
+若要建立[!DNL Dynamic Media]範本，您必須擁有：
 
-1. 存取Dynamic Media。
-1. [已將AEM Assets執行個體中可用的影像與Dynamic Media同步，以便使用這些影像來建立範本](/help/assets/dynamic-media/config-dm.md)。
+1. 存取[!DNL Dynamic Media]。
+1. [已將您 [!DNL AEM Assets] 執行個體中可用的影像與 [!DNL Dynamic Media] 同步，以便使用這些影像建立範本](/help/assets/dynamic-media/config-dm.md)。
 1. 已在觸控式UI中驗證下列專案：
-   * 在&#x200B;**[!UICONTROL 編輯Dynamic Media設定頁面]**&#x200B;上，**[!UICONTROL 預設為**[!UICONTROL &#x200B;已停用的Dynamic Media同步模式&#x200B;]**未套用至所有AEM資料夾（**[!UICONTROL &#x200B;取消勾選同步處理所有內容&#x200B;]**）。]**&#x200B;如需詳細資訊，請參閱[設定Dynamic Media Cloud Service](/help/assets/dynamic-media/config-dm.md)。
-   * 目的地資料夾或子資料夾的&#x200B;**[!UICONTROL Dynamic Media同步模式]**&#x200B;已設定為&#x200B;**[!UICONTROL 啟用子資料夾]**，您會在建立後儲存範本。 如需詳細資訊，請參閱[設定Dynamic Media Cloud Service](/help/assets/dynamic-media/config-dm.md)。
+   * 在&#x200B;**[!UICONTROL 編輯[!DNL Dynamic Media]設定頁面]**&#x200B;上，預設設定為&#x200B;**[!UICONTROL 已停用]**&#x200B;的&#x200B;**[!UICONTROL [!DNL Dynamic Media]同步處理模式]**&#x200B;未套用至所有AEM資料夾（**[!UICONTROL 同步處理所有內容]**&#x200B;已取消核取）。 如需詳細資訊，請參閱[設定Dynamic Media Cloud Service](/help/assets/dynamic-media/config-dm.md)。
+   * 目的地資料夾或子資料夾的&#x200B;**[!UICONTROL [!DNL Dynamic Media]同步模式]**&#x200B;設定為&#x200B;**[!UICONTROL 啟用子資料夾]**，您會在建立後儲存範本。 如需詳細資訊，請參閱[設定 [!DNL Dynamic Media] Cloud Service](/help/assets/dynamic-media/config-dm.md)。
 
-## 建立Dynamic Media WYSIWYG範本{#how-to-create-dynamic-media-wysiwyg-template}
+## 建立[!DNL Dynamic Media] WYSIWYG範本{#how-to-create-dynamic-media-wysiwyg-template}
 
-若要建立DM範本，請遵循下列步驟：
+執行以下步驟來建立[!DNL Dynamic Media]範本：
 
-1. 導覽至您的[!DNL AEM Assets]首頁，然後[將您的影像上傳並發佈至 [!DNL AEM] 和 [!DNL Dynamic Media] 同時](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm#dynamic-media-publish-mode-set-to-upon-activation)，以使用這些影像來建立範本。
+1. 導覽至您的[!DNL Assets View]，並在&#x200B;**[!UICONTROL Assets]**&#x200B;中[建立資料夾](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/add-delete-assets-view)。 **[!UICONTROL Assets]**&#x200B;中的資料夾樹狀結構會在&#x200B;**[!UICONTROL Dynamic Media Assets]**&#x200B;中復寫。 使用此[!UICONTROL Dynamic Media Assets]資料夾，稍後再儲存您的[!DNL Dynamic Media]範本。
+1. 選取&#x200B;**[!UICONTROL Assets]**&#x200B;和[將您的影像同時上載並發佈到 [!DNL AEM] 和 [!DNL Dynamic Media] 以使用這些影像來建立範本](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm#dynamic-media-publish-mode-set-to-upon-activation)。
 1. [建立空白畫布](#create-a-canvas)
 1. [將影像新增至畫布](#add-images-to-the-canvas)
 1. [新增文字圖層至畫布](#add-text-to-the-canvas)
@@ -98,19 +99,19 @@ Dynamic Media範本的一些主要優點包括：
 
 執行以下步驟來建立空白畫布：
 
-1. 導覽至Assets檢視，然後按一下左側面板中可用的&#x200B;**[!UICONTROL Dynamic Media Assets]**。
+1. 導覽至[!DNL Assets View]並選取左側面板中可用的&#x200B;**[!UICONTROL Dynamic Media Assets]**。
 
    ![Dynamic Media 範本](/help/assets/assets/DM-Assets1.png)
 
-1. 按一下&#x200B;**[!UICONTROL 建立範本]**&#x200B;將範本儲存在Dynamic Media Assets下，或導覽至資料夾並按一下&#x200B;**[!UICONTROL 建立範本]**&#x200B;將範本儲存在該資料夾中。 **[!UICONTROL 新範本]**對話方塊隨即顯示。
+1. 在此頁面上選取「**[!UICONTROL 建立範本]**」，或導覽至您的&#x200B;**[!UICONTROL Dynamic Media Assets]**&#x200B;資料夾並選取「**[!UICONTROL 建立範本]**」。 範本會儲存在您建立它的位置 — 位於根資料夾(例如&#x200B;**[!UICONTROL Dynamic Media Assets]**)或根目錄內的資料夾。 選取&#x200B;**[!UICONTROL 建立範本]**&#x200B;之後，會顯示&#x200B;**[!UICONTROL 新增範本]**對話方塊。
    ![如何建立可即時自訂的動態範本](/help/assets/assets/new-template.png)
-若要[在&#x200B;**[!UICONTROL Dynamic Media Assets]**&#x200B;下建立資料夾](/help/assets/add-delete-assets-view.md)，請在&#x200B;**[!UICONTROL Assets]**&#x200B;下建立資料夾。 **[!UICONTROL Assets]**&#x200B;下的資料夾樹狀結構會在&#x200B;**[!UICONTROL Dynamic Media Assets]**&#x200B;下復寫。
+
 1. 指定範本名稱、定義畫布寬度和高度，然後按一下[建立]。**** 空白畫布顯示，兩側都有選單選項以用於建立範本。 將游標停留在選單選項上可檢視其工具提示。
    ![即時可自訂的範本](/help/assets/assets/blank-canvas-page.png)
 
->[!NOTE]
->
-> 允許的寬度和高度範圍是從50到5000。
+   >[!NOTE]
+   >
+   > 允許的寬度和高度範圍是從50到5000。
 
 **右窗格上的功能表選項：**&#x200B;使用這些選項將必要的影像和文字圖層新增至畫布。
 
@@ -140,7 +141,7 @@ Dynamic Media範本的一些主要優點包括：
 
 執行以下步驟，將影像新增至畫布：
 
-1. 按一下![立即建立橫幅](/help/assets/assets/add-image.svg)以顯示[Asset Selector](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector)面板。 面板會顯示AEM Assets執行個體中同步至Dynamic Media的影像。
+1. 按一下![立即建立橫幅](/help/assets/assets/add-image.svg)以顯示[Asset Selector](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector)面板。 面板會顯示您的AEM Assets執行個體中同步至[!DNL Dynamic Media]的影像。
 1. 瀏覽面板或使用搜尋列中的關鍵字來尋找特定影像。
 1. 將影像拖放到畫布上以使用。 請參閱[**[!UICONTROL 屬性面板]**](#reposition-resize-delete-a-layer)，以調整畫布上的圖層大小或重新定點陣圖層。
    ![在秒內建立橫幅](/help/assets/assets/add-image-to-canvas.png)
@@ -151,21 +152,21 @@ Dynamic Media範本的一些主要優點包括：
 
 1. 按一下![建立新橫幅fastly](/help/assets/assets/add-text.svg)以新增文字圖層到畫布並開啟[內容]面板。
 1. 選取圖層並按一下文字進行更新。
-1. 啟用「屬性」面板中的&#x200B;**[!UICONTROL 智慧型文字調整大小]**，自動調整文字長度和字型大小，以最佳方式符合指定的區域。
+1. 在「屬性」面板中選取「**[!UICONTROL 智慧型文字調整大小]**」，自動調整文字長度和字型大小，以最佳方式配合指定的區域。
    ![最佳自訂橫幅](/help/assets/assets/add-text-layer.png)
 
-請參閱[**[!UICONTROL 屬性面板]**](#reposition-resize-delete-a-layer)來重新定位、調整大小、旋轉或刪除圖層。 在面板的&#x200B;**[!UICONTROL 文字]**&#x200B;區段下的個別欄位中變更文字的值，將文字格式設定為您所需的字型、大小、顏色、樣式、對齊方式（在圖層中）。
+請參閱[**[!UICONTROL 屬性面板]**](#reposition-resize-delete-a-layer)來重新定位、調整大小、旋轉或刪除圖層。 在面板的&#x200B;**[!UICONTROL 文字]**&#x200B;區段下的個別欄位中變更文字的值，將文字格式設定為所需的字型、大小、顏色、樣式、對齊方式（在圖層中）。
 
 >[!NOTE]
 >
-> 若要使用預設Adobe Sans F2字型系列以外的字型，您必須上傳字型檔案並發佈至AEM Assets和Dynamic Media。 如果您的執行個體中有一些舊字型，請確定[重新處理](/help/assets/reprocessing-assets-view.md)以在範本編輯器中檢視這些字型。
+> 若要使用預設Adobe Sans F2字型系列以外的字型，您必須上傳字型檔案並發佈至[!AEM Assets]和[!DNL Dynamic Media]。 如果您的執行個體中有一些舊字型，請確定[重新處理](/help/assets/reprocessing-assets-view.md)以在範本編輯器中檢視這些字型。
 
 ### 編輯或刪除圖層 {#edit-or-delete-a-layer}
 
 執行以下步驟來編輯或刪除畫布圖層：
 
 1. 按一下支援動態更新的![範本](/help/assets/assets/show-layers-list.svg)，然後在畫布上或從「圖層」清單中選取圖層。
-1. 按一下&#x200B;**更多選項** （![支援即時更新的範本](/help/assets/assets/three-dots.svg)）以編輯或刪除圖層。
+1. 按一下&#x200B;**[!UICONTROL 更多選項]** （![支援即時更新的範本](/help/assets/assets/three-dots.svg)）以編輯或刪除圖層。
 1. 按一下&#x200B;**[!UICONTROL 刪除]**&#x200B;以刪除圖層。
 1. 按一下「**[!UICONTROL 編輯]**」以使用「[**[!UICONTROL 屬性面板]**](#reposition-resize-delete-a-layer)」編輯圖層。
    ![快速橫幅建立](/help/assets/assets/dm-templates/edit-delete-layer.png)
@@ -195,9 +196,9 @@ Dynamic Media範本的一些主要優點包括：
 
 #### 文字格式選項{#text-formatting-options-on-properties-panel}
 
-在面板的&#x200B;**[!UICONTROL 文字]**&#x200B;區段下的個別欄位中變更文字的值，將文字格式設定為您所需的字型、大小、顏色、樣式、對齊方式（在圖層中）。
+將文字的格式設定為所需的字型、大小、顏色、樣式、對齊方式（在圖層內），方法是在面板的&#x200B;**[!UICONTROL 文字]**區段下的個別欄位中變更其值。
+確定包括**[!UICONTROL 智慧文字調整大小]**。 [!UICONTROL 智慧型文字調整大小]適用於[Copyfitting](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/text-formatting/r-copy-fitting)演演算法，可在文字區域中以最佳方式填入文字，防止文字溢位，並儘量減少文字底部的額外空間。
 
-**[!UICONTROL 智慧型文字調整大小]**&#x200B;請確定包含&#x200B;**[!UICONTROL 智慧型文字調整大小]** ([Copyfitting](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/text-formatting/r-copy-fitting))以最佳方式調整字型大小和長度，讓任何文字元合指定區域。 此功能可防止文字溢位，或將文字底部的額外空格縮到最少。
 ![立即建立內容](/help/assets/assets/smart-text-resize.png)
 
 ### 引數化圖層 {#parameterise-a-layer}
@@ -207,7 +208,7 @@ Dynamic Media範本的一些主要優點包括：
 欲引數化圖層：
 
 1. 按一下![即時內容建立](/help/assets/assets/show-layers-list.svg)，選取圖層並按一下&#x200B;**[!UICONTROL 引數]**。 **[!UICONTROL 引數]**&#x200B;面板隨即顯示。
-1. 切換&#x200B;**[!UICONTROL 包含引數]**&#x200B;以引數化屬性。 請參閱[這個](#parameterisation-options-or-allowed-parameters)以瞭解引數化後的屬性行為。
+1. 切換&#x200B;**[!UICONTROL 包含引數]**&#x200B;以引數化屬性。 請參閱[引數面板選項](#parameterisation-options-or-allowed-parameters)，以瞭解引數化後的屬性行為。
 1. **選擇性：**&#x200B;重新命名引數名稱。 引數名稱具有圖層名稱及尾碼。 對於選取的圖層，其所有引數化屬性會共用相同的圖層名稱，後面跟著不同的尾碼。 依照語意命名慣例重新命名圖層名稱，這樣當您在URL中包含引數時，引數名稱就會自行說明圖層的內容或其用途。
 1. 按一下「**[!UICONTROL 儲存]**」。
    ![即時內容建立](/help/assets/assets/parameterise-a-layer.png)
@@ -219,21 +220,21 @@ Dynamic Media範本的一些主要優點包括：
 
 **影像引數：**
 
-**X：**包含以變更URL中的引數值，沿著圖層的中心線水準移動圖層，平行於範本平面的X軸。
-**Y：** Include可透過變更URL中的引數值，沿著圖層的中心線垂直移動圖層，平行於範本平面的Y軸。
-**寬度：**包含以變更URL中的引數值來調整圖層的寬度。
-**高度：**包含以變更URL中的引數值來調整圖層高度。
-**隱藏：**使用0 （顯示）和1 （隱藏）來隱藏或顯示範本中的圖層。
-**Source：**&#x200B;包含以變更URL中引數值的影像路徑，用新影像取代圖層的影像。
+**[!UICONTROL X]：**包含以變更URL中的引數值，沿著圖層的中心線水準移動圖層，平行於範本平面的X軸。
+**[!UICONTROL Y]：**包含以變更URL中的引數值，沿著圖層的中心線垂直移動圖層，平行於範本平面的Y軸。
+**[!UICONTROL 寬度]：**包含以變更URL中的引數值來調整圖層的寬度。
+**[!UICONTROL 高度]：**包含以變更URL中的引數值來調整圖層高度。
+**[!UICONTROL 隱藏]：**包含以使用0 （顯示）和1 （隱藏）來隱藏或顯示範本中的圖層。
+**[!UICONTROL Source]：**&#x200B;包含以變更URL中引數值的影像路徑，以新影像取代圖層的影像。
 
 **文字格式設定引數：**
 
 納入以下引數，藉由更新URL中的引數值，從URL編輯文字、其字型、顏色和大小。
 
-**文字：**包含以從URL更新文字。
-**字型系列：**包含以從URL更新文字的字型。
-**字型大小：**包含以從URL更新文字的字型大小。
-**文字色彩：**&#x200B;包含以從URL更新文字的字型色彩。
+**[!UICONTROL 文字]：**包含以從URL更新文字。
+**[!UICONTROL 字型系列]：**包含以從URL更新文字的字型。
+**[!UICONTROL 字型大小]：**包含以從URL更新文字的字型大小。
+**[!UICONTROL 文字色彩]：**&#x200B;包含以從URL更新文字的字型色彩。
 
 ### 群組圖層以同時控制其可見性{#group-layers}
 
@@ -243,8 +244,8 @@ Dynamic Media範本的一些主要優點包括：
 
 1. 導覽至圖層的[**[!UICONTROL 屬性面板]**](#parameterise-a-layer)。
 1. 若之前未設定引數，請切換&#x200B;**[!UICONTROL 隱藏]**&#x200B;引數。
-1. **選擇性：**&#x200B;重新命名Hide引數。
-1. 複製隱藏引數名稱。
+1. **選用：**&#x200B;重新命名&#x200B;**[!UICONTROL Hide]**&#x200B;引數。
+1. 複製&#x200B;**[!UICONTROL 隱藏]**&#x200B;引數名稱。
 1. 從畫布中選取其他圖層的「引數」面板，然後切換其&#x200B;**[!UICONTROL 隱藏]**&#x200B;引數（如果未設定引數），即可移至這些圖層。
 1. 以複製名稱取代其&#x200B;**[!UICONTROL 隱藏引數]**&#x200B;名稱。
 1. 按一下&#x200B;**[!UICONTROL 儲存]**&#x200B;將圖層分組。
@@ -260,8 +261,8 @@ Dynamic Media範本的一些主要優點包括：
    1. 選取影像層，按一下![即時建立內容](/help/assets/assets/add-image.svg)，從資產選取器選取影像，然後按一下&#x200B;**[!UICONTROL 重新整理]**。
 
    範本會立即更新，顯示編輯過的文字，並將先前的影像取代為新影像。 此外，影像引數值會反映新的影像路徑。 同樣地，您可以調整圖層的值來調整其大小，變更會即時套用至範本。
-1. 從清單中選取[群組圖層](#group-layers)的隱藏引數，以便在範本中顯示或隱藏它們。
-1. **選擇性：**&#x200B;將&#x200B;**[!UICONTROL 隱藏]**&#x200B;引數值變更為0到1，然後按一下&#x200B;**[!UICONTROL 重新整理]**&#x200B;檢視變更。 具有相同隱藏引數的圖層會一起隱藏或顯示。 同樣地，您可以從URL控制圖層的可見度。
+1. 從清單中選取[群組圖層](#group-layers)的&#x200B;**[!UICONTROL 隱藏]**&#x200B;引數，以便在範本中顯示或隱藏它們。
+1. **選擇性：**&#x200B;將&#x200B;**[!UICONTROL 隱藏]**&#x200B;引數值變更為0到1，然後按一下&#x200B;**[!UICONTROL 重新整理]**&#x200B;檢視變更。 具有相同&#x200B;**[!UICONTROL 隱藏]**&#x200B;引數的圖層會隱藏或同時顯示。 同樣地，您可以從URL控制圖層的可見度。
 
    ![即時建立內容](/help/assets/assets/dm-templates-publish-status.png)
 您也可以切換**[!UICONTROL 包含所有引數]**以編輯所有顯示的引數值，並在範本預覽中檢視更新。
@@ -278,12 +279,12 @@ Dynamic Media範本的一些主要優點包括：
 
 若要複製預覽中顯示的已發佈範本的URL：
 
-1. 按一下&#x200B;**[!UICONTROL 複製URL]**。 **[!UICONTROL 複製URL]**&#x200B;對話方塊隨即顯示。 選取並複製顯示的URL。 請注意，URL中的第一個引數在問號&#x200B;**(？)之後開始**&#x200B;和索引鍵值配對的開頭為&#x200B;**$**，結尾為&#x200B;**&amp;**。 金鑰和值由等號&#x200B;**(=)**&#x200B;分隔，金鑰在左側，值在右側。
+1. 按一下&#x200B;**[!UICONTROL 複製URL]**。 **[!UICONTROL 複製URL]**&#x200B;對話方塊隨即顯示。 選取並複製顯示的URL。 URL中的第一個引數在問號&#x200B;**([!UICONTROL ？])**&#x200B;和索引鍵/值組開頭為&#x200B;**[!UICONTROL $]**，結尾為&#x200B;**[!UICONTROL &amp;]**。 金鑰和值以等號分隔&#x200B;**([!UICONTROL =])**，金鑰在左側，值在右側。
 1. 將此URL貼到瀏覽器標籤中，即可檢視您的即時範本。 直接在URL中更新所需引數的值（索引鍵值），即時自訂範本，如&#x200B;**預覽和發佈**&#x200B;區段的[步驟2](#preview-and-publish-template-and-copy-template-deliver-url)所示。
 1. 使用此URL來快速銷售您的產品或服務。 您可以與客戶共用此URL，或將其整合至您的網站或任何下游第三方應用程式，以顯示橫幅並即時更新以反映持續優惠。
 
-瞭解如何在本影片中逐步建立Dynamic Media範本。
->[!VIDEO](https://video.tv.adobe.com/v/3457616)
+瞭解如何在此影片中逐步建立[!DNL Dynamic Media]範本。
+>[!VIDEO](https://video.tv.adobe.com/v/3443281)
 
 ## 從URL即時更新範本{#update-the-template-from-the-url}
 
@@ -291,8 +292,8 @@ Dynamic Media範本的一些主要優點包括：
 
 1. 複製URL並貼到記事本中。
 1. 使用Cmd+F (Mac)或Ctrl+F (Windows)來尋找及編輯引數值。 例如：
-   * 取代影像圖層的影像路徑。
-   * 調整圖層尺寸與位置（如果[引數化](#parameterise-a-layer)）。
+   * 尋找和取代影像圖層的影像路徑。
+   * 尋找圖層的[引數化](#parameterise-a-layer)座標、寬度和高度，以調整其值。
    * 編輯文字圖層的文字、字型、顏色、大小或對齊方式。
    * 在0和1之間變更可見度值。
 
@@ -302,14 +303,14 @@ Dynamic Media範本的一些主要優點包括：
 
 請依照下列步驟編輯範本：
 
-1. 在Assets檢視上，按一下&#x200B;**[!UICONTROL Dynamic Media Assets]**。
+1. 在[!DNL Assets view]上，按一下&#x200B;**[!UICONTROL Dynamic Media Assets]**。
 2. 導覽至範本位置。
 3. 選取範本。
 4. 按一下&#x200B;**[!UICONTROL 編輯範本]**。 範本畫布會在「圖層」面板中顯示範本及其所有圖層的清單。 根據您的需求開始編輯範本。
 
-## 將行動號召連結新增至範本層{#add-CTA-in-dynamic-media-templates}
+## 將行動號召(CTA)連結新增至範本層{#add-CTA-in-dynamic-media-templates}
 
-將Dynamic Media範本的任何影像或文字圖層轉換為超連結，方法是在其中新增CTA連結，將使用者導向目標頁面。 執行以下步驟，將CTA連結新增至圖層：
+將[!DNL Dynamic Media]範本的任何影像或文字圖層轉換為超連結，方法是在其中新增CTA連結，將使用者導向至目標頁面。 執行以下步驟，將CTA連結新增至圖層：
 
 1. 導覽至您的範本位置，選取範本並按一下![編輯](/help/assets/assets/edit-pen-icon.svg) **[!UICONTROL 編輯範本]**。 範本會顯示在畫布上。
 1. 選取範本圖層並[導覽至其屬性面板](#edit-or-delete-a-layer)以新增CTA連結至該圖層。
@@ -342,18 +343,18 @@ Dynamic Media範本的一些主要優點包括：
 
 觀看此逐步影片，瞭解如何將CTA連結新增至範本圖層。
 
->[!VIDEO](https://video.tv.adobe.com/v/3457577)
+>[!VIDEO](https://video.tv.adobe.com/v/3457616)
 
 ## 需要注意的重要事項 {#important-points-to-note}
 
 * 在使用引數化影像圖層建立範本以進行動態更新後，請確保打算用於未來更新的影像共用與引數化影像相同的尺寸。 這可確保影像完全符合圖層內，不會溢滿或留下空白空間。 目前，範本不支援自動調整尺寸以讓影像符合圖層。
 * 文字圖層不支援子字串。 使用者無法在文字圖層的子字串上套用不同的字型屬性。
-* Dynamic Media範本目前不支援多家Dynamic Media公司。
-* 若是複製或移動，Destination Selector會顯示所有資料夾（包括非Dynamic Media同步資料夾）。 此外，目前也不會顯示Dynamic Media範本資產（兩者都是目的地選擇器的限制）。
-* Assets區段對資料夾所做的任何更新操作（例如「發佈」或「刪除」）都會影響該資料夾中可用的Dynamic Media範本。
-* 垃圾桶無法用於Dynamic Media範本。 如果資產移至垃圾桶後還原，資產會在AEM中還原，但不會在Dynamic Media上還原。 這同樣適用於Dynamic Media範本。
+* [!DNL Dynamic Media]範本目前無法支援多個[!DNL Dynamic Media]公司。
+* 若是複製或移動，Destination Selector會顯示所有資料夾（包括非[!DNL Dynamic Media]同步資料夾）。 此外，目前也不會顯示[!DNL Dynamic Media]範本資產（兩者皆為目的地選擇器的限制）。
+* 從Assets區段對資料夾執行的任何更新操作（例如「發佈」或「刪除」）都會影響該資料夾中可用的[!DNL Dynamic Media]範本。
+* 垃圾桶無法用於[!DNL Dynamic Media]範本。 如果資產移至垃圾桶後還原，資產會在AEM中還原，但不會在[!DNL Dynamic Media]上還原。 [!DNL Dynamic Media]範本也是相同的。
 
 ## 另請參閱
 
-1. 探索[動態媒體及其功能](/help/assets/dynamic-media/dynamic-media.md)
-1. 探索[具有OpenAPI功能的Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md)
+1. 探索[[!DNL Dynamic Media] 及其功能](/help/assets/dynamic-media/dynamic-media.md)
+1. 使用OpenAPI功能探索[[!DNL Dynamic Media] ](/help/assets/dynamic-media-open-apis-overview.md)
