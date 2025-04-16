@@ -3,19 +3,19 @@ title: 用於結構化內容傳遞和內容片段管理的AEM API
 description: 瞭解可用於結構化內容傳遞和內容片段管理的API
 feature: Headless, Content Fragments, Edge Delivery Services
 role: Admin, Developer
-source-git-commit: 21599676916068f3529976410a93951b02f750b0
+exl-id: 95aecd30-566a-42a9-b97a-7efe45fd389c
+source-git-commit: d9db32110e1e0aaa5bdc20bd6b4bff6da6a3a3a3
 workflow-type: tm+mt
-source-wordcount: '592'
-ht-degree: 1%
+source-wordcount: '591'
+ht-degree: 2%
 
 ---
 
+# 用於傳遞和管理結構化內容的 AEM API {#aem-apis-structured-content-delivery-and-management}
 
-# 適用於結構化內容傳遞與管理的AEM API {#aem-apis-structured-content-delivery-and-management}
+Adobe Experience Manager (AEM) as a Cloud Service提供多個API，用於內容片段和內容片段管理的結構化內容傳遞。 如需特定API的詳細資訊，請參閱個別頁面。
 
-Adobe Experience Manager (AEM) as a Cloud Service為內容片段和內容片段管理的結構化內容傳遞提供多個API。 如需特定API的詳細資訊，請參閱個別頁面。
-
-* [用於內容片段傳送的AEM REST OpenAPI](/help/headless/aem-rest-openapi-content-fragment-delivery.md)
+* [使用OpenAPI的AEM內容片段傳送](/help/headless/aem-content-fragment-delivery-with-openapi.md)
    * 此API會建立JSON回應，用於從AEM中的內容片段傳送結構化內容。
    * 它使用內容片段的路徑作為端點。
    * 此API以REST為基礎。
@@ -25,14 +25,14 @@ Adobe Experience Manager (AEM) as a Cloud Service為內容片段和內容片段�
    * 此API以GraphQL為基礎。
 * [內容片段和內容片段模型的 OpenAPI](/help/headless/content-fragment-openapis.md)
    * 這些API旨在用於結構化內容管理。
-   * 個別GET運運算元未針對內容傳遞進行最佳化。
+   * 個別的GET運運算元未針對內容傳遞進行最佳化。
    * 此API以REST為基礎。
 * [AEM Assets HTTP API中的內容片段支援](/help/assets/content-fragments/assets-api-content-fragments.md)
-   * JSON輸出的原始API用於AEM中的結構化內容傳遞。
+   * 用於AEM中結構化內容傳遞的JSON輸出的原始API。
       * 雖然此API健全且經過證明，但並未提供&#x200B;*完全水合的* JSON輸出。 參考僅輸出為路徑，需要次要API請求以擷取更多內容。
    * Assets HTTP API也可用來管理內容片段和內容片段模式(CRUD)。
    * 此API以REST為基礎。
-   * Assets HTTP API中的內容片段支援未來將停止使用，因為Edge Delivery ServicesJSON REST API將成功提供支援。 時間刻度尚未決定。
+   * Assets HTTP API中的內容片段支援未來將停止使用，因為Edge Delivery Services JSON REST API將成功提供支援。 時間刻度尚未決定。
 
 <!--
 ## JSON vs HTML {#json-vs-HTML}

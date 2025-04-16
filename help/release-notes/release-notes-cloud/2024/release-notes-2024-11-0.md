@@ -4,7 +4,7 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2024.11.0 版
 feature: Release Information
 role: Admin
 exl-id: 3fd6482e-66f0-48ee-983c-4cb6b7742dcd
-source-git-commit: aafa51c246ee67f9fed014a39ecfb4605ac6152f
+source-git-commit: d9db32110e1e0aaa5bdc20bd6b4bff6da6a3a3a3
 workflow-type: tm+mt
 source-wordcount: '1809'
 ht-degree: 99%
@@ -57,15 +57,15 @@ ht-degree: 99%
 
 **用於內容片段傳送的 AEM REST OpenAPI**
 
-[用於內容片段傳送的 AEM REST OpenAPI](/help/headless/aem-rest-openapi-content-fragment-delivery.md) 現在已可用於 AEM as a Cloud Service。
+[用於內容片段傳送的 AEM REST OpenAPI](/help/headless/aem-content-fragment-delivery-with-openapi.md) 現在已可用於 AEM as a Cloud Service。
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ### Dynamic Media 的搶先體驗功能 {#dm-early-access}
 
-**以 AI 產生的影片字幕**
+**AI 生成影片字幕**
 
-Adobe Dynamic Media 中以 AI 產生的影片字幕，是使用人工智慧來自動產生影片內容的字幕。透過提供準確的即時字幕，這項功能可以改善無障礙輔助並增強使用者體驗。AI 分析影片的音軌以轉錄語音並建立針對準確性或自訂可進行編輯的字幕。這些字幕有助於滿足可存取性的要求，並改善依賴或偏好文字式影片支援之客群的影片參與度。
+Adobe Dynamic Media 中的 AI 生成影片字幕功能會使用人工智慧，為影片內容自動生成字幕。透過提供準確的即時字幕，這項功能可改善可存取性並增強使用者體驗。AI 分析影片的音軌以轉錄語音並建立針對準確性或自訂可進行編輯的字幕。這些字幕有助於滿足可存取性的要求，並改善依賴或偏好文字式影片支援之客群的影片參與度。
 
 若要在您的 Dynamic Media 帳戶搶先體驗 AI 產生的字幕支援，請[建立並提交 Adobe 客戶支援案例](/help/assets/dynamic-media/video.md##enable-dash)。
 

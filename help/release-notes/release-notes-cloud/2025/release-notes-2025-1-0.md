@@ -4,7 +4,7 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2025.1.0 版�
 feature: Release Information
 role: Admin
 exl-id: 085629bf-fb24-4511-af6c-bbbeedcb6b98
-source-git-commit: 7cc979148f6699cfbd4aaae228beb83527709fa1
+source-git-commit: d9db32110e1e0aaa5bdc20bd6b4bff6da6a3a3a3
 workflow-type: tm+mt
 source-wordcount: '1740'
 ht-degree: 93%
@@ -58,7 +58,7 @@ ht-degree: 93%
 
 **用於內容片段傳遞的 AEM REST OpenAPI**
 
-[用於內容片段傳遞的 AEM REST OpenAPI](/help/headless/aem-rest-openapi-content-fragment-delivery.md) 現已可用於 AEM as a Cloud Service。
+[用於內容片段傳遞的 AEM REST OpenAPI](/help/headless/aem-content-fragment-delivery-with-openapi.md) 現已可用於 AEM as a Cloud Service。
 
 ### 過時的功能 {#sites-deprecated}
 
@@ -130,7 +130,7 @@ AEM Forms 搶先體驗計劃為您提供獨一無二的機會，獲得先進創�
 
 本發行說明列出目前版本提供的創新功能。如需搶先體驗計劃提供之創新的完整清單，請參閱 [AEM Forms 搶先體驗計劃文件](/help/forms/early-access-ea-features.md)。
 
-#### [最適化Forms中的HTML電子郵件範本](/help/forms/html-email-templates-in-adaptive-forms.md)
+#### 最適化Forms中的[HTML電子郵件範本](/help/forms/html-email-templates-in-adaptive-forms.md)
 
 最適化Forms可讓您使用HTML電子郵件範本。 HTML 電子郵件範本讓您能夠在提交表單時發送內容豐富又有視覺吸引力的個人化電子郵件。這些電子郵件可以使用表單資料進行自訂，並運用各種電子郵件標籤 (例如影像和連結) 加強內容。透過最適化表單，您可以上傳包含 HTML 範本的檔案，或使用純文字編輯器來建立這些範本。
 
