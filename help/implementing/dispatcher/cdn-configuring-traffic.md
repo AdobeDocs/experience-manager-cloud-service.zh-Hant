@@ -4,7 +4,7 @@ description: 瞭解如何在設定檔案中宣告規則和篩選器，並使用C
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: a43fdc3f9b9ef502eb0af232b1c6aedbab159f1f
 workflow-type: tm+mt
 source-wordcount: '1390'
 ht-degree: 1%
@@ -18,7 +18,7 @@ AEM as a Cloud Service提供可在[Adobe管理的CDN](/help/implementing/dispatc
 
 * [要求轉換](#request-transformations) — 修改傳入要求的方面，包括標頭、路徑和引數。
 * [回應轉換](#response-transformations) — 修改回使用者端的標題（例如網頁瀏覽器）。
-* [使用者端重新導向](#client-side-redirectors) — 觸發瀏覽器重新導向。
+* [伺服器端重新導向](#server-side-redirectors) — 觸發瀏覽器重新導向。
 * [來源選取器](#origin-selectors) — 代理至不同的來源後端。
 
 在CDN也可以設定的是流量篩選規則(包括WAF)，其可控制CDN允許或拒絕的流量。 此功能已發行，您可以在[流量篩選器規則(包括WAF規則)](/help/security/traffic-filter-rules-including-waf.md)頁面中瞭解更多相關資訊。
@@ -29,7 +29,7 @@ AEM as a Cloud Service提供可在[Adobe管理的CDN](/help/implementing/dispatc
 
 ## 評估順序 {#order-of-evaluation}
 
-在功能上，先前提到的各種功能會依下列順序評估：
+從功能上講，前面提到的各種功能在以下序列中進行評估：
 
 ![評估順序](/help/implementing/dispatcher/assets/order.png)
 
@@ -300,13 +300,13 @@ data:
 
 | 名稱 | 屬性 | 含義 |
 |-----------|--------------------------|-------------|
-| **設定** | reqHeader，值 | 將指定的標頭設定為回應中的指定值。 |
+| **設置** | reqHeader，值 | 將指定的標頭設定為回應中的指定值。 |
 |          | respProperty，值 | 設定回應屬性。 僅支援「status」屬性以設定狀態代碼。 |
 | **取消設定** | respHeader | 從回應中移除指定的標頭。 |
 
 ## 來源選取器 {#origin-selectors}
 
-您可以利用AEM CDN將流量路由到不同的後端，包括非Adobe應用程式（可能依路徑或子網域為基礎）。
+您可以運用AEM CDN將流量路由至不同的後端，包括非Adobe應用程式（可能依路徑或子網域為基礎）。
 
 設定範例：
 
@@ -359,9 +359,9 @@ data:
 
 ### 代理至Edge Delivery Services {#proxying-to-edge-delivery}
 
-在某些情況下，來源選擇器應該用於透過AEM Publish將流量路由到AEMEdge Delivery Services：
+在某些情況下，來源選擇器應該用於透過AEM Publish將流量路由到AEM Edge Delivery Services：
 
-* 部分內容是由AEM Publish管理的網域所傳送，而來自相同網域的其他內容是由Edge Delivery Services所傳送
+* 部分內容是由AEM Publish管理的網域所傳送，而其他來自相同網域的內容是由Edge Delivery Services所傳送
 * Edge Delivery Services提供的內容將受益於透過設定管道部署的規則，包括流量篩選器規則或請求/回應轉換
 
 以下是可實現此目標的原點選取器規則的範例：
@@ -390,10 +390,10 @@ data:
 ```
 
 >[!NOTE]
-> 由於已使用AdobeManaged CDN，請依照Edge Delivery Services[安裝程式推送失效檔案](https://www.aem.live/docs/byo-dns#setup-push-invalidation)，確定在&#x200B;**Managed**&#x200B;模式中設定推送失效。
+> 由於已使用Adobe Managed CDN，請依照Edge Delivery Services [安裝程式推送失效檔案](https://www.aem.live/docs/byo-dns#setup-push-invalidation)，確定在&#x200B;**Managed**&#x200B;模式中設定推送失效。
 
 
-## 使用者端重新導向 {#client-side-redirectors}
+## 伺服器端重新導向 {#server-side-redirectors}
 
 對於301、302和類似的使用者端重新導向，您可以使用使用者端重新導向規則。 如果規則相符，CDN會以包含狀態代碼和訊息的狀態行回應（例如HTTP/1.1 301 Moved Permanently），以及位置標頭集。
 
@@ -429,7 +429,7 @@ data:
 | **重新導向** | 位置 | 「Location」標頭的值。 |
 |     | 狀態（選擇性，預設為301） | 重新導向訊息中使用的HTTP狀態，預設為301，允許值為： 301、302、303、307、308。 |
 
-重新導向的位置可以是字串常值(例如https://www.example.com/page)，或是由以下語法選擇性轉換的屬性（例如path）所產生：
+重新導向的位置可以是字串文本（例如，https://www.example.com/page），也可以是可選擇轉換的屬性的結果（例如，路徑），語法如下：
 
 ```
 redirects:

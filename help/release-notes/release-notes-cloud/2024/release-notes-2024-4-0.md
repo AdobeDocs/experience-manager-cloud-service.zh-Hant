@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2024.4.0 版�
 exl-id: 153a3172-676f-4434-94d4-12fab8e17734
 feature: Release Information
 role: Admin
-source-git-commit: bc0ae042c378f24b88da84768cdcc9573926ac89
+source-git-commit: 7069ee2453b0c589f92f9899db0b8307e4133756
 workflow-type: tm+mt
 source-wordcount: '2707'
-ht-degree: 97%
+ht-degree: 96%
 
 ---
 
@@ -186,9 +186,9 @@ Real Use Monitoring (RUM) Data Service提供使用者互動的更精確反映，
 
 ### 早期採用者計劃 {#foundation-early-adopter}
 
-#### 用戶端重新導向 (早期採用者計畫) {#client-side-redirects-early-adopter}
+#### 伺服器端重新導向（早期採用者計畫） {#server-side-redirects-early-adopter}
 
-在原始碼控制系統中設定 301/302 用戶端重新導向，並部署到 CDN。[了解更多](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors)，並透過寄送電子郵件至 **<aemcs-cdn-config-adopter@adobe.com>** 來加入早期採用者計劃。
+在原始檔控制中設定301/302伺服器端重新導向，並部署至CDN。 [了解更多](/help/implementing/dispatcher/cdn-configuring-traffic.md#server-side-redirectors)，並透過寄送電子郵件至 **<aemcs-cdn-config-adopter@adobe.com>** 來加入早期採用者計劃。
 
 #### 流量篩選規則警報 (早期採用者計畫) {#traffic-filter-rules-alerts-early-adopter}
 

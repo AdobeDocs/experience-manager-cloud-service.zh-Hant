@@ -4,7 +4,7 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2024.3.0 版�
 exl-id: b3816929-2c0a-4d6a-b583-c928d2182ecd
 feature: Release Information
 role: Admin
-source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
+source-git-commit: 7f63f66cb1753fc32996e4672214eccc33ca8d92
 workflow-type: tm+mt
 source-wordcount: '2293'
 ht-degree: 93%
@@ -116,7 +116,7 @@ Assets Essentials 可讓管理員管理存放庫中專用集合的存取層級�
 
 ### AEM Forms 的新功能 {#forms-new-features}
 
-* **[Adobe Experience Manager FormsEdge Delivery Services](/help/edge/docs/forms/overview.md)**： AEM Forms的Edge Delivery Services是一組可撰寫的服務，可啟用快速開發環境，讓作者可以快速更新、發佈和啟動新表單。 這些服務提供卓越且高影響力的表單體驗，進而促進使用者的參與度和轉換率。這些表單體驗易於製作和開發。
+* **[Adobe Experience Manager Forms Edge Delivery Services](/help/edge/docs/forms/overview.md)**：適用於AEM Forms的Edge Delivery Services是一組可撰寫的服務，可啟用快速開發環境，讓作者可快速更新、發佈和啟動新表單。 這些服務提供卓越且高影響力的表單體驗，進而促進使用者的參與度和轉換率。這些表單體驗易於製作和開發。
 
   ![EDS 表單功能](/help/edge/assets/eds-forms-features.png)
 
@@ -191,7 +191,7 @@ Real Use Monitoring (RUM) Data Service提供使用者互動的更精確反映，
 
   如果您有興趣測試此新功能並分享意見回饋，請使用與您的 Adobe ID 相關聯的電子郵件地址，傳送電子郵件至 `aemcs-rum-adopter@adobe.com`，並在郵件中附上要啟用 RUM 的每個環境網域名稱。Adobe的產品團隊會為您啟用即時監控(RUM)資料服務。
 
-## [!DNL Experience Manager] as a [!DNL Cloud Service] 基礎 {#foundation}
+## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
 ### 早期採用者計劃 {#foundation-early-adopter}
 
@@ -205,7 +205,7 @@ Real Use Monitoring (RUM) Data Service提供使用者互動的更精確反映，
 
 除了最近發佈的[流量篩選規則](/help/security/traffic-filter-rules-including-waf.md) (其中包含可以選擇授權的 Web 應用程式防火牆 (WAF) 規則)，也可以使用設定管道來聲明及部署其他類型的 CDN 設定。[了解更多](/help/implementing/dispatcher/cdn-configuring-traffic.md)並加入早期採用者計劃，可發送電子郵件 **<aemcs-cdn-config-adopter@adobe.com>** 取得存取權限：
 
-* 301/302 用戶端重新導向
+* 301/302伺服器端重新導向
 * 將邊緣要求代理到任意來源 (例如非 AEM 應用程式)
 * URL 轉換
 * 設定或修改要求或回應標頭

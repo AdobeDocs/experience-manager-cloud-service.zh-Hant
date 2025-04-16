@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2024.6.0 版�
 feature: Release Information
 role: Admin
 exl-id: 4033abf4-7094-4ce4-ba93-c936062667e3
-source-git-commit: 6d548f10caa32bb5a7a6b0afe762f60058eca2fe
+source-git-commit: 650014d0c093b9e7c1947a8fe870a5452f3083e5
 workflow-type: tm+mt
 source-wordcount: '1972'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -43,7 +43,7 @@ ht-degree: 100%
 
 ### Experience Manager Sites 新功能 {#new-feature-sites}
 
-**實際使用監控 (RUM) 資料服務**{#real-use-monitoring}
+**實際使用監控(RUM)資料服務** {#real-use-monitoring}
 
 [實際使用監控 (RUM) 資料服務](/help/sites-cloud/administering/real-use-monitoring-for-aem-as-a-cloud-service.md)現在已正式推出，讓 AEM as a Cloud Service 能夠收集用戶端的資料。此服務可以更準確地反映使用者互動，確保可靠地測量網站參與度。它為客戶提供有關頁面流量和效能的進階深入分析，帶來了解和增強頁面效能的寶貴機會。
 
@@ -211,9 +211,9 @@ Forms 服務會產生用於資料擷取的互動式 PDF forms。也可以利用�
 
 <!-- Email **<aemcs-cdn-config-adopter@adobe.com>** with a request to be an early adopter. -->
 
-#### 用戶端重新導向 (早期採用者計畫) {#client-side-redirects-early-adopter}
+#### 伺服器端重新導向（早期採用者計畫） {#server-side-redirects-early-adopter}
 
-在原始碼控制系統中設定 301/302 用戶端重新導向，並部署到內容傳遞網路。[了解更多](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors)。<!-- and join the early adopter program by emailing **<aemcs-cdn-config-adopter@adobe.com>**. --> 請注意，已經有一些與[內容傳遞網路設定](/help/implementing/dispatcher/cdn-configuring-traffic.md)相關的其他功能可用，包括要求和回應轉換，以及將流量路由到 AEM 之外的網站。
+在原始檔控制中設定301/302伺服器端重新導向，並部署至CDN。 [了解更多](/help/implementing/dispatcher/cdn-configuring-traffic.md#server-side-redirectors)。<!-- and join the early adopter program by emailing **<aemcs-cdn-config-adopter@adobe.com>**. --> 請注意，已經有一些與[內容傳遞網路設定](/help/implementing/dispatcher/cdn-configuring-traffic.md)相關的其他功能可用，包括要求和回應轉換，以及將流量路由到 AEM 之外的網站。
 
 #### 流量篩選規則警報 (早期採用者計畫) {#traffic-filter-rules-alerts-early-adopter}
 

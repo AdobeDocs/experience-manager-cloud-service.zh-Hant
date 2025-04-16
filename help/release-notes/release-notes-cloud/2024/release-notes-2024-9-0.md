@@ -4,7 +4,7 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2024.9.0 版�
 feature: Release Information
 role: Admin
 exl-id: 75ecd154-112a-4468-9962-de50bb1f4cd0
-source-git-commit: b0208964fc193e0e839bccaaf8245c86f280767d
+source-git-commit: 1481983bde41bda51e725930bae492aa599b6c93
 workflow-type: tm+mt
 source-wordcount: '1324'
 ht-degree: 91%
@@ -60,7 +60,7 @@ AEM 翻譯工作流程和 API 動作現在會觸發事件，並提供有關翻�
 
 **以 AI 產生的影片字幕**
 
-Adobe Dynamic Media 中以 AI 產生的影片字幕，是使用人工智慧來自動產生影片內容的字幕。透過提供準確的即時字幕，這項功能可以改善無障礙輔助並增強使用者體驗。AI 分析影片的音軌以轉錄語音並建立針對準確性或自訂可進行編輯的字幕。這些字幕有助於滿足可存取性的要求，並改善依賴或偏好文字式影片支援之客群的影片參與度。
+Adobe Dynamic Media 中的 AI 生成影片字幕功能會使用人工智慧，為影片內容自動生成字幕。透過提供準確的即時字幕，這項功能可改善可存取性並增強使用者體驗。AI 分析影片的音軌以轉錄語音並建立針對準確性或自訂可進行編輯的字幕。這些字幕有助於滿足可存取性的要求，並改善依賴或偏好文字式影片支援之客群的影片參與度。
 
 若要在您的 Dynamic Media 帳戶搶先體驗 AI 產生的字幕支援，請[建立並提交 Adobe 客戶支援案例](/help/assets/dynamic-media/video.md##enable-dash)。
 
@@ -136,9 +136,9 @@ Adobe 管理的內容傳遞網路現在支援 [Edge Side Includes (ESI)](/help/i
 
 透過彈出要求使用者名稱和密碼的基本驗證對話方塊來保護某些內容資源。此功能主要針對輕型身分驗證使用案例，例如業務利害關係人檢閱內容，而不是作為一般使用者存取權限的全面解決方案。使用者名稱和密碼清單是透過Git中的設定檔案管理，該檔案透過設定管道部署，並參考機密型別的Cloud Manager環境變數。 [了解更多](/help/implementing/dispatcher/cdn-credentials-authentication.md#basic-auth)。
 
-### 用戶端重新導向 {#client-side-redirects}
+### 伺服器端重新導向 {#server-side-redirects}
 
-在部署至CDN並在CDN上評估的組態檔Git中宣告[瀏覽器重新導向](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors)。 此功能在刪除頁面、變更的網站結構及SEO最佳化等情境中相當實用。
+在部署至CDN並在CDN上評估的組態檔Git中宣告[瀏覽器重新導向](/help/implementing/dispatcher/cdn-configuring-traffic.md#server-side-redirectors)。 此功能在刪除頁面、變更的網站結構及SEO最佳化等情境中相當實用。
 
 ### 全新 AEM Developer Console (公共 Beta 版) {#aem-developer-console-beta}
 

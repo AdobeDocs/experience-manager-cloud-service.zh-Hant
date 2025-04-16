@@ -4,7 +4,7 @@ description: 瞭解如何使用設定管道來部署不同的設定AEM as a Clou
 feature: Operations
 role: Admin
 exl-id: bd121d31-811f-400b-b3b8-04cdee5fe8fa
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 0b4ed7a99400bb5f91f513bbcd01862cdced03c5
 workflow-type: tm+mt
 source-wordcount: '991'
 ht-degree: 1%
@@ -33,19 +33,19 @@ Cloud Manager設定管道將設定檔案（以YAML格式建立）部署到目標
 
 下表提供這類設定的完整清單，以及描述其不同設定語法和其他資訊的專用檔案的連結。
 
-| 類型 | YAML `kind`值 | 說明 |
+| 類型 | YAML `kind`值 | 描述 |
 |---|---|---|
 | [流量篩選器規則，包括WAF](/help/security/traffic-filter-rules-including-waf.md) | `CDN` | 宣告規則以封鎖惡意流量 |
 | [要求轉換](/help/implementing/dispatcher/cdn-configuring-traffic.md#request-transformations) | `CDN` | 宣告規則以轉換流量請求的形狀 |
 | [回應轉換](/help/implementing/dispatcher/cdn-configuring-traffic.md#response-transformations) | `CDN` | 宣告規則以轉換指定要求的回應形狀 |
-| [使用者端重新導向](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors) | `CDN` | 宣告301/302樣式使用者端重新導向 |
-| [來源選取器](/help/implementing/dispatcher/cdn-configuring-traffic.md#origin-selectors) | `CDN` | 宣告規則以將流量路由到不同的後端，包括非Adobe應用程式 |
+| [伺服器端重新導向](/help/implementing/dispatcher/cdn-configuring-traffic.md#server-side-redirectors) | `CDN` | 宣告301/302樣式的伺服器端重新導向 |
+| [來源選取器](/help/implementing/dispatcher/cdn-configuring-traffic.md#origin-selectors) | `CDN` | 宣告將流量路由到不同後端的規則，包括非Adobe應用程式 |
 | [CDN錯誤頁面](/help/implementing/dispatcher/cdn-error-pages.md) | `CDN` | 如果無法連線AEM來源，並參考設定檔案中自行託管靜態內容的位置，則覆寫預設錯誤頁面 |
 | [CDN清除](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token) | `CDN` | 宣告用來清除CDN的清除API金鑰 |
-| [客戶管理的CDN HTTP權杖](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token#CDN-HTTP-value) | `CDN` | 宣告從客戶CDN呼叫AdobeCDN所需的X-AEM-Edge-Key值 |
+| [客戶管理的CDN HTTP權杖](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token#CDN-HTTP-value) | `CDN` | 宣告從客戶CDN呼叫Adobe CDN所需的X-AEM-Edge-Key值 |
 | [基本驗證](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token#basic-auth) | `CDN` | 為保護特定URL的基本驗證對話方塊宣告使用者名稱和密碼。 |
 | [版本清除維護任務](/help/operations/maintenance.md#purge-tasks) | `MaintenanceTasks` | 透過在應清除內容版本的時機周圍宣告規則來最佳化AEM存放庫 |
-| [稽核記錄清除維護任務](/help/operations/maintenance.md#purge-tasks) | `MaintenanceTasks` | 最佳化AEM稽核記錄檔，藉由宣告規則來決定何時應清除記錄檔，以提高效能 |
+| [稽核記錄清除維護任務](/help/operations/maintenance.md#purge-tasks) | `MaintenanceTasks` | 最佳化AEM稽核記錄，透過在應清除記錄的時間周圍宣告規則來提高效能 |
 | [記錄檔轉送](/help/implementing/developing/introduction/log-forwarding.md) | `LogForwarding` | 設定可將記錄轉送至不同目的地的端點和認證，包括Azure Blob Storage、Datadog、HTTPS、Elasticsearch、Splunk) |
 
 ## 建立和管理設定管道 {#creating-and-managing}

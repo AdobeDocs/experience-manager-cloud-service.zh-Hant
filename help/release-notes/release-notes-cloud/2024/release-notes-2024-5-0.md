@@ -3,10 +3,11 @@ title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2024.5.0 版發行�
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2024.5.0 版發行說明。'
 feature: Release Information
 role: Admin
-source-git-commit: d76f27e2b85cefe5e83f790a91466e94a619a077
+exl-id: 7b7a27f9-ba57-4eb2-9fcb-653b5213af04
+source-git-commit: a8c74573134597e83c2720de3b2a0f75ff7896a2
 workflow-type: tm+mt
 source-wordcount: '1949'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -212,9 +213,9 @@ RDE 命令列介面有一些新功能，可改善開發人員體驗：
 
 <!-- Email **<aemcs-cdn-config-adopter@adobe.com>** with a request to be an early adopter. -->
 
-#### 用戶端重新導向 (早期採用者計畫) {#client-side-redirects-early-adopter}
+#### 伺服器端重新導向（早期採用者計畫） {#server-side-redirects-early-adopter}
 
-在原始碼控制系統中設定 301/302 用戶端重新導向，並部署到內容傳遞網路。[了解更多](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors)。<!-- and join the early adopter program by emailing **<aemcs-cdn-config-adopter@adobe.com>**. --> 請注意，已經有一些與[內容傳遞網路設定](/help/implementing/dispatcher/cdn-configuring-traffic.md)相關的其他功能可用，包括要求和回應轉換，以及將流量路由到 AEM 之外的網站。
+在原始檔控制中設定301/302伺服器端重新導向，並部署至CDN。 [了解更多](/help/implementing/dispatcher/cdn-configuring-traffic.md#server-side-redirectors)。<!-- and join the early adopter program by emailing **<aemcs-cdn-config-adopter@adobe.com>**. --> 請注意，已經有一些與[內容傳遞網路設定](/help/implementing/dispatcher/cdn-configuring-traffic.md)相關的其他功能可用，包括要求和回應轉換，以及將流量路由到 AEM 之外的網站。
 
 #### 流量篩選規則警報 (早期採用者計畫) {#traffic-filter-rules-alerts-early-adopter}
 

@@ -4,7 +4,7 @@ description: 瞭解如何宣告301或302重新導向，而不需要存取Git或C
 feature: Dispatcher
 role: Admin
 exl-id: dacb1eda-79e0-4e76-926a-92b33bc784de
-source-git-commit: aee0aef912fd4c94c06251aa4424200a6ffd7ebc
+source-git-commit: 7a543c8fe63166ef34999f23ce9b05de8e8b0e9f
 workflow-type: tm+mt
 source-wordcount: '781'
 ht-degree: 1%
@@ -21,7 +21,7 @@ ht-degree: 1%
 * 已重新命名的HTML頁面。
 * SEO最佳化。
 
-AEM as a Cloud Service提供[數個實作使用者端重新導向的方法](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/administration/url-redirection)，但本文所述的策略（管線免費重新導向）在以下情況下是很好的選擇：
+AEM as a Cloud Service提供[數個實作伺服器端重新導向的方法](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/administration/url-redirection)，不過本文所述的策略（管線免費重新導向）在以下情況下是很好的選擇：
 
 * 維護重新導向的使用者為商務使用者，他們沒有認可原始檔控制檔案變更的必要存取權，或無法執行Cloud Manager Web層設定管道。
 * 重新導向的次數範圍從數到數萬不等。
