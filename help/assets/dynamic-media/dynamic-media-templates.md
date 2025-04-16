@@ -4,9 +4,9 @@ description: 瞭解如何使用WYSIWYG範本編輯器建立 [!DNL Dynamic Media]
 hide: true
 role: User
 exl-id: 07de648e-4ae2-4524-8e05-3cf10bb6006d
-source-git-commit: 6223937acc317ea57a7e91c90bac36f1b1d4be67
+source-git-commit: 946f943dd02bb6832674ed7e37830ddeb592e548
 workflow-type: tm+mt
-source-wordcount: '3029'
+source-wordcount: '3026'
 ht-degree: 1%
 
 ---
@@ -87,8 +87,8 @@ ht-degree: 1%
 
 執行以下步驟來建立[!DNL Dynamic Media]範本：
 
-1. 導覽至您的[!DNL Assets View]，並在&#x200B;**[!UICONTROL Assets]**&#x200B;中[建立資料夾](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/add-delete-assets-view)。 **[!UICONTROL Assets]**&#x200B;中的資料夾樹狀結構會在&#x200B;**[!UICONTROL Dynamic Media Assets]**&#x200B;中復寫。 使用此[!UICONTROL Dynamic Media Assets]資料夾，稍後再儲存您的[!DNL Dynamic Media]範本。
-1. 選取&#x200B;**[!UICONTROL Assets]**&#x200B;和[將您的影像同時上載並發佈到 [!DNL AEM] 和 [!DNL Dynamic Media] 以使用這些影像來建立範本](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm#dynamic-media-publish-mode-set-to-upon-activation)。
+1. 導覽至您的[!DNL Assets View]，並在![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets ]**中[建立資料夾](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/add-delete-assets-view)。 ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]**&#x200B;中的資料夾樹狀結構會在&#x200B;**[!UICONTROL Dynamic Media Assets]**&#x200B;中復寫。 將您的[!DNL Dynamic Media]範本儲存在此[!UICONTROL Dynamic Media Assets]資料夾中。
+1. 選取![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets ]**和[將您的影像同時上傳和發佈至 [!DNL AEM] 和 [!DNL Dynamic Media] 和](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm#dynamic-media-publish-mode-set-to-upon-activation)，以使用這些影像來建立範本。
 1. [建立空白畫布](#create-a-canvas)
 1. [將影像新增至畫布](#add-images-to-the-canvas)
 1. [新增文字圖層至畫布](#add-text-to-the-canvas)
@@ -99,13 +99,15 @@ ht-degree: 1%
 
 執行以下步驟來建立空白畫布：
 
-1. 導覽至[!DNL Assets View]並選取左側面板中可用的&#x200B;**[!UICONTROL Dynamic Media Assets]**。
+1. 導覽至[!DNL Assets View]，選取左側面板中可用的&#x200B;**[!UICONTROL Dynamic Media Assets]**，然後導覽至您的資料夾，將範本儲存在該資料夾中。
 
    ![Dynamic Media 範本](/help/assets/assets/DM-Assets1.png)
 
-1. 在此頁面上選取「**[!UICONTROL 建立範本]**」，或導覽至您的&#x200B;**[!UICONTROL Dynamic Media Assets]**&#x200B;資料夾並選取「**[!UICONTROL 建立範本]**」。 範本會儲存在您建立它的位置 — 位於根資料夾(例如&#x200B;**[!UICONTROL Dynamic Media Assets]**)或根目錄內的資料夾。 選取&#x200B;**[!UICONTROL 建立範本]**&#x200B;之後，會顯示&#x200B;**[!UICONTROL 新增範本]**對話方塊。
+1. 選取&#x200B;**[!UICONTROL 建立範本]**。 **[!UICONTROL 新範本]**對話方塊隨即顯示。
    ![如何建立可即時自訂的動態範本](/help/assets/assets/new-template.png)
-
+   >[!NOTE]
+   >
+   >  範本會儲存在您建立它的位置。 在[!DNL Assets View]首頁上，選取&#x200B;**[!UICONTROL Dynamic Media Assets]**，然後按一下&#x200B;**[!UICONTROL 建立範本]**，將範本儲存在&#x200B;**[!UICONTROL Dynamic Media Assets]**&#x200B;根資料夾中。
 1. 指定範本名稱、定義畫布寬度和高度，然後按一下[建立]。**** 空白畫布顯示，兩側都有選單選項以用於建立範本。 將游標停留在選單選項上可檢視其工具提示。
    ![即時可自訂的範本](/help/assets/assets/blank-canvas-page.png)
 
@@ -267,7 +269,7 @@ ht-degree: 1%
    ![即時建立內容](/help/assets/assets/dm-templates-publish-status.png)
 您也可以切換**[!UICONTROL 包含所有引數]**以編輯所有顯示的引數值，並在範本預覽中檢視更新。
    <br>
-1. 若要在預覽頁面上發佈範本，請按一下&#x200B;**[!UICONTROL 發佈]**&#x200B;並確認發佈。 發佈完成訊息隨即顯示，且發佈狀態會更新為「已發佈」。
+1. 若要在預覽頁面上發佈範本，請按一下&#x200B;**[!UICONTROL 發佈]**&#x200B;並確認發佈。 **[!UICONTROL 發佈完成]**&#x200B;訊息顯示，且發佈狀態更新為&#x200B;**[!UICONTROL 已發佈]**。
 
 >[!NOTE]
 >
