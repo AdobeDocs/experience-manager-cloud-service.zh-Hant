@@ -6,9 +6,9 @@ exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
 source-git-commit: bbf66195593032eb2ccf073ec78685c9d9726235
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1092'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -50,15 +50,15 @@ Have a look at the February 2025 Release Overview video for a summary of the fea
 
 **支援使用具有 Open API 功能的 Dynamic Media 傳送的長格式影片**
 
-具有 OpenAPI 功能的 Dynamic Media 現在支援長格式影片。長格式視訊最多可支援50GB和2小時。
+具有 OpenAPI 功能的 Dynamic Media 現在支援長格式影片。長格式影片可支援高達 50GB 和 2 小時。
 
 ### Dynamic Media Classic {#dmc}
 
 <!-- CARRY OVER TO APRIL 2025 RELEASE NOTES -->
 
-自2025年4月起，Dynamic Media Classic報告儀表板中的頻寬索引標籤不再受支援。
+自 2025 年 4 月起，不再支援 Dynamic Media Classic 報告儀表板中的「頻寬」索引標籤。
 
-請參閱[頻寬和儲存空間，報表型別](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/setup/administration-setup#types-of-reports)。
+請參閱[頻寬和儲存、報告類型](https://experienceleague.adobe.com/zh-hant/docs/dynamic-media-classic/using/setup/administration-setup#types-of-reports)。
 
 
 ## Assets 檢視的新功能 {#new-features-assets-view}
@@ -84,19 +84,19 @@ AEM Forms 搶先體驗計劃為您提供獨一無二的機會，獲得先進創�
 
 #### 增強雲端儲存空間支援：將 PDF 直接上傳至 Azure Blob 儲存體
 
-AEM Forms Document Generation API現在可讓您[直接將產生的PDF檔案](/help/forms/early-access-ea-features.md#doc-generation-api)上傳到Azure Blob儲存體。 此增強功能簡化了儲存和檢索過程，進而提高效率並改善與雲端工作流程的整合。
+您現在可以透過 AEM Forms 的文件產生 API，[將產生的 PDF 文件直接上傳](/help/forms/early-access-ea-features.md#doc-generation-api)至 Azure Blob 儲存體。此增強功能簡化了儲存和檢索過程，進而提高效率並改善與雲端工作流程的整合。
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
 ### 支援 Java 21 {#java21}
 
-自1月發行版本起，您可以使用Java 21和Java 17來建置程式碼。 您可以存取新功能，例如模式比對、密封類別和各種效能改進。 如需設定步驟，包括更新您的Maven專案和程式庫版本，請參閱[組建環境](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#using-java-support)文章。
+自 1 月份的版本開始，您可以使用 Java 21 和 Java 17 建置程式碼。您可以存取模式配對、密封類別和各種效能改善等新功能。若要了解設定步驟 (包括更新 Maven 專案和資料庫版本)，請參閱文章「[建置環境](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#using-java-support)」。
 
-偵測到Java 17或21組建時，會自動部署效能較高的Java 21 **執行階段**。 不過，Adobe也建議選擇使用Java 11建立的環境使用Java 21執行階段，方法是傳送電子郵件至[aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com)。 了解 [Java 21 執行階段要求](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)。
+當偵測到 Java 17 或 21 版本時，會自動部署效能較佳的 Java 21 **執行階段**。但是，對於建置在 Java 11 上的環境，Adobe 也建議選擇使用 Java 21 執行階段，請寄送電子郵件至 [aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com)。了解 [Java 21 執行階段要求](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)。
 
 >[!IMPORTANT]
 >
-> Java 21 **執行階段**&#x200B;已在2月部署至您的開發/RDE環境；它將於4月28日和29 **套用至您的中繼/生產環境。**&#x200B;請注意，使用 Java 21 (或 Java 17) **建置程式碼** 與 Java 21 執行階段無關 - 您必須明確地採取步驟，使用 Java 21 (或 Java 17) 來建置程式碼。
+> Java 21 **執行階段**&#x200B;已於 2 月份部署到您的 dev/RDE 環境，並將於 **4 月 28 日和 29 日**&#x200B;套用至您的中繼/生產環境。請注意，使用 Java 21 (或 Java 17) **建置程式碼** 與 Java 21 執行階段無關 - 您必須明確地採取步驟，使用 Java 21 (或 Java 17) 來建置程式碼。
 
 ### AEM 記錄轉送至更多目標 - Beta 版方案 {#log-forwarding-earlyadopter}
 
@@ -125,7 +125,7 @@ AEM Forms Document Generation API現在可讓您[直接將產生的PDF檔案](/h
 
 開發人員可以將 AEM as Cloud Service 功能深度整合到自己的應用程式和工具中。新的 AEM as a Cloud Service API 將會遵循 OpenAPI 規範，目標是維持一致性、妥善記錄且簡單易用。建立 Adobe Developer Console 專案，便會產生需要驗證之端點的憑證。
 
-了解更多有關 [基於 OpenAPI 的 AEM API](/help/implementing/developing/open-api-based-apis.md) 的資訊，並試用一堂說明設定和使用方法的[端對端教學課程](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/openapis/invoke-api-using-oauth-s2s)。
+了解更多有關 [基於 OpenAPI 的 AEM API](/help/implementing/developing/open-api-based-apis.md) 的資訊，並試用一堂說明設定和使用方法的[端對端教學課程](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/cloud-service/aem-apis/openapis/invoke-api-using-oauth-s2s)。
 
 具體來說，以下列出的 API 端點可做為早期採用者方案的一部分。如果有興趣，請寄電子郵件至 [aem-apis@adobe.com](mailto:aem-apis@adobe.com)，並說明您預計如何使用它們。
 
@@ -142,7 +142,7 @@ AEM Forms Document Generation API現在可讓您[直接將產生的PDF檔案](/h
 
 ## [!DNL Experience Manager] Guides {#guides}
 
-您可以在[這裡](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2025-releases/2502-release/whats-new-2025-02-0)找到最新版 Adobe Experience Manager Guides 的新功能和增強功能完整清單。
+您可以在[這裡](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2025-releases/2502-release/whats-new-2025-02-0)找到最新版 Adobe Experience Manager Guides 的新功能和增強功能完整清單。
 
 <!-- THE FOLLOWING URL WAS USED ABOVE BUT IT WAS 404. IT WAS REPLACED WITH THE URL ABOVE 
 (https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2410-release/2410-0-release/whats-new-2024-10-0). -->
