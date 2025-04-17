@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: c5152543550b5f81bf0b79741f288b0c16648584
 workflow-type: tm+mt
 source-wordcount: '452'
-ht-degree: 44%
+ht-degree: 46%
 
 ---
 
@@ -48,7 +48,7 @@ ht-degree: 44%
 * CQ-4355411：工具提示仍顯示在「使用者偏好設定」對話方塊中。
 * GRANITE-57265：未選取下拉式清單選擇值。
 * GRANITE-57067 - UI上缺少有效原則。
-* SITES-30727：AEM編輯器中的子元件拖放可能會失敗。
+* SITES-30727：在 AEM 編輯器內，子元件拖放可能會失敗。
 * SKYOPS-90607：Sling作業會在非使用中部署/可變內容中執行。
 * SKYOPS-95722：從AEM-SDK中的快速入門標幟中移除`MaxPermSize`大小。
 * SKYOPS-103569：某些影像無法以Java 21載入： `javax.imageio.IIOException: Cannot create Sun JPEGImageReader backend`。
