@@ -5,17 +5,15 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
 keywords: 在VRE中叫用服務增強功能，使用叫用服務填入下拉式選項，使用叫用服務的輸出設定可重複面板，使用叫用服務的輸出設定面板，使用叫用服務的輸出引數驗證其他欄位。
-source-git-commit: f77e0cd03a63200cb86fada780f2fecff5fadf94
+exl-id: 2ff64a01-acd8-42f2-aae3-baa605948cdd
+source-git-commit: 2cae8bb1050bc4538f4645d9f064b227fb947d75
 workflow-type: tm+mt
-source-wordcount: '1582'
-ht-degree: 2%
+source-wordcount: '1566'
+ht-degree: 1%
 
 ---
 
-
 # 針對以核心元件為基礎的表單，在視覺化規則編輯器中使用叫用服務
-
-<span class="preview">這是一項預先發佈功能，可透過我們的[預先發佈管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features)存取。</span>
 
 最適化表單中的視覺化規則編輯器支援&#x200B;**叫用服務**&#x200B;功能，可讓您從針對執行個體設定的表單資料模型(FDM)清單中選取服務。 您可以將表單欄位直接對應到服務的輸入引數。 若要將表單欄位對應到輸出引數，請使用指定表單資料模型服務的事件裝載選項。 此外，視覺化規則編輯器可讓您根據輸出回應，為&#x200B;**Invoke Service**&#x200B;作業建立成功和失敗處理常式的規則。 成功處理常式管理&#x200B;**啟動服務**&#x200B;作業的成功執行，而失敗處理常式處理所有發生的錯誤。
 
@@ -47,7 +45,7 @@ ht-degree: 2%
 
 您可以新增多個規則來處理&#x200B;**啟動服務**&#x200B;作業的成功回應：
 
-![多個成功處理常式](/help/forms/assets/invoke-service-multiple-success-handlers.png){width=50%， height=50%}
+![多個成功處理常式](/help/forms/assets/invoke-service-multiple-success-handlers.png){width=50%, height=50%}
 
 同樣地，您可以新增規則，以便在作業失敗時處理&#x200B;**叫用服務**&#x200B;輸出回應。 下圖顯示&#x200B;**[!UICONTROL 啟動服務失敗處理常式]**&#x200B;規則編輯器：
 
@@ -242,4 +240,3 @@ ht-degree: 2%
 ## 其他資源
 
 {{see-also-rule-editor}}
-

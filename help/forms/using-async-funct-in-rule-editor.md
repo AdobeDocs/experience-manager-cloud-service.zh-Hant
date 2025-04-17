@@ -4,13 +4,13 @@ description: 視覺化規則編輯器中的非同步函式呼叫
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
-source-git-commit: f6e1de0c2cc2c056b3bfcea6ce5d7aaed041f6f8
+exl-id: a240ba26-a6d8-4643-8acb-1d8812dac61f
+source-git-commit: 2cae8bb1050bc4538f4645d9f064b227fb947d75
 workflow-type: tm+mt
-source-wordcount: '1437'
-ht-degree: 1%
+source-wordcount: '1409'
+ht-degree: 0%
 
 ---
-
 
 # 根據核心元件在最適化表單中使用非同步函式
 
@@ -28,7 +28,7 @@ ht-degree: 1%
 
 相反地，使用者可以非同步方式上傳背景影像，同時繼續無縫填寫表單的其餘部分。 介面保持回應式，允許即時更新，並可在上傳過程中即時提供意見反應。 它可提升使用者參與度，確保暢通無阻的體驗。
 
-![非同步和同步函式](/help/forms/assets/sync-async.png){align=center}
+![非同步和同步功能](/help/forms/assets/sync-async.png){align=center}
 
 ## 為Adaptive Forms實作非同步函式
 
@@ -38,8 +38,6 @@ ht-degree: 1%
 * [函式輸出](#how-to-use-function-output-rule-type)
 
 ## 如何使用非同步函式呼叫規則型別？
-
-<span class="preview">這是一項預先發佈功能，可透過我們的[預先發佈管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features)存取。</span>
 
 您可以撰寫非同步作業的[自訂函式](/help/forms/custom-function-core-component-create-function.md)，並使用規則編輯器中的&#x200B;**[!UICONTROL 非同步函式呼叫]**&#x200B;規則型別來設定非同步函式。
 
@@ -53,7 +51,7 @@ ht-degree: 1%
 
 下圖說明使用&#x200B;**[!UICONTROL 非同步函式呼叫]**&#x200B;規則型別來叫用最適化Forms非同步函式的步驟：
 
-![新增非同步函式的工作流程](/help/forms/assets/workflow-to-add-async-func.png){width=50%， align=center}
+![新增非同步函式的工作流程](/help/forms/assets/workflow-to-add-async-func.png){width=50%, align=center}
 
 ### 1.為JS檔案中的非同步作業寫入自訂函式
 
@@ -149,7 +147,7 @@ function asyncOperationForOTPMatch(otp, callback) {
 1. 從&#x200B;**選取動作**&#x200B;下拉式清單中選取&#x200B;**[!UICONTROL 隱藏]**。 例如，隱藏`error message`文字方塊。
 1. 按一下&#x200B;**[!UICONTROL 「完成」]**。
 
-![成功呼叫](/help/forms/assets/rule-editor-success-callback.png){width=50%， height=50%}
+![成功呼叫](/help/forms/assets/rule-editor-success-callback.png){width=50%, height=50%}
 
 請參考下方的熒幕擷圖，其中使用者以`111`身分進入OTP，且按一下`Confirm`按鈕時就會顯示`User Details`面板。
 
@@ -170,7 +168,7 @@ function asyncOperationForOTPMatch(otp, callback) {
 1. 從&#x200B;**選取動作**&#x200B;下拉式清單中選取&#x200B;**[!UICONTROL 隱藏]**。 例如，隱藏`userdetails`面板。
 1. 按一下&#x200B;**[!UICONTROL 「完成」]**。
 
-![失敗回呼方法](/help/forms/assets/rule-editor-failure-callback.png){width=50%， height=50%}
+![失敗回呼方法](/help/forms/assets/rule-editor-failure-callback.png){width=50%, height=50%}
 
 請參考下方的熒幕擷圖，其中使用者以`123`身分進入OTP，且按一下`Confirm`按鈕時會顯示錯誤訊息。
 
@@ -217,7 +215,7 @@ function asyncOperationForOTPMatch(otp, callback) {
 
 ![為非同步函式建立規則](/help/forms/assets/rule-for-async-funct.png){width=50%}
 
-請參考下方主控台視窗的熒幕擷圖，以示範當使用者按一下`Fetch`按鈕時，會叫用自訂函式`callAsyncFunction`，進而呼叫非同步函式`asyncFunction`。 Inspect主控台視窗中，檢視對按鈕點按的回應：
+請參考下方主控台視窗的熒幕擷圖，以示範當使用者按一下`Fetch`按鈕時，會叫用自訂函式`callAsyncFunction`，進而呼叫非同步函式`asyncFunction`。 檢查主控台視窗以檢視按鈕點選的回應：
 
 ![主控台視窗](/help/forms/assets/async-custom-funct-console.png)
 
