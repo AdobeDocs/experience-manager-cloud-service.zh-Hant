@@ -1,19 +1,19 @@
 ---
 title: 使用設定管道
-description: 瞭解如何使用設定管道來部署不同的設定AEM as a Cloud Service，例如記錄轉送設定、清除相關的維護任務和各種CDN設定。
+description: 瞭解如何使用設定管道在AEM as a Cloud Service中部署不同的設定，例如記錄轉送設定、清除相關的維護任務和各種CDN設定。
 feature: Operations
 role: Admin
 exl-id: bd121d31-811f-400b-b3b8-04cdee5fe8fa
-source-git-commit: 0b4ed7a99400bb5f91f513bbcd01862cdced03c5
+source-git-commit: 4c166193ec464bb66fe00ff648c2c449ab5b3eab
 workflow-type: tm+mt
-source-wordcount: '991'
+source-wordcount: '1024'
 ht-degree: 1%
 
 ---
 
 # 使用設定管道 {#config-pipelines}
 
-瞭解如何使用設定管道來部署不同的設定AEM as a Cloud Service，例如記錄轉送設定、清除相關的維護任務和各種CDN設定。
+瞭解如何使用設定管道在AEM as a Cloud Service中部署不同的設定，例如記錄轉送設定、清除相關的維護任務和各種CDN設定。
 
 ## 概觀 {#overview}
 
@@ -46,7 +46,8 @@ Cloud Manager設定管道將設定檔案（以YAML格式建立）部署到目標
 | [基本驗證](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token#basic-auth) | `CDN` | 為保護特定URL的基本驗證對話方塊宣告使用者名稱和密碼。 |
 | [版本清除維護任務](/help/operations/maintenance.md#purge-tasks) | `MaintenanceTasks` | 透過在應清除內容版本的時機周圍宣告規則來最佳化AEM存放庫 |
 | [稽核記錄清除維護任務](/help/operations/maintenance.md#purge-tasks) | `MaintenanceTasks` | 最佳化AEM稽核記錄，透過在應清除記錄的時間周圍宣告規則來提高效能 |
-| [記錄檔轉送](/help/implementing/developing/introduction/log-forwarding.md) | `LogForwarding` | 設定可將記錄轉送至不同目的地的端點和認證，包括Azure Blob Storage、Datadog、HTTPS、Elasticsearch、Splunk) |
+| [記錄檔轉送](/help/implementing/developing/introduction/log-forwarding.md) | `LogForwarding` | 設定可將記錄轉送至不同目的地的端點和認證，包括Azure Blob Storage、Datadog、HTTPS、Elasticsearch、Splunk |
+| [正在註冊使用者端ID](/help/implementing/developing/open-api-based-apis.md) | `API` | 註冊使用者端ID，將Adobe Developer Console API專案範圍設定為特定AEM環境。 使用需要驗證的OpenAPI型API時需要此專案 |
 
 ## 建立和管理設定管道 {#creating-and-managing}
 
