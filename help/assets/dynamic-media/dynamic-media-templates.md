@@ -4,9 +4,9 @@ description: 瞭解如何使用WYSIWYG範本編輯器建立 [!DNL Dynamic Media]
 hide: true
 role: User
 exl-id: 07de648e-4ae2-4524-8e05-3cf10bb6006d
-source-git-commit: 946f943dd02bb6832674ed7e37830ddeb592e548
+source-git-commit: 184149144d1f8d204241fcc477f937fa7c225895
 workflow-type: tm+mt
-source-wordcount: '3026'
+source-wordcount: '3106'
 ht-degree: 1%
 
 ---
@@ -50,7 +50,7 @@ ht-degree: 1%
     </tr>
 </table>
 
-使用[!DNL Dynamic Media]範本(WYSIWYG範本編輯器)，為您的橫幅和傳單建立即時可自訂的範本。 在下游應用程式中使用您的[!DNL Dynamic Media]範本。 [!DNL Dynamic Media]範本包含影像和文字圖層。 新增引數至範本的影像和文字圖層，並使用[[!DNL Dynamic Media] URL](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/wysiwyg/storage/catalog-urls-dynamic-media)來重新定位和調整圖層大小，並即時更新其內容。
+使用[!DNL Dynamic Media]範本(WYSIWYG範本編輯器)，為您的橫幅和傳單建立即時可自訂的範本。 發佈您的[!DNL Dynamic Media]範本並在下游應用程式中使用。 [!DNL Dynamic Media]範本包含影像和文字圖層。 新增引數至範本的影像和文字圖層，並使用[[!DNL Dynamic Media] URL](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/wysiwyg/storage/catalog-urls-dynamic-media)來重新定位和調整圖層大小，並即時更新其內容。
 
 部分主要功能包括：
 
@@ -88,7 +88,7 @@ ht-degree: 1%
 執行以下步驟來建立[!DNL Dynamic Media]範本：
 
 1. 導覽至您的[!DNL Assets View]，並在![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets ]**中[建立資料夾](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/add-delete-assets-view)。 ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]**&#x200B;中的資料夾樹狀結構會在&#x200B;**[!UICONTROL Dynamic Media Assets]**&#x200B;中復寫。 將您的[!DNL Dynamic Media]範本儲存在此[!UICONTROL Dynamic Media Assets]資料夾中。
-1. 選取![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets ]**和[將您的影像同時上傳和發佈至 [!DNL AEM] 和 [!DNL Dynamic Media] 和](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm#dynamic-media-publish-mode-set-to-upon-activation)，以使用這些影像來建立範本。
+1. 選取![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets ]**和[將您的影像同時上傳和發佈至 [!DNL AEM] 和 [!DNL Dynamic Media] 和](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm#dynamic-media-publish-mode-set-to-upon-activation)，以使用這些影像來建立範本。 需要發佈影像才能產生範本的傳遞URL，此URL可用於下游應用程式。
 1. [建立空白畫布](#create-a-canvas)
 1. [將影像新增至畫布](#add-images-to-the-canvas)
 1. [新增文字圖層至畫布](#add-text-to-the-canvas)
@@ -108,6 +108,7 @@ ht-degree: 1%
    >[!NOTE]
    >
    >  範本會儲存在您建立它的位置。 在[!DNL Assets View]首頁上，選取&#x200B;**[!UICONTROL Dynamic Media Assets]**，然後按一下&#x200B;**[!UICONTROL 建立範本]**，將範本儲存在&#x200B;**[!UICONTROL Dynamic Media Assets]**&#x200B;根資料夾中。
+
 1. 指定範本名稱、定義畫布寬度和高度，然後按一下[建立]。**** 空白畫布顯示，兩側都有選單選項以用於建立範本。 將游標停留在選單選項上可檢視其工具提示。
    ![即時可自訂的範本](/help/assets/assets/blank-canvas-page.png)
 
@@ -121,18 +122,18 @@ ht-degree: 1%
 * ![可自訂的範本](/help/assets/assets/add-text.svg)：按一下以將文字新增至畫布。
 * ![可自訂的範本](/help/assets/assets/show-layers-list.svg)：按一下以檢視畫布上的所有圖層（影像和文字）清單。 加入畫布的每個影像和文字都會以個別的圖層表示。
 
-**左窗格上的功能表選項：**&#x200B;請將這些選項用於一般編輯器動作，如下所述。
+**左窗格上的功能表選項：**&#x200B;請將這些選項用於下列一般編輯器動作。
 
-* ![DM範本](/help/assets/assets/layer-selector.svg)：選取圖層。
-* ![支援自訂的範本](/help/assets/assets/bring-forward.svg)：按一下以將選取的圖層往前移，或按&#x200B;**Ctrl** + **]** (Windows)或&#x200B;**Cmd** + **]** (Mac)。
-* ![如何建立可輕鬆自訂的範本](/help/assets/assets/send-backward.svg)：按一下以向後傳送選取的圖層，或按下&#x200B;**Ctrl** + **[** (Windows)或&#x200B;**Cmd** + **[** (Mac)。
-* ![建立可立即自訂的範本](/help/assets/assets/undo.svg)：按一下以復原上一個動作，或按&#x200B;**Ctrl** + **Z** (Windows)或&#x200B;**Cmd** + **Z** (Mac)。
-* ![快速建立橫幅的範本](/help/assets/assets/redo.svg)：按一下以重做上一個動作，或按下&#x200B;**Ctrl** + **Y** (Windows)或&#x200B;**Cmd** + **Y** (Mac)。
-* ![快速建立傳單的範本](/help/assets/assets/zoom-in.svg)：按一下以放大畫布或按&#x200B;**Ctrl** + **+** (Windows)或Cmd + **+** (Mac)。
-* ![快速建立橫幅的範本](/help/assets/assets/Zoom-out.svg)：按一下以縮小畫布或按&#x200B;**Ctrl** + **-** (Windows)或&#x200B;**Cmd** + **-** (Mac)。
+* ![DM範本](/help/assets/assets/layer-selector.svg)：選取![DM範本](/help/assets/assets/layer-selector.svg)，然後按一下畫布上的圖層來加以選取。
+* ![支援自訂的範本](/help/assets/assets/bring-forward.svg)：按一下支援自訂的![範本](/help/assets/assets/bring-forward.svg)或使用鍵盤快速鍵、**Ctrl** + **]** (Windows)或&#x200B;**Cmd** + **]** (Mac)以轉存選取的圖層。
+* ![如何建立可輕鬆自訂的範本](/help/assets/assets/send-backward.svg)：按一下![如何建立可輕鬆自訂的範本](/help/assets/assets/send-backward.svg)或使用鍵盤快速鍵，**Ctrl** + **[** (Windows)或&#x200B;**Cmd** + **[** (Mac)以向後傳送選取的圖層。
+* ![建立可立即自訂的範本](/help/assets/assets/undo.svg)：按一下![建立可立即自訂的範本](/help/assets/assets/undo.svg)或使用鍵盤快速鍵、**Ctrl** + **Z** (Windows)或&#x200B;**Cmd** + **Z** (Mac)以復原上一個動作。
+* ![可快速建立橫幅的範本](/help/assets/assets/redo.svg)：按一下![範本可快速建立橫幅](/help/assets/assets/redo.svg)，或使用鍵盤快速鍵，**Ctrl** + **Y** (Windows)或&#x200B;**Cmd** + **Y** (Mac)可重做上一個動作。
+* ![快速建立傳單的範本](/help/assets/assets/zoom-in.svg)：按一下![範本快速建立傳單](/help/assets/assets/zoom-in.svg)，或使用鍵盤快速鍵，**Ctrl** + **+** (Windows)或&#x200B;**Cmd** + **+** (Mac)放大畫布。
+* ![快速建立橫幅的範本](/help/assets/assets/Zoom-out.svg)：按一下![範本快速建立橫幅](/help/assets/assets/Zoom-out.svg)或使用鍵盤快速鍵、**Ctrl** + **-** (Windows)或&#x200B;**Cmd** + **-** (Mac)以縮小畫布。
 * 如果沒有編輯文字或屬性，請按&#x200B;**退格鍵**&#x200B;或&#x200B;**刪除**&#x200B;刪除選取的圖層。
 
-按一下![範本以快速建立傳單](/help/assets/assets/show-layers-list.svg) **>畫布圖層上還有**&#x200B;個選項(![](/help/assets/assets/three-dots.svg))可在建立範本時隨時編輯畫布維度。
+按一下![範本以快速建立傳單](/help/assets/assets/show-layers-list.svg)，並在畫布圖層上選取更多選項(![](/help/assets/assets/three-dots.svg))，以在建立範本時隨時編輯畫布維度。
 ![](/help/assets/assets/edit-canvas1.png)
 
 >[!NOTE]
@@ -143,7 +144,7 @@ ht-degree: 1%
 
 執行以下步驟，將影像新增至畫布：
 
-1. 按一下![立即建立橫幅](/help/assets/assets/add-image.svg)以顯示[Asset Selector](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector)面板。 面板會顯示您的AEM Assets執行個體中同步至[!DNL Dynamic Media]的影像。
+1. 按一下![立即建立橫幅](/help/assets/assets/add-image.svg)以開啟[資產選擇器](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector)面板。 面板會顯示您的AEM Assets執行個體中同步至[!DNL Dynamic Media]的影像。
 1. 瀏覽面板或使用搜尋列中的關鍵字來尋找特定影像。
 1. 將影像拖放到畫布上以使用。 請參閱[**[!UICONTROL 屬性面板]**](#reposition-resize-delete-a-layer)，以調整畫布上的圖層大小或重新定點陣圖層。
    ![在秒內建立橫幅](/help/assets/assets/add-image-to-canvas.png)
