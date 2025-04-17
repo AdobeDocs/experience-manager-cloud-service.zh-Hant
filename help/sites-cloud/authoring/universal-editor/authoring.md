@@ -5,10 +5,10 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 08bcf9a65854478d2ce057e31b4c27690d1bf240
+source-git-commit: da14ed18b786c1f19d76926ed027d13a53275af3
 workflow-type: tm+mt
-source-wordcount: '1405'
-ht-degree: 34%
+source-wordcount: '1395'
+ht-degree: 30%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 34%
 
 ## 簡介 {#introduction}
 
-Universal Editor 支援在任意實作中編輯任何方面的內容，以便提供卓越的體驗、提高內容速度並提供最先進的開發人員體驗。
+通用編輯器可讓您編輯任何實作中任何內容的任何方面，因此您可以提供卓越的體驗並提高內容速度。
 
 為此，Universal Editor 為內容作者提供直觀的 UI，只需要最基本的培訓就能立即進入狀況並開始編輯內容。本文件說明了 Universal Editor 的編寫體驗。
 
@@ -200,7 +200,7 @@ Universal Editor 支援在任意實作中編輯任何方面的內容，以便提
 
 若要深入瞭解通用編輯器的技術細節，請參閱這些開發人員檔案。
 
-* [Universal Editor 簡介](/help/implementing/universal-editor/introduction.md) - 了解 Universal Editor 如何在任意實作中編輯任何方面的內容，以便提供卓越的體驗、提高內容速度並提供最先進的開發人員體驗。
+* [通用編輯器簡介](/help/implementing/universal-editor/introduction.md) — 瞭解通用編輯器如何在任何實作中啟用編輯任何內容的任何方面，以便您提供卓越的體驗並提高內容速度。
 * [AEM 中 Universal Editor 快速入門](/help/implementing/universal-editor/getting-started.md) - 了解如何存取 Universal Editor，以及如何開始檢測您的第一個 AEM 應用程式以使用它。
 * [Universal Editor 架構](/help/implementing/universal-editor/architecture.md) - 了解 Universal Editor 的架構，以及資料如何在其服務和階層之間流動。
 * [屬性和類型](/help/implementing/universal-editor/attributes-types.md) - 了解 Universal Editor 需要的資料屬性和類型。
