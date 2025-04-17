@@ -4,9 +4,9 @@ description: 了解如何設定 Cloud Manager 與您自己的私人 GitHub 存�
 exl-id: 5232bbf5-17a5-4567-add7-cffde531abda
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 7ce39020870943243e2d48aa66370f2cca9c2ac0
+source-git-commit: 0712ba8918696f4300089be24cad3e4125416c02
 workflow-type: tm+mt
-source-wordcount: '979'
+source-wordcount: '968'
 ht-degree: 34%
 
 ---
@@ -153,9 +153,7 @@ Cloud Manager 現在知道您的 GitHub 存放庫，但仍然需要存取它。�
 
 
 
-## 限制 {#limitations}
-
-某些限制適用於搭配Cloud Manager使用私人GitHub雲端存放庫。
+## 使用說明 {#usage-notes}
 
 * 私人存放庫不支援 Web 層和設定管道。
 * 在生產全端管道上使用私人存放庫時，不會建立和推送 Git 標記。

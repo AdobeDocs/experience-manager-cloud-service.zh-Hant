@@ -4,7 +4,7 @@ description: 瞭解關於Adobe Experience Manager as a Cloud Service中的Cloud 
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 6d6e3e452b7910148e22d95a222c1a3b674ea83b
+source-git-commit: 0712ba8918696f4300089be24cad3e4125416c02
 workflow-type: tm+mt
 source-wordcount: '809'
 ht-degree: 58%
@@ -60,7 +60,7 @@ AEM as a Cloud Service中的Cloud Manager 2025.4.0發行日期是2025年4月10�
 >
 >目前，立即可用的提取請求代碼品質檢查僅限於 GitHub 託管的存放庫，但我們正在進行一項更新以將此功能擴展到其他 Git 供應商。
 
-如果您有興趣測試此新功能並分享您的意見回饋，請使用與您的 Adobe ID 關聯的電子郵件地址向 [Grp-CloudManager_BYOG@adobe.com](mailto:Grp-CloudManager_BYOG@adobe.com) 傳送電子郵件。請務必包含您要使用的 Git 平台以及您是否使用私人/公開或企業存放庫結構。
+如果您有興趣測試此新功能並分享您的意見回饋，請使用與您的 Adobe ID 關聯的電子郵件地址向 [Grp-CloudManager_BYOG@adobe.com](mailto:grp-cloudmanager_byog@adobe.com) 傳送電子郵件。請務必包含您要使用的 Git 平台以及您是否使用私人/公開或企業存放庫結構。
 
 ### AEM 首頁 {#aem-home}
 

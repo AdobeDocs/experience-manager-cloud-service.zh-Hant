@@ -5,9 +5,9 @@ exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 2573eb5f8a8ff21a8e30b94287b554885cd1cd89
+source-git-commit: 0712ba8918696f4300089be24cad3e4125416c02
 workflow-type: tm+mt
-source-wordcount: '1184'
+source-wordcount: '1185'
 ht-degree: 41%
 
 ---
@@ -42,7 +42,7 @@ _只有 Full Stack Code 流水線類型支援程式碼掃描、功能測試、UI
 
 1. 在&#x200B;**[我的程式](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;主控台上，按一下您要部署程式碼的程式。
 
-1. 在&#x200B;**總覽**&#x200B;頁面上的行動號召區域中，按一下&#x200B;**部署**。
+1. 在&#x200B;**總覽**&#x200B;頁面的call-to-action區域中，按一下&#x200B;**部署**。
 
    ![號召性用語](assets/deploy-code1.png)
 
@@ -64,7 +64,7 @@ _只有 Full Stack Code 流水線類型支援程式碼掃描、功能測試、UI
 
 **階段部署**&#x200B;階段涉及下列步驟：
 
-| 中繼部署步驟 | 說明 |
+| 中繼部署步驟 | 描述 |
 | --- | --- |
 | 驗證  | 確保管道設定為使用目前可用的資源。 例如，測試設定的分支是否存在並且環境是否可用。 |
 | 建置和單元測試 | 執行容器化的建置流程。<br>如需組建環境的詳細資訊，請參閱[組建環境詳細資料](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)。 |
@@ -78,7 +78,7 @@ _只有 Full Stack Code 流水線類型支援程式碼掃描、功能測試、UI
 
 **中繼測試**&#x200B;階段涉及下列步驟：
 
-| 中繼測試步驟 | 說明 |
+| 中繼測試步驟 | 描述 |
 | --- | --- |
 | 產品功能測試 | Cloud Manager管道會執行針對預備環境執行的測試。<br>另請參閱[產品功能測試](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing)。 |
 | 自訂功能測試 | 步驟一律存在且不能跳過。 如果建置未產生測試JAR，則測試會自動通過。<br>另請參閱[自訂功能測試](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing)。 |
@@ -134,7 +134,7 @@ _只有 Full Stack Code 流水線類型支援程式碼掃描、功能測試、UI
 >
 >在重新執行中，UI 會標示建置步驟，以反映這是在複製成品，而不是重新建置。
 
-### 限制 {#limitations}
+### 使用說明 {#usage-notes}
 
 * 重新執行生產部署步驟僅適用於最後執行。
 * 重新執行不適用於推送更新執行。 如果最後一次執行是推送更新執行，則無法重新執行。

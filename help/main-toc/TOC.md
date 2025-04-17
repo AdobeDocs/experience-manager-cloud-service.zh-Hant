@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的運作方式以及該軟體可以為您做哪些事。
 breadcrumb-title: 使用手冊
 user-guide-title: 'AEM as a Cloud Service '
-source-git-commit: d9db32110e1e0aaa5bdc20bd6b4bff6da6a3a3a3
+source-git-commit: e470244d2b6e039f47d06c332a0fb98cff1b0433
 workflow-type: tm+mt
 source-wordcount: '6152'
-ht-degree: 94%
+ht-degree: 99%
 
 ---
 
@@ -30,7 +30,7 @@ ht-degree: 94%
    + [文件歷程](/help/journey-documentation/documentation-journeys.md)
 + 發行說明 {#release-notes}
    + [發行資訊](/help/release-notes/home.md)
-   + AEMaaCS功能發行說明 {#release-notes}
+   + AEMaaCS 功能發行說明 {#release-notes}
       + [最新發行說明](/help/release-notes/release-notes-cloud/release-notes-current.md)
       + 2025 {#2025}
          + [2025.2.0 版發行說明](/help/release-notes/release-notes-cloud/2025/release-notes-2025-2-0.md)
@@ -46,7 +46,7 @@ ht-degree: 94%
          + [2024.4.0 版發行說明](/help/release-notes/release-notes-cloud/2024/release-notes-2024-4-0.md)
          + [2024.3.0 版發行說明](/help/release-notes/release-notes-cloud/2024/release-notes-2024-3-0.md)
          + [2024.1.0 版發行說明](/help/release-notes/release-notes-cloud/2024/release-notes-2024-1-0.md)
-      + 2023年 {#2023}
+      + 2023 {#2023}
          + [2023.12.0 版發行說明](/help/release-notes/release-notes-cloud/2023/release-notes-2023-12-0.md)
          + [2023.11.0 版發行說明](/help/release-notes/release-notes-cloud/2023/release-notes-2023-11-0.md)
          + [2023.10.0 版發行說明](/help/release-notes/release-notes-cloud/2023/release-notes-2023-10-0.md)
@@ -90,7 +90,7 @@ ht-degree: 94%
          + [2020.4.0 版發行說明](/help/release-notes/release-notes-cloud/2020/release-notes-2020-4-0.md)
          + [2020.3.0 版發行說明](/help/release-notes/release-notes-cloud/2020/release-notes-2020-3-0.md)
          + [2020.2.0 版發行說明](/help/release-notes/release-notes-cloud/2020/release-notes-2020-2-0.md)
-   + AEMaaCS維護發行說明 {#maintenance}
+   + AEMaaCS 維護版本發行說明 {#maintenance}
       + [目前維護版本發行說明](/help/release-notes/maintenance/latest.md)
       + 2025 {#2025}
          + [2025.4.0 維護版本發行說明](/help/release-notes/maintenance/2025/2025-4-0.md)
@@ -118,7 +118,7 @@ ht-degree: 94%
          + [2023.4.0 維護版本發行說明](/help/release-notes/maintenance/2023/2023-4-0.md)
          + [2023.2.0 維護版本發行說明](/help/release-notes/maintenance/2023/2023-2-0.md)
          + [2023.1.0 維護版本發行說明](/help/release-notes/maintenance/2023/2023-1-0.md)
-   + Cloud Manager發行說明 {#cloud-manager}
+   + Cloud Manager 發行說明 {#cloud-manager}
       + [目前版本](/help/implementing/cloud-manager/release-notes/current.md)
       + 2025 {#2025}
          + [2025.3.0](/help/implementing/cloud-manager/release-notes/2025/2025-3-0.md)
@@ -214,12 +214,12 @@ ht-degree: 94%
          + [2021.12.0 版發行說明](/help/journey-migration/release-notes/release-notes-migration-tools-2021-12-0.md)
          + [2021.11.0 版發行說明](/help/journey-migration/release-notes/release-notes-migration-tools-2021-11-0.md)
          + [2021.10.0 版發行說明](/help/journey-migration/release-notes/release-notes-migration-tools-2021-10-0.md)
-   + 適用於Experience Manager增強型聯結器的Workfront發行說明{#workfront}
-      + [Workfront for Experience Manager 加強連接器最新發行說明](/help/assets/release-notes-enhanced-connector-workfront.md)
-   + 產生變化版本的發行說明 {#generate-variations}
-      + [產生變化版本的最新發行說明](/help/generative-ai/release-notes-generate-variations.md)
-   + Universal Editor發行說明 {#univeral-editor}
-      + [通用編輯器的最新發行說明](/help/release-notes/universal-editor/current.md)
+   + Workfront for Experience Manager 增強型連接器發行說明{#workfront}
+      + [Workfront for Experience Manager 增強型連接器最新發行說明](/help/assets/release-notes-enhanced-connector-workfront.md)
+   + 產生變化版本發行說明 {#generate-variations}
+      + [產生變化版本最新發行說明](/help/generative-ai/release-notes-generate-variations.md)
+   + 通用編輯器發行說明 {#univeral-editor}
+      + [通用編輯器最新發行說明](/help/release-notes/universal-editor/current.md)
       + 2025 {#2025}
          + [2025.03.10 發行說明](/help/release-notes/universal-editor/2025/2025-03-10.md)
          + [2025.02.25 發行說明](/help/release-notes/universal-editor/2025/2025-02-25.md)
@@ -240,7 +240,7 @@ ht-degree: 94%
    + [新增功能 ](/help/release-notes/what-is-new.md)
    + [AEM Cloud Service 的重大變更](/help/release-notes/aem-cloud-changes.md)
    + [已過時和已移除的功能和 API](/help/release-notes/deprecated-removed-features.md)
-   + [發行前通道](/help/release-notes/prerelease.md)
+   + [預發行通道](/help/release-notes/prerelease.md)
 + 安全性 {#security}
    + [AEM as a Cloud Service 安全性概觀](/help/security/cloud-service-security-overview.md)
    + [設定 AEM as a Cloud Service 的進階網路](/help/security/configuring-advanced-networking.md)
@@ -255,7 +255,7 @@ ht-degree: 94%
    + [Sling Service 使用者對應和服務使用者定義的最佳做法](/help/security/best-practices-for-sling-service-user-mapping-and-service-user-definition.md)
    + [Adobe as a Cloud Service 的客戶自控金鑰](/help/security/customer-managed-keys.md)
 + 上線 {#onboarding}
-   + [從這裡開始](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html?lang=zh-hant)
+   + [從這裡開始](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html)
    + 上線歷程 {#journey}
       + [上線歷程概觀](/help/journey-onboarding/overview.md)
       + [上線準備](/help/journey-onboarding/preparation.md)
@@ -277,19 +277,19 @@ ht-degree: 94%
       + [建立示範網站](/help/journey-sites/demos-add-on/create-site.md)
       + [啟用 Screens](/help/journey-sites/demos-add-on/screens.md)
       + [管理您的示範網站](/help/journey-sites/demos-add-on/manage.md)
-   + 其他入門概念 {#concepts}
+   + 其他上線概念 {#concepts}
       + [Cloud Manager 簡介](/help/onboarding/cloud-manager-introduction.md)
       + [AEM as a Cloud Service 團隊和產品設定檔](/help/onboarding/aem-cs-team-product-profiles.md)
       + [通知設定檔](/help/journey-onboarding/notification-profiles.md)
-+ AEMaaCS試用版 {#trials}
-   + Headless試用版 {#headless}
++ AEMaaCS 試用版 {#trials}
+   + Headless 試用版 {#headless}
       + [在範例 React 應用程式中自訂內容](/help/trials/headless/customize-app.md)
       + [為您的應用程式建立內容結構](/help/trials/headless/content-structure.md)
       + [建立 Headless 內容](/help/trials/headless/create-content.md)
       + [通過 GraphQL API 擷取內容](/help/trials/headless/extract-content.md)
       + [使用 JavaScript 擷取 JSON 內容](/help/trials/headless/code-playground.md)
       + [使用通用編輯器進行內嵌編輯](/help/trials/headless/universal-editor.md)
-+ AEM as a Cloud Service移轉歷程 {#migration-journey}
++ AEM as a Cloud Service 移轉歷程 {#migration-journey}
    + [移動 AEM as a Cloud Service 快速入門](/help/journey-migration/getting-started.md)
    + [整備階段](/help/journey-migration/readiness.md)
    + [實作階段](/help/journey-migration/implementation.md)
@@ -297,15 +297,15 @@ ht-degree: 94%
    + [上線後](/help/journey-migration/post-go-live.md)
    + [Experience Manager as a Cloud Service 合作夥伴移轉指南](/help/journey-migration/getting-started-partners.md)
    + Cloud Acceleration Manager {#cloud-acceleration-manager}
-      + Cloud Acceleration Manager簡介 {#introduction-cam}
+      + Cloud Acceleration Manager 簡介 {#introduction-cam}
          + [概觀](/help/journey-migration/cloud-acceleration-manager/introduction/overview-cam.md)
          + [優點](/help/journey-migration/cloud-acceleration-manager/introduction/benefits-cam.md)
-      + 使用Cloud Acceleration Manager {#using-cam}
+      + 使用 Cloud Acceleration Manager {#using-cam}
          + [Cloud Acceleration Manager 快速入門](/help/journey-migration/cloud-acceleration-manager/using-cam/getting-started-cam.md)
          + [整備階段](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-readiness-phase.md)
          + [實作階段](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-implementation-phase.md)
          + [上線階段](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-golive-phase.md)
-   + 雲端轉換工具 {#cloud-migration}
+   + 雲端轉變工具 {#cloud-migration}
       + 最佳做法分析工具 {#best-practices-analyzer}
          + [概觀](/help/journey-migration/best-practices-analyzer/overview-best-practices-analyzer.md)
          + [使用最佳做法分析工具](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md)
@@ -330,7 +330,7 @@ ht-degree: 94%
          + [移轉後管理主體](/help/journey-migration/managing-principals-after-migration.md)
          + [移轉後將主體大量上傳到 IMS](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/bulk-principal-uploading.md)
          + [內容轉移工具疑難排解](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/troubleshooting-content-transfer-tool.md)
-         + 舊版使用者對應工具（舊版）{#legacy-user-mapping-tool}
+         + 舊版使用者對應工具 (舊版){#legacy-user-mapping-tool}
             + [概觀](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/overview-user-mapping-tool-legacy.md)
             + [重要考量](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/considerations-user-mapping-tool-legacy.md)
             + [使用使用者對應工具](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/using-user-mapping-tool-legacy.md)
@@ -355,7 +355,7 @@ ht-degree: 94%
       + [元件主控台](/help/sites-cloud/authoring/components-console.md)
       + [路徑選取](/help/sites-cloud/authoring/path-selection.md)
       + [疑難排解](/help/sites-cloud/authoring/troubleshooting.md)
-      + Sites 主控台 {#sites-console}
+      + Sites 控制台 {#sites-console}
          + [Sites 主控台](/help/sites-cloud/authoring/sites-console/introduction.md)
          + [主控台側面板](/help/sites-cloud/authoring/sites-console/console-side-panel.md)
          + [建立新網站](/help/sites-cloud/authoring/sites-console/create-site.md)
@@ -436,14 +436,14 @@ ht-degree: 94%
          + [分析結構](/help/sites-cloud/administering/content-fragments/analysis.md)
          + [內容片段主控台中的資產](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md)
          + [鍵盤快速鍵](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md)
-      + 網站建立 {#site-creation}
+      + 建立網站 {#site-creation}
          + [建立新網站](/help/sites-cloud/administering/site-creation/create-site.md)
          + [啟用前端管道](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md)
          + [使用網站邊欄](/help/sites-cloud/administering/site-creation/site-rail.md)
          + [網站範本](/help/sites-cloud/administering/site-creation/site-templates.md)
          + [回應式版面](/help/sites-cloud/administering/responsive-layout.md)
          + [網站主題](/help/sites-cloud/administering/site-creation/site-themes.md)
-         + AEM 快速網站建立歷程  {#quick-site}
+         + AEM 快速網站建立歷程 {#quick-site}
             + [了解 AEM 快速網站建立](/help/journey-sites/quick-site/overview.md)
             + [了解 Cloud Manager](/help/journey-sites/quick-site/cloud-manager.md)
             + [使用範本建立網站](/help/journey-sites/quick-site/create-site.md)
@@ -454,7 +454,7 @@ ht-degree: 94%
             + [部署您的自訂主題](/help/journey-sites/quick-site/deploy-theme.md)
       + 重複使用內容 {#reusing-content}
          + [MSM 和翻譯](/help/sites-cloud/administering/msm-and-translation.md)
-         + 多站點管理員 {#msm}
+         + 多網站管理器 {#msm}
             + [MSM 和 Live Copy 概觀](/help/sites-cloud/administering/msm/overview.md)
             + [設定 Live Copy 同步](/help/sites-cloud/administering/msm/live-copy-sync-config.md)
             + [建立和同步 Live Copies](/help/sites-cloud/administering/msm/creating-live-copies.md)
@@ -463,7 +463,7 @@ ht-degree: 94%
             + [MSM 最佳做法](/help/sites-cloud/administering/msm/best-practices.md)
             + [疑難排解和常見問題 ](/help/sites-cloud/administering/msm/troubleshooting.md)
          + 翻譯 {#translation}
-            + 網站翻譯歷程 {#sites}
+            + Sites 翻譯歷程 {#sites}
                + [了解 AEM 中的網站翻譯](/help/journey-sites/translation/overview.md)
                + [開始使用 AEM Sites 翻譯](/help/journey-sites/translation/getting-started.md)
                + [了解網站內容以及如何在 AEM 中翻譯](/help/journey-sites/translation/learn-about.md)
@@ -483,7 +483,7 @@ ht-degree: 94%
       + [管理標記](/help/sites-cloud/administering/tags.md)
       + [管理工作流程](/help/sites-cloud/administering/workflows-administering.md)
       + [範本控制台](/help/sites-cloud/administering/templates-console.md)
-   + 與AEM as a Cloud Service整合 {#integrations}
+   + 整合 AEM as a Cloud Service  {#integrations}
       + [整合 Adobe Analytics](/help/sites-cloud/integrating/integrating-adobe-analytics.md)
       + [整合 Adobe Analytics 自動化設定](/help/sites-cloud/integrating/adobe-analytics-exc-setup-automation.md)
       + [與 Adobe Learning Manager 整合](/help/sites-cloud/integrating/integrating-adobe-learning-manager.md)
@@ -507,7 +507,7 @@ ht-degree: 94%
    + 管理數位資產 {#manage}
       + 微前端資產選擇器 {#asset-selector}
          + [資產選擇器概觀](/help/assets/overview-asset-selector.md)
-         + Asset Selector整合 {#asset-selector-integration}
+         + 資產選擇器整合 {#asset-selector-integration}
             + [資產選擇器整合概觀](/help/assets/integrate-asset-selector.md)
             + [整合資產選擇器與 Adobe 應用程式](/help/assets/integrate-asset-selector-adobe-app.md)
             + [整合資產選擇器與非 Adobe 應用程式](/help/assets/integrate-asset-selector-non-adobe-app.md)
@@ -549,7 +549,7 @@ ht-degree: 94%
       + [使用 [!DNL Creative Cloud] API 處理資產](/help/assets/cc-api-integration.md)
       + [影像的顏色標記](/help/assets/color-tag-images.md)
       + [管理 PDF 文件](/help/assets/manage-pdf-documents.md)
-   + 設定、管理及擴充[!DNL Assets] {#admin}
+   + 設定、管理及擴充 [!DNL Assets] {#admin}
       + [偵測重複資產](/help/assets/detect-duplicate-assets.md)
       + [開發人員文件和 API 參考](/help/assets/developer-reference-material-apis.md)
       + [資料夾中繼資料結構](/help/assets/folder-metadata-schema.md)
@@ -567,7 +567,7 @@ ht-degree: 94%
       + [MediaLibrary 功能](/help/assets/medialibrary.md)
       + [匯入和匯出資產中繼資料](/help/assets/metadata-import-export.md)
       + [設定資產上傳限制](/help/assets/configure-asset-upload-restrictions.md)
-   + 共用和發佈資產 {#brand-portal}
+   + 共用與發佈資產 {#brand-portal}
       + [設定  [!DNL Assets]  和 [!DNL Brand Portal]](/help/assets/configure-aem-assets-with-brand-portal.md)
       + [將資產發佈至 [!DNL Brand Portal]](/help/assets/publish-to-brand-portal.md)
       + [資產從  [!DNL Brand Portal] 發佈到 [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=zh-hant)
@@ -586,7 +586,7 @@ ht-degree: 94%
       + [預覽 - JSON 代表](/help/assets/content-fragments/content-fragments-json-preview.md)
       + [使用 MSM 重複使用內容片段 (針對資產)](/help/assets/content-fragments/content-fragments-msm.md)
    + Dynamic Media {#dynamicmedia}
-      + Dynamic Media歷程：基礎知識 {#dm-journey}
+      + Dynamic Media 歷程：基礎知識 {#dm-journey}
          + [第一部分：什麼是 Dynamic Media - 使用案例 - 資產如何流經系統](/help/assets/dynamic-media/dm-journey-part1.md)
          + [第二部分：Dynamic Media URL 剖析 - 影像預設集基礎 - 關於影像集、迴轉集和混合媒體集](/help/assets/dynamic-media/dm-journey-part2.md)
          + [Dynamic Media 最佳做法](/help/assets/dynamic-media/dm-best-practices.md)
@@ -653,7 +653,7 @@ ht-degree: 94%
          + [將遠端 AEM Assets 與 AEM Sites 整合](/help/assets/integrate-remote-approved-assets-with-sites.md)
          + [常見問題](/help/assets/dynamic-media-open-apis-faqs.md)
          + [設定自訂網域](/help/assets/configure-custom-domain.md)
-   + 使用Assets檢視 {#assets-view}
+   + 使用資產視圖 {#assets-view}
       + [簡介](/help/assets/assets-view-introduction.md)
       + [快速入門](/help/assets/get-started-assets-view.md)
       + [我的工作區](/help/assets/my-workspace-assets-view.md)
@@ -707,7 +707,7 @@ ht-degree: 94%
       + [更新 [!DNL Workfront for Experience Manager enhanced connector]](/help/assets/update-workfront-enhanced-connector.md)
    + 與 Adobe Express 整合 {#integration-adobe-express}
       + [與 Adobe Express 原生整合](/help/assets/native-integration-adobe-express.md)
-   + 與Creative Cloud整合 {#integration-creative-cloud}
+   + 與 Creative Cloud 整合 {#integration-creative-cloud}
       + [將 AEM Assets 連結到 Creative Cloud](/help/assets/connect-assets-with-creative-cloud.md)
 + Forms {#forms}
    + 概觀 {#forms-overview}
@@ -742,7 +742,7 @@ ht-degree: 94%
          + [在 AEM Sites 頁面中內嵌最適化表單](/help/forms/embed-adaptive-form-aem-sites.md)
          + [將根據核心元件的最適化表單內嵌至外部網頁](/help/forms/embed-adaptive-form-core-components-external-web-page.md)
          + [將根據基礎元件的最適化表單內嵌至外部網頁](/help/forms/embed-adaptive-form-external-web-page.md)
-         + 整合Adaptive Forms與Adobe Marketo Engage{#integrate-adaptive-form-with-market-engage}
+         + 將自適應表單與 Adobe Marketo Engage 進行整合{#integrate-adaptive-form-with-market-engage}
             + [將 Adobe Marketo Engage 與 AEM Forms 進行整合](/help/forms/integrate-form-to-marketo-engage.md)
             + [設定新表單以與 Marketo Engage 進行整合](/help/forms/integrate-adaptive-form-with-marketo-engage.md)
             + [針對現有的最適化表單設定 Adobe Marketo Engage 資料來源](/help/forms/use-marketo-engage-data-source-in-form.md)
@@ -759,13 +759,13 @@ ht-degree: 94%
          + [處理表單資料模型](/help/forms/work-with-form-data-model.md)
          + [使用表單資料模型](/help/forms/using-form-data-model.md)
          + [設計最適化表單的 XML 結構](/help/forms/adaptive-form-xml-schema-form-model.md)
-   + 最適化表單 {#adaptive-forms-authoring}
+   + 自適應表單 {#adaptive-forms-authoring}
       + [建立最適化表單](/help/forms/create-an-adaptive-form.md)
       + [建立最適化表單片段](/help/forms/adaptive-form-fragments.md)
-      + [新增最適化表單至 AEM Sites 頁面或體驗片段](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+      + [新增自適應表單至 AEM Sites 頁面或體驗片段](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
       + 核心元件 {#authoring-adaptive-forms-core-components}
-         + 建立最適化表單 {#create-an-adaptive-form-on-forms-cs}
-            + [建立最適化表單](/help/forms/creating-adaptive-form-core-components.md)
+         + 建立自適應表單 {#create-an-adaptive-form-on-forms-cs}
+            + [建立自適應表單](/help/forms/creating-adaptive-form-core-components.md)
             + [設定以核心元件為主的最適化表單版面](/help/forms/layout-capabilities-adaptive-forms-core-components.md)
             + [建立最適化表單片段](/help/forms/adaptive-form-fragments-core-components.md)
             + [為最適化表單建立主題 - 核心元件](/help/forms/using-themes-in-core-components.md)
@@ -778,7 +778,7 @@ ht-degree: 94%
             + [為最適化表單設定提交動作](/help/forms/configure-submit-actions-core-components.md)
             + [將最適化表單提交至 Azure Blob 儲存體](/help/forms/configure-submit-action-azure-blob-storage.md)
             + [將最適化表單提交至 Microsoft](/help/forms/configure-submit-action-onedrive.md)
-            + 將最適化表單連線至Microsoft® SharePoint{#connect-to-sharepoint}
+            + 將自適應表單連結到 Microsoft® SharePoint{#connect-to-sharepoint}
                + [將最適化表單連結到 Microsoft](/help/forms/configure-submit-action-sharepoint.md)
                + [提交至 SharePoint 文件庫](/help/forms/connect-forms-to-sharepoint-document-library.md)
                + [提交至 SharePoint 清單](/help/forms/connect-forms-to-sharepoint-list.md)
@@ -798,7 +798,7 @@ ht-degree: 94%
             + [使用遷移公用程式工具將基礎元件型最適化表單轉換為核心元件型表單](/help/forms/migration-utility-tool-for-af-core-components.md)
             + [最適化表單中的電子郵件範本](/help/forms/html-email-templates-in-adaptive-forms.md)
             + [於 Experience Manager Forms 中管理發佈](/help/forms/manage-publication.md)
-            + 以核心元件為主之最適化表單的規則編輯器簡介{#rule-editor-core-components}
+            + 以核心元件為主之自適應表單的規則編輯器簡介{#rule-editor-core-components}
                + [以核心元件為主之最適化表單的規則編輯器簡介](/help/forms/rule-editor-core-components.md)
                + [以核心元件為主之最適化表單的規則編輯器使用者介面](/help/forms/rule-editor-core-components-user-interface.md)
                + [基礎規則編輯器與核心元件規則編輯器之間的差異](/help/forms/rule-editor-core-components-difference-tables.md)
@@ -806,23 +806,23 @@ ht-degree: 94%
                + [以核心元件為主之最適化表單的規則編輯器範例](/help/forms/rule-editor-core-components-usecases.md)
                + [在最適化表單中使用非同步函數](/help/forms/using-async-funct-in-rule-editor.md)
                + [對於基於核心元件的表單，在視覺規則編輯器中調用服務增強功能](/help/forms/invoke-service-enhancements-rule-editor.md)
-            + 以核心元件為主之最適化表單的自訂函數簡介{#create-and-use-custom-function-core-component}
+            + 以核心元件為主之自適應表單的自訂函數簡介{#create-and-use-custom-function-core-component}
                + [以核心元件為主之最適化表單的自訂函數簡介](/help/forms/create-and-use-custom-functions.md)
                + [建立和使用以核心元件為主之最適化表單的自訂函數](/help/forms/custom-function-core-component-create-function.md)
                + [自訂函數中的範圍物件](/help/forms/custom-function-core-component-scope-function.md)
                + [以核心元件為主之最適化表單的自訂函數範例](/help/forms/custom-function-core-components-use-cases.md)
-            + Forms Portal及其元件簡介{#introduction-to-forms-portal}
+            + Forms Portal 及其元件簡介{#introduction-to-forms-portal}
                + [Forms Portal 元件簡介](/help/forms/configure-forms-portal.md)
                + [使用「搜尋與清單」元件在 Sites 頁面列出表單。](/help/forms/list-forms-on-sites-page.md)
                + [使用「草稿與提交」元件在 Sites 頁面儲存表單並存為草稿](/help/forms/save-core-component-based-form-as-draft.md)
                + [使用「連結」元件新增表單連結至 Sites 頁面](/help/forms/add-form-link-to-aem-sites-page.md)
-      + 基礎元件 {#authoring-adaptive-forms-foundation-components}
-         + 將PDF forms轉換為最適化Forms {#afcs}
+      + Foundation 元件 {#authoring-adaptive-forms-foundation-components}
+         + 將您的 PDF 表單轉換為自適應表單 {#afcs}
             + [自動表單轉換服務簡介](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=zh-hant)
             + [將現有 PDF 表單轉換為最適化表單](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html?lang=zh-hant)
             + [檢閱並修正轉換後的表單](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/review-correct-ui-edited.html?lang=zh-hant#welcome-to-review-and-correct-editor)
-         + 建立最適化表單 {#create-an-adaptive-form-on-forms-cs}
-            + [製作最適化表單簡介](/help/forms/introduction-forms-authoring.md)
+         + 建立自適應表單 {#create-an-adaptive-form-on-forms-cs}
+            + [製作自適應表單簡介](/help/forms/introduction-forms-authoring.md)
             + [製作表單欄位的內容內說明](/help/forms/authoring-in-field-help.md)
             + [建立最適化表單](/help/forms/creating-adaptive-form.md)
             + [參考主題、範本和資料模型](/help/forms/reference-themes-templates-data-models.md)
@@ -834,29 +834,29 @@ ht-degree: 94%
             + [為最適化表單設計 JSON 結構](/help/forms/adaptive-form-json-schema-form-model.md)
             + [透過延遲載入改善大型表單的效能](/help/forms/lazy-loading-adaptive-forms.md)
             + [發佈和取消發佈表單和文件](/help/forms/publishing-unpublishing-forms.md)
-         + 將元件新增至最適化表單 {#add-components-to-an-adaptive-form}
-            + [在最適化表單中使用驗證碼](/help/forms/captcha-adaptive-forms.md)
+         + 將元件新增至自適應表單 {#add-components-to-an-adaptive-form}
+            + [在自適應表單中使用驗證碼](/help/forms/captcha-adaptive-forms.md)
             + [在最適化表單中使用 hCaptcha](/help/forms/integrate-adaptive-forms-hcaptcha.md)
             + [在最適化表單中使用 Turnstile 驗證碼](/help/forms/integrate-adaptive-forms-turnstile.md)
             + [使用核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-hant)
             + [套用手寫簽名](/help/forms/signing-forms-using-scribble.md)
             + [將表格新增至最適化表單](/help/forms/adaptive-forms-tables.md)
             + [將註解支援新增至最適化表單](/help/forms/footnotes-richtextsupport.md)
-         + 設定版面並將樣式套用至最適化表單{#configure-layout-of-an-adaptive-form}
+         + 設定版面並將樣式套用至自適應表單{#configure-layout-of-an-adaptive-form}
             + [設定最適化表單的版面](/help/forms/layout-capabilities-adaptive-forms.md)
             + [使用版面模式調整元件大小](/help/forms/resize-using-layout-mode.md)
             + [建立多步驟資料擷取體驗](/help/forms/introduction-form-sequence.md)
             + [最適化表單的樣式構造](/help/forms/styling-constructs-adaptive-forms.md)
             + [將 CSS 內嵌樣式套用至個別的最適化表單元件](/help/forms/inline-style-adaptive-forms.md)
             + [如何在最適化表單中使用分隔符號元件？](/help/forms/separator-component-in-adaptive-forms.md)
-         + 在最適化表單中新增規則和使用運算式 {#add-rules-and-use-expressions-in-an-adaptive-form}
+         + 在自適應表單中新增規則和使用運算式 {#add-rules-and-use-expressions-in-an-adaptive-form}
             + [將規則新增至最適化表單](/help/forms/rule-editor.md)
             + [使用規則編輯器的叫用服務新增自訂錯誤處理常式](/help/forms/add-custom-error-handler-adaptive-forms.md)
             + [將規則編輯器存取權授予所選的使用者群組](/help/forms/rule-editor-access-user-groups.md)
             + [在最適化表單中使用 SOM 運算式](/help/forms/using-som-expressions-adaptive-forms.md)
             + [最適化表單運算式](/help/forms/adaptive-form-expressions.md)
          + 使用 [!DNL Adobe Sign] {#use-adobe-sign}
-            + [使用 Adobe Sign 在最適化表單上進行電子簽名](/help/forms/working-with-adobe-sign.md)
+            + [使用 Adobe Sign 在自適應表單上進行電子簽名](/help/forms/working-with-adobe-sign.md)
          + 設定提交動作和中繼資料提交 {#configure-submit-actions-and-metadata-submission}
             + [為最適化表單設定提交動作](/help/forms/configuring-submit-actions.md)
             + [設定重新導向頁面](/help/forms/configuring-redirect-page.md)
@@ -870,8 +870,8 @@ ht-degree: 94%
          + 新增或改進中繼資料 {#manage-metadata}
             + [新增、移除或編輯最適化表單的中繼資料](/help/forms/manage-form-metadata.md)
             + [重複使用最適化表單的中繼資料屬性](/help/forms/reusing-adaptive-forms.md)
-         + 改善最適化表單的協助工具功能 {#accessible-adaptive-forms}
-            + [建立無障礙的最適化表單](/help/forms/creating-accessible-adaptive-forms.md)
+         + 改進自適應表單的協助工具功能 {#accessible-adaptive-forms}
+            + [建立無障礙的自適應表單](/help/forms/creating-accessible-adaptive-forms.md)
          + [建立和管理評論](/help/forms/create-reviews-forms.md)
          + [將提交評論者與表單相關聯](/help/forms/adding-reviewers-form.md)
          + [建立和管理最適化表單的評論](/help/forms/review-adaptiveforms-in-sites-page.md)
@@ -881,7 +881,7 @@ ht-degree: 94%
       + [互動式通訊簡介](/help/forms/introduction-to-interactive-communication.md)
       + [建立您的第一個互動式通訊](/help/forms/create-your-first-communication.md)
       + [常見問題](/help/forms/interactive-communications-faq.md)
-   + 以Forms為中心的工作流程 {#create-form-centric-workflows}
+   + 以 Forms 為中心的工作流程 {#create-form-centric-workflows}
       + [以 Forms 為中心的工作流程簡介](/help/forms/aem-forms-workflow.md)
       + [在工作流程中使用以 Forms 為中心的步驟 + 步驟參考](/help/forms/aem-forms-workflow-step-reference.md)
       + [在以 Forms 為中心的工作流程中使用變數](/help/forms/variable-in-aem-workflows.md)
@@ -904,7 +904,7 @@ ht-degree: 94%
    + 價值實現儀表板  {#vr-dashboard}
       + [了解您的價值實現儀表板](/help/forms/aem-forms-value-realization-dashboard.md)
       + [使用價值實現儀表板分析表單和文件的使用趨勢](/help/forms/using-the-value-realization-dashboard.md)
-   + 開發人員API參考 {#aem-forms-developer-api-reference}
+   + 開發人員 API 參考 {#aem-forms-developer-api-reference}
       + [最適化表單 API 參考](https://developer-stage.adobe.com/experience-cloud/experience-manager-apis/api/stable/forms/)
       + [AEM Forms as a Cloud Service 通訊 API 參考](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)
       + [AEM Forms as a Cloud Service JavaScript API 參考](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/jsdoc/aem-forms-cloud-service-jsdoc/index.html)
@@ -915,19 +915,19 @@ ht-degree: 94%
       + [重新啟動 AEM SDK](/help/forms/restart-aem-sdk.md)
       + [解決表單建立失敗的問題](/help/forms/form-creation-failing.md)
 + Screens {#screens-as-cloud-service}
-   + Screens as a Cloud Service概觀 {#overview}
+   + Screens as a Cloud Service 概觀 {#overview}
       + [簡介](/help/screens-cloud/introduction/introduction.md)
       + [了解角色定義](/help/screens-cloud/introduction/personas-screens-cloud.md)
       + [Adobe Analytics 與 Screens Cloud 整合](/help/screens-cloud/introduction/adobe-analytics-integration-with-screens.md)
-   + Screens as a Cloud Service入門 {#onboarding-screens-cloud}
+   + 開始使用 Screens as a Cloud Service {#onboarding-screens-cloud}
       + [首次登入](/help/screens-cloud/onboarding-screens-cloud/first-time-login-screens-cloud.md)
-      + 在Cloud Manager中將Screens程式新增為附加元件 {#adding-screens-addon}
+      + 在 Cloud Manager 中將 Screens 程式新增為附加元件 {#adding-screens-addon}
          + [將 Screens 程式作為附加元件新增到新程式](/help/screens-cloud/onboarding-screens-cloud/add-on-new-program-screens-cloud.md)
          + [將 Screens 程式作為附加元件新增到現有程式](/help/screens-cloud/onboarding-screens-cloud/add-on-existing-program-screens-cloud.md)
       + [建立分支](/help/screens-cloud/onboarding-screens-cloud/creating-a-branch.md)
       + [建立環境](/help/screens-cloud/onboarding-screens-cloud/creating-an-environment.md)
       + [執行管道](/help/screens-cloud/onboarding-screens-cloud/running-a-pipeline.md)
-   + 設定Screens as a Cloud Service專案 {#configure-screens-cloud}
+   + 設定 Screens as a Cloud Service 專案 {#configure-screens-cloud}
       + [瀏覽至 Screens 服務提供者](/help/screens-cloud/configuring/navigating-to-screens-services-provider.md)
       + [使用 Screens 內容提供者](/help/screens-cloud/configuring/using-screens-content-provider.md)
       + [建立 Screens 視訊轉譯](/help/screens-cloud/configuring/creating-screens-video-renditions-cloud-service.md)
@@ -944,9 +944,9 @@ ht-degree: 94%
       + [註冊播放器](/help/screens-cloud/managing-players-registration/registering-players-screens-cloud.md)
       + [將播放器指派到顯示器](/help/screens-cloud/managing-players-registration/assigning-player-display.md)
    + 使用核心產品功能 {#core-product-features}
-      + [影片的縮圖支援](/help/screens-cloud/using-core-product-features/thumbnail-support-videos.md)
+      + [支援影片縮圖](/help/screens-cloud/using-core-product-features/thumbnail-support-videos.md)
       + [Screens 通知服務](/help/screens-cloud/using-core-product-features/screens-notification-service.md)
-   + 在Screens as a Cloud Service中進行開發 {#developing-screens-cloud}
+   + 在 Screens as a Cloud Service 中進行開發 {#developing-screens-cloud}
       + [REST API](/help/screens-cloud/developing/rest-apis-screens-cloud.md)
       + [建立元件](/help/screens-cloud/developing/creating-components.md)
       + [為 Screens as a Cloud Service 開發自訂元件](/help/screens-cloud/developing/developing-custom-components-tutorial.md)
@@ -954,7 +954,7 @@ ht-degree: 94%
 + Content and Commerce {#content-and-commerce}
    + [簡介和概觀](/help/commerce-cloud/introduction.md)
    + [AEM Content and Commerce as a Cloud Service 的重大變更](/help/commerce-cloud/changes.md)
-   + Commerce歷程 {#journeys}
+   + Commerce 歷程 {#journeys}
       + 內容作者歷程 {#author}
          + [AEM Content and Commerce 內容作者歷程](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/overview.md)
          + [CIF 製作快速入門](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/getting-started.md)
@@ -967,7 +967,7 @@ ht-degree: 94%
       + [即時搜尋快顯視窗 CIF 元件](/help/commerce-cloud/integrating/live-search-popover.md)
       + [第三方 Commerce 解決方案](/help/commerce-cloud/integrating/third-party.md)
       + [Experience Platform](/help/commerce-cloud/integrating/aep.md)
-   + AEM店面 {#storefront}
+   + AEM 店面 {#storefront}
       + [快速入門](/help/commerce-cloud/getting-started.md)
       + 製作 {#authoring}
          + [Commerce 體驗](/help/commerce-cloud/authoring/authoring-commerce-experiences.md)
@@ -1037,7 +1037,7 @@ ht-degree: 94%
       + [Akamai 設定](/help/edge/docs/byo-cdn-akamai-setup.md)
       + [快速設定](/help/edge/docs/byo-cdn-fastly-setup.md)
       + [重新導向](/help/edge/docs/redirects.md)
-   + 建立Forms {#build-forms}
+   + 建置表單 {#build-forms}
       + [概觀](/help/edge/docs/forms/overview.md)
       + [Edge Delivery Services 表單如何運作？](/help/edge/docs/forms/universal-editor/edge-delivery-services-form.md)
       + [常見問題集](/help/edge/docs/forms/adapttive-forms-for-edge-delivery-services-faq.md)
@@ -1055,7 +1055,7 @@ ht-degree: 94%
          + [建置自訂表單元件：通用編輯器開發人員指南](/help/edge/docs/forms/universal-editor/create-custom-component.md)
          + [表單資料模型整合：整合表單與表單資料模型](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md)
          + [可重複使用、模組化和獨立的片段：在表單中建立及使用表單片段](/help/edge/docs/forms/universal-editor/creating-form-fragments.md)
-      + 檔案式撰寫 {#getting-started-edge-delivery-services-forms}
+      + 文件型製作 {#getting-started-edge-delivery-services-forms}
          + [建置第一份表單：使用 Google Sheets 和 Excel 的快速入門指南](/help/edge/docs/forms/tutorial.md)
          + [如何使用 Google Sheets 或 Excel 建立表單：逐步操作指南](/help/edge/docs/forms/create-forms.md)
          + [最適化表單區塊的各種元件](/help/edge/docs/forms/form-components.md)
@@ -1074,7 +1074,7 @@ ht-degree: 94%
          + [保護表單：新增 reCAPTCHA 安全性](/help/edge/docs/forms/recaptacha-forms.md)
          + [建置自訂表單元件：開發人員指南](/help/edge/docs/forms/custom-components-forms.md)
          + [監視表單效能：實際使用監視指南](/help/edge/docs/forms/real-use-monitoring-for-forms.md)
-   + Edge Delivery資源 {#resources}
+   + Edge Delivery 資源 {#resources}
       + Sidekick {#sidekick}
          + [使用 Sidekick](/help/edge/docs/sidekick.md)
          + [安裝延伸模組](/help/edge/docs/sidekick-extension.md)
@@ -1109,10 +1109,10 @@ ht-degree: 94%
       + [樹狀結構](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html?lang=zh-hant)
       + [JSON 預覽](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-json-preview.html?lang=zh-hant)
    + 內容片段選擇器 {#content-fragment-selector}
-      + [微前端內容片段選擇器 — 概觀](/help/headless/content-fragment-selector/overview.md)
-      + [內容片段選擇器 — 相關屬性](/help/headless/content-fragment-selector/properties.md)
+      + [微前端內容片段選擇器 - 概觀](/help/headless/content-fragment-selector/overview.md)
+      + [內容片段選擇器 - 相關屬性](/help/headless/content-fragment-selector/properties.md)
    + [用於傳遞和管理結構化內容的 AEM API](/help/headless/apis-headless-and-content-fragments.md)
-   + GRAPHQL API {#graphql-api}
+   + GraphQL API {#graphql-api}
       + [用於內容片段的 GraphQL API](/help/headless/graphql-api/content-fragments.md)
       + [管理 GraphQL 端點](/help/headless/graphql-api/graphql-endpoint.md)
       + [GraphiQL IDE](/help/headless/graphql-api/graphiql-ide.md)
@@ -1134,7 +1134,7 @@ ht-degree: 94%
       + [Dispatcher - 啟用持續性查詢的快取](/help/headless/deployment/dispatcher-caching.md)
       + [CORS 組態](/help/headless/deployment/cross-origin-resource-sharing.md)
       + [推薦者篩選器](/help/headless/deployment/referrer-filter.md)
-   + Headless歷程 {#journeys}
+   + Headless 歷程 {#journeys}
       + Headless 開發人員歷程 {#developer}
          + [了解 AEM 中的 Headless](/help/journey-headless/developer/overview.md)
          + [了解 CMS Headless 開發](/help/journey-headless/developer/learn-about.md)
@@ -1147,12 +1147,12 @@ ht-degree: 94%
          + [如何使用 Headless 應用程式](/help/journey-headless/developer/go-live.md)
          + [選擇性 - 如何使用 AEM 建立單頁應用程式](/help/journey-headless/developer/create-spa.md)
          + [開發人員入口網站 (其他資源)](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=zh-hant)
-      + Headless內容架構者歷程 {#architect}
+      + Headless 內容架構者歷程 {#architect}
          + [AEM Headless 內容架構者歷程概觀](/help/journey-headless/architect/overview.md)
          + [使用 AEM 建立 Headless 的內容模型 - 簡介](/help/journey-headless/architect/introduction.md)
          + [學習使用 AEM 建立 Headless 內容模型的基礎知識](/help/journey-headless/architect/basics.md)
          + [了解如何在 AEM 中建立內容片段模型](/help/journey-headless/architect/model-structure.md)
-      + Headless翻譯歷程 {#translation}
+      + Headless 翻譯歷程 {#translation}
          + [了解 AEM 中的 Headless 翻譯](/help/journey-headless/translation/overview.md)
          + [AEM Headless 翻譯快速入門](/help/journey-headless/translation/getting-started.md)
          + [了解 Headless 內容以及如何在 AEM 中翻譯](/help/journey-headless/translation/learn-about.md)
@@ -1160,19 +1160,19 @@ ht-degree: 94%
          + [設定翻譯規則](/help/journey-headless/translation/translation-rules.md)
          + [翻譯內容](/help/journey-headless/translation/translate-content.md)
          + [發佈翻譯內容](/help/journey-headless/translation/publish-content.md)
-      + Headless內容作者歷程 {#author}
+      + Headless 內容作者歷程 {#author}
          + [AEM Headless 內容作者歷程 - 概觀](/help/journey-headless/author/overview.md)
          + [使用 AEM 進行 Headless 製作 - 簡介](/help/journey-headless/author/introduction.md)
          + [使用 AEM 製作 Headless 的基礎知識](/help/journey-headless/author/basics.md)
          + [了解如何在內容片段中使用參照](/help/journey-headless/author/references.md)
          + [了解如何為內容片段定義中繼資料和標記](/help/journey-headless/author/metadata-tagging.md)
-+ Generative AI {#generative-ai}
++ 生成式 AI {#generative-ai}
    + [產生變化版本](/help/generative-ai/generate-variations.md)
    + [產生變化版本：與 AEM 編輯器整合](/help/generative-ai/generate-variations-integrated-editor.md)
-   + [助理 (限量測試版)](/help/implementing/cloud-manager/aem-ai-assistant.md)
+   + [助理 (限量 Beta)](/help/implementing/cloud-manager/aem-ai-assistant.md)
 + 實作 {#implementing}
-   + [為 AEM as a Cloud Service 實作應用程式](/help/implementing/home.md)
-   + 使用Cloud Manager {#using-cloud-manager}
+   + [實作 AEM as a Cloud Service 應用程式](/help/implementing/home.md)
+   + 使用 Cloud Manager {#using-cloud-manager}
       + [導覽](/help/implementing/cloud-manager/navigation.md)
       + [AEM 啟動台](/help/implementing/cloud-manager/aem-home.md)
       + 方案 {#programs}
@@ -1183,7 +1183,7 @@ ht-degree: 94%
          + [建立沙箱計畫](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md)
          + [編輯計畫](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)
          + [休眠環境](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md)
-      + 建立AEM應用程式專案 {#create-application-project}
+      + 建立 AEM 應用程式專案 {#create-application-project}
          + [專案建立精靈](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md)
          + [專案設定](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md)
          + [組建環境](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)
@@ -1193,7 +1193,7 @@ ht-degree: 94%
          + [管理 Cloud Manager 中的存放庫](/help/implementing/cloud-manager/managing-code/managing-repositories.md)
          + [新增 Adobe 存放庫](/help/implementing/cloud-manager/managing-code/adobe-repositories.md)
          + [新增私人存放庫](/help/implementing/cloud-manager/managing-code/private-repositories.md)
-         + [新增外部存放庫 (限量測試版)](/help/implementing/cloud-manager/managing-code/external-repositories.md)
+         + [新增外部存放庫 (早期採用者)](/help/implementing/cloud-manager/managing-code/external-repositories.md)
          + [存取存放庫](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
          + [Git 子模組支援](/help/implementing/cloud-manager/managing-code/git-submodules.md)
          + [將 Git 與 Cloud Manager 一起使用](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)
@@ -1202,7 +1202,7 @@ ht-degree: 94%
          + [GitHub 檢查設定](/help/implementing/cloud-manager/managing-code/github-check-config.md)
          + [GitHub 檢查附註](/help/implementing/cloud-manager/managing-code/github-annotations.md)
       + [環境變數](/help/implementing/cloud-manager/environment-variables.md)
-      + Cloud Manager CI-CD管道 {#cicd-pipelines}
+      + Cloud Manager CI-CD 管道 {#cicd-pipelines}
          + [CI-CD 管道簡介](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
          + [設定生產管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)
          + [設定非生產管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
@@ -1225,12 +1225,12 @@ ht-degree: 94%
       + [Dynatrace](/help/implementing/cloud-manager/dynatrace.md)
       + [通知](/help/implementing/cloud-manager/notifications.md)
       + [進階網路](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking.html?lang=zh-hant)
-      + Edge Delivery 網站 {#edge-delivery-sites}
+      + Edge Delivery Sites {#edge-delivery-sites}
          + [Cloud Manager 的 Edge Delivery Services 簡介](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)
          + [新增 Edge Delivery 網站至 Cloud Manager](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md)
          + [在 Cloud Manager 中建立 Edge Delivery 網站](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md)
          + [為 Edge Delivery 網站設定推播驗證](/help/implementing/cloud-manager/edge-delivery/cdn-setup-push-invalidation.md)
-         + [在 Cloud Manager 中管理 Edge Delivery 網站](/help/implementing/cloud-manager/edge-delivery/manage-edge-delivery-sites.md)
+         + [在 Cloud Manager 中管理 Edge Delivery Sites](/help/implementing/cloud-manager/edge-delivery/manage-edge-delivery-sites.md)
       + 網域設定 {#custom-domain-names}
          + [網域設定簡介](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
          + [新增自訂網域名稱](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
@@ -1274,7 +1274,7 @@ ht-degree: 94%
       + [自訂網站範本和主題](/help/implementing/developing/introduction/customizing-site-templates-themes.md)
       + [AEM Headful 和 Headless 技術](/help/implementing/developing/headful-headless.md)
       + [禁止透過 Sling 模型匯出工具序列化 ResourceResolvers](/help/implementing/developing/disallow-resourceresolver-serialization.md)
-      + 完整棧疊AEM開發 {#full-stack}
+      + 全堆疊 AEM 開發 {#full-stack}
          + [開發 AEM Sites 快速入門 - WKND 教學課程](/help/implementing/developing/introduction/develop-wknd-tutorial.md)
          + [AEM UI 的結構](/help/implementing/developing/introduction/ui-structure.md)
          + [Sling 速查表](/help/implementing/developing/introduction/sling-cheatsheet.md)
@@ -1325,7 +1325,7 @@ ht-degree: 94%
          + [本機 AEM 開發](/help/implementing/universal-editor/local-dev.md)
          + [呼叫](/help/implementing/universal-editor/calls.md)
       + [Headless 體驗管理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/introduction.html?lang=zh-hant)
-      + 混合式與SPA開發 {#hybrid}
+      + 混合式與 SPA 開發 {#hybrid}
          + [使用 AEM 的混合式和 SPA](https://business.adobe.com/content/dam/dx/us/en/products/experience-manager/sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
          + [為元件啟用 JSON 匯出](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html?lang=zh-hant)
          + [停止支援 SPA 編輯器](/help/implementing/developing/hybrid/spa-editor-deprecation.md)
@@ -1366,8 +1366,8 @@ ht-degree: 94%
       + [延伸 ContextHub](/help/implementing/developing/personalization/extending-contexthub.md)
       + [ContextHub API](/help/implementing/developing/personalization/contexthub-api.md)
       + [使用 ContextHub 設定分段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/personalization/contexthub-segmentation.html?lang=zh-hant)
-   + 設定和擴充AEM as a Cloud Service {#configuring-and-extending}
-      + 使用App Builder延伸AEM {#app-builder}
+   + 設定和延伸 AEM as a Cloud Service {#configuring-and-extending}
+      + 使用 App Builder 延伸 AEM {#app-builder}
          + [使用 Adobe Developer App Builder 延伸 AEM](/help/implementing/developing/extending/app-builder/extending-aem-with-app-builder.md)
          + [App Builder 簡介](/help/implementing/developing/extending/app-builder/videos/introduction.md)
          + [Adobe Developer Console](/help/implementing/developing/extending/app-builder/videos/adobe-developer-console.md)
@@ -1383,8 +1383,8 @@ ht-degree: 94%
       + [擴充體驗片段](/help/implementing/developing/extending/experience-fragments.md)
       + [自訂和擴充內容片段](/help/implementing/developing/extending/content-fragments-customizing.md)
       + [轉譯專用內容片段設定元件](/help/implementing/developing/extending/content-fragments-configuring-components-rendering.md)
-      + [自訂內容片段主控台和編輯器](/help/implementing/developing/extending/content-fragments-console-and-editor.md)
-      + 管理搜尋Forms {#manage-search-forms}
+      + [自訂內容片段控制台和編輯器](/help/implementing/developing/extending/content-fragments-console-and-editor.md)
+      + 管理搜尋表單 {#manage-search-forms}
          + [設定搜尋表單](/help/implementing/developing/extending/search-forms.md)
          + [設定收件匣搜尋篩選器](/help/implementing/developing/extending/configure-inbox-search-rail.md)
       + [設定 RTF 編輯器](/help/implementing/developing/extending/rich-text-editor.md)
@@ -1423,7 +1423,7 @@ ht-degree: 94%
       + [設定內容傳遞網路錯誤頁面](/help/implementing/dispatcher/cdn-error-pages.md)
       + [清除內容傳遞網路快取](/help/implementing/dispatcher/cdn-cache-purge.md)
       + [AEM as a Cloud Service 中的快取](/help/implementing/dispatcher/caching.md)
-+ 聯結器 {#connectors}
++ 連接器 {#connectors}
    + [實作 AEM 連接器](/help/connectors/implement.md)
    + [提交 AEM 連接器](/help/connectors/submit.md)
    + [維護 AEM 連接器](/help/connectors/maintain.md)
@@ -1440,13 +1440,13 @@ ht-degree: 94%
    + [使用設定管道](/help/operations/config-pipeline.md)
    + [移除一般 lucene 索引](/help/operations/removal-generic-lucene-index.md)
    + [查詢和編製索引最佳做法](/help/operations/query-and-indexing-best-practices.md)
-   + [連結檢查程式](/help/operations/link-checker.md)
+   + [連結檢查器](/help/operations/link-checker.md)
 + 合規性 {#compliance}
    + [AEM as a Cloud Service 合規性](/help/compliance/home.md)
-   + 資料隱私權和保護整備 {#data-privacy}
+   + 資料隱私權和保護整備度 {#data-privacy}
       + [AEM 的資料保護與資料隱私權法規整備](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md)
       + [AEM Foundation 的資料保護與資料隱私權法規整備](/help/compliance/data-privacy-and-protection-readiness/foundation-readiness.md)
       + [AEM Sites 的資料保護與資料隱私權法規整備](/help/compliance/data-privacy-and-protection-readiness/sites-readiness.md)
-   + 親和力 {#accessibility}
+   + 協助工具 {#accessibility}
       + [AEM as a Cloud Service 與網頁協助工具準則](/help/compliance/accessibility/web-accessibility.md)
       + [WCAG 2.1 快速指南](/help/compliance/accessibility/quick-guide-wcag.md)

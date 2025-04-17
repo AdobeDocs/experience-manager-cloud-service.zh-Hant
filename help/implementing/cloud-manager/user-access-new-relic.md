@@ -5,9 +5,9 @@ exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 3323da83584c4511b15145c0106031df4597891c
+source-git-commit: 0712ba8918696f4300089be24cad3e4125416c02
 workflow-type: tm+mt
-source-wordcount: '1833'
+source-wordcount: '1820'
 ht-degree: 40%
 
 ---
@@ -169,9 +169,7 @@ Adobe 非常重視應用程式的監控、可用性和效能。AEM as a Cloud Se
 * 如果適用，[將New Relic新增至您的電子郵件允許清單](https://docs.newrelic.com/docs/accounts/accounts/account-maintenance/account-email-settings/#email-whitelist)。
 * 如果這兩個建議都沒有幫助，請提供有關支援票證的反饋。
 
-## 限制 {#limitations}
-
-以下限制適用於將使用者新增到 New Relic One：
+## 使用說明 {#usage-notes}
 
 * 最多可以新增 30 個使用者。如果已達到最大使用者數，請刪除使用者以便能夠新增新使用者。
 * 新增至New Relic的使用者為&#x200B;**Basic**&#x200B;型別。 請參閱[New Relic檔案以取得詳細資料](https://docs.newrelic.com/docs/accounts/accounts-billing/new-relic-one-user-management/user-type/)。
@@ -179,7 +177,7 @@ Adobe 非常重視應用程式的監控、可用性和效能。AEM as a Cloud Se
 
 >[!NOTE]
 >
->如果在您的New Relic One子帳戶中偵測不到30天或更久的&#x200B;**使用者登入**&#x200B;活動，APM代理程式會停止，且資料不會從AEM Cloud Service傳送至New Relic。  **在重新啟動您的子帳戶之前，將不會再傳送資料。**
+>如果在您的New Relic One子帳戶中偵測不到30天或更久的&#x200B;**使用者登入**&#x200B;活動，APM代理程式就會停止。 資料不會從AEM雲端服務傳送至New Relic。 *在重新啟動您的子帳戶之前，不會再次傳送資料。*
 >
 >請依照本檔案中[啟用您的New Relic One子帳戶](#activate-sub-account)一節中的相同步驟，重新啟用您的New Relic One子帳戶。
 

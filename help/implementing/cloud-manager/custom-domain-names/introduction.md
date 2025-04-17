@@ -5,9 +5,9 @@ exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 2724eaaaade94be89d33da5eecec4444cf851bd0
+source-git-commit: 0712ba8918696f4300089be24cad3e4125416c02
 workflow-type: tm+mt
-source-wordcount: '720'
+source-wordcount: '710'
 ht-degree: 44%
 
 ---
@@ -45,7 +45,7 @@ AEM as a Cloud Service提供內建的CDN （內容傳遞網路）服務，也可
 
 **在您自己的CDN中管理的網域不需要透過Cloud Manager安裝** — 這些網域可透過X-Forwarded-Host供AEM使用，並且符合Dispatcher中定義的vhost。 請參閱 [CDN 文件](/help/implementing/dispatcher/cdn.md)。
 
-在一個環境中，您可以將兩個網域安裝在AEM管理的CDN中，並將它們安裝在BYO CDN中。
+在單一環境中，您可以將兩個網域安裝在AEM管理的CDN中，並安裝在BYO CDN中。
 
 ## 工作流程 {#workflow}
 
@@ -63,9 +63,7 @@ AEM as a Cloud Service提供內建的CDN （內容傳遞網路）服務，也可
 >
 >使用 AEM as a Cloud service 設定自訂網域名稱通常是一個簡單的過程。但是，有時可能會發生網域委派問題，這可能需要1-2個工作日才能解決。 因此，建議您在上線日期之前安裝網域。 如需詳細資訊，請參閱檔案[檢查網域名稱狀態](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)。
 
-## 限制 {#limitations}
-
-搭配AEMaaCS使用自訂網域名稱有幾項限制。
+## 使用說明 {#usage-notes}
 
 * Cloud Manager僅支援Sites計畫的發佈和預覽服務的自訂網域名稱。
    * 不支援編寫服務的自訂網域。
