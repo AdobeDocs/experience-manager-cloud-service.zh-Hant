@@ -6,7 +6,7 @@ exl-id: 62b0b857-068f-45b7-9018-9c59fde01dc3
 source-git-commit: f78d0242a3cf681ab827c785b6f02565887f392d
 workflow-type: tm+mt
 source-wordcount: '1422'
-ht-degree: 94%
+ht-degree: 98%
 
 ---
 
@@ -81,12 +81,12 @@ ht-degree: 94%
 
 您必須確保以下通訊方式：
 
-* 主機應用程式正在HTTPS上執行。
-* 您無法在`localhost`上執行應用程式。 如果您想要在本機電腦上整合資產選擇器，您需要建立自訂網域（例如`[https://<your_campany>.localhost.com:<port_number>]`），並在`redirectUrl list`中新增此自訂網域。
+* 該主機應用程式於 HTTPS 上執行。
+* 您無法於 `localhost` 上執行該應用程式。如果您想在本機上整合資產選擇器，則必須建立一個自訂網域，例如 `[https://<your_campany>.localhost.com:<port_number>]`，並在 `redirectUrl list` 中新增此自訂網域。
 * 您可以使用個別`imsClientId`來設定clientID並將其新增至AEM Cloud Service環境變數。
 <!--* You can configure and add `ADOBE_PROVIDED_CLIENT_ID` into the AEM Cloud Service environment variable with the respective `imsClientId`.
 ![Asset Selector IMS Client id environment](assets/asset-selector-ims-client-id-env.png)-->
-* IMS範圍清單需要在環境設定中定義。
+* IMS 範圍清單需要在環境設定中進行定義。
 * 應用程式的 URL 位於 IMS 用戶端的重新導向 URL 允許清單中。
 * IMS 登入流程是使用網頁瀏覽器上的快顯視窗進行設定和轉譯。因此，應在目標瀏覽器上啟用或允許快顯視窗。
 
@@ -96,7 +96,7 @@ ht-degree: 94%
 
 * [整合資產選擇器與 Adobe 應用程式](/help/assets/integrate-asset-selector-adobe-app.md)
 * [整合資產選擇器與非 Adobe 應用程式](/help/assets/integrate-asset-selector-non-adobe-app.md)
-* [整合資產選擇器Dynamic Media Open API](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
+* [整合資產選擇器 Dynamic Media Open API](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
 
 
 >[!IMPORTANT]

@@ -355,7 +355,7 @@ ht-degree: 99%
       + [元件主控台](/help/sites-cloud/authoring/components-console.md)
       + [路徑選取](/help/sites-cloud/authoring/path-selection.md)
       + [疑難排解](/help/sites-cloud/authoring/troubleshooting.md)
-      + Sites 控制台 {#sites-console}
+      + Sites 主控台 {#sites-console}
          + [Sites 主控台](/help/sites-cloud/authoring/sites-console/introduction.md)
          + [主控台側面板](/help/sites-cloud/authoring/sites-console/console-side-panel.md)
          + [建立新網站](/help/sites-cloud/authoring/sites-console/create-site.md)
@@ -482,7 +482,7 @@ ht-degree: 99%
             + [翻譯最佳做法](/help/sites-cloud/administering/translation/best-practices.md)
       + [管理標記](/help/sites-cloud/administering/tags.md)
       + [管理工作流程](/help/sites-cloud/administering/workflows-administering.md)
-      + [範本控制台](/help/sites-cloud/administering/templates-console.md)
+      + [範本主控台](/help/sites-cloud/administering/templates-console.md)
    + 整合 AEM as a Cloud Service  {#integrations}
       + [整合 Adobe Analytics](/help/sites-cloud/integrating/integrating-adobe-analytics.md)
       + [整合 Adobe Analytics 自動化設定](/help/sites-cloud/integrating/adobe-analytics-exc-setup-automation.md)
@@ -1383,7 +1383,7 @@ ht-degree: 99%
       + [擴充體驗片段](/help/implementing/developing/extending/experience-fragments.md)
       + [自訂和擴充內容片段](/help/implementing/developing/extending/content-fragments-customizing.md)
       + [轉譯專用內容片段設定元件](/help/implementing/developing/extending/content-fragments-configuring-components-rendering.md)
-      + [自訂內容片段控制台和編輯器](/help/implementing/developing/extending/content-fragments-console-and-editor.md)
+      + [自訂內容片段主控台和編輯器](/help/implementing/developing/extending/content-fragments-console-and-editor.md)
       + 管理搜尋表單 {#manage-search-forms}
          + [設定搜尋表單](/help/implementing/developing/extending/search-forms.md)
          + [設定收件匣搜尋篩選器](/help/implementing/developing/extending/configure-inbox-search-rail.md)
