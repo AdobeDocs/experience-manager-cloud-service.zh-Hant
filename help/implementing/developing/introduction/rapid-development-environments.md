@@ -4,9 +4,9 @@ description: 瞭解如何使用快速開發環境在雲端環境中進行快速�
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: bd0c83098f19f8cf7cad41233f043c608be39a0c
+source-git-commit: 68937e844712ad639a495e87363d49a8bef25e05
 workflow-type: tm+mt
-source-wordcount: '5390'
+source-wordcount: '5392'
 ht-degree: 3%
 
 ---
@@ -81,18 +81,18 @@ RDE可用於程式碼、內容以及Apache或Dispatcher設定。 不像一般的
 
 >[!IMPORTANT]
 >
->請確定您已安裝[Node和NPM ](https://nodejs.org/en/download/)的20版，以讓Adobe I/O CLI和相關外掛程式正常運作。
+>請確定您已為Adobe I/O (AIO) CLI和相關外掛程式安裝](https://nodejs.org/en/download/)的[節點和NPM版本20，以便正常運作。
 
 
-1. 依照此[程式](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/)安裝Adobe I/O CLI工具。
-1. 安裝Adobe I/O CLI工具AEM RDE外掛程式：
+1. 依照此[程式](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/)安裝AIO CLI工具。
+1. 安裝AIO CLI工具AEM RDE外掛程式：
 
    ```
    aio plugins:install @adobe/aio-cli-plugin-aem-rde
    aio plugins:update
    ```
 
-1. 使用aio使用者端登入。
+1. 使用Adobe I/O (AIO)使用者端登入。
 
    ```
    aio login
@@ -473,6 +473,60 @@ Logs:
 >
 >如果您在2023年4月之前建立RDE，並且在首次使用前端功能時遇到`UNEXPECTED_API_ERROR`，可能是由於設定過時。 若要解決此問題，請刪除環境並建立新環境。
 
+### 檢查RDE的狀態 {#checking-rde-status}
+
+您可以使用RDE CLI來檢查環境是否已準備好要部署到，以及已透過RDE外掛程式進行了哪些部署。
+
+執行下列動作：
+
+`aio aem:rde:status`
+
+傳回以下內容：
+
+```
+Info for cm-p12345-e987654
+Environment: Ready
+- Bundles Author:
+ com.adobe.granite.sample.demo-1.0.0.SNAPSHOT
+- Bundles Publish:
+ com.adobe.granite.sample.demo-1.0.0.SNAPSHOT
+- Configurations Author:
+ com.adobe.granite.demo.MyServlet
+- Configurations Publish:
+ com.adobe.granite.demo.MyServlet
+```
+
+如果命令傳回執行個體部署的相關備註，您仍可執行下一次更新，但您的最後一次更新可能尚未在執行個體上顯示。
+
+### 顯示部署歷史記錄 {#show-deployment-history}
+
+您可以透過執行以下動作來檢查建置到RDE的歷史記錄：
+
+`aio aem:rde:history`
+
+這會傳回以下格式的回應：
+
+`#1: deploy completed for content-package aem-guides-wknd.all-2.1.0.zip on author,publish - done by 029039A55D4DE16A0A494025@AdobeID at 2022-09-12T14:41:55.393Z`
+
+### 從RDE刪除 {#deleting-from-rde}
+
+您可以使用CLI工具來刪除先前部署至RDE的組態和組合。 使用`status`命令以取得可刪除專案的清單，包括要在刪除命令中參考的套件組合的`bsn`和設定的`pid`。
+
+例如，如果已安裝`com.adobe.granite.demo.MyServlet.cfg.json`，則`bsn`只是`com.adobe.granite.demo.MyServlet`，沒有&#x200B;**cfg.json**&#x200B;尾碼。
+
+不支援刪除內容套件或內容檔案。 若要移除它們，請重設RDE，使其回到預設狀態。
+
+如需更多詳細資訊，請參閱下列範例：
+
+```
+aio aem:rde:delete com.adobe.granite.csrf.impl.CSRFFilter
+#13: delete completed for osgi-config com.adobe.granite.csrf.impl.CSRFFilter on author - done by karl at 2022-09-12T22:01:01.955Z
+#14: delete completed for osgi-config com.adobe.granite.csrf.impl.CSRFFilter on publish - done by karl at 2022-09-12T22:01:12.979Z
+```
+
+如需詳細資訊和示範，請參閱教學影片[如何使用RDE命令(10:01)](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use)。
+
+
 ## 從外部Git提供者部署至RDE {#deploy-to-rde}
 
 >[!NOTE]
@@ -491,7 +545,7 @@ Logs:
 
 * 目前僅支援AEM內容和Dispatcher套件部署至RDE。
 * 尚不支援部署其他套件型別(例如完整的AEM應用程式套件)。
-* 目前不支援使用註解重設RDE環境。 客戶必須使用現有的AIO CLI命令，如[此處所述](/help/implementing/developing/introduction/rapid-development-environments.md)。
+* 目前不支援使用註解重設RDE環境。 您必須改用現有的AIO CLI重設命令，如[此處所述](/help/implementing/developing/introduction/rapid-development-environments.md#reset-the-rde-command-line)。
 
 **運作方式**
 
@@ -553,58 +607,7 @@ Logs:
    ![位元貯體上環境的部署狀態](/help/implementing/developing/introduction/assets/rde-bitbucket-deployment-2.png)
 
 
-### 檢查RDE的狀態 {#checking-rde-status}
 
-您可以使用RDE CLI來檢查環境是否已準備好要部署到，以及已透過RDE外掛程式進行了哪些部署。
-
-執行下列動作：
-
-`aio aem:rde:status`
-
-傳回以下內容：
-
-```
-Info for cm-p12345-e987654
-Environment: Ready
-- Bundles Author:
- com.adobe.granite.sample.demo-1.0.0.SNAPSHOT
-- Bundles Publish:
- com.adobe.granite.sample.demo-1.0.0.SNAPSHOT
-- Configurations Author:
- com.adobe.granite.demo.MyServlet
-- Configurations Publish:
- com.adobe.granite.demo.MyServlet
-```
-
-如果命令傳回執行個體部署的相關備註，您仍可執行下一次更新，但您的最後一次更新可能尚未在執行個體上顯示。
-
-### 顯示部署歷史記錄 {#show-deployment-history}
-
-您可以透過執行以下動作來檢查建置到RDE的歷史記錄：
-
-`aio aem:rde:history`
-
-這會傳回以下格式的回應：
-
-`#1: deploy completed for content-package aem-guides-wknd.all-2.1.0.zip on author,publish - done by 029039A55D4DE16A0A494025@AdobeID at 2022-09-12T14:41:55.393Z`
-
-### 從RDE刪除 {#deleting-from-rde}
-
-您可以使用CLI工具來刪除先前部署至RDE的組態和組合。 使用`status`命令以取得可刪除專案的清單，包括要在刪除命令中參考的套件組合的`bsn`和設定的`pid`。
-
-例如，如果已安裝`com.adobe.granite.demo.MyServlet.cfg.json`，則`bsn`只是`com.adobe.granite.demo.MyServlet`，沒有&#x200B;**cfg.json**&#x200B;尾碼。
-
-不支援刪除內容套件或內容檔案。 若要移除它們，請重設RDE，使其回到預設狀態。
-
-如需更多詳細資訊，請參閱下列範例：
-
-```
-aio aem:rde:delete com.adobe.granite.csrf.impl.CSRFFilter
-#13: delete completed for osgi-config com.adobe.granite.csrf.impl.CSRFFilter on author - done by karl at 2022-09-12T22:01:01.955Z
-#14: delete completed for osgi-config com.adobe.granite.csrf.impl.CSRFFilter on publish - done by karl at 2022-09-12T22:01:12.979Z
-```
-
-如需詳細資訊和示範，請參閱教學影片[如何使用RDE命令(10:01)](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use)。
 
 ## 記錄 {#rde-logging}
 
