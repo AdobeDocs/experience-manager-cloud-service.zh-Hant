@@ -7,23 +7,23 @@ hide: true
 hidefromtoc: true
 exl-id: 1eab3a3d-5726-4ff8-90b9-947026c17e22
 source-git-commit: b0cedf31a8759cdf403e1e7d6aadcab3bba03bab
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1060'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
-# 使用通用編輯器建立最適化Forms
+# 使用通用編輯器建立自適應表單
 
 <span class="preview">您可以透過搶先體驗方案使用這項功能。若要請求存取權，請使用您的官方地址發送電子郵件至 <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a>，郵件內容須包含您的 GitHub 組織名稱和存放庫名稱。例如，若存放庫 URL 為 https://github.com/adobe/abc,，則組織名稱為 adobe，存放庫名稱為 abc。</span>
 
-通用編輯器是一款多功能的視覺化編輯器，可提供編輯表單的隨心所欲體驗(WYSIWYG)。 它透過拖放功能，使用文字方塊、選項按鈕和核取方塊等可用的Adaptive Forms元件，簡化建立回應式且方便使用的表單。
+通用編輯器是一個多功能的視覺化編輯器，提供所見即所得 (WYSIWYG) 的表單編輯體驗。此編輯器利用可用的自適應表單元件 (如文字方塊、選項按鈕和核取方塊)，透過拖放功能讓使用者簡單建立回應式和易於使用的表單。
 
-AEM提供稱為最適化Forms區塊的區塊，可協助您使用Universal Editor輕鬆建立Edge Delivery Services Forms以擷取和儲存資料。 您可以[建立使用最適化表單區塊預先設定的全新 AEM 專案](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block)，或者[將最適化表單區塊新增至現有的 AEM Site 專案](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#add-adaptive-forms-block-to-your-existing-aem-project)。
+AEM 會提供一個稱為「自適應表單區塊」的區塊，協助您輕鬆使用通用編輯器建立 Edge Delivery Services 表單來擷取和儲存資料。您可以[建立使用最適化表單區塊預先設定的全新 AEM 專案](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block)，或者[將最適化表單區塊新增至現有的 AEM Site 專案](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#add-adaptive-forms-block-to-your-existing-aem-project)。
 
 ![Github 存放庫工作流程](/help/edge/assets/repo-workflow.png)
 
-本文會透過從「表單建立精靈」中選取以Edge Delivery Services為基礎的範本，引導您使用通用編輯器來建立和編寫獨立表單。
+此文章會引導您使用通用編輯器，從表單建立精靈中選取以 Edge Delivery Services 為基礎的範本並建立和製作獨立表單的過程。
 
 ## 必要條件
 
@@ -34,7 +34,7 @@ AEM提供稱為最適化Forms區塊的區塊，可協助您使用Universal Edito
 
 ## 在通用編輯器中使用表單
 
-使用Universal Editor，您可以輕鬆建立回應式互動式獨立表單。 您可以透過通用編輯器對表單執行以下操作：
+您可以利用通用編輯器輕鬆建立回應式和互動式的獨立表單。您可以透過通用編輯器對表單執行以下操作：
 * [建立表單](#create-a-form)
 * [製作表單](#author-a-form)
 * [發佈表單](#publish-a-form)
@@ -95,7 +95,7 @@ AEM提供稱為最適化Forms區塊的區塊，可協助您使用Universal Edito
 
    ![聯絡我們表單](/help/edge/assets/contact-us.png)
 
-   現在您可以[設定和自訂表單](/help/edge/docs/forms/universal-editor/submit-action.md)的提交動作。
+   您現在可以[設定與自訂表單的提交動作](/help/edge/docs/forms/universal-editor/submit-action.md)。
 
 
 <!--

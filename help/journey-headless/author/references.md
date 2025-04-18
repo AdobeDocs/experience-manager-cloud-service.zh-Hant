@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
 source-git-commit: 2c74a3a42dd21e2eaf71c1922931d5fa5149f7c5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '791'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -44,12 +44,12 @@ ht-degree: 89%
 
 內容參考的作用就是可讓您參考任何其他內容。這會開啟讓您選取內容項目的瀏覽器。
 
-有兩種型別：
+有兩種類型：
 
 * **內容參考**
-   * 指定參考資源的路徑
-* **內容參考(UUID)**
-   * 在編輯器中，參考會指定參考資源的路徑；在內部參考會儲存為參考資源的通用唯一ID (UUID)
+   * 指定所參考資源的路徑
+* **內容參考 (UUID)**
+   * 在編輯器中，參考會指定所參考資源的路徑；在內部，參考被視為參考資源的通用唯識別碼 (UUID)。
 
 ## 資產/媒體參考 {#assets-media-references}
 
@@ -83,12 +83,12 @@ ht-degree: 89%
 
 作為作者，您不負責定義這些關係 (由內容架構師在建立內容片段模型時定義)，但您需要知道如何識別和編輯參考。
 
-有兩種型別：
+有兩種類別：
 
 * **片段參考**
-   * 指定參考資源的路徑
-* **片段參考(UUID)**
-   * 在編輯器中，參考會指定參考資源的路徑；在內部參考會儲存為參考資源的通用唯一ID (UUID)
+   * 指定所參考資源的路徑
+* **片段參考 (UUID)**
+   * 在編輯器中，參考會指定所參考資源的路徑；在內部，參考被視為參考資源的通用唯識別碼 (UUID)。
 
 <!--
 ![Content Modeling with Content Fragments](/help/journey-headless/developer/assets/headless-modeling-01.png "Content Modeling with Content Fragments")

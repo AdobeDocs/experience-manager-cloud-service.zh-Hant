@@ -5,9 +5,9 @@ exl-id: 7b1474c9-aca0-4354-8798-1abdcda2f6dd
 feature: Onboarding
 role: Admin, User, Developer
 source-git-commit: 86bb2e020a003fd418f8b1cf7bdf55987a2eaf3d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2062'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -40,7 +40,7 @@ AEM as a Cloud Service 是完全的雲端原生產品，可提供 AEM 即服務�
 
 >[!NOTE]
 >
-> 本文所述的某些產品執行個體和產品設定檔可能僅會出現在新建立的環境中。請參閱[新增現有環境的產品設定檔區段](#adding-product-profiles-for-existing-environments)，瞭解如何匯入最新的環境。
+> 本文所述的某些產品執行個體和產品設定檔可能僅會出現在新建立的環境中。請參閱[為現有環境新增產品設定檔區段](#adding-product-profiles-for-existing-environments)，了解如何將您的環境現代化。
 
 Adobe 首次處理 AEM 解決方案的授權時，Adobe Admin Console 中的 Adobe Experience Manager as a Cloud Service 產品下方會出現兩個產品執行個體：
 
@@ -278,7 +278,7 @@ AEM 中與該服務相關聯的 AEM 群組會有一組彙總的使用者，且�
 
 ### 為現有環境新增產品設定檔 {#adding-product-profiles-for-existing-environments}
 
-在2024年4月初之前建立的環境可能遺失上述章節所述的組織層級產品執行個體，以及某些產品設定檔。 現有的產品設定檔也會缺少服務切換功能。建議更新這些產品設定檔，因為這是存取某些未來 API 的先決條件。
+2024 年 4 月初以前建立的環境，可能缺少上面各區段中描述的組織級產品執行個體以及特定的產品設定檔。現有的產品設定檔也會缺少服務切換功能。建議更新這些產品設定檔，因為這是存取某些未來 API 的先決條件。
 
 如果方案中的一個或多個環境需要更新其產品設定檔，Cloud Manager 會顯示以下通知。請注意，環境必須處於最新的 AEM 版本才能更新其產品設定檔。
 

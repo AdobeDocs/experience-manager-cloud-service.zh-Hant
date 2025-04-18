@@ -4,9 +4,9 @@ description: 具有 OpenAPI 功能的 Dynamic Media 常見問題
 role: User
 exl-id: 3450e050-4b0b-4184-8e71-5e667d9ca721
 source-git-commit: c36938e80d0b159c5f89d450aaa228c37c4f5276
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1600'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -139,9 +139,9 @@ Experience Manager 的中央資產控管可讓 DAM 管理員或品牌經理管�
 
 +++
 
-+++**支援的視訊檔案大小是多少？**
++++**支援的影片檔案大小為何？**
 
-具備OpenAPI功能的Dynamic Media支援長格式視訊。 影片最多可支援50GB和2小時。
+具有 OpenAPI 功能的 Dynamic Media 支援長格式影片。影片可支援高達 50 GB 和 2 小時。
 
 +++
 

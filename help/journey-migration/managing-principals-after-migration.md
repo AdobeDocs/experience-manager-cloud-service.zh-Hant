@@ -3,9 +3,9 @@ title: 遷移後管理主體
 description: 了解如何在 IMS 和 AEM 中設定使用者和群組
 exl-id: 46c4abfb-7e28-4f18-a6d4-f729dd42ea7b
 source-git-commit: 50c8dd725e20cbd372a7d7858fc67b0f53a8d6d4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '851'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
@@ -38,7 +38,7 @@ ht-degree: 81%
 
 在遷移的攝取階段，如果需要滿足遷移內容的 ACL 或 CUG 原則，就會遷移群組。請參閱[群組遷移](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/group-migration.md)以了解更多詳細資訊。
 
-已移轉的群組(不是由Assets集合或建立私人資料夾所建立的群組 — 請參閱下方的集合和私人資料夾)已設定為IMS群組。  這表示在 IMS 中建立的任何同名群組 (例如透過 Admin Console) 都會連結到 AEM 中的群組，而且屬於 IMS 群組成員的使用者也將成為 AEM 中群組的成員。為了達成這項連結，也必須先在 IMS 中建立群組。使用 Admin Console 在 AEM 執行個體中單獨或大量建立群組，如[透過 Admin Console 管理 IMS 中的主體](/help/journey-migration/managing-principals.md)內容所述。
+移轉的群組 (非透過資產集合或私人資料夾建立的群組；請參閱下方的「集合」和「私人資料夾」) 會設定為 IMS 群組。這表示在 IMS 中建立的任何同名群組 (例如透過 Admin Console) 都會連結到 AEM 中的群組，而且屬於 IMS 群組成員的使用者也將成為 AEM 中群組的成員。為了達成這項連結，也必須先在 IMS 中建立群組。使用 Admin Console 在 AEM 執行個體中單獨或大量建立群組，如[透過 Admin Console 管理 IMS 中的主體](/help/journey-migration/managing-principals.md)內容所述。
 
 使用 AEM 安全性使用者介面將 IMS 群組指派到本機 AEM 群組。若要進行這項操作，請前往 AEM 的「工具」頁面，按一下「安全性」，並選擇「群組」。
 
@@ -50,13 +50,13 @@ ht-degree: 81%
 
 ### 集合和私人資料夾
 
-建立Assets集合或私人資料夾也會自動建立一些群組，以管理對該Assets內容的存取。  如果這些群組在移轉的內容中提及，但並未設定為直接連結至IMS群組，則會移轉這些群組；在AEM中，這些群組仍為「本機群組」，且無法透過IMS管理。
+建立資產集合或私人資料夾，也會自動建立一些群組來管理對該資產內容的存取權。如果在已移轉的內容中提及這些群組，便會移轉這些群組，但這些群組並未設定為直接連結到 IMS 群組；在 AEM 中，這些群組仍然是「本機群組」，而且無法透過 IMS 進行管理。
 
 由於這些群組不在 IMS 中，因此無法使用大量上傳工具建立使用者作為其直接成員。同樣位於 AEM 中的 IMS 使用者可以單獨新增到這些群組中，但大量執行此操作需要額外的步驟。以下為可以完成此操作的一種方法：
-* 在Admin Console/IMS中建立新的群組以存取集合/私人資料夾，並為AEM設定它們。
-* 以群組成員身分登入，便會在 AEM 中建立群組。
-* 對於已移轉的集合或私人資料夾，請使用Assets UI將新群組新增為編輯器/擁有者/檢視者。
+* 在 Admin Console/IMS 中建立一或多個新群組，以存取集合/私人資料夾並將其設定為適用於 AEM。
+* 以群組成員身分登入，以便在 AEM 中建立群組。
+* 對於已移轉的集合或私人資料夾，使用資產使用者介面增加新群組作為編輯者/擁有者/檢視者。
 * 將使用者新增 (或大量上傳) 到 Admin Console 中的新群組。
-* 當使用者首次登入時，他們的IMS使用者將在AEM中建立，他們應該有權存取新群組，從而存取原始集合或私人資料夾群組。
+* 使用者首次登入時，便會在 AEM 中建立他們的 IMS 使用者，然後應該就能夠存取新群組，進而存取原始集合或私人資料夾群組。
 
-注意事項：如要大量指派使用者，必須依照上述步驟於 IMS 中建立使用者；已存在於 IMS 的使用者無法透過大量上傳再次建立，但可以使用大量編輯器進行此類變更 (請參閱「**編輯使用者詳細資料**」下的「[Admin Console 大量使用者上傳](https://helpx.adobe.com/tw/enterprise/using/bulk-upload-users.html)」)。
+注意事項：如要大量指派使用者，必須依照上述步驟於 IMS 中建立使用者；已存在於 IMS 的使用者無法透過大量上傳再次建立，但可以使用大量編輯器進行此類變更 (請參閱&#x200B;**編輯使用者詳細資料**&#x200B;下的 [Admin Console 大量使用者上傳](https://helpx.adobe.com/tw/enterprise/using/bulk-upload-users.html))。

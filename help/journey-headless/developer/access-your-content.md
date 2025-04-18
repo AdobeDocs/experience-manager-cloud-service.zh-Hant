@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
 source-git-commit: 22876fb2c74c705c3a03e81f7f87a5c2392d8ff4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1320'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -132,9 +132,9 @@ The use cases for the AEM GraphQL API can depend on the type of AEM as a Cloud S
 
 ### 片段參考 {#fragment-references}
 
-**片段參考**&#x200B;和&#x200B;**片段參考UUID**：
+**片段參考**&#x200B;和&#x200B;**片段參考 UUID**：
 
-* 定義內容片段模型時可以使用哪些特定資料型別。
+* 為在定義內容片段模型時可用的特定資料類型。
 * 可參考另一個片段，取決於特定的內容片段模型。
 * 可讓您建立並接著擷取結構化資料。
 

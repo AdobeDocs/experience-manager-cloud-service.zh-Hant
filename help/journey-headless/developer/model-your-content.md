@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
 source-git-commit: 22876fb2c74c705c3a03e81f7f87a5c2392d8ff4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1830'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -184,8 +184,8 @@ AEM 提供以下資料類型用於建立內容模型：
 * 日期和時間
 * 列舉
 * 標記
-* 片段參考/片段參考UUID
-* 內容參考/內容參考UUID
+* 片段參考/片段參考 UUID
+* 內容參考/內容參考 UUID
 * JSON 物件
 * 標籤預留位置
 
@@ -214,9 +214,9 @@ AEM 提供以下資料類型用於建立內容模型：
 >
 >請參閱其他資源 - 設定瀏覽器中的內容片段
 
-然後可以建立內容片段模型並定義結構。這全部可以在內容片段控制檯中完成。 從主控台選取內容片段模式的面板，導覽至適當的資料夾，然後使用&#x200B;**建立**&#x200B;開啟&#x200B;**新內容片段模式**&#x200B;對話方塊。
+然後可以建立內容片段模型並定義結構。這些皆可在內容片段主控台中完成。從主控台中選取內容片段模型面板，導覽至合適的資料夾，然後使用「**建立**」來開啟「**新內容片段模型**」對話框。
 
-建立之後，您就可以編輯模型。 例如：
+建立完成後，您便可以編輯您的模型。例如：
 
 ![內容片段模型](assets/cfm-model.png)
 
@@ -230,7 +230,7 @@ AEM 提供以下資料類型用於建立內容模型：
 
 ### 選擇適當的模型 {#select-model}
 
-實際建立內容的第一步是建立內容片段。這是使用內容片段主控台的&#x200B;**內容片段**&#x200B;索引標籤中的&#x200B;**建立**&#x200B;完成的。
+實際建立內容的第一步是建立內容片段。在內容片段主控台的「**內容片段**」索引標籤中使用「**建立**」，可以完成這個動作。
 
 ### 建立和編輯結構化內容 {#create-edit-structured-content}
 
@@ -248,7 +248,7 @@ AEM 提供以下資料類型用於建立內容模型：
 
 選擇適當的模型後，在內容片段編輯器中開啟一個內容片段進行編輯：
 
-![內容片段編輯器 — 概觀](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-overview.png)
+![內容片段編輯器 - 概觀](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-overview.png)
 
 >[!NOTE]
 >
